@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+message MsgCommonBool
+{
+	bool	value			= 1;
+}
+
+message MsgCommonN32
+{
+	int32	value			= 1;
+}
+
+message MsgCommonN64
+{
+	int64	value			= 1;
+}
+
+message MsgCommonStr
+{
+	string	value			= 1;
+}
+
+message MsgGameServerInfo
+{
+	int32	ip					= 1;		//IP
+	int32	port				= 2;		//端口
+	int32	server_id			= 3;		//服务器ID
+	int32	online_num			= 4;		//在线人数
+	int32	kind_id				= 5;		//kindID
+	int32	room_level			= 6;		//房间等级
+	int32	limit_gold			= 7;		//入场金币
+	int32	max_player			= 8;		//最大人数
+}
+
+message MsgGameServerList
+{
+	repeated MsgGameServerInfo	game_server_list		= 1;	//服务器列表 
+}
