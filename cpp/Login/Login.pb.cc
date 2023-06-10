@@ -161,7 +161,7 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "\r\n\005phone\030\014 \001(\t\022\014\n\004code\030\r \001(\005\"\336\001\n\022MsgPlay"
   "erLoginResp\022\020\n\010res_code\030\001 \001(\005\022\017\n\007user_id"
   "\030\002 \001(\005\022\024\n\014beautiful_id\030\003 \001(\005\022\017\n\007account\030"
-  "\004 \001(\t\022\020\n\010nickname\030\005 \001(\014\022\016\n\006avatar\030\006 \001(\t\022"
+  "\004 \001(\t\022\020\n\010nickname\030\005 \001(\t\022\016\n\006avatar\030\006 \001(\t\022"
   "\026\n\016first_recharge\030\007 \001(\010\022\021\n\tuser_type\030\010 \001"
   "(\005\022\020\n\010is_drain\030\t \001(\010\022\014\n\004coin\030\n \001(\004\022\021\n\tph"
   "one_num\030\013 \001(\t\"\?\n\021MsgModifyPassword\022\024\n\014ol"
@@ -909,11 +909,12 @@ const char* MsgPlayerLoginResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // bytes nickname = 5;
+      // string nickname = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
           auto str = _internal_mutable_nickname();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgPlayerLoginResp.nickname"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1019,9 +1020,13 @@ failure:
         4, this->_internal_account(), target);
   }
 
-  // bytes nickname = 5;
+  // string nickname = 5;
   if (this->nickname().size() > 0) {
-    target = stream->WriteBytesMaybeAliased(
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_nickname().data(), static_cast<int>(this->_internal_nickname().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "MsgPlayerLoginResp.nickname");
+    target = stream->WriteStringMaybeAliased(
         5, this->_internal_nickname(), target);
   }
 
@@ -1092,10 +1097,10 @@ size_t MsgPlayerLoginResp::ByteSizeLong() const {
         this->_internal_account());
   }
 
-  // bytes nickname = 5;
+  // string nickname = 5;
   if (this->nickname().size() > 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_nickname());
   }
 
