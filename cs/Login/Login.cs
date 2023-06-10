@@ -30,7 +30,7 @@ public static partial class LoginReflection {
           "YXIYCiABKAkSEAoIbmlja25hbWUYCyABKAkSDQoFcGhvbmUYDCABKAkSDAoE",
           "Y29kZRgNIAEoBSLeAQoSTXNnUGxheWVyTG9naW5SZXNwEhAKCHJlc19jb2Rl",
           "GAEgASgFEg8KB3VzZXJfaWQYAiABKAUSFAoMYmVhdXRpZnVsX2lkGAMgASgF",
-          "Eg8KB2FjY291bnQYBCABKAkSEAoIbmlja25hbWUYBSABKAkSDgoGYXZhdGFy",
+          "Eg8KB2FjY291bnQYBCABKAkSEAoIbmlja25hbWUYBSABKAwSDgoGYXZhdGFy",
           "GAYgASgJEhYKDmZpcnN0X3JlY2hhcmdlGAcgASgIEhEKCXVzZXJfdHlwZRgI",
           "IAEoBRIQCghpc19kcmFpbhgJIAEoCBIMCgRjb2luGAogASgEEhEKCXBob25l",
           "X251bRgLIAEoCSI/ChFNc2dNb2RpZnlQYXNzd29yZBIUCgxvbGRfcGFzc3dv",
@@ -799,12 +799,12 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
 
   /// <summary>Field number for the "nickname" field.</summary>
   public const int NicknameFieldNumber = 5;
-  private string nickname_ = "";
+  private pb::ByteString nickname_ = pb::ByteString.Empty;
   /// <summary>
   ///玩家昵称
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public string Nickname {
+  public pb::ByteString Nickname {
     get { return nickname_; }
     set {
       nickname_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
@@ -970,7 +970,7 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
     }
     if (Nickname.Length != 0) {
       output.WriteRawTag(42);
-      output.WriteString(Nickname);
+      output.WriteBytes(Nickname);
     }
     if (Avatar.Length != 0) {
       output.WriteRawTag(50);
@@ -1023,7 +1023,7 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
     }
     if (Nickname.Length != 0) {
       output.WriteRawTag(42);
-      output.WriteString(Nickname);
+      output.WriteBytes(Nickname);
     }
     if (Avatar.Length != 0) {
       output.WriteRawTag(50);
@@ -1071,7 +1071,7 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
       size += 1 + pb::CodedOutputStream.ComputeStringSize(Account);
     }
     if (Nickname.Length != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeStringSize(Nickname);
+      size += 1 + pb::CodedOutputStream.ComputeBytesSize(Nickname);
     }
     if (Avatar.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(Avatar);
@@ -1166,7 +1166,7 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
           break;
         }
         case 42: {
-          Nickname = input.ReadString();
+          Nickname = input.ReadBytes();
           break;
         }
         case 50: {
@@ -1224,7 +1224,7 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
           break;
         }
         case 42: {
-          Nickname = input.ReadString();
+          Nickname = input.ReadBytes();
           break;
         }
         case 50: {
