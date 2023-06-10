@@ -24,7 +24,7 @@ message MsgPlayerLoginResp
 	int32		user_id			= 2;	//玩家ID
 	int32		beautiful_id	= 3;	//玩家靓号
 	string		account			= 4;	//玩家账号
-	string		nickname		= 5;	//玩家昵称
+	bytes		nickname		= 5;	//玩家昵称
 	string		avatar			= 6;	//头像
 	bool		first_recharge	= 7;	//是否首充
 	int32		user_type		= 8;	//玩家类型(0:普通玩家 1:VIP)
