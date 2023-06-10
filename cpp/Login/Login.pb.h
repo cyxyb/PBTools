@@ -531,13 +531,13 @@ class MsgPlayerLoginResp PROTOBUF_FINAL :
   std::string* _internal_mutable_account();
   public:
 
-  // bytes nickname = 5;
+  // string nickname = 5;
   void clear_nickname();
   const std::string& nickname() const;
   void set_nickname(const std::string& value);
   void set_nickname(std::string&& value);
   void set_nickname(const char* value);
-  void set_nickname(const void* value, size_t size);
+  void set_nickname(const char* value, size_t size);
   std::string* mutable_nickname();
   std::string* release_nickname();
   void set_allocated_nickname(std::string* nickname);
@@ -1679,7 +1679,7 @@ inline void MsgPlayerLoginResp::set_allocated_account(std::string* account) {
   // @@protoc_insertion_point(field_set_allocated:MsgPlayerLoginResp.account)
 }
 
-// bytes nickname = 5;
+// string nickname = 5;
 inline void MsgPlayerLoginResp::clear_nickname() {
   nickname_.ClearToEmpty();
 }
@@ -1714,7 +1714,7 @@ inline void MsgPlayerLoginResp::set_nickname(const char* value) {
   nickname_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
   // @@protoc_insertion_point(field_set_char:MsgPlayerLoginResp.nickname)
 }
-inline void MsgPlayerLoginResp::set_nickname(const void* value,
+inline void MsgPlayerLoginResp::set_nickname(const char* value,
     size_t size) {
   
   nickname_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
