@@ -41,9 +41,14 @@ public static partial class CommonCmdReflection {
           "UmVhZE1haWwQEBIkCiBNc2dJRExvZ2luX0RlbGV0ZUFsbFJlYWRNYWlsUmVz",
           "cBAREhgKFE1zZ0lETG9naW5fUGhvbmVDb2RlEBISHAoYTXNnSURMb2dpbl9Q",
           "aG9uZUNvZGVSZXNwEBMSHQoZTXNnSURMb2dpbl9TeW5jUGxheWVyR29sZBAU",
-          "EiMKH01zZ0lETG9naW5fTm90aWZ5R2FtZVNlcnZlckxpc3QQFSpQCgpFTXNn",
-          "SURHYW1lEhIKDk1zZ0lER2FtZV9OdWxsEAASFAoPTXNnSURHYW1lX0xvZ2lu",
-          "EOkHEhgKE01zZ0lER2FtZV9Mb2dpblJlc3AQ6gdiBnByb3RvMw=="));
+          "EiMKH01zZ0lETG9naW5fTm90aWZ5R2FtZVNlcnZlckxpc3QQFSqfAgoKRU1z",
+          "Z0lER2FtZRISCg5Nc2dJREdhbWVfTnVsbBAAEhQKD01zZ0lER2FtZV9Mb2dp",
+          "bhDpBxIYChNNc2dJREdhbWVfTG9naW5SZXNwEOoHEhoKFU1zZ0lER2FtZV9T",
+          "cXVlZXplU2VhdBDrBxIVChBNc2dJREdhbWVfTG9nb3V0EOwHEhoKFU1zZ0lE",
+          "R2FtZV9BdXRvU2l0RG93bhDtBxIaChVNc2dJREdhbWVfU2l0RG93blJlc3AQ",
+          "7gcSHQoYTXNnSURHYW1lX1N5bmNQbGF5ZXJJbmZvEO8HEiIKHU1zZ0lER2Ft",
+          "ZV9Ob3RpZnlQbGF5ZXJTdGFuZFVwEPAHEh8KGk1zZ0lER2FtZV9TeW5jUGxh",
+          "eWVyc1Njb3JlEPEHYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::EMsgIDMain), typeof(global::EResCode), typeof(global::EMsgIDLogin), typeof(global::EMsgIDGame), }, null, null));
@@ -178,6 +183,34 @@ public enum EMsgIDGame {
   ///玩家登录返回
   /// </summary>
   [pbr::OriginalName("MsgIDGame_LoginResp")] MsgIdgameLoginResp = 1002,
+  /// <summary>
+  ///挤号
+  /// </summary>
+  [pbr::OriginalName("MsgIDGame_SqueezeSeat")] MsgIdgameSqueezeSeat = 1003,
+  /// <summary>
+  ///玩家下线
+  /// </summary>
+  [pbr::OriginalName("MsgIDGame_Logout")] MsgIdgameLogout = 1004,
+  /// <summary>
+  ///玩家自动坐下
+  /// </summary>
+  [pbr::OriginalName("MsgIDGame_AutoSitDown")] MsgIdgameAutoSitDown = 1005,
+  /// <summary>
+  ///玩家坐下返回
+  /// </summary>
+  [pbr::OriginalName("MsgIDGame_SitDownResp")] MsgIdgameSitDownResp = 1006,
+  /// <summary>
+  ///玩家数据同步
+  /// </summary>
+  [pbr::OriginalName("MsgIDGame_SyncPlayerInfo")] MsgIdgameSyncPlayerInfo = 1007,
+  /// <summary>
+  ///通知玩家下线
+  /// </summary>
+  [pbr::OriginalName("MsgIDGame_NotifyPlayerStandUp")] MsgIdgameNotifyPlayerStandUp = 1008,
+  /// <summary>
+  ///同步桌子所有玩家分数
+  /// </summary>
+  [pbr::OriginalName("MsgIDGame_SyncPlayersScore")] MsgIdgameSyncPlayersScore = 1009,
 }
 
 #endregion

@@ -44,9 +44,14 @@ const char descriptor_table_protodef_CommonCmd_2eproto[] PROTOBUF_SECTION_VARIAB
   "sgIDLogin_PhoneCode\020\022\022\034\n\030MsgIDLogin_Phon"
   "eCodeResp\020\023\022\035\n\031MsgIDLogin_SyncPlayerGold"
   "\020\024\022#\n\037MsgIDLogin_NotifyGameServerList\020\025*"
-  "P\n\nEMsgIDGame\022\022\n\016MsgIDGame_Null\020\000\022\024\n\017Msg"
-  "IDGame_Login\020\351\007\022\030\n\023MsgIDGame_LoginResp\020\352"
-  "\007b\006proto3"
+  "\237\002\n\nEMsgIDGame\022\022\n\016MsgIDGame_Null\020\000\022\024\n\017Ms"
+  "gIDGame_Login\020\351\007\022\030\n\023MsgIDGame_LoginResp\020"
+  "\352\007\022\032\n\025MsgIDGame_SqueezeSeat\020\353\007\022\025\n\020MsgIDG"
+  "ame_Logout\020\354\007\022\032\n\025MsgIDGame_AutoSitDown\020\355"
+  "\007\022\032\n\025MsgIDGame_SitDownResp\020\356\007\022\035\n\030MsgIDGa"
+  "me_SyncPlayerInfo\020\357\007\022\"\n\035MsgIDGame_Notify"
+  "PlayerStandUp\020\360\007\022\037\n\032MsgIDGame_SyncPlayer"
+  "sScore\020\361\007b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_CommonCmd_2eproto_deps[1] = {
 };
@@ -54,7 +59,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Com
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_CommonCmd_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_CommonCmd_2eproto = {
-  false, false, descriptor_table_protodef_CommonCmd_2eproto, "CommonCmd.proto", 969,
+  false, false, descriptor_table_protodef_CommonCmd_2eproto, "CommonCmd.proto", 1177,
   &descriptor_table_CommonCmd_2eproto_once, descriptor_table_CommonCmd_2eproto_sccs, descriptor_table_CommonCmd_2eproto_deps, 0, 0,
   schemas, file_default_instances, TableStruct_CommonCmd_2eproto::offsets,
   file_level_metadata_CommonCmd_2eproto, 0, file_level_enum_descriptors_CommonCmd_2eproto, file_level_service_descriptors_CommonCmd_2eproto,
@@ -136,6 +141,13 @@ bool EMsgIDGame_IsValid(int value) {
     case 0:
     case 1001:
     case 1002:
+    case 1003:
+    case 1004:
+    case 1005:
+    case 1006:
+    case 1007:
+    case 1008:
+    case 1009:
       return true;
     default:
       return false;

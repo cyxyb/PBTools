@@ -1,13 +1,14 @@
 syntax = "proto3";
 
 /////////////////////////服务器与服务器///////////////////////////
+//注册登录服务器
 message MsgRegisterLoginServer
 {
 	int32 	ip					= 1; // IP
 	int32 	port				= 2; // 端口
 	int32 	server_id			= 3; // 服务器ID
 }
-
+//注册游戏服务器
 message MsgRegisterGameServer
 {
 	int32 	ip					= 1; //IP
@@ -32,6 +33,7 @@ message MsgApplyRobotResp
 }
 
 /////////////////////////服务器与数据库///////////////////////////
+//更新在线人数
 message MsgDBUpdateOnlineNum
 {
 	int32	server_id			= 1;
@@ -39,6 +41,7 @@ message MsgDBUpdateOnlineNum
 	int32	online_num			= 3;
 }
 
+//登陆服务器注册
 message MsgDBRegisterLogin
 {
 	int32	server_id			= 1;
@@ -76,17 +79,19 @@ message MsgLoginPlayerInfo
 }
 
 //游戏服务器玩家信息
-message MsgGamePlayerInfo
-{
-	MsgPlayerAttribute	player_attribute		= 1;	//玩家属性
-}
+//message MsgGamePlayerInfo
+//{
+//	MsgPlayerAttribute	player_attribute		= 1;	//玩家属性
+//}
 
+//玩家退出
 message MsgDBLoginOut
 {
 	int32	user_id				= 1;		//玩家ID
 	int32	online_time			= 2;		//在线时长
 }
 
+//更新玩家信息
 message MsgDBUpdatePlayerInfo
 {
 	int32	user_id				= 1;		//userid
@@ -98,12 +103,14 @@ message MsgDBUpdatePlayerInfo
 	string	password			= 7;		//密码
 }
 
+//邮件信息
 message MsgDBMailData
 {
 	int32 user_id				= 1;		//玩家ID
 	int32 mail_id				= 2;		//邮件ID
 }
 
+//邮件详细信息
 message MsgDBMail
 {
 	int32	mail_guid			= 1;		//邮件GUID
@@ -117,6 +124,7 @@ message MsgDBMail
 	int32	is_custom			= 9;		//是否自定义邮件
 }
 
+//游戏服务器注册
 message MsgDBRegisterGame
 {
 	int32	server_id			= 1;		//服务器ID
@@ -142,12 +150,14 @@ message MsgCreateRobotResp
 	int32	client_socket_id			= 3;		//客户端socketid
 }
 
+//发送验证码
 message MsgSendPhoneCode
 {
 	string	phone				= 1;		//手机号
 	int32	code				= 2;		//验证码
 }
 
+//更新游戏服务器在线人数
 message MsgUpdateGameServerOnlineNum
 {
 	int32	server_id			= 1;		//服务器ID
@@ -156,10 +166,62 @@ message MsgUpdateGameServerOnlineNum
 	int32	online_num			= 4;		//在线数量
 }
 
+//注销游戏服务器
 message MsgGameServerUnRegister
 {
 	int32	server_id			= 1;		//服务器ID
 	int32	kind_id				= 2;		//kindID
 	int32	room_level			= 3;		//房间等级
+}
+
+//加载作弊率
+message MsgLoadCheatRate
+{
+	int64	blood_score			= 1;		//血池分数
+	int32	cheat_rate			= 2;		//作弊率
+	int64	fail_min_line_score	= 3;		//底线
+	int64	fail_max_line_score = 4;		//高线
+}
+
+//游戏登录
+message MsgDBGamePlayerLogin
+{
+	int32		user_id			= 1;	//玩家id
+	string		password		= 2;	//玩家密码
+	int32		ip				= 3;	//玩家ip
+}
+
+//游戏登录
+message MsgDBGamePlayerLoginResp
+{
+	int32		res_code		= 1;	//登录返回码(0:成功 非0:失败)
+	int32		user_id			= 2;	//玩家ID
+	int32		beautiful_id	= 3;	//玩家靓号
+	string		nickname		= 4;	//玩家昵称
+	string		avatar			= 5;	//头像
+	uint64		coin			= 6;	//玩家金币
+	string		password		= 7;	//玩家密码
+	int32		cheat_rate		= 8;	//玩家作弊率
+}
+
+//写分
+message MsgDBWriteScore
+{
+	int32		user_id			= 1;	//玩家ID
+	int32		bet				= 2;	//下注
+	int64		score			= 3;	//分数
+	string		game_details	= 4;	//游戏详情
+}
+
+//写分返回
+message MsgDBWriteScoreResp
+{
+	int32		user_id					= 1;	//玩家ID
+	int32		player_cheat_rate 		= 2;	//玩家作弊率
+	int32		player_cheat_score 		= 3;	//玩家作弊分数
+	int32		system_cheat_rate 		= 4;	//系统作弊率
+	int64		system_cheat_score		= 5;	//系统作弊分数
+	int64		system_blood_min_line 	= 6;	//最低线
+	int64		system_blood_max_line 	= 7;	//最高线
 }
 

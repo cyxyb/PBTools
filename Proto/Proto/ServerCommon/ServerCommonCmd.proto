@@ -76,7 +76,8 @@ enum EMsgIDDB
 	//2001-3000 GameServer2DB
 	GAME2DB_Login					= 2001;	//玩家登录游戏
 	DB2GAME_LoginResp				= 2002;	//玩家登录游戏返回
-	DB2GAME_LoadPlayerData			= 2003;	//加载游戏服务器玩家数据
-	GAME2DB_RobotLoginByUserID		= 2004;	//机器人登录
-	DB2GAME_RobotLoginByUserIDResp	= 2005;	//机器人登录返回
+	GAME2DB_LoadCheatRate			= 2003;	//加载作弊率
+	DB2GAME_LoadCheatRate			= 2004;	//加载作弊率返回
+	GAME2DB_WriteScore				= 2005;	//写分
+	DB2GAME_WriteScore				= 2006;	//写分返回
 }

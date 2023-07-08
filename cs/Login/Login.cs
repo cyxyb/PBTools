@@ -50,6 +50,9 @@ public static partial class LoginReflection {
 
 }
 #region Messages
+/// <summary>
+///玩家登录
+/// </summary>
 public sealed partial class MsgPlayerLogin : pb::IMessage<MsgPlayerLogin>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     , pb::IBufferMessage
@@ -693,6 +696,9 @@ public sealed partial class MsgPlayerLogin : pb::IMessage<MsgPlayerLogin>
 
 }
 
+/// <summary>
+///玩家登录返回
+/// </summary>
 public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     , pb::IBufferMessage
@@ -1258,6 +1264,9 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
 
 }
 
+/// <summary>
+///修改密码
+/// </summary>
 public sealed partial class MsgModifyPassword : pb::IMessage<MsgModifyPassword>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     , pb::IBufferMessage
@@ -1472,6 +1481,9 @@ public sealed partial class MsgModifyPassword : pb::IMessage<MsgModifyPassword>
 
 }
 
+/// <summary>
+///绑定手机
+/// </summary>
 public sealed partial class MsgBindPhone : pb::IMessage<MsgBindPhone>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     , pb::IBufferMessage

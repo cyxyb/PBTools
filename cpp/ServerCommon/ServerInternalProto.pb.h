@@ -46,7 +46,7 @@ struct TableStruct_ServerInternalProto_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[20]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[24]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -65,6 +65,12 @@ extern MsgCreateRobotDefaultTypeInternal _MsgCreateRobot_default_instance_;
 class MsgCreateRobotResp;
 class MsgCreateRobotRespDefaultTypeInternal;
 extern MsgCreateRobotRespDefaultTypeInternal _MsgCreateRobotResp_default_instance_;
+class MsgDBGamePlayerLogin;
+class MsgDBGamePlayerLoginDefaultTypeInternal;
+extern MsgDBGamePlayerLoginDefaultTypeInternal _MsgDBGamePlayerLogin_default_instance_;
+class MsgDBGamePlayerLoginResp;
+class MsgDBGamePlayerLoginRespDefaultTypeInternal;
+extern MsgDBGamePlayerLoginRespDefaultTypeInternal _MsgDBGamePlayerLoginResp_default_instance_;
 class MsgDBLoadRobot;
 class MsgDBLoadRobotDefaultTypeInternal;
 extern MsgDBLoadRobotDefaultTypeInternal _MsgDBLoadRobot_default_instance_;
@@ -89,12 +95,18 @@ extern MsgDBUpdateOnlineNumDefaultTypeInternal _MsgDBUpdateOnlineNum_default_ins
 class MsgDBUpdatePlayerInfo;
 class MsgDBUpdatePlayerInfoDefaultTypeInternal;
 extern MsgDBUpdatePlayerInfoDefaultTypeInternal _MsgDBUpdatePlayerInfo_default_instance_;
-class MsgGamePlayerInfo;
-class MsgGamePlayerInfoDefaultTypeInternal;
-extern MsgGamePlayerInfoDefaultTypeInternal _MsgGamePlayerInfo_default_instance_;
+class MsgDBWriteScore;
+class MsgDBWriteScoreDefaultTypeInternal;
+extern MsgDBWriteScoreDefaultTypeInternal _MsgDBWriteScore_default_instance_;
+class MsgDBWriteScoreResp;
+class MsgDBWriteScoreRespDefaultTypeInternal;
+extern MsgDBWriteScoreRespDefaultTypeInternal _MsgDBWriteScoreResp_default_instance_;
 class MsgGameServerUnRegister;
 class MsgGameServerUnRegisterDefaultTypeInternal;
 extern MsgGameServerUnRegisterDefaultTypeInternal _MsgGameServerUnRegister_default_instance_;
+class MsgLoadCheatRate;
+class MsgLoadCheatRateDefaultTypeInternal;
+extern MsgLoadCheatRateDefaultTypeInternal _MsgLoadCheatRate_default_instance_;
 class MsgLoginPlayerInfo;
 class MsgLoginPlayerInfoDefaultTypeInternal;
 extern MsgLoginPlayerInfoDefaultTypeInternal _MsgLoginPlayerInfo_default_instance_;
@@ -118,6 +130,8 @@ template<> ::MsgApplyRobot* Arena::CreateMaybeMessage<::MsgApplyRobot>(Arena*);
 template<> ::MsgApplyRobotResp* Arena::CreateMaybeMessage<::MsgApplyRobotResp>(Arena*);
 template<> ::MsgCreateRobot* Arena::CreateMaybeMessage<::MsgCreateRobot>(Arena*);
 template<> ::MsgCreateRobotResp* Arena::CreateMaybeMessage<::MsgCreateRobotResp>(Arena*);
+template<> ::MsgDBGamePlayerLogin* Arena::CreateMaybeMessage<::MsgDBGamePlayerLogin>(Arena*);
+template<> ::MsgDBGamePlayerLoginResp* Arena::CreateMaybeMessage<::MsgDBGamePlayerLoginResp>(Arena*);
 template<> ::MsgDBLoadRobot* Arena::CreateMaybeMessage<::MsgDBLoadRobot>(Arena*);
 template<> ::MsgDBLoginOut* Arena::CreateMaybeMessage<::MsgDBLoginOut>(Arena*);
 template<> ::MsgDBMail* Arena::CreateMaybeMessage<::MsgDBMail>(Arena*);
@@ -126,8 +140,10 @@ template<> ::MsgDBRegisterGame* Arena::CreateMaybeMessage<::MsgDBRegisterGame>(A
 template<> ::MsgDBRegisterLogin* Arena::CreateMaybeMessage<::MsgDBRegisterLogin>(Arena*);
 template<> ::MsgDBUpdateOnlineNum* Arena::CreateMaybeMessage<::MsgDBUpdateOnlineNum>(Arena*);
 template<> ::MsgDBUpdatePlayerInfo* Arena::CreateMaybeMessage<::MsgDBUpdatePlayerInfo>(Arena*);
-template<> ::MsgGamePlayerInfo* Arena::CreateMaybeMessage<::MsgGamePlayerInfo>(Arena*);
+template<> ::MsgDBWriteScore* Arena::CreateMaybeMessage<::MsgDBWriteScore>(Arena*);
+template<> ::MsgDBWriteScoreResp* Arena::CreateMaybeMessage<::MsgDBWriteScoreResp>(Arena*);
 template<> ::MsgGameServerUnRegister* Arena::CreateMaybeMessage<::MsgGameServerUnRegister>(Arena*);
+template<> ::MsgLoadCheatRate* Arena::CreateMaybeMessage<::MsgLoadCheatRate>(Arena*);
 template<> ::MsgLoginPlayerInfo* Arena::CreateMaybeMessage<::MsgLoginPlayerInfo>(Arena*);
 template<> ::MsgPlayerAttribute* Arena::CreateMaybeMessage<::MsgPlayerAttribute>(Arena*);
 template<> ::MsgRegisterGameServer* Arena::CreateMaybeMessage<::MsgRegisterGameServer>(Arena*);
@@ -1637,151 +1653,6 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
-class MsgGamePlayerInfo PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgGamePlayerInfo) */ {
- public:
-  inline MsgGamePlayerInfo() : MsgGamePlayerInfo(nullptr) {}
-  virtual ~MsgGamePlayerInfo();
-
-  MsgGamePlayerInfo(const MsgGamePlayerInfo& from);
-  MsgGamePlayerInfo(MsgGamePlayerInfo&& from) noexcept
-    : MsgGamePlayerInfo() {
-    *this = ::std::move(from);
-  }
-
-  inline MsgGamePlayerInfo& operator=(const MsgGamePlayerInfo& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline MsgGamePlayerInfo& operator=(MsgGamePlayerInfo&& from) noexcept {
-    if (GetArena() == from.GetArena()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return GetMetadataStatic().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return GetMetadataStatic().reflection;
-  }
-  static const MsgGamePlayerInfo& default_instance();
-
-  static inline const MsgGamePlayerInfo* internal_default_instance() {
-    return reinterpret_cast<const MsgGamePlayerInfo*>(
-               &_MsgGamePlayerInfo_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    8;
-
-  friend void swap(MsgGamePlayerInfo& a, MsgGamePlayerInfo& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(MsgGamePlayerInfo* other) {
-    if (other == this) return;
-    if (GetArena() == other->GetArena()) {
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(MsgGamePlayerInfo* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetArena() == other->GetArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline MsgGamePlayerInfo* New() const final {
-    return CreateMaybeMessage<MsgGamePlayerInfo>(nullptr);
-  }
-
-  MsgGamePlayerInfo* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<MsgGamePlayerInfo>(arena);
-  }
-  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const MsgGamePlayerInfo& from);
-  void MergeFrom(const MsgGamePlayerInfo& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
-      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  inline void SharedCtor();
-  inline void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(MsgGamePlayerInfo* other);
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "MsgGamePlayerInfo";
-  }
-  protected:
-  explicit MsgGamePlayerInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  private:
-  static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  public:
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-  private:
-  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
-    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
-    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
-  }
-
-  public:
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kPlayerAttributeFieldNumber = 1,
-  };
-  // .MsgPlayerAttribute player_attribute = 1;
-  bool has_player_attribute() const;
-  private:
-  bool _internal_has_player_attribute() const;
-  public:
-  void clear_player_attribute();
-  const ::MsgPlayerAttribute& player_attribute() const;
-  ::MsgPlayerAttribute* release_player_attribute();
-  ::MsgPlayerAttribute* mutable_player_attribute();
-  void set_allocated_player_attribute(::MsgPlayerAttribute* player_attribute);
-  private:
-  const ::MsgPlayerAttribute& _internal_player_attribute() const;
-  ::MsgPlayerAttribute* _internal_mutable_player_attribute();
-  public:
-  void unsafe_arena_set_allocated_player_attribute(
-      ::MsgPlayerAttribute* player_attribute);
-  ::MsgPlayerAttribute* unsafe_arena_release_player_attribute();
-
-  // @@protoc_insertion_point(class_scope:MsgGamePlayerInfo)
- private:
-  class _Internal;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  ::MsgPlayerAttribute* player_attribute_;
-  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  friend struct ::TableStruct_ServerInternalProto_2eproto;
-};
-// -------------------------------------------------------------------
-
 class MsgDBLoginOut PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgDBLoginOut) */ {
  public:
@@ -1823,7 +1694,7 @@ class MsgDBLoginOut PROTOBUF_FINAL :
                &_MsgDBLoginOut_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    8;
 
   friend void swap(MsgDBLoginOut& a, MsgDBLoginOut& b) {
     a.Swap(&b);
@@ -1970,7 +1841,7 @@ class MsgDBUpdatePlayerInfo PROTOBUF_FINAL :
                &_MsgDBUpdatePlayerInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    9;
 
   friend void swap(MsgDBUpdatePlayerInfo& a, MsgDBUpdatePlayerInfo& b) {
     a.Swap(&b);
@@ -2200,7 +2071,7 @@ class MsgDBMailData PROTOBUF_FINAL :
                &_MsgDBMailData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    10;
 
   friend void swap(MsgDBMailData& a, MsgDBMailData& b) {
     a.Swap(&b);
@@ -2347,7 +2218,7 @@ class MsgDBMail PROTOBUF_FINAL :
                &_MsgDBMail_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    12;
+    11;
 
   friend void swap(MsgDBMail& a, MsgDBMail& b) {
     a.Swap(&b);
@@ -2585,7 +2456,7 @@ class MsgDBRegisterGame PROTOBUF_FINAL :
                &_MsgDBRegisterGame_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    13;
+    12;
 
   friend void swap(MsgDBRegisterGame& a, MsgDBRegisterGame& b) {
     a.Swap(&b);
@@ -2739,7 +2610,7 @@ class MsgDBLoadRobot PROTOBUF_FINAL :
                &_MsgDBLoadRobot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    14;
+    13;
 
   friend void swap(MsgDBLoadRobot& a, MsgDBLoadRobot& b) {
     a.Swap(&b);
@@ -2889,7 +2760,7 @@ class MsgCreateRobot PROTOBUF_FINAL :
                &_MsgCreateRobot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    15;
+    14;
 
   friend void swap(MsgCreateRobot& a, MsgCreateRobot& b) {
     a.Swap(&b);
@@ -3047,7 +2918,7 @@ class MsgCreateRobotResp PROTOBUF_FINAL :
                &_MsgCreateRobotResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    16;
+    15;
 
   friend void swap(MsgCreateRobotResp& a, MsgCreateRobotResp& b) {
     a.Swap(&b);
@@ -3219,7 +3090,7 @@ class MsgSendPhoneCode PROTOBUF_FINAL :
                &_MsgSendPhoneCode_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    17;
+    16;
 
   friend void swap(MsgSendPhoneCode& a, MsgSendPhoneCode& b) {
     a.Swap(&b);
@@ -3373,7 +3244,7 @@ class MsgUpdateGameServerOnlineNum PROTOBUF_FINAL :
                &_MsgUpdateGameServerOnlineNum_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    18;
+    17;
 
   friend void swap(MsgUpdateGameServerOnlineNum& a, MsgUpdateGameServerOnlineNum& b) {
     a.Swap(&b);
@@ -3542,7 +3413,7 @@ class MsgGameServerUnRegister PROTOBUF_FINAL :
                &_MsgGameServerUnRegister_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    19;
+    18;
 
   friend void swap(MsgGameServerUnRegister& a, MsgGameServerUnRegister& b) {
     a.Swap(&b);
@@ -3654,6 +3525,952 @@ class MsgGameServerUnRegister PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 server_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 kind_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 room_level_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgLoadCheatRate PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgLoadCheatRate) */ {
+ public:
+  inline MsgLoadCheatRate() : MsgLoadCheatRate(nullptr) {}
+  virtual ~MsgLoadCheatRate();
+
+  MsgLoadCheatRate(const MsgLoadCheatRate& from);
+  MsgLoadCheatRate(MsgLoadCheatRate&& from) noexcept
+    : MsgLoadCheatRate() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgLoadCheatRate& operator=(const MsgLoadCheatRate& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgLoadCheatRate& operator=(MsgLoadCheatRate&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgLoadCheatRate& default_instance();
+
+  static inline const MsgLoadCheatRate* internal_default_instance() {
+    return reinterpret_cast<const MsgLoadCheatRate*>(
+               &_MsgLoadCheatRate_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    19;
+
+  friend void swap(MsgLoadCheatRate& a, MsgLoadCheatRate& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgLoadCheatRate* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgLoadCheatRate* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgLoadCheatRate* New() const final {
+    return CreateMaybeMessage<MsgLoadCheatRate>(nullptr);
+  }
+
+  MsgLoadCheatRate* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgLoadCheatRate>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgLoadCheatRate& from);
+  void MergeFrom(const MsgLoadCheatRate& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgLoadCheatRate* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgLoadCheatRate";
+  }
+  protected:
+  explicit MsgLoadCheatRate(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kBloodScoreFieldNumber = 1,
+    kFailMinLineScoreFieldNumber = 3,
+    kFailMaxLineScoreFieldNumber = 4,
+    kCheatRateFieldNumber = 2,
+  };
+  // int64 blood_score = 1;
+  void clear_blood_score();
+  ::PROTOBUF_NAMESPACE_ID::int64 blood_score() const;
+  void set_blood_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_blood_score() const;
+  void _internal_set_blood_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int64 fail_min_line_score = 3;
+  void clear_fail_min_line_score();
+  ::PROTOBUF_NAMESPACE_ID::int64 fail_min_line_score() const;
+  void set_fail_min_line_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_fail_min_line_score() const;
+  void _internal_set_fail_min_line_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int64 fail_max_line_score = 4;
+  void clear_fail_max_line_score();
+  ::PROTOBUF_NAMESPACE_ID::int64 fail_max_line_score() const;
+  void set_fail_max_line_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_fail_max_line_score() const;
+  void _internal_set_fail_max_line_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int32 cheat_rate = 2;
+  void clear_cheat_rate();
+  ::PROTOBUF_NAMESPACE_ID::int32 cheat_rate() const;
+  void set_cheat_rate(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_cheat_rate() const;
+  void _internal_set_cheat_rate(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgLoadCheatRate)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int64 blood_score_;
+  ::PROTOBUF_NAMESPACE_ID::int64 fail_min_line_score_;
+  ::PROTOBUF_NAMESPACE_ID::int64 fail_max_line_score_;
+  ::PROTOBUF_NAMESPACE_ID::int32 cheat_rate_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgDBGamePlayerLogin PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgDBGamePlayerLogin) */ {
+ public:
+  inline MsgDBGamePlayerLogin() : MsgDBGamePlayerLogin(nullptr) {}
+  virtual ~MsgDBGamePlayerLogin();
+
+  MsgDBGamePlayerLogin(const MsgDBGamePlayerLogin& from);
+  MsgDBGamePlayerLogin(MsgDBGamePlayerLogin&& from) noexcept
+    : MsgDBGamePlayerLogin() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgDBGamePlayerLogin& operator=(const MsgDBGamePlayerLogin& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgDBGamePlayerLogin& operator=(MsgDBGamePlayerLogin&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgDBGamePlayerLogin& default_instance();
+
+  static inline const MsgDBGamePlayerLogin* internal_default_instance() {
+    return reinterpret_cast<const MsgDBGamePlayerLogin*>(
+               &_MsgDBGamePlayerLogin_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    20;
+
+  friend void swap(MsgDBGamePlayerLogin& a, MsgDBGamePlayerLogin& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgDBGamePlayerLogin* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgDBGamePlayerLogin* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgDBGamePlayerLogin* New() const final {
+    return CreateMaybeMessage<MsgDBGamePlayerLogin>(nullptr);
+  }
+
+  MsgDBGamePlayerLogin* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgDBGamePlayerLogin>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgDBGamePlayerLogin& from);
+  void MergeFrom(const MsgDBGamePlayerLogin& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgDBGamePlayerLogin* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgDBGamePlayerLogin";
+  }
+  protected:
+  explicit MsgDBGamePlayerLogin(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kPasswordFieldNumber = 2,
+    kUserIdFieldNumber = 1,
+    kIpFieldNumber = 3,
+  };
+  // string password = 2;
+  void clear_password();
+  const std::string& password() const;
+  void set_password(const std::string& value);
+  void set_password(std::string&& value);
+  void set_password(const char* value);
+  void set_password(const char* value, size_t size);
+  std::string* mutable_password();
+  std::string* release_password();
+  void set_allocated_password(std::string* password);
+  private:
+  const std::string& _internal_password() const;
+  void _internal_set_password(const std::string& value);
+  std::string* _internal_mutable_password();
+  public:
+
+  // int32 user_id = 1;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 ip = 3;
+  void clear_ip();
+  ::PROTOBUF_NAMESPACE_ID::int32 ip() const;
+  void set_ip(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_ip() const;
+  void _internal_set_ip(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgDBGamePlayerLogin)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr password_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 ip_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgDBGamePlayerLoginResp PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgDBGamePlayerLoginResp) */ {
+ public:
+  inline MsgDBGamePlayerLoginResp() : MsgDBGamePlayerLoginResp(nullptr) {}
+  virtual ~MsgDBGamePlayerLoginResp();
+
+  MsgDBGamePlayerLoginResp(const MsgDBGamePlayerLoginResp& from);
+  MsgDBGamePlayerLoginResp(MsgDBGamePlayerLoginResp&& from) noexcept
+    : MsgDBGamePlayerLoginResp() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgDBGamePlayerLoginResp& operator=(const MsgDBGamePlayerLoginResp& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgDBGamePlayerLoginResp& operator=(MsgDBGamePlayerLoginResp&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgDBGamePlayerLoginResp& default_instance();
+
+  static inline const MsgDBGamePlayerLoginResp* internal_default_instance() {
+    return reinterpret_cast<const MsgDBGamePlayerLoginResp*>(
+               &_MsgDBGamePlayerLoginResp_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    21;
+
+  friend void swap(MsgDBGamePlayerLoginResp& a, MsgDBGamePlayerLoginResp& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgDBGamePlayerLoginResp* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgDBGamePlayerLoginResp* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgDBGamePlayerLoginResp* New() const final {
+    return CreateMaybeMessage<MsgDBGamePlayerLoginResp>(nullptr);
+  }
+
+  MsgDBGamePlayerLoginResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgDBGamePlayerLoginResp>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgDBGamePlayerLoginResp& from);
+  void MergeFrom(const MsgDBGamePlayerLoginResp& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgDBGamePlayerLoginResp* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgDBGamePlayerLoginResp";
+  }
+  protected:
+  explicit MsgDBGamePlayerLoginResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kNicknameFieldNumber = 4,
+    kAvatarFieldNumber = 5,
+    kPasswordFieldNumber = 7,
+    kResCodeFieldNumber = 1,
+    kUserIdFieldNumber = 2,
+    kBeautifulIdFieldNumber = 3,
+    kCheatRateFieldNumber = 8,
+    kCoinFieldNumber = 6,
+  };
+  // string nickname = 4;
+  void clear_nickname();
+  const std::string& nickname() const;
+  void set_nickname(const std::string& value);
+  void set_nickname(std::string&& value);
+  void set_nickname(const char* value);
+  void set_nickname(const char* value, size_t size);
+  std::string* mutable_nickname();
+  std::string* release_nickname();
+  void set_allocated_nickname(std::string* nickname);
+  private:
+  const std::string& _internal_nickname() const;
+  void _internal_set_nickname(const std::string& value);
+  std::string* _internal_mutable_nickname();
+  public:
+
+  // string avatar = 5;
+  void clear_avatar();
+  const std::string& avatar() const;
+  void set_avatar(const std::string& value);
+  void set_avatar(std::string&& value);
+  void set_avatar(const char* value);
+  void set_avatar(const char* value, size_t size);
+  std::string* mutable_avatar();
+  std::string* release_avatar();
+  void set_allocated_avatar(std::string* avatar);
+  private:
+  const std::string& _internal_avatar() const;
+  void _internal_set_avatar(const std::string& value);
+  std::string* _internal_mutable_avatar();
+  public:
+
+  // string password = 7;
+  void clear_password();
+  const std::string& password() const;
+  void set_password(const std::string& value);
+  void set_password(std::string&& value);
+  void set_password(const char* value);
+  void set_password(const char* value, size_t size);
+  std::string* mutable_password();
+  std::string* release_password();
+  void set_allocated_password(std::string* password);
+  private:
+  const std::string& _internal_password() const;
+  void _internal_set_password(const std::string& value);
+  std::string* _internal_mutable_password();
+  public:
+
+  // int32 res_code = 1;
+  void clear_res_code();
+  ::PROTOBUF_NAMESPACE_ID::int32 res_code() const;
+  void set_res_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_res_code() const;
+  void _internal_set_res_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 user_id = 2;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 beautiful_id = 3;
+  void clear_beautiful_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 beautiful_id() const;
+  void set_beautiful_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_beautiful_id() const;
+  void _internal_set_beautiful_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 cheat_rate = 8;
+  void clear_cheat_rate();
+  ::PROTOBUF_NAMESPACE_ID::int32 cheat_rate() const;
+  void set_cheat_rate(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_cheat_rate() const;
+  void _internal_set_cheat_rate(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // uint64 coin = 6;
+  void clear_coin();
+  ::PROTOBUF_NAMESPACE_ID::uint64 coin() const;
+  void set_coin(::PROTOBUF_NAMESPACE_ID::uint64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::uint64 _internal_coin() const;
+  void _internal_set_coin(::PROTOBUF_NAMESPACE_ID::uint64 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgDBGamePlayerLoginResp)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr nickname_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr avatar_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr password_;
+  ::PROTOBUF_NAMESPACE_ID::int32 res_code_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 beautiful_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 cheat_rate_;
+  ::PROTOBUF_NAMESPACE_ID::uint64 coin_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgDBWriteScore PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgDBWriteScore) */ {
+ public:
+  inline MsgDBWriteScore() : MsgDBWriteScore(nullptr) {}
+  virtual ~MsgDBWriteScore();
+
+  MsgDBWriteScore(const MsgDBWriteScore& from);
+  MsgDBWriteScore(MsgDBWriteScore&& from) noexcept
+    : MsgDBWriteScore() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgDBWriteScore& operator=(const MsgDBWriteScore& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgDBWriteScore& operator=(MsgDBWriteScore&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgDBWriteScore& default_instance();
+
+  static inline const MsgDBWriteScore* internal_default_instance() {
+    return reinterpret_cast<const MsgDBWriteScore*>(
+               &_MsgDBWriteScore_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    22;
+
+  friend void swap(MsgDBWriteScore& a, MsgDBWriteScore& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgDBWriteScore* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgDBWriteScore* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgDBWriteScore* New() const final {
+    return CreateMaybeMessage<MsgDBWriteScore>(nullptr);
+  }
+
+  MsgDBWriteScore* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgDBWriteScore>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgDBWriteScore& from);
+  void MergeFrom(const MsgDBWriteScore& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgDBWriteScore* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgDBWriteScore";
+  }
+  protected:
+  explicit MsgDBWriteScore(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kGameDetailsFieldNumber = 4,
+    kUserIdFieldNumber = 1,
+    kBetFieldNumber = 2,
+    kScoreFieldNumber = 3,
+  };
+  // string game_details = 4;
+  void clear_game_details();
+  const std::string& game_details() const;
+  void set_game_details(const std::string& value);
+  void set_game_details(std::string&& value);
+  void set_game_details(const char* value);
+  void set_game_details(const char* value, size_t size);
+  std::string* mutable_game_details();
+  std::string* release_game_details();
+  void set_allocated_game_details(std::string* game_details);
+  private:
+  const std::string& _internal_game_details() const;
+  void _internal_set_game_details(const std::string& value);
+  std::string* _internal_mutable_game_details();
+  public:
+
+  // int32 user_id = 1;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 bet = 2;
+  void clear_bet();
+  ::PROTOBUF_NAMESPACE_ID::int32 bet() const;
+  void set_bet(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_bet() const;
+  void _internal_set_bet(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int64 score = 3;
+  void clear_score();
+  ::PROTOBUF_NAMESPACE_ID::int64 score() const;
+  void set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_score() const;
+  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgDBWriteScore)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr game_details_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 bet_;
+  ::PROTOBUF_NAMESPACE_ID::int64 score_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgDBWriteScoreResp PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgDBWriteScoreResp) */ {
+ public:
+  inline MsgDBWriteScoreResp() : MsgDBWriteScoreResp(nullptr) {}
+  virtual ~MsgDBWriteScoreResp();
+
+  MsgDBWriteScoreResp(const MsgDBWriteScoreResp& from);
+  MsgDBWriteScoreResp(MsgDBWriteScoreResp&& from) noexcept
+    : MsgDBWriteScoreResp() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgDBWriteScoreResp& operator=(const MsgDBWriteScoreResp& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgDBWriteScoreResp& operator=(MsgDBWriteScoreResp&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgDBWriteScoreResp& default_instance();
+
+  static inline const MsgDBWriteScoreResp* internal_default_instance() {
+    return reinterpret_cast<const MsgDBWriteScoreResp*>(
+               &_MsgDBWriteScoreResp_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    23;
+
+  friend void swap(MsgDBWriteScoreResp& a, MsgDBWriteScoreResp& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgDBWriteScoreResp* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgDBWriteScoreResp* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgDBWriteScoreResp* New() const final {
+    return CreateMaybeMessage<MsgDBWriteScoreResp>(nullptr);
+  }
+
+  MsgDBWriteScoreResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgDBWriteScoreResp>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgDBWriteScoreResp& from);
+  void MergeFrom(const MsgDBWriteScoreResp& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgDBWriteScoreResp* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgDBWriteScoreResp";
+  }
+  protected:
+  explicit MsgDBWriteScoreResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kUserIdFieldNumber = 1,
+    kPlayerCheatRateFieldNumber = 2,
+    kPlayerCheatScoreFieldNumber = 3,
+    kSystemCheatRateFieldNumber = 4,
+    kSystemCheatScoreFieldNumber = 5,
+    kSystemBloodMinLineFieldNumber = 6,
+    kSystemBloodMaxLineFieldNumber = 7,
+  };
+  // int32 user_id = 1;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 player_cheat_rate = 2;
+  void clear_player_cheat_rate();
+  ::PROTOBUF_NAMESPACE_ID::int32 player_cheat_rate() const;
+  void set_player_cheat_rate(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_player_cheat_rate() const;
+  void _internal_set_player_cheat_rate(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 player_cheat_score = 3;
+  void clear_player_cheat_score();
+  ::PROTOBUF_NAMESPACE_ID::int32 player_cheat_score() const;
+  void set_player_cheat_score(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_player_cheat_score() const;
+  void _internal_set_player_cheat_score(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 system_cheat_rate = 4;
+  void clear_system_cheat_rate();
+  ::PROTOBUF_NAMESPACE_ID::int32 system_cheat_rate() const;
+  void set_system_cheat_rate(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_system_cheat_rate() const;
+  void _internal_set_system_cheat_rate(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int64 system_cheat_score = 5;
+  void clear_system_cheat_score();
+  ::PROTOBUF_NAMESPACE_ID::int64 system_cheat_score() const;
+  void set_system_cheat_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_system_cheat_score() const;
+  void _internal_set_system_cheat_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int64 system_blood_min_line = 6;
+  void clear_system_blood_min_line();
+  ::PROTOBUF_NAMESPACE_ID::int64 system_blood_min_line() const;
+  void set_system_blood_min_line(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_system_blood_min_line() const;
+  void _internal_set_system_blood_min_line(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int64 system_blood_max_line = 7;
+  void clear_system_blood_max_line();
+  ::PROTOBUF_NAMESPACE_ID::int64 system_blood_max_line() const;
+  void set_system_blood_max_line(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_system_blood_max_line() const;
+  void _internal_set_system_blood_max_line(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgDBWriteScoreResp)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 player_cheat_rate_;
+  ::PROTOBUF_NAMESPACE_ID::int32 player_cheat_score_;
+  ::PROTOBUF_NAMESPACE_ID::int32 system_cheat_rate_;
+  ::PROTOBUF_NAMESPACE_ID::int64 system_cheat_score_;
+  ::PROTOBUF_NAMESPACE_ID::int64 system_blood_min_line_;
+  ::PROTOBUF_NAMESPACE_ID::int64 system_blood_max_line_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -4829,93 +5646,6 @@ inline void MsgLoginPlayerInfo::set_allocated_password(std::string* password) {
   password_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), password,
       GetArena());
   // @@protoc_insertion_point(field_set_allocated:MsgLoginPlayerInfo.password)
-}
-
-// -------------------------------------------------------------------
-
-// MsgGamePlayerInfo
-
-// .MsgPlayerAttribute player_attribute = 1;
-inline bool MsgGamePlayerInfo::_internal_has_player_attribute() const {
-  return this != internal_default_instance() && player_attribute_ != nullptr;
-}
-inline bool MsgGamePlayerInfo::has_player_attribute() const {
-  return _internal_has_player_attribute();
-}
-inline void MsgGamePlayerInfo::clear_player_attribute() {
-  if (GetArena() == nullptr && player_attribute_ != nullptr) {
-    delete player_attribute_;
-  }
-  player_attribute_ = nullptr;
-}
-inline const ::MsgPlayerAttribute& MsgGamePlayerInfo::_internal_player_attribute() const {
-  const ::MsgPlayerAttribute* p = player_attribute_;
-  return p != nullptr ? *p : reinterpret_cast<const ::MsgPlayerAttribute&>(
-      ::_MsgPlayerAttribute_default_instance_);
-}
-inline const ::MsgPlayerAttribute& MsgGamePlayerInfo::player_attribute() const {
-  // @@protoc_insertion_point(field_get:MsgGamePlayerInfo.player_attribute)
-  return _internal_player_attribute();
-}
-inline void MsgGamePlayerInfo::unsafe_arena_set_allocated_player_attribute(
-    ::MsgPlayerAttribute* player_attribute) {
-  if (GetArena() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(player_attribute_);
-  }
-  player_attribute_ = player_attribute;
-  if (player_attribute) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:MsgGamePlayerInfo.player_attribute)
-}
-inline ::MsgPlayerAttribute* MsgGamePlayerInfo::release_player_attribute() {
-  
-  ::MsgPlayerAttribute* temp = player_attribute_;
-  player_attribute_ = nullptr;
-  if (GetArena() != nullptr) {
-    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
-  }
-  return temp;
-}
-inline ::MsgPlayerAttribute* MsgGamePlayerInfo::unsafe_arena_release_player_attribute() {
-  // @@protoc_insertion_point(field_release:MsgGamePlayerInfo.player_attribute)
-  
-  ::MsgPlayerAttribute* temp = player_attribute_;
-  player_attribute_ = nullptr;
-  return temp;
-}
-inline ::MsgPlayerAttribute* MsgGamePlayerInfo::_internal_mutable_player_attribute() {
-  
-  if (player_attribute_ == nullptr) {
-    auto* p = CreateMaybeMessage<::MsgPlayerAttribute>(GetArena());
-    player_attribute_ = p;
-  }
-  return player_attribute_;
-}
-inline ::MsgPlayerAttribute* MsgGamePlayerInfo::mutable_player_attribute() {
-  // @@protoc_insertion_point(field_mutable:MsgGamePlayerInfo.player_attribute)
-  return _internal_mutable_player_attribute();
-}
-inline void MsgGamePlayerInfo::set_allocated_player_attribute(::MsgPlayerAttribute* player_attribute) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
-  if (message_arena == nullptr) {
-    delete player_attribute_;
-  }
-  if (player_attribute) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(player_attribute);
-    if (message_arena != submessage_arena) {
-      player_attribute = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, player_attribute, submessage_arena);
-    }
-    
-  } else {
-    
-  }
-  player_attribute_ = player_attribute;
-  // @@protoc_insertion_point(field_set_allocated:MsgGamePlayerInfo.player_attribute)
 }
 
 // -------------------------------------------------------------------
@@ -6104,9 +6834,762 @@ inline void MsgGameServerUnRegister::set_room_level(::PROTOBUF_NAMESPACE_ID::int
   // @@protoc_insertion_point(field_set:MsgGameServerUnRegister.room_level)
 }
 
+// -------------------------------------------------------------------
+
+// MsgLoadCheatRate
+
+// int64 blood_score = 1;
+inline void MsgLoadCheatRate::clear_blood_score() {
+  blood_score_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgLoadCheatRate::_internal_blood_score() const {
+  return blood_score_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgLoadCheatRate::blood_score() const {
+  // @@protoc_insertion_point(field_get:MsgLoadCheatRate.blood_score)
+  return _internal_blood_score();
+}
+inline void MsgLoadCheatRate::_internal_set_blood_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  blood_score_ = value;
+}
+inline void MsgLoadCheatRate::set_blood_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_blood_score(value);
+  // @@protoc_insertion_point(field_set:MsgLoadCheatRate.blood_score)
+}
+
+// int32 cheat_rate = 2;
+inline void MsgLoadCheatRate::clear_cheat_rate() {
+  cheat_rate_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgLoadCheatRate::_internal_cheat_rate() const {
+  return cheat_rate_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgLoadCheatRate::cheat_rate() const {
+  // @@protoc_insertion_point(field_get:MsgLoadCheatRate.cheat_rate)
+  return _internal_cheat_rate();
+}
+inline void MsgLoadCheatRate::_internal_set_cheat_rate(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  cheat_rate_ = value;
+}
+inline void MsgLoadCheatRate::set_cheat_rate(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_cheat_rate(value);
+  // @@protoc_insertion_point(field_set:MsgLoadCheatRate.cheat_rate)
+}
+
+// int64 fail_min_line_score = 3;
+inline void MsgLoadCheatRate::clear_fail_min_line_score() {
+  fail_min_line_score_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgLoadCheatRate::_internal_fail_min_line_score() const {
+  return fail_min_line_score_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgLoadCheatRate::fail_min_line_score() const {
+  // @@protoc_insertion_point(field_get:MsgLoadCheatRate.fail_min_line_score)
+  return _internal_fail_min_line_score();
+}
+inline void MsgLoadCheatRate::_internal_set_fail_min_line_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  fail_min_line_score_ = value;
+}
+inline void MsgLoadCheatRate::set_fail_min_line_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_fail_min_line_score(value);
+  // @@protoc_insertion_point(field_set:MsgLoadCheatRate.fail_min_line_score)
+}
+
+// int64 fail_max_line_score = 4;
+inline void MsgLoadCheatRate::clear_fail_max_line_score() {
+  fail_max_line_score_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgLoadCheatRate::_internal_fail_max_line_score() const {
+  return fail_max_line_score_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgLoadCheatRate::fail_max_line_score() const {
+  // @@protoc_insertion_point(field_get:MsgLoadCheatRate.fail_max_line_score)
+  return _internal_fail_max_line_score();
+}
+inline void MsgLoadCheatRate::_internal_set_fail_max_line_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  fail_max_line_score_ = value;
+}
+inline void MsgLoadCheatRate::set_fail_max_line_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_fail_max_line_score(value);
+  // @@protoc_insertion_point(field_set:MsgLoadCheatRate.fail_max_line_score)
+}
+
+// -------------------------------------------------------------------
+
+// MsgDBGamePlayerLogin
+
+// int32 user_id = 1;
+inline void MsgDBGamePlayerLogin::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBGamePlayerLogin::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBGamePlayerLogin::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBGamePlayerLogin.user_id)
+  return _internal_user_id();
+}
+inline void MsgDBGamePlayerLogin::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgDBGamePlayerLogin::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBGamePlayerLogin.user_id)
+}
+
+// string password = 2;
+inline void MsgDBGamePlayerLogin::clear_password() {
+  password_.ClearToEmpty();
+}
+inline const std::string& MsgDBGamePlayerLogin::password() const {
+  // @@protoc_insertion_point(field_get:MsgDBGamePlayerLogin.password)
+  return _internal_password();
+}
+inline void MsgDBGamePlayerLogin::set_password(const std::string& value) {
+  _internal_set_password(value);
+  // @@protoc_insertion_point(field_set:MsgDBGamePlayerLogin.password)
+}
+inline std::string* MsgDBGamePlayerLogin::mutable_password() {
+  // @@protoc_insertion_point(field_mutable:MsgDBGamePlayerLogin.password)
+  return _internal_mutable_password();
+}
+inline const std::string& MsgDBGamePlayerLogin::_internal_password() const {
+  return password_.Get();
+}
+inline void MsgDBGamePlayerLogin::_internal_set_password(const std::string& value) {
+  
+  password_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgDBGamePlayerLogin::set_password(std::string&& value) {
+  
+  password_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgDBGamePlayerLogin.password)
+}
+inline void MsgDBGamePlayerLogin::set_password(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  password_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgDBGamePlayerLogin.password)
+}
+inline void MsgDBGamePlayerLogin::set_password(const char* value,
+    size_t size) {
+  
+  password_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgDBGamePlayerLogin.password)
+}
+inline std::string* MsgDBGamePlayerLogin::_internal_mutable_password() {
+  
+  return password_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgDBGamePlayerLogin::release_password() {
+  // @@protoc_insertion_point(field_release:MsgDBGamePlayerLogin.password)
+  return password_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgDBGamePlayerLogin::set_allocated_password(std::string* password) {
+  if (password != nullptr) {
+    
+  } else {
+    
+  }
+  password_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), password,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgDBGamePlayerLogin.password)
+}
+
+// int32 ip = 3;
+inline void MsgDBGamePlayerLogin::clear_ip() {
+  ip_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBGamePlayerLogin::_internal_ip() const {
+  return ip_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBGamePlayerLogin::ip() const {
+  // @@protoc_insertion_point(field_get:MsgDBGamePlayerLogin.ip)
+  return _internal_ip();
+}
+inline void MsgDBGamePlayerLogin::_internal_set_ip(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  ip_ = value;
+}
+inline void MsgDBGamePlayerLogin::set_ip(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_ip(value);
+  // @@protoc_insertion_point(field_set:MsgDBGamePlayerLogin.ip)
+}
+
+// -------------------------------------------------------------------
+
+// MsgDBGamePlayerLoginResp
+
+// int32 res_code = 1;
+inline void MsgDBGamePlayerLoginResp::clear_res_code() {
+  res_code_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBGamePlayerLoginResp::_internal_res_code() const {
+  return res_code_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBGamePlayerLoginResp::res_code() const {
+  // @@protoc_insertion_point(field_get:MsgDBGamePlayerLoginResp.res_code)
+  return _internal_res_code();
+}
+inline void MsgDBGamePlayerLoginResp::_internal_set_res_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  res_code_ = value;
+}
+inline void MsgDBGamePlayerLoginResp::set_res_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_res_code(value);
+  // @@protoc_insertion_point(field_set:MsgDBGamePlayerLoginResp.res_code)
+}
+
+// int32 user_id = 2;
+inline void MsgDBGamePlayerLoginResp::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBGamePlayerLoginResp::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBGamePlayerLoginResp::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBGamePlayerLoginResp.user_id)
+  return _internal_user_id();
+}
+inline void MsgDBGamePlayerLoginResp::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgDBGamePlayerLoginResp::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBGamePlayerLoginResp.user_id)
+}
+
+// int32 beautiful_id = 3;
+inline void MsgDBGamePlayerLoginResp::clear_beautiful_id() {
+  beautiful_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBGamePlayerLoginResp::_internal_beautiful_id() const {
+  return beautiful_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBGamePlayerLoginResp::beautiful_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBGamePlayerLoginResp.beautiful_id)
+  return _internal_beautiful_id();
+}
+inline void MsgDBGamePlayerLoginResp::_internal_set_beautiful_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  beautiful_id_ = value;
+}
+inline void MsgDBGamePlayerLoginResp::set_beautiful_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_beautiful_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBGamePlayerLoginResp.beautiful_id)
+}
+
+// string nickname = 4;
+inline void MsgDBGamePlayerLoginResp::clear_nickname() {
+  nickname_.ClearToEmpty();
+}
+inline const std::string& MsgDBGamePlayerLoginResp::nickname() const {
+  // @@protoc_insertion_point(field_get:MsgDBGamePlayerLoginResp.nickname)
+  return _internal_nickname();
+}
+inline void MsgDBGamePlayerLoginResp::set_nickname(const std::string& value) {
+  _internal_set_nickname(value);
+  // @@protoc_insertion_point(field_set:MsgDBGamePlayerLoginResp.nickname)
+}
+inline std::string* MsgDBGamePlayerLoginResp::mutable_nickname() {
+  // @@protoc_insertion_point(field_mutable:MsgDBGamePlayerLoginResp.nickname)
+  return _internal_mutable_nickname();
+}
+inline const std::string& MsgDBGamePlayerLoginResp::_internal_nickname() const {
+  return nickname_.Get();
+}
+inline void MsgDBGamePlayerLoginResp::_internal_set_nickname(const std::string& value) {
+  
+  nickname_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgDBGamePlayerLoginResp::set_nickname(std::string&& value) {
+  
+  nickname_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgDBGamePlayerLoginResp.nickname)
+}
+inline void MsgDBGamePlayerLoginResp::set_nickname(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  nickname_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgDBGamePlayerLoginResp.nickname)
+}
+inline void MsgDBGamePlayerLoginResp::set_nickname(const char* value,
+    size_t size) {
+  
+  nickname_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgDBGamePlayerLoginResp.nickname)
+}
+inline std::string* MsgDBGamePlayerLoginResp::_internal_mutable_nickname() {
+  
+  return nickname_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgDBGamePlayerLoginResp::release_nickname() {
+  // @@protoc_insertion_point(field_release:MsgDBGamePlayerLoginResp.nickname)
+  return nickname_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgDBGamePlayerLoginResp::set_allocated_nickname(std::string* nickname) {
+  if (nickname != nullptr) {
+    
+  } else {
+    
+  }
+  nickname_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), nickname,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgDBGamePlayerLoginResp.nickname)
+}
+
+// string avatar = 5;
+inline void MsgDBGamePlayerLoginResp::clear_avatar() {
+  avatar_.ClearToEmpty();
+}
+inline const std::string& MsgDBGamePlayerLoginResp::avatar() const {
+  // @@protoc_insertion_point(field_get:MsgDBGamePlayerLoginResp.avatar)
+  return _internal_avatar();
+}
+inline void MsgDBGamePlayerLoginResp::set_avatar(const std::string& value) {
+  _internal_set_avatar(value);
+  // @@protoc_insertion_point(field_set:MsgDBGamePlayerLoginResp.avatar)
+}
+inline std::string* MsgDBGamePlayerLoginResp::mutable_avatar() {
+  // @@protoc_insertion_point(field_mutable:MsgDBGamePlayerLoginResp.avatar)
+  return _internal_mutable_avatar();
+}
+inline const std::string& MsgDBGamePlayerLoginResp::_internal_avatar() const {
+  return avatar_.Get();
+}
+inline void MsgDBGamePlayerLoginResp::_internal_set_avatar(const std::string& value) {
+  
+  avatar_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgDBGamePlayerLoginResp::set_avatar(std::string&& value) {
+  
+  avatar_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgDBGamePlayerLoginResp.avatar)
+}
+inline void MsgDBGamePlayerLoginResp::set_avatar(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  avatar_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgDBGamePlayerLoginResp.avatar)
+}
+inline void MsgDBGamePlayerLoginResp::set_avatar(const char* value,
+    size_t size) {
+  
+  avatar_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgDBGamePlayerLoginResp.avatar)
+}
+inline std::string* MsgDBGamePlayerLoginResp::_internal_mutable_avatar() {
+  
+  return avatar_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgDBGamePlayerLoginResp::release_avatar() {
+  // @@protoc_insertion_point(field_release:MsgDBGamePlayerLoginResp.avatar)
+  return avatar_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgDBGamePlayerLoginResp::set_allocated_avatar(std::string* avatar) {
+  if (avatar != nullptr) {
+    
+  } else {
+    
+  }
+  avatar_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), avatar,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgDBGamePlayerLoginResp.avatar)
+}
+
+// uint64 coin = 6;
+inline void MsgDBGamePlayerLoginResp::clear_coin() {
+  coin_ = PROTOBUF_ULONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint64 MsgDBGamePlayerLoginResp::_internal_coin() const {
+  return coin_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint64 MsgDBGamePlayerLoginResp::coin() const {
+  // @@protoc_insertion_point(field_get:MsgDBGamePlayerLoginResp.coin)
+  return _internal_coin();
+}
+inline void MsgDBGamePlayerLoginResp::_internal_set_coin(::PROTOBUF_NAMESPACE_ID::uint64 value) {
+  
+  coin_ = value;
+}
+inline void MsgDBGamePlayerLoginResp::set_coin(::PROTOBUF_NAMESPACE_ID::uint64 value) {
+  _internal_set_coin(value);
+  // @@protoc_insertion_point(field_set:MsgDBGamePlayerLoginResp.coin)
+}
+
+// string password = 7;
+inline void MsgDBGamePlayerLoginResp::clear_password() {
+  password_.ClearToEmpty();
+}
+inline const std::string& MsgDBGamePlayerLoginResp::password() const {
+  // @@protoc_insertion_point(field_get:MsgDBGamePlayerLoginResp.password)
+  return _internal_password();
+}
+inline void MsgDBGamePlayerLoginResp::set_password(const std::string& value) {
+  _internal_set_password(value);
+  // @@protoc_insertion_point(field_set:MsgDBGamePlayerLoginResp.password)
+}
+inline std::string* MsgDBGamePlayerLoginResp::mutable_password() {
+  // @@protoc_insertion_point(field_mutable:MsgDBGamePlayerLoginResp.password)
+  return _internal_mutable_password();
+}
+inline const std::string& MsgDBGamePlayerLoginResp::_internal_password() const {
+  return password_.Get();
+}
+inline void MsgDBGamePlayerLoginResp::_internal_set_password(const std::string& value) {
+  
+  password_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgDBGamePlayerLoginResp::set_password(std::string&& value) {
+  
+  password_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgDBGamePlayerLoginResp.password)
+}
+inline void MsgDBGamePlayerLoginResp::set_password(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  password_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgDBGamePlayerLoginResp.password)
+}
+inline void MsgDBGamePlayerLoginResp::set_password(const char* value,
+    size_t size) {
+  
+  password_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgDBGamePlayerLoginResp.password)
+}
+inline std::string* MsgDBGamePlayerLoginResp::_internal_mutable_password() {
+  
+  return password_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgDBGamePlayerLoginResp::release_password() {
+  // @@protoc_insertion_point(field_release:MsgDBGamePlayerLoginResp.password)
+  return password_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgDBGamePlayerLoginResp::set_allocated_password(std::string* password) {
+  if (password != nullptr) {
+    
+  } else {
+    
+  }
+  password_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), password,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgDBGamePlayerLoginResp.password)
+}
+
+// int32 cheat_rate = 8;
+inline void MsgDBGamePlayerLoginResp::clear_cheat_rate() {
+  cheat_rate_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBGamePlayerLoginResp::_internal_cheat_rate() const {
+  return cheat_rate_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBGamePlayerLoginResp::cheat_rate() const {
+  // @@protoc_insertion_point(field_get:MsgDBGamePlayerLoginResp.cheat_rate)
+  return _internal_cheat_rate();
+}
+inline void MsgDBGamePlayerLoginResp::_internal_set_cheat_rate(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  cheat_rate_ = value;
+}
+inline void MsgDBGamePlayerLoginResp::set_cheat_rate(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_cheat_rate(value);
+  // @@protoc_insertion_point(field_set:MsgDBGamePlayerLoginResp.cheat_rate)
+}
+
+// -------------------------------------------------------------------
+
+// MsgDBWriteScore
+
+// int32 user_id = 1;
+inline void MsgDBWriteScore::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScore::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScore::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBWriteScore.user_id)
+  return _internal_user_id();
+}
+inline void MsgDBWriteScore::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgDBWriteScore::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBWriteScore.user_id)
+}
+
+// int32 bet = 2;
+inline void MsgDBWriteScore::clear_bet() {
+  bet_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScore::_internal_bet() const {
+  return bet_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScore::bet() const {
+  // @@protoc_insertion_point(field_get:MsgDBWriteScore.bet)
+  return _internal_bet();
+}
+inline void MsgDBWriteScore::_internal_set_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  bet_ = value;
+}
+inline void MsgDBWriteScore::set_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_bet(value);
+  // @@protoc_insertion_point(field_set:MsgDBWriteScore.bet)
+}
+
+// int64 score = 3;
+inline void MsgDBWriteScore::clear_score() {
+  score_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBWriteScore::_internal_score() const {
+  return score_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBWriteScore::score() const {
+  // @@protoc_insertion_point(field_get:MsgDBWriteScore.score)
+  return _internal_score();
+}
+inline void MsgDBWriteScore::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  score_ = value;
+}
+inline void MsgDBWriteScore::set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_score(value);
+  // @@protoc_insertion_point(field_set:MsgDBWriteScore.score)
+}
+
+// string game_details = 4;
+inline void MsgDBWriteScore::clear_game_details() {
+  game_details_.ClearToEmpty();
+}
+inline const std::string& MsgDBWriteScore::game_details() const {
+  // @@protoc_insertion_point(field_get:MsgDBWriteScore.game_details)
+  return _internal_game_details();
+}
+inline void MsgDBWriteScore::set_game_details(const std::string& value) {
+  _internal_set_game_details(value);
+  // @@protoc_insertion_point(field_set:MsgDBWriteScore.game_details)
+}
+inline std::string* MsgDBWriteScore::mutable_game_details() {
+  // @@protoc_insertion_point(field_mutable:MsgDBWriteScore.game_details)
+  return _internal_mutable_game_details();
+}
+inline const std::string& MsgDBWriteScore::_internal_game_details() const {
+  return game_details_.Get();
+}
+inline void MsgDBWriteScore::_internal_set_game_details(const std::string& value) {
+  
+  game_details_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgDBWriteScore::set_game_details(std::string&& value) {
+  
+  game_details_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgDBWriteScore.game_details)
+}
+inline void MsgDBWriteScore::set_game_details(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  game_details_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgDBWriteScore.game_details)
+}
+inline void MsgDBWriteScore::set_game_details(const char* value,
+    size_t size) {
+  
+  game_details_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgDBWriteScore.game_details)
+}
+inline std::string* MsgDBWriteScore::_internal_mutable_game_details() {
+  
+  return game_details_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgDBWriteScore::release_game_details() {
+  // @@protoc_insertion_point(field_release:MsgDBWriteScore.game_details)
+  return game_details_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgDBWriteScore::set_allocated_game_details(std::string* game_details) {
+  if (game_details != nullptr) {
+    
+  } else {
+    
+  }
+  game_details_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), game_details,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgDBWriteScore.game_details)
+}
+
+// -------------------------------------------------------------------
+
+// MsgDBWriteScoreResp
+
+// int32 user_id = 1;
+inline void MsgDBWriteScoreResp::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScoreResp::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScoreResp::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBWriteScoreResp.user_id)
+  return _internal_user_id();
+}
+inline void MsgDBWriteScoreResp::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgDBWriteScoreResp::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBWriteScoreResp.user_id)
+}
+
+// int32 player_cheat_rate = 2;
+inline void MsgDBWriteScoreResp::clear_player_cheat_rate() {
+  player_cheat_rate_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScoreResp::_internal_player_cheat_rate() const {
+  return player_cheat_rate_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScoreResp::player_cheat_rate() const {
+  // @@protoc_insertion_point(field_get:MsgDBWriteScoreResp.player_cheat_rate)
+  return _internal_player_cheat_rate();
+}
+inline void MsgDBWriteScoreResp::_internal_set_player_cheat_rate(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  player_cheat_rate_ = value;
+}
+inline void MsgDBWriteScoreResp::set_player_cheat_rate(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_player_cheat_rate(value);
+  // @@protoc_insertion_point(field_set:MsgDBWriteScoreResp.player_cheat_rate)
+}
+
+// int32 player_cheat_score = 3;
+inline void MsgDBWriteScoreResp::clear_player_cheat_score() {
+  player_cheat_score_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScoreResp::_internal_player_cheat_score() const {
+  return player_cheat_score_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScoreResp::player_cheat_score() const {
+  // @@protoc_insertion_point(field_get:MsgDBWriteScoreResp.player_cheat_score)
+  return _internal_player_cheat_score();
+}
+inline void MsgDBWriteScoreResp::_internal_set_player_cheat_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  player_cheat_score_ = value;
+}
+inline void MsgDBWriteScoreResp::set_player_cheat_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_player_cheat_score(value);
+  // @@protoc_insertion_point(field_set:MsgDBWriteScoreResp.player_cheat_score)
+}
+
+// int32 system_cheat_rate = 4;
+inline void MsgDBWriteScoreResp::clear_system_cheat_rate() {
+  system_cheat_rate_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScoreResp::_internal_system_cheat_rate() const {
+  return system_cheat_rate_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScoreResp::system_cheat_rate() const {
+  // @@protoc_insertion_point(field_get:MsgDBWriteScoreResp.system_cheat_rate)
+  return _internal_system_cheat_rate();
+}
+inline void MsgDBWriteScoreResp::_internal_set_system_cheat_rate(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  system_cheat_rate_ = value;
+}
+inline void MsgDBWriteScoreResp::set_system_cheat_rate(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_system_cheat_rate(value);
+  // @@protoc_insertion_point(field_set:MsgDBWriteScoreResp.system_cheat_rate)
+}
+
+// int64 system_cheat_score = 5;
+inline void MsgDBWriteScoreResp::clear_system_cheat_score() {
+  system_cheat_score_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBWriteScoreResp::_internal_system_cheat_score() const {
+  return system_cheat_score_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBWriteScoreResp::system_cheat_score() const {
+  // @@protoc_insertion_point(field_get:MsgDBWriteScoreResp.system_cheat_score)
+  return _internal_system_cheat_score();
+}
+inline void MsgDBWriteScoreResp::_internal_set_system_cheat_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  system_cheat_score_ = value;
+}
+inline void MsgDBWriteScoreResp::set_system_cheat_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_system_cheat_score(value);
+  // @@protoc_insertion_point(field_set:MsgDBWriteScoreResp.system_cheat_score)
+}
+
+// int64 system_blood_min_line = 6;
+inline void MsgDBWriteScoreResp::clear_system_blood_min_line() {
+  system_blood_min_line_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBWriteScoreResp::_internal_system_blood_min_line() const {
+  return system_blood_min_line_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBWriteScoreResp::system_blood_min_line() const {
+  // @@protoc_insertion_point(field_get:MsgDBWriteScoreResp.system_blood_min_line)
+  return _internal_system_blood_min_line();
+}
+inline void MsgDBWriteScoreResp::_internal_set_system_blood_min_line(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  system_blood_min_line_ = value;
+}
+inline void MsgDBWriteScoreResp::set_system_blood_min_line(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_system_blood_min_line(value);
+  // @@protoc_insertion_point(field_set:MsgDBWriteScoreResp.system_blood_min_line)
+}
+
+// int64 system_blood_max_line = 7;
+inline void MsgDBWriteScoreResp::clear_system_blood_max_line() {
+  system_blood_max_line_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBWriteScoreResp::_internal_system_blood_max_line() const {
+  return system_blood_max_line_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBWriteScoreResp::system_blood_max_line() const {
+  // @@protoc_insertion_point(field_get:MsgDBWriteScoreResp.system_blood_max_line)
+  return _internal_system_blood_max_line();
+}
+inline void MsgDBWriteScoreResp::_internal_set_system_blood_max_line(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  system_blood_max_line_ = value;
+}
+inline void MsgDBWriteScoreResp::set_system_blood_max_line(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_system_blood_max_line(value);
+  // @@protoc_insertion_point(field_set:MsgDBWriteScoreResp.system_blood_max_line)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

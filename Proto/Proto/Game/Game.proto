@@ -1,11 +1,38 @@
 syntax = "proto3";
 
+//游戏登录
 message MsgGamePlayerLogin
 {
-	string		account			= 1;	//玩家账号
+	int32		user_id			= 1;	//玩家id
+	string		password		= 2;	//玩家密码
 }
 
+//游戏玩家信息
+message MsgGamePlayerInfo
+{
+	int32		user_id			= 1;	//玩家ID
+	int32		beautiful_id	= 2;	//玩家靓号
+	string		nickname		= 3;	//玩家昵称
+	string		avatar			= 4;	//头像
+	uint64		coin			= 5;	//玩家金币
+	int32		table_id		= 6;	//玩家座位号
+	int32		chair_id		= 7;	//玩家椅子号
+}
+
+//游戏登录返回
 message MsgGamePlayerLoginResp
 {
 	int32		res_code		= 1;	//登录返回码(0:成功 非0:失败)
+	int32		user_id			= 2;	//玩家ID
+	int32		beautiful_id	= 3;	//玩家靓号
+	string		nickname		= 4;	//玩家昵称
+	string		avatar			= 5;	//头像
+	uint64		coin			= 6;	//玩家金币
+}
+
+//同步桌子所有玩家分数
+message MsgSyncPlayersScore
+{
+	repeated int32		chair_id		= 1;	//椅子号
+	repeated int64		coin			= 2;	//玩家金币
 }

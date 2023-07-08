@@ -43,8 +43,15 @@ enum EMsgIDLogin
 
 enum EMsgIDGame
 {
-	MsgIDGame_Null				= 0;
+	MsgIDGame_Null						= 0;
 	//ID从1001开始
-	MsgIDGame_Login				= 1001;				//玩家登录
-	MsgIDGame_LoginResp			= 1002;				//玩家登录返回
+	MsgIDGame_Login						= 1001;		//玩家登录
+	MsgIDGame_LoginResp					= 1002;		//玩家登录返回
+	MsgIDGame_SqueezeSeat				= 1003;		//挤号
+	MsgIDGame_Logout					= 1004;		//玩家下线
+	MsgIDGame_AutoSitDown				= 1005;		//玩家自动坐下
+	MsgIDGame_SitDownResp				= 1006;		//玩家坐下返回
+	MsgIDGame_SyncPlayerInfo			= 1007;		//玩家数据同步
+	MsgIDGame_NotifyPlayerStandUp		= 1008;		//通知玩家下线
+	MsgIDGame_SyncPlayersScore			= 1009;		//同步桌子所有玩家分数
 }

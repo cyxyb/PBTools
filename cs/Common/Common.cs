@@ -734,6 +734,9 @@ public sealed partial class MsgCommonStr : pb::IMessage<MsgCommonStr>
 
 }
 
+/// <summary>
+///游戏服务器信息
+/// </summary>
 public sealed partial class MsgGameServerInfo : pb::IMessage<MsgGameServerInfo>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     , pb::IBufferMessage
@@ -1182,6 +1185,9 @@ public sealed partial class MsgGameServerInfo : pb::IMessage<MsgGameServerInfo>
 
 }
 
+/// <summary>
+///游戏服务器列表
+/// </summary>
 public sealed partial class MsgGameServerList : pb::IMessage<MsgGameServerList>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     , pb::IBufferMessage
