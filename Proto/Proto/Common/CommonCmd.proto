@@ -37,7 +37,7 @@ enum EMsgIDLogin
 	MsgIDLogin_DeleteAllReadMailResp	= 17;		//删除已读邮件返回
 	MsgIDLogin_PhoneCode				= 18;		//验证码
 	MsgIDLogin_PhoneCodeResp			= 19;		//验证码返回
-	MsgIDLogin_SyncPlayerGold			= 20;		//同步玩家金币
+	MsgIDLogin_SyncPlayerGoldResp		= 20;		//同步玩家金币
 	MsgIDLogin_NotifyGameServerList		= 21;		//通知游戏服务器列表
 }
 
@@ -47,11 +47,11 @@ enum EMsgIDGame
 	//ID从1001开始
 	MsgIDGame_Login						= 1001;		//玩家登录
 	MsgIDGame_LoginResp					= 1002;		//玩家登录返回
-	MsgIDGame_SqueezeSeat				= 1003;		//挤号
+	MsgIDGame_SqueezeSeatResp			= 1003;		//挤号
 	MsgIDGame_Logout					= 1004;		//玩家下线
 	MsgIDGame_AutoSitDown				= 1005;		//玩家自动坐下
 	MsgIDGame_SitDownResp				= 1006;		//玩家坐下返回
-	MsgIDGame_SyncPlayerInfo			= 1007;		//玩家数据同步
-	MsgIDGame_NotifyPlayerStandUp		= 1008;		//通知玩家下线
-	MsgIDGame_SyncPlayersScore			= 1009;		//同步桌子所有玩家分数
+	MsgIDGame_SyncPlayerInfoResp		= 1007;		//玩家数据同步
+	MsgIDGame_NotifyPlayerStandUpResp	= 1008;		//通知玩家下线
+	MsgIDGame_SyncPlayersScoreResp		= 1009;		//同步桌子所有玩家分数
 }

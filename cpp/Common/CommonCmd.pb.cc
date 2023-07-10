@@ -27,7 +27,7 @@ const char descriptor_table_protodef_CommonCmd_2eproto[] PROTOBUF_SECTION_VARIAB
   "o\020\351\007\022\024\n\017EMsgIDMain_Game\020\321\017*k\n\010EResCode\022\021"
   "\n\rEResCode_NULL\020\000\022\030\n\024EResCode_InvilidMai"
   "l\020\001\022\031\n\025EResCode_MailRecalled\020\002\022\027\n\023EResCo"
-  "de_MailPicked\020\003*\225\005\n\013EMsgIDLogin\022\023\n\017MsgID"
+  "de_MailPicked\020\003*\231\005\n\013EMsgIDLogin\022\023\n\017MsgID"
   "Login_Null\020\000\022\024\n\020MsgIDLogin_Login\020\001\022\030\n\024Ms"
   "gIDLogin_LoginResp\020\002\022\035\n\031MsgIDLogin_Modif"
   "yNickName\020\003\022!\n\035MsgIDLogin_ModifyNickName"
@@ -42,16 +42,16 @@ const char descriptor_table_protodef_CommonCmd_2eproto[] PROTOBUF_SECTION_VARIAB
   "p\020\017\022 \n\034MsgIDLogin_DeleteAllReadMail\020\020\022$\n"
   " MsgIDLogin_DeleteAllReadMailResp\020\021\022\030\n\024M"
   "sgIDLogin_PhoneCode\020\022\022\034\n\030MsgIDLogin_Phon"
-  "eCodeResp\020\023\022\035\n\031MsgIDLogin_SyncPlayerGold"
-  "\020\024\022#\n\037MsgIDLogin_NotifyGameServerList\020\025*"
-  "\237\002\n\nEMsgIDGame\022\022\n\016MsgIDGame_Null\020\000\022\024\n\017Ms"
-  "gIDGame_Login\020\351\007\022\030\n\023MsgIDGame_LoginResp\020"
-  "\352\007\022\032\n\025MsgIDGame_SqueezeSeat\020\353\007\022\025\n\020MsgIDG"
-  "ame_Logout\020\354\007\022\032\n\025MsgIDGame_AutoSitDown\020\355"
-  "\007\022\032\n\025MsgIDGame_SitDownResp\020\356\007\022\035\n\030MsgIDGa"
-  "me_SyncPlayerInfo\020\357\007\022\"\n\035MsgIDGame_Notify"
-  "PlayerStandUp\020\360\007\022\037\n\032MsgIDGame_SyncPlayer"
-  "sScore\020\361\007b\006proto3"
+  "eCodeResp\020\023\022!\n\035MsgIDLogin_SyncPlayerGold"
+  "Resp\020\024\022#\n\037MsgIDLogin_NotifyGameServerLis"
+  "t\020\025*\257\002\n\nEMsgIDGame\022\022\n\016MsgIDGame_Null\020\000\022\024"
+  "\n\017MsgIDGame_Login\020\351\007\022\030\n\023MsgIDGame_LoginR"
+  "esp\020\352\007\022\036\n\031MsgIDGame_SqueezeSeatResp\020\353\007\022\025"
+  "\n\020MsgIDGame_Logout\020\354\007\022\032\n\025MsgIDGame_AutoS"
+  "itDown\020\355\007\022\032\n\025MsgIDGame_SitDownResp\020\356\007\022!\n"
+  "\034MsgIDGame_SyncPlayerInfoResp\020\357\007\022&\n!MsgI"
+  "DGame_NotifyPlayerStandUpResp\020\360\007\022#\n\036MsgI"
+  "DGame_SyncPlayersScoreResp\020\361\007b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_CommonCmd_2eproto_deps[1] = {
 };
@@ -59,7 +59,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Com
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_CommonCmd_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_CommonCmd_2eproto = {
-  false, false, descriptor_table_protodef_CommonCmd_2eproto, "CommonCmd.proto", 1177,
+  false, false, descriptor_table_protodef_CommonCmd_2eproto, "CommonCmd.proto", 1197,
   &descriptor_table_CommonCmd_2eproto_once, descriptor_table_CommonCmd_2eproto_sccs, descriptor_table_CommonCmd_2eproto_deps, 0, 0,
   schemas, file_default_instances, TableStruct_CommonCmd_2eproto::offsets,
   file_level_metadata_CommonCmd_2eproto, 0, file_level_enum_descriptors_CommonCmd_2eproto, file_level_service_descriptors_CommonCmd_2eproto,

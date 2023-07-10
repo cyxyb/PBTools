@@ -129,7 +129,7 @@ enum EMsgIDLogin : int {
   MsgIDLogin_DeleteAllReadMailResp = 17,
   MsgIDLogin_PhoneCode = 18,
   MsgIDLogin_PhoneCodeResp = 19,
-  MsgIDLogin_SyncPlayerGold = 20,
+  MsgIDLogin_SyncPlayerGoldResp = 20,
   MsgIDLogin_NotifyGameServerList = 21,
   EMsgIDLogin_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDLogin_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
@@ -157,19 +157,19 @@ enum EMsgIDGame : int {
   MsgIDGame_Null = 0,
   MsgIDGame_Login = 1001,
   MsgIDGame_LoginResp = 1002,
-  MsgIDGame_SqueezeSeat = 1003,
+  MsgIDGame_SqueezeSeatResp = 1003,
   MsgIDGame_Logout = 1004,
   MsgIDGame_AutoSitDown = 1005,
   MsgIDGame_SitDownResp = 1006,
-  MsgIDGame_SyncPlayerInfo = 1007,
-  MsgIDGame_NotifyPlayerStandUp = 1008,
-  MsgIDGame_SyncPlayersScore = 1009,
+  MsgIDGame_SyncPlayerInfoResp = 1007,
+  MsgIDGame_NotifyPlayerStandUpResp = 1008,
+  MsgIDGame_SyncPlayersScoreResp = 1009,
   EMsgIDGame_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDGame_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDGame_IsValid(int value);
 constexpr EMsgIDGame EMsgIDGame_MIN = MsgIDGame_Null;
-constexpr EMsgIDGame EMsgIDGame_MAX = MsgIDGame_SyncPlayersScore;
+constexpr EMsgIDGame EMsgIDGame_MAX = MsgIDGame_SyncPlayersScoreResp;
 constexpr int EMsgIDGame_ARRAYSIZE = EMsgIDGame_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDGame_descriptor();

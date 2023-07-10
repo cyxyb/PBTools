@@ -27,7 +27,7 @@ public static partial class CommonCmdReflection {
           "SW5mbxDpBxIUCg9FTXNnSURNYWluX0dhbWUQ0Q8qawoIRVJlc0NvZGUSEQoN",
           "RVJlc0NvZGVfTlVMTBAAEhgKFEVSZXNDb2RlX0ludmlsaWRNYWlsEAESGQoV",
           "RVJlc0NvZGVfTWFpbFJlY2FsbGVkEAISFwoTRVJlc0NvZGVfTWFpbFBpY2tl",
-          "ZBADKpUFCgtFTXNnSURMb2dpbhITCg9Nc2dJRExvZ2luX051bGwQABIUChBN",
+          "ZBADKpkFCgtFTXNnSURMb2dpbhITCg9Nc2dJRExvZ2luX051bGwQABIUChBN",
           "c2dJRExvZ2luX0xvZ2luEAESGAoUTXNnSURMb2dpbl9Mb2dpblJlc3AQAhId",
           "ChlNc2dJRExvZ2luX01vZGlmeU5pY2tOYW1lEAMSIQodTXNnSURMb2dpbl9N",
           "b2RpZnlOaWNrTmFtZVJlc3AQBBIZChVNc2dJRExvZ2luX01vZGlmeUhlYWQQ",
@@ -40,15 +40,15 @@ public static partial class CommonCmdReflection {
           "b2dpbl9SZWNhbGxNYWlsUmVzcBAPEiAKHE1zZ0lETG9naW5fRGVsZXRlQWxs",
           "UmVhZE1haWwQEBIkCiBNc2dJRExvZ2luX0RlbGV0ZUFsbFJlYWRNYWlsUmVz",
           "cBAREhgKFE1zZ0lETG9naW5fUGhvbmVDb2RlEBISHAoYTXNnSURMb2dpbl9Q",
-          "aG9uZUNvZGVSZXNwEBMSHQoZTXNnSURMb2dpbl9TeW5jUGxheWVyR29sZBAU",
-          "EiMKH01zZ0lETG9naW5fTm90aWZ5R2FtZVNlcnZlckxpc3QQFSqfAgoKRU1z",
-          "Z0lER2FtZRISCg5Nc2dJREdhbWVfTnVsbBAAEhQKD01zZ0lER2FtZV9Mb2dp",
-          "bhDpBxIYChNNc2dJREdhbWVfTG9naW5SZXNwEOoHEhoKFU1zZ0lER2FtZV9T",
-          "cXVlZXplU2VhdBDrBxIVChBNc2dJREdhbWVfTG9nb3V0EOwHEhoKFU1zZ0lE",
-          "R2FtZV9BdXRvU2l0RG93bhDtBxIaChVNc2dJREdhbWVfU2l0RG93blJlc3AQ",
-          "7gcSHQoYTXNnSURHYW1lX1N5bmNQbGF5ZXJJbmZvEO8HEiIKHU1zZ0lER2Ft",
-          "ZV9Ob3RpZnlQbGF5ZXJTdGFuZFVwEPAHEh8KGk1zZ0lER2FtZV9TeW5jUGxh",
-          "eWVyc1Njb3JlEPEHYgZwcm90bzM="));
+          "aG9uZUNvZGVSZXNwEBMSIQodTXNnSURMb2dpbl9TeW5jUGxheWVyR29sZFJl",
+          "c3AQFBIjCh9Nc2dJRExvZ2luX05vdGlmeUdhbWVTZXJ2ZXJMaXN0EBUqrwIK",
+          "CkVNc2dJREdhbWUSEgoOTXNnSURHYW1lX051bGwQABIUCg9Nc2dJREdhbWVf",
+          "TG9naW4Q6QcSGAoTTXNnSURHYW1lX0xvZ2luUmVzcBDqBxIeChlNc2dJREdh",
+          "bWVfU3F1ZWV6ZVNlYXRSZXNwEOsHEhUKEE1zZ0lER2FtZV9Mb2dvdXQQ7AcS",
+          "GgoVTXNnSURHYW1lX0F1dG9TaXREb3duEO0HEhoKFU1zZ0lER2FtZV9TaXRE",
+          "b3duUmVzcBDuBxIhChxNc2dJREdhbWVfU3luY1BsYXllckluZm9SZXNwEO8H",
+          "EiYKIU1zZ0lER2FtZV9Ob3RpZnlQbGF5ZXJTdGFuZFVwUmVzcBDwBxIjCh5N",
+          "c2dJREdhbWVfU3luY1BsYXllcnNTY29yZVJlc3AQ8QdiBnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::EMsgIDMain), typeof(global::EResCode), typeof(global::EMsgIDLogin), typeof(global::EMsgIDGame), }, null, null));
@@ -166,7 +166,7 @@ public enum EMsgIDLogin {
   /// <summary>
   ///同步玩家金币
   /// </summary>
-  [pbr::OriginalName("MsgIDLogin_SyncPlayerGold")] MsgIdloginSyncPlayerGold = 20,
+  [pbr::OriginalName("MsgIDLogin_SyncPlayerGoldResp")] MsgIdloginSyncPlayerGoldResp = 20,
   /// <summary>
   ///通知游戏服务器列表
   /// </summary>
@@ -186,7 +186,7 @@ public enum EMsgIDGame {
   /// <summary>
   ///挤号
   /// </summary>
-  [pbr::OriginalName("MsgIDGame_SqueezeSeat")] MsgIdgameSqueezeSeat = 1003,
+  [pbr::OriginalName("MsgIDGame_SqueezeSeatResp")] MsgIdgameSqueezeSeatResp = 1003,
   /// <summary>
   ///玩家下线
   /// </summary>
@@ -202,15 +202,15 @@ public enum EMsgIDGame {
   /// <summary>
   ///玩家数据同步
   /// </summary>
-  [pbr::OriginalName("MsgIDGame_SyncPlayerInfo")] MsgIdgameSyncPlayerInfo = 1007,
+  [pbr::OriginalName("MsgIDGame_SyncPlayerInfoResp")] MsgIdgameSyncPlayerInfoResp = 1007,
   /// <summary>
   ///通知玩家下线
   /// </summary>
-  [pbr::OriginalName("MsgIDGame_NotifyPlayerStandUp")] MsgIdgameNotifyPlayerStandUp = 1008,
+  [pbr::OriginalName("MsgIDGame_NotifyPlayerStandUpResp")] MsgIdgameNotifyPlayerStandUpResp = 1008,
   /// <summary>
   ///同步桌子所有玩家分数
   /// </summary>
-  [pbr::OriginalName("MsgIDGame_SyncPlayersScore")] MsgIdgameSyncPlayersScore = 1009,
+  [pbr::OriginalName("MsgIDGame_SyncPlayersScoreResp")] MsgIdgameSyncPlayersScoreResp = 1009,
 }
 
 #endregion
