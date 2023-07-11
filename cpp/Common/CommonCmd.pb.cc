@@ -44,14 +44,16 @@ const char descriptor_table_protodef_CommonCmd_2eproto[] PROTOBUF_SECTION_VARIAB
   "sgIDLogin_PhoneCode\020\022\022\034\n\030MsgIDLogin_Phon"
   "eCodeResp\020\023\022!\n\035MsgIDLogin_SyncPlayerGold"
   "Resp\020\024\022#\n\037MsgIDLogin_NotifyGameServerLis"
-  "t\020\025*\257\002\n\nEMsgIDGame\022\022\n\016MsgIDGame_Null\020\000\022\024"
+  "t\020\025*\357\002\n\nEMsgIDGame\022\022\n\016MsgIDGame_Null\020\000\022\024"
   "\n\017MsgIDGame_Login\020\351\007\022\030\n\023MsgIDGame_LoginR"
   "esp\020\352\007\022\036\n\031MsgIDGame_SqueezeSeatResp\020\353\007\022\025"
   "\n\020MsgIDGame_Logout\020\354\007\022\032\n\025MsgIDGame_AutoS"
   "itDown\020\355\007\022\032\n\025MsgIDGame_SitDownResp\020\356\007\022!\n"
   "\034MsgIDGame_SyncPlayerInfoResp\020\357\007\022&\n!MsgI"
   "DGame_NotifyPlayerStandUpResp\020\360\007\022#\n\036MsgI"
-  "DGame_SyncPlayersScoreResp\020\361\007b\006proto3"
+  "DGame_SyncPlayersScoreResp\020\361\007\022\034\n\027MsgIDGa"
+  "me_SendGameSence\020\362\007\022 \n\033MsgIDGame_SendGam"
+  "eSenceResp\020\363\007b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_CommonCmd_2eproto_deps[1] = {
 };
@@ -59,7 +61,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Com
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_CommonCmd_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_CommonCmd_2eproto = {
-  false, false, descriptor_table_protodef_CommonCmd_2eproto, "CommonCmd.proto", 1197,
+  false, false, descriptor_table_protodef_CommonCmd_2eproto, "CommonCmd.proto", 1261,
   &descriptor_table_CommonCmd_2eproto_once, descriptor_table_CommonCmd_2eproto_sccs, descriptor_table_CommonCmd_2eproto_deps, 0, 0,
   schemas, file_default_instances, TableStruct_CommonCmd_2eproto::offsets,
   file_level_metadata_CommonCmd_2eproto, 0, file_level_enum_descriptors_CommonCmd_2eproto, file_level_service_descriptors_CommonCmd_2eproto,
@@ -148,6 +150,8 @@ bool EMsgIDGame_IsValid(int value) {
     case 1007:
     case 1008:
     case 1009:
+    case 1010:
+    case 1011:
       return true;
     default:
       return false;

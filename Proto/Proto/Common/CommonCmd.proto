@@ -54,4 +54,6 @@ enum EMsgIDGame
 	MsgIDGame_SyncPlayerInfoResp		= 1007;		//玩家数据同步
 	MsgIDGame_NotifyPlayerStandUpResp	= 1008;		//通知玩家下线
 	MsgIDGame_SyncPlayersScoreResp		= 1009;		//同步桌子所有玩家分数
+	MsgIDGame_SendGameSence				= 1010;		//请求场景消息
+	MsgIDGame_SendGameSenceResp			= 1011;		//请求场景消息返回
 }

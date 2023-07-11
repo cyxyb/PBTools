@@ -41,14 +41,16 @@ public static partial class CommonCmdReflection {
           "UmVhZE1haWwQEBIkCiBNc2dJRExvZ2luX0RlbGV0ZUFsbFJlYWRNYWlsUmVz",
           "cBAREhgKFE1zZ0lETG9naW5fUGhvbmVDb2RlEBISHAoYTXNnSURMb2dpbl9Q",
           "aG9uZUNvZGVSZXNwEBMSIQodTXNnSURMb2dpbl9TeW5jUGxheWVyR29sZFJl",
-          "c3AQFBIjCh9Nc2dJRExvZ2luX05vdGlmeUdhbWVTZXJ2ZXJMaXN0EBUqrwIK",
+          "c3AQFBIjCh9Nc2dJRExvZ2luX05vdGlmeUdhbWVTZXJ2ZXJMaXN0EBUq7wIK",
           "CkVNc2dJREdhbWUSEgoOTXNnSURHYW1lX051bGwQABIUCg9Nc2dJREdhbWVf",
           "TG9naW4Q6QcSGAoTTXNnSURHYW1lX0xvZ2luUmVzcBDqBxIeChlNc2dJREdh",
           "bWVfU3F1ZWV6ZVNlYXRSZXNwEOsHEhUKEE1zZ0lER2FtZV9Mb2dvdXQQ7AcS",
           "GgoVTXNnSURHYW1lX0F1dG9TaXREb3duEO0HEhoKFU1zZ0lER2FtZV9TaXRE",
           "b3duUmVzcBDuBxIhChxNc2dJREdhbWVfU3luY1BsYXllckluZm9SZXNwEO8H",
           "EiYKIU1zZ0lER2FtZV9Ob3RpZnlQbGF5ZXJTdGFuZFVwUmVzcBDwBxIjCh5N",
-          "c2dJREdhbWVfU3luY1BsYXllcnNTY29yZVJlc3AQ8QdiBnByb3RvMw=="));
+          "c2dJREdhbWVfU3luY1BsYXllcnNTY29yZVJlc3AQ8QcSHAoXTXNnSURHYW1l",
+          "X1NlbmRHYW1lU2VuY2UQ8gcSIAobTXNnSURHYW1lX1NlbmRHYW1lU2VuY2VS",
+          "ZXNwEPMHYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::EMsgIDMain), typeof(global::EResCode), typeof(global::EMsgIDLogin), typeof(global::EMsgIDGame), }, null, null));
@@ -211,6 +213,14 @@ public enum EMsgIDGame {
   ///同步桌子所有玩家分数
   /// </summary>
   [pbr::OriginalName("MsgIDGame_SyncPlayersScoreResp")] MsgIdgameSyncPlayersScoreResp = 1009,
+  /// <summary>
+  ///请求场景消息
+  /// </summary>
+  [pbr::OriginalName("MsgIDGame_SendGameSence")] MsgIdgameSendGameSence = 1010,
+  /// <summary>
+  ///请求场景消息返回
+  /// </summary>
+  [pbr::OriginalName("MsgIDGame_SendGameSenceResp")] MsgIdgameSendGameSenceResp = 1011,
 }
 
 #endregion
