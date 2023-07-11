@@ -33,6 +33,6 @@ message MsgGamePlayerLoginResp
 //同步桌子所有玩家分数
 message MsgSyncPlayersScore
 {
-	repeated int32		chair_id		= 1;	//椅子号
-	repeated int64		coin			= 2;	//玩家金币
+	int32		chair_id		= 1;	//椅子号
+	int64		coin			= 2;	//玩家金币
 }

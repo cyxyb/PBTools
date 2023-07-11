@@ -149,7 +149,7 @@ const char descriptor_table_protodef_Game_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "p\022\020\n\010res_code\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\024\n\014"
   "beautiful_id\030\003 \001(\005\022\020\n\010nickname\030\004 \001(\t\022\016\n\006"
   "avatar\030\005 \001(\t\022\014\n\004coin\030\006 \001(\004\"5\n\023MsgSyncPla"
-  "yersScore\022\020\n\010chair_id\030\001 \003(\005\022\014\n\004coin\030\002 \003("
+  "yersScore\022\020\n\010chair_id\030\001 \001(\005\022\014\n\004coin\030\002 \001("
   "\003b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Game_2eproto_deps[1] = {
@@ -1138,22 +1138,25 @@ class MsgSyncPlayersScore::_Internal {
 };
 
 MsgSyncPlayersScore::MsgSyncPlayersScore(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  chair_id_(arena),
-  coin_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:MsgSyncPlayersScore)
 }
 MsgSyncPlayersScore::MsgSyncPlayersScore(const MsgSyncPlayersScore& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      chair_id_(from.chair_id_),
-      coin_(from.coin_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&coin_, &from.coin_,
+    static_cast<size_t>(reinterpret_cast<char*>(&chair_id_) -
+    reinterpret_cast<char*>(&coin_)) + sizeof(chair_id_));
   // @@protoc_insertion_point(copy_constructor:MsgSyncPlayersScore)
 }
 
 void MsgSyncPlayersScore::SharedCtor() {
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&coin_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&chair_id_) -
+      reinterpret_cast<char*>(&coin_)) + sizeof(chair_id_));
 }
 
 MsgSyncPlayersScore::~MsgSyncPlayersScore() {
@@ -1187,8 +1190,9 @@ void MsgSyncPlayersScore::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  chair_id_.Clear();
-  coin_.Clear();
+  ::memset(&coin_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&chair_id_) -
+      reinterpret_cast<char*>(&coin_)) + sizeof(chair_id_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -1199,23 +1203,17 @@ const char* MsgSyncPlayersScore::_InternalParse(const char* ptr, ::PROTOBUF_NAME
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // repeated int32 chair_id = 1;
+      // int32 chair_id = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_chair_id(), ptr, ctx);
-          CHK_(ptr);
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8) {
-          _internal_add_chair_id(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          chair_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated int64 coin = 2;
+      // int64 coin = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt64Parser(_internal_mutable_coin(), ptr, ctx);
-          CHK_(ptr);
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16) {
-          _internal_add_coin(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          coin_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1247,22 +1245,16 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated int32 chair_id = 1;
-  {
-    int byte_size = _chair_id_cached_byte_size_.load(std::memory_order_relaxed);
-    if (byte_size > 0) {
-      target = stream->WriteInt32Packed(
-          1, _internal_chair_id(), byte_size, target);
-    }
+  // int32 chair_id = 1;
+  if (this->chair_id() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_chair_id(), target);
   }
 
-  // repeated int64 coin = 2;
-  {
-    int byte_size = _coin_cached_byte_size_.load(std::memory_order_relaxed);
-    if (byte_size > 0) {
-      target = stream->WriteInt64Packed(
-          2, _internal_coin(), byte_size, target);
-    }
+  // int64 coin = 2;
+  if (this->coin() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_coin(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1281,34 +1273,18 @@ size_t MsgSyncPlayersScore::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated int32 chair_id = 1;
-  {
-    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      Int32Size(this->chair_id_);
-    if (data_size > 0) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
-    }
-    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
-    _chair_id_cached_byte_size_.store(cached_size,
-                                    std::memory_order_relaxed);
-    total_size += data_size;
+  // int64 coin = 2;
+  if (this->coin() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_coin());
   }
 
-  // repeated int64 coin = 2;
-  {
-    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      Int64Size(this->coin_);
-    if (data_size > 0) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
-    }
-    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
-    _coin_cached_byte_size_.store(cached_size,
-                                    std::memory_order_relaxed);
-    total_size += data_size;
+  // int32 chair_id = 1;
+  if (this->chair_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_chair_id());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1342,8 +1318,12 @@ void MsgSyncPlayersScore::MergeFrom(const MsgSyncPlayersScore& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  chair_id_.MergeFrom(from.chair_id_);
-  coin_.MergeFrom(from.coin_);
+  if (from.coin() != 0) {
+    _internal_set_coin(from._internal_coin());
+  }
+  if (from.chair_id() != 0) {
+    _internal_set_chair_id(from._internal_chair_id());
+  }
 }
 
 void MsgSyncPlayersScore::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -1367,8 +1347,12 @@ bool MsgSyncPlayersScore::IsInitialized() const {
 void MsgSyncPlayersScore::InternalSwap(MsgSyncPlayersScore* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  chair_id_.InternalSwap(&other->chair_id_);
-  coin_.InternalSwap(&other->coin_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(MsgSyncPlayersScore, chair_id_)
+      + sizeof(MsgSyncPlayersScore::chair_id_)
+      - PROTOBUF_FIELD_OFFSET(MsgSyncPlayersScore, coin_)>(
+          reinterpret_cast<char*>(&coin_),
+          reinterpret_cast<char*>(&other->coin_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MsgSyncPlayersScore::GetMetadata() const {

@@ -30,8 +30,8 @@ public static partial class GameReflection {
           "IoEBChZNc2dHYW1lUGxheWVyTG9naW5SZXNwEhAKCHJlc19jb2RlGAEgASgF",
           "Eg8KB3VzZXJfaWQYAiABKAUSFAoMYmVhdXRpZnVsX2lkGAMgASgFEhAKCG5p",
           "Y2tuYW1lGAQgASgJEg4KBmF2YXRhchgFIAEoCRIMCgRjb2luGAYgASgEIjUK",
-          "E01zZ1N5bmNQbGF5ZXJzU2NvcmUSEAoIY2hhaXJfaWQYASADKAUSDAoEY29p",
-          "bhgCIAMoA2IGcHJvdG8z"));
+          "E01zZ1N5bmNQbGF5ZXJzU2NvcmUSEAoIY2hhaXJfaWQYASABKAUSDAoEY29p",
+          "bhgCIAEoA2IGcHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -1079,8 +1079,8 @@ public sealed partial class MsgSyncPlayersScore : pb::IMessage<MsgSyncPlayersSco
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public MsgSyncPlayersScore(MsgSyncPlayersScore other) : this() {
-    chairId_ = other.chairId_.Clone();
-    coin_ = other.coin_.Clone();
+    chairId_ = other.chairId_;
+    coin_ = other.coin_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -1091,28 +1091,30 @@ public sealed partial class MsgSyncPlayersScore : pb::IMessage<MsgSyncPlayersSco
 
   /// <summary>Field number for the "chair_id" field.</summary>
   public const int ChairIdFieldNumber = 1;
-  private static readonly pb::FieldCodec<int> _repeated_chairId_codec
-      = pb::FieldCodec.ForInt32(10);
-  private readonly pbc::RepeatedField<int> chairId_ = new pbc::RepeatedField<int>();
+  private int chairId_;
   /// <summary>
   ///椅子号
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public pbc::RepeatedField<int> ChairId {
+  public int ChairId {
     get { return chairId_; }
+    set {
+      chairId_ = value;
+    }
   }
 
   /// <summary>Field number for the "coin" field.</summary>
   public const int CoinFieldNumber = 2;
-  private static readonly pb::FieldCodec<long> _repeated_coin_codec
-      = pb::FieldCodec.ForInt64(18);
-  private readonly pbc::RepeatedField<long> coin_ = new pbc::RepeatedField<long>();
+  private long coin_;
   /// <summary>
   ///玩家金币
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public pbc::RepeatedField<long> Coin {
+  public long Coin {
     get { return coin_; }
+    set {
+      coin_ = value;
+    }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1128,16 +1130,16 @@ public sealed partial class MsgSyncPlayersScore : pb::IMessage<MsgSyncPlayersSco
     if (ReferenceEquals(other, this)) {
       return true;
     }
-    if(!chairId_.Equals(other.chairId_)) return false;
-    if(!coin_.Equals(other.coin_)) return false;
+    if (ChairId != other.ChairId) return false;
+    if (Coin != other.Coin) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override int GetHashCode() {
     int hash = 1;
-    hash ^= chairId_.GetHashCode();
-    hash ^= coin_.GetHashCode();
+    if (ChairId != 0) hash ^= ChairId.GetHashCode();
+    if (Coin != 0L) hash ^= Coin.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -1154,8 +1156,14 @@ public sealed partial class MsgSyncPlayersScore : pb::IMessage<MsgSyncPlayersSco
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     output.WriteRawMessage(this);
   #else
-    chairId_.WriteTo(output, _repeated_chairId_codec);
-    coin_.WriteTo(output, _repeated_coin_codec);
+    if (ChairId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(ChairId);
+    }
+    if (Coin != 0L) {
+      output.WriteRawTag(16);
+      output.WriteInt64(Coin);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -1165,8 +1173,14 @@ public sealed partial class MsgSyncPlayersScore : pb::IMessage<MsgSyncPlayersSco
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-    chairId_.WriteTo(ref output, _repeated_chairId_codec);
-    coin_.WriteTo(ref output, _repeated_coin_codec);
+    if (ChairId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(ChairId);
+    }
+    if (Coin != 0L) {
+      output.WriteRawTag(16);
+      output.WriteInt64(Coin);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -1176,8 +1190,12 @@ public sealed partial class MsgSyncPlayersScore : pb::IMessage<MsgSyncPlayersSco
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int CalculateSize() {
     int size = 0;
-    size += chairId_.CalculateSize(_repeated_chairId_codec);
-    size += coin_.CalculateSize(_repeated_coin_codec);
+    if (ChairId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChairId);
+    }
+    if (Coin != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(Coin);
+    }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
     }
@@ -1189,8 +1207,12 @@ public sealed partial class MsgSyncPlayersScore : pb::IMessage<MsgSyncPlayersSco
     if (other == null) {
       return;
     }
-    chairId_.Add(other.chairId_);
-    coin_.Add(other.coin_);
+    if (other.ChairId != 0) {
+      ChairId = other.ChairId;
+    }
+    if (other.Coin != 0L) {
+      Coin = other.Coin;
+    }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
 
@@ -1205,14 +1227,12 @@ public sealed partial class MsgSyncPlayersScore : pb::IMessage<MsgSyncPlayersSco
         default:
           _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
           break;
-        case 10:
         case 8: {
-          chairId_.AddEntriesFrom(input, _repeated_chairId_codec);
+          ChairId = input.ReadInt32();
           break;
         }
-        case 18:
         case 16: {
-          coin_.AddEntriesFrom(input, _repeated_coin_codec);
+          Coin = input.ReadInt64();
           break;
         }
       }
@@ -1229,14 +1249,12 @@ public sealed partial class MsgSyncPlayersScore : pb::IMessage<MsgSyncPlayersSco
         default:
           _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
           break;
-        case 10:
         case 8: {
-          chairId_.AddEntriesFrom(ref input, _repeated_chairId_codec);
+          ChairId = input.ReadInt32();
           break;
         }
-        case 18:
         case 16: {
-          coin_.AddEntriesFrom(ref input, _repeated_coin_codec);
+          Coin = input.ReadInt64();
           break;
         }
       }

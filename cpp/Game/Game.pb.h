@@ -761,52 +761,26 @@ class MsgSyncPlayersScore PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kChairIdFieldNumber = 1,
     kCoinFieldNumber = 2,
+    kChairIdFieldNumber = 1,
   };
-  // repeated int32 chair_id = 1;
-  int chair_id_size() const;
-  private:
-  int _internal_chair_id_size() const;
-  public:
-  void clear_chair_id();
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_chair_id(int index) const;
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      _internal_chair_id() const;
-  void _internal_add_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      _internal_mutable_chair_id();
-  public:
-  ::PROTOBUF_NAMESPACE_ID::int32 chair_id(int index) const;
-  void set_chair_id(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
-  void add_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      chair_id() const;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      mutable_chair_id();
-
-  // repeated int64 coin = 2;
-  int coin_size() const;
-  private:
-  int _internal_coin_size() const;
-  public:
+  // int64 coin = 2;
   void clear_coin();
+  ::PROTOBUF_NAMESPACE_ID::int64 coin() const;
+  void set_coin(::PROTOBUF_NAMESPACE_ID::int64 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_coin(int index) const;
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
-      _internal_coin() const;
-  void _internal_add_coin(::PROTOBUF_NAMESPACE_ID::int64 value);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
-      _internal_mutable_coin();
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_coin() const;
+  void _internal_set_coin(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
-  ::PROTOBUF_NAMESPACE_ID::int64 coin(int index) const;
-  void set_coin(int index, ::PROTOBUF_NAMESPACE_ID::int64 value);
-  void add_coin(::PROTOBUF_NAMESPACE_ID::int64 value);
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
-      coin() const;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
-      mutable_coin();
+
+  // int32 chair_id = 1;
+  void clear_chair_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_id() const;
+  void set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_chair_id() const;
+  void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
 
   // @@protoc_insertion_point(class_scope:MsgSyncPlayersScore)
  private:
@@ -815,10 +789,8 @@ class MsgSyncPlayersScore PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > chair_id_;
-  mutable std::atomic<int> _chair_id_cached_byte_size_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 > coin_;
-  mutable std::atomic<int> _coin_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::int64 coin_;
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Game_2eproto;
 };
@@ -1350,98 +1322,44 @@ inline void MsgGamePlayerLoginResp::set_coin(::PROTOBUF_NAMESPACE_ID::uint64 val
 
 // MsgSyncPlayersScore
 
-// repeated int32 chair_id = 1;
-inline int MsgSyncPlayersScore::_internal_chair_id_size() const {
-  return chair_id_.size();
-}
-inline int MsgSyncPlayersScore::chair_id_size() const {
-  return _internal_chair_id_size();
-}
+// int32 chair_id = 1;
 inline void MsgSyncPlayersScore::clear_chair_id() {
-  chair_id_.Clear();
+  chair_id_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSyncPlayersScore::_internal_chair_id(int index) const {
-  return chair_id_.Get(index);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSyncPlayersScore::chair_id(int index) const {
-  // @@protoc_insertion_point(field_get:MsgSyncPlayersScore.chair_id)
-  return _internal_chair_id(index);
-}
-inline void MsgSyncPlayersScore::set_chair_id(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
-  chair_id_.Set(index, value);
-  // @@protoc_insertion_point(field_set:MsgSyncPlayersScore.chair_id)
-}
-inline void MsgSyncPlayersScore::_internal_add_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  chair_id_.Add(value);
-}
-inline void MsgSyncPlayersScore::add_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_add_chair_id(value);
-  // @@protoc_insertion_point(field_add:MsgSyncPlayersScore.chair_id)
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-MsgSyncPlayersScore::_internal_chair_id() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSyncPlayersScore::_internal_chair_id() const {
   return chair_id_;
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-MsgSyncPlayersScore::chair_id() const {
-  // @@protoc_insertion_point(field_list:MsgSyncPlayersScore.chair_id)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSyncPlayersScore::chair_id() const {
+  // @@protoc_insertion_point(field_get:MsgSyncPlayersScore.chair_id)
   return _internal_chair_id();
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-MsgSyncPlayersScore::_internal_mutable_chair_id() {
-  return &chair_id_;
+inline void MsgSyncPlayersScore::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  chair_id_ = value;
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-MsgSyncPlayersScore::mutable_chair_id() {
-  // @@protoc_insertion_point(field_mutable_list:MsgSyncPlayersScore.chair_id)
-  return _internal_mutable_chair_id();
+inline void MsgSyncPlayersScore::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_chair_id(value);
+  // @@protoc_insertion_point(field_set:MsgSyncPlayersScore.chair_id)
 }
 
-// repeated int64 coin = 2;
-inline int MsgSyncPlayersScore::_internal_coin_size() const {
-  return coin_.size();
-}
-inline int MsgSyncPlayersScore::coin_size() const {
-  return _internal_coin_size();
-}
+// int64 coin = 2;
 inline void MsgSyncPlayersScore::clear_coin() {
-  coin_.Clear();
+  coin_ = PROTOBUF_LONGLONG(0);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSyncPlayersScore::_internal_coin(int index) const {
-  return coin_.Get(index);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSyncPlayersScore::coin(int index) const {
-  // @@protoc_insertion_point(field_get:MsgSyncPlayersScore.coin)
-  return _internal_coin(index);
-}
-inline void MsgSyncPlayersScore::set_coin(int index, ::PROTOBUF_NAMESPACE_ID::int64 value) {
-  coin_.Set(index, value);
-  // @@protoc_insertion_point(field_set:MsgSyncPlayersScore.coin)
-}
-inline void MsgSyncPlayersScore::_internal_add_coin(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  coin_.Add(value);
-}
-inline void MsgSyncPlayersScore::add_coin(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_add_coin(value);
-  // @@protoc_insertion_point(field_add:MsgSyncPlayersScore.coin)
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
-MsgSyncPlayersScore::_internal_coin() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSyncPlayersScore::_internal_coin() const {
   return coin_;
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
-MsgSyncPlayersScore::coin() const {
-  // @@protoc_insertion_point(field_list:MsgSyncPlayersScore.coin)
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSyncPlayersScore::coin() const {
+  // @@protoc_insertion_point(field_get:MsgSyncPlayersScore.coin)
   return _internal_coin();
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
-MsgSyncPlayersScore::_internal_mutable_coin() {
-  return &coin_;
+inline void MsgSyncPlayersScore::_internal_set_coin(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  coin_ = value;
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
-MsgSyncPlayersScore::mutable_coin() {
-  // @@protoc_insertion_point(field_mutable_list:MsgSyncPlayersScore.coin)
-  return _internal_mutable_coin();
+inline void MsgSyncPlayersScore::set_coin(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_coin(value);
+  // @@protoc_insertion_point(field_set:MsgSyncPlayersScore.coin)
 }
 
 #ifdef __GNUC__
