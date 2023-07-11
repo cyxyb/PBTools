@@ -34,5 +34,5 @@ message MsgGamePlayerLoginResp
 message MsgSyncPlayersScore
 {
 	int32		chair_id		= 1;	//椅子号
-	int64		coin			= 2;	//玩家金币
+	uint64		coin			= 2;	//玩家金币
 }

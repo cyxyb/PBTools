@@ -31,7 +31,7 @@ public static partial class GameReflection {
           "Eg8KB3VzZXJfaWQYAiABKAUSFAoMYmVhdXRpZnVsX2lkGAMgASgFEhAKCG5p",
           "Y2tuYW1lGAQgASgJEg4KBmF2YXRhchgFIAEoCRIMCgRjb2luGAYgASgEIjUK",
           "E01zZ1N5bmNQbGF5ZXJzU2NvcmUSEAoIY2hhaXJfaWQYASABKAUSDAoEY29p",
-          "bhgCIAEoA2IGcHJvdG8z"));
+          "bhgCIAEoBGIGcHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -1105,12 +1105,12 @@ public sealed partial class MsgSyncPlayersScore : pb::IMessage<MsgSyncPlayersSco
 
   /// <summary>Field number for the "coin" field.</summary>
   public const int CoinFieldNumber = 2;
-  private long coin_;
+  private ulong coin_;
   /// <summary>
   ///玩家金币
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public long Coin {
+  public ulong Coin {
     get { return coin_; }
     set {
       coin_ = value;
@@ -1139,7 +1139,7 @@ public sealed partial class MsgSyncPlayersScore : pb::IMessage<MsgSyncPlayersSco
   public override int GetHashCode() {
     int hash = 1;
     if (ChairId != 0) hash ^= ChairId.GetHashCode();
-    if (Coin != 0L) hash ^= Coin.GetHashCode();
+    if (Coin != 0UL) hash ^= Coin.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -1160,9 +1160,9 @@ public sealed partial class MsgSyncPlayersScore : pb::IMessage<MsgSyncPlayersSco
       output.WriteRawTag(8);
       output.WriteInt32(ChairId);
     }
-    if (Coin != 0L) {
+    if (Coin != 0UL) {
       output.WriteRawTag(16);
-      output.WriteInt64(Coin);
+      output.WriteUInt64(Coin);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -1177,9 +1177,9 @@ public sealed partial class MsgSyncPlayersScore : pb::IMessage<MsgSyncPlayersSco
       output.WriteRawTag(8);
       output.WriteInt32(ChairId);
     }
-    if (Coin != 0L) {
+    if (Coin != 0UL) {
       output.WriteRawTag(16);
-      output.WriteInt64(Coin);
+      output.WriteUInt64(Coin);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
@@ -1193,8 +1193,8 @@ public sealed partial class MsgSyncPlayersScore : pb::IMessage<MsgSyncPlayersSco
     if (ChairId != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChairId);
     }
-    if (Coin != 0L) {
-      size += 1 + pb::CodedOutputStream.ComputeInt64Size(Coin);
+    if (Coin != 0UL) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Coin);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -1210,7 +1210,7 @@ public sealed partial class MsgSyncPlayersScore : pb::IMessage<MsgSyncPlayersSco
     if (other.ChairId != 0) {
       ChairId = other.ChairId;
     }
-    if (other.Coin != 0L) {
+    if (other.Coin != 0UL) {
       Coin = other.Coin;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -1232,7 +1232,7 @@ public sealed partial class MsgSyncPlayersScore : pb::IMessage<MsgSyncPlayersSco
           break;
         }
         case 16: {
-          Coin = input.ReadInt64();
+          Coin = input.ReadUInt64();
           break;
         }
       }
@@ -1254,7 +1254,7 @@ public sealed partial class MsgSyncPlayersScore : pb::IMessage<MsgSyncPlayersSco
           break;
         }
         case 16: {
-          Coin = input.ReadInt64();
+          Coin = input.ReadUInt64();
           break;
         }
       }

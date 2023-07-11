@@ -150,7 +150,7 @@ const char descriptor_table_protodef_Game_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "beautiful_id\030\003 \001(\005\022\020\n\010nickname\030\004 \001(\t\022\016\n\006"
   "avatar\030\005 \001(\t\022\014\n\004coin\030\006 \001(\004\"5\n\023MsgSyncPla"
   "yersScore\022\020\n\010chair_id\030\001 \001(\005\022\014\n\004coin\030\002 \001("
-  "\003b\006proto3"
+  "\004b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Game_2eproto_deps[1] = {
 };
@@ -1210,7 +1210,7 @@ const char* MsgSyncPlayersScore::_InternalParse(const char* ptr, ::PROTOBUF_NAME
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int64 coin = 2;
+      // uint64 coin = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           coin_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
@@ -1251,10 +1251,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_chair_id(), target);
   }
 
-  // int64 coin = 2;
+  // uint64 coin = 2;
   if (this->coin() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_coin(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(2, this->_internal_coin(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1273,10 +1273,10 @@ size_t MsgSyncPlayersScore::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // int64 coin = 2;
+  // uint64 coin = 2;
   if (this->coin() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
         this->_internal_coin());
   }
 

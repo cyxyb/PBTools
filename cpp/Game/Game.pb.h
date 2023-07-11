@@ -764,13 +764,13 @@ class MsgSyncPlayersScore PROTOBUF_FINAL :
     kCoinFieldNumber = 2,
     kChairIdFieldNumber = 1,
   };
-  // int64 coin = 2;
+  // uint64 coin = 2;
   void clear_coin();
-  ::PROTOBUF_NAMESPACE_ID::int64 coin() const;
-  void set_coin(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::uint64 coin() const;
+  void set_coin(::PROTOBUF_NAMESPACE_ID::uint64 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_coin() const;
-  void _internal_set_coin(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::uint64 _internal_coin() const;
+  void _internal_set_coin(::PROTOBUF_NAMESPACE_ID::uint64 value);
   public:
 
   // int32 chair_id = 1;
@@ -789,7 +789,7 @@ class MsgSyncPlayersScore PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int64 coin_;
+  ::PROTOBUF_NAMESPACE_ID::uint64 coin_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Game_2eproto;
@@ -1342,22 +1342,22 @@ inline void MsgSyncPlayersScore::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 val
   // @@protoc_insertion_point(field_set:MsgSyncPlayersScore.chair_id)
 }
 
-// int64 coin = 2;
+// uint64 coin = 2;
 inline void MsgSyncPlayersScore::clear_coin() {
-  coin_ = PROTOBUF_LONGLONG(0);
+  coin_ = PROTOBUF_ULONGLONG(0);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSyncPlayersScore::_internal_coin() const {
+inline ::PROTOBUF_NAMESPACE_ID::uint64 MsgSyncPlayersScore::_internal_coin() const {
   return coin_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSyncPlayersScore::coin() const {
+inline ::PROTOBUF_NAMESPACE_ID::uint64 MsgSyncPlayersScore::coin() const {
   // @@protoc_insertion_point(field_get:MsgSyncPlayersScore.coin)
   return _internal_coin();
 }
-inline void MsgSyncPlayersScore::_internal_set_coin(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void MsgSyncPlayersScore::_internal_set_coin(::PROTOBUF_NAMESPACE_ID::uint64 value) {
   
   coin_ = value;
 }
-inline void MsgSyncPlayersScore::set_coin(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void MsgSyncPlayersScore::set_coin(::PROTOBUF_NAMESPACE_ID::uint64 value) {
   _internal_set_coin(value);
   // @@protoc_insertion_point(field_set:MsgSyncPlayersScore.coin)
 }
