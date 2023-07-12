@@ -1,0 +1,300 @@
+syntax = "proto3";
+
+enum EMsgIDSubGame
+{
+	MsgIDSubGame_Null					= 0;
+	SUB_S_CanShoot						= 49000;		//可以发炮
+	SUB_S_CantShoot						= 49001;		//不可以发炮
+	SUB_C_RobotShoot					= 49002;		//机器人发炮
+	SUB_S_GAME_START				    = 50001;		//游戏开始
+	SUB_S_ADD_FISH						= 50002;		//增加鱼
+	SUB_S_FISH_DEAD						= 50003;		//鱼死亡
+	SUB_S_PLAYER_SHOOT					= 50004;		//玩家发炮
+	SUB_S_CONFIG						= 50005;		//配置信息
+	SUB_S_CHANGEBULLETLEVEL				= 50006;		//切换炮台等级
+	SUB_S_SHUIHUZHUAN					= 50007;		//打死水浒传
+	SUB_S_ZHONGYITANG					= 50008;		//打死忠义堂
+	SUB_S_DASANYUAN						= 50009;		//打死大三元
+	SUB_S_DASIXI						= 50010;		//打死大四喜
+	SUB_S_YUWANG						= 50011;		//打死鱼王
+	SUB_S_TONGLEIZHADAN					= 50012;		//打死同类炸弹
+	SUB_S_YIWANGDAJIN					= 50013;		//打死一网打尽
+	SUB_S_JUBUZHADAN					= 50014;		//打死局部炸弹
+	SUB_S_PLAYER_ENTER					= 50015;		//玩家进入
+	SUB_S_SHOOT_LK						= 50016;		//击中李逵
+	SUB_S_YUCHAOCOME					= 50017;		//鱼潮来临
+	SUB_S_YUCHAOPRE						= 50018;		//鱼潮即将来临
+	SUB_S_PLAYERGUNLEVEL				= 50019;		//玩家炮台信息
+	SUB_S_PlayerLock					= 50020;		//玩家锁定
+	SUB_S_PlayerCancelLock				= 50021;		//玩家取消锁定
+	SUB_S_RobotCome						= 50022;		//机器人进入
+	SUB_S_RobotList						= 50023;		//机器人列表
+	SUB_S_RobotShoot					= 50024;		//机器人发炮
+	SUB_S_RobotMoneyNotEnough			= 50025;		//机器人钱不足
+	SUB_S_PLAYER_YC_ENTER				= 50026;		//玩家进入
+	SUB_S_CHECK_ROBOT_LEAVE				= 50027;		//检查机器人是否离开
+	SUB_C_PRESS_SHOOT					= 50100;		//发射子弹
+	SUB_C_HITED_FISH					= 50101;		//玩家命中
+	SUB_C_CHANGEBULLETLEVEL				= 50102;		//切换炮台等级
+	SUB_C_SHUIHUZHUAN					= 50103;		//击中水浒传
+	SUB_C_YUWANG						= 50104;		//打死鱼王
+	SUB_C_TONGLEIZHADAN					= 50105;		//打死同类炸弹
+	SUB_C_JUBUZHADAN					= 50106;		//打死局部炸弹
+	SUB_C_PlayerLock					= 50107;		//玩家锁定
+	SUB_C_PlayerCancelLock				= 50108;		//玩家取消锁定
+}                                         
+
+//机器人发炮
+message CMD_S_RobotShoot
+{
+	int32			chair_id = 1;			//机器人座位号
+	int32			level = 2;				//等级
+	int32			type = 3;				//类型
+	int32			is_lock = 4;			//是否锁定
+}
+
+//机器人列表
+message CMD_S_RobotList
+{
+	repeated	bool	is_robot = 1;		//是否机器人
+}
+
+//玩家锁定
+message CMD_S_PlayerLock
+{
+	int32		chair_id = 1;			//玩家id
+	int32		fish_id = 2;			//锁定鱼ID
+}
+
+//打中李逵
+message CMD_S_ShootLK
+{
+	int32		chair_id = 1;
+	int32		id = 2;
+	int32		score = 3;				//李逵分数
+	int32		multiple = 4;			//李逵当前倍数
+	bool		is_deaded = 5;			//是否死亡
+	int32		jbp_stage = 6;			//当前等级
+	int32		cur_lk_score = 7;		//当前分数
+	int64		cur_player_score = 8;	//玩家当前分数
+}
+
+//打死局部炸弹
+message CMD_S_JuBuZhaDan
+{
+	int32			chair_id = 1;		//椅子号
+	int32			fish_id = 2;		//特殊鱼id
+}
+
+//打死一网打尽
+message CMD_S_YiWangDaJin
+{
+	int32			chair_id = 1;		//椅子号
+	int32			bullet_id = 2;		//子弹id
+}
+
+//打死同类炸弹
+message CMD_S_TongLeiZhaDan
+{
+	int32			chair_id = 1;		//椅子号
+	int32			fish_id = 2;		//特殊鱼id
+	int32			kind = 3;			//鱼类型
+}
+
+
+message LoadFish
+{
+	int32		kind = 1;				//鱼的种类
+	int32		id = 2;					//鱼的id
+	int32		create_time = 3;		//创建时间
+	int32		continue_time = 4;		//持续时间
+	int32		road = 5;				//鱼线
+	int32		group_id = 6;			//鱼阵id(4个 1普通蜻蜓（14个鱼），2普通蝴蝶（5个鱼），3雷电蜻蜓（雷电在8），4雷电蝴蝶（雷电在1）)
+	int32		group_no = 7;			//鱼阵鱼编号
+	int32		now_time = 8;			//当前已过时间
+	int32		mul = 9;				//倍数
+	int32		stage = 10;				//河豚阶段1-4
+	int32		is_aced = 11;			//是否是一网打尽
+	int32		jbp_stage = 12;			//聚宝盆阶段1-4
+	int32		lk_mul = 13;				//李逵倍数
+	int32		lk_score = 14;			//李逵分数
+}
+
+//打死鱼王
+message CMD_S_YuWang
+{
+	int32			chair_id = 1;			//椅子号
+	int32			kind = 2;				//鱼类型
+	int32			yu_wang_id = 3;			//鱼王id
+	repeated LoadFish	fish_id = 4;		//鱼王鱼潮生成的鱼id
+}
+
+//打死大四喜
+message CMD_S_DaSiXi
+{
+	int32			id = 1;
+	int32			chair_id = 2;		//椅子号
+	int32			score = 3;			//得分
+}
+
+//打死大奖章鱼
+message CMD_S_DaJiangZhangYu
+{
+	int32			id = 1;
+	int32			chair_id = 2;		//椅子号
+	int32			odd1 = 3;
+	int32			odd2 = 4;
+	int32			odd3 = 5;
+}
+
+//打死忠义堂
+message CMD_S_ZhongYiTang
+{
+	int32			chair_id = 1;	//椅子号
+	int32			add_time = 2;	//持续时间
+	int32			add_mul = 3;	//增加的倍数
+}
+
+//打死水浒传
+message CMD_S_ShuiHuZhuan
+{
+	int32					chair_id = 1;		//椅子号
+	repeated int32			fish_id = 2;		//特殊鱼id
+	repeated int32			fish_score = 3;		//得分
+}
+
+//切换炮台
+message CMD_S_ChangeBulletLevel
+{
+	int32			chair_id = 1;			//椅子号
+	int32			gun_type = 2;			//炮台类型
+	int32			gun_level = 3;			//炮台等级
+}
+
+//配置信息
+message CMD_S_CONFIG
+{
+	repeated int32	bullet_score = 1;			//子弹分数
+	int32	background_picture_id = 2;			//背景图id(0-17)
+	repeated int32	player_lock_fish_id = 3;	//玩家是否锁定
+	repeated int64	player_cur_score = 4;		//玩家当前分数
+}
+
+message CMD_S_PlayerGunLevel
+{
+	repeated int32	gun_level = 1;
+	repeated int32	gun_type = 2;
+}
+
+//增加鱼
+message CMD_S_AddFish
+{
+	repeated LoadFish	load_fish = 1;
+}
+
+//玩家进入
+message CMD_S_PlayerEnter
+{
+	repeated LoadFish	load_fish = 1;
+}
+
+//玩家进入
+message CMD_S_PlayerYCEnter
+{
+	int32	yu_chao_id = 1;
+	repeated LoadFish	load_fish = 2;
+}
+
+message FishDeadInfo
+{
+	int32		id = 1;						// 鱼ID
+	int32		score = 2;					// 得分
+}
+
+//鱼死亡
+message CMD_S_FishDead
+{
+	int32					chair_id = 1;			//玩家椅子号
+	repeated FishDeadInfo	fish = 2;				//鱼信息
+	int64					score = 3;				//玩家当前分数
+	int32					lei_long_odd = 4;		//本次雷龙倍数
+}
+
+//玩家发炮
+message CMD_S_PlayerShoot
+{
+	int32					chair_id = 1;			//玩家椅子号
+	float					x = 2;                  
+	float					y = 3;                  
+	int32					level = 4;				//炮弹等级
+	int32					type = 5;				//炮弹类型
+	int64					player_cur_score = 6;	//玩家当前分数
+}
+
+message CMD_C_RobotShoot
+{
+	int32			chair_id = 1;			//机器人座位号
+	int32			level = 2;				//等级
+	int32			type = 3;				//类型
+	int32			is_lock = 4;			//是否锁定
+}
+
+//玩家锁定
+message CMD_C_PlayerLock
+{
+	int32			chair_id = 1;	//玩家椅子号
+	int32			fish_id = 2;	//鱼id
+}
+
+message CMD_C_JuBuZhaDan
+{
+	int32				chair_id = 1;		//椅子号
+	int32				te_shu_iu_id = 2;	//特殊鱼id
+	repeated int32		fish_id = 3;		//鱼id
+}
+
+message CMD_C_TongLeiZhaDan
+{
+	int32				chair_id = 1;		//椅子号
+	int32				te_shu_iu_id = 2;	//特殊鱼id
+	repeated int32		fish_id = 3;		//鱼id
+}
+
+message CMD_C_ShuiHuZhuan
+{
+	int32				chair_id = 1;		//椅子号
+	int32				te_shu_iu_id = 2;	//特殊鱼id
+	repeated int32		fish_id = 3;		//鱼id
+}
+
+message CMD_C_ChangeBulletLevel
+{
+	int32			chair_id = 1;			//椅子号
+	int32			gun_type = 2;			//炮台类型
+	int32			gun_level = 3;			//炮台等级
+}
+
+message Bullet
+{
+	int32		id = 1;					//子弹id
+	int32		bullet_kind = 2;		//子弹类型（0：普通弹，1：能量弹）
+	int32		is_use = 3;				//子弹是否用过
+	int32		level = 4;				//子弹等级
+	int32		type = 5;				//子弹类型
+	int32		chips = 6;				//子弹金币
+}
+
+message CMD_C_PressShoot
+{
+	float			x = 1;				//x轴
+	float			y = 2;				//y轴
+	int32			chair_id = 3;		//座位号
+	Bullet			bullet = 4;			//子弹
+}
+
+message CMD_C_HitedFish
+{
+	Bullet			bullet = 1;			//子弹
+	int32			chair_id = 2;		//座位号
+	repeated int32	hit_fish = 3;		//击中鱼的id
+}

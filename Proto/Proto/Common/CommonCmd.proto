@@ -5,6 +5,7 @@ enum EMsgIDMain
 	EMsgIDMain_Null					= 0;
 	EMsgIDMain_Login_UserInfo		= 1001;	//玩家信息
 	EMsgIDMain_Game					= 2001;	//游戏服务器
+	EMsgIDMain_SubGame				= 2002;	//子游戏主消息号
 }
 
 enum EResCode

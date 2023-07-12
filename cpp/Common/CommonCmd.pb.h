@@ -59,12 +59,13 @@ enum EMsgIDMain : int {
   EMsgIDMain_Null = 0,
   EMsgIDMain_Login_UserInfo = 1001,
   EMsgIDMain_Game = 2001,
+  EMsgIDMain_SubGame = 2002,
   EMsgIDMain_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDMain_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDMain_IsValid(int value);
 constexpr EMsgIDMain EMsgIDMain_MIN = EMsgIDMain_Null;
-constexpr EMsgIDMain EMsgIDMain_MAX = EMsgIDMain_Game;
+constexpr EMsgIDMain EMsgIDMain_MAX = EMsgIDMain_SubGame;
 constexpr int EMsgIDMain_ARRAYSIZE = EMsgIDMain_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDMain_descriptor();

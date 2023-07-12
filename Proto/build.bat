@@ -40,6 +40,20 @@ for %%i in (%SRC_DIR%*.proto) do (
 	protoc  --csharp_out=%CS_DST_DIR% %SRC_DIR%%%i
 )
 
+set SRC_DIR="./Proto/SubGame/"
+set CPP_DST_DIR="../cpp/SubGame/"
+set CS_DST_DIR="../cs/SubGame/"
+
+
+del /s /Q %CPP_DST_DIR%
+del /s /Q %CS_DST_DIR%
+
+rem SubGame
+for %%i in (%SRC_DIR%*.proto) do (
+	protoc  -I=%SRC_DIR% --cpp_out=%CPP_DST_DIR% %%i
+	protoc  --csharp_out=%CS_DST_DIR% %SRC_DIR%%%i
+)
+
 set SRC_DIR="./Proto/ServerCommon/"
 set CPP_DST_DIR="../cpp/ServerCommon/"
 

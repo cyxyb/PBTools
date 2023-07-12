@@ -22,38 +22,39 @@ static constexpr ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema* schemas = n
 static constexpr ::PROTOBUF_NAMESPACE_ID::Message* const* file_default_instances = nullptr;
 
 const char descriptor_table_protodef_CommonCmd_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\017CommonCmd.proto*W\n\nEMsgIDMain\022\023\n\017EMsgI"
+  "\n\017CommonCmd.proto*p\n\nEMsgIDMain\022\023\n\017EMsgI"
   "DMain_Null\020\000\022\036\n\031EMsgIDMain_Login_UserInf"
-  "o\020\351\007\022\024\n\017EMsgIDMain_Game\020\321\017*k\n\010EResCode\022\021"
-  "\n\rEResCode_NULL\020\000\022\030\n\024EResCode_InvilidMai"
-  "l\020\001\022\031\n\025EResCode_MailRecalled\020\002\022\027\n\023EResCo"
-  "de_MailPicked\020\003*\231\005\n\013EMsgIDLogin\022\023\n\017MsgID"
-  "Login_Null\020\000\022\024\n\020MsgIDLogin_Login\020\001\022\030\n\024Ms"
-  "gIDLogin_LoginResp\020\002\022\035\n\031MsgIDLogin_Modif"
-  "yNickName\020\003\022!\n\035MsgIDLogin_ModifyNickName"
-  "Resp\020\004\022\031\n\025MsgIDLogin_ModifyHead\020\005\022\035\n\031Msg"
-  "IDLogin_ModifyHeadResp\020\006\022\035\n\031MsgIDLogin_M"
-  "odifyPassword\020\007\022!\n\035MsgIDLogin_ModifyPass"
-  "wordResp\020\010\022\030\n\024MsgIDLogin_BindPhone\020\t\022\034\n\030"
-  "MsgIDLogin_BindPhoneResp\020\n\022\027\n\023MsgIDLogin"
-  "_ReadMail\020\013\022\027\n\023MsgIDLogin_PickMail\020\014\022\033\n\027"
-  "MsgIDLogin_PickMailResp\020\r\022\031\n\025MsgIDLogin_"
-  "RecallMail\020\016\022\035\n\031MsgIDLogin_RecallMailRes"
-  "p\020\017\022 \n\034MsgIDLogin_DeleteAllReadMail\020\020\022$\n"
-  " MsgIDLogin_DeleteAllReadMailResp\020\021\022\030\n\024M"
-  "sgIDLogin_PhoneCode\020\022\022\034\n\030MsgIDLogin_Phon"
-  "eCodeResp\020\023\022!\n\035MsgIDLogin_SyncPlayerGold"
-  "Resp\020\024\022#\n\037MsgIDLogin_NotifyGameServerLis"
-  "t\020\025*\357\002\n\nEMsgIDGame\022\022\n\016MsgIDGame_Null\020\000\022\024"
-  "\n\017MsgIDGame_Login\020\351\007\022\030\n\023MsgIDGame_LoginR"
-  "esp\020\352\007\022\036\n\031MsgIDGame_SqueezeSeatResp\020\353\007\022\025"
-  "\n\020MsgIDGame_Logout\020\354\007\022\032\n\025MsgIDGame_AutoS"
-  "itDown\020\355\007\022\032\n\025MsgIDGame_SitDownResp\020\356\007\022!\n"
-  "\034MsgIDGame_SyncPlayerInfoResp\020\357\007\022&\n!MsgI"
-  "DGame_NotifyPlayerStandUpResp\020\360\007\022#\n\036MsgI"
-  "DGame_SyncPlayersScoreResp\020\361\007\022\034\n\027MsgIDGa"
-  "me_SendGameSence\020\362\007\022 \n\033MsgIDGame_SendGam"
-  "eSenceResp\020\363\007b\006proto3"
+  "o\020\351\007\022\024\n\017EMsgIDMain_Game\020\321\017\022\027\n\022EMsgIDMain"
+  "_SubGame\020\322\017*k\n\010EResCode\022\021\n\rEResCode_NULL"
+  "\020\000\022\030\n\024EResCode_InvilidMail\020\001\022\031\n\025EResCode"
+  "_MailRecalled\020\002\022\027\n\023EResCode_MailPicked\020\003"
+  "*\231\005\n\013EMsgIDLogin\022\023\n\017MsgIDLogin_Null\020\000\022\024\n"
+  "\020MsgIDLogin_Login\020\001\022\030\n\024MsgIDLogin_LoginR"
+  "esp\020\002\022\035\n\031MsgIDLogin_ModifyNickName\020\003\022!\n\035"
+  "MsgIDLogin_ModifyNickNameResp\020\004\022\031\n\025MsgID"
+  "Login_ModifyHead\020\005\022\035\n\031MsgIDLogin_ModifyH"
+  "eadResp\020\006\022\035\n\031MsgIDLogin_ModifyPassword\020\007"
+  "\022!\n\035MsgIDLogin_ModifyPasswordResp\020\010\022\030\n\024M"
+  "sgIDLogin_BindPhone\020\t\022\034\n\030MsgIDLogin_Bind"
+  "PhoneResp\020\n\022\027\n\023MsgIDLogin_ReadMail\020\013\022\027\n\023"
+  "MsgIDLogin_PickMail\020\014\022\033\n\027MsgIDLogin_Pick"
+  "MailResp\020\r\022\031\n\025MsgIDLogin_RecallMail\020\016\022\035\n"
+  "\031MsgIDLogin_RecallMailResp\020\017\022 \n\034MsgIDLog"
+  "in_DeleteAllReadMail\020\020\022$\n MsgIDLogin_Del"
+  "eteAllReadMailResp\020\021\022\030\n\024MsgIDLogin_Phone"
+  "Code\020\022\022\034\n\030MsgIDLogin_PhoneCodeResp\020\023\022!\n\035"
+  "MsgIDLogin_SyncPlayerGoldResp\020\024\022#\n\037MsgID"
+  "Login_NotifyGameServerList\020\025*\357\002\n\nEMsgIDG"
+  "ame\022\022\n\016MsgIDGame_Null\020\000\022\024\n\017MsgIDGame_Log"
+  "in\020\351\007\022\030\n\023MsgIDGame_LoginResp\020\352\007\022\036\n\031MsgID"
+  "Game_SqueezeSeatResp\020\353\007\022\025\n\020MsgIDGame_Log"
+  "out\020\354\007\022\032\n\025MsgIDGame_AutoSitDown\020\355\007\022\032\n\025Ms"
+  "gIDGame_SitDownResp\020\356\007\022!\n\034MsgIDGame_Sync"
+  "PlayerInfoResp\020\357\007\022&\n!MsgIDGame_NotifyPla"
+  "yerStandUpResp\020\360\007\022#\n\036MsgIDGame_SyncPlaye"
+  "rsScoreResp\020\361\007\022\034\n\027MsgIDGame_SendGameSenc"
+  "e\020\362\007\022 \n\033MsgIDGame_SendGameSenceResp\020\363\007b\006"
+  "proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_CommonCmd_2eproto_deps[1] = {
 };
@@ -61,7 +62,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Com
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_CommonCmd_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_CommonCmd_2eproto = {
-  false, false, descriptor_table_protodef_CommonCmd_2eproto, "CommonCmd.proto", 1261,
+  false, false, descriptor_table_protodef_CommonCmd_2eproto, "CommonCmd.proto", 1286,
   &descriptor_table_CommonCmd_2eproto_once, descriptor_table_CommonCmd_2eproto_sccs, descriptor_table_CommonCmd_2eproto_deps, 0, 0,
   schemas, file_default_instances, TableStruct_CommonCmd_2eproto::offsets,
   file_level_metadata_CommonCmd_2eproto, 0, file_level_enum_descriptors_CommonCmd_2eproto, file_level_service_descriptors_CommonCmd_2eproto,
@@ -78,6 +79,7 @@ bool EMsgIDMain_IsValid(int value) {
     case 0:
     case 1001:
     case 2001:
+    case 2002:
       return true;
     default:
       return false;
