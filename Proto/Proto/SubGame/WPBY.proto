@@ -66,6 +66,48 @@ message CMD_S_PlayerLock
 	int32		fish_id = 2;			//锁定鱼ID
 }
 
+// 鱼线点
+message FishPoint
+{
+	int32 x = 1;
+	int32 y = 2;
+};
+
+//鱼线
+message LineInfo
+{
+	int32		type = 1;					// 鱼线类型
+	repeated FishPoint   points = 2;		// 鱼线点集合
+};
+
+//鱼线信息
+message FishLineInfo
+{
+	LineInfo	line = 1;				//鱼线
+	int32		kind = 2;				//鱼类型
+	int32		start_delay_time = 3;	//第一条鱼在鱼潮发生时生成延时
+	int32		delay_time = 4;			//生成下一条鱼间隔周期
+	int32		fish_num = 5;			//生成鱼数量
+	int32		lived_time = 6;			//速度
+};
+
+//鱼潮信息
+message FishTide
+{
+	int64			fish_tide_start_time = 1;	//鱼潮开始时间
+	int64			fish_tide_cur_time = 2;		//当前经历时间
+	int32			fish_tide_turn = 3;			//鱼潮朝向
+	int32			line_num = 4;
+	repeated FishLineInfo	fish_lines = 5;		//鱼线数组
+};
+
+//鱼潮来临
+message CMD_S_YuChaoCome
+{
+	int32		yu_chao_id = 1;				//鱼潮id
+	FishTide	fish_tide = 2;				//鱼潮信息
+};
+
 //打中李逵
 message CMD_S_ShootLK
 {
@@ -73,10 +115,6 @@ message CMD_S_ShootLK
 	int32		id = 2;
 	int32		score = 3;				//李逵分数
 	int32		multiple = 4;			//李逵当前倍数
-	bool		is_deaded = 5;			//是否死亡
-	int32		jbp_stage = 6;			//当前等级
-	int32		cur_lk_score = 7;		//当前分数
-	int64		cur_player_score = 8;	//玩家当前分数
 }
 
 //打死局部炸弹
@@ -108,16 +146,9 @@ message LoadFish
 	int32		id = 2;					//鱼的id
 	int32		create_time = 3;		//创建时间
 	int32		continue_time = 4;		//持续时间
-	int32		road = 5;				//鱼线
-	int32		group_id = 6;			//鱼阵id(4个 1普通蜻蜓（14个鱼），2普通蝴蝶（5个鱼），3雷电蜻蜓（雷电在8），4雷电蝴蝶（雷电在1）)
-	int32		group_no = 7;			//鱼阵鱼编号
-	int32		now_time = 8;			//当前已过时间
-	int32		mul = 9;				//倍数
-	int32		stage = 10;				//河豚阶段1-4
-	int32		is_aced = 11;			//是否是一网打尽
-	int32		jbp_stage = 12;			//聚宝盆阶段1-4
-	int32		lk_mul = 13;				//李逵倍数
-	int32		lk_score = 14;			//李逵分数
+	repeated FishPoint	fish_point = 5;	//鱼过程点
+	int32		now_time = 6;			//当前已过时间
+	int32		mul = 7;				//倍数
 }
 
 //打死鱼王
@@ -138,29 +169,25 @@ message CMD_S_DaSiXi
 }
 
 //打死大奖章鱼
-message CMD_S_DaJiangZhangYu
+message CMD_S_DaSanYuan
 {
 	int32			id = 1;
 	int32			chair_id = 2;		//椅子号
-	int32			odd1 = 3;
-	int32			odd2 = 4;
-	int32			odd3 = 5;
+	int32			score = 3;			//得分
 }
 
 //打死忠义堂
 message CMD_S_ZhongYiTang
 {
 	int32			chair_id = 1;	//椅子号
-	int32			add_time = 2;	//持续时间
-	int32			add_mul = 3;	//增加的倍数
+	int32			time = 2;		//持续时间
 }
 
 //打死水浒传
 message CMD_S_ShuiHuZhuan
 {
-	int32					chair_id = 1;		//椅子号
-	repeated int32			fish_id = 2;		//特殊鱼id
-	repeated int32			fish_score = 3;		//得分
+	int32			chair_id = 1;	//椅子号
+	int32			fish_id = 2;	//特殊鱼id
 }
 
 //切换炮台
@@ -198,13 +225,6 @@ message CMD_S_PlayerEnter
 	repeated LoadFish	load_fish = 1;
 }
 
-//玩家进入
-message CMD_S_PlayerYCEnter
-{
-	int32	yu_chao_id = 1;
-	repeated LoadFish	load_fish = 2;
-}
-
 message FishDeadInfo
 {
 	int32		id = 1;						// 鱼ID
@@ -217,7 +237,6 @@ message CMD_S_FishDead
 	int32					chair_id = 1;			//玩家椅子号
 	repeated FishDeadInfo	fish = 2;				//鱼信息
 	int64					score = 3;				//玩家当前分数
-	int32					lei_long_odd = 4;		//本次雷龙倍数
 }
 
 //玩家发炮

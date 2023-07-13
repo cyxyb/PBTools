@@ -909,7 +909,7 @@ const char descriptor_table_protodef_LTBY_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "\022\025\n\rcontinue_time\030\004 \001(\005\022\014\n\004road\030\005 \001(\005\022\020\n"
   "\010group_id\030\006 \001(\005\022\020\n\010group_no\030\007 \001(\005\022\020\n\010now"
   "_time\030\010 \001(\005\022\013\n\003mul\030\t \001(\005\022\r\n\005stage\030\n \001(\005\022"
-  "\017\n\007is_aced\030\013 \001(\005\022\021\n\tjbp_stage\030\014 \001(\005\022\016\n\006l"
+  "\017\n\007is_aced\030\013 \001(\010\022\021\n\tjbp_stage\030\014 \001(\005\022\016\n\006l"
   "k_mul\030\r \001(\005\022\020\n\010lk_score\030\016 \001(\005\"^\n\014CMD_S_Y"
   "uWang\022\020\n\010chair_id\030\001 \001(\005\022\014\n\004kind\030\002 \001(\005\022\022\n"
   "\nyu_wang_id\030\003 \001(\005\022\032\n\007fish_id\030\004 \003(\0132\t.Loa"
@@ -3004,7 +3004,7 @@ const char* LoadFish::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::i
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 is_aced = 11;
+      // bool is_aced = 11;
       case 11:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 88)) {
           is_aced_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
@@ -3120,10 +3120,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(10, this->_internal_stage(), target);
   }
 
-  // int32 is_aced = 11;
+  // bool is_aced = 11;
   if (this->is_aced() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(11, this->_internal_is_aced(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(11, this->_internal_is_aced(), target);
   }
 
   // int32 jbp_stage = 12;
@@ -3230,11 +3230,9 @@ size_t LoadFish::ByteSizeLong() const {
         this->_internal_stage());
   }
 
-  // int32 is_aced = 11;
+  // bool is_aced = 11;
   if (this->is_aced() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_is_aced());
+    total_size += 1 + 1;
   }
 
   // int32 jbp_stage = 12;

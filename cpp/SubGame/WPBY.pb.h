@@ -47,7 +47,7 @@ struct TableStruct_WPBY_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[31]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[35]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -90,9 +90,9 @@ extern CMD_S_CONFIGDefaultTypeInternal _CMD_S_CONFIG_default_instance_;
 class CMD_S_ChangeBulletLevel;
 class CMD_S_ChangeBulletLevelDefaultTypeInternal;
 extern CMD_S_ChangeBulletLevelDefaultTypeInternal _CMD_S_ChangeBulletLevel_default_instance_;
-class CMD_S_DaJiangZhangYu;
-class CMD_S_DaJiangZhangYuDefaultTypeInternal;
-extern CMD_S_DaJiangZhangYuDefaultTypeInternal _CMD_S_DaJiangZhangYu_default_instance_;
+class CMD_S_DaSanYuan;
+class CMD_S_DaSanYuanDefaultTypeInternal;
+extern CMD_S_DaSanYuanDefaultTypeInternal _CMD_S_DaSanYuan_default_instance_;
 class CMD_S_DaSiXi;
 class CMD_S_DaSiXiDefaultTypeInternal;
 extern CMD_S_DaSiXiDefaultTypeInternal _CMD_S_DaSiXi_default_instance_;
@@ -114,9 +114,6 @@ extern CMD_S_PlayerLockDefaultTypeInternal _CMD_S_PlayerLock_default_instance_;
 class CMD_S_PlayerShoot;
 class CMD_S_PlayerShootDefaultTypeInternal;
 extern CMD_S_PlayerShootDefaultTypeInternal _CMD_S_PlayerShoot_default_instance_;
-class CMD_S_PlayerYCEnter;
-class CMD_S_PlayerYCEnterDefaultTypeInternal;
-extern CMD_S_PlayerYCEnterDefaultTypeInternal _CMD_S_PlayerYCEnter_default_instance_;
 class CMD_S_RobotList;
 class CMD_S_RobotListDefaultTypeInternal;
 extern CMD_S_RobotListDefaultTypeInternal _CMD_S_RobotList_default_instance_;
@@ -135,6 +132,9 @@ extern CMD_S_TongLeiZhaDanDefaultTypeInternal _CMD_S_TongLeiZhaDan_default_insta
 class CMD_S_YiWangDaJin;
 class CMD_S_YiWangDaJinDefaultTypeInternal;
 extern CMD_S_YiWangDaJinDefaultTypeInternal _CMD_S_YiWangDaJin_default_instance_;
+class CMD_S_YuChaoCome;
+class CMD_S_YuChaoComeDefaultTypeInternal;
+extern CMD_S_YuChaoComeDefaultTypeInternal _CMD_S_YuChaoCome_default_instance_;
 class CMD_S_YuWang;
 class CMD_S_YuWangDefaultTypeInternal;
 extern CMD_S_YuWangDefaultTypeInternal _CMD_S_YuWang_default_instance_;
@@ -144,6 +144,18 @@ extern CMD_S_ZhongYiTangDefaultTypeInternal _CMD_S_ZhongYiTang_default_instance_
 class FishDeadInfo;
 class FishDeadInfoDefaultTypeInternal;
 extern FishDeadInfoDefaultTypeInternal _FishDeadInfo_default_instance_;
+class FishLineInfo;
+class FishLineInfoDefaultTypeInternal;
+extern FishLineInfoDefaultTypeInternal _FishLineInfo_default_instance_;
+class FishPoint;
+class FishPointDefaultTypeInternal;
+extern FishPointDefaultTypeInternal _FishPoint_default_instance_;
+class FishTide;
+class FishTideDefaultTypeInternal;
+extern FishTideDefaultTypeInternal _FishTide_default_instance_;
+class LineInfo;
+class LineInfoDefaultTypeInternal;
+extern LineInfoDefaultTypeInternal _LineInfo_default_instance_;
 class LoadFish;
 class LoadFishDefaultTypeInternal;
 extern LoadFishDefaultTypeInternal _LoadFish_default_instance_;
@@ -160,7 +172,7 @@ template<> ::CMD_C_TongLeiZhaDan* Arena::CreateMaybeMessage<::CMD_C_TongLeiZhaDa
 template<> ::CMD_S_AddFish* Arena::CreateMaybeMessage<::CMD_S_AddFish>(Arena*);
 template<> ::CMD_S_CONFIG* Arena::CreateMaybeMessage<::CMD_S_CONFIG>(Arena*);
 template<> ::CMD_S_ChangeBulletLevel* Arena::CreateMaybeMessage<::CMD_S_ChangeBulletLevel>(Arena*);
-template<> ::CMD_S_DaJiangZhangYu* Arena::CreateMaybeMessage<::CMD_S_DaJiangZhangYu>(Arena*);
+template<> ::CMD_S_DaSanYuan* Arena::CreateMaybeMessage<::CMD_S_DaSanYuan>(Arena*);
 template<> ::CMD_S_DaSiXi* Arena::CreateMaybeMessage<::CMD_S_DaSiXi>(Arena*);
 template<> ::CMD_S_FishDead* Arena::CreateMaybeMessage<::CMD_S_FishDead>(Arena*);
 template<> ::CMD_S_JuBuZhaDan* Arena::CreateMaybeMessage<::CMD_S_JuBuZhaDan>(Arena*);
@@ -168,16 +180,20 @@ template<> ::CMD_S_PlayerEnter* Arena::CreateMaybeMessage<::CMD_S_PlayerEnter>(A
 template<> ::CMD_S_PlayerGunLevel* Arena::CreateMaybeMessage<::CMD_S_PlayerGunLevel>(Arena*);
 template<> ::CMD_S_PlayerLock* Arena::CreateMaybeMessage<::CMD_S_PlayerLock>(Arena*);
 template<> ::CMD_S_PlayerShoot* Arena::CreateMaybeMessage<::CMD_S_PlayerShoot>(Arena*);
-template<> ::CMD_S_PlayerYCEnter* Arena::CreateMaybeMessage<::CMD_S_PlayerYCEnter>(Arena*);
 template<> ::CMD_S_RobotList* Arena::CreateMaybeMessage<::CMD_S_RobotList>(Arena*);
 template<> ::CMD_S_RobotShoot* Arena::CreateMaybeMessage<::CMD_S_RobotShoot>(Arena*);
 template<> ::CMD_S_ShootLK* Arena::CreateMaybeMessage<::CMD_S_ShootLK>(Arena*);
 template<> ::CMD_S_ShuiHuZhuan* Arena::CreateMaybeMessage<::CMD_S_ShuiHuZhuan>(Arena*);
 template<> ::CMD_S_TongLeiZhaDan* Arena::CreateMaybeMessage<::CMD_S_TongLeiZhaDan>(Arena*);
 template<> ::CMD_S_YiWangDaJin* Arena::CreateMaybeMessage<::CMD_S_YiWangDaJin>(Arena*);
+template<> ::CMD_S_YuChaoCome* Arena::CreateMaybeMessage<::CMD_S_YuChaoCome>(Arena*);
 template<> ::CMD_S_YuWang* Arena::CreateMaybeMessage<::CMD_S_YuWang>(Arena*);
 template<> ::CMD_S_ZhongYiTang* Arena::CreateMaybeMessage<::CMD_S_ZhongYiTang>(Arena*);
 template<> ::FishDeadInfo* Arena::CreateMaybeMessage<::FishDeadInfo>(Arena*);
+template<> ::FishLineInfo* Arena::CreateMaybeMessage<::FishLineInfo>(Arena*);
+template<> ::FishPoint* Arena::CreateMaybeMessage<::FishPoint>(Arena*);
+template<> ::FishTide* Arena::CreateMaybeMessage<::FishTide>(Arena*);
+template<> ::LineInfo* Arena::CreateMaybeMessage<::LineInfo>(Arena*);
 template<> ::LoadFish* Arena::CreateMaybeMessage<::LoadFish>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 
@@ -712,6 +728,854 @@ class CMD_S_PlayerLock PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
+class FishPoint PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:FishPoint) */ {
+ public:
+  inline FishPoint() : FishPoint(nullptr) {}
+  virtual ~FishPoint();
+
+  FishPoint(const FishPoint& from);
+  FishPoint(FishPoint&& from) noexcept
+    : FishPoint() {
+    *this = ::std::move(from);
+  }
+
+  inline FishPoint& operator=(const FishPoint& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline FishPoint& operator=(FishPoint&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const FishPoint& default_instance();
+
+  static inline const FishPoint* internal_default_instance() {
+    return reinterpret_cast<const FishPoint*>(
+               &_FishPoint_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    3;
+
+  friend void swap(FishPoint& a, FishPoint& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(FishPoint* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(FishPoint* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline FishPoint* New() const final {
+    return CreateMaybeMessage<FishPoint>(nullptr);
+  }
+
+  FishPoint* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<FishPoint>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const FishPoint& from);
+  void MergeFrom(const FishPoint& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(FishPoint* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "FishPoint";
+  }
+  protected:
+  explicit FishPoint(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_WPBY_2eproto);
+    return ::descriptor_table_WPBY_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kXFieldNumber = 1,
+    kYFieldNumber = 2,
+  };
+  // int32 x = 1;
+  void clear_x();
+  ::PROTOBUF_NAMESPACE_ID::int32 x() const;
+  void set_x(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_x() const;
+  void _internal_set_x(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 y = 2;
+  void clear_y();
+  ::PROTOBUF_NAMESPACE_ID::int32 y() const;
+  void set_y(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_y() const;
+  void _internal_set_y(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:FishPoint)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 x_;
+  ::PROTOBUF_NAMESPACE_ID::int32 y_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_WPBY_2eproto;
+};
+// -------------------------------------------------------------------
+
+class LineInfo PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LineInfo) */ {
+ public:
+  inline LineInfo() : LineInfo(nullptr) {}
+  virtual ~LineInfo();
+
+  LineInfo(const LineInfo& from);
+  LineInfo(LineInfo&& from) noexcept
+    : LineInfo() {
+    *this = ::std::move(from);
+  }
+
+  inline LineInfo& operator=(const LineInfo& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline LineInfo& operator=(LineInfo&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const LineInfo& default_instance();
+
+  static inline const LineInfo* internal_default_instance() {
+    return reinterpret_cast<const LineInfo*>(
+               &_LineInfo_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    4;
+
+  friend void swap(LineInfo& a, LineInfo& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(LineInfo* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(LineInfo* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline LineInfo* New() const final {
+    return CreateMaybeMessage<LineInfo>(nullptr);
+  }
+
+  LineInfo* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<LineInfo>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const LineInfo& from);
+  void MergeFrom(const LineInfo& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(LineInfo* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "LineInfo";
+  }
+  protected:
+  explicit LineInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_WPBY_2eproto);
+    return ::descriptor_table_WPBY_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kPointsFieldNumber = 2,
+    kTypeFieldNumber = 1,
+  };
+  // repeated .FishPoint points = 2;
+  int points_size() const;
+  private:
+  int _internal_points_size() const;
+  public:
+  void clear_points();
+  ::FishPoint* mutable_points(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishPoint >*
+      mutable_points();
+  private:
+  const ::FishPoint& _internal_points(int index) const;
+  ::FishPoint* _internal_add_points();
+  public:
+  const ::FishPoint& points(int index) const;
+  ::FishPoint* add_points();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishPoint >&
+      points() const;
+
+  // int32 type = 1;
+  void clear_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 type() const;
+  void set_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_type() const;
+  void _internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:LineInfo)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishPoint > points_;
+  ::PROTOBUF_NAMESPACE_ID::int32 type_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_WPBY_2eproto;
+};
+// -------------------------------------------------------------------
+
+class FishLineInfo PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:FishLineInfo) */ {
+ public:
+  inline FishLineInfo() : FishLineInfo(nullptr) {}
+  virtual ~FishLineInfo();
+
+  FishLineInfo(const FishLineInfo& from);
+  FishLineInfo(FishLineInfo&& from) noexcept
+    : FishLineInfo() {
+    *this = ::std::move(from);
+  }
+
+  inline FishLineInfo& operator=(const FishLineInfo& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline FishLineInfo& operator=(FishLineInfo&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const FishLineInfo& default_instance();
+
+  static inline const FishLineInfo* internal_default_instance() {
+    return reinterpret_cast<const FishLineInfo*>(
+               &_FishLineInfo_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    5;
+
+  friend void swap(FishLineInfo& a, FishLineInfo& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(FishLineInfo* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(FishLineInfo* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline FishLineInfo* New() const final {
+    return CreateMaybeMessage<FishLineInfo>(nullptr);
+  }
+
+  FishLineInfo* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<FishLineInfo>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const FishLineInfo& from);
+  void MergeFrom(const FishLineInfo& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(FishLineInfo* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "FishLineInfo";
+  }
+  protected:
+  explicit FishLineInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_WPBY_2eproto);
+    return ::descriptor_table_WPBY_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kLineFieldNumber = 1,
+    kKindFieldNumber = 2,
+    kStartDelayTimeFieldNumber = 3,
+    kDelayTimeFieldNumber = 4,
+    kFishNumFieldNumber = 5,
+    kLivedTimeFieldNumber = 6,
+  };
+  // .LineInfo line = 1;
+  bool has_line() const;
+  private:
+  bool _internal_has_line() const;
+  public:
+  void clear_line();
+  const ::LineInfo& line() const;
+  ::LineInfo* release_line();
+  ::LineInfo* mutable_line();
+  void set_allocated_line(::LineInfo* line);
+  private:
+  const ::LineInfo& _internal_line() const;
+  ::LineInfo* _internal_mutable_line();
+  public:
+  void unsafe_arena_set_allocated_line(
+      ::LineInfo* line);
+  ::LineInfo* unsafe_arena_release_line();
+
+  // int32 kind = 2;
+  void clear_kind();
+  ::PROTOBUF_NAMESPACE_ID::int32 kind() const;
+  void set_kind(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_kind() const;
+  void _internal_set_kind(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 start_delay_time = 3;
+  void clear_start_delay_time();
+  ::PROTOBUF_NAMESPACE_ID::int32 start_delay_time() const;
+  void set_start_delay_time(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_start_delay_time() const;
+  void _internal_set_start_delay_time(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 delay_time = 4;
+  void clear_delay_time();
+  ::PROTOBUF_NAMESPACE_ID::int32 delay_time() const;
+  void set_delay_time(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_delay_time() const;
+  void _internal_set_delay_time(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 fish_num = 5;
+  void clear_fish_num();
+  ::PROTOBUF_NAMESPACE_ID::int32 fish_num() const;
+  void set_fish_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_fish_num() const;
+  void _internal_set_fish_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 lived_time = 6;
+  void clear_lived_time();
+  ::PROTOBUF_NAMESPACE_ID::int32 lived_time() const;
+  void set_lived_time(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_lived_time() const;
+  void _internal_set_lived_time(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:FishLineInfo)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::LineInfo* line_;
+  ::PROTOBUF_NAMESPACE_ID::int32 kind_;
+  ::PROTOBUF_NAMESPACE_ID::int32 start_delay_time_;
+  ::PROTOBUF_NAMESPACE_ID::int32 delay_time_;
+  ::PROTOBUF_NAMESPACE_ID::int32 fish_num_;
+  ::PROTOBUF_NAMESPACE_ID::int32 lived_time_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_WPBY_2eproto;
+};
+// -------------------------------------------------------------------
+
+class FishTide PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:FishTide) */ {
+ public:
+  inline FishTide() : FishTide(nullptr) {}
+  virtual ~FishTide();
+
+  FishTide(const FishTide& from);
+  FishTide(FishTide&& from) noexcept
+    : FishTide() {
+    *this = ::std::move(from);
+  }
+
+  inline FishTide& operator=(const FishTide& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline FishTide& operator=(FishTide&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const FishTide& default_instance();
+
+  static inline const FishTide* internal_default_instance() {
+    return reinterpret_cast<const FishTide*>(
+               &_FishTide_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    6;
+
+  friend void swap(FishTide& a, FishTide& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(FishTide* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(FishTide* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline FishTide* New() const final {
+    return CreateMaybeMessage<FishTide>(nullptr);
+  }
+
+  FishTide* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<FishTide>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const FishTide& from);
+  void MergeFrom(const FishTide& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(FishTide* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "FishTide";
+  }
+  protected:
+  explicit FishTide(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_WPBY_2eproto);
+    return ::descriptor_table_WPBY_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kFishLinesFieldNumber = 5,
+    kFishTideStartTimeFieldNumber = 1,
+    kFishTideCurTimeFieldNumber = 2,
+    kFishTideTurnFieldNumber = 3,
+    kLineNumFieldNumber = 4,
+  };
+  // repeated .FishLineInfo fish_lines = 5;
+  int fish_lines_size() const;
+  private:
+  int _internal_fish_lines_size() const;
+  public:
+  void clear_fish_lines();
+  ::FishLineInfo* mutable_fish_lines(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishLineInfo >*
+      mutable_fish_lines();
+  private:
+  const ::FishLineInfo& _internal_fish_lines(int index) const;
+  ::FishLineInfo* _internal_add_fish_lines();
+  public:
+  const ::FishLineInfo& fish_lines(int index) const;
+  ::FishLineInfo* add_fish_lines();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishLineInfo >&
+      fish_lines() const;
+
+  // int64 fish_tide_start_time = 1;
+  void clear_fish_tide_start_time();
+  ::PROTOBUF_NAMESPACE_ID::int64 fish_tide_start_time() const;
+  void set_fish_tide_start_time(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_fish_tide_start_time() const;
+  void _internal_set_fish_tide_start_time(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int64 fish_tide_cur_time = 2;
+  void clear_fish_tide_cur_time();
+  ::PROTOBUF_NAMESPACE_ID::int64 fish_tide_cur_time() const;
+  void set_fish_tide_cur_time(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_fish_tide_cur_time() const;
+  void _internal_set_fish_tide_cur_time(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int32 fish_tide_turn = 3;
+  void clear_fish_tide_turn();
+  ::PROTOBUF_NAMESPACE_ID::int32 fish_tide_turn() const;
+  void set_fish_tide_turn(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_fish_tide_turn() const;
+  void _internal_set_fish_tide_turn(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 line_num = 4;
+  void clear_line_num();
+  ::PROTOBUF_NAMESPACE_ID::int32 line_num() const;
+  void set_line_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_line_num() const;
+  void _internal_set_line_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:FishTide)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishLineInfo > fish_lines_;
+  ::PROTOBUF_NAMESPACE_ID::int64 fish_tide_start_time_;
+  ::PROTOBUF_NAMESPACE_ID::int64 fish_tide_cur_time_;
+  ::PROTOBUF_NAMESPACE_ID::int32 fish_tide_turn_;
+  ::PROTOBUF_NAMESPACE_ID::int32 line_num_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_WPBY_2eproto;
+};
+// -------------------------------------------------------------------
+
+class CMD_S_YuChaoCome PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_YuChaoCome) */ {
+ public:
+  inline CMD_S_YuChaoCome() : CMD_S_YuChaoCome(nullptr) {}
+  virtual ~CMD_S_YuChaoCome();
+
+  CMD_S_YuChaoCome(const CMD_S_YuChaoCome& from);
+  CMD_S_YuChaoCome(CMD_S_YuChaoCome&& from) noexcept
+    : CMD_S_YuChaoCome() {
+    *this = ::std::move(from);
+  }
+
+  inline CMD_S_YuChaoCome& operator=(const CMD_S_YuChaoCome& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMD_S_YuChaoCome& operator=(CMD_S_YuChaoCome&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const CMD_S_YuChaoCome& default_instance();
+
+  static inline const CMD_S_YuChaoCome* internal_default_instance() {
+    return reinterpret_cast<const CMD_S_YuChaoCome*>(
+               &_CMD_S_YuChaoCome_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    7;
+
+  friend void swap(CMD_S_YuChaoCome& a, CMD_S_YuChaoCome& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMD_S_YuChaoCome* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMD_S_YuChaoCome* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline CMD_S_YuChaoCome* New() const final {
+    return CreateMaybeMessage<CMD_S_YuChaoCome>(nullptr);
+  }
+
+  CMD_S_YuChaoCome* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<CMD_S_YuChaoCome>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const CMD_S_YuChaoCome& from);
+  void MergeFrom(const CMD_S_YuChaoCome& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMD_S_YuChaoCome* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "CMD_S_YuChaoCome";
+  }
+  protected:
+  explicit CMD_S_YuChaoCome(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_WPBY_2eproto);
+    return ::descriptor_table_WPBY_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kFishTideFieldNumber = 2,
+    kYuChaoIdFieldNumber = 1,
+  };
+  // .FishTide fish_tide = 2;
+  bool has_fish_tide() const;
+  private:
+  bool _internal_has_fish_tide() const;
+  public:
+  void clear_fish_tide();
+  const ::FishTide& fish_tide() const;
+  ::FishTide* release_fish_tide();
+  ::FishTide* mutable_fish_tide();
+  void set_allocated_fish_tide(::FishTide* fish_tide);
+  private:
+  const ::FishTide& _internal_fish_tide() const;
+  ::FishTide* _internal_mutable_fish_tide();
+  public:
+  void unsafe_arena_set_allocated_fish_tide(
+      ::FishTide* fish_tide);
+  ::FishTide* unsafe_arena_release_fish_tide();
+
+  // int32 yu_chao_id = 1;
+  void clear_yu_chao_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 yu_chao_id() const;
+  void set_yu_chao_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_yu_chao_id() const;
+  void _internal_set_yu_chao_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:CMD_S_YuChaoCome)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::FishTide* fish_tide_;
+  ::PROTOBUF_NAMESPACE_ID::int32 yu_chao_id_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_WPBY_2eproto;
+};
+// -------------------------------------------------------------------
+
 class CMD_S_ShootLK PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_ShootLK) */ {
  public:
@@ -753,7 +1617,7 @@ class CMD_S_ShootLK PROTOBUF_FINAL :
                &_CMD_S_ShootLK_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    3;
+    8;
 
   friend void swap(CMD_S_ShootLK& a, CMD_S_ShootLK& b) {
     a.Swap(&b);
@@ -828,10 +1692,6 @@ class CMD_S_ShootLK PROTOBUF_FINAL :
     kIdFieldNumber = 2,
     kScoreFieldNumber = 3,
     kMultipleFieldNumber = 4,
-    kIsDeadedFieldNumber = 5,
-    kJbpStageFieldNumber = 6,
-    kCurPlayerScoreFieldNumber = 8,
-    kCurLkScoreFieldNumber = 7,
   };
   // int32 chair_id = 1;
   void clear_chair_id();
@@ -869,42 +1729,6 @@ class CMD_S_ShootLK PROTOBUF_FINAL :
   void _internal_set_multiple(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // bool is_deaded = 5;
-  void clear_is_deaded();
-  bool is_deaded() const;
-  void set_is_deaded(bool value);
-  private:
-  bool _internal_is_deaded() const;
-  void _internal_set_is_deaded(bool value);
-  public:
-
-  // int32 jbp_stage = 6;
-  void clear_jbp_stage();
-  ::PROTOBUF_NAMESPACE_ID::int32 jbp_stage() const;
-  void set_jbp_stage(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_jbp_stage() const;
-  void _internal_set_jbp_stage(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int64 cur_player_score = 8;
-  void clear_cur_player_score();
-  ::PROTOBUF_NAMESPACE_ID::int64 cur_player_score() const;
-  void set_cur_player_score(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_cur_player_score() const;
-  void _internal_set_cur_player_score(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
-  // int32 cur_lk_score = 7;
-  void clear_cur_lk_score();
-  ::PROTOBUF_NAMESPACE_ID::int32 cur_lk_score() const;
-  void set_cur_lk_score(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_cur_lk_score() const;
-  void _internal_set_cur_lk_score(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
   // @@protoc_insertion_point(class_scope:CMD_S_ShootLK)
  private:
   class _Internal;
@@ -916,10 +1740,6 @@ class CMD_S_ShootLK PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 id_;
   ::PROTOBUF_NAMESPACE_ID::int32 score_;
   ::PROTOBUF_NAMESPACE_ID::int32 multiple_;
-  bool is_deaded_;
-  ::PROTOBUF_NAMESPACE_ID::int32 jbp_stage_;
-  ::PROTOBUF_NAMESPACE_ID::int64 cur_player_score_;
-  ::PROTOBUF_NAMESPACE_ID::int32 cur_lk_score_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_WPBY_2eproto;
 };
@@ -966,7 +1786,7 @@ class CMD_S_JuBuZhaDan PROTOBUF_FINAL :
                &_CMD_S_JuBuZhaDan_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    4;
+    9;
 
   friend void swap(CMD_S_JuBuZhaDan& a, CMD_S_JuBuZhaDan& b) {
     a.Swap(&b);
@@ -1113,7 +1933,7 @@ class CMD_S_YiWangDaJin PROTOBUF_FINAL :
                &_CMD_S_YiWangDaJin_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    5;
+    10;
 
   friend void swap(CMD_S_YiWangDaJin& a, CMD_S_YiWangDaJin& b) {
     a.Swap(&b);
@@ -1260,7 +2080,7 @@ class CMD_S_TongLeiZhaDan PROTOBUF_FINAL :
                &_CMD_S_TongLeiZhaDan_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    6;
+    11;
 
   friend void swap(CMD_S_TongLeiZhaDan& a, CMD_S_TongLeiZhaDan& b) {
     a.Swap(&b);
@@ -1418,7 +2238,7 @@ class LoadFish PROTOBUF_FINAL :
                &_LoadFish_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    7;
+    12;
 
   friend void swap(LoadFish& a, LoadFish& b) {
     a.Swap(&b);
@@ -1489,21 +2309,32 @@ class LoadFish PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
+    kFishPointFieldNumber = 5,
     kKindFieldNumber = 1,
     kIdFieldNumber = 2,
     kCreateTimeFieldNumber = 3,
     kContinueTimeFieldNumber = 4,
-    kRoadFieldNumber = 5,
-    kGroupIdFieldNumber = 6,
-    kGroupNoFieldNumber = 7,
-    kNowTimeFieldNumber = 8,
-    kMulFieldNumber = 9,
-    kStageFieldNumber = 10,
-    kIsAcedFieldNumber = 11,
-    kJbpStageFieldNumber = 12,
-    kLkMulFieldNumber = 13,
-    kLkScoreFieldNumber = 14,
+    kNowTimeFieldNumber = 6,
+    kMulFieldNumber = 7,
   };
+  // repeated .FishPoint fish_point = 5;
+  int fish_point_size() const;
+  private:
+  int _internal_fish_point_size() const;
+  public:
+  void clear_fish_point();
+  ::FishPoint* mutable_fish_point(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishPoint >*
+      mutable_fish_point();
+  private:
+  const ::FishPoint& _internal_fish_point(int index) const;
+  ::FishPoint* _internal_add_fish_point();
+  public:
+  const ::FishPoint& fish_point(int index) const;
+  ::FishPoint* add_fish_point();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishPoint >&
+      fish_point() const;
+
   // int32 kind = 1;
   void clear_kind();
   ::PROTOBUF_NAMESPACE_ID::int32 kind() const;
@@ -1540,34 +2371,7 @@ class LoadFish PROTOBUF_FINAL :
   void _internal_set_continue_time(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 road = 5;
-  void clear_road();
-  ::PROTOBUF_NAMESPACE_ID::int32 road() const;
-  void set_road(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_road() const;
-  void _internal_set_road(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 group_id = 6;
-  void clear_group_id();
-  ::PROTOBUF_NAMESPACE_ID::int32 group_id() const;
-  void set_group_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_group_id() const;
-  void _internal_set_group_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 group_no = 7;
-  void clear_group_no();
-  ::PROTOBUF_NAMESPACE_ID::int32 group_no() const;
-  void set_group_no(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_group_no() const;
-  void _internal_set_group_no(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 now_time = 8;
+  // int32 now_time = 6;
   void clear_now_time();
   ::PROTOBUF_NAMESPACE_ID::int32 now_time() const;
   void set_now_time(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -1576,58 +2380,13 @@ class LoadFish PROTOBUF_FINAL :
   void _internal_set_now_time(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 mul = 9;
+  // int32 mul = 7;
   void clear_mul();
   ::PROTOBUF_NAMESPACE_ID::int32 mul() const;
   void set_mul(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
   ::PROTOBUF_NAMESPACE_ID::int32 _internal_mul() const;
   void _internal_set_mul(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 stage = 10;
-  void clear_stage();
-  ::PROTOBUF_NAMESPACE_ID::int32 stage() const;
-  void set_stage(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_stage() const;
-  void _internal_set_stage(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 is_aced = 11;
-  void clear_is_aced();
-  ::PROTOBUF_NAMESPACE_ID::int32 is_aced() const;
-  void set_is_aced(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_is_aced() const;
-  void _internal_set_is_aced(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 jbp_stage = 12;
-  void clear_jbp_stage();
-  ::PROTOBUF_NAMESPACE_ID::int32 jbp_stage() const;
-  void set_jbp_stage(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_jbp_stage() const;
-  void _internal_set_jbp_stage(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 lk_mul = 13;
-  void clear_lk_mul();
-  ::PROTOBUF_NAMESPACE_ID::int32 lk_mul() const;
-  void set_lk_mul(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_lk_mul() const;
-  void _internal_set_lk_mul(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 lk_score = 14;
-  void clear_lk_score();
-  ::PROTOBUF_NAMESPACE_ID::int32 lk_score() const;
-  void set_lk_score(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_lk_score() const;
-  void _internal_set_lk_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:LoadFish)
@@ -1637,20 +2396,13 @@ class LoadFish PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishPoint > fish_point_;
   ::PROTOBUF_NAMESPACE_ID::int32 kind_;
   ::PROTOBUF_NAMESPACE_ID::int32 id_;
   ::PROTOBUF_NAMESPACE_ID::int32 create_time_;
   ::PROTOBUF_NAMESPACE_ID::int32 continue_time_;
-  ::PROTOBUF_NAMESPACE_ID::int32 road_;
-  ::PROTOBUF_NAMESPACE_ID::int32 group_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 group_no_;
   ::PROTOBUF_NAMESPACE_ID::int32 now_time_;
   ::PROTOBUF_NAMESPACE_ID::int32 mul_;
-  ::PROTOBUF_NAMESPACE_ID::int32 stage_;
-  ::PROTOBUF_NAMESPACE_ID::int32 is_aced_;
-  ::PROTOBUF_NAMESPACE_ID::int32 jbp_stage_;
-  ::PROTOBUF_NAMESPACE_ID::int32 lk_mul_;
-  ::PROTOBUF_NAMESPACE_ID::int32 lk_score_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_WPBY_2eproto;
 };
@@ -1697,7 +2449,7 @@ class CMD_S_YuWang PROTOBUF_FINAL :
                &_CMD_S_YuWang_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    13;
 
   friend void swap(CMD_S_YuWang& a, CMD_S_YuWang& b) {
     a.Swap(&b);
@@ -1875,7 +2627,7 @@ class CMD_S_DaSiXi PROTOBUF_FINAL :
                &_CMD_S_DaSiXi_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    14;
 
   friend void swap(CMD_S_DaSiXi& a, CMD_S_DaSiXi& b) {
     a.Swap(&b);
@@ -1992,23 +2744,23 @@ class CMD_S_DaSiXi PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
-class CMD_S_DaJiangZhangYu PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_DaJiangZhangYu) */ {
+class CMD_S_DaSanYuan PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_DaSanYuan) */ {
  public:
-  inline CMD_S_DaJiangZhangYu() : CMD_S_DaJiangZhangYu(nullptr) {}
-  virtual ~CMD_S_DaJiangZhangYu();
+  inline CMD_S_DaSanYuan() : CMD_S_DaSanYuan(nullptr) {}
+  virtual ~CMD_S_DaSanYuan();
 
-  CMD_S_DaJiangZhangYu(const CMD_S_DaJiangZhangYu& from);
-  CMD_S_DaJiangZhangYu(CMD_S_DaJiangZhangYu&& from) noexcept
-    : CMD_S_DaJiangZhangYu() {
+  CMD_S_DaSanYuan(const CMD_S_DaSanYuan& from);
+  CMD_S_DaSanYuan(CMD_S_DaSanYuan&& from) noexcept
+    : CMD_S_DaSanYuan() {
     *this = ::std::move(from);
   }
 
-  inline CMD_S_DaJiangZhangYu& operator=(const CMD_S_DaJiangZhangYu& from) {
+  inline CMD_S_DaSanYuan& operator=(const CMD_S_DaSanYuan& from) {
     CopyFrom(from);
     return *this;
   }
-  inline CMD_S_DaJiangZhangYu& operator=(CMD_S_DaJiangZhangYu&& from) noexcept {
+  inline CMD_S_DaSanYuan& operator=(CMD_S_DaSanYuan&& from) noexcept {
     if (GetArena() == from.GetArena()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -2026,19 +2778,19 @@ class CMD_S_DaJiangZhangYu PROTOBUF_FINAL :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return GetMetadataStatic().reflection;
   }
-  static const CMD_S_DaJiangZhangYu& default_instance();
+  static const CMD_S_DaSanYuan& default_instance();
 
-  static inline const CMD_S_DaJiangZhangYu* internal_default_instance() {
-    return reinterpret_cast<const CMD_S_DaJiangZhangYu*>(
-               &_CMD_S_DaJiangZhangYu_default_instance_);
+  static inline const CMD_S_DaSanYuan* internal_default_instance() {
+    return reinterpret_cast<const CMD_S_DaSanYuan*>(
+               &_CMD_S_DaSanYuan_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    15;
 
-  friend void swap(CMD_S_DaJiangZhangYu& a, CMD_S_DaJiangZhangYu& b) {
+  friend void swap(CMD_S_DaSanYuan& a, CMD_S_DaSanYuan& b) {
     a.Swap(&b);
   }
-  inline void Swap(CMD_S_DaJiangZhangYu* other) {
+  inline void Swap(CMD_S_DaSanYuan* other) {
     if (other == this) return;
     if (GetArena() == other->GetArena()) {
       InternalSwap(other);
@@ -2046,7 +2798,7 @@ class CMD_S_DaJiangZhangYu PROTOBUF_FINAL :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(CMD_S_DaJiangZhangYu* other) {
+  void UnsafeArenaSwap(CMD_S_DaSanYuan* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetArena() == other->GetArena());
     InternalSwap(other);
@@ -2054,17 +2806,17 @@ class CMD_S_DaJiangZhangYu PROTOBUF_FINAL :
 
   // implements Message ----------------------------------------------
 
-  inline CMD_S_DaJiangZhangYu* New() const final {
-    return CreateMaybeMessage<CMD_S_DaJiangZhangYu>(nullptr);
+  inline CMD_S_DaSanYuan* New() const final {
+    return CreateMaybeMessage<CMD_S_DaSanYuan>(nullptr);
   }
 
-  CMD_S_DaJiangZhangYu* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<CMD_S_DaJiangZhangYu>(arena);
+  CMD_S_DaSanYuan* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<CMD_S_DaSanYuan>(arena);
   }
   void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
   void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const CMD_S_DaJiangZhangYu& from);
-  void MergeFrom(const CMD_S_DaJiangZhangYu& from);
+  void CopyFrom(const CMD_S_DaSanYuan& from);
+  void MergeFrom(const CMD_S_DaSanYuan& from);
   PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
   bool IsInitialized() const final;
 
@@ -2078,13 +2830,13 @@ class CMD_S_DaJiangZhangYu PROTOBUF_FINAL :
   inline void SharedCtor();
   inline void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(CMD_S_DaJiangZhangYu* other);
+  void InternalSwap(CMD_S_DaSanYuan* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_DaJiangZhangYu";
+    return "CMD_S_DaSanYuan";
   }
   protected:
-  explicit CMD_S_DaJiangZhangYu(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  explicit CMD_S_DaSanYuan(::PROTOBUF_NAMESPACE_ID::Arena* arena);
   private:
   static void ArenaDtor(void* object);
   inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -2106,9 +2858,7 @@ class CMD_S_DaJiangZhangYu PROTOBUF_FINAL :
   enum : int {
     kIdFieldNumber = 1,
     kChairIdFieldNumber = 2,
-    kOdd1FieldNumber = 3,
-    kOdd2FieldNumber = 4,
-    kOdd3FieldNumber = 5,
+    kScoreFieldNumber = 3,
   };
   // int32 id = 1;
   void clear_id();
@@ -2128,34 +2878,16 @@ class CMD_S_DaJiangZhangYu PROTOBUF_FINAL :
   void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 odd1 = 3;
-  void clear_odd1();
-  ::PROTOBUF_NAMESPACE_ID::int32 odd1() const;
-  void set_odd1(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // int32 score = 3;
+  void clear_score();
+  ::PROTOBUF_NAMESPACE_ID::int32 score() const;
+  void set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_odd1() const;
-  void _internal_set_odd1(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_score() const;
+  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 odd2 = 4;
-  void clear_odd2();
-  ::PROTOBUF_NAMESPACE_ID::int32 odd2() const;
-  void set_odd2(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_odd2() const;
-  void _internal_set_odd2(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 odd3 = 5;
-  void clear_odd3();
-  ::PROTOBUF_NAMESPACE_ID::int32 odd3() const;
-  void set_odd3(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_odd3() const;
-  void _internal_set_odd3(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:CMD_S_DaJiangZhangYu)
+  // @@protoc_insertion_point(class_scope:CMD_S_DaSanYuan)
  private:
   class _Internal;
 
@@ -2164,9 +2896,7 @@ class CMD_S_DaJiangZhangYu PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int32 id_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 odd1_;
-  ::PROTOBUF_NAMESPACE_ID::int32 odd2_;
-  ::PROTOBUF_NAMESPACE_ID::int32 odd3_;
+  ::PROTOBUF_NAMESPACE_ID::int32 score_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_WPBY_2eproto;
 };
@@ -2213,7 +2943,7 @@ class CMD_S_ZhongYiTang PROTOBUF_FINAL :
                &_CMD_S_ZhongYiTang_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    16;
 
   friend void swap(CMD_S_ZhongYiTang& a, CMD_S_ZhongYiTang& b) {
     a.Swap(&b);
@@ -2285,8 +3015,7 @@ class CMD_S_ZhongYiTang PROTOBUF_FINAL :
 
   enum : int {
     kChairIdFieldNumber = 1,
-    kAddTimeFieldNumber = 2,
-    kAddMulFieldNumber = 3,
+    kTimeFieldNumber = 2,
   };
   // int32 chair_id = 1;
   void clear_chair_id();
@@ -2297,22 +3026,13 @@ class CMD_S_ZhongYiTang PROTOBUF_FINAL :
   void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 add_time = 2;
-  void clear_add_time();
-  ::PROTOBUF_NAMESPACE_ID::int32 add_time() const;
-  void set_add_time(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // int32 time = 2;
+  void clear_time();
+  ::PROTOBUF_NAMESPACE_ID::int32 time() const;
+  void set_time(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_add_time() const;
-  void _internal_set_add_time(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 add_mul = 3;
-  void clear_add_mul();
-  ::PROTOBUF_NAMESPACE_ID::int32 add_mul() const;
-  void set_add_mul(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_add_mul() const;
-  void _internal_set_add_mul(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_time() const;
+  void _internal_set_time(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:CMD_S_ZhongYiTang)
@@ -2323,8 +3043,7 @@ class CMD_S_ZhongYiTang PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 add_time_;
-  ::PROTOBUF_NAMESPACE_ID::int32 add_mul_;
+  ::PROTOBUF_NAMESPACE_ID::int32 time_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_WPBY_2eproto;
 };
@@ -2371,7 +3090,7 @@ class CMD_S_ShuiHuZhuan PROTOBUF_FINAL :
                &_CMD_S_ShuiHuZhuan_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    12;
+    17;
 
   friend void swap(CMD_S_ShuiHuZhuan& a, CMD_S_ShuiHuZhuan& b) {
     a.Swap(&b);
@@ -2442,54 +3161,9 @@ class CMD_S_ShuiHuZhuan PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kFishIdFieldNumber = 2,
-    kFishScoreFieldNumber = 3,
     kChairIdFieldNumber = 1,
+    kFishIdFieldNumber = 2,
   };
-  // repeated int32 fish_id = 2;
-  int fish_id_size() const;
-  private:
-  int _internal_fish_id_size() const;
-  public:
-  void clear_fish_id();
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_fish_id(int index) const;
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      _internal_fish_id() const;
-  void _internal_add_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      _internal_mutable_fish_id();
-  public:
-  ::PROTOBUF_NAMESPACE_ID::int32 fish_id(int index) const;
-  void set_fish_id(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
-  void add_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      fish_id() const;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      mutable_fish_id();
-
-  // repeated int32 fish_score = 3;
-  int fish_score_size() const;
-  private:
-  int _internal_fish_score_size() const;
-  public:
-  void clear_fish_score();
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_fish_score(int index) const;
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      _internal_fish_score() const;
-  void _internal_add_fish_score(::PROTOBUF_NAMESPACE_ID::int32 value);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      _internal_mutable_fish_score();
-  public:
-  ::PROTOBUF_NAMESPACE_ID::int32 fish_score(int index) const;
-  void set_fish_score(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
-  void add_fish_score(::PROTOBUF_NAMESPACE_ID::int32 value);
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      fish_score() const;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      mutable_fish_score();
-
   // int32 chair_id = 1;
   void clear_chair_id();
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id() const;
@@ -2499,6 +3173,15 @@ class CMD_S_ShuiHuZhuan PROTOBUF_FINAL :
   void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 fish_id = 2;
+  void clear_fish_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 fish_id() const;
+  void set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_fish_id() const;
+  void _internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:CMD_S_ShuiHuZhuan)
  private:
   class _Internal;
@@ -2506,11 +3189,8 @@ class CMD_S_ShuiHuZhuan PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > fish_id_;
-  mutable std::atomic<int> _fish_id_cached_byte_size_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > fish_score_;
-  mutable std::atomic<int> _fish_score_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 fish_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_WPBY_2eproto;
 };
@@ -2557,7 +3237,7 @@ class CMD_S_ChangeBulletLevel PROTOBUF_FINAL :
                &_CMD_S_ChangeBulletLevel_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    13;
+    18;
 
   friend void swap(CMD_S_ChangeBulletLevel& a, CMD_S_ChangeBulletLevel& b) {
     a.Swap(&b);
@@ -2715,7 +3395,7 @@ class CMD_S_CONFIG PROTOBUF_FINAL :
                &_CMD_S_CONFIG_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    14;
+    19;
 
   friend void swap(CMD_S_CONFIG& a, CMD_S_CONFIG& b) {
     a.Swap(&b);
@@ -2926,7 +3606,7 @@ class CMD_S_PlayerGunLevel PROTOBUF_FINAL :
                &_CMD_S_PlayerGunLevel_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    15;
+    20;
 
   friend void swap(CMD_S_PlayerGunLevel& a, CMD_S_PlayerGunLevel& b) {
     a.Swap(&b);
@@ -3101,7 +3781,7 @@ class CMD_S_AddFish PROTOBUF_FINAL :
                &_CMD_S_AddFish_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    16;
+    21;
 
   friend void swap(CMD_S_AddFish& a, CMD_S_AddFish& b) {
     a.Swap(&b);
@@ -3246,7 +3926,7 @@ class CMD_S_PlayerEnter PROTOBUF_FINAL :
                &_CMD_S_PlayerEnter_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    17;
+    22;
 
   friend void swap(CMD_S_PlayerEnter& a, CMD_S_PlayerEnter& b) {
     a.Swap(&b);
@@ -3350,162 +4030,6 @@ class CMD_S_PlayerEnter PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
-class CMD_S_PlayerYCEnter PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_PlayerYCEnter) */ {
- public:
-  inline CMD_S_PlayerYCEnter() : CMD_S_PlayerYCEnter(nullptr) {}
-  virtual ~CMD_S_PlayerYCEnter();
-
-  CMD_S_PlayerYCEnter(const CMD_S_PlayerYCEnter& from);
-  CMD_S_PlayerYCEnter(CMD_S_PlayerYCEnter&& from) noexcept
-    : CMD_S_PlayerYCEnter() {
-    *this = ::std::move(from);
-  }
-
-  inline CMD_S_PlayerYCEnter& operator=(const CMD_S_PlayerYCEnter& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline CMD_S_PlayerYCEnter& operator=(CMD_S_PlayerYCEnter&& from) noexcept {
-    if (GetArena() == from.GetArena()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return GetMetadataStatic().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return GetMetadataStatic().reflection;
-  }
-  static const CMD_S_PlayerYCEnter& default_instance();
-
-  static inline const CMD_S_PlayerYCEnter* internal_default_instance() {
-    return reinterpret_cast<const CMD_S_PlayerYCEnter*>(
-               &_CMD_S_PlayerYCEnter_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    18;
-
-  friend void swap(CMD_S_PlayerYCEnter& a, CMD_S_PlayerYCEnter& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(CMD_S_PlayerYCEnter* other) {
-    if (other == this) return;
-    if (GetArena() == other->GetArena()) {
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(CMD_S_PlayerYCEnter* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetArena() == other->GetArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline CMD_S_PlayerYCEnter* New() const final {
-    return CreateMaybeMessage<CMD_S_PlayerYCEnter>(nullptr);
-  }
-
-  CMD_S_PlayerYCEnter* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<CMD_S_PlayerYCEnter>(arena);
-  }
-  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const CMD_S_PlayerYCEnter& from);
-  void MergeFrom(const CMD_S_PlayerYCEnter& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
-      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  inline void SharedCtor();
-  inline void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(CMD_S_PlayerYCEnter* other);
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_PlayerYCEnter";
-  }
-  protected:
-  explicit CMD_S_PlayerYCEnter(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  private:
-  static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  public:
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-  private:
-  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
-    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_WPBY_2eproto);
-    return ::descriptor_table_WPBY_2eproto.file_level_metadata[kIndexInFileMessages];
-  }
-
-  public:
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kLoadFishFieldNumber = 2,
-    kYuChaoIdFieldNumber = 1,
-  };
-  // repeated .LoadFish load_fish = 2;
-  int load_fish_size() const;
-  private:
-  int _internal_load_fish_size() const;
-  public:
-  void clear_load_fish();
-  ::LoadFish* mutable_load_fish(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >*
-      mutable_load_fish();
-  private:
-  const ::LoadFish& _internal_load_fish(int index) const;
-  ::LoadFish* _internal_add_load_fish();
-  public:
-  const ::LoadFish& load_fish(int index) const;
-  ::LoadFish* add_load_fish();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >&
-      load_fish() const;
-
-  // int32 yu_chao_id = 1;
-  void clear_yu_chao_id();
-  ::PROTOBUF_NAMESPACE_ID::int32 yu_chao_id() const;
-  void set_yu_chao_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_yu_chao_id() const;
-  void _internal_set_yu_chao_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:CMD_S_PlayerYCEnter)
- private:
-  class _Internal;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish > load_fish_;
-  ::PROTOBUF_NAMESPACE_ID::int32 yu_chao_id_;
-  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  friend struct ::TableStruct_WPBY_2eproto;
-};
-// -------------------------------------------------------------------
-
 class FishDeadInfo PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:FishDeadInfo) */ {
  public:
@@ -3547,7 +4071,7 @@ class FishDeadInfo PROTOBUF_FINAL :
                &_FishDeadInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    19;
+    23;
 
   friend void swap(FishDeadInfo& a, FishDeadInfo& b) {
     a.Swap(&b);
@@ -3694,7 +4218,7 @@ class CMD_S_FishDead PROTOBUF_FINAL :
                &_CMD_S_FishDead_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    20;
+    24;
 
   friend void swap(CMD_S_FishDead& a, CMD_S_FishDead& b) {
     a.Swap(&b);
@@ -3766,9 +4290,8 @@ class CMD_S_FishDead PROTOBUF_FINAL :
 
   enum : int {
     kFishFieldNumber = 2,
-    kChairIdFieldNumber = 1,
-    kLeiLongOddFieldNumber = 4,
     kScoreFieldNumber = 3,
+    kChairIdFieldNumber = 1,
   };
   // repeated .FishDeadInfo fish = 2;
   int fish_size() const;
@@ -3788,24 +4311,6 @@ class CMD_S_FishDead PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishDeadInfo >&
       fish() const;
 
-  // int32 chair_id = 1;
-  void clear_chair_id();
-  ::PROTOBUF_NAMESPACE_ID::int32 chair_id() const;
-  void set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_chair_id() const;
-  void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 lei_long_odd = 4;
-  void clear_lei_long_odd();
-  ::PROTOBUF_NAMESPACE_ID::int32 lei_long_odd() const;
-  void set_lei_long_odd(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_lei_long_odd() const;
-  void _internal_set_lei_long_odd(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
   // int64 score = 3;
   void clear_score();
   ::PROTOBUF_NAMESPACE_ID::int64 score() const;
@@ -3813,6 +4318,15 @@ class CMD_S_FishDead PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::int64 _internal_score() const;
   void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int32 chair_id = 1;
+  void clear_chair_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_id() const;
+  void set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_chair_id() const;
+  void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:CMD_S_FishDead)
@@ -3823,9 +4337,8 @@ class CMD_S_FishDead PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishDeadInfo > fish_;
-  ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 lei_long_odd_;
   ::PROTOBUF_NAMESPACE_ID::int64 score_;
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_WPBY_2eproto;
 };
@@ -3872,7 +4385,7 @@ class CMD_S_PlayerShoot PROTOBUF_FINAL :
                &_CMD_S_PlayerShoot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    21;
+    25;
 
   friend void swap(CMD_S_PlayerShoot& a, CMD_S_PlayerShoot& b) {
     a.Swap(&b);
@@ -4063,7 +4576,7 @@ class CMD_C_RobotShoot PROTOBUF_FINAL :
                &_CMD_C_RobotShoot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    22;
+    26;
 
   friend void swap(CMD_C_RobotShoot& a, CMD_C_RobotShoot& b) {
     a.Swap(&b);
@@ -4232,7 +4745,7 @@ class CMD_C_PlayerLock PROTOBUF_FINAL :
                &_CMD_C_PlayerLock_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    23;
+    27;
 
   friend void swap(CMD_C_PlayerLock& a, CMD_C_PlayerLock& b) {
     a.Swap(&b);
@@ -4379,7 +4892,7 @@ class CMD_C_JuBuZhaDan PROTOBUF_FINAL :
                &_CMD_C_JuBuZhaDan_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    24;
+    28;
 
   friend void swap(CMD_C_JuBuZhaDan& a, CMD_C_JuBuZhaDan& b) {
     a.Swap(&b);
@@ -4551,7 +5064,7 @@ class CMD_C_TongLeiZhaDan PROTOBUF_FINAL :
                &_CMD_C_TongLeiZhaDan_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    25;
+    29;
 
   friend void swap(CMD_C_TongLeiZhaDan& a, CMD_C_TongLeiZhaDan& b) {
     a.Swap(&b);
@@ -4723,7 +5236,7 @@ class CMD_C_ShuiHuZhuan PROTOBUF_FINAL :
                &_CMD_C_ShuiHuZhuan_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    26;
+    30;
 
   friend void swap(CMD_C_ShuiHuZhuan& a, CMD_C_ShuiHuZhuan& b) {
     a.Swap(&b);
@@ -4895,7 +5408,7 @@ class CMD_C_ChangeBulletLevel PROTOBUF_FINAL :
                &_CMD_C_ChangeBulletLevel_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    27;
+    31;
 
   friend void swap(CMD_C_ChangeBulletLevel& a, CMD_C_ChangeBulletLevel& b) {
     a.Swap(&b);
@@ -5053,7 +5566,7 @@ class Bullet PROTOBUF_FINAL :
                &_Bullet_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    28;
+    32;
 
   friend void swap(Bullet& a, Bullet& b) {
     a.Swap(&b);
@@ -5244,7 +5757,7 @@ class CMD_C_PressShoot PROTOBUF_FINAL :
                &_CMD_C_PressShoot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    29;
+    33;
 
   friend void swap(CMD_C_PressShoot& a, CMD_C_PressShoot& b) {
     a.Swap(&b);
@@ -5422,7 +5935,7 @@ class CMD_C_HitedFish PROTOBUF_FINAL :
                &_CMD_C_HitedFish_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    30;
+    34;
 
   friend void swap(CMD_C_HitedFish& a, CMD_C_HitedFish& b) {
     a.Swap(&b);
@@ -5748,6 +6261,530 @@ inline void CMD_S_PlayerLock::set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) 
 
 // -------------------------------------------------------------------
 
+// FishPoint
+
+// int32 x = 1;
+inline void FishPoint::clear_x() {
+  x_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishPoint::_internal_x() const {
+  return x_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishPoint::x() const {
+  // @@protoc_insertion_point(field_get:FishPoint.x)
+  return _internal_x();
+}
+inline void FishPoint::_internal_set_x(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  x_ = value;
+}
+inline void FishPoint::set_x(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_x(value);
+  // @@protoc_insertion_point(field_set:FishPoint.x)
+}
+
+// int32 y = 2;
+inline void FishPoint::clear_y() {
+  y_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishPoint::_internal_y() const {
+  return y_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishPoint::y() const {
+  // @@protoc_insertion_point(field_get:FishPoint.y)
+  return _internal_y();
+}
+inline void FishPoint::_internal_set_y(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  y_ = value;
+}
+inline void FishPoint::set_y(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_y(value);
+  // @@protoc_insertion_point(field_set:FishPoint.y)
+}
+
+// -------------------------------------------------------------------
+
+// LineInfo
+
+// int32 type = 1;
+inline void LineInfo::clear_type() {
+  type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 LineInfo::_internal_type() const {
+  return type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 LineInfo::type() const {
+  // @@protoc_insertion_point(field_get:LineInfo.type)
+  return _internal_type();
+}
+inline void LineInfo::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  type_ = value;
+}
+inline void LineInfo::set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_type(value);
+  // @@protoc_insertion_point(field_set:LineInfo.type)
+}
+
+// repeated .FishPoint points = 2;
+inline int LineInfo::_internal_points_size() const {
+  return points_.size();
+}
+inline int LineInfo::points_size() const {
+  return _internal_points_size();
+}
+inline void LineInfo::clear_points() {
+  points_.Clear();
+}
+inline ::FishPoint* LineInfo::mutable_points(int index) {
+  // @@protoc_insertion_point(field_mutable:LineInfo.points)
+  return points_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishPoint >*
+LineInfo::mutable_points() {
+  // @@protoc_insertion_point(field_mutable_list:LineInfo.points)
+  return &points_;
+}
+inline const ::FishPoint& LineInfo::_internal_points(int index) const {
+  return points_.Get(index);
+}
+inline const ::FishPoint& LineInfo::points(int index) const {
+  // @@protoc_insertion_point(field_get:LineInfo.points)
+  return _internal_points(index);
+}
+inline ::FishPoint* LineInfo::_internal_add_points() {
+  return points_.Add();
+}
+inline ::FishPoint* LineInfo::add_points() {
+  // @@protoc_insertion_point(field_add:LineInfo.points)
+  return _internal_add_points();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishPoint >&
+LineInfo::points() const {
+  // @@protoc_insertion_point(field_list:LineInfo.points)
+  return points_;
+}
+
+// -------------------------------------------------------------------
+
+// FishLineInfo
+
+// .LineInfo line = 1;
+inline bool FishLineInfo::_internal_has_line() const {
+  return this != internal_default_instance() && line_ != nullptr;
+}
+inline bool FishLineInfo::has_line() const {
+  return _internal_has_line();
+}
+inline void FishLineInfo::clear_line() {
+  if (GetArena() == nullptr && line_ != nullptr) {
+    delete line_;
+  }
+  line_ = nullptr;
+}
+inline const ::LineInfo& FishLineInfo::_internal_line() const {
+  const ::LineInfo* p = line_;
+  return p != nullptr ? *p : reinterpret_cast<const ::LineInfo&>(
+      ::_LineInfo_default_instance_);
+}
+inline const ::LineInfo& FishLineInfo::line() const {
+  // @@protoc_insertion_point(field_get:FishLineInfo.line)
+  return _internal_line();
+}
+inline void FishLineInfo::unsafe_arena_set_allocated_line(
+    ::LineInfo* line) {
+  if (GetArena() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(line_);
+  }
+  line_ = line;
+  if (line) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:FishLineInfo.line)
+}
+inline ::LineInfo* FishLineInfo::release_line() {
+  
+  ::LineInfo* temp = line_;
+  line_ = nullptr;
+  if (GetArena() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+  return temp;
+}
+inline ::LineInfo* FishLineInfo::unsafe_arena_release_line() {
+  // @@protoc_insertion_point(field_release:FishLineInfo.line)
+  
+  ::LineInfo* temp = line_;
+  line_ = nullptr;
+  return temp;
+}
+inline ::LineInfo* FishLineInfo::_internal_mutable_line() {
+  
+  if (line_ == nullptr) {
+    auto* p = CreateMaybeMessage<::LineInfo>(GetArena());
+    line_ = p;
+  }
+  return line_;
+}
+inline ::LineInfo* FishLineInfo::mutable_line() {
+  // @@protoc_insertion_point(field_mutable:FishLineInfo.line)
+  return _internal_mutable_line();
+}
+inline void FishLineInfo::set_allocated_line(::LineInfo* line) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  if (message_arena == nullptr) {
+    delete line_;
+  }
+  if (line) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(line);
+    if (message_arena != submessage_arena) {
+      line = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, line, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  line_ = line;
+  // @@protoc_insertion_point(field_set_allocated:FishLineInfo.line)
+}
+
+// int32 kind = 2;
+inline void FishLineInfo::clear_kind() {
+  kind_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishLineInfo::_internal_kind() const {
+  return kind_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishLineInfo::kind() const {
+  // @@protoc_insertion_point(field_get:FishLineInfo.kind)
+  return _internal_kind();
+}
+inline void FishLineInfo::_internal_set_kind(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  kind_ = value;
+}
+inline void FishLineInfo::set_kind(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_kind(value);
+  // @@protoc_insertion_point(field_set:FishLineInfo.kind)
+}
+
+// int32 start_delay_time = 3;
+inline void FishLineInfo::clear_start_delay_time() {
+  start_delay_time_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishLineInfo::_internal_start_delay_time() const {
+  return start_delay_time_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishLineInfo::start_delay_time() const {
+  // @@protoc_insertion_point(field_get:FishLineInfo.start_delay_time)
+  return _internal_start_delay_time();
+}
+inline void FishLineInfo::_internal_set_start_delay_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  start_delay_time_ = value;
+}
+inline void FishLineInfo::set_start_delay_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_start_delay_time(value);
+  // @@protoc_insertion_point(field_set:FishLineInfo.start_delay_time)
+}
+
+// int32 delay_time = 4;
+inline void FishLineInfo::clear_delay_time() {
+  delay_time_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishLineInfo::_internal_delay_time() const {
+  return delay_time_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishLineInfo::delay_time() const {
+  // @@protoc_insertion_point(field_get:FishLineInfo.delay_time)
+  return _internal_delay_time();
+}
+inline void FishLineInfo::_internal_set_delay_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  delay_time_ = value;
+}
+inline void FishLineInfo::set_delay_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_delay_time(value);
+  // @@protoc_insertion_point(field_set:FishLineInfo.delay_time)
+}
+
+// int32 fish_num = 5;
+inline void FishLineInfo::clear_fish_num() {
+  fish_num_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishLineInfo::_internal_fish_num() const {
+  return fish_num_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishLineInfo::fish_num() const {
+  // @@protoc_insertion_point(field_get:FishLineInfo.fish_num)
+  return _internal_fish_num();
+}
+inline void FishLineInfo::_internal_set_fish_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  fish_num_ = value;
+}
+inline void FishLineInfo::set_fish_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_fish_num(value);
+  // @@protoc_insertion_point(field_set:FishLineInfo.fish_num)
+}
+
+// int32 lived_time = 6;
+inline void FishLineInfo::clear_lived_time() {
+  lived_time_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishLineInfo::_internal_lived_time() const {
+  return lived_time_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishLineInfo::lived_time() const {
+  // @@protoc_insertion_point(field_get:FishLineInfo.lived_time)
+  return _internal_lived_time();
+}
+inline void FishLineInfo::_internal_set_lived_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  lived_time_ = value;
+}
+inline void FishLineInfo::set_lived_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_lived_time(value);
+  // @@protoc_insertion_point(field_set:FishLineInfo.lived_time)
+}
+
+// -------------------------------------------------------------------
+
+// FishTide
+
+// int64 fish_tide_start_time = 1;
+inline void FishTide::clear_fish_tide_start_time() {
+  fish_tide_start_time_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 FishTide::_internal_fish_tide_start_time() const {
+  return fish_tide_start_time_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 FishTide::fish_tide_start_time() const {
+  // @@protoc_insertion_point(field_get:FishTide.fish_tide_start_time)
+  return _internal_fish_tide_start_time();
+}
+inline void FishTide::_internal_set_fish_tide_start_time(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  fish_tide_start_time_ = value;
+}
+inline void FishTide::set_fish_tide_start_time(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_fish_tide_start_time(value);
+  // @@protoc_insertion_point(field_set:FishTide.fish_tide_start_time)
+}
+
+// int64 fish_tide_cur_time = 2;
+inline void FishTide::clear_fish_tide_cur_time() {
+  fish_tide_cur_time_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 FishTide::_internal_fish_tide_cur_time() const {
+  return fish_tide_cur_time_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 FishTide::fish_tide_cur_time() const {
+  // @@protoc_insertion_point(field_get:FishTide.fish_tide_cur_time)
+  return _internal_fish_tide_cur_time();
+}
+inline void FishTide::_internal_set_fish_tide_cur_time(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  fish_tide_cur_time_ = value;
+}
+inline void FishTide::set_fish_tide_cur_time(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_fish_tide_cur_time(value);
+  // @@protoc_insertion_point(field_set:FishTide.fish_tide_cur_time)
+}
+
+// int32 fish_tide_turn = 3;
+inline void FishTide::clear_fish_tide_turn() {
+  fish_tide_turn_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishTide::_internal_fish_tide_turn() const {
+  return fish_tide_turn_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishTide::fish_tide_turn() const {
+  // @@protoc_insertion_point(field_get:FishTide.fish_tide_turn)
+  return _internal_fish_tide_turn();
+}
+inline void FishTide::_internal_set_fish_tide_turn(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  fish_tide_turn_ = value;
+}
+inline void FishTide::set_fish_tide_turn(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_fish_tide_turn(value);
+  // @@protoc_insertion_point(field_set:FishTide.fish_tide_turn)
+}
+
+// int32 line_num = 4;
+inline void FishTide::clear_line_num() {
+  line_num_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishTide::_internal_line_num() const {
+  return line_num_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishTide::line_num() const {
+  // @@protoc_insertion_point(field_get:FishTide.line_num)
+  return _internal_line_num();
+}
+inline void FishTide::_internal_set_line_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  line_num_ = value;
+}
+inline void FishTide::set_line_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_line_num(value);
+  // @@protoc_insertion_point(field_set:FishTide.line_num)
+}
+
+// repeated .FishLineInfo fish_lines = 5;
+inline int FishTide::_internal_fish_lines_size() const {
+  return fish_lines_.size();
+}
+inline int FishTide::fish_lines_size() const {
+  return _internal_fish_lines_size();
+}
+inline void FishTide::clear_fish_lines() {
+  fish_lines_.Clear();
+}
+inline ::FishLineInfo* FishTide::mutable_fish_lines(int index) {
+  // @@protoc_insertion_point(field_mutable:FishTide.fish_lines)
+  return fish_lines_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishLineInfo >*
+FishTide::mutable_fish_lines() {
+  // @@protoc_insertion_point(field_mutable_list:FishTide.fish_lines)
+  return &fish_lines_;
+}
+inline const ::FishLineInfo& FishTide::_internal_fish_lines(int index) const {
+  return fish_lines_.Get(index);
+}
+inline const ::FishLineInfo& FishTide::fish_lines(int index) const {
+  // @@protoc_insertion_point(field_get:FishTide.fish_lines)
+  return _internal_fish_lines(index);
+}
+inline ::FishLineInfo* FishTide::_internal_add_fish_lines() {
+  return fish_lines_.Add();
+}
+inline ::FishLineInfo* FishTide::add_fish_lines() {
+  // @@protoc_insertion_point(field_add:FishTide.fish_lines)
+  return _internal_add_fish_lines();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishLineInfo >&
+FishTide::fish_lines() const {
+  // @@protoc_insertion_point(field_list:FishTide.fish_lines)
+  return fish_lines_;
+}
+
+// -------------------------------------------------------------------
+
+// CMD_S_YuChaoCome
+
+// int32 yu_chao_id = 1;
+inline void CMD_S_YuChaoCome::clear_yu_chao_id() {
+  yu_chao_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_YuChaoCome::_internal_yu_chao_id() const {
+  return yu_chao_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_YuChaoCome::yu_chao_id() const {
+  // @@protoc_insertion_point(field_get:CMD_S_YuChaoCome.yu_chao_id)
+  return _internal_yu_chao_id();
+}
+inline void CMD_S_YuChaoCome::_internal_set_yu_chao_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  yu_chao_id_ = value;
+}
+inline void CMD_S_YuChaoCome::set_yu_chao_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_yu_chao_id(value);
+  // @@protoc_insertion_point(field_set:CMD_S_YuChaoCome.yu_chao_id)
+}
+
+// .FishTide fish_tide = 2;
+inline bool CMD_S_YuChaoCome::_internal_has_fish_tide() const {
+  return this != internal_default_instance() && fish_tide_ != nullptr;
+}
+inline bool CMD_S_YuChaoCome::has_fish_tide() const {
+  return _internal_has_fish_tide();
+}
+inline void CMD_S_YuChaoCome::clear_fish_tide() {
+  if (GetArena() == nullptr && fish_tide_ != nullptr) {
+    delete fish_tide_;
+  }
+  fish_tide_ = nullptr;
+}
+inline const ::FishTide& CMD_S_YuChaoCome::_internal_fish_tide() const {
+  const ::FishTide* p = fish_tide_;
+  return p != nullptr ? *p : reinterpret_cast<const ::FishTide&>(
+      ::_FishTide_default_instance_);
+}
+inline const ::FishTide& CMD_S_YuChaoCome::fish_tide() const {
+  // @@protoc_insertion_point(field_get:CMD_S_YuChaoCome.fish_tide)
+  return _internal_fish_tide();
+}
+inline void CMD_S_YuChaoCome::unsafe_arena_set_allocated_fish_tide(
+    ::FishTide* fish_tide) {
+  if (GetArena() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(fish_tide_);
+  }
+  fish_tide_ = fish_tide;
+  if (fish_tide) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:CMD_S_YuChaoCome.fish_tide)
+}
+inline ::FishTide* CMD_S_YuChaoCome::release_fish_tide() {
+  
+  ::FishTide* temp = fish_tide_;
+  fish_tide_ = nullptr;
+  if (GetArena() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+  return temp;
+}
+inline ::FishTide* CMD_S_YuChaoCome::unsafe_arena_release_fish_tide() {
+  // @@protoc_insertion_point(field_release:CMD_S_YuChaoCome.fish_tide)
+  
+  ::FishTide* temp = fish_tide_;
+  fish_tide_ = nullptr;
+  return temp;
+}
+inline ::FishTide* CMD_S_YuChaoCome::_internal_mutable_fish_tide() {
+  
+  if (fish_tide_ == nullptr) {
+    auto* p = CreateMaybeMessage<::FishTide>(GetArena());
+    fish_tide_ = p;
+  }
+  return fish_tide_;
+}
+inline ::FishTide* CMD_S_YuChaoCome::mutable_fish_tide() {
+  // @@protoc_insertion_point(field_mutable:CMD_S_YuChaoCome.fish_tide)
+  return _internal_mutable_fish_tide();
+}
+inline void CMD_S_YuChaoCome::set_allocated_fish_tide(::FishTide* fish_tide) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  if (message_arena == nullptr) {
+    delete fish_tide_;
+  }
+  if (fish_tide) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(fish_tide);
+    if (message_arena != submessage_arena) {
+      fish_tide = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, fish_tide, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  fish_tide_ = fish_tide;
+  // @@protoc_insertion_point(field_set_allocated:CMD_S_YuChaoCome.fish_tide)
+}
+
+// -------------------------------------------------------------------
+
 // CMD_S_ShootLK
 
 // int32 chair_id = 1;
@@ -5828,86 +6865,6 @@ inline void CMD_S_ShootLK::_internal_set_multiple(::PROTOBUF_NAMESPACE_ID::int32
 inline void CMD_S_ShootLK::set_multiple(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_multiple(value);
   // @@protoc_insertion_point(field_set:CMD_S_ShootLK.multiple)
-}
-
-// bool is_deaded = 5;
-inline void CMD_S_ShootLK::clear_is_deaded() {
-  is_deaded_ = false;
-}
-inline bool CMD_S_ShootLK::_internal_is_deaded() const {
-  return is_deaded_;
-}
-inline bool CMD_S_ShootLK::is_deaded() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ShootLK.is_deaded)
-  return _internal_is_deaded();
-}
-inline void CMD_S_ShootLK::_internal_set_is_deaded(bool value) {
-  
-  is_deaded_ = value;
-}
-inline void CMD_S_ShootLK::set_is_deaded(bool value) {
-  _internal_set_is_deaded(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ShootLK.is_deaded)
-}
-
-// int32 jbp_stage = 6;
-inline void CMD_S_ShootLK::clear_jbp_stage() {
-  jbp_stage_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShootLK::_internal_jbp_stage() const {
-  return jbp_stage_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShootLK::jbp_stage() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ShootLK.jbp_stage)
-  return _internal_jbp_stage();
-}
-inline void CMD_S_ShootLK::_internal_set_jbp_stage(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  jbp_stage_ = value;
-}
-inline void CMD_S_ShootLK::set_jbp_stage(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_jbp_stage(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ShootLK.jbp_stage)
-}
-
-// int32 cur_lk_score = 7;
-inline void CMD_S_ShootLK::clear_cur_lk_score() {
-  cur_lk_score_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShootLK::_internal_cur_lk_score() const {
-  return cur_lk_score_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShootLK::cur_lk_score() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ShootLK.cur_lk_score)
-  return _internal_cur_lk_score();
-}
-inline void CMD_S_ShootLK::_internal_set_cur_lk_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  cur_lk_score_ = value;
-}
-inline void CMD_S_ShootLK::set_cur_lk_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_cur_lk_score(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ShootLK.cur_lk_score)
-}
-
-// int64 cur_player_score = 8;
-inline void CMD_S_ShootLK::clear_cur_player_score() {
-  cur_player_score_ = PROTOBUF_LONGLONG(0);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 CMD_S_ShootLK::_internal_cur_player_score() const {
-  return cur_player_score_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 CMD_S_ShootLK::cur_player_score() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ShootLK.cur_player_score)
-  return _internal_cur_player_score();
-}
-inline void CMD_S_ShootLK::_internal_set_cur_player_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  
-  cur_player_score_ = value;
-}
-inline void CMD_S_ShootLK::set_cur_player_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_cur_player_score(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ShootLK.cur_player_score)
 }
 
 // -------------------------------------------------------------------
@@ -6146,67 +7103,46 @@ inline void LoadFish::set_continue_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:LoadFish.continue_time)
 }
 
-// int32 road = 5;
-inline void LoadFish::clear_road() {
-  road_ = 0;
+// repeated .FishPoint fish_point = 5;
+inline int LoadFish::_internal_fish_point_size() const {
+  return fish_point_.size();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::_internal_road() const {
-  return road_;
+inline int LoadFish::fish_point_size() const {
+  return _internal_fish_point_size();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::road() const {
-  // @@protoc_insertion_point(field_get:LoadFish.road)
-  return _internal_road();
+inline void LoadFish::clear_fish_point() {
+  fish_point_.Clear();
 }
-inline void LoadFish::_internal_set_road(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  road_ = value;
+inline ::FishPoint* LoadFish::mutable_fish_point(int index) {
+  // @@protoc_insertion_point(field_mutable:LoadFish.fish_point)
+  return fish_point_.Mutable(index);
 }
-inline void LoadFish::set_road(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_road(value);
-  // @@protoc_insertion_point(field_set:LoadFish.road)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishPoint >*
+LoadFish::mutable_fish_point() {
+  // @@protoc_insertion_point(field_mutable_list:LoadFish.fish_point)
+  return &fish_point_;
 }
-
-// int32 group_id = 6;
-inline void LoadFish::clear_group_id() {
-  group_id_ = 0;
+inline const ::FishPoint& LoadFish::_internal_fish_point(int index) const {
+  return fish_point_.Get(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::_internal_group_id() const {
-  return group_id_;
+inline const ::FishPoint& LoadFish::fish_point(int index) const {
+  // @@protoc_insertion_point(field_get:LoadFish.fish_point)
+  return _internal_fish_point(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::group_id() const {
-  // @@protoc_insertion_point(field_get:LoadFish.group_id)
-  return _internal_group_id();
+inline ::FishPoint* LoadFish::_internal_add_fish_point() {
+  return fish_point_.Add();
 }
-inline void LoadFish::_internal_set_group_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  group_id_ = value;
+inline ::FishPoint* LoadFish::add_fish_point() {
+  // @@protoc_insertion_point(field_add:LoadFish.fish_point)
+  return _internal_add_fish_point();
 }
-inline void LoadFish::set_group_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_group_id(value);
-  // @@protoc_insertion_point(field_set:LoadFish.group_id)
-}
-
-// int32 group_no = 7;
-inline void LoadFish::clear_group_no() {
-  group_no_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::_internal_group_no() const {
-  return group_no_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::group_no() const {
-  // @@protoc_insertion_point(field_get:LoadFish.group_no)
-  return _internal_group_no();
-}
-inline void LoadFish::_internal_set_group_no(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  group_no_ = value;
-}
-inline void LoadFish::set_group_no(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_group_no(value);
-  // @@protoc_insertion_point(field_set:LoadFish.group_no)
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishPoint >&
+LoadFish::fish_point() const {
+  // @@protoc_insertion_point(field_list:LoadFish.fish_point)
+  return fish_point_;
 }
 
-// int32 now_time = 8;
+// int32 now_time = 6;
 inline void LoadFish::clear_now_time() {
   now_time_ = 0;
 }
@@ -6226,7 +7162,7 @@ inline void LoadFish::set_now_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:LoadFish.now_time)
 }
 
-// int32 mul = 9;
+// int32 mul = 7;
 inline void LoadFish::clear_mul() {
   mul_ = 0;
 }
@@ -6244,106 +7180,6 @@ inline void LoadFish::_internal_set_mul(::PROTOBUF_NAMESPACE_ID::int32 value) {
 inline void LoadFish::set_mul(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_mul(value);
   // @@protoc_insertion_point(field_set:LoadFish.mul)
-}
-
-// int32 stage = 10;
-inline void LoadFish::clear_stage() {
-  stage_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::_internal_stage() const {
-  return stage_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::stage() const {
-  // @@protoc_insertion_point(field_get:LoadFish.stage)
-  return _internal_stage();
-}
-inline void LoadFish::_internal_set_stage(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  stage_ = value;
-}
-inline void LoadFish::set_stage(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_stage(value);
-  // @@protoc_insertion_point(field_set:LoadFish.stage)
-}
-
-// int32 is_aced = 11;
-inline void LoadFish::clear_is_aced() {
-  is_aced_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::_internal_is_aced() const {
-  return is_aced_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::is_aced() const {
-  // @@protoc_insertion_point(field_get:LoadFish.is_aced)
-  return _internal_is_aced();
-}
-inline void LoadFish::_internal_set_is_aced(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  is_aced_ = value;
-}
-inline void LoadFish::set_is_aced(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_is_aced(value);
-  // @@protoc_insertion_point(field_set:LoadFish.is_aced)
-}
-
-// int32 jbp_stage = 12;
-inline void LoadFish::clear_jbp_stage() {
-  jbp_stage_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::_internal_jbp_stage() const {
-  return jbp_stage_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::jbp_stage() const {
-  // @@protoc_insertion_point(field_get:LoadFish.jbp_stage)
-  return _internal_jbp_stage();
-}
-inline void LoadFish::_internal_set_jbp_stage(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  jbp_stage_ = value;
-}
-inline void LoadFish::set_jbp_stage(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_jbp_stage(value);
-  // @@protoc_insertion_point(field_set:LoadFish.jbp_stage)
-}
-
-// int32 lk_mul = 13;
-inline void LoadFish::clear_lk_mul() {
-  lk_mul_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::_internal_lk_mul() const {
-  return lk_mul_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::lk_mul() const {
-  // @@protoc_insertion_point(field_get:LoadFish.lk_mul)
-  return _internal_lk_mul();
-}
-inline void LoadFish::_internal_set_lk_mul(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  lk_mul_ = value;
-}
-inline void LoadFish::set_lk_mul(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_lk_mul(value);
-  // @@protoc_insertion_point(field_set:LoadFish.lk_mul)
-}
-
-// int32 lk_score = 14;
-inline void LoadFish::clear_lk_score() {
-  lk_score_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::_internal_lk_score() const {
-  return lk_score_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::lk_score() const {
-  // @@protoc_insertion_point(field_get:LoadFish.lk_score)
-  return _internal_lk_score();
-}
-inline void LoadFish::_internal_set_lk_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  lk_score_ = value;
-}
-inline void LoadFish::set_lk_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_lk_score(value);
-  // @@protoc_insertion_point(field_set:LoadFish.lk_score)
 }
 
 // -------------------------------------------------------------------
@@ -6515,106 +7351,66 @@ inline void CMD_S_DaSiXi::set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
 
 // -------------------------------------------------------------------
 
-// CMD_S_DaJiangZhangYu
+// CMD_S_DaSanYuan
 
 // int32 id = 1;
-inline void CMD_S_DaJiangZhangYu::clear_id() {
+inline void CMD_S_DaSanYuan::clear_id() {
   id_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaJiangZhangYu::_internal_id() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaSanYuan::_internal_id() const {
   return id_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaJiangZhangYu::id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_DaJiangZhangYu.id)
+inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaSanYuan::id() const {
+  // @@protoc_insertion_point(field_get:CMD_S_DaSanYuan.id)
   return _internal_id();
 }
-inline void CMD_S_DaJiangZhangYu::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void CMD_S_DaSanYuan::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   id_ = value;
 }
-inline void CMD_S_DaJiangZhangYu::set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void CMD_S_DaSanYuan::set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_DaJiangZhangYu.id)
+  // @@protoc_insertion_point(field_set:CMD_S_DaSanYuan.id)
 }
 
 // int32 chair_id = 2;
-inline void CMD_S_DaJiangZhangYu::clear_chair_id() {
+inline void CMD_S_DaSanYuan::clear_chair_id() {
   chair_id_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaJiangZhangYu::_internal_chair_id() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaSanYuan::_internal_chair_id() const {
   return chair_id_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaJiangZhangYu::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_DaJiangZhangYu.chair_id)
+inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaSanYuan::chair_id() const {
+  // @@protoc_insertion_point(field_get:CMD_S_DaSanYuan.chair_id)
   return _internal_chair_id();
 }
-inline void CMD_S_DaJiangZhangYu::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void CMD_S_DaSanYuan::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   chair_id_ = value;
 }
-inline void CMD_S_DaJiangZhangYu::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void CMD_S_DaSanYuan::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_DaJiangZhangYu.chair_id)
+  // @@protoc_insertion_point(field_set:CMD_S_DaSanYuan.chair_id)
 }
 
-// int32 odd1 = 3;
-inline void CMD_S_DaJiangZhangYu::clear_odd1() {
-  odd1_ = 0;
+// int32 score = 3;
+inline void CMD_S_DaSanYuan::clear_score() {
+  score_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaJiangZhangYu::_internal_odd1() const {
-  return odd1_;
+inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaSanYuan::_internal_score() const {
+  return score_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaJiangZhangYu::odd1() const {
-  // @@protoc_insertion_point(field_get:CMD_S_DaJiangZhangYu.odd1)
-  return _internal_odd1();
+inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaSanYuan::score() const {
+  // @@protoc_insertion_point(field_get:CMD_S_DaSanYuan.score)
+  return _internal_score();
 }
-inline void CMD_S_DaJiangZhangYu::_internal_set_odd1(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void CMD_S_DaSanYuan::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
-  odd1_ = value;
+  score_ = value;
 }
-inline void CMD_S_DaJiangZhangYu::set_odd1(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_odd1(value);
-  // @@protoc_insertion_point(field_set:CMD_S_DaJiangZhangYu.odd1)
-}
-
-// int32 odd2 = 4;
-inline void CMD_S_DaJiangZhangYu::clear_odd2() {
-  odd2_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaJiangZhangYu::_internal_odd2() const {
-  return odd2_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaJiangZhangYu::odd2() const {
-  // @@protoc_insertion_point(field_get:CMD_S_DaJiangZhangYu.odd2)
-  return _internal_odd2();
-}
-inline void CMD_S_DaJiangZhangYu::_internal_set_odd2(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  odd2_ = value;
-}
-inline void CMD_S_DaJiangZhangYu::set_odd2(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_odd2(value);
-  // @@protoc_insertion_point(field_set:CMD_S_DaJiangZhangYu.odd2)
-}
-
-// int32 odd3 = 5;
-inline void CMD_S_DaJiangZhangYu::clear_odd3() {
-  odd3_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaJiangZhangYu::_internal_odd3() const {
-  return odd3_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaJiangZhangYu::odd3() const {
-  // @@protoc_insertion_point(field_get:CMD_S_DaJiangZhangYu.odd3)
-  return _internal_odd3();
-}
-inline void CMD_S_DaJiangZhangYu::_internal_set_odd3(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  odd3_ = value;
-}
-inline void CMD_S_DaJiangZhangYu::set_odd3(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_odd3(value);
-  // @@protoc_insertion_point(field_set:CMD_S_DaJiangZhangYu.odd3)
+inline void CMD_S_DaSanYuan::set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_score(value);
+  // @@protoc_insertion_point(field_set:CMD_S_DaSanYuan.score)
 }
 
 // -------------------------------------------------------------------
@@ -6641,44 +7437,24 @@ inline void CMD_S_ZhongYiTang::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:CMD_S_ZhongYiTang.chair_id)
 }
 
-// int32 add_time = 2;
-inline void CMD_S_ZhongYiTang::clear_add_time() {
-  add_time_ = 0;
+// int32 time = 2;
+inline void CMD_S_ZhongYiTang::clear_time() {
+  time_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ZhongYiTang::_internal_add_time() const {
-  return add_time_;
+inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ZhongYiTang::_internal_time() const {
+  return time_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ZhongYiTang::add_time() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ZhongYiTang.add_time)
-  return _internal_add_time();
+inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ZhongYiTang::time() const {
+  // @@protoc_insertion_point(field_get:CMD_S_ZhongYiTang.time)
+  return _internal_time();
 }
-inline void CMD_S_ZhongYiTang::_internal_set_add_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void CMD_S_ZhongYiTang::_internal_set_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
-  add_time_ = value;
+  time_ = value;
 }
-inline void CMD_S_ZhongYiTang::set_add_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_add_time(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ZhongYiTang.add_time)
-}
-
-// int32 add_mul = 3;
-inline void CMD_S_ZhongYiTang::clear_add_mul() {
-  add_mul_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ZhongYiTang::_internal_add_mul() const {
-  return add_mul_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ZhongYiTang::add_mul() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ZhongYiTang.add_mul)
-  return _internal_add_mul();
-}
-inline void CMD_S_ZhongYiTang::_internal_set_add_mul(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  add_mul_ = value;
-}
-inline void CMD_S_ZhongYiTang::set_add_mul(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_add_mul(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ZhongYiTang.add_mul)
+inline void CMD_S_ZhongYiTang::set_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_time(value);
+  // @@protoc_insertion_point(field_set:CMD_S_ZhongYiTang.time)
 }
 
 // -------------------------------------------------------------------
@@ -6705,98 +7481,24 @@ inline void CMD_S_ShuiHuZhuan::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:CMD_S_ShuiHuZhuan.chair_id)
 }
 
-// repeated int32 fish_id = 2;
-inline int CMD_S_ShuiHuZhuan::_internal_fish_id_size() const {
-  return fish_id_.size();
-}
-inline int CMD_S_ShuiHuZhuan::fish_id_size() const {
-  return _internal_fish_id_size();
-}
+// int32 fish_id = 2;
 inline void CMD_S_ShuiHuZhuan::clear_fish_id() {
-  fish_id_.Clear();
+  fish_id_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShuiHuZhuan::_internal_fish_id(int index) const {
-  return fish_id_.Get(index);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShuiHuZhuan::fish_id(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_S_ShuiHuZhuan.fish_id)
-  return _internal_fish_id(index);
-}
-inline void CMD_S_ShuiHuZhuan::set_fish_id(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
-  fish_id_.Set(index, value);
-  // @@protoc_insertion_point(field_set:CMD_S_ShuiHuZhuan.fish_id)
-}
-inline void CMD_S_ShuiHuZhuan::_internal_add_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  fish_id_.Add(value);
-}
-inline void CMD_S_ShuiHuZhuan::add_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_add_fish_id(value);
-  // @@protoc_insertion_point(field_add:CMD_S_ShuiHuZhuan.fish_id)
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-CMD_S_ShuiHuZhuan::_internal_fish_id() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShuiHuZhuan::_internal_fish_id() const {
   return fish_id_;
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-CMD_S_ShuiHuZhuan::fish_id() const {
-  // @@protoc_insertion_point(field_list:CMD_S_ShuiHuZhuan.fish_id)
+inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShuiHuZhuan::fish_id() const {
+  // @@protoc_insertion_point(field_get:CMD_S_ShuiHuZhuan.fish_id)
   return _internal_fish_id();
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-CMD_S_ShuiHuZhuan::_internal_mutable_fish_id() {
-  return &fish_id_;
+inline void CMD_S_ShuiHuZhuan::_internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  fish_id_ = value;
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-CMD_S_ShuiHuZhuan::mutable_fish_id() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_S_ShuiHuZhuan.fish_id)
-  return _internal_mutable_fish_id();
-}
-
-// repeated int32 fish_score = 3;
-inline int CMD_S_ShuiHuZhuan::_internal_fish_score_size() const {
-  return fish_score_.size();
-}
-inline int CMD_S_ShuiHuZhuan::fish_score_size() const {
-  return _internal_fish_score_size();
-}
-inline void CMD_S_ShuiHuZhuan::clear_fish_score() {
-  fish_score_.Clear();
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShuiHuZhuan::_internal_fish_score(int index) const {
-  return fish_score_.Get(index);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShuiHuZhuan::fish_score(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_S_ShuiHuZhuan.fish_score)
-  return _internal_fish_score(index);
-}
-inline void CMD_S_ShuiHuZhuan::set_fish_score(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
-  fish_score_.Set(index, value);
-  // @@protoc_insertion_point(field_set:CMD_S_ShuiHuZhuan.fish_score)
-}
-inline void CMD_S_ShuiHuZhuan::_internal_add_fish_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  fish_score_.Add(value);
-}
-inline void CMD_S_ShuiHuZhuan::add_fish_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_add_fish_score(value);
-  // @@protoc_insertion_point(field_add:CMD_S_ShuiHuZhuan.fish_score)
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-CMD_S_ShuiHuZhuan::_internal_fish_score() const {
-  return fish_score_;
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-CMD_S_ShuiHuZhuan::fish_score() const {
-  // @@protoc_insertion_point(field_list:CMD_S_ShuiHuZhuan.fish_score)
-  return _internal_fish_score();
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-CMD_S_ShuiHuZhuan::_internal_mutable_fish_score() {
-  return &fish_score_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-CMD_S_ShuiHuZhuan::mutable_fish_score() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_S_ShuiHuZhuan.fish_score)
-  return _internal_mutable_fish_score();
+inline void CMD_S_ShuiHuZhuan::set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_fish_id(value);
+  // @@protoc_insertion_point(field_set:CMD_S_ShuiHuZhuan.fish_id)
 }
 
 // -------------------------------------------------------------------
@@ -7214,69 +7916,6 @@ CMD_S_PlayerEnter::load_fish() const {
 
 // -------------------------------------------------------------------
 
-// CMD_S_PlayerYCEnter
-
-// int32 yu_chao_id = 1;
-inline void CMD_S_PlayerYCEnter::clear_yu_chao_id() {
-  yu_chao_id_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerYCEnter::_internal_yu_chao_id() const {
-  return yu_chao_id_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerYCEnter::yu_chao_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_PlayerYCEnter.yu_chao_id)
-  return _internal_yu_chao_id();
-}
-inline void CMD_S_PlayerYCEnter::_internal_set_yu_chao_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  yu_chao_id_ = value;
-}
-inline void CMD_S_PlayerYCEnter::set_yu_chao_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_yu_chao_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_PlayerYCEnter.yu_chao_id)
-}
-
-// repeated .LoadFish load_fish = 2;
-inline int CMD_S_PlayerYCEnter::_internal_load_fish_size() const {
-  return load_fish_.size();
-}
-inline int CMD_S_PlayerYCEnter::load_fish_size() const {
-  return _internal_load_fish_size();
-}
-inline void CMD_S_PlayerYCEnter::clear_load_fish() {
-  load_fish_.Clear();
-}
-inline ::LoadFish* CMD_S_PlayerYCEnter::mutable_load_fish(int index) {
-  // @@protoc_insertion_point(field_mutable:CMD_S_PlayerYCEnter.load_fish)
-  return load_fish_.Mutable(index);
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >*
-CMD_S_PlayerYCEnter::mutable_load_fish() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_S_PlayerYCEnter.load_fish)
-  return &load_fish_;
-}
-inline const ::LoadFish& CMD_S_PlayerYCEnter::_internal_load_fish(int index) const {
-  return load_fish_.Get(index);
-}
-inline const ::LoadFish& CMD_S_PlayerYCEnter::load_fish(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_S_PlayerYCEnter.load_fish)
-  return _internal_load_fish(index);
-}
-inline ::LoadFish* CMD_S_PlayerYCEnter::_internal_add_load_fish() {
-  return load_fish_.Add();
-}
-inline ::LoadFish* CMD_S_PlayerYCEnter::add_load_fish() {
-  // @@protoc_insertion_point(field_add:CMD_S_PlayerYCEnter.load_fish)
-  return _internal_add_load_fish();
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >&
-CMD_S_PlayerYCEnter::load_fish() const {
-  // @@protoc_insertion_point(field_list:CMD_S_PlayerYCEnter.load_fish)
-  return load_fish_;
-}
-
-// -------------------------------------------------------------------
-
 // FishDeadInfo
 
 // int32 id = 1;
@@ -7400,26 +8039,6 @@ inline void CMD_S_FishDead::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 v
 inline void CMD_S_FishDead::set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_score(value);
   // @@protoc_insertion_point(field_set:CMD_S_FishDead.score)
-}
-
-// int32 lei_long_odd = 4;
-inline void CMD_S_FishDead::clear_lei_long_odd() {
-  lei_long_odd_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_FishDead::_internal_lei_long_odd() const {
-  return lei_long_odd_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_FishDead::lei_long_odd() const {
-  // @@protoc_insertion_point(field_get:CMD_S_FishDead.lei_long_odd)
-  return _internal_lei_long_odd();
-}
-inline void CMD_S_FishDead::_internal_set_lei_long_odd(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  lei_long_odd_ = value;
-}
-inline void CMD_S_FishDead::set_lei_long_odd(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_lei_long_odd(value);
-  // @@protoc_insertion_point(field_set:CMD_S_FishDead.lei_long_odd)
 }
 
 // -------------------------------------------------------------------
@@ -8439,6 +9058,14 @@ CMD_C_HitedFish::mutable_hit_fish() {
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

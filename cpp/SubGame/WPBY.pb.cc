@@ -16,7 +16,11 @@
 #include <google/protobuf/port_def.inc>
 extern PROTOBUF_INTERNAL_EXPORT_WPBY_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Bullet_WPBY_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_WPBY_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_FishDeadInfo_WPBY_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_WPBY_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_LoadFish_WPBY_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_WPBY_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_FishLineInfo_WPBY_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_WPBY_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_FishPoint_WPBY_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_WPBY_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_FishTide_WPBY_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_WPBY_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_LineInfo_WPBY_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_WPBY_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_LoadFish_WPBY_2eproto;
 class CMD_S_RobotShootDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CMD_S_RobotShoot> _instance;
@@ -29,6 +33,26 @@ class CMD_S_PlayerLockDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CMD_S_PlayerLock> _instance;
 } _CMD_S_PlayerLock_default_instance_;
+class FishPointDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<FishPoint> _instance;
+} _FishPoint_default_instance_;
+class LineInfoDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<LineInfo> _instance;
+} _LineInfo_default_instance_;
+class FishLineInfoDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<FishLineInfo> _instance;
+} _FishLineInfo_default_instance_;
+class FishTideDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<FishTide> _instance;
+} _FishTide_default_instance_;
+class CMD_S_YuChaoComeDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CMD_S_YuChaoCome> _instance;
+} _CMD_S_YuChaoCome_default_instance_;
 class CMD_S_ShootLKDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CMD_S_ShootLK> _instance;
@@ -57,10 +81,10 @@ class CMD_S_DaSiXiDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CMD_S_DaSiXi> _instance;
 } _CMD_S_DaSiXi_default_instance_;
-class CMD_S_DaJiangZhangYuDefaultTypeInternal {
+class CMD_S_DaSanYuanDefaultTypeInternal {
  public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CMD_S_DaJiangZhangYu> _instance;
-} _CMD_S_DaJiangZhangYu_default_instance_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CMD_S_DaSanYuan> _instance;
+} _CMD_S_DaSanYuan_default_instance_;
 class CMD_S_ZhongYiTangDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CMD_S_ZhongYiTang> _instance;
@@ -89,10 +113,6 @@ class CMD_S_PlayerEnterDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CMD_S_PlayerEnter> _instance;
 } _CMD_S_PlayerEnter_default_instance_;
-class CMD_S_PlayerYCEnterDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CMD_S_PlayerYCEnter> _instance;
-} _CMD_S_PlayerYCEnter_default_instance_;
 class FishDeadInfoDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<FishDeadInfo> _instance;
@@ -300,18 +320,18 @@ static void InitDefaultsscc_info_CMD_S_ChangeBulletLevel_WPBY_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_CMD_S_ChangeBulletLevel_WPBY_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_CMD_S_ChangeBulletLevel_WPBY_2eproto}, {}};
 
-static void InitDefaultsscc_info_CMD_S_DaJiangZhangYu_WPBY_2eproto() {
+static void InitDefaultsscc_info_CMD_S_DaSanYuan_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_CMD_S_DaJiangZhangYu_default_instance_;
-    new (ptr) ::CMD_S_DaJiangZhangYu();
+    void* ptr = &::_CMD_S_DaSanYuan_default_instance_;
+    new (ptr) ::CMD_S_DaSanYuan();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
 
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_CMD_S_DaJiangZhangYu_WPBY_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_CMD_S_DaJiangZhangYu_WPBY_2eproto}, {}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_CMD_S_DaSanYuan_WPBY_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_CMD_S_DaSanYuan_WPBY_2eproto}, {}};
 
 static void InitDefaultsscc_info_CMD_S_DaSiXi_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -406,20 +426,6 @@ static void InitDefaultsscc_info_CMD_S_PlayerShoot_WPBY_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_CMD_S_PlayerShoot_WPBY_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_CMD_S_PlayerShoot_WPBY_2eproto}, {}};
 
-static void InitDefaultsscc_info_CMD_S_PlayerYCEnter_WPBY_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_CMD_S_PlayerYCEnter_default_instance_;
-    new (ptr) ::CMD_S_PlayerYCEnter();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_CMD_S_PlayerYCEnter_WPBY_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_CMD_S_PlayerYCEnter_WPBY_2eproto}, {
-      &scc_info_LoadFish_WPBY_2eproto.base,}};
-
 static void InitDefaultsscc_info_CMD_S_RobotList_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -498,6 +504,20 @@ static void InitDefaultsscc_info_CMD_S_YiWangDaJin_WPBY_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_CMD_S_YiWangDaJin_WPBY_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_CMD_S_YiWangDaJin_WPBY_2eproto}, {}};
 
+static void InitDefaultsscc_info_CMD_S_YuChaoCome_WPBY_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_CMD_S_YuChaoCome_default_instance_;
+    new (ptr) ::CMD_S_YuChaoCome();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_CMD_S_YuChaoCome_WPBY_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_CMD_S_YuChaoCome_WPBY_2eproto}, {
+      &scc_info_FishTide_WPBY_2eproto.base,}};
+
 static void InitDefaultsscc_info_CMD_S_YuWang_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -538,6 +558,61 @@ static void InitDefaultsscc_info_FishDeadInfo_WPBY_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_FishDeadInfo_WPBY_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_FishDeadInfo_WPBY_2eproto}, {}};
 
+static void InitDefaultsscc_info_FishLineInfo_WPBY_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_FishLineInfo_default_instance_;
+    new (ptr) ::FishLineInfo();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_FishLineInfo_WPBY_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_FishLineInfo_WPBY_2eproto}, {
+      &scc_info_LineInfo_WPBY_2eproto.base,}};
+
+static void InitDefaultsscc_info_FishPoint_WPBY_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_FishPoint_default_instance_;
+    new (ptr) ::FishPoint();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_FishPoint_WPBY_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_FishPoint_WPBY_2eproto}, {}};
+
+static void InitDefaultsscc_info_FishTide_WPBY_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_FishTide_default_instance_;
+    new (ptr) ::FishTide();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_FishTide_WPBY_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_FishTide_WPBY_2eproto}, {
+      &scc_info_FishLineInfo_WPBY_2eproto.base,}};
+
+static void InitDefaultsscc_info_LineInfo_WPBY_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_LineInfo_default_instance_;
+    new (ptr) ::LineInfo();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_LineInfo_WPBY_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_LineInfo_WPBY_2eproto}, {
+      &scc_info_FishPoint_WPBY_2eproto.base,}};
+
 static void InitDefaultsscc_info_LoadFish_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -548,10 +623,11 @@ static void InitDefaultsscc_info_LoadFish_WPBY_2eproto() {
   }
 }
 
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_LoadFish_WPBY_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_LoadFish_WPBY_2eproto}, {}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_LoadFish_WPBY_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_LoadFish_WPBY_2eproto}, {
+      &scc_info_FishPoint_WPBY_2eproto.base,}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_WPBY_2eproto[31];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_WPBY_2eproto[35];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_WPBY_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_WPBY_2eproto = nullptr;
 
@@ -579,6 +655,48 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_WPBY_2eproto::offsets[] PROTOB
   PROTOBUF_FIELD_OFFSET(::CMD_S_PlayerLock, chair_id_),
   PROTOBUF_FIELD_OFFSET(::CMD_S_PlayerLock, fish_id_),
   ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::FishPoint, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::FishPoint, x_),
+  PROTOBUF_FIELD_OFFSET(::FishPoint, y_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::LineInfo, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::LineInfo, type_),
+  PROTOBUF_FIELD_OFFSET(::LineInfo, points_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::FishLineInfo, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::FishLineInfo, line_),
+  PROTOBUF_FIELD_OFFSET(::FishLineInfo, kind_),
+  PROTOBUF_FIELD_OFFSET(::FishLineInfo, start_delay_time_),
+  PROTOBUF_FIELD_OFFSET(::FishLineInfo, delay_time_),
+  PROTOBUF_FIELD_OFFSET(::FishLineInfo, fish_num_),
+  PROTOBUF_FIELD_OFFSET(::FishLineInfo, lived_time_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::FishTide, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::FishTide, fish_tide_start_time_),
+  PROTOBUF_FIELD_OFFSET(::FishTide, fish_tide_cur_time_),
+  PROTOBUF_FIELD_OFFSET(::FishTide, fish_tide_turn_),
+  PROTOBUF_FIELD_OFFSET(::FishTide, line_num_),
+  PROTOBUF_FIELD_OFFSET(::FishTide, fish_lines_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::CMD_S_YuChaoCome, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::CMD_S_YuChaoCome, yu_chao_id_),
+  PROTOBUF_FIELD_OFFSET(::CMD_S_YuChaoCome, fish_tide_),
+  ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::CMD_S_ShootLK, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
@@ -587,10 +705,6 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_WPBY_2eproto::offsets[] PROTOB
   PROTOBUF_FIELD_OFFSET(::CMD_S_ShootLK, id_),
   PROTOBUF_FIELD_OFFSET(::CMD_S_ShootLK, score_),
   PROTOBUF_FIELD_OFFSET(::CMD_S_ShootLK, multiple_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_ShootLK, is_deaded_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_ShootLK, jbp_stage_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_ShootLK, cur_lk_score_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_ShootLK, cur_player_score_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::CMD_S_JuBuZhaDan, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -622,16 +736,9 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_WPBY_2eproto::offsets[] PROTOB
   PROTOBUF_FIELD_OFFSET(::LoadFish, id_),
   PROTOBUF_FIELD_OFFSET(::LoadFish, create_time_),
   PROTOBUF_FIELD_OFFSET(::LoadFish, continue_time_),
-  PROTOBUF_FIELD_OFFSET(::LoadFish, road_),
-  PROTOBUF_FIELD_OFFSET(::LoadFish, group_id_),
-  PROTOBUF_FIELD_OFFSET(::LoadFish, group_no_),
+  PROTOBUF_FIELD_OFFSET(::LoadFish, fish_point_),
   PROTOBUF_FIELD_OFFSET(::LoadFish, now_time_),
   PROTOBUF_FIELD_OFFSET(::LoadFish, mul_),
-  PROTOBUF_FIELD_OFFSET(::LoadFish, stage_),
-  PROTOBUF_FIELD_OFFSET(::LoadFish, is_aced_),
-  PROTOBUF_FIELD_OFFSET(::LoadFish, jbp_stage_),
-  PROTOBUF_FIELD_OFFSET(::LoadFish, lk_mul_),
-  PROTOBUF_FIELD_OFFSET(::LoadFish, lk_score_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::CMD_S_YuWang, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -650,23 +757,20 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_WPBY_2eproto::offsets[] PROTOB
   PROTOBUF_FIELD_OFFSET(::CMD_S_DaSiXi, chair_id_),
   PROTOBUF_FIELD_OFFSET(::CMD_S_DaSiXi, score_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_DaJiangZhangYu, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CMD_S_DaSanYuan, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_DaJiangZhangYu, id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_DaJiangZhangYu, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_DaJiangZhangYu, odd1_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_DaJiangZhangYu, odd2_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_DaJiangZhangYu, odd3_),
+  PROTOBUF_FIELD_OFFSET(::CMD_S_DaSanYuan, id_),
+  PROTOBUF_FIELD_OFFSET(::CMD_S_DaSanYuan, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::CMD_S_DaSanYuan, score_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::CMD_S_ZhongYiTang, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::CMD_S_ZhongYiTang, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_ZhongYiTang, add_time_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_ZhongYiTang, add_mul_),
+  PROTOBUF_FIELD_OFFSET(::CMD_S_ZhongYiTang, time_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::CMD_S_ShuiHuZhuan, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -674,7 +778,6 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_WPBY_2eproto::offsets[] PROTOB
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::CMD_S_ShuiHuZhuan, chair_id_),
   PROTOBUF_FIELD_OFFSET(::CMD_S_ShuiHuZhuan, fish_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_ShuiHuZhuan, fish_score_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::CMD_S_ChangeBulletLevel, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -712,13 +815,6 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_WPBY_2eproto::offsets[] PROTOB
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::CMD_S_PlayerEnter, load_fish_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_PlayerYCEnter, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_PlayerYCEnter, yu_chao_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_PlayerYCEnter, load_fish_),
-  ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::FishDeadInfo, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
@@ -733,7 +829,6 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_WPBY_2eproto::offsets[] PROTOB
   PROTOBUF_FIELD_OFFSET(::CMD_S_FishDead, chair_id_),
   PROTOBUF_FIELD_OFFSET(::CMD_S_FishDead, fish_),
   PROTOBUF_FIELD_OFFSET(::CMD_S_FishDead, score_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_FishDead, lei_long_odd_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::CMD_S_PlayerShoot, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -826,40 +921,49 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 0, -1, sizeof(::CMD_S_RobotShoot)},
   { 9, -1, sizeof(::CMD_S_RobotList)},
   { 15, -1, sizeof(::CMD_S_PlayerLock)},
-  { 22, -1, sizeof(::CMD_S_ShootLK)},
-  { 35, -1, sizeof(::CMD_S_JuBuZhaDan)},
-  { 42, -1, sizeof(::CMD_S_YiWangDaJin)},
-  { 49, -1, sizeof(::CMD_S_TongLeiZhaDan)},
-  { 57, -1, sizeof(::LoadFish)},
-  { 76, -1, sizeof(::CMD_S_YuWang)},
-  { 85, -1, sizeof(::CMD_S_DaSiXi)},
-  { 93, -1, sizeof(::CMD_S_DaJiangZhangYu)},
-  { 103, -1, sizeof(::CMD_S_ZhongYiTang)},
-  { 111, -1, sizeof(::CMD_S_ShuiHuZhuan)},
-  { 119, -1, sizeof(::CMD_S_ChangeBulletLevel)},
-  { 127, -1, sizeof(::CMD_S_CONFIG)},
-  { 136, -1, sizeof(::CMD_S_PlayerGunLevel)},
-  { 143, -1, sizeof(::CMD_S_AddFish)},
-  { 149, -1, sizeof(::CMD_S_PlayerEnter)},
-  { 155, -1, sizeof(::CMD_S_PlayerYCEnter)},
-  { 162, -1, sizeof(::FishDeadInfo)},
-  { 169, -1, sizeof(::CMD_S_FishDead)},
-  { 178, -1, sizeof(::CMD_S_PlayerShoot)},
-  { 189, -1, sizeof(::CMD_C_RobotShoot)},
-  { 198, -1, sizeof(::CMD_C_PlayerLock)},
-  { 205, -1, sizeof(::CMD_C_JuBuZhaDan)},
-  { 213, -1, sizeof(::CMD_C_TongLeiZhaDan)},
-  { 221, -1, sizeof(::CMD_C_ShuiHuZhuan)},
-  { 229, -1, sizeof(::CMD_C_ChangeBulletLevel)},
-  { 237, -1, sizeof(::Bullet)},
-  { 248, -1, sizeof(::CMD_C_PressShoot)},
-  { 257, -1, sizeof(::CMD_C_HitedFish)},
+  { 22, -1, sizeof(::FishPoint)},
+  { 29, -1, sizeof(::LineInfo)},
+  { 36, -1, sizeof(::FishLineInfo)},
+  { 47, -1, sizeof(::FishTide)},
+  { 57, -1, sizeof(::CMD_S_YuChaoCome)},
+  { 64, -1, sizeof(::CMD_S_ShootLK)},
+  { 73, -1, sizeof(::CMD_S_JuBuZhaDan)},
+  { 80, -1, sizeof(::CMD_S_YiWangDaJin)},
+  { 87, -1, sizeof(::CMD_S_TongLeiZhaDan)},
+  { 95, -1, sizeof(::LoadFish)},
+  { 107, -1, sizeof(::CMD_S_YuWang)},
+  { 116, -1, sizeof(::CMD_S_DaSiXi)},
+  { 124, -1, sizeof(::CMD_S_DaSanYuan)},
+  { 132, -1, sizeof(::CMD_S_ZhongYiTang)},
+  { 139, -1, sizeof(::CMD_S_ShuiHuZhuan)},
+  { 146, -1, sizeof(::CMD_S_ChangeBulletLevel)},
+  { 154, -1, sizeof(::CMD_S_CONFIG)},
+  { 163, -1, sizeof(::CMD_S_PlayerGunLevel)},
+  { 170, -1, sizeof(::CMD_S_AddFish)},
+  { 176, -1, sizeof(::CMD_S_PlayerEnter)},
+  { 182, -1, sizeof(::FishDeadInfo)},
+  { 189, -1, sizeof(::CMD_S_FishDead)},
+  { 197, -1, sizeof(::CMD_S_PlayerShoot)},
+  { 208, -1, sizeof(::CMD_C_RobotShoot)},
+  { 217, -1, sizeof(::CMD_C_PlayerLock)},
+  { 224, -1, sizeof(::CMD_C_JuBuZhaDan)},
+  { 232, -1, sizeof(::CMD_C_TongLeiZhaDan)},
+  { 240, -1, sizeof(::CMD_C_ShuiHuZhuan)},
+  { 248, -1, sizeof(::CMD_C_ChangeBulletLevel)},
+  { 256, -1, sizeof(::Bullet)},
+  { 267, -1, sizeof(::CMD_C_PressShoot)},
+  { 276, -1, sizeof(::CMD_C_HitedFish)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_RobotShoot_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_RobotList_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_PlayerLock_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_FishPoint_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_LineInfo_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_FishLineInfo_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_FishTide_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_YuChaoCome_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_ShootLK_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_JuBuZhaDan_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_YiWangDaJin_default_instance_),
@@ -867,7 +971,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_LoadFish_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_YuWang_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_DaSiXi_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_DaJiangZhangYu_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_DaSanYuan_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_ZhongYiTang_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_ShuiHuZhuan_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_ChangeBulletLevel_default_instance_),
@@ -875,7 +979,6 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_PlayerGunLevel_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_AddFish_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_PlayerEnter_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_PlayerYCEnter_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_FishDeadInfo_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_FishDead_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_PlayerShoot_default_instance_),
@@ -895,97 +998,100 @@ const char descriptor_table_protodef_WPBY_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "r_id\030\001 \001(\005\022\r\n\005level\030\002 \001(\005\022\014\n\004type\030\003 \001(\005\022"
   "\017\n\007is_lock\030\004 \001(\005\"#\n\017CMD_S_RobotList\022\020\n\010i"
   "s_robot\030\001 \003(\010\"5\n\020CMD_S_PlayerLock\022\020\n\010cha"
-  "ir_id\030\001 \001(\005\022\017\n\007fish_id\030\002 \001(\005\"\244\001\n\rCMD_S_S"
-  "hootLK\022\020\n\010chair_id\030\001 \001(\005\022\n\n\002id\030\002 \001(\005\022\r\n\005"
-  "score\030\003 \001(\005\022\020\n\010multiple\030\004 \001(\005\022\021\n\tis_dead"
-  "ed\030\005 \001(\010\022\021\n\tjbp_stage\030\006 \001(\005\022\024\n\014cur_lk_sc"
-  "ore\030\007 \001(\005\022\030\n\020cur_player_score\030\010 \001(\003\"5\n\020C"
+  "ir_id\030\001 \001(\005\022\017\n\007fish_id\030\002 \001(\005\"!\n\tFishPoin"
+  "t\022\t\n\001x\030\001 \001(\005\022\t\n\001y\030\002 \001(\005\"4\n\010LineInfo\022\014\n\004t"
+  "ype\030\001 \001(\005\022\032\n\006points\030\002 \003(\0132\n.FishPoint\"\211\001"
+  "\n\014FishLineInfo\022\027\n\004line\030\001 \001(\0132\t.LineInfo\022"
+  "\014\n\004kind\030\002 \001(\005\022\030\n\020start_delay_time\030\003 \001(\005\022"
+  "\022\n\ndelay_time\030\004 \001(\005\022\020\n\010fish_num\030\005 \001(\005\022\022\n"
+  "\nlived_time\030\006 \001(\005\"\221\001\n\010FishTide\022\034\n\024fish_t"
+  "ide_start_time\030\001 \001(\003\022\032\n\022fish_tide_cur_ti"
+  "me\030\002 \001(\003\022\026\n\016fish_tide_turn\030\003 \001(\005\022\020\n\010line"
+  "_num\030\004 \001(\005\022!\n\nfish_lines\030\005 \003(\0132\r.FishLin"
+  "eInfo\"D\n\020CMD_S_YuChaoCome\022\022\n\nyu_chao_id\030"
+  "\001 \001(\005\022\034\n\tfish_tide\030\002 \001(\0132\t.FishTide\"N\n\rC"
+  "MD_S_ShootLK\022\020\n\010chair_id\030\001 \001(\005\022\n\n\002id\030\002 \001"
+  "(\005\022\r\n\005score\030\003 \001(\005\022\020\n\010multiple\030\004 \001(\005\"5\n\020C"
   "MD_S_JuBuZhaDan\022\020\n\010chair_id\030\001 \001(\005\022\017\n\007fis"
   "h_id\030\002 \001(\005\"8\n\021CMD_S_YiWangDaJin\022\020\n\010chair"
   "_id\030\001 \001(\005\022\021\n\tbullet_id\030\002 \001(\005\"F\n\023CMD_S_To"
   "ngLeiZhaDan\022\020\n\010chair_id\030\001 \001(\005\022\017\n\007fish_id"
-  "\030\002 \001(\005\022\014\n\004kind\030\003 \001(\005\"\366\001\n\010LoadFish\022\014\n\004kin"
+  "\030\002 \001(\005\022\014\n\004kind\030\003 \001(\005\"\217\001\n\010LoadFish\022\014\n\004kin"
   "d\030\001 \001(\005\022\n\n\002id\030\002 \001(\005\022\023\n\013create_time\030\003 \001(\005"
-  "\022\025\n\rcontinue_time\030\004 \001(\005\022\014\n\004road\030\005 \001(\005\022\020\n"
-  "\010group_id\030\006 \001(\005\022\020\n\010group_no\030\007 \001(\005\022\020\n\010now"
-  "_time\030\010 \001(\005\022\013\n\003mul\030\t \001(\005\022\r\n\005stage\030\n \001(\005\022"
-  "\017\n\007is_aced\030\013 \001(\005\022\021\n\tjbp_stage\030\014 \001(\005\022\016\n\006l"
-  "k_mul\030\r \001(\005\022\020\n\010lk_score\030\016 \001(\005\"^\n\014CMD_S_Y"
-  "uWang\022\020\n\010chair_id\030\001 \001(\005\022\014\n\004kind\030\002 \001(\005\022\022\n"
-  "\nyu_wang_id\030\003 \001(\005\022\032\n\007fish_id\030\004 \003(\0132\t.Loa"
-  "dFish\";\n\014CMD_S_DaSiXi\022\n\n\002id\030\001 \001(\005\022\020\n\010cha"
-  "ir_id\030\002 \001(\005\022\r\n\005score\030\003 \001(\005\"^\n\024CMD_S_DaJi"
-  "angZhangYu\022\n\n\002id\030\001 \001(\005\022\020\n\010chair_id\030\002 \001(\005"
-  "\022\014\n\004odd1\030\003 \001(\005\022\014\n\004odd2\030\004 \001(\005\022\014\n\004odd3\030\005 \001"
-  "(\005\"H\n\021CMD_S_ZhongYiTang\022\020\n\010chair_id\030\001 \001("
-  "\005\022\020\n\010add_time\030\002 \001(\005\022\017\n\007add_mul\030\003 \001(\005\"J\n\021"
-  "CMD_S_ShuiHuZhuan\022\020\n\010chair_id\030\001 \001(\005\022\017\n\007f"
-  "ish_id\030\002 \003(\005\022\022\n\nfish_score\030\003 \003(\005\"P\n\027CMD_"
-  "S_ChangeBulletLevel\022\020\n\010chair_id\030\001 \001(\005\022\020\n"
-  "\010gun_type\030\002 \001(\005\022\021\n\tgun_level\030\003 \001(\005\"z\n\014CM"
-  "D_S_CONFIG\022\024\n\014bullet_score\030\001 \003(\005\022\035\n\025back"
-  "ground_picture_id\030\002 \001(\005\022\033\n\023player_lock_f"
-  "ish_id\030\003 \003(\005\022\030\n\020player_cur_score\030\004 \003(\003\";"
-  "\n\024CMD_S_PlayerGunLevel\022\021\n\tgun_level\030\001 \003("
-  "\005\022\020\n\010gun_type\030\002 \003(\005\"-\n\rCMD_S_AddFish\022\034\n\t"
-  "load_fish\030\001 \003(\0132\t.LoadFish\"1\n\021CMD_S_Play"
-  "erEnter\022\034\n\tload_fish\030\001 \003(\0132\t.LoadFish\"G\n"
-  "\023CMD_S_PlayerYCEnter\022\022\n\nyu_chao_id\030\001 \001(\005"
-  "\022\034\n\tload_fish\030\002 \003(\0132\t.LoadFish\")\n\014FishDe"
-  "adInfo\022\n\n\002id\030\001 \001(\005\022\r\n\005score\030\002 \001(\005\"d\n\016CMD"
-  "_S_FishDead\022\020\n\010chair_id\030\001 \001(\005\022\033\n\004fish\030\002 "
-  "\003(\0132\r.FishDeadInfo\022\r\n\005score\030\003 \001(\003\022\024\n\014lei"
-  "_long_odd\030\004 \001(\005\"r\n\021CMD_S_PlayerShoot\022\020\n\010"
-  "chair_id\030\001 \001(\005\022\t\n\001x\030\002 \001(\002\022\t\n\001y\030\003 \001(\002\022\r\n\005"
-  "level\030\004 \001(\005\022\014\n\004type\030\005 \001(\005\022\030\n\020player_cur_"
-  "score\030\006 \001(\003\"R\n\020CMD_C_RobotShoot\022\020\n\010chair"
-  "_id\030\001 \001(\005\022\r\n\005level\030\002 \001(\005\022\014\n\004type\030\003 \001(\005\022\017"
-  "\n\007is_lock\030\004 \001(\005\"5\n\020CMD_C_PlayerLock\022\020\n\010c"
-  "hair_id\030\001 \001(\005\022\017\n\007fish_id\030\002 \001(\005\"K\n\020CMD_C_"
-  "JuBuZhaDan\022\020\n\010chair_id\030\001 \001(\005\022\024\n\014te_shu_i"
-  "u_id\030\002 \001(\005\022\017\n\007fish_id\030\003 \003(\005\"N\n\023CMD_C_Ton"
-  "gLeiZhaDan\022\020\n\010chair_id\030\001 \001(\005\022\024\n\014te_shu_i"
-  "u_id\030\002 \001(\005\022\017\n\007fish_id\030\003 \003(\005\"L\n\021CMD_C_Shu"
-  "iHuZhuan\022\020\n\010chair_id\030\001 \001(\005\022\024\n\014te_shu_iu_"
-  "id\030\002 \001(\005\022\017\n\007fish_id\030\003 \003(\005\"P\n\027CMD_C_Chang"
-  "eBulletLevel\022\020\n\010chair_id\030\001 \001(\005\022\020\n\010gun_ty"
-  "pe\030\002 \001(\005\022\021\n\tgun_level\030\003 \001(\005\"e\n\006Bullet\022\n\n"
-  "\002id\030\001 \001(\005\022\023\n\013bullet_kind\030\002 \001(\005\022\016\n\006is_use"
-  "\030\003 \001(\005\022\r\n\005level\030\004 \001(\005\022\014\n\004type\030\005 \001(\005\022\r\n\005c"
-  "hips\030\006 \001(\005\"S\n\020CMD_C_PressShoot\022\t\n\001x\030\001 \001("
-  "\002\022\t\n\001y\030\002 \001(\002\022\020\n\010chair_id\030\003 \001(\005\022\027\n\006bullet"
-  "\030\004 \001(\0132\007.Bullet\"N\n\017CMD_C_HitedFish\022\027\n\006bu"
-  "llet\030\001 \001(\0132\007.Bullet\022\020\n\010chair_id\030\002 \001(\005\022\020\n"
-  "\010hit_fish\030\003 \003(\005*\364\007\n\rEMsgIDSubGame\022\025\n\021Msg"
-  "IDSubGame_Null\020\000\022\024\n\016SUB_S_CanShoot\020\350\376\002\022\025"
-  "\n\017SUB_S_CantShoot\020\351\376\002\022\026\n\020SUB_C_RobotShoo"
-  "t\020\352\376\002\022\026\n\020SUB_S_GAME_START\020\321\206\003\022\024\n\016SUB_S_A"
-  "DD_FISH\020\322\206\003\022\025\n\017SUB_S_FISH_DEAD\020\323\206\003\022\030\n\022SU"
-  "B_S_PLAYER_SHOOT\020\324\206\003\022\022\n\014SUB_S_CONFIG\020\325\206\003"
-  "\022\035\n\027SUB_S_CHANGEBULLETLEVEL\020\326\206\003\022\027\n\021SUB_S"
-  "_SHUIHUZHUAN\020\327\206\003\022\027\n\021SUB_S_ZHONGYITANG\020\330\206"
-  "\003\022\025\n\017SUB_S_DASANYUAN\020\331\206\003\022\022\n\014SUB_S_DASIXI"
-  "\020\332\206\003\022\022\n\014SUB_S_YUWANG\020\333\206\003\022\031\n\023SUB_S_TONGLE"
-  "IZHADAN\020\334\206\003\022\027\n\021SUB_S_YIWANGDAJIN\020\335\206\003\022\026\n\020"
-  "SUB_S_JUBUZHADAN\020\336\206\003\022\030\n\022SUB_S_PLAYER_ENT"
-  "ER\020\337\206\003\022\024\n\016SUB_S_SHOOT_LK\020\340\206\003\022\026\n\020SUB_S_YU"
-  "CHAOCOME\020\341\206\003\022\025\n\017SUB_S_YUCHAOPRE\020\342\206\003\022\032\n\024S"
-  "UB_S_PLAYERGUNLEVEL\020\343\206\003\022\026\n\020SUB_S_PlayerL"
-  "ock\020\344\206\003\022\034\n\026SUB_S_PlayerCancelLock\020\345\206\003\022\025\n"
-  "\017SUB_S_RobotCome\020\346\206\003\022\025\n\017SUB_S_RobotList\020"
-  "\347\206\003\022\026\n\020SUB_S_RobotShoot\020\350\206\003\022\037\n\031SUB_S_Rob"
-  "otMoneyNotEnough\020\351\206\003\022\033\n\025SUB_S_PLAYER_YC_"
-  "ENTER\020\352\206\003\022\035\n\027SUB_S_CHECK_ROBOT_LEAVE\020\353\206\003"
-  "\022\027\n\021SUB_C_PRESS_SHOOT\020\264\207\003\022\026\n\020SUB_C_HITED"
-  "_FISH\020\265\207\003\022\035\n\027SUB_C_CHANGEBULLETLEVEL\020\266\207\003"
-  "\022\027\n\021SUB_C_SHUIHUZHUAN\020\267\207\003\022\022\n\014SUB_C_YUWAN"
-  "G\020\270\207\003\022\031\n\023SUB_C_TONGLEIZHADAN\020\271\207\003\022\026\n\020SUB_"
-  "C_JUBUZHADAN\020\272\207\003\022\026\n\020SUB_C_PlayerLock\020\273\207\003"
-  "\022\034\n\026SUB_C_PlayerCancelLock\020\274\207\003b\006proto3"
+  "\022\025\n\rcontinue_time\030\004 \001(\005\022\036\n\nfish_point\030\005 "
+  "\003(\0132\n.FishPoint\022\020\n\010now_time\030\006 \001(\005\022\013\n\003mul"
+  "\030\007 \001(\005\"^\n\014CMD_S_YuWang\022\020\n\010chair_id\030\001 \001(\005"
+  "\022\014\n\004kind\030\002 \001(\005\022\022\n\nyu_wang_id\030\003 \001(\005\022\032\n\007fi"
+  "sh_id\030\004 \003(\0132\t.LoadFish\";\n\014CMD_S_DaSiXi\022\n"
+  "\n\002id\030\001 \001(\005\022\020\n\010chair_id\030\002 \001(\005\022\r\n\005score\030\003 "
+  "\001(\005\">\n\017CMD_S_DaSanYuan\022\n\n\002id\030\001 \001(\005\022\020\n\010ch"
+  "air_id\030\002 \001(\005\022\r\n\005score\030\003 \001(\005\"3\n\021CMD_S_Zho"
+  "ngYiTang\022\020\n\010chair_id\030\001 \001(\005\022\014\n\004time\030\002 \001(\005"
+  "\"6\n\021CMD_S_ShuiHuZhuan\022\020\n\010chair_id\030\001 \001(\005\022"
+  "\017\n\007fish_id\030\002 \001(\005\"P\n\027CMD_S_ChangeBulletLe"
+  "vel\022\020\n\010chair_id\030\001 \001(\005\022\020\n\010gun_type\030\002 \001(\005\022"
+  "\021\n\tgun_level\030\003 \001(\005\"z\n\014CMD_S_CONFIG\022\024\n\014bu"
+  "llet_score\030\001 \003(\005\022\035\n\025background_picture_i"
+  "d\030\002 \001(\005\022\033\n\023player_lock_fish_id\030\003 \003(\005\022\030\n\020"
+  "player_cur_score\030\004 \003(\003\";\n\024CMD_S_PlayerGu"
+  "nLevel\022\021\n\tgun_level\030\001 \003(\005\022\020\n\010gun_type\030\002 "
+  "\003(\005\"-\n\rCMD_S_AddFish\022\034\n\tload_fish\030\001 \003(\0132"
+  "\t.LoadFish\"1\n\021CMD_S_PlayerEnter\022\034\n\tload_"
+  "fish\030\001 \003(\0132\t.LoadFish\")\n\014FishDeadInfo\022\n\n"
+  "\002id\030\001 \001(\005\022\r\n\005score\030\002 \001(\005\"N\n\016CMD_S_FishDe"
+  "ad\022\020\n\010chair_id\030\001 \001(\005\022\033\n\004fish\030\002 \003(\0132\r.Fis"
+  "hDeadInfo\022\r\n\005score\030\003 \001(\003\"r\n\021CMD_S_Player"
+  "Shoot\022\020\n\010chair_id\030\001 \001(\005\022\t\n\001x\030\002 \001(\002\022\t\n\001y\030"
+  "\003 \001(\002\022\r\n\005level\030\004 \001(\005\022\014\n\004type\030\005 \001(\005\022\030\n\020pl"
+  "ayer_cur_score\030\006 \001(\003\"R\n\020CMD_C_RobotShoot"
+  "\022\020\n\010chair_id\030\001 \001(\005\022\r\n\005level\030\002 \001(\005\022\014\n\004typ"
+  "e\030\003 \001(\005\022\017\n\007is_lock\030\004 \001(\005\"5\n\020CMD_C_Player"
+  "Lock\022\020\n\010chair_id\030\001 \001(\005\022\017\n\007fish_id\030\002 \001(\005\""
+  "K\n\020CMD_C_JuBuZhaDan\022\020\n\010chair_id\030\001 \001(\005\022\024\n"
+  "\014te_shu_iu_id\030\002 \001(\005\022\017\n\007fish_id\030\003 \003(\005\"N\n\023"
+  "CMD_C_TongLeiZhaDan\022\020\n\010chair_id\030\001 \001(\005\022\024\n"
+  "\014te_shu_iu_id\030\002 \001(\005\022\017\n\007fish_id\030\003 \003(\005\"L\n\021"
+  "CMD_C_ShuiHuZhuan\022\020\n\010chair_id\030\001 \001(\005\022\024\n\014t"
+  "e_shu_iu_id\030\002 \001(\005\022\017\n\007fish_id\030\003 \003(\005\"P\n\027CM"
+  "D_C_ChangeBulletLevel\022\020\n\010chair_id\030\001 \001(\005\022"
+  "\020\n\010gun_type\030\002 \001(\005\022\021\n\tgun_level\030\003 \001(\005\"e\n\006"
+  "Bullet\022\n\n\002id\030\001 \001(\005\022\023\n\013bullet_kind\030\002 \001(\005\022"
+  "\016\n\006is_use\030\003 \001(\005\022\r\n\005level\030\004 \001(\005\022\014\n\004type\030\005"
+  " \001(\005\022\r\n\005chips\030\006 \001(\005\"S\n\020CMD_C_PressShoot\022"
+  "\t\n\001x\030\001 \001(\002\022\t\n\001y\030\002 \001(\002\022\020\n\010chair_id\030\003 \001(\005\022"
+  "\027\n\006bullet\030\004 \001(\0132\007.Bullet\"N\n\017CMD_C_HitedF"
+  "ish\022\027\n\006bullet\030\001 \001(\0132\007.Bullet\022\020\n\010chair_id"
+  "\030\002 \001(\005\022\020\n\010hit_fish\030\003 \003(\005*\364\007\n\rEMsgIDSubGa"
+  "me\022\025\n\021MsgIDSubGame_Null\020\000\022\024\n\016SUB_S_CanSh"
+  "oot\020\350\376\002\022\025\n\017SUB_S_CantShoot\020\351\376\002\022\026\n\020SUB_C_"
+  "RobotShoot\020\352\376\002\022\026\n\020SUB_S_GAME_START\020\321\206\003\022\024"
+  "\n\016SUB_S_ADD_FISH\020\322\206\003\022\025\n\017SUB_S_FISH_DEAD\020"
+  "\323\206\003\022\030\n\022SUB_S_PLAYER_SHOOT\020\324\206\003\022\022\n\014SUB_S_C"
+  "ONFIG\020\325\206\003\022\035\n\027SUB_S_CHANGEBULLETLEVEL\020\326\206\003"
+  "\022\027\n\021SUB_S_SHUIHUZHUAN\020\327\206\003\022\027\n\021SUB_S_ZHONG"
+  "YITANG\020\330\206\003\022\025\n\017SUB_S_DASANYUAN\020\331\206\003\022\022\n\014SUB"
+  "_S_DASIXI\020\332\206\003\022\022\n\014SUB_S_YUWANG\020\333\206\003\022\031\n\023SUB"
+  "_S_TONGLEIZHADAN\020\334\206\003\022\027\n\021SUB_S_YIWANGDAJI"
+  "N\020\335\206\003\022\026\n\020SUB_S_JUBUZHADAN\020\336\206\003\022\030\n\022SUB_S_P"
+  "LAYER_ENTER\020\337\206\003\022\024\n\016SUB_S_SHOOT_LK\020\340\206\003\022\026\n"
+  "\020SUB_S_YUCHAOCOME\020\341\206\003\022\025\n\017SUB_S_YUCHAOPRE"
+  "\020\342\206\003\022\032\n\024SUB_S_PLAYERGUNLEVEL\020\343\206\003\022\026\n\020SUB_"
+  "S_PlayerLock\020\344\206\003\022\034\n\026SUB_S_PlayerCancelLo"
+  "ck\020\345\206\003\022\025\n\017SUB_S_RobotCome\020\346\206\003\022\025\n\017SUB_S_R"
+  "obotList\020\347\206\003\022\026\n\020SUB_S_RobotShoot\020\350\206\003\022\037\n\031"
+  "SUB_S_RobotMoneyNotEnough\020\351\206\003\022\033\n\025SUB_S_P"
+  "LAYER_YC_ENTER\020\352\206\003\022\035\n\027SUB_S_CHECK_ROBOT_"
+  "LEAVE\020\353\206\003\022\027\n\021SUB_C_PRESS_SHOOT\020\264\207\003\022\026\n\020SU"
+  "B_C_HITED_FISH\020\265\207\003\022\035\n\027SUB_C_CHANGEBULLET"
+  "LEVEL\020\266\207\003\022\027\n\021SUB_C_SHUIHUZHUAN\020\267\207\003\022\022\n\014SU"
+  "B_C_YUWANG\020\270\207\003\022\031\n\023SUB_C_TONGLEIZHADAN\020\271\207"
+  "\003\022\026\n\020SUB_C_JUBUZHADAN\020\272\207\003\022\026\n\020SUB_C_Playe"
+  "rLock\020\273\207\003\022\034\n\026SUB_C_PlayerCancelLock\020\274\207\003b"
+  "\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_WPBY_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_WPBY_2eproto_sccs[31] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_WPBY_2eproto_sccs[35] = {
   &scc_info_Bullet_WPBY_2eproto.base,
   &scc_info_CMD_C_ChangeBulletLevel_WPBY_2eproto.base,
   &scc_info_CMD_C_HitedFish_WPBY_2eproto.base,
@@ -998,7 +1104,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_WPB
   &scc_info_CMD_S_AddFish_WPBY_2eproto.base,
   &scc_info_CMD_S_CONFIG_WPBY_2eproto.base,
   &scc_info_CMD_S_ChangeBulletLevel_WPBY_2eproto.base,
-  &scc_info_CMD_S_DaJiangZhangYu_WPBY_2eproto.base,
+  &scc_info_CMD_S_DaSanYuan_WPBY_2eproto.base,
   &scc_info_CMD_S_DaSiXi_WPBY_2eproto.base,
   &scc_info_CMD_S_FishDead_WPBY_2eproto.base,
   &scc_info_CMD_S_JuBuZhaDan_WPBY_2eproto.base,
@@ -1006,24 +1112,28 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_WPB
   &scc_info_CMD_S_PlayerGunLevel_WPBY_2eproto.base,
   &scc_info_CMD_S_PlayerLock_WPBY_2eproto.base,
   &scc_info_CMD_S_PlayerShoot_WPBY_2eproto.base,
-  &scc_info_CMD_S_PlayerYCEnter_WPBY_2eproto.base,
   &scc_info_CMD_S_RobotList_WPBY_2eproto.base,
   &scc_info_CMD_S_RobotShoot_WPBY_2eproto.base,
   &scc_info_CMD_S_ShootLK_WPBY_2eproto.base,
   &scc_info_CMD_S_ShuiHuZhuan_WPBY_2eproto.base,
   &scc_info_CMD_S_TongLeiZhaDan_WPBY_2eproto.base,
   &scc_info_CMD_S_YiWangDaJin_WPBY_2eproto.base,
+  &scc_info_CMD_S_YuChaoCome_WPBY_2eproto.base,
   &scc_info_CMD_S_YuWang_WPBY_2eproto.base,
   &scc_info_CMD_S_ZhongYiTang_WPBY_2eproto.base,
   &scc_info_FishDeadInfo_WPBY_2eproto.base,
+  &scc_info_FishLineInfo_WPBY_2eproto.base,
+  &scc_info_FishPoint_WPBY_2eproto.base,
+  &scc_info_FishTide_WPBY_2eproto.base,
+  &scc_info_LineInfo_WPBY_2eproto.base,
   &scc_info_LoadFish_WPBY_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_WPBY_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_WPBY_2eproto = {
-  false, false, descriptor_table_protodef_WPBY_2eproto, "WPBY.proto", 3638,
-  &descriptor_table_WPBY_2eproto_once, descriptor_table_WPBY_2eproto_sccs, descriptor_table_WPBY_2eproto_deps, 31, 0,
+  false, false, descriptor_table_protodef_WPBY_2eproto, "WPBY.proto", 3727,
+  &descriptor_table_WPBY_2eproto_once, descriptor_table_WPBY_2eproto_sccs, descriptor_table_WPBY_2eproto_deps, 35, 0,
   schemas, file_default_instances, TableStruct_WPBY_2eproto::offsets,
-  file_level_metadata_WPBY_2eproto, 31, file_level_enum_descriptors_WPBY_2eproto, file_level_service_descriptors_WPBY_2eproto,
+  file_level_metadata_WPBY_2eproto, 35, file_level_enum_descriptors_WPBY_2eproto, file_level_service_descriptors_WPBY_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -1789,6 +1899,1352 @@ void CMD_S_PlayerLock::InternalSwap(CMD_S_PlayerLock* other) {
 
 // ===================================================================
 
+class FishPoint::_Internal {
+ public:
+};
+
+FishPoint::FishPoint(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:FishPoint)
+}
+FishPoint::FishPoint(const FishPoint& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&x_, &from.x_,
+    static_cast<size_t>(reinterpret_cast<char*>(&y_) -
+    reinterpret_cast<char*>(&x_)) + sizeof(y_));
+  // @@protoc_insertion_point(copy_constructor:FishPoint)
+}
+
+void FishPoint::SharedCtor() {
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&x_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&y_) -
+      reinterpret_cast<char*>(&x_)) + sizeof(y_));
+}
+
+FishPoint::~FishPoint() {
+  // @@protoc_insertion_point(destructor:FishPoint)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void FishPoint::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void FishPoint::ArenaDtor(void* object) {
+  FishPoint* _this = reinterpret_cast< FishPoint* >(object);
+  (void)_this;
+}
+void FishPoint::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void FishPoint::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const FishPoint& FishPoint::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_FishPoint_WPBY_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void FishPoint::Clear() {
+// @@protoc_insertion_point(message_clear_start:FishPoint)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&x_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&y_) -
+      reinterpret_cast<char*>(&x_)) + sizeof(y_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* FishPoint::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 x = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          x_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 y = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          y_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* FishPoint::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:FishPoint)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 x = 1;
+  if (this->x() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_x(), target);
+  }
+
+  // int32 y = 2;
+  if (this->y() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_y(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:FishPoint)
+  return target;
+}
+
+size_t FishPoint::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:FishPoint)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // int32 x = 1;
+  if (this->x() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_x());
+  }
+
+  // int32 y = 2;
+  if (this->y() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_y());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void FishPoint::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:FishPoint)
+  GOOGLE_DCHECK_NE(&from, this);
+  const FishPoint* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<FishPoint>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:FishPoint)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:FishPoint)
+    MergeFrom(*source);
+  }
+}
+
+void FishPoint::MergeFrom(const FishPoint& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:FishPoint)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.x() != 0) {
+    _internal_set_x(from._internal_x());
+  }
+  if (from.y() != 0) {
+    _internal_set_y(from._internal_y());
+  }
+}
+
+void FishPoint::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:FishPoint)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void FishPoint::CopyFrom(const FishPoint& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:FishPoint)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool FishPoint::IsInitialized() const {
+  return true;
+}
+
+void FishPoint::InternalSwap(FishPoint* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(FishPoint, y_)
+      + sizeof(FishPoint::y_)
+      - PROTOBUF_FIELD_OFFSET(FishPoint, x_)>(
+          reinterpret_cast<char*>(&x_),
+          reinterpret_cast<char*>(&other->x_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata FishPoint::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class LineInfo::_Internal {
+ public:
+};
+
+LineInfo::LineInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  points_(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:LineInfo)
+}
+LineInfo::LineInfo(const LineInfo& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      points_(from.points_) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  type_ = from.type_;
+  // @@protoc_insertion_point(copy_constructor:LineInfo)
+}
+
+void LineInfo::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_LineInfo_WPBY_2eproto.base);
+  type_ = 0;
+}
+
+LineInfo::~LineInfo() {
+  // @@protoc_insertion_point(destructor:LineInfo)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void LineInfo::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void LineInfo::ArenaDtor(void* object) {
+  LineInfo* _this = reinterpret_cast< LineInfo* >(object);
+  (void)_this;
+}
+void LineInfo::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void LineInfo::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const LineInfo& LineInfo::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_LineInfo_WPBY_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void LineInfo::Clear() {
+// @@protoc_insertion_point(message_clear_start:LineInfo)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  points_.Clear();
+  type_ = 0;
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* LineInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 type = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated .FishPoint points = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_points(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* LineInfo::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:LineInfo)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 type = 1;
+  if (this->type() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_type(), target);
+  }
+
+  // repeated .FishPoint points = 2;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_points_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(2, this->_internal_points(i), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:LineInfo)
+  return target;
+}
+
+size_t LineInfo::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:LineInfo)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated .FishPoint points = 2;
+  total_size += 1UL * this->_internal_points_size();
+  for (const auto& msg : this->points_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  // int32 type = 1;
+  if (this->type() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_type());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void LineInfo::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:LineInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  const LineInfo* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<LineInfo>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:LineInfo)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:LineInfo)
+    MergeFrom(*source);
+  }
+}
+
+void LineInfo::MergeFrom(const LineInfo& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:LineInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  points_.MergeFrom(from.points_);
+  if (from.type() != 0) {
+    _internal_set_type(from._internal_type());
+  }
+}
+
+void LineInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:LineInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void LineInfo::CopyFrom(const LineInfo& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:LineInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool LineInfo::IsInitialized() const {
+  return true;
+}
+
+void LineInfo::InternalSwap(LineInfo* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  points_.InternalSwap(&other->points_);
+  swap(type_, other->type_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata LineInfo::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class FishLineInfo::_Internal {
+ public:
+  static const ::LineInfo& line(const FishLineInfo* msg);
+};
+
+const ::LineInfo&
+FishLineInfo::_Internal::line(const FishLineInfo* msg) {
+  return *msg->line_;
+}
+FishLineInfo::FishLineInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:FishLineInfo)
+}
+FishLineInfo::FishLineInfo(const FishLineInfo& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_line()) {
+    line_ = new ::LineInfo(*from.line_);
+  } else {
+    line_ = nullptr;
+  }
+  ::memcpy(&kind_, &from.kind_,
+    static_cast<size_t>(reinterpret_cast<char*>(&lived_time_) -
+    reinterpret_cast<char*>(&kind_)) + sizeof(lived_time_));
+  // @@protoc_insertion_point(copy_constructor:FishLineInfo)
+}
+
+void FishLineInfo::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_FishLineInfo_WPBY_2eproto.base);
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&line_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&lived_time_) -
+      reinterpret_cast<char*>(&line_)) + sizeof(lived_time_));
+}
+
+FishLineInfo::~FishLineInfo() {
+  // @@protoc_insertion_point(destructor:FishLineInfo)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void FishLineInfo::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  if (this != internal_default_instance()) delete line_;
+}
+
+void FishLineInfo::ArenaDtor(void* object) {
+  FishLineInfo* _this = reinterpret_cast< FishLineInfo* >(object);
+  (void)_this;
+}
+void FishLineInfo::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void FishLineInfo::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const FishLineInfo& FishLineInfo::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_FishLineInfo_WPBY_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void FishLineInfo::Clear() {
+// @@protoc_insertion_point(message_clear_start:FishLineInfo)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (GetArena() == nullptr && line_ != nullptr) {
+    delete line_;
+  }
+  line_ = nullptr;
+  ::memset(&kind_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&lived_time_) -
+      reinterpret_cast<char*>(&kind_)) + sizeof(lived_time_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* FishLineInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // .LineInfo line = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_line(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 kind = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          kind_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 start_delay_time = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          start_delay_time_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 delay_time = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          delay_time_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 fish_num = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          fish_num_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 lived_time = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+          lived_time_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* FishLineInfo::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:FishLineInfo)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .LineInfo line = 1;
+  if (this->has_line()) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        1, _Internal::line(this), target, stream);
+  }
+
+  // int32 kind = 2;
+  if (this->kind() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_kind(), target);
+  }
+
+  // int32 start_delay_time = 3;
+  if (this->start_delay_time() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_start_delay_time(), target);
+  }
+
+  // int32 delay_time = 4;
+  if (this->delay_time() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_delay_time(), target);
+  }
+
+  // int32 fish_num = 5;
+  if (this->fish_num() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_fish_num(), target);
+  }
+
+  // int32 lived_time = 6;
+  if (this->lived_time() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_lived_time(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:FishLineInfo)
+  return target;
+}
+
+size_t FishLineInfo::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:FishLineInfo)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // .LineInfo line = 1;
+  if (this->has_line()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *line_);
+  }
+
+  // int32 kind = 2;
+  if (this->kind() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_kind());
+  }
+
+  // int32 start_delay_time = 3;
+  if (this->start_delay_time() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_start_delay_time());
+  }
+
+  // int32 delay_time = 4;
+  if (this->delay_time() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_delay_time());
+  }
+
+  // int32 fish_num = 5;
+  if (this->fish_num() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_fish_num());
+  }
+
+  // int32 lived_time = 6;
+  if (this->lived_time() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_lived_time());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void FishLineInfo::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:FishLineInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  const FishLineInfo* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<FishLineInfo>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:FishLineInfo)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:FishLineInfo)
+    MergeFrom(*source);
+  }
+}
+
+void FishLineInfo::MergeFrom(const FishLineInfo& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:FishLineInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.has_line()) {
+    _internal_mutable_line()->::LineInfo::MergeFrom(from._internal_line());
+  }
+  if (from.kind() != 0) {
+    _internal_set_kind(from._internal_kind());
+  }
+  if (from.start_delay_time() != 0) {
+    _internal_set_start_delay_time(from._internal_start_delay_time());
+  }
+  if (from.delay_time() != 0) {
+    _internal_set_delay_time(from._internal_delay_time());
+  }
+  if (from.fish_num() != 0) {
+    _internal_set_fish_num(from._internal_fish_num());
+  }
+  if (from.lived_time() != 0) {
+    _internal_set_lived_time(from._internal_lived_time());
+  }
+}
+
+void FishLineInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:FishLineInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void FishLineInfo::CopyFrom(const FishLineInfo& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:FishLineInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool FishLineInfo::IsInitialized() const {
+  return true;
+}
+
+void FishLineInfo::InternalSwap(FishLineInfo* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(FishLineInfo, lived_time_)
+      + sizeof(FishLineInfo::lived_time_)
+      - PROTOBUF_FIELD_OFFSET(FishLineInfo, line_)>(
+          reinterpret_cast<char*>(&line_),
+          reinterpret_cast<char*>(&other->line_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata FishLineInfo::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class FishTide::_Internal {
+ public:
+};
+
+FishTide::FishTide(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  fish_lines_(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:FishTide)
+}
+FishTide::FishTide(const FishTide& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      fish_lines_(from.fish_lines_) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&fish_tide_start_time_, &from.fish_tide_start_time_,
+    static_cast<size_t>(reinterpret_cast<char*>(&line_num_) -
+    reinterpret_cast<char*>(&fish_tide_start_time_)) + sizeof(line_num_));
+  // @@protoc_insertion_point(copy_constructor:FishTide)
+}
+
+void FishTide::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_FishTide_WPBY_2eproto.base);
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&fish_tide_start_time_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&line_num_) -
+      reinterpret_cast<char*>(&fish_tide_start_time_)) + sizeof(line_num_));
+}
+
+FishTide::~FishTide() {
+  // @@protoc_insertion_point(destructor:FishTide)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void FishTide::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void FishTide::ArenaDtor(void* object) {
+  FishTide* _this = reinterpret_cast< FishTide* >(object);
+  (void)_this;
+}
+void FishTide::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void FishTide::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const FishTide& FishTide::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_FishTide_WPBY_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void FishTide::Clear() {
+// @@protoc_insertion_point(message_clear_start:FishTide)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  fish_lines_.Clear();
+  ::memset(&fish_tide_start_time_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&line_num_) -
+      reinterpret_cast<char*>(&fish_tide_start_time_)) + sizeof(line_num_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* FishTide::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int64 fish_tide_start_time = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          fish_tide_start_time_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 fish_tide_cur_time = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          fish_tide_cur_time_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 fish_tide_turn = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          fish_tide_turn_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 line_num = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          line_num_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated .FishLineInfo fish_lines = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_fish_lines(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<42>(ptr));
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* FishTide::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:FishTide)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int64 fish_tide_start_time = 1;
+  if (this->fish_tide_start_time() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_fish_tide_start_time(), target);
+  }
+
+  // int64 fish_tide_cur_time = 2;
+  if (this->fish_tide_cur_time() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_fish_tide_cur_time(), target);
+  }
+
+  // int32 fish_tide_turn = 3;
+  if (this->fish_tide_turn() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_fish_tide_turn(), target);
+  }
+
+  // int32 line_num = 4;
+  if (this->line_num() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_line_num(), target);
+  }
+
+  // repeated .FishLineInfo fish_lines = 5;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_fish_lines_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(5, this->_internal_fish_lines(i), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:FishTide)
+  return target;
+}
+
+size_t FishTide::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:FishTide)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated .FishLineInfo fish_lines = 5;
+  total_size += 1UL * this->_internal_fish_lines_size();
+  for (const auto& msg : this->fish_lines_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  // int64 fish_tide_start_time = 1;
+  if (this->fish_tide_start_time() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_fish_tide_start_time());
+  }
+
+  // int64 fish_tide_cur_time = 2;
+  if (this->fish_tide_cur_time() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_fish_tide_cur_time());
+  }
+
+  // int32 fish_tide_turn = 3;
+  if (this->fish_tide_turn() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_fish_tide_turn());
+  }
+
+  // int32 line_num = 4;
+  if (this->line_num() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_line_num());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void FishTide::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:FishTide)
+  GOOGLE_DCHECK_NE(&from, this);
+  const FishTide* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<FishTide>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:FishTide)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:FishTide)
+    MergeFrom(*source);
+  }
+}
+
+void FishTide::MergeFrom(const FishTide& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:FishTide)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  fish_lines_.MergeFrom(from.fish_lines_);
+  if (from.fish_tide_start_time() != 0) {
+    _internal_set_fish_tide_start_time(from._internal_fish_tide_start_time());
+  }
+  if (from.fish_tide_cur_time() != 0) {
+    _internal_set_fish_tide_cur_time(from._internal_fish_tide_cur_time());
+  }
+  if (from.fish_tide_turn() != 0) {
+    _internal_set_fish_tide_turn(from._internal_fish_tide_turn());
+  }
+  if (from.line_num() != 0) {
+    _internal_set_line_num(from._internal_line_num());
+  }
+}
+
+void FishTide::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:FishTide)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void FishTide::CopyFrom(const FishTide& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:FishTide)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool FishTide::IsInitialized() const {
+  return true;
+}
+
+void FishTide::InternalSwap(FishTide* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  fish_lines_.InternalSwap(&other->fish_lines_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(FishTide, line_num_)
+      + sizeof(FishTide::line_num_)
+      - PROTOBUF_FIELD_OFFSET(FishTide, fish_tide_start_time_)>(
+          reinterpret_cast<char*>(&fish_tide_start_time_),
+          reinterpret_cast<char*>(&other->fish_tide_start_time_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata FishTide::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class CMD_S_YuChaoCome::_Internal {
+ public:
+  static const ::FishTide& fish_tide(const CMD_S_YuChaoCome* msg);
+};
+
+const ::FishTide&
+CMD_S_YuChaoCome::_Internal::fish_tide(const CMD_S_YuChaoCome* msg) {
+  return *msg->fish_tide_;
+}
+CMD_S_YuChaoCome::CMD_S_YuChaoCome(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:CMD_S_YuChaoCome)
+}
+CMD_S_YuChaoCome::CMD_S_YuChaoCome(const CMD_S_YuChaoCome& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_fish_tide()) {
+    fish_tide_ = new ::FishTide(*from.fish_tide_);
+  } else {
+    fish_tide_ = nullptr;
+  }
+  yu_chao_id_ = from.yu_chao_id_;
+  // @@protoc_insertion_point(copy_constructor:CMD_S_YuChaoCome)
+}
+
+void CMD_S_YuChaoCome::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_CMD_S_YuChaoCome_WPBY_2eproto.base);
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&fish_tide_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&yu_chao_id_) -
+      reinterpret_cast<char*>(&fish_tide_)) + sizeof(yu_chao_id_));
+}
+
+CMD_S_YuChaoCome::~CMD_S_YuChaoCome() {
+  // @@protoc_insertion_point(destructor:CMD_S_YuChaoCome)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void CMD_S_YuChaoCome::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  if (this != internal_default_instance()) delete fish_tide_;
+}
+
+void CMD_S_YuChaoCome::ArenaDtor(void* object) {
+  CMD_S_YuChaoCome* _this = reinterpret_cast< CMD_S_YuChaoCome* >(object);
+  (void)_this;
+}
+void CMD_S_YuChaoCome::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void CMD_S_YuChaoCome::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const CMD_S_YuChaoCome& CMD_S_YuChaoCome::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_CMD_S_YuChaoCome_WPBY_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void CMD_S_YuChaoCome::Clear() {
+// @@protoc_insertion_point(message_clear_start:CMD_S_YuChaoCome)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (GetArena() == nullptr && fish_tide_ != nullptr) {
+    delete fish_tide_;
+  }
+  fish_tide_ = nullptr;
+  yu_chao_id_ = 0;
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* CMD_S_YuChaoCome::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 yu_chao_id = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          yu_chao_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // .FishTide fish_tide = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          ptr = ctx->ParseMessage(_internal_mutable_fish_tide(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* CMD_S_YuChaoCome::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:CMD_S_YuChaoCome)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 yu_chao_id = 1;
+  if (this->yu_chao_id() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_yu_chao_id(), target);
+  }
+
+  // .FishTide fish_tide = 2;
+  if (this->has_fish_tide()) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        2, _Internal::fish_tide(this), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:CMD_S_YuChaoCome)
+  return target;
+}
+
+size_t CMD_S_YuChaoCome::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:CMD_S_YuChaoCome)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // .FishTide fish_tide = 2;
+  if (this->has_fish_tide()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *fish_tide_);
+  }
+
+  // int32 yu_chao_id = 1;
+  if (this->yu_chao_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_yu_chao_id());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void CMD_S_YuChaoCome::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:CMD_S_YuChaoCome)
+  GOOGLE_DCHECK_NE(&from, this);
+  const CMD_S_YuChaoCome* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_S_YuChaoCome>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_S_YuChaoCome)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_S_YuChaoCome)
+    MergeFrom(*source);
+  }
+}
+
+void CMD_S_YuChaoCome::MergeFrom(const CMD_S_YuChaoCome& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:CMD_S_YuChaoCome)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.has_fish_tide()) {
+    _internal_mutable_fish_tide()->::FishTide::MergeFrom(from._internal_fish_tide());
+  }
+  if (from.yu_chao_id() != 0) {
+    _internal_set_yu_chao_id(from._internal_yu_chao_id());
+  }
+}
+
+void CMD_S_YuChaoCome::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:CMD_S_YuChaoCome)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void CMD_S_YuChaoCome::CopyFrom(const CMD_S_YuChaoCome& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:CMD_S_YuChaoCome)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool CMD_S_YuChaoCome::IsInitialized() const {
+  return true;
+}
+
+void CMD_S_YuChaoCome::InternalSwap(CMD_S_YuChaoCome* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(CMD_S_YuChaoCome, yu_chao_id_)
+      + sizeof(CMD_S_YuChaoCome::yu_chao_id_)
+      - PROTOBUF_FIELD_OFFSET(CMD_S_YuChaoCome, fish_tide_)>(
+          reinterpret_cast<char*>(&fish_tide_),
+          reinterpret_cast<char*>(&other->fish_tide_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata CMD_S_YuChaoCome::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
 class CMD_S_ShootLK::_Internal {
  public:
 };
@@ -1803,16 +3259,16 @@ CMD_S_ShootLK::CMD_S_ShootLK(const CMD_S_ShootLK& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&chair_id_, &from.chair_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&cur_lk_score_) -
-    reinterpret_cast<char*>(&chair_id_)) + sizeof(cur_lk_score_));
+    static_cast<size_t>(reinterpret_cast<char*>(&multiple_) -
+    reinterpret_cast<char*>(&chair_id_)) + sizeof(multiple_));
   // @@protoc_insertion_point(copy_constructor:CMD_S_ShootLK)
 }
 
 void CMD_S_ShootLK::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&chair_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&cur_lk_score_) -
-      reinterpret_cast<char*>(&chair_id_)) + sizeof(cur_lk_score_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&multiple_) -
+      reinterpret_cast<char*>(&chair_id_)) + sizeof(multiple_));
 }
 
 CMD_S_ShootLK::~CMD_S_ShootLK() {
@@ -1847,8 +3303,8 @@ void CMD_S_ShootLK::Clear() {
   (void) cached_has_bits;
 
   ::memset(&chair_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&cur_lk_score_) -
-      reinterpret_cast<char*>(&chair_id_)) + sizeof(cur_lk_score_));
+      reinterpret_cast<char*>(&multiple_) -
+      reinterpret_cast<char*>(&chair_id_)) + sizeof(multiple_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -1884,34 +3340,6 @@ const char* CMD_S_ShootLK::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           multiple_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // bool is_deaded = 5;
-      case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
-          is_deaded_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 jbp_stage = 6;
-      case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
-          jbp_stage_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 cur_lk_score = 7;
-      case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
-          cur_lk_score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int64 cur_player_score = 8;
-      case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
-          cur_player_score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1967,30 +3395,6 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_multiple(), target);
   }
 
-  // bool is_deaded = 5;
-  if (this->is_deaded() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(5, this->_internal_is_deaded(), target);
-  }
-
-  // int32 jbp_stage = 6;
-  if (this->jbp_stage() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_jbp_stage(), target);
-  }
-
-  // int32 cur_lk_score = 7;
-  if (this->cur_lk_score() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(7, this->_internal_cur_lk_score(), target);
-  }
-
-  // int64 cur_player_score = 8;
-  if (this->cur_player_score() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(8, this->_internal_cur_player_score(), target);
-  }
-
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -2033,32 +3437,6 @@ size_t CMD_S_ShootLK::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_multiple());
-  }
-
-  // bool is_deaded = 5;
-  if (this->is_deaded() != 0) {
-    total_size += 1 + 1;
-  }
-
-  // int32 jbp_stage = 6;
-  if (this->jbp_stage() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_jbp_stage());
-  }
-
-  // int64 cur_player_score = 8;
-  if (this->cur_player_score() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_cur_player_score());
-  }
-
-  // int32 cur_lk_score = 7;
-  if (this->cur_lk_score() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_cur_lk_score());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -2104,18 +3482,6 @@ void CMD_S_ShootLK::MergeFrom(const CMD_S_ShootLK& from) {
   if (from.multiple() != 0) {
     _internal_set_multiple(from._internal_multiple());
   }
-  if (from.is_deaded() != 0) {
-    _internal_set_is_deaded(from._internal_is_deaded());
-  }
-  if (from.jbp_stage() != 0) {
-    _internal_set_jbp_stage(from._internal_jbp_stage());
-  }
-  if (from.cur_player_score() != 0) {
-    _internal_set_cur_player_score(from._internal_cur_player_score());
-  }
-  if (from.cur_lk_score() != 0) {
-    _internal_set_cur_lk_score(from._internal_cur_lk_score());
-  }
 }
 
 void CMD_S_ShootLK::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -2140,8 +3506,8 @@ void CMD_S_ShootLK::InternalSwap(CMD_S_ShootLK* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(CMD_S_ShootLK, cur_lk_score_)
-      + sizeof(CMD_S_ShootLK::cur_lk_score_)
+      PROTOBUF_FIELD_OFFSET(CMD_S_ShootLK, multiple_)
+      + sizeof(CMD_S_ShootLK::multiple_)
       - PROTOBUF_FIELD_OFFSET(CMD_S_ShootLK, chair_id_)>(
           reinterpret_cast<char*>(&chair_id_),
           reinterpret_cast<char*>(&other->chair_id_));
@@ -2869,25 +4235,28 @@ class LoadFish::_Internal {
 };
 
 LoadFish::LoadFish(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  fish_point_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:LoadFish)
 }
 LoadFish::LoadFish(const LoadFish& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      fish_point_(from.fish_point_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&kind_, &from.kind_,
-    static_cast<size_t>(reinterpret_cast<char*>(&lk_score_) -
-    reinterpret_cast<char*>(&kind_)) + sizeof(lk_score_));
+    static_cast<size_t>(reinterpret_cast<char*>(&mul_) -
+    reinterpret_cast<char*>(&kind_)) + sizeof(mul_));
   // @@protoc_insertion_point(copy_constructor:LoadFish)
 }
 
 void LoadFish::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_LoadFish_WPBY_2eproto.base);
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&kind_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&lk_score_) -
-      reinterpret_cast<char*>(&kind_)) + sizeof(lk_score_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&mul_) -
+      reinterpret_cast<char*>(&kind_)) + sizeof(mul_));
 }
 
 LoadFish::~LoadFish() {
@@ -2921,9 +4290,10 @@ void LoadFish::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  fish_point_.Clear();
   ::memset(&kind_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&lk_score_) -
-      reinterpret_cast<char*>(&kind_)) + sizeof(lk_score_));
+      reinterpret_cast<char*>(&mul_) -
+      reinterpret_cast<char*>(&kind_)) + sizeof(mul_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -2962,73 +4332,29 @@ const char* LoadFish::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::i
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 road = 5;
+      // repeated .FishPoint fish_point = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
-          road_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_fish_point(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<42>(ptr));
         } else goto handle_unusual;
         continue;
-      // int32 group_id = 6;
+      // int32 now_time = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
-          group_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 group_no = 7;
-      case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
-          group_no_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 now_time = 8;
-      case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
           now_time_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 mul = 9;
-      case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+      // int32 mul = 7;
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
           mul_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 stage = 10;
-      case 10:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
-          stage_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 is_aced = 11;
-      case 11:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 88)) {
-          is_aced_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 jbp_stage = 12;
-      case 12:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 96)) {
-          jbp_stage_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 lk_mul = 13;
-      case 13:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 104)) {
-          lk_mul_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 lk_score = 14;
-      case 14:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 112)) {
-          lk_score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -3084,64 +4410,24 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_continue_time(), target);
   }
 
-  // int32 road = 5;
-  if (this->road() != 0) {
+  // repeated .FishPoint fish_point = 5;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_fish_point_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_road(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(5, this->_internal_fish_point(i), target, stream);
   }
 
-  // int32 group_id = 6;
-  if (this->group_id() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_group_id(), target);
-  }
-
-  // int32 group_no = 7;
-  if (this->group_no() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(7, this->_internal_group_no(), target);
-  }
-
-  // int32 now_time = 8;
+  // int32 now_time = 6;
   if (this->now_time() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(8, this->_internal_now_time(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_now_time(), target);
   }
 
-  // int32 mul = 9;
+  // int32 mul = 7;
   if (this->mul() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(9, this->_internal_mul(), target);
-  }
-
-  // int32 stage = 10;
-  if (this->stage() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(10, this->_internal_stage(), target);
-  }
-
-  // int32 is_aced = 11;
-  if (this->is_aced() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(11, this->_internal_is_aced(), target);
-  }
-
-  // int32 jbp_stage = 12;
-  if (this->jbp_stage() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(12, this->_internal_jbp_stage(), target);
-  }
-
-  // int32 lk_mul = 13;
-  if (this->lk_mul() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(13, this->_internal_lk_mul(), target);
-  }
-
-  // int32 lk_score = 14;
-  if (this->lk_score() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(14, this->_internal_lk_score(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(7, this->_internal_mul(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -3159,6 +4445,13 @@ size_t LoadFish::ByteSizeLong() const {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
+
+  // repeated .FishPoint fish_point = 5;
+  total_size += 1UL * this->_internal_fish_point_size();
+  for (const auto& msg : this->fish_point_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
 
   // int32 kind = 1;
   if (this->kind() != 0) {
@@ -3188,74 +4481,18 @@ size_t LoadFish::ByteSizeLong() const {
         this->_internal_continue_time());
   }
 
-  // int32 road = 5;
-  if (this->road() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_road());
-  }
-
-  // int32 group_id = 6;
-  if (this->group_id() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_group_id());
-  }
-
-  // int32 group_no = 7;
-  if (this->group_no() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_group_no());
-  }
-
-  // int32 now_time = 8;
+  // int32 now_time = 6;
   if (this->now_time() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_now_time());
   }
 
-  // int32 mul = 9;
+  // int32 mul = 7;
   if (this->mul() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_mul());
-  }
-
-  // int32 stage = 10;
-  if (this->stage() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_stage());
-  }
-
-  // int32 is_aced = 11;
-  if (this->is_aced() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_is_aced());
-  }
-
-  // int32 jbp_stage = 12;
-  if (this->jbp_stage() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_jbp_stage());
-  }
-
-  // int32 lk_mul = 13;
-  if (this->lk_mul() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_lk_mul());
-  }
-
-  // int32 lk_score = 14;
-  if (this->lk_score() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_lk_score());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -3289,6 +4526,7 @@ void LoadFish::MergeFrom(const LoadFish& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  fish_point_.MergeFrom(from.fish_point_);
   if (from.kind() != 0) {
     _internal_set_kind(from._internal_kind());
   }
@@ -3301,35 +4539,11 @@ void LoadFish::MergeFrom(const LoadFish& from) {
   if (from.continue_time() != 0) {
     _internal_set_continue_time(from._internal_continue_time());
   }
-  if (from.road() != 0) {
-    _internal_set_road(from._internal_road());
-  }
-  if (from.group_id() != 0) {
-    _internal_set_group_id(from._internal_group_id());
-  }
-  if (from.group_no() != 0) {
-    _internal_set_group_no(from._internal_group_no());
-  }
   if (from.now_time() != 0) {
     _internal_set_now_time(from._internal_now_time());
   }
   if (from.mul() != 0) {
     _internal_set_mul(from._internal_mul());
-  }
-  if (from.stage() != 0) {
-    _internal_set_stage(from._internal_stage());
-  }
-  if (from.is_aced() != 0) {
-    _internal_set_is_aced(from._internal_is_aced());
-  }
-  if (from.jbp_stage() != 0) {
-    _internal_set_jbp_stage(from._internal_jbp_stage());
-  }
-  if (from.lk_mul() != 0) {
-    _internal_set_lk_mul(from._internal_lk_mul());
-  }
-  if (from.lk_score() != 0) {
-    _internal_set_lk_score(from._internal_lk_score());
   }
 }
 
@@ -3354,9 +4568,10 @@ bool LoadFish::IsInitialized() const {
 void LoadFish::InternalSwap(LoadFish* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  fish_point_.InternalSwap(&other->fish_point_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(LoadFish, lk_score_)
-      + sizeof(LoadFish::lk_score_)
+      PROTOBUF_FIELD_OFFSET(LoadFish, mul_)
+      + sizeof(LoadFish::mul_)
       - PROTOBUF_FIELD_OFFSET(LoadFish, kind_)>(
           reinterpret_cast<char*>(&kind_),
           reinterpret_cast<char*>(&other->kind_));
@@ -3906,70 +5121,70 @@ void CMD_S_DaSiXi::InternalSwap(CMD_S_DaSiXi* other) {
 
 // ===================================================================
 
-class CMD_S_DaJiangZhangYu::_Internal {
+class CMD_S_DaSanYuan::_Internal {
  public:
 };
 
-CMD_S_DaJiangZhangYu::CMD_S_DaJiangZhangYu(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+CMD_S_DaSanYuan::CMD_S_DaSanYuan(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_S_DaJiangZhangYu)
+  // @@protoc_insertion_point(arena_constructor:CMD_S_DaSanYuan)
 }
-CMD_S_DaJiangZhangYu::CMD_S_DaJiangZhangYu(const CMD_S_DaJiangZhangYu& from)
+CMD_S_DaSanYuan::CMD_S_DaSanYuan(const CMD_S_DaSanYuan& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&id_, &from.id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&odd3_) -
-    reinterpret_cast<char*>(&id_)) + sizeof(odd3_));
-  // @@protoc_insertion_point(copy_constructor:CMD_S_DaJiangZhangYu)
+    static_cast<size_t>(reinterpret_cast<char*>(&score_) -
+    reinterpret_cast<char*>(&id_)) + sizeof(score_));
+  // @@protoc_insertion_point(copy_constructor:CMD_S_DaSanYuan)
 }
 
-void CMD_S_DaJiangZhangYu::SharedCtor() {
+void CMD_S_DaSanYuan::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&odd3_) -
-      reinterpret_cast<char*>(&id_)) + sizeof(odd3_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&score_) -
+      reinterpret_cast<char*>(&id_)) + sizeof(score_));
 }
 
-CMD_S_DaJiangZhangYu::~CMD_S_DaJiangZhangYu() {
-  // @@protoc_insertion_point(destructor:CMD_S_DaJiangZhangYu)
+CMD_S_DaSanYuan::~CMD_S_DaSanYuan() {
+  // @@protoc_insertion_point(destructor:CMD_S_DaSanYuan)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CMD_S_DaJiangZhangYu::SharedDtor() {
+void CMD_S_DaSanYuan::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void CMD_S_DaJiangZhangYu::ArenaDtor(void* object) {
-  CMD_S_DaJiangZhangYu* _this = reinterpret_cast< CMD_S_DaJiangZhangYu* >(object);
+void CMD_S_DaSanYuan::ArenaDtor(void* object) {
+  CMD_S_DaSanYuan* _this = reinterpret_cast< CMD_S_DaSanYuan* >(object);
   (void)_this;
 }
-void CMD_S_DaJiangZhangYu::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+void CMD_S_DaSanYuan::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 }
-void CMD_S_DaJiangZhangYu::SetCachedSize(int size) const {
+void CMD_S_DaSanYuan::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const CMD_S_DaJiangZhangYu& CMD_S_DaJiangZhangYu::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_CMD_S_DaJiangZhangYu_WPBY_2eproto.base);
+const CMD_S_DaSanYuan& CMD_S_DaSanYuan::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_CMD_S_DaSanYuan_WPBY_2eproto.base);
   return *internal_default_instance();
 }
 
 
-void CMD_S_DaJiangZhangYu::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_S_DaJiangZhangYu)
+void CMD_S_DaSanYuan::Clear() {
+// @@protoc_insertion_point(message_clear_start:CMD_S_DaSanYuan)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   ::memset(&id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&odd3_) -
-      reinterpret_cast<char*>(&id_)) + sizeof(odd3_));
+      reinterpret_cast<char*>(&score_) -
+      reinterpret_cast<char*>(&id_)) + sizeof(score_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* CMD_S_DaJiangZhangYu::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* CMD_S_DaSanYuan::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
@@ -3990,24 +5205,10 @@ const char* CMD_S_DaJiangZhangYu::_InternalParse(const char* ptr, ::PROTOBUF_NAM
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 odd1 = 3;
+      // int32 score = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          odd1_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 odd2 = 4;
-      case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          odd2_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 odd3 = 5;
-      case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
-          odd3_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -4033,9 +5234,9 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* CMD_S_DaJiangZhangYu::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* CMD_S_DaSanYuan::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_S_DaJiangZhangYu)
+  // @@protoc_insertion_point(serialize_to_array_start:CMD_S_DaSanYuan)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -4051,34 +5252,22 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_chair_id(), target);
   }
 
-  // int32 odd1 = 3;
-  if (this->odd1() != 0) {
+  // int32 score = 3;
+  if (this->score() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_odd1(), target);
-  }
-
-  // int32 odd2 = 4;
-  if (this->odd2() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_odd2(), target);
-  }
-
-  // int32 odd3 = 5;
-  if (this->odd3() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_odd3(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_score(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_S_DaJiangZhangYu)
+  // @@protoc_insertion_point(serialize_to_array_end:CMD_S_DaSanYuan)
   return target;
 }
 
-size_t CMD_S_DaJiangZhangYu::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_S_DaJiangZhangYu)
+size_t CMD_S_DaSanYuan::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:CMD_S_DaSanYuan)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -4099,25 +5288,11 @@ size_t CMD_S_DaJiangZhangYu::ByteSizeLong() const {
         this->_internal_chair_id());
   }
 
-  // int32 odd1 = 3;
-  if (this->odd1() != 0) {
+  // int32 score = 3;
+  if (this->score() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_odd1());
-  }
-
-  // int32 odd2 = 4;
-  if (this->odd2() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_odd2());
-  }
-
-  // int32 odd3 = 5;
-  if (this->odd3() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_odd3());
+        this->_internal_score());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -4129,23 +5304,23 @@ size_t CMD_S_DaJiangZhangYu::ByteSizeLong() const {
   return total_size;
 }
 
-void CMD_S_DaJiangZhangYu::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_S_DaJiangZhangYu)
+void CMD_S_DaSanYuan::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:CMD_S_DaSanYuan)
   GOOGLE_DCHECK_NE(&from, this);
-  const CMD_S_DaJiangZhangYu* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_S_DaJiangZhangYu>(
+  const CMD_S_DaSanYuan* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_S_DaSanYuan>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_S_DaJiangZhangYu)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_S_DaSanYuan)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_S_DaJiangZhangYu)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_S_DaSanYuan)
     MergeFrom(*source);
   }
 }
 
-void CMD_S_DaJiangZhangYu::MergeFrom(const CMD_S_DaJiangZhangYu& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_S_DaJiangZhangYu)
+void CMD_S_DaSanYuan::MergeFrom(const CMD_S_DaSanYuan& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:CMD_S_DaSanYuan)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -4157,47 +5332,41 @@ void CMD_S_DaJiangZhangYu::MergeFrom(const CMD_S_DaJiangZhangYu& from) {
   if (from.chair_id() != 0) {
     _internal_set_chair_id(from._internal_chair_id());
   }
-  if (from.odd1() != 0) {
-    _internal_set_odd1(from._internal_odd1());
-  }
-  if (from.odd2() != 0) {
-    _internal_set_odd2(from._internal_odd2());
-  }
-  if (from.odd3() != 0) {
-    _internal_set_odd3(from._internal_odd3());
+  if (from.score() != 0) {
+    _internal_set_score(from._internal_score());
   }
 }
 
-void CMD_S_DaJiangZhangYu::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_S_DaJiangZhangYu)
+void CMD_S_DaSanYuan::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:CMD_S_DaSanYuan)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-void CMD_S_DaJiangZhangYu::CopyFrom(const CMD_S_DaJiangZhangYu& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_S_DaJiangZhangYu)
+void CMD_S_DaSanYuan::CopyFrom(const CMD_S_DaSanYuan& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:CMD_S_DaSanYuan)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool CMD_S_DaJiangZhangYu::IsInitialized() const {
+bool CMD_S_DaSanYuan::IsInitialized() const {
   return true;
 }
 
-void CMD_S_DaJiangZhangYu::InternalSwap(CMD_S_DaJiangZhangYu* other) {
+void CMD_S_DaSanYuan::InternalSwap(CMD_S_DaSanYuan* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(CMD_S_DaJiangZhangYu, odd3_)
-      + sizeof(CMD_S_DaJiangZhangYu::odd3_)
-      - PROTOBUF_FIELD_OFFSET(CMD_S_DaJiangZhangYu, id_)>(
+      PROTOBUF_FIELD_OFFSET(CMD_S_DaSanYuan, score_)
+      + sizeof(CMD_S_DaSanYuan::score_)
+      - PROTOBUF_FIELD_OFFSET(CMD_S_DaSanYuan, id_)>(
           reinterpret_cast<char*>(&id_),
           reinterpret_cast<char*>(&other->id_));
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata CMD_S_DaJiangZhangYu::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata CMD_S_DaSanYuan::GetMetadata() const {
   return GetMetadataStatic();
 }
 
@@ -4218,16 +5387,16 @@ CMD_S_ZhongYiTang::CMD_S_ZhongYiTang(const CMD_S_ZhongYiTang& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&chair_id_, &from.chair_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&add_mul_) -
-    reinterpret_cast<char*>(&chair_id_)) + sizeof(add_mul_));
+    static_cast<size_t>(reinterpret_cast<char*>(&time_) -
+    reinterpret_cast<char*>(&chair_id_)) + sizeof(time_));
   // @@protoc_insertion_point(copy_constructor:CMD_S_ZhongYiTang)
 }
 
 void CMD_S_ZhongYiTang::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&chair_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&add_mul_) -
-      reinterpret_cast<char*>(&chair_id_)) + sizeof(add_mul_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&time_) -
+      reinterpret_cast<char*>(&chair_id_)) + sizeof(time_));
 }
 
 CMD_S_ZhongYiTang::~CMD_S_ZhongYiTang() {
@@ -4262,8 +5431,8 @@ void CMD_S_ZhongYiTang::Clear() {
   (void) cached_has_bits;
 
   ::memset(&chair_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&add_mul_) -
-      reinterpret_cast<char*>(&chair_id_)) + sizeof(add_mul_));
+      reinterpret_cast<char*>(&time_) -
+      reinterpret_cast<char*>(&chair_id_)) + sizeof(time_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -4281,17 +5450,10 @@ const char* CMD_S_ZhongYiTang::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 add_time = 2;
+      // int32 time = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          add_time_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 add_mul = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          add_mul_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          time_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -4329,16 +5491,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_chair_id(), target);
   }
 
-  // int32 add_time = 2;
-  if (this->add_time() != 0) {
+  // int32 time = 2;
+  if (this->time() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_add_time(), target);
-  }
-
-  // int32 add_mul = 3;
-  if (this->add_mul() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_add_mul(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_time(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -4364,18 +5520,11 @@ size_t CMD_S_ZhongYiTang::ByteSizeLong() const {
         this->_internal_chair_id());
   }
 
-  // int32 add_time = 2;
-  if (this->add_time() != 0) {
+  // int32 time = 2;
+  if (this->time() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_add_time());
-  }
-
-  // int32 add_mul = 3;
-  if (this->add_mul() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_add_mul());
+        this->_internal_time());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -4412,11 +5561,8 @@ void CMD_S_ZhongYiTang::MergeFrom(const CMD_S_ZhongYiTang& from) {
   if (from.chair_id() != 0) {
     _internal_set_chair_id(from._internal_chair_id());
   }
-  if (from.add_time() != 0) {
-    _internal_set_add_time(from._internal_add_time());
-  }
-  if (from.add_mul() != 0) {
-    _internal_set_add_mul(from._internal_add_mul());
+  if (from.time() != 0) {
+    _internal_set_time(from._internal_time());
   }
 }
 
@@ -4442,8 +5588,8 @@ void CMD_S_ZhongYiTang::InternalSwap(CMD_S_ZhongYiTang* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(CMD_S_ZhongYiTang, add_mul_)
-      + sizeof(CMD_S_ZhongYiTang::add_mul_)
+      PROTOBUF_FIELD_OFFSET(CMD_S_ZhongYiTang, time_)
+      + sizeof(CMD_S_ZhongYiTang::time_)
       - PROTOBUF_FIELD_OFFSET(CMD_S_ZhongYiTang, chair_id_)>(
           reinterpret_cast<char*>(&chair_id_),
           reinterpret_cast<char*>(&other->chair_id_));
@@ -4461,24 +5607,25 @@ class CMD_S_ShuiHuZhuan::_Internal {
 };
 
 CMD_S_ShuiHuZhuan::CMD_S_ShuiHuZhuan(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  fish_id_(arena),
-  fish_score_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:CMD_S_ShuiHuZhuan)
 }
 CMD_S_ShuiHuZhuan::CMD_S_ShuiHuZhuan(const CMD_S_ShuiHuZhuan& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      fish_id_(from.fish_id_),
-      fish_score_(from.fish_score_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  chair_id_ = from.chair_id_;
+  ::memcpy(&chair_id_, &from.chair_id_,
+    static_cast<size_t>(reinterpret_cast<char*>(&fish_id_) -
+    reinterpret_cast<char*>(&chair_id_)) + sizeof(fish_id_));
   // @@protoc_insertion_point(copy_constructor:CMD_S_ShuiHuZhuan)
 }
 
 void CMD_S_ShuiHuZhuan::SharedCtor() {
-  chair_id_ = 0;
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&chair_id_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&fish_id_) -
+      reinterpret_cast<char*>(&chair_id_)) + sizeof(fish_id_));
 }
 
 CMD_S_ShuiHuZhuan::~CMD_S_ShuiHuZhuan() {
@@ -4512,9 +5659,9 @@ void CMD_S_ShuiHuZhuan::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  fish_id_.Clear();
-  fish_score_.Clear();
-  chair_id_ = 0;
+  ::memset(&chair_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&fish_id_) -
+      reinterpret_cast<char*>(&chair_id_)) + sizeof(fish_id_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -4532,23 +5679,10 @@ const char* CMD_S_ShuiHuZhuan::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated int32 fish_id = 2;
+      // int32 fish_id = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_fish_id(), ptr, ctx);
-          CHK_(ptr);
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16) {
-          _internal_add_fish_id(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // repeated int32 fish_score = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_fish_score(), ptr, ctx);
-          CHK_(ptr);
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24) {
-          _internal_add_fish_score(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          fish_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -4586,22 +5720,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_chair_id(), target);
   }
 
-  // repeated int32 fish_id = 2;
-  {
-    int byte_size = _fish_id_cached_byte_size_.load(std::memory_order_relaxed);
-    if (byte_size > 0) {
-      target = stream->WriteInt32Packed(
-          2, _internal_fish_id(), byte_size, target);
-    }
-  }
-
-  // repeated int32 fish_score = 3;
-  {
-    int byte_size = _fish_score_cached_byte_size_.load(std::memory_order_relaxed);
-    if (byte_size > 0) {
-      target = stream->WriteInt32Packed(
-          3, _internal_fish_score(), byte_size, target);
-    }
+  // int32 fish_id = 2;
+  if (this->fish_id() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_fish_id(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -4620,41 +5742,18 @@ size_t CMD_S_ShuiHuZhuan::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated int32 fish_id = 2;
-  {
-    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      Int32Size(this->fish_id_);
-    if (data_size > 0) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
-    }
-    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
-    _fish_id_cached_byte_size_.store(cached_size,
-                                    std::memory_order_relaxed);
-    total_size += data_size;
-  }
-
-  // repeated int32 fish_score = 3;
-  {
-    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      Int32Size(this->fish_score_);
-    if (data_size > 0) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
-    }
-    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
-    _fish_score_cached_byte_size_.store(cached_size,
-                                    std::memory_order_relaxed);
-    total_size += data_size;
-  }
-
   // int32 chair_id = 1;
   if (this->chair_id() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_chair_id());
+  }
+
+  // int32 fish_id = 2;
+  if (this->fish_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_fish_id());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -4688,10 +5787,11 @@ void CMD_S_ShuiHuZhuan::MergeFrom(const CMD_S_ShuiHuZhuan& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  fish_id_.MergeFrom(from.fish_id_);
-  fish_score_.MergeFrom(from.fish_score_);
   if (from.chair_id() != 0) {
     _internal_set_chair_id(from._internal_chair_id());
+  }
+  if (from.fish_id() != 0) {
+    _internal_set_fish_id(from._internal_fish_id());
   }
 }
 
@@ -4716,9 +5816,12 @@ bool CMD_S_ShuiHuZhuan::IsInitialized() const {
 void CMD_S_ShuiHuZhuan::InternalSwap(CMD_S_ShuiHuZhuan* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  fish_id_.InternalSwap(&other->fish_id_);
-  fish_score_.InternalSwap(&other->fish_score_);
-  swap(chair_id_, other->chair_id_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(CMD_S_ShuiHuZhuan, fish_id_)
+      + sizeof(CMD_S_ShuiHuZhuan::fish_id_)
+      - PROTOBUF_FIELD_OFFSET(CMD_S_ShuiHuZhuan, chair_id_)>(
+          reinterpret_cast<char*>(&chair_id_),
+          reinterpret_cast<char*>(&other->chair_id_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata CMD_S_ShuiHuZhuan::GetMetadata() const {
@@ -5936,233 +7039,6 @@ void CMD_S_PlayerEnter::InternalSwap(CMD_S_PlayerEnter* other) {
 
 // ===================================================================
 
-class CMD_S_PlayerYCEnter::_Internal {
- public:
-};
-
-CMD_S_PlayerYCEnter::CMD_S_PlayerYCEnter(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  load_fish_(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_S_PlayerYCEnter)
-}
-CMD_S_PlayerYCEnter::CMD_S_PlayerYCEnter(const CMD_S_PlayerYCEnter& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      load_fish_(from.load_fish_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  yu_chao_id_ = from.yu_chao_id_;
-  // @@protoc_insertion_point(copy_constructor:CMD_S_PlayerYCEnter)
-}
-
-void CMD_S_PlayerYCEnter::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_CMD_S_PlayerYCEnter_WPBY_2eproto.base);
-  yu_chao_id_ = 0;
-}
-
-CMD_S_PlayerYCEnter::~CMD_S_PlayerYCEnter() {
-  // @@protoc_insertion_point(destructor:CMD_S_PlayerYCEnter)
-  SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-void CMD_S_PlayerYCEnter::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-}
-
-void CMD_S_PlayerYCEnter::ArenaDtor(void* object) {
-  CMD_S_PlayerYCEnter* _this = reinterpret_cast< CMD_S_PlayerYCEnter* >(object);
-  (void)_this;
-}
-void CMD_S_PlayerYCEnter::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
-void CMD_S_PlayerYCEnter::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
-}
-const CMD_S_PlayerYCEnter& CMD_S_PlayerYCEnter::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_CMD_S_PlayerYCEnter_WPBY_2eproto.base);
-  return *internal_default_instance();
-}
-
-
-void CMD_S_PlayerYCEnter::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_S_PlayerYCEnter)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  load_fish_.Clear();
-  yu_chao_id_ = 0;
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-const char* CMD_S_PlayerYCEnter::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
-    switch (tag >> 3) {
-      // int32 yu_chao_id = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          yu_chao_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // repeated .LoadFish load_fish = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr -= 1;
-          do {
-            ptr += 1;
-            ptr = ctx->ParseMessage(_internal_add_load_fish(), ptr);
-            CHK_(ptr);
-            if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
-        } else goto handle_unusual;
-        continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
-    }  // switch
-  }  // while
-success:
-  return ptr;
-failure:
-  ptr = nullptr;
-  goto success;
-#undef CHK_
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* CMD_S_PlayerYCEnter::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_S_PlayerYCEnter)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // int32 yu_chao_id = 1;
-  if (this->yu_chao_id() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_yu_chao_id(), target);
-  }
-
-  // repeated .LoadFish load_fish = 2;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_load_fish_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_load_fish(i), target, stream);
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_S_PlayerYCEnter)
-  return target;
-}
-
-size_t CMD_S_PlayerYCEnter::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_S_PlayerYCEnter)
-  size_t total_size = 0;
-
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  // repeated .LoadFish load_fish = 2;
-  total_size += 1UL * this->_internal_load_fish_size();
-  for (const auto& msg : this->load_fish_) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
-  }
-
-  // int32 yu_chao_id = 1;
-  if (this->yu_chao_id() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_yu_chao_id());
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
-}
-
-void CMD_S_PlayerYCEnter::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_S_PlayerYCEnter)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CMD_S_PlayerYCEnter* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_S_PlayerYCEnter>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_S_PlayerYCEnter)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_S_PlayerYCEnter)
-    MergeFrom(*source);
-  }
-}
-
-void CMD_S_PlayerYCEnter::MergeFrom(const CMD_S_PlayerYCEnter& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_S_PlayerYCEnter)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  load_fish_.MergeFrom(from.load_fish_);
-  if (from.yu_chao_id() != 0) {
-    _internal_set_yu_chao_id(from._internal_yu_chao_id());
-  }
-}
-
-void CMD_S_PlayerYCEnter::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_S_PlayerYCEnter)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void CMD_S_PlayerYCEnter::CopyFrom(const CMD_S_PlayerYCEnter& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_S_PlayerYCEnter)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool CMD_S_PlayerYCEnter::IsInitialized() const {
-  return true;
-}
-
-void CMD_S_PlayerYCEnter::InternalSwap(CMD_S_PlayerYCEnter* other) {
-  using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  load_fish_.InternalSwap(&other->load_fish_);
-  swap(yu_chao_id_, other->yu_chao_id_);
-}
-
-::PROTOBUF_NAMESPACE_ID::Metadata CMD_S_PlayerYCEnter::GetMetadata() const {
-  return GetMetadataStatic();
-}
-
-
-// ===================================================================
-
 class FishDeadInfo::_Internal {
  public:
 };
@@ -6407,18 +7283,18 @@ CMD_S_FishDead::CMD_S_FishDead(const CMD_S_FishDead& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       fish_(from.fish_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&chair_id_, &from.chair_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&score_) -
-    reinterpret_cast<char*>(&chair_id_)) + sizeof(score_));
+  ::memcpy(&score_, &from.score_,
+    static_cast<size_t>(reinterpret_cast<char*>(&chair_id_) -
+    reinterpret_cast<char*>(&score_)) + sizeof(chair_id_));
   // @@protoc_insertion_point(copy_constructor:CMD_S_FishDead)
 }
 
 void CMD_S_FishDead::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_CMD_S_FishDead_WPBY_2eproto.base);
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&chair_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&score_) -
-      reinterpret_cast<char*>(&chair_id_)) + sizeof(score_));
+      reinterpret_cast<char*>(&score_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&chair_id_) -
+      reinterpret_cast<char*>(&score_)) + sizeof(chair_id_));
 }
 
 CMD_S_FishDead::~CMD_S_FishDead() {
@@ -6453,9 +7329,9 @@ void CMD_S_FishDead::Clear() {
   (void) cached_has_bits;
 
   fish_.Clear();
-  ::memset(&chair_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&score_) -
-      reinterpret_cast<char*>(&chair_id_)) + sizeof(score_));
+  ::memset(&score_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&chair_id_) -
+      reinterpret_cast<char*>(&score_)) + sizeof(chair_id_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -6489,13 +7365,6 @@ const char* CMD_S_FishDead::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 lei_long_odd = 4;
-      case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          lei_long_odd_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -6547,12 +7416,6 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_score(), target);
   }
 
-  // int32 lei_long_odd = 4;
-  if (this->lei_long_odd() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_lei_long_odd(), target);
-  }
-
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -6576,25 +7439,18 @@ size_t CMD_S_FishDead::ByteSizeLong() const {
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  // int32 chair_id = 1;
-  if (this->chair_id() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_chair_id());
-  }
-
-  // int32 lei_long_odd = 4;
-  if (this->lei_long_odd() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_lei_long_odd());
-  }
-
   // int64 score = 3;
   if (this->score() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_score());
+  }
+
+  // int32 chair_id = 1;
+  if (this->chair_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_chair_id());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -6629,14 +7485,11 @@ void CMD_S_FishDead::MergeFrom(const CMD_S_FishDead& from) {
   (void) cached_has_bits;
 
   fish_.MergeFrom(from.fish_);
-  if (from.chair_id() != 0) {
-    _internal_set_chair_id(from._internal_chair_id());
-  }
-  if (from.lei_long_odd() != 0) {
-    _internal_set_lei_long_odd(from._internal_lei_long_odd());
-  }
   if (from.score() != 0) {
     _internal_set_score(from._internal_score());
+  }
+  if (from.chair_id() != 0) {
+    _internal_set_chair_id(from._internal_chair_id());
   }
 }
 
@@ -6663,11 +7516,11 @@ void CMD_S_FishDead::InternalSwap(CMD_S_FishDead* other) {
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   fish_.InternalSwap(&other->fish_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(CMD_S_FishDead, score_)
-      + sizeof(CMD_S_FishDead::score_)
-      - PROTOBUF_FIELD_OFFSET(CMD_S_FishDead, chair_id_)>(
-          reinterpret_cast<char*>(&chair_id_),
-          reinterpret_cast<char*>(&other->chair_id_));
+      PROTOBUF_FIELD_OFFSET(CMD_S_FishDead, chair_id_)
+      + sizeof(CMD_S_FishDead::chair_id_)
+      - PROTOBUF_FIELD_OFFSET(CMD_S_FishDead, score_)>(
+          reinterpret_cast<char*>(&score_),
+          reinterpret_cast<char*>(&other->score_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata CMD_S_FishDead::GetMetadata() const {
@@ -9455,6 +10308,21 @@ template<> PROTOBUF_NOINLINE ::CMD_S_RobotList* Arena::CreateMaybeMessage< ::CMD
 template<> PROTOBUF_NOINLINE ::CMD_S_PlayerLock* Arena::CreateMaybeMessage< ::CMD_S_PlayerLock >(Arena* arena) {
   return Arena::CreateMessageInternal< ::CMD_S_PlayerLock >(arena);
 }
+template<> PROTOBUF_NOINLINE ::FishPoint* Arena::CreateMaybeMessage< ::FishPoint >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::FishPoint >(arena);
+}
+template<> PROTOBUF_NOINLINE ::LineInfo* Arena::CreateMaybeMessage< ::LineInfo >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::LineInfo >(arena);
+}
+template<> PROTOBUF_NOINLINE ::FishLineInfo* Arena::CreateMaybeMessage< ::FishLineInfo >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::FishLineInfo >(arena);
+}
+template<> PROTOBUF_NOINLINE ::FishTide* Arena::CreateMaybeMessage< ::FishTide >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::FishTide >(arena);
+}
+template<> PROTOBUF_NOINLINE ::CMD_S_YuChaoCome* Arena::CreateMaybeMessage< ::CMD_S_YuChaoCome >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::CMD_S_YuChaoCome >(arena);
+}
 template<> PROTOBUF_NOINLINE ::CMD_S_ShootLK* Arena::CreateMaybeMessage< ::CMD_S_ShootLK >(Arena* arena) {
   return Arena::CreateMessageInternal< ::CMD_S_ShootLK >(arena);
 }
@@ -9476,8 +10344,8 @@ template<> PROTOBUF_NOINLINE ::CMD_S_YuWang* Arena::CreateMaybeMessage< ::CMD_S_
 template<> PROTOBUF_NOINLINE ::CMD_S_DaSiXi* Arena::CreateMaybeMessage< ::CMD_S_DaSiXi >(Arena* arena) {
   return Arena::CreateMessageInternal< ::CMD_S_DaSiXi >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CMD_S_DaJiangZhangYu* Arena::CreateMaybeMessage< ::CMD_S_DaJiangZhangYu >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_S_DaJiangZhangYu >(arena);
+template<> PROTOBUF_NOINLINE ::CMD_S_DaSanYuan* Arena::CreateMaybeMessage< ::CMD_S_DaSanYuan >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::CMD_S_DaSanYuan >(arena);
 }
 template<> PROTOBUF_NOINLINE ::CMD_S_ZhongYiTang* Arena::CreateMaybeMessage< ::CMD_S_ZhongYiTang >(Arena* arena) {
   return Arena::CreateMessageInternal< ::CMD_S_ZhongYiTang >(arena);
@@ -9499,9 +10367,6 @@ template<> PROTOBUF_NOINLINE ::CMD_S_AddFish* Arena::CreateMaybeMessage< ::CMD_S
 }
 template<> PROTOBUF_NOINLINE ::CMD_S_PlayerEnter* Arena::CreateMaybeMessage< ::CMD_S_PlayerEnter >(Arena* arena) {
   return Arena::CreateMessageInternal< ::CMD_S_PlayerEnter >(arena);
-}
-template<> PROTOBUF_NOINLINE ::CMD_S_PlayerYCEnter* Arena::CreateMaybeMessage< ::CMD_S_PlayerYCEnter >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_S_PlayerYCEnter >(arena);
 }
 template<> PROTOBUF_NOINLINE ::FishDeadInfo* Arena::CreateMaybeMessage< ::FishDeadInfo >(Arena* arena) {
   return Arena::CreateMessageInternal< ::FishDeadInfo >(arena);

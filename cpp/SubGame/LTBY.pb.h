@@ -1594,13 +1594,13 @@ class LoadFish PROTOBUF_FINAL :
   void _internal_set_stage(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 is_aced = 11;
+  // bool is_aced = 11;
   void clear_is_aced();
-  ::PROTOBUF_NAMESPACE_ID::int32 is_aced() const;
-  void set_is_aced(::PROTOBUF_NAMESPACE_ID::int32 value);
+  bool is_aced() const;
+  void set_is_aced(bool value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_is_aced() const;
-  void _internal_set_is_aced(::PROTOBUF_NAMESPACE_ID::int32 value);
+  bool _internal_is_aced() const;
+  void _internal_set_is_aced(bool value);
   public:
 
   // int32 jbp_stage = 12;
@@ -1647,7 +1647,7 @@ class LoadFish PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 now_time_;
   ::PROTOBUF_NAMESPACE_ID::int32 mul_;
   ::PROTOBUF_NAMESPACE_ID::int32 stage_;
-  ::PROTOBUF_NAMESPACE_ID::int32 is_aced_;
+  bool is_aced_;
   ::PROTOBUF_NAMESPACE_ID::int32 jbp_stage_;
   ::PROTOBUF_NAMESPACE_ID::int32 lk_mul_;
   ::PROTOBUF_NAMESPACE_ID::int32 lk_score_;
@@ -6266,22 +6266,22 @@ inline void LoadFish::set_stage(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:LoadFish.stage)
 }
 
-// int32 is_aced = 11;
+// bool is_aced = 11;
 inline void LoadFish::clear_is_aced() {
-  is_aced_ = 0;
+  is_aced_ = false;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::_internal_is_aced() const {
+inline bool LoadFish::_internal_is_aced() const {
   return is_aced_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::is_aced() const {
+inline bool LoadFish::is_aced() const {
   // @@protoc_insertion_point(field_get:LoadFish.is_aced)
   return _internal_is_aced();
 }
-inline void LoadFish::_internal_set_is_aced(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void LoadFish::_internal_set_is_aced(bool value) {
   
   is_aced_ = value;
 }
-inline void LoadFish::set_is_aced(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void LoadFish::set_is_aced(bool value) {
   _internal_set_is_aced(value);
   // @@protoc_insertion_point(field_set:LoadFish.is_aced)
 }

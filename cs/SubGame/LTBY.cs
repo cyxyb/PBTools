@@ -38,7 +38,7 @@ public static partial class LTBYReflection {
           "aWQYAiABKAUSEwoLY3JlYXRlX3RpbWUYAyABKAUSFQoNY29udGludWVfdGlt",
           "ZRgEIAEoBRIMCgRyb2FkGAUgASgFEhAKCGdyb3VwX2lkGAYgASgFEhAKCGdy",
           "b3VwX25vGAcgASgFEhAKCG5vd190aW1lGAggASgFEgsKA211bBgJIAEoBRIN",
-          "CgVzdGFnZRgKIAEoBRIPCgdpc19hY2VkGAsgASgFEhEKCWpicF9zdGFnZRgM",
+          "CgVzdGFnZRgKIAEoBRIPCgdpc19hY2VkGAsgASgIEhEKCWpicF9zdGFnZRgM",
           "IAEoBRIOCgZsa19tdWwYDSABKAUSEAoIbGtfc2NvcmUYDiABKAUiXgoMQ01E",
           "X1NfWXVXYW5nEhAKCGNoYWlyX2lkGAEgASgFEgwKBGtpbmQYAiABKAUSEgoK",
           "eXVfd2FuZ19pZBgDIAEoBRIaCgdmaXNoX2lkGAQgAygLMgkuTG9hZEZpc2gi",
@@ -2316,12 +2316,12 @@ public sealed partial class LoadFish : pb::IMessage<LoadFish>
 
   /// <summary>Field number for the "is_aced" field.</summary>
   public const int IsAcedFieldNumber = 11;
-  private int isAced_;
+  private bool isAced_;
   /// <summary>
   ///是否是一网打尽
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public int IsAced {
+  public bool IsAced {
     get { return isAced_; }
     set {
       isAced_ = value;
@@ -2413,7 +2413,7 @@ public sealed partial class LoadFish : pb::IMessage<LoadFish>
     if (NowTime != 0) hash ^= NowTime.GetHashCode();
     if (Mul != 0) hash ^= Mul.GetHashCode();
     if (Stage != 0) hash ^= Stage.GetHashCode();
-    if (IsAced != 0) hash ^= IsAced.GetHashCode();
+    if (IsAced != false) hash ^= IsAced.GetHashCode();
     if (JbpStage != 0) hash ^= JbpStage.GetHashCode();
     if (LkMul != 0) hash ^= LkMul.GetHashCode();
     if (LkScore != 0) hash ^= LkScore.GetHashCode();
@@ -2473,9 +2473,9 @@ public sealed partial class LoadFish : pb::IMessage<LoadFish>
       output.WriteRawTag(80);
       output.WriteInt32(Stage);
     }
-    if (IsAced != 0) {
+    if (IsAced != false) {
       output.WriteRawTag(88);
-      output.WriteInt32(IsAced);
+      output.WriteBool(IsAced);
     }
     if (JbpStage != 0) {
       output.WriteRawTag(96);
@@ -2538,9 +2538,9 @@ public sealed partial class LoadFish : pb::IMessage<LoadFish>
       output.WriteRawTag(80);
       output.WriteInt32(Stage);
     }
-    if (IsAced != 0) {
+    if (IsAced != false) {
       output.WriteRawTag(88);
-      output.WriteInt32(IsAced);
+      output.WriteBool(IsAced);
     }
     if (JbpStage != 0) {
       output.WriteRawTag(96);
@@ -2593,8 +2593,8 @@ public sealed partial class LoadFish : pb::IMessage<LoadFish>
     if (Stage != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(Stage);
     }
-    if (IsAced != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeInt32Size(IsAced);
+    if (IsAced != false) {
+      size += 1 + 1;
     }
     if (JbpStage != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(JbpStage);
@@ -2646,7 +2646,7 @@ public sealed partial class LoadFish : pb::IMessage<LoadFish>
     if (other.Stage != 0) {
       Stage = other.Stage;
     }
-    if (other.IsAced != 0) {
+    if (other.IsAced != false) {
       IsAced = other.IsAced;
     }
     if (other.JbpStage != 0) {
@@ -2713,7 +2713,7 @@ public sealed partial class LoadFish : pb::IMessage<LoadFish>
           break;
         }
         case 88: {
-          IsAced = input.ReadInt32();
+          IsAced = input.ReadBool();
           break;
         }
         case 96: {
@@ -2783,7 +2783,7 @@ public sealed partial class LoadFish : pb::IMessage<LoadFish>
           break;
         }
         case 88: {
-          IsAced = input.ReadInt32();
+          IsAced = input.ReadBool();
           break;
         }
         case 96: {

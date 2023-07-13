@@ -114,7 +114,7 @@ message LoadFish
 	int32		now_time = 8;			//当前已过时间
 	int32		mul = 9;				//倍数
 	int32		stage = 10;				//河豚阶段1-4
-	int32		is_aced = 11;			//是否是一网打尽
+	bool		is_aced = 11;			//是否是一网打尽
 	int32		jbp_stage = 12;			//聚宝盆阶段1-4
 	int32		lk_mul = 13;				//李逵倍数
 	int32		lk_score = 14;			//李逵分数
