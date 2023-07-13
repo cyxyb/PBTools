@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-enum EMsgIDLTBY
+enum EMsgIDSubGame
 {
 	MsgIDSubGame_Null					= 0;
 	SUB_S_CanShoot						= 49000;		//可以发炮
