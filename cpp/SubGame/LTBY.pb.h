@@ -54,6 +54,7 @@ struct TableStruct_LTBY_2eproto {
   static const ::PROTOBUF_NAMESPACE_ID::uint32 offsets[];
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_LTBY_2eproto;
+namespace LTBY {
 class Bullet;
 class BulletDefaultTypeInternal;
 extern BulletDefaultTypeInternal _Bullet_default_instance_;
@@ -147,39 +148,41 @@ extern FishDeadInfoDefaultTypeInternal _FishDeadInfo_default_instance_;
 class LoadFish;
 class LoadFishDefaultTypeInternal;
 extern LoadFishDefaultTypeInternal _LoadFish_default_instance_;
+}  // namespace LTBY
 PROTOBUF_NAMESPACE_OPEN
-template<> ::Bullet* Arena::CreateMaybeMessage<::Bullet>(Arena*);
-template<> ::CMD_C_ChangeBulletLevel* Arena::CreateMaybeMessage<::CMD_C_ChangeBulletLevel>(Arena*);
-template<> ::CMD_C_HitedFish* Arena::CreateMaybeMessage<::CMD_C_HitedFish>(Arena*);
-template<> ::CMD_C_JuBuZhaDan* Arena::CreateMaybeMessage<::CMD_C_JuBuZhaDan>(Arena*);
-template<> ::CMD_C_PlayerLock* Arena::CreateMaybeMessage<::CMD_C_PlayerLock>(Arena*);
-template<> ::CMD_C_PressShoot* Arena::CreateMaybeMessage<::CMD_C_PressShoot>(Arena*);
-template<> ::CMD_C_RobotShoot* Arena::CreateMaybeMessage<::CMD_C_RobotShoot>(Arena*);
-template<> ::CMD_C_ShuiHuZhuan* Arena::CreateMaybeMessage<::CMD_C_ShuiHuZhuan>(Arena*);
-template<> ::CMD_C_TongLeiZhaDan* Arena::CreateMaybeMessage<::CMD_C_TongLeiZhaDan>(Arena*);
-template<> ::CMD_S_AddFish* Arena::CreateMaybeMessage<::CMD_S_AddFish>(Arena*);
-template<> ::CMD_S_CONFIG* Arena::CreateMaybeMessage<::CMD_S_CONFIG>(Arena*);
-template<> ::CMD_S_ChangeBulletLevel* Arena::CreateMaybeMessage<::CMD_S_ChangeBulletLevel>(Arena*);
-template<> ::CMD_S_DaJiangZhangYu* Arena::CreateMaybeMessage<::CMD_S_DaJiangZhangYu>(Arena*);
-template<> ::CMD_S_DaSiXi* Arena::CreateMaybeMessage<::CMD_S_DaSiXi>(Arena*);
-template<> ::CMD_S_FishDead* Arena::CreateMaybeMessage<::CMD_S_FishDead>(Arena*);
-template<> ::CMD_S_JuBuZhaDan* Arena::CreateMaybeMessage<::CMD_S_JuBuZhaDan>(Arena*);
-template<> ::CMD_S_PlayerEnter* Arena::CreateMaybeMessage<::CMD_S_PlayerEnter>(Arena*);
-template<> ::CMD_S_PlayerGunLevel* Arena::CreateMaybeMessage<::CMD_S_PlayerGunLevel>(Arena*);
-template<> ::CMD_S_PlayerLock* Arena::CreateMaybeMessage<::CMD_S_PlayerLock>(Arena*);
-template<> ::CMD_S_PlayerShoot* Arena::CreateMaybeMessage<::CMD_S_PlayerShoot>(Arena*);
-template<> ::CMD_S_PlayerYCEnter* Arena::CreateMaybeMessage<::CMD_S_PlayerYCEnter>(Arena*);
-template<> ::CMD_S_RobotList* Arena::CreateMaybeMessage<::CMD_S_RobotList>(Arena*);
-template<> ::CMD_S_RobotShoot* Arena::CreateMaybeMessage<::CMD_S_RobotShoot>(Arena*);
-template<> ::CMD_S_ShootLK* Arena::CreateMaybeMessage<::CMD_S_ShootLK>(Arena*);
-template<> ::CMD_S_ShuiHuZhuan* Arena::CreateMaybeMessage<::CMD_S_ShuiHuZhuan>(Arena*);
-template<> ::CMD_S_TongLeiZhaDan* Arena::CreateMaybeMessage<::CMD_S_TongLeiZhaDan>(Arena*);
-template<> ::CMD_S_YiWangDaJin* Arena::CreateMaybeMessage<::CMD_S_YiWangDaJin>(Arena*);
-template<> ::CMD_S_YuWang* Arena::CreateMaybeMessage<::CMD_S_YuWang>(Arena*);
-template<> ::CMD_S_ZhongYiTang* Arena::CreateMaybeMessage<::CMD_S_ZhongYiTang>(Arena*);
-template<> ::FishDeadInfo* Arena::CreateMaybeMessage<::FishDeadInfo>(Arena*);
-template<> ::LoadFish* Arena::CreateMaybeMessage<::LoadFish>(Arena*);
+template<> ::LTBY::Bullet* Arena::CreateMaybeMessage<::LTBY::Bullet>(Arena*);
+template<> ::LTBY::CMD_C_ChangeBulletLevel* Arena::CreateMaybeMessage<::LTBY::CMD_C_ChangeBulletLevel>(Arena*);
+template<> ::LTBY::CMD_C_HitedFish* Arena::CreateMaybeMessage<::LTBY::CMD_C_HitedFish>(Arena*);
+template<> ::LTBY::CMD_C_JuBuZhaDan* Arena::CreateMaybeMessage<::LTBY::CMD_C_JuBuZhaDan>(Arena*);
+template<> ::LTBY::CMD_C_PlayerLock* Arena::CreateMaybeMessage<::LTBY::CMD_C_PlayerLock>(Arena*);
+template<> ::LTBY::CMD_C_PressShoot* Arena::CreateMaybeMessage<::LTBY::CMD_C_PressShoot>(Arena*);
+template<> ::LTBY::CMD_C_RobotShoot* Arena::CreateMaybeMessage<::LTBY::CMD_C_RobotShoot>(Arena*);
+template<> ::LTBY::CMD_C_ShuiHuZhuan* Arena::CreateMaybeMessage<::LTBY::CMD_C_ShuiHuZhuan>(Arena*);
+template<> ::LTBY::CMD_C_TongLeiZhaDan* Arena::CreateMaybeMessage<::LTBY::CMD_C_TongLeiZhaDan>(Arena*);
+template<> ::LTBY::CMD_S_AddFish* Arena::CreateMaybeMessage<::LTBY::CMD_S_AddFish>(Arena*);
+template<> ::LTBY::CMD_S_CONFIG* Arena::CreateMaybeMessage<::LTBY::CMD_S_CONFIG>(Arena*);
+template<> ::LTBY::CMD_S_ChangeBulletLevel* Arena::CreateMaybeMessage<::LTBY::CMD_S_ChangeBulletLevel>(Arena*);
+template<> ::LTBY::CMD_S_DaJiangZhangYu* Arena::CreateMaybeMessage<::LTBY::CMD_S_DaJiangZhangYu>(Arena*);
+template<> ::LTBY::CMD_S_DaSiXi* Arena::CreateMaybeMessage<::LTBY::CMD_S_DaSiXi>(Arena*);
+template<> ::LTBY::CMD_S_FishDead* Arena::CreateMaybeMessage<::LTBY::CMD_S_FishDead>(Arena*);
+template<> ::LTBY::CMD_S_JuBuZhaDan* Arena::CreateMaybeMessage<::LTBY::CMD_S_JuBuZhaDan>(Arena*);
+template<> ::LTBY::CMD_S_PlayerEnter* Arena::CreateMaybeMessage<::LTBY::CMD_S_PlayerEnter>(Arena*);
+template<> ::LTBY::CMD_S_PlayerGunLevel* Arena::CreateMaybeMessage<::LTBY::CMD_S_PlayerGunLevel>(Arena*);
+template<> ::LTBY::CMD_S_PlayerLock* Arena::CreateMaybeMessage<::LTBY::CMD_S_PlayerLock>(Arena*);
+template<> ::LTBY::CMD_S_PlayerShoot* Arena::CreateMaybeMessage<::LTBY::CMD_S_PlayerShoot>(Arena*);
+template<> ::LTBY::CMD_S_PlayerYCEnter* Arena::CreateMaybeMessage<::LTBY::CMD_S_PlayerYCEnter>(Arena*);
+template<> ::LTBY::CMD_S_RobotList* Arena::CreateMaybeMessage<::LTBY::CMD_S_RobotList>(Arena*);
+template<> ::LTBY::CMD_S_RobotShoot* Arena::CreateMaybeMessage<::LTBY::CMD_S_RobotShoot>(Arena*);
+template<> ::LTBY::CMD_S_ShootLK* Arena::CreateMaybeMessage<::LTBY::CMD_S_ShootLK>(Arena*);
+template<> ::LTBY::CMD_S_ShuiHuZhuan* Arena::CreateMaybeMessage<::LTBY::CMD_S_ShuiHuZhuan>(Arena*);
+template<> ::LTBY::CMD_S_TongLeiZhaDan* Arena::CreateMaybeMessage<::LTBY::CMD_S_TongLeiZhaDan>(Arena*);
+template<> ::LTBY::CMD_S_YiWangDaJin* Arena::CreateMaybeMessage<::LTBY::CMD_S_YiWangDaJin>(Arena*);
+template<> ::LTBY::CMD_S_YuWang* Arena::CreateMaybeMessage<::LTBY::CMD_S_YuWang>(Arena*);
+template<> ::LTBY::CMD_S_ZhongYiTang* Arena::CreateMaybeMessage<::LTBY::CMD_S_ZhongYiTang>(Arena*);
+template<> ::LTBY::FishDeadInfo* Arena::CreateMaybeMessage<::LTBY::FishDeadInfo>(Arena*);
+template<> ::LTBY::LoadFish* Arena::CreateMaybeMessage<::LTBY::LoadFish>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
+namespace LTBY {
 
 enum EMsgIDLTBY : int {
   MsgIDSubGame_Null = 0,
@@ -247,7 +250,7 @@ inline bool EMsgIDLTBY_Parse(
 // ===================================================================
 
 class CMD_S_RobotShoot PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_RobotShoot) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.CMD_S_RobotShoot) */ {
  public:
   inline CMD_S_RobotShoot() : CMD_S_RobotShoot(nullptr) {}
   virtual ~CMD_S_RobotShoot();
@@ -335,7 +338,7 @@ class CMD_S_RobotShoot PROTOBUF_FINAL :
   void InternalSwap(CMD_S_RobotShoot* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_RobotShoot";
+    return "LTBY.CMD_S_RobotShoot";
   }
   protected:
   explicit CMD_S_RobotShoot(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -399,7 +402,7 @@ class CMD_S_RobotShoot PROTOBUF_FINAL :
   void _internal_set_is_lock(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_RobotShoot)
+  // @@protoc_insertion_point(class_scope:LTBY.CMD_S_RobotShoot)
  private:
   class _Internal;
 
@@ -416,7 +419,7 @@ class CMD_S_RobotShoot PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_RobotList PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_RobotList) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.CMD_S_RobotList) */ {
  public:
   inline CMD_S_RobotList() : CMD_S_RobotList(nullptr) {}
   virtual ~CMD_S_RobotList();
@@ -504,7 +507,7 @@ class CMD_S_RobotList PROTOBUF_FINAL :
   void InternalSwap(CMD_S_RobotList* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_RobotList";
+    return "LTBY.CMD_S_RobotList";
   }
   protected:
   explicit CMD_S_RobotList(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -551,7 +554,7 @@ class CMD_S_RobotList PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< bool >*
       mutable_is_robot();
 
-  // @@protoc_insertion_point(class_scope:CMD_S_RobotList)
+  // @@protoc_insertion_point(class_scope:LTBY.CMD_S_RobotList)
  private:
   class _Internal;
 
@@ -566,7 +569,7 @@ class CMD_S_RobotList PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_PlayerLock PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_PlayerLock) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.CMD_S_PlayerLock) */ {
  public:
   inline CMD_S_PlayerLock() : CMD_S_PlayerLock(nullptr) {}
   virtual ~CMD_S_PlayerLock();
@@ -654,7 +657,7 @@ class CMD_S_PlayerLock PROTOBUF_FINAL :
   void InternalSwap(CMD_S_PlayerLock* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_PlayerLock";
+    return "LTBY.CMD_S_PlayerLock";
   }
   protected:
   explicit CMD_S_PlayerLock(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -698,7 +701,7 @@ class CMD_S_PlayerLock PROTOBUF_FINAL :
   void _internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_PlayerLock)
+  // @@protoc_insertion_point(class_scope:LTBY.CMD_S_PlayerLock)
  private:
   class _Internal;
 
@@ -713,7 +716,7 @@ class CMD_S_PlayerLock PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_ShootLK PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_ShootLK) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.CMD_S_ShootLK) */ {
  public:
   inline CMD_S_ShootLK() : CMD_S_ShootLK(nullptr) {}
   virtual ~CMD_S_ShootLK();
@@ -801,7 +804,7 @@ class CMD_S_ShootLK PROTOBUF_FINAL :
   void InternalSwap(CMD_S_ShootLK* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_ShootLK";
+    return "LTBY.CMD_S_ShootLK";
   }
   protected:
   explicit CMD_S_ShootLK(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -905,7 +908,7 @@ class CMD_S_ShootLK PROTOBUF_FINAL :
   void _internal_set_cur_lk_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_ShootLK)
+  // @@protoc_insertion_point(class_scope:LTBY.CMD_S_ShootLK)
  private:
   class _Internal;
 
@@ -926,7 +929,7 @@ class CMD_S_ShootLK PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_JuBuZhaDan PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_JuBuZhaDan) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.CMD_S_JuBuZhaDan) */ {
  public:
   inline CMD_S_JuBuZhaDan() : CMD_S_JuBuZhaDan(nullptr) {}
   virtual ~CMD_S_JuBuZhaDan();
@@ -1014,7 +1017,7 @@ class CMD_S_JuBuZhaDan PROTOBUF_FINAL :
   void InternalSwap(CMD_S_JuBuZhaDan* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_JuBuZhaDan";
+    return "LTBY.CMD_S_JuBuZhaDan";
   }
   protected:
   explicit CMD_S_JuBuZhaDan(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -1058,7 +1061,7 @@ class CMD_S_JuBuZhaDan PROTOBUF_FINAL :
   void _internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_JuBuZhaDan)
+  // @@protoc_insertion_point(class_scope:LTBY.CMD_S_JuBuZhaDan)
  private:
   class _Internal;
 
@@ -1073,7 +1076,7 @@ class CMD_S_JuBuZhaDan PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_YiWangDaJin PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_YiWangDaJin) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.CMD_S_YiWangDaJin) */ {
  public:
   inline CMD_S_YiWangDaJin() : CMD_S_YiWangDaJin(nullptr) {}
   virtual ~CMD_S_YiWangDaJin();
@@ -1161,7 +1164,7 @@ class CMD_S_YiWangDaJin PROTOBUF_FINAL :
   void InternalSwap(CMD_S_YiWangDaJin* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_YiWangDaJin";
+    return "LTBY.CMD_S_YiWangDaJin";
   }
   protected:
   explicit CMD_S_YiWangDaJin(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -1205,7 +1208,7 @@ class CMD_S_YiWangDaJin PROTOBUF_FINAL :
   void _internal_set_bullet_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_YiWangDaJin)
+  // @@protoc_insertion_point(class_scope:LTBY.CMD_S_YiWangDaJin)
  private:
   class _Internal;
 
@@ -1220,7 +1223,7 @@ class CMD_S_YiWangDaJin PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_TongLeiZhaDan PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_TongLeiZhaDan) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.CMD_S_TongLeiZhaDan) */ {
  public:
   inline CMD_S_TongLeiZhaDan() : CMD_S_TongLeiZhaDan(nullptr) {}
   virtual ~CMD_S_TongLeiZhaDan();
@@ -1308,7 +1311,7 @@ class CMD_S_TongLeiZhaDan PROTOBUF_FINAL :
   void InternalSwap(CMD_S_TongLeiZhaDan* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_TongLeiZhaDan";
+    return "LTBY.CMD_S_TongLeiZhaDan";
   }
   protected:
   explicit CMD_S_TongLeiZhaDan(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -1362,7 +1365,7 @@ class CMD_S_TongLeiZhaDan PROTOBUF_FINAL :
   void _internal_set_kind(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_TongLeiZhaDan)
+  // @@protoc_insertion_point(class_scope:LTBY.CMD_S_TongLeiZhaDan)
  private:
   class _Internal;
 
@@ -1378,7 +1381,7 @@ class CMD_S_TongLeiZhaDan PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class LoadFish PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LoadFish) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.LoadFish) */ {
  public:
   inline LoadFish() : LoadFish(nullptr) {}
   virtual ~LoadFish();
@@ -1466,7 +1469,7 @@ class LoadFish PROTOBUF_FINAL :
   void InternalSwap(LoadFish* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "LoadFish";
+    return "LTBY.LoadFish";
   }
   protected:
   explicit LoadFish(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -1630,7 +1633,7 @@ class LoadFish PROTOBUF_FINAL :
   void _internal_set_lk_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:LoadFish)
+  // @@protoc_insertion_point(class_scope:LTBY.LoadFish)
  private:
   class _Internal;
 
@@ -1657,7 +1660,7 @@ class LoadFish PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_YuWang PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_YuWang) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.CMD_S_YuWang) */ {
  public:
   inline CMD_S_YuWang() : CMD_S_YuWang(nullptr) {}
   virtual ~CMD_S_YuWang();
@@ -1745,7 +1748,7 @@ class CMD_S_YuWang PROTOBUF_FINAL :
   void InternalSwap(CMD_S_YuWang* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_YuWang";
+    return "LTBY.CMD_S_YuWang";
   }
   protected:
   explicit CMD_S_YuWang(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -1773,22 +1776,22 @@ class CMD_S_YuWang PROTOBUF_FINAL :
     kKindFieldNumber = 2,
     kYuWangIdFieldNumber = 3,
   };
-  // repeated .LoadFish fish_id = 4;
+  // repeated .LTBY.LoadFish fish_id = 4;
   int fish_id_size() const;
   private:
   int _internal_fish_id_size() const;
   public:
   void clear_fish_id();
-  ::LoadFish* mutable_fish_id(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >*
+  ::LTBY::LoadFish* mutable_fish_id(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LTBY::LoadFish >*
       mutable_fish_id();
   private:
-  const ::LoadFish& _internal_fish_id(int index) const;
-  ::LoadFish* _internal_add_fish_id();
+  const ::LTBY::LoadFish& _internal_fish_id(int index) const;
+  ::LTBY::LoadFish* _internal_add_fish_id();
   public:
-  const ::LoadFish& fish_id(int index) const;
-  ::LoadFish* add_fish_id();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >&
+  const ::LTBY::LoadFish& fish_id(int index) const;
+  ::LTBY::LoadFish* add_fish_id();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LTBY::LoadFish >&
       fish_id() const;
 
   // int32 chair_id = 1;
@@ -1818,14 +1821,14 @@ class CMD_S_YuWang PROTOBUF_FINAL :
   void _internal_set_yu_wang_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_YuWang)
+  // @@protoc_insertion_point(class_scope:LTBY.CMD_S_YuWang)
  private:
   class _Internal;
 
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish > fish_id_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LTBY::LoadFish > fish_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 kind_;
   ::PROTOBUF_NAMESPACE_ID::int32 yu_wang_id_;
@@ -1835,7 +1838,7 @@ class CMD_S_YuWang PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_DaSiXi PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_DaSiXi) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.CMD_S_DaSiXi) */ {
  public:
   inline CMD_S_DaSiXi() : CMD_S_DaSiXi(nullptr) {}
   virtual ~CMD_S_DaSiXi();
@@ -1923,7 +1926,7 @@ class CMD_S_DaSiXi PROTOBUF_FINAL :
   void InternalSwap(CMD_S_DaSiXi* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_DaSiXi";
+    return "LTBY.CMD_S_DaSiXi";
   }
   protected:
   explicit CMD_S_DaSiXi(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -1977,7 +1980,7 @@ class CMD_S_DaSiXi PROTOBUF_FINAL :
   void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_DaSiXi)
+  // @@protoc_insertion_point(class_scope:LTBY.CMD_S_DaSiXi)
  private:
   class _Internal;
 
@@ -1993,7 +1996,7 @@ class CMD_S_DaSiXi PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_DaJiangZhangYu PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_DaJiangZhangYu) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.CMD_S_DaJiangZhangYu) */ {
  public:
   inline CMD_S_DaJiangZhangYu() : CMD_S_DaJiangZhangYu(nullptr) {}
   virtual ~CMD_S_DaJiangZhangYu();
@@ -2081,7 +2084,7 @@ class CMD_S_DaJiangZhangYu PROTOBUF_FINAL :
   void InternalSwap(CMD_S_DaJiangZhangYu* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_DaJiangZhangYu";
+    return "LTBY.CMD_S_DaJiangZhangYu";
   }
   protected:
   explicit CMD_S_DaJiangZhangYu(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -2155,7 +2158,7 @@ class CMD_S_DaJiangZhangYu PROTOBUF_FINAL :
   void _internal_set_odd3(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_DaJiangZhangYu)
+  // @@protoc_insertion_point(class_scope:LTBY.CMD_S_DaJiangZhangYu)
  private:
   class _Internal;
 
@@ -2173,7 +2176,7 @@ class CMD_S_DaJiangZhangYu PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_ZhongYiTang PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_ZhongYiTang) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.CMD_S_ZhongYiTang) */ {
  public:
   inline CMD_S_ZhongYiTang() : CMD_S_ZhongYiTang(nullptr) {}
   virtual ~CMD_S_ZhongYiTang();
@@ -2261,7 +2264,7 @@ class CMD_S_ZhongYiTang PROTOBUF_FINAL :
   void InternalSwap(CMD_S_ZhongYiTang* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_ZhongYiTang";
+    return "LTBY.CMD_S_ZhongYiTang";
   }
   protected:
   explicit CMD_S_ZhongYiTang(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -2315,7 +2318,7 @@ class CMD_S_ZhongYiTang PROTOBUF_FINAL :
   void _internal_set_add_mul(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_ZhongYiTang)
+  // @@protoc_insertion_point(class_scope:LTBY.CMD_S_ZhongYiTang)
  private:
   class _Internal;
 
@@ -2331,7 +2334,7 @@ class CMD_S_ZhongYiTang PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_ShuiHuZhuan PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_ShuiHuZhuan) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.CMD_S_ShuiHuZhuan) */ {
  public:
   inline CMD_S_ShuiHuZhuan() : CMD_S_ShuiHuZhuan(nullptr) {}
   virtual ~CMD_S_ShuiHuZhuan();
@@ -2419,7 +2422,7 @@ class CMD_S_ShuiHuZhuan PROTOBUF_FINAL :
   void InternalSwap(CMD_S_ShuiHuZhuan* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_ShuiHuZhuan";
+    return "LTBY.CMD_S_ShuiHuZhuan";
   }
   protected:
   explicit CMD_S_ShuiHuZhuan(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -2499,7 +2502,7 @@ class CMD_S_ShuiHuZhuan PROTOBUF_FINAL :
   void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_ShuiHuZhuan)
+  // @@protoc_insertion_point(class_scope:LTBY.CMD_S_ShuiHuZhuan)
  private:
   class _Internal;
 
@@ -2517,7 +2520,7 @@ class CMD_S_ShuiHuZhuan PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_ChangeBulletLevel PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_ChangeBulletLevel) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.CMD_S_ChangeBulletLevel) */ {
  public:
   inline CMD_S_ChangeBulletLevel() : CMD_S_ChangeBulletLevel(nullptr) {}
   virtual ~CMD_S_ChangeBulletLevel();
@@ -2605,7 +2608,7 @@ class CMD_S_ChangeBulletLevel PROTOBUF_FINAL :
   void InternalSwap(CMD_S_ChangeBulletLevel* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_ChangeBulletLevel";
+    return "LTBY.CMD_S_ChangeBulletLevel";
   }
   protected:
   explicit CMD_S_ChangeBulletLevel(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -2659,7 +2662,7 @@ class CMD_S_ChangeBulletLevel PROTOBUF_FINAL :
   void _internal_set_gun_level(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_ChangeBulletLevel)
+  // @@protoc_insertion_point(class_scope:LTBY.CMD_S_ChangeBulletLevel)
  private:
   class _Internal;
 
@@ -2675,7 +2678,7 @@ class CMD_S_ChangeBulletLevel PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_CONFIG PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_CONFIG) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.CMD_S_CONFIG) */ {
  public:
   inline CMD_S_CONFIG() : CMD_S_CONFIG(nullptr) {}
   virtual ~CMD_S_CONFIG();
@@ -2763,7 +2766,7 @@ class CMD_S_CONFIG PROTOBUF_FINAL :
   void InternalSwap(CMD_S_CONFIG* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_CONFIG";
+    return "LTBY.CMD_S_CONFIG";
   }
   protected:
   explicit CMD_S_CONFIG(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -2866,7 +2869,7 @@ class CMD_S_CONFIG PROTOBUF_FINAL :
   void _internal_set_background_picture_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_CONFIG)
+  // @@protoc_insertion_point(class_scope:LTBY.CMD_S_CONFIG)
  private:
   class _Internal;
 
@@ -2886,7 +2889,7 @@ class CMD_S_CONFIG PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_PlayerGunLevel PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_PlayerGunLevel) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.CMD_S_PlayerGunLevel) */ {
  public:
   inline CMD_S_PlayerGunLevel() : CMD_S_PlayerGunLevel(nullptr) {}
   virtual ~CMD_S_PlayerGunLevel();
@@ -2974,7 +2977,7 @@ class CMD_S_PlayerGunLevel PROTOBUF_FINAL :
   void InternalSwap(CMD_S_PlayerGunLevel* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_PlayerGunLevel";
+    return "LTBY.CMD_S_PlayerGunLevel";
   }
   protected:
   explicit CMD_S_PlayerGunLevel(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -3044,7 +3047,7 @@ class CMD_S_PlayerGunLevel PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_gun_type();
 
-  // @@protoc_insertion_point(class_scope:CMD_S_PlayerGunLevel)
+  // @@protoc_insertion_point(class_scope:LTBY.CMD_S_PlayerGunLevel)
  private:
   class _Internal;
 
@@ -3061,7 +3064,7 @@ class CMD_S_PlayerGunLevel PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_AddFish PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_AddFish) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.CMD_S_AddFish) */ {
  public:
   inline CMD_S_AddFish() : CMD_S_AddFish(nullptr) {}
   virtual ~CMD_S_AddFish();
@@ -3149,7 +3152,7 @@ class CMD_S_AddFish PROTOBUF_FINAL :
   void InternalSwap(CMD_S_AddFish* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_AddFish";
+    return "LTBY.CMD_S_AddFish";
   }
   protected:
   explicit CMD_S_AddFish(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -3174,39 +3177,39 @@ class CMD_S_AddFish PROTOBUF_FINAL :
   enum : int {
     kLoadFishFieldNumber = 1,
   };
-  // repeated .LoadFish load_fish = 1;
+  // repeated .LTBY.LoadFish load_fish = 1;
   int load_fish_size() const;
   private:
   int _internal_load_fish_size() const;
   public:
   void clear_load_fish();
-  ::LoadFish* mutable_load_fish(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >*
+  ::LTBY::LoadFish* mutable_load_fish(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LTBY::LoadFish >*
       mutable_load_fish();
   private:
-  const ::LoadFish& _internal_load_fish(int index) const;
-  ::LoadFish* _internal_add_load_fish();
+  const ::LTBY::LoadFish& _internal_load_fish(int index) const;
+  ::LTBY::LoadFish* _internal_add_load_fish();
   public:
-  const ::LoadFish& load_fish(int index) const;
-  ::LoadFish* add_load_fish();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >&
+  const ::LTBY::LoadFish& load_fish(int index) const;
+  ::LTBY::LoadFish* add_load_fish();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LTBY::LoadFish >&
       load_fish() const;
 
-  // @@protoc_insertion_point(class_scope:CMD_S_AddFish)
+  // @@protoc_insertion_point(class_scope:LTBY.CMD_S_AddFish)
  private:
   class _Internal;
 
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish > load_fish_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LTBY::LoadFish > load_fish_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_LTBY_2eproto;
 };
 // -------------------------------------------------------------------
 
 class CMD_S_PlayerEnter PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_PlayerEnter) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.CMD_S_PlayerEnter) */ {
  public:
   inline CMD_S_PlayerEnter() : CMD_S_PlayerEnter(nullptr) {}
   virtual ~CMD_S_PlayerEnter();
@@ -3294,7 +3297,7 @@ class CMD_S_PlayerEnter PROTOBUF_FINAL :
   void InternalSwap(CMD_S_PlayerEnter* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_PlayerEnter";
+    return "LTBY.CMD_S_PlayerEnter";
   }
   protected:
   explicit CMD_S_PlayerEnter(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -3319,39 +3322,39 @@ class CMD_S_PlayerEnter PROTOBUF_FINAL :
   enum : int {
     kLoadFishFieldNumber = 1,
   };
-  // repeated .LoadFish load_fish = 1;
+  // repeated .LTBY.LoadFish load_fish = 1;
   int load_fish_size() const;
   private:
   int _internal_load_fish_size() const;
   public:
   void clear_load_fish();
-  ::LoadFish* mutable_load_fish(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >*
+  ::LTBY::LoadFish* mutable_load_fish(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LTBY::LoadFish >*
       mutable_load_fish();
   private:
-  const ::LoadFish& _internal_load_fish(int index) const;
-  ::LoadFish* _internal_add_load_fish();
+  const ::LTBY::LoadFish& _internal_load_fish(int index) const;
+  ::LTBY::LoadFish* _internal_add_load_fish();
   public:
-  const ::LoadFish& load_fish(int index) const;
-  ::LoadFish* add_load_fish();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >&
+  const ::LTBY::LoadFish& load_fish(int index) const;
+  ::LTBY::LoadFish* add_load_fish();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LTBY::LoadFish >&
       load_fish() const;
 
-  // @@protoc_insertion_point(class_scope:CMD_S_PlayerEnter)
+  // @@protoc_insertion_point(class_scope:LTBY.CMD_S_PlayerEnter)
  private:
   class _Internal;
 
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish > load_fish_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LTBY::LoadFish > load_fish_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_LTBY_2eproto;
 };
 // -------------------------------------------------------------------
 
 class CMD_S_PlayerYCEnter PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_PlayerYCEnter) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.CMD_S_PlayerYCEnter) */ {
  public:
   inline CMD_S_PlayerYCEnter() : CMD_S_PlayerYCEnter(nullptr) {}
   virtual ~CMD_S_PlayerYCEnter();
@@ -3439,7 +3442,7 @@ class CMD_S_PlayerYCEnter PROTOBUF_FINAL :
   void InternalSwap(CMD_S_PlayerYCEnter* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_PlayerYCEnter";
+    return "LTBY.CMD_S_PlayerYCEnter";
   }
   protected:
   explicit CMD_S_PlayerYCEnter(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -3465,22 +3468,22 @@ class CMD_S_PlayerYCEnter PROTOBUF_FINAL :
     kLoadFishFieldNumber = 2,
     kYuChaoIdFieldNumber = 1,
   };
-  // repeated .LoadFish load_fish = 2;
+  // repeated .LTBY.LoadFish load_fish = 2;
   int load_fish_size() const;
   private:
   int _internal_load_fish_size() const;
   public:
   void clear_load_fish();
-  ::LoadFish* mutable_load_fish(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >*
+  ::LTBY::LoadFish* mutable_load_fish(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LTBY::LoadFish >*
       mutable_load_fish();
   private:
-  const ::LoadFish& _internal_load_fish(int index) const;
-  ::LoadFish* _internal_add_load_fish();
+  const ::LTBY::LoadFish& _internal_load_fish(int index) const;
+  ::LTBY::LoadFish* _internal_add_load_fish();
   public:
-  const ::LoadFish& load_fish(int index) const;
-  ::LoadFish* add_load_fish();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >&
+  const ::LTBY::LoadFish& load_fish(int index) const;
+  ::LTBY::LoadFish* add_load_fish();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LTBY::LoadFish >&
       load_fish() const;
 
   // int32 yu_chao_id = 1;
@@ -3492,14 +3495,14 @@ class CMD_S_PlayerYCEnter PROTOBUF_FINAL :
   void _internal_set_yu_chao_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_PlayerYCEnter)
+  // @@protoc_insertion_point(class_scope:LTBY.CMD_S_PlayerYCEnter)
  private:
   class _Internal;
 
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish > load_fish_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LTBY::LoadFish > load_fish_;
   ::PROTOBUF_NAMESPACE_ID::int32 yu_chao_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_LTBY_2eproto;
@@ -3507,7 +3510,7 @@ class CMD_S_PlayerYCEnter PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class FishDeadInfo PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:FishDeadInfo) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.FishDeadInfo) */ {
  public:
   inline FishDeadInfo() : FishDeadInfo(nullptr) {}
   virtual ~FishDeadInfo();
@@ -3595,7 +3598,7 @@ class FishDeadInfo PROTOBUF_FINAL :
   void InternalSwap(FishDeadInfo* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "FishDeadInfo";
+    return "LTBY.FishDeadInfo";
   }
   protected:
   explicit FishDeadInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -3639,7 +3642,7 @@ class FishDeadInfo PROTOBUF_FINAL :
   void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:FishDeadInfo)
+  // @@protoc_insertion_point(class_scope:LTBY.FishDeadInfo)
  private:
   class _Internal;
 
@@ -3654,7 +3657,7 @@ class FishDeadInfo PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_FishDead PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_FishDead) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.CMD_S_FishDead) */ {
  public:
   inline CMD_S_FishDead() : CMD_S_FishDead(nullptr) {}
   virtual ~CMD_S_FishDead();
@@ -3742,7 +3745,7 @@ class CMD_S_FishDead PROTOBUF_FINAL :
   void InternalSwap(CMD_S_FishDead* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_FishDead";
+    return "LTBY.CMD_S_FishDead";
   }
   protected:
   explicit CMD_S_FishDead(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -3770,22 +3773,22 @@ class CMD_S_FishDead PROTOBUF_FINAL :
     kLeiLongOddFieldNumber = 4,
     kScoreFieldNumber = 3,
   };
-  // repeated .FishDeadInfo fish = 2;
+  // repeated .LTBY.FishDeadInfo fish = 2;
   int fish_size() const;
   private:
   int _internal_fish_size() const;
   public:
   void clear_fish();
-  ::FishDeadInfo* mutable_fish(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishDeadInfo >*
+  ::LTBY::FishDeadInfo* mutable_fish(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LTBY::FishDeadInfo >*
       mutable_fish();
   private:
-  const ::FishDeadInfo& _internal_fish(int index) const;
-  ::FishDeadInfo* _internal_add_fish();
+  const ::LTBY::FishDeadInfo& _internal_fish(int index) const;
+  ::LTBY::FishDeadInfo* _internal_add_fish();
   public:
-  const ::FishDeadInfo& fish(int index) const;
-  ::FishDeadInfo* add_fish();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishDeadInfo >&
+  const ::LTBY::FishDeadInfo& fish(int index) const;
+  ::LTBY::FishDeadInfo* add_fish();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LTBY::FishDeadInfo >&
       fish() const;
 
   // int32 chair_id = 1;
@@ -3815,14 +3818,14 @@ class CMD_S_FishDead PROTOBUF_FINAL :
   void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_FishDead)
+  // @@protoc_insertion_point(class_scope:LTBY.CMD_S_FishDead)
  private:
   class _Internal;
 
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishDeadInfo > fish_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LTBY::FishDeadInfo > fish_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 lei_long_odd_;
   ::PROTOBUF_NAMESPACE_ID::int64 score_;
@@ -3832,7 +3835,7 @@ class CMD_S_FishDead PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_PlayerShoot PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_PlayerShoot) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.CMD_S_PlayerShoot) */ {
  public:
   inline CMD_S_PlayerShoot() : CMD_S_PlayerShoot(nullptr) {}
   virtual ~CMD_S_PlayerShoot();
@@ -3920,7 +3923,7 @@ class CMD_S_PlayerShoot PROTOBUF_FINAL :
   void InternalSwap(CMD_S_PlayerShoot* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_PlayerShoot";
+    return "LTBY.CMD_S_PlayerShoot";
   }
   protected:
   explicit CMD_S_PlayerShoot(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -4004,7 +4007,7 @@ class CMD_S_PlayerShoot PROTOBUF_FINAL :
   void _internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_PlayerShoot)
+  // @@protoc_insertion_point(class_scope:LTBY.CMD_S_PlayerShoot)
  private:
   class _Internal;
 
@@ -4023,7 +4026,7 @@ class CMD_S_PlayerShoot PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_C_RobotShoot PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_C_RobotShoot) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.CMD_C_RobotShoot) */ {
  public:
   inline CMD_C_RobotShoot() : CMD_C_RobotShoot(nullptr) {}
   virtual ~CMD_C_RobotShoot();
@@ -4111,7 +4114,7 @@ class CMD_C_RobotShoot PROTOBUF_FINAL :
   void InternalSwap(CMD_C_RobotShoot* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_C_RobotShoot";
+    return "LTBY.CMD_C_RobotShoot";
   }
   protected:
   explicit CMD_C_RobotShoot(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -4175,7 +4178,7 @@ class CMD_C_RobotShoot PROTOBUF_FINAL :
   void _internal_set_is_lock(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_C_RobotShoot)
+  // @@protoc_insertion_point(class_scope:LTBY.CMD_C_RobotShoot)
  private:
   class _Internal;
 
@@ -4192,7 +4195,7 @@ class CMD_C_RobotShoot PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_C_PlayerLock PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_C_PlayerLock) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.CMD_C_PlayerLock) */ {
  public:
   inline CMD_C_PlayerLock() : CMD_C_PlayerLock(nullptr) {}
   virtual ~CMD_C_PlayerLock();
@@ -4280,7 +4283,7 @@ class CMD_C_PlayerLock PROTOBUF_FINAL :
   void InternalSwap(CMD_C_PlayerLock* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_C_PlayerLock";
+    return "LTBY.CMD_C_PlayerLock";
   }
   protected:
   explicit CMD_C_PlayerLock(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -4324,7 +4327,7 @@ class CMD_C_PlayerLock PROTOBUF_FINAL :
   void _internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_C_PlayerLock)
+  // @@protoc_insertion_point(class_scope:LTBY.CMD_C_PlayerLock)
  private:
   class _Internal;
 
@@ -4339,7 +4342,7 @@ class CMD_C_PlayerLock PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_C_JuBuZhaDan PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_C_JuBuZhaDan) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.CMD_C_JuBuZhaDan) */ {
  public:
   inline CMD_C_JuBuZhaDan() : CMD_C_JuBuZhaDan(nullptr) {}
   virtual ~CMD_C_JuBuZhaDan();
@@ -4427,7 +4430,7 @@ class CMD_C_JuBuZhaDan PROTOBUF_FINAL :
   void InternalSwap(CMD_C_JuBuZhaDan* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_C_JuBuZhaDan";
+    return "LTBY.CMD_C_JuBuZhaDan";
   }
   protected:
   explicit CMD_C_JuBuZhaDan(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -4494,7 +4497,7 @@ class CMD_C_JuBuZhaDan PROTOBUF_FINAL :
   void _internal_set_te_shu_iu_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_C_JuBuZhaDan)
+  // @@protoc_insertion_point(class_scope:LTBY.CMD_C_JuBuZhaDan)
  private:
   class _Internal;
 
@@ -4511,7 +4514,7 @@ class CMD_C_JuBuZhaDan PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_C_TongLeiZhaDan PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_C_TongLeiZhaDan) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.CMD_C_TongLeiZhaDan) */ {
  public:
   inline CMD_C_TongLeiZhaDan() : CMD_C_TongLeiZhaDan(nullptr) {}
   virtual ~CMD_C_TongLeiZhaDan();
@@ -4599,7 +4602,7 @@ class CMD_C_TongLeiZhaDan PROTOBUF_FINAL :
   void InternalSwap(CMD_C_TongLeiZhaDan* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_C_TongLeiZhaDan";
+    return "LTBY.CMD_C_TongLeiZhaDan";
   }
   protected:
   explicit CMD_C_TongLeiZhaDan(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -4666,7 +4669,7 @@ class CMD_C_TongLeiZhaDan PROTOBUF_FINAL :
   void _internal_set_te_shu_iu_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_C_TongLeiZhaDan)
+  // @@protoc_insertion_point(class_scope:LTBY.CMD_C_TongLeiZhaDan)
  private:
   class _Internal;
 
@@ -4683,7 +4686,7 @@ class CMD_C_TongLeiZhaDan PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_C_ShuiHuZhuan PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_C_ShuiHuZhuan) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.CMD_C_ShuiHuZhuan) */ {
  public:
   inline CMD_C_ShuiHuZhuan() : CMD_C_ShuiHuZhuan(nullptr) {}
   virtual ~CMD_C_ShuiHuZhuan();
@@ -4771,7 +4774,7 @@ class CMD_C_ShuiHuZhuan PROTOBUF_FINAL :
   void InternalSwap(CMD_C_ShuiHuZhuan* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_C_ShuiHuZhuan";
+    return "LTBY.CMD_C_ShuiHuZhuan";
   }
   protected:
   explicit CMD_C_ShuiHuZhuan(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -4838,7 +4841,7 @@ class CMD_C_ShuiHuZhuan PROTOBUF_FINAL :
   void _internal_set_te_shu_iu_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_C_ShuiHuZhuan)
+  // @@protoc_insertion_point(class_scope:LTBY.CMD_C_ShuiHuZhuan)
  private:
   class _Internal;
 
@@ -4855,7 +4858,7 @@ class CMD_C_ShuiHuZhuan PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_C_ChangeBulletLevel PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_C_ChangeBulletLevel) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.CMD_C_ChangeBulletLevel) */ {
  public:
   inline CMD_C_ChangeBulletLevel() : CMD_C_ChangeBulletLevel(nullptr) {}
   virtual ~CMD_C_ChangeBulletLevel();
@@ -4943,7 +4946,7 @@ class CMD_C_ChangeBulletLevel PROTOBUF_FINAL :
   void InternalSwap(CMD_C_ChangeBulletLevel* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_C_ChangeBulletLevel";
+    return "LTBY.CMD_C_ChangeBulletLevel";
   }
   protected:
   explicit CMD_C_ChangeBulletLevel(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -4997,7 +5000,7 @@ class CMD_C_ChangeBulletLevel PROTOBUF_FINAL :
   void _internal_set_gun_level(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_C_ChangeBulletLevel)
+  // @@protoc_insertion_point(class_scope:LTBY.CMD_C_ChangeBulletLevel)
  private:
   class _Internal;
 
@@ -5013,7 +5016,7 @@ class CMD_C_ChangeBulletLevel PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class Bullet PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Bullet) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.Bullet) */ {
  public:
   inline Bullet() : Bullet(nullptr) {}
   virtual ~Bullet();
@@ -5101,7 +5104,7 @@ class Bullet PROTOBUF_FINAL :
   void InternalSwap(Bullet* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "Bullet";
+    return "LTBY.Bullet";
   }
   protected:
   explicit Bullet(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -5185,7 +5188,7 @@ class Bullet PROTOBUF_FINAL :
   void _internal_set_chips(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:Bullet)
+  // @@protoc_insertion_point(class_scope:LTBY.Bullet)
  private:
   class _Internal;
 
@@ -5204,7 +5207,7 @@ class Bullet PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_C_PressShoot PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_C_PressShoot) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.CMD_C_PressShoot) */ {
  public:
   inline CMD_C_PressShoot() : CMD_C_PressShoot(nullptr) {}
   virtual ~CMD_C_PressShoot();
@@ -5292,7 +5295,7 @@ class CMD_C_PressShoot PROTOBUF_FINAL :
   void InternalSwap(CMD_C_PressShoot* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_C_PressShoot";
+    return "LTBY.CMD_C_PressShoot";
   }
   protected:
   explicit CMD_C_PressShoot(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -5320,23 +5323,23 @@ class CMD_C_PressShoot PROTOBUF_FINAL :
     kYFieldNumber = 2,
     kChairIdFieldNumber = 3,
   };
-  // .Bullet bullet = 4;
+  // .LTBY.Bullet bullet = 4;
   bool has_bullet() const;
   private:
   bool _internal_has_bullet() const;
   public:
   void clear_bullet();
-  const ::Bullet& bullet() const;
-  ::Bullet* release_bullet();
-  ::Bullet* mutable_bullet();
-  void set_allocated_bullet(::Bullet* bullet);
+  const ::LTBY::Bullet& bullet() const;
+  ::LTBY::Bullet* release_bullet();
+  ::LTBY::Bullet* mutable_bullet();
+  void set_allocated_bullet(::LTBY::Bullet* bullet);
   private:
-  const ::Bullet& _internal_bullet() const;
-  ::Bullet* _internal_mutable_bullet();
+  const ::LTBY::Bullet& _internal_bullet() const;
+  ::LTBY::Bullet* _internal_mutable_bullet();
   public:
   void unsafe_arena_set_allocated_bullet(
-      ::Bullet* bullet);
-  ::Bullet* unsafe_arena_release_bullet();
+      ::LTBY::Bullet* bullet);
+  ::LTBY::Bullet* unsafe_arena_release_bullet();
 
   // float x = 1;
   void clear_x();
@@ -5365,14 +5368,14 @@ class CMD_C_PressShoot PROTOBUF_FINAL :
   void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_C_PressShoot)
+  // @@protoc_insertion_point(class_scope:LTBY.CMD_C_PressShoot)
  private:
   class _Internal;
 
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::Bullet* bullet_;
+  ::LTBY::Bullet* bullet_;
   float x_;
   float y_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
@@ -5382,7 +5385,7 @@ class CMD_C_PressShoot PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_C_HitedFish PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_C_HitedFish) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LTBY.CMD_C_HitedFish) */ {
  public:
   inline CMD_C_HitedFish() : CMD_C_HitedFish(nullptr) {}
   virtual ~CMD_C_HitedFish();
@@ -5470,7 +5473,7 @@ class CMD_C_HitedFish PROTOBUF_FINAL :
   void InternalSwap(CMD_C_HitedFish* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_C_HitedFish";
+    return "LTBY.CMD_C_HitedFish";
   }
   protected:
   explicit CMD_C_HitedFish(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -5519,23 +5522,23 @@ class CMD_C_HitedFish PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_hit_fish();
 
-  // .Bullet bullet = 1;
+  // .LTBY.Bullet bullet = 1;
   bool has_bullet() const;
   private:
   bool _internal_has_bullet() const;
   public:
   void clear_bullet();
-  const ::Bullet& bullet() const;
-  ::Bullet* release_bullet();
-  ::Bullet* mutable_bullet();
-  void set_allocated_bullet(::Bullet* bullet);
+  const ::LTBY::Bullet& bullet() const;
+  ::LTBY::Bullet* release_bullet();
+  ::LTBY::Bullet* mutable_bullet();
+  void set_allocated_bullet(::LTBY::Bullet* bullet);
   private:
-  const ::Bullet& _internal_bullet() const;
-  ::Bullet* _internal_mutable_bullet();
+  const ::LTBY::Bullet& _internal_bullet() const;
+  ::LTBY::Bullet* _internal_mutable_bullet();
   public:
   void unsafe_arena_set_allocated_bullet(
-      ::Bullet* bullet);
-  ::Bullet* unsafe_arena_release_bullet();
+      ::LTBY::Bullet* bullet);
+  ::LTBY::Bullet* unsafe_arena_release_bullet();
 
   // int32 chair_id = 2;
   void clear_chair_id();
@@ -5546,7 +5549,7 @@ class CMD_C_HitedFish PROTOBUF_FINAL :
   void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_C_HitedFish)
+  // @@protoc_insertion_point(class_scope:LTBY.CMD_C_HitedFish)
  private:
   class _Internal;
 
@@ -5555,7 +5558,7 @@ class CMD_C_HitedFish PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > hit_fish_;
   mutable std::atomic<int> _hit_fish_cached_byte_size_;
-  ::Bullet* bullet_;
+  ::LTBY::Bullet* bullet_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_LTBY_2eproto;
@@ -5579,7 +5582,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_RobotShoot::_internal_chair_id() con
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_RobotShoot::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_RobotShoot.chair_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_RobotShoot.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_S_RobotShoot::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -5588,7 +5591,7 @@ inline void CMD_S_RobotShoot::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::in
 }
 inline void CMD_S_RobotShoot::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_RobotShoot.chair_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_RobotShoot.chair_id)
 }
 
 // int32 level = 2;
@@ -5599,7 +5602,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_RobotShoot::_internal_level() const 
   return level_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_RobotShoot::level() const {
-  // @@protoc_insertion_point(field_get:CMD_S_RobotShoot.level)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_RobotShoot.level)
   return _internal_level();
 }
 inline void CMD_S_RobotShoot::_internal_set_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -5608,7 +5611,7 @@ inline void CMD_S_RobotShoot::_internal_set_level(::PROTOBUF_NAMESPACE_ID::int32
 }
 inline void CMD_S_RobotShoot::set_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_level(value);
-  // @@protoc_insertion_point(field_set:CMD_S_RobotShoot.level)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_RobotShoot.level)
 }
 
 // int32 type = 3;
@@ -5619,7 +5622,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_RobotShoot::_internal_type() const {
   return type_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_RobotShoot::type() const {
-  // @@protoc_insertion_point(field_get:CMD_S_RobotShoot.type)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_RobotShoot.type)
   return _internal_type();
 }
 inline void CMD_S_RobotShoot::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -5628,7 +5631,7 @@ inline void CMD_S_RobotShoot::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 
 }
 inline void CMD_S_RobotShoot::set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_type(value);
-  // @@protoc_insertion_point(field_set:CMD_S_RobotShoot.type)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_RobotShoot.type)
 }
 
 // int32 is_lock = 4;
@@ -5639,7 +5642,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_RobotShoot::_internal_is_lock() cons
   return is_lock_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_RobotShoot::is_lock() const {
-  // @@protoc_insertion_point(field_get:CMD_S_RobotShoot.is_lock)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_RobotShoot.is_lock)
   return _internal_is_lock();
 }
 inline void CMD_S_RobotShoot::_internal_set_is_lock(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -5648,7 +5651,7 @@ inline void CMD_S_RobotShoot::_internal_set_is_lock(::PROTOBUF_NAMESPACE_ID::int
 }
 inline void CMD_S_RobotShoot::set_is_lock(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_is_lock(value);
-  // @@protoc_insertion_point(field_set:CMD_S_RobotShoot.is_lock)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_RobotShoot.is_lock)
 }
 
 // -------------------------------------------------------------------
@@ -5669,19 +5672,19 @@ inline bool CMD_S_RobotList::_internal_is_robot(int index) const {
   return is_robot_.Get(index);
 }
 inline bool CMD_S_RobotList::is_robot(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_S_RobotList.is_robot)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_RobotList.is_robot)
   return _internal_is_robot(index);
 }
 inline void CMD_S_RobotList::set_is_robot(int index, bool value) {
   is_robot_.Set(index, value);
-  // @@protoc_insertion_point(field_set:CMD_S_RobotList.is_robot)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_RobotList.is_robot)
 }
 inline void CMD_S_RobotList::_internal_add_is_robot(bool value) {
   is_robot_.Add(value);
 }
 inline void CMD_S_RobotList::add_is_robot(bool value) {
   _internal_add_is_robot(value);
-  // @@protoc_insertion_point(field_add:CMD_S_RobotList.is_robot)
+  // @@protoc_insertion_point(field_add:LTBY.CMD_S_RobotList.is_robot)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< bool >&
 CMD_S_RobotList::_internal_is_robot() const {
@@ -5689,7 +5692,7 @@ CMD_S_RobotList::_internal_is_robot() const {
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< bool >&
 CMD_S_RobotList::is_robot() const {
-  // @@protoc_insertion_point(field_list:CMD_S_RobotList.is_robot)
+  // @@protoc_insertion_point(field_list:LTBY.CMD_S_RobotList.is_robot)
   return _internal_is_robot();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< bool >*
@@ -5698,7 +5701,7 @@ CMD_S_RobotList::_internal_mutable_is_robot() {
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< bool >*
 CMD_S_RobotList::mutable_is_robot() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_S_RobotList.is_robot)
+  // @@protoc_insertion_point(field_mutable_list:LTBY.CMD_S_RobotList.is_robot)
   return _internal_mutable_is_robot();
 }
 
@@ -5714,7 +5717,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerLock::_internal_chair_id() con
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerLock::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_PlayerLock.chair_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_PlayerLock.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_S_PlayerLock::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -5723,7 +5726,7 @@ inline void CMD_S_PlayerLock::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::in
 }
 inline void CMD_S_PlayerLock::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_PlayerLock.chair_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_PlayerLock.chair_id)
 }
 
 // int32 fish_id = 2;
@@ -5734,7 +5737,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerLock::_internal_fish_id() cons
   return fish_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerLock::fish_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_PlayerLock.fish_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_PlayerLock.fish_id)
   return _internal_fish_id();
 }
 inline void CMD_S_PlayerLock::_internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -5743,7 +5746,7 @@ inline void CMD_S_PlayerLock::_internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::int
 }
 inline void CMD_S_PlayerLock::set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_fish_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_PlayerLock.fish_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_PlayerLock.fish_id)
 }
 
 // -------------------------------------------------------------------
@@ -5758,7 +5761,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShootLK::_internal_chair_id() const 
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShootLK::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ShootLK.chair_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_ShootLK.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_S_ShootLK::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -5767,7 +5770,7 @@ inline void CMD_S_ShootLK::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32
 }
 inline void CMD_S_ShootLK::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ShootLK.chair_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_ShootLK.chair_id)
 }
 
 // int32 id = 2;
@@ -5778,7 +5781,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShootLK::_internal_id() const {
   return id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShootLK::id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ShootLK.id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_ShootLK.id)
   return _internal_id();
 }
 inline void CMD_S_ShootLK::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -5787,7 +5790,7 @@ inline void CMD_S_ShootLK::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value
 }
 inline void CMD_S_ShootLK::set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ShootLK.id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_ShootLK.id)
 }
 
 // int32 score = 3;
@@ -5798,7 +5801,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShootLK::_internal_score() const {
   return score_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShootLK::score() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ShootLK.score)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_ShootLK.score)
   return _internal_score();
 }
 inline void CMD_S_ShootLK::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -5807,7 +5810,7 @@ inline void CMD_S_ShootLK::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 va
 }
 inline void CMD_S_ShootLK::set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_score(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ShootLK.score)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_ShootLK.score)
 }
 
 // int32 multiple = 4;
@@ -5818,7 +5821,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShootLK::_internal_multiple() const 
   return multiple_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShootLK::multiple() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ShootLK.multiple)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_ShootLK.multiple)
   return _internal_multiple();
 }
 inline void CMD_S_ShootLK::_internal_set_multiple(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -5827,7 +5830,7 @@ inline void CMD_S_ShootLK::_internal_set_multiple(::PROTOBUF_NAMESPACE_ID::int32
 }
 inline void CMD_S_ShootLK::set_multiple(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_multiple(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ShootLK.multiple)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_ShootLK.multiple)
 }
 
 // bool is_deaded = 5;
@@ -5838,7 +5841,7 @@ inline bool CMD_S_ShootLK::_internal_is_deaded() const {
   return is_deaded_;
 }
 inline bool CMD_S_ShootLK::is_deaded() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ShootLK.is_deaded)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_ShootLK.is_deaded)
   return _internal_is_deaded();
 }
 inline void CMD_S_ShootLK::_internal_set_is_deaded(bool value) {
@@ -5847,7 +5850,7 @@ inline void CMD_S_ShootLK::_internal_set_is_deaded(bool value) {
 }
 inline void CMD_S_ShootLK::set_is_deaded(bool value) {
   _internal_set_is_deaded(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ShootLK.is_deaded)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_ShootLK.is_deaded)
 }
 
 // int32 jbp_stage = 6;
@@ -5858,7 +5861,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShootLK::_internal_jbp_stage() const
   return jbp_stage_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShootLK::jbp_stage() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ShootLK.jbp_stage)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_ShootLK.jbp_stage)
   return _internal_jbp_stage();
 }
 inline void CMD_S_ShootLK::_internal_set_jbp_stage(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -5867,7 +5870,7 @@ inline void CMD_S_ShootLK::_internal_set_jbp_stage(::PROTOBUF_NAMESPACE_ID::int3
 }
 inline void CMD_S_ShootLK::set_jbp_stage(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_jbp_stage(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ShootLK.jbp_stage)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_ShootLK.jbp_stage)
 }
 
 // int32 cur_lk_score = 7;
@@ -5878,7 +5881,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShootLK::_internal_cur_lk_score() co
   return cur_lk_score_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShootLK::cur_lk_score() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ShootLK.cur_lk_score)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_ShootLK.cur_lk_score)
   return _internal_cur_lk_score();
 }
 inline void CMD_S_ShootLK::_internal_set_cur_lk_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -5887,7 +5890,7 @@ inline void CMD_S_ShootLK::_internal_set_cur_lk_score(::PROTOBUF_NAMESPACE_ID::i
 }
 inline void CMD_S_ShootLK::set_cur_lk_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_cur_lk_score(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ShootLK.cur_lk_score)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_ShootLK.cur_lk_score)
 }
 
 // int64 cur_player_score = 8;
@@ -5898,7 +5901,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int64 CMD_S_ShootLK::_internal_cur_player_score(
   return cur_player_score_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int64 CMD_S_ShootLK::cur_player_score() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ShootLK.cur_player_score)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_ShootLK.cur_player_score)
   return _internal_cur_player_score();
 }
 inline void CMD_S_ShootLK::_internal_set_cur_player_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
@@ -5907,7 +5910,7 @@ inline void CMD_S_ShootLK::_internal_set_cur_player_score(::PROTOBUF_NAMESPACE_I
 }
 inline void CMD_S_ShootLK::set_cur_player_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_cur_player_score(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ShootLK.cur_player_score)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_ShootLK.cur_player_score)
 }
 
 // -------------------------------------------------------------------
@@ -5922,7 +5925,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_JuBuZhaDan::_internal_chair_id() con
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_JuBuZhaDan::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_JuBuZhaDan.chair_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_JuBuZhaDan.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_S_JuBuZhaDan::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -5931,7 +5934,7 @@ inline void CMD_S_JuBuZhaDan::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::in
 }
 inline void CMD_S_JuBuZhaDan::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_JuBuZhaDan.chair_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_JuBuZhaDan.chair_id)
 }
 
 // int32 fish_id = 2;
@@ -5942,7 +5945,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_JuBuZhaDan::_internal_fish_id() cons
   return fish_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_JuBuZhaDan::fish_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_JuBuZhaDan.fish_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_JuBuZhaDan.fish_id)
   return _internal_fish_id();
 }
 inline void CMD_S_JuBuZhaDan::_internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -5951,7 +5954,7 @@ inline void CMD_S_JuBuZhaDan::_internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::int
 }
 inline void CMD_S_JuBuZhaDan::set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_fish_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_JuBuZhaDan.fish_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_JuBuZhaDan.fish_id)
 }
 
 // -------------------------------------------------------------------
@@ -5966,7 +5969,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_YiWangDaJin::_internal_chair_id() co
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_YiWangDaJin::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_YiWangDaJin.chair_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_YiWangDaJin.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_S_YiWangDaJin::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -5975,7 +5978,7 @@ inline void CMD_S_YiWangDaJin::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::i
 }
 inline void CMD_S_YiWangDaJin::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_YiWangDaJin.chair_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_YiWangDaJin.chair_id)
 }
 
 // int32 bullet_id = 2;
@@ -5986,7 +5989,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_YiWangDaJin::_internal_bullet_id() c
   return bullet_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_YiWangDaJin::bullet_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_YiWangDaJin.bullet_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_YiWangDaJin.bullet_id)
   return _internal_bullet_id();
 }
 inline void CMD_S_YiWangDaJin::_internal_set_bullet_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -5995,7 +5998,7 @@ inline void CMD_S_YiWangDaJin::_internal_set_bullet_id(::PROTOBUF_NAMESPACE_ID::
 }
 inline void CMD_S_YiWangDaJin::set_bullet_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_bullet_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_YiWangDaJin.bullet_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_YiWangDaJin.bullet_id)
 }
 
 // -------------------------------------------------------------------
@@ -6010,7 +6013,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_TongLeiZhaDan::_internal_chair_id() 
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_TongLeiZhaDan::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_TongLeiZhaDan.chair_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_TongLeiZhaDan.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_S_TongLeiZhaDan::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6019,7 +6022,7 @@ inline void CMD_S_TongLeiZhaDan::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID:
 }
 inline void CMD_S_TongLeiZhaDan::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_TongLeiZhaDan.chair_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_TongLeiZhaDan.chair_id)
 }
 
 // int32 fish_id = 2;
@@ -6030,7 +6033,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_TongLeiZhaDan::_internal_fish_id() c
   return fish_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_TongLeiZhaDan::fish_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_TongLeiZhaDan.fish_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_TongLeiZhaDan.fish_id)
   return _internal_fish_id();
 }
 inline void CMD_S_TongLeiZhaDan::_internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6039,7 +6042,7 @@ inline void CMD_S_TongLeiZhaDan::_internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::
 }
 inline void CMD_S_TongLeiZhaDan::set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_fish_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_TongLeiZhaDan.fish_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_TongLeiZhaDan.fish_id)
 }
 
 // int32 kind = 3;
@@ -6050,7 +6053,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_TongLeiZhaDan::_internal_kind() cons
   return kind_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_TongLeiZhaDan::kind() const {
-  // @@protoc_insertion_point(field_get:CMD_S_TongLeiZhaDan.kind)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_TongLeiZhaDan.kind)
   return _internal_kind();
 }
 inline void CMD_S_TongLeiZhaDan::_internal_set_kind(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6059,7 +6062,7 @@ inline void CMD_S_TongLeiZhaDan::_internal_set_kind(::PROTOBUF_NAMESPACE_ID::int
 }
 inline void CMD_S_TongLeiZhaDan::set_kind(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_kind(value);
-  // @@protoc_insertion_point(field_set:CMD_S_TongLeiZhaDan.kind)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_TongLeiZhaDan.kind)
 }
 
 // -------------------------------------------------------------------
@@ -6074,7 +6077,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::_internal_kind() const {
   return kind_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::kind() const {
-  // @@protoc_insertion_point(field_get:LoadFish.kind)
+  // @@protoc_insertion_point(field_get:LTBY.LoadFish.kind)
   return _internal_kind();
 }
 inline void LoadFish::_internal_set_kind(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6083,7 +6086,7 @@ inline void LoadFish::_internal_set_kind(::PROTOBUF_NAMESPACE_ID::int32 value) {
 }
 inline void LoadFish::set_kind(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_kind(value);
-  // @@protoc_insertion_point(field_set:LoadFish.kind)
+  // @@protoc_insertion_point(field_set:LTBY.LoadFish.kind)
 }
 
 // int32 id = 2;
@@ -6094,7 +6097,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::_internal_id() const {
   return id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::id() const {
-  // @@protoc_insertion_point(field_get:LoadFish.id)
+  // @@protoc_insertion_point(field_get:LTBY.LoadFish.id)
   return _internal_id();
 }
 inline void LoadFish::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6103,7 +6106,7 @@ inline void LoadFish::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
 }
 inline void LoadFish::set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_id(value);
-  // @@protoc_insertion_point(field_set:LoadFish.id)
+  // @@protoc_insertion_point(field_set:LTBY.LoadFish.id)
 }
 
 // int32 create_time = 3;
@@ -6114,7 +6117,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::_internal_create_time() const {
   return create_time_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::create_time() const {
-  // @@protoc_insertion_point(field_get:LoadFish.create_time)
+  // @@protoc_insertion_point(field_get:LTBY.LoadFish.create_time)
   return _internal_create_time();
 }
 inline void LoadFish::_internal_set_create_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6123,7 +6126,7 @@ inline void LoadFish::_internal_set_create_time(::PROTOBUF_NAMESPACE_ID::int32 v
 }
 inline void LoadFish::set_create_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_create_time(value);
-  // @@protoc_insertion_point(field_set:LoadFish.create_time)
+  // @@protoc_insertion_point(field_set:LTBY.LoadFish.create_time)
 }
 
 // int32 continue_time = 4;
@@ -6134,7 +6137,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::_internal_continue_time() const 
   return continue_time_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::continue_time() const {
-  // @@protoc_insertion_point(field_get:LoadFish.continue_time)
+  // @@protoc_insertion_point(field_get:LTBY.LoadFish.continue_time)
   return _internal_continue_time();
 }
 inline void LoadFish::_internal_set_continue_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6143,7 +6146,7 @@ inline void LoadFish::_internal_set_continue_time(::PROTOBUF_NAMESPACE_ID::int32
 }
 inline void LoadFish::set_continue_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_continue_time(value);
-  // @@protoc_insertion_point(field_set:LoadFish.continue_time)
+  // @@protoc_insertion_point(field_set:LTBY.LoadFish.continue_time)
 }
 
 // int32 road = 5;
@@ -6154,7 +6157,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::_internal_road() const {
   return road_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::road() const {
-  // @@protoc_insertion_point(field_get:LoadFish.road)
+  // @@protoc_insertion_point(field_get:LTBY.LoadFish.road)
   return _internal_road();
 }
 inline void LoadFish::_internal_set_road(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6163,7 +6166,7 @@ inline void LoadFish::_internal_set_road(::PROTOBUF_NAMESPACE_ID::int32 value) {
 }
 inline void LoadFish::set_road(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_road(value);
-  // @@protoc_insertion_point(field_set:LoadFish.road)
+  // @@protoc_insertion_point(field_set:LTBY.LoadFish.road)
 }
 
 // int32 group_id = 6;
@@ -6174,7 +6177,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::_internal_group_id() const {
   return group_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::group_id() const {
-  // @@protoc_insertion_point(field_get:LoadFish.group_id)
+  // @@protoc_insertion_point(field_get:LTBY.LoadFish.group_id)
   return _internal_group_id();
 }
 inline void LoadFish::_internal_set_group_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6183,7 +6186,7 @@ inline void LoadFish::_internal_set_group_id(::PROTOBUF_NAMESPACE_ID::int32 valu
 }
 inline void LoadFish::set_group_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_group_id(value);
-  // @@protoc_insertion_point(field_set:LoadFish.group_id)
+  // @@protoc_insertion_point(field_set:LTBY.LoadFish.group_id)
 }
 
 // int32 group_no = 7;
@@ -6194,7 +6197,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::_internal_group_no() const {
   return group_no_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::group_no() const {
-  // @@protoc_insertion_point(field_get:LoadFish.group_no)
+  // @@protoc_insertion_point(field_get:LTBY.LoadFish.group_no)
   return _internal_group_no();
 }
 inline void LoadFish::_internal_set_group_no(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6203,7 +6206,7 @@ inline void LoadFish::_internal_set_group_no(::PROTOBUF_NAMESPACE_ID::int32 valu
 }
 inline void LoadFish::set_group_no(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_group_no(value);
-  // @@protoc_insertion_point(field_set:LoadFish.group_no)
+  // @@protoc_insertion_point(field_set:LTBY.LoadFish.group_no)
 }
 
 // int32 now_time = 8;
@@ -6214,7 +6217,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::_internal_now_time() const {
   return now_time_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::now_time() const {
-  // @@protoc_insertion_point(field_get:LoadFish.now_time)
+  // @@protoc_insertion_point(field_get:LTBY.LoadFish.now_time)
   return _internal_now_time();
 }
 inline void LoadFish::_internal_set_now_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6223,7 +6226,7 @@ inline void LoadFish::_internal_set_now_time(::PROTOBUF_NAMESPACE_ID::int32 valu
 }
 inline void LoadFish::set_now_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_now_time(value);
-  // @@protoc_insertion_point(field_set:LoadFish.now_time)
+  // @@protoc_insertion_point(field_set:LTBY.LoadFish.now_time)
 }
 
 // int32 mul = 9;
@@ -6234,7 +6237,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::_internal_mul() const {
   return mul_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::mul() const {
-  // @@protoc_insertion_point(field_get:LoadFish.mul)
+  // @@protoc_insertion_point(field_get:LTBY.LoadFish.mul)
   return _internal_mul();
 }
 inline void LoadFish::_internal_set_mul(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6243,7 +6246,7 @@ inline void LoadFish::_internal_set_mul(::PROTOBUF_NAMESPACE_ID::int32 value) {
 }
 inline void LoadFish::set_mul(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_mul(value);
-  // @@protoc_insertion_point(field_set:LoadFish.mul)
+  // @@protoc_insertion_point(field_set:LTBY.LoadFish.mul)
 }
 
 // int32 stage = 10;
@@ -6254,7 +6257,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::_internal_stage() const {
   return stage_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::stage() const {
-  // @@protoc_insertion_point(field_get:LoadFish.stage)
+  // @@protoc_insertion_point(field_get:LTBY.LoadFish.stage)
   return _internal_stage();
 }
 inline void LoadFish::_internal_set_stage(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6263,7 +6266,7 @@ inline void LoadFish::_internal_set_stage(::PROTOBUF_NAMESPACE_ID::int32 value) 
 }
 inline void LoadFish::set_stage(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_stage(value);
-  // @@protoc_insertion_point(field_set:LoadFish.stage)
+  // @@protoc_insertion_point(field_set:LTBY.LoadFish.stage)
 }
 
 // bool is_aced = 11;
@@ -6274,7 +6277,7 @@ inline bool LoadFish::_internal_is_aced() const {
   return is_aced_;
 }
 inline bool LoadFish::is_aced() const {
-  // @@protoc_insertion_point(field_get:LoadFish.is_aced)
+  // @@protoc_insertion_point(field_get:LTBY.LoadFish.is_aced)
   return _internal_is_aced();
 }
 inline void LoadFish::_internal_set_is_aced(bool value) {
@@ -6283,7 +6286,7 @@ inline void LoadFish::_internal_set_is_aced(bool value) {
 }
 inline void LoadFish::set_is_aced(bool value) {
   _internal_set_is_aced(value);
-  // @@protoc_insertion_point(field_set:LoadFish.is_aced)
+  // @@protoc_insertion_point(field_set:LTBY.LoadFish.is_aced)
 }
 
 // int32 jbp_stage = 12;
@@ -6294,7 +6297,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::_internal_jbp_stage() const {
   return jbp_stage_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::jbp_stage() const {
-  // @@protoc_insertion_point(field_get:LoadFish.jbp_stage)
+  // @@protoc_insertion_point(field_get:LTBY.LoadFish.jbp_stage)
   return _internal_jbp_stage();
 }
 inline void LoadFish::_internal_set_jbp_stage(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6303,7 +6306,7 @@ inline void LoadFish::_internal_set_jbp_stage(::PROTOBUF_NAMESPACE_ID::int32 val
 }
 inline void LoadFish::set_jbp_stage(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_jbp_stage(value);
-  // @@protoc_insertion_point(field_set:LoadFish.jbp_stage)
+  // @@protoc_insertion_point(field_set:LTBY.LoadFish.jbp_stage)
 }
 
 // int32 lk_mul = 13;
@@ -6314,7 +6317,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::_internal_lk_mul() const {
   return lk_mul_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::lk_mul() const {
-  // @@protoc_insertion_point(field_get:LoadFish.lk_mul)
+  // @@protoc_insertion_point(field_get:LTBY.LoadFish.lk_mul)
   return _internal_lk_mul();
 }
 inline void LoadFish::_internal_set_lk_mul(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6323,7 +6326,7 @@ inline void LoadFish::_internal_set_lk_mul(::PROTOBUF_NAMESPACE_ID::int32 value)
 }
 inline void LoadFish::set_lk_mul(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_lk_mul(value);
-  // @@protoc_insertion_point(field_set:LoadFish.lk_mul)
+  // @@protoc_insertion_point(field_set:LTBY.LoadFish.lk_mul)
 }
 
 // int32 lk_score = 14;
@@ -6334,7 +6337,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::_internal_lk_score() const {
   return lk_score_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::lk_score() const {
-  // @@protoc_insertion_point(field_get:LoadFish.lk_score)
+  // @@protoc_insertion_point(field_get:LTBY.LoadFish.lk_score)
   return _internal_lk_score();
 }
 inline void LoadFish::_internal_set_lk_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6343,7 +6346,7 @@ inline void LoadFish::_internal_set_lk_score(::PROTOBUF_NAMESPACE_ID::int32 valu
 }
 inline void LoadFish::set_lk_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_lk_score(value);
-  // @@protoc_insertion_point(field_set:LoadFish.lk_score)
+  // @@protoc_insertion_point(field_set:LTBY.LoadFish.lk_score)
 }
 
 // -------------------------------------------------------------------
@@ -6358,7 +6361,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_YuWang::_internal_chair_id() const {
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_YuWang::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_YuWang.chair_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_YuWang.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_S_YuWang::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6367,7 +6370,7 @@ inline void CMD_S_YuWang::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 
 }
 inline void CMD_S_YuWang::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_YuWang.chair_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_YuWang.chair_id)
 }
 
 // int32 kind = 2;
@@ -6378,7 +6381,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_YuWang::_internal_kind() const {
   return kind_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_YuWang::kind() const {
-  // @@protoc_insertion_point(field_get:CMD_S_YuWang.kind)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_YuWang.kind)
   return _internal_kind();
 }
 inline void CMD_S_YuWang::_internal_set_kind(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6387,7 +6390,7 @@ inline void CMD_S_YuWang::_internal_set_kind(::PROTOBUF_NAMESPACE_ID::int32 valu
 }
 inline void CMD_S_YuWang::set_kind(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_kind(value);
-  // @@protoc_insertion_point(field_set:CMD_S_YuWang.kind)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_YuWang.kind)
 }
 
 // int32 yu_wang_id = 3;
@@ -6398,7 +6401,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_YuWang::_internal_yu_wang_id() const
   return yu_wang_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_YuWang::yu_wang_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_YuWang.yu_wang_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_YuWang.yu_wang_id)
   return _internal_yu_wang_id();
 }
 inline void CMD_S_YuWang::_internal_set_yu_wang_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6407,10 +6410,10 @@ inline void CMD_S_YuWang::_internal_set_yu_wang_id(::PROTOBUF_NAMESPACE_ID::int3
 }
 inline void CMD_S_YuWang::set_yu_wang_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_yu_wang_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_YuWang.yu_wang_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_YuWang.yu_wang_id)
 }
 
-// repeated .LoadFish fish_id = 4;
+// repeated .LTBY.LoadFish fish_id = 4;
 inline int CMD_S_YuWang::_internal_fish_id_size() const {
   return fish_id_.size();
 }
@@ -6420,32 +6423,32 @@ inline int CMD_S_YuWang::fish_id_size() const {
 inline void CMD_S_YuWang::clear_fish_id() {
   fish_id_.Clear();
 }
-inline ::LoadFish* CMD_S_YuWang::mutable_fish_id(int index) {
-  // @@protoc_insertion_point(field_mutable:CMD_S_YuWang.fish_id)
+inline ::LTBY::LoadFish* CMD_S_YuWang::mutable_fish_id(int index) {
+  // @@protoc_insertion_point(field_mutable:LTBY.CMD_S_YuWang.fish_id)
   return fish_id_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LTBY::LoadFish >*
 CMD_S_YuWang::mutable_fish_id() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_S_YuWang.fish_id)
+  // @@protoc_insertion_point(field_mutable_list:LTBY.CMD_S_YuWang.fish_id)
   return &fish_id_;
 }
-inline const ::LoadFish& CMD_S_YuWang::_internal_fish_id(int index) const {
+inline const ::LTBY::LoadFish& CMD_S_YuWang::_internal_fish_id(int index) const {
   return fish_id_.Get(index);
 }
-inline const ::LoadFish& CMD_S_YuWang::fish_id(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_S_YuWang.fish_id)
+inline const ::LTBY::LoadFish& CMD_S_YuWang::fish_id(int index) const {
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_YuWang.fish_id)
   return _internal_fish_id(index);
 }
-inline ::LoadFish* CMD_S_YuWang::_internal_add_fish_id() {
+inline ::LTBY::LoadFish* CMD_S_YuWang::_internal_add_fish_id() {
   return fish_id_.Add();
 }
-inline ::LoadFish* CMD_S_YuWang::add_fish_id() {
-  // @@protoc_insertion_point(field_add:CMD_S_YuWang.fish_id)
+inline ::LTBY::LoadFish* CMD_S_YuWang::add_fish_id() {
+  // @@protoc_insertion_point(field_add:LTBY.CMD_S_YuWang.fish_id)
   return _internal_add_fish_id();
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LTBY::LoadFish >&
 CMD_S_YuWang::fish_id() const {
-  // @@protoc_insertion_point(field_list:CMD_S_YuWang.fish_id)
+  // @@protoc_insertion_point(field_list:LTBY.CMD_S_YuWang.fish_id)
   return fish_id_;
 }
 
@@ -6461,7 +6464,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaSiXi::_internal_id() const {
   return id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaSiXi::id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_DaSiXi.id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_DaSiXi.id)
   return _internal_id();
 }
 inline void CMD_S_DaSiXi::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6470,7 +6473,7 @@ inline void CMD_S_DaSiXi::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value)
 }
 inline void CMD_S_DaSiXi::set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_DaSiXi.id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_DaSiXi.id)
 }
 
 // int32 chair_id = 2;
@@ -6481,7 +6484,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaSiXi::_internal_chair_id() const {
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaSiXi::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_DaSiXi.chair_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_DaSiXi.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_S_DaSiXi::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6490,7 +6493,7 @@ inline void CMD_S_DaSiXi::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 
 }
 inline void CMD_S_DaSiXi::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_DaSiXi.chair_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_DaSiXi.chair_id)
 }
 
 // int32 score = 3;
@@ -6501,7 +6504,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaSiXi::_internal_score() const {
   return score_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaSiXi::score() const {
-  // @@protoc_insertion_point(field_get:CMD_S_DaSiXi.score)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_DaSiXi.score)
   return _internal_score();
 }
 inline void CMD_S_DaSiXi::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6510,7 +6513,7 @@ inline void CMD_S_DaSiXi::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 val
 }
 inline void CMD_S_DaSiXi::set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_score(value);
-  // @@protoc_insertion_point(field_set:CMD_S_DaSiXi.score)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_DaSiXi.score)
 }
 
 // -------------------------------------------------------------------
@@ -6525,7 +6528,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaJiangZhangYu::_internal_id() const
   return id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaJiangZhangYu::id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_DaJiangZhangYu.id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_DaJiangZhangYu.id)
   return _internal_id();
 }
 inline void CMD_S_DaJiangZhangYu::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6534,7 +6537,7 @@ inline void CMD_S_DaJiangZhangYu::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int3
 }
 inline void CMD_S_DaJiangZhangYu::set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_DaJiangZhangYu.id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_DaJiangZhangYu.id)
 }
 
 // int32 chair_id = 2;
@@ -6545,7 +6548,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaJiangZhangYu::_internal_chair_id()
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaJiangZhangYu::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_DaJiangZhangYu.chair_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_DaJiangZhangYu.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_S_DaJiangZhangYu::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6554,7 +6557,7 @@ inline void CMD_S_DaJiangZhangYu::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID
 }
 inline void CMD_S_DaJiangZhangYu::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_DaJiangZhangYu.chair_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_DaJiangZhangYu.chair_id)
 }
 
 // int32 odd1 = 3;
@@ -6565,7 +6568,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaJiangZhangYu::_internal_odd1() con
   return odd1_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaJiangZhangYu::odd1() const {
-  // @@protoc_insertion_point(field_get:CMD_S_DaJiangZhangYu.odd1)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_DaJiangZhangYu.odd1)
   return _internal_odd1();
 }
 inline void CMD_S_DaJiangZhangYu::_internal_set_odd1(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6574,7 +6577,7 @@ inline void CMD_S_DaJiangZhangYu::_internal_set_odd1(::PROTOBUF_NAMESPACE_ID::in
 }
 inline void CMD_S_DaJiangZhangYu::set_odd1(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_odd1(value);
-  // @@protoc_insertion_point(field_set:CMD_S_DaJiangZhangYu.odd1)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_DaJiangZhangYu.odd1)
 }
 
 // int32 odd2 = 4;
@@ -6585,7 +6588,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaJiangZhangYu::_internal_odd2() con
   return odd2_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaJiangZhangYu::odd2() const {
-  // @@protoc_insertion_point(field_get:CMD_S_DaJiangZhangYu.odd2)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_DaJiangZhangYu.odd2)
   return _internal_odd2();
 }
 inline void CMD_S_DaJiangZhangYu::_internal_set_odd2(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6594,7 +6597,7 @@ inline void CMD_S_DaJiangZhangYu::_internal_set_odd2(::PROTOBUF_NAMESPACE_ID::in
 }
 inline void CMD_S_DaJiangZhangYu::set_odd2(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_odd2(value);
-  // @@protoc_insertion_point(field_set:CMD_S_DaJiangZhangYu.odd2)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_DaJiangZhangYu.odd2)
 }
 
 // int32 odd3 = 5;
@@ -6605,7 +6608,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaJiangZhangYu::_internal_odd3() con
   return odd3_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaJiangZhangYu::odd3() const {
-  // @@protoc_insertion_point(field_get:CMD_S_DaJiangZhangYu.odd3)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_DaJiangZhangYu.odd3)
   return _internal_odd3();
 }
 inline void CMD_S_DaJiangZhangYu::_internal_set_odd3(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6614,7 +6617,7 @@ inline void CMD_S_DaJiangZhangYu::_internal_set_odd3(::PROTOBUF_NAMESPACE_ID::in
 }
 inline void CMD_S_DaJiangZhangYu::set_odd3(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_odd3(value);
-  // @@protoc_insertion_point(field_set:CMD_S_DaJiangZhangYu.odd3)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_DaJiangZhangYu.odd3)
 }
 
 // -------------------------------------------------------------------
@@ -6629,7 +6632,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ZhongYiTang::_internal_chair_id() co
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ZhongYiTang::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ZhongYiTang.chair_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_ZhongYiTang.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_S_ZhongYiTang::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6638,7 +6641,7 @@ inline void CMD_S_ZhongYiTang::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::i
 }
 inline void CMD_S_ZhongYiTang::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ZhongYiTang.chair_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_ZhongYiTang.chair_id)
 }
 
 // int32 add_time = 2;
@@ -6649,7 +6652,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ZhongYiTang::_internal_add_time() co
   return add_time_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ZhongYiTang::add_time() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ZhongYiTang.add_time)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_ZhongYiTang.add_time)
   return _internal_add_time();
 }
 inline void CMD_S_ZhongYiTang::_internal_set_add_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6658,7 +6661,7 @@ inline void CMD_S_ZhongYiTang::_internal_set_add_time(::PROTOBUF_NAMESPACE_ID::i
 }
 inline void CMD_S_ZhongYiTang::set_add_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_add_time(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ZhongYiTang.add_time)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_ZhongYiTang.add_time)
 }
 
 // int32 add_mul = 3;
@@ -6669,7 +6672,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ZhongYiTang::_internal_add_mul() con
   return add_mul_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ZhongYiTang::add_mul() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ZhongYiTang.add_mul)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_ZhongYiTang.add_mul)
   return _internal_add_mul();
 }
 inline void CMD_S_ZhongYiTang::_internal_set_add_mul(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6678,7 +6681,7 @@ inline void CMD_S_ZhongYiTang::_internal_set_add_mul(::PROTOBUF_NAMESPACE_ID::in
 }
 inline void CMD_S_ZhongYiTang::set_add_mul(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_add_mul(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ZhongYiTang.add_mul)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_ZhongYiTang.add_mul)
 }
 
 // -------------------------------------------------------------------
@@ -6693,7 +6696,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShuiHuZhuan::_internal_chair_id() co
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShuiHuZhuan::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ShuiHuZhuan.chair_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_ShuiHuZhuan.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_S_ShuiHuZhuan::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6702,7 +6705,7 @@ inline void CMD_S_ShuiHuZhuan::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::i
 }
 inline void CMD_S_ShuiHuZhuan::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ShuiHuZhuan.chair_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_ShuiHuZhuan.chair_id)
 }
 
 // repeated int32 fish_id = 2;
@@ -6719,19 +6722,19 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShuiHuZhuan::_internal_fish_id(int i
   return fish_id_.Get(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShuiHuZhuan::fish_id(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_S_ShuiHuZhuan.fish_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_ShuiHuZhuan.fish_id)
   return _internal_fish_id(index);
 }
 inline void CMD_S_ShuiHuZhuan::set_fish_id(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   fish_id_.Set(index, value);
-  // @@protoc_insertion_point(field_set:CMD_S_ShuiHuZhuan.fish_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_ShuiHuZhuan.fish_id)
 }
 inline void CMD_S_ShuiHuZhuan::_internal_add_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   fish_id_.Add(value);
 }
 inline void CMD_S_ShuiHuZhuan::add_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_fish_id(value);
-  // @@protoc_insertion_point(field_add:CMD_S_ShuiHuZhuan.fish_id)
+  // @@protoc_insertion_point(field_add:LTBY.CMD_S_ShuiHuZhuan.fish_id)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_S_ShuiHuZhuan::_internal_fish_id() const {
@@ -6739,7 +6742,7 @@ CMD_S_ShuiHuZhuan::_internal_fish_id() const {
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_S_ShuiHuZhuan::fish_id() const {
-  // @@protoc_insertion_point(field_list:CMD_S_ShuiHuZhuan.fish_id)
+  // @@protoc_insertion_point(field_list:LTBY.CMD_S_ShuiHuZhuan.fish_id)
   return _internal_fish_id();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
@@ -6748,7 +6751,7 @@ CMD_S_ShuiHuZhuan::_internal_mutable_fish_id() {
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 CMD_S_ShuiHuZhuan::mutable_fish_id() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_S_ShuiHuZhuan.fish_id)
+  // @@protoc_insertion_point(field_mutable_list:LTBY.CMD_S_ShuiHuZhuan.fish_id)
   return _internal_mutable_fish_id();
 }
 
@@ -6766,19 +6769,19 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShuiHuZhuan::_internal_fish_score(in
   return fish_score_.Get(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShuiHuZhuan::fish_score(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_S_ShuiHuZhuan.fish_score)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_ShuiHuZhuan.fish_score)
   return _internal_fish_score(index);
 }
 inline void CMD_S_ShuiHuZhuan::set_fish_score(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   fish_score_.Set(index, value);
-  // @@protoc_insertion_point(field_set:CMD_S_ShuiHuZhuan.fish_score)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_ShuiHuZhuan.fish_score)
 }
 inline void CMD_S_ShuiHuZhuan::_internal_add_fish_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   fish_score_.Add(value);
 }
 inline void CMD_S_ShuiHuZhuan::add_fish_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_fish_score(value);
-  // @@protoc_insertion_point(field_add:CMD_S_ShuiHuZhuan.fish_score)
+  // @@protoc_insertion_point(field_add:LTBY.CMD_S_ShuiHuZhuan.fish_score)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_S_ShuiHuZhuan::_internal_fish_score() const {
@@ -6786,7 +6789,7 @@ CMD_S_ShuiHuZhuan::_internal_fish_score() const {
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_S_ShuiHuZhuan::fish_score() const {
-  // @@protoc_insertion_point(field_list:CMD_S_ShuiHuZhuan.fish_score)
+  // @@protoc_insertion_point(field_list:LTBY.CMD_S_ShuiHuZhuan.fish_score)
   return _internal_fish_score();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
@@ -6795,7 +6798,7 @@ CMD_S_ShuiHuZhuan::_internal_mutable_fish_score() {
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 CMD_S_ShuiHuZhuan::mutable_fish_score() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_S_ShuiHuZhuan.fish_score)
+  // @@protoc_insertion_point(field_mutable_list:LTBY.CMD_S_ShuiHuZhuan.fish_score)
   return _internal_mutable_fish_score();
 }
 
@@ -6811,7 +6814,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ChangeBulletLevel::_internal_chair_i
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ChangeBulletLevel::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ChangeBulletLevel.chair_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_ChangeBulletLevel.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_S_ChangeBulletLevel::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6820,7 +6823,7 @@ inline void CMD_S_ChangeBulletLevel::_internal_set_chair_id(::PROTOBUF_NAMESPACE
 }
 inline void CMD_S_ChangeBulletLevel::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ChangeBulletLevel.chair_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_ChangeBulletLevel.chair_id)
 }
 
 // int32 gun_type = 2;
@@ -6831,7 +6834,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ChangeBulletLevel::_internal_gun_typ
   return gun_type_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ChangeBulletLevel::gun_type() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ChangeBulletLevel.gun_type)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_ChangeBulletLevel.gun_type)
   return _internal_gun_type();
 }
 inline void CMD_S_ChangeBulletLevel::_internal_set_gun_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6840,7 +6843,7 @@ inline void CMD_S_ChangeBulletLevel::_internal_set_gun_type(::PROTOBUF_NAMESPACE
 }
 inline void CMD_S_ChangeBulletLevel::set_gun_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_gun_type(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ChangeBulletLevel.gun_type)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_ChangeBulletLevel.gun_type)
 }
 
 // int32 gun_level = 3;
@@ -6851,7 +6854,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ChangeBulletLevel::_internal_gun_lev
   return gun_level_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ChangeBulletLevel::gun_level() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ChangeBulletLevel.gun_level)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_ChangeBulletLevel.gun_level)
   return _internal_gun_level();
 }
 inline void CMD_S_ChangeBulletLevel::_internal_set_gun_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6860,7 +6863,7 @@ inline void CMD_S_ChangeBulletLevel::_internal_set_gun_level(::PROTOBUF_NAMESPAC
 }
 inline void CMD_S_ChangeBulletLevel::set_gun_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_gun_level(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ChangeBulletLevel.gun_level)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_ChangeBulletLevel.gun_level)
 }
 
 // -------------------------------------------------------------------
@@ -6881,19 +6884,19 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_CONFIG::_internal_bullet_score(int i
   return bullet_score_.Get(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_CONFIG::bullet_score(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_S_CONFIG.bullet_score)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_CONFIG.bullet_score)
   return _internal_bullet_score(index);
 }
 inline void CMD_S_CONFIG::set_bullet_score(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   bullet_score_.Set(index, value);
-  // @@protoc_insertion_point(field_set:CMD_S_CONFIG.bullet_score)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_CONFIG.bullet_score)
 }
 inline void CMD_S_CONFIG::_internal_add_bullet_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   bullet_score_.Add(value);
 }
 inline void CMD_S_CONFIG::add_bullet_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_bullet_score(value);
-  // @@protoc_insertion_point(field_add:CMD_S_CONFIG.bullet_score)
+  // @@protoc_insertion_point(field_add:LTBY.CMD_S_CONFIG.bullet_score)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_S_CONFIG::_internal_bullet_score() const {
@@ -6901,7 +6904,7 @@ CMD_S_CONFIG::_internal_bullet_score() const {
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_S_CONFIG::bullet_score() const {
-  // @@protoc_insertion_point(field_list:CMD_S_CONFIG.bullet_score)
+  // @@protoc_insertion_point(field_list:LTBY.CMD_S_CONFIG.bullet_score)
   return _internal_bullet_score();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
@@ -6910,7 +6913,7 @@ CMD_S_CONFIG::_internal_mutable_bullet_score() {
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 CMD_S_CONFIG::mutable_bullet_score() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_S_CONFIG.bullet_score)
+  // @@protoc_insertion_point(field_mutable_list:LTBY.CMD_S_CONFIG.bullet_score)
   return _internal_mutable_bullet_score();
 }
 
@@ -6922,7 +6925,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_CONFIG::_internal_background_picture
   return background_picture_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_CONFIG::background_picture_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_CONFIG.background_picture_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_CONFIG.background_picture_id)
   return _internal_background_picture_id();
 }
 inline void CMD_S_CONFIG::_internal_set_background_picture_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6931,7 +6934,7 @@ inline void CMD_S_CONFIG::_internal_set_background_picture_id(::PROTOBUF_NAMESPA
 }
 inline void CMD_S_CONFIG::set_background_picture_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_background_picture_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_CONFIG.background_picture_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_CONFIG.background_picture_id)
 }
 
 // repeated int32 player_lock_fish_id = 3;
@@ -6948,19 +6951,19 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_CONFIG::_internal_player_lock_fish_i
   return player_lock_fish_id_.Get(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_CONFIG::player_lock_fish_id(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_S_CONFIG.player_lock_fish_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_CONFIG.player_lock_fish_id)
   return _internal_player_lock_fish_id(index);
 }
 inline void CMD_S_CONFIG::set_player_lock_fish_id(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   player_lock_fish_id_.Set(index, value);
-  // @@protoc_insertion_point(field_set:CMD_S_CONFIG.player_lock_fish_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_CONFIG.player_lock_fish_id)
 }
 inline void CMD_S_CONFIG::_internal_add_player_lock_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   player_lock_fish_id_.Add(value);
 }
 inline void CMD_S_CONFIG::add_player_lock_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_player_lock_fish_id(value);
-  // @@protoc_insertion_point(field_add:CMD_S_CONFIG.player_lock_fish_id)
+  // @@protoc_insertion_point(field_add:LTBY.CMD_S_CONFIG.player_lock_fish_id)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_S_CONFIG::_internal_player_lock_fish_id() const {
@@ -6968,7 +6971,7 @@ CMD_S_CONFIG::_internal_player_lock_fish_id() const {
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_S_CONFIG::player_lock_fish_id() const {
-  // @@protoc_insertion_point(field_list:CMD_S_CONFIG.player_lock_fish_id)
+  // @@protoc_insertion_point(field_list:LTBY.CMD_S_CONFIG.player_lock_fish_id)
   return _internal_player_lock_fish_id();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
@@ -6977,7 +6980,7 @@ CMD_S_CONFIG::_internal_mutable_player_lock_fish_id() {
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 CMD_S_CONFIG::mutable_player_lock_fish_id() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_S_CONFIG.player_lock_fish_id)
+  // @@protoc_insertion_point(field_mutable_list:LTBY.CMD_S_CONFIG.player_lock_fish_id)
   return _internal_mutable_player_lock_fish_id();
 }
 
@@ -6995,19 +6998,19 @@ inline ::PROTOBUF_NAMESPACE_ID::int64 CMD_S_CONFIG::_internal_player_cur_score(i
   return player_cur_score_.Get(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::int64 CMD_S_CONFIG::player_cur_score(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_S_CONFIG.player_cur_score)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_CONFIG.player_cur_score)
   return _internal_player_cur_score(index);
 }
 inline void CMD_S_CONFIG::set_player_cur_score(int index, ::PROTOBUF_NAMESPACE_ID::int64 value) {
   player_cur_score_.Set(index, value);
-  // @@protoc_insertion_point(field_set:CMD_S_CONFIG.player_cur_score)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_CONFIG.player_cur_score)
 }
 inline void CMD_S_CONFIG::_internal_add_player_cur_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   player_cur_score_.Add(value);
 }
 inline void CMD_S_CONFIG::add_player_cur_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_add_player_cur_score(value);
-  // @@protoc_insertion_point(field_add:CMD_S_CONFIG.player_cur_score)
+  // @@protoc_insertion_point(field_add:LTBY.CMD_S_CONFIG.player_cur_score)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
 CMD_S_CONFIG::_internal_player_cur_score() const {
@@ -7015,7 +7018,7 @@ CMD_S_CONFIG::_internal_player_cur_score() const {
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
 CMD_S_CONFIG::player_cur_score() const {
-  // @@protoc_insertion_point(field_list:CMD_S_CONFIG.player_cur_score)
+  // @@protoc_insertion_point(field_list:LTBY.CMD_S_CONFIG.player_cur_score)
   return _internal_player_cur_score();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
@@ -7024,7 +7027,7 @@ CMD_S_CONFIG::_internal_mutable_player_cur_score() {
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
 CMD_S_CONFIG::mutable_player_cur_score() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_S_CONFIG.player_cur_score)
+  // @@protoc_insertion_point(field_mutable_list:LTBY.CMD_S_CONFIG.player_cur_score)
   return _internal_mutable_player_cur_score();
 }
 
@@ -7046,19 +7049,19 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerGunLevel::_internal_gun_level(
   return gun_level_.Get(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerGunLevel::gun_level(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_S_PlayerGunLevel.gun_level)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_PlayerGunLevel.gun_level)
   return _internal_gun_level(index);
 }
 inline void CMD_S_PlayerGunLevel::set_gun_level(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   gun_level_.Set(index, value);
-  // @@protoc_insertion_point(field_set:CMD_S_PlayerGunLevel.gun_level)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_PlayerGunLevel.gun_level)
 }
 inline void CMD_S_PlayerGunLevel::_internal_add_gun_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
   gun_level_.Add(value);
 }
 inline void CMD_S_PlayerGunLevel::add_gun_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_gun_level(value);
-  // @@protoc_insertion_point(field_add:CMD_S_PlayerGunLevel.gun_level)
+  // @@protoc_insertion_point(field_add:LTBY.CMD_S_PlayerGunLevel.gun_level)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_S_PlayerGunLevel::_internal_gun_level() const {
@@ -7066,7 +7069,7 @@ CMD_S_PlayerGunLevel::_internal_gun_level() const {
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_S_PlayerGunLevel::gun_level() const {
-  // @@protoc_insertion_point(field_list:CMD_S_PlayerGunLevel.gun_level)
+  // @@protoc_insertion_point(field_list:LTBY.CMD_S_PlayerGunLevel.gun_level)
   return _internal_gun_level();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
@@ -7075,7 +7078,7 @@ CMD_S_PlayerGunLevel::_internal_mutable_gun_level() {
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 CMD_S_PlayerGunLevel::mutable_gun_level() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_S_PlayerGunLevel.gun_level)
+  // @@protoc_insertion_point(field_mutable_list:LTBY.CMD_S_PlayerGunLevel.gun_level)
   return _internal_mutable_gun_level();
 }
 
@@ -7093,19 +7096,19 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerGunLevel::_internal_gun_type(i
   return gun_type_.Get(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerGunLevel::gun_type(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_S_PlayerGunLevel.gun_type)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_PlayerGunLevel.gun_type)
   return _internal_gun_type(index);
 }
 inline void CMD_S_PlayerGunLevel::set_gun_type(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   gun_type_.Set(index, value);
-  // @@protoc_insertion_point(field_set:CMD_S_PlayerGunLevel.gun_type)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_PlayerGunLevel.gun_type)
 }
 inline void CMD_S_PlayerGunLevel::_internal_add_gun_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   gun_type_.Add(value);
 }
 inline void CMD_S_PlayerGunLevel::add_gun_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_gun_type(value);
-  // @@protoc_insertion_point(field_add:CMD_S_PlayerGunLevel.gun_type)
+  // @@protoc_insertion_point(field_add:LTBY.CMD_S_PlayerGunLevel.gun_type)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_S_PlayerGunLevel::_internal_gun_type() const {
@@ -7113,7 +7116,7 @@ CMD_S_PlayerGunLevel::_internal_gun_type() const {
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_S_PlayerGunLevel::gun_type() const {
-  // @@protoc_insertion_point(field_list:CMD_S_PlayerGunLevel.gun_type)
+  // @@protoc_insertion_point(field_list:LTBY.CMD_S_PlayerGunLevel.gun_type)
   return _internal_gun_type();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
@@ -7122,7 +7125,7 @@ CMD_S_PlayerGunLevel::_internal_mutable_gun_type() {
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 CMD_S_PlayerGunLevel::mutable_gun_type() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_S_PlayerGunLevel.gun_type)
+  // @@protoc_insertion_point(field_mutable_list:LTBY.CMD_S_PlayerGunLevel.gun_type)
   return _internal_mutable_gun_type();
 }
 
@@ -7130,7 +7133,7 @@ CMD_S_PlayerGunLevel::mutable_gun_type() {
 
 // CMD_S_AddFish
 
-// repeated .LoadFish load_fish = 1;
+// repeated .LTBY.LoadFish load_fish = 1;
 inline int CMD_S_AddFish::_internal_load_fish_size() const {
   return load_fish_.size();
 }
@@ -7140,32 +7143,32 @@ inline int CMD_S_AddFish::load_fish_size() const {
 inline void CMD_S_AddFish::clear_load_fish() {
   load_fish_.Clear();
 }
-inline ::LoadFish* CMD_S_AddFish::mutable_load_fish(int index) {
-  // @@protoc_insertion_point(field_mutable:CMD_S_AddFish.load_fish)
+inline ::LTBY::LoadFish* CMD_S_AddFish::mutable_load_fish(int index) {
+  // @@protoc_insertion_point(field_mutable:LTBY.CMD_S_AddFish.load_fish)
   return load_fish_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LTBY::LoadFish >*
 CMD_S_AddFish::mutable_load_fish() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_S_AddFish.load_fish)
+  // @@protoc_insertion_point(field_mutable_list:LTBY.CMD_S_AddFish.load_fish)
   return &load_fish_;
 }
-inline const ::LoadFish& CMD_S_AddFish::_internal_load_fish(int index) const {
+inline const ::LTBY::LoadFish& CMD_S_AddFish::_internal_load_fish(int index) const {
   return load_fish_.Get(index);
 }
-inline const ::LoadFish& CMD_S_AddFish::load_fish(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_S_AddFish.load_fish)
+inline const ::LTBY::LoadFish& CMD_S_AddFish::load_fish(int index) const {
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_AddFish.load_fish)
   return _internal_load_fish(index);
 }
-inline ::LoadFish* CMD_S_AddFish::_internal_add_load_fish() {
+inline ::LTBY::LoadFish* CMD_S_AddFish::_internal_add_load_fish() {
   return load_fish_.Add();
 }
-inline ::LoadFish* CMD_S_AddFish::add_load_fish() {
-  // @@protoc_insertion_point(field_add:CMD_S_AddFish.load_fish)
+inline ::LTBY::LoadFish* CMD_S_AddFish::add_load_fish() {
+  // @@protoc_insertion_point(field_add:LTBY.CMD_S_AddFish.load_fish)
   return _internal_add_load_fish();
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LTBY::LoadFish >&
 CMD_S_AddFish::load_fish() const {
-  // @@protoc_insertion_point(field_list:CMD_S_AddFish.load_fish)
+  // @@protoc_insertion_point(field_list:LTBY.CMD_S_AddFish.load_fish)
   return load_fish_;
 }
 
@@ -7173,7 +7176,7 @@ CMD_S_AddFish::load_fish() const {
 
 // CMD_S_PlayerEnter
 
-// repeated .LoadFish load_fish = 1;
+// repeated .LTBY.LoadFish load_fish = 1;
 inline int CMD_S_PlayerEnter::_internal_load_fish_size() const {
   return load_fish_.size();
 }
@@ -7183,32 +7186,32 @@ inline int CMD_S_PlayerEnter::load_fish_size() const {
 inline void CMD_S_PlayerEnter::clear_load_fish() {
   load_fish_.Clear();
 }
-inline ::LoadFish* CMD_S_PlayerEnter::mutable_load_fish(int index) {
-  // @@protoc_insertion_point(field_mutable:CMD_S_PlayerEnter.load_fish)
+inline ::LTBY::LoadFish* CMD_S_PlayerEnter::mutable_load_fish(int index) {
+  // @@protoc_insertion_point(field_mutable:LTBY.CMD_S_PlayerEnter.load_fish)
   return load_fish_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LTBY::LoadFish >*
 CMD_S_PlayerEnter::mutable_load_fish() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_S_PlayerEnter.load_fish)
+  // @@protoc_insertion_point(field_mutable_list:LTBY.CMD_S_PlayerEnter.load_fish)
   return &load_fish_;
 }
-inline const ::LoadFish& CMD_S_PlayerEnter::_internal_load_fish(int index) const {
+inline const ::LTBY::LoadFish& CMD_S_PlayerEnter::_internal_load_fish(int index) const {
   return load_fish_.Get(index);
 }
-inline const ::LoadFish& CMD_S_PlayerEnter::load_fish(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_S_PlayerEnter.load_fish)
+inline const ::LTBY::LoadFish& CMD_S_PlayerEnter::load_fish(int index) const {
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_PlayerEnter.load_fish)
   return _internal_load_fish(index);
 }
-inline ::LoadFish* CMD_S_PlayerEnter::_internal_add_load_fish() {
+inline ::LTBY::LoadFish* CMD_S_PlayerEnter::_internal_add_load_fish() {
   return load_fish_.Add();
 }
-inline ::LoadFish* CMD_S_PlayerEnter::add_load_fish() {
-  // @@protoc_insertion_point(field_add:CMD_S_PlayerEnter.load_fish)
+inline ::LTBY::LoadFish* CMD_S_PlayerEnter::add_load_fish() {
+  // @@protoc_insertion_point(field_add:LTBY.CMD_S_PlayerEnter.load_fish)
   return _internal_add_load_fish();
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LTBY::LoadFish >&
 CMD_S_PlayerEnter::load_fish() const {
-  // @@protoc_insertion_point(field_list:CMD_S_PlayerEnter.load_fish)
+  // @@protoc_insertion_point(field_list:LTBY.CMD_S_PlayerEnter.load_fish)
   return load_fish_;
 }
 
@@ -7224,7 +7227,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerYCEnter::_internal_yu_chao_id(
   return yu_chao_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerYCEnter::yu_chao_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_PlayerYCEnter.yu_chao_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_PlayerYCEnter.yu_chao_id)
   return _internal_yu_chao_id();
 }
 inline void CMD_S_PlayerYCEnter::_internal_set_yu_chao_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7233,10 +7236,10 @@ inline void CMD_S_PlayerYCEnter::_internal_set_yu_chao_id(::PROTOBUF_NAMESPACE_I
 }
 inline void CMD_S_PlayerYCEnter::set_yu_chao_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_yu_chao_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_PlayerYCEnter.yu_chao_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_PlayerYCEnter.yu_chao_id)
 }
 
-// repeated .LoadFish load_fish = 2;
+// repeated .LTBY.LoadFish load_fish = 2;
 inline int CMD_S_PlayerYCEnter::_internal_load_fish_size() const {
   return load_fish_.size();
 }
@@ -7246,32 +7249,32 @@ inline int CMD_S_PlayerYCEnter::load_fish_size() const {
 inline void CMD_S_PlayerYCEnter::clear_load_fish() {
   load_fish_.Clear();
 }
-inline ::LoadFish* CMD_S_PlayerYCEnter::mutable_load_fish(int index) {
-  // @@protoc_insertion_point(field_mutable:CMD_S_PlayerYCEnter.load_fish)
+inline ::LTBY::LoadFish* CMD_S_PlayerYCEnter::mutable_load_fish(int index) {
+  // @@protoc_insertion_point(field_mutable:LTBY.CMD_S_PlayerYCEnter.load_fish)
   return load_fish_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LTBY::LoadFish >*
 CMD_S_PlayerYCEnter::mutable_load_fish() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_S_PlayerYCEnter.load_fish)
+  // @@protoc_insertion_point(field_mutable_list:LTBY.CMD_S_PlayerYCEnter.load_fish)
   return &load_fish_;
 }
-inline const ::LoadFish& CMD_S_PlayerYCEnter::_internal_load_fish(int index) const {
+inline const ::LTBY::LoadFish& CMD_S_PlayerYCEnter::_internal_load_fish(int index) const {
   return load_fish_.Get(index);
 }
-inline const ::LoadFish& CMD_S_PlayerYCEnter::load_fish(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_S_PlayerYCEnter.load_fish)
+inline const ::LTBY::LoadFish& CMD_S_PlayerYCEnter::load_fish(int index) const {
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_PlayerYCEnter.load_fish)
   return _internal_load_fish(index);
 }
-inline ::LoadFish* CMD_S_PlayerYCEnter::_internal_add_load_fish() {
+inline ::LTBY::LoadFish* CMD_S_PlayerYCEnter::_internal_add_load_fish() {
   return load_fish_.Add();
 }
-inline ::LoadFish* CMD_S_PlayerYCEnter::add_load_fish() {
-  // @@protoc_insertion_point(field_add:CMD_S_PlayerYCEnter.load_fish)
+inline ::LTBY::LoadFish* CMD_S_PlayerYCEnter::add_load_fish() {
+  // @@protoc_insertion_point(field_add:LTBY.CMD_S_PlayerYCEnter.load_fish)
   return _internal_add_load_fish();
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LTBY::LoadFish >&
 CMD_S_PlayerYCEnter::load_fish() const {
-  // @@protoc_insertion_point(field_list:CMD_S_PlayerYCEnter.load_fish)
+  // @@protoc_insertion_point(field_list:LTBY.CMD_S_PlayerYCEnter.load_fish)
   return load_fish_;
 }
 
@@ -7287,7 +7290,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 FishDeadInfo::_internal_id() const {
   return id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 FishDeadInfo::id() const {
-  // @@protoc_insertion_point(field_get:FishDeadInfo.id)
+  // @@protoc_insertion_point(field_get:LTBY.FishDeadInfo.id)
   return _internal_id();
 }
 inline void FishDeadInfo::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7296,7 +7299,7 @@ inline void FishDeadInfo::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value)
 }
 inline void FishDeadInfo::set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_id(value);
-  // @@protoc_insertion_point(field_set:FishDeadInfo.id)
+  // @@protoc_insertion_point(field_set:LTBY.FishDeadInfo.id)
 }
 
 // int32 score = 2;
@@ -7307,7 +7310,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 FishDeadInfo::_internal_score() const {
   return score_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 FishDeadInfo::score() const {
-  // @@protoc_insertion_point(field_get:FishDeadInfo.score)
+  // @@protoc_insertion_point(field_get:LTBY.FishDeadInfo.score)
   return _internal_score();
 }
 inline void FishDeadInfo::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7316,7 +7319,7 @@ inline void FishDeadInfo::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 val
 }
 inline void FishDeadInfo::set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_score(value);
-  // @@protoc_insertion_point(field_set:FishDeadInfo.score)
+  // @@protoc_insertion_point(field_set:LTBY.FishDeadInfo.score)
 }
 
 // -------------------------------------------------------------------
@@ -7331,7 +7334,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_FishDead::_internal_chair_id() const
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_FishDead::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_FishDead.chair_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_FishDead.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_S_FishDead::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7340,10 +7343,10 @@ inline void CMD_S_FishDead::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int3
 }
 inline void CMD_S_FishDead::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_FishDead.chair_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_FishDead.chair_id)
 }
 
-// repeated .FishDeadInfo fish = 2;
+// repeated .LTBY.FishDeadInfo fish = 2;
 inline int CMD_S_FishDead::_internal_fish_size() const {
   return fish_.size();
 }
@@ -7353,32 +7356,32 @@ inline int CMD_S_FishDead::fish_size() const {
 inline void CMD_S_FishDead::clear_fish() {
   fish_.Clear();
 }
-inline ::FishDeadInfo* CMD_S_FishDead::mutable_fish(int index) {
-  // @@protoc_insertion_point(field_mutable:CMD_S_FishDead.fish)
+inline ::LTBY::FishDeadInfo* CMD_S_FishDead::mutable_fish(int index) {
+  // @@protoc_insertion_point(field_mutable:LTBY.CMD_S_FishDead.fish)
   return fish_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishDeadInfo >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LTBY::FishDeadInfo >*
 CMD_S_FishDead::mutable_fish() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_S_FishDead.fish)
+  // @@protoc_insertion_point(field_mutable_list:LTBY.CMD_S_FishDead.fish)
   return &fish_;
 }
-inline const ::FishDeadInfo& CMD_S_FishDead::_internal_fish(int index) const {
+inline const ::LTBY::FishDeadInfo& CMD_S_FishDead::_internal_fish(int index) const {
   return fish_.Get(index);
 }
-inline const ::FishDeadInfo& CMD_S_FishDead::fish(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_S_FishDead.fish)
+inline const ::LTBY::FishDeadInfo& CMD_S_FishDead::fish(int index) const {
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_FishDead.fish)
   return _internal_fish(index);
 }
-inline ::FishDeadInfo* CMD_S_FishDead::_internal_add_fish() {
+inline ::LTBY::FishDeadInfo* CMD_S_FishDead::_internal_add_fish() {
   return fish_.Add();
 }
-inline ::FishDeadInfo* CMD_S_FishDead::add_fish() {
-  // @@protoc_insertion_point(field_add:CMD_S_FishDead.fish)
+inline ::LTBY::FishDeadInfo* CMD_S_FishDead::add_fish() {
+  // @@protoc_insertion_point(field_add:LTBY.CMD_S_FishDead.fish)
   return _internal_add_fish();
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishDeadInfo >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LTBY::FishDeadInfo >&
 CMD_S_FishDead::fish() const {
-  // @@protoc_insertion_point(field_list:CMD_S_FishDead.fish)
+  // @@protoc_insertion_point(field_list:LTBY.CMD_S_FishDead.fish)
   return fish_;
 }
 
@@ -7390,7 +7393,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int64 CMD_S_FishDead::_internal_score() const {
   return score_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int64 CMD_S_FishDead::score() const {
-  // @@protoc_insertion_point(field_get:CMD_S_FishDead.score)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_FishDead.score)
   return _internal_score();
 }
 inline void CMD_S_FishDead::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
@@ -7399,7 +7402,7 @@ inline void CMD_S_FishDead::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 v
 }
 inline void CMD_S_FishDead::set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_score(value);
-  // @@protoc_insertion_point(field_set:CMD_S_FishDead.score)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_FishDead.score)
 }
 
 // int32 lei_long_odd = 4;
@@ -7410,7 +7413,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_FishDead::_internal_lei_long_odd() c
   return lei_long_odd_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_FishDead::lei_long_odd() const {
-  // @@protoc_insertion_point(field_get:CMD_S_FishDead.lei_long_odd)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_FishDead.lei_long_odd)
   return _internal_lei_long_odd();
 }
 inline void CMD_S_FishDead::_internal_set_lei_long_odd(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7419,7 +7422,7 @@ inline void CMD_S_FishDead::_internal_set_lei_long_odd(::PROTOBUF_NAMESPACE_ID::
 }
 inline void CMD_S_FishDead::set_lei_long_odd(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_lei_long_odd(value);
-  // @@protoc_insertion_point(field_set:CMD_S_FishDead.lei_long_odd)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_FishDead.lei_long_odd)
 }
 
 // -------------------------------------------------------------------
@@ -7434,7 +7437,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerShoot::_internal_chair_id() co
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerShoot::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_PlayerShoot.chair_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_PlayerShoot.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_S_PlayerShoot::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7443,7 +7446,7 @@ inline void CMD_S_PlayerShoot::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::i
 }
 inline void CMD_S_PlayerShoot::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_PlayerShoot.chair_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_PlayerShoot.chair_id)
 }
 
 // float x = 2;
@@ -7454,7 +7457,7 @@ inline float CMD_S_PlayerShoot::_internal_x() const {
   return x_;
 }
 inline float CMD_S_PlayerShoot::x() const {
-  // @@protoc_insertion_point(field_get:CMD_S_PlayerShoot.x)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_PlayerShoot.x)
   return _internal_x();
 }
 inline void CMD_S_PlayerShoot::_internal_set_x(float value) {
@@ -7463,7 +7466,7 @@ inline void CMD_S_PlayerShoot::_internal_set_x(float value) {
 }
 inline void CMD_S_PlayerShoot::set_x(float value) {
   _internal_set_x(value);
-  // @@protoc_insertion_point(field_set:CMD_S_PlayerShoot.x)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_PlayerShoot.x)
 }
 
 // float y = 3;
@@ -7474,7 +7477,7 @@ inline float CMD_S_PlayerShoot::_internal_y() const {
   return y_;
 }
 inline float CMD_S_PlayerShoot::y() const {
-  // @@protoc_insertion_point(field_get:CMD_S_PlayerShoot.y)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_PlayerShoot.y)
   return _internal_y();
 }
 inline void CMD_S_PlayerShoot::_internal_set_y(float value) {
@@ -7483,7 +7486,7 @@ inline void CMD_S_PlayerShoot::_internal_set_y(float value) {
 }
 inline void CMD_S_PlayerShoot::set_y(float value) {
   _internal_set_y(value);
-  // @@protoc_insertion_point(field_set:CMD_S_PlayerShoot.y)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_PlayerShoot.y)
 }
 
 // int32 level = 4;
@@ -7494,7 +7497,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerShoot::_internal_level() const
   return level_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerShoot::level() const {
-  // @@protoc_insertion_point(field_get:CMD_S_PlayerShoot.level)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_PlayerShoot.level)
   return _internal_level();
 }
 inline void CMD_S_PlayerShoot::_internal_set_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7503,7 +7506,7 @@ inline void CMD_S_PlayerShoot::_internal_set_level(::PROTOBUF_NAMESPACE_ID::int3
 }
 inline void CMD_S_PlayerShoot::set_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_level(value);
-  // @@protoc_insertion_point(field_set:CMD_S_PlayerShoot.level)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_PlayerShoot.level)
 }
 
 // int32 type = 5;
@@ -7514,7 +7517,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerShoot::_internal_type() const 
   return type_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerShoot::type() const {
-  // @@protoc_insertion_point(field_get:CMD_S_PlayerShoot.type)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_PlayerShoot.type)
   return _internal_type();
 }
 inline void CMD_S_PlayerShoot::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7523,7 +7526,7 @@ inline void CMD_S_PlayerShoot::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int32
 }
 inline void CMD_S_PlayerShoot::set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_type(value);
-  // @@protoc_insertion_point(field_set:CMD_S_PlayerShoot.type)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_PlayerShoot.type)
 }
 
 // int64 player_cur_score = 6;
@@ -7534,7 +7537,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int64 CMD_S_PlayerShoot::_internal_player_cur_sc
   return player_cur_score_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int64 CMD_S_PlayerShoot::player_cur_score() const {
-  // @@protoc_insertion_point(field_get:CMD_S_PlayerShoot.player_cur_score)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_S_PlayerShoot.player_cur_score)
   return _internal_player_cur_score();
 }
 inline void CMD_S_PlayerShoot::_internal_set_player_cur_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
@@ -7543,7 +7546,7 @@ inline void CMD_S_PlayerShoot::_internal_set_player_cur_score(::PROTOBUF_NAMESPA
 }
 inline void CMD_S_PlayerShoot::set_player_cur_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_player_cur_score(value);
-  // @@protoc_insertion_point(field_set:CMD_S_PlayerShoot.player_cur_score)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_S_PlayerShoot.player_cur_score)
 }
 
 // -------------------------------------------------------------------
@@ -7558,7 +7561,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_RobotShoot::_internal_chair_id() con
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_RobotShoot::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_C_RobotShoot.chair_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_C_RobotShoot.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_C_RobotShoot::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7567,7 +7570,7 @@ inline void CMD_C_RobotShoot::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::in
 }
 inline void CMD_C_RobotShoot::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_C_RobotShoot.chair_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_C_RobotShoot.chair_id)
 }
 
 // int32 level = 2;
@@ -7578,7 +7581,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_RobotShoot::_internal_level() const 
   return level_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_RobotShoot::level() const {
-  // @@protoc_insertion_point(field_get:CMD_C_RobotShoot.level)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_C_RobotShoot.level)
   return _internal_level();
 }
 inline void CMD_C_RobotShoot::_internal_set_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7587,7 +7590,7 @@ inline void CMD_C_RobotShoot::_internal_set_level(::PROTOBUF_NAMESPACE_ID::int32
 }
 inline void CMD_C_RobotShoot::set_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_level(value);
-  // @@protoc_insertion_point(field_set:CMD_C_RobotShoot.level)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_C_RobotShoot.level)
 }
 
 // int32 type = 3;
@@ -7598,7 +7601,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_RobotShoot::_internal_type() const {
   return type_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_RobotShoot::type() const {
-  // @@protoc_insertion_point(field_get:CMD_C_RobotShoot.type)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_C_RobotShoot.type)
   return _internal_type();
 }
 inline void CMD_C_RobotShoot::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7607,7 +7610,7 @@ inline void CMD_C_RobotShoot::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 
 }
 inline void CMD_C_RobotShoot::set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_type(value);
-  // @@protoc_insertion_point(field_set:CMD_C_RobotShoot.type)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_C_RobotShoot.type)
 }
 
 // int32 is_lock = 4;
@@ -7618,7 +7621,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_RobotShoot::_internal_is_lock() cons
   return is_lock_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_RobotShoot::is_lock() const {
-  // @@protoc_insertion_point(field_get:CMD_C_RobotShoot.is_lock)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_C_RobotShoot.is_lock)
   return _internal_is_lock();
 }
 inline void CMD_C_RobotShoot::_internal_set_is_lock(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7627,7 +7630,7 @@ inline void CMD_C_RobotShoot::_internal_set_is_lock(::PROTOBUF_NAMESPACE_ID::int
 }
 inline void CMD_C_RobotShoot::set_is_lock(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_is_lock(value);
-  // @@protoc_insertion_point(field_set:CMD_C_RobotShoot.is_lock)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_C_RobotShoot.is_lock)
 }
 
 // -------------------------------------------------------------------
@@ -7642,7 +7645,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_PlayerLock::_internal_chair_id() con
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_PlayerLock::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_C_PlayerLock.chair_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_C_PlayerLock.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_C_PlayerLock::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7651,7 +7654,7 @@ inline void CMD_C_PlayerLock::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::in
 }
 inline void CMD_C_PlayerLock::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_C_PlayerLock.chair_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_C_PlayerLock.chair_id)
 }
 
 // int32 fish_id = 2;
@@ -7662,7 +7665,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_PlayerLock::_internal_fish_id() cons
   return fish_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_PlayerLock::fish_id() const {
-  // @@protoc_insertion_point(field_get:CMD_C_PlayerLock.fish_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_C_PlayerLock.fish_id)
   return _internal_fish_id();
 }
 inline void CMD_C_PlayerLock::_internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7671,7 +7674,7 @@ inline void CMD_C_PlayerLock::_internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::int
 }
 inline void CMD_C_PlayerLock::set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_fish_id(value);
-  // @@protoc_insertion_point(field_set:CMD_C_PlayerLock.fish_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_C_PlayerLock.fish_id)
 }
 
 // -------------------------------------------------------------------
@@ -7686,7 +7689,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_JuBuZhaDan::_internal_chair_id() con
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_JuBuZhaDan::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_C_JuBuZhaDan.chair_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_C_JuBuZhaDan.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_C_JuBuZhaDan::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7695,7 +7698,7 @@ inline void CMD_C_JuBuZhaDan::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::in
 }
 inline void CMD_C_JuBuZhaDan::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_C_JuBuZhaDan.chair_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_C_JuBuZhaDan.chair_id)
 }
 
 // int32 te_shu_iu_id = 2;
@@ -7706,7 +7709,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_JuBuZhaDan::_internal_te_shu_iu_id()
   return te_shu_iu_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_JuBuZhaDan::te_shu_iu_id() const {
-  // @@protoc_insertion_point(field_get:CMD_C_JuBuZhaDan.te_shu_iu_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_C_JuBuZhaDan.te_shu_iu_id)
   return _internal_te_shu_iu_id();
 }
 inline void CMD_C_JuBuZhaDan::_internal_set_te_shu_iu_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7715,7 +7718,7 @@ inline void CMD_C_JuBuZhaDan::_internal_set_te_shu_iu_id(::PROTOBUF_NAMESPACE_ID
 }
 inline void CMD_C_JuBuZhaDan::set_te_shu_iu_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_te_shu_iu_id(value);
-  // @@protoc_insertion_point(field_set:CMD_C_JuBuZhaDan.te_shu_iu_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_C_JuBuZhaDan.te_shu_iu_id)
 }
 
 // repeated int32 fish_id = 3;
@@ -7732,19 +7735,19 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_JuBuZhaDan::_internal_fish_id(int in
   return fish_id_.Get(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_JuBuZhaDan::fish_id(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_C_JuBuZhaDan.fish_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_C_JuBuZhaDan.fish_id)
   return _internal_fish_id(index);
 }
 inline void CMD_C_JuBuZhaDan::set_fish_id(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   fish_id_.Set(index, value);
-  // @@protoc_insertion_point(field_set:CMD_C_JuBuZhaDan.fish_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_C_JuBuZhaDan.fish_id)
 }
 inline void CMD_C_JuBuZhaDan::_internal_add_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   fish_id_.Add(value);
 }
 inline void CMD_C_JuBuZhaDan::add_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_fish_id(value);
-  // @@protoc_insertion_point(field_add:CMD_C_JuBuZhaDan.fish_id)
+  // @@protoc_insertion_point(field_add:LTBY.CMD_C_JuBuZhaDan.fish_id)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_C_JuBuZhaDan::_internal_fish_id() const {
@@ -7752,7 +7755,7 @@ CMD_C_JuBuZhaDan::_internal_fish_id() const {
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_C_JuBuZhaDan::fish_id() const {
-  // @@protoc_insertion_point(field_list:CMD_C_JuBuZhaDan.fish_id)
+  // @@protoc_insertion_point(field_list:LTBY.CMD_C_JuBuZhaDan.fish_id)
   return _internal_fish_id();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
@@ -7761,7 +7764,7 @@ CMD_C_JuBuZhaDan::_internal_mutable_fish_id() {
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 CMD_C_JuBuZhaDan::mutable_fish_id() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_C_JuBuZhaDan.fish_id)
+  // @@protoc_insertion_point(field_mutable_list:LTBY.CMD_C_JuBuZhaDan.fish_id)
   return _internal_mutable_fish_id();
 }
 
@@ -7777,7 +7780,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_TongLeiZhaDan::_internal_chair_id() 
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_TongLeiZhaDan::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_C_TongLeiZhaDan.chair_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_C_TongLeiZhaDan.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_C_TongLeiZhaDan::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7786,7 +7789,7 @@ inline void CMD_C_TongLeiZhaDan::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID:
 }
 inline void CMD_C_TongLeiZhaDan::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_C_TongLeiZhaDan.chair_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_C_TongLeiZhaDan.chair_id)
 }
 
 // int32 te_shu_iu_id = 2;
@@ -7797,7 +7800,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_TongLeiZhaDan::_internal_te_shu_iu_i
   return te_shu_iu_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_TongLeiZhaDan::te_shu_iu_id() const {
-  // @@protoc_insertion_point(field_get:CMD_C_TongLeiZhaDan.te_shu_iu_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_C_TongLeiZhaDan.te_shu_iu_id)
   return _internal_te_shu_iu_id();
 }
 inline void CMD_C_TongLeiZhaDan::_internal_set_te_shu_iu_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7806,7 +7809,7 @@ inline void CMD_C_TongLeiZhaDan::_internal_set_te_shu_iu_id(::PROTOBUF_NAMESPACE
 }
 inline void CMD_C_TongLeiZhaDan::set_te_shu_iu_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_te_shu_iu_id(value);
-  // @@protoc_insertion_point(field_set:CMD_C_TongLeiZhaDan.te_shu_iu_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_C_TongLeiZhaDan.te_shu_iu_id)
 }
 
 // repeated int32 fish_id = 3;
@@ -7823,19 +7826,19 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_TongLeiZhaDan::_internal_fish_id(int
   return fish_id_.Get(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_TongLeiZhaDan::fish_id(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_C_TongLeiZhaDan.fish_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_C_TongLeiZhaDan.fish_id)
   return _internal_fish_id(index);
 }
 inline void CMD_C_TongLeiZhaDan::set_fish_id(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   fish_id_.Set(index, value);
-  // @@protoc_insertion_point(field_set:CMD_C_TongLeiZhaDan.fish_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_C_TongLeiZhaDan.fish_id)
 }
 inline void CMD_C_TongLeiZhaDan::_internal_add_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   fish_id_.Add(value);
 }
 inline void CMD_C_TongLeiZhaDan::add_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_fish_id(value);
-  // @@protoc_insertion_point(field_add:CMD_C_TongLeiZhaDan.fish_id)
+  // @@protoc_insertion_point(field_add:LTBY.CMD_C_TongLeiZhaDan.fish_id)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_C_TongLeiZhaDan::_internal_fish_id() const {
@@ -7843,7 +7846,7 @@ CMD_C_TongLeiZhaDan::_internal_fish_id() const {
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_C_TongLeiZhaDan::fish_id() const {
-  // @@protoc_insertion_point(field_list:CMD_C_TongLeiZhaDan.fish_id)
+  // @@protoc_insertion_point(field_list:LTBY.CMD_C_TongLeiZhaDan.fish_id)
   return _internal_fish_id();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
@@ -7852,7 +7855,7 @@ CMD_C_TongLeiZhaDan::_internal_mutable_fish_id() {
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 CMD_C_TongLeiZhaDan::mutable_fish_id() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_C_TongLeiZhaDan.fish_id)
+  // @@protoc_insertion_point(field_mutable_list:LTBY.CMD_C_TongLeiZhaDan.fish_id)
   return _internal_mutable_fish_id();
 }
 
@@ -7868,7 +7871,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_ShuiHuZhuan::_internal_chair_id() co
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_ShuiHuZhuan::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_C_ShuiHuZhuan.chair_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_C_ShuiHuZhuan.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_C_ShuiHuZhuan::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7877,7 +7880,7 @@ inline void CMD_C_ShuiHuZhuan::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::i
 }
 inline void CMD_C_ShuiHuZhuan::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_C_ShuiHuZhuan.chair_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_C_ShuiHuZhuan.chair_id)
 }
 
 // int32 te_shu_iu_id = 2;
@@ -7888,7 +7891,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_ShuiHuZhuan::_internal_te_shu_iu_id(
   return te_shu_iu_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_ShuiHuZhuan::te_shu_iu_id() const {
-  // @@protoc_insertion_point(field_get:CMD_C_ShuiHuZhuan.te_shu_iu_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_C_ShuiHuZhuan.te_shu_iu_id)
   return _internal_te_shu_iu_id();
 }
 inline void CMD_C_ShuiHuZhuan::_internal_set_te_shu_iu_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7897,7 +7900,7 @@ inline void CMD_C_ShuiHuZhuan::_internal_set_te_shu_iu_id(::PROTOBUF_NAMESPACE_I
 }
 inline void CMD_C_ShuiHuZhuan::set_te_shu_iu_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_te_shu_iu_id(value);
-  // @@protoc_insertion_point(field_set:CMD_C_ShuiHuZhuan.te_shu_iu_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_C_ShuiHuZhuan.te_shu_iu_id)
 }
 
 // repeated int32 fish_id = 3;
@@ -7914,19 +7917,19 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_ShuiHuZhuan::_internal_fish_id(int i
   return fish_id_.Get(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_ShuiHuZhuan::fish_id(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_C_ShuiHuZhuan.fish_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_C_ShuiHuZhuan.fish_id)
   return _internal_fish_id(index);
 }
 inline void CMD_C_ShuiHuZhuan::set_fish_id(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   fish_id_.Set(index, value);
-  // @@protoc_insertion_point(field_set:CMD_C_ShuiHuZhuan.fish_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_C_ShuiHuZhuan.fish_id)
 }
 inline void CMD_C_ShuiHuZhuan::_internal_add_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   fish_id_.Add(value);
 }
 inline void CMD_C_ShuiHuZhuan::add_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_fish_id(value);
-  // @@protoc_insertion_point(field_add:CMD_C_ShuiHuZhuan.fish_id)
+  // @@protoc_insertion_point(field_add:LTBY.CMD_C_ShuiHuZhuan.fish_id)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_C_ShuiHuZhuan::_internal_fish_id() const {
@@ -7934,7 +7937,7 @@ CMD_C_ShuiHuZhuan::_internal_fish_id() const {
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_C_ShuiHuZhuan::fish_id() const {
-  // @@protoc_insertion_point(field_list:CMD_C_ShuiHuZhuan.fish_id)
+  // @@protoc_insertion_point(field_list:LTBY.CMD_C_ShuiHuZhuan.fish_id)
   return _internal_fish_id();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
@@ -7943,7 +7946,7 @@ CMD_C_ShuiHuZhuan::_internal_mutable_fish_id() {
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 CMD_C_ShuiHuZhuan::mutable_fish_id() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_C_ShuiHuZhuan.fish_id)
+  // @@protoc_insertion_point(field_mutable_list:LTBY.CMD_C_ShuiHuZhuan.fish_id)
   return _internal_mutable_fish_id();
 }
 
@@ -7959,7 +7962,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_ChangeBulletLevel::_internal_chair_i
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_ChangeBulletLevel::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_C_ChangeBulletLevel.chair_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_C_ChangeBulletLevel.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_C_ChangeBulletLevel::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7968,7 +7971,7 @@ inline void CMD_C_ChangeBulletLevel::_internal_set_chair_id(::PROTOBUF_NAMESPACE
 }
 inline void CMD_C_ChangeBulletLevel::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_C_ChangeBulletLevel.chair_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_C_ChangeBulletLevel.chair_id)
 }
 
 // int32 gun_type = 2;
@@ -7979,7 +7982,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_ChangeBulletLevel::_internal_gun_typ
   return gun_type_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_ChangeBulletLevel::gun_type() const {
-  // @@protoc_insertion_point(field_get:CMD_C_ChangeBulletLevel.gun_type)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_C_ChangeBulletLevel.gun_type)
   return _internal_gun_type();
 }
 inline void CMD_C_ChangeBulletLevel::_internal_set_gun_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7988,7 +7991,7 @@ inline void CMD_C_ChangeBulletLevel::_internal_set_gun_type(::PROTOBUF_NAMESPACE
 }
 inline void CMD_C_ChangeBulletLevel::set_gun_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_gun_type(value);
-  // @@protoc_insertion_point(field_set:CMD_C_ChangeBulletLevel.gun_type)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_C_ChangeBulletLevel.gun_type)
 }
 
 // int32 gun_level = 3;
@@ -7999,7 +8002,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_ChangeBulletLevel::_internal_gun_lev
   return gun_level_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_ChangeBulletLevel::gun_level() const {
-  // @@protoc_insertion_point(field_get:CMD_C_ChangeBulletLevel.gun_level)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_C_ChangeBulletLevel.gun_level)
   return _internal_gun_level();
 }
 inline void CMD_C_ChangeBulletLevel::_internal_set_gun_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8008,7 +8011,7 @@ inline void CMD_C_ChangeBulletLevel::_internal_set_gun_level(::PROTOBUF_NAMESPAC
 }
 inline void CMD_C_ChangeBulletLevel::set_gun_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_gun_level(value);
-  // @@protoc_insertion_point(field_set:CMD_C_ChangeBulletLevel.gun_level)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_C_ChangeBulletLevel.gun_level)
 }
 
 // -------------------------------------------------------------------
@@ -8023,7 +8026,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 Bullet::_internal_id() const {
   return id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 Bullet::id() const {
-  // @@protoc_insertion_point(field_get:Bullet.id)
+  // @@protoc_insertion_point(field_get:LTBY.Bullet.id)
   return _internal_id();
 }
 inline void Bullet::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8032,7 +8035,7 @@ inline void Bullet::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
 }
 inline void Bullet::set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_id(value);
-  // @@protoc_insertion_point(field_set:Bullet.id)
+  // @@protoc_insertion_point(field_set:LTBY.Bullet.id)
 }
 
 // int32 bullet_kind = 2;
@@ -8043,7 +8046,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 Bullet::_internal_bullet_kind() const {
   return bullet_kind_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 Bullet::bullet_kind() const {
-  // @@protoc_insertion_point(field_get:Bullet.bullet_kind)
+  // @@protoc_insertion_point(field_get:LTBY.Bullet.bullet_kind)
   return _internal_bullet_kind();
 }
 inline void Bullet::_internal_set_bullet_kind(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8052,7 +8055,7 @@ inline void Bullet::_internal_set_bullet_kind(::PROTOBUF_NAMESPACE_ID::int32 val
 }
 inline void Bullet::set_bullet_kind(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_bullet_kind(value);
-  // @@protoc_insertion_point(field_set:Bullet.bullet_kind)
+  // @@protoc_insertion_point(field_set:LTBY.Bullet.bullet_kind)
 }
 
 // int32 is_use = 3;
@@ -8063,7 +8066,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 Bullet::_internal_is_use() const {
   return is_use_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 Bullet::is_use() const {
-  // @@protoc_insertion_point(field_get:Bullet.is_use)
+  // @@protoc_insertion_point(field_get:LTBY.Bullet.is_use)
   return _internal_is_use();
 }
 inline void Bullet::_internal_set_is_use(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8072,7 +8075,7 @@ inline void Bullet::_internal_set_is_use(::PROTOBUF_NAMESPACE_ID::int32 value) {
 }
 inline void Bullet::set_is_use(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_is_use(value);
-  // @@protoc_insertion_point(field_set:Bullet.is_use)
+  // @@protoc_insertion_point(field_set:LTBY.Bullet.is_use)
 }
 
 // int32 level = 4;
@@ -8083,7 +8086,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 Bullet::_internal_level() const {
   return level_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 Bullet::level() const {
-  // @@protoc_insertion_point(field_get:Bullet.level)
+  // @@protoc_insertion_point(field_get:LTBY.Bullet.level)
   return _internal_level();
 }
 inline void Bullet::_internal_set_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8092,7 +8095,7 @@ inline void Bullet::_internal_set_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
 }
 inline void Bullet::set_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_level(value);
-  // @@protoc_insertion_point(field_set:Bullet.level)
+  // @@protoc_insertion_point(field_set:LTBY.Bullet.level)
 }
 
 // int32 type = 5;
@@ -8103,7 +8106,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 Bullet::_internal_type() const {
   return type_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 Bullet::type() const {
-  // @@protoc_insertion_point(field_get:Bullet.type)
+  // @@protoc_insertion_point(field_get:LTBY.Bullet.type)
   return _internal_type();
 }
 inline void Bullet::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8112,7 +8115,7 @@ inline void Bullet::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
 }
 inline void Bullet::set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_type(value);
-  // @@protoc_insertion_point(field_set:Bullet.type)
+  // @@protoc_insertion_point(field_set:LTBY.Bullet.type)
 }
 
 // int32 chips = 6;
@@ -8123,7 +8126,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 Bullet::_internal_chips() const {
   return chips_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 Bullet::chips() const {
-  // @@protoc_insertion_point(field_get:Bullet.chips)
+  // @@protoc_insertion_point(field_get:LTBY.Bullet.chips)
   return _internal_chips();
 }
 inline void Bullet::_internal_set_chips(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8132,7 +8135,7 @@ inline void Bullet::_internal_set_chips(::PROTOBUF_NAMESPACE_ID::int32 value) {
 }
 inline void Bullet::set_chips(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chips(value);
-  // @@protoc_insertion_point(field_set:Bullet.chips)
+  // @@protoc_insertion_point(field_set:LTBY.Bullet.chips)
 }
 
 // -------------------------------------------------------------------
@@ -8147,7 +8150,7 @@ inline float CMD_C_PressShoot::_internal_x() const {
   return x_;
 }
 inline float CMD_C_PressShoot::x() const {
-  // @@protoc_insertion_point(field_get:CMD_C_PressShoot.x)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_C_PressShoot.x)
   return _internal_x();
 }
 inline void CMD_C_PressShoot::_internal_set_x(float value) {
@@ -8156,7 +8159,7 @@ inline void CMD_C_PressShoot::_internal_set_x(float value) {
 }
 inline void CMD_C_PressShoot::set_x(float value) {
   _internal_set_x(value);
-  // @@protoc_insertion_point(field_set:CMD_C_PressShoot.x)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_C_PressShoot.x)
 }
 
 // float y = 2;
@@ -8167,7 +8170,7 @@ inline float CMD_C_PressShoot::_internal_y() const {
   return y_;
 }
 inline float CMD_C_PressShoot::y() const {
-  // @@protoc_insertion_point(field_get:CMD_C_PressShoot.y)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_C_PressShoot.y)
   return _internal_y();
 }
 inline void CMD_C_PressShoot::_internal_set_y(float value) {
@@ -8176,7 +8179,7 @@ inline void CMD_C_PressShoot::_internal_set_y(float value) {
 }
 inline void CMD_C_PressShoot::set_y(float value) {
   _internal_set_y(value);
-  // @@protoc_insertion_point(field_set:CMD_C_PressShoot.y)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_C_PressShoot.y)
 }
 
 // int32 chair_id = 3;
@@ -8187,7 +8190,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_PressShoot::_internal_chair_id() con
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_PressShoot::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_C_PressShoot.chair_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_C_PressShoot.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_C_PressShoot::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8196,10 +8199,10 @@ inline void CMD_C_PressShoot::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::in
 }
 inline void CMD_C_PressShoot::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_C_PressShoot.chair_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_C_PressShoot.chair_id)
 }
 
-// .Bullet bullet = 4;
+// .LTBY.Bullet bullet = 4;
 inline bool CMD_C_PressShoot::_internal_has_bullet() const {
   return this != internal_default_instance() && bullet_ != nullptr;
 }
@@ -8212,17 +8215,17 @@ inline void CMD_C_PressShoot::clear_bullet() {
   }
   bullet_ = nullptr;
 }
-inline const ::Bullet& CMD_C_PressShoot::_internal_bullet() const {
-  const ::Bullet* p = bullet_;
-  return p != nullptr ? *p : reinterpret_cast<const ::Bullet&>(
-      ::_Bullet_default_instance_);
+inline const ::LTBY::Bullet& CMD_C_PressShoot::_internal_bullet() const {
+  const ::LTBY::Bullet* p = bullet_;
+  return p != nullptr ? *p : reinterpret_cast<const ::LTBY::Bullet&>(
+      ::LTBY::_Bullet_default_instance_);
 }
-inline const ::Bullet& CMD_C_PressShoot::bullet() const {
-  // @@protoc_insertion_point(field_get:CMD_C_PressShoot.bullet)
+inline const ::LTBY::Bullet& CMD_C_PressShoot::bullet() const {
+  // @@protoc_insertion_point(field_get:LTBY.CMD_C_PressShoot.bullet)
   return _internal_bullet();
 }
 inline void CMD_C_PressShoot::unsafe_arena_set_allocated_bullet(
-    ::Bullet* bullet) {
+    ::LTBY::Bullet* bullet) {
   if (GetArena() == nullptr) {
     delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(bullet_);
   }
@@ -8232,37 +8235,37 @@ inline void CMD_C_PressShoot::unsafe_arena_set_allocated_bullet(
   } else {
     
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:CMD_C_PressShoot.bullet)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:LTBY.CMD_C_PressShoot.bullet)
 }
-inline ::Bullet* CMD_C_PressShoot::release_bullet() {
+inline ::LTBY::Bullet* CMD_C_PressShoot::release_bullet() {
   
-  ::Bullet* temp = bullet_;
+  ::LTBY::Bullet* temp = bullet_;
   bullet_ = nullptr;
   if (GetArena() != nullptr) {
     temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
   }
   return temp;
 }
-inline ::Bullet* CMD_C_PressShoot::unsafe_arena_release_bullet() {
-  // @@protoc_insertion_point(field_release:CMD_C_PressShoot.bullet)
+inline ::LTBY::Bullet* CMD_C_PressShoot::unsafe_arena_release_bullet() {
+  // @@protoc_insertion_point(field_release:LTBY.CMD_C_PressShoot.bullet)
   
-  ::Bullet* temp = bullet_;
+  ::LTBY::Bullet* temp = bullet_;
   bullet_ = nullptr;
   return temp;
 }
-inline ::Bullet* CMD_C_PressShoot::_internal_mutable_bullet() {
+inline ::LTBY::Bullet* CMD_C_PressShoot::_internal_mutable_bullet() {
   
   if (bullet_ == nullptr) {
-    auto* p = CreateMaybeMessage<::Bullet>(GetArena());
+    auto* p = CreateMaybeMessage<::LTBY::Bullet>(GetArena());
     bullet_ = p;
   }
   return bullet_;
 }
-inline ::Bullet* CMD_C_PressShoot::mutable_bullet() {
-  // @@protoc_insertion_point(field_mutable:CMD_C_PressShoot.bullet)
+inline ::LTBY::Bullet* CMD_C_PressShoot::mutable_bullet() {
+  // @@protoc_insertion_point(field_mutable:LTBY.CMD_C_PressShoot.bullet)
   return _internal_mutable_bullet();
 }
-inline void CMD_C_PressShoot::set_allocated_bullet(::Bullet* bullet) {
+inline void CMD_C_PressShoot::set_allocated_bullet(::LTBY::Bullet* bullet) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   if (message_arena == nullptr) {
     delete bullet_;
@@ -8279,14 +8282,14 @@ inline void CMD_C_PressShoot::set_allocated_bullet(::Bullet* bullet) {
     
   }
   bullet_ = bullet;
-  // @@protoc_insertion_point(field_set_allocated:CMD_C_PressShoot.bullet)
+  // @@protoc_insertion_point(field_set_allocated:LTBY.CMD_C_PressShoot.bullet)
 }
 
 // -------------------------------------------------------------------
 
 // CMD_C_HitedFish
 
-// .Bullet bullet = 1;
+// .LTBY.Bullet bullet = 1;
 inline bool CMD_C_HitedFish::_internal_has_bullet() const {
   return this != internal_default_instance() && bullet_ != nullptr;
 }
@@ -8299,17 +8302,17 @@ inline void CMD_C_HitedFish::clear_bullet() {
   }
   bullet_ = nullptr;
 }
-inline const ::Bullet& CMD_C_HitedFish::_internal_bullet() const {
-  const ::Bullet* p = bullet_;
-  return p != nullptr ? *p : reinterpret_cast<const ::Bullet&>(
-      ::_Bullet_default_instance_);
+inline const ::LTBY::Bullet& CMD_C_HitedFish::_internal_bullet() const {
+  const ::LTBY::Bullet* p = bullet_;
+  return p != nullptr ? *p : reinterpret_cast<const ::LTBY::Bullet&>(
+      ::LTBY::_Bullet_default_instance_);
 }
-inline const ::Bullet& CMD_C_HitedFish::bullet() const {
-  // @@protoc_insertion_point(field_get:CMD_C_HitedFish.bullet)
+inline const ::LTBY::Bullet& CMD_C_HitedFish::bullet() const {
+  // @@protoc_insertion_point(field_get:LTBY.CMD_C_HitedFish.bullet)
   return _internal_bullet();
 }
 inline void CMD_C_HitedFish::unsafe_arena_set_allocated_bullet(
-    ::Bullet* bullet) {
+    ::LTBY::Bullet* bullet) {
   if (GetArena() == nullptr) {
     delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(bullet_);
   }
@@ -8319,37 +8322,37 @@ inline void CMD_C_HitedFish::unsafe_arena_set_allocated_bullet(
   } else {
     
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:CMD_C_HitedFish.bullet)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:LTBY.CMD_C_HitedFish.bullet)
 }
-inline ::Bullet* CMD_C_HitedFish::release_bullet() {
+inline ::LTBY::Bullet* CMD_C_HitedFish::release_bullet() {
   
-  ::Bullet* temp = bullet_;
+  ::LTBY::Bullet* temp = bullet_;
   bullet_ = nullptr;
   if (GetArena() != nullptr) {
     temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
   }
   return temp;
 }
-inline ::Bullet* CMD_C_HitedFish::unsafe_arena_release_bullet() {
-  // @@protoc_insertion_point(field_release:CMD_C_HitedFish.bullet)
+inline ::LTBY::Bullet* CMD_C_HitedFish::unsafe_arena_release_bullet() {
+  // @@protoc_insertion_point(field_release:LTBY.CMD_C_HitedFish.bullet)
   
-  ::Bullet* temp = bullet_;
+  ::LTBY::Bullet* temp = bullet_;
   bullet_ = nullptr;
   return temp;
 }
-inline ::Bullet* CMD_C_HitedFish::_internal_mutable_bullet() {
+inline ::LTBY::Bullet* CMD_C_HitedFish::_internal_mutable_bullet() {
   
   if (bullet_ == nullptr) {
-    auto* p = CreateMaybeMessage<::Bullet>(GetArena());
+    auto* p = CreateMaybeMessage<::LTBY::Bullet>(GetArena());
     bullet_ = p;
   }
   return bullet_;
 }
-inline ::Bullet* CMD_C_HitedFish::mutable_bullet() {
-  // @@protoc_insertion_point(field_mutable:CMD_C_HitedFish.bullet)
+inline ::LTBY::Bullet* CMD_C_HitedFish::mutable_bullet() {
+  // @@protoc_insertion_point(field_mutable:LTBY.CMD_C_HitedFish.bullet)
   return _internal_mutable_bullet();
 }
-inline void CMD_C_HitedFish::set_allocated_bullet(::Bullet* bullet) {
+inline void CMD_C_HitedFish::set_allocated_bullet(::LTBY::Bullet* bullet) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   if (message_arena == nullptr) {
     delete bullet_;
@@ -8366,7 +8369,7 @@ inline void CMD_C_HitedFish::set_allocated_bullet(::Bullet* bullet) {
     
   }
   bullet_ = bullet;
-  // @@protoc_insertion_point(field_set_allocated:CMD_C_HitedFish.bullet)
+  // @@protoc_insertion_point(field_set_allocated:LTBY.CMD_C_HitedFish.bullet)
 }
 
 // int32 chair_id = 2;
@@ -8377,7 +8380,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_HitedFish::_internal_chair_id() cons
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_HitedFish::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_C_HitedFish.chair_id)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_C_HitedFish.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_C_HitedFish::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8386,7 +8389,7 @@ inline void CMD_C_HitedFish::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int
 }
 inline void CMD_C_HitedFish::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_C_HitedFish.chair_id)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_C_HitedFish.chair_id)
 }
 
 // repeated int32 hit_fish = 3;
@@ -8403,19 +8406,19 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_HitedFish::_internal_hit_fish(int in
   return hit_fish_.Get(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_HitedFish::hit_fish(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_C_HitedFish.hit_fish)
+  // @@protoc_insertion_point(field_get:LTBY.CMD_C_HitedFish.hit_fish)
   return _internal_hit_fish(index);
 }
 inline void CMD_C_HitedFish::set_hit_fish(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   hit_fish_.Set(index, value);
-  // @@protoc_insertion_point(field_set:CMD_C_HitedFish.hit_fish)
+  // @@protoc_insertion_point(field_set:LTBY.CMD_C_HitedFish.hit_fish)
 }
 inline void CMD_C_HitedFish::_internal_add_hit_fish(::PROTOBUF_NAMESPACE_ID::int32 value) {
   hit_fish_.Add(value);
 }
 inline void CMD_C_HitedFish::add_hit_fish(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_hit_fish(value);
-  // @@protoc_insertion_point(field_add:CMD_C_HitedFish.hit_fish)
+  // @@protoc_insertion_point(field_add:LTBY.CMD_C_HitedFish.hit_fish)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_C_HitedFish::_internal_hit_fish() const {
@@ -8423,7 +8426,7 @@ CMD_C_HitedFish::_internal_hit_fish() const {
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_C_HitedFish::hit_fish() const {
-  // @@protoc_insertion_point(field_list:CMD_C_HitedFish.hit_fish)
+  // @@protoc_insertion_point(field_list:LTBY.CMD_C_HitedFish.hit_fish)
   return _internal_hit_fish();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
@@ -8432,7 +8435,7 @@ CMD_C_HitedFish::_internal_mutable_hit_fish() {
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 CMD_C_HitedFish::mutable_hit_fish() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_C_HitedFish.hit_fish)
+  // @@protoc_insertion_point(field_mutable_list:LTBY.CMD_C_HitedFish.hit_fish)
   return _internal_mutable_hit_fish();
 }
 
@@ -8502,13 +8505,14 @@ CMD_C_HitedFish::mutable_hit_fish() {
 
 // @@protoc_insertion_point(namespace_scope)
 
+}  // namespace LTBY
 
 PROTOBUF_NAMESPACE_OPEN
 
-template <> struct is_proto_enum< ::EMsgIDLTBY> : ::std::true_type {};
+template <> struct is_proto_enum< ::LTBY::EMsgIDLTBY> : ::std::true_type {};
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::EMsgIDLTBY>() {
-  return ::EMsgIDLTBY_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< ::LTBY::EMsgIDLTBY>() {
+  return ::LTBY::EMsgIDLTBY_descriptor();
 }
 
 PROTOBUF_NAMESPACE_CLOSE

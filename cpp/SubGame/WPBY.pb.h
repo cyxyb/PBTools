@@ -54,6 +54,7 @@ struct TableStruct_WPBY_2eproto {
   static const ::PROTOBUF_NAMESPACE_ID::uint32 offsets[];
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_WPBY_2eproto;
+namespace WPBY {
 class Bullet;
 class BulletDefaultTypeInternal;
 extern BulletDefaultTypeInternal _Bullet_default_instance_;
@@ -159,43 +160,45 @@ extern LineInfoDefaultTypeInternal _LineInfo_default_instance_;
 class LoadFish;
 class LoadFishDefaultTypeInternal;
 extern LoadFishDefaultTypeInternal _LoadFish_default_instance_;
+}  // namespace WPBY
 PROTOBUF_NAMESPACE_OPEN
-template<> ::Bullet* Arena::CreateMaybeMessage<::Bullet>(Arena*);
-template<> ::CMD_C_ChangeBulletLevel* Arena::CreateMaybeMessage<::CMD_C_ChangeBulletLevel>(Arena*);
-template<> ::CMD_C_HitedFish* Arena::CreateMaybeMessage<::CMD_C_HitedFish>(Arena*);
-template<> ::CMD_C_JuBuZhaDan* Arena::CreateMaybeMessage<::CMD_C_JuBuZhaDan>(Arena*);
-template<> ::CMD_C_PlayerLock* Arena::CreateMaybeMessage<::CMD_C_PlayerLock>(Arena*);
-template<> ::CMD_C_PressShoot* Arena::CreateMaybeMessage<::CMD_C_PressShoot>(Arena*);
-template<> ::CMD_C_RobotShoot* Arena::CreateMaybeMessage<::CMD_C_RobotShoot>(Arena*);
-template<> ::CMD_C_ShuiHuZhuan* Arena::CreateMaybeMessage<::CMD_C_ShuiHuZhuan>(Arena*);
-template<> ::CMD_C_TongLeiZhaDan* Arena::CreateMaybeMessage<::CMD_C_TongLeiZhaDan>(Arena*);
-template<> ::CMD_S_AddFish* Arena::CreateMaybeMessage<::CMD_S_AddFish>(Arena*);
-template<> ::CMD_S_CONFIG* Arena::CreateMaybeMessage<::CMD_S_CONFIG>(Arena*);
-template<> ::CMD_S_ChangeBulletLevel* Arena::CreateMaybeMessage<::CMD_S_ChangeBulletLevel>(Arena*);
-template<> ::CMD_S_DaSanYuan* Arena::CreateMaybeMessage<::CMD_S_DaSanYuan>(Arena*);
-template<> ::CMD_S_DaSiXi* Arena::CreateMaybeMessage<::CMD_S_DaSiXi>(Arena*);
-template<> ::CMD_S_FishDead* Arena::CreateMaybeMessage<::CMD_S_FishDead>(Arena*);
-template<> ::CMD_S_JuBuZhaDan* Arena::CreateMaybeMessage<::CMD_S_JuBuZhaDan>(Arena*);
-template<> ::CMD_S_PlayerEnter* Arena::CreateMaybeMessage<::CMD_S_PlayerEnter>(Arena*);
-template<> ::CMD_S_PlayerGunLevel* Arena::CreateMaybeMessage<::CMD_S_PlayerGunLevel>(Arena*);
-template<> ::CMD_S_PlayerLock* Arena::CreateMaybeMessage<::CMD_S_PlayerLock>(Arena*);
-template<> ::CMD_S_PlayerShoot* Arena::CreateMaybeMessage<::CMD_S_PlayerShoot>(Arena*);
-template<> ::CMD_S_RobotList* Arena::CreateMaybeMessage<::CMD_S_RobotList>(Arena*);
-template<> ::CMD_S_RobotShoot* Arena::CreateMaybeMessage<::CMD_S_RobotShoot>(Arena*);
-template<> ::CMD_S_ShootLK* Arena::CreateMaybeMessage<::CMD_S_ShootLK>(Arena*);
-template<> ::CMD_S_ShuiHuZhuan* Arena::CreateMaybeMessage<::CMD_S_ShuiHuZhuan>(Arena*);
-template<> ::CMD_S_TongLeiZhaDan* Arena::CreateMaybeMessage<::CMD_S_TongLeiZhaDan>(Arena*);
-template<> ::CMD_S_YiWangDaJin* Arena::CreateMaybeMessage<::CMD_S_YiWangDaJin>(Arena*);
-template<> ::CMD_S_YuChaoCome* Arena::CreateMaybeMessage<::CMD_S_YuChaoCome>(Arena*);
-template<> ::CMD_S_YuWang* Arena::CreateMaybeMessage<::CMD_S_YuWang>(Arena*);
-template<> ::CMD_S_ZhongYiTang* Arena::CreateMaybeMessage<::CMD_S_ZhongYiTang>(Arena*);
-template<> ::FishDeadInfo* Arena::CreateMaybeMessage<::FishDeadInfo>(Arena*);
-template<> ::FishLineInfo* Arena::CreateMaybeMessage<::FishLineInfo>(Arena*);
-template<> ::FishPoint* Arena::CreateMaybeMessage<::FishPoint>(Arena*);
-template<> ::FishTide* Arena::CreateMaybeMessage<::FishTide>(Arena*);
-template<> ::LineInfo* Arena::CreateMaybeMessage<::LineInfo>(Arena*);
-template<> ::LoadFish* Arena::CreateMaybeMessage<::LoadFish>(Arena*);
+template<> ::WPBY::Bullet* Arena::CreateMaybeMessage<::WPBY::Bullet>(Arena*);
+template<> ::WPBY::CMD_C_ChangeBulletLevel* Arena::CreateMaybeMessage<::WPBY::CMD_C_ChangeBulletLevel>(Arena*);
+template<> ::WPBY::CMD_C_HitedFish* Arena::CreateMaybeMessage<::WPBY::CMD_C_HitedFish>(Arena*);
+template<> ::WPBY::CMD_C_JuBuZhaDan* Arena::CreateMaybeMessage<::WPBY::CMD_C_JuBuZhaDan>(Arena*);
+template<> ::WPBY::CMD_C_PlayerLock* Arena::CreateMaybeMessage<::WPBY::CMD_C_PlayerLock>(Arena*);
+template<> ::WPBY::CMD_C_PressShoot* Arena::CreateMaybeMessage<::WPBY::CMD_C_PressShoot>(Arena*);
+template<> ::WPBY::CMD_C_RobotShoot* Arena::CreateMaybeMessage<::WPBY::CMD_C_RobotShoot>(Arena*);
+template<> ::WPBY::CMD_C_ShuiHuZhuan* Arena::CreateMaybeMessage<::WPBY::CMD_C_ShuiHuZhuan>(Arena*);
+template<> ::WPBY::CMD_C_TongLeiZhaDan* Arena::CreateMaybeMessage<::WPBY::CMD_C_TongLeiZhaDan>(Arena*);
+template<> ::WPBY::CMD_S_AddFish* Arena::CreateMaybeMessage<::WPBY::CMD_S_AddFish>(Arena*);
+template<> ::WPBY::CMD_S_CONFIG* Arena::CreateMaybeMessage<::WPBY::CMD_S_CONFIG>(Arena*);
+template<> ::WPBY::CMD_S_ChangeBulletLevel* Arena::CreateMaybeMessage<::WPBY::CMD_S_ChangeBulletLevel>(Arena*);
+template<> ::WPBY::CMD_S_DaSanYuan* Arena::CreateMaybeMessage<::WPBY::CMD_S_DaSanYuan>(Arena*);
+template<> ::WPBY::CMD_S_DaSiXi* Arena::CreateMaybeMessage<::WPBY::CMD_S_DaSiXi>(Arena*);
+template<> ::WPBY::CMD_S_FishDead* Arena::CreateMaybeMessage<::WPBY::CMD_S_FishDead>(Arena*);
+template<> ::WPBY::CMD_S_JuBuZhaDan* Arena::CreateMaybeMessage<::WPBY::CMD_S_JuBuZhaDan>(Arena*);
+template<> ::WPBY::CMD_S_PlayerEnter* Arena::CreateMaybeMessage<::WPBY::CMD_S_PlayerEnter>(Arena*);
+template<> ::WPBY::CMD_S_PlayerGunLevel* Arena::CreateMaybeMessage<::WPBY::CMD_S_PlayerGunLevel>(Arena*);
+template<> ::WPBY::CMD_S_PlayerLock* Arena::CreateMaybeMessage<::WPBY::CMD_S_PlayerLock>(Arena*);
+template<> ::WPBY::CMD_S_PlayerShoot* Arena::CreateMaybeMessage<::WPBY::CMD_S_PlayerShoot>(Arena*);
+template<> ::WPBY::CMD_S_RobotList* Arena::CreateMaybeMessage<::WPBY::CMD_S_RobotList>(Arena*);
+template<> ::WPBY::CMD_S_RobotShoot* Arena::CreateMaybeMessage<::WPBY::CMD_S_RobotShoot>(Arena*);
+template<> ::WPBY::CMD_S_ShootLK* Arena::CreateMaybeMessage<::WPBY::CMD_S_ShootLK>(Arena*);
+template<> ::WPBY::CMD_S_ShuiHuZhuan* Arena::CreateMaybeMessage<::WPBY::CMD_S_ShuiHuZhuan>(Arena*);
+template<> ::WPBY::CMD_S_TongLeiZhaDan* Arena::CreateMaybeMessage<::WPBY::CMD_S_TongLeiZhaDan>(Arena*);
+template<> ::WPBY::CMD_S_YiWangDaJin* Arena::CreateMaybeMessage<::WPBY::CMD_S_YiWangDaJin>(Arena*);
+template<> ::WPBY::CMD_S_YuChaoCome* Arena::CreateMaybeMessage<::WPBY::CMD_S_YuChaoCome>(Arena*);
+template<> ::WPBY::CMD_S_YuWang* Arena::CreateMaybeMessage<::WPBY::CMD_S_YuWang>(Arena*);
+template<> ::WPBY::CMD_S_ZhongYiTang* Arena::CreateMaybeMessage<::WPBY::CMD_S_ZhongYiTang>(Arena*);
+template<> ::WPBY::FishDeadInfo* Arena::CreateMaybeMessage<::WPBY::FishDeadInfo>(Arena*);
+template<> ::WPBY::FishLineInfo* Arena::CreateMaybeMessage<::WPBY::FishLineInfo>(Arena*);
+template<> ::WPBY::FishPoint* Arena::CreateMaybeMessage<::WPBY::FishPoint>(Arena*);
+template<> ::WPBY::FishTide* Arena::CreateMaybeMessage<::WPBY::FishTide>(Arena*);
+template<> ::WPBY::LineInfo* Arena::CreateMaybeMessage<::WPBY::LineInfo>(Arena*);
+template<> ::WPBY::LoadFish* Arena::CreateMaybeMessage<::WPBY::LoadFish>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
+namespace WPBY {
 
 enum EMsgIDSubGame : int {
   MsgIDSubGame_Null = 0,
@@ -263,7 +266,7 @@ inline bool EMsgIDSubGame_Parse(
 // ===================================================================
 
 class CMD_S_RobotShoot PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_RobotShoot) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.CMD_S_RobotShoot) */ {
  public:
   inline CMD_S_RobotShoot() : CMD_S_RobotShoot(nullptr) {}
   virtual ~CMD_S_RobotShoot();
@@ -351,7 +354,7 @@ class CMD_S_RobotShoot PROTOBUF_FINAL :
   void InternalSwap(CMD_S_RobotShoot* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_RobotShoot";
+    return "WPBY.CMD_S_RobotShoot";
   }
   protected:
   explicit CMD_S_RobotShoot(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -415,7 +418,7 @@ class CMD_S_RobotShoot PROTOBUF_FINAL :
   void _internal_set_is_lock(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_RobotShoot)
+  // @@protoc_insertion_point(class_scope:WPBY.CMD_S_RobotShoot)
  private:
   class _Internal;
 
@@ -432,7 +435,7 @@ class CMD_S_RobotShoot PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_RobotList PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_RobotList) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.CMD_S_RobotList) */ {
  public:
   inline CMD_S_RobotList() : CMD_S_RobotList(nullptr) {}
   virtual ~CMD_S_RobotList();
@@ -520,7 +523,7 @@ class CMD_S_RobotList PROTOBUF_FINAL :
   void InternalSwap(CMD_S_RobotList* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_RobotList";
+    return "WPBY.CMD_S_RobotList";
   }
   protected:
   explicit CMD_S_RobotList(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -567,7 +570,7 @@ class CMD_S_RobotList PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< bool >*
       mutable_is_robot();
 
-  // @@protoc_insertion_point(class_scope:CMD_S_RobotList)
+  // @@protoc_insertion_point(class_scope:WPBY.CMD_S_RobotList)
  private:
   class _Internal;
 
@@ -582,7 +585,7 @@ class CMD_S_RobotList PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_PlayerLock PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_PlayerLock) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.CMD_S_PlayerLock) */ {
  public:
   inline CMD_S_PlayerLock() : CMD_S_PlayerLock(nullptr) {}
   virtual ~CMD_S_PlayerLock();
@@ -670,7 +673,7 @@ class CMD_S_PlayerLock PROTOBUF_FINAL :
   void InternalSwap(CMD_S_PlayerLock* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_PlayerLock";
+    return "WPBY.CMD_S_PlayerLock";
   }
   protected:
   explicit CMD_S_PlayerLock(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -714,7 +717,7 @@ class CMD_S_PlayerLock PROTOBUF_FINAL :
   void _internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_PlayerLock)
+  // @@protoc_insertion_point(class_scope:WPBY.CMD_S_PlayerLock)
  private:
   class _Internal;
 
@@ -729,7 +732,7 @@ class CMD_S_PlayerLock PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class FishPoint PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:FishPoint) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.FishPoint) */ {
  public:
   inline FishPoint() : FishPoint(nullptr) {}
   virtual ~FishPoint();
@@ -817,7 +820,7 @@ class FishPoint PROTOBUF_FINAL :
   void InternalSwap(FishPoint* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "FishPoint";
+    return "WPBY.FishPoint";
   }
   protected:
   explicit FishPoint(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -861,7 +864,7 @@ class FishPoint PROTOBUF_FINAL :
   void _internal_set_y(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:FishPoint)
+  // @@protoc_insertion_point(class_scope:WPBY.FishPoint)
  private:
   class _Internal;
 
@@ -876,7 +879,7 @@ class FishPoint PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class LineInfo PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LineInfo) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.LineInfo) */ {
  public:
   inline LineInfo() : LineInfo(nullptr) {}
   virtual ~LineInfo();
@@ -964,7 +967,7 @@ class LineInfo PROTOBUF_FINAL :
   void InternalSwap(LineInfo* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "LineInfo";
+    return "WPBY.LineInfo";
   }
   protected:
   explicit LineInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -990,22 +993,22 @@ class LineInfo PROTOBUF_FINAL :
     kPointsFieldNumber = 2,
     kTypeFieldNumber = 1,
   };
-  // repeated .FishPoint points = 2;
+  // repeated .WPBY.FishPoint points = 2;
   int points_size() const;
   private:
   int _internal_points_size() const;
   public:
   void clear_points();
-  ::FishPoint* mutable_points(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishPoint >*
+  ::WPBY::FishPoint* mutable_points(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::FishPoint >*
       mutable_points();
   private:
-  const ::FishPoint& _internal_points(int index) const;
-  ::FishPoint* _internal_add_points();
+  const ::WPBY::FishPoint& _internal_points(int index) const;
+  ::WPBY::FishPoint* _internal_add_points();
   public:
-  const ::FishPoint& points(int index) const;
-  ::FishPoint* add_points();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishPoint >&
+  const ::WPBY::FishPoint& points(int index) const;
+  ::WPBY::FishPoint* add_points();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::FishPoint >&
       points() const;
 
   // int32 type = 1;
@@ -1017,14 +1020,14 @@ class LineInfo PROTOBUF_FINAL :
   void _internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:LineInfo)
+  // @@protoc_insertion_point(class_scope:WPBY.LineInfo)
  private:
   class _Internal;
 
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishPoint > points_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::FishPoint > points_;
   ::PROTOBUF_NAMESPACE_ID::int32 type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_WPBY_2eproto;
@@ -1032,7 +1035,7 @@ class LineInfo PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class FishLineInfo PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:FishLineInfo) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.FishLineInfo) */ {
  public:
   inline FishLineInfo() : FishLineInfo(nullptr) {}
   virtual ~FishLineInfo();
@@ -1120,7 +1123,7 @@ class FishLineInfo PROTOBUF_FINAL :
   void InternalSwap(FishLineInfo* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "FishLineInfo";
+    return "WPBY.FishLineInfo";
   }
   protected:
   explicit FishLineInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -1150,23 +1153,23 @@ class FishLineInfo PROTOBUF_FINAL :
     kFishNumFieldNumber = 5,
     kLivedTimeFieldNumber = 6,
   };
-  // .LineInfo line = 1;
+  // .WPBY.LineInfo line = 1;
   bool has_line() const;
   private:
   bool _internal_has_line() const;
   public:
   void clear_line();
-  const ::LineInfo& line() const;
-  ::LineInfo* release_line();
-  ::LineInfo* mutable_line();
-  void set_allocated_line(::LineInfo* line);
+  const ::WPBY::LineInfo& line() const;
+  ::WPBY::LineInfo* release_line();
+  ::WPBY::LineInfo* mutable_line();
+  void set_allocated_line(::WPBY::LineInfo* line);
   private:
-  const ::LineInfo& _internal_line() const;
-  ::LineInfo* _internal_mutable_line();
+  const ::WPBY::LineInfo& _internal_line() const;
+  ::WPBY::LineInfo* _internal_mutable_line();
   public:
   void unsafe_arena_set_allocated_line(
-      ::LineInfo* line);
-  ::LineInfo* unsafe_arena_release_line();
+      ::WPBY::LineInfo* line);
+  ::WPBY::LineInfo* unsafe_arena_release_line();
 
   // int32 kind = 2;
   void clear_kind();
@@ -1213,14 +1216,14 @@ class FishLineInfo PROTOBUF_FINAL :
   void _internal_set_lived_time(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:FishLineInfo)
+  // @@protoc_insertion_point(class_scope:WPBY.FishLineInfo)
  private:
   class _Internal;
 
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::LineInfo* line_;
+  ::WPBY::LineInfo* line_;
   ::PROTOBUF_NAMESPACE_ID::int32 kind_;
   ::PROTOBUF_NAMESPACE_ID::int32 start_delay_time_;
   ::PROTOBUF_NAMESPACE_ID::int32 delay_time_;
@@ -1232,7 +1235,7 @@ class FishLineInfo PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class FishTide PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:FishTide) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.FishTide) */ {
  public:
   inline FishTide() : FishTide(nullptr) {}
   virtual ~FishTide();
@@ -1320,7 +1323,7 @@ class FishTide PROTOBUF_FINAL :
   void InternalSwap(FishTide* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "FishTide";
+    return "WPBY.FishTide";
   }
   protected:
   explicit FishTide(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -1349,22 +1352,22 @@ class FishTide PROTOBUF_FINAL :
     kFishTideTurnFieldNumber = 3,
     kLineNumFieldNumber = 4,
   };
-  // repeated .FishLineInfo fish_lines = 5;
+  // repeated .WPBY.FishLineInfo fish_lines = 5;
   int fish_lines_size() const;
   private:
   int _internal_fish_lines_size() const;
   public:
   void clear_fish_lines();
-  ::FishLineInfo* mutable_fish_lines(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishLineInfo >*
+  ::WPBY::FishLineInfo* mutable_fish_lines(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::FishLineInfo >*
       mutable_fish_lines();
   private:
-  const ::FishLineInfo& _internal_fish_lines(int index) const;
-  ::FishLineInfo* _internal_add_fish_lines();
+  const ::WPBY::FishLineInfo& _internal_fish_lines(int index) const;
+  ::WPBY::FishLineInfo* _internal_add_fish_lines();
   public:
-  const ::FishLineInfo& fish_lines(int index) const;
-  ::FishLineInfo* add_fish_lines();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishLineInfo >&
+  const ::WPBY::FishLineInfo& fish_lines(int index) const;
+  ::WPBY::FishLineInfo* add_fish_lines();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::FishLineInfo >&
       fish_lines() const;
 
   // int64 fish_tide_start_time = 1;
@@ -1403,14 +1406,14 @@ class FishTide PROTOBUF_FINAL :
   void _internal_set_line_num(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:FishTide)
+  // @@protoc_insertion_point(class_scope:WPBY.FishTide)
  private:
   class _Internal;
 
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishLineInfo > fish_lines_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::FishLineInfo > fish_lines_;
   ::PROTOBUF_NAMESPACE_ID::int64 fish_tide_start_time_;
   ::PROTOBUF_NAMESPACE_ID::int64 fish_tide_cur_time_;
   ::PROTOBUF_NAMESPACE_ID::int32 fish_tide_turn_;
@@ -1421,7 +1424,7 @@ class FishTide PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_YuChaoCome PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_YuChaoCome) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.CMD_S_YuChaoCome) */ {
  public:
   inline CMD_S_YuChaoCome() : CMD_S_YuChaoCome(nullptr) {}
   virtual ~CMD_S_YuChaoCome();
@@ -1509,7 +1512,7 @@ class CMD_S_YuChaoCome PROTOBUF_FINAL :
   void InternalSwap(CMD_S_YuChaoCome* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_YuChaoCome";
+    return "WPBY.CMD_S_YuChaoCome";
   }
   protected:
   explicit CMD_S_YuChaoCome(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -1535,23 +1538,23 @@ class CMD_S_YuChaoCome PROTOBUF_FINAL :
     kFishTideFieldNumber = 2,
     kYuChaoIdFieldNumber = 1,
   };
-  // .FishTide fish_tide = 2;
+  // .WPBY.FishTide fish_tide = 2;
   bool has_fish_tide() const;
   private:
   bool _internal_has_fish_tide() const;
   public:
   void clear_fish_tide();
-  const ::FishTide& fish_tide() const;
-  ::FishTide* release_fish_tide();
-  ::FishTide* mutable_fish_tide();
-  void set_allocated_fish_tide(::FishTide* fish_tide);
+  const ::WPBY::FishTide& fish_tide() const;
+  ::WPBY::FishTide* release_fish_tide();
+  ::WPBY::FishTide* mutable_fish_tide();
+  void set_allocated_fish_tide(::WPBY::FishTide* fish_tide);
   private:
-  const ::FishTide& _internal_fish_tide() const;
-  ::FishTide* _internal_mutable_fish_tide();
+  const ::WPBY::FishTide& _internal_fish_tide() const;
+  ::WPBY::FishTide* _internal_mutable_fish_tide();
   public:
   void unsafe_arena_set_allocated_fish_tide(
-      ::FishTide* fish_tide);
-  ::FishTide* unsafe_arena_release_fish_tide();
+      ::WPBY::FishTide* fish_tide);
+  ::WPBY::FishTide* unsafe_arena_release_fish_tide();
 
   // int32 yu_chao_id = 1;
   void clear_yu_chao_id();
@@ -1562,14 +1565,14 @@ class CMD_S_YuChaoCome PROTOBUF_FINAL :
   void _internal_set_yu_chao_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_YuChaoCome)
+  // @@protoc_insertion_point(class_scope:WPBY.CMD_S_YuChaoCome)
  private:
   class _Internal;
 
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::FishTide* fish_tide_;
+  ::WPBY::FishTide* fish_tide_;
   ::PROTOBUF_NAMESPACE_ID::int32 yu_chao_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_WPBY_2eproto;
@@ -1577,7 +1580,7 @@ class CMD_S_YuChaoCome PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_ShootLK PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_ShootLK) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.CMD_S_ShootLK) */ {
  public:
   inline CMD_S_ShootLK() : CMD_S_ShootLK(nullptr) {}
   virtual ~CMD_S_ShootLK();
@@ -1665,7 +1668,7 @@ class CMD_S_ShootLK PROTOBUF_FINAL :
   void InternalSwap(CMD_S_ShootLK* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_ShootLK";
+    return "WPBY.CMD_S_ShootLK";
   }
   protected:
   explicit CMD_S_ShootLK(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -1729,7 +1732,7 @@ class CMD_S_ShootLK PROTOBUF_FINAL :
   void _internal_set_multiple(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_ShootLK)
+  // @@protoc_insertion_point(class_scope:WPBY.CMD_S_ShootLK)
  private:
   class _Internal;
 
@@ -1746,7 +1749,7 @@ class CMD_S_ShootLK PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_JuBuZhaDan PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_JuBuZhaDan) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.CMD_S_JuBuZhaDan) */ {
  public:
   inline CMD_S_JuBuZhaDan() : CMD_S_JuBuZhaDan(nullptr) {}
   virtual ~CMD_S_JuBuZhaDan();
@@ -1834,7 +1837,7 @@ class CMD_S_JuBuZhaDan PROTOBUF_FINAL :
   void InternalSwap(CMD_S_JuBuZhaDan* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_JuBuZhaDan";
+    return "WPBY.CMD_S_JuBuZhaDan";
   }
   protected:
   explicit CMD_S_JuBuZhaDan(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -1878,7 +1881,7 @@ class CMD_S_JuBuZhaDan PROTOBUF_FINAL :
   void _internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_JuBuZhaDan)
+  // @@protoc_insertion_point(class_scope:WPBY.CMD_S_JuBuZhaDan)
  private:
   class _Internal;
 
@@ -1893,7 +1896,7 @@ class CMD_S_JuBuZhaDan PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_YiWangDaJin PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_YiWangDaJin) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.CMD_S_YiWangDaJin) */ {
  public:
   inline CMD_S_YiWangDaJin() : CMD_S_YiWangDaJin(nullptr) {}
   virtual ~CMD_S_YiWangDaJin();
@@ -1981,7 +1984,7 @@ class CMD_S_YiWangDaJin PROTOBUF_FINAL :
   void InternalSwap(CMD_S_YiWangDaJin* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_YiWangDaJin";
+    return "WPBY.CMD_S_YiWangDaJin";
   }
   protected:
   explicit CMD_S_YiWangDaJin(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -2025,7 +2028,7 @@ class CMD_S_YiWangDaJin PROTOBUF_FINAL :
   void _internal_set_bullet_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_YiWangDaJin)
+  // @@protoc_insertion_point(class_scope:WPBY.CMD_S_YiWangDaJin)
  private:
   class _Internal;
 
@@ -2040,7 +2043,7 @@ class CMD_S_YiWangDaJin PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_TongLeiZhaDan PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_TongLeiZhaDan) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.CMD_S_TongLeiZhaDan) */ {
  public:
   inline CMD_S_TongLeiZhaDan() : CMD_S_TongLeiZhaDan(nullptr) {}
   virtual ~CMD_S_TongLeiZhaDan();
@@ -2128,7 +2131,7 @@ class CMD_S_TongLeiZhaDan PROTOBUF_FINAL :
   void InternalSwap(CMD_S_TongLeiZhaDan* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_TongLeiZhaDan";
+    return "WPBY.CMD_S_TongLeiZhaDan";
   }
   protected:
   explicit CMD_S_TongLeiZhaDan(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -2182,7 +2185,7 @@ class CMD_S_TongLeiZhaDan PROTOBUF_FINAL :
   void _internal_set_kind(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_TongLeiZhaDan)
+  // @@protoc_insertion_point(class_scope:WPBY.CMD_S_TongLeiZhaDan)
  private:
   class _Internal;
 
@@ -2198,7 +2201,7 @@ class CMD_S_TongLeiZhaDan PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class LoadFish PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LoadFish) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.LoadFish) */ {
  public:
   inline LoadFish() : LoadFish(nullptr) {}
   virtual ~LoadFish();
@@ -2286,7 +2289,7 @@ class LoadFish PROTOBUF_FINAL :
   void InternalSwap(LoadFish* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "LoadFish";
+    return "WPBY.LoadFish";
   }
   protected:
   explicit LoadFish(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -2317,22 +2320,22 @@ class LoadFish PROTOBUF_FINAL :
     kNowTimeFieldNumber = 6,
     kMulFieldNumber = 7,
   };
-  // repeated .FishPoint fish_point = 5;
+  // repeated .WPBY.FishPoint fish_point = 5;
   int fish_point_size() const;
   private:
   int _internal_fish_point_size() const;
   public:
   void clear_fish_point();
-  ::FishPoint* mutable_fish_point(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishPoint >*
+  ::WPBY::FishPoint* mutable_fish_point(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::FishPoint >*
       mutable_fish_point();
   private:
-  const ::FishPoint& _internal_fish_point(int index) const;
-  ::FishPoint* _internal_add_fish_point();
+  const ::WPBY::FishPoint& _internal_fish_point(int index) const;
+  ::WPBY::FishPoint* _internal_add_fish_point();
   public:
-  const ::FishPoint& fish_point(int index) const;
-  ::FishPoint* add_fish_point();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishPoint >&
+  const ::WPBY::FishPoint& fish_point(int index) const;
+  ::WPBY::FishPoint* add_fish_point();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::FishPoint >&
       fish_point() const;
 
   // int32 kind = 1;
@@ -2389,14 +2392,14 @@ class LoadFish PROTOBUF_FINAL :
   void _internal_set_mul(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:LoadFish)
+  // @@protoc_insertion_point(class_scope:WPBY.LoadFish)
  private:
   class _Internal;
 
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishPoint > fish_point_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::FishPoint > fish_point_;
   ::PROTOBUF_NAMESPACE_ID::int32 kind_;
   ::PROTOBUF_NAMESPACE_ID::int32 id_;
   ::PROTOBUF_NAMESPACE_ID::int32 create_time_;
@@ -2409,7 +2412,7 @@ class LoadFish PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_YuWang PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_YuWang) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.CMD_S_YuWang) */ {
  public:
   inline CMD_S_YuWang() : CMD_S_YuWang(nullptr) {}
   virtual ~CMD_S_YuWang();
@@ -2497,7 +2500,7 @@ class CMD_S_YuWang PROTOBUF_FINAL :
   void InternalSwap(CMD_S_YuWang* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_YuWang";
+    return "WPBY.CMD_S_YuWang";
   }
   protected:
   explicit CMD_S_YuWang(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -2525,22 +2528,22 @@ class CMD_S_YuWang PROTOBUF_FINAL :
     kKindFieldNumber = 2,
     kYuWangIdFieldNumber = 3,
   };
-  // repeated .LoadFish fish_id = 4;
+  // repeated .WPBY.LoadFish fish_id = 4;
   int fish_id_size() const;
   private:
   int _internal_fish_id_size() const;
   public:
   void clear_fish_id();
-  ::LoadFish* mutable_fish_id(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >*
+  ::WPBY::LoadFish* mutable_fish_id(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::LoadFish >*
       mutable_fish_id();
   private:
-  const ::LoadFish& _internal_fish_id(int index) const;
-  ::LoadFish* _internal_add_fish_id();
+  const ::WPBY::LoadFish& _internal_fish_id(int index) const;
+  ::WPBY::LoadFish* _internal_add_fish_id();
   public:
-  const ::LoadFish& fish_id(int index) const;
-  ::LoadFish* add_fish_id();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >&
+  const ::WPBY::LoadFish& fish_id(int index) const;
+  ::WPBY::LoadFish* add_fish_id();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::LoadFish >&
       fish_id() const;
 
   // int32 chair_id = 1;
@@ -2570,14 +2573,14 @@ class CMD_S_YuWang PROTOBUF_FINAL :
   void _internal_set_yu_wang_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_YuWang)
+  // @@protoc_insertion_point(class_scope:WPBY.CMD_S_YuWang)
  private:
   class _Internal;
 
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish > fish_id_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::LoadFish > fish_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 kind_;
   ::PROTOBUF_NAMESPACE_ID::int32 yu_wang_id_;
@@ -2587,7 +2590,7 @@ class CMD_S_YuWang PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_DaSiXi PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_DaSiXi) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.CMD_S_DaSiXi) */ {
  public:
   inline CMD_S_DaSiXi() : CMD_S_DaSiXi(nullptr) {}
   virtual ~CMD_S_DaSiXi();
@@ -2675,7 +2678,7 @@ class CMD_S_DaSiXi PROTOBUF_FINAL :
   void InternalSwap(CMD_S_DaSiXi* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_DaSiXi";
+    return "WPBY.CMD_S_DaSiXi";
   }
   protected:
   explicit CMD_S_DaSiXi(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -2729,7 +2732,7 @@ class CMD_S_DaSiXi PROTOBUF_FINAL :
   void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_DaSiXi)
+  // @@protoc_insertion_point(class_scope:WPBY.CMD_S_DaSiXi)
  private:
   class _Internal;
 
@@ -2745,7 +2748,7 @@ class CMD_S_DaSiXi PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_DaSanYuan PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_DaSanYuan) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.CMD_S_DaSanYuan) */ {
  public:
   inline CMD_S_DaSanYuan() : CMD_S_DaSanYuan(nullptr) {}
   virtual ~CMD_S_DaSanYuan();
@@ -2833,7 +2836,7 @@ class CMD_S_DaSanYuan PROTOBUF_FINAL :
   void InternalSwap(CMD_S_DaSanYuan* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_DaSanYuan";
+    return "WPBY.CMD_S_DaSanYuan";
   }
   protected:
   explicit CMD_S_DaSanYuan(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -2887,7 +2890,7 @@ class CMD_S_DaSanYuan PROTOBUF_FINAL :
   void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_DaSanYuan)
+  // @@protoc_insertion_point(class_scope:WPBY.CMD_S_DaSanYuan)
  private:
   class _Internal;
 
@@ -2903,7 +2906,7 @@ class CMD_S_DaSanYuan PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_ZhongYiTang PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_ZhongYiTang) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.CMD_S_ZhongYiTang) */ {
  public:
   inline CMD_S_ZhongYiTang() : CMD_S_ZhongYiTang(nullptr) {}
   virtual ~CMD_S_ZhongYiTang();
@@ -2991,7 +2994,7 @@ class CMD_S_ZhongYiTang PROTOBUF_FINAL :
   void InternalSwap(CMD_S_ZhongYiTang* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_ZhongYiTang";
+    return "WPBY.CMD_S_ZhongYiTang";
   }
   protected:
   explicit CMD_S_ZhongYiTang(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -3035,7 +3038,7 @@ class CMD_S_ZhongYiTang PROTOBUF_FINAL :
   void _internal_set_time(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_ZhongYiTang)
+  // @@protoc_insertion_point(class_scope:WPBY.CMD_S_ZhongYiTang)
  private:
   class _Internal;
 
@@ -3050,7 +3053,7 @@ class CMD_S_ZhongYiTang PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_ShuiHuZhuan PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_ShuiHuZhuan) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.CMD_S_ShuiHuZhuan) */ {
  public:
   inline CMD_S_ShuiHuZhuan() : CMD_S_ShuiHuZhuan(nullptr) {}
   virtual ~CMD_S_ShuiHuZhuan();
@@ -3138,7 +3141,7 @@ class CMD_S_ShuiHuZhuan PROTOBUF_FINAL :
   void InternalSwap(CMD_S_ShuiHuZhuan* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_ShuiHuZhuan";
+    return "WPBY.CMD_S_ShuiHuZhuan";
   }
   protected:
   explicit CMD_S_ShuiHuZhuan(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -3182,7 +3185,7 @@ class CMD_S_ShuiHuZhuan PROTOBUF_FINAL :
   void _internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_ShuiHuZhuan)
+  // @@protoc_insertion_point(class_scope:WPBY.CMD_S_ShuiHuZhuan)
  private:
   class _Internal;
 
@@ -3197,7 +3200,7 @@ class CMD_S_ShuiHuZhuan PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_ChangeBulletLevel PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_ChangeBulletLevel) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.CMD_S_ChangeBulletLevel) */ {
  public:
   inline CMD_S_ChangeBulletLevel() : CMD_S_ChangeBulletLevel(nullptr) {}
   virtual ~CMD_S_ChangeBulletLevel();
@@ -3285,7 +3288,7 @@ class CMD_S_ChangeBulletLevel PROTOBUF_FINAL :
   void InternalSwap(CMD_S_ChangeBulletLevel* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_ChangeBulletLevel";
+    return "WPBY.CMD_S_ChangeBulletLevel";
   }
   protected:
   explicit CMD_S_ChangeBulletLevel(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -3339,7 +3342,7 @@ class CMD_S_ChangeBulletLevel PROTOBUF_FINAL :
   void _internal_set_gun_level(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_ChangeBulletLevel)
+  // @@protoc_insertion_point(class_scope:WPBY.CMD_S_ChangeBulletLevel)
  private:
   class _Internal;
 
@@ -3355,7 +3358,7 @@ class CMD_S_ChangeBulletLevel PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_CONFIG PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_CONFIG) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.CMD_S_CONFIG) */ {
  public:
   inline CMD_S_CONFIG() : CMD_S_CONFIG(nullptr) {}
   virtual ~CMD_S_CONFIG();
@@ -3443,7 +3446,7 @@ class CMD_S_CONFIG PROTOBUF_FINAL :
   void InternalSwap(CMD_S_CONFIG* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_CONFIG";
+    return "WPBY.CMD_S_CONFIG";
   }
   protected:
   explicit CMD_S_CONFIG(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -3546,7 +3549,7 @@ class CMD_S_CONFIG PROTOBUF_FINAL :
   void _internal_set_background_picture_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_CONFIG)
+  // @@protoc_insertion_point(class_scope:WPBY.CMD_S_CONFIG)
  private:
   class _Internal;
 
@@ -3566,7 +3569,7 @@ class CMD_S_CONFIG PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_PlayerGunLevel PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_PlayerGunLevel) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.CMD_S_PlayerGunLevel) */ {
  public:
   inline CMD_S_PlayerGunLevel() : CMD_S_PlayerGunLevel(nullptr) {}
   virtual ~CMD_S_PlayerGunLevel();
@@ -3654,7 +3657,7 @@ class CMD_S_PlayerGunLevel PROTOBUF_FINAL :
   void InternalSwap(CMD_S_PlayerGunLevel* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_PlayerGunLevel";
+    return "WPBY.CMD_S_PlayerGunLevel";
   }
   protected:
   explicit CMD_S_PlayerGunLevel(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -3724,7 +3727,7 @@ class CMD_S_PlayerGunLevel PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_gun_type();
 
-  // @@protoc_insertion_point(class_scope:CMD_S_PlayerGunLevel)
+  // @@protoc_insertion_point(class_scope:WPBY.CMD_S_PlayerGunLevel)
  private:
   class _Internal;
 
@@ -3741,7 +3744,7 @@ class CMD_S_PlayerGunLevel PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_AddFish PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_AddFish) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.CMD_S_AddFish) */ {
  public:
   inline CMD_S_AddFish() : CMD_S_AddFish(nullptr) {}
   virtual ~CMD_S_AddFish();
@@ -3829,7 +3832,7 @@ class CMD_S_AddFish PROTOBUF_FINAL :
   void InternalSwap(CMD_S_AddFish* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_AddFish";
+    return "WPBY.CMD_S_AddFish";
   }
   protected:
   explicit CMD_S_AddFish(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -3854,39 +3857,39 @@ class CMD_S_AddFish PROTOBUF_FINAL :
   enum : int {
     kLoadFishFieldNumber = 1,
   };
-  // repeated .LoadFish load_fish = 1;
+  // repeated .WPBY.LoadFish load_fish = 1;
   int load_fish_size() const;
   private:
   int _internal_load_fish_size() const;
   public:
   void clear_load_fish();
-  ::LoadFish* mutable_load_fish(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >*
+  ::WPBY::LoadFish* mutable_load_fish(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::LoadFish >*
       mutable_load_fish();
   private:
-  const ::LoadFish& _internal_load_fish(int index) const;
-  ::LoadFish* _internal_add_load_fish();
+  const ::WPBY::LoadFish& _internal_load_fish(int index) const;
+  ::WPBY::LoadFish* _internal_add_load_fish();
   public:
-  const ::LoadFish& load_fish(int index) const;
-  ::LoadFish* add_load_fish();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >&
+  const ::WPBY::LoadFish& load_fish(int index) const;
+  ::WPBY::LoadFish* add_load_fish();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::LoadFish >&
       load_fish() const;
 
-  // @@protoc_insertion_point(class_scope:CMD_S_AddFish)
+  // @@protoc_insertion_point(class_scope:WPBY.CMD_S_AddFish)
  private:
   class _Internal;
 
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish > load_fish_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::LoadFish > load_fish_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_WPBY_2eproto;
 };
 // -------------------------------------------------------------------
 
 class CMD_S_PlayerEnter PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_PlayerEnter) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.CMD_S_PlayerEnter) */ {
  public:
   inline CMD_S_PlayerEnter() : CMD_S_PlayerEnter(nullptr) {}
   virtual ~CMD_S_PlayerEnter();
@@ -3974,7 +3977,7 @@ class CMD_S_PlayerEnter PROTOBUF_FINAL :
   void InternalSwap(CMD_S_PlayerEnter* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_PlayerEnter";
+    return "WPBY.CMD_S_PlayerEnter";
   }
   protected:
   explicit CMD_S_PlayerEnter(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -3999,39 +4002,39 @@ class CMD_S_PlayerEnter PROTOBUF_FINAL :
   enum : int {
     kLoadFishFieldNumber = 1,
   };
-  // repeated .LoadFish load_fish = 1;
+  // repeated .WPBY.LoadFish load_fish = 1;
   int load_fish_size() const;
   private:
   int _internal_load_fish_size() const;
   public:
   void clear_load_fish();
-  ::LoadFish* mutable_load_fish(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >*
+  ::WPBY::LoadFish* mutable_load_fish(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::LoadFish >*
       mutable_load_fish();
   private:
-  const ::LoadFish& _internal_load_fish(int index) const;
-  ::LoadFish* _internal_add_load_fish();
+  const ::WPBY::LoadFish& _internal_load_fish(int index) const;
+  ::WPBY::LoadFish* _internal_add_load_fish();
   public:
-  const ::LoadFish& load_fish(int index) const;
-  ::LoadFish* add_load_fish();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >&
+  const ::WPBY::LoadFish& load_fish(int index) const;
+  ::WPBY::LoadFish* add_load_fish();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::LoadFish >&
       load_fish() const;
 
-  // @@protoc_insertion_point(class_scope:CMD_S_PlayerEnter)
+  // @@protoc_insertion_point(class_scope:WPBY.CMD_S_PlayerEnter)
  private:
   class _Internal;
 
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish > load_fish_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::LoadFish > load_fish_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_WPBY_2eproto;
 };
 // -------------------------------------------------------------------
 
 class FishDeadInfo PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:FishDeadInfo) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.FishDeadInfo) */ {
  public:
   inline FishDeadInfo() : FishDeadInfo(nullptr) {}
   virtual ~FishDeadInfo();
@@ -4119,7 +4122,7 @@ class FishDeadInfo PROTOBUF_FINAL :
   void InternalSwap(FishDeadInfo* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "FishDeadInfo";
+    return "WPBY.FishDeadInfo";
   }
   protected:
   explicit FishDeadInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -4163,7 +4166,7 @@ class FishDeadInfo PROTOBUF_FINAL :
   void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:FishDeadInfo)
+  // @@protoc_insertion_point(class_scope:WPBY.FishDeadInfo)
  private:
   class _Internal;
 
@@ -4178,7 +4181,7 @@ class FishDeadInfo PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_FishDead PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_FishDead) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.CMD_S_FishDead) */ {
  public:
   inline CMD_S_FishDead() : CMD_S_FishDead(nullptr) {}
   virtual ~CMD_S_FishDead();
@@ -4266,7 +4269,7 @@ class CMD_S_FishDead PROTOBUF_FINAL :
   void InternalSwap(CMD_S_FishDead* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_FishDead";
+    return "WPBY.CMD_S_FishDead";
   }
   protected:
   explicit CMD_S_FishDead(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -4293,22 +4296,22 @@ class CMD_S_FishDead PROTOBUF_FINAL :
     kScoreFieldNumber = 3,
     kChairIdFieldNumber = 1,
   };
-  // repeated .FishDeadInfo fish = 2;
+  // repeated .WPBY.FishDeadInfo fish = 2;
   int fish_size() const;
   private:
   int _internal_fish_size() const;
   public:
   void clear_fish();
-  ::FishDeadInfo* mutable_fish(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishDeadInfo >*
+  ::WPBY::FishDeadInfo* mutable_fish(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::FishDeadInfo >*
       mutable_fish();
   private:
-  const ::FishDeadInfo& _internal_fish(int index) const;
-  ::FishDeadInfo* _internal_add_fish();
+  const ::WPBY::FishDeadInfo& _internal_fish(int index) const;
+  ::WPBY::FishDeadInfo* _internal_add_fish();
   public:
-  const ::FishDeadInfo& fish(int index) const;
-  ::FishDeadInfo* add_fish();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishDeadInfo >&
+  const ::WPBY::FishDeadInfo& fish(int index) const;
+  ::WPBY::FishDeadInfo* add_fish();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::FishDeadInfo >&
       fish() const;
 
   // int64 score = 3;
@@ -4329,14 +4332,14 @@ class CMD_S_FishDead PROTOBUF_FINAL :
   void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_FishDead)
+  // @@protoc_insertion_point(class_scope:WPBY.CMD_S_FishDead)
  private:
   class _Internal;
 
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishDeadInfo > fish_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::FishDeadInfo > fish_;
   ::PROTOBUF_NAMESPACE_ID::int64 score_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
@@ -4345,7 +4348,7 @@ class CMD_S_FishDead PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_S_PlayerShoot PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_S_PlayerShoot) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.CMD_S_PlayerShoot) */ {
  public:
   inline CMD_S_PlayerShoot() : CMD_S_PlayerShoot(nullptr) {}
   virtual ~CMD_S_PlayerShoot();
@@ -4433,7 +4436,7 @@ class CMD_S_PlayerShoot PROTOBUF_FINAL :
   void InternalSwap(CMD_S_PlayerShoot* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_S_PlayerShoot";
+    return "WPBY.CMD_S_PlayerShoot";
   }
   protected:
   explicit CMD_S_PlayerShoot(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -4517,7 +4520,7 @@ class CMD_S_PlayerShoot PROTOBUF_FINAL :
   void _internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_S_PlayerShoot)
+  // @@protoc_insertion_point(class_scope:WPBY.CMD_S_PlayerShoot)
  private:
   class _Internal;
 
@@ -4536,7 +4539,7 @@ class CMD_S_PlayerShoot PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_C_RobotShoot PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_C_RobotShoot) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.CMD_C_RobotShoot) */ {
  public:
   inline CMD_C_RobotShoot() : CMD_C_RobotShoot(nullptr) {}
   virtual ~CMD_C_RobotShoot();
@@ -4624,7 +4627,7 @@ class CMD_C_RobotShoot PROTOBUF_FINAL :
   void InternalSwap(CMD_C_RobotShoot* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_C_RobotShoot";
+    return "WPBY.CMD_C_RobotShoot";
   }
   protected:
   explicit CMD_C_RobotShoot(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -4688,7 +4691,7 @@ class CMD_C_RobotShoot PROTOBUF_FINAL :
   void _internal_set_is_lock(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_C_RobotShoot)
+  // @@protoc_insertion_point(class_scope:WPBY.CMD_C_RobotShoot)
  private:
   class _Internal;
 
@@ -4705,7 +4708,7 @@ class CMD_C_RobotShoot PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_C_PlayerLock PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_C_PlayerLock) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.CMD_C_PlayerLock) */ {
  public:
   inline CMD_C_PlayerLock() : CMD_C_PlayerLock(nullptr) {}
   virtual ~CMD_C_PlayerLock();
@@ -4793,7 +4796,7 @@ class CMD_C_PlayerLock PROTOBUF_FINAL :
   void InternalSwap(CMD_C_PlayerLock* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_C_PlayerLock";
+    return "WPBY.CMD_C_PlayerLock";
   }
   protected:
   explicit CMD_C_PlayerLock(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -4837,7 +4840,7 @@ class CMD_C_PlayerLock PROTOBUF_FINAL :
   void _internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_C_PlayerLock)
+  // @@protoc_insertion_point(class_scope:WPBY.CMD_C_PlayerLock)
  private:
   class _Internal;
 
@@ -4852,7 +4855,7 @@ class CMD_C_PlayerLock PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_C_JuBuZhaDan PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_C_JuBuZhaDan) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.CMD_C_JuBuZhaDan) */ {
  public:
   inline CMD_C_JuBuZhaDan() : CMD_C_JuBuZhaDan(nullptr) {}
   virtual ~CMD_C_JuBuZhaDan();
@@ -4940,7 +4943,7 @@ class CMD_C_JuBuZhaDan PROTOBUF_FINAL :
   void InternalSwap(CMD_C_JuBuZhaDan* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_C_JuBuZhaDan";
+    return "WPBY.CMD_C_JuBuZhaDan";
   }
   protected:
   explicit CMD_C_JuBuZhaDan(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -5007,7 +5010,7 @@ class CMD_C_JuBuZhaDan PROTOBUF_FINAL :
   void _internal_set_te_shu_iu_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_C_JuBuZhaDan)
+  // @@protoc_insertion_point(class_scope:WPBY.CMD_C_JuBuZhaDan)
  private:
   class _Internal;
 
@@ -5024,7 +5027,7 @@ class CMD_C_JuBuZhaDan PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_C_TongLeiZhaDan PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_C_TongLeiZhaDan) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.CMD_C_TongLeiZhaDan) */ {
  public:
   inline CMD_C_TongLeiZhaDan() : CMD_C_TongLeiZhaDan(nullptr) {}
   virtual ~CMD_C_TongLeiZhaDan();
@@ -5112,7 +5115,7 @@ class CMD_C_TongLeiZhaDan PROTOBUF_FINAL :
   void InternalSwap(CMD_C_TongLeiZhaDan* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_C_TongLeiZhaDan";
+    return "WPBY.CMD_C_TongLeiZhaDan";
   }
   protected:
   explicit CMD_C_TongLeiZhaDan(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -5179,7 +5182,7 @@ class CMD_C_TongLeiZhaDan PROTOBUF_FINAL :
   void _internal_set_te_shu_iu_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_C_TongLeiZhaDan)
+  // @@protoc_insertion_point(class_scope:WPBY.CMD_C_TongLeiZhaDan)
  private:
   class _Internal;
 
@@ -5196,7 +5199,7 @@ class CMD_C_TongLeiZhaDan PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_C_ShuiHuZhuan PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_C_ShuiHuZhuan) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.CMD_C_ShuiHuZhuan) */ {
  public:
   inline CMD_C_ShuiHuZhuan() : CMD_C_ShuiHuZhuan(nullptr) {}
   virtual ~CMD_C_ShuiHuZhuan();
@@ -5284,7 +5287,7 @@ class CMD_C_ShuiHuZhuan PROTOBUF_FINAL :
   void InternalSwap(CMD_C_ShuiHuZhuan* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_C_ShuiHuZhuan";
+    return "WPBY.CMD_C_ShuiHuZhuan";
   }
   protected:
   explicit CMD_C_ShuiHuZhuan(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -5351,7 +5354,7 @@ class CMD_C_ShuiHuZhuan PROTOBUF_FINAL :
   void _internal_set_te_shu_iu_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_C_ShuiHuZhuan)
+  // @@protoc_insertion_point(class_scope:WPBY.CMD_C_ShuiHuZhuan)
  private:
   class _Internal;
 
@@ -5368,7 +5371,7 @@ class CMD_C_ShuiHuZhuan PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_C_ChangeBulletLevel PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_C_ChangeBulletLevel) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.CMD_C_ChangeBulletLevel) */ {
  public:
   inline CMD_C_ChangeBulletLevel() : CMD_C_ChangeBulletLevel(nullptr) {}
   virtual ~CMD_C_ChangeBulletLevel();
@@ -5456,7 +5459,7 @@ class CMD_C_ChangeBulletLevel PROTOBUF_FINAL :
   void InternalSwap(CMD_C_ChangeBulletLevel* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_C_ChangeBulletLevel";
+    return "WPBY.CMD_C_ChangeBulletLevel";
   }
   protected:
   explicit CMD_C_ChangeBulletLevel(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -5510,7 +5513,7 @@ class CMD_C_ChangeBulletLevel PROTOBUF_FINAL :
   void _internal_set_gun_level(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_C_ChangeBulletLevel)
+  // @@protoc_insertion_point(class_scope:WPBY.CMD_C_ChangeBulletLevel)
  private:
   class _Internal;
 
@@ -5526,7 +5529,7 @@ class CMD_C_ChangeBulletLevel PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class Bullet PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Bullet) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.Bullet) */ {
  public:
   inline Bullet() : Bullet(nullptr) {}
   virtual ~Bullet();
@@ -5614,7 +5617,7 @@ class Bullet PROTOBUF_FINAL :
   void InternalSwap(Bullet* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "Bullet";
+    return "WPBY.Bullet";
   }
   protected:
   explicit Bullet(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -5698,7 +5701,7 @@ class Bullet PROTOBUF_FINAL :
   void _internal_set_chips(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:Bullet)
+  // @@protoc_insertion_point(class_scope:WPBY.Bullet)
  private:
   class _Internal;
 
@@ -5717,7 +5720,7 @@ class Bullet PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_C_PressShoot PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_C_PressShoot) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.CMD_C_PressShoot) */ {
  public:
   inline CMD_C_PressShoot() : CMD_C_PressShoot(nullptr) {}
   virtual ~CMD_C_PressShoot();
@@ -5805,7 +5808,7 @@ class CMD_C_PressShoot PROTOBUF_FINAL :
   void InternalSwap(CMD_C_PressShoot* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_C_PressShoot";
+    return "WPBY.CMD_C_PressShoot";
   }
   protected:
   explicit CMD_C_PressShoot(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -5833,23 +5836,23 @@ class CMD_C_PressShoot PROTOBUF_FINAL :
     kYFieldNumber = 2,
     kChairIdFieldNumber = 3,
   };
-  // .Bullet bullet = 4;
+  // .WPBY.Bullet bullet = 4;
   bool has_bullet() const;
   private:
   bool _internal_has_bullet() const;
   public:
   void clear_bullet();
-  const ::Bullet& bullet() const;
-  ::Bullet* release_bullet();
-  ::Bullet* mutable_bullet();
-  void set_allocated_bullet(::Bullet* bullet);
+  const ::WPBY::Bullet& bullet() const;
+  ::WPBY::Bullet* release_bullet();
+  ::WPBY::Bullet* mutable_bullet();
+  void set_allocated_bullet(::WPBY::Bullet* bullet);
   private:
-  const ::Bullet& _internal_bullet() const;
-  ::Bullet* _internal_mutable_bullet();
+  const ::WPBY::Bullet& _internal_bullet() const;
+  ::WPBY::Bullet* _internal_mutable_bullet();
   public:
   void unsafe_arena_set_allocated_bullet(
-      ::Bullet* bullet);
-  ::Bullet* unsafe_arena_release_bullet();
+      ::WPBY::Bullet* bullet);
+  ::WPBY::Bullet* unsafe_arena_release_bullet();
 
   // float x = 1;
   void clear_x();
@@ -5878,14 +5881,14 @@ class CMD_C_PressShoot PROTOBUF_FINAL :
   void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_C_PressShoot)
+  // @@protoc_insertion_point(class_scope:WPBY.CMD_C_PressShoot)
  private:
   class _Internal;
 
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::Bullet* bullet_;
+  ::WPBY::Bullet* bullet_;
   float x_;
   float y_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
@@ -5895,7 +5898,7 @@ class CMD_C_PressShoot PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CMD_C_HitedFish PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CMD_C_HitedFish) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:WPBY.CMD_C_HitedFish) */ {
  public:
   inline CMD_C_HitedFish() : CMD_C_HitedFish(nullptr) {}
   virtual ~CMD_C_HitedFish();
@@ -5983,7 +5986,7 @@ class CMD_C_HitedFish PROTOBUF_FINAL :
   void InternalSwap(CMD_C_HitedFish* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CMD_C_HitedFish";
+    return "WPBY.CMD_C_HitedFish";
   }
   protected:
   explicit CMD_C_HitedFish(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -6032,23 +6035,23 @@ class CMD_C_HitedFish PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_hit_fish();
 
-  // .Bullet bullet = 1;
+  // .WPBY.Bullet bullet = 1;
   bool has_bullet() const;
   private:
   bool _internal_has_bullet() const;
   public:
   void clear_bullet();
-  const ::Bullet& bullet() const;
-  ::Bullet* release_bullet();
-  ::Bullet* mutable_bullet();
-  void set_allocated_bullet(::Bullet* bullet);
+  const ::WPBY::Bullet& bullet() const;
+  ::WPBY::Bullet* release_bullet();
+  ::WPBY::Bullet* mutable_bullet();
+  void set_allocated_bullet(::WPBY::Bullet* bullet);
   private:
-  const ::Bullet& _internal_bullet() const;
-  ::Bullet* _internal_mutable_bullet();
+  const ::WPBY::Bullet& _internal_bullet() const;
+  ::WPBY::Bullet* _internal_mutable_bullet();
   public:
   void unsafe_arena_set_allocated_bullet(
-      ::Bullet* bullet);
-  ::Bullet* unsafe_arena_release_bullet();
+      ::WPBY::Bullet* bullet);
+  ::WPBY::Bullet* unsafe_arena_release_bullet();
 
   // int32 chair_id = 2;
   void clear_chair_id();
@@ -6059,7 +6062,7 @@ class CMD_C_HitedFish PROTOBUF_FINAL :
   void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CMD_C_HitedFish)
+  // @@protoc_insertion_point(class_scope:WPBY.CMD_C_HitedFish)
  private:
   class _Internal;
 
@@ -6068,7 +6071,7 @@ class CMD_C_HitedFish PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > hit_fish_;
   mutable std::atomic<int> _hit_fish_cached_byte_size_;
-  ::Bullet* bullet_;
+  ::WPBY::Bullet* bullet_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_WPBY_2eproto;
@@ -6092,7 +6095,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_RobotShoot::_internal_chair_id() con
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_RobotShoot::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_RobotShoot.chair_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_RobotShoot.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_S_RobotShoot::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6101,7 +6104,7 @@ inline void CMD_S_RobotShoot::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::in
 }
 inline void CMD_S_RobotShoot::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_RobotShoot.chair_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_RobotShoot.chair_id)
 }
 
 // int32 level = 2;
@@ -6112,7 +6115,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_RobotShoot::_internal_level() const 
   return level_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_RobotShoot::level() const {
-  // @@protoc_insertion_point(field_get:CMD_S_RobotShoot.level)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_RobotShoot.level)
   return _internal_level();
 }
 inline void CMD_S_RobotShoot::_internal_set_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6121,7 +6124,7 @@ inline void CMD_S_RobotShoot::_internal_set_level(::PROTOBUF_NAMESPACE_ID::int32
 }
 inline void CMD_S_RobotShoot::set_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_level(value);
-  // @@protoc_insertion_point(field_set:CMD_S_RobotShoot.level)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_RobotShoot.level)
 }
 
 // int32 type = 3;
@@ -6132,7 +6135,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_RobotShoot::_internal_type() const {
   return type_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_RobotShoot::type() const {
-  // @@protoc_insertion_point(field_get:CMD_S_RobotShoot.type)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_RobotShoot.type)
   return _internal_type();
 }
 inline void CMD_S_RobotShoot::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6141,7 +6144,7 @@ inline void CMD_S_RobotShoot::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 
 }
 inline void CMD_S_RobotShoot::set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_type(value);
-  // @@protoc_insertion_point(field_set:CMD_S_RobotShoot.type)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_RobotShoot.type)
 }
 
 // int32 is_lock = 4;
@@ -6152,7 +6155,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_RobotShoot::_internal_is_lock() cons
   return is_lock_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_RobotShoot::is_lock() const {
-  // @@protoc_insertion_point(field_get:CMD_S_RobotShoot.is_lock)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_RobotShoot.is_lock)
   return _internal_is_lock();
 }
 inline void CMD_S_RobotShoot::_internal_set_is_lock(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6161,7 +6164,7 @@ inline void CMD_S_RobotShoot::_internal_set_is_lock(::PROTOBUF_NAMESPACE_ID::int
 }
 inline void CMD_S_RobotShoot::set_is_lock(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_is_lock(value);
-  // @@protoc_insertion_point(field_set:CMD_S_RobotShoot.is_lock)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_RobotShoot.is_lock)
 }
 
 // -------------------------------------------------------------------
@@ -6182,19 +6185,19 @@ inline bool CMD_S_RobotList::_internal_is_robot(int index) const {
   return is_robot_.Get(index);
 }
 inline bool CMD_S_RobotList::is_robot(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_S_RobotList.is_robot)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_RobotList.is_robot)
   return _internal_is_robot(index);
 }
 inline void CMD_S_RobotList::set_is_robot(int index, bool value) {
   is_robot_.Set(index, value);
-  // @@protoc_insertion_point(field_set:CMD_S_RobotList.is_robot)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_RobotList.is_robot)
 }
 inline void CMD_S_RobotList::_internal_add_is_robot(bool value) {
   is_robot_.Add(value);
 }
 inline void CMD_S_RobotList::add_is_robot(bool value) {
   _internal_add_is_robot(value);
-  // @@protoc_insertion_point(field_add:CMD_S_RobotList.is_robot)
+  // @@protoc_insertion_point(field_add:WPBY.CMD_S_RobotList.is_robot)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< bool >&
 CMD_S_RobotList::_internal_is_robot() const {
@@ -6202,7 +6205,7 @@ CMD_S_RobotList::_internal_is_robot() const {
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< bool >&
 CMD_S_RobotList::is_robot() const {
-  // @@protoc_insertion_point(field_list:CMD_S_RobotList.is_robot)
+  // @@protoc_insertion_point(field_list:WPBY.CMD_S_RobotList.is_robot)
   return _internal_is_robot();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< bool >*
@@ -6211,7 +6214,7 @@ CMD_S_RobotList::_internal_mutable_is_robot() {
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< bool >*
 CMD_S_RobotList::mutable_is_robot() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_S_RobotList.is_robot)
+  // @@protoc_insertion_point(field_mutable_list:WPBY.CMD_S_RobotList.is_robot)
   return _internal_mutable_is_robot();
 }
 
@@ -6227,7 +6230,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerLock::_internal_chair_id() con
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerLock::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_PlayerLock.chair_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_PlayerLock.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_S_PlayerLock::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6236,7 +6239,7 @@ inline void CMD_S_PlayerLock::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::in
 }
 inline void CMD_S_PlayerLock::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_PlayerLock.chair_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_PlayerLock.chair_id)
 }
 
 // int32 fish_id = 2;
@@ -6247,7 +6250,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerLock::_internal_fish_id() cons
   return fish_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerLock::fish_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_PlayerLock.fish_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_PlayerLock.fish_id)
   return _internal_fish_id();
 }
 inline void CMD_S_PlayerLock::_internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6256,7 +6259,7 @@ inline void CMD_S_PlayerLock::_internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::int
 }
 inline void CMD_S_PlayerLock::set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_fish_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_PlayerLock.fish_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_PlayerLock.fish_id)
 }
 
 // -------------------------------------------------------------------
@@ -6271,7 +6274,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 FishPoint::_internal_x() const {
   return x_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 FishPoint::x() const {
-  // @@protoc_insertion_point(field_get:FishPoint.x)
+  // @@protoc_insertion_point(field_get:WPBY.FishPoint.x)
   return _internal_x();
 }
 inline void FishPoint::_internal_set_x(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6280,7 +6283,7 @@ inline void FishPoint::_internal_set_x(::PROTOBUF_NAMESPACE_ID::int32 value) {
 }
 inline void FishPoint::set_x(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_x(value);
-  // @@protoc_insertion_point(field_set:FishPoint.x)
+  // @@protoc_insertion_point(field_set:WPBY.FishPoint.x)
 }
 
 // int32 y = 2;
@@ -6291,7 +6294,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 FishPoint::_internal_y() const {
   return y_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 FishPoint::y() const {
-  // @@protoc_insertion_point(field_get:FishPoint.y)
+  // @@protoc_insertion_point(field_get:WPBY.FishPoint.y)
   return _internal_y();
 }
 inline void FishPoint::_internal_set_y(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6300,7 +6303,7 @@ inline void FishPoint::_internal_set_y(::PROTOBUF_NAMESPACE_ID::int32 value) {
 }
 inline void FishPoint::set_y(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_y(value);
-  // @@protoc_insertion_point(field_set:FishPoint.y)
+  // @@protoc_insertion_point(field_set:WPBY.FishPoint.y)
 }
 
 // -------------------------------------------------------------------
@@ -6315,7 +6318,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 LineInfo::_internal_type() const {
   return type_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 LineInfo::type() const {
-  // @@protoc_insertion_point(field_get:LineInfo.type)
+  // @@protoc_insertion_point(field_get:WPBY.LineInfo.type)
   return _internal_type();
 }
 inline void LineInfo::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6324,10 +6327,10 @@ inline void LineInfo::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
 }
 inline void LineInfo::set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_type(value);
-  // @@protoc_insertion_point(field_set:LineInfo.type)
+  // @@protoc_insertion_point(field_set:WPBY.LineInfo.type)
 }
 
-// repeated .FishPoint points = 2;
+// repeated .WPBY.FishPoint points = 2;
 inline int LineInfo::_internal_points_size() const {
   return points_.size();
 }
@@ -6337,32 +6340,32 @@ inline int LineInfo::points_size() const {
 inline void LineInfo::clear_points() {
   points_.Clear();
 }
-inline ::FishPoint* LineInfo::mutable_points(int index) {
-  // @@protoc_insertion_point(field_mutable:LineInfo.points)
+inline ::WPBY::FishPoint* LineInfo::mutable_points(int index) {
+  // @@protoc_insertion_point(field_mutable:WPBY.LineInfo.points)
   return points_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishPoint >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::FishPoint >*
 LineInfo::mutable_points() {
-  // @@protoc_insertion_point(field_mutable_list:LineInfo.points)
+  // @@protoc_insertion_point(field_mutable_list:WPBY.LineInfo.points)
   return &points_;
 }
-inline const ::FishPoint& LineInfo::_internal_points(int index) const {
+inline const ::WPBY::FishPoint& LineInfo::_internal_points(int index) const {
   return points_.Get(index);
 }
-inline const ::FishPoint& LineInfo::points(int index) const {
-  // @@protoc_insertion_point(field_get:LineInfo.points)
+inline const ::WPBY::FishPoint& LineInfo::points(int index) const {
+  // @@protoc_insertion_point(field_get:WPBY.LineInfo.points)
   return _internal_points(index);
 }
-inline ::FishPoint* LineInfo::_internal_add_points() {
+inline ::WPBY::FishPoint* LineInfo::_internal_add_points() {
   return points_.Add();
 }
-inline ::FishPoint* LineInfo::add_points() {
-  // @@protoc_insertion_point(field_add:LineInfo.points)
+inline ::WPBY::FishPoint* LineInfo::add_points() {
+  // @@protoc_insertion_point(field_add:WPBY.LineInfo.points)
   return _internal_add_points();
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishPoint >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::FishPoint >&
 LineInfo::points() const {
-  // @@protoc_insertion_point(field_list:LineInfo.points)
+  // @@protoc_insertion_point(field_list:WPBY.LineInfo.points)
   return points_;
 }
 
@@ -6370,7 +6373,7 @@ LineInfo::points() const {
 
 // FishLineInfo
 
-// .LineInfo line = 1;
+// .WPBY.LineInfo line = 1;
 inline bool FishLineInfo::_internal_has_line() const {
   return this != internal_default_instance() && line_ != nullptr;
 }
@@ -6383,17 +6386,17 @@ inline void FishLineInfo::clear_line() {
   }
   line_ = nullptr;
 }
-inline const ::LineInfo& FishLineInfo::_internal_line() const {
-  const ::LineInfo* p = line_;
-  return p != nullptr ? *p : reinterpret_cast<const ::LineInfo&>(
-      ::_LineInfo_default_instance_);
+inline const ::WPBY::LineInfo& FishLineInfo::_internal_line() const {
+  const ::WPBY::LineInfo* p = line_;
+  return p != nullptr ? *p : reinterpret_cast<const ::WPBY::LineInfo&>(
+      ::WPBY::_LineInfo_default_instance_);
 }
-inline const ::LineInfo& FishLineInfo::line() const {
-  // @@protoc_insertion_point(field_get:FishLineInfo.line)
+inline const ::WPBY::LineInfo& FishLineInfo::line() const {
+  // @@protoc_insertion_point(field_get:WPBY.FishLineInfo.line)
   return _internal_line();
 }
 inline void FishLineInfo::unsafe_arena_set_allocated_line(
-    ::LineInfo* line) {
+    ::WPBY::LineInfo* line) {
   if (GetArena() == nullptr) {
     delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(line_);
   }
@@ -6403,37 +6406,37 @@ inline void FishLineInfo::unsafe_arena_set_allocated_line(
   } else {
     
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:FishLineInfo.line)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:WPBY.FishLineInfo.line)
 }
-inline ::LineInfo* FishLineInfo::release_line() {
+inline ::WPBY::LineInfo* FishLineInfo::release_line() {
   
-  ::LineInfo* temp = line_;
+  ::WPBY::LineInfo* temp = line_;
   line_ = nullptr;
   if (GetArena() != nullptr) {
     temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
   }
   return temp;
 }
-inline ::LineInfo* FishLineInfo::unsafe_arena_release_line() {
-  // @@protoc_insertion_point(field_release:FishLineInfo.line)
+inline ::WPBY::LineInfo* FishLineInfo::unsafe_arena_release_line() {
+  // @@protoc_insertion_point(field_release:WPBY.FishLineInfo.line)
   
-  ::LineInfo* temp = line_;
+  ::WPBY::LineInfo* temp = line_;
   line_ = nullptr;
   return temp;
 }
-inline ::LineInfo* FishLineInfo::_internal_mutable_line() {
+inline ::WPBY::LineInfo* FishLineInfo::_internal_mutable_line() {
   
   if (line_ == nullptr) {
-    auto* p = CreateMaybeMessage<::LineInfo>(GetArena());
+    auto* p = CreateMaybeMessage<::WPBY::LineInfo>(GetArena());
     line_ = p;
   }
   return line_;
 }
-inline ::LineInfo* FishLineInfo::mutable_line() {
-  // @@protoc_insertion_point(field_mutable:FishLineInfo.line)
+inline ::WPBY::LineInfo* FishLineInfo::mutable_line() {
+  // @@protoc_insertion_point(field_mutable:WPBY.FishLineInfo.line)
   return _internal_mutable_line();
 }
-inline void FishLineInfo::set_allocated_line(::LineInfo* line) {
+inline void FishLineInfo::set_allocated_line(::WPBY::LineInfo* line) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   if (message_arena == nullptr) {
     delete line_;
@@ -6450,7 +6453,7 @@ inline void FishLineInfo::set_allocated_line(::LineInfo* line) {
     
   }
   line_ = line;
-  // @@protoc_insertion_point(field_set_allocated:FishLineInfo.line)
+  // @@protoc_insertion_point(field_set_allocated:WPBY.FishLineInfo.line)
 }
 
 // int32 kind = 2;
@@ -6461,7 +6464,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 FishLineInfo::_internal_kind() const {
   return kind_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 FishLineInfo::kind() const {
-  // @@protoc_insertion_point(field_get:FishLineInfo.kind)
+  // @@protoc_insertion_point(field_get:WPBY.FishLineInfo.kind)
   return _internal_kind();
 }
 inline void FishLineInfo::_internal_set_kind(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6470,7 +6473,7 @@ inline void FishLineInfo::_internal_set_kind(::PROTOBUF_NAMESPACE_ID::int32 valu
 }
 inline void FishLineInfo::set_kind(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_kind(value);
-  // @@protoc_insertion_point(field_set:FishLineInfo.kind)
+  // @@protoc_insertion_point(field_set:WPBY.FishLineInfo.kind)
 }
 
 // int32 start_delay_time = 3;
@@ -6481,7 +6484,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 FishLineInfo::_internal_start_delay_time()
   return start_delay_time_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 FishLineInfo::start_delay_time() const {
-  // @@protoc_insertion_point(field_get:FishLineInfo.start_delay_time)
+  // @@protoc_insertion_point(field_get:WPBY.FishLineInfo.start_delay_time)
   return _internal_start_delay_time();
 }
 inline void FishLineInfo::_internal_set_start_delay_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6490,7 +6493,7 @@ inline void FishLineInfo::_internal_set_start_delay_time(::PROTOBUF_NAMESPACE_ID
 }
 inline void FishLineInfo::set_start_delay_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_start_delay_time(value);
-  // @@protoc_insertion_point(field_set:FishLineInfo.start_delay_time)
+  // @@protoc_insertion_point(field_set:WPBY.FishLineInfo.start_delay_time)
 }
 
 // int32 delay_time = 4;
@@ -6501,7 +6504,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 FishLineInfo::_internal_delay_time() const
   return delay_time_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 FishLineInfo::delay_time() const {
-  // @@protoc_insertion_point(field_get:FishLineInfo.delay_time)
+  // @@protoc_insertion_point(field_get:WPBY.FishLineInfo.delay_time)
   return _internal_delay_time();
 }
 inline void FishLineInfo::_internal_set_delay_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6510,7 +6513,7 @@ inline void FishLineInfo::_internal_set_delay_time(::PROTOBUF_NAMESPACE_ID::int3
 }
 inline void FishLineInfo::set_delay_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_delay_time(value);
-  // @@protoc_insertion_point(field_set:FishLineInfo.delay_time)
+  // @@protoc_insertion_point(field_set:WPBY.FishLineInfo.delay_time)
 }
 
 // int32 fish_num = 5;
@@ -6521,7 +6524,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 FishLineInfo::_internal_fish_num() const {
   return fish_num_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 FishLineInfo::fish_num() const {
-  // @@protoc_insertion_point(field_get:FishLineInfo.fish_num)
+  // @@protoc_insertion_point(field_get:WPBY.FishLineInfo.fish_num)
   return _internal_fish_num();
 }
 inline void FishLineInfo::_internal_set_fish_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6530,7 +6533,7 @@ inline void FishLineInfo::_internal_set_fish_num(::PROTOBUF_NAMESPACE_ID::int32 
 }
 inline void FishLineInfo::set_fish_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_fish_num(value);
-  // @@protoc_insertion_point(field_set:FishLineInfo.fish_num)
+  // @@protoc_insertion_point(field_set:WPBY.FishLineInfo.fish_num)
 }
 
 // int32 lived_time = 6;
@@ -6541,7 +6544,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 FishLineInfo::_internal_lived_time() const
   return lived_time_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 FishLineInfo::lived_time() const {
-  // @@protoc_insertion_point(field_get:FishLineInfo.lived_time)
+  // @@protoc_insertion_point(field_get:WPBY.FishLineInfo.lived_time)
   return _internal_lived_time();
 }
 inline void FishLineInfo::_internal_set_lived_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6550,7 +6553,7 @@ inline void FishLineInfo::_internal_set_lived_time(::PROTOBUF_NAMESPACE_ID::int3
 }
 inline void FishLineInfo::set_lived_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_lived_time(value);
-  // @@protoc_insertion_point(field_set:FishLineInfo.lived_time)
+  // @@protoc_insertion_point(field_set:WPBY.FishLineInfo.lived_time)
 }
 
 // -------------------------------------------------------------------
@@ -6565,7 +6568,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int64 FishTide::_internal_fish_tide_start_time()
   return fish_tide_start_time_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int64 FishTide::fish_tide_start_time() const {
-  // @@protoc_insertion_point(field_get:FishTide.fish_tide_start_time)
+  // @@protoc_insertion_point(field_get:WPBY.FishTide.fish_tide_start_time)
   return _internal_fish_tide_start_time();
 }
 inline void FishTide::_internal_set_fish_tide_start_time(::PROTOBUF_NAMESPACE_ID::int64 value) {
@@ -6574,7 +6577,7 @@ inline void FishTide::_internal_set_fish_tide_start_time(::PROTOBUF_NAMESPACE_ID
 }
 inline void FishTide::set_fish_tide_start_time(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_fish_tide_start_time(value);
-  // @@protoc_insertion_point(field_set:FishTide.fish_tide_start_time)
+  // @@protoc_insertion_point(field_set:WPBY.FishTide.fish_tide_start_time)
 }
 
 // int64 fish_tide_cur_time = 2;
@@ -6585,7 +6588,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int64 FishTide::_internal_fish_tide_cur_time() c
   return fish_tide_cur_time_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int64 FishTide::fish_tide_cur_time() const {
-  // @@protoc_insertion_point(field_get:FishTide.fish_tide_cur_time)
+  // @@protoc_insertion_point(field_get:WPBY.FishTide.fish_tide_cur_time)
   return _internal_fish_tide_cur_time();
 }
 inline void FishTide::_internal_set_fish_tide_cur_time(::PROTOBUF_NAMESPACE_ID::int64 value) {
@@ -6594,7 +6597,7 @@ inline void FishTide::_internal_set_fish_tide_cur_time(::PROTOBUF_NAMESPACE_ID::
 }
 inline void FishTide::set_fish_tide_cur_time(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_fish_tide_cur_time(value);
-  // @@protoc_insertion_point(field_set:FishTide.fish_tide_cur_time)
+  // @@protoc_insertion_point(field_set:WPBY.FishTide.fish_tide_cur_time)
 }
 
 // int32 fish_tide_turn = 3;
@@ -6605,7 +6608,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 FishTide::_internal_fish_tide_turn() const
   return fish_tide_turn_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 FishTide::fish_tide_turn() const {
-  // @@protoc_insertion_point(field_get:FishTide.fish_tide_turn)
+  // @@protoc_insertion_point(field_get:WPBY.FishTide.fish_tide_turn)
   return _internal_fish_tide_turn();
 }
 inline void FishTide::_internal_set_fish_tide_turn(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6614,7 +6617,7 @@ inline void FishTide::_internal_set_fish_tide_turn(::PROTOBUF_NAMESPACE_ID::int3
 }
 inline void FishTide::set_fish_tide_turn(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_fish_tide_turn(value);
-  // @@protoc_insertion_point(field_set:FishTide.fish_tide_turn)
+  // @@protoc_insertion_point(field_set:WPBY.FishTide.fish_tide_turn)
 }
 
 // int32 line_num = 4;
@@ -6625,7 +6628,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 FishTide::_internal_line_num() const {
   return line_num_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 FishTide::line_num() const {
-  // @@protoc_insertion_point(field_get:FishTide.line_num)
+  // @@protoc_insertion_point(field_get:WPBY.FishTide.line_num)
   return _internal_line_num();
 }
 inline void FishTide::_internal_set_line_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6634,10 +6637,10 @@ inline void FishTide::_internal_set_line_num(::PROTOBUF_NAMESPACE_ID::int32 valu
 }
 inline void FishTide::set_line_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_line_num(value);
-  // @@protoc_insertion_point(field_set:FishTide.line_num)
+  // @@protoc_insertion_point(field_set:WPBY.FishTide.line_num)
 }
 
-// repeated .FishLineInfo fish_lines = 5;
+// repeated .WPBY.FishLineInfo fish_lines = 5;
 inline int FishTide::_internal_fish_lines_size() const {
   return fish_lines_.size();
 }
@@ -6647,32 +6650,32 @@ inline int FishTide::fish_lines_size() const {
 inline void FishTide::clear_fish_lines() {
   fish_lines_.Clear();
 }
-inline ::FishLineInfo* FishTide::mutable_fish_lines(int index) {
-  // @@protoc_insertion_point(field_mutable:FishTide.fish_lines)
+inline ::WPBY::FishLineInfo* FishTide::mutable_fish_lines(int index) {
+  // @@protoc_insertion_point(field_mutable:WPBY.FishTide.fish_lines)
   return fish_lines_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishLineInfo >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::FishLineInfo >*
 FishTide::mutable_fish_lines() {
-  // @@protoc_insertion_point(field_mutable_list:FishTide.fish_lines)
+  // @@protoc_insertion_point(field_mutable_list:WPBY.FishTide.fish_lines)
   return &fish_lines_;
 }
-inline const ::FishLineInfo& FishTide::_internal_fish_lines(int index) const {
+inline const ::WPBY::FishLineInfo& FishTide::_internal_fish_lines(int index) const {
   return fish_lines_.Get(index);
 }
-inline const ::FishLineInfo& FishTide::fish_lines(int index) const {
-  // @@protoc_insertion_point(field_get:FishTide.fish_lines)
+inline const ::WPBY::FishLineInfo& FishTide::fish_lines(int index) const {
+  // @@protoc_insertion_point(field_get:WPBY.FishTide.fish_lines)
   return _internal_fish_lines(index);
 }
-inline ::FishLineInfo* FishTide::_internal_add_fish_lines() {
+inline ::WPBY::FishLineInfo* FishTide::_internal_add_fish_lines() {
   return fish_lines_.Add();
 }
-inline ::FishLineInfo* FishTide::add_fish_lines() {
-  // @@protoc_insertion_point(field_add:FishTide.fish_lines)
+inline ::WPBY::FishLineInfo* FishTide::add_fish_lines() {
+  // @@protoc_insertion_point(field_add:WPBY.FishTide.fish_lines)
   return _internal_add_fish_lines();
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishLineInfo >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::FishLineInfo >&
 FishTide::fish_lines() const {
-  // @@protoc_insertion_point(field_list:FishTide.fish_lines)
+  // @@protoc_insertion_point(field_list:WPBY.FishTide.fish_lines)
   return fish_lines_;
 }
 
@@ -6688,7 +6691,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_YuChaoCome::_internal_yu_chao_id() c
   return yu_chao_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_YuChaoCome::yu_chao_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_YuChaoCome.yu_chao_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_YuChaoCome.yu_chao_id)
   return _internal_yu_chao_id();
 }
 inline void CMD_S_YuChaoCome::_internal_set_yu_chao_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6697,10 +6700,10 @@ inline void CMD_S_YuChaoCome::_internal_set_yu_chao_id(::PROTOBUF_NAMESPACE_ID::
 }
 inline void CMD_S_YuChaoCome::set_yu_chao_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_yu_chao_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_YuChaoCome.yu_chao_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_YuChaoCome.yu_chao_id)
 }
 
-// .FishTide fish_tide = 2;
+// .WPBY.FishTide fish_tide = 2;
 inline bool CMD_S_YuChaoCome::_internal_has_fish_tide() const {
   return this != internal_default_instance() && fish_tide_ != nullptr;
 }
@@ -6713,17 +6716,17 @@ inline void CMD_S_YuChaoCome::clear_fish_tide() {
   }
   fish_tide_ = nullptr;
 }
-inline const ::FishTide& CMD_S_YuChaoCome::_internal_fish_tide() const {
-  const ::FishTide* p = fish_tide_;
-  return p != nullptr ? *p : reinterpret_cast<const ::FishTide&>(
-      ::_FishTide_default_instance_);
+inline const ::WPBY::FishTide& CMD_S_YuChaoCome::_internal_fish_tide() const {
+  const ::WPBY::FishTide* p = fish_tide_;
+  return p != nullptr ? *p : reinterpret_cast<const ::WPBY::FishTide&>(
+      ::WPBY::_FishTide_default_instance_);
 }
-inline const ::FishTide& CMD_S_YuChaoCome::fish_tide() const {
-  // @@protoc_insertion_point(field_get:CMD_S_YuChaoCome.fish_tide)
+inline const ::WPBY::FishTide& CMD_S_YuChaoCome::fish_tide() const {
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_YuChaoCome.fish_tide)
   return _internal_fish_tide();
 }
 inline void CMD_S_YuChaoCome::unsafe_arena_set_allocated_fish_tide(
-    ::FishTide* fish_tide) {
+    ::WPBY::FishTide* fish_tide) {
   if (GetArena() == nullptr) {
     delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(fish_tide_);
   }
@@ -6733,37 +6736,37 @@ inline void CMD_S_YuChaoCome::unsafe_arena_set_allocated_fish_tide(
   } else {
     
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:CMD_S_YuChaoCome.fish_tide)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:WPBY.CMD_S_YuChaoCome.fish_tide)
 }
-inline ::FishTide* CMD_S_YuChaoCome::release_fish_tide() {
+inline ::WPBY::FishTide* CMD_S_YuChaoCome::release_fish_tide() {
   
-  ::FishTide* temp = fish_tide_;
+  ::WPBY::FishTide* temp = fish_tide_;
   fish_tide_ = nullptr;
   if (GetArena() != nullptr) {
     temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
   }
   return temp;
 }
-inline ::FishTide* CMD_S_YuChaoCome::unsafe_arena_release_fish_tide() {
-  // @@protoc_insertion_point(field_release:CMD_S_YuChaoCome.fish_tide)
+inline ::WPBY::FishTide* CMD_S_YuChaoCome::unsafe_arena_release_fish_tide() {
+  // @@protoc_insertion_point(field_release:WPBY.CMD_S_YuChaoCome.fish_tide)
   
-  ::FishTide* temp = fish_tide_;
+  ::WPBY::FishTide* temp = fish_tide_;
   fish_tide_ = nullptr;
   return temp;
 }
-inline ::FishTide* CMD_S_YuChaoCome::_internal_mutable_fish_tide() {
+inline ::WPBY::FishTide* CMD_S_YuChaoCome::_internal_mutable_fish_tide() {
   
   if (fish_tide_ == nullptr) {
-    auto* p = CreateMaybeMessage<::FishTide>(GetArena());
+    auto* p = CreateMaybeMessage<::WPBY::FishTide>(GetArena());
     fish_tide_ = p;
   }
   return fish_tide_;
 }
-inline ::FishTide* CMD_S_YuChaoCome::mutable_fish_tide() {
-  // @@protoc_insertion_point(field_mutable:CMD_S_YuChaoCome.fish_tide)
+inline ::WPBY::FishTide* CMD_S_YuChaoCome::mutable_fish_tide() {
+  // @@protoc_insertion_point(field_mutable:WPBY.CMD_S_YuChaoCome.fish_tide)
   return _internal_mutable_fish_tide();
 }
-inline void CMD_S_YuChaoCome::set_allocated_fish_tide(::FishTide* fish_tide) {
+inline void CMD_S_YuChaoCome::set_allocated_fish_tide(::WPBY::FishTide* fish_tide) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   if (message_arena == nullptr) {
     delete fish_tide_;
@@ -6780,7 +6783,7 @@ inline void CMD_S_YuChaoCome::set_allocated_fish_tide(::FishTide* fish_tide) {
     
   }
   fish_tide_ = fish_tide;
-  // @@protoc_insertion_point(field_set_allocated:CMD_S_YuChaoCome.fish_tide)
+  // @@protoc_insertion_point(field_set_allocated:WPBY.CMD_S_YuChaoCome.fish_tide)
 }
 
 // -------------------------------------------------------------------
@@ -6795,7 +6798,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShootLK::_internal_chair_id() const 
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShootLK::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ShootLK.chair_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_ShootLK.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_S_ShootLK::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6804,7 +6807,7 @@ inline void CMD_S_ShootLK::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32
 }
 inline void CMD_S_ShootLK::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ShootLK.chair_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_ShootLK.chair_id)
 }
 
 // int32 id = 2;
@@ -6815,7 +6818,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShootLK::_internal_id() const {
   return id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShootLK::id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ShootLK.id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_ShootLK.id)
   return _internal_id();
 }
 inline void CMD_S_ShootLK::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6824,7 +6827,7 @@ inline void CMD_S_ShootLK::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value
 }
 inline void CMD_S_ShootLK::set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ShootLK.id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_ShootLK.id)
 }
 
 // int32 score = 3;
@@ -6835,7 +6838,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShootLK::_internal_score() const {
   return score_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShootLK::score() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ShootLK.score)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_ShootLK.score)
   return _internal_score();
 }
 inline void CMD_S_ShootLK::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6844,7 +6847,7 @@ inline void CMD_S_ShootLK::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 va
 }
 inline void CMD_S_ShootLK::set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_score(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ShootLK.score)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_ShootLK.score)
 }
 
 // int32 multiple = 4;
@@ -6855,7 +6858,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShootLK::_internal_multiple() const 
   return multiple_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShootLK::multiple() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ShootLK.multiple)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_ShootLK.multiple)
   return _internal_multiple();
 }
 inline void CMD_S_ShootLK::_internal_set_multiple(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6864,7 +6867,7 @@ inline void CMD_S_ShootLK::_internal_set_multiple(::PROTOBUF_NAMESPACE_ID::int32
 }
 inline void CMD_S_ShootLK::set_multiple(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_multiple(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ShootLK.multiple)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_ShootLK.multiple)
 }
 
 // -------------------------------------------------------------------
@@ -6879,7 +6882,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_JuBuZhaDan::_internal_chair_id() con
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_JuBuZhaDan::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_JuBuZhaDan.chair_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_JuBuZhaDan.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_S_JuBuZhaDan::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6888,7 +6891,7 @@ inline void CMD_S_JuBuZhaDan::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::in
 }
 inline void CMD_S_JuBuZhaDan::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_JuBuZhaDan.chair_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_JuBuZhaDan.chair_id)
 }
 
 // int32 fish_id = 2;
@@ -6899,7 +6902,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_JuBuZhaDan::_internal_fish_id() cons
   return fish_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_JuBuZhaDan::fish_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_JuBuZhaDan.fish_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_JuBuZhaDan.fish_id)
   return _internal_fish_id();
 }
 inline void CMD_S_JuBuZhaDan::_internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6908,7 +6911,7 @@ inline void CMD_S_JuBuZhaDan::_internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::int
 }
 inline void CMD_S_JuBuZhaDan::set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_fish_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_JuBuZhaDan.fish_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_JuBuZhaDan.fish_id)
 }
 
 // -------------------------------------------------------------------
@@ -6923,7 +6926,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_YiWangDaJin::_internal_chair_id() co
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_YiWangDaJin::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_YiWangDaJin.chair_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_YiWangDaJin.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_S_YiWangDaJin::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6932,7 +6935,7 @@ inline void CMD_S_YiWangDaJin::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::i
 }
 inline void CMD_S_YiWangDaJin::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_YiWangDaJin.chair_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_YiWangDaJin.chair_id)
 }
 
 // int32 bullet_id = 2;
@@ -6943,7 +6946,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_YiWangDaJin::_internal_bullet_id() c
   return bullet_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_YiWangDaJin::bullet_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_YiWangDaJin.bullet_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_YiWangDaJin.bullet_id)
   return _internal_bullet_id();
 }
 inline void CMD_S_YiWangDaJin::_internal_set_bullet_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6952,7 +6955,7 @@ inline void CMD_S_YiWangDaJin::_internal_set_bullet_id(::PROTOBUF_NAMESPACE_ID::
 }
 inline void CMD_S_YiWangDaJin::set_bullet_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_bullet_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_YiWangDaJin.bullet_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_YiWangDaJin.bullet_id)
 }
 
 // -------------------------------------------------------------------
@@ -6967,7 +6970,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_TongLeiZhaDan::_internal_chair_id() 
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_TongLeiZhaDan::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_TongLeiZhaDan.chair_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_TongLeiZhaDan.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_S_TongLeiZhaDan::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6976,7 +6979,7 @@ inline void CMD_S_TongLeiZhaDan::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID:
 }
 inline void CMD_S_TongLeiZhaDan::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_TongLeiZhaDan.chair_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_TongLeiZhaDan.chair_id)
 }
 
 // int32 fish_id = 2;
@@ -6987,7 +6990,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_TongLeiZhaDan::_internal_fish_id() c
   return fish_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_TongLeiZhaDan::fish_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_TongLeiZhaDan.fish_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_TongLeiZhaDan.fish_id)
   return _internal_fish_id();
 }
 inline void CMD_S_TongLeiZhaDan::_internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -6996,7 +6999,7 @@ inline void CMD_S_TongLeiZhaDan::_internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::
 }
 inline void CMD_S_TongLeiZhaDan::set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_fish_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_TongLeiZhaDan.fish_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_TongLeiZhaDan.fish_id)
 }
 
 // int32 kind = 3;
@@ -7007,7 +7010,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_TongLeiZhaDan::_internal_kind() cons
   return kind_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_TongLeiZhaDan::kind() const {
-  // @@protoc_insertion_point(field_get:CMD_S_TongLeiZhaDan.kind)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_TongLeiZhaDan.kind)
   return _internal_kind();
 }
 inline void CMD_S_TongLeiZhaDan::_internal_set_kind(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7016,7 +7019,7 @@ inline void CMD_S_TongLeiZhaDan::_internal_set_kind(::PROTOBUF_NAMESPACE_ID::int
 }
 inline void CMD_S_TongLeiZhaDan::set_kind(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_kind(value);
-  // @@protoc_insertion_point(field_set:CMD_S_TongLeiZhaDan.kind)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_TongLeiZhaDan.kind)
 }
 
 // -------------------------------------------------------------------
@@ -7031,7 +7034,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::_internal_kind() const {
   return kind_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::kind() const {
-  // @@protoc_insertion_point(field_get:LoadFish.kind)
+  // @@protoc_insertion_point(field_get:WPBY.LoadFish.kind)
   return _internal_kind();
 }
 inline void LoadFish::_internal_set_kind(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7040,7 +7043,7 @@ inline void LoadFish::_internal_set_kind(::PROTOBUF_NAMESPACE_ID::int32 value) {
 }
 inline void LoadFish::set_kind(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_kind(value);
-  // @@protoc_insertion_point(field_set:LoadFish.kind)
+  // @@protoc_insertion_point(field_set:WPBY.LoadFish.kind)
 }
 
 // int32 id = 2;
@@ -7051,7 +7054,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::_internal_id() const {
   return id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::id() const {
-  // @@protoc_insertion_point(field_get:LoadFish.id)
+  // @@protoc_insertion_point(field_get:WPBY.LoadFish.id)
   return _internal_id();
 }
 inline void LoadFish::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7060,7 +7063,7 @@ inline void LoadFish::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
 }
 inline void LoadFish::set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_id(value);
-  // @@protoc_insertion_point(field_set:LoadFish.id)
+  // @@protoc_insertion_point(field_set:WPBY.LoadFish.id)
 }
 
 // int32 create_time = 3;
@@ -7071,7 +7074,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::_internal_create_time() const {
   return create_time_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::create_time() const {
-  // @@protoc_insertion_point(field_get:LoadFish.create_time)
+  // @@protoc_insertion_point(field_get:WPBY.LoadFish.create_time)
   return _internal_create_time();
 }
 inline void LoadFish::_internal_set_create_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7080,7 +7083,7 @@ inline void LoadFish::_internal_set_create_time(::PROTOBUF_NAMESPACE_ID::int32 v
 }
 inline void LoadFish::set_create_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_create_time(value);
-  // @@protoc_insertion_point(field_set:LoadFish.create_time)
+  // @@protoc_insertion_point(field_set:WPBY.LoadFish.create_time)
 }
 
 // int32 continue_time = 4;
@@ -7091,7 +7094,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::_internal_continue_time() const 
   return continue_time_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::continue_time() const {
-  // @@protoc_insertion_point(field_get:LoadFish.continue_time)
+  // @@protoc_insertion_point(field_get:WPBY.LoadFish.continue_time)
   return _internal_continue_time();
 }
 inline void LoadFish::_internal_set_continue_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7100,10 +7103,10 @@ inline void LoadFish::_internal_set_continue_time(::PROTOBUF_NAMESPACE_ID::int32
 }
 inline void LoadFish::set_continue_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_continue_time(value);
-  // @@protoc_insertion_point(field_set:LoadFish.continue_time)
+  // @@protoc_insertion_point(field_set:WPBY.LoadFish.continue_time)
 }
 
-// repeated .FishPoint fish_point = 5;
+// repeated .WPBY.FishPoint fish_point = 5;
 inline int LoadFish::_internal_fish_point_size() const {
   return fish_point_.size();
 }
@@ -7113,32 +7116,32 @@ inline int LoadFish::fish_point_size() const {
 inline void LoadFish::clear_fish_point() {
   fish_point_.Clear();
 }
-inline ::FishPoint* LoadFish::mutable_fish_point(int index) {
-  // @@protoc_insertion_point(field_mutable:LoadFish.fish_point)
+inline ::WPBY::FishPoint* LoadFish::mutable_fish_point(int index) {
+  // @@protoc_insertion_point(field_mutable:WPBY.LoadFish.fish_point)
   return fish_point_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishPoint >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::FishPoint >*
 LoadFish::mutable_fish_point() {
-  // @@protoc_insertion_point(field_mutable_list:LoadFish.fish_point)
+  // @@protoc_insertion_point(field_mutable_list:WPBY.LoadFish.fish_point)
   return &fish_point_;
 }
-inline const ::FishPoint& LoadFish::_internal_fish_point(int index) const {
+inline const ::WPBY::FishPoint& LoadFish::_internal_fish_point(int index) const {
   return fish_point_.Get(index);
 }
-inline const ::FishPoint& LoadFish::fish_point(int index) const {
-  // @@protoc_insertion_point(field_get:LoadFish.fish_point)
+inline const ::WPBY::FishPoint& LoadFish::fish_point(int index) const {
+  // @@protoc_insertion_point(field_get:WPBY.LoadFish.fish_point)
   return _internal_fish_point(index);
 }
-inline ::FishPoint* LoadFish::_internal_add_fish_point() {
+inline ::WPBY::FishPoint* LoadFish::_internal_add_fish_point() {
   return fish_point_.Add();
 }
-inline ::FishPoint* LoadFish::add_fish_point() {
-  // @@protoc_insertion_point(field_add:LoadFish.fish_point)
+inline ::WPBY::FishPoint* LoadFish::add_fish_point() {
+  // @@protoc_insertion_point(field_add:WPBY.LoadFish.fish_point)
   return _internal_add_fish_point();
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishPoint >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::FishPoint >&
 LoadFish::fish_point() const {
-  // @@protoc_insertion_point(field_list:LoadFish.fish_point)
+  // @@protoc_insertion_point(field_list:WPBY.LoadFish.fish_point)
   return fish_point_;
 }
 
@@ -7150,7 +7153,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::_internal_now_time() const {
   return now_time_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::now_time() const {
-  // @@protoc_insertion_point(field_get:LoadFish.now_time)
+  // @@protoc_insertion_point(field_get:WPBY.LoadFish.now_time)
   return _internal_now_time();
 }
 inline void LoadFish::_internal_set_now_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7159,7 +7162,7 @@ inline void LoadFish::_internal_set_now_time(::PROTOBUF_NAMESPACE_ID::int32 valu
 }
 inline void LoadFish::set_now_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_now_time(value);
-  // @@protoc_insertion_point(field_set:LoadFish.now_time)
+  // @@protoc_insertion_point(field_set:WPBY.LoadFish.now_time)
 }
 
 // int32 mul = 7;
@@ -7170,7 +7173,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::_internal_mul() const {
   return mul_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 LoadFish::mul() const {
-  // @@protoc_insertion_point(field_get:LoadFish.mul)
+  // @@protoc_insertion_point(field_get:WPBY.LoadFish.mul)
   return _internal_mul();
 }
 inline void LoadFish::_internal_set_mul(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7179,7 +7182,7 @@ inline void LoadFish::_internal_set_mul(::PROTOBUF_NAMESPACE_ID::int32 value) {
 }
 inline void LoadFish::set_mul(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_mul(value);
-  // @@protoc_insertion_point(field_set:LoadFish.mul)
+  // @@protoc_insertion_point(field_set:WPBY.LoadFish.mul)
 }
 
 // -------------------------------------------------------------------
@@ -7194,7 +7197,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_YuWang::_internal_chair_id() const {
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_YuWang::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_YuWang.chair_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_YuWang.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_S_YuWang::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7203,7 +7206,7 @@ inline void CMD_S_YuWang::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 
 }
 inline void CMD_S_YuWang::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_YuWang.chair_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_YuWang.chair_id)
 }
 
 // int32 kind = 2;
@@ -7214,7 +7217,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_YuWang::_internal_kind() const {
   return kind_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_YuWang::kind() const {
-  // @@protoc_insertion_point(field_get:CMD_S_YuWang.kind)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_YuWang.kind)
   return _internal_kind();
 }
 inline void CMD_S_YuWang::_internal_set_kind(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7223,7 +7226,7 @@ inline void CMD_S_YuWang::_internal_set_kind(::PROTOBUF_NAMESPACE_ID::int32 valu
 }
 inline void CMD_S_YuWang::set_kind(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_kind(value);
-  // @@protoc_insertion_point(field_set:CMD_S_YuWang.kind)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_YuWang.kind)
 }
 
 // int32 yu_wang_id = 3;
@@ -7234,7 +7237,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_YuWang::_internal_yu_wang_id() const
   return yu_wang_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_YuWang::yu_wang_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_YuWang.yu_wang_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_YuWang.yu_wang_id)
   return _internal_yu_wang_id();
 }
 inline void CMD_S_YuWang::_internal_set_yu_wang_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7243,10 +7246,10 @@ inline void CMD_S_YuWang::_internal_set_yu_wang_id(::PROTOBUF_NAMESPACE_ID::int3
 }
 inline void CMD_S_YuWang::set_yu_wang_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_yu_wang_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_YuWang.yu_wang_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_YuWang.yu_wang_id)
 }
 
-// repeated .LoadFish fish_id = 4;
+// repeated .WPBY.LoadFish fish_id = 4;
 inline int CMD_S_YuWang::_internal_fish_id_size() const {
   return fish_id_.size();
 }
@@ -7256,32 +7259,32 @@ inline int CMD_S_YuWang::fish_id_size() const {
 inline void CMD_S_YuWang::clear_fish_id() {
   fish_id_.Clear();
 }
-inline ::LoadFish* CMD_S_YuWang::mutable_fish_id(int index) {
-  // @@protoc_insertion_point(field_mutable:CMD_S_YuWang.fish_id)
+inline ::WPBY::LoadFish* CMD_S_YuWang::mutable_fish_id(int index) {
+  // @@protoc_insertion_point(field_mutable:WPBY.CMD_S_YuWang.fish_id)
   return fish_id_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::LoadFish >*
 CMD_S_YuWang::mutable_fish_id() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_S_YuWang.fish_id)
+  // @@protoc_insertion_point(field_mutable_list:WPBY.CMD_S_YuWang.fish_id)
   return &fish_id_;
 }
-inline const ::LoadFish& CMD_S_YuWang::_internal_fish_id(int index) const {
+inline const ::WPBY::LoadFish& CMD_S_YuWang::_internal_fish_id(int index) const {
   return fish_id_.Get(index);
 }
-inline const ::LoadFish& CMD_S_YuWang::fish_id(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_S_YuWang.fish_id)
+inline const ::WPBY::LoadFish& CMD_S_YuWang::fish_id(int index) const {
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_YuWang.fish_id)
   return _internal_fish_id(index);
 }
-inline ::LoadFish* CMD_S_YuWang::_internal_add_fish_id() {
+inline ::WPBY::LoadFish* CMD_S_YuWang::_internal_add_fish_id() {
   return fish_id_.Add();
 }
-inline ::LoadFish* CMD_S_YuWang::add_fish_id() {
-  // @@protoc_insertion_point(field_add:CMD_S_YuWang.fish_id)
+inline ::WPBY::LoadFish* CMD_S_YuWang::add_fish_id() {
+  // @@protoc_insertion_point(field_add:WPBY.CMD_S_YuWang.fish_id)
   return _internal_add_fish_id();
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::LoadFish >&
 CMD_S_YuWang::fish_id() const {
-  // @@protoc_insertion_point(field_list:CMD_S_YuWang.fish_id)
+  // @@protoc_insertion_point(field_list:WPBY.CMD_S_YuWang.fish_id)
   return fish_id_;
 }
 
@@ -7297,7 +7300,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaSiXi::_internal_id() const {
   return id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaSiXi::id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_DaSiXi.id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_DaSiXi.id)
   return _internal_id();
 }
 inline void CMD_S_DaSiXi::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7306,7 +7309,7 @@ inline void CMD_S_DaSiXi::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value)
 }
 inline void CMD_S_DaSiXi::set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_DaSiXi.id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_DaSiXi.id)
 }
 
 // int32 chair_id = 2;
@@ -7317,7 +7320,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaSiXi::_internal_chair_id() const {
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaSiXi::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_DaSiXi.chair_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_DaSiXi.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_S_DaSiXi::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7326,7 +7329,7 @@ inline void CMD_S_DaSiXi::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 
 }
 inline void CMD_S_DaSiXi::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_DaSiXi.chair_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_DaSiXi.chair_id)
 }
 
 // int32 score = 3;
@@ -7337,7 +7340,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaSiXi::_internal_score() const {
   return score_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaSiXi::score() const {
-  // @@protoc_insertion_point(field_get:CMD_S_DaSiXi.score)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_DaSiXi.score)
   return _internal_score();
 }
 inline void CMD_S_DaSiXi::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7346,7 +7349,7 @@ inline void CMD_S_DaSiXi::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 val
 }
 inline void CMD_S_DaSiXi::set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_score(value);
-  // @@protoc_insertion_point(field_set:CMD_S_DaSiXi.score)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_DaSiXi.score)
 }
 
 // -------------------------------------------------------------------
@@ -7361,7 +7364,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaSanYuan::_internal_id() const {
   return id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaSanYuan::id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_DaSanYuan.id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_DaSanYuan.id)
   return _internal_id();
 }
 inline void CMD_S_DaSanYuan::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7370,7 +7373,7 @@ inline void CMD_S_DaSanYuan::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 val
 }
 inline void CMD_S_DaSanYuan::set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_DaSanYuan.id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_DaSanYuan.id)
 }
 
 // int32 chair_id = 2;
@@ -7381,7 +7384,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaSanYuan::_internal_chair_id() cons
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaSanYuan::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_DaSanYuan.chair_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_DaSanYuan.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_S_DaSanYuan::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7390,7 +7393,7 @@ inline void CMD_S_DaSanYuan::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int
 }
 inline void CMD_S_DaSanYuan::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_DaSanYuan.chair_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_DaSanYuan.chair_id)
 }
 
 // int32 score = 3;
@@ -7401,7 +7404,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaSanYuan::_internal_score() const {
   return score_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_DaSanYuan::score() const {
-  // @@protoc_insertion_point(field_get:CMD_S_DaSanYuan.score)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_DaSanYuan.score)
   return _internal_score();
 }
 inline void CMD_S_DaSanYuan::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7410,7 +7413,7 @@ inline void CMD_S_DaSanYuan::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 
 }
 inline void CMD_S_DaSanYuan::set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_score(value);
-  // @@protoc_insertion_point(field_set:CMD_S_DaSanYuan.score)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_DaSanYuan.score)
 }
 
 // -------------------------------------------------------------------
@@ -7425,7 +7428,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ZhongYiTang::_internal_chair_id() co
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ZhongYiTang::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ZhongYiTang.chair_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_ZhongYiTang.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_S_ZhongYiTang::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7434,7 +7437,7 @@ inline void CMD_S_ZhongYiTang::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::i
 }
 inline void CMD_S_ZhongYiTang::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ZhongYiTang.chair_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_ZhongYiTang.chair_id)
 }
 
 // int32 time = 2;
@@ -7445,7 +7448,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ZhongYiTang::_internal_time() const 
   return time_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ZhongYiTang::time() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ZhongYiTang.time)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_ZhongYiTang.time)
   return _internal_time();
 }
 inline void CMD_S_ZhongYiTang::_internal_set_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7454,7 +7457,7 @@ inline void CMD_S_ZhongYiTang::_internal_set_time(::PROTOBUF_NAMESPACE_ID::int32
 }
 inline void CMD_S_ZhongYiTang::set_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_time(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ZhongYiTang.time)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_ZhongYiTang.time)
 }
 
 // -------------------------------------------------------------------
@@ -7469,7 +7472,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShuiHuZhuan::_internal_chair_id() co
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShuiHuZhuan::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ShuiHuZhuan.chair_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_ShuiHuZhuan.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_S_ShuiHuZhuan::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7478,7 +7481,7 @@ inline void CMD_S_ShuiHuZhuan::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::i
 }
 inline void CMD_S_ShuiHuZhuan::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ShuiHuZhuan.chair_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_ShuiHuZhuan.chair_id)
 }
 
 // int32 fish_id = 2;
@@ -7489,7 +7492,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShuiHuZhuan::_internal_fish_id() con
   return fish_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ShuiHuZhuan::fish_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ShuiHuZhuan.fish_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_ShuiHuZhuan.fish_id)
   return _internal_fish_id();
 }
 inline void CMD_S_ShuiHuZhuan::_internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7498,7 +7501,7 @@ inline void CMD_S_ShuiHuZhuan::_internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::in
 }
 inline void CMD_S_ShuiHuZhuan::set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_fish_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ShuiHuZhuan.fish_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_ShuiHuZhuan.fish_id)
 }
 
 // -------------------------------------------------------------------
@@ -7513,7 +7516,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ChangeBulletLevel::_internal_chair_i
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ChangeBulletLevel::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ChangeBulletLevel.chair_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_ChangeBulletLevel.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_S_ChangeBulletLevel::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7522,7 +7525,7 @@ inline void CMD_S_ChangeBulletLevel::_internal_set_chair_id(::PROTOBUF_NAMESPACE
 }
 inline void CMD_S_ChangeBulletLevel::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ChangeBulletLevel.chair_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_ChangeBulletLevel.chair_id)
 }
 
 // int32 gun_type = 2;
@@ -7533,7 +7536,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ChangeBulletLevel::_internal_gun_typ
   return gun_type_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ChangeBulletLevel::gun_type() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ChangeBulletLevel.gun_type)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_ChangeBulletLevel.gun_type)
   return _internal_gun_type();
 }
 inline void CMD_S_ChangeBulletLevel::_internal_set_gun_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7542,7 +7545,7 @@ inline void CMD_S_ChangeBulletLevel::_internal_set_gun_type(::PROTOBUF_NAMESPACE
 }
 inline void CMD_S_ChangeBulletLevel::set_gun_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_gun_type(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ChangeBulletLevel.gun_type)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_ChangeBulletLevel.gun_type)
 }
 
 // int32 gun_level = 3;
@@ -7553,7 +7556,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ChangeBulletLevel::_internal_gun_lev
   return gun_level_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_ChangeBulletLevel::gun_level() const {
-  // @@protoc_insertion_point(field_get:CMD_S_ChangeBulletLevel.gun_level)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_ChangeBulletLevel.gun_level)
   return _internal_gun_level();
 }
 inline void CMD_S_ChangeBulletLevel::_internal_set_gun_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7562,7 +7565,7 @@ inline void CMD_S_ChangeBulletLevel::_internal_set_gun_level(::PROTOBUF_NAMESPAC
 }
 inline void CMD_S_ChangeBulletLevel::set_gun_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_gun_level(value);
-  // @@protoc_insertion_point(field_set:CMD_S_ChangeBulletLevel.gun_level)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_ChangeBulletLevel.gun_level)
 }
 
 // -------------------------------------------------------------------
@@ -7583,19 +7586,19 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_CONFIG::_internal_bullet_score(int i
   return bullet_score_.Get(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_CONFIG::bullet_score(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_S_CONFIG.bullet_score)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_CONFIG.bullet_score)
   return _internal_bullet_score(index);
 }
 inline void CMD_S_CONFIG::set_bullet_score(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   bullet_score_.Set(index, value);
-  // @@protoc_insertion_point(field_set:CMD_S_CONFIG.bullet_score)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_CONFIG.bullet_score)
 }
 inline void CMD_S_CONFIG::_internal_add_bullet_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   bullet_score_.Add(value);
 }
 inline void CMD_S_CONFIG::add_bullet_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_bullet_score(value);
-  // @@protoc_insertion_point(field_add:CMD_S_CONFIG.bullet_score)
+  // @@protoc_insertion_point(field_add:WPBY.CMD_S_CONFIG.bullet_score)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_S_CONFIG::_internal_bullet_score() const {
@@ -7603,7 +7606,7 @@ CMD_S_CONFIG::_internal_bullet_score() const {
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_S_CONFIG::bullet_score() const {
-  // @@protoc_insertion_point(field_list:CMD_S_CONFIG.bullet_score)
+  // @@protoc_insertion_point(field_list:WPBY.CMD_S_CONFIG.bullet_score)
   return _internal_bullet_score();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
@@ -7612,7 +7615,7 @@ CMD_S_CONFIG::_internal_mutable_bullet_score() {
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 CMD_S_CONFIG::mutable_bullet_score() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_S_CONFIG.bullet_score)
+  // @@protoc_insertion_point(field_mutable_list:WPBY.CMD_S_CONFIG.bullet_score)
   return _internal_mutable_bullet_score();
 }
 
@@ -7624,7 +7627,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_CONFIG::_internal_background_picture
   return background_picture_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_CONFIG::background_picture_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_CONFIG.background_picture_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_CONFIG.background_picture_id)
   return _internal_background_picture_id();
 }
 inline void CMD_S_CONFIG::_internal_set_background_picture_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7633,7 +7636,7 @@ inline void CMD_S_CONFIG::_internal_set_background_picture_id(::PROTOBUF_NAMESPA
 }
 inline void CMD_S_CONFIG::set_background_picture_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_background_picture_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_CONFIG.background_picture_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_CONFIG.background_picture_id)
 }
 
 // repeated int32 player_lock_fish_id = 3;
@@ -7650,19 +7653,19 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_CONFIG::_internal_player_lock_fish_i
   return player_lock_fish_id_.Get(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_CONFIG::player_lock_fish_id(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_S_CONFIG.player_lock_fish_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_CONFIG.player_lock_fish_id)
   return _internal_player_lock_fish_id(index);
 }
 inline void CMD_S_CONFIG::set_player_lock_fish_id(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   player_lock_fish_id_.Set(index, value);
-  // @@protoc_insertion_point(field_set:CMD_S_CONFIG.player_lock_fish_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_CONFIG.player_lock_fish_id)
 }
 inline void CMD_S_CONFIG::_internal_add_player_lock_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   player_lock_fish_id_.Add(value);
 }
 inline void CMD_S_CONFIG::add_player_lock_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_player_lock_fish_id(value);
-  // @@protoc_insertion_point(field_add:CMD_S_CONFIG.player_lock_fish_id)
+  // @@protoc_insertion_point(field_add:WPBY.CMD_S_CONFIG.player_lock_fish_id)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_S_CONFIG::_internal_player_lock_fish_id() const {
@@ -7670,7 +7673,7 @@ CMD_S_CONFIG::_internal_player_lock_fish_id() const {
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_S_CONFIG::player_lock_fish_id() const {
-  // @@protoc_insertion_point(field_list:CMD_S_CONFIG.player_lock_fish_id)
+  // @@protoc_insertion_point(field_list:WPBY.CMD_S_CONFIG.player_lock_fish_id)
   return _internal_player_lock_fish_id();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
@@ -7679,7 +7682,7 @@ CMD_S_CONFIG::_internal_mutable_player_lock_fish_id() {
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 CMD_S_CONFIG::mutable_player_lock_fish_id() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_S_CONFIG.player_lock_fish_id)
+  // @@protoc_insertion_point(field_mutable_list:WPBY.CMD_S_CONFIG.player_lock_fish_id)
   return _internal_mutable_player_lock_fish_id();
 }
 
@@ -7697,19 +7700,19 @@ inline ::PROTOBUF_NAMESPACE_ID::int64 CMD_S_CONFIG::_internal_player_cur_score(i
   return player_cur_score_.Get(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::int64 CMD_S_CONFIG::player_cur_score(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_S_CONFIG.player_cur_score)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_CONFIG.player_cur_score)
   return _internal_player_cur_score(index);
 }
 inline void CMD_S_CONFIG::set_player_cur_score(int index, ::PROTOBUF_NAMESPACE_ID::int64 value) {
   player_cur_score_.Set(index, value);
-  // @@protoc_insertion_point(field_set:CMD_S_CONFIG.player_cur_score)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_CONFIG.player_cur_score)
 }
 inline void CMD_S_CONFIG::_internal_add_player_cur_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   player_cur_score_.Add(value);
 }
 inline void CMD_S_CONFIG::add_player_cur_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_add_player_cur_score(value);
-  // @@protoc_insertion_point(field_add:CMD_S_CONFIG.player_cur_score)
+  // @@protoc_insertion_point(field_add:WPBY.CMD_S_CONFIG.player_cur_score)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
 CMD_S_CONFIG::_internal_player_cur_score() const {
@@ -7717,7 +7720,7 @@ CMD_S_CONFIG::_internal_player_cur_score() const {
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
 CMD_S_CONFIG::player_cur_score() const {
-  // @@protoc_insertion_point(field_list:CMD_S_CONFIG.player_cur_score)
+  // @@protoc_insertion_point(field_list:WPBY.CMD_S_CONFIG.player_cur_score)
   return _internal_player_cur_score();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
@@ -7726,7 +7729,7 @@ CMD_S_CONFIG::_internal_mutable_player_cur_score() {
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
 CMD_S_CONFIG::mutable_player_cur_score() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_S_CONFIG.player_cur_score)
+  // @@protoc_insertion_point(field_mutable_list:WPBY.CMD_S_CONFIG.player_cur_score)
   return _internal_mutable_player_cur_score();
 }
 
@@ -7748,19 +7751,19 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerGunLevel::_internal_gun_level(
   return gun_level_.Get(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerGunLevel::gun_level(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_S_PlayerGunLevel.gun_level)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_PlayerGunLevel.gun_level)
   return _internal_gun_level(index);
 }
 inline void CMD_S_PlayerGunLevel::set_gun_level(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   gun_level_.Set(index, value);
-  // @@protoc_insertion_point(field_set:CMD_S_PlayerGunLevel.gun_level)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_PlayerGunLevel.gun_level)
 }
 inline void CMD_S_PlayerGunLevel::_internal_add_gun_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
   gun_level_.Add(value);
 }
 inline void CMD_S_PlayerGunLevel::add_gun_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_gun_level(value);
-  // @@protoc_insertion_point(field_add:CMD_S_PlayerGunLevel.gun_level)
+  // @@protoc_insertion_point(field_add:WPBY.CMD_S_PlayerGunLevel.gun_level)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_S_PlayerGunLevel::_internal_gun_level() const {
@@ -7768,7 +7771,7 @@ CMD_S_PlayerGunLevel::_internal_gun_level() const {
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_S_PlayerGunLevel::gun_level() const {
-  // @@protoc_insertion_point(field_list:CMD_S_PlayerGunLevel.gun_level)
+  // @@protoc_insertion_point(field_list:WPBY.CMD_S_PlayerGunLevel.gun_level)
   return _internal_gun_level();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
@@ -7777,7 +7780,7 @@ CMD_S_PlayerGunLevel::_internal_mutable_gun_level() {
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 CMD_S_PlayerGunLevel::mutable_gun_level() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_S_PlayerGunLevel.gun_level)
+  // @@protoc_insertion_point(field_mutable_list:WPBY.CMD_S_PlayerGunLevel.gun_level)
   return _internal_mutable_gun_level();
 }
 
@@ -7795,19 +7798,19 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerGunLevel::_internal_gun_type(i
   return gun_type_.Get(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerGunLevel::gun_type(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_S_PlayerGunLevel.gun_type)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_PlayerGunLevel.gun_type)
   return _internal_gun_type(index);
 }
 inline void CMD_S_PlayerGunLevel::set_gun_type(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   gun_type_.Set(index, value);
-  // @@protoc_insertion_point(field_set:CMD_S_PlayerGunLevel.gun_type)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_PlayerGunLevel.gun_type)
 }
 inline void CMD_S_PlayerGunLevel::_internal_add_gun_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   gun_type_.Add(value);
 }
 inline void CMD_S_PlayerGunLevel::add_gun_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_gun_type(value);
-  // @@protoc_insertion_point(field_add:CMD_S_PlayerGunLevel.gun_type)
+  // @@protoc_insertion_point(field_add:WPBY.CMD_S_PlayerGunLevel.gun_type)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_S_PlayerGunLevel::_internal_gun_type() const {
@@ -7815,7 +7818,7 @@ CMD_S_PlayerGunLevel::_internal_gun_type() const {
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_S_PlayerGunLevel::gun_type() const {
-  // @@protoc_insertion_point(field_list:CMD_S_PlayerGunLevel.gun_type)
+  // @@protoc_insertion_point(field_list:WPBY.CMD_S_PlayerGunLevel.gun_type)
   return _internal_gun_type();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
@@ -7824,7 +7827,7 @@ CMD_S_PlayerGunLevel::_internal_mutable_gun_type() {
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 CMD_S_PlayerGunLevel::mutable_gun_type() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_S_PlayerGunLevel.gun_type)
+  // @@protoc_insertion_point(field_mutable_list:WPBY.CMD_S_PlayerGunLevel.gun_type)
   return _internal_mutable_gun_type();
 }
 
@@ -7832,7 +7835,7 @@ CMD_S_PlayerGunLevel::mutable_gun_type() {
 
 // CMD_S_AddFish
 
-// repeated .LoadFish load_fish = 1;
+// repeated .WPBY.LoadFish load_fish = 1;
 inline int CMD_S_AddFish::_internal_load_fish_size() const {
   return load_fish_.size();
 }
@@ -7842,32 +7845,32 @@ inline int CMD_S_AddFish::load_fish_size() const {
 inline void CMD_S_AddFish::clear_load_fish() {
   load_fish_.Clear();
 }
-inline ::LoadFish* CMD_S_AddFish::mutable_load_fish(int index) {
-  // @@protoc_insertion_point(field_mutable:CMD_S_AddFish.load_fish)
+inline ::WPBY::LoadFish* CMD_S_AddFish::mutable_load_fish(int index) {
+  // @@protoc_insertion_point(field_mutable:WPBY.CMD_S_AddFish.load_fish)
   return load_fish_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::LoadFish >*
 CMD_S_AddFish::mutable_load_fish() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_S_AddFish.load_fish)
+  // @@protoc_insertion_point(field_mutable_list:WPBY.CMD_S_AddFish.load_fish)
   return &load_fish_;
 }
-inline const ::LoadFish& CMD_S_AddFish::_internal_load_fish(int index) const {
+inline const ::WPBY::LoadFish& CMD_S_AddFish::_internal_load_fish(int index) const {
   return load_fish_.Get(index);
 }
-inline const ::LoadFish& CMD_S_AddFish::load_fish(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_S_AddFish.load_fish)
+inline const ::WPBY::LoadFish& CMD_S_AddFish::load_fish(int index) const {
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_AddFish.load_fish)
   return _internal_load_fish(index);
 }
-inline ::LoadFish* CMD_S_AddFish::_internal_add_load_fish() {
+inline ::WPBY::LoadFish* CMD_S_AddFish::_internal_add_load_fish() {
   return load_fish_.Add();
 }
-inline ::LoadFish* CMD_S_AddFish::add_load_fish() {
-  // @@protoc_insertion_point(field_add:CMD_S_AddFish.load_fish)
+inline ::WPBY::LoadFish* CMD_S_AddFish::add_load_fish() {
+  // @@protoc_insertion_point(field_add:WPBY.CMD_S_AddFish.load_fish)
   return _internal_add_load_fish();
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::LoadFish >&
 CMD_S_AddFish::load_fish() const {
-  // @@protoc_insertion_point(field_list:CMD_S_AddFish.load_fish)
+  // @@protoc_insertion_point(field_list:WPBY.CMD_S_AddFish.load_fish)
   return load_fish_;
 }
 
@@ -7875,7 +7878,7 @@ CMD_S_AddFish::load_fish() const {
 
 // CMD_S_PlayerEnter
 
-// repeated .LoadFish load_fish = 1;
+// repeated .WPBY.LoadFish load_fish = 1;
 inline int CMD_S_PlayerEnter::_internal_load_fish_size() const {
   return load_fish_.size();
 }
@@ -7885,32 +7888,32 @@ inline int CMD_S_PlayerEnter::load_fish_size() const {
 inline void CMD_S_PlayerEnter::clear_load_fish() {
   load_fish_.Clear();
 }
-inline ::LoadFish* CMD_S_PlayerEnter::mutable_load_fish(int index) {
-  // @@protoc_insertion_point(field_mutable:CMD_S_PlayerEnter.load_fish)
+inline ::WPBY::LoadFish* CMD_S_PlayerEnter::mutable_load_fish(int index) {
+  // @@protoc_insertion_point(field_mutable:WPBY.CMD_S_PlayerEnter.load_fish)
   return load_fish_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::LoadFish >*
 CMD_S_PlayerEnter::mutable_load_fish() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_S_PlayerEnter.load_fish)
+  // @@protoc_insertion_point(field_mutable_list:WPBY.CMD_S_PlayerEnter.load_fish)
   return &load_fish_;
 }
-inline const ::LoadFish& CMD_S_PlayerEnter::_internal_load_fish(int index) const {
+inline const ::WPBY::LoadFish& CMD_S_PlayerEnter::_internal_load_fish(int index) const {
   return load_fish_.Get(index);
 }
-inline const ::LoadFish& CMD_S_PlayerEnter::load_fish(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_S_PlayerEnter.load_fish)
+inline const ::WPBY::LoadFish& CMD_S_PlayerEnter::load_fish(int index) const {
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_PlayerEnter.load_fish)
   return _internal_load_fish(index);
 }
-inline ::LoadFish* CMD_S_PlayerEnter::_internal_add_load_fish() {
+inline ::WPBY::LoadFish* CMD_S_PlayerEnter::_internal_add_load_fish() {
   return load_fish_.Add();
 }
-inline ::LoadFish* CMD_S_PlayerEnter::add_load_fish() {
-  // @@protoc_insertion_point(field_add:CMD_S_PlayerEnter.load_fish)
+inline ::WPBY::LoadFish* CMD_S_PlayerEnter::add_load_fish() {
+  // @@protoc_insertion_point(field_add:WPBY.CMD_S_PlayerEnter.load_fish)
   return _internal_add_load_fish();
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LoadFish >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::LoadFish >&
 CMD_S_PlayerEnter::load_fish() const {
-  // @@protoc_insertion_point(field_list:CMD_S_PlayerEnter.load_fish)
+  // @@protoc_insertion_point(field_list:WPBY.CMD_S_PlayerEnter.load_fish)
   return load_fish_;
 }
 
@@ -7926,7 +7929,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 FishDeadInfo::_internal_id() const {
   return id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 FishDeadInfo::id() const {
-  // @@protoc_insertion_point(field_get:FishDeadInfo.id)
+  // @@protoc_insertion_point(field_get:WPBY.FishDeadInfo.id)
   return _internal_id();
 }
 inline void FishDeadInfo::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7935,7 +7938,7 @@ inline void FishDeadInfo::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value)
 }
 inline void FishDeadInfo::set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_id(value);
-  // @@protoc_insertion_point(field_set:FishDeadInfo.id)
+  // @@protoc_insertion_point(field_set:WPBY.FishDeadInfo.id)
 }
 
 // int32 score = 2;
@@ -7946,7 +7949,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 FishDeadInfo::_internal_score() const {
   return score_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 FishDeadInfo::score() const {
-  // @@protoc_insertion_point(field_get:FishDeadInfo.score)
+  // @@protoc_insertion_point(field_get:WPBY.FishDeadInfo.score)
   return _internal_score();
 }
 inline void FishDeadInfo::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7955,7 +7958,7 @@ inline void FishDeadInfo::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 val
 }
 inline void FishDeadInfo::set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_score(value);
-  // @@protoc_insertion_point(field_set:FishDeadInfo.score)
+  // @@protoc_insertion_point(field_set:WPBY.FishDeadInfo.score)
 }
 
 // -------------------------------------------------------------------
@@ -7970,7 +7973,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_FishDead::_internal_chair_id() const
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_FishDead::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_FishDead.chair_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_FishDead.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_S_FishDead::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -7979,10 +7982,10 @@ inline void CMD_S_FishDead::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int3
 }
 inline void CMD_S_FishDead::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_FishDead.chair_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_FishDead.chair_id)
 }
 
-// repeated .FishDeadInfo fish = 2;
+// repeated .WPBY.FishDeadInfo fish = 2;
 inline int CMD_S_FishDead::_internal_fish_size() const {
   return fish_.size();
 }
@@ -7992,32 +7995,32 @@ inline int CMD_S_FishDead::fish_size() const {
 inline void CMD_S_FishDead::clear_fish() {
   fish_.Clear();
 }
-inline ::FishDeadInfo* CMD_S_FishDead::mutable_fish(int index) {
-  // @@protoc_insertion_point(field_mutable:CMD_S_FishDead.fish)
+inline ::WPBY::FishDeadInfo* CMD_S_FishDead::mutable_fish(int index) {
+  // @@protoc_insertion_point(field_mutable:WPBY.CMD_S_FishDead.fish)
   return fish_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishDeadInfo >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::FishDeadInfo >*
 CMD_S_FishDead::mutable_fish() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_S_FishDead.fish)
+  // @@protoc_insertion_point(field_mutable_list:WPBY.CMD_S_FishDead.fish)
   return &fish_;
 }
-inline const ::FishDeadInfo& CMD_S_FishDead::_internal_fish(int index) const {
+inline const ::WPBY::FishDeadInfo& CMD_S_FishDead::_internal_fish(int index) const {
   return fish_.Get(index);
 }
-inline const ::FishDeadInfo& CMD_S_FishDead::fish(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_S_FishDead.fish)
+inline const ::WPBY::FishDeadInfo& CMD_S_FishDead::fish(int index) const {
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_FishDead.fish)
   return _internal_fish(index);
 }
-inline ::FishDeadInfo* CMD_S_FishDead::_internal_add_fish() {
+inline ::WPBY::FishDeadInfo* CMD_S_FishDead::_internal_add_fish() {
   return fish_.Add();
 }
-inline ::FishDeadInfo* CMD_S_FishDead::add_fish() {
-  // @@protoc_insertion_point(field_add:CMD_S_FishDead.fish)
+inline ::WPBY::FishDeadInfo* CMD_S_FishDead::add_fish() {
+  // @@protoc_insertion_point(field_add:WPBY.CMD_S_FishDead.fish)
   return _internal_add_fish();
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FishDeadInfo >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::WPBY::FishDeadInfo >&
 CMD_S_FishDead::fish() const {
-  // @@protoc_insertion_point(field_list:CMD_S_FishDead.fish)
+  // @@protoc_insertion_point(field_list:WPBY.CMD_S_FishDead.fish)
   return fish_;
 }
 
@@ -8029,7 +8032,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int64 CMD_S_FishDead::_internal_score() const {
   return score_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int64 CMD_S_FishDead::score() const {
-  // @@protoc_insertion_point(field_get:CMD_S_FishDead.score)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_FishDead.score)
   return _internal_score();
 }
 inline void CMD_S_FishDead::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
@@ -8038,7 +8041,7 @@ inline void CMD_S_FishDead::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 v
 }
 inline void CMD_S_FishDead::set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_score(value);
-  // @@protoc_insertion_point(field_set:CMD_S_FishDead.score)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_FishDead.score)
 }
 
 // -------------------------------------------------------------------
@@ -8053,7 +8056,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerShoot::_internal_chair_id() co
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerShoot::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_S_PlayerShoot.chair_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_PlayerShoot.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_S_PlayerShoot::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8062,7 +8065,7 @@ inline void CMD_S_PlayerShoot::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::i
 }
 inline void CMD_S_PlayerShoot::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_S_PlayerShoot.chair_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_PlayerShoot.chair_id)
 }
 
 // float x = 2;
@@ -8073,7 +8076,7 @@ inline float CMD_S_PlayerShoot::_internal_x() const {
   return x_;
 }
 inline float CMD_S_PlayerShoot::x() const {
-  // @@protoc_insertion_point(field_get:CMD_S_PlayerShoot.x)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_PlayerShoot.x)
   return _internal_x();
 }
 inline void CMD_S_PlayerShoot::_internal_set_x(float value) {
@@ -8082,7 +8085,7 @@ inline void CMD_S_PlayerShoot::_internal_set_x(float value) {
 }
 inline void CMD_S_PlayerShoot::set_x(float value) {
   _internal_set_x(value);
-  // @@protoc_insertion_point(field_set:CMD_S_PlayerShoot.x)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_PlayerShoot.x)
 }
 
 // float y = 3;
@@ -8093,7 +8096,7 @@ inline float CMD_S_PlayerShoot::_internal_y() const {
   return y_;
 }
 inline float CMD_S_PlayerShoot::y() const {
-  // @@protoc_insertion_point(field_get:CMD_S_PlayerShoot.y)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_PlayerShoot.y)
   return _internal_y();
 }
 inline void CMD_S_PlayerShoot::_internal_set_y(float value) {
@@ -8102,7 +8105,7 @@ inline void CMD_S_PlayerShoot::_internal_set_y(float value) {
 }
 inline void CMD_S_PlayerShoot::set_y(float value) {
   _internal_set_y(value);
-  // @@protoc_insertion_point(field_set:CMD_S_PlayerShoot.y)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_PlayerShoot.y)
 }
 
 // int32 level = 4;
@@ -8113,7 +8116,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerShoot::_internal_level() const
   return level_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerShoot::level() const {
-  // @@protoc_insertion_point(field_get:CMD_S_PlayerShoot.level)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_PlayerShoot.level)
   return _internal_level();
 }
 inline void CMD_S_PlayerShoot::_internal_set_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8122,7 +8125,7 @@ inline void CMD_S_PlayerShoot::_internal_set_level(::PROTOBUF_NAMESPACE_ID::int3
 }
 inline void CMD_S_PlayerShoot::set_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_level(value);
-  // @@protoc_insertion_point(field_set:CMD_S_PlayerShoot.level)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_PlayerShoot.level)
 }
 
 // int32 type = 5;
@@ -8133,7 +8136,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerShoot::_internal_type() const 
   return type_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_S_PlayerShoot::type() const {
-  // @@protoc_insertion_point(field_get:CMD_S_PlayerShoot.type)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_PlayerShoot.type)
   return _internal_type();
 }
 inline void CMD_S_PlayerShoot::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8142,7 +8145,7 @@ inline void CMD_S_PlayerShoot::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int32
 }
 inline void CMD_S_PlayerShoot::set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_type(value);
-  // @@protoc_insertion_point(field_set:CMD_S_PlayerShoot.type)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_PlayerShoot.type)
 }
 
 // int64 player_cur_score = 6;
@@ -8153,7 +8156,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int64 CMD_S_PlayerShoot::_internal_player_cur_sc
   return player_cur_score_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int64 CMD_S_PlayerShoot::player_cur_score() const {
-  // @@protoc_insertion_point(field_get:CMD_S_PlayerShoot.player_cur_score)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_S_PlayerShoot.player_cur_score)
   return _internal_player_cur_score();
 }
 inline void CMD_S_PlayerShoot::_internal_set_player_cur_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
@@ -8162,7 +8165,7 @@ inline void CMD_S_PlayerShoot::_internal_set_player_cur_score(::PROTOBUF_NAMESPA
 }
 inline void CMD_S_PlayerShoot::set_player_cur_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_player_cur_score(value);
-  // @@protoc_insertion_point(field_set:CMD_S_PlayerShoot.player_cur_score)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_S_PlayerShoot.player_cur_score)
 }
 
 // -------------------------------------------------------------------
@@ -8177,7 +8180,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_RobotShoot::_internal_chair_id() con
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_RobotShoot::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_C_RobotShoot.chair_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_C_RobotShoot.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_C_RobotShoot::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8186,7 +8189,7 @@ inline void CMD_C_RobotShoot::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::in
 }
 inline void CMD_C_RobotShoot::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_C_RobotShoot.chair_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_C_RobotShoot.chair_id)
 }
 
 // int32 level = 2;
@@ -8197,7 +8200,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_RobotShoot::_internal_level() const 
   return level_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_RobotShoot::level() const {
-  // @@protoc_insertion_point(field_get:CMD_C_RobotShoot.level)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_C_RobotShoot.level)
   return _internal_level();
 }
 inline void CMD_C_RobotShoot::_internal_set_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8206,7 +8209,7 @@ inline void CMD_C_RobotShoot::_internal_set_level(::PROTOBUF_NAMESPACE_ID::int32
 }
 inline void CMD_C_RobotShoot::set_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_level(value);
-  // @@protoc_insertion_point(field_set:CMD_C_RobotShoot.level)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_C_RobotShoot.level)
 }
 
 // int32 type = 3;
@@ -8217,7 +8220,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_RobotShoot::_internal_type() const {
   return type_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_RobotShoot::type() const {
-  // @@protoc_insertion_point(field_get:CMD_C_RobotShoot.type)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_C_RobotShoot.type)
   return _internal_type();
 }
 inline void CMD_C_RobotShoot::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8226,7 +8229,7 @@ inline void CMD_C_RobotShoot::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 
 }
 inline void CMD_C_RobotShoot::set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_type(value);
-  // @@protoc_insertion_point(field_set:CMD_C_RobotShoot.type)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_C_RobotShoot.type)
 }
 
 // int32 is_lock = 4;
@@ -8237,7 +8240,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_RobotShoot::_internal_is_lock() cons
   return is_lock_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_RobotShoot::is_lock() const {
-  // @@protoc_insertion_point(field_get:CMD_C_RobotShoot.is_lock)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_C_RobotShoot.is_lock)
   return _internal_is_lock();
 }
 inline void CMD_C_RobotShoot::_internal_set_is_lock(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8246,7 +8249,7 @@ inline void CMD_C_RobotShoot::_internal_set_is_lock(::PROTOBUF_NAMESPACE_ID::int
 }
 inline void CMD_C_RobotShoot::set_is_lock(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_is_lock(value);
-  // @@protoc_insertion_point(field_set:CMD_C_RobotShoot.is_lock)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_C_RobotShoot.is_lock)
 }
 
 // -------------------------------------------------------------------
@@ -8261,7 +8264,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_PlayerLock::_internal_chair_id() con
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_PlayerLock::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_C_PlayerLock.chair_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_C_PlayerLock.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_C_PlayerLock::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8270,7 +8273,7 @@ inline void CMD_C_PlayerLock::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::in
 }
 inline void CMD_C_PlayerLock::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_C_PlayerLock.chair_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_C_PlayerLock.chair_id)
 }
 
 // int32 fish_id = 2;
@@ -8281,7 +8284,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_PlayerLock::_internal_fish_id() cons
   return fish_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_PlayerLock::fish_id() const {
-  // @@protoc_insertion_point(field_get:CMD_C_PlayerLock.fish_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_C_PlayerLock.fish_id)
   return _internal_fish_id();
 }
 inline void CMD_C_PlayerLock::_internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8290,7 +8293,7 @@ inline void CMD_C_PlayerLock::_internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::int
 }
 inline void CMD_C_PlayerLock::set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_fish_id(value);
-  // @@protoc_insertion_point(field_set:CMD_C_PlayerLock.fish_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_C_PlayerLock.fish_id)
 }
 
 // -------------------------------------------------------------------
@@ -8305,7 +8308,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_JuBuZhaDan::_internal_chair_id() con
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_JuBuZhaDan::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_C_JuBuZhaDan.chair_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_C_JuBuZhaDan.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_C_JuBuZhaDan::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8314,7 +8317,7 @@ inline void CMD_C_JuBuZhaDan::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::in
 }
 inline void CMD_C_JuBuZhaDan::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_C_JuBuZhaDan.chair_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_C_JuBuZhaDan.chair_id)
 }
 
 // int32 te_shu_iu_id = 2;
@@ -8325,7 +8328,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_JuBuZhaDan::_internal_te_shu_iu_id()
   return te_shu_iu_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_JuBuZhaDan::te_shu_iu_id() const {
-  // @@protoc_insertion_point(field_get:CMD_C_JuBuZhaDan.te_shu_iu_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_C_JuBuZhaDan.te_shu_iu_id)
   return _internal_te_shu_iu_id();
 }
 inline void CMD_C_JuBuZhaDan::_internal_set_te_shu_iu_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8334,7 +8337,7 @@ inline void CMD_C_JuBuZhaDan::_internal_set_te_shu_iu_id(::PROTOBUF_NAMESPACE_ID
 }
 inline void CMD_C_JuBuZhaDan::set_te_shu_iu_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_te_shu_iu_id(value);
-  // @@protoc_insertion_point(field_set:CMD_C_JuBuZhaDan.te_shu_iu_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_C_JuBuZhaDan.te_shu_iu_id)
 }
 
 // repeated int32 fish_id = 3;
@@ -8351,19 +8354,19 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_JuBuZhaDan::_internal_fish_id(int in
   return fish_id_.Get(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_JuBuZhaDan::fish_id(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_C_JuBuZhaDan.fish_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_C_JuBuZhaDan.fish_id)
   return _internal_fish_id(index);
 }
 inline void CMD_C_JuBuZhaDan::set_fish_id(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   fish_id_.Set(index, value);
-  // @@protoc_insertion_point(field_set:CMD_C_JuBuZhaDan.fish_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_C_JuBuZhaDan.fish_id)
 }
 inline void CMD_C_JuBuZhaDan::_internal_add_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   fish_id_.Add(value);
 }
 inline void CMD_C_JuBuZhaDan::add_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_fish_id(value);
-  // @@protoc_insertion_point(field_add:CMD_C_JuBuZhaDan.fish_id)
+  // @@protoc_insertion_point(field_add:WPBY.CMD_C_JuBuZhaDan.fish_id)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_C_JuBuZhaDan::_internal_fish_id() const {
@@ -8371,7 +8374,7 @@ CMD_C_JuBuZhaDan::_internal_fish_id() const {
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_C_JuBuZhaDan::fish_id() const {
-  // @@protoc_insertion_point(field_list:CMD_C_JuBuZhaDan.fish_id)
+  // @@protoc_insertion_point(field_list:WPBY.CMD_C_JuBuZhaDan.fish_id)
   return _internal_fish_id();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
@@ -8380,7 +8383,7 @@ CMD_C_JuBuZhaDan::_internal_mutable_fish_id() {
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 CMD_C_JuBuZhaDan::mutable_fish_id() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_C_JuBuZhaDan.fish_id)
+  // @@protoc_insertion_point(field_mutable_list:WPBY.CMD_C_JuBuZhaDan.fish_id)
   return _internal_mutable_fish_id();
 }
 
@@ -8396,7 +8399,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_TongLeiZhaDan::_internal_chair_id() 
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_TongLeiZhaDan::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_C_TongLeiZhaDan.chair_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_C_TongLeiZhaDan.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_C_TongLeiZhaDan::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8405,7 +8408,7 @@ inline void CMD_C_TongLeiZhaDan::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID:
 }
 inline void CMD_C_TongLeiZhaDan::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_C_TongLeiZhaDan.chair_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_C_TongLeiZhaDan.chair_id)
 }
 
 // int32 te_shu_iu_id = 2;
@@ -8416,7 +8419,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_TongLeiZhaDan::_internal_te_shu_iu_i
   return te_shu_iu_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_TongLeiZhaDan::te_shu_iu_id() const {
-  // @@protoc_insertion_point(field_get:CMD_C_TongLeiZhaDan.te_shu_iu_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_C_TongLeiZhaDan.te_shu_iu_id)
   return _internal_te_shu_iu_id();
 }
 inline void CMD_C_TongLeiZhaDan::_internal_set_te_shu_iu_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8425,7 +8428,7 @@ inline void CMD_C_TongLeiZhaDan::_internal_set_te_shu_iu_id(::PROTOBUF_NAMESPACE
 }
 inline void CMD_C_TongLeiZhaDan::set_te_shu_iu_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_te_shu_iu_id(value);
-  // @@protoc_insertion_point(field_set:CMD_C_TongLeiZhaDan.te_shu_iu_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_C_TongLeiZhaDan.te_shu_iu_id)
 }
 
 // repeated int32 fish_id = 3;
@@ -8442,19 +8445,19 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_TongLeiZhaDan::_internal_fish_id(int
   return fish_id_.Get(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_TongLeiZhaDan::fish_id(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_C_TongLeiZhaDan.fish_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_C_TongLeiZhaDan.fish_id)
   return _internal_fish_id(index);
 }
 inline void CMD_C_TongLeiZhaDan::set_fish_id(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   fish_id_.Set(index, value);
-  // @@protoc_insertion_point(field_set:CMD_C_TongLeiZhaDan.fish_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_C_TongLeiZhaDan.fish_id)
 }
 inline void CMD_C_TongLeiZhaDan::_internal_add_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   fish_id_.Add(value);
 }
 inline void CMD_C_TongLeiZhaDan::add_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_fish_id(value);
-  // @@protoc_insertion_point(field_add:CMD_C_TongLeiZhaDan.fish_id)
+  // @@protoc_insertion_point(field_add:WPBY.CMD_C_TongLeiZhaDan.fish_id)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_C_TongLeiZhaDan::_internal_fish_id() const {
@@ -8462,7 +8465,7 @@ CMD_C_TongLeiZhaDan::_internal_fish_id() const {
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_C_TongLeiZhaDan::fish_id() const {
-  // @@protoc_insertion_point(field_list:CMD_C_TongLeiZhaDan.fish_id)
+  // @@protoc_insertion_point(field_list:WPBY.CMD_C_TongLeiZhaDan.fish_id)
   return _internal_fish_id();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
@@ -8471,7 +8474,7 @@ CMD_C_TongLeiZhaDan::_internal_mutable_fish_id() {
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 CMD_C_TongLeiZhaDan::mutable_fish_id() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_C_TongLeiZhaDan.fish_id)
+  // @@protoc_insertion_point(field_mutable_list:WPBY.CMD_C_TongLeiZhaDan.fish_id)
   return _internal_mutable_fish_id();
 }
 
@@ -8487,7 +8490,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_ShuiHuZhuan::_internal_chair_id() co
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_ShuiHuZhuan::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_C_ShuiHuZhuan.chair_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_C_ShuiHuZhuan.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_C_ShuiHuZhuan::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8496,7 +8499,7 @@ inline void CMD_C_ShuiHuZhuan::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::i
 }
 inline void CMD_C_ShuiHuZhuan::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_C_ShuiHuZhuan.chair_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_C_ShuiHuZhuan.chair_id)
 }
 
 // int32 te_shu_iu_id = 2;
@@ -8507,7 +8510,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_ShuiHuZhuan::_internal_te_shu_iu_id(
   return te_shu_iu_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_ShuiHuZhuan::te_shu_iu_id() const {
-  // @@protoc_insertion_point(field_get:CMD_C_ShuiHuZhuan.te_shu_iu_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_C_ShuiHuZhuan.te_shu_iu_id)
   return _internal_te_shu_iu_id();
 }
 inline void CMD_C_ShuiHuZhuan::_internal_set_te_shu_iu_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8516,7 +8519,7 @@ inline void CMD_C_ShuiHuZhuan::_internal_set_te_shu_iu_id(::PROTOBUF_NAMESPACE_I
 }
 inline void CMD_C_ShuiHuZhuan::set_te_shu_iu_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_te_shu_iu_id(value);
-  // @@protoc_insertion_point(field_set:CMD_C_ShuiHuZhuan.te_shu_iu_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_C_ShuiHuZhuan.te_shu_iu_id)
 }
 
 // repeated int32 fish_id = 3;
@@ -8533,19 +8536,19 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_ShuiHuZhuan::_internal_fish_id(int i
   return fish_id_.Get(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_ShuiHuZhuan::fish_id(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_C_ShuiHuZhuan.fish_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_C_ShuiHuZhuan.fish_id)
   return _internal_fish_id(index);
 }
 inline void CMD_C_ShuiHuZhuan::set_fish_id(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   fish_id_.Set(index, value);
-  // @@protoc_insertion_point(field_set:CMD_C_ShuiHuZhuan.fish_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_C_ShuiHuZhuan.fish_id)
 }
 inline void CMD_C_ShuiHuZhuan::_internal_add_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   fish_id_.Add(value);
 }
 inline void CMD_C_ShuiHuZhuan::add_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_fish_id(value);
-  // @@protoc_insertion_point(field_add:CMD_C_ShuiHuZhuan.fish_id)
+  // @@protoc_insertion_point(field_add:WPBY.CMD_C_ShuiHuZhuan.fish_id)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_C_ShuiHuZhuan::_internal_fish_id() const {
@@ -8553,7 +8556,7 @@ CMD_C_ShuiHuZhuan::_internal_fish_id() const {
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_C_ShuiHuZhuan::fish_id() const {
-  // @@protoc_insertion_point(field_list:CMD_C_ShuiHuZhuan.fish_id)
+  // @@protoc_insertion_point(field_list:WPBY.CMD_C_ShuiHuZhuan.fish_id)
   return _internal_fish_id();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
@@ -8562,7 +8565,7 @@ CMD_C_ShuiHuZhuan::_internal_mutable_fish_id() {
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 CMD_C_ShuiHuZhuan::mutable_fish_id() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_C_ShuiHuZhuan.fish_id)
+  // @@protoc_insertion_point(field_mutable_list:WPBY.CMD_C_ShuiHuZhuan.fish_id)
   return _internal_mutable_fish_id();
 }
 
@@ -8578,7 +8581,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_ChangeBulletLevel::_internal_chair_i
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_ChangeBulletLevel::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_C_ChangeBulletLevel.chair_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_C_ChangeBulletLevel.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_C_ChangeBulletLevel::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8587,7 +8590,7 @@ inline void CMD_C_ChangeBulletLevel::_internal_set_chair_id(::PROTOBUF_NAMESPACE
 }
 inline void CMD_C_ChangeBulletLevel::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_C_ChangeBulletLevel.chair_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_C_ChangeBulletLevel.chair_id)
 }
 
 // int32 gun_type = 2;
@@ -8598,7 +8601,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_ChangeBulletLevel::_internal_gun_typ
   return gun_type_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_ChangeBulletLevel::gun_type() const {
-  // @@protoc_insertion_point(field_get:CMD_C_ChangeBulletLevel.gun_type)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_C_ChangeBulletLevel.gun_type)
   return _internal_gun_type();
 }
 inline void CMD_C_ChangeBulletLevel::_internal_set_gun_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8607,7 +8610,7 @@ inline void CMD_C_ChangeBulletLevel::_internal_set_gun_type(::PROTOBUF_NAMESPACE
 }
 inline void CMD_C_ChangeBulletLevel::set_gun_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_gun_type(value);
-  // @@protoc_insertion_point(field_set:CMD_C_ChangeBulletLevel.gun_type)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_C_ChangeBulletLevel.gun_type)
 }
 
 // int32 gun_level = 3;
@@ -8618,7 +8621,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_ChangeBulletLevel::_internal_gun_lev
   return gun_level_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_ChangeBulletLevel::gun_level() const {
-  // @@protoc_insertion_point(field_get:CMD_C_ChangeBulletLevel.gun_level)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_C_ChangeBulletLevel.gun_level)
   return _internal_gun_level();
 }
 inline void CMD_C_ChangeBulletLevel::_internal_set_gun_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8627,7 +8630,7 @@ inline void CMD_C_ChangeBulletLevel::_internal_set_gun_level(::PROTOBUF_NAMESPAC
 }
 inline void CMD_C_ChangeBulletLevel::set_gun_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_gun_level(value);
-  // @@protoc_insertion_point(field_set:CMD_C_ChangeBulletLevel.gun_level)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_C_ChangeBulletLevel.gun_level)
 }
 
 // -------------------------------------------------------------------
@@ -8642,7 +8645,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 Bullet::_internal_id() const {
   return id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 Bullet::id() const {
-  // @@protoc_insertion_point(field_get:Bullet.id)
+  // @@protoc_insertion_point(field_get:WPBY.Bullet.id)
   return _internal_id();
 }
 inline void Bullet::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8651,7 +8654,7 @@ inline void Bullet::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
 }
 inline void Bullet::set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_id(value);
-  // @@protoc_insertion_point(field_set:Bullet.id)
+  // @@protoc_insertion_point(field_set:WPBY.Bullet.id)
 }
 
 // int32 bullet_kind = 2;
@@ -8662,7 +8665,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 Bullet::_internal_bullet_kind() const {
   return bullet_kind_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 Bullet::bullet_kind() const {
-  // @@protoc_insertion_point(field_get:Bullet.bullet_kind)
+  // @@protoc_insertion_point(field_get:WPBY.Bullet.bullet_kind)
   return _internal_bullet_kind();
 }
 inline void Bullet::_internal_set_bullet_kind(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8671,7 +8674,7 @@ inline void Bullet::_internal_set_bullet_kind(::PROTOBUF_NAMESPACE_ID::int32 val
 }
 inline void Bullet::set_bullet_kind(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_bullet_kind(value);
-  // @@protoc_insertion_point(field_set:Bullet.bullet_kind)
+  // @@protoc_insertion_point(field_set:WPBY.Bullet.bullet_kind)
 }
 
 // int32 is_use = 3;
@@ -8682,7 +8685,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 Bullet::_internal_is_use() const {
   return is_use_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 Bullet::is_use() const {
-  // @@protoc_insertion_point(field_get:Bullet.is_use)
+  // @@protoc_insertion_point(field_get:WPBY.Bullet.is_use)
   return _internal_is_use();
 }
 inline void Bullet::_internal_set_is_use(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8691,7 +8694,7 @@ inline void Bullet::_internal_set_is_use(::PROTOBUF_NAMESPACE_ID::int32 value) {
 }
 inline void Bullet::set_is_use(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_is_use(value);
-  // @@protoc_insertion_point(field_set:Bullet.is_use)
+  // @@protoc_insertion_point(field_set:WPBY.Bullet.is_use)
 }
 
 // int32 level = 4;
@@ -8702,7 +8705,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 Bullet::_internal_level() const {
   return level_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 Bullet::level() const {
-  // @@protoc_insertion_point(field_get:Bullet.level)
+  // @@protoc_insertion_point(field_get:WPBY.Bullet.level)
   return _internal_level();
 }
 inline void Bullet::_internal_set_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8711,7 +8714,7 @@ inline void Bullet::_internal_set_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
 }
 inline void Bullet::set_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_level(value);
-  // @@protoc_insertion_point(field_set:Bullet.level)
+  // @@protoc_insertion_point(field_set:WPBY.Bullet.level)
 }
 
 // int32 type = 5;
@@ -8722,7 +8725,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 Bullet::_internal_type() const {
   return type_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 Bullet::type() const {
-  // @@protoc_insertion_point(field_get:Bullet.type)
+  // @@protoc_insertion_point(field_get:WPBY.Bullet.type)
   return _internal_type();
 }
 inline void Bullet::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8731,7 +8734,7 @@ inline void Bullet::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
 }
 inline void Bullet::set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_type(value);
-  // @@protoc_insertion_point(field_set:Bullet.type)
+  // @@protoc_insertion_point(field_set:WPBY.Bullet.type)
 }
 
 // int32 chips = 6;
@@ -8742,7 +8745,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 Bullet::_internal_chips() const {
   return chips_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 Bullet::chips() const {
-  // @@protoc_insertion_point(field_get:Bullet.chips)
+  // @@protoc_insertion_point(field_get:WPBY.Bullet.chips)
   return _internal_chips();
 }
 inline void Bullet::_internal_set_chips(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8751,7 +8754,7 @@ inline void Bullet::_internal_set_chips(::PROTOBUF_NAMESPACE_ID::int32 value) {
 }
 inline void Bullet::set_chips(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chips(value);
-  // @@protoc_insertion_point(field_set:Bullet.chips)
+  // @@protoc_insertion_point(field_set:WPBY.Bullet.chips)
 }
 
 // -------------------------------------------------------------------
@@ -8766,7 +8769,7 @@ inline float CMD_C_PressShoot::_internal_x() const {
   return x_;
 }
 inline float CMD_C_PressShoot::x() const {
-  // @@protoc_insertion_point(field_get:CMD_C_PressShoot.x)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_C_PressShoot.x)
   return _internal_x();
 }
 inline void CMD_C_PressShoot::_internal_set_x(float value) {
@@ -8775,7 +8778,7 @@ inline void CMD_C_PressShoot::_internal_set_x(float value) {
 }
 inline void CMD_C_PressShoot::set_x(float value) {
   _internal_set_x(value);
-  // @@protoc_insertion_point(field_set:CMD_C_PressShoot.x)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_C_PressShoot.x)
 }
 
 // float y = 2;
@@ -8786,7 +8789,7 @@ inline float CMD_C_PressShoot::_internal_y() const {
   return y_;
 }
 inline float CMD_C_PressShoot::y() const {
-  // @@protoc_insertion_point(field_get:CMD_C_PressShoot.y)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_C_PressShoot.y)
   return _internal_y();
 }
 inline void CMD_C_PressShoot::_internal_set_y(float value) {
@@ -8795,7 +8798,7 @@ inline void CMD_C_PressShoot::_internal_set_y(float value) {
 }
 inline void CMD_C_PressShoot::set_y(float value) {
   _internal_set_y(value);
-  // @@protoc_insertion_point(field_set:CMD_C_PressShoot.y)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_C_PressShoot.y)
 }
 
 // int32 chair_id = 3;
@@ -8806,7 +8809,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_PressShoot::_internal_chair_id() con
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_PressShoot::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_C_PressShoot.chair_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_C_PressShoot.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_C_PressShoot::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -8815,10 +8818,10 @@ inline void CMD_C_PressShoot::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::in
 }
 inline void CMD_C_PressShoot::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_C_PressShoot.chair_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_C_PressShoot.chair_id)
 }
 
-// .Bullet bullet = 4;
+// .WPBY.Bullet bullet = 4;
 inline bool CMD_C_PressShoot::_internal_has_bullet() const {
   return this != internal_default_instance() && bullet_ != nullptr;
 }
@@ -8831,17 +8834,17 @@ inline void CMD_C_PressShoot::clear_bullet() {
   }
   bullet_ = nullptr;
 }
-inline const ::Bullet& CMD_C_PressShoot::_internal_bullet() const {
-  const ::Bullet* p = bullet_;
-  return p != nullptr ? *p : reinterpret_cast<const ::Bullet&>(
-      ::_Bullet_default_instance_);
+inline const ::WPBY::Bullet& CMD_C_PressShoot::_internal_bullet() const {
+  const ::WPBY::Bullet* p = bullet_;
+  return p != nullptr ? *p : reinterpret_cast<const ::WPBY::Bullet&>(
+      ::WPBY::_Bullet_default_instance_);
 }
-inline const ::Bullet& CMD_C_PressShoot::bullet() const {
-  // @@protoc_insertion_point(field_get:CMD_C_PressShoot.bullet)
+inline const ::WPBY::Bullet& CMD_C_PressShoot::bullet() const {
+  // @@protoc_insertion_point(field_get:WPBY.CMD_C_PressShoot.bullet)
   return _internal_bullet();
 }
 inline void CMD_C_PressShoot::unsafe_arena_set_allocated_bullet(
-    ::Bullet* bullet) {
+    ::WPBY::Bullet* bullet) {
   if (GetArena() == nullptr) {
     delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(bullet_);
   }
@@ -8851,37 +8854,37 @@ inline void CMD_C_PressShoot::unsafe_arena_set_allocated_bullet(
   } else {
     
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:CMD_C_PressShoot.bullet)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:WPBY.CMD_C_PressShoot.bullet)
 }
-inline ::Bullet* CMD_C_PressShoot::release_bullet() {
+inline ::WPBY::Bullet* CMD_C_PressShoot::release_bullet() {
   
-  ::Bullet* temp = bullet_;
+  ::WPBY::Bullet* temp = bullet_;
   bullet_ = nullptr;
   if (GetArena() != nullptr) {
     temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
   }
   return temp;
 }
-inline ::Bullet* CMD_C_PressShoot::unsafe_arena_release_bullet() {
-  // @@protoc_insertion_point(field_release:CMD_C_PressShoot.bullet)
+inline ::WPBY::Bullet* CMD_C_PressShoot::unsafe_arena_release_bullet() {
+  // @@protoc_insertion_point(field_release:WPBY.CMD_C_PressShoot.bullet)
   
-  ::Bullet* temp = bullet_;
+  ::WPBY::Bullet* temp = bullet_;
   bullet_ = nullptr;
   return temp;
 }
-inline ::Bullet* CMD_C_PressShoot::_internal_mutable_bullet() {
+inline ::WPBY::Bullet* CMD_C_PressShoot::_internal_mutable_bullet() {
   
   if (bullet_ == nullptr) {
-    auto* p = CreateMaybeMessage<::Bullet>(GetArena());
+    auto* p = CreateMaybeMessage<::WPBY::Bullet>(GetArena());
     bullet_ = p;
   }
   return bullet_;
 }
-inline ::Bullet* CMD_C_PressShoot::mutable_bullet() {
-  // @@protoc_insertion_point(field_mutable:CMD_C_PressShoot.bullet)
+inline ::WPBY::Bullet* CMD_C_PressShoot::mutable_bullet() {
+  // @@protoc_insertion_point(field_mutable:WPBY.CMD_C_PressShoot.bullet)
   return _internal_mutable_bullet();
 }
-inline void CMD_C_PressShoot::set_allocated_bullet(::Bullet* bullet) {
+inline void CMD_C_PressShoot::set_allocated_bullet(::WPBY::Bullet* bullet) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   if (message_arena == nullptr) {
     delete bullet_;
@@ -8898,14 +8901,14 @@ inline void CMD_C_PressShoot::set_allocated_bullet(::Bullet* bullet) {
     
   }
   bullet_ = bullet;
-  // @@protoc_insertion_point(field_set_allocated:CMD_C_PressShoot.bullet)
+  // @@protoc_insertion_point(field_set_allocated:WPBY.CMD_C_PressShoot.bullet)
 }
 
 // -------------------------------------------------------------------
 
 // CMD_C_HitedFish
 
-// .Bullet bullet = 1;
+// .WPBY.Bullet bullet = 1;
 inline bool CMD_C_HitedFish::_internal_has_bullet() const {
   return this != internal_default_instance() && bullet_ != nullptr;
 }
@@ -8918,17 +8921,17 @@ inline void CMD_C_HitedFish::clear_bullet() {
   }
   bullet_ = nullptr;
 }
-inline const ::Bullet& CMD_C_HitedFish::_internal_bullet() const {
-  const ::Bullet* p = bullet_;
-  return p != nullptr ? *p : reinterpret_cast<const ::Bullet&>(
-      ::_Bullet_default_instance_);
+inline const ::WPBY::Bullet& CMD_C_HitedFish::_internal_bullet() const {
+  const ::WPBY::Bullet* p = bullet_;
+  return p != nullptr ? *p : reinterpret_cast<const ::WPBY::Bullet&>(
+      ::WPBY::_Bullet_default_instance_);
 }
-inline const ::Bullet& CMD_C_HitedFish::bullet() const {
-  // @@protoc_insertion_point(field_get:CMD_C_HitedFish.bullet)
+inline const ::WPBY::Bullet& CMD_C_HitedFish::bullet() const {
+  // @@protoc_insertion_point(field_get:WPBY.CMD_C_HitedFish.bullet)
   return _internal_bullet();
 }
 inline void CMD_C_HitedFish::unsafe_arena_set_allocated_bullet(
-    ::Bullet* bullet) {
+    ::WPBY::Bullet* bullet) {
   if (GetArena() == nullptr) {
     delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(bullet_);
   }
@@ -8938,37 +8941,37 @@ inline void CMD_C_HitedFish::unsafe_arena_set_allocated_bullet(
   } else {
     
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:CMD_C_HitedFish.bullet)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:WPBY.CMD_C_HitedFish.bullet)
 }
-inline ::Bullet* CMD_C_HitedFish::release_bullet() {
+inline ::WPBY::Bullet* CMD_C_HitedFish::release_bullet() {
   
-  ::Bullet* temp = bullet_;
+  ::WPBY::Bullet* temp = bullet_;
   bullet_ = nullptr;
   if (GetArena() != nullptr) {
     temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
   }
   return temp;
 }
-inline ::Bullet* CMD_C_HitedFish::unsafe_arena_release_bullet() {
-  // @@protoc_insertion_point(field_release:CMD_C_HitedFish.bullet)
+inline ::WPBY::Bullet* CMD_C_HitedFish::unsafe_arena_release_bullet() {
+  // @@protoc_insertion_point(field_release:WPBY.CMD_C_HitedFish.bullet)
   
-  ::Bullet* temp = bullet_;
+  ::WPBY::Bullet* temp = bullet_;
   bullet_ = nullptr;
   return temp;
 }
-inline ::Bullet* CMD_C_HitedFish::_internal_mutable_bullet() {
+inline ::WPBY::Bullet* CMD_C_HitedFish::_internal_mutable_bullet() {
   
   if (bullet_ == nullptr) {
-    auto* p = CreateMaybeMessage<::Bullet>(GetArena());
+    auto* p = CreateMaybeMessage<::WPBY::Bullet>(GetArena());
     bullet_ = p;
   }
   return bullet_;
 }
-inline ::Bullet* CMD_C_HitedFish::mutable_bullet() {
-  // @@protoc_insertion_point(field_mutable:CMD_C_HitedFish.bullet)
+inline ::WPBY::Bullet* CMD_C_HitedFish::mutable_bullet() {
+  // @@protoc_insertion_point(field_mutable:WPBY.CMD_C_HitedFish.bullet)
   return _internal_mutable_bullet();
 }
-inline void CMD_C_HitedFish::set_allocated_bullet(::Bullet* bullet) {
+inline void CMD_C_HitedFish::set_allocated_bullet(::WPBY::Bullet* bullet) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   if (message_arena == nullptr) {
     delete bullet_;
@@ -8985,7 +8988,7 @@ inline void CMD_C_HitedFish::set_allocated_bullet(::Bullet* bullet) {
     
   }
   bullet_ = bullet;
-  // @@protoc_insertion_point(field_set_allocated:CMD_C_HitedFish.bullet)
+  // @@protoc_insertion_point(field_set_allocated:WPBY.CMD_C_HitedFish.bullet)
 }
 
 // int32 chair_id = 2;
@@ -8996,7 +8999,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_HitedFish::_internal_chair_id() cons
   return chair_id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_HitedFish::chair_id() const {
-  // @@protoc_insertion_point(field_get:CMD_C_HitedFish.chair_id)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_C_HitedFish.chair_id)
   return _internal_chair_id();
 }
 inline void CMD_C_HitedFish::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -9005,7 +9008,7 @@ inline void CMD_C_HitedFish::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int
 }
 inline void CMD_C_HitedFish::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:CMD_C_HitedFish.chair_id)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_C_HitedFish.chair_id)
 }
 
 // repeated int32 hit_fish = 3;
@@ -9022,19 +9025,19 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_HitedFish::_internal_hit_fish(int in
   return hit_fish_.Get(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_C_HitedFish::hit_fish(int index) const {
-  // @@protoc_insertion_point(field_get:CMD_C_HitedFish.hit_fish)
+  // @@protoc_insertion_point(field_get:WPBY.CMD_C_HitedFish.hit_fish)
   return _internal_hit_fish(index);
 }
 inline void CMD_C_HitedFish::set_hit_fish(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   hit_fish_.Set(index, value);
-  // @@protoc_insertion_point(field_set:CMD_C_HitedFish.hit_fish)
+  // @@protoc_insertion_point(field_set:WPBY.CMD_C_HitedFish.hit_fish)
 }
 inline void CMD_C_HitedFish::_internal_add_hit_fish(::PROTOBUF_NAMESPACE_ID::int32 value) {
   hit_fish_.Add(value);
 }
 inline void CMD_C_HitedFish::add_hit_fish(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_hit_fish(value);
-  // @@protoc_insertion_point(field_add:CMD_C_HitedFish.hit_fish)
+  // @@protoc_insertion_point(field_add:WPBY.CMD_C_HitedFish.hit_fish)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_C_HitedFish::_internal_hit_fish() const {
@@ -9042,7 +9045,7 @@ CMD_C_HitedFish::_internal_hit_fish() const {
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 CMD_C_HitedFish::hit_fish() const {
-  // @@protoc_insertion_point(field_list:CMD_C_HitedFish.hit_fish)
+  // @@protoc_insertion_point(field_list:WPBY.CMD_C_HitedFish.hit_fish)
   return _internal_hit_fish();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
@@ -9051,7 +9054,7 @@ CMD_C_HitedFish::_internal_mutable_hit_fish() {
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 CMD_C_HitedFish::mutable_hit_fish() {
-  // @@protoc_insertion_point(field_mutable_list:CMD_C_HitedFish.hit_fish)
+  // @@protoc_insertion_point(field_mutable_list:WPBY.CMD_C_HitedFish.hit_fish)
   return _internal_mutable_hit_fish();
 }
 
@@ -9129,13 +9132,14 @@ CMD_C_HitedFish::mutable_hit_fish() {
 
 // @@protoc_insertion_point(namespace_scope)
 
+}  // namespace WPBY
 
 PROTOBUF_NAMESPACE_OPEN
 
-template <> struct is_proto_enum< ::EMsgIDSubGame> : ::std::true_type {};
+template <> struct is_proto_enum< ::WPBY::EMsgIDSubGame> : ::std::true_type {};
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::EMsgIDSubGame>() {
-  return ::EMsgIDSubGame_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< ::WPBY::EMsgIDSubGame>() {
+  return ::WPBY::EMsgIDSubGame_descriptor();
 }
 
 PROTOBUF_NAMESPACE_CLOSE

@@ -21,6 +21,7 @@ extern PROTOBUF_INTERNAL_EXPORT_WPBY_2eproto ::PROTOBUF_NAMESPACE_ID::internal::
 extern PROTOBUF_INTERNAL_EXPORT_WPBY_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_FishTide_WPBY_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_WPBY_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_LineInfo_WPBY_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_WPBY_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_LoadFish_WPBY_2eproto;
+namespace WPBY {
 class CMD_S_RobotShootDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CMD_S_RobotShoot> _instance;
@@ -161,12 +162,13 @@ class CMD_C_HitedFishDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CMD_C_HitedFish> _instance;
 } _CMD_C_HitedFish_default_instance_;
+}  // namespace WPBY
 static void InitDefaultsscc_info_Bullet_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_Bullet_default_instance_;
-    new (ptr) ::Bullet();
+    void* ptr = &::WPBY::_Bullet_default_instance_;
+    new (ptr) ::WPBY::Bullet();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -178,8 +180,8 @@ static void InitDefaultsscc_info_CMD_C_ChangeBulletLevel_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_CMD_C_ChangeBulletLevel_default_instance_;
-    new (ptr) ::CMD_C_ChangeBulletLevel();
+    void* ptr = &::WPBY::_CMD_C_ChangeBulletLevel_default_instance_;
+    new (ptr) ::WPBY::CMD_C_ChangeBulletLevel();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -191,8 +193,8 @@ static void InitDefaultsscc_info_CMD_C_HitedFish_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_CMD_C_HitedFish_default_instance_;
-    new (ptr) ::CMD_C_HitedFish();
+    void* ptr = &::WPBY::_CMD_C_HitedFish_default_instance_;
+    new (ptr) ::WPBY::CMD_C_HitedFish();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -205,8 +207,8 @@ static void InitDefaultsscc_info_CMD_C_JuBuZhaDan_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_CMD_C_JuBuZhaDan_default_instance_;
-    new (ptr) ::CMD_C_JuBuZhaDan();
+    void* ptr = &::WPBY::_CMD_C_JuBuZhaDan_default_instance_;
+    new (ptr) ::WPBY::CMD_C_JuBuZhaDan();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -218,8 +220,8 @@ static void InitDefaultsscc_info_CMD_C_PlayerLock_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_CMD_C_PlayerLock_default_instance_;
-    new (ptr) ::CMD_C_PlayerLock();
+    void* ptr = &::WPBY::_CMD_C_PlayerLock_default_instance_;
+    new (ptr) ::WPBY::CMD_C_PlayerLock();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -231,8 +233,8 @@ static void InitDefaultsscc_info_CMD_C_PressShoot_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_CMD_C_PressShoot_default_instance_;
-    new (ptr) ::CMD_C_PressShoot();
+    void* ptr = &::WPBY::_CMD_C_PressShoot_default_instance_;
+    new (ptr) ::WPBY::CMD_C_PressShoot();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -245,8 +247,8 @@ static void InitDefaultsscc_info_CMD_C_RobotShoot_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_CMD_C_RobotShoot_default_instance_;
-    new (ptr) ::CMD_C_RobotShoot();
+    void* ptr = &::WPBY::_CMD_C_RobotShoot_default_instance_;
+    new (ptr) ::WPBY::CMD_C_RobotShoot();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -258,8 +260,8 @@ static void InitDefaultsscc_info_CMD_C_ShuiHuZhuan_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_CMD_C_ShuiHuZhuan_default_instance_;
-    new (ptr) ::CMD_C_ShuiHuZhuan();
+    void* ptr = &::WPBY::_CMD_C_ShuiHuZhuan_default_instance_;
+    new (ptr) ::WPBY::CMD_C_ShuiHuZhuan();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -271,8 +273,8 @@ static void InitDefaultsscc_info_CMD_C_TongLeiZhaDan_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_CMD_C_TongLeiZhaDan_default_instance_;
-    new (ptr) ::CMD_C_TongLeiZhaDan();
+    void* ptr = &::WPBY::_CMD_C_TongLeiZhaDan_default_instance_;
+    new (ptr) ::WPBY::CMD_C_TongLeiZhaDan();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -284,8 +286,8 @@ static void InitDefaultsscc_info_CMD_S_AddFish_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_CMD_S_AddFish_default_instance_;
-    new (ptr) ::CMD_S_AddFish();
+    void* ptr = &::WPBY::_CMD_S_AddFish_default_instance_;
+    new (ptr) ::WPBY::CMD_S_AddFish();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -298,8 +300,8 @@ static void InitDefaultsscc_info_CMD_S_CONFIG_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_CMD_S_CONFIG_default_instance_;
-    new (ptr) ::CMD_S_CONFIG();
+    void* ptr = &::WPBY::_CMD_S_CONFIG_default_instance_;
+    new (ptr) ::WPBY::CMD_S_CONFIG();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -311,8 +313,8 @@ static void InitDefaultsscc_info_CMD_S_ChangeBulletLevel_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_CMD_S_ChangeBulletLevel_default_instance_;
-    new (ptr) ::CMD_S_ChangeBulletLevel();
+    void* ptr = &::WPBY::_CMD_S_ChangeBulletLevel_default_instance_;
+    new (ptr) ::WPBY::CMD_S_ChangeBulletLevel();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -324,8 +326,8 @@ static void InitDefaultsscc_info_CMD_S_DaSanYuan_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_CMD_S_DaSanYuan_default_instance_;
-    new (ptr) ::CMD_S_DaSanYuan();
+    void* ptr = &::WPBY::_CMD_S_DaSanYuan_default_instance_;
+    new (ptr) ::WPBY::CMD_S_DaSanYuan();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -337,8 +339,8 @@ static void InitDefaultsscc_info_CMD_S_DaSiXi_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_CMD_S_DaSiXi_default_instance_;
-    new (ptr) ::CMD_S_DaSiXi();
+    void* ptr = &::WPBY::_CMD_S_DaSiXi_default_instance_;
+    new (ptr) ::WPBY::CMD_S_DaSiXi();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -350,8 +352,8 @@ static void InitDefaultsscc_info_CMD_S_FishDead_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_CMD_S_FishDead_default_instance_;
-    new (ptr) ::CMD_S_FishDead();
+    void* ptr = &::WPBY::_CMD_S_FishDead_default_instance_;
+    new (ptr) ::WPBY::CMD_S_FishDead();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -364,8 +366,8 @@ static void InitDefaultsscc_info_CMD_S_JuBuZhaDan_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_CMD_S_JuBuZhaDan_default_instance_;
-    new (ptr) ::CMD_S_JuBuZhaDan();
+    void* ptr = &::WPBY::_CMD_S_JuBuZhaDan_default_instance_;
+    new (ptr) ::WPBY::CMD_S_JuBuZhaDan();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -377,8 +379,8 @@ static void InitDefaultsscc_info_CMD_S_PlayerEnter_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_CMD_S_PlayerEnter_default_instance_;
-    new (ptr) ::CMD_S_PlayerEnter();
+    void* ptr = &::WPBY::_CMD_S_PlayerEnter_default_instance_;
+    new (ptr) ::WPBY::CMD_S_PlayerEnter();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -391,8 +393,8 @@ static void InitDefaultsscc_info_CMD_S_PlayerGunLevel_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_CMD_S_PlayerGunLevel_default_instance_;
-    new (ptr) ::CMD_S_PlayerGunLevel();
+    void* ptr = &::WPBY::_CMD_S_PlayerGunLevel_default_instance_;
+    new (ptr) ::WPBY::CMD_S_PlayerGunLevel();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -404,8 +406,8 @@ static void InitDefaultsscc_info_CMD_S_PlayerLock_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_CMD_S_PlayerLock_default_instance_;
-    new (ptr) ::CMD_S_PlayerLock();
+    void* ptr = &::WPBY::_CMD_S_PlayerLock_default_instance_;
+    new (ptr) ::WPBY::CMD_S_PlayerLock();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -417,8 +419,8 @@ static void InitDefaultsscc_info_CMD_S_PlayerShoot_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_CMD_S_PlayerShoot_default_instance_;
-    new (ptr) ::CMD_S_PlayerShoot();
+    void* ptr = &::WPBY::_CMD_S_PlayerShoot_default_instance_;
+    new (ptr) ::WPBY::CMD_S_PlayerShoot();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -430,8 +432,8 @@ static void InitDefaultsscc_info_CMD_S_RobotList_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_CMD_S_RobotList_default_instance_;
-    new (ptr) ::CMD_S_RobotList();
+    void* ptr = &::WPBY::_CMD_S_RobotList_default_instance_;
+    new (ptr) ::WPBY::CMD_S_RobotList();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -443,8 +445,8 @@ static void InitDefaultsscc_info_CMD_S_RobotShoot_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_CMD_S_RobotShoot_default_instance_;
-    new (ptr) ::CMD_S_RobotShoot();
+    void* ptr = &::WPBY::_CMD_S_RobotShoot_default_instance_;
+    new (ptr) ::WPBY::CMD_S_RobotShoot();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -456,8 +458,8 @@ static void InitDefaultsscc_info_CMD_S_ShootLK_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_CMD_S_ShootLK_default_instance_;
-    new (ptr) ::CMD_S_ShootLK();
+    void* ptr = &::WPBY::_CMD_S_ShootLK_default_instance_;
+    new (ptr) ::WPBY::CMD_S_ShootLK();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -469,8 +471,8 @@ static void InitDefaultsscc_info_CMD_S_ShuiHuZhuan_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_CMD_S_ShuiHuZhuan_default_instance_;
-    new (ptr) ::CMD_S_ShuiHuZhuan();
+    void* ptr = &::WPBY::_CMD_S_ShuiHuZhuan_default_instance_;
+    new (ptr) ::WPBY::CMD_S_ShuiHuZhuan();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -482,8 +484,8 @@ static void InitDefaultsscc_info_CMD_S_TongLeiZhaDan_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_CMD_S_TongLeiZhaDan_default_instance_;
-    new (ptr) ::CMD_S_TongLeiZhaDan();
+    void* ptr = &::WPBY::_CMD_S_TongLeiZhaDan_default_instance_;
+    new (ptr) ::WPBY::CMD_S_TongLeiZhaDan();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -495,8 +497,8 @@ static void InitDefaultsscc_info_CMD_S_YiWangDaJin_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_CMD_S_YiWangDaJin_default_instance_;
-    new (ptr) ::CMD_S_YiWangDaJin();
+    void* ptr = &::WPBY::_CMD_S_YiWangDaJin_default_instance_;
+    new (ptr) ::WPBY::CMD_S_YiWangDaJin();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -508,8 +510,8 @@ static void InitDefaultsscc_info_CMD_S_YuChaoCome_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_CMD_S_YuChaoCome_default_instance_;
-    new (ptr) ::CMD_S_YuChaoCome();
+    void* ptr = &::WPBY::_CMD_S_YuChaoCome_default_instance_;
+    new (ptr) ::WPBY::CMD_S_YuChaoCome();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -522,8 +524,8 @@ static void InitDefaultsscc_info_CMD_S_YuWang_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_CMD_S_YuWang_default_instance_;
-    new (ptr) ::CMD_S_YuWang();
+    void* ptr = &::WPBY::_CMD_S_YuWang_default_instance_;
+    new (ptr) ::WPBY::CMD_S_YuWang();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -536,8 +538,8 @@ static void InitDefaultsscc_info_CMD_S_ZhongYiTang_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_CMD_S_ZhongYiTang_default_instance_;
-    new (ptr) ::CMD_S_ZhongYiTang();
+    void* ptr = &::WPBY::_CMD_S_ZhongYiTang_default_instance_;
+    new (ptr) ::WPBY::CMD_S_ZhongYiTang();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -549,8 +551,8 @@ static void InitDefaultsscc_info_FishDeadInfo_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_FishDeadInfo_default_instance_;
-    new (ptr) ::FishDeadInfo();
+    void* ptr = &::WPBY::_FishDeadInfo_default_instance_;
+    new (ptr) ::WPBY::FishDeadInfo();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -562,8 +564,8 @@ static void InitDefaultsscc_info_FishLineInfo_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_FishLineInfo_default_instance_;
-    new (ptr) ::FishLineInfo();
+    void* ptr = &::WPBY::_FishLineInfo_default_instance_;
+    new (ptr) ::WPBY::FishLineInfo();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -576,8 +578,8 @@ static void InitDefaultsscc_info_FishPoint_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_FishPoint_default_instance_;
-    new (ptr) ::FishPoint();
+    void* ptr = &::WPBY::_FishPoint_default_instance_;
+    new (ptr) ::WPBY::FishPoint();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -589,8 +591,8 @@ static void InitDefaultsscc_info_FishTide_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_FishTide_default_instance_;
-    new (ptr) ::FishTide();
+    void* ptr = &::WPBY::_FishTide_default_instance_;
+    new (ptr) ::WPBY::FishTide();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -603,8 +605,8 @@ static void InitDefaultsscc_info_LineInfo_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_LineInfo_default_instance_;
-    new (ptr) ::LineInfo();
+    void* ptr = &::WPBY::_LineInfo_default_instance_;
+    new (ptr) ::WPBY::LineInfo();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -617,8 +619,8 @@ static void InitDefaultsscc_info_LoadFish_WPBY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_LoadFish_default_instance_;
-    new (ptr) ::LoadFish();
+    void* ptr = &::WPBY::_LoadFish_default_instance_;
+    new (ptr) ::WPBY::LoadFish();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -633,461 +635,462 @@ static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_s
 
 const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_WPBY_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_RobotShoot, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_RobotShoot, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_RobotShoot, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_RobotShoot, level_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_RobotShoot, type_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_RobotShoot, is_lock_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_RobotShoot, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_RobotShoot, level_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_RobotShoot, type_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_RobotShoot, is_lock_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_RobotList, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_RobotList, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_RobotList, is_robot_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_RobotList, is_robot_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_PlayerLock, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_PlayerLock, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_PlayerLock, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_PlayerLock, fish_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_PlayerLock, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_PlayerLock, fish_id_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::FishPoint, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::FishPoint, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::FishPoint, x_),
-  PROTOBUF_FIELD_OFFSET(::FishPoint, y_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::FishPoint, x_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::FishPoint, y_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::LineInfo, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::LineInfo, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::LineInfo, type_),
-  PROTOBUF_FIELD_OFFSET(::LineInfo, points_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::LineInfo, type_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::LineInfo, points_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::FishLineInfo, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::FishLineInfo, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::FishLineInfo, line_),
-  PROTOBUF_FIELD_OFFSET(::FishLineInfo, kind_),
-  PROTOBUF_FIELD_OFFSET(::FishLineInfo, start_delay_time_),
-  PROTOBUF_FIELD_OFFSET(::FishLineInfo, delay_time_),
-  PROTOBUF_FIELD_OFFSET(::FishLineInfo, fish_num_),
-  PROTOBUF_FIELD_OFFSET(::FishLineInfo, lived_time_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::FishLineInfo, line_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::FishLineInfo, kind_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::FishLineInfo, start_delay_time_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::FishLineInfo, delay_time_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::FishLineInfo, fish_num_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::FishLineInfo, lived_time_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::FishTide, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::FishTide, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::FishTide, fish_tide_start_time_),
-  PROTOBUF_FIELD_OFFSET(::FishTide, fish_tide_cur_time_),
-  PROTOBUF_FIELD_OFFSET(::FishTide, fish_tide_turn_),
-  PROTOBUF_FIELD_OFFSET(::FishTide, line_num_),
-  PROTOBUF_FIELD_OFFSET(::FishTide, fish_lines_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::FishTide, fish_tide_start_time_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::FishTide, fish_tide_cur_time_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::FishTide, fish_tide_turn_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::FishTide, line_num_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::FishTide, fish_lines_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_YuChaoCome, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_YuChaoCome, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_YuChaoCome, yu_chao_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_YuChaoCome, fish_tide_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_YuChaoCome, yu_chao_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_YuChaoCome, fish_tide_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_ShootLK, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_ShootLK, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_ShootLK, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_ShootLK, id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_ShootLK, score_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_ShootLK, multiple_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_ShootLK, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_ShootLK, id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_ShootLK, score_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_ShootLK, multiple_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_JuBuZhaDan, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_JuBuZhaDan, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_JuBuZhaDan, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_JuBuZhaDan, fish_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_JuBuZhaDan, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_JuBuZhaDan, fish_id_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_YiWangDaJin, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_YiWangDaJin, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_YiWangDaJin, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_YiWangDaJin, bullet_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_YiWangDaJin, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_YiWangDaJin, bullet_id_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_TongLeiZhaDan, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_TongLeiZhaDan, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_TongLeiZhaDan, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_TongLeiZhaDan, fish_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_TongLeiZhaDan, kind_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_TongLeiZhaDan, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_TongLeiZhaDan, fish_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_TongLeiZhaDan, kind_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::LoadFish, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::LoadFish, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::LoadFish, kind_),
-  PROTOBUF_FIELD_OFFSET(::LoadFish, id_),
-  PROTOBUF_FIELD_OFFSET(::LoadFish, create_time_),
-  PROTOBUF_FIELD_OFFSET(::LoadFish, continue_time_),
-  PROTOBUF_FIELD_OFFSET(::LoadFish, fish_point_),
-  PROTOBUF_FIELD_OFFSET(::LoadFish, now_time_),
-  PROTOBUF_FIELD_OFFSET(::LoadFish, mul_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::LoadFish, kind_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::LoadFish, id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::LoadFish, create_time_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::LoadFish, continue_time_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::LoadFish, fish_point_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::LoadFish, now_time_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::LoadFish, mul_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_YuWang, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_YuWang, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_YuWang, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_YuWang, kind_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_YuWang, yu_wang_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_YuWang, fish_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_YuWang, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_YuWang, kind_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_YuWang, yu_wang_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_YuWang, fish_id_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_DaSiXi, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_DaSiXi, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_DaSiXi, id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_DaSiXi, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_DaSiXi, score_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_DaSiXi, id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_DaSiXi, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_DaSiXi, score_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_DaSanYuan, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_DaSanYuan, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_DaSanYuan, id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_DaSanYuan, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_DaSanYuan, score_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_DaSanYuan, id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_DaSanYuan, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_DaSanYuan, score_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_ZhongYiTang, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_ZhongYiTang, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_ZhongYiTang, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_ZhongYiTang, time_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_ZhongYiTang, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_ZhongYiTang, time_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_ShuiHuZhuan, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_ShuiHuZhuan, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_ShuiHuZhuan, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_ShuiHuZhuan, fish_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_ShuiHuZhuan, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_ShuiHuZhuan, fish_id_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_ChangeBulletLevel, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_ChangeBulletLevel, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_ChangeBulletLevel, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_ChangeBulletLevel, gun_type_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_ChangeBulletLevel, gun_level_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_ChangeBulletLevel, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_ChangeBulletLevel, gun_type_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_ChangeBulletLevel, gun_level_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_CONFIG, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_CONFIG, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_CONFIG, bullet_score_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_CONFIG, background_picture_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_CONFIG, player_lock_fish_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_CONFIG, player_cur_score_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_CONFIG, bullet_score_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_CONFIG, background_picture_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_CONFIG, player_lock_fish_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_CONFIG, player_cur_score_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_PlayerGunLevel, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_PlayerGunLevel, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_PlayerGunLevel, gun_level_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_PlayerGunLevel, gun_type_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_PlayerGunLevel, gun_level_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_PlayerGunLevel, gun_type_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_AddFish, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_AddFish, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_AddFish, load_fish_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_AddFish, load_fish_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_PlayerEnter, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_PlayerEnter, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_PlayerEnter, load_fish_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_PlayerEnter, load_fish_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::FishDeadInfo, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::FishDeadInfo, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::FishDeadInfo, id_),
-  PROTOBUF_FIELD_OFFSET(::FishDeadInfo, score_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::FishDeadInfo, id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::FishDeadInfo, score_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_FishDead, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_FishDead, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_FishDead, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_FishDead, fish_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_FishDead, score_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_FishDead, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_FishDead, fish_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_FishDead, score_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_PlayerShoot, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_PlayerShoot, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_S_PlayerShoot, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_PlayerShoot, x_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_PlayerShoot, y_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_PlayerShoot, level_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_PlayerShoot, type_),
-  PROTOBUF_FIELD_OFFSET(::CMD_S_PlayerShoot, player_cur_score_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_PlayerShoot, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_PlayerShoot, x_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_PlayerShoot, y_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_PlayerShoot, level_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_PlayerShoot, type_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_S_PlayerShoot, player_cur_score_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_C_RobotShoot, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_RobotShoot, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_C_RobotShoot, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_C_RobotShoot, level_),
-  PROTOBUF_FIELD_OFFSET(::CMD_C_RobotShoot, type_),
-  PROTOBUF_FIELD_OFFSET(::CMD_C_RobotShoot, is_lock_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_RobotShoot, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_RobotShoot, level_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_RobotShoot, type_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_RobotShoot, is_lock_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_C_PlayerLock, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_PlayerLock, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_C_PlayerLock, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_C_PlayerLock, fish_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_PlayerLock, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_PlayerLock, fish_id_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_C_JuBuZhaDan, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_JuBuZhaDan, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_C_JuBuZhaDan, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_C_JuBuZhaDan, te_shu_iu_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_C_JuBuZhaDan, fish_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_JuBuZhaDan, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_JuBuZhaDan, te_shu_iu_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_JuBuZhaDan, fish_id_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_C_TongLeiZhaDan, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_TongLeiZhaDan, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_C_TongLeiZhaDan, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_C_TongLeiZhaDan, te_shu_iu_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_C_TongLeiZhaDan, fish_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_TongLeiZhaDan, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_TongLeiZhaDan, te_shu_iu_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_TongLeiZhaDan, fish_id_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_C_ShuiHuZhuan, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_ShuiHuZhuan, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_C_ShuiHuZhuan, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_C_ShuiHuZhuan, te_shu_iu_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_C_ShuiHuZhuan, fish_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_ShuiHuZhuan, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_ShuiHuZhuan, te_shu_iu_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_ShuiHuZhuan, fish_id_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_C_ChangeBulletLevel, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_ChangeBulletLevel, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_C_ChangeBulletLevel, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_C_ChangeBulletLevel, gun_type_),
-  PROTOBUF_FIELD_OFFSET(::CMD_C_ChangeBulletLevel, gun_level_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_ChangeBulletLevel, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_ChangeBulletLevel, gun_type_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_ChangeBulletLevel, gun_level_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::Bullet, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::Bullet, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::Bullet, id_),
-  PROTOBUF_FIELD_OFFSET(::Bullet, bullet_kind_),
-  PROTOBUF_FIELD_OFFSET(::Bullet, is_use_),
-  PROTOBUF_FIELD_OFFSET(::Bullet, level_),
-  PROTOBUF_FIELD_OFFSET(::Bullet, type_),
-  PROTOBUF_FIELD_OFFSET(::Bullet, chips_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::Bullet, id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::Bullet, bullet_kind_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::Bullet, is_use_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::Bullet, level_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::Bullet, type_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::Bullet, chips_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_C_PressShoot, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_PressShoot, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_C_PressShoot, x_),
-  PROTOBUF_FIELD_OFFSET(::CMD_C_PressShoot, y_),
-  PROTOBUF_FIELD_OFFSET(::CMD_C_PressShoot, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_C_PressShoot, bullet_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_PressShoot, x_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_PressShoot, y_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_PressShoot, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_PressShoot, bullet_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_C_HitedFish, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_HitedFish, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_C_HitedFish, bullet_),
-  PROTOBUF_FIELD_OFFSET(::CMD_C_HitedFish, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::CMD_C_HitedFish, hit_fish_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_HitedFish, bullet_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_HitedFish, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::WPBY::CMD_C_HitedFish, hit_fish_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::CMD_S_RobotShoot)},
-  { 9, -1, sizeof(::CMD_S_RobotList)},
-  { 15, -1, sizeof(::CMD_S_PlayerLock)},
-  { 22, -1, sizeof(::FishPoint)},
-  { 29, -1, sizeof(::LineInfo)},
-  { 36, -1, sizeof(::FishLineInfo)},
-  { 47, -1, sizeof(::FishTide)},
-  { 57, -1, sizeof(::CMD_S_YuChaoCome)},
-  { 64, -1, sizeof(::CMD_S_ShootLK)},
-  { 73, -1, sizeof(::CMD_S_JuBuZhaDan)},
-  { 80, -1, sizeof(::CMD_S_YiWangDaJin)},
-  { 87, -1, sizeof(::CMD_S_TongLeiZhaDan)},
-  { 95, -1, sizeof(::LoadFish)},
-  { 107, -1, sizeof(::CMD_S_YuWang)},
-  { 116, -1, sizeof(::CMD_S_DaSiXi)},
-  { 124, -1, sizeof(::CMD_S_DaSanYuan)},
-  { 132, -1, sizeof(::CMD_S_ZhongYiTang)},
-  { 139, -1, sizeof(::CMD_S_ShuiHuZhuan)},
-  { 146, -1, sizeof(::CMD_S_ChangeBulletLevel)},
-  { 154, -1, sizeof(::CMD_S_CONFIG)},
-  { 163, -1, sizeof(::CMD_S_PlayerGunLevel)},
-  { 170, -1, sizeof(::CMD_S_AddFish)},
-  { 176, -1, sizeof(::CMD_S_PlayerEnter)},
-  { 182, -1, sizeof(::FishDeadInfo)},
-  { 189, -1, sizeof(::CMD_S_FishDead)},
-  { 197, -1, sizeof(::CMD_S_PlayerShoot)},
-  { 208, -1, sizeof(::CMD_C_RobotShoot)},
-  { 217, -1, sizeof(::CMD_C_PlayerLock)},
-  { 224, -1, sizeof(::CMD_C_JuBuZhaDan)},
-  { 232, -1, sizeof(::CMD_C_TongLeiZhaDan)},
-  { 240, -1, sizeof(::CMD_C_ShuiHuZhuan)},
-  { 248, -1, sizeof(::CMD_C_ChangeBulletLevel)},
-  { 256, -1, sizeof(::Bullet)},
-  { 267, -1, sizeof(::CMD_C_PressShoot)},
-  { 276, -1, sizeof(::CMD_C_HitedFish)},
+  { 0, -1, sizeof(::WPBY::CMD_S_RobotShoot)},
+  { 9, -1, sizeof(::WPBY::CMD_S_RobotList)},
+  { 15, -1, sizeof(::WPBY::CMD_S_PlayerLock)},
+  { 22, -1, sizeof(::WPBY::FishPoint)},
+  { 29, -1, sizeof(::WPBY::LineInfo)},
+  { 36, -1, sizeof(::WPBY::FishLineInfo)},
+  { 47, -1, sizeof(::WPBY::FishTide)},
+  { 57, -1, sizeof(::WPBY::CMD_S_YuChaoCome)},
+  { 64, -1, sizeof(::WPBY::CMD_S_ShootLK)},
+  { 73, -1, sizeof(::WPBY::CMD_S_JuBuZhaDan)},
+  { 80, -1, sizeof(::WPBY::CMD_S_YiWangDaJin)},
+  { 87, -1, sizeof(::WPBY::CMD_S_TongLeiZhaDan)},
+  { 95, -1, sizeof(::WPBY::LoadFish)},
+  { 107, -1, sizeof(::WPBY::CMD_S_YuWang)},
+  { 116, -1, sizeof(::WPBY::CMD_S_DaSiXi)},
+  { 124, -1, sizeof(::WPBY::CMD_S_DaSanYuan)},
+  { 132, -1, sizeof(::WPBY::CMD_S_ZhongYiTang)},
+  { 139, -1, sizeof(::WPBY::CMD_S_ShuiHuZhuan)},
+  { 146, -1, sizeof(::WPBY::CMD_S_ChangeBulletLevel)},
+  { 154, -1, sizeof(::WPBY::CMD_S_CONFIG)},
+  { 163, -1, sizeof(::WPBY::CMD_S_PlayerGunLevel)},
+  { 170, -1, sizeof(::WPBY::CMD_S_AddFish)},
+  { 176, -1, sizeof(::WPBY::CMD_S_PlayerEnter)},
+  { 182, -1, sizeof(::WPBY::FishDeadInfo)},
+  { 189, -1, sizeof(::WPBY::CMD_S_FishDead)},
+  { 197, -1, sizeof(::WPBY::CMD_S_PlayerShoot)},
+  { 208, -1, sizeof(::WPBY::CMD_C_RobotShoot)},
+  { 217, -1, sizeof(::WPBY::CMD_C_PlayerLock)},
+  { 224, -1, sizeof(::WPBY::CMD_C_JuBuZhaDan)},
+  { 232, -1, sizeof(::WPBY::CMD_C_TongLeiZhaDan)},
+  { 240, -1, sizeof(::WPBY::CMD_C_ShuiHuZhuan)},
+  { 248, -1, sizeof(::WPBY::CMD_C_ChangeBulletLevel)},
+  { 256, -1, sizeof(::WPBY::Bullet)},
+  { 267, -1, sizeof(::WPBY::CMD_C_PressShoot)},
+  { 276, -1, sizeof(::WPBY::CMD_C_HitedFish)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_RobotShoot_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_RobotList_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_PlayerLock_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_FishPoint_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_LineInfo_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_FishLineInfo_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_FishTide_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_YuChaoCome_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_ShootLK_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_JuBuZhaDan_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_YiWangDaJin_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_TongLeiZhaDan_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_LoadFish_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_YuWang_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_DaSiXi_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_DaSanYuan_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_ZhongYiTang_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_ShuiHuZhuan_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_ChangeBulletLevel_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_CONFIG_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_PlayerGunLevel_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_AddFish_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_PlayerEnter_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_FishDeadInfo_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_FishDead_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_S_PlayerShoot_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_C_RobotShoot_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_C_PlayerLock_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_C_JuBuZhaDan_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_C_TongLeiZhaDan_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_C_ShuiHuZhuan_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_C_ChangeBulletLevel_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_Bullet_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_C_PressShoot_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_C_HitedFish_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_CMD_S_RobotShoot_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_CMD_S_RobotList_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_CMD_S_PlayerLock_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_FishPoint_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_LineInfo_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_FishLineInfo_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_FishTide_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_CMD_S_YuChaoCome_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_CMD_S_ShootLK_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_CMD_S_JuBuZhaDan_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_CMD_S_YiWangDaJin_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_CMD_S_TongLeiZhaDan_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_LoadFish_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_CMD_S_YuWang_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_CMD_S_DaSiXi_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_CMD_S_DaSanYuan_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_CMD_S_ZhongYiTang_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_CMD_S_ShuiHuZhuan_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_CMD_S_ChangeBulletLevel_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_CMD_S_CONFIG_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_CMD_S_PlayerGunLevel_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_CMD_S_AddFish_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_CMD_S_PlayerEnter_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_FishDeadInfo_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_CMD_S_FishDead_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_CMD_S_PlayerShoot_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_CMD_C_RobotShoot_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_CMD_C_PlayerLock_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_CMD_C_JuBuZhaDan_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_CMD_C_TongLeiZhaDan_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_CMD_C_ShuiHuZhuan_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_CMD_C_ChangeBulletLevel_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_Bullet_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_CMD_C_PressShoot_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::WPBY::_CMD_C_HitedFish_default_instance_),
 };
 
 const char descriptor_table_protodef_WPBY_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\nWPBY.proto\"R\n\020CMD_S_RobotShoot\022\020\n\010chai"
-  "r_id\030\001 \001(\005\022\r\n\005level\030\002 \001(\005\022\014\n\004type\030\003 \001(\005\022"
-  "\017\n\007is_lock\030\004 \001(\005\"#\n\017CMD_S_RobotList\022\020\n\010i"
-  "s_robot\030\001 \003(\010\"5\n\020CMD_S_PlayerLock\022\020\n\010cha"
-  "ir_id\030\001 \001(\005\022\017\n\007fish_id\030\002 \001(\005\"!\n\tFishPoin"
-  "t\022\t\n\001x\030\001 \001(\005\022\t\n\001y\030\002 \001(\005\"4\n\010LineInfo\022\014\n\004t"
-  "ype\030\001 \001(\005\022\032\n\006points\030\002 \003(\0132\n.FishPoint\"\211\001"
-  "\n\014FishLineInfo\022\027\n\004line\030\001 \001(\0132\t.LineInfo\022"
-  "\014\n\004kind\030\002 \001(\005\022\030\n\020start_delay_time\030\003 \001(\005\022"
-  "\022\n\ndelay_time\030\004 \001(\005\022\020\n\010fish_num\030\005 \001(\005\022\022\n"
-  "\nlived_time\030\006 \001(\005\"\221\001\n\010FishTide\022\034\n\024fish_t"
-  "ide_start_time\030\001 \001(\003\022\032\n\022fish_tide_cur_ti"
-  "me\030\002 \001(\003\022\026\n\016fish_tide_turn\030\003 \001(\005\022\020\n\010line"
-  "_num\030\004 \001(\005\022!\n\nfish_lines\030\005 \003(\0132\r.FishLin"
-  "eInfo\"D\n\020CMD_S_YuChaoCome\022\022\n\nyu_chao_id\030"
-  "\001 \001(\005\022\034\n\tfish_tide\030\002 \001(\0132\t.FishTide\"N\n\rC"
-  "MD_S_ShootLK\022\020\n\010chair_id\030\001 \001(\005\022\n\n\002id\030\002 \001"
-  "(\005\022\r\n\005score\030\003 \001(\005\022\020\n\010multiple\030\004 \001(\005\"5\n\020C"
-  "MD_S_JuBuZhaDan\022\020\n\010chair_id\030\001 \001(\005\022\017\n\007fis"
-  "h_id\030\002 \001(\005\"8\n\021CMD_S_YiWangDaJin\022\020\n\010chair"
-  "_id\030\001 \001(\005\022\021\n\tbullet_id\030\002 \001(\005\"F\n\023CMD_S_To"
-  "ngLeiZhaDan\022\020\n\010chair_id\030\001 \001(\005\022\017\n\007fish_id"
-  "\030\002 \001(\005\022\014\n\004kind\030\003 \001(\005\"\217\001\n\010LoadFish\022\014\n\004kin"
-  "d\030\001 \001(\005\022\n\n\002id\030\002 \001(\005\022\023\n\013create_time\030\003 \001(\005"
-  "\022\025\n\rcontinue_time\030\004 \001(\005\022\036\n\nfish_point\030\005 "
-  "\003(\0132\n.FishPoint\022\020\n\010now_time\030\006 \001(\005\022\013\n\003mul"
-  "\030\007 \001(\005\"^\n\014CMD_S_YuWang\022\020\n\010chair_id\030\001 \001(\005"
-  "\022\014\n\004kind\030\002 \001(\005\022\022\n\nyu_wang_id\030\003 \001(\005\022\032\n\007fi"
-  "sh_id\030\004 \003(\0132\t.LoadFish\";\n\014CMD_S_DaSiXi\022\n"
-  "\n\002id\030\001 \001(\005\022\020\n\010chair_id\030\002 \001(\005\022\r\n\005score\030\003 "
-  "\001(\005\">\n\017CMD_S_DaSanYuan\022\n\n\002id\030\001 \001(\005\022\020\n\010ch"
-  "air_id\030\002 \001(\005\022\r\n\005score\030\003 \001(\005\"3\n\021CMD_S_Zho"
-  "ngYiTang\022\020\n\010chair_id\030\001 \001(\005\022\014\n\004time\030\002 \001(\005"
-  "\"6\n\021CMD_S_ShuiHuZhuan\022\020\n\010chair_id\030\001 \001(\005\022"
-  "\017\n\007fish_id\030\002 \001(\005\"P\n\027CMD_S_ChangeBulletLe"
-  "vel\022\020\n\010chair_id\030\001 \001(\005\022\020\n\010gun_type\030\002 \001(\005\022"
-  "\021\n\tgun_level\030\003 \001(\005\"z\n\014CMD_S_CONFIG\022\024\n\014bu"
-  "llet_score\030\001 \003(\005\022\035\n\025background_picture_i"
-  "d\030\002 \001(\005\022\033\n\023player_lock_fish_id\030\003 \003(\005\022\030\n\020"
-  "player_cur_score\030\004 \003(\003\";\n\024CMD_S_PlayerGu"
-  "nLevel\022\021\n\tgun_level\030\001 \003(\005\022\020\n\010gun_type\030\002 "
-  "\003(\005\"-\n\rCMD_S_AddFish\022\034\n\tload_fish\030\001 \003(\0132"
-  "\t.LoadFish\"1\n\021CMD_S_PlayerEnter\022\034\n\tload_"
-  "fish\030\001 \003(\0132\t.LoadFish\")\n\014FishDeadInfo\022\n\n"
-  "\002id\030\001 \001(\005\022\r\n\005score\030\002 \001(\005\"N\n\016CMD_S_FishDe"
-  "ad\022\020\n\010chair_id\030\001 \001(\005\022\033\n\004fish\030\002 \003(\0132\r.Fis"
-  "hDeadInfo\022\r\n\005score\030\003 \001(\003\"r\n\021CMD_S_Player"
-  "Shoot\022\020\n\010chair_id\030\001 \001(\005\022\t\n\001x\030\002 \001(\002\022\t\n\001y\030"
-  "\003 \001(\002\022\r\n\005level\030\004 \001(\005\022\014\n\004type\030\005 \001(\005\022\030\n\020pl"
-  "ayer_cur_score\030\006 \001(\003\"R\n\020CMD_C_RobotShoot"
-  "\022\020\n\010chair_id\030\001 \001(\005\022\r\n\005level\030\002 \001(\005\022\014\n\004typ"
-  "e\030\003 \001(\005\022\017\n\007is_lock\030\004 \001(\005\"5\n\020CMD_C_Player"
-  "Lock\022\020\n\010chair_id\030\001 \001(\005\022\017\n\007fish_id\030\002 \001(\005\""
-  "K\n\020CMD_C_JuBuZhaDan\022\020\n\010chair_id\030\001 \001(\005\022\024\n"
-  "\014te_shu_iu_id\030\002 \001(\005\022\017\n\007fish_id\030\003 \003(\005\"N\n\023"
-  "CMD_C_TongLeiZhaDan\022\020\n\010chair_id\030\001 \001(\005\022\024\n"
-  "\014te_shu_iu_id\030\002 \001(\005\022\017\n\007fish_id\030\003 \003(\005\"L\n\021"
-  "CMD_C_ShuiHuZhuan\022\020\n\010chair_id\030\001 \001(\005\022\024\n\014t"
-  "e_shu_iu_id\030\002 \001(\005\022\017\n\007fish_id\030\003 \003(\005\"P\n\027CM"
-  "D_C_ChangeBulletLevel\022\020\n\010chair_id\030\001 \001(\005\022"
-  "\020\n\010gun_type\030\002 \001(\005\022\021\n\tgun_level\030\003 \001(\005\"e\n\006"
-  "Bullet\022\n\n\002id\030\001 \001(\005\022\023\n\013bullet_kind\030\002 \001(\005\022"
-  "\016\n\006is_use\030\003 \001(\005\022\r\n\005level\030\004 \001(\005\022\014\n\004type\030\005"
-  " \001(\005\022\r\n\005chips\030\006 \001(\005\"S\n\020CMD_C_PressShoot\022"
-  "\t\n\001x\030\001 \001(\002\022\t\n\001y\030\002 \001(\002\022\020\n\010chair_id\030\003 \001(\005\022"
-  "\027\n\006bullet\030\004 \001(\0132\007.Bullet\"N\n\017CMD_C_HitedF"
-  "ish\022\027\n\006bullet\030\001 \001(\0132\007.Bullet\022\020\n\010chair_id"
-  "\030\002 \001(\005\022\020\n\010hit_fish\030\003 \003(\005*\364\007\n\rEMsgIDSubGa"
-  "me\022\025\n\021MsgIDSubGame_Null\020\000\022\024\n\016SUB_S_CanSh"
-  "oot\020\350\376\002\022\025\n\017SUB_S_CantShoot\020\351\376\002\022\026\n\020SUB_C_"
-  "RobotShoot\020\352\376\002\022\026\n\020SUB_S_GAME_START\020\321\206\003\022\024"
-  "\n\016SUB_S_ADD_FISH\020\322\206\003\022\025\n\017SUB_S_FISH_DEAD\020"
-  "\323\206\003\022\030\n\022SUB_S_PLAYER_SHOOT\020\324\206\003\022\022\n\014SUB_S_C"
-  "ONFIG\020\325\206\003\022\035\n\027SUB_S_CHANGEBULLETLEVEL\020\326\206\003"
-  "\022\027\n\021SUB_S_SHUIHUZHUAN\020\327\206\003\022\027\n\021SUB_S_ZHONG"
-  "YITANG\020\330\206\003\022\025\n\017SUB_S_DASANYUAN\020\331\206\003\022\022\n\014SUB"
-  "_S_DASIXI\020\332\206\003\022\022\n\014SUB_S_YUWANG\020\333\206\003\022\031\n\023SUB"
-  "_S_TONGLEIZHADAN\020\334\206\003\022\027\n\021SUB_S_YIWANGDAJI"
-  "N\020\335\206\003\022\026\n\020SUB_S_JUBUZHADAN\020\336\206\003\022\030\n\022SUB_S_P"
-  "LAYER_ENTER\020\337\206\003\022\024\n\016SUB_S_SHOOT_LK\020\340\206\003\022\026\n"
-  "\020SUB_S_YUCHAOCOME\020\341\206\003\022\025\n\017SUB_S_YUCHAOPRE"
-  "\020\342\206\003\022\032\n\024SUB_S_PLAYERGUNLEVEL\020\343\206\003\022\026\n\020SUB_"
-  "S_PlayerLock\020\344\206\003\022\034\n\026SUB_S_PlayerCancelLo"
-  "ck\020\345\206\003\022\025\n\017SUB_S_RobotCome\020\346\206\003\022\025\n\017SUB_S_R"
-  "obotList\020\347\206\003\022\026\n\020SUB_S_RobotShoot\020\350\206\003\022\037\n\031"
-  "SUB_S_RobotMoneyNotEnough\020\351\206\003\022\033\n\025SUB_S_P"
-  "LAYER_YC_ENTER\020\352\206\003\022\035\n\027SUB_S_CHECK_ROBOT_"
-  "LEAVE\020\353\206\003\022\027\n\021SUB_C_PRESS_SHOOT\020\264\207\003\022\026\n\020SU"
-  "B_C_HITED_FISH\020\265\207\003\022\035\n\027SUB_C_CHANGEBULLET"
-  "LEVEL\020\266\207\003\022\027\n\021SUB_C_SHUIHUZHUAN\020\267\207\003\022\022\n\014SU"
-  "B_C_YUWANG\020\270\207\003\022\031\n\023SUB_C_TONGLEIZHADAN\020\271\207"
-  "\003\022\026\n\020SUB_C_JUBUZHADAN\020\272\207\003\022\026\n\020SUB_C_Playe"
-  "rLock\020\273\207\003\022\034\n\026SUB_C_PlayerCancelLock\020\274\207\003b"
-  "\006proto3"
+  "\n\nWPBY.proto\022\004WPBY\"R\n\020CMD_S_RobotShoot\022\020"
+  "\n\010chair_id\030\001 \001(\005\022\r\n\005level\030\002 \001(\005\022\014\n\004type\030"
+  "\003 \001(\005\022\017\n\007is_lock\030\004 \001(\005\"#\n\017CMD_S_RobotLis"
+  "t\022\020\n\010is_robot\030\001 \003(\010\"5\n\020CMD_S_PlayerLock\022"
+  "\020\n\010chair_id\030\001 \001(\005\022\017\n\007fish_id\030\002 \001(\005\"!\n\tFi"
+  "shPoint\022\t\n\001x\030\001 \001(\005\022\t\n\001y\030\002 \001(\005\"9\n\010LineInf"
+  "o\022\014\n\004type\030\001 \001(\005\022\037\n\006points\030\002 \003(\0132\017.WPBY.F"
+  "ishPoint\"\216\001\n\014FishLineInfo\022\034\n\004line\030\001 \001(\0132"
+  "\016.WPBY.LineInfo\022\014\n\004kind\030\002 \001(\005\022\030\n\020start_d"
+  "elay_time\030\003 \001(\005\022\022\n\ndelay_time\030\004 \001(\005\022\020\n\010f"
+  "ish_num\030\005 \001(\005\022\022\n\nlived_time\030\006 \001(\005\"\226\001\n\010Fi"
+  "shTide\022\034\n\024fish_tide_start_time\030\001 \001(\003\022\032\n\022"
+  "fish_tide_cur_time\030\002 \001(\003\022\026\n\016fish_tide_tu"
+  "rn\030\003 \001(\005\022\020\n\010line_num\030\004 \001(\005\022&\n\nfish_lines"
+  "\030\005 \003(\0132\022.WPBY.FishLineInfo\"I\n\020CMD_S_YuCh"
+  "aoCome\022\022\n\nyu_chao_id\030\001 \001(\005\022!\n\tfish_tide\030"
+  "\002 \001(\0132\016.WPBY.FishTide\"N\n\rCMD_S_ShootLK\022\020"
+  "\n\010chair_id\030\001 \001(\005\022\n\n\002id\030\002 \001(\005\022\r\n\005score\030\003 "
+  "\001(\005\022\020\n\010multiple\030\004 \001(\005\"5\n\020CMD_S_JuBuZhaDa"
+  "n\022\020\n\010chair_id\030\001 \001(\005\022\017\n\007fish_id\030\002 \001(\005\"8\n\021"
+  "CMD_S_YiWangDaJin\022\020\n\010chair_id\030\001 \001(\005\022\021\n\tb"
+  "ullet_id\030\002 \001(\005\"F\n\023CMD_S_TongLeiZhaDan\022\020\n"
+  "\010chair_id\030\001 \001(\005\022\017\n\007fish_id\030\002 \001(\005\022\014\n\004kind"
+  "\030\003 \001(\005\"\224\001\n\010LoadFish\022\014\n\004kind\030\001 \001(\005\022\n\n\002id\030"
+  "\002 \001(\005\022\023\n\013create_time\030\003 \001(\005\022\025\n\rcontinue_t"
+  "ime\030\004 \001(\005\022#\n\nfish_point\030\005 \003(\0132\017.WPBY.Fis"
+  "hPoint\022\020\n\010now_time\030\006 \001(\005\022\013\n\003mul\030\007 \001(\005\"c\n"
+  "\014CMD_S_YuWang\022\020\n\010chair_id\030\001 \001(\005\022\014\n\004kind\030"
+  "\002 \001(\005\022\022\n\nyu_wang_id\030\003 \001(\005\022\037\n\007fish_id\030\004 \003"
+  "(\0132\016.WPBY.LoadFish\";\n\014CMD_S_DaSiXi\022\n\n\002id"
+  "\030\001 \001(\005\022\020\n\010chair_id\030\002 \001(\005\022\r\n\005score\030\003 \001(\005\""
+  ">\n\017CMD_S_DaSanYuan\022\n\n\002id\030\001 \001(\005\022\020\n\010chair_"
+  "id\030\002 \001(\005\022\r\n\005score\030\003 \001(\005\"3\n\021CMD_S_ZhongYi"
+  "Tang\022\020\n\010chair_id\030\001 \001(\005\022\014\n\004time\030\002 \001(\005\"6\n\021"
+  "CMD_S_ShuiHuZhuan\022\020\n\010chair_id\030\001 \001(\005\022\017\n\007f"
+  "ish_id\030\002 \001(\005\"P\n\027CMD_S_ChangeBulletLevel\022"
+  "\020\n\010chair_id\030\001 \001(\005\022\020\n\010gun_type\030\002 \001(\005\022\021\n\tg"
+  "un_level\030\003 \001(\005\"z\n\014CMD_S_CONFIG\022\024\n\014bullet"
+  "_score\030\001 \003(\005\022\035\n\025background_picture_id\030\002 "
+  "\001(\005\022\033\n\023player_lock_fish_id\030\003 \003(\005\022\030\n\020play"
+  "er_cur_score\030\004 \003(\003\";\n\024CMD_S_PlayerGunLev"
+  "el\022\021\n\tgun_level\030\001 \003(\005\022\020\n\010gun_type\030\002 \003(\005\""
+  "2\n\rCMD_S_AddFish\022!\n\tload_fish\030\001 \003(\0132\016.WP"
+  "BY.LoadFish\"6\n\021CMD_S_PlayerEnter\022!\n\tload"
+  "_fish\030\001 \003(\0132\016.WPBY.LoadFish\")\n\014FishDeadI"
+  "nfo\022\n\n\002id\030\001 \001(\005\022\r\n\005score\030\002 \001(\005\"S\n\016CMD_S_"
+  "FishDead\022\020\n\010chair_id\030\001 \001(\005\022 \n\004fish\030\002 \003(\013"
+  "2\022.WPBY.FishDeadInfo\022\r\n\005score\030\003 \001(\003\"r\n\021C"
+  "MD_S_PlayerShoot\022\020\n\010chair_id\030\001 \001(\005\022\t\n\001x\030"
+  "\002 \001(\002\022\t\n\001y\030\003 \001(\002\022\r\n\005level\030\004 \001(\005\022\014\n\004type\030"
+  "\005 \001(\005\022\030\n\020player_cur_score\030\006 \001(\003\"R\n\020CMD_C"
+  "_RobotShoot\022\020\n\010chair_id\030\001 \001(\005\022\r\n\005level\030\002"
+  " \001(\005\022\014\n\004type\030\003 \001(\005\022\017\n\007is_lock\030\004 \001(\005\"5\n\020C"
+  "MD_C_PlayerLock\022\020\n\010chair_id\030\001 \001(\005\022\017\n\007fis"
+  "h_id\030\002 \001(\005\"K\n\020CMD_C_JuBuZhaDan\022\020\n\010chair_"
+  "id\030\001 \001(\005\022\024\n\014te_shu_iu_id\030\002 \001(\005\022\017\n\007fish_i"
+  "d\030\003 \003(\005\"N\n\023CMD_C_TongLeiZhaDan\022\020\n\010chair_"
+  "id\030\001 \001(\005\022\024\n\014te_shu_iu_id\030\002 \001(\005\022\017\n\007fish_i"
+  "d\030\003 \003(\005\"L\n\021CMD_C_ShuiHuZhuan\022\020\n\010chair_id"
+  "\030\001 \001(\005\022\024\n\014te_shu_iu_id\030\002 \001(\005\022\017\n\007fish_id\030"
+  "\003 \003(\005\"P\n\027CMD_C_ChangeBulletLevel\022\020\n\010chai"
+  "r_id\030\001 \001(\005\022\020\n\010gun_type\030\002 \001(\005\022\021\n\tgun_leve"
+  "l\030\003 \001(\005\"e\n\006Bullet\022\n\n\002id\030\001 \001(\005\022\023\n\013bullet_"
+  "kind\030\002 \001(\005\022\016\n\006is_use\030\003 \001(\005\022\r\n\005level\030\004 \001("
+  "\005\022\014\n\004type\030\005 \001(\005\022\r\n\005chips\030\006 \001(\005\"X\n\020CMD_C_"
+  "PressShoot\022\t\n\001x\030\001 \001(\002\022\t\n\001y\030\002 \001(\002\022\020\n\010chai"
+  "r_id\030\003 \001(\005\022\034\n\006bullet\030\004 \001(\0132\014.WPBY.Bullet"
+  "\"S\n\017CMD_C_HitedFish\022\034\n\006bullet\030\001 \001(\0132\014.WP"
+  "BY.Bullet\022\020\n\010chair_id\030\002 \001(\005\022\020\n\010hit_fish\030"
+  "\003 \003(\005*\364\007\n\rEMsgIDSubGame\022\025\n\021MsgIDSubGame_"
+  "Null\020\000\022\024\n\016SUB_S_CanShoot\020\350\376\002\022\025\n\017SUB_S_Ca"
+  "ntShoot\020\351\376\002\022\026\n\020SUB_C_RobotShoot\020\352\376\002\022\026\n\020S"
+  "UB_S_GAME_START\020\321\206\003\022\024\n\016SUB_S_ADD_FISH\020\322\206"
+  "\003\022\025\n\017SUB_S_FISH_DEAD\020\323\206\003\022\030\n\022SUB_S_PLAYER"
+  "_SHOOT\020\324\206\003\022\022\n\014SUB_S_CONFIG\020\325\206\003\022\035\n\027SUB_S_"
+  "CHANGEBULLETLEVEL\020\326\206\003\022\027\n\021SUB_S_SHUIHUZHU"
+  "AN\020\327\206\003\022\027\n\021SUB_S_ZHONGYITANG\020\330\206\003\022\025\n\017SUB_S"
+  "_DASANYUAN\020\331\206\003\022\022\n\014SUB_S_DASIXI\020\332\206\003\022\022\n\014SU"
+  "B_S_YUWANG\020\333\206\003\022\031\n\023SUB_S_TONGLEIZHADAN\020\334\206"
+  "\003\022\027\n\021SUB_S_YIWANGDAJIN\020\335\206\003\022\026\n\020SUB_S_JUBU"
+  "ZHADAN\020\336\206\003\022\030\n\022SUB_S_PLAYER_ENTER\020\337\206\003\022\024\n\016"
+  "SUB_S_SHOOT_LK\020\340\206\003\022\026\n\020SUB_S_YUCHAOCOME\020\341"
+  "\206\003\022\025\n\017SUB_S_YUCHAOPRE\020\342\206\003\022\032\n\024SUB_S_PLAYE"
+  "RGUNLEVEL\020\343\206\003\022\026\n\020SUB_S_PlayerLock\020\344\206\003\022\034\n"
+  "\026SUB_S_PlayerCancelLock\020\345\206\003\022\025\n\017SUB_S_Rob"
+  "otCome\020\346\206\003\022\025\n\017SUB_S_RobotList\020\347\206\003\022\026\n\020SUB"
+  "_S_RobotShoot\020\350\206\003\022\037\n\031SUB_S_RobotMoneyNot"
+  "Enough\020\351\206\003\022\033\n\025SUB_S_PLAYER_YC_ENTER\020\352\206\003\022"
+  "\035\n\027SUB_S_CHECK_ROBOT_LEAVE\020\353\206\003\022\027\n\021SUB_C_"
+  "PRESS_SHOOT\020\264\207\003\022\026\n\020SUB_C_HITED_FISH\020\265\207\003\022"
+  "\035\n\027SUB_C_CHANGEBULLETLEVEL\020\266\207\003\022\027\n\021SUB_C_"
+  "SHUIHUZHUAN\020\267\207\003\022\022\n\014SUB_C_YUWANG\020\270\207\003\022\031\n\023S"
+  "UB_C_TONGLEIZHADAN\020\271\207\003\022\026\n\020SUB_C_JUBUZHAD"
+  "AN\020\272\207\003\022\026\n\020SUB_C_PlayerLock\020\273\207\003\022\034\n\026SUB_C_"
+  "PlayerCancelLock\020\274\207\003b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_WPBY_2eproto_deps[1] = {
 };
@@ -1130,7 +1133,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_WPB
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_WPBY_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_WPBY_2eproto = {
-  false, false, descriptor_table_protodef_WPBY_2eproto, "WPBY.proto", 3727,
+  false, false, descriptor_table_protodef_WPBY_2eproto, "WPBY.proto", 3788,
   &descriptor_table_WPBY_2eproto_once, descriptor_table_WPBY_2eproto_sccs, descriptor_table_WPBY_2eproto_deps, 35, 0,
   schemas, file_default_instances, TableStruct_WPBY_2eproto::offsets,
   file_level_metadata_WPBY_2eproto, 35, file_level_enum_descriptors_WPBY_2eproto, file_level_service_descriptors_WPBY_2eproto,
@@ -1138,6 +1141,7 @@ const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_WPBY_2
 
 // Force running AddDescriptors() at dynamic initialization time.
 static bool dynamic_init_dummy_WPBY_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_WPBY_2eproto)), true);
+namespace WPBY {
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDSubGame_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_WPBY_2eproto);
   return file_level_enum_descriptors_WPBY_2eproto[0];
@@ -1201,7 +1205,7 @@ CMD_S_RobotShoot::CMD_S_RobotShoot(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_S_RobotShoot)
+  // @@protoc_insertion_point(arena_constructor:WPBY.CMD_S_RobotShoot)
 }
 CMD_S_RobotShoot::CMD_S_RobotShoot(const CMD_S_RobotShoot& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -1209,7 +1213,7 @@ CMD_S_RobotShoot::CMD_S_RobotShoot(const CMD_S_RobotShoot& from)
   ::memcpy(&chair_id_, &from.chair_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&is_lock_) -
     reinterpret_cast<char*>(&chair_id_)) + sizeof(is_lock_));
-  // @@protoc_insertion_point(copy_constructor:CMD_S_RobotShoot)
+  // @@protoc_insertion_point(copy_constructor:WPBY.CMD_S_RobotShoot)
 }
 
 void CMD_S_RobotShoot::SharedCtor() {
@@ -1220,7 +1224,7 @@ void CMD_S_RobotShoot::SharedCtor() {
 }
 
 CMD_S_RobotShoot::~CMD_S_RobotShoot() {
-  // @@protoc_insertion_point(destructor:CMD_S_RobotShoot)
+  // @@protoc_insertion_point(destructor:WPBY.CMD_S_RobotShoot)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -1245,7 +1249,7 @@ const CMD_S_RobotShoot& CMD_S_RobotShoot::default_instance() {
 
 
 void CMD_S_RobotShoot::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_S_RobotShoot)
+// @@protoc_insertion_point(message_clear_start:WPBY.CMD_S_RobotShoot)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1315,7 +1319,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* CMD_S_RobotShoot::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_S_RobotShoot)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.CMD_S_RobotShoot)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1347,12 +1351,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_S_RobotShoot)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.CMD_S_RobotShoot)
   return target;
 }
 
 size_t CMD_S_RobotShoot::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_S_RobotShoot)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.CMD_S_RobotShoot)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1397,22 +1401,22 @@ size_t CMD_S_RobotShoot::ByteSizeLong() const {
 }
 
 void CMD_S_RobotShoot::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_S_RobotShoot)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.CMD_S_RobotShoot)
   GOOGLE_DCHECK_NE(&from, this);
   const CMD_S_RobotShoot* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_S_RobotShoot>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_S_RobotShoot)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.CMD_S_RobotShoot)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_S_RobotShoot)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.CMD_S_RobotShoot)
     MergeFrom(*source);
   }
 }
 
 void CMD_S_RobotShoot::MergeFrom(const CMD_S_RobotShoot& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_S_RobotShoot)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.CMD_S_RobotShoot)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1433,14 +1437,14 @@ void CMD_S_RobotShoot::MergeFrom(const CMD_S_RobotShoot& from) {
 }
 
 void CMD_S_RobotShoot::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_S_RobotShoot)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.CMD_S_RobotShoot)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CMD_S_RobotShoot::CopyFrom(const CMD_S_RobotShoot& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_S_RobotShoot)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.CMD_S_RobotShoot)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1477,20 +1481,20 @@ CMD_S_RobotList::CMD_S_RobotList(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   is_robot_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_S_RobotList)
+  // @@protoc_insertion_point(arena_constructor:WPBY.CMD_S_RobotList)
 }
 CMD_S_RobotList::CMD_S_RobotList(const CMD_S_RobotList& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       is_robot_(from.is_robot_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:CMD_S_RobotList)
+  // @@protoc_insertion_point(copy_constructor:WPBY.CMD_S_RobotList)
 }
 
 void CMD_S_RobotList::SharedCtor() {
 }
 
 CMD_S_RobotList::~CMD_S_RobotList() {
-  // @@protoc_insertion_point(destructor:CMD_S_RobotList)
+  // @@protoc_insertion_point(destructor:WPBY.CMD_S_RobotList)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -1515,7 +1519,7 @@ const CMD_S_RobotList& CMD_S_RobotList::default_instance() {
 
 
 void CMD_S_RobotList::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_S_RobotList)
+// @@protoc_insertion_point(message_clear_start:WPBY.CMD_S_RobotList)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1565,7 +1569,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* CMD_S_RobotList::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_S_RobotList)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.CMD_S_RobotList)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1578,12 +1582,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_S_RobotList)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.CMD_S_RobotList)
   return target;
 }
 
 size_t CMD_S_RobotList::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_S_RobotList)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.CMD_S_RobotList)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1615,22 +1619,22 @@ size_t CMD_S_RobotList::ByteSizeLong() const {
 }
 
 void CMD_S_RobotList::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_S_RobotList)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.CMD_S_RobotList)
   GOOGLE_DCHECK_NE(&from, this);
   const CMD_S_RobotList* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_S_RobotList>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_S_RobotList)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.CMD_S_RobotList)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_S_RobotList)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.CMD_S_RobotList)
     MergeFrom(*source);
   }
 }
 
 void CMD_S_RobotList::MergeFrom(const CMD_S_RobotList& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_S_RobotList)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.CMD_S_RobotList)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1640,14 +1644,14 @@ void CMD_S_RobotList::MergeFrom(const CMD_S_RobotList& from) {
 }
 
 void CMD_S_RobotList::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_S_RobotList)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.CMD_S_RobotList)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CMD_S_RobotList::CopyFrom(const CMD_S_RobotList& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_S_RobotList)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.CMD_S_RobotList)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1678,7 +1682,7 @@ CMD_S_PlayerLock::CMD_S_PlayerLock(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_S_PlayerLock)
+  // @@protoc_insertion_point(arena_constructor:WPBY.CMD_S_PlayerLock)
 }
 CMD_S_PlayerLock::CMD_S_PlayerLock(const CMD_S_PlayerLock& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -1686,7 +1690,7 @@ CMD_S_PlayerLock::CMD_S_PlayerLock(const CMD_S_PlayerLock& from)
   ::memcpy(&chair_id_, &from.chair_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&fish_id_) -
     reinterpret_cast<char*>(&chair_id_)) + sizeof(fish_id_));
-  // @@protoc_insertion_point(copy_constructor:CMD_S_PlayerLock)
+  // @@protoc_insertion_point(copy_constructor:WPBY.CMD_S_PlayerLock)
 }
 
 void CMD_S_PlayerLock::SharedCtor() {
@@ -1697,7 +1701,7 @@ void CMD_S_PlayerLock::SharedCtor() {
 }
 
 CMD_S_PlayerLock::~CMD_S_PlayerLock() {
-  // @@protoc_insertion_point(destructor:CMD_S_PlayerLock)
+  // @@protoc_insertion_point(destructor:WPBY.CMD_S_PlayerLock)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -1722,7 +1726,7 @@ const CMD_S_PlayerLock& CMD_S_PlayerLock::default_instance() {
 
 
 void CMD_S_PlayerLock::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_S_PlayerLock)
+// @@protoc_insertion_point(message_clear_start:WPBY.CMD_S_PlayerLock)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1778,7 +1782,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* CMD_S_PlayerLock::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_S_PlayerLock)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.CMD_S_PlayerLock)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1798,12 +1802,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_S_PlayerLock)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.CMD_S_PlayerLock)
   return target;
 }
 
 size_t CMD_S_PlayerLock::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_S_PlayerLock)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.CMD_S_PlayerLock)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1834,22 +1838,22 @@ size_t CMD_S_PlayerLock::ByteSizeLong() const {
 }
 
 void CMD_S_PlayerLock::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_S_PlayerLock)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.CMD_S_PlayerLock)
   GOOGLE_DCHECK_NE(&from, this);
   const CMD_S_PlayerLock* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_S_PlayerLock>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_S_PlayerLock)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.CMD_S_PlayerLock)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_S_PlayerLock)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.CMD_S_PlayerLock)
     MergeFrom(*source);
   }
 }
 
 void CMD_S_PlayerLock::MergeFrom(const CMD_S_PlayerLock& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_S_PlayerLock)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.CMD_S_PlayerLock)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1864,14 +1868,14 @@ void CMD_S_PlayerLock::MergeFrom(const CMD_S_PlayerLock& from) {
 }
 
 void CMD_S_PlayerLock::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_S_PlayerLock)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.CMD_S_PlayerLock)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CMD_S_PlayerLock::CopyFrom(const CMD_S_PlayerLock& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_S_PlayerLock)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.CMD_S_PlayerLock)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1907,7 +1911,7 @@ FishPoint::FishPoint(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:FishPoint)
+  // @@protoc_insertion_point(arena_constructor:WPBY.FishPoint)
 }
 FishPoint::FishPoint(const FishPoint& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -1915,7 +1919,7 @@ FishPoint::FishPoint(const FishPoint& from)
   ::memcpy(&x_, &from.x_,
     static_cast<size_t>(reinterpret_cast<char*>(&y_) -
     reinterpret_cast<char*>(&x_)) + sizeof(y_));
-  // @@protoc_insertion_point(copy_constructor:FishPoint)
+  // @@protoc_insertion_point(copy_constructor:WPBY.FishPoint)
 }
 
 void FishPoint::SharedCtor() {
@@ -1926,7 +1930,7 @@ void FishPoint::SharedCtor() {
 }
 
 FishPoint::~FishPoint() {
-  // @@protoc_insertion_point(destructor:FishPoint)
+  // @@protoc_insertion_point(destructor:WPBY.FishPoint)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -1951,7 +1955,7 @@ const FishPoint& FishPoint::default_instance() {
 
 
 void FishPoint::Clear() {
-// @@protoc_insertion_point(message_clear_start:FishPoint)
+// @@protoc_insertion_point(message_clear_start:WPBY.FishPoint)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -2007,7 +2011,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* FishPoint::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:FishPoint)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.FishPoint)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -2027,12 +2031,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:FishPoint)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.FishPoint)
   return target;
 }
 
 size_t FishPoint::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:FishPoint)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.FishPoint)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -2063,22 +2067,22 @@ size_t FishPoint::ByteSizeLong() const {
 }
 
 void FishPoint::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:FishPoint)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.FishPoint)
   GOOGLE_DCHECK_NE(&from, this);
   const FishPoint* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<FishPoint>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:FishPoint)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.FishPoint)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:FishPoint)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.FishPoint)
     MergeFrom(*source);
   }
 }
 
 void FishPoint::MergeFrom(const FishPoint& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:FishPoint)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.FishPoint)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -2093,14 +2097,14 @@ void FishPoint::MergeFrom(const FishPoint& from) {
 }
 
 void FishPoint::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:FishPoint)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.FishPoint)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void FishPoint::CopyFrom(const FishPoint& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:FishPoint)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.FishPoint)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -2137,14 +2141,14 @@ LineInfo::LineInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   points_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:LineInfo)
+  // @@protoc_insertion_point(arena_constructor:WPBY.LineInfo)
 }
 LineInfo::LineInfo(const LineInfo& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       points_(from.points_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   type_ = from.type_;
-  // @@protoc_insertion_point(copy_constructor:LineInfo)
+  // @@protoc_insertion_point(copy_constructor:WPBY.LineInfo)
 }
 
 void LineInfo::SharedCtor() {
@@ -2153,7 +2157,7 @@ void LineInfo::SharedCtor() {
 }
 
 LineInfo::~LineInfo() {
-  // @@protoc_insertion_point(destructor:LineInfo)
+  // @@protoc_insertion_point(destructor:WPBY.LineInfo)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -2178,7 +2182,7 @@ const LineInfo& LineInfo::default_instance() {
 
 
 void LineInfo::Clear() {
-// @@protoc_insertion_point(message_clear_start:LineInfo)
+// @@protoc_insertion_point(message_clear_start:WPBY.LineInfo)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -2202,7 +2206,7 @@ const char* LineInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::i
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated .FishPoint points = 2;
+      // repeated .WPBY.FishPoint points = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr -= 1;
@@ -2238,7 +2242,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* LineInfo::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:LineInfo)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.LineInfo)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -2248,7 +2252,7 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_type(), target);
   }
 
-  // repeated .FishPoint points = 2;
+  // repeated .WPBY.FishPoint points = 2;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_points_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
@@ -2260,19 +2264,19 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:LineInfo)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.LineInfo)
   return target;
 }
 
 size_t LineInfo::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:LineInfo)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.LineInfo)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .FishPoint points = 2;
+  // repeated .WPBY.FishPoint points = 2;
   total_size += 1UL * this->_internal_points_size();
   for (const auto& msg : this->points_) {
     total_size +=
@@ -2296,22 +2300,22 @@ size_t LineInfo::ByteSizeLong() const {
 }
 
 void LineInfo::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:LineInfo)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.LineInfo)
   GOOGLE_DCHECK_NE(&from, this);
   const LineInfo* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<LineInfo>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:LineInfo)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.LineInfo)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:LineInfo)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.LineInfo)
     MergeFrom(*source);
   }
 }
 
 void LineInfo::MergeFrom(const LineInfo& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:LineInfo)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.LineInfo)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -2324,14 +2328,14 @@ void LineInfo::MergeFrom(const LineInfo& from) {
 }
 
 void LineInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:LineInfo)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.LineInfo)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void LineInfo::CopyFrom(const LineInfo& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:LineInfo)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.LineInfo)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -2357,10 +2361,10 @@ void LineInfo::InternalSwap(LineInfo* other) {
 
 class FishLineInfo::_Internal {
  public:
-  static const ::LineInfo& line(const FishLineInfo* msg);
+  static const ::WPBY::LineInfo& line(const FishLineInfo* msg);
 };
 
-const ::LineInfo&
+const ::WPBY::LineInfo&
 FishLineInfo::_Internal::line(const FishLineInfo* msg) {
   return *msg->line_;
 }
@@ -2368,20 +2372,20 @@ FishLineInfo::FishLineInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:FishLineInfo)
+  // @@protoc_insertion_point(arena_constructor:WPBY.FishLineInfo)
 }
 FishLineInfo::FishLineInfo(const FishLineInfo& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_line()) {
-    line_ = new ::LineInfo(*from.line_);
+    line_ = new ::WPBY::LineInfo(*from.line_);
   } else {
     line_ = nullptr;
   }
   ::memcpy(&kind_, &from.kind_,
     static_cast<size_t>(reinterpret_cast<char*>(&lived_time_) -
     reinterpret_cast<char*>(&kind_)) + sizeof(lived_time_));
-  // @@protoc_insertion_point(copy_constructor:FishLineInfo)
+  // @@protoc_insertion_point(copy_constructor:WPBY.FishLineInfo)
 }
 
 void FishLineInfo::SharedCtor() {
@@ -2393,7 +2397,7 @@ void FishLineInfo::SharedCtor() {
 }
 
 FishLineInfo::~FishLineInfo() {
-  // @@protoc_insertion_point(destructor:FishLineInfo)
+  // @@protoc_insertion_point(destructor:WPBY.FishLineInfo)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -2419,7 +2423,7 @@ const FishLineInfo& FishLineInfo::default_instance() {
 
 
 void FishLineInfo::Clear() {
-// @@protoc_insertion_point(message_clear_start:FishLineInfo)
+// @@protoc_insertion_point(message_clear_start:WPBY.FishLineInfo)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -2441,7 +2445,7 @@ const char* FishLineInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // .LineInfo line = 1;
+      // .WPBY.LineInfo line = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_line(), ptr);
@@ -2507,11 +2511,11 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* FishLineInfo::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:FishLineInfo)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.FishLineInfo)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .LineInfo line = 1;
+  // .WPBY.LineInfo line = 1;
   if (this->has_line()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
@@ -2553,19 +2557,19 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:FishLineInfo)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.FishLineInfo)
   return target;
 }
 
 size_t FishLineInfo::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:FishLineInfo)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.FishLineInfo)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .LineInfo line = 1;
+  // .WPBY.LineInfo line = 1;
   if (this->has_line()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
@@ -2617,29 +2621,29 @@ size_t FishLineInfo::ByteSizeLong() const {
 }
 
 void FishLineInfo::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:FishLineInfo)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.FishLineInfo)
   GOOGLE_DCHECK_NE(&from, this);
   const FishLineInfo* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<FishLineInfo>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:FishLineInfo)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.FishLineInfo)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:FishLineInfo)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.FishLineInfo)
     MergeFrom(*source);
   }
 }
 
 void FishLineInfo::MergeFrom(const FishLineInfo& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:FishLineInfo)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.FishLineInfo)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.has_line()) {
-    _internal_mutable_line()->::LineInfo::MergeFrom(from._internal_line());
+    _internal_mutable_line()->::WPBY::LineInfo::MergeFrom(from._internal_line());
   }
   if (from.kind() != 0) {
     _internal_set_kind(from._internal_kind());
@@ -2659,14 +2663,14 @@ void FishLineInfo::MergeFrom(const FishLineInfo& from) {
 }
 
 void FishLineInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:FishLineInfo)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.FishLineInfo)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void FishLineInfo::CopyFrom(const FishLineInfo& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:FishLineInfo)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.FishLineInfo)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -2703,7 +2707,7 @@ FishTide::FishTide(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   fish_lines_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:FishTide)
+  // @@protoc_insertion_point(arena_constructor:WPBY.FishTide)
 }
 FishTide::FishTide(const FishTide& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
@@ -2712,7 +2716,7 @@ FishTide::FishTide(const FishTide& from)
   ::memcpy(&fish_tide_start_time_, &from.fish_tide_start_time_,
     static_cast<size_t>(reinterpret_cast<char*>(&line_num_) -
     reinterpret_cast<char*>(&fish_tide_start_time_)) + sizeof(line_num_));
-  // @@protoc_insertion_point(copy_constructor:FishTide)
+  // @@protoc_insertion_point(copy_constructor:WPBY.FishTide)
 }
 
 void FishTide::SharedCtor() {
@@ -2724,7 +2728,7 @@ void FishTide::SharedCtor() {
 }
 
 FishTide::~FishTide() {
-  // @@protoc_insertion_point(destructor:FishTide)
+  // @@protoc_insertion_point(destructor:WPBY.FishTide)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -2749,7 +2753,7 @@ const FishTide& FishTide::default_instance() {
 
 
 void FishTide::Clear() {
-// @@protoc_insertion_point(message_clear_start:FishTide)
+// @@protoc_insertion_point(message_clear_start:WPBY.FishTide)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -2796,7 +2800,7 @@ const char* FishTide::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::i
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated .FishLineInfo fish_lines = 5;
+      // repeated .WPBY.FishLineInfo fish_lines = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
           ptr -= 1;
@@ -2832,7 +2836,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* FishTide::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:FishTide)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.FishTide)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -2860,7 +2864,7 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_line_num(), target);
   }
 
-  // repeated .FishLineInfo fish_lines = 5;
+  // repeated .WPBY.FishLineInfo fish_lines = 5;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_fish_lines_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
@@ -2872,19 +2876,19 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:FishTide)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.FishTide)
   return target;
 }
 
 size_t FishTide::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:FishTide)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.FishTide)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .FishLineInfo fish_lines = 5;
+  // repeated .WPBY.FishLineInfo fish_lines = 5;
   total_size += 1UL * this->_internal_fish_lines_size();
   for (const auto& msg : this->fish_lines_) {
     total_size +=
@@ -2929,22 +2933,22 @@ size_t FishTide::ByteSizeLong() const {
 }
 
 void FishTide::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:FishTide)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.FishTide)
   GOOGLE_DCHECK_NE(&from, this);
   const FishTide* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<FishTide>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:FishTide)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.FishTide)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:FishTide)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.FishTide)
     MergeFrom(*source);
   }
 }
 
 void FishTide::MergeFrom(const FishTide& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:FishTide)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.FishTide)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -2966,14 +2970,14 @@ void FishTide::MergeFrom(const FishTide& from) {
 }
 
 void FishTide::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:FishTide)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.FishTide)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void FishTide::CopyFrom(const FishTide& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:FishTide)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.FishTide)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -3004,10 +3008,10 @@ void FishTide::InternalSwap(FishTide* other) {
 
 class CMD_S_YuChaoCome::_Internal {
  public:
-  static const ::FishTide& fish_tide(const CMD_S_YuChaoCome* msg);
+  static const ::WPBY::FishTide& fish_tide(const CMD_S_YuChaoCome* msg);
 };
 
-const ::FishTide&
+const ::WPBY::FishTide&
 CMD_S_YuChaoCome::_Internal::fish_tide(const CMD_S_YuChaoCome* msg) {
   return *msg->fish_tide_;
 }
@@ -3015,18 +3019,18 @@ CMD_S_YuChaoCome::CMD_S_YuChaoCome(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_S_YuChaoCome)
+  // @@protoc_insertion_point(arena_constructor:WPBY.CMD_S_YuChaoCome)
 }
 CMD_S_YuChaoCome::CMD_S_YuChaoCome(const CMD_S_YuChaoCome& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_fish_tide()) {
-    fish_tide_ = new ::FishTide(*from.fish_tide_);
+    fish_tide_ = new ::WPBY::FishTide(*from.fish_tide_);
   } else {
     fish_tide_ = nullptr;
   }
   yu_chao_id_ = from.yu_chao_id_;
-  // @@protoc_insertion_point(copy_constructor:CMD_S_YuChaoCome)
+  // @@protoc_insertion_point(copy_constructor:WPBY.CMD_S_YuChaoCome)
 }
 
 void CMD_S_YuChaoCome::SharedCtor() {
@@ -3038,7 +3042,7 @@ void CMD_S_YuChaoCome::SharedCtor() {
 }
 
 CMD_S_YuChaoCome::~CMD_S_YuChaoCome() {
-  // @@protoc_insertion_point(destructor:CMD_S_YuChaoCome)
+  // @@protoc_insertion_point(destructor:WPBY.CMD_S_YuChaoCome)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -3064,7 +3068,7 @@ const CMD_S_YuChaoCome& CMD_S_YuChaoCome::default_instance() {
 
 
 void CMD_S_YuChaoCome::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_S_YuChaoCome)
+// @@protoc_insertion_point(message_clear_start:WPBY.CMD_S_YuChaoCome)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -3091,7 +3095,7 @@ const char* CMD_S_YuChaoCome::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .FishTide fish_tide = 2;
+      // .WPBY.FishTide fish_tide = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_fish_tide(), ptr);
@@ -3122,7 +3126,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* CMD_S_YuChaoCome::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_S_YuChaoCome)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.CMD_S_YuChaoCome)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -3132,7 +3136,7 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_yu_chao_id(), target);
   }
 
-  // .FishTide fish_tide = 2;
+  // .WPBY.FishTide fish_tide = 2;
   if (this->has_fish_tide()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
@@ -3144,19 +3148,19 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_S_YuChaoCome)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.CMD_S_YuChaoCome)
   return target;
 }
 
 size_t CMD_S_YuChaoCome::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_S_YuChaoCome)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.CMD_S_YuChaoCome)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .FishTide fish_tide = 2;
+  // .WPBY.FishTide fish_tide = 2;
   if (this->has_fish_tide()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
@@ -3180,29 +3184,29 @@ size_t CMD_S_YuChaoCome::ByteSizeLong() const {
 }
 
 void CMD_S_YuChaoCome::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_S_YuChaoCome)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.CMD_S_YuChaoCome)
   GOOGLE_DCHECK_NE(&from, this);
   const CMD_S_YuChaoCome* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_S_YuChaoCome>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_S_YuChaoCome)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.CMD_S_YuChaoCome)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_S_YuChaoCome)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.CMD_S_YuChaoCome)
     MergeFrom(*source);
   }
 }
 
 void CMD_S_YuChaoCome::MergeFrom(const CMD_S_YuChaoCome& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_S_YuChaoCome)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.CMD_S_YuChaoCome)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.has_fish_tide()) {
-    _internal_mutable_fish_tide()->::FishTide::MergeFrom(from._internal_fish_tide());
+    _internal_mutable_fish_tide()->::WPBY::FishTide::MergeFrom(from._internal_fish_tide());
   }
   if (from.yu_chao_id() != 0) {
     _internal_set_yu_chao_id(from._internal_yu_chao_id());
@@ -3210,14 +3214,14 @@ void CMD_S_YuChaoCome::MergeFrom(const CMD_S_YuChaoCome& from) {
 }
 
 void CMD_S_YuChaoCome::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_S_YuChaoCome)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.CMD_S_YuChaoCome)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CMD_S_YuChaoCome::CopyFrom(const CMD_S_YuChaoCome& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_S_YuChaoCome)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.CMD_S_YuChaoCome)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -3253,7 +3257,7 @@ CMD_S_ShootLK::CMD_S_ShootLK(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_S_ShootLK)
+  // @@protoc_insertion_point(arena_constructor:WPBY.CMD_S_ShootLK)
 }
 CMD_S_ShootLK::CMD_S_ShootLK(const CMD_S_ShootLK& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -3261,7 +3265,7 @@ CMD_S_ShootLK::CMD_S_ShootLK(const CMD_S_ShootLK& from)
   ::memcpy(&chair_id_, &from.chair_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&multiple_) -
     reinterpret_cast<char*>(&chair_id_)) + sizeof(multiple_));
-  // @@protoc_insertion_point(copy_constructor:CMD_S_ShootLK)
+  // @@protoc_insertion_point(copy_constructor:WPBY.CMD_S_ShootLK)
 }
 
 void CMD_S_ShootLK::SharedCtor() {
@@ -3272,7 +3276,7 @@ void CMD_S_ShootLK::SharedCtor() {
 }
 
 CMD_S_ShootLK::~CMD_S_ShootLK() {
-  // @@protoc_insertion_point(destructor:CMD_S_ShootLK)
+  // @@protoc_insertion_point(destructor:WPBY.CMD_S_ShootLK)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -3297,7 +3301,7 @@ const CMD_S_ShootLK& CMD_S_ShootLK::default_instance() {
 
 
 void CMD_S_ShootLK::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_S_ShootLK)
+// @@protoc_insertion_point(message_clear_start:WPBY.CMD_S_ShootLK)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -3367,7 +3371,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* CMD_S_ShootLK::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_S_ShootLK)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.CMD_S_ShootLK)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -3399,12 +3403,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_S_ShootLK)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.CMD_S_ShootLK)
   return target;
 }
 
 size_t CMD_S_ShootLK::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_S_ShootLK)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.CMD_S_ShootLK)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -3449,22 +3453,22 @@ size_t CMD_S_ShootLK::ByteSizeLong() const {
 }
 
 void CMD_S_ShootLK::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_S_ShootLK)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.CMD_S_ShootLK)
   GOOGLE_DCHECK_NE(&from, this);
   const CMD_S_ShootLK* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_S_ShootLK>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_S_ShootLK)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.CMD_S_ShootLK)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_S_ShootLK)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.CMD_S_ShootLK)
     MergeFrom(*source);
   }
 }
 
 void CMD_S_ShootLK::MergeFrom(const CMD_S_ShootLK& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_S_ShootLK)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.CMD_S_ShootLK)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -3485,14 +3489,14 @@ void CMD_S_ShootLK::MergeFrom(const CMD_S_ShootLK& from) {
 }
 
 void CMD_S_ShootLK::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_S_ShootLK)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.CMD_S_ShootLK)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CMD_S_ShootLK::CopyFrom(const CMD_S_ShootLK& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_S_ShootLK)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.CMD_S_ShootLK)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -3528,7 +3532,7 @@ CMD_S_JuBuZhaDan::CMD_S_JuBuZhaDan(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_S_JuBuZhaDan)
+  // @@protoc_insertion_point(arena_constructor:WPBY.CMD_S_JuBuZhaDan)
 }
 CMD_S_JuBuZhaDan::CMD_S_JuBuZhaDan(const CMD_S_JuBuZhaDan& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -3536,7 +3540,7 @@ CMD_S_JuBuZhaDan::CMD_S_JuBuZhaDan(const CMD_S_JuBuZhaDan& from)
   ::memcpy(&chair_id_, &from.chair_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&fish_id_) -
     reinterpret_cast<char*>(&chair_id_)) + sizeof(fish_id_));
-  // @@protoc_insertion_point(copy_constructor:CMD_S_JuBuZhaDan)
+  // @@protoc_insertion_point(copy_constructor:WPBY.CMD_S_JuBuZhaDan)
 }
 
 void CMD_S_JuBuZhaDan::SharedCtor() {
@@ -3547,7 +3551,7 @@ void CMD_S_JuBuZhaDan::SharedCtor() {
 }
 
 CMD_S_JuBuZhaDan::~CMD_S_JuBuZhaDan() {
-  // @@protoc_insertion_point(destructor:CMD_S_JuBuZhaDan)
+  // @@protoc_insertion_point(destructor:WPBY.CMD_S_JuBuZhaDan)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -3572,7 +3576,7 @@ const CMD_S_JuBuZhaDan& CMD_S_JuBuZhaDan::default_instance() {
 
 
 void CMD_S_JuBuZhaDan::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_S_JuBuZhaDan)
+// @@protoc_insertion_point(message_clear_start:WPBY.CMD_S_JuBuZhaDan)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -3628,7 +3632,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* CMD_S_JuBuZhaDan::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_S_JuBuZhaDan)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.CMD_S_JuBuZhaDan)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -3648,12 +3652,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_S_JuBuZhaDan)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.CMD_S_JuBuZhaDan)
   return target;
 }
 
 size_t CMD_S_JuBuZhaDan::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_S_JuBuZhaDan)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.CMD_S_JuBuZhaDan)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -3684,22 +3688,22 @@ size_t CMD_S_JuBuZhaDan::ByteSizeLong() const {
 }
 
 void CMD_S_JuBuZhaDan::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_S_JuBuZhaDan)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.CMD_S_JuBuZhaDan)
   GOOGLE_DCHECK_NE(&from, this);
   const CMD_S_JuBuZhaDan* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_S_JuBuZhaDan>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_S_JuBuZhaDan)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.CMD_S_JuBuZhaDan)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_S_JuBuZhaDan)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.CMD_S_JuBuZhaDan)
     MergeFrom(*source);
   }
 }
 
 void CMD_S_JuBuZhaDan::MergeFrom(const CMD_S_JuBuZhaDan& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_S_JuBuZhaDan)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.CMD_S_JuBuZhaDan)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -3714,14 +3718,14 @@ void CMD_S_JuBuZhaDan::MergeFrom(const CMD_S_JuBuZhaDan& from) {
 }
 
 void CMD_S_JuBuZhaDan::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_S_JuBuZhaDan)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.CMD_S_JuBuZhaDan)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CMD_S_JuBuZhaDan::CopyFrom(const CMD_S_JuBuZhaDan& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_S_JuBuZhaDan)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.CMD_S_JuBuZhaDan)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -3757,7 +3761,7 @@ CMD_S_YiWangDaJin::CMD_S_YiWangDaJin(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_S_YiWangDaJin)
+  // @@protoc_insertion_point(arena_constructor:WPBY.CMD_S_YiWangDaJin)
 }
 CMD_S_YiWangDaJin::CMD_S_YiWangDaJin(const CMD_S_YiWangDaJin& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -3765,7 +3769,7 @@ CMD_S_YiWangDaJin::CMD_S_YiWangDaJin(const CMD_S_YiWangDaJin& from)
   ::memcpy(&chair_id_, &from.chair_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&bullet_id_) -
     reinterpret_cast<char*>(&chair_id_)) + sizeof(bullet_id_));
-  // @@protoc_insertion_point(copy_constructor:CMD_S_YiWangDaJin)
+  // @@protoc_insertion_point(copy_constructor:WPBY.CMD_S_YiWangDaJin)
 }
 
 void CMD_S_YiWangDaJin::SharedCtor() {
@@ -3776,7 +3780,7 @@ void CMD_S_YiWangDaJin::SharedCtor() {
 }
 
 CMD_S_YiWangDaJin::~CMD_S_YiWangDaJin() {
-  // @@protoc_insertion_point(destructor:CMD_S_YiWangDaJin)
+  // @@protoc_insertion_point(destructor:WPBY.CMD_S_YiWangDaJin)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -3801,7 +3805,7 @@ const CMD_S_YiWangDaJin& CMD_S_YiWangDaJin::default_instance() {
 
 
 void CMD_S_YiWangDaJin::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_S_YiWangDaJin)
+// @@protoc_insertion_point(message_clear_start:WPBY.CMD_S_YiWangDaJin)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -3857,7 +3861,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* CMD_S_YiWangDaJin::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_S_YiWangDaJin)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.CMD_S_YiWangDaJin)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -3877,12 +3881,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_S_YiWangDaJin)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.CMD_S_YiWangDaJin)
   return target;
 }
 
 size_t CMD_S_YiWangDaJin::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_S_YiWangDaJin)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.CMD_S_YiWangDaJin)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -3913,22 +3917,22 @@ size_t CMD_S_YiWangDaJin::ByteSizeLong() const {
 }
 
 void CMD_S_YiWangDaJin::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_S_YiWangDaJin)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.CMD_S_YiWangDaJin)
   GOOGLE_DCHECK_NE(&from, this);
   const CMD_S_YiWangDaJin* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_S_YiWangDaJin>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_S_YiWangDaJin)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.CMD_S_YiWangDaJin)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_S_YiWangDaJin)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.CMD_S_YiWangDaJin)
     MergeFrom(*source);
   }
 }
 
 void CMD_S_YiWangDaJin::MergeFrom(const CMD_S_YiWangDaJin& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_S_YiWangDaJin)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.CMD_S_YiWangDaJin)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -3943,14 +3947,14 @@ void CMD_S_YiWangDaJin::MergeFrom(const CMD_S_YiWangDaJin& from) {
 }
 
 void CMD_S_YiWangDaJin::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_S_YiWangDaJin)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.CMD_S_YiWangDaJin)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CMD_S_YiWangDaJin::CopyFrom(const CMD_S_YiWangDaJin& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_S_YiWangDaJin)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.CMD_S_YiWangDaJin)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -3986,7 +3990,7 @@ CMD_S_TongLeiZhaDan::CMD_S_TongLeiZhaDan(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_S_TongLeiZhaDan)
+  // @@protoc_insertion_point(arena_constructor:WPBY.CMD_S_TongLeiZhaDan)
 }
 CMD_S_TongLeiZhaDan::CMD_S_TongLeiZhaDan(const CMD_S_TongLeiZhaDan& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -3994,7 +3998,7 @@ CMD_S_TongLeiZhaDan::CMD_S_TongLeiZhaDan(const CMD_S_TongLeiZhaDan& from)
   ::memcpy(&chair_id_, &from.chair_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&kind_) -
     reinterpret_cast<char*>(&chair_id_)) + sizeof(kind_));
-  // @@protoc_insertion_point(copy_constructor:CMD_S_TongLeiZhaDan)
+  // @@protoc_insertion_point(copy_constructor:WPBY.CMD_S_TongLeiZhaDan)
 }
 
 void CMD_S_TongLeiZhaDan::SharedCtor() {
@@ -4005,7 +4009,7 @@ void CMD_S_TongLeiZhaDan::SharedCtor() {
 }
 
 CMD_S_TongLeiZhaDan::~CMD_S_TongLeiZhaDan() {
-  // @@protoc_insertion_point(destructor:CMD_S_TongLeiZhaDan)
+  // @@protoc_insertion_point(destructor:WPBY.CMD_S_TongLeiZhaDan)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -4030,7 +4034,7 @@ const CMD_S_TongLeiZhaDan& CMD_S_TongLeiZhaDan::default_instance() {
 
 
 void CMD_S_TongLeiZhaDan::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_S_TongLeiZhaDan)
+// @@protoc_insertion_point(message_clear_start:WPBY.CMD_S_TongLeiZhaDan)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -4093,7 +4097,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* CMD_S_TongLeiZhaDan::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_S_TongLeiZhaDan)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.CMD_S_TongLeiZhaDan)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -4119,12 +4123,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_S_TongLeiZhaDan)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.CMD_S_TongLeiZhaDan)
   return target;
 }
 
 size_t CMD_S_TongLeiZhaDan::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_S_TongLeiZhaDan)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.CMD_S_TongLeiZhaDan)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -4162,22 +4166,22 @@ size_t CMD_S_TongLeiZhaDan::ByteSizeLong() const {
 }
 
 void CMD_S_TongLeiZhaDan::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_S_TongLeiZhaDan)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.CMD_S_TongLeiZhaDan)
   GOOGLE_DCHECK_NE(&from, this);
   const CMD_S_TongLeiZhaDan* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_S_TongLeiZhaDan>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_S_TongLeiZhaDan)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.CMD_S_TongLeiZhaDan)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_S_TongLeiZhaDan)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.CMD_S_TongLeiZhaDan)
     MergeFrom(*source);
   }
 }
 
 void CMD_S_TongLeiZhaDan::MergeFrom(const CMD_S_TongLeiZhaDan& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_S_TongLeiZhaDan)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.CMD_S_TongLeiZhaDan)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -4195,14 +4199,14 @@ void CMD_S_TongLeiZhaDan::MergeFrom(const CMD_S_TongLeiZhaDan& from) {
 }
 
 void CMD_S_TongLeiZhaDan::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_S_TongLeiZhaDan)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.CMD_S_TongLeiZhaDan)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CMD_S_TongLeiZhaDan::CopyFrom(const CMD_S_TongLeiZhaDan& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_S_TongLeiZhaDan)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.CMD_S_TongLeiZhaDan)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -4239,7 +4243,7 @@ LoadFish::LoadFish(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   fish_point_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:LoadFish)
+  // @@protoc_insertion_point(arena_constructor:WPBY.LoadFish)
 }
 LoadFish::LoadFish(const LoadFish& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
@@ -4248,7 +4252,7 @@ LoadFish::LoadFish(const LoadFish& from)
   ::memcpy(&kind_, &from.kind_,
     static_cast<size_t>(reinterpret_cast<char*>(&mul_) -
     reinterpret_cast<char*>(&kind_)) + sizeof(mul_));
-  // @@protoc_insertion_point(copy_constructor:LoadFish)
+  // @@protoc_insertion_point(copy_constructor:WPBY.LoadFish)
 }
 
 void LoadFish::SharedCtor() {
@@ -4260,7 +4264,7 @@ void LoadFish::SharedCtor() {
 }
 
 LoadFish::~LoadFish() {
-  // @@protoc_insertion_point(destructor:LoadFish)
+  // @@protoc_insertion_point(destructor:WPBY.LoadFish)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -4285,7 +4289,7 @@ const LoadFish& LoadFish::default_instance() {
 
 
 void LoadFish::Clear() {
-// @@protoc_insertion_point(message_clear_start:LoadFish)
+// @@protoc_insertion_point(message_clear_start:WPBY.LoadFish)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -4332,7 +4336,7 @@ const char* LoadFish::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::i
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated .FishPoint fish_point = 5;
+      // repeated .WPBY.FishPoint fish_point = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
           ptr -= 1;
@@ -4382,7 +4386,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* LoadFish::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:LoadFish)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.LoadFish)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -4410,7 +4414,7 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_continue_time(), target);
   }
 
-  // repeated .FishPoint fish_point = 5;
+  // repeated .WPBY.FishPoint fish_point = 5;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_fish_point_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
@@ -4434,19 +4438,19 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:LoadFish)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.LoadFish)
   return target;
 }
 
 size_t LoadFish::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:LoadFish)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.LoadFish)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .FishPoint fish_point = 5;
+  // repeated .WPBY.FishPoint fish_point = 5;
   total_size += 1UL * this->_internal_fish_point_size();
   for (const auto& msg : this->fish_point_) {
     total_size +=
@@ -4505,22 +4509,22 @@ size_t LoadFish::ByteSizeLong() const {
 }
 
 void LoadFish::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:LoadFish)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.LoadFish)
   GOOGLE_DCHECK_NE(&from, this);
   const LoadFish* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<LoadFish>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:LoadFish)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.LoadFish)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:LoadFish)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.LoadFish)
     MergeFrom(*source);
   }
 }
 
 void LoadFish::MergeFrom(const LoadFish& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:LoadFish)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.LoadFish)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -4548,14 +4552,14 @@ void LoadFish::MergeFrom(const LoadFish& from) {
 }
 
 void LoadFish::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:LoadFish)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.LoadFish)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void LoadFish::CopyFrom(const LoadFish& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:LoadFish)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.LoadFish)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -4593,7 +4597,7 @@ CMD_S_YuWang::CMD_S_YuWang(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   fish_id_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_S_YuWang)
+  // @@protoc_insertion_point(arena_constructor:WPBY.CMD_S_YuWang)
 }
 CMD_S_YuWang::CMD_S_YuWang(const CMD_S_YuWang& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
@@ -4602,7 +4606,7 @@ CMD_S_YuWang::CMD_S_YuWang(const CMD_S_YuWang& from)
   ::memcpy(&chair_id_, &from.chair_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&yu_wang_id_) -
     reinterpret_cast<char*>(&chair_id_)) + sizeof(yu_wang_id_));
-  // @@protoc_insertion_point(copy_constructor:CMD_S_YuWang)
+  // @@protoc_insertion_point(copy_constructor:WPBY.CMD_S_YuWang)
 }
 
 void CMD_S_YuWang::SharedCtor() {
@@ -4614,7 +4618,7 @@ void CMD_S_YuWang::SharedCtor() {
 }
 
 CMD_S_YuWang::~CMD_S_YuWang() {
-  // @@protoc_insertion_point(destructor:CMD_S_YuWang)
+  // @@protoc_insertion_point(destructor:WPBY.CMD_S_YuWang)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -4639,7 +4643,7 @@ const CMD_S_YuWang& CMD_S_YuWang::default_instance() {
 
 
 void CMD_S_YuWang::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_S_YuWang)
+// @@protoc_insertion_point(message_clear_start:WPBY.CMD_S_YuWang)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -4679,7 +4683,7 @@ const char* CMD_S_YuWang::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated .LoadFish fish_id = 4;
+      // repeated .WPBY.LoadFish fish_id = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
           ptr -= 1;
@@ -4715,7 +4719,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* CMD_S_YuWang::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_S_YuWang)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.CMD_S_YuWang)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -4737,7 +4741,7 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_yu_wang_id(), target);
   }
 
-  // repeated .LoadFish fish_id = 4;
+  // repeated .WPBY.LoadFish fish_id = 4;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_fish_id_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
@@ -4749,19 +4753,19 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_S_YuWang)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.CMD_S_YuWang)
   return target;
 }
 
 size_t CMD_S_YuWang::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_S_YuWang)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.CMD_S_YuWang)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .LoadFish fish_id = 4;
+  // repeated .WPBY.LoadFish fish_id = 4;
   total_size += 1UL * this->_internal_fish_id_size();
   for (const auto& msg : this->fish_id_) {
     total_size +=
@@ -4799,22 +4803,22 @@ size_t CMD_S_YuWang::ByteSizeLong() const {
 }
 
 void CMD_S_YuWang::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_S_YuWang)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.CMD_S_YuWang)
   GOOGLE_DCHECK_NE(&from, this);
   const CMD_S_YuWang* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_S_YuWang>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_S_YuWang)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.CMD_S_YuWang)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_S_YuWang)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.CMD_S_YuWang)
     MergeFrom(*source);
   }
 }
 
 void CMD_S_YuWang::MergeFrom(const CMD_S_YuWang& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_S_YuWang)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.CMD_S_YuWang)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -4833,14 +4837,14 @@ void CMD_S_YuWang::MergeFrom(const CMD_S_YuWang& from) {
 }
 
 void CMD_S_YuWang::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_S_YuWang)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.CMD_S_YuWang)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CMD_S_YuWang::CopyFrom(const CMD_S_YuWang& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_S_YuWang)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.CMD_S_YuWang)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -4877,7 +4881,7 @@ CMD_S_DaSiXi::CMD_S_DaSiXi(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_S_DaSiXi)
+  // @@protoc_insertion_point(arena_constructor:WPBY.CMD_S_DaSiXi)
 }
 CMD_S_DaSiXi::CMD_S_DaSiXi(const CMD_S_DaSiXi& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -4885,7 +4889,7 @@ CMD_S_DaSiXi::CMD_S_DaSiXi(const CMD_S_DaSiXi& from)
   ::memcpy(&id_, &from.id_,
     static_cast<size_t>(reinterpret_cast<char*>(&score_) -
     reinterpret_cast<char*>(&id_)) + sizeof(score_));
-  // @@protoc_insertion_point(copy_constructor:CMD_S_DaSiXi)
+  // @@protoc_insertion_point(copy_constructor:WPBY.CMD_S_DaSiXi)
 }
 
 void CMD_S_DaSiXi::SharedCtor() {
@@ -4896,7 +4900,7 @@ void CMD_S_DaSiXi::SharedCtor() {
 }
 
 CMD_S_DaSiXi::~CMD_S_DaSiXi() {
-  // @@protoc_insertion_point(destructor:CMD_S_DaSiXi)
+  // @@protoc_insertion_point(destructor:WPBY.CMD_S_DaSiXi)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -4921,7 +4925,7 @@ const CMD_S_DaSiXi& CMD_S_DaSiXi::default_instance() {
 
 
 void CMD_S_DaSiXi::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_S_DaSiXi)
+// @@protoc_insertion_point(message_clear_start:WPBY.CMD_S_DaSiXi)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -4984,7 +4988,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* CMD_S_DaSiXi::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_S_DaSiXi)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.CMD_S_DaSiXi)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -5010,12 +5014,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_S_DaSiXi)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.CMD_S_DaSiXi)
   return target;
 }
 
 size_t CMD_S_DaSiXi::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_S_DaSiXi)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.CMD_S_DaSiXi)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -5053,22 +5057,22 @@ size_t CMD_S_DaSiXi::ByteSizeLong() const {
 }
 
 void CMD_S_DaSiXi::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_S_DaSiXi)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.CMD_S_DaSiXi)
   GOOGLE_DCHECK_NE(&from, this);
   const CMD_S_DaSiXi* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_S_DaSiXi>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_S_DaSiXi)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.CMD_S_DaSiXi)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_S_DaSiXi)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.CMD_S_DaSiXi)
     MergeFrom(*source);
   }
 }
 
 void CMD_S_DaSiXi::MergeFrom(const CMD_S_DaSiXi& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_S_DaSiXi)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.CMD_S_DaSiXi)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -5086,14 +5090,14 @@ void CMD_S_DaSiXi::MergeFrom(const CMD_S_DaSiXi& from) {
 }
 
 void CMD_S_DaSiXi::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_S_DaSiXi)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.CMD_S_DaSiXi)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CMD_S_DaSiXi::CopyFrom(const CMD_S_DaSiXi& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_S_DaSiXi)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.CMD_S_DaSiXi)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -5129,7 +5133,7 @@ CMD_S_DaSanYuan::CMD_S_DaSanYuan(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_S_DaSanYuan)
+  // @@protoc_insertion_point(arena_constructor:WPBY.CMD_S_DaSanYuan)
 }
 CMD_S_DaSanYuan::CMD_S_DaSanYuan(const CMD_S_DaSanYuan& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -5137,7 +5141,7 @@ CMD_S_DaSanYuan::CMD_S_DaSanYuan(const CMD_S_DaSanYuan& from)
   ::memcpy(&id_, &from.id_,
     static_cast<size_t>(reinterpret_cast<char*>(&score_) -
     reinterpret_cast<char*>(&id_)) + sizeof(score_));
-  // @@protoc_insertion_point(copy_constructor:CMD_S_DaSanYuan)
+  // @@protoc_insertion_point(copy_constructor:WPBY.CMD_S_DaSanYuan)
 }
 
 void CMD_S_DaSanYuan::SharedCtor() {
@@ -5148,7 +5152,7 @@ void CMD_S_DaSanYuan::SharedCtor() {
 }
 
 CMD_S_DaSanYuan::~CMD_S_DaSanYuan() {
-  // @@protoc_insertion_point(destructor:CMD_S_DaSanYuan)
+  // @@protoc_insertion_point(destructor:WPBY.CMD_S_DaSanYuan)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -5173,7 +5177,7 @@ const CMD_S_DaSanYuan& CMD_S_DaSanYuan::default_instance() {
 
 
 void CMD_S_DaSanYuan::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_S_DaSanYuan)
+// @@protoc_insertion_point(message_clear_start:WPBY.CMD_S_DaSanYuan)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -5236,7 +5240,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* CMD_S_DaSanYuan::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_S_DaSanYuan)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.CMD_S_DaSanYuan)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -5262,12 +5266,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_S_DaSanYuan)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.CMD_S_DaSanYuan)
   return target;
 }
 
 size_t CMD_S_DaSanYuan::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_S_DaSanYuan)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.CMD_S_DaSanYuan)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -5305,22 +5309,22 @@ size_t CMD_S_DaSanYuan::ByteSizeLong() const {
 }
 
 void CMD_S_DaSanYuan::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_S_DaSanYuan)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.CMD_S_DaSanYuan)
   GOOGLE_DCHECK_NE(&from, this);
   const CMD_S_DaSanYuan* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_S_DaSanYuan>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_S_DaSanYuan)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.CMD_S_DaSanYuan)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_S_DaSanYuan)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.CMD_S_DaSanYuan)
     MergeFrom(*source);
   }
 }
 
 void CMD_S_DaSanYuan::MergeFrom(const CMD_S_DaSanYuan& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_S_DaSanYuan)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.CMD_S_DaSanYuan)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -5338,14 +5342,14 @@ void CMD_S_DaSanYuan::MergeFrom(const CMD_S_DaSanYuan& from) {
 }
 
 void CMD_S_DaSanYuan::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_S_DaSanYuan)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.CMD_S_DaSanYuan)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CMD_S_DaSanYuan::CopyFrom(const CMD_S_DaSanYuan& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_S_DaSanYuan)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.CMD_S_DaSanYuan)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -5381,7 +5385,7 @@ CMD_S_ZhongYiTang::CMD_S_ZhongYiTang(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_S_ZhongYiTang)
+  // @@protoc_insertion_point(arena_constructor:WPBY.CMD_S_ZhongYiTang)
 }
 CMD_S_ZhongYiTang::CMD_S_ZhongYiTang(const CMD_S_ZhongYiTang& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -5389,7 +5393,7 @@ CMD_S_ZhongYiTang::CMD_S_ZhongYiTang(const CMD_S_ZhongYiTang& from)
   ::memcpy(&chair_id_, &from.chair_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&time_) -
     reinterpret_cast<char*>(&chair_id_)) + sizeof(time_));
-  // @@protoc_insertion_point(copy_constructor:CMD_S_ZhongYiTang)
+  // @@protoc_insertion_point(copy_constructor:WPBY.CMD_S_ZhongYiTang)
 }
 
 void CMD_S_ZhongYiTang::SharedCtor() {
@@ -5400,7 +5404,7 @@ void CMD_S_ZhongYiTang::SharedCtor() {
 }
 
 CMD_S_ZhongYiTang::~CMD_S_ZhongYiTang() {
-  // @@protoc_insertion_point(destructor:CMD_S_ZhongYiTang)
+  // @@protoc_insertion_point(destructor:WPBY.CMD_S_ZhongYiTang)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -5425,7 +5429,7 @@ const CMD_S_ZhongYiTang& CMD_S_ZhongYiTang::default_instance() {
 
 
 void CMD_S_ZhongYiTang::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_S_ZhongYiTang)
+// @@protoc_insertion_point(message_clear_start:WPBY.CMD_S_ZhongYiTang)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -5481,7 +5485,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* CMD_S_ZhongYiTang::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_S_ZhongYiTang)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.CMD_S_ZhongYiTang)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -5501,12 +5505,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_S_ZhongYiTang)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.CMD_S_ZhongYiTang)
   return target;
 }
 
 size_t CMD_S_ZhongYiTang::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_S_ZhongYiTang)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.CMD_S_ZhongYiTang)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -5537,22 +5541,22 @@ size_t CMD_S_ZhongYiTang::ByteSizeLong() const {
 }
 
 void CMD_S_ZhongYiTang::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_S_ZhongYiTang)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.CMD_S_ZhongYiTang)
   GOOGLE_DCHECK_NE(&from, this);
   const CMD_S_ZhongYiTang* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_S_ZhongYiTang>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_S_ZhongYiTang)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.CMD_S_ZhongYiTang)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_S_ZhongYiTang)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.CMD_S_ZhongYiTang)
     MergeFrom(*source);
   }
 }
 
 void CMD_S_ZhongYiTang::MergeFrom(const CMD_S_ZhongYiTang& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_S_ZhongYiTang)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.CMD_S_ZhongYiTang)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -5567,14 +5571,14 @@ void CMD_S_ZhongYiTang::MergeFrom(const CMD_S_ZhongYiTang& from) {
 }
 
 void CMD_S_ZhongYiTang::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_S_ZhongYiTang)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.CMD_S_ZhongYiTang)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CMD_S_ZhongYiTang::CopyFrom(const CMD_S_ZhongYiTang& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_S_ZhongYiTang)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.CMD_S_ZhongYiTang)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -5610,7 +5614,7 @@ CMD_S_ShuiHuZhuan::CMD_S_ShuiHuZhuan(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_S_ShuiHuZhuan)
+  // @@protoc_insertion_point(arena_constructor:WPBY.CMD_S_ShuiHuZhuan)
 }
 CMD_S_ShuiHuZhuan::CMD_S_ShuiHuZhuan(const CMD_S_ShuiHuZhuan& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -5618,7 +5622,7 @@ CMD_S_ShuiHuZhuan::CMD_S_ShuiHuZhuan(const CMD_S_ShuiHuZhuan& from)
   ::memcpy(&chair_id_, &from.chair_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&fish_id_) -
     reinterpret_cast<char*>(&chair_id_)) + sizeof(fish_id_));
-  // @@protoc_insertion_point(copy_constructor:CMD_S_ShuiHuZhuan)
+  // @@protoc_insertion_point(copy_constructor:WPBY.CMD_S_ShuiHuZhuan)
 }
 
 void CMD_S_ShuiHuZhuan::SharedCtor() {
@@ -5629,7 +5633,7 @@ void CMD_S_ShuiHuZhuan::SharedCtor() {
 }
 
 CMD_S_ShuiHuZhuan::~CMD_S_ShuiHuZhuan() {
-  // @@protoc_insertion_point(destructor:CMD_S_ShuiHuZhuan)
+  // @@protoc_insertion_point(destructor:WPBY.CMD_S_ShuiHuZhuan)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -5654,7 +5658,7 @@ const CMD_S_ShuiHuZhuan& CMD_S_ShuiHuZhuan::default_instance() {
 
 
 void CMD_S_ShuiHuZhuan::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_S_ShuiHuZhuan)
+// @@protoc_insertion_point(message_clear_start:WPBY.CMD_S_ShuiHuZhuan)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -5710,7 +5714,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* CMD_S_ShuiHuZhuan::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_S_ShuiHuZhuan)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.CMD_S_ShuiHuZhuan)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -5730,12 +5734,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_S_ShuiHuZhuan)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.CMD_S_ShuiHuZhuan)
   return target;
 }
 
 size_t CMD_S_ShuiHuZhuan::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_S_ShuiHuZhuan)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.CMD_S_ShuiHuZhuan)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -5766,22 +5770,22 @@ size_t CMD_S_ShuiHuZhuan::ByteSizeLong() const {
 }
 
 void CMD_S_ShuiHuZhuan::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_S_ShuiHuZhuan)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.CMD_S_ShuiHuZhuan)
   GOOGLE_DCHECK_NE(&from, this);
   const CMD_S_ShuiHuZhuan* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_S_ShuiHuZhuan>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_S_ShuiHuZhuan)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.CMD_S_ShuiHuZhuan)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_S_ShuiHuZhuan)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.CMD_S_ShuiHuZhuan)
     MergeFrom(*source);
   }
 }
 
 void CMD_S_ShuiHuZhuan::MergeFrom(const CMD_S_ShuiHuZhuan& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_S_ShuiHuZhuan)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.CMD_S_ShuiHuZhuan)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -5796,14 +5800,14 @@ void CMD_S_ShuiHuZhuan::MergeFrom(const CMD_S_ShuiHuZhuan& from) {
 }
 
 void CMD_S_ShuiHuZhuan::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_S_ShuiHuZhuan)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.CMD_S_ShuiHuZhuan)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CMD_S_ShuiHuZhuan::CopyFrom(const CMD_S_ShuiHuZhuan& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_S_ShuiHuZhuan)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.CMD_S_ShuiHuZhuan)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -5839,7 +5843,7 @@ CMD_S_ChangeBulletLevel::CMD_S_ChangeBulletLevel(::PROTOBUF_NAMESPACE_ID::Arena*
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_S_ChangeBulletLevel)
+  // @@protoc_insertion_point(arena_constructor:WPBY.CMD_S_ChangeBulletLevel)
 }
 CMD_S_ChangeBulletLevel::CMD_S_ChangeBulletLevel(const CMD_S_ChangeBulletLevel& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -5847,7 +5851,7 @@ CMD_S_ChangeBulletLevel::CMD_S_ChangeBulletLevel(const CMD_S_ChangeBulletLevel& 
   ::memcpy(&chair_id_, &from.chair_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&gun_level_) -
     reinterpret_cast<char*>(&chair_id_)) + sizeof(gun_level_));
-  // @@protoc_insertion_point(copy_constructor:CMD_S_ChangeBulletLevel)
+  // @@protoc_insertion_point(copy_constructor:WPBY.CMD_S_ChangeBulletLevel)
 }
 
 void CMD_S_ChangeBulletLevel::SharedCtor() {
@@ -5858,7 +5862,7 @@ void CMD_S_ChangeBulletLevel::SharedCtor() {
 }
 
 CMD_S_ChangeBulletLevel::~CMD_S_ChangeBulletLevel() {
-  // @@protoc_insertion_point(destructor:CMD_S_ChangeBulletLevel)
+  // @@protoc_insertion_point(destructor:WPBY.CMD_S_ChangeBulletLevel)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -5883,7 +5887,7 @@ const CMD_S_ChangeBulletLevel& CMD_S_ChangeBulletLevel::default_instance() {
 
 
 void CMD_S_ChangeBulletLevel::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_S_ChangeBulletLevel)
+// @@protoc_insertion_point(message_clear_start:WPBY.CMD_S_ChangeBulletLevel)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -5946,7 +5950,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* CMD_S_ChangeBulletLevel::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_S_ChangeBulletLevel)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.CMD_S_ChangeBulletLevel)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -5972,12 +5976,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_S_ChangeBulletLevel)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.CMD_S_ChangeBulletLevel)
   return target;
 }
 
 size_t CMD_S_ChangeBulletLevel::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_S_ChangeBulletLevel)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.CMD_S_ChangeBulletLevel)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -6015,22 +6019,22 @@ size_t CMD_S_ChangeBulletLevel::ByteSizeLong() const {
 }
 
 void CMD_S_ChangeBulletLevel::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_S_ChangeBulletLevel)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.CMD_S_ChangeBulletLevel)
   GOOGLE_DCHECK_NE(&from, this);
   const CMD_S_ChangeBulletLevel* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_S_ChangeBulletLevel>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_S_ChangeBulletLevel)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.CMD_S_ChangeBulletLevel)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_S_ChangeBulletLevel)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.CMD_S_ChangeBulletLevel)
     MergeFrom(*source);
   }
 }
 
 void CMD_S_ChangeBulletLevel::MergeFrom(const CMD_S_ChangeBulletLevel& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_S_ChangeBulletLevel)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.CMD_S_ChangeBulletLevel)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -6048,14 +6052,14 @@ void CMD_S_ChangeBulletLevel::MergeFrom(const CMD_S_ChangeBulletLevel& from) {
 }
 
 void CMD_S_ChangeBulletLevel::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_S_ChangeBulletLevel)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.CMD_S_ChangeBulletLevel)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CMD_S_ChangeBulletLevel::CopyFrom(const CMD_S_ChangeBulletLevel& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_S_ChangeBulletLevel)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.CMD_S_ChangeBulletLevel)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -6094,7 +6098,7 @@ CMD_S_CONFIG::CMD_S_CONFIG(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   player_cur_score_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_S_CONFIG)
+  // @@protoc_insertion_point(arena_constructor:WPBY.CMD_S_CONFIG)
 }
 CMD_S_CONFIG::CMD_S_CONFIG(const CMD_S_CONFIG& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
@@ -6103,7 +6107,7 @@ CMD_S_CONFIG::CMD_S_CONFIG(const CMD_S_CONFIG& from)
       player_cur_score_(from.player_cur_score_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   background_picture_id_ = from.background_picture_id_;
-  // @@protoc_insertion_point(copy_constructor:CMD_S_CONFIG)
+  // @@protoc_insertion_point(copy_constructor:WPBY.CMD_S_CONFIG)
 }
 
 void CMD_S_CONFIG::SharedCtor() {
@@ -6111,7 +6115,7 @@ void CMD_S_CONFIG::SharedCtor() {
 }
 
 CMD_S_CONFIG::~CMD_S_CONFIG() {
-  // @@protoc_insertion_point(destructor:CMD_S_CONFIG)
+  // @@protoc_insertion_point(destructor:WPBY.CMD_S_CONFIG)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -6136,7 +6140,7 @@ const CMD_S_CONFIG& CMD_S_CONFIG::default_instance() {
 
 
 void CMD_S_CONFIG::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_S_CONFIG)
+// @@protoc_insertion_point(message_clear_start:WPBY.CMD_S_CONFIG)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -6216,7 +6220,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* CMD_S_CONFIG::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_S_CONFIG)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.CMD_S_CONFIG)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -6257,12 +6261,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_S_CONFIG)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.CMD_S_CONFIG)
   return target;
 }
 
 size_t CMD_S_CONFIG::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_S_CONFIG)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.CMD_S_CONFIG)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -6331,22 +6335,22 @@ size_t CMD_S_CONFIG::ByteSizeLong() const {
 }
 
 void CMD_S_CONFIG::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_S_CONFIG)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.CMD_S_CONFIG)
   GOOGLE_DCHECK_NE(&from, this);
   const CMD_S_CONFIG* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_S_CONFIG>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_S_CONFIG)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.CMD_S_CONFIG)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_S_CONFIG)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.CMD_S_CONFIG)
     MergeFrom(*source);
   }
 }
 
 void CMD_S_CONFIG::MergeFrom(const CMD_S_CONFIG& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_S_CONFIG)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.CMD_S_CONFIG)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -6361,14 +6365,14 @@ void CMD_S_CONFIG::MergeFrom(const CMD_S_CONFIG& from) {
 }
 
 void CMD_S_CONFIG::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_S_CONFIG)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.CMD_S_CONFIG)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CMD_S_CONFIG::CopyFrom(const CMD_S_CONFIG& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_S_CONFIG)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.CMD_S_CONFIG)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -6404,21 +6408,21 @@ CMD_S_PlayerGunLevel::CMD_S_PlayerGunLevel(::PROTOBUF_NAMESPACE_ID::Arena* arena
   gun_type_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_S_PlayerGunLevel)
+  // @@protoc_insertion_point(arena_constructor:WPBY.CMD_S_PlayerGunLevel)
 }
 CMD_S_PlayerGunLevel::CMD_S_PlayerGunLevel(const CMD_S_PlayerGunLevel& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       gun_level_(from.gun_level_),
       gun_type_(from.gun_type_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:CMD_S_PlayerGunLevel)
+  // @@protoc_insertion_point(copy_constructor:WPBY.CMD_S_PlayerGunLevel)
 }
 
 void CMD_S_PlayerGunLevel::SharedCtor() {
 }
 
 CMD_S_PlayerGunLevel::~CMD_S_PlayerGunLevel() {
-  // @@protoc_insertion_point(destructor:CMD_S_PlayerGunLevel)
+  // @@protoc_insertion_point(destructor:WPBY.CMD_S_PlayerGunLevel)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -6443,7 +6447,7 @@ const CMD_S_PlayerGunLevel& CMD_S_PlayerGunLevel::default_instance() {
 
 
 void CMD_S_PlayerGunLevel::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_S_PlayerGunLevel)
+// @@protoc_insertion_point(message_clear_start:WPBY.CMD_S_PlayerGunLevel)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -6504,7 +6508,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* CMD_S_PlayerGunLevel::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_S_PlayerGunLevel)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.CMD_S_PlayerGunLevel)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -6530,12 +6534,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_S_PlayerGunLevel)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.CMD_S_PlayerGunLevel)
   return target;
 }
 
 size_t CMD_S_PlayerGunLevel::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_S_PlayerGunLevel)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.CMD_S_PlayerGunLevel)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -6582,22 +6586,22 @@ size_t CMD_S_PlayerGunLevel::ByteSizeLong() const {
 }
 
 void CMD_S_PlayerGunLevel::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_S_PlayerGunLevel)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.CMD_S_PlayerGunLevel)
   GOOGLE_DCHECK_NE(&from, this);
   const CMD_S_PlayerGunLevel* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_S_PlayerGunLevel>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_S_PlayerGunLevel)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.CMD_S_PlayerGunLevel)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_S_PlayerGunLevel)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.CMD_S_PlayerGunLevel)
     MergeFrom(*source);
   }
 }
 
 void CMD_S_PlayerGunLevel::MergeFrom(const CMD_S_PlayerGunLevel& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_S_PlayerGunLevel)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.CMD_S_PlayerGunLevel)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -6608,14 +6612,14 @@ void CMD_S_PlayerGunLevel::MergeFrom(const CMD_S_PlayerGunLevel& from) {
 }
 
 void CMD_S_PlayerGunLevel::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_S_PlayerGunLevel)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.CMD_S_PlayerGunLevel)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CMD_S_PlayerGunLevel::CopyFrom(const CMD_S_PlayerGunLevel& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_S_PlayerGunLevel)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.CMD_S_PlayerGunLevel)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -6648,13 +6652,13 @@ CMD_S_AddFish::CMD_S_AddFish(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   load_fish_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_S_AddFish)
+  // @@protoc_insertion_point(arena_constructor:WPBY.CMD_S_AddFish)
 }
 CMD_S_AddFish::CMD_S_AddFish(const CMD_S_AddFish& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       load_fish_(from.load_fish_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:CMD_S_AddFish)
+  // @@protoc_insertion_point(copy_constructor:WPBY.CMD_S_AddFish)
 }
 
 void CMD_S_AddFish::SharedCtor() {
@@ -6662,7 +6666,7 @@ void CMD_S_AddFish::SharedCtor() {
 }
 
 CMD_S_AddFish::~CMD_S_AddFish() {
-  // @@protoc_insertion_point(destructor:CMD_S_AddFish)
+  // @@protoc_insertion_point(destructor:WPBY.CMD_S_AddFish)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -6687,7 +6691,7 @@ const CMD_S_AddFish& CMD_S_AddFish::default_instance() {
 
 
 void CMD_S_AddFish::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_S_AddFish)
+// @@protoc_insertion_point(message_clear_start:WPBY.CMD_S_AddFish)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -6703,7 +6707,7 @@ const char* CMD_S_AddFish::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // repeated .LoadFish load_fish = 1;
+      // repeated .WPBY.LoadFish load_fish = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr -= 1;
@@ -6739,11 +6743,11 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* CMD_S_AddFish::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_S_AddFish)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.CMD_S_AddFish)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated .LoadFish load_fish = 1;
+  // repeated .WPBY.LoadFish load_fish = 1;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_load_fish_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
@@ -6755,19 +6759,19 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_S_AddFish)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.CMD_S_AddFish)
   return target;
 }
 
 size_t CMD_S_AddFish::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_S_AddFish)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.CMD_S_AddFish)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .LoadFish load_fish = 1;
+  // repeated .WPBY.LoadFish load_fish = 1;
   total_size += 1UL * this->_internal_load_fish_size();
   for (const auto& msg : this->load_fish_) {
     total_size +=
@@ -6784,22 +6788,22 @@ size_t CMD_S_AddFish::ByteSizeLong() const {
 }
 
 void CMD_S_AddFish::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_S_AddFish)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.CMD_S_AddFish)
   GOOGLE_DCHECK_NE(&from, this);
   const CMD_S_AddFish* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_S_AddFish>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_S_AddFish)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.CMD_S_AddFish)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_S_AddFish)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.CMD_S_AddFish)
     MergeFrom(*source);
   }
 }
 
 void CMD_S_AddFish::MergeFrom(const CMD_S_AddFish& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_S_AddFish)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.CMD_S_AddFish)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -6809,14 +6813,14 @@ void CMD_S_AddFish::MergeFrom(const CMD_S_AddFish& from) {
 }
 
 void CMD_S_AddFish::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_S_AddFish)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.CMD_S_AddFish)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CMD_S_AddFish::CopyFrom(const CMD_S_AddFish& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_S_AddFish)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.CMD_S_AddFish)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -6848,13 +6852,13 @@ CMD_S_PlayerEnter::CMD_S_PlayerEnter(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   load_fish_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_S_PlayerEnter)
+  // @@protoc_insertion_point(arena_constructor:WPBY.CMD_S_PlayerEnter)
 }
 CMD_S_PlayerEnter::CMD_S_PlayerEnter(const CMD_S_PlayerEnter& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       load_fish_(from.load_fish_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:CMD_S_PlayerEnter)
+  // @@protoc_insertion_point(copy_constructor:WPBY.CMD_S_PlayerEnter)
 }
 
 void CMD_S_PlayerEnter::SharedCtor() {
@@ -6862,7 +6866,7 @@ void CMD_S_PlayerEnter::SharedCtor() {
 }
 
 CMD_S_PlayerEnter::~CMD_S_PlayerEnter() {
-  // @@protoc_insertion_point(destructor:CMD_S_PlayerEnter)
+  // @@protoc_insertion_point(destructor:WPBY.CMD_S_PlayerEnter)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -6887,7 +6891,7 @@ const CMD_S_PlayerEnter& CMD_S_PlayerEnter::default_instance() {
 
 
 void CMD_S_PlayerEnter::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_S_PlayerEnter)
+// @@protoc_insertion_point(message_clear_start:WPBY.CMD_S_PlayerEnter)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -6903,7 +6907,7 @@ const char* CMD_S_PlayerEnter::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // repeated .LoadFish load_fish = 1;
+      // repeated .WPBY.LoadFish load_fish = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr -= 1;
@@ -6939,11 +6943,11 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* CMD_S_PlayerEnter::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_S_PlayerEnter)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.CMD_S_PlayerEnter)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated .LoadFish load_fish = 1;
+  // repeated .WPBY.LoadFish load_fish = 1;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_load_fish_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
@@ -6955,19 +6959,19 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_S_PlayerEnter)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.CMD_S_PlayerEnter)
   return target;
 }
 
 size_t CMD_S_PlayerEnter::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_S_PlayerEnter)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.CMD_S_PlayerEnter)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .LoadFish load_fish = 1;
+  // repeated .WPBY.LoadFish load_fish = 1;
   total_size += 1UL * this->_internal_load_fish_size();
   for (const auto& msg : this->load_fish_) {
     total_size +=
@@ -6984,22 +6988,22 @@ size_t CMD_S_PlayerEnter::ByteSizeLong() const {
 }
 
 void CMD_S_PlayerEnter::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_S_PlayerEnter)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.CMD_S_PlayerEnter)
   GOOGLE_DCHECK_NE(&from, this);
   const CMD_S_PlayerEnter* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_S_PlayerEnter>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_S_PlayerEnter)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.CMD_S_PlayerEnter)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_S_PlayerEnter)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.CMD_S_PlayerEnter)
     MergeFrom(*source);
   }
 }
 
 void CMD_S_PlayerEnter::MergeFrom(const CMD_S_PlayerEnter& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_S_PlayerEnter)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.CMD_S_PlayerEnter)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -7009,14 +7013,14 @@ void CMD_S_PlayerEnter::MergeFrom(const CMD_S_PlayerEnter& from) {
 }
 
 void CMD_S_PlayerEnter::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_S_PlayerEnter)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.CMD_S_PlayerEnter)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CMD_S_PlayerEnter::CopyFrom(const CMD_S_PlayerEnter& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_S_PlayerEnter)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.CMD_S_PlayerEnter)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -7047,7 +7051,7 @@ FishDeadInfo::FishDeadInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:FishDeadInfo)
+  // @@protoc_insertion_point(arena_constructor:WPBY.FishDeadInfo)
 }
 FishDeadInfo::FishDeadInfo(const FishDeadInfo& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -7055,7 +7059,7 @@ FishDeadInfo::FishDeadInfo(const FishDeadInfo& from)
   ::memcpy(&id_, &from.id_,
     static_cast<size_t>(reinterpret_cast<char*>(&score_) -
     reinterpret_cast<char*>(&id_)) + sizeof(score_));
-  // @@protoc_insertion_point(copy_constructor:FishDeadInfo)
+  // @@protoc_insertion_point(copy_constructor:WPBY.FishDeadInfo)
 }
 
 void FishDeadInfo::SharedCtor() {
@@ -7066,7 +7070,7 @@ void FishDeadInfo::SharedCtor() {
 }
 
 FishDeadInfo::~FishDeadInfo() {
-  // @@protoc_insertion_point(destructor:FishDeadInfo)
+  // @@protoc_insertion_point(destructor:WPBY.FishDeadInfo)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -7091,7 +7095,7 @@ const FishDeadInfo& FishDeadInfo::default_instance() {
 
 
 void FishDeadInfo::Clear() {
-// @@protoc_insertion_point(message_clear_start:FishDeadInfo)
+// @@protoc_insertion_point(message_clear_start:WPBY.FishDeadInfo)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -7147,7 +7151,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* FishDeadInfo::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:FishDeadInfo)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.FishDeadInfo)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -7167,12 +7171,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:FishDeadInfo)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.FishDeadInfo)
   return target;
 }
 
 size_t FishDeadInfo::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:FishDeadInfo)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.FishDeadInfo)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -7203,22 +7207,22 @@ size_t FishDeadInfo::ByteSizeLong() const {
 }
 
 void FishDeadInfo::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:FishDeadInfo)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.FishDeadInfo)
   GOOGLE_DCHECK_NE(&from, this);
   const FishDeadInfo* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<FishDeadInfo>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:FishDeadInfo)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.FishDeadInfo)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:FishDeadInfo)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.FishDeadInfo)
     MergeFrom(*source);
   }
 }
 
 void FishDeadInfo::MergeFrom(const FishDeadInfo& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:FishDeadInfo)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.FishDeadInfo)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -7233,14 +7237,14 @@ void FishDeadInfo::MergeFrom(const FishDeadInfo& from) {
 }
 
 void FishDeadInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:FishDeadInfo)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.FishDeadInfo)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void FishDeadInfo::CopyFrom(const FishDeadInfo& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:FishDeadInfo)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.FishDeadInfo)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -7277,7 +7281,7 @@ CMD_S_FishDead::CMD_S_FishDead(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   fish_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_S_FishDead)
+  // @@protoc_insertion_point(arena_constructor:WPBY.CMD_S_FishDead)
 }
 CMD_S_FishDead::CMD_S_FishDead(const CMD_S_FishDead& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
@@ -7286,7 +7290,7 @@ CMD_S_FishDead::CMD_S_FishDead(const CMD_S_FishDead& from)
   ::memcpy(&score_, &from.score_,
     static_cast<size_t>(reinterpret_cast<char*>(&chair_id_) -
     reinterpret_cast<char*>(&score_)) + sizeof(chair_id_));
-  // @@protoc_insertion_point(copy_constructor:CMD_S_FishDead)
+  // @@protoc_insertion_point(copy_constructor:WPBY.CMD_S_FishDead)
 }
 
 void CMD_S_FishDead::SharedCtor() {
@@ -7298,7 +7302,7 @@ void CMD_S_FishDead::SharedCtor() {
 }
 
 CMD_S_FishDead::~CMD_S_FishDead() {
-  // @@protoc_insertion_point(destructor:CMD_S_FishDead)
+  // @@protoc_insertion_point(destructor:WPBY.CMD_S_FishDead)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -7323,7 +7327,7 @@ const CMD_S_FishDead& CMD_S_FishDead::default_instance() {
 
 
 void CMD_S_FishDead::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_S_FishDead)
+// @@protoc_insertion_point(message_clear_start:WPBY.CMD_S_FishDead)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -7349,7 +7353,7 @@ const char* CMD_S_FishDead::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated .FishDeadInfo fish = 2;
+      // repeated .WPBY.FishDeadInfo fish = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr -= 1;
@@ -7392,7 +7396,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* CMD_S_FishDead::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_S_FishDead)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.CMD_S_FishDead)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -7402,7 +7406,7 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_chair_id(), target);
   }
 
-  // repeated .FishDeadInfo fish = 2;
+  // repeated .WPBY.FishDeadInfo fish = 2;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_fish_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
@@ -7420,19 +7424,19 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_S_FishDead)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.CMD_S_FishDead)
   return target;
 }
 
 size_t CMD_S_FishDead::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_S_FishDead)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.CMD_S_FishDead)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .FishDeadInfo fish = 2;
+  // repeated .WPBY.FishDeadInfo fish = 2;
   total_size += 1UL * this->_internal_fish_size();
   for (const auto& msg : this->fish_) {
     total_size +=
@@ -7463,22 +7467,22 @@ size_t CMD_S_FishDead::ByteSizeLong() const {
 }
 
 void CMD_S_FishDead::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_S_FishDead)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.CMD_S_FishDead)
   GOOGLE_DCHECK_NE(&from, this);
   const CMD_S_FishDead* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_S_FishDead>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_S_FishDead)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.CMD_S_FishDead)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_S_FishDead)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.CMD_S_FishDead)
     MergeFrom(*source);
   }
 }
 
 void CMD_S_FishDead::MergeFrom(const CMD_S_FishDead& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_S_FishDead)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.CMD_S_FishDead)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -7494,14 +7498,14 @@ void CMD_S_FishDead::MergeFrom(const CMD_S_FishDead& from) {
 }
 
 void CMD_S_FishDead::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_S_FishDead)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.CMD_S_FishDead)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CMD_S_FishDead::CopyFrom(const CMD_S_FishDead& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_S_FishDead)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.CMD_S_FishDead)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -7538,7 +7542,7 @@ CMD_S_PlayerShoot::CMD_S_PlayerShoot(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_S_PlayerShoot)
+  // @@protoc_insertion_point(arena_constructor:WPBY.CMD_S_PlayerShoot)
 }
 CMD_S_PlayerShoot::CMD_S_PlayerShoot(const CMD_S_PlayerShoot& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -7546,7 +7550,7 @@ CMD_S_PlayerShoot::CMD_S_PlayerShoot(const CMD_S_PlayerShoot& from)
   ::memcpy(&chair_id_, &from.chair_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&type_) -
     reinterpret_cast<char*>(&chair_id_)) + sizeof(type_));
-  // @@protoc_insertion_point(copy_constructor:CMD_S_PlayerShoot)
+  // @@protoc_insertion_point(copy_constructor:WPBY.CMD_S_PlayerShoot)
 }
 
 void CMD_S_PlayerShoot::SharedCtor() {
@@ -7557,7 +7561,7 @@ void CMD_S_PlayerShoot::SharedCtor() {
 }
 
 CMD_S_PlayerShoot::~CMD_S_PlayerShoot() {
-  // @@protoc_insertion_point(destructor:CMD_S_PlayerShoot)
+  // @@protoc_insertion_point(destructor:WPBY.CMD_S_PlayerShoot)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -7582,7 +7586,7 @@ const CMD_S_PlayerShoot& CMD_S_PlayerShoot::default_instance() {
 
 
 void CMD_S_PlayerShoot::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_S_PlayerShoot)
+// @@protoc_insertion_point(message_clear_start:WPBY.CMD_S_PlayerShoot)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -7666,7 +7670,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* CMD_S_PlayerShoot::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_S_PlayerShoot)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.CMD_S_PlayerShoot)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -7710,12 +7714,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_S_PlayerShoot)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.CMD_S_PlayerShoot)
   return target;
 }
 
 size_t CMD_S_PlayerShoot::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_S_PlayerShoot)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.CMD_S_PlayerShoot)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -7770,22 +7774,22 @@ size_t CMD_S_PlayerShoot::ByteSizeLong() const {
 }
 
 void CMD_S_PlayerShoot::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_S_PlayerShoot)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.CMD_S_PlayerShoot)
   GOOGLE_DCHECK_NE(&from, this);
   const CMD_S_PlayerShoot* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_S_PlayerShoot>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_S_PlayerShoot)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.CMD_S_PlayerShoot)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_S_PlayerShoot)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.CMD_S_PlayerShoot)
     MergeFrom(*source);
   }
 }
 
 void CMD_S_PlayerShoot::MergeFrom(const CMD_S_PlayerShoot& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_S_PlayerShoot)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.CMD_S_PlayerShoot)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -7812,14 +7816,14 @@ void CMD_S_PlayerShoot::MergeFrom(const CMD_S_PlayerShoot& from) {
 }
 
 void CMD_S_PlayerShoot::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_S_PlayerShoot)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.CMD_S_PlayerShoot)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CMD_S_PlayerShoot::CopyFrom(const CMD_S_PlayerShoot& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_S_PlayerShoot)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.CMD_S_PlayerShoot)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -7855,7 +7859,7 @@ CMD_C_RobotShoot::CMD_C_RobotShoot(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_C_RobotShoot)
+  // @@protoc_insertion_point(arena_constructor:WPBY.CMD_C_RobotShoot)
 }
 CMD_C_RobotShoot::CMD_C_RobotShoot(const CMD_C_RobotShoot& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -7863,7 +7867,7 @@ CMD_C_RobotShoot::CMD_C_RobotShoot(const CMD_C_RobotShoot& from)
   ::memcpy(&chair_id_, &from.chair_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&is_lock_) -
     reinterpret_cast<char*>(&chair_id_)) + sizeof(is_lock_));
-  // @@protoc_insertion_point(copy_constructor:CMD_C_RobotShoot)
+  // @@protoc_insertion_point(copy_constructor:WPBY.CMD_C_RobotShoot)
 }
 
 void CMD_C_RobotShoot::SharedCtor() {
@@ -7874,7 +7878,7 @@ void CMD_C_RobotShoot::SharedCtor() {
 }
 
 CMD_C_RobotShoot::~CMD_C_RobotShoot() {
-  // @@protoc_insertion_point(destructor:CMD_C_RobotShoot)
+  // @@protoc_insertion_point(destructor:WPBY.CMD_C_RobotShoot)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -7899,7 +7903,7 @@ const CMD_C_RobotShoot& CMD_C_RobotShoot::default_instance() {
 
 
 void CMD_C_RobotShoot::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_C_RobotShoot)
+// @@protoc_insertion_point(message_clear_start:WPBY.CMD_C_RobotShoot)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -7969,7 +7973,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* CMD_C_RobotShoot::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_C_RobotShoot)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.CMD_C_RobotShoot)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -8001,12 +8005,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_C_RobotShoot)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.CMD_C_RobotShoot)
   return target;
 }
 
 size_t CMD_C_RobotShoot::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_C_RobotShoot)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.CMD_C_RobotShoot)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -8051,22 +8055,22 @@ size_t CMD_C_RobotShoot::ByteSizeLong() const {
 }
 
 void CMD_C_RobotShoot::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_C_RobotShoot)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.CMD_C_RobotShoot)
   GOOGLE_DCHECK_NE(&from, this);
   const CMD_C_RobotShoot* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_C_RobotShoot>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_C_RobotShoot)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.CMD_C_RobotShoot)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_C_RobotShoot)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.CMD_C_RobotShoot)
     MergeFrom(*source);
   }
 }
 
 void CMD_C_RobotShoot::MergeFrom(const CMD_C_RobotShoot& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_C_RobotShoot)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.CMD_C_RobotShoot)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -8087,14 +8091,14 @@ void CMD_C_RobotShoot::MergeFrom(const CMD_C_RobotShoot& from) {
 }
 
 void CMD_C_RobotShoot::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_C_RobotShoot)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.CMD_C_RobotShoot)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CMD_C_RobotShoot::CopyFrom(const CMD_C_RobotShoot& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_C_RobotShoot)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.CMD_C_RobotShoot)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -8130,7 +8134,7 @@ CMD_C_PlayerLock::CMD_C_PlayerLock(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_C_PlayerLock)
+  // @@protoc_insertion_point(arena_constructor:WPBY.CMD_C_PlayerLock)
 }
 CMD_C_PlayerLock::CMD_C_PlayerLock(const CMD_C_PlayerLock& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -8138,7 +8142,7 @@ CMD_C_PlayerLock::CMD_C_PlayerLock(const CMD_C_PlayerLock& from)
   ::memcpy(&chair_id_, &from.chair_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&fish_id_) -
     reinterpret_cast<char*>(&chair_id_)) + sizeof(fish_id_));
-  // @@protoc_insertion_point(copy_constructor:CMD_C_PlayerLock)
+  // @@protoc_insertion_point(copy_constructor:WPBY.CMD_C_PlayerLock)
 }
 
 void CMD_C_PlayerLock::SharedCtor() {
@@ -8149,7 +8153,7 @@ void CMD_C_PlayerLock::SharedCtor() {
 }
 
 CMD_C_PlayerLock::~CMD_C_PlayerLock() {
-  // @@protoc_insertion_point(destructor:CMD_C_PlayerLock)
+  // @@protoc_insertion_point(destructor:WPBY.CMD_C_PlayerLock)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -8174,7 +8178,7 @@ const CMD_C_PlayerLock& CMD_C_PlayerLock::default_instance() {
 
 
 void CMD_C_PlayerLock::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_C_PlayerLock)
+// @@protoc_insertion_point(message_clear_start:WPBY.CMD_C_PlayerLock)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -8230,7 +8234,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* CMD_C_PlayerLock::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_C_PlayerLock)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.CMD_C_PlayerLock)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -8250,12 +8254,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_C_PlayerLock)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.CMD_C_PlayerLock)
   return target;
 }
 
 size_t CMD_C_PlayerLock::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_C_PlayerLock)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.CMD_C_PlayerLock)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -8286,22 +8290,22 @@ size_t CMD_C_PlayerLock::ByteSizeLong() const {
 }
 
 void CMD_C_PlayerLock::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_C_PlayerLock)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.CMD_C_PlayerLock)
   GOOGLE_DCHECK_NE(&from, this);
   const CMD_C_PlayerLock* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_C_PlayerLock>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_C_PlayerLock)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.CMD_C_PlayerLock)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_C_PlayerLock)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.CMD_C_PlayerLock)
     MergeFrom(*source);
   }
 }
 
 void CMD_C_PlayerLock::MergeFrom(const CMD_C_PlayerLock& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_C_PlayerLock)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.CMD_C_PlayerLock)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -8316,14 +8320,14 @@ void CMD_C_PlayerLock::MergeFrom(const CMD_C_PlayerLock& from) {
 }
 
 void CMD_C_PlayerLock::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_C_PlayerLock)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.CMD_C_PlayerLock)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CMD_C_PlayerLock::CopyFrom(const CMD_C_PlayerLock& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_C_PlayerLock)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.CMD_C_PlayerLock)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -8360,7 +8364,7 @@ CMD_C_JuBuZhaDan::CMD_C_JuBuZhaDan(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   fish_id_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_C_JuBuZhaDan)
+  // @@protoc_insertion_point(arena_constructor:WPBY.CMD_C_JuBuZhaDan)
 }
 CMD_C_JuBuZhaDan::CMD_C_JuBuZhaDan(const CMD_C_JuBuZhaDan& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
@@ -8369,7 +8373,7 @@ CMD_C_JuBuZhaDan::CMD_C_JuBuZhaDan(const CMD_C_JuBuZhaDan& from)
   ::memcpy(&chair_id_, &from.chair_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&te_shu_iu_id_) -
     reinterpret_cast<char*>(&chair_id_)) + sizeof(te_shu_iu_id_));
-  // @@protoc_insertion_point(copy_constructor:CMD_C_JuBuZhaDan)
+  // @@protoc_insertion_point(copy_constructor:WPBY.CMD_C_JuBuZhaDan)
 }
 
 void CMD_C_JuBuZhaDan::SharedCtor() {
@@ -8380,7 +8384,7 @@ void CMD_C_JuBuZhaDan::SharedCtor() {
 }
 
 CMD_C_JuBuZhaDan::~CMD_C_JuBuZhaDan() {
-  // @@protoc_insertion_point(destructor:CMD_C_JuBuZhaDan)
+  // @@protoc_insertion_point(destructor:WPBY.CMD_C_JuBuZhaDan)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -8405,7 +8409,7 @@ const CMD_C_JuBuZhaDan& CMD_C_JuBuZhaDan::default_instance() {
 
 
 void CMD_C_JuBuZhaDan::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_C_JuBuZhaDan)
+// @@protoc_insertion_point(message_clear_start:WPBY.CMD_C_JuBuZhaDan)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -8472,7 +8476,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* CMD_C_JuBuZhaDan::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_C_JuBuZhaDan)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.CMD_C_JuBuZhaDan)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -8501,12 +8505,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_C_JuBuZhaDan)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.CMD_C_JuBuZhaDan)
   return target;
 }
 
 size_t CMD_C_JuBuZhaDan::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_C_JuBuZhaDan)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.CMD_C_JuBuZhaDan)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -8552,22 +8556,22 @@ size_t CMD_C_JuBuZhaDan::ByteSizeLong() const {
 }
 
 void CMD_C_JuBuZhaDan::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_C_JuBuZhaDan)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.CMD_C_JuBuZhaDan)
   GOOGLE_DCHECK_NE(&from, this);
   const CMD_C_JuBuZhaDan* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_C_JuBuZhaDan>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_C_JuBuZhaDan)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.CMD_C_JuBuZhaDan)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_C_JuBuZhaDan)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.CMD_C_JuBuZhaDan)
     MergeFrom(*source);
   }
 }
 
 void CMD_C_JuBuZhaDan::MergeFrom(const CMD_C_JuBuZhaDan& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_C_JuBuZhaDan)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.CMD_C_JuBuZhaDan)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -8583,14 +8587,14 @@ void CMD_C_JuBuZhaDan::MergeFrom(const CMD_C_JuBuZhaDan& from) {
 }
 
 void CMD_C_JuBuZhaDan::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_C_JuBuZhaDan)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.CMD_C_JuBuZhaDan)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CMD_C_JuBuZhaDan::CopyFrom(const CMD_C_JuBuZhaDan& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_C_JuBuZhaDan)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.CMD_C_JuBuZhaDan)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -8628,7 +8632,7 @@ CMD_C_TongLeiZhaDan::CMD_C_TongLeiZhaDan(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   fish_id_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_C_TongLeiZhaDan)
+  // @@protoc_insertion_point(arena_constructor:WPBY.CMD_C_TongLeiZhaDan)
 }
 CMD_C_TongLeiZhaDan::CMD_C_TongLeiZhaDan(const CMD_C_TongLeiZhaDan& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
@@ -8637,7 +8641,7 @@ CMD_C_TongLeiZhaDan::CMD_C_TongLeiZhaDan(const CMD_C_TongLeiZhaDan& from)
   ::memcpy(&chair_id_, &from.chair_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&te_shu_iu_id_) -
     reinterpret_cast<char*>(&chair_id_)) + sizeof(te_shu_iu_id_));
-  // @@protoc_insertion_point(copy_constructor:CMD_C_TongLeiZhaDan)
+  // @@protoc_insertion_point(copy_constructor:WPBY.CMD_C_TongLeiZhaDan)
 }
 
 void CMD_C_TongLeiZhaDan::SharedCtor() {
@@ -8648,7 +8652,7 @@ void CMD_C_TongLeiZhaDan::SharedCtor() {
 }
 
 CMD_C_TongLeiZhaDan::~CMD_C_TongLeiZhaDan() {
-  // @@protoc_insertion_point(destructor:CMD_C_TongLeiZhaDan)
+  // @@protoc_insertion_point(destructor:WPBY.CMD_C_TongLeiZhaDan)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -8673,7 +8677,7 @@ const CMD_C_TongLeiZhaDan& CMD_C_TongLeiZhaDan::default_instance() {
 
 
 void CMD_C_TongLeiZhaDan::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_C_TongLeiZhaDan)
+// @@protoc_insertion_point(message_clear_start:WPBY.CMD_C_TongLeiZhaDan)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -8740,7 +8744,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* CMD_C_TongLeiZhaDan::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_C_TongLeiZhaDan)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.CMD_C_TongLeiZhaDan)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -8769,12 +8773,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_C_TongLeiZhaDan)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.CMD_C_TongLeiZhaDan)
   return target;
 }
 
 size_t CMD_C_TongLeiZhaDan::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_C_TongLeiZhaDan)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.CMD_C_TongLeiZhaDan)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -8820,22 +8824,22 @@ size_t CMD_C_TongLeiZhaDan::ByteSizeLong() const {
 }
 
 void CMD_C_TongLeiZhaDan::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_C_TongLeiZhaDan)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.CMD_C_TongLeiZhaDan)
   GOOGLE_DCHECK_NE(&from, this);
   const CMD_C_TongLeiZhaDan* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_C_TongLeiZhaDan>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_C_TongLeiZhaDan)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.CMD_C_TongLeiZhaDan)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_C_TongLeiZhaDan)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.CMD_C_TongLeiZhaDan)
     MergeFrom(*source);
   }
 }
 
 void CMD_C_TongLeiZhaDan::MergeFrom(const CMD_C_TongLeiZhaDan& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_C_TongLeiZhaDan)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.CMD_C_TongLeiZhaDan)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -8851,14 +8855,14 @@ void CMD_C_TongLeiZhaDan::MergeFrom(const CMD_C_TongLeiZhaDan& from) {
 }
 
 void CMD_C_TongLeiZhaDan::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_C_TongLeiZhaDan)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.CMD_C_TongLeiZhaDan)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CMD_C_TongLeiZhaDan::CopyFrom(const CMD_C_TongLeiZhaDan& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_C_TongLeiZhaDan)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.CMD_C_TongLeiZhaDan)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -8896,7 +8900,7 @@ CMD_C_ShuiHuZhuan::CMD_C_ShuiHuZhuan(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   fish_id_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_C_ShuiHuZhuan)
+  // @@protoc_insertion_point(arena_constructor:WPBY.CMD_C_ShuiHuZhuan)
 }
 CMD_C_ShuiHuZhuan::CMD_C_ShuiHuZhuan(const CMD_C_ShuiHuZhuan& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
@@ -8905,7 +8909,7 @@ CMD_C_ShuiHuZhuan::CMD_C_ShuiHuZhuan(const CMD_C_ShuiHuZhuan& from)
   ::memcpy(&chair_id_, &from.chair_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&te_shu_iu_id_) -
     reinterpret_cast<char*>(&chair_id_)) + sizeof(te_shu_iu_id_));
-  // @@protoc_insertion_point(copy_constructor:CMD_C_ShuiHuZhuan)
+  // @@protoc_insertion_point(copy_constructor:WPBY.CMD_C_ShuiHuZhuan)
 }
 
 void CMD_C_ShuiHuZhuan::SharedCtor() {
@@ -8916,7 +8920,7 @@ void CMD_C_ShuiHuZhuan::SharedCtor() {
 }
 
 CMD_C_ShuiHuZhuan::~CMD_C_ShuiHuZhuan() {
-  // @@protoc_insertion_point(destructor:CMD_C_ShuiHuZhuan)
+  // @@protoc_insertion_point(destructor:WPBY.CMD_C_ShuiHuZhuan)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -8941,7 +8945,7 @@ const CMD_C_ShuiHuZhuan& CMD_C_ShuiHuZhuan::default_instance() {
 
 
 void CMD_C_ShuiHuZhuan::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_C_ShuiHuZhuan)
+// @@protoc_insertion_point(message_clear_start:WPBY.CMD_C_ShuiHuZhuan)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -9008,7 +9012,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* CMD_C_ShuiHuZhuan::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_C_ShuiHuZhuan)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.CMD_C_ShuiHuZhuan)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -9037,12 +9041,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_C_ShuiHuZhuan)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.CMD_C_ShuiHuZhuan)
   return target;
 }
 
 size_t CMD_C_ShuiHuZhuan::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_C_ShuiHuZhuan)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.CMD_C_ShuiHuZhuan)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -9088,22 +9092,22 @@ size_t CMD_C_ShuiHuZhuan::ByteSizeLong() const {
 }
 
 void CMD_C_ShuiHuZhuan::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_C_ShuiHuZhuan)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.CMD_C_ShuiHuZhuan)
   GOOGLE_DCHECK_NE(&from, this);
   const CMD_C_ShuiHuZhuan* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_C_ShuiHuZhuan>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_C_ShuiHuZhuan)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.CMD_C_ShuiHuZhuan)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_C_ShuiHuZhuan)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.CMD_C_ShuiHuZhuan)
     MergeFrom(*source);
   }
 }
 
 void CMD_C_ShuiHuZhuan::MergeFrom(const CMD_C_ShuiHuZhuan& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_C_ShuiHuZhuan)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.CMD_C_ShuiHuZhuan)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -9119,14 +9123,14 @@ void CMD_C_ShuiHuZhuan::MergeFrom(const CMD_C_ShuiHuZhuan& from) {
 }
 
 void CMD_C_ShuiHuZhuan::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_C_ShuiHuZhuan)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.CMD_C_ShuiHuZhuan)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CMD_C_ShuiHuZhuan::CopyFrom(const CMD_C_ShuiHuZhuan& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_C_ShuiHuZhuan)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.CMD_C_ShuiHuZhuan)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -9163,7 +9167,7 @@ CMD_C_ChangeBulletLevel::CMD_C_ChangeBulletLevel(::PROTOBUF_NAMESPACE_ID::Arena*
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_C_ChangeBulletLevel)
+  // @@protoc_insertion_point(arena_constructor:WPBY.CMD_C_ChangeBulletLevel)
 }
 CMD_C_ChangeBulletLevel::CMD_C_ChangeBulletLevel(const CMD_C_ChangeBulletLevel& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -9171,7 +9175,7 @@ CMD_C_ChangeBulletLevel::CMD_C_ChangeBulletLevel(const CMD_C_ChangeBulletLevel& 
   ::memcpy(&chair_id_, &from.chair_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&gun_level_) -
     reinterpret_cast<char*>(&chair_id_)) + sizeof(gun_level_));
-  // @@protoc_insertion_point(copy_constructor:CMD_C_ChangeBulletLevel)
+  // @@protoc_insertion_point(copy_constructor:WPBY.CMD_C_ChangeBulletLevel)
 }
 
 void CMD_C_ChangeBulletLevel::SharedCtor() {
@@ -9182,7 +9186,7 @@ void CMD_C_ChangeBulletLevel::SharedCtor() {
 }
 
 CMD_C_ChangeBulletLevel::~CMD_C_ChangeBulletLevel() {
-  // @@protoc_insertion_point(destructor:CMD_C_ChangeBulletLevel)
+  // @@protoc_insertion_point(destructor:WPBY.CMD_C_ChangeBulletLevel)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -9207,7 +9211,7 @@ const CMD_C_ChangeBulletLevel& CMD_C_ChangeBulletLevel::default_instance() {
 
 
 void CMD_C_ChangeBulletLevel::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_C_ChangeBulletLevel)
+// @@protoc_insertion_point(message_clear_start:WPBY.CMD_C_ChangeBulletLevel)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -9270,7 +9274,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* CMD_C_ChangeBulletLevel::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_C_ChangeBulletLevel)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.CMD_C_ChangeBulletLevel)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -9296,12 +9300,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_C_ChangeBulletLevel)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.CMD_C_ChangeBulletLevel)
   return target;
 }
 
 size_t CMD_C_ChangeBulletLevel::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_C_ChangeBulletLevel)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.CMD_C_ChangeBulletLevel)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -9339,22 +9343,22 @@ size_t CMD_C_ChangeBulletLevel::ByteSizeLong() const {
 }
 
 void CMD_C_ChangeBulletLevel::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_C_ChangeBulletLevel)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.CMD_C_ChangeBulletLevel)
   GOOGLE_DCHECK_NE(&from, this);
   const CMD_C_ChangeBulletLevel* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_C_ChangeBulletLevel>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_C_ChangeBulletLevel)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.CMD_C_ChangeBulletLevel)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_C_ChangeBulletLevel)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.CMD_C_ChangeBulletLevel)
     MergeFrom(*source);
   }
 }
 
 void CMD_C_ChangeBulletLevel::MergeFrom(const CMD_C_ChangeBulletLevel& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_C_ChangeBulletLevel)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.CMD_C_ChangeBulletLevel)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -9372,14 +9376,14 @@ void CMD_C_ChangeBulletLevel::MergeFrom(const CMD_C_ChangeBulletLevel& from) {
 }
 
 void CMD_C_ChangeBulletLevel::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_C_ChangeBulletLevel)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.CMD_C_ChangeBulletLevel)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CMD_C_ChangeBulletLevel::CopyFrom(const CMD_C_ChangeBulletLevel& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_C_ChangeBulletLevel)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.CMD_C_ChangeBulletLevel)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -9415,7 +9419,7 @@ Bullet::Bullet(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:Bullet)
+  // @@protoc_insertion_point(arena_constructor:WPBY.Bullet)
 }
 Bullet::Bullet(const Bullet& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -9423,7 +9427,7 @@ Bullet::Bullet(const Bullet& from)
   ::memcpy(&id_, &from.id_,
     static_cast<size_t>(reinterpret_cast<char*>(&chips_) -
     reinterpret_cast<char*>(&id_)) + sizeof(chips_));
-  // @@protoc_insertion_point(copy_constructor:Bullet)
+  // @@protoc_insertion_point(copy_constructor:WPBY.Bullet)
 }
 
 void Bullet::SharedCtor() {
@@ -9434,7 +9438,7 @@ void Bullet::SharedCtor() {
 }
 
 Bullet::~Bullet() {
-  // @@protoc_insertion_point(destructor:Bullet)
+  // @@protoc_insertion_point(destructor:WPBY.Bullet)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -9459,7 +9463,7 @@ const Bullet& Bullet::default_instance() {
 
 
 void Bullet::Clear() {
-// @@protoc_insertion_point(message_clear_start:Bullet)
+// @@protoc_insertion_point(message_clear_start:WPBY.Bullet)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -9543,7 +9547,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* Bullet::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:Bullet)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.Bullet)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -9587,12 +9591,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:Bullet)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.Bullet)
   return target;
 }
 
 size_t Bullet::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:Bullet)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.Bullet)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -9651,22 +9655,22 @@ size_t Bullet::ByteSizeLong() const {
 }
 
 void Bullet::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:Bullet)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.Bullet)
   GOOGLE_DCHECK_NE(&from, this);
   const Bullet* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Bullet>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Bullet)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.Bullet)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:Bullet)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.Bullet)
     MergeFrom(*source);
   }
 }
 
 void Bullet::MergeFrom(const Bullet& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:Bullet)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.Bullet)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -9693,14 +9697,14 @@ void Bullet::MergeFrom(const Bullet& from) {
 }
 
 void Bullet::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:Bullet)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.Bullet)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void Bullet::CopyFrom(const Bullet& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:Bullet)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.Bullet)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -9730,10 +9734,10 @@ void Bullet::InternalSwap(Bullet* other) {
 
 class CMD_C_PressShoot::_Internal {
  public:
-  static const ::Bullet& bullet(const CMD_C_PressShoot* msg);
+  static const ::WPBY::Bullet& bullet(const CMD_C_PressShoot* msg);
 };
 
-const ::Bullet&
+const ::WPBY::Bullet&
 CMD_C_PressShoot::_Internal::bullet(const CMD_C_PressShoot* msg) {
   return *msg->bullet_;
 }
@@ -9741,20 +9745,20 @@ CMD_C_PressShoot::CMD_C_PressShoot(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_C_PressShoot)
+  // @@protoc_insertion_point(arena_constructor:WPBY.CMD_C_PressShoot)
 }
 CMD_C_PressShoot::CMD_C_PressShoot(const CMD_C_PressShoot& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_bullet()) {
-    bullet_ = new ::Bullet(*from.bullet_);
+    bullet_ = new ::WPBY::Bullet(*from.bullet_);
   } else {
     bullet_ = nullptr;
   }
   ::memcpy(&x_, &from.x_,
     static_cast<size_t>(reinterpret_cast<char*>(&chair_id_) -
     reinterpret_cast<char*>(&x_)) + sizeof(chair_id_));
-  // @@protoc_insertion_point(copy_constructor:CMD_C_PressShoot)
+  // @@protoc_insertion_point(copy_constructor:WPBY.CMD_C_PressShoot)
 }
 
 void CMD_C_PressShoot::SharedCtor() {
@@ -9766,7 +9770,7 @@ void CMD_C_PressShoot::SharedCtor() {
 }
 
 CMD_C_PressShoot::~CMD_C_PressShoot() {
-  // @@protoc_insertion_point(destructor:CMD_C_PressShoot)
+  // @@protoc_insertion_point(destructor:WPBY.CMD_C_PressShoot)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -9792,7 +9796,7 @@ const CMD_C_PressShoot& CMD_C_PressShoot::default_instance() {
 
 
 void CMD_C_PressShoot::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_C_PressShoot)
+// @@protoc_insertion_point(message_clear_start:WPBY.CMD_C_PressShoot)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -9835,7 +9839,7 @@ const char* CMD_C_PressShoot::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .Bullet bullet = 4;
+      // .WPBY.Bullet bullet = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_bullet(), ptr);
@@ -9866,7 +9870,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* CMD_C_PressShoot::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_C_PressShoot)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.CMD_C_PressShoot)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -9888,7 +9892,7 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_chair_id(), target);
   }
 
-  // .Bullet bullet = 4;
+  // .WPBY.Bullet bullet = 4;
   if (this->has_bullet()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
@@ -9900,19 +9904,19 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_C_PressShoot)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.CMD_C_PressShoot)
   return target;
 }
 
 size_t CMD_C_PressShoot::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_C_PressShoot)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.CMD_C_PressShoot)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .Bullet bullet = 4;
+  // .WPBY.Bullet bullet = 4;
   if (this->has_bullet()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
@@ -9946,29 +9950,29 @@ size_t CMD_C_PressShoot::ByteSizeLong() const {
 }
 
 void CMD_C_PressShoot::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_C_PressShoot)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.CMD_C_PressShoot)
   GOOGLE_DCHECK_NE(&from, this);
   const CMD_C_PressShoot* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_C_PressShoot>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_C_PressShoot)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.CMD_C_PressShoot)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_C_PressShoot)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.CMD_C_PressShoot)
     MergeFrom(*source);
   }
 }
 
 void CMD_C_PressShoot::MergeFrom(const CMD_C_PressShoot& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_C_PressShoot)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.CMD_C_PressShoot)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.has_bullet()) {
-    _internal_mutable_bullet()->::Bullet::MergeFrom(from._internal_bullet());
+    _internal_mutable_bullet()->::WPBY::Bullet::MergeFrom(from._internal_bullet());
   }
   if (!(from.x() <= 0 && from.x() >= 0)) {
     _internal_set_x(from._internal_x());
@@ -9982,14 +9986,14 @@ void CMD_C_PressShoot::MergeFrom(const CMD_C_PressShoot& from) {
 }
 
 void CMD_C_PressShoot::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_C_PressShoot)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.CMD_C_PressShoot)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CMD_C_PressShoot::CopyFrom(const CMD_C_PressShoot& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_C_PressShoot)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.CMD_C_PressShoot)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -10019,10 +10023,10 @@ void CMD_C_PressShoot::InternalSwap(CMD_C_PressShoot* other) {
 
 class CMD_C_HitedFish::_Internal {
  public:
-  static const ::Bullet& bullet(const CMD_C_HitedFish* msg);
+  static const ::WPBY::Bullet& bullet(const CMD_C_HitedFish* msg);
 };
 
-const ::Bullet&
+const ::WPBY::Bullet&
 CMD_C_HitedFish::_Internal::bullet(const CMD_C_HitedFish* msg) {
   return *msg->bullet_;
 }
@@ -10031,19 +10035,19 @@ CMD_C_HitedFish::CMD_C_HitedFish(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   hit_fish_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_C_HitedFish)
+  // @@protoc_insertion_point(arena_constructor:WPBY.CMD_C_HitedFish)
 }
 CMD_C_HitedFish::CMD_C_HitedFish(const CMD_C_HitedFish& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       hit_fish_(from.hit_fish_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_bullet()) {
-    bullet_ = new ::Bullet(*from.bullet_);
+    bullet_ = new ::WPBY::Bullet(*from.bullet_);
   } else {
     bullet_ = nullptr;
   }
   chair_id_ = from.chair_id_;
-  // @@protoc_insertion_point(copy_constructor:CMD_C_HitedFish)
+  // @@protoc_insertion_point(copy_constructor:WPBY.CMD_C_HitedFish)
 }
 
 void CMD_C_HitedFish::SharedCtor() {
@@ -10055,7 +10059,7 @@ void CMD_C_HitedFish::SharedCtor() {
 }
 
 CMD_C_HitedFish::~CMD_C_HitedFish() {
-  // @@protoc_insertion_point(destructor:CMD_C_HitedFish)
+  // @@protoc_insertion_point(destructor:WPBY.CMD_C_HitedFish)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -10081,7 +10085,7 @@ const CMD_C_HitedFish& CMD_C_HitedFish::default_instance() {
 
 
 void CMD_C_HitedFish::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_C_HitedFish)
+// @@protoc_insertion_point(message_clear_start:WPBY.CMD_C_HitedFish)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -10102,7 +10106,7 @@ const char* CMD_C_HitedFish::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // .Bullet bullet = 1;
+      // .WPBY.Bullet bullet = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_bullet(), ptr);
@@ -10150,11 +10154,11 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* CMD_C_HitedFish::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_C_HitedFish)
+  // @@protoc_insertion_point(serialize_to_array_start:WPBY.CMD_C_HitedFish)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .Bullet bullet = 1;
+  // .WPBY.Bullet bullet = 1;
   if (this->has_bullet()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
@@ -10181,12 +10185,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_C_HitedFish)
+  // @@protoc_insertion_point(serialize_to_array_end:WPBY.CMD_C_HitedFish)
   return target;
 }
 
 size_t CMD_C_HitedFish::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_C_HitedFish)
+// @@protoc_insertion_point(message_byte_size_start:WPBY.CMD_C_HitedFish)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -10208,7 +10212,7 @@ size_t CMD_C_HitedFish::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  // .Bullet bullet = 1;
+  // .WPBY.Bullet bullet = 1;
   if (this->has_bullet()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
@@ -10232,22 +10236,22 @@ size_t CMD_C_HitedFish::ByteSizeLong() const {
 }
 
 void CMD_C_HitedFish::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_C_HitedFish)
+// @@protoc_insertion_point(generalized_merge_from_start:WPBY.CMD_C_HitedFish)
   GOOGLE_DCHECK_NE(&from, this);
   const CMD_C_HitedFish* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_C_HitedFish>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_C_HitedFish)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:WPBY.CMD_C_HitedFish)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_C_HitedFish)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:WPBY.CMD_C_HitedFish)
     MergeFrom(*source);
   }
 }
 
 void CMD_C_HitedFish::MergeFrom(const CMD_C_HitedFish& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_C_HitedFish)
+// @@protoc_insertion_point(class_specific_merge_from_start:WPBY.CMD_C_HitedFish)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -10255,7 +10259,7 @@ void CMD_C_HitedFish::MergeFrom(const CMD_C_HitedFish& from) {
 
   hit_fish_.MergeFrom(from.hit_fish_);
   if (from.has_bullet()) {
-    _internal_mutable_bullet()->::Bullet::MergeFrom(from._internal_bullet());
+    _internal_mutable_bullet()->::WPBY::Bullet::MergeFrom(from._internal_bullet());
   }
   if (from.chair_id() != 0) {
     _internal_set_chair_id(from._internal_chair_id());
@@ -10263,14 +10267,14 @@ void CMD_C_HitedFish::MergeFrom(const CMD_C_HitedFish& from) {
 }
 
 void CMD_C_HitedFish::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_C_HitedFish)
+// @@protoc_insertion_point(generalized_copy_from_start:WPBY.CMD_C_HitedFish)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CMD_C_HitedFish::CopyFrom(const CMD_C_HitedFish& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_C_HitedFish)
+// @@protoc_insertion_point(class_specific_copy_from_start:WPBY.CMD_C_HitedFish)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -10298,111 +10302,112 @@ void CMD_C_HitedFish::InternalSwap(CMD_C_HitedFish* other) {
 
 
 // @@protoc_insertion_point(namespace_scope)
+}  // namespace WPBY
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::CMD_S_RobotShoot* Arena::CreateMaybeMessage< ::CMD_S_RobotShoot >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_S_RobotShoot >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::CMD_S_RobotShoot* Arena::CreateMaybeMessage< ::WPBY::CMD_S_RobotShoot >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::CMD_S_RobotShoot >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CMD_S_RobotList* Arena::CreateMaybeMessage< ::CMD_S_RobotList >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_S_RobotList >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::CMD_S_RobotList* Arena::CreateMaybeMessage< ::WPBY::CMD_S_RobotList >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::CMD_S_RobotList >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CMD_S_PlayerLock* Arena::CreateMaybeMessage< ::CMD_S_PlayerLock >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_S_PlayerLock >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::CMD_S_PlayerLock* Arena::CreateMaybeMessage< ::WPBY::CMD_S_PlayerLock >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::CMD_S_PlayerLock >(arena);
 }
-template<> PROTOBUF_NOINLINE ::FishPoint* Arena::CreateMaybeMessage< ::FishPoint >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::FishPoint >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::FishPoint* Arena::CreateMaybeMessage< ::WPBY::FishPoint >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::FishPoint >(arena);
 }
-template<> PROTOBUF_NOINLINE ::LineInfo* Arena::CreateMaybeMessage< ::LineInfo >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::LineInfo >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::LineInfo* Arena::CreateMaybeMessage< ::WPBY::LineInfo >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::LineInfo >(arena);
 }
-template<> PROTOBUF_NOINLINE ::FishLineInfo* Arena::CreateMaybeMessage< ::FishLineInfo >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::FishLineInfo >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::FishLineInfo* Arena::CreateMaybeMessage< ::WPBY::FishLineInfo >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::FishLineInfo >(arena);
 }
-template<> PROTOBUF_NOINLINE ::FishTide* Arena::CreateMaybeMessage< ::FishTide >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::FishTide >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::FishTide* Arena::CreateMaybeMessage< ::WPBY::FishTide >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::FishTide >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CMD_S_YuChaoCome* Arena::CreateMaybeMessage< ::CMD_S_YuChaoCome >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_S_YuChaoCome >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::CMD_S_YuChaoCome* Arena::CreateMaybeMessage< ::WPBY::CMD_S_YuChaoCome >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::CMD_S_YuChaoCome >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CMD_S_ShootLK* Arena::CreateMaybeMessage< ::CMD_S_ShootLK >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_S_ShootLK >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::CMD_S_ShootLK* Arena::CreateMaybeMessage< ::WPBY::CMD_S_ShootLK >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::CMD_S_ShootLK >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CMD_S_JuBuZhaDan* Arena::CreateMaybeMessage< ::CMD_S_JuBuZhaDan >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_S_JuBuZhaDan >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::CMD_S_JuBuZhaDan* Arena::CreateMaybeMessage< ::WPBY::CMD_S_JuBuZhaDan >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::CMD_S_JuBuZhaDan >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CMD_S_YiWangDaJin* Arena::CreateMaybeMessage< ::CMD_S_YiWangDaJin >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_S_YiWangDaJin >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::CMD_S_YiWangDaJin* Arena::CreateMaybeMessage< ::WPBY::CMD_S_YiWangDaJin >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::CMD_S_YiWangDaJin >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CMD_S_TongLeiZhaDan* Arena::CreateMaybeMessage< ::CMD_S_TongLeiZhaDan >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_S_TongLeiZhaDan >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::CMD_S_TongLeiZhaDan* Arena::CreateMaybeMessage< ::WPBY::CMD_S_TongLeiZhaDan >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::CMD_S_TongLeiZhaDan >(arena);
 }
-template<> PROTOBUF_NOINLINE ::LoadFish* Arena::CreateMaybeMessage< ::LoadFish >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::LoadFish >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::LoadFish* Arena::CreateMaybeMessage< ::WPBY::LoadFish >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::LoadFish >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CMD_S_YuWang* Arena::CreateMaybeMessage< ::CMD_S_YuWang >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_S_YuWang >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::CMD_S_YuWang* Arena::CreateMaybeMessage< ::WPBY::CMD_S_YuWang >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::CMD_S_YuWang >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CMD_S_DaSiXi* Arena::CreateMaybeMessage< ::CMD_S_DaSiXi >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_S_DaSiXi >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::CMD_S_DaSiXi* Arena::CreateMaybeMessage< ::WPBY::CMD_S_DaSiXi >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::CMD_S_DaSiXi >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CMD_S_DaSanYuan* Arena::CreateMaybeMessage< ::CMD_S_DaSanYuan >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_S_DaSanYuan >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::CMD_S_DaSanYuan* Arena::CreateMaybeMessage< ::WPBY::CMD_S_DaSanYuan >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::CMD_S_DaSanYuan >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CMD_S_ZhongYiTang* Arena::CreateMaybeMessage< ::CMD_S_ZhongYiTang >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_S_ZhongYiTang >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::CMD_S_ZhongYiTang* Arena::CreateMaybeMessage< ::WPBY::CMD_S_ZhongYiTang >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::CMD_S_ZhongYiTang >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CMD_S_ShuiHuZhuan* Arena::CreateMaybeMessage< ::CMD_S_ShuiHuZhuan >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_S_ShuiHuZhuan >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::CMD_S_ShuiHuZhuan* Arena::CreateMaybeMessage< ::WPBY::CMD_S_ShuiHuZhuan >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::CMD_S_ShuiHuZhuan >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CMD_S_ChangeBulletLevel* Arena::CreateMaybeMessage< ::CMD_S_ChangeBulletLevel >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_S_ChangeBulletLevel >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::CMD_S_ChangeBulletLevel* Arena::CreateMaybeMessage< ::WPBY::CMD_S_ChangeBulletLevel >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::CMD_S_ChangeBulletLevel >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CMD_S_CONFIG* Arena::CreateMaybeMessage< ::CMD_S_CONFIG >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_S_CONFIG >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::CMD_S_CONFIG* Arena::CreateMaybeMessage< ::WPBY::CMD_S_CONFIG >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::CMD_S_CONFIG >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CMD_S_PlayerGunLevel* Arena::CreateMaybeMessage< ::CMD_S_PlayerGunLevel >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_S_PlayerGunLevel >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::CMD_S_PlayerGunLevel* Arena::CreateMaybeMessage< ::WPBY::CMD_S_PlayerGunLevel >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::CMD_S_PlayerGunLevel >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CMD_S_AddFish* Arena::CreateMaybeMessage< ::CMD_S_AddFish >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_S_AddFish >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::CMD_S_AddFish* Arena::CreateMaybeMessage< ::WPBY::CMD_S_AddFish >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::CMD_S_AddFish >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CMD_S_PlayerEnter* Arena::CreateMaybeMessage< ::CMD_S_PlayerEnter >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_S_PlayerEnter >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::CMD_S_PlayerEnter* Arena::CreateMaybeMessage< ::WPBY::CMD_S_PlayerEnter >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::CMD_S_PlayerEnter >(arena);
 }
-template<> PROTOBUF_NOINLINE ::FishDeadInfo* Arena::CreateMaybeMessage< ::FishDeadInfo >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::FishDeadInfo >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::FishDeadInfo* Arena::CreateMaybeMessage< ::WPBY::FishDeadInfo >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::FishDeadInfo >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CMD_S_FishDead* Arena::CreateMaybeMessage< ::CMD_S_FishDead >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_S_FishDead >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::CMD_S_FishDead* Arena::CreateMaybeMessage< ::WPBY::CMD_S_FishDead >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::CMD_S_FishDead >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CMD_S_PlayerShoot* Arena::CreateMaybeMessage< ::CMD_S_PlayerShoot >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_S_PlayerShoot >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::CMD_S_PlayerShoot* Arena::CreateMaybeMessage< ::WPBY::CMD_S_PlayerShoot >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::CMD_S_PlayerShoot >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CMD_C_RobotShoot* Arena::CreateMaybeMessage< ::CMD_C_RobotShoot >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_C_RobotShoot >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::CMD_C_RobotShoot* Arena::CreateMaybeMessage< ::WPBY::CMD_C_RobotShoot >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::CMD_C_RobotShoot >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CMD_C_PlayerLock* Arena::CreateMaybeMessage< ::CMD_C_PlayerLock >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_C_PlayerLock >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::CMD_C_PlayerLock* Arena::CreateMaybeMessage< ::WPBY::CMD_C_PlayerLock >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::CMD_C_PlayerLock >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CMD_C_JuBuZhaDan* Arena::CreateMaybeMessage< ::CMD_C_JuBuZhaDan >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_C_JuBuZhaDan >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::CMD_C_JuBuZhaDan* Arena::CreateMaybeMessage< ::WPBY::CMD_C_JuBuZhaDan >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::CMD_C_JuBuZhaDan >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CMD_C_TongLeiZhaDan* Arena::CreateMaybeMessage< ::CMD_C_TongLeiZhaDan >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_C_TongLeiZhaDan >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::CMD_C_TongLeiZhaDan* Arena::CreateMaybeMessage< ::WPBY::CMD_C_TongLeiZhaDan >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::CMD_C_TongLeiZhaDan >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CMD_C_ShuiHuZhuan* Arena::CreateMaybeMessage< ::CMD_C_ShuiHuZhuan >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_C_ShuiHuZhuan >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::CMD_C_ShuiHuZhuan* Arena::CreateMaybeMessage< ::WPBY::CMD_C_ShuiHuZhuan >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::CMD_C_ShuiHuZhuan >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CMD_C_ChangeBulletLevel* Arena::CreateMaybeMessage< ::CMD_C_ChangeBulletLevel >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_C_ChangeBulletLevel >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::CMD_C_ChangeBulletLevel* Arena::CreateMaybeMessage< ::WPBY::CMD_C_ChangeBulletLevel >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::CMD_C_ChangeBulletLevel >(arena);
 }
-template<> PROTOBUF_NOINLINE ::Bullet* Arena::CreateMaybeMessage< ::Bullet >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::Bullet >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::Bullet* Arena::CreateMaybeMessage< ::WPBY::Bullet >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::Bullet >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CMD_C_PressShoot* Arena::CreateMaybeMessage< ::CMD_C_PressShoot >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_C_PressShoot >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::CMD_C_PressShoot* Arena::CreateMaybeMessage< ::WPBY::CMD_C_PressShoot >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::CMD_C_PressShoot >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CMD_C_HitedFish* Arena::CreateMaybeMessage< ::CMD_C_HitedFish >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_C_HitedFish >(arena);
+template<> PROTOBUF_NOINLINE ::WPBY::CMD_C_HitedFish* Arena::CreateMaybeMessage< ::WPBY::CMD_C_HitedFish >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::WPBY::CMD_C_HitedFish >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 
