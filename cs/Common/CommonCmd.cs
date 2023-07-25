@@ -42,7 +42,7 @@ public static partial class CommonCmdReflection {
           "b2dpbl9EZWxldGVBbGxSZWFkTWFpbFJlc3AQERIYChRNc2dJRExvZ2luX1Bo",
           "b25lQ29kZRASEhwKGE1zZ0lETG9naW5fUGhvbmVDb2RlUmVzcBATEiEKHU1z",
           "Z0lETG9naW5fU3luY1BsYXllckdvbGRSZXNwEBQSIwofTXNnSURMb2dpbl9O",
-          "b3RpZnlHYW1lU2VydmVyTGlzdBAVKu8CCgpFTXNnSURHYW1lEhIKDk1zZ0lE",
+          "b3RpZnlHYW1lU2VydmVyTGlzdBAVKsUDCgpFTXNnSURHYW1lEhIKDk1zZ0lE",
           "R2FtZV9OdWxsEAASFAoPTXNnSURHYW1lX0xvZ2luEOkHEhgKE01zZ0lER2Ft",
           "ZV9Mb2dpblJlc3AQ6gcSHgoZTXNnSURHYW1lX1NxdWVlemVTZWF0UmVzcBDr",
           "BxIVChBNc2dJREdhbWVfTG9nb3V0EOwHEhoKFU1zZ0lER2FtZV9BdXRvU2l0",
@@ -50,7 +50,9 @@ public static partial class CommonCmdReflection {
           "YW1lX1N5bmNQbGF5ZXJJbmZvUmVzcBDvBxImCiFNc2dJREdhbWVfTm90aWZ5",
           "UGxheWVyU3RhbmRVcFJlc3AQ8AcSIwoeTXNnSURHYW1lX1N5bmNQbGF5ZXJz",
           "U2NvcmVSZXNwEPEHEhwKF01zZ0lER2FtZV9TZW5kR2FtZVNlbmNlEPIHEiAK",
-          "G01zZ0lER2FtZV9TZW5kR2FtZVNlbmNlUmVzcBDzB2IGcHJvdG8z"));
+          "G01zZ0lER2FtZV9TZW5kR2FtZVNlbmNlUmVzcBDzBxIgChtNc2dJREdhbWVf",
+          "Tm90aWZ5TWVzc2FnZVJlc3AQ9AcSGQoUTXNnSURHYW1lX0NyZWF0ZVJvb20Q",
+          "9QcSFwoSTXNnSURHYW1lX0pvaW5Sb29tEPYHYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::EMsgIDMain), typeof(global::EResCode), typeof(global::EMsgIDLogin), typeof(global::EMsgIDGame), }, null, null));
@@ -225,6 +227,18 @@ public enum EMsgIDGame {
   ///请求场景消息返回
   /// </summary>
   [pbr::OriginalName("MsgIDGame_SendGameSenceResp")] MsgIdgameSendGameSenceResp = 1011,
+  /// <summary>
+  ///通用消息通知
+  /// </summary>
+  [pbr::OriginalName("MsgIDGame_NotifyMessageResp")] MsgIdgameNotifyMessageResp = 1012,
+  /// <summary>
+  ///创建房间
+  /// </summary>
+  [pbr::OriginalName("MsgIDGame_CreateRoom")] MsgIdgameCreateRoom = 1013,
+  /// <summary>
+  ///加入房间
+  /// </summary>
+  [pbr::OriginalName("MsgIDGame_JoinRoom")] MsgIdgameJoinRoom = 1014,
 }
 
 #endregion

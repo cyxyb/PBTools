@@ -36,3 +36,10 @@ message MsgSyncPlayersScore
 	int32		chair_id		= 1;	//椅子号
 	uint64		coin			= 2;	//玩家金币
 }
+
+//加入房间
+message MsgJoinRoom
+{
+	int32		room_id		= 1;	//房间id
+	string		password	= 2;	//房间密码
+}

@@ -3984,6 +3984,7 @@ class MsgDBGamePlayerLoginResp PROTOBUF_FINAL :
     kBeautifulIdFieldNumber = 3,
     kCheatRateFieldNumber = 8,
     kCoinFieldNumber = 6,
+    kVipFieldNumber = 9,
   };
   // string nickname = 4;
   void clear_nickname();
@@ -4078,6 +4079,15 @@ class MsgDBGamePlayerLoginResp PROTOBUF_FINAL :
   void _internal_set_coin(::PROTOBUF_NAMESPACE_ID::uint64 value);
   public:
 
+  // bool vip = 9;
+  void clear_vip();
+  bool vip() const;
+  void set_vip(bool value);
+  private:
+  bool _internal_vip() const;
+  void _internal_set_vip(bool value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgDBGamePlayerLoginResp)
  private:
   class _Internal;
@@ -4093,6 +4103,7 @@ class MsgDBGamePlayerLoginResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 beautiful_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 cheat_rate_;
   ::PROTOBUF_NAMESPACE_ID::uint64 coin_;
+  bool vip_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -7308,6 +7319,26 @@ inline void MsgDBGamePlayerLoginResp::_internal_set_cheat_rate(::PROTOBUF_NAMESP
 inline void MsgDBGamePlayerLoginResp::set_cheat_rate(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_cheat_rate(value);
   // @@protoc_insertion_point(field_set:MsgDBGamePlayerLoginResp.cheat_rate)
+}
+
+// bool vip = 9;
+inline void MsgDBGamePlayerLoginResp::clear_vip() {
+  vip_ = false;
+}
+inline bool MsgDBGamePlayerLoginResp::_internal_vip() const {
+  return vip_;
+}
+inline bool MsgDBGamePlayerLoginResp::vip() const {
+  // @@protoc_insertion_point(field_get:MsgDBGamePlayerLoginResp.vip)
+  return _internal_vip();
+}
+inline void MsgDBGamePlayerLoginResp::_internal_set_vip(bool value) {
+  
+  vip_ = value;
+}
+inline void MsgDBGamePlayerLoginResp::set_vip(bool value) {
+  _internal_set_vip(value);
+  // @@protoc_insertion_point(field_set:MsgDBGamePlayerLoginResp.vip)
 }
 
 // -------------------------------------------------------------------

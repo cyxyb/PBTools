@@ -629,6 +629,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ServerInternalProto_2eproto::o
   PROTOBUF_FIELD_OFFSET(::MsgDBGamePlayerLoginResp, coin_),
   PROTOBUF_FIELD_OFFSET(::MsgDBGamePlayerLoginResp, password_),
   PROTOBUF_FIELD_OFFSET(::MsgDBGamePlayerLoginResp, cheat_rate_),
+  PROTOBUF_FIELD_OFFSET(::MsgDBGamePlayerLoginResp, vip_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgDBWriteScore, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -674,8 +675,8 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 172, -1, sizeof(::MsgLoadCheatRate)},
   { 181, -1, sizeof(::MsgDBGamePlayerLogin)},
   { 189, -1, sizeof(::MsgDBGamePlayerLoginResp)},
-  { 202, -1, sizeof(::MsgDBWriteScore)},
-  { 211, -1, sizeof(::MsgDBWriteScoreResp)},
+  { 203, -1, sizeof(::MsgDBWriteScore)},
+  { 212, -1, sizeof(::MsgDBWriteScoreResp)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -757,19 +758,19 @@ const char descriptor_table_protodef_ServerInternalProto_2eproto[] PROTOBUF_SECT
   "\n\023fail_min_line_score\030\003 \001(\003\022\033\n\023fail_max_"
   "line_score\030\004 \001(\003\"E\n\024MsgDBGamePlayerLogin"
   "\022\017\n\007user_id\030\001 \001(\005\022\020\n\010password\030\002 \001(\t\022\n\n\002i"
-  "p\030\003 \001(\005\"\251\001\n\030MsgDBGamePlayerLoginResp\022\020\n\010"
+  "p\030\003 \001(\005\"\266\001\n\030MsgDBGamePlayerLoginResp\022\020\n\010"
   "res_code\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\024\n\014beaut"
   "iful_id\030\003 \001(\005\022\020\n\010nickname\030\004 \001(\t\022\016\n\006avata"
   "r\030\005 \001(\t\022\014\n\004coin\030\006 \001(\004\022\020\n\010password\030\007 \001(\t\022"
-  "\022\n\ncheat_rate\030\010 \001(\005\"T\n\017MsgDBWriteScore\022\017"
-  "\n\007user_id\030\001 \001(\005\022\013\n\003bet\030\002 \001(\005\022\r\n\005score\030\003 "
-  "\001(\003\022\024\n\014game_details\030\004 \001(\t\"\322\001\n\023MsgDBWrite"
-  "ScoreResp\022\017\n\007user_id\030\001 \001(\005\022\031\n\021player_che"
-  "at_rate\030\002 \001(\005\022\032\n\022player_cheat_score\030\003 \001("
-  "\005\022\031\n\021system_cheat_rate\030\004 \001(\005\022\032\n\022system_c"
-  "heat_score\030\005 \001(\003\022\035\n\025system_blood_min_lin"
-  "e\030\006 \001(\003\022\035\n\025system_blood_max_line\030\007 \001(\003b\006"
-  "proto3"
+  "\022\n\ncheat_rate\030\010 \001(\005\022\013\n\003vip\030\t \001(\010\"T\n\017MsgD"
+  "BWriteScore\022\017\n\007user_id\030\001 \001(\005\022\013\n\003bet\030\002 \001("
+  "\005\022\r\n\005score\030\003 \001(\003\022\024\n\014game_details\030\004 \001(\t\"\322"
+  "\001\n\023MsgDBWriteScoreResp\022\017\n\007user_id\030\001 \001(\005\022"
+  "\031\n\021player_cheat_rate\030\002 \001(\005\022\032\n\022player_che"
+  "at_score\030\003 \001(\005\022\031\n\021system_cheat_rate\030\004 \001("
+  "\005\022\032\n\022system_cheat_score\030\005 \001(\003\022\035\n\025system_"
+  "blood_min_line\030\006 \001(\003\022\035\n\025system_blood_max"
+  "_line\030\007 \001(\003b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_ServerInternalProto_2eproto_deps[1] = {
 };
@@ -801,7 +802,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Ser
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ServerInternalProto_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ServerInternalProto_2eproto = {
-  false, false, descriptor_table_protodef_ServerInternalProto_2eproto, "ServerInternalProto.proto", 2526,
+  false, false, descriptor_table_protodef_ServerInternalProto_2eproto, "ServerInternalProto.proto", 2539,
   &descriptor_table_ServerInternalProto_2eproto_once, descriptor_table_ServerInternalProto_2eproto_sccs, descriptor_table_ServerInternalProto_2eproto_deps, 24, 0,
   schemas, file_default_instances, TableStruct_ServerInternalProto_2eproto::offsets,
   file_level_metadata_ServerInternalProto_2eproto, 24, file_level_enum_descriptors_ServerInternalProto_2eproto, file_level_service_descriptors_ServerInternalProto_2eproto,
@@ -6867,8 +6868,8 @@ MsgDBGamePlayerLoginResp::MsgDBGamePlayerLoginResp(const MsgDBGamePlayerLoginRes
       GetArena());
   }
   ::memcpy(&res_code_, &from.res_code_,
-    static_cast<size_t>(reinterpret_cast<char*>(&coin_) -
-    reinterpret_cast<char*>(&res_code_)) + sizeof(coin_));
+    static_cast<size_t>(reinterpret_cast<char*>(&vip_) -
+    reinterpret_cast<char*>(&res_code_)) + sizeof(vip_));
   // @@protoc_insertion_point(copy_constructor:MsgDBGamePlayerLoginResp)
 }
 
@@ -6879,8 +6880,8 @@ void MsgDBGamePlayerLoginResp::SharedCtor() {
   password_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&res_code_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&coin_) -
-      reinterpret_cast<char*>(&res_code_)) + sizeof(coin_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&vip_) -
+      reinterpret_cast<char*>(&res_code_)) + sizeof(vip_));
 }
 
 MsgDBGamePlayerLoginResp::~MsgDBGamePlayerLoginResp() {
@@ -6921,8 +6922,8 @@ void MsgDBGamePlayerLoginResp::Clear() {
   avatar_.ClearToEmpty();
   password_.ClearToEmpty();
   ::memset(&res_code_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&coin_) -
-      reinterpret_cast<char*>(&res_code_)) + sizeof(coin_));
+      reinterpret_cast<char*>(&vip_) -
+      reinterpret_cast<char*>(&res_code_)) + sizeof(vip_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -6992,6 +6993,13 @@ const char* MsgDBGamePlayerLoginResp::_InternalParse(const char* ptr, ::PROTOBUF
       case 8:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
           cheat_rate_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // bool vip = 9;
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+          vip_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -7083,6 +7091,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(8, this->_internal_cheat_rate(), target);
   }
 
+  // bool vip = 9;
+  if (this->vip() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(9, this->_internal_vip(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -7155,6 +7169,11 @@ size_t MsgDBGamePlayerLoginResp::ByteSizeLong() const {
         this->_internal_coin());
   }
 
+  // bool vip = 9;
+  if (this->vip() != 0) {
+    total_size += 1 + 1;
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
         _internal_metadata_, total_size, &_cached_size_);
@@ -7210,6 +7229,9 @@ void MsgDBGamePlayerLoginResp::MergeFrom(const MsgDBGamePlayerLoginResp& from) {
   if (from.coin() != 0) {
     _internal_set_coin(from._internal_coin());
   }
+  if (from.vip() != 0) {
+    _internal_set_vip(from._internal_vip());
+  }
 }
 
 void MsgDBGamePlayerLoginResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -7237,8 +7259,8 @@ void MsgDBGamePlayerLoginResp::InternalSwap(MsgDBGamePlayerLoginResp* other) {
   avatar_.Swap(&other->avatar_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   password_.Swap(&other->password_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgDBGamePlayerLoginResp, coin_)
-      + sizeof(MsgDBGamePlayerLoginResp::coin_)
+      PROTOBUF_FIELD_OFFSET(MsgDBGamePlayerLoginResp, vip_)
+      + sizeof(MsgDBGamePlayerLoginResp::vip_)
       - PROTOBUF_FIELD_OFFSET(MsgDBGamePlayerLoginResp, res_code_)>(
           reinterpret_cast<char*>(&res_code_),
           reinterpret_cast<char*>(&other->res_code_));

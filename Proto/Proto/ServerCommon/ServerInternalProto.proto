@@ -202,6 +202,7 @@ message MsgDBGamePlayerLoginResp
 	uint64		coin			= 6;	//玩家金币
 	string		password		= 7;	//玩家密码
 	int32		cheat_rate		= 8;	//玩家作弊率
+	bool		vip				= 9;	//是否VIP
 }
 
 //写分

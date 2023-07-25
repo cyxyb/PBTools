@@ -57,4 +57,7 @@ enum EMsgIDGame
 	MsgIDGame_SyncPlayersScoreResp		= 1009;		//同步桌子所有玩家分数
 	MsgIDGame_SendGameSence				= 1010;		//请求场景消息
 	MsgIDGame_SendGameSenceResp			= 1011;		//请求场景消息返回
+	MsgIDGame_NotifyMessageResp			= 1012;		//通用消息通知
+	MsgIDGame_CreateRoom				= 1013;		//创建房间
+	MsgIDGame_JoinRoom					= 1014;		//加入房间
 }

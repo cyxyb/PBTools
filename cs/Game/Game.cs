@@ -31,14 +31,16 @@ public static partial class GameReflection {
           "Eg8KB3VzZXJfaWQYAiABKAUSFAoMYmVhdXRpZnVsX2lkGAMgASgFEhAKCG5p",
           "Y2tuYW1lGAQgASgJEg4KBmF2YXRhchgFIAEoCRIMCgRjb2luGAYgASgEIjUK",
           "E01zZ1N5bmNQbGF5ZXJzU2NvcmUSEAoIY2hhaXJfaWQYASABKAUSDAoEY29p",
-          "bhgCIAEoBGIGcHJvdG8z"));
+          "bhgCIAEoBCIwCgtNc2dKb2luUm9vbRIPCgdyb29tX2lkGAEgASgFEhAKCHBh",
+          "c3N3b3JkGAIgASgJYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgGamePlayerLogin), global::MsgGamePlayerLogin.Parser, new[]{ "UserId", "Password" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgGamePlayerInfo), global::MsgGamePlayerInfo.Parser, new[]{ "UserId", "BeautifulId", "Nickname", "Avatar", "Coin", "TableId", "ChairId" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgGamePlayerLoginResp), global::MsgGamePlayerLoginResp.Parser, new[]{ "ResCode", "UserId", "BeautifulId", "Nickname", "Avatar", "Coin" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgSyncPlayersScore), global::MsgSyncPlayersScore.Parser, new[]{ "ChairId", "Coin" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgSyncPlayersScore), global::MsgSyncPlayersScore.Parser, new[]{ "ChairId", "Coin" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgJoinRoom), global::MsgJoinRoom.Parser, new[]{ "RoomId", "Password" }, null, null, null, null)
         }));
   }
   #endregion
@@ -1255,6 +1257,223 @@ public sealed partial class MsgSyncPlayersScore : pb::IMessage<MsgSyncPlayersSco
         }
         case 16: {
           Coin = input.ReadUInt64();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///加入房间
+/// </summary>
+public sealed partial class MsgJoinRoom : pb::IMessage<MsgJoinRoom>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgJoinRoom> _parser = new pb::MessageParser<MsgJoinRoom>(() => new MsgJoinRoom());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgJoinRoom> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::GameReflection.Descriptor.MessageTypes[4]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgJoinRoom() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgJoinRoom(MsgJoinRoom other) : this() {
+    roomId_ = other.roomId_;
+    password_ = other.password_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgJoinRoom Clone() {
+    return new MsgJoinRoom(this);
+  }
+
+  /// <summary>Field number for the "room_id" field.</summary>
+  public const int RoomIdFieldNumber = 1;
+  private int roomId_;
+  /// <summary>
+  ///房间id
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int RoomId {
+    get { return roomId_; }
+    set {
+      roomId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "password" field.</summary>
+  public const int PasswordFieldNumber = 2;
+  private string password_ = "";
+  /// <summary>
+  ///房间密码
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string Password {
+    get { return password_; }
+    set {
+      password_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgJoinRoom);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgJoinRoom other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (RoomId != other.RoomId) return false;
+    if (Password != other.Password) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (RoomId != 0) hash ^= RoomId.GetHashCode();
+    if (Password.Length != 0) hash ^= Password.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (RoomId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(RoomId);
+    }
+    if (Password.Length != 0) {
+      output.WriteRawTag(18);
+      output.WriteString(Password);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (RoomId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(RoomId);
+    }
+    if (Password.Length != 0) {
+      output.WriteRawTag(18);
+      output.WriteString(Password);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (RoomId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(RoomId);
+    }
+    if (Password.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Password);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgJoinRoom other) {
+    if (other == null) {
+      return;
+    }
+    if (other.RoomId != 0) {
+      RoomId = other.RoomId;
+    }
+    if (other.Password.Length != 0) {
+      Password = other.Password;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          RoomId = input.ReadInt32();
+          break;
+        }
+        case 18: {
+          Password = input.ReadString();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          RoomId = input.ReadInt32();
+          break;
+        }
+        case 18: {
+          Password = input.ReadString();
           break;
         }
       }
