@@ -46,7 +46,7 @@ struct TableStruct_Game_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[5]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[4]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -62,9 +62,6 @@ extern MsgGamePlayerLoginDefaultTypeInternal _MsgGamePlayerLogin_default_instanc
 class MsgGamePlayerLoginResp;
 class MsgGamePlayerLoginRespDefaultTypeInternal;
 extern MsgGamePlayerLoginRespDefaultTypeInternal _MsgGamePlayerLoginResp_default_instance_;
-class MsgJoinRoom;
-class MsgJoinRoomDefaultTypeInternal;
-extern MsgJoinRoomDefaultTypeInternal _MsgJoinRoom_default_instance_;
 class MsgSyncPlayersScore;
 class MsgSyncPlayersScoreDefaultTypeInternal;
 extern MsgSyncPlayersScoreDefaultTypeInternal _MsgSyncPlayersScore_default_instance_;
@@ -72,7 +69,6 @@ PROTOBUF_NAMESPACE_OPEN
 template<> ::MsgGamePlayerInfo* Arena::CreateMaybeMessage<::MsgGamePlayerInfo>(Arena*);
 template<> ::MsgGamePlayerLogin* Arena::CreateMaybeMessage<::MsgGamePlayerLogin>(Arena*);
 template<> ::MsgGamePlayerLoginResp* Arena::CreateMaybeMessage<::MsgGamePlayerLoginResp>(Arena*);
-template<> ::MsgJoinRoom* Arena::CreateMaybeMessage<::MsgJoinRoom>(Arena*);
 template<> ::MsgSyncPlayersScore* Arena::CreateMaybeMessage<::MsgSyncPlayersScore>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 
@@ -798,160 +794,6 @@ class MsgSyncPlayersScore PROTOBUF_FINAL :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Game_2eproto;
 };
-// -------------------------------------------------------------------
-
-class MsgJoinRoom PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgJoinRoom) */ {
- public:
-  inline MsgJoinRoom() : MsgJoinRoom(nullptr) {}
-  virtual ~MsgJoinRoom();
-
-  MsgJoinRoom(const MsgJoinRoom& from);
-  MsgJoinRoom(MsgJoinRoom&& from) noexcept
-    : MsgJoinRoom() {
-    *this = ::std::move(from);
-  }
-
-  inline MsgJoinRoom& operator=(const MsgJoinRoom& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline MsgJoinRoom& operator=(MsgJoinRoom&& from) noexcept {
-    if (GetArena() == from.GetArena()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return GetMetadataStatic().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return GetMetadataStatic().reflection;
-  }
-  static const MsgJoinRoom& default_instance();
-
-  static inline const MsgJoinRoom* internal_default_instance() {
-    return reinterpret_cast<const MsgJoinRoom*>(
-               &_MsgJoinRoom_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    4;
-
-  friend void swap(MsgJoinRoom& a, MsgJoinRoom& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(MsgJoinRoom* other) {
-    if (other == this) return;
-    if (GetArena() == other->GetArena()) {
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(MsgJoinRoom* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetArena() == other->GetArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline MsgJoinRoom* New() const final {
-    return CreateMaybeMessage<MsgJoinRoom>(nullptr);
-  }
-
-  MsgJoinRoom* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<MsgJoinRoom>(arena);
-  }
-  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const MsgJoinRoom& from);
-  void MergeFrom(const MsgJoinRoom& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
-      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  inline void SharedCtor();
-  inline void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(MsgJoinRoom* other);
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "MsgJoinRoom";
-  }
-  protected:
-  explicit MsgJoinRoom(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  private:
-  static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  public:
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-  private:
-  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
-    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Game_2eproto);
-    return ::descriptor_table_Game_2eproto.file_level_metadata[kIndexInFileMessages];
-  }
-
-  public:
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kPasswordFieldNumber = 2,
-    kRoomIdFieldNumber = 1,
-  };
-  // string password = 2;
-  void clear_password();
-  const std::string& password() const;
-  void set_password(const std::string& value);
-  void set_password(std::string&& value);
-  void set_password(const char* value);
-  void set_password(const char* value, size_t size);
-  std::string* mutable_password();
-  std::string* release_password();
-  void set_allocated_password(std::string* password);
-  private:
-  const std::string& _internal_password() const;
-  void _internal_set_password(const std::string& value);
-  std::string* _internal_mutable_password();
-  public:
-
-  // int32 room_id = 1;
-  void clear_room_id();
-  ::PROTOBUF_NAMESPACE_ID::int32 room_id() const;
-  void set_room_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_room_id() const;
-  void _internal_set_room_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:MsgJoinRoom)
- private:
-  class _Internal;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr password_;
-  ::PROTOBUF_NAMESPACE_ID::int32 room_id_;
-  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  friend struct ::TableStruct_Game_2eproto;
-};
 // ===================================================================
 
 
@@ -1520,96 +1362,9 @@ inline void MsgSyncPlayersScore::set_coin(::PROTOBUF_NAMESPACE_ID::uint64 value)
   // @@protoc_insertion_point(field_set:MsgSyncPlayersScore.coin)
 }
 
-// -------------------------------------------------------------------
-
-// MsgJoinRoom
-
-// int32 room_id = 1;
-inline void MsgJoinRoom::clear_room_id() {
-  room_id_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgJoinRoom::_internal_room_id() const {
-  return room_id_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgJoinRoom::room_id() const {
-  // @@protoc_insertion_point(field_get:MsgJoinRoom.room_id)
-  return _internal_room_id();
-}
-inline void MsgJoinRoom::_internal_set_room_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  room_id_ = value;
-}
-inline void MsgJoinRoom::set_room_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_room_id(value);
-  // @@protoc_insertion_point(field_set:MsgJoinRoom.room_id)
-}
-
-// string password = 2;
-inline void MsgJoinRoom::clear_password() {
-  password_.ClearToEmpty();
-}
-inline const std::string& MsgJoinRoom::password() const {
-  // @@protoc_insertion_point(field_get:MsgJoinRoom.password)
-  return _internal_password();
-}
-inline void MsgJoinRoom::set_password(const std::string& value) {
-  _internal_set_password(value);
-  // @@protoc_insertion_point(field_set:MsgJoinRoom.password)
-}
-inline std::string* MsgJoinRoom::mutable_password() {
-  // @@protoc_insertion_point(field_mutable:MsgJoinRoom.password)
-  return _internal_mutable_password();
-}
-inline const std::string& MsgJoinRoom::_internal_password() const {
-  return password_.Get();
-}
-inline void MsgJoinRoom::_internal_set_password(const std::string& value) {
-  
-  password_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
-}
-inline void MsgJoinRoom::set_password(std::string&& value) {
-  
-  password_.Set(
-    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
-  // @@protoc_insertion_point(field_set_rvalue:MsgJoinRoom.password)
-}
-inline void MsgJoinRoom::set_password(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  
-  password_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
-  // @@protoc_insertion_point(field_set_char:MsgJoinRoom.password)
-}
-inline void MsgJoinRoom::set_password(const char* value,
-    size_t size) {
-  
-  password_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
-      reinterpret_cast<const char*>(value), size), GetArena());
-  // @@protoc_insertion_point(field_set_pointer:MsgJoinRoom.password)
-}
-inline std::string* MsgJoinRoom::_internal_mutable_password() {
-  
-  return password_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
-}
-inline std::string* MsgJoinRoom::release_password() {
-  // @@protoc_insertion_point(field_release:MsgJoinRoom.password)
-  return password_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-}
-inline void MsgJoinRoom::set_allocated_password(std::string* password) {
-  if (password != nullptr) {
-    
-  } else {
-    
-  }
-  password_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), password,
-      GetArena());
-  // @@protoc_insertion_point(field_set_allocated:MsgJoinRoom.password)
-}
-
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
-// -------------------------------------------------------------------
-
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

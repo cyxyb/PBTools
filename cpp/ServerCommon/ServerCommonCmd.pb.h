@@ -161,12 +161,17 @@ enum EMsgIDDB : int {
   DB2GAME_LoadCheatRate = 2004,
   GAME2DB_WriteScore = 2005,
   DB2GAME_WriteScore = 2006,
+  GAME2DB_FingerGuessWriteScore = 2007,
+  DB2GAME_FingerGuessWriteScore = 2008,
+  GAME2DB_FingerGuessQueryRecord = 2009,
+  DB2GAME_FingerGuessRoundRecord = 2010,
+  DB2GAME_FingerGuessDayRecord = 2011,
   EMsgIDDB_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDDB_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDDB_IsValid(int value);
 constexpr EMsgIDDB EMsgIDDB_MIN = MsgIDDB_NULL;
-constexpr EMsgIDDB EMsgIDDB_MAX = DB2GAME_WriteScore;
+constexpr EMsgIDDB EMsgIDDB_MAX = DB2GAME_FingerGuessDayRecord;
 constexpr int EMsgIDDB_ARRAYSIZE = EMsgIDDB_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDDB_descriptor();

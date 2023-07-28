@@ -46,7 +46,7 @@ struct TableStruct_ServerInternalProto_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[24]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[27]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -65,6 +65,15 @@ extern MsgCreateRobotDefaultTypeInternal _MsgCreateRobot_default_instance_;
 class MsgCreateRobotResp;
 class MsgCreateRobotRespDefaultTypeInternal;
 extern MsgCreateRobotRespDefaultTypeInternal _MsgCreateRobotResp_default_instance_;
+class MsgDBFingerGuessQueryRecord;
+class MsgDBFingerGuessQueryRecordDefaultTypeInternal;
+extern MsgDBFingerGuessQueryRecordDefaultTypeInternal _MsgDBFingerGuessQueryRecord_default_instance_;
+class MsgDBFingerGuessWriteScore;
+class MsgDBFingerGuessWriteScoreDefaultTypeInternal;
+extern MsgDBFingerGuessWriteScoreDefaultTypeInternal _MsgDBFingerGuessWriteScore_default_instance_;
+class MsgDBFingerGuessWriteScoreResp;
+class MsgDBFingerGuessWriteScoreRespDefaultTypeInternal;
+extern MsgDBFingerGuessWriteScoreRespDefaultTypeInternal _MsgDBFingerGuessWriteScoreResp_default_instance_;
 class MsgDBGamePlayerLogin;
 class MsgDBGamePlayerLoginDefaultTypeInternal;
 extern MsgDBGamePlayerLoginDefaultTypeInternal _MsgDBGamePlayerLogin_default_instance_;
@@ -130,6 +139,9 @@ template<> ::MsgApplyRobot* Arena::CreateMaybeMessage<::MsgApplyRobot>(Arena*);
 template<> ::MsgApplyRobotResp* Arena::CreateMaybeMessage<::MsgApplyRobotResp>(Arena*);
 template<> ::MsgCreateRobot* Arena::CreateMaybeMessage<::MsgCreateRobot>(Arena*);
 template<> ::MsgCreateRobotResp* Arena::CreateMaybeMessage<::MsgCreateRobotResp>(Arena*);
+template<> ::MsgDBFingerGuessQueryRecord* Arena::CreateMaybeMessage<::MsgDBFingerGuessQueryRecord>(Arena*);
+template<> ::MsgDBFingerGuessWriteScore* Arena::CreateMaybeMessage<::MsgDBFingerGuessWriteScore>(Arena*);
+template<> ::MsgDBFingerGuessWriteScoreResp* Arena::CreateMaybeMessage<::MsgDBFingerGuessWriteScoreResp>(Arena*);
 template<> ::MsgDBGamePlayerLogin* Arena::CreateMaybeMessage<::MsgDBGamePlayerLogin>(Arena*);
 template<> ::MsgDBGamePlayerLoginResp* Arena::CreateMaybeMessage<::MsgDBGamePlayerLoginResp>(Arena*);
 template<> ::MsgDBLoadRobot* Arena::CreateMaybeMessage<::MsgDBLoadRobot>(Arena*);
@@ -4404,6 +4416,7 @@ class MsgDBWriteScoreResp PROTOBUF_FINAL :
     kSystemCheatScoreFieldNumber = 5,
     kSystemBloodMinLineFieldNumber = 6,
     kSystemBloodMaxLineFieldNumber = 7,
+    kPlayerScoreFieldNumber = 8,
   };
   // int32 user_id = 1;
   void clear_user_id();
@@ -4468,6 +4481,15 @@ class MsgDBWriteScoreResp PROTOBUF_FINAL :
   void _internal_set_system_blood_max_line(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
+  // int64 player_score = 8;
+  void clear_player_score();
+  ::PROTOBUF_NAMESPACE_ID::int64 player_score() const;
+  void set_player_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_player_score() const;
+  void _internal_set_player_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgDBWriteScoreResp)
  private:
   class _Internal;
@@ -4482,6 +4504,547 @@ class MsgDBWriteScoreResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int64 system_cheat_score_;
   ::PROTOBUF_NAMESPACE_ID::int64 system_blood_min_line_;
   ::PROTOBUF_NAMESPACE_ID::int64 system_blood_max_line_;
+  ::PROTOBUF_NAMESPACE_ID::int64 player_score_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgDBFingerGuessWriteScore PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgDBFingerGuessWriteScore) */ {
+ public:
+  inline MsgDBFingerGuessWriteScore() : MsgDBFingerGuessWriteScore(nullptr) {}
+  virtual ~MsgDBFingerGuessWriteScore();
+
+  MsgDBFingerGuessWriteScore(const MsgDBFingerGuessWriteScore& from);
+  MsgDBFingerGuessWriteScore(MsgDBFingerGuessWriteScore&& from) noexcept
+    : MsgDBFingerGuessWriteScore() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgDBFingerGuessWriteScore& operator=(const MsgDBFingerGuessWriteScore& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgDBFingerGuessWriteScore& operator=(MsgDBFingerGuessWriteScore&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgDBFingerGuessWriteScore& default_instance();
+
+  static inline const MsgDBFingerGuessWriteScore* internal_default_instance() {
+    return reinterpret_cast<const MsgDBFingerGuessWriteScore*>(
+               &_MsgDBFingerGuessWriteScore_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    24;
+
+  friend void swap(MsgDBFingerGuessWriteScore& a, MsgDBFingerGuessWriteScore& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgDBFingerGuessWriteScore* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgDBFingerGuessWriteScore* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgDBFingerGuessWriteScore* New() const final {
+    return CreateMaybeMessage<MsgDBFingerGuessWriteScore>(nullptr);
+  }
+
+  MsgDBFingerGuessWriteScore* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgDBFingerGuessWriteScore>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgDBFingerGuessWriteScore& from);
+  void MergeFrom(const MsgDBFingerGuessWriteScore& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgDBFingerGuessWriteScore* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgDBFingerGuessWriteScore";
+  }
+  protected:
+  explicit MsgDBFingerGuessWriteScore(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kBankerUserIdFieldNumber = 1,
+    kPlayerUserIdFieldNumber = 2,
+    kBetFieldNumber = 4,
+    kResultFieldNumber = 3,
+  };
+  // int32 banker_user_id = 1;
+  void clear_banker_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 banker_user_id() const;
+  void set_banker_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_banker_user_id() const;
+  void _internal_set_banker_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 player_user_id = 2;
+  void clear_player_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 player_user_id() const;
+  void set_player_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_player_user_id() const;
+  void _internal_set_player_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int64 bet = 4;
+  void clear_bet();
+  ::PROTOBUF_NAMESPACE_ID::int64 bet() const;
+  void set_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_bet() const;
+  void _internal_set_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int32 result = 3;
+  void clear_result();
+  ::PROTOBUF_NAMESPACE_ID::int32 result() const;
+  void set_result(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_result() const;
+  void _internal_set_result(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgDBFingerGuessWriteScore)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 banker_user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 player_user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int64 bet_;
+  ::PROTOBUF_NAMESPACE_ID::int32 result_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgDBFingerGuessWriteScoreResp PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgDBFingerGuessWriteScoreResp) */ {
+ public:
+  inline MsgDBFingerGuessWriteScoreResp() : MsgDBFingerGuessWriteScoreResp(nullptr) {}
+  virtual ~MsgDBFingerGuessWriteScoreResp();
+
+  MsgDBFingerGuessWriteScoreResp(const MsgDBFingerGuessWriteScoreResp& from);
+  MsgDBFingerGuessWriteScoreResp(MsgDBFingerGuessWriteScoreResp&& from) noexcept
+    : MsgDBFingerGuessWriteScoreResp() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgDBFingerGuessWriteScoreResp& operator=(const MsgDBFingerGuessWriteScoreResp& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgDBFingerGuessWriteScoreResp& operator=(MsgDBFingerGuessWriteScoreResp&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgDBFingerGuessWriteScoreResp& default_instance();
+
+  static inline const MsgDBFingerGuessWriteScoreResp* internal_default_instance() {
+    return reinterpret_cast<const MsgDBFingerGuessWriteScoreResp*>(
+               &_MsgDBFingerGuessWriteScoreResp_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    25;
+
+  friend void swap(MsgDBFingerGuessWriteScoreResp& a, MsgDBFingerGuessWriteScoreResp& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgDBFingerGuessWriteScoreResp* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgDBFingerGuessWriteScoreResp* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgDBFingerGuessWriteScoreResp* New() const final {
+    return CreateMaybeMessage<MsgDBFingerGuessWriteScoreResp>(nullptr);
+  }
+
+  MsgDBFingerGuessWriteScoreResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgDBFingerGuessWriteScoreResp>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgDBFingerGuessWriteScoreResp& from);
+  void MergeFrom(const MsgDBFingerGuessWriteScoreResp& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgDBFingerGuessWriteScoreResp* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgDBFingerGuessWriteScoreResp";
+  }
+  protected:
+  explicit MsgDBFingerGuessWriteScoreResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kWinUserIdFieldNumber = 1,
+    kLoseUserIdFieldNumber = 2,
+    kWinUserGoldFieldNumber = 3,
+    kLoseUserGoldFieldNumber = 4,
+    kTimeFieldNumber = 5,
+    kResultFieldNumber = 6,
+    kBetFieldNumber = 7,
+  };
+  // int32 win_user_id = 1;
+  void clear_win_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 win_user_id() const;
+  void set_win_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_win_user_id() const;
+  void _internal_set_win_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 lose_user_id = 2;
+  void clear_lose_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 lose_user_id() const;
+  void set_lose_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_lose_user_id() const;
+  void _internal_set_lose_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int64 win_user_gold = 3;
+  void clear_win_user_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 win_user_gold() const;
+  void set_win_user_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_win_user_gold() const;
+  void _internal_set_win_user_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int64 lose_user_gold = 4;
+  void clear_lose_user_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 lose_user_gold() const;
+  void set_lose_user_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_lose_user_gold() const;
+  void _internal_set_lose_user_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int32 time = 5;
+  void clear_time();
+  ::PROTOBUF_NAMESPACE_ID::int32 time() const;
+  void set_time(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_time() const;
+  void _internal_set_time(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 result = 6;
+  void clear_result();
+  ::PROTOBUF_NAMESPACE_ID::int32 result() const;
+  void set_result(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_result() const;
+  void _internal_set_result(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int64 bet = 7;
+  void clear_bet();
+  ::PROTOBUF_NAMESPACE_ID::int64 bet() const;
+  void set_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_bet() const;
+  void _internal_set_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgDBFingerGuessWriteScoreResp)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 win_user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 lose_user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int64 win_user_gold_;
+  ::PROTOBUF_NAMESPACE_ID::int64 lose_user_gold_;
+  ::PROTOBUF_NAMESPACE_ID::int32 time_;
+  ::PROTOBUF_NAMESPACE_ID::int32 result_;
+  ::PROTOBUF_NAMESPACE_ID::int64 bet_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgDBFingerGuessQueryRecord PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgDBFingerGuessQueryRecord) */ {
+ public:
+  inline MsgDBFingerGuessQueryRecord() : MsgDBFingerGuessQueryRecord(nullptr) {}
+  virtual ~MsgDBFingerGuessQueryRecord();
+
+  MsgDBFingerGuessQueryRecord(const MsgDBFingerGuessQueryRecord& from);
+  MsgDBFingerGuessQueryRecord(MsgDBFingerGuessQueryRecord&& from) noexcept
+    : MsgDBFingerGuessQueryRecord() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgDBFingerGuessQueryRecord& operator=(const MsgDBFingerGuessQueryRecord& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgDBFingerGuessQueryRecord& operator=(MsgDBFingerGuessQueryRecord&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgDBFingerGuessQueryRecord& default_instance();
+
+  static inline const MsgDBFingerGuessQueryRecord* internal_default_instance() {
+    return reinterpret_cast<const MsgDBFingerGuessQueryRecord*>(
+               &_MsgDBFingerGuessQueryRecord_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    26;
+
+  friend void swap(MsgDBFingerGuessQueryRecord& a, MsgDBFingerGuessQueryRecord& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgDBFingerGuessQueryRecord* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgDBFingerGuessQueryRecord* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgDBFingerGuessQueryRecord* New() const final {
+    return CreateMaybeMessage<MsgDBFingerGuessQueryRecord>(nullptr);
+  }
+
+  MsgDBFingerGuessQueryRecord* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgDBFingerGuessQueryRecord>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgDBFingerGuessQueryRecord& from);
+  void MergeFrom(const MsgDBFingerGuessQueryRecord& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgDBFingerGuessQueryRecord* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgDBFingerGuessQueryRecord";
+  }
+  protected:
+  explicit MsgDBFingerGuessQueryRecord(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kPageFieldNumber = 1,
+    kNumFieldNumber = 2,
+    kTypeFieldNumber = 3,
+    kUserIdFieldNumber = 4,
+  };
+  // int32 page = 1;
+  void clear_page();
+  ::PROTOBUF_NAMESPACE_ID::int32 page() const;
+  void set_page(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_page() const;
+  void _internal_set_page(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 num = 2;
+  void clear_num();
+  ::PROTOBUF_NAMESPACE_ID::int32 num() const;
+  void set_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_num() const;
+  void _internal_set_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 type = 3;
+  void clear_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 type() const;
+  void set_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_type() const;
+  void _internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 user_id = 4;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgDBFingerGuessQueryRecord)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 page_;
+  ::PROTOBUF_NAMESPACE_ID::int32 num_;
+  ::PROTOBUF_NAMESPACE_ID::int32 type_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -7610,9 +8173,347 @@ inline void MsgDBWriteScoreResp::set_system_blood_max_line(::PROTOBUF_NAMESPACE_
   // @@protoc_insertion_point(field_set:MsgDBWriteScoreResp.system_blood_max_line)
 }
 
+// int64 player_score = 8;
+inline void MsgDBWriteScoreResp::clear_player_score() {
+  player_score_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBWriteScoreResp::_internal_player_score() const {
+  return player_score_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBWriteScoreResp::player_score() const {
+  // @@protoc_insertion_point(field_get:MsgDBWriteScoreResp.player_score)
+  return _internal_player_score();
+}
+inline void MsgDBWriteScoreResp::_internal_set_player_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  player_score_ = value;
+}
+inline void MsgDBWriteScoreResp::set_player_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_player_score(value);
+  // @@protoc_insertion_point(field_set:MsgDBWriteScoreResp.player_score)
+}
+
+// -------------------------------------------------------------------
+
+// MsgDBFingerGuessWriteScore
+
+// int32 banker_user_id = 1;
+inline void MsgDBFingerGuessWriteScore::clear_banker_user_id() {
+  banker_user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBFingerGuessWriteScore::_internal_banker_user_id() const {
+  return banker_user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBFingerGuessWriteScore::banker_user_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBFingerGuessWriteScore.banker_user_id)
+  return _internal_banker_user_id();
+}
+inline void MsgDBFingerGuessWriteScore::_internal_set_banker_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  banker_user_id_ = value;
+}
+inline void MsgDBFingerGuessWriteScore::set_banker_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_banker_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBFingerGuessWriteScore.banker_user_id)
+}
+
+// int32 player_user_id = 2;
+inline void MsgDBFingerGuessWriteScore::clear_player_user_id() {
+  player_user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBFingerGuessWriteScore::_internal_player_user_id() const {
+  return player_user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBFingerGuessWriteScore::player_user_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBFingerGuessWriteScore.player_user_id)
+  return _internal_player_user_id();
+}
+inline void MsgDBFingerGuessWriteScore::_internal_set_player_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  player_user_id_ = value;
+}
+inline void MsgDBFingerGuessWriteScore::set_player_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_player_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBFingerGuessWriteScore.player_user_id)
+}
+
+// int32 result = 3;
+inline void MsgDBFingerGuessWriteScore::clear_result() {
+  result_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBFingerGuessWriteScore::_internal_result() const {
+  return result_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBFingerGuessWriteScore::result() const {
+  // @@protoc_insertion_point(field_get:MsgDBFingerGuessWriteScore.result)
+  return _internal_result();
+}
+inline void MsgDBFingerGuessWriteScore::_internal_set_result(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  result_ = value;
+}
+inline void MsgDBFingerGuessWriteScore::set_result(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_result(value);
+  // @@protoc_insertion_point(field_set:MsgDBFingerGuessWriteScore.result)
+}
+
+// int64 bet = 4;
+inline void MsgDBFingerGuessWriteScore::clear_bet() {
+  bet_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBFingerGuessWriteScore::_internal_bet() const {
+  return bet_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBFingerGuessWriteScore::bet() const {
+  // @@protoc_insertion_point(field_get:MsgDBFingerGuessWriteScore.bet)
+  return _internal_bet();
+}
+inline void MsgDBFingerGuessWriteScore::_internal_set_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  bet_ = value;
+}
+inline void MsgDBFingerGuessWriteScore::set_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_bet(value);
+  // @@protoc_insertion_point(field_set:MsgDBFingerGuessWriteScore.bet)
+}
+
+// -------------------------------------------------------------------
+
+// MsgDBFingerGuessWriteScoreResp
+
+// int32 win_user_id = 1;
+inline void MsgDBFingerGuessWriteScoreResp::clear_win_user_id() {
+  win_user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBFingerGuessWriteScoreResp::_internal_win_user_id() const {
+  return win_user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBFingerGuessWriteScoreResp::win_user_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBFingerGuessWriteScoreResp.win_user_id)
+  return _internal_win_user_id();
+}
+inline void MsgDBFingerGuessWriteScoreResp::_internal_set_win_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  win_user_id_ = value;
+}
+inline void MsgDBFingerGuessWriteScoreResp::set_win_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_win_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBFingerGuessWriteScoreResp.win_user_id)
+}
+
+// int32 lose_user_id = 2;
+inline void MsgDBFingerGuessWriteScoreResp::clear_lose_user_id() {
+  lose_user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBFingerGuessWriteScoreResp::_internal_lose_user_id() const {
+  return lose_user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBFingerGuessWriteScoreResp::lose_user_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBFingerGuessWriteScoreResp.lose_user_id)
+  return _internal_lose_user_id();
+}
+inline void MsgDBFingerGuessWriteScoreResp::_internal_set_lose_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  lose_user_id_ = value;
+}
+inline void MsgDBFingerGuessWriteScoreResp::set_lose_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_lose_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBFingerGuessWriteScoreResp.lose_user_id)
+}
+
+// int64 win_user_gold = 3;
+inline void MsgDBFingerGuessWriteScoreResp::clear_win_user_gold() {
+  win_user_gold_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBFingerGuessWriteScoreResp::_internal_win_user_gold() const {
+  return win_user_gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBFingerGuessWriteScoreResp::win_user_gold() const {
+  // @@protoc_insertion_point(field_get:MsgDBFingerGuessWriteScoreResp.win_user_gold)
+  return _internal_win_user_gold();
+}
+inline void MsgDBFingerGuessWriteScoreResp::_internal_set_win_user_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  win_user_gold_ = value;
+}
+inline void MsgDBFingerGuessWriteScoreResp::set_win_user_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_win_user_gold(value);
+  // @@protoc_insertion_point(field_set:MsgDBFingerGuessWriteScoreResp.win_user_gold)
+}
+
+// int64 lose_user_gold = 4;
+inline void MsgDBFingerGuessWriteScoreResp::clear_lose_user_gold() {
+  lose_user_gold_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBFingerGuessWriteScoreResp::_internal_lose_user_gold() const {
+  return lose_user_gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBFingerGuessWriteScoreResp::lose_user_gold() const {
+  // @@protoc_insertion_point(field_get:MsgDBFingerGuessWriteScoreResp.lose_user_gold)
+  return _internal_lose_user_gold();
+}
+inline void MsgDBFingerGuessWriteScoreResp::_internal_set_lose_user_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  lose_user_gold_ = value;
+}
+inline void MsgDBFingerGuessWriteScoreResp::set_lose_user_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_lose_user_gold(value);
+  // @@protoc_insertion_point(field_set:MsgDBFingerGuessWriteScoreResp.lose_user_gold)
+}
+
+// int32 time = 5;
+inline void MsgDBFingerGuessWriteScoreResp::clear_time() {
+  time_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBFingerGuessWriteScoreResp::_internal_time() const {
+  return time_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBFingerGuessWriteScoreResp::time() const {
+  // @@protoc_insertion_point(field_get:MsgDBFingerGuessWriteScoreResp.time)
+  return _internal_time();
+}
+inline void MsgDBFingerGuessWriteScoreResp::_internal_set_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  time_ = value;
+}
+inline void MsgDBFingerGuessWriteScoreResp::set_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_time(value);
+  // @@protoc_insertion_point(field_set:MsgDBFingerGuessWriteScoreResp.time)
+}
+
+// int32 result = 6;
+inline void MsgDBFingerGuessWriteScoreResp::clear_result() {
+  result_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBFingerGuessWriteScoreResp::_internal_result() const {
+  return result_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBFingerGuessWriteScoreResp::result() const {
+  // @@protoc_insertion_point(field_get:MsgDBFingerGuessWriteScoreResp.result)
+  return _internal_result();
+}
+inline void MsgDBFingerGuessWriteScoreResp::_internal_set_result(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  result_ = value;
+}
+inline void MsgDBFingerGuessWriteScoreResp::set_result(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_result(value);
+  // @@protoc_insertion_point(field_set:MsgDBFingerGuessWriteScoreResp.result)
+}
+
+// int64 bet = 7;
+inline void MsgDBFingerGuessWriteScoreResp::clear_bet() {
+  bet_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBFingerGuessWriteScoreResp::_internal_bet() const {
+  return bet_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBFingerGuessWriteScoreResp::bet() const {
+  // @@protoc_insertion_point(field_get:MsgDBFingerGuessWriteScoreResp.bet)
+  return _internal_bet();
+}
+inline void MsgDBFingerGuessWriteScoreResp::_internal_set_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  bet_ = value;
+}
+inline void MsgDBFingerGuessWriteScoreResp::set_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_bet(value);
+  // @@protoc_insertion_point(field_set:MsgDBFingerGuessWriteScoreResp.bet)
+}
+
+// -------------------------------------------------------------------
+
+// MsgDBFingerGuessQueryRecord
+
+// int32 page = 1;
+inline void MsgDBFingerGuessQueryRecord::clear_page() {
+  page_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBFingerGuessQueryRecord::_internal_page() const {
+  return page_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBFingerGuessQueryRecord::page() const {
+  // @@protoc_insertion_point(field_get:MsgDBFingerGuessQueryRecord.page)
+  return _internal_page();
+}
+inline void MsgDBFingerGuessQueryRecord::_internal_set_page(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  page_ = value;
+}
+inline void MsgDBFingerGuessQueryRecord::set_page(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_page(value);
+  // @@protoc_insertion_point(field_set:MsgDBFingerGuessQueryRecord.page)
+}
+
+// int32 num = 2;
+inline void MsgDBFingerGuessQueryRecord::clear_num() {
+  num_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBFingerGuessQueryRecord::_internal_num() const {
+  return num_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBFingerGuessQueryRecord::num() const {
+  // @@protoc_insertion_point(field_get:MsgDBFingerGuessQueryRecord.num)
+  return _internal_num();
+}
+inline void MsgDBFingerGuessQueryRecord::_internal_set_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  num_ = value;
+}
+inline void MsgDBFingerGuessQueryRecord::set_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_num(value);
+  // @@protoc_insertion_point(field_set:MsgDBFingerGuessQueryRecord.num)
+}
+
+// int32 type = 3;
+inline void MsgDBFingerGuessQueryRecord::clear_type() {
+  type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBFingerGuessQueryRecord::_internal_type() const {
+  return type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBFingerGuessQueryRecord::type() const {
+  // @@protoc_insertion_point(field_get:MsgDBFingerGuessQueryRecord.type)
+  return _internal_type();
+}
+inline void MsgDBFingerGuessQueryRecord::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  type_ = value;
+}
+inline void MsgDBFingerGuessQueryRecord::set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_type(value);
+  // @@protoc_insertion_point(field_set:MsgDBFingerGuessQueryRecord.type)
+}
+
+// int32 user_id = 4;
+inline void MsgDBFingerGuessQueryRecord::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBFingerGuessQueryRecord::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBFingerGuessQueryRecord::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBFingerGuessQueryRecord.user_id)
+  return _internal_user_id();
+}
+inline void MsgDBFingerGuessQueryRecord::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgDBFingerGuessQueryRecord::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBFingerGuessQueryRecord.user_id)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

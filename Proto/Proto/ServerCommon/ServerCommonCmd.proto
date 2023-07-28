@@ -80,4 +80,9 @@ enum EMsgIDDB
 	DB2GAME_LoadCheatRate			= 2004;	//加载作弊率返回
 	GAME2DB_WriteScore				= 2005;	//写分
 	DB2GAME_WriteScore				= 2006;	//写分返回
+	GAME2DB_FingerGuessWriteScore	= 2007;	//猜拳写分
+	DB2GAME_FingerGuessWriteScore	= 2008;	//猜拳写分返回
+	GAME2DB_FingerGuessQueryRecord	= 2009;	//猜拳查询记录
+	DB2GAME_FingerGuessRoundRecord	= 2010;	//猜拳每局记录返回
+	DB2GAME_FingerGuessDayRecord	= 2011;	//猜拳每日记录返回
 }

@@ -224,5 +224,35 @@ message MsgDBWriteScoreResp
 	int64		system_cheat_score		= 5;	//系统作弊分数
 	int64		system_blood_min_line 	= 6;	//最低线
 	int64		system_blood_max_line 	= 7;	//最高线
+	int64		player_score			= 8;	//玩家当前分数
 }
 
+//猜拳写分
+message MsgDBFingerGuessWriteScore
+{
+	int32		banker_user_id			= 1;	//庄家玩家ID
+	int32		player_user_id			= 2;	//玩家ID
+	int32		result					= 3;	//游戏结果
+	int64		bet						= 4;	//下注
+}
+
+//猜拳写分
+message MsgDBFingerGuessWriteScoreResp
+{
+	int32		win_user_id			= 1;	//庄家玩家ID
+	int32		lose_user_id		= 2;	//玩家ID
+	int64		win_user_gold		= 3;	//庄家金币
+	int64		lose_user_gold		= 4;	//玩家金币
+	int32		time				= 5;	//时间
+	int32		result				= 6;	//游戏结果
+	int64		bet					= 7;	//下注
+}
+
+//猜拳查询数据记录
+message MsgDBFingerGuessQueryRecord
+{
+	int32	page	= 1;	//当前页(从0开始)
+	int32	num		= 2;	//每页条数(最大每页50条)
+	int32	type	= 3;	//1:每局数据 2:每日数据
+	int32	user_id = 4;	//玩家ID
+}
