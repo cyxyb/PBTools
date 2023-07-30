@@ -196,7 +196,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_FingerGuess_2eproto::offsets[]
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgTotalDayData, round_data_),
+  PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgTotalDayData, daily_data_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgQueryRecord, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -241,7 +241,7 @@ const char descriptor_table_protodef_FingerGuess_2eproto[] PROTOBUF_SECTION_VARI
   "(\005\022\021\n\tlose_gold\030\004 \001(\003\022\021\n\twin_count\030\005 \001(\005"
   "\022\020\n\010win_gold\030\006 \001(\003\022\022\n\ntotal_gold\030\007 \001(\003\022\024"
   "\n\014surplus_gold\030\010 \001(\003\">\n\017MsgTotalDayData\022"
-  "+\n\nround_data\030\001 \003(\0132\027.FingerGuess.MsgDay"
+  "+\n\ndaily_data\030\001 \003(\0132\027.FingerGuess.MsgDay"
   "Data\"9\n\016MsgQueryRecord\022\014\n\004page\030\001 \001(\005\022\013\n\003"
   "num\030\002 \001(\005\022\014\n\004type\030\003 \001(\005*\327\003\n\rEMsgIDSubGam"
   "e\022\025\n\021MsgIDSubGame_Null\020\000\022\034\n\030MsgIDSubGame"
@@ -1775,14 +1775,14 @@ class MsgTotalDayData::_Internal {
 
 MsgTotalDayData::MsgTotalDayData(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  round_data_(arena) {
+  daily_data_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:FingerGuess.MsgTotalDayData)
 }
 MsgTotalDayData::MsgTotalDayData(const MsgTotalDayData& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      round_data_(from.round_data_) {
+      daily_data_(from.daily_data_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:FingerGuess.MsgTotalDayData)
 }
@@ -1822,7 +1822,7 @@ void MsgTotalDayData::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  round_data_.Clear();
+  daily_data_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -1833,13 +1833,13 @@ const char* MsgTotalDayData::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // repeated .FingerGuess.MsgDayData round_data = 1;
+      // repeated .FingerGuess.MsgDayData daily_data = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ctx->ParseMessage(_internal_add_round_data(), ptr);
+            ptr = ctx->ParseMessage(_internal_add_daily_data(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
@@ -1873,12 +1873,12 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated .FingerGuess.MsgDayData round_data = 1;
+  // repeated .FingerGuess.MsgDayData daily_data = 1;
   for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_round_data_size()); i < n; i++) {
+      n = static_cast<unsigned int>(this->_internal_daily_data_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_round_data(i), target, stream);
+      InternalWriteMessage(1, this->_internal_daily_data(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1897,9 +1897,9 @@ size_t MsgTotalDayData::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .FingerGuess.MsgDayData round_data = 1;
-  total_size += 1UL * this->_internal_round_data_size();
-  for (const auto& msg : this->round_data_) {
+  // repeated .FingerGuess.MsgDayData daily_data = 1;
+  total_size += 1UL * this->_internal_daily_data_size();
+  for (const auto& msg : this->daily_data_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
@@ -1935,7 +1935,7 @@ void MsgTotalDayData::MergeFrom(const MsgTotalDayData& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  round_data_.MergeFrom(from.round_data_);
+  daily_data_.MergeFrom(from.daily_data_);
 }
 
 void MsgTotalDayData::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -1959,7 +1959,7 @@ bool MsgTotalDayData::IsInitialized() const {
 void MsgTotalDayData::InternalSwap(MsgTotalDayData* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  round_data_.InternalSwap(&other->round_data_);
+  daily_data_.InternalSwap(&other->daily_data_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MsgTotalDayData::GetMetadata() const {

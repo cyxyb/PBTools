@@ -1143,25 +1143,25 @@ class MsgTotalDayData PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kRoundDataFieldNumber = 1,
+    kDailyDataFieldNumber = 1,
   };
-  // repeated .FingerGuess.MsgDayData round_data = 1;
-  int round_data_size() const;
+  // repeated .FingerGuess.MsgDayData daily_data = 1;
+  int daily_data_size() const;
   private:
-  int _internal_round_data_size() const;
+  int _internal_daily_data_size() const;
   public:
-  void clear_round_data();
-  ::FingerGuess::MsgDayData* mutable_round_data(int index);
+  void clear_daily_data();
+  ::FingerGuess::MsgDayData* mutable_daily_data(int index);
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FingerGuess::MsgDayData >*
-      mutable_round_data();
+      mutable_daily_data();
   private:
-  const ::FingerGuess::MsgDayData& _internal_round_data(int index) const;
-  ::FingerGuess::MsgDayData* _internal_add_round_data();
+  const ::FingerGuess::MsgDayData& _internal_daily_data(int index) const;
+  ::FingerGuess::MsgDayData* _internal_add_daily_data();
   public:
-  const ::FingerGuess::MsgDayData& round_data(int index) const;
-  ::FingerGuess::MsgDayData* add_round_data();
+  const ::FingerGuess::MsgDayData& daily_data(int index) const;
+  ::FingerGuess::MsgDayData* add_daily_data();
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FingerGuess::MsgDayData >&
-      round_data() const;
+      daily_data() const;
 
   // @@protoc_insertion_point(class_scope:FingerGuess.MsgTotalDayData)
  private:
@@ -1170,7 +1170,7 @@ class MsgTotalDayData PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FingerGuess::MsgDayData > round_data_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FingerGuess::MsgDayData > daily_data_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_FingerGuess_2eproto;
 };
@@ -1931,43 +1931,43 @@ inline void MsgDayData::set_surplus_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
 
 // MsgTotalDayData
 
-// repeated .FingerGuess.MsgDayData round_data = 1;
-inline int MsgTotalDayData::_internal_round_data_size() const {
-  return round_data_.size();
+// repeated .FingerGuess.MsgDayData daily_data = 1;
+inline int MsgTotalDayData::_internal_daily_data_size() const {
+  return daily_data_.size();
 }
-inline int MsgTotalDayData::round_data_size() const {
-  return _internal_round_data_size();
+inline int MsgTotalDayData::daily_data_size() const {
+  return _internal_daily_data_size();
 }
-inline void MsgTotalDayData::clear_round_data() {
-  round_data_.Clear();
+inline void MsgTotalDayData::clear_daily_data() {
+  daily_data_.Clear();
 }
-inline ::FingerGuess::MsgDayData* MsgTotalDayData::mutable_round_data(int index) {
-  // @@protoc_insertion_point(field_mutable:FingerGuess.MsgTotalDayData.round_data)
-  return round_data_.Mutable(index);
+inline ::FingerGuess::MsgDayData* MsgTotalDayData::mutable_daily_data(int index) {
+  // @@protoc_insertion_point(field_mutable:FingerGuess.MsgTotalDayData.daily_data)
+  return daily_data_.Mutable(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FingerGuess::MsgDayData >*
-MsgTotalDayData::mutable_round_data() {
-  // @@protoc_insertion_point(field_mutable_list:FingerGuess.MsgTotalDayData.round_data)
-  return &round_data_;
+MsgTotalDayData::mutable_daily_data() {
+  // @@protoc_insertion_point(field_mutable_list:FingerGuess.MsgTotalDayData.daily_data)
+  return &daily_data_;
 }
-inline const ::FingerGuess::MsgDayData& MsgTotalDayData::_internal_round_data(int index) const {
-  return round_data_.Get(index);
+inline const ::FingerGuess::MsgDayData& MsgTotalDayData::_internal_daily_data(int index) const {
+  return daily_data_.Get(index);
 }
-inline const ::FingerGuess::MsgDayData& MsgTotalDayData::round_data(int index) const {
-  // @@protoc_insertion_point(field_get:FingerGuess.MsgTotalDayData.round_data)
-  return _internal_round_data(index);
+inline const ::FingerGuess::MsgDayData& MsgTotalDayData::daily_data(int index) const {
+  // @@protoc_insertion_point(field_get:FingerGuess.MsgTotalDayData.daily_data)
+  return _internal_daily_data(index);
 }
-inline ::FingerGuess::MsgDayData* MsgTotalDayData::_internal_add_round_data() {
-  return round_data_.Add();
+inline ::FingerGuess::MsgDayData* MsgTotalDayData::_internal_add_daily_data() {
+  return daily_data_.Add();
 }
-inline ::FingerGuess::MsgDayData* MsgTotalDayData::add_round_data() {
-  // @@protoc_insertion_point(field_add:FingerGuess.MsgTotalDayData.round_data)
-  return _internal_add_round_data();
+inline ::FingerGuess::MsgDayData* MsgTotalDayData::add_daily_data() {
+  // @@protoc_insertion_point(field_add:FingerGuess.MsgTotalDayData.daily_data)
+  return _internal_add_daily_data();
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FingerGuess::MsgDayData >&
-MsgTotalDayData::round_data() const {
-  // @@protoc_insertion_point(field_list:FingerGuess.MsgTotalDayData.round_data)
-  return round_data_;
+MsgTotalDayData::daily_data() const {
+  // @@protoc_insertion_point(field_list:FingerGuess.MsgTotalDayData.daily_data)
+  return daily_data_;
 }
 
 // -------------------------------------------------------------------
