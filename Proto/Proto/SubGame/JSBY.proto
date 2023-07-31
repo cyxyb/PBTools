@@ -1,0 +1,975 @@
+syntax = "proto3";
+
+enum EMsgIDSubGame
+{
+	Req_Invalid 					= 0;
+	Req_Ping						= 1000;
+	Req_LoginGameWithToken 			= 1001;
+	Req_LogoutGame 					= 1002;
+	Push_LogoutGame 				= 1003;
+	Req_RequestAttack 				= 1004;
+	Push_SyncMoney 					= 1005;
+	Push_SyncFreeTimes 				= 1006;
+	Req_UpdateHeroInfo 				= 1007;
+	Req_UpgradeHeroInfo 			= 1008;
+	Req_EnterStage 					= 1009;
+	Push_PoisonBomTimes 			= 1028;
+	Req_GetTrusteeship 				= 1029;
+	Req_SetTrusteeship 				= 1030;
+	Req_EndTrusteeship 				= 1031;
+	Push_EndTrusteeship 			= 1032;
+	Req_GetVersion 					= 1039;
+	Req_ChangePoisonBomTimes 		= 1040;
+	Req_KeepRatio 					= 1044;
+	Push_LeaveTowerTable 			= 1046;
+	Push_NotifyTowerTablePlayer 	= 1047;
+	Push_GetTowerMonster 			= 1048;
+	Req_GetTowerMonster 			= 1049;
+	Push_TowerMonster 				= 1050;
+	Req_TowerHeroAtkInfo 			= 1051;
+	Push_TowerHeroAtkInfo 			= 1052;
+	Req_TowerUpdateHero 			= 1053;
+	Push_TowerUpdateHero 			= 1054;
+	Req_TowerPlayerLockTarget 		= 1055;
+	Push_TowerPlayerLockTarget 		= 1056;
+	Req_ChangeBackground 			= 1057;
+	Req_GetCurrentTime 				= 1058;
+	Push_SyncGetTowerMonster 		= 1070;
+	Req_TowerMonsterExit 			= 1079;
+	Req_GetTowerNewGuide 			= 1081;
+	Req_SetTowerNewGuide 			= 1082;
+	Req_ActivityInfo 				= 1083;
+	Push_NotifyActivityInfo 		= 1084;
+	Req_GetActivityAward 			= 1085;
+	Req_TowerExchangeHero 			= 1089;
+	Push_TowerExchangeHero 			= 1099;
+	Req_ButtonRecords 				= 1100;
+	Push_SyncBatBulletInfo 			= 1101;
+	Push_LeaveTowerTableCountdown 	= 1102;
+	Req_PoisonBombLocation 			= 1103;
+	Push_PoisonBombLocation 		= 1104;
+	Push_PoisonBombConvert 			= 1105;
+	Push_PoisonBombType 			= 1106;
+	Req_DragonRelease 				= 1107;
+	Push_DragonRelease 				= 1108;
+	Push_DragonEnd 					= 1109;
+	Push_SelfDragonState 			= 1110;
+	Req_OneKeyUpdateHero 			= 1111;
+	Push_OneKeyUpdateHero 			= 1112;
+	Push_GhostDragonRelease 		= 1113;
+	Push_GhostDragonEnd 			= 1114;
+	Push_SelfGhostDragonState 		= 1115;
+	Push_SyncHeroMoney				= 1116;
+	Push_PushMonsterDead 			= 1117;
+	Req_DebugData 					= 1118;
+	Push_PushMonsterBuff 			= 1119;
+	Req_GetTableId 					= 1120;
+	Push_PlayerVipLevel 			= 1121;
+	Req_GetDragonProps 				= 1122;
+	Req_EquipDragonProps 			= 1123;
+	Push_DragonProps 				= 1124;
+	Req_GetShopInfo 				= 1125;
+	Push_PropsInfo 					= 1126;
+	Req_GetMaterialsInfo 			= 1127;
+	Req_ExchangeBox 				= 1128;
+	Req_DoublingBox 				= 1129;
+	Req_ShopBuy 					= 1130;
+	Push_DropMaterials 				= 1131;
+	Push_BalloonTimes 				= 1132;
+	Push_FunctionSwitch 			= 1133;
+	Push_ConnectMonster 			= 1134;
+	Push_GiantUpgrade 				= 1140;
+	Push_PushGiantEnd 				= 1141;
+	Push_DropCard 					= 1142;
+	Push_AcquireMxlSeal 			= 1143;
+	Req_SealConvertMoney 			= 1144;
+}
+
+enum ErrCode
+{
+	Success = 0;  
+	EnterRoomIsClosing = 999;  
+	QPEnterRoomFailed = 10001;  
+	QPBaseUserInfoGetFailed = 10002;  
+	QPReadGoldFailed = 10003;  
+	LackMoneyInServer = 10004;  
+	LoadPlayerDataFailed = 10005;  
+	ParameterIsWrong = 10006;  
+	LackOfMoney = 10007;  
+	DeserializeFailed = 10008;  
+	CreatePlayerFailed = 10009;  
+	PlayerNotExist = 10010;  
+	PlayerAlreadyLogin = 10011;  
+	ConfigNoHasHero = 10012;  
+	PlayerNoHasHero = 10013;  
+	HeroPositionError = 10014;  
+	HeroHasUpgradeMaxLevel = 10015;  
+	HasNotEnoughEnzyme = 10016;  
+	ConfigNoHasMonster = 10017;  
+	HeroUpdateFailed = 10018;  
+	HeroHasExist = 10019;  
+	AttackMonsterFailed = 10020;  
+	MonsterScoreErr = 10021;  
+	NotFindLiquidMedicine = 10022;  
+	HasNotEnoughLiquidMedicine = 10023;  
+	NotFindLaboratory = 10024;  
+	LaboratoryUpgradeMaxLevel = 10025;  
+	NotFindLevelUnlockEquation = 10026;  
+	UnlockParameterError = 10027;  
+	LaboratoryNotUnlock = 10028;  
+	NotFindEnzymeEquation = 10029;  
+	LaboratoryNotReachUnlockLevel = 10030;  
+	LaboratoryHasUnlock = 10031;  
+	NotFindDailyTask = 10032;   
+	NotFindDailyTaskCfg = 10033;   
+	HasGetDailyTaskAward = 10034;   
+	NoReachDailyTaskCondition = 10035;   
+	NoReachDailyTaskSchedule = 10036;   
+	DailyTaskIDError = 10037;   
+	ReachDailyTaskOver = 10038;   
+	IsNotStageMode = 10039;   
+	ModeNotExistMoster = 10040;   
+	NoExistGhostLoong = 10041;   
+	BuyLiquidMedicineMaxTimes = 10042;   
+	HighModeMonsterSetError = 10043;   
+	MonsterHasKill = 10044;   
+	TrusteeshipIsEnd = 10045;   
+	TrusteeshipCfgError = 10046;   
+	TrusteeshipNoVIPLevel = 10047;   
+	NotUseSameLiquid = 10048;   
+	PlayerNotTrusteeship = 10049;   
+	ExistWaitPlayer = 10050;   
+	SendProtoFrequently = 10051;   
+	PoisonBomPositionIdError = 10052;   
+	PoisonBomTimesNotFind = 10053;   
+	NotReachUnlockConditions = 10054;
+	HasGetScheduleAward = 10055;
+	NotFindScheduleCfg = 10056;
+	BuyNostrumLiquidOnlyOne = 10057;
+	HeroLevelNotUnlock = 10058;
+	NoExistMergeSkill = 10059;
+	HasNotEnoughStone = 10060;
+	HasNotEnoughCrystalStone = 10061;
+	NotKillingEnoughMonsters = 10062;
+	Notint32owerMode = 10063;
+	Notint32hisMode = 10064;
+	NotExistMonster = 10065;
+	HasHeroOfOtherPlayers = 10066;
+	HasNotEnoughScore = 10067;
+	PositionNoHasHero = 10068;
+	PassNoNotExist = 10069;
+	NotInMultiMode = 10070;
+	HighModeMonsterNoCfg = 10071;
+	NightKingBossHasMax = 10072;
+	HeroAppearedIsMax = 10073;
+	FailureToEnterStage = 10074;
+	PositionIsOtherPlayer = 10075;
+	MultiTableStateError = 10076;
+	InOtherMode = 10077;
+	NotEnoughStageNum = 10078;
+	NewGuideHasCompleted = 10079;
+	ActivityNotExist = 10080;
+	ActivityNotCondition = 10081;
+	ActivityHasGetAward = 10082;
+	ActivityIsNotWeChat = 10083;
+	HasOtherHero = 10084;
+	BatBulletNotFind = 10085;
+	DragonNotRelease = 10086;
+	DragonNowRelease = 10087;
+	DragonCoolDown = 10088;
+	TrusteeshipDragonNotRealse = 10089;
+	DragonAttackConfigWron = 10090;
+	GhostDragonNotRelease = 10091;
+	InvalidToken = 10092;
+	LoadPlayerWithPropsFailed = 10093;
+	PlayerDataFailed = 10094;
+	EnterGameNotifyHall = 10095;
+	NotDragonProps = 10096;
+	VipPropsExpired = 10097;
+	UseHeroNeedVipProps = 10098;
+	NotEnoughVipLevel = 10099;
+	NotEnoughMaterials = 10100;
+	NotEnoughDiamonds = 10101;
+	NotFindGragonBox = 10102;
+	NotFindGoods = 10103;
+	GoodsNumError = 10104;
+	NotAttackSameType = 10105;
+	HeroMxlOverLimit = 10106;
+}
+
+enum ModeType
+{
+	Stage=0;
+	High=1;
+	Tower=2;
+	Multi=3;
+	None=4;
+	Max=5;
+}
+
+enum StepType
+{
+	StepHigh=0;
+	StepUpgradeHero=1;
+	StepGhostLoong=2;
+	StepMax=3;
+}
+
+enum ShopType
+{
+	NoneType=0;
+	Materials=1;
+	MaxShopType=2;
+}
+enum HallMsgCode
+{
+	HMC_Invalid=0;
+	HMC_CHat=1;
+	HMC_ServerUpdate=2;
+	HMC_MailPublish=7;
+	HMC_AwardGoldUpdate=8;
+	HMC_TriggerArenaAwardGold=9;
+	HMC_AwardGoldPoolTriggerLog=10;
+	HMC_FreshMoney=11;
+	HMC_BplUpdateJackpotPool=12;
+	HMC_BplInsertJackpotRecord=13;
+	HMC_AddArenaAwardGoldPoolNotify=14;
+	HMC_Ping=15;
+	HMC_ShutdownService=16;
+	HMC_TransferToCelint32=17;
+	HMC_CheckWeChatLogin=18;
+	HMC_UserInfoUserEnterGame=19;
+	HMC_UserInfoUserExitGame=20;
+	HMC_AntinDulge=21;
+	HMC_TurntableRecord=22;
+	HMC_GetAwardGoldValue=23;
+}
+
+enum HallMsgErrorCode
+{
+	HMEC_Invalid=0;
+	HMEC_Param=1;
+	HMEC_Register=2;
+	HMEC_Sucess=3;
+	HMEC_PlayerNotExist=4;
+	HMEC_DeserializeFailed=5;
+	HMEC_FreshUserMoney=6;
+	HMEC_SystemError=7;
+}
+
+message HeroInfo
+{
+	int32 ID	= 1;
+	int32 Level = 2;
+	int32 Position = 3;
+	int32 Unlock = 4;
+}
+
+
+message CSLoginGameWithToken
+{
+	int32 PlayerId = 1;
+	string Token = 2;
+	string ClientVersion = 3;
+}
+message SCLoginGameWithToken
+{
+	 int32 Money = 1;
+	 int32 IsFirstLogin = 2;
+	 int32 UseRatio = 3;
+}
+message UserBomTimes
+{
+	 int32 UsePositionId = 1;
+	 int32 UsePositionTimes = 2;
+	 bool OverBom = 3;
+	 bool AllOver = 4;
+}
+message SpecialMonsterAttack
+{
+	 int32 PositionId = 1;
+	 int32 MonsterId = 2;
+	 int32 ChannelId = 3;
+	 int32 ProcessTime = 4;
+}
+message CSRequestAttack
+{
+	 int32 Ratio = 1;
+	 int32 Mode = 2;
+	 int32 MonsterId = 3;
+	 int32 PositionId = 4;
+	 int32 UsePositionId = 5;
+	 int32 UsePositionTimes = 6;
+	 int32 SpecialType = 7;
+	 SpecialMonsterAttack SpecialInfo = 8;
+	 bool DragonEnd = 9;
+	 int32 HeroUniqueId = 10;
+}
+message SCRequestAttack
+{
+}
+message SpecialAttackInfo
+{
+	 int32 KillID = 1;
+	 int32 SelfID = 2;
+}
+message SCSyncMoney
+{
+	 int32 Money = 1;
+	 int32 MonsterId = 2;
+	 int32 PositionId = 3;
+	 int32 Type = 4;
+	 int32 Ratio = 5;
+	 int32 PlayerId = 6;
+	 int32 MoneyVariation = 7;
+	 UserBomTimes Bom = 8;
+	 int32 HeroUniqueId = 9;
+	 SpecialAttackInfo AttackInfo = 10;
+	 int32 Eared = 11;
+	 int32 AddRatio = 12;
+	 int32 BalloonRatio = 13;
+	 string Others = 14;
+	 int32 GiantHitPower = 15;
+	 int32 MxlSealMoney = 16;
+	 int32 MxlSealAddAwardRatio = 17;
+	 string BearMultiple = 18;
+}
+message SCPoisonBomTimes
+{
+	 int32 PositionId = 1;
+	 int32 Times = 2;
+	 int32 Ratio = 3;
+	 repeated int32 AddTimes = 4;
+	 int32 KillPlayerId = 5;
+	 int32 HeroUniqueId = 6;
+	 SpecialAttackInfo AttackInfo = 7;
+}
+message CSChangePoisonBomTimes
+{
+	 int32 PositionId = 1;
+	 int32 UsePositionTimes = 2;
+	 int32 NewPositionId = 3;
+}
+message SCChangePoisonBomTimes
+{
+	
+}
+message CSEnterStage
+{
+	 bool Enter = 1;
+	 ModeType Mode = 2;
+}
+message SCEnterStage
+{
+	 int32 UseRatio = 1;
+}
+message CSKeepRatio
+{
+	 int32 Ratio = 1;
+}
+message SCKeepRatio
+{
+   
+}
+message TrusteeshipInfo
+{
+	 bool IsTrusteeship = 1;
+	 int32 HighSetValue = 2;
+	 bool HighSetOpen = 3;
+	 int32 LowSetValue = 4;
+	 bool LowSetOpen = 5;
+	 float TimeSetValue = 6;
+	 bool TimeSetOpen = 7;
+
+}
+message CSGetTrusteeship
+{
+}
+message SCGetTrusteeship
+{
+	 TrusteeshipInfo Info = 1;
+	 int32 LeftTime = 2;
+	 int32 VIPLevel = 3;
+
+}
+message CSSetTrusteeship
+{
+	 TrusteeshipInfo Info = 1;
+}
+message SCSetTrusteeship
+{
+}
+message TrusteeshipMoney
+{
+	 int32 MonsterType = 1;
+	 int32 Money = 2;
+}
+message CSEndTrusteeship
+{
+	 bool Notify = 1;
+}
+message SCEndTrusteeship
+{
+	 TrusteeshipMoney Info = 1;
+	 int32 TotalMoney = 2;
+	 int32 TotalTime = 3;
+}
+message CSGetVersion
+{
+}
+message SCGetVersion
+{
+	 bool IsNew = 1;
+}
+message ActivityInfo
+{
+	 int32 ID = 1;
+	 int32 Money = 2;
+	 int32 Enzyme = 3;
+	 string Name = 4;
+	 int32 Flag = 5;
+}
+message CSActivityInfo
+{
+	
+}
+message SCActivityInfo
+{
+	 ActivityInfo Info = 1;
+	 int32 LeftTime = 2;
+	 string Begint32ime = 3;
+	 string EndTime = 4;
+}
+message SCNotifyActivityInfo
+{
+
+	 ActivityInfo Info = 1;
+	 int32 LeftTime = 2;
+	 string Begint32ime = 3;
+	 string EndTime = 4;
+}
+message CSGetActivityAward
+{
+	 int32 ID = 1;
+}
+message SCGetActivityAward
+{
+
+	 int32 ID = 1;
+	 int32 Flag = 2;
+
+}
+message CSButtonRecords
+{
+
+	 int32 ID = 1;
+	 int32 Mode = 2;
+
+}
+message SCButtonRecords
+{
+}
+message TowerHeroInfo
+{
+	 int32 HeroId = 1;
+	 int32 PositionId = 2;
+	 bool IsAtk = 3;
+	 int32 Timestamp = 4;
+	 int32 TargetPositionId = 5;
+	 int32 UniqueId = 6;
+}
+message TowerHeroAtkInfo
+{
+	 int32 HeroPositionId = 1;
+	 bool IsAtk = 2;
+}
+message TablePlayerInfo
+{
+	 int32 ChairId = 1;
+	 int32 PlayerId = 2;
+	 int32 Money = 3;
+	 int32 Sex = 4;
+	 string Name = 5;
+	 string Head = 6;
+	 TowerHeroInfo Info = 7;
+	 int32 MoneyVariation = 8;
+	 int32 VipLevel = 9;
+	 bool IsVip = 10;
+	 int32 Background = 11;
+	 int32 Effect = 12;
+}
+message SCNotifyTowerTablePlayer
+{
+	 TablePlayerInfo Info = 1;
+	 int32 TableID = 2;
+}
+message SCLeaveTowerTable
+{
+	 int32 PlayerId = 1;
+	 bool IsAgainEnter = 2;
+}
+message TowerMonster
+{
+	 int32 Position = 1;
+	 int32 ProcessTime = 2;
+	 int32 ReadyTime = 3;
+	 int32 MonsterID = 4;
+	 repeated int32 Buff = 5;
+	 bool IsConnect = 6;
+	 int32 Level = 7;
+}
+message ChannelTowerMonster
+{
+	 int32 ChannelId = 1;
+	 TowerMonster ChannelInfo = 2;
+}
+message SCGetTowerMonster
+{
+	 int32 ReqPlayerId = 1;
+}
+message CSGetTowerMonster
+{
+	 int32 ReqPlayerId = 1;
+	 ChannelTowerMonster Info = 2;
+}
+message SCSyncGetTowerMonster
+{
+	 int32 TableID = 1;
+	 ChannelTowerMonster Info = 2;
+}
+message SCTowerMonster
+{
+	 int32 TableID = 1;
+	 ChannelTowerMonster Info = 2;
+}
+message CSTowerHeroAtkInfo
+{
+	 TowerHeroAtkInfo Info = 1;
+}
+message SCTowerHeroAtkInfo
+{
+	 TowerHeroAtkInfo Info = 1;
+}
+message CSTowerUpdateHero
+{
+	 TowerHeroInfo Info = 1;
+	 bool Leave = 2;
+}
+message SCTowerUpdateHero
+{
+	 int32 UniqueId = 1;
+}
+message SCPushTowerUpdateHero
+{
+	 TowerHeroInfo Info = 1;
+	 int32 ReqPlayerId = 2;
+	 bool Leave = 3;
+}
+message LockTargetInfo
+{
+	 int32 PositionId = 1;
+	 int32 TargetPositionId = 2;
+}
+message CSTowerPlayerLockTarget
+{
+	 LockTargetInfo LockInfo = 1;
+}
+message SCTowerPlayerLockTarget
+{
+	LockTargetInfo LockInfo = 1;
+}
+message CSChangeBackground
+{
+	 bool IsBack = 1;
+}
+message SCChangeBackground
+{
+}
+message CSTowerMonsterExit
+{
+	 int32 PositionId = 1;
+}
+message SCTowerMonsterExit
+{
+}
+message CSGetCurrentTime
+{
+}
+message SCGetCurrentTime
+{
+	 int32 Timestamp = 1;
+}
+message TowerGuideInfo
+{
+	 int32 GuideStep = 1;
+	 bool IsFinsh = 2;
+}
+message CSGetTowerStep
+{
+}
+message SCGetTowerGuide
+{
+	 TowerGuideInfo GuideInfo = 1;
+}
+message CSSetTowerStep
+{
+	 TowerGuideInfo GuideInfo = 1;
+}
+message SCSetTowerStep
+{
+}
+message CSTowerExchangeHero
+{
+	 int32 NewPositionId = 1;
+	 int32 OldPositionId = 2;
+}
+message SCTowerExchangeHero
+{
+	 int32 NewPositionId = 1;
+	 int32 OldPositionId = 2;
+	 int32 ReqPlayerId = 3;
+}
+message SCLeaveTowerTableCountdown
+{
+	 int32 TableID = 1;
+}
+message PoisonBombLocation
+{
+	 int32 ID = 1;
+	 int32 X = 2;
+	 int32 Y = 3;
+	 int32 Angle = 4;
+}
+
+message CSPoisonBombLocation
+{
+	 PoisonBombLocation Info = 1;
+}
+message SCPoisonBombLocation
+{
+	 PoisonBombLocation Info = 1;
+}
+message PoisonbombConvert
+{
+	 int32 MonsterId = 1;
+	 int32 PositionId = 2;
+	 int32 PoisonBombId = 3;
+}
+message SCPoisonBombConvert
+{
+	 int32 PoisonBombId = 1;
+	 PoisonbombConvert Info = 2;
+	 int32 KillPlayerID = 3;
+}
+message PoisonbombType
+{
+	 int32 MonsterId = 1;
+	 int32 MasterPoisonBombId = 2;
+	 int32 PoisonBombId = 3;
+	 int32 KillPlayerId = 4;
+	 int32 ChannelId = 5;
+	 int32 ProcessTime = 6;
+}
+message SCPoisonbombTypes
+{
+	 PoisonbombType Info = 1;
+}
+message CSDragonRelease
+{
+	 int32 Ratio = 1;
+	 int32 PropsID = 2;
+}
+message SCDragonRelease
+{
+	 int32 StartTime = 1;
+	 int32 PlayerId = 2;
+	 SpecialAttackInfo AttackInfo = 3;
+}
+message SCPushDragonRelease
+{
+	 int32 StartTime = 1;
+	 int32 PlayerId = 2;
+	 SpecialAttackInfo AttackInfo = 3;
+}
+message SCPushDragonEnd
+{
+	 int32 PlayerId = 1;
+}
+message SCPushSelfDragonState
+{
+	 int32 ProgressBarCount = 1;
+	 int32 ProgressBar = 2;
+	 int32 PropsID = 3;
+}
+message CSOneKeyUpdateHero
+{
+	 repeated int32 HeroId = 1;
+}
+message SCOneKeyUpdateHero
+{
+	 int32 PlayerId = 1;
+	 TowerHeroInfo LeaveInfo = 2;
+	 TowerHeroInfo updateInfo = 3;
+	 int32 TableId = 4;
+}
+message SCPushGhostDragonRelease
+{
+	 int32 StartTime = 1;
+	 int32 PlayerId = 2;
+	 int32 PositionId = 3;
+	 int32 AttackCount = 4;
+	 int32 UseCount = 5;
+	 int32 Ratio = 6;
+	 SpecialAttackInfo AttackInfo = 7;
+}
+message SCPushGhostDragonEnd
+{
+	 int32 PlayerId = 1;
+	 int32 TableID = 2;
+}
+message SCPushSelfGhostDragonState
+{
+	 int32 Count = 1;
+}
+message HeroMoney
+{
+	 int32 UniqueId = 1;
+	 int32 PlayerId = 2;
+	 int32 Money = 3;
+}
+message SCPushSyncHeroMoney
+{
+	 HeroMoney HeroMoney = 1;
+}
+message SCPushMonsterDead
+{
+	 int32 PositionID = 1;
+	 int32 TableID = 2;
+}
+message CSDebugData
+{
+	 string DebugData = 1;
+}
+message SCDebugData
+{
+}
+message SCPushMonsterBuff
+{
+	 int32 PositionID = 1;
+	 int32 BuffType = 2;
+	 int32 State = 3;
+}
+message TableState
+{
+	 int32 TableId = 1;
+	 int32 TablePlayer = 2;
+}
+message CSGetTableId
+{
+}
+message SCGetTableId
+{
+	 TableState TableId = 1;
+}
+message SCPlayerVipLevel
+{
+	 int32 PlayerId = 1;
+	 int32 Level = 2;
+	 bool IsVip = 3;
+}
+message DragonProps
+{
+	 int32 ProgressBarCount = 1;
+	 int32 ProgressBar = 2;
+	 int32 PropsID = 3;
+}
+message CSGetDragonProps
+{
+}
+message SCGetDragonProps
+{
+	 DragonProps Info = 1;
+}
+message CSEquipDragonProps
+{
+	 int32 PropsID = 1;
+}
+message SCEquipDragonProps
+{
+	 DragonProps Info = 1;
+}
+message SCPushDragonProps
+{
+	 DragonProps Info = 1;
+}
+message ShopInfo
+{
+	 int32 ShopID = 1;
+	 string Name = 2;
+	 int32 Value = 3;
+	 int32 CurrencyType = 4;
+	 int32 Price = 5;
+	 int32 Num = 6;
+}
+message CSGetShopInfo
+{
+	 ShopType ShopInfoType = 1;
+}
+message SCGetShopInfo
+{
+	 ShopInfo Info = 1;
+}
+message PropsInfo
+{
+	 int32 PropsID = 1;
+	 int32 TotalNum = 2;
+	 int32 AddNum = 3;
+}
+message SCPushPropsInfo
+{
+	 PropsInfo Info = 1;
+}
+message CSGetMaterialsInfo
+{
+}
+message SCGetMaterialsInfo
+{
+	 PropsInfo Info = 1;
+}
+message CSExchangeBox
+{
+	 int32 TypeID = 1;
+}
+message RewardInfo
+{
+	 int32 PropID = 1;
+	 int32 PropNum = 2;
+}
+message SCExchangeBox
+{
+	 int32 TypeID = 1;
+	 int32 ID = 2;
+	 RewardInfo Reward = 3;
+	 RewardInfo AddReward = 4;
+	 int32 DoublingCost = 5;
+}
+message CSDoublingBox
+{
+	 bool IsDoubling = 1;
+}
+message SCDoublingBox
+{
+	 bool IsDouble = 1;
+	 int32 ID = 2;
+	 RewardInfo Reward = 3;
+	 RewardInfo AddReward = 4;
+}
+message CSShopBuy
+{
+	 int32 PropsID = 1;
+	 int32 PropsNum = 2;
+}
+message SCShopBuy
+{
+	 int32 PropsID = 1;
+	 int32 PropsNum = 2;
+}
+message MaterialsInfo
+{
+	 int32 PositionId = 1;
+	 int32 PropsID = 2;
+	 int32 Num = 3;
+}
+
+message SCPushDropMaterials
+{
+	 MaterialsInfo Info = 1;
+}
+message SCPushBalloonTimes
+{
+	 int32 PositionId = 1;
+	 int32 PlayerId = 2;
+	 int32 FreeTimes = 3;
+	 int32 Ratio = 4;
+	 int32 StartTime = 5;
+	 int32 AttackCount = 6;
+	 SpecialAttackInfo AttackInfo = 7;
+}
+message SwitchInfo
+{
+	 int32 Id = 1;
+	 bool Open = 2;
+}
+message SCFunctionSwitch
+{
+	 SwitchInfo Info = 1;
+}
+message CSSealConvertMoney
+{
+}
+message SCSealConvertMoney
+{
+	 int32 PlayerId = 1;
+	 int32 Seal = 2;
+	 int32 Money = 3;
+}
+message ConnectMonster
+{
+	 int32 PositionID = 1;
+	 int32 MonsterID = 2;
+}
+message SCPushConnectMonster
+{
+	 ConnectMonster Connect = 1;
+	 int32 ConnectID = 2;
+	 int32 AttackPositionID = 3;
+}
+message SCGiantUpgrade
+{
+	 int32 PlayerId = 1;
+	 int32 PositionId = 2;
+	 int32 Level = 3;
+	 int32 AttackTimes = 4;
+	 SpecialAttackInfo AttackInfo = 5;
+	 bool IsOver = 6;
+	 int32 Ratio = 7;
+}
+
+message SCPushGiantEnd
+{
+	 int32 PlayerId = 1;
+	 int32 PositionId = 2;
+}
+message SCDropCard
+{
+	 int32 ID = 1;
+	 int32 TypeID = 2;
+	 int32 Quality = 3;
+	 int32 BasePower = 4;
+	 int32 ExtendPower = 5;
+	 int32 Equip = 6;
+	 int32 PositionID = 7;
+}
+
+message SCAcquireSeal
+{
+	 int32 PlayerId = 1;
+	 int32 MxlSealAddAwardRatio = 2;
+	 int32 HeroPositionId = 3;
+}
+
+message FreshMoney
+{
+	 int32 PlayerId = 1;
+	 int32 Fee = 2;
+	 int32 GameID = 3;
+	 int32 CYMoney = 4;
+}
+
+message ShutdownService
+{
+	 int32 GameID = 1;
+	 int32 ArenaID = 2;
+	 int32 ServerID = 3;
+}
+
