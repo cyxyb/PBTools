@@ -39,7 +39,7 @@ namespace FingerGuess {
             "bHVzX2dvbGQYCCABKAMiPgoPTXNnVG90YWxEYXlEYXRhEisKCmRhaWx5X2Rh",
             "dGEYASADKAsyFy5GaW5nZXJHdWVzcy5Nc2dEYXlEYXRhIjkKDk1zZ1F1ZXJ5",
             "UmVjb3JkEgwKBHBhZ2UYASABKAUSCwoDbnVtGAIgASgFEgwKBHR5cGUYAyAB",
-            "KAUq1wMKDUVNc2dJRFN1YkdhbWUSFQoRTXNnSURTdWJHYW1lX051bGwQABIc",
+            "KAUqlwQKDUVNc2dJRFN1YkdhbWUSFQoRTXNnSURTdWJHYW1lX051bGwQABIc",
             "ChhNc2dJRFN1YkdhbWVfUGxheWVyUmVhZHkQARIgChxNc2dJRFN1YkdhbWVf",
             "UGxheWVyUmVhZHlSZXNwEAISIAocTXNnSURTdWJHYW1lX0JhbmtlckNoYW5n",
             "ZUJldBADEiQKIE1zZ0lEU3ViR2FtZV9CYW5rZXJDaGFuZ2VCZXRSZXNwEAQS",
@@ -49,7 +49,9 @@ namespace FingerGuess {
             "c2dJRFN1YkdhbWVfUXVlcnlSZWNvcmQQCRIlCiFNc2dJRFN1YkdhbWVfUXVl",
             "cnlSb3VuZFJlY29yZFJlc3AQChIjCh9Nc2dJRFN1YkdhbWVfUXVlcnlEYXlS",
             "ZWNvcmRSZXNwEAsSGwoXTXNnSURTdWJHYW1lX0tpY2tQbGF5ZXIQDBIdChlN",
-            "c2dJRFN1YkdhbWVfQWRkT25lUmVjb3JkEA1iBnByb3RvMw=="));
+            "c2dJRFN1YkdhbWVfQWRkT25lUmVjb3JkEA0SHAoYTXNnSURTdWJHYW1lX0Nh",
+            "bmNlbFJlYWR5EA4SIAocTXNnSURTdWJHYW1lX0NhbmNlbFJlYWR5UmVzcBAP",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::FingerGuess.EMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -120,6 +122,14 @@ namespace FingerGuess {
     ///增加一条记录
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_AddOneRecord")] MsgIdsubGameAddOneRecord = 13,
+    /// <summary>
+    ///玩家取消准备(MsgCommonBool)
+    /// </summary>
+    [pbr::OriginalName("MsgIDSubGame_CancelReady")] MsgIdsubGameCancelReady = 14,
+    /// <summary>
+    ///玩家取消准备返回(MsgCommonBool)
+    /// </summary>
+    [pbr::OriginalName("MsgIDSubGame_CancelReadyResp")] MsgIdsubGameCancelReadyResp = 15,
   }
 
   #endregion

@@ -243,7 +243,7 @@ const char descriptor_table_protodef_FingerGuess_2eproto[] PROTOBUF_SECTION_VARI
   "\n\014surplus_gold\030\010 \001(\003\">\n\017MsgTotalDayData\022"
   "+\n\ndaily_data\030\001 \003(\0132\027.FingerGuess.MsgDay"
   "Data\"9\n\016MsgQueryRecord\022\014\n\004page\030\001 \001(\005\022\013\n\003"
-  "num\030\002 \001(\005\022\014\n\004type\030\003 \001(\005*\327\003\n\rEMsgIDSubGam"
+  "num\030\002 \001(\005\022\014\n\004type\030\003 \001(\005*\227\004\n\rEMsgIDSubGam"
   "e\022\025\n\021MsgIDSubGame_Null\020\000\022\034\n\030MsgIDSubGame"
   "_PlayerReady\020\001\022 \n\034MsgIDSubGame_PlayerRea"
   "dyResp\020\002\022 \n\034MsgIDSubGame_BankerChangeBet"
@@ -255,7 +255,9 @@ const char descriptor_table_protodef_FingerGuess_2eproto[] PROTOBUF_SECTION_VARI
   "\t\022%\n!MsgIDSubGame_QueryRoundRecordResp\020\n"
   "\022#\n\037MsgIDSubGame_QueryDayRecordResp\020\013\022\033\n"
   "\027MsgIDSubGame_KickPlayer\020\014\022\035\n\031MsgIDSubGa"
-  "me_AddOneRecord\020\rb\006proto3"
+  "me_AddOneRecord\020\r\022\034\n\030MsgIDSubGame_Cancel"
+  "Ready\020\016\022 \n\034MsgIDSubGame_CancelReadyResp\020"
+  "\017b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_FingerGuess_2eproto_deps[1] = {
 };
@@ -270,7 +272,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Fin
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_FingerGuess_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_FingerGuess_2eproto = {
-  false, false, descriptor_table_protodef_FingerGuess_2eproto, "FingerGuess.proto", 1145,
+  false, false, descriptor_table_protodef_FingerGuess_2eproto, "FingerGuess.proto", 1209,
   &descriptor_table_FingerGuess_2eproto_once, descriptor_table_FingerGuess_2eproto_sccs, descriptor_table_FingerGuess_2eproto_deps, 7, 0,
   schemas, file_default_instances, TableStruct_FingerGuess_2eproto::offsets,
   file_level_metadata_FingerGuess_2eproto, 7, file_level_enum_descriptors_FingerGuess_2eproto, file_level_service_descriptors_FingerGuess_2eproto,
@@ -299,6 +301,8 @@ bool EMsgIDSubGame_IsValid(int value) {
     case 11:
     case 12:
     case 13:
+    case 14:
+    case 15:
       return true;
     default:
       return false;

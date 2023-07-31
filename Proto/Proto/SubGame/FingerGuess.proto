@@ -18,6 +18,8 @@ enum EMsgIDSubGame
 	MsgIDSubGame_QueryDayRecordResp		= 11;	//每日数据数据记录(MsgTotalDayData)
 	MsgIDSubGame_KickPlayer				= 12;	//踢出玩家(MsgCommonBool)
 	MsgIDSubGame_AddOneRecord			= 13;	//增加一条记录
+	MsgIDSubGame_CancelReady			= 14;	//玩家取消准备(MsgCommonBool)
+	MsgIDSubGame_CancelReadyResp		= 15;	//玩家取消准备返回(MsgCommonBool)
 }
 
 //场景消息
