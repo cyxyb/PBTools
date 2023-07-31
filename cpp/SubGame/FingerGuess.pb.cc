@@ -163,6 +163,8 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_FingerGuess_2eproto::offsets[]
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgResult, result_),
   PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgResult, gold_),
+  PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgResult, banker_result_),
+  PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgResult, player_result_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgRoundData, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -209,11 +211,11 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_FingerGuess_2eproto::offsets[]
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::FingerGuess::MsgSceneInfo)},
   { 12, -1, sizeof(::FingerGuess::MsgResult)},
-  { 19, -1, sizeof(::FingerGuess::MsgRoundData)},
-  { 28, -1, sizeof(::FingerGuess::MsgTotalRoundData)},
-  { 34, -1, sizeof(::FingerGuess::MsgDayData)},
-  { 47, -1, sizeof(::FingerGuess::MsgTotalDayData)},
-  { 53, -1, sizeof(::FingerGuess::MsgQueryRecord)},
+  { 21, -1, sizeof(::FingerGuess::MsgRoundData)},
+  { 30, -1, sizeof(::FingerGuess::MsgTotalRoundData)},
+  { 36, -1, sizeof(::FingerGuess::MsgDayData)},
+  { 49, -1, sizeof(::FingerGuess::MsgTotalDayData)},
+  { 55, -1, sizeof(::FingerGuess::MsgQueryRecord)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -231,33 +233,34 @@ const char descriptor_table_protodef_FingerGuess_2eproto[] PROTOBUF_SECTION_VARI
   "SceneInfo\022\017\n\007room_id\030\001 \001(\005\022\013\n\003bet\030\002 \003(\005\022"
   "\017\n\007cur_bet\030\003 \001(\005\022\020\n\010password\030\004 \001(\t\022\017\n\007mi"
   "n_bet\030\005 \001(\005\022\017\n\007max_bet\030\006 \001(\003\022\023\n\013house_ow"
-  "ner\030\007 \001(\010\")\n\tMsgResult\022\016\n\006result\030\001 \001(\005\022\014"
-  "\n\004gold\030\002 \001(\003\"U\n\014MsgRoundData\022\014\n\004time\030\001 \001"
-  "(\005\022\023\n\013win_user_id\030\002 \001(\005\022\024\n\014lose_user_id\030"
-  "\003 \001(\005\022\014\n\004gold\030\004 \001(\003\"B\n\021MsgTotalRoundData"
-  "\022-\n\nround_data\030\001 \003(\0132\031.FingerGuess.MsgRo"
-  "undData\"\252\001\n\nMsgDayData\022\014\n\004time\030\001 \001(\t\022\030\n\020"
-  "total_play_count\030\002 \001(\005\022\022\n\nlose_count\030\003 \001"
-  "(\005\022\021\n\tlose_gold\030\004 \001(\003\022\021\n\twin_count\030\005 \001(\005"
-  "\022\020\n\010win_gold\030\006 \001(\003\022\022\n\ntotal_gold\030\007 \001(\003\022\024"
-  "\n\014surplus_gold\030\010 \001(\003\">\n\017MsgTotalDayData\022"
-  "+\n\ndaily_data\030\001 \003(\0132\027.FingerGuess.MsgDay"
-  "Data\"9\n\016MsgQueryRecord\022\014\n\004page\030\001 \001(\005\022\013\n\003"
-  "num\030\002 \001(\005\022\014\n\004type\030\003 \001(\005*\227\004\n\rEMsgIDSubGam"
-  "e\022\025\n\021MsgIDSubGame_Null\020\000\022\034\n\030MsgIDSubGame"
-  "_PlayerReady\020\001\022 \n\034MsgIDSubGame_PlayerRea"
-  "dyResp\020\002\022 \n\034MsgIDSubGame_BankerChangeBet"
-  "\020\003\022$\n MsgIDSubGame_BankerChangeBetResp\020\004"
-  "\022!\n\035MsgIDSubGame_PlayerConfirmBet\020\005\022%\n!M"
-  "sgIDSubGame_PlayerConfirmBetResp\020\006\022\032\n\026Ms"
-  "gIDSubGame_StartGame\020\007\022\033\n\027MsgIDSubGame_R"
-  "esultResp\020\010\022\034\n\030MsgIDSubGame_QueryRecord\020"
-  "\t\022%\n!MsgIDSubGame_QueryRoundRecordResp\020\n"
-  "\022#\n\037MsgIDSubGame_QueryDayRecordResp\020\013\022\033\n"
-  "\027MsgIDSubGame_KickPlayer\020\014\022\035\n\031MsgIDSubGa"
-  "me_AddOneRecord\020\r\022\034\n\030MsgIDSubGame_Cancel"
-  "Ready\020\016\022 \n\034MsgIDSubGame_CancelReadyResp\020"
-  "\017b\006proto3"
+  "ner\030\007 \001(\010\"W\n\tMsgResult\022\016\n\006result\030\001 \001(\005\022\014"
+  "\n\004gold\030\002 \001(\003\022\025\n\rbanker_result\030\003 \001(\005\022\025\n\rp"
+  "layer_result\030\004 \001(\005\"U\n\014MsgRoundData\022\014\n\004ti"
+  "me\030\001 \001(\005\022\023\n\013win_user_id\030\002 \001(\005\022\024\n\014lose_us"
+  "er_id\030\003 \001(\005\022\014\n\004gold\030\004 \001(\003\"B\n\021MsgTotalRou"
+  "ndData\022-\n\nround_data\030\001 \003(\0132\031.FingerGuess"
+  ".MsgRoundData\"\252\001\n\nMsgDayData\022\014\n\004time\030\001 \001"
+  "(\t\022\030\n\020total_play_count\030\002 \001(\005\022\022\n\nlose_cou"
+  "nt\030\003 \001(\005\022\021\n\tlose_gold\030\004 \001(\003\022\021\n\twin_count"
+  "\030\005 \001(\005\022\020\n\010win_gold\030\006 \001(\003\022\022\n\ntotal_gold\030\007"
+  " \001(\003\022\024\n\014surplus_gold\030\010 \001(\003\">\n\017MsgTotalDa"
+  "yData\022+\n\ndaily_data\030\001 \003(\0132\027.FingerGuess."
+  "MsgDayData\"9\n\016MsgQueryRecord\022\014\n\004page\030\001 \001"
+  "(\005\022\013\n\003num\030\002 \001(\005\022\014\n\004type\030\003 \001(\005*\227\004\n\rEMsgID"
+  "SubGame\022\025\n\021MsgIDSubGame_Null\020\000\022\034\n\030MsgIDS"
+  "ubGame_PlayerReady\020\001\022 \n\034MsgIDSubGame_Pla"
+  "yerReadyResp\020\002\022 \n\034MsgIDSubGame_BankerCha"
+  "ngeBet\020\003\022$\n MsgIDSubGame_BankerChangeBet"
+  "Resp\020\004\022!\n\035MsgIDSubGame_PlayerConfirmBet\020"
+  "\005\022%\n!MsgIDSubGame_PlayerConfirmBetResp\020\006"
+  "\022\032\n\026MsgIDSubGame_StartGame\020\007\022\033\n\027MsgIDSub"
+  "Game_ResultResp\020\010\022\034\n\030MsgIDSubGame_QueryR"
+  "ecord\020\t\022%\n!MsgIDSubGame_QueryRoundRecord"
+  "Resp\020\n\022#\n\037MsgIDSubGame_QueryDayRecordRes"
+  "p\020\013\022\033\n\027MsgIDSubGame_KickPlayer\020\014\022\035\n\031MsgI"
+  "DSubGame_AddOneRecord\020\r\022\034\n\030MsgIDSubGame_"
+  "CancelReady\020\016\022 \n\034MsgIDSubGame_CancelRead"
+  "yResp\020\017b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_FingerGuess_2eproto_deps[1] = {
 };
@@ -272,7 +275,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Fin
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_FingerGuess_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_FingerGuess_2eproto = {
-  false, false, descriptor_table_protodef_FingerGuess_2eproto, "FingerGuess.proto", 1209,
+  false, false, descriptor_table_protodef_FingerGuess_2eproto, "FingerGuess.proto", 1255,
   &descriptor_table_FingerGuess_2eproto_once, descriptor_table_FingerGuess_2eproto_sccs, descriptor_table_FingerGuess_2eproto_deps, 7, 0,
   schemas, file_default_instances, TableStruct_FingerGuess_2eproto::offsets,
   file_level_metadata_FingerGuess_2eproto, 7, file_level_enum_descriptors_FingerGuess_2eproto, file_level_service_descriptors_FingerGuess_2eproto,
@@ -700,16 +703,16 @@ MsgResult::MsgResult(const MsgResult& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&gold_, &from.gold_,
-    static_cast<size_t>(reinterpret_cast<char*>(&result_) -
-    reinterpret_cast<char*>(&gold_)) + sizeof(result_));
+    static_cast<size_t>(reinterpret_cast<char*>(&player_result_) -
+    reinterpret_cast<char*>(&gold_)) + sizeof(player_result_));
   // @@protoc_insertion_point(copy_constructor:FingerGuess.MsgResult)
 }
 
 void MsgResult::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&gold_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&result_) -
-      reinterpret_cast<char*>(&gold_)) + sizeof(result_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&player_result_) -
+      reinterpret_cast<char*>(&gold_)) + sizeof(player_result_));
 }
 
 MsgResult::~MsgResult() {
@@ -744,8 +747,8 @@ void MsgResult::Clear() {
   (void) cached_has_bits;
 
   ::memset(&gold_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&result_) -
-      reinterpret_cast<char*>(&gold_)) + sizeof(result_));
+      reinterpret_cast<char*>(&player_result_) -
+      reinterpret_cast<char*>(&gold_)) + sizeof(player_result_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -767,6 +770,20 @@ const char* MsgResult::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 banker_result = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          banker_result_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 player_result = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          player_result_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -810,6 +827,18 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_gold(), target);
   }
 
+  // int32 banker_result = 3;
+  if (this->banker_result() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_banker_result(), target);
+  }
+
+  // int32 player_result = 4;
+  if (this->player_result() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_player_result(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -838,6 +867,20 @@ size_t MsgResult::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_result());
+  }
+
+  // int32 banker_result = 3;
+  if (this->banker_result() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_banker_result());
+  }
+
+  // int32 player_result = 4;
+  if (this->player_result() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_player_result());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -877,6 +920,12 @@ void MsgResult::MergeFrom(const MsgResult& from) {
   if (from.result() != 0) {
     _internal_set_result(from._internal_result());
   }
+  if (from.banker_result() != 0) {
+    _internal_set_banker_result(from._internal_banker_result());
+  }
+  if (from.player_result() != 0) {
+    _internal_set_player_result(from._internal_player_result());
+  }
 }
 
 void MsgResult::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -901,8 +950,8 @@ void MsgResult::InternalSwap(MsgResult* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgResult, result_)
-      + sizeof(MsgResult::result_)
+      PROTOBUF_FIELD_OFFSET(MsgResult, player_result_)
+      + sizeof(MsgResult::player_result_)
       - PROTOBUF_FIELD_OFFSET(MsgResult, gold_)>(
           reinterpret_cast<char*>(&gold_),
           reinterpret_cast<char*>(&other->gold_));

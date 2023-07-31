@@ -28,35 +28,36 @@ namespace FingerGuess {
             "cyKGAQoMTXNnU2NlbmVJbmZvEg8KB3Jvb21faWQYASABKAUSCwoDYmV0GAIg",
             "AygFEg8KB2N1cl9iZXQYAyABKAUSEAoIcGFzc3dvcmQYBCABKAkSDwoHbWlu",
             "X2JldBgFIAEoBRIPCgdtYXhfYmV0GAYgASgDEhMKC2hvdXNlX293bmVyGAcg",
-            "ASgIIikKCU1zZ1Jlc3VsdBIOCgZyZXN1bHQYASABKAUSDAoEZ29sZBgCIAEo",
-            "AyJVCgxNc2dSb3VuZERhdGESDAoEdGltZRgBIAEoBRITCgt3aW5fdXNlcl9p",
-            "ZBgCIAEoBRIUCgxsb3NlX3VzZXJfaWQYAyABKAUSDAoEZ29sZBgEIAEoAyJC",
-            "ChFNc2dUb3RhbFJvdW5kRGF0YRItCgpyb3VuZF9kYXRhGAEgAygLMhkuRmlu",
-            "Z2VyR3Vlc3MuTXNnUm91bmREYXRhIqoBCgpNc2dEYXlEYXRhEgwKBHRpbWUY",
-            "ASABKAkSGAoQdG90YWxfcGxheV9jb3VudBgCIAEoBRISCgpsb3NlX2NvdW50",
-            "GAMgASgFEhEKCWxvc2VfZ29sZBgEIAEoAxIRCgl3aW5fY291bnQYBSABKAUS",
-            "EAoId2luX2dvbGQYBiABKAMSEgoKdG90YWxfZ29sZBgHIAEoAxIUCgxzdXJw",
-            "bHVzX2dvbGQYCCABKAMiPgoPTXNnVG90YWxEYXlEYXRhEisKCmRhaWx5X2Rh",
-            "dGEYASADKAsyFy5GaW5nZXJHdWVzcy5Nc2dEYXlEYXRhIjkKDk1zZ1F1ZXJ5",
-            "UmVjb3JkEgwKBHBhZ2UYASABKAUSCwoDbnVtGAIgASgFEgwKBHR5cGUYAyAB",
-            "KAUqlwQKDUVNc2dJRFN1YkdhbWUSFQoRTXNnSURTdWJHYW1lX051bGwQABIc",
-            "ChhNc2dJRFN1YkdhbWVfUGxheWVyUmVhZHkQARIgChxNc2dJRFN1YkdhbWVf",
-            "UGxheWVyUmVhZHlSZXNwEAISIAocTXNnSURTdWJHYW1lX0JhbmtlckNoYW5n",
-            "ZUJldBADEiQKIE1zZ0lEU3ViR2FtZV9CYW5rZXJDaGFuZ2VCZXRSZXNwEAQS",
-            "IQodTXNnSURTdWJHYW1lX1BsYXllckNvbmZpcm1CZXQQBRIlCiFNc2dJRFN1",
-            "YkdhbWVfUGxheWVyQ29uZmlybUJldFJlc3AQBhIaChZNc2dJRFN1YkdhbWVf",
-            "U3RhcnRHYW1lEAcSGwoXTXNnSURTdWJHYW1lX1Jlc3VsdFJlc3AQCBIcChhN",
-            "c2dJRFN1YkdhbWVfUXVlcnlSZWNvcmQQCRIlCiFNc2dJRFN1YkdhbWVfUXVl",
-            "cnlSb3VuZFJlY29yZFJlc3AQChIjCh9Nc2dJRFN1YkdhbWVfUXVlcnlEYXlS",
-            "ZWNvcmRSZXNwEAsSGwoXTXNnSURTdWJHYW1lX0tpY2tQbGF5ZXIQDBIdChlN",
-            "c2dJRFN1YkdhbWVfQWRkT25lUmVjb3JkEA0SHAoYTXNnSURTdWJHYW1lX0Nh",
-            "bmNlbFJlYWR5EA4SIAocTXNnSURTdWJHYW1lX0NhbmNlbFJlYWR5UmVzcBAP",
-            "YgZwcm90bzM="));
+            "ASgIIlcKCU1zZ1Jlc3VsdBIOCgZyZXN1bHQYASABKAUSDAoEZ29sZBgCIAEo",
+            "AxIVCg1iYW5rZXJfcmVzdWx0GAMgASgFEhUKDXBsYXllcl9yZXN1bHQYBCAB",
+            "KAUiVQoMTXNnUm91bmREYXRhEgwKBHRpbWUYASABKAUSEwoLd2luX3VzZXJf",
+            "aWQYAiABKAUSFAoMbG9zZV91c2VyX2lkGAMgASgFEgwKBGdvbGQYBCABKAMi",
+            "QgoRTXNnVG90YWxSb3VuZERhdGESLQoKcm91bmRfZGF0YRgBIAMoCzIZLkZp",
+            "bmdlckd1ZXNzLk1zZ1JvdW5kRGF0YSKqAQoKTXNnRGF5RGF0YRIMCgR0aW1l",
+            "GAEgASgJEhgKEHRvdGFsX3BsYXlfY291bnQYAiABKAUSEgoKbG9zZV9jb3Vu",
+            "dBgDIAEoBRIRCglsb3NlX2dvbGQYBCABKAMSEQoJd2luX2NvdW50GAUgASgF",
+            "EhAKCHdpbl9nb2xkGAYgASgDEhIKCnRvdGFsX2dvbGQYByABKAMSFAoMc3Vy",
+            "cGx1c19nb2xkGAggASgDIj4KD01zZ1RvdGFsRGF5RGF0YRIrCgpkYWlseV9k",
+            "YXRhGAEgAygLMhcuRmluZ2VyR3Vlc3MuTXNnRGF5RGF0YSI5Cg5Nc2dRdWVy",
+            "eVJlY29yZBIMCgRwYWdlGAEgASgFEgsKA251bRgCIAEoBRIMCgR0eXBlGAMg",
+            "ASgFKpcECg1FTXNnSURTdWJHYW1lEhUKEU1zZ0lEU3ViR2FtZV9OdWxsEAAS",
+            "HAoYTXNnSURTdWJHYW1lX1BsYXllclJlYWR5EAESIAocTXNnSURTdWJHYW1l",
+            "X1BsYXllclJlYWR5UmVzcBACEiAKHE1zZ0lEU3ViR2FtZV9CYW5rZXJDaGFu",
+            "Z2VCZXQQAxIkCiBNc2dJRFN1YkdhbWVfQmFua2VyQ2hhbmdlQmV0UmVzcBAE",
+            "EiEKHU1zZ0lEU3ViR2FtZV9QbGF5ZXJDb25maXJtQmV0EAUSJQohTXNnSURT",
+            "dWJHYW1lX1BsYXllckNvbmZpcm1CZXRSZXNwEAYSGgoWTXNnSURTdWJHYW1l",
+            "X1N0YXJ0R2FtZRAHEhsKF01zZ0lEU3ViR2FtZV9SZXN1bHRSZXNwEAgSHAoY",
+            "TXNnSURTdWJHYW1lX1F1ZXJ5UmVjb3JkEAkSJQohTXNnSURTdWJHYW1lX1F1",
+            "ZXJ5Um91bmRSZWNvcmRSZXNwEAoSIwofTXNnSURTdWJHYW1lX1F1ZXJ5RGF5",
+            "UmVjb3JkUmVzcBALEhsKF01zZ0lEU3ViR2FtZV9LaWNrUGxheWVyEAwSHQoZ",
+            "TXNnSURTdWJHYW1lX0FkZE9uZVJlY29yZBANEhwKGE1zZ0lEU3ViR2FtZV9D",
+            "YW5jZWxSZWFkeRAOEiAKHE1zZ0lEU3ViR2FtZV9DYW5jZWxSZWFkeVJlc3AQ",
+            "D2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::FingerGuess.EMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::FingerGuess.MsgSceneInfo), global::FingerGuess.MsgSceneInfo.Parser, new[]{ "RoomId", "Bet", "CurBet", "Password", "MinBet", "MaxBet", "HouseOwner" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::FingerGuess.MsgResult), global::FingerGuess.MsgResult.Parser, new[]{ "Result", "Gold" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::FingerGuess.MsgResult), global::FingerGuess.MsgResult.Parser, new[]{ "Result", "Gold", "BankerResult", "PlayerResult" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::FingerGuess.MsgRoundData), global::FingerGuess.MsgRoundData.Parser, new[]{ "Time", "WinUserId", "LoseUserId", "Gold" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::FingerGuess.MsgTotalRoundData), global::FingerGuess.MsgTotalRoundData.Parser, new[]{ "RoundData" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::FingerGuess.MsgDayData), global::FingerGuess.MsgDayData.Parser, new[]{ "Time", "TotalPlayCount", "LoseCount", "LoseGold", "WinCount", "WinGold", "TotalGold", "SurplusGold" }, null, null, null, null),
@@ -572,6 +573,8 @@ namespace FingerGuess {
     public MsgResult(MsgResult other) : this() {
       result_ = other.result_;
       gold_ = other.gold_;
+      bankerResult_ = other.bankerResult_;
+      playerResult_ = other.playerResult_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -608,6 +611,34 @@ namespace FingerGuess {
       }
     }
 
+    /// <summary>Field number for the "banker_result" field.</summary>
+    public const int BankerResultFieldNumber = 3;
+    private int bankerResult_;
+    /// <summary>
+    ///庄家结果
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int BankerResult {
+      get { return bankerResult_; }
+      set {
+        bankerResult_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "player_result" field.</summary>
+    public const int PlayerResultFieldNumber = 4;
+    private int playerResult_;
+    /// <summary>
+    ///玩家结果
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int PlayerResult {
+      get { return playerResult_; }
+      set {
+        playerResult_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as MsgResult);
@@ -623,6 +654,8 @@ namespace FingerGuess {
       }
       if (Result != other.Result) return false;
       if (Gold != other.Gold) return false;
+      if (BankerResult != other.BankerResult) return false;
+      if (PlayerResult != other.PlayerResult) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -631,6 +664,8 @@ namespace FingerGuess {
       int hash = 1;
       if (Result != 0) hash ^= Result.GetHashCode();
       if (Gold != 0L) hash ^= Gold.GetHashCode();
+      if (BankerResult != 0) hash ^= BankerResult.GetHashCode();
+      if (PlayerResult != 0) hash ^= PlayerResult.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -655,6 +690,14 @@ namespace FingerGuess {
         output.WriteRawTag(16);
         output.WriteInt64(Gold);
       }
+      if (BankerResult != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(BankerResult);
+      }
+      if (PlayerResult != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(PlayerResult);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -672,6 +715,14 @@ namespace FingerGuess {
         output.WriteRawTag(16);
         output.WriteInt64(Gold);
       }
+      if (BankerResult != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(BankerResult);
+      }
+      if (PlayerResult != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(PlayerResult);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -686,6 +737,12 @@ namespace FingerGuess {
       }
       if (Gold != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(Gold);
+      }
+      if (BankerResult != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(BankerResult);
+      }
+      if (PlayerResult != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PlayerResult);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -703,6 +760,12 @@ namespace FingerGuess {
       }
       if (other.Gold != 0L) {
         Gold = other.Gold;
+      }
+      if (other.BankerResult != 0) {
+        BankerResult = other.BankerResult;
+      }
+      if (other.PlayerResult != 0) {
+        PlayerResult = other.PlayerResult;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -726,6 +789,14 @@ namespace FingerGuess {
             Gold = input.ReadInt64();
             break;
           }
+          case 24: {
+            BankerResult = input.ReadInt32();
+            break;
+          }
+          case 32: {
+            PlayerResult = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -746,6 +817,14 @@ namespace FingerGuess {
           }
           case 16: {
             Gold = input.ReadInt64();
+            break;
+          }
+          case 24: {
+            BankerResult = input.ReadInt32();
+            break;
+          }
+          case 32: {
+            PlayerResult = input.ReadInt32();
             break;
           }
         }

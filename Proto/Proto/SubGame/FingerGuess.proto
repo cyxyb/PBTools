@@ -37,8 +37,10 @@ message MsgSceneInfo
 //游戏结果
 message MsgResult
 {
-	int32			result 	= 1;			//游戏结果(1:庄家赢 2:玩家赢 3: 和)
-	int64			gold	= 2;			//金币
+	int32			result 			= 1;			//游戏结果(1:庄家赢 2:玩家赢 3: 和)
+	int64			gold			= 2;			//金币
+	int32			banker_result 	= 3;			//庄家结果
+	int32			player_result 	= 4;			//玩家结果
 }
 
 //每局数据

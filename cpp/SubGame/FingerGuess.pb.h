@@ -466,6 +466,8 @@ class MsgResult PROTOBUF_FINAL :
   enum : int {
     kGoldFieldNumber = 2,
     kResultFieldNumber = 1,
+    kBankerResultFieldNumber = 3,
+    kPlayerResultFieldNumber = 4,
   };
   // int64 gold = 2;
   void clear_gold();
@@ -485,6 +487,24 @@ class MsgResult PROTOBUF_FINAL :
   void _internal_set_result(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 banker_result = 3;
+  void clear_banker_result();
+  ::PROTOBUF_NAMESPACE_ID::int32 banker_result() const;
+  void set_banker_result(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_banker_result() const;
+  void _internal_set_banker_result(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 player_result = 4;
+  void clear_player_result();
+  ::PROTOBUF_NAMESPACE_ID::int32 player_result() const;
+  void set_player_result(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_player_result() const;
+  void _internal_set_player_result(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:FingerGuess.MsgResult)
  private:
   class _Internal;
@@ -494,6 +514,8 @@ class MsgResult PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int64 gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 result_;
+  ::PROTOBUF_NAMESPACE_ID::int32 banker_result_;
+  ::PROTOBUF_NAMESPACE_ID::int32 player_result_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_FingerGuess_2eproto;
 };
@@ -1595,6 +1617,46 @@ inline void MsgResult::_internal_set_gold(::PROTOBUF_NAMESPACE_ID::int64 value) 
 inline void MsgResult::set_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_gold(value);
   // @@protoc_insertion_point(field_set:FingerGuess.MsgResult.gold)
+}
+
+// int32 banker_result = 3;
+inline void MsgResult::clear_banker_result() {
+  banker_result_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgResult::_internal_banker_result() const {
+  return banker_result_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgResult::banker_result() const {
+  // @@protoc_insertion_point(field_get:FingerGuess.MsgResult.banker_result)
+  return _internal_banker_result();
+}
+inline void MsgResult::_internal_set_banker_result(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  banker_result_ = value;
+}
+inline void MsgResult::set_banker_result(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_banker_result(value);
+  // @@protoc_insertion_point(field_set:FingerGuess.MsgResult.banker_result)
+}
+
+// int32 player_result = 4;
+inline void MsgResult::clear_player_result() {
+  player_result_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgResult::_internal_player_result() const {
+  return player_result_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgResult::player_result() const {
+  // @@protoc_insertion_point(field_get:FingerGuess.MsgResult.player_result)
+  return _internal_player_result();
+}
+inline void MsgResult::_internal_set_player_result(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  player_result_ = value;
+}
+inline void MsgResult::set_player_result(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_player_result(value);
+  // @@protoc_insertion_point(field_set:FingerGuess.MsgResult.player_result)
 }
 
 // -------------------------------------------------------------------
