@@ -588,7 +588,7 @@ namespace FingerGuess {
     public const int GoldFieldNumber = 2;
     private long gold_;
     /// <summary>
-    ///输赢金币
+    ///金币
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long Gold {
