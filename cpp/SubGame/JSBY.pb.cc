@@ -3518,7 +3518,7 @@ const char descriptor_table_protodef_JSBY_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "MonsterAttack\022\022\n\nPositionId\030\001 \001(\005\022\021\n\tMon"
   "sterId\030\002 \001(\005\022\021\n\tChannelId\030\003 \001(\005\022\023\n\013Proce"
   "ssTime\030\004 \001(\005\"\365\001\n\017CSRequestAttack\022\r\n\005Rati"
-  "o\030\001 \001(\005\022\014\n\004Mode\030\002 \001(\005\022\021\n\tMonsterId\030\003 \001(\005"
+  "o\030\001 \001(\002\022\014\n\004Mode\030\002 \001(\005\022\021\n\tMonsterId\030\003 \001(\005"
   "\022\022\n\nPositionId\030\004 \001(\005\022\025\n\rUsePositionId\030\005 "
   "\001(\005\022\030\n\020UsePositionTimes\030\006 \001(\005\022\023\n\013Special"
   "Type\030\007 \001(\005\022/\n\013SpecialInfo\030\010 \001(\0132\032.JSBY.S"
@@ -3601,7 +3601,7 @@ const char descriptor_table_protodef_JSBY_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "nelTowerMonster\"J\n\016SCTowerMonster\022\017\n\007Tab"
   "leID\030\001 \001(\005\022\'\n\004Info\030\002 \001(\0132\031.JSBY.ChannelT"
   "owerMonster\":\n\022CSTowerHeroAtkInfo\022$\n\004Inf"
-  "o\030\001 \001(\0132\026.JSBY.TowerHeroAtkInfo\":\n\022SCTow"
+  "o\030\001 \003(\0132\026.JSBY.TowerHeroAtkInfo\":\n\022SCTow"
   "erHeroAtkInfo\022$\n\004Info\030\001 \001(\0132\026.JSBY.Tower"
   "HeroAtkInfo\"E\n\021CSTowerUpdateHero\022!\n\004Info"
   "\030\001 \001(\0132\023.JSBY.TowerHeroInfo\022\r\n\005Leave\030\002 \001"
@@ -3611,7 +3611,7 @@ const char descriptor_table_protodef_JSBY_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "(\005\022\r\n\005Leave\030\003 \001(\010\">\n\016LockTargetInfo\022\022\n\nP"
   "ositionId\030\001 \001(\005\022\030\n\020TargetPositionId\030\002 \001("
   "\005\"A\n\027CSTowerPlayerLockTarget\022&\n\010LockInfo"
-  "\030\001 \001(\0132\024.JSBY.LockTargetInfo\"A\n\027SCTowerP"
+  "\030\001 \003(\0132\024.JSBY.LockTargetInfo\"A\n\027SCTowerP"
   "layerLockTarget\022&\n\010LockInfo\030\001 \001(\0132\024.JSBY"
   ".LockTargetInfo\"$\n\022CSChangeBackground\022\016\n"
   "\006IsBack\030\001 \001(\010\"\024\n\022SCChangeBackground\"(\n\022C"
@@ -3642,7 +3642,7 @@ const char descriptor_table_protodef_JSBY_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "\n\022MasterPoisonBombId\030\002 \001(\005\022\024\n\014PoisonBomb"
   "Id\030\003 \001(\005\022\024\n\014KillPlayerId\030\004 \001(\005\022\021\n\tChanne"
   "lId\030\005 \001(\005\022\023\n\013ProcessTime\030\006 \001(\005\"7\n\021SCPois"
-  "onbombTypes\022\"\n\004Info\030\001 \001(\0132\024.JSBY.Poisonb"
+  "onbombTypes\022\"\n\004Info\030\001 \003(\0132\024.JSBY.Poisonb"
   "ombType\"1\n\017CSDragonRelease\022\r\n\005Ratio\030\001 \001("
   "\005\022\017\n\007PropsID\030\002 \001(\005\"c\n\017SCDragonRelease\022\021\n"
   "\tStartTime\030\001 \001(\005\022\020\n\010PlayerId\030\002 \001(\005\022+\n\nAt"
@@ -3679,7 +3679,7 @@ const char descriptor_table_protodef_JSBY_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "\005Level\030\002 \001(\005\022\r\n\005IsVip\030\003 \001(\010\"M\n\013DragonPro"
   "ps\022\030\n\020ProgressBarCount\030\001 \001(\005\022\023\n\013Progress"
   "Bar\030\002 \001(\005\022\017\n\007PropsID\030\003 \001(\005\"\022\n\020CSGetDrago"
-  "nProps\"3\n\020SCGetDragonProps\022\037\n\004Info\030\001 \001(\013"
+  "nProps\"3\n\020SCGetDragonProps\022\037\n\004Info\030\001 \003(\013"
   "2\021.JSBY.DragonProps\"%\n\022CSEquipDragonProp"
   "s\022\017\n\007PropsID\030\001 \001(\005\"5\n\022SCEquipDragonProps"
   "\022\037\n\004Info\030\001 \001(\0132\021.JSBY.DragonProps\"4\n\021SCP"
@@ -3708,7 +3708,7 @@ const char descriptor_table_protodef_JSBY_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "\022\017\n\007PropsID\030\001 \001(\005\022\020\n\010PropsNum\030\002 \001(\005\"A\n\rM"
   "aterialsInfo\022\022\n\nPositionId\030\001 \001(\005\022\017\n\007Prop"
   "sID\030\002 \001(\005\022\013\n\003Num\030\003 \001(\005\"8\n\023SCPushDropMate"
-  "rials\022!\n\004Info\030\001 \001(\0132\023.JSBY.MaterialsInfo"
+  "rials\022!\n\004Info\030\001 \003(\0132\023.JSBY.MaterialsInfo"
   "\"\261\001\n\022SCPushBalloonTimes\022\022\n\nPositionId\030\001 "
   "\001(\005\022\020\n\010PlayerId\030\002 \001(\005\022\021\n\tFreeTimes\030\003 \001(\005"
   "\022\r\n\005Ratio\030\004 \001(\005\022\021\n\tStartTime\030\005 \001(\005\022\023\n\013At"
@@ -3720,7 +3720,7 @@ const char descriptor_table_protodef_JSBY_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "PlayerId\030\001 \001(\005\022\014\n\004Seal\030\002 \001(\005\022\r\n\005Money\030\003 "
   "\001(\005\"7\n\016ConnectMonster\022\022\n\nPositionID\030\001 \001("
   "\005\022\021\n\tMonsterID\030\002 \001(\005\"j\n\024SCPushConnectMon"
-  "ster\022%\n\007Connect\030\001 \001(\0132\024.JSBY.ConnectMons"
+  "ster\022%\n\007Connect\030\001 \003(\0132\024.JSBY.ConnectMons"
   "ter\022\021\n\tConnectID\030\002 \001(\005\022\030\n\020AttackPosition"
   "ID\030\003 \001(\005\"\246\001\n\016SCGiantUpgrade\022\020\n\010PlayerId\030"
   "\001 \001(\005\022\022\n\nPositionId\030\002 \001(\005\022\r\n\005Level\030\003 \001(\005"
@@ -5774,11 +5774,11 @@ const char* CSRequestAttack::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // int32 Ratio = 1;
+      // float Ratio = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ratio_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 13)) {
+          ratio_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+          ptr += sizeof(float);
         } else goto handle_unusual;
         continue;
       // int32 Mode = 2;
@@ -5872,10 +5872,10 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 Ratio = 1;
-  if (this->ratio() != 0) {
+  // float Ratio = 1;
+  if (!(this->ratio() <= 0 && this->ratio() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_ratio(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(1, this->_internal_ratio(), target);
   }
 
   // int32 Mode = 2;
@@ -5957,11 +5957,9 @@ size_t CSRequestAttack::ByteSizeLong() const {
         *specialinfo_);
   }
 
-  // int32 Ratio = 1;
-  if (this->ratio() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_ratio());
+  // float Ratio = 1;
+  if (!(this->ratio() <= 0 && this->ratio() >= 0)) {
+    total_size += 1 + 4;
   }
 
   // int32 Mode = 2;
@@ -6052,7 +6050,7 @@ void CSRequestAttack::MergeFrom(const CSRequestAttack& from) {
   if (from.has_specialinfo()) {
     _internal_mutable_specialinfo()->::JSBY::SpecialMonsterAttack::MergeFrom(from._internal_specialinfo());
   }
-  if (from.ratio() != 0) {
+  if (!(from.ratio() <= 0 && from.ratio() >= 0)) {
     _internal_set_ratio(from._internal_ratio());
   }
   if (from.mode() != 0) {
@@ -15898,33 +15896,24 @@ void SCTowerMonster::InternalSwap(SCTowerMonster* other) {
 
 class CSTowerHeroAtkInfo::_Internal {
  public:
-  static const ::JSBY::TowerHeroAtkInfo& info(const CSTowerHeroAtkInfo* msg);
 };
 
-const ::JSBY::TowerHeroAtkInfo&
-CSTowerHeroAtkInfo::_Internal::info(const CSTowerHeroAtkInfo* msg) {
-  return *msg->info_;
-}
 CSTowerHeroAtkInfo::CSTowerHeroAtkInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  info_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:JSBY.CSTowerHeroAtkInfo)
 }
 CSTowerHeroAtkInfo::CSTowerHeroAtkInfo(const CSTowerHeroAtkInfo& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      info_(from.info_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  if (from._internal_has_info()) {
-    info_ = new ::JSBY::TowerHeroAtkInfo(*from.info_);
-  } else {
-    info_ = nullptr;
-  }
   // @@protoc_insertion_point(copy_constructor:JSBY.CSTowerHeroAtkInfo)
 }
 
 void CSTowerHeroAtkInfo::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_CSTowerHeroAtkInfo_JSBY_2eproto.base);
-  info_ = nullptr;
 }
 
 CSTowerHeroAtkInfo::~CSTowerHeroAtkInfo() {
@@ -15935,7 +15924,6 @@ CSTowerHeroAtkInfo::~CSTowerHeroAtkInfo() {
 
 void CSTowerHeroAtkInfo::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
-  if (this != internal_default_instance()) delete info_;
 }
 
 void CSTowerHeroAtkInfo::ArenaDtor(void* object) {
@@ -15959,10 +15947,7 @@ void CSTowerHeroAtkInfo::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && info_ != nullptr) {
-    delete info_;
-  }
-  info_ = nullptr;
+  info_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -15973,11 +15958,16 @@ const char* CSTowerHeroAtkInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // .JSBY.TowerHeroAtkInfo Info = 1;
+      // repeated .JSBY.TowerHeroAtkInfo Info = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ctx->ParseMessage(_internal_mutable_info(), ptr);
-          CHK_(ptr);
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_info(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -16008,12 +15998,12 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .JSBY.TowerHeroAtkInfo Info = 1;
-  if (this->has_info()) {
+  // repeated .JSBY.TowerHeroAtkInfo Info = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_info_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::info(this), target, stream);
+      InternalWriteMessage(1, this->_internal_info(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -16032,11 +16022,11 @@ size_t CSTowerHeroAtkInfo::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .JSBY.TowerHeroAtkInfo Info = 1;
-  if (this->has_info()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *info_);
+  // repeated .JSBY.TowerHeroAtkInfo Info = 1;
+  total_size += 1UL * this->_internal_info_size();
+  for (const auto& msg : this->info_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -16070,9 +16060,7 @@ void CSTowerHeroAtkInfo::MergeFrom(const CSTowerHeroAtkInfo& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_info()) {
-    _internal_mutable_info()->::JSBY::TowerHeroAtkInfo::MergeFrom(from._internal_info());
-  }
+  info_.MergeFrom(from.info_);
 }
 
 void CSTowerHeroAtkInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -16096,7 +16084,7 @@ bool CSTowerHeroAtkInfo::IsInitialized() const {
 void CSTowerHeroAtkInfo::InternalSwap(CSTowerHeroAtkInfo* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  swap(info_, other->info_);
+  info_.InternalSwap(&other->info_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata CSTowerHeroAtkInfo::GetMetadata() const {
@@ -17250,33 +17238,24 @@ void LockTargetInfo::InternalSwap(LockTargetInfo* other) {
 
 class CSTowerPlayerLockTarget::_Internal {
  public:
-  static const ::JSBY::LockTargetInfo& lockinfo(const CSTowerPlayerLockTarget* msg);
 };
 
-const ::JSBY::LockTargetInfo&
-CSTowerPlayerLockTarget::_Internal::lockinfo(const CSTowerPlayerLockTarget* msg) {
-  return *msg->lockinfo_;
-}
 CSTowerPlayerLockTarget::CSTowerPlayerLockTarget(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  lockinfo_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:JSBY.CSTowerPlayerLockTarget)
 }
 CSTowerPlayerLockTarget::CSTowerPlayerLockTarget(const CSTowerPlayerLockTarget& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      lockinfo_(from.lockinfo_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  if (from._internal_has_lockinfo()) {
-    lockinfo_ = new ::JSBY::LockTargetInfo(*from.lockinfo_);
-  } else {
-    lockinfo_ = nullptr;
-  }
   // @@protoc_insertion_point(copy_constructor:JSBY.CSTowerPlayerLockTarget)
 }
 
 void CSTowerPlayerLockTarget::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_CSTowerPlayerLockTarget_JSBY_2eproto.base);
-  lockinfo_ = nullptr;
 }
 
 CSTowerPlayerLockTarget::~CSTowerPlayerLockTarget() {
@@ -17287,7 +17266,6 @@ CSTowerPlayerLockTarget::~CSTowerPlayerLockTarget() {
 
 void CSTowerPlayerLockTarget::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
-  if (this != internal_default_instance()) delete lockinfo_;
 }
 
 void CSTowerPlayerLockTarget::ArenaDtor(void* object) {
@@ -17311,10 +17289,7 @@ void CSTowerPlayerLockTarget::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && lockinfo_ != nullptr) {
-    delete lockinfo_;
-  }
-  lockinfo_ = nullptr;
+  lockinfo_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -17325,11 +17300,16 @@ const char* CSTowerPlayerLockTarget::_InternalParse(const char* ptr, ::PROTOBUF_
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // .JSBY.LockTargetInfo LockInfo = 1;
+      // repeated .JSBY.LockTargetInfo LockInfo = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ctx->ParseMessage(_internal_mutable_lockinfo(), ptr);
-          CHK_(ptr);
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_lockinfo(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -17360,12 +17340,12 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .JSBY.LockTargetInfo LockInfo = 1;
-  if (this->has_lockinfo()) {
+  // repeated .JSBY.LockTargetInfo LockInfo = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_lockinfo_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::lockinfo(this), target, stream);
+      InternalWriteMessage(1, this->_internal_lockinfo(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -17384,11 +17364,11 @@ size_t CSTowerPlayerLockTarget::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .JSBY.LockTargetInfo LockInfo = 1;
-  if (this->has_lockinfo()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *lockinfo_);
+  // repeated .JSBY.LockTargetInfo LockInfo = 1;
+  total_size += 1UL * this->_internal_lockinfo_size();
+  for (const auto& msg : this->lockinfo_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -17422,9 +17402,7 @@ void CSTowerPlayerLockTarget::MergeFrom(const CSTowerPlayerLockTarget& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_lockinfo()) {
-    _internal_mutable_lockinfo()->::JSBY::LockTargetInfo::MergeFrom(from._internal_lockinfo());
-  }
+  lockinfo_.MergeFrom(from.lockinfo_);
 }
 
 void CSTowerPlayerLockTarget::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -17448,7 +17426,7 @@ bool CSTowerPlayerLockTarget::IsInitialized() const {
 void CSTowerPlayerLockTarget::InternalSwap(CSTowerPlayerLockTarget* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  swap(lockinfo_, other->lockinfo_);
+  lockinfo_.InternalSwap(&other->lockinfo_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata CSTowerPlayerLockTarget::GetMetadata() const {
@@ -21920,33 +21898,24 @@ void PoisonbombType::InternalSwap(PoisonbombType* other) {
 
 class SCPoisonbombTypes::_Internal {
  public:
-  static const ::JSBY::PoisonbombType& info(const SCPoisonbombTypes* msg);
 };
 
-const ::JSBY::PoisonbombType&
-SCPoisonbombTypes::_Internal::info(const SCPoisonbombTypes* msg) {
-  return *msg->info_;
-}
 SCPoisonbombTypes::SCPoisonbombTypes(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  info_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:JSBY.SCPoisonbombTypes)
 }
 SCPoisonbombTypes::SCPoisonbombTypes(const SCPoisonbombTypes& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      info_(from.info_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  if (from._internal_has_info()) {
-    info_ = new ::JSBY::PoisonbombType(*from.info_);
-  } else {
-    info_ = nullptr;
-  }
   // @@protoc_insertion_point(copy_constructor:JSBY.SCPoisonbombTypes)
 }
 
 void SCPoisonbombTypes::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SCPoisonbombTypes_JSBY_2eproto.base);
-  info_ = nullptr;
 }
 
 SCPoisonbombTypes::~SCPoisonbombTypes() {
@@ -21957,7 +21926,6 @@ SCPoisonbombTypes::~SCPoisonbombTypes() {
 
 void SCPoisonbombTypes::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
-  if (this != internal_default_instance()) delete info_;
 }
 
 void SCPoisonbombTypes::ArenaDtor(void* object) {
@@ -21981,10 +21949,7 @@ void SCPoisonbombTypes::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && info_ != nullptr) {
-    delete info_;
-  }
-  info_ = nullptr;
+  info_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -21995,11 +21960,16 @@ const char* SCPoisonbombTypes::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // .JSBY.PoisonbombType Info = 1;
+      // repeated .JSBY.PoisonbombType Info = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ctx->ParseMessage(_internal_mutable_info(), ptr);
-          CHK_(ptr);
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_info(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -22030,12 +22000,12 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .JSBY.PoisonbombType Info = 1;
-  if (this->has_info()) {
+  // repeated .JSBY.PoisonbombType Info = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_info_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::info(this), target, stream);
+      InternalWriteMessage(1, this->_internal_info(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -22054,11 +22024,11 @@ size_t SCPoisonbombTypes::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .JSBY.PoisonbombType Info = 1;
-  if (this->has_info()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *info_);
+  // repeated .JSBY.PoisonbombType Info = 1;
+  total_size += 1UL * this->_internal_info_size();
+  for (const auto& msg : this->info_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -22092,9 +22062,7 @@ void SCPoisonbombTypes::MergeFrom(const SCPoisonbombTypes& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_info()) {
-    _internal_mutable_info()->::JSBY::PoisonbombType::MergeFrom(from._internal_info());
-  }
+  info_.MergeFrom(from.info_);
 }
 
 void SCPoisonbombTypes::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -22118,7 +22086,7 @@ bool SCPoisonbombTypes::IsInitialized() const {
 void SCPoisonbombTypes::InternalSwap(SCPoisonbombTypes* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  swap(info_, other->info_);
+  info_.InternalSwap(&other->info_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SCPoisonbombTypes::GetMetadata() const {
@@ -27222,33 +27190,24 @@ void CSGetDragonProps::InternalSwap(CSGetDragonProps* other) {
 
 class SCGetDragonProps::_Internal {
  public:
-  static const ::JSBY::DragonProps& info(const SCGetDragonProps* msg);
 };
 
-const ::JSBY::DragonProps&
-SCGetDragonProps::_Internal::info(const SCGetDragonProps* msg) {
-  return *msg->info_;
-}
 SCGetDragonProps::SCGetDragonProps(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  info_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:JSBY.SCGetDragonProps)
 }
 SCGetDragonProps::SCGetDragonProps(const SCGetDragonProps& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      info_(from.info_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  if (from._internal_has_info()) {
-    info_ = new ::JSBY::DragonProps(*from.info_);
-  } else {
-    info_ = nullptr;
-  }
   // @@protoc_insertion_point(copy_constructor:JSBY.SCGetDragonProps)
 }
 
 void SCGetDragonProps::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SCGetDragonProps_JSBY_2eproto.base);
-  info_ = nullptr;
 }
 
 SCGetDragonProps::~SCGetDragonProps() {
@@ -27259,7 +27218,6 @@ SCGetDragonProps::~SCGetDragonProps() {
 
 void SCGetDragonProps::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
-  if (this != internal_default_instance()) delete info_;
 }
 
 void SCGetDragonProps::ArenaDtor(void* object) {
@@ -27283,10 +27241,7 @@ void SCGetDragonProps::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && info_ != nullptr) {
-    delete info_;
-  }
-  info_ = nullptr;
+  info_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -27297,11 +27252,16 @@ const char* SCGetDragonProps::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // .JSBY.DragonProps Info = 1;
+      // repeated .JSBY.DragonProps Info = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ctx->ParseMessage(_internal_mutable_info(), ptr);
-          CHK_(ptr);
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_info(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -27332,12 +27292,12 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .JSBY.DragonProps Info = 1;
-  if (this->has_info()) {
+  // repeated .JSBY.DragonProps Info = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_info_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::info(this), target, stream);
+      InternalWriteMessage(1, this->_internal_info(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -27356,11 +27316,11 @@ size_t SCGetDragonProps::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .JSBY.DragonProps Info = 1;
-  if (this->has_info()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *info_);
+  // repeated .JSBY.DragonProps Info = 1;
+  total_size += 1UL * this->_internal_info_size();
+  for (const auto& msg : this->info_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -27394,9 +27354,7 @@ void SCGetDragonProps::MergeFrom(const SCGetDragonProps& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_info()) {
-    _internal_mutable_info()->::JSBY::DragonProps::MergeFrom(from._internal_info());
-  }
+  info_.MergeFrom(from.info_);
 }
 
 void SCGetDragonProps::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -27420,7 +27378,7 @@ bool SCGetDragonProps::IsInitialized() const {
 void SCGetDragonProps::InternalSwap(SCGetDragonProps* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  swap(info_, other->info_);
+  info_.InternalSwap(&other->info_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SCGetDragonProps::GetMetadata() const {
@@ -31588,33 +31546,24 @@ void MaterialsInfo::InternalSwap(MaterialsInfo* other) {
 
 class SCPushDropMaterials::_Internal {
  public:
-  static const ::JSBY::MaterialsInfo& info(const SCPushDropMaterials* msg);
 };
 
-const ::JSBY::MaterialsInfo&
-SCPushDropMaterials::_Internal::info(const SCPushDropMaterials* msg) {
-  return *msg->info_;
-}
 SCPushDropMaterials::SCPushDropMaterials(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  info_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:JSBY.SCPushDropMaterials)
 }
 SCPushDropMaterials::SCPushDropMaterials(const SCPushDropMaterials& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      info_(from.info_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  if (from._internal_has_info()) {
-    info_ = new ::JSBY::MaterialsInfo(*from.info_);
-  } else {
-    info_ = nullptr;
-  }
   // @@protoc_insertion_point(copy_constructor:JSBY.SCPushDropMaterials)
 }
 
 void SCPushDropMaterials::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SCPushDropMaterials_JSBY_2eproto.base);
-  info_ = nullptr;
 }
 
 SCPushDropMaterials::~SCPushDropMaterials() {
@@ -31625,7 +31574,6 @@ SCPushDropMaterials::~SCPushDropMaterials() {
 
 void SCPushDropMaterials::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
-  if (this != internal_default_instance()) delete info_;
 }
 
 void SCPushDropMaterials::ArenaDtor(void* object) {
@@ -31649,10 +31597,7 @@ void SCPushDropMaterials::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && info_ != nullptr) {
-    delete info_;
-  }
-  info_ = nullptr;
+  info_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -31663,11 +31608,16 @@ const char* SCPushDropMaterials::_InternalParse(const char* ptr, ::PROTOBUF_NAME
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // .JSBY.MaterialsInfo Info = 1;
+      // repeated .JSBY.MaterialsInfo Info = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ctx->ParseMessage(_internal_mutable_info(), ptr);
-          CHK_(ptr);
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_info(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -31698,12 +31648,12 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .JSBY.MaterialsInfo Info = 1;
-  if (this->has_info()) {
+  // repeated .JSBY.MaterialsInfo Info = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_info_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::info(this), target, stream);
+      InternalWriteMessage(1, this->_internal_info(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -31722,11 +31672,11 @@ size_t SCPushDropMaterials::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .JSBY.MaterialsInfo Info = 1;
-  if (this->has_info()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *info_);
+  // repeated .JSBY.MaterialsInfo Info = 1;
+  total_size += 1UL * this->_internal_info_size();
+  for (const auto& msg : this->info_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -31760,9 +31710,7 @@ void SCPushDropMaterials::MergeFrom(const SCPushDropMaterials& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_info()) {
-    _internal_mutable_info()->::JSBY::MaterialsInfo::MergeFrom(from._internal_info());
-  }
+  info_.MergeFrom(from.info_);
 }
 
 void SCPushDropMaterials::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -31786,7 +31734,7 @@ bool SCPushDropMaterials::IsInitialized() const {
 void SCPushDropMaterials::InternalSwap(SCPushDropMaterials* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  swap(info_, other->info_);
+  info_.InternalSwap(&other->info_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SCPushDropMaterials::GetMetadata() const {
@@ -33240,27 +33188,19 @@ void ConnectMonster::InternalSwap(ConnectMonster* other) {
 
 class SCPushConnectMonster::_Internal {
  public:
-  static const ::JSBY::ConnectMonster& connect(const SCPushConnectMonster* msg);
 };
 
-const ::JSBY::ConnectMonster&
-SCPushConnectMonster::_Internal::connect(const SCPushConnectMonster* msg) {
-  return *msg->connect_;
-}
 SCPushConnectMonster::SCPushConnectMonster(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  connect_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:JSBY.SCPushConnectMonster)
 }
 SCPushConnectMonster::SCPushConnectMonster(const SCPushConnectMonster& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      connect_(from.connect_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  if (from._internal_has_connect()) {
-    connect_ = new ::JSBY::ConnectMonster(*from.connect_);
-  } else {
-    connect_ = nullptr;
-  }
   ::memcpy(&connectid_, &from.connectid_,
     static_cast<size_t>(reinterpret_cast<char*>(&attackpositionid_) -
     reinterpret_cast<char*>(&connectid_)) + sizeof(attackpositionid_));
@@ -33270,9 +33210,9 @@ SCPushConnectMonster::SCPushConnectMonster(const SCPushConnectMonster& from)
 void SCPushConnectMonster::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SCPushConnectMonster_JSBY_2eproto.base);
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&connect_) - reinterpret_cast<char*>(this)),
+      reinterpret_cast<char*>(&connectid_) - reinterpret_cast<char*>(this)),
       0, static_cast<size_t>(reinterpret_cast<char*>(&attackpositionid_) -
-      reinterpret_cast<char*>(&connect_)) + sizeof(attackpositionid_));
+      reinterpret_cast<char*>(&connectid_)) + sizeof(attackpositionid_));
 }
 
 SCPushConnectMonster::~SCPushConnectMonster() {
@@ -33283,7 +33223,6 @@ SCPushConnectMonster::~SCPushConnectMonster() {
 
 void SCPushConnectMonster::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
-  if (this != internal_default_instance()) delete connect_;
 }
 
 void SCPushConnectMonster::ArenaDtor(void* object) {
@@ -33307,10 +33246,7 @@ void SCPushConnectMonster::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && connect_ != nullptr) {
-    delete connect_;
-  }
-  connect_ = nullptr;
+  connect_.Clear();
   ::memset(&connectid_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&attackpositionid_) -
       reinterpret_cast<char*>(&connectid_)) + sizeof(attackpositionid_));
@@ -33324,11 +33260,16 @@ const char* SCPushConnectMonster::_InternalParse(const char* ptr, ::PROTOBUF_NAM
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // .JSBY.ConnectMonster Connect = 1;
+      // repeated .JSBY.ConnectMonster Connect = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ctx->ParseMessage(_internal_mutable_connect(), ptr);
-          CHK_(ptr);
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_connect(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
         } else goto handle_unusual;
         continue;
       // int32 ConnectID = 2;
@@ -33373,12 +33314,12 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .JSBY.ConnectMonster Connect = 1;
-  if (this->has_connect()) {
+  // repeated .JSBY.ConnectMonster Connect = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_connect_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::connect(this), target, stream);
+      InternalWriteMessage(1, this->_internal_connect(i), target, stream);
   }
 
   // int32 ConnectID = 2;
@@ -33409,11 +33350,11 @@ size_t SCPushConnectMonster::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .JSBY.ConnectMonster Connect = 1;
-  if (this->has_connect()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *connect_);
+  // repeated .JSBY.ConnectMonster Connect = 1;
+  total_size += 1UL * this->_internal_connect_size();
+  for (const auto& msg : this->connect_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // int32 ConnectID = 2;
@@ -33461,9 +33402,7 @@ void SCPushConnectMonster::MergeFrom(const SCPushConnectMonster& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_connect()) {
-    _internal_mutable_connect()->::JSBY::ConnectMonster::MergeFrom(from._internal_connect());
-  }
+  connect_.MergeFrom(from.connect_);
   if (from.connectid() != 0) {
     _internal_set_connectid(from._internal_connectid());
   }
@@ -33493,12 +33432,13 @@ bool SCPushConnectMonster::IsInitialized() const {
 void SCPushConnectMonster::InternalSwap(SCPushConnectMonster* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  connect_.InternalSwap(&other->connect_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(SCPushConnectMonster, attackpositionid_)
       + sizeof(SCPushConnectMonster::attackpositionid_)
-      - PROTOBUF_FIELD_OFFSET(SCPushConnectMonster, connect_)>(
-          reinterpret_cast<char*>(&connect_),
-          reinterpret_cast<char*>(&other->connect_));
+      - PROTOBUF_FIELD_OFFSET(SCPushConnectMonster, connectid_)>(
+          reinterpret_cast<char*>(&connectid_),
+          reinterpret_cast<char*>(&other->connectid_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SCPushConnectMonster::GetMetadata() const {

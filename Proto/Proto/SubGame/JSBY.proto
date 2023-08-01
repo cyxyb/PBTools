@@ -296,7 +296,7 @@ message SpecialMonsterAttack
 }
 message CSRequestAttack
 {
-	 int32 Ratio = 1;
+	 float Ratio = 1;
 	 int32 Mode = 2;
 	 int32 MonsterId = 3;
 	 int32 PositionId = 4;
@@ -546,7 +546,7 @@ message SCTowerMonster
 }
 message CSTowerHeroAtkInfo
 {
-	 TowerHeroAtkInfo Info = 1;
+	 repeated TowerHeroAtkInfo Info = 1;
 }
 message SCTowerHeroAtkInfo
 {
@@ -574,7 +574,7 @@ message LockTargetInfo
 }
 message CSTowerPlayerLockTarget
 {
-	 LockTargetInfo LockInfo = 1;
+	 repeated LockTargetInfo LockInfo = 1;
 }
 message SCTowerPlayerLockTarget
 {
@@ -674,7 +674,7 @@ message PoisonbombType
 }
 message SCPoisonbombTypes
 {
-	 PoisonbombType Info = 1;
+	 repeated PoisonbombType Info = 1;
 }
 message CSDragonRelease
 {
@@ -790,7 +790,7 @@ message CSGetDragonProps
 }
 message SCGetDragonProps
 {
-	 DragonProps Info = 1;
+	 repeated DragonProps Info = 1;
 }
 message CSEquipDragonProps
 {
@@ -885,7 +885,7 @@ message MaterialsInfo
 
 message SCPushDropMaterials
 {
-	 MaterialsInfo Info = 1;
+	 repeated MaterialsInfo Info = 1;
 }
 message SCPushBalloonTimes
 {
@@ -922,7 +922,7 @@ message ConnectMonster
 }
 message SCPushConnectMonster
 {
-	 ConnectMonster Connect = 1;
+	 repeated ConnectMonster Connect = 1;
 	 int32 ConnectID = 2;
 	 int32 AttackPositionID = 3;
 }
