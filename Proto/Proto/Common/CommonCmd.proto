@@ -60,4 +60,8 @@ enum EMsgIDGame
 	MsgIDGame_NotifyMessageResp			= 1012;		//通用消息通知
 	MsgIDGame_CreateRoom				= 1013;		//创建房间
 	MsgIDGame_JoinRoom					= 1014;		//加入房间
+	MsgIDGame_QueryRecord				= 1015;		//猜拳查询数据记录(MsgQueryRecord 1:每局数据 2:每日数据)
+	MsgIDGame_QueryRoundRecordResp		= 1016;		//猜拳每局数据数据记录(MsgTotalRoundData)
+	MsgIDGame_QueryDayRecordResp		= 1017;		//猜拳每日数据数据记录(MsgTotalDayData)
+	MsgIDGame_AddOneRecord				= 1018;		//猜拳增加一条记录
 }

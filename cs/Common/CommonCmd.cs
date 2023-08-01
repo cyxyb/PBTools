@@ -42,7 +42,7 @@ public static partial class CommonCmdReflection {
           "b2dpbl9EZWxldGVBbGxSZWFkTWFpbFJlc3AQERIYChRNc2dJRExvZ2luX1Bo",
           "b25lQ29kZRASEhwKGE1zZ0lETG9naW5fUGhvbmVDb2RlUmVzcBATEiEKHU1z",
           "Z0lETG9naW5fU3luY1BsYXllckdvbGRSZXNwEBQSIwofTXNnSURMb2dpbl9O",
-          "b3RpZnlHYW1lU2VydmVyTGlzdBAVKsUDCgpFTXNnSURHYW1lEhIKDk1zZ0lE",
+          "b3RpZnlHYW1lU2VydmVyTGlzdBAVKsYECgpFTXNnSURHYW1lEhIKDk1zZ0lE",
           "R2FtZV9OdWxsEAASFAoPTXNnSURHYW1lX0xvZ2luEOkHEhgKE01zZ0lER2Ft",
           "ZV9Mb2dpblJlc3AQ6gcSHgoZTXNnSURHYW1lX1NxdWVlemVTZWF0UmVzcBDr",
           "BxIVChBNc2dJREdhbWVfTG9nb3V0EOwHEhoKFU1zZ0lER2FtZV9BdXRvU2l0",
@@ -52,7 +52,10 @@ public static partial class CommonCmdReflection {
           "U2NvcmVSZXNwEPEHEhwKF01zZ0lER2FtZV9TZW5kR2FtZVNlbmNlEPIHEiAK",
           "G01zZ0lER2FtZV9TZW5kR2FtZVNlbmNlUmVzcBDzBxIgChtNc2dJREdhbWVf",
           "Tm90aWZ5TWVzc2FnZVJlc3AQ9AcSGQoUTXNnSURHYW1lX0NyZWF0ZVJvb20Q",
-          "9QcSFwoSTXNnSURHYW1lX0pvaW5Sb29tEPYHYgZwcm90bzM="));
+          "9QcSFwoSTXNnSURHYW1lX0pvaW5Sb29tEPYHEhoKFU1zZ0lER2FtZV9RdWVy",
+          "eVJlY29yZBD3BxIjCh5Nc2dJREdhbWVfUXVlcnlSb3VuZFJlY29yZFJlc3AQ",
+          "+AcSIQocTXNnSURHYW1lX1F1ZXJ5RGF5UmVjb3JkUmVzcBD5BxIbChZNc2dJ",
+          "REdhbWVfQWRkT25lUmVjb3JkEPoHYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::EMsgIDMain), typeof(global::EResCode), typeof(global::EMsgIDLogin), typeof(global::EMsgIDGame), }, null, null));
@@ -239,6 +242,22 @@ public enum EMsgIDGame {
   ///加入房间
   /// </summary>
   [pbr::OriginalName("MsgIDGame_JoinRoom")] MsgIdgameJoinRoom = 1014,
+  /// <summary>
+  ///猜拳查询数据记录(MsgQueryRecord 1:每局数据 2:每日数据)
+  /// </summary>
+  [pbr::OriginalName("MsgIDGame_QueryRecord")] MsgIdgameQueryRecord = 1015,
+  /// <summary>
+  ///猜拳每局数据数据记录(MsgTotalRoundData)
+  /// </summary>
+  [pbr::OriginalName("MsgIDGame_QueryRoundRecordResp")] MsgIdgameQueryRoundRecordResp = 1016,
+  /// <summary>
+  ///猜拳每日数据数据记录(MsgTotalDayData)
+  /// </summary>
+  [pbr::OriginalName("MsgIDGame_QueryDayRecordResp")] MsgIdgameQueryDayRecordResp = 1017,
+  /// <summary>
+  ///猜拳增加一条记录
+  /// </summary>
+  [pbr::OriginalName("MsgIDGame_AddOneRecord")] MsgIdgameAddOneRecord = 1018,
 }
 
 #endregion

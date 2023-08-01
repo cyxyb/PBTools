@@ -36,3 +36,47 @@ message MsgSyncPlayersScore
 	int32		chair_id		= 1;	//椅子号
 	uint64		coin			= 2;	//玩家金币
 }
+
+//每局数据
+message MsgRoundData
+{
+	int32			time 			= 1;			//时间
+	int32			win_user_id		= 2;			//胜利玩家id
+	int32			lose_user_id 	= 3;			//失败玩家id
+	int64			gold			= 4;			//金币
+}
+
+//总的每局数据
+message MsgTotalRoundData
+{
+	int32			total_num		 = 1;			//总条数
+	repeated MsgRoundData round_data = 2;			//每局数据
+}
+
+//每日数据
+message MsgDayData
+{
+	string			time 				= 1;			//日期
+	int32			total_play_count	= 2;			//总游玩次数
+	int32			lose_count	 		= 3;			//输次数
+	int64			lose_gold			= 4;			//输金币
+	int32			win_count	 		= 5;			//赢次数
+	int64			win_gold			= 6;			//赢金币
+	int64			total_gold			= 7;			//总输赢
+	int64			surplus_gold		= 8;			//当日剩余金额
+}
+
+//总的每局数据
+message MsgTotalDayData
+{
+	int32			total_num		= 1;			//总条数
+	repeated MsgDayData daily_data 	= 2;			//每日数据
+}
+
+//查询数据记录
+message MsgQueryRecord
+{
+	int32	page	= 1;	//当前页(从0开始)
+	int32	num		= 2;	//每页条数(最大每页50条)
+	int32	type	= 3;	//1:每局数据 2:每日数据
+}

@@ -44,7 +44,7 @@ const char descriptor_table_protodef_CommonCmd_2eproto[] PROTOBUF_SECTION_VARIAB
   "eteAllReadMailResp\020\021\022\030\n\024MsgIDLogin_Phone"
   "Code\020\022\022\034\n\030MsgIDLogin_PhoneCodeResp\020\023\022!\n\035"
   "MsgIDLogin_SyncPlayerGoldResp\020\024\022#\n\037MsgID"
-  "Login_NotifyGameServerList\020\025*\305\003\n\nEMsgIDG"
+  "Login_NotifyGameServerList\020\025*\306\004\n\nEMsgIDG"
   "ame\022\022\n\016MsgIDGame_Null\020\000\022\024\n\017MsgIDGame_Log"
   "in\020\351\007\022\030\n\023MsgIDGame_LoginResp\020\352\007\022\036\n\031MsgID"
   "Game_SqueezeSeatResp\020\353\007\022\025\n\020MsgIDGame_Log"
@@ -56,7 +56,10 @@ const char descriptor_table_protodef_CommonCmd_2eproto[] PROTOBUF_SECTION_VARIAB
   "e\020\362\007\022 \n\033MsgIDGame_SendGameSenceResp\020\363\007\022 "
   "\n\033MsgIDGame_NotifyMessageResp\020\364\007\022\031\n\024MsgI"
   "DGame_CreateRoom\020\365\007\022\027\n\022MsgIDGame_JoinRoo"
-  "m\020\366\007b\006proto3"
+  "m\020\366\007\022\032\n\025MsgIDGame_QueryRecord\020\367\007\022#\n\036MsgI"
+  "DGame_QueryRoundRecordResp\020\370\007\022!\n\034MsgIDGa"
+  "me_QueryDayRecordResp\020\371\007\022\033\n\026MsgIDGame_Ad"
+  "dOneRecord\020\372\007b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_CommonCmd_2eproto_deps[1] = {
 };
@@ -64,7 +67,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Com
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_CommonCmd_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_CommonCmd_2eproto = {
-  false, false, descriptor_table_protodef_CommonCmd_2eproto, "CommonCmd.proto", 1372,
+  false, false, descriptor_table_protodef_CommonCmd_2eproto, "CommonCmd.proto", 1501,
   &descriptor_table_CommonCmd_2eproto_once, descriptor_table_CommonCmd_2eproto_sccs, descriptor_table_CommonCmd_2eproto_deps, 0, 0,
   schemas, file_default_instances, TableStruct_CommonCmd_2eproto::offsets,
   file_level_metadata_CommonCmd_2eproto, 0, file_level_enum_descriptors_CommonCmd_2eproto, file_level_service_descriptors_CommonCmd_2eproto,
@@ -159,6 +162,10 @@ bool EMsgIDGame_IsValid(int value) {
     case 1012:
     case 1013:
     case 1014:
+    case 1015:
+    case 1016:
+    case 1017:
+    case 1018:
       return true;
     default:
       return false;

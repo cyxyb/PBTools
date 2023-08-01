@@ -13,13 +13,9 @@ enum EMsgIDSubGame
 	MsgIDSubGame_PlayerConfirmBetResp	= 6;	//玩家确认更改下注值返回(MsgCommonN32 1:同意 2:取消准备)
 	MsgIDSubGame_StartGame				= 7;	//开始游戏(MsgCommonN32)
 	MsgIDSubGame_ResultResp				= 8;	//游戏结果(MsgResult)
-	MsgIDSubGame_QueryRecord			= 9;	//查询数据记录(MsgQueryRecord 1:每局数据 2:每日数据)
-	MsgIDSubGame_QueryRoundRecordResp	= 10;	//每局数据数据记录(MsgTotalRoundData)
-	MsgIDSubGame_QueryDayRecordResp		= 11;	//每日数据数据记录(MsgTotalDayData)
-	MsgIDSubGame_KickPlayer				= 12;	//踢出玩家(MsgCommonBool)
-	MsgIDSubGame_AddOneRecord			= 13;	//增加一条记录
-	MsgIDSubGame_CancelReady			= 14;	//玩家取消准备(MsgCommonBool)
-	MsgIDSubGame_CancelReadyResp		= 15;	//玩家取消准备返回(MsgCommonBool)
+	MsgIDSubGame_KickPlayer				= 9;	//踢出玩家(MsgCommonBool)
+	MsgIDSubGame_CancelReady			= 10;	//玩家取消准备(MsgCommonBool)
+	MsgIDSubGame_CancelReadyResp		= 11;	//玩家取消准备返回(MsgCommonBool)
 }
 
 //场景消息
@@ -41,49 +37,5 @@ message MsgResult
 	int64			gold			= 2;			//金币
 	int32			banker_result 	= 3;			//庄家结果
 	int32			player_result 	= 4;			//玩家结果
-}
-
-//每局数据
-message MsgRoundData
-{
-	int32			time 			= 1;			//时间
-	int32			win_user_id		= 2;			//胜利玩家id
-	int32			lose_user_id 	= 3;			//失败玩家id
-	int64			gold			= 4;			//金币
-}
-
-//总的每局数据
-message MsgTotalRoundData
-{
-	int32			total_num		 = 1;			//总条数
-	repeated MsgRoundData round_data = 2;			//每局数据
-}
-
-//每日数据
-message MsgDayData
-{
-	string			time 				= 1;			//日期
-	int32			total_play_count	= 2;			//总游玩次数
-	int32			lose_count	 		= 3;			//输次数
-	int64			lose_gold			= 4;			//输金币
-	int32			win_count	 		= 5;			//赢次数
-	int64			win_gold			= 6;			//赢金币
-	int64			total_gold			= 7;			//总输赢
-	int64			surplus_gold		= 8;			//当日剩余金额
-}
-
-//总的每局数据
-message MsgTotalDayData
-{
-	int32			total_num		= 1;			//总条数
-	repeated MsgDayData daily_data 	= 2;			//每日数据
-}
-
-//查询数据记录
-message MsgQueryRecord
-{
-	int32	page	= 1;	//当前页(从0开始)
-	int32	num		= 2;	//每页条数(最大每页50条)
-	int32	type	= 3;	//1:每局数据 2:每日数据
 }
 
