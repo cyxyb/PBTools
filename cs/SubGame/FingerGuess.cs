@@ -32,36 +32,37 @@ namespace FingerGuess {
             "AxIVCg1iYW5rZXJfcmVzdWx0GAMgASgFEhUKDXBsYXllcl9yZXN1bHQYBCAB",
             "KAUiVQoMTXNnUm91bmREYXRhEgwKBHRpbWUYASABKAUSEwoLd2luX3VzZXJf",
             "aWQYAiABKAUSFAoMbG9zZV91c2VyX2lkGAMgASgFEgwKBGdvbGQYBCABKAMi",
-            "QgoRTXNnVG90YWxSb3VuZERhdGESLQoKcm91bmRfZGF0YRgBIAMoCzIZLkZp",
-            "bmdlckd1ZXNzLk1zZ1JvdW5kRGF0YSKqAQoKTXNnRGF5RGF0YRIMCgR0aW1l",
-            "GAEgASgJEhgKEHRvdGFsX3BsYXlfY291bnQYAiABKAUSEgoKbG9zZV9jb3Vu",
-            "dBgDIAEoBRIRCglsb3NlX2dvbGQYBCABKAMSEQoJd2luX2NvdW50GAUgASgF",
-            "EhAKCHdpbl9nb2xkGAYgASgDEhIKCnRvdGFsX2dvbGQYByABKAMSFAoMc3Vy",
-            "cGx1c19nb2xkGAggASgDIj4KD01zZ1RvdGFsRGF5RGF0YRIrCgpkYWlseV9k",
-            "YXRhGAEgAygLMhcuRmluZ2VyR3Vlc3MuTXNnRGF5RGF0YSI5Cg5Nc2dRdWVy",
-            "eVJlY29yZBIMCgRwYWdlGAEgASgFEgsKA251bRgCIAEoBRIMCgR0eXBlGAMg",
-            "ASgFKpcECg1FTXNnSURTdWJHYW1lEhUKEU1zZ0lEU3ViR2FtZV9OdWxsEAAS",
-            "HAoYTXNnSURTdWJHYW1lX1BsYXllclJlYWR5EAESIAocTXNnSURTdWJHYW1l",
-            "X1BsYXllclJlYWR5UmVzcBACEiAKHE1zZ0lEU3ViR2FtZV9CYW5rZXJDaGFu",
-            "Z2VCZXQQAxIkCiBNc2dJRFN1YkdhbWVfQmFua2VyQ2hhbmdlQmV0UmVzcBAE",
-            "EiEKHU1zZ0lEU3ViR2FtZV9QbGF5ZXJDb25maXJtQmV0EAUSJQohTXNnSURT",
-            "dWJHYW1lX1BsYXllckNvbmZpcm1CZXRSZXNwEAYSGgoWTXNnSURTdWJHYW1l",
-            "X1N0YXJ0R2FtZRAHEhsKF01zZ0lEU3ViR2FtZV9SZXN1bHRSZXNwEAgSHAoY",
-            "TXNnSURTdWJHYW1lX1F1ZXJ5UmVjb3JkEAkSJQohTXNnSURTdWJHYW1lX1F1",
-            "ZXJ5Um91bmRSZWNvcmRSZXNwEAoSIwofTXNnSURTdWJHYW1lX1F1ZXJ5RGF5",
-            "UmVjb3JkUmVzcBALEhsKF01zZ0lEU3ViR2FtZV9LaWNrUGxheWVyEAwSHQoZ",
-            "TXNnSURTdWJHYW1lX0FkZE9uZVJlY29yZBANEhwKGE1zZ0lEU3ViR2FtZV9D",
-            "YW5jZWxSZWFkeRAOEiAKHE1zZ0lEU3ViR2FtZV9DYW5jZWxSZWFkeVJlc3AQ",
-            "D2IGcHJvdG8z"));
+            "VQoRTXNnVG90YWxSb3VuZERhdGESEQoJdG90YWxfbnVtGAEgASgFEi0KCnJv",
+            "dW5kX2RhdGEYAiADKAsyGS5GaW5nZXJHdWVzcy5Nc2dSb3VuZERhdGEiqgEK",
+            "Ck1zZ0RheURhdGESDAoEdGltZRgBIAEoCRIYChB0b3RhbF9wbGF5X2NvdW50",
+            "GAIgASgFEhIKCmxvc2VfY291bnQYAyABKAUSEQoJbG9zZV9nb2xkGAQgASgD",
+            "EhEKCXdpbl9jb3VudBgFIAEoBRIQCgh3aW5fZ29sZBgGIAEoAxISCgp0b3Rh",
+            "bF9nb2xkGAcgASgDEhQKDHN1cnBsdXNfZ29sZBgIIAEoAyJRCg9Nc2dUb3Rh",
+            "bERheURhdGESEQoJdG90YWxfbnVtGAEgASgFEisKCmRhaWx5X2RhdGEYAiAD",
+            "KAsyFy5GaW5nZXJHdWVzcy5Nc2dEYXlEYXRhIjkKDk1zZ1F1ZXJ5UmVjb3Jk",
+            "EgwKBHBhZ2UYASABKAUSCwoDbnVtGAIgASgFEgwKBHR5cGUYAyABKAUqlwQK",
+            "DUVNc2dJRFN1YkdhbWUSFQoRTXNnSURTdWJHYW1lX051bGwQABIcChhNc2dJ",
+            "RFN1YkdhbWVfUGxheWVyUmVhZHkQARIgChxNc2dJRFN1YkdhbWVfUGxheWVy",
+            "UmVhZHlSZXNwEAISIAocTXNnSURTdWJHYW1lX0JhbmtlckNoYW5nZUJldBAD",
+            "EiQKIE1zZ0lEU3ViR2FtZV9CYW5rZXJDaGFuZ2VCZXRSZXNwEAQSIQodTXNn",
+            "SURTdWJHYW1lX1BsYXllckNvbmZpcm1CZXQQBRIlCiFNc2dJRFN1YkdhbWVf",
+            "UGxheWVyQ29uZmlybUJldFJlc3AQBhIaChZNc2dJRFN1YkdhbWVfU3RhcnRH",
+            "YW1lEAcSGwoXTXNnSURTdWJHYW1lX1Jlc3VsdFJlc3AQCBIcChhNc2dJRFN1",
+            "YkdhbWVfUXVlcnlSZWNvcmQQCRIlCiFNc2dJRFN1YkdhbWVfUXVlcnlSb3Vu",
+            "ZFJlY29yZFJlc3AQChIjCh9Nc2dJRFN1YkdhbWVfUXVlcnlEYXlSZWNvcmRS",
+            "ZXNwEAsSGwoXTXNnSURTdWJHYW1lX0tpY2tQbGF5ZXIQDBIdChlNc2dJRFN1",
+            "YkdhbWVfQWRkT25lUmVjb3JkEA0SHAoYTXNnSURTdWJHYW1lX0NhbmNlbFJl",
+            "YWR5EA4SIAocTXNnSURTdWJHYW1lX0NhbmNlbFJlYWR5UmVzcBAPYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::FingerGuess.EMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::FingerGuess.MsgSceneInfo), global::FingerGuess.MsgSceneInfo.Parser, new[]{ "RoomId", "Bet", "CurBet", "Password", "MinBet", "MaxBet", "HouseOwner" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::FingerGuess.MsgResult), global::FingerGuess.MsgResult.Parser, new[]{ "Result", "Gold", "BankerResult", "PlayerResult" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::FingerGuess.MsgRoundData), global::FingerGuess.MsgRoundData.Parser, new[]{ "Time", "WinUserId", "LoseUserId", "Gold" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::FingerGuess.MsgTotalRoundData), global::FingerGuess.MsgTotalRoundData.Parser, new[]{ "RoundData" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::FingerGuess.MsgTotalRoundData), global::FingerGuess.MsgTotalRoundData.Parser, new[]{ "TotalNum", "RoundData" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::FingerGuess.MsgDayData), global::FingerGuess.MsgDayData.Parser, new[]{ "Time", "TotalPlayCount", "LoseCount", "LoseGold", "WinCount", "WinGold", "TotalGold", "SurplusGold" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::FingerGuess.MsgTotalDayData), global::FingerGuess.MsgTotalDayData.Parser, new[]{ "DailyData" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::FingerGuess.MsgTotalDayData), global::FingerGuess.MsgTotalDayData.Parser, new[]{ "TotalNum", "DailyData" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::FingerGuess.MsgQueryRecord), global::FingerGuess.MsgQueryRecord.Parser, new[]{ "Page", "Num", "Type" }, null, null, null, null)
           }));
     }
@@ -1161,6 +1162,7 @@ namespace FingerGuess {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public MsgTotalRoundData(MsgTotalRoundData other) : this() {
+      totalNum_ = other.totalNum_;
       roundData_ = other.roundData_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -1170,10 +1172,24 @@ namespace FingerGuess {
       return new MsgTotalRoundData(this);
     }
 
+    /// <summary>Field number for the "total_num" field.</summary>
+    public const int TotalNumFieldNumber = 1;
+    private int totalNum_;
+    /// <summary>
+    ///总条数
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int TotalNum {
+      get { return totalNum_; }
+      set {
+        totalNum_ = value;
+      }
+    }
+
     /// <summary>Field number for the "round_data" field.</summary>
-    public const int RoundDataFieldNumber = 1;
+    public const int RoundDataFieldNumber = 2;
     private static readonly pb::FieldCodec<global::FingerGuess.MsgRoundData> _repeated_roundData_codec
-        = pb::FieldCodec.ForMessage(10, global::FingerGuess.MsgRoundData.Parser);
+        = pb::FieldCodec.ForMessage(18, global::FingerGuess.MsgRoundData.Parser);
     private readonly pbc::RepeatedField<global::FingerGuess.MsgRoundData> roundData_ = new pbc::RepeatedField<global::FingerGuess.MsgRoundData>();
     /// <summary>
     ///每局数据
@@ -1196,6 +1212,7 @@ namespace FingerGuess {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (TotalNum != other.TotalNum) return false;
       if(!roundData_.Equals(other.roundData_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1203,6 +1220,7 @@ namespace FingerGuess {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
+      if (TotalNum != 0) hash ^= TotalNum.GetHashCode();
       hash ^= roundData_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1220,6 +1238,10 @@ namespace FingerGuess {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
+      if (TotalNum != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(TotalNum);
+      }
       roundData_.WriteTo(output, _repeated_roundData_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1230,6 +1252,10 @@ namespace FingerGuess {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (TotalNum != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(TotalNum);
+      }
       roundData_.WriteTo(ref output, _repeated_roundData_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1240,6 +1266,9 @@ namespace FingerGuess {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      if (TotalNum != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TotalNum);
+      }
       size += roundData_.CalculateSize(_repeated_roundData_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1251,6 +1280,9 @@ namespace FingerGuess {
     public void MergeFrom(MsgTotalRoundData other) {
       if (other == null) {
         return;
+      }
+      if (other.TotalNum != 0) {
+        TotalNum = other.TotalNum;
       }
       roundData_.Add(other.roundData_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -1267,7 +1299,11 @@ namespace FingerGuess {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
+          case 8: {
+            TotalNum = input.ReadInt32();
+            break;
+          }
+          case 18: {
             roundData_.AddEntriesFrom(input, _repeated_roundData_codec);
             break;
           }
@@ -1285,7 +1321,11 @@ namespace FingerGuess {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 10: {
+          case 8: {
+            TotalNum = input.ReadInt32();
+            break;
+          }
+          case 18: {
             roundData_.AddEntriesFrom(ref input, _repeated_roundData_codec);
             break;
           }
@@ -1779,6 +1819,7 @@ namespace FingerGuess {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public MsgTotalDayData(MsgTotalDayData other) : this() {
+      totalNum_ = other.totalNum_;
       dailyData_ = other.dailyData_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -1788,10 +1829,24 @@ namespace FingerGuess {
       return new MsgTotalDayData(this);
     }
 
+    /// <summary>Field number for the "total_num" field.</summary>
+    public const int TotalNumFieldNumber = 1;
+    private int totalNum_;
+    /// <summary>
+    ///总条数
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int TotalNum {
+      get { return totalNum_; }
+      set {
+        totalNum_ = value;
+      }
+    }
+
     /// <summary>Field number for the "daily_data" field.</summary>
-    public const int DailyDataFieldNumber = 1;
+    public const int DailyDataFieldNumber = 2;
     private static readonly pb::FieldCodec<global::FingerGuess.MsgDayData> _repeated_dailyData_codec
-        = pb::FieldCodec.ForMessage(10, global::FingerGuess.MsgDayData.Parser);
+        = pb::FieldCodec.ForMessage(18, global::FingerGuess.MsgDayData.Parser);
     private readonly pbc::RepeatedField<global::FingerGuess.MsgDayData> dailyData_ = new pbc::RepeatedField<global::FingerGuess.MsgDayData>();
     /// <summary>
     ///每日数据
@@ -1814,6 +1869,7 @@ namespace FingerGuess {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (TotalNum != other.TotalNum) return false;
       if(!dailyData_.Equals(other.dailyData_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1821,6 +1877,7 @@ namespace FingerGuess {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
+      if (TotalNum != 0) hash ^= TotalNum.GetHashCode();
       hash ^= dailyData_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1838,6 +1895,10 @@ namespace FingerGuess {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
+      if (TotalNum != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(TotalNum);
+      }
       dailyData_.WriteTo(output, _repeated_dailyData_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1848,6 +1909,10 @@ namespace FingerGuess {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (TotalNum != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(TotalNum);
+      }
       dailyData_.WriteTo(ref output, _repeated_dailyData_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1858,6 +1923,9 @@ namespace FingerGuess {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      if (TotalNum != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TotalNum);
+      }
       size += dailyData_.CalculateSize(_repeated_dailyData_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1869,6 +1937,9 @@ namespace FingerGuess {
     public void MergeFrom(MsgTotalDayData other) {
       if (other == null) {
         return;
+      }
+      if (other.TotalNum != 0) {
+        TotalNum = other.TotalNum;
       }
       dailyData_.Add(other.dailyData_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -1885,7 +1956,11 @@ namespace FingerGuess {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
+          case 8: {
+            TotalNum = input.ReadInt32();
+            break;
+          }
+          case 18: {
             dailyData_.AddEntriesFrom(input, _repeated_dailyData_codec);
             break;
           }
@@ -1903,7 +1978,11 @@ namespace FingerGuess {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 10: {
+          case 8: {
+            TotalNum = input.ReadInt32();
+            break;
+          }
+          case 18: {
             dailyData_.AddEntriesFrom(ref input, _repeated_dailyData_codec);
             break;
           }

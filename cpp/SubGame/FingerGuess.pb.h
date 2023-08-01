@@ -802,9 +802,10 @@ class MsgTotalRoundData PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kRoundDataFieldNumber = 1,
+    kRoundDataFieldNumber = 2,
+    kTotalNumFieldNumber = 1,
   };
-  // repeated .FingerGuess.MsgRoundData round_data = 1;
+  // repeated .FingerGuess.MsgRoundData round_data = 2;
   int round_data_size() const;
   private:
   int _internal_round_data_size() const;
@@ -822,6 +823,15 @@ class MsgTotalRoundData PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FingerGuess::MsgRoundData >&
       round_data() const;
 
+  // int32 total_num = 1;
+  void clear_total_num();
+  ::PROTOBUF_NAMESPACE_ID::int32 total_num() const;
+  void set_total_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_total_num() const;
+  void _internal_set_total_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:FingerGuess.MsgTotalRoundData)
  private:
   class _Internal;
@@ -830,6 +840,7 @@ class MsgTotalRoundData PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FingerGuess::MsgRoundData > round_data_;
+  ::PROTOBUF_NAMESPACE_ID::int32 total_num_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_FingerGuess_2eproto;
 };
@@ -1167,9 +1178,10 @@ class MsgTotalDayData PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kDailyDataFieldNumber = 1,
+    kDailyDataFieldNumber = 2,
+    kTotalNumFieldNumber = 1,
   };
-  // repeated .FingerGuess.MsgDayData daily_data = 1;
+  // repeated .FingerGuess.MsgDayData daily_data = 2;
   int daily_data_size() const;
   private:
   int _internal_daily_data_size() const;
@@ -1187,6 +1199,15 @@ class MsgTotalDayData PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FingerGuess::MsgDayData >&
       daily_data() const;
 
+  // int32 total_num = 1;
+  void clear_total_num();
+  ::PROTOBUF_NAMESPACE_ID::int32 total_num() const;
+  void set_total_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_total_num() const;
+  void _internal_set_total_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:FingerGuess.MsgTotalDayData)
  private:
   class _Internal;
@@ -1195,6 +1216,7 @@ class MsgTotalDayData PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FingerGuess::MsgDayData > daily_data_;
+  ::PROTOBUF_NAMESPACE_ID::int32 total_num_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_FingerGuess_2eproto;
 };
@@ -1747,7 +1769,27 @@ inline void MsgRoundData::set_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
 
 // MsgTotalRoundData
 
-// repeated .FingerGuess.MsgRoundData round_data = 1;
+// int32 total_num = 1;
+inline void MsgTotalRoundData::clear_total_num() {
+  total_num_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTotalRoundData::_internal_total_num() const {
+  return total_num_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTotalRoundData::total_num() const {
+  // @@protoc_insertion_point(field_get:FingerGuess.MsgTotalRoundData.total_num)
+  return _internal_total_num();
+}
+inline void MsgTotalRoundData::_internal_set_total_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  total_num_ = value;
+}
+inline void MsgTotalRoundData::set_total_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_total_num(value);
+  // @@protoc_insertion_point(field_set:FingerGuess.MsgTotalRoundData.total_num)
+}
+
+// repeated .FingerGuess.MsgRoundData round_data = 2;
 inline int MsgTotalRoundData::_internal_round_data_size() const {
   return round_data_.size();
 }
@@ -1995,7 +2037,27 @@ inline void MsgDayData::set_surplus_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
 
 // MsgTotalDayData
 
-// repeated .FingerGuess.MsgDayData daily_data = 1;
+// int32 total_num = 1;
+inline void MsgTotalDayData::clear_total_num() {
+  total_num_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTotalDayData::_internal_total_num() const {
+  return total_num_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTotalDayData::total_num() const {
+  // @@protoc_insertion_point(field_get:FingerGuess.MsgTotalDayData.total_num)
+  return _internal_total_num();
+}
+inline void MsgTotalDayData::_internal_set_total_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  total_num_ = value;
+}
+inline void MsgTotalDayData::set_total_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_total_num(value);
+  // @@protoc_insertion_point(field_set:FingerGuess.MsgTotalDayData.total_num)
+}
+
+// repeated .FingerGuess.MsgDayData daily_data = 2;
 inline int MsgTotalDayData::_internal_daily_data_size() const {
   return daily_data_.size();
 }

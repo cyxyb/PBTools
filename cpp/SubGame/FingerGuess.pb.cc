@@ -179,6 +179,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_FingerGuess_2eproto::offsets[]
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgTotalRoundData, total_num_),
   PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgTotalRoundData, round_data_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgDayData, _internal_metadata_),
@@ -198,6 +199,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_FingerGuess_2eproto::offsets[]
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgTotalDayData, total_num_),
   PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgTotalDayData, daily_data_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::FingerGuess::MsgQueryRecord, _internal_metadata_),
@@ -213,9 +215,9 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 12, -1, sizeof(::FingerGuess::MsgResult)},
   { 21, -1, sizeof(::FingerGuess::MsgRoundData)},
   { 30, -1, sizeof(::FingerGuess::MsgTotalRoundData)},
-  { 36, -1, sizeof(::FingerGuess::MsgDayData)},
-  { 49, -1, sizeof(::FingerGuess::MsgTotalDayData)},
-  { 55, -1, sizeof(::FingerGuess::MsgQueryRecord)},
+  { 37, -1, sizeof(::FingerGuess::MsgDayData)},
+  { 50, -1, sizeof(::FingerGuess::MsgTotalDayData)},
+  { 57, -1, sizeof(::FingerGuess::MsgQueryRecord)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -237,30 +239,31 @@ const char descriptor_table_protodef_FingerGuess_2eproto[] PROTOBUF_SECTION_VARI
   "\n\004gold\030\002 \001(\003\022\025\n\rbanker_result\030\003 \001(\005\022\025\n\rp"
   "layer_result\030\004 \001(\005\"U\n\014MsgRoundData\022\014\n\004ti"
   "me\030\001 \001(\005\022\023\n\013win_user_id\030\002 \001(\005\022\024\n\014lose_us"
-  "er_id\030\003 \001(\005\022\014\n\004gold\030\004 \001(\003\"B\n\021MsgTotalRou"
-  "ndData\022-\n\nround_data\030\001 \003(\0132\031.FingerGuess"
-  ".MsgRoundData\"\252\001\n\nMsgDayData\022\014\n\004time\030\001 \001"
-  "(\t\022\030\n\020total_play_count\030\002 \001(\005\022\022\n\nlose_cou"
-  "nt\030\003 \001(\005\022\021\n\tlose_gold\030\004 \001(\003\022\021\n\twin_count"
-  "\030\005 \001(\005\022\020\n\010win_gold\030\006 \001(\003\022\022\n\ntotal_gold\030\007"
-  " \001(\003\022\024\n\014surplus_gold\030\010 \001(\003\">\n\017MsgTotalDa"
-  "yData\022+\n\ndaily_data\030\001 \003(\0132\027.FingerGuess."
-  "MsgDayData\"9\n\016MsgQueryRecord\022\014\n\004page\030\001 \001"
-  "(\005\022\013\n\003num\030\002 \001(\005\022\014\n\004type\030\003 \001(\005*\227\004\n\rEMsgID"
-  "SubGame\022\025\n\021MsgIDSubGame_Null\020\000\022\034\n\030MsgIDS"
-  "ubGame_PlayerReady\020\001\022 \n\034MsgIDSubGame_Pla"
-  "yerReadyResp\020\002\022 \n\034MsgIDSubGame_BankerCha"
-  "ngeBet\020\003\022$\n MsgIDSubGame_BankerChangeBet"
-  "Resp\020\004\022!\n\035MsgIDSubGame_PlayerConfirmBet\020"
-  "\005\022%\n!MsgIDSubGame_PlayerConfirmBetResp\020\006"
-  "\022\032\n\026MsgIDSubGame_StartGame\020\007\022\033\n\027MsgIDSub"
-  "Game_ResultResp\020\010\022\034\n\030MsgIDSubGame_QueryR"
-  "ecord\020\t\022%\n!MsgIDSubGame_QueryRoundRecord"
-  "Resp\020\n\022#\n\037MsgIDSubGame_QueryDayRecordRes"
-  "p\020\013\022\033\n\027MsgIDSubGame_KickPlayer\020\014\022\035\n\031MsgI"
-  "DSubGame_AddOneRecord\020\r\022\034\n\030MsgIDSubGame_"
-  "CancelReady\020\016\022 \n\034MsgIDSubGame_CancelRead"
-  "yResp\020\017b\006proto3"
+  "er_id\030\003 \001(\005\022\014\n\004gold\030\004 \001(\003\"U\n\021MsgTotalRou"
+  "ndData\022\021\n\ttotal_num\030\001 \001(\005\022-\n\nround_data\030"
+  "\002 \003(\0132\031.FingerGuess.MsgRoundData\"\252\001\n\nMsg"
+  "DayData\022\014\n\004time\030\001 \001(\t\022\030\n\020total_play_coun"
+  "t\030\002 \001(\005\022\022\n\nlose_count\030\003 \001(\005\022\021\n\tlose_gold"
+  "\030\004 \001(\003\022\021\n\twin_count\030\005 \001(\005\022\020\n\010win_gold\030\006 "
+  "\001(\003\022\022\n\ntotal_gold\030\007 \001(\003\022\024\n\014surplus_gold\030"
+  "\010 \001(\003\"Q\n\017MsgTotalDayData\022\021\n\ttotal_num\030\001 "
+  "\001(\005\022+\n\ndaily_data\030\002 \003(\0132\027.FingerGuess.Ms"
+  "gDayData\"9\n\016MsgQueryRecord\022\014\n\004page\030\001 \001(\005"
+  "\022\013\n\003num\030\002 \001(\005\022\014\n\004type\030\003 \001(\005*\227\004\n\rEMsgIDSu"
+  "bGame\022\025\n\021MsgIDSubGame_Null\020\000\022\034\n\030MsgIDSub"
+  "Game_PlayerReady\020\001\022 \n\034MsgIDSubGame_Playe"
+  "rReadyResp\020\002\022 \n\034MsgIDSubGame_BankerChang"
+  "eBet\020\003\022$\n MsgIDSubGame_BankerChangeBetRe"
+  "sp\020\004\022!\n\035MsgIDSubGame_PlayerConfirmBet\020\005\022"
+  "%\n!MsgIDSubGame_PlayerConfirmBetResp\020\006\022\032"
+  "\n\026MsgIDSubGame_StartGame\020\007\022\033\n\027MsgIDSubGa"
+  "me_ResultResp\020\010\022\034\n\030MsgIDSubGame_QueryRec"
+  "ord\020\t\022%\n!MsgIDSubGame_QueryRoundRecordRe"
+  "sp\020\n\022#\n\037MsgIDSubGame_QueryDayRecordResp\020"
+  "\013\022\033\n\027MsgIDSubGame_KickPlayer\020\014\022\035\n\031MsgIDS"
+  "ubGame_AddOneRecord\020\r\022\034\n\030MsgIDSubGame_Ca"
+  "ncelReady\020\016\022 \n\034MsgIDSubGame_CancelReadyR"
+  "esp\020\017b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_FingerGuess_2eproto_deps[1] = {
 };
@@ -275,7 +278,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Fin
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_FingerGuess_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_FingerGuess_2eproto = {
-  false, false, descriptor_table_protodef_FingerGuess_2eproto, "FingerGuess.proto", 1255,
+  false, false, descriptor_table_protodef_FingerGuess_2eproto, "FingerGuess.proto", 1293,
   &descriptor_table_FingerGuess_2eproto_once, descriptor_table_FingerGuess_2eproto_sccs, descriptor_table_FingerGuess_2eproto_deps, 7, 0,
   schemas, file_default_instances, TableStruct_FingerGuess_2eproto::offsets,
   file_level_metadata_FingerGuess_2eproto, 7, file_level_enum_descriptors_FingerGuess_2eproto, file_level_service_descriptors_FingerGuess_2eproto,
@@ -1254,11 +1257,13 @@ MsgTotalRoundData::MsgTotalRoundData(const MsgTotalRoundData& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       round_data_(from.round_data_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  total_num_ = from.total_num_;
   // @@protoc_insertion_point(copy_constructor:FingerGuess.MsgTotalRoundData)
 }
 
 void MsgTotalRoundData::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgTotalRoundData_FingerGuess_2eproto.base);
+  total_num_ = 0;
 }
 
 MsgTotalRoundData::~MsgTotalRoundData() {
@@ -1293,6 +1298,7 @@ void MsgTotalRoundData::Clear() {
   (void) cached_has_bits;
 
   round_data_.Clear();
+  total_num_ = 0;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -1303,16 +1309,23 @@ const char* MsgTotalRoundData::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // repeated .FingerGuess.MsgRoundData round_data = 1;
+      // int32 total_num = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          total_num_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated .FingerGuess.MsgRoundData round_data = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr -= 1;
           do {
             ptr += 1;
             ptr = ctx->ParseMessage(_internal_add_round_data(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -1343,12 +1356,18 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated .FingerGuess.MsgRoundData round_data = 1;
+  // int32 total_num = 1;
+  if (this->total_num() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_total_num(), target);
+  }
+
+  // repeated .FingerGuess.MsgRoundData round_data = 2;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_round_data_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_round_data(i), target, stream);
+      InternalWriteMessage(2, this->_internal_round_data(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1367,11 +1386,18 @@ size_t MsgTotalRoundData::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .FingerGuess.MsgRoundData round_data = 1;
+  // repeated .FingerGuess.MsgRoundData round_data = 2;
   total_size += 1UL * this->_internal_round_data_size();
   for (const auto& msg : this->round_data_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  // int32 total_num = 1;
+  if (this->total_num() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_total_num());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1406,6 +1432,9 @@ void MsgTotalRoundData::MergeFrom(const MsgTotalRoundData& from) {
   (void) cached_has_bits;
 
   round_data_.MergeFrom(from.round_data_);
+  if (from.total_num() != 0) {
+    _internal_set_total_num(from._internal_total_num());
+  }
 }
 
 void MsgTotalRoundData::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -1430,6 +1459,7 @@ void MsgTotalRoundData::InternalSwap(MsgTotalRoundData* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   round_data_.InternalSwap(&other->round_data_);
+  swap(total_num_, other->total_num_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MsgTotalRoundData::GetMetadata() const {
@@ -1837,11 +1867,13 @@ MsgTotalDayData::MsgTotalDayData(const MsgTotalDayData& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       daily_data_(from.daily_data_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  total_num_ = from.total_num_;
   // @@protoc_insertion_point(copy_constructor:FingerGuess.MsgTotalDayData)
 }
 
 void MsgTotalDayData::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgTotalDayData_FingerGuess_2eproto.base);
+  total_num_ = 0;
 }
 
 MsgTotalDayData::~MsgTotalDayData() {
@@ -1876,6 +1908,7 @@ void MsgTotalDayData::Clear() {
   (void) cached_has_bits;
 
   daily_data_.Clear();
+  total_num_ = 0;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -1886,16 +1919,23 @@ const char* MsgTotalDayData::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // repeated .FingerGuess.MsgDayData daily_data = 1;
+      // int32 total_num = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          total_num_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated .FingerGuess.MsgDayData daily_data = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr -= 1;
           do {
             ptr += 1;
             ptr = ctx->ParseMessage(_internal_add_daily_data(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -1926,12 +1966,18 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated .FingerGuess.MsgDayData daily_data = 1;
+  // int32 total_num = 1;
+  if (this->total_num() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_total_num(), target);
+  }
+
+  // repeated .FingerGuess.MsgDayData daily_data = 2;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_daily_data_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_daily_data(i), target, stream);
+      InternalWriteMessage(2, this->_internal_daily_data(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1950,11 +1996,18 @@ size_t MsgTotalDayData::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .FingerGuess.MsgDayData daily_data = 1;
+  // repeated .FingerGuess.MsgDayData daily_data = 2;
   total_size += 1UL * this->_internal_daily_data_size();
   for (const auto& msg : this->daily_data_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  // int32 total_num = 1;
+  if (this->total_num() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_total_num());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1989,6 +2042,9 @@ void MsgTotalDayData::MergeFrom(const MsgTotalDayData& from) {
   (void) cached_has_bits;
 
   daily_data_.MergeFrom(from.daily_data_);
+  if (from.total_num() != 0) {
+    _internal_set_total_num(from._internal_total_num());
+  }
 }
 
 void MsgTotalDayData::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -2013,6 +2069,7 @@ void MsgTotalDayData::InternalSwap(MsgTotalDayData* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   daily_data_.InternalSwap(&other->daily_data_);
+  swap(total_num_, other->total_num_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MsgTotalDayData::GetMetadata() const {

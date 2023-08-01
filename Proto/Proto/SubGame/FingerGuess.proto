@@ -55,7 +55,8 @@ message MsgRoundData
 //总的每局数据
 message MsgTotalRoundData
 {
-	repeated MsgRoundData round_data = 1;			//每局数据
+	int32			total_num		 = 1;			//总条数
+	repeated MsgRoundData round_data = 2;			//每局数据
 }
 
 //每日数据
@@ -74,7 +75,8 @@ message MsgDayData
 //总的每局数据
 message MsgTotalDayData
 {
-	repeated MsgDayData daily_data = 1;			//每日数据
+	int32			total_num		= 1;			//总条数
+	repeated MsgDayData daily_data 	= 2;			//每日数据
 }
 
 //查询数据记录
