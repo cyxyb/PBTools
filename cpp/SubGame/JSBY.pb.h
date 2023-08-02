@@ -1929,23 +1929,23 @@ class CSRequestAttack PROTOBUF_FINAL :
     kDragonEndFieldNumber = 9,
     kHeroUniqueIdFieldNumber = 10,
   };
-  // .JSBY.SpecialMonsterAttack SpecialInfo = 8;
-  bool has_specialinfo() const;
+  // repeated .JSBY.SpecialMonsterAttack SpecialInfo = 8;
+  int specialinfo_size() const;
   private:
-  bool _internal_has_specialinfo() const;
+  int _internal_specialinfo_size() const;
   public:
   void clear_specialinfo();
-  const ::JSBY::SpecialMonsterAttack& specialinfo() const;
-  ::JSBY::SpecialMonsterAttack* release_specialinfo();
-  ::JSBY::SpecialMonsterAttack* mutable_specialinfo();
-  void set_allocated_specialinfo(::JSBY::SpecialMonsterAttack* specialinfo);
+  ::JSBY::SpecialMonsterAttack* mutable_specialinfo(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::SpecialMonsterAttack >*
+      mutable_specialinfo();
   private:
-  const ::JSBY::SpecialMonsterAttack& _internal_specialinfo() const;
-  ::JSBY::SpecialMonsterAttack* _internal_mutable_specialinfo();
+  const ::JSBY::SpecialMonsterAttack& _internal_specialinfo(int index) const;
+  ::JSBY::SpecialMonsterAttack* _internal_add_specialinfo();
   public:
-  void unsafe_arena_set_allocated_specialinfo(
-      ::JSBY::SpecialMonsterAttack* specialinfo);
-  ::JSBY::SpecialMonsterAttack* unsafe_arena_release_specialinfo();
+  const ::JSBY::SpecialMonsterAttack& specialinfo(int index) const;
+  ::JSBY::SpecialMonsterAttack* add_specialinfo();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::SpecialMonsterAttack >&
+      specialinfo() const;
 
   // float Ratio = 1;
   void clear_ratio();
@@ -2035,7 +2035,7 @@ class CSRequestAttack PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::JSBY::SpecialMonsterAttack* specialinfo_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::SpecialMonsterAttack > specialinfo_;
   float ratio_;
   ::PROTOBUF_NAMESPACE_ID::int32 mode_;
   ::PROTOBUF_NAMESPACE_ID::int32 monsterid_;
@@ -7691,23 +7691,23 @@ class ChannelTowerMonster PROTOBUF_FINAL :
     kChannelInfoFieldNumber = 2,
     kChannelIdFieldNumber = 1,
   };
-  // .JSBY.TowerMonster ChannelInfo = 2;
-  bool has_channelinfo() const;
+  // repeated .JSBY.TowerMonster ChannelInfo = 2;
+  int channelinfo_size() const;
   private:
-  bool _internal_has_channelinfo() const;
+  int _internal_channelinfo_size() const;
   public:
   void clear_channelinfo();
-  const ::JSBY::TowerMonster& channelinfo() const;
-  ::JSBY::TowerMonster* release_channelinfo();
-  ::JSBY::TowerMonster* mutable_channelinfo();
-  void set_allocated_channelinfo(::JSBY::TowerMonster* channelinfo);
+  ::JSBY::TowerMonster* mutable_channelinfo(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::TowerMonster >*
+      mutable_channelinfo();
   private:
-  const ::JSBY::TowerMonster& _internal_channelinfo() const;
-  ::JSBY::TowerMonster* _internal_mutable_channelinfo();
+  const ::JSBY::TowerMonster& _internal_channelinfo(int index) const;
+  ::JSBY::TowerMonster* _internal_add_channelinfo();
   public:
-  void unsafe_arena_set_allocated_channelinfo(
-      ::JSBY::TowerMonster* channelinfo);
-  ::JSBY::TowerMonster* unsafe_arena_release_channelinfo();
+  const ::JSBY::TowerMonster& channelinfo(int index) const;
+  ::JSBY::TowerMonster* add_channelinfo();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::TowerMonster >&
+      channelinfo() const;
 
   // int32 ChannelId = 1;
   void clear_channelid();
@@ -7725,7 +7725,7 @@ class ChannelTowerMonster PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::JSBY::TowerMonster* channelinfo_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::TowerMonster > channelinfo_;
   ::PROTOBUF_NAMESPACE_ID::int32 channelid_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_JSBY_2eproto;
@@ -8139,23 +8139,23 @@ class SCSyncGetTowerMonster PROTOBUF_FINAL :
     kInfoFieldNumber = 2,
     kTableIDFieldNumber = 1,
   };
-  // .JSBY.ChannelTowerMonster Info = 2;
-  bool has_info() const;
+  // repeated .JSBY.ChannelTowerMonster Info = 2;
+  int info_size() const;
   private:
-  bool _internal_has_info() const;
+  int _internal_info_size() const;
   public:
   void clear_info();
-  const ::JSBY::ChannelTowerMonster& info() const;
-  ::JSBY::ChannelTowerMonster* release_info();
-  ::JSBY::ChannelTowerMonster* mutable_info();
-  void set_allocated_info(::JSBY::ChannelTowerMonster* info);
+  ::JSBY::ChannelTowerMonster* mutable_info(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::ChannelTowerMonster >*
+      mutable_info();
   private:
-  const ::JSBY::ChannelTowerMonster& _internal_info() const;
-  ::JSBY::ChannelTowerMonster* _internal_mutable_info();
+  const ::JSBY::ChannelTowerMonster& _internal_info(int index) const;
+  ::JSBY::ChannelTowerMonster* _internal_add_info();
   public:
-  void unsafe_arena_set_allocated_info(
-      ::JSBY::ChannelTowerMonster* info);
-  ::JSBY::ChannelTowerMonster* unsafe_arena_release_info();
+  const ::JSBY::ChannelTowerMonster& info(int index) const;
+  ::JSBY::ChannelTowerMonster* add_info();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::ChannelTowerMonster >&
+      info() const;
 
   // int32 TableID = 1;
   void clear_tableid();
@@ -8173,7 +8173,7 @@ class SCSyncGetTowerMonster PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::JSBY::ChannelTowerMonster* info_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::ChannelTowerMonster > info_;
   ::PROTOBUF_NAMESPACE_ID::int32 tableid_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_JSBY_2eproto;
@@ -8295,23 +8295,23 @@ class SCTowerMonster PROTOBUF_FINAL :
     kInfoFieldNumber = 2,
     kTableIDFieldNumber = 1,
   };
-  // .JSBY.ChannelTowerMonster Info = 2;
-  bool has_info() const;
+  // repeated .JSBY.ChannelTowerMonster Info = 2;
+  int info_size() const;
   private:
-  bool _internal_has_info() const;
+  int _internal_info_size() const;
   public:
   void clear_info();
-  const ::JSBY::ChannelTowerMonster& info() const;
-  ::JSBY::ChannelTowerMonster* release_info();
-  ::JSBY::ChannelTowerMonster* mutable_info();
-  void set_allocated_info(::JSBY::ChannelTowerMonster* info);
+  ::JSBY::ChannelTowerMonster* mutable_info(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::ChannelTowerMonster >*
+      mutable_info();
   private:
-  const ::JSBY::ChannelTowerMonster& _internal_info() const;
-  ::JSBY::ChannelTowerMonster* _internal_mutable_info();
+  const ::JSBY::ChannelTowerMonster& _internal_info(int index) const;
+  ::JSBY::ChannelTowerMonster* _internal_add_info();
   public:
-  void unsafe_arena_set_allocated_info(
-      ::JSBY::ChannelTowerMonster* info);
-  ::JSBY::ChannelTowerMonster* unsafe_arena_release_info();
+  const ::JSBY::ChannelTowerMonster& info(int index) const;
+  ::JSBY::ChannelTowerMonster* add_info();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::ChannelTowerMonster >&
+      info() const;
 
   // int32 TableID = 1;
   void clear_tableid();
@@ -8329,7 +8329,7 @@ class SCTowerMonster PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::JSBY::ChannelTowerMonster* info_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::ChannelTowerMonster > info_;
   ::PROTOBUF_NAMESPACE_ID::int32 tableid_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_JSBY_2eproto;
@@ -21653,87 +21653,43 @@ inline void CSRequestAttack::set_specialtype(::PROTOBUF_NAMESPACE_ID::int32 valu
   // @@protoc_insertion_point(field_set:JSBY.CSRequestAttack.SpecialType)
 }
 
-// .JSBY.SpecialMonsterAttack SpecialInfo = 8;
-inline bool CSRequestAttack::_internal_has_specialinfo() const {
-  return this != internal_default_instance() && specialinfo_ != nullptr;
+// repeated .JSBY.SpecialMonsterAttack SpecialInfo = 8;
+inline int CSRequestAttack::_internal_specialinfo_size() const {
+  return specialinfo_.size();
 }
-inline bool CSRequestAttack::has_specialinfo() const {
-  return _internal_has_specialinfo();
+inline int CSRequestAttack::specialinfo_size() const {
+  return _internal_specialinfo_size();
 }
 inline void CSRequestAttack::clear_specialinfo() {
-  if (GetArena() == nullptr && specialinfo_ != nullptr) {
-    delete specialinfo_;
-  }
-  specialinfo_ = nullptr;
+  specialinfo_.Clear();
 }
-inline const ::JSBY::SpecialMonsterAttack& CSRequestAttack::_internal_specialinfo() const {
-  const ::JSBY::SpecialMonsterAttack* p = specialinfo_;
-  return p != nullptr ? *p : reinterpret_cast<const ::JSBY::SpecialMonsterAttack&>(
-      ::JSBY::_SpecialMonsterAttack_default_instance_);
-}
-inline const ::JSBY::SpecialMonsterAttack& CSRequestAttack::specialinfo() const {
-  // @@protoc_insertion_point(field_get:JSBY.CSRequestAttack.SpecialInfo)
-  return _internal_specialinfo();
-}
-inline void CSRequestAttack::unsafe_arena_set_allocated_specialinfo(
-    ::JSBY::SpecialMonsterAttack* specialinfo) {
-  if (GetArena() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(specialinfo_);
-  }
-  specialinfo_ = specialinfo;
-  if (specialinfo) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:JSBY.CSRequestAttack.SpecialInfo)
-}
-inline ::JSBY::SpecialMonsterAttack* CSRequestAttack::release_specialinfo() {
-  
-  ::JSBY::SpecialMonsterAttack* temp = specialinfo_;
-  specialinfo_ = nullptr;
-  if (GetArena() != nullptr) {
-    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
-  }
-  return temp;
-}
-inline ::JSBY::SpecialMonsterAttack* CSRequestAttack::unsafe_arena_release_specialinfo() {
-  // @@protoc_insertion_point(field_release:JSBY.CSRequestAttack.SpecialInfo)
-  
-  ::JSBY::SpecialMonsterAttack* temp = specialinfo_;
-  specialinfo_ = nullptr;
-  return temp;
-}
-inline ::JSBY::SpecialMonsterAttack* CSRequestAttack::_internal_mutable_specialinfo() {
-  
-  if (specialinfo_ == nullptr) {
-    auto* p = CreateMaybeMessage<::JSBY::SpecialMonsterAttack>(GetArena());
-    specialinfo_ = p;
-  }
-  return specialinfo_;
-}
-inline ::JSBY::SpecialMonsterAttack* CSRequestAttack::mutable_specialinfo() {
+inline ::JSBY::SpecialMonsterAttack* CSRequestAttack::mutable_specialinfo(int index) {
   // @@protoc_insertion_point(field_mutable:JSBY.CSRequestAttack.SpecialInfo)
-  return _internal_mutable_specialinfo();
+  return specialinfo_.Mutable(index);
 }
-inline void CSRequestAttack::set_allocated_specialinfo(::JSBY::SpecialMonsterAttack* specialinfo) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
-  if (message_arena == nullptr) {
-    delete specialinfo_;
-  }
-  if (specialinfo) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(specialinfo);
-    if (message_arena != submessage_arena) {
-      specialinfo = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, specialinfo, submessage_arena);
-    }
-    
-  } else {
-    
-  }
-  specialinfo_ = specialinfo;
-  // @@protoc_insertion_point(field_set_allocated:JSBY.CSRequestAttack.SpecialInfo)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::SpecialMonsterAttack >*
+CSRequestAttack::mutable_specialinfo() {
+  // @@protoc_insertion_point(field_mutable_list:JSBY.CSRequestAttack.SpecialInfo)
+  return &specialinfo_;
+}
+inline const ::JSBY::SpecialMonsterAttack& CSRequestAttack::_internal_specialinfo(int index) const {
+  return specialinfo_.Get(index);
+}
+inline const ::JSBY::SpecialMonsterAttack& CSRequestAttack::specialinfo(int index) const {
+  // @@protoc_insertion_point(field_get:JSBY.CSRequestAttack.SpecialInfo)
+  return _internal_specialinfo(index);
+}
+inline ::JSBY::SpecialMonsterAttack* CSRequestAttack::_internal_add_specialinfo() {
+  return specialinfo_.Add();
+}
+inline ::JSBY::SpecialMonsterAttack* CSRequestAttack::add_specialinfo() {
+  // @@protoc_insertion_point(field_add:JSBY.CSRequestAttack.SpecialInfo)
+  return _internal_add_specialinfo();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::SpecialMonsterAttack >&
+CSRequestAttack::specialinfo() const {
+  // @@protoc_insertion_point(field_list:JSBY.CSRequestAttack.SpecialInfo)
+  return specialinfo_;
 }
 
 // bool DragonEnd = 9;
@@ -25009,87 +24965,43 @@ inline void ChannelTowerMonster::set_channelid(::PROTOBUF_NAMESPACE_ID::int32 va
   // @@protoc_insertion_point(field_set:JSBY.ChannelTowerMonster.ChannelId)
 }
 
-// .JSBY.TowerMonster ChannelInfo = 2;
-inline bool ChannelTowerMonster::_internal_has_channelinfo() const {
-  return this != internal_default_instance() && channelinfo_ != nullptr;
+// repeated .JSBY.TowerMonster ChannelInfo = 2;
+inline int ChannelTowerMonster::_internal_channelinfo_size() const {
+  return channelinfo_.size();
 }
-inline bool ChannelTowerMonster::has_channelinfo() const {
-  return _internal_has_channelinfo();
+inline int ChannelTowerMonster::channelinfo_size() const {
+  return _internal_channelinfo_size();
 }
 inline void ChannelTowerMonster::clear_channelinfo() {
-  if (GetArena() == nullptr && channelinfo_ != nullptr) {
-    delete channelinfo_;
-  }
-  channelinfo_ = nullptr;
+  channelinfo_.Clear();
 }
-inline const ::JSBY::TowerMonster& ChannelTowerMonster::_internal_channelinfo() const {
-  const ::JSBY::TowerMonster* p = channelinfo_;
-  return p != nullptr ? *p : reinterpret_cast<const ::JSBY::TowerMonster&>(
-      ::JSBY::_TowerMonster_default_instance_);
-}
-inline const ::JSBY::TowerMonster& ChannelTowerMonster::channelinfo() const {
-  // @@protoc_insertion_point(field_get:JSBY.ChannelTowerMonster.ChannelInfo)
-  return _internal_channelinfo();
-}
-inline void ChannelTowerMonster::unsafe_arena_set_allocated_channelinfo(
-    ::JSBY::TowerMonster* channelinfo) {
-  if (GetArena() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(channelinfo_);
-  }
-  channelinfo_ = channelinfo;
-  if (channelinfo) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:JSBY.ChannelTowerMonster.ChannelInfo)
-}
-inline ::JSBY::TowerMonster* ChannelTowerMonster::release_channelinfo() {
-  
-  ::JSBY::TowerMonster* temp = channelinfo_;
-  channelinfo_ = nullptr;
-  if (GetArena() != nullptr) {
-    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
-  }
-  return temp;
-}
-inline ::JSBY::TowerMonster* ChannelTowerMonster::unsafe_arena_release_channelinfo() {
-  // @@protoc_insertion_point(field_release:JSBY.ChannelTowerMonster.ChannelInfo)
-  
-  ::JSBY::TowerMonster* temp = channelinfo_;
-  channelinfo_ = nullptr;
-  return temp;
-}
-inline ::JSBY::TowerMonster* ChannelTowerMonster::_internal_mutable_channelinfo() {
-  
-  if (channelinfo_ == nullptr) {
-    auto* p = CreateMaybeMessage<::JSBY::TowerMonster>(GetArena());
-    channelinfo_ = p;
-  }
-  return channelinfo_;
-}
-inline ::JSBY::TowerMonster* ChannelTowerMonster::mutable_channelinfo() {
+inline ::JSBY::TowerMonster* ChannelTowerMonster::mutable_channelinfo(int index) {
   // @@protoc_insertion_point(field_mutable:JSBY.ChannelTowerMonster.ChannelInfo)
-  return _internal_mutable_channelinfo();
+  return channelinfo_.Mutable(index);
 }
-inline void ChannelTowerMonster::set_allocated_channelinfo(::JSBY::TowerMonster* channelinfo) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
-  if (message_arena == nullptr) {
-    delete channelinfo_;
-  }
-  if (channelinfo) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(channelinfo);
-    if (message_arena != submessage_arena) {
-      channelinfo = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, channelinfo, submessage_arena);
-    }
-    
-  } else {
-    
-  }
-  channelinfo_ = channelinfo;
-  // @@protoc_insertion_point(field_set_allocated:JSBY.ChannelTowerMonster.ChannelInfo)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::TowerMonster >*
+ChannelTowerMonster::mutable_channelinfo() {
+  // @@protoc_insertion_point(field_mutable_list:JSBY.ChannelTowerMonster.ChannelInfo)
+  return &channelinfo_;
+}
+inline const ::JSBY::TowerMonster& ChannelTowerMonster::_internal_channelinfo(int index) const {
+  return channelinfo_.Get(index);
+}
+inline const ::JSBY::TowerMonster& ChannelTowerMonster::channelinfo(int index) const {
+  // @@protoc_insertion_point(field_get:JSBY.ChannelTowerMonster.ChannelInfo)
+  return _internal_channelinfo(index);
+}
+inline ::JSBY::TowerMonster* ChannelTowerMonster::_internal_add_channelinfo() {
+  return channelinfo_.Add();
+}
+inline ::JSBY::TowerMonster* ChannelTowerMonster::add_channelinfo() {
+  // @@protoc_insertion_point(field_add:JSBY.ChannelTowerMonster.ChannelInfo)
+  return _internal_add_channelinfo();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::TowerMonster >&
+ChannelTowerMonster::channelinfo() const {
+  // @@protoc_insertion_point(field_list:JSBY.ChannelTowerMonster.ChannelInfo)
+  return channelinfo_;
 }
 
 // -------------------------------------------------------------------
@@ -25247,87 +25159,43 @@ inline void SCSyncGetTowerMonster::set_tableid(::PROTOBUF_NAMESPACE_ID::int32 va
   // @@protoc_insertion_point(field_set:JSBY.SCSyncGetTowerMonster.TableID)
 }
 
-// .JSBY.ChannelTowerMonster Info = 2;
-inline bool SCSyncGetTowerMonster::_internal_has_info() const {
-  return this != internal_default_instance() && info_ != nullptr;
+// repeated .JSBY.ChannelTowerMonster Info = 2;
+inline int SCSyncGetTowerMonster::_internal_info_size() const {
+  return info_.size();
 }
-inline bool SCSyncGetTowerMonster::has_info() const {
-  return _internal_has_info();
+inline int SCSyncGetTowerMonster::info_size() const {
+  return _internal_info_size();
 }
 inline void SCSyncGetTowerMonster::clear_info() {
-  if (GetArena() == nullptr && info_ != nullptr) {
-    delete info_;
-  }
-  info_ = nullptr;
+  info_.Clear();
 }
-inline const ::JSBY::ChannelTowerMonster& SCSyncGetTowerMonster::_internal_info() const {
-  const ::JSBY::ChannelTowerMonster* p = info_;
-  return p != nullptr ? *p : reinterpret_cast<const ::JSBY::ChannelTowerMonster&>(
-      ::JSBY::_ChannelTowerMonster_default_instance_);
-}
-inline const ::JSBY::ChannelTowerMonster& SCSyncGetTowerMonster::info() const {
-  // @@protoc_insertion_point(field_get:JSBY.SCSyncGetTowerMonster.Info)
-  return _internal_info();
-}
-inline void SCSyncGetTowerMonster::unsafe_arena_set_allocated_info(
-    ::JSBY::ChannelTowerMonster* info) {
-  if (GetArena() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(info_);
-  }
-  info_ = info;
-  if (info) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:JSBY.SCSyncGetTowerMonster.Info)
-}
-inline ::JSBY::ChannelTowerMonster* SCSyncGetTowerMonster::release_info() {
-  
-  ::JSBY::ChannelTowerMonster* temp = info_;
-  info_ = nullptr;
-  if (GetArena() != nullptr) {
-    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
-  }
-  return temp;
-}
-inline ::JSBY::ChannelTowerMonster* SCSyncGetTowerMonster::unsafe_arena_release_info() {
-  // @@protoc_insertion_point(field_release:JSBY.SCSyncGetTowerMonster.Info)
-  
-  ::JSBY::ChannelTowerMonster* temp = info_;
-  info_ = nullptr;
-  return temp;
-}
-inline ::JSBY::ChannelTowerMonster* SCSyncGetTowerMonster::_internal_mutable_info() {
-  
-  if (info_ == nullptr) {
-    auto* p = CreateMaybeMessage<::JSBY::ChannelTowerMonster>(GetArena());
-    info_ = p;
-  }
-  return info_;
-}
-inline ::JSBY::ChannelTowerMonster* SCSyncGetTowerMonster::mutable_info() {
+inline ::JSBY::ChannelTowerMonster* SCSyncGetTowerMonster::mutable_info(int index) {
   // @@protoc_insertion_point(field_mutable:JSBY.SCSyncGetTowerMonster.Info)
-  return _internal_mutable_info();
+  return info_.Mutable(index);
 }
-inline void SCSyncGetTowerMonster::set_allocated_info(::JSBY::ChannelTowerMonster* info) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
-  if (message_arena == nullptr) {
-    delete info_;
-  }
-  if (info) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(info);
-    if (message_arena != submessage_arena) {
-      info = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, info, submessage_arena);
-    }
-    
-  } else {
-    
-  }
-  info_ = info;
-  // @@protoc_insertion_point(field_set_allocated:JSBY.SCSyncGetTowerMonster.Info)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::ChannelTowerMonster >*
+SCSyncGetTowerMonster::mutable_info() {
+  // @@protoc_insertion_point(field_mutable_list:JSBY.SCSyncGetTowerMonster.Info)
+  return &info_;
+}
+inline const ::JSBY::ChannelTowerMonster& SCSyncGetTowerMonster::_internal_info(int index) const {
+  return info_.Get(index);
+}
+inline const ::JSBY::ChannelTowerMonster& SCSyncGetTowerMonster::info(int index) const {
+  // @@protoc_insertion_point(field_get:JSBY.SCSyncGetTowerMonster.Info)
+  return _internal_info(index);
+}
+inline ::JSBY::ChannelTowerMonster* SCSyncGetTowerMonster::_internal_add_info() {
+  return info_.Add();
+}
+inline ::JSBY::ChannelTowerMonster* SCSyncGetTowerMonster::add_info() {
+  // @@protoc_insertion_point(field_add:JSBY.SCSyncGetTowerMonster.Info)
+  return _internal_add_info();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::ChannelTowerMonster >&
+SCSyncGetTowerMonster::info() const {
+  // @@protoc_insertion_point(field_list:JSBY.SCSyncGetTowerMonster.Info)
+  return info_;
 }
 
 // -------------------------------------------------------------------
@@ -25354,87 +25222,43 @@ inline void SCTowerMonster::set_tableid(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:JSBY.SCTowerMonster.TableID)
 }
 
-// .JSBY.ChannelTowerMonster Info = 2;
-inline bool SCTowerMonster::_internal_has_info() const {
-  return this != internal_default_instance() && info_ != nullptr;
+// repeated .JSBY.ChannelTowerMonster Info = 2;
+inline int SCTowerMonster::_internal_info_size() const {
+  return info_.size();
 }
-inline bool SCTowerMonster::has_info() const {
-  return _internal_has_info();
+inline int SCTowerMonster::info_size() const {
+  return _internal_info_size();
 }
 inline void SCTowerMonster::clear_info() {
-  if (GetArena() == nullptr && info_ != nullptr) {
-    delete info_;
-  }
-  info_ = nullptr;
+  info_.Clear();
 }
-inline const ::JSBY::ChannelTowerMonster& SCTowerMonster::_internal_info() const {
-  const ::JSBY::ChannelTowerMonster* p = info_;
-  return p != nullptr ? *p : reinterpret_cast<const ::JSBY::ChannelTowerMonster&>(
-      ::JSBY::_ChannelTowerMonster_default_instance_);
-}
-inline const ::JSBY::ChannelTowerMonster& SCTowerMonster::info() const {
-  // @@protoc_insertion_point(field_get:JSBY.SCTowerMonster.Info)
-  return _internal_info();
-}
-inline void SCTowerMonster::unsafe_arena_set_allocated_info(
-    ::JSBY::ChannelTowerMonster* info) {
-  if (GetArena() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(info_);
-  }
-  info_ = info;
-  if (info) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:JSBY.SCTowerMonster.Info)
-}
-inline ::JSBY::ChannelTowerMonster* SCTowerMonster::release_info() {
-  
-  ::JSBY::ChannelTowerMonster* temp = info_;
-  info_ = nullptr;
-  if (GetArena() != nullptr) {
-    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
-  }
-  return temp;
-}
-inline ::JSBY::ChannelTowerMonster* SCTowerMonster::unsafe_arena_release_info() {
-  // @@protoc_insertion_point(field_release:JSBY.SCTowerMonster.Info)
-  
-  ::JSBY::ChannelTowerMonster* temp = info_;
-  info_ = nullptr;
-  return temp;
-}
-inline ::JSBY::ChannelTowerMonster* SCTowerMonster::_internal_mutable_info() {
-  
-  if (info_ == nullptr) {
-    auto* p = CreateMaybeMessage<::JSBY::ChannelTowerMonster>(GetArena());
-    info_ = p;
-  }
-  return info_;
-}
-inline ::JSBY::ChannelTowerMonster* SCTowerMonster::mutable_info() {
+inline ::JSBY::ChannelTowerMonster* SCTowerMonster::mutable_info(int index) {
   // @@protoc_insertion_point(field_mutable:JSBY.SCTowerMonster.Info)
-  return _internal_mutable_info();
+  return info_.Mutable(index);
 }
-inline void SCTowerMonster::set_allocated_info(::JSBY::ChannelTowerMonster* info) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
-  if (message_arena == nullptr) {
-    delete info_;
-  }
-  if (info) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(info);
-    if (message_arena != submessage_arena) {
-      info = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, info, submessage_arena);
-    }
-    
-  } else {
-    
-  }
-  info_ = info;
-  // @@protoc_insertion_point(field_set_allocated:JSBY.SCTowerMonster.Info)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::ChannelTowerMonster >*
+SCTowerMonster::mutable_info() {
+  // @@protoc_insertion_point(field_mutable_list:JSBY.SCTowerMonster.Info)
+  return &info_;
+}
+inline const ::JSBY::ChannelTowerMonster& SCTowerMonster::_internal_info(int index) const {
+  return info_.Get(index);
+}
+inline const ::JSBY::ChannelTowerMonster& SCTowerMonster::info(int index) const {
+  // @@protoc_insertion_point(field_get:JSBY.SCTowerMonster.Info)
+  return _internal_info(index);
+}
+inline ::JSBY::ChannelTowerMonster* SCTowerMonster::_internal_add_info() {
+  return info_.Add();
+}
+inline ::JSBY::ChannelTowerMonster* SCTowerMonster::add_info() {
+  // @@protoc_insertion_point(field_add:JSBY.SCTowerMonster.Info)
+  return _internal_add_info();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::ChannelTowerMonster >&
+SCTowerMonster::info() const {
+  // @@protoc_insertion_point(field_list:JSBY.SCTowerMonster.Info)
+  return info_;
 }
 
 // -------------------------------------------------------------------

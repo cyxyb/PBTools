@@ -303,7 +303,7 @@ message CSRequestAttack
 	 int32 UsePositionId = 5;
 	 int32 UsePositionTimes = 6;
 	 int32 SpecialType = 7;
-	 SpecialMonsterAttack SpecialInfo = 8;
+	 repeated SpecialMonsterAttack SpecialInfo = 8;
 	 bool DragonEnd = 9;
 	 int32 HeroUniqueId = 10;
 }
@@ -523,7 +523,7 @@ message TowerMonster
 message ChannelTowerMonster
 {
 	 int32 ChannelId = 1;
-	 TowerMonster ChannelInfo = 2;
+	 repeated TowerMonster ChannelInfo = 2;
 }
 message SCGetTowerMonster
 {
@@ -537,12 +537,12 @@ message CSGetTowerMonster
 message SCSyncGetTowerMonster
 {
 	 int32 TableID = 1;
-	 ChannelTowerMonster Info = 2;
+	 repeated ChannelTowerMonster Info = 2;
 }
 message SCTowerMonster
 {
 	 int32 TableID = 1;
-	 ChannelTowerMonster Info = 2;
+	 repeated ChannelTowerMonster Info = 2;
 }
 message CSTowerHeroAtkInfo
 {
