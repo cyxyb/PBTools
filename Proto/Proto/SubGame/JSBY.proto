@@ -493,7 +493,7 @@ message TablePlayerInfo
 	 int32 Sex = 4;
 	 string Name = 5;
 	 string Head = 6;
-	 TowerHeroInfo Info = 7;
+	 repeated TowerHeroInfo Info = 7;
 	 int32 MoneyVariation = 8;
 	 int32 VipLevel = 9;
 	 bool IsVip = 10;
@@ -502,7 +502,7 @@ message TablePlayerInfo
 }
 message SCNotifyTowerTablePlayer
 {
-	 TablePlayerInfo Info = 1;
+	 repeated TablePlayerInfo Info = 1;
 	 int32 TableID = 2;
 }
 message SCLeaveTowerTable
@@ -578,7 +578,7 @@ message CSTowerPlayerLockTarget
 }
 message SCTowerPlayerLockTarget
 {
-	LockTargetInfo LockInfo = 1;
+	repeated LockTargetInfo LockInfo = 1;
 }
 message CSChangeBackground
 {
@@ -645,11 +645,11 @@ message PoisonBombLocation
 
 message CSPoisonBombLocation
 {
-	 PoisonBombLocation Info = 1;
+	 repeated PoisonBombLocation Info = 1;
 }
 message SCPoisonBombLocation
 {
-	 PoisonBombLocation Info = 1;
+	 repeated PoisonBombLocation Info = 1;
 }
 message PoisonbombConvert
 {
@@ -829,7 +829,7 @@ message PropsInfo
 }
 message SCPushPropsInfo
 {
-	 PropsInfo Info = 1;
+	 repeated PropsInfo Info = 1;
 }
 message CSGetMaterialsInfo
 {
@@ -904,7 +904,7 @@ message SwitchInfo
 }
 message SCFunctionSwitch
 {
-	 SwitchInfo Info = 1;
+	 repeated SwitchInfo Info = 1;
 }
 message CSSealConvertMoney
 {
