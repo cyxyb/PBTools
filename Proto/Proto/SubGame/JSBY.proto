@@ -710,8 +710,8 @@ message CSOneKeyUpdateHero
 message SCOneKeyUpdateHero
 {
 	 int32 PlayerId = 1;
-	 TowerHeroInfo LeaveInfo = 2;
-	 TowerHeroInfo updateInfo = 3;
+	 repeated TowerHeroInfo LeaveInfo = 2;
+	 repeated TowerHeroInfo updateInfo = 3;
 	 int32 TableId = 4;
 }
 message SCPushGhostDragonRelease
@@ -836,7 +836,7 @@ message CSGetMaterialsInfo
 }
 message SCGetMaterialsInfo
 {
-	 PropsInfo Info = 1;
+	 repeated PropsInfo Info = 1;
 }
 message CSExchangeBox
 {

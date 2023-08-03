@@ -13585,41 +13585,41 @@ class SCOneKeyUpdateHero PROTOBUF_FINAL :
     kPlayerIdFieldNumber = 1,
     kTableIdFieldNumber = 4,
   };
-  // .JSBY.TowerHeroInfo LeaveInfo = 2;
-  bool has_leaveinfo() const;
+  // repeated .JSBY.TowerHeroInfo LeaveInfo = 2;
+  int leaveinfo_size() const;
   private:
-  bool _internal_has_leaveinfo() const;
+  int _internal_leaveinfo_size() const;
   public:
   void clear_leaveinfo();
-  const ::JSBY::TowerHeroInfo& leaveinfo() const;
-  ::JSBY::TowerHeroInfo* release_leaveinfo();
-  ::JSBY::TowerHeroInfo* mutable_leaveinfo();
-  void set_allocated_leaveinfo(::JSBY::TowerHeroInfo* leaveinfo);
+  ::JSBY::TowerHeroInfo* mutable_leaveinfo(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::TowerHeroInfo >*
+      mutable_leaveinfo();
   private:
-  const ::JSBY::TowerHeroInfo& _internal_leaveinfo() const;
-  ::JSBY::TowerHeroInfo* _internal_mutable_leaveinfo();
+  const ::JSBY::TowerHeroInfo& _internal_leaveinfo(int index) const;
+  ::JSBY::TowerHeroInfo* _internal_add_leaveinfo();
   public:
-  void unsafe_arena_set_allocated_leaveinfo(
-      ::JSBY::TowerHeroInfo* leaveinfo);
-  ::JSBY::TowerHeroInfo* unsafe_arena_release_leaveinfo();
+  const ::JSBY::TowerHeroInfo& leaveinfo(int index) const;
+  ::JSBY::TowerHeroInfo* add_leaveinfo();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::TowerHeroInfo >&
+      leaveinfo() const;
 
-  // .JSBY.TowerHeroInfo updateInfo = 3;
-  bool has_updateinfo() const;
+  // repeated .JSBY.TowerHeroInfo updateInfo = 3;
+  int updateinfo_size() const;
   private:
-  bool _internal_has_updateinfo() const;
+  int _internal_updateinfo_size() const;
   public:
   void clear_updateinfo();
-  const ::JSBY::TowerHeroInfo& updateinfo() const;
-  ::JSBY::TowerHeroInfo* release_updateinfo();
-  ::JSBY::TowerHeroInfo* mutable_updateinfo();
-  void set_allocated_updateinfo(::JSBY::TowerHeroInfo* updateinfo);
+  ::JSBY::TowerHeroInfo* mutable_updateinfo(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::TowerHeroInfo >*
+      mutable_updateinfo();
   private:
-  const ::JSBY::TowerHeroInfo& _internal_updateinfo() const;
-  ::JSBY::TowerHeroInfo* _internal_mutable_updateinfo();
+  const ::JSBY::TowerHeroInfo& _internal_updateinfo(int index) const;
+  ::JSBY::TowerHeroInfo* _internal_add_updateinfo();
   public:
-  void unsafe_arena_set_allocated_updateinfo(
-      ::JSBY::TowerHeroInfo* updateinfo);
-  ::JSBY::TowerHeroInfo* unsafe_arena_release_updateinfo();
+  const ::JSBY::TowerHeroInfo& updateinfo(int index) const;
+  ::JSBY::TowerHeroInfo* add_updateinfo();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::TowerHeroInfo >&
+      updateinfo() const;
 
   // int32 PlayerId = 1;
   void clear_playerid();
@@ -13646,8 +13646,8 @@ class SCOneKeyUpdateHero PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::JSBY::TowerHeroInfo* leaveinfo_;
-  ::JSBY::TowerHeroInfo* updateinfo_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::TowerHeroInfo > leaveinfo_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::TowerHeroInfo > updateinfo_;
   ::PROTOBUF_NAMESPACE_ID::int32 playerid_;
   ::PROTOBUF_NAMESPACE_ID::int32 tableid_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
@@ -17467,23 +17467,23 @@ class SCGetMaterialsInfo PROTOBUF_FINAL :
   enum : int {
     kInfoFieldNumber = 1,
   };
-  // .JSBY.PropsInfo Info = 1;
-  bool has_info() const;
+  // repeated .JSBY.PropsInfo Info = 1;
+  int info_size() const;
   private:
-  bool _internal_has_info() const;
+  int _internal_info_size() const;
   public:
   void clear_info();
-  const ::JSBY::PropsInfo& info() const;
-  ::JSBY::PropsInfo* release_info();
-  ::JSBY::PropsInfo* mutable_info();
-  void set_allocated_info(::JSBY::PropsInfo* info);
+  ::JSBY::PropsInfo* mutable_info(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::PropsInfo >*
+      mutable_info();
   private:
-  const ::JSBY::PropsInfo& _internal_info() const;
-  ::JSBY::PropsInfo* _internal_mutable_info();
+  const ::JSBY::PropsInfo& _internal_info(int index) const;
+  ::JSBY::PropsInfo* _internal_add_info();
   public:
-  void unsafe_arena_set_allocated_info(
-      ::JSBY::PropsInfo* info);
-  ::JSBY::PropsInfo* unsafe_arena_release_info();
+  const ::JSBY::PropsInfo& info(int index) const;
+  ::JSBY::PropsInfo* add_info();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::PropsInfo >&
+      info() const;
 
   // @@protoc_insertion_point(class_scope:JSBY.SCGetMaterialsInfo)
  private:
@@ -17492,7 +17492,7 @@ class SCGetMaterialsInfo PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::JSBY::PropsInfo* info_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::PropsInfo > info_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_JSBY_2eproto;
 };
@@ -27122,170 +27122,82 @@ inline void SCOneKeyUpdateHero::set_playerid(::PROTOBUF_NAMESPACE_ID::int32 valu
   // @@protoc_insertion_point(field_set:JSBY.SCOneKeyUpdateHero.PlayerId)
 }
 
-// .JSBY.TowerHeroInfo LeaveInfo = 2;
-inline bool SCOneKeyUpdateHero::_internal_has_leaveinfo() const {
-  return this != internal_default_instance() && leaveinfo_ != nullptr;
+// repeated .JSBY.TowerHeroInfo LeaveInfo = 2;
+inline int SCOneKeyUpdateHero::_internal_leaveinfo_size() const {
+  return leaveinfo_.size();
 }
-inline bool SCOneKeyUpdateHero::has_leaveinfo() const {
-  return _internal_has_leaveinfo();
+inline int SCOneKeyUpdateHero::leaveinfo_size() const {
+  return _internal_leaveinfo_size();
 }
 inline void SCOneKeyUpdateHero::clear_leaveinfo() {
-  if (GetArena() == nullptr && leaveinfo_ != nullptr) {
-    delete leaveinfo_;
-  }
-  leaveinfo_ = nullptr;
+  leaveinfo_.Clear();
 }
-inline const ::JSBY::TowerHeroInfo& SCOneKeyUpdateHero::_internal_leaveinfo() const {
-  const ::JSBY::TowerHeroInfo* p = leaveinfo_;
-  return p != nullptr ? *p : reinterpret_cast<const ::JSBY::TowerHeroInfo&>(
-      ::JSBY::_TowerHeroInfo_default_instance_);
+inline ::JSBY::TowerHeroInfo* SCOneKeyUpdateHero::mutable_leaveinfo(int index) {
+  // @@protoc_insertion_point(field_mutable:JSBY.SCOneKeyUpdateHero.LeaveInfo)
+  return leaveinfo_.Mutable(index);
 }
-inline const ::JSBY::TowerHeroInfo& SCOneKeyUpdateHero::leaveinfo() const {
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::TowerHeroInfo >*
+SCOneKeyUpdateHero::mutable_leaveinfo() {
+  // @@protoc_insertion_point(field_mutable_list:JSBY.SCOneKeyUpdateHero.LeaveInfo)
+  return &leaveinfo_;
+}
+inline const ::JSBY::TowerHeroInfo& SCOneKeyUpdateHero::_internal_leaveinfo(int index) const {
+  return leaveinfo_.Get(index);
+}
+inline const ::JSBY::TowerHeroInfo& SCOneKeyUpdateHero::leaveinfo(int index) const {
   // @@protoc_insertion_point(field_get:JSBY.SCOneKeyUpdateHero.LeaveInfo)
-  return _internal_leaveinfo();
+  return _internal_leaveinfo(index);
 }
-inline void SCOneKeyUpdateHero::unsafe_arena_set_allocated_leaveinfo(
-    ::JSBY::TowerHeroInfo* leaveinfo) {
-  if (GetArena() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(leaveinfo_);
-  }
-  leaveinfo_ = leaveinfo;
-  if (leaveinfo) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:JSBY.SCOneKeyUpdateHero.LeaveInfo)
+inline ::JSBY::TowerHeroInfo* SCOneKeyUpdateHero::_internal_add_leaveinfo() {
+  return leaveinfo_.Add();
 }
-inline ::JSBY::TowerHeroInfo* SCOneKeyUpdateHero::release_leaveinfo() {
-  
-  ::JSBY::TowerHeroInfo* temp = leaveinfo_;
-  leaveinfo_ = nullptr;
-  if (GetArena() != nullptr) {
-    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
-  }
-  return temp;
+inline ::JSBY::TowerHeroInfo* SCOneKeyUpdateHero::add_leaveinfo() {
+  // @@protoc_insertion_point(field_add:JSBY.SCOneKeyUpdateHero.LeaveInfo)
+  return _internal_add_leaveinfo();
 }
-inline ::JSBY::TowerHeroInfo* SCOneKeyUpdateHero::unsafe_arena_release_leaveinfo() {
-  // @@protoc_insertion_point(field_release:JSBY.SCOneKeyUpdateHero.LeaveInfo)
-  
-  ::JSBY::TowerHeroInfo* temp = leaveinfo_;
-  leaveinfo_ = nullptr;
-  return temp;
-}
-inline ::JSBY::TowerHeroInfo* SCOneKeyUpdateHero::_internal_mutable_leaveinfo() {
-  
-  if (leaveinfo_ == nullptr) {
-    auto* p = CreateMaybeMessage<::JSBY::TowerHeroInfo>(GetArena());
-    leaveinfo_ = p;
-  }
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::TowerHeroInfo >&
+SCOneKeyUpdateHero::leaveinfo() const {
+  // @@protoc_insertion_point(field_list:JSBY.SCOneKeyUpdateHero.LeaveInfo)
   return leaveinfo_;
 }
-inline ::JSBY::TowerHeroInfo* SCOneKeyUpdateHero::mutable_leaveinfo() {
-  // @@protoc_insertion_point(field_mutable:JSBY.SCOneKeyUpdateHero.LeaveInfo)
-  return _internal_mutable_leaveinfo();
-}
-inline void SCOneKeyUpdateHero::set_allocated_leaveinfo(::JSBY::TowerHeroInfo* leaveinfo) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
-  if (message_arena == nullptr) {
-    delete leaveinfo_;
-  }
-  if (leaveinfo) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(leaveinfo);
-    if (message_arena != submessage_arena) {
-      leaveinfo = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, leaveinfo, submessage_arena);
-    }
-    
-  } else {
-    
-  }
-  leaveinfo_ = leaveinfo;
-  // @@protoc_insertion_point(field_set_allocated:JSBY.SCOneKeyUpdateHero.LeaveInfo)
-}
 
-// .JSBY.TowerHeroInfo updateInfo = 3;
-inline bool SCOneKeyUpdateHero::_internal_has_updateinfo() const {
-  return this != internal_default_instance() && updateinfo_ != nullptr;
+// repeated .JSBY.TowerHeroInfo updateInfo = 3;
+inline int SCOneKeyUpdateHero::_internal_updateinfo_size() const {
+  return updateinfo_.size();
 }
-inline bool SCOneKeyUpdateHero::has_updateinfo() const {
-  return _internal_has_updateinfo();
+inline int SCOneKeyUpdateHero::updateinfo_size() const {
+  return _internal_updateinfo_size();
 }
 inline void SCOneKeyUpdateHero::clear_updateinfo() {
-  if (GetArena() == nullptr && updateinfo_ != nullptr) {
-    delete updateinfo_;
-  }
-  updateinfo_ = nullptr;
+  updateinfo_.Clear();
 }
-inline const ::JSBY::TowerHeroInfo& SCOneKeyUpdateHero::_internal_updateinfo() const {
-  const ::JSBY::TowerHeroInfo* p = updateinfo_;
-  return p != nullptr ? *p : reinterpret_cast<const ::JSBY::TowerHeroInfo&>(
-      ::JSBY::_TowerHeroInfo_default_instance_);
-}
-inline const ::JSBY::TowerHeroInfo& SCOneKeyUpdateHero::updateinfo() const {
-  // @@protoc_insertion_point(field_get:JSBY.SCOneKeyUpdateHero.updateInfo)
-  return _internal_updateinfo();
-}
-inline void SCOneKeyUpdateHero::unsafe_arena_set_allocated_updateinfo(
-    ::JSBY::TowerHeroInfo* updateinfo) {
-  if (GetArena() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(updateinfo_);
-  }
-  updateinfo_ = updateinfo;
-  if (updateinfo) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:JSBY.SCOneKeyUpdateHero.updateInfo)
-}
-inline ::JSBY::TowerHeroInfo* SCOneKeyUpdateHero::release_updateinfo() {
-  
-  ::JSBY::TowerHeroInfo* temp = updateinfo_;
-  updateinfo_ = nullptr;
-  if (GetArena() != nullptr) {
-    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
-  }
-  return temp;
-}
-inline ::JSBY::TowerHeroInfo* SCOneKeyUpdateHero::unsafe_arena_release_updateinfo() {
-  // @@protoc_insertion_point(field_release:JSBY.SCOneKeyUpdateHero.updateInfo)
-  
-  ::JSBY::TowerHeroInfo* temp = updateinfo_;
-  updateinfo_ = nullptr;
-  return temp;
-}
-inline ::JSBY::TowerHeroInfo* SCOneKeyUpdateHero::_internal_mutable_updateinfo() {
-  
-  if (updateinfo_ == nullptr) {
-    auto* p = CreateMaybeMessage<::JSBY::TowerHeroInfo>(GetArena());
-    updateinfo_ = p;
-  }
-  return updateinfo_;
-}
-inline ::JSBY::TowerHeroInfo* SCOneKeyUpdateHero::mutable_updateinfo() {
+inline ::JSBY::TowerHeroInfo* SCOneKeyUpdateHero::mutable_updateinfo(int index) {
   // @@protoc_insertion_point(field_mutable:JSBY.SCOneKeyUpdateHero.updateInfo)
-  return _internal_mutable_updateinfo();
+  return updateinfo_.Mutable(index);
 }
-inline void SCOneKeyUpdateHero::set_allocated_updateinfo(::JSBY::TowerHeroInfo* updateinfo) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
-  if (message_arena == nullptr) {
-    delete updateinfo_;
-  }
-  if (updateinfo) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(updateinfo);
-    if (message_arena != submessage_arena) {
-      updateinfo = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, updateinfo, submessage_arena);
-    }
-    
-  } else {
-    
-  }
-  updateinfo_ = updateinfo;
-  // @@protoc_insertion_point(field_set_allocated:JSBY.SCOneKeyUpdateHero.updateInfo)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::TowerHeroInfo >*
+SCOneKeyUpdateHero::mutable_updateinfo() {
+  // @@protoc_insertion_point(field_mutable_list:JSBY.SCOneKeyUpdateHero.updateInfo)
+  return &updateinfo_;
+}
+inline const ::JSBY::TowerHeroInfo& SCOneKeyUpdateHero::_internal_updateinfo(int index) const {
+  return updateinfo_.Get(index);
+}
+inline const ::JSBY::TowerHeroInfo& SCOneKeyUpdateHero::updateinfo(int index) const {
+  // @@protoc_insertion_point(field_get:JSBY.SCOneKeyUpdateHero.updateInfo)
+  return _internal_updateinfo(index);
+}
+inline ::JSBY::TowerHeroInfo* SCOneKeyUpdateHero::_internal_add_updateinfo() {
+  return updateinfo_.Add();
+}
+inline ::JSBY::TowerHeroInfo* SCOneKeyUpdateHero::add_updateinfo() {
+  // @@protoc_insertion_point(field_add:JSBY.SCOneKeyUpdateHero.updateInfo)
+  return _internal_add_updateinfo();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::TowerHeroInfo >&
+SCOneKeyUpdateHero::updateinfo() const {
+  // @@protoc_insertion_point(field_list:JSBY.SCOneKeyUpdateHero.updateInfo)
+  return updateinfo_;
 }
 
 // int32 TableId = 4;
@@ -28810,87 +28722,43 @@ SCPushPropsInfo::info() const {
 
 // SCGetMaterialsInfo
 
-// .JSBY.PropsInfo Info = 1;
-inline bool SCGetMaterialsInfo::_internal_has_info() const {
-  return this != internal_default_instance() && info_ != nullptr;
+// repeated .JSBY.PropsInfo Info = 1;
+inline int SCGetMaterialsInfo::_internal_info_size() const {
+  return info_.size();
 }
-inline bool SCGetMaterialsInfo::has_info() const {
-  return _internal_has_info();
+inline int SCGetMaterialsInfo::info_size() const {
+  return _internal_info_size();
 }
 inline void SCGetMaterialsInfo::clear_info() {
-  if (GetArena() == nullptr && info_ != nullptr) {
-    delete info_;
-  }
-  info_ = nullptr;
+  info_.Clear();
 }
-inline const ::JSBY::PropsInfo& SCGetMaterialsInfo::_internal_info() const {
-  const ::JSBY::PropsInfo* p = info_;
-  return p != nullptr ? *p : reinterpret_cast<const ::JSBY::PropsInfo&>(
-      ::JSBY::_PropsInfo_default_instance_);
-}
-inline const ::JSBY::PropsInfo& SCGetMaterialsInfo::info() const {
-  // @@protoc_insertion_point(field_get:JSBY.SCGetMaterialsInfo.Info)
-  return _internal_info();
-}
-inline void SCGetMaterialsInfo::unsafe_arena_set_allocated_info(
-    ::JSBY::PropsInfo* info) {
-  if (GetArena() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(info_);
-  }
-  info_ = info;
-  if (info) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:JSBY.SCGetMaterialsInfo.Info)
-}
-inline ::JSBY::PropsInfo* SCGetMaterialsInfo::release_info() {
-  
-  ::JSBY::PropsInfo* temp = info_;
-  info_ = nullptr;
-  if (GetArena() != nullptr) {
-    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
-  }
-  return temp;
-}
-inline ::JSBY::PropsInfo* SCGetMaterialsInfo::unsafe_arena_release_info() {
-  // @@protoc_insertion_point(field_release:JSBY.SCGetMaterialsInfo.Info)
-  
-  ::JSBY::PropsInfo* temp = info_;
-  info_ = nullptr;
-  return temp;
-}
-inline ::JSBY::PropsInfo* SCGetMaterialsInfo::_internal_mutable_info() {
-  
-  if (info_ == nullptr) {
-    auto* p = CreateMaybeMessage<::JSBY::PropsInfo>(GetArena());
-    info_ = p;
-  }
-  return info_;
-}
-inline ::JSBY::PropsInfo* SCGetMaterialsInfo::mutable_info() {
+inline ::JSBY::PropsInfo* SCGetMaterialsInfo::mutable_info(int index) {
   // @@protoc_insertion_point(field_mutable:JSBY.SCGetMaterialsInfo.Info)
-  return _internal_mutable_info();
+  return info_.Mutable(index);
 }
-inline void SCGetMaterialsInfo::set_allocated_info(::JSBY::PropsInfo* info) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
-  if (message_arena == nullptr) {
-    delete info_;
-  }
-  if (info) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(info);
-    if (message_arena != submessage_arena) {
-      info = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, info, submessage_arena);
-    }
-    
-  } else {
-    
-  }
-  info_ = info;
-  // @@protoc_insertion_point(field_set_allocated:JSBY.SCGetMaterialsInfo.Info)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::PropsInfo >*
+SCGetMaterialsInfo::mutable_info() {
+  // @@protoc_insertion_point(field_mutable_list:JSBY.SCGetMaterialsInfo.Info)
+  return &info_;
+}
+inline const ::JSBY::PropsInfo& SCGetMaterialsInfo::_internal_info(int index) const {
+  return info_.Get(index);
+}
+inline const ::JSBY::PropsInfo& SCGetMaterialsInfo::info(int index) const {
+  // @@protoc_insertion_point(field_get:JSBY.SCGetMaterialsInfo.Info)
+  return _internal_info(index);
+}
+inline ::JSBY::PropsInfo* SCGetMaterialsInfo::_internal_add_info() {
+  return info_.Add();
+}
+inline ::JSBY::PropsInfo* SCGetMaterialsInfo::add_info() {
+  // @@protoc_insertion_point(field_add:JSBY.SCGetMaterialsInfo.Info)
+  return _internal_add_info();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::PropsInfo >&
+SCGetMaterialsInfo::info() const {
+  // @@protoc_insertion_point(field_list:JSBY.SCGetMaterialsInfo.Info)
+  return info_;
 }
 
 // -------------------------------------------------------------------
