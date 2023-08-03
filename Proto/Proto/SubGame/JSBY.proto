@@ -550,7 +550,7 @@ message CSTowerHeroAtkInfo
 }
 message SCTowerHeroAtkInfo
 {
-	 TowerHeroAtkInfo Info = 1;
+	 repeated TowerHeroAtkInfo Info = 1;
 }
 message CSTowerUpdateHero
 {
@@ -678,7 +678,7 @@ message SCPoisonbombTypes
 }
 message CSDragonRelease
 {
-	 int32 Ratio = 1;
+	 float Ratio = 1;
 	 int32 PropsID = 2;
 }
 message SCDragonRelease
@@ -741,7 +741,7 @@ message HeroMoney
 }
 message SCPushSyncHeroMoney
 {
-	 HeroMoney HeroMoney = 1;
+	 repeated HeroMoney HeroMoney = 1;
 }
 message SCPushMonsterDead
 {

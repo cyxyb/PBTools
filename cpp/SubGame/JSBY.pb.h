@@ -8595,23 +8595,23 @@ class SCTowerHeroAtkInfo PROTOBUF_FINAL :
   enum : int {
     kInfoFieldNumber = 1,
   };
-  // .JSBY.TowerHeroAtkInfo Info = 1;
-  bool has_info() const;
+  // repeated .JSBY.TowerHeroAtkInfo Info = 1;
+  int info_size() const;
   private:
-  bool _internal_has_info() const;
+  int _internal_info_size() const;
   public:
   void clear_info();
-  const ::JSBY::TowerHeroAtkInfo& info() const;
-  ::JSBY::TowerHeroAtkInfo* release_info();
-  ::JSBY::TowerHeroAtkInfo* mutable_info();
-  void set_allocated_info(::JSBY::TowerHeroAtkInfo* info);
+  ::JSBY::TowerHeroAtkInfo* mutable_info(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::TowerHeroAtkInfo >*
+      mutable_info();
   private:
-  const ::JSBY::TowerHeroAtkInfo& _internal_info() const;
-  ::JSBY::TowerHeroAtkInfo* _internal_mutable_info();
+  const ::JSBY::TowerHeroAtkInfo& _internal_info(int index) const;
+  ::JSBY::TowerHeroAtkInfo* _internal_add_info();
   public:
-  void unsafe_arena_set_allocated_info(
-      ::JSBY::TowerHeroAtkInfo* info);
-  ::JSBY::TowerHeroAtkInfo* unsafe_arena_release_info();
+  const ::JSBY::TowerHeroAtkInfo& info(int index) const;
+  ::JSBY::TowerHeroAtkInfo* add_info();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::TowerHeroAtkInfo >&
+      info() const;
 
   // @@protoc_insertion_point(class_scope:JSBY.SCTowerHeroAtkInfo)
  private:
@@ -8620,7 +8620,7 @@ class SCTowerHeroAtkInfo PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::JSBY::TowerHeroAtkInfo* info_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::TowerHeroAtkInfo > info_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_JSBY_2eproto;
 };
@@ -12658,13 +12658,13 @@ class CSDragonRelease PROTOBUF_FINAL :
     kRatioFieldNumber = 1,
     kPropsIDFieldNumber = 2,
   };
-  // int32 Ratio = 1;
+  // float Ratio = 1;
   void clear_ratio();
-  ::PROTOBUF_NAMESPACE_ID::int32 ratio() const;
-  void set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  float ratio() const;
+  void set_ratio(float value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_ratio() const;
-  void _internal_set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  float _internal_ratio() const;
+  void _internal_set_ratio(float value);
   public:
 
   // int32 PropsID = 2;
@@ -12683,7 +12683,7 @@ class CSDragonRelease PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int32 ratio_;
+  float ratio_;
   ::PROTOBUF_NAMESPACE_ID::int32 propsid_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_JSBY_2eproto;
@@ -14421,23 +14421,23 @@ class SCPushSyncHeroMoney PROTOBUF_FINAL :
   enum : int {
     kHeroMoneyFieldNumber = 1,
   };
-  // .JSBY.HeroMoney HeroMoney = 1;
-  bool has_heromoney() const;
+  // repeated .JSBY.HeroMoney HeroMoney = 1;
+  int heromoney_size() const;
   private:
-  bool _internal_has_heromoney() const;
+  int _internal_heromoney_size() const;
   public:
   void clear_heromoney();
-  const ::JSBY::HeroMoney& heromoney() const;
-  ::JSBY::HeroMoney* release_heromoney();
-  ::JSBY::HeroMoney* mutable_heromoney();
-  void set_allocated_heromoney(::JSBY::HeroMoney* heromoney);
+  ::JSBY::HeroMoney* mutable_heromoney(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::HeroMoney >*
+      mutable_heromoney();
   private:
-  const ::JSBY::HeroMoney& _internal_heromoney() const;
-  ::JSBY::HeroMoney* _internal_mutable_heromoney();
+  const ::JSBY::HeroMoney& _internal_heromoney(int index) const;
+  ::JSBY::HeroMoney* _internal_add_heromoney();
   public:
-  void unsafe_arena_set_allocated_heromoney(
-      ::JSBY::HeroMoney* heromoney);
-  ::JSBY::HeroMoney* unsafe_arena_release_heromoney();
+  const ::JSBY::HeroMoney& heromoney(int index) const;
+  ::JSBY::HeroMoney* add_heromoney();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::HeroMoney >&
+      heromoney() const;
 
   // @@protoc_insertion_point(class_scope:JSBY.SCPushSyncHeroMoney)
  private:
@@ -14446,7 +14446,7 @@ class SCPushSyncHeroMoney PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::JSBY::HeroMoney* heromoney_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::HeroMoney > heromoney_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_JSBY_2eproto;
 };
@@ -25220,87 +25220,43 @@ CSTowerHeroAtkInfo::info() const {
 
 // SCTowerHeroAtkInfo
 
-// .JSBY.TowerHeroAtkInfo Info = 1;
-inline bool SCTowerHeroAtkInfo::_internal_has_info() const {
-  return this != internal_default_instance() && info_ != nullptr;
+// repeated .JSBY.TowerHeroAtkInfo Info = 1;
+inline int SCTowerHeroAtkInfo::_internal_info_size() const {
+  return info_.size();
 }
-inline bool SCTowerHeroAtkInfo::has_info() const {
-  return _internal_has_info();
+inline int SCTowerHeroAtkInfo::info_size() const {
+  return _internal_info_size();
 }
 inline void SCTowerHeroAtkInfo::clear_info() {
-  if (GetArena() == nullptr && info_ != nullptr) {
-    delete info_;
-  }
-  info_ = nullptr;
+  info_.Clear();
 }
-inline const ::JSBY::TowerHeroAtkInfo& SCTowerHeroAtkInfo::_internal_info() const {
-  const ::JSBY::TowerHeroAtkInfo* p = info_;
-  return p != nullptr ? *p : reinterpret_cast<const ::JSBY::TowerHeroAtkInfo&>(
-      ::JSBY::_TowerHeroAtkInfo_default_instance_);
-}
-inline const ::JSBY::TowerHeroAtkInfo& SCTowerHeroAtkInfo::info() const {
-  // @@protoc_insertion_point(field_get:JSBY.SCTowerHeroAtkInfo.Info)
-  return _internal_info();
-}
-inline void SCTowerHeroAtkInfo::unsafe_arena_set_allocated_info(
-    ::JSBY::TowerHeroAtkInfo* info) {
-  if (GetArena() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(info_);
-  }
-  info_ = info;
-  if (info) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:JSBY.SCTowerHeroAtkInfo.Info)
-}
-inline ::JSBY::TowerHeroAtkInfo* SCTowerHeroAtkInfo::release_info() {
-  
-  ::JSBY::TowerHeroAtkInfo* temp = info_;
-  info_ = nullptr;
-  if (GetArena() != nullptr) {
-    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
-  }
-  return temp;
-}
-inline ::JSBY::TowerHeroAtkInfo* SCTowerHeroAtkInfo::unsafe_arena_release_info() {
-  // @@protoc_insertion_point(field_release:JSBY.SCTowerHeroAtkInfo.Info)
-  
-  ::JSBY::TowerHeroAtkInfo* temp = info_;
-  info_ = nullptr;
-  return temp;
-}
-inline ::JSBY::TowerHeroAtkInfo* SCTowerHeroAtkInfo::_internal_mutable_info() {
-  
-  if (info_ == nullptr) {
-    auto* p = CreateMaybeMessage<::JSBY::TowerHeroAtkInfo>(GetArena());
-    info_ = p;
-  }
-  return info_;
-}
-inline ::JSBY::TowerHeroAtkInfo* SCTowerHeroAtkInfo::mutable_info() {
+inline ::JSBY::TowerHeroAtkInfo* SCTowerHeroAtkInfo::mutable_info(int index) {
   // @@protoc_insertion_point(field_mutable:JSBY.SCTowerHeroAtkInfo.Info)
-  return _internal_mutable_info();
+  return info_.Mutable(index);
 }
-inline void SCTowerHeroAtkInfo::set_allocated_info(::JSBY::TowerHeroAtkInfo* info) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
-  if (message_arena == nullptr) {
-    delete info_;
-  }
-  if (info) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(info);
-    if (message_arena != submessage_arena) {
-      info = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, info, submessage_arena);
-    }
-    
-  } else {
-    
-  }
-  info_ = info;
-  // @@protoc_insertion_point(field_set_allocated:JSBY.SCTowerHeroAtkInfo.Info)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::TowerHeroAtkInfo >*
+SCTowerHeroAtkInfo::mutable_info() {
+  // @@protoc_insertion_point(field_mutable_list:JSBY.SCTowerHeroAtkInfo.Info)
+  return &info_;
+}
+inline const ::JSBY::TowerHeroAtkInfo& SCTowerHeroAtkInfo::_internal_info(int index) const {
+  return info_.Get(index);
+}
+inline const ::JSBY::TowerHeroAtkInfo& SCTowerHeroAtkInfo::info(int index) const {
+  // @@protoc_insertion_point(field_get:JSBY.SCTowerHeroAtkInfo.Info)
+  return _internal_info(index);
+}
+inline ::JSBY::TowerHeroAtkInfo* SCTowerHeroAtkInfo::_internal_add_info() {
+  return info_.Add();
+}
+inline ::JSBY::TowerHeroAtkInfo* SCTowerHeroAtkInfo::add_info() {
+  // @@protoc_insertion_point(field_add:JSBY.SCTowerHeroAtkInfo.Info)
+  return _internal_add_info();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::TowerHeroAtkInfo >&
+SCTowerHeroAtkInfo::info() const {
+  // @@protoc_insertion_point(field_list:JSBY.SCTowerHeroAtkInfo.Info)
+  return info_;
 }
 
 // -------------------------------------------------------------------
@@ -26665,22 +26621,22 @@ SCPoisonbombTypes::info() const {
 
 // CSDragonRelease
 
-// int32 Ratio = 1;
+// float Ratio = 1;
 inline void CSDragonRelease::clear_ratio() {
   ratio_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CSDragonRelease::_internal_ratio() const {
+inline float CSDragonRelease::_internal_ratio() const {
   return ratio_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CSDragonRelease::ratio() const {
+inline float CSDragonRelease::ratio() const {
   // @@protoc_insertion_point(field_get:JSBY.CSDragonRelease.Ratio)
   return _internal_ratio();
 }
-inline void CSDragonRelease::_internal_set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void CSDragonRelease::_internal_set_ratio(float value) {
   
   ratio_ = value;
 }
-inline void CSDragonRelease::set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void CSDragonRelease::set_ratio(float value) {
   _internal_set_ratio(value);
   // @@protoc_insertion_point(field_set:JSBY.CSDragonRelease.Ratio)
 }
@@ -27563,87 +27519,43 @@ inline void HeroMoney::set_money(::PROTOBUF_NAMESPACE_ID::int32 value) {
 
 // SCPushSyncHeroMoney
 
-// .JSBY.HeroMoney HeroMoney = 1;
-inline bool SCPushSyncHeroMoney::_internal_has_heromoney() const {
-  return this != internal_default_instance() && heromoney_ != nullptr;
+// repeated .JSBY.HeroMoney HeroMoney = 1;
+inline int SCPushSyncHeroMoney::_internal_heromoney_size() const {
+  return heromoney_.size();
 }
-inline bool SCPushSyncHeroMoney::has_heromoney() const {
-  return _internal_has_heromoney();
+inline int SCPushSyncHeroMoney::heromoney_size() const {
+  return _internal_heromoney_size();
 }
 inline void SCPushSyncHeroMoney::clear_heromoney() {
-  if (GetArena() == nullptr && heromoney_ != nullptr) {
-    delete heromoney_;
-  }
-  heromoney_ = nullptr;
+  heromoney_.Clear();
 }
-inline const ::JSBY::HeroMoney& SCPushSyncHeroMoney::_internal_heromoney() const {
-  const ::JSBY::HeroMoney* p = heromoney_;
-  return p != nullptr ? *p : reinterpret_cast<const ::JSBY::HeroMoney&>(
-      ::JSBY::_HeroMoney_default_instance_);
-}
-inline const ::JSBY::HeroMoney& SCPushSyncHeroMoney::heromoney() const {
-  // @@protoc_insertion_point(field_get:JSBY.SCPushSyncHeroMoney.HeroMoney)
-  return _internal_heromoney();
-}
-inline void SCPushSyncHeroMoney::unsafe_arena_set_allocated_heromoney(
-    ::JSBY::HeroMoney* heromoney) {
-  if (GetArena() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(heromoney_);
-  }
-  heromoney_ = heromoney;
-  if (heromoney) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:JSBY.SCPushSyncHeroMoney.HeroMoney)
-}
-inline ::JSBY::HeroMoney* SCPushSyncHeroMoney::release_heromoney() {
-  
-  ::JSBY::HeroMoney* temp = heromoney_;
-  heromoney_ = nullptr;
-  if (GetArena() != nullptr) {
-    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
-  }
-  return temp;
-}
-inline ::JSBY::HeroMoney* SCPushSyncHeroMoney::unsafe_arena_release_heromoney() {
-  // @@protoc_insertion_point(field_release:JSBY.SCPushSyncHeroMoney.HeroMoney)
-  
-  ::JSBY::HeroMoney* temp = heromoney_;
-  heromoney_ = nullptr;
-  return temp;
-}
-inline ::JSBY::HeroMoney* SCPushSyncHeroMoney::_internal_mutable_heromoney() {
-  
-  if (heromoney_ == nullptr) {
-    auto* p = CreateMaybeMessage<::JSBY::HeroMoney>(GetArena());
-    heromoney_ = p;
-  }
-  return heromoney_;
-}
-inline ::JSBY::HeroMoney* SCPushSyncHeroMoney::mutable_heromoney() {
+inline ::JSBY::HeroMoney* SCPushSyncHeroMoney::mutable_heromoney(int index) {
   // @@protoc_insertion_point(field_mutable:JSBY.SCPushSyncHeroMoney.HeroMoney)
-  return _internal_mutable_heromoney();
+  return heromoney_.Mutable(index);
 }
-inline void SCPushSyncHeroMoney::set_allocated_heromoney(::JSBY::HeroMoney* heromoney) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
-  if (message_arena == nullptr) {
-    delete heromoney_;
-  }
-  if (heromoney) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(heromoney);
-    if (message_arena != submessage_arena) {
-      heromoney = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, heromoney, submessage_arena);
-    }
-    
-  } else {
-    
-  }
-  heromoney_ = heromoney;
-  // @@protoc_insertion_point(field_set_allocated:JSBY.SCPushSyncHeroMoney.HeroMoney)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::HeroMoney >*
+SCPushSyncHeroMoney::mutable_heromoney() {
+  // @@protoc_insertion_point(field_mutable_list:JSBY.SCPushSyncHeroMoney.HeroMoney)
+  return &heromoney_;
+}
+inline const ::JSBY::HeroMoney& SCPushSyncHeroMoney::_internal_heromoney(int index) const {
+  return heromoney_.Get(index);
+}
+inline const ::JSBY::HeroMoney& SCPushSyncHeroMoney::heromoney(int index) const {
+  // @@protoc_insertion_point(field_get:JSBY.SCPushSyncHeroMoney.HeroMoney)
+  return _internal_heromoney(index);
+}
+inline ::JSBY::HeroMoney* SCPushSyncHeroMoney::_internal_add_heromoney() {
+  return heromoney_.Add();
+}
+inline ::JSBY::HeroMoney* SCPushSyncHeroMoney::add_heromoney() {
+  // @@protoc_insertion_point(field_add:JSBY.SCPushSyncHeroMoney.HeroMoney)
+  return _internal_add_heromoney();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::HeroMoney >&
+SCPushSyncHeroMoney::heromoney() const {
+  // @@protoc_insertion_point(field_list:JSBY.SCPushSyncHeroMoney.HeroMoney)
+  return heromoney_;
 }
 
 // -------------------------------------------------------------------

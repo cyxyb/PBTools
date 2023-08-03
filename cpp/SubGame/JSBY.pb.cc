@@ -3602,7 +3602,7 @@ const char descriptor_table_protodef_JSBY_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "leID\030\001 \001(\005\022\'\n\004Info\030\002 \003(\0132\031.JSBY.ChannelT"
   "owerMonster\":\n\022CSTowerHeroAtkInfo\022$\n\004Inf"
   "o\030\001 \003(\0132\026.JSBY.TowerHeroAtkInfo\":\n\022SCTow"
-  "erHeroAtkInfo\022$\n\004Info\030\001 \001(\0132\026.JSBY.Tower"
+  "erHeroAtkInfo\022$\n\004Info\030\001 \003(\0132\026.JSBY.Tower"
   "HeroAtkInfo\"E\n\021CSTowerUpdateHero\022!\n\004Info"
   "\030\001 \001(\0132\023.JSBY.TowerHeroInfo\022\r\n\005Leave\030\002 \001"
   "(\010\"%\n\021SCTowerUpdateHero\022\020\n\010UniqueId\030\001 \001("
@@ -3644,7 +3644,7 @@ const char descriptor_table_protodef_JSBY_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "lId\030\005 \001(\005\022\023\n\013ProcessTime\030\006 \001(\005\"7\n\021SCPois"
   "onbombTypes\022\"\n\004Info\030\001 \003(\0132\024.JSBY.Poisonb"
   "ombType\"1\n\017CSDragonRelease\022\r\n\005Ratio\030\001 \001("
-  "\005\022\017\n\007PropsID\030\002 \001(\005\"c\n\017SCDragonRelease\022\021\n"
+  "\002\022\017\n\007PropsID\030\002 \001(\005\"c\n\017SCDragonRelease\022\021\n"
   "\tStartTime\030\001 \001(\005\022\020\n\010PlayerId\030\002 \001(\005\022+\n\nAt"
   "tackInfo\030\003 \001(\0132\027.JSBY.SpecialAttackInfo\""
   "g\n\023SCPushDragonRelease\022\021\n\tStartTime\030\001 \001("
@@ -3666,7 +3666,7 @@ const char descriptor_table_protodef_JSBY_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "bleID\030\002 \001(\005\"+\n\032SCPushSelfGhostDragonStat"
   "e\022\r\n\005Count\030\001 \001(\005\">\n\tHeroMoney\022\020\n\010UniqueI"
   "d\030\001 \001(\005\022\020\n\010PlayerId\030\002 \001(\005\022\r\n\005Money\030\003 \001(\005"
-  "\"9\n\023SCPushSyncHeroMoney\022\"\n\tHeroMoney\030\001 \001"
+  "\"9\n\023SCPushSyncHeroMoney\022\"\n\tHeroMoney\030\001 \003"
   "(\0132\017.JSBY.HeroMoney\"8\n\021SCPushMonsterDead"
   "\022\022\n\nPositionID\030\001 \001(\005\022\017\n\007TableID\030\002 \001(\005\" \n"
   "\013CSDebugData\022\021\n\tDebugData\030\001 \001(\t\"\r\n\013SCDeb"
@@ -16016,33 +16016,24 @@ void CSTowerHeroAtkInfo::InternalSwap(CSTowerHeroAtkInfo* other) {
 
 class SCTowerHeroAtkInfo::_Internal {
  public:
-  static const ::JSBY::TowerHeroAtkInfo& info(const SCTowerHeroAtkInfo* msg);
 };
 
-const ::JSBY::TowerHeroAtkInfo&
-SCTowerHeroAtkInfo::_Internal::info(const SCTowerHeroAtkInfo* msg) {
-  return *msg->info_;
-}
 SCTowerHeroAtkInfo::SCTowerHeroAtkInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  info_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:JSBY.SCTowerHeroAtkInfo)
 }
 SCTowerHeroAtkInfo::SCTowerHeroAtkInfo(const SCTowerHeroAtkInfo& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      info_(from.info_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  if (from._internal_has_info()) {
-    info_ = new ::JSBY::TowerHeroAtkInfo(*from.info_);
-  } else {
-    info_ = nullptr;
-  }
   // @@protoc_insertion_point(copy_constructor:JSBY.SCTowerHeroAtkInfo)
 }
 
 void SCTowerHeroAtkInfo::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SCTowerHeroAtkInfo_JSBY_2eproto.base);
-  info_ = nullptr;
 }
 
 SCTowerHeroAtkInfo::~SCTowerHeroAtkInfo() {
@@ -16053,7 +16044,6 @@ SCTowerHeroAtkInfo::~SCTowerHeroAtkInfo() {
 
 void SCTowerHeroAtkInfo::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
-  if (this != internal_default_instance()) delete info_;
 }
 
 void SCTowerHeroAtkInfo::ArenaDtor(void* object) {
@@ -16077,10 +16067,7 @@ void SCTowerHeroAtkInfo::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && info_ != nullptr) {
-    delete info_;
-  }
-  info_ = nullptr;
+  info_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -16091,11 +16078,16 @@ const char* SCTowerHeroAtkInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // .JSBY.TowerHeroAtkInfo Info = 1;
+      // repeated .JSBY.TowerHeroAtkInfo Info = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ctx->ParseMessage(_internal_mutable_info(), ptr);
-          CHK_(ptr);
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_info(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -16126,12 +16118,12 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .JSBY.TowerHeroAtkInfo Info = 1;
-  if (this->has_info()) {
+  // repeated .JSBY.TowerHeroAtkInfo Info = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_info_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::info(this), target, stream);
+      InternalWriteMessage(1, this->_internal_info(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -16150,11 +16142,11 @@ size_t SCTowerHeroAtkInfo::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .JSBY.TowerHeroAtkInfo Info = 1;
-  if (this->has_info()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *info_);
+  // repeated .JSBY.TowerHeroAtkInfo Info = 1;
+  total_size += 1UL * this->_internal_info_size();
+  for (const auto& msg : this->info_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -16188,9 +16180,7 @@ void SCTowerHeroAtkInfo::MergeFrom(const SCTowerHeroAtkInfo& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_info()) {
-    _internal_mutable_info()->::JSBY::TowerHeroAtkInfo::MergeFrom(from._internal_info());
-  }
+  info_.MergeFrom(from.info_);
 }
 
 void SCTowerHeroAtkInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -16214,7 +16204,7 @@ bool SCTowerHeroAtkInfo::IsInitialized() const {
 void SCTowerHeroAtkInfo::InternalSwap(SCTowerHeroAtkInfo* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  swap(info_, other->info_);
+  info_.InternalSwap(&other->info_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SCTowerHeroAtkInfo::GetMetadata() const {
@@ -22056,11 +22046,11 @@ const char* CSDragonRelease::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // int32 Ratio = 1;
+      // float Ratio = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ratio_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 13)) {
+          ratio_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+          ptr += sizeof(float);
         } else goto handle_unusual;
         continue;
       // int32 PropsID = 2;
@@ -22098,10 +22088,10 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 Ratio = 1;
-  if (this->ratio() != 0) {
+  // float Ratio = 1;
+  if (!(this->ratio() <= 0 && this->ratio() >= 0)) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_ratio(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(1, this->_internal_ratio(), target);
   }
 
   // int32 PropsID = 2;
@@ -22126,11 +22116,9 @@ size_t CSDragonRelease::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // int32 Ratio = 1;
-  if (this->ratio() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_ratio());
+  // float Ratio = 1;
+  if (!(this->ratio() <= 0 && this->ratio() >= 0)) {
+    total_size += 1 + 4;
   }
 
   // int32 PropsID = 2;
@@ -22171,7 +22159,7 @@ void CSDragonRelease::MergeFrom(const CSDragonRelease& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.ratio() != 0) {
+  if (!(from.ratio() <= 0 && from.ratio() >= 0)) {
     _internal_set_ratio(from._internal_ratio());
   }
   if (from.propsid() != 0) {
@@ -24740,33 +24728,24 @@ void HeroMoney::InternalSwap(HeroMoney* other) {
 
 class SCPushSyncHeroMoney::_Internal {
  public:
-  static const ::JSBY::HeroMoney& heromoney(const SCPushSyncHeroMoney* msg);
 };
 
-const ::JSBY::HeroMoney&
-SCPushSyncHeroMoney::_Internal::heromoney(const SCPushSyncHeroMoney* msg) {
-  return *msg->heromoney_;
-}
 SCPushSyncHeroMoney::SCPushSyncHeroMoney(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  heromoney_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:JSBY.SCPushSyncHeroMoney)
 }
 SCPushSyncHeroMoney::SCPushSyncHeroMoney(const SCPushSyncHeroMoney& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      heromoney_(from.heromoney_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  if (from._internal_has_heromoney()) {
-    heromoney_ = new ::JSBY::HeroMoney(*from.heromoney_);
-  } else {
-    heromoney_ = nullptr;
-  }
   // @@protoc_insertion_point(copy_constructor:JSBY.SCPushSyncHeroMoney)
 }
 
 void SCPushSyncHeroMoney::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SCPushSyncHeroMoney_JSBY_2eproto.base);
-  heromoney_ = nullptr;
 }
 
 SCPushSyncHeroMoney::~SCPushSyncHeroMoney() {
@@ -24777,7 +24756,6 @@ SCPushSyncHeroMoney::~SCPushSyncHeroMoney() {
 
 void SCPushSyncHeroMoney::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
-  if (this != internal_default_instance()) delete heromoney_;
 }
 
 void SCPushSyncHeroMoney::ArenaDtor(void* object) {
@@ -24801,10 +24779,7 @@ void SCPushSyncHeroMoney::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && heromoney_ != nullptr) {
-    delete heromoney_;
-  }
-  heromoney_ = nullptr;
+  heromoney_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -24815,11 +24790,16 @@ const char* SCPushSyncHeroMoney::_InternalParse(const char* ptr, ::PROTOBUF_NAME
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // .JSBY.HeroMoney HeroMoney = 1;
+      // repeated .JSBY.HeroMoney HeroMoney = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ctx->ParseMessage(_internal_mutable_heromoney(), ptr);
-          CHK_(ptr);
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_heromoney(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -24850,12 +24830,12 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .JSBY.HeroMoney HeroMoney = 1;
-  if (this->has_heromoney()) {
+  // repeated .JSBY.HeroMoney HeroMoney = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_heromoney_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::heromoney(this), target, stream);
+      InternalWriteMessage(1, this->_internal_heromoney(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -24874,11 +24854,11 @@ size_t SCPushSyncHeroMoney::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .JSBY.HeroMoney HeroMoney = 1;
-  if (this->has_heromoney()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *heromoney_);
+  // repeated .JSBY.HeroMoney HeroMoney = 1;
+  total_size += 1UL * this->_internal_heromoney_size();
+  for (const auto& msg : this->heromoney_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -24912,9 +24892,7 @@ void SCPushSyncHeroMoney::MergeFrom(const SCPushSyncHeroMoney& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_heromoney()) {
-    _internal_mutable_heromoney()->::JSBY::HeroMoney::MergeFrom(from._internal_heromoney());
-  }
+  heromoney_.MergeFrom(from.heromoney_);
 }
 
 void SCPushSyncHeroMoney::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -24938,7 +24916,7 @@ bool SCPushSyncHeroMoney::IsInitialized() const {
 void SCPushSyncHeroMoney::InternalSwap(SCPushSyncHeroMoney* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  swap(heromoney_, other->heromoney_);
+  heromoney_.InternalSwap(&other->heromoney_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SCPushSyncHeroMoney::GetMetadata() const {

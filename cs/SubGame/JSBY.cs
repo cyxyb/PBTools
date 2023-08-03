@@ -110,7 +110,7 @@ namespace JSBY {
             "ZUlEGAEgASgFEicKBEluZm8YAiADKAsyGS5KU0JZLkNoYW5uZWxUb3dlck1v",
             "bnN0ZXIiOgoSQ1NUb3dlckhlcm9BdGtJbmZvEiQKBEluZm8YASADKAsyFi5K",
             "U0JZLlRvd2VySGVyb0F0a0luZm8iOgoSU0NUb3dlckhlcm9BdGtJbmZvEiQK",
-            "BEluZm8YASABKAsyFi5KU0JZLlRvd2VySGVyb0F0a0luZm8iRQoRQ1NUb3dl",
+            "BEluZm8YASADKAsyFi5KU0JZLlRvd2VySGVyb0F0a0luZm8iRQoRQ1NUb3dl",
             "clVwZGF0ZUhlcm8SIQoESW5mbxgBIAEoCzITLkpTQlkuVG93ZXJIZXJvSW5m",
             "bxINCgVMZWF2ZRgCIAEoCCIlChFTQ1Rvd2VyVXBkYXRlSGVybxIQCghVbmlx",
             "dWVJZBgBIAEoBSJeChVTQ1B1c2hUb3dlclVwZGF0ZUhlcm8SIQoESW5mbxgB",
@@ -146,7 +146,7 @@ namespace JSBY {
             "AiABKAUSFAoMUG9pc29uQm9tYklkGAMgASgFEhQKDEtpbGxQbGF5ZXJJZBgE",
             "IAEoBRIRCglDaGFubmVsSWQYBSABKAUSEwoLUHJvY2Vzc1RpbWUYBiABKAUi",
             "NwoRU0NQb2lzb25ib21iVHlwZXMSIgoESW5mbxgBIAMoCzIULkpTQlkuUG9p",
-            "c29uYm9tYlR5cGUiMQoPQ1NEcmFnb25SZWxlYXNlEg0KBVJhdGlvGAEgASgF",
+            "c29uYm9tYlR5cGUiMQoPQ1NEcmFnb25SZWxlYXNlEg0KBVJhdGlvGAEgASgC",
             "Eg8KB1Byb3BzSUQYAiABKAUiYwoPU0NEcmFnb25SZWxlYXNlEhEKCVN0YXJ0",
             "VGltZRgBIAEoBRIQCghQbGF5ZXJJZBgCIAEoBRIrCgpBdHRhY2tJbmZvGAMg",
             "ASgLMhcuSlNCWS5TcGVjaWFsQXR0YWNrSW5mbyJnChNTQ1B1c2hEcmFnb25S",
@@ -167,7 +167,7 @@ namespace JSBY {
             "AiABKAUiKwoaU0NQdXNoU2VsZkdob3N0RHJhZ29uU3RhdGUSDQoFQ291bnQY",
             "ASABKAUiPgoJSGVyb01vbmV5EhAKCFVuaXF1ZUlkGAEgASgFEhAKCFBsYXll",
             "cklkGAIgASgFEg0KBU1vbmV5GAMgASgFIjkKE1NDUHVzaFN5bmNIZXJvTW9u",
-            "ZXkSIgoJSGVyb01vbmV5GAEgASgLMg8uSlNCWS5IZXJvTW9uZXkiOAoRU0NQ",
+            "ZXkSIgoJSGVyb01vbmV5GAEgAygLMg8uSlNCWS5IZXJvTW9uZXkiOAoRU0NQ",
             "dXNoTW9uc3RlckRlYWQSEgoKUG9zaXRpb25JRBgBIAEoBRIPCgdUYWJsZUlE",
             "GAIgASgFIiAKC0NTRGVidWdEYXRhEhEKCURlYnVnRGF0YRgBIAEoCSINCgtT",
             "Q0RlYnVnRGF0YSJIChFTQ1B1c2hNb25zdGVyQnVmZhISCgpQb3NpdGlvbklE",
@@ -12025,7 +12025,7 @@ namespace JSBY {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SCTowerHeroAtkInfo(SCTowerHeroAtkInfo other) : this() {
-      info_ = other.info_ != null ? other.info_.Clone() : null;
+      info_ = other.info_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -12036,13 +12036,12 @@ namespace JSBY {
 
     /// <summary>Field number for the "Info" field.</summary>
     public const int InfoFieldNumber = 1;
-    private global::JSBY.TowerHeroAtkInfo info_;
+    private static readonly pb::FieldCodec<global::JSBY.TowerHeroAtkInfo> _repeated_info_codec
+        = pb::FieldCodec.ForMessage(10, global::JSBY.TowerHeroAtkInfo.Parser);
+    private readonly pbc::RepeatedField<global::JSBY.TowerHeroAtkInfo> info_ = new pbc::RepeatedField<global::JSBY.TowerHeroAtkInfo>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::JSBY.TowerHeroAtkInfo Info {
+    public pbc::RepeatedField<global::JSBY.TowerHeroAtkInfo> Info {
       get { return info_; }
-      set {
-        info_ = value;
-      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -12058,14 +12057,14 @@ namespace JSBY {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(Info, other.Info)) return false;
+      if(!info_.Equals(other.info_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (info_ != null) hash ^= Info.GetHashCode();
+      hash ^= info_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -12082,10 +12081,7 @@ namespace JSBY {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (info_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Info);
-      }
+      info_.WriteTo(output, _repeated_info_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -12095,10 +12091,7 @@ namespace JSBY {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (info_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Info);
-      }
+      info_.WriteTo(ref output, _repeated_info_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -12108,9 +12101,7 @@ namespace JSBY {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (info_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Info);
-      }
+      size += info_.CalculateSize(_repeated_info_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -12122,12 +12113,7 @@ namespace JSBY {
       if (other == null) {
         return;
       }
-      if (other.info_ != null) {
-        if (info_ == null) {
-          Info = new global::JSBY.TowerHeroAtkInfo();
-        }
-        Info.MergeFrom(other.Info);
-      }
+      info_.Add(other.info_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -12143,10 +12129,7 @@ namespace JSBY {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (info_ == null) {
-              Info = new global::JSBY.TowerHeroAtkInfo();
-            }
-            input.ReadMessage(Info);
+            info_.AddEntriesFrom(input, _repeated_info_codec);
             break;
           }
         }
@@ -12164,10 +12147,7 @@ namespace JSBY {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            if (info_ == null) {
-              Info = new global::JSBY.TowerHeroAtkInfo();
-            }
-            input.ReadMessage(Info);
+            info_.AddEntriesFrom(ref input, _repeated_info_codec);
             break;
           }
         }
@@ -17392,9 +17372,9 @@ namespace JSBY {
 
     /// <summary>Field number for the "Ratio" field.</summary>
     public const int RatioFieldNumber = 1;
-    private int ratio_;
+    private float ratio_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Ratio {
+    public float Ratio {
       get { return ratio_; }
       set {
         ratio_ = value;
@@ -17425,7 +17405,7 @@ namespace JSBY {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Ratio != other.Ratio) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Ratio, other.Ratio)) return false;
       if (PropsID != other.PropsID) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -17433,7 +17413,7 @@ namespace JSBY {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Ratio != 0) hash ^= Ratio.GetHashCode();
+      if (Ratio != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Ratio);
       if (PropsID != 0) hash ^= PropsID.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -17451,9 +17431,9 @@ namespace JSBY {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Ratio != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Ratio);
+      if (Ratio != 0F) {
+        output.WriteRawTag(13);
+        output.WriteFloat(Ratio);
       }
       if (PropsID != 0) {
         output.WriteRawTag(16);
@@ -17468,9 +17448,9 @@ namespace JSBY {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Ratio != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Ratio);
+      if (Ratio != 0F) {
+        output.WriteRawTag(13);
+        output.WriteFloat(Ratio);
       }
       if (PropsID != 0) {
         output.WriteRawTag(16);
@@ -17485,8 +17465,8 @@ namespace JSBY {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Ratio != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Ratio);
+      if (Ratio != 0F) {
+        size += 1 + 4;
       }
       if (PropsID != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(PropsID);
@@ -17502,7 +17482,7 @@ namespace JSBY {
       if (other == null) {
         return;
       }
-      if (other.Ratio != 0) {
+      if (other.Ratio != 0F) {
         Ratio = other.Ratio;
       }
       if (other.PropsID != 0) {
@@ -17522,8 +17502,8 @@ namespace JSBY {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            Ratio = input.ReadInt32();
+          case 13: {
+            Ratio = input.ReadFloat();
             break;
           }
           case 16: {
@@ -17544,8 +17524,8 @@ namespace JSBY {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            Ratio = input.ReadInt32();
+          case 13: {
+            Ratio = input.ReadFloat();
             break;
           }
           case 16: {
@@ -19952,7 +19932,7 @@ namespace JSBY {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SCPushSyncHeroMoney(SCPushSyncHeroMoney other) : this() {
-      heroMoney_ = other.heroMoney_ != null ? other.heroMoney_.Clone() : null;
+      heroMoney_ = other.heroMoney_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -19963,13 +19943,12 @@ namespace JSBY {
 
     /// <summary>Field number for the "HeroMoney" field.</summary>
     public const int HeroMoneyFieldNumber = 1;
-    private global::JSBY.HeroMoney heroMoney_;
+    private static readonly pb::FieldCodec<global::JSBY.HeroMoney> _repeated_heroMoney_codec
+        = pb::FieldCodec.ForMessage(10, global::JSBY.HeroMoney.Parser);
+    private readonly pbc::RepeatedField<global::JSBY.HeroMoney> heroMoney_ = new pbc::RepeatedField<global::JSBY.HeroMoney>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::JSBY.HeroMoney HeroMoney {
+    public pbc::RepeatedField<global::JSBY.HeroMoney> HeroMoney {
       get { return heroMoney_; }
-      set {
-        heroMoney_ = value;
-      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -19985,14 +19964,14 @@ namespace JSBY {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(HeroMoney, other.HeroMoney)) return false;
+      if(!heroMoney_.Equals(other.heroMoney_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (heroMoney_ != null) hash ^= HeroMoney.GetHashCode();
+      hash ^= heroMoney_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -20009,10 +19988,7 @@ namespace JSBY {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (heroMoney_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(HeroMoney);
-      }
+      heroMoney_.WriteTo(output, _repeated_heroMoney_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -20022,10 +19998,7 @@ namespace JSBY {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (heroMoney_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(HeroMoney);
-      }
+      heroMoney_.WriteTo(ref output, _repeated_heroMoney_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -20035,9 +20008,7 @@ namespace JSBY {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (heroMoney_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(HeroMoney);
-      }
+      size += heroMoney_.CalculateSize(_repeated_heroMoney_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -20049,12 +20020,7 @@ namespace JSBY {
       if (other == null) {
         return;
       }
-      if (other.heroMoney_ != null) {
-        if (heroMoney_ == null) {
-          HeroMoney = new global::JSBY.HeroMoney();
-        }
-        HeroMoney.MergeFrom(other.HeroMoney);
-      }
+      heroMoney_.Add(other.heroMoney_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -20070,10 +20036,7 @@ namespace JSBY {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (heroMoney_ == null) {
-              HeroMoney = new global::JSBY.HeroMoney();
-            }
-            input.ReadMessage(HeroMoney);
+            heroMoney_.AddEntriesFrom(input, _repeated_heroMoney_codec);
             break;
           }
         }
@@ -20091,10 +20054,7 @@ namespace JSBY {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            if (heroMoney_ == null) {
-              HeroMoney = new global::JSBY.HeroMoney();
-            }
-            input.ReadMessage(HeroMoney);
+            heroMoney_.AddEntriesFrom(ref input, _repeated_heroMoney_codec);
             break;
           }
         }
