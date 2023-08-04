@@ -140,7 +140,7 @@ namespace JSBY {
             "QlkuUG9pc29uQm9tYkxvY2F0aW9uIlAKEVBvaXNvbmJvbWJDb252ZXJ0EhEK",
             "CU1vbnN0ZXJJZBgBIAEoBRISCgpQb3NpdGlvbklkGAIgASgFEhQKDFBvaXNv",
             "bkJvbWJJZBgDIAEoBSJoChNTQ1BvaXNvbkJvbWJDb252ZXJ0EhQKDFBvaXNv",
-            "bkJvbWJJZBgBIAEoBRIlCgRJbmZvGAIgASgLMhcuSlNCWS5Qb2lzb25ib21i",
+            "bkJvbWJJZBgBIAEoBRIlCgRJbmZvGAIgAygLMhcuSlNCWS5Qb2lzb25ib21i",
             "Q29udmVydBIUCgxLaWxsUGxheWVySUQYAyABKAUikwEKDlBvaXNvbmJvbWJU",
             "eXBlEhEKCU1vbnN0ZXJJZBgBIAEoBRIaChJNYXN0ZXJQb2lzb25Cb21iSWQY",
             "AiABKAUSFAoMUG9pc29uQm9tYklkGAMgASgFEhQKDEtpbGxQbGF5ZXJJZBgE",
@@ -16595,7 +16595,7 @@ namespace JSBY {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SCPoisonBombConvert(SCPoisonBombConvert other) : this() {
       poisonBombId_ = other.poisonBombId_;
-      info_ = other.info_ != null ? other.info_.Clone() : null;
+      info_ = other.info_.Clone();
       killPlayerID_ = other.killPlayerID_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -16618,13 +16618,12 @@ namespace JSBY {
 
     /// <summary>Field number for the "Info" field.</summary>
     public const int InfoFieldNumber = 2;
-    private global::JSBY.PoisonbombConvert info_;
+    private static readonly pb::FieldCodec<global::JSBY.PoisonbombConvert> _repeated_info_codec
+        = pb::FieldCodec.ForMessage(18, global::JSBY.PoisonbombConvert.Parser);
+    private readonly pbc::RepeatedField<global::JSBY.PoisonbombConvert> info_ = new pbc::RepeatedField<global::JSBY.PoisonbombConvert>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::JSBY.PoisonbombConvert Info {
+    public pbc::RepeatedField<global::JSBY.PoisonbombConvert> Info {
       get { return info_; }
-      set {
-        info_ = value;
-      }
     }
 
     /// <summary>Field number for the "KillPlayerID" field.</summary>
@@ -16652,7 +16651,7 @@ namespace JSBY {
         return true;
       }
       if (PoisonBombId != other.PoisonBombId) return false;
-      if (!object.Equals(Info, other.Info)) return false;
+      if(!info_.Equals(other.info_)) return false;
       if (KillPlayerID != other.KillPlayerID) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -16661,7 +16660,7 @@ namespace JSBY {
     public override int GetHashCode() {
       int hash = 1;
       if (PoisonBombId != 0) hash ^= PoisonBombId.GetHashCode();
-      if (info_ != null) hash ^= Info.GetHashCode();
+      hash ^= info_.GetHashCode();
       if (KillPlayerID != 0) hash ^= KillPlayerID.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -16683,10 +16682,7 @@ namespace JSBY {
         output.WriteRawTag(8);
         output.WriteInt32(PoisonBombId);
       }
-      if (info_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Info);
-      }
+      info_.WriteTo(output, _repeated_info_codec);
       if (KillPlayerID != 0) {
         output.WriteRawTag(24);
         output.WriteInt32(KillPlayerID);
@@ -16704,10 +16700,7 @@ namespace JSBY {
         output.WriteRawTag(8);
         output.WriteInt32(PoisonBombId);
       }
-      if (info_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(Info);
-      }
+      info_.WriteTo(ref output, _repeated_info_codec);
       if (KillPlayerID != 0) {
         output.WriteRawTag(24);
         output.WriteInt32(KillPlayerID);
@@ -16724,9 +16717,7 @@ namespace JSBY {
       if (PoisonBombId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(PoisonBombId);
       }
-      if (info_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Info);
-      }
+      size += info_.CalculateSize(_repeated_info_codec);
       if (KillPlayerID != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(KillPlayerID);
       }
@@ -16744,12 +16735,7 @@ namespace JSBY {
       if (other.PoisonBombId != 0) {
         PoisonBombId = other.PoisonBombId;
       }
-      if (other.info_ != null) {
-        if (info_ == null) {
-          Info = new global::JSBY.PoisonbombConvert();
-        }
-        Info.MergeFrom(other.Info);
-      }
+      info_.Add(other.info_);
       if (other.KillPlayerID != 0) {
         KillPlayerID = other.KillPlayerID;
       }
@@ -16772,10 +16758,7 @@ namespace JSBY {
             break;
           }
           case 18: {
-            if (info_ == null) {
-              Info = new global::JSBY.PoisonbombConvert();
-            }
-            input.ReadMessage(Info);
+            info_.AddEntriesFrom(input, _repeated_info_codec);
             break;
           }
           case 24: {
@@ -16801,10 +16784,7 @@ namespace JSBY {
             break;
           }
           case 18: {
-            if (info_ == null) {
-              Info = new global::JSBY.PoisonbombConvert();
-            }
-            input.ReadMessage(Info);
+            info_.AddEntriesFrom(ref input, _repeated_info_codec);
             break;
           }
           case 24: {

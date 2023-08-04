@@ -12156,23 +12156,23 @@ class SCPoisonBombConvert PROTOBUF_FINAL :
     kPoisonBombIdFieldNumber = 1,
     kKillPlayerIDFieldNumber = 3,
   };
-  // .JSBY.PoisonbombConvert Info = 2;
-  bool has_info() const;
+  // repeated .JSBY.PoisonbombConvert Info = 2;
+  int info_size() const;
   private:
-  bool _internal_has_info() const;
+  int _internal_info_size() const;
   public:
   void clear_info();
-  const ::JSBY::PoisonbombConvert& info() const;
-  ::JSBY::PoisonbombConvert* release_info();
-  ::JSBY::PoisonbombConvert* mutable_info();
-  void set_allocated_info(::JSBY::PoisonbombConvert* info);
+  ::JSBY::PoisonbombConvert* mutable_info(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::PoisonbombConvert >*
+      mutable_info();
   private:
-  const ::JSBY::PoisonbombConvert& _internal_info() const;
-  ::JSBY::PoisonbombConvert* _internal_mutable_info();
+  const ::JSBY::PoisonbombConvert& _internal_info(int index) const;
+  ::JSBY::PoisonbombConvert* _internal_add_info();
   public:
-  void unsafe_arena_set_allocated_info(
-      ::JSBY::PoisonbombConvert* info);
-  ::JSBY::PoisonbombConvert* unsafe_arena_release_info();
+  const ::JSBY::PoisonbombConvert& info(int index) const;
+  ::JSBY::PoisonbombConvert* add_info();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::PoisonbombConvert >&
+      info() const;
 
   // int32 PoisonBombId = 1;
   void clear_poisonbombid();
@@ -12199,7 +12199,7 @@ class SCPoisonBombConvert PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::JSBY::PoisonbombConvert* info_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::PoisonbombConvert > info_;
   ::PROTOBUF_NAMESPACE_ID::int32 poisonbombid_;
   ::PROTOBUF_NAMESPACE_ID::int32 killplayerid_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
@@ -26347,87 +26347,43 @@ inline void SCPoisonBombConvert::set_poisonbombid(::PROTOBUF_NAMESPACE_ID::int32
   // @@protoc_insertion_point(field_set:JSBY.SCPoisonBombConvert.PoisonBombId)
 }
 
-// .JSBY.PoisonbombConvert Info = 2;
-inline bool SCPoisonBombConvert::_internal_has_info() const {
-  return this != internal_default_instance() && info_ != nullptr;
+// repeated .JSBY.PoisonbombConvert Info = 2;
+inline int SCPoisonBombConvert::_internal_info_size() const {
+  return info_.size();
 }
-inline bool SCPoisonBombConvert::has_info() const {
-  return _internal_has_info();
+inline int SCPoisonBombConvert::info_size() const {
+  return _internal_info_size();
 }
 inline void SCPoisonBombConvert::clear_info() {
-  if (GetArena() == nullptr && info_ != nullptr) {
-    delete info_;
-  }
-  info_ = nullptr;
+  info_.Clear();
 }
-inline const ::JSBY::PoisonbombConvert& SCPoisonBombConvert::_internal_info() const {
-  const ::JSBY::PoisonbombConvert* p = info_;
-  return p != nullptr ? *p : reinterpret_cast<const ::JSBY::PoisonbombConvert&>(
-      ::JSBY::_PoisonbombConvert_default_instance_);
-}
-inline const ::JSBY::PoisonbombConvert& SCPoisonBombConvert::info() const {
-  // @@protoc_insertion_point(field_get:JSBY.SCPoisonBombConvert.Info)
-  return _internal_info();
-}
-inline void SCPoisonBombConvert::unsafe_arena_set_allocated_info(
-    ::JSBY::PoisonbombConvert* info) {
-  if (GetArena() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(info_);
-  }
-  info_ = info;
-  if (info) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:JSBY.SCPoisonBombConvert.Info)
-}
-inline ::JSBY::PoisonbombConvert* SCPoisonBombConvert::release_info() {
-  
-  ::JSBY::PoisonbombConvert* temp = info_;
-  info_ = nullptr;
-  if (GetArena() != nullptr) {
-    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
-  }
-  return temp;
-}
-inline ::JSBY::PoisonbombConvert* SCPoisonBombConvert::unsafe_arena_release_info() {
-  // @@protoc_insertion_point(field_release:JSBY.SCPoisonBombConvert.Info)
-  
-  ::JSBY::PoisonbombConvert* temp = info_;
-  info_ = nullptr;
-  return temp;
-}
-inline ::JSBY::PoisonbombConvert* SCPoisonBombConvert::_internal_mutable_info() {
-  
-  if (info_ == nullptr) {
-    auto* p = CreateMaybeMessage<::JSBY::PoisonbombConvert>(GetArena());
-    info_ = p;
-  }
-  return info_;
-}
-inline ::JSBY::PoisonbombConvert* SCPoisonBombConvert::mutable_info() {
+inline ::JSBY::PoisonbombConvert* SCPoisonBombConvert::mutable_info(int index) {
   // @@protoc_insertion_point(field_mutable:JSBY.SCPoisonBombConvert.Info)
-  return _internal_mutable_info();
+  return info_.Mutable(index);
 }
-inline void SCPoisonBombConvert::set_allocated_info(::JSBY::PoisonbombConvert* info) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
-  if (message_arena == nullptr) {
-    delete info_;
-  }
-  if (info) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(info);
-    if (message_arena != submessage_arena) {
-      info = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, info, submessage_arena);
-    }
-    
-  } else {
-    
-  }
-  info_ = info;
-  // @@protoc_insertion_point(field_set_allocated:JSBY.SCPoisonBombConvert.Info)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::PoisonbombConvert >*
+SCPoisonBombConvert::mutable_info() {
+  // @@protoc_insertion_point(field_mutable_list:JSBY.SCPoisonBombConvert.Info)
+  return &info_;
+}
+inline const ::JSBY::PoisonbombConvert& SCPoisonBombConvert::_internal_info(int index) const {
+  return info_.Get(index);
+}
+inline const ::JSBY::PoisonbombConvert& SCPoisonBombConvert::info(int index) const {
+  // @@protoc_insertion_point(field_get:JSBY.SCPoisonBombConvert.Info)
+  return _internal_info(index);
+}
+inline ::JSBY::PoisonbombConvert* SCPoisonBombConvert::_internal_add_info() {
+  return info_.Add();
+}
+inline ::JSBY::PoisonbombConvert* SCPoisonBombConvert::add_info() {
+  // @@protoc_insertion_point(field_add:JSBY.SCPoisonBombConvert.Info)
+  return _internal_add_info();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::PoisonbombConvert >&
+SCPoisonBombConvert::info() const {
+  // @@protoc_insertion_point(field_list:JSBY.SCPoisonBombConvert.Info)
+  return info_;
 }
 
 // int32 KillPlayerID = 3;

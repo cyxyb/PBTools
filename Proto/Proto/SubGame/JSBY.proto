@@ -660,7 +660,7 @@ message PoisonbombConvert
 message SCPoisonBombConvert
 {
 	 int32 PoisonBombId = 1;
-	 PoisonbombConvert Info = 2;
+	 repeated PoisonbombConvert Info = 2;
 	 int32 KillPlayerID = 3;
 }
 message PoisonbombType

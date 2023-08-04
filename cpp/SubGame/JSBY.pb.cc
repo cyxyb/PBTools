@@ -3636,7 +3636,7 @@ const char descriptor_table_protodef_JSBY_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "BombLocation\"P\n\021PoisonbombConvert\022\021\n\tMon"
   "sterId\030\001 \001(\005\022\022\n\nPositionId\030\002 \001(\005\022\024\n\014Pois"
   "onBombId\030\003 \001(\005\"h\n\023SCPoisonBombConvert\022\024\n"
-  "\014PoisonBombId\030\001 \001(\005\022%\n\004Info\030\002 \001(\0132\027.JSBY"
+  "\014PoisonBombId\030\001 \001(\005\022%\n\004Info\030\002 \003(\0132\027.JSBY"
   ".PoisonbombConvert\022\024\n\014KillPlayerID\030\003 \001(\005"
   "\"\223\001\n\016PoisonbombType\022\021\n\tMonsterId\030\001 \001(\005\022\032"
   "\n\022MasterPoisonBombId\030\002 \001(\005\022\024\n\014PoisonBomb"
@@ -21187,27 +21187,19 @@ void PoisonbombConvert::InternalSwap(PoisonbombConvert* other) {
 
 class SCPoisonBombConvert::_Internal {
  public:
-  static const ::JSBY::PoisonbombConvert& info(const SCPoisonBombConvert* msg);
 };
 
-const ::JSBY::PoisonbombConvert&
-SCPoisonBombConvert::_Internal::info(const SCPoisonBombConvert* msg) {
-  return *msg->info_;
-}
 SCPoisonBombConvert::SCPoisonBombConvert(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  info_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:JSBY.SCPoisonBombConvert)
 }
 SCPoisonBombConvert::SCPoisonBombConvert(const SCPoisonBombConvert& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      info_(from.info_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  if (from._internal_has_info()) {
-    info_ = new ::JSBY::PoisonbombConvert(*from.info_);
-  } else {
-    info_ = nullptr;
-  }
   ::memcpy(&poisonbombid_, &from.poisonbombid_,
     static_cast<size_t>(reinterpret_cast<char*>(&killplayerid_) -
     reinterpret_cast<char*>(&poisonbombid_)) + sizeof(killplayerid_));
@@ -21217,9 +21209,9 @@ SCPoisonBombConvert::SCPoisonBombConvert(const SCPoisonBombConvert& from)
 void SCPoisonBombConvert::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SCPoisonBombConvert_JSBY_2eproto.base);
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&info_) - reinterpret_cast<char*>(this)),
+      reinterpret_cast<char*>(&poisonbombid_) - reinterpret_cast<char*>(this)),
       0, static_cast<size_t>(reinterpret_cast<char*>(&killplayerid_) -
-      reinterpret_cast<char*>(&info_)) + sizeof(killplayerid_));
+      reinterpret_cast<char*>(&poisonbombid_)) + sizeof(killplayerid_));
 }
 
 SCPoisonBombConvert::~SCPoisonBombConvert() {
@@ -21230,7 +21222,6 @@ SCPoisonBombConvert::~SCPoisonBombConvert() {
 
 void SCPoisonBombConvert::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
-  if (this != internal_default_instance()) delete info_;
 }
 
 void SCPoisonBombConvert::ArenaDtor(void* object) {
@@ -21254,10 +21245,7 @@ void SCPoisonBombConvert::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && info_ != nullptr) {
-    delete info_;
-  }
-  info_ = nullptr;
+  info_.Clear();
   ::memset(&poisonbombid_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&killplayerid_) -
       reinterpret_cast<char*>(&poisonbombid_)) + sizeof(killplayerid_));
@@ -21278,11 +21266,16 @@ const char* SCPoisonBombConvert::_InternalParse(const char* ptr, ::PROTOBUF_NAME
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .JSBY.PoisonbombConvert Info = 2;
+      // repeated .JSBY.PoisonbombConvert Info = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ctx->ParseMessage(_internal_mutable_info(), ptr);
-          CHK_(ptr);
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_info(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
         } else goto handle_unusual;
         continue;
       // int32 KillPlayerID = 3;
@@ -21326,12 +21319,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_poisonbombid(), target);
   }
 
-  // .JSBY.PoisonbombConvert Info = 2;
-  if (this->has_info()) {
+  // repeated .JSBY.PoisonbombConvert Info = 2;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_info_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::info(this), target, stream);
+      InternalWriteMessage(2, this->_internal_info(i), target, stream);
   }
 
   // int32 KillPlayerID = 3;
@@ -21356,11 +21349,11 @@ size_t SCPoisonBombConvert::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .JSBY.PoisonbombConvert Info = 2;
-  if (this->has_info()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *info_);
+  // repeated .JSBY.PoisonbombConvert Info = 2;
+  total_size += 1UL * this->_internal_info_size();
+  for (const auto& msg : this->info_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // int32 PoisonBombId = 1;
@@ -21408,9 +21401,7 @@ void SCPoisonBombConvert::MergeFrom(const SCPoisonBombConvert& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_info()) {
-    _internal_mutable_info()->::JSBY::PoisonbombConvert::MergeFrom(from._internal_info());
-  }
+  info_.MergeFrom(from.info_);
   if (from.poisonbombid() != 0) {
     _internal_set_poisonbombid(from._internal_poisonbombid());
   }
@@ -21440,12 +21431,13 @@ bool SCPoisonBombConvert::IsInitialized() const {
 void SCPoisonBombConvert::InternalSwap(SCPoisonBombConvert* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  info_.InternalSwap(&other->info_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(SCPoisonBombConvert, killplayerid_)
       + sizeof(SCPoisonBombConvert::killplayerid_)
-      - PROTOBUF_FIELD_OFFSET(SCPoisonBombConvert, info_)>(
-          reinterpret_cast<char*>(&info_),
-          reinterpret_cast<char*>(&other->info_));
+      - PROTOBUF_FIELD_OFFSET(SCPoisonBombConvert, poisonbombid_)>(
+          reinterpret_cast<char*>(&poisonbombid_),
+          reinterpret_cast<char*>(&other->poisonbombid_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SCPoisonBombConvert::GetMetadata() const {
