@@ -3688,7 +3688,7 @@ const char descriptor_table_protodef_JSBY_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "ame\030\002 \001(\t\022\r\n\005Value\030\003 \001(\005\022\024\n\014CurrencyType"
   "\030\004 \001(\005\022\r\n\005Price\030\005 \001(\005\022\013\n\003Num\030\006 \001(\005\"5\n\rCS"
   "GetShopInfo\022$\n\014ShopInfoType\030\001 \001(\0162\016.JSBY"
-  ".ShopType\"-\n\rSCGetShopInfo\022\034\n\004Info\030\001 \001(\013"
+  ".ShopType\"-\n\rSCGetShopInfo\022\034\n\004Info\030\001 \003(\013"
   "2\016.JSBY.ShopInfo\">\n\tPropsInfo\022\017\n\007PropsID"
   "\030\001 \001(\005\022\020\n\010TotalNum\030\002 \001(\005\022\016\n\006AddNum\030\003 \001(\005"
   "\"0\n\017SCPushPropsInfo\022\035\n\004Info\030\001 \003(\0132\017.JSBY"
@@ -28380,33 +28380,24 @@ void CSGetShopInfo::InternalSwap(CSGetShopInfo* other) {
 
 class SCGetShopInfo::_Internal {
  public:
-  static const ::JSBY::ShopInfo& info(const SCGetShopInfo* msg);
 };
 
-const ::JSBY::ShopInfo&
-SCGetShopInfo::_Internal::info(const SCGetShopInfo* msg) {
-  return *msg->info_;
-}
 SCGetShopInfo::SCGetShopInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  info_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:JSBY.SCGetShopInfo)
 }
 SCGetShopInfo::SCGetShopInfo(const SCGetShopInfo& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      info_(from.info_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  if (from._internal_has_info()) {
-    info_ = new ::JSBY::ShopInfo(*from.info_);
-  } else {
-    info_ = nullptr;
-  }
   // @@protoc_insertion_point(copy_constructor:JSBY.SCGetShopInfo)
 }
 
 void SCGetShopInfo::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SCGetShopInfo_JSBY_2eproto.base);
-  info_ = nullptr;
 }
 
 SCGetShopInfo::~SCGetShopInfo() {
@@ -28417,7 +28408,6 @@ SCGetShopInfo::~SCGetShopInfo() {
 
 void SCGetShopInfo::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
-  if (this != internal_default_instance()) delete info_;
 }
 
 void SCGetShopInfo::ArenaDtor(void* object) {
@@ -28441,10 +28431,7 @@ void SCGetShopInfo::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && info_ != nullptr) {
-    delete info_;
-  }
-  info_ = nullptr;
+  info_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -28455,11 +28442,16 @@ const char* SCGetShopInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // .JSBY.ShopInfo Info = 1;
+      // repeated .JSBY.ShopInfo Info = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ctx->ParseMessage(_internal_mutable_info(), ptr);
-          CHK_(ptr);
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_info(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -28490,12 +28482,12 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .JSBY.ShopInfo Info = 1;
-  if (this->has_info()) {
+  // repeated .JSBY.ShopInfo Info = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_info_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::info(this), target, stream);
+      InternalWriteMessage(1, this->_internal_info(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -28514,11 +28506,11 @@ size_t SCGetShopInfo::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .JSBY.ShopInfo Info = 1;
-  if (this->has_info()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *info_);
+  // repeated .JSBY.ShopInfo Info = 1;
+  total_size += 1UL * this->_internal_info_size();
+  for (const auto& msg : this->info_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -28552,9 +28544,7 @@ void SCGetShopInfo::MergeFrom(const SCGetShopInfo& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_info()) {
-    _internal_mutable_info()->::JSBY::ShopInfo::MergeFrom(from._internal_info());
-  }
+  info_.MergeFrom(from.info_);
 }
 
 void SCGetShopInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -28578,7 +28568,7 @@ bool SCGetShopInfo::IsInitialized() const {
 void SCGetShopInfo::InternalSwap(SCGetShopInfo* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  swap(info_, other->info_);
+  info_.InternalSwap(&other->info_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SCGetShopInfo::GetMetadata() const {

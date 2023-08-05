@@ -819,7 +819,7 @@ message CSGetShopInfo
 }
 message SCGetShopInfo
 {
-	 ShopInfo Info = 1;
+	 repeated ShopInfo Info = 1;
 }
 message PropsInfo
 {

@@ -16896,23 +16896,23 @@ class SCGetShopInfo PROTOBUF_FINAL :
   enum : int {
     kInfoFieldNumber = 1,
   };
-  // .JSBY.ShopInfo Info = 1;
-  bool has_info() const;
+  // repeated .JSBY.ShopInfo Info = 1;
+  int info_size() const;
   private:
-  bool _internal_has_info() const;
+  int _internal_info_size() const;
   public:
   void clear_info();
-  const ::JSBY::ShopInfo& info() const;
-  ::JSBY::ShopInfo* release_info();
-  ::JSBY::ShopInfo* mutable_info();
-  void set_allocated_info(::JSBY::ShopInfo* info);
+  ::JSBY::ShopInfo* mutable_info(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::ShopInfo >*
+      mutable_info();
   private:
-  const ::JSBY::ShopInfo& _internal_info() const;
-  ::JSBY::ShopInfo* _internal_mutable_info();
+  const ::JSBY::ShopInfo& _internal_info(int index) const;
+  ::JSBY::ShopInfo* _internal_add_info();
   public:
-  void unsafe_arena_set_allocated_info(
-      ::JSBY::ShopInfo* info);
-  ::JSBY::ShopInfo* unsafe_arena_release_info();
+  const ::JSBY::ShopInfo& info(int index) const;
+  ::JSBY::ShopInfo* add_info();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::ShopInfo >&
+      info() const;
 
   // @@protoc_insertion_point(class_scope:JSBY.SCGetShopInfo)
  private:
@@ -16921,7 +16921,7 @@ class SCGetShopInfo PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::JSBY::ShopInfo* info_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::ShopInfo > info_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_JSBY_2eproto;
 };
@@ -28392,87 +28392,43 @@ inline void CSGetShopInfo::set_shopinfotype(::JSBY::ShopType value) {
 
 // SCGetShopInfo
 
-// .JSBY.ShopInfo Info = 1;
-inline bool SCGetShopInfo::_internal_has_info() const {
-  return this != internal_default_instance() && info_ != nullptr;
+// repeated .JSBY.ShopInfo Info = 1;
+inline int SCGetShopInfo::_internal_info_size() const {
+  return info_.size();
 }
-inline bool SCGetShopInfo::has_info() const {
-  return _internal_has_info();
+inline int SCGetShopInfo::info_size() const {
+  return _internal_info_size();
 }
 inline void SCGetShopInfo::clear_info() {
-  if (GetArena() == nullptr && info_ != nullptr) {
-    delete info_;
-  }
-  info_ = nullptr;
+  info_.Clear();
 }
-inline const ::JSBY::ShopInfo& SCGetShopInfo::_internal_info() const {
-  const ::JSBY::ShopInfo* p = info_;
-  return p != nullptr ? *p : reinterpret_cast<const ::JSBY::ShopInfo&>(
-      ::JSBY::_ShopInfo_default_instance_);
-}
-inline const ::JSBY::ShopInfo& SCGetShopInfo::info() const {
-  // @@protoc_insertion_point(field_get:JSBY.SCGetShopInfo.Info)
-  return _internal_info();
-}
-inline void SCGetShopInfo::unsafe_arena_set_allocated_info(
-    ::JSBY::ShopInfo* info) {
-  if (GetArena() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(info_);
-  }
-  info_ = info;
-  if (info) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:JSBY.SCGetShopInfo.Info)
-}
-inline ::JSBY::ShopInfo* SCGetShopInfo::release_info() {
-  
-  ::JSBY::ShopInfo* temp = info_;
-  info_ = nullptr;
-  if (GetArena() != nullptr) {
-    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
-  }
-  return temp;
-}
-inline ::JSBY::ShopInfo* SCGetShopInfo::unsafe_arena_release_info() {
-  // @@protoc_insertion_point(field_release:JSBY.SCGetShopInfo.Info)
-  
-  ::JSBY::ShopInfo* temp = info_;
-  info_ = nullptr;
-  return temp;
-}
-inline ::JSBY::ShopInfo* SCGetShopInfo::_internal_mutable_info() {
-  
-  if (info_ == nullptr) {
-    auto* p = CreateMaybeMessage<::JSBY::ShopInfo>(GetArena());
-    info_ = p;
-  }
-  return info_;
-}
-inline ::JSBY::ShopInfo* SCGetShopInfo::mutable_info() {
+inline ::JSBY::ShopInfo* SCGetShopInfo::mutable_info(int index) {
   // @@protoc_insertion_point(field_mutable:JSBY.SCGetShopInfo.Info)
-  return _internal_mutable_info();
+  return info_.Mutable(index);
 }
-inline void SCGetShopInfo::set_allocated_info(::JSBY::ShopInfo* info) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
-  if (message_arena == nullptr) {
-    delete info_;
-  }
-  if (info) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(info);
-    if (message_arena != submessage_arena) {
-      info = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, info, submessage_arena);
-    }
-    
-  } else {
-    
-  }
-  info_ = info;
-  // @@protoc_insertion_point(field_set_allocated:JSBY.SCGetShopInfo.Info)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::ShopInfo >*
+SCGetShopInfo::mutable_info() {
+  // @@protoc_insertion_point(field_mutable_list:JSBY.SCGetShopInfo.Info)
+  return &info_;
+}
+inline const ::JSBY::ShopInfo& SCGetShopInfo::_internal_info(int index) const {
+  return info_.Get(index);
+}
+inline const ::JSBY::ShopInfo& SCGetShopInfo::info(int index) const {
+  // @@protoc_insertion_point(field_get:JSBY.SCGetShopInfo.Info)
+  return _internal_info(index);
+}
+inline ::JSBY::ShopInfo* SCGetShopInfo::_internal_add_info() {
+  return info_.Add();
+}
+inline ::JSBY::ShopInfo* SCGetShopInfo::add_info() {
+  // @@protoc_insertion_point(field_add:JSBY.SCGetShopInfo.Info)
+  return _internal_add_info();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::ShopInfo >&
+SCGetShopInfo::info() const {
+  // @@protoc_insertion_point(field_list:JSBY.SCGetShopInfo.Info)
+  return info_;
 }
 
 // -------------------------------------------------------------------

@@ -186,7 +186,7 @@ namespace JSBY {
             "CgZTaG9wSUQYASABKAUSDAoETmFtZRgCIAEoCRINCgVWYWx1ZRgDIAEoBRIU",
             "CgxDdXJyZW5jeVR5cGUYBCABKAUSDQoFUHJpY2UYBSABKAUSCwoDTnVtGAYg",
             "ASgFIjUKDUNTR2V0U2hvcEluZm8SJAoMU2hvcEluZm9UeXBlGAEgASgOMg4u",
-            "SlNCWS5TaG9wVHlwZSItCg1TQ0dldFNob3BJbmZvEhwKBEluZm8YASABKAsy",
+            "SlNCWS5TaG9wVHlwZSItCg1TQ0dldFNob3BJbmZvEhwKBEluZm8YASADKAsy",
             "Di5KU0JZLlNob3BJbmZvIj4KCVByb3BzSW5mbxIPCgdQcm9wc0lEGAEgASgF",
             "EhAKCFRvdGFsTnVtGAIgASgFEg4KBkFkZE51bRgDIAEoBSIwCg9TQ1B1c2hQ",
             "cm9wc0luZm8SHQoESW5mbxgBIAMoCzIPLkpTQlkuUHJvcHNJbmZvIhQKEkNT",
@@ -23201,7 +23201,7 @@ namespace JSBY {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SCGetShopInfo(SCGetShopInfo other) : this() {
-      info_ = other.info_ != null ? other.info_.Clone() : null;
+      info_ = other.info_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -23212,13 +23212,12 @@ namespace JSBY {
 
     /// <summary>Field number for the "Info" field.</summary>
     public const int InfoFieldNumber = 1;
-    private global::JSBY.ShopInfo info_;
+    private static readonly pb::FieldCodec<global::JSBY.ShopInfo> _repeated_info_codec
+        = pb::FieldCodec.ForMessage(10, global::JSBY.ShopInfo.Parser);
+    private readonly pbc::RepeatedField<global::JSBY.ShopInfo> info_ = new pbc::RepeatedField<global::JSBY.ShopInfo>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::JSBY.ShopInfo Info {
+    public pbc::RepeatedField<global::JSBY.ShopInfo> Info {
       get { return info_; }
-      set {
-        info_ = value;
-      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -23234,14 +23233,14 @@ namespace JSBY {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(Info, other.Info)) return false;
+      if(!info_.Equals(other.info_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (info_ != null) hash ^= Info.GetHashCode();
+      hash ^= info_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -23258,10 +23257,7 @@ namespace JSBY {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (info_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Info);
-      }
+      info_.WriteTo(output, _repeated_info_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -23271,10 +23267,7 @@ namespace JSBY {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (info_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Info);
-      }
+      info_.WriteTo(ref output, _repeated_info_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -23284,9 +23277,7 @@ namespace JSBY {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (info_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Info);
-      }
+      size += info_.CalculateSize(_repeated_info_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -23298,12 +23289,7 @@ namespace JSBY {
       if (other == null) {
         return;
       }
-      if (other.info_ != null) {
-        if (info_ == null) {
-          Info = new global::JSBY.ShopInfo();
-        }
-        Info.MergeFrom(other.Info);
-      }
+      info_.Add(other.info_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -23319,10 +23305,7 @@ namespace JSBY {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (info_ == null) {
-              Info = new global::JSBY.ShopInfo();
-            }
-            input.ReadMessage(Info);
+            info_.AddEntriesFrom(input, _repeated_info_codec);
             break;
           }
         }
@@ -23340,10 +23323,7 @@ namespace JSBY {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            if (info_ == null) {
-              Info = new global::JSBY.ShopInfo();
-            }
-            input.ReadMessage(Info);
+            info_.AddEntriesFrom(ref input, _repeated_info_codec);
             break;
           }
         }
