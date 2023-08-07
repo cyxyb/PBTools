@@ -22,44 +22,44 @@ enum EMsgIDLogin
 	MsgIDLogin_Login					= 1;		//玩家登录(MsgPlayerLogin)
 	MsgIDLogin_LoginResp				= 2;		//玩家登录返回(MsgPlayerLoginResp)
 	MsgIDLogin_ModifyNickName			= 3;		//修改玩家昵称(MsgCommonStr)
-	MsgIDLogin_ModifyNickNameResp		= 4;		//修改玩家昵称返回
+	MsgIDLogin_ModifyNickNameResp		= 4;		//修改玩家昵称返回(MsgCommonN32)
 	MsgIDLogin_ModifyHead				= 5;		//修改玩家头像(MsgCommonStr)
-	MsgIDLogin_ModifyHeadResp			= 6;		//修改玩家头像返回
+	MsgIDLogin_ModifyHeadResp			= 6;		//修改玩家头像返回(MsgCommonN32)
 	MsgIDLogin_ModifyPassword			= 7;		//修改玩家登录密码(MsgModifyPassword)
-	MsgIDLogin_ModifyPasswordResp		= 8;		//修改玩家登录密码返回
+	MsgIDLogin_ModifyPasswordResp		= 8;		//修改玩家登录密码返回(MsgCommonN32)
 	MsgIDLogin_BindPhone				= 9;		//绑定手机(MsgBindPhone)
-	MsgIDLogin_BindPhoneResp			= 10;		//绑定手机返回
+	MsgIDLogin_BindPhoneResp			= 10;		//绑定手机返回(MsgCommonN32)
 	MsgIDLogin_ReadMail					= 11;		//读取邮件(MsgCommonN32)
 	MsgIDLogin_PickMail					= 12;		//领取邮件(MsgCommonN32)
 	MsgIDLogin_PickMailResp				= 13;		//领取邮件返回
 	MsgIDLogin_RecallMail				= 14;		//撤回邮件(MsgCommonN32)
 	MsgIDLogin_RecallMailResp			= 15;		//撤回邮件返回(0:成功 非0:查看返回码)
 	MsgIDLogin_DeleteAllReadMail		= 16;		//删除已读邮件(MsgCommonN32)
-	MsgIDLogin_DeleteAllReadMailResp	= 17;		//删除已读邮件返回
+	MsgIDLogin_DeleteAllReadMailResp	= 17;		//删除已读邮件返回(MsgCommonN32)
 	MsgIDLogin_PhoneCode				= 18;		//验证码(MsgCommonN32)
 	MsgIDLogin_PhoneCodeResp			= 19;		//验证码返回(MsgCommonN32)
-	MsgIDLogin_SyncPlayerGoldResp		= 20;		//同步玩家金币
-	MsgIDLogin_NotifyGameServerList		= 21;		//通知游戏服务器列表
+	MsgIDLogin_SyncPlayerGoldResp		= 20;		//同步玩家金币(MsgCommonN64)
+	MsgIDLogin_NotifyGameServerList		= 21;		//通知游戏服务器列表(MsgGameServerList)
 }
 
 enum EMsgIDGame
 {
 	MsgIDGame_Null						= 0;
 	//ID从1001开始
-	MsgIDGame_Login						= 1001;		//玩家登录
-	MsgIDGame_LoginResp					= 1002;		//玩家登录返回
+	MsgIDGame_Login						= 1001;		//玩家登录(MsgGamePlayerLogin)
+	MsgIDGame_LoginResp					= 1002;		//玩家登录返回(MsgGamePlayerLoginResp)
 	MsgIDGame_SqueezeSeatResp			= 1003;		//挤号
-	MsgIDGame_Logout					= 1004;		//玩家下线
-	MsgIDGame_AutoSitDown				= 1005;		//玩家自动坐下
-	MsgIDGame_SitDownResp				= 1006;		//玩家坐下返回
-	MsgIDGame_SyncPlayerInfoResp		= 1007;		//玩家数据同步
-	MsgIDGame_NotifyPlayerStandUpResp	= 1008;		//通知玩家下线
-	MsgIDGame_SyncPlayersScoreResp		= 1009;		//同步桌子所有玩家分数
-	MsgIDGame_SendGameSence				= 1010;		//请求场景消息
+	MsgIDGame_Logout					= 1004;		//玩家下线(MsgCommonBool)
+	MsgIDGame_AutoSitDown				= 1005;		//玩家自动坐下(MsgCommonBool)
+	MsgIDGame_SitDownResp				= 1006;		//玩家坐下返回(MsgCommonN32)
+	MsgIDGame_SyncPlayerInfoResp		= 1007;		//玩家数据同步(MsgGamePlayerInfo)
+	MsgIDGame_NotifyPlayerStandUpResp	= 1008;		//通知玩家下线(MsgCommonN32)
+	MsgIDGame_SyncPlayersScoreResp		= 1009;		//同步桌子所有玩家分数(MsgSyncPlayersScore)
+	MsgIDGame_SendGameSence				= 1010;		//请求场景消息(MsgCommonBool)
 	MsgIDGame_SendGameSenceResp			= 1011;		//请求场景消息返回
-	MsgIDGame_NotifyMessageResp			= 1012;		//通用消息通知
-	MsgIDGame_CreateRoom				= 1013;		//创建房间
-	MsgIDGame_JoinRoom					= 1014;		//加入房间
+	MsgIDGame_NotifyMessageResp			= 1012;		//通用消息通知(MsgCommonN32)
+	MsgIDGame_CreateRoom				= 1013;		//创建房间(MsgCommonBool)
+	MsgIDGame_JoinRoom					= 1014;		//加入房间(MsgCommonStr)
 	MsgIDGame_QueryRecord				= 1015;		//猜拳查询数据记录(MsgQueryRecord 1:每局数据 2:每日数据)
 	MsgIDGame_QueryRoundRecordResp		= 1016;		//猜拳每局数据数据记录(MsgTotalRoundData)
 	MsgIDGame_QueryDayRecordResp		= 1017;		//猜拳每日数据数据记录(MsgTotalDayData)

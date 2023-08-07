@@ -99,51 +99,51 @@ public enum EResCode {
 public enum EMsgIDLogin {
   [pbr::OriginalName("MsgIDLogin_Null")] MsgIdloginNull = 0,
   /// <summary>
-  ///玩家登录
+  ///玩家登录(MsgPlayerLogin)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_Login")] MsgIdloginLogin = 1,
   /// <summary>
-  ///玩家登录返回
+  ///玩家登录返回(MsgPlayerLoginResp)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_LoginResp")] MsgIdloginLoginResp = 2,
   /// <summary>
-  ///修改玩家昵称
+  ///修改玩家昵称(MsgCommonStr)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_ModifyNickName")] MsgIdloginModifyNickName = 3,
   /// <summary>
-  ///修改玩家昵称返回
+  ///修改玩家昵称返回(MsgCommonN32)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_ModifyNickNameResp")] MsgIdloginModifyNickNameResp = 4,
   /// <summary>
-  ///修改玩家头像
+  ///修改玩家头像(MsgCommonStr)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_ModifyHead")] MsgIdloginModifyHead = 5,
   /// <summary>
-  ///修改玩家头像返回
+  ///修改玩家头像返回(MsgCommonN32)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_ModifyHeadResp")] MsgIdloginModifyHeadResp = 6,
   /// <summary>
-  ///修改玩家登录密码
+  ///修改玩家登录密码(MsgModifyPassword)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_ModifyPassword")] MsgIdloginModifyPassword = 7,
   /// <summary>
-  ///修改玩家登录密码返回
+  ///修改玩家登录密码返回(MsgCommonN32)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_ModifyPasswordResp")] MsgIdloginModifyPasswordResp = 8,
   /// <summary>
-  ///绑定手机
+  ///绑定手机(MsgBindPhone)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_BindPhone")] MsgIdloginBindPhone = 9,
   /// <summary>
-  ///绑定手机返回
+  ///绑定手机返回(MsgCommonN32)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_BindPhoneResp")] MsgIdloginBindPhoneResp = 10,
   /// <summary>
-  ///读取邮件
+  ///读取邮件(MsgCommonN32)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_ReadMail")] MsgIdloginReadMail = 11,
   /// <summary>
-  ///领取邮件
+  ///领取邮件(MsgCommonN32)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_PickMail")] MsgIdloginPickMail = 12,
   /// <summary>
@@ -151,7 +151,7 @@ public enum EMsgIDLogin {
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_PickMailResp")] MsgIdloginPickMailResp = 13,
   /// <summary>
-  ///撤回邮件
+  ///撤回邮件(MsgCommonN32)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_RecallMail")] MsgIdloginRecallMail = 14,
   /// <summary>
@@ -159,27 +159,27 @@ public enum EMsgIDLogin {
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_RecallMailResp")] MsgIdloginRecallMailResp = 15,
   /// <summary>
-  ///删除已读邮件
+  ///删除已读邮件(MsgCommonN32)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_DeleteAllReadMail")] MsgIdloginDeleteAllReadMail = 16,
   /// <summary>
-  ///删除已读邮件返回
+  ///删除已读邮件返回(MsgCommonN32)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_DeleteAllReadMailResp")] MsgIdloginDeleteAllReadMailResp = 17,
   /// <summary>
-  ///验证码
+  ///验证码(MsgCommonN32)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_PhoneCode")] MsgIdloginPhoneCode = 18,
   /// <summary>
-  ///验证码返回
+  ///验证码返回(MsgCommonN32)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_PhoneCodeResp")] MsgIdloginPhoneCodeResp = 19,
   /// <summary>
-  ///同步玩家金币
+  ///同步玩家金币(MsgCommonN64)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_SyncPlayerGoldResp")] MsgIdloginSyncPlayerGoldResp = 20,
   /// <summary>
-  ///通知游戏服务器列表
+  ///通知游戏服务器列表(MsgGameServerList)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_NotifyGameServerList")] MsgIdloginNotifyGameServerList = 21,
 }
@@ -191,7 +191,7 @@ public enum EMsgIDGame {
   /// </summary>
   [pbr::OriginalName("MsgIDGame_Login")] MsgIdgameLogin = 1001,
   /// <summary>
-  ///玩家登录返回
+  ///玩家登录返回(MsgGamePlayerLoginResp)
   /// </summary>
   [pbr::OriginalName("MsgIDGame_LoginResp")] MsgIdgameLoginResp = 1002,
   /// <summary>
@@ -199,31 +199,31 @@ public enum EMsgIDGame {
   /// </summary>
   [pbr::OriginalName("MsgIDGame_SqueezeSeatResp")] MsgIdgameSqueezeSeatResp = 1003,
   /// <summary>
-  ///玩家下线
+  ///玩家下线(MsgCommonBool)
   /// </summary>
   [pbr::OriginalName("MsgIDGame_Logout")] MsgIdgameLogout = 1004,
   /// <summary>
-  ///玩家自动坐下
+  ///玩家自动坐下(MsgCommonBool)
   /// </summary>
   [pbr::OriginalName("MsgIDGame_AutoSitDown")] MsgIdgameAutoSitDown = 1005,
   /// <summary>
-  ///玩家坐下返回
+  ///玩家坐下返回(MsgCommonN32)
   /// </summary>
   [pbr::OriginalName("MsgIDGame_SitDownResp")] MsgIdgameSitDownResp = 1006,
   /// <summary>
-  ///玩家数据同步
+  ///玩家数据同步(MsgGamePlayerInfo)
   /// </summary>
   [pbr::OriginalName("MsgIDGame_SyncPlayerInfoResp")] MsgIdgameSyncPlayerInfoResp = 1007,
   /// <summary>
-  ///通知玩家下线
+  ///通知玩家下线(MsgCommonN32)
   /// </summary>
   [pbr::OriginalName("MsgIDGame_NotifyPlayerStandUpResp")] MsgIdgameNotifyPlayerStandUpResp = 1008,
   /// <summary>
-  ///同步桌子所有玩家分数
+  ///同步桌子所有玩家分数(MsgSyncPlayersScore)
   /// </summary>
   [pbr::OriginalName("MsgIDGame_SyncPlayersScoreResp")] MsgIdgameSyncPlayersScoreResp = 1009,
   /// <summary>
-  ///请求场景消息
+  ///请求场景消息(MsgCommonBool)
   /// </summary>
   [pbr::OriginalName("MsgIDGame_SendGameSence")] MsgIdgameSendGameSence = 1010,
   /// <summary>
@@ -231,15 +231,15 @@ public enum EMsgIDGame {
   /// </summary>
   [pbr::OriginalName("MsgIDGame_SendGameSenceResp")] MsgIdgameSendGameSenceResp = 1011,
   /// <summary>
-  ///通用消息通知
+  ///通用消息通知(MsgCommonN32)
   /// </summary>
   [pbr::OriginalName("MsgIDGame_NotifyMessageResp")] MsgIdgameNotifyMessageResp = 1012,
   /// <summary>
-  ///创建房间
+  ///创建房间(MsgCommonBool)
   /// </summary>
   [pbr::OriginalName("MsgIDGame_CreateRoom")] MsgIdgameCreateRoom = 1013,
   /// <summary>
-  ///加入房间
+  ///加入房间(MsgCommonStr)
   /// </summary>
   [pbr::OriginalName("MsgIDGame_JoinRoom")] MsgIdgameJoinRoom = 1014,
   /// <summary>
