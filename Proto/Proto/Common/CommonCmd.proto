@@ -19,25 +19,25 @@ enum EResCode
 enum EMsgIDLogin
 {
 	MsgIDLogin_Null						= 0;
-	MsgIDLogin_Login					= 1;		//玩家登录
-	MsgIDLogin_LoginResp				= 2;		//玩家登录返回
-	MsgIDLogin_ModifyNickName			= 3;		//修改玩家昵称
+	MsgIDLogin_Login					= 1;		//玩家登录(MsgPlayerLogin)
+	MsgIDLogin_LoginResp				= 2;		//玩家登录返回(MsgPlayerLoginResp)
+	MsgIDLogin_ModifyNickName			= 3;		//修改玩家昵称(MsgCommonStr)
 	MsgIDLogin_ModifyNickNameResp		= 4;		//修改玩家昵称返回
-	MsgIDLogin_ModifyHead				= 5;		//修改玩家头像
+	MsgIDLogin_ModifyHead				= 5;		//修改玩家头像(MsgCommonStr)
 	MsgIDLogin_ModifyHeadResp			= 6;		//修改玩家头像返回
-	MsgIDLogin_ModifyPassword			= 7;		//修改玩家登录密码
+	MsgIDLogin_ModifyPassword			= 7;		//修改玩家登录密码(MsgModifyPassword)
 	MsgIDLogin_ModifyPasswordResp		= 8;		//修改玩家登录密码返回
-	MsgIDLogin_BindPhone				= 9;		//绑定手机
+	MsgIDLogin_BindPhone				= 9;		//绑定手机(MsgBindPhone)
 	MsgIDLogin_BindPhoneResp			= 10;		//绑定手机返回
-	MsgIDLogin_ReadMail					= 11;		//读取邮件
-	MsgIDLogin_PickMail					= 12;		//领取邮件
+	MsgIDLogin_ReadMail					= 11;		//读取邮件(MsgCommonN32)
+	MsgIDLogin_PickMail					= 12;		//领取邮件(MsgCommonN32)
 	MsgIDLogin_PickMailResp				= 13;		//领取邮件返回
-	MsgIDLogin_RecallMail				= 14;		//撤回邮件
+	MsgIDLogin_RecallMail				= 14;		//撤回邮件(MsgCommonN32)
 	MsgIDLogin_RecallMailResp			= 15;		//撤回邮件返回(0:成功 非0:查看返回码)
-	MsgIDLogin_DeleteAllReadMail		= 16;		//删除已读邮件
+	MsgIDLogin_DeleteAllReadMail		= 16;		//删除已读邮件(MsgCommonN32)
 	MsgIDLogin_DeleteAllReadMailResp	= 17;		//删除已读邮件返回
-	MsgIDLogin_PhoneCode				= 18;		//验证码
-	MsgIDLogin_PhoneCodeResp			= 19;		//验证码返回
+	MsgIDLogin_PhoneCode				= 18;		//验证码(MsgCommonN32)
+	MsgIDLogin_PhoneCodeResp			= 19;		//验证码返回(MsgCommonN32)
 	MsgIDLogin_SyncPlayerGoldResp		= 20;		//同步玩家金币
 	MsgIDLogin_NotifyGameServerList		= 21;		//通知游戏服务器列表
 }
