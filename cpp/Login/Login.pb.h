@@ -46,7 +46,7 @@ struct TableStruct_Login_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[5]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[8]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -59,6 +59,9 @@ extern MsgBindPhoneDefaultTypeInternal _MsgBindPhone_default_instance_;
 class MsgCheckInInfo;
 class MsgCheckInInfoDefaultTypeInternal;
 extern MsgCheckInInfoDefaultTypeInternal _MsgCheckInInfo_default_instance_;
+class MsgCommonKV;
+class MsgCommonKVDefaultTypeInternal;
+extern MsgCommonKVDefaultTypeInternal _MsgCommonKV_default_instance_;
 class MsgModifyPassword;
 class MsgModifyPasswordDefaultTypeInternal;
 extern MsgModifyPasswordDefaultTypeInternal _MsgModifyPassword_default_instance_;
@@ -68,12 +71,21 @@ extern MsgPlayerLoginDefaultTypeInternal _MsgPlayerLogin_default_instance_;
 class MsgPlayerLoginResp;
 class MsgPlayerLoginRespDefaultTypeInternal;
 extern MsgPlayerLoginRespDefaultTypeInternal _MsgPlayerLoginResp_default_instance_;
+class MsgTurntableData;
+class MsgTurntableDataDefaultTypeInternal;
+extern MsgTurntableDataDefaultTypeInternal _MsgTurntableData_default_instance_;
+class MsgTurntableHistoryData;
+class MsgTurntableHistoryDataDefaultTypeInternal;
+extern MsgTurntableHistoryDataDefaultTypeInternal _MsgTurntableHistoryData_default_instance_;
 PROTOBUF_NAMESPACE_OPEN
 template<> ::MsgBindPhone* Arena::CreateMaybeMessage<::MsgBindPhone>(Arena*);
 template<> ::MsgCheckInInfo* Arena::CreateMaybeMessage<::MsgCheckInInfo>(Arena*);
+template<> ::MsgCommonKV* Arena::CreateMaybeMessage<::MsgCommonKV>(Arena*);
 template<> ::MsgModifyPassword* Arena::CreateMaybeMessage<::MsgModifyPassword>(Arena*);
 template<> ::MsgPlayerLogin* Arena::CreateMaybeMessage<::MsgPlayerLogin>(Arena*);
 template<> ::MsgPlayerLoginResp* Arena::CreateMaybeMessage<::MsgPlayerLoginResp>(Arena*);
+template<> ::MsgTurntableData* Arena::CreateMaybeMessage<::MsgTurntableData>(Arena*);
+template<> ::MsgTurntableHistoryData* Arena::CreateMaybeMessage<::MsgTurntableHistoryData>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 
 // ===================================================================
@@ -1002,6 +1014,153 @@ class MsgBindPhone PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
+class MsgCommonKV PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgCommonKV) */ {
+ public:
+  inline MsgCommonKV() : MsgCommonKV(nullptr) {}
+  virtual ~MsgCommonKV();
+
+  MsgCommonKV(const MsgCommonKV& from);
+  MsgCommonKV(MsgCommonKV&& from) noexcept
+    : MsgCommonKV() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgCommonKV& operator=(const MsgCommonKV& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgCommonKV& operator=(MsgCommonKV&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgCommonKV& default_instance();
+
+  static inline const MsgCommonKV* internal_default_instance() {
+    return reinterpret_cast<const MsgCommonKV*>(
+               &_MsgCommonKV_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    4;
+
+  friend void swap(MsgCommonKV& a, MsgCommonKV& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgCommonKV* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgCommonKV* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgCommonKV* New() const final {
+    return CreateMaybeMessage<MsgCommonKV>(nullptr);
+  }
+
+  MsgCommonKV* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgCommonKV>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgCommonKV& from);
+  void MergeFrom(const MsgCommonKV& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgCommonKV* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgCommonKV";
+  }
+  protected:
+  explicit MsgCommonKV(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kKFieldNumber = 1,
+    kVFieldNumber = 2,
+  };
+  // int32 k = 1;
+  void clear_k();
+  ::PROTOBUF_NAMESPACE_ID::int32 k() const;
+  void set_k(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_k() const;
+  void _internal_set_k(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 v = 2;
+  void clear_v();
+  ::PROTOBUF_NAMESPACE_ID::int32 v() const;
+  void set_v(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_v() const;
+  void _internal_set_v(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgCommonKV)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 k_;
+  ::PROTOBUF_NAMESPACE_ID::int32 v_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
+// -------------------------------------------------------------------
+
 class MsgCheckInInfo PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgCheckInInfo) */ {
  public:
@@ -1043,7 +1202,7 @@ class MsgCheckInInfo PROTOBUF_FINAL :
                &_MsgCheckInInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    4;
+    5;
 
   friend void swap(MsgCheckInInfo& a, MsgCheckInInfo& b) {
     a.Swap(&b);
@@ -1114,10 +1273,29 @@ class MsgCheckInInfo PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
+    kCheckInCfgFieldNumber = 4,
     kCheckDaysFieldNumber = 1,
     kIsOpenFieldNumber = 2,
     kCanPickFieldNumber = 3,
   };
+  // repeated .MsgCommonKV CheckInCfg = 4;
+  int checkincfg_size() const;
+  private:
+  int _internal_checkincfg_size() const;
+  public:
+  void clear_checkincfg();
+  ::MsgCommonKV* mutable_checkincfg(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgCommonKV >*
+      mutable_checkincfg();
+  private:
+  const ::MsgCommonKV& _internal_checkincfg(int index) const;
+  ::MsgCommonKV* _internal_add_checkincfg();
+  public:
+  const ::MsgCommonKV& checkincfg(int index) const;
+  ::MsgCommonKV* add_checkincfg();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgCommonKV >&
+      checkincfg() const;
+
   // int32 check_days = 1;
   void clear_check_days();
   ::PROTOBUF_NAMESPACE_ID::int32 check_days() const;
@@ -1152,9 +1330,406 @@ class MsgCheckInInfo PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgCommonKV > checkincfg_;
   ::PROTOBUF_NAMESPACE_ID::int32 check_days_;
   bool is_open_;
   bool can_pick_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgTurntableHistoryData PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgTurntableHistoryData) */ {
+ public:
+  inline MsgTurntableHistoryData() : MsgTurntableHistoryData(nullptr) {}
+  virtual ~MsgTurntableHistoryData();
+
+  MsgTurntableHistoryData(const MsgTurntableHistoryData& from);
+  MsgTurntableHistoryData(MsgTurntableHistoryData&& from) noexcept
+    : MsgTurntableHistoryData() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgTurntableHistoryData& operator=(const MsgTurntableHistoryData& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgTurntableHistoryData& operator=(MsgTurntableHistoryData&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgTurntableHistoryData& default_instance();
+
+  static inline const MsgTurntableHistoryData* internal_default_instance() {
+    return reinterpret_cast<const MsgTurntableHistoryData*>(
+               &_MsgTurntableHistoryData_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    6;
+
+  friend void swap(MsgTurntableHistoryData& a, MsgTurntableHistoryData& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgTurntableHistoryData* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgTurntableHistoryData* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgTurntableHistoryData* New() const final {
+    return CreateMaybeMessage<MsgTurntableHistoryData>(nullptr);
+  }
+
+  MsgTurntableHistoryData* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgTurntableHistoryData>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgTurntableHistoryData& from);
+  void MergeFrom(const MsgTurntableHistoryData& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgTurntableHistoryData* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgTurntableHistoryData";
+  }
+  protected:
+  explicit MsgTurntableHistoryData(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kTimeFieldNumber = 5,
+    kUserIdFieldNumber = 1,
+    kScoreFieldNumber = 2,
+    kAwardFieldNumber = 3,
+    kTypeFieldNumber = 4,
+  };
+  // string time = 5;
+  void clear_time();
+  const std::string& time() const;
+  void set_time(const std::string& value);
+  void set_time(std::string&& value);
+  void set_time(const char* value);
+  void set_time(const char* value, size_t size);
+  std::string* mutable_time();
+  std::string* release_time();
+  void set_allocated_time(std::string* time);
+  private:
+  const std::string& _internal_time() const;
+  void _internal_set_time(const std::string& value);
+  std::string* _internal_mutable_time();
+  public:
+
+  // int32 user_id = 1;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 score = 2;
+  void clear_score();
+  ::PROTOBUF_NAMESPACE_ID::int32 score() const;
+  void set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_score() const;
+  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 award = 3;
+  void clear_award();
+  ::PROTOBUF_NAMESPACE_ID::int32 award() const;
+  void set_award(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_award() const;
+  void _internal_set_award(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 type = 4;
+  void clear_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 type() const;
+  void set_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_type() const;
+  void _internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgTurntableHistoryData)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr time_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 score_;
+  ::PROTOBUF_NAMESPACE_ID::int32 award_;
+  ::PROTOBUF_NAMESPACE_ID::int32 type_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgTurntableData PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgTurntableData) */ {
+ public:
+  inline MsgTurntableData() : MsgTurntableData(nullptr) {}
+  virtual ~MsgTurntableData();
+
+  MsgTurntableData(const MsgTurntableData& from);
+  MsgTurntableData(MsgTurntableData&& from) noexcept
+    : MsgTurntableData() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgTurntableData& operator=(const MsgTurntableData& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgTurntableData& operator=(MsgTurntableData&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgTurntableData& default_instance();
+
+  static inline const MsgTurntableData* internal_default_instance() {
+    return reinterpret_cast<const MsgTurntableData*>(
+               &_MsgTurntableData_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    7;
+
+  friend void swap(MsgTurntableData& a, MsgTurntableData& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgTurntableData* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgTurntableData* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgTurntableData* New() const final {
+    return CreateMaybeMessage<MsgTurntableData>(nullptr);
+  }
+
+  MsgTurntableData* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgTurntableData>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgTurntableData& from);
+  void MergeFrom(const MsgTurntableData& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgTurntableData* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgTurntableData";
+  }
+  protected:
+  explicit MsgTurntableData(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kTurntableCfgFieldNumber = 5,
+    kHistoryFieldNumber = 6,
+    kPlayNumFieldNumber = 1,
+    kScoreFieldNumber = 2,
+    kNeedScoreFieldNumber = 3,
+    kLimitTurnFieldNumber = 4,
+  };
+  // repeated .MsgCommonKV turntable_cfg = 5;
+  int turntable_cfg_size() const;
+  private:
+  int _internal_turntable_cfg_size() const;
+  public:
+  void clear_turntable_cfg();
+  ::MsgCommonKV* mutable_turntable_cfg(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgCommonKV >*
+      mutable_turntable_cfg();
+  private:
+  const ::MsgCommonKV& _internal_turntable_cfg(int index) const;
+  ::MsgCommonKV* _internal_add_turntable_cfg();
+  public:
+  const ::MsgCommonKV& turntable_cfg(int index) const;
+  ::MsgCommonKV* add_turntable_cfg();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgCommonKV >&
+      turntable_cfg() const;
+
+  // repeated .MsgTurntableHistoryData history = 6;
+  int history_size() const;
+  private:
+  int _internal_history_size() const;
+  public:
+  void clear_history();
+  ::MsgTurntableHistoryData* mutable_history(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgTurntableHistoryData >*
+      mutable_history();
+  private:
+  const ::MsgTurntableHistoryData& _internal_history(int index) const;
+  ::MsgTurntableHistoryData* _internal_add_history();
+  public:
+  const ::MsgTurntableHistoryData& history(int index) const;
+  ::MsgTurntableHistoryData* add_history();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgTurntableHistoryData >&
+      history() const;
+
+  // int32 play_num = 1;
+  void clear_play_num();
+  ::PROTOBUF_NAMESPACE_ID::int32 play_num() const;
+  void set_play_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_play_num() const;
+  void _internal_set_play_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 score = 2;
+  void clear_score();
+  ::PROTOBUF_NAMESPACE_ID::int32 score() const;
+  void set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_score() const;
+  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 need_score = 3;
+  void clear_need_score();
+  ::PROTOBUF_NAMESPACE_ID::int32 need_score() const;
+  void set_need_score(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_need_score() const;
+  void _internal_set_need_score(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 limit_turn = 4;
+  void clear_limit_turn();
+  ::PROTOBUF_NAMESPACE_ID::int32 limit_turn() const;
+  void set_limit_turn(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_limit_turn() const;
+  void _internal_set_limit_turn(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgTurntableData)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgCommonKV > turntable_cfg_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgTurntableHistoryData > history_;
+  ::PROTOBUF_NAMESPACE_ID::int32 play_num_;
+  ::PROTOBUF_NAMESPACE_ID::int32 score_;
+  ::PROTOBUF_NAMESPACE_ID::int32 need_score_;
+  ::PROTOBUF_NAMESPACE_ID::int32 limit_turn_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -2378,6 +2953,50 @@ inline void MsgBindPhone::set_allocated_password(std::string* password) {
 
 // -------------------------------------------------------------------
 
+// MsgCommonKV
+
+// int32 k = 1;
+inline void MsgCommonKV::clear_k() {
+  k_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgCommonKV::_internal_k() const {
+  return k_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgCommonKV::k() const {
+  // @@protoc_insertion_point(field_get:MsgCommonKV.k)
+  return _internal_k();
+}
+inline void MsgCommonKV::_internal_set_k(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  k_ = value;
+}
+inline void MsgCommonKV::set_k(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_k(value);
+  // @@protoc_insertion_point(field_set:MsgCommonKV.k)
+}
+
+// int32 v = 2;
+inline void MsgCommonKV::clear_v() {
+  v_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgCommonKV::_internal_v() const {
+  return v_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgCommonKV::v() const {
+  // @@protoc_insertion_point(field_get:MsgCommonKV.v)
+  return _internal_v();
+}
+inline void MsgCommonKV::_internal_set_v(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  v_ = value;
+}
+inline void MsgCommonKV::set_v(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_v(value);
+  // @@protoc_insertion_point(field_set:MsgCommonKV.v)
+}
+
+// -------------------------------------------------------------------
+
 // MsgCheckInInfo
 
 // int32 check_days = 1;
@@ -2440,9 +3059,361 @@ inline void MsgCheckInInfo::set_can_pick(bool value) {
   // @@protoc_insertion_point(field_set:MsgCheckInInfo.can_pick)
 }
 
+// repeated .MsgCommonKV CheckInCfg = 4;
+inline int MsgCheckInInfo::_internal_checkincfg_size() const {
+  return checkincfg_.size();
+}
+inline int MsgCheckInInfo::checkincfg_size() const {
+  return _internal_checkincfg_size();
+}
+inline void MsgCheckInInfo::clear_checkincfg() {
+  checkincfg_.Clear();
+}
+inline ::MsgCommonKV* MsgCheckInInfo::mutable_checkincfg(int index) {
+  // @@protoc_insertion_point(field_mutable:MsgCheckInInfo.CheckInCfg)
+  return checkincfg_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgCommonKV >*
+MsgCheckInInfo::mutable_checkincfg() {
+  // @@protoc_insertion_point(field_mutable_list:MsgCheckInInfo.CheckInCfg)
+  return &checkincfg_;
+}
+inline const ::MsgCommonKV& MsgCheckInInfo::_internal_checkincfg(int index) const {
+  return checkincfg_.Get(index);
+}
+inline const ::MsgCommonKV& MsgCheckInInfo::checkincfg(int index) const {
+  // @@protoc_insertion_point(field_get:MsgCheckInInfo.CheckInCfg)
+  return _internal_checkincfg(index);
+}
+inline ::MsgCommonKV* MsgCheckInInfo::_internal_add_checkincfg() {
+  return checkincfg_.Add();
+}
+inline ::MsgCommonKV* MsgCheckInInfo::add_checkincfg() {
+  // @@protoc_insertion_point(field_add:MsgCheckInInfo.CheckInCfg)
+  return _internal_add_checkincfg();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgCommonKV >&
+MsgCheckInInfo::checkincfg() const {
+  // @@protoc_insertion_point(field_list:MsgCheckInInfo.CheckInCfg)
+  return checkincfg_;
+}
+
+// -------------------------------------------------------------------
+
+// MsgTurntableHistoryData
+
+// int32 user_id = 1;
+inline void MsgTurntableHistoryData::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurntableHistoryData::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurntableHistoryData::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgTurntableHistoryData.user_id)
+  return _internal_user_id();
+}
+inline void MsgTurntableHistoryData::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgTurntableHistoryData::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgTurntableHistoryData.user_id)
+}
+
+// int32 score = 2;
+inline void MsgTurntableHistoryData::clear_score() {
+  score_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurntableHistoryData::_internal_score() const {
+  return score_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurntableHistoryData::score() const {
+  // @@protoc_insertion_point(field_get:MsgTurntableHistoryData.score)
+  return _internal_score();
+}
+inline void MsgTurntableHistoryData::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  score_ = value;
+}
+inline void MsgTurntableHistoryData::set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_score(value);
+  // @@protoc_insertion_point(field_set:MsgTurntableHistoryData.score)
+}
+
+// int32 award = 3;
+inline void MsgTurntableHistoryData::clear_award() {
+  award_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurntableHistoryData::_internal_award() const {
+  return award_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurntableHistoryData::award() const {
+  // @@protoc_insertion_point(field_get:MsgTurntableHistoryData.award)
+  return _internal_award();
+}
+inline void MsgTurntableHistoryData::_internal_set_award(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  award_ = value;
+}
+inline void MsgTurntableHistoryData::set_award(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_award(value);
+  // @@protoc_insertion_point(field_set:MsgTurntableHistoryData.award)
+}
+
+// int32 type = 4;
+inline void MsgTurntableHistoryData::clear_type() {
+  type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurntableHistoryData::_internal_type() const {
+  return type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurntableHistoryData::type() const {
+  // @@protoc_insertion_point(field_get:MsgTurntableHistoryData.type)
+  return _internal_type();
+}
+inline void MsgTurntableHistoryData::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  type_ = value;
+}
+inline void MsgTurntableHistoryData::set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_type(value);
+  // @@protoc_insertion_point(field_set:MsgTurntableHistoryData.type)
+}
+
+// string time = 5;
+inline void MsgTurntableHistoryData::clear_time() {
+  time_.ClearToEmpty();
+}
+inline const std::string& MsgTurntableHistoryData::time() const {
+  // @@protoc_insertion_point(field_get:MsgTurntableHistoryData.time)
+  return _internal_time();
+}
+inline void MsgTurntableHistoryData::set_time(const std::string& value) {
+  _internal_set_time(value);
+  // @@protoc_insertion_point(field_set:MsgTurntableHistoryData.time)
+}
+inline std::string* MsgTurntableHistoryData::mutable_time() {
+  // @@protoc_insertion_point(field_mutable:MsgTurntableHistoryData.time)
+  return _internal_mutable_time();
+}
+inline const std::string& MsgTurntableHistoryData::_internal_time() const {
+  return time_.Get();
+}
+inline void MsgTurntableHistoryData::_internal_set_time(const std::string& value) {
+  
+  time_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgTurntableHistoryData::set_time(std::string&& value) {
+  
+  time_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgTurntableHistoryData.time)
+}
+inline void MsgTurntableHistoryData::set_time(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  time_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgTurntableHistoryData.time)
+}
+inline void MsgTurntableHistoryData::set_time(const char* value,
+    size_t size) {
+  
+  time_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgTurntableHistoryData.time)
+}
+inline std::string* MsgTurntableHistoryData::_internal_mutable_time() {
+  
+  return time_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgTurntableHistoryData::release_time() {
+  // @@protoc_insertion_point(field_release:MsgTurntableHistoryData.time)
+  return time_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgTurntableHistoryData::set_allocated_time(std::string* time) {
+  if (time != nullptr) {
+    
+  } else {
+    
+  }
+  time_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), time,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgTurntableHistoryData.time)
+}
+
+// -------------------------------------------------------------------
+
+// MsgTurntableData
+
+// int32 play_num = 1;
+inline void MsgTurntableData::clear_play_num() {
+  play_num_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurntableData::_internal_play_num() const {
+  return play_num_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurntableData::play_num() const {
+  // @@protoc_insertion_point(field_get:MsgTurntableData.play_num)
+  return _internal_play_num();
+}
+inline void MsgTurntableData::_internal_set_play_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  play_num_ = value;
+}
+inline void MsgTurntableData::set_play_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_play_num(value);
+  // @@protoc_insertion_point(field_set:MsgTurntableData.play_num)
+}
+
+// int32 score = 2;
+inline void MsgTurntableData::clear_score() {
+  score_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurntableData::_internal_score() const {
+  return score_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurntableData::score() const {
+  // @@protoc_insertion_point(field_get:MsgTurntableData.score)
+  return _internal_score();
+}
+inline void MsgTurntableData::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  score_ = value;
+}
+inline void MsgTurntableData::set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_score(value);
+  // @@protoc_insertion_point(field_set:MsgTurntableData.score)
+}
+
+// int32 need_score = 3;
+inline void MsgTurntableData::clear_need_score() {
+  need_score_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurntableData::_internal_need_score() const {
+  return need_score_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurntableData::need_score() const {
+  // @@protoc_insertion_point(field_get:MsgTurntableData.need_score)
+  return _internal_need_score();
+}
+inline void MsgTurntableData::_internal_set_need_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  need_score_ = value;
+}
+inline void MsgTurntableData::set_need_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_need_score(value);
+  // @@protoc_insertion_point(field_set:MsgTurntableData.need_score)
+}
+
+// int32 limit_turn = 4;
+inline void MsgTurntableData::clear_limit_turn() {
+  limit_turn_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurntableData::_internal_limit_turn() const {
+  return limit_turn_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurntableData::limit_turn() const {
+  // @@protoc_insertion_point(field_get:MsgTurntableData.limit_turn)
+  return _internal_limit_turn();
+}
+inline void MsgTurntableData::_internal_set_limit_turn(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  limit_turn_ = value;
+}
+inline void MsgTurntableData::set_limit_turn(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_limit_turn(value);
+  // @@protoc_insertion_point(field_set:MsgTurntableData.limit_turn)
+}
+
+// repeated .MsgCommonKV turntable_cfg = 5;
+inline int MsgTurntableData::_internal_turntable_cfg_size() const {
+  return turntable_cfg_.size();
+}
+inline int MsgTurntableData::turntable_cfg_size() const {
+  return _internal_turntable_cfg_size();
+}
+inline void MsgTurntableData::clear_turntable_cfg() {
+  turntable_cfg_.Clear();
+}
+inline ::MsgCommonKV* MsgTurntableData::mutable_turntable_cfg(int index) {
+  // @@protoc_insertion_point(field_mutable:MsgTurntableData.turntable_cfg)
+  return turntable_cfg_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgCommonKV >*
+MsgTurntableData::mutable_turntable_cfg() {
+  // @@protoc_insertion_point(field_mutable_list:MsgTurntableData.turntable_cfg)
+  return &turntable_cfg_;
+}
+inline const ::MsgCommonKV& MsgTurntableData::_internal_turntable_cfg(int index) const {
+  return turntable_cfg_.Get(index);
+}
+inline const ::MsgCommonKV& MsgTurntableData::turntable_cfg(int index) const {
+  // @@protoc_insertion_point(field_get:MsgTurntableData.turntable_cfg)
+  return _internal_turntable_cfg(index);
+}
+inline ::MsgCommonKV* MsgTurntableData::_internal_add_turntable_cfg() {
+  return turntable_cfg_.Add();
+}
+inline ::MsgCommonKV* MsgTurntableData::add_turntable_cfg() {
+  // @@protoc_insertion_point(field_add:MsgTurntableData.turntable_cfg)
+  return _internal_add_turntable_cfg();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgCommonKV >&
+MsgTurntableData::turntable_cfg() const {
+  // @@protoc_insertion_point(field_list:MsgTurntableData.turntable_cfg)
+  return turntable_cfg_;
+}
+
+// repeated .MsgTurntableHistoryData history = 6;
+inline int MsgTurntableData::_internal_history_size() const {
+  return history_.size();
+}
+inline int MsgTurntableData::history_size() const {
+  return _internal_history_size();
+}
+inline void MsgTurntableData::clear_history() {
+  history_.Clear();
+}
+inline ::MsgTurntableHistoryData* MsgTurntableData::mutable_history(int index) {
+  // @@protoc_insertion_point(field_mutable:MsgTurntableData.history)
+  return history_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgTurntableHistoryData >*
+MsgTurntableData::mutable_history() {
+  // @@protoc_insertion_point(field_mutable_list:MsgTurntableData.history)
+  return &history_;
+}
+inline const ::MsgTurntableHistoryData& MsgTurntableData::_internal_history(int index) const {
+  return history_.Get(index);
+}
+inline const ::MsgTurntableHistoryData& MsgTurntableData::history(int index) const {
+  // @@protoc_insertion_point(field_get:MsgTurntableData.history)
+  return _internal_history(index);
+}
+inline ::MsgTurntableHistoryData* MsgTurntableData::_internal_add_history() {
+  return history_.Add();
+}
+inline ::MsgTurntableHistoryData* MsgTurntableData::add_history() {
+  // @@protoc_insertion_point(field_add:MsgTurntableData.history)
+  return _internal_add_history();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgTurntableHistoryData >&
+MsgTurntableData::history() const {
+  // @@protoc_insertion_point(field_list:MsgTurntableData.history)
+  return history_;
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

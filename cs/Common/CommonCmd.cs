@@ -27,7 +27,7 @@ public static partial class CommonCmdReflection {
           "SW5mbxDpBxIUCg9FTXNnSURNYWluX0dhbWUQ0Q8SFwoSRU1zZ0lETWFpbl9T",
           "dWJHYW1lENIPKmsKCEVSZXNDb2RlEhEKDUVSZXNDb2RlX05VTEwQABIYChRF",
           "UmVzQ29kZV9JbnZpbGlkTWFpbBABEhkKFUVSZXNDb2RlX01haWxSZWNhbGxl",
-          "ZBACEhcKE0VSZXNDb2RlX01haWxQaWNrZWQQAyqfBgoLRU1zZ0lETG9naW4S",
+          "ZBACEhcKE0VSZXNDb2RlX01haWxQaWNrZWQQAyqpBwoLRU1zZ0lETG9naW4S",
           "EwoPTXNnSURMb2dpbl9OdWxsEAASFAoQTXNnSURMb2dpbl9Mb2dpbhABEhgK",
           "FE1zZ0lETG9naW5fTG9naW5SZXNwEAISHQoZTXNnSURMb2dpbl9Nb2RpZnlO",
           "aWNrTmFtZRADEiEKHU1zZ0lETG9naW5fTW9kaWZ5Tmlja05hbWVSZXNwEAQS",
@@ -45,20 +45,23 @@ public static partial class CommonCmdReflection {
           "b3RpZnlHYW1lU2VydmVyTGlzdBAVEh8KG01zZ0lETG9naW5fUXVlcnlDaGVj",
           "a0luSW5mbxAWEiMKH01zZ0lETG9naW5fUXVlcnlDaGVja0luSW5mb1Jlc3AQ",
           "FxIcChhNc2dJRExvZ2luX1BsYXllckNoZWNrSW4QGBIgChxNc2dJRExvZ2lu",
-          "X1BsYXllckNoZWNrSW5SZXNwEBkqxgQKCkVNc2dJREdhbWUSEgoOTXNnSURH",
-          "YW1lX051bGwQABIUCg9Nc2dJREdhbWVfTG9naW4Q6QcSGAoTTXNnSURHYW1l",
-          "X0xvZ2luUmVzcBDqBxIeChlNc2dJREdhbWVfU3F1ZWV6ZVNlYXRSZXNwEOsH",
-          "EhUKEE1zZ0lER2FtZV9Mb2dvdXQQ7AcSGgoVTXNnSURHYW1lX0F1dG9TaXRE",
-          "b3duEO0HEhoKFU1zZ0lER2FtZV9TaXREb3duUmVzcBDuBxIhChxNc2dJREdh",
-          "bWVfU3luY1BsYXllckluZm9SZXNwEO8HEiYKIU1zZ0lER2FtZV9Ob3RpZnlQ",
-          "bGF5ZXJTdGFuZFVwUmVzcBDwBxIjCh5Nc2dJREdhbWVfU3luY1BsYXllcnNT",
-          "Y29yZVJlc3AQ8QcSHAoXTXNnSURHYW1lX1NlbmRHYW1lU2VuY2UQ8gcSIAob",
-          "TXNnSURHYW1lX1NlbmRHYW1lU2VuY2VSZXNwEPMHEiAKG01zZ0lER2FtZV9O",
-          "b3RpZnlNZXNzYWdlUmVzcBD0BxIZChRNc2dJREdhbWVfQ3JlYXRlUm9vbRD1",
-          "BxIXChJNc2dJREdhbWVfSm9pblJvb20Q9gcSGgoVTXNnSURHYW1lX1F1ZXJ5",
-          "UmVjb3JkEPcHEiMKHk1zZ0lER2FtZV9RdWVyeVJvdW5kUmVjb3JkUmVzcBD4",
-          "BxIhChxNc2dJREdhbWVfUXVlcnlEYXlSZWNvcmRSZXNwEPkHEhsKFk1zZ0lE",
-          "R2FtZV9BZGRPbmVSZWNvcmQQ+gdiBnByb3RvMw=="));
+          "X1BsYXllckNoZWNrSW5SZXNwEBkSIQodTXNnSURMb2dpbl9RdWVyeVR1cm50",
+          "YWJsZURhdGEQGhIlCiFNc2dJRExvZ2luX1F1ZXJ5VHVybnRhYmxlRGF0YVJl",
+          "c3AQGxIcChhNc2dJRExvZ2luX1BsYXlUdXJudGFibGUQHBIgChxNc2dJRExv",
+          "Z2luX1BsYXlUdXJudGFibGVSZXNwEB0qxgQKCkVNc2dJREdhbWUSEgoOTXNn",
+          "SURHYW1lX051bGwQABIUCg9Nc2dJREdhbWVfTG9naW4Q6QcSGAoTTXNnSURH",
+          "YW1lX0xvZ2luUmVzcBDqBxIeChlNc2dJREdhbWVfU3F1ZWV6ZVNlYXRSZXNw",
+          "EOsHEhUKEE1zZ0lER2FtZV9Mb2dvdXQQ7AcSGgoVTXNnSURHYW1lX0F1dG9T",
+          "aXREb3duEO0HEhoKFU1zZ0lER2FtZV9TaXREb3duUmVzcBDuBxIhChxNc2dJ",
+          "REdhbWVfU3luY1BsYXllckluZm9SZXNwEO8HEiYKIU1zZ0lER2FtZV9Ob3Rp",
+          "ZnlQbGF5ZXJTdGFuZFVwUmVzcBDwBxIjCh5Nc2dJREdhbWVfU3luY1BsYXll",
+          "cnNTY29yZVJlc3AQ8QcSHAoXTXNnSURHYW1lX1NlbmRHYW1lU2VuY2UQ8gcS",
+          "IAobTXNnSURHYW1lX1NlbmRHYW1lU2VuY2VSZXNwEPMHEiAKG01zZ0lER2Ft",
+          "ZV9Ob3RpZnlNZXNzYWdlUmVzcBD0BxIZChRNc2dJREdhbWVfQ3JlYXRlUm9v",
+          "bRD1BxIXChJNc2dJREdhbWVfSm9pblJvb20Q9gcSGgoVTXNnSURHYW1lX1F1",
+          "ZXJ5UmVjb3JkEPcHEiMKHk1zZ0lER2FtZV9RdWVyeVJvdW5kUmVjb3JkUmVz",
+          "cBD4BxIhChxNc2dJREdhbWVfUXVlcnlEYXlSZWNvcmRSZXNwEPkHEhsKFk1z",
+          "Z0lER2FtZV9BZGRPbmVSZWNvcmQQ+gdiBnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::EMsgIDMain), typeof(global::EResCode), typeof(global::EMsgIDLogin), typeof(global::EMsgIDGame), }, null, null));
@@ -201,6 +204,22 @@ public enum EMsgIDLogin {
   ///玩家签到返回(MsgCommonN32)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_PlayerCheckInResp")] MsgIdloginPlayerCheckInResp = 25,
+  /// <summary>
+  ///查询转盘数据(MsgCommonBool)
+  /// </summary>
+  [pbr::OriginalName("MsgIDLogin_QueryTurntableData")] MsgIdloginQueryTurntableData = 26,
+  /// <summary>
+  ///查询转盘数据返回(MsgCheckInInfo)
+  /// </summary>
+  [pbr::OriginalName("MsgIDLogin_QueryTurntableDataResp")] MsgIdloginQueryTurntableDataResp = 27,
+  /// <summary>
+  ///转动转盘(MsgCommonBool)
+  /// </summary>
+  [pbr::OriginalName("MsgIDLogin_PlayTurntable")] MsgIdloginPlayTurntable = 28,
+  /// <summary>
+  ///转动转盘返回(MsgCommonN32)
+  /// </summary>
+  [pbr::OriginalName("MsgIDLogin_PlayTurntableResp")] MsgIdloginPlayTurntableResp = 29,
 }
 
 public enum EMsgIDGame {

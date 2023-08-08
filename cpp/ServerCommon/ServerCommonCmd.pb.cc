@@ -48,7 +48,7 @@ const char descriptor_table_protodef_ServerCommonCmd_2eproto[] PROTOBUF_SECTION_
   "ER_HeartBeat\020\242\037\022!\n\034CENTER2APPRECHARGE_He"
   "artBeat\020\243\037\022 \n\033APPRECHARGE2CENTER_Registe"
   "r\020\244\037\022\"\n\035APPRECHARGE2CENTER_UnRegister\020\245\037"
-  "*\301\010\n\010EMsgIDDB\022\020\n\014MsgIDDB_NULL\020\000\022\035\n\031CENTE"
+  "*\307\t\n\010EMsgIDDB\022\020\n\014MsgIDDB_NULL\020\000\022\035\n\031CENTE"
   "R2DB_UpdateOnlineNum\020\001\022\033\n\027CENTER2DB_Init"
   "OnlineNum\020\002\022\033\n\027CENTER2DB_RegisterLogin\020\003"
   "\022\035\n\031CENTER2DB_UnregisterLogin\020\004\022\032\n\026CENTE"
@@ -67,15 +67,18 @@ const char descriptor_table_protodef_ServerCommonCmd_2eproto[] PROTOBUF_SECTION_
   "2DB_QueryCheckInInfo\020\365\007\022\"\n\035DB2LOGIN_Quer"
   "yCheckInInfoResp\020\366\007\022\033\n\026LOGIN2DB_PlayerCh"
   "eckIn\020\367\007\022\037\n\032DB2LOGIN_PlayerCheckInResp\020\370"
-  "\007\022\022\n\rGAME2DB_Login\020\321\017\022\026\n\021DB2GAME_LoginRe"
-  "sp\020\322\017\022\032\n\025GAME2DB_LoadCheatRate\020\323\017\022\032\n\025DB2"
-  "GAME_LoadCheatRate\020\324\017\022\027\n\022GAME2DB_WriteSc"
-  "ore\020\325\017\022\027\n\022DB2GAME_WriteScore\020\326\017\022\"\n\035GAME2"
-  "DB_FingerGuessWriteScore\020\327\017\022\"\n\035DB2GAME_F"
-  "ingerGuessWriteScore\020\330\017\022#\n\036GAME2DB_Finge"
-  "rGuessQueryRecord\020\331\017\022#\n\036DB2GAME_FingerGu"
-  "essRoundRecord\020\332\017\022!\n\034DB2GAME_FingerGuess"
-  "DayRecord\020\333\017b\006proto3"
+  "\007\022 \n\033LOGIN2DB_QueryTurntableData\020\371\007\022$\n\037D"
+  "B2LOGIN_QueryTurntableDataResp\020\372\007\022\033\n\026LOG"
+  "IN2DB_PlayTurntable\020\373\007\022\037\n\032DB2LOGIN_PlayT"
+  "urntableResp\020\374\007\022\022\n\rGAME2DB_Login\020\321\017\022\026\n\021D"
+  "B2GAME_LoginResp\020\322\017\022\032\n\025GAME2DB_LoadCheat"
+  "Rate\020\323\017\022\032\n\025DB2GAME_LoadCheatRate\020\324\017\022\027\n\022G"
+  "AME2DB_WriteScore\020\325\017\022\027\n\022DB2GAME_WriteSco"
+  "re\020\326\017\022\"\n\035GAME2DB_FingerGuessWriteScore\020\327"
+  "\017\022\"\n\035DB2GAME_FingerGuessWriteScore\020\330\017\022#\n"
+  "\036GAME2DB_FingerGuessQueryRecord\020\331\017\022#\n\036DB"
+  "2GAME_FingerGuessRoundRecord\020\332\017\022!\n\034DB2GA"
+  "ME_FingerGuessDayRecord\020\333\017b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_ServerCommonCmd_2eproto_deps[1] = {
 };
@@ -83,7 +86,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Ser
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ServerCommonCmd_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ServerCommonCmd_2eproto = {
-  false, false, descriptor_table_protodef_ServerCommonCmd_2eproto, "ServerCommonCmd.proto", 2140,
+  false, false, descriptor_table_protodef_ServerCommonCmd_2eproto, "ServerCommonCmd.proto", 2274,
   &descriptor_table_ServerCommonCmd_2eproto_once, descriptor_table_ServerCommonCmd_2eproto_sccs, descriptor_table_ServerCommonCmd_2eproto_deps, 0, 0,
   schemas, file_default_instances, TableStruct_ServerCommonCmd_2eproto::offsets,
   file_level_metadata_ServerCommonCmd_2eproto, 0, file_level_enum_descriptors_ServerCommonCmd_2eproto, file_level_service_descriptors_ServerCommonCmd_2eproto,
@@ -178,6 +181,10 @@ bool EMsgIDDB_IsValid(int value) {
     case 1014:
     case 1015:
     case 1016:
+    case 1017:
+    case 1018:
+    case 1019:
+    case 1020:
     case 2001:
     case 2002:
     case 2003:

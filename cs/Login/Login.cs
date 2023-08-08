@@ -36,8 +36,16 @@ public static partial class LoginReflection {
           "X251bRgLIAEoCSI/ChFNc2dNb2RpZnlQYXNzd29yZBIUCgxvbGRfcGFzc3dv",
           "cmQYASABKAkSFAoMbmV3X3Bhc3N3b3JkGAIgASgJIkEKDE1zZ0JpbmRQaG9u",
           "ZRIMCgRjb2RlGAEgASgFEhEKCXBob25lX251bRgCIAEoCRIQCghwYXNzd29y",
-          "ZBgDIAEoCSJHCg5Nc2dDaGVja0luSW5mbxISCgpjaGVja19kYXlzGAEgASgF",
-          "Eg8KB2lzX29wZW4YAiABKAgSEAoIY2FuX3BpY2sYAyABKAhiBnByb3RvMw=="));
+          "ZBgDIAEoCSIjCgtNc2dDb21tb25LVhIJCgFrGAEgASgFEgkKAXYYAiABKAUi",
+          "aQoOTXNnQ2hlY2tJbkluZm8SEgoKY2hlY2tfZGF5cxgBIAEoBRIPCgdpc19v",
+          "cGVuGAIgASgIEhAKCGNhbl9waWNrGAMgASgIEiAKCkNoZWNrSW5DZmcYBCAD",
+          "KAsyDC5Nc2dDb21tb25LViJkChdNc2dUdXJudGFibGVIaXN0b3J5RGF0YRIP",
+          "Cgd1c2VyX2lkGAEgASgFEg0KBXNjb3JlGAIgASgFEg0KBWF3YXJkGAMgASgF",
+          "EgwKBHR5cGUYBCABKAUSDAoEdGltZRgFIAEoCSKrAQoQTXNnVHVybnRhYmxl",
+          "RGF0YRIQCghwbGF5X251bRgBIAEoBRINCgVzY29yZRgCIAEoBRISCgpuZWVk",
+          "X3Njb3JlGAMgASgFEhIKCmxpbWl0X3R1cm4YBCABKAUSIwoNdHVybnRhYmxl",
+          "X2NmZxgFIAMoCzIMLk1zZ0NvbW1vbktWEikKB2hpc3RvcnkYBiADKAsyGC5N",
+          "c2dUdXJudGFibGVIaXN0b3J5RGF0YWIGcHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -45,7 +53,10 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPlayerLoginResp), global::MsgPlayerLoginResp.Parser, new[]{ "ResCode", "UserId", "BeautifulId", "Account", "Nickname", "Avatar", "FirstRecharge", "UserType", "IsDrain", "Coin", "PhoneNum" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgModifyPassword), global::MsgModifyPassword.Parser, new[]{ "OldPassword", "NewPassword" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBindPhone), global::MsgBindPhone.Parser, new[]{ "Code", "PhoneNum", "Password" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgCheckInInfo), global::MsgCheckInInfo.Parser, new[]{ "CheckDays", "IsOpen", "CanPick" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgCommonKV), global::MsgCommonKV.Parser, new[]{ "K", "V" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgCheckInInfo), global::MsgCheckInInfo.Parser, new[]{ "CheckDays", "IsOpen", "CanPick", "CheckInCfg" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurntableHistoryData), global::MsgTurntableHistoryData.Parser, new[]{ "UserId", "Score", "Award", "Type", "Time" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurntableData), global::MsgTurntableData.Parser, new[]{ "PlayNum", "Score", "NeedScore", "LimitTurn", "TurntableCfg", "History" }, null, null, null, null)
         }));
   }
   #endregion
@@ -1740,6 +1751,223 @@ public sealed partial class MsgBindPhone : pb::IMessage<MsgBindPhone>
 }
 
 /// <summary>
+///配置信息
+/// </summary>
+public sealed partial class MsgCommonKV : pb::IMessage<MsgCommonKV>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgCommonKV> _parser = new pb::MessageParser<MsgCommonKV>(() => new MsgCommonKV());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgCommonKV> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[4]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgCommonKV() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgCommonKV(MsgCommonKV other) : this() {
+    k_ = other.k_;
+    v_ = other.v_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgCommonKV Clone() {
+    return new MsgCommonKV(this);
+  }
+
+  /// <summary>Field number for the "k" field.</summary>
+  public const int KFieldNumber = 1;
+  private int k_;
+  /// <summary>
+  ///key
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int K {
+    get { return k_; }
+    set {
+      k_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "v" field.</summary>
+  public const int VFieldNumber = 2;
+  private int v_;
+  /// <summary>
+  ///value
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int V {
+    get { return v_; }
+    set {
+      v_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgCommonKV);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgCommonKV other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (K != other.K) return false;
+    if (V != other.V) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (K != 0) hash ^= K.GetHashCode();
+    if (V != 0) hash ^= V.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (K != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(K);
+    }
+    if (V != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(V);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (K != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(K);
+    }
+    if (V != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(V);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (K != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(K);
+    }
+    if (V != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(V);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgCommonKV other) {
+    if (other == null) {
+      return;
+    }
+    if (other.K != 0) {
+      K = other.K;
+    }
+    if (other.V != 0) {
+      V = other.V;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          K = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          V = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          K = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          V = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
 ///签到信息返回
 /// </summary>
 public sealed partial class MsgCheckInInfo : pb::IMessage<MsgCheckInInfo>
@@ -1754,7 +1982,7 @@ public sealed partial class MsgCheckInInfo : pb::IMessage<MsgCheckInInfo>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[4]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[5]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1774,6 +2002,7 @@ public sealed partial class MsgCheckInInfo : pb::IMessage<MsgCheckInInfo>
     checkDays_ = other.checkDays_;
     isOpen_ = other.isOpen_;
     canPick_ = other.canPick_;
+    checkInCfg_ = other.checkInCfg_.Clone();
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -1824,6 +2053,19 @@ public sealed partial class MsgCheckInInfo : pb::IMessage<MsgCheckInInfo>
     }
   }
 
+  /// <summary>Field number for the "CheckInCfg" field.</summary>
+  public const int CheckInCfgFieldNumber = 4;
+  private static readonly pb::FieldCodec<global::MsgCommonKV> _repeated_checkInCfg_codec
+      = pb::FieldCodec.ForMessage(34, global::MsgCommonKV.Parser);
+  private readonly pbc::RepeatedField<global::MsgCommonKV> checkInCfg_ = new pbc::RepeatedField<global::MsgCommonKV>();
+  /// <summary>
+  ///签到配置
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<global::MsgCommonKV> CheckInCfg {
+    get { return checkInCfg_; }
+  }
+
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as MsgCheckInInfo);
@@ -1840,6 +2082,7 @@ public sealed partial class MsgCheckInInfo : pb::IMessage<MsgCheckInInfo>
     if (CheckDays != other.CheckDays) return false;
     if (IsOpen != other.IsOpen) return false;
     if (CanPick != other.CanPick) return false;
+    if(!checkInCfg_.Equals(other.checkInCfg_)) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -1849,6 +2092,7 @@ public sealed partial class MsgCheckInInfo : pb::IMessage<MsgCheckInInfo>
     if (CheckDays != 0) hash ^= CheckDays.GetHashCode();
     if (IsOpen != false) hash ^= IsOpen.GetHashCode();
     if (CanPick != false) hash ^= CanPick.GetHashCode();
+    hash ^= checkInCfg_.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -1877,6 +2121,7 @@ public sealed partial class MsgCheckInInfo : pb::IMessage<MsgCheckInInfo>
       output.WriteRawTag(24);
       output.WriteBool(CanPick);
     }
+    checkInCfg_.WriteTo(output, _repeated_checkInCfg_codec);
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -1898,6 +2143,7 @@ public sealed partial class MsgCheckInInfo : pb::IMessage<MsgCheckInInfo>
       output.WriteRawTag(24);
       output.WriteBool(CanPick);
     }
+    checkInCfg_.WriteTo(ref output, _repeated_checkInCfg_codec);
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -1916,6 +2162,7 @@ public sealed partial class MsgCheckInInfo : pb::IMessage<MsgCheckInInfo>
     if (CanPick != false) {
       size += 1 + 1;
     }
+    size += checkInCfg_.CalculateSize(_repeated_checkInCfg_codec);
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
     }
@@ -1936,6 +2183,7 @@ public sealed partial class MsgCheckInInfo : pb::IMessage<MsgCheckInInfo>
     if (other.CanPick != false) {
       CanPick = other.CanPick;
     }
+    checkInCfg_.Add(other.checkInCfg_);
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
 
@@ -1962,6 +2210,10 @@ public sealed partial class MsgCheckInInfo : pb::IMessage<MsgCheckInInfo>
           CanPick = input.ReadBool();
           break;
         }
+        case 34: {
+          checkInCfg_.AddEntriesFrom(input, _repeated_checkInCfg_codec);
+          break;
+        }
       }
     }
   #endif
@@ -1986,6 +2238,695 @@ public sealed partial class MsgCheckInInfo : pb::IMessage<MsgCheckInInfo>
         }
         case 24: {
           CanPick = input.ReadBool();
+          break;
+        }
+        case 34: {
+          checkInCfg_.AddEntriesFrom(ref input, _repeated_checkInCfg_codec);
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///转盘信息
+/// </summary>
+public sealed partial class MsgTurntableHistoryData : pb::IMessage<MsgTurntableHistoryData>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgTurntableHistoryData> _parser = new pb::MessageParser<MsgTurntableHistoryData>(() => new MsgTurntableHistoryData());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgTurntableHistoryData> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[6]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgTurntableHistoryData() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgTurntableHistoryData(MsgTurntableHistoryData other) : this() {
+    userId_ = other.userId_;
+    score_ = other.score_;
+    award_ = other.award_;
+    type_ = other.type_;
+    time_ = other.time_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgTurntableHistoryData Clone() {
+    return new MsgTurntableHistoryData(this);
+  }
+
+  /// <summary>Field number for the "user_id" field.</summary>
+  public const int UserIdFieldNumber = 1;
+  private int userId_;
+  /// <summary>
+  ///玩家ID
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int UserId {
+    get { return userId_; }
+    set {
+      userId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "score" field.</summary>
+  public const int ScoreFieldNumber = 2;
+  private int score_;
+  /// <summary>
+  ///使用积分
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Score {
+    get { return score_; }
+    set {
+      score_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "award" field.</summary>
+  public const int AwardFieldNumber = 3;
+  private int award_;
+  /// <summary>
+  ///装懂奖励
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Award {
+    get { return award_; }
+    set {
+      award_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "type" field.</summary>
+  public const int TypeFieldNumber = 4;
+  private int type_;
+  /// <summary>
+  ///类型(0:个人 1:大赢家)
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Type {
+    get { return type_; }
+    set {
+      type_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "time" field.</summary>
+  public const int TimeFieldNumber = 5;
+  private string time_ = "";
+  /// <summary>
+  ///时间
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string Time {
+    get { return time_; }
+    set {
+      time_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgTurntableHistoryData);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgTurntableHistoryData other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (UserId != other.UserId) return false;
+    if (Score != other.Score) return false;
+    if (Award != other.Award) return false;
+    if (Type != other.Type) return false;
+    if (Time != other.Time) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (UserId != 0) hash ^= UserId.GetHashCode();
+    if (Score != 0) hash ^= Score.GetHashCode();
+    if (Award != 0) hash ^= Award.GetHashCode();
+    if (Type != 0) hash ^= Type.GetHashCode();
+    if (Time.Length != 0) hash ^= Time.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (UserId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(UserId);
+    }
+    if (Score != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(Score);
+    }
+    if (Award != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(Award);
+    }
+    if (Type != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(Type);
+    }
+    if (Time.Length != 0) {
+      output.WriteRawTag(42);
+      output.WriteString(Time);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (UserId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(UserId);
+    }
+    if (Score != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(Score);
+    }
+    if (Award != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(Award);
+    }
+    if (Type != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(Type);
+    }
+    if (Time.Length != 0) {
+      output.WriteRawTag(42);
+      output.WriteString(Time);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (UserId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserId);
+    }
+    if (Score != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Score);
+    }
+    if (Award != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Award);
+    }
+    if (Type != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Type);
+    }
+    if (Time.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Time);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgTurntableHistoryData other) {
+    if (other == null) {
+      return;
+    }
+    if (other.UserId != 0) {
+      UserId = other.UserId;
+    }
+    if (other.Score != 0) {
+      Score = other.Score;
+    }
+    if (other.Award != 0) {
+      Award = other.Award;
+    }
+    if (other.Type != 0) {
+      Type = other.Type;
+    }
+    if (other.Time.Length != 0) {
+      Time = other.Time;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          UserId = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          Score = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          Award = input.ReadInt32();
+          break;
+        }
+        case 32: {
+          Type = input.ReadInt32();
+          break;
+        }
+        case 42: {
+          Time = input.ReadString();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          UserId = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          Score = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          Award = input.ReadInt32();
+          break;
+        }
+        case 32: {
+          Type = input.ReadInt32();
+          break;
+        }
+        case 42: {
+          Time = input.ReadString();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///转盘信息
+/// </summary>
+public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgTurntableData> _parser = new pb::MessageParser<MsgTurntableData>(() => new MsgTurntableData());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgTurntableData> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[7]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgTurntableData() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgTurntableData(MsgTurntableData other) : this() {
+    playNum_ = other.playNum_;
+    score_ = other.score_;
+    needScore_ = other.needScore_;
+    limitTurn_ = other.limitTurn_;
+    turntableCfg_ = other.turntableCfg_.Clone();
+    history_ = other.history_.Clone();
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgTurntableData Clone() {
+    return new MsgTurntableData(this);
+  }
+
+  /// <summary>Field number for the "play_num" field.</summary>
+  public const int PlayNumFieldNumber = 1;
+  private int playNum_;
+  /// <summary>
+  ///已转动次数
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int PlayNum {
+    get { return playNum_; }
+    set {
+      playNum_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "score" field.</summary>
+  public const int ScoreFieldNumber = 2;
+  private int score_;
+  /// <summary>
+  ///玩家积分
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Score {
+    get { return score_; }
+    set {
+      score_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "need_score" field.</summary>
+  public const int NeedScoreFieldNumber = 3;
+  private int needScore_;
+  /// <summary>
+  ///转动需要积分
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int NeedScore {
+    get { return needScore_; }
+    set {
+      needScore_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "limit_turn" field.</summary>
+  public const int LimitTurnFieldNumber = 4;
+  private int limitTurn_;
+  /// <summary>
+  ///转动限制次数
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int LimitTurn {
+    get { return limitTurn_; }
+    set {
+      limitTurn_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "turntable_cfg" field.</summary>
+  public const int TurntableCfgFieldNumber = 5;
+  private static readonly pb::FieldCodec<global::MsgCommonKV> _repeated_turntableCfg_codec
+      = pb::FieldCodec.ForMessage(42, global::MsgCommonKV.Parser);
+  private readonly pbc::RepeatedField<global::MsgCommonKV> turntableCfg_ = new pbc::RepeatedField<global::MsgCommonKV>();
+  /// <summary>
+  ///转盘配置
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<global::MsgCommonKV> TurntableCfg {
+    get { return turntableCfg_; }
+  }
+
+  /// <summary>Field number for the "history" field.</summary>
+  public const int HistoryFieldNumber = 6;
+  private static readonly pb::FieldCodec<global::MsgTurntableHistoryData> _repeated_history_codec
+      = pb::FieldCodec.ForMessage(50, global::MsgTurntableHistoryData.Parser);
+  private readonly pbc::RepeatedField<global::MsgTurntableHistoryData> history_ = new pbc::RepeatedField<global::MsgTurntableHistoryData>();
+  /// <summary>
+  ///历史数据
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<global::MsgTurntableHistoryData> History {
+    get { return history_; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgTurntableData);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgTurntableData other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (PlayNum != other.PlayNum) return false;
+    if (Score != other.Score) return false;
+    if (NeedScore != other.NeedScore) return false;
+    if (LimitTurn != other.LimitTurn) return false;
+    if(!turntableCfg_.Equals(other.turntableCfg_)) return false;
+    if(!history_.Equals(other.history_)) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (PlayNum != 0) hash ^= PlayNum.GetHashCode();
+    if (Score != 0) hash ^= Score.GetHashCode();
+    if (NeedScore != 0) hash ^= NeedScore.GetHashCode();
+    if (LimitTurn != 0) hash ^= LimitTurn.GetHashCode();
+    hash ^= turntableCfg_.GetHashCode();
+    hash ^= history_.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (PlayNum != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(PlayNum);
+    }
+    if (Score != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(Score);
+    }
+    if (NeedScore != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(NeedScore);
+    }
+    if (LimitTurn != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(LimitTurn);
+    }
+    turntableCfg_.WriteTo(output, _repeated_turntableCfg_codec);
+    history_.WriteTo(output, _repeated_history_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (PlayNum != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(PlayNum);
+    }
+    if (Score != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(Score);
+    }
+    if (NeedScore != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(NeedScore);
+    }
+    if (LimitTurn != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(LimitTurn);
+    }
+    turntableCfg_.WriteTo(ref output, _repeated_turntableCfg_codec);
+    history_.WriteTo(ref output, _repeated_history_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (PlayNum != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(PlayNum);
+    }
+    if (Score != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Score);
+    }
+    if (NeedScore != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(NeedScore);
+    }
+    if (LimitTurn != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(LimitTurn);
+    }
+    size += turntableCfg_.CalculateSize(_repeated_turntableCfg_codec);
+    size += history_.CalculateSize(_repeated_history_codec);
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgTurntableData other) {
+    if (other == null) {
+      return;
+    }
+    if (other.PlayNum != 0) {
+      PlayNum = other.PlayNum;
+    }
+    if (other.Score != 0) {
+      Score = other.Score;
+    }
+    if (other.NeedScore != 0) {
+      NeedScore = other.NeedScore;
+    }
+    if (other.LimitTurn != 0) {
+      LimitTurn = other.LimitTurn;
+    }
+    turntableCfg_.Add(other.turntableCfg_);
+    history_.Add(other.history_);
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          PlayNum = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          Score = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          NeedScore = input.ReadInt32();
+          break;
+        }
+        case 32: {
+          LimitTurn = input.ReadInt32();
+          break;
+        }
+        case 42: {
+          turntableCfg_.AddEntriesFrom(input, _repeated_turntableCfg_codec);
+          break;
+        }
+        case 50: {
+          history_.AddEntriesFrom(input, _repeated_history_codec);
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          PlayNum = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          Score = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          NeedScore = input.ReadInt32();
+          break;
+        }
+        case 32: {
+          LimitTurn = input.ReadInt32();
+          break;
+        }
+        case 42: {
+          turntableCfg_.AddEntriesFrom(ref input, _repeated_turntableCfg_codec);
+          break;
+        }
+        case 50: {
+          history_.AddEntriesFrom(ref input, _repeated_history_codec);
           break;
         }
       }

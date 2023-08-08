@@ -136,12 +136,16 @@ enum EMsgIDLogin : int {
   MsgIDLogin_QueryCheckInInfoResp = 23,
   MsgIDLogin_PlayerCheckIn = 24,
   MsgIDLogin_PlayerCheckInResp = 25,
+  MsgIDLogin_QueryTurntableData = 26,
+  MsgIDLogin_QueryTurntableDataResp = 27,
+  MsgIDLogin_PlayTurntable = 28,
+  MsgIDLogin_PlayTurntableResp = 29,
   EMsgIDLogin_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDLogin_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDLogin_IsValid(int value);
 constexpr EMsgIDLogin EMsgIDLogin_MIN = MsgIDLogin_Null;
-constexpr EMsgIDLogin EMsgIDLogin_MAX = MsgIDLogin_PlayerCheckInResp;
+constexpr EMsgIDLogin EMsgIDLogin_MAX = MsgIDLogin_PlayTurntableResp;
 constexpr int EMsgIDLogin_ARRAYSIZE = EMsgIDLogin_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDLogin_descriptor();

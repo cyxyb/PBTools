@@ -44,6 +44,10 @@ enum EMsgIDLogin
 	MsgIDLogin_QueryCheckInInfoResp		= 23;		//查询签到信息返回(MsgCheckInInfo)
 	MsgIDLogin_PlayerCheckIn			= 24;		//玩家签到(MsgCommonBool)
 	MsgIDLogin_PlayerCheckInResp		= 25;		//玩家签到返回(MsgCommonN32)
+	MsgIDLogin_QueryTurntableData		= 26;		//查询转盘数据(MsgCommonBool)
+	MsgIDLogin_QueryTurntableDataResp	= 27;		//查询转盘数据返回(MsgCheckInInfo)
+	MsgIDLogin_PlayTurntable			= 28;		//转动转盘(MsgCommonBool)
+	MsgIDLogin_PlayTurntableResp		= 29;		//转动转盘返回(MsgCommonN32)
 }
 
 enum EMsgIDGame
