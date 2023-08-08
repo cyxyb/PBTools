@@ -49,3 +49,11 @@ message MsgBindPhone
 	string		password		= 3;	//密码
 }
 
+//签到信息返回
+message MsgCheckInInfo
+{
+	int32		check_days		= 1;	//已签到天数
+	bool		is_open			= 2;	//活动是否开启
+	bool		can_pick		= 3;	//是否可以领取
+}
+

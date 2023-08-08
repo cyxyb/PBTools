@@ -72,6 +72,10 @@ enum EMsgIDDB
 	DB2LOGIN_RecallMailResp			= 1010;	//撤回邮件返回
 	LOGIN2DB_DeleteAllReadMail		= 1011;	//删除已读邮件
 	DB2LOGIN_DeleteAllReadMailResp	= 1012;	//删除已读邮件返回
+	LOGIN2DB_QueryCheckInInfo		= 1013;	//查询签到信息
+	DB2LOGIN_QueryCheckInInfoResp	= 1014;	//查询签到信息返回
+	LOGIN2DB_PlayerCheckIn			= 1015;	//玩家签到
+	DB2LOGIN_PlayerCheckInResp		= 1016;	//玩家签到返回
 	
 	//2001-3000 GameServer2DB
 	GAME2DB_Login					= 2001;	//玩家登录游戏

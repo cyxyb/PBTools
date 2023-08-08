@@ -28,7 +28,7 @@ enum EMsgIDLogin
 	MsgIDLogin_ModifyPassword			= 7;		//修改玩家登录密码(MsgModifyPassword)
 	MsgIDLogin_ModifyPasswordResp		= 8;		//修改玩家登录密码返回(MsgCommonN32)
 	MsgIDLogin_BindPhone				= 9;		//绑定手机(MsgCommonStr)
-	MsgIDLogin_BindPhoneResp			= 10;		//绑定手机返回(MsgSendPhoneCode)
+	MsgIDLogin_BindPhoneResp			= 10;		//绑定手机返回(MsgCommonN32)
 	MsgIDLogin_ReadMail					= 11;		//读取邮件(MsgCommonN32)
 	MsgIDLogin_PickMail					= 12;		//领取邮件(MsgCommonN32)
 	MsgIDLogin_PickMailResp				= 13;		//领取邮件返回
@@ -40,6 +40,10 @@ enum EMsgIDLogin
 	MsgIDLogin_PhoneCodeResp			= 19;		//验证码返回(MsgCommonN32)
 	MsgIDLogin_SyncPlayerGoldResp		= 20;		//同步玩家金币(MsgCommonN64)
 	MsgIDLogin_NotifyGameServerList		= 21;		//通知游戏服务器列表(MsgGameServerList)
+	MsgIDLogin_QueryCheckInInfo			= 22;		//查询签到信息(MsgCommonBool)
+	MsgIDLogin_QueryCheckInInfoResp		= 23;		//查询签到信息返回(MsgCheckInInfo)
+	MsgIDLogin_PlayerCheckIn			= 24;		//玩家签到(MsgCommonBool)
+	MsgIDLogin_PlayerCheckInResp		= 25;		//玩家签到返回(MsgCommonN32)
 }
 
 enum EMsgIDGame

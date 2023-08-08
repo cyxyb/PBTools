@@ -46,7 +46,7 @@ struct TableStruct_Login_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[4]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[5]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -56,6 +56,9 @@ extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table
 class MsgBindPhone;
 class MsgBindPhoneDefaultTypeInternal;
 extern MsgBindPhoneDefaultTypeInternal _MsgBindPhone_default_instance_;
+class MsgCheckInInfo;
+class MsgCheckInInfoDefaultTypeInternal;
+extern MsgCheckInInfoDefaultTypeInternal _MsgCheckInInfo_default_instance_;
 class MsgModifyPassword;
 class MsgModifyPasswordDefaultTypeInternal;
 extern MsgModifyPasswordDefaultTypeInternal _MsgModifyPassword_default_instance_;
@@ -67,6 +70,7 @@ class MsgPlayerLoginRespDefaultTypeInternal;
 extern MsgPlayerLoginRespDefaultTypeInternal _MsgPlayerLoginResp_default_instance_;
 PROTOBUF_NAMESPACE_OPEN
 template<> ::MsgBindPhone* Arena::CreateMaybeMessage<::MsgBindPhone>(Arena*);
+template<> ::MsgCheckInInfo* Arena::CreateMaybeMessage<::MsgCheckInInfo>(Arena*);
 template<> ::MsgModifyPassword* Arena::CreateMaybeMessage<::MsgModifyPassword>(Arena*);
 template<> ::MsgPlayerLogin* Arena::CreateMaybeMessage<::MsgPlayerLogin>(Arena*);
 template<> ::MsgPlayerLoginResp* Arena::CreateMaybeMessage<::MsgPlayerLoginResp>(Arena*);
@@ -993,6 +997,164 @@ class MsgBindPhone PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr phone_num_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr password_;
   ::PROTOBUF_NAMESPACE_ID::int32 code_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgCheckInInfo PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgCheckInInfo) */ {
+ public:
+  inline MsgCheckInInfo() : MsgCheckInInfo(nullptr) {}
+  virtual ~MsgCheckInInfo();
+
+  MsgCheckInInfo(const MsgCheckInInfo& from);
+  MsgCheckInInfo(MsgCheckInInfo&& from) noexcept
+    : MsgCheckInInfo() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgCheckInInfo& operator=(const MsgCheckInInfo& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgCheckInInfo& operator=(MsgCheckInInfo&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgCheckInInfo& default_instance();
+
+  static inline const MsgCheckInInfo* internal_default_instance() {
+    return reinterpret_cast<const MsgCheckInInfo*>(
+               &_MsgCheckInInfo_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    4;
+
+  friend void swap(MsgCheckInInfo& a, MsgCheckInInfo& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgCheckInInfo* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgCheckInInfo* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgCheckInInfo* New() const final {
+    return CreateMaybeMessage<MsgCheckInInfo>(nullptr);
+  }
+
+  MsgCheckInInfo* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgCheckInInfo>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgCheckInInfo& from);
+  void MergeFrom(const MsgCheckInInfo& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgCheckInInfo* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgCheckInInfo";
+  }
+  protected:
+  explicit MsgCheckInInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kCheckDaysFieldNumber = 1,
+    kIsOpenFieldNumber = 2,
+    kCanPickFieldNumber = 3,
+  };
+  // int32 check_days = 1;
+  void clear_check_days();
+  ::PROTOBUF_NAMESPACE_ID::int32 check_days() const;
+  void set_check_days(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_check_days() const;
+  void _internal_set_check_days(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // bool is_open = 2;
+  void clear_is_open();
+  bool is_open() const;
+  void set_is_open(bool value);
+  private:
+  bool _internal_is_open() const;
+  void _internal_set_is_open(bool value);
+  public:
+
+  // bool can_pick = 3;
+  void clear_can_pick();
+  bool can_pick() const;
+  void set_can_pick(bool value);
+  private:
+  bool _internal_can_pick() const;
+  void _internal_set_can_pick(bool value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgCheckInInfo)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 check_days_;
+  bool is_open_;
+  bool can_pick_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -2214,9 +2376,75 @@ inline void MsgBindPhone::set_allocated_password(std::string* password) {
   // @@protoc_insertion_point(field_set_allocated:MsgBindPhone.password)
 }
 
+// -------------------------------------------------------------------
+
+// MsgCheckInInfo
+
+// int32 check_days = 1;
+inline void MsgCheckInInfo::clear_check_days() {
+  check_days_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgCheckInInfo::_internal_check_days() const {
+  return check_days_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgCheckInInfo::check_days() const {
+  // @@protoc_insertion_point(field_get:MsgCheckInInfo.check_days)
+  return _internal_check_days();
+}
+inline void MsgCheckInInfo::_internal_set_check_days(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  check_days_ = value;
+}
+inline void MsgCheckInInfo::set_check_days(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_check_days(value);
+  // @@protoc_insertion_point(field_set:MsgCheckInInfo.check_days)
+}
+
+// bool is_open = 2;
+inline void MsgCheckInInfo::clear_is_open() {
+  is_open_ = false;
+}
+inline bool MsgCheckInInfo::_internal_is_open() const {
+  return is_open_;
+}
+inline bool MsgCheckInInfo::is_open() const {
+  // @@protoc_insertion_point(field_get:MsgCheckInInfo.is_open)
+  return _internal_is_open();
+}
+inline void MsgCheckInInfo::_internal_set_is_open(bool value) {
+  
+  is_open_ = value;
+}
+inline void MsgCheckInInfo::set_is_open(bool value) {
+  _internal_set_is_open(value);
+  // @@protoc_insertion_point(field_set:MsgCheckInInfo.is_open)
+}
+
+// bool can_pick = 3;
+inline void MsgCheckInInfo::clear_can_pick() {
+  can_pick_ = false;
+}
+inline bool MsgCheckInInfo::_internal_can_pick() const {
+  return can_pick_;
+}
+inline bool MsgCheckInInfo::can_pick() const {
+  // @@protoc_insertion_point(field_get:MsgCheckInInfo.can_pick)
+  return _internal_can_pick();
+}
+inline void MsgCheckInInfo::_internal_set_can_pick(bool value) {
+  
+  can_pick_ = value;
+}
+inline void MsgCheckInInfo::set_can_pick(bool value) {
+  _internal_set_can_pick(value);
+  // @@protoc_insertion_point(field_set:MsgCheckInInfo.can_pick)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

@@ -36,14 +36,16 @@ public static partial class LoginReflection {
           "X251bRgLIAEoCSI/ChFNc2dNb2RpZnlQYXNzd29yZBIUCgxvbGRfcGFzc3dv",
           "cmQYASABKAkSFAoMbmV3X3Bhc3N3b3JkGAIgASgJIkEKDE1zZ0JpbmRQaG9u",
           "ZRIMCgRjb2RlGAEgASgFEhEKCXBob25lX251bRgCIAEoCRIQCghwYXNzd29y",
-          "ZBgDIAEoCWIGcHJvdG8z"));
+          "ZBgDIAEoCSJHCg5Nc2dDaGVja0luSW5mbxISCgpjaGVja19kYXlzGAEgASgF",
+          "Eg8KB2lzX29wZW4YAiABKAgSEAoIY2FuX3BpY2sYAyABKAhiBnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPlayerLogin), global::MsgPlayerLogin.Parser, new[]{ "Account", "Password", "PlatformId", "ChannelId", "ClientType", "LoginType", "MachineNum", "UserIp", "IsDrain", "Avatar", "Nickname", "Phone", "Code" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPlayerLoginResp), global::MsgPlayerLoginResp.Parser, new[]{ "ResCode", "UserId", "BeautifulId", "Account", "Nickname", "Avatar", "FirstRecharge", "UserType", "IsDrain", "Coin", "PhoneNum" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgModifyPassword), global::MsgModifyPassword.Parser, new[]{ "OldPassword", "NewPassword" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBindPhone), global::MsgBindPhone.Parser, new[]{ "Code", "PhoneNum", "Password" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBindPhone), global::MsgBindPhone.Parser, new[]{ "Code", "PhoneNum", "Password" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgCheckInInfo), global::MsgCheckInInfo.Parser, new[]{ "CheckDays", "IsOpen", "CanPick" }, null, null, null, null)
         }));
   }
   #endregion
@@ -1728,6 +1730,262 @@ public sealed partial class MsgBindPhone : pb::IMessage<MsgBindPhone>
         }
         case 26: {
           Password = input.ReadString();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///签到信息返回
+/// </summary>
+public sealed partial class MsgCheckInInfo : pb::IMessage<MsgCheckInInfo>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgCheckInInfo> _parser = new pb::MessageParser<MsgCheckInInfo>(() => new MsgCheckInInfo());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgCheckInInfo> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[4]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgCheckInInfo() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgCheckInInfo(MsgCheckInInfo other) : this() {
+    checkDays_ = other.checkDays_;
+    isOpen_ = other.isOpen_;
+    canPick_ = other.canPick_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgCheckInInfo Clone() {
+    return new MsgCheckInInfo(this);
+  }
+
+  /// <summary>Field number for the "check_days" field.</summary>
+  public const int CheckDaysFieldNumber = 1;
+  private int checkDays_;
+  /// <summary>
+  ///已签到天数
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CheckDays {
+    get { return checkDays_; }
+    set {
+      checkDays_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "is_open" field.</summary>
+  public const int IsOpenFieldNumber = 2;
+  private bool isOpen_;
+  /// <summary>
+  ///活动是否开启
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool IsOpen {
+    get { return isOpen_; }
+    set {
+      isOpen_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "can_pick" field.</summary>
+  public const int CanPickFieldNumber = 3;
+  private bool canPick_;
+  /// <summary>
+  ///是否可以领取
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool CanPick {
+    get { return canPick_; }
+    set {
+      canPick_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgCheckInInfo);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgCheckInInfo other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (CheckDays != other.CheckDays) return false;
+    if (IsOpen != other.IsOpen) return false;
+    if (CanPick != other.CanPick) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (CheckDays != 0) hash ^= CheckDays.GetHashCode();
+    if (IsOpen != false) hash ^= IsOpen.GetHashCode();
+    if (CanPick != false) hash ^= CanPick.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (CheckDays != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(CheckDays);
+    }
+    if (IsOpen != false) {
+      output.WriteRawTag(16);
+      output.WriteBool(IsOpen);
+    }
+    if (CanPick != false) {
+      output.WriteRawTag(24);
+      output.WriteBool(CanPick);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (CheckDays != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(CheckDays);
+    }
+    if (IsOpen != false) {
+      output.WriteRawTag(16);
+      output.WriteBool(IsOpen);
+    }
+    if (CanPick != false) {
+      output.WriteRawTag(24);
+      output.WriteBool(CanPick);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (CheckDays != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(CheckDays);
+    }
+    if (IsOpen != false) {
+      size += 1 + 1;
+    }
+    if (CanPick != false) {
+      size += 1 + 1;
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgCheckInInfo other) {
+    if (other == null) {
+      return;
+    }
+    if (other.CheckDays != 0) {
+      CheckDays = other.CheckDays;
+    }
+    if (other.IsOpen != false) {
+      IsOpen = other.IsOpen;
+    }
+    if (other.CanPick != false) {
+      CanPick = other.CanPick;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          CheckDays = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          IsOpen = input.ReadBool();
+          break;
+        }
+        case 24: {
+          CanPick = input.ReadBool();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          CheckDays = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          IsOpen = input.ReadBool();
+          break;
+        }
+        case 24: {
+          CanPick = input.ReadBool();
           break;
         }
       }

@@ -30,6 +30,10 @@ class MsgBindPhoneDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgBindPhone> _instance;
 } _MsgBindPhone_default_instance_;
+class MsgCheckInInfoDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgCheckInInfo> _instance;
+} _MsgCheckInInfo_default_instance_;
 static void InitDefaultsscc_info_MsgBindPhone_Login_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -42,6 +46,19 @@ static void InitDefaultsscc_info_MsgBindPhone_Login_2eproto() {
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgBindPhone_Login_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgBindPhone_Login_2eproto}, {}};
+
+static void InitDefaultsscc_info_MsgCheckInInfo_Login_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_MsgCheckInInfo_default_instance_;
+    new (ptr) ::MsgCheckInInfo();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgCheckInInfo_Login_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgCheckInInfo_Login_2eproto}, {}};
 
 static void InitDefaultsscc_info_MsgModifyPassword_Login_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -82,7 +99,7 @@ static void InitDefaultsscc_info_MsgPlayerLoginResp_Login_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgPlayerLoginResp_Login_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgPlayerLoginResp_Login_2eproto}, {}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Login_2eproto[4];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Login_2eproto[5];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_Login_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_Login_2eproto = nullptr;
 
@@ -136,12 +153,21 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::MsgBindPhone, code_),
   PROTOBUF_FIELD_OFFSET(::MsgBindPhone, phone_num_),
   PROTOBUF_FIELD_OFFSET(::MsgBindPhone, password_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::MsgCheckInInfo, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::MsgCheckInInfo, check_days_),
+  PROTOBUF_FIELD_OFFSET(::MsgCheckInInfo, is_open_),
+  PROTOBUF_FIELD_OFFSET(::MsgCheckInInfo, can_pick_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::MsgPlayerLogin)},
   { 18, -1, sizeof(::MsgPlayerLoginResp)},
   { 34, -1, sizeof(::MsgModifyPassword)},
   { 41, -1, sizeof(::MsgBindPhone)},
+  { 49, -1, sizeof(::MsgCheckInInfo)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -149,6 +175,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgPlayerLoginResp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgModifyPassword_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgBindPhone_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgCheckInInfo_default_instance_),
 };
 
 const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -167,22 +194,25 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "one_num\030\013 \001(\t\"\?\n\021MsgModifyPassword\022\024\n\014ol"
   "d_password\030\001 \001(\t\022\024\n\014new_password\030\002 \001(\t\"A"
   "\n\014MsgBindPhone\022\014\n\004code\030\001 \001(\005\022\021\n\tphone_nu"
-  "m\030\002 \001(\t\022\020\n\010password\030\003 \001(\tb\006proto3"
+  "m\030\002 \001(\t\022\020\n\010password\030\003 \001(\t\"G\n\016MsgCheckInI"
+  "nfo\022\022\n\ncheck_days\030\001 \001(\005\022\017\n\007is_open\030\002 \001(\010"
+  "\022\020\n\010can_pick\030\003 \001(\010b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Login_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Login_2eproto_sccs[4] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Login_2eproto_sccs[5] = {
   &scc_info_MsgBindPhone_Login_2eproto.base,
+  &scc_info_MsgCheckInInfo_Login_2eproto.base,
   &scc_info_MsgModifyPassword_Login_2eproto.base,
   &scc_info_MsgPlayerLogin_Login_2eproto.base,
   &scc_info_MsgPlayerLoginResp_Login_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Login_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Login_2eproto = {
-  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 633,
-  &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 4, 0,
+  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 706,
+  &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 5, 0,
   schemas, file_default_instances, TableStruct_Login_2eproto::offsets,
-  file_level_metadata_Login_2eproto, 4, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
+  file_level_metadata_Login_2eproto, 5, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -1782,6 +1812,254 @@ void MsgBindPhone::InternalSwap(MsgBindPhone* other) {
 }
 
 
+// ===================================================================
+
+class MsgCheckInInfo::_Internal {
+ public:
+};
+
+MsgCheckInInfo::MsgCheckInInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:MsgCheckInInfo)
+}
+MsgCheckInInfo::MsgCheckInInfo(const MsgCheckInInfo& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&check_days_, &from.check_days_,
+    static_cast<size_t>(reinterpret_cast<char*>(&can_pick_) -
+    reinterpret_cast<char*>(&check_days_)) + sizeof(can_pick_));
+  // @@protoc_insertion_point(copy_constructor:MsgCheckInInfo)
+}
+
+void MsgCheckInInfo::SharedCtor() {
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&check_days_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&can_pick_) -
+      reinterpret_cast<char*>(&check_days_)) + sizeof(can_pick_));
+}
+
+MsgCheckInInfo::~MsgCheckInInfo() {
+  // @@protoc_insertion_point(destructor:MsgCheckInInfo)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void MsgCheckInInfo::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void MsgCheckInInfo::ArenaDtor(void* object) {
+  MsgCheckInInfo* _this = reinterpret_cast< MsgCheckInInfo* >(object);
+  (void)_this;
+}
+void MsgCheckInInfo::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void MsgCheckInInfo::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const MsgCheckInInfo& MsgCheckInInfo::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgCheckInInfo_Login_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void MsgCheckInInfo::Clear() {
+// @@protoc_insertion_point(message_clear_start:MsgCheckInInfo)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&check_days_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&can_pick_) -
+      reinterpret_cast<char*>(&check_days_)) + sizeof(can_pick_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* MsgCheckInInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 check_days = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          check_days_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // bool is_open = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          is_open_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // bool can_pick = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          can_pick_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* MsgCheckInInfo::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:MsgCheckInInfo)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 check_days = 1;
+  if (this->check_days() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_check_days(), target);
+  }
+
+  // bool is_open = 2;
+  if (this->is_open() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(2, this->_internal_is_open(), target);
+  }
+
+  // bool can_pick = 3;
+  if (this->can_pick() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_can_pick(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:MsgCheckInInfo)
+  return target;
+}
+
+size_t MsgCheckInInfo::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:MsgCheckInInfo)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // int32 check_days = 1;
+  if (this->check_days() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_check_days());
+  }
+
+  // bool is_open = 2;
+  if (this->is_open() != 0) {
+    total_size += 1 + 1;
+  }
+
+  // bool can_pick = 3;
+  if (this->can_pick() != 0) {
+    total_size += 1 + 1;
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void MsgCheckInInfo::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:MsgCheckInInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  const MsgCheckInInfo* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgCheckInInfo>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgCheckInInfo)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgCheckInInfo)
+    MergeFrom(*source);
+  }
+}
+
+void MsgCheckInInfo::MergeFrom(const MsgCheckInInfo& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:MsgCheckInInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.check_days() != 0) {
+    _internal_set_check_days(from._internal_check_days());
+  }
+  if (from.is_open() != 0) {
+    _internal_set_is_open(from._internal_is_open());
+  }
+  if (from.can_pick() != 0) {
+    _internal_set_can_pick(from._internal_can_pick());
+  }
+}
+
+void MsgCheckInInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:MsgCheckInInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void MsgCheckInInfo::CopyFrom(const MsgCheckInInfo& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:MsgCheckInInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool MsgCheckInInfo::IsInitialized() const {
+  return true;
+}
+
+void MsgCheckInInfo::InternalSwap(MsgCheckInInfo* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(MsgCheckInInfo, can_pick_)
+      + sizeof(MsgCheckInInfo::can_pick_)
+      - PROTOBUF_FIELD_OFFSET(MsgCheckInInfo, check_days_)>(
+          reinterpret_cast<char*>(&check_days_),
+          reinterpret_cast<char*>(&other->check_days_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata MsgCheckInInfo::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::MsgPlayerLogin* Arena::CreateMaybeMessage< ::MsgPlayerLogin >(Arena* arena) {
@@ -1795,6 +2073,9 @@ template<> PROTOBUF_NOINLINE ::MsgModifyPassword* Arena::CreateMaybeMessage< ::M
 }
 template<> PROTOBUF_NOINLINE ::MsgBindPhone* Arena::CreateMaybeMessage< ::MsgBindPhone >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MsgBindPhone >(arena);
+}
+template<> PROTOBUF_NOINLINE ::MsgCheckInInfo* Arena::CreateMaybeMessage< ::MsgCheckInInfo >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::MsgCheckInInfo >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 
