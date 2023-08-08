@@ -27,8 +27,8 @@ enum EMsgIDLogin
 	MsgIDLogin_ModifyHeadResp			= 6;		//修改玩家头像返回(MsgCommonN32)
 	MsgIDLogin_ModifyPassword			= 7;		//修改玩家登录密码(MsgModifyPassword)
 	MsgIDLogin_ModifyPasswordResp		= 8;		//修改玩家登录密码返回(MsgCommonN32)
-	MsgIDLogin_BindPhone				= 9;		//绑定手机(MsgBindPhone)
-	MsgIDLogin_BindPhoneResp			= 10;		//绑定手机返回(MsgCommonN32)
+	MsgIDLogin_BindPhone				= 9;		//绑定手机(MsgCommonStr)
+	MsgIDLogin_BindPhoneResp			= 10;		//绑定手机返回(MsgSendPhoneCode)
 	MsgIDLogin_ReadMail					= 11;		//读取邮件(MsgCommonN32)
 	MsgIDLogin_PickMail					= 12;		//领取邮件(MsgCommonN32)
 	MsgIDLogin_PickMailResp				= 13;		//领取邮件返回
