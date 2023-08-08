@@ -70,7 +70,7 @@ message MsgTurntableHistoryData
 {
 	int32		user_id					= 1;	//玩家ID
 	int32		score					= 2;	//使用积分
-	int32		award					= 3;	//装懂奖励
+	int32		award					= 3;	//转盘奖励
 	int32		type					= 4;	//类型(0:个人 1:大赢家)
 	string		time					= 5;	//时间
 }
