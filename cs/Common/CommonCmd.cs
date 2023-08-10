@@ -209,7 +209,7 @@ public enum EMsgIDLogin {
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_QueryTurntableData")] MsgIdloginQueryTurntableData = 26,
   /// <summary>
-  ///查询转盘数据返回(MsgCheckInInfo)
+  ///查询转盘数据返回(MsgTurntableData)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_QueryTurntableDataResp")] MsgIdloginQueryTurntableDataResp = 27,
   /// <summary>

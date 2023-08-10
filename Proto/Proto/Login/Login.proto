@@ -49,7 +49,6 @@ message MsgBindPhone
 	string		password		= 3;	//密码
 }
 
-//配置信息
 message MsgCommonKV
 {
 	int32		k				= 1;	//key

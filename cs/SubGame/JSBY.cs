@@ -35,7 +35,7 @@ namespace JSBY {
             "ASgIImUKFFNwZWNpYWxNb25zdGVyQXR0YWNrEhIKClBvc2l0aW9uSWQYASAB",
             "KAUSEQoJTW9uc3RlcklkGAIgASgFEhEKCUNoYW5uZWxJZBgDIAEoBRITCgtQ",
             "cm9jZXNzVGltZRgEIAEoBSL1AQoPQ1NSZXF1ZXN0QXR0YWNrEg0KBVJhdGlv",
-            "GAEgASgCEgwKBE1vZGUYAiABKAUSEQoJTW9uc3RlcklkGAMgASgFEhIKClBv",
+            "GAEgASgFEgwKBE1vZGUYAiABKAUSEQoJTW9uc3RlcklkGAMgASgFEhIKClBv",
             "c2l0aW9uSWQYBCABKAUSFQoNVXNlUG9zaXRpb25JZBgFIAEoBRIYChBVc2VQ",
             "b3NpdGlvblRpbWVzGAYgASgFEhMKC1NwZWNpYWxUeXBlGAcgASgFEi8KC1Nw",
             "ZWNpYWxJbmZvGAggAygLMhouSlNCWS5TcGVjaWFsTW9uc3RlckF0dGFjaxIR",
@@ -2127,9 +2127,12 @@ namespace JSBY {
 
     /// <summary>Field number for the "Ratio" field.</summary>
     public const int RatioFieldNumber = 1;
-    private float ratio_;
+    private int ratio_;
+    /// <summary>
+    ///子弹金币
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public float Ratio {
+    public int Ratio {
       get { return ratio_; }
       set {
         ratio_ = value;
@@ -2139,6 +2142,9 @@ namespace JSBY {
     /// <summary>Field number for the "Mode" field.</summary>
     public const int ModeFieldNumber = 2;
     private int mode_;
+    /// <summary>
+    ///模式()
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int Mode {
       get { return mode_; }
@@ -2150,6 +2156,9 @@ namespace JSBY {
     /// <summary>Field number for the "MonsterId" field.</summary>
     public const int MonsterIdFieldNumber = 3;
     private int monsterId_;
+    /// <summary>
+    ///怪物kindID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int MonsterId {
       get { return monsterId_; }
@@ -2161,6 +2170,9 @@ namespace JSBY {
     /// <summary>Field number for the "PositionId" field.</summary>
     public const int PositionIdFieldNumber = 4;
     private int positionId_;
+    /// <summary>
+    ///位置ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int PositionId {
       get { return positionId_; }
@@ -2172,6 +2184,9 @@ namespace JSBY {
     /// <summary>Field number for the "UsePositionId" field.</summary>
     public const int UsePositionIdFieldNumber = 5;
     private int usePositionId_;
+    /// <summary>
+    ///无用
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int UsePositionId {
       get { return usePositionId_; }
@@ -2183,6 +2198,9 @@ namespace JSBY {
     /// <summary>Field number for the "UsePositionTimes" field.</summary>
     public const int UsePositionTimesFieldNumber = 6;
     private int usePositionTimes_;
+    /// <summary>
+    ///无用
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int UsePositionTimes {
       get { return usePositionTimes_; }
@@ -2194,6 +2212,8 @@ namespace JSBY {
     /// <summary>Field number for the "SpecialType" field.</summary>
     public const int SpecialTypeFieldNumber = 7;
     private int specialType_;
+    /// <summary>
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int SpecialType {
       get { return specialType_; }
@@ -2215,6 +2235,8 @@ namespace JSBY {
     /// <summary>Field number for the "DragonEnd" field.</summary>
     public const int DragonEndFieldNumber = 9;
     private bool dragonEnd_;
+    /// <summary>
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool DragonEnd {
       get { return dragonEnd_; }
@@ -2226,6 +2248,9 @@ namespace JSBY {
     /// <summary>Field number for the "HeroUniqueId" field.</summary>
     public const int HeroUniqueIdFieldNumber = 10;
     private int heroUniqueId_;
+    /// <summary>
+    ///英雄唯一ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int HeroUniqueId {
       get { return heroUniqueId_; }
@@ -2247,7 +2272,7 @@ namespace JSBY {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Ratio, other.Ratio)) return false;
+      if (Ratio != other.Ratio) return false;
       if (Mode != other.Mode) return false;
       if (MonsterId != other.MonsterId) return false;
       if (PositionId != other.PositionId) return false;
@@ -2263,7 +2288,7 @@ namespace JSBY {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Ratio != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Ratio);
+      if (Ratio != 0) hash ^= Ratio.GetHashCode();
       if (Mode != 0) hash ^= Mode.GetHashCode();
       if (MonsterId != 0) hash ^= MonsterId.GetHashCode();
       if (PositionId != 0) hash ^= PositionId.GetHashCode();
@@ -2289,9 +2314,9 @@ namespace JSBY {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Ratio != 0F) {
-        output.WriteRawTag(13);
-        output.WriteFloat(Ratio);
+      if (Ratio != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Ratio);
       }
       if (Mode != 0) {
         output.WriteRawTag(16);
@@ -2335,9 +2360,9 @@ namespace JSBY {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Ratio != 0F) {
-        output.WriteRawTag(13);
-        output.WriteFloat(Ratio);
+      if (Ratio != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Ratio);
       }
       if (Mode != 0) {
         output.WriteRawTag(16);
@@ -2381,8 +2406,8 @@ namespace JSBY {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Ratio != 0F) {
-        size += 1 + 4;
+      if (Ratio != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Ratio);
       }
       if (Mode != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Mode);
@@ -2420,7 +2445,7 @@ namespace JSBY {
       if (other == null) {
         return;
       }
-      if (other.Ratio != 0F) {
+      if (other.Ratio != 0) {
         Ratio = other.Ratio;
       }
       if (other.Mode != 0) {
@@ -2462,8 +2487,8 @@ namespace JSBY {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 13: {
-            Ratio = input.ReadFloat();
+          case 8: {
+            Ratio = input.ReadInt32();
             break;
           }
           case 16: {
@@ -2516,8 +2541,8 @@ namespace JSBY {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 13: {
-            Ratio = input.ReadFloat();
+          case 8: {
+            Ratio = input.ReadInt32();
             break;
           }
           case 16: {
@@ -9000,6 +9025,9 @@ namespace JSBY {
     /// <summary>Field number for the "HeroId" field.</summary>
     public const int HeroIdFieldNumber = 1;
     private int heroId_;
+    /// <summary>
+    ///kindID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int HeroId {
       get { return heroId_; }
@@ -9011,6 +9039,9 @@ namespace JSBY {
     /// <summary>Field number for the "PositionId" field.</summary>
     public const int PositionIdFieldNumber = 2;
     private int positionId_;
+    /// <summary>
+    ///位置ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int PositionId {
       get { return positionId_; }
@@ -9022,6 +9053,9 @@ namespace JSBY {
     /// <summary>Field number for the "IsAtk" field.</summary>
     public const int IsAtkFieldNumber = 3;
     private bool isAtk_;
+    /// <summary>
+    ///是否自动攻击
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IsAtk {
       get { return isAtk_; }
@@ -9033,6 +9067,9 @@ namespace JSBY {
     /// <summary>Field number for the "Timestamp" field.</summary>
     public const int TimestampFieldNumber = 4;
     private int timestamp_;
+    /// <summary>
+    ///todo 暂时不管
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int Timestamp {
       get { return timestamp_; }
@@ -9044,6 +9081,9 @@ namespace JSBY {
     /// <summary>Field number for the "TargetPositionId" field.</summary>
     public const int TargetPositionIdFieldNumber = 5;
     private int targetPositionId_;
+    /// <summary>
+    ///锁定目标ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int TargetPositionId {
       get { return targetPositionId_; }
@@ -9055,6 +9095,9 @@ namespace JSBY {
     /// <summary>Field number for the "UniqueId" field.</summary>
     public const int UniqueIdFieldNumber = 6;
     private int uniqueId_;
+    /// <summary>
+    ///唯一ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int UniqueId {
       get { return uniqueId_; }

@@ -1947,13 +1947,13 @@ class CSRequestAttack PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::SpecialMonsterAttack >&
       specialinfo() const;
 
-  // float Ratio = 1;
+  // int32 Ratio = 1;
   void clear_ratio();
-  float ratio() const;
-  void set_ratio(float value);
+  ::PROTOBUF_NAMESPACE_ID::int32 ratio() const;
+  void set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  float _internal_ratio() const;
-  void _internal_set_ratio(float value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_ratio() const;
+  void _internal_set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 Mode = 2;
@@ -2036,7 +2036,7 @@ class CSRequestAttack PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::JSBY::SpecialMonsterAttack > specialinfo_;
-  float ratio_;
+  ::PROTOBUF_NAMESPACE_ID::int32 ratio_;
   ::PROTOBUF_NAMESPACE_ID::int32 mode_;
   ::PROTOBUF_NAMESPACE_ID::int32 monsterid_;
   ::PROTOBUF_NAMESPACE_ID::int32 positionid_;
@@ -21513,22 +21513,22 @@ inline void SpecialMonsterAttack::set_processtime(::PROTOBUF_NAMESPACE_ID::int32
 
 // CSRequestAttack
 
-// float Ratio = 1;
+// int32 Ratio = 1;
 inline void CSRequestAttack::clear_ratio() {
   ratio_ = 0;
 }
-inline float CSRequestAttack::_internal_ratio() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 CSRequestAttack::_internal_ratio() const {
   return ratio_;
 }
-inline float CSRequestAttack::ratio() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 CSRequestAttack::ratio() const {
   // @@protoc_insertion_point(field_get:JSBY.CSRequestAttack.Ratio)
   return _internal_ratio();
 }
-inline void CSRequestAttack::_internal_set_ratio(float value) {
+inline void CSRequestAttack::_internal_set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   ratio_ = value;
 }
-inline void CSRequestAttack::set_ratio(float value) {
+inline void CSRequestAttack::set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_ratio(value);
   // @@protoc_insertion_point(field_set:JSBY.CSRequestAttack.Ratio)
 }

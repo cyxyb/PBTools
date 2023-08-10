@@ -296,16 +296,16 @@ message SpecialMonsterAttack
 }
 message CSRequestAttack
 {
-	 float Ratio = 1;
-	 int32 Mode = 2;
-	 int32 MonsterId = 3;
-	 int32 PositionId = 4;
-	 int32 UsePositionId = 5;
-	 int32 UsePositionTimes = 6;
-	 int32 SpecialType = 7;
+	 int32 Ratio = 1;					//子弹金币
+	 int32 Mode = 2;					//模式()
+	 int32 MonsterId = 3;				//怪物kindID
+	 int32 PositionId = 4;				//位置ID
+	 int32 UsePositionId = 5;			//无用
+	 int32 UsePositionTimes = 6;		//无用
+	 int32 SpecialType = 7;				//
 	 repeated SpecialMonsterAttack SpecialInfo = 8;
-	 bool DragonEnd = 9;
-	 int32 HeroUniqueId = 10;
+	 bool DragonEnd = 9;				//
+	 int32 HeroUniqueId = 10;			//英雄唯一ID
 }
 message SCRequestAttack
 {
@@ -473,12 +473,12 @@ message SCButtonRecords
 }
 message TowerHeroInfo
 {
-	 int32 HeroId = 1;
-	 int32 PositionId = 2;
-	 bool IsAtk = 3;
-	 int32 Timestamp = 4;
-	 int32 TargetPositionId = 5;
-	 int32 UniqueId = 6;
+	 int32 HeroId = 1;				//kindID
+	 int32 PositionId = 2;			//位置ID
+	 bool IsAtk = 3;				//是否自动攻击
+	 int32 Timestamp = 4;			//todo 暂时不管
+	 int32 TargetPositionId = 5;	//锁定目标ID
+	 int32 UniqueId = 6;			//唯一ID
 }
 message TowerHeroAtkInfo
 {
@@ -512,13 +512,13 @@ message SCLeaveTowerTable
 }
 message TowerMonster
 {
-	 int32 Position = 1;
-	 int32 ProcessTime = 2;
-	 int32 ReadyTime = 3;
-	 int32 MonsterID = 4;
-	 repeated int32 Buff = 5;
-	 bool IsConnect = 6;
-	 int32 Level = 7;
+	 int32 Position = 1;			//ID
+	 int32 ProcessTime = 2;			//已过时间
+	 int32 ReadyTime = 3;			//出生时间
+	 int32 MonsterID = 4;			//kindID
+	 repeated int32 Buff = 5;		//todo
+	 bool IsConnect = 6;			//是否是连接怪
+	 int32 Level = 7;				//倍数
 }
 message ChannelTowerMonster
 {

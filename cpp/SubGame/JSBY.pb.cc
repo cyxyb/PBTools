@@ -3518,7 +3518,7 @@ const char descriptor_table_protodef_JSBY_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "MonsterAttack\022\022\n\nPositionId\030\001 \001(\005\022\021\n\tMon"
   "sterId\030\002 \001(\005\022\021\n\tChannelId\030\003 \001(\005\022\023\n\013Proce"
   "ssTime\030\004 \001(\005\"\365\001\n\017CSRequestAttack\022\r\n\005Rati"
-  "o\030\001 \001(\002\022\014\n\004Mode\030\002 \001(\005\022\021\n\tMonsterId\030\003 \001(\005"
+  "o\030\001 \001(\005\022\014\n\004Mode\030\002 \001(\005\022\021\n\tMonsterId\030\003 \001(\005"
   "\022\022\n\nPositionId\030\004 \001(\005\022\025\n\rUsePositionId\030\005 "
   "\001(\005\022\030\n\020UsePositionTimes\030\006 \001(\005\022\023\n\013Special"
   "Type\030\007 \001(\005\022/\n\013SpecialInfo\030\010 \003(\0132\032.JSBY.S"
@@ -5762,11 +5762,11 @@ const char* CSRequestAttack::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // float Ratio = 1;
+      // int32 Ratio = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 13)) {
-          ratio_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
-          ptr += sizeof(float);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          ratio_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // int32 Mode = 2;
@@ -5865,10 +5865,10 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // float Ratio = 1;
-  if (!(this->ratio() <= 0 && this->ratio() >= 0)) {
+  // int32 Ratio = 1;
+  if (this->ratio() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(1, this->_internal_ratio(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_ratio(), target);
   }
 
   // int32 Mode = 2;
@@ -5950,9 +5950,11 @@ size_t CSRequestAttack::ByteSizeLong() const {
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  // float Ratio = 1;
-  if (!(this->ratio() <= 0 && this->ratio() >= 0)) {
-    total_size += 1 + 4;
+  // int32 Ratio = 1;
+  if (this->ratio() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_ratio());
   }
 
   // int32 Mode = 2;
@@ -6041,7 +6043,7 @@ void CSRequestAttack::MergeFrom(const CSRequestAttack& from) {
   (void) cached_has_bits;
 
   specialinfo_.MergeFrom(from.specialinfo_);
-  if (!(from.ratio() <= 0 && from.ratio() >= 0)) {
+  if (from.ratio() != 0) {
     _internal_set_ratio(from._internal_ratio());
   }
   if (from.mode() != 0) {

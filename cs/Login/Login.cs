@@ -1750,9 +1750,6 @@ public sealed partial class MsgBindPhone : pb::IMessage<MsgBindPhone>
 
 }
 
-/// <summary>
-///配置信息
-/// </summary>
 public sealed partial class MsgCommonKV : pb::IMessage<MsgCommonKV>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     , pb::IBufferMessage
@@ -2059,7 +2056,7 @@ public sealed partial class MsgCheckInInfo : pb::IMessage<MsgCheckInInfo>
       = pb::FieldCodec.ForMessage(34, global::MsgCommonKV.Parser);
   private readonly pbc::RepeatedField<global::MsgCommonKV> checkInCfg_ = new pbc::RepeatedField<global::MsgCommonKV>();
   /// <summary>
-  ///签到配置
+  ///签到配置(k:天数 v:奖励)
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public pbc::RepeatedField<global::MsgCommonKV> CheckInCfg {
@@ -2328,7 +2325,7 @@ public sealed partial class MsgTurntableHistoryData : pb::IMessage<MsgTurntableH
   public const int AwardFieldNumber = 3;
   private int award_;
   /// <summary>
-  ///装懂奖励
+  ///转盘奖励
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int Award {
@@ -2693,7 +2690,7 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
       = pb::FieldCodec.ForMessage(42, global::MsgCommonKV.Parser);
   private readonly pbc::RepeatedField<global::MsgCommonKV> turntableCfg_ = new pbc::RepeatedField<global::MsgCommonKV>();
   /// <summary>
-  ///转盘配置
+  ///转盘配置(k:转盘索引 v:奖励)
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public pbc::RepeatedField<global::MsgCommonKV> TurntableCfg {
