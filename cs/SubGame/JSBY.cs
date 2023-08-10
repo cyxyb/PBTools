@@ -10566,6 +10566,9 @@ namespace JSBY {
     /// <summary>Field number for the "Position" field.</summary>
     public const int PositionFieldNumber = 1;
     private int position_;
+    /// <summary>
+    ///ID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int Position {
       get { return position_; }
@@ -10577,6 +10580,9 @@ namespace JSBY {
     /// <summary>Field number for the "ProcessTime" field.</summary>
     public const int ProcessTimeFieldNumber = 2;
     private int processTime_;
+    /// <summary>
+    ///已过时间
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int ProcessTime {
       get { return processTime_; }
@@ -10588,6 +10594,9 @@ namespace JSBY {
     /// <summary>Field number for the "ReadyTime" field.</summary>
     public const int ReadyTimeFieldNumber = 3;
     private int readyTime_;
+    /// <summary>
+    ///出生时间
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int ReadyTime {
       get { return readyTime_; }
@@ -10599,6 +10608,9 @@ namespace JSBY {
     /// <summary>Field number for the "MonsterID" field.</summary>
     public const int MonsterIDFieldNumber = 4;
     private int monsterID_;
+    /// <summary>
+    ///kindID
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int MonsterID {
       get { return monsterID_; }
@@ -10612,6 +10624,9 @@ namespace JSBY {
     private static readonly pb::FieldCodec<int> _repeated_buff_codec
         = pb::FieldCodec.ForInt32(42);
     private readonly pbc::RepeatedField<int> buff_ = new pbc::RepeatedField<int>();
+    /// <summary>
+    ///todo
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<int> Buff {
       get { return buff_; }
@@ -10620,6 +10635,9 @@ namespace JSBY {
     /// <summary>Field number for the "IsConnect" field.</summary>
     public const int IsConnectFieldNumber = 6;
     private bool isConnect_;
+    /// <summary>
+    ///是否是连接怪
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool IsConnect {
       get { return isConnect_; }
@@ -10631,6 +10649,9 @@ namespace JSBY {
     /// <summary>Field number for the "Level" field.</summary>
     public const int LevelFieldNumber = 7;
     private int level_;
+    /// <summary>
+    ///倍数
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int Level {
       get { return level_; }
