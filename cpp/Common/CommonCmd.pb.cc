@@ -28,7 +28,7 @@ const char descriptor_table_protodef_CommonCmd_2eproto[] PROTOBUF_SECTION_VARIAB
   "_SubGame\020\322\017*k\n\010EResCode\022\021\n\rEResCode_NULL"
   "\020\000\022\030\n\024EResCode_InvilidMail\020\001\022\031\n\025EResCode"
   "_MailRecalled\020\002\022\027\n\023EResCode_MailPicked\020\003"
-  "*\251\007\n\013EMsgIDLogin\022\023\n\017MsgIDLogin_Null\020\000\022\024\n"
+  "*\245\014\n\013EMsgIDLogin\022\023\n\017MsgIDLogin_Null\020\000\022\024\n"
   "\020MsgIDLogin_Login\020\001\022\030\n\024MsgIDLogin_LoginR"
   "esp\020\002\022\035\n\031MsgIDLogin_ModifyNickName\020\003\022!\n\035"
   "MsgIDLogin_ModifyNickNameResp\020\004\022\031\n\025MsgID"
@@ -36,37 +36,53 @@ const char descriptor_table_protodef_CommonCmd_2eproto[] PROTOBUF_SECTION_VARIAB
   "eadResp\020\006\022\035\n\031MsgIDLogin_ModifyPassword\020\007"
   "\022!\n\035MsgIDLogin_ModifyPasswordResp\020\010\022\030\n\024M"
   "sgIDLogin_BindPhone\020\t\022\034\n\030MsgIDLogin_Bind"
-  "PhoneResp\020\n\022\027\n\023MsgIDLogin_ReadMail\020\013\022\027\n\023"
-  "MsgIDLogin_PickMail\020\014\022\033\n\027MsgIDLogin_Pick"
-  "MailResp\020\r\022\031\n\025MsgIDLogin_RecallMail\020\016\022\035\n"
-  "\031MsgIDLogin_RecallMailResp\020\017\022 \n\034MsgIDLog"
-  "in_DeleteAllReadMail\020\020\022$\n MsgIDLogin_Del"
-  "eteAllReadMailResp\020\021\022\030\n\024MsgIDLogin_Phone"
-  "Code\020\022\022\034\n\030MsgIDLogin_PhoneCodeResp\020\023\022!\n\035"
-  "MsgIDLogin_SyncPlayerGoldResp\020\024\022#\n\037MsgID"
-  "Login_NotifyGameServerList\020\025\022\037\n\033MsgIDLog"
-  "in_QueryCheckInInfo\020\026\022#\n\037MsgIDLogin_Quer"
-  "yCheckInInfoResp\020\027\022\034\n\030MsgIDLogin_PlayerC"
-  "heckIn\020\030\022 \n\034MsgIDLogin_PlayerCheckInResp"
-  "\020\031\022!\n\035MsgIDLogin_QueryTurntableData\020\032\022%\n"
-  "!MsgIDLogin_QueryTurntableDataResp\020\033\022\034\n\030"
-  "MsgIDLogin_PlayTurntable\020\034\022 \n\034MsgIDLogin"
-  "_PlayTurntableResp\020\035*\306\004\n\nEMsgIDGame\022\022\n\016M"
-  "sgIDGame_Null\020\000\022\024\n\017MsgIDGame_Login\020\351\007\022\030\n"
-  "\023MsgIDGame_LoginResp\020\352\007\022\036\n\031MsgIDGame_Squ"
-  "eezeSeatResp\020\353\007\022\025\n\020MsgIDGame_Logout\020\354\007\022\032"
-  "\n\025MsgIDGame_AutoSitDown\020\355\007\022\032\n\025MsgIDGame_"
-  "SitDownResp\020\356\007\022!\n\034MsgIDGame_SyncPlayerIn"
-  "foResp\020\357\007\022&\n!MsgIDGame_NotifyPlayerStand"
-  "UpResp\020\360\007\022#\n\036MsgIDGame_SyncPlayersScoreR"
-  "esp\020\361\007\022\034\n\027MsgIDGame_SendGameSence\020\362\007\022 \n\033"
-  "MsgIDGame_SendGameSenceResp\020\363\007\022 \n\033MsgIDG"
-  "ame_NotifyMessageResp\020\364\007\022\031\n\024MsgIDGame_Cr"
-  "eateRoom\020\365\007\022\027\n\022MsgIDGame_JoinRoom\020\366\007\022\032\n\025"
-  "MsgIDGame_QueryRecord\020\367\007\022#\n\036MsgIDGame_Qu"
-  "eryRoundRecordResp\020\370\007\022!\n\034MsgIDGame_Query"
-  "DayRecordResp\020\371\007\022\033\n\026MsgIDGame_AddOneReco"
-  "rd\020\372\007b\006proto3"
+  "PhoneResp\020\n\022\026\n\022MsgIDMail_ReadMail\020\013\022\026\n\022M"
+  "sgIDMail_PickMail\020\014\022\032\n\026MsgIDMail_PickMai"
+  "lResp\020\r\022\030\n\024MsgIDMail_RecallMail\020\016\022\034\n\030Msg"
+  "IDMail_RecallMailResp\020\017\022\037\n\033MsgIDMail_Del"
+  "eteAllReadMail\020\020\022#\n\037MsgIDMail_DeleteAllR"
+  "eadMailResp\020\021\022\030\n\024MsgIDLogin_PhoneCode\020\022\022"
+  "\034\n\030MsgIDLogin_PhoneCodeResp\020\023\022!\n\035MsgIDLo"
+  "gin_SyncPlayerGoldResp\020\024\022#\n\037MsgIDLogin_N"
+  "otifyGameServerList\020\025\022\036\n\032MsgIDSign_Query"
+  "CheckInInfo\020\026\022\"\n\036MsgIDSign_QueryCheckInI"
+  "nfoResp\020\027\022\033\n\027MsgIDSign_PlayerCheckIn\020\030\022\037"
+  "\n\033MsgIDSign_PlayerCheckInResp\020\031\022\034\n\030MsgID"
+  "Turntable_QueryData\020\032\022 \n\034MsgIDTurntable_"
+  "QueryDataResp\020\033\022 \n\034MsgIDTurntable_PlayTu"
+  "rntable\020\034\022$\n MsgIDTurntable_PlayTurntabl"
+  "eResp\020\035\022\032\n\026MsgIDMail_SyncMailList\020\036\022\036\n\032M"
+  "sgIDMail_SyncMailListResp\020\037\022\031\n\025MsgIDMail"
+  "_AddMailResp\020 \022\030\n\024MsgIDShare_QueryInfo\020!"
+  "\022\034\n\030MsgIDShare_QueryInfoResp\020\"\022\031\n\025MsgIDS"
+  "hare_BindParent\020#\022\035\n\031MsgIDShare_BindPare"
+  "ntResp\020$\022\"\n\036MsgIDShare_QueryInviteAwardC"
+  "fg\020%\022&\n\"MsgIDShare_QueryInviteAwardCfgRe"
+  "sp\020&\022\036\n\032MsgIDShare_PickInviteAward\020\'\022\"\n\036"
+  "MsgIDShare_PickInviteAwardResp\020(\022 \n\034MsgI"
+  "DShare_QueryRechargeInfo\020)\022$\n MsgIDShare"
+  "_QueryRechargeInfoResp\020*\022(\n$MsgIDShare_Q"
+  "ueryRechargeRebateRecord\020+\022,\n(MsgIDShare"
+  "_QueryRechargeRebateRecordResp\020,\022!\n\035MsgI"
+  "DShare_PickRechargeRebate\020-\022%\n!MsgIDShar"
+  "e_PickRechargeRebateResp\020.\022\037\n\033MsgIDShare"
+  "_AgencyInfoRebate\020/\022#\n\037MsgIDShare_Agency"
+  "InfoRebateResp\0200*\306\004\n\nEMsgIDGame\022\022\n\016MsgID"
+  "Game_Null\020\000\022\024\n\017MsgIDGame_Login\020\351\007\022\030\n\023Msg"
+  "IDGame_LoginResp\020\352\007\022\036\n\031MsgIDGame_Squeeze"
+  "SeatResp\020\353\007\022\025\n\020MsgIDGame_Logout\020\354\007\022\032\n\025Ms"
+  "gIDGame_AutoSitDown\020\355\007\022\032\n\025MsgIDGame_SitD"
+  "ownResp\020\356\007\022!\n\034MsgIDGame_SyncPlayerInfoRe"
+  "sp\020\357\007\022&\n!MsgIDGame_NotifyPlayerStandUpRe"
+  "sp\020\360\007\022#\n\036MsgIDGame_SyncPlayersScoreResp\020"
+  "\361\007\022\034\n\027MsgIDGame_SendGameSence\020\362\007\022 \n\033MsgI"
+  "DGame_SendGameSenceResp\020\363\007\022 \n\033MsgIDGame_"
+  "NotifyMessageResp\020\364\007\022\031\n\024MsgIDGame_Create"
+  "Room\020\365\007\022\027\n\022MsgIDGame_JoinRoom\020\366\007\022\032\n\025MsgI"
+  "DGame_QueryRecord\020\367\007\022#\n\036MsgIDGame_QueryR"
+  "oundRecordResp\020\370\007\022!\n\034MsgIDGame_QueryDayR"
+  "ecordResp\020\371\007\022\033\n\026MsgIDGame_AddOneRecord\020\372"
+  "\007b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_CommonCmd_2eproto_deps[1] = {
 };
@@ -74,7 +90,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Com
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_CommonCmd_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_CommonCmd_2eproto = {
-  false, false, descriptor_table_protodef_CommonCmd_2eproto, "CommonCmd.proto", 1773,
+  false, false, descriptor_table_protodef_CommonCmd_2eproto, "CommonCmd.proto", 2409,
   &descriptor_table_CommonCmd_2eproto_once, descriptor_table_CommonCmd_2eproto_sccs, descriptor_table_CommonCmd_2eproto_deps, 0, 0,
   schemas, file_default_instances, TableStruct_CommonCmd_2eproto::offsets,
   file_level_metadata_CommonCmd_2eproto, 0, file_level_enum_descriptors_CommonCmd_2eproto, file_level_service_descriptors_CommonCmd_2eproto,
@@ -150,6 +166,25 @@ bool EMsgIDLogin_IsValid(int value) {
     case 27:
     case 28:
     case 29:
+    case 30:
+    case 31:
+    case 32:
+    case 33:
+    case 34:
+    case 35:
+    case 36:
+    case 37:
+    case 38:
+    case 39:
+    case 40:
+    case 41:
+    case 42:
+    case 43:
+    case 44:
+    case 45:
+    case 46:
+    case 47:
+    case 48:
       return true;
     default:
       return false;
