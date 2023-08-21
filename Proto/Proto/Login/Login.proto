@@ -85,3 +85,84 @@ message MsgTurntableData
 	repeated MsgTurntableHistoryData history = 6;	//历史数据
 }
 
+
+//邮件列表
+message MsgMailsInfo
+{
+	repeated	MsgMailData mails			= 1;	//邮件列表
+}
+
+//邮件信息
+message MsgMailData
+{
+	int32		mail_id						= 1;	//邮件id
+	int32		send_user_id				= 2;	//发送者ID
+	int32		send_time					= 3;	//发送时间
+	string		title						= 4;	//邮件标题
+	string		content				 		= 5;	//邮件内容
+	int64		gold						= 6;	//邮件附件(只有金币)
+	bool		is_read						= 7;	//是否已读
+	bool		is_claim					= 8;	//是否领取
+	int32		to_user_id					= 9;	//接收者ID
+}
+
+//分享信息
+message MsgShareData
+{
+	string		invite_code					= 1;	//邀请码
+	repeated int32		bind_list			= 2;	//绑定下级
+}
+
+//绑定上级
+message MsgBindParentData
+{
+	string		strCode						= 1;	//上级邀请码
+}
+
+//邀请奖励配置
+message MsgInviteAwardInfo
+{
+	int32		inviteNum					= 1;	//已经邀请的人数
+	int32		pickIndex					= 2;	//已经领取的奖励
+	repeated MsgInviteAwardConfig awardCfg	= 3;	//奖励配置
+}
+
+//邀请奖励配置
+message MsgInviteAwardConfig
+{
+	int32		inviteNum					= 1;	//邀请人数
+	int32		award						= 2;	//奖励数量
+}
+
+//充值信息
+message MsgRechargeInfo
+{
+	int32		inviteNum					= 1;	//邀请人数
+	int64		todayAward					= 2;	//今日奖励
+	int64		totalAward					= 3;	//总奖励
+	int64		canPickAmount				= 4;	//可以领取的数量
+	string		inviteCode					= 5;	//自己邀请码
+}
+
+//代理返利
+message MsgQueryRebateRecordInfo
+{
+	repeated MsgQueryRebateRecord	queryRebateRecord	= 1;	//记录
+}
+
+//代理返利
+message MsgQueryRebateRecord
+{
+	int32		rechargeUserId				= 1;	//user_id
+	int32		rechargeAmount				= 2;	//充值数量
+	int32		rebate						= 3;	//返利
+}
+
+//忘记密码
+message MsgForgetPassword
+{
+	int32		client_type					= 1;	//包id
+	string		phone						= 2;	//电话号码
+	int32		code						= 3;	//验证码
+	string		new_password				= 4;	//新密码
+}
