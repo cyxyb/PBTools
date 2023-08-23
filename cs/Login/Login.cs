@@ -46,22 +46,25 @@ public static partial class LoginReflection {
           "X3Njb3JlGAMgASgFEhIKCmxpbWl0X3R1cm4YBCABKAUSIwoNdHVybnRhYmxl",
           "X2NmZxgFIAMoCzIMLk1zZ0NvbW1vbktWEikKB2hpc3RvcnkYBiADKAsyGC5N",
           "c2dUdXJudGFibGVIaXN0b3J5RGF0YSIrCgxNc2dNYWlsc0luZm8SGwoFbWFp",
-          "bHMYASADKAsyDC5Nc2dNYWlsRGF0YSKSAQoLTXNnTWFpbERhdGESDgoGbWFp",
-          "bElkGAEgASgFEhIKCnNlbmRVc2VySWQYAiABKAUSEAoIc2VuZFRpbWUYAyAB",
-          "KAUSDQoFdGl0bGUYBCABKAkSDwoHY29udGVudBgFIAEoCRIMCgRnb2xkGAYg",
-          "ASgDEg4KBmlzUmVhZBgHIAEoCBIPCgdpc0NsYWltGAggASgIIjQKDE1zZ1No",
-          "YXJlRGF0YRISCgppbnZpdGVDb2RlGAEgASgJEhAKCGJpbmRMaXN0GAIgAygF",
-          "IiQKEU1zZ0JpbmRQYXJlbnREYXRhEg8KB3N0ckNvZGUYASABKAkiYwoSTXNn",
-          "SW52aXRlQXdhcmRJbmZvEhEKCWludml0ZU51bRgBIAEoBRIRCglwaWNrSW5k",
-          "ZXgYAiABKAUSJwoIYXdhcmRDZmcYAyADKAsyFS5Nc2dJbnZpdGVBd2FyZENv",
-          "bmZpZyI4ChRNc2dJbnZpdGVBd2FyZENvbmZpZxIRCglpbnZpdGVOdW0YASAB",
-          "KAUSDQoFYXdhcmQYAiABKAUidwoPTXNnUmVjaGFyZ2VJbmZvEhEKCWludml0",
-          "ZU51bRgBIAEoBRISCgp0b2RheUF3YXJkGAIgASgDEhIKCnRvdGFsQXdhcmQY",
-          "AyABKAMSFQoNY2FuUGlja0Ftb3VudBgEIAEoAxISCgppbnZpdGVDb2RlGAUg",
-          "ASgJIkwKGE1zZ1F1ZXJ5UmViYXRlUmVjb3JkSW5mbxIwChFxdWVyeVJlYmF0",
-          "ZVJlY29yZBgBIAMoCzIVLk1zZ1F1ZXJ5UmViYXRlUmVjb3JkIlYKFE1zZ1F1",
-          "ZXJ5UmViYXRlUmVjb3JkEhYKDnJlY2hhcmdlVXNlcklkGAEgASgFEhYKDnJl",
-          "Y2hhcmdlQW1vdW50GAIgASgFEg4KBnJlYmF0ZRgDIAEoBWIGcHJvdG8z"));
+          "bHMYASADKAsyDC5Nc2dNYWlsRGF0YSKsAQoLTXNnTWFpbERhdGESDwoHbWFp",
+          "bF9pZBgBIAEoBRIUCgxzZW5kX3VzZXJfaWQYAiABKAUSEQoJc2VuZF90aW1l",
+          "GAMgASgFEg0KBXRpdGxlGAQgASgJEg8KB2NvbnRlbnQYBSABKAkSDAoEZ29s",
+          "ZBgGIAEoAxIPCgdpc19yZWFkGAcgASgIEhAKCGlzX2NsYWltGAggASgIEhIK",
+          "CnRvX3VzZXJfaWQYCSABKAUiNgoMTXNnU2hhcmVEYXRhEhMKC2ludml0ZV9j",
+          "b2RlGAEgASgJEhEKCWJpbmRfbGlzdBgCIAMoBSIkChFNc2dCaW5kUGFyZW50",
+          "RGF0YRIPCgdzdHJDb2RlGAEgASgJImMKEk1zZ0ludml0ZUF3YXJkSW5mbxIR",
+          "CglpbnZpdGVOdW0YASABKAUSEQoJcGlja0luZGV4GAIgASgFEicKCGF3YXJk",
+          "Q2ZnGAMgAygLMhUuTXNnSW52aXRlQXdhcmRDb25maWciOAoUTXNnSW52aXRl",
+          "QXdhcmRDb25maWcSEQoJaW52aXRlTnVtGAEgASgFEg0KBWF3YXJkGAIgASgF",
+          "IncKD01zZ1JlY2hhcmdlSW5mbxIRCglpbnZpdGVOdW0YASABKAUSEgoKdG9k",
+          "YXlBd2FyZBgCIAEoAxISCgp0b3RhbEF3YXJkGAMgASgDEhUKDWNhblBpY2tB",
+          "bW91bnQYBCABKAMSEgoKaW52aXRlQ29kZRgFIAEoCSJMChhNc2dRdWVyeVJl",
+          "YmF0ZVJlY29yZEluZm8SMAoRcXVlcnlSZWJhdGVSZWNvcmQYASADKAsyFS5N",
+          "c2dRdWVyeVJlYmF0ZVJlY29yZCJWChRNc2dRdWVyeVJlYmF0ZVJlY29yZBIW",
+          "Cg5yZWNoYXJnZVVzZXJJZBgBIAEoBRIWCg5yZWNoYXJnZUFtb3VudBgCIAEo",
+          "BRIOCgZyZWJhdGUYAyABKAUiWwoRTXNnRm9yZ2V0UGFzc3dvcmQSEwoLY2xp",
+          "ZW50X3R5cGUYASABKAUSDQoFcGhvbmUYAiABKAkSDAoEY29kZRgDIAEoBRIU",
+          "CgxuZXdfcGFzc3dvcmQYBCABKAliBnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -74,14 +77,15 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurntableHistoryData), global::MsgTurntableHistoryData.Parser, new[]{ "UserId", "Score", "Award", "Type", "Time" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurntableData), global::MsgTurntableData.Parser, new[]{ "PlayNum", "Score", "NeedScore", "LimitTurn", "TurntableCfg", "History" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgMailsInfo), global::MsgMailsInfo.Parser, new[]{ "Mails" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgMailData), global::MsgMailData.Parser, new[]{ "MailId", "SendUserId", "SendTime", "Title", "Content", "Gold", "IsRead", "IsClaim" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgMailData), global::MsgMailData.Parser, new[]{ "MailId", "SendUserId", "SendTime", "Title", "Content", "Gold", "IsRead", "IsClaim", "ToUserId" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgShareData), global::MsgShareData.Parser, new[]{ "InviteCode", "BindList" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBindParentData), global::MsgBindParentData.Parser, new[]{ "StrCode" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgInviteAwardInfo), global::MsgInviteAwardInfo.Parser, new[]{ "InviteNum", "PickIndex", "AwardCfg" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgInviteAwardConfig), global::MsgInviteAwardConfig.Parser, new[]{ "InviteNum", "Award" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgRechargeInfo), global::MsgRechargeInfo.Parser, new[]{ "InviteNum", "TodayAward", "TotalAward", "CanPickAmount", "InviteCode" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgQueryRebateRecordInfo), global::MsgQueryRebateRecordInfo.Parser, new[]{ "QueryRebateRecord" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgQueryRebateRecord), global::MsgQueryRebateRecord.Parser, new[]{ "RechargeUserId", "RechargeAmount", "Rebate" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgQueryRebateRecord), global::MsgQueryRebateRecord.Parser, new[]{ "RechargeUserId", "RechargeAmount", "Rebate" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgForgetPassword), global::MsgForgetPassword.Parser, new[]{ "ClientType", "Phone", "Code", "NewPassword" }, null, null, null, null)
         }));
   }
   #endregion
@@ -3165,6 +3169,7 @@ public sealed partial class MsgMailData : pb::IMessage<MsgMailData>
     gold_ = other.gold_;
     isRead_ = other.isRead_;
     isClaim_ = other.isClaim_;
+    toUserId_ = other.toUserId_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -3173,7 +3178,7 @@ public sealed partial class MsgMailData : pb::IMessage<MsgMailData>
     return new MsgMailData(this);
   }
 
-  /// <summary>Field number for the "mailId" field.</summary>
+  /// <summary>Field number for the "mail_id" field.</summary>
   public const int MailIdFieldNumber = 1;
   private int mailId_;
   /// <summary>
@@ -3187,7 +3192,7 @@ public sealed partial class MsgMailData : pb::IMessage<MsgMailData>
     }
   }
 
-  /// <summary>Field number for the "sendUserId" field.</summary>
+  /// <summary>Field number for the "send_user_id" field.</summary>
   public const int SendUserIdFieldNumber = 2;
   private int sendUserId_;
   /// <summary>
@@ -3201,7 +3206,7 @@ public sealed partial class MsgMailData : pb::IMessage<MsgMailData>
     }
   }
 
-  /// <summary>Field number for the "sendTime" field.</summary>
+  /// <summary>Field number for the "send_time" field.</summary>
   public const int SendTimeFieldNumber = 3;
   private int sendTime_;
   /// <summary>
@@ -3257,7 +3262,7 @@ public sealed partial class MsgMailData : pb::IMessage<MsgMailData>
     }
   }
 
-  /// <summary>Field number for the "isRead" field.</summary>
+  /// <summary>Field number for the "is_read" field.</summary>
   public const int IsReadFieldNumber = 7;
   private bool isRead_;
   /// <summary>
@@ -3271,7 +3276,7 @@ public sealed partial class MsgMailData : pb::IMessage<MsgMailData>
     }
   }
 
-  /// <summary>Field number for the "isClaim" field.</summary>
+  /// <summary>Field number for the "is_claim" field.</summary>
   public const int IsClaimFieldNumber = 8;
   private bool isClaim_;
   /// <summary>
@@ -3282,6 +3287,20 @@ public sealed partial class MsgMailData : pb::IMessage<MsgMailData>
     get { return isClaim_; }
     set {
       isClaim_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "to_user_id" field.</summary>
+  public const int ToUserIdFieldNumber = 9;
+  private int toUserId_;
+  /// <summary>
+  ///接收者ID
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int ToUserId {
+    get { return toUserId_; }
+    set {
+      toUserId_ = value;
     }
   }
 
@@ -3306,6 +3325,7 @@ public sealed partial class MsgMailData : pb::IMessage<MsgMailData>
     if (Gold != other.Gold) return false;
     if (IsRead != other.IsRead) return false;
     if (IsClaim != other.IsClaim) return false;
+    if (ToUserId != other.ToUserId) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -3320,6 +3340,7 @@ public sealed partial class MsgMailData : pb::IMessage<MsgMailData>
     if (Gold != 0L) hash ^= Gold.GetHashCode();
     if (IsRead != false) hash ^= IsRead.GetHashCode();
     if (IsClaim != false) hash ^= IsClaim.GetHashCode();
+    if (ToUserId != 0) hash ^= ToUserId.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -3368,6 +3389,10 @@ public sealed partial class MsgMailData : pb::IMessage<MsgMailData>
       output.WriteRawTag(64);
       output.WriteBool(IsClaim);
     }
+    if (ToUserId != 0) {
+      output.WriteRawTag(72);
+      output.WriteInt32(ToUserId);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -3409,6 +3434,10 @@ public sealed partial class MsgMailData : pb::IMessage<MsgMailData>
       output.WriteRawTag(64);
       output.WriteBool(IsClaim);
     }
+    if (ToUserId != 0) {
+      output.WriteRawTag(72);
+      output.WriteInt32(ToUserId);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -3441,6 +3470,9 @@ public sealed partial class MsgMailData : pb::IMessage<MsgMailData>
     }
     if (IsClaim != false) {
       size += 1 + 1;
+    }
+    if (ToUserId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(ToUserId);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -3476,6 +3508,9 @@ public sealed partial class MsgMailData : pb::IMessage<MsgMailData>
     }
     if (other.IsClaim != false) {
       IsClaim = other.IsClaim;
+    }
+    if (other.ToUserId != 0) {
+      ToUserId = other.ToUserId;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -3523,6 +3558,10 @@ public sealed partial class MsgMailData : pb::IMessage<MsgMailData>
           IsClaim = input.ReadBool();
           break;
         }
+        case 72: {
+          ToUserId = input.ReadInt32();
+          break;
+        }
       }
     }
   #endif
@@ -3567,6 +3606,10 @@ public sealed partial class MsgMailData : pb::IMessage<MsgMailData>
         }
         case 64: {
           IsClaim = input.ReadBool();
+          break;
+        }
+        case 72: {
+          ToUserId = input.ReadInt32();
           break;
         }
       }
@@ -3618,7 +3661,7 @@ public sealed partial class MsgShareData : pb::IMessage<MsgShareData>
     return new MsgShareData(this);
   }
 
-  /// <summary>Field number for the "inviteCode" field.</summary>
+  /// <summary>Field number for the "invite_code" field.</summary>
   public const int InviteCodeFieldNumber = 1;
   private string inviteCode_ = "";
   /// <summary>
@@ -3632,7 +3675,7 @@ public sealed partial class MsgShareData : pb::IMessage<MsgShareData>
     }
   }
 
-  /// <summary>Field number for the "bindList" field.</summary>
+  /// <summary>Field number for the "bind_list" field.</summary>
   public const int BindListFieldNumber = 2;
   private static readonly pb::FieldCodec<int> _repeated_bindList_codec
       = pb::FieldCodec.ForInt32(18);
@@ -5172,6 +5215,301 @@ public sealed partial class MsgQueryRebateRecord : pb::IMessage<MsgQueryRebateRe
         }
         case 24: {
           Rebate = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///忘记密码
+/// </summary>
+public sealed partial class MsgForgetPassword : pb::IMessage<MsgForgetPassword>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgForgetPassword> _parser = new pb::MessageParser<MsgForgetPassword>(() => new MsgForgetPassword());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgForgetPassword> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[17]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgForgetPassword() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgForgetPassword(MsgForgetPassword other) : this() {
+    clientType_ = other.clientType_;
+    phone_ = other.phone_;
+    code_ = other.code_;
+    newPassword_ = other.newPassword_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgForgetPassword Clone() {
+    return new MsgForgetPassword(this);
+  }
+
+  /// <summary>Field number for the "client_type" field.</summary>
+  public const int ClientTypeFieldNumber = 1;
+  private int clientType_;
+  /// <summary>
+  ///包id
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int ClientType {
+    get { return clientType_; }
+    set {
+      clientType_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "phone" field.</summary>
+  public const int PhoneFieldNumber = 2;
+  private string phone_ = "";
+  /// <summary>
+  ///电话号码
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string Phone {
+    get { return phone_; }
+    set {
+      phone_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "code" field.</summary>
+  public const int CodeFieldNumber = 3;
+  private int code_;
+  /// <summary>
+  ///验证码
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Code {
+    get { return code_; }
+    set {
+      code_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "new_password" field.</summary>
+  public const int NewPasswordFieldNumber = 4;
+  private string newPassword_ = "";
+  /// <summary>
+  ///新密码
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string NewPassword {
+    get { return newPassword_; }
+    set {
+      newPassword_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgForgetPassword);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgForgetPassword other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (ClientType != other.ClientType) return false;
+    if (Phone != other.Phone) return false;
+    if (Code != other.Code) return false;
+    if (NewPassword != other.NewPassword) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (ClientType != 0) hash ^= ClientType.GetHashCode();
+    if (Phone.Length != 0) hash ^= Phone.GetHashCode();
+    if (Code != 0) hash ^= Code.GetHashCode();
+    if (NewPassword.Length != 0) hash ^= NewPassword.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (ClientType != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(ClientType);
+    }
+    if (Phone.Length != 0) {
+      output.WriteRawTag(18);
+      output.WriteString(Phone);
+    }
+    if (Code != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(Code);
+    }
+    if (NewPassword.Length != 0) {
+      output.WriteRawTag(34);
+      output.WriteString(NewPassword);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (ClientType != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(ClientType);
+    }
+    if (Phone.Length != 0) {
+      output.WriteRawTag(18);
+      output.WriteString(Phone);
+    }
+    if (Code != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(Code);
+    }
+    if (NewPassword.Length != 0) {
+      output.WriteRawTag(34);
+      output.WriteString(NewPassword);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (ClientType != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(ClientType);
+    }
+    if (Phone.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Phone);
+    }
+    if (Code != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Code);
+    }
+    if (NewPassword.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(NewPassword);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgForgetPassword other) {
+    if (other == null) {
+      return;
+    }
+    if (other.ClientType != 0) {
+      ClientType = other.ClientType;
+    }
+    if (other.Phone.Length != 0) {
+      Phone = other.Phone;
+    }
+    if (other.Code != 0) {
+      Code = other.Code;
+    }
+    if (other.NewPassword.Length != 0) {
+      NewPassword = other.NewPassword;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          ClientType = input.ReadInt32();
+          break;
+        }
+        case 18: {
+          Phone = input.ReadString();
+          break;
+        }
+        case 24: {
+          Code = input.ReadInt32();
+          break;
+        }
+        case 34: {
+          NewPassword = input.ReadString();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          ClientType = input.ReadInt32();
+          break;
+        }
+        case 18: {
+          Phone = input.ReadString();
+          break;
+        }
+        case 24: {
+          Code = input.ReadInt32();
+          break;
+        }
+        case 34: {
+          NewPassword = input.ReadString();
           break;
         }
       }

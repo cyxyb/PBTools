@@ -95,21 +95,22 @@ message MsgMailsInfo
 //邮件信息
 message MsgMailData
 {
-	int32		mailId						= 1;	//邮件id
-	int32		sendUserId					= 2;	//发送者ID
-	int32		sendTime					= 3;	//发送时间
+	int32		mail_id						= 1;	//邮件id
+	int32		send_user_id				= 2;	//发送者ID
+	int32		send_time					= 3;	//发送时间
 	string		title						= 4;	//邮件标题
 	string		content				 		= 5;	//邮件内容
 	int64		gold						= 6;	//邮件附件(只有金币)
-	bool		isRead						= 7;	//是否已读
-	bool		isClaim						= 8;	//是否领取
+	bool		is_read						= 7;	//是否已读
+	bool		is_claim					= 8;	//是否领取
+	int32		to_user_id					= 9;	//接收者ID
 }
 
 //分享信息
 message MsgShareData
 {
-	string		inviteCode					= 1;	//邀请码
-	repeated int32		bindList			= 2;	//绑定下级
+	string		invite_code					= 1;	//邀请码
+	repeated int32		bind_list			= 2;	//绑定下级
 }
 
 //绑定上级
@@ -155,4 +156,13 @@ message MsgQueryRebateRecord
 	int32		rechargeUserId				= 1;	//user_id
 	int32		rechargeAmount				= 2;	//充值数量
 	int32		rebate						= 3;	//返利
+}
+
+//忘记密码
+message MsgForgetPassword
+{
+	int32		client_type					= 1;	//包id
+	string		phone						= 2;	//电话号码
+	int32		code						= 3;	//验证码
+	string		new_password				= 4;	//新密码
 }

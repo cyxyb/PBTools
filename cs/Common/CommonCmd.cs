@@ -27,55 +27,60 @@ public static partial class CommonCmdReflection {
           "SW5mbxDpBxIUCg9FTXNnSURNYWluX0dhbWUQ0Q8SFwoSRU1zZ0lETWFpbl9T",
           "dWJHYW1lENIPKmsKCEVSZXNDb2RlEhEKDUVSZXNDb2RlX05VTEwQABIYChRF",
           "UmVzQ29kZV9JbnZpbGlkTWFpbBABEhkKFUVSZXNDb2RlX01haWxSZWNhbGxl",
-          "ZBACEhcKE0VSZXNDb2RlX01haWxQaWNrZWQQAyqlDAoLRU1zZ0lETG9naW4S",
+          "ZBACEhcKE0VSZXNDb2RlX01haWxQaWNrZWQQAyriDQoLRU1zZ0lETG9naW4S",
           "EwoPTXNnSURMb2dpbl9OdWxsEAASFAoQTXNnSURMb2dpbl9Mb2dpbhABEhgK",
           "FE1zZ0lETG9naW5fTG9naW5SZXNwEAISHQoZTXNnSURMb2dpbl9Nb2RpZnlO",
           "aWNrTmFtZRADEiEKHU1zZ0lETG9naW5fTW9kaWZ5Tmlja05hbWVSZXNwEAQS",
           "GQoVTXNnSURMb2dpbl9Nb2RpZnlIZWFkEAUSHQoZTXNnSURMb2dpbl9Nb2Rp",
           "ZnlIZWFkUmVzcBAGEh0KGU1zZ0lETG9naW5fTW9kaWZ5UGFzc3dvcmQQBxIh",
           "Ch1Nc2dJRExvZ2luX01vZGlmeVBhc3N3b3JkUmVzcBAIEhgKFE1zZ0lETG9n",
-          "aW5fQmluZFBob25lEAkSHAoYTXNnSURMb2dpbl9CaW5kUGhvbmVSZXNwEAoS",
-          "FgoSTXNnSURNYWlsX1JlYWRNYWlsEAsSFgoSTXNnSURNYWlsX1BpY2tNYWls",
-          "EAwSGgoWTXNnSURNYWlsX1BpY2tNYWlsUmVzcBANEhgKFE1zZ0lETWFpbF9S",
-          "ZWNhbGxNYWlsEA4SHAoYTXNnSURNYWlsX1JlY2FsbE1haWxSZXNwEA8SHwob",
-          "TXNnSURNYWlsX0RlbGV0ZUFsbFJlYWRNYWlsEBASIwofTXNnSURNYWlsX0Rl",
-          "bGV0ZUFsbFJlYWRNYWlsUmVzcBAREhgKFE1zZ0lETG9naW5fUGhvbmVDb2Rl",
-          "EBISHAoYTXNnSURMb2dpbl9QaG9uZUNvZGVSZXNwEBMSIQodTXNnSURMb2dp",
-          "bl9TeW5jUGxheWVyR29sZFJlc3AQFBIjCh9Nc2dJRExvZ2luX05vdGlmeUdh",
-          "bWVTZXJ2ZXJMaXN0EBUSHgoaTXNnSURTaWduX1F1ZXJ5Q2hlY2tJbkluZm8Q",
-          "FhIiCh5Nc2dJRFNpZ25fUXVlcnlDaGVja0luSW5mb1Jlc3AQFxIbChdNc2dJ",
-          "RFNpZ25fUGxheWVyQ2hlY2tJbhAYEh8KG01zZ0lEU2lnbl9QbGF5ZXJDaGVj",
-          "a0luUmVzcBAZEhwKGE1zZ0lEVHVybnRhYmxlX1F1ZXJ5RGF0YRAaEiAKHE1z",
-          "Z0lEVHVybnRhYmxlX1F1ZXJ5RGF0YVJlc3AQGxIgChxNc2dJRFR1cm50YWJs",
-          "ZV9QbGF5VHVybnRhYmxlEBwSJAogTXNnSURUdXJudGFibGVfUGxheVR1cm50",
-          "YWJsZVJlc3AQHRIaChZNc2dJRE1haWxfU3luY01haWxMaXN0EB4SHgoaTXNn",
-          "SURNYWlsX1N5bmNNYWlsTGlzdFJlc3AQHxIZChVNc2dJRE1haWxfQWRkTWFp",
-          "bFJlc3AQIBIYChRNc2dJRFNoYXJlX1F1ZXJ5SW5mbxAhEhwKGE1zZ0lEU2hh",
-          "cmVfUXVlcnlJbmZvUmVzcBAiEhkKFU1zZ0lEU2hhcmVfQmluZFBhcmVudBAj",
-          "Eh0KGU1zZ0lEU2hhcmVfQmluZFBhcmVudFJlc3AQJBIiCh5Nc2dJRFNoYXJl",
-          "X1F1ZXJ5SW52aXRlQXdhcmRDZmcQJRImCiJNc2dJRFNoYXJlX1F1ZXJ5SW52",
-          "aXRlQXdhcmRDZmdSZXNwECYSHgoaTXNnSURTaGFyZV9QaWNrSW52aXRlQXdh",
-          "cmQQJxIiCh5Nc2dJRFNoYXJlX1BpY2tJbnZpdGVBd2FyZFJlc3AQKBIgChxN",
-          "c2dJRFNoYXJlX1F1ZXJ5UmVjaGFyZ2VJbmZvECkSJAogTXNnSURTaGFyZV9R",
-          "dWVyeVJlY2hhcmdlSW5mb1Jlc3AQKhIoCiRNc2dJRFNoYXJlX1F1ZXJ5UmVj",
-          "aGFyZ2VSZWJhdGVSZWNvcmQQKxIsCihNc2dJRFNoYXJlX1F1ZXJ5UmVjaGFy",
-          "Z2VSZWJhdGVSZWNvcmRSZXNwECwSIQodTXNnSURTaGFyZV9QaWNrUmVjaGFy",
-          "Z2VSZWJhdGUQLRIlCiFNc2dJRFNoYXJlX1BpY2tSZWNoYXJnZVJlYmF0ZVJl",
-          "c3AQLhIfChtNc2dJRFNoYXJlX0FnZW5jeUluZm9SZWJhdGUQLxIjCh9Nc2dJ",
-          "RFNoYXJlX0FnZW5jeUluZm9SZWJhdGVSZXNwEDAqxgQKCkVNc2dJREdhbWUS",
-          "EgoOTXNnSURHYW1lX051bGwQABIUCg9Nc2dJREdhbWVfTG9naW4Q6QcSGAoT",
-          "TXNnSURHYW1lX0xvZ2luUmVzcBDqBxIeChlNc2dJREdhbWVfU3F1ZWV6ZVNl",
-          "YXRSZXNwEOsHEhUKEE1zZ0lER2FtZV9Mb2dvdXQQ7AcSGgoVTXNnSURHYW1l",
-          "X0F1dG9TaXREb3duEO0HEhoKFU1zZ0lER2FtZV9TaXREb3duUmVzcBDuBxIh",
-          "ChxNc2dJREdhbWVfU3luY1BsYXllckluZm9SZXNwEO8HEiYKIU1zZ0lER2Ft",
-          "ZV9Ob3RpZnlQbGF5ZXJTdGFuZFVwUmVzcBDwBxIjCh5Nc2dJREdhbWVfU3lu",
-          "Y1BsYXllcnNTY29yZVJlc3AQ8QcSHAoXTXNnSURHYW1lX1NlbmRHYW1lU2Vu",
-          "Y2UQ8gcSIAobTXNnSURHYW1lX1NlbmRHYW1lU2VuY2VSZXNwEPMHEiAKG01z",
-          "Z0lER2FtZV9Ob3RpZnlNZXNzYWdlUmVzcBD0BxIZChRNc2dJREdhbWVfQ3Jl",
-          "YXRlUm9vbRD1BxIXChJNc2dJREdhbWVfSm9pblJvb20Q9gcSGgoVTXNnSURH",
-          "YW1lX1F1ZXJ5UmVjb3JkEPcHEiMKHk1zZ0lER2FtZV9RdWVyeVJvdW5kUmVj",
-          "b3JkUmVzcBD4BxIhChxNc2dJREdhbWVfUXVlcnlEYXlSZWNvcmRSZXNwEPkH",
-          "EhsKFk1zZ0lER2FtZV9BZGRPbmVSZWNvcmQQ+gdiBnByb3RvMw=="));
+          "aW5fQmluZFBob25lEAkSGQoVTXNnSURNYWlsX0dldE1haWxMaXN0EAoSHQoZ",
+          "TXNnSURNYWlsX0dldE1haWxMaXN0UmVzcBALEhwKGE1zZ0lETG9naW5fQmlu",
+          "ZFBob25lUmVzcBAMEhYKEk1zZ0lETWFpbF9SZWFkTWFpbBANEhYKEk1zZ0lE",
+          "TWFpbF9QaWNrTWFpbBAOEhoKFk1zZ0lETWFpbF9QaWNrTWFpbFJlc3AQDxIY",
+          "ChRNc2dJRE1haWxfUmVjYWxsTWFpbBAQEhwKGE1zZ0lETWFpbF9SZWNhbGxN",
+          "YWlsUmVzcBAREh8KG01zZ0lETWFpbF9EZWxldGVBbGxSZWFkTWFpbBASEiMK",
+          "H01zZ0lETWFpbF9EZWxldGVBbGxSZWFkTWFpbFJlc3AQExIYChRNc2dJRExv",
+          "Z2luX1Bob25lQ29kZRAUEhwKGE1zZ0lETG9naW5fUGhvbmVDb2RlUmVzcBAV",
+          "EiEKHU1zZ0lETG9naW5fU3luY1BsYXllckdvbGRSZXNwEBYSIwofTXNnSURM",
+          "b2dpbl9Ob3RpZnlHYW1lU2VydmVyTGlzdBAXEh4KGk1zZ0lEU2lnbl9RdWVy",
+          "eUNoZWNrSW5JbmZvEBgSIgoeTXNnSURTaWduX1F1ZXJ5Q2hlY2tJbkluZm9S",
+          "ZXNwEBkSGwoXTXNnSURTaWduX1BsYXllckNoZWNrSW4QGhIfChtNc2dJRFNp",
+          "Z25fUGxheWVyQ2hlY2tJblJlc3AQGxIcChhNc2dJRFR1cm50YWJsZV9RdWVy",
+          "eURhdGEQHBIgChxNc2dJRFR1cm50YWJsZV9RdWVyeURhdGFSZXNwEB0SIAoc",
+          "TXNnSURUdXJudGFibGVfUGxheVR1cm50YWJsZRAeEiQKIE1zZ0lEVHVybnRh",
+          "YmxlX1BsYXlUdXJudGFibGVSZXNwEB8SGgoWTXNnSURNYWlsX1N5bmNNYWls",
+          "TGlzdBAgEh4KGk1zZ0lETWFpbF9TeW5jTWFpbExpc3RSZXNwECESGQoVTXNn",
+          "SURNYWlsX0FkZE1haWxSZXNwECISGAoUTXNnSURTaGFyZV9RdWVyeUluZm8Q",
+          "IxIcChhNc2dJRFNoYXJlX1F1ZXJ5SW5mb1Jlc3AQJBIZChVNc2dJRFNoYXJl",
+          "X0JpbmRQYXJlbnQQJRIdChlNc2dJRFNoYXJlX0JpbmRQYXJlbnRSZXNwECYS",
+          "IgoeTXNnSURTaGFyZV9RdWVyeUludml0ZUF3YXJkQ2ZnECcSJgoiTXNnSURT",
+          "aGFyZV9RdWVyeUludml0ZUF3YXJkQ2ZnUmVzcBAoEh4KGk1zZ0lEU2hhcmVf",
+          "UGlja0ludml0ZUF3YXJkECkSIgoeTXNnSURTaGFyZV9QaWNrSW52aXRlQXdh",
+          "cmRSZXNwECoSIAocTXNnSURTaGFyZV9RdWVyeVJlY2hhcmdlSW5mbxArEiQK",
+          "IE1zZ0lEU2hhcmVfUXVlcnlSZWNoYXJnZUluZm9SZXNwECwSKAokTXNnSURT",
+          "aGFyZV9RdWVyeVJlY2hhcmdlUmViYXRlUmVjb3JkEC0SLAooTXNnSURTaGFy",
+          "ZV9RdWVyeVJlY2hhcmdlUmViYXRlUmVjb3JkUmVzcBAuEiEKHU1zZ0lEU2hh",
+          "cmVfUGlja1JlY2hhcmdlUmViYXRlEC8SJQohTXNnSURTaGFyZV9QaWNrUmVj",
+          "aGFyZ2VSZWJhdGVSZXNwEDASHwobTXNnSURTaGFyZV9BZ2VuY3lJbmZvUmVi",
+          "YXRlEDESIwofTXNnSURTaGFyZV9BZ2VuY3lJbmZvUmViYXRlUmVzcBAyEh0K",
+          "GU1zZ0lETG9naW5fRm9yZ2V0UGFzc3dvcmQQMxIhCh1Nc2dJRExvZ2luX0Zv",
+          "cmdldFBhc3N3b3JkUmVzcBA0Eh0KGU1zZ0lETG9naW5fUmVjaGFyZ2VOb3Rp",
+          "ZnkQNRIgChxNc2dJRExvZ2luX0dldFBsYXllckdvbGRSZXNwEDYqxgQKCkVN",
+          "c2dJREdhbWUSEgoOTXNnSURHYW1lX051bGwQABIUCg9Nc2dJREdhbWVfTG9n",
+          "aW4Q6QcSGAoTTXNnSURHYW1lX0xvZ2luUmVzcBDqBxIeChlNc2dJREdhbWVf",
+          "U3F1ZWV6ZVNlYXRSZXNwEOsHEhUKEE1zZ0lER2FtZV9Mb2dvdXQQ7AcSGgoV",
+          "TXNnSURHYW1lX0F1dG9TaXREb3duEO0HEhoKFU1zZ0lER2FtZV9TaXREb3du",
+          "UmVzcBDuBxIhChxNc2dJREdhbWVfU3luY1BsYXllckluZm9SZXNwEO8HEiYK",
+          "IU1zZ0lER2FtZV9Ob3RpZnlQbGF5ZXJTdGFuZFVwUmVzcBDwBxIjCh5Nc2dJ",
+          "REdhbWVfU3luY1BsYXllcnNTY29yZVJlc3AQ8QcSHAoXTXNnSURHYW1lX1Nl",
+          "bmRHYW1lU2VuY2UQ8gcSIAobTXNnSURHYW1lX1NlbmRHYW1lU2VuY2VSZXNw",
+          "EPMHEiAKG01zZ0lER2FtZV9Ob3RpZnlNZXNzYWdlUmVzcBD0BxIZChRNc2dJ",
+          "REdhbWVfQ3JlYXRlUm9vbRD1BxIXChJNc2dJREdhbWVfSm9pblJvb20Q9gcS",
+          "GgoVTXNnSURHYW1lX1F1ZXJ5UmVjb3JkEPcHEiMKHk1zZ0lER2FtZV9RdWVy",
+          "eVJvdW5kUmVjb3JkUmVzcBD4BxIhChxNc2dJREdhbWVfUXVlcnlEYXlSZWNv",
+          "cmRSZXNwEPkHEhsKFk1zZ0lER2FtZV9BZGRPbmVSZWNvcmQQ+gdiBnByb3Rv",
+          "Mw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::EMsgIDMain), typeof(global::EResCode), typeof(global::EMsgIDLogin), typeof(global::EMsgIDGame), }, null, null));
@@ -155,161 +160,185 @@ public enum EMsgIDLogin {
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_BindPhone")] MsgIdloginBindPhone = 9,
   /// <summary>
+  ///获取邮件列表(MsgCommonBool)
+  /// </summary>
+  [pbr::OriginalName("MsgIDMail_GetMailList")] MsgIdmailGetMailList = 10,
+  /// <summary>
+  ///获取邮件列表返回(MsgMailsInfo)
+  /// </summary>
+  [pbr::OriginalName("MsgIDMail_GetMailListResp")] MsgIdmailGetMailListResp = 11,
+  /// <summary>
   ///绑定手机返回(MsgCommonN32)
   /// </summary>
-  [pbr::OriginalName("MsgIDLogin_BindPhoneResp")] MsgIdloginBindPhoneResp = 10,
+  [pbr::OriginalName("MsgIDLogin_BindPhoneResp")] MsgIdloginBindPhoneResp = 12,
   /// <summary>
   ///读取邮件(MsgCommonN32)
   /// </summary>
-  [pbr::OriginalName("MsgIDMail_ReadMail")] MsgIdmailReadMail = 11,
+  [pbr::OriginalName("MsgIDMail_ReadMail")] MsgIdmailReadMail = 13,
   /// <summary>
   ///领取邮件(MsgCommonN32)
   /// </summary>
-  [pbr::OriginalName("MsgIDMail_PickMail")] MsgIdmailPickMail = 12,
+  [pbr::OriginalName("MsgIDMail_PickMail")] MsgIdmailPickMail = 14,
   /// <summary>
   ///领取邮件返回(MsgCommonN64)
   /// </summary>
-  [pbr::OriginalName("MsgIDMail_PickMailResp")] MsgIdmailPickMailResp = 13,
+  [pbr::OriginalName("MsgIDMail_PickMailResp")] MsgIdmailPickMailResp = 15,
   /// <summary>
   ///撤回邮件(MsgCommonN32)
   /// </summary>
-  [pbr::OriginalName("MsgIDMail_RecallMail")] MsgIdmailRecallMail = 14,
+  [pbr::OriginalName("MsgIDMail_RecallMail")] MsgIdmailRecallMail = 16,
   /// <summary>
   ///撤回邮件返回(0:成功 非0:查看返回码)
   /// </summary>
-  [pbr::OriginalName("MsgIDMail_RecallMailResp")] MsgIdmailRecallMailResp = 15,
+  [pbr::OriginalName("MsgIDMail_RecallMailResp")] MsgIdmailRecallMailResp = 17,
   /// <summary>
   ///删除已读邮件(MsgCommonN32)
   /// </summary>
-  [pbr::OriginalName("MsgIDMail_DeleteAllReadMail")] MsgIdmailDeleteAllReadMail = 16,
+  [pbr::OriginalName("MsgIDMail_DeleteAllReadMail")] MsgIdmailDeleteAllReadMail = 18,
   /// <summary>
   ///删除已读邮件返回(MsgCommonN32)
   /// </summary>
-  [pbr::OriginalName("MsgIDMail_DeleteAllReadMailResp")] MsgIdmailDeleteAllReadMailResp = 17,
+  [pbr::OriginalName("MsgIDMail_DeleteAllReadMailResp")] MsgIdmailDeleteAllReadMailResp = 19,
   /// <summary>
   ///验证码(MsgCommonN32)
   /// </summary>
-  [pbr::OriginalName("MsgIDLogin_PhoneCode")] MsgIdloginPhoneCode = 18,
+  [pbr::OriginalName("MsgIDLogin_PhoneCode")] MsgIdloginPhoneCode = 20,
   /// <summary>
   ///验证码返回(MsgCommonN32)
   /// </summary>
-  [pbr::OriginalName("MsgIDLogin_PhoneCodeResp")] MsgIdloginPhoneCodeResp = 19,
+  [pbr::OriginalName("MsgIDLogin_PhoneCodeResp")] MsgIdloginPhoneCodeResp = 21,
   /// <summary>
   ///同步玩家金币(MsgCommonN64)
   /// </summary>
-  [pbr::OriginalName("MsgIDLogin_SyncPlayerGoldResp")] MsgIdloginSyncPlayerGoldResp = 20,
+  [pbr::OriginalName("MsgIDLogin_SyncPlayerGoldResp")] MsgIdloginSyncPlayerGoldResp = 22,
   /// <summary>
   ///通知游戏服务器列表(MsgGameServerList)
   /// </summary>
-  [pbr::OriginalName("MsgIDLogin_NotifyGameServerList")] MsgIdloginNotifyGameServerList = 21,
+  [pbr::OriginalName("MsgIDLogin_NotifyGameServerList")] MsgIdloginNotifyGameServerList = 23,
   /// <summary>
   ///查询签到信息(MsgCommonBool)
   /// </summary>
-  [pbr::OriginalName("MsgIDSign_QueryCheckInInfo")] MsgIdsignQueryCheckInInfo = 22,
+  [pbr::OriginalName("MsgIDSign_QueryCheckInInfo")] MsgIdsignQueryCheckInInfo = 24,
   /// <summary>
   ///查询签到信息返回(MsgCheckInInfo)
   /// </summary>
-  [pbr::OriginalName("MsgIDSign_QueryCheckInInfoResp")] MsgIdsignQueryCheckInInfoResp = 23,
+  [pbr::OriginalName("MsgIDSign_QueryCheckInInfoResp")] MsgIdsignQueryCheckInInfoResp = 25,
   /// <summary>
   ///玩家签到(MsgCommonBool)
   /// </summary>
-  [pbr::OriginalName("MsgIDSign_PlayerCheckIn")] MsgIdsignPlayerCheckIn = 24,
+  [pbr::OriginalName("MsgIDSign_PlayerCheckIn")] MsgIdsignPlayerCheckIn = 26,
   /// <summary>
   ///玩家签到返回(MsgCommonN32)
   /// </summary>
-  [pbr::OriginalName("MsgIDSign_PlayerCheckInResp")] MsgIdsignPlayerCheckInResp = 25,
+  [pbr::OriginalName("MsgIDSign_PlayerCheckInResp")] MsgIdsignPlayerCheckInResp = 27,
   /// <summary>
   ///查询转盘数据(MsgCommonBool)
   /// </summary>
-  [pbr::OriginalName("MsgIDTurntable_QueryData")] MsgIdturntableQueryData = 26,
+  [pbr::OriginalName("MsgIDTurntable_QueryData")] MsgIdturntableQueryData = 28,
   /// <summary>
   ///查询转盘数据返回(MsgTurntableData)
   /// </summary>
-  [pbr::OriginalName("MsgIDTurntable_QueryDataResp")] MsgIdturntableQueryDataResp = 27,
+  [pbr::OriginalName("MsgIDTurntable_QueryDataResp")] MsgIdturntableQueryDataResp = 29,
   /// <summary>
   ///转动转盘(MsgCommonBool)
   /// </summary>
-  [pbr::OriginalName("MsgIDTurntable_PlayTurntable")] MsgIdturntablePlayTurntable = 28,
+  [pbr::OriginalName("MsgIDTurntable_PlayTurntable")] MsgIdturntablePlayTurntable = 30,
   /// <summary>
   ///转动转盘返回(MsgCommonN32)
   /// </summary>
-  [pbr::OriginalName("MsgIDTurntable_PlayTurntableResp")] MsgIdturntablePlayTurntableResp = 29,
+  [pbr::OriginalName("MsgIDTurntable_PlayTurntableResp")] MsgIdturntablePlayTurntableResp = 31,
   /// <summary>
   ///同步邮件列表(MsgCommonBool)
   /// </summary>
-  [pbr::OriginalName("MsgIDMail_SyncMailList")] MsgIdmailSyncMailList = 30,
+  [pbr::OriginalName("MsgIDMail_SyncMailList")] MsgIdmailSyncMailList = 32,
   /// <summary>
   ///同步邮件列表返回(MsgMailsInfo)
   /// </summary>
-  [pbr::OriginalName("MsgIDMail_SyncMailListResp")] MsgIdmailSyncMailListResp = 31,
+  [pbr::OriginalName("MsgIDMail_SyncMailListResp")] MsgIdmailSyncMailListResp = 33,
   /// <summary>
   ///增加邮件(MsgMailData)
   /// </summary>
-  [pbr::OriginalName("MsgIDMail_AddMailResp")] MsgIdmailAddMailResp = 32,
+  [pbr::OriginalName("MsgIDMail_AddMailResp")] MsgIdmailAddMailResp = 34,
   /// <summary>
   ///查询分享信息(MsgCommonBool)
   /// </summary>
-  [pbr::OriginalName("MsgIDShare_QueryInfo")] MsgIdshareQueryInfo = 33,
+  [pbr::OriginalName("MsgIDShare_QueryInfo")] MsgIdshareQueryInfo = 35,
   /// <summary>
   ///查询分享信息返回(MsgShareData)
   /// </summary>
-  [pbr::OriginalName("MsgIDShare_QueryInfoResp")] MsgIdshareQueryInfoResp = 34,
+  [pbr::OriginalName("MsgIDShare_QueryInfoResp")] MsgIdshareQueryInfoResp = 36,
   /// <summary>
   ///绑定上一级(MsgBindParentData)
   /// </summary>
-  [pbr::OriginalName("MsgIDShare_BindParent")] MsgIdshareBindParent = 35,
+  [pbr::OriginalName("MsgIDShare_BindParent")] MsgIdshareBindParent = 37,
   /// <summary>
   ///绑定上一级返回(MsgCommonN32)
   /// </summary>
-  [pbr::OriginalName("MsgIDShare_BindParentResp")] MsgIdshareBindParentResp = 36,
+  [pbr::OriginalName("MsgIDShare_BindParentResp")] MsgIdshareBindParentResp = 38,
   /// <summary>
   ///获取邀请奖励配置(MsgCommonBool)
   /// </summary>
-  [pbr::OriginalName("MsgIDShare_QueryInviteAwardCfg")] MsgIdshareQueryInviteAwardCfg = 37,
+  [pbr::OriginalName("MsgIDShare_QueryInviteAwardCfg")] MsgIdshareQueryInviteAwardCfg = 39,
   /// <summary>
   ///获取邀请奖励配置返回(MsgMailData)
   /// </summary>
-  [pbr::OriginalName("MsgIDShare_QueryInviteAwardCfgResp")] MsgIdshareQueryInviteAwardCfgResp = 38,
+  [pbr::OriginalName("MsgIDShare_QueryInviteAwardCfgResp")] MsgIdshareQueryInviteAwardCfgResp = 40,
   /// <summary>
   ///领取邀请奖励(MsgCommonBool)
   /// </summary>
-  [pbr::OriginalName("MsgIDShare_PickInviteAward")] MsgIdsharePickInviteAward = 39,
+  [pbr::OriginalName("MsgIDShare_PickInviteAward")] MsgIdsharePickInviteAward = 41,
   /// <summary>
   ///领取邀请奖励返回(MsgCommonN64)
   /// </summary>
-  [pbr::OriginalName("MsgIDShare_PickInviteAwardResp")] MsgIdsharePickInviteAwardResp = 40,
+  [pbr::OriginalName("MsgIDShare_PickInviteAwardResp")] MsgIdsharePickInviteAwardResp = 42,
   /// <summary>
   ///查询充值信息(MsgCommonBool)
   /// </summary>
-  [pbr::OriginalName("MsgIDShare_QueryRechargeInfo")] MsgIdshareQueryRechargeInfo = 41,
+  [pbr::OriginalName("MsgIDShare_QueryRechargeInfo")] MsgIdshareQueryRechargeInfo = 43,
   /// <summary>
   ///查询充值信息返回(MsgRechargeInfo)
   /// </summary>
-  [pbr::OriginalName("MsgIDShare_QueryRechargeInfoResp")] MsgIdshareQueryRechargeInfoResp = 42,
+  [pbr::OriginalName("MsgIDShare_QueryRechargeInfoResp")] MsgIdshareQueryRechargeInfoResp = 44,
   /// <summary>
   ///查询代理返利记录(MsgCommonBool)
   /// </summary>
-  [pbr::OriginalName("MsgIDShare_QueryRechargeRebateRecord")] MsgIdshareQueryRechargeRebateRecord = 43,
+  [pbr::OriginalName("MsgIDShare_QueryRechargeRebateRecord")] MsgIdshareQueryRechargeRebateRecord = 45,
   /// <summary>
   ///查询代理返利记录返回(MsgQueryRebateRecordInfo)
   /// </summary>
-  [pbr::OriginalName("MsgIDShare_QueryRechargeRebateRecordResp")] MsgIdshareQueryRechargeRebateRecordResp = 44,
+  [pbr::OriginalName("MsgIDShare_QueryRechargeRebateRecordResp")] MsgIdshareQueryRechargeRebateRecordResp = 46,
   /// <summary>
   ///领取代理分成奖励(MsgCommonBool)
   /// </summary>
-  [pbr::OriginalName("MsgIDShare_PickRechargeRebate")] MsgIdsharePickRechargeRebate = 45,
+  [pbr::OriginalName("MsgIDShare_PickRechargeRebate")] MsgIdsharePickRechargeRebate = 47,
   /// <summary>
   ///领取代理分成奖励返回(MsgCommonN64)
   /// </summary>
-  [pbr::OriginalName("MsgIDShare_PickRechargeRebateResp")] MsgIdsharePickRechargeRebateResp = 46,
+  [pbr::OriginalName("MsgIDShare_PickRechargeRebateResp")] MsgIdsharePickRechargeRebateResp = 48,
   /// <summary>
   ///查询代理信息(MsgCommonBool)
   /// </summary>
-  [pbr::OriginalName("MsgIDShare_AgencyInfoRebate")] MsgIdshareAgencyInfoRebate = 47,
+  [pbr::OriginalName("MsgIDShare_AgencyInfoRebate")] MsgIdshareAgencyInfoRebate = 49,
   /// <summary>
   ///查询代理信息返回(MsgCommonN32)
   /// </summary>
-  [pbr::OriginalName("MsgIDShare_AgencyInfoRebateResp")] MsgIdshareAgencyInfoRebateResp = 48,
+  [pbr::OriginalName("MsgIDShare_AgencyInfoRebateResp")] MsgIdshareAgencyInfoRebateResp = 50,
+  /// <summary>
+  ///忘记密码(MsgForgetPassword)
+  /// </summary>
+  [pbr::OriginalName("MsgIDLogin_ForgetPassword")] MsgIdloginForgetPassword = 51,
+  /// <summary>
+  ///忘记密码返回(MsgCommonN32)
+  /// </summary>
+  [pbr::OriginalName("MsgIDLogin_ForgetPasswordResp")] MsgIdloginForgetPasswordResp = 52,
+  /// <summary>
+  ///充值成功回调(MsgCommonBool)
+  /// </summary>
+  [pbr::OriginalName("MsgIDLogin_RechargeNotify")] MsgIdloginRechargeNotify = 53,
+  /// <summary>
+  ///获取玩家金币(MsgCommonN64)
+  /// </summary>
+  [pbr::OriginalName("MsgIDLogin_GetPlayerGoldResp")] MsgIdloginGetPlayerGoldResp = 54,
 }
 
 public enum EMsgIDGame {

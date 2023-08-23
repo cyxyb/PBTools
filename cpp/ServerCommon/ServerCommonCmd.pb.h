@@ -64,12 +64,14 @@ enum EMsgIDServerMain : int {
   ROBOT2GAME_MAIN = 5,
   CENTER2APPRECHARGE_MAIN = 6,
   APPRECHARGE2CENTER_MAIN = 7,
+  RELAY2CENTER_MAIN = 8,
+  CENTER2RELAY_MAIN = 9,
   EMsgIDServerMain_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDServerMain_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDServerMain_IsValid(int value);
 constexpr EMsgIDServerMain EMsgIDServerMain_MIN = MsgIDServerMain_Null;
-constexpr EMsgIDServerMain EMsgIDServerMain_MAX = APPRECHARGE2CENTER_MAIN;
+constexpr EMsgIDServerMain EMsgIDServerMain_MAX = CENTER2RELAY_MAIN;
 constexpr int EMsgIDServerMain_ARRAYSIZE = EMsgIDServerMain_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDServerMain_descriptor();
@@ -99,6 +101,8 @@ enum EMsgIDServerInternalProto : int {
   CENTER2LOGIN_GameServerRegister = 9,
   CENTER2LOGIN_GameServerUnRegister = 10,
   CENTER2LOGIN_UpdateGameServerOnlineNum = 11,
+  CENTER2LOGIN_AddMailResp = 12,
+  CENTER2LOGIN_RechargeResp = 13,
   GAME2CENTER_Register = 2001,
   GAME2CENTER_UnRegister = 2002,
   GAME2CENTER_ApplyRobot = 2003,
@@ -110,12 +114,16 @@ enum EMsgIDServerInternalProto : int {
   CENTER2APPRECHARGE_HeartBeat = 4003,
   APPRECHARGE2CENTER_Register = 4004,
   APPRECHARGE2CENTER_UnRegister = 4005,
+  RelayServer2CENTER_Register = 5001,
+  RelayServer2CENTER_AddMail = 5002,
+  RelayServer2CENTER_RechargeSuccess = 5003,
+  RelayServer2CENTER_Withdraw = 5004,
   EMsgIDServerInternalProto_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDServerInternalProto_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDServerInternalProto_IsValid(int value);
 constexpr EMsgIDServerInternalProto EMsgIDServerInternalProto_MIN = SERVER_INTERNAL_NULL;
-constexpr EMsgIDServerInternalProto EMsgIDServerInternalProto_MAX = APPRECHARGE2CENTER_UnRegister;
+constexpr EMsgIDServerInternalProto EMsgIDServerInternalProto_MAX = RelayServer2CENTER_Withdraw;
 constexpr int EMsgIDServerInternalProto_ARRAYSIZE = EMsgIDServerInternalProto_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDServerInternalProto_descriptor();
@@ -143,26 +151,34 @@ enum EMsgIDDB : int {
   DB2CENTER_LoadAllRobotResp = 7,
   CENTER2DB_CreateRobot = 8,
   DB2CENTER_CreateRobotResp = 9,
+  CENTER2DB_AddMail = 10,
+  DB2CENTER_AddMailResp = 11,
   LOGIN2DB_Login = 1001,
   DB2LOGIN_LoginResp = 1002,
   DB2LOGIN_LoadPlayerData = 1003,
   LOGIN2DB_LoginOut = 1004,
   LOGIN2DB_UpdatePlayerInfo = 1005,
-  LOGIN2DB_ReadMail = 1006,
-  LOGIN2DB_PickMail = 1007,
-  DB2LOGIN_PickMailResp = 1008,
-  LOGIN2DB_RecallMail = 1009,
-  DB2LOGIN_RecallMailResp = 1010,
-  LOGIN2DB_DeleteAllReadMail = 1011,
-  DB2LOGIN_DeleteAllReadMailResp = 1012,
-  LOGIN2DB_QueryCheckInInfo = 1013,
-  DB2LOGIN_QueryCheckInInfoResp = 1014,
-  LOGIN2DB_PlayerCheckIn = 1015,
-  DB2LOGIN_PlayerCheckInResp = 1016,
-  LOGIN2DB_QueryTurntableData = 1017,
-  DB2LOGIN_QueryTurntableDataResp = 1018,
-  LOGIN2DB_PlayTurntable = 1019,
-  DB2LOGIN_PlayTurntableResp = 1020,
+  LOGIN2DB_GetMailList = 1006,
+  DB2LOGIN_GetMailListResp = 1007,
+  LOGIN2DB_ReadMail = 1008,
+  LOGIN2DB_PickMail = 1009,
+  DB2LOGIN_PickMailResp = 1010,
+  LOGIN2DB_RecallMail = 1011,
+  DB2LOGIN_RecallMailResp = 1012,
+  LOGIN2DB_DeleteAllReadMail = 1013,
+  DB2LOGIN_DeleteAllReadMailResp = 1014,
+  LOGIN2DB_QueryCheckInInfo = 1015,
+  DB2LOGIN_QueryCheckInInfoResp = 1016,
+  LOGIN2DB_PlayerCheckIn = 1017,
+  DB2LOGIN_PlayerCheckInResp = 1018,
+  LOGIN2DB_QueryTurntableData = 1019,
+  DB2LOGIN_QueryTurntableDataResp = 1020,
+  LOGIN2DB_PlayTurntable = 1021,
+  DB2LOGIN_PlayTurntableResp = 1022,
+  LOGIN2DB_ForgetPassword = 1023,
+  DB2LOGIN_ForgetPasswordResp = 1024,
+  LOGIN2DB_GetPlayerGold = 1025,
+  DB2LOGIN_GetPlayerGoldResp = 1026,
   GAME2DB_Login = 2001,
   DB2GAME_LoginResp = 2002,
   GAME2DB_LoadCheatRate = 2003,
