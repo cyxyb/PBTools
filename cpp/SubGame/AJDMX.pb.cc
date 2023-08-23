@@ -127,7 +127,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_AJDMX_2eproto::offsets[] PROTO
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::AJDMX::CMD_3D_SC_SmallGame, res_code_),
-  PROTOBUF_FIELD_OFFSET(::AJDMX::CMD_3D_SC_SmallGame, poin_),
+  PROTOBUF_FIELD_OFFSET(::AJDMX::CMD_3D_SC_SmallGame, point_),
   PROTOBUF_FIELD_OFFSET(::AJDMX::CMD_3D_SC_SmallGame, type_),
   PROTOBUF_FIELD_OFFSET(::AJDMX::CMD_3D_SC_SmallGame, free_time_),
   PROTOBUF_FIELD_OFFSET(::AJDMX::CMD_3D_SC_SmallGame, win_gold_),
@@ -179,20 +179,20 @@ const char descriptor_table_protodef_AJDMX_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "\003bet\030\004 \003(\005\022\025\n\ris_small_game\030\005 \001(\010\022\r\n\005ind"
   "ex\030\006 \001(\005\022\030\n\020max_chance_count\030\007 \001(\005\022\027\n\017ma"
   "x_chance_type\030\010 \003(\005\022\030\n\020max_chance_index\030"
-  "\t \003(\005\"h\n\023CMD_3D_SC_SmallGame\022\020\n\010res_code"
-  "\030\001 \001(\010\022\014\n\004poin\030\002 \001(\005\022\014\n\004type\030\003 \001(\005\022\021\n\tfr"
-  "ee_time\030\004 \001(\005\022\020\n\010win_gold\030\005 \001(\005\"\030\n\004Icon\022"
-  "\020\n\010hit_icon\030\001 \003(\005\"\207\001\n\020CMD_3D_SC_Result\022\014"
-  "\n\004icon\030\001 \003(\005\022\035\n\010hit_icon\030\002 \003(\0132\013.AJDMX.I"
-  "con\022\020\n\010win_gold\030\003 \001(\005\022\022\n\nfree_count\030\004 \001("
-  "\005\022\021\n\thit_bouns\030\005 \001(\005\022\r\n\005index\030\006 \001(\005\"L\n\023C"
-  "MD_3D_SC_MaxChance\022\020\n\010res_code\030\001 \001(\010\022\021\n\t"
-  "free_time\030\002 \001(\005\022\020\n\010win_gold\030\003 \001(\005*\262\001\n\021EM"
-  "sgIDAJDMXServer\022\025\n\021SUB_SC_GAME_START\020\000\022\025"
-  "\n\021SUB_SC_SMALL_GAME\020\001\022\023\n\017SUB_SC_BET_FAIL"
-  "\020\002\022\025\n\021SUB_SC_MAX_CHANCE\020\003\022\025\n\021SUB_CS_GAME"
-  "_START\020\004\022\025\n\021SUB_CS_SMALL_GAME\020\005\022\025\n\021SUB_C"
-  "S_MAX_CHANCE\020\006b\006proto3"
+  "\t \003(\005\"i\n\023CMD_3D_SC_SmallGame\022\020\n\010res_code"
+  "\030\001 \001(\010\022\r\n\005point\030\002 \001(\005\022\014\n\004type\030\003 \001(\005\022\021\n\tf"
+  "ree_time\030\004 \001(\005\022\020\n\010win_gold\030\005 \001(\005\"\030\n\004Icon"
+  "\022\020\n\010hit_icon\030\001 \003(\005\"\207\001\n\020CMD_3D_SC_Result\022"
+  "\014\n\004icon\030\001 \003(\005\022\035\n\010hit_icon\030\002 \003(\0132\013.AJDMX."
+  "Icon\022\020\n\010win_gold\030\003 \001(\005\022\022\n\nfree_count\030\004 \001"
+  "(\005\022\021\n\thit_bouns\030\005 \001(\005\022\r\n\005index\030\006 \001(\005\"L\n\023"
+  "CMD_3D_SC_MaxChance\022\020\n\010res_code\030\001 \001(\010\022\021\n"
+  "\tfree_time\030\002 \001(\005\022\020\n\010win_gold\030\003 \001(\005*\262\001\n\021E"
+  "MsgIDAJDMXServer\022\025\n\021SUB_SC_GAME_START\020\000\022"
+  "\025\n\021SUB_SC_SMALL_GAME\020\001\022\023\n\017SUB_SC_BET_FAI"
+  "L\020\002\022\025\n\021SUB_SC_MAX_CHANCE\020\003\022\025\n\021SUB_CS_GAM"
+  "E_START\020\004\022\025\n\021SUB_CS_SMALL_GAME\020\005\022\025\n\021SUB_"
+  "CS_MAX_CHANCE\020\006b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_AJDMX_2eproto_deps[1] = {
 };
@@ -205,7 +205,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_AJD
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_AJDMX_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_AJDMX_2eproto = {
-  false, false, descriptor_table_protodef_AJDMX_2eproto, "AJDMX.proto", 742,
+  false, false, descriptor_table_protodef_AJDMX_2eproto, "AJDMX.proto", 743,
   &descriptor_table_AJDMX_2eproto_once, descriptor_table_AJDMX_2eproto_sccs, descriptor_table_AJDMX_2eproto_deps, 5, 0,
   schemas, file_default_instances, TableStruct_AJDMX_2eproto::offsets,
   file_level_metadata_AJDMX_2eproto, 5, file_level_enum_descriptors_AJDMX_2eproto, file_level_service_descriptors_AJDMX_2eproto,
@@ -726,10 +726,10 @@ const char* CMD_3D_SC_SmallGame::_InternalParse(const char* ptr, ::PROTOBUF_NAME
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 poin = 2;
+      // int32 point = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          poin_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          point_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -788,10 +788,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(1, this->_internal_res_code(), target);
   }
 
-  // int32 poin = 2;
-  if (this->poin() != 0) {
+  // int32 point = 2;
+  if (this->point() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_poin(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_point(), target);
   }
 
   // int32 type = 3;
@@ -833,11 +833,11 @@ size_t CMD_3D_SC_SmallGame::ByteSizeLong() const {
     total_size += 1 + 1;
   }
 
-  // int32 poin = 2;
-  if (this->poin() != 0) {
+  // int32 point = 2;
+  if (this->point() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_poin());
+        this->_internal_point());
   }
 
   // int32 type = 3;
@@ -895,8 +895,8 @@ void CMD_3D_SC_SmallGame::MergeFrom(const CMD_3D_SC_SmallGame& from) {
   if (from.res_code() != 0) {
     _internal_set_res_code(from._internal_res_code());
   }
-  if (from.poin() != 0) {
-    _internal_set_poin(from._internal_poin());
+  if (from.point() != 0) {
+    _internal_set_point(from._internal_point());
   }
   if (from.type() != 0) {
     _internal_set_type(from._internal_type());

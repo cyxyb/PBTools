@@ -31,7 +31,7 @@ message SC_SceneInfo
 message CMD_3D_SC_SmallGame
 {
 	bool	res_code = 1;					// 0:失败 1：成功
-	int32	poin = 2;						// 点数
+	int32	point = 2;						// 点数
 	int32	type = 3;						// 0:正常 1：最大机会 2：再来一次
 	int32	free_time = 4;					// 免费次数
 	int32	win_gold = 5;					// 小游戏得分

@@ -480,7 +480,7 @@ class CMD_3D_SC_SmallGame PROTOBUF_FINAL :
 
   enum : int {
     kResCodeFieldNumber = 1,
-    kPoinFieldNumber = 2,
+    kPointFieldNumber = 2,
     kTypeFieldNumber = 3,
     kFreeTimeFieldNumber = 4,
     kWinGoldFieldNumber = 5,
@@ -494,13 +494,13 @@ class CMD_3D_SC_SmallGame PROTOBUF_FINAL :
   void _internal_set_res_code(bool value);
   public:
 
-  // int32 poin = 2;
-  void clear_poin();
-  ::PROTOBUF_NAMESPACE_ID::int32 poin() const;
-  void set_poin(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // int32 point = 2;
+  void clear_point();
+  ::PROTOBUF_NAMESPACE_ID::int32 point() const;
+  void set_point(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_poin() const;
-  void _internal_set_poin(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_point() const;
+  void _internal_set_point(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 type = 3;
@@ -538,7 +538,7 @@ class CMD_3D_SC_SmallGame PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   bool res_code_;
-  ::PROTOBUF_NAMESPACE_ID::int32 poin_;
+  ::PROTOBUF_NAMESPACE_ID::int32 point_;
   ::PROTOBUF_NAMESPACE_ID::int32 type_;
   ::PROTOBUF_NAMESPACE_ID::int32 free_time_;
   ::PROTOBUF_NAMESPACE_ID::int32 win_gold_;
@@ -1343,24 +1343,24 @@ inline void CMD_3D_SC_SmallGame::set_res_code(bool value) {
   // @@protoc_insertion_point(field_set:AJDMX.CMD_3D_SC_SmallGame.res_code)
 }
 
-// int32 poin = 2;
-inline void CMD_3D_SC_SmallGame::clear_poin() {
-  poin_ = 0;
+// int32 point = 2;
+inline void CMD_3D_SC_SmallGame::clear_point() {
+  point_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_3D_SC_SmallGame::_internal_poin() const {
-  return poin_;
+inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_3D_SC_SmallGame::_internal_point() const {
+  return point_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_3D_SC_SmallGame::poin() const {
-  // @@protoc_insertion_point(field_get:AJDMX.CMD_3D_SC_SmallGame.poin)
-  return _internal_poin();
+inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_3D_SC_SmallGame::point() const {
+  // @@protoc_insertion_point(field_get:AJDMX.CMD_3D_SC_SmallGame.point)
+  return _internal_point();
 }
-inline void CMD_3D_SC_SmallGame::_internal_set_poin(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void CMD_3D_SC_SmallGame::_internal_set_point(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
-  poin_ = value;
+  point_ = value;
 }
-inline void CMD_3D_SC_SmallGame::set_poin(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_poin(value);
-  // @@protoc_insertion_point(field_set:AJDMX.CMD_3D_SC_SmallGame.poin)
+inline void CMD_3D_SC_SmallGame::set_point(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_point(value);
+  // @@protoc_insertion_point(field_set:AJDMX.CMD_3D_SC_SmallGame.point)
 }
 
 // int32 type = 3;

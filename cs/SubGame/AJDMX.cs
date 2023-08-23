@@ -28,24 +28,24 @@ namespace AJDMX {
             "bmVJbmZvEhIKCmZyZWVfY291bnQYASABKAUSEgoKY3VycmVuX2JldBgCIAEo",
             "BRILCgNiZXQYBCADKAUSFQoNaXNfc21hbGxfZ2FtZRgFIAEoCBINCgVpbmRl",
             "eBgGIAEoBRIYChBtYXhfY2hhbmNlX2NvdW50GAcgASgFEhcKD21heF9jaGFu",
-            "Y2VfdHlwZRgIIAMoBRIYChBtYXhfY2hhbmNlX2luZGV4GAkgAygFImgKE0NN",
-            "RF8zRF9TQ19TbWFsbEdhbWUSEAoIcmVzX2NvZGUYASABKAgSDAoEcG9pbhgC",
-            "IAEoBRIMCgR0eXBlGAMgASgFEhEKCWZyZWVfdGltZRgEIAEoBRIQCgh3aW5f",
-            "Z29sZBgFIAEoBSIYCgRJY29uEhAKCGhpdF9pY29uGAEgAygFIocBChBDTURf",
-            "M0RfU0NfUmVzdWx0EgwKBGljb24YASADKAUSHQoIaGl0X2ljb24YAiADKAsy",
-            "Cy5BSkRNWC5JY29uEhAKCHdpbl9nb2xkGAMgASgFEhIKCmZyZWVfY291bnQY",
-            "BCABKAUSEQoJaGl0X2JvdW5zGAUgASgFEg0KBWluZGV4GAYgASgFIkwKE0NN",
-            "RF8zRF9TQ19NYXhDaGFuY2USEAoIcmVzX2NvZGUYASABKAgSEQoJZnJlZV90",
-            "aW1lGAIgASgFEhAKCHdpbl9nb2xkGAMgASgFKrIBChFFTXNnSURBSkRNWFNl",
-            "cnZlchIVChFTVUJfU0NfR0FNRV9TVEFSVBAAEhUKEVNVQl9TQ19TTUFMTF9H",
-            "QU1FEAESEwoPU1VCX1NDX0JFVF9GQUlMEAISFQoRU1VCX1NDX01BWF9DSEFO",
-            "Q0UQAxIVChFTVUJfQ1NfR0FNRV9TVEFSVBAEEhUKEVNVQl9DU19TTUFMTF9H",
-            "QU1FEAUSFQoRU1VCX0NTX01BWF9DSEFOQ0UQBmIGcHJvdG8z"));
+            "Y2VfdHlwZRgIIAMoBRIYChBtYXhfY2hhbmNlX2luZGV4GAkgAygFImkKE0NN",
+            "RF8zRF9TQ19TbWFsbEdhbWUSEAoIcmVzX2NvZGUYASABKAgSDQoFcG9pbnQY",
+            "AiABKAUSDAoEdHlwZRgDIAEoBRIRCglmcmVlX3RpbWUYBCABKAUSEAoId2lu",
+            "X2dvbGQYBSABKAUiGAoESWNvbhIQCghoaXRfaWNvbhgBIAMoBSKHAQoQQ01E",
+            "XzNEX1NDX1Jlc3VsdBIMCgRpY29uGAEgAygFEh0KCGhpdF9pY29uGAIgAygL",
+            "MgsuQUpETVguSWNvbhIQCgh3aW5fZ29sZBgDIAEoBRISCgpmcmVlX2NvdW50",
+            "GAQgASgFEhEKCWhpdF9ib3VucxgFIAEoBRINCgVpbmRleBgGIAEoBSJMChND",
+            "TURfM0RfU0NfTWF4Q2hhbmNlEhAKCHJlc19jb2RlGAEgASgIEhEKCWZyZWVf",
+            "dGltZRgCIAEoBRIQCgh3aW5fZ29sZBgDIAEoBSqyAQoRRU1zZ0lEQUpETVhT",
+            "ZXJ2ZXISFQoRU1VCX1NDX0dBTUVfU1RBUlQQABIVChFTVUJfU0NfU01BTExf",
+            "R0FNRRABEhMKD1NVQl9TQ19CRVRfRkFJTBACEhUKEVNVQl9TQ19NQVhfQ0hB",
+            "TkNFEAMSFQoRU1VCX0NTX0dBTUVfU1RBUlQQBBIVChFTVUJfQ1NfU01BTExf",
+            "R0FNRRAFEhUKEVNVQl9DU19NQVhfQ0hBTkNFEAZiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::AJDMX.EMsgIDAJDMXServer), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::AJDMX.SC_SceneInfo), global::AJDMX.SC_SceneInfo.Parser, new[]{ "FreeCount", "CurrenBet", "Bet", "IsSmallGame", "Index", "MaxChanceCount", "MaxChanceType", "MaxChanceIndex" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::AJDMX.CMD_3D_SC_SmallGame), global::AJDMX.CMD_3D_SC_SmallGame.Parser, new[]{ "ResCode", "Poin", "Type", "FreeTime", "WinGold" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::AJDMX.CMD_3D_SC_SmallGame), global::AJDMX.CMD_3D_SC_SmallGame.Parser, new[]{ "ResCode", "Point", "Type", "FreeTime", "WinGold" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AJDMX.Icon), global::AJDMX.Icon.Parser, new[]{ "HitIcon" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AJDMX.CMD_3D_SC_Result), global::AJDMX.CMD_3D_SC_Result.Parser, new[]{ "Icon", "HitIcon", "WinGold", "FreeCount", "HitBouns", "Index" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AJDMX.CMD_3D_SC_MaxChance), global::AJDMX.CMD_3D_SC_MaxChance.Parser, new[]{ "ResCode", "FreeTime", "WinGold" }, null, null, null, null)
@@ -549,7 +549,7 @@ namespace AJDMX {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CMD_3D_SC_SmallGame(CMD_3D_SC_SmallGame other) : this() {
       resCode_ = other.resCode_;
-      poin_ = other.poin_;
+      point_ = other.point_;
       type_ = other.type_;
       freeTime_ = other.freeTime_;
       winGold_ = other.winGold_;
@@ -575,17 +575,17 @@ namespace AJDMX {
       }
     }
 
-    /// <summary>Field number for the "poin" field.</summary>
-    public const int PoinFieldNumber = 2;
-    private int poin_;
+    /// <summary>Field number for the "point" field.</summary>
+    public const int PointFieldNumber = 2;
+    private int point_;
     /// <summary>
     /// 点数
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Poin {
-      get { return poin_; }
+    public int Point {
+      get { return point_; }
       set {
-        poin_ = value;
+        point_ = value;
       }
     }
 
@@ -645,7 +645,7 @@ namespace AJDMX {
         return true;
       }
       if (ResCode != other.ResCode) return false;
-      if (Poin != other.Poin) return false;
+      if (Point != other.Point) return false;
       if (Type != other.Type) return false;
       if (FreeTime != other.FreeTime) return false;
       if (WinGold != other.WinGold) return false;
@@ -656,7 +656,7 @@ namespace AJDMX {
     public override int GetHashCode() {
       int hash = 1;
       if (ResCode != false) hash ^= ResCode.GetHashCode();
-      if (Poin != 0) hash ^= Poin.GetHashCode();
+      if (Point != 0) hash ^= Point.GetHashCode();
       if (Type != 0) hash ^= Type.GetHashCode();
       if (FreeTime != 0) hash ^= FreeTime.GetHashCode();
       if (WinGold != 0) hash ^= WinGold.GetHashCode();
@@ -680,9 +680,9 @@ namespace AJDMX {
         output.WriteRawTag(8);
         output.WriteBool(ResCode);
       }
-      if (Poin != 0) {
+      if (Point != 0) {
         output.WriteRawTag(16);
-        output.WriteInt32(Poin);
+        output.WriteInt32(Point);
       }
       if (Type != 0) {
         output.WriteRawTag(24);
@@ -709,9 +709,9 @@ namespace AJDMX {
         output.WriteRawTag(8);
         output.WriteBool(ResCode);
       }
-      if (Poin != 0) {
+      if (Point != 0) {
         output.WriteRawTag(16);
-        output.WriteInt32(Poin);
+        output.WriteInt32(Point);
       }
       if (Type != 0) {
         output.WriteRawTag(24);
@@ -737,8 +737,8 @@ namespace AJDMX {
       if (ResCode != false) {
         size += 1 + 1;
       }
-      if (Poin != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Poin);
+      if (Point != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Point);
       }
       if (Type != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Type);
@@ -763,8 +763,8 @@ namespace AJDMX {
       if (other.ResCode != false) {
         ResCode = other.ResCode;
       }
-      if (other.Poin != 0) {
-        Poin = other.Poin;
+      if (other.Point != 0) {
+        Point = other.Point;
       }
       if (other.Type != 0) {
         Type = other.Type;
@@ -794,7 +794,7 @@ namespace AJDMX {
             break;
           }
           case 16: {
-            Poin = input.ReadInt32();
+            Point = input.ReadInt32();
             break;
           }
           case 24: {
@@ -828,7 +828,7 @@ namespace AJDMX {
             break;
           }
           case 16: {
-            Poin = input.ReadInt32();
+            Point = input.ReadInt32();
             break;
           }
           case 24: {
