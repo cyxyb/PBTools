@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package OLYMPUS;
+
+enum EMsgIDSubGame
+{
+	MsgIDSubGame_Null				= 0;
+	MsgIDSubGame_GameStart			= 1;	//玩家开始游戏(MsgCommonN32)
+	MsgIDSubGame_BuyFree			= 2;	//玩家购买免费游戏(MsgCommonN32)
+	MsgIDSubGame_GameResult			= 3;	//游戏结果(MsgResult)
+}
+
+//场景消息
+message MsgSceneInfo
+{
+	repeated int32  bet     		= 1;			//固定押注配置
+	int32			cur_bet			= 2;			//当前押注
+	int32			add_mul			= 3;			//免费累加倍数
+	int32			free_times		= 4;			//剩余免费次数
+}
+
+//游戏结果
+message MsgRound
+{
+	repeated int32	icon			= 1;			//图标结果
+	repeated bool	hit				= 2;			//击中图标
+	repeated int32	special_mul		= 3;			//特殊图标倍数
+	int32			odd				= 4;			//倍数
+}
+
+//游戏结果
+message MsgResult
+{
+	repeated MsgRound	round_data		= 1;		//每回合图标信息
+	int32				table_all_mul	= 2;		//总倍数
+	int32				free_times		= 3;		//免费次数
+	int32				free_add_mul	= 4;		//免费累加倍数
+}
+
