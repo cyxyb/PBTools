@@ -229,7 +229,6 @@ class SC_SceneInfo PROTOBUF_FINAL :
     kMaxChanceIndexFieldNumber = 9,
     kFreeCountFieldNumber = 1,
     kCurrenBetFieldNumber = 2,
-    kBetCountFieldNumber = 3,
     kIsSmallGameFieldNumber = 5,
     kIndexFieldNumber = 6,
     kMaxChanceCountFieldNumber = 7,
@@ -318,15 +317,6 @@ class SC_SceneInfo PROTOBUF_FINAL :
   void _internal_set_curren_bet(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 bet_count = 3;
-  void clear_bet_count();
-  ::PROTOBUF_NAMESPACE_ID::int32 bet_count() const;
-  void set_bet_count(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_bet_count() const;
-  void _internal_set_bet_count(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
   // bool is_small_game = 5;
   void clear_is_small_game();
   bool is_small_game() const;
@@ -369,7 +359,6 @@ class SC_SceneInfo PROTOBUF_FINAL :
   mutable std::atomic<int> _max_chance_index_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::int32 free_count_;
   ::PROTOBUF_NAMESPACE_ID::int32 curren_bet_;
-  ::PROTOBUF_NAMESPACE_ID::int32 bet_count_;
   bool is_small_game_;
   ::PROTOBUF_NAMESPACE_ID::int32 index_;
   ::PROTOBUF_NAMESPACE_ID::int32 max_chance_count_;
@@ -820,34 +809,34 @@ class CMD_3D_SC_Result PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kIoconFieldNumber = 1,
+    kIconFieldNumber = 1,
     kHitIconFieldNumber = 2,
     kWinGoldFieldNumber = 3,
     kFreeCountFieldNumber = 4,
     kHitBounsFieldNumber = 5,
     kIndexFieldNumber = 6,
   };
-  // repeated int32 iocon = 1;
-  int iocon_size() const;
+  // repeated int32 icon = 1;
+  int icon_size() const;
   private:
-  int _internal_iocon_size() const;
+  int _internal_icon_size() const;
   public:
-  void clear_iocon();
+  void clear_icon();
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_iocon(int index) const;
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_icon(int index) const;
   const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      _internal_iocon() const;
-  void _internal_add_iocon(::PROTOBUF_NAMESPACE_ID::int32 value);
+      _internal_icon() const;
+  void _internal_add_icon(::PROTOBUF_NAMESPACE_ID::int32 value);
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      _internal_mutable_iocon();
+      _internal_mutable_icon();
   public:
-  ::PROTOBUF_NAMESPACE_ID::int32 iocon(int index) const;
-  void set_iocon(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
-  void add_iocon(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 icon(int index) const;
+  void set_icon(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_icon(::PROTOBUF_NAMESPACE_ID::int32 value);
   const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      iocon() const;
+      icon() const;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      mutable_iocon();
+      mutable_icon();
 
   // repeated .AJDMX.Icon hit_icon = 2;
   int hit_icon_size() const;
@@ -910,8 +899,8 @@ class CMD_3D_SC_Result PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > iocon_;
-  mutable std::atomic<int> _iocon_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > icon_;
+  mutable std::atomic<int> _icon_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::AJDMX::Icon > hit_icon_;
   ::PROTOBUF_NAMESPACE_ID::int32 win_gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 free_count_;
@@ -1127,26 +1116,6 @@ inline void SC_SceneInfo::_internal_set_curren_bet(::PROTOBUF_NAMESPACE_ID::int3
 inline void SC_SceneInfo::set_curren_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_curren_bet(value);
   // @@protoc_insertion_point(field_set:AJDMX.SC_SceneInfo.curren_bet)
-}
-
-// int32 bet_count = 3;
-inline void SC_SceneInfo::clear_bet_count() {
-  bet_count_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::_internal_bet_count() const {
-  return bet_count_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::bet_count() const {
-  // @@protoc_insertion_point(field_get:AJDMX.SC_SceneInfo.bet_count)
-  return _internal_bet_count();
-}
-inline void SC_SceneInfo::_internal_set_bet_count(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  bet_count_ = value;
-}
-inline void SC_SceneInfo::set_bet_count(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_bet_count(value);
-  // @@protoc_insertion_point(field_set:AJDMX.SC_SceneInfo.bet_count)
 }
 
 // repeated int32 bet = 4;
@@ -1509,51 +1478,51 @@ Icon::mutable_hit_icon() {
 
 // CMD_3D_SC_Result
 
-// repeated int32 iocon = 1;
-inline int CMD_3D_SC_Result::_internal_iocon_size() const {
-  return iocon_.size();
+// repeated int32 icon = 1;
+inline int CMD_3D_SC_Result::_internal_icon_size() const {
+  return icon_.size();
 }
-inline int CMD_3D_SC_Result::iocon_size() const {
-  return _internal_iocon_size();
+inline int CMD_3D_SC_Result::icon_size() const {
+  return _internal_icon_size();
 }
-inline void CMD_3D_SC_Result::clear_iocon() {
-  iocon_.Clear();
+inline void CMD_3D_SC_Result::clear_icon() {
+  icon_.Clear();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_3D_SC_Result::_internal_iocon(int index) const {
-  return iocon_.Get(index);
+inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_3D_SC_Result::_internal_icon(int index) const {
+  return icon_.Get(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_3D_SC_Result::iocon(int index) const {
-  // @@protoc_insertion_point(field_get:AJDMX.CMD_3D_SC_Result.iocon)
-  return _internal_iocon(index);
+inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_3D_SC_Result::icon(int index) const {
+  // @@protoc_insertion_point(field_get:AJDMX.CMD_3D_SC_Result.icon)
+  return _internal_icon(index);
 }
-inline void CMD_3D_SC_Result::set_iocon(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
-  iocon_.Set(index, value);
-  // @@protoc_insertion_point(field_set:AJDMX.CMD_3D_SC_Result.iocon)
+inline void CMD_3D_SC_Result::set_icon(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  icon_.Set(index, value);
+  // @@protoc_insertion_point(field_set:AJDMX.CMD_3D_SC_Result.icon)
 }
-inline void CMD_3D_SC_Result::_internal_add_iocon(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  iocon_.Add(value);
+inline void CMD_3D_SC_Result::_internal_add_icon(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  icon_.Add(value);
 }
-inline void CMD_3D_SC_Result::add_iocon(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_add_iocon(value);
-  // @@protoc_insertion_point(field_add:AJDMX.CMD_3D_SC_Result.iocon)
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-CMD_3D_SC_Result::_internal_iocon() const {
-  return iocon_;
+inline void CMD_3D_SC_Result::add_icon(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_icon(value);
+  // @@protoc_insertion_point(field_add:AJDMX.CMD_3D_SC_Result.icon)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-CMD_3D_SC_Result::iocon() const {
-  // @@protoc_insertion_point(field_list:AJDMX.CMD_3D_SC_Result.iocon)
-  return _internal_iocon();
+CMD_3D_SC_Result::_internal_icon() const {
+  return icon_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+CMD_3D_SC_Result::icon() const {
+  // @@protoc_insertion_point(field_list:AJDMX.CMD_3D_SC_Result.icon)
+  return _internal_icon();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-CMD_3D_SC_Result::_internal_mutable_iocon() {
-  return &iocon_;
+CMD_3D_SC_Result::_internal_mutable_icon() {
+  return &icon_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-CMD_3D_SC_Result::mutable_iocon() {
-  // @@protoc_insertion_point(field_mutable_list:AJDMX.CMD_3D_SC_Result.iocon)
-  return _internal_mutable_iocon();
+CMD_3D_SC_Result::mutable_icon() {
+  // @@protoc_insertion_point(field_mutable_list:AJDMX.CMD_3D_SC_Result.icon)
+  return _internal_mutable_icon();
 }
 
 // repeated .AJDMX.Icon hit_icon = 2;

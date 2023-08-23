@@ -10,7 +10,7 @@ enum EMsgIDAJDMXServer
 	SUB_SC_BET_FAIL	= 2; 					// 游戏结束(MsgCommonN32)
 	SUB_SC_MAX_CHANCE = 3; 					// 最大游戏机会(CMD_3D_SC_MaxChance)
 	SUB_CS_GAME_START = 4;					// 开始游戏(MsgCommonN32)
-	SUB_CS_SMALL_GAME = 5;					// 小游戏(CMD_3D_SC_SmallGame)
+	SUB_CS_SMALL_GAME = 5;					// 小游戏(MsgCommonBool)
 	SUB_CS_MAX_CHANCE = 6;					// 开始下注(MsgCommonN32)
 }
 
@@ -19,7 +19,6 @@ message SC_SceneInfo
 {
 	int32	free_count = 1;					// 免费次数
 	int32	curren_bet = 2;					// 当前下注
-	int32	bet_count = 3;					// 下注列表个数
 	repeated int32	bet = 4;				// 下注配置
 	bool	is_small_game = 5;				// 是否小游戏
 	int32	index = 6;						// 小游戏下标
@@ -47,7 +46,7 @@ message Icon
 // 游戏结果返回
 message CMD_3D_SC_Result
 {
-	repeated int32	iocon = 1;
+	repeated int32	icon = 1;
 	repeated Icon	hit_icon = 2;			// 击中的图标
 	int32	win_gold =3;					// 赢得金币
 	int32	free_count = 4;					// 免费次数

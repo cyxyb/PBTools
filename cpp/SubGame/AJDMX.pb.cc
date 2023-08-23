@@ -115,7 +115,6 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_AJDMX_2eproto::offsets[] PROTO
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::AJDMX::SC_SceneInfo, free_count_),
   PROTOBUF_FIELD_OFFSET(::AJDMX::SC_SceneInfo, curren_bet_),
-  PROTOBUF_FIELD_OFFSET(::AJDMX::SC_SceneInfo, bet_count_),
   PROTOBUF_FIELD_OFFSET(::AJDMX::SC_SceneInfo, bet_),
   PROTOBUF_FIELD_OFFSET(::AJDMX::SC_SceneInfo, is_small_game_),
   PROTOBUF_FIELD_OFFSET(::AJDMX::SC_SceneInfo, index_),
@@ -143,7 +142,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_AJDMX_2eproto::offsets[] PROTO
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::AJDMX::CMD_3D_SC_Result, iocon_),
+  PROTOBUF_FIELD_OFFSET(::AJDMX::CMD_3D_SC_Result, icon_),
   PROTOBUF_FIELD_OFFSET(::AJDMX::CMD_3D_SC_Result, hit_icon_),
   PROTOBUF_FIELD_OFFSET(::AJDMX::CMD_3D_SC_Result, win_gold_),
   PROTOBUF_FIELD_OFFSET(::AJDMX::CMD_3D_SC_Result, free_count_),
@@ -160,10 +159,10 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_AJDMX_2eproto::offsets[] PROTO
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::AJDMX::SC_SceneInfo)},
-  { 14, -1, sizeof(::AJDMX::CMD_3D_SC_SmallGame)},
-  { 24, -1, sizeof(::AJDMX::Icon)},
-  { 30, -1, sizeof(::AJDMX::CMD_3D_SC_Result)},
-  { 41, -1, sizeof(::AJDMX::CMD_3D_SC_MaxChance)},
+  { 13, -1, sizeof(::AJDMX::CMD_3D_SC_SmallGame)},
+  { 23, -1, sizeof(::AJDMX::Icon)},
+  { 29, -1, sizeof(::AJDMX::CMD_3D_SC_Result)},
+  { 40, -1, sizeof(::AJDMX::CMD_3D_SC_MaxChance)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -175,26 +174,25 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
 };
 
 const char descriptor_table_protodef_AJDMX_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\013AJDMX.proto\022\005AJDMX\"\311\001\n\014SC_SceneInfo\022\022\n"
-  "\nfree_count\030\001 \001(\005\022\022\n\ncurren_bet\030\002 \001(\005\022\021\n"
-  "\tbet_count\030\003 \001(\005\022\013\n\003bet\030\004 \003(\005\022\025\n\ris_smal"
-  "l_game\030\005 \001(\010\022\r\n\005index\030\006 \001(\005\022\030\n\020max_chanc"
-  "e_count\030\007 \001(\005\022\027\n\017max_chance_type\030\010 \003(\005\022\030"
-  "\n\020max_chance_index\030\t \003(\005\"h\n\023CMD_3D_SC_Sm"
-  "allGame\022\020\n\010res_code\030\001 \001(\010\022\014\n\004poin\030\002 \001(\005\022"
-  "\014\n\004type\030\003 \001(\005\022\021\n\tfree_time\030\004 \001(\005\022\020\n\010win_"
-  "gold\030\005 \001(\005\"\030\n\004Icon\022\020\n\010hit_icon\030\001 \003(\005\"\210\001\n"
-  "\020CMD_3D_SC_Result\022\r\n\005iocon\030\001 \003(\005\022\035\n\010hit_"
-  "icon\030\002 \003(\0132\013.AJDMX.Icon\022\020\n\010win_gold\030\003 \001("
-  "\005\022\022\n\nfree_count\030\004 \001(\005\022\021\n\thit_bouns\030\005 \001(\005"
-  "\022\r\n\005index\030\006 \001(\005\"L\n\023CMD_3D_SC_MaxChance\022\020"
-  "\n\010res_code\030\001 \001(\010\022\021\n\tfree_time\030\002 \001(\005\022\020\n\010w"
-  "in_gold\030\003 \001(\005*\262\001\n\021EMsgIDAJDMXServer\022\025\n\021S"
-  "UB_SC_GAME_START\020\000\022\025\n\021SUB_SC_SMALL_GAME\020"
-  "\001\022\023\n\017SUB_SC_BET_FAIL\020\002\022\025\n\021SUB_SC_MAX_CHA"
-  "NCE\020\003\022\025\n\021SUB_CS_GAME_START\020\004\022\025\n\021SUB_CS_S"
-  "MALL_GAME\020\005\022\025\n\021SUB_CS_MAX_CHANCE\020\006b\006prot"
-  "o3"
+  "\n\013AJDMX.proto\022\005AJDMX\"\266\001\n\014SC_SceneInfo\022\022\n"
+  "\nfree_count\030\001 \001(\005\022\022\n\ncurren_bet\030\002 \001(\005\022\013\n"
+  "\003bet\030\004 \003(\005\022\025\n\ris_small_game\030\005 \001(\010\022\r\n\005ind"
+  "ex\030\006 \001(\005\022\030\n\020max_chance_count\030\007 \001(\005\022\027\n\017ma"
+  "x_chance_type\030\010 \003(\005\022\030\n\020max_chance_index\030"
+  "\t \003(\005\"h\n\023CMD_3D_SC_SmallGame\022\020\n\010res_code"
+  "\030\001 \001(\010\022\014\n\004poin\030\002 \001(\005\022\014\n\004type\030\003 \001(\005\022\021\n\tfr"
+  "ee_time\030\004 \001(\005\022\020\n\010win_gold\030\005 \001(\005\"\030\n\004Icon\022"
+  "\020\n\010hit_icon\030\001 \003(\005\"\207\001\n\020CMD_3D_SC_Result\022\014"
+  "\n\004icon\030\001 \003(\005\022\035\n\010hit_icon\030\002 \003(\0132\013.AJDMX.I"
+  "con\022\020\n\010win_gold\030\003 \001(\005\022\022\n\nfree_count\030\004 \001("
+  "\005\022\021\n\thit_bouns\030\005 \001(\005\022\r\n\005index\030\006 \001(\005\"L\n\023C"
+  "MD_3D_SC_MaxChance\022\020\n\010res_code\030\001 \001(\010\022\021\n\t"
+  "free_time\030\002 \001(\005\022\020\n\010win_gold\030\003 \001(\005*\262\001\n\021EM"
+  "sgIDAJDMXServer\022\025\n\021SUB_SC_GAME_START\020\000\022\025"
+  "\n\021SUB_SC_SMALL_GAME\020\001\022\023\n\017SUB_SC_BET_FAIL"
+  "\020\002\022\025\n\021SUB_SC_MAX_CHANCE\020\003\022\025\n\021SUB_CS_GAME"
+  "_START\020\004\022\025\n\021SUB_CS_SMALL_GAME\020\005\022\025\n\021SUB_C"
+  "S_MAX_CHANCE\020\006b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_AJDMX_2eproto_deps[1] = {
 };
@@ -207,7 +205,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_AJD
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_AJDMX_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_AJDMX_2eproto = {
-  false, false, descriptor_table_protodef_AJDMX_2eproto, "AJDMX.proto", 762,
+  false, false, descriptor_table_protodef_AJDMX_2eproto, "AJDMX.proto", 742,
   &descriptor_table_AJDMX_2eproto_once, descriptor_table_AJDMX_2eproto_sccs, descriptor_table_AJDMX_2eproto_deps, 5, 0,
   schemas, file_default_instances, TableStruct_AJDMX_2eproto::offsets,
   file_level_metadata_AJDMX_2eproto, 5, file_level_enum_descriptors_AJDMX_2eproto, file_level_service_descriptors_AJDMX_2eproto,
@@ -331,13 +329,6 @@ const char* SC_SceneInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 bet_count = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          bet_count_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
       // repeated int32 bet = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
@@ -427,12 +418,6 @@ failure:
   if (this->curren_bet() != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_curren_bet(), target);
-  }
-
-  // int32 bet_count = 3;
-  if (this->bet_count() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_bet_count(), target);
   }
 
   // repeated int32 bet = 4;
@@ -555,13 +540,6 @@ size_t SC_SceneInfo::ByteSizeLong() const {
         this->_internal_curren_bet());
   }
 
-  // int32 bet_count = 3;
-  if (this->bet_count() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_bet_count());
-  }
-
   // bool is_small_game = 5;
   if (this->is_small_game() != 0) {
     total_size += 1 + 1;
@@ -620,9 +598,6 @@ void SC_SceneInfo::MergeFrom(const SC_SceneInfo& from) {
   }
   if (from.curren_bet() != 0) {
     _internal_set_curren_bet(from._internal_curren_bet());
-  }
-  if (from.bet_count() != 0) {
-    _internal_set_bet_count(from._internal_bet_count());
   }
   if (from.is_small_game() != 0) {
     _internal_set_is_small_game(from._internal_is_small_game());
@@ -1182,7 +1157,7 @@ class CMD_3D_SC_Result::_Internal {
 
 CMD_3D_SC_Result::CMD_3D_SC_Result(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  iocon_(arena),
+  icon_(arena),
   hit_icon_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
@@ -1190,7 +1165,7 @@ CMD_3D_SC_Result::CMD_3D_SC_Result(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 }
 CMD_3D_SC_Result::CMD_3D_SC_Result(const CMD_3D_SC_Result& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      iocon_(from.iocon_),
+      icon_(from.icon_),
       hit_icon_(from.hit_icon_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&win_gold_, &from.win_gold_,
@@ -1238,7 +1213,7 @@ void CMD_3D_SC_Result::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  iocon_.Clear();
+  icon_.Clear();
   hit_icon_.Clear();
   ::memset(&win_gold_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&index_) -
@@ -1253,13 +1228,13 @@ const char* CMD_3D_SC_Result::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // repeated int32 iocon = 1;
+      // repeated int32 icon = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_iocon(), ptr, ctx);
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_icon(), ptr, ctx);
           CHK_(ptr);
         } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8) {
-          _internal_add_iocon(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+          _internal_add_icon(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1331,12 +1306,12 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated int32 iocon = 1;
+  // repeated int32 icon = 1;
   {
-    int byte_size = _iocon_cached_byte_size_.load(std::memory_order_relaxed);
+    int byte_size = _icon_cached_byte_size_.load(std::memory_order_relaxed);
     if (byte_size > 0) {
       target = stream->WriteInt32Packed(
-          1, _internal_iocon(), byte_size, target);
+          1, _internal_icon(), byte_size, target);
     }
   }
 
@@ -1388,17 +1363,17 @@ size_t CMD_3D_SC_Result::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated int32 iocon = 1;
+  // repeated int32 icon = 1;
   {
     size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      Int32Size(this->iocon_);
+      Int32Size(this->icon_);
     if (data_size > 0) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
             static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
     }
     int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
-    _iocon_cached_byte_size_.store(cached_size,
+    _icon_cached_byte_size_.store(cached_size,
                                     std::memory_order_relaxed);
     total_size += data_size;
   }
@@ -1469,7 +1444,7 @@ void CMD_3D_SC_Result::MergeFrom(const CMD_3D_SC_Result& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  iocon_.MergeFrom(from.iocon_);
+  icon_.MergeFrom(from.icon_);
   hit_icon_.MergeFrom(from.hit_icon_);
   if (from.win_gold() != 0) {
     _internal_set_win_gold(from._internal_win_gold());
@@ -1506,7 +1481,7 @@ bool CMD_3D_SC_Result::IsInitialized() const {
 void CMD_3D_SC_Result::InternalSwap(CMD_3D_SC_Result* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  iocon_.InternalSwap(&other->iocon_);
+  icon_.InternalSwap(&other->icon_);
   hit_icon_.InternalSwap(&other->hit_icon_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(CMD_3D_SC_Result, index_)

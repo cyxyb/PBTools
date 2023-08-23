@@ -24,31 +24,30 @@ namespace AJDMX {
     static AJDMXReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChlQcm90by9TdWJHYW1lL0FKRE1YLnByb3RvEgVBSkRNWCLJAQoMU0NfU2Nl",
+            "ChlQcm90by9TdWJHYW1lL0FKRE1YLnByb3RvEgVBSkRNWCK2AQoMU0NfU2Nl",
             "bmVJbmZvEhIKCmZyZWVfY291bnQYASABKAUSEgoKY3VycmVuX2JldBgCIAEo",
-            "BRIRCgliZXRfY291bnQYAyABKAUSCwoDYmV0GAQgAygFEhUKDWlzX3NtYWxs",
-            "X2dhbWUYBSABKAgSDQoFaW5kZXgYBiABKAUSGAoQbWF4X2NoYW5jZV9jb3Vu",
-            "dBgHIAEoBRIXCg9tYXhfY2hhbmNlX3R5cGUYCCADKAUSGAoQbWF4X2NoYW5j",
-            "ZV9pbmRleBgJIAMoBSJoChNDTURfM0RfU0NfU21hbGxHYW1lEhAKCHJlc19j",
-            "b2RlGAEgASgIEgwKBHBvaW4YAiABKAUSDAoEdHlwZRgDIAEoBRIRCglmcmVl",
-            "X3RpbWUYBCABKAUSEAoId2luX2dvbGQYBSABKAUiGAoESWNvbhIQCghoaXRf",
-            "aWNvbhgBIAMoBSKIAQoQQ01EXzNEX1NDX1Jlc3VsdBINCgVpb2NvbhgBIAMo",
-            "BRIdCghoaXRfaWNvbhgCIAMoCzILLkFKRE1YLkljb24SEAoId2luX2dvbGQY",
-            "AyABKAUSEgoKZnJlZV9jb3VudBgEIAEoBRIRCgloaXRfYm91bnMYBSABKAUS",
-            "DQoFaW5kZXgYBiABKAUiTAoTQ01EXzNEX1NDX01heENoYW5jZRIQCghyZXNf",
-            "Y29kZRgBIAEoCBIRCglmcmVlX3RpbWUYAiABKAUSEAoId2luX2dvbGQYAyAB",
-            "KAUqsgEKEUVNc2dJREFKRE1YU2VydmVyEhUKEVNVQl9TQ19HQU1FX1NUQVJU",
-            "EAASFQoRU1VCX1NDX1NNQUxMX0dBTUUQARITCg9TVUJfU0NfQkVUX0ZBSUwQ",
-            "AhIVChFTVUJfU0NfTUFYX0NIQU5DRRADEhUKEVNVQl9DU19HQU1FX1NUQVJU",
-            "EAQSFQoRU1VCX0NTX1NNQUxMX0dBTUUQBRIVChFTVUJfQ1NfTUFYX0NIQU5D",
-            "RRAGYgZwcm90bzM="));
+            "BRILCgNiZXQYBCADKAUSFQoNaXNfc21hbGxfZ2FtZRgFIAEoCBINCgVpbmRl",
+            "eBgGIAEoBRIYChBtYXhfY2hhbmNlX2NvdW50GAcgASgFEhcKD21heF9jaGFu",
+            "Y2VfdHlwZRgIIAMoBRIYChBtYXhfY2hhbmNlX2luZGV4GAkgAygFImgKE0NN",
+            "RF8zRF9TQ19TbWFsbEdhbWUSEAoIcmVzX2NvZGUYASABKAgSDAoEcG9pbhgC",
+            "IAEoBRIMCgR0eXBlGAMgASgFEhEKCWZyZWVfdGltZRgEIAEoBRIQCgh3aW5f",
+            "Z29sZBgFIAEoBSIYCgRJY29uEhAKCGhpdF9pY29uGAEgAygFIocBChBDTURf",
+            "M0RfU0NfUmVzdWx0EgwKBGljb24YASADKAUSHQoIaGl0X2ljb24YAiADKAsy",
+            "Cy5BSkRNWC5JY29uEhAKCHdpbl9nb2xkGAMgASgFEhIKCmZyZWVfY291bnQY",
+            "BCABKAUSEQoJaGl0X2JvdW5zGAUgASgFEg0KBWluZGV4GAYgASgFIkwKE0NN",
+            "RF8zRF9TQ19NYXhDaGFuY2USEAoIcmVzX2NvZGUYASABKAgSEQoJZnJlZV90",
+            "aW1lGAIgASgFEhAKCHdpbl9nb2xkGAMgASgFKrIBChFFTXNnSURBSkRNWFNl",
+            "cnZlchIVChFTVUJfU0NfR0FNRV9TVEFSVBAAEhUKEVNVQl9TQ19TTUFMTF9H",
+            "QU1FEAESEwoPU1VCX1NDX0JFVF9GQUlMEAISFQoRU1VCX1NDX01BWF9DSEFO",
+            "Q0UQAxIVChFTVUJfQ1NfR0FNRV9TVEFSVBAEEhUKEVNVQl9DU19TTUFMTF9H",
+            "QU1FEAUSFQoRU1VCX0NTX01BWF9DSEFOQ0UQBmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::AJDMX.EMsgIDAJDMXServer), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::AJDMX.SC_SceneInfo), global::AJDMX.SC_SceneInfo.Parser, new[]{ "FreeCount", "CurrenBet", "BetCount", "Bet", "IsSmallGame", "Index", "MaxChanceCount", "MaxChanceType", "MaxChanceIndex" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::AJDMX.SC_SceneInfo), global::AJDMX.SC_SceneInfo.Parser, new[]{ "FreeCount", "CurrenBet", "Bet", "IsSmallGame", "Index", "MaxChanceCount", "MaxChanceType", "MaxChanceIndex" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AJDMX.CMD_3D_SC_SmallGame), global::AJDMX.CMD_3D_SC_SmallGame.Parser, new[]{ "ResCode", "Poin", "Type", "FreeTime", "WinGold" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AJDMX.Icon), global::AJDMX.Icon.Parser, new[]{ "HitIcon" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::AJDMX.CMD_3D_SC_Result), global::AJDMX.CMD_3D_SC_Result.Parser, new[]{ "Iocon", "HitIcon", "WinGold", "FreeCount", "HitBouns", "Index" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::AJDMX.CMD_3D_SC_Result), global::AJDMX.CMD_3D_SC_Result.Parser, new[]{ "Icon", "HitIcon", "WinGold", "FreeCount", "HitBouns", "Index" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AJDMX.CMD_3D_SC_MaxChance), global::AJDMX.CMD_3D_SC_MaxChance.Parser, new[]{ "ResCode", "FreeTime", "WinGold" }, null, null, null, null)
           }));
     }
@@ -81,7 +80,7 @@ namespace AJDMX {
     /// </summary>
     [pbr::OriginalName("SUB_CS_GAME_START")] SubCsGameStart = 4,
     /// <summary>
-    /// 小游戏(CMD_3D_SC_SmallGame)
+    /// 小游戏(MsgCommonBool)
     /// </summary>
     [pbr::OriginalName("SUB_CS_SMALL_GAME")] SubCsSmallGame = 5,
     /// <summary>
@@ -127,7 +126,6 @@ namespace AJDMX {
     public SC_SceneInfo(SC_SceneInfo other) : this() {
       freeCount_ = other.freeCount_;
       currenBet_ = other.currenBet_;
-      betCount_ = other.betCount_;
       bet_ = other.bet_.Clone();
       isSmallGame_ = other.isSmallGame_;
       index_ = other.index_;
@@ -167,20 +165,6 @@ namespace AJDMX {
       get { return currenBet_; }
       set {
         currenBet_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "bet_count" field.</summary>
-    public const int BetCountFieldNumber = 3;
-    private int betCount_;
-    /// <summary>
-    /// 下注列表个数
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int BetCount {
-      get { return betCount_; }
-      set {
-        betCount_ = value;
       }
     }
 
@@ -280,7 +264,6 @@ namespace AJDMX {
       }
       if (FreeCount != other.FreeCount) return false;
       if (CurrenBet != other.CurrenBet) return false;
-      if (BetCount != other.BetCount) return false;
       if(!bet_.Equals(other.bet_)) return false;
       if (IsSmallGame != other.IsSmallGame) return false;
       if (Index != other.Index) return false;
@@ -295,7 +278,6 @@ namespace AJDMX {
       int hash = 1;
       if (FreeCount != 0) hash ^= FreeCount.GetHashCode();
       if (CurrenBet != 0) hash ^= CurrenBet.GetHashCode();
-      if (BetCount != 0) hash ^= BetCount.GetHashCode();
       hash ^= bet_.GetHashCode();
       if (IsSmallGame != false) hash ^= IsSmallGame.GetHashCode();
       if (Index != 0) hash ^= Index.GetHashCode();
@@ -325,10 +307,6 @@ namespace AJDMX {
       if (CurrenBet != 0) {
         output.WriteRawTag(16);
         output.WriteInt32(CurrenBet);
-      }
-      if (BetCount != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(BetCount);
       }
       bet_.WriteTo(output, _repeated_bet_codec);
       if (IsSmallGame != false) {
@@ -362,10 +340,6 @@ namespace AJDMX {
         output.WriteRawTag(16);
         output.WriteInt32(CurrenBet);
       }
-      if (BetCount != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(BetCount);
-      }
       bet_.WriteTo(ref output, _repeated_bet_codec);
       if (IsSmallGame != false) {
         output.WriteRawTag(40);
@@ -396,9 +370,6 @@ namespace AJDMX {
       if (CurrenBet != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(CurrenBet);
       }
-      if (BetCount != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(BetCount);
-      }
       size += bet_.CalculateSize(_repeated_bet_codec);
       if (IsSmallGame != false) {
         size += 1 + 1;
@@ -427,9 +398,6 @@ namespace AJDMX {
       }
       if (other.CurrenBet != 0) {
         CurrenBet = other.CurrenBet;
-      }
-      if (other.BetCount != 0) {
-        BetCount = other.BetCount;
       }
       bet_.Add(other.bet_);
       if (other.IsSmallGame != false) {
@@ -463,10 +431,6 @@ namespace AJDMX {
           }
           case 16: {
             CurrenBet = input.ReadInt32();
-            break;
-          }
-          case 24: {
-            BetCount = input.ReadInt32();
             break;
           }
           case 34:
@@ -516,10 +480,6 @@ namespace AJDMX {
           }
           case 16: {
             CurrenBet = input.ReadInt32();
-            break;
-          }
-          case 24: {
-            BetCount = input.ReadInt32();
             break;
           }
           case 34:
@@ -1088,7 +1048,7 @@ namespace AJDMX {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CMD_3D_SC_Result(CMD_3D_SC_Result other) : this() {
-      iocon_ = other.iocon_.Clone();
+      icon_ = other.icon_.Clone();
       hitIcon_ = other.hitIcon_.Clone();
       winGold_ = other.winGold_;
       freeCount_ = other.freeCount_;
@@ -1102,14 +1062,14 @@ namespace AJDMX {
       return new CMD_3D_SC_Result(this);
     }
 
-    /// <summary>Field number for the "iocon" field.</summary>
-    public const int IoconFieldNumber = 1;
-    private static readonly pb::FieldCodec<int> _repeated_iocon_codec
+    /// <summary>Field number for the "icon" field.</summary>
+    public const int IconFieldNumber = 1;
+    private static readonly pb::FieldCodec<int> _repeated_icon_codec
         = pb::FieldCodec.ForInt32(10);
-    private readonly pbc::RepeatedField<int> iocon_ = new pbc::RepeatedField<int>();
+    private readonly pbc::RepeatedField<int> icon_ = new pbc::RepeatedField<int>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<int> Iocon {
-      get { return iocon_; }
+    public pbc::RepeatedField<int> Icon {
+      get { return icon_; }
     }
 
     /// <summary>Field number for the "hit_icon" field.</summary>
@@ -1194,7 +1154,7 @@ namespace AJDMX {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if(!iocon_.Equals(other.iocon_)) return false;
+      if(!icon_.Equals(other.icon_)) return false;
       if(!hitIcon_.Equals(other.hitIcon_)) return false;
       if (WinGold != other.WinGold) return false;
       if (FreeCount != other.FreeCount) return false;
@@ -1206,7 +1166,7 @@ namespace AJDMX {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      hash ^= iocon_.GetHashCode();
+      hash ^= icon_.GetHashCode();
       hash ^= hitIcon_.GetHashCode();
       if (WinGold != 0) hash ^= WinGold.GetHashCode();
       if (FreeCount != 0) hash ^= FreeCount.GetHashCode();
@@ -1228,7 +1188,7 @@ namespace AJDMX {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      iocon_.WriteTo(output, _repeated_iocon_codec);
+      icon_.WriteTo(output, _repeated_icon_codec);
       hitIcon_.WriteTo(output, _repeated_hitIcon_codec);
       if (WinGold != 0) {
         output.WriteRawTag(24);
@@ -1255,7 +1215,7 @@ namespace AJDMX {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      iocon_.WriteTo(ref output, _repeated_iocon_codec);
+      icon_.WriteTo(ref output, _repeated_icon_codec);
       hitIcon_.WriteTo(ref output, _repeated_hitIcon_codec);
       if (WinGold != 0) {
         output.WriteRawTag(24);
@@ -1282,7 +1242,7 @@ namespace AJDMX {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      size += iocon_.CalculateSize(_repeated_iocon_codec);
+      size += icon_.CalculateSize(_repeated_icon_codec);
       size += hitIcon_.CalculateSize(_repeated_hitIcon_codec);
       if (WinGold != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(WinGold);
@@ -1307,7 +1267,7 @@ namespace AJDMX {
       if (other == null) {
         return;
       }
-      iocon_.Add(other.iocon_);
+      icon_.Add(other.icon_);
       hitIcon_.Add(other.hitIcon_);
       if (other.WinGold != 0) {
         WinGold = other.WinGold;
@@ -1337,7 +1297,7 @@ namespace AJDMX {
             break;
           case 10:
           case 8: {
-            iocon_.AddEntriesFrom(input, _repeated_iocon_codec);
+            icon_.AddEntriesFrom(input, _repeated_icon_codec);
             break;
           }
           case 18: {
@@ -1376,7 +1336,7 @@ namespace AJDMX {
             break;
           case 10:
           case 8: {
-            iocon_.AddEntriesFrom(ref input, _repeated_iocon_codec);
+            icon_.AddEntriesFrom(ref input, _repeated_icon_codec);
             break;
           }
           case 18: {
