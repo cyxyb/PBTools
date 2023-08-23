@@ -1,0 +1,64 @@
+syntax = "proto3";
+
+package AJDMX;
+
+//服务器消息
+enum EMsgIDAJDMXServer
+{
+	SUB_SC_GAME_START = 0; 					// 启动游戏(CMD_3D_SC_Result)
+	SUB_SC_SMALL_GAME = 1; 					// 小游戏返回(CMD_3D_SC_SmallGame)
+	SUB_SC_BET_FAIL	= 2; 					// 游戏结束(MsgCommonN32)
+	SUB_SC_MAX_CHANCE = 3; 					// 最大游戏机会(CMD_3D_SC_MaxChance)
+	SUB_CS_GAME_START = 4;					// 开始游戏(MsgCommonN32)
+	SUB_CS_SMALL_GAME = 5;					// 小游戏(CMD_3D_SC_SmallGame)
+	SUB_CS_MAX_CHANCE = 6;					// 开始下注(MsgCommonN32)
+}
+
+//场景消息
+message SC_SceneInfo
+{
+	int32	free_count = 1;					// 免费次数
+	int32	curren_bet = 2;					// 当前下注
+	int32	bet_count = 3;					// 下注列表个数
+	repeated int32	bet = 4;				// 下注配置
+	bool	is_small_game = 5;				// 是否小游戏
+	int32	index = 6;						// 小游戏下标
+	int32	max_chance_count = 7;			// 最大游戏机会次数
+	repeated int32	max_chance_type = 8; 	// 最大机会类型
+	repeated int32	max_chance_index = 9;	// 最大机会索引
+}
+
+// 小游戏返回
+message CMD_3D_SC_SmallGame
+{
+	bool	res_code = 1;					// 0:失败 1：成功
+	int32	poin = 2;						// 点数
+	int32	type = 3;						// 0:正常 1：最大机会 2：再来一次
+	int32	free_time = 4;					// 免费次数
+	int32	win_gold = 5;					// 小游戏得分
+}
+
+// 击中的图标
+message Icon
+{
+	repeated int32 hit_icon = 1;
+}
+
+// 游戏结果返回
+message CMD_3D_SC_Result
+{
+	repeated int32	iocon = 1;
+	repeated Icon	hit_icon = 2;			// 击中的图标
+	int32	win_gold =3;					// 赢得金币
+	int32	free_count = 4;					// 免费次数
+	int32	hit_bouns = 5;					// 中小游戏
+	int32	index = 6;						// 小游戏当前下标
+}
+
+// 最大游戏机会
+message CMD_3D_SC_MaxChance
+{
+	bool	res_code =1;					// 0:失败 1：成功
+	int32	free_time = 2;					// 免费次数
+	int32	win_gold = 3;					// 小游戏得分
+}
