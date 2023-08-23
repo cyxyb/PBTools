@@ -7,7 +7,7 @@ enum EMsgIDSubGame
 	MsgIDSubGame_Null				= 0;
 	MsgIDSubGame_GameStart			= 1;	//玩家开始游戏(MsgCommonN32)
 	MsgIDSubGame_BuyFree			= 2;	//玩家购买免费游戏(MsgCommonN32)
-	MsgIDSubGame_GameResult			= 3;	//游戏结果(MsgResult)
+	MsgIDSubGame_GameResultResp		= 3;	//游戏结果(MsgResult)
 }
 
 //场景消息

@@ -122,10 +122,10 @@ const char descriptor_table_protodef_OLYMPUS_2eproto[] PROTOBUF_SECTION_VARIABLE
   "l\030\003 \003(\005\022\013\n\003odd\030\004 \001(\005\"s\n\tMsgResult\022%\n\nrou"
   "nd_data\030\001 \003(\0132\021.OLYMPUS.MsgRound\022\025\n\rtabl"
   "e_all_mul\030\002 \001(\005\022\022\n\nfree_times\030\003 \001(\005\022\024\n\014f"
-  "ree_add_mul\030\004 \001(\005*y\n\rEMsgIDSubGame\022\025\n\021Ms"
+  "ree_add_mul\030\004 \001(\005*}\n\rEMsgIDSubGame\022\025\n\021Ms"
   "gIDSubGame_Null\020\000\022\032\n\026MsgIDSubGame_GameSt"
-  "art\020\001\022\030\n\024MsgIDSubGame_BuyFree\020\002\022\033\n\027MsgID"
-  "SubGame_GameResult\020\003b\006proto3"
+  "art\020\001\022\030\n\024MsgIDSubGame_BuyFree\020\002\022\037\n\033MsgID"
+  "SubGame_GameResultResp\020\003b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_OLYMPUS_2eproto_deps[1] = {
 };
@@ -136,7 +136,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_OLY
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_OLYMPUS_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_OLYMPUS_2eproto = {
-  false, false, descriptor_table_protodef_OLYMPUS_2eproto, "OLYMPUS.proto", 428,
+  false, false, descriptor_table_protodef_OLYMPUS_2eproto, "OLYMPUS.proto", 432,
   &descriptor_table_OLYMPUS_2eproto_once, descriptor_table_OLYMPUS_2eproto_sccs, descriptor_table_OLYMPUS_2eproto_deps, 3, 0,
   schemas, file_default_instances, TableStruct_OLYMPUS_2eproto::offsets,
   file_level_metadata_OLYMPUS_2eproto, 3, file_level_enum_descriptors_OLYMPUS_2eproto, file_level_service_descriptors_OLYMPUS_2eproto,

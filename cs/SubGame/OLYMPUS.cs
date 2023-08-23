@@ -30,10 +30,10 @@ namespace OLYMPUS {
             "CgRpY29uGAEgAygFEgsKA2hpdBgCIAMoCBITCgtzcGVjaWFsX211bBgDIAMo",
             "BRILCgNvZGQYBCABKAUicwoJTXNnUmVzdWx0EiUKCnJvdW5kX2RhdGEYASAD",
             "KAsyES5PTFlNUFVTLk1zZ1JvdW5kEhUKDXRhYmxlX2FsbF9tdWwYAiABKAUS",
-            "EgoKZnJlZV90aW1lcxgDIAEoBRIUCgxmcmVlX2FkZF9tdWwYBCABKAUqeQoN",
+            "EgoKZnJlZV90aW1lcxgDIAEoBRIUCgxmcmVlX2FkZF9tdWwYBCABKAUqfQoN",
             "RU1zZ0lEU3ViR2FtZRIVChFNc2dJRFN1YkdhbWVfTnVsbBAAEhoKFk1zZ0lE",
             "U3ViR2FtZV9HYW1lU3RhcnQQARIYChRNc2dJRFN1YkdhbWVfQnV5RnJlZRAC",
-            "EhsKF01zZ0lEU3ViR2FtZV9HYW1lUmVzdWx0EANiBnByb3RvMw=="));
+            "Eh8KG01zZ0lEU3ViR2FtZV9HYW1lUmVzdWx0UmVzcBADYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::OLYMPUS.EMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -59,7 +59,7 @@ namespace OLYMPUS {
     /// <summary>
     ///游戏结果(MsgResult)
     /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_GameResult")] MsgIdsubGameGameResult = 3,
+    [pbr::OriginalName("MsgIDSubGame_GameResultResp")] MsgIdsubGameGameResultResp = 3,
   }
 
   #endregion
