@@ -111,4 +111,5 @@ enum EMsgIDDB
 	GAME2DB_FingerGuessQueryRecord	= 2009;	//猜拳查询记录
 	DB2GAME_FingerGuessRoundRecord	= 2010;	//猜拳每局记录返回
 	DB2GAME_FingerGuessDayRecord	= 2011;	//猜拳每日记录返回
+	GAME2DB_WriteDisConnectData		= 2012;	//写入玩家断线数据
 }

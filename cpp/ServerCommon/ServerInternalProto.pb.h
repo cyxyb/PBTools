@@ -4525,14 +4525,16 @@ class MsgDBPlayerReconnectData PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kParamFieldNumber = 6,
-    kMultipleFieldNumber = 1,
-    kScoreBonusFieldNumber = 2,
-    kLeftFreeGameCntFieldNumber = 3,
-    kSmallGameTypeFieldNumber = 4,
-    kSmallGameFailCntFieldNumber = 5,
+    kParamFieldNumber = 8,
+    kUserIdFieldNumber = 1,
+    kServerIdFieldNumber = 2,
+    kMultipleFieldNumber = 3,
+    kScoreBonusFieldNumber = 4,
+    kLeftFreeGameCntFieldNumber = 5,
+    kSmallGameTypeFieldNumber = 6,
+    kSmallGameFailCntFieldNumber = 7,
   };
-  // repeated int32 param = 6;
+  // repeated int32 param = 8;
   int param_size() const;
   private:
   int _internal_param_size() const;
@@ -4554,7 +4556,25 @@ class MsgDBPlayerReconnectData PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_param();
 
-  // int32 multiple = 1;
+  // int32 user_id = 1;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 server_id = 2;
+  void clear_server_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 server_id() const;
+  void set_server_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_server_id() const;
+  void _internal_set_server_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 multiple = 3;
   void clear_multiple();
   ::PROTOBUF_NAMESPACE_ID::int32 multiple() const;
   void set_multiple(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -4563,7 +4583,7 @@ class MsgDBPlayerReconnectData PROTOBUF_FINAL :
   void _internal_set_multiple(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 score_bonus = 2;
+  // int32 score_bonus = 4;
   void clear_score_bonus();
   ::PROTOBUF_NAMESPACE_ID::int32 score_bonus() const;
   void set_score_bonus(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -4572,7 +4592,7 @@ class MsgDBPlayerReconnectData PROTOBUF_FINAL :
   void _internal_set_score_bonus(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 left_free_game_cnt = 3;
+  // int32 left_free_game_cnt = 5;
   void clear_left_free_game_cnt();
   ::PROTOBUF_NAMESPACE_ID::int32 left_free_game_cnt() const;
   void set_left_free_game_cnt(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -4581,7 +4601,7 @@ class MsgDBPlayerReconnectData PROTOBUF_FINAL :
   void _internal_set_left_free_game_cnt(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 small_game_type = 4;
+  // int32 small_game_type = 6;
   void clear_small_game_type();
   ::PROTOBUF_NAMESPACE_ID::int32 small_game_type() const;
   void set_small_game_type(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -4590,7 +4610,7 @@ class MsgDBPlayerReconnectData PROTOBUF_FINAL :
   void _internal_set_small_game_type(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 small_game_fail_cnt = 5;
+  // int32 small_game_fail_cnt = 7;
   void clear_small_game_fail_cnt();
   ::PROTOBUF_NAMESPACE_ID::int32 small_game_fail_cnt() const;
   void set_small_game_fail_cnt(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -4608,6 +4628,8 @@ class MsgDBPlayerReconnectData PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > param_;
   mutable std::atomic<int> _param_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 server_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 multiple_;
   ::PROTOBUF_NAMESPACE_ID::int32 score_bonus_;
   ::PROTOBUF_NAMESPACE_ID::int32 left_free_game_cnt_;
@@ -8697,7 +8719,47 @@ inline void MsgDBGamePlayerLogin::set_ip(::PROTOBUF_NAMESPACE_ID::int32 value) {
 
 // MsgDBPlayerReconnectData
 
-// int32 multiple = 1;
+// int32 user_id = 1;
+inline void MsgDBPlayerReconnectData::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBPlayerReconnectData::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBPlayerReconnectData::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBPlayerReconnectData.user_id)
+  return _internal_user_id();
+}
+inline void MsgDBPlayerReconnectData::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgDBPlayerReconnectData::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBPlayerReconnectData.user_id)
+}
+
+// int32 server_id = 2;
+inline void MsgDBPlayerReconnectData::clear_server_id() {
+  server_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBPlayerReconnectData::_internal_server_id() const {
+  return server_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBPlayerReconnectData::server_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBPlayerReconnectData.server_id)
+  return _internal_server_id();
+}
+inline void MsgDBPlayerReconnectData::_internal_set_server_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  server_id_ = value;
+}
+inline void MsgDBPlayerReconnectData::set_server_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_server_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBPlayerReconnectData.server_id)
+}
+
+// int32 multiple = 3;
 inline void MsgDBPlayerReconnectData::clear_multiple() {
   multiple_ = 0;
 }
@@ -8717,7 +8779,7 @@ inline void MsgDBPlayerReconnectData::set_multiple(::PROTOBUF_NAMESPACE_ID::int3
   // @@protoc_insertion_point(field_set:MsgDBPlayerReconnectData.multiple)
 }
 
-// int32 score_bonus = 2;
+// int32 score_bonus = 4;
 inline void MsgDBPlayerReconnectData::clear_score_bonus() {
   score_bonus_ = 0;
 }
@@ -8737,7 +8799,7 @@ inline void MsgDBPlayerReconnectData::set_score_bonus(::PROTOBUF_NAMESPACE_ID::i
   // @@protoc_insertion_point(field_set:MsgDBPlayerReconnectData.score_bonus)
 }
 
-// int32 left_free_game_cnt = 3;
+// int32 left_free_game_cnt = 5;
 inline void MsgDBPlayerReconnectData::clear_left_free_game_cnt() {
   left_free_game_cnt_ = 0;
 }
@@ -8757,7 +8819,7 @@ inline void MsgDBPlayerReconnectData::set_left_free_game_cnt(::PROTOBUF_NAMESPAC
   // @@protoc_insertion_point(field_set:MsgDBPlayerReconnectData.left_free_game_cnt)
 }
 
-// int32 small_game_type = 4;
+// int32 small_game_type = 6;
 inline void MsgDBPlayerReconnectData::clear_small_game_type() {
   small_game_type_ = 0;
 }
@@ -8777,7 +8839,7 @@ inline void MsgDBPlayerReconnectData::set_small_game_type(::PROTOBUF_NAMESPACE_I
   // @@protoc_insertion_point(field_set:MsgDBPlayerReconnectData.small_game_type)
 }
 
-// int32 small_game_fail_cnt = 5;
+// int32 small_game_fail_cnt = 7;
 inline void MsgDBPlayerReconnectData::clear_small_game_fail_cnt() {
   small_game_fail_cnt_ = 0;
 }
@@ -8797,7 +8859,7 @@ inline void MsgDBPlayerReconnectData::set_small_game_fail_cnt(::PROTOBUF_NAMESPA
   // @@protoc_insertion_point(field_set:MsgDBPlayerReconnectData.small_game_fail_cnt)
 }
 
-// repeated int32 param = 6;
+// repeated int32 param = 8;
 inline int MsgDBPlayerReconnectData::_internal_param_size() const {
   return param_.size();
 }
