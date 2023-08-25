@@ -20,7 +20,7 @@ extern PROTOBUF_INTERNAL_EXPORT_RedAndBlack_5fIndia_2eproto ::PROTOBUF_NAMESPACE
 extern PROTOBUF_INTERNAL_EXPORT_RedAndBlack_5fIndia_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgSingleAgainBet_RedAndBlack_5fIndia_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_RedAndBlack_5fIndia_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgTotalBet_RedAndBlack_5fIndia_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_RedAndBlack_5fIndia_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgWinMsg_RedAndBlack_5fIndia_2eproto;
-namespace RedAndBlack {
+namespace RedAndBlack_India {
 class MsgRecordDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgRecord> _instance;
@@ -65,13 +65,13 @@ class MsgBetRecordDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgBetRecord> _instance;
 } _MsgBetRecord_default_instance_;
-}  // namespace RedAndBlack
+}  // namespace RedAndBlack_India
 static void InitDefaultsscc_info_MsgAgainBet_RedAndBlack_5fIndia_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::RedAndBlack::_MsgAgainBet_default_instance_;
-    new (ptr) ::RedAndBlack::MsgAgainBet();
+    void* ptr = &::RedAndBlack_India::_MsgAgainBet_default_instance_;
+    new (ptr) ::RedAndBlack_India::MsgAgainBet();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -84,8 +84,8 @@ static void InitDefaultsscc_info_MsgAgainBetResp_RedAndBlack_5fIndia_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::RedAndBlack::_MsgAgainBetResp_default_instance_;
-    new (ptr) ::RedAndBlack::MsgAgainBetResp();
+    void* ptr = &::RedAndBlack_India::_MsgAgainBetResp_default_instance_;
+    new (ptr) ::RedAndBlack_India::MsgAgainBetResp();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -98,8 +98,8 @@ static void InitDefaultsscc_info_MsgBet_RedAndBlack_5fIndia_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::RedAndBlack::_MsgBet_default_instance_;
-    new (ptr) ::RedAndBlack::MsgBet();
+    void* ptr = &::RedAndBlack_India::_MsgBet_default_instance_;
+    new (ptr) ::RedAndBlack_India::MsgBet();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -111,8 +111,8 @@ static void InitDefaultsscc_info_MsgBetRecord_RedAndBlack_5fIndia_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::RedAndBlack::_MsgBetRecord_default_instance_;
-    new (ptr) ::RedAndBlack::MsgBetRecord();
+    void* ptr = &::RedAndBlack_India::_MsgBetRecord_default_instance_;
+    new (ptr) ::RedAndBlack_India::MsgBetRecord();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -125,8 +125,8 @@ static void InitDefaultsscc_info_MsgBetResp_RedAndBlack_5fIndia_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::RedAndBlack::_MsgBetResp_default_instance_;
-    new (ptr) ::RedAndBlack::MsgBetResp();
+    void* ptr = &::RedAndBlack_India::_MsgBetResp_default_instance_;
+    new (ptr) ::RedAndBlack_India::MsgBetResp();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -139,8 +139,8 @@ static void InitDefaultsscc_info_MsgRecord_RedAndBlack_5fIndia_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::RedAndBlack::_MsgRecord_default_instance_;
-    new (ptr) ::RedAndBlack::MsgRecord();
+    void* ptr = &::RedAndBlack_India::_MsgRecord_default_instance_;
+    new (ptr) ::RedAndBlack_India::MsgRecord();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -152,8 +152,8 @@ static void InitDefaultsscc_info_MsgResult_RedAndBlack_5fIndia_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::RedAndBlack::_MsgResult_default_instance_;
-    new (ptr) ::RedAndBlack::MsgResult();
+    void* ptr = &::RedAndBlack_India::_MsgResult_default_instance_;
+    new (ptr) ::RedAndBlack_India::MsgResult();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -166,8 +166,8 @@ static void InitDefaultsscc_info_MsgSceneInfo_RedAndBlack_5fIndia_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::RedAndBlack::_MsgSceneInfo_default_instance_;
-    new (ptr) ::RedAndBlack::MsgSceneInfo();
+    void* ptr = &::RedAndBlack_India::_MsgSceneInfo_default_instance_;
+    new (ptr) ::RedAndBlack_India::MsgSceneInfo();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -180,8 +180,8 @@ static void InitDefaultsscc_info_MsgSingleAgainBet_RedAndBlack_5fIndia_2eproto()
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::RedAndBlack::_MsgSingleAgainBet_default_instance_;
-    new (ptr) ::RedAndBlack::MsgSingleAgainBet();
+    void* ptr = &::RedAndBlack_India::_MsgSingleAgainBet_default_instance_;
+    new (ptr) ::RedAndBlack_India::MsgSingleAgainBet();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -193,8 +193,8 @@ static void InitDefaultsscc_info_MsgTotalBet_RedAndBlack_5fIndia_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::RedAndBlack::_MsgTotalBet_default_instance_;
-    new (ptr) ::RedAndBlack::MsgTotalBet();
+    void* ptr = &::RedAndBlack_India::_MsgTotalBet_default_instance_;
+    new (ptr) ::RedAndBlack_India::MsgTotalBet();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -206,8 +206,8 @@ static void InitDefaultsscc_info_MsgWinMsg_RedAndBlack_5fIndia_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::RedAndBlack::_MsgWinMsg_default_instance_;
-    new (ptr) ::RedAndBlack::MsgWinMsg();
+    void* ptr = &::RedAndBlack_India::_MsgWinMsg_default_instance_;
+    new (ptr) ::RedAndBlack_India::MsgWinMsg();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -221,149 +221,150 @@ static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_s
 
 const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_RedAndBlack_5fIndia_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgRecord, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgRecord, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgRecord, result_),
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgRecord, card_type_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgRecord, result_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgRecord, card_type_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgSceneInfo, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgSceneInfo, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgSceneInfo, bet_),
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgSceneInfo, record_),
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgSceneInfo, bet_limit_),
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgSceneInfo, player_limit_),
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgSceneInfo, area_mul_),
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgSceneInfo, state_time_),
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgSceneInfo, remain_time_),
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgSceneInfo, state_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgSceneInfo, bet_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgSceneInfo, record_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgSceneInfo, bet_limit_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgSceneInfo, player_limit_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgSceneInfo, area_mul_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgSceneInfo, state_time_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgSceneInfo, remain_time_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgSceneInfo, state_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgBet, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgBet, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgBet, index_),
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgBet, area_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgBet, index_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgBet, area_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgBetResp, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgBetResp, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgBetResp, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgBetResp, bet_info_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgBetResp, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgBetResp, bet_info_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgSingleAgainBet, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgSingleAgainBet, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgSingleAgainBet, index_),
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgSingleAgainBet, area_),
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgSingleAgainBet, count_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgSingleAgainBet, index_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgSingleAgainBet, area_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgSingleAgainBet, count_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgAgainBet, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgAgainBet, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgAgainBet, again_bet_info_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgAgainBet, again_bet_info_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgAgainBetResp, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgAgainBetResp, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgAgainBetResp, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgAgainBetResp, again_bet_info_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgAgainBetResp, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgAgainBetResp, again_bet_info_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgWinMsg, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgWinMsg, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgWinMsg, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgWinMsg, gold_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgWinMsg, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgWinMsg, gold_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgResult, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgResult, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgResult, win_msg_),
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgResult, card_),
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgResult, card_type_),
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgResult, result_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgResult, win_msg_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgResult, card_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgResult, card_type_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgResult, result_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgTotalBet, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgTotalBet, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgTotalBet, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgTotalBet, bet_),
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgTotalBet, gold_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgTotalBet, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgTotalBet, bet_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgTotalBet, gold_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgBetRecord, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgBetRecord, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack::MsgBetRecord, bet_record_),
+  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgBetRecord, bet_record_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::RedAndBlack::MsgRecord)},
-  { 7, -1, sizeof(::RedAndBlack::MsgSceneInfo)},
-  { 20, -1, sizeof(::RedAndBlack::MsgBet)},
-  { 27, -1, sizeof(::RedAndBlack::MsgBetResp)},
-  { 34, -1, sizeof(::RedAndBlack::MsgSingleAgainBet)},
-  { 42, -1, sizeof(::RedAndBlack::MsgAgainBet)},
-  { 48, -1, sizeof(::RedAndBlack::MsgAgainBetResp)},
-  { 55, -1, sizeof(::RedAndBlack::MsgWinMsg)},
-  { 62, -1, sizeof(::RedAndBlack::MsgResult)},
-  { 71, -1, sizeof(::RedAndBlack::MsgTotalBet)},
-  { 79, -1, sizeof(::RedAndBlack::MsgBetRecord)},
+  { 0, -1, sizeof(::RedAndBlack_India::MsgRecord)},
+  { 7, -1, sizeof(::RedAndBlack_India::MsgSceneInfo)},
+  { 20, -1, sizeof(::RedAndBlack_India::MsgBet)},
+  { 27, -1, sizeof(::RedAndBlack_India::MsgBetResp)},
+  { 34, -1, sizeof(::RedAndBlack_India::MsgSingleAgainBet)},
+  { 42, -1, sizeof(::RedAndBlack_India::MsgAgainBet)},
+  { 48, -1, sizeof(::RedAndBlack_India::MsgAgainBetResp)},
+  { 55, -1, sizeof(::RedAndBlack_India::MsgWinMsg)},
+  { 62, -1, sizeof(::RedAndBlack_India::MsgResult)},
+  { 71, -1, sizeof(::RedAndBlack_India::MsgTotalBet)},
+  { 79, -1, sizeof(::RedAndBlack_India::MsgBetRecord)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::RedAndBlack::_MsgRecord_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::RedAndBlack::_MsgSceneInfo_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::RedAndBlack::_MsgBet_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::RedAndBlack::_MsgBetResp_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::RedAndBlack::_MsgSingleAgainBet_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::RedAndBlack::_MsgAgainBet_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::RedAndBlack::_MsgAgainBetResp_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::RedAndBlack::_MsgWinMsg_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::RedAndBlack::_MsgResult_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::RedAndBlack::_MsgTotalBet_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::RedAndBlack::_MsgBetRecord_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::RedAndBlack_India::_MsgRecord_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::RedAndBlack_India::_MsgSceneInfo_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::RedAndBlack_India::_MsgBet_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::RedAndBlack_India::_MsgBetResp_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::RedAndBlack_India::_MsgSingleAgainBet_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::RedAndBlack_India::_MsgAgainBet_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::RedAndBlack_India::_MsgAgainBetResp_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::RedAndBlack_India::_MsgWinMsg_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::RedAndBlack_India::_MsgResult_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::RedAndBlack_India::_MsgTotalBet_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::RedAndBlack_India::_MsgBetRecord_default_instance_),
 };
 
 const char descriptor_table_protodef_RedAndBlack_5fIndia_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\027RedAndBlack_India.proto\022\013RedAndBlack\"."
-  "\n\tMsgRecord\022\016\n\006result\030\001 \001(\005\022\021\n\tcard_type"
-  "\030\002 \001(\005\"\266\001\n\014MsgSceneInfo\022\013\n\003bet\030\001 \003(\005\022&\n\006"
-  "record\030\002 \003(\0132\026.RedAndBlack.MsgRecord\022\021\n\t"
-  "bet_limit\030\003 \003(\005\022\024\n\014player_limit\030\004 \001(\005\022\020\n"
-  "\010area_mul\030\005 \003(\005\022\022\n\nstate_time\030\006 \003(\005\022\023\n\013r"
-  "emain_time\030\007 \001(\005\022\r\n\005state\030\010 \001(\005\"%\n\006MsgBe"
-  "t\022\r\n\005index\030\001 \001(\005\022\014\n\004area\030\002 \001(\005\"E\n\nMsgBet"
-  "Resp\022\020\n\010chair_id\030\001 \001(\005\022%\n\010bet_info\030\002 \001(\013"
-  "2\023.RedAndBlack.MsgBet\"\?\n\021MsgSingleAgainB"
-  "et\022\r\n\005index\030\001 \001(\005\022\014\n\004area\030\002 \001(\005\022\r\n\005count"
-  "\030\003 \001(\005\"E\n\013MsgAgainBet\0226\n\016again_bet_info\030"
-  "\001 \003(\0132\036.RedAndBlack.MsgSingleAgainBet\"U\n"
-  "\017MsgAgainBetResp\022\020\n\010chair_id\030\001 \001(\005\0220\n\016ag"
-  "ain_bet_info\030\002 \001(\0132\030.RedAndBlack.MsgAgai"
-  "nBet\"+\n\tMsgWinMsg\022\020\n\010chair_id\030\001 \001(\005\022\014\n\004g"
-  "old\030\002 \001(\003\"e\n\tMsgResult\022\'\n\007win_msg\030\001 \003(\0132"
-  "\026.RedAndBlack.MsgWinMsg\022\014\n\004card\030\002 \003(\005\022\021\n"
-  "\tcard_type\030\003 \003(\005\022\016\n\006result\030\004 \001(\005\":\n\013MsgT"
-  "otalBet\022\020\n\010chair_id\030\001 \001(\005\022\013\n\003bet\030\002 \003(\005\022\014"
-  "\n\004gold\030\003 \003(\003\"<\n\014MsgBetRecord\022,\n\nbet_reco"
-  "rd\030\001 \003(\0132\030.RedAndBlack.MsgTotalBet*\363\001\n\rE"
-  "MsgIDSubGame\022\025\n\021MsgIDSubGame_Null\020\000\022\024\n\020M"
-  "sgIDSubGame_Bet\020\001\022\030\n\024MsgIDSubGame_BetRes"
-  "p\020\002\022\031\n\025MsgIDSubGame_AgainBet\020\003\022\035\n\031MsgIDS"
-  "ubGame_AgainBetResp\020\004\022\037\n\033MsgIDSubGame_Ga"
-  "meResultResp\020\005\022\036\n\032MsgIDSubGame_BetRecord"
-  "Resp\020\006\022 \n\034MsgIDSubGame_NotifyStateResp\020\007"
-  "b\006proto3"
+  "\n\027RedAndBlack_India.proto\022\021RedAndBlack_I"
+  "ndia\".\n\tMsgRecord\022\016\n\006result\030\001 \001(\005\022\021\n\tcar"
+  "d_type\030\002 \001(\005\"\274\001\n\014MsgSceneInfo\022\013\n\003bet\030\001 \003"
+  "(\005\022,\n\006record\030\002 \003(\0132\034.RedAndBlack_India.M"
+  "sgRecord\022\021\n\tbet_limit\030\003 \003(\005\022\024\n\014player_li"
+  "mit\030\004 \001(\005\022\020\n\010area_mul\030\005 \003(\005\022\022\n\nstate_tim"
+  "e\030\006 \003(\005\022\023\n\013remain_time\030\007 \001(\005\022\r\n\005state\030\010 "
+  "\001(\005\"%\n\006MsgBet\022\r\n\005index\030\001 \001(\005\022\014\n\004area\030\002 \001"
+  "(\005\"K\n\nMsgBetResp\022\020\n\010chair_id\030\001 \001(\005\022+\n\010be"
+  "t_info\030\002 \001(\0132\031.RedAndBlack_India.MsgBet\""
+  "\?\n\021MsgSingleAgainBet\022\r\n\005index\030\001 \001(\005\022\014\n\004a"
+  "rea\030\002 \001(\005\022\r\n\005count\030\003 \001(\005\"K\n\013MsgAgainBet\022"
+  "<\n\016again_bet_info\030\001 \003(\0132$.RedAndBlack_In"
+  "dia.MsgSingleAgainBet\"[\n\017MsgAgainBetResp"
+  "\022\020\n\010chair_id\030\001 \001(\005\0226\n\016again_bet_info\030\002 \001"
+  "(\0132\036.RedAndBlack_India.MsgAgainBet\"+\n\tMs"
+  "gWinMsg\022\020\n\010chair_id\030\001 \001(\005\022\014\n\004gold\030\002 \001(\003\""
+  "k\n\tMsgResult\022-\n\007win_msg\030\001 \003(\0132\034.RedAndBl"
+  "ack_India.MsgWinMsg\022\014\n\004card\030\002 \003(\005\022\021\n\tcar"
+  "d_type\030\003 \003(\005\022\016\n\006result\030\004 \001(\005\":\n\013MsgTotal"
+  "Bet\022\020\n\010chair_id\030\001 \001(\005\022\013\n\003bet\030\002 \003(\005\022\014\n\004go"
+  "ld\030\003 \003(\003\"B\n\014MsgBetRecord\0222\n\nbet_record\030\001"
+  " \003(\0132\036.RedAndBlack_India.MsgTotalBet*\363\001\n"
+  "\rEMsgIDSubGame\022\025\n\021MsgIDSubGame_Null\020\000\022\024\n"
+  "\020MsgIDSubGame_Bet\020\001\022\030\n\024MsgIDSubGame_BetR"
+  "esp\020\002\022\031\n\025MsgIDSubGame_AgainBet\020\003\022\035\n\031MsgI"
+  "DSubGame_AgainBetResp\020\004\022\037\n\033MsgIDSubGame_"
+  "GameResultResp\020\005\022\036\n\032MsgIDSubGame_BetReco"
+  "rdResp\020\006\022 \n\034MsgIDSubGame_NotifyStateResp"
+  "\020\007b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_RedAndBlack_5fIndia_2eproto_deps[1] = {
 };
@@ -382,7 +383,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Red
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_RedAndBlack_5fIndia_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_RedAndBlack_5fIndia_2eproto = {
-  false, false, descriptor_table_protodef_RedAndBlack_5fIndia_2eproto, "RedAndBlack_India.proto", 1128,
+  false, false, descriptor_table_protodef_RedAndBlack_5fIndia_2eproto, "RedAndBlack_India.proto", 1170,
   &descriptor_table_RedAndBlack_5fIndia_2eproto_once, descriptor_table_RedAndBlack_5fIndia_2eproto_sccs, descriptor_table_RedAndBlack_5fIndia_2eproto_deps, 11, 0,
   schemas, file_default_instances, TableStruct_RedAndBlack_5fIndia_2eproto::offsets,
   file_level_metadata_RedAndBlack_5fIndia_2eproto, 11, file_level_enum_descriptors_RedAndBlack_5fIndia_2eproto, file_level_service_descriptors_RedAndBlack_5fIndia_2eproto,
@@ -390,7 +391,7 @@ const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_RedAnd
 
 // Force running AddDescriptors() at dynamic initialization time.
 static bool dynamic_init_dummy_RedAndBlack_5fIndia_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_RedAndBlack_5fIndia_2eproto)), true);
-namespace RedAndBlack {
+namespace RedAndBlack_India {
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDSubGame_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_RedAndBlack_5fIndia_2eproto);
   return file_level_enum_descriptors_RedAndBlack_5fIndia_2eproto[0];
@@ -422,7 +423,7 @@ MsgRecord::MsgRecord(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:RedAndBlack.MsgRecord)
+  // @@protoc_insertion_point(arena_constructor:RedAndBlack_India.MsgRecord)
 }
 MsgRecord::MsgRecord(const MsgRecord& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -430,7 +431,7 @@ MsgRecord::MsgRecord(const MsgRecord& from)
   ::memcpy(&result_, &from.result_,
     static_cast<size_t>(reinterpret_cast<char*>(&card_type_) -
     reinterpret_cast<char*>(&result_)) + sizeof(card_type_));
-  // @@protoc_insertion_point(copy_constructor:RedAndBlack.MsgRecord)
+  // @@protoc_insertion_point(copy_constructor:RedAndBlack_India.MsgRecord)
 }
 
 void MsgRecord::SharedCtor() {
@@ -441,7 +442,7 @@ void MsgRecord::SharedCtor() {
 }
 
 MsgRecord::~MsgRecord() {
-  // @@protoc_insertion_point(destructor:RedAndBlack.MsgRecord)
+  // @@protoc_insertion_point(destructor:RedAndBlack_India.MsgRecord)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -466,7 +467,7 @@ const MsgRecord& MsgRecord::default_instance() {
 
 
 void MsgRecord::Clear() {
-// @@protoc_insertion_point(message_clear_start:RedAndBlack.MsgRecord)
+// @@protoc_insertion_point(message_clear_start:RedAndBlack_India.MsgRecord)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -522,7 +523,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* MsgRecord::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:RedAndBlack.MsgRecord)
+  // @@protoc_insertion_point(serialize_to_array_start:RedAndBlack_India.MsgRecord)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -542,12 +543,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:RedAndBlack.MsgRecord)
+  // @@protoc_insertion_point(serialize_to_array_end:RedAndBlack_India.MsgRecord)
   return target;
 }
 
 size_t MsgRecord::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:RedAndBlack.MsgRecord)
+// @@protoc_insertion_point(message_byte_size_start:RedAndBlack_India.MsgRecord)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -578,22 +579,22 @@ size_t MsgRecord::ByteSizeLong() const {
 }
 
 void MsgRecord::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:RedAndBlack.MsgRecord)
+// @@protoc_insertion_point(generalized_merge_from_start:RedAndBlack_India.MsgRecord)
   GOOGLE_DCHECK_NE(&from, this);
   const MsgRecord* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgRecord>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:RedAndBlack.MsgRecord)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:RedAndBlack_India.MsgRecord)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:RedAndBlack.MsgRecord)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:RedAndBlack_India.MsgRecord)
     MergeFrom(*source);
   }
 }
 
 void MsgRecord::MergeFrom(const MsgRecord& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:RedAndBlack.MsgRecord)
+// @@protoc_insertion_point(class_specific_merge_from_start:RedAndBlack_India.MsgRecord)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -608,14 +609,14 @@ void MsgRecord::MergeFrom(const MsgRecord& from) {
 }
 
 void MsgRecord::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:RedAndBlack.MsgRecord)
+// @@protoc_insertion_point(generalized_copy_from_start:RedAndBlack_India.MsgRecord)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void MsgRecord::CopyFrom(const MsgRecord& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:RedAndBlack.MsgRecord)
+// @@protoc_insertion_point(class_specific_copy_from_start:RedAndBlack_India.MsgRecord)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -656,7 +657,7 @@ MsgSceneInfo::MsgSceneInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   state_time_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:RedAndBlack.MsgSceneInfo)
+  // @@protoc_insertion_point(arena_constructor:RedAndBlack_India.MsgSceneInfo)
 }
 MsgSceneInfo::MsgSceneInfo(const MsgSceneInfo& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
@@ -669,7 +670,7 @@ MsgSceneInfo::MsgSceneInfo(const MsgSceneInfo& from)
   ::memcpy(&player_limit_, &from.player_limit_,
     static_cast<size_t>(reinterpret_cast<char*>(&state_) -
     reinterpret_cast<char*>(&player_limit_)) + sizeof(state_));
-  // @@protoc_insertion_point(copy_constructor:RedAndBlack.MsgSceneInfo)
+  // @@protoc_insertion_point(copy_constructor:RedAndBlack_India.MsgSceneInfo)
 }
 
 void MsgSceneInfo::SharedCtor() {
@@ -681,7 +682,7 @@ void MsgSceneInfo::SharedCtor() {
 }
 
 MsgSceneInfo::~MsgSceneInfo() {
-  // @@protoc_insertion_point(destructor:RedAndBlack.MsgSceneInfo)
+  // @@protoc_insertion_point(destructor:RedAndBlack_India.MsgSceneInfo)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -706,7 +707,7 @@ const MsgSceneInfo& MsgSceneInfo::default_instance() {
 
 
 void MsgSceneInfo::Clear() {
-// @@protoc_insertion_point(message_clear_start:RedAndBlack.MsgSceneInfo)
+// @@protoc_insertion_point(message_clear_start:RedAndBlack_India.MsgSceneInfo)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -739,7 +740,7 @@ const char* MsgSceneInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated .RedAndBlack.MsgRecord record = 2;
+      // repeated .RedAndBlack_India.MsgRecord record = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr -= 1;
@@ -826,7 +827,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* MsgSceneInfo::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:RedAndBlack.MsgSceneInfo)
+  // @@protoc_insertion_point(serialize_to_array_start:RedAndBlack_India.MsgSceneInfo)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -839,7 +840,7 @@ failure:
     }
   }
 
-  // repeated .RedAndBlack.MsgRecord record = 2;
+  // repeated .RedAndBlack_India.MsgRecord record = 2;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_record_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
@@ -896,12 +897,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:RedAndBlack.MsgSceneInfo)
+  // @@protoc_insertion_point(serialize_to_array_end:RedAndBlack_India.MsgSceneInfo)
   return target;
 }
 
 size_t MsgSceneInfo::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:RedAndBlack.MsgSceneInfo)
+// @@protoc_insertion_point(message_byte_size_start:RedAndBlack_India.MsgSceneInfo)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -923,7 +924,7 @@ size_t MsgSceneInfo::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  // repeated .RedAndBlack.MsgRecord record = 2;
+  // repeated .RedAndBlack_India.MsgRecord record = 2;
   total_size += 1UL * this->_internal_record_size();
   for (const auto& msg : this->record_) {
     total_size +=
@@ -1006,22 +1007,22 @@ size_t MsgSceneInfo::ByteSizeLong() const {
 }
 
 void MsgSceneInfo::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:RedAndBlack.MsgSceneInfo)
+// @@protoc_insertion_point(generalized_merge_from_start:RedAndBlack_India.MsgSceneInfo)
   GOOGLE_DCHECK_NE(&from, this);
   const MsgSceneInfo* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgSceneInfo>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:RedAndBlack.MsgSceneInfo)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:RedAndBlack_India.MsgSceneInfo)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:RedAndBlack.MsgSceneInfo)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:RedAndBlack_India.MsgSceneInfo)
     MergeFrom(*source);
   }
 }
 
 void MsgSceneInfo::MergeFrom(const MsgSceneInfo& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:RedAndBlack.MsgSceneInfo)
+// @@protoc_insertion_point(class_specific_merge_from_start:RedAndBlack_India.MsgSceneInfo)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1044,14 +1045,14 @@ void MsgSceneInfo::MergeFrom(const MsgSceneInfo& from) {
 }
 
 void MsgSceneInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:RedAndBlack.MsgSceneInfo)
+// @@protoc_insertion_point(generalized_copy_from_start:RedAndBlack_India.MsgSceneInfo)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void MsgSceneInfo::CopyFrom(const MsgSceneInfo& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:RedAndBlack.MsgSceneInfo)
+// @@protoc_insertion_point(class_specific_copy_from_start:RedAndBlack_India.MsgSceneInfo)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1092,7 +1093,7 @@ MsgBet::MsgBet(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:RedAndBlack.MsgBet)
+  // @@protoc_insertion_point(arena_constructor:RedAndBlack_India.MsgBet)
 }
 MsgBet::MsgBet(const MsgBet& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -1100,7 +1101,7 @@ MsgBet::MsgBet(const MsgBet& from)
   ::memcpy(&index_, &from.index_,
     static_cast<size_t>(reinterpret_cast<char*>(&area_) -
     reinterpret_cast<char*>(&index_)) + sizeof(area_));
-  // @@protoc_insertion_point(copy_constructor:RedAndBlack.MsgBet)
+  // @@protoc_insertion_point(copy_constructor:RedAndBlack_India.MsgBet)
 }
 
 void MsgBet::SharedCtor() {
@@ -1111,7 +1112,7 @@ void MsgBet::SharedCtor() {
 }
 
 MsgBet::~MsgBet() {
-  // @@protoc_insertion_point(destructor:RedAndBlack.MsgBet)
+  // @@protoc_insertion_point(destructor:RedAndBlack_India.MsgBet)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -1136,7 +1137,7 @@ const MsgBet& MsgBet::default_instance() {
 
 
 void MsgBet::Clear() {
-// @@protoc_insertion_point(message_clear_start:RedAndBlack.MsgBet)
+// @@protoc_insertion_point(message_clear_start:RedAndBlack_India.MsgBet)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1192,7 +1193,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* MsgBet::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:RedAndBlack.MsgBet)
+  // @@protoc_insertion_point(serialize_to_array_start:RedAndBlack_India.MsgBet)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1212,12 +1213,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:RedAndBlack.MsgBet)
+  // @@protoc_insertion_point(serialize_to_array_end:RedAndBlack_India.MsgBet)
   return target;
 }
 
 size_t MsgBet::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:RedAndBlack.MsgBet)
+// @@protoc_insertion_point(message_byte_size_start:RedAndBlack_India.MsgBet)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1248,22 +1249,22 @@ size_t MsgBet::ByteSizeLong() const {
 }
 
 void MsgBet::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:RedAndBlack.MsgBet)
+// @@protoc_insertion_point(generalized_merge_from_start:RedAndBlack_India.MsgBet)
   GOOGLE_DCHECK_NE(&from, this);
   const MsgBet* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgBet>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:RedAndBlack.MsgBet)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:RedAndBlack_India.MsgBet)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:RedAndBlack.MsgBet)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:RedAndBlack_India.MsgBet)
     MergeFrom(*source);
   }
 }
 
 void MsgBet::MergeFrom(const MsgBet& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:RedAndBlack.MsgBet)
+// @@protoc_insertion_point(class_specific_merge_from_start:RedAndBlack_India.MsgBet)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1278,14 +1279,14 @@ void MsgBet::MergeFrom(const MsgBet& from) {
 }
 
 void MsgBet::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:RedAndBlack.MsgBet)
+// @@protoc_insertion_point(generalized_copy_from_start:RedAndBlack_India.MsgBet)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void MsgBet::CopyFrom(const MsgBet& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:RedAndBlack.MsgBet)
+// @@protoc_insertion_point(class_specific_copy_from_start:RedAndBlack_India.MsgBet)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1315,10 +1316,10 @@ void MsgBet::InternalSwap(MsgBet* other) {
 
 class MsgBetResp::_Internal {
  public:
-  static const ::RedAndBlack::MsgBet& bet_info(const MsgBetResp* msg);
+  static const ::RedAndBlack_India::MsgBet& bet_info(const MsgBetResp* msg);
 };
 
-const ::RedAndBlack::MsgBet&
+const ::RedAndBlack_India::MsgBet&
 MsgBetResp::_Internal::bet_info(const MsgBetResp* msg) {
   return *msg->bet_info_;
 }
@@ -1326,18 +1327,18 @@ MsgBetResp::MsgBetResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:RedAndBlack.MsgBetResp)
+  // @@protoc_insertion_point(arena_constructor:RedAndBlack_India.MsgBetResp)
 }
 MsgBetResp::MsgBetResp(const MsgBetResp& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_bet_info()) {
-    bet_info_ = new ::RedAndBlack::MsgBet(*from.bet_info_);
+    bet_info_ = new ::RedAndBlack_India::MsgBet(*from.bet_info_);
   } else {
     bet_info_ = nullptr;
   }
   chair_id_ = from.chair_id_;
-  // @@protoc_insertion_point(copy_constructor:RedAndBlack.MsgBetResp)
+  // @@protoc_insertion_point(copy_constructor:RedAndBlack_India.MsgBetResp)
 }
 
 void MsgBetResp::SharedCtor() {
@@ -1349,7 +1350,7 @@ void MsgBetResp::SharedCtor() {
 }
 
 MsgBetResp::~MsgBetResp() {
-  // @@protoc_insertion_point(destructor:RedAndBlack.MsgBetResp)
+  // @@protoc_insertion_point(destructor:RedAndBlack_India.MsgBetResp)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -1375,7 +1376,7 @@ const MsgBetResp& MsgBetResp::default_instance() {
 
 
 void MsgBetResp::Clear() {
-// @@protoc_insertion_point(message_clear_start:RedAndBlack.MsgBetResp)
+// @@protoc_insertion_point(message_clear_start:RedAndBlack_India.MsgBetResp)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1402,7 +1403,7 @@ const char* MsgBetResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .RedAndBlack.MsgBet bet_info = 2;
+      // .RedAndBlack_India.MsgBet bet_info = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_bet_info(), ptr);
@@ -1433,7 +1434,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* MsgBetResp::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:RedAndBlack.MsgBetResp)
+  // @@protoc_insertion_point(serialize_to_array_start:RedAndBlack_India.MsgBetResp)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1443,7 +1444,7 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_chair_id(), target);
   }
 
-  // .RedAndBlack.MsgBet bet_info = 2;
+  // .RedAndBlack_India.MsgBet bet_info = 2;
   if (this->has_bet_info()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
@@ -1455,19 +1456,19 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:RedAndBlack.MsgBetResp)
+  // @@protoc_insertion_point(serialize_to_array_end:RedAndBlack_India.MsgBetResp)
   return target;
 }
 
 size_t MsgBetResp::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:RedAndBlack.MsgBetResp)
+// @@protoc_insertion_point(message_byte_size_start:RedAndBlack_India.MsgBetResp)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .RedAndBlack.MsgBet bet_info = 2;
+  // .RedAndBlack_India.MsgBet bet_info = 2;
   if (this->has_bet_info()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
@@ -1491,29 +1492,29 @@ size_t MsgBetResp::ByteSizeLong() const {
 }
 
 void MsgBetResp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:RedAndBlack.MsgBetResp)
+// @@protoc_insertion_point(generalized_merge_from_start:RedAndBlack_India.MsgBetResp)
   GOOGLE_DCHECK_NE(&from, this);
   const MsgBetResp* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgBetResp>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:RedAndBlack.MsgBetResp)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:RedAndBlack_India.MsgBetResp)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:RedAndBlack.MsgBetResp)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:RedAndBlack_India.MsgBetResp)
     MergeFrom(*source);
   }
 }
 
 void MsgBetResp::MergeFrom(const MsgBetResp& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:RedAndBlack.MsgBetResp)
+// @@protoc_insertion_point(class_specific_merge_from_start:RedAndBlack_India.MsgBetResp)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.has_bet_info()) {
-    _internal_mutable_bet_info()->::RedAndBlack::MsgBet::MergeFrom(from._internal_bet_info());
+    _internal_mutable_bet_info()->::RedAndBlack_India::MsgBet::MergeFrom(from._internal_bet_info());
   }
   if (from.chair_id() != 0) {
     _internal_set_chair_id(from._internal_chair_id());
@@ -1521,14 +1522,14 @@ void MsgBetResp::MergeFrom(const MsgBetResp& from) {
 }
 
 void MsgBetResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:RedAndBlack.MsgBetResp)
+// @@protoc_insertion_point(generalized_copy_from_start:RedAndBlack_India.MsgBetResp)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void MsgBetResp::CopyFrom(const MsgBetResp& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:RedAndBlack.MsgBetResp)
+// @@protoc_insertion_point(class_specific_copy_from_start:RedAndBlack_India.MsgBetResp)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1564,7 +1565,7 @@ MsgSingleAgainBet::MsgSingleAgainBet(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:RedAndBlack.MsgSingleAgainBet)
+  // @@protoc_insertion_point(arena_constructor:RedAndBlack_India.MsgSingleAgainBet)
 }
 MsgSingleAgainBet::MsgSingleAgainBet(const MsgSingleAgainBet& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -1572,7 +1573,7 @@ MsgSingleAgainBet::MsgSingleAgainBet(const MsgSingleAgainBet& from)
   ::memcpy(&index_, &from.index_,
     static_cast<size_t>(reinterpret_cast<char*>(&count_) -
     reinterpret_cast<char*>(&index_)) + sizeof(count_));
-  // @@protoc_insertion_point(copy_constructor:RedAndBlack.MsgSingleAgainBet)
+  // @@protoc_insertion_point(copy_constructor:RedAndBlack_India.MsgSingleAgainBet)
 }
 
 void MsgSingleAgainBet::SharedCtor() {
@@ -1583,7 +1584,7 @@ void MsgSingleAgainBet::SharedCtor() {
 }
 
 MsgSingleAgainBet::~MsgSingleAgainBet() {
-  // @@protoc_insertion_point(destructor:RedAndBlack.MsgSingleAgainBet)
+  // @@protoc_insertion_point(destructor:RedAndBlack_India.MsgSingleAgainBet)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -1608,7 +1609,7 @@ const MsgSingleAgainBet& MsgSingleAgainBet::default_instance() {
 
 
 void MsgSingleAgainBet::Clear() {
-// @@protoc_insertion_point(message_clear_start:RedAndBlack.MsgSingleAgainBet)
+// @@protoc_insertion_point(message_clear_start:RedAndBlack_India.MsgSingleAgainBet)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1671,7 +1672,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* MsgSingleAgainBet::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:RedAndBlack.MsgSingleAgainBet)
+  // @@protoc_insertion_point(serialize_to_array_start:RedAndBlack_India.MsgSingleAgainBet)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1697,12 +1698,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:RedAndBlack.MsgSingleAgainBet)
+  // @@protoc_insertion_point(serialize_to_array_end:RedAndBlack_India.MsgSingleAgainBet)
   return target;
 }
 
 size_t MsgSingleAgainBet::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:RedAndBlack.MsgSingleAgainBet)
+// @@protoc_insertion_point(message_byte_size_start:RedAndBlack_India.MsgSingleAgainBet)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1740,22 +1741,22 @@ size_t MsgSingleAgainBet::ByteSizeLong() const {
 }
 
 void MsgSingleAgainBet::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:RedAndBlack.MsgSingleAgainBet)
+// @@protoc_insertion_point(generalized_merge_from_start:RedAndBlack_India.MsgSingleAgainBet)
   GOOGLE_DCHECK_NE(&from, this);
   const MsgSingleAgainBet* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgSingleAgainBet>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:RedAndBlack.MsgSingleAgainBet)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:RedAndBlack_India.MsgSingleAgainBet)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:RedAndBlack.MsgSingleAgainBet)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:RedAndBlack_India.MsgSingleAgainBet)
     MergeFrom(*source);
   }
 }
 
 void MsgSingleAgainBet::MergeFrom(const MsgSingleAgainBet& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:RedAndBlack.MsgSingleAgainBet)
+// @@protoc_insertion_point(class_specific_merge_from_start:RedAndBlack_India.MsgSingleAgainBet)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1773,14 +1774,14 @@ void MsgSingleAgainBet::MergeFrom(const MsgSingleAgainBet& from) {
 }
 
 void MsgSingleAgainBet::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:RedAndBlack.MsgSingleAgainBet)
+// @@protoc_insertion_point(generalized_copy_from_start:RedAndBlack_India.MsgSingleAgainBet)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void MsgSingleAgainBet::CopyFrom(const MsgSingleAgainBet& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:RedAndBlack.MsgSingleAgainBet)
+// @@protoc_insertion_point(class_specific_copy_from_start:RedAndBlack_India.MsgSingleAgainBet)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1817,13 +1818,13 @@ MsgAgainBet::MsgAgainBet(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   again_bet_info_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:RedAndBlack.MsgAgainBet)
+  // @@protoc_insertion_point(arena_constructor:RedAndBlack_India.MsgAgainBet)
 }
 MsgAgainBet::MsgAgainBet(const MsgAgainBet& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       again_bet_info_(from.again_bet_info_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:RedAndBlack.MsgAgainBet)
+  // @@protoc_insertion_point(copy_constructor:RedAndBlack_India.MsgAgainBet)
 }
 
 void MsgAgainBet::SharedCtor() {
@@ -1831,7 +1832,7 @@ void MsgAgainBet::SharedCtor() {
 }
 
 MsgAgainBet::~MsgAgainBet() {
-  // @@protoc_insertion_point(destructor:RedAndBlack.MsgAgainBet)
+  // @@protoc_insertion_point(destructor:RedAndBlack_India.MsgAgainBet)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -1856,7 +1857,7 @@ const MsgAgainBet& MsgAgainBet::default_instance() {
 
 
 void MsgAgainBet::Clear() {
-// @@protoc_insertion_point(message_clear_start:RedAndBlack.MsgAgainBet)
+// @@protoc_insertion_point(message_clear_start:RedAndBlack_India.MsgAgainBet)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1872,7 +1873,7 @@ const char* MsgAgainBet::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // repeated .RedAndBlack.MsgSingleAgainBet again_bet_info = 1;
+      // repeated .RedAndBlack_India.MsgSingleAgainBet again_bet_info = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr -= 1;
@@ -1908,11 +1909,11 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* MsgAgainBet::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:RedAndBlack.MsgAgainBet)
+  // @@protoc_insertion_point(serialize_to_array_start:RedAndBlack_India.MsgAgainBet)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated .RedAndBlack.MsgSingleAgainBet again_bet_info = 1;
+  // repeated .RedAndBlack_India.MsgSingleAgainBet again_bet_info = 1;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_again_bet_info_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
@@ -1924,19 +1925,19 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:RedAndBlack.MsgAgainBet)
+  // @@protoc_insertion_point(serialize_to_array_end:RedAndBlack_India.MsgAgainBet)
   return target;
 }
 
 size_t MsgAgainBet::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:RedAndBlack.MsgAgainBet)
+// @@protoc_insertion_point(message_byte_size_start:RedAndBlack_India.MsgAgainBet)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .RedAndBlack.MsgSingleAgainBet again_bet_info = 1;
+  // repeated .RedAndBlack_India.MsgSingleAgainBet again_bet_info = 1;
   total_size += 1UL * this->_internal_again_bet_info_size();
   for (const auto& msg : this->again_bet_info_) {
     total_size +=
@@ -1953,22 +1954,22 @@ size_t MsgAgainBet::ByteSizeLong() const {
 }
 
 void MsgAgainBet::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:RedAndBlack.MsgAgainBet)
+// @@protoc_insertion_point(generalized_merge_from_start:RedAndBlack_India.MsgAgainBet)
   GOOGLE_DCHECK_NE(&from, this);
   const MsgAgainBet* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgAgainBet>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:RedAndBlack.MsgAgainBet)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:RedAndBlack_India.MsgAgainBet)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:RedAndBlack.MsgAgainBet)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:RedAndBlack_India.MsgAgainBet)
     MergeFrom(*source);
   }
 }
 
 void MsgAgainBet::MergeFrom(const MsgAgainBet& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:RedAndBlack.MsgAgainBet)
+// @@protoc_insertion_point(class_specific_merge_from_start:RedAndBlack_India.MsgAgainBet)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1978,14 +1979,14 @@ void MsgAgainBet::MergeFrom(const MsgAgainBet& from) {
 }
 
 void MsgAgainBet::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:RedAndBlack.MsgAgainBet)
+// @@protoc_insertion_point(generalized_copy_from_start:RedAndBlack_India.MsgAgainBet)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void MsgAgainBet::CopyFrom(const MsgAgainBet& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:RedAndBlack.MsgAgainBet)
+// @@protoc_insertion_point(class_specific_copy_from_start:RedAndBlack_India.MsgAgainBet)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -2010,10 +2011,10 @@ void MsgAgainBet::InternalSwap(MsgAgainBet* other) {
 
 class MsgAgainBetResp::_Internal {
  public:
-  static const ::RedAndBlack::MsgAgainBet& again_bet_info(const MsgAgainBetResp* msg);
+  static const ::RedAndBlack_India::MsgAgainBet& again_bet_info(const MsgAgainBetResp* msg);
 };
 
-const ::RedAndBlack::MsgAgainBet&
+const ::RedAndBlack_India::MsgAgainBet&
 MsgAgainBetResp::_Internal::again_bet_info(const MsgAgainBetResp* msg) {
   return *msg->again_bet_info_;
 }
@@ -2021,18 +2022,18 @@ MsgAgainBetResp::MsgAgainBetResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:RedAndBlack.MsgAgainBetResp)
+  // @@protoc_insertion_point(arena_constructor:RedAndBlack_India.MsgAgainBetResp)
 }
 MsgAgainBetResp::MsgAgainBetResp(const MsgAgainBetResp& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_again_bet_info()) {
-    again_bet_info_ = new ::RedAndBlack::MsgAgainBet(*from.again_bet_info_);
+    again_bet_info_ = new ::RedAndBlack_India::MsgAgainBet(*from.again_bet_info_);
   } else {
     again_bet_info_ = nullptr;
   }
   chair_id_ = from.chair_id_;
-  // @@protoc_insertion_point(copy_constructor:RedAndBlack.MsgAgainBetResp)
+  // @@protoc_insertion_point(copy_constructor:RedAndBlack_India.MsgAgainBetResp)
 }
 
 void MsgAgainBetResp::SharedCtor() {
@@ -2044,7 +2045,7 @@ void MsgAgainBetResp::SharedCtor() {
 }
 
 MsgAgainBetResp::~MsgAgainBetResp() {
-  // @@protoc_insertion_point(destructor:RedAndBlack.MsgAgainBetResp)
+  // @@protoc_insertion_point(destructor:RedAndBlack_India.MsgAgainBetResp)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -2070,7 +2071,7 @@ const MsgAgainBetResp& MsgAgainBetResp::default_instance() {
 
 
 void MsgAgainBetResp::Clear() {
-// @@protoc_insertion_point(message_clear_start:RedAndBlack.MsgAgainBetResp)
+// @@protoc_insertion_point(message_clear_start:RedAndBlack_India.MsgAgainBetResp)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -2097,7 +2098,7 @@ const char* MsgAgainBetResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .RedAndBlack.MsgAgainBet again_bet_info = 2;
+      // .RedAndBlack_India.MsgAgainBet again_bet_info = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_again_bet_info(), ptr);
@@ -2128,7 +2129,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* MsgAgainBetResp::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:RedAndBlack.MsgAgainBetResp)
+  // @@protoc_insertion_point(serialize_to_array_start:RedAndBlack_India.MsgAgainBetResp)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -2138,7 +2139,7 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_chair_id(), target);
   }
 
-  // .RedAndBlack.MsgAgainBet again_bet_info = 2;
+  // .RedAndBlack_India.MsgAgainBet again_bet_info = 2;
   if (this->has_again_bet_info()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
@@ -2150,19 +2151,19 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:RedAndBlack.MsgAgainBetResp)
+  // @@protoc_insertion_point(serialize_to_array_end:RedAndBlack_India.MsgAgainBetResp)
   return target;
 }
 
 size_t MsgAgainBetResp::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:RedAndBlack.MsgAgainBetResp)
+// @@protoc_insertion_point(message_byte_size_start:RedAndBlack_India.MsgAgainBetResp)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .RedAndBlack.MsgAgainBet again_bet_info = 2;
+  // .RedAndBlack_India.MsgAgainBet again_bet_info = 2;
   if (this->has_again_bet_info()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
@@ -2186,29 +2187,29 @@ size_t MsgAgainBetResp::ByteSizeLong() const {
 }
 
 void MsgAgainBetResp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:RedAndBlack.MsgAgainBetResp)
+// @@protoc_insertion_point(generalized_merge_from_start:RedAndBlack_India.MsgAgainBetResp)
   GOOGLE_DCHECK_NE(&from, this);
   const MsgAgainBetResp* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgAgainBetResp>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:RedAndBlack.MsgAgainBetResp)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:RedAndBlack_India.MsgAgainBetResp)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:RedAndBlack.MsgAgainBetResp)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:RedAndBlack_India.MsgAgainBetResp)
     MergeFrom(*source);
   }
 }
 
 void MsgAgainBetResp::MergeFrom(const MsgAgainBetResp& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:RedAndBlack.MsgAgainBetResp)
+// @@protoc_insertion_point(class_specific_merge_from_start:RedAndBlack_India.MsgAgainBetResp)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.has_again_bet_info()) {
-    _internal_mutable_again_bet_info()->::RedAndBlack::MsgAgainBet::MergeFrom(from._internal_again_bet_info());
+    _internal_mutable_again_bet_info()->::RedAndBlack_India::MsgAgainBet::MergeFrom(from._internal_again_bet_info());
   }
   if (from.chair_id() != 0) {
     _internal_set_chair_id(from._internal_chair_id());
@@ -2216,14 +2217,14 @@ void MsgAgainBetResp::MergeFrom(const MsgAgainBetResp& from) {
 }
 
 void MsgAgainBetResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:RedAndBlack.MsgAgainBetResp)
+// @@protoc_insertion_point(generalized_copy_from_start:RedAndBlack_India.MsgAgainBetResp)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void MsgAgainBetResp::CopyFrom(const MsgAgainBetResp& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:RedAndBlack.MsgAgainBetResp)
+// @@protoc_insertion_point(class_specific_copy_from_start:RedAndBlack_India.MsgAgainBetResp)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -2259,7 +2260,7 @@ MsgWinMsg::MsgWinMsg(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:RedAndBlack.MsgWinMsg)
+  // @@protoc_insertion_point(arena_constructor:RedAndBlack_India.MsgWinMsg)
 }
 MsgWinMsg::MsgWinMsg(const MsgWinMsg& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -2267,7 +2268,7 @@ MsgWinMsg::MsgWinMsg(const MsgWinMsg& from)
   ::memcpy(&gold_, &from.gold_,
     static_cast<size_t>(reinterpret_cast<char*>(&chair_id_) -
     reinterpret_cast<char*>(&gold_)) + sizeof(chair_id_));
-  // @@protoc_insertion_point(copy_constructor:RedAndBlack.MsgWinMsg)
+  // @@protoc_insertion_point(copy_constructor:RedAndBlack_India.MsgWinMsg)
 }
 
 void MsgWinMsg::SharedCtor() {
@@ -2278,7 +2279,7 @@ void MsgWinMsg::SharedCtor() {
 }
 
 MsgWinMsg::~MsgWinMsg() {
-  // @@protoc_insertion_point(destructor:RedAndBlack.MsgWinMsg)
+  // @@protoc_insertion_point(destructor:RedAndBlack_India.MsgWinMsg)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -2303,7 +2304,7 @@ const MsgWinMsg& MsgWinMsg::default_instance() {
 
 
 void MsgWinMsg::Clear() {
-// @@protoc_insertion_point(message_clear_start:RedAndBlack.MsgWinMsg)
+// @@protoc_insertion_point(message_clear_start:RedAndBlack_India.MsgWinMsg)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -2359,7 +2360,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* MsgWinMsg::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:RedAndBlack.MsgWinMsg)
+  // @@protoc_insertion_point(serialize_to_array_start:RedAndBlack_India.MsgWinMsg)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -2379,12 +2380,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:RedAndBlack.MsgWinMsg)
+  // @@protoc_insertion_point(serialize_to_array_end:RedAndBlack_India.MsgWinMsg)
   return target;
 }
 
 size_t MsgWinMsg::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:RedAndBlack.MsgWinMsg)
+// @@protoc_insertion_point(message_byte_size_start:RedAndBlack_India.MsgWinMsg)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -2415,22 +2416,22 @@ size_t MsgWinMsg::ByteSizeLong() const {
 }
 
 void MsgWinMsg::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:RedAndBlack.MsgWinMsg)
+// @@protoc_insertion_point(generalized_merge_from_start:RedAndBlack_India.MsgWinMsg)
   GOOGLE_DCHECK_NE(&from, this);
   const MsgWinMsg* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgWinMsg>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:RedAndBlack.MsgWinMsg)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:RedAndBlack_India.MsgWinMsg)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:RedAndBlack.MsgWinMsg)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:RedAndBlack_India.MsgWinMsg)
     MergeFrom(*source);
   }
 }
 
 void MsgWinMsg::MergeFrom(const MsgWinMsg& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:RedAndBlack.MsgWinMsg)
+// @@protoc_insertion_point(class_specific_merge_from_start:RedAndBlack_India.MsgWinMsg)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -2445,14 +2446,14 @@ void MsgWinMsg::MergeFrom(const MsgWinMsg& from) {
 }
 
 void MsgWinMsg::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:RedAndBlack.MsgWinMsg)
+// @@protoc_insertion_point(generalized_copy_from_start:RedAndBlack_India.MsgWinMsg)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void MsgWinMsg::CopyFrom(const MsgWinMsg& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:RedAndBlack.MsgWinMsg)
+// @@protoc_insertion_point(class_specific_copy_from_start:RedAndBlack_India.MsgWinMsg)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -2491,7 +2492,7 @@ MsgResult::MsgResult(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   card_type_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:RedAndBlack.MsgResult)
+  // @@protoc_insertion_point(arena_constructor:RedAndBlack_India.MsgResult)
 }
 MsgResult::MsgResult(const MsgResult& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
@@ -2500,7 +2501,7 @@ MsgResult::MsgResult(const MsgResult& from)
       card_type_(from.card_type_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   result_ = from.result_;
-  // @@protoc_insertion_point(copy_constructor:RedAndBlack.MsgResult)
+  // @@protoc_insertion_point(copy_constructor:RedAndBlack_India.MsgResult)
 }
 
 void MsgResult::SharedCtor() {
@@ -2509,7 +2510,7 @@ void MsgResult::SharedCtor() {
 }
 
 MsgResult::~MsgResult() {
-  // @@protoc_insertion_point(destructor:RedAndBlack.MsgResult)
+  // @@protoc_insertion_point(destructor:RedAndBlack_India.MsgResult)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -2534,7 +2535,7 @@ const MsgResult& MsgResult::default_instance() {
 
 
 void MsgResult::Clear() {
-// @@protoc_insertion_point(message_clear_start:RedAndBlack.MsgResult)
+// @@protoc_insertion_point(message_clear_start:RedAndBlack_India.MsgResult)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -2553,7 +2554,7 @@ const char* MsgResult::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // repeated .RedAndBlack.MsgWinMsg win_msg = 1;
+      // repeated .RedAndBlack_India.MsgWinMsg win_msg = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr -= 1;
@@ -2616,11 +2617,11 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* MsgResult::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:RedAndBlack.MsgResult)
+  // @@protoc_insertion_point(serialize_to_array_start:RedAndBlack_India.MsgResult)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated .RedAndBlack.MsgWinMsg win_msg = 1;
+  // repeated .RedAndBlack_India.MsgWinMsg win_msg = 1;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_win_msg_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
@@ -2656,19 +2657,19 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:RedAndBlack.MsgResult)
+  // @@protoc_insertion_point(serialize_to_array_end:RedAndBlack_India.MsgResult)
   return target;
 }
 
 size_t MsgResult::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:RedAndBlack.MsgResult)
+// @@protoc_insertion_point(message_byte_size_start:RedAndBlack_India.MsgResult)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .RedAndBlack.MsgWinMsg win_msg = 1;
+  // repeated .RedAndBlack_India.MsgWinMsg win_msg = 1;
   total_size += 1UL * this->_internal_win_msg_size();
   for (const auto& msg : this->win_msg_) {
     total_size +=
@@ -2722,22 +2723,22 @@ size_t MsgResult::ByteSizeLong() const {
 }
 
 void MsgResult::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:RedAndBlack.MsgResult)
+// @@protoc_insertion_point(generalized_merge_from_start:RedAndBlack_India.MsgResult)
   GOOGLE_DCHECK_NE(&from, this);
   const MsgResult* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgResult>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:RedAndBlack.MsgResult)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:RedAndBlack_India.MsgResult)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:RedAndBlack.MsgResult)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:RedAndBlack_India.MsgResult)
     MergeFrom(*source);
   }
 }
 
 void MsgResult::MergeFrom(const MsgResult& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:RedAndBlack.MsgResult)
+// @@protoc_insertion_point(class_specific_merge_from_start:RedAndBlack_India.MsgResult)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -2752,14 +2753,14 @@ void MsgResult::MergeFrom(const MsgResult& from) {
 }
 
 void MsgResult::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:RedAndBlack.MsgResult)
+// @@protoc_insertion_point(generalized_copy_from_start:RedAndBlack_India.MsgResult)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void MsgResult::CopyFrom(const MsgResult& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:RedAndBlack.MsgResult)
+// @@protoc_insertion_point(class_specific_copy_from_start:RedAndBlack_India.MsgResult)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -2795,7 +2796,7 @@ MsgTotalBet::MsgTotalBet(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   gold_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:RedAndBlack.MsgTotalBet)
+  // @@protoc_insertion_point(arena_constructor:RedAndBlack_India.MsgTotalBet)
 }
 MsgTotalBet::MsgTotalBet(const MsgTotalBet& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
@@ -2803,7 +2804,7 @@ MsgTotalBet::MsgTotalBet(const MsgTotalBet& from)
       gold_(from.gold_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   chair_id_ = from.chair_id_;
-  // @@protoc_insertion_point(copy_constructor:RedAndBlack.MsgTotalBet)
+  // @@protoc_insertion_point(copy_constructor:RedAndBlack_India.MsgTotalBet)
 }
 
 void MsgTotalBet::SharedCtor() {
@@ -2811,7 +2812,7 @@ void MsgTotalBet::SharedCtor() {
 }
 
 MsgTotalBet::~MsgTotalBet() {
-  // @@protoc_insertion_point(destructor:RedAndBlack.MsgTotalBet)
+  // @@protoc_insertion_point(destructor:RedAndBlack_India.MsgTotalBet)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -2836,7 +2837,7 @@ const MsgTotalBet& MsgTotalBet::default_instance() {
 
 
 void MsgTotalBet::Clear() {
-// @@protoc_insertion_point(message_clear_start:RedAndBlack.MsgTotalBet)
+// @@protoc_insertion_point(message_clear_start:RedAndBlack_India.MsgTotalBet)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -2905,7 +2906,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* MsgTotalBet::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:RedAndBlack.MsgTotalBet)
+  // @@protoc_insertion_point(serialize_to_array_start:RedAndBlack_India.MsgTotalBet)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -2937,12 +2938,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:RedAndBlack.MsgTotalBet)
+  // @@protoc_insertion_point(serialize_to_array_end:RedAndBlack_India.MsgTotalBet)
   return target;
 }
 
 size_t MsgTotalBet::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:RedAndBlack.MsgTotalBet)
+// @@protoc_insertion_point(message_byte_size_start:RedAndBlack_India.MsgTotalBet)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -2996,22 +2997,22 @@ size_t MsgTotalBet::ByteSizeLong() const {
 }
 
 void MsgTotalBet::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:RedAndBlack.MsgTotalBet)
+// @@protoc_insertion_point(generalized_merge_from_start:RedAndBlack_India.MsgTotalBet)
   GOOGLE_DCHECK_NE(&from, this);
   const MsgTotalBet* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgTotalBet>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:RedAndBlack.MsgTotalBet)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:RedAndBlack_India.MsgTotalBet)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:RedAndBlack.MsgTotalBet)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:RedAndBlack_India.MsgTotalBet)
     MergeFrom(*source);
   }
 }
 
 void MsgTotalBet::MergeFrom(const MsgTotalBet& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:RedAndBlack.MsgTotalBet)
+// @@protoc_insertion_point(class_specific_merge_from_start:RedAndBlack_India.MsgTotalBet)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -3025,14 +3026,14 @@ void MsgTotalBet::MergeFrom(const MsgTotalBet& from) {
 }
 
 void MsgTotalBet::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:RedAndBlack.MsgTotalBet)
+// @@protoc_insertion_point(generalized_copy_from_start:RedAndBlack_India.MsgTotalBet)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void MsgTotalBet::CopyFrom(const MsgTotalBet& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:RedAndBlack.MsgTotalBet)
+// @@protoc_insertion_point(class_specific_copy_from_start:RedAndBlack_India.MsgTotalBet)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -3066,13 +3067,13 @@ MsgBetRecord::MsgBetRecord(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   bet_record_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:RedAndBlack.MsgBetRecord)
+  // @@protoc_insertion_point(arena_constructor:RedAndBlack_India.MsgBetRecord)
 }
 MsgBetRecord::MsgBetRecord(const MsgBetRecord& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       bet_record_(from.bet_record_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:RedAndBlack.MsgBetRecord)
+  // @@protoc_insertion_point(copy_constructor:RedAndBlack_India.MsgBetRecord)
 }
 
 void MsgBetRecord::SharedCtor() {
@@ -3080,7 +3081,7 @@ void MsgBetRecord::SharedCtor() {
 }
 
 MsgBetRecord::~MsgBetRecord() {
-  // @@protoc_insertion_point(destructor:RedAndBlack.MsgBetRecord)
+  // @@protoc_insertion_point(destructor:RedAndBlack_India.MsgBetRecord)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -3105,7 +3106,7 @@ const MsgBetRecord& MsgBetRecord::default_instance() {
 
 
 void MsgBetRecord::Clear() {
-// @@protoc_insertion_point(message_clear_start:RedAndBlack.MsgBetRecord)
+// @@protoc_insertion_point(message_clear_start:RedAndBlack_India.MsgBetRecord)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -3121,7 +3122,7 @@ const char* MsgBetRecord::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // repeated .RedAndBlack.MsgTotalBet bet_record = 1;
+      // repeated .RedAndBlack_India.MsgTotalBet bet_record = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr -= 1;
@@ -3157,11 +3158,11 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* MsgBetRecord::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:RedAndBlack.MsgBetRecord)
+  // @@protoc_insertion_point(serialize_to_array_start:RedAndBlack_India.MsgBetRecord)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated .RedAndBlack.MsgTotalBet bet_record = 1;
+  // repeated .RedAndBlack_India.MsgTotalBet bet_record = 1;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_bet_record_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
@@ -3173,19 +3174,19 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:RedAndBlack.MsgBetRecord)
+  // @@protoc_insertion_point(serialize_to_array_end:RedAndBlack_India.MsgBetRecord)
   return target;
 }
 
 size_t MsgBetRecord::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:RedAndBlack.MsgBetRecord)
+// @@protoc_insertion_point(message_byte_size_start:RedAndBlack_India.MsgBetRecord)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .RedAndBlack.MsgTotalBet bet_record = 1;
+  // repeated .RedAndBlack_India.MsgTotalBet bet_record = 1;
   total_size += 1UL * this->_internal_bet_record_size();
   for (const auto& msg : this->bet_record_) {
     total_size +=
@@ -3202,22 +3203,22 @@ size_t MsgBetRecord::ByteSizeLong() const {
 }
 
 void MsgBetRecord::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:RedAndBlack.MsgBetRecord)
+// @@protoc_insertion_point(generalized_merge_from_start:RedAndBlack_India.MsgBetRecord)
   GOOGLE_DCHECK_NE(&from, this);
   const MsgBetRecord* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgBetRecord>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:RedAndBlack.MsgBetRecord)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:RedAndBlack_India.MsgBetRecord)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:RedAndBlack.MsgBetRecord)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:RedAndBlack_India.MsgBetRecord)
     MergeFrom(*source);
   }
 }
 
 void MsgBetRecord::MergeFrom(const MsgBetRecord& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:RedAndBlack.MsgBetRecord)
+// @@protoc_insertion_point(class_specific_merge_from_start:RedAndBlack_India.MsgBetRecord)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -3227,14 +3228,14 @@ void MsgBetRecord::MergeFrom(const MsgBetRecord& from) {
 }
 
 void MsgBetRecord::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:RedAndBlack.MsgBetRecord)
+// @@protoc_insertion_point(generalized_copy_from_start:RedAndBlack_India.MsgBetRecord)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void MsgBetRecord::CopyFrom(const MsgBetRecord& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:RedAndBlack.MsgBetRecord)
+// @@protoc_insertion_point(class_specific_copy_from_start:RedAndBlack_India.MsgBetRecord)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -3256,40 +3257,40 @@ void MsgBetRecord::InternalSwap(MsgBetRecord* other) {
 
 
 // @@protoc_insertion_point(namespace_scope)
-}  // namespace RedAndBlack
+}  // namespace RedAndBlack_India
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::RedAndBlack::MsgRecord* Arena::CreateMaybeMessage< ::RedAndBlack::MsgRecord >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::RedAndBlack::MsgRecord >(arena);
+template<> PROTOBUF_NOINLINE ::RedAndBlack_India::MsgRecord* Arena::CreateMaybeMessage< ::RedAndBlack_India::MsgRecord >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::RedAndBlack_India::MsgRecord >(arena);
 }
-template<> PROTOBUF_NOINLINE ::RedAndBlack::MsgSceneInfo* Arena::CreateMaybeMessage< ::RedAndBlack::MsgSceneInfo >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::RedAndBlack::MsgSceneInfo >(arena);
+template<> PROTOBUF_NOINLINE ::RedAndBlack_India::MsgSceneInfo* Arena::CreateMaybeMessage< ::RedAndBlack_India::MsgSceneInfo >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::RedAndBlack_India::MsgSceneInfo >(arena);
 }
-template<> PROTOBUF_NOINLINE ::RedAndBlack::MsgBet* Arena::CreateMaybeMessage< ::RedAndBlack::MsgBet >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::RedAndBlack::MsgBet >(arena);
+template<> PROTOBUF_NOINLINE ::RedAndBlack_India::MsgBet* Arena::CreateMaybeMessage< ::RedAndBlack_India::MsgBet >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::RedAndBlack_India::MsgBet >(arena);
 }
-template<> PROTOBUF_NOINLINE ::RedAndBlack::MsgBetResp* Arena::CreateMaybeMessage< ::RedAndBlack::MsgBetResp >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::RedAndBlack::MsgBetResp >(arena);
+template<> PROTOBUF_NOINLINE ::RedAndBlack_India::MsgBetResp* Arena::CreateMaybeMessage< ::RedAndBlack_India::MsgBetResp >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::RedAndBlack_India::MsgBetResp >(arena);
 }
-template<> PROTOBUF_NOINLINE ::RedAndBlack::MsgSingleAgainBet* Arena::CreateMaybeMessage< ::RedAndBlack::MsgSingleAgainBet >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::RedAndBlack::MsgSingleAgainBet >(arena);
+template<> PROTOBUF_NOINLINE ::RedAndBlack_India::MsgSingleAgainBet* Arena::CreateMaybeMessage< ::RedAndBlack_India::MsgSingleAgainBet >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::RedAndBlack_India::MsgSingleAgainBet >(arena);
 }
-template<> PROTOBUF_NOINLINE ::RedAndBlack::MsgAgainBet* Arena::CreateMaybeMessage< ::RedAndBlack::MsgAgainBet >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::RedAndBlack::MsgAgainBet >(arena);
+template<> PROTOBUF_NOINLINE ::RedAndBlack_India::MsgAgainBet* Arena::CreateMaybeMessage< ::RedAndBlack_India::MsgAgainBet >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::RedAndBlack_India::MsgAgainBet >(arena);
 }
-template<> PROTOBUF_NOINLINE ::RedAndBlack::MsgAgainBetResp* Arena::CreateMaybeMessage< ::RedAndBlack::MsgAgainBetResp >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::RedAndBlack::MsgAgainBetResp >(arena);
+template<> PROTOBUF_NOINLINE ::RedAndBlack_India::MsgAgainBetResp* Arena::CreateMaybeMessage< ::RedAndBlack_India::MsgAgainBetResp >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::RedAndBlack_India::MsgAgainBetResp >(arena);
 }
-template<> PROTOBUF_NOINLINE ::RedAndBlack::MsgWinMsg* Arena::CreateMaybeMessage< ::RedAndBlack::MsgWinMsg >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::RedAndBlack::MsgWinMsg >(arena);
+template<> PROTOBUF_NOINLINE ::RedAndBlack_India::MsgWinMsg* Arena::CreateMaybeMessage< ::RedAndBlack_India::MsgWinMsg >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::RedAndBlack_India::MsgWinMsg >(arena);
 }
-template<> PROTOBUF_NOINLINE ::RedAndBlack::MsgResult* Arena::CreateMaybeMessage< ::RedAndBlack::MsgResult >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::RedAndBlack::MsgResult >(arena);
+template<> PROTOBUF_NOINLINE ::RedAndBlack_India::MsgResult* Arena::CreateMaybeMessage< ::RedAndBlack_India::MsgResult >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::RedAndBlack_India::MsgResult >(arena);
 }
-template<> PROTOBUF_NOINLINE ::RedAndBlack::MsgTotalBet* Arena::CreateMaybeMessage< ::RedAndBlack::MsgTotalBet >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::RedAndBlack::MsgTotalBet >(arena);
+template<> PROTOBUF_NOINLINE ::RedAndBlack_India::MsgTotalBet* Arena::CreateMaybeMessage< ::RedAndBlack_India::MsgTotalBet >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::RedAndBlack_India::MsgTotalBet >(arena);
 }
-template<> PROTOBUF_NOINLINE ::RedAndBlack::MsgBetRecord* Arena::CreateMaybeMessage< ::RedAndBlack::MsgBetRecord >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::RedAndBlack::MsgBetRecord >(arena);
+template<> PROTOBUF_NOINLINE ::RedAndBlack_India::MsgBetRecord* Arena::CreateMaybeMessage< ::RedAndBlack_India::MsgBetRecord >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::RedAndBlack_India::MsgBetRecord >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

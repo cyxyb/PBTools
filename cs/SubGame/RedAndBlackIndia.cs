@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace RedAndBlack {
+namespace RedAndBlackIndia {
 
   /// <summary>Holder for reflection information generated from Proto/SubGame/RedAndBlack_India.proto</summary>
   public static partial class RedAndBlackIndiaReflection {
@@ -24,46 +24,47 @@ namespace RedAndBlack {
     static RedAndBlackIndiaReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CiVQcm90by9TdWJHYW1lL1JlZEFuZEJsYWNrX0luZGlhLnByb3RvEgtSZWRB",
-            "bmRCbGFjayIuCglNc2dSZWNvcmQSDgoGcmVzdWx0GAEgASgFEhEKCWNhcmRf",
-            "dHlwZRgCIAEoBSK2AQoMTXNnU2NlbmVJbmZvEgsKA2JldBgBIAMoBRImCgZy",
-            "ZWNvcmQYAiADKAsyFi5SZWRBbmRCbGFjay5Nc2dSZWNvcmQSEQoJYmV0X2xp",
-            "bWl0GAMgAygFEhQKDHBsYXllcl9saW1pdBgEIAEoBRIQCghhcmVhX211bBgF",
-            "IAMoBRISCgpzdGF0ZV90aW1lGAYgAygFEhMKC3JlbWFpbl90aW1lGAcgASgF",
-            "Eg0KBXN0YXRlGAggASgFIiUKBk1zZ0JldBINCgVpbmRleBgBIAEoBRIMCgRh",
-            "cmVhGAIgASgFIkUKCk1zZ0JldFJlc3ASEAoIY2hhaXJfaWQYASABKAUSJQoI",
-            "YmV0X2luZm8YAiABKAsyEy5SZWRBbmRCbGFjay5Nc2dCZXQiPwoRTXNnU2lu",
-            "Z2xlQWdhaW5CZXQSDQoFaW5kZXgYASABKAUSDAoEYXJlYRgCIAEoBRINCgVj",
-            "b3VudBgDIAEoBSJFCgtNc2dBZ2FpbkJldBI2Cg5hZ2Fpbl9iZXRfaW5mbxgB",
-            "IAMoCzIeLlJlZEFuZEJsYWNrLk1zZ1NpbmdsZUFnYWluQmV0IlUKD01zZ0Fn",
-            "YWluQmV0UmVzcBIQCghjaGFpcl9pZBgBIAEoBRIwCg5hZ2Fpbl9iZXRfaW5m",
-            "bxgCIAEoCzIYLlJlZEFuZEJsYWNrLk1zZ0FnYWluQmV0IisKCU1zZ1dpbk1z",
-            "ZxIQCghjaGFpcl9pZBgBIAEoBRIMCgRnb2xkGAIgASgDImUKCU1zZ1Jlc3Vs",
-            "dBInCgd3aW5fbXNnGAEgAygLMhYuUmVkQW5kQmxhY2suTXNnV2luTXNnEgwK",
-            "BGNhcmQYAiADKAUSEQoJY2FyZF90eXBlGAMgAygFEg4KBnJlc3VsdBgEIAEo",
-            "BSI6CgtNc2dUb3RhbEJldBIQCghjaGFpcl9pZBgBIAEoBRILCgNiZXQYAiAD",
-            "KAUSDAoEZ29sZBgDIAMoAyI8CgxNc2dCZXRSZWNvcmQSLAoKYmV0X3JlY29y",
-            "ZBgBIAMoCzIYLlJlZEFuZEJsYWNrLk1zZ1RvdGFsQmV0KvMBCg1FTXNnSURT",
-            "dWJHYW1lEhUKEU1zZ0lEU3ViR2FtZV9OdWxsEAASFAoQTXNnSURTdWJHYW1l",
-            "X0JldBABEhgKFE1zZ0lEU3ViR2FtZV9CZXRSZXNwEAISGQoVTXNnSURTdWJH",
-            "YW1lX0FnYWluQmV0EAMSHQoZTXNnSURTdWJHYW1lX0FnYWluQmV0UmVzcBAE",
-            "Eh8KG01zZ0lEU3ViR2FtZV9HYW1lUmVzdWx0UmVzcBAFEh4KGk1zZ0lEU3Vi",
-            "R2FtZV9CZXRSZWNvcmRSZXNwEAYSIAocTXNnSURTdWJHYW1lX05vdGlmeVN0",
-            "YXRlUmVzcBAHYgZwcm90bzM="));
+            "CiVQcm90by9TdWJHYW1lL1JlZEFuZEJsYWNrX0luZGlhLnByb3RvEhFSZWRB",
+            "bmRCbGFja19JbmRpYSIuCglNc2dSZWNvcmQSDgoGcmVzdWx0GAEgASgFEhEK",
+            "CWNhcmRfdHlwZRgCIAEoBSK8AQoMTXNnU2NlbmVJbmZvEgsKA2JldBgBIAMo",
+            "BRIsCgZyZWNvcmQYAiADKAsyHC5SZWRBbmRCbGFja19JbmRpYS5Nc2dSZWNv",
+            "cmQSEQoJYmV0X2xpbWl0GAMgAygFEhQKDHBsYXllcl9saW1pdBgEIAEoBRIQ",
+            "CghhcmVhX211bBgFIAMoBRISCgpzdGF0ZV90aW1lGAYgAygFEhMKC3JlbWFp",
+            "bl90aW1lGAcgASgFEg0KBXN0YXRlGAggASgFIiUKBk1zZ0JldBINCgVpbmRl",
+            "eBgBIAEoBRIMCgRhcmVhGAIgASgFIksKCk1zZ0JldFJlc3ASEAoIY2hhaXJf",
+            "aWQYASABKAUSKwoIYmV0X2luZm8YAiABKAsyGS5SZWRBbmRCbGFja19JbmRp",
+            "YS5Nc2dCZXQiPwoRTXNnU2luZ2xlQWdhaW5CZXQSDQoFaW5kZXgYASABKAUS",
+            "DAoEYXJlYRgCIAEoBRINCgVjb3VudBgDIAEoBSJLCgtNc2dBZ2FpbkJldBI8",
+            "Cg5hZ2Fpbl9iZXRfaW5mbxgBIAMoCzIkLlJlZEFuZEJsYWNrX0luZGlhLk1z",
+            "Z1NpbmdsZUFnYWluQmV0IlsKD01zZ0FnYWluQmV0UmVzcBIQCghjaGFpcl9p",
+            "ZBgBIAEoBRI2Cg5hZ2Fpbl9iZXRfaW5mbxgCIAEoCzIeLlJlZEFuZEJsYWNr",
+            "X0luZGlhLk1zZ0FnYWluQmV0IisKCU1zZ1dpbk1zZxIQCghjaGFpcl9pZBgB",
+            "IAEoBRIMCgRnb2xkGAIgASgDImsKCU1zZ1Jlc3VsdBItCgd3aW5fbXNnGAEg",
+            "AygLMhwuUmVkQW5kQmxhY2tfSW5kaWEuTXNnV2luTXNnEgwKBGNhcmQYAiAD",
+            "KAUSEQoJY2FyZF90eXBlGAMgAygFEg4KBnJlc3VsdBgEIAEoBSI6CgtNc2dU",
+            "b3RhbEJldBIQCghjaGFpcl9pZBgBIAEoBRILCgNiZXQYAiADKAUSDAoEZ29s",
+            "ZBgDIAMoAyJCCgxNc2dCZXRSZWNvcmQSMgoKYmV0X3JlY29yZBgBIAMoCzIe",
+            "LlJlZEFuZEJsYWNrX0luZGlhLk1zZ1RvdGFsQmV0KvMBCg1FTXNnSURTdWJH",
+            "YW1lEhUKEU1zZ0lEU3ViR2FtZV9OdWxsEAASFAoQTXNnSURTdWJHYW1lX0Jl",
+            "dBABEhgKFE1zZ0lEU3ViR2FtZV9CZXRSZXNwEAISGQoVTXNnSURTdWJHYW1l",
+            "X0FnYWluQmV0EAMSHQoZTXNnSURTdWJHYW1lX0FnYWluQmV0UmVzcBAEEh8K",
+            "G01zZ0lEU3ViR2FtZV9HYW1lUmVzdWx0UmVzcBAFEh4KGk1zZ0lEU3ViR2Ft",
+            "ZV9CZXRSZWNvcmRSZXNwEAYSIAocTXNnSURTdWJHYW1lX05vdGlmeVN0YXRl",
+            "UmVzcBAHYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::RedAndBlack.EMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::RedAndBlack.MsgRecord), global::RedAndBlack.MsgRecord.Parser, new[]{ "Result", "CardType" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RedAndBlack.MsgSceneInfo), global::RedAndBlack.MsgSceneInfo.Parser, new[]{ "Bet", "Record", "BetLimit", "PlayerLimit", "AreaMul", "StateTime", "RemainTime", "State" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RedAndBlack.MsgBet), global::RedAndBlack.MsgBet.Parser, new[]{ "Index", "Area" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RedAndBlack.MsgBetResp), global::RedAndBlack.MsgBetResp.Parser, new[]{ "ChairId", "BetInfo" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RedAndBlack.MsgSingleAgainBet), global::RedAndBlack.MsgSingleAgainBet.Parser, new[]{ "Index", "Area", "Count" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RedAndBlack.MsgAgainBet), global::RedAndBlack.MsgAgainBet.Parser, new[]{ "AgainBetInfo" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RedAndBlack.MsgAgainBetResp), global::RedAndBlack.MsgAgainBetResp.Parser, new[]{ "ChairId", "AgainBetInfo" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RedAndBlack.MsgWinMsg), global::RedAndBlack.MsgWinMsg.Parser, new[]{ "ChairId", "Gold" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RedAndBlack.MsgResult), global::RedAndBlack.MsgResult.Parser, new[]{ "WinMsg", "Card", "CardType", "Result" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RedAndBlack.MsgTotalBet), global::RedAndBlack.MsgTotalBet.Parser, new[]{ "ChairId", "Bet", "Gold" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RedAndBlack.MsgBetRecord), global::RedAndBlack.MsgBetRecord.Parser, new[]{ "BetRecord" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::RedAndBlackIndia.EMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::RedAndBlackIndia.MsgRecord), global::RedAndBlackIndia.MsgRecord.Parser, new[]{ "Result", "CardType" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::RedAndBlackIndia.MsgSceneInfo), global::RedAndBlackIndia.MsgSceneInfo.Parser, new[]{ "Bet", "Record", "BetLimit", "PlayerLimit", "AreaMul", "StateTime", "RemainTime", "State" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::RedAndBlackIndia.MsgBet), global::RedAndBlackIndia.MsgBet.Parser, new[]{ "Index", "Area" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::RedAndBlackIndia.MsgBetResp), global::RedAndBlackIndia.MsgBetResp.Parser, new[]{ "ChairId", "BetInfo" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::RedAndBlackIndia.MsgSingleAgainBet), global::RedAndBlackIndia.MsgSingleAgainBet.Parser, new[]{ "Index", "Area", "Count" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::RedAndBlackIndia.MsgAgainBet), global::RedAndBlackIndia.MsgAgainBet.Parser, new[]{ "AgainBetInfo" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::RedAndBlackIndia.MsgAgainBetResp), global::RedAndBlackIndia.MsgAgainBetResp.Parser, new[]{ "ChairId", "AgainBetInfo" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::RedAndBlackIndia.MsgWinMsg), global::RedAndBlackIndia.MsgWinMsg.Parser, new[]{ "ChairId", "Gold" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::RedAndBlackIndia.MsgResult), global::RedAndBlackIndia.MsgResult.Parser, new[]{ "WinMsg", "Card", "CardType", "Result" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::RedAndBlackIndia.MsgTotalBet), global::RedAndBlackIndia.MsgTotalBet.Parser, new[]{ "ChairId", "Bet", "Gold" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::RedAndBlackIndia.MsgBetRecord), global::RedAndBlackIndia.MsgBetRecord.Parser, new[]{ "BetRecord" }, null, null, null, null)
           }));
     }
     #endregion
@@ -120,7 +121,7 @@ namespace RedAndBlack {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::RedAndBlack.RedAndBlackIndiaReflection.Descriptor.MessageTypes[0]; }
+      get { return global::RedAndBlackIndia.RedAndBlackIndiaReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -337,7 +338,7 @@ namespace RedAndBlack {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::RedAndBlack.RedAndBlackIndiaReflection.Descriptor.MessageTypes[1]; }
+      get { return global::RedAndBlackIndia.RedAndBlackIndiaReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -385,14 +386,14 @@ namespace RedAndBlack {
 
     /// <summary>Field number for the "record" field.</summary>
     public const int RecordFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::RedAndBlack.MsgRecord> _repeated_record_codec
-        = pb::FieldCodec.ForMessage(18, global::RedAndBlack.MsgRecord.Parser);
-    private readonly pbc::RepeatedField<global::RedAndBlack.MsgRecord> record_ = new pbc::RepeatedField<global::RedAndBlack.MsgRecord>();
+    private static readonly pb::FieldCodec<global::RedAndBlackIndia.MsgRecord> _repeated_record_codec
+        = pb::FieldCodec.ForMessage(18, global::RedAndBlackIndia.MsgRecord.Parser);
+    private readonly pbc::RepeatedField<global::RedAndBlackIndia.MsgRecord> record_ = new pbc::RepeatedField<global::RedAndBlackIndia.MsgRecord>();
     /// <summary>
     ///开牌记录
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::RedAndBlack.MsgRecord> Record {
+    public pbc::RepeatedField<global::RedAndBlackIndia.MsgRecord> Record {
       get { return record_; }
     }
 
@@ -741,7 +742,7 @@ namespace RedAndBlack {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::RedAndBlack.RedAndBlackIndiaReflection.Descriptor.MessageTypes[2]; }
+      get { return global::RedAndBlackIndia.RedAndBlackIndiaReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -958,7 +959,7 @@ namespace RedAndBlack {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::RedAndBlack.RedAndBlackIndiaReflection.Descriptor.MessageTypes[3]; }
+      get { return global::RedAndBlackIndia.RedAndBlackIndiaReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1001,12 +1002,12 @@ namespace RedAndBlack {
 
     /// <summary>Field number for the "bet_info" field.</summary>
     public const int BetInfoFieldNumber = 2;
-    private global::RedAndBlack.MsgBet betInfo_;
+    private global::RedAndBlackIndia.MsgBet betInfo_;
     /// <summary>
     ///玩家下注信息
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::RedAndBlack.MsgBet BetInfo {
+    public global::RedAndBlackIndia.MsgBet BetInfo {
       get { return betInfo_; }
       set {
         betInfo_ = value;
@@ -1108,7 +1109,7 @@ namespace RedAndBlack {
       }
       if (other.betInfo_ != null) {
         if (betInfo_ == null) {
-          BetInfo = new global::RedAndBlack.MsgBet();
+          BetInfo = new global::RedAndBlackIndia.MsgBet();
         }
         BetInfo.MergeFrom(other.BetInfo);
       }
@@ -1132,7 +1133,7 @@ namespace RedAndBlack {
           }
           case 18: {
             if (betInfo_ == null) {
-              BetInfo = new global::RedAndBlack.MsgBet();
+              BetInfo = new global::RedAndBlackIndia.MsgBet();
             }
             input.ReadMessage(BetInfo);
             break;
@@ -1157,7 +1158,7 @@ namespace RedAndBlack {
           }
           case 18: {
             if (betInfo_ == null) {
-              BetInfo = new global::RedAndBlack.MsgBet();
+              BetInfo = new global::RedAndBlackIndia.MsgBet();
             }
             input.ReadMessage(BetInfo);
             break;
@@ -1184,7 +1185,7 @@ namespace RedAndBlack {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::RedAndBlack.RedAndBlackIndiaReflection.Descriptor.MessageTypes[4]; }
+      get { return global::RedAndBlackIndia.RedAndBlackIndiaReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1440,7 +1441,7 @@ namespace RedAndBlack {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::RedAndBlack.RedAndBlackIndiaReflection.Descriptor.MessageTypes[5]; }
+      get { return global::RedAndBlackIndia.RedAndBlackIndiaReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1468,14 +1469,14 @@ namespace RedAndBlack {
 
     /// <summary>Field number for the "again_bet_info" field.</summary>
     public const int AgainBetInfoFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::RedAndBlack.MsgSingleAgainBet> _repeated_againBetInfo_codec
-        = pb::FieldCodec.ForMessage(10, global::RedAndBlack.MsgSingleAgainBet.Parser);
-    private readonly pbc::RepeatedField<global::RedAndBlack.MsgSingleAgainBet> againBetInfo_ = new pbc::RepeatedField<global::RedAndBlack.MsgSingleAgainBet>();
+    private static readonly pb::FieldCodec<global::RedAndBlackIndia.MsgSingleAgainBet> _repeated_againBetInfo_codec
+        = pb::FieldCodec.ForMessage(10, global::RedAndBlackIndia.MsgSingleAgainBet.Parser);
+    private readonly pbc::RepeatedField<global::RedAndBlackIndia.MsgSingleAgainBet> againBetInfo_ = new pbc::RepeatedField<global::RedAndBlackIndia.MsgSingleAgainBet>();
     /// <summary>
     ///玩家续投
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::RedAndBlack.MsgSingleAgainBet> AgainBetInfo {
+    public pbc::RepeatedField<global::RedAndBlackIndia.MsgSingleAgainBet> AgainBetInfo {
       get { return againBetInfo_; }
     }
 
@@ -1607,7 +1608,7 @@ namespace RedAndBlack {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::RedAndBlack.RedAndBlackIndiaReflection.Descriptor.MessageTypes[6]; }
+      get { return global::RedAndBlackIndia.RedAndBlackIndiaReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1650,12 +1651,12 @@ namespace RedAndBlack {
 
     /// <summary>Field number for the "again_bet_info" field.</summary>
     public const int AgainBetInfoFieldNumber = 2;
-    private global::RedAndBlack.MsgAgainBet againBetInfo_;
+    private global::RedAndBlackIndia.MsgAgainBet againBetInfo_;
     /// <summary>
     ///玩家续投信息
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::RedAndBlack.MsgAgainBet AgainBetInfo {
+    public global::RedAndBlackIndia.MsgAgainBet AgainBetInfo {
       get { return againBetInfo_; }
       set {
         againBetInfo_ = value;
@@ -1757,7 +1758,7 @@ namespace RedAndBlack {
       }
       if (other.againBetInfo_ != null) {
         if (againBetInfo_ == null) {
-          AgainBetInfo = new global::RedAndBlack.MsgAgainBet();
+          AgainBetInfo = new global::RedAndBlackIndia.MsgAgainBet();
         }
         AgainBetInfo.MergeFrom(other.AgainBetInfo);
       }
@@ -1781,7 +1782,7 @@ namespace RedAndBlack {
           }
           case 18: {
             if (againBetInfo_ == null) {
-              AgainBetInfo = new global::RedAndBlack.MsgAgainBet();
+              AgainBetInfo = new global::RedAndBlackIndia.MsgAgainBet();
             }
             input.ReadMessage(AgainBetInfo);
             break;
@@ -1806,7 +1807,7 @@ namespace RedAndBlack {
           }
           case 18: {
             if (againBetInfo_ == null) {
-              AgainBetInfo = new global::RedAndBlack.MsgAgainBet();
+              AgainBetInfo = new global::RedAndBlackIndia.MsgAgainBet();
             }
             input.ReadMessage(AgainBetInfo);
             break;
@@ -1833,7 +1834,7 @@ namespace RedAndBlack {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::RedAndBlack.RedAndBlackIndiaReflection.Descriptor.MessageTypes[7]; }
+      get { return global::RedAndBlackIndia.RedAndBlackIndiaReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2050,7 +2051,7 @@ namespace RedAndBlack {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::RedAndBlack.RedAndBlackIndiaReflection.Descriptor.MessageTypes[8]; }
+      get { return global::RedAndBlackIndia.RedAndBlackIndiaReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2081,14 +2082,14 @@ namespace RedAndBlack {
 
     /// <summary>Field number for the "win_msg" field.</summary>
     public const int WinMsgFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::RedAndBlack.MsgWinMsg> _repeated_winMsg_codec
-        = pb::FieldCodec.ForMessage(10, global::RedAndBlack.MsgWinMsg.Parser);
-    private readonly pbc::RepeatedField<global::RedAndBlack.MsgWinMsg> winMsg_ = new pbc::RepeatedField<global::RedAndBlack.MsgWinMsg>();
+    private static readonly pb::FieldCodec<global::RedAndBlackIndia.MsgWinMsg> _repeated_winMsg_codec
+        = pb::FieldCodec.ForMessage(10, global::RedAndBlackIndia.MsgWinMsg.Parser);
+    private readonly pbc::RepeatedField<global::RedAndBlackIndia.MsgWinMsg> winMsg_ = new pbc::RepeatedField<global::RedAndBlackIndia.MsgWinMsg>();
     /// <summary>
     ///玩家输赢信息
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::RedAndBlack.MsgWinMsg> WinMsg {
+    public pbc::RepeatedField<global::RedAndBlackIndia.MsgWinMsg> WinMsg {
       get { return winMsg_; }
     }
 
@@ -2316,7 +2317,7 @@ namespace RedAndBlack {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::RedAndBlack.RedAndBlackIndiaReflection.Descriptor.MessageTypes[9]; }
+      get { return global::RedAndBlackIndia.RedAndBlackIndiaReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2554,7 +2555,7 @@ namespace RedAndBlack {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::RedAndBlack.RedAndBlackIndiaReflection.Descriptor.MessageTypes[10]; }
+      get { return global::RedAndBlackIndia.RedAndBlackIndiaReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2582,14 +2583,14 @@ namespace RedAndBlack {
 
     /// <summary>Field number for the "bet_record" field.</summary>
     public const int BetRecordFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::RedAndBlack.MsgTotalBet> _repeated_betRecord_codec
-        = pb::FieldCodec.ForMessage(10, global::RedAndBlack.MsgTotalBet.Parser);
-    private readonly pbc::RepeatedField<global::RedAndBlack.MsgTotalBet> betRecord_ = new pbc::RepeatedField<global::RedAndBlack.MsgTotalBet>();
+    private static readonly pb::FieldCodec<global::RedAndBlackIndia.MsgTotalBet> _repeated_betRecord_codec
+        = pb::FieldCodec.ForMessage(10, global::RedAndBlackIndia.MsgTotalBet.Parser);
+    private readonly pbc::RepeatedField<global::RedAndBlackIndia.MsgTotalBet> betRecord_ = new pbc::RepeatedField<global::RedAndBlackIndia.MsgTotalBet>();
     /// <summary>
     ///下注记录
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::RedAndBlack.MsgTotalBet> BetRecord {
+    public pbc::RepeatedField<global::RedAndBlackIndia.MsgTotalBet> BetRecord {
       get { return betRecord_; }
     }
 

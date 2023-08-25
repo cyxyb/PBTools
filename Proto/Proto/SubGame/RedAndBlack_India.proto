@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package RedAndBlack;
+package RedAndBlack_India;
 
 enum EMsgIDSubGame
 {
