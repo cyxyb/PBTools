@@ -399,11 +399,10 @@ class MsgSceneInfo PROTOBUF_FINAL :
     kBetFieldNumber = 1,
     kRecordFieldNumber = 2,
     kBetLimitFieldNumber = 3,
-    kAreaMulFieldNumber = 5,
-    kStateTimeFieldNumber = 6,
+    kStateTimeFieldNumber = 5,
     kPlayerLimitFieldNumber = 4,
-    kRemainTimeFieldNumber = 7,
-    kStateFieldNumber = 8,
+    kRemainTimeFieldNumber = 6,
+    kStateFieldNumber = 7,
   };
   // repeated int32 bet = 1;
   int bet_size() const;
@@ -467,29 +466,7 @@ class MsgSceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_bet_limit();
 
-  // repeated int32 area_mul = 5;
-  int area_mul_size() const;
-  private:
-  int _internal_area_mul_size() const;
-  public:
-  void clear_area_mul();
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_area_mul(int index) const;
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      _internal_area_mul() const;
-  void _internal_add_area_mul(::PROTOBUF_NAMESPACE_ID::int32 value);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      _internal_mutable_area_mul();
-  public:
-  ::PROTOBUF_NAMESPACE_ID::int32 area_mul(int index) const;
-  void set_area_mul(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
-  void add_area_mul(::PROTOBUF_NAMESPACE_ID::int32 value);
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      area_mul() const;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      mutable_area_mul();
-
-  // repeated int32 state_time = 6;
+  // repeated int32 state_time = 5;
   int state_time_size() const;
   private:
   int _internal_state_time_size() const;
@@ -520,7 +497,7 @@ class MsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_player_limit(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 remain_time = 7;
+  // int32 remain_time = 6;
   void clear_remain_time();
   ::PROTOBUF_NAMESPACE_ID::int32 remain_time() const;
   void set_remain_time(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -529,7 +506,7 @@ class MsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_remain_time(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 state = 8;
+  // int32 state = 7;
   void clear_state();
   ::PROTOBUF_NAMESPACE_ID::int32 state() const;
   void set_state(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -550,8 +527,6 @@ class MsgSceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::RedAndBlack_India::MsgRecord > record_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > bet_limit_;
   mutable std::atomic<int> _bet_limit_cached_byte_size_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > area_mul_;
-  mutable std::atomic<int> _area_mul_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > state_time_;
   mutable std::atomic<int> _state_time_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::int32 player_limit_;
@@ -2214,54 +2189,7 @@ inline void MsgSceneInfo::set_player_limit(::PROTOBUF_NAMESPACE_ID::int32 value)
   // @@protoc_insertion_point(field_set:RedAndBlack_India.MsgSceneInfo.player_limit)
 }
 
-// repeated int32 area_mul = 5;
-inline int MsgSceneInfo::_internal_area_mul_size() const {
-  return area_mul_.size();
-}
-inline int MsgSceneInfo::area_mul_size() const {
-  return _internal_area_mul_size();
-}
-inline void MsgSceneInfo::clear_area_mul() {
-  area_mul_.Clear();
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::_internal_area_mul(int index) const {
-  return area_mul_.Get(index);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::area_mul(int index) const {
-  // @@protoc_insertion_point(field_get:RedAndBlack_India.MsgSceneInfo.area_mul)
-  return _internal_area_mul(index);
-}
-inline void MsgSceneInfo::set_area_mul(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
-  area_mul_.Set(index, value);
-  // @@protoc_insertion_point(field_set:RedAndBlack_India.MsgSceneInfo.area_mul)
-}
-inline void MsgSceneInfo::_internal_add_area_mul(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  area_mul_.Add(value);
-}
-inline void MsgSceneInfo::add_area_mul(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_add_area_mul(value);
-  // @@protoc_insertion_point(field_add:RedAndBlack_India.MsgSceneInfo.area_mul)
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-MsgSceneInfo::_internal_area_mul() const {
-  return area_mul_;
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-MsgSceneInfo::area_mul() const {
-  // @@protoc_insertion_point(field_list:RedAndBlack_India.MsgSceneInfo.area_mul)
-  return _internal_area_mul();
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-MsgSceneInfo::_internal_mutable_area_mul() {
-  return &area_mul_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-MsgSceneInfo::mutable_area_mul() {
-  // @@protoc_insertion_point(field_mutable_list:RedAndBlack_India.MsgSceneInfo.area_mul)
-  return _internal_mutable_area_mul();
-}
-
-// repeated int32 state_time = 6;
+// repeated int32 state_time = 5;
 inline int MsgSceneInfo::_internal_state_time_size() const {
   return state_time_.size();
 }
@@ -2308,7 +2236,7 @@ MsgSceneInfo::mutable_state_time() {
   return _internal_mutable_state_time();
 }
 
-// int32 remain_time = 7;
+// int32 remain_time = 6;
 inline void MsgSceneInfo::clear_remain_time() {
   remain_time_ = 0;
 }
@@ -2328,7 +2256,7 @@ inline void MsgSceneInfo::set_remain_time(::PROTOBUF_NAMESPACE_ID::int32 value) 
   // @@protoc_insertion_point(field_set:RedAndBlack_India.MsgSceneInfo.remain_time)
 }
 
-// int32 state = 8;
+// int32 state = 7;
 inline void MsgSceneInfo::clear_state() {
   state_ = 0;
 }

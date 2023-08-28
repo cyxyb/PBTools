@@ -66,7 +66,7 @@ public static partial class CommonCmdReflection {
           "YXRlEDESIwofTXNnSURTaGFyZV9BZ2VuY3lJbmZvUmViYXRlUmVzcBAyEh0K",
           "GU1zZ0lETG9naW5fRm9yZ2V0UGFzc3dvcmQQMxIhCh1Nc2dJRExvZ2luX0Zv",
           "cmdldFBhc3N3b3JkUmVzcBA0Eh0KGU1zZ0lETG9naW5fUmVjaGFyZ2VOb3Rp",
-          "ZnkQNRIgChxNc2dJRExvZ2luX0dldFBsYXllckdvbGRSZXNwEDYqxgQKCkVN",
+          "ZnkQNRIgChxNc2dJRExvZ2luX0dldFBsYXllckdvbGRSZXNwEDYq7gQKCkVN",
           "c2dJREdhbWUSEgoOTXNnSURHYW1lX051bGwQABIUCg9Nc2dJREdhbWVfTG9n",
           "aW4Q6QcSGAoTTXNnSURHYW1lX0xvZ2luUmVzcBDqBxIeChlNc2dJREdhbWVf",
           "U3F1ZWV6ZVNlYXRSZXNwEOsHEhUKEE1zZ0lER2FtZV9Mb2dvdXQQ7AcSGgoV",
@@ -79,8 +79,8 @@ public static partial class CommonCmdReflection {
           "REdhbWVfQ3JlYXRlUm9vbRD1BxIXChJNc2dJREdhbWVfSm9pblJvb20Q9gcS",
           "GgoVTXNnSURHYW1lX1F1ZXJ5UmVjb3JkEPcHEiMKHk1zZ0lER2FtZV9RdWVy",
           "eVJvdW5kUmVjb3JkUmVzcBD4BxIhChxNc2dJREdhbWVfUXVlcnlEYXlSZWNv",
-          "cmRSZXNwEPkHEhsKFk1zZ0lER2FtZV9BZGRPbmVSZWNvcmQQ+gdiBnByb3Rv",
-          "Mw=="));
+          "cmRSZXNwEPkHEhsKFk1zZ0lER2FtZV9BZGRPbmVSZWNvcmQQ+gcSJgohTXNn",
+          "SURHYW1lX05vdGlmeVBsYXllck9mZmxpbmVSZXNwEPsHYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::EMsgIDMain), typeof(global::EResCode), typeof(global::EMsgIDLogin), typeof(global::EMsgIDGame), }, null, null));
@@ -415,6 +415,10 @@ public enum EMsgIDGame {
   ///猜拳增加一条记录
   /// </summary>
   [pbr::OriginalName("MsgIDGame_AddOneRecord")] MsgIdgameAddOneRecord = 1018,
+  /// <summary>
+  ///通知玩家断线(MsgCommonN32)
+  /// </summary>
+  [pbr::OriginalName("MsgIDGame_NotifyPlayerOfflineResp")] MsgIdgameNotifyPlayerOfflineResp = 1019,
 }
 
 #endregion

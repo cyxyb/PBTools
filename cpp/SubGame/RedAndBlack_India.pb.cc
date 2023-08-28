@@ -236,7 +236,6 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_RedAndBlack_5fIndia_2eproto::o
   PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgSceneInfo, record_),
   PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgSceneInfo, bet_limit_),
   PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgSceneInfo, player_limit_),
-  PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgSceneInfo, area_mul_),
   PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgSceneInfo, state_time_),
   PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgSceneInfo, remain_time_),
   PROTOBUF_FIELD_OFFSET(::RedAndBlack_India::MsgSceneInfo, state_),
@@ -309,15 +308,15 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_RedAndBlack_5fIndia_2eproto::o
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::RedAndBlack_India::MsgRecord)},
   { 7, -1, sizeof(::RedAndBlack_India::MsgSceneInfo)},
-  { 20, -1, sizeof(::RedAndBlack_India::MsgBet)},
-  { 27, -1, sizeof(::RedAndBlack_India::MsgBetResp)},
-  { 34, -1, sizeof(::RedAndBlack_India::MsgSingleAgainBet)},
-  { 42, -1, sizeof(::RedAndBlack_India::MsgAgainBet)},
-  { 48, -1, sizeof(::RedAndBlack_India::MsgAgainBetResp)},
-  { 55, -1, sizeof(::RedAndBlack_India::MsgWinMsg)},
-  { 62, -1, sizeof(::RedAndBlack_India::MsgResult)},
-  { 71, -1, sizeof(::RedAndBlack_India::MsgTotalBet)},
-  { 79, -1, sizeof(::RedAndBlack_India::MsgBetRecord)},
+  { 19, -1, sizeof(::RedAndBlack_India::MsgBet)},
+  { 26, -1, sizeof(::RedAndBlack_India::MsgBetResp)},
+  { 33, -1, sizeof(::RedAndBlack_India::MsgSingleAgainBet)},
+  { 41, -1, sizeof(::RedAndBlack_India::MsgAgainBet)},
+  { 47, -1, sizeof(::RedAndBlack_India::MsgAgainBetResp)},
+  { 54, -1, sizeof(::RedAndBlack_India::MsgWinMsg)},
+  { 61, -1, sizeof(::RedAndBlack_India::MsgResult)},
+  { 70, -1, sizeof(::RedAndBlack_India::MsgTotalBet)},
+  { 78, -1, sizeof(::RedAndBlack_India::MsgBetRecord)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -337,34 +336,33 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
 const char descriptor_table_protodef_RedAndBlack_5fIndia_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n\027RedAndBlack_India.proto\022\021RedAndBlack_I"
   "ndia\".\n\tMsgRecord\022\016\n\006result\030\001 \001(\005\022\021\n\tcar"
-  "d_type\030\002 \001(\005\"\274\001\n\014MsgSceneInfo\022\013\n\003bet\030\001 \003"
+  "d_type\030\002 \001(\005\"\252\001\n\014MsgSceneInfo\022\013\n\003bet\030\001 \003"
   "(\005\022,\n\006record\030\002 \003(\0132\034.RedAndBlack_India.M"
   "sgRecord\022\021\n\tbet_limit\030\003 \003(\005\022\024\n\014player_li"
-  "mit\030\004 \001(\005\022\020\n\010area_mul\030\005 \003(\005\022\022\n\nstate_tim"
-  "e\030\006 \003(\005\022\023\n\013remain_time\030\007 \001(\005\022\r\n\005state\030\010 "
-  "\001(\005\"%\n\006MsgBet\022\r\n\005index\030\001 \001(\005\022\014\n\004area\030\002 \001"
-  "(\005\"K\n\nMsgBetResp\022\020\n\010chair_id\030\001 \001(\005\022+\n\010be"
-  "t_info\030\002 \001(\0132\031.RedAndBlack_India.MsgBet\""
-  "\?\n\021MsgSingleAgainBet\022\r\n\005index\030\001 \001(\005\022\014\n\004a"
-  "rea\030\002 \001(\005\022\r\n\005count\030\003 \001(\005\"K\n\013MsgAgainBet\022"
-  "<\n\016again_bet_info\030\001 \003(\0132$.RedAndBlack_In"
-  "dia.MsgSingleAgainBet\"[\n\017MsgAgainBetResp"
-  "\022\020\n\010chair_id\030\001 \001(\005\0226\n\016again_bet_info\030\002 \001"
-  "(\0132\036.RedAndBlack_India.MsgAgainBet\"+\n\tMs"
-  "gWinMsg\022\020\n\010chair_id\030\001 \001(\005\022\014\n\004gold\030\002 \001(\003\""
-  "k\n\tMsgResult\022-\n\007win_msg\030\001 \003(\0132\034.RedAndBl"
-  "ack_India.MsgWinMsg\022\014\n\004card\030\002 \003(\005\022\021\n\tcar"
-  "d_type\030\003 \003(\005\022\016\n\006result\030\004 \001(\005\":\n\013MsgTotal"
-  "Bet\022\020\n\010chair_id\030\001 \001(\005\022\013\n\003bet\030\002 \003(\005\022\014\n\004go"
-  "ld\030\003 \003(\003\"B\n\014MsgBetRecord\0222\n\nbet_record\030\001"
-  " \003(\0132\036.RedAndBlack_India.MsgTotalBet*\363\001\n"
-  "\rEMsgIDSubGame\022\025\n\021MsgIDSubGame_Null\020\000\022\024\n"
-  "\020MsgIDSubGame_Bet\020\001\022\030\n\024MsgIDSubGame_BetR"
-  "esp\020\002\022\031\n\025MsgIDSubGame_AgainBet\020\003\022\035\n\031MsgI"
-  "DSubGame_AgainBetResp\020\004\022\037\n\033MsgIDSubGame_"
-  "GameResultResp\020\005\022\036\n\032MsgIDSubGame_BetReco"
-  "rdResp\020\006\022 \n\034MsgIDSubGame_NotifyStateResp"
-  "\020\007b\006proto3"
+  "mit\030\004 \001(\005\022\022\n\nstate_time\030\005 \003(\005\022\023\n\013remain_"
+  "time\030\006 \001(\005\022\r\n\005state\030\007 \001(\005\"%\n\006MsgBet\022\r\n\005i"
+  "ndex\030\001 \001(\005\022\014\n\004area\030\002 \001(\005\"K\n\nMsgBetResp\022\020"
+  "\n\010chair_id\030\001 \001(\005\022+\n\010bet_info\030\002 \001(\0132\031.Red"
+  "AndBlack_India.MsgBet\"\?\n\021MsgSingleAgainB"
+  "et\022\r\n\005index\030\001 \001(\005\022\014\n\004area\030\002 \001(\005\022\r\n\005count"
+  "\030\003 \001(\005\"K\n\013MsgAgainBet\022<\n\016again_bet_info\030"
+  "\001 \003(\0132$.RedAndBlack_India.MsgSingleAgain"
+  "Bet\"[\n\017MsgAgainBetResp\022\020\n\010chair_id\030\001 \001(\005"
+  "\0226\n\016again_bet_info\030\002 \001(\0132\036.RedAndBlack_I"
+  "ndia.MsgAgainBet\"+\n\tMsgWinMsg\022\020\n\010chair_i"
+  "d\030\001 \001(\005\022\014\n\004gold\030\002 \001(\003\"k\n\tMsgResult\022-\n\007wi"
+  "n_msg\030\001 \003(\0132\034.RedAndBlack_India.MsgWinMs"
+  "g\022\014\n\004card\030\002 \003(\005\022\021\n\tcard_type\030\003 \003(\005\022\016\n\006re"
+  "sult\030\004 \001(\005\":\n\013MsgTotalBet\022\020\n\010chair_id\030\001 "
+  "\001(\005\022\013\n\003bet\030\002 \003(\005\022\014\n\004gold\030\003 \003(\003\"B\n\014MsgBet"
+  "Record\0222\n\nbet_record\030\001 \003(\0132\036.RedAndBlack"
+  "_India.MsgTotalBet*\363\001\n\rEMsgIDSubGame\022\025\n\021"
+  "MsgIDSubGame_Null\020\000\022\024\n\020MsgIDSubGame_Bet\020"
+  "\001\022\030\n\024MsgIDSubGame_BetResp\020\002\022\031\n\025MsgIDSubG"
+  "ame_AgainBet\020\003\022\035\n\031MsgIDSubGame_AgainBetR"
+  "esp\020\004\022\037\n\033MsgIDSubGame_GameResultResp\020\005\022\036"
+  "\n\032MsgIDSubGame_BetRecordResp\020\006\022 \n\034MsgIDS"
+  "ubGame_NotifyStateResp\020\007b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_RedAndBlack_5fIndia_2eproto_deps[1] = {
 };
@@ -383,7 +381,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Red
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_RedAndBlack_5fIndia_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_RedAndBlack_5fIndia_2eproto = {
-  false, false, descriptor_table_protodef_RedAndBlack_5fIndia_2eproto, "RedAndBlack_India.proto", 1170,
+  false, false, descriptor_table_protodef_RedAndBlack_5fIndia_2eproto, "RedAndBlack_India.proto", 1152,
   &descriptor_table_RedAndBlack_5fIndia_2eproto_once, descriptor_table_RedAndBlack_5fIndia_2eproto_sccs, descriptor_table_RedAndBlack_5fIndia_2eproto_deps, 11, 0,
   schemas, file_default_instances, TableStruct_RedAndBlack_5fIndia_2eproto::offsets,
   file_level_metadata_RedAndBlack_5fIndia_2eproto, 11, file_level_enum_descriptors_RedAndBlack_5fIndia_2eproto, file_level_service_descriptors_RedAndBlack_5fIndia_2eproto,
@@ -653,7 +651,6 @@ MsgSceneInfo::MsgSceneInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   bet_(arena),
   record_(arena),
   bet_limit_(arena),
-  area_mul_(arena),
   state_time_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
@@ -664,7 +661,6 @@ MsgSceneInfo::MsgSceneInfo(const MsgSceneInfo& from)
       bet_(from.bet_),
       record_(from.record_),
       bet_limit_(from.bet_limit_),
-      area_mul_(from.area_mul_),
       state_time_(from.state_time_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&player_limit_, &from.player_limit_,
@@ -715,7 +711,6 @@ void MsgSceneInfo::Clear() {
   bet_.Clear();
   record_.Clear();
   bet_limit_.Clear();
-  area_mul_.Clear();
   state_time_.Clear();
   ::memset(&player_limit_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&state_) -
@@ -769,36 +764,26 @@ const char* MsgSceneInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated int32 area_mul = 5;
+      // repeated int32 state_time = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_area_mul(), ptr, ctx);
-          CHK_(ptr);
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40) {
-          _internal_add_area_mul(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // repeated int32 state_time = 6;
-      case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_state_time(), ptr, ctx);
           CHK_(ptr);
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48) {
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40) {
           _internal_add_state_time(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 remain_time = 7;
-      case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
+      // int32 remain_time = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
           remain_time_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 state = 8;
-      case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+      // int32 state = 7;
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
           state_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
@@ -863,34 +848,25 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_player_limit(), target);
   }
 
-  // repeated int32 area_mul = 5;
-  {
-    int byte_size = _area_mul_cached_byte_size_.load(std::memory_order_relaxed);
-    if (byte_size > 0) {
-      target = stream->WriteInt32Packed(
-          5, _internal_area_mul(), byte_size, target);
-    }
-  }
-
-  // repeated int32 state_time = 6;
+  // repeated int32 state_time = 5;
   {
     int byte_size = _state_time_cached_byte_size_.load(std::memory_order_relaxed);
     if (byte_size > 0) {
       target = stream->WriteInt32Packed(
-          6, _internal_state_time(), byte_size, target);
+          5, _internal_state_time(), byte_size, target);
     }
   }
 
-  // int32 remain_time = 7;
+  // int32 remain_time = 6;
   if (this->remain_time() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(7, this->_internal_remain_time(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_remain_time(), target);
   }
 
-  // int32 state = 8;
+  // int32 state = 7;
   if (this->state() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(8, this->_internal_state(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(7, this->_internal_state(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -946,22 +922,7 @@ size_t MsgSceneInfo::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  // repeated int32 area_mul = 5;
-  {
-    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      Int32Size(this->area_mul_);
-    if (data_size > 0) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
-    }
-    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
-    _area_mul_cached_byte_size_.store(cached_size,
-                                    std::memory_order_relaxed);
-    total_size += data_size;
-  }
-
-  // repeated int32 state_time = 6;
+  // repeated int32 state_time = 5;
   {
     size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       Int32Size(this->state_time_);
@@ -983,14 +944,14 @@ size_t MsgSceneInfo::ByteSizeLong() const {
         this->_internal_player_limit());
   }
 
-  // int32 remain_time = 7;
+  // int32 remain_time = 6;
   if (this->remain_time() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_remain_time());
   }
 
-  // int32 state = 8;
+  // int32 state = 7;
   if (this->state() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
@@ -1031,7 +992,6 @@ void MsgSceneInfo::MergeFrom(const MsgSceneInfo& from) {
   bet_.MergeFrom(from.bet_);
   record_.MergeFrom(from.record_);
   bet_limit_.MergeFrom(from.bet_limit_);
-  area_mul_.MergeFrom(from.area_mul_);
   state_time_.MergeFrom(from.state_time_);
   if (from.player_limit() != 0) {
     _internal_set_player_limit(from._internal_player_limit());
@@ -1068,7 +1028,6 @@ void MsgSceneInfo::InternalSwap(MsgSceneInfo* other) {
   bet_.InternalSwap(&other->bet_);
   record_.InternalSwap(&other->record_);
   bet_limit_.InternalSwap(&other->bet_limit_);
-  area_mul_.InternalSwap(&other->area_mul_);
   state_time_.InternalSwap(&other->state_time_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(MsgSceneInfo, state_)

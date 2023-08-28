@@ -72,7 +72,7 @@ const char descriptor_table_protodef_CommonCmd_2eproto[] PROTOBUF_SECTION_VARIAB
   "gIDLogin_ForgetPassword\0203\022!\n\035MsgIDLogin_"
   "ForgetPasswordResp\0204\022\035\n\031MsgIDLogin_Recha"
   "rgeNotify\0205\022 \n\034MsgIDLogin_GetPlayerGoldR"
-  "esp\0206*\306\004\n\nEMsgIDGame\022\022\n\016MsgIDGame_Null\020\000"
+  "esp\0206*\356\004\n\nEMsgIDGame\022\022\n\016MsgIDGame_Null\020\000"
   "\022\024\n\017MsgIDGame_Login\020\351\007\022\030\n\023MsgIDGame_Logi"
   "nResp\020\352\007\022\036\n\031MsgIDGame_SqueezeSeatResp\020\353\007"
   "\022\025\n\020MsgIDGame_Logout\020\354\007\022\032\n\025MsgIDGame_Aut"
@@ -86,7 +86,8 @@ const char descriptor_table_protodef_CommonCmd_2eproto[] PROTOBUF_SECTION_VARIAB
   "MsgIDGame_JoinRoom\020\366\007\022\032\n\025MsgIDGame_Query"
   "Record\020\367\007\022#\n\036MsgIDGame_QueryRoundRecordR"
   "esp\020\370\007\022!\n\034MsgIDGame_QueryDayRecordResp\020\371"
-  "\007\022\033\n\026MsgIDGame_AddOneRecord\020\372\007b\006proto3"
+  "\007\022\033\n\026MsgIDGame_AddOneRecord\020\372\007\022&\n!MsgIDG"
+  "ame_NotifyPlayerOfflineResp\020\373\007b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_CommonCmd_2eproto_deps[1] = {
 };
@@ -94,7 +95,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Com
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_CommonCmd_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_CommonCmd_2eproto = {
-  false, false, descriptor_table_protodef_CommonCmd_2eproto, "CommonCmd.proto", 2598,
+  false, false, descriptor_table_protodef_CommonCmd_2eproto, "CommonCmd.proto", 2638,
   &descriptor_table_CommonCmd_2eproto_once, descriptor_table_CommonCmd_2eproto_sccs, descriptor_table_CommonCmd_2eproto_deps, 0, 0,
   schemas, file_default_instances, TableStruct_CommonCmd_2eproto::offsets,
   file_level_metadata_CommonCmd_2eproto, 0, file_level_enum_descriptors_CommonCmd_2eproto, file_level_service_descriptors_CommonCmd_2eproto,
@@ -226,6 +227,7 @@ bool EMsgIDGame_IsValid(int value) {
     case 1016:
     case 1017:
     case 1018:
+    case 1019:
       return true;
     default:
       return false;

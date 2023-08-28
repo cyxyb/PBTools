@@ -8,7 +8,7 @@ enum EMsgIDSubGame
 	MsgIDSubGame_Bet					= 1;	//玩家下注(MsgBet)
 	MsgIDSubGame_BetResp				= 2;	//玩家下注返回(MsgBetResp)
 	MsgIDSubGame_AgainBet				= 3;	//玩家续投(MsgAgainBet)
-	MsgIDSubGame_AgainBetResp			= 4;	//玩家续投(MsgAgainBetResp)
+	MsgIDSubGame_AgainBetResp			= 4;	//玩家续投返回(MsgAgainBetResp)
 	MsgIDSubGame_GameResultResp			= 5;	//游戏结果(MsgResult)
 	MsgIDSubGame_BetRecordResp			= 6;	//玩家下注记录(MsgBetRecord)
 	MsgIDSubGame_NotifyStateResp		= 7;	//游戏状态(MsgCommonN32)
@@ -28,10 +28,9 @@ message MsgSceneInfo
 	repeated MsgRecord	record			= 2;	//开牌记录
 	repeated int32		bet_limit		= 3;	//个人区域限制
 	int32				player_limit	= 4;	//个人下注限制
-	repeated int32		area_mul		= 5;	//区域赔付倍数
-	repeated int32		state_time		= 6;	//各个状态配置时间(0:准备 7s 1:下注 15s 2:结算 10s)
-	int32				remain_time		= 7;	//剩余时间
-	int32				state			= 8;	//当前状态
+	repeated int32		state_time		= 5;	//各个状态配置时间(0:准备 7s 1:下注 15s 2:结算 10s)
+	int32				remain_time		= 6;	//已过时间
+	int32				state			= 7;	//当前状态
 }
 
 //玩家下注
