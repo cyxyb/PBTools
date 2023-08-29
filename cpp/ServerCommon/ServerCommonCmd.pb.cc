@@ -54,7 +54,7 @@ const char descriptor_table_protodef_ServerCommonCmd_2eproto[] PROTOBUF_SECTION_
   "er2CENTER_Register\020\211\'\022\037\n\032RelayServer2CEN"
   "TER_AddMail\020\212\'\022\'\n\"RelayServer2CENTER_Rec"
   "hargeSuccess\020\213\'\022 \n\033RelayServer2CENTER_Wi"
-  "thdraw\020\214\'*\261\013\n\010EMsgIDDB\022\020\n\014MsgIDDB_NULL\020\000"
+  "thdraw\020\214\'*\323\013\n\010EMsgIDDB\022\020\n\014MsgIDDB_NULL\020\000"
   "\022\035\n\031CENTER2DB_UpdateOnlineNum\020\001\022\033\n\027CENTE"
   "R2DB_InitOnlineNum\020\002\022\033\n\027CENTER2DB_Regist"
   "erLogin\020\003\022\035\n\031CENTER2DB_UnregisterLogin\020\004"
@@ -90,7 +90,8 @@ const char descriptor_table_protodef_ServerCommonCmd_2eproto[] PROTOBUF_SECTION_
   "e\020\327\017\022\"\n\035DB2GAME_FingerGuessWriteScore\020\330\017"
   "\022#\n\036GAME2DB_FingerGuessQueryRecord\020\331\017\022#\n"
   "\036DB2GAME_FingerGuessRoundRecord\020\332\017\022!\n\034DB"
-  "2GAME_FingerGuessDayRecord\020\333\017b\006proto3"
+  "2GAME_FingerGuessDayRecord\020\333\017\022 \n\033GAME2DB"
+  "_WriteDisConnectData\020\334\017b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_ServerCommonCmd_2eproto_deps[1] = {
 };
@@ -98,7 +99,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Ser
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ServerCommonCmd_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ServerCommonCmd_2eproto = {
-  false, false, descriptor_table_protodef_ServerCommonCmd_2eproto, "ServerCommonCmd.proto", 2757,
+  false, false, descriptor_table_protodef_ServerCommonCmd_2eproto, "ServerCommonCmd.proto", 2791,
   &descriptor_table_ServerCommonCmd_2eproto_once, descriptor_table_ServerCommonCmd_2eproto_sccs, descriptor_table_ServerCommonCmd_2eproto_deps, 0, 0,
   schemas, file_default_instances, TableStruct_ServerCommonCmd_2eproto::offsets,
   file_level_metadata_ServerCommonCmd_2eproto, 0, file_level_enum_descriptors_ServerCommonCmd_2eproto, file_level_service_descriptors_ServerCommonCmd_2eproto,
@@ -224,6 +225,7 @@ bool EMsgIDDB_IsValid(int value) {
     case 2009:
     case 2010:
     case 2011:
+    case 2012:
       return true;
     default:
       return false;

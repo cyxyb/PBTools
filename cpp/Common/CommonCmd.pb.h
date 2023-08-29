@@ -207,12 +207,13 @@ enum EMsgIDGame : int {
   MsgIDGame_QueryRoundRecordResp = 1016,
   MsgIDGame_QueryDayRecordResp = 1017,
   MsgIDGame_AddOneRecord = 1018,
+  MsgIDGame_NotifyPlayerOfflineResp = 1019,
   EMsgIDGame_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDGame_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDGame_IsValid(int value);
 constexpr EMsgIDGame EMsgIDGame_MIN = MsgIDGame_Null;
-constexpr EMsgIDGame EMsgIDGame_MAX = MsgIDGame_AddOneRecord;
+constexpr EMsgIDGame EMsgIDGame_MAX = MsgIDGame_NotifyPlayerOfflineResp;
 constexpr int EMsgIDGame_ARRAYSIZE = EMsgIDGame_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDGame_descriptor();
