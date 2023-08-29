@@ -1,0 +1,69 @@
+syntax = "proto3";
+
+package CRASH;
+
+enum EMsgIDCRASH
+{
+	SUB_CS_Bet					= 0;				//押注(sC2SPlayerBet)
+	SUB_CS_CancelBet			= 1;				//取消下注(MsgCommonN32)
+	SUB_CS_PlayerDot			= 2;				//玩家打点(MsgCommonN32)
+	SUB_SC_Bet					= 3;				//玩家下注(sS2CPlayerBet)
+	SUB_SC_CancelBet			= 4;				//取消下注(sS2CCancelBet)
+	SUB_SC_PlayerDot			= 5;				//玩家打点(sS2CPlayerDot)
+	SUB_SC_NotifyProgress		= 6;				//通知进度(sS2CNotifyProgress)
+	SUB_SC_ChangeState			= 7;				//通知状态更改(MsgCommonN32)
+	SUB_S_CHECK_ROBOT_LEAVE		= 8;				//检测机器人退出
+}		
+		
+// 押注		
+message sC2SPlayerBet			
+{		
+	int32	area_index 			= 1;				//索引（0，1，2）
+	int32	bet_index 			= 2;				//押注索引
+	int32	dot_odd_index 		= 3;				//打点倍数索引
+}
+
+//场景
+message SC_SceneInfo
+{
+	int32	cur_state 						= 1;	//当前状态
+	int32	remain_time 					= 2;	//剩余时间
+	repeated int32	player_bet 				= 3;	//玩家下注
+	repeated int64	player_win_gold 		= 4;	//玩家输赢金币
+	repeated int32	player_win_dot_odd 		= 5;	//打点倍数
+	repeated int64	player_total_win_socre 	= 6;	//玩家总赢分数
+	repeated int64	player_max_score 		= 7;	//玩家赢得最大分数
+	int32	history_num 					= 8;	//历史记录条数
+	repeated int32	history_result 			= 9;	//历史记录
+}
+
+//玩家下注
+message sS2CPlayerBet
+{
+	int32	chairid 	= 1;						//椅子号
+	int32	area_index 	= 2;						//下注区域
+	int32	bet 		= 3;						//下注值
+}			
+			
+//取消下注			
+message sS2CCancelBet			
+{			
+	int32	chairid 	= 1;						//椅子号
+	int32	bet 		= 2;						//下注值
+}			
+			
+//结果			
+message sS2CPlayerDot			
+{			
+	int32	chairid 	= 1;						//椅子号
+	int32	area_index 	= 2;						//区域
+	int32	odd 		= 3;						//倍数
+	int64	win_gold 	= 4;						//赢得金币
+}
+
+//跑马灯
+message sS2CNotifyProgress
+{
+	bool	is_boom = 1;							//是否爆炸
+	int32	cur_odd = 2;							//当前倍数
+}
