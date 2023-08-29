@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package BQTP;
+
+enum EMsgIDBQTP
+{
+	SUB_CS_GAME_START 	= 0; 		//开始游戏(MsgCommonN32)
+	SUB_SC_BET_FAIL 	= 1; 		//游戏下注(MsgCommonBool)
+	SUB_SC_START_GAME 	= 2;		//开始游戏(CMD_3D_SC_Result)
+}
+
+//场景消息
+message SC_SceneInfo
+{
+	int32 free_count =1;		// 免费次数
+	int32 curren_bet = 2;   	// 当前下注
+	repeated int32 bet = 3; 	// 下注配置
+	int32 rerun = 4;        	// 重转次数
+}
+
+//游戏结果返回
+message CMD_3D_SC_Result
+{
+	repeated int32	icon = 1;
+	repeated int32	hit_icon = 2;	// 击中的图标
+	int64	win_gold = 3;			// 赢得金币
+	int32	free_count = 4;			// 免费次数
+	int32	rerun = 5;				// 下一次是重转第几次
+	int32	special_wild =6;		// 第几列中全wild
+}	
