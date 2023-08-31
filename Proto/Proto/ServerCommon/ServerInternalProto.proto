@@ -152,6 +152,7 @@ message MsgLoginPlayerInfo
 	uint64		coin			= 10;	//玩家金币
 	string		phone_num		= 11;	//手机号
 	string		password		= 12;	//密码
+	int32		vip_level		= 13;	//vip等级
 }
 
 //游戏服务器玩家信息

@@ -60,11 +60,11 @@ namespace SG777 {
     /// </summary>
     [pbr::OriginalName("SUB_CS_BELL_GAME_END")] SubCsBellGameEnd = 1,
     /// <summary>
-    ///游戏结束
+    ///游戏结束(CMD_3D_SC_Result)
     /// </summary>
     [pbr::OriginalName("SUB_SC_GAME_OVER")] SubScGameOver = 2,
     /// <summary>
-    ///铃铛游戏结算
+    ///铃铛游戏结算(CMD_StartBallGame)
     /// </summary>
     [pbr::OriginalName("SUB_SC_BELL_GAME")] SubScBellGame = 3,
   }

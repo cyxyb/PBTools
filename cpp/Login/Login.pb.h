@@ -3591,18 +3591,19 @@ class MsgVIPInfo PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kNeedScoreFieldNumber = 1,
-    kTurntableNumFieldNumber = 2,
-    kTrumpetDiscountFieldNumber = 3,
-    kCheckAdditionFieldNumber = 4,
-    kShareAdditionFieldNumber = 5,
-    kAvatarFieldNumber = 7,
-    kAvatarFrameFieldNumber = 8,
-    kWorldChatFieldNumber = 6,
-    kOneToOneFieldNumber = 10,
-    kAwardGoldFieldNumber = 9,
+    kNeedScoreFieldNumber = 2,
+    kVipLevelFieldNumber = 1,
+    kTurntableNumFieldNumber = 3,
+    kTrumpetDiscountFieldNumber = 4,
+    kCheckAdditionFieldNumber = 5,
+    kShareAdditionFieldNumber = 6,
+    kAvatarFieldNumber = 8,
+    kAvatarFrameFieldNumber = 9,
+    kWorldChatFieldNumber = 7,
+    kOneToOneFieldNumber = 11,
+    kAwardGoldFieldNumber = 10,
   };
-  // int64 need_score = 1;
+  // int64 need_score = 2;
   void clear_need_score();
   ::PROTOBUF_NAMESPACE_ID::int64 need_score() const;
   void set_need_score(::PROTOBUF_NAMESPACE_ID::int64 value);
@@ -3611,7 +3612,16 @@ class MsgVIPInfo PROTOBUF_FINAL :
   void _internal_set_need_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int32 turntable_num = 2;
+  // int32 vip_level = 1;
+  void clear_vip_level();
+  ::PROTOBUF_NAMESPACE_ID::int32 vip_level() const;
+  void set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_vip_level() const;
+  void _internal_set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 turntable_num = 3;
   void clear_turntable_num();
   ::PROTOBUF_NAMESPACE_ID::int32 turntable_num() const;
   void set_turntable_num(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -3620,7 +3630,7 @@ class MsgVIPInfo PROTOBUF_FINAL :
   void _internal_set_turntable_num(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 trumpet_discount = 3;
+  // int32 trumpet_discount = 4;
   void clear_trumpet_discount();
   ::PROTOBUF_NAMESPACE_ID::int32 trumpet_discount() const;
   void set_trumpet_discount(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -3629,7 +3639,7 @@ class MsgVIPInfo PROTOBUF_FINAL :
   void _internal_set_trumpet_discount(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 check_addition = 4;
+  // int32 check_addition = 5;
   void clear_check_addition();
   ::PROTOBUF_NAMESPACE_ID::int32 check_addition() const;
   void set_check_addition(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -3638,7 +3648,7 @@ class MsgVIPInfo PROTOBUF_FINAL :
   void _internal_set_check_addition(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 share_addition = 5;
+  // int32 share_addition = 6;
   void clear_share_addition();
   ::PROTOBUF_NAMESPACE_ID::int32 share_addition() const;
   void set_share_addition(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -3647,7 +3657,7 @@ class MsgVIPInfo PROTOBUF_FINAL :
   void _internal_set_share_addition(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 avatar = 7;
+  // int32 avatar = 8;
   void clear_avatar();
   ::PROTOBUF_NAMESPACE_ID::int32 avatar() const;
   void set_avatar(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -3656,7 +3666,7 @@ class MsgVIPInfo PROTOBUF_FINAL :
   void _internal_set_avatar(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 avatar_frame = 8;
+  // int32 avatar_frame = 9;
   void clear_avatar_frame();
   ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame() const;
   void set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -3665,7 +3675,7 @@ class MsgVIPInfo PROTOBUF_FINAL :
   void _internal_set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // bool world_chat = 6;
+  // bool world_chat = 7;
   void clear_world_chat();
   bool world_chat() const;
   void set_world_chat(bool value);
@@ -3674,7 +3684,7 @@ class MsgVIPInfo PROTOBUF_FINAL :
   void _internal_set_world_chat(bool value);
   public:
 
-  // bool one_to_one = 10;
+  // bool one_to_one = 11;
   void clear_one_to_one();
   bool one_to_one() const;
   void set_one_to_one(bool value);
@@ -3683,7 +3693,7 @@ class MsgVIPInfo PROTOBUF_FINAL :
   void _internal_set_one_to_one(bool value);
   public:
 
-  // int32 award_gold = 9;
+  // int32 award_gold = 10;
   void clear_award_gold();
   ::PROTOBUF_NAMESPACE_ID::int32 award_gold() const;
   void set_award_gold(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -3700,6 +3710,7 @@ class MsgVIPInfo PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int64 need_score_;
+  ::PROTOBUF_NAMESPACE_ID::int32 vip_level_;
   ::PROTOBUF_NAMESPACE_ID::int32 turntable_num_;
   ::PROTOBUF_NAMESPACE_ID::int32 trumpet_discount_;
   ::PROTOBUF_NAMESPACE_ID::int32 check_addition_;
@@ -6731,7 +6742,27 @@ inline void MsgForgetPassword::set_allocated_new_password(std::string* new_passw
 
 // MsgVIPInfo
 
-// int64 need_score = 1;
+// int32 vip_level = 1;
+inline void MsgVIPInfo::clear_vip_level() {
+  vip_level_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgVIPInfo::_internal_vip_level() const {
+  return vip_level_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgVIPInfo::vip_level() const {
+  // @@protoc_insertion_point(field_get:MsgVIPInfo.vip_level)
+  return _internal_vip_level();
+}
+inline void MsgVIPInfo::_internal_set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  vip_level_ = value;
+}
+inline void MsgVIPInfo::set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_vip_level(value);
+  // @@protoc_insertion_point(field_set:MsgVIPInfo.vip_level)
+}
+
+// int64 need_score = 2;
 inline void MsgVIPInfo::clear_need_score() {
   need_score_ = PROTOBUF_LONGLONG(0);
 }
@@ -6751,7 +6782,7 @@ inline void MsgVIPInfo::set_need_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   // @@protoc_insertion_point(field_set:MsgVIPInfo.need_score)
 }
 
-// int32 turntable_num = 2;
+// int32 turntable_num = 3;
 inline void MsgVIPInfo::clear_turntable_num() {
   turntable_num_ = 0;
 }
@@ -6771,7 +6802,7 @@ inline void MsgVIPInfo::set_turntable_num(::PROTOBUF_NAMESPACE_ID::int32 value) 
   // @@protoc_insertion_point(field_set:MsgVIPInfo.turntable_num)
 }
 
-// int32 trumpet_discount = 3;
+// int32 trumpet_discount = 4;
 inline void MsgVIPInfo::clear_trumpet_discount() {
   trumpet_discount_ = 0;
 }
@@ -6791,7 +6822,7 @@ inline void MsgVIPInfo::set_trumpet_discount(::PROTOBUF_NAMESPACE_ID::int32 valu
   // @@protoc_insertion_point(field_set:MsgVIPInfo.trumpet_discount)
 }
 
-// int32 check_addition = 4;
+// int32 check_addition = 5;
 inline void MsgVIPInfo::clear_check_addition() {
   check_addition_ = 0;
 }
@@ -6811,7 +6842,7 @@ inline void MsgVIPInfo::set_check_addition(::PROTOBUF_NAMESPACE_ID::int32 value)
   // @@protoc_insertion_point(field_set:MsgVIPInfo.check_addition)
 }
 
-// int32 share_addition = 5;
+// int32 share_addition = 6;
 inline void MsgVIPInfo::clear_share_addition() {
   share_addition_ = 0;
 }
@@ -6831,7 +6862,7 @@ inline void MsgVIPInfo::set_share_addition(::PROTOBUF_NAMESPACE_ID::int32 value)
   // @@protoc_insertion_point(field_set:MsgVIPInfo.share_addition)
 }
 
-// bool world_chat = 6;
+// bool world_chat = 7;
 inline void MsgVIPInfo::clear_world_chat() {
   world_chat_ = false;
 }
@@ -6851,7 +6882,7 @@ inline void MsgVIPInfo::set_world_chat(bool value) {
   // @@protoc_insertion_point(field_set:MsgVIPInfo.world_chat)
 }
 
-// int32 avatar = 7;
+// int32 avatar = 8;
 inline void MsgVIPInfo::clear_avatar() {
   avatar_ = 0;
 }
@@ -6871,7 +6902,7 @@ inline void MsgVIPInfo::set_avatar(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:MsgVIPInfo.avatar)
 }
 
-// int32 avatar_frame = 8;
+// int32 avatar_frame = 9;
 inline void MsgVIPInfo::clear_avatar_frame() {
   avatar_frame_ = 0;
 }
@@ -6891,7 +6922,7 @@ inline void MsgVIPInfo::set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:MsgVIPInfo.avatar_frame)
 }
 
-// int32 award_gold = 9;
+// int32 award_gold = 10;
 inline void MsgVIPInfo::clear_award_gold() {
   award_gold_ = 0;
 }
@@ -6911,7 +6942,7 @@ inline void MsgVIPInfo::set_award_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:MsgVIPInfo.award_gold)
 }
 
-// bool one_to_one = 10;
+// bool one_to_one = 11;
 inline void MsgVIPInfo::clear_one_to_one() {
   one_to_one_ = false;
 }

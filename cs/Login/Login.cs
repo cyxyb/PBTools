@@ -64,15 +64,15 @@ public static partial class LoginReflection {
           "UXVlcnlSZWJhdGVSZWNvcmQSFgoOcmVjaGFyZ2VVc2VySWQYASABKAUSFgoO",
           "cmVjaGFyZ2VBbW91bnQYAiABKAUSDgoGcmViYXRlGAMgASgFIlsKEU1zZ0Zv",
           "cmdldFBhc3N3b3JkEhMKC2NsaWVudF90eXBlGAEgASgFEg0KBXBob25lGAIg",
-          "ASgJEgwKBGNvZGUYAyABKAUSFAoMbmV3X3Bhc3N3b3JkGAQgASgJIuMBCgpN",
-          "c2dWSVBJbmZvEhIKCm5lZWRfc2NvcmUYASABKAMSFQoNdHVybnRhYmxlX251",
-          "bRgCIAEoBRIYChB0cnVtcGV0X2Rpc2NvdW50GAMgASgFEhYKDmNoZWNrX2Fk",
-          "ZGl0aW9uGAQgASgFEhYKDnNoYXJlX2FkZGl0aW9uGAUgASgFEhIKCndvcmxk",
-          "X2NoYXQYBiABKAgSDgoGYXZhdGFyGAcgASgFEhQKDGF2YXRhcl9mcmFtZRgI",
-          "IAEoBRISCgphd2FyZF9nb2xkGAkgASgFEhIKCm9uZV90b19vbmUYCiABKAgi",
-          "LQoMTXNnVklQQ29uZmlnEh0KCHZpcF9pbmZvGAEgAygLMgsuTXNnVklQSW5m",
-          "byIvCg1Nc2dVcGdyYWRlVklQEhAKCHJlc19jb2RlGAEgASgFEgwKBGdvbGQY",
-          "AiABKANiBnByb3RvMw=="));
+          "ASgJEgwKBGNvZGUYAyABKAUSFAoMbmV3X3Bhc3N3b3JkGAQgASgJIvYBCgpN",
+          "c2dWSVBJbmZvEhEKCXZpcF9sZXZlbBgBIAEoBRISCgpuZWVkX3Njb3JlGAIg",
+          "ASgDEhUKDXR1cm50YWJsZV9udW0YAyABKAUSGAoQdHJ1bXBldF9kaXNjb3Vu",
+          "dBgEIAEoBRIWCg5jaGVja19hZGRpdGlvbhgFIAEoBRIWCg5zaGFyZV9hZGRp",
+          "dGlvbhgGIAEoBRISCgp3b3JsZF9jaGF0GAcgASgIEg4KBmF2YXRhchgIIAEo",
+          "BRIUCgxhdmF0YXJfZnJhbWUYCSABKAUSEgoKYXdhcmRfZ29sZBgKIAEoBRIS",
+          "CgpvbmVfdG9fb25lGAsgASgIIi0KDE1zZ1ZJUENvbmZpZxIdCgh2aXBfaW5m",
+          "bxgBIAMoCzILLk1zZ1ZJUEluZm8iLwoNTXNnVXBncmFkZVZJUBIQCghyZXNf",
+          "Y29kZRgBIAEoBRIMCgRnb2xkGAIgASgDYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -94,7 +94,7 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgQueryRebateRecordInfo), global::MsgQueryRebateRecordInfo.Parser, new[]{ "QueryRebateRecord" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgQueryRebateRecord), global::MsgQueryRebateRecord.Parser, new[]{ "RechargeUserId", "RechargeAmount", "Rebate" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgForgetPassword), global::MsgForgetPassword.Parser, new[]{ "ClientType", "Phone", "Code", "NewPassword" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgVIPInfo), global::MsgVIPInfo.Parser, new[]{ "NeedScore", "TurntableNum", "TrumpetDiscount", "CheckAddition", "ShareAddition", "WorldChat", "Avatar", "AvatarFrame", "AwardGold", "OneToOne" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgVIPInfo), global::MsgVIPInfo.Parser, new[]{ "VipLevel", "NeedScore", "TurntableNum", "TrumpetDiscount", "CheckAddition", "ShareAddition", "WorldChat", "Avatar", "AvatarFrame", "AwardGold", "OneToOne" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgVIPConfig), global::MsgVIPConfig.Parser, new[]{ "VipInfo" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgUpgradeVIP), global::MsgUpgradeVIP.Parser, new[]{ "ResCode", "Gold" }, null, null, null, null)
         }));
@@ -5601,6 +5601,7 @@ public sealed partial class MsgVIPInfo : pb::IMessage<MsgVIPInfo>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public MsgVIPInfo(MsgVIPInfo other) : this() {
+    vipLevel_ = other.vipLevel_;
     needScore_ = other.needScore_;
     turntableNum_ = other.turntableNum_;
     trumpetDiscount_ = other.trumpetDiscount_;
@@ -5619,8 +5620,22 @@ public sealed partial class MsgVIPInfo : pb::IMessage<MsgVIPInfo>
     return new MsgVIPInfo(this);
   }
 
+  /// <summary>Field number for the "vip_level" field.</summary>
+  public const int VipLevelFieldNumber = 1;
+  private int vipLevel_;
+  /// <summary>
+  ///vip等级
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int VipLevel {
+    get { return vipLevel_; }
+    set {
+      vipLevel_ = value;
+    }
+  }
+
   /// <summary>Field number for the "need_score" field.</summary>
-  public const int NeedScoreFieldNumber = 1;
+  public const int NeedScoreFieldNumber = 2;
   private long needScore_;
   /// <summary>
   ///需求打码量
@@ -5634,7 +5649,7 @@ public sealed partial class MsgVIPInfo : pb::IMessage<MsgVIPInfo>
   }
 
   /// <summary>Field number for the "turntable_num" field.</summary>
-  public const int TurntableNumFieldNumber = 2;
+  public const int TurntableNumFieldNumber = 3;
   private int turntableNum_;
   /// <summary>
   ///转盘次数上线
@@ -5648,7 +5663,7 @@ public sealed partial class MsgVIPInfo : pb::IMessage<MsgVIPInfo>
   }
 
   /// <summary>Field number for the "trumpet_discount" field.</summary>
-  public const int TrumpetDiscountFieldNumber = 3;
+  public const int TrumpetDiscountFieldNumber = 4;
   private int trumpetDiscount_;
   /// <summary>
   ///世界喇叭扣费减少(百分比)
@@ -5662,7 +5677,7 @@ public sealed partial class MsgVIPInfo : pb::IMessage<MsgVIPInfo>
   }
 
   /// <summary>Field number for the "check_addition" field.</summary>
-  public const int CheckAdditionFieldNumber = 4;
+  public const int CheckAdditionFieldNumber = 5;
   private int checkAddition_;
   /// <summary>
   ///7天签到奖励加成(百分比)
@@ -5676,7 +5691,7 @@ public sealed partial class MsgVIPInfo : pb::IMessage<MsgVIPInfo>
   }
 
   /// <summary>Field number for the "share_addition" field.</summary>
-  public const int ShareAdditionFieldNumber = 5;
+  public const int ShareAdditionFieldNumber = 6;
   private int shareAddition_;
   /// <summary>
   ///分享奖励加成(百分比)
@@ -5690,7 +5705,7 @@ public sealed partial class MsgVIPInfo : pb::IMessage<MsgVIPInfo>
   }
 
   /// <summary>Field number for the "world_chat" field.</summary>
-  public const int WorldChatFieldNumber = 6;
+  public const int WorldChatFieldNumber = 7;
   private bool worldChat_;
   /// <summary>
   ///是否可以世界聊天
@@ -5704,7 +5719,7 @@ public sealed partial class MsgVIPInfo : pb::IMessage<MsgVIPInfo>
   }
 
   /// <summary>Field number for the "avatar" field.</summary>
-  public const int AvatarFieldNumber = 7;
+  public const int AvatarFieldNumber = 8;
   private int avatar_;
   /// <summary>
   ///头像奖励
@@ -5718,7 +5733,7 @@ public sealed partial class MsgVIPInfo : pb::IMessage<MsgVIPInfo>
   }
 
   /// <summary>Field number for the "avatar_frame" field.</summary>
-  public const int AvatarFrameFieldNumber = 8;
+  public const int AvatarFrameFieldNumber = 9;
   private int avatarFrame_;
   /// <summary>
   ///头像框奖励
@@ -5732,7 +5747,7 @@ public sealed partial class MsgVIPInfo : pb::IMessage<MsgVIPInfo>
   }
 
   /// <summary>Field number for the "award_gold" field.</summary>
-  public const int AwardGoldFieldNumber = 9;
+  public const int AwardGoldFieldNumber = 10;
   private int awardGold_;
   /// <summary>
   ///奖励金币
@@ -5746,7 +5761,7 @@ public sealed partial class MsgVIPInfo : pb::IMessage<MsgVIPInfo>
   }
 
   /// <summary>Field number for the "one_to_one" field.</summary>
-  public const int OneToOneFieldNumber = 10;
+  public const int OneToOneFieldNumber = 11;
   private bool oneToOne_;
   /// <summary>
   ///一对一服务
@@ -5772,6 +5787,7 @@ public sealed partial class MsgVIPInfo : pb::IMessage<MsgVIPInfo>
     if (ReferenceEquals(other, this)) {
       return true;
     }
+    if (VipLevel != other.VipLevel) return false;
     if (NeedScore != other.NeedScore) return false;
     if (TurntableNum != other.TurntableNum) return false;
     if (TrumpetDiscount != other.TrumpetDiscount) return false;
@@ -5788,6 +5804,7 @@ public sealed partial class MsgVIPInfo : pb::IMessage<MsgVIPInfo>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override int GetHashCode() {
     int hash = 1;
+    if (VipLevel != 0) hash ^= VipLevel.GetHashCode();
     if (NeedScore != 0L) hash ^= NeedScore.GetHashCode();
     if (TurntableNum != 0) hash ^= TurntableNum.GetHashCode();
     if (TrumpetDiscount != 0) hash ^= TrumpetDiscount.GetHashCode();
@@ -5814,44 +5831,48 @@ public sealed partial class MsgVIPInfo : pb::IMessage<MsgVIPInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     output.WriteRawMessage(this);
   #else
-    if (NeedScore != 0L) {
+    if (VipLevel != 0) {
       output.WriteRawTag(8);
+      output.WriteInt32(VipLevel);
+    }
+    if (NeedScore != 0L) {
+      output.WriteRawTag(16);
       output.WriteInt64(NeedScore);
     }
     if (TurntableNum != 0) {
-      output.WriteRawTag(16);
+      output.WriteRawTag(24);
       output.WriteInt32(TurntableNum);
     }
     if (TrumpetDiscount != 0) {
-      output.WriteRawTag(24);
+      output.WriteRawTag(32);
       output.WriteInt32(TrumpetDiscount);
     }
     if (CheckAddition != 0) {
-      output.WriteRawTag(32);
+      output.WriteRawTag(40);
       output.WriteInt32(CheckAddition);
     }
     if (ShareAddition != 0) {
-      output.WriteRawTag(40);
+      output.WriteRawTag(48);
       output.WriteInt32(ShareAddition);
     }
     if (WorldChat != false) {
-      output.WriteRawTag(48);
+      output.WriteRawTag(56);
       output.WriteBool(WorldChat);
     }
     if (Avatar != 0) {
-      output.WriteRawTag(56);
+      output.WriteRawTag(64);
       output.WriteInt32(Avatar);
     }
     if (AvatarFrame != 0) {
-      output.WriteRawTag(64);
+      output.WriteRawTag(72);
       output.WriteInt32(AvatarFrame);
     }
     if (AwardGold != 0) {
-      output.WriteRawTag(72);
+      output.WriteRawTag(80);
       output.WriteInt32(AwardGold);
     }
     if (OneToOne != false) {
-      output.WriteRawTag(80);
+      output.WriteRawTag(88);
       output.WriteBool(OneToOne);
     }
     if (_unknownFields != null) {
@@ -5863,44 +5884,48 @@ public sealed partial class MsgVIPInfo : pb::IMessage<MsgVIPInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-    if (NeedScore != 0L) {
+    if (VipLevel != 0) {
       output.WriteRawTag(8);
+      output.WriteInt32(VipLevel);
+    }
+    if (NeedScore != 0L) {
+      output.WriteRawTag(16);
       output.WriteInt64(NeedScore);
     }
     if (TurntableNum != 0) {
-      output.WriteRawTag(16);
+      output.WriteRawTag(24);
       output.WriteInt32(TurntableNum);
     }
     if (TrumpetDiscount != 0) {
-      output.WriteRawTag(24);
+      output.WriteRawTag(32);
       output.WriteInt32(TrumpetDiscount);
     }
     if (CheckAddition != 0) {
-      output.WriteRawTag(32);
+      output.WriteRawTag(40);
       output.WriteInt32(CheckAddition);
     }
     if (ShareAddition != 0) {
-      output.WriteRawTag(40);
+      output.WriteRawTag(48);
       output.WriteInt32(ShareAddition);
     }
     if (WorldChat != false) {
-      output.WriteRawTag(48);
+      output.WriteRawTag(56);
       output.WriteBool(WorldChat);
     }
     if (Avatar != 0) {
-      output.WriteRawTag(56);
+      output.WriteRawTag(64);
       output.WriteInt32(Avatar);
     }
     if (AvatarFrame != 0) {
-      output.WriteRawTag(64);
+      output.WriteRawTag(72);
       output.WriteInt32(AvatarFrame);
     }
     if (AwardGold != 0) {
-      output.WriteRawTag(72);
+      output.WriteRawTag(80);
       output.WriteInt32(AwardGold);
     }
     if (OneToOne != false) {
-      output.WriteRawTag(80);
+      output.WriteRawTag(88);
       output.WriteBool(OneToOne);
     }
     if (_unknownFields != null) {
@@ -5912,6 +5937,9 @@ public sealed partial class MsgVIPInfo : pb::IMessage<MsgVIPInfo>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int CalculateSize() {
     int size = 0;
+    if (VipLevel != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(VipLevel);
+    }
     if (NeedScore != 0L) {
       size += 1 + pb::CodedOutputStream.ComputeInt64Size(NeedScore);
     }
@@ -5952,6 +5980,9 @@ public sealed partial class MsgVIPInfo : pb::IMessage<MsgVIPInfo>
   public void MergeFrom(MsgVIPInfo other) {
     if (other == null) {
       return;
+    }
+    if (other.VipLevel != 0) {
+      VipLevel = other.VipLevel;
     }
     if (other.NeedScore != 0L) {
       NeedScore = other.NeedScore;
@@ -5998,42 +6029,46 @@ public sealed partial class MsgVIPInfo : pb::IMessage<MsgVIPInfo>
           _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
           break;
         case 8: {
-          NeedScore = input.ReadInt64();
+          VipLevel = input.ReadInt32();
           break;
         }
         case 16: {
-          TurntableNum = input.ReadInt32();
+          NeedScore = input.ReadInt64();
           break;
         }
         case 24: {
-          TrumpetDiscount = input.ReadInt32();
+          TurntableNum = input.ReadInt32();
           break;
         }
         case 32: {
-          CheckAddition = input.ReadInt32();
+          TrumpetDiscount = input.ReadInt32();
           break;
         }
         case 40: {
-          ShareAddition = input.ReadInt32();
+          CheckAddition = input.ReadInt32();
           break;
         }
         case 48: {
-          WorldChat = input.ReadBool();
+          ShareAddition = input.ReadInt32();
           break;
         }
         case 56: {
-          Avatar = input.ReadInt32();
+          WorldChat = input.ReadBool();
           break;
         }
         case 64: {
-          AvatarFrame = input.ReadInt32();
+          Avatar = input.ReadInt32();
           break;
         }
         case 72: {
-          AwardGold = input.ReadInt32();
+          AvatarFrame = input.ReadInt32();
           break;
         }
         case 80: {
+          AwardGold = input.ReadInt32();
+          break;
+        }
+        case 88: {
           OneToOne = input.ReadBool();
           break;
         }
@@ -6052,42 +6087,46 @@ public sealed partial class MsgVIPInfo : pb::IMessage<MsgVIPInfo>
           _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
           break;
         case 8: {
-          NeedScore = input.ReadInt64();
+          VipLevel = input.ReadInt32();
           break;
         }
         case 16: {
-          TurntableNum = input.ReadInt32();
+          NeedScore = input.ReadInt64();
           break;
         }
         case 24: {
-          TrumpetDiscount = input.ReadInt32();
+          TurntableNum = input.ReadInt32();
           break;
         }
         case 32: {
-          CheckAddition = input.ReadInt32();
+          TrumpetDiscount = input.ReadInt32();
           break;
         }
         case 40: {
-          ShareAddition = input.ReadInt32();
+          CheckAddition = input.ReadInt32();
           break;
         }
         case 48: {
-          WorldChat = input.ReadBool();
+          ShareAddition = input.ReadInt32();
           break;
         }
         case 56: {
-          Avatar = input.ReadInt32();
+          WorldChat = input.ReadBool();
           break;
         }
         case 64: {
-          AvatarFrame = input.ReadInt32();
+          Avatar = input.ReadInt32();
           break;
         }
         case 72: {
-          AwardGold = input.ReadInt32();
+          AvatarFrame = input.ReadInt32();
           break;
         }
         case 80: {
+          AwardGold = input.ReadInt32();
+          break;
+        }
+        case 88: {
           OneToOne = input.ReadBool();
           break;
         }

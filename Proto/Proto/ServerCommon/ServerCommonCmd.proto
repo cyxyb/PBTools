@@ -98,6 +98,12 @@ enum EMsgIDDB
 	DB2LOGIN_ForgetPasswordResp		= 1024;	//忘记密码返回
 	LOGIN2DB_GetPlayerGold			= 1025;	//获取玩家金币
 	DB2LOGIN_GetPlayerGoldResp		= 1026;	//获取玩家金币返回
+	LOGIN2DB_GetVIPConfig			= 1027;	//获取VIP配置
+	DB2LOGIN_GetVIPConfigResp		= 1028;	//获取VIP配置返回
+	LOGIN2DB_GetHitCoding			= 1029;	//获取玩家打码量
+	DB2LOGIN_GetHitCodingResp		= 1030;	//获取玩家打码量返回
+	LOGIN2DB_VIPUpgrade				= 1031;	//vip升级
+	DB2LOGIN_VIPUpgradeResp			= 1032;	//vip升级返回
 	
 	//2001-3000 GameServer2DB
 	GAME2DB_Login					= 2001;	//玩家登录游戏

@@ -562,6 +562,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::MsgVIPInfo, vip_level_),
   PROTOBUF_FIELD_OFFSET(::MsgVIPInfo, need_score_),
   PROTOBUF_FIELD_OFFSET(::MsgVIPInfo, turntable_num_),
   PROTOBUF_FIELD_OFFSET(::MsgVIPInfo, trumpet_discount_),
@@ -606,8 +607,8 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 151, -1, sizeof(::MsgQueryRebateRecord)},
   { 159, -1, sizeof(::MsgForgetPassword)},
   { 168, -1, sizeof(::MsgVIPInfo)},
-  { 183, -1, sizeof(::MsgVIPConfig)},
-  { 189, -1, sizeof(::MsgUpgradeVIP)},
+  { 184, -1, sizeof(::MsgVIPConfig)},
+  { 190, -1, sizeof(::MsgUpgradeVIP)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -682,16 +683,16 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "\022\026\n\016rechargeUserId\030\001 \001(\005\022\026\n\016rechargeAmou"
   "nt\030\002 \001(\005\022\016\n\006rebate\030\003 \001(\005\"[\n\021MsgForgetPas"
   "sword\022\023\n\013client_type\030\001 \001(\005\022\r\n\005phone\030\002 \001("
-  "\t\022\014\n\004code\030\003 \001(\005\022\024\n\014new_password\030\004 \001(\t\"\343\001"
-  "\n\nMsgVIPInfo\022\022\n\nneed_score\030\001 \001(\003\022\025\n\rturn"
-  "table_num\030\002 \001(\005\022\030\n\020trumpet_discount\030\003 \001("
-  "\005\022\026\n\016check_addition\030\004 \001(\005\022\026\n\016share_addit"
-  "ion\030\005 \001(\005\022\022\n\nworld_chat\030\006 \001(\010\022\016\n\006avatar\030"
-  "\007 \001(\005\022\024\n\014avatar_frame\030\010 \001(\005\022\022\n\naward_gol"
-  "d\030\t \001(\005\022\022\n\none_to_one\030\n \001(\010\"-\n\014MsgVIPCon"
-  "fig\022\035\n\010vip_info\030\001 \003(\0132\013.MsgVIPInfo\"/\n\rMs"
-  "gUpgradeVIP\022\020\n\010res_code\030\001 \001(\005\022\014\n\004gold\030\002 "
-  "\001(\003b\006proto3"
+  "\t\022\014\n\004code\030\003 \001(\005\022\024\n\014new_password\030\004 \001(\t\"\366\001"
+  "\n\nMsgVIPInfo\022\021\n\tvip_level\030\001 \001(\005\022\022\n\nneed_"
+  "score\030\002 \001(\003\022\025\n\rturntable_num\030\003 \001(\005\022\030\n\020tr"
+  "umpet_discount\030\004 \001(\005\022\026\n\016check_addition\030\005"
+  " \001(\005\022\026\n\016share_addition\030\006 \001(\005\022\022\n\nworld_ch"
+  "at\030\007 \001(\010\022\016\n\006avatar\030\010 \001(\005\022\024\n\014avatar_frame"
+  "\030\t \001(\005\022\022\n\naward_gold\030\n \001(\005\022\022\n\none_to_one"
+  "\030\013 \001(\010\"-\n\014MsgVIPConfig\022\035\n\010vip_info\030\001 \003(\013"
+  "2\013.MsgVIPInfo\"/\n\rMsgUpgradeVIP\022\020\n\010res_co"
+  "de\030\001 \001(\005\022\014\n\004gold\030\002 \001(\003b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Login_2eproto_deps[1] = {
 };
@@ -720,7 +721,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Login_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Login_2eproto = {
-  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 2251,
+  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 2270,
   &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 21, 0,
   schemas, file_default_instances, TableStruct_Login_2eproto::offsets,
   file_level_metadata_Login_2eproto, 21, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
@@ -6213,72 +6214,79 @@ const char* MsgVIPInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // int64 need_score = 1;
+      // int32 vip_level = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          vip_level_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 need_score = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           need_score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 turntable_num = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+      // int32 turntable_num = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           turntable_num_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 trumpet_discount = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+      // int32 trumpet_discount = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           trumpet_discount_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 check_addition = 4;
-      case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+      // int32 check_addition = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
           check_addition_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 share_addition = 5;
-      case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+      // int32 share_addition = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
           share_addition_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // bool world_chat = 6;
-      case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+      // bool world_chat = 7;
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
           world_chat_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 avatar = 7;
-      case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
+      // int32 avatar = 8;
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
           avatar_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 avatar_frame = 8;
-      case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+      // int32 avatar_frame = 9;
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
           avatar_frame_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 award_gold = 9;
-      case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+      // int32 award_gold = 10;
+      case 10:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
           award_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // bool one_to_one = 10;
-      case 10:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
+      // bool one_to_one = 11;
+      case 11:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 88)) {
           one_to_one_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
@@ -6311,64 +6319,70 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int64 need_score = 1;
+  // int32 vip_level = 1;
+  if (this->vip_level() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_vip_level(), target);
+  }
+
+  // int64 need_score = 2;
   if (this->need_score() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_need_score(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_need_score(), target);
   }
 
-  // int32 turntable_num = 2;
+  // int32 turntable_num = 3;
   if (this->turntable_num() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_turntable_num(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_turntable_num(), target);
   }
 
-  // int32 trumpet_discount = 3;
+  // int32 trumpet_discount = 4;
   if (this->trumpet_discount() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_trumpet_discount(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_trumpet_discount(), target);
   }
 
-  // int32 check_addition = 4;
+  // int32 check_addition = 5;
   if (this->check_addition() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_check_addition(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_check_addition(), target);
   }
 
-  // int32 share_addition = 5;
+  // int32 share_addition = 6;
   if (this->share_addition() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_share_addition(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_share_addition(), target);
   }
 
-  // bool world_chat = 6;
+  // bool world_chat = 7;
   if (this->world_chat() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(6, this->_internal_world_chat(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(7, this->_internal_world_chat(), target);
   }
 
-  // int32 avatar = 7;
+  // int32 avatar = 8;
   if (this->avatar() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(7, this->_internal_avatar(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(8, this->_internal_avatar(), target);
   }
 
-  // int32 avatar_frame = 8;
+  // int32 avatar_frame = 9;
   if (this->avatar_frame() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(8, this->_internal_avatar_frame(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(9, this->_internal_avatar_frame(), target);
   }
 
-  // int32 award_gold = 9;
+  // int32 award_gold = 10;
   if (this->award_gold() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(9, this->_internal_award_gold(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(10, this->_internal_award_gold(), target);
   }
 
-  // bool one_to_one = 10;
+  // bool one_to_one = 11;
   if (this->one_to_one() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(10, this->_internal_one_to_one(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(11, this->_internal_one_to_one(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -6387,66 +6401,73 @@ size_t MsgVIPInfo::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // int64 need_score = 1;
+  // int64 need_score = 2;
   if (this->need_score() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_need_score());
   }
 
-  // int32 turntable_num = 2;
+  // int32 vip_level = 1;
+  if (this->vip_level() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_vip_level());
+  }
+
+  // int32 turntable_num = 3;
   if (this->turntable_num() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_turntable_num());
   }
 
-  // int32 trumpet_discount = 3;
+  // int32 trumpet_discount = 4;
   if (this->trumpet_discount() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_trumpet_discount());
   }
 
-  // int32 check_addition = 4;
+  // int32 check_addition = 5;
   if (this->check_addition() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_check_addition());
   }
 
-  // int32 share_addition = 5;
+  // int32 share_addition = 6;
   if (this->share_addition() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_share_addition());
   }
 
-  // int32 avatar = 7;
+  // int32 avatar = 8;
   if (this->avatar() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_avatar());
   }
 
-  // int32 avatar_frame = 8;
+  // int32 avatar_frame = 9;
   if (this->avatar_frame() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_avatar_frame());
   }
 
-  // bool world_chat = 6;
+  // bool world_chat = 7;
   if (this->world_chat() != 0) {
     total_size += 1 + 1;
   }
 
-  // bool one_to_one = 10;
+  // bool one_to_one = 11;
   if (this->one_to_one() != 0) {
     total_size += 1 + 1;
   }
 
-  // int32 award_gold = 9;
+  // int32 award_gold = 10;
   if (this->award_gold() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
@@ -6486,6 +6507,9 @@ void MsgVIPInfo::MergeFrom(const MsgVIPInfo& from) {
 
   if (from.need_score() != 0) {
     _internal_set_need_score(from._internal_need_score());
+  }
+  if (from.vip_level() != 0) {
+    _internal_set_vip_level(from._internal_vip_level());
   }
   if (from.turntable_num() != 0) {
     _internal_set_turntable_num(from._internal_turntable_num());

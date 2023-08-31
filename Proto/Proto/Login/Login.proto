@@ -171,16 +171,17 @@ message MsgForgetPassword
 //VIP信息
 message MsgVIPInfo
 {
-	int64		need_score					= 1;	//需求打码量
-	int32		turntable_num				= 2;	//转盘次数上线
-	int32		trumpet_discount			= 3;	//世界喇叭扣费减少(百分比)
-	int32		check_addition				= 4;	//7天签到奖励加成(百分比)
-	int32		share_addition				= 5;	//分享奖励加成(百分比)
-	bool		world_chat					= 6;	//是否可以世界聊天
-	int32		avatar						= 7;	//头像奖励
-	int32		avatar_frame				= 8;	//头像框奖励
-	int32		award_gold					= 9;	//奖励金币
-	bool		one_to_one					= 10;	//一对一服务
+	int32		vip_level					= 1;	//vip等级
+	int64		need_score					= 2;	//需求打码量
+	int32		turntable_num				= 3;	//转盘次数上线
+	int32		trumpet_discount			= 4;	//世界喇叭扣费减少(百分比)
+	int32		check_addition				= 5;	//7天签到奖励加成(百分比)
+	int32		share_addition				= 6;	//分享奖励加成(百分比)
+	bool		world_chat					= 7;	//是否可以世界聊天
+	int32		avatar						= 8;	//头像奖励
+	int32		avatar_frame				= 9;	//头像框奖励
+	int32		award_gold					= 10;	//奖励金币
+	bool		one_to_one					= 11;	//一对一服务
 }
 
 //vip配置信息
