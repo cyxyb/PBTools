@@ -47,7 +47,7 @@ struct TableStruct_LGDDY_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[4]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[5]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -55,6 +55,9 @@ struct TableStruct_LGDDY_2eproto {
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_LGDDY_2eproto;
 namespace LGDDY {
+class CS_Start;
+class CS_StartDefaultTypeInternal;
+extern CS_StartDefaultTypeInternal _CS_Start_default_instance_;
 class SC_CheckOut;
 class SC_CheckOutDefaultTypeInternal;
 extern SC_CheckOutDefaultTypeInternal _SC_CheckOut_default_instance_;
@@ -69,6 +72,7 @@ class SC_stSmallGameInfoDefaultTypeInternal;
 extern SC_stSmallGameInfoDefaultTypeInternal _SC_stSmallGameInfo_default_instance_;
 }  // namespace LGDDY
 PROTOBUF_NAMESPACE_OPEN
+template<> ::LGDDY::CS_Start* Arena::CreateMaybeMessage<::LGDDY::CS_Start>(Arena*);
 template<> ::LGDDY::SC_CheckOut* Arena::CreateMaybeMessage<::LGDDY::SC_CheckOut>(Arena*);
 template<> ::LGDDY::SC_SceneInfo* Arena::CreateMaybeMessage<::LGDDY::SC_SceneInfo>(Arena*);
 template<> ::LGDDY::SC_SyncGold* Arena::CreateMaybeMessage<::LGDDY::SC_SyncGold>(Arena*);
@@ -371,6 +375,153 @@ class SC_CheckOut PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
+class CS_Start PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LGDDY.CS_Start) */ {
+ public:
+  inline CS_Start() : CS_Start(nullptr) {}
+  virtual ~CS_Start();
+
+  CS_Start(const CS_Start& from);
+  CS_Start(CS_Start&& from) noexcept
+    : CS_Start() {
+    *this = ::std::move(from);
+  }
+
+  inline CS_Start& operator=(const CS_Start& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CS_Start& operator=(CS_Start&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const CS_Start& default_instance();
+
+  static inline const CS_Start* internal_default_instance() {
+    return reinterpret_cast<const CS_Start*>(
+               &_CS_Start_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    1;
+
+  friend void swap(CS_Start& a, CS_Start& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CS_Start* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CS_Start* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline CS_Start* New() const final {
+    return CreateMaybeMessage<CS_Start>(nullptr);
+  }
+
+  CS_Start* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<CS_Start>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const CS_Start& from);
+  void MergeFrom(const CS_Start& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CS_Start* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "LGDDY.CS_Start";
+  }
+  protected:
+  explicit CS_Start(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_LGDDY_2eproto);
+    return ::descriptor_table_LGDDY_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kLineNumFieldNumber = 1,
+    kLineGoldFieldNumber = 2,
+  };
+  // int32 line_num = 1;
+  void clear_line_num();
+  ::PROTOBUF_NAMESPACE_ID::int32 line_num() const;
+  void set_line_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_line_num() const;
+  void _internal_set_line_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 line_gold = 2;
+  void clear_line_gold();
+  ::PROTOBUF_NAMESPACE_ID::int32 line_gold() const;
+  void set_line_gold(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_line_gold() const;
+  void _internal_set_line_gold(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:LGDDY.CS_Start)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 line_num_;
+  ::PROTOBUF_NAMESPACE_ID::int32 line_gold_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_LGDDY_2eproto;
+};
+// -------------------------------------------------------------------
+
 class SC_SyncGold PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LGDDY.SC_SyncGold) */ {
  public:
@@ -412,7 +563,7 @@ class SC_SyncGold PROTOBUF_FINAL :
                &_SC_SyncGold_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    1;
+    2;
 
   friend void swap(SC_SyncGold& a, SC_SyncGold& b) {
     a.Swap(&b);
@@ -570,7 +721,7 @@ class SC_SceneInfo PROTOBUF_FINAL :
                &_SC_SceneInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    2;
+    3;
 
   friend void swap(SC_SceneInfo& a, SC_SceneInfo& b) {
     a.Swap(&b);
@@ -775,7 +926,7 @@ class SC_stSmallGameInfo PROTOBUF_FINAL :
                &_SC_stSmallGameInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    3;
+    4;
 
   friend void swap(SC_stSmallGameInfo& a, SC_stSmallGameInfo& b) {
     a.Swap(&b);
@@ -1237,6 +1388,50 @@ inline void SC_CheckOut::set_small_game_times(::PROTOBUF_NAMESPACE_ID::int32 val
 
 // -------------------------------------------------------------------
 
+// CS_Start
+
+// int32 line_num = 1;
+inline void CS_Start::clear_line_num() {
+  line_num_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CS_Start::_internal_line_num() const {
+  return line_num_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CS_Start::line_num() const {
+  // @@protoc_insertion_point(field_get:LGDDY.CS_Start.line_num)
+  return _internal_line_num();
+}
+inline void CS_Start::_internal_set_line_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  line_num_ = value;
+}
+inline void CS_Start::set_line_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_line_num(value);
+  // @@protoc_insertion_point(field_set:LGDDY.CS_Start.line_num)
+}
+
+// int32 line_gold = 2;
+inline void CS_Start::clear_line_gold() {
+  line_gold_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CS_Start::_internal_line_gold() const {
+  return line_gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CS_Start::line_gold() const {
+  // @@protoc_insertion_point(field_get:LGDDY.CS_Start.line_gold)
+  return _internal_line_gold();
+}
+inline void CS_Start::_internal_set_line_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  line_gold_ = value;
+}
+inline void CS_Start::set_line_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_line_gold(value);
+  // @@protoc_insertion_point(field_set:LGDDY.CS_Start.line_gold)
+}
+
+// -------------------------------------------------------------------
+
 // SC_SyncGold
 
 // int64 gold = 1;
@@ -1664,6 +1859,8 @@ inline void SC_stSmallGameInfo::set_line_gold(::PROTOBUF_NAMESPACE_ID::int32 val
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

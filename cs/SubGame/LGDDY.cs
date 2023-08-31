@@ -29,26 +29,28 @@ namespace LGDDY {
             "dW50GAIgAygFEhIKCndpbl9wZWlfbHYYAyABKAUSEAoIY3VyX2dvbGQYBCAB",
             "KAMSEAoId2luX2dvbGQYBSABKAUSFgoOdG90YWxfd2luX2dvbGQYBiABKAUS",
             "EgoKZnJlZV90aW1lcxgHIAEoBRIQCghtdWx0aXBsZRgIIAEoBRIVCg1qYWNr",
-            "cG90X3ZhbHVlGAkgASgFEhgKEHNtYWxsX2dhbWVfdGltZXMYCiABKAUiSgoL",
-            "U0NfU3luY0dvbGQSDAoEZ29sZBgBIAEoAxIVCg1sYXN0X3dpbl9nb2xkGAIg",
-            "ASgFEhYKDnRvdGFsX3dpbl9nb2xkGAMgASgFIpoBCgxTQ19TY2VuZUluZm8S",
-            "GgoSbGVmdF9mcmVlX2dhbWVfY250GAEgASgFEhAKCG11bHRpcGxlGAIgASgF",
-            "EhIKCmJldG9uX2dvbGQYBCADKAUSGwoTZnJlZV9nYW1lX2NvdF90b3RhbBgF",
-            "IAEoBRIWCg5mcmVlX2dhbWVfZ29sZBgGIAEoBRITCgtzbWFsbF9jb3VudBgH",
-            "IAEoBSLfAQoSU0Nfc3RTbWFsbEdhbWVJbmZvEh4KFnNtYWxsX2dhbWVfdGF0",
-            "b2xfY29udXQYASABKAUSGAoQc21hbGxfZ2FtZV9jb251dBgCIAEoBRIXCg9n",
-            "YW1lX3RhdG9sX2dvbGQYAyABKAUSEQoJaWNvbl90eXBlGAQgASgFEhcKD2lj",
-            "b25fdHlwZV9jb251dBgFIAEoBRISCgppY29uX3R5cGU0GAYgAygFEhEKCWdh",
-            "bWVfZ29sZBgHIAEoBRIQCghnYW1lX2VuZBgIIAEoCBIRCglsaW5lX2dvbGQY",
-            "CSABKAUqywEKC0VNc2dJRExHRERZEhUKEUxBQkFfTVNHX0NTX1NUQVJUEAAS",
-            "GgoWTEFCQV9NU0dfQ1NfU01BTExfR0FNRRABEhUKEUxBQkFfTVNHX1NDX1NU",
-            "QVJUEAISGAoUTEFCQV9NU0dfU0NfQ0hFQ0tPVVQQAxIZChVMQUJBX01TR19T",
-            "Q19TWU5DX0dPTEQQBBIaChZMQUJBX01TR19TQ19TTUFMTF9HQU1FEAUSIQod",
-            "TEFCQV9NU0dfU0NfVVBEQVRFX1BSSVpFX1BPT0wQBmIGcHJvdG8z"));
+            "cG90X3ZhbHVlGAkgASgFEhgKEHNtYWxsX2dhbWVfdGltZXMYCiABKAUiLwoI",
+            "Q1NfU3RhcnQSEAoIbGluZV9udW0YASABKAUSEQoJbGluZV9nb2xkGAIgASgF",
+            "IkoKC1NDX1N5bmNHb2xkEgwKBGdvbGQYASABKAMSFQoNbGFzdF93aW5fZ29s",
+            "ZBgCIAEoBRIWCg50b3RhbF93aW5fZ29sZBgDIAEoBSKaAQoMU0NfU2NlbmVJ",
+            "bmZvEhoKEmxlZnRfZnJlZV9nYW1lX2NudBgBIAEoBRIQCghtdWx0aXBsZRgC",
+            "IAEoBRISCgpiZXRvbl9nb2xkGAQgAygFEhsKE2ZyZWVfZ2FtZV9jb3RfdG90",
+            "YWwYBSABKAUSFgoOZnJlZV9nYW1lX2dvbGQYBiABKAUSEwoLc21hbGxfY291",
+            "bnQYByABKAUi3wEKElNDX3N0U21hbGxHYW1lSW5mbxIeChZzbWFsbF9nYW1l",
+            "X3RhdG9sX2NvbnV0GAEgASgFEhgKEHNtYWxsX2dhbWVfY29udXQYAiABKAUS",
+            "FwoPZ2FtZV90YXRvbF9nb2xkGAMgASgFEhEKCWljb25fdHlwZRgEIAEoBRIX",
+            "Cg9pY29uX3R5cGVfY29udXQYBSABKAUSEgoKaWNvbl90eXBlNBgGIAMoBRIR",
+            "CglnYW1lX2dvbGQYByABKAUSEAoIZ2FtZV9lbmQYCCABKAgSEQoJbGluZV9n",
+            "b2xkGAkgASgFKssBCgtFTXNnSURMR0REWRIVChFMQUJBX01TR19DU19TVEFS",
+            "VBAAEhoKFkxBQkFfTVNHX0NTX1NNQUxMX0dBTUUQARIVChFMQUJBX01TR19T",
+            "Q19TVEFSVBACEhgKFExBQkFfTVNHX1NDX0NIRUNLT1VUEAMSGQoVTEFCQV9N",
+            "U0dfU0NfU1lOQ19HT0xEEAQSGgoWTEFCQV9NU0dfU0NfU01BTExfR0FNRRAF",
+            "EiEKHUxBQkFfTVNHX1NDX1VQREFURV9QUklaRV9QT09MEAZiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::LGDDY.EMsgIDLGDDY), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::LGDDY.SC_CheckOut), global::LGDDY.SC_CheckOut.Parser, new[]{ "Result", "RewardLineFruitCount", "WinPeiLv", "CurGold", "WinGold", "TotalWinGold", "FreeTimes", "Multiple", "JackpotValue", "SmallGameTimes" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::LGDDY.CS_Start), global::LGDDY.CS_Start.Parser, new[]{ "LineNum", "LineGold" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::LGDDY.SC_SyncGold), global::LGDDY.SC_SyncGold.Parser, new[]{ "Gold", "LastWinGold", "TotalWinGold" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::LGDDY.SC_SceneInfo), global::LGDDY.SC_SceneInfo.Parser, new[]{ "LeftFreeGameCnt", "Multiple", "BetonGold", "FreeGameCotTotal", "FreeGameGold", "SmallCount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::LGDDY.SC_stSmallGameInfo), global::LGDDY.SC_stSmallGameInfo.Parser, new[]{ "SmallGameTatolConut", "SmallGameConut", "GameTatolGold", "IconType", "IconTypeConut", "IconType4", "GameGold", "GameEnd", "LineGold" }, null, null, null, null)
@@ -60,7 +62,7 @@ namespace LGDDY {
   #region Enums
   public enum EMsgIDLGDDY {
     /// <summary>
-    ///游戏开始(MsgCommonN32)
+    ///游戏开始(CS_Start)
     /// </summary>
     [pbr::OriginalName("LABA_MSG_CS_START")] LabaMsgCsStart = 0,
     /// <summary>
@@ -601,6 +603,223 @@ namespace LGDDY {
   }
 
   /// <summary>
+  ///开始
+  /// </summary>
+  public sealed partial class CS_Start : pb::IMessage<CS_Start>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CS_Start> _parser = new pb::MessageParser<CS_Start>(() => new CS_Start());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CS_Start> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::LGDDY.LGDDYReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CS_Start() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CS_Start(CS_Start other) : this() {
+      lineNum_ = other.lineNum_;
+      lineGold_ = other.lineGold_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CS_Start Clone() {
+      return new CS_Start(this);
+    }
+
+    /// <summary>Field number for the "line_num" field.</summary>
+    public const int LineNumFieldNumber = 1;
+    private int lineNum_;
+    /// <summary>
+    ///未使用
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int LineNum {
+      get { return lineNum_; }
+      set {
+        lineNum_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "line_gold" field.</summary>
+    public const int LineGoldFieldNumber = 2;
+    private int lineGold_;
+    /// <summary>
+    ///下注金额
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int LineGold {
+      get { return lineGold_; }
+      set {
+        lineGold_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CS_Start);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CS_Start other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (LineNum != other.LineNum) return false;
+      if (LineGold != other.LineGold) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (LineNum != 0) hash ^= LineNum.GetHashCode();
+      if (LineGold != 0) hash ^= LineGold.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (LineNum != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(LineNum);
+      }
+      if (LineGold != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(LineGold);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (LineNum != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(LineNum);
+      }
+      if (LineGold != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(LineGold);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (LineNum != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(LineNum);
+      }
+      if (LineGold != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(LineGold);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CS_Start other) {
+      if (other == null) {
+        return;
+      }
+      if (other.LineNum != 0) {
+        LineNum = other.LineNum;
+      }
+      if (other.LineGold != 0) {
+        LineGold = other.LineGold;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            LineNum = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            LineGold = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            LineNum = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            LineGold = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
   ///同步金币
   /// </summary>
   public sealed partial class SC_SyncGold : pb::IMessage<SC_SyncGold>
@@ -615,7 +834,7 @@ namespace LGDDY {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::LGDDY.LGDDYReflection.Descriptor.MessageTypes[1]; }
+      get { return global::LGDDY.LGDDYReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -868,7 +1087,7 @@ namespace LGDDY {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::LGDDY.LGDDYReflection.Descriptor.MessageTypes[2]; }
+      get { return global::LGDDY.LGDDYReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1229,7 +1448,7 @@ namespace LGDDY {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::LGDDY.LGDDYReflection.Descriptor.MessageTypes[3]; }
+      get { return global::LGDDY.LGDDYReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

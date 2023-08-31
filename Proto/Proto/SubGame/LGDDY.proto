@@ -4,7 +4,7 @@ package LGDDY;
 
 enum EMsgIDLGDDY
 {
-	LABA_MSG_CS_START				= 0;			//游戏开始(MsgCommonN32)
+	LABA_MSG_CS_START				= 0;			//游戏开始(CS_Start)
 	LABA_MSG_CS_SMALL_GAME			= 1;			//小游戏(MsgCommonN32)
 	LABA_MSG_SC_START				= 2;			//游戏开始(MsgCommonN32)//1为未压线,2为未压钱,3为钱不够,4-CD,5-单线押注不对
 	LABA_MSG_SC_CHECKOUT			= 3;			//游戏结果(SC_CheckOut)
@@ -26,7 +26,12 @@ message SC_CheckOut
 	int32 			jackpot_value			= 9;	//奖金池奖
 	int32 			small_game_times		= 10;	//小游戏次数
 };
-
+//开始
+message CS_Start 
+{
+	int32 line_num 	= 1;		//未使用
+	int32 line_gold = 2;		//下注金额
+};
 //同步金币
 message SC_SyncGold
 {

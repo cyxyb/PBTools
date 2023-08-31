@@ -19,6 +19,10 @@ class SC_CheckOutDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SC_CheckOut> _instance;
 } _SC_CheckOut_default_instance_;
+class CS_StartDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CS_Start> _instance;
+} _CS_Start_default_instance_;
 class SC_SyncGoldDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SC_SyncGold> _instance;
@@ -32,6 +36,19 @@ class SC_stSmallGameInfoDefaultTypeInternal {
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SC_stSmallGameInfo> _instance;
 } _SC_stSmallGameInfo_default_instance_;
 }  // namespace LGDDY
+static void InitDefaultsscc_info_CS_Start_LGDDY_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::LGDDY::_CS_Start_default_instance_;
+    new (ptr) ::LGDDY::CS_Start();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_CS_Start_LGDDY_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_CS_Start_LGDDY_2eproto}, {}};
+
 static void InitDefaultsscc_info_SC_CheckOut_LGDDY_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -84,7 +101,7 @@ static void InitDefaultsscc_info_SC_stSmallGameInfo_LGDDY_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SC_stSmallGameInfo_LGDDY_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SC_stSmallGameInfo_LGDDY_2eproto}, {}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_LGDDY_2eproto[4];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_LGDDY_2eproto[5];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_LGDDY_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_LGDDY_2eproto = nullptr;
 
@@ -104,6 +121,13 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_LGDDY_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::LGDDY::SC_CheckOut, multiple_),
   PROTOBUF_FIELD_OFFSET(::LGDDY::SC_CheckOut, jackpot_value_),
   PROTOBUF_FIELD_OFFSET(::LGDDY::SC_CheckOut, small_game_times_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::LGDDY::CS_Start, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::LGDDY::CS_Start, line_num_),
+  PROTOBUF_FIELD_OFFSET(::LGDDY::CS_Start, line_gold_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::LGDDY::SC_SyncGold, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -140,13 +164,15 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_LGDDY_2eproto::offsets[] PROTO
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::LGDDY::SC_CheckOut)},
-  { 15, -1, sizeof(::LGDDY::SC_SyncGold)},
-  { 23, -1, sizeof(::LGDDY::SC_SceneInfo)},
-  { 34, -1, sizeof(::LGDDY::SC_stSmallGameInfo)},
+  { 15, -1, sizeof(::LGDDY::CS_Start)},
+  { 22, -1, sizeof(::LGDDY::SC_SyncGold)},
+  { 30, -1, sizeof(::LGDDY::SC_SceneInfo)},
+  { 41, -1, sizeof(::LGDDY::SC_stSmallGameInfo)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::LGDDY::_SC_CheckOut_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::LGDDY::_CS_Start_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::LGDDY::_SC_SyncGold_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::LGDDY::_SC_SceneInfo_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::LGDDY::_SC_stSmallGameInfo_default_instance_),
@@ -159,28 +185,30 @@ const char descriptor_table_protodef_LGDDY_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "\001(\003\022\020\n\010win_gold\030\005 \001(\005\022\026\n\016total_win_gold\030"
   "\006 \001(\005\022\022\n\nfree_times\030\007 \001(\005\022\020\n\010multiple\030\010 "
   "\001(\005\022\025\n\rjackpot_value\030\t \001(\005\022\030\n\020small_game"
-  "_times\030\n \001(\005\"J\n\013SC_SyncGold\022\014\n\004gold\030\001 \001("
-  "\003\022\025\n\rlast_win_gold\030\002 \001(\005\022\026\n\016total_win_go"
-  "ld\030\003 \001(\005\"\232\001\n\014SC_SceneInfo\022\032\n\022left_free_g"
-  "ame_cnt\030\001 \001(\005\022\020\n\010multiple\030\002 \001(\005\022\022\n\nbeton"
-  "_gold\030\004 \003(\005\022\033\n\023free_game_cot_total\030\005 \001(\005"
-  "\022\026\n\016free_game_gold\030\006 \001(\005\022\023\n\013small_count\030"
-  "\007 \001(\005\"\337\001\n\022SC_stSmallGameInfo\022\036\n\026small_ga"
-  "me_tatol_conut\030\001 \001(\005\022\030\n\020small_game_conut"
-  "\030\002 \001(\005\022\027\n\017game_tatol_gold\030\003 \001(\005\022\021\n\ticon_"
-  "type\030\004 \001(\005\022\027\n\017icon_type_conut\030\005 \001(\005\022\022\n\ni"
-  "con_type4\030\006 \003(\005\022\021\n\tgame_gold\030\007 \001(\005\022\020\n\010ga"
-  "me_end\030\010 \001(\010\022\021\n\tline_gold\030\t \001(\005*\313\001\n\013EMsg"
-  "IDLGDDY\022\025\n\021LABA_MSG_CS_START\020\000\022\032\n\026LABA_M"
-  "SG_CS_SMALL_GAME\020\001\022\025\n\021LABA_MSG_SC_START\020"
-  "\002\022\030\n\024LABA_MSG_SC_CHECKOUT\020\003\022\031\n\025LABA_MSG_"
-  "SC_SYNC_GOLD\020\004\022\032\n\026LABA_MSG_SC_SMALL_GAME"
-  "\020\005\022!\n\035LABA_MSG_SC_UPDATE_PRIZE_POOL\020\006b\006p"
-  "roto3"
+  "_times\030\n \001(\005\"/\n\010CS_Start\022\020\n\010line_num\030\001 \001"
+  "(\005\022\021\n\tline_gold\030\002 \001(\005\"J\n\013SC_SyncGold\022\014\n\004"
+  "gold\030\001 \001(\003\022\025\n\rlast_win_gold\030\002 \001(\005\022\026\n\016tot"
+  "al_win_gold\030\003 \001(\005\"\232\001\n\014SC_SceneInfo\022\032\n\022le"
+  "ft_free_game_cnt\030\001 \001(\005\022\020\n\010multiple\030\002 \001(\005"
+  "\022\022\n\nbeton_gold\030\004 \003(\005\022\033\n\023free_game_cot_to"
+  "tal\030\005 \001(\005\022\026\n\016free_game_gold\030\006 \001(\005\022\023\n\013sma"
+  "ll_count\030\007 \001(\005\"\337\001\n\022SC_stSmallGameInfo\022\036\n"
+  "\026small_game_tatol_conut\030\001 \001(\005\022\030\n\020small_g"
+  "ame_conut\030\002 \001(\005\022\027\n\017game_tatol_gold\030\003 \001(\005"
+  "\022\021\n\ticon_type\030\004 \001(\005\022\027\n\017icon_type_conut\030\005"
+  " \001(\005\022\022\n\nicon_type4\030\006 \003(\005\022\021\n\tgame_gold\030\007 "
+  "\001(\005\022\020\n\010game_end\030\010 \001(\010\022\021\n\tline_gold\030\t \001(\005"
+  "*\313\001\n\013EMsgIDLGDDY\022\025\n\021LABA_MSG_CS_START\020\000\022"
+  "\032\n\026LABA_MSG_CS_SMALL_GAME\020\001\022\025\n\021LABA_MSG_"
+  "SC_START\020\002\022\030\n\024LABA_MSG_SC_CHECKOUT\020\003\022\031\n\025"
+  "LABA_MSG_SC_SYNC_GOLD\020\004\022\032\n\026LABA_MSG_SC_S"
+  "MALL_GAME\020\005\022!\n\035LABA_MSG_SC_UPDATE_PRIZE_"
+  "POOL\020\006b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_LGDDY_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_LGDDY_2eproto_sccs[4] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_LGDDY_2eproto_sccs[5] = {
+  &scc_info_CS_Start_LGDDY_2eproto.base,
   &scc_info_SC_CheckOut_LGDDY_2eproto.base,
   &scc_info_SC_SceneInfo_LGDDY_2eproto.base,
   &scc_info_SC_SyncGold_LGDDY_2eproto.base,
@@ -188,10 +216,10 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_LGD
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_LGDDY_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_LGDDY_2eproto = {
-  false, false, descriptor_table_protodef_LGDDY_2eproto, "LGDDY.proto", 925,
-  &descriptor_table_LGDDY_2eproto_once, descriptor_table_LGDDY_2eproto_sccs, descriptor_table_LGDDY_2eproto_deps, 4, 0,
+  false, false, descriptor_table_protodef_LGDDY_2eproto, "LGDDY.proto", 974,
+  &descriptor_table_LGDDY_2eproto_once, descriptor_table_LGDDY_2eproto_sccs, descriptor_table_LGDDY_2eproto_deps, 5, 0,
   schemas, file_default_instances, TableStruct_LGDDY_2eproto::offsets,
-  file_level_metadata_LGDDY_2eproto, 4, file_level_enum_descriptors_LGDDY_2eproto, file_level_service_descriptors_LGDDY_2eproto,
+  file_level_metadata_LGDDY_2eproto, 5, file_level_enum_descriptors_LGDDY_2eproto, file_level_service_descriptors_LGDDY_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -658,6 +686,235 @@ void SC_CheckOut::InternalSwap(SC_CheckOut* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SC_CheckOut::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class CS_Start::_Internal {
+ public:
+};
+
+CS_Start::CS_Start(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:LGDDY.CS_Start)
+}
+CS_Start::CS_Start(const CS_Start& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&line_num_, &from.line_num_,
+    static_cast<size_t>(reinterpret_cast<char*>(&line_gold_) -
+    reinterpret_cast<char*>(&line_num_)) + sizeof(line_gold_));
+  // @@protoc_insertion_point(copy_constructor:LGDDY.CS_Start)
+}
+
+void CS_Start::SharedCtor() {
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&line_num_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&line_gold_) -
+      reinterpret_cast<char*>(&line_num_)) + sizeof(line_gold_));
+}
+
+CS_Start::~CS_Start() {
+  // @@protoc_insertion_point(destructor:LGDDY.CS_Start)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void CS_Start::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void CS_Start::ArenaDtor(void* object) {
+  CS_Start* _this = reinterpret_cast< CS_Start* >(object);
+  (void)_this;
+}
+void CS_Start::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void CS_Start::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const CS_Start& CS_Start::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_CS_Start_LGDDY_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void CS_Start::Clear() {
+// @@protoc_insertion_point(message_clear_start:LGDDY.CS_Start)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&line_num_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&line_gold_) -
+      reinterpret_cast<char*>(&line_num_)) + sizeof(line_gold_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* CS_Start::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 line_num = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          line_num_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 line_gold = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          line_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* CS_Start::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:LGDDY.CS_Start)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 line_num = 1;
+  if (this->line_num() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_line_num(), target);
+  }
+
+  // int32 line_gold = 2;
+  if (this->line_gold() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_line_gold(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:LGDDY.CS_Start)
+  return target;
+}
+
+size_t CS_Start::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:LGDDY.CS_Start)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // int32 line_num = 1;
+  if (this->line_num() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_line_num());
+  }
+
+  // int32 line_gold = 2;
+  if (this->line_gold() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_line_gold());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void CS_Start::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:LGDDY.CS_Start)
+  GOOGLE_DCHECK_NE(&from, this);
+  const CS_Start* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CS_Start>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:LGDDY.CS_Start)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:LGDDY.CS_Start)
+    MergeFrom(*source);
+  }
+}
+
+void CS_Start::MergeFrom(const CS_Start& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:LGDDY.CS_Start)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.line_num() != 0) {
+    _internal_set_line_num(from._internal_line_num());
+  }
+  if (from.line_gold() != 0) {
+    _internal_set_line_gold(from._internal_line_gold());
+  }
+}
+
+void CS_Start::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:LGDDY.CS_Start)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void CS_Start::CopyFrom(const CS_Start& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:LGDDY.CS_Start)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool CS_Start::IsInitialized() const {
+  return true;
+}
+
+void CS_Start::InternalSwap(CS_Start* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(CS_Start, line_gold_)
+      + sizeof(CS_Start::line_gold_)
+      - PROTOBUF_FIELD_OFFSET(CS_Start, line_num_)>(
+          reinterpret_cast<char*>(&line_num_),
+          reinterpret_cast<char*>(&other->line_num_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata CS_Start::GetMetadata() const {
   return GetMetadataStatic();
 }
 
@@ -1660,6 +1917,9 @@ void SC_stSmallGameInfo::InternalSwap(SC_stSmallGameInfo* other) {
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::LGDDY::SC_CheckOut* Arena::CreateMaybeMessage< ::LGDDY::SC_CheckOut >(Arena* arena) {
   return Arena::CreateMessageInternal< ::LGDDY::SC_CheckOut >(arena);
+}
+template<> PROTOBUF_NOINLINE ::LGDDY::CS_Start* Arena::CreateMaybeMessage< ::LGDDY::CS_Start >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::LGDDY::CS_Start >(arena);
 }
 template<> PROTOBUF_NOINLINE ::LGDDY::SC_SyncGold* Arena::CreateMaybeMessage< ::LGDDY::SC_SyncGold >(Arena* arena) {
   return Arena::CreateMessageInternal< ::LGDDY::SC_SyncGold >(arena);
