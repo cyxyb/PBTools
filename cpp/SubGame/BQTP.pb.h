@@ -442,13 +442,13 @@ class CMD_3D_SC_Result PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_hit_icon();
 
-  // int32 win_gold = 3;
+  // int64 win_gold = 3;
   void clear_win_gold();
-  ::PROTOBUF_NAMESPACE_ID::int32 win_gold() const;
-  void set_win_gold(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int64 win_gold() const;
+  void set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_win_gold() const;
-  void _internal_set_win_gold(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_win_gold() const;
+  void _internal_set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
   // int32 free_count = 4;
@@ -489,7 +489,7 @@ class CMD_3D_SC_Result PROTOBUF_FINAL :
   mutable std::atomic<int> _icon_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > hit_icon_;
   mutable std::atomic<int> _hit_icon_cached_byte_size_;
-  ::PROTOBUF_NAMESPACE_ID::int32 win_gold_;
+  ::PROTOBUF_NAMESPACE_ID::int64 win_gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 free_count_;
   ::PROTOBUF_NAMESPACE_ID::int32 rerun_;
   ::PROTOBUF_NAMESPACE_ID::int32 special_wild_;
@@ -712,22 +712,22 @@ CMD_3D_SC_Result::mutable_hit_icon() {
   return _internal_mutable_hit_icon();
 }
 
-// int32 win_gold = 3;
+// int64 win_gold = 3;
 inline void CMD_3D_SC_Result::clear_win_gold() {
-  win_gold_ = 0;
+  win_gold_ = PROTOBUF_LONGLONG(0);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_3D_SC_Result::_internal_win_gold() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 CMD_3D_SC_Result::_internal_win_gold() const {
   return win_gold_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_3D_SC_Result::win_gold() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 CMD_3D_SC_Result::win_gold() const {
   // @@protoc_insertion_point(field_get:BQTP.CMD_3D_SC_Result.win_gold)
   return _internal_win_gold();
 }
-inline void CMD_3D_SC_Result::_internal_set_win_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void CMD_3D_SC_Result::_internal_set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
   
   win_gold_ = value;
 }
-inline void CMD_3D_SC_Result::set_win_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void CMD_3D_SC_Result::set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_win_gold(value);
   // @@protoc_insertion_point(field_set:BQTP.CMD_3D_SC_Result.win_gold)
 }

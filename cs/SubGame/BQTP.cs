@@ -28,7 +28,7 @@ namespace BQTP {
             "bmZvEhIKCmZyZWVfY291bnQYASABKAUSEgoKY3VycmVuX2JldBgCIAEoBRIL",
             "CgNiZXQYAyADKAUSDQoFcmVydW4YBCABKAUifQoQQ01EXzNEX1NDX1Jlc3Vs",
             "dBIMCgRpY29uGAEgAygFEhAKCGhpdF9pY29uGAIgAygFEhAKCHdpbl9nb2xk",
-            "GAMgASgFEhIKCmZyZWVfY291bnQYBCABKAUSDQoFcmVydW4YBSABKAUSFAoM",
+            "GAMgASgDEhIKCmZyZWVfY291bnQYBCABKAUSDQoFcmVydW4YBSABKAUSFAoM",
             "c3BlY2lhbF93aWxkGAYgASgFKk8KCkVNc2dJREJRVFASFQoRU1VCX0NTX0dB",
             "TUVfU1RBUlQQABITCg9TVUJfU0NfQkVUX0ZBSUwQARIVChFTVUJfU0NfU1RB",
             "UlRfR0FNRRACYgZwcm90bzM="));
@@ -53,7 +53,7 @@ namespace BQTP {
     /// </summary>
     [pbr::OriginalName("SUB_SC_BET_FAIL")] SubScBetFail = 1,
     /// <summary>
-    ///开始游戏
+    ///开始游戏(CMD_3D_SC_Result)
     /// </summary>
     [pbr::OriginalName("SUB_SC_START_GAME")] SubScStartGame = 2,
   }
@@ -418,12 +418,12 @@ namespace BQTP {
 
     /// <summary>Field number for the "win_gold" field.</summary>
     public const int WinGoldFieldNumber = 3;
-    private int winGold_;
+    private long winGold_;
     /// <summary>
     /// 赢得金币
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int WinGold {
+    public long WinGold {
       get { return winGold_; }
       set {
         winGold_ = value;
@@ -499,7 +499,7 @@ namespace BQTP {
       int hash = 1;
       hash ^= icon_.GetHashCode();
       hash ^= hitIcon_.GetHashCode();
-      if (WinGold != 0) hash ^= WinGold.GetHashCode();
+      if (WinGold != 0L) hash ^= WinGold.GetHashCode();
       if (FreeCount != 0) hash ^= FreeCount.GetHashCode();
       if (Rerun != 0) hash ^= Rerun.GetHashCode();
       if (SpecialWild != 0) hash ^= SpecialWild.GetHashCode();
@@ -521,9 +521,9 @@ namespace BQTP {
     #else
       icon_.WriteTo(output, _repeated_icon_codec);
       hitIcon_.WriteTo(output, _repeated_hitIcon_codec);
-      if (WinGold != 0) {
+      if (WinGold != 0L) {
         output.WriteRawTag(24);
-        output.WriteInt32(WinGold);
+        output.WriteInt64(WinGold);
       }
       if (FreeCount != 0) {
         output.WriteRawTag(32);
@@ -548,9 +548,9 @@ namespace BQTP {
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       icon_.WriteTo(ref output, _repeated_icon_codec);
       hitIcon_.WriteTo(ref output, _repeated_hitIcon_codec);
-      if (WinGold != 0) {
+      if (WinGold != 0L) {
         output.WriteRawTag(24);
-        output.WriteInt32(WinGold);
+        output.WriteInt64(WinGold);
       }
       if (FreeCount != 0) {
         output.WriteRawTag(32);
@@ -575,8 +575,8 @@ namespace BQTP {
       int size = 0;
       size += icon_.CalculateSize(_repeated_icon_codec);
       size += hitIcon_.CalculateSize(_repeated_hitIcon_codec);
-      if (WinGold != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(WinGold);
+      if (WinGold != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(WinGold);
       }
       if (FreeCount != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(FreeCount);
@@ -600,7 +600,7 @@ namespace BQTP {
       }
       icon_.Add(other.icon_);
       hitIcon_.Add(other.hitIcon_);
-      if (other.WinGold != 0) {
+      if (other.WinGold != 0L) {
         WinGold = other.WinGold;
       }
       if (other.FreeCount != 0) {
@@ -637,7 +637,7 @@ namespace BQTP {
             break;
           }
           case 24: {
-            WinGold = input.ReadInt32();
+            WinGold = input.ReadInt64();
             break;
           }
           case 32: {
@@ -677,7 +677,7 @@ namespace BQTP {
             break;
           }
           case 24: {
-            WinGold = input.ReadInt32();
+            WinGold = input.ReadInt64();
             break;
           }
           case 32: {

@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+package FLM;
+
+enum EMsgIDFLM
+{
+	SUB_CS_GAME_START = 0;						//开始游戏(MsgCommonN32)
+	SUB_SC_GAME_OVER = 1; 						//游戏结束(CMD_3D_SC_Result)
+	SUB_SC_UPDATE_PRIZE_POOL = 2;				//奖池分数(MsgCommonN32)
+}
+
+message Is_HitIcon
+{
+	repeated bool is_hit_icon = 1;
+}
+
+//场景消息
+message SC_SceneInfo
+{
+	int32				cur_chip 		= 1;
+	repeated int32		chip_list 		= 2;		// 下注列表
+	repeated int32		fu_score 		= 3;		// 福倍数
+	repeated int32		icon 			= 4;		// 桌面结果
+	repeated int32		gold_num 		= 5;		// 金币数量
+	repeated Is_HitIcon	is_hit 			= 6;		// 是否中奖
+	int64				line_win_score 	= 7;		// 普通模式得分
+	int32				free_time 		= 8;		// 免费次数
+	int32				gold_mode_num 	= 9;		// 堆金积玉免费次数
+	int64				total_rate 		= 10;		// 总倍率
+};
+
+// 游戏结果返回
+message CMD_3D_SC_Result
+{
+	repeated int32		icon 			= 1;		// 桌面结果
+	repeated int32		gold_num 		= 2;		// 金币数量
+	repeated Is_HitIcon	is_hit 			= 3;		// 是否中奖
+	int64				line_win_score 	= 4;		// 普通模式得分
+	int32				free_time 		= 5;		// 免费次数
+	int32				gold_mode_num 	= 6;		// 堆金积玉免费次数
+	int64				total_rate 		= 7;		// 总倍率
+};
+
