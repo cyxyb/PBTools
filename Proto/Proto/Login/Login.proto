@@ -32,6 +32,7 @@ message MsgPlayerLoginResp
 	bool		is_drain		= 9;	//是否引流量 0:不是 1:是
 	uint64		coin			= 10;	//玩家金币
 	string		phone_num		= 11;	//手机号
+	int32		vip_level		= 12;	//VIP等级
 }
 
 //修改密码
@@ -165,4 +166,27 @@ message MsgForgetPassword
 	string		phone						= 2;	//电话号码
 	int32		code						= 3;	//验证码
 	string		new_password				= 4;	//新密码
+}
+
+//玩家VIP信息
+message MsgVIPInfo
+{
+	int64		need_score					= 1;	//需求打码量
+	int32		turntable_num				= 2;	//转盘次数上线
+	int32		trumpet_discount			= 3;	//世界喇叭扣费减少(百分比)
+	int32		check_addition				= 4;	//7天签到奖励加成(百分比)
+	int32		share_addition				= 5;	//分享奖励加成(百分比)
+	bool		world_chat					= 6;	//是否可以世界聊天
+	int32		avatar						= 7;	//头像奖励
+	int32		avatar_frame				= 8;	//头像框奖励
+	int32		award_gold					= 9;	//奖励金币
+	bool		one_to_one					= 10;	//一对一服务
+}
+
+//玩家VIP信息
+message MsgUpgradeVIP
+{
+	int32		res_code					= 1;	//返回码(0:成功 非0:失败)
+	int64		gold						= 2;	//玩家当前金币
+	MsgVIPInfo	vip_info					= 3;	//vip信息
 }
