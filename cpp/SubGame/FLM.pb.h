@@ -367,11 +367,12 @@ class SC_SceneInfo PROTOBUF_FINAL :
     kIconFieldNumber = 4,
     kGoldNumFieldNumber = 5,
     kIsHitFieldNumber = 6,
+    kFuTypeFieldNumber = 7,
     kCurChipFieldNumber = 1,
-    kFreeTimeFieldNumber = 8,
-    kLineWinScoreFieldNumber = 7,
-    kTotalRateFieldNumber = 10,
-    kGoldModeNumFieldNumber = 9,
+    kFreeTimeFieldNumber = 9,
+    kLineWinScoreFieldNumber = 8,
+    kTotalRateFieldNumber = 11,
+    kGoldModeNumFieldNumber = 10,
   };
   // repeated int32 chip_list = 2;
   int chip_list_size() const;
@@ -479,6 +480,28 @@ class SC_SceneInfo PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FLM::Is_HitIcon >&
       is_hit() const;
 
+  // repeated int32 fu_type = 7;
+  int fu_type_size() const;
+  private:
+  int _internal_fu_type_size() const;
+  public:
+  void clear_fu_type();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_fu_type(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_fu_type() const;
+  void _internal_add_fu_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_fu_type();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 fu_type(int index) const;
+  void set_fu_type(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_fu_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      fu_type() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_fu_type();
+
   // int32 cur_chip = 1;
   void clear_cur_chip();
   ::PROTOBUF_NAMESPACE_ID::int32 cur_chip() const;
@@ -488,7 +511,7 @@ class SC_SceneInfo PROTOBUF_FINAL :
   void _internal_set_cur_chip(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 free_time = 8;
+  // int32 free_time = 9;
   void clear_free_time();
   ::PROTOBUF_NAMESPACE_ID::int32 free_time() const;
   void set_free_time(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -497,7 +520,7 @@ class SC_SceneInfo PROTOBUF_FINAL :
   void _internal_set_free_time(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int64 line_win_score = 7;
+  // int64 line_win_score = 8;
   void clear_line_win_score();
   ::PROTOBUF_NAMESPACE_ID::int64 line_win_score() const;
   void set_line_win_score(::PROTOBUF_NAMESPACE_ID::int64 value);
@@ -506,7 +529,7 @@ class SC_SceneInfo PROTOBUF_FINAL :
   void _internal_set_line_win_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int64 total_rate = 10;
+  // int64 total_rate = 11;
   void clear_total_rate();
   ::PROTOBUF_NAMESPACE_ID::int64 total_rate() const;
   void set_total_rate(::PROTOBUF_NAMESPACE_ID::int64 value);
@@ -515,7 +538,7 @@ class SC_SceneInfo PROTOBUF_FINAL :
   void _internal_set_total_rate(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int32 gold_mode_num = 9;
+  // int32 gold_mode_num = 10;
   void clear_gold_mode_num();
   ::PROTOBUF_NAMESPACE_ID::int32 gold_mode_num() const;
   void set_gold_mode_num(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -540,6 +563,8 @@ class SC_SceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > gold_num_;
   mutable std::atomic<int> _gold_num_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FLM::Is_HitIcon > is_hit_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > fu_type_;
+  mutable std::atomic<int> _fu_type_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::int32 cur_chip_;
   ::PROTOBUF_NAMESPACE_ID::int32 free_time_;
   ::PROTOBUF_NAMESPACE_ID::int64 line_win_score_;
@@ -1096,7 +1121,54 @@ SC_SceneInfo::is_hit() const {
   return is_hit_;
 }
 
-// int64 line_win_score = 7;
+// repeated int32 fu_type = 7;
+inline int SC_SceneInfo::_internal_fu_type_size() const {
+  return fu_type_.size();
+}
+inline int SC_SceneInfo::fu_type_size() const {
+  return _internal_fu_type_size();
+}
+inline void SC_SceneInfo::clear_fu_type() {
+  fu_type_.Clear();
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::_internal_fu_type(int index) const {
+  return fu_type_.Get(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::fu_type(int index) const {
+  // @@protoc_insertion_point(field_get:FLM.SC_SceneInfo.fu_type)
+  return _internal_fu_type(index);
+}
+inline void SC_SceneInfo::set_fu_type(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  fu_type_.Set(index, value);
+  // @@protoc_insertion_point(field_set:FLM.SC_SceneInfo.fu_type)
+}
+inline void SC_SceneInfo::_internal_add_fu_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  fu_type_.Add(value);
+}
+inline void SC_SceneInfo::add_fu_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_fu_type(value);
+  // @@protoc_insertion_point(field_add:FLM.SC_SceneInfo.fu_type)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+SC_SceneInfo::_internal_fu_type() const {
+  return fu_type_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+SC_SceneInfo::fu_type() const {
+  // @@protoc_insertion_point(field_list:FLM.SC_SceneInfo.fu_type)
+  return _internal_fu_type();
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+SC_SceneInfo::_internal_mutable_fu_type() {
+  return &fu_type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+SC_SceneInfo::mutable_fu_type() {
+  // @@protoc_insertion_point(field_mutable_list:FLM.SC_SceneInfo.fu_type)
+  return _internal_mutable_fu_type();
+}
+
+// int64 line_win_score = 8;
 inline void SC_SceneInfo::clear_line_win_score() {
   line_win_score_ = PROTOBUF_LONGLONG(0);
 }
@@ -1116,7 +1188,7 @@ inline void SC_SceneInfo::set_line_win_score(::PROTOBUF_NAMESPACE_ID::int64 valu
   // @@protoc_insertion_point(field_set:FLM.SC_SceneInfo.line_win_score)
 }
 
-// int32 free_time = 8;
+// int32 free_time = 9;
 inline void SC_SceneInfo::clear_free_time() {
   free_time_ = 0;
 }
@@ -1136,7 +1208,7 @@ inline void SC_SceneInfo::set_free_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:FLM.SC_SceneInfo.free_time)
 }
 
-// int32 gold_mode_num = 9;
+// int32 gold_mode_num = 10;
 inline void SC_SceneInfo::clear_gold_mode_num() {
   gold_mode_num_ = 0;
 }
@@ -1156,7 +1228,7 @@ inline void SC_SceneInfo::set_gold_mode_num(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:FLM.SC_SceneInfo.gold_mode_num)
 }
 
-// int64 total_rate = 10;
+// int64 total_rate = 11;
 inline void SC_SceneInfo::clear_total_rate() {
   total_rate_ = PROTOBUF_LONGLONG(0);
 }

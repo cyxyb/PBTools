@@ -92,6 +92,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_FLM_2eproto::offsets[] PROTOBU
   PROTOBUF_FIELD_OFFSET(::FLM::SC_SceneInfo, icon_),
   PROTOBUF_FIELD_OFFSET(::FLM::SC_SceneInfo, gold_num_),
   PROTOBUF_FIELD_OFFSET(::FLM::SC_SceneInfo, is_hit_),
+  PROTOBUF_FIELD_OFFSET(::FLM::SC_SceneInfo, fu_type_),
   PROTOBUF_FIELD_OFFSET(::FLM::SC_SceneInfo, line_win_score_),
   PROTOBUF_FIELD_OFFSET(::FLM::SC_SceneInfo, free_time_),
   PROTOBUF_FIELD_OFFSET(::FLM::SC_SceneInfo, gold_mode_num_),
@@ -112,7 +113,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_FLM_2eproto::offsets[] PROTOBU
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::FLM::Is_HitIcon)},
   { 6, -1, sizeof(::FLM::SC_SceneInfo)},
-  { 21, -1, sizeof(::FLM::CMD_3D_SC_Result)},
+  { 22, -1, sizeof(::FLM::CMD_3D_SC_Result)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -123,19 +124,19 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
 
 const char descriptor_table_protodef_FLM_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n\tFLM.proto\022\003FLM\"!\n\nIs_HitIcon\022\023\n\013is_hit"
-  "_icon\030\001 \003(\010\"\334\001\n\014SC_SceneInfo\022\020\n\010cur_chip"
+  "_icon\030\001 \003(\010\"\355\001\n\014SC_SceneInfo\022\020\n\010cur_chip"
   "\030\001 \001(\005\022\021\n\tchip_list\030\002 \003(\005\022\020\n\010fu_score\030\003 "
   "\003(\005\022\014\n\004icon\030\004 \003(\005\022\020\n\010gold_num\030\005 \003(\005\022\037\n\006i"
-  "s_hit\030\006 \003(\0132\017.FLM.Is_HitIcon\022\026\n\016line_win"
-  "_score\030\007 \001(\003\022\021\n\tfree_time\030\010 \001(\005\022\025\n\rgold_"
-  "mode_num\030\t \001(\005\022\022\n\ntotal_rate\030\n \001(\003\"\251\001\n\020C"
-  "MD_3D_SC_Result\022\014\n\004icon\030\001 \003(\005\022\020\n\010gold_nu"
-  "m\030\002 \003(\005\022\037\n\006is_hit\030\003 \003(\0132\017.FLM.Is_HitIcon"
-  "\022\026\n\016line_win_score\030\004 \001(\003\022\021\n\tfree_time\030\005 "
-  "\001(\005\022\025\n\rgold_mode_num\030\006 \001(\005\022\022\n\ntotal_rate"
-  "\030\007 \001(\003*V\n\tEMsgIDFLM\022\025\n\021SUB_CS_GAME_START"
-  "\020\000\022\024\n\020SUB_SC_GAME_OVER\020\001\022\034\n\030SUB_SC_UPDAT"
-  "E_PRIZE_POOL\020\002b\006proto3"
+  "s_hit\030\006 \003(\0132\017.FLM.Is_HitIcon\022\017\n\007fu_type\030"
+  "\007 \003(\005\022\026\n\016line_win_score\030\010 \001(\003\022\021\n\tfree_ti"
+  "me\030\t \001(\005\022\025\n\rgold_mode_num\030\n \001(\005\022\022\n\ntotal"
+  "_rate\030\013 \001(\003\"\251\001\n\020CMD_3D_SC_Result\022\014\n\004icon"
+  "\030\001 \003(\005\022\020\n\010gold_num\030\002 \003(\005\022\037\n\006is_hit\030\003 \003(\013"
+  "2\017.FLM.Is_HitIcon\022\026\n\016line_win_score\030\004 \001("
+  "\003\022\021\n\tfree_time\030\005 \001(\005\022\025\n\rgold_mode_num\030\006 "
+  "\001(\005\022\022\n\ntotal_rate\030\007 \001(\003*V\n\tEMsgIDFLM\022\025\n\021"
+  "SUB_CS_GAME_START\020\000\022\024\n\020SUB_SC_GAME_OVER\020"
+  "\001\022\034\n\030SUB_SC_UPDATE_PRIZE_POOL\020\002b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_FLM_2eproto_deps[1] = {
 };
@@ -146,7 +147,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_FLM
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_FLM_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_FLM_2eproto = {
-  false, false, descriptor_table_protodef_FLM_2eproto, "FLM.proto", 542,
+  false, false, descriptor_table_protodef_FLM_2eproto, "FLM.proto", 559,
   &descriptor_table_FLM_2eproto_once, descriptor_table_FLM_2eproto_sccs, descriptor_table_FLM_2eproto_deps, 3, 0,
   schemas, file_default_instances, TableStruct_FLM_2eproto::offsets,
   file_level_metadata_FLM_2eproto, 3, file_level_enum_descriptors_FLM_2eproto, file_level_service_descriptors_FLM_2eproto,
@@ -385,7 +386,8 @@ SC_SceneInfo::SC_SceneInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   fu_score_(arena),
   icon_(arena),
   gold_num_(arena),
-  is_hit_(arena) {
+  is_hit_(arena),
+  fu_type_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:FLM.SC_SceneInfo)
@@ -396,7 +398,8 @@ SC_SceneInfo::SC_SceneInfo(const SC_SceneInfo& from)
       fu_score_(from.fu_score_),
       icon_(from.icon_),
       gold_num_(from.gold_num_),
-      is_hit_(from.is_hit_) {
+      is_hit_(from.is_hit_),
+      fu_type_(from.fu_type_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&cur_chip_, &from.cur_chip_,
     static_cast<size_t>(reinterpret_cast<char*>(&gold_mode_num_) -
@@ -448,6 +451,7 @@ void SC_SceneInfo::Clear() {
   icon_.Clear();
   gold_num_.Clear();
   is_hit_.Clear();
+  fu_type_.Clear();
   ::memset(&cur_chip_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&gold_mode_num_) -
       reinterpret_cast<char*>(&cur_chip_)) + sizeof(gold_mode_num_));
@@ -520,30 +524,40 @@ const char* SC_SceneInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<50>(ptr));
         } else goto handle_unusual;
         continue;
-      // int64 line_win_score = 7;
+      // repeated int32 fu_type = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_fu_type(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56) {
+          _internal_add_fu_type(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 line_win_score = 8;
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
           line_win_score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 free_time = 8;
-      case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+      // int32 free_time = 9;
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
           free_time_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 gold_mode_num = 9;
-      case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+      // int32 gold_mode_num = 10;
+      case 10:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
           gold_mode_num_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int64 total_rate = 10;
-      case 10:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
+      // int64 total_rate = 11;
+      case 11:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 88)) {
           total_rate_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
@@ -626,28 +640,37 @@ failure:
       InternalWriteMessage(6, this->_internal_is_hit(i), target, stream);
   }
 
-  // int64 line_win_score = 7;
+  // repeated int32 fu_type = 7;
+  {
+    int byte_size = _fu_type_cached_byte_size_.load(std::memory_order_relaxed);
+    if (byte_size > 0) {
+      target = stream->WriteInt32Packed(
+          7, _internal_fu_type(), byte_size, target);
+    }
+  }
+
+  // int64 line_win_score = 8;
   if (this->line_win_score() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(7, this->_internal_line_win_score(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(8, this->_internal_line_win_score(), target);
   }
 
-  // int32 free_time = 8;
+  // int32 free_time = 9;
   if (this->free_time() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(8, this->_internal_free_time(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(9, this->_internal_free_time(), target);
   }
 
-  // int32 gold_mode_num = 9;
+  // int32 gold_mode_num = 10;
   if (this->gold_mode_num() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(9, this->_internal_gold_mode_num(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(10, this->_internal_gold_mode_num(), target);
   }
 
-  // int64 total_rate = 10;
+  // int64 total_rate = 11;
   if (this->total_rate() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(10, this->_internal_total_rate(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(11, this->_internal_total_rate(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -733,6 +756,21 @@ size_t SC_SceneInfo::ByteSizeLong() const {
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
+  // repeated int32 fu_type = 7;
+  {
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      Int32Size(this->fu_type_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
+    }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _fu_type_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
+  }
+
   // int32 cur_chip = 1;
   if (this->cur_chip() != 0) {
     total_size += 1 +
@@ -740,28 +778,28 @@ size_t SC_SceneInfo::ByteSizeLong() const {
         this->_internal_cur_chip());
   }
 
-  // int32 free_time = 8;
+  // int32 free_time = 9;
   if (this->free_time() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_free_time());
   }
 
-  // int64 line_win_score = 7;
+  // int64 line_win_score = 8;
   if (this->line_win_score() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_line_win_score());
   }
 
-  // int64 total_rate = 10;
+  // int64 total_rate = 11;
   if (this->total_rate() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_total_rate());
   }
 
-  // int32 gold_mode_num = 9;
+  // int32 gold_mode_num = 10;
   if (this->gold_mode_num() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
@@ -804,6 +842,7 @@ void SC_SceneInfo::MergeFrom(const SC_SceneInfo& from) {
   icon_.MergeFrom(from.icon_);
   gold_num_.MergeFrom(from.gold_num_);
   is_hit_.MergeFrom(from.is_hit_);
+  fu_type_.MergeFrom(from.fu_type_);
   if (from.cur_chip() != 0) {
     _internal_set_cur_chip(from._internal_cur_chip());
   }
@@ -847,6 +886,7 @@ void SC_SceneInfo::InternalSwap(SC_SceneInfo* other) {
   icon_.InternalSwap(&other->icon_);
   gold_num_.InternalSwap(&other->gold_num_);
   is_hit_.InternalSwap(&other->is_hit_);
+  fu_type_.InternalSwap(&other->fu_type_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(SC_SceneInfo, gold_mode_num_)
       + sizeof(SC_SceneInfo::gold_mode_num_)
