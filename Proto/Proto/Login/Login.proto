@@ -168,7 +168,7 @@ message MsgForgetPassword
 	string		new_password				= 4;	//新密码
 }
 
-//玩家VIP信息
+//VIP信息
 message MsgVIPInfo
 {
 	int64		need_score					= 1;	//需求打码量
@@ -183,10 +183,15 @@ message MsgVIPInfo
 	bool		one_to_one					= 10;	//一对一服务
 }
 
+//vip配置信息
+message MsgVIPConfig
+{
+	repeated	MsgVIPInfo vip_info			= 1;	//vip配置信息
+}
+
 //玩家VIP信息
 message MsgUpgradeVIP
 {
 	int32		res_code					= 1;	//返回码(0:成功 非0:失败)
 	int64		gold						= 2;	//玩家当前金币
-	MsgVIPInfo	vip_info					= 3;	//vip信息
 }

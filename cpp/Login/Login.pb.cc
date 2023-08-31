@@ -96,6 +96,10 @@ class MsgVIPInfoDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgVIPInfo> _instance;
 } _MsgVIPInfo_default_instance_;
+class MsgVIPConfigDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgVIPConfig> _instance;
+} _MsgVIPConfig_default_instance_;
 class MsgUpgradeVIPDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgUpgradeVIP> _instance;
@@ -350,8 +354,21 @@ static void InitDefaultsscc_info_MsgUpgradeVIP_Login_2eproto() {
   }
 }
 
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_MsgUpgradeVIP_Login_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MsgUpgradeVIP_Login_2eproto}, {
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgUpgradeVIP_Login_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgUpgradeVIP_Login_2eproto}, {}};
+
+static void InitDefaultsscc_info_MsgVIPConfig_Login_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_MsgVIPConfig_default_instance_;
+    new (ptr) ::MsgVIPConfig();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_MsgVIPConfig_Login_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MsgVIPConfig_Login_2eproto}, {
       &scc_info_MsgVIPInfo_Login_2eproto.base,}};
 
 static void InitDefaultsscc_info_MsgVIPInfo_Login_2eproto() {
@@ -367,7 +384,7 @@ static void InitDefaultsscc_info_MsgVIPInfo_Login_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgVIPInfo_Login_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgVIPInfo_Login_2eproto}, {}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Login_2eproto[20];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Login_2eproto[21];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_Login_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_Login_2eproto = nullptr;
 
@@ -556,13 +573,18 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::MsgVIPInfo, award_gold_),
   PROTOBUF_FIELD_OFFSET(::MsgVIPInfo, one_to_one_),
   ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::MsgVIPConfig, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::MsgVIPConfig, vip_info_),
+  ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgUpgradeVIP, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::MsgUpgradeVIP, res_code_),
   PROTOBUF_FIELD_OFFSET(::MsgUpgradeVIP, gold_),
-  PROTOBUF_FIELD_OFFSET(::MsgUpgradeVIP, vip_info_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::MsgPlayerLogin)},
@@ -584,7 +606,8 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 151, -1, sizeof(::MsgQueryRebateRecord)},
   { 159, -1, sizeof(::MsgForgetPassword)},
   { 168, -1, sizeof(::MsgVIPInfo)},
-  { 183, -1, sizeof(::MsgUpgradeVIP)},
+  { 183, -1, sizeof(::MsgVIPConfig)},
+  { 189, -1, sizeof(::MsgUpgradeVIP)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -607,6 +630,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgQueryRebateRecord_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgForgetPassword_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgVIPInfo_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgVIPConfig_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgUpgradeVIP_default_instance_),
 };
 
@@ -664,13 +688,14 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "\005\022\026\n\016check_addition\030\004 \001(\005\022\026\n\016share_addit"
   "ion\030\005 \001(\005\022\022\n\nworld_chat\030\006 \001(\010\022\016\n\006avatar\030"
   "\007 \001(\005\022\024\n\014avatar_frame\030\010 \001(\005\022\022\n\naward_gol"
-  "d\030\t \001(\005\022\022\n\none_to_one\030\n \001(\010\"N\n\rMsgUpgrad"
-  "eVIP\022\020\n\010res_code\030\001 \001(\005\022\014\n\004gold\030\002 \001(\003\022\035\n\010"
-  "vip_info\030\003 \001(\0132\013.MsgVIPInfob\006proto3"
+  "d\030\t \001(\005\022\022\n\none_to_one\030\n \001(\010\"-\n\014MsgVIPCon"
+  "fig\022\035\n\010vip_info\030\001 \003(\0132\013.MsgVIPInfo\"/\n\rMs"
+  "gUpgradeVIP\022\020\n\010res_code\030\001 \001(\005\022\014\n\004gold\030\002 "
+  "\001(\003b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Login_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Login_2eproto_sccs[20] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Login_2eproto_sccs[21] = {
   &scc_info_MsgBindParentData_Login_2eproto.base,
   &scc_info_MsgBindPhone_Login_2eproto.base,
   &scc_info_MsgCheckInInfo_Login_2eproto.base,
@@ -690,14 +715,15 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
   &scc_info_MsgTurntableData_Login_2eproto.base,
   &scc_info_MsgTurntableHistoryData_Login_2eproto.base,
   &scc_info_MsgUpgradeVIP_Login_2eproto.base,
+  &scc_info_MsgVIPConfig_Login_2eproto.base,
   &scc_info_MsgVIPInfo_Login_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Login_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Login_2eproto = {
-  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 2235,
-  &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 20, 0,
+  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 2251,
+  &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 21, 0,
   schemas, file_default_instances, TableStruct_Login_2eproto::offsets,
-  file_level_metadata_Login_2eproto, 20, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
+  file_level_metadata_Login_2eproto, 21, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -6526,15 +6552,210 @@ void MsgVIPInfo::InternalSwap(MsgVIPInfo* other) {
 
 // ===================================================================
 
-class MsgUpgradeVIP::_Internal {
+class MsgVIPConfig::_Internal {
  public:
-  static const ::MsgVIPInfo& vip_info(const MsgUpgradeVIP* msg);
 };
 
-const ::MsgVIPInfo&
-MsgUpgradeVIP::_Internal::vip_info(const MsgUpgradeVIP* msg) {
-  return *msg->vip_info_;
+MsgVIPConfig::MsgVIPConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  vip_info_(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:MsgVIPConfig)
 }
+MsgVIPConfig::MsgVIPConfig(const MsgVIPConfig& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      vip_info_(from.vip_info_) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:MsgVIPConfig)
+}
+
+void MsgVIPConfig::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgVIPConfig_Login_2eproto.base);
+}
+
+MsgVIPConfig::~MsgVIPConfig() {
+  // @@protoc_insertion_point(destructor:MsgVIPConfig)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void MsgVIPConfig::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void MsgVIPConfig::ArenaDtor(void* object) {
+  MsgVIPConfig* _this = reinterpret_cast< MsgVIPConfig* >(object);
+  (void)_this;
+}
+void MsgVIPConfig::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void MsgVIPConfig::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const MsgVIPConfig& MsgVIPConfig::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgVIPConfig_Login_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void MsgVIPConfig::Clear() {
+// @@protoc_insertion_point(message_clear_start:MsgVIPConfig)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  vip_info_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* MsgVIPConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // repeated .MsgVIPInfo vip_info = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_vip_info(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* MsgVIPConfig::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:MsgVIPConfig)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated .MsgVIPInfo vip_info = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_vip_info_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(1, this->_internal_vip_info(i), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:MsgVIPConfig)
+  return target;
+}
+
+size_t MsgVIPConfig::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:MsgVIPConfig)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated .MsgVIPInfo vip_info = 1;
+  total_size += 1UL * this->_internal_vip_info_size();
+  for (const auto& msg : this->vip_info_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void MsgVIPConfig::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:MsgVIPConfig)
+  GOOGLE_DCHECK_NE(&from, this);
+  const MsgVIPConfig* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgVIPConfig>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgVIPConfig)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgVIPConfig)
+    MergeFrom(*source);
+  }
+}
+
+void MsgVIPConfig::MergeFrom(const MsgVIPConfig& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:MsgVIPConfig)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  vip_info_.MergeFrom(from.vip_info_);
+}
+
+void MsgVIPConfig::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:MsgVIPConfig)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void MsgVIPConfig::CopyFrom(const MsgVIPConfig& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:MsgVIPConfig)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool MsgVIPConfig::IsInitialized() const {
+  return true;
+}
+
+void MsgVIPConfig::InternalSwap(MsgVIPConfig* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  vip_info_.InternalSwap(&other->vip_info_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata MsgVIPConfig::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class MsgUpgradeVIP::_Internal {
+ public:
+};
+
 MsgUpgradeVIP::MsgUpgradeVIP(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
@@ -6544,11 +6765,6 @@ MsgUpgradeVIP::MsgUpgradeVIP(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 MsgUpgradeVIP::MsgUpgradeVIP(const MsgUpgradeVIP& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  if (from._internal_has_vip_info()) {
-    vip_info_ = new ::MsgVIPInfo(*from.vip_info_);
-  } else {
-    vip_info_ = nullptr;
-  }
   ::memcpy(&gold_, &from.gold_,
     static_cast<size_t>(reinterpret_cast<char*>(&res_code_) -
     reinterpret_cast<char*>(&gold_)) + sizeof(res_code_));
@@ -6556,11 +6772,10 @@ MsgUpgradeVIP::MsgUpgradeVIP(const MsgUpgradeVIP& from)
 }
 
 void MsgUpgradeVIP::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgUpgradeVIP_Login_2eproto.base);
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&vip_info_) - reinterpret_cast<char*>(this)),
+      reinterpret_cast<char*>(&gold_) - reinterpret_cast<char*>(this)),
       0, static_cast<size_t>(reinterpret_cast<char*>(&res_code_) -
-      reinterpret_cast<char*>(&vip_info_)) + sizeof(res_code_));
+      reinterpret_cast<char*>(&gold_)) + sizeof(res_code_));
 }
 
 MsgUpgradeVIP::~MsgUpgradeVIP() {
@@ -6571,7 +6786,6 @@ MsgUpgradeVIP::~MsgUpgradeVIP() {
 
 void MsgUpgradeVIP::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
-  if (this != internal_default_instance()) delete vip_info_;
 }
 
 void MsgUpgradeVIP::ArenaDtor(void* object) {
@@ -6595,10 +6809,6 @@ void MsgUpgradeVIP::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && vip_info_ != nullptr) {
-    delete vip_info_;
-  }
-  vip_info_ = nullptr;
   ::memset(&gold_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&res_code_) -
       reinterpret_cast<char*>(&gold_)) + sizeof(res_code_));
@@ -6623,13 +6833,6 @@ const char* MsgUpgradeVIP::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // .MsgVIPInfo vip_info = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          ptr = ctx->ParseMessage(_internal_mutable_vip_info(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -6673,14 +6876,6 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_gold(), target);
   }
 
-  // .MsgVIPInfo vip_info = 3;
-  if (this->has_vip_info()) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::vip_info(this), target, stream);
-  }
-
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -6696,13 +6891,6 @@ size_t MsgUpgradeVIP::ByteSizeLong() const {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
-
-  // .MsgVIPInfo vip_info = 3;
-  if (this->has_vip_info()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *vip_info_);
-  }
 
   // int64 gold = 2;
   if (this->gold() != 0) {
@@ -6749,9 +6937,6 @@ void MsgUpgradeVIP::MergeFrom(const MsgUpgradeVIP& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_vip_info()) {
-    _internal_mutable_vip_info()->::MsgVIPInfo::MergeFrom(from._internal_vip_info());
-  }
   if (from.gold() != 0) {
     _internal_set_gold(from._internal_gold());
   }
@@ -6784,9 +6969,9 @@ void MsgUpgradeVIP::InternalSwap(MsgUpgradeVIP* other) {
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(MsgUpgradeVIP, res_code_)
       + sizeof(MsgUpgradeVIP::res_code_)
-      - PROTOBUF_FIELD_OFFSET(MsgUpgradeVIP, vip_info_)>(
-          reinterpret_cast<char*>(&vip_info_),
-          reinterpret_cast<char*>(&other->vip_info_));
+      - PROTOBUF_FIELD_OFFSET(MsgUpgradeVIP, gold_)>(
+          reinterpret_cast<char*>(&gold_),
+          reinterpret_cast<char*>(&other->gold_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MsgUpgradeVIP::GetMetadata() const {
@@ -6852,6 +7037,9 @@ template<> PROTOBUF_NOINLINE ::MsgForgetPassword* Arena::CreateMaybeMessage< ::M
 }
 template<> PROTOBUF_NOINLINE ::MsgVIPInfo* Arena::CreateMaybeMessage< ::MsgVIPInfo >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MsgVIPInfo >(arena);
+}
+template<> PROTOBUF_NOINLINE ::MsgVIPConfig* Arena::CreateMaybeMessage< ::MsgVIPConfig >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::MsgVIPConfig >(arena);
 }
 template<> PROTOBUF_NOINLINE ::MsgUpgradeVIP* Arena::CreateMaybeMessage< ::MsgUpgradeVIP >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MsgUpgradeVIP >(arena);

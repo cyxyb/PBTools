@@ -28,7 +28,7 @@ const char descriptor_table_protodef_CommonCmd_2eproto[] PROTOBUF_SECTION_VARIAB
   "_SubGame\020\322\017*k\n\010EResCode\022\021\n\rEResCode_NULL"
   "\020\000\022\030\n\024EResCode_InvilidMail\020\001\022\031\n\025EResCode"
   "_MailRecalled\020\002\022\027\n\023EResCode_MailPicked\020\003"
-  "*\327\016\n\013EMsgIDLogin\022\023\n\017MsgIDLogin_Null\020\000\022\024\n"
+  "*\230\017\n\013EMsgIDLogin\022\023\n\017MsgIDLogin_Null\020\000\022\024\n"
   "\020MsgIDLogin_Login\020\001\022\030\n\024MsgIDLogin_LoginR"
   "esp\020\002\022\035\n\031MsgIDLogin_ModifyNickName\020\003\022!\n\035"
   "MsgIDLogin_ModifyNickNameResp\020\004\022\031\n\025MsgID"
@@ -72,25 +72,27 @@ const char descriptor_table_protodef_CommonCmd_2eproto[] PROTOBUF_SECTION_VARIAB
   "gIDLogin_ForgetPassword\0203\022!\n\035MsgIDLogin_"
   "ForgetPasswordResp\0204\022\035\n\031MsgIDLogin_Recha"
   "rgeNotify\0205\022 \n\034MsgIDLogin_GetPlayerGoldR"
-  "esp\0206\022\035\n\031MsgIDVIP_GetPlayerVIPInfo\0207\022\036\n\032"
-  "MsgIDVIP_PlayerVIPInfoResp\0208\022\027\n\023MsgIDVIP"
-  "_VIPUpgrade\0209\022\033\n\027MsgIDVIP_VIPUpgradeResp"
-  "\020:*\356\004\n\nEMsgIDGame\022\022\n\016MsgIDGame_Null\020\000\022\024\n"
-  "\017MsgIDGame_Login\020\351\007\022\030\n\023MsgIDGame_LoginRe"
-  "sp\020\352\007\022\036\n\031MsgIDGame_SqueezeSeatResp\020\353\007\022\025\n"
-  "\020MsgIDGame_Logout\020\354\007\022\032\n\025MsgIDGame_AutoSi"
-  "tDown\020\355\007\022\032\n\025MsgIDGame_SitDownResp\020\356\007\022!\n\034"
-  "MsgIDGame_SyncPlayerInfoResp\020\357\007\022&\n!MsgID"
-  "Game_NotifyPlayerStandUpResp\020\360\007\022#\n\036MsgID"
-  "Game_SyncPlayersScoreResp\020\361\007\022\034\n\027MsgIDGam"
-  "e_SendGameSence\020\362\007\022 \n\033MsgIDGame_SendGame"
-  "SenceResp\020\363\007\022 \n\033MsgIDGame_NotifyMessageR"
-  "esp\020\364\007\022\031\n\024MsgIDGame_CreateRoom\020\365\007\022\027\n\022Msg"
-  "IDGame_JoinRoom\020\366\007\022\032\n\025MsgIDGame_QueryRec"
-  "ord\020\367\007\022#\n\036MsgIDGame_QueryRoundRecordResp"
-  "\020\370\007\022!\n\034MsgIDGame_QueryDayRecordResp\020\371\007\022\033"
-  "\n\026MsgIDGame_AddOneRecord\020\372\007\022&\n!MsgIDGame"
-  "_NotifyPlayerOfflineResp\020\373\007b\006proto3"
+  "esp\0206\022\031\n\025MsgIDVIP_GetVIPConfig\0207\022\035\n\031MsgI"
+  "DVIP_GetVIPConfigResp\0208\022\037\n\033MsgIDVIP_GetP"
+  "layerHitCoding\0209\022#\n\037MsgIDVIP_GetPlayerHi"
+  "tCodingResp\020:\022\027\n\023MsgIDVIP_VIPUpgrade\020;\022\033"
+  "\n\027MsgIDVIP_VIPUpgradeResp\020<*\356\004\n\nEMsgIDGa"
+  "me\022\022\n\016MsgIDGame_Null\020\000\022\024\n\017MsgIDGame_Logi"
+  "n\020\351\007\022\030\n\023MsgIDGame_LoginResp\020\352\007\022\036\n\031MsgIDG"
+  "ame_SqueezeSeatResp\020\353\007\022\025\n\020MsgIDGame_Logo"
+  "ut\020\354\007\022\032\n\025MsgIDGame_AutoSitDown\020\355\007\022\032\n\025Msg"
+  "IDGame_SitDownResp\020\356\007\022!\n\034MsgIDGame_SyncP"
+  "layerInfoResp\020\357\007\022&\n!MsgIDGame_NotifyPlay"
+  "erStandUpResp\020\360\007\022#\n\036MsgIDGame_SyncPlayer"
+  "sScoreResp\020\361\007\022\034\n\027MsgIDGame_SendGameSence"
+  "\020\362\007\022 \n\033MsgIDGame_SendGameSenceResp\020\363\007\022 \n"
+  "\033MsgIDGame_NotifyMessageResp\020\364\007\022\031\n\024MsgID"
+  "Game_CreateRoom\020\365\007\022\027\n\022MsgIDGame_JoinRoom"
+  "\020\366\007\022\032\n\025MsgIDGame_QueryRecord\020\367\007\022#\n\036MsgID"
+  "Game_QueryRoundRecordResp\020\370\007\022!\n\034MsgIDGam"
+  "e_QueryDayRecordResp\020\371\007\022\033\n\026MsgIDGame_Add"
+  "OneRecord\020\372\007\022&\n!MsgIDGame_NotifyPlayerOf"
+  "flineResp\020\373\007b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_CommonCmd_2eproto_deps[1] = {
 };
@@ -98,7 +100,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Com
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_CommonCmd_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_CommonCmd_2eproto = {
-  false, false, descriptor_table_protodef_CommonCmd_2eproto, "CommonCmd.proto", 2755,
+  false, false, descriptor_table_protodef_CommonCmd_2eproto, "CommonCmd.proto", 2820,
   &descriptor_table_CommonCmd_2eproto_once, descriptor_table_CommonCmd_2eproto_sccs, descriptor_table_CommonCmd_2eproto_deps, 0, 0,
   schemas, file_default_instances, TableStruct_CommonCmd_2eproto::offsets,
   file_level_metadata_CommonCmd_2eproto, 0, file_level_enum_descriptors_CommonCmd_2eproto, file_level_service_descriptors_CommonCmd_2eproto,
@@ -203,6 +205,8 @@ bool EMsgIDLogin_IsValid(int value) {
     case 56:
     case 57:
     case 58:
+    case 59:
+    case 60:
       return true;
     default:
       return false;

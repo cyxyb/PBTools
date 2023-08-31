@@ -70,8 +70,9 @@ public static partial class LoginReflection {
           "ZGl0aW9uGAQgASgFEhYKDnNoYXJlX2FkZGl0aW9uGAUgASgFEhIKCndvcmxk",
           "X2NoYXQYBiABKAgSDgoGYXZhdGFyGAcgASgFEhQKDGF2YXRhcl9mcmFtZRgI",
           "IAEoBRISCgphd2FyZF9nb2xkGAkgASgFEhIKCm9uZV90b19vbmUYCiABKAgi",
-          "TgoNTXNnVXBncmFkZVZJUBIQCghyZXNfY29kZRgBIAEoBRIMCgRnb2xkGAIg",
-          "ASgDEh0KCHZpcF9pbmZvGAMgASgLMgsuTXNnVklQSW5mb2IGcHJvdG8z"));
+          "LQoMTXNnVklQQ29uZmlnEh0KCHZpcF9pbmZvGAEgAygLMgsuTXNnVklQSW5m",
+          "byIvCg1Nc2dVcGdyYWRlVklQEhAKCHJlc19jb2RlGAEgASgFEgwKBGdvbGQY",
+          "AiABKANiBnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -94,7 +95,8 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgQueryRebateRecord), global::MsgQueryRebateRecord.Parser, new[]{ "RechargeUserId", "RechargeAmount", "Rebate" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgForgetPassword), global::MsgForgetPassword.Parser, new[]{ "ClientType", "Phone", "Code", "NewPassword" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgVIPInfo), global::MsgVIPInfo.Parser, new[]{ "NeedScore", "TurntableNum", "TrumpetDiscount", "CheckAddition", "ShareAddition", "WorldChat", "Avatar", "AvatarFrame", "AwardGold", "OneToOne" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgUpgradeVIP), global::MsgUpgradeVIP.Parser, new[]{ "ResCode", "Gold", "VipInfo" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgVIPConfig), global::MsgVIPConfig.Parser, new[]{ "VipInfo" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgUpgradeVIP), global::MsgUpgradeVIP.Parser, new[]{ "ResCode", "Gold" }, null, null, null, null)
         }));
   }
   #endregion
@@ -5568,7 +5570,7 @@ public sealed partial class MsgForgetPassword : pb::IMessage<MsgForgetPassword>
 }
 
 /// <summary>
-///玩家VIP信息
+///VIP信息
 /// </summary>
 public sealed partial class MsgVIPInfo : pb::IMessage<MsgVIPInfo>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -6097,6 +6099,173 @@ public sealed partial class MsgVIPInfo : pb::IMessage<MsgVIPInfo>
 }
 
 /// <summary>
+///vip配置信息
+/// </summary>
+public sealed partial class MsgVIPConfig : pb::IMessage<MsgVIPConfig>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgVIPConfig> _parser = new pb::MessageParser<MsgVIPConfig>(() => new MsgVIPConfig());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgVIPConfig> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[19]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgVIPConfig() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgVIPConfig(MsgVIPConfig other) : this() {
+    vipInfo_ = other.vipInfo_.Clone();
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgVIPConfig Clone() {
+    return new MsgVIPConfig(this);
+  }
+
+  /// <summary>Field number for the "vip_info" field.</summary>
+  public const int VipInfoFieldNumber = 1;
+  private static readonly pb::FieldCodec<global::MsgVIPInfo> _repeated_vipInfo_codec
+      = pb::FieldCodec.ForMessage(10, global::MsgVIPInfo.Parser);
+  private readonly pbc::RepeatedField<global::MsgVIPInfo> vipInfo_ = new pbc::RepeatedField<global::MsgVIPInfo>();
+  /// <summary>
+  ///vip配置信息
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<global::MsgVIPInfo> VipInfo {
+    get { return vipInfo_; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgVIPConfig);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgVIPConfig other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if(!vipInfo_.Equals(other.vipInfo_)) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    hash ^= vipInfo_.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    vipInfo_.WriteTo(output, _repeated_vipInfo_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    vipInfo_.WriteTo(ref output, _repeated_vipInfo_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    size += vipInfo_.CalculateSize(_repeated_vipInfo_codec);
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgVIPConfig other) {
+    if (other == null) {
+      return;
+    }
+    vipInfo_.Add(other.vipInfo_);
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 10: {
+          vipInfo_.AddEntriesFrom(input, _repeated_vipInfo_codec);
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 10: {
+          vipInfo_.AddEntriesFrom(ref input, _repeated_vipInfo_codec);
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
 ///玩家VIP信息
 /// </summary>
 public sealed partial class MsgUpgradeVIP : pb::IMessage<MsgUpgradeVIP>
@@ -6111,7 +6280,7 @@ public sealed partial class MsgUpgradeVIP : pb::IMessage<MsgUpgradeVIP>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[19]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[20]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6130,7 +6299,6 @@ public sealed partial class MsgUpgradeVIP : pb::IMessage<MsgUpgradeVIP>
   public MsgUpgradeVIP(MsgUpgradeVIP other) : this() {
     resCode_ = other.resCode_;
     gold_ = other.gold_;
-    vipInfo_ = other.vipInfo_ != null ? other.vipInfo_.Clone() : null;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -6167,20 +6335,6 @@ public sealed partial class MsgUpgradeVIP : pb::IMessage<MsgUpgradeVIP>
     }
   }
 
-  /// <summary>Field number for the "vip_info" field.</summary>
-  public const int VipInfoFieldNumber = 3;
-  private global::MsgVIPInfo vipInfo_;
-  /// <summary>
-  ///vip信息
-  /// </summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public global::MsgVIPInfo VipInfo {
-    get { return vipInfo_; }
-    set {
-      vipInfo_ = value;
-    }
-  }
-
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as MsgUpgradeVIP);
@@ -6196,7 +6350,6 @@ public sealed partial class MsgUpgradeVIP : pb::IMessage<MsgUpgradeVIP>
     }
     if (ResCode != other.ResCode) return false;
     if (Gold != other.Gold) return false;
-    if (!object.Equals(VipInfo, other.VipInfo)) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -6205,7 +6358,6 @@ public sealed partial class MsgUpgradeVIP : pb::IMessage<MsgUpgradeVIP>
     int hash = 1;
     if (ResCode != 0) hash ^= ResCode.GetHashCode();
     if (Gold != 0L) hash ^= Gold.GetHashCode();
-    if (vipInfo_ != null) hash ^= VipInfo.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -6230,10 +6382,6 @@ public sealed partial class MsgUpgradeVIP : pb::IMessage<MsgUpgradeVIP>
       output.WriteRawTag(16);
       output.WriteInt64(Gold);
     }
-    if (vipInfo_ != null) {
-      output.WriteRawTag(26);
-      output.WriteMessage(VipInfo);
-    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -6251,10 +6399,6 @@ public sealed partial class MsgUpgradeVIP : pb::IMessage<MsgUpgradeVIP>
       output.WriteRawTag(16);
       output.WriteInt64(Gold);
     }
-    if (vipInfo_ != null) {
-      output.WriteRawTag(26);
-      output.WriteMessage(VipInfo);
-    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -6269,9 +6413,6 @@ public sealed partial class MsgUpgradeVIP : pb::IMessage<MsgUpgradeVIP>
     }
     if (Gold != 0L) {
       size += 1 + pb::CodedOutputStream.ComputeInt64Size(Gold);
-    }
-    if (vipInfo_ != null) {
-      size += 1 + pb::CodedOutputStream.ComputeMessageSize(VipInfo);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -6289,12 +6430,6 @@ public sealed partial class MsgUpgradeVIP : pb::IMessage<MsgUpgradeVIP>
     }
     if (other.Gold != 0L) {
       Gold = other.Gold;
-    }
-    if (other.vipInfo_ != null) {
-      if (vipInfo_ == null) {
-        VipInfo = new global::MsgVIPInfo();
-      }
-      VipInfo.MergeFrom(other.VipInfo);
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -6318,13 +6453,6 @@ public sealed partial class MsgUpgradeVIP : pb::IMessage<MsgUpgradeVIP>
           Gold = input.ReadInt64();
           break;
         }
-        case 26: {
-          if (vipInfo_ == null) {
-            VipInfo = new global::MsgVIPInfo();
-          }
-          input.ReadMessage(VipInfo);
-          break;
-        }
       }
     }
   #endif
@@ -6345,13 +6473,6 @@ public sealed partial class MsgUpgradeVIP : pb::IMessage<MsgUpgradeVIP>
         }
         case 16: {
           Gold = input.ReadInt64();
-          break;
-        }
-        case 26: {
-          if (vipInfo_ == null) {
-            VipInfo = new global::MsgVIPInfo();
-          }
-          input.ReadMessage(VipInfo);
           break;
         }
       }

@@ -165,10 +165,12 @@ enum EMsgIDLogin : int {
   MsgIDLogin_ForgetPasswordResp = 52,
   MsgIDLogin_RechargeNotify = 53,
   MsgIDLogin_GetPlayerGoldResp = 54,
-  MsgIDVIP_GetPlayerVIPInfo = 55,
-  MsgIDVIP_PlayerVIPInfoResp = 56,
-  MsgIDVIP_VIPUpgrade = 57,
-  MsgIDVIP_VIPUpgradeResp = 58,
+  MsgIDVIP_GetVIPConfig = 55,
+  MsgIDVIP_GetVIPConfigResp = 56,
+  MsgIDVIP_GetPlayerHitCoding = 57,
+  MsgIDVIP_GetPlayerHitCodingResp = 58,
+  MsgIDVIP_VIPUpgrade = 59,
+  MsgIDVIP_VIPUpgradeResp = 60,
   EMsgIDLogin_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDLogin_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };

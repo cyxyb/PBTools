@@ -46,7 +46,7 @@ struct TableStruct_Login_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[20]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[21]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -110,6 +110,9 @@ extern MsgTurntableHistoryDataDefaultTypeInternal _MsgTurntableHistoryData_defau
 class MsgUpgradeVIP;
 class MsgUpgradeVIPDefaultTypeInternal;
 extern MsgUpgradeVIPDefaultTypeInternal _MsgUpgradeVIP_default_instance_;
+class MsgVIPConfig;
+class MsgVIPConfigDefaultTypeInternal;
+extern MsgVIPConfigDefaultTypeInternal _MsgVIPConfig_default_instance_;
 class MsgVIPInfo;
 class MsgVIPInfoDefaultTypeInternal;
 extern MsgVIPInfoDefaultTypeInternal _MsgVIPInfo_default_instance_;
@@ -133,6 +136,7 @@ template<> ::MsgShareData* Arena::CreateMaybeMessage<::MsgShareData>(Arena*);
 template<> ::MsgTurntableData* Arena::CreateMaybeMessage<::MsgTurntableData>(Arena*);
 template<> ::MsgTurntableHistoryData* Arena::CreateMaybeMessage<::MsgTurntableHistoryData>(Arena*);
 template<> ::MsgUpgradeVIP* Arena::CreateMaybeMessage<::MsgUpgradeVIP>(Arena*);
+template<> ::MsgVIPConfig* Arena::CreateMaybeMessage<::MsgVIPConfig>(Arena*);
 template<> ::MsgVIPInfo* Arena::CreateMaybeMessage<::MsgVIPInfo>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 
@@ -3710,6 +3714,151 @@ class MsgVIPInfo PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
+class MsgVIPConfig PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgVIPConfig) */ {
+ public:
+  inline MsgVIPConfig() : MsgVIPConfig(nullptr) {}
+  virtual ~MsgVIPConfig();
+
+  MsgVIPConfig(const MsgVIPConfig& from);
+  MsgVIPConfig(MsgVIPConfig&& from) noexcept
+    : MsgVIPConfig() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgVIPConfig& operator=(const MsgVIPConfig& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgVIPConfig& operator=(MsgVIPConfig&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgVIPConfig& default_instance();
+
+  static inline const MsgVIPConfig* internal_default_instance() {
+    return reinterpret_cast<const MsgVIPConfig*>(
+               &_MsgVIPConfig_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    19;
+
+  friend void swap(MsgVIPConfig& a, MsgVIPConfig& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgVIPConfig* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgVIPConfig* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgVIPConfig* New() const final {
+    return CreateMaybeMessage<MsgVIPConfig>(nullptr);
+  }
+
+  MsgVIPConfig* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgVIPConfig>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgVIPConfig& from);
+  void MergeFrom(const MsgVIPConfig& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgVIPConfig* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgVIPConfig";
+  }
+  protected:
+  explicit MsgVIPConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kVipInfoFieldNumber = 1,
+  };
+  // repeated .MsgVIPInfo vip_info = 1;
+  int vip_info_size() const;
+  private:
+  int _internal_vip_info_size() const;
+  public:
+  void clear_vip_info();
+  ::MsgVIPInfo* mutable_vip_info(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgVIPInfo >*
+      mutable_vip_info();
+  private:
+  const ::MsgVIPInfo& _internal_vip_info(int index) const;
+  ::MsgVIPInfo* _internal_add_vip_info();
+  public:
+  const ::MsgVIPInfo& vip_info(int index) const;
+  ::MsgVIPInfo* add_vip_info();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgVIPInfo >&
+      vip_info() const;
+
+  // @@protoc_insertion_point(class_scope:MsgVIPConfig)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgVIPInfo > vip_info_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
+// -------------------------------------------------------------------
+
 class MsgUpgradeVIP PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgUpgradeVIP) */ {
  public:
@@ -3751,7 +3900,7 @@ class MsgUpgradeVIP PROTOBUF_FINAL :
                &_MsgUpgradeVIP_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    19;
+    20;
 
   friend void swap(MsgUpgradeVIP& a, MsgUpgradeVIP& b) {
     a.Swap(&b);
@@ -3822,28 +3971,9 @@ class MsgUpgradeVIP PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kVipInfoFieldNumber = 3,
     kGoldFieldNumber = 2,
     kResCodeFieldNumber = 1,
   };
-  // .MsgVIPInfo vip_info = 3;
-  bool has_vip_info() const;
-  private:
-  bool _internal_has_vip_info() const;
-  public:
-  void clear_vip_info();
-  const ::MsgVIPInfo& vip_info() const;
-  ::MsgVIPInfo* release_vip_info();
-  ::MsgVIPInfo* mutable_vip_info();
-  void set_allocated_vip_info(::MsgVIPInfo* vip_info);
-  private:
-  const ::MsgVIPInfo& _internal_vip_info() const;
-  ::MsgVIPInfo* _internal_mutable_vip_info();
-  public:
-  void unsafe_arena_set_allocated_vip_info(
-      ::MsgVIPInfo* vip_info);
-  ::MsgVIPInfo* unsafe_arena_release_vip_info();
-
   // int64 gold = 2;
   void clear_gold();
   ::PROTOBUF_NAMESPACE_ID::int64 gold() const;
@@ -3869,7 +3999,6 @@ class MsgUpgradeVIP PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::MsgVIPInfo* vip_info_;
   ::PROTOBUF_NAMESPACE_ID::int64 gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 res_code_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
@@ -6804,6 +6933,49 @@ inline void MsgVIPInfo::set_one_to_one(bool value) {
 
 // -------------------------------------------------------------------
 
+// MsgVIPConfig
+
+// repeated .MsgVIPInfo vip_info = 1;
+inline int MsgVIPConfig::_internal_vip_info_size() const {
+  return vip_info_.size();
+}
+inline int MsgVIPConfig::vip_info_size() const {
+  return _internal_vip_info_size();
+}
+inline void MsgVIPConfig::clear_vip_info() {
+  vip_info_.Clear();
+}
+inline ::MsgVIPInfo* MsgVIPConfig::mutable_vip_info(int index) {
+  // @@protoc_insertion_point(field_mutable:MsgVIPConfig.vip_info)
+  return vip_info_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgVIPInfo >*
+MsgVIPConfig::mutable_vip_info() {
+  // @@protoc_insertion_point(field_mutable_list:MsgVIPConfig.vip_info)
+  return &vip_info_;
+}
+inline const ::MsgVIPInfo& MsgVIPConfig::_internal_vip_info(int index) const {
+  return vip_info_.Get(index);
+}
+inline const ::MsgVIPInfo& MsgVIPConfig::vip_info(int index) const {
+  // @@protoc_insertion_point(field_get:MsgVIPConfig.vip_info)
+  return _internal_vip_info(index);
+}
+inline ::MsgVIPInfo* MsgVIPConfig::_internal_add_vip_info() {
+  return vip_info_.Add();
+}
+inline ::MsgVIPInfo* MsgVIPConfig::add_vip_info() {
+  // @@protoc_insertion_point(field_add:MsgVIPConfig.vip_info)
+  return _internal_add_vip_info();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgVIPInfo >&
+MsgVIPConfig::vip_info() const {
+  // @@protoc_insertion_point(field_list:MsgVIPConfig.vip_info)
+  return vip_info_;
+}
+
+// -------------------------------------------------------------------
+
 // MsgUpgradeVIP
 
 // int32 res_code = 1;
@@ -6846,92 +7018,11 @@ inline void MsgUpgradeVIP::set_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
   // @@protoc_insertion_point(field_set:MsgUpgradeVIP.gold)
 }
 
-// .MsgVIPInfo vip_info = 3;
-inline bool MsgUpgradeVIP::_internal_has_vip_info() const {
-  return this != internal_default_instance() && vip_info_ != nullptr;
-}
-inline bool MsgUpgradeVIP::has_vip_info() const {
-  return _internal_has_vip_info();
-}
-inline void MsgUpgradeVIP::clear_vip_info() {
-  if (GetArena() == nullptr && vip_info_ != nullptr) {
-    delete vip_info_;
-  }
-  vip_info_ = nullptr;
-}
-inline const ::MsgVIPInfo& MsgUpgradeVIP::_internal_vip_info() const {
-  const ::MsgVIPInfo* p = vip_info_;
-  return p != nullptr ? *p : reinterpret_cast<const ::MsgVIPInfo&>(
-      ::_MsgVIPInfo_default_instance_);
-}
-inline const ::MsgVIPInfo& MsgUpgradeVIP::vip_info() const {
-  // @@protoc_insertion_point(field_get:MsgUpgradeVIP.vip_info)
-  return _internal_vip_info();
-}
-inline void MsgUpgradeVIP::unsafe_arena_set_allocated_vip_info(
-    ::MsgVIPInfo* vip_info) {
-  if (GetArena() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(vip_info_);
-  }
-  vip_info_ = vip_info;
-  if (vip_info) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:MsgUpgradeVIP.vip_info)
-}
-inline ::MsgVIPInfo* MsgUpgradeVIP::release_vip_info() {
-  
-  ::MsgVIPInfo* temp = vip_info_;
-  vip_info_ = nullptr;
-  if (GetArena() != nullptr) {
-    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
-  }
-  return temp;
-}
-inline ::MsgVIPInfo* MsgUpgradeVIP::unsafe_arena_release_vip_info() {
-  // @@protoc_insertion_point(field_release:MsgUpgradeVIP.vip_info)
-  
-  ::MsgVIPInfo* temp = vip_info_;
-  vip_info_ = nullptr;
-  return temp;
-}
-inline ::MsgVIPInfo* MsgUpgradeVIP::_internal_mutable_vip_info() {
-  
-  if (vip_info_ == nullptr) {
-    auto* p = CreateMaybeMessage<::MsgVIPInfo>(GetArena());
-    vip_info_ = p;
-  }
-  return vip_info_;
-}
-inline ::MsgVIPInfo* MsgUpgradeVIP::mutable_vip_info() {
-  // @@protoc_insertion_point(field_mutable:MsgUpgradeVIP.vip_info)
-  return _internal_mutable_vip_info();
-}
-inline void MsgUpgradeVIP::set_allocated_vip_info(::MsgVIPInfo* vip_info) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
-  if (message_arena == nullptr) {
-    delete vip_info_;
-  }
-  if (vip_info) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(vip_info);
-    if (message_arena != submessage_arena) {
-      vip_info = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, vip_info, submessage_arena);
-    }
-    
-  } else {
-    
-  }
-  vip_info_ = vip_info;
-  // @@protoc_insertion_point(field_set_allocated:MsgUpgradeVIP.vip_info)
-}
-
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
