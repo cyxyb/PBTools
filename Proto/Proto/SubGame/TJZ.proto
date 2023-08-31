@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+package TJZ;
+
+enum EMsgIDTJZ
+{
+	SUB_CS_GAME_START		= 0; //开始游戏(MsgCommonN32)
+	SUB_SC_GAME_OVER		= 1; //游戏结束(CMD_3D_SC_Result)
+}
+
+message SC_SceneInfo
+{
+	int64			cur_jackpot			 = 1;		// 当前奖池
+	repeated int32	bet					 = 2;		// 押注列表
+	int32			cur_chip			 = 3;		// 当前押注
+	int32			cheat_limit_chip	 = 4;		// 作弊下注限制  没用 发0
+	int32			free_cnt			 = 5;		// 免费次数
+	repeated int32	icon				 = 6;		// 图标
+	int32			cur_up_process		 = 7;		// 当前图标升级进度
+	int32			up_process			 = 8;		// 下次转动使用图标进度
+	bool			return				 = 9;		// 是否重转 	1-->是  
+	bool			his_gold_more_than	 = 10;		// 历史金币是否超过限制 没用 发0
+};
+
+message HitIcon
+{
+	repeated bool is_hit_icon = 1;
+};
+// 游戏结果返回
+message CMD_3D_SC_Result
+{
+	int64				cur_jackpot			 = 1;		// 当前奖池
+	int64				hit_jackpot_gold	 = 2;		// 中彩金
+	int64				line_win_socre		 = 3;		// 结算金币
+	int64				win_type_score		 = 4;		// 大奖提示的金币？？？
+	int32				odd					 = 5;		// 总倍率
+	int32				cheat_limit_chip	 = 6;		// 作弊下注限制
+	repeated int32		icon				 = 7;						
+	repeated HitIcon	is_hit 			 	 = 8;		// 击中的图标
+	int32				add_free_cnt		 = 9;		// 增加免费次数
+	int32				free_cnt			 = 10;		// 免费次数
+	int32				cur_up_process		 = 11;		// 当前升级图标进度
+	int32				up_process			 = 12;		// 下次转动使用图标进度
+	int32				max_win_type		 = 13;		// 大奖类型(0:无, 1:发家致富, 2:腰缠万贯, 3:富甲天下)
+	bool				return				 = 14;		// 是否重转  1-->是
+	bool				his_gold_more_than	 = 15;		// 历史金币是否超过限制 没用 发0
+};

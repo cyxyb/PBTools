@@ -6,8 +6,8 @@ enum EMsgIDSG777
 {
 	SUB_CS_GAME_START		= 0;//开始游戏(MsgCommonN32)
 	SUB_CS_BELL_GAME_END	= 1;//小游戏(MsgCommonN32)	
-	SUB_SC_GAME_OVER		= 2;//游戏结束
-	SUB_SC_BELL_GAME		= 3;//铃铛游戏结算
+	SUB_SC_GAME_OVER		= 2;//游戏结束(CMD_3D_SC_Result)
+	SUB_SC_BELL_GAME		= 3;//铃铛游戏结算(CMD_StartBallGame)
 }
 
 //场景
