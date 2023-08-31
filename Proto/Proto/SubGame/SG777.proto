@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+package SG777;
+
+enum EMsgIDSG777
+{
+	SUB_CS_GAME_START		= 0;//开始游戏(MsgCommonN32)
+	SUB_CS_BELL_GAME_END	= 1;//小游戏(MsgCommonN32)	
+	SUB_SC_GAME_OVER		= 2;//游戏结束
+	SUB_SC_BELL_GAME		= 3;//铃铛游戏结算
+}
+
+//场景
+message SC_SceneInfo
+{
+	int32			cur_chip	= 1;		// 当前押注
+	repeated int32	bet			= 2;		// 押注列表
+	int32			free_cnt	= 3;		// 免费次数  
+	int32			bell_cnt	= 4;		// 铃铛次数	 
+	repeated int32	is_open		= 5;		// 铃铛是否开启
+	repeated int64	win_gold	= 6;
+};
+
+// 击中的图标
+message Hit_Icon
+{
+	repeated int32 	hit_icon 	= 1;
+}
+
+// 游戏结果返回
+message CMD_3D_SC_Result
+{
+	repeated int32		icon			= 1;						
+	repeated Hit_Icon 	hit_icon		= 2;		// 击中的图标
+	int32				odd				= 3;		// 获得的倍率
+	int32				full_screen_type= 4;		// 全屏类型
+	int64				win_gold		= 5;		// 赢得金币
+	int32				free_cnt		= 6;		// 免费次数
+	bool				is_small_game	= 7;		// 是否小游戏
+	repeated bool		open_wild		= 8;		// 是否开出wild
+};
+
+message CMD_StartBallGame
+{
+	int64	win_gold	= 1;			// 铃铛得分
+	int32	index		= 2;			// 铃铛位置
+	int32	bell_num	= 3;			// 铃铛已经点过数量
+};

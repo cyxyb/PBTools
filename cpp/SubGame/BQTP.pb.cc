@@ -91,7 +91,7 @@ const char descriptor_table_protodef_BQTP_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "ee_count\030\001 \001(\005\022\022\n\ncurren_bet\030\002 \001(\005\022\013\n\003be"
   "t\030\003 \003(\005\022\r\n\005rerun\030\004 \001(\005\"}\n\020CMD_3D_SC_Resu"
   "lt\022\014\n\004icon\030\001 \003(\005\022\020\n\010hit_icon\030\002 \003(\005\022\020\n\010wi"
-  "n_gold\030\003 \001(\005\022\022\n\nfree_count\030\004 \001(\005\022\r\n\005reru"
+  "n_gold\030\003 \001(\003\022\022\n\nfree_count\030\004 \001(\005\022\r\n\005reru"
   "n\030\005 \001(\005\022\024\n\014special_wild\030\006 \001(\005*O\n\nEMsgIDB"
   "QTP\022\025\n\021SUB_CS_GAME_START\020\000\022\023\n\017SUB_SC_BET"
   "_FAIL\020\001\022\025\n\021SUB_SC_START_GAME\020\002b\006proto3"
@@ -518,7 +518,7 @@ const char* CMD_3D_SC_Result::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 win_gold = 3;
+      // int64 win_gold = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           win_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
@@ -592,10 +592,10 @@ failure:
     }
   }
 
-  // int32 win_gold = 3;
+  // int64 win_gold = 3;
   if (this->win_gold() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_win_gold(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_win_gold(), target);
   }
 
   // int32 free_count = 4;
@@ -662,10 +662,10 @@ size_t CMD_3D_SC_Result::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  // int32 win_gold = 3;
+  // int64 win_gold = 3;
   if (this->win_gold() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_win_gold());
   }
 
