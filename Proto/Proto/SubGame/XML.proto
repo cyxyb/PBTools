@@ -1,0 +1,64 @@
+syntax = "proto3";
+
+package XML;
+
+enum EMsgIDXML
+{
+	LABA_MSG_CS_START				= 0;			//游戏开始(CS_Start)
+	LABA_MSG_CS_SMALL_GAME			= 1;			//小游戏(MsgCommonN32)
+	LABA_MSG_SC_START				= 2;			//游戏开始(MsgCommonN32)//1为未压线,2为未压钱,3为钱不够,4-CD,5-单线押注不对
+	LABA_MSG_SC_CHECKOUT			= 3;			//游戏结果(SC_CheckOut)
+	LABA_MSG_SC_SYNC_GOLD			= 4;			//玩家金币，上把赢得金币，总赢金币(SC_SyncGold)
+	LABA_MSG_SC_SMALL_GAME			= 5;			//小游戏(SC_stSmallGameInfo)
+	LABA_MSG_SC_UPDATE_PRIZE_POOL	= 6;			//更新奖池(MsgCommonN32)
+}
+
+message SC_CheckOut
+{
+	repeated int32 	result 					= 1;	//游戏结果
+	repeated int32 	reward_line_fruit_count	= 2;	//水果线数
+	int32 			win_pei_lv				= 3;	//赢得赔率
+	int64 			cur_gold				= 4;	//当前金币
+	int32 			win_gold				= 5;	//本次赢得金币
+	int32 			total_win_gold			= 6;	//总赢的金币
+	int32 			free_times				= 7;	//免费次数
+	int32 			multiple				= 8;	//单线倍率
+	int32 			jackpot_value			= 9;	//奖金池奖
+	int32 			small_game_times		= 10;	//小游戏次数
+};
+//开始
+message CS_Start 
+{
+	int32 line_num 	= 1;		//未使用
+	int32 line_gold = 2;		//下注金额
+};
+//同步金币
+message SC_SyncGold
+{
+	int64 			gold					= 1;	//玩家当前金币
+	int32 			last_win_gold			= 2;	//未使用
+	int32 			total_win_gold			= 3;	//总输赢
+};
+
+message SC_SceneInfo
+{
+	int32 			left_free_game_cnt		= 1;	//剩余免费游戏次数
+	int32 			multiple				= 2;	//单线倍率
+	repeated int32 	beton_gold				= 4;	//下注配置
+	int32 			free_game_cot_total		= 5;	//免费游戏总次数
+	int32 			free_game_gold			= 6;	//免费游戏获得金币
+	int32 			small_count				= 7;	//当前小游戏次数
+};
+
+message SC_stSmallGameInfo 
+{
+	int32 			small_game_tatol_conut	= 1;	//小游戏次数
+	int32 			small_game_conut		= 2;	//小游戏剩余次数
+	int32 			game_tatol_gold			= 3;	//小游戏总获得金币
+	int32 			icon_type				= 4;	//游戏图标
+	int32 			icon_type_conut			= 5;	//第几个水果
+	repeated int32 	icon_type4				= 6;	//中间四个图标
+	int32 			game_gold				= 7;	//游戏本次获得金币
+	bool 			game_end				= 8;	//游戏是否结束 0结束
+	int32 			line_gold				= 9;	//单线金币
+};

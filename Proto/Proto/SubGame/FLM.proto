@@ -36,9 +36,10 @@ message CMD_3D_SC_Result
 	repeated int32		icon 			= 1;		// 桌面结果
 	repeated int32		gold_num 		= 2;		// 金币数量
 	repeated Is_HitIcon	is_hit 			= 3;		// 是否中奖
-	int64				line_win_score 	= 4;		// 普通模式得分
-	int32				free_time 		= 5;		// 免费次数
-	int32				gold_mode_num 	= 6;		// 堆金积玉免费次数
-	int64				total_rate 		= 7;		// 总倍率
+	repeated int32 		fu_type			= 4;		// 不知道是啥（客户端说先给0）
+	int64				line_win_score 	= 5;		// 普通模式得分
+	int32				free_time 		= 6;		// 免费次数
+	int32				gold_mode_num 	= 7;		// 堆金积玉免费次数
+	int64				total_rate 		= 8;		// 总倍率
 };
 

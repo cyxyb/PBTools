@@ -30,19 +30,20 @@ namespace FLM {
             "KAUSDAoEaWNvbhgEIAMoBRIQCghnb2xkX251bRgFIAMoBRIfCgZpc19oaXQY",
             "BiADKAsyDy5GTE0uSXNfSGl0SWNvbhIPCgdmdV90eXBlGAcgAygFEhYKDmxp",
             "bmVfd2luX3Njb3JlGAggASgDEhEKCWZyZWVfdGltZRgJIAEoBRIVCg1nb2xk",
-            "X21vZGVfbnVtGAogASgFEhIKCnRvdGFsX3JhdGUYCyABKAMiqQEKEENNRF8z",
+            "X21vZGVfbnVtGAogASgFEhIKCnRvdGFsX3JhdGUYCyABKAMiugEKEENNRF8z",
             "RF9TQ19SZXN1bHQSDAoEaWNvbhgBIAMoBRIQCghnb2xkX251bRgCIAMoBRIf",
-            "CgZpc19oaXQYAyADKAsyDy5GTE0uSXNfSGl0SWNvbhIWCg5saW5lX3dpbl9z",
-            "Y29yZRgEIAEoAxIRCglmcmVlX3RpbWUYBSABKAUSFQoNZ29sZF9tb2RlX251",
-            "bRgGIAEoBRISCgp0b3RhbF9yYXRlGAcgASgDKlYKCUVNc2dJREZMTRIVChFT",
-            "VUJfQ1NfR0FNRV9TVEFSVBAAEhQKEFNVQl9TQ19HQU1FX09WRVIQARIcChhT",
-            "VUJfU0NfVVBEQVRFX1BSSVpFX1BPT0wQAmIGcHJvdG8z"));
+            "CgZpc19oaXQYAyADKAsyDy5GTE0uSXNfSGl0SWNvbhIPCgdmdV90eXBlGAQg",
+            "AygFEhYKDmxpbmVfd2luX3Njb3JlGAUgASgDEhEKCWZyZWVfdGltZRgGIAEo",
+            "BRIVCg1nb2xkX21vZGVfbnVtGAcgASgFEhIKCnRvdGFsX3JhdGUYCCABKAMq",
+            "VgoJRU1zZ0lERkxNEhUKEVNVQl9DU19HQU1FX1NUQVJUEAASFAoQU1VCX1ND",
+            "X0dBTUVfT1ZFUhABEhwKGFNVQl9TQ19VUERBVEVfUFJJWkVfUE9PTBACYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::FLM.EMsgIDFLM), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::FLM.Is_HitIcon), global::FLM.Is_HitIcon.Parser, new[]{ "IsHitIcon" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::FLM.SC_SceneInfo), global::FLM.SC_SceneInfo.Parser, new[]{ "CurChip", "ChipList", "FuScore", "Icon", "GoldNum", "IsHit", "FuType", "LineWinScore", "FreeTime", "GoldModeNum", "TotalRate" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::FLM.CMD_3D_SC_Result), global::FLM.CMD_3D_SC_Result.Parser, new[]{ "Icon", "GoldNum", "IsHit", "LineWinScore", "FreeTime", "GoldModeNum", "TotalRate" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::FLM.CMD_3D_SC_Result), global::FLM.CMD_3D_SC_Result.Parser, new[]{ "Icon", "GoldNum", "IsHit", "FuType", "LineWinScore", "FreeTime", "GoldModeNum", "TotalRate" }, null, null, null, null)
           }));
     }
     #endregion
@@ -774,6 +775,7 @@ namespace FLM {
       icon_ = other.icon_.Clone();
       goldNum_ = other.goldNum_.Clone();
       isHit_ = other.isHit_.Clone();
+      fuType_ = other.fuType_.Clone();
       lineWinScore_ = other.lineWinScore_;
       freeTime_ = other.freeTime_;
       goldModeNum_ = other.goldModeNum_;
@@ -825,8 +827,21 @@ namespace FLM {
       get { return isHit_; }
     }
 
+    /// <summary>Field number for the "fu_type" field.</summary>
+    public const int FuTypeFieldNumber = 4;
+    private static readonly pb::FieldCodec<int> _repeated_fuType_codec
+        = pb::FieldCodec.ForInt32(34);
+    private readonly pbc::RepeatedField<int> fuType_ = new pbc::RepeatedField<int>();
+    /// <summary>
+    /// 不知道是啥（客户端说先给0）
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<int> FuType {
+      get { return fuType_; }
+    }
+
     /// <summary>Field number for the "line_win_score" field.</summary>
-    public const int LineWinScoreFieldNumber = 4;
+    public const int LineWinScoreFieldNumber = 5;
     private long lineWinScore_;
     /// <summary>
     /// 普通模式得分
@@ -840,7 +855,7 @@ namespace FLM {
     }
 
     /// <summary>Field number for the "free_time" field.</summary>
-    public const int FreeTimeFieldNumber = 5;
+    public const int FreeTimeFieldNumber = 6;
     private int freeTime_;
     /// <summary>
     /// 免费次数
@@ -854,7 +869,7 @@ namespace FLM {
     }
 
     /// <summary>Field number for the "gold_mode_num" field.</summary>
-    public const int GoldModeNumFieldNumber = 6;
+    public const int GoldModeNumFieldNumber = 7;
     private int goldModeNum_;
     /// <summary>
     /// 堆金积玉免费次数
@@ -868,7 +883,7 @@ namespace FLM {
     }
 
     /// <summary>Field number for the "total_rate" field.</summary>
-    public const int TotalRateFieldNumber = 7;
+    public const int TotalRateFieldNumber = 8;
     private long totalRate_;
     /// <summary>
     /// 总倍率
@@ -897,6 +912,7 @@ namespace FLM {
       if(!icon_.Equals(other.icon_)) return false;
       if(!goldNum_.Equals(other.goldNum_)) return false;
       if(!isHit_.Equals(other.isHit_)) return false;
+      if(!fuType_.Equals(other.fuType_)) return false;
       if (LineWinScore != other.LineWinScore) return false;
       if (FreeTime != other.FreeTime) return false;
       if (GoldModeNum != other.GoldModeNum) return false;
@@ -910,6 +926,7 @@ namespace FLM {
       hash ^= icon_.GetHashCode();
       hash ^= goldNum_.GetHashCode();
       hash ^= isHit_.GetHashCode();
+      hash ^= fuType_.GetHashCode();
       if (LineWinScore != 0L) hash ^= LineWinScore.GetHashCode();
       if (FreeTime != 0) hash ^= FreeTime.GetHashCode();
       if (GoldModeNum != 0) hash ^= GoldModeNum.GetHashCode();
@@ -933,20 +950,21 @@ namespace FLM {
       icon_.WriteTo(output, _repeated_icon_codec);
       goldNum_.WriteTo(output, _repeated_goldNum_codec);
       isHit_.WriteTo(output, _repeated_isHit_codec);
+      fuType_.WriteTo(output, _repeated_fuType_codec);
       if (LineWinScore != 0L) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(40);
         output.WriteInt64(LineWinScore);
       }
       if (FreeTime != 0) {
-        output.WriteRawTag(40);
+        output.WriteRawTag(48);
         output.WriteInt32(FreeTime);
       }
       if (GoldModeNum != 0) {
-        output.WriteRawTag(48);
+        output.WriteRawTag(56);
         output.WriteInt32(GoldModeNum);
       }
       if (TotalRate != 0L) {
-        output.WriteRawTag(56);
+        output.WriteRawTag(64);
         output.WriteInt64(TotalRate);
       }
       if (_unknownFields != null) {
@@ -961,20 +979,21 @@ namespace FLM {
       icon_.WriteTo(ref output, _repeated_icon_codec);
       goldNum_.WriteTo(ref output, _repeated_goldNum_codec);
       isHit_.WriteTo(ref output, _repeated_isHit_codec);
+      fuType_.WriteTo(ref output, _repeated_fuType_codec);
       if (LineWinScore != 0L) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(40);
         output.WriteInt64(LineWinScore);
       }
       if (FreeTime != 0) {
-        output.WriteRawTag(40);
+        output.WriteRawTag(48);
         output.WriteInt32(FreeTime);
       }
       if (GoldModeNum != 0) {
-        output.WriteRawTag(48);
+        output.WriteRawTag(56);
         output.WriteInt32(GoldModeNum);
       }
       if (TotalRate != 0L) {
-        output.WriteRawTag(56);
+        output.WriteRawTag(64);
         output.WriteInt64(TotalRate);
       }
       if (_unknownFields != null) {
@@ -989,6 +1008,7 @@ namespace FLM {
       size += icon_.CalculateSize(_repeated_icon_codec);
       size += goldNum_.CalculateSize(_repeated_goldNum_codec);
       size += isHit_.CalculateSize(_repeated_isHit_codec);
+      size += fuType_.CalculateSize(_repeated_fuType_codec);
       if (LineWinScore != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(LineWinScore);
       }
@@ -1015,6 +1035,7 @@ namespace FLM {
       icon_.Add(other.icon_);
       goldNum_.Add(other.goldNum_);
       isHit_.Add(other.isHit_);
+      fuType_.Add(other.fuType_);
       if (other.LineWinScore != 0L) {
         LineWinScore = other.LineWinScore;
       }
@@ -1055,19 +1076,24 @@ namespace FLM {
             isHit_.AddEntriesFrom(input, _repeated_isHit_codec);
             break;
           }
+          case 34:
           case 32: {
-            LineWinScore = input.ReadInt64();
+            fuType_.AddEntriesFrom(input, _repeated_fuType_codec);
             break;
           }
           case 40: {
-            FreeTime = input.ReadInt32();
+            LineWinScore = input.ReadInt64();
             break;
           }
           case 48: {
-            GoldModeNum = input.ReadInt32();
+            FreeTime = input.ReadInt32();
             break;
           }
           case 56: {
+            GoldModeNum = input.ReadInt32();
+            break;
+          }
+          case 64: {
             TotalRate = input.ReadInt64();
             break;
           }
@@ -1099,19 +1125,24 @@ namespace FLM {
             isHit_.AddEntriesFrom(ref input, _repeated_isHit_codec);
             break;
           }
+          case 34:
           case 32: {
-            LineWinScore = input.ReadInt64();
+            fuType_.AddEntriesFrom(ref input, _repeated_fuType_codec);
             break;
           }
           case 40: {
-            FreeTime = input.ReadInt32();
+            LineWinScore = input.ReadInt64();
             break;
           }
           case 48: {
-            GoldModeNum = input.ReadInt32();
+            FreeTime = input.ReadInt32();
             break;
           }
           case 56: {
+            GoldModeNum = input.ReadInt32();
+            break;
+          }
+          case 64: {
             TotalRate = input.ReadInt64();
             break;
           }

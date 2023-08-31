@@ -690,10 +690,11 @@ class CMD_3D_SC_Result PROTOBUF_FINAL :
     kIconFieldNumber = 1,
     kGoldNumFieldNumber = 2,
     kIsHitFieldNumber = 3,
-    kLineWinScoreFieldNumber = 4,
-    kFreeTimeFieldNumber = 5,
-    kGoldModeNumFieldNumber = 6,
-    kTotalRateFieldNumber = 7,
+    kFuTypeFieldNumber = 4,
+    kLineWinScoreFieldNumber = 5,
+    kFreeTimeFieldNumber = 6,
+    kGoldModeNumFieldNumber = 7,
+    kTotalRateFieldNumber = 8,
   };
   // repeated int32 icon = 1;
   int icon_size() const;
@@ -757,7 +758,29 @@ class CMD_3D_SC_Result PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FLM::Is_HitIcon >&
       is_hit() const;
 
-  // int64 line_win_score = 4;
+  // repeated int32 fu_type = 4;
+  int fu_type_size() const;
+  private:
+  int _internal_fu_type_size() const;
+  public:
+  void clear_fu_type();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_fu_type(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_fu_type() const;
+  void _internal_add_fu_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_fu_type();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 fu_type(int index) const;
+  void set_fu_type(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_fu_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      fu_type() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_fu_type();
+
+  // int64 line_win_score = 5;
   void clear_line_win_score();
   ::PROTOBUF_NAMESPACE_ID::int64 line_win_score() const;
   void set_line_win_score(::PROTOBUF_NAMESPACE_ID::int64 value);
@@ -766,7 +789,7 @@ class CMD_3D_SC_Result PROTOBUF_FINAL :
   void _internal_set_line_win_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int32 free_time = 5;
+  // int32 free_time = 6;
   void clear_free_time();
   ::PROTOBUF_NAMESPACE_ID::int32 free_time() const;
   void set_free_time(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -775,7 +798,7 @@ class CMD_3D_SC_Result PROTOBUF_FINAL :
   void _internal_set_free_time(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 gold_mode_num = 6;
+  // int32 gold_mode_num = 7;
   void clear_gold_mode_num();
   ::PROTOBUF_NAMESPACE_ID::int32 gold_mode_num() const;
   void set_gold_mode_num(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -784,7 +807,7 @@ class CMD_3D_SC_Result PROTOBUF_FINAL :
   void _internal_set_gold_mode_num(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int64 total_rate = 7;
+  // int64 total_rate = 8;
   void clear_total_rate();
   ::PROTOBUF_NAMESPACE_ID::int64 total_rate() const;
   void set_total_rate(::PROTOBUF_NAMESPACE_ID::int64 value);
@@ -805,6 +828,8 @@ class CMD_3D_SC_Result PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > gold_num_;
   mutable std::atomic<int> _gold_num_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::FLM::Is_HitIcon > is_hit_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > fu_type_;
+  mutable std::atomic<int> _fu_type_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::int64 line_win_score_;
   ::PROTOBUF_NAMESPACE_ID::int32 free_time_;
   ::PROTOBUF_NAMESPACE_ID::int32 gold_mode_num_;
@@ -1385,7 +1410,54 @@ CMD_3D_SC_Result::is_hit() const {
   return is_hit_;
 }
 
-// int64 line_win_score = 4;
+// repeated int32 fu_type = 4;
+inline int CMD_3D_SC_Result::_internal_fu_type_size() const {
+  return fu_type_.size();
+}
+inline int CMD_3D_SC_Result::fu_type_size() const {
+  return _internal_fu_type_size();
+}
+inline void CMD_3D_SC_Result::clear_fu_type() {
+  fu_type_.Clear();
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_3D_SC_Result::_internal_fu_type(int index) const {
+  return fu_type_.Get(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_3D_SC_Result::fu_type(int index) const {
+  // @@protoc_insertion_point(field_get:FLM.CMD_3D_SC_Result.fu_type)
+  return _internal_fu_type(index);
+}
+inline void CMD_3D_SC_Result::set_fu_type(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  fu_type_.Set(index, value);
+  // @@protoc_insertion_point(field_set:FLM.CMD_3D_SC_Result.fu_type)
+}
+inline void CMD_3D_SC_Result::_internal_add_fu_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  fu_type_.Add(value);
+}
+inline void CMD_3D_SC_Result::add_fu_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_fu_type(value);
+  // @@protoc_insertion_point(field_add:FLM.CMD_3D_SC_Result.fu_type)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+CMD_3D_SC_Result::_internal_fu_type() const {
+  return fu_type_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+CMD_3D_SC_Result::fu_type() const {
+  // @@protoc_insertion_point(field_list:FLM.CMD_3D_SC_Result.fu_type)
+  return _internal_fu_type();
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+CMD_3D_SC_Result::_internal_mutable_fu_type() {
+  return &fu_type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+CMD_3D_SC_Result::mutable_fu_type() {
+  // @@protoc_insertion_point(field_mutable_list:FLM.CMD_3D_SC_Result.fu_type)
+  return _internal_mutable_fu_type();
+}
+
+// int64 line_win_score = 5;
 inline void CMD_3D_SC_Result::clear_line_win_score() {
   line_win_score_ = PROTOBUF_LONGLONG(0);
 }
@@ -1405,7 +1477,7 @@ inline void CMD_3D_SC_Result::set_line_win_score(::PROTOBUF_NAMESPACE_ID::int64 
   // @@protoc_insertion_point(field_set:FLM.CMD_3D_SC_Result.line_win_score)
 }
 
-// int32 free_time = 5;
+// int32 free_time = 6;
 inline void CMD_3D_SC_Result::clear_free_time() {
   free_time_ = 0;
 }
@@ -1425,7 +1497,7 @@ inline void CMD_3D_SC_Result::set_free_time(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:FLM.CMD_3D_SC_Result.free_time)
 }
 
-// int32 gold_mode_num = 6;
+// int32 gold_mode_num = 7;
 inline void CMD_3D_SC_Result::clear_gold_mode_num() {
   gold_mode_num_ = 0;
 }
@@ -1445,7 +1517,7 @@ inline void CMD_3D_SC_Result::set_gold_mode_num(::PROTOBUF_NAMESPACE_ID::int32 v
   // @@protoc_insertion_point(field_set:FLM.CMD_3D_SC_Result.gold_mode_num)
 }
 
-// int64 total_rate = 7;
+// int64 total_rate = 8;
 inline void CMD_3D_SC_Result::clear_total_rate() {
   total_rate_ = PROTOBUF_LONGLONG(0);
 }
