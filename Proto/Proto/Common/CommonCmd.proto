@@ -73,6 +73,12 @@ enum EMsgIDLogin
 	MsgIDLogin_ForgetPasswordResp				= 52;		//忘记密码返回(MsgCommonN32)
 	MsgIDLogin_RechargeNotify					= 53;		//充值成功回调(MsgCommonBool)
 	MsgIDLogin_GetPlayerGoldResp				= 54;		//获取玩家金币(MsgCommonN64)
+	MsgIDVIP_GetVIPConfig						= 55;		//获取VIP配置(MsgCommonBool)
+	MsgIDVIP_GetVIPConfigResp					= 56;		//获取VIP配置返回(MsgVIPConfig)
+	MsgIDVIP_GetPlayerHitCoding					= 57;		//获取玩家打码量(MsgCommonBool)
+	MsgIDVIP_GetPlayerHitCodingResp				= 58;		//获取玩家打码量(MsgCommonN64)
+	MsgIDVIP_VIPUpgrade							= 59;		//升级VIP(MsgCommonBool)
+	MsgIDVIP_VIPUpgradeResp						= 60;		//升级VIP返回(MsgUpgradeVIP)
 }
 
 enum EMsgIDGame

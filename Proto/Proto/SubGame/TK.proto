@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+package TK;
+
+enum EMsgIDTK
+{
+	SUB_CS_GAME_START		= 0;	//开始游戏(MsgCommonN32)
+	SUB_SC_GAME_START		= 1; 	//启动游戏 (CMD_3D_SC_Result)
+	SUB_SC_BET_FAIL			= 2; 	//游戏结束(MsgCommonN32)
+};
+
+message SC_SceneInfo
+{
+	int32	free_count		= 1;			// 免费次数
+	int32	cur_bet			= 2;			// 当前下注
+	repeated int32	bet		= 4;
+	int32	free_type		= 5;			
+	int32	ext_odd			= 6;			// 额外倍数
+	int32	start_row		= 7;			// 浮动起始行
+	int32	start_col		= 8;			// 浮动起始列
+	int32	type			= 9;			// 浮动类型
+	int32	ext_wild_count	= 10;			// 额外wild数量
+	repeated int32	fixed	= 11;			// 固定wild
+};
+// 击中的图标
+message Hit_Icon
+{
+	repeated int32 	hit_icon 	= 1;
+};
+// 游戏结果返回
+message CMD_3D_SC_Result
+{
+	repeated int32	icon			= 1;
+	repeated Hit_Icon 	hit_icon	= 2;		// 击中的图标
+	int32	win_gold				= 3;		// 赢得金币
+	int32	free_count				= 4;		// 免费次数
+	int32	free_type				= 5;		// 免费类型（1：扩散 2：固定 3：倍数 4：浮动）
+	int32	no_lmal_free_type		= 6;		// 普通免费游戏类型
+	int32	ext_odd					= 7;		// 额外倍数
+	int32	start_row				= 8;		// 浮动起始行
+	int32	start_col				= 9;		// 浮动起始列
+	int32	type					= 10;		// 浮动类型
+	int32	ext_wild_count			= 11;		// 额外wild个数
+	repeated int32	fixed			= 12;		// 固定wild
+};

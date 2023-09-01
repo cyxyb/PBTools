@@ -3011,9 +3011,10 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
     kUserIdFieldNumber = 2,
     kBeautifulIdFieldNumber = 3,
     kUserTypeFieldNumber = 8,
-    kCoinFieldNumber = 10,
     kFirstRechargeFieldNumber = 7,
     kIsDrainFieldNumber = 9,
+    kVipLevelFieldNumber = 13,
+    kCoinFieldNumber = 10,
   };
   // string account = 4;
   void clear_account();
@@ -3131,15 +3132,6 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
   void _internal_set_user_type(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // uint64 coin = 10;
-  void clear_coin();
-  ::PROTOBUF_NAMESPACE_ID::uint64 coin() const;
-  void set_coin(::PROTOBUF_NAMESPACE_ID::uint64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::uint64 _internal_coin() const;
-  void _internal_set_coin(::PROTOBUF_NAMESPACE_ID::uint64 value);
-  public:
-
   // bool first_recharge = 7;
   void clear_first_recharge();
   bool first_recharge() const;
@@ -3158,6 +3150,24 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
   void _internal_set_is_drain(bool value);
   public:
 
+  // int32 vip_level = 13;
+  void clear_vip_level();
+  ::PROTOBUF_NAMESPACE_ID::int32 vip_level() const;
+  void set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_vip_level() const;
+  void _internal_set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // uint64 coin = 10;
+  void clear_coin();
+  ::PROTOBUF_NAMESPACE_ID::uint64 coin() const;
+  void set_coin(::PROTOBUF_NAMESPACE_ID::uint64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::uint64 _internal_coin() const;
+  void _internal_set_coin(::PROTOBUF_NAMESPACE_ID::uint64 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgLoginPlayerInfo)
  private:
   class _Internal;
@@ -3174,9 +3184,10 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 beautiful_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 user_type_;
-  ::PROTOBUF_NAMESPACE_ID::uint64 coin_;
   bool first_recharge_;
   bool is_drain_;
+  ::PROTOBUF_NAMESPACE_ID::int32 vip_level_;
+  ::PROTOBUF_NAMESPACE_ID::uint64 coin_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -7810,6 +7821,26 @@ inline void MsgLoginPlayerInfo::set_allocated_password(std::string* password) {
   password_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), password,
       GetArena());
   // @@protoc_insertion_point(field_set_allocated:MsgLoginPlayerInfo.password)
+}
+
+// int32 vip_level = 13;
+inline void MsgLoginPlayerInfo::clear_vip_level() {
+  vip_level_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgLoginPlayerInfo::_internal_vip_level() const {
+  return vip_level_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgLoginPlayerInfo::vip_level() const {
+  // @@protoc_insertion_point(field_get:MsgLoginPlayerInfo.vip_level)
+  return _internal_vip_level();
+}
+inline void MsgLoginPlayerInfo::_internal_set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  vip_level_ = value;
+}
+inline void MsgLoginPlayerInfo::set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_vip_level(value);
+  // @@protoc_insertion_point(field_set:MsgLoginPlayerInfo.vip_level)
 }
 
 // -------------------------------------------------------------------

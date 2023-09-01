@@ -27,7 +27,7 @@ public static partial class CommonCmdReflection {
           "SW5mbxDpBxIUCg9FTXNnSURNYWluX0dhbWUQ0Q8SFwoSRU1zZ0lETWFpbl9T",
           "dWJHYW1lENIPKmsKCEVSZXNDb2RlEhEKDUVSZXNDb2RlX05VTEwQABIYChRF",
           "UmVzQ29kZV9JbnZpbGlkTWFpbBABEhkKFUVSZXNDb2RlX01haWxSZWNhbGxl",
-          "ZBACEhcKE0VSZXNDb2RlX01haWxQaWNrZWQQAyriDQoLRU1zZ0lETG9naW4S",
+          "ZBACEhcKE0VSZXNDb2RlX01haWxQaWNrZWQQAyqYDwoLRU1zZ0lETG9naW4S",
           "EwoPTXNnSURMb2dpbl9OdWxsEAASFAoQTXNnSURMb2dpbl9Mb2dpbhABEhgK",
           "FE1zZ0lETG9naW5fTG9naW5SZXNwEAISHQoZTXNnSURMb2dpbl9Nb2RpZnlO",
           "aWNrTmFtZRADEiEKHU1zZ0lETG9naW5fTW9kaWZ5Tmlja05hbWVSZXNwEAQS",
@@ -66,21 +66,25 @@ public static partial class CommonCmdReflection {
           "YXRlEDESIwofTXNnSURTaGFyZV9BZ2VuY3lJbmZvUmViYXRlUmVzcBAyEh0K",
           "GU1zZ0lETG9naW5fRm9yZ2V0UGFzc3dvcmQQMxIhCh1Nc2dJRExvZ2luX0Zv",
           "cmdldFBhc3N3b3JkUmVzcBA0Eh0KGU1zZ0lETG9naW5fUmVjaGFyZ2VOb3Rp",
-          "ZnkQNRIgChxNc2dJRExvZ2luX0dldFBsYXllckdvbGRSZXNwEDYq7gQKCkVN",
-          "c2dJREdhbWUSEgoOTXNnSURHYW1lX051bGwQABIUCg9Nc2dJREdhbWVfTG9n",
-          "aW4Q6QcSGAoTTXNnSURHYW1lX0xvZ2luUmVzcBDqBxIeChlNc2dJREdhbWVf",
-          "U3F1ZWV6ZVNlYXRSZXNwEOsHEhUKEE1zZ0lER2FtZV9Mb2dvdXQQ7AcSGgoV",
-          "TXNnSURHYW1lX0F1dG9TaXREb3duEO0HEhoKFU1zZ0lER2FtZV9TaXREb3du",
-          "UmVzcBDuBxIhChxNc2dJREdhbWVfU3luY1BsYXllckluZm9SZXNwEO8HEiYK",
-          "IU1zZ0lER2FtZV9Ob3RpZnlQbGF5ZXJTdGFuZFVwUmVzcBDwBxIjCh5Nc2dJ",
-          "REdhbWVfU3luY1BsYXllcnNTY29yZVJlc3AQ8QcSHAoXTXNnSURHYW1lX1Nl",
-          "bmRHYW1lU2VuY2UQ8gcSIAobTXNnSURHYW1lX1NlbmRHYW1lU2VuY2VSZXNw",
-          "EPMHEiAKG01zZ0lER2FtZV9Ob3RpZnlNZXNzYWdlUmVzcBD0BxIZChRNc2dJ",
-          "REdhbWVfQ3JlYXRlUm9vbRD1BxIXChJNc2dJREdhbWVfSm9pblJvb20Q9gcS",
-          "GgoVTXNnSURHYW1lX1F1ZXJ5UmVjb3JkEPcHEiMKHk1zZ0lER2FtZV9RdWVy",
-          "eVJvdW5kUmVjb3JkUmVzcBD4BxIhChxNc2dJREdhbWVfUXVlcnlEYXlSZWNv",
-          "cmRSZXNwEPkHEhsKFk1zZ0lER2FtZV9BZGRPbmVSZWNvcmQQ+gcSJgohTXNn",
-          "SURHYW1lX05vdGlmeVBsYXllck9mZmxpbmVSZXNwEPsHYgZwcm90bzM="));
+          "ZnkQNRIgChxNc2dJRExvZ2luX0dldFBsYXllckdvbGRSZXNwEDYSGQoVTXNn",
+          "SURWSVBfR2V0VklQQ29uZmlnEDcSHQoZTXNnSURWSVBfR2V0VklQQ29uZmln",
+          "UmVzcBA4Eh8KG01zZ0lEVklQX0dldFBsYXllckhpdENvZGluZxA5EiMKH01z",
+          "Z0lEVklQX0dldFBsYXllckhpdENvZGluZ1Jlc3AQOhIXChNNc2dJRFZJUF9W",
+          "SVBVcGdyYWRlEDsSGwoXTXNnSURWSVBfVklQVXBncmFkZVJlc3AQPCruBAoK",
+          "RU1zZ0lER2FtZRISCg5Nc2dJREdhbWVfTnVsbBAAEhQKD01zZ0lER2FtZV9M",
+          "b2dpbhDpBxIYChNNc2dJREdhbWVfTG9naW5SZXNwEOoHEh4KGU1zZ0lER2Ft",
+          "ZV9TcXVlZXplU2VhdFJlc3AQ6wcSFQoQTXNnSURHYW1lX0xvZ291dBDsBxIa",
+          "ChVNc2dJREdhbWVfQXV0b1NpdERvd24Q7QcSGgoVTXNnSURHYW1lX1NpdERv",
+          "d25SZXNwEO4HEiEKHE1zZ0lER2FtZV9TeW5jUGxheWVySW5mb1Jlc3AQ7wcS",
+          "JgohTXNnSURHYW1lX05vdGlmeVBsYXllclN0YW5kVXBSZXNwEPAHEiMKHk1z",
+          "Z0lER2FtZV9TeW5jUGxheWVyc1Njb3JlUmVzcBDxBxIcChdNc2dJREdhbWVf",
+          "U2VuZEdhbWVTZW5jZRDyBxIgChtNc2dJREdhbWVfU2VuZEdhbWVTZW5jZVJl",
+          "c3AQ8wcSIAobTXNnSURHYW1lX05vdGlmeU1lc3NhZ2VSZXNwEPQHEhkKFE1z",
+          "Z0lER2FtZV9DcmVhdGVSb29tEPUHEhcKEk1zZ0lER2FtZV9Kb2luUm9vbRD2",
+          "BxIaChVNc2dJREdhbWVfUXVlcnlSZWNvcmQQ9wcSIwoeTXNnSURHYW1lX1F1",
+          "ZXJ5Um91bmRSZWNvcmRSZXNwEPgHEiEKHE1zZ0lER2FtZV9RdWVyeURheVJl",
+          "Y29yZFJlc3AQ+QcSGwoWTXNnSURHYW1lX0FkZE9uZVJlY29yZBD6BxImCiFN",
+          "c2dJREdhbWVfTm90aWZ5UGxheWVyT2ZmbGluZVJlc3AQ+wdiBnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::EMsgIDMain), typeof(global::EResCode), typeof(global::EMsgIDLogin), typeof(global::EMsgIDGame), }, null, null));
@@ -339,6 +343,30 @@ public enum EMsgIDLogin {
   ///获取玩家金币(MsgCommonN64)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_GetPlayerGoldResp")] MsgIdloginGetPlayerGoldResp = 54,
+  /// <summary>
+  ///获取VIP配置(MsgCommonBool)
+  /// </summary>
+  [pbr::OriginalName("MsgIDVIP_GetVIPConfig")] MsgIdvipGetVipconfig = 55,
+  /// <summary>
+  ///获取VIP配置返回(MsgVIPConfig)
+  /// </summary>
+  [pbr::OriginalName("MsgIDVIP_GetVIPConfigResp")] MsgIdvipGetVipconfigResp = 56,
+  /// <summary>
+  ///获取玩家打码量(MsgCommonBool)
+  /// </summary>
+  [pbr::OriginalName("MsgIDVIP_GetPlayerHitCoding")] MsgIdvipGetPlayerHitCoding = 57,
+  /// <summary>
+  ///获取玩家打码量(MsgCommonN64)
+  /// </summary>
+  [pbr::OriginalName("MsgIDVIP_GetPlayerHitCodingResp")] MsgIdvipGetPlayerHitCodingResp = 58,
+  /// <summary>
+  ///升级VIP(MsgCommonBool)
+  /// </summary>
+  [pbr::OriginalName("MsgIDVIP_VIPUpgrade")] MsgIdvipVipupgrade = 59,
+  /// <summary>
+  ///升级VIP返回(MsgUpgradeVIP)
+  /// </summary>
+  [pbr::OriginalName("MsgIDVIP_VIPUpgradeResp")] MsgIdvipVipupgradeResp = 60,
 }
 
 public enum EMsgIDGame {

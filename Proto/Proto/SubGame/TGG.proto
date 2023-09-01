@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package TGG;
+
+enum EMsgIDTGG
+{
+	SUB_CS_GAME_START		= 0; 	//开始游戏(MsgCommonN32)
+	SUB_SC_GAME_OVER		= 1;	//游戏结束(CMD_3D_SC_Result)
+	SUB_SC_BET_ERR			= 2;   //下注失败MsgCommonN32//金币不足、2下注值不对
+}
+
+//场景消息
+message SC_SceneInfo
+{
+	int32			cur_bet			= 1;	//下注值
+	int32			user_gold		= 2;	//金币
+	repeated int32	bet				= 3;	//押注列表
+	int32			free_count		= 4;	//免费次数
+	int32			cur_free_double	= 5;	//免费游戏倍数
+	int32			cai_jin			= 6;	//彩金
+};
+
+message stLineInfo
+{
+	int32	Icon 	= 1;			//中奖图标
+	int32   Count 	= 2;			//中奖数量(几连)
+};
+// 游戏结果返回
+message CMD_3D_SC_Result
+{
+	repeated int32		icon			= 1;	
+	repeated stLineInfo line_info		= 2;
+	int32				line_win_score	= 3;				//连线赢得的总分
+	int32				free_num		= 4;				//免费次数
+	int32				win_cai_jin		= 5;				//本局获得彩金
+	int32				change_line		= 6;
+};
