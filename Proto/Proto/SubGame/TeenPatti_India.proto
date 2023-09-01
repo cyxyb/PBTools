@@ -1,0 +1,117 @@
+syntax = "proto3";
+
+package TeenPatti_India;
+
+enum EMsgIDSubGame
+{
+	MsgIDSubGame_Null					= 0;
+	MsgIDSubGame_GameStartResp			= 1;	//游戏开始(MsgGameStartResp)
+	MsgIDSubGame_Action					= 2;	//玩家操作(MsgAction)
+	MsgIDSubGame_GiveUpResp				= 3;	//玩家弃牌返回(MsgGiveUpResp)
+	MsgIDSubGame_LookCard				= 4;	//玩家看牌(MsgLookCardResp)
+	MsgIDSubGame_AddBetResp				= 5;	//玩家下注(MsgAddBetResp)
+	MsgIDSubGame_CompareCardResp		= 6;	//玩家请求比牌(MsgCompareCardResp)
+	MsgIDSubGame_CompareRetResp			= 7;	//玩家比牌结果(MsgCompareCardRetResp)
+	MsgIDSubGame_GameResultResp			= 8;	//玩家下注记录(MsgGameResultResp)
+}
+
+message MsgHandCards
+{
+	int32			  	cards			= 1;	//手牌
+}
+
+//场景消息
+message MsgSceneInfo
+{
+	int64			  	max_score		= 1;	//最大下注
+	int64			  	table_max_score	= 2;	//最大下注
+	int32			  	cell_score		= 3;	//底分
+	int32				cur_times		= 4;	//当前倍数
+	int32				table_state		= 5;	//桌子状态
+	int32				total_bet_score	= 6;	//桌内总下注
+	int32				banker_chair_id	= 7;	//庄家椅子号
+	int32				cur_chair_id	= 8;	//当前操作椅子号
+	repeated int32		ming_zhu		= 9;	//明注状态
+	MsgHandCards		hand_cards		= 10;	//手牌
+	repeated int32		play_status		= 11;	//玩家状态
+	repeated int32		player_bet		= 12;	//玩家投注总和
+	int32				cur_chair_act	= 13;	//当前玩家的操作码
+	int32				out_time		= 14;	//当前状态剩余超时时间
+	bool				compare_state	= 15;	//当前是否处理比牌中
+}
+
+//游戏开始
+message MsgGameStartResp
+{
+	int32				cur_chair_id	= 1;	//操作玩家椅子号
+	int32				cur_times		= 2;	//当前倍数
+	int32				banker_chair_id	= 3;	//庄家椅子号
+	int64				max_score		= 4;	//最大下注
+	int64				max_blind		= 5;	//盲投次数限制
+	int32				cell_score		= 6;	//底分
+	int64				table_max_score	= 7;	//桌内最大下注
+}
+
+//玩家操作
+message MsgAction
+{
+	int32				act				= 1;	//操作标示
+	int64				bet_score		= 2;	//下注金额
+	int64				compare_user	= 3;	//比牌椅子id
+	bool				is_ok			= 4;	//是否同意比牌
+}
+
+//玩家弃牌返回
+message MsgGiveUpResp
+{
+	int32				chair_id		= 1;	//玩家椅子号
+	MsgBet				bet_info		= 2;	//玩家下注信息
+}
+
+//玩家看牌
+message MsgLookCardResp
+{
+	int32				chair_id		= 1;	//玩家椅子号
+	repeated int32		cards			= 2;	//手牌
+}
+
+message MsgAddBetResp
+{
+	int32				cur_chair_id	= 1;	//下个操作玩家椅子号
+	int32				cur_times		= 2;	//当前倍数
+	int32				current_act		= 3;	//当前操作码
+	int32				add_chair_id	= 4;	//下注玩家椅子号
+	int32				add_score		= 5;	//下注金额
+	//int32				compare_state	= 6;	//是否比牌应答
+
+}
+
+//玩家请求比牌
+message MsgCompareCardResp
+{
+	int32				chair_id		= 1;	//玩家椅子号
+	int32				compare_id		= 2;	//被比玩家椅子号
+}
+
+//玩家比牌结果
+message MsgCompareCardRetResp
+{
+	int32				current_chair_id= 1;	//下个操作玩家椅子号
+	int32				lost_id			= 2;	//输家椅子号
+	int32				compare_id		= 3;	//比牌椅子号
+	int32				passive_id		= 4;	//被比椅子号
+	int32				compare_cards	= 5;	//比牌玩家手牌
+	int32				passive_cards	= 6;	//被比玩家手牌
+}                                           
+
+
+//游戏结果                                  
+message MsgGameResult                           
+{                                           
+	int32					game_tax		= 1;	//税收
+	repeated int64			game_score		= 2;	//输赢分
+	repeated MsgHandCards	player_hands	= 3;	//手牌
+	int32					end_state		= 4;	//结束状态  1 比牌结束 2 全场秀牌
+}                                           
+
+
