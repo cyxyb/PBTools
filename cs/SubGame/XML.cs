@@ -9,7 +9,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace XML {
+namespace SGXML {
 
   /// <summary>Holder for reflection information generated from Proto/SubGame/XML.proto</summary>
   public static partial class XMLReflection {
@@ -24,36 +24,36 @@ namespace XML {
     static XMLReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChdQcm90by9TdWJHYW1lL1hNTC5wcm90bxIDWE1MIuUBCgtTQ19DaGVja091",
-            "dBIOCgZyZXN1bHQYASADKAUSHwoXcmV3YXJkX2xpbmVfZnJ1aXRfY291bnQY",
-            "AiADKAUSEgoKd2luX3BlaV9sdhgDIAEoBRIQCghjdXJfZ29sZBgEIAEoAxIQ",
-            "Cgh3aW5fZ29sZBgFIAEoBRIWCg50b3RhbF93aW5fZ29sZBgGIAEoBRISCgpm",
-            "cmVlX3RpbWVzGAcgASgFEhAKCG11bHRpcGxlGAggASgFEhUKDWphY2twb3Rf",
-            "dmFsdWUYCSABKAUSGAoQc21hbGxfZ2FtZV90aW1lcxgKIAEoBSIvCghDU19T",
-            "dGFydBIQCghsaW5lX251bRgBIAEoBRIRCglsaW5lX2dvbGQYAiABKAUiSgoL",
-            "U0NfU3luY0dvbGQSDAoEZ29sZBgBIAEoAxIVCg1sYXN0X3dpbl9nb2xkGAIg",
-            "ASgFEhYKDnRvdGFsX3dpbl9nb2xkGAMgASgFIpoBCgxTQ19TY2VuZUluZm8S",
-            "GgoSbGVmdF9mcmVlX2dhbWVfY250GAEgASgFEhAKCG11bHRpcGxlGAIgASgF",
-            "EhIKCmJldG9uX2dvbGQYBCADKAUSGwoTZnJlZV9nYW1lX2NvdF90b3RhbBgF",
-            "IAEoBRIWCg5mcmVlX2dhbWVfZ29sZBgGIAEoBRITCgtzbWFsbF9jb3VudBgH",
-            "IAEoBSLfAQoSU0Nfc3RTbWFsbEdhbWVJbmZvEh4KFnNtYWxsX2dhbWVfdGF0",
-            "b2xfY29udXQYASABKAUSGAoQc21hbGxfZ2FtZV9jb251dBgCIAEoBRIXCg9n",
-            "YW1lX3RhdG9sX2dvbGQYAyABKAUSEQoJaWNvbl90eXBlGAQgASgFEhcKD2lj",
-            "b25fdHlwZV9jb251dBgFIAEoBRISCgppY29uX3R5cGU0GAYgAygFEhEKCWdh",
-            "bWVfZ29sZBgHIAEoBRIQCghnYW1lX2VuZBgIIAEoCBIRCglsaW5lX2dvbGQY",
-            "CSABKAUqyQEKCUVNc2dJRFhNTBIVChFMQUJBX01TR19DU19TVEFSVBAAEhoK",
-            "FkxBQkFfTVNHX0NTX1NNQUxMX0dBTUUQARIVChFMQUJBX01TR19TQ19TVEFS",
-            "VBACEhgKFExBQkFfTVNHX1NDX0NIRUNLT1VUEAMSGQoVTEFCQV9NU0dfU0Nf",
-            "U1lOQ19HT0xEEAQSGgoWTEFCQV9NU0dfU0NfU01BTExfR0FNRRAFEiEKHUxB",
-            "QkFfTVNHX1NDX1VQREFURV9QUklaRV9QT09MEAZiBnByb3RvMw=="));
+            "ChdQcm90by9TdWJHYW1lL1hNTC5wcm90bxIFU0dYTUwi5QEKC1NDX0NoZWNr",
+            "T3V0Eg4KBnJlc3VsdBgBIAMoBRIfChdyZXdhcmRfbGluZV9mcnVpdF9jb3Vu",
+            "dBgCIAMoBRISCgp3aW5fcGVpX2x2GAMgASgFEhAKCGN1cl9nb2xkGAQgASgD",
+            "EhAKCHdpbl9nb2xkGAUgASgFEhYKDnRvdGFsX3dpbl9nb2xkGAYgASgFEhIK",
+            "CmZyZWVfdGltZXMYByABKAUSEAoIbXVsdGlwbGUYCCABKAUSFQoNamFja3Bv",
+            "dF92YWx1ZRgJIAEoBRIYChBzbWFsbF9nYW1lX3RpbWVzGAogASgFIi8KCENT",
+            "X1N0YXJ0EhAKCGxpbmVfbnVtGAEgASgFEhEKCWxpbmVfZ29sZBgCIAEoBSJK",
+            "CgtTQ19TeW5jR29sZBIMCgRnb2xkGAEgASgDEhUKDWxhc3Rfd2luX2dvbGQY",
+            "AiABKAUSFgoOdG90YWxfd2luX2dvbGQYAyABKAUimgEKDFNDX1NjZW5lSW5m",
+            "bxIaChJsZWZ0X2ZyZWVfZ2FtZV9jbnQYASABKAUSEAoIbXVsdGlwbGUYAiAB",
+            "KAUSEgoKYmV0b25fZ29sZBgEIAMoBRIbChNmcmVlX2dhbWVfY290X3RvdGFs",
+            "GAUgASgFEhYKDmZyZWVfZ2FtZV9nb2xkGAYgASgFEhMKC3NtYWxsX2NvdW50",
+            "GAcgASgFIt8BChJTQ19zdFNtYWxsR2FtZUluZm8SHgoWc21hbGxfZ2FtZV90",
+            "YXRvbF9jb251dBgBIAEoBRIYChBzbWFsbF9nYW1lX2NvbnV0GAIgASgFEhcK",
+            "D2dhbWVfdGF0b2xfZ29sZBgDIAEoBRIRCglpY29uX3R5cGUYBCABKAUSFwoP",
+            "aWNvbl90eXBlX2NvbnV0GAUgASgFEhIKCmljb25fdHlwZTQYBiADKAUSEQoJ",
+            "Z2FtZV9nb2xkGAcgASgFEhAKCGdhbWVfZW5kGAggASgIEhEKCWxpbmVfZ29s",
+            "ZBgJIAEoBSrJAQoJRU1zZ0lEWE1MEhUKEUxBQkFfTVNHX0NTX1NUQVJUEAAS",
+            "GgoWTEFCQV9NU0dfQ1NfU01BTExfR0FNRRABEhUKEUxBQkFfTVNHX1NDX1NU",
+            "QVJUEAISGAoUTEFCQV9NU0dfU0NfQ0hFQ0tPVVQQAxIZChVMQUJBX01TR19T",
+            "Q19TWU5DX0dPTEQQBBIaChZMQUJBX01TR19TQ19TTUFMTF9HQU1FEAUSIQod",
+            "TEFCQV9NU0dfU0NfVVBEQVRFX1BSSVpFX1BPT0wQBmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::XML.EMsgIDXML), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::XML.SC_CheckOut), global::XML.SC_CheckOut.Parser, new[]{ "Result", "RewardLineFruitCount", "WinPeiLv", "CurGold", "WinGold", "TotalWinGold", "FreeTimes", "Multiple", "JackpotValue", "SmallGameTimes" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::XML.CS_Start), global::XML.CS_Start.Parser, new[]{ "LineNum", "LineGold" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::XML.SC_SyncGold), global::XML.SC_SyncGold.Parser, new[]{ "Gold", "LastWinGold", "TotalWinGold" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::XML.SC_SceneInfo), global::XML.SC_SceneInfo.Parser, new[]{ "LeftFreeGameCnt", "Multiple", "BetonGold", "FreeGameCotTotal", "FreeGameGold", "SmallCount" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::XML.SC_stSmallGameInfo), global::XML.SC_stSmallGameInfo.Parser, new[]{ "SmallGameTatolConut", "SmallGameConut", "GameTatolGold", "IconType", "IconTypeConut", "IconType4", "GameGold", "GameEnd", "LineGold" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::SGXML.EMsgIDXML), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::SGXML.SC_CheckOut), global::SGXML.SC_CheckOut.Parser, new[]{ "Result", "RewardLineFruitCount", "WinPeiLv", "CurGold", "WinGold", "TotalWinGold", "FreeTimes", "Multiple", "JackpotValue", "SmallGameTimes" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::SGXML.CS_Start), global::SGXML.CS_Start.Parser, new[]{ "LineNum", "LineGold" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::SGXML.SC_SyncGold), global::SGXML.SC_SyncGold.Parser, new[]{ "Gold", "LastWinGold", "TotalWinGold" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::SGXML.SC_SceneInfo), global::SGXML.SC_SceneInfo.Parser, new[]{ "LeftFreeGameCnt", "Multiple", "BetonGold", "FreeGameCotTotal", "FreeGameGold", "SmallCount" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::SGXML.SC_stSmallGameInfo), global::SGXML.SC_stSmallGameInfo.Parser, new[]{ "SmallGameTatolConut", "SmallGameConut", "GameTatolGold", "IconType", "IconTypeConut", "IconType4", "GameGold", "GameEnd", "LineGold" }, null, null, null, null)
           }));
     }
     #endregion
@@ -106,7 +106,7 @@ namespace XML {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::XML.XMLReflection.Descriptor.MessageTypes[0]; }
+      get { return global::SGXML.XMLReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -617,7 +617,7 @@ namespace XML {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::XML.XMLReflection.Descriptor.MessageTypes[1]; }
+      get { return global::SGXML.XMLReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -834,7 +834,7 @@ namespace XML {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::XML.XMLReflection.Descriptor.MessageTypes[2]; }
+      get { return global::SGXML.XMLReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1087,7 +1087,7 @@ namespace XML {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::XML.XMLReflection.Descriptor.MessageTypes[3]; }
+      get { return global::SGXML.XMLReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1448,7 +1448,7 @@ namespace XML {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::XML.XMLReflection.Descriptor.MessageTypes[4]; }
+      get { return global::SGXML.XMLReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

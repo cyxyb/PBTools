@@ -54,7 +54,7 @@ struct TableStruct_XML_2eproto {
   static const ::PROTOBUF_NAMESPACE_ID::uint32 offsets[];
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_XML_2eproto;
-namespace XML {
+namespace SGXML {
 class CS_Start;
 class CS_StartDefaultTypeInternal;
 extern CS_StartDefaultTypeInternal _CS_Start_default_instance_;
@@ -70,15 +70,15 @@ extern SC_SyncGoldDefaultTypeInternal _SC_SyncGold_default_instance_;
 class SC_stSmallGameInfo;
 class SC_stSmallGameInfoDefaultTypeInternal;
 extern SC_stSmallGameInfoDefaultTypeInternal _SC_stSmallGameInfo_default_instance_;
-}  // namespace XML
+}  // namespace SGXML
 PROTOBUF_NAMESPACE_OPEN
-template<> ::XML::CS_Start* Arena::CreateMaybeMessage<::XML::CS_Start>(Arena*);
-template<> ::XML::SC_CheckOut* Arena::CreateMaybeMessage<::XML::SC_CheckOut>(Arena*);
-template<> ::XML::SC_SceneInfo* Arena::CreateMaybeMessage<::XML::SC_SceneInfo>(Arena*);
-template<> ::XML::SC_SyncGold* Arena::CreateMaybeMessage<::XML::SC_SyncGold>(Arena*);
-template<> ::XML::SC_stSmallGameInfo* Arena::CreateMaybeMessage<::XML::SC_stSmallGameInfo>(Arena*);
+template<> ::SGXML::CS_Start* Arena::CreateMaybeMessage<::SGXML::CS_Start>(Arena*);
+template<> ::SGXML::SC_CheckOut* Arena::CreateMaybeMessage<::SGXML::SC_CheckOut>(Arena*);
+template<> ::SGXML::SC_SceneInfo* Arena::CreateMaybeMessage<::SGXML::SC_SceneInfo>(Arena*);
+template<> ::SGXML::SC_SyncGold* Arena::CreateMaybeMessage<::SGXML::SC_SyncGold>(Arena*);
+template<> ::SGXML::SC_stSmallGameInfo* Arena::CreateMaybeMessage<::SGXML::SC_stSmallGameInfo>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
-namespace XML {
+namespace SGXML {
 
 enum EMsgIDXML : int {
   LABA_MSG_CS_START = 0,
@@ -113,7 +113,7 @@ inline bool EMsgIDXML_Parse(
 // ===================================================================
 
 class SC_CheckOut PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:XML.SC_CheckOut) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:SGXML.SC_CheckOut) */ {
  public:
   inline SC_CheckOut() : SC_CheckOut(nullptr) {}
   virtual ~SC_CheckOut();
@@ -201,7 +201,7 @@ class SC_CheckOut PROTOBUF_FINAL :
   void InternalSwap(SC_CheckOut* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "XML.SC_CheckOut";
+    return "SGXML.SC_CheckOut";
   }
   protected:
   explicit SC_CheckOut(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -351,7 +351,7 @@ class SC_CheckOut PROTOBUF_FINAL :
   void _internal_set_small_game_times(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:XML.SC_CheckOut)
+  // @@protoc_insertion_point(class_scope:SGXML.SC_CheckOut)
  private:
   class _Internal;
 
@@ -376,7 +376,7 @@ class SC_CheckOut PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class CS_Start PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:XML.CS_Start) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:SGXML.CS_Start) */ {
  public:
   inline CS_Start() : CS_Start(nullptr) {}
   virtual ~CS_Start();
@@ -464,7 +464,7 @@ class CS_Start PROTOBUF_FINAL :
   void InternalSwap(CS_Start* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "XML.CS_Start";
+    return "SGXML.CS_Start";
   }
   protected:
   explicit CS_Start(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -508,7 +508,7 @@ class CS_Start PROTOBUF_FINAL :
   void _internal_set_line_gold(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:XML.CS_Start)
+  // @@protoc_insertion_point(class_scope:SGXML.CS_Start)
  private:
   class _Internal;
 
@@ -523,7 +523,7 @@ class CS_Start PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class SC_SyncGold PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:XML.SC_SyncGold) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:SGXML.SC_SyncGold) */ {
  public:
   inline SC_SyncGold() : SC_SyncGold(nullptr) {}
   virtual ~SC_SyncGold();
@@ -611,7 +611,7 @@ class SC_SyncGold PROTOBUF_FINAL :
   void InternalSwap(SC_SyncGold* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "XML.SC_SyncGold";
+    return "SGXML.SC_SyncGold";
   }
   protected:
   explicit SC_SyncGold(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -665,7 +665,7 @@ class SC_SyncGold PROTOBUF_FINAL :
   void _internal_set_total_win_gold(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:XML.SC_SyncGold)
+  // @@protoc_insertion_point(class_scope:SGXML.SC_SyncGold)
  private:
   class _Internal;
 
@@ -681,7 +681,7 @@ class SC_SyncGold PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class SC_SceneInfo PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:XML.SC_SceneInfo) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:SGXML.SC_SceneInfo) */ {
  public:
   inline SC_SceneInfo() : SC_SceneInfo(nullptr) {}
   virtual ~SC_SceneInfo();
@@ -769,7 +769,7 @@ class SC_SceneInfo PROTOBUF_FINAL :
   void InternalSwap(SC_SceneInfo* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "XML.SC_SceneInfo";
+    return "SGXML.SC_SceneInfo";
   }
   protected:
   explicit SC_SceneInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -866,7 +866,7 @@ class SC_SceneInfo PROTOBUF_FINAL :
   void _internal_set_small_count(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:XML.SC_SceneInfo)
+  // @@protoc_insertion_point(class_scope:SGXML.SC_SceneInfo)
  private:
   class _Internal;
 
@@ -886,7 +886,7 @@ class SC_SceneInfo PROTOBUF_FINAL :
 // -------------------------------------------------------------------
 
 class SC_stSmallGameInfo PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:XML.SC_stSmallGameInfo) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:SGXML.SC_stSmallGameInfo) */ {
  public:
   inline SC_stSmallGameInfo() : SC_stSmallGameInfo(nullptr) {}
   virtual ~SC_stSmallGameInfo();
@@ -974,7 +974,7 @@ class SC_stSmallGameInfo PROTOBUF_FINAL :
   void InternalSwap(SC_stSmallGameInfo* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "XML.SC_stSmallGameInfo";
+    return "SGXML.SC_stSmallGameInfo";
   }
   protected:
   explicit SC_stSmallGameInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -1101,7 +1101,7 @@ class SC_stSmallGameInfo PROTOBUF_FINAL :
   void _internal_set_line_gold(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:XML.SC_stSmallGameInfo)
+  // @@protoc_insertion_point(class_scope:SGXML.SC_stSmallGameInfo)
  private:
   class _Internal;
 
@@ -1146,19 +1146,19 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 SC_CheckOut::_internal_result(int index) c
   return result_.Get(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 SC_CheckOut::result(int index) const {
-  // @@protoc_insertion_point(field_get:XML.SC_CheckOut.result)
+  // @@protoc_insertion_point(field_get:SGXML.SC_CheckOut.result)
   return _internal_result(index);
 }
 inline void SC_CheckOut::set_result(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   result_.Set(index, value);
-  // @@protoc_insertion_point(field_set:XML.SC_CheckOut.result)
+  // @@protoc_insertion_point(field_set:SGXML.SC_CheckOut.result)
 }
 inline void SC_CheckOut::_internal_add_result(::PROTOBUF_NAMESPACE_ID::int32 value) {
   result_.Add(value);
 }
 inline void SC_CheckOut::add_result(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_result(value);
-  // @@protoc_insertion_point(field_add:XML.SC_CheckOut.result)
+  // @@protoc_insertion_point(field_add:SGXML.SC_CheckOut.result)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 SC_CheckOut::_internal_result() const {
@@ -1166,7 +1166,7 @@ SC_CheckOut::_internal_result() const {
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 SC_CheckOut::result() const {
-  // @@protoc_insertion_point(field_list:XML.SC_CheckOut.result)
+  // @@protoc_insertion_point(field_list:SGXML.SC_CheckOut.result)
   return _internal_result();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
@@ -1175,7 +1175,7 @@ SC_CheckOut::_internal_mutable_result() {
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 SC_CheckOut::mutable_result() {
-  // @@protoc_insertion_point(field_mutable_list:XML.SC_CheckOut.result)
+  // @@protoc_insertion_point(field_mutable_list:SGXML.SC_CheckOut.result)
   return _internal_mutable_result();
 }
 
@@ -1193,19 +1193,19 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 SC_CheckOut::_internal_reward_line_fruit_c
   return reward_line_fruit_count_.Get(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 SC_CheckOut::reward_line_fruit_count(int index) const {
-  // @@protoc_insertion_point(field_get:XML.SC_CheckOut.reward_line_fruit_count)
+  // @@protoc_insertion_point(field_get:SGXML.SC_CheckOut.reward_line_fruit_count)
   return _internal_reward_line_fruit_count(index);
 }
 inline void SC_CheckOut::set_reward_line_fruit_count(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   reward_line_fruit_count_.Set(index, value);
-  // @@protoc_insertion_point(field_set:XML.SC_CheckOut.reward_line_fruit_count)
+  // @@protoc_insertion_point(field_set:SGXML.SC_CheckOut.reward_line_fruit_count)
 }
 inline void SC_CheckOut::_internal_add_reward_line_fruit_count(::PROTOBUF_NAMESPACE_ID::int32 value) {
   reward_line_fruit_count_.Add(value);
 }
 inline void SC_CheckOut::add_reward_line_fruit_count(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_reward_line_fruit_count(value);
-  // @@protoc_insertion_point(field_add:XML.SC_CheckOut.reward_line_fruit_count)
+  // @@protoc_insertion_point(field_add:SGXML.SC_CheckOut.reward_line_fruit_count)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 SC_CheckOut::_internal_reward_line_fruit_count() const {
@@ -1213,7 +1213,7 @@ SC_CheckOut::_internal_reward_line_fruit_count() const {
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 SC_CheckOut::reward_line_fruit_count() const {
-  // @@protoc_insertion_point(field_list:XML.SC_CheckOut.reward_line_fruit_count)
+  // @@protoc_insertion_point(field_list:SGXML.SC_CheckOut.reward_line_fruit_count)
   return _internal_reward_line_fruit_count();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
@@ -1222,7 +1222,7 @@ SC_CheckOut::_internal_mutable_reward_line_fruit_count() {
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 SC_CheckOut::mutable_reward_line_fruit_count() {
-  // @@protoc_insertion_point(field_mutable_list:XML.SC_CheckOut.reward_line_fruit_count)
+  // @@protoc_insertion_point(field_mutable_list:SGXML.SC_CheckOut.reward_line_fruit_count)
   return _internal_mutable_reward_line_fruit_count();
 }
 
@@ -1234,7 +1234,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 SC_CheckOut::_internal_win_pei_lv() const 
   return win_pei_lv_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 SC_CheckOut::win_pei_lv() const {
-  // @@protoc_insertion_point(field_get:XML.SC_CheckOut.win_pei_lv)
+  // @@protoc_insertion_point(field_get:SGXML.SC_CheckOut.win_pei_lv)
   return _internal_win_pei_lv();
 }
 inline void SC_CheckOut::_internal_set_win_pei_lv(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -1243,7 +1243,7 @@ inline void SC_CheckOut::_internal_set_win_pei_lv(::PROTOBUF_NAMESPACE_ID::int32
 }
 inline void SC_CheckOut::set_win_pei_lv(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_win_pei_lv(value);
-  // @@protoc_insertion_point(field_set:XML.SC_CheckOut.win_pei_lv)
+  // @@protoc_insertion_point(field_set:SGXML.SC_CheckOut.win_pei_lv)
 }
 
 // int64 cur_gold = 4;
@@ -1254,7 +1254,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int64 SC_CheckOut::_internal_cur_gold() const {
   return cur_gold_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int64 SC_CheckOut::cur_gold() const {
-  // @@protoc_insertion_point(field_get:XML.SC_CheckOut.cur_gold)
+  // @@protoc_insertion_point(field_get:SGXML.SC_CheckOut.cur_gold)
   return _internal_cur_gold();
 }
 inline void SC_CheckOut::_internal_set_cur_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
@@ -1263,7 +1263,7 @@ inline void SC_CheckOut::_internal_set_cur_gold(::PROTOBUF_NAMESPACE_ID::int64 v
 }
 inline void SC_CheckOut::set_cur_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_cur_gold(value);
-  // @@protoc_insertion_point(field_set:XML.SC_CheckOut.cur_gold)
+  // @@protoc_insertion_point(field_set:SGXML.SC_CheckOut.cur_gold)
 }
 
 // int32 win_gold = 5;
@@ -1274,7 +1274,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 SC_CheckOut::_internal_win_gold() const {
   return win_gold_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 SC_CheckOut::win_gold() const {
-  // @@protoc_insertion_point(field_get:XML.SC_CheckOut.win_gold)
+  // @@protoc_insertion_point(field_get:SGXML.SC_CheckOut.win_gold)
   return _internal_win_gold();
 }
 inline void SC_CheckOut::_internal_set_win_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -1283,7 +1283,7 @@ inline void SC_CheckOut::_internal_set_win_gold(::PROTOBUF_NAMESPACE_ID::int32 v
 }
 inline void SC_CheckOut::set_win_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_win_gold(value);
-  // @@protoc_insertion_point(field_set:XML.SC_CheckOut.win_gold)
+  // @@protoc_insertion_point(field_set:SGXML.SC_CheckOut.win_gold)
 }
 
 // int32 total_win_gold = 6;
@@ -1294,7 +1294,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 SC_CheckOut::_internal_total_win_gold() co
   return total_win_gold_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 SC_CheckOut::total_win_gold() const {
-  // @@protoc_insertion_point(field_get:XML.SC_CheckOut.total_win_gold)
+  // @@protoc_insertion_point(field_get:SGXML.SC_CheckOut.total_win_gold)
   return _internal_total_win_gold();
 }
 inline void SC_CheckOut::_internal_set_total_win_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -1303,7 +1303,7 @@ inline void SC_CheckOut::_internal_set_total_win_gold(::PROTOBUF_NAMESPACE_ID::i
 }
 inline void SC_CheckOut::set_total_win_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_total_win_gold(value);
-  // @@protoc_insertion_point(field_set:XML.SC_CheckOut.total_win_gold)
+  // @@protoc_insertion_point(field_set:SGXML.SC_CheckOut.total_win_gold)
 }
 
 // int32 free_times = 7;
@@ -1314,7 +1314,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 SC_CheckOut::_internal_free_times() const 
   return free_times_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 SC_CheckOut::free_times() const {
-  // @@protoc_insertion_point(field_get:XML.SC_CheckOut.free_times)
+  // @@protoc_insertion_point(field_get:SGXML.SC_CheckOut.free_times)
   return _internal_free_times();
 }
 inline void SC_CheckOut::_internal_set_free_times(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -1323,7 +1323,7 @@ inline void SC_CheckOut::_internal_set_free_times(::PROTOBUF_NAMESPACE_ID::int32
 }
 inline void SC_CheckOut::set_free_times(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_free_times(value);
-  // @@protoc_insertion_point(field_set:XML.SC_CheckOut.free_times)
+  // @@protoc_insertion_point(field_set:SGXML.SC_CheckOut.free_times)
 }
 
 // int32 multiple = 8;
@@ -1334,7 +1334,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 SC_CheckOut::_internal_multiple() const {
   return multiple_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 SC_CheckOut::multiple() const {
-  // @@protoc_insertion_point(field_get:XML.SC_CheckOut.multiple)
+  // @@protoc_insertion_point(field_get:SGXML.SC_CheckOut.multiple)
   return _internal_multiple();
 }
 inline void SC_CheckOut::_internal_set_multiple(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -1343,7 +1343,7 @@ inline void SC_CheckOut::_internal_set_multiple(::PROTOBUF_NAMESPACE_ID::int32 v
 }
 inline void SC_CheckOut::set_multiple(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_multiple(value);
-  // @@protoc_insertion_point(field_set:XML.SC_CheckOut.multiple)
+  // @@protoc_insertion_point(field_set:SGXML.SC_CheckOut.multiple)
 }
 
 // int32 jackpot_value = 9;
@@ -1354,7 +1354,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 SC_CheckOut::_internal_jackpot_value() con
   return jackpot_value_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 SC_CheckOut::jackpot_value() const {
-  // @@protoc_insertion_point(field_get:XML.SC_CheckOut.jackpot_value)
+  // @@protoc_insertion_point(field_get:SGXML.SC_CheckOut.jackpot_value)
   return _internal_jackpot_value();
 }
 inline void SC_CheckOut::_internal_set_jackpot_value(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -1363,7 +1363,7 @@ inline void SC_CheckOut::_internal_set_jackpot_value(::PROTOBUF_NAMESPACE_ID::in
 }
 inline void SC_CheckOut::set_jackpot_value(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_jackpot_value(value);
-  // @@protoc_insertion_point(field_set:XML.SC_CheckOut.jackpot_value)
+  // @@protoc_insertion_point(field_set:SGXML.SC_CheckOut.jackpot_value)
 }
 
 // int32 small_game_times = 10;
@@ -1374,7 +1374,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 SC_CheckOut::_internal_small_game_times() 
   return small_game_times_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 SC_CheckOut::small_game_times() const {
-  // @@protoc_insertion_point(field_get:XML.SC_CheckOut.small_game_times)
+  // @@protoc_insertion_point(field_get:SGXML.SC_CheckOut.small_game_times)
   return _internal_small_game_times();
 }
 inline void SC_CheckOut::_internal_set_small_game_times(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -1383,7 +1383,7 @@ inline void SC_CheckOut::_internal_set_small_game_times(::PROTOBUF_NAMESPACE_ID:
 }
 inline void SC_CheckOut::set_small_game_times(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_small_game_times(value);
-  // @@protoc_insertion_point(field_set:XML.SC_CheckOut.small_game_times)
+  // @@protoc_insertion_point(field_set:SGXML.SC_CheckOut.small_game_times)
 }
 
 // -------------------------------------------------------------------
@@ -1398,7 +1398,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CS_Start::_internal_line_num() const {
   return line_num_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CS_Start::line_num() const {
-  // @@protoc_insertion_point(field_get:XML.CS_Start.line_num)
+  // @@protoc_insertion_point(field_get:SGXML.CS_Start.line_num)
   return _internal_line_num();
 }
 inline void CS_Start::_internal_set_line_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -1407,7 +1407,7 @@ inline void CS_Start::_internal_set_line_num(::PROTOBUF_NAMESPACE_ID::int32 valu
 }
 inline void CS_Start::set_line_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_line_num(value);
-  // @@protoc_insertion_point(field_set:XML.CS_Start.line_num)
+  // @@protoc_insertion_point(field_set:SGXML.CS_Start.line_num)
 }
 
 // int32 line_gold = 2;
@@ -1418,7 +1418,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 CS_Start::_internal_line_gold() const {
   return line_gold_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 CS_Start::line_gold() const {
-  // @@protoc_insertion_point(field_get:XML.CS_Start.line_gold)
+  // @@protoc_insertion_point(field_get:SGXML.CS_Start.line_gold)
   return _internal_line_gold();
 }
 inline void CS_Start::_internal_set_line_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -1427,7 +1427,7 @@ inline void CS_Start::_internal_set_line_gold(::PROTOBUF_NAMESPACE_ID::int32 val
 }
 inline void CS_Start::set_line_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_line_gold(value);
-  // @@protoc_insertion_point(field_set:XML.CS_Start.line_gold)
+  // @@protoc_insertion_point(field_set:SGXML.CS_Start.line_gold)
 }
 
 // -------------------------------------------------------------------
@@ -1442,7 +1442,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int64 SC_SyncGold::_internal_gold() const {
   return gold_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int64 SC_SyncGold::gold() const {
-  // @@protoc_insertion_point(field_get:XML.SC_SyncGold.gold)
+  // @@protoc_insertion_point(field_get:SGXML.SC_SyncGold.gold)
   return _internal_gold();
 }
 inline void SC_SyncGold::_internal_set_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
@@ -1451,7 +1451,7 @@ inline void SC_SyncGold::_internal_set_gold(::PROTOBUF_NAMESPACE_ID::int64 value
 }
 inline void SC_SyncGold::set_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_gold(value);
-  // @@protoc_insertion_point(field_set:XML.SC_SyncGold.gold)
+  // @@protoc_insertion_point(field_set:SGXML.SC_SyncGold.gold)
 }
 
 // int32 last_win_gold = 2;
@@ -1462,7 +1462,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SyncGold::_internal_last_win_gold() con
   return last_win_gold_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SyncGold::last_win_gold() const {
-  // @@protoc_insertion_point(field_get:XML.SC_SyncGold.last_win_gold)
+  // @@protoc_insertion_point(field_get:SGXML.SC_SyncGold.last_win_gold)
   return _internal_last_win_gold();
 }
 inline void SC_SyncGold::_internal_set_last_win_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -1471,7 +1471,7 @@ inline void SC_SyncGold::_internal_set_last_win_gold(::PROTOBUF_NAMESPACE_ID::in
 }
 inline void SC_SyncGold::set_last_win_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_last_win_gold(value);
-  // @@protoc_insertion_point(field_set:XML.SC_SyncGold.last_win_gold)
+  // @@protoc_insertion_point(field_set:SGXML.SC_SyncGold.last_win_gold)
 }
 
 // int32 total_win_gold = 3;
@@ -1482,7 +1482,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SyncGold::_internal_total_win_gold() co
   return total_win_gold_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SyncGold::total_win_gold() const {
-  // @@protoc_insertion_point(field_get:XML.SC_SyncGold.total_win_gold)
+  // @@protoc_insertion_point(field_get:SGXML.SC_SyncGold.total_win_gold)
   return _internal_total_win_gold();
 }
 inline void SC_SyncGold::_internal_set_total_win_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -1491,7 +1491,7 @@ inline void SC_SyncGold::_internal_set_total_win_gold(::PROTOBUF_NAMESPACE_ID::i
 }
 inline void SC_SyncGold::set_total_win_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_total_win_gold(value);
-  // @@protoc_insertion_point(field_set:XML.SC_SyncGold.total_win_gold)
+  // @@protoc_insertion_point(field_set:SGXML.SC_SyncGold.total_win_gold)
 }
 
 // -------------------------------------------------------------------
@@ -1506,7 +1506,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::_internal_left_free_game_cnt
   return left_free_game_cnt_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::left_free_game_cnt() const {
-  // @@protoc_insertion_point(field_get:XML.SC_SceneInfo.left_free_game_cnt)
+  // @@protoc_insertion_point(field_get:SGXML.SC_SceneInfo.left_free_game_cnt)
   return _internal_left_free_game_cnt();
 }
 inline void SC_SceneInfo::_internal_set_left_free_game_cnt(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -1515,7 +1515,7 @@ inline void SC_SceneInfo::_internal_set_left_free_game_cnt(::PROTOBUF_NAMESPACE_
 }
 inline void SC_SceneInfo::set_left_free_game_cnt(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_left_free_game_cnt(value);
-  // @@protoc_insertion_point(field_set:XML.SC_SceneInfo.left_free_game_cnt)
+  // @@protoc_insertion_point(field_set:SGXML.SC_SceneInfo.left_free_game_cnt)
 }
 
 // int32 multiple = 2;
@@ -1526,7 +1526,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::_internal_multiple() const {
   return multiple_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::multiple() const {
-  // @@protoc_insertion_point(field_get:XML.SC_SceneInfo.multiple)
+  // @@protoc_insertion_point(field_get:SGXML.SC_SceneInfo.multiple)
   return _internal_multiple();
 }
 inline void SC_SceneInfo::_internal_set_multiple(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -1535,7 +1535,7 @@ inline void SC_SceneInfo::_internal_set_multiple(::PROTOBUF_NAMESPACE_ID::int32 
 }
 inline void SC_SceneInfo::set_multiple(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_multiple(value);
-  // @@protoc_insertion_point(field_set:XML.SC_SceneInfo.multiple)
+  // @@protoc_insertion_point(field_set:SGXML.SC_SceneInfo.multiple)
 }
 
 // repeated int32 beton_gold = 4;
@@ -1552,19 +1552,19 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::_internal_beton_gold(int ind
   return beton_gold_.Get(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::beton_gold(int index) const {
-  // @@protoc_insertion_point(field_get:XML.SC_SceneInfo.beton_gold)
+  // @@protoc_insertion_point(field_get:SGXML.SC_SceneInfo.beton_gold)
   return _internal_beton_gold(index);
 }
 inline void SC_SceneInfo::set_beton_gold(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   beton_gold_.Set(index, value);
-  // @@protoc_insertion_point(field_set:XML.SC_SceneInfo.beton_gold)
+  // @@protoc_insertion_point(field_set:SGXML.SC_SceneInfo.beton_gold)
 }
 inline void SC_SceneInfo::_internal_add_beton_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
   beton_gold_.Add(value);
 }
 inline void SC_SceneInfo::add_beton_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_beton_gold(value);
-  // @@protoc_insertion_point(field_add:XML.SC_SceneInfo.beton_gold)
+  // @@protoc_insertion_point(field_add:SGXML.SC_SceneInfo.beton_gold)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 SC_SceneInfo::_internal_beton_gold() const {
@@ -1572,7 +1572,7 @@ SC_SceneInfo::_internal_beton_gold() const {
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 SC_SceneInfo::beton_gold() const {
-  // @@protoc_insertion_point(field_list:XML.SC_SceneInfo.beton_gold)
+  // @@protoc_insertion_point(field_list:SGXML.SC_SceneInfo.beton_gold)
   return _internal_beton_gold();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
@@ -1581,7 +1581,7 @@ SC_SceneInfo::_internal_mutable_beton_gold() {
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 SC_SceneInfo::mutable_beton_gold() {
-  // @@protoc_insertion_point(field_mutable_list:XML.SC_SceneInfo.beton_gold)
+  // @@protoc_insertion_point(field_mutable_list:SGXML.SC_SceneInfo.beton_gold)
   return _internal_mutable_beton_gold();
 }
 
@@ -1593,7 +1593,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::_internal_free_game_cot_tota
   return free_game_cot_total_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::free_game_cot_total() const {
-  // @@protoc_insertion_point(field_get:XML.SC_SceneInfo.free_game_cot_total)
+  // @@protoc_insertion_point(field_get:SGXML.SC_SceneInfo.free_game_cot_total)
   return _internal_free_game_cot_total();
 }
 inline void SC_SceneInfo::_internal_set_free_game_cot_total(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -1602,7 +1602,7 @@ inline void SC_SceneInfo::_internal_set_free_game_cot_total(::PROTOBUF_NAMESPACE
 }
 inline void SC_SceneInfo::set_free_game_cot_total(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_free_game_cot_total(value);
-  // @@protoc_insertion_point(field_set:XML.SC_SceneInfo.free_game_cot_total)
+  // @@protoc_insertion_point(field_set:SGXML.SC_SceneInfo.free_game_cot_total)
 }
 
 // int32 free_game_gold = 6;
@@ -1613,7 +1613,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::_internal_free_game_gold() c
   return free_game_gold_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::free_game_gold() const {
-  // @@protoc_insertion_point(field_get:XML.SC_SceneInfo.free_game_gold)
+  // @@protoc_insertion_point(field_get:SGXML.SC_SceneInfo.free_game_gold)
   return _internal_free_game_gold();
 }
 inline void SC_SceneInfo::_internal_set_free_game_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -1622,7 +1622,7 @@ inline void SC_SceneInfo::_internal_set_free_game_gold(::PROTOBUF_NAMESPACE_ID::
 }
 inline void SC_SceneInfo::set_free_game_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_free_game_gold(value);
-  // @@protoc_insertion_point(field_set:XML.SC_SceneInfo.free_game_gold)
+  // @@protoc_insertion_point(field_set:SGXML.SC_SceneInfo.free_game_gold)
 }
 
 // int32 small_count = 7;
@@ -1633,7 +1633,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::_internal_small_count() cons
   return small_count_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::small_count() const {
-  // @@protoc_insertion_point(field_get:XML.SC_SceneInfo.small_count)
+  // @@protoc_insertion_point(field_get:SGXML.SC_SceneInfo.small_count)
   return _internal_small_count();
 }
 inline void SC_SceneInfo::_internal_set_small_count(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -1642,7 +1642,7 @@ inline void SC_SceneInfo::_internal_set_small_count(::PROTOBUF_NAMESPACE_ID::int
 }
 inline void SC_SceneInfo::set_small_count(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_small_count(value);
-  // @@protoc_insertion_point(field_set:XML.SC_SceneInfo.small_count)
+  // @@protoc_insertion_point(field_set:SGXML.SC_SceneInfo.small_count)
 }
 
 // -------------------------------------------------------------------
@@ -1657,7 +1657,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 SC_stSmallGameInfo::_internal_small_game_t
   return small_game_tatol_conut_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 SC_stSmallGameInfo::small_game_tatol_conut() const {
-  // @@protoc_insertion_point(field_get:XML.SC_stSmallGameInfo.small_game_tatol_conut)
+  // @@protoc_insertion_point(field_get:SGXML.SC_stSmallGameInfo.small_game_tatol_conut)
   return _internal_small_game_tatol_conut();
 }
 inline void SC_stSmallGameInfo::_internal_set_small_game_tatol_conut(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -1666,7 +1666,7 @@ inline void SC_stSmallGameInfo::_internal_set_small_game_tatol_conut(::PROTOBUF_
 }
 inline void SC_stSmallGameInfo::set_small_game_tatol_conut(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_small_game_tatol_conut(value);
-  // @@protoc_insertion_point(field_set:XML.SC_stSmallGameInfo.small_game_tatol_conut)
+  // @@protoc_insertion_point(field_set:SGXML.SC_stSmallGameInfo.small_game_tatol_conut)
 }
 
 // int32 small_game_conut = 2;
@@ -1677,7 +1677,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 SC_stSmallGameInfo::_internal_small_game_c
   return small_game_conut_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 SC_stSmallGameInfo::small_game_conut() const {
-  // @@protoc_insertion_point(field_get:XML.SC_stSmallGameInfo.small_game_conut)
+  // @@protoc_insertion_point(field_get:SGXML.SC_stSmallGameInfo.small_game_conut)
   return _internal_small_game_conut();
 }
 inline void SC_stSmallGameInfo::_internal_set_small_game_conut(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -1686,7 +1686,7 @@ inline void SC_stSmallGameInfo::_internal_set_small_game_conut(::PROTOBUF_NAMESP
 }
 inline void SC_stSmallGameInfo::set_small_game_conut(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_small_game_conut(value);
-  // @@protoc_insertion_point(field_set:XML.SC_stSmallGameInfo.small_game_conut)
+  // @@protoc_insertion_point(field_set:SGXML.SC_stSmallGameInfo.small_game_conut)
 }
 
 // int32 game_tatol_gold = 3;
@@ -1697,7 +1697,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 SC_stSmallGameInfo::_internal_game_tatol_g
   return game_tatol_gold_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 SC_stSmallGameInfo::game_tatol_gold() const {
-  // @@protoc_insertion_point(field_get:XML.SC_stSmallGameInfo.game_tatol_gold)
+  // @@protoc_insertion_point(field_get:SGXML.SC_stSmallGameInfo.game_tatol_gold)
   return _internal_game_tatol_gold();
 }
 inline void SC_stSmallGameInfo::_internal_set_game_tatol_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -1706,7 +1706,7 @@ inline void SC_stSmallGameInfo::_internal_set_game_tatol_gold(::PROTOBUF_NAMESPA
 }
 inline void SC_stSmallGameInfo::set_game_tatol_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_game_tatol_gold(value);
-  // @@protoc_insertion_point(field_set:XML.SC_stSmallGameInfo.game_tatol_gold)
+  // @@protoc_insertion_point(field_set:SGXML.SC_stSmallGameInfo.game_tatol_gold)
 }
 
 // int32 icon_type = 4;
@@ -1717,7 +1717,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 SC_stSmallGameInfo::_internal_icon_type() 
   return icon_type_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 SC_stSmallGameInfo::icon_type() const {
-  // @@protoc_insertion_point(field_get:XML.SC_stSmallGameInfo.icon_type)
+  // @@protoc_insertion_point(field_get:SGXML.SC_stSmallGameInfo.icon_type)
   return _internal_icon_type();
 }
 inline void SC_stSmallGameInfo::_internal_set_icon_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -1726,7 +1726,7 @@ inline void SC_stSmallGameInfo::_internal_set_icon_type(::PROTOBUF_NAMESPACE_ID:
 }
 inline void SC_stSmallGameInfo::set_icon_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_icon_type(value);
-  // @@protoc_insertion_point(field_set:XML.SC_stSmallGameInfo.icon_type)
+  // @@protoc_insertion_point(field_set:SGXML.SC_stSmallGameInfo.icon_type)
 }
 
 // int32 icon_type_conut = 5;
@@ -1737,7 +1737,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 SC_stSmallGameInfo::_internal_icon_type_co
   return icon_type_conut_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 SC_stSmallGameInfo::icon_type_conut() const {
-  // @@protoc_insertion_point(field_get:XML.SC_stSmallGameInfo.icon_type_conut)
+  // @@protoc_insertion_point(field_get:SGXML.SC_stSmallGameInfo.icon_type_conut)
   return _internal_icon_type_conut();
 }
 inline void SC_stSmallGameInfo::_internal_set_icon_type_conut(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -1746,7 +1746,7 @@ inline void SC_stSmallGameInfo::_internal_set_icon_type_conut(::PROTOBUF_NAMESPA
 }
 inline void SC_stSmallGameInfo::set_icon_type_conut(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_icon_type_conut(value);
-  // @@protoc_insertion_point(field_set:XML.SC_stSmallGameInfo.icon_type_conut)
+  // @@protoc_insertion_point(field_set:SGXML.SC_stSmallGameInfo.icon_type_conut)
 }
 
 // repeated int32 icon_type4 = 6;
@@ -1763,19 +1763,19 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 SC_stSmallGameInfo::_internal_icon_type4(i
   return icon_type4_.Get(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 SC_stSmallGameInfo::icon_type4(int index) const {
-  // @@protoc_insertion_point(field_get:XML.SC_stSmallGameInfo.icon_type4)
+  // @@protoc_insertion_point(field_get:SGXML.SC_stSmallGameInfo.icon_type4)
   return _internal_icon_type4(index);
 }
 inline void SC_stSmallGameInfo::set_icon_type4(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   icon_type4_.Set(index, value);
-  // @@protoc_insertion_point(field_set:XML.SC_stSmallGameInfo.icon_type4)
+  // @@protoc_insertion_point(field_set:SGXML.SC_stSmallGameInfo.icon_type4)
 }
 inline void SC_stSmallGameInfo::_internal_add_icon_type4(::PROTOBUF_NAMESPACE_ID::int32 value) {
   icon_type4_.Add(value);
 }
 inline void SC_stSmallGameInfo::add_icon_type4(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_icon_type4(value);
-  // @@protoc_insertion_point(field_add:XML.SC_stSmallGameInfo.icon_type4)
+  // @@protoc_insertion_point(field_add:SGXML.SC_stSmallGameInfo.icon_type4)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 SC_stSmallGameInfo::_internal_icon_type4() const {
@@ -1783,7 +1783,7 @@ SC_stSmallGameInfo::_internal_icon_type4() const {
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 SC_stSmallGameInfo::icon_type4() const {
-  // @@protoc_insertion_point(field_list:XML.SC_stSmallGameInfo.icon_type4)
+  // @@protoc_insertion_point(field_list:SGXML.SC_stSmallGameInfo.icon_type4)
   return _internal_icon_type4();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
@@ -1792,7 +1792,7 @@ SC_stSmallGameInfo::_internal_mutable_icon_type4() {
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 SC_stSmallGameInfo::mutable_icon_type4() {
-  // @@protoc_insertion_point(field_mutable_list:XML.SC_stSmallGameInfo.icon_type4)
+  // @@protoc_insertion_point(field_mutable_list:SGXML.SC_stSmallGameInfo.icon_type4)
   return _internal_mutable_icon_type4();
 }
 
@@ -1804,7 +1804,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 SC_stSmallGameInfo::_internal_game_gold() 
   return game_gold_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 SC_stSmallGameInfo::game_gold() const {
-  // @@protoc_insertion_point(field_get:XML.SC_stSmallGameInfo.game_gold)
+  // @@protoc_insertion_point(field_get:SGXML.SC_stSmallGameInfo.game_gold)
   return _internal_game_gold();
 }
 inline void SC_stSmallGameInfo::_internal_set_game_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -1813,7 +1813,7 @@ inline void SC_stSmallGameInfo::_internal_set_game_gold(::PROTOBUF_NAMESPACE_ID:
 }
 inline void SC_stSmallGameInfo::set_game_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_game_gold(value);
-  // @@protoc_insertion_point(field_set:XML.SC_stSmallGameInfo.game_gold)
+  // @@protoc_insertion_point(field_set:SGXML.SC_stSmallGameInfo.game_gold)
 }
 
 // bool game_end = 8;
@@ -1824,7 +1824,7 @@ inline bool SC_stSmallGameInfo::_internal_game_end() const {
   return game_end_;
 }
 inline bool SC_stSmallGameInfo::game_end() const {
-  // @@protoc_insertion_point(field_get:XML.SC_stSmallGameInfo.game_end)
+  // @@protoc_insertion_point(field_get:SGXML.SC_stSmallGameInfo.game_end)
   return _internal_game_end();
 }
 inline void SC_stSmallGameInfo::_internal_set_game_end(bool value) {
@@ -1833,7 +1833,7 @@ inline void SC_stSmallGameInfo::_internal_set_game_end(bool value) {
 }
 inline void SC_stSmallGameInfo::set_game_end(bool value) {
   _internal_set_game_end(value);
-  // @@protoc_insertion_point(field_set:XML.SC_stSmallGameInfo.game_end)
+  // @@protoc_insertion_point(field_set:SGXML.SC_stSmallGameInfo.game_end)
 }
 
 // int32 line_gold = 9;
@@ -1844,7 +1844,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 SC_stSmallGameInfo::_internal_line_gold() 
   return line_gold_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 SC_stSmallGameInfo::line_gold() const {
-  // @@protoc_insertion_point(field_get:XML.SC_stSmallGameInfo.line_gold)
+  // @@protoc_insertion_point(field_get:SGXML.SC_stSmallGameInfo.line_gold)
   return _internal_line_gold();
 }
 inline void SC_stSmallGameInfo::_internal_set_line_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -1853,7 +1853,7 @@ inline void SC_stSmallGameInfo::_internal_set_line_gold(::PROTOBUF_NAMESPACE_ID:
 }
 inline void SC_stSmallGameInfo::set_line_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_line_gold(value);
-  // @@protoc_insertion_point(field_set:XML.SC_stSmallGameInfo.line_gold)
+  // @@protoc_insertion_point(field_set:SGXML.SC_stSmallGameInfo.line_gold)
 }
 
 #ifdef __GNUC__
@@ -1870,14 +1870,14 @@ inline void SC_stSmallGameInfo::set_line_gold(::PROTOBUF_NAMESPACE_ID::int32 val
 
 // @@protoc_insertion_point(namespace_scope)
 
-}  // namespace XML
+}  // namespace SGXML
 
 PROTOBUF_NAMESPACE_OPEN
 
-template <> struct is_proto_enum< ::XML::EMsgIDXML> : ::std::true_type {};
+template <> struct is_proto_enum< ::SGXML::EMsgIDXML> : ::std::true_type {};
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::XML::EMsgIDXML>() {
-  return ::XML::EMsgIDXML_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< ::SGXML::EMsgIDXML>() {
+  return ::SGXML::EMsgIDXML_descriptor();
 }
 
 PROTOBUF_NAMESPACE_CLOSE

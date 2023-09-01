@@ -14,7 +14,7 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-namespace XML {
+namespace SGXML {
 class SC_CheckOutDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SC_CheckOut> _instance;
@@ -35,13 +35,13 @@ class SC_stSmallGameInfoDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SC_stSmallGameInfo> _instance;
 } _SC_stSmallGameInfo_default_instance_;
-}  // namespace XML
+}  // namespace SGXML
 static void InitDefaultsscc_info_CS_Start_XML_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::XML::_CS_Start_default_instance_;
-    new (ptr) ::XML::CS_Start();
+    void* ptr = &::SGXML::_CS_Start_default_instance_;
+    new (ptr) ::SGXML::CS_Start();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -53,8 +53,8 @@ static void InitDefaultsscc_info_SC_CheckOut_XML_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::XML::_SC_CheckOut_default_instance_;
-    new (ptr) ::XML::SC_CheckOut();
+    void* ptr = &::SGXML::_SC_CheckOut_default_instance_;
+    new (ptr) ::SGXML::SC_CheckOut();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -66,8 +66,8 @@ static void InitDefaultsscc_info_SC_SceneInfo_XML_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::XML::_SC_SceneInfo_default_instance_;
-    new (ptr) ::XML::SC_SceneInfo();
+    void* ptr = &::SGXML::_SC_SceneInfo_default_instance_;
+    new (ptr) ::SGXML::SC_SceneInfo();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -79,8 +79,8 @@ static void InitDefaultsscc_info_SC_SyncGold_XML_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::XML::_SC_SyncGold_default_instance_;
-    new (ptr) ::XML::SC_SyncGold();
+    void* ptr = &::SGXML::_SC_SyncGold_default_instance_;
+    new (ptr) ::SGXML::SC_SyncGold();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -92,8 +92,8 @@ static void InitDefaultsscc_info_SC_stSmallGameInfo_XML_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::XML::_SC_stSmallGameInfo_default_instance_;
-    new (ptr) ::XML::SC_stSmallGameInfo();
+    void* ptr = &::SGXML::_SC_stSmallGameInfo_default_instance_;
+    new (ptr) ::SGXML::SC_stSmallGameInfo();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -107,103 +107,103 @@ static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_s
 
 const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_XML_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::XML::SC_CheckOut, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_CheckOut, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::XML::SC_CheckOut, result_),
-  PROTOBUF_FIELD_OFFSET(::XML::SC_CheckOut, reward_line_fruit_count_),
-  PROTOBUF_FIELD_OFFSET(::XML::SC_CheckOut, win_pei_lv_),
-  PROTOBUF_FIELD_OFFSET(::XML::SC_CheckOut, cur_gold_),
-  PROTOBUF_FIELD_OFFSET(::XML::SC_CheckOut, win_gold_),
-  PROTOBUF_FIELD_OFFSET(::XML::SC_CheckOut, total_win_gold_),
-  PROTOBUF_FIELD_OFFSET(::XML::SC_CheckOut, free_times_),
-  PROTOBUF_FIELD_OFFSET(::XML::SC_CheckOut, multiple_),
-  PROTOBUF_FIELD_OFFSET(::XML::SC_CheckOut, jackpot_value_),
-  PROTOBUF_FIELD_OFFSET(::XML::SC_CheckOut, small_game_times_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_CheckOut, result_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_CheckOut, reward_line_fruit_count_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_CheckOut, win_pei_lv_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_CheckOut, cur_gold_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_CheckOut, win_gold_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_CheckOut, total_win_gold_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_CheckOut, free_times_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_CheckOut, multiple_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_CheckOut, jackpot_value_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_CheckOut, small_game_times_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::XML::CS_Start, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::CS_Start, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::XML::CS_Start, line_num_),
-  PROTOBUF_FIELD_OFFSET(::XML::CS_Start, line_gold_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::CS_Start, line_num_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::CS_Start, line_gold_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::XML::SC_SyncGold, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_SyncGold, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::XML::SC_SyncGold, gold_),
-  PROTOBUF_FIELD_OFFSET(::XML::SC_SyncGold, last_win_gold_),
-  PROTOBUF_FIELD_OFFSET(::XML::SC_SyncGold, total_win_gold_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_SyncGold, gold_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_SyncGold, last_win_gold_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_SyncGold, total_win_gold_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::XML::SC_SceneInfo, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_SceneInfo, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::XML::SC_SceneInfo, left_free_game_cnt_),
-  PROTOBUF_FIELD_OFFSET(::XML::SC_SceneInfo, multiple_),
-  PROTOBUF_FIELD_OFFSET(::XML::SC_SceneInfo, beton_gold_),
-  PROTOBUF_FIELD_OFFSET(::XML::SC_SceneInfo, free_game_cot_total_),
-  PROTOBUF_FIELD_OFFSET(::XML::SC_SceneInfo, free_game_gold_),
-  PROTOBUF_FIELD_OFFSET(::XML::SC_SceneInfo, small_count_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_SceneInfo, left_free_game_cnt_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_SceneInfo, multiple_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_SceneInfo, beton_gold_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_SceneInfo, free_game_cot_total_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_SceneInfo, free_game_gold_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_SceneInfo, small_count_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::XML::SC_stSmallGameInfo, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_stSmallGameInfo, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::XML::SC_stSmallGameInfo, small_game_tatol_conut_),
-  PROTOBUF_FIELD_OFFSET(::XML::SC_stSmallGameInfo, small_game_conut_),
-  PROTOBUF_FIELD_OFFSET(::XML::SC_stSmallGameInfo, game_tatol_gold_),
-  PROTOBUF_FIELD_OFFSET(::XML::SC_stSmallGameInfo, icon_type_),
-  PROTOBUF_FIELD_OFFSET(::XML::SC_stSmallGameInfo, icon_type_conut_),
-  PROTOBUF_FIELD_OFFSET(::XML::SC_stSmallGameInfo, icon_type4_),
-  PROTOBUF_FIELD_OFFSET(::XML::SC_stSmallGameInfo, game_gold_),
-  PROTOBUF_FIELD_OFFSET(::XML::SC_stSmallGameInfo, game_end_),
-  PROTOBUF_FIELD_OFFSET(::XML::SC_stSmallGameInfo, line_gold_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_stSmallGameInfo, small_game_tatol_conut_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_stSmallGameInfo, small_game_conut_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_stSmallGameInfo, game_tatol_gold_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_stSmallGameInfo, icon_type_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_stSmallGameInfo, icon_type_conut_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_stSmallGameInfo, icon_type4_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_stSmallGameInfo, game_gold_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_stSmallGameInfo, game_end_),
+  PROTOBUF_FIELD_OFFSET(::SGXML::SC_stSmallGameInfo, line_gold_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::XML::SC_CheckOut)},
-  { 15, -1, sizeof(::XML::CS_Start)},
-  { 22, -1, sizeof(::XML::SC_SyncGold)},
-  { 30, -1, sizeof(::XML::SC_SceneInfo)},
-  { 41, -1, sizeof(::XML::SC_stSmallGameInfo)},
+  { 0, -1, sizeof(::SGXML::SC_CheckOut)},
+  { 15, -1, sizeof(::SGXML::CS_Start)},
+  { 22, -1, sizeof(::SGXML::SC_SyncGold)},
+  { 30, -1, sizeof(::SGXML::SC_SceneInfo)},
+  { 41, -1, sizeof(::SGXML::SC_stSmallGameInfo)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::XML::_SC_CheckOut_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::XML::_CS_Start_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::XML::_SC_SyncGold_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::XML::_SC_SceneInfo_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::XML::_SC_stSmallGameInfo_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::SGXML::_SC_CheckOut_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::SGXML::_CS_Start_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::SGXML::_SC_SyncGold_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::SGXML::_SC_SceneInfo_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::SGXML::_SC_stSmallGameInfo_default_instance_),
 };
 
 const char descriptor_table_protodef_XML_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\tXML.proto\022\003XML\"\345\001\n\013SC_CheckOut\022\016\n\006resu"
-  "lt\030\001 \003(\005\022\037\n\027reward_line_fruit_count\030\002 \003("
-  "\005\022\022\n\nwin_pei_lv\030\003 \001(\005\022\020\n\010cur_gold\030\004 \001(\003\022"
-  "\020\n\010win_gold\030\005 \001(\005\022\026\n\016total_win_gold\030\006 \001("
-  "\005\022\022\n\nfree_times\030\007 \001(\005\022\020\n\010multiple\030\010 \001(\005\022"
-  "\025\n\rjackpot_value\030\t \001(\005\022\030\n\020small_game_tim"
-  "es\030\n \001(\005\"/\n\010CS_Start\022\020\n\010line_num\030\001 \001(\005\022\021"
-  "\n\tline_gold\030\002 \001(\005\"J\n\013SC_SyncGold\022\014\n\004gold"
-  "\030\001 \001(\003\022\025\n\rlast_win_gold\030\002 \001(\005\022\026\n\016total_w"
-  "in_gold\030\003 \001(\005\"\232\001\n\014SC_SceneInfo\022\032\n\022left_f"
-  "ree_game_cnt\030\001 \001(\005\022\020\n\010multiple\030\002 \001(\005\022\022\n\n"
-  "beton_gold\030\004 \003(\005\022\033\n\023free_game_cot_total\030"
-  "\005 \001(\005\022\026\n\016free_game_gold\030\006 \001(\005\022\023\n\013small_c"
-  "ount\030\007 \001(\005\"\337\001\n\022SC_stSmallGameInfo\022\036\n\026sma"
-  "ll_game_tatol_conut\030\001 \001(\005\022\030\n\020small_game_"
-  "conut\030\002 \001(\005\022\027\n\017game_tatol_gold\030\003 \001(\005\022\021\n\t"
-  "icon_type\030\004 \001(\005\022\027\n\017icon_type_conut\030\005 \001(\005"
-  "\022\022\n\nicon_type4\030\006 \003(\005\022\021\n\tgame_gold\030\007 \001(\005\022"
-  "\020\n\010game_end\030\010 \001(\010\022\021\n\tline_gold\030\t \001(\005*\311\001\n"
-  "\tEMsgIDXML\022\025\n\021LABA_MSG_CS_START\020\000\022\032\n\026LAB"
-  "A_MSG_CS_SMALL_GAME\020\001\022\025\n\021LABA_MSG_SC_STA"
-  "RT\020\002\022\030\n\024LABA_MSG_SC_CHECKOUT\020\003\022\031\n\025LABA_M"
-  "SG_SC_SYNC_GOLD\020\004\022\032\n\026LABA_MSG_SC_SMALL_G"
-  "AME\020\005\022!\n\035LABA_MSG_SC_UPDATE_PRIZE_POOL\020\006"
-  "b\006proto3"
+  "\n\tXML.proto\022\005SGXML\"\345\001\n\013SC_CheckOut\022\016\n\006re"
+  "sult\030\001 \003(\005\022\037\n\027reward_line_fruit_count\030\002 "
+  "\003(\005\022\022\n\nwin_pei_lv\030\003 \001(\005\022\020\n\010cur_gold\030\004 \001("
+  "\003\022\020\n\010win_gold\030\005 \001(\005\022\026\n\016total_win_gold\030\006 "
+  "\001(\005\022\022\n\nfree_times\030\007 \001(\005\022\020\n\010multiple\030\010 \001("
+  "\005\022\025\n\rjackpot_value\030\t \001(\005\022\030\n\020small_game_t"
+  "imes\030\n \001(\005\"/\n\010CS_Start\022\020\n\010line_num\030\001 \001(\005"
+  "\022\021\n\tline_gold\030\002 \001(\005\"J\n\013SC_SyncGold\022\014\n\004go"
+  "ld\030\001 \001(\003\022\025\n\rlast_win_gold\030\002 \001(\005\022\026\n\016total"
+  "_win_gold\030\003 \001(\005\"\232\001\n\014SC_SceneInfo\022\032\n\022left"
+  "_free_game_cnt\030\001 \001(\005\022\020\n\010multiple\030\002 \001(\005\022\022"
+  "\n\nbeton_gold\030\004 \003(\005\022\033\n\023free_game_cot_tota"
+  "l\030\005 \001(\005\022\026\n\016free_game_gold\030\006 \001(\005\022\023\n\013small"
+  "_count\030\007 \001(\005\"\337\001\n\022SC_stSmallGameInfo\022\036\n\026s"
+  "mall_game_tatol_conut\030\001 \001(\005\022\030\n\020small_gam"
+  "e_conut\030\002 \001(\005\022\027\n\017game_tatol_gold\030\003 \001(\005\022\021"
+  "\n\ticon_type\030\004 \001(\005\022\027\n\017icon_type_conut\030\005 \001"
+  "(\005\022\022\n\nicon_type4\030\006 \003(\005\022\021\n\tgame_gold\030\007 \001("
+  "\005\022\020\n\010game_end\030\010 \001(\010\022\021\n\tline_gold\030\t \001(\005*\311"
+  "\001\n\tEMsgIDXML\022\025\n\021LABA_MSG_CS_START\020\000\022\032\n\026L"
+  "ABA_MSG_CS_SMALL_GAME\020\001\022\025\n\021LABA_MSG_SC_S"
+  "TART\020\002\022\030\n\024LABA_MSG_SC_CHECKOUT\020\003\022\031\n\025LABA"
+  "_MSG_SC_SYNC_GOLD\020\004\022\032\n\026LABA_MSG_SC_SMALL"
+  "_GAME\020\005\022!\n\035LABA_MSG_SC_UPDATE_PRIZE_POOL"
+  "\020\006b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_XML_2eproto_deps[1] = {
 };
@@ -216,7 +216,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_XML
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_XML_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_XML_2eproto = {
-  false, false, descriptor_table_protodef_XML_2eproto, "XML.proto", 968,
+  false, false, descriptor_table_protodef_XML_2eproto, "XML.proto", 970,
   &descriptor_table_XML_2eproto_once, descriptor_table_XML_2eproto_sccs, descriptor_table_XML_2eproto_deps, 5, 0,
   schemas, file_default_instances, TableStruct_XML_2eproto::offsets,
   file_level_metadata_XML_2eproto, 5, file_level_enum_descriptors_XML_2eproto, file_level_service_descriptors_XML_2eproto,
@@ -224,7 +224,7 @@ const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_XML_2e
 
 // Force running AddDescriptors() at dynamic initialization time.
 static bool dynamic_init_dummy_XML_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_XML_2eproto)), true);
-namespace XML {
+namespace SGXML {
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDXML_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_XML_2eproto);
   return file_level_enum_descriptors_XML_2eproto[0];
@@ -257,7 +257,7 @@ SC_CheckOut::SC_CheckOut(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   reward_line_fruit_count_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:XML.SC_CheckOut)
+  // @@protoc_insertion_point(arena_constructor:SGXML.SC_CheckOut)
 }
 SC_CheckOut::SC_CheckOut(const SC_CheckOut& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
@@ -267,7 +267,7 @@ SC_CheckOut::SC_CheckOut(const SC_CheckOut& from)
   ::memcpy(&cur_gold_, &from.cur_gold_,
     static_cast<size_t>(reinterpret_cast<char*>(&small_game_times_) -
     reinterpret_cast<char*>(&cur_gold_)) + sizeof(small_game_times_));
-  // @@protoc_insertion_point(copy_constructor:XML.SC_CheckOut)
+  // @@protoc_insertion_point(copy_constructor:SGXML.SC_CheckOut)
 }
 
 void SC_CheckOut::SharedCtor() {
@@ -278,7 +278,7 @@ void SC_CheckOut::SharedCtor() {
 }
 
 SC_CheckOut::~SC_CheckOut() {
-  // @@protoc_insertion_point(destructor:XML.SC_CheckOut)
+  // @@protoc_insertion_point(destructor:SGXML.SC_CheckOut)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -303,7 +303,7 @@ const SC_CheckOut& SC_CheckOut::default_instance() {
 
 
 void SC_CheckOut::Clear() {
-// @@protoc_insertion_point(message_clear_start:XML.SC_CheckOut)
+// @@protoc_insertion_point(message_clear_start:SGXML.SC_CheckOut)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -423,7 +423,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* SC_CheckOut::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:XML.SC_CheckOut)
+  // @@protoc_insertion_point(serialize_to_array_start:SGXML.SC_CheckOut)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -497,12 +497,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:XML.SC_CheckOut)
+  // @@protoc_insertion_point(serialize_to_array_end:SGXML.SC_CheckOut)
   return target;
 }
 
 size_t SC_CheckOut::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:XML.SC_CheckOut)
+// @@protoc_insertion_point(message_byte_size_start:SGXML.SC_CheckOut)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -605,22 +605,22 @@ size_t SC_CheckOut::ByteSizeLong() const {
 }
 
 void SC_CheckOut::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:XML.SC_CheckOut)
+// @@protoc_insertion_point(generalized_merge_from_start:SGXML.SC_CheckOut)
   GOOGLE_DCHECK_NE(&from, this);
   const SC_CheckOut* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SC_CheckOut>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:XML.SC_CheckOut)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:SGXML.SC_CheckOut)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:XML.SC_CheckOut)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:SGXML.SC_CheckOut)
     MergeFrom(*source);
   }
 }
 
 void SC_CheckOut::MergeFrom(const SC_CheckOut& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:XML.SC_CheckOut)
+// @@protoc_insertion_point(class_specific_merge_from_start:SGXML.SC_CheckOut)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -655,14 +655,14 @@ void SC_CheckOut::MergeFrom(const SC_CheckOut& from) {
 }
 
 void SC_CheckOut::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:XML.SC_CheckOut)
+// @@protoc_insertion_point(generalized_copy_from_start:SGXML.SC_CheckOut)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void SC_CheckOut::CopyFrom(const SC_CheckOut& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:XML.SC_CheckOut)
+// @@protoc_insertion_point(class_specific_copy_from_start:SGXML.SC_CheckOut)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -700,7 +700,7 @@ CS_Start::CS_Start(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:XML.CS_Start)
+  // @@protoc_insertion_point(arena_constructor:SGXML.CS_Start)
 }
 CS_Start::CS_Start(const CS_Start& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -708,7 +708,7 @@ CS_Start::CS_Start(const CS_Start& from)
   ::memcpy(&line_num_, &from.line_num_,
     static_cast<size_t>(reinterpret_cast<char*>(&line_gold_) -
     reinterpret_cast<char*>(&line_num_)) + sizeof(line_gold_));
-  // @@protoc_insertion_point(copy_constructor:XML.CS_Start)
+  // @@protoc_insertion_point(copy_constructor:SGXML.CS_Start)
 }
 
 void CS_Start::SharedCtor() {
@@ -719,7 +719,7 @@ void CS_Start::SharedCtor() {
 }
 
 CS_Start::~CS_Start() {
-  // @@protoc_insertion_point(destructor:XML.CS_Start)
+  // @@protoc_insertion_point(destructor:SGXML.CS_Start)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -744,7 +744,7 @@ const CS_Start& CS_Start::default_instance() {
 
 
 void CS_Start::Clear() {
-// @@protoc_insertion_point(message_clear_start:XML.CS_Start)
+// @@protoc_insertion_point(message_clear_start:SGXML.CS_Start)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -800,7 +800,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* CS_Start::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:XML.CS_Start)
+  // @@protoc_insertion_point(serialize_to_array_start:SGXML.CS_Start)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -820,12 +820,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:XML.CS_Start)
+  // @@protoc_insertion_point(serialize_to_array_end:SGXML.CS_Start)
   return target;
 }
 
 size_t CS_Start::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:XML.CS_Start)
+// @@protoc_insertion_point(message_byte_size_start:SGXML.CS_Start)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -856,22 +856,22 @@ size_t CS_Start::ByteSizeLong() const {
 }
 
 void CS_Start::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:XML.CS_Start)
+// @@protoc_insertion_point(generalized_merge_from_start:SGXML.CS_Start)
   GOOGLE_DCHECK_NE(&from, this);
   const CS_Start* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CS_Start>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:XML.CS_Start)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:SGXML.CS_Start)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:XML.CS_Start)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:SGXML.CS_Start)
     MergeFrom(*source);
   }
 }
 
 void CS_Start::MergeFrom(const CS_Start& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:XML.CS_Start)
+// @@protoc_insertion_point(class_specific_merge_from_start:SGXML.CS_Start)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -886,14 +886,14 @@ void CS_Start::MergeFrom(const CS_Start& from) {
 }
 
 void CS_Start::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:XML.CS_Start)
+// @@protoc_insertion_point(generalized_copy_from_start:SGXML.CS_Start)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CS_Start::CopyFrom(const CS_Start& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:XML.CS_Start)
+// @@protoc_insertion_point(class_specific_copy_from_start:SGXML.CS_Start)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -929,7 +929,7 @@ SC_SyncGold::SC_SyncGold(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:XML.SC_SyncGold)
+  // @@protoc_insertion_point(arena_constructor:SGXML.SC_SyncGold)
 }
 SC_SyncGold::SC_SyncGold(const SC_SyncGold& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -937,7 +937,7 @@ SC_SyncGold::SC_SyncGold(const SC_SyncGold& from)
   ::memcpy(&gold_, &from.gold_,
     static_cast<size_t>(reinterpret_cast<char*>(&total_win_gold_) -
     reinterpret_cast<char*>(&gold_)) + sizeof(total_win_gold_));
-  // @@protoc_insertion_point(copy_constructor:XML.SC_SyncGold)
+  // @@protoc_insertion_point(copy_constructor:SGXML.SC_SyncGold)
 }
 
 void SC_SyncGold::SharedCtor() {
@@ -948,7 +948,7 @@ void SC_SyncGold::SharedCtor() {
 }
 
 SC_SyncGold::~SC_SyncGold() {
-  // @@protoc_insertion_point(destructor:XML.SC_SyncGold)
+  // @@protoc_insertion_point(destructor:SGXML.SC_SyncGold)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -973,7 +973,7 @@ const SC_SyncGold& SC_SyncGold::default_instance() {
 
 
 void SC_SyncGold::Clear() {
-// @@protoc_insertion_point(message_clear_start:XML.SC_SyncGold)
+// @@protoc_insertion_point(message_clear_start:SGXML.SC_SyncGold)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1036,7 +1036,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* SC_SyncGold::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:XML.SC_SyncGold)
+  // @@protoc_insertion_point(serialize_to_array_start:SGXML.SC_SyncGold)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1062,12 +1062,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:XML.SC_SyncGold)
+  // @@protoc_insertion_point(serialize_to_array_end:SGXML.SC_SyncGold)
   return target;
 }
 
 size_t SC_SyncGold::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:XML.SC_SyncGold)
+// @@protoc_insertion_point(message_byte_size_start:SGXML.SC_SyncGold)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1105,22 +1105,22 @@ size_t SC_SyncGold::ByteSizeLong() const {
 }
 
 void SC_SyncGold::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:XML.SC_SyncGold)
+// @@protoc_insertion_point(generalized_merge_from_start:SGXML.SC_SyncGold)
   GOOGLE_DCHECK_NE(&from, this);
   const SC_SyncGold* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SC_SyncGold>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:XML.SC_SyncGold)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:SGXML.SC_SyncGold)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:XML.SC_SyncGold)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:SGXML.SC_SyncGold)
     MergeFrom(*source);
   }
 }
 
 void SC_SyncGold::MergeFrom(const SC_SyncGold& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:XML.SC_SyncGold)
+// @@protoc_insertion_point(class_specific_merge_from_start:SGXML.SC_SyncGold)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1138,14 +1138,14 @@ void SC_SyncGold::MergeFrom(const SC_SyncGold& from) {
 }
 
 void SC_SyncGold::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:XML.SC_SyncGold)
+// @@protoc_insertion_point(generalized_copy_from_start:SGXML.SC_SyncGold)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void SC_SyncGold::CopyFrom(const SC_SyncGold& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:XML.SC_SyncGold)
+// @@protoc_insertion_point(class_specific_copy_from_start:SGXML.SC_SyncGold)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1182,7 +1182,7 @@ SC_SceneInfo::SC_SceneInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   beton_gold_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:XML.SC_SceneInfo)
+  // @@protoc_insertion_point(arena_constructor:SGXML.SC_SceneInfo)
 }
 SC_SceneInfo::SC_SceneInfo(const SC_SceneInfo& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
@@ -1191,7 +1191,7 @@ SC_SceneInfo::SC_SceneInfo(const SC_SceneInfo& from)
   ::memcpy(&left_free_game_cnt_, &from.left_free_game_cnt_,
     static_cast<size_t>(reinterpret_cast<char*>(&small_count_) -
     reinterpret_cast<char*>(&left_free_game_cnt_)) + sizeof(small_count_));
-  // @@protoc_insertion_point(copy_constructor:XML.SC_SceneInfo)
+  // @@protoc_insertion_point(copy_constructor:SGXML.SC_SceneInfo)
 }
 
 void SC_SceneInfo::SharedCtor() {
@@ -1202,7 +1202,7 @@ void SC_SceneInfo::SharedCtor() {
 }
 
 SC_SceneInfo::~SC_SceneInfo() {
-  // @@protoc_insertion_point(destructor:XML.SC_SceneInfo)
+  // @@protoc_insertion_point(destructor:SGXML.SC_SceneInfo)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -1227,7 +1227,7 @@ const SC_SceneInfo& SC_SceneInfo::default_instance() {
 
 
 void SC_SceneInfo::Clear() {
-// @@protoc_insertion_point(message_clear_start:XML.SC_SceneInfo)
+// @@protoc_insertion_point(message_clear_start:SGXML.SC_SceneInfo)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1315,7 +1315,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* SC_SceneInfo::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:XML.SC_SceneInfo)
+  // @@protoc_insertion_point(serialize_to_array_start:SGXML.SC_SceneInfo)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1362,12 +1362,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:XML.SC_SceneInfo)
+  // @@protoc_insertion_point(serialize_to_array_end:SGXML.SC_SceneInfo)
   return target;
 }
 
 size_t SC_SceneInfo::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:XML.SC_SceneInfo)
+// @@protoc_insertion_point(message_byte_size_start:SGXML.SC_SceneInfo)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1434,22 +1434,22 @@ size_t SC_SceneInfo::ByteSizeLong() const {
 }
 
 void SC_SceneInfo::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:XML.SC_SceneInfo)
+// @@protoc_insertion_point(generalized_merge_from_start:SGXML.SC_SceneInfo)
   GOOGLE_DCHECK_NE(&from, this);
   const SC_SceneInfo* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SC_SceneInfo>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:XML.SC_SceneInfo)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:SGXML.SC_SceneInfo)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:XML.SC_SceneInfo)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:SGXML.SC_SceneInfo)
     MergeFrom(*source);
   }
 }
 
 void SC_SceneInfo::MergeFrom(const SC_SceneInfo& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:XML.SC_SceneInfo)
+// @@protoc_insertion_point(class_specific_merge_from_start:SGXML.SC_SceneInfo)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1474,14 +1474,14 @@ void SC_SceneInfo::MergeFrom(const SC_SceneInfo& from) {
 }
 
 void SC_SceneInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:XML.SC_SceneInfo)
+// @@protoc_insertion_point(generalized_copy_from_start:SGXML.SC_SceneInfo)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void SC_SceneInfo::CopyFrom(const SC_SceneInfo& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:XML.SC_SceneInfo)
+// @@protoc_insertion_point(class_specific_copy_from_start:SGXML.SC_SceneInfo)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1519,7 +1519,7 @@ SC_stSmallGameInfo::SC_stSmallGameInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   icon_type4_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:XML.SC_stSmallGameInfo)
+  // @@protoc_insertion_point(arena_constructor:SGXML.SC_stSmallGameInfo)
 }
 SC_stSmallGameInfo::SC_stSmallGameInfo(const SC_stSmallGameInfo& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
@@ -1528,7 +1528,7 @@ SC_stSmallGameInfo::SC_stSmallGameInfo(const SC_stSmallGameInfo& from)
   ::memcpy(&small_game_tatol_conut_, &from.small_game_tatol_conut_,
     static_cast<size_t>(reinterpret_cast<char*>(&line_gold_) -
     reinterpret_cast<char*>(&small_game_tatol_conut_)) + sizeof(line_gold_));
-  // @@protoc_insertion_point(copy_constructor:XML.SC_stSmallGameInfo)
+  // @@protoc_insertion_point(copy_constructor:SGXML.SC_stSmallGameInfo)
 }
 
 void SC_stSmallGameInfo::SharedCtor() {
@@ -1539,7 +1539,7 @@ void SC_stSmallGameInfo::SharedCtor() {
 }
 
 SC_stSmallGameInfo::~SC_stSmallGameInfo() {
-  // @@protoc_insertion_point(destructor:XML.SC_stSmallGameInfo)
+  // @@protoc_insertion_point(destructor:SGXML.SC_stSmallGameInfo)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -1564,7 +1564,7 @@ const SC_stSmallGameInfo& SC_stSmallGameInfo::default_instance() {
 
 
 void SC_stSmallGameInfo::Clear() {
-// @@protoc_insertion_point(message_clear_start:XML.SC_stSmallGameInfo)
+// @@protoc_insertion_point(message_clear_start:SGXML.SC_stSmallGameInfo)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1673,7 +1673,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* SC_stSmallGameInfo::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:XML.SC_stSmallGameInfo)
+  // @@protoc_insertion_point(serialize_to_array_start:SGXML.SC_stSmallGameInfo)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1738,12 +1738,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:XML.SC_stSmallGameInfo)
+  // @@protoc_insertion_point(serialize_to_array_end:SGXML.SC_stSmallGameInfo)
   return target;
 }
 
 size_t SC_stSmallGameInfo::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:XML.SC_stSmallGameInfo)
+// @@protoc_insertion_point(message_byte_size_start:SGXML.SC_stSmallGameInfo)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1829,22 +1829,22 @@ size_t SC_stSmallGameInfo::ByteSizeLong() const {
 }
 
 void SC_stSmallGameInfo::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:XML.SC_stSmallGameInfo)
+// @@protoc_insertion_point(generalized_merge_from_start:SGXML.SC_stSmallGameInfo)
   GOOGLE_DCHECK_NE(&from, this);
   const SC_stSmallGameInfo* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SC_stSmallGameInfo>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:XML.SC_stSmallGameInfo)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:SGXML.SC_stSmallGameInfo)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:XML.SC_stSmallGameInfo)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:SGXML.SC_stSmallGameInfo)
     MergeFrom(*source);
   }
 }
 
 void SC_stSmallGameInfo::MergeFrom(const SC_stSmallGameInfo& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:XML.SC_stSmallGameInfo)
+// @@protoc_insertion_point(class_specific_merge_from_start:SGXML.SC_stSmallGameInfo)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1878,14 +1878,14 @@ void SC_stSmallGameInfo::MergeFrom(const SC_stSmallGameInfo& from) {
 }
 
 void SC_stSmallGameInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:XML.SC_stSmallGameInfo)
+// @@protoc_insertion_point(generalized_copy_from_start:SGXML.SC_stSmallGameInfo)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void SC_stSmallGameInfo::CopyFrom(const SC_stSmallGameInfo& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:XML.SC_stSmallGameInfo)
+// @@protoc_insertion_point(class_specific_copy_from_start:SGXML.SC_stSmallGameInfo)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1913,22 +1913,22 @@ void SC_stSmallGameInfo::InternalSwap(SC_stSmallGameInfo* other) {
 
 
 // @@protoc_insertion_point(namespace_scope)
-}  // namespace XML
+}  // namespace SGXML
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::XML::SC_CheckOut* Arena::CreateMaybeMessage< ::XML::SC_CheckOut >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::XML::SC_CheckOut >(arena);
+template<> PROTOBUF_NOINLINE ::SGXML::SC_CheckOut* Arena::CreateMaybeMessage< ::SGXML::SC_CheckOut >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::SGXML::SC_CheckOut >(arena);
 }
-template<> PROTOBUF_NOINLINE ::XML::CS_Start* Arena::CreateMaybeMessage< ::XML::CS_Start >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::XML::CS_Start >(arena);
+template<> PROTOBUF_NOINLINE ::SGXML::CS_Start* Arena::CreateMaybeMessage< ::SGXML::CS_Start >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::SGXML::CS_Start >(arena);
 }
-template<> PROTOBUF_NOINLINE ::XML::SC_SyncGold* Arena::CreateMaybeMessage< ::XML::SC_SyncGold >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::XML::SC_SyncGold >(arena);
+template<> PROTOBUF_NOINLINE ::SGXML::SC_SyncGold* Arena::CreateMaybeMessage< ::SGXML::SC_SyncGold >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::SGXML::SC_SyncGold >(arena);
 }
-template<> PROTOBUF_NOINLINE ::XML::SC_SceneInfo* Arena::CreateMaybeMessage< ::XML::SC_SceneInfo >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::XML::SC_SceneInfo >(arena);
+template<> PROTOBUF_NOINLINE ::SGXML::SC_SceneInfo* Arena::CreateMaybeMessage< ::SGXML::SC_SceneInfo >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::SGXML::SC_SceneInfo >(arena);
 }
-template<> PROTOBUF_NOINLINE ::XML::SC_stSmallGameInfo* Arena::CreateMaybeMessage< ::XML::SC_stSmallGameInfo >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::XML::SC_stSmallGameInfo >(arena);
+template<> PROTOBUF_NOINLINE ::SGXML::SC_stSmallGameInfo* Arena::CreateMaybeMessage< ::SGXML::SC_stSmallGameInfo >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::SGXML::SC_stSmallGameInfo >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 
