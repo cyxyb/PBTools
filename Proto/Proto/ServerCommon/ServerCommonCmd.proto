@@ -112,6 +112,8 @@ enum EMsgIDDB
 	DB2LOGIN_GetAvatarInfoResp		= 1038;	//获取头像和头像框信息返回
 	LOGIN2DB_QueryPlayerInfo		= 1039;	//查询玩家信息
 	DB2LOGIN_QueryPlayerInfoResp	= 1040;	//查询玩家信息返回
+	LOGIN2DB_QueryActiveInfo 		= 1041; //查询玩家任务信息
+	DB2LOGIN_QueryActiveInfoResp	= 1042; //查询玩家任务信息返回
 	
 	//2001-3000 GameServer2DB
 	GAME2DB_Login					= 2001;	//玩家登录游戏
