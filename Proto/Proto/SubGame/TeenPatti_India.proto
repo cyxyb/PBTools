@@ -65,7 +65,7 @@ message MsgAction
 message MsgGiveUpResp
 {
 	int32				chair_id		= 1;	//玩家椅子号
-	MsgBet				bet_info		= 2;	//玩家下注信息
+//	MsgBet				bet_info		= 2;	//玩家下注信息
 }
 
 //玩家看牌
