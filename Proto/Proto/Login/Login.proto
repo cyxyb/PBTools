@@ -33,6 +33,7 @@ message MsgPlayerLoginResp
 	uint64		coin			= 10;	//玩家金币
 	string		phone_num		= 11;	//手机号
 	int32		vip_level		= 12;	//VIP等级
+	int32		avatar_frame	= 13;	//头像框
 }
 
 //修改密码
@@ -195,4 +196,23 @@ message MsgUpgradeVIP
 {
 	int32		res_code					= 1;	//返回码(0:成功 非0:失败)
 	int64		gold						= 2;	//玩家当前金币
+}
+
+//头像和头像框信息
+message MsgGetAvatarInfo
+{
+	repeated	int32	avatars				= 1;	//头像和头像框编号
+}
+
+//查看玩家个人信息
+message MsgPlayerInfo
+{
+	int32		user_id			= 1;	//玩家ID
+	int32		beautiful_id	= 2;	//玩家靓号
+	string		nickname		= 3;	//玩家昵称
+	string		avatar			= 4;	//头像
+	uint64		coin			= 5;	//玩家金币
+	string		phone_num		= 6;	//手机号
+	int32		vip_level		= 7;	//VIP等级
+	int32		avatar_frame	= 8;	//头像框
 }

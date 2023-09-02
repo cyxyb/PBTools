@@ -28,56 +28,61 @@ public static partial class LoginReflection {
           "GAUgASgFEhIKCmxvZ2luX3R5cGUYBiABKAUSEwoLbWFjaGluZV9udW0YByAB",
           "KAkSDwoHdXNlcl9pcBgIIAEoCRIQCghpc19kcmFpbhgJIAEoCBIOCgZhdmF0",
           "YXIYCiABKAkSEAoIbmlja25hbWUYCyABKAkSDQoFcGhvbmUYDCABKAkSDAoE",
-          "Y29kZRgNIAEoBSLxAQoSTXNnUGxheWVyTG9naW5SZXNwEhAKCHJlc19jb2Rl",
+          "Y29kZRgNIAEoBSKHAgoSTXNnUGxheWVyTG9naW5SZXNwEhAKCHJlc19jb2Rl",
           "GAEgASgFEg8KB3VzZXJfaWQYAiABKAUSFAoMYmVhdXRpZnVsX2lkGAMgASgF",
           "Eg8KB2FjY291bnQYBCABKAkSEAoIbmlja25hbWUYBSABKAkSDgoGYXZhdGFy",
           "GAYgASgJEhYKDmZpcnN0X3JlY2hhcmdlGAcgASgIEhEKCXVzZXJfdHlwZRgI",
           "IAEoBRIQCghpc19kcmFpbhgJIAEoCBIMCgRjb2luGAogASgEEhEKCXBob25l",
-          "X251bRgLIAEoCRIRCgl2aXBfbGV2ZWwYDCABKAUiPwoRTXNnTW9kaWZ5UGFz",
-          "c3dvcmQSFAoMb2xkX3Bhc3N3b3JkGAEgASgJEhQKDG5ld19wYXNzd29yZBgC",
-          "IAEoCSJBCgxNc2dCaW5kUGhvbmUSDAoEY29kZRgBIAEoBRIRCglwaG9uZV9u",
-          "dW0YAiABKAkSEAoIcGFzc3dvcmQYAyABKAkiIwoLTXNnQ29tbW9uS1YSCQoB",
-          "axgBIAEoBRIJCgF2GAIgASgFImkKDk1zZ0NoZWNrSW5JbmZvEhIKCmNoZWNr",
-          "X2RheXMYASABKAUSDwoHaXNfb3BlbhgCIAEoCBIQCghjYW5fcGljaxgDIAEo",
-          "CBIgCgpDaGVja0luQ2ZnGAQgAygLMgwuTXNnQ29tbW9uS1YiZAoXTXNnVHVy",
-          "bnRhYmxlSGlzdG9yeURhdGESDwoHdXNlcl9pZBgBIAEoBRINCgVzY29yZRgC",
-          "IAEoBRINCgVhd2FyZBgDIAEoBRIMCgR0eXBlGAQgASgFEgwKBHRpbWUYBSAB",
-          "KAkiqwEKEE1zZ1R1cm50YWJsZURhdGESEAoIcGxheV9udW0YASABKAUSDQoF",
-          "c2NvcmUYAiABKAUSEgoKbmVlZF9zY29yZRgDIAEoBRISCgpsaW1pdF90dXJu",
-          "GAQgASgFEiMKDXR1cm50YWJsZV9jZmcYBSADKAsyDC5Nc2dDb21tb25LVhIp",
-          "CgdoaXN0b3J5GAYgAygLMhguTXNnVHVybnRhYmxlSGlzdG9yeURhdGEiKwoM",
-          "TXNnTWFpbHNJbmZvEhsKBW1haWxzGAEgAygLMgwuTXNnTWFpbERhdGEirAEK",
-          "C01zZ01haWxEYXRhEg8KB21haWxfaWQYASABKAUSFAoMc2VuZF91c2VyX2lk",
-          "GAIgASgFEhEKCXNlbmRfdGltZRgDIAEoBRINCgV0aXRsZRgEIAEoCRIPCgdj",
-          "b250ZW50GAUgASgJEgwKBGdvbGQYBiABKAMSDwoHaXNfcmVhZBgHIAEoCBIQ",
-          "Cghpc19jbGFpbRgIIAEoCBISCgp0b191c2VyX2lkGAkgASgFIjYKDE1zZ1No",
-          "YXJlRGF0YRITCgtpbnZpdGVfY29kZRgBIAEoCRIRCgliaW5kX2xpc3QYAiAD",
-          "KAUiJAoRTXNnQmluZFBhcmVudERhdGESDwoHc3RyQ29kZRgBIAEoCSJjChJN",
-          "c2dJbnZpdGVBd2FyZEluZm8SEQoJaW52aXRlTnVtGAEgASgFEhEKCXBpY2tJ",
-          "bmRleBgCIAEoBRInCghhd2FyZENmZxgDIAMoCzIVLk1zZ0ludml0ZUF3YXJk",
-          "Q29uZmlnIjgKFE1zZ0ludml0ZUF3YXJkQ29uZmlnEhEKCWludml0ZU51bRgB",
-          "IAEoBRINCgVhd2FyZBgCIAEoBSJ3Cg9Nc2dSZWNoYXJnZUluZm8SEQoJaW52",
-          "aXRlTnVtGAEgASgFEhIKCnRvZGF5QXdhcmQYAiABKAMSEgoKdG90YWxBd2Fy",
-          "ZBgDIAEoAxIVCg1jYW5QaWNrQW1vdW50GAQgASgDEhIKCmludml0ZUNvZGUY",
-          "BSABKAkiTAoYTXNnUXVlcnlSZWJhdGVSZWNvcmRJbmZvEjAKEXF1ZXJ5UmVi",
-          "YXRlUmVjb3JkGAEgAygLMhUuTXNnUXVlcnlSZWJhdGVSZWNvcmQiVgoUTXNn",
-          "UXVlcnlSZWJhdGVSZWNvcmQSFgoOcmVjaGFyZ2VVc2VySWQYASABKAUSFgoO",
-          "cmVjaGFyZ2VBbW91bnQYAiABKAUSDgoGcmViYXRlGAMgASgFIlsKEU1zZ0Zv",
-          "cmdldFBhc3N3b3JkEhMKC2NsaWVudF90eXBlGAEgASgFEg0KBXBob25lGAIg",
-          "ASgJEgwKBGNvZGUYAyABKAUSFAoMbmV3X3Bhc3N3b3JkGAQgASgJIvYBCgpN",
-          "c2dWSVBJbmZvEhEKCXZpcF9sZXZlbBgBIAEoBRISCgpuZWVkX3Njb3JlGAIg",
-          "ASgDEhUKDXR1cm50YWJsZV9udW0YAyABKAUSGAoQdHJ1bXBldF9kaXNjb3Vu",
-          "dBgEIAEoBRIWCg5jaGVja19hZGRpdGlvbhgFIAEoBRIWCg5zaGFyZV9hZGRp",
-          "dGlvbhgGIAEoBRISCgp3b3JsZF9jaGF0GAcgASgIEg4KBmF2YXRhchgIIAEo",
-          "BRIUCgxhdmF0YXJfZnJhbWUYCSABKAUSEgoKYXdhcmRfZ29sZBgKIAEoBRIS",
-          "CgpvbmVfdG9fb25lGAsgASgIIi0KDE1zZ1ZJUENvbmZpZxIdCgh2aXBfaW5m",
-          "bxgBIAMoCzILLk1zZ1ZJUEluZm8iLwoNTXNnVXBncmFkZVZJUBIQCghyZXNf",
-          "Y29kZRgBIAEoBRIMCgRnb2xkGAIgASgDYgZwcm90bzM="));
+          "X251bRgLIAEoCRIRCgl2aXBfbGV2ZWwYDCABKAUSFAoMYXZhdGFyX2ZyYW1l",
+          "GA0gASgFIj8KEU1zZ01vZGlmeVBhc3N3b3JkEhQKDG9sZF9wYXNzd29yZBgB",
+          "IAEoCRIUCgxuZXdfcGFzc3dvcmQYAiABKAkiQQoMTXNnQmluZFBob25lEgwK",
+          "BGNvZGUYASABKAUSEQoJcGhvbmVfbnVtGAIgASgJEhAKCHBhc3N3b3JkGAMg",
+          "ASgJIiMKC01zZ0NvbW1vbktWEgkKAWsYASABKAUSCQoBdhgCIAEoBSJpCg5N",
+          "c2dDaGVja0luSW5mbxISCgpjaGVja19kYXlzGAEgASgFEg8KB2lzX29wZW4Y",
+          "AiABKAgSEAoIY2FuX3BpY2sYAyABKAgSIAoKQ2hlY2tJbkNmZxgEIAMoCzIM",
+          "Lk1zZ0NvbW1vbktWImQKF01zZ1R1cm50YWJsZUhpc3RvcnlEYXRhEg8KB3Vz",
+          "ZXJfaWQYASABKAUSDQoFc2NvcmUYAiABKAUSDQoFYXdhcmQYAyABKAUSDAoE",
+          "dHlwZRgEIAEoBRIMCgR0aW1lGAUgASgJIqsBChBNc2dUdXJudGFibGVEYXRh",
+          "EhAKCHBsYXlfbnVtGAEgASgFEg0KBXNjb3JlGAIgASgFEhIKCm5lZWRfc2Nv",
+          "cmUYAyABKAUSEgoKbGltaXRfdHVybhgEIAEoBRIjCg10dXJudGFibGVfY2Zn",
+          "GAUgAygLMgwuTXNnQ29tbW9uS1YSKQoHaGlzdG9yeRgGIAMoCzIYLk1zZ1R1",
+          "cm50YWJsZUhpc3RvcnlEYXRhIisKDE1zZ01haWxzSW5mbxIbCgVtYWlscxgB",
+          "IAMoCzIMLk1zZ01haWxEYXRhIqwBCgtNc2dNYWlsRGF0YRIPCgdtYWlsX2lk",
+          "GAEgASgFEhQKDHNlbmRfdXNlcl9pZBgCIAEoBRIRCglzZW5kX3RpbWUYAyAB",
+          "KAUSDQoFdGl0bGUYBCABKAkSDwoHY29udGVudBgFIAEoCRIMCgRnb2xkGAYg",
+          "ASgDEg8KB2lzX3JlYWQYByABKAgSEAoIaXNfY2xhaW0YCCABKAgSEgoKdG9f",
+          "dXNlcl9pZBgJIAEoBSI2CgxNc2dTaGFyZURhdGESEwoLaW52aXRlX2NvZGUY",
+          "ASABKAkSEQoJYmluZF9saXN0GAIgAygFIiQKEU1zZ0JpbmRQYXJlbnREYXRh",
+          "Eg8KB3N0ckNvZGUYASABKAkiYwoSTXNnSW52aXRlQXdhcmRJbmZvEhEKCWlu",
+          "dml0ZU51bRgBIAEoBRIRCglwaWNrSW5kZXgYAiABKAUSJwoIYXdhcmRDZmcY",
+          "AyADKAsyFS5Nc2dJbnZpdGVBd2FyZENvbmZpZyI4ChRNc2dJbnZpdGVBd2Fy",
+          "ZENvbmZpZxIRCglpbnZpdGVOdW0YASABKAUSDQoFYXdhcmQYAiABKAUidwoP",
+          "TXNnUmVjaGFyZ2VJbmZvEhEKCWludml0ZU51bRgBIAEoBRISCgp0b2RheUF3",
+          "YXJkGAIgASgDEhIKCnRvdGFsQXdhcmQYAyABKAMSFQoNY2FuUGlja0Ftb3Vu",
+          "dBgEIAEoAxISCgppbnZpdGVDb2RlGAUgASgJIkwKGE1zZ1F1ZXJ5UmViYXRl",
+          "UmVjb3JkSW5mbxIwChFxdWVyeVJlYmF0ZVJlY29yZBgBIAMoCzIVLk1zZ1F1",
+          "ZXJ5UmViYXRlUmVjb3JkIlYKFE1zZ1F1ZXJ5UmViYXRlUmVjb3JkEhYKDnJl",
+          "Y2hhcmdlVXNlcklkGAEgASgFEhYKDnJlY2hhcmdlQW1vdW50GAIgASgFEg4K",
+          "BnJlYmF0ZRgDIAEoBSJbChFNc2dGb3JnZXRQYXNzd29yZBITCgtjbGllbnRf",
+          "dHlwZRgBIAEoBRINCgVwaG9uZRgCIAEoCRIMCgRjb2RlGAMgASgFEhQKDG5l",
+          "d19wYXNzd29yZBgEIAEoCSL2AQoKTXNnVklQSW5mbxIRCgl2aXBfbGV2ZWwY",
+          "ASABKAUSEgoKbmVlZF9zY29yZRgCIAEoAxIVCg10dXJudGFibGVfbnVtGAMg",
+          "ASgFEhgKEHRydW1wZXRfZGlzY291bnQYBCABKAUSFgoOY2hlY2tfYWRkaXRp",
+          "b24YBSABKAUSFgoOc2hhcmVfYWRkaXRpb24YBiABKAUSEgoKd29ybGRfY2hh",
+          "dBgHIAEoCBIOCgZhdmF0YXIYCCABKAUSFAoMYXZhdGFyX2ZyYW1lGAkgASgF",
+          "EhIKCmF3YXJkX2dvbGQYCiABKAUSEgoKb25lX3RvX29uZRgLIAEoCCItCgxN",
+          "c2dWSVBDb25maWcSHQoIdmlwX2luZm8YASADKAsyCy5Nc2dWSVBJbmZvIi8K",
+          "DU1zZ1VwZ3JhZGVWSVASEAoIcmVzX2NvZGUYASABKAUSDAoEZ29sZBgCIAEo",
+          "AyIjChBNc2dHZXRBdmF0YXJJbmZvEg8KB2F2YXRhcnMYASADKAUiogEKDU1z",
+          "Z1BsYXllckluZm8SDwoHdXNlcl9pZBgBIAEoBRIUCgxiZWF1dGlmdWxfaWQY",
+          "AiABKAUSEAoIbmlja25hbWUYAyABKAkSDgoGYXZhdGFyGAQgASgJEgwKBGNv",
+          "aW4YBSABKAQSEQoJcGhvbmVfbnVtGAYgASgJEhEKCXZpcF9sZXZlbBgHIAEo",
+          "BRIUCgxhdmF0YXJfZnJhbWUYCCABKAViBnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPlayerLogin), global::MsgPlayerLogin.Parser, new[]{ "Account", "Password", "PlatformId", "ChannelId", "ClientType", "LoginType", "MachineNum", "UserIp", "IsDrain", "Avatar", "Nickname", "Phone", "Code" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPlayerLoginResp), global::MsgPlayerLoginResp.Parser, new[]{ "ResCode", "UserId", "BeautifulId", "Account", "Nickname", "Avatar", "FirstRecharge", "UserType", "IsDrain", "Coin", "PhoneNum", "VipLevel" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPlayerLoginResp), global::MsgPlayerLoginResp.Parser, new[]{ "ResCode", "UserId", "BeautifulId", "Account", "Nickname", "Avatar", "FirstRecharge", "UserType", "IsDrain", "Coin", "PhoneNum", "VipLevel", "AvatarFrame" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgModifyPassword), global::MsgModifyPassword.Parser, new[]{ "OldPassword", "NewPassword" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBindPhone), global::MsgBindPhone.Parser, new[]{ "Code", "PhoneNum", "Password" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgCommonKV), global::MsgCommonKV.Parser, new[]{ "K", "V" }, null, null, null, null),
@@ -96,7 +101,9 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgForgetPassword), global::MsgForgetPassword.Parser, new[]{ "ClientType", "Phone", "Code", "NewPassword" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgVIPInfo), global::MsgVIPInfo.Parser, new[]{ "VipLevel", "NeedScore", "TurntableNum", "TrumpetDiscount", "CheckAddition", "ShareAddition", "WorldChat", "Avatar", "AvatarFrame", "AwardGold", "OneToOne" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgVIPConfig), global::MsgVIPConfig.Parser, new[]{ "VipInfo" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgUpgradeVIP), global::MsgUpgradeVIP.Parser, new[]{ "ResCode", "Gold" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgUpgradeVIP), global::MsgUpgradeVIP.Parser, new[]{ "ResCode", "Gold" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgGetAvatarInfo), global::MsgGetAvatarInfo.Parser, new[]{ "Avatars" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPlayerInfo), global::MsgPlayerInfo.Parser, new[]{ "UserId", "BeautifulId", "Nickname", "Avatar", "Coin", "PhoneNum", "VipLevel", "AvatarFrame" }, null, null, null, null)
         }));
   }
   #endregion
@@ -793,6 +800,7 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
     coin_ = other.coin_;
     phoneNum_ = other.phoneNum_;
     vipLevel_ = other.vipLevel_;
+    avatarFrame_ = other.avatarFrame_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -969,6 +977,20 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
     }
   }
 
+  /// <summary>Field number for the "avatar_frame" field.</summary>
+  public const int AvatarFrameFieldNumber = 13;
+  private int avatarFrame_;
+  /// <summary>
+  ///头像框
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int AvatarFrame {
+    get { return avatarFrame_; }
+    set {
+      avatarFrame_ = value;
+    }
+  }
+
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as MsgPlayerLoginResp);
@@ -994,6 +1016,7 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
     if (Coin != other.Coin) return false;
     if (PhoneNum != other.PhoneNum) return false;
     if (VipLevel != other.VipLevel) return false;
+    if (AvatarFrame != other.AvatarFrame) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -1012,6 +1035,7 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
     if (Coin != 0UL) hash ^= Coin.GetHashCode();
     if (PhoneNum.Length != 0) hash ^= PhoneNum.GetHashCode();
     if (VipLevel != 0) hash ^= VipLevel.GetHashCode();
+    if (AvatarFrame != 0) hash ^= AvatarFrame.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -1076,6 +1100,10 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
       output.WriteRawTag(96);
       output.WriteInt32(VipLevel);
     }
+    if (AvatarFrame != 0) {
+      output.WriteRawTag(104);
+      output.WriteInt32(AvatarFrame);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -1133,6 +1161,10 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
       output.WriteRawTag(96);
       output.WriteInt32(VipLevel);
     }
+    if (AvatarFrame != 0) {
+      output.WriteRawTag(104);
+      output.WriteInt32(AvatarFrame);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -1177,6 +1209,9 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
     }
     if (VipLevel != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(VipLevel);
+    }
+    if (AvatarFrame != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(AvatarFrame);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -1224,6 +1259,9 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
     }
     if (other.VipLevel != 0) {
       VipLevel = other.VipLevel;
+    }
+    if (other.AvatarFrame != 0) {
+      AvatarFrame = other.AvatarFrame;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -1287,6 +1325,10 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
           VipLevel = input.ReadInt32();
           break;
         }
+        case 104: {
+          AvatarFrame = input.ReadInt32();
+          break;
+        }
       }
     }
   #endif
@@ -1347,6 +1389,10 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
         }
         case 96: {
           VipLevel = input.ReadInt32();
+          break;
+        }
+        case 104: {
+          AvatarFrame = input.ReadInt32();
           break;
         }
       }
@@ -6512,6 +6558,626 @@ public sealed partial class MsgUpgradeVIP : pb::IMessage<MsgUpgradeVIP>
         }
         case 16: {
           Gold = input.ReadInt64();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///头像和头像框信息
+/// </summary>
+public sealed partial class MsgGetAvatarInfo : pb::IMessage<MsgGetAvatarInfo>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgGetAvatarInfo> _parser = new pb::MessageParser<MsgGetAvatarInfo>(() => new MsgGetAvatarInfo());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgGetAvatarInfo> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[21]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgGetAvatarInfo() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgGetAvatarInfo(MsgGetAvatarInfo other) : this() {
+    avatars_ = other.avatars_.Clone();
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgGetAvatarInfo Clone() {
+    return new MsgGetAvatarInfo(this);
+  }
+
+  /// <summary>Field number for the "avatars" field.</summary>
+  public const int AvatarsFieldNumber = 1;
+  private static readonly pb::FieldCodec<int> _repeated_avatars_codec
+      = pb::FieldCodec.ForInt32(10);
+  private readonly pbc::RepeatedField<int> avatars_ = new pbc::RepeatedField<int>();
+  /// <summary>
+  ///头像和头像框编号
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<int> Avatars {
+    get { return avatars_; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgGetAvatarInfo);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgGetAvatarInfo other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if(!avatars_.Equals(other.avatars_)) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    hash ^= avatars_.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    avatars_.WriteTo(output, _repeated_avatars_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    avatars_.WriteTo(ref output, _repeated_avatars_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    size += avatars_.CalculateSize(_repeated_avatars_codec);
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgGetAvatarInfo other) {
+    if (other == null) {
+      return;
+    }
+    avatars_.Add(other.avatars_);
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 10:
+        case 8: {
+          avatars_.AddEntriesFrom(input, _repeated_avatars_codec);
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 10:
+        case 8: {
+          avatars_.AddEntriesFrom(ref input, _repeated_avatars_codec);
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///查看玩家个人信息
+/// </summary>
+public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgPlayerInfo> _parser = new pb::MessageParser<MsgPlayerInfo>(() => new MsgPlayerInfo());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgPlayerInfo> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[22]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgPlayerInfo() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgPlayerInfo(MsgPlayerInfo other) : this() {
+    userId_ = other.userId_;
+    beautifulId_ = other.beautifulId_;
+    nickname_ = other.nickname_;
+    avatar_ = other.avatar_;
+    coin_ = other.coin_;
+    phoneNum_ = other.phoneNum_;
+    vipLevel_ = other.vipLevel_;
+    avatarFrame_ = other.avatarFrame_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgPlayerInfo Clone() {
+    return new MsgPlayerInfo(this);
+  }
+
+  /// <summary>Field number for the "user_id" field.</summary>
+  public const int UserIdFieldNumber = 1;
+  private int userId_;
+  /// <summary>
+  ///玩家ID
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int UserId {
+    get { return userId_; }
+    set {
+      userId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "beautiful_id" field.</summary>
+  public const int BeautifulIdFieldNumber = 2;
+  private int beautifulId_;
+  /// <summary>
+  ///玩家靓号
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int BeautifulId {
+    get { return beautifulId_; }
+    set {
+      beautifulId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "nickname" field.</summary>
+  public const int NicknameFieldNumber = 3;
+  private string nickname_ = "";
+  /// <summary>
+  ///玩家昵称
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string Nickname {
+    get { return nickname_; }
+    set {
+      nickname_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "avatar" field.</summary>
+  public const int AvatarFieldNumber = 4;
+  private string avatar_ = "";
+  /// <summary>
+  ///头像
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string Avatar {
+    get { return avatar_; }
+    set {
+      avatar_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "coin" field.</summary>
+  public const int CoinFieldNumber = 5;
+  private ulong coin_;
+  /// <summary>
+  ///玩家金币
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public ulong Coin {
+    get { return coin_; }
+    set {
+      coin_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "phone_num" field.</summary>
+  public const int PhoneNumFieldNumber = 6;
+  private string phoneNum_ = "";
+  /// <summary>
+  ///手机号
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string PhoneNum {
+    get { return phoneNum_; }
+    set {
+      phoneNum_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "vip_level" field.</summary>
+  public const int VipLevelFieldNumber = 7;
+  private int vipLevel_;
+  /// <summary>
+  ///VIP等级
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int VipLevel {
+    get { return vipLevel_; }
+    set {
+      vipLevel_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "avatar_frame" field.</summary>
+  public const int AvatarFrameFieldNumber = 8;
+  private int avatarFrame_;
+  /// <summary>
+  ///头像框
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int AvatarFrame {
+    get { return avatarFrame_; }
+    set {
+      avatarFrame_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgPlayerInfo);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgPlayerInfo other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (UserId != other.UserId) return false;
+    if (BeautifulId != other.BeautifulId) return false;
+    if (Nickname != other.Nickname) return false;
+    if (Avatar != other.Avatar) return false;
+    if (Coin != other.Coin) return false;
+    if (PhoneNum != other.PhoneNum) return false;
+    if (VipLevel != other.VipLevel) return false;
+    if (AvatarFrame != other.AvatarFrame) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (UserId != 0) hash ^= UserId.GetHashCode();
+    if (BeautifulId != 0) hash ^= BeautifulId.GetHashCode();
+    if (Nickname.Length != 0) hash ^= Nickname.GetHashCode();
+    if (Avatar.Length != 0) hash ^= Avatar.GetHashCode();
+    if (Coin != 0UL) hash ^= Coin.GetHashCode();
+    if (PhoneNum.Length != 0) hash ^= PhoneNum.GetHashCode();
+    if (VipLevel != 0) hash ^= VipLevel.GetHashCode();
+    if (AvatarFrame != 0) hash ^= AvatarFrame.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (UserId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(UserId);
+    }
+    if (BeautifulId != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(BeautifulId);
+    }
+    if (Nickname.Length != 0) {
+      output.WriteRawTag(26);
+      output.WriteString(Nickname);
+    }
+    if (Avatar.Length != 0) {
+      output.WriteRawTag(34);
+      output.WriteString(Avatar);
+    }
+    if (Coin != 0UL) {
+      output.WriteRawTag(40);
+      output.WriteUInt64(Coin);
+    }
+    if (PhoneNum.Length != 0) {
+      output.WriteRawTag(50);
+      output.WriteString(PhoneNum);
+    }
+    if (VipLevel != 0) {
+      output.WriteRawTag(56);
+      output.WriteInt32(VipLevel);
+    }
+    if (AvatarFrame != 0) {
+      output.WriteRawTag(64);
+      output.WriteInt32(AvatarFrame);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (UserId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(UserId);
+    }
+    if (BeautifulId != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(BeautifulId);
+    }
+    if (Nickname.Length != 0) {
+      output.WriteRawTag(26);
+      output.WriteString(Nickname);
+    }
+    if (Avatar.Length != 0) {
+      output.WriteRawTag(34);
+      output.WriteString(Avatar);
+    }
+    if (Coin != 0UL) {
+      output.WriteRawTag(40);
+      output.WriteUInt64(Coin);
+    }
+    if (PhoneNum.Length != 0) {
+      output.WriteRawTag(50);
+      output.WriteString(PhoneNum);
+    }
+    if (VipLevel != 0) {
+      output.WriteRawTag(56);
+      output.WriteInt32(VipLevel);
+    }
+    if (AvatarFrame != 0) {
+      output.WriteRawTag(64);
+      output.WriteInt32(AvatarFrame);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (UserId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserId);
+    }
+    if (BeautifulId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(BeautifulId);
+    }
+    if (Nickname.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Nickname);
+    }
+    if (Avatar.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Avatar);
+    }
+    if (Coin != 0UL) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Coin);
+    }
+    if (PhoneNum.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(PhoneNum);
+    }
+    if (VipLevel != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(VipLevel);
+    }
+    if (AvatarFrame != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(AvatarFrame);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgPlayerInfo other) {
+    if (other == null) {
+      return;
+    }
+    if (other.UserId != 0) {
+      UserId = other.UserId;
+    }
+    if (other.BeautifulId != 0) {
+      BeautifulId = other.BeautifulId;
+    }
+    if (other.Nickname.Length != 0) {
+      Nickname = other.Nickname;
+    }
+    if (other.Avatar.Length != 0) {
+      Avatar = other.Avatar;
+    }
+    if (other.Coin != 0UL) {
+      Coin = other.Coin;
+    }
+    if (other.PhoneNum.Length != 0) {
+      PhoneNum = other.PhoneNum;
+    }
+    if (other.VipLevel != 0) {
+      VipLevel = other.VipLevel;
+    }
+    if (other.AvatarFrame != 0) {
+      AvatarFrame = other.AvatarFrame;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          UserId = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          BeautifulId = input.ReadInt32();
+          break;
+        }
+        case 26: {
+          Nickname = input.ReadString();
+          break;
+        }
+        case 34: {
+          Avatar = input.ReadString();
+          break;
+        }
+        case 40: {
+          Coin = input.ReadUInt64();
+          break;
+        }
+        case 50: {
+          PhoneNum = input.ReadString();
+          break;
+        }
+        case 56: {
+          VipLevel = input.ReadInt32();
+          break;
+        }
+        case 64: {
+          AvatarFrame = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          UserId = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          BeautifulId = input.ReadInt32();
+          break;
+        }
+        case 26: {
+          Nickname = input.ReadString();
+          break;
+        }
+        case 34: {
+          Avatar = input.ReadString();
+          break;
+        }
+        case 40: {
+          Coin = input.ReadUInt64();
+          break;
+        }
+        case 50: {
+          PhoneNum = input.ReadString();
+          break;
+        }
+        case 56: {
+          VipLevel = input.ReadInt32();
+          break;
+        }
+        case 64: {
+          AvatarFrame = input.ReadInt32();
           break;
         }
       }
