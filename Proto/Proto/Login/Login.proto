@@ -216,8 +216,8 @@ message MsgPlayerInfo
 	int32		vip_level		= 7;	//VIP等级
 	int32		avatar_frame	= 8;	//头像框
 
-	int32		zmd_game_id		= 2;	//走马灯数据记录
-	uint64		zmd_win_gold	= 4;	//走马灯数据记录
+	int32		zmd_game_id		= 9;	//走马灯数据记录
+	uint64		zmd_win_gold	= 10;	//走马灯数据记录
 }
 
 message MsgActiveInfo
