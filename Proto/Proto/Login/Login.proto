@@ -215,7 +215,11 @@ message MsgPlayerInfo
 	string		phone_num		= 6;	//手机号
 	int32		vip_level		= 7;	//VIP等级
 	int32		avatar_frame	= 8;	//头像框
+
+	int32		zmd_game_id		= 2;	//走马灯数据记录
+	uint64		zmd_win_gold	= 4;	//走马灯数据记录
 }
+
 message MsgActiveInfo
 {
 	int32		user_id				= 1;	//userid

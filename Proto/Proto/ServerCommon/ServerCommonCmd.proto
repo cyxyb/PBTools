@@ -31,7 +31,7 @@ enum EMsgIDServerInternalProto
 	CENTER2LOGIN_UpdateGameServerOnlineNum	= 11;	//更新游戏服务器在线人数
 	CENTER2LOGIN_AddMailResp				= 12;	//增加邮件返回
 	CENTER2LOGIN_RechargeResp				= 13;	//充值成功回调
-	CENTER2LOGIN_BroadcastTip				= 14;	//跑马灯广播
+	CENTER2LOGIN_BroadcastZmdTipResp		= 14;	//跑马灯广播
 	
 	//1001-2000 game <-> center
 	GAME2CENTER_Register			= 2001;	//游戏服务器注册
