@@ -1,0 +1,99 @@
+syntax = "proto3";
+
+package DZNZ;
+enum EMsgIDDZNZ
+{
+	CMD_CS_BET			= 0;	//玩家下注(CMD_CS_Bet)
+	CMD_CS_BETAGAIN		= 1;	//下注续投(CMD_CS_BetAgain)
+	CMD_SC_BET			= 2;	//玩家下注值(CMD_SC_BetProto)
+	CMD_SC_GAMERESULT 	= 3;	//游戏结果(CMD_SC_GameResultProto)
+	CMD_SC_BETAGAIN		= 4;	//下注续投(CMD_SC_BetAgainProto)
+	CMD_SC_NOTIFYSTATU 	= 5;	//通知状态(CMD_SC_NotifyStatusProto)
+	CMD_SC_PLAYERINFOS	= 6;	//玩家数据(PlayerGameData)
+	CMD_SC_AI_BET		= 7;	
+	CMD_SC_GAME_RECORD 	= 8;	//游戏总记录(RecodeProto)
+}
+
+//游戏总记录
+message RecodeProto
+{
+	repeated int32 game_recode = 1;
+};
+
+//玩家数据
+message PlayerInfoProto
+{
+	int32				win_count	 = 1;					//二十局赢次数
+	int64				player_bet	 = 2;					//二十局总投注
+	int64				total_win	 = 3;					//玩家本房间总输赢
+	repeated int32		bet_info	 = 4;					//玩家下注详情
+};
+//玩家数据
+message PlayerGameData
+{
+repeated PlayerInfoProto Player_Game_Data = 1;
+}
+//场景消息
+message SC_SceneInfoProto
+{
+	int32						game_state			 = 1;		//游戏状态
+	int32						remain_time			 = 2;		//剩余时间
+	repeated WheelInfoProto		wheel_msg			 = 3;		//牌路信息
+	repeated int64				bet_limit			 = 4;		//限红 0: 10倍以下  1:10-99倍  2:100-248
+	repeated int32				bet_config			 = 5;		//下注配置
+	repeated int32				area_multiple		 = 6;		//佩服倍数配置
+	repeated PlayerInfoProto	player_game_data	 = 7;		//玩家游戏信息
+};
+//玩家下注
+message CMD_SC_BetProto
+{
+	int32	chairid	 = 1;		//椅子号
+	int32	area	 = 2;		//下注区域
+	int32	bet_num	 = 3;		//下注数量
+};
+//
+message WheelInfoProto
+{
+	int32 win_msg		 = 1;		//输赢信息 1: 牛仔胜 2: 平 3: 公牛胜
+	repeated int32 hand	 = 2;		//任一手牌 11: 无 3:同花/连牌/同花连牌 6:对子 7:对a
+	int32 card_type		 = 3;		//获胜牌型
+};
+//游戏结果
+message CMD_SC_GameResultProto
+{
+	repeated int32		card_type	 			= 1;		//0: 牛仔  1:公牛
+	repeated int32		card		 			= 2;		//左到右9张牌 1黑2红3梅4方 
+	repeated int32		win_card	 			= 3;		//赢的5张牌
+	int32 				wheel_info_win_msg		= 5;		//输赢信息 1: 牛仔胜 2: 平 3: 公牛胜
+	repeated int32 		wheel_info_hand			= 6;		//任一手牌 11: 无 3:同花/连牌/同花连牌 6:对子 7:对a
+	int32 				wheel_info_card_type	= 7;		//获胜牌型
+	repeated int64		win_msg		 			= 8;		//输赢结果
+	repeated int64		user_gold	 			= 9;		//用户金币
+};
+//玩家续投下注
+message CMD_SC_BetAgainProto
+{
+	int32	chairid		 = 1;				//椅子号
+	int32	area		 = 2;				//下注区域
+	int32	bet_num		 = 3;				//下注数量
+	int32	bet_count	 = 4;				//下注次数
+};
+//通知状态
+message CMD_SC_NotifyStatusProto
+{
+	int32		game_state	 = 1;			//当前状态
+	int32		time		 = 2;			//当前阶段时间
+};
+//玩家下注
+message CMD_CS_Bet
+{
+	int32	area	= 1;		//下注区域
+	int32	bet_num	= 2;		//下注下标
+};
+//玩家下注
+message CMD_CS_BetAgain
+{
+	int32	area		= 1;					//下注区域
+	int32	bet_num		= 2;					//下注下表
+	int32	bet_count	= 3;					//下注次数
+};

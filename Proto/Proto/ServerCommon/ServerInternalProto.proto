@@ -153,6 +153,7 @@ message MsgLoginPlayerInfo
 	string		phone_num		= 11;	//手机号
 	string		password		= 12;	//密码
 	int32		vip_level		= 13;	//vip等级
+	int32		avatar_frame	= 14;	//头像框
 }
 
 //游戏服务器玩家信息
@@ -175,9 +176,8 @@ message MsgDBUpdatePlayerInfo
 	int32	beautiful_id		= 2;		//靓号
 	int32	user_type			= 3;		//玩家类型
 	string	phone				= 4;		//电话
-	string	avatar				= 5;		//头像
-	string	nickname			= 6;		//昵称
-	string	password			= 7;		//密码
+	string	nickname			= 5;		//昵称
+	string	password			= 6;		//密码
 }
 
 //邮件信息
@@ -299,4 +299,11 @@ message MsgDBFingerGuessQueryRecord
 	int32	num		= 2;	//每页条数(最大每页50条)
 	int32	type	= 3;	//1:每局数据 2:每日数据
 	int32	user_id = 4;	//玩家ID
+}
+
+//修改头像
+message MsgDBModifyAvatar
+{
+	int32		user_id						= 1;	//玩家ID
+	string		avatar						= 2;	//头像
 }

@@ -106,6 +106,16 @@ enum EMsgIDDB
 	DB2LOGIN_GetHitCodingResp		= 1030;	//获取玩家打码量返回
 	LOGIN2DB_VIPUpgrade				= 1031;	//vip升级
 	DB2LOGIN_VIPUpgradeResp			= 1032;	//vip升级返回
+	LOGIN2DB_ModifyAvatar			= 1033;	//修改头像
+	DB2LOGIN_ModifyAvatarResp		= 1034;	//修改头像返回
+	LOGIN2DB_ModifyAvatarFrame		= 1035;	//修改头像框
+	DB2LOGIN_ModifyAvatarFrameResp	= 1036;	//修改头像框返回
+	LOGIN2DB_GetAvatarInfo			= 1037;	//获取头像和头像框信息
+	DB2LOGIN_GetAvatarInfoResp		= 1038;	//获取头像和头像框信息返回
+	LOGIN2DB_QueryPlayerInfo		= 1039;	//查询玩家信息
+	DB2LOGIN_QueryPlayerInfoResp	= 1040;	//查询玩家信息返回
+	LOGIN2DB_QueryActiveInfo 		= 1041; //查询玩家任务信息
+	DB2LOGIN_QueryActiveInfoResp	= 1042; //查询玩家任务信息返回
 	
 	//2001-3000 GameServer2DB
 	GAME2DB_Login					= 2001;	//玩家登录游戏

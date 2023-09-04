@@ -33,6 +33,7 @@ message MsgPlayerLoginResp
 	uint64		coin			= 10;	//玩家金币
 	string		phone_num		= 11;	//手机号
 	int32		vip_level		= 12;	//VIP等级
+	int32		avatar_frame	= 13;	//头像框
 }
 
 //修改密码
@@ -196,3 +197,45 @@ message MsgUpgradeVIP
 	int32		res_code					= 1;	//返回码(0:成功 非0:失败)
 	int64		gold						= 2;	//玩家当前金币
 }
+
+//头像和头像框信息
+message MsgGetAvatarInfo
+{
+	repeated	int32	avatars				= 1;	//头像和头像框编号
+}
+
+//查看玩家个人信息
+message MsgPlayerInfo
+{
+	int32		user_id			= 1;	//玩家ID
+	int32		beautiful_id	= 2;	//玩家靓号
+	string		nickname		= 3;	//玩家昵称
+	string		avatar			= 4;	//头像
+	uint64		coin			= 5;	//玩家金币
+	string		phone_num		= 6;	//手机号
+	int32		vip_level		= 7;	//VIP等级
+	int32		avatar_frame	= 8;	//头像框
+}
+message MsgActiveInfo
+{
+	int32		user_id				= 1;	//userid
+	int32		active_id			= 2;	//activeid
+}
+message sActiveInfoSC
+{
+	int32	active_id 		= 1;//活动id: 1：充值返利 2：打码返利 3：在线奖励 4：每日随机活动 5：每日反馈 6：新手任务
+	int32	sub_active_id 	= 2;//子活动id
+	int32	param1 			= 3;//完成条件
+	int32	param2 			= 4;
+	int32	param3 			= 5;
+	int32	progress1 		= 6;//完成度 负数为完成 正数为未完成
+	int32	progress2 		= 7;
+	int32	progress3 		= 8;
+	int32	reward 			= 9;//活动奖励
+	int32	reward_type 	= 10;//活动奖励类型2转盘奖励1金币
+	bool 	is_pick 		= 11;//活动奖励是否领取
+};
+message sActiveInfoSCRet
+{
+	repeated sActiveInfoSC vec_info = 1;
+};
