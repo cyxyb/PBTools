@@ -130,4 +130,7 @@ enum EMsgIDDB
 	DB2GAME_FingerGuessRoundRecord	= 2010;	//猜拳每局记录返回
 	DB2GAME_FingerGuessDayRecord	= 2011;	//猜拳每日记录返回
 	GAME2DB_WriteDisConnectData		= 2012;	//写入玩家断线数据
+	GAME2DB_QueryJckpotInfo			= 2013;	//查询奖池信息
+	DB2GAME_QueryJckpotInfoResp		= 2014;	//查询奖池信息返回
+	GAME2DB_UpdateJckpotInfo		= 2015;	//更新奖池信息
 }

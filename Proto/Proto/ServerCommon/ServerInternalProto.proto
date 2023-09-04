@@ -308,3 +308,11 @@ message MsgDBModifyAvatar
 	int32		user_id						= 1;	//玩家ID
 	string		avatar						= 2;	//头像
 }
+
+//更新奖池
+message MsgDBUpdateJackpot
+{
+	int32		server_id					= 1;	//服务器ID
+	int64		jackpot						= 2;	//奖池
+	int64		fake_jackpot				= 3;	//假奖池
+}

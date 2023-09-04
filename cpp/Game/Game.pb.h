@@ -46,7 +46,7 @@ struct TableStruct_Game_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[9]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[10]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -65,6 +65,9 @@ extern MsgGamePlayerLoginDefaultTypeInternal _MsgGamePlayerLogin_default_instanc
 class MsgGamePlayerLoginResp;
 class MsgGamePlayerLoginRespDefaultTypeInternal;
 extern MsgGamePlayerLoginRespDefaultTypeInternal _MsgGamePlayerLoginResp_default_instance_;
+class MsgJackpotInfo;
+class MsgJackpotInfoDefaultTypeInternal;
+extern MsgJackpotInfoDefaultTypeInternal _MsgJackpotInfo_default_instance_;
 class MsgQueryRecord;
 class MsgQueryRecordDefaultTypeInternal;
 extern MsgQueryRecordDefaultTypeInternal _MsgQueryRecord_default_instance_;
@@ -85,6 +88,7 @@ template<> ::MsgDayData* Arena::CreateMaybeMessage<::MsgDayData>(Arena*);
 template<> ::MsgGamePlayerInfo* Arena::CreateMaybeMessage<::MsgGamePlayerInfo>(Arena*);
 template<> ::MsgGamePlayerLogin* Arena::CreateMaybeMessage<::MsgGamePlayerLogin>(Arena*);
 template<> ::MsgGamePlayerLoginResp* Arena::CreateMaybeMessage<::MsgGamePlayerLoginResp>(Arena*);
+template<> ::MsgJackpotInfo* Arena::CreateMaybeMessage<::MsgJackpotInfo>(Arena*);
 template<> ::MsgQueryRecord* Arena::CreateMaybeMessage<::MsgQueryRecord>(Arena*);
 template<> ::MsgRoundData* Arena::CreateMaybeMessage<::MsgRoundData>(Arena*);
 template<> ::MsgSyncPlayersScore* Arena::CreateMaybeMessage<::MsgSyncPlayersScore>(Arena*);
@@ -1673,6 +1677,153 @@ class MsgQueryRecord PROTOBUF_FINAL :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Game_2eproto;
 };
+// -------------------------------------------------------------------
+
+class MsgJackpotInfo PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgJackpotInfo) */ {
+ public:
+  inline MsgJackpotInfo() : MsgJackpotInfo(nullptr) {}
+  virtual ~MsgJackpotInfo();
+
+  MsgJackpotInfo(const MsgJackpotInfo& from);
+  MsgJackpotInfo(MsgJackpotInfo&& from) noexcept
+    : MsgJackpotInfo() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgJackpotInfo& operator=(const MsgJackpotInfo& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgJackpotInfo& operator=(MsgJackpotInfo&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgJackpotInfo& default_instance();
+
+  static inline const MsgJackpotInfo* internal_default_instance() {
+    return reinterpret_cast<const MsgJackpotInfo*>(
+               &_MsgJackpotInfo_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    9;
+
+  friend void swap(MsgJackpotInfo& a, MsgJackpotInfo& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgJackpotInfo* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgJackpotInfo* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgJackpotInfo* New() const final {
+    return CreateMaybeMessage<MsgJackpotInfo>(nullptr);
+  }
+
+  MsgJackpotInfo* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgJackpotInfo>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgJackpotInfo& from);
+  void MergeFrom(const MsgJackpotInfo& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgJackpotInfo* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgJackpotInfo";
+  }
+  protected:
+  explicit MsgJackpotInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Game_2eproto);
+    return ::descriptor_table_Game_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kJackpotFieldNumber = 1,
+    kFakeJackpotFieldNumber = 2,
+  };
+  // int64 jackpot = 1;
+  void clear_jackpot();
+  ::PROTOBUF_NAMESPACE_ID::int64 jackpot() const;
+  void set_jackpot(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_jackpot() const;
+  void _internal_set_jackpot(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int64 fake_jackpot = 2;
+  void clear_fake_jackpot();
+  ::PROTOBUF_NAMESPACE_ID::int64 fake_jackpot() const;
+  void set_fake_jackpot(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_fake_jackpot() const;
+  void _internal_set_fake_jackpot(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgJackpotInfo)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int64 jackpot_;
+  ::PROTOBUF_NAMESPACE_ID::int64 fake_jackpot_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Game_2eproto;
+};
 // ===================================================================
 
 
@@ -2720,9 +2871,55 @@ inline void MsgQueryRecord::set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:MsgQueryRecord.type)
 }
 
+// -------------------------------------------------------------------
+
+// MsgJackpotInfo
+
+// int64 jackpot = 1;
+inline void MsgJackpotInfo::clear_jackpot() {
+  jackpot_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgJackpotInfo::_internal_jackpot() const {
+  return jackpot_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgJackpotInfo::jackpot() const {
+  // @@protoc_insertion_point(field_get:MsgJackpotInfo.jackpot)
+  return _internal_jackpot();
+}
+inline void MsgJackpotInfo::_internal_set_jackpot(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  jackpot_ = value;
+}
+inline void MsgJackpotInfo::set_jackpot(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_jackpot(value);
+  // @@protoc_insertion_point(field_set:MsgJackpotInfo.jackpot)
+}
+
+// int64 fake_jackpot = 2;
+inline void MsgJackpotInfo::clear_fake_jackpot() {
+  fake_jackpot_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgJackpotInfo::_internal_fake_jackpot() const {
+  return fake_jackpot_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgJackpotInfo::fake_jackpot() const {
+  // @@protoc_insertion_point(field_get:MsgJackpotInfo.fake_jackpot)
+  return _internal_fake_jackpot();
+}
+inline void MsgJackpotInfo::_internal_set_fake_jackpot(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  fake_jackpot_ = value;
+}
+inline void MsgJackpotInfo::set_fake_jackpot(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_fake_jackpot(value);
+  // @@protoc_insertion_point(field_set:MsgJackpotInfo.fake_jackpot)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

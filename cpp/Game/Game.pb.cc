@@ -52,6 +52,10 @@ class MsgQueryRecordDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgQueryRecord> _instance;
 } _MsgQueryRecord_default_instance_;
+class MsgJackpotInfoDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgJackpotInfo> _instance;
+} _MsgJackpotInfo_default_instance_;
 static void InitDefaultsscc_info_MsgDayData_Game_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -103,6 +107,19 @@ static void InitDefaultsscc_info_MsgGamePlayerLoginResp_Game_2eproto() {
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgGamePlayerLoginResp_Game_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgGamePlayerLoginResp_Game_2eproto}, {}};
+
+static void InitDefaultsscc_info_MsgJackpotInfo_Game_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_MsgJackpotInfo_default_instance_;
+    new (ptr) ::MsgJackpotInfo();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgJackpotInfo_Game_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgJackpotInfo_Game_2eproto}, {}};
 
 static void InitDefaultsscc_info_MsgQueryRecord_Game_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -171,7 +188,7 @@ static void InitDefaultsscc_info_MsgTotalRoundData_Game_2eproto() {
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MsgTotalRoundData_Game_2eproto}, {
       &scc_info_MsgRoundData_Game_2eproto.base,}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Game_2eproto[9];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Game_2eproto[10];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_Game_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_Game_2eproto = nullptr;
 
@@ -257,6 +274,13 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Game_2eproto::offsets[] PROTOB
   PROTOBUF_FIELD_OFFSET(::MsgQueryRecord, page_),
   PROTOBUF_FIELD_OFFSET(::MsgQueryRecord, num_),
   PROTOBUF_FIELD_OFFSET(::MsgQueryRecord, type_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::MsgJackpotInfo, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::MsgJackpotInfo, jackpot_),
+  PROTOBUF_FIELD_OFFSET(::MsgJackpotInfo, fake_jackpot_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::MsgGamePlayerLogin)},
@@ -268,6 +292,7 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 53, -1, sizeof(::MsgDayData)},
   { 66, -1, sizeof(::MsgTotalDayData)},
   { 73, -1, sizeof(::MsgQueryRecord)},
+  { 81, -1, sizeof(::MsgJackpotInfo)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -280,6 +305,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgDayData_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgTotalDayData_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgQueryRecord_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgJackpotInfo_default_instance_),
 };
 
 const char descriptor_table_protodef_Game_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -304,15 +330,18 @@ const char descriptor_table_protodef_Game_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "rplus_gold\030\010 \001(\003\"E\n\017MsgTotalDayData\022\021\n\tt"
   "otal_num\030\001 \001(\005\022\037\n\ndaily_data\030\002 \003(\0132\013.Msg"
   "DayData\"9\n\016MsgQueryRecord\022\014\n\004page\030\001 \001(\005\022"
-  "\013\n\003num\030\002 \001(\005\022\014\n\004type\030\003 \001(\005b\006proto3"
+  "\013\n\003num\030\002 \001(\005\022\014\n\004type\030\003 \001(\005\"7\n\016MsgJackpot"
+  "Info\022\017\n\007jackpot\030\001 \001(\003\022\024\n\014fake_jackpot\030\002 "
+  "\001(\003b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Game_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Game_2eproto_sccs[9] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Game_2eproto_sccs[10] = {
   &scc_info_MsgDayData_Game_2eproto.base,
   &scc_info_MsgGamePlayerInfo_Game_2eproto.base,
   &scc_info_MsgGamePlayerLogin_Game_2eproto.base,
   &scc_info_MsgGamePlayerLoginResp_Game_2eproto.base,
+  &scc_info_MsgJackpotInfo_Game_2eproto.base,
   &scc_info_MsgQueryRecord_Game_2eproto.base,
   &scc_info_MsgRoundData_Game_2eproto.base,
   &scc_info_MsgSyncPlayersScore_Game_2eproto.base,
@@ -321,10 +350,10 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Gam
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Game_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Game_2eproto = {
-  false, false, descriptor_table_protodef_Game_2eproto, "Game.proto", 874,
-  &descriptor_table_Game_2eproto_once, descriptor_table_Game_2eproto_sccs, descriptor_table_Game_2eproto_deps, 9, 0,
+  false, false, descriptor_table_protodef_Game_2eproto, "Game.proto", 931,
+  &descriptor_table_Game_2eproto_once, descriptor_table_Game_2eproto_sccs, descriptor_table_Game_2eproto_deps, 10, 0,
   schemas, file_default_instances, TableStruct_Game_2eproto::offsets,
-  file_level_metadata_Game_2eproto, 9, file_level_enum_descriptors_Game_2eproto, file_level_service_descriptors_Game_2eproto,
+  file_level_metadata_Game_2eproto, 10, file_level_enum_descriptors_Game_2eproto, file_level_service_descriptors_Game_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -2883,6 +2912,235 @@ void MsgQueryRecord::InternalSwap(MsgQueryRecord* other) {
 }
 
 
+// ===================================================================
+
+class MsgJackpotInfo::_Internal {
+ public:
+};
+
+MsgJackpotInfo::MsgJackpotInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:MsgJackpotInfo)
+}
+MsgJackpotInfo::MsgJackpotInfo(const MsgJackpotInfo& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&jackpot_, &from.jackpot_,
+    static_cast<size_t>(reinterpret_cast<char*>(&fake_jackpot_) -
+    reinterpret_cast<char*>(&jackpot_)) + sizeof(fake_jackpot_));
+  // @@protoc_insertion_point(copy_constructor:MsgJackpotInfo)
+}
+
+void MsgJackpotInfo::SharedCtor() {
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&jackpot_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&fake_jackpot_) -
+      reinterpret_cast<char*>(&jackpot_)) + sizeof(fake_jackpot_));
+}
+
+MsgJackpotInfo::~MsgJackpotInfo() {
+  // @@protoc_insertion_point(destructor:MsgJackpotInfo)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void MsgJackpotInfo::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void MsgJackpotInfo::ArenaDtor(void* object) {
+  MsgJackpotInfo* _this = reinterpret_cast< MsgJackpotInfo* >(object);
+  (void)_this;
+}
+void MsgJackpotInfo::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void MsgJackpotInfo::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const MsgJackpotInfo& MsgJackpotInfo::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgJackpotInfo_Game_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void MsgJackpotInfo::Clear() {
+// @@protoc_insertion_point(message_clear_start:MsgJackpotInfo)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&jackpot_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&fake_jackpot_) -
+      reinterpret_cast<char*>(&jackpot_)) + sizeof(fake_jackpot_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* MsgJackpotInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int64 jackpot = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          jackpot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 fake_jackpot = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          fake_jackpot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* MsgJackpotInfo::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:MsgJackpotInfo)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int64 jackpot = 1;
+  if (this->jackpot() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_jackpot(), target);
+  }
+
+  // int64 fake_jackpot = 2;
+  if (this->fake_jackpot() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_fake_jackpot(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:MsgJackpotInfo)
+  return target;
+}
+
+size_t MsgJackpotInfo::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:MsgJackpotInfo)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // int64 jackpot = 1;
+  if (this->jackpot() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_jackpot());
+  }
+
+  // int64 fake_jackpot = 2;
+  if (this->fake_jackpot() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_fake_jackpot());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void MsgJackpotInfo::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:MsgJackpotInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  const MsgJackpotInfo* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgJackpotInfo>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgJackpotInfo)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgJackpotInfo)
+    MergeFrom(*source);
+  }
+}
+
+void MsgJackpotInfo::MergeFrom(const MsgJackpotInfo& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:MsgJackpotInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.jackpot() != 0) {
+    _internal_set_jackpot(from._internal_jackpot());
+  }
+  if (from.fake_jackpot() != 0) {
+    _internal_set_fake_jackpot(from._internal_fake_jackpot());
+  }
+}
+
+void MsgJackpotInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:MsgJackpotInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void MsgJackpotInfo::CopyFrom(const MsgJackpotInfo& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:MsgJackpotInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool MsgJackpotInfo::IsInitialized() const {
+  return true;
+}
+
+void MsgJackpotInfo::InternalSwap(MsgJackpotInfo* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(MsgJackpotInfo, fake_jackpot_)
+      + sizeof(MsgJackpotInfo::fake_jackpot_)
+      - PROTOBUF_FIELD_OFFSET(MsgJackpotInfo, jackpot_)>(
+          reinterpret_cast<char*>(&jackpot_),
+          reinterpret_cast<char*>(&other->jackpot_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata MsgJackpotInfo::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::MsgGamePlayerLogin* Arena::CreateMaybeMessage< ::MsgGamePlayerLogin >(Arena* arena) {
@@ -2911,6 +3169,9 @@ template<> PROTOBUF_NOINLINE ::MsgTotalDayData* Arena::CreateMaybeMessage< ::Msg
 }
 template<> PROTOBUF_NOINLINE ::MsgQueryRecord* Arena::CreateMaybeMessage< ::MsgQueryRecord >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MsgQueryRecord >(arena);
+}
+template<> PROTOBUF_NOINLINE ::MsgJackpotInfo* Arena::CreateMaybeMessage< ::MsgJackpotInfo >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::MsgJackpotInfo >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

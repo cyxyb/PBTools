@@ -258,6 +258,9 @@ bool EMsgIDDB_IsValid(int value) {
     case 2010:
     case 2011:
     case 2012:
+    case 2013:
+    case 2014:
+    case 2015:
       return true;
     default:
       return false;

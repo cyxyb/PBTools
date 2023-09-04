@@ -46,7 +46,7 @@ struct TableStruct_ServerInternalProto_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[32]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[33]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -104,6 +104,9 @@ extern MsgDBRegisterGameDefaultTypeInternal _MsgDBRegisterGame_default_instance_
 class MsgDBRegisterLogin;
 class MsgDBRegisterLoginDefaultTypeInternal;
 extern MsgDBRegisterLoginDefaultTypeInternal _MsgDBRegisterLogin_default_instance_;
+class MsgDBUpdateJackpot;
+class MsgDBUpdateJackpotDefaultTypeInternal;
+extern MsgDBUpdateJackpotDefaultTypeInternal _MsgDBUpdateJackpot_default_instance_;
 class MsgDBUpdateOnlineNum;
 class MsgDBUpdateOnlineNumDefaultTypeInternal;
 extern MsgDBUpdateOnlineNumDefaultTypeInternal _MsgDBUpdateOnlineNum_default_instance_;
@@ -167,6 +170,7 @@ template<> ::MsgDBModifyAvatar* Arena::CreateMaybeMessage<::MsgDBModifyAvatar>(A
 template<> ::MsgDBPlayerReconnectData* Arena::CreateMaybeMessage<::MsgDBPlayerReconnectData>(Arena*);
 template<> ::MsgDBRegisterGame* Arena::CreateMaybeMessage<::MsgDBRegisterGame>(Arena*);
 template<> ::MsgDBRegisterLogin* Arena::CreateMaybeMessage<::MsgDBRegisterLogin>(Arena*);
+template<> ::MsgDBUpdateJackpot* Arena::CreateMaybeMessage<::MsgDBUpdateJackpot>(Arena*);
 template<> ::MsgDBUpdateOnlineNum* Arena::CreateMaybeMessage<::MsgDBUpdateOnlineNum>(Arena*);
 template<> ::MsgDBUpdatePlayerInfo* Arena::CreateMaybeMessage<::MsgDBUpdatePlayerInfo>(Arena*);
 template<> ::MsgDBWriteScore* Arena::CreateMaybeMessage<::MsgDBWriteScore>(Arena*);
@@ -6005,6 +6009,164 @@ class MsgDBModifyAvatar PROTOBUF_FINAL :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
+// -------------------------------------------------------------------
+
+class MsgDBUpdateJackpot PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgDBUpdateJackpot) */ {
+ public:
+  inline MsgDBUpdateJackpot() : MsgDBUpdateJackpot(nullptr) {}
+  virtual ~MsgDBUpdateJackpot();
+
+  MsgDBUpdateJackpot(const MsgDBUpdateJackpot& from);
+  MsgDBUpdateJackpot(MsgDBUpdateJackpot&& from) noexcept
+    : MsgDBUpdateJackpot() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgDBUpdateJackpot& operator=(const MsgDBUpdateJackpot& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgDBUpdateJackpot& operator=(MsgDBUpdateJackpot&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgDBUpdateJackpot& default_instance();
+
+  static inline const MsgDBUpdateJackpot* internal_default_instance() {
+    return reinterpret_cast<const MsgDBUpdateJackpot*>(
+               &_MsgDBUpdateJackpot_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    32;
+
+  friend void swap(MsgDBUpdateJackpot& a, MsgDBUpdateJackpot& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgDBUpdateJackpot* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgDBUpdateJackpot* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgDBUpdateJackpot* New() const final {
+    return CreateMaybeMessage<MsgDBUpdateJackpot>(nullptr);
+  }
+
+  MsgDBUpdateJackpot* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgDBUpdateJackpot>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgDBUpdateJackpot& from);
+  void MergeFrom(const MsgDBUpdateJackpot& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgDBUpdateJackpot* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgDBUpdateJackpot";
+  }
+  protected:
+  explicit MsgDBUpdateJackpot(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kJackpotFieldNumber = 2,
+    kFakeJackpotFieldNumber = 3,
+    kServerIdFieldNumber = 1,
+  };
+  // int64 jackpot = 2;
+  void clear_jackpot();
+  ::PROTOBUF_NAMESPACE_ID::int64 jackpot() const;
+  void set_jackpot(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_jackpot() const;
+  void _internal_set_jackpot(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int64 fake_jackpot = 3;
+  void clear_fake_jackpot();
+  ::PROTOBUF_NAMESPACE_ID::int64 fake_jackpot() const;
+  void set_fake_jackpot(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_fake_jackpot() const;
+  void _internal_set_fake_jackpot(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int32 server_id = 1;
+  void clear_server_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 server_id() const;
+  void set_server_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_server_id() const;
+  void _internal_set_server_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgDBUpdateJackpot)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int64 jackpot_;
+  ::PROTOBUF_NAMESPACE_ID::int64 fake_jackpot_;
+  ::PROTOBUF_NAMESPACE_ID::int32 server_id_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
 // ===================================================================
 
 
@@ -10154,9 +10316,75 @@ inline void MsgDBModifyAvatar::set_allocated_avatar(std::string* avatar) {
   // @@protoc_insertion_point(field_set_allocated:MsgDBModifyAvatar.avatar)
 }
 
+// -------------------------------------------------------------------
+
+// MsgDBUpdateJackpot
+
+// int32 server_id = 1;
+inline void MsgDBUpdateJackpot::clear_server_id() {
+  server_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBUpdateJackpot::_internal_server_id() const {
+  return server_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBUpdateJackpot::server_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBUpdateJackpot.server_id)
+  return _internal_server_id();
+}
+inline void MsgDBUpdateJackpot::_internal_set_server_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  server_id_ = value;
+}
+inline void MsgDBUpdateJackpot::set_server_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_server_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBUpdateJackpot.server_id)
+}
+
+// int64 jackpot = 2;
+inline void MsgDBUpdateJackpot::clear_jackpot() {
+  jackpot_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBUpdateJackpot::_internal_jackpot() const {
+  return jackpot_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBUpdateJackpot::jackpot() const {
+  // @@protoc_insertion_point(field_get:MsgDBUpdateJackpot.jackpot)
+  return _internal_jackpot();
+}
+inline void MsgDBUpdateJackpot::_internal_set_jackpot(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  jackpot_ = value;
+}
+inline void MsgDBUpdateJackpot::set_jackpot(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_jackpot(value);
+  // @@protoc_insertion_point(field_set:MsgDBUpdateJackpot.jackpot)
+}
+
+// int64 fake_jackpot = 3;
+inline void MsgDBUpdateJackpot::clear_fake_jackpot() {
+  fake_jackpot_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBUpdateJackpot::_internal_fake_jackpot() const {
+  return fake_jackpot_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBUpdateJackpot::fake_jackpot() const {
+  // @@protoc_insertion_point(field_get:MsgDBUpdateJackpot.fake_jackpot)
+  return _internal_fake_jackpot();
+}
+inline void MsgDBUpdateJackpot::_internal_set_fake_jackpot(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  fake_jackpot_ = value;
+}
+inline void MsgDBUpdateJackpot::set_fake_jackpot(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_fake_jackpot(value);
+  // @@protoc_insertion_point(field_set:MsgDBUpdateJackpot.fake_jackpot)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
