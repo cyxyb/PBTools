@@ -45,6 +45,8 @@ message MsgBroadcastTip
 	int32	user_id				= 1;		//用户ID
 	int32	game_id				= 2;		//游戏类型
 	int32	room_level			= 3;		//房间等级
-	string	nick_name			= 4;		//昵称
-	string	content				= 5;		//内容
+	int32	win_gold			= 4;		//获得金币
+	string	nick_name			= 5;		//昵称
+	int32	language_id			= 6;		//多语音id
+	repeated string	content		= 7;		//拼接内容数组
 }
