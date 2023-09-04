@@ -73,18 +73,19 @@ public static partial class LoginReflection {
           "EhIKCmF3YXJkX2dvbGQYCiABKAUSEgoKb25lX3RvX29uZRgLIAEoCCItCgxN",
           "c2dWSVBDb25maWcSHQoIdmlwX2luZm8YASADKAsyCy5Nc2dWSVBJbmZvIi8K",
           "DU1zZ1VwZ3JhZGVWSVASEAoIcmVzX2NvZGUYASABKAUSDAoEZ29sZBgCIAEo",
-          "AyIjChBNc2dHZXRBdmF0YXJJbmZvEg8KB2F2YXRhcnMYASADKAUiogEKDU1z",
+          "AyIjChBNc2dHZXRBdmF0YXJJbmZvEg8KB2F2YXRhcnMYASADKAUizQEKDU1z",
           "Z1BsYXllckluZm8SDwoHdXNlcl9pZBgBIAEoBRIUCgxiZWF1dGlmdWxfaWQY",
           "AiABKAUSEAoIbmlja25hbWUYAyABKAkSDgoGYXZhdGFyGAQgASgJEgwKBGNv",
           "aW4YBSABKAQSEQoJcGhvbmVfbnVtGAYgASgJEhEKCXZpcF9sZXZlbBgHIAEo",
-          "BRIUCgxhdmF0YXJfZnJhbWUYCCABKAUiMwoNTXNnQWN0aXZlSW5mbxIPCgd1",
-          "c2VyX2lkGAEgASgFEhEKCWFjdGl2ZV9pZBgCIAEoBSLYAQoNc0FjdGl2ZUlu",
-          "Zm9TQxIRCglhY3RpdmVfaWQYASABKAUSFQoNc3ViX2FjdGl2ZV9pZBgCIAEo",
-          "BRIOCgZwYXJhbTEYAyABKAUSDgoGcGFyYW0yGAQgASgFEg4KBnBhcmFtMxgF",
-          "IAEoBRIRCglwcm9ncmVzczEYBiABKAUSEQoJcHJvZ3Jlc3MyGAcgASgFEhEK",
-          "CXByb2dyZXNzMxgIIAEoBRIOCgZyZXdhcmQYCSABKAUSEwoLcmV3YXJkX3R5",
-          "cGUYCiABKAUSDwoHaXNfcGljaxgLIAEoCCI0ChBzQWN0aXZlSW5mb1NDUmV0",
-          "EiAKCHZlY19pbmZvGAEgAygLMg4uc0FjdGl2ZUluZm9TQ2IGcHJvdG8z"));
+          "BRIUCgxhdmF0YXJfZnJhbWUYCCABKAUSEwoLem1kX2dhbWVfaWQYCSABKAUS",
+          "FAoMem1kX3dpbl9nb2xkGAogASgEIjMKDU1zZ0FjdGl2ZUluZm8SDwoHdXNl",
+          "cl9pZBgBIAEoBRIRCglhY3RpdmVfaWQYAiABKAUi2AEKDXNBY3RpdmVJbmZv",
+          "U0MSEQoJYWN0aXZlX2lkGAEgASgFEhUKDXN1Yl9hY3RpdmVfaWQYAiABKAUS",
+          "DgoGcGFyYW0xGAMgASgFEg4KBnBhcmFtMhgEIAEoBRIOCgZwYXJhbTMYBSAB",
+          "KAUSEQoJcHJvZ3Jlc3MxGAYgASgFEhEKCXByb2dyZXNzMhgHIAEoBRIRCglw",
+          "cm9ncmVzczMYCCABKAUSDgoGcmV3YXJkGAkgASgFEhMKC3Jld2FyZF90eXBl",
+          "GAogASgFEg8KB2lzX3BpY2sYCyABKAgiNAoQc0FjdGl2ZUluZm9TQ1JldBIg",
+          "Cgh2ZWNfaW5mbxgBIAMoCzIOLnNBY3RpdmVJbmZvU0NiBnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -110,7 +111,7 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgVIPConfig), global::MsgVIPConfig.Parser, new[]{ "VipInfo" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgUpgradeVIP), global::MsgUpgradeVIP.Parser, new[]{ "ResCode", "Gold" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgGetAvatarInfo), global::MsgGetAvatarInfo.Parser, new[]{ "Avatars" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPlayerInfo), global::MsgPlayerInfo.Parser, new[]{ "UserId", "BeautifulId", "Nickname", "Avatar", "Coin", "PhoneNum", "VipLevel", "AvatarFrame" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPlayerInfo), global::MsgPlayerInfo.Parser, new[]{ "UserId", "BeautifulId", "Nickname", "Avatar", "Coin", "PhoneNum", "VipLevel", "AvatarFrame", "ZmdGameId", "ZmdWinGold" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgActiveInfo), global::MsgActiveInfo.Parser, new[]{ "UserId", "ActiveId" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::sActiveInfoSC), global::sActiveInfoSC.Parser, new[]{ "ActiveId", "SubActiveId", "Param1", "Param2", "Param3", "Progress1", "Progress2", "Progress3", "Reward", "RewardType", "IsPick" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::sActiveInfoSCRet), global::sActiveInfoSCRet.Parser, new[]{ "VecInfo" }, null, null, null, null)
@@ -6786,6 +6787,8 @@ public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
     phoneNum_ = other.phoneNum_;
     vipLevel_ = other.vipLevel_;
     avatarFrame_ = other.avatarFrame_;
+    zmdGameId_ = other.zmdGameId_;
+    zmdWinGold_ = other.zmdWinGold_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -6906,6 +6909,34 @@ public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
     }
   }
 
+  /// <summary>Field number for the "zmd_game_id" field.</summary>
+  public const int ZmdGameIdFieldNumber = 9;
+  private int zmdGameId_;
+  /// <summary>
+  ///走马灯数据记录
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int ZmdGameId {
+    get { return zmdGameId_; }
+    set {
+      zmdGameId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "zmd_win_gold" field.</summary>
+  public const int ZmdWinGoldFieldNumber = 10;
+  private ulong zmdWinGold_;
+  /// <summary>
+  ///走马灯数据记录
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public ulong ZmdWinGold {
+    get { return zmdWinGold_; }
+    set {
+      zmdWinGold_ = value;
+    }
+  }
+
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as MsgPlayerInfo);
@@ -6927,6 +6958,8 @@ public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
     if (PhoneNum != other.PhoneNum) return false;
     if (VipLevel != other.VipLevel) return false;
     if (AvatarFrame != other.AvatarFrame) return false;
+    if (ZmdGameId != other.ZmdGameId) return false;
+    if (ZmdWinGold != other.ZmdWinGold) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -6941,6 +6974,8 @@ public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
     if (PhoneNum.Length != 0) hash ^= PhoneNum.GetHashCode();
     if (VipLevel != 0) hash ^= VipLevel.GetHashCode();
     if (AvatarFrame != 0) hash ^= AvatarFrame.GetHashCode();
+    if (ZmdGameId != 0) hash ^= ZmdGameId.GetHashCode();
+    if (ZmdWinGold != 0UL) hash ^= ZmdWinGold.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -6989,6 +7024,14 @@ public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
       output.WriteRawTag(64);
       output.WriteInt32(AvatarFrame);
     }
+    if (ZmdGameId != 0) {
+      output.WriteRawTag(72);
+      output.WriteInt32(ZmdGameId);
+    }
+    if (ZmdWinGold != 0UL) {
+      output.WriteRawTag(80);
+      output.WriteUInt64(ZmdWinGold);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -7030,6 +7073,14 @@ public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
       output.WriteRawTag(64);
       output.WriteInt32(AvatarFrame);
     }
+    if (ZmdGameId != 0) {
+      output.WriteRawTag(72);
+      output.WriteInt32(ZmdGameId);
+    }
+    if (ZmdWinGold != 0UL) {
+      output.WriteRawTag(80);
+      output.WriteUInt64(ZmdWinGold);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -7062,6 +7113,12 @@ public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
     }
     if (AvatarFrame != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(AvatarFrame);
+    }
+    if (ZmdGameId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(ZmdGameId);
+    }
+    if (ZmdWinGold != 0UL) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt64Size(ZmdWinGold);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -7097,6 +7154,12 @@ public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
     }
     if (other.AvatarFrame != 0) {
       AvatarFrame = other.AvatarFrame;
+    }
+    if (other.ZmdGameId != 0) {
+      ZmdGameId = other.ZmdGameId;
+    }
+    if (other.ZmdWinGold != 0UL) {
+      ZmdWinGold = other.ZmdWinGold;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -7144,6 +7207,14 @@ public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
           AvatarFrame = input.ReadInt32();
           break;
         }
+        case 72: {
+          ZmdGameId = input.ReadInt32();
+          break;
+        }
+        case 80: {
+          ZmdWinGold = input.ReadUInt64();
+          break;
+        }
       }
     }
   #endif
@@ -7188,6 +7259,14 @@ public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
         }
         case 64: {
           AvatarFrame = input.ReadInt32();
+          break;
+        }
+        case 72: {
+          ZmdGameId = input.ReadInt32();
+          break;
+        }
+        case 80: {
+          ZmdWinGold = input.ReadUInt64();
           break;
         }
       }

@@ -4318,6 +4318,8 @@ class MsgPlayerInfo PROTOBUF_FINAL :
     kCoinFieldNumber = 5,
     kVipLevelFieldNumber = 7,
     kAvatarFrameFieldNumber = 8,
+    kZmdWinGoldFieldNumber = 10,
+    kZmdGameIdFieldNumber = 9,
   };
   // string nickname = 3;
   void clear_nickname();
@@ -4412,6 +4414,24 @@ class MsgPlayerInfo PROTOBUF_FINAL :
   void _internal_set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // uint64 zmd_win_gold = 10;
+  void clear_zmd_win_gold();
+  ::PROTOBUF_NAMESPACE_ID::uint64 zmd_win_gold() const;
+  void set_zmd_win_gold(::PROTOBUF_NAMESPACE_ID::uint64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::uint64 _internal_zmd_win_gold() const;
+  void _internal_set_zmd_win_gold(::PROTOBUF_NAMESPACE_ID::uint64 value);
+  public:
+
+  // int32 zmd_game_id = 9;
+  void clear_zmd_game_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 zmd_game_id() const;
+  void set_zmd_game_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_zmd_game_id() const;
+  void _internal_set_zmd_game_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgPlayerInfo)
  private:
   class _Internal;
@@ -4427,6 +4447,8 @@ class MsgPlayerInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::uint64 coin_;
   ::PROTOBUF_NAMESPACE_ID::int32 vip_level_;
   ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame_;
+  ::PROTOBUF_NAMESPACE_ID::uint64 zmd_win_gold_;
+  ::PROTOBUF_NAMESPACE_ID::int32 zmd_game_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -8358,6 +8380,46 @@ inline void MsgPlayerInfo::_internal_set_avatar_frame(::PROTOBUF_NAMESPACE_ID::i
 inline void MsgPlayerInfo::set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_avatar_frame(value);
   // @@protoc_insertion_point(field_set:MsgPlayerInfo.avatar_frame)
+}
+
+// int32 zmd_game_id = 9;
+inline void MsgPlayerInfo::clear_zmd_game_id() {
+  zmd_game_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPlayerInfo::_internal_zmd_game_id() const {
+  return zmd_game_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPlayerInfo::zmd_game_id() const {
+  // @@protoc_insertion_point(field_get:MsgPlayerInfo.zmd_game_id)
+  return _internal_zmd_game_id();
+}
+inline void MsgPlayerInfo::_internal_set_zmd_game_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  zmd_game_id_ = value;
+}
+inline void MsgPlayerInfo::set_zmd_game_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_zmd_game_id(value);
+  // @@protoc_insertion_point(field_set:MsgPlayerInfo.zmd_game_id)
+}
+
+// uint64 zmd_win_gold = 10;
+inline void MsgPlayerInfo::clear_zmd_win_gold() {
+  zmd_win_gold_ = PROTOBUF_ULONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint64 MsgPlayerInfo::_internal_zmd_win_gold() const {
+  return zmd_win_gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint64 MsgPlayerInfo::zmd_win_gold() const {
+  // @@protoc_insertion_point(field_get:MsgPlayerInfo.zmd_win_gold)
+  return _internal_zmd_win_gold();
+}
+inline void MsgPlayerInfo::_internal_set_zmd_win_gold(::PROTOBUF_NAMESPACE_ID::uint64 value) {
+  
+  zmd_win_gold_ = value;
+}
+inline void MsgPlayerInfo::set_zmd_win_gold(::PROTOBUF_NAMESPACE_ID::uint64 value) {
+  _internal_set_zmd_win_gold(value);
+  // @@protoc_insertion_point(field_set:MsgPlayerInfo.zmd_win_gold)
 }
 
 // -------------------------------------------------------------------

@@ -3020,6 +3020,7 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
     kVipLevelFieldNumber = 13,
     kCoinFieldNumber = 10,
     kAvatarFrameFieldNumber = 14,
+    kChannelIdFieldNumber = 15,
   };
   // string account = 4;
   void clear_account();
@@ -3182,6 +3183,15 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
   void _internal_set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 channel_id = 15;
+  void clear_channel_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 channel_id() const;
+  void set_channel_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_channel_id() const;
+  void _internal_set_channel_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgLoginPlayerInfo)
  private:
   class _Internal;
@@ -3203,6 +3213,7 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 vip_level_;
   ::PROTOBUF_NAMESPACE_ID::uint64 coin_;
   ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame_;
+  ::PROTOBUF_NAMESPACE_ID::int32 channel_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -8012,6 +8023,26 @@ inline void MsgLoginPlayerInfo::_internal_set_avatar_frame(::PROTOBUF_NAMESPACE_
 inline void MsgLoginPlayerInfo::set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_avatar_frame(value);
   // @@protoc_insertion_point(field_set:MsgLoginPlayerInfo.avatar_frame)
+}
+
+// int32 channel_id = 15;
+inline void MsgLoginPlayerInfo::clear_channel_id() {
+  channel_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgLoginPlayerInfo::_internal_channel_id() const {
+  return channel_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgLoginPlayerInfo::channel_id() const {
+  // @@protoc_insertion_point(field_get:MsgLoginPlayerInfo.channel_id)
+  return _internal_channel_id();
+}
+inline void MsgLoginPlayerInfo::_internal_set_channel_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  channel_id_ = value;
+}
+inline void MsgLoginPlayerInfo::set_channel_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_channel_id(value);
+  // @@protoc_insertion_point(field_set:MsgLoginPlayerInfo.channel_id)
 }
 
 // -------------------------------------------------------------------
