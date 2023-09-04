@@ -193,6 +193,8 @@ enum EMsgIDDB : int {
   DB2LOGIN_GetAvatarInfoResp = 1038,
   LOGIN2DB_QueryPlayerInfo = 1039,
   DB2LOGIN_QueryPlayerInfoResp = 1040,
+  LOGIN2DB_QueryActiveInfo = 1041,
+  DB2LOGIN_QueryActiveInfoResp = 1042,
   GAME2DB_Login = 2001,
   DB2GAME_LoginResp = 2002,
   GAME2DB_LoadCheatRate = 2003,
