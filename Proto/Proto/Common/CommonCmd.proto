@@ -79,6 +79,15 @@ enum EMsgIDLogin
 	MsgIDVIP_GetPlayerHitCodingResp				= 58;		//获取玩家打码量(MsgCommonN64)
 	MsgIDVIP_VIPUpgrade							= 59;		//升级VIP(MsgCommonBool)
 	MsgIDVIP_VIPUpgradeResp						= 60;		//升级VIP返回(MsgUpgradeVIP)
+	MsgIDAvatar_GetAvatarInfo					= 61;		//获取头像和头像框信息(MsgCommonBool)
+	MsgIDAvatar_GetAvatarInfoResp				= 62;		//获取头像和头像框信息返回(MsgGetAvatarInfo)
+	MsgIDAvatar_ModifyAvatarFrame				= 63;		//修改玩家头像框(MsgCommonN32)
+	MsgIDAvatar_ModifyAvatarFrameResp			= 64;		//修改玩家头像框返回(MsgCommonN32)
+	MsgIDLogin_QueryPlayerInfo					= 65;		//查询玩家信息(MsgCommonN32)
+	MsgIDLogin_QueryPlayerInfoResp				= 66;		//查询玩家信息返回(MsgPlayerInfo)
+	MsgIDActive_QueryActiveInfo					= 67;		//查询玩家活动数据(MsgActiveInfo)
+	MsgIDActive_QueryActiveInfoResp				= 68;		//查询玩家活动数据返回(sActiveInfoSCRet)
+	MsgIDZMD_BroadcastTipResp					= 69;		//跑马灯广播(MsgBroadcastTip)
 }
 
 enum EMsgIDGame

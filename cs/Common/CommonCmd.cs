@@ -27,7 +27,7 @@ public static partial class CommonCmdReflection {
           "SW5mbxDpBxIUCg9FTXNnSURNYWluX0dhbWUQ0Q8SFwoSRU1zZ0lETWFpbl9T",
           "dWJHYW1lENIPKmsKCEVSZXNDb2RlEhEKDUVSZXNDb2RlX05VTEwQABIYChRF",
           "UmVzQ29kZV9JbnZpbGlkTWFpbBABEhkKFUVSZXNDb2RlX01haWxSZWNhbGxl",
-          "ZBACEhcKE0VSZXNDb2RlX01haWxQaWNrZWQQAyqYDwoLRU1zZ0lETG9naW4S",
+          "ZBACEhcKE0VSZXNDb2RlX01haWxQaWNrZWQQAyrNEQoLRU1zZ0lETG9naW4S",
           "EwoPTXNnSURMb2dpbl9OdWxsEAASFAoQTXNnSURMb2dpbl9Mb2dpbhABEhgK",
           "FE1zZ0lETG9naW5fTG9naW5SZXNwEAISHQoZTXNnSURMb2dpbl9Nb2RpZnlO",
           "aWNrTmFtZRADEiEKHU1zZ0lETG9naW5fTW9kaWZ5Tmlja05hbWVSZXNwEAQS",
@@ -70,21 +70,28 @@ public static partial class CommonCmdReflection {
           "SURWSVBfR2V0VklQQ29uZmlnEDcSHQoZTXNnSURWSVBfR2V0VklQQ29uZmln",
           "UmVzcBA4Eh8KG01zZ0lEVklQX0dldFBsYXllckhpdENvZGluZxA5EiMKH01z",
           "Z0lEVklQX0dldFBsYXllckhpdENvZGluZ1Jlc3AQOhIXChNNc2dJRFZJUF9W",
-          "SVBVcGdyYWRlEDsSGwoXTXNnSURWSVBfVklQVXBncmFkZVJlc3AQPCruBAoK",
-          "RU1zZ0lER2FtZRISCg5Nc2dJREdhbWVfTnVsbBAAEhQKD01zZ0lER2FtZV9M",
-          "b2dpbhDpBxIYChNNc2dJREdhbWVfTG9naW5SZXNwEOoHEh4KGU1zZ0lER2Ft",
-          "ZV9TcXVlZXplU2VhdFJlc3AQ6wcSFQoQTXNnSURHYW1lX0xvZ291dBDsBxIa",
-          "ChVNc2dJREdhbWVfQXV0b1NpdERvd24Q7QcSGgoVTXNnSURHYW1lX1NpdERv",
-          "d25SZXNwEO4HEiEKHE1zZ0lER2FtZV9TeW5jUGxheWVySW5mb1Jlc3AQ7wcS",
-          "JgohTXNnSURHYW1lX05vdGlmeVBsYXllclN0YW5kVXBSZXNwEPAHEiMKHk1z",
-          "Z0lER2FtZV9TeW5jUGxheWVyc1Njb3JlUmVzcBDxBxIcChdNc2dJREdhbWVf",
-          "U2VuZEdhbWVTZW5jZRDyBxIgChtNc2dJREdhbWVfU2VuZEdhbWVTZW5jZVJl",
-          "c3AQ8wcSIAobTXNnSURHYW1lX05vdGlmeU1lc3NhZ2VSZXNwEPQHEhkKFE1z",
-          "Z0lER2FtZV9DcmVhdGVSb29tEPUHEhcKEk1zZ0lER2FtZV9Kb2luUm9vbRD2",
-          "BxIaChVNc2dJREdhbWVfUXVlcnlSZWNvcmQQ9wcSIwoeTXNnSURHYW1lX1F1",
-          "ZXJ5Um91bmRSZWNvcmRSZXNwEPgHEiEKHE1zZ0lER2FtZV9RdWVyeURheVJl",
-          "Y29yZFJlc3AQ+QcSGwoWTXNnSURHYW1lX0FkZE9uZVJlY29yZBD6BxImCiFN",
-          "c2dJREdhbWVfTm90aWZ5UGxheWVyT2ZmbGluZVJlc3AQ+wdiBnByb3RvMw=="));
+          "SVBVcGdyYWRlEDsSGwoXTXNnSURWSVBfVklQVXBncmFkZVJlc3AQPBIdChlN",
+          "c2dJREF2YXRhcl9HZXRBdmF0YXJJbmZvED0SIQodTXNnSURBdmF0YXJfR2V0",
+          "QXZhdGFySW5mb1Jlc3AQPhIhCh1Nc2dJREF2YXRhcl9Nb2RpZnlBdmF0YXJG",
+          "cmFtZRA/EiUKIU1zZ0lEQXZhdGFyX01vZGlmeUF2YXRhckZyYW1lUmVzcBBA",
+          "Eh4KGk1zZ0lETG9naW5fUXVlcnlQbGF5ZXJJbmZvEEESIgoeTXNnSURMb2dp",
+          "bl9RdWVyeVBsYXllckluZm9SZXNwEEISHwobTXNnSURBY3RpdmVfUXVlcnlB",
+          "Y3RpdmVJbmZvEEMSIwofTXNnSURBY3RpdmVfUXVlcnlBY3RpdmVJbmZvUmVz",
+          "cBBEEh0KGU1zZ0lEWk1EX0Jyb2FkY2FzdFRpcFJlc3AQRSruBAoKRU1zZ0lE",
+          "R2FtZRISCg5Nc2dJREdhbWVfTnVsbBAAEhQKD01zZ0lER2FtZV9Mb2dpbhDp",
+          "BxIYChNNc2dJREdhbWVfTG9naW5SZXNwEOoHEh4KGU1zZ0lER2FtZV9TcXVl",
+          "ZXplU2VhdFJlc3AQ6wcSFQoQTXNnSURHYW1lX0xvZ291dBDsBxIaChVNc2dJ",
+          "REdhbWVfQXV0b1NpdERvd24Q7QcSGgoVTXNnSURHYW1lX1NpdERvd25SZXNw",
+          "EO4HEiEKHE1zZ0lER2FtZV9TeW5jUGxheWVySW5mb1Jlc3AQ7wcSJgohTXNn",
+          "SURHYW1lX05vdGlmeVBsYXllclN0YW5kVXBSZXNwEPAHEiMKHk1zZ0lER2Ft",
+          "ZV9TeW5jUGxheWVyc1Njb3JlUmVzcBDxBxIcChdNc2dJREdhbWVfU2VuZEdh",
+          "bWVTZW5jZRDyBxIgChtNc2dJREdhbWVfU2VuZEdhbWVTZW5jZVJlc3AQ8wcS",
+          "IAobTXNnSURHYW1lX05vdGlmeU1lc3NhZ2VSZXNwEPQHEhkKFE1zZ0lER2Ft",
+          "ZV9DcmVhdGVSb29tEPUHEhcKEk1zZ0lER2FtZV9Kb2luUm9vbRD2BxIaChVN",
+          "c2dJREdhbWVfUXVlcnlSZWNvcmQQ9wcSIwoeTXNnSURHYW1lX1F1ZXJ5Um91",
+          "bmRSZWNvcmRSZXNwEPgHEiEKHE1zZ0lER2FtZV9RdWVyeURheVJlY29yZFJl",
+          "c3AQ+QcSGwoWTXNnSURHYW1lX0FkZE9uZVJlY29yZBD6BxImCiFNc2dJREdh",
+          "bWVfTm90aWZ5UGxheWVyT2ZmbGluZVJlc3AQ+wdiBnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::EMsgIDMain), typeof(global::EResCode), typeof(global::EMsgIDLogin), typeof(global::EMsgIDGame), }, null, null));
@@ -367,6 +374,42 @@ public enum EMsgIDLogin {
   ///升级VIP返回(MsgUpgradeVIP)
   /// </summary>
   [pbr::OriginalName("MsgIDVIP_VIPUpgradeResp")] MsgIdvipVipupgradeResp = 60,
+  /// <summary>
+  ///获取头像和头像框信息(MsgCommonBool)
+  /// </summary>
+  [pbr::OriginalName("MsgIDAvatar_GetAvatarInfo")] MsgIdavatarGetAvatarInfo = 61,
+  /// <summary>
+  ///获取头像和头像框信息返回(MsgGetAvatarInfo)
+  /// </summary>
+  [pbr::OriginalName("MsgIDAvatar_GetAvatarInfoResp")] MsgIdavatarGetAvatarInfoResp = 62,
+  /// <summary>
+  ///修改玩家头像框(MsgCommonN32)
+  /// </summary>
+  [pbr::OriginalName("MsgIDAvatar_ModifyAvatarFrame")] MsgIdavatarModifyAvatarFrame = 63,
+  /// <summary>
+  ///修改玩家头像框返回(MsgCommonN32)
+  /// </summary>
+  [pbr::OriginalName("MsgIDAvatar_ModifyAvatarFrameResp")] MsgIdavatarModifyAvatarFrameResp = 64,
+  /// <summary>
+  ///查询玩家信息(MsgCommonN32)
+  /// </summary>
+  [pbr::OriginalName("MsgIDLogin_QueryPlayerInfo")] MsgIdloginQueryPlayerInfo = 65,
+  /// <summary>
+  ///查询玩家信息返回(MsgPlayerInfo)
+  /// </summary>
+  [pbr::OriginalName("MsgIDLogin_QueryPlayerInfoResp")] MsgIdloginQueryPlayerInfoResp = 66,
+  /// <summary>
+  ///查询玩家活动数据(MsgActiveInfo)
+  /// </summary>
+  [pbr::OriginalName("MsgIDActive_QueryActiveInfo")] MsgIdactiveQueryActiveInfo = 67,
+  /// <summary>
+  ///查询玩家活动数据返回(sActiveInfoSCRet)
+  /// </summary>
+  [pbr::OriginalName("MsgIDActive_QueryActiveInfoResp")] MsgIdactiveQueryActiveInfoResp = 68,
+  /// <summary>
+  ///跑马灯广播(MsgBroadcastTip)
+  /// </summary>
+  [pbr::OriginalName("MsgIDZMD_BroadcastTipResp")] MsgIdzmdBroadcastTipResp = 69,
 }
 
 public enum EMsgIDGame {

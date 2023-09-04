@@ -80,3 +80,10 @@ message MsgQueryRecord
 	int32	num		= 2;	//每页条数(最大每页50条)
 	int32	type	= 3;	//1:每局数据 2:每日数据
 }
+
+//奖池信息
+message MsgJackpotInfo
+{
+	int64	jackpot			= 1;	//奖池分数
+	int64	fake_jackpot	= 2;	//假奖池分数
+}

@@ -103,11 +103,13 @@ enum EMsgIDServerInternalProto : int {
   CENTER2LOGIN_UpdateGameServerOnlineNum = 11,
   CENTER2LOGIN_AddMailResp = 12,
   CENTER2LOGIN_RechargeResp = 13,
+  CENTER2LOGIN_BroadcastZmdTipResp = 14,
   GAME2CENTER_Register = 2001,
   GAME2CENTER_UnRegister = 2002,
   GAME2CENTER_ApplyRobot = 2003,
   CENTER2GAME_ApplyRobotResp = 2004,
   GAME2CENTER_UpdateOnlineNum = 2005,
+  GAME2CENTER_BroadcastTip = 2006,
   ROBOT2GAME_RobotLogin = 3001,
   CENTER2APPRECHARGE_SendPhoneCode = 4001,
   APPRECHARGE2CENTER_HeartBeat = 4002,
@@ -185,6 +187,16 @@ enum EMsgIDDB : int {
   DB2LOGIN_GetHitCodingResp = 1030,
   LOGIN2DB_VIPUpgrade = 1031,
   DB2LOGIN_VIPUpgradeResp = 1032,
+  LOGIN2DB_ModifyAvatar = 1033,
+  DB2LOGIN_ModifyAvatarResp = 1034,
+  LOGIN2DB_ModifyAvatarFrame = 1035,
+  DB2LOGIN_ModifyAvatarFrameResp = 1036,
+  LOGIN2DB_GetAvatarInfo = 1037,
+  DB2LOGIN_GetAvatarInfoResp = 1038,
+  LOGIN2DB_QueryPlayerInfo = 1039,
+  DB2LOGIN_QueryPlayerInfoResp = 1040,
+  LOGIN2DB_QueryActiveInfo = 1041,
+  DB2LOGIN_QueryActiveInfoResp = 1042,
   GAME2DB_Login = 2001,
   DB2GAME_LoginResp = 2002,
   GAME2DB_LoadCheatRate = 2003,
@@ -197,12 +209,15 @@ enum EMsgIDDB : int {
   DB2GAME_FingerGuessRoundRecord = 2010,
   DB2GAME_FingerGuessDayRecord = 2011,
   GAME2DB_WriteDisConnectData = 2012,
+  GAME2DB_QueryJckpotInfo = 2013,
+  DB2GAME_QueryJckpotInfoResp = 2014,
+  GAME2DB_UpdateJckpotInfo = 2015,
   EMsgIDDB_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDDB_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDDB_IsValid(int value);
 constexpr EMsgIDDB EMsgIDDB_MIN = MsgIDDB_NULL;
-constexpr EMsgIDDB EMsgIDDB_MAX = GAME2DB_WriteDisConnectData;
+constexpr EMsgIDDB EMsgIDDB_MAX = GAME2DB_UpdateJckpotInfo;
 constexpr int EMsgIDDB_ARRAYSIZE = EMsgIDDB_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDDB_descriptor();

@@ -46,13 +46,16 @@ struct TableStruct_Common_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[6]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[8]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
   static const ::PROTOBUF_NAMESPACE_ID::uint32 offsets[];
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Common_2eproto;
+class MsgBroadcastZmdTip;
+class MsgBroadcastZmdTipDefaultTypeInternal;
+extern MsgBroadcastZmdTipDefaultTypeInternal _MsgBroadcastZmdTip_default_instance_;
 class MsgCommonBool;
 class MsgCommonBoolDefaultTypeInternal;
 extern MsgCommonBoolDefaultTypeInternal _MsgCommonBool_default_instance_;
@@ -71,13 +74,18 @@ extern MsgGameServerInfoDefaultTypeInternal _MsgGameServerInfo_default_instance_
 class MsgGameServerList;
 class MsgGameServerListDefaultTypeInternal;
 extern MsgGameServerListDefaultTypeInternal _MsgGameServerList_default_instance_;
+class MsgTopInfo;
+class MsgTopInfoDefaultTypeInternal;
+extern MsgTopInfoDefaultTypeInternal _MsgTopInfo_default_instance_;
 PROTOBUF_NAMESPACE_OPEN
+template<> ::MsgBroadcastZmdTip* Arena::CreateMaybeMessage<::MsgBroadcastZmdTip>(Arena*);
 template<> ::MsgCommonBool* Arena::CreateMaybeMessage<::MsgCommonBool>(Arena*);
 template<> ::MsgCommonN32* Arena::CreateMaybeMessage<::MsgCommonN32>(Arena*);
 template<> ::MsgCommonN64* Arena::CreateMaybeMessage<::MsgCommonN64>(Arena*);
 template<> ::MsgCommonStr* Arena::CreateMaybeMessage<::MsgCommonStr>(Arena*);
 template<> ::MsgGameServerInfo* Arena::CreateMaybeMessage<::MsgGameServerInfo>(Arena*);
 template<> ::MsgGameServerList* Arena::CreateMaybeMessage<::MsgGameServerList>(Arena*);
+template<> ::MsgTopInfo* Arena::CreateMaybeMessage<::MsgTopInfo>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 
 // ===================================================================
@@ -989,6 +997,417 @@ class MsgGameServerList PROTOBUF_FINAL :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Common_2eproto;
 };
+// -------------------------------------------------------------------
+
+class MsgBroadcastZmdTip PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgBroadcastZmdTip) */ {
+ public:
+  inline MsgBroadcastZmdTip() : MsgBroadcastZmdTip(nullptr) {}
+  virtual ~MsgBroadcastZmdTip();
+
+  MsgBroadcastZmdTip(const MsgBroadcastZmdTip& from);
+  MsgBroadcastZmdTip(MsgBroadcastZmdTip&& from) noexcept
+    : MsgBroadcastZmdTip() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgBroadcastZmdTip& operator=(const MsgBroadcastZmdTip& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgBroadcastZmdTip& operator=(MsgBroadcastZmdTip&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgBroadcastZmdTip& default_instance();
+
+  static inline const MsgBroadcastZmdTip* internal_default_instance() {
+    return reinterpret_cast<const MsgBroadcastZmdTip*>(
+               &_MsgBroadcastZmdTip_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    6;
+
+  friend void swap(MsgBroadcastZmdTip& a, MsgBroadcastZmdTip& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgBroadcastZmdTip* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgBroadcastZmdTip* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgBroadcastZmdTip* New() const final {
+    return CreateMaybeMessage<MsgBroadcastZmdTip>(nullptr);
+  }
+
+  MsgBroadcastZmdTip* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgBroadcastZmdTip>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgBroadcastZmdTip& from);
+  void MergeFrom(const MsgBroadcastZmdTip& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgBroadcastZmdTip* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgBroadcastZmdTip";
+  }
+  protected:
+  explicit MsgBroadcastZmdTip(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Common_2eproto);
+    return ::descriptor_table_Common_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kContentFieldNumber = 9,
+    kNickNameFieldNumber = 5,
+    kHeadUrlFieldNumber = 6,
+    kUserIdFieldNumber = 1,
+    kGameIdFieldNumber = 2,
+    kWinGoldFieldNumber = 4,
+    kRoomLevelFieldNumber = 3,
+    kLanguageIdFieldNumber = 7,
+    kTemplateIdFieldNumber = 8,
+  };
+  // repeated string content = 9;
+  int content_size() const;
+  private:
+  int _internal_content_size() const;
+  public:
+  void clear_content();
+  const std::string& content(int index) const;
+  std::string* mutable_content(int index);
+  void set_content(int index, const std::string& value);
+  void set_content(int index, std::string&& value);
+  void set_content(int index, const char* value);
+  void set_content(int index, const char* value, size_t size);
+  std::string* add_content();
+  void add_content(const std::string& value);
+  void add_content(std::string&& value);
+  void add_content(const char* value);
+  void add_content(const char* value, size_t size);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>& content() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>* mutable_content();
+  private:
+  const std::string& _internal_content(int index) const;
+  std::string* _internal_add_content();
+  public:
+
+  // string nick_name = 5;
+  void clear_nick_name();
+  const std::string& nick_name() const;
+  void set_nick_name(const std::string& value);
+  void set_nick_name(std::string&& value);
+  void set_nick_name(const char* value);
+  void set_nick_name(const char* value, size_t size);
+  std::string* mutable_nick_name();
+  std::string* release_nick_name();
+  void set_allocated_nick_name(std::string* nick_name);
+  private:
+  const std::string& _internal_nick_name() const;
+  void _internal_set_nick_name(const std::string& value);
+  std::string* _internal_mutable_nick_name();
+  public:
+
+  // string head_url = 6;
+  void clear_head_url();
+  const std::string& head_url() const;
+  void set_head_url(const std::string& value);
+  void set_head_url(std::string&& value);
+  void set_head_url(const char* value);
+  void set_head_url(const char* value, size_t size);
+  std::string* mutable_head_url();
+  std::string* release_head_url();
+  void set_allocated_head_url(std::string* head_url);
+  private:
+  const std::string& _internal_head_url() const;
+  void _internal_set_head_url(const std::string& value);
+  std::string* _internal_mutable_head_url();
+  public:
+
+  // int32 user_id = 1;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 game_id = 2;
+  void clear_game_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 game_id() const;
+  void set_game_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_game_id() const;
+  void _internal_set_game_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // uint64 win_gold = 4;
+  void clear_win_gold();
+  ::PROTOBUF_NAMESPACE_ID::uint64 win_gold() const;
+  void set_win_gold(::PROTOBUF_NAMESPACE_ID::uint64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::uint64 _internal_win_gold() const;
+  void _internal_set_win_gold(::PROTOBUF_NAMESPACE_ID::uint64 value);
+  public:
+
+  // int32 room_level = 3;
+  void clear_room_level();
+  ::PROTOBUF_NAMESPACE_ID::int32 room_level() const;
+  void set_room_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_room_level() const;
+  void _internal_set_room_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 language_id = 7;
+  void clear_language_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 language_id() const;
+  void set_language_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_language_id() const;
+  void _internal_set_language_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 template_id = 8;
+  void clear_template_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 template_id() const;
+  void set_template_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_template_id() const;
+  void _internal_set_template_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgBroadcastZmdTip)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string> content_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr nick_name_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr head_url_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 game_id_;
+  ::PROTOBUF_NAMESPACE_ID::uint64 win_gold_;
+  ::PROTOBUF_NAMESPACE_ID::int32 room_level_;
+  ::PROTOBUF_NAMESPACE_ID::int32 language_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 template_id_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Common_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgTopInfo PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgTopInfo) */ {
+ public:
+  inline MsgTopInfo() : MsgTopInfo(nullptr) {}
+  virtual ~MsgTopInfo();
+
+  MsgTopInfo(const MsgTopInfo& from);
+  MsgTopInfo(MsgTopInfo&& from) noexcept
+    : MsgTopInfo() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgTopInfo& operator=(const MsgTopInfo& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgTopInfo& operator=(MsgTopInfo&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgTopInfo& default_instance();
+
+  static inline const MsgTopInfo* internal_default_instance() {
+    return reinterpret_cast<const MsgTopInfo*>(
+               &_MsgTopInfo_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    7;
+
+  friend void swap(MsgTopInfo& a, MsgTopInfo& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgTopInfo* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgTopInfo* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgTopInfo* New() const final {
+    return CreateMaybeMessage<MsgTopInfo>(nullptr);
+  }
+
+  MsgTopInfo* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgTopInfo>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgTopInfo& from);
+  void MergeFrom(const MsgTopInfo& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgTopInfo* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgTopInfo";
+  }
+  protected:
+  explicit MsgTopInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Common_2eproto);
+    return ::descriptor_table_Common_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kRankIdFieldNumber = 1,
+    kGameIdFieldNumber = 2,
+    kGoldFieldNumber = 3,
+  };
+  // int32 rank_id = 1;
+  void clear_rank_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 rank_id() const;
+  void set_rank_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_rank_id() const;
+  void _internal_set_rank_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 game_id = 2;
+  void clear_game_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 game_id() const;
+  void set_game_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_game_id() const;
+  void _internal_set_game_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // uint64 gold = 3;
+  void clear_gold();
+  ::PROTOBUF_NAMESPACE_ID::uint64 gold() const;
+  void set_gold(::PROTOBUF_NAMESPACE_ID::uint64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::uint64 _internal_gold() const;
+  void _internal_set_gold(::PROTOBUF_NAMESPACE_ID::uint64 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgTopInfo)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 rank_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 game_id_;
+  ::PROTOBUF_NAMESPACE_ID::uint64 gold_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Common_2eproto;
+};
 // ===================================================================
 
 
@@ -1340,9 +1759,397 @@ MsgGameServerList::game_server_list() const {
   return game_server_list_;
 }
 
+// -------------------------------------------------------------------
+
+// MsgBroadcastZmdTip
+
+// int32 user_id = 1;
+inline void MsgBroadcastZmdTip::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBroadcastZmdTip::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBroadcastZmdTip::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgBroadcastZmdTip.user_id)
+  return _internal_user_id();
+}
+inline void MsgBroadcastZmdTip::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgBroadcastZmdTip::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgBroadcastZmdTip.user_id)
+}
+
+// int32 game_id = 2;
+inline void MsgBroadcastZmdTip::clear_game_id() {
+  game_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBroadcastZmdTip::_internal_game_id() const {
+  return game_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBroadcastZmdTip::game_id() const {
+  // @@protoc_insertion_point(field_get:MsgBroadcastZmdTip.game_id)
+  return _internal_game_id();
+}
+inline void MsgBroadcastZmdTip::_internal_set_game_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  game_id_ = value;
+}
+inline void MsgBroadcastZmdTip::set_game_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_game_id(value);
+  // @@protoc_insertion_point(field_set:MsgBroadcastZmdTip.game_id)
+}
+
+// int32 room_level = 3;
+inline void MsgBroadcastZmdTip::clear_room_level() {
+  room_level_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBroadcastZmdTip::_internal_room_level() const {
+  return room_level_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBroadcastZmdTip::room_level() const {
+  // @@protoc_insertion_point(field_get:MsgBroadcastZmdTip.room_level)
+  return _internal_room_level();
+}
+inline void MsgBroadcastZmdTip::_internal_set_room_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  room_level_ = value;
+}
+inline void MsgBroadcastZmdTip::set_room_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_room_level(value);
+  // @@protoc_insertion_point(field_set:MsgBroadcastZmdTip.room_level)
+}
+
+// uint64 win_gold = 4;
+inline void MsgBroadcastZmdTip::clear_win_gold() {
+  win_gold_ = PROTOBUF_ULONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint64 MsgBroadcastZmdTip::_internal_win_gold() const {
+  return win_gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint64 MsgBroadcastZmdTip::win_gold() const {
+  // @@protoc_insertion_point(field_get:MsgBroadcastZmdTip.win_gold)
+  return _internal_win_gold();
+}
+inline void MsgBroadcastZmdTip::_internal_set_win_gold(::PROTOBUF_NAMESPACE_ID::uint64 value) {
+  
+  win_gold_ = value;
+}
+inline void MsgBroadcastZmdTip::set_win_gold(::PROTOBUF_NAMESPACE_ID::uint64 value) {
+  _internal_set_win_gold(value);
+  // @@protoc_insertion_point(field_set:MsgBroadcastZmdTip.win_gold)
+}
+
+// string nick_name = 5;
+inline void MsgBroadcastZmdTip::clear_nick_name() {
+  nick_name_.ClearToEmpty();
+}
+inline const std::string& MsgBroadcastZmdTip::nick_name() const {
+  // @@protoc_insertion_point(field_get:MsgBroadcastZmdTip.nick_name)
+  return _internal_nick_name();
+}
+inline void MsgBroadcastZmdTip::set_nick_name(const std::string& value) {
+  _internal_set_nick_name(value);
+  // @@protoc_insertion_point(field_set:MsgBroadcastZmdTip.nick_name)
+}
+inline std::string* MsgBroadcastZmdTip::mutable_nick_name() {
+  // @@protoc_insertion_point(field_mutable:MsgBroadcastZmdTip.nick_name)
+  return _internal_mutable_nick_name();
+}
+inline const std::string& MsgBroadcastZmdTip::_internal_nick_name() const {
+  return nick_name_.Get();
+}
+inline void MsgBroadcastZmdTip::_internal_set_nick_name(const std::string& value) {
+  
+  nick_name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgBroadcastZmdTip::set_nick_name(std::string&& value) {
+  
+  nick_name_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgBroadcastZmdTip.nick_name)
+}
+inline void MsgBroadcastZmdTip::set_nick_name(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  nick_name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgBroadcastZmdTip.nick_name)
+}
+inline void MsgBroadcastZmdTip::set_nick_name(const char* value,
+    size_t size) {
+  
+  nick_name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgBroadcastZmdTip.nick_name)
+}
+inline std::string* MsgBroadcastZmdTip::_internal_mutable_nick_name() {
+  
+  return nick_name_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgBroadcastZmdTip::release_nick_name() {
+  // @@protoc_insertion_point(field_release:MsgBroadcastZmdTip.nick_name)
+  return nick_name_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgBroadcastZmdTip::set_allocated_nick_name(std::string* nick_name) {
+  if (nick_name != nullptr) {
+    
+  } else {
+    
+  }
+  nick_name_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), nick_name,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgBroadcastZmdTip.nick_name)
+}
+
+// string head_url = 6;
+inline void MsgBroadcastZmdTip::clear_head_url() {
+  head_url_.ClearToEmpty();
+}
+inline const std::string& MsgBroadcastZmdTip::head_url() const {
+  // @@protoc_insertion_point(field_get:MsgBroadcastZmdTip.head_url)
+  return _internal_head_url();
+}
+inline void MsgBroadcastZmdTip::set_head_url(const std::string& value) {
+  _internal_set_head_url(value);
+  // @@protoc_insertion_point(field_set:MsgBroadcastZmdTip.head_url)
+}
+inline std::string* MsgBroadcastZmdTip::mutable_head_url() {
+  // @@protoc_insertion_point(field_mutable:MsgBroadcastZmdTip.head_url)
+  return _internal_mutable_head_url();
+}
+inline const std::string& MsgBroadcastZmdTip::_internal_head_url() const {
+  return head_url_.Get();
+}
+inline void MsgBroadcastZmdTip::_internal_set_head_url(const std::string& value) {
+  
+  head_url_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgBroadcastZmdTip::set_head_url(std::string&& value) {
+  
+  head_url_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgBroadcastZmdTip.head_url)
+}
+inline void MsgBroadcastZmdTip::set_head_url(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  head_url_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgBroadcastZmdTip.head_url)
+}
+inline void MsgBroadcastZmdTip::set_head_url(const char* value,
+    size_t size) {
+  
+  head_url_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgBroadcastZmdTip.head_url)
+}
+inline std::string* MsgBroadcastZmdTip::_internal_mutable_head_url() {
+  
+  return head_url_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgBroadcastZmdTip::release_head_url() {
+  // @@protoc_insertion_point(field_release:MsgBroadcastZmdTip.head_url)
+  return head_url_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgBroadcastZmdTip::set_allocated_head_url(std::string* head_url) {
+  if (head_url != nullptr) {
+    
+  } else {
+    
+  }
+  head_url_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), head_url,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgBroadcastZmdTip.head_url)
+}
+
+// int32 language_id = 7;
+inline void MsgBroadcastZmdTip::clear_language_id() {
+  language_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBroadcastZmdTip::_internal_language_id() const {
+  return language_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBroadcastZmdTip::language_id() const {
+  // @@protoc_insertion_point(field_get:MsgBroadcastZmdTip.language_id)
+  return _internal_language_id();
+}
+inline void MsgBroadcastZmdTip::_internal_set_language_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  language_id_ = value;
+}
+inline void MsgBroadcastZmdTip::set_language_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_language_id(value);
+  // @@protoc_insertion_point(field_set:MsgBroadcastZmdTip.language_id)
+}
+
+// int32 template_id = 8;
+inline void MsgBroadcastZmdTip::clear_template_id() {
+  template_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBroadcastZmdTip::_internal_template_id() const {
+  return template_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBroadcastZmdTip::template_id() const {
+  // @@protoc_insertion_point(field_get:MsgBroadcastZmdTip.template_id)
+  return _internal_template_id();
+}
+inline void MsgBroadcastZmdTip::_internal_set_template_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  template_id_ = value;
+}
+inline void MsgBroadcastZmdTip::set_template_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_template_id(value);
+  // @@protoc_insertion_point(field_set:MsgBroadcastZmdTip.template_id)
+}
+
+// repeated string content = 9;
+inline int MsgBroadcastZmdTip::_internal_content_size() const {
+  return content_.size();
+}
+inline int MsgBroadcastZmdTip::content_size() const {
+  return _internal_content_size();
+}
+inline void MsgBroadcastZmdTip::clear_content() {
+  content_.Clear();
+}
+inline std::string* MsgBroadcastZmdTip::add_content() {
+  // @@protoc_insertion_point(field_add_mutable:MsgBroadcastZmdTip.content)
+  return _internal_add_content();
+}
+inline const std::string& MsgBroadcastZmdTip::_internal_content(int index) const {
+  return content_.Get(index);
+}
+inline const std::string& MsgBroadcastZmdTip::content(int index) const {
+  // @@protoc_insertion_point(field_get:MsgBroadcastZmdTip.content)
+  return _internal_content(index);
+}
+inline std::string* MsgBroadcastZmdTip::mutable_content(int index) {
+  // @@protoc_insertion_point(field_mutable:MsgBroadcastZmdTip.content)
+  return content_.Mutable(index);
+}
+inline void MsgBroadcastZmdTip::set_content(int index, const std::string& value) {
+  // @@protoc_insertion_point(field_set:MsgBroadcastZmdTip.content)
+  content_.Mutable(index)->assign(value);
+}
+inline void MsgBroadcastZmdTip::set_content(int index, std::string&& value) {
+  // @@protoc_insertion_point(field_set:MsgBroadcastZmdTip.content)
+  content_.Mutable(index)->assign(std::move(value));
+}
+inline void MsgBroadcastZmdTip::set_content(int index, const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  content_.Mutable(index)->assign(value);
+  // @@protoc_insertion_point(field_set_char:MsgBroadcastZmdTip.content)
+}
+inline void MsgBroadcastZmdTip::set_content(int index, const char* value, size_t size) {
+  content_.Mutable(index)->assign(
+    reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_set_pointer:MsgBroadcastZmdTip.content)
+}
+inline std::string* MsgBroadcastZmdTip::_internal_add_content() {
+  return content_.Add();
+}
+inline void MsgBroadcastZmdTip::add_content(const std::string& value) {
+  content_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add:MsgBroadcastZmdTip.content)
+}
+inline void MsgBroadcastZmdTip::add_content(std::string&& value) {
+  content_.Add(std::move(value));
+  // @@protoc_insertion_point(field_add:MsgBroadcastZmdTip.content)
+}
+inline void MsgBroadcastZmdTip::add_content(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  content_.Add()->assign(value);
+  // @@protoc_insertion_point(field_add_char:MsgBroadcastZmdTip.content)
+}
+inline void MsgBroadcastZmdTip::add_content(const char* value, size_t size) {
+  content_.Add()->assign(reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_add_pointer:MsgBroadcastZmdTip.content)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>&
+MsgBroadcastZmdTip::content() const {
+  // @@protoc_insertion_point(field_list:MsgBroadcastZmdTip.content)
+  return content_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>*
+MsgBroadcastZmdTip::mutable_content() {
+  // @@protoc_insertion_point(field_mutable_list:MsgBroadcastZmdTip.content)
+  return &content_;
+}
+
+// -------------------------------------------------------------------
+
+// MsgTopInfo
+
+// int32 rank_id = 1;
+inline void MsgTopInfo::clear_rank_id() {
+  rank_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTopInfo::_internal_rank_id() const {
+  return rank_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTopInfo::rank_id() const {
+  // @@protoc_insertion_point(field_get:MsgTopInfo.rank_id)
+  return _internal_rank_id();
+}
+inline void MsgTopInfo::_internal_set_rank_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  rank_id_ = value;
+}
+inline void MsgTopInfo::set_rank_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_rank_id(value);
+  // @@protoc_insertion_point(field_set:MsgTopInfo.rank_id)
+}
+
+// int32 game_id = 2;
+inline void MsgTopInfo::clear_game_id() {
+  game_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTopInfo::_internal_game_id() const {
+  return game_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTopInfo::game_id() const {
+  // @@protoc_insertion_point(field_get:MsgTopInfo.game_id)
+  return _internal_game_id();
+}
+inline void MsgTopInfo::_internal_set_game_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  game_id_ = value;
+}
+inline void MsgTopInfo::set_game_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_game_id(value);
+  // @@protoc_insertion_point(field_set:MsgTopInfo.game_id)
+}
+
+// uint64 gold = 3;
+inline void MsgTopInfo::clear_gold() {
+  gold_ = PROTOBUF_ULONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint64 MsgTopInfo::_internal_gold() const {
+  return gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint64 MsgTopInfo::gold() const {
+  // @@protoc_insertion_point(field_get:MsgTopInfo.gold)
+  return _internal_gold();
+}
+inline void MsgTopInfo::_internal_set_gold(::PROTOBUF_NAMESPACE_ID::uint64 value) {
+  
+  gold_ = value;
+}
+inline void MsgTopInfo::set_gold(::PROTOBUF_NAMESPACE_ID::uint64 value) {
+  _internal_set_gold(value);
+  // @@protoc_insertion_point(field_set:MsgTopInfo.gold)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

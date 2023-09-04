@@ -171,12 +171,21 @@ enum EMsgIDLogin : int {
   MsgIDVIP_GetPlayerHitCodingResp = 58,
   MsgIDVIP_VIPUpgrade = 59,
   MsgIDVIP_VIPUpgradeResp = 60,
+  MsgIDAvatar_GetAvatarInfo = 61,
+  MsgIDAvatar_GetAvatarInfoResp = 62,
+  MsgIDAvatar_ModifyAvatarFrame = 63,
+  MsgIDAvatar_ModifyAvatarFrameResp = 64,
+  MsgIDLogin_QueryPlayerInfo = 65,
+  MsgIDLogin_QueryPlayerInfoResp = 66,
+  MsgIDActive_QueryActiveInfo = 67,
+  MsgIDActive_QueryActiveInfoResp = 68,
+  MsgIDZMD_BroadcastTipResp = 69,
   EMsgIDLogin_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDLogin_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDLogin_IsValid(int value);
 constexpr EMsgIDLogin EMsgIDLogin_MIN = MsgIDLogin_Null;
-constexpr EMsgIDLogin EMsgIDLogin_MAX = MsgIDVIP_VIPUpgradeResp;
+constexpr EMsgIDLogin EMsgIDLogin_MAX = MsgIDZMD_BroadcastTipResp;
 constexpr int EMsgIDLogin_ARRAYSIZE = EMsgIDLogin_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDLogin_descriptor();

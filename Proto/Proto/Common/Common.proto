@@ -38,3 +38,25 @@ message MsgGameServerList
 {
 	repeated MsgGameServerInfo	game_server_list		= 1;	//服务器列表 
 }
+
+//跑马灯数据
+message MsgBroadcastZmdTip
+{
+	int32	user_id				= 1;		//用户ID
+	int32	game_id				= 2;		//游戏类型
+	int32	room_level			= 3;		//房间等级
+	uint64	win_gold			= 4;		//获得金币
+	string	nick_name			= 5;		//昵称
+	string	head_url			= 6;		//头像url
+	int32	language_id			= 7;		//多语言id
+	int32	template_id			= 8;		//模板id
+	repeated string	content		= 9;		//拼接内容数组
+}
+
+//排行榜数据
+message MsgTopInfo
+{
+	int32	rank_id				= 1;		//排行id
+	int32	game_id				= 2;		//游戏类型
+	uint64	gold				= 3;		//获得金币
+}
