@@ -79,6 +79,7 @@ enum EMsgIDLogin
 	MsgIDVIP_GetPlayerHitCodingResp				= 58;		//获取玩家打码量(MsgCommonN64)
 	MsgIDVIP_VIPUpgrade							= 59;		//升级VIP(MsgCommonBool)
 	MsgIDVIP_VIPUpgradeResp						= 60;		//升级VIP返回(MsgUpgradeVIP)
+	MsgIDBroadcastTipResp						= 61;		//升级VIP返回(MsgUpgradeVIP)
 }
 
 enum EMsgIDGame

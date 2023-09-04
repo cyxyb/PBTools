@@ -31,6 +31,7 @@ enum EMsgIDServerInternalProto
 	CENTER2LOGIN_UpdateGameServerOnlineNum	= 11;	//更新游戏服务器在线人数
 	CENTER2LOGIN_AddMailResp				= 12;	//增加邮件返回
 	CENTER2LOGIN_RechargeResp				= 13;	//充值成功回调
+	CENTER2LOGIN_BroadcastTip				= 14;	//跑马灯广播
 	
 	//1001-2000 game <-> center
 	GAME2CENTER_Register			= 2001;	//游戏服务器注册
@@ -38,6 +39,7 @@ enum EMsgIDServerInternalProto
 	GAME2CENTER_ApplyRobot			= 2003;	//申请机器人
 	CENTER2GAME_ApplyRobotResp		= 2004;	//申请机器人返回
 	GAME2CENTER_UpdateOnlineNum		= 2005;	//更新游戏服务器在线人数
+	GAME2CENTER_BroadcastTip		= 2006;	//游戏请求跑马灯广播
 	
 	//2001-3000
 	ROBOT2GAME_RobotLogin			= 3001;	//机器人登录

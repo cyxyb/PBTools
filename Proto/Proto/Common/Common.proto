@@ -38,3 +38,13 @@ message MsgGameServerList
 {
 	repeated MsgGameServerInfo	game_server_list		= 1;	//服务器列表 
 }
+
+//跑马灯数据
+message MsgBroadcastTip
+{
+	int32	user_id				= 1;		//用户ID
+	int32	game_id				= 2;		//游戏类型
+	int32	room_level			= 3;		//房间等级
+	string	nick_name			= 4;		//昵称
+	string	content				= 5;		//内容
+}
