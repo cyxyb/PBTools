@@ -57,17 +57,20 @@ message MsgBroadcastZmdTip
 message MsgTopInfo
 {
 	int32	rank_id				= 1;		//排行id
-	int32	game_id				= 2;		//游戏类型
-	uint64	gold				= 3;		//金币
-	string	head_url			= 4;		//头像
+	uint64	gold				= 2;		//金币
+	uint32	vip_level			= 3;		//vip等级
+	string	head_url			= 4;		//头像.
+	string	nick_name			= 5;		//昵称
 }
 
 //排行榜数据
 message MsgTopList
 {
-	int32 user_id							= 1;		//请求玩家userID
-	repeated MsgTopInfo	day_lists		= 2;		//每日排行榜
-	repeated MsgTopInfo	max_gold_lists	= 3;		//大富豪排行榜
+	int32 user_id						= 1;		//请求玩家userID
+	MsgTopInfo	day_this_info			= 2;		//每日排行榜自己的信息
+	MsgTopInfo	max_this_info			= 3;		//大富豪排行榜自己的信息
+	repeated MsgTopInfo	day_lists		= 4;		//每日排行榜
+	repeated MsgTopInfo	max_gold_lists	= 5;		//大富豪排行榜
 }
 
 
