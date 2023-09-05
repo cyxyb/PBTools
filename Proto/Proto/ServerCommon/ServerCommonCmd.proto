@@ -32,6 +32,8 @@ enum EMsgIDServerInternalProto
 	CENTER2LOGIN_AddMailResp				= 12;	//增加邮件返回
 	CENTER2LOGIN_RechargeResp				= 13;	//充值成功回调
 	CENTER2LOGIN_BroadcastZmdTipResp		= 14;	//跑马灯广播
+	LOGIN2CENTER_GetRank					= 15;	//获取排行榜
+	CENTER2LOGIN_GetRankResp				= 16;	//获取排行榜回调
 	
 	//1001-2000 game <-> center
 	GAME2CENTER_Register			= 2001;	//游戏服务器注册
@@ -116,6 +118,8 @@ enum EMsgIDDB
 	DB2LOGIN_QueryPlayerInfoResp	= 1040;	//查询玩家信息返回
 	LOGIN2DB_QueryActiveInfo 		= 1041; //查询玩家任务信息
 	DB2LOGIN_QueryActiveInfoResp	= 1042; //查询玩家任务信息返回
+	LOGIN2DB_ModifySignature		= 1043; //修改签名
+	DB2LOGIN_ModifySignatureResp	= 1044; //修改签名返回
 	
 	//2001-3000 GameServer2DB
 	GAME2DB_Login					= 2001;	//玩家登录游戏

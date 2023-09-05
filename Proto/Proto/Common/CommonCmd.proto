@@ -88,6 +88,10 @@ enum EMsgIDLogin
 	MsgIDActive_QueryActiveInfo					= 67;		//查询玩家活动数据(MsgActiveInfo)
 	MsgIDActive_QueryActiveInfoResp				= 68;		//查询玩家活动数据返回(sActiveInfoSCRet)
 	MsgIDZMD_BroadcastTipResp					= 69;		//跑马灯广播(MsgBroadcastTip)
+	MsgIDSignature_Modify						= 70;		//修改签名(MsgModifySignature)
+	MsgIDSignature_ModifyResp					= 71;		//修改签名返回(MsgModifySignature)
+	MsgIDRank_Get								= 72;		//排行榜请求(MsgCommonN32)
+	MsgIDRank_GetResp							= 73;		//排行榜返回(MsgTopList)
 }
 
 enum EMsgIDGame
