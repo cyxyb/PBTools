@@ -92,8 +92,8 @@ enum EMsgIDLogin
 	MsgIDActive_PickActiveInfoResp				= 71;		//领取活动奖励返回(MsgActiveInfoSCPick)
 	MsgIDSignature_Modify						= 72;		//修改签名(MsgModifySignature)
 	MsgIDSignature_ModifyResp					= 73;		//修改签名返回(MsgModifySignature)
-	MsgIDRank_Get								= 74;		//排行榜请求(MsgCommonN32)
-	MsgIDRank_GetResp							= 75;		//排行榜返回(MsgTopList)
+	MsgIDRank_Get								= 74;		//排行榜请求(MsgGetRank)
+	MsgIDRank_GetResp							= 75;		//排行榜返回(MsgTopListResp)
 	MsgIDBank_BankRequestSet					= 76;		//银行是否设置密码()
 	MsgIDBank_BankRequestSetResp				= 77;		//银行是否设置密码返回()
 }
