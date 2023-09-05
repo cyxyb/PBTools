@@ -34,9 +34,14 @@ public static partial class CommonReflection {
           "cBIPCgd1c2VyX2lkGAEgASgFEg8KB2dhbWVfaWQYAiABKAUSEgoKcm9vbV9s",
           "ZXZlbBgDIAEoBRIQCgh3aW5fZ29sZBgEIAEoBBIRCgluaWNrX25hbWUYBSAB",
           "KAkSEAoIaGVhZF91cmwYBiABKAkSEwoLbGFuZ3VhZ2VfaWQYByABKAUSEwoL",
-          "dGVtcGxhdGVfaWQYCCABKAUSDwoHY29udGVudBgJIAMoCSI8CgpNc2dUb3BJ",
-          "bmZvEg8KB3JhbmtfaWQYASABKAUSDwoHZ2FtZV9pZBgCIAEoBRIMCgRnb2xk",
-          "GAMgASgEYgZwcm90bzM="));
+          "dGVtcGxhdGVfaWQYCCABKAUSDwoHY29udGVudBgJIAMoCSJjCgpNc2dUb3BJ",
+          "bmZvEg8KB3JhbmtfaWQYASABKAUSDAoEZ29sZBgCIAEoBBIRCgl2aXBfbGV2",
+          "ZWwYAyABKA0SEAoIaGVhZF91cmwYBCABKAkSEQoJbmlja19uYW1lGAUgASgJ",
+          "IqoBCgpNc2dUb3BMaXN0Eg8KB3VzZXJfaWQYASABKAUSIgoNZGF5X3RoaXNf",
+          "aW5mbxgCIAEoCzILLk1zZ1RvcEluZm8SIgoNbWF4X3RoaXNfaW5mbxgDIAEo",
+          "CzILLk1zZ1RvcEluZm8SHgoJZGF5X2xpc3RzGAQgAygLMgsuTXNnVG9wSW5m",
+          "bxIjCg5tYXhfZ29sZF9saXN0cxgFIAMoCzILLk1zZ1RvcEluZm9iBnByb3Rv",
+          "Mw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -47,7 +52,8 @@ public static partial class CommonReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgGameServerInfo), global::MsgGameServerInfo.Parser, new[]{ "Ip", "Port", "ServerId", "OnlineNum", "KindId", "RoomLevel", "LimitGold", "MaxPlayer" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgGameServerList), global::MsgGameServerList.Parser, new[]{ "GameServerList" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBroadcastZmdTip), global::MsgBroadcastZmdTip.Parser, new[]{ "UserId", "GameId", "RoomLevel", "WinGold", "NickName", "HeadUrl", "LanguageId", "TemplateId", "Content" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgTopInfo), global::MsgTopInfo.Parser, new[]{ "RankId", "GameId", "Gold" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgTopInfo), global::MsgTopInfo.Parser, new[]{ "RankId", "Gold", "VipLevel", "HeadUrl", "NickName" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgTopList), global::MsgTopList.Parser, new[]{ "UserId", "DayThisInfo", "MaxThisInfo", "DayLists", "MaxGoldLists" }, null, null, null, null)
         }));
   }
   #endregion
@@ -1872,8 +1878,10 @@ public sealed partial class MsgTopInfo : pb::IMessage<MsgTopInfo>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public MsgTopInfo(MsgTopInfo other) : this() {
     rankId_ = other.rankId_;
-    gameId_ = other.gameId_;
     gold_ = other.gold_;
+    vipLevel_ = other.vipLevel_;
+    headUrl_ = other.headUrl_;
+    nickName_ = other.nickName_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -1896,31 +1904,59 @@ public sealed partial class MsgTopInfo : pb::IMessage<MsgTopInfo>
     }
   }
 
-  /// <summary>Field number for the "game_id" field.</summary>
-  public const int GameIdFieldNumber = 2;
-  private int gameId_;
-  /// <summary>
-  ///游戏类型
-  /// </summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public int GameId {
-    get { return gameId_; }
-    set {
-      gameId_ = value;
-    }
-  }
-
   /// <summary>Field number for the "gold" field.</summary>
-  public const int GoldFieldNumber = 3;
+  public const int GoldFieldNumber = 2;
   private ulong gold_;
   /// <summary>
-  ///获得金币
+  ///金币
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public ulong Gold {
     get { return gold_; }
     set {
       gold_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "vip_level" field.</summary>
+  public const int VipLevelFieldNumber = 3;
+  private uint vipLevel_;
+  /// <summary>
+  ///vip等级
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint VipLevel {
+    get { return vipLevel_; }
+    set {
+      vipLevel_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "head_url" field.</summary>
+  public const int HeadUrlFieldNumber = 4;
+  private string headUrl_ = "";
+  /// <summary>
+  ///头像.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string HeadUrl {
+    get { return headUrl_; }
+    set {
+      headUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "nick_name" field.</summary>
+  public const int NickNameFieldNumber = 5;
+  private string nickName_ = "";
+  /// <summary>
+  ///昵称
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string NickName {
+    get { return nickName_; }
+    set {
+      nickName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
     }
   }
 
@@ -1938,8 +1974,10 @@ public sealed partial class MsgTopInfo : pb::IMessage<MsgTopInfo>
       return true;
     }
     if (RankId != other.RankId) return false;
-    if (GameId != other.GameId) return false;
     if (Gold != other.Gold) return false;
+    if (VipLevel != other.VipLevel) return false;
+    if (HeadUrl != other.HeadUrl) return false;
+    if (NickName != other.NickName) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -1947,8 +1985,10 @@ public sealed partial class MsgTopInfo : pb::IMessage<MsgTopInfo>
   public override int GetHashCode() {
     int hash = 1;
     if (RankId != 0) hash ^= RankId.GetHashCode();
-    if (GameId != 0) hash ^= GameId.GetHashCode();
     if (Gold != 0UL) hash ^= Gold.GetHashCode();
+    if (VipLevel != 0) hash ^= VipLevel.GetHashCode();
+    if (HeadUrl.Length != 0) hash ^= HeadUrl.GetHashCode();
+    if (NickName.Length != 0) hash ^= NickName.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -1969,13 +2009,21 @@ public sealed partial class MsgTopInfo : pb::IMessage<MsgTopInfo>
       output.WriteRawTag(8);
       output.WriteInt32(RankId);
     }
-    if (GameId != 0) {
-      output.WriteRawTag(16);
-      output.WriteInt32(GameId);
-    }
     if (Gold != 0UL) {
-      output.WriteRawTag(24);
+      output.WriteRawTag(16);
       output.WriteUInt64(Gold);
+    }
+    if (VipLevel != 0) {
+      output.WriteRawTag(24);
+      output.WriteUInt32(VipLevel);
+    }
+    if (HeadUrl.Length != 0) {
+      output.WriteRawTag(34);
+      output.WriteString(HeadUrl);
+    }
+    if (NickName.Length != 0) {
+      output.WriteRawTag(42);
+      output.WriteString(NickName);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -1990,13 +2038,21 @@ public sealed partial class MsgTopInfo : pb::IMessage<MsgTopInfo>
       output.WriteRawTag(8);
       output.WriteInt32(RankId);
     }
-    if (GameId != 0) {
-      output.WriteRawTag(16);
-      output.WriteInt32(GameId);
-    }
     if (Gold != 0UL) {
-      output.WriteRawTag(24);
+      output.WriteRawTag(16);
       output.WriteUInt64(Gold);
+    }
+    if (VipLevel != 0) {
+      output.WriteRawTag(24);
+      output.WriteUInt32(VipLevel);
+    }
+    if (HeadUrl.Length != 0) {
+      output.WriteRawTag(34);
+      output.WriteString(HeadUrl);
+    }
+    if (NickName.Length != 0) {
+      output.WriteRawTag(42);
+      output.WriteString(NickName);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
@@ -2010,11 +2066,17 @@ public sealed partial class MsgTopInfo : pb::IMessage<MsgTopInfo>
     if (RankId != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(RankId);
     }
-    if (GameId != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeInt32Size(GameId);
-    }
     if (Gold != 0UL) {
       size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Gold);
+    }
+    if (VipLevel != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(VipLevel);
+    }
+    if (HeadUrl.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(HeadUrl);
+    }
+    if (NickName.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(NickName);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -2030,11 +2092,17 @@ public sealed partial class MsgTopInfo : pb::IMessage<MsgTopInfo>
     if (other.RankId != 0) {
       RankId = other.RankId;
     }
-    if (other.GameId != 0) {
-      GameId = other.GameId;
-    }
     if (other.Gold != 0UL) {
       Gold = other.Gold;
+    }
+    if (other.VipLevel != 0) {
+      VipLevel = other.VipLevel;
+    }
+    if (other.HeadUrl.Length != 0) {
+      HeadUrl = other.HeadUrl;
+    }
+    if (other.NickName.Length != 0) {
+      NickName = other.NickName;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -2055,11 +2123,19 @@ public sealed partial class MsgTopInfo : pb::IMessage<MsgTopInfo>
           break;
         }
         case 16: {
-          GameId = input.ReadInt32();
+          Gold = input.ReadUInt64();
           break;
         }
         case 24: {
-          Gold = input.ReadUInt64();
+          VipLevel = input.ReadUInt32();
+          break;
+        }
+        case 34: {
+          HeadUrl = input.ReadString();
+          break;
+        }
+        case 42: {
+          NickName = input.ReadString();
           break;
         }
       }
@@ -2081,11 +2157,349 @@ public sealed partial class MsgTopInfo : pb::IMessage<MsgTopInfo>
           break;
         }
         case 16: {
-          GameId = input.ReadInt32();
+          Gold = input.ReadUInt64();
           break;
         }
         case 24: {
-          Gold = input.ReadUInt64();
+          VipLevel = input.ReadUInt32();
+          break;
+        }
+        case 34: {
+          HeadUrl = input.ReadString();
+          break;
+        }
+        case 42: {
+          NickName = input.ReadString();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///排行榜数据
+/// </summary>
+public sealed partial class MsgTopList : pb::IMessage<MsgTopList>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgTopList> _parser = new pb::MessageParser<MsgTopList>(() => new MsgTopList());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgTopList> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::CommonReflection.Descriptor.MessageTypes[8]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgTopList() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgTopList(MsgTopList other) : this() {
+    userId_ = other.userId_;
+    dayThisInfo_ = other.dayThisInfo_ != null ? other.dayThisInfo_.Clone() : null;
+    maxThisInfo_ = other.maxThisInfo_ != null ? other.maxThisInfo_.Clone() : null;
+    dayLists_ = other.dayLists_.Clone();
+    maxGoldLists_ = other.maxGoldLists_.Clone();
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgTopList Clone() {
+    return new MsgTopList(this);
+  }
+
+  /// <summary>Field number for the "user_id" field.</summary>
+  public const int UserIdFieldNumber = 1;
+  private int userId_;
+  /// <summary>
+  ///请求玩家userID
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int UserId {
+    get { return userId_; }
+    set {
+      userId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "day_this_info" field.</summary>
+  public const int DayThisInfoFieldNumber = 2;
+  private global::MsgTopInfo dayThisInfo_;
+  /// <summary>
+  ///每日排行榜自己的信息
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public global::MsgTopInfo DayThisInfo {
+    get { return dayThisInfo_; }
+    set {
+      dayThisInfo_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "max_this_info" field.</summary>
+  public const int MaxThisInfoFieldNumber = 3;
+  private global::MsgTopInfo maxThisInfo_;
+  /// <summary>
+  ///大富豪排行榜自己的信息
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public global::MsgTopInfo MaxThisInfo {
+    get { return maxThisInfo_; }
+    set {
+      maxThisInfo_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "day_lists" field.</summary>
+  public const int DayListsFieldNumber = 4;
+  private static readonly pb::FieldCodec<global::MsgTopInfo> _repeated_dayLists_codec
+      = pb::FieldCodec.ForMessage(34, global::MsgTopInfo.Parser);
+  private readonly pbc::RepeatedField<global::MsgTopInfo> dayLists_ = new pbc::RepeatedField<global::MsgTopInfo>();
+  /// <summary>
+  ///每日排行榜
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<global::MsgTopInfo> DayLists {
+    get { return dayLists_; }
+  }
+
+  /// <summary>Field number for the "max_gold_lists" field.</summary>
+  public const int MaxGoldListsFieldNumber = 5;
+  private static readonly pb::FieldCodec<global::MsgTopInfo> _repeated_maxGoldLists_codec
+      = pb::FieldCodec.ForMessage(42, global::MsgTopInfo.Parser);
+  private readonly pbc::RepeatedField<global::MsgTopInfo> maxGoldLists_ = new pbc::RepeatedField<global::MsgTopInfo>();
+  /// <summary>
+  ///大富豪排行榜
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<global::MsgTopInfo> MaxGoldLists {
+    get { return maxGoldLists_; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgTopList);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgTopList other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (UserId != other.UserId) return false;
+    if (!object.Equals(DayThisInfo, other.DayThisInfo)) return false;
+    if (!object.Equals(MaxThisInfo, other.MaxThisInfo)) return false;
+    if(!dayLists_.Equals(other.dayLists_)) return false;
+    if(!maxGoldLists_.Equals(other.maxGoldLists_)) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (UserId != 0) hash ^= UserId.GetHashCode();
+    if (dayThisInfo_ != null) hash ^= DayThisInfo.GetHashCode();
+    if (maxThisInfo_ != null) hash ^= MaxThisInfo.GetHashCode();
+    hash ^= dayLists_.GetHashCode();
+    hash ^= maxGoldLists_.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (UserId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(UserId);
+    }
+    if (dayThisInfo_ != null) {
+      output.WriteRawTag(18);
+      output.WriteMessage(DayThisInfo);
+    }
+    if (maxThisInfo_ != null) {
+      output.WriteRawTag(26);
+      output.WriteMessage(MaxThisInfo);
+    }
+    dayLists_.WriteTo(output, _repeated_dayLists_codec);
+    maxGoldLists_.WriteTo(output, _repeated_maxGoldLists_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (UserId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(UserId);
+    }
+    if (dayThisInfo_ != null) {
+      output.WriteRawTag(18);
+      output.WriteMessage(DayThisInfo);
+    }
+    if (maxThisInfo_ != null) {
+      output.WriteRawTag(26);
+      output.WriteMessage(MaxThisInfo);
+    }
+    dayLists_.WriteTo(ref output, _repeated_dayLists_codec);
+    maxGoldLists_.WriteTo(ref output, _repeated_maxGoldLists_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (UserId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserId);
+    }
+    if (dayThisInfo_ != null) {
+      size += 1 + pb::CodedOutputStream.ComputeMessageSize(DayThisInfo);
+    }
+    if (maxThisInfo_ != null) {
+      size += 1 + pb::CodedOutputStream.ComputeMessageSize(MaxThisInfo);
+    }
+    size += dayLists_.CalculateSize(_repeated_dayLists_codec);
+    size += maxGoldLists_.CalculateSize(_repeated_maxGoldLists_codec);
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgTopList other) {
+    if (other == null) {
+      return;
+    }
+    if (other.UserId != 0) {
+      UserId = other.UserId;
+    }
+    if (other.dayThisInfo_ != null) {
+      if (dayThisInfo_ == null) {
+        DayThisInfo = new global::MsgTopInfo();
+      }
+      DayThisInfo.MergeFrom(other.DayThisInfo);
+    }
+    if (other.maxThisInfo_ != null) {
+      if (maxThisInfo_ == null) {
+        MaxThisInfo = new global::MsgTopInfo();
+      }
+      MaxThisInfo.MergeFrom(other.MaxThisInfo);
+    }
+    dayLists_.Add(other.dayLists_);
+    maxGoldLists_.Add(other.maxGoldLists_);
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          UserId = input.ReadInt32();
+          break;
+        }
+        case 18: {
+          if (dayThisInfo_ == null) {
+            DayThisInfo = new global::MsgTopInfo();
+          }
+          input.ReadMessage(DayThisInfo);
+          break;
+        }
+        case 26: {
+          if (maxThisInfo_ == null) {
+            MaxThisInfo = new global::MsgTopInfo();
+          }
+          input.ReadMessage(MaxThisInfo);
+          break;
+        }
+        case 34: {
+          dayLists_.AddEntriesFrom(input, _repeated_dayLists_codec);
+          break;
+        }
+        case 42: {
+          maxGoldLists_.AddEntriesFrom(input, _repeated_maxGoldLists_codec);
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          UserId = input.ReadInt32();
+          break;
+        }
+        case 18: {
+          if (dayThisInfo_ == null) {
+            DayThisInfo = new global::MsgTopInfo();
+          }
+          input.ReadMessage(DayThisInfo);
+          break;
+        }
+        case 26: {
+          if (maxThisInfo_ == null) {
+            MaxThisInfo = new global::MsgTopInfo();
+          }
+          input.ReadMessage(MaxThisInfo);
+          break;
+        }
+        case 34: {
+          dayLists_.AddEntriesFrom(ref input, _repeated_dayLists_codec);
+          break;
+        }
+        case 42: {
+          maxGoldLists_.AddEntriesFrom(ref input, _repeated_maxGoldLists_codec);
           break;
         }
       }

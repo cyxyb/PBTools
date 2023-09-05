@@ -182,12 +182,30 @@ enum EMsgIDLogin : int {
   MsgIDZMD_BroadcastTipResp = 69,
   MsgIDActive_PickActiveInfo = 70,
   MsgIDActive_PickActiveInfoResp = 71,
+  MsgIDSignature_Modify = 72,
+  MsgIDSignature_ModifyResp = 73,
+  MsgIDRank_Get = 74,
+  MsgIDRank_GetResp = 75,
+  MsgIDBank_SetPassword = 76,
+  MsgIDBank_SetPasswordResp = 77,
+  MsgIDBank_VerifyPhone = 78,
+  MsgIDBank_VerifyPhoneResp = 79,
+  MsgIDBank_ChangePassword = 80,
+  MsgIDBank_ChangePasswordResp = 81,
+  MsgIDBank_OpenBank = 82,
+  MsgIDBank_OpenBankResp = 83,
+  MsgIDBank_BankOperate = 84,
+  MsgIDBank_BankOperateResp = 85,
+  MsgIDBank_BankTransfer = 86,
+  MsgIDBank_BankTransferResp = 87,
+  MsgIDBank_BankRecord = 88,
+  MsgIDBank_BankRecordResp = 89,
   EMsgIDLogin_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDLogin_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDLogin_IsValid(int value);
 constexpr EMsgIDLogin EMsgIDLogin_MIN = MsgIDLogin_Null;
-constexpr EMsgIDLogin EMsgIDLogin_MAX = MsgIDActive_PickActiveInfoResp;
+constexpr EMsgIDLogin EMsgIDLogin_MAX = MsgIDBank_BankRecordResp;
 constexpr int EMsgIDLogin_ARRAYSIZE = EMsgIDLogin_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDLogin_descriptor();
