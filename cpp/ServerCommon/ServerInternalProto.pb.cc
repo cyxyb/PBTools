@@ -929,6 +929,7 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 277, -1, sizeof(::MsgDBFingerGuessWriteScoreResp)},
   { 289, -1, sizeof(::MsgDBFingerGuessQueryRecord)},
   { 298, -1, sizeof(::MsgDBModifyAvatar)},
+  { 305, -1, sizeof(::MsgDBUpdateJackpot)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -1056,7 +1057,9 @@ const char descriptor_table_protodef_ServerInternalProto_2eproto[] PROTOBUF_SECT
   "t\030\007 \001(\003\"W\n\033MsgDBFingerGuessQueryRecord\022\014"
   "\n\004page\030\001 \001(\005\022\013\n\003num\030\002 \001(\005\022\014\n\004type\030\003 \001(\005\022"
   "\017\n\007user_id\030\004 \001(\005\"4\n\021MsgDBModifyAvatar\022\017\n"
-  "\007user_id\030\001 \001(\005\022\016\n\006avatar\030\002 \001(\tb\006proto3"
+  "\007user_id\030\001 \001(\005\022\016\n\006avatar\030\002 \001(\t\"N\n\022MsgDBU"
+  "pdateJackpot\022\021\n\tserver_id\030\001 \001(\005\022\017\n\007jackp"
+  "ot\030\002 \001(\003\022\024\n\014fake_jackpot\030\003 \001(\003b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_ServerInternalProto_2eproto_deps[1] = {
 };
@@ -1097,8 +1100,8 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Ser
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ServerInternalProto_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ServerInternalProto_2eproto = {
-  false, false, descriptor_table_protodef_ServerInternalProto_2eproto, "ServerInternalProto.proto", 3558,
-  &descriptor_table_ServerInternalProto_2eproto_once, descriptor_table_ServerInternalProto_2eproto_sccs, descriptor_table_ServerInternalProto_2eproto_deps, 32, 0,
+  false, false, descriptor_table_protodef_ServerInternalProto_2eproto, "ServerInternalProto.proto", 3638,
+  &descriptor_table_ServerInternalProto_2eproto_once, descriptor_table_ServerInternalProto_2eproto_sccs, descriptor_table_ServerInternalProto_2eproto_deps, 33, 0,
   schemas, file_default_instances, TableStruct_ServerInternalProto_2eproto::offsets,
   file_level_metadata_ServerInternalProto_2eproto, 33, file_level_enum_descriptors_ServerInternalProto_2eproto, file_level_service_descriptors_ServerInternalProto_2eproto,
 };
