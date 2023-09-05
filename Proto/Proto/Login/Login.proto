@@ -228,7 +228,7 @@ message MsgActiveInfo
 }
 message ActiveInfoRet
 {
-	int32	active_id 		= 1;//活动id: 5：每日反馈 6：新手任务邀请码 7：新手任务累充 8：新手任务游戏次数 9：在线奖励
+	int32	active_id 		= 1;//活动id: 5：每日反馈 6：新手任务邀请码 7：新手任务累充 8：新手任务游戏次数(多福多寿) 9：在线奖励10：新手任务游戏次数(龙虎斗) 11：新手任务游戏次数(小火箭)
 	int32	sub_active_id 	= 2;//子活动id
 	int32	param1 			= 3;//完成条件
 	int32	param2 			= 4;
@@ -249,11 +249,11 @@ message MsgActiveInfoCSPick
 {
 	int32 user_id = 1; //玩家id
 	int32 active_id = 2; //活动id: 3在线奖励
-	int32 sub_active_id = 3;//活动id:5：每日反馈 6：新手任务邀请码 7：新手任务累充 8：新手任务游戏次数 9：在线奖励
+	int32 sub_active_id = 3;//活动id: 5：每日反馈 6：新手任务邀请码 7：新手任务累充 8：新手任务游戏次数(多福多寿) 9：在线奖励10：新手任务游戏次数(龙虎斗) 11：新手任务游戏次数(小火箭)
 };
 message MsgActiveInfoSCPick
 {
-	int32 active_id = 1;////活动id: 5：每日反馈 6：新手任务邀请码 7：新手任务累充 8：新手任务游戏次数 9：在线奖励
+	int32 active_id = 1;////活动id: 5：每日反馈 6：新手任务邀请码 7：新手任务累充 8：新手任务游戏次数(多福多寿) 9：在线奖励10：新手任务游戏次数(龙虎斗) 11：新手任务游戏次数(小火箭)
 	int32 sub_active_id = 2;//子活动id
 	int32 param1 = 3;//完成条件
 	int32 param2 = 4;
@@ -266,9 +266,28 @@ message MsgActiveInfoSCPick
 	int32 is_pick = 11;//活动奖励是否领取
 	int32 res = 12;//活动奖励是否领取成功
 };
-
 message MsgModifySignature
 {
 	int32		user_id			= 1;	//userid
 	string		signature		= 2;	//新的签名
+}
+//银行
+message MsgBankRequestSet
+{
+	int32 user_id = 1;//玩家ID
+}
+message MsgBankRequestSetResp
+{
+	bool is_ok = 1;//true已设置密码 false未设置密码
+}
+//设置/输入密码
+message MsgEnterPassword
+{
+	int32 user_id = 1;//玩家ID
+	string Password = 2;//密码
+}
+message MsgEnterPasswordResp
+{
+	int32 user_id = 1;//玩家ID
+	string Password = 2;//密码
 }

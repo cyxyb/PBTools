@@ -94,7 +94,8 @@ enum EMsgIDLogin
 	MsgIDSignature_ModifyResp					= 73;		//修改签名返回(MsgModifySignature)
 	MsgIDRank_Get								= 74;		//排行榜请求(MsgCommonN32)
 	MsgIDRank_GetResp							= 75;		//排行榜返回(MsgTopList)
-
+	MsgIDBank_BankRequestSet					= 76;		//银行是否设置密码()
+	MsgIDBank_BankRequestSetResp				= 77;		//银行是否设置密码返回()
 }
 
 enum EMsgIDGame
