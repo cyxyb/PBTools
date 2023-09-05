@@ -273,17 +273,7 @@ message MsgModifySignature
 }
 
 //银行
-//设置/输入-密码
-message MsgBankEnterPassword
-{
-	string password = 1;				//密码
-}
 //修改密码
-message MsgBankVerifyPhone	//请求手机号验证,验证用户绑定手机是否正确后发验证码
-{
-	string phone = 1;						//手机号
-}
-
 message MsgBankChangePassword
 {
 	string password = 1;				//密码

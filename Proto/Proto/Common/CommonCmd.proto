@@ -94,13 +94,13 @@ enum EMsgIDLogin
 	MsgIDSignature_ModifyResp					= 73;		//修改签名返回(MsgModifySignature)
 	MsgIDRank_Get								= 74;		//排行榜请求(MsgCommonN32)
 	MsgIDRank_GetResp							= 75;		//排行榜返回(MsgTopList)
-	MsgIDBank_SetPassword						= 76;		//银行设置密码(MsgBankEnterPassword)
+	MsgIDBank_SetPassword						= 76;		//银行设置密码(MsgCommonStr)
 	MsgIDBank_SetPasswordResp					= 77;		//银行设置密码返回(MsgCommonBool)
-	MsgIDBank_VerifyPhone						= 78;		//验证手机(MsgBankVerifyPhone);
+	MsgIDBank_VerifyPhone						= 78;		//验证手机();
 	MsgIDBank_VerifyPhoneResp					= 79;		//验证手机返回(MsgCommonBool);
 	MsgIDBank_ChangePassword					= 80;		//银行修改密码(MsgBankChangePassword)
 	MsgIDBank_ChangePasswordResp				= 81;		//银行修改密码返回(MsgCommonN32)
-	MsgIDBank_OpenBank							= 82;		//银行打开银行(MsgBankEnterPassword)
+	MsgIDBank_OpenBank							= 82;		//银行打开银行(MsgCommonStr)
 	MsgIDBank_OpenBankResp						= 83;		//银行打开银行返回(MsgCommonBool)
 	MsgIDBank_BankOperate						= 84;		//银行存入(MsgBankOperate)
 	MsgIDBank_BankOperateResp					= 85;		//银行存入返回(MsgBankTakeOut)
