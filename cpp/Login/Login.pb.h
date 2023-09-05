@@ -46,16 +46,28 @@ struct TableStruct_Login_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[26]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[28]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
   static const ::PROTOBUF_NAMESPACE_ID::uint32 offsets[];
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Login_2eproto;
+class ActiveInfoRet;
+class ActiveInfoRetDefaultTypeInternal;
+extern ActiveInfoRetDefaultTypeInternal _ActiveInfoRet_default_instance_;
 class MsgActiveInfo;
 class MsgActiveInfoDefaultTypeInternal;
 extern MsgActiveInfoDefaultTypeInternal _MsgActiveInfo_default_instance_;
+class MsgActiveInfoCSPick;
+class MsgActiveInfoCSPickDefaultTypeInternal;
+extern MsgActiveInfoCSPickDefaultTypeInternal _MsgActiveInfoCSPick_default_instance_;
+class MsgActiveInfoSCPick;
+class MsgActiveInfoSCPickDefaultTypeInternal;
+extern MsgActiveInfoSCPickDefaultTypeInternal _MsgActiveInfoSCPick_default_instance_;
+class MsgActiveInfoSCRet;
+class MsgActiveInfoSCRetDefaultTypeInternal;
+extern MsgActiveInfoSCRetDefaultTypeInternal _MsgActiveInfoSCRet_default_instance_;
 class MsgBindParentData;
 class MsgBindParentDataDefaultTypeInternal;
 extern MsgBindParentDataDefaultTypeInternal _MsgBindParentData_default_instance_;
@@ -125,14 +137,12 @@ extern MsgVIPConfigDefaultTypeInternal _MsgVIPConfig_default_instance_;
 class MsgVIPInfo;
 class MsgVIPInfoDefaultTypeInternal;
 extern MsgVIPInfoDefaultTypeInternal _MsgVIPInfo_default_instance_;
-class sActiveInfoSC;
-class sActiveInfoSCDefaultTypeInternal;
-extern sActiveInfoSCDefaultTypeInternal _sActiveInfoSC_default_instance_;
-class sActiveInfoSCRet;
-class sActiveInfoSCRetDefaultTypeInternal;
-extern sActiveInfoSCRetDefaultTypeInternal _sActiveInfoSCRet_default_instance_;
 PROTOBUF_NAMESPACE_OPEN
+template<> ::ActiveInfoRet* Arena::CreateMaybeMessage<::ActiveInfoRet>(Arena*);
 template<> ::MsgActiveInfo* Arena::CreateMaybeMessage<::MsgActiveInfo>(Arena*);
+template<> ::MsgActiveInfoCSPick* Arena::CreateMaybeMessage<::MsgActiveInfoCSPick>(Arena*);
+template<> ::MsgActiveInfoSCPick* Arena::CreateMaybeMessage<::MsgActiveInfoSCPick>(Arena*);
+template<> ::MsgActiveInfoSCRet* Arena::CreateMaybeMessage<::MsgActiveInfoSCRet>(Arena*);
 template<> ::MsgBindParentData* Arena::CreateMaybeMessage<::MsgBindParentData>(Arena*);
 template<> ::MsgBindPhone* Arena::CreateMaybeMessage<::MsgBindPhone>(Arena*);
 template<> ::MsgCheckInInfo* Arena::CreateMaybeMessage<::MsgCheckInInfo>(Arena*);
@@ -156,8 +166,6 @@ template<> ::MsgTurntableHistoryData* Arena::CreateMaybeMessage<::MsgTurntableHi
 template<> ::MsgUpgradeVIP* Arena::CreateMaybeMessage<::MsgUpgradeVIP>(Arena*);
 template<> ::MsgVIPConfig* Arena::CreateMaybeMessage<::MsgVIPConfig>(Arena*);
 template<> ::MsgVIPInfo* Arena::CreateMaybeMessage<::MsgVIPInfo>(Arena*);
-template<> ::sActiveInfoSC* Arena::CreateMaybeMessage<::sActiveInfoSC>(Arena*);
-template<> ::sActiveInfoSCRet* Arena::CreateMaybeMessage<::sActiveInfoSCRet>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 
 // ===================================================================
@@ -4601,23 +4609,23 @@ class MsgActiveInfo PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
-class sActiveInfoSC PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:sActiveInfoSC) */ {
+class ActiveInfoRet PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:ActiveInfoRet) */ {
  public:
-  inline sActiveInfoSC() : sActiveInfoSC(nullptr) {}
-  virtual ~sActiveInfoSC();
+  inline ActiveInfoRet() : ActiveInfoRet(nullptr) {}
+  virtual ~ActiveInfoRet();
 
-  sActiveInfoSC(const sActiveInfoSC& from);
-  sActiveInfoSC(sActiveInfoSC&& from) noexcept
-    : sActiveInfoSC() {
+  ActiveInfoRet(const ActiveInfoRet& from);
+  ActiveInfoRet(ActiveInfoRet&& from) noexcept
+    : ActiveInfoRet() {
     *this = ::std::move(from);
   }
 
-  inline sActiveInfoSC& operator=(const sActiveInfoSC& from) {
+  inline ActiveInfoRet& operator=(const ActiveInfoRet& from) {
     CopyFrom(from);
     return *this;
   }
-  inline sActiveInfoSC& operator=(sActiveInfoSC&& from) noexcept {
+  inline ActiveInfoRet& operator=(ActiveInfoRet&& from) noexcept {
     if (GetArena() == from.GetArena()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -4635,19 +4643,19 @@ class sActiveInfoSC PROTOBUF_FINAL :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return GetMetadataStatic().reflection;
   }
-  static const sActiveInfoSC& default_instance();
+  static const ActiveInfoRet& default_instance();
 
-  static inline const sActiveInfoSC* internal_default_instance() {
-    return reinterpret_cast<const sActiveInfoSC*>(
-               &_sActiveInfoSC_default_instance_);
+  static inline const ActiveInfoRet* internal_default_instance() {
+    return reinterpret_cast<const ActiveInfoRet*>(
+               &_ActiveInfoRet_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     24;
 
-  friend void swap(sActiveInfoSC& a, sActiveInfoSC& b) {
+  friend void swap(ActiveInfoRet& a, ActiveInfoRet& b) {
     a.Swap(&b);
   }
-  inline void Swap(sActiveInfoSC* other) {
+  inline void Swap(ActiveInfoRet* other) {
     if (other == this) return;
     if (GetArena() == other->GetArena()) {
       InternalSwap(other);
@@ -4655,7 +4663,7 @@ class sActiveInfoSC PROTOBUF_FINAL :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(sActiveInfoSC* other) {
+  void UnsafeArenaSwap(ActiveInfoRet* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetArena() == other->GetArena());
     InternalSwap(other);
@@ -4663,17 +4671,17 @@ class sActiveInfoSC PROTOBUF_FINAL :
 
   // implements Message ----------------------------------------------
 
-  inline sActiveInfoSC* New() const final {
-    return CreateMaybeMessage<sActiveInfoSC>(nullptr);
+  inline ActiveInfoRet* New() const final {
+    return CreateMaybeMessage<ActiveInfoRet>(nullptr);
   }
 
-  sActiveInfoSC* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<sActiveInfoSC>(arena);
+  ActiveInfoRet* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ActiveInfoRet>(arena);
   }
   void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
   void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const sActiveInfoSC& from);
-  void MergeFrom(const sActiveInfoSC& from);
+  void CopyFrom(const ActiveInfoRet& from);
+  void MergeFrom(const ActiveInfoRet& from);
   PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
   bool IsInitialized() const final;
 
@@ -4687,13 +4695,13 @@ class sActiveInfoSC PROTOBUF_FINAL :
   inline void SharedCtor();
   inline void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(sActiveInfoSC* other);
+  void InternalSwap(ActiveInfoRet* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "sActiveInfoSC";
+    return "ActiveInfoRet";
   }
   protected:
-  explicit sActiveInfoSC(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  explicit ActiveInfoRet(::PROTOBUF_NAMESPACE_ID::Arena* arena);
   private:
   static void ArenaDtor(void* object);
   inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -4824,7 +4832,7 @@ class sActiveInfoSC PROTOBUF_FINAL :
   void _internal_set_is_pick(bool value);
   public:
 
-  // @@protoc_insertion_point(class_scope:sActiveInfoSC)
+  // @@protoc_insertion_point(class_scope:ActiveInfoRet)
  private:
   class _Internal;
 
@@ -4847,23 +4855,23 @@ class sActiveInfoSC PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
-class sActiveInfoSCRet PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:sActiveInfoSCRet) */ {
+class MsgActiveInfoSCRet PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgActiveInfoSCRet) */ {
  public:
-  inline sActiveInfoSCRet() : sActiveInfoSCRet(nullptr) {}
-  virtual ~sActiveInfoSCRet();
+  inline MsgActiveInfoSCRet() : MsgActiveInfoSCRet(nullptr) {}
+  virtual ~MsgActiveInfoSCRet();
 
-  sActiveInfoSCRet(const sActiveInfoSCRet& from);
-  sActiveInfoSCRet(sActiveInfoSCRet&& from) noexcept
-    : sActiveInfoSCRet() {
+  MsgActiveInfoSCRet(const MsgActiveInfoSCRet& from);
+  MsgActiveInfoSCRet(MsgActiveInfoSCRet&& from) noexcept
+    : MsgActiveInfoSCRet() {
     *this = ::std::move(from);
   }
 
-  inline sActiveInfoSCRet& operator=(const sActiveInfoSCRet& from) {
+  inline MsgActiveInfoSCRet& operator=(const MsgActiveInfoSCRet& from) {
     CopyFrom(from);
     return *this;
   }
-  inline sActiveInfoSCRet& operator=(sActiveInfoSCRet&& from) noexcept {
+  inline MsgActiveInfoSCRet& operator=(MsgActiveInfoSCRet&& from) noexcept {
     if (GetArena() == from.GetArena()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -4881,19 +4889,19 @@ class sActiveInfoSCRet PROTOBUF_FINAL :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return GetMetadataStatic().reflection;
   }
-  static const sActiveInfoSCRet& default_instance();
+  static const MsgActiveInfoSCRet& default_instance();
 
-  static inline const sActiveInfoSCRet* internal_default_instance() {
-    return reinterpret_cast<const sActiveInfoSCRet*>(
-               &_sActiveInfoSCRet_default_instance_);
+  static inline const MsgActiveInfoSCRet* internal_default_instance() {
+    return reinterpret_cast<const MsgActiveInfoSCRet*>(
+               &_MsgActiveInfoSCRet_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     25;
 
-  friend void swap(sActiveInfoSCRet& a, sActiveInfoSCRet& b) {
+  friend void swap(MsgActiveInfoSCRet& a, MsgActiveInfoSCRet& b) {
     a.Swap(&b);
   }
-  inline void Swap(sActiveInfoSCRet* other) {
+  inline void Swap(MsgActiveInfoSCRet* other) {
     if (other == this) return;
     if (GetArena() == other->GetArena()) {
       InternalSwap(other);
@@ -4901,7 +4909,7 @@ class sActiveInfoSCRet PROTOBUF_FINAL :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(sActiveInfoSCRet* other) {
+  void UnsafeArenaSwap(MsgActiveInfoSCRet* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetArena() == other->GetArena());
     InternalSwap(other);
@@ -4909,17 +4917,17 @@ class sActiveInfoSCRet PROTOBUF_FINAL :
 
   // implements Message ----------------------------------------------
 
-  inline sActiveInfoSCRet* New() const final {
-    return CreateMaybeMessage<sActiveInfoSCRet>(nullptr);
+  inline MsgActiveInfoSCRet* New() const final {
+    return CreateMaybeMessage<MsgActiveInfoSCRet>(nullptr);
   }
 
-  sActiveInfoSCRet* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<sActiveInfoSCRet>(arena);
+  MsgActiveInfoSCRet* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgActiveInfoSCRet>(arena);
   }
   void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
   void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const sActiveInfoSCRet& from);
-  void MergeFrom(const sActiveInfoSCRet& from);
+  void CopyFrom(const MsgActiveInfoSCRet& from);
+  void MergeFrom(const MsgActiveInfoSCRet& from);
   PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
   bool IsInitialized() const final;
 
@@ -4933,13 +4941,13 @@ class sActiveInfoSCRet PROTOBUF_FINAL :
   inline void SharedCtor();
   inline void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(sActiveInfoSCRet* other);
+  void InternalSwap(MsgActiveInfoSCRet* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "sActiveInfoSCRet";
+    return "MsgActiveInfoSCRet";
   }
   protected:
-  explicit sActiveInfoSCRet(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  explicit MsgActiveInfoSCRet(::PROTOBUF_NAMESPACE_ID::Arena* arena);
   private:
   static void ArenaDtor(void* object);
   inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -4961,32 +4969,447 @@ class sActiveInfoSCRet PROTOBUF_FINAL :
   enum : int {
     kVecInfoFieldNumber = 1,
   };
-  // repeated .sActiveInfoSC vec_info = 1;
+  // repeated .ActiveInfoRet vec_info = 1;
   int vec_info_size() const;
   private:
   int _internal_vec_info_size() const;
   public:
   void clear_vec_info();
-  ::sActiveInfoSC* mutable_vec_info(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::sActiveInfoSC >*
+  ::ActiveInfoRet* mutable_vec_info(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ActiveInfoRet >*
       mutable_vec_info();
   private:
-  const ::sActiveInfoSC& _internal_vec_info(int index) const;
-  ::sActiveInfoSC* _internal_add_vec_info();
+  const ::ActiveInfoRet& _internal_vec_info(int index) const;
+  ::ActiveInfoRet* _internal_add_vec_info();
   public:
-  const ::sActiveInfoSC& vec_info(int index) const;
-  ::sActiveInfoSC* add_vec_info();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::sActiveInfoSC >&
+  const ::ActiveInfoRet& vec_info(int index) const;
+  ::ActiveInfoRet* add_vec_info();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ActiveInfoRet >&
       vec_info() const;
 
-  // @@protoc_insertion_point(class_scope:sActiveInfoSCRet)
+  // @@protoc_insertion_point(class_scope:MsgActiveInfoSCRet)
  private:
   class _Internal;
 
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::sActiveInfoSC > vec_info_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ActiveInfoRet > vec_info_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgActiveInfoCSPick PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgActiveInfoCSPick) */ {
+ public:
+  inline MsgActiveInfoCSPick() : MsgActiveInfoCSPick(nullptr) {}
+  virtual ~MsgActiveInfoCSPick();
+
+  MsgActiveInfoCSPick(const MsgActiveInfoCSPick& from);
+  MsgActiveInfoCSPick(MsgActiveInfoCSPick&& from) noexcept
+    : MsgActiveInfoCSPick() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgActiveInfoCSPick& operator=(const MsgActiveInfoCSPick& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgActiveInfoCSPick& operator=(MsgActiveInfoCSPick&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgActiveInfoCSPick& default_instance();
+
+  static inline const MsgActiveInfoCSPick* internal_default_instance() {
+    return reinterpret_cast<const MsgActiveInfoCSPick*>(
+               &_MsgActiveInfoCSPick_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    26;
+
+  friend void swap(MsgActiveInfoCSPick& a, MsgActiveInfoCSPick& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgActiveInfoCSPick* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgActiveInfoCSPick* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgActiveInfoCSPick* New() const final {
+    return CreateMaybeMessage<MsgActiveInfoCSPick>(nullptr);
+  }
+
+  MsgActiveInfoCSPick* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgActiveInfoCSPick>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgActiveInfoCSPick& from);
+  void MergeFrom(const MsgActiveInfoCSPick& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgActiveInfoCSPick* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgActiveInfoCSPick";
+  }
+  protected:
+  explicit MsgActiveInfoCSPick(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kUserIdFieldNumber = 1,
+    kActiveIdFieldNumber = 2,
+    kSubActiveIdFieldNumber = 3,
+  };
+  // int32 user_id = 1;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 active_id = 2;
+  void clear_active_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 active_id() const;
+  void set_active_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_active_id() const;
+  void _internal_set_active_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 sub_active_id = 3;
+  void clear_sub_active_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 sub_active_id() const;
+  void set_sub_active_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_sub_active_id() const;
+  void _internal_set_sub_active_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgActiveInfoCSPick)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 active_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 sub_active_id_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgActiveInfoSCPick PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgActiveInfoSCPick) */ {
+ public:
+  inline MsgActiveInfoSCPick() : MsgActiveInfoSCPick(nullptr) {}
+  virtual ~MsgActiveInfoSCPick();
+
+  MsgActiveInfoSCPick(const MsgActiveInfoSCPick& from);
+  MsgActiveInfoSCPick(MsgActiveInfoSCPick&& from) noexcept
+    : MsgActiveInfoSCPick() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgActiveInfoSCPick& operator=(const MsgActiveInfoSCPick& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgActiveInfoSCPick& operator=(MsgActiveInfoSCPick&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgActiveInfoSCPick& default_instance();
+
+  static inline const MsgActiveInfoSCPick* internal_default_instance() {
+    return reinterpret_cast<const MsgActiveInfoSCPick*>(
+               &_MsgActiveInfoSCPick_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    27;
+
+  friend void swap(MsgActiveInfoSCPick& a, MsgActiveInfoSCPick& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgActiveInfoSCPick* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgActiveInfoSCPick* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgActiveInfoSCPick* New() const final {
+    return CreateMaybeMessage<MsgActiveInfoSCPick>(nullptr);
+  }
+
+  MsgActiveInfoSCPick* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgActiveInfoSCPick>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgActiveInfoSCPick& from);
+  void MergeFrom(const MsgActiveInfoSCPick& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgActiveInfoSCPick* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgActiveInfoSCPick";
+  }
+  protected:
+  explicit MsgActiveInfoSCPick(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kActiveIdFieldNumber = 1,
+    kSubActiveIdFieldNumber = 2,
+    kParam1FieldNumber = 3,
+    kParam2FieldNumber = 4,
+    kParam3FieldNumber = 5,
+    kProgress1FieldNumber = 6,
+    kProgress2FieldNumber = 7,
+    kProgress3FieldNumber = 8,
+    kRewardFieldNumber = 9,
+    kRewardTypeFieldNumber = 10,
+    kIsPickFieldNumber = 11,
+    kResFieldNumber = 12,
+  };
+  // int32 active_id = 1;
+  void clear_active_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 active_id() const;
+  void set_active_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_active_id() const;
+  void _internal_set_active_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 sub_active_id = 2;
+  void clear_sub_active_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 sub_active_id() const;
+  void set_sub_active_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_sub_active_id() const;
+  void _internal_set_sub_active_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 param1 = 3;
+  void clear_param1();
+  ::PROTOBUF_NAMESPACE_ID::int32 param1() const;
+  void set_param1(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_param1() const;
+  void _internal_set_param1(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 param2 = 4;
+  void clear_param2();
+  ::PROTOBUF_NAMESPACE_ID::int32 param2() const;
+  void set_param2(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_param2() const;
+  void _internal_set_param2(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 param3 = 5;
+  void clear_param3();
+  ::PROTOBUF_NAMESPACE_ID::int32 param3() const;
+  void set_param3(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_param3() const;
+  void _internal_set_param3(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 progress1 = 6;
+  void clear_progress1();
+  ::PROTOBUF_NAMESPACE_ID::int32 progress1() const;
+  void set_progress1(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_progress1() const;
+  void _internal_set_progress1(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 progress2 = 7;
+  void clear_progress2();
+  ::PROTOBUF_NAMESPACE_ID::int32 progress2() const;
+  void set_progress2(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_progress2() const;
+  void _internal_set_progress2(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 progress3 = 8;
+  void clear_progress3();
+  ::PROTOBUF_NAMESPACE_ID::int32 progress3() const;
+  void set_progress3(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_progress3() const;
+  void _internal_set_progress3(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 reward = 9;
+  void clear_reward();
+  ::PROTOBUF_NAMESPACE_ID::int32 reward() const;
+  void set_reward(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_reward() const;
+  void _internal_set_reward(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 reward_type = 10;
+  void clear_reward_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 reward_type() const;
+  void set_reward_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_reward_type() const;
+  void _internal_set_reward_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 is_pick = 11;
+  void clear_is_pick();
+  ::PROTOBUF_NAMESPACE_ID::int32 is_pick() const;
+  void set_is_pick(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_is_pick() const;
+  void _internal_set_is_pick(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 res = 12;
+  void clear_res();
+  ::PROTOBUF_NAMESPACE_ID::int32 res() const;
+  void set_res(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_res() const;
+  void _internal_set_res(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgActiveInfoSCPick)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 active_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 sub_active_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 param1_;
+  ::PROTOBUF_NAMESPACE_ID::int32 param2_;
+  ::PROTOBUF_NAMESPACE_ID::int32 param3_;
+  ::PROTOBUF_NAMESPACE_ID::int32 progress1_;
+  ::PROTOBUF_NAMESPACE_ID::int32 progress2_;
+  ::PROTOBUF_NAMESPACE_ID::int32 progress3_;
+  ::PROTOBUF_NAMESPACE_ID::int32 reward_;
+  ::PROTOBUF_NAMESPACE_ID::int32 reward_type_;
+  ::PROTOBUF_NAMESPACE_ID::int32 is_pick_;
+  ::PROTOBUF_NAMESPACE_ID::int32 res_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -8468,274 +8891,586 @@ inline void MsgActiveInfo::set_active_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
 
 // -------------------------------------------------------------------
 
-// sActiveInfoSC
+// ActiveInfoRet
 
 // int32 active_id = 1;
-inline void sActiveInfoSC::clear_active_id() {
+inline void ActiveInfoRet::clear_active_id() {
   active_id_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 sActiveInfoSC::_internal_active_id() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 ActiveInfoRet::_internal_active_id() const {
   return active_id_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 sActiveInfoSC::active_id() const {
-  // @@protoc_insertion_point(field_get:sActiveInfoSC.active_id)
+inline ::PROTOBUF_NAMESPACE_ID::int32 ActiveInfoRet::active_id() const {
+  // @@protoc_insertion_point(field_get:ActiveInfoRet.active_id)
   return _internal_active_id();
 }
-inline void sActiveInfoSC::_internal_set_active_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void ActiveInfoRet::_internal_set_active_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   active_id_ = value;
 }
-inline void sActiveInfoSC::set_active_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void ActiveInfoRet::set_active_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_active_id(value);
-  // @@protoc_insertion_point(field_set:sActiveInfoSC.active_id)
+  // @@protoc_insertion_point(field_set:ActiveInfoRet.active_id)
 }
 
 // int32 sub_active_id = 2;
-inline void sActiveInfoSC::clear_sub_active_id() {
+inline void ActiveInfoRet::clear_sub_active_id() {
   sub_active_id_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 sActiveInfoSC::_internal_sub_active_id() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 ActiveInfoRet::_internal_sub_active_id() const {
   return sub_active_id_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 sActiveInfoSC::sub_active_id() const {
-  // @@protoc_insertion_point(field_get:sActiveInfoSC.sub_active_id)
+inline ::PROTOBUF_NAMESPACE_ID::int32 ActiveInfoRet::sub_active_id() const {
+  // @@protoc_insertion_point(field_get:ActiveInfoRet.sub_active_id)
   return _internal_sub_active_id();
 }
-inline void sActiveInfoSC::_internal_set_sub_active_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void ActiveInfoRet::_internal_set_sub_active_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   sub_active_id_ = value;
 }
-inline void sActiveInfoSC::set_sub_active_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void ActiveInfoRet::set_sub_active_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_sub_active_id(value);
-  // @@protoc_insertion_point(field_set:sActiveInfoSC.sub_active_id)
+  // @@protoc_insertion_point(field_set:ActiveInfoRet.sub_active_id)
 }
 
 // int32 param1 = 3;
-inline void sActiveInfoSC::clear_param1() {
+inline void ActiveInfoRet::clear_param1() {
   param1_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 sActiveInfoSC::_internal_param1() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 ActiveInfoRet::_internal_param1() const {
   return param1_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 sActiveInfoSC::param1() const {
-  // @@protoc_insertion_point(field_get:sActiveInfoSC.param1)
+inline ::PROTOBUF_NAMESPACE_ID::int32 ActiveInfoRet::param1() const {
+  // @@protoc_insertion_point(field_get:ActiveInfoRet.param1)
   return _internal_param1();
 }
-inline void sActiveInfoSC::_internal_set_param1(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void ActiveInfoRet::_internal_set_param1(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   param1_ = value;
 }
-inline void sActiveInfoSC::set_param1(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void ActiveInfoRet::set_param1(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_param1(value);
-  // @@protoc_insertion_point(field_set:sActiveInfoSC.param1)
+  // @@protoc_insertion_point(field_set:ActiveInfoRet.param1)
 }
 
 // int32 param2 = 4;
-inline void sActiveInfoSC::clear_param2() {
+inline void ActiveInfoRet::clear_param2() {
   param2_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 sActiveInfoSC::_internal_param2() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 ActiveInfoRet::_internal_param2() const {
   return param2_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 sActiveInfoSC::param2() const {
-  // @@protoc_insertion_point(field_get:sActiveInfoSC.param2)
+inline ::PROTOBUF_NAMESPACE_ID::int32 ActiveInfoRet::param2() const {
+  // @@protoc_insertion_point(field_get:ActiveInfoRet.param2)
   return _internal_param2();
 }
-inline void sActiveInfoSC::_internal_set_param2(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void ActiveInfoRet::_internal_set_param2(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   param2_ = value;
 }
-inline void sActiveInfoSC::set_param2(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void ActiveInfoRet::set_param2(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_param2(value);
-  // @@protoc_insertion_point(field_set:sActiveInfoSC.param2)
+  // @@protoc_insertion_point(field_set:ActiveInfoRet.param2)
 }
 
 // int32 param3 = 5;
-inline void sActiveInfoSC::clear_param3() {
+inline void ActiveInfoRet::clear_param3() {
   param3_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 sActiveInfoSC::_internal_param3() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 ActiveInfoRet::_internal_param3() const {
   return param3_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 sActiveInfoSC::param3() const {
-  // @@protoc_insertion_point(field_get:sActiveInfoSC.param3)
+inline ::PROTOBUF_NAMESPACE_ID::int32 ActiveInfoRet::param3() const {
+  // @@protoc_insertion_point(field_get:ActiveInfoRet.param3)
   return _internal_param3();
 }
-inline void sActiveInfoSC::_internal_set_param3(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void ActiveInfoRet::_internal_set_param3(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   param3_ = value;
 }
-inline void sActiveInfoSC::set_param3(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void ActiveInfoRet::set_param3(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_param3(value);
-  // @@protoc_insertion_point(field_set:sActiveInfoSC.param3)
+  // @@protoc_insertion_point(field_set:ActiveInfoRet.param3)
 }
 
 // int32 progress1 = 6;
-inline void sActiveInfoSC::clear_progress1() {
+inline void ActiveInfoRet::clear_progress1() {
   progress1_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 sActiveInfoSC::_internal_progress1() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 ActiveInfoRet::_internal_progress1() const {
   return progress1_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 sActiveInfoSC::progress1() const {
-  // @@protoc_insertion_point(field_get:sActiveInfoSC.progress1)
+inline ::PROTOBUF_NAMESPACE_ID::int32 ActiveInfoRet::progress1() const {
+  // @@protoc_insertion_point(field_get:ActiveInfoRet.progress1)
   return _internal_progress1();
 }
-inline void sActiveInfoSC::_internal_set_progress1(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void ActiveInfoRet::_internal_set_progress1(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   progress1_ = value;
 }
-inline void sActiveInfoSC::set_progress1(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void ActiveInfoRet::set_progress1(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_progress1(value);
-  // @@protoc_insertion_point(field_set:sActiveInfoSC.progress1)
+  // @@protoc_insertion_point(field_set:ActiveInfoRet.progress1)
 }
 
 // int32 progress2 = 7;
-inline void sActiveInfoSC::clear_progress2() {
+inline void ActiveInfoRet::clear_progress2() {
   progress2_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 sActiveInfoSC::_internal_progress2() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 ActiveInfoRet::_internal_progress2() const {
   return progress2_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 sActiveInfoSC::progress2() const {
-  // @@protoc_insertion_point(field_get:sActiveInfoSC.progress2)
+inline ::PROTOBUF_NAMESPACE_ID::int32 ActiveInfoRet::progress2() const {
+  // @@protoc_insertion_point(field_get:ActiveInfoRet.progress2)
   return _internal_progress2();
 }
-inline void sActiveInfoSC::_internal_set_progress2(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void ActiveInfoRet::_internal_set_progress2(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   progress2_ = value;
 }
-inline void sActiveInfoSC::set_progress2(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void ActiveInfoRet::set_progress2(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_progress2(value);
-  // @@protoc_insertion_point(field_set:sActiveInfoSC.progress2)
+  // @@protoc_insertion_point(field_set:ActiveInfoRet.progress2)
 }
 
 // int32 progress3 = 8;
-inline void sActiveInfoSC::clear_progress3() {
+inline void ActiveInfoRet::clear_progress3() {
   progress3_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 sActiveInfoSC::_internal_progress3() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 ActiveInfoRet::_internal_progress3() const {
   return progress3_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 sActiveInfoSC::progress3() const {
-  // @@protoc_insertion_point(field_get:sActiveInfoSC.progress3)
+inline ::PROTOBUF_NAMESPACE_ID::int32 ActiveInfoRet::progress3() const {
+  // @@protoc_insertion_point(field_get:ActiveInfoRet.progress3)
   return _internal_progress3();
 }
-inline void sActiveInfoSC::_internal_set_progress3(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void ActiveInfoRet::_internal_set_progress3(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   progress3_ = value;
 }
-inline void sActiveInfoSC::set_progress3(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void ActiveInfoRet::set_progress3(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_progress3(value);
-  // @@protoc_insertion_point(field_set:sActiveInfoSC.progress3)
+  // @@protoc_insertion_point(field_set:ActiveInfoRet.progress3)
 }
 
 // int32 reward = 9;
-inline void sActiveInfoSC::clear_reward() {
+inline void ActiveInfoRet::clear_reward() {
   reward_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 sActiveInfoSC::_internal_reward() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 ActiveInfoRet::_internal_reward() const {
   return reward_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 sActiveInfoSC::reward() const {
-  // @@protoc_insertion_point(field_get:sActiveInfoSC.reward)
+inline ::PROTOBUF_NAMESPACE_ID::int32 ActiveInfoRet::reward() const {
+  // @@protoc_insertion_point(field_get:ActiveInfoRet.reward)
   return _internal_reward();
 }
-inline void sActiveInfoSC::_internal_set_reward(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void ActiveInfoRet::_internal_set_reward(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   reward_ = value;
 }
-inline void sActiveInfoSC::set_reward(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void ActiveInfoRet::set_reward(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_reward(value);
-  // @@protoc_insertion_point(field_set:sActiveInfoSC.reward)
+  // @@protoc_insertion_point(field_set:ActiveInfoRet.reward)
 }
 
 // int32 reward_type = 10;
-inline void sActiveInfoSC::clear_reward_type() {
+inline void ActiveInfoRet::clear_reward_type() {
   reward_type_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 sActiveInfoSC::_internal_reward_type() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 ActiveInfoRet::_internal_reward_type() const {
   return reward_type_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 sActiveInfoSC::reward_type() const {
-  // @@protoc_insertion_point(field_get:sActiveInfoSC.reward_type)
+inline ::PROTOBUF_NAMESPACE_ID::int32 ActiveInfoRet::reward_type() const {
+  // @@protoc_insertion_point(field_get:ActiveInfoRet.reward_type)
   return _internal_reward_type();
 }
-inline void sActiveInfoSC::_internal_set_reward_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void ActiveInfoRet::_internal_set_reward_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   reward_type_ = value;
 }
-inline void sActiveInfoSC::set_reward_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void ActiveInfoRet::set_reward_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_reward_type(value);
-  // @@protoc_insertion_point(field_set:sActiveInfoSC.reward_type)
+  // @@protoc_insertion_point(field_set:ActiveInfoRet.reward_type)
 }
 
 // bool is_pick = 11;
-inline void sActiveInfoSC::clear_is_pick() {
+inline void ActiveInfoRet::clear_is_pick() {
   is_pick_ = false;
 }
-inline bool sActiveInfoSC::_internal_is_pick() const {
+inline bool ActiveInfoRet::_internal_is_pick() const {
   return is_pick_;
 }
-inline bool sActiveInfoSC::is_pick() const {
-  // @@protoc_insertion_point(field_get:sActiveInfoSC.is_pick)
+inline bool ActiveInfoRet::is_pick() const {
+  // @@protoc_insertion_point(field_get:ActiveInfoRet.is_pick)
   return _internal_is_pick();
 }
-inline void sActiveInfoSC::_internal_set_is_pick(bool value) {
+inline void ActiveInfoRet::_internal_set_is_pick(bool value) {
   
   is_pick_ = value;
 }
-inline void sActiveInfoSC::set_is_pick(bool value) {
+inline void ActiveInfoRet::set_is_pick(bool value) {
   _internal_set_is_pick(value);
-  // @@protoc_insertion_point(field_set:sActiveInfoSC.is_pick)
+  // @@protoc_insertion_point(field_set:ActiveInfoRet.is_pick)
 }
 
 // -------------------------------------------------------------------
 
-// sActiveInfoSCRet
+// MsgActiveInfoSCRet
 
-// repeated .sActiveInfoSC vec_info = 1;
-inline int sActiveInfoSCRet::_internal_vec_info_size() const {
+// repeated .ActiveInfoRet vec_info = 1;
+inline int MsgActiveInfoSCRet::_internal_vec_info_size() const {
   return vec_info_.size();
 }
-inline int sActiveInfoSCRet::vec_info_size() const {
+inline int MsgActiveInfoSCRet::vec_info_size() const {
   return _internal_vec_info_size();
 }
-inline void sActiveInfoSCRet::clear_vec_info() {
+inline void MsgActiveInfoSCRet::clear_vec_info() {
   vec_info_.Clear();
 }
-inline ::sActiveInfoSC* sActiveInfoSCRet::mutable_vec_info(int index) {
-  // @@protoc_insertion_point(field_mutable:sActiveInfoSCRet.vec_info)
+inline ::ActiveInfoRet* MsgActiveInfoSCRet::mutable_vec_info(int index) {
+  // @@protoc_insertion_point(field_mutable:MsgActiveInfoSCRet.vec_info)
   return vec_info_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::sActiveInfoSC >*
-sActiveInfoSCRet::mutable_vec_info() {
-  // @@protoc_insertion_point(field_mutable_list:sActiveInfoSCRet.vec_info)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ActiveInfoRet >*
+MsgActiveInfoSCRet::mutable_vec_info() {
+  // @@protoc_insertion_point(field_mutable_list:MsgActiveInfoSCRet.vec_info)
   return &vec_info_;
 }
-inline const ::sActiveInfoSC& sActiveInfoSCRet::_internal_vec_info(int index) const {
+inline const ::ActiveInfoRet& MsgActiveInfoSCRet::_internal_vec_info(int index) const {
   return vec_info_.Get(index);
 }
-inline const ::sActiveInfoSC& sActiveInfoSCRet::vec_info(int index) const {
-  // @@protoc_insertion_point(field_get:sActiveInfoSCRet.vec_info)
+inline const ::ActiveInfoRet& MsgActiveInfoSCRet::vec_info(int index) const {
+  // @@protoc_insertion_point(field_get:MsgActiveInfoSCRet.vec_info)
   return _internal_vec_info(index);
 }
-inline ::sActiveInfoSC* sActiveInfoSCRet::_internal_add_vec_info() {
+inline ::ActiveInfoRet* MsgActiveInfoSCRet::_internal_add_vec_info() {
   return vec_info_.Add();
 }
-inline ::sActiveInfoSC* sActiveInfoSCRet::add_vec_info() {
-  // @@protoc_insertion_point(field_add:sActiveInfoSCRet.vec_info)
+inline ::ActiveInfoRet* MsgActiveInfoSCRet::add_vec_info() {
+  // @@protoc_insertion_point(field_add:MsgActiveInfoSCRet.vec_info)
   return _internal_add_vec_info();
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::sActiveInfoSC >&
-sActiveInfoSCRet::vec_info() const {
-  // @@protoc_insertion_point(field_list:sActiveInfoSCRet.vec_info)
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ActiveInfoRet >&
+MsgActiveInfoSCRet::vec_info() const {
+  // @@protoc_insertion_point(field_list:MsgActiveInfoSCRet.vec_info)
   return vec_info_;
+}
+
+// -------------------------------------------------------------------
+
+// MsgActiveInfoCSPick
+
+// int32 user_id = 1;
+inline void MsgActiveInfoCSPick::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgActiveInfoCSPick::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgActiveInfoCSPick::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgActiveInfoCSPick.user_id)
+  return _internal_user_id();
+}
+inline void MsgActiveInfoCSPick::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgActiveInfoCSPick::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgActiveInfoCSPick.user_id)
+}
+
+// int32 active_id = 2;
+inline void MsgActiveInfoCSPick::clear_active_id() {
+  active_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgActiveInfoCSPick::_internal_active_id() const {
+  return active_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgActiveInfoCSPick::active_id() const {
+  // @@protoc_insertion_point(field_get:MsgActiveInfoCSPick.active_id)
+  return _internal_active_id();
+}
+inline void MsgActiveInfoCSPick::_internal_set_active_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  active_id_ = value;
+}
+inline void MsgActiveInfoCSPick::set_active_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_active_id(value);
+  // @@protoc_insertion_point(field_set:MsgActiveInfoCSPick.active_id)
+}
+
+// int32 sub_active_id = 3;
+inline void MsgActiveInfoCSPick::clear_sub_active_id() {
+  sub_active_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgActiveInfoCSPick::_internal_sub_active_id() const {
+  return sub_active_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgActiveInfoCSPick::sub_active_id() const {
+  // @@protoc_insertion_point(field_get:MsgActiveInfoCSPick.sub_active_id)
+  return _internal_sub_active_id();
+}
+inline void MsgActiveInfoCSPick::_internal_set_sub_active_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  sub_active_id_ = value;
+}
+inline void MsgActiveInfoCSPick::set_sub_active_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_sub_active_id(value);
+  // @@protoc_insertion_point(field_set:MsgActiveInfoCSPick.sub_active_id)
+}
+
+// -------------------------------------------------------------------
+
+// MsgActiveInfoSCPick
+
+// int32 active_id = 1;
+inline void MsgActiveInfoSCPick::clear_active_id() {
+  active_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgActiveInfoSCPick::_internal_active_id() const {
+  return active_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgActiveInfoSCPick::active_id() const {
+  // @@protoc_insertion_point(field_get:MsgActiveInfoSCPick.active_id)
+  return _internal_active_id();
+}
+inline void MsgActiveInfoSCPick::_internal_set_active_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  active_id_ = value;
+}
+inline void MsgActiveInfoSCPick::set_active_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_active_id(value);
+  // @@protoc_insertion_point(field_set:MsgActiveInfoSCPick.active_id)
+}
+
+// int32 sub_active_id = 2;
+inline void MsgActiveInfoSCPick::clear_sub_active_id() {
+  sub_active_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgActiveInfoSCPick::_internal_sub_active_id() const {
+  return sub_active_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgActiveInfoSCPick::sub_active_id() const {
+  // @@protoc_insertion_point(field_get:MsgActiveInfoSCPick.sub_active_id)
+  return _internal_sub_active_id();
+}
+inline void MsgActiveInfoSCPick::_internal_set_sub_active_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  sub_active_id_ = value;
+}
+inline void MsgActiveInfoSCPick::set_sub_active_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_sub_active_id(value);
+  // @@protoc_insertion_point(field_set:MsgActiveInfoSCPick.sub_active_id)
+}
+
+// int32 param1 = 3;
+inline void MsgActiveInfoSCPick::clear_param1() {
+  param1_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgActiveInfoSCPick::_internal_param1() const {
+  return param1_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgActiveInfoSCPick::param1() const {
+  // @@protoc_insertion_point(field_get:MsgActiveInfoSCPick.param1)
+  return _internal_param1();
+}
+inline void MsgActiveInfoSCPick::_internal_set_param1(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  param1_ = value;
+}
+inline void MsgActiveInfoSCPick::set_param1(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_param1(value);
+  // @@protoc_insertion_point(field_set:MsgActiveInfoSCPick.param1)
+}
+
+// int32 param2 = 4;
+inline void MsgActiveInfoSCPick::clear_param2() {
+  param2_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgActiveInfoSCPick::_internal_param2() const {
+  return param2_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgActiveInfoSCPick::param2() const {
+  // @@protoc_insertion_point(field_get:MsgActiveInfoSCPick.param2)
+  return _internal_param2();
+}
+inline void MsgActiveInfoSCPick::_internal_set_param2(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  param2_ = value;
+}
+inline void MsgActiveInfoSCPick::set_param2(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_param2(value);
+  // @@protoc_insertion_point(field_set:MsgActiveInfoSCPick.param2)
+}
+
+// int32 param3 = 5;
+inline void MsgActiveInfoSCPick::clear_param3() {
+  param3_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgActiveInfoSCPick::_internal_param3() const {
+  return param3_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgActiveInfoSCPick::param3() const {
+  // @@protoc_insertion_point(field_get:MsgActiveInfoSCPick.param3)
+  return _internal_param3();
+}
+inline void MsgActiveInfoSCPick::_internal_set_param3(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  param3_ = value;
+}
+inline void MsgActiveInfoSCPick::set_param3(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_param3(value);
+  // @@protoc_insertion_point(field_set:MsgActiveInfoSCPick.param3)
+}
+
+// int32 progress1 = 6;
+inline void MsgActiveInfoSCPick::clear_progress1() {
+  progress1_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgActiveInfoSCPick::_internal_progress1() const {
+  return progress1_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgActiveInfoSCPick::progress1() const {
+  // @@protoc_insertion_point(field_get:MsgActiveInfoSCPick.progress1)
+  return _internal_progress1();
+}
+inline void MsgActiveInfoSCPick::_internal_set_progress1(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  progress1_ = value;
+}
+inline void MsgActiveInfoSCPick::set_progress1(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_progress1(value);
+  // @@protoc_insertion_point(field_set:MsgActiveInfoSCPick.progress1)
+}
+
+// int32 progress2 = 7;
+inline void MsgActiveInfoSCPick::clear_progress2() {
+  progress2_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgActiveInfoSCPick::_internal_progress2() const {
+  return progress2_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgActiveInfoSCPick::progress2() const {
+  // @@protoc_insertion_point(field_get:MsgActiveInfoSCPick.progress2)
+  return _internal_progress2();
+}
+inline void MsgActiveInfoSCPick::_internal_set_progress2(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  progress2_ = value;
+}
+inline void MsgActiveInfoSCPick::set_progress2(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_progress2(value);
+  // @@protoc_insertion_point(field_set:MsgActiveInfoSCPick.progress2)
+}
+
+// int32 progress3 = 8;
+inline void MsgActiveInfoSCPick::clear_progress3() {
+  progress3_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgActiveInfoSCPick::_internal_progress3() const {
+  return progress3_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgActiveInfoSCPick::progress3() const {
+  // @@protoc_insertion_point(field_get:MsgActiveInfoSCPick.progress3)
+  return _internal_progress3();
+}
+inline void MsgActiveInfoSCPick::_internal_set_progress3(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  progress3_ = value;
+}
+inline void MsgActiveInfoSCPick::set_progress3(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_progress3(value);
+  // @@protoc_insertion_point(field_set:MsgActiveInfoSCPick.progress3)
+}
+
+// int32 reward = 9;
+inline void MsgActiveInfoSCPick::clear_reward() {
+  reward_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgActiveInfoSCPick::_internal_reward() const {
+  return reward_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgActiveInfoSCPick::reward() const {
+  // @@protoc_insertion_point(field_get:MsgActiveInfoSCPick.reward)
+  return _internal_reward();
+}
+inline void MsgActiveInfoSCPick::_internal_set_reward(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  reward_ = value;
+}
+inline void MsgActiveInfoSCPick::set_reward(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_reward(value);
+  // @@protoc_insertion_point(field_set:MsgActiveInfoSCPick.reward)
+}
+
+// int32 reward_type = 10;
+inline void MsgActiveInfoSCPick::clear_reward_type() {
+  reward_type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgActiveInfoSCPick::_internal_reward_type() const {
+  return reward_type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgActiveInfoSCPick::reward_type() const {
+  // @@protoc_insertion_point(field_get:MsgActiveInfoSCPick.reward_type)
+  return _internal_reward_type();
+}
+inline void MsgActiveInfoSCPick::_internal_set_reward_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  reward_type_ = value;
+}
+inline void MsgActiveInfoSCPick::set_reward_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_reward_type(value);
+  // @@protoc_insertion_point(field_set:MsgActiveInfoSCPick.reward_type)
+}
+
+// int32 is_pick = 11;
+inline void MsgActiveInfoSCPick::clear_is_pick() {
+  is_pick_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgActiveInfoSCPick::_internal_is_pick() const {
+  return is_pick_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgActiveInfoSCPick::is_pick() const {
+  // @@protoc_insertion_point(field_get:MsgActiveInfoSCPick.is_pick)
+  return _internal_is_pick();
+}
+inline void MsgActiveInfoSCPick::_internal_set_is_pick(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  is_pick_ = value;
+}
+inline void MsgActiveInfoSCPick::set_is_pick(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_is_pick(value);
+  // @@protoc_insertion_point(field_set:MsgActiveInfoSCPick.is_pick)
+}
+
+// int32 res = 12;
+inline void MsgActiveInfoSCPick::clear_res() {
+  res_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgActiveInfoSCPick::_internal_res() const {
+  return res_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgActiveInfoSCPick::res() const {
+  // @@protoc_insertion_point(field_get:MsgActiveInfoSCPick.res)
+  return _internal_res();
+}
+inline void MsgActiveInfoSCPick::_internal_set_res(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  res_ = value;
+}
+inline void MsgActiveInfoSCPick::set_res(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_res(value);
+  // @@protoc_insertion_point(field_set:MsgActiveInfoSCPick.res)
 }
 
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

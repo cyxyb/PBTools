@@ -27,7 +27,7 @@ public static partial class CommonCmdReflection {
           "SW5mbxDpBxIUCg9FTXNnSURNYWluX0dhbWUQ0Q8SFwoSRU1zZ0lETWFpbl9T",
           "dWJHYW1lENIPKmsKCEVSZXNDb2RlEhEKDUVSZXNDb2RlX05VTEwQABIYChRF",
           "UmVzQ29kZV9JbnZpbGlkTWFpbBABEhkKFUVSZXNDb2RlX01haWxSZWNhbGxl",
-          "ZBACEhcKE0VSZXNDb2RlX01haWxQaWNrZWQQAyrNEQoLRU1zZ0lETG9naW4S",
+          "ZBACEhcKE0VSZXNDb2RlX01haWxQaWNrZWQQAyqREgoLRU1zZ0lETG9naW4S",
           "EwoPTXNnSURMb2dpbl9OdWxsEAASFAoQTXNnSURMb2dpbl9Mb2dpbhABEhgK",
           "FE1zZ0lETG9naW5fTG9naW5SZXNwEAISHQoZTXNnSURMb2dpbl9Nb2RpZnlO",
           "aWNrTmFtZRADEiEKHU1zZ0lETG9naW5fTW9kaWZ5Tmlja05hbWVSZXNwEAQS",
@@ -77,21 +77,23 @@ public static partial class CommonCmdReflection {
           "Eh4KGk1zZ0lETG9naW5fUXVlcnlQbGF5ZXJJbmZvEEESIgoeTXNnSURMb2dp",
           "bl9RdWVyeVBsYXllckluZm9SZXNwEEISHwobTXNnSURBY3RpdmVfUXVlcnlB",
           "Y3RpdmVJbmZvEEMSIwofTXNnSURBY3RpdmVfUXVlcnlBY3RpdmVJbmZvUmVz",
-          "cBBEEh0KGU1zZ0lEWk1EX0Jyb2FkY2FzdFRpcFJlc3AQRSruBAoKRU1zZ0lE",
-          "R2FtZRISCg5Nc2dJREdhbWVfTnVsbBAAEhQKD01zZ0lER2FtZV9Mb2dpbhDp",
-          "BxIYChNNc2dJREdhbWVfTG9naW5SZXNwEOoHEh4KGU1zZ0lER2FtZV9TcXVl",
-          "ZXplU2VhdFJlc3AQ6wcSFQoQTXNnSURHYW1lX0xvZ291dBDsBxIaChVNc2dJ",
-          "REdhbWVfQXV0b1NpdERvd24Q7QcSGgoVTXNnSURHYW1lX1NpdERvd25SZXNw",
-          "EO4HEiEKHE1zZ0lER2FtZV9TeW5jUGxheWVySW5mb1Jlc3AQ7wcSJgohTXNn",
-          "SURHYW1lX05vdGlmeVBsYXllclN0YW5kVXBSZXNwEPAHEiMKHk1zZ0lER2Ft",
-          "ZV9TeW5jUGxheWVyc1Njb3JlUmVzcBDxBxIcChdNc2dJREdhbWVfU2VuZEdh",
-          "bWVTZW5jZRDyBxIgChtNc2dJREdhbWVfU2VuZEdhbWVTZW5jZVJlc3AQ8wcS",
-          "IAobTXNnSURHYW1lX05vdGlmeU1lc3NhZ2VSZXNwEPQHEhkKFE1zZ0lER2Ft",
-          "ZV9DcmVhdGVSb29tEPUHEhcKEk1zZ0lER2FtZV9Kb2luUm9vbRD2BxIaChVN",
-          "c2dJREdhbWVfUXVlcnlSZWNvcmQQ9wcSIwoeTXNnSURHYW1lX1F1ZXJ5Um91",
-          "bmRSZWNvcmRSZXNwEPgHEiEKHE1zZ0lER2FtZV9RdWVyeURheVJlY29yZFJl",
-          "c3AQ+QcSGwoWTXNnSURHYW1lX0FkZE9uZVJlY29yZBD6BxImCiFNc2dJREdh",
-          "bWVfTm90aWZ5UGxheWVyT2ZmbGluZVJlc3AQ+wdiBnByb3RvMw=="));
+          "cBBEEh0KGU1zZ0lEWk1EX0Jyb2FkY2FzdFRpcFJlc3AQRRIeChpNc2dJREFj",
+          "dGl2ZV9QaWNrQWN0aXZlSW5mbxBGEiIKHk1zZ0lEQWN0aXZlX1BpY2tBY3Rp",
+          "dmVJbmZvUmVzcBBHKu4ECgpFTXNnSURHYW1lEhIKDk1zZ0lER2FtZV9OdWxs",
+          "EAASFAoPTXNnSURHYW1lX0xvZ2luEOkHEhgKE01zZ0lER2FtZV9Mb2dpblJl",
+          "c3AQ6gcSHgoZTXNnSURHYW1lX1NxdWVlemVTZWF0UmVzcBDrBxIVChBNc2dJ",
+          "REdhbWVfTG9nb3V0EOwHEhoKFU1zZ0lER2FtZV9BdXRvU2l0RG93bhDtBxIa",
+          "ChVNc2dJREdhbWVfU2l0RG93blJlc3AQ7gcSIQocTXNnSURHYW1lX1N5bmNQ",
+          "bGF5ZXJJbmZvUmVzcBDvBxImCiFNc2dJREdhbWVfTm90aWZ5UGxheWVyU3Rh",
+          "bmRVcFJlc3AQ8AcSIwoeTXNnSURHYW1lX1N5bmNQbGF5ZXJzU2NvcmVSZXNw",
+          "EPEHEhwKF01zZ0lER2FtZV9TZW5kR2FtZVNlbmNlEPIHEiAKG01zZ0lER2Ft",
+          "ZV9TZW5kR2FtZVNlbmNlUmVzcBDzBxIgChtNc2dJREdhbWVfTm90aWZ5TWVz",
+          "c2FnZVJlc3AQ9AcSGQoUTXNnSURHYW1lX0NyZWF0ZVJvb20Q9QcSFwoSTXNn",
+          "SURHYW1lX0pvaW5Sb29tEPYHEhoKFU1zZ0lER2FtZV9RdWVyeVJlY29yZBD3",
+          "BxIjCh5Nc2dJREdhbWVfUXVlcnlSb3VuZFJlY29yZFJlc3AQ+AcSIQocTXNn",
+          "SURHYW1lX1F1ZXJ5RGF5UmVjb3JkUmVzcBD5BxIbChZNc2dJREdhbWVfQWRk",
+          "T25lUmVjb3JkEPoHEiYKIU1zZ0lER2FtZV9Ob3RpZnlQbGF5ZXJPZmZsaW5l",
+          "UmVzcBD7B2IGcHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::EMsgIDMain), typeof(global::EResCode), typeof(global::EMsgIDLogin), typeof(global::EMsgIDGame), }, null, null));
@@ -410,6 +412,14 @@ public enum EMsgIDLogin {
   ///跑马灯广播(MsgBroadcastTip)
   /// </summary>
   [pbr::OriginalName("MsgIDZMD_BroadcastTipResp")] MsgIdzmdBroadcastTipResp = 69,
+  /// <summary>
+  ///领取活动奖励(MsgActiveInfoCSPick)
+  /// </summary>
+  [pbr::OriginalName("MsgIDActive_PickActiveInfo")] MsgIdactivePickActiveInfo = 70,
+  /// <summary>
+  ///领取活动奖励返回(MsgActiveInfoSCPick)
+  /// </summary>
+  [pbr::OriginalName("MsgIDActive_PickActiveInfoResp")] MsgIdactivePickActiveInfoResp = 71,
 }
 
 public enum EMsgIDGame {

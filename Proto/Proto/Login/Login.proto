@@ -225,9 +225,9 @@ message MsgActiveInfo
 	int32		user_id				= 1;	//userid
 	int32		active_id			= 2;	//activeid
 }
-message sActiveInfoSC
+message ActiveInfoRet
 {
-	int32	active_id 		= 1;//活动id: 1：充值返利 2：打码返利 3：在线奖励 4：每日随机活动 5：每日反馈 6：新手任务
+	int32	active_id 		= 1;//活动id: 5：每日反馈 6：新手任务邀请码 7：新手任务累充 8：新手任务游戏次数 9：在线奖励
 	int32	sub_active_id 	= 2;//子活动id
 	int32	param1 			= 3;//完成条件
 	int32	param2 			= 4;
@@ -239,7 +239,29 @@ message sActiveInfoSC
 	int32	reward_type 	= 10;//活动奖励类型2转盘奖励1金币
 	bool 	is_pick 		= 11;//活动奖励是否领取
 };
-message sActiveInfoSCRet
+message MsgActiveInfoSCRet
 {
-	repeated sActiveInfoSC vec_info = 1;
+	repeated ActiveInfoRet vec_info = 1;
+};
+
+message MsgActiveInfoCSPick
+{
+	int32 user_id = 1; //玩家id
+	int32 active_id = 2; //活动id: 3在线奖励
+	int32 sub_active_id = 3;//活动id:5：每日反馈 6：新手任务邀请码 7：新手任务累充 8：新手任务游戏次数 9：在线奖励
+};
+message MsgActiveInfoSCPick
+{
+	int32 active_id = 1;////活动id: 5：每日反馈 6：新手任务邀请码 7：新手任务累充 8：新手任务游戏次数 9：在线奖励
+	int32 sub_active_id = 2;//子活动id
+	int32 param1 = 3;//完成条件
+	int32 param2 = 4;
+	int32 param3 = 5;
+	int32 progress1 = 6;//完成度 负数为完成 正数为未完成
+	int32 progress2 = 7;
+	int32 progress3 = 8;
+	int32 reward = 9;//活动奖励
+	int32 reward_type = 10;//活动奖励类型2转盘奖励1金币
+	int32 is_pick = 11;//活动奖励是否领取
+	int32 res = 12;//活动奖励是否领取成功
 };
