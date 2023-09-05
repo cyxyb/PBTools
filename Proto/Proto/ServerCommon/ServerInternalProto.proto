@@ -316,3 +316,44 @@ message MsgDBUpdateJackpot
 	int64		jackpot						= 2;	//奖池
 	int64		fake_jackpot				= 3;	//假奖池
 }
+
+//银行
+//设置/输入-密码
+message MsgDBBankEnterPassword
+{
+	int32 user_id = 1;					//玩家ID
+	string Password = 2;				//密码
+}
+//修改密码
+message MsgDBBankVerifyPhone
+{
+	int32 user_id = 1;					//玩家ID
+	string phone = 2;					//手机号
+}
+message MsgDBBankChangePassword
+{
+	int32 user_id = 1;					//玩家ID
+	string Password = 2;				//密码
+	int32 code =3;						//验证码
+}
+//银行存取操作
+message MsgDBBankOperate
+{
+	int32 user_id = 1;					//玩家ID
+	int64 gold = 2;						//操作金币
+	int32 operate_type = 3;			//1银行存2银行取
+}
+//银行存取操作结果
+message MsgDBBankTakeOut
+{
+	int32 ret_value = 1;				//返回值 0成功1失败
+	int64 user_gold = 2;				//玩家携带金币
+	int64 bank_gold = 3;				//玩家银行金币
+}
+//银行转账
+message MsgDBBankTransfer
+{
+	int32 from_user_id = 1;//转账id
+	int32 recv_user_id = 2;//接受Id
+	int64 transfer_gold = 3;//操作金币
+}
