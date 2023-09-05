@@ -34,6 +34,7 @@ message MsgPlayerLoginResp
 	string		phone_num		= 11;	//手机号
 	int32		vip_level		= 12;	//VIP等级
 	int32		avatar_frame	= 13;	//头像框
+	string      bank_password	= 16;	//银行密码
 }
 
 //修改密码
@@ -271,7 +272,22 @@ message MsgModifySignature
 	int32		user_id			= 1;	//userid
 	string		signature		= 2;	//新的签名
 }
+message MsgGetRank
+{
+	int32 rank_type						= 1;		//排行榜类型  1 大富豪排行榜 2 今日赢
+	int32 user_id						= 2;		//玩家userID
+	int32 current_page					= 3;		//当前页
+	int32 max_row						= 4;		//每页最大行数
+}
 
+//排行榜数据
+message MsgTopListResp
+{
+	int32 user_id						= 1;		//请求玩家userID
+	int32 rank_type						= 2;		//排行榜类型 1: 财富排行榜 2：输赢排行榜
+	MsgTopInfo	this_info				= 3;		//自己的信息
+	repeated MsgTopInfo	lists			= 4;		//大富豪排行榜
+}
 //银行
 //修改密码
 message MsgBankChangePassword
