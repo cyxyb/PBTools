@@ -448,7 +448,7 @@ public enum EMsgIDLogin {
   /// </summary>
   [pbr::OriginalName("MsgIDRank_GetResp")] MsgIdrankGetResp = 75,
   /// <summary>
-  ///银行设置密码(MsgBankEnterPassword)
+  ///银行设置密码(MsgCommonStr)
   /// </summary>
   [pbr::OriginalName("MsgIDBank_SetPassword")] MsgIdbankSetPassword = 76,
   /// <summary>
@@ -456,11 +456,11 @@ public enum EMsgIDLogin {
   /// </summary>
   [pbr::OriginalName("MsgIDBank_SetPasswordResp")] MsgIdbankSetPasswordResp = 77,
   /// <summary>
-  ///验证手机(MsgBankVerifyPhone);
+  ///验证手机();
   /// </summary>
   [pbr::OriginalName("MsgIDBank_VerifyPhone")] MsgIdbankVerifyPhone = 78,
   /// <summary>
-  ///验证手机返回(MsgCommonBool);
+  ///验证手机返回(MsgCommonBool)
   /// </summary>
   [pbr::OriginalName("MsgIDBank_VerifyPhoneResp")] MsgIdbankVerifyPhoneResp = 79,
   /// <summary>
@@ -468,15 +468,15 @@ public enum EMsgIDLogin {
   /// </summary>
   [pbr::OriginalName("MsgIDBank_ChangePassword")] MsgIdbankChangePassword = 80,
   /// <summary>
-  ///银行修改密码返回(MsgCommonN32)
+  ///银行修改密码返回(MsgCommonN32)0成功非0暂定
   /// </summary>
   [pbr::OriginalName("MsgIDBank_ChangePasswordResp")] MsgIdbankChangePasswordResp = 81,
   /// <summary>
-  ///银行打开银行(MsgBankEnterPassword)
+  ///银行打开银行(MsgCommonStr)
   /// </summary>
   [pbr::OriginalName("MsgIDBank_OpenBank")] MsgIdbankOpenBank = 82,
   /// <summary>
-  ///银行打开银行返回(MsgCommonBool)
+  ///银行打开银行返回(MsgBankTakeOut)
   /// </summary>
   [pbr::OriginalName("MsgIDBank_OpenBankResp")] MsgIdbankOpenBankResp = 83,
   /// <summary>
@@ -496,7 +496,7 @@ public enum EMsgIDLogin {
   /// </summary>
   [pbr::OriginalName("MsgIDBank_BankTransferResp")] MsgIdbankBankTransferResp = 87,
   /// <summary>
-  ///银行转账记录(MsgCommonN32)
+  ///银行转账记录()
   /// </summary>
   [pbr::OriginalName("MsgIDBank_BankRecord")] MsgIdbankBankRecord = 88,
   /// <summary>

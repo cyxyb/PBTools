@@ -155,6 +155,7 @@ message MsgLoginPlayerInfo
 	int32		vip_level		= 13;	//vip等级
 	int32		avatar_frame	= 14;	//头像框
 	int32		channel_id		= 15;	//渠道ID
+	string      bank_password	= 16;	//银行密码
 }
 
 //游戏服务器玩家信息

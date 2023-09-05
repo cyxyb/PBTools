@@ -342,4 +342,5 @@ message MsgBankRecordResp
 	int32 operate_user_id = 1;//目标id
 	int64 transfer_gold = 2;//操作金币
 	int32 timer = 3;//时间戳
+	int32 operate_type = 4;//1转出2接受
 }
