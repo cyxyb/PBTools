@@ -52,17 +52,3 @@ message MsgBroadcastZmdTip
 	int32	template_id			= 8;		//模板id
 	repeated string	content		= 9;		//拼接内容数组
 }
-
-//排行榜数据
-message MsgTopInfo
-{
-	int32	rank_id				= 1;		//排行id
-	int32	user_id				= 2;		//userid
-	uint64	gold				= 3;		//金币
-	uint32	vip_level			= 4;		//vip等级
-	int32	avatar_frame		= 5;		//头像框
-	string	head_url			= 6;		//头像url
-	string	nick_name			= 7;		//昵称
-}
-
-
