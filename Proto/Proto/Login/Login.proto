@@ -271,33 +271,38 @@ message MsgModifySignature
 {
 	int32		user_id			= 1;	//userid
 	string		signature		= 2;	//新的签名
-}
+};
 //银行
+//请求验证码
+message MsgBankCode
+{
+	
+};
 //修改密码
 message MsgBankChangePassword
 {
 	string password = 1;				//密码
 	int32 code =2;						//验证码
-}
+};
 //银行存取操作
 message MsgBankOperate
 {
 	int64 gold = 1;						//操作金币
 	int32 operate_type = 2;				//1银行存2银行取
-}
+};
 //银行存取操作结果
 message MsgBankTakeOut
 {
 	int32 ret_value = 1;				//返回值 0成功1失败
 	int64 user_gold = 2;				//玩家携带金币
 	int64 bank_gold = 3;				//玩家银行金币
-}
+};
 //银行转账
 message MsgBankTransfer
 {
 	int32 recv_user_id = 1;//接受Id
 	int64 transfer_gold = 2;//操作金币
-}
+};
 
 //排行榜数据
 message MsgTopInfo
@@ -309,7 +314,7 @@ message MsgTopInfo
 	int32	avatar_frame		= 5;		//头像框
 	string	head_url			= 6;		//头像url
 	string	nick_name			= 7;		//昵称
-}
+};
 
 
 message MsgGetRank
@@ -318,7 +323,7 @@ message MsgGetRank
 	int32 user_id						= 2;		//玩家userID
 	int32 current_page					= 3;		//当前页
 	int32 max_row						= 4;		//每页最大行数
-}
+};
 
 //排行榜数据
 message MsgTopListResp
@@ -327,7 +332,7 @@ message MsgTopListResp
 	int32 rank_type						= 2;		//排行榜类型 1: 财富排行榜 2：输赢排行榜
 	MsgTopInfo	this_info				= 3;		//自己的信息
 	repeated MsgTopInfo	lists			= 4;		//大富豪排行榜
-}
+};
 
 
 //银行转账
@@ -335,12 +340,16 @@ message MsgBankTransferResp
 {
 	int32 ret_value = 1;				//返回值 0操作成功 操作失败：1：金币有误2：没有权限向该用户转账3：不能小于限制金币4：你被禁止转账
 	int64 bank_gold = 2;				//玩家银行金币
-}
+};
 //银行转账记录
-message MsgBankRecordResp
+message MsgBankRecord
 {
 	int32 operate_user_id = 1;//目标id
 	int64 transfer_gold = 2;//操作金币
 	int32 timer = 3;//时间戳
 	int32 operate_type = 4;//1转出2接受
-}
+};
+message MsgBankRecordResp
+{
+	repeated MsgBankRecord records = 1;
+};
