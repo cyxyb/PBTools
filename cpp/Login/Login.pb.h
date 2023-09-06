@@ -4387,14 +4387,14 @@ class MsgPlayerInfo PROTOBUF_FINAL :
     kNicknameFieldNumber = 3,
     kAvatarFieldNumber = 4,
     kPhoneNumFieldNumber = 6,
+    kSignatureFieldNumber = 9,
     kUserIdFieldNumber = 1,
     kBeautifulIdFieldNumber = 2,
     kCoinFieldNumber = 5,
     kVipLevelFieldNumber = 7,
     kAvatarFrameFieldNumber = 8,
-    kSignatureFieldNumber = 9,
-    kZmdGameIdFieldNumber = 10,
     kZmdWinGoldFieldNumber = 11,
+    kZmdGameIdFieldNumber = 10,
   };
   // string nickname = 3;
   void clear_nickname();
@@ -4444,6 +4444,22 @@ class MsgPlayerInfo PROTOBUF_FINAL :
   std::string* _internal_mutable_phone_num();
   public:
 
+  // string signature = 9;
+  void clear_signature();
+  const std::string& signature() const;
+  void set_signature(const std::string& value);
+  void set_signature(std::string&& value);
+  void set_signature(const char* value);
+  void set_signature(const char* value, size_t size);
+  std::string* mutable_signature();
+  std::string* release_signature();
+  void set_allocated_signature(std::string* signature);
+  private:
+  const std::string& _internal_signature() const;
+  void _internal_set_signature(const std::string& value);
+  std::string* _internal_mutable_signature();
+  public:
+
   // int32 user_id = 1;
   void clear_user_id();
   ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
@@ -4489,13 +4505,13 @@ class MsgPlayerInfo PROTOBUF_FINAL :
   void _internal_set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 signature = 9;
-  void clear_signature();
-  ::PROTOBUF_NAMESPACE_ID::int32 signature() const;
-  void set_signature(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // uint64 zmd_win_gold = 11;
+  void clear_zmd_win_gold();
+  ::PROTOBUF_NAMESPACE_ID::uint64 zmd_win_gold() const;
+  void set_zmd_win_gold(::PROTOBUF_NAMESPACE_ID::uint64 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_signature() const;
-  void _internal_set_signature(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::uint64 _internal_zmd_win_gold() const;
+  void _internal_set_zmd_win_gold(::PROTOBUF_NAMESPACE_ID::uint64 value);
   public:
 
   // int32 zmd_game_id = 10;
@@ -4505,15 +4521,6 @@ class MsgPlayerInfo PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::int32 _internal_zmd_game_id() const;
   void _internal_set_zmd_game_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // uint64 zmd_win_gold = 11;
-  void clear_zmd_win_gold();
-  ::PROTOBUF_NAMESPACE_ID::uint64 zmd_win_gold() const;
-  void set_zmd_win_gold(::PROTOBUF_NAMESPACE_ID::uint64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::uint64 _internal_zmd_win_gold() const;
-  void _internal_set_zmd_win_gold(::PROTOBUF_NAMESPACE_ID::uint64 value);
   public:
 
   // @@protoc_insertion_point(class_scope:MsgPlayerInfo)
@@ -4526,14 +4533,14 @@ class MsgPlayerInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr nickname_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr avatar_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr phone_num_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr signature_;
   ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 beautiful_id_;
   ::PROTOBUF_NAMESPACE_ID::uint64 coin_;
   ::PROTOBUF_NAMESPACE_ID::int32 vip_level_;
   ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame_;
-  ::PROTOBUF_NAMESPACE_ID::int32 signature_;
-  ::PROTOBUF_NAMESPACE_ID::int32 zmd_game_id_;
   ::PROTOBUF_NAMESPACE_ID::uint64 zmd_win_gold_;
+  ::PROTOBUF_NAMESPACE_ID::int32 zmd_game_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -10859,24 +10866,65 @@ inline void MsgPlayerInfo::set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:MsgPlayerInfo.avatar_frame)
 }
 
-// int32 signature = 9;
+// string signature = 9;
 inline void MsgPlayerInfo::clear_signature() {
-  signature_ = 0;
+  signature_.ClearToEmpty();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPlayerInfo::_internal_signature() const {
-  return signature_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPlayerInfo::signature() const {
+inline const std::string& MsgPlayerInfo::signature() const {
   // @@protoc_insertion_point(field_get:MsgPlayerInfo.signature)
   return _internal_signature();
 }
-inline void MsgPlayerInfo::_internal_set_signature(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  signature_ = value;
-}
-inline void MsgPlayerInfo::set_signature(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgPlayerInfo::set_signature(const std::string& value) {
   _internal_set_signature(value);
   // @@protoc_insertion_point(field_set:MsgPlayerInfo.signature)
+}
+inline std::string* MsgPlayerInfo::mutable_signature() {
+  // @@protoc_insertion_point(field_mutable:MsgPlayerInfo.signature)
+  return _internal_mutable_signature();
+}
+inline const std::string& MsgPlayerInfo::_internal_signature() const {
+  return signature_.Get();
+}
+inline void MsgPlayerInfo::_internal_set_signature(const std::string& value) {
+  
+  signature_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgPlayerInfo::set_signature(std::string&& value) {
+  
+  signature_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgPlayerInfo.signature)
+}
+inline void MsgPlayerInfo::set_signature(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  signature_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgPlayerInfo.signature)
+}
+inline void MsgPlayerInfo::set_signature(const char* value,
+    size_t size) {
+  
+  signature_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgPlayerInfo.signature)
+}
+inline std::string* MsgPlayerInfo::_internal_mutable_signature() {
+  
+  return signature_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgPlayerInfo::release_signature() {
+  // @@protoc_insertion_point(field_release:MsgPlayerInfo.signature)
+  return signature_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgPlayerInfo::set_allocated_signature(std::string* signature) {
+  if (signature != nullptr) {
+    
+  } else {
+    
+  }
+  signature_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), signature,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgPlayerInfo.signature)
 }
 
 // int32 zmd_game_id = 10;

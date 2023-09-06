@@ -1237,7 +1237,7 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "\005\022\020\n\010nickname\030\003 \001(\t\022\016\n\006avatar\030\004 \001(\t\022\014\n\004c"
   "oin\030\005 \001(\004\022\021\n\tphone_num\030\006 \001(\t\022\021\n\tvip_leve"
   "l\030\007 \001(\005\022\024\n\014avatar_frame\030\010 \001(\005\022\021\n\tsignatu"
-  "re\030\t \001(\005\022\023\n\013zmd_game_id\030\n \001(\005\022\024\n\014zmd_win"
+  "re\030\t \001(\t\022\023\n\013zmd_game_id\030\n \001(\005\022\024\n\014zmd_win"
   "_gold\030\013 \001(\004\"3\n\rMsgActiveInfo\022\017\n\007user_id\030"
   "\001 \001(\005\022\021\n\tactive_id\030\002 \001(\005\"\330\001\n\rActiveInfoR"
   "et\022\021\n\tactive_id\030\001 \001(\005\022\025\n\rsub_active_id\030\002"
@@ -7903,9 +7903,14 @@ MsgPlayerInfo::MsgPlayerInfo(const MsgPlayerInfo& from)
     phone_num_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_phone_num(), 
       GetArena());
   }
+  signature_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from._internal_signature().empty()) {
+    signature_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_signature(), 
+      GetArena());
+  }
   ::memcpy(&user_id_, &from.user_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&zmd_win_gold_) -
-    reinterpret_cast<char*>(&user_id_)) + sizeof(zmd_win_gold_));
+    static_cast<size_t>(reinterpret_cast<char*>(&zmd_game_id_) -
+    reinterpret_cast<char*>(&user_id_)) + sizeof(zmd_game_id_));
   // @@protoc_insertion_point(copy_constructor:MsgPlayerInfo)
 }
 
@@ -7914,10 +7919,11 @@ void MsgPlayerInfo::SharedCtor() {
   nickname_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   avatar_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   phone_num_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  signature_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&user_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&zmd_win_gold_) -
-      reinterpret_cast<char*>(&user_id_)) + sizeof(zmd_win_gold_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&zmd_game_id_) -
+      reinterpret_cast<char*>(&user_id_)) + sizeof(zmd_game_id_));
 }
 
 MsgPlayerInfo::~MsgPlayerInfo() {
@@ -7931,6 +7937,7 @@ void MsgPlayerInfo::SharedDtor() {
   nickname_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   avatar_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   phone_num_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  signature_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
 void MsgPlayerInfo::ArenaDtor(void* object) {
@@ -7957,9 +7964,10 @@ void MsgPlayerInfo::Clear() {
   nickname_.ClearToEmpty();
   avatar_.ClearToEmpty();
   phone_num_.ClearToEmpty();
+  signature_.ClearToEmpty();
   ::memset(&user_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&zmd_win_gold_) -
-      reinterpret_cast<char*>(&user_id_)) + sizeof(zmd_win_gold_));
+      reinterpret_cast<char*>(&zmd_game_id_) -
+      reinterpret_cast<char*>(&user_id_)) + sizeof(zmd_game_id_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -8032,10 +8040,12 @@ const char* MsgPlayerInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 signature = 9;
+      // string signature = 9;
       case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
-          signature_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
+          auto str = _internal_mutable_signature();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgPlayerInfo.signature"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -8141,10 +8151,14 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(8, this->_internal_avatar_frame(), target);
   }
 
-  // int32 signature = 9;
-  if (this->signature() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(9, this->_internal_signature(), target);
+  // string signature = 9;
+  if (this->signature().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_signature().data(), static_cast<int>(this->_internal_signature().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "MsgPlayerInfo.signature");
+    target = stream->WriteStringMaybeAliased(
+        9, this->_internal_signature(), target);
   }
 
   // int32 zmd_game_id = 10;
@@ -8196,6 +8210,13 @@ size_t MsgPlayerInfo::ByteSizeLong() const {
         this->_internal_phone_num());
   }
 
+  // string signature = 9;
+  if (this->signature().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_signature());
+  }
+
   // int32 user_id = 1;
   if (this->user_id() != 0) {
     total_size += 1 +
@@ -8231,11 +8252,11 @@ size_t MsgPlayerInfo::ByteSizeLong() const {
         this->_internal_avatar_frame());
   }
 
-  // int32 signature = 9;
-  if (this->signature() != 0) {
+  // uint64 zmd_win_gold = 11;
+  if (this->zmd_win_gold() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_signature());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
+        this->_internal_zmd_win_gold());
   }
 
   // int32 zmd_game_id = 10;
@@ -8243,13 +8264,6 @@ size_t MsgPlayerInfo::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_zmd_game_id());
-  }
-
-  // uint64 zmd_win_gold = 11;
-  if (this->zmd_win_gold() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->_internal_zmd_win_gold());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -8292,6 +8306,9 @@ void MsgPlayerInfo::MergeFrom(const MsgPlayerInfo& from) {
   if (from.phone_num().size() > 0) {
     _internal_set_phone_num(from._internal_phone_num());
   }
+  if (from.signature().size() > 0) {
+    _internal_set_signature(from._internal_signature());
+  }
   if (from.user_id() != 0) {
     _internal_set_user_id(from._internal_user_id());
   }
@@ -8307,14 +8324,11 @@ void MsgPlayerInfo::MergeFrom(const MsgPlayerInfo& from) {
   if (from.avatar_frame() != 0) {
     _internal_set_avatar_frame(from._internal_avatar_frame());
   }
-  if (from.signature() != 0) {
-    _internal_set_signature(from._internal_signature());
+  if (from.zmd_win_gold() != 0) {
+    _internal_set_zmd_win_gold(from._internal_zmd_win_gold());
   }
   if (from.zmd_game_id() != 0) {
     _internal_set_zmd_game_id(from._internal_zmd_game_id());
-  }
-  if (from.zmd_win_gold() != 0) {
-    _internal_set_zmd_win_gold(from._internal_zmd_win_gold());
   }
 }
 
@@ -8342,9 +8356,10 @@ void MsgPlayerInfo::InternalSwap(MsgPlayerInfo* other) {
   nickname_.Swap(&other->nickname_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   avatar_.Swap(&other->avatar_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   phone_num_.Swap(&other->phone_num_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  signature_.Swap(&other->signature_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgPlayerInfo, zmd_win_gold_)
-      + sizeof(MsgPlayerInfo::zmd_win_gold_)
+      PROTOBUF_FIELD_OFFSET(MsgPlayerInfo, zmd_game_id_)
+      + sizeof(MsgPlayerInfo::zmd_game_id_)
       - PROTOBUF_FIELD_OFFSET(MsgPlayerInfo, user_id_)>(
           reinterpret_cast<char*>(&user_id_),
           reinterpret_cast<char*>(&other->user_id_));

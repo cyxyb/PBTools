@@ -78,7 +78,7 @@ public static partial class LoginReflection {
           "GAEgASgFEhQKDGJlYXV0aWZ1bF9pZBgCIAEoBRIQCghuaWNrbmFtZRgDIAEo",
           "CRIOCgZhdmF0YXIYBCABKAkSDAoEY29pbhgFIAEoBBIRCglwaG9uZV9udW0Y",
           "BiABKAkSEQoJdmlwX2xldmVsGAcgASgFEhQKDGF2YXRhcl9mcmFtZRgIIAEo",
-          "BRIRCglzaWduYXR1cmUYCSABKAUSEwoLem1kX2dhbWVfaWQYCiABKAUSFAoM",
+          "BRIRCglzaWduYXR1cmUYCSABKAkSEwoLem1kX2dhbWVfaWQYCiABKAUSFAoM",
           "em1kX3dpbl9nb2xkGAsgASgEIjMKDU1zZ0FjdGl2ZUluZm8SDwoHdXNlcl9p",
           "ZBgBIAEoBRIRCglhY3RpdmVfaWQYAiABKAUi2AEKDUFjdGl2ZUluZm9SZXQS",
           "EQoJYWN0aXZlX2lkGAEgASgFEhUKDXN1Yl9hY3RpdmVfaWQYAiABKAUSDgoG",
@@ -6993,15 +6993,15 @@ public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
 
   /// <summary>Field number for the "signature" field.</summary>
   public const int SignatureFieldNumber = 9;
-  private int signature_;
+  private string signature_ = "";
   /// <summary>
   ///签名
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public int Signature {
+  public string Signature {
     get { return signature_; }
     set {
-      signature_ = value;
+      signature_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
     }
   }
 
@@ -7071,7 +7071,7 @@ public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
     if (PhoneNum.Length != 0) hash ^= PhoneNum.GetHashCode();
     if (VipLevel != 0) hash ^= VipLevel.GetHashCode();
     if (AvatarFrame != 0) hash ^= AvatarFrame.GetHashCode();
-    if (Signature != 0) hash ^= Signature.GetHashCode();
+    if (Signature.Length != 0) hash ^= Signature.GetHashCode();
     if (ZmdGameId != 0) hash ^= ZmdGameId.GetHashCode();
     if (ZmdWinGold != 0UL) hash ^= ZmdWinGold.GetHashCode();
     if (_unknownFields != null) {
@@ -7122,9 +7122,9 @@ public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
       output.WriteRawTag(64);
       output.WriteInt32(AvatarFrame);
     }
-    if (Signature != 0) {
-      output.WriteRawTag(72);
-      output.WriteInt32(Signature);
+    if (Signature.Length != 0) {
+      output.WriteRawTag(74);
+      output.WriteString(Signature);
     }
     if (ZmdGameId != 0) {
       output.WriteRawTag(80);
@@ -7175,9 +7175,9 @@ public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
       output.WriteRawTag(64);
       output.WriteInt32(AvatarFrame);
     }
-    if (Signature != 0) {
-      output.WriteRawTag(72);
-      output.WriteInt32(Signature);
+    if (Signature.Length != 0) {
+      output.WriteRawTag(74);
+      output.WriteString(Signature);
     }
     if (ZmdGameId != 0) {
       output.WriteRawTag(80);
@@ -7220,8 +7220,8 @@ public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
     if (AvatarFrame != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(AvatarFrame);
     }
-    if (Signature != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Signature);
+    if (Signature.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Signature);
     }
     if (ZmdGameId != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(ZmdGameId);
@@ -7264,7 +7264,7 @@ public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
     if (other.AvatarFrame != 0) {
       AvatarFrame = other.AvatarFrame;
     }
-    if (other.Signature != 0) {
+    if (other.Signature.Length != 0) {
       Signature = other.Signature;
     }
     if (other.ZmdGameId != 0) {
@@ -7319,8 +7319,8 @@ public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
           AvatarFrame = input.ReadInt32();
           break;
         }
-        case 72: {
-          Signature = input.ReadInt32();
+        case 74: {
+          Signature = input.ReadString();
           break;
         }
         case 80: {
@@ -7377,8 +7377,8 @@ public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
           AvatarFrame = input.ReadInt32();
           break;
         }
-        case 72: {
-          Signature = input.ReadInt32();
+        case 74: {
+          Signature = input.ReadString();
           break;
         }
         case 80: {
