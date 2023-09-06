@@ -52,11 +52,3 @@ message MsgBroadcastZmdTip
 	int32	template_id			= 8;		//模板id
 	repeated string	content		= 9;		//拼接内容数组
 }
-
-//排行榜数据
-message MsgTopInfo
-{
-	int32	rank_id				= 1;		//排行id
-	int32	game_id				= 2;		//游戏类型
-	uint64	gold				= 3;		//获得金币
-}

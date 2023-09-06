@@ -28,69 +28,97 @@ public static partial class LoginReflection {
           "GAUgASgFEhIKCmxvZ2luX3R5cGUYBiABKAUSEwoLbWFjaGluZV9udW0YByAB",
           "KAkSDwoHdXNlcl9pcBgIIAEoCRIQCghpc19kcmFpbhgJIAEoCBIOCgZhdmF0",
           "YXIYCiABKAkSEAoIbmlja25hbWUYCyABKAkSDQoFcGhvbmUYDCABKAkSDAoE",
-          "Y29kZRgNIAEoBSKHAgoSTXNnUGxheWVyTG9naW5SZXNwEhAKCHJlc19jb2Rl",
+          "Y29kZRgNIAEoBSKeAgoSTXNnUGxheWVyTG9naW5SZXNwEhAKCHJlc19jb2Rl",
           "GAEgASgFEg8KB3VzZXJfaWQYAiABKAUSFAoMYmVhdXRpZnVsX2lkGAMgASgF",
           "Eg8KB2FjY291bnQYBCABKAkSEAoIbmlja25hbWUYBSABKAkSDgoGYXZhdGFy",
           "GAYgASgJEhYKDmZpcnN0X3JlY2hhcmdlGAcgASgIEhEKCXVzZXJfdHlwZRgI",
           "IAEoBRIQCghpc19kcmFpbhgJIAEoCBIMCgRjb2luGAogASgEEhEKCXBob25l",
           "X251bRgLIAEoCRIRCgl2aXBfbGV2ZWwYDCABKAUSFAoMYXZhdGFyX2ZyYW1l",
-          "GA0gASgFIj8KEU1zZ01vZGlmeVBhc3N3b3JkEhQKDG9sZF9wYXNzd29yZBgB",
-          "IAEoCRIUCgxuZXdfcGFzc3dvcmQYAiABKAkiQQoMTXNnQmluZFBob25lEgwK",
-          "BGNvZGUYASABKAUSEQoJcGhvbmVfbnVtGAIgASgJEhAKCHBhc3N3b3JkGAMg",
-          "ASgJIiMKC01zZ0NvbW1vbktWEgkKAWsYASABKAUSCQoBdhgCIAEoBSJpCg5N",
-          "c2dDaGVja0luSW5mbxISCgpjaGVja19kYXlzGAEgASgFEg8KB2lzX29wZW4Y",
-          "AiABKAgSEAoIY2FuX3BpY2sYAyABKAgSIAoKQ2hlY2tJbkNmZxgEIAMoCzIM",
-          "Lk1zZ0NvbW1vbktWImQKF01zZ1R1cm50YWJsZUhpc3RvcnlEYXRhEg8KB3Vz",
-          "ZXJfaWQYASABKAUSDQoFc2NvcmUYAiABKAUSDQoFYXdhcmQYAyABKAUSDAoE",
-          "dHlwZRgEIAEoBRIMCgR0aW1lGAUgASgJIqsBChBNc2dUdXJudGFibGVEYXRh",
-          "EhAKCHBsYXlfbnVtGAEgASgFEg0KBXNjb3JlGAIgASgFEhIKCm5lZWRfc2Nv",
-          "cmUYAyABKAUSEgoKbGltaXRfdHVybhgEIAEoBRIjCg10dXJudGFibGVfY2Zn",
-          "GAUgAygLMgwuTXNnQ29tbW9uS1YSKQoHaGlzdG9yeRgGIAMoCzIYLk1zZ1R1",
-          "cm50YWJsZUhpc3RvcnlEYXRhIisKDE1zZ01haWxzSW5mbxIbCgVtYWlscxgB",
-          "IAMoCzIMLk1zZ01haWxEYXRhIqwBCgtNc2dNYWlsRGF0YRIPCgdtYWlsX2lk",
-          "GAEgASgFEhQKDHNlbmRfdXNlcl9pZBgCIAEoBRIRCglzZW5kX3RpbWUYAyAB",
-          "KAUSDQoFdGl0bGUYBCABKAkSDwoHY29udGVudBgFIAEoCRIMCgRnb2xkGAYg",
-          "ASgDEg8KB2lzX3JlYWQYByABKAgSEAoIaXNfY2xhaW0YCCABKAgSEgoKdG9f",
-          "dXNlcl9pZBgJIAEoBSI2CgxNc2dTaGFyZURhdGESEwoLaW52aXRlX2NvZGUY",
-          "ASABKAkSEQoJYmluZF9saXN0GAIgAygFIiQKEU1zZ0JpbmRQYXJlbnREYXRh",
-          "Eg8KB3N0ckNvZGUYASABKAkiYwoSTXNnSW52aXRlQXdhcmRJbmZvEhEKCWlu",
-          "dml0ZU51bRgBIAEoBRIRCglwaWNrSW5kZXgYAiABKAUSJwoIYXdhcmRDZmcY",
-          "AyADKAsyFS5Nc2dJbnZpdGVBd2FyZENvbmZpZyI4ChRNc2dJbnZpdGVBd2Fy",
-          "ZENvbmZpZxIRCglpbnZpdGVOdW0YASABKAUSDQoFYXdhcmQYAiABKAUidwoP",
-          "TXNnUmVjaGFyZ2VJbmZvEhEKCWludml0ZU51bRgBIAEoBRISCgp0b2RheUF3",
-          "YXJkGAIgASgDEhIKCnRvdGFsQXdhcmQYAyABKAMSFQoNY2FuUGlja0Ftb3Vu",
-          "dBgEIAEoAxISCgppbnZpdGVDb2RlGAUgASgJIkwKGE1zZ1F1ZXJ5UmViYXRl",
-          "UmVjb3JkSW5mbxIwChFxdWVyeVJlYmF0ZVJlY29yZBgBIAMoCzIVLk1zZ1F1",
-          "ZXJ5UmViYXRlUmVjb3JkIlYKFE1zZ1F1ZXJ5UmViYXRlUmVjb3JkEhYKDnJl",
-          "Y2hhcmdlVXNlcklkGAEgASgFEhYKDnJlY2hhcmdlQW1vdW50GAIgASgFEg4K",
-          "BnJlYmF0ZRgDIAEoBSJbChFNc2dGb3JnZXRQYXNzd29yZBITCgtjbGllbnRf",
-          "dHlwZRgBIAEoBRINCgVwaG9uZRgCIAEoCRIMCgRjb2RlGAMgASgFEhQKDG5l",
-          "d19wYXNzd29yZBgEIAEoCSL2AQoKTXNnVklQSW5mbxIRCgl2aXBfbGV2ZWwY",
-          "ASABKAUSEgoKbmVlZF9zY29yZRgCIAEoAxIVCg10dXJudGFibGVfbnVtGAMg",
-          "ASgFEhgKEHRydW1wZXRfZGlzY291bnQYBCABKAUSFgoOY2hlY2tfYWRkaXRp",
-          "b24YBSABKAUSFgoOc2hhcmVfYWRkaXRpb24YBiABKAUSEgoKd29ybGRfY2hh",
-          "dBgHIAEoCBIOCgZhdmF0YXIYCCABKAUSFAoMYXZhdGFyX2ZyYW1lGAkgASgF",
-          "EhIKCmF3YXJkX2dvbGQYCiABKAUSEgoKb25lX3RvX29uZRgLIAEoCCItCgxN",
-          "c2dWSVBDb25maWcSHQoIdmlwX2luZm8YASADKAsyCy5Nc2dWSVBJbmZvIi8K",
-          "DU1zZ1VwZ3JhZGVWSVASEAoIcmVzX2NvZGUYASABKAUSDAoEZ29sZBgCIAEo",
-          "AyIjChBNc2dHZXRBdmF0YXJJbmZvEg8KB2F2YXRhcnMYASADKAUizQEKDU1z",
-          "Z1BsYXllckluZm8SDwoHdXNlcl9pZBgBIAEoBRIUCgxiZWF1dGlmdWxfaWQY",
-          "AiABKAUSEAoIbmlja25hbWUYAyABKAkSDgoGYXZhdGFyGAQgASgJEgwKBGNv",
-          "aW4YBSABKAQSEQoJcGhvbmVfbnVtGAYgASgJEhEKCXZpcF9sZXZlbBgHIAEo",
-          "BRIUCgxhdmF0YXJfZnJhbWUYCCABKAUSEwoLem1kX2dhbWVfaWQYCSABKAUS",
-          "FAoMem1kX3dpbl9nb2xkGAogASgEIjMKDU1zZ0FjdGl2ZUluZm8SDwoHdXNl",
-          "cl9pZBgBIAEoBRIRCglhY3RpdmVfaWQYAiABKAUi2AEKDXNBY3RpdmVJbmZv",
-          "U0MSEQoJYWN0aXZlX2lkGAEgASgFEhUKDXN1Yl9hY3RpdmVfaWQYAiABKAUS",
+          "GA0gASgFEhUKDWJhbmtfcGFzc3dvcmQYECABKAkiPwoRTXNnTW9kaWZ5UGFz",
+          "c3dvcmQSFAoMb2xkX3Bhc3N3b3JkGAEgASgJEhQKDG5ld19wYXNzd29yZBgC",
+          "IAEoCSJBCgxNc2dCaW5kUGhvbmUSDAoEY29kZRgBIAEoBRIRCglwaG9uZV9u",
+          "dW0YAiABKAkSEAoIcGFzc3dvcmQYAyABKAkiIwoLTXNnQ29tbW9uS1YSCQoB",
+          "axgBIAEoBRIJCgF2GAIgASgFImkKDk1zZ0NoZWNrSW5JbmZvEhIKCmNoZWNr",
+          "X2RheXMYASABKAUSDwoHaXNfb3BlbhgCIAEoCBIQCghjYW5fcGljaxgDIAEo",
+          "CBIgCgpDaGVja0luQ2ZnGAQgAygLMgwuTXNnQ29tbW9uS1YiZAoXTXNnVHVy",
+          "bnRhYmxlSGlzdG9yeURhdGESDwoHdXNlcl9pZBgBIAEoBRINCgVzY29yZRgC",
+          "IAEoBRINCgVhd2FyZBgDIAEoBRIMCgR0eXBlGAQgASgFEgwKBHRpbWUYBSAB",
+          "KAkiqwEKEE1zZ1R1cm50YWJsZURhdGESEAoIcGxheV9udW0YASABKAUSDQoF",
+          "c2NvcmUYAiABKAUSEgoKbmVlZF9zY29yZRgDIAEoBRISCgpsaW1pdF90dXJu",
+          "GAQgASgFEiMKDXR1cm50YWJsZV9jZmcYBSADKAsyDC5Nc2dDb21tb25LVhIp",
+          "CgdoaXN0b3J5GAYgAygLMhguTXNnVHVybnRhYmxlSGlzdG9yeURhdGEiKwoM",
+          "TXNnTWFpbHNJbmZvEhsKBW1haWxzGAEgAygLMgwuTXNnTWFpbERhdGEirAEK",
+          "C01zZ01haWxEYXRhEg8KB21haWxfaWQYASABKAUSFAoMc2VuZF91c2VyX2lk",
+          "GAIgASgFEhEKCXNlbmRfdGltZRgDIAEoBRINCgV0aXRsZRgEIAEoCRIPCgdj",
+          "b250ZW50GAUgASgJEgwKBGdvbGQYBiABKAMSDwoHaXNfcmVhZBgHIAEoCBIQ",
+          "Cghpc19jbGFpbRgIIAEoCBISCgp0b191c2VyX2lkGAkgASgFIjYKDE1zZ1No",
+          "YXJlRGF0YRITCgtpbnZpdGVfY29kZRgBIAEoCRIRCgliaW5kX2xpc3QYAiAD",
+          "KAUiJAoRTXNnQmluZFBhcmVudERhdGESDwoHc3RyQ29kZRgBIAEoCSJjChJN",
+          "c2dJbnZpdGVBd2FyZEluZm8SEQoJaW52aXRlTnVtGAEgASgFEhEKCXBpY2tJ",
+          "bmRleBgCIAEoBRInCghhd2FyZENmZxgDIAMoCzIVLk1zZ0ludml0ZUF3YXJk",
+          "Q29uZmlnIjgKFE1zZ0ludml0ZUF3YXJkQ29uZmlnEhEKCWludml0ZU51bRgB",
+          "IAEoBRINCgVhd2FyZBgCIAEoBSJ3Cg9Nc2dSZWNoYXJnZUluZm8SEQoJaW52",
+          "aXRlTnVtGAEgASgFEhIKCnRvZGF5QXdhcmQYAiABKAMSEgoKdG90YWxBd2Fy",
+          "ZBgDIAEoAxIVCg1jYW5QaWNrQW1vdW50GAQgASgDEhIKCmludml0ZUNvZGUY",
+          "BSABKAkiTAoYTXNnUXVlcnlSZWJhdGVSZWNvcmRJbmZvEjAKEXF1ZXJ5UmVi",
+          "YXRlUmVjb3JkGAEgAygLMhUuTXNnUXVlcnlSZWJhdGVSZWNvcmQiVgoUTXNn",
+          "UXVlcnlSZWJhdGVSZWNvcmQSFgoOcmVjaGFyZ2VVc2VySWQYASABKAUSFgoO",
+          "cmVjaGFyZ2VBbW91bnQYAiABKAUSDgoGcmViYXRlGAMgASgFIlsKEU1zZ0Zv",
+          "cmdldFBhc3N3b3JkEhMKC2NsaWVudF90eXBlGAEgASgFEg0KBXBob25lGAIg",
+          "ASgJEgwKBGNvZGUYAyABKAUSFAoMbmV3X3Bhc3N3b3JkGAQgASgJIvYBCgpN",
+          "c2dWSVBJbmZvEhEKCXZpcF9sZXZlbBgBIAEoBRISCgpuZWVkX3Njb3JlGAIg",
+          "ASgDEhUKDXR1cm50YWJsZV9udW0YAyABKAUSGAoQdHJ1bXBldF9kaXNjb3Vu",
+          "dBgEIAEoBRIWCg5jaGVja19hZGRpdGlvbhgFIAEoBRIWCg5zaGFyZV9hZGRp",
+          "dGlvbhgGIAEoBRISCgp3b3JsZF9jaGF0GAcgASgIEg4KBmF2YXRhchgIIAEo",
+          "BRIUCgxhdmF0YXJfZnJhbWUYCSABKAUSEgoKYXdhcmRfZ29sZBgKIAEoBRIS",
+          "CgpvbmVfdG9fb25lGAsgASgIIi0KDE1zZ1ZJUENvbmZpZxIdCgh2aXBfaW5m",
+          "bxgBIAMoCzILLk1zZ1ZJUEluZm8iLwoNTXNnVXBncmFkZVZJUBIQCghyZXNf",
+          "Y29kZRgBIAEoBRIMCgRnb2xkGAIgASgDIiMKEE1zZ0dldEF2YXRhckluZm8S",
+          "DwoHYXZhdGFycxgBIAMoBSLgAQoNTXNnUGxheWVySW5mbxIPCgd1c2VyX2lk",
+          "GAEgASgFEhQKDGJlYXV0aWZ1bF9pZBgCIAEoBRIQCghuaWNrbmFtZRgDIAEo",
+          "CRIOCgZhdmF0YXIYBCABKAkSDAoEY29pbhgFIAEoBBIRCglwaG9uZV9udW0Y",
+          "BiABKAkSEQoJdmlwX2xldmVsGAcgASgFEhQKDGF2YXRhcl9mcmFtZRgIIAEo",
+          "BRIRCglzaWduYXR1cmUYCSABKAUSEwoLem1kX2dhbWVfaWQYCiABKAUSFAoM",
+          "em1kX3dpbl9nb2xkGAsgASgEIjMKDU1zZ0FjdGl2ZUluZm8SDwoHdXNlcl9p",
+          "ZBgBIAEoBRIRCglhY3RpdmVfaWQYAiABKAUi2AEKDUFjdGl2ZUluZm9SZXQS",
+          "EQoJYWN0aXZlX2lkGAEgASgFEhUKDXN1Yl9hY3RpdmVfaWQYAiABKAUSDgoG",
+          "cGFyYW0xGAMgASgFEg4KBnBhcmFtMhgEIAEoBRIOCgZwYXJhbTMYBSABKAUS",
+          "EQoJcHJvZ3Jlc3MxGAYgASgFEhEKCXByb2dyZXNzMhgHIAEoBRIRCglwcm9n",
+          "cmVzczMYCCABKAUSDgoGcmV3YXJkGAkgASgFEhMKC3Jld2FyZF90eXBlGAog",
+          "ASgFEg8KB2lzX3BpY2sYCyABKAgiNgoSTXNnQWN0aXZlSW5mb1NDUmV0EiAK",
+          "CHZlY19pbmZvGAEgAygLMg4uQWN0aXZlSW5mb1JldCJQChNNc2dBY3RpdmVJ",
+          "bmZvQ1NQaWNrEg8KB3VzZXJfaWQYASABKAUSEQoJYWN0aXZlX2lkGAIgASgF",
+          "EhUKDXN1Yl9hY3RpdmVfaWQYAyABKAUi6wEKE01zZ0FjdGl2ZUluZm9TQ1Bp",
+          "Y2sSEQoJYWN0aXZlX2lkGAEgASgFEhUKDXN1Yl9hY3RpdmVfaWQYAiABKAUS",
           "DgoGcGFyYW0xGAMgASgFEg4KBnBhcmFtMhgEIAEoBRIOCgZwYXJhbTMYBSAB",
           "KAUSEQoJcHJvZ3Jlc3MxGAYgASgFEhEKCXByb2dyZXNzMhgHIAEoBRIRCglw",
           "cm9ncmVzczMYCCABKAUSDgoGcmV3YXJkGAkgASgFEhMKC3Jld2FyZF90eXBl",
-          "GAogASgFEg8KB2lzX3BpY2sYCyABKAgiNAoQc0FjdGl2ZUluZm9TQ1JldBIg",
-          "Cgh2ZWNfaW5mbxgBIAMoCzIOLnNBY3RpdmVJbmZvU0NiBnByb3RvMw=="));
+          "GAogASgFEg8KB2lzX3BpY2sYCyABKAUSCwoDcmVzGAwgASgIIjgKEk1zZ01v",
+          "ZGlmeVNpZ25hdHVyZRIPCgd1c2VyX2lkGAEgASgFEhEKCXNpZ25hdHVyZRgC",
+          "IAEoCSINCgtNc2dCYW5rQ29kZSI3ChVNc2dCYW5rQ2hhbmdlUGFzc3dvcmQS",
+          "EAoIcGFzc3dvcmQYASABKAkSDAoEY29kZRgCIAEoBSI0Cg5Nc2dCYW5rT3Bl",
+          "cmF0ZRIMCgRnb2xkGAEgASgDEhQKDG9wZXJhdGVfdHlwZRgCIAEoBSJJCg5N",
+          "c2dCYW5rVGFrZU91dBIRCglyZXRfdmFsdWUYASABKAUSEQoJdXNlcl9nb2xk",
+          "GAIgASgDEhEKCWJhbmtfZ29sZBgDIAEoAyI+Cg9Nc2dCYW5rVHJhbnNmZXIS",
+          "FAoMcmVjdl91c2VyX2lkGAEgASgFEhUKDXRyYW5zZmVyX2dvbGQYAiABKAMi",
+          "igEKCk1zZ1RvcEluZm8SDwoHcmFua19pZBgBIAEoBRIPCgd1c2VyX2lkGAIg",
+          "ASgFEgwKBGdvbGQYAyABKAQSEQoJdmlwX2xldmVsGAQgASgNEhQKDGF2YXRh",
+          "cl9mcmFtZRgFIAEoBRIQCghoZWFkX3VybBgGIAEoCRIRCgluaWNrX25hbWUY",
+          "ByABKAkiVwoKTXNnR2V0UmFuaxIRCglyYW5rX3R5cGUYASABKAUSDwoHdXNl",
+          "cl9pZBgCIAEoBRIUCgxjdXJyZW50X3BhZ2UYAyABKAUSDwoHbWF4X3JvdxgE",
+          "IAEoBSJwCg5Nc2dUb3BMaXN0UmVzcBIPCgd1c2VyX2lkGAEgASgFEhEKCXJh",
+          "bmtfdHlwZRgCIAEoBRIeCgl0aGlzX2luZm8YAyABKAsyCy5Nc2dUb3BJbmZv",
+          "EhoKBWxpc3RzGAQgAygLMgsuTXNnVG9wSW5mbyI7ChNNc2dCYW5rVHJhbnNm",
+          "ZXJSZXNwEhEKCXJldF92YWx1ZRgBIAEoBRIRCgliYW5rX2dvbGQYAiABKAMi",
+          "ZAoNTXNnQmFua1JlY29yZBIXCg9vcGVyYXRlX3VzZXJfaWQYASABKAUSFQoN",
+          "dHJhbnNmZXJfZ29sZBgCIAEoAxINCgV0aW1lchgDIAEoBRIUCgxvcGVyYXRl",
+          "X3R5cGUYBCABKAUiNAoRTXNnQmFua1JlY29yZFJlc3ASHwoHcmVjb3JkcxgB",
+          "IAMoCzIOLk1zZ0JhbmtSZWNvcmRiBnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPlayerLogin), global::MsgPlayerLogin.Parser, new[]{ "Account", "Password", "PlatformId", "ChannelId", "ClientType", "LoginType", "MachineNum", "UserIp", "IsDrain", "Avatar", "Nickname", "Phone", "Code" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPlayerLoginResp), global::MsgPlayerLoginResp.Parser, new[]{ "ResCode", "UserId", "BeautifulId", "Account", "Nickname", "Avatar", "FirstRecharge", "UserType", "IsDrain", "Coin", "PhoneNum", "VipLevel", "AvatarFrame" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPlayerLoginResp), global::MsgPlayerLoginResp.Parser, new[]{ "ResCode", "UserId", "BeautifulId", "Account", "Nickname", "Avatar", "FirstRecharge", "UserType", "IsDrain", "Coin", "PhoneNum", "VipLevel", "AvatarFrame", "BankPassword" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgModifyPassword), global::MsgModifyPassword.Parser, new[]{ "OldPassword", "NewPassword" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBindPhone), global::MsgBindPhone.Parser, new[]{ "Code", "PhoneNum", "Password" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgCommonKV), global::MsgCommonKV.Parser, new[]{ "K", "V" }, null, null, null, null),
@@ -111,10 +139,24 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgVIPConfig), global::MsgVIPConfig.Parser, new[]{ "VipInfo" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgUpgradeVIP), global::MsgUpgradeVIP.Parser, new[]{ "ResCode", "Gold" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgGetAvatarInfo), global::MsgGetAvatarInfo.Parser, new[]{ "Avatars" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPlayerInfo), global::MsgPlayerInfo.Parser, new[]{ "UserId", "BeautifulId", "Nickname", "Avatar", "Coin", "PhoneNum", "VipLevel", "AvatarFrame", "ZmdGameId", "ZmdWinGold" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPlayerInfo), global::MsgPlayerInfo.Parser, new[]{ "UserId", "BeautifulId", "Nickname", "Avatar", "Coin", "PhoneNum", "VipLevel", "AvatarFrame", "Signature", "ZmdGameId", "ZmdWinGold" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgActiveInfo), global::MsgActiveInfo.Parser, new[]{ "UserId", "ActiveId" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::sActiveInfoSC), global::sActiveInfoSC.Parser, new[]{ "ActiveId", "SubActiveId", "Param1", "Param2", "Param3", "Progress1", "Progress2", "Progress3", "Reward", "RewardType", "IsPick" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::sActiveInfoSCRet), global::sActiveInfoSCRet.Parser, new[]{ "VecInfo" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::ActiveInfoRet), global::ActiveInfoRet.Parser, new[]{ "ActiveId", "SubActiveId", "Param1", "Param2", "Param3", "Progress1", "Progress2", "Progress3", "Reward", "RewardType", "IsPick" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgActiveInfoSCRet), global::MsgActiveInfoSCRet.Parser, new[]{ "VecInfo" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgActiveInfoCSPick), global::MsgActiveInfoCSPick.Parser, new[]{ "UserId", "ActiveId", "SubActiveId" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgActiveInfoSCPick), global::MsgActiveInfoSCPick.Parser, new[]{ "ActiveId", "SubActiveId", "Param1", "Param2", "Param3", "Progress1", "Progress2", "Progress3", "Reward", "RewardType", "IsPick", "Res" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgModifySignature), global::MsgModifySignature.Parser, new[]{ "UserId", "Signature" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankCode), global::MsgBankCode.Parser, null, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankChangePassword), global::MsgBankChangePassword.Parser, new[]{ "Password", "Code" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankOperate), global::MsgBankOperate.Parser, new[]{ "Gold", "OperateType" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankTakeOut), global::MsgBankTakeOut.Parser, new[]{ "RetValue", "UserGold", "BankGold" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankTransfer), global::MsgBankTransfer.Parser, new[]{ "RecvUserId", "TransferGold" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgTopInfo), global::MsgTopInfo.Parser, new[]{ "RankId", "UserId", "Gold", "VipLevel", "AvatarFrame", "HeadUrl", "NickName" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgGetRank), global::MsgGetRank.Parser, new[]{ "RankType", "UserId", "CurrentPage", "MaxRow" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgTopListResp), global::MsgTopListResp.Parser, new[]{ "UserId", "RankType", "ThisInfo", "Lists" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankTransferResp), global::MsgBankTransferResp.Parser, new[]{ "RetValue", "BankGold" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankRecord), global::MsgBankRecord.Parser, new[]{ "OperateUserId", "TransferGold", "Timer", "OperateType" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankRecordResp), global::MsgBankRecordResp.Parser, new[]{ "Records" }, null, null, null, null)
         }));
   }
   #endregion
@@ -812,6 +854,7 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
     phoneNum_ = other.phoneNum_;
     vipLevel_ = other.vipLevel_;
     avatarFrame_ = other.avatarFrame_;
+    bankPassword_ = other.bankPassword_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -1002,6 +1045,20 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
     }
   }
 
+  /// <summary>Field number for the "bank_password" field.</summary>
+  public const int BankPasswordFieldNumber = 16;
+  private string bankPassword_ = "";
+  /// <summary>
+  ///银行密码
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string BankPassword {
+    get { return bankPassword_; }
+    set {
+      bankPassword_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as MsgPlayerLoginResp);
@@ -1028,6 +1085,7 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
     if (PhoneNum != other.PhoneNum) return false;
     if (VipLevel != other.VipLevel) return false;
     if (AvatarFrame != other.AvatarFrame) return false;
+    if (BankPassword != other.BankPassword) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -1047,6 +1105,7 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
     if (PhoneNum.Length != 0) hash ^= PhoneNum.GetHashCode();
     if (VipLevel != 0) hash ^= VipLevel.GetHashCode();
     if (AvatarFrame != 0) hash ^= AvatarFrame.GetHashCode();
+    if (BankPassword.Length != 0) hash ^= BankPassword.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -1115,6 +1174,10 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
       output.WriteRawTag(104);
       output.WriteInt32(AvatarFrame);
     }
+    if (BankPassword.Length != 0) {
+      output.WriteRawTag(130, 1);
+      output.WriteString(BankPassword);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -1176,6 +1239,10 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
       output.WriteRawTag(104);
       output.WriteInt32(AvatarFrame);
     }
+    if (BankPassword.Length != 0) {
+      output.WriteRawTag(130, 1);
+      output.WriteString(BankPassword);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -1223,6 +1290,9 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
     }
     if (AvatarFrame != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(AvatarFrame);
+    }
+    if (BankPassword.Length != 0) {
+      size += 2 + pb::CodedOutputStream.ComputeStringSize(BankPassword);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -1273,6 +1343,9 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
     }
     if (other.AvatarFrame != 0) {
       AvatarFrame = other.AvatarFrame;
+    }
+    if (other.BankPassword.Length != 0) {
+      BankPassword = other.BankPassword;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -1340,6 +1413,10 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
           AvatarFrame = input.ReadInt32();
           break;
         }
+        case 130: {
+          BankPassword = input.ReadString();
+          break;
+        }
       }
     }
   #endif
@@ -1404,6 +1481,10 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
         }
         case 104: {
           AvatarFrame = input.ReadInt32();
+          break;
+        }
+        case 130: {
+          BankPassword = input.ReadString();
           break;
         }
       }
@@ -6787,6 +6868,7 @@ public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
     phoneNum_ = other.phoneNum_;
     vipLevel_ = other.vipLevel_;
     avatarFrame_ = other.avatarFrame_;
+    signature_ = other.signature_;
     zmdGameId_ = other.zmdGameId_;
     zmdWinGold_ = other.zmdWinGold_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -6909,8 +6991,22 @@ public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
     }
   }
 
+  /// <summary>Field number for the "signature" field.</summary>
+  public const int SignatureFieldNumber = 9;
+  private int signature_;
+  /// <summary>
+  ///签名
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Signature {
+    get { return signature_; }
+    set {
+      signature_ = value;
+    }
+  }
+
   /// <summary>Field number for the "zmd_game_id" field.</summary>
-  public const int ZmdGameIdFieldNumber = 9;
+  public const int ZmdGameIdFieldNumber = 10;
   private int zmdGameId_;
   /// <summary>
   ///走马灯数据记录
@@ -6924,7 +7020,7 @@ public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
   }
 
   /// <summary>Field number for the "zmd_win_gold" field.</summary>
-  public const int ZmdWinGoldFieldNumber = 10;
+  public const int ZmdWinGoldFieldNumber = 11;
   private ulong zmdWinGold_;
   /// <summary>
   ///走马灯数据记录
@@ -6958,6 +7054,7 @@ public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
     if (PhoneNum != other.PhoneNum) return false;
     if (VipLevel != other.VipLevel) return false;
     if (AvatarFrame != other.AvatarFrame) return false;
+    if (Signature != other.Signature) return false;
     if (ZmdGameId != other.ZmdGameId) return false;
     if (ZmdWinGold != other.ZmdWinGold) return false;
     return Equals(_unknownFields, other._unknownFields);
@@ -6974,6 +7071,7 @@ public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
     if (PhoneNum.Length != 0) hash ^= PhoneNum.GetHashCode();
     if (VipLevel != 0) hash ^= VipLevel.GetHashCode();
     if (AvatarFrame != 0) hash ^= AvatarFrame.GetHashCode();
+    if (Signature != 0) hash ^= Signature.GetHashCode();
     if (ZmdGameId != 0) hash ^= ZmdGameId.GetHashCode();
     if (ZmdWinGold != 0UL) hash ^= ZmdWinGold.GetHashCode();
     if (_unknownFields != null) {
@@ -7024,12 +7122,16 @@ public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
       output.WriteRawTag(64);
       output.WriteInt32(AvatarFrame);
     }
-    if (ZmdGameId != 0) {
+    if (Signature != 0) {
       output.WriteRawTag(72);
+      output.WriteInt32(Signature);
+    }
+    if (ZmdGameId != 0) {
+      output.WriteRawTag(80);
       output.WriteInt32(ZmdGameId);
     }
     if (ZmdWinGold != 0UL) {
-      output.WriteRawTag(80);
+      output.WriteRawTag(88);
       output.WriteUInt64(ZmdWinGold);
     }
     if (_unknownFields != null) {
@@ -7073,12 +7175,16 @@ public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
       output.WriteRawTag(64);
       output.WriteInt32(AvatarFrame);
     }
-    if (ZmdGameId != 0) {
+    if (Signature != 0) {
       output.WriteRawTag(72);
+      output.WriteInt32(Signature);
+    }
+    if (ZmdGameId != 0) {
+      output.WriteRawTag(80);
       output.WriteInt32(ZmdGameId);
     }
     if (ZmdWinGold != 0UL) {
-      output.WriteRawTag(80);
+      output.WriteRawTag(88);
       output.WriteUInt64(ZmdWinGold);
     }
     if (_unknownFields != null) {
@@ -7113,6 +7219,9 @@ public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
     }
     if (AvatarFrame != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(AvatarFrame);
+    }
+    if (Signature != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Signature);
     }
     if (ZmdGameId != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(ZmdGameId);
@@ -7154,6 +7263,9 @@ public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
     }
     if (other.AvatarFrame != 0) {
       AvatarFrame = other.AvatarFrame;
+    }
+    if (other.Signature != 0) {
+      Signature = other.Signature;
     }
     if (other.ZmdGameId != 0) {
       ZmdGameId = other.ZmdGameId;
@@ -7208,10 +7320,14 @@ public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
           break;
         }
         case 72: {
-          ZmdGameId = input.ReadInt32();
+          Signature = input.ReadInt32();
           break;
         }
         case 80: {
+          ZmdGameId = input.ReadInt32();
+          break;
+        }
+        case 88: {
           ZmdWinGold = input.ReadUInt64();
           break;
         }
@@ -7262,10 +7378,14 @@ public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
           break;
         }
         case 72: {
-          ZmdGameId = input.ReadInt32();
+          Signature = input.ReadInt32();
           break;
         }
         case 80: {
+          ZmdGameId = input.ReadInt32();
+          break;
+        }
+        case 88: {
           ZmdWinGold = input.ReadUInt64();
           break;
         }
@@ -7490,15 +7610,15 @@ public sealed partial class MsgActiveInfo : pb::IMessage<MsgActiveInfo>
 
 }
 
-public sealed partial class sActiveInfoSC : pb::IMessage<sActiveInfoSC>
+public sealed partial class ActiveInfoRet : pb::IMessage<ActiveInfoRet>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     , pb::IBufferMessage
 #endif
 {
-  private static readonly pb::MessageParser<sActiveInfoSC> _parser = new pb::MessageParser<sActiveInfoSC>(() => new sActiveInfoSC());
+  private static readonly pb::MessageParser<ActiveInfoRet> _parser = new pb::MessageParser<ActiveInfoRet>(() => new ActiveInfoRet());
   private pb::UnknownFieldSet _unknownFields;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pb::MessageParser<sActiveInfoSC> Parser { get { return _parser; } }
+  public static pb::MessageParser<ActiveInfoRet> Parser { get { return _parser; } }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
@@ -7511,14 +7631,14 @@ public sealed partial class sActiveInfoSC : pb::IMessage<sActiveInfoSC>
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public sActiveInfoSC() {
+  public ActiveInfoRet() {
     OnConstruction();
   }
 
   partial void OnConstruction();
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public sActiveInfoSC(sActiveInfoSC other) : this() {
+  public ActiveInfoRet(ActiveInfoRet other) : this() {
     activeId_ = other.activeId_;
     subActiveId_ = other.subActiveId_;
     param1_ = other.param1_;
@@ -7534,15 +7654,15 @@ public sealed partial class sActiveInfoSC : pb::IMessage<sActiveInfoSC>
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public sActiveInfoSC Clone() {
-    return new sActiveInfoSC(this);
+  public ActiveInfoRet Clone() {
+    return new ActiveInfoRet(this);
   }
 
   /// <summary>Field number for the "active_id" field.</summary>
   public const int ActiveIdFieldNumber = 1;
   private int activeId_;
   /// <summary>
-  ///活动id: 1：充值返利 2：打码返利 3：在线奖励 4：每日随机活动 5：每日反馈 6：新手任务
+  ///活动id: 5：每日反馈 6：新手任务邀请码 7：新手任务累充 8：新手任务游戏次数(多福多寿) 9：在线奖励10：新手任务游戏次数(龙虎斗) 11：新手任务游戏次数(小火箭)
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int ActiveId {
@@ -7682,11 +7802,11 @@ public sealed partial class sActiveInfoSC : pb::IMessage<sActiveInfoSC>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
-    return Equals(other as sActiveInfoSC);
+    return Equals(other as ActiveInfoRet);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Equals(sActiveInfoSC other) {
+  public bool Equals(ActiveInfoRet other) {
     if (ReferenceEquals(other, null)) {
       return false;
     }
@@ -7883,7 +8003,7 @@ public sealed partial class sActiveInfoSC : pb::IMessage<sActiveInfoSC>
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(sActiveInfoSC other) {
+  public void MergeFrom(ActiveInfoRet other) {
     if (other == null) {
       return;
     }
@@ -8043,15 +8163,15 @@ public sealed partial class sActiveInfoSC : pb::IMessage<sActiveInfoSC>
 
 }
 
-public sealed partial class sActiveInfoSCRet : pb::IMessage<sActiveInfoSCRet>
+public sealed partial class MsgActiveInfoSCRet : pb::IMessage<MsgActiveInfoSCRet>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     , pb::IBufferMessage
 #endif
 {
-  private static readonly pb::MessageParser<sActiveInfoSCRet> _parser = new pb::MessageParser<sActiveInfoSCRet>(() => new sActiveInfoSCRet());
+  private static readonly pb::MessageParser<MsgActiveInfoSCRet> _parser = new pb::MessageParser<MsgActiveInfoSCRet>(() => new MsgActiveInfoSCRet());
   private pb::UnknownFieldSet _unknownFields;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pb::MessageParser<sActiveInfoSCRet> Parser { get { return _parser; } }
+  public static pb::MessageParser<MsgActiveInfoSCRet> Parser { get { return _parser; } }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
@@ -8064,40 +8184,40 @@ public sealed partial class sActiveInfoSCRet : pb::IMessage<sActiveInfoSCRet>
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public sActiveInfoSCRet() {
+  public MsgActiveInfoSCRet() {
     OnConstruction();
   }
 
   partial void OnConstruction();
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public sActiveInfoSCRet(sActiveInfoSCRet other) : this() {
+  public MsgActiveInfoSCRet(MsgActiveInfoSCRet other) : this() {
     vecInfo_ = other.vecInfo_.Clone();
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public sActiveInfoSCRet Clone() {
-    return new sActiveInfoSCRet(this);
+  public MsgActiveInfoSCRet Clone() {
+    return new MsgActiveInfoSCRet(this);
   }
 
   /// <summary>Field number for the "vec_info" field.</summary>
   public const int VecInfoFieldNumber = 1;
-  private static readonly pb::FieldCodec<global::sActiveInfoSC> _repeated_vecInfo_codec
-      = pb::FieldCodec.ForMessage(10, global::sActiveInfoSC.Parser);
-  private readonly pbc::RepeatedField<global::sActiveInfoSC> vecInfo_ = new pbc::RepeatedField<global::sActiveInfoSC>();
+  private static readonly pb::FieldCodec<global::ActiveInfoRet> _repeated_vecInfo_codec
+      = pb::FieldCodec.ForMessage(10, global::ActiveInfoRet.Parser);
+  private readonly pbc::RepeatedField<global::ActiveInfoRet> vecInfo_ = new pbc::RepeatedField<global::ActiveInfoRet>();
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public pbc::RepeatedField<global::sActiveInfoSC> VecInfo {
+  public pbc::RepeatedField<global::ActiveInfoRet> VecInfo {
     get { return vecInfo_; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
-    return Equals(other as sActiveInfoSCRet);
+    return Equals(other as MsgActiveInfoSCRet);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Equals(sActiveInfoSCRet other) {
+  public bool Equals(MsgActiveInfoSCRet other) {
     if (ReferenceEquals(other, null)) {
       return false;
     }
@@ -8156,7 +8276,7 @@ public sealed partial class sActiveInfoSCRet : pb::IMessage<sActiveInfoSCRet>
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(sActiveInfoSCRet other) {
+  public void MergeFrom(MsgActiveInfoSCRet other) {
     if (other == null) {
       return;
     }
@@ -8195,6 +8315,3782 @@ public sealed partial class sActiveInfoSCRet : pb::IMessage<sActiveInfoSCRet>
           break;
         case 10: {
           vecInfo_.AddEntriesFrom(ref input, _repeated_vecInfo_codec);
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+public sealed partial class MsgActiveInfoCSPick : pb::IMessage<MsgActiveInfoCSPick>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgActiveInfoCSPick> _parser = new pb::MessageParser<MsgActiveInfoCSPick>(() => new MsgActiveInfoCSPick());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgActiveInfoCSPick> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[26]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgActiveInfoCSPick() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgActiveInfoCSPick(MsgActiveInfoCSPick other) : this() {
+    userId_ = other.userId_;
+    activeId_ = other.activeId_;
+    subActiveId_ = other.subActiveId_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgActiveInfoCSPick Clone() {
+    return new MsgActiveInfoCSPick(this);
+  }
+
+  /// <summary>Field number for the "user_id" field.</summary>
+  public const int UserIdFieldNumber = 1;
+  private int userId_;
+  /// <summary>
+  ///玩家id
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int UserId {
+    get { return userId_; }
+    set {
+      userId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "active_id" field.</summary>
+  public const int ActiveIdFieldNumber = 2;
+  private int activeId_;
+  /// <summary>
+  ///活动id: 3在线奖励
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int ActiveId {
+    get { return activeId_; }
+    set {
+      activeId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "sub_active_id" field.</summary>
+  public const int SubActiveIdFieldNumber = 3;
+  private int subActiveId_;
+  /// <summary>
+  ///活动id: 5：每日反馈 6：新手任务邀请码 7：新手任务累充 8：新手任务游戏次数(多福多寿) 9：在线奖励10：新手任务游戏次数(龙虎斗) 11：新手任务游戏次数(小火箭)
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int SubActiveId {
+    get { return subActiveId_; }
+    set {
+      subActiveId_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgActiveInfoCSPick);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgActiveInfoCSPick other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (UserId != other.UserId) return false;
+    if (ActiveId != other.ActiveId) return false;
+    if (SubActiveId != other.SubActiveId) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (UserId != 0) hash ^= UserId.GetHashCode();
+    if (ActiveId != 0) hash ^= ActiveId.GetHashCode();
+    if (SubActiveId != 0) hash ^= SubActiveId.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (UserId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(UserId);
+    }
+    if (ActiveId != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(ActiveId);
+    }
+    if (SubActiveId != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(SubActiveId);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (UserId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(UserId);
+    }
+    if (ActiveId != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(ActiveId);
+    }
+    if (SubActiveId != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(SubActiveId);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (UserId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserId);
+    }
+    if (ActiveId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(ActiveId);
+    }
+    if (SubActiveId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(SubActiveId);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgActiveInfoCSPick other) {
+    if (other == null) {
+      return;
+    }
+    if (other.UserId != 0) {
+      UserId = other.UserId;
+    }
+    if (other.ActiveId != 0) {
+      ActiveId = other.ActiveId;
+    }
+    if (other.SubActiveId != 0) {
+      SubActiveId = other.SubActiveId;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          UserId = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          ActiveId = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          SubActiveId = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          UserId = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          ActiveId = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          SubActiveId = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+public sealed partial class MsgActiveInfoSCPick : pb::IMessage<MsgActiveInfoSCPick>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgActiveInfoSCPick> _parser = new pb::MessageParser<MsgActiveInfoSCPick>(() => new MsgActiveInfoSCPick());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgActiveInfoSCPick> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[27]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgActiveInfoSCPick() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgActiveInfoSCPick(MsgActiveInfoSCPick other) : this() {
+    activeId_ = other.activeId_;
+    subActiveId_ = other.subActiveId_;
+    param1_ = other.param1_;
+    param2_ = other.param2_;
+    param3_ = other.param3_;
+    progress1_ = other.progress1_;
+    progress2_ = other.progress2_;
+    progress3_ = other.progress3_;
+    reward_ = other.reward_;
+    rewardType_ = other.rewardType_;
+    isPick_ = other.isPick_;
+    res_ = other.res_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgActiveInfoSCPick Clone() {
+    return new MsgActiveInfoSCPick(this);
+  }
+
+  /// <summary>Field number for the "active_id" field.</summary>
+  public const int ActiveIdFieldNumber = 1;
+  private int activeId_;
+  /// <summary>
+  ///活动id: 5：每日反馈 6：新手任务邀请码 7：新手任务累充 8：新手任务游戏次数(多福多寿) 9：在线奖励10：新手任务游戏次数(龙虎斗) 11：新手任务游戏次数(小火箭)
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int ActiveId {
+    get { return activeId_; }
+    set {
+      activeId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "sub_active_id" field.</summary>
+  public const int SubActiveIdFieldNumber = 2;
+  private int subActiveId_;
+  /// <summary>
+  ///子活动id
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int SubActiveId {
+    get { return subActiveId_; }
+    set {
+      subActiveId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "param1" field.</summary>
+  public const int Param1FieldNumber = 3;
+  private int param1_;
+  /// <summary>
+  ///完成条件
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Param1 {
+    get { return param1_; }
+    set {
+      param1_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "param2" field.</summary>
+  public const int Param2FieldNumber = 4;
+  private int param2_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Param2 {
+    get { return param2_; }
+    set {
+      param2_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "param3" field.</summary>
+  public const int Param3FieldNumber = 5;
+  private int param3_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Param3 {
+    get { return param3_; }
+    set {
+      param3_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "progress1" field.</summary>
+  public const int Progress1FieldNumber = 6;
+  private int progress1_;
+  /// <summary>
+  ///完成度 负数为完成 正数为未完成
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Progress1 {
+    get { return progress1_; }
+    set {
+      progress1_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "progress2" field.</summary>
+  public const int Progress2FieldNumber = 7;
+  private int progress2_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Progress2 {
+    get { return progress2_; }
+    set {
+      progress2_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "progress3" field.</summary>
+  public const int Progress3FieldNumber = 8;
+  private int progress3_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Progress3 {
+    get { return progress3_; }
+    set {
+      progress3_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "reward" field.</summary>
+  public const int RewardFieldNumber = 9;
+  private int reward_;
+  /// <summary>
+  ///活动奖励
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Reward {
+    get { return reward_; }
+    set {
+      reward_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "reward_type" field.</summary>
+  public const int RewardTypeFieldNumber = 10;
+  private int rewardType_;
+  /// <summary>
+  ///活动奖励类型2转盘奖励1金币
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int RewardType {
+    get { return rewardType_; }
+    set {
+      rewardType_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "is_pick" field.</summary>
+  public const int IsPickFieldNumber = 11;
+  private int isPick_;
+  /// <summary>
+  ///活动奖励是否领取
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int IsPick {
+    get { return isPick_; }
+    set {
+      isPick_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "res" field.</summary>
+  public const int ResFieldNumber = 12;
+  private bool res_;
+  /// <summary>
+  ///活动奖励是否领取成功
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Res {
+    get { return res_; }
+    set {
+      res_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgActiveInfoSCPick);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgActiveInfoSCPick other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (ActiveId != other.ActiveId) return false;
+    if (SubActiveId != other.SubActiveId) return false;
+    if (Param1 != other.Param1) return false;
+    if (Param2 != other.Param2) return false;
+    if (Param3 != other.Param3) return false;
+    if (Progress1 != other.Progress1) return false;
+    if (Progress2 != other.Progress2) return false;
+    if (Progress3 != other.Progress3) return false;
+    if (Reward != other.Reward) return false;
+    if (RewardType != other.RewardType) return false;
+    if (IsPick != other.IsPick) return false;
+    if (Res != other.Res) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (ActiveId != 0) hash ^= ActiveId.GetHashCode();
+    if (SubActiveId != 0) hash ^= SubActiveId.GetHashCode();
+    if (Param1 != 0) hash ^= Param1.GetHashCode();
+    if (Param2 != 0) hash ^= Param2.GetHashCode();
+    if (Param3 != 0) hash ^= Param3.GetHashCode();
+    if (Progress1 != 0) hash ^= Progress1.GetHashCode();
+    if (Progress2 != 0) hash ^= Progress2.GetHashCode();
+    if (Progress3 != 0) hash ^= Progress3.GetHashCode();
+    if (Reward != 0) hash ^= Reward.GetHashCode();
+    if (RewardType != 0) hash ^= RewardType.GetHashCode();
+    if (IsPick != 0) hash ^= IsPick.GetHashCode();
+    if (Res != false) hash ^= Res.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (ActiveId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(ActiveId);
+    }
+    if (SubActiveId != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(SubActiveId);
+    }
+    if (Param1 != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(Param1);
+    }
+    if (Param2 != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(Param2);
+    }
+    if (Param3 != 0) {
+      output.WriteRawTag(40);
+      output.WriteInt32(Param3);
+    }
+    if (Progress1 != 0) {
+      output.WriteRawTag(48);
+      output.WriteInt32(Progress1);
+    }
+    if (Progress2 != 0) {
+      output.WriteRawTag(56);
+      output.WriteInt32(Progress2);
+    }
+    if (Progress3 != 0) {
+      output.WriteRawTag(64);
+      output.WriteInt32(Progress3);
+    }
+    if (Reward != 0) {
+      output.WriteRawTag(72);
+      output.WriteInt32(Reward);
+    }
+    if (RewardType != 0) {
+      output.WriteRawTag(80);
+      output.WriteInt32(RewardType);
+    }
+    if (IsPick != 0) {
+      output.WriteRawTag(88);
+      output.WriteInt32(IsPick);
+    }
+    if (Res != false) {
+      output.WriteRawTag(96);
+      output.WriteBool(Res);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (ActiveId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(ActiveId);
+    }
+    if (SubActiveId != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(SubActiveId);
+    }
+    if (Param1 != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(Param1);
+    }
+    if (Param2 != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(Param2);
+    }
+    if (Param3 != 0) {
+      output.WriteRawTag(40);
+      output.WriteInt32(Param3);
+    }
+    if (Progress1 != 0) {
+      output.WriteRawTag(48);
+      output.WriteInt32(Progress1);
+    }
+    if (Progress2 != 0) {
+      output.WriteRawTag(56);
+      output.WriteInt32(Progress2);
+    }
+    if (Progress3 != 0) {
+      output.WriteRawTag(64);
+      output.WriteInt32(Progress3);
+    }
+    if (Reward != 0) {
+      output.WriteRawTag(72);
+      output.WriteInt32(Reward);
+    }
+    if (RewardType != 0) {
+      output.WriteRawTag(80);
+      output.WriteInt32(RewardType);
+    }
+    if (IsPick != 0) {
+      output.WriteRawTag(88);
+      output.WriteInt32(IsPick);
+    }
+    if (Res != false) {
+      output.WriteRawTag(96);
+      output.WriteBool(Res);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (ActiveId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(ActiveId);
+    }
+    if (SubActiveId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(SubActiveId);
+    }
+    if (Param1 != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Param1);
+    }
+    if (Param2 != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Param2);
+    }
+    if (Param3 != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Param3);
+    }
+    if (Progress1 != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Progress1);
+    }
+    if (Progress2 != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Progress2);
+    }
+    if (Progress3 != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Progress3);
+    }
+    if (Reward != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Reward);
+    }
+    if (RewardType != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(RewardType);
+    }
+    if (IsPick != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(IsPick);
+    }
+    if (Res != false) {
+      size += 1 + 1;
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgActiveInfoSCPick other) {
+    if (other == null) {
+      return;
+    }
+    if (other.ActiveId != 0) {
+      ActiveId = other.ActiveId;
+    }
+    if (other.SubActiveId != 0) {
+      SubActiveId = other.SubActiveId;
+    }
+    if (other.Param1 != 0) {
+      Param1 = other.Param1;
+    }
+    if (other.Param2 != 0) {
+      Param2 = other.Param2;
+    }
+    if (other.Param3 != 0) {
+      Param3 = other.Param3;
+    }
+    if (other.Progress1 != 0) {
+      Progress1 = other.Progress1;
+    }
+    if (other.Progress2 != 0) {
+      Progress2 = other.Progress2;
+    }
+    if (other.Progress3 != 0) {
+      Progress3 = other.Progress3;
+    }
+    if (other.Reward != 0) {
+      Reward = other.Reward;
+    }
+    if (other.RewardType != 0) {
+      RewardType = other.RewardType;
+    }
+    if (other.IsPick != 0) {
+      IsPick = other.IsPick;
+    }
+    if (other.Res != false) {
+      Res = other.Res;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          ActiveId = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          SubActiveId = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          Param1 = input.ReadInt32();
+          break;
+        }
+        case 32: {
+          Param2 = input.ReadInt32();
+          break;
+        }
+        case 40: {
+          Param3 = input.ReadInt32();
+          break;
+        }
+        case 48: {
+          Progress1 = input.ReadInt32();
+          break;
+        }
+        case 56: {
+          Progress2 = input.ReadInt32();
+          break;
+        }
+        case 64: {
+          Progress3 = input.ReadInt32();
+          break;
+        }
+        case 72: {
+          Reward = input.ReadInt32();
+          break;
+        }
+        case 80: {
+          RewardType = input.ReadInt32();
+          break;
+        }
+        case 88: {
+          IsPick = input.ReadInt32();
+          break;
+        }
+        case 96: {
+          Res = input.ReadBool();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          ActiveId = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          SubActiveId = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          Param1 = input.ReadInt32();
+          break;
+        }
+        case 32: {
+          Param2 = input.ReadInt32();
+          break;
+        }
+        case 40: {
+          Param3 = input.ReadInt32();
+          break;
+        }
+        case 48: {
+          Progress1 = input.ReadInt32();
+          break;
+        }
+        case 56: {
+          Progress2 = input.ReadInt32();
+          break;
+        }
+        case 64: {
+          Progress3 = input.ReadInt32();
+          break;
+        }
+        case 72: {
+          Reward = input.ReadInt32();
+          break;
+        }
+        case 80: {
+          RewardType = input.ReadInt32();
+          break;
+        }
+        case 88: {
+          IsPick = input.ReadInt32();
+          break;
+        }
+        case 96: {
+          Res = input.ReadBool();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+public sealed partial class MsgModifySignature : pb::IMessage<MsgModifySignature>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgModifySignature> _parser = new pb::MessageParser<MsgModifySignature>(() => new MsgModifySignature());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgModifySignature> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[28]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgModifySignature() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgModifySignature(MsgModifySignature other) : this() {
+    userId_ = other.userId_;
+    signature_ = other.signature_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgModifySignature Clone() {
+    return new MsgModifySignature(this);
+  }
+
+  /// <summary>Field number for the "user_id" field.</summary>
+  public const int UserIdFieldNumber = 1;
+  private int userId_;
+  /// <summary>
+  ///userid
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int UserId {
+    get { return userId_; }
+    set {
+      userId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "signature" field.</summary>
+  public const int SignatureFieldNumber = 2;
+  private string signature_ = "";
+  /// <summary>
+  ///新的签名
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string Signature {
+    get { return signature_; }
+    set {
+      signature_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgModifySignature);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgModifySignature other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (UserId != other.UserId) return false;
+    if (Signature != other.Signature) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (UserId != 0) hash ^= UserId.GetHashCode();
+    if (Signature.Length != 0) hash ^= Signature.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (UserId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(UserId);
+    }
+    if (Signature.Length != 0) {
+      output.WriteRawTag(18);
+      output.WriteString(Signature);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (UserId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(UserId);
+    }
+    if (Signature.Length != 0) {
+      output.WriteRawTag(18);
+      output.WriteString(Signature);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (UserId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserId);
+    }
+    if (Signature.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Signature);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgModifySignature other) {
+    if (other == null) {
+      return;
+    }
+    if (other.UserId != 0) {
+      UserId = other.UserId;
+    }
+    if (other.Signature.Length != 0) {
+      Signature = other.Signature;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          UserId = input.ReadInt32();
+          break;
+        }
+        case 18: {
+          Signature = input.ReadString();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          UserId = input.ReadInt32();
+          break;
+        }
+        case 18: {
+          Signature = input.ReadString();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///银行
+///请求验证码
+/// </summary>
+public sealed partial class MsgBankCode : pb::IMessage<MsgBankCode>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgBankCode> _parser = new pb::MessageParser<MsgBankCode>(() => new MsgBankCode());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgBankCode> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[29]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankCode() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankCode(MsgBankCode other) : this() {
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankCode Clone() {
+    return new MsgBankCode(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgBankCode);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgBankCode other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgBankCode other) {
+    if (other == null) {
+      return;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///修改密码
+/// </summary>
+public sealed partial class MsgBankChangePassword : pb::IMessage<MsgBankChangePassword>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgBankChangePassword> _parser = new pb::MessageParser<MsgBankChangePassword>(() => new MsgBankChangePassword());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgBankChangePassword> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[30]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankChangePassword() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankChangePassword(MsgBankChangePassword other) : this() {
+    password_ = other.password_;
+    code_ = other.code_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankChangePassword Clone() {
+    return new MsgBankChangePassword(this);
+  }
+
+  /// <summary>Field number for the "password" field.</summary>
+  public const int PasswordFieldNumber = 1;
+  private string password_ = "";
+  /// <summary>
+  ///密码
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string Password {
+    get { return password_; }
+    set {
+      password_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "code" field.</summary>
+  public const int CodeFieldNumber = 2;
+  private int code_;
+  /// <summary>
+  ///验证码
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Code {
+    get { return code_; }
+    set {
+      code_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgBankChangePassword);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgBankChangePassword other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (Password != other.Password) return false;
+    if (Code != other.Code) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (Password.Length != 0) hash ^= Password.GetHashCode();
+    if (Code != 0) hash ^= Code.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (Password.Length != 0) {
+      output.WriteRawTag(10);
+      output.WriteString(Password);
+    }
+    if (Code != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(Code);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (Password.Length != 0) {
+      output.WriteRawTag(10);
+      output.WriteString(Password);
+    }
+    if (Code != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(Code);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (Password.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Password);
+    }
+    if (Code != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Code);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgBankChangePassword other) {
+    if (other == null) {
+      return;
+    }
+    if (other.Password.Length != 0) {
+      Password = other.Password;
+    }
+    if (other.Code != 0) {
+      Code = other.Code;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 10: {
+          Password = input.ReadString();
+          break;
+        }
+        case 16: {
+          Code = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 10: {
+          Password = input.ReadString();
+          break;
+        }
+        case 16: {
+          Code = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///银行存取操作
+/// </summary>
+public sealed partial class MsgBankOperate : pb::IMessage<MsgBankOperate>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgBankOperate> _parser = new pb::MessageParser<MsgBankOperate>(() => new MsgBankOperate());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgBankOperate> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[31]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankOperate() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankOperate(MsgBankOperate other) : this() {
+    gold_ = other.gold_;
+    operateType_ = other.operateType_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankOperate Clone() {
+    return new MsgBankOperate(this);
+  }
+
+  /// <summary>Field number for the "gold" field.</summary>
+  public const int GoldFieldNumber = 1;
+  private long gold_;
+  /// <summary>
+  ///操作金币
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public long Gold {
+    get { return gold_; }
+    set {
+      gold_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "operate_type" field.</summary>
+  public const int OperateTypeFieldNumber = 2;
+  private int operateType_;
+  /// <summary>
+  ///1银行存2银行取
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int OperateType {
+    get { return operateType_; }
+    set {
+      operateType_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgBankOperate);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgBankOperate other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (Gold != other.Gold) return false;
+    if (OperateType != other.OperateType) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (Gold != 0L) hash ^= Gold.GetHashCode();
+    if (OperateType != 0) hash ^= OperateType.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (Gold != 0L) {
+      output.WriteRawTag(8);
+      output.WriteInt64(Gold);
+    }
+    if (OperateType != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(OperateType);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (Gold != 0L) {
+      output.WriteRawTag(8);
+      output.WriteInt64(Gold);
+    }
+    if (OperateType != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(OperateType);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (Gold != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(Gold);
+    }
+    if (OperateType != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(OperateType);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgBankOperate other) {
+    if (other == null) {
+      return;
+    }
+    if (other.Gold != 0L) {
+      Gold = other.Gold;
+    }
+    if (other.OperateType != 0) {
+      OperateType = other.OperateType;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          Gold = input.ReadInt64();
+          break;
+        }
+        case 16: {
+          OperateType = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          Gold = input.ReadInt64();
+          break;
+        }
+        case 16: {
+          OperateType = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///银行存取操作结果
+/// </summary>
+public sealed partial class MsgBankTakeOut : pb::IMessage<MsgBankTakeOut>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgBankTakeOut> _parser = new pb::MessageParser<MsgBankTakeOut>(() => new MsgBankTakeOut());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgBankTakeOut> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[32]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankTakeOut() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankTakeOut(MsgBankTakeOut other) : this() {
+    retValue_ = other.retValue_;
+    userGold_ = other.userGold_;
+    bankGold_ = other.bankGold_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankTakeOut Clone() {
+    return new MsgBankTakeOut(this);
+  }
+
+  /// <summary>Field number for the "ret_value" field.</summary>
+  public const int RetValueFieldNumber = 1;
+  private int retValue_;
+  /// <summary>
+  ///返回值 0成功1失败
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int RetValue {
+    get { return retValue_; }
+    set {
+      retValue_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "user_gold" field.</summary>
+  public const int UserGoldFieldNumber = 2;
+  private long userGold_;
+  /// <summary>
+  ///玩家携带金币
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public long UserGold {
+    get { return userGold_; }
+    set {
+      userGold_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "bank_gold" field.</summary>
+  public const int BankGoldFieldNumber = 3;
+  private long bankGold_;
+  /// <summary>
+  ///玩家银行金币
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public long BankGold {
+    get { return bankGold_; }
+    set {
+      bankGold_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgBankTakeOut);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgBankTakeOut other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (RetValue != other.RetValue) return false;
+    if (UserGold != other.UserGold) return false;
+    if (BankGold != other.BankGold) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (RetValue != 0) hash ^= RetValue.GetHashCode();
+    if (UserGold != 0L) hash ^= UserGold.GetHashCode();
+    if (BankGold != 0L) hash ^= BankGold.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (RetValue != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(RetValue);
+    }
+    if (UserGold != 0L) {
+      output.WriteRawTag(16);
+      output.WriteInt64(UserGold);
+    }
+    if (BankGold != 0L) {
+      output.WriteRawTag(24);
+      output.WriteInt64(BankGold);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (RetValue != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(RetValue);
+    }
+    if (UserGold != 0L) {
+      output.WriteRawTag(16);
+      output.WriteInt64(UserGold);
+    }
+    if (BankGold != 0L) {
+      output.WriteRawTag(24);
+      output.WriteInt64(BankGold);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (RetValue != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(RetValue);
+    }
+    if (UserGold != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(UserGold);
+    }
+    if (BankGold != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(BankGold);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgBankTakeOut other) {
+    if (other == null) {
+      return;
+    }
+    if (other.RetValue != 0) {
+      RetValue = other.RetValue;
+    }
+    if (other.UserGold != 0L) {
+      UserGold = other.UserGold;
+    }
+    if (other.BankGold != 0L) {
+      BankGold = other.BankGold;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          RetValue = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          UserGold = input.ReadInt64();
+          break;
+        }
+        case 24: {
+          BankGold = input.ReadInt64();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          RetValue = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          UserGold = input.ReadInt64();
+          break;
+        }
+        case 24: {
+          BankGold = input.ReadInt64();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///银行转账
+/// </summary>
+public sealed partial class MsgBankTransfer : pb::IMessage<MsgBankTransfer>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgBankTransfer> _parser = new pb::MessageParser<MsgBankTransfer>(() => new MsgBankTransfer());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgBankTransfer> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[33]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankTransfer() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankTransfer(MsgBankTransfer other) : this() {
+    recvUserId_ = other.recvUserId_;
+    transferGold_ = other.transferGold_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankTransfer Clone() {
+    return new MsgBankTransfer(this);
+  }
+
+  /// <summary>Field number for the "recv_user_id" field.</summary>
+  public const int RecvUserIdFieldNumber = 1;
+  private int recvUserId_;
+  /// <summary>
+  ///接受Id
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int RecvUserId {
+    get { return recvUserId_; }
+    set {
+      recvUserId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "transfer_gold" field.</summary>
+  public const int TransferGoldFieldNumber = 2;
+  private long transferGold_;
+  /// <summary>
+  ///操作金币
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public long TransferGold {
+    get { return transferGold_; }
+    set {
+      transferGold_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgBankTransfer);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgBankTransfer other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (RecvUserId != other.RecvUserId) return false;
+    if (TransferGold != other.TransferGold) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (RecvUserId != 0) hash ^= RecvUserId.GetHashCode();
+    if (TransferGold != 0L) hash ^= TransferGold.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (RecvUserId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(RecvUserId);
+    }
+    if (TransferGold != 0L) {
+      output.WriteRawTag(16);
+      output.WriteInt64(TransferGold);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (RecvUserId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(RecvUserId);
+    }
+    if (TransferGold != 0L) {
+      output.WriteRawTag(16);
+      output.WriteInt64(TransferGold);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (RecvUserId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(RecvUserId);
+    }
+    if (TransferGold != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(TransferGold);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgBankTransfer other) {
+    if (other == null) {
+      return;
+    }
+    if (other.RecvUserId != 0) {
+      RecvUserId = other.RecvUserId;
+    }
+    if (other.TransferGold != 0L) {
+      TransferGold = other.TransferGold;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          RecvUserId = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          TransferGold = input.ReadInt64();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          RecvUserId = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          TransferGold = input.ReadInt64();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///排行榜数据
+/// </summary>
+public sealed partial class MsgTopInfo : pb::IMessage<MsgTopInfo>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgTopInfo> _parser = new pb::MessageParser<MsgTopInfo>(() => new MsgTopInfo());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgTopInfo> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[34]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgTopInfo() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgTopInfo(MsgTopInfo other) : this() {
+    rankId_ = other.rankId_;
+    userId_ = other.userId_;
+    gold_ = other.gold_;
+    vipLevel_ = other.vipLevel_;
+    avatarFrame_ = other.avatarFrame_;
+    headUrl_ = other.headUrl_;
+    nickName_ = other.nickName_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgTopInfo Clone() {
+    return new MsgTopInfo(this);
+  }
+
+  /// <summary>Field number for the "rank_id" field.</summary>
+  public const int RankIdFieldNumber = 1;
+  private int rankId_;
+  /// <summary>
+  ///排行id
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int RankId {
+    get { return rankId_; }
+    set {
+      rankId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "user_id" field.</summary>
+  public const int UserIdFieldNumber = 2;
+  private int userId_;
+  /// <summary>
+  ///userid
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int UserId {
+    get { return userId_; }
+    set {
+      userId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "gold" field.</summary>
+  public const int GoldFieldNumber = 3;
+  private ulong gold_;
+  /// <summary>
+  ///金币
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public ulong Gold {
+    get { return gold_; }
+    set {
+      gold_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "vip_level" field.</summary>
+  public const int VipLevelFieldNumber = 4;
+  private uint vipLevel_;
+  /// <summary>
+  ///vip等级
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint VipLevel {
+    get { return vipLevel_; }
+    set {
+      vipLevel_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "avatar_frame" field.</summary>
+  public const int AvatarFrameFieldNumber = 5;
+  private int avatarFrame_;
+  /// <summary>
+  ///头像框
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int AvatarFrame {
+    get { return avatarFrame_; }
+    set {
+      avatarFrame_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "head_url" field.</summary>
+  public const int HeadUrlFieldNumber = 6;
+  private string headUrl_ = "";
+  /// <summary>
+  ///头像url
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string HeadUrl {
+    get { return headUrl_; }
+    set {
+      headUrl_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "nick_name" field.</summary>
+  public const int NickNameFieldNumber = 7;
+  private string nickName_ = "";
+  /// <summary>
+  ///昵称
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string NickName {
+    get { return nickName_; }
+    set {
+      nickName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgTopInfo);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgTopInfo other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (RankId != other.RankId) return false;
+    if (UserId != other.UserId) return false;
+    if (Gold != other.Gold) return false;
+    if (VipLevel != other.VipLevel) return false;
+    if (AvatarFrame != other.AvatarFrame) return false;
+    if (HeadUrl != other.HeadUrl) return false;
+    if (NickName != other.NickName) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (RankId != 0) hash ^= RankId.GetHashCode();
+    if (UserId != 0) hash ^= UserId.GetHashCode();
+    if (Gold != 0UL) hash ^= Gold.GetHashCode();
+    if (VipLevel != 0) hash ^= VipLevel.GetHashCode();
+    if (AvatarFrame != 0) hash ^= AvatarFrame.GetHashCode();
+    if (HeadUrl.Length != 0) hash ^= HeadUrl.GetHashCode();
+    if (NickName.Length != 0) hash ^= NickName.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (RankId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(RankId);
+    }
+    if (UserId != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(UserId);
+    }
+    if (Gold != 0UL) {
+      output.WriteRawTag(24);
+      output.WriteUInt64(Gold);
+    }
+    if (VipLevel != 0) {
+      output.WriteRawTag(32);
+      output.WriteUInt32(VipLevel);
+    }
+    if (AvatarFrame != 0) {
+      output.WriteRawTag(40);
+      output.WriteInt32(AvatarFrame);
+    }
+    if (HeadUrl.Length != 0) {
+      output.WriteRawTag(50);
+      output.WriteString(HeadUrl);
+    }
+    if (NickName.Length != 0) {
+      output.WriteRawTag(58);
+      output.WriteString(NickName);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (RankId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(RankId);
+    }
+    if (UserId != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(UserId);
+    }
+    if (Gold != 0UL) {
+      output.WriteRawTag(24);
+      output.WriteUInt64(Gold);
+    }
+    if (VipLevel != 0) {
+      output.WriteRawTag(32);
+      output.WriteUInt32(VipLevel);
+    }
+    if (AvatarFrame != 0) {
+      output.WriteRawTag(40);
+      output.WriteInt32(AvatarFrame);
+    }
+    if (HeadUrl.Length != 0) {
+      output.WriteRawTag(50);
+      output.WriteString(HeadUrl);
+    }
+    if (NickName.Length != 0) {
+      output.WriteRawTag(58);
+      output.WriteString(NickName);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (RankId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(RankId);
+    }
+    if (UserId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserId);
+    }
+    if (Gold != 0UL) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Gold);
+    }
+    if (VipLevel != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(VipLevel);
+    }
+    if (AvatarFrame != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(AvatarFrame);
+    }
+    if (HeadUrl.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(HeadUrl);
+    }
+    if (NickName.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(NickName);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgTopInfo other) {
+    if (other == null) {
+      return;
+    }
+    if (other.RankId != 0) {
+      RankId = other.RankId;
+    }
+    if (other.UserId != 0) {
+      UserId = other.UserId;
+    }
+    if (other.Gold != 0UL) {
+      Gold = other.Gold;
+    }
+    if (other.VipLevel != 0) {
+      VipLevel = other.VipLevel;
+    }
+    if (other.AvatarFrame != 0) {
+      AvatarFrame = other.AvatarFrame;
+    }
+    if (other.HeadUrl.Length != 0) {
+      HeadUrl = other.HeadUrl;
+    }
+    if (other.NickName.Length != 0) {
+      NickName = other.NickName;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          RankId = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          UserId = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          Gold = input.ReadUInt64();
+          break;
+        }
+        case 32: {
+          VipLevel = input.ReadUInt32();
+          break;
+        }
+        case 40: {
+          AvatarFrame = input.ReadInt32();
+          break;
+        }
+        case 50: {
+          HeadUrl = input.ReadString();
+          break;
+        }
+        case 58: {
+          NickName = input.ReadString();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          RankId = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          UserId = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          Gold = input.ReadUInt64();
+          break;
+        }
+        case 32: {
+          VipLevel = input.ReadUInt32();
+          break;
+        }
+        case 40: {
+          AvatarFrame = input.ReadInt32();
+          break;
+        }
+        case 50: {
+          HeadUrl = input.ReadString();
+          break;
+        }
+        case 58: {
+          NickName = input.ReadString();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+public sealed partial class MsgGetRank : pb::IMessage<MsgGetRank>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgGetRank> _parser = new pb::MessageParser<MsgGetRank>(() => new MsgGetRank());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgGetRank> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[35]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgGetRank() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgGetRank(MsgGetRank other) : this() {
+    rankType_ = other.rankType_;
+    userId_ = other.userId_;
+    currentPage_ = other.currentPage_;
+    maxRow_ = other.maxRow_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgGetRank Clone() {
+    return new MsgGetRank(this);
+  }
+
+  /// <summary>Field number for the "rank_type" field.</summary>
+  public const int RankTypeFieldNumber = 1;
+  private int rankType_;
+  /// <summary>
+  ///排行榜类型  1 大富豪排行榜 2 今日赢
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int RankType {
+    get { return rankType_; }
+    set {
+      rankType_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "user_id" field.</summary>
+  public const int UserIdFieldNumber = 2;
+  private int userId_;
+  /// <summary>
+  ///玩家userID
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int UserId {
+    get { return userId_; }
+    set {
+      userId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "current_page" field.</summary>
+  public const int CurrentPageFieldNumber = 3;
+  private int currentPage_;
+  /// <summary>
+  ///当前页
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CurrentPage {
+    get { return currentPage_; }
+    set {
+      currentPage_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "max_row" field.</summary>
+  public const int MaxRowFieldNumber = 4;
+  private int maxRow_;
+  /// <summary>
+  ///每页最大行数
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int MaxRow {
+    get { return maxRow_; }
+    set {
+      maxRow_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgGetRank);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgGetRank other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (RankType != other.RankType) return false;
+    if (UserId != other.UserId) return false;
+    if (CurrentPage != other.CurrentPage) return false;
+    if (MaxRow != other.MaxRow) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (RankType != 0) hash ^= RankType.GetHashCode();
+    if (UserId != 0) hash ^= UserId.GetHashCode();
+    if (CurrentPage != 0) hash ^= CurrentPage.GetHashCode();
+    if (MaxRow != 0) hash ^= MaxRow.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (RankType != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(RankType);
+    }
+    if (UserId != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(UserId);
+    }
+    if (CurrentPage != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(CurrentPage);
+    }
+    if (MaxRow != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(MaxRow);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (RankType != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(RankType);
+    }
+    if (UserId != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(UserId);
+    }
+    if (CurrentPage != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(CurrentPage);
+    }
+    if (MaxRow != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(MaxRow);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (RankType != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(RankType);
+    }
+    if (UserId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserId);
+    }
+    if (CurrentPage != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(CurrentPage);
+    }
+    if (MaxRow != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(MaxRow);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgGetRank other) {
+    if (other == null) {
+      return;
+    }
+    if (other.RankType != 0) {
+      RankType = other.RankType;
+    }
+    if (other.UserId != 0) {
+      UserId = other.UserId;
+    }
+    if (other.CurrentPage != 0) {
+      CurrentPage = other.CurrentPage;
+    }
+    if (other.MaxRow != 0) {
+      MaxRow = other.MaxRow;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          RankType = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          UserId = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          CurrentPage = input.ReadInt32();
+          break;
+        }
+        case 32: {
+          MaxRow = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          RankType = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          UserId = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          CurrentPage = input.ReadInt32();
+          break;
+        }
+        case 32: {
+          MaxRow = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///排行榜数据
+/// </summary>
+public sealed partial class MsgTopListResp : pb::IMessage<MsgTopListResp>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgTopListResp> _parser = new pb::MessageParser<MsgTopListResp>(() => new MsgTopListResp());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgTopListResp> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[36]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgTopListResp() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgTopListResp(MsgTopListResp other) : this() {
+    userId_ = other.userId_;
+    rankType_ = other.rankType_;
+    thisInfo_ = other.thisInfo_ != null ? other.thisInfo_.Clone() : null;
+    lists_ = other.lists_.Clone();
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgTopListResp Clone() {
+    return new MsgTopListResp(this);
+  }
+
+  /// <summary>Field number for the "user_id" field.</summary>
+  public const int UserIdFieldNumber = 1;
+  private int userId_;
+  /// <summary>
+  ///请求玩家userID
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int UserId {
+    get { return userId_; }
+    set {
+      userId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "rank_type" field.</summary>
+  public const int RankTypeFieldNumber = 2;
+  private int rankType_;
+  /// <summary>
+  ///排行榜类型 1: 财富排行榜 2：输赢排行榜
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int RankType {
+    get { return rankType_; }
+    set {
+      rankType_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "this_info" field.</summary>
+  public const int ThisInfoFieldNumber = 3;
+  private global::MsgTopInfo thisInfo_;
+  /// <summary>
+  ///自己的信息
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public global::MsgTopInfo ThisInfo {
+    get { return thisInfo_; }
+    set {
+      thisInfo_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "lists" field.</summary>
+  public const int ListsFieldNumber = 4;
+  private static readonly pb::FieldCodec<global::MsgTopInfo> _repeated_lists_codec
+      = pb::FieldCodec.ForMessage(34, global::MsgTopInfo.Parser);
+  private readonly pbc::RepeatedField<global::MsgTopInfo> lists_ = new pbc::RepeatedField<global::MsgTopInfo>();
+  /// <summary>
+  ///大富豪排行榜
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<global::MsgTopInfo> Lists {
+    get { return lists_; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgTopListResp);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgTopListResp other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (UserId != other.UserId) return false;
+    if (RankType != other.RankType) return false;
+    if (!object.Equals(ThisInfo, other.ThisInfo)) return false;
+    if(!lists_.Equals(other.lists_)) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (UserId != 0) hash ^= UserId.GetHashCode();
+    if (RankType != 0) hash ^= RankType.GetHashCode();
+    if (thisInfo_ != null) hash ^= ThisInfo.GetHashCode();
+    hash ^= lists_.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (UserId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(UserId);
+    }
+    if (RankType != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(RankType);
+    }
+    if (thisInfo_ != null) {
+      output.WriteRawTag(26);
+      output.WriteMessage(ThisInfo);
+    }
+    lists_.WriteTo(output, _repeated_lists_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (UserId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(UserId);
+    }
+    if (RankType != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(RankType);
+    }
+    if (thisInfo_ != null) {
+      output.WriteRawTag(26);
+      output.WriteMessage(ThisInfo);
+    }
+    lists_.WriteTo(ref output, _repeated_lists_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (UserId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserId);
+    }
+    if (RankType != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(RankType);
+    }
+    if (thisInfo_ != null) {
+      size += 1 + pb::CodedOutputStream.ComputeMessageSize(ThisInfo);
+    }
+    size += lists_.CalculateSize(_repeated_lists_codec);
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgTopListResp other) {
+    if (other == null) {
+      return;
+    }
+    if (other.UserId != 0) {
+      UserId = other.UserId;
+    }
+    if (other.RankType != 0) {
+      RankType = other.RankType;
+    }
+    if (other.thisInfo_ != null) {
+      if (thisInfo_ == null) {
+        ThisInfo = new global::MsgTopInfo();
+      }
+      ThisInfo.MergeFrom(other.ThisInfo);
+    }
+    lists_.Add(other.lists_);
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          UserId = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          RankType = input.ReadInt32();
+          break;
+        }
+        case 26: {
+          if (thisInfo_ == null) {
+            ThisInfo = new global::MsgTopInfo();
+          }
+          input.ReadMessage(ThisInfo);
+          break;
+        }
+        case 34: {
+          lists_.AddEntriesFrom(input, _repeated_lists_codec);
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          UserId = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          RankType = input.ReadInt32();
+          break;
+        }
+        case 26: {
+          if (thisInfo_ == null) {
+            ThisInfo = new global::MsgTopInfo();
+          }
+          input.ReadMessage(ThisInfo);
+          break;
+        }
+        case 34: {
+          lists_.AddEntriesFrom(ref input, _repeated_lists_codec);
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///银行转账
+/// </summary>
+public sealed partial class MsgBankTransferResp : pb::IMessage<MsgBankTransferResp>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgBankTransferResp> _parser = new pb::MessageParser<MsgBankTransferResp>(() => new MsgBankTransferResp());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgBankTransferResp> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[37]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankTransferResp() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankTransferResp(MsgBankTransferResp other) : this() {
+    retValue_ = other.retValue_;
+    bankGold_ = other.bankGold_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankTransferResp Clone() {
+    return new MsgBankTransferResp(this);
+  }
+
+  /// <summary>Field number for the "ret_value" field.</summary>
+  public const int RetValueFieldNumber = 1;
+  private int retValue_;
+  /// <summary>
+  ///返回值 0操作成功 操作失败：1：金币有误2：没有权限向该用户转账3：不能小于限制金币4：你被禁止转账
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int RetValue {
+    get { return retValue_; }
+    set {
+      retValue_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "bank_gold" field.</summary>
+  public const int BankGoldFieldNumber = 2;
+  private long bankGold_;
+  /// <summary>
+  ///玩家银行金币
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public long BankGold {
+    get { return bankGold_; }
+    set {
+      bankGold_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgBankTransferResp);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgBankTransferResp other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (RetValue != other.RetValue) return false;
+    if (BankGold != other.BankGold) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (RetValue != 0) hash ^= RetValue.GetHashCode();
+    if (BankGold != 0L) hash ^= BankGold.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (RetValue != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(RetValue);
+    }
+    if (BankGold != 0L) {
+      output.WriteRawTag(16);
+      output.WriteInt64(BankGold);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (RetValue != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(RetValue);
+    }
+    if (BankGold != 0L) {
+      output.WriteRawTag(16);
+      output.WriteInt64(BankGold);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (RetValue != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(RetValue);
+    }
+    if (BankGold != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(BankGold);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgBankTransferResp other) {
+    if (other == null) {
+      return;
+    }
+    if (other.RetValue != 0) {
+      RetValue = other.RetValue;
+    }
+    if (other.BankGold != 0L) {
+      BankGold = other.BankGold;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          RetValue = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          BankGold = input.ReadInt64();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          RetValue = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          BankGold = input.ReadInt64();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///银行转账记录
+/// </summary>
+public sealed partial class MsgBankRecord : pb::IMessage<MsgBankRecord>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgBankRecord> _parser = new pb::MessageParser<MsgBankRecord>(() => new MsgBankRecord());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgBankRecord> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[38]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankRecord() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankRecord(MsgBankRecord other) : this() {
+    operateUserId_ = other.operateUserId_;
+    transferGold_ = other.transferGold_;
+    timer_ = other.timer_;
+    operateType_ = other.operateType_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankRecord Clone() {
+    return new MsgBankRecord(this);
+  }
+
+  /// <summary>Field number for the "operate_user_id" field.</summary>
+  public const int OperateUserIdFieldNumber = 1;
+  private int operateUserId_;
+  /// <summary>
+  ///目标id
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int OperateUserId {
+    get { return operateUserId_; }
+    set {
+      operateUserId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "transfer_gold" field.</summary>
+  public const int TransferGoldFieldNumber = 2;
+  private long transferGold_;
+  /// <summary>
+  ///操作金币
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public long TransferGold {
+    get { return transferGold_; }
+    set {
+      transferGold_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "timer" field.</summary>
+  public const int TimerFieldNumber = 3;
+  private int timer_;
+  /// <summary>
+  ///时间戳
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Timer {
+    get { return timer_; }
+    set {
+      timer_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "operate_type" field.</summary>
+  public const int OperateTypeFieldNumber = 4;
+  private int operateType_;
+  /// <summary>
+  ///1转出2接受
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int OperateType {
+    get { return operateType_; }
+    set {
+      operateType_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgBankRecord);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgBankRecord other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (OperateUserId != other.OperateUserId) return false;
+    if (TransferGold != other.TransferGold) return false;
+    if (Timer != other.Timer) return false;
+    if (OperateType != other.OperateType) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (OperateUserId != 0) hash ^= OperateUserId.GetHashCode();
+    if (TransferGold != 0L) hash ^= TransferGold.GetHashCode();
+    if (Timer != 0) hash ^= Timer.GetHashCode();
+    if (OperateType != 0) hash ^= OperateType.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (OperateUserId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(OperateUserId);
+    }
+    if (TransferGold != 0L) {
+      output.WriteRawTag(16);
+      output.WriteInt64(TransferGold);
+    }
+    if (Timer != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(Timer);
+    }
+    if (OperateType != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(OperateType);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (OperateUserId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(OperateUserId);
+    }
+    if (TransferGold != 0L) {
+      output.WriteRawTag(16);
+      output.WriteInt64(TransferGold);
+    }
+    if (Timer != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(Timer);
+    }
+    if (OperateType != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(OperateType);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (OperateUserId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(OperateUserId);
+    }
+    if (TransferGold != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(TransferGold);
+    }
+    if (Timer != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Timer);
+    }
+    if (OperateType != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(OperateType);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgBankRecord other) {
+    if (other == null) {
+      return;
+    }
+    if (other.OperateUserId != 0) {
+      OperateUserId = other.OperateUserId;
+    }
+    if (other.TransferGold != 0L) {
+      TransferGold = other.TransferGold;
+    }
+    if (other.Timer != 0) {
+      Timer = other.Timer;
+    }
+    if (other.OperateType != 0) {
+      OperateType = other.OperateType;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          OperateUserId = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          TransferGold = input.ReadInt64();
+          break;
+        }
+        case 24: {
+          Timer = input.ReadInt32();
+          break;
+        }
+        case 32: {
+          OperateType = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          OperateUserId = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          TransferGold = input.ReadInt64();
+          break;
+        }
+        case 24: {
+          Timer = input.ReadInt32();
+          break;
+        }
+        case 32: {
+          OperateType = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+public sealed partial class MsgBankRecordResp : pb::IMessage<MsgBankRecordResp>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgBankRecordResp> _parser = new pb::MessageParser<MsgBankRecordResp>(() => new MsgBankRecordResp());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgBankRecordResp> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[39]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankRecordResp() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankRecordResp(MsgBankRecordResp other) : this() {
+    records_ = other.records_.Clone();
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankRecordResp Clone() {
+    return new MsgBankRecordResp(this);
+  }
+
+  /// <summary>Field number for the "records" field.</summary>
+  public const int RecordsFieldNumber = 1;
+  private static readonly pb::FieldCodec<global::MsgBankRecord> _repeated_records_codec
+      = pb::FieldCodec.ForMessage(10, global::MsgBankRecord.Parser);
+  private readonly pbc::RepeatedField<global::MsgBankRecord> records_ = new pbc::RepeatedField<global::MsgBankRecord>();
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<global::MsgBankRecord> Records {
+    get { return records_; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgBankRecordResp);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgBankRecordResp other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if(!records_.Equals(other.records_)) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    hash ^= records_.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    records_.WriteTo(output, _repeated_records_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    records_.WriteTo(ref output, _repeated_records_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    size += records_.CalculateSize(_repeated_records_codec);
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgBankRecordResp other) {
+    if (other == null) {
+      return;
+    }
+    records_.Add(other.records_);
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 10: {
+          records_.AddEntriesFrom(input, _repeated_records_codec);
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 10: {
+          records_.AddEntriesFrom(ref input, _repeated_records_codec);
           break;
         }
       }

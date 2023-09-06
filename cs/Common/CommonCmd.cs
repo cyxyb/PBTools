@@ -27,7 +27,7 @@ public static partial class CommonCmdReflection {
           "SW5mbxDpBxIUCg9FTXNnSURNYWluX0dhbWUQ0Q8SFwoSRU1zZ0lETWFpbl9T",
           "dWJHYW1lENIPKmsKCEVSZXNDb2RlEhEKDUVSZXNDb2RlX05VTEwQABIYChRF",
           "UmVzQ29kZV9JbnZpbGlkTWFpbBABEhkKFUVSZXNDb2RlX01haWxSZWNhbGxl",
-          "ZBACEhcKE0VSZXNDb2RlX01haWxQaWNrZWQQAyrNEQoLRU1zZ0lETG9naW4S",
+          "ZBACEhcKE0VSZXNDb2RlX01haWxQaWNrZWQQAyrLFgoLRU1zZ0lETG9naW4S",
           "EwoPTXNnSURMb2dpbl9OdWxsEAASFAoQTXNnSURMb2dpbl9Mb2dpbhABEhgK",
           "FE1zZ0lETG9naW5fTG9naW5SZXNwEAISHQoZTXNnSURMb2dpbl9Nb2RpZnlO",
           "aWNrTmFtZRADEiEKHU1zZ0lETG9naW5fTW9kaWZ5Tmlja05hbWVSZXNwEAQS",
@@ -77,21 +77,35 @@ public static partial class CommonCmdReflection {
           "Eh4KGk1zZ0lETG9naW5fUXVlcnlQbGF5ZXJJbmZvEEESIgoeTXNnSURMb2dp",
           "bl9RdWVyeVBsYXllckluZm9SZXNwEEISHwobTXNnSURBY3RpdmVfUXVlcnlB",
           "Y3RpdmVJbmZvEEMSIwofTXNnSURBY3RpdmVfUXVlcnlBY3RpdmVJbmZvUmVz",
-          "cBBEEh0KGU1zZ0lEWk1EX0Jyb2FkY2FzdFRpcFJlc3AQRSruBAoKRU1zZ0lE",
-          "R2FtZRISCg5Nc2dJREdhbWVfTnVsbBAAEhQKD01zZ0lER2FtZV9Mb2dpbhDp",
-          "BxIYChNNc2dJREdhbWVfTG9naW5SZXNwEOoHEh4KGU1zZ0lER2FtZV9TcXVl",
-          "ZXplU2VhdFJlc3AQ6wcSFQoQTXNnSURHYW1lX0xvZ291dBDsBxIaChVNc2dJ",
-          "REdhbWVfQXV0b1NpdERvd24Q7QcSGgoVTXNnSURHYW1lX1NpdERvd25SZXNw",
-          "EO4HEiEKHE1zZ0lER2FtZV9TeW5jUGxheWVySW5mb1Jlc3AQ7wcSJgohTXNn",
-          "SURHYW1lX05vdGlmeVBsYXllclN0YW5kVXBSZXNwEPAHEiMKHk1zZ0lER2Ft",
-          "ZV9TeW5jUGxheWVyc1Njb3JlUmVzcBDxBxIcChdNc2dJREdhbWVfU2VuZEdh",
-          "bWVTZW5jZRDyBxIgChtNc2dJREdhbWVfU2VuZEdhbWVTZW5jZVJlc3AQ8wcS",
-          "IAobTXNnSURHYW1lX05vdGlmeU1lc3NhZ2VSZXNwEPQHEhkKFE1zZ0lER2Ft",
-          "ZV9DcmVhdGVSb29tEPUHEhcKEk1zZ0lER2FtZV9Kb2luUm9vbRD2BxIaChVN",
-          "c2dJREdhbWVfUXVlcnlSZWNvcmQQ9wcSIwoeTXNnSURHYW1lX1F1ZXJ5Um91",
-          "bmRSZWNvcmRSZXNwEPgHEiEKHE1zZ0lER2FtZV9RdWVyeURheVJlY29yZFJl",
-          "c3AQ+QcSGwoWTXNnSURHYW1lX0FkZE9uZVJlY29yZBD6BxImCiFNc2dJREdh",
-          "bWVfTm90aWZ5UGxheWVyT2ZmbGluZVJlc3AQ+wdiBnByb3RvMw=="));
+          "cBBEEh0KGU1zZ0lEWk1EX0Jyb2FkY2FzdFRpcFJlc3AQRRIeChpNc2dJREFj",
+          "dGl2ZV9QaWNrQWN0aXZlSW5mbxBGEiIKHk1zZ0lEQWN0aXZlX1BpY2tBY3Rp",
+          "dmVJbmZvUmVzcBBHEhkKFU1zZ0lEU2lnbmF0dXJlX01vZGlmeRBIEh0KGU1z",
+          "Z0lEU2lnbmF0dXJlX01vZGlmeVJlc3AQSRIRCg1Nc2dJRFJhbmtfR2V0EEoS",
+          "FQoRTXNnSURSYW5rX0dldFJlc3AQSxIZChVNc2dJREJhbmtfU2V0UGFzc3dv",
+          "cmQQTBIdChlNc2dJREJhbmtfU2V0UGFzc3dvcmRSZXNwEE0SGQoVTXNnSURC",
+          "YW5rX1ZlcmlmeVBob25lEE4SHQoZTXNnSURCYW5rX1ZlcmlmeVBob25lUmVz",
+          "cBBPEhwKGE1zZ0lEQmFua19DaGFuZ2VQYXNzd29yZBBQEiAKHE1zZ0lEQmFu",
+          "a19DaGFuZ2VQYXNzd29yZFJlc3AQURIWChJNc2dJREJhbmtfT3BlbkJhbmsQ",
+          "UhIaChZNc2dJREJhbmtfT3BlbkJhbmtSZXNwEFMSGQoVTXNnSURCYW5rX0Jh",
+          "bmtPcGVyYXRlEFQSHQoZTXNnSURCYW5rX0JhbmtPcGVyYXRlUmVzcBBVEhoK",
+          "Fk1zZ0lEQmFua19CYW5rVHJhbnNmZXIQVhIeChpNc2dJREJhbmtfQmFua1Ry",
+          "YW5zZmVyUmVzcBBXEhgKFE1zZ0lEQmFua19CYW5rUmVjb3JkEFgSHAoYTXNn",
+          "SURCYW5rX0JhbmtSZWNvcmRSZXNwEFkSHAoYTXNnSURCYW5rX0JhbmtSZXF1",
+          "ZXN0U2V0EFoSIAocTXNnSURCYW5rX0JhbmtSZXF1ZXN0U2V0UmVzcBBbKu4E",
+          "CgpFTXNnSURHYW1lEhIKDk1zZ0lER2FtZV9OdWxsEAASFAoPTXNnSURHYW1l",
+          "X0xvZ2luEOkHEhgKE01zZ0lER2FtZV9Mb2dpblJlc3AQ6gcSHgoZTXNnSURH",
+          "YW1lX1NxdWVlemVTZWF0UmVzcBDrBxIVChBNc2dJREdhbWVfTG9nb3V0EOwH",
+          "EhoKFU1zZ0lER2FtZV9BdXRvU2l0RG93bhDtBxIaChVNc2dJREdhbWVfU2l0",
+          "RG93blJlc3AQ7gcSIQocTXNnSURHYW1lX1N5bmNQbGF5ZXJJbmZvUmVzcBDv",
+          "BxImCiFNc2dJREdhbWVfTm90aWZ5UGxheWVyU3RhbmRVcFJlc3AQ8AcSIwoe",
+          "TXNnSURHYW1lX1N5bmNQbGF5ZXJzU2NvcmVSZXNwEPEHEhwKF01zZ0lER2Ft",
+          "ZV9TZW5kR2FtZVNlbmNlEPIHEiAKG01zZ0lER2FtZV9TZW5kR2FtZVNlbmNl",
+          "UmVzcBDzBxIgChtNc2dJREdhbWVfTm90aWZ5TWVzc2FnZVJlc3AQ9AcSGQoU",
+          "TXNnSURHYW1lX0NyZWF0ZVJvb20Q9QcSFwoSTXNnSURHYW1lX0pvaW5Sb29t",
+          "EPYHEhoKFU1zZ0lER2FtZV9RdWVyeVJlY29yZBD3BxIjCh5Nc2dJREdhbWVf",
+          "UXVlcnlSb3VuZFJlY29yZFJlc3AQ+AcSIQocTXNnSURHYW1lX1F1ZXJ5RGF5",
+          "UmVjb3JkUmVzcBD5BxIbChZNc2dJREdhbWVfQWRkT25lUmVjb3JkEPoHEiYK",
+          "IU1zZ0lER2FtZV9Ob3RpZnlQbGF5ZXJPZmZsaW5lUmVzcBD7B2IGcHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::EMsgIDMain), typeof(global::EResCode), typeof(global::EMsgIDLogin), typeof(global::EMsgIDGame), }, null, null));
@@ -410,6 +424,94 @@ public enum EMsgIDLogin {
   ///跑马灯广播(MsgBroadcastTip)
   /// </summary>
   [pbr::OriginalName("MsgIDZMD_BroadcastTipResp")] MsgIdzmdBroadcastTipResp = 69,
+  /// <summary>
+  ///领取活动奖励(MsgActiveInfoCSPick)
+  /// </summary>
+  [pbr::OriginalName("MsgIDActive_PickActiveInfo")] MsgIdactivePickActiveInfo = 70,
+  /// <summary>
+  ///领取活动奖励返回(MsgActiveInfoSCPick)
+  /// </summary>
+  [pbr::OriginalName("MsgIDActive_PickActiveInfoResp")] MsgIdactivePickActiveInfoResp = 71,
+  /// <summary>
+  ///修改签名(MsgModifySignature)
+  /// </summary>
+  [pbr::OriginalName("MsgIDSignature_Modify")] MsgIdsignatureModify = 72,
+  /// <summary>
+  ///修改签名返回(MsgModifySignature)
+  /// </summary>
+  [pbr::OriginalName("MsgIDSignature_ModifyResp")] MsgIdsignatureModifyResp = 73,
+  /// <summary>
+  ///排行榜请求(MsgCommonN32)
+  /// </summary>
+  [pbr::OriginalName("MsgIDRank_Get")] MsgIdrankGet = 74,
+  /// <summary>
+  ///排行榜返回(MsgTopList)
+  /// </summary>
+  [pbr::OriginalName("MsgIDRank_GetResp")] MsgIdrankGetResp = 75,
+  /// <summary>
+  ///银行设置密码(MsgCommonStr)
+  /// </summary>
+  [pbr::OriginalName("MsgIDBank_SetPassword")] MsgIdbankSetPassword = 76,
+  /// <summary>
+  ///银行设置密码返回(MsgBankTakeOut)
+  /// </summary>
+  [pbr::OriginalName("MsgIDBank_SetPasswordResp")] MsgIdbankSetPasswordResp = 77,
+  /// <summary>
+  ///验证手机();
+  /// </summary>
+  [pbr::OriginalName("MsgIDBank_VerifyPhone")] MsgIdbankVerifyPhone = 78,
+  /// <summary>
+  ///验证手机返回(MsgCommonBool)
+  /// </summary>
+  [pbr::OriginalName("MsgIDBank_VerifyPhoneResp")] MsgIdbankVerifyPhoneResp = 79,
+  /// <summary>
+  ///银行修改密码(MsgBankChangePassword)
+  /// </summary>
+  [pbr::OriginalName("MsgIDBank_ChangePassword")] MsgIdbankChangePassword = 80,
+  /// <summary>
+  ///银行修改密码返回(MsgCommonN32)0成功非0暂定
+  /// </summary>
+  [pbr::OriginalName("MsgIDBank_ChangePasswordResp")] MsgIdbankChangePasswordResp = 81,
+  /// <summary>
+  ///银行打开银行(MsgCommonStr)
+  /// </summary>
+  [pbr::OriginalName("MsgIDBank_OpenBank")] MsgIdbankOpenBank = 82,
+  /// <summary>
+  ///银行打开银行返回(MsgBankTakeOut)
+  /// </summary>
+  [pbr::OriginalName("MsgIDBank_OpenBankResp")] MsgIdbankOpenBankResp = 83,
+  /// <summary>
+  ///银行存入(MsgBankOperate)
+  /// </summary>
+  [pbr::OriginalName("MsgIDBank_BankOperate")] MsgIdbankBankOperate = 84,
+  /// <summary>
+  ///银行存入返回(MsgBankTakeOut)
+  /// </summary>
+  [pbr::OriginalName("MsgIDBank_BankOperateResp")] MsgIdbankBankOperateResp = 85,
+  /// <summary>
+  ///银行转账(MsgBankTransfer)
+  /// </summary>
+  [pbr::OriginalName("MsgIDBank_BankTransfer")] MsgIdbankBankTransfer = 86,
+  /// <summary>
+  ///银行转账返回(MsgBankTransferResp)
+  /// </summary>
+  [pbr::OriginalName("MsgIDBank_BankTransferResp")] MsgIdbankBankTransferResp = 87,
+  /// <summary>
+  ///银行转账记录()
+  /// </summary>
+  [pbr::OriginalName("MsgIDBank_BankRecord")] MsgIdbankBankRecord = 88,
+  /// <summary>
+  ///银行转账记录返回(MsgBankRecordResp)
+  /// </summary>
+  [pbr::OriginalName("MsgIDBank_BankRecordResp")] MsgIdbankBankRecordResp = 89,
+  /// <summary>
+  ///银行是否设置密码()
+  /// </summary>
+  [pbr::OriginalName("MsgIDBank_BankRequestSet")] MsgIdbankBankRequestSet = 90,
+  /// <summary>
+  ///银行是否设置密码返回()
+  /// </summary>
+  [pbr::OriginalName("MsgIDBank_BankRequestSetResp")] MsgIdbankBankRequestSetResp = 91,
 }
 
 public enum EMsgIDGame {

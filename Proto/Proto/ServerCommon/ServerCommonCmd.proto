@@ -32,6 +32,8 @@ enum EMsgIDServerInternalProto
 	CENTER2LOGIN_AddMailResp				= 12;	//增加邮件返回
 	CENTER2LOGIN_RechargeResp				= 13;	//充值成功回调
 	CENTER2LOGIN_BroadcastZmdTipResp		= 14;	//跑马灯广播
+	LOGIN2CENTER_GetRank					= 15;	//获取排行榜
+	CENTER2LOGIN_GetRankResp				= 16;	//获取排行榜回调
 	
 	//1001-2000 game <-> center
 	GAME2CENTER_Register			= 2001;	//游戏服务器注册
@@ -72,7 +74,9 @@ enum EMsgIDDB
 	DB2CENTER_CreateRobotResp		= 9;	//创建机器人返回
 	CENTER2DB_AddMail				= 10;	//添加邮件
 	DB2CENTER_AddMailResp			= 11;	//添加邮件返回
-	
+	CENTER2DB_UpdateRankRichMan		= 14;	//刷新大富豪排行榜
+	CENTER2DB_InserRankBigWin		= 15;	//添加今日赢家排行榜
+
 	//1001-2000 LoginServer2DB
 	LOGIN2DB_Login					= 1001;	//玩家登录
 	DB2LOGIN_LoginResp				= 1002;	//玩家登录返回
@@ -116,7 +120,13 @@ enum EMsgIDDB
 	DB2LOGIN_QueryPlayerInfoResp	= 1040;	//查询玩家信息返回
 	LOGIN2DB_QueryActiveInfo 		= 1041; //查询玩家任务信息
 	DB2LOGIN_QueryActiveInfoResp	= 1042; //查询玩家任务信息返回
-	
+	LOGIN2DB_PickActiveInfo 		= 1043; //查询玩家任务信息
+	DB2LOGIN_PickActiveInfoResp		= 1044; //查询玩家任务信息返回
+	LOGIN2DB_ModifySignature		= 1045; //修改签名
+	DB2LOGIN_ModifySignatureResp	= 1046; //修改签名返回
+	LOGIN2DB_GetRank				= 1047; //获取排行榜
+	DB2LOGIN_GetRankResp			= 1048; //获取排行榜回调
+
 	//2001-3000 GameServer2DB
 	GAME2DB_Login					= 2001;	//玩家登录游戏
 	DB2GAME_LoginResp				= 2002;	//玩家登录游戏返回
