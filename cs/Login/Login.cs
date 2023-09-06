@@ -95,24 +95,25 @@ public static partial class LoginReflection {
           "cm9ncmVzczMYCCABKAUSDgoGcmV3YXJkGAkgASgFEhMKC3Jld2FyZF90eXBl",
           "GAogASgFEg8KB2lzX3BpY2sYCyABKAUSCwoDcmVzGAwgASgIIjgKEk1zZ01v",
           "ZGlmeVNpZ25hdHVyZRIPCgd1c2VyX2lkGAEgASgFEhEKCXNpZ25hdHVyZRgC",
-          "IAEoCSI3ChVNc2dCYW5rQ2hhbmdlUGFzc3dvcmQSEAoIcGFzc3dvcmQYASAB",
-          "KAkSDAoEY29kZRgCIAEoBSI0Cg5Nc2dCYW5rT3BlcmF0ZRIMCgRnb2xkGAEg",
-          "ASgDEhQKDG9wZXJhdGVfdHlwZRgCIAEoBSJJCg5Nc2dCYW5rVGFrZU91dBIR",
-          "CglyZXRfdmFsdWUYASABKAUSEQoJdXNlcl9nb2xkGAIgASgDEhEKCWJhbmtf",
-          "Z29sZBgDIAEoAyI+Cg9Nc2dCYW5rVHJhbnNmZXISFAoMcmVjdl91c2VyX2lk",
-          "GAEgASgFEhUKDXRyYW5zZmVyX2dvbGQYAiABKAMiigEKCk1zZ1RvcEluZm8S",
-          "DwoHcmFua19pZBgBIAEoBRIPCgd1c2VyX2lkGAIgASgFEgwKBGdvbGQYAyAB",
-          "KAQSEQoJdmlwX2xldmVsGAQgASgNEhQKDGF2YXRhcl9mcmFtZRgFIAEoBRIQ",
-          "CghoZWFkX3VybBgGIAEoCRIRCgluaWNrX25hbWUYByABKAkiVwoKTXNnR2V0",
-          "UmFuaxIRCglyYW5rX3R5cGUYASABKAUSDwoHdXNlcl9pZBgCIAEoBRIUCgxj",
-          "dXJyZW50X3BhZ2UYAyABKAUSDwoHbWF4X3JvdxgEIAEoBSJwCg5Nc2dUb3BM",
-          "aXN0UmVzcBIPCgd1c2VyX2lkGAEgASgFEhEKCXJhbmtfdHlwZRgCIAEoBRIe",
-          "Cgl0aGlzX2luZm8YAyABKAsyCy5Nc2dUb3BJbmZvEhoKBWxpc3RzGAQgAygL",
-          "MgsuTXNnVG9wSW5mbyI7ChNNc2dCYW5rVHJhbnNmZXJSZXNwEhEKCXJldF92",
-          "YWx1ZRgBIAEoBRIRCgliYW5rX2dvbGQYAiABKAMiaAoRTXNnQmFua1JlY29y",
-          "ZFJlc3ASFwoPb3BlcmF0ZV91c2VyX2lkGAEgASgFEhUKDXRyYW5zZmVyX2dv",
-          "bGQYAiABKAMSDQoFdGltZXIYAyABKAUSFAoMb3BlcmF0ZV90eXBlGAQgASgF",
-          "YgZwcm90bzM="));
+          "IAEoCSINCgtNc2dCYW5rQ29kZSI3ChVNc2dCYW5rQ2hhbmdlUGFzc3dvcmQS",
+          "EAoIcGFzc3dvcmQYASABKAkSDAoEY29kZRgCIAEoBSI0Cg5Nc2dCYW5rT3Bl",
+          "cmF0ZRIMCgRnb2xkGAEgASgDEhQKDG9wZXJhdGVfdHlwZRgCIAEoBSJJCg5N",
+          "c2dCYW5rVGFrZU91dBIRCglyZXRfdmFsdWUYASABKAUSEQoJdXNlcl9nb2xk",
+          "GAIgASgDEhEKCWJhbmtfZ29sZBgDIAEoAyI+Cg9Nc2dCYW5rVHJhbnNmZXIS",
+          "FAoMcmVjdl91c2VyX2lkGAEgASgFEhUKDXRyYW5zZmVyX2dvbGQYAiABKAMi",
+          "igEKCk1zZ1RvcEluZm8SDwoHcmFua19pZBgBIAEoBRIPCgd1c2VyX2lkGAIg",
+          "ASgFEgwKBGdvbGQYAyABKAQSEQoJdmlwX2xldmVsGAQgASgNEhQKDGF2YXRh",
+          "cl9mcmFtZRgFIAEoBRIQCghoZWFkX3VybBgGIAEoCRIRCgluaWNrX25hbWUY",
+          "ByABKAkiVwoKTXNnR2V0UmFuaxIRCglyYW5rX3R5cGUYASABKAUSDwoHdXNl",
+          "cl9pZBgCIAEoBRIUCgxjdXJyZW50X3BhZ2UYAyABKAUSDwoHbWF4X3JvdxgE",
+          "IAEoBSJwCg5Nc2dUb3BMaXN0UmVzcBIPCgd1c2VyX2lkGAEgASgFEhEKCXJh",
+          "bmtfdHlwZRgCIAEoBRIeCgl0aGlzX2luZm8YAyABKAsyCy5Nc2dUb3BJbmZv",
+          "EhoKBWxpc3RzGAQgAygLMgsuTXNnVG9wSW5mbyI7ChNNc2dCYW5rVHJhbnNm",
+          "ZXJSZXNwEhEKCXJldF92YWx1ZRgBIAEoBRIRCgliYW5rX2dvbGQYAiABKAMi",
+          "ZAoNTXNnQmFua1JlY29yZBIXCg9vcGVyYXRlX3VzZXJfaWQYASABKAUSFQoN",
+          "dHJhbnNmZXJfZ29sZBgCIAEoAxINCgV0aW1lchgDIAEoBRIUCgxvcGVyYXRl",
+          "X3R5cGUYBCABKAUiNAoRTXNnQmFua1JlY29yZFJlc3ASHwoHcmVjb3JkcxgB",
+          "IAMoCzIOLk1zZ0JhbmtSZWNvcmRiBnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -145,6 +146,7 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgActiveInfoCSPick), global::MsgActiveInfoCSPick.Parser, new[]{ "UserId", "ActiveId", "SubActiveId" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgActiveInfoSCPick), global::MsgActiveInfoSCPick.Parser, new[]{ "ActiveId", "SubActiveId", "Param1", "Param2", "Param3", "Progress1", "Progress2", "Progress3", "Reward", "RewardType", "IsPick", "Res" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgModifySignature), global::MsgModifySignature.Parser, new[]{ "UserId", "Signature" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankCode), global::MsgBankCode.Parser, null, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankChangePassword), global::MsgBankChangePassword.Parser, new[]{ "Password", "Code" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankOperate), global::MsgBankOperate.Parser, new[]{ "Gold", "OperateType" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankTakeOut), global::MsgBankTakeOut.Parser, new[]{ "RetValue", "UserGold", "BankGold" }, null, null, null, null),
@@ -153,7 +155,8 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgGetRank), global::MsgGetRank.Parser, new[]{ "RankType", "UserId", "CurrentPage", "MaxRow" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTopListResp), global::MsgTopListResp.Parser, new[]{ "UserId", "RankType", "ThisInfo", "Lists" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankTransferResp), global::MsgBankTransferResp.Parser, new[]{ "RetValue", "BankGold" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankRecordResp), global::MsgBankRecordResp.Parser, new[]{ "OperateUserId", "TransferGold", "Timer", "OperateType" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankRecord), global::MsgBankRecord.Parser, new[]{ "OperateUserId", "TransferGold", "Timer", "OperateType" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankRecordResp), global::MsgBankRecordResp.Parser, new[]{ "Records" }, null, null, null, null)
         }));
   }
   #endregion
@@ -9382,6 +9385,145 @@ public sealed partial class MsgModifySignature : pb::IMessage<MsgModifySignature
 
 /// <summary>
 ///银行
+///请求验证码
+/// </summary>
+public sealed partial class MsgBankCode : pb::IMessage<MsgBankCode>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgBankCode> _parser = new pb::MessageParser<MsgBankCode>(() => new MsgBankCode());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgBankCode> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[29]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankCode() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankCode(MsgBankCode other) : this() {
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankCode Clone() {
+    return new MsgBankCode(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgBankCode);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgBankCode other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgBankCode other) {
+    if (other == null) {
+      return;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
 ///修改密码
 /// </summary>
 public sealed partial class MsgBankChangePassword : pb::IMessage<MsgBankChangePassword>
@@ -9396,7 +9538,7 @@ public sealed partial class MsgBankChangePassword : pb::IMessage<MsgBankChangePa
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[29]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[30]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9613,7 +9755,7 @@ public sealed partial class MsgBankOperate : pb::IMessage<MsgBankOperate>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[30]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[31]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9830,7 +9972,7 @@ public sealed partial class MsgBankTakeOut : pb::IMessage<MsgBankTakeOut>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[31]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[32]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10086,7 +10228,7 @@ public sealed partial class MsgBankTransfer : pb::IMessage<MsgBankTransfer>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[32]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[33]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10303,7 +10445,7 @@ public sealed partial class MsgTopInfo : pb::IMessage<MsgTopInfo>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[33]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[34]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10712,7 +10854,7 @@ public sealed partial class MsgGetRank : pb::IMessage<MsgGetRank>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[34]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[35]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11007,7 +11149,7 @@ public sealed partial class MsgTopListResp : pb::IMessage<MsgTopListResp>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[35]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[36]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11300,7 +11442,7 @@ public sealed partial class MsgBankTransferResp : pb::IMessage<MsgBankTransferRe
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[36]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[37]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11505,19 +11647,19 @@ public sealed partial class MsgBankTransferResp : pb::IMessage<MsgBankTransferRe
 /// <summary>
 ///银行转账记录
 /// </summary>
-public sealed partial class MsgBankRecordResp : pb::IMessage<MsgBankRecordResp>
+public sealed partial class MsgBankRecord : pb::IMessage<MsgBankRecord>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     , pb::IBufferMessage
 #endif
 {
-  private static readonly pb::MessageParser<MsgBankRecordResp> _parser = new pb::MessageParser<MsgBankRecordResp>(() => new MsgBankRecordResp());
+  private static readonly pb::MessageParser<MsgBankRecord> _parser = new pb::MessageParser<MsgBankRecord>(() => new MsgBankRecord());
   private pb::UnknownFieldSet _unknownFields;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pb::MessageParser<MsgBankRecordResp> Parser { get { return _parser; } }
+  public static pb::MessageParser<MsgBankRecord> Parser { get { return _parser; } }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[37]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[38]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11526,14 +11668,14 @@ public sealed partial class MsgBankRecordResp : pb::IMessage<MsgBankRecordResp>
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public MsgBankRecordResp() {
+  public MsgBankRecord() {
     OnConstruction();
   }
 
   partial void OnConstruction();
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public MsgBankRecordResp(MsgBankRecordResp other) : this() {
+  public MsgBankRecord(MsgBankRecord other) : this() {
     operateUserId_ = other.operateUserId_;
     transferGold_ = other.transferGold_;
     timer_ = other.timer_;
@@ -11542,8 +11684,8 @@ public sealed partial class MsgBankRecordResp : pb::IMessage<MsgBankRecordResp>
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public MsgBankRecordResp Clone() {
-    return new MsgBankRecordResp(this);
+  public MsgBankRecord Clone() {
+    return new MsgBankRecord(this);
   }
 
   /// <summary>Field number for the "operate_user_id" field.</summary>
@@ -11604,11 +11746,11 @@ public sealed partial class MsgBankRecordResp : pb::IMessage<MsgBankRecordResp>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
-    return Equals(other as MsgBankRecordResp);
+    return Equals(other as MsgBankRecord);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Equals(MsgBankRecordResp other) {
+  public bool Equals(MsgBankRecord other) {
     if (ReferenceEquals(other, null)) {
       return false;
     }
@@ -11714,7 +11856,7 @@ public sealed partial class MsgBankRecordResp : pb::IMessage<MsgBankRecordResp>
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(MsgBankRecordResp other) {
+  public void MergeFrom(MsgBankRecord other) {
     if (other == null) {
       return;
     }
@@ -11788,6 +11930,167 @@ public sealed partial class MsgBankRecordResp : pb::IMessage<MsgBankRecordResp>
         }
         case 32: {
           OperateType = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+public sealed partial class MsgBankRecordResp : pb::IMessage<MsgBankRecordResp>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgBankRecordResp> _parser = new pb::MessageParser<MsgBankRecordResp>(() => new MsgBankRecordResp());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgBankRecordResp> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[39]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankRecordResp() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankRecordResp(MsgBankRecordResp other) : this() {
+    records_ = other.records_.Clone();
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankRecordResp Clone() {
+    return new MsgBankRecordResp(this);
+  }
+
+  /// <summary>Field number for the "records" field.</summary>
+  public const int RecordsFieldNumber = 1;
+  private static readonly pb::FieldCodec<global::MsgBankRecord> _repeated_records_codec
+      = pb::FieldCodec.ForMessage(10, global::MsgBankRecord.Parser);
+  private readonly pbc::RepeatedField<global::MsgBankRecord> records_ = new pbc::RepeatedField<global::MsgBankRecord>();
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<global::MsgBankRecord> Records {
+    get { return records_; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgBankRecordResp);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgBankRecordResp other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if(!records_.Equals(other.records_)) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    hash ^= records_.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    records_.WriteTo(output, _repeated_records_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    records_.WriteTo(ref output, _repeated_records_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    size += records_.CalculateSize(_repeated_records_codec);
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgBankRecordResp other) {
+    if (other == null) {
+      return;
+    }
+    records_.Add(other.records_);
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 10: {
+          records_.AddEntriesFrom(input, _repeated_records_codec);
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 10: {
+          records_.AddEntriesFrom(ref input, _repeated_records_codec);
           break;
         }
       }

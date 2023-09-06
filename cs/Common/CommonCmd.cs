@@ -453,7 +453,7 @@ public enum EMsgIDLogin {
   /// </summary>
   [pbr::OriginalName("MsgIDBank_SetPassword")] MsgIdbankSetPassword = 76,
   /// <summary>
-  ///银行设置密码返回(MsgCommonBool)
+  ///银行设置密码返回(MsgBankTakeOut)
   /// </summary>
   [pbr::OriginalName("MsgIDBank_SetPasswordResp")] MsgIdbankSetPasswordResp = 77,
   /// <summary>

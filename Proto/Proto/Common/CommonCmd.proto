@@ -95,7 +95,7 @@ enum EMsgIDLogin
 	MsgIDRank_Get								= 74;		//排行榜请求(MsgCommonN32)
 	MsgIDRank_GetResp							= 75;		//排行榜返回(MsgTopList)
 	MsgIDBank_SetPassword						= 76;		//银行设置密码(MsgCommonStr)
-	MsgIDBank_SetPasswordResp					= 77;		//银行设置密码返回(MsgCommonBool)
+	MsgIDBank_SetPasswordResp					= 77;		//银行设置密码返回(MsgBankTakeOut)
 	MsgIDBank_VerifyPhone						= 78;		//验证手机();
 	MsgIDBank_VerifyPhoneResp					= 79;		//验证手机返回(MsgCommonBool)
 	MsgIDBank_ChangePassword					= 80;		//银行修改密码(MsgBankChangePassword)
