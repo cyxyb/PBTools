@@ -77,8 +77,7 @@ enum EMsgIDDB
 	CENTER2DB_QueryRank				= 12;	//加载排行榜
 	DB2CENTER_QueryRankResp			= 13;	//加载排行榜返回
 	CENTER2DB_UpdateRankRichMan		= 14;	//刷新大富豪排行榜
-	DB2CENTER_UpdateRichManRankResp = 15;	//刷新大富豪排行榜返回
-	CENTER2DB_InserRankBigWin		= 16;	//添加今日赢家排行榜
+	CENTER2DB_InserRankBigWin		= 15;	//添加今日赢家排行榜
 
 	//1001-2000 LoginServer2DB
 	LOGIN2DB_Login					= 1001;	//玩家登录
