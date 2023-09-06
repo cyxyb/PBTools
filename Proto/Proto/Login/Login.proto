@@ -216,7 +216,7 @@ message MsgPlayerInfo
 	string		phone_num		= 6;	//手机号
 	int32		vip_level		= 7;	//VIP等级
 	int32		avatar_frame	= 8;	//头像框
-	int32		signature		= 9;	//签名
+	string		signature		= 9;	//签名
 
 	int32		zmd_game_id		= 10;	//走马灯数据记录
 	uint64		zmd_win_gold	= 11;	//走马灯数据记录
