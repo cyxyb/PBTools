@@ -40,6 +40,7 @@ enum EMsgIDServerInternalProto
 	CENTER2LOGIN_ChatServerUnRegister		= 18;	//聊天服务器注销
 	LOGIN2CENTER_GetChatServerList			= 19;	//获取聊天服务器列表
 	CENTER2LOGIN_GetChatServerListResp		= 20;	//获取聊天服务器列表返回
+	LOGIN2CENTER_BroadcastTip				= 21;	//大厅请求跑马灯广播
 	
 	//1001-2000 game <-> center
 	GAME2CENTER_Register			= 2001;	//游戏服务器注册
