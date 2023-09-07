@@ -12,6 +12,8 @@ enum EMsgIDServerMain
 	APPRECHARGE2CENTER_MAIN						= 7;
 	RELAY2CENTER_MAIN							= 8;
 	CENTER2RELAY_MAIN							= 9;
+	CHAT2CENTER_MAIN							= 10;
+	CENTER2CHAT_MAIN							= 11;
 }
 
 enum EMsgIDServerInternalProto
@@ -34,6 +36,10 @@ enum EMsgIDServerInternalProto
 	CENTER2LOGIN_BroadcastZmdTipResp		= 14;	//跑马灯广播
 	LOGIN2CENTER_GetRank					= 15;	//获取排行榜
 	CENTER2LOGIN_GetRankResp				= 16;	//获取排行榜回调
+	CENTER2LOGIN_ChatServerRegister			= 17;	//聊天服务器注册
+	CENTER2LOGIN_ChatServerUnRegister		= 18;	//聊天服务器注销
+	LOGIN2CENTER_GetChatServerList			= 19;	//获取聊天服务器列表
+	CENTER2LOGIN_GetChatServerListResp		= 20;	//获取聊天服务器列表返回
 	
 	//1001-2000 game <-> center
 	GAME2CENTER_Register			= 2001;	//游戏服务器注册
@@ -57,6 +63,9 @@ enum EMsgIDServerInternalProto
 	RelayServer2CENTER_AddMail			= 5002;	//添加邮件
 	RelayServer2CENTER_RechargeSuccess	= 5003;	//充值成功
 	RelayServer2CENTER_Withdraw			= 5004;	//兑换
+	
+	//6001-7000 ChatServer <-> center
+	Chat2Center_Register				= 6001;	//聊天服注册
 }
 
 enum EMsgIDDB

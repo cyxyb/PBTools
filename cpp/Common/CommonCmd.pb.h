@@ -60,12 +60,13 @@ enum EMsgIDMain : int {
   EMsgIDMain_Login_UserInfo = 1001,
   EMsgIDMain_Game = 2001,
   EMsgIDMain_SubGame = 2002,
+  EMsgIDMain_Chat = 3001,
   EMsgIDMain_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDMain_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDMain_IsValid(int value);
 constexpr EMsgIDMain EMsgIDMain_MIN = EMsgIDMain_Null;
-constexpr EMsgIDMain EMsgIDMain_MAX = EMsgIDMain_SubGame;
+constexpr EMsgIDMain EMsgIDMain_MAX = EMsgIDMain_Chat;
 constexpr int EMsgIDMain_ARRAYSIZE = EMsgIDMain_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDMain_descriptor();
@@ -81,33 +82,6 @@ inline bool EMsgIDMain_Parse(
     ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, EMsgIDMain* value) {
   return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<EMsgIDMain>(
     EMsgIDMain_descriptor(), name, value);
-}
-enum EResCode : int {
-  EResCode_NULL = 0,
-  EResCode_InvilidMail = 1,
-  EResCode_MailRecalled = 2,
-  EResCode_MailPicked = 3,
-  EResCode_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
-  EResCode_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
-};
-bool EResCode_IsValid(int value);
-constexpr EResCode EResCode_MIN = EResCode_NULL;
-constexpr EResCode EResCode_MAX = EResCode_MailPicked;
-constexpr int EResCode_ARRAYSIZE = EResCode_MAX + 1;
-
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EResCode_descriptor();
-template<typename T>
-inline const std::string& EResCode_Name(T enum_t_value) {
-  static_assert(::std::is_same<T, EResCode>::value ||
-    ::std::is_integral<T>::value,
-    "Incorrect type passed to function EResCode_Name.");
-  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
-    EResCode_descriptor(), enum_t_value);
-}
-inline bool EResCode_Parse(
-    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, EResCode* value) {
-  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<EResCode>(
-    EResCode_descriptor(), name, value);
 }
 enum EMsgIDLogin : int {
   MsgIDLogin_Null = 0,
@@ -200,12 +174,13 @@ enum EMsgIDLogin : int {
   MsgIDBank_BankTransferResp = 87,
   MsgIDBank_BankRecord = 88,
   MsgIDBank_BankRecordResp = 89,
+  MsgIDLogin_NotifyChatServerList = 90,
   EMsgIDLogin_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDLogin_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDLogin_IsValid(int value);
 constexpr EMsgIDLogin EMsgIDLogin_MIN = MsgIDLogin_Null;
-constexpr EMsgIDLogin EMsgIDLogin_MAX = MsgIDBank_BankRecordResp;
+constexpr EMsgIDLogin EMsgIDLogin_MAX = MsgIDLogin_NotifyChatServerList;
 constexpr int EMsgIDLogin_ARRAYSIZE = EMsgIDLogin_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDLogin_descriptor();
@@ -265,6 +240,32 @@ inline bool EMsgIDGame_Parse(
   return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<EMsgIDGame>(
     EMsgIDGame_descriptor(), name, value);
 }
+enum EMsgIDChat : int {
+  MsgIDChat_Null = 0,
+  MsgIDChat_Login = 2001,
+  MsgIDChat_LoginResp = 2002,
+  EMsgIDChat_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
+  EMsgIDChat_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
+};
+bool EMsgIDChat_IsValid(int value);
+constexpr EMsgIDChat EMsgIDChat_MIN = MsgIDChat_Null;
+constexpr EMsgIDChat EMsgIDChat_MAX = MsgIDChat_LoginResp;
+constexpr int EMsgIDChat_ARRAYSIZE = EMsgIDChat_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDChat_descriptor();
+template<typename T>
+inline const std::string& EMsgIDChat_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, EMsgIDChat>::value ||
+    ::std::is_integral<T>::value,
+    "Incorrect type passed to function EMsgIDChat_Name.");
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    EMsgIDChat_descriptor(), enum_t_value);
+}
+inline bool EMsgIDChat_Parse(
+    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, EMsgIDChat* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<EMsgIDChat>(
+    EMsgIDChat_descriptor(), name, value);
+}
 // ===================================================================
 
 
@@ -291,11 +292,6 @@ template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::EMsgIDMain>() {
   return ::EMsgIDMain_descriptor();
 }
-template <> struct is_proto_enum< ::EResCode> : ::std::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::EResCode>() {
-  return ::EResCode_descriptor();
-}
 template <> struct is_proto_enum< ::EMsgIDLogin> : ::std::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::EMsgIDLogin>() {
@@ -305,6 +301,11 @@ template <> struct is_proto_enum< ::EMsgIDGame> : ::std::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::EMsgIDGame>() {
   return ::EMsgIDGame_descriptor();
+}
+template <> struct is_proto_enum< ::EMsgIDChat> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::EMsgIDChat>() {
+  return ::EMsgIDChat_descriptor();
 }
 
 PROTOBUF_NAMESPACE_CLOSE

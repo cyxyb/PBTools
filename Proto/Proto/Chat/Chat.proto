@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package Chat;
+
+//玩家登录
+message MsgChatLogin
+{
+	int32		user_id			= 1;	//玩家id
+	string		password		= 2;	//玩家密码
+}
+
+//玩家登录返回
+message MsgChatLoginResp
+{
+	int32		res_code		= 1;	//登录返回码(0:成功 非0:失败)
+	int32		user_id			= 2;	//玩家ID
+	int32		beautiful_id	= 3;	//玩家靓号
+	string		nickname		= 4;	//玩家昵称
+	string		avatar			= 5;	//头像
+	int32		vip_level		= 6;	//VIP等级
+	int32		avatar_frame	= 7;	//头像框
+}
+
+//聊天服务器信息
+message MsgChatServerInfo
+{
+	int32	ip					= 1;		//IP
+	int32	port				= 2;		//端口
+	int32	server_id			= 3;		//服务器ID
+	int32	online_num			= 4;		//在线人数
+	int32	max_player			= 5;		//最大人数
+}
+
+//聊天服务器列表
+message MsgChatServerList
+{
+	repeated MsgChatServerInfo	chat_server_list		= 1;	//服务器列表 
+}
