@@ -156,6 +156,7 @@ message MsgLoginPlayerInfo
 	int32		avatar_frame	= 14;	//头像框
 	int32		channel_id		= 15;	//渠道ID
 	string      bank_password	= 16;	//银行密码
+	uint64		bank_gold		= 17;	//银行金币
 }
 
 //游戏服务器玩家信息

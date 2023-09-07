@@ -108,8 +108,6 @@ enum EMsgIDLogin
 	MsgIDBank_BankTransferResp					= 87;		//银行转账返回(MsgBankTransferResp)
 	MsgIDBank_BankRecord						= 88;		//银行转账记录()
 	MsgIDBank_BankRecordResp					= 89;		//银行转账记录返回(MsgBankRecordResp)
-	MsgIDBank_BankRequestSet					= 90;		//银行是否设置密码()
-	MsgIDBank_BankRequestSetResp				= 91;		//银行是否设置密码返回()
 }
 
 enum EMsgIDGame
