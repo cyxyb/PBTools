@@ -31,7 +31,7 @@ enum EMsgIDLogin
 	MsgIDMail_RecallMailResp					= 17;		//撤回邮件返回(0:成功 非0:查看返回码)
 	MsgIDMail_DeleteAllReadMail					= 18;		//删除已读邮件(MsgCommonN32)
 	MsgIDMail_DeleteAllReadMailResp				= 19;		//删除已读邮件返回(MsgCommonN32)
-	MsgIDLogin_PhoneCode						= 20;		//验证码(MsgCommonN32)
+	MsgIDLogin_PhoneCode						= 20;		//验证码(MsgPhoneCode)
 	MsgIDLogin_PhoneCodeResp					= 21;		//验证码返回(MsgCommonN32)
 	MsgIDLogin_SyncPlayerGoldResp				= 22;		//同步玩家金币(MsgCommonN64)
 	MsgIDLogin_NotifyGameServerList				= 23;		//通知游戏服务器列表(MsgGameServerList)

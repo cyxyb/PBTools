@@ -113,7 +113,9 @@ public static partial class LoginReflection {
           "a19nb2xkGAIgASgDImQKDU1zZ0JhbmtSZWNvcmQSFwoPb3BlcmF0ZV91c2Vy",
           "X2lkGAEgASgFEhUKDXRyYW5zZmVyX2dvbGQYAiABKAMSDQoFdGltZXIYAyAB",
           "KAUSFAoMb3BlcmF0ZV90eXBlGAQgASgFIjQKEU1zZ0JhbmtSZWNvcmRSZXNw",
-          "Eh8KB3JlY29yZHMYASADKAsyDi5Nc2dCYW5rUmVjb3JkYgZwcm90bzM="));
+          "Eh8KB3JlY29yZHMYASADKAsyDi5Nc2dCYW5rUmVjb3JkIjAKDE1zZ1Bob25l",
+          "Q29kZRIRCglhcmVhX2NvZGUYASABKAkSDQoFcGhvbmUYAiABKAliBnByb3Rv",
+          "Mw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -155,7 +157,8 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTopListResp), global::MsgTopListResp.Parser, new[]{ "UserId", "RankType", "ThisRankNdex", "ThisGold", "IsEnd", "Lists" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankTransferResp), global::MsgBankTransferResp.Parser, new[]{ "RetValue", "BankGold" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankRecord), global::MsgBankRecord.Parser, new[]{ "OperateUserId", "TransferGold", "Timer", "OperateType" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankRecordResp), global::MsgBankRecordResp.Parser, new[]{ "Records" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankRecordResp), global::MsgBankRecordResp.Parser, new[]{ "Records" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPhoneCode), global::MsgPhoneCode.Parser, new[]{ "AreaCode", "Phone" }, null, null, null, null)
         }));
   }
   #endregion
@@ -12020,6 +12023,223 @@ public sealed partial class MsgBankRecordResp : pb::IMessage<MsgBankRecordResp>
           break;
         case 10: {
           records_.AddEntriesFrom(ref input, _repeated_records_codec);
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///请求验证码
+/// </summary>
+public sealed partial class MsgPhoneCode : pb::IMessage<MsgPhoneCode>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgPhoneCode> _parser = new pb::MessageParser<MsgPhoneCode>(() => new MsgPhoneCode());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgPhoneCode> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[39]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgPhoneCode() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgPhoneCode(MsgPhoneCode other) : this() {
+    areaCode_ = other.areaCode_;
+    phone_ = other.phone_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgPhoneCode Clone() {
+    return new MsgPhoneCode(this);
+  }
+
+  /// <summary>Field number for the "area_code" field.</summary>
+  public const int AreaCodeFieldNumber = 1;
+  private string areaCode_ = "";
+  /// <summary>
+  ///区号
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string AreaCode {
+    get { return areaCode_; }
+    set {
+      areaCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "phone" field.</summary>
+  public const int PhoneFieldNumber = 2;
+  private string phone_ = "";
+  /// <summary>
+  ///手机号
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string Phone {
+    get { return phone_; }
+    set {
+      phone_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgPhoneCode);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgPhoneCode other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (AreaCode != other.AreaCode) return false;
+    if (Phone != other.Phone) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (AreaCode.Length != 0) hash ^= AreaCode.GetHashCode();
+    if (Phone.Length != 0) hash ^= Phone.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (AreaCode.Length != 0) {
+      output.WriteRawTag(10);
+      output.WriteString(AreaCode);
+    }
+    if (Phone.Length != 0) {
+      output.WriteRawTag(18);
+      output.WriteString(Phone);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (AreaCode.Length != 0) {
+      output.WriteRawTag(10);
+      output.WriteString(AreaCode);
+    }
+    if (Phone.Length != 0) {
+      output.WriteRawTag(18);
+      output.WriteString(Phone);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (AreaCode.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(AreaCode);
+    }
+    if (Phone.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Phone);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgPhoneCode other) {
+    if (other == null) {
+      return;
+    }
+    if (other.AreaCode.Length != 0) {
+      AreaCode = other.AreaCode;
+    }
+    if (other.Phone.Length != 0) {
+      Phone = other.Phone;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 10: {
+          AreaCode = input.ReadString();
+          break;
+        }
+        case 18: {
+          Phone = input.ReadString();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 10: {
+          AreaCode = input.ReadString();
+          break;
+        }
+        case 18: {
+          Phone = input.ReadString();
           break;
         }
       }

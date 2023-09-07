@@ -349,3 +349,10 @@ message MsgBankRecordResp
 {
 	repeated MsgBankRecord records = 1;
 };
+
+//请求验证码
+message MsgPhoneCode
+{
+	string		area_code			= 1;	//区号
+	string		phone				= 2;	//手机号
+};
