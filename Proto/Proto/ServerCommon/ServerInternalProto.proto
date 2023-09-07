@@ -2,12 +2,13 @@ syntax = "proto3";
 
 /////////////////////////服务器与服务器///////////////////////////
 //注册登录服务器
-message MsgRegisterLoginServer
+message MsgRegisterServer
 {
 	int32 	ip					= 1; // IP
 	int32 	port				= 2; // 端口
 	int32 	server_id			= 3; // 服务器ID
 }
+
 //注册游戏服务器
 message MsgRegisterGameServer
 {
@@ -19,6 +20,16 @@ message MsgRegisterGameServer
 	int32	limit_gold			= 6; //入场金币
 	int32	max_player			= 7; //最大人数
 	string	room_name			= 8; //房间名字
+}
+
+//注册聊天服务器
+message MsgRegisterChatServer
+{
+	int32 	ip					= 1; // IP
+	int32 	port				= 2; // 端口
+	int32 	server_id			= 3; // 服务器ID
+	int32	max_player			= 4; //	最大人数
+
 }
 
 message MsgApplyRobot

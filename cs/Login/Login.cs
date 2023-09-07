@@ -105,15 +105,15 @@ public static partial class LoginReflection {
           "KAQSEQoJdmlwX2xldmVsGAQgASgNEhQKDGF2YXRhcl9mcmFtZRgFIAEoBRIQ",
           "CghoZWFkX3VybBgGIAEoCRIRCgluaWNrX25hbWUYByABKAkiVwoKTXNnR2V0",
           "UmFuaxIRCglyYW5rX3R5cGUYASABKAUSDwoHdXNlcl9pZBgCIAEoBRIUCgxj",
-          "dXJyZW50X3BhZ2UYAyABKAUSDwoHbWF4X3JvdxgEIAEoBSJwCg5Nc2dUb3BM",
-          "aXN0UmVzcBIPCgd1c2VyX2lkGAEgASgFEhEKCXJhbmtfdHlwZRgCIAEoBRIe",
-          "Cgl0aGlzX2luZm8YAyABKAsyCy5Nc2dUb3BJbmZvEhoKBWxpc3RzGAQgAygL",
-          "MgsuTXNnVG9wSW5mbyI7ChNNc2dCYW5rVHJhbnNmZXJSZXNwEhEKCXJldF92",
-          "YWx1ZRgBIAEoBRIRCgliYW5rX2dvbGQYAiABKAMiZAoNTXNnQmFua1JlY29y",
-          "ZBIXCg9vcGVyYXRlX3VzZXJfaWQYASABKAUSFQoNdHJhbnNmZXJfZ29sZBgC",
-          "IAEoAxINCgV0aW1lchgDIAEoBRIUCgxvcGVyYXRlX3R5cGUYBCABKAUiNAoR",
-          "TXNnQmFua1JlY29yZFJlc3ASHwoHcmVjb3JkcxgBIAMoCzIOLk1zZ0JhbmtS",
-          "ZWNvcmRiBnByb3RvMw=="));
+          "dXJyZW50X3BhZ2UYAyABKAUSDwoHbWF4X3JvdxgEIAEoBSKLAQoOTXNnVG9w",
+          "TGlzdFJlc3ASDwoHdXNlcl9pZBgBIAEoBRIRCglyYW5rX3R5cGUYAiABKAUS",
+          "FgoOdGhpc19yYW5rX25kZXgYAyABKAUSEQoJdGhpc19nb2xkGAQgASgFEg4K",
+          "BmlzX2VuZBgFIAEoBRIaCgVsaXN0cxgGIAMoCzILLk1zZ1RvcEluZm8iOwoT",
+          "TXNnQmFua1RyYW5zZmVyUmVzcBIRCglyZXRfdmFsdWUYASABKAUSEQoJYmFu",
+          "a19nb2xkGAIgASgDImQKDU1zZ0JhbmtSZWNvcmQSFwoPb3BlcmF0ZV91c2Vy",
+          "X2lkGAEgASgFEhUKDXRyYW5zZmVyX2dvbGQYAiABKAMSDQoFdGltZXIYAyAB",
+          "KAUSFAoMb3BlcmF0ZV90eXBlGAQgASgFIjQKEU1zZ0JhbmtSZWNvcmRSZXNw",
+          "Eh8KB3JlY29yZHMYASADKAsyDi5Nc2dCYW5rUmVjb3JkYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -152,7 +152,7 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankTransfer), global::MsgBankTransfer.Parser, new[]{ "RecvUserId", "TransferGold" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTopInfo), global::MsgTopInfo.Parser, new[]{ "RankId", "UserId", "Gold", "VipLevel", "AvatarFrame", "HeadUrl", "NickName" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgGetRank), global::MsgGetRank.Parser, new[]{ "RankType", "UserId", "CurrentPage", "MaxRow" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgTopListResp), global::MsgTopListResp.Parser, new[]{ "UserId", "RankType", "ThisInfo", "Lists" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgTopListResp), global::MsgTopListResp.Parser, new[]{ "UserId", "RankType", "ThisRankNdex", "ThisGold", "IsEnd", "Lists" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankTransferResp), global::MsgBankTransferResp.Parser, new[]{ "RetValue", "BankGold" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankRecord), global::MsgBankRecord.Parser, new[]{ "OperateUserId", "TransferGold", "Timer", "OperateType" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankRecordResp), global::MsgBankRecordResp.Parser, new[]{ "Records" }, null, null, null, null)
@@ -10789,7 +10789,7 @@ public sealed partial class MsgGetRank : pb::IMessage<MsgGetRank>
   public const int MaxRowFieldNumber = 4;
   private int maxRow_;
   /// <summary>
-  ///每页最大行数
+  ///每页最大行数  最大20条，超了改数据库
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int MaxRow {
@@ -11028,7 +11028,9 @@ public sealed partial class MsgTopListResp : pb::IMessage<MsgTopListResp>
   public MsgTopListResp(MsgTopListResp other) : this() {
     userId_ = other.userId_;
     rankType_ = other.rankType_;
-    thisInfo_ = other.thisInfo_ != null ? other.thisInfo_.Clone() : null;
+    thisRankNdex_ = other.thisRankNdex_;
+    thisGold_ = other.thisGold_;
+    isEnd_ = other.isEnd_;
     lists_ = other.lists_.Clone();
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
@@ -11066,24 +11068,52 @@ public sealed partial class MsgTopListResp : pb::IMessage<MsgTopListResp>
     }
   }
 
-  /// <summary>Field number for the "this_info" field.</summary>
-  public const int ThisInfoFieldNumber = 3;
-  private global::MsgTopInfo thisInfo_;
+  /// <summary>Field number for the "this_rank_ndex" field.</summary>
+  public const int ThisRankNdexFieldNumber = 3;
+  private int thisRankNdex_;
   /// <summary>
-  ///自己的信息
+  ///自己的排名
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public global::MsgTopInfo ThisInfo {
-    get { return thisInfo_; }
+  public int ThisRankNdex {
+    get { return thisRankNdex_; }
     set {
-      thisInfo_ = value;
+      thisRankNdex_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "this_gold" field.</summary>
+  public const int ThisGoldFieldNumber = 4;
+  private int thisGold_;
+  /// <summary>
+  ///自己的金币
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int ThisGold {
+    get { return thisGold_; }
+    set {
+      thisGold_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "is_end" field.</summary>
+  public const int IsEndFieldNumber = 5;
+  private int isEnd_;
+  /// <summary>
+  ///是否到尾了
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int IsEnd {
+    get { return isEnd_; }
+    set {
+      isEnd_ = value;
     }
   }
 
   /// <summary>Field number for the "lists" field.</summary>
-  public const int ListsFieldNumber = 4;
+  public const int ListsFieldNumber = 6;
   private static readonly pb::FieldCodec<global::MsgTopInfo> _repeated_lists_codec
-      = pb::FieldCodec.ForMessage(34, global::MsgTopInfo.Parser);
+      = pb::FieldCodec.ForMessage(50, global::MsgTopInfo.Parser);
   private readonly pbc::RepeatedField<global::MsgTopInfo> lists_ = new pbc::RepeatedField<global::MsgTopInfo>();
   /// <summary>
   ///大富豪排行榜
@@ -11108,7 +11138,9 @@ public sealed partial class MsgTopListResp : pb::IMessage<MsgTopListResp>
     }
     if (UserId != other.UserId) return false;
     if (RankType != other.RankType) return false;
-    if (!object.Equals(ThisInfo, other.ThisInfo)) return false;
+    if (ThisRankNdex != other.ThisRankNdex) return false;
+    if (ThisGold != other.ThisGold) return false;
+    if (IsEnd != other.IsEnd) return false;
     if(!lists_.Equals(other.lists_)) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
@@ -11118,7 +11150,9 @@ public sealed partial class MsgTopListResp : pb::IMessage<MsgTopListResp>
     int hash = 1;
     if (UserId != 0) hash ^= UserId.GetHashCode();
     if (RankType != 0) hash ^= RankType.GetHashCode();
-    if (thisInfo_ != null) hash ^= ThisInfo.GetHashCode();
+    if (ThisRankNdex != 0) hash ^= ThisRankNdex.GetHashCode();
+    if (ThisGold != 0) hash ^= ThisGold.GetHashCode();
+    if (IsEnd != 0) hash ^= IsEnd.GetHashCode();
     hash ^= lists_.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
@@ -11144,9 +11178,17 @@ public sealed partial class MsgTopListResp : pb::IMessage<MsgTopListResp>
       output.WriteRawTag(16);
       output.WriteInt32(RankType);
     }
-    if (thisInfo_ != null) {
-      output.WriteRawTag(26);
-      output.WriteMessage(ThisInfo);
+    if (ThisRankNdex != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(ThisRankNdex);
+    }
+    if (ThisGold != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(ThisGold);
+    }
+    if (IsEnd != 0) {
+      output.WriteRawTag(40);
+      output.WriteInt32(IsEnd);
     }
     lists_.WriteTo(output, _repeated_lists_codec);
     if (_unknownFields != null) {
@@ -11166,9 +11208,17 @@ public sealed partial class MsgTopListResp : pb::IMessage<MsgTopListResp>
       output.WriteRawTag(16);
       output.WriteInt32(RankType);
     }
-    if (thisInfo_ != null) {
-      output.WriteRawTag(26);
-      output.WriteMessage(ThisInfo);
+    if (ThisRankNdex != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(ThisRankNdex);
+    }
+    if (ThisGold != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(ThisGold);
+    }
+    if (IsEnd != 0) {
+      output.WriteRawTag(40);
+      output.WriteInt32(IsEnd);
     }
     lists_.WriteTo(ref output, _repeated_lists_codec);
     if (_unknownFields != null) {
@@ -11186,8 +11236,14 @@ public sealed partial class MsgTopListResp : pb::IMessage<MsgTopListResp>
     if (RankType != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(RankType);
     }
-    if (thisInfo_ != null) {
-      size += 1 + pb::CodedOutputStream.ComputeMessageSize(ThisInfo);
+    if (ThisRankNdex != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(ThisRankNdex);
+    }
+    if (ThisGold != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(ThisGold);
+    }
+    if (IsEnd != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(IsEnd);
     }
     size += lists_.CalculateSize(_repeated_lists_codec);
     if (_unknownFields != null) {
@@ -11207,11 +11263,14 @@ public sealed partial class MsgTopListResp : pb::IMessage<MsgTopListResp>
     if (other.RankType != 0) {
       RankType = other.RankType;
     }
-    if (other.thisInfo_ != null) {
-      if (thisInfo_ == null) {
-        ThisInfo = new global::MsgTopInfo();
-      }
-      ThisInfo.MergeFrom(other.ThisInfo);
+    if (other.ThisRankNdex != 0) {
+      ThisRankNdex = other.ThisRankNdex;
+    }
+    if (other.ThisGold != 0) {
+      ThisGold = other.ThisGold;
+    }
+    if (other.IsEnd != 0) {
+      IsEnd = other.IsEnd;
     }
     lists_.Add(other.lists_);
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -11236,14 +11295,19 @@ public sealed partial class MsgTopListResp : pb::IMessage<MsgTopListResp>
           RankType = input.ReadInt32();
           break;
         }
-        case 26: {
-          if (thisInfo_ == null) {
-            ThisInfo = new global::MsgTopInfo();
-          }
-          input.ReadMessage(ThisInfo);
+        case 24: {
+          ThisRankNdex = input.ReadInt32();
           break;
         }
-        case 34: {
+        case 32: {
+          ThisGold = input.ReadInt32();
+          break;
+        }
+        case 40: {
+          IsEnd = input.ReadInt32();
+          break;
+        }
+        case 50: {
           lists_.AddEntriesFrom(input, _repeated_lists_codec);
           break;
         }
@@ -11269,14 +11333,19 @@ public sealed partial class MsgTopListResp : pb::IMessage<MsgTopListResp>
           RankType = input.ReadInt32();
           break;
         }
-        case 26: {
-          if (thisInfo_ == null) {
-            ThisInfo = new global::MsgTopInfo();
-          }
-          input.ReadMessage(ThisInfo);
+        case 24: {
+          ThisRankNdex = input.ReadInt32();
           break;
         }
-        case 34: {
+        case 32: {
+          ThisGold = input.ReadInt32();
+          break;
+        }
+        case 40: {
+          IsEnd = input.ReadInt32();
+          break;
+        }
+        case 50: {
           lists_.AddEntriesFrom(ref input, _repeated_lists_codec);
           break;
         }

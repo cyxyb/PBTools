@@ -1040,7 +1040,9 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::MsgTopListResp, user_id_),
   PROTOBUF_FIELD_OFFSET(::MsgTopListResp, rank_type_),
-  PROTOBUF_FIELD_OFFSET(::MsgTopListResp, this_info_),
+  PROTOBUF_FIELD_OFFSET(::MsgTopListResp, this_rank_ndex_),
+  PROTOBUF_FIELD_OFFSET(::MsgTopListResp, this_gold_),
+  PROTOBUF_FIELD_OFFSET(::MsgTopListResp, is_end_),
   PROTOBUF_FIELD_OFFSET(::MsgTopListResp, lists_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgBankTransferResp, _internal_metadata_),
@@ -1102,9 +1104,9 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 311, -1, sizeof(::MsgTopInfo)},
   { 323, -1, sizeof(::MsgGetRank)},
   { 332, -1, sizeof(::MsgTopListResp)},
-  { 341, -1, sizeof(::MsgBankTransferResp)},
-  { 348, -1, sizeof(::MsgBankRecord)},
-  { 357, -1, sizeof(::MsgBankRecordResp)},
+  { 343, -1, sizeof(::MsgBankTransferResp)},
+  { 350, -1, sizeof(::MsgBankRecord)},
+  { 359, -1, sizeof(::MsgBankRecordResp)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -1243,16 +1245,17 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "vel\030\004 \001(\r\022\024\n\014avatar_frame\030\005 \001(\005\022\020\n\010head_"
   "url\030\006 \001(\t\022\021\n\tnick_name\030\007 \001(\t\"W\n\nMsgGetRa"
   "nk\022\021\n\trank_type\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\024"
-  "\n\014current_page\030\003 \001(\005\022\017\n\007max_row\030\004 \001(\005\"p\n"
-  "\016MsgTopListResp\022\017\n\007user_id\030\001 \001(\005\022\021\n\trank"
-  "_type\030\002 \001(\005\022\036\n\tthis_info\030\003 \001(\0132\013.MsgTopI"
-  "nfo\022\032\n\005lists\030\004 \003(\0132\013.MsgTopInfo\";\n\023MsgBa"
-  "nkTransferResp\022\021\n\tret_value\030\001 \001(\005\022\021\n\tban"
-  "k_gold\030\002 \001(\003\"d\n\rMsgBankRecord\022\027\n\017operate"
-  "_user_id\030\001 \001(\005\022\025\n\rtransfer_gold\030\002 \001(\003\022\r\n"
-  "\005timer\030\003 \001(\005\022\024\n\014operate_type\030\004 \001(\005\"4\n\021Ms"
-  "gBankRecordResp\022\037\n\007records\030\001 \003(\0132\016.MsgBa"
-  "nkRecordb\006proto3"
+  "\n\014current_page\030\003 \001(\005\022\017\n\007max_row\030\004 \001(\005\"\213\001"
+  "\n\016MsgTopListResp\022\017\n\007user_id\030\001 \001(\005\022\021\n\tran"
+  "k_type\030\002 \001(\005\022\026\n\016this_rank_ndex\030\003 \001(\005\022\021\n\t"
+  "this_gold\030\004 \001(\005\022\016\n\006is_end\030\005 \001(\005\022\032\n\005lists"
+  "\030\006 \003(\0132\013.MsgTopInfo\";\n\023MsgBankTransferRe"
+  "sp\022\021\n\tret_value\030\001 \001(\005\022\021\n\tbank_gold\030\002 \001(\003"
+  "\"d\n\rMsgBankRecord\022\027\n\017operate_user_id\030\001 \001"
+  "(\005\022\025\n\rtransfer_gold\030\002 \001(\003\022\r\n\005timer\030\003 \001(\005"
+  "\022\024\n\014operate_type\030\004 \001(\005\"4\n\021MsgBankRecordR"
+  "esp\022\037\n\007records\030\001 \003(\0132\016.MsgBankRecordb\006pr"
+  "oto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Login_2eproto_deps[1] = {
 };
@@ -1299,7 +1302,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Login_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Login_2eproto = {
-  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 4096,
+  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 4124,
   &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 39, 0,
   schemas, file_default_instances, TableStruct_Login_2eproto::offsets,
   file_level_metadata_Login_2eproto, 39, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
@@ -11747,13 +11750,8 @@ void MsgGetRank::InternalSwap(MsgGetRank* other) {
 
 class MsgTopListResp::_Internal {
  public:
-  static const ::MsgTopInfo& this_info(const MsgTopListResp* msg);
 };
 
-const ::MsgTopInfo&
-MsgTopListResp::_Internal::this_info(const MsgTopListResp* msg) {
-  return *msg->this_info_;
-}
 MsgTopListResp::MsgTopListResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena),
   lists_(arena) {
@@ -11765,23 +11763,18 @@ MsgTopListResp::MsgTopListResp(const MsgTopListResp& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       lists_(from.lists_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  if (from._internal_has_this_info()) {
-    this_info_ = new ::MsgTopInfo(*from.this_info_);
-  } else {
-    this_info_ = nullptr;
-  }
   ::memcpy(&user_id_, &from.user_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&rank_type_) -
-    reinterpret_cast<char*>(&user_id_)) + sizeof(rank_type_));
+    static_cast<size_t>(reinterpret_cast<char*>(&is_end_) -
+    reinterpret_cast<char*>(&user_id_)) + sizeof(is_end_));
   // @@protoc_insertion_point(copy_constructor:MsgTopListResp)
 }
 
 void MsgTopListResp::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgTopListResp_Login_2eproto.base);
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&this_info_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&rank_type_) -
-      reinterpret_cast<char*>(&this_info_)) + sizeof(rank_type_));
+      reinterpret_cast<char*>(&user_id_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&is_end_) -
+      reinterpret_cast<char*>(&user_id_)) + sizeof(is_end_));
 }
 
 MsgTopListResp::~MsgTopListResp() {
@@ -11792,7 +11785,6 @@ MsgTopListResp::~MsgTopListResp() {
 
 void MsgTopListResp::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
-  if (this != internal_default_instance()) delete this_info_;
 }
 
 void MsgTopListResp::ArenaDtor(void* object) {
@@ -11817,13 +11809,9 @@ void MsgTopListResp::Clear() {
   (void) cached_has_bits;
 
   lists_.Clear();
-  if (GetArena() == nullptr && this_info_ != nullptr) {
-    delete this_info_;
-  }
-  this_info_ = nullptr;
   ::memset(&user_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&rank_type_) -
-      reinterpret_cast<char*>(&user_id_)) + sizeof(rank_type_));
+      reinterpret_cast<char*>(&is_end_) -
+      reinterpret_cast<char*>(&user_id_)) + sizeof(is_end_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -11848,23 +11836,37 @@ const char* MsgTopListResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .MsgTopInfo this_info = 3;
+      // int32 this_rank_ndex = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          ptr = ctx->ParseMessage(_internal_mutable_this_info(), ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          this_rank_ndex_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated .MsgTopInfo lists = 4;
+      // int32 this_gold = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          this_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 is_end = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          is_end_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated .MsgTopInfo lists = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
           ptr -= 1;
           do {
             ptr += 1;
             ptr = ctx->ParseMessage(_internal_add_lists(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<34>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<50>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -11907,20 +11909,30 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_rank_type(), target);
   }
 
-  // .MsgTopInfo this_info = 3;
-  if (this->has_this_info()) {
+  // int32 this_rank_ndex = 3;
+  if (this->this_rank_ndex() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::this_info(this), target, stream);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_this_rank_ndex(), target);
   }
 
-  // repeated .MsgTopInfo lists = 4;
+  // int32 this_gold = 4;
+  if (this->this_gold() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_this_gold(), target);
+  }
+
+  // int32 is_end = 5;
+  if (this->is_end() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_is_end(), target);
+  }
+
+  // repeated .MsgTopInfo lists = 6;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_lists_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(4, this->_internal_lists(i), target, stream);
+      InternalWriteMessage(6, this->_internal_lists(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -11939,18 +11951,11 @@ size_t MsgTopListResp::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .MsgTopInfo lists = 4;
+  // repeated .MsgTopInfo lists = 6;
   total_size += 1UL * this->_internal_lists_size();
   for (const auto& msg : this->lists_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
-  }
-
-  // .MsgTopInfo this_info = 3;
-  if (this->has_this_info()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *this_info_);
   }
 
   // int32 user_id = 1;
@@ -11965,6 +11970,27 @@ size_t MsgTopListResp::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_rank_type());
+  }
+
+  // int32 this_rank_ndex = 3;
+  if (this->this_rank_ndex() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_this_rank_ndex());
+  }
+
+  // int32 this_gold = 4;
+  if (this->this_gold() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_this_gold());
+  }
+
+  // int32 is_end = 5;
+  if (this->is_end() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_is_end());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -11999,14 +12025,20 @@ void MsgTopListResp::MergeFrom(const MsgTopListResp& from) {
   (void) cached_has_bits;
 
   lists_.MergeFrom(from.lists_);
-  if (from.has_this_info()) {
-    _internal_mutable_this_info()->::MsgTopInfo::MergeFrom(from._internal_this_info());
-  }
   if (from.user_id() != 0) {
     _internal_set_user_id(from._internal_user_id());
   }
   if (from.rank_type() != 0) {
     _internal_set_rank_type(from._internal_rank_type());
+  }
+  if (from.this_rank_ndex() != 0) {
+    _internal_set_this_rank_ndex(from._internal_this_rank_ndex());
+  }
+  if (from.this_gold() != 0) {
+    _internal_set_this_gold(from._internal_this_gold());
+  }
+  if (from.is_end() != 0) {
+    _internal_set_is_end(from._internal_is_end());
   }
 }
 
@@ -12033,11 +12065,11 @@ void MsgTopListResp::InternalSwap(MsgTopListResp* other) {
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   lists_.InternalSwap(&other->lists_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgTopListResp, rank_type_)
-      + sizeof(MsgTopListResp::rank_type_)
-      - PROTOBUF_FIELD_OFFSET(MsgTopListResp, this_info_)>(
-          reinterpret_cast<char*>(&this_info_),
-          reinterpret_cast<char*>(&other->this_info_));
+      PROTOBUF_FIELD_OFFSET(MsgTopListResp, is_end_)
+      + sizeof(MsgTopListResp::is_end_)
+      - PROTOBUF_FIELD_OFFSET(MsgTopListResp, user_id_)>(
+          reinterpret_cast<char*>(&user_id_),
+          reinterpret_cast<char*>(&other->user_id_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MsgTopListResp::GetMetadata() const {
