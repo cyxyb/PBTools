@@ -46,7 +46,7 @@ struct TableStruct_ServerInternalProto_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[40]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[41]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -170,6 +170,9 @@ extern MsgRelayServerRegisterDefaultTypeInternal _MsgRelayServerRegister_default
 class MsgSendPhoneCode;
 class MsgSendPhoneCodeDefaultTypeInternal;
 extern MsgSendPhoneCodeDefaultTypeInternal _MsgSendPhoneCode_default_instance_;
+class MsgStorageCode;
+class MsgStorageCodeDefaultTypeInternal;
+extern MsgStorageCodeDefaultTypeInternal _MsgStorageCode_default_instance_;
 class MsgUpdateGameServerOnlineNum;
 class MsgUpdateGameServerOnlineNumDefaultTypeInternal;
 extern MsgUpdateGameServerOnlineNumDefaultTypeInternal _MsgUpdateGameServerOnlineNum_default_instance_;
@@ -213,6 +216,7 @@ template<> ::MsgRelayServerAddMail* Arena::CreateMaybeMessage<::MsgRelayServerAd
 template<> ::MsgRelayServerRecharge* Arena::CreateMaybeMessage<::MsgRelayServerRecharge>(Arena*);
 template<> ::MsgRelayServerRegister* Arena::CreateMaybeMessage<::MsgRelayServerRegister>(Arena*);
 template<> ::MsgSendPhoneCode* Arena::CreateMaybeMessage<::MsgSendPhoneCode>(Arena*);
+template<> ::MsgStorageCode* Arena::CreateMaybeMessage<::MsgStorageCode>(Arena*);
 template<> ::MsgUpdateGameServerOnlineNum* Arena::CreateMaybeMessage<::MsgUpdateGameServerOnlineNum>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 
@@ -5266,13 +5270,13 @@ class MsgDBWriteScore PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kGameDetailsFieldNumber = 4,
+    kGameDetailsFieldNumber = 5,
     kUserIdFieldNumber = 1,
     kBetFieldNumber = 2,
     kScoreFieldNumber = 3,
-    kIsUpRankFieldNumber = 5,
+    kIsUpRankFieldNumber = 4,
   };
-  // string game_details = 4;
+  // string game_details = 5;
   void clear_game_details();
   const std::string& game_details() const;
   void set_game_details(const std::string& value);
@@ -5315,7 +5319,7 @@ class MsgDBWriteScore PROTOBUF_FINAL :
   void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int32 is_up_rank = 5;
+  // int32 is_up_rank = 4;
   void clear_is_up_rank();
   ::PROTOBUF_NAMESPACE_ID::int32 is_up_rank() const;
   void set_is_up_rank(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -7348,6 +7352,171 @@ class MsgDBBankTransfer PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 from_user_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 recv_user_id_;
   ::PROTOBUF_NAMESPACE_ID::int64 transfer_gold_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgStorageCode PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgStorageCode) */ {
+ public:
+  inline MsgStorageCode() : MsgStorageCode(nullptr) {}
+  virtual ~MsgStorageCode();
+
+  MsgStorageCode(const MsgStorageCode& from);
+  MsgStorageCode(MsgStorageCode&& from) noexcept
+    : MsgStorageCode() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgStorageCode& operator=(const MsgStorageCode& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgStorageCode& operator=(MsgStorageCode&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgStorageCode& default_instance();
+
+  static inline const MsgStorageCode* internal_default_instance() {
+    return reinterpret_cast<const MsgStorageCode*>(
+               &_MsgStorageCode_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    40;
+
+  friend void swap(MsgStorageCode& a, MsgStorageCode& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgStorageCode* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgStorageCode* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgStorageCode* New() const final {
+    return CreateMaybeMessage<MsgStorageCode>(nullptr);
+  }
+
+  MsgStorageCode* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgStorageCode>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgStorageCode& from);
+  void MergeFrom(const MsgStorageCode& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgStorageCode* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgStorageCode";
+  }
+  protected:
+  explicit MsgStorageCode(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kPhoneFieldNumber = 2,
+    kUserIdFieldNumber = 1,
+    kCodeFieldNumber = 3,
+  };
+  // string phone = 2;
+  void clear_phone();
+  const std::string& phone() const;
+  void set_phone(const std::string& value);
+  void set_phone(std::string&& value);
+  void set_phone(const char* value);
+  void set_phone(const char* value, size_t size);
+  std::string* mutable_phone();
+  std::string* release_phone();
+  void set_allocated_phone(std::string* phone);
+  private:
+  const std::string& _internal_phone() const;
+  void _internal_set_phone(const std::string& value);
+  std::string* _internal_mutable_phone();
+  public:
+
+  // int32 user_id = 1;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 code = 3;
+  void clear_code();
+  ::PROTOBUF_NAMESPACE_ID::int32 code() const;
+  void set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_code() const;
+  void _internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgStorageCode)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr phone_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 code_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -11043,7 +11212,27 @@ inline void MsgDBWriteScore::set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   // @@protoc_insertion_point(field_set:MsgDBWriteScore.score)
 }
 
-// string game_details = 4;
+// int32 is_up_rank = 4;
+inline void MsgDBWriteScore::clear_is_up_rank() {
+  is_up_rank_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScore::_internal_is_up_rank() const {
+  return is_up_rank_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScore::is_up_rank() const {
+  // @@protoc_insertion_point(field_get:MsgDBWriteScore.is_up_rank)
+  return _internal_is_up_rank();
+}
+inline void MsgDBWriteScore::_internal_set_is_up_rank(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  is_up_rank_ = value;
+}
+inline void MsgDBWriteScore::set_is_up_rank(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_is_up_rank(value);
+  // @@protoc_insertion_point(field_set:MsgDBWriteScore.is_up_rank)
+}
+
+// string game_details = 5;
 inline void MsgDBWriteScore::clear_game_details() {
   game_details_.ClearToEmpty();
 }
@@ -11102,26 +11291,6 @@ inline void MsgDBWriteScore::set_allocated_game_details(std::string* game_detail
   game_details_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), game_details,
       GetArena());
   // @@protoc_insertion_point(field_set_allocated:MsgDBWriteScore.game_details)
-}
-
-// int32 is_up_rank = 5;
-inline void MsgDBWriteScore::clear_is_up_rank() {
-  is_up_rank_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScore::_internal_is_up_rank() const {
-  return is_up_rank_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScore::is_up_rank() const {
-  // @@protoc_insertion_point(field_get:MsgDBWriteScore.is_up_rank)
-  return _internal_is_up_rank();
-}
-inline void MsgDBWriteScore::_internal_set_is_up_rank(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  is_up_rank_ = value;
-}
-inline void MsgDBWriteScore::set_is_up_rank(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_is_up_rank(value);
-  // @@protoc_insertion_point(field_set:MsgDBWriteScore.is_up_rank)
 }
 
 // -------------------------------------------------------------------
@@ -12216,9 +12385,116 @@ inline void MsgDBBankTransfer::set_transfer_gold(::PROTOBUF_NAMESPACE_ID::int64 
   // @@protoc_insertion_point(field_set:MsgDBBankTransfer.transfer_gold)
 }
 
+// -------------------------------------------------------------------
+
+// MsgStorageCode
+
+// int32 user_id = 1;
+inline void MsgStorageCode::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgStorageCode::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgStorageCode::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgStorageCode.user_id)
+  return _internal_user_id();
+}
+inline void MsgStorageCode::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgStorageCode::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgStorageCode.user_id)
+}
+
+// string phone = 2;
+inline void MsgStorageCode::clear_phone() {
+  phone_.ClearToEmpty();
+}
+inline const std::string& MsgStorageCode::phone() const {
+  // @@protoc_insertion_point(field_get:MsgStorageCode.phone)
+  return _internal_phone();
+}
+inline void MsgStorageCode::set_phone(const std::string& value) {
+  _internal_set_phone(value);
+  // @@protoc_insertion_point(field_set:MsgStorageCode.phone)
+}
+inline std::string* MsgStorageCode::mutable_phone() {
+  // @@protoc_insertion_point(field_mutable:MsgStorageCode.phone)
+  return _internal_mutable_phone();
+}
+inline const std::string& MsgStorageCode::_internal_phone() const {
+  return phone_.Get();
+}
+inline void MsgStorageCode::_internal_set_phone(const std::string& value) {
+  
+  phone_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgStorageCode::set_phone(std::string&& value) {
+  
+  phone_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgStorageCode.phone)
+}
+inline void MsgStorageCode::set_phone(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  phone_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgStorageCode.phone)
+}
+inline void MsgStorageCode::set_phone(const char* value,
+    size_t size) {
+  
+  phone_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgStorageCode.phone)
+}
+inline std::string* MsgStorageCode::_internal_mutable_phone() {
+  
+  return phone_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgStorageCode::release_phone() {
+  // @@protoc_insertion_point(field_release:MsgStorageCode.phone)
+  return phone_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgStorageCode::set_allocated_phone(std::string* phone) {
+  if (phone != nullptr) {
+    
+  } else {
+    
+  }
+  phone_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), phone,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgStorageCode.phone)
+}
+
+// int32 code = 3;
+inline void MsgStorageCode::clear_code() {
+  code_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgStorageCode::_internal_code() const {
+  return code_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgStorageCode::code() const {
+  // @@protoc_insertion_point(field_get:MsgStorageCode.code)
+  return _internal_code();
+}
+inline void MsgStorageCode::_internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  code_ = value;
+}
+inline void MsgStorageCode::set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_code(value);
+  // @@protoc_insertion_point(field_set:MsgStorageCode.code)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

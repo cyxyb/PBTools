@@ -371,3 +371,11 @@ message MsgDBBankTransfer
 	int32 recv_user_id = 2;//接受Id
 	int64 transfer_gold = 3;//操作金币
 }
+
+//缓存验证码
+message MsgStorageCode
+{
+	int32		user_id				= 1;	//玩家ID
+	string		phone				= 2;	//手机号
+	int32		code				= 3;	//验证码
+};
