@@ -258,8 +258,8 @@ message MsgDBWriteScore
 	int32		user_id			= 1;	//玩家ID
 	int32		bet				= 2;	//下注
 	int64		score			= 3;	//分数
-	string		game_details	= 4;	//游戏详情
-	int32		is_up_rank		= 5;	//是否更新排行榜
+	int32		is_up_rank		= 4;	//是否更新排行榜
+	string		game_details	= 5;	//游戏详情
 }
 
 //写分返回
