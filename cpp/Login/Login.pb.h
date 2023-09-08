@@ -7566,11 +7566,27 @@ class MsgBankRecord PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
+    kTimerFieldNumber = 3,
     kTransferGoldFieldNumber = 2,
     kOperateUserIdFieldNumber = 1,
-    kTimerFieldNumber = 3,
     kOperateTypeFieldNumber = 4,
   };
+  // string timer = 3;
+  void clear_timer();
+  const std::string& timer() const;
+  void set_timer(const std::string& value);
+  void set_timer(std::string&& value);
+  void set_timer(const char* value);
+  void set_timer(const char* value, size_t size);
+  std::string* mutable_timer();
+  std::string* release_timer();
+  void set_allocated_timer(std::string* timer);
+  private:
+  const std::string& _internal_timer() const;
+  void _internal_set_timer(const std::string& value);
+  std::string* _internal_mutable_timer();
+  public:
+
   // int64 transfer_gold = 2;
   void clear_transfer_gold();
   ::PROTOBUF_NAMESPACE_ID::int64 transfer_gold() const;
@@ -7589,15 +7605,6 @@ class MsgBankRecord PROTOBUF_FINAL :
   void _internal_set_operate_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 timer = 3;
-  void clear_timer();
-  ::PROTOBUF_NAMESPACE_ID::int32 timer() const;
-  void set_timer(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_timer() const;
-  void _internal_set_timer(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
   // int32 operate_type = 4;
   void clear_operate_type();
   ::PROTOBUF_NAMESPACE_ID::int32 operate_type() const;
@@ -7614,9 +7621,9 @@ class MsgBankRecord PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr timer_;
   ::PROTOBUF_NAMESPACE_ID::int64 transfer_gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 operate_user_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 timer_;
   ::PROTOBUF_NAMESPACE_ID::int32 operate_type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
@@ -13581,24 +13588,65 @@ inline void MsgBankRecord::set_transfer_gold(::PROTOBUF_NAMESPACE_ID::int64 valu
   // @@protoc_insertion_point(field_set:MsgBankRecord.transfer_gold)
 }
 
-// int32 timer = 3;
+// string timer = 3;
 inline void MsgBankRecord::clear_timer() {
-  timer_ = 0;
+  timer_.ClearToEmpty();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBankRecord::_internal_timer() const {
-  return timer_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBankRecord::timer() const {
+inline const std::string& MsgBankRecord::timer() const {
   // @@protoc_insertion_point(field_get:MsgBankRecord.timer)
   return _internal_timer();
 }
-inline void MsgBankRecord::_internal_set_timer(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  timer_ = value;
-}
-inline void MsgBankRecord::set_timer(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgBankRecord::set_timer(const std::string& value) {
   _internal_set_timer(value);
   // @@protoc_insertion_point(field_set:MsgBankRecord.timer)
+}
+inline std::string* MsgBankRecord::mutable_timer() {
+  // @@protoc_insertion_point(field_mutable:MsgBankRecord.timer)
+  return _internal_mutable_timer();
+}
+inline const std::string& MsgBankRecord::_internal_timer() const {
+  return timer_.Get();
+}
+inline void MsgBankRecord::_internal_set_timer(const std::string& value) {
+  
+  timer_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgBankRecord::set_timer(std::string&& value) {
+  
+  timer_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgBankRecord.timer)
+}
+inline void MsgBankRecord::set_timer(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  timer_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgBankRecord.timer)
+}
+inline void MsgBankRecord::set_timer(const char* value,
+    size_t size) {
+  
+  timer_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgBankRecord.timer)
+}
+inline std::string* MsgBankRecord::_internal_mutable_timer() {
+  
+  return timer_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgBankRecord::release_timer() {
+  // @@protoc_insertion_point(field_release:MsgBankRecord.timer)
+  return timer_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgBankRecord::set_allocated_timer(std::string* timer) {
+  if (timer != nullptr) {
+    
+  } else {
+    
+  }
+  timer_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), timer,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgBankRecord.timer)
 }
 
 // int32 operate_type = 4;
