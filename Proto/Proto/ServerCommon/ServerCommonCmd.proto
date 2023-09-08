@@ -137,6 +137,16 @@ enum EMsgIDDB
 	LOGIN2DB_GetRank				= 1047; //获取排行榜
 	DB2LOGIN_GetRankResp			= 1048; //获取排行榜回调
 	LOGIN2DB_StorageCode			= 1049; //缓存验证码
+	LOGIN2DB_BankChangePassword		= 1050;	//银行修改密码
+	DB2LOGIN_BankChangePasswordResp	= 1051;	//银行修改密码返回
+	LOGIN2DB_BankOpenBank			= 1052;	//银行打开银行
+	DB2LOGIN_BankOpenBankResp		= 1053;	//银行打开银行返回
+	LOGIN2DB_BankOperate			= 1054;	//银行存入
+	DB2LOGIN_BankOperateResp		= 1055;	//银行存入返回
+	LOGIN2DB_BankTransfer			= 1056;	//银行转账
+	DB2LOGIN_BankTransferResp		= 1057;	//银行转账返回
+	LOGIN2DB_BankRecord				= 1058;	//银行转账记录
+	DB2LOGIN_BankRecordResp			= 1059;	//银行转账记录返回
 
 	//2001-3000 GameServer2DB
 	GAME2DB_Login					= 2001;	//玩家登录游戏

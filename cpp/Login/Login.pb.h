@@ -4395,6 +4395,7 @@ class MsgPlayerInfo PROTOBUF_FINAL :
     kAvatarFrameFieldNumber = 8,
     kZmdWinGoldFieldNumber = 11,
     kZmdGameIdFieldNumber = 10,
+    kBankPasswordFieldNumber = 12,
   };
   // string nickname = 3;
   void clear_nickname();
@@ -4523,6 +4524,15 @@ class MsgPlayerInfo PROTOBUF_FINAL :
   void _internal_set_zmd_game_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // bool bank_password = 12;
+  void clear_bank_password();
+  bool bank_password() const;
+  void set_bank_password(bool value);
+  private:
+  bool _internal_bank_password() const;
+  void _internal_set_bank_password(bool value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgPlayerInfo)
  private:
   class _Internal;
@@ -4541,6 +4551,7 @@ class MsgPlayerInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame_;
   ::PROTOBUF_NAMESPACE_ID::uint64 zmd_win_gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 zmd_game_id_;
+  bool bank_password_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -11016,6 +11027,26 @@ inline void MsgPlayerInfo::_internal_set_zmd_win_gold(::PROTOBUF_NAMESPACE_ID::u
 inline void MsgPlayerInfo::set_zmd_win_gold(::PROTOBUF_NAMESPACE_ID::uint64 value) {
   _internal_set_zmd_win_gold(value);
   // @@protoc_insertion_point(field_set:MsgPlayerInfo.zmd_win_gold)
+}
+
+// bool bank_password = 12;
+inline void MsgPlayerInfo::clear_bank_password() {
+  bank_password_ = false;
+}
+inline bool MsgPlayerInfo::_internal_bank_password() const {
+  return bank_password_;
+}
+inline bool MsgPlayerInfo::bank_password() const {
+  // @@protoc_insertion_point(field_get:MsgPlayerInfo.bank_password)
+  return _internal_bank_password();
+}
+inline void MsgPlayerInfo::_internal_set_bank_password(bool value) {
+  
+  bank_password_ = value;
+}
+inline void MsgPlayerInfo::set_bank_password(bool value) {
+  _internal_set_bank_password(value);
+  // @@protoc_insertion_point(field_set:MsgPlayerInfo.bank_password)
 }
 
 // -------------------------------------------------------------------

@@ -457,7 +457,7 @@ public enum EMsgIDLogin {
   /// </summary>
   [pbr::OriginalName("MsgIDBank_ChangePassword")] MsgIdbankChangePassword = 80,
   /// <summary>
-  ///银行修改密码返回(MsgCommonN32)0成功非0暂定
+  ///银行修改密码返回(MsgCommonN32)0成功非1和旧密码相同
   /// </summary>
   [pbr::OriginalName("MsgIDBank_ChangePasswordResp")] MsgIdbankChangePasswordResp = 81,
   /// <summary>

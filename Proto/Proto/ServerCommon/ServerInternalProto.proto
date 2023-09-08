@@ -332,23 +332,10 @@ message MsgDBUpdateJackpot
 }
 
 //银行
-//设置/输入-密码
-message MsgDBBankEnterPassword
-{
-	int32 user_id = 1;					//玩家ID
-	string Password = 2;				//密码
-}
-//修改密码
-message MsgDBBankVerifyPhone
-{
-	int32 user_id = 1;					//玩家ID
-	string phone = 2;					//手机号
-}
 message MsgDBBankChangePassword
 {
 	int32 user_id = 1;					//玩家ID
 	string Password = 2;				//密码
-	int32 code =3;						//验证码
 }
 //银行存取操作
 message MsgDBBankOperate
@@ -360,7 +347,7 @@ message MsgDBBankOperate
 //银行存取操作结果
 message MsgDBBankTakeOut
 {
-	int32 ret_value = 1;				//返回值 0成功1失败
+	int32 ret_value = 1;				//返回值 0成功 非0失败
 	int64 user_gold = 2;				//玩家携带金币
 	int64 bank_gold = 3;				//玩家银行金币
 }

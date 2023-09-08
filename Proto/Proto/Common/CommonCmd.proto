@@ -92,7 +92,7 @@ enum EMsgIDLogin
 	MsgIDBank_VerifyPhone						= 78;		//验证手机();
 	MsgIDBank_VerifyPhoneResp					= 79;		//验证手机返回(MsgCommonBool)
 	MsgIDBank_ChangePassword					= 80;		//银行修改密码(MsgBankChangePassword)
-	MsgIDBank_ChangePasswordResp				= 81;		//银行修改密码返回(MsgCommonN32)0成功非0暂定
+	MsgIDBank_ChangePasswordResp				= 81;		//银行修改密码返回(MsgCommonN32)0成功非1和旧密码相同
 	MsgIDBank_OpenBank							= 82;		//银行打开银行(MsgCommonStr)
 	MsgIDBank_OpenBankResp						= 83;		//银行打开银行返回(MsgBankTakeOut)
 	MsgIDBank_BankOperate						= 84;		//银行存入(MsgBankOperate)

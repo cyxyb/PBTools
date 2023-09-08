@@ -66,14 +66,12 @@ enum EMsgIDServerMain : int {
   APPRECHARGE2CENTER_MAIN = 7,
   RELAY2CENTER_MAIN = 8,
   CENTER2RELAY_MAIN = 9,
-  CHAT2CENTER_MAIN = 10,
-  CENTER2CHAT_MAIN = 11,
   EMsgIDServerMain_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDServerMain_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDServerMain_IsValid(int value);
 constexpr EMsgIDServerMain EMsgIDServerMain_MIN = MsgIDServerMain_Null;
-constexpr EMsgIDServerMain EMsgIDServerMain_MAX = CENTER2CHAT_MAIN;
+constexpr EMsgIDServerMain EMsgIDServerMain_MAX = CENTER2RELAY_MAIN;
 constexpr int EMsgIDServerMain_ARRAYSIZE = EMsgIDServerMain_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDServerMain_descriptor();
@@ -108,11 +106,6 @@ enum EMsgIDServerInternalProto : int {
   CENTER2LOGIN_BroadcastZmdTipResp = 14,
   LOGIN2CENTER_GetRank = 15,
   CENTER2LOGIN_GetRankResp = 16,
-  CENTER2LOGIN_ChatServerRegister = 17,
-  CENTER2LOGIN_ChatServerUnRegister = 18,
-  LOGIN2CENTER_GetChatServerList = 19,
-  CENTER2LOGIN_GetChatServerListResp = 20,
-  LOGIN2CENTER_BroadcastTip = 21,
   GAME2CENTER_Register = 2001,
   GAME2CENTER_UnRegister = 2002,
   GAME2CENTER_ApplyRobot = 2003,
@@ -129,13 +122,12 @@ enum EMsgIDServerInternalProto : int {
   RelayServer2CENTER_AddMail = 5002,
   RelayServer2CENTER_RechargeSuccess = 5003,
   RelayServer2CENTER_Withdraw = 5004,
-  Chat2Center_Register = 6001,
   EMsgIDServerInternalProto_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDServerInternalProto_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDServerInternalProto_IsValid(int value);
 constexpr EMsgIDServerInternalProto EMsgIDServerInternalProto_MIN = SERVER_INTERNAL_NULL;
-constexpr EMsgIDServerInternalProto EMsgIDServerInternalProto_MAX = Chat2Center_Register;
+constexpr EMsgIDServerInternalProto EMsgIDServerInternalProto_MAX = RelayServer2CENTER_Withdraw;
 constexpr int EMsgIDServerInternalProto_ARRAYSIZE = EMsgIDServerInternalProto_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDServerInternalProto_descriptor();
@@ -215,7 +207,16 @@ enum EMsgIDDB : int {
   DB2LOGIN_ModifySignatureResp = 1046,
   LOGIN2DB_GetRank = 1047,
   DB2LOGIN_GetRankResp = 1048,
-  LOGIN2DB_StorageCode = 1049,
+  LOGIN2DB_BankChangePassword = 1049,
+  DB2LOGIN_BankChangePasswordResp = 1050,
+  LOGIN2DB_BankOpenBank = 1051,
+  DB2LOGIN_BankOpenBankResp = 1052,
+  LOGIN2DB_BankOperate = 1053,
+  DB2LOGIN_BankOperateResp = 1054,
+  LOGIN2DB_BankTransfer = 1055,
+  DB2LOGIN_BankTransferResp = 1056,
+  LOGIN2DB_BankRecord = 1057,
+  DB2LOGIN_BankRecordResp = 1058,
   GAME2DB_Login = 2001,
   DB2GAME_LoginResp = 2002,
   GAME2DB_LoadCheatRate = 2003,

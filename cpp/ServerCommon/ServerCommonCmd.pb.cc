@@ -22,107 +22,108 @@ static constexpr ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema* schemas = n
 static constexpr ::PROTOBUF_NAMESPACE_ID::Message* const* file_default_instances = nullptr;
 
 const char descriptor_table_protodef_ServerCommonCmd_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\025ServerCommonCmd.proto*\271\002\n\020EMsgIDServer"
+  "\n\025ServerCommonCmd.proto*\215\002\n\020EMsgIDServer"
   "Main\022\030\n\024MsgIDServerMain_Null\020\000\022\030\n\024LOGIN2"
   "CENTER_MANAGER\020\001\022\027\n\023GAME2CENTER_MANAGER\020"
   "\002\022\027\n\023CENTER2LOGIN_NOTIFY\020\003\022\026\n\022CENTER2GAM"
   "E_NOTIFY\020\004\022\023\n\017ROBOT2GAME_MAIN\020\005\022\033\n\027CENTE"
   "R2APPRECHARGE_MAIN\020\006\022\033\n\027APPRECHARGE2CENT"
   "ER_MAIN\020\007\022\025\n\021RELAY2CENTER_MAIN\020\010\022\025\n\021CENT"
-  "ER2RELAY_MAIN\020\t\022\024\n\020CHAT2CENTER_MAIN\020\n\022\024\n"
-  "\020CENTER2CHAT_MAIN\020\013*\256\n\n\031EMsgIDServerInte"
-  "rnalProto\022\030\n\024SERVER_INTERNAL_NULL\020\000\022\031\n\025L"
-  "OGIN2CENTER_Register\020\001\022\033\n\027LOGIN2CENTER_U"
-  "nRegister\020\002\022 \n\034LOGIN2CENTER_UpdateOnline"
-  "Num\020\003\022\031\n\025LOGIN2CENTER_SendGold\020\004\022\035\n\031CENT"
-  "ER2LOGIN_SendGoldResp\020\005\022\036\n\032LOGIN2CENTER_"
-  "SendPhoneCode\020\006\022\"\n\036LOGIN2CENTER_GetGameS"
-  "erverList\020\007\022&\n\"CENTER2LOGIN_GetGameServe"
-  "rListResp\020\010\022#\n\037CENTER2LOGIN_GameServerRe"
-  "gister\020\t\022%\n!CENTER2LOGIN_GameServerUnReg"
-  "ister\020\n\022*\n&CENTER2LOGIN_UpdateGameServer"
-  "OnlineNum\020\013\022\034\n\030CENTER2LOGIN_AddMailResp\020"
-  "\014\022\035\n\031CENTER2LOGIN_RechargeResp\020\r\022$\n CENT"
-  "ER2LOGIN_BroadcastZmdTipResp\020\016\022\030\n\024LOGIN2"
-  "CENTER_GetRank\020\017\022\034\n\030CENTER2LOGIN_GetRank"
-  "Resp\020\020\022#\n\037CENTER2LOGIN_ChatServerRegiste"
-  "r\020\021\022%\n!CENTER2LOGIN_ChatServerUnRegister"
-  "\020\022\022\"\n\036LOGIN2CENTER_GetChatServerList\020\023\022&"
-  "\n\"CENTER2LOGIN_GetChatServerListResp\020\024\022\035"
-  "\n\031LOGIN2CENTER_BroadcastTip\020\025\022\031\n\024GAME2CE"
-  "NTER_Register\020\321\017\022\033\n\026GAME2CENTER_UnRegist"
-  "er\020\322\017\022\033\n\026GAME2CENTER_ApplyRobot\020\323\017\022\037\n\032CE"
-  "NTER2GAME_ApplyRobotResp\020\324\017\022 \n\033GAME2CENT"
-  "ER_UpdateOnlineNum\020\325\017\022\035\n\030GAME2CENTER_Bro"
-  "adcastTip\020\326\017\022\032\n\025ROBOT2GAME_RobotLogin\020\271\027"
-  "\022%\n CENTER2APPRECHARGE_SendPhoneCode\020\241\037\022"
-  "!\n\034APPRECHARGE2CENTER_HeartBeat\020\242\037\022!\n\034CE"
-  "NTER2APPRECHARGE_HeartBeat\020\243\037\022 \n\033APPRECH"
-  "ARGE2CENTER_Register\020\244\037\022\"\n\035APPRECHARGE2C"
-  "ENTER_UnRegister\020\245\037\022 \n\033RelayServer2CENTE"
-  "R_Register\020\211\'\022\037\n\032RelayServer2CENTER_AddM"
-  "ail\020\212\'\022\'\n\"RelayServer2CENTER_RechargeSuc"
-  "cess\020\213\'\022 \n\033RelayServer2CENTER_Withdraw\020\214"
-  "\'\022\031\n\024Chat2Center_Register\020\361.*\265\022\n\010EMsgIDD"
-  "B\022\020\n\014MsgIDDB_NULL\020\000\022\035\n\031CENTER2DB_UpdateO"
-  "nlineNum\020\001\022\033\n\027CENTER2DB_InitOnlineNum\020\002\022"
-  "\033\n\027CENTER2DB_RegisterLogin\020\003\022\035\n\031CENTER2D"
-  "B_UnregisterLogin\020\004\022\032\n\026CENTER2DB_Registe"
-  "rGame\020\005\022\032\n\026CENTER2DB_LoadAllRobot\020\006\022\036\n\032D"
-  "B2CENTER_LoadAllRobotResp\020\007\022\031\n\025CENTER2DB"
-  "_CreateRobot\020\010\022\035\n\031DB2CENTER_CreateRobotR"
-  "esp\020\t\022\025\n\021CENTER2DB_AddMail\020\n\022\031\n\025DB2CENTE"
-  "R_AddMailResp\020\013\022\037\n\033CENTER2DB_UpdateRankR"
-  "ichMan\020\016\022\035\n\031CENTER2DB_InserRankBigWin\020\017\022"
-  "\023\n\016LOGIN2DB_Login\020\351\007\022\027\n\022DB2LOGIN_LoginRe"
-  "sp\020\352\007\022\034\n\027DB2LOGIN_LoadPlayerData\020\353\007\022\026\n\021L"
-  "OGIN2DB_LoginOut\020\354\007\022\036\n\031LOGIN2DB_UpdatePl"
-  "ayerInfo\020\355\007\022\031\n\024LOGIN2DB_GetMailList\020\356\007\022\035"
-  "\n\030DB2LOGIN_GetMailListResp\020\357\007\022\026\n\021LOGIN2D"
-  "B_ReadMail\020\360\007\022\026\n\021LOGIN2DB_PickMail\020\361\007\022\032\n"
-  "\025DB2LOGIN_PickMailResp\020\362\007\022\030\n\023LOGIN2DB_Re"
-  "callMail\020\363\007\022\034\n\027DB2LOGIN_RecallMailResp\020\364"
-  "\007\022\037\n\032LOGIN2DB_DeleteAllReadMail\020\365\007\022#\n\036DB"
-  "2LOGIN_DeleteAllReadMailResp\020\366\007\022\036\n\031LOGIN"
-  "2DB_QueryCheckInInfo\020\367\007\022\"\n\035DB2LOGIN_Quer"
-  "yCheckInInfoResp\020\370\007\022\033\n\026LOGIN2DB_PlayerCh"
-  "eckIn\020\371\007\022\037\n\032DB2LOGIN_PlayerCheckInResp\020\372"
-  "\007\022 \n\033LOGIN2DB_QueryTurntableData\020\373\007\022$\n\037D"
-  "B2LOGIN_QueryTurntableDataResp\020\374\007\022\033\n\026LOG"
-  "IN2DB_PlayTurntable\020\375\007\022\037\n\032DB2LOGIN_PlayT"
-  "urntableResp\020\376\007\022\034\n\027LOGIN2DB_ForgetPasswo"
-  "rd\020\377\007\022 \n\033DB2LOGIN_ForgetPasswordResp\020\200\010\022"
-  "\033\n\026LOGIN2DB_GetPlayerGold\020\201\010\022\037\n\032DB2LOGIN"
-  "_GetPlayerGoldResp\020\202\010\022\032\n\025LOGIN2DB_GetVIP"
-  "Config\020\203\010\022\036\n\031DB2LOGIN_GetVIPConfigResp\020\204"
-  "\010\022\032\n\025LOGIN2DB_GetHitCoding\020\205\010\022\036\n\031DB2LOGI"
-  "N_GetHitCodingResp\020\206\010\022\030\n\023LOGIN2DB_VIPUpg"
-  "rade\020\207\010\022\034\n\027DB2LOGIN_VIPUpgradeResp\020\210\010\022\032\n"
-  "\025LOGIN2DB_ModifyAvatar\020\211\010\022\036\n\031DB2LOGIN_Mo"
-  "difyAvatarResp\020\212\010\022\037\n\032LOGIN2DB_ModifyAvat"
-  "arFrame\020\213\010\022#\n\036DB2LOGIN_ModifyAvatarFrame"
-  "Resp\020\214\010\022\033\n\026LOGIN2DB_GetAvatarInfo\020\215\010\022\037\n\032"
-  "DB2LOGIN_GetAvatarInfoResp\020\216\010\022\035\n\030LOGIN2D"
-  "B_QueryPlayerInfo\020\217\010\022!\n\034DB2LOGIN_QueryPl"
-  "ayerInfoResp\020\220\010\022\035\n\030LOGIN2DB_QueryActiveI"
-  "nfo\020\221\010\022!\n\034DB2LOGIN_QueryActiveInfoResp\020\222"
-  "\010\022\034\n\027LOGIN2DB_PickActiveInfo\020\223\010\022 \n\033DB2LO"
-  "GIN_PickActiveInfoResp\020\224\010\022\035\n\030LOGIN2DB_Mo"
-  "difySignature\020\225\010\022!\n\034DB2LOGIN_ModifySigna"
-  "tureResp\020\226\010\022\025\n\020LOGIN2DB_GetRank\020\227\010\022\031\n\024DB"
-  "2LOGIN_GetRankResp\020\230\010\022\031\n\024LOGIN2DB_Storag"
-  "eCode\020\231\010\022\022\n\rGAME2DB_Login\020\321\017\022\026\n\021DB2GAME_"
-  "LoginResp\020\322\017\022\032\n\025GAME2DB_LoadCheatRate\020\323\017"
-  "\022\032\n\025DB2GAME_LoadCheatRate\020\324\017\022\027\n\022GAME2DB_"
-  "WriteScore\020\325\017\022\027\n\022DB2GAME_WriteScore\020\326\017\022\""
-  "\n\035GAME2DB_FingerGuessWriteScore\020\327\017\022\"\n\035DB"
-  "2GAME_FingerGuessWriteScore\020\330\017\022#\n\036GAME2D"
-  "B_FingerGuessQueryRecord\020\331\017\022#\n\036DB2GAME_F"
-  "ingerGuessRoundRecord\020\332\017\022!\n\034DB2GAME_Fing"
-  "erGuessDayRecord\020\333\017\022 \n\033GAME2DB_WriteDisC"
-  "onnectData\020\334\017\022\034\n\027GAME2DB_QueryJckpotInfo"
-  "\020\335\017\022 \n\033DB2GAME_QueryJckpotInfoResp\020\336\017\022\035\n"
-  "\030GAME2DB_UpdateJckpotInfo\020\337\017b\006proto3"
+  "ER2RELAY_MAIN\020\t*\334\010\n\031EMsgIDServerInternal"
+  "Proto\022\030\n\024SERVER_INTERNAL_NULL\020\000\022\031\n\025LOGIN"
+  "2CENTER_Register\020\001\022\033\n\027LOGIN2CENTER_UnReg"
+  "ister\020\002\022 \n\034LOGIN2CENTER_UpdateOnlineNum\020"
+  "\003\022\031\n\025LOGIN2CENTER_SendGold\020\004\022\035\n\031CENTER2L"
+  "OGIN_SendGoldResp\020\005\022\036\n\032LOGIN2CENTER_Send"
+  "PhoneCode\020\006\022\"\n\036LOGIN2CENTER_GetGameServe"
+  "rList\020\007\022&\n\"CENTER2LOGIN_GetGameServerLis"
+  "tResp\020\010\022#\n\037CENTER2LOGIN_GameServerRegist"
+  "er\020\t\022%\n!CENTER2LOGIN_GameServerUnRegiste"
+  "r\020\n\022*\n&CENTER2LOGIN_UpdateGameServerOnli"
+  "neNum\020\013\022\034\n\030CENTER2LOGIN_AddMailResp\020\014\022\035\n"
+  "\031CENTER2LOGIN_RechargeResp\020\r\022$\n CENTER2L"
+  "OGIN_BroadcastZmdTipResp\020\016\022\030\n\024LOGIN2CENT"
+  "ER_GetRank\020\017\022\034\n\030CENTER2LOGIN_GetRankResp"
+  "\020\020\022\031\n\024GAME2CENTER_Register\020\321\017\022\033\n\026GAME2CE"
+  "NTER_UnRegister\020\322\017\022\033\n\026GAME2CENTER_ApplyR"
+  "obot\020\323\017\022\037\n\032CENTER2GAME_ApplyRobotResp\020\324\017"
+  "\022 \n\033GAME2CENTER_UpdateOnlineNum\020\325\017\022\035\n\030GA"
+  "ME2CENTER_BroadcastTip\020\326\017\022\032\n\025ROBOT2GAME_"
+  "RobotLogin\020\271\027\022%\n CENTER2APPRECHARGE_Send"
+  "PhoneCode\020\241\037\022!\n\034APPRECHARGE2CENTER_Heart"
+  "Beat\020\242\037\022!\n\034CENTER2APPRECHARGE_HeartBeat\020"
+  "\243\037\022 \n\033APPRECHARGE2CENTER_Register\020\244\037\022\"\n\035"
+  "APPRECHARGE2CENTER_UnRegister\020\245\037\022 \n\033Rela"
+  "yServer2CENTER_Register\020\211\'\022\037\n\032RelayServe"
+  "r2CENTER_AddMail\020\212\'\022\'\n\"RelayServer2CENTE"
+  "R_RechargeSuccess\020\213\'\022 \n\033RelayServer2CENT"
+  "ER_Withdraw\020\214\'*\314\024\n\010EMsgIDDB\022\020\n\014MsgIDDB_N"
+  "ULL\020\000\022\035\n\031CENTER2DB_UpdateOnlineNum\020\001\022\033\n\027"
+  "CENTER2DB_InitOnlineNum\020\002\022\033\n\027CENTER2DB_R"
+  "egisterLogin\020\003\022\035\n\031CENTER2DB_UnregisterLo"
+  "gin\020\004\022\032\n\026CENTER2DB_RegisterGame\020\005\022\032\n\026CEN"
+  "TER2DB_LoadAllRobot\020\006\022\036\n\032DB2CENTER_LoadA"
+  "llRobotResp\020\007\022\031\n\025CENTER2DB_CreateRobot\020\010"
+  "\022\035\n\031DB2CENTER_CreateRobotResp\020\t\022\025\n\021CENTE"
+  "R2DB_AddMail\020\n\022\031\n\025DB2CENTER_AddMailResp\020"
+  "\013\022\037\n\033CENTER2DB_UpdateRankRichMan\020\016\022\035\n\031CE"
+  "NTER2DB_InserRankBigWin\020\017\022\023\n\016LOGIN2DB_Lo"
+  "gin\020\351\007\022\027\n\022DB2LOGIN_LoginResp\020\352\007\022\034\n\027DB2LO"
+  "GIN_LoadPlayerData\020\353\007\022\026\n\021LOGIN2DB_LoginO"
+  "ut\020\354\007\022\036\n\031LOGIN2DB_UpdatePlayerInfo\020\355\007\022\031\n"
+  "\024LOGIN2DB_GetMailList\020\356\007\022\035\n\030DB2LOGIN_Get"
+  "MailListResp\020\357\007\022\026\n\021LOGIN2DB_ReadMail\020\360\007\022"
+  "\026\n\021LOGIN2DB_PickMail\020\361\007\022\032\n\025DB2LOGIN_Pick"
+  "MailResp\020\362\007\022\030\n\023LOGIN2DB_RecallMail\020\363\007\022\034\n"
+  "\027DB2LOGIN_RecallMailResp\020\364\007\022\037\n\032LOGIN2DB_"
+  "DeleteAllReadMail\020\365\007\022#\n\036DB2LOGIN_DeleteA"
+  "llReadMailResp\020\366\007\022\036\n\031LOGIN2DB_QueryCheck"
+  "InInfo\020\367\007\022\"\n\035DB2LOGIN_QueryCheckInInfoRe"
+  "sp\020\370\007\022\033\n\026LOGIN2DB_PlayerCheckIn\020\371\007\022\037\n\032DB"
+  "2LOGIN_PlayerCheckInResp\020\372\007\022 \n\033LOGIN2DB_"
+  "QueryTurntableData\020\373\007\022$\n\037DB2LOGIN_QueryT"
+  "urntableDataResp\020\374\007\022\033\n\026LOGIN2DB_PlayTurn"
+  "table\020\375\007\022\037\n\032DB2LOGIN_PlayTurntableResp\020\376"
+  "\007\022\034\n\027LOGIN2DB_ForgetPassword\020\377\007\022 \n\033DB2LO"
+  "GIN_ForgetPasswordResp\020\200\010\022\033\n\026LOGIN2DB_Ge"
+  "tPlayerGold\020\201\010\022\037\n\032DB2LOGIN_GetPlayerGold"
+  "Resp\020\202\010\022\032\n\025LOGIN2DB_GetVIPConfig\020\203\010\022\036\n\031D"
+  "B2LOGIN_GetVIPConfigResp\020\204\010\022\032\n\025LOGIN2DB_"
+  "GetHitCoding\020\205\010\022\036\n\031DB2LOGIN_GetHitCoding"
+  "Resp\020\206\010\022\030\n\023LOGIN2DB_VIPUpgrade\020\207\010\022\034\n\027DB2"
+  "LOGIN_VIPUpgradeResp\020\210\010\022\032\n\025LOGIN2DB_Modi"
+  "fyAvatar\020\211\010\022\036\n\031DB2LOGIN_ModifyAvatarResp"
+  "\020\212\010\022\037\n\032LOGIN2DB_ModifyAvatarFrame\020\213\010\022#\n\036"
+  "DB2LOGIN_ModifyAvatarFrameResp\020\214\010\022\033\n\026LOG"
+  "IN2DB_GetAvatarInfo\020\215\010\022\037\n\032DB2LOGIN_GetAv"
+  "atarInfoResp\020\216\010\022\035\n\030LOGIN2DB_QueryPlayerI"
+  "nfo\020\217\010\022!\n\034DB2LOGIN_QueryPlayerInfoResp\020\220"
+  "\010\022\035\n\030LOGIN2DB_QueryActiveInfo\020\221\010\022!\n\034DB2L"
+  "OGIN_QueryActiveInfoResp\020\222\010\022\034\n\027LOGIN2DB_"
+  "PickActiveInfo\020\223\010\022 \n\033DB2LOGIN_PickActive"
+  "InfoResp\020\224\010\022\035\n\030LOGIN2DB_ModifySignature\020"
+  "\225\010\022!\n\034DB2LOGIN_ModifySignatureResp\020\226\010\022\025\n"
+  "\020LOGIN2DB_GetRank\020\227\010\022\031\n\024DB2LOGIN_GetRank"
+  "Resp\020\230\010\022 \n\033LOGIN2DB_BankChangePassword\020\231"
+  "\010\022$\n\037DB2LOGIN_BankChangePasswordResp\020\232\010\022"
+  "\032\n\025LOGIN2DB_BankOpenBank\020\233\010\022\036\n\031DB2LOGIN_"
+  "BankOpenBankResp\020\234\010\022\031\n\024LOGIN2DB_BankOper"
+  "ate\020\235\010\022\035\n\030DB2LOGIN_BankOperateResp\020\236\010\022\032\n"
+  "\025LOGIN2DB_BankTransfer\020\237\010\022\036\n\031DB2LOGIN_Ba"
+  "nkTransferResp\020\240\010\022\030\n\023LOGIN2DB_BankRecord"
+  "\020\241\010\022\034\n\027DB2LOGIN_BankRecordResp\020\242\010\022\022\n\rGAM"
+  "E2DB_Login\020\321\017\022\026\n\021DB2GAME_LoginResp\020\322\017\022\032\n"
+  "\025GAME2DB_LoadCheatRate\020\323\017\022\032\n\025DB2GAME_Loa"
+  "dCheatRate\020\324\017\022\027\n\022GAME2DB_WriteScore\020\325\017\022\027"
+  "\n\022DB2GAME_WriteScore\020\326\017\022\"\n\035GAME2DB_Finge"
+  "rGuessWriteScore\020\327\017\022\"\n\035DB2GAME_FingerGue"
+  "ssWriteScore\020\330\017\022#\n\036GAME2DB_FingerGuessQu"
+  "eryRecord\020\331\017\022#\n\036DB2GAME_FingerGuessRound"
+  "Record\020\332\017\022!\n\034DB2GAME_FingerGuessDayRecor"
+  "d\020\333\017\022 \n\033GAME2DB_WriteDisConnectData\020\334\017\022\034"
+  "\n\027GAME2DB_QueryJckpotInfo\020\335\017\022 \n\033DB2GAME_"
+  "QueryJckpotInfoResp\020\336\017\022\035\n\030GAME2DB_Update"
+  "JckpotInfo\020\337\017b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_ServerCommonCmd_2eproto_deps[1] = {
 };
@@ -130,7 +131,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Ser
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ServerCommonCmd_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ServerCommonCmd_2eproto = {
-  false, false, descriptor_table_protodef_ServerCommonCmd_2eproto, "ServerCommonCmd.proto", 4036,
+  false, false, descriptor_table_protodef_ServerCommonCmd_2eproto, "ServerCommonCmd.proto", 4061,
   &descriptor_table_ServerCommonCmd_2eproto_once, descriptor_table_ServerCommonCmd_2eproto_sccs, descriptor_table_ServerCommonCmd_2eproto_deps, 0, 0,
   schemas, file_default_instances, TableStruct_ServerCommonCmd_2eproto::offsets,
   file_level_metadata_ServerCommonCmd_2eproto, 0, file_level_enum_descriptors_ServerCommonCmd_2eproto, file_level_service_descriptors_ServerCommonCmd_2eproto,
@@ -154,8 +155,6 @@ bool EMsgIDServerMain_IsValid(int value) {
     case 7:
     case 8:
     case 9:
-    case 10:
-    case 11:
       return true;
     default:
       return false;
@@ -185,11 +184,6 @@ bool EMsgIDServerInternalProto_IsValid(int value) {
     case 14:
     case 15:
     case 16:
-    case 17:
-    case 18:
-    case 19:
-    case 20:
-    case 21:
     case 2001:
     case 2002:
     case 2003:
@@ -206,7 +200,6 @@ bool EMsgIDServerInternalProto_IsValid(int value) {
     case 5002:
     case 5003:
     case 5004:
-    case 6001:
       return true;
     default:
       return false;
@@ -282,6 +275,15 @@ bool EMsgIDDB_IsValid(int value) {
     case 1047:
     case 1048:
     case 1049:
+    case 1050:
+    case 1051:
+    case 1052:
+    case 1053:
+    case 1054:
+    case 1055:
+    case 1056:
+    case 1057:
+    case 1058:
     case 2001:
     case 2002:
     case 2003:
