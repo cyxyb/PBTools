@@ -46,7 +46,7 @@ struct TableStruct_ServerInternalProto_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[40]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[39]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -68,9 +68,6 @@ extern MsgCreateRobotRespDefaultTypeInternal _MsgCreateRobotResp_default_instanc
 class MsgDBBankChangePassword;
 class MsgDBBankChangePasswordDefaultTypeInternal;
 extern MsgDBBankChangePasswordDefaultTypeInternal _MsgDBBankChangePassword_default_instance_;
-class MsgDBBankEnterPassword;
-class MsgDBBankEnterPasswordDefaultTypeInternal;
-extern MsgDBBankEnterPasswordDefaultTypeInternal _MsgDBBankEnterPassword_default_instance_;
 class MsgDBBankOperate;
 class MsgDBBankOperateDefaultTypeInternal;
 extern MsgDBBankOperateDefaultTypeInternal _MsgDBBankOperate_default_instance_;
@@ -80,9 +77,6 @@ extern MsgDBBankTakeOutDefaultTypeInternal _MsgDBBankTakeOut_default_instance_;
 class MsgDBBankTransfer;
 class MsgDBBankTransferDefaultTypeInternal;
 extern MsgDBBankTransferDefaultTypeInternal _MsgDBBankTransfer_default_instance_;
-class MsgDBBankVerifyPhone;
-class MsgDBBankVerifyPhoneDefaultTypeInternal;
-extern MsgDBBankVerifyPhoneDefaultTypeInternal _MsgDBBankVerifyPhone_default_instance_;
 class MsgDBFingerGuessQueryRecord;
 class MsgDBFingerGuessQueryRecordDefaultTypeInternal;
 extern MsgDBFingerGuessQueryRecordDefaultTypeInternal _MsgDBFingerGuessQueryRecord_default_instance_;
@@ -170,6 +164,9 @@ extern MsgRelayServerRegisterDefaultTypeInternal _MsgRelayServerRegister_default
 class MsgSendPhoneCode;
 class MsgSendPhoneCodeDefaultTypeInternal;
 extern MsgSendPhoneCodeDefaultTypeInternal _MsgSendPhoneCode_default_instance_;
+class MsgStorageCode;
+class MsgStorageCodeDefaultTypeInternal;
+extern MsgStorageCodeDefaultTypeInternal _MsgStorageCode_default_instance_;
 class MsgUpdateGameServerOnlineNum;
 class MsgUpdateGameServerOnlineNumDefaultTypeInternal;
 extern MsgUpdateGameServerOnlineNumDefaultTypeInternal _MsgUpdateGameServerOnlineNum_default_instance_;
@@ -179,11 +176,9 @@ template<> ::MsgApplyRobotResp* Arena::CreateMaybeMessage<::MsgApplyRobotResp>(A
 template<> ::MsgCreateRobot* Arena::CreateMaybeMessage<::MsgCreateRobot>(Arena*);
 template<> ::MsgCreateRobotResp* Arena::CreateMaybeMessage<::MsgCreateRobotResp>(Arena*);
 template<> ::MsgDBBankChangePassword* Arena::CreateMaybeMessage<::MsgDBBankChangePassword>(Arena*);
-template<> ::MsgDBBankEnterPassword* Arena::CreateMaybeMessage<::MsgDBBankEnterPassword>(Arena*);
 template<> ::MsgDBBankOperate* Arena::CreateMaybeMessage<::MsgDBBankOperate>(Arena*);
 template<> ::MsgDBBankTakeOut* Arena::CreateMaybeMessage<::MsgDBBankTakeOut>(Arena*);
 template<> ::MsgDBBankTransfer* Arena::CreateMaybeMessage<::MsgDBBankTransfer>(Arena*);
-template<> ::MsgDBBankVerifyPhone* Arena::CreateMaybeMessage<::MsgDBBankVerifyPhone>(Arena*);
 template<> ::MsgDBFingerGuessQueryRecord* Arena::CreateMaybeMessage<::MsgDBFingerGuessQueryRecord>(Arena*);
 template<> ::MsgDBFingerGuessWriteScore* Arena::CreateMaybeMessage<::MsgDBFingerGuessWriteScore>(Arena*);
 template<> ::MsgDBFingerGuessWriteScoreResp* Arena::CreateMaybeMessage<::MsgDBFingerGuessWriteScoreResp>(Arena*);
@@ -213,6 +208,7 @@ template<> ::MsgRelayServerAddMail* Arena::CreateMaybeMessage<::MsgRelayServerAd
 template<> ::MsgRelayServerRecharge* Arena::CreateMaybeMessage<::MsgRelayServerRecharge>(Arena*);
 template<> ::MsgRelayServerRegister* Arena::CreateMaybeMessage<::MsgRelayServerRegister>(Arena*);
 template<> ::MsgSendPhoneCode* Arena::CreateMaybeMessage<::MsgSendPhoneCode>(Arena*);
+template<> ::MsgStorageCode* Arena::CreateMaybeMessage<::MsgStorageCode>(Arena*);
 template<> ::MsgUpdateGameServerOnlineNum* Arena::CreateMaybeMessage<::MsgUpdateGameServerOnlineNum>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 
@@ -5266,13 +5262,13 @@ class MsgDBWriteScore PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kGameDetailsFieldNumber = 4,
+    kGameDetailsFieldNumber = 5,
     kUserIdFieldNumber = 1,
     kBetFieldNumber = 2,
     kScoreFieldNumber = 3,
-    kIsUpRankFieldNumber = 5,
+    kIsUpRankFieldNumber = 4,
   };
-  // string game_details = 4;
+  // string game_details = 5;
   void clear_game_details();
   const std::string& game_details() const;
   void set_game_details(const std::string& value);
@@ -5315,7 +5311,7 @@ class MsgDBWriteScore PROTOBUF_FINAL :
   void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int32 is_up_rank = 5;
+  // int32 is_up_rank = 4;
   void clear_is_up_rank();
   ::PROTOBUF_NAMESPACE_ID::int32 is_up_rank() const;
   void set_is_up_rank(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -6406,314 +6402,6 @@ class MsgDBUpdateJackpot PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
-class MsgDBBankEnterPassword PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgDBBankEnterPassword) */ {
- public:
-  inline MsgDBBankEnterPassword() : MsgDBBankEnterPassword(nullptr) {}
-  virtual ~MsgDBBankEnterPassword();
-
-  MsgDBBankEnterPassword(const MsgDBBankEnterPassword& from);
-  MsgDBBankEnterPassword(MsgDBBankEnterPassword&& from) noexcept
-    : MsgDBBankEnterPassword() {
-    *this = ::std::move(from);
-  }
-
-  inline MsgDBBankEnterPassword& operator=(const MsgDBBankEnterPassword& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline MsgDBBankEnterPassword& operator=(MsgDBBankEnterPassword&& from) noexcept {
-    if (GetArena() == from.GetArena()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return GetMetadataStatic().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return GetMetadataStatic().reflection;
-  }
-  static const MsgDBBankEnterPassword& default_instance();
-
-  static inline const MsgDBBankEnterPassword* internal_default_instance() {
-    return reinterpret_cast<const MsgDBBankEnterPassword*>(
-               &_MsgDBBankEnterPassword_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    34;
-
-  friend void swap(MsgDBBankEnterPassword& a, MsgDBBankEnterPassword& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(MsgDBBankEnterPassword* other) {
-    if (other == this) return;
-    if (GetArena() == other->GetArena()) {
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(MsgDBBankEnterPassword* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetArena() == other->GetArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline MsgDBBankEnterPassword* New() const final {
-    return CreateMaybeMessage<MsgDBBankEnterPassword>(nullptr);
-  }
-
-  MsgDBBankEnterPassword* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<MsgDBBankEnterPassword>(arena);
-  }
-  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const MsgDBBankEnterPassword& from);
-  void MergeFrom(const MsgDBBankEnterPassword& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
-      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  inline void SharedCtor();
-  inline void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(MsgDBBankEnterPassword* other);
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "MsgDBBankEnterPassword";
-  }
-  protected:
-  explicit MsgDBBankEnterPassword(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  private:
-  static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  public:
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-  private:
-  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
-    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
-    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
-  }
-
-  public:
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kPasswordFieldNumber = 2,
-    kUserIdFieldNumber = 1,
-  };
-  // string Password = 2;
-  void clear_password();
-  const std::string& password() const;
-  void set_password(const std::string& value);
-  void set_password(std::string&& value);
-  void set_password(const char* value);
-  void set_password(const char* value, size_t size);
-  std::string* mutable_password();
-  std::string* release_password();
-  void set_allocated_password(std::string* password);
-  private:
-  const std::string& _internal_password() const;
-  void _internal_set_password(const std::string& value);
-  std::string* _internal_mutable_password();
-  public:
-
-  // int32 user_id = 1;
-  void clear_user_id();
-  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
-  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
-  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:MsgDBBankEnterPassword)
- private:
-  class _Internal;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr password_;
-  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
-  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  friend struct ::TableStruct_ServerInternalProto_2eproto;
-};
-// -------------------------------------------------------------------
-
-class MsgDBBankVerifyPhone PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgDBBankVerifyPhone) */ {
- public:
-  inline MsgDBBankVerifyPhone() : MsgDBBankVerifyPhone(nullptr) {}
-  virtual ~MsgDBBankVerifyPhone();
-
-  MsgDBBankVerifyPhone(const MsgDBBankVerifyPhone& from);
-  MsgDBBankVerifyPhone(MsgDBBankVerifyPhone&& from) noexcept
-    : MsgDBBankVerifyPhone() {
-    *this = ::std::move(from);
-  }
-
-  inline MsgDBBankVerifyPhone& operator=(const MsgDBBankVerifyPhone& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline MsgDBBankVerifyPhone& operator=(MsgDBBankVerifyPhone&& from) noexcept {
-    if (GetArena() == from.GetArena()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return GetMetadataStatic().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return GetMetadataStatic().reflection;
-  }
-  static const MsgDBBankVerifyPhone& default_instance();
-
-  static inline const MsgDBBankVerifyPhone* internal_default_instance() {
-    return reinterpret_cast<const MsgDBBankVerifyPhone*>(
-               &_MsgDBBankVerifyPhone_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    35;
-
-  friend void swap(MsgDBBankVerifyPhone& a, MsgDBBankVerifyPhone& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(MsgDBBankVerifyPhone* other) {
-    if (other == this) return;
-    if (GetArena() == other->GetArena()) {
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(MsgDBBankVerifyPhone* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetArena() == other->GetArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline MsgDBBankVerifyPhone* New() const final {
-    return CreateMaybeMessage<MsgDBBankVerifyPhone>(nullptr);
-  }
-
-  MsgDBBankVerifyPhone* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<MsgDBBankVerifyPhone>(arena);
-  }
-  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const MsgDBBankVerifyPhone& from);
-  void MergeFrom(const MsgDBBankVerifyPhone& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
-      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  inline void SharedCtor();
-  inline void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(MsgDBBankVerifyPhone* other);
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "MsgDBBankVerifyPhone";
-  }
-  protected:
-  explicit MsgDBBankVerifyPhone(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  private:
-  static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  public:
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-  private:
-  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
-    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
-    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
-  }
-
-  public:
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kPhoneFieldNumber = 2,
-    kUserIdFieldNumber = 1,
-  };
-  // string phone = 2;
-  void clear_phone();
-  const std::string& phone() const;
-  void set_phone(const std::string& value);
-  void set_phone(std::string&& value);
-  void set_phone(const char* value);
-  void set_phone(const char* value, size_t size);
-  std::string* mutable_phone();
-  std::string* release_phone();
-  void set_allocated_phone(std::string* phone);
-  private:
-  const std::string& _internal_phone() const;
-  void _internal_set_phone(const std::string& value);
-  std::string* _internal_mutable_phone();
-  public:
-
-  // int32 user_id = 1;
-  void clear_user_id();
-  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
-  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
-  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:MsgDBBankVerifyPhone)
- private:
-  class _Internal;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr phone_;
-  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
-  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  friend struct ::TableStruct_ServerInternalProto_2eproto;
-};
-// -------------------------------------------------------------------
-
 class MsgDBBankChangePassword PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgDBBankChangePassword) */ {
  public:
@@ -6755,7 +6443,7 @@ class MsgDBBankChangePassword PROTOBUF_FINAL :
                &_MsgDBBankChangePassword_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    36;
+    34;
 
   friend void swap(MsgDBBankChangePassword& a, MsgDBBankChangePassword& b) {
     a.Swap(&b);
@@ -6828,7 +6516,6 @@ class MsgDBBankChangePassword PROTOBUF_FINAL :
   enum : int {
     kPasswordFieldNumber = 2,
     kUserIdFieldNumber = 1,
-    kCodeFieldNumber = 3,
   };
   // string Password = 2;
   void clear_password();
@@ -6855,15 +6542,6 @@ class MsgDBBankChangePassword PROTOBUF_FINAL :
   void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 code = 3;
-  void clear_code();
-  ::PROTOBUF_NAMESPACE_ID::int32 code() const;
-  void set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_code() const;
-  void _internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
   // @@protoc_insertion_point(class_scope:MsgDBBankChangePassword)
  private:
   class _Internal;
@@ -6873,7 +6551,6 @@ class MsgDBBankChangePassword PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr password_;
   ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 code_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -6920,7 +6597,7 @@ class MsgDBBankOperate PROTOBUF_FINAL :
                &_MsgDBBankOperate_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    37;
+    35;
 
   friend void swap(MsgDBBankOperate& a, MsgDBBankOperate& b) {
     a.Swap(&b);
@@ -7078,7 +6755,7 @@ class MsgDBBankTakeOut PROTOBUF_FINAL :
                &_MsgDBBankTakeOut_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    38;
+    36;
 
   friend void swap(MsgDBBankTakeOut& a, MsgDBBankTakeOut& b) {
     a.Swap(&b);
@@ -7236,7 +6913,7 @@ class MsgDBBankTransfer PROTOBUF_FINAL :
                &_MsgDBBankTransfer_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    39;
+    37;
 
   friend void swap(MsgDBBankTransfer& a, MsgDBBankTransfer& b) {
     a.Swap(&b);
@@ -7348,6 +7025,171 @@ class MsgDBBankTransfer PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 from_user_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 recv_user_id_;
   ::PROTOBUF_NAMESPACE_ID::int64 transfer_gold_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgStorageCode PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgStorageCode) */ {
+ public:
+  inline MsgStorageCode() : MsgStorageCode(nullptr) {}
+  virtual ~MsgStorageCode();
+
+  MsgStorageCode(const MsgStorageCode& from);
+  MsgStorageCode(MsgStorageCode&& from) noexcept
+    : MsgStorageCode() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgStorageCode& operator=(const MsgStorageCode& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgStorageCode& operator=(MsgStorageCode&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgStorageCode& default_instance();
+
+  static inline const MsgStorageCode* internal_default_instance() {
+    return reinterpret_cast<const MsgStorageCode*>(
+               &_MsgStorageCode_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    38;
+
+  friend void swap(MsgStorageCode& a, MsgStorageCode& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgStorageCode* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgStorageCode* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgStorageCode* New() const final {
+    return CreateMaybeMessage<MsgStorageCode>(nullptr);
+  }
+
+  MsgStorageCode* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgStorageCode>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgStorageCode& from);
+  void MergeFrom(const MsgStorageCode& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgStorageCode* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgStorageCode";
+  }
+  protected:
+  explicit MsgStorageCode(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kPhoneFieldNumber = 2,
+    kUserIdFieldNumber = 1,
+    kCodeFieldNumber = 3,
+  };
+  // string phone = 2;
+  void clear_phone();
+  const std::string& phone() const;
+  void set_phone(const std::string& value);
+  void set_phone(std::string&& value);
+  void set_phone(const char* value);
+  void set_phone(const char* value, size_t size);
+  std::string* mutable_phone();
+  std::string* release_phone();
+  void set_allocated_phone(std::string* phone);
+  private:
+  const std::string& _internal_phone() const;
+  void _internal_set_phone(const std::string& value);
+  std::string* _internal_mutable_phone();
+  public:
+
+  // int32 user_id = 1;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 code = 3;
+  void clear_code();
+  ::PROTOBUF_NAMESPACE_ID::int32 code() const;
+  void set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_code() const;
+  void _internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgStorageCode)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr phone_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 code_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -11043,7 +10885,27 @@ inline void MsgDBWriteScore::set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   // @@protoc_insertion_point(field_set:MsgDBWriteScore.score)
 }
 
-// string game_details = 4;
+// int32 is_up_rank = 4;
+inline void MsgDBWriteScore::clear_is_up_rank() {
+  is_up_rank_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScore::_internal_is_up_rank() const {
+  return is_up_rank_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScore::is_up_rank() const {
+  // @@protoc_insertion_point(field_get:MsgDBWriteScore.is_up_rank)
+  return _internal_is_up_rank();
+}
+inline void MsgDBWriteScore::_internal_set_is_up_rank(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  is_up_rank_ = value;
+}
+inline void MsgDBWriteScore::set_is_up_rank(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_is_up_rank(value);
+  // @@protoc_insertion_point(field_set:MsgDBWriteScore.is_up_rank)
+}
+
+// string game_details = 5;
 inline void MsgDBWriteScore::clear_game_details() {
   game_details_.ClearToEmpty();
 }
@@ -11102,26 +10964,6 @@ inline void MsgDBWriteScore::set_allocated_game_details(std::string* game_detail
   game_details_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), game_details,
       GetArena());
   // @@protoc_insertion_point(field_set_allocated:MsgDBWriteScore.game_details)
-}
-
-// int32 is_up_rank = 5;
-inline void MsgDBWriteScore::clear_is_up_rank() {
-  is_up_rank_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScore::_internal_is_up_rank() const {
-  return is_up_rank_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScore::is_up_rank() const {
-  // @@protoc_insertion_point(field_get:MsgDBWriteScore.is_up_rank)
-  return _internal_is_up_rank();
-}
-inline void MsgDBWriteScore::_internal_set_is_up_rank(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  is_up_rank_ = value;
-}
-inline void MsgDBWriteScore::set_is_up_rank(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_is_up_rank(value);
-  // @@protoc_insertion_point(field_set:MsgDBWriteScore.is_up_rank)
 }
 
 // -------------------------------------------------------------------
@@ -11751,176 +11593,6 @@ inline void MsgDBUpdateJackpot::set_fake_jackpot(::PROTOBUF_NAMESPACE_ID::int64 
 
 // -------------------------------------------------------------------
 
-// MsgDBBankEnterPassword
-
-// int32 user_id = 1;
-inline void MsgDBBankEnterPassword::clear_user_id() {
-  user_id_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBBankEnterPassword::_internal_user_id() const {
-  return user_id_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBBankEnterPassword::user_id() const {
-  // @@protoc_insertion_point(field_get:MsgDBBankEnterPassword.user_id)
-  return _internal_user_id();
-}
-inline void MsgDBBankEnterPassword::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  user_id_ = value;
-}
-inline void MsgDBBankEnterPassword::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_user_id(value);
-  // @@protoc_insertion_point(field_set:MsgDBBankEnterPassword.user_id)
-}
-
-// string Password = 2;
-inline void MsgDBBankEnterPassword::clear_password() {
-  password_.ClearToEmpty();
-}
-inline const std::string& MsgDBBankEnterPassword::password() const {
-  // @@protoc_insertion_point(field_get:MsgDBBankEnterPassword.Password)
-  return _internal_password();
-}
-inline void MsgDBBankEnterPassword::set_password(const std::string& value) {
-  _internal_set_password(value);
-  // @@protoc_insertion_point(field_set:MsgDBBankEnterPassword.Password)
-}
-inline std::string* MsgDBBankEnterPassword::mutable_password() {
-  // @@protoc_insertion_point(field_mutable:MsgDBBankEnterPassword.Password)
-  return _internal_mutable_password();
-}
-inline const std::string& MsgDBBankEnterPassword::_internal_password() const {
-  return password_.Get();
-}
-inline void MsgDBBankEnterPassword::_internal_set_password(const std::string& value) {
-  
-  password_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
-}
-inline void MsgDBBankEnterPassword::set_password(std::string&& value) {
-  
-  password_.Set(
-    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
-  // @@protoc_insertion_point(field_set_rvalue:MsgDBBankEnterPassword.Password)
-}
-inline void MsgDBBankEnterPassword::set_password(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  
-  password_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
-  // @@protoc_insertion_point(field_set_char:MsgDBBankEnterPassword.Password)
-}
-inline void MsgDBBankEnterPassword::set_password(const char* value,
-    size_t size) {
-  
-  password_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
-      reinterpret_cast<const char*>(value), size), GetArena());
-  // @@protoc_insertion_point(field_set_pointer:MsgDBBankEnterPassword.Password)
-}
-inline std::string* MsgDBBankEnterPassword::_internal_mutable_password() {
-  
-  return password_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
-}
-inline std::string* MsgDBBankEnterPassword::release_password() {
-  // @@protoc_insertion_point(field_release:MsgDBBankEnterPassword.Password)
-  return password_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-}
-inline void MsgDBBankEnterPassword::set_allocated_password(std::string* password) {
-  if (password != nullptr) {
-    
-  } else {
-    
-  }
-  password_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), password,
-      GetArena());
-  // @@protoc_insertion_point(field_set_allocated:MsgDBBankEnterPassword.Password)
-}
-
-// -------------------------------------------------------------------
-
-// MsgDBBankVerifyPhone
-
-// int32 user_id = 1;
-inline void MsgDBBankVerifyPhone::clear_user_id() {
-  user_id_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBBankVerifyPhone::_internal_user_id() const {
-  return user_id_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBBankVerifyPhone::user_id() const {
-  // @@protoc_insertion_point(field_get:MsgDBBankVerifyPhone.user_id)
-  return _internal_user_id();
-}
-inline void MsgDBBankVerifyPhone::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  user_id_ = value;
-}
-inline void MsgDBBankVerifyPhone::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_user_id(value);
-  // @@protoc_insertion_point(field_set:MsgDBBankVerifyPhone.user_id)
-}
-
-// string phone = 2;
-inline void MsgDBBankVerifyPhone::clear_phone() {
-  phone_.ClearToEmpty();
-}
-inline const std::string& MsgDBBankVerifyPhone::phone() const {
-  // @@protoc_insertion_point(field_get:MsgDBBankVerifyPhone.phone)
-  return _internal_phone();
-}
-inline void MsgDBBankVerifyPhone::set_phone(const std::string& value) {
-  _internal_set_phone(value);
-  // @@protoc_insertion_point(field_set:MsgDBBankVerifyPhone.phone)
-}
-inline std::string* MsgDBBankVerifyPhone::mutable_phone() {
-  // @@protoc_insertion_point(field_mutable:MsgDBBankVerifyPhone.phone)
-  return _internal_mutable_phone();
-}
-inline const std::string& MsgDBBankVerifyPhone::_internal_phone() const {
-  return phone_.Get();
-}
-inline void MsgDBBankVerifyPhone::_internal_set_phone(const std::string& value) {
-  
-  phone_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
-}
-inline void MsgDBBankVerifyPhone::set_phone(std::string&& value) {
-  
-  phone_.Set(
-    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
-  // @@protoc_insertion_point(field_set_rvalue:MsgDBBankVerifyPhone.phone)
-}
-inline void MsgDBBankVerifyPhone::set_phone(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  
-  phone_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
-  // @@protoc_insertion_point(field_set_char:MsgDBBankVerifyPhone.phone)
-}
-inline void MsgDBBankVerifyPhone::set_phone(const char* value,
-    size_t size) {
-  
-  phone_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
-      reinterpret_cast<const char*>(value), size), GetArena());
-  // @@protoc_insertion_point(field_set_pointer:MsgDBBankVerifyPhone.phone)
-}
-inline std::string* MsgDBBankVerifyPhone::_internal_mutable_phone() {
-  
-  return phone_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
-}
-inline std::string* MsgDBBankVerifyPhone::release_phone() {
-  // @@protoc_insertion_point(field_release:MsgDBBankVerifyPhone.phone)
-  return phone_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-}
-inline void MsgDBBankVerifyPhone::set_allocated_phone(std::string* phone) {
-  if (phone != nullptr) {
-    
-  } else {
-    
-  }
-  phone_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), phone,
-      GetArena());
-  // @@protoc_insertion_point(field_set_allocated:MsgDBBankVerifyPhone.phone)
-}
-
-// -------------------------------------------------------------------
-
 // MsgDBBankChangePassword
 
 // int32 user_id = 1;
@@ -12002,26 +11674,6 @@ inline void MsgDBBankChangePassword::set_allocated_password(std::string* passwor
   password_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), password,
       GetArena());
   // @@protoc_insertion_point(field_set_allocated:MsgDBBankChangePassword.Password)
-}
-
-// int32 code = 3;
-inline void MsgDBBankChangePassword::clear_code() {
-  code_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBBankChangePassword::_internal_code() const {
-  return code_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBBankChangePassword::code() const {
-  // @@protoc_insertion_point(field_get:MsgDBBankChangePassword.code)
-  return _internal_code();
-}
-inline void MsgDBBankChangePassword::_internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  code_ = value;
-}
-inline void MsgDBBankChangePassword::set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_code(value);
-  // @@protoc_insertion_point(field_set:MsgDBBankChangePassword.code)
 }
 
 // -------------------------------------------------------------------
@@ -12216,11 +11868,114 @@ inline void MsgDBBankTransfer::set_transfer_gold(::PROTOBUF_NAMESPACE_ID::int64 
   // @@protoc_insertion_point(field_set:MsgDBBankTransfer.transfer_gold)
 }
 
+// -------------------------------------------------------------------
+
+// MsgStorageCode
+
+// int32 user_id = 1;
+inline void MsgStorageCode::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgStorageCode::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgStorageCode::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgStorageCode.user_id)
+  return _internal_user_id();
+}
+inline void MsgStorageCode::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgStorageCode::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgStorageCode.user_id)
+}
+
+// string phone = 2;
+inline void MsgStorageCode::clear_phone() {
+  phone_.ClearToEmpty();
+}
+inline const std::string& MsgStorageCode::phone() const {
+  // @@protoc_insertion_point(field_get:MsgStorageCode.phone)
+  return _internal_phone();
+}
+inline void MsgStorageCode::set_phone(const std::string& value) {
+  _internal_set_phone(value);
+  // @@protoc_insertion_point(field_set:MsgStorageCode.phone)
+}
+inline std::string* MsgStorageCode::mutable_phone() {
+  // @@protoc_insertion_point(field_mutable:MsgStorageCode.phone)
+  return _internal_mutable_phone();
+}
+inline const std::string& MsgStorageCode::_internal_phone() const {
+  return phone_.Get();
+}
+inline void MsgStorageCode::_internal_set_phone(const std::string& value) {
+  
+  phone_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgStorageCode::set_phone(std::string&& value) {
+  
+  phone_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgStorageCode.phone)
+}
+inline void MsgStorageCode::set_phone(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  phone_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgStorageCode.phone)
+}
+inline void MsgStorageCode::set_phone(const char* value,
+    size_t size) {
+  
+  phone_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgStorageCode.phone)
+}
+inline std::string* MsgStorageCode::_internal_mutable_phone() {
+  
+  return phone_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgStorageCode::release_phone() {
+  // @@protoc_insertion_point(field_release:MsgStorageCode.phone)
+  return phone_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgStorageCode::set_allocated_phone(std::string* phone) {
+  if (phone != nullptr) {
+    
+  } else {
+    
+  }
+  phone_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), phone,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgStorageCode.phone)
+}
+
+// int32 code = 3;
+inline void MsgStorageCode::clear_code() {
+  code_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgStorageCode::_internal_code() const {
+  return code_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgStorageCode::code() const {
+  // @@protoc_insertion_point(field_get:MsgStorageCode.code)
+  return _internal_code();
+}
+inline void MsgStorageCode::_internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  code_ = value;
+}
+inline void MsgStorageCode::set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_code(value);
+  // @@protoc_insertion_point(field_set:MsgStorageCode.code)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
-// -------------------------------------------------------------------
-
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

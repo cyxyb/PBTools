@@ -16,6 +16,7 @@ message MsgPlayerLogin
 	string		nickname		= 11;	//昵称(第三方登录时需要)
 	string		phone			= 12;	//手机号
 	int32		code			= 13;	//验证码
+	string		invite_code		= 14;	//邀请码
 }
 
 //玩家登录返回
@@ -34,8 +35,9 @@ message MsgPlayerLoginResp
 	string		phone_num		= 11;	//手机号
 	int32		vip_level		= 12;	//VIP等级
 	int32		avatar_frame	= 13;	//头像框
-	string      signature		= 14;	//个性签名
-	string      bank_password	= 16;	//银行密码
+	string		invite_code		= 14;	//邀请码
+	string      bank_password	= 15;	//银行密码
+	string      signature		= 16;	//个性签名
 }
 
 //修改密码
@@ -51,6 +53,7 @@ message MsgBindPhone
 	int32		code			= 1;	//验证码
 	string		phone_num		= 2;	//手机号码
 	string		password		= 3;	//密码
+	string		invite_code		= 4;	//邀请码
 }
 
 message MsgCommonKV
@@ -218,9 +221,9 @@ message MsgPlayerInfo
 	int32		vip_level		= 7;	//VIP等级
 	int32		avatar_frame	= 8;	//头像框
 	string		signature		= 9;	//签名
-
 	int32		zmd_game_id		= 10;	//走马灯数据记录
 	uint64		zmd_win_gold	= 11;	//走马灯数据记录
+	bool		bank_password	= 12;	//设置银行密码
 }
 
 message MsgActiveInfo
@@ -349,4 +352,11 @@ message MsgBankRecord
 message MsgBankRecordResp
 {
 	repeated MsgBankRecord records = 1;
+};
+
+//请求验证码
+message MsgPhoneCode
+{
+	string		area_code			= 1;	//区号
+	string		phone				= 2;	//手机号
 };

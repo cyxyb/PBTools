@@ -169,7 +169,7 @@ public enum EMsgIDLogin {
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_ModifyPasswordResp")] MsgIdloginModifyPasswordResp = 8,
   /// <summary>
-  ///绑定手机(MsgCommonStr)
+  ///绑定手机(MsgBindPhone)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_BindPhone")] MsgIdloginBindPhone = 9,
   /// <summary>
@@ -213,7 +213,7 @@ public enum EMsgIDLogin {
   /// </summary>
   [pbr::OriginalName("MsgIDMail_DeleteAllReadMailResp")] MsgIdmailDeleteAllReadMailResp = 19,
   /// <summary>
-  ///验证码(MsgCommonN32)
+  ///验证码(MsgPhoneCode)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_PhoneCode")] MsgIdloginPhoneCode = 20,
   /// <summary>
@@ -457,7 +457,7 @@ public enum EMsgIDLogin {
   /// </summary>
   [pbr::OriginalName("MsgIDBank_ChangePassword")] MsgIdbankChangePassword = 80,
   /// <summary>
-  ///银行修改密码返回(MsgCommonN32)0成功非0暂定
+  ///银行修改密码返回(MsgCommonN32)0成功非1和旧密码相同
   /// </summary>
   [pbr::OriginalName("MsgIDBank_ChangePasswordResp")] MsgIdbankChangePasswordResp = 81,
   /// <summary>
