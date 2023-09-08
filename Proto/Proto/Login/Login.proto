@@ -71,7 +71,6 @@ message MsgCheckInInfo
 	bool		can_pick				= 3;	//是否可以领取
 	repeated	MsgCommonKV	CheckInCfg 	= 4;	//签到配置(k:天数 v:奖励)
 }
-
 //转盘信息
 message MsgTurntableHistoryData
 {
@@ -79,17 +78,33 @@ message MsgTurntableHistoryData
 	int32		score					= 2;	//使用积分
 	int32		award					= 3;	//转盘奖励
 	int32		type					= 4;	//类型(0:个人 1:大赢家)
-	string		time					= 5;	//时间
+	int32		award_type				= 5;	//奖励类型
+	string		time					= 6;	//时间
+}
+
+message MsgTurnPlayInfo
+{
+	int32		play_num				= 1;	//已转动次数
+	int32		limit_turn				= 2;	//转动限制次数
+	int32		need_score				= 3;	//转动需要积分
+	int32		turn_pro				= 4;	//转动进度
+}
+
+message MsgTurnCfg
+{
+	int32		index					= 1;	//转盘索引
+	int32		Arwad					= 2;	//奖励
+	int32		Arwadtype				= 3;	//奖励类型
 }
 
 //转盘信息
 message MsgTurntableData
 {
-	int32		play_num					= 1;	//已转动次数
-	int32		score						= 2;	//玩家积分
-	int32		need_score					= 3;	//转动需要积分
-	int32		limit_turn					= 4;	//转动限制次数
-	repeated MsgCommonKV turntable_cfg 		= 5;	//转盘配置(k:转盘索引 v:奖励)
+	int64		score					= 1;	//玩家积分
+	MsgTurnPlayInfo silver_info			= 2;	//白银盘信息
+	MsgTurnPlayInfo gold_info			= 3;	//黄金盘信息
+	repeated MsgTurnCfg silver_cfg		= 4;	//白银盘配置
+	repeated MsgTurnCfg gold_cfg		= 5;	//黄金盘配置
 	repeated MsgTurntableHistoryData history = 6;	//历史数据
 }
 
