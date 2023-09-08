@@ -169,7 +169,7 @@ public enum EMsgIDLogin {
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_ModifyPasswordResp")] MsgIdloginModifyPasswordResp = 8,
   /// <summary>
-  ///绑定手机(MsgCommonStr)
+  ///绑定手机(MsgBindPhone)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_BindPhone")] MsgIdloginBindPhone = 9,
   /// <summary>

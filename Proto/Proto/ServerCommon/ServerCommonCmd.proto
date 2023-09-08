@@ -137,8 +137,6 @@ enum EMsgIDDB
 	LOGIN2DB_GetRank				= 1047; //获取排行榜
 	DB2LOGIN_GetRankResp			= 1048; //获取排行榜回调
 	LOGIN2DB_StorageCode			= 1049; //缓存验证码
-	LOGIN2DB_BankChangePassword		= 1050;	//银行修改密码
-	DB2LOGIN_BankChangePasswordResp	= 1051;	//银行修改密码返回
 	LOGIN2DB_BankOpenBank			= 1052;	//银行打开银行
 	DB2LOGIN_BankOpenBankResp		= 1053;	//银行打开银行返回
 	LOGIN2DB_BankOperate			= 1054;	//银行存入
