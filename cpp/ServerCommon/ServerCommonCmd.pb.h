@@ -228,6 +228,8 @@ enum EMsgIDDB : int {
   DB2LOGIN_BankRecordResp = 1059,
   LOGIN2DB_BankChangePassword = 1060,
   DB2LOGIN_BankChangePasswordResp = 1061,
+  LOGIN2DB_BankSetPassword = 1062,
+  DB2LOGIN_BankSetPasswordResp = 1063,
   GAME2DB_Login = 2001,
   DB2GAME_LoginResp = 2002,
   GAME2DB_LoadCheatRate = 2003,

@@ -338,6 +338,7 @@ class MsgPlayerLogin PROTOBUF_FINAL :
     kNicknameFieldNumber = 11,
     kPhoneFieldNumber = 12,
     kInviteCodeFieldNumber = 14,
+    kBankPasswordFieldNumber = 15,
     kPlatformIdFieldNumber = 3,
     kChannelIdFieldNumber = 4,
     kClientTypeFieldNumber = 5,
@@ -473,6 +474,22 @@ class MsgPlayerLogin PROTOBUF_FINAL :
   std::string* _internal_mutable_invite_code();
   public:
 
+  // string bank_password = 15;
+  void clear_bank_password();
+  const std::string& bank_password() const;
+  void set_bank_password(const std::string& value);
+  void set_bank_password(std::string&& value);
+  void set_bank_password(const char* value);
+  void set_bank_password(const char* value, size_t size);
+  std::string* mutable_bank_password();
+  std::string* release_bank_password();
+  void set_allocated_bank_password(std::string* bank_password);
+  private:
+  const std::string& _internal_bank_password() const;
+  void _internal_set_bank_password(const std::string& value);
+  std::string* _internal_mutable_bank_password();
+  public:
+
   // int32 platform_id = 3;
   void clear_platform_id();
   ::PROTOBUF_NAMESPACE_ID::int32 platform_id() const;
@@ -542,6 +559,7 @@ class MsgPlayerLogin PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr nickname_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr phone_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr invite_code_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr bank_password_;
   ::PROTOBUF_NAMESPACE_ID::int32 platform_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 channel_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 client_type_;
@@ -4467,7 +4485,6 @@ class MsgPlayerInfo PROTOBUF_FINAL :
     kAvatarFrameFieldNumber = 8,
     kZmdWinGoldFieldNumber = 11,
     kZmdGameIdFieldNumber = 10,
-    kBankPasswordFieldNumber = 12,
   };
   // string nickname = 3;
   void clear_nickname();
@@ -4596,15 +4613,6 @@ class MsgPlayerInfo PROTOBUF_FINAL :
   void _internal_set_zmd_game_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // bool bank_password = 12;
-  void clear_bank_password();
-  bool bank_password() const;
-  void set_bank_password(bool value);
-  private:
-  bool _internal_bank_password() const;
-  void _internal_set_bank_password(bool value);
-  public:
-
   // @@protoc_insertion_point(class_scope:MsgPlayerInfo)
  private:
   class _Internal;
@@ -4623,7 +4631,6 @@ class MsgPlayerInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame_;
   ::PROTOBUF_NAMESPACE_ID::uint64 zmd_win_gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 zmd_game_id_;
-  bool bank_password_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -8166,6 +8173,67 @@ inline void MsgPlayerLogin::set_allocated_invite_code(std::string* invite_code) 
   // @@protoc_insertion_point(field_set_allocated:MsgPlayerLogin.invite_code)
 }
 
+// string bank_password = 15;
+inline void MsgPlayerLogin::clear_bank_password() {
+  bank_password_.ClearToEmpty();
+}
+inline const std::string& MsgPlayerLogin::bank_password() const {
+  // @@protoc_insertion_point(field_get:MsgPlayerLogin.bank_password)
+  return _internal_bank_password();
+}
+inline void MsgPlayerLogin::set_bank_password(const std::string& value) {
+  _internal_set_bank_password(value);
+  // @@protoc_insertion_point(field_set:MsgPlayerLogin.bank_password)
+}
+inline std::string* MsgPlayerLogin::mutable_bank_password() {
+  // @@protoc_insertion_point(field_mutable:MsgPlayerLogin.bank_password)
+  return _internal_mutable_bank_password();
+}
+inline const std::string& MsgPlayerLogin::_internal_bank_password() const {
+  return bank_password_.Get();
+}
+inline void MsgPlayerLogin::_internal_set_bank_password(const std::string& value) {
+  
+  bank_password_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgPlayerLogin::set_bank_password(std::string&& value) {
+  
+  bank_password_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgPlayerLogin.bank_password)
+}
+inline void MsgPlayerLogin::set_bank_password(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  bank_password_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgPlayerLogin.bank_password)
+}
+inline void MsgPlayerLogin::set_bank_password(const char* value,
+    size_t size) {
+  
+  bank_password_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgPlayerLogin.bank_password)
+}
+inline std::string* MsgPlayerLogin::_internal_mutable_bank_password() {
+  
+  return bank_password_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgPlayerLogin::release_bank_password() {
+  // @@protoc_insertion_point(field_release:MsgPlayerLogin.bank_password)
+  return bank_password_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgPlayerLogin::set_allocated_bank_password(std::string* bank_password) {
+  if (bank_password != nullptr) {
+    
+  } else {
+    
+  }
+  bank_password_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), bank_password,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgPlayerLogin.bank_password)
+}
+
 // -------------------------------------------------------------------
 
 // MsgPlayerLoginResp
@@ -11343,26 +11411,6 @@ inline void MsgPlayerInfo::_internal_set_zmd_win_gold(::PROTOBUF_NAMESPACE_ID::u
 inline void MsgPlayerInfo::set_zmd_win_gold(::PROTOBUF_NAMESPACE_ID::uint64 value) {
   _internal_set_zmd_win_gold(value);
   // @@protoc_insertion_point(field_set:MsgPlayerInfo.zmd_win_gold)
-}
-
-// bool bank_password = 12;
-inline void MsgPlayerInfo::clear_bank_password() {
-  bank_password_ = false;
-}
-inline bool MsgPlayerInfo::_internal_bank_password() const {
-  return bank_password_;
-}
-inline bool MsgPlayerInfo::bank_password() const {
-  // @@protoc_insertion_point(field_get:MsgPlayerInfo.bank_password)
-  return _internal_bank_password();
-}
-inline void MsgPlayerInfo::_internal_set_bank_password(bool value) {
-  
-  bank_password_ = value;
-}
-inline void MsgPlayerInfo::set_bank_password(bool value) {
-  _internal_set_bank_password(value);
-  // @@protoc_insertion_point(field_set:MsgPlayerInfo.bank_password)
 }
 
 // -------------------------------------------------------------------

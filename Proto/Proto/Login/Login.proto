@@ -17,6 +17,7 @@ message MsgPlayerLogin
 	string		phone			= 12;	//手机号
 	int32		code			= 13;	//验证码
 	string		invite_code		= 14;	//邀请码
+	string		bank_password	= 15;	//玩家银行密码
 }
 
 //玩家登录返回
@@ -223,7 +224,6 @@ message MsgPlayerInfo
 	string		signature		= 9;	//签名
 	int32		zmd_game_id		= 10;	//走马灯数据记录
 	uint64		zmd_win_gold	= 11;	//走马灯数据记录
-	bool		bank_password	= 12;	//设置银行密码
 }
 
 message MsgActiveInfo
