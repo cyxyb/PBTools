@@ -179,6 +179,10 @@ class MsgBankRecordRespDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgBankRecordResp> _instance;
 } _MsgBankRecordResp_default_instance_;
+class MsgPhoneCodeDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgPhoneCode> _instance;
+} _MsgPhoneCode_default_instance_;
 static void InitDefaultsscc_info_ActiveInfoRet_Login_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -509,6 +513,19 @@ static void InitDefaultsscc_info_MsgModifySignature_Login_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgModifySignature_Login_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgModifySignature_Login_2eproto}, {}};
 
+static void InitDefaultsscc_info_MsgPhoneCode_Login_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_MsgPhoneCode_default_instance_;
+    new (ptr) ::MsgPhoneCode();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgPhoneCode_Login_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgPhoneCode_Login_2eproto}, {}};
+
 static void InitDefaultsscc_info_MsgPlayerInfo_Login_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -696,7 +713,7 @@ static void InitDefaultsscc_info_MsgVIPInfo_Login_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgVIPInfo_Login_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgVIPInfo_Login_2eproto}, {}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Login_2eproto[39];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Login_2eproto[40];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_Login_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_Login_2eproto = nullptr;
 
@@ -719,6 +736,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::MsgPlayerLogin, nickname_),
   PROTOBUF_FIELD_OFFSET(::MsgPlayerLogin, phone_),
   PROTOBUF_FIELD_OFFSET(::MsgPlayerLogin, code_),
+  PROTOBUF_FIELD_OFFSET(::MsgPlayerLogin, invite_code_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgPlayerLoginResp, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -737,6 +755,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::MsgPlayerLoginResp, phone_num_),
   PROTOBUF_FIELD_OFFSET(::MsgPlayerLoginResp, vip_level_),
   PROTOBUF_FIELD_OFFSET(::MsgPlayerLoginResp, avatar_frame_),
+  PROTOBUF_FIELD_OFFSET(::MsgPlayerLoginResp, invite_code_),
   PROTOBUF_FIELD_OFFSET(::MsgPlayerLoginResp, bank_password_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgModifyPassword, _internal_metadata_),
@@ -753,6 +772,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::MsgBindPhone, code_),
   PROTOBUF_FIELD_OFFSET(::MsgBindPhone, phone_num_),
   PROTOBUF_FIELD_OFFSET(::MsgBindPhone, password_),
+  PROTOBUF_FIELD_OFFSET(::MsgBindPhone, invite_code_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgCommonKV, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1067,47 +1087,55 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::MsgBankRecordResp, records_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::MsgPhoneCode, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::MsgPhoneCode, area_code_),
+  PROTOBUF_FIELD_OFFSET(::MsgPhoneCode, phone_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::MsgPlayerLogin)},
-  { 18, -1, sizeof(::MsgPlayerLoginResp)},
-  { 37, -1, sizeof(::MsgModifyPassword)},
-  { 44, -1, sizeof(::MsgBindPhone)},
-  { 52, -1, sizeof(::MsgCommonKV)},
-  { 59, -1, sizeof(::MsgCheckInInfo)},
-  { 68, -1, sizeof(::MsgTurntableHistoryData)},
-  { 78, -1, sizeof(::MsgTurntableData)},
-  { 89, -1, sizeof(::MsgMailsInfo)},
-  { 95, -1, sizeof(::MsgMailData)},
-  { 109, -1, sizeof(::MsgShareData)},
-  { 116, -1, sizeof(::MsgBindParentData)},
-  { 122, -1, sizeof(::MsgInviteAwardInfo)},
-  { 130, -1, sizeof(::MsgInviteAwardConfig)},
-  { 137, -1, sizeof(::MsgRechargeInfo)},
-  { 147, -1, sizeof(::MsgQueryRebateRecordInfo)},
-  { 153, -1, sizeof(::MsgQueryRebateRecord)},
-  { 161, -1, sizeof(::MsgForgetPassword)},
-  { 170, -1, sizeof(::MsgVIPInfo)},
-  { 186, -1, sizeof(::MsgVIPConfig)},
-  { 192, -1, sizeof(::MsgUpgradeVIP)},
-  { 199, -1, sizeof(::MsgGetAvatarInfo)},
-  { 205, -1, sizeof(::MsgPlayerInfo)},
-  { 222, -1, sizeof(::MsgActiveInfo)},
-  { 229, -1, sizeof(::ActiveInfoRet)},
-  { 245, -1, sizeof(::MsgActiveInfoSCRet)},
-  { 251, -1, sizeof(::MsgActiveInfoCSPick)},
-  { 259, -1, sizeof(::MsgActiveInfoSCPick)},
-  { 276, -1, sizeof(::MsgModifySignature)},
-  { 283, -1, sizeof(::MsgBankChangePassword)},
-  { 290, -1, sizeof(::MsgBankOperate)},
-  { 297, -1, sizeof(::MsgBankTakeOut)},
-  { 305, -1, sizeof(::MsgBankTransfer)},
-  { 312, -1, sizeof(::MsgTopInfo)},
-  { 324, -1, sizeof(::MsgGetRank)},
-  { 333, -1, sizeof(::MsgTopListResp)},
-  { 344, -1, sizeof(::MsgBankTransferResp)},
-  { 351, -1, sizeof(::MsgBankRecord)},
-  { 360, -1, sizeof(::MsgBankRecordResp)},
+  { 19, -1, sizeof(::MsgPlayerLoginResp)},
+  { 39, -1, sizeof(::MsgModifyPassword)},
+  { 46, -1, sizeof(::MsgBindPhone)},
+  { 55, -1, sizeof(::MsgCommonKV)},
+  { 62, -1, sizeof(::MsgCheckInInfo)},
+  { 71, -1, sizeof(::MsgTurntableHistoryData)},
+  { 81, -1, sizeof(::MsgTurntableData)},
+  { 92, -1, sizeof(::MsgMailsInfo)},
+  { 98, -1, sizeof(::MsgMailData)},
+  { 112, -1, sizeof(::MsgShareData)},
+  { 119, -1, sizeof(::MsgBindParentData)},
+  { 125, -1, sizeof(::MsgInviteAwardInfo)},
+  { 133, -1, sizeof(::MsgInviteAwardConfig)},
+  { 140, -1, sizeof(::MsgRechargeInfo)},
+  { 150, -1, sizeof(::MsgQueryRebateRecordInfo)},
+  { 156, -1, sizeof(::MsgQueryRebateRecord)},
+  { 164, -1, sizeof(::MsgForgetPassword)},
+  { 173, -1, sizeof(::MsgVIPInfo)},
+  { 189, -1, sizeof(::MsgVIPConfig)},
+  { 195, -1, sizeof(::MsgUpgradeVIP)},
+  { 202, -1, sizeof(::MsgGetAvatarInfo)},
+  { 208, -1, sizeof(::MsgPlayerInfo)},
+  { 225, -1, sizeof(::MsgActiveInfo)},
+  { 232, -1, sizeof(::ActiveInfoRet)},
+  { 248, -1, sizeof(::MsgActiveInfoSCRet)},
+  { 254, -1, sizeof(::MsgActiveInfoCSPick)},
+  { 262, -1, sizeof(::MsgActiveInfoSCPick)},
+  { 279, -1, sizeof(::MsgModifySignature)},
+  { 286, -1, sizeof(::MsgBankChangePassword)},
+  { 293, -1, sizeof(::MsgBankOperate)},
+  { 300, -1, sizeof(::MsgBankTakeOut)},
+  { 308, -1, sizeof(::MsgBankTransfer)},
+  { 315, -1, sizeof(::MsgTopInfo)},
+  { 327, -1, sizeof(::MsgGetRank)},
+  { 336, -1, sizeof(::MsgTopListResp)},
+  { 347, -1, sizeof(::MsgBankTransferResp)},
+  { 354, -1, sizeof(::MsgBankRecord)},
+  { 363, -1, sizeof(::MsgBankRecordResp)},
+  { 369, -1, sizeof(::MsgPhoneCode)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -1150,117 +1178,121 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgBankTransferResp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgBankRecord_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgBankRecordResp_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgPhoneCode_default_instance_),
 };
 
 const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\013Login.proto\"\374\001\n\016MsgPlayerLogin\022\017\n\007acco"
+  "\n\013Login.proto\"\221\002\n\016MsgPlayerLogin\022\017\n\007acco"
   "unt\030\001 \001(\t\022\020\n\010password\030\002 \001(\t\022\023\n\013platform_"
   "id\030\003 \001(\005\022\022\n\nchannel_id\030\004 \001(\005\022\023\n\013client_t"
   "ype\030\005 \001(\005\022\022\n\nlogin_type\030\006 \001(\005\022\023\n\013machine"
   "_num\030\007 \001(\t\022\017\n\007user_ip\030\010 \001(\t\022\020\n\010is_drain\030"
   "\t \001(\010\022\016\n\006avatar\030\n \001(\t\022\020\n\010nickname\030\013 \001(\t\022"
-  "\r\n\005phone\030\014 \001(\t\022\014\n\004code\030\r \001(\005\"\236\002\n\022MsgPlay"
-  "erLoginResp\022\020\n\010res_code\030\001 \001(\005\022\017\n\007user_id"
-  "\030\002 \001(\005\022\024\n\014beautiful_id\030\003 \001(\005\022\017\n\007account\030"
-  "\004 \001(\t\022\020\n\010nickname\030\005 \001(\t\022\016\n\006avatar\030\006 \001(\t\022"
-  "\026\n\016first_recharge\030\007 \001(\010\022\021\n\tuser_type\030\010 \001"
-  "(\005\022\020\n\010is_drain\030\t \001(\010\022\014\n\004coin\030\n \001(\004\022\021\n\tph"
-  "one_num\030\013 \001(\t\022\021\n\tvip_level\030\014 \001(\005\022\024\n\014avat"
-  "ar_frame\030\r \001(\005\022\025\n\rbank_password\030\020 \001(\t\"\?\n"
-  "\021MsgModifyPassword\022\024\n\014old_password\030\001 \001(\t"
-  "\022\024\n\014new_password\030\002 \001(\t\"A\n\014MsgBindPhone\022\014"
-  "\n\004code\030\001 \001(\005\022\021\n\tphone_num\030\002 \001(\t\022\020\n\010passw"
-  "ord\030\003 \001(\t\"#\n\013MsgCommonKV\022\t\n\001k\030\001 \001(\005\022\t\n\001v"
-  "\030\002 \001(\005\"i\n\016MsgCheckInInfo\022\022\n\ncheck_days\030\001"
-  " \001(\005\022\017\n\007is_open\030\002 \001(\010\022\020\n\010can_pick\030\003 \001(\010\022"
-  " \n\nCheckInCfg\030\004 \003(\0132\014.MsgCommonKV\"d\n\027Msg"
-  "TurntableHistoryData\022\017\n\007user_id\030\001 \001(\005\022\r\n"
-  "\005score\030\002 \001(\005\022\r\n\005award\030\003 \001(\005\022\014\n\004type\030\004 \001("
-  "\005\022\014\n\004time\030\005 \001(\t\"\253\001\n\020MsgTurntableData\022\020\n\010"
-  "play_num\030\001 \001(\005\022\r\n\005score\030\002 \001(\005\022\022\n\nneed_sc"
-  "ore\030\003 \001(\005\022\022\n\nlimit_turn\030\004 \001(\005\022#\n\rturntab"
-  "le_cfg\030\005 \003(\0132\014.MsgCommonKV\022)\n\007history\030\006 "
-  "\003(\0132\030.MsgTurntableHistoryData\"+\n\014MsgMail"
-  "sInfo\022\033\n\005mails\030\001 \003(\0132\014.MsgMailData\"\254\001\n\013M"
-  "sgMailData\022\017\n\007mail_id\030\001 \001(\005\022\024\n\014send_user"
-  "_id\030\002 \001(\005\022\021\n\tsend_time\030\003 \001(\005\022\r\n\005title\030\004 "
-  "\001(\t\022\017\n\007content\030\005 \001(\t\022\014\n\004gold\030\006 \001(\003\022\017\n\007is"
-  "_read\030\007 \001(\010\022\020\n\010is_claim\030\010 \001(\010\022\022\n\nto_user"
-  "_id\030\t \001(\005\"6\n\014MsgShareData\022\023\n\013invite_code"
-  "\030\001 \001(\t\022\021\n\tbind_list\030\002 \003(\005\"$\n\021MsgBindPare"
-  "ntData\022\017\n\007strCode\030\001 \001(\t\"c\n\022MsgInviteAwar"
-  "dInfo\022\021\n\tinviteNum\030\001 \001(\005\022\021\n\tpickIndex\030\002 "
-  "\001(\005\022\'\n\010awardCfg\030\003 \003(\0132\025.MsgInviteAwardCo"
-  "nfig\"8\n\024MsgInviteAwardConfig\022\021\n\tinviteNu"
-  "m\030\001 \001(\005\022\r\n\005award\030\002 \001(\005\"w\n\017MsgRechargeInf"
-  "o\022\021\n\tinviteNum\030\001 \001(\005\022\022\n\ntodayAward\030\002 \001(\003"
-  "\022\022\n\ntotalAward\030\003 \001(\003\022\025\n\rcanPickAmount\030\004 "
-  "\001(\003\022\022\n\ninviteCode\030\005 \001(\t\"L\n\030MsgQueryRebat"
-  "eRecordInfo\0220\n\021queryRebateRecord\030\001 \003(\0132\025"
-  ".MsgQueryRebateRecord\"V\n\024MsgQueryRebateR"
-  "ecord\022\026\n\016rechargeUserId\030\001 \001(\005\022\026\n\016recharg"
-  "eAmount\030\002 \001(\005\022\016\n\006rebate\030\003 \001(\005\"[\n\021MsgForg"
-  "etPassword\022\023\n\013client_type\030\001 \001(\005\022\r\n\005phone"
-  "\030\002 \001(\t\022\014\n\004code\030\003 \001(\005\022\024\n\014new_password\030\004 \001"
-  "(\t\"\366\001\n\nMsgVIPInfo\022\021\n\tvip_level\030\001 \001(\005\022\022\n\n"
-  "need_score\030\002 \001(\003\022\025\n\rturntable_num\030\003 \001(\005\022"
-  "\030\n\020trumpet_discount\030\004 \001(\005\022\026\n\016check_addit"
-  "ion\030\005 \001(\005\022\026\n\016share_addition\030\006 \001(\005\022\022\n\nwor"
-  "ld_chat\030\007 \001(\010\022\016\n\006avatar\030\010 \001(\005\022\024\n\014avatar_"
-  "frame\030\t \001(\005\022\022\n\naward_gold\030\n \001(\005\022\022\n\none_t"
-  "o_one\030\013 \001(\010\"-\n\014MsgVIPConfig\022\035\n\010vip_info\030"
-  "\001 \003(\0132\013.MsgVIPInfo\"/\n\rMsgUpgradeVIP\022\020\n\010r"
-  "es_code\030\001 \001(\005\022\014\n\004gold\030\002 \001(\003\"#\n\020MsgGetAva"
-  "tarInfo\022\017\n\007avatars\030\001 \003(\005\"\367\001\n\rMsgPlayerIn"
-  "fo\022\017\n\007user_id\030\001 \001(\005\022\024\n\014beautiful_id\030\002 \001("
-  "\005\022\020\n\010nickname\030\003 \001(\t\022\016\n\006avatar\030\004 \001(\t\022\014\n\004c"
-  "oin\030\005 \001(\004\022\021\n\tphone_num\030\006 \001(\t\022\021\n\tvip_leve"
-  "l\030\007 \001(\005\022\024\n\014avatar_frame\030\010 \001(\005\022\021\n\tsignatu"
-  "re\030\t \001(\t\022\023\n\013zmd_game_id\030\n \001(\005\022\024\n\014zmd_win"
-  "_gold\030\013 \001(\004\022\025\n\rbank_password\030\014 \001(\010\"3\n\rMs"
-  "gActiveInfo\022\017\n\007user_id\030\001 \001(\005\022\021\n\tactive_i"
-  "d\030\002 \001(\005\"\330\001\n\rActiveInfoRet\022\021\n\tactive_id\030\001"
-  " \001(\005\022\025\n\rsub_active_id\030\002 \001(\005\022\016\n\006param1\030\003 "
-  "\001(\005\022\016\n\006param2\030\004 \001(\005\022\016\n\006param3\030\005 \001(\005\022\021\n\tp"
-  "rogress1\030\006 \001(\005\022\021\n\tprogress2\030\007 \001(\005\022\021\n\tpro"
-  "gress3\030\010 \001(\005\022\016\n\006reward\030\t \001(\005\022\023\n\013reward_t"
-  "ype\030\n \001(\005\022\017\n\007is_pick\030\013 \001(\010\"6\n\022MsgActiveI"
-  "nfoSCRet\022 \n\010vec_info\030\001 \003(\0132\016.ActiveInfoR"
-  "et\"P\n\023MsgActiveInfoCSPick\022\017\n\007user_id\030\001 \001"
-  "(\005\022\021\n\tactive_id\030\002 \001(\005\022\025\n\rsub_active_id\030\003"
-  " \001(\005\"\353\001\n\023MsgActiveInfoSCPick\022\021\n\tactive_i"
-  "d\030\001 \001(\005\022\025\n\rsub_active_id\030\002 \001(\005\022\016\n\006param1"
-  "\030\003 \001(\005\022\016\n\006param2\030\004 \001(\005\022\016\n\006param3\030\005 \001(\005\022\021"
-  "\n\tprogress1\030\006 \001(\005\022\021\n\tprogress2\030\007 \001(\005\022\021\n\t"
-  "progress3\030\010 \001(\005\022\016\n\006reward\030\t \001(\005\022\023\n\013rewar"
-  "d_type\030\n \001(\005\022\017\n\007is_pick\030\013 \001(\005\022\013\n\003res\030\014 \001"
-  "(\010\"8\n\022MsgModifySignature\022\017\n\007user_id\030\001 \001("
-  "\005\022\021\n\tsignature\030\002 \001(\t\"7\n\025MsgBankChangePas"
-  "sword\022\020\n\010password\030\001 \001(\t\022\014\n\004code\030\002 \001(\005\"4\n"
-  "\016MsgBankOperate\022\014\n\004gold\030\001 \001(\003\022\024\n\014operate"
-  "_type\030\002 \001(\005\"I\n\016MsgBankTakeOut\022\021\n\tret_val"
-  "ue\030\001 \001(\005\022\021\n\tuser_gold\030\002 \001(\003\022\021\n\tbank_gold"
-  "\030\003 \001(\003\">\n\017MsgBankTransfer\022\024\n\014recv_user_i"
-  "d\030\001 \001(\005\022\025\n\rtransfer_gold\030\002 \001(\003\"\212\001\n\nMsgTo"
-  "pInfo\022\017\n\007rank_id\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022"
-  "\014\n\004gold\030\003 \001(\004\022\021\n\tvip_level\030\004 \001(\r\022\024\n\014avat"
-  "ar_frame\030\005 \001(\005\022\020\n\010head_url\030\006 \001(\t\022\021\n\tnick"
-  "_name\030\007 \001(\t\"W\n\nMsgGetRank\022\021\n\trank_type\030\001"
-  " \001(\005\022\017\n\007user_id\030\002 \001(\005\022\024\n\014current_page\030\003 "
-  "\001(\005\022\017\n\007max_row\030\004 \001(\005\"\213\001\n\016MsgTopListResp\022"
-  "\017\n\007user_id\030\001 \001(\005\022\021\n\trank_type\030\002 \001(\005\022\026\n\016t"
-  "his_rank_ndex\030\003 \001(\005\022\021\n\tthis_gold\030\004 \001(\005\022\016"
-  "\n\006is_end\030\005 \001(\005\022\032\n\005lists\030\006 \003(\0132\013.MsgTopIn"
-  "fo\";\n\023MsgBankTransferResp\022\021\n\tret_value\030\001"
-  " \001(\005\022\021\n\tbank_gold\030\002 \001(\003\"d\n\rMsgBankRecord"
-  "\022\027\n\017operate_user_id\030\001 \001(\005\022\025\n\rtransfer_go"
-  "ld\030\002 \001(\003\022\r\n\005timer\030\003 \001(\005\022\024\n\014operate_type\030"
-  "\004 \001(\005\"4\n\021MsgBankRecordResp\022\037\n\007records\030\001 "
-  "\003(\0132\016.MsgBankRecordb\006proto3"
+  "\r\n\005phone\030\014 \001(\t\022\014\n\004code\030\r \001(\005\022\023\n\013invite_c"
+  "ode\030\016 \001(\t\"\263\002\n\022MsgPlayerLoginResp\022\020\n\010res_"
+  "code\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\024\n\014beautiful"
+  "_id\030\003 \001(\005\022\017\n\007account\030\004 \001(\t\022\020\n\010nickname\030\005"
+  " \001(\t\022\016\n\006avatar\030\006 \001(\t\022\026\n\016first_recharge\030\007"
+  " \001(\010\022\021\n\tuser_type\030\010 \001(\005\022\020\n\010is_drain\030\t \001("
+  "\010\022\014\n\004coin\030\n \001(\004\022\021\n\tphone_num\030\013 \001(\t\022\021\n\tvi"
+  "p_level\030\014 \001(\005\022\024\n\014avatar_frame\030\r \001(\005\022\023\n\013i"
+  "nvite_code\030\016 \001(\t\022\025\n\rbank_password\030\017 \001(\t\""
+  "\?\n\021MsgModifyPassword\022\024\n\014old_password\030\001 \001"
+  "(\t\022\024\n\014new_password\030\002 \001(\t\"V\n\014MsgBindPhone"
+  "\022\014\n\004code\030\001 \001(\005\022\021\n\tphone_num\030\002 \001(\t\022\020\n\010pas"
+  "sword\030\003 \001(\t\022\023\n\013invite_code\030\004 \001(\t\"#\n\013MsgC"
+  "ommonKV\022\t\n\001k\030\001 \001(\005\022\t\n\001v\030\002 \001(\005\"i\n\016MsgChec"
+  "kInInfo\022\022\n\ncheck_days\030\001 \001(\005\022\017\n\007is_open\030\002"
+  " \001(\010\022\020\n\010can_pick\030\003 \001(\010\022 \n\nCheckInCfg\030\004 \003"
+  "(\0132\014.MsgCommonKV\"d\n\027MsgTurntableHistoryD"
+  "ata\022\017\n\007user_id\030\001 \001(\005\022\r\n\005score\030\002 \001(\005\022\r\n\005a"
+  "ward\030\003 \001(\005\022\014\n\004type\030\004 \001(\005\022\014\n\004time\030\005 \001(\t\"\253"
+  "\001\n\020MsgTurntableData\022\020\n\010play_num\030\001 \001(\005\022\r\n"
+  "\005score\030\002 \001(\005\022\022\n\nneed_score\030\003 \001(\005\022\022\n\nlimi"
+  "t_turn\030\004 \001(\005\022#\n\rturntable_cfg\030\005 \003(\0132\014.Ms"
+  "gCommonKV\022)\n\007history\030\006 \003(\0132\030.MsgTurntabl"
+  "eHistoryData\"+\n\014MsgMailsInfo\022\033\n\005mails\030\001 "
+  "\003(\0132\014.MsgMailData\"\254\001\n\013MsgMailData\022\017\n\007mai"
+  "l_id\030\001 \001(\005\022\024\n\014send_user_id\030\002 \001(\005\022\021\n\tsend"
+  "_time\030\003 \001(\005\022\r\n\005title\030\004 \001(\t\022\017\n\007content\030\005 "
+  "\001(\t\022\014\n\004gold\030\006 \001(\003\022\017\n\007is_read\030\007 \001(\010\022\020\n\010is"
+  "_claim\030\010 \001(\010\022\022\n\nto_user_id\030\t \001(\005\"6\n\014MsgS"
+  "hareData\022\023\n\013invite_code\030\001 \001(\t\022\021\n\tbind_li"
+  "st\030\002 \003(\005\"$\n\021MsgBindParentData\022\017\n\007strCode"
+  "\030\001 \001(\t\"c\n\022MsgInviteAwardInfo\022\021\n\tinviteNu"
+  "m\030\001 \001(\005\022\021\n\tpickIndex\030\002 \001(\005\022\'\n\010awardCfg\030\003"
+  " \003(\0132\025.MsgInviteAwardConfig\"8\n\024MsgInvite"
+  "AwardConfig\022\021\n\tinviteNum\030\001 \001(\005\022\r\n\005award\030"
+  "\002 \001(\005\"w\n\017MsgRechargeInfo\022\021\n\tinviteNum\030\001 "
+  "\001(\005\022\022\n\ntodayAward\030\002 \001(\003\022\022\n\ntotalAward\030\003 "
+  "\001(\003\022\025\n\rcanPickAmount\030\004 \001(\003\022\022\n\ninviteCode"
+  "\030\005 \001(\t\"L\n\030MsgQueryRebateRecordInfo\0220\n\021qu"
+  "eryRebateRecord\030\001 \003(\0132\025.MsgQueryRebateRe"
+  "cord\"V\n\024MsgQueryRebateRecord\022\026\n\016recharge"
+  "UserId\030\001 \001(\005\022\026\n\016rechargeAmount\030\002 \001(\005\022\016\n\006"
+  "rebate\030\003 \001(\005\"[\n\021MsgForgetPassword\022\023\n\013cli"
+  "ent_type\030\001 \001(\005\022\r\n\005phone\030\002 \001(\t\022\014\n\004code\030\003 "
+  "\001(\005\022\024\n\014new_password\030\004 \001(\t\"\366\001\n\nMsgVIPInfo"
+  "\022\021\n\tvip_level\030\001 \001(\005\022\022\n\nneed_score\030\002 \001(\003\022"
+  "\025\n\rturntable_num\030\003 \001(\005\022\030\n\020trumpet_discou"
+  "nt\030\004 \001(\005\022\026\n\016check_addition\030\005 \001(\005\022\026\n\016shar"
+  "e_addition\030\006 \001(\005\022\022\n\nworld_chat\030\007 \001(\010\022\016\n\006"
+  "avatar\030\010 \001(\005\022\024\n\014avatar_frame\030\t \001(\005\022\022\n\naw"
+  "ard_gold\030\n \001(\005\022\022\n\none_to_one\030\013 \001(\010\"-\n\014Ms"
+  "gVIPConfig\022\035\n\010vip_info\030\001 \003(\0132\013.MsgVIPInf"
+  "o\"/\n\rMsgUpgradeVIP\022\020\n\010res_code\030\001 \001(\005\022\014\n\004"
+  "gold\030\002 \001(\003\"#\n\020MsgGetAvatarInfo\022\017\n\007avatar"
+  "s\030\001 \003(\005\"\367\001\n\rMsgPlayerInfo\022\017\n\007user_id\030\001 \001"
+  "(\005\022\024\n\014beautiful_id\030\002 \001(\005\022\020\n\010nickname\030\003 \001"
+  "(\t\022\016\n\006avatar\030\004 \001(\t\022\014\n\004coin\030\005 \001(\004\022\021\n\tphon"
+  "e_num\030\006 \001(\t\022\021\n\tvip_level\030\007 \001(\005\022\024\n\014avatar"
+  "_frame\030\010 \001(\005\022\021\n\tsignature\030\t \001(\t\022\023\n\013zmd_g"
+  "ame_id\030\n \001(\005\022\024\n\014zmd_win_gold\030\013 \001(\004\022\025\n\rba"
+  "nk_password\030\014 \001(\010\"3\n\rMsgActiveInfo\022\017\n\007us"
+  "er_id\030\001 \001(\005\022\021\n\tactive_id\030\002 \001(\005\"\330\001\n\rActiv"
+  "eInfoRet\022\021\n\tactive_id\030\001 \001(\005\022\025\n\rsub_activ"
+  "e_id\030\002 \001(\005\022\016\n\006param1\030\003 \001(\005\022\016\n\006param2\030\004 \001"
+  "(\005\022\016\n\006param3\030\005 \001(\005\022\021\n\tprogress1\030\006 \001(\005\022\021\n"
+  "\tprogress2\030\007 \001(\005\022\021\n\tprogress3\030\010 \001(\005\022\016\n\006r"
+  "eward\030\t \001(\005\022\023\n\013reward_type\030\n \001(\005\022\017\n\007is_p"
+  "ick\030\013 \001(\010\"6\n\022MsgActiveInfoSCRet\022 \n\010vec_i"
+  "nfo\030\001 \003(\0132\016.ActiveInfoRet\"P\n\023MsgActiveIn"
+  "foCSPick\022\017\n\007user_id\030\001 \001(\005\022\021\n\tactive_id\030\002"
+  " \001(\005\022\025\n\rsub_active_id\030\003 \001(\005\"\353\001\n\023MsgActiv"
+  "eInfoSCPick\022\021\n\tactive_id\030\001 \001(\005\022\025\n\rsub_ac"
+  "tive_id\030\002 \001(\005\022\016\n\006param1\030\003 \001(\005\022\016\n\006param2\030"
+  "\004 \001(\005\022\016\n\006param3\030\005 \001(\005\022\021\n\tprogress1\030\006 \001(\005"
+  "\022\021\n\tprogress2\030\007 \001(\005\022\021\n\tprogress3\030\010 \001(\005\022\016"
+  "\n\006reward\030\t \001(\005\022\023\n\013reward_type\030\n \001(\005\022\017\n\007i"
+  "s_pick\030\013 \001(\005\022\013\n\003res\030\014 \001(\010\"8\n\022MsgModifySi"
+  "gnature\022\017\n\007user_id\030\001 \001(\005\022\021\n\tsignature\030\002 "
+  "\001(\t\"7\n\025MsgBankChangePassword\022\020\n\010password"
+  "\030\001 \001(\t\022\014\n\004code\030\002 \001(\005\"4\n\016MsgBankOperate\022\014"
+  "\n\004gold\030\001 \001(\003\022\024\n\014operate_type\030\002 \001(\005\"I\n\016Ms"
+  "gBankTakeOut\022\021\n\tret_value\030\001 \001(\005\022\021\n\tuser_"
+  "gold\030\002 \001(\003\022\021\n\tbank_gold\030\003 \001(\003\">\n\017MsgBank"
+  "Transfer\022\024\n\014recv_user_id\030\001 \001(\005\022\025\n\rtransf"
+  "er_gold\030\002 \001(\003\"\212\001\n\nMsgTopInfo\022\017\n\007rank_id\030"
+  "\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\014\n\004gold\030\003 \001(\004\022\021\n\t"
+  "vip_level\030\004 \001(\r\022\024\n\014avatar_frame\030\005 \001(\005\022\020\n"
+  "\010head_url\030\006 \001(\t\022\021\n\tnick_name\030\007 \001(\t\"W\n\nMs"
+  "gGetRank\022\021\n\trank_type\030\001 \001(\005\022\017\n\007user_id\030\002"
+  " \001(\005\022\024\n\014current_page\030\003 \001(\005\022\017\n\007max_row\030\004 "
+  "\001(\005\"\213\001\n\016MsgTopListResp\022\017\n\007user_id\030\001 \001(\005\022"
+  "\021\n\trank_type\030\002 \001(\005\022\026\n\016this_rank_ndex\030\003 \001"
+  "(\005\022\021\n\tthis_gold\030\004 \001(\005\022\016\n\006is_end\030\005 \001(\005\022\032\n"
+  "\005lists\030\006 \003(\0132\013.MsgTopInfo\";\n\023MsgBankTran"
+  "sferResp\022\021\n\tret_value\030\001 \001(\005\022\021\n\tbank_gold"
+  "\030\002 \001(\003\"d\n\rMsgBankRecord\022\027\n\017operate_user_"
+  "id\030\001 \001(\005\022\025\n\rtransfer_gold\030\002 \001(\003\022\r\n\005timer"
+  "\030\003 \001(\005\022\024\n\014operate_type\030\004 \001(\005\"4\n\021MsgBankR"
+  "ecordResp\022\037\n\007records\030\001 \003(\0132\016.MsgBankReco"
+  "rd\"0\n\014MsgPhoneCode\022\021\n\tarea_code\030\001 \001(\t\022\r\n"
+  "\005phone\030\002 \001(\tb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Login_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Login_2eproto_sccs[39] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Login_2eproto_sccs[40] = {
   &scc_info_ActiveInfoRet_Login_2eproto.base,
   &scc_info_MsgActiveInfo_Login_2eproto.base,
   &scc_info_MsgActiveInfoCSPick_Login_2eproto.base,
@@ -1286,6 +1318,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
   &scc_info_MsgMailsInfo_Login_2eproto.base,
   &scc_info_MsgModifyPassword_Login_2eproto.base,
   &scc_info_MsgModifySignature_Login_2eproto.base,
+  &scc_info_MsgPhoneCode_Login_2eproto.base,
   &scc_info_MsgPlayerInfo_Login_2eproto.base,
   &scc_info_MsgPlayerLogin_Login_2eproto.base,
   &scc_info_MsgPlayerLoginResp_Login_2eproto.base,
@@ -1303,10 +1336,10 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Login_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Login_2eproto = {
-  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 4147,
-  &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 39, 0,
+  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 4260,
+  &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 40, 0,
   schemas, file_default_instances, TableStruct_Login_2eproto::offsets,
-  file_level_metadata_Login_2eproto, 39, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
+  file_level_metadata_Login_2eproto, 40, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -1362,6 +1395,11 @@ MsgPlayerLogin::MsgPlayerLogin(const MsgPlayerLogin& from)
     phone_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_phone(), 
       GetArena());
   }
+  invite_code_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from._internal_invite_code().empty()) {
+    invite_code_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_invite_code(), 
+      GetArena());
+  }
   ::memcpy(&platform_id_, &from.platform_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&code_) -
     reinterpret_cast<char*>(&platform_id_)) + sizeof(code_));
@@ -1377,6 +1415,7 @@ void MsgPlayerLogin::SharedCtor() {
   avatar_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   nickname_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   phone_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  invite_code_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&platform_id_) - reinterpret_cast<char*>(this)),
       0, static_cast<size_t>(reinterpret_cast<char*>(&code_) -
@@ -1398,6 +1437,7 @@ void MsgPlayerLogin::SharedDtor() {
   avatar_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   nickname_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   phone_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  invite_code_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
 void MsgPlayerLogin::ArenaDtor(void* object) {
@@ -1428,6 +1468,7 @@ void MsgPlayerLogin::Clear() {
   avatar_.ClearToEmpty();
   nickname_.ClearToEmpty();
   phone_.ClearToEmpty();
+  invite_code_.ClearToEmpty();
   ::memset(&platform_id_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&code_) -
       reinterpret_cast<char*>(&platform_id_)) + sizeof(code_));
@@ -1543,6 +1584,15 @@ const char* MsgPlayerLogin::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
       case 13:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 104)) {
           code_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string invite_code = 14;
+      case 14:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 114)) {
+          auto str = _internal_mutable_invite_code();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgPlayerLogin.invite_code"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1680,6 +1730,16 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(13, this->_internal_code(), target);
   }
 
+  // string invite_code = 14;
+  if (this->invite_code().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_invite_code().data(), static_cast<int>(this->_internal_invite_code().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "MsgPlayerLogin.invite_code");
+    target = stream->WriteStringMaybeAliased(
+        14, this->_internal_invite_code(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -1743,6 +1803,13 @@ size_t MsgPlayerLogin::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_phone());
+  }
+
+  // string invite_code = 14;
+  if (this->invite_code().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_invite_code());
   }
 
   // int32 platform_id = 3;
@@ -1837,6 +1904,9 @@ void MsgPlayerLogin::MergeFrom(const MsgPlayerLogin& from) {
   if (from.phone().size() > 0) {
     _internal_set_phone(from._internal_phone());
   }
+  if (from.invite_code().size() > 0) {
+    _internal_set_invite_code(from._internal_invite_code());
+  }
   if (from.platform_id() != 0) {
     _internal_set_platform_id(from._internal_platform_id());
   }
@@ -1885,6 +1955,7 @@ void MsgPlayerLogin::InternalSwap(MsgPlayerLogin* other) {
   avatar_.Swap(&other->avatar_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   nickname_.Swap(&other->nickname_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   phone_.Swap(&other->phone_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  invite_code_.Swap(&other->invite_code_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(MsgPlayerLogin, code_)
       + sizeof(MsgPlayerLogin::code_)
@@ -1933,6 +2004,11 @@ MsgPlayerLoginResp::MsgPlayerLoginResp(const MsgPlayerLoginResp& from)
     phone_num_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_phone_num(), 
       GetArena());
   }
+  invite_code_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from._internal_invite_code().empty()) {
+    invite_code_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_invite_code(), 
+      GetArena());
+  }
   bank_password_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (!from._internal_bank_password().empty()) {
     bank_password_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_bank_password(), 
@@ -1950,6 +2026,7 @@ void MsgPlayerLoginResp::SharedCtor() {
   nickname_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   avatar_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   phone_num_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  invite_code_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   bank_password_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&res_code_) - reinterpret_cast<char*>(this)),
@@ -1969,6 +2046,7 @@ void MsgPlayerLoginResp::SharedDtor() {
   nickname_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   avatar_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   phone_num_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  invite_code_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   bank_password_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -1997,6 +2075,7 @@ void MsgPlayerLoginResp::Clear() {
   nickname_.ClearToEmpty();
   avatar_.ClearToEmpty();
   phone_num_.ClearToEmpty();
+  invite_code_.ClearToEmpty();
   bank_password_.ClearToEmpty();
   ::memset(&res_code_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&avatar_frame_) -
@@ -2110,9 +2189,18 @@ const char* MsgPlayerLoginResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // string bank_password = 16;
-      case 16:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 130)) {
+      // string invite_code = 14;
+      case 14:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 114)) {
+          auto str = _internal_mutable_invite_code();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgPlayerLoginResp.invite_code"));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string bank_password = 15;
+      case 15:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 122)) {
           auto str = _internal_mutable_bank_password();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgPlayerLoginResp.bank_password"));
@@ -2241,14 +2329,24 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(13, this->_internal_avatar_frame(), target);
   }
 
-  // string bank_password = 16;
+  // string invite_code = 14;
+  if (this->invite_code().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_invite_code().data(), static_cast<int>(this->_internal_invite_code().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "MsgPlayerLoginResp.invite_code");
+    target = stream->WriteStringMaybeAliased(
+        14, this->_internal_invite_code(), target);
+  }
+
+  // string bank_password = 15;
   if (this->bank_password().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_bank_password().data(), static_cast<int>(this->_internal_bank_password().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "MsgPlayerLoginResp.bank_password");
     target = stream->WriteStringMaybeAliased(
-        16, this->_internal_bank_password(), target);
+        15, this->_internal_bank_password(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -2295,9 +2393,16 @@ size_t MsgPlayerLoginResp::ByteSizeLong() const {
         this->_internal_phone_num());
   }
 
-  // string bank_password = 16;
+  // string invite_code = 14;
+  if (this->invite_code().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_invite_code());
+  }
+
+  // string bank_password = 15;
   if (this->bank_password().size() > 0) {
-    total_size += 2 +
+    total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_bank_password());
   }
@@ -2404,6 +2509,9 @@ void MsgPlayerLoginResp::MergeFrom(const MsgPlayerLoginResp& from) {
   if (from.phone_num().size() > 0) {
     _internal_set_phone_num(from._internal_phone_num());
   }
+  if (from.invite_code().size() > 0) {
+    _internal_set_invite_code(from._internal_invite_code());
+  }
   if (from.bank_password().size() > 0) {
     _internal_set_bank_password(from._internal_bank_password());
   }
@@ -2461,6 +2569,7 @@ void MsgPlayerLoginResp::InternalSwap(MsgPlayerLoginResp* other) {
   nickname_.Swap(&other->nickname_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   avatar_.Swap(&other->avatar_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   phone_num_.Swap(&other->phone_num_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  invite_code_.Swap(&other->invite_code_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   bank_password_.Swap(&other->bank_password_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(MsgPlayerLoginResp, avatar_frame_)
@@ -2744,6 +2853,11 @@ MsgBindPhone::MsgBindPhone(const MsgBindPhone& from)
     password_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_password(), 
       GetArena());
   }
+  invite_code_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from._internal_invite_code().empty()) {
+    invite_code_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_invite_code(), 
+      GetArena());
+  }
   code_ = from.code_;
   // @@protoc_insertion_point(copy_constructor:MsgBindPhone)
 }
@@ -2752,6 +2866,7 @@ void MsgBindPhone::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgBindPhone_Login_2eproto.base);
   phone_num_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   password_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  invite_code_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   code_ = 0;
 }
 
@@ -2765,6 +2880,7 @@ void MsgBindPhone::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
   phone_num_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   password_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  invite_code_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
 void MsgBindPhone::ArenaDtor(void* object) {
@@ -2790,6 +2906,7 @@ void MsgBindPhone::Clear() {
 
   phone_num_.ClearToEmpty();
   password_.ClearToEmpty();
+  invite_code_.ClearToEmpty();
   code_ = 0;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -2823,6 +2940,15 @@ const char* MsgBindPhone::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
           auto str = _internal_mutable_password();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgBindPhone.password"));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string invite_code = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+          auto str = _internal_mutable_invite_code();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgBindPhone.invite_code"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2880,6 +3006,16 @@ failure:
         3, this->_internal_password(), target);
   }
 
+  // string invite_code = 4;
+  if (this->invite_code().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_invite_code().data(), static_cast<int>(this->_internal_invite_code().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "MsgBindPhone.invite_code");
+    target = stream->WriteStringMaybeAliased(
+        4, this->_internal_invite_code(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -2908,6 +3044,13 @@ size_t MsgBindPhone::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_password());
+  }
+
+  // string invite_code = 4;
+  if (this->invite_code().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_invite_code());
   }
 
   // int32 code = 1;
@@ -2954,6 +3097,9 @@ void MsgBindPhone::MergeFrom(const MsgBindPhone& from) {
   if (from.password().size() > 0) {
     _internal_set_password(from._internal_password());
   }
+  if (from.invite_code().size() > 0) {
+    _internal_set_invite_code(from._internal_invite_code());
+  }
   if (from.code() != 0) {
     _internal_set_code(from._internal_code());
   }
@@ -2982,6 +3128,7 @@ void MsgBindPhone::InternalSwap(MsgBindPhone* other) {
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   phone_num_.Swap(&other->phone_num_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   password_.Swap(&other->password_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  invite_code_.Swap(&other->invite_code_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   swap(code_, other->code_);
 }
 
@@ -12803,6 +12950,250 @@ void MsgBankRecordResp::InternalSwap(MsgBankRecordResp* other) {
 }
 
 
+// ===================================================================
+
+class MsgPhoneCode::_Internal {
+ public:
+};
+
+MsgPhoneCode::MsgPhoneCode(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:MsgPhoneCode)
+}
+MsgPhoneCode::MsgPhoneCode(const MsgPhoneCode& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  area_code_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from._internal_area_code().empty()) {
+    area_code_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_area_code(), 
+      GetArena());
+  }
+  phone_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from._internal_phone().empty()) {
+    phone_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_phone(), 
+      GetArena());
+  }
+  // @@protoc_insertion_point(copy_constructor:MsgPhoneCode)
+}
+
+void MsgPhoneCode::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgPhoneCode_Login_2eproto.base);
+  area_code_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  phone_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+MsgPhoneCode::~MsgPhoneCode() {
+  // @@protoc_insertion_point(destructor:MsgPhoneCode)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void MsgPhoneCode::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  area_code_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  phone_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+
+void MsgPhoneCode::ArenaDtor(void* object) {
+  MsgPhoneCode* _this = reinterpret_cast< MsgPhoneCode* >(object);
+  (void)_this;
+}
+void MsgPhoneCode::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void MsgPhoneCode::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const MsgPhoneCode& MsgPhoneCode::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgPhoneCode_Login_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void MsgPhoneCode::Clear() {
+// @@protoc_insertion_point(message_clear_start:MsgPhoneCode)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  area_code_.ClearToEmpty();
+  phone_.ClearToEmpty();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* MsgPhoneCode::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // string area_code = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          auto str = _internal_mutable_area_code();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgPhoneCode.area_code"));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string phone = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          auto str = _internal_mutable_phone();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgPhoneCode.phone"));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* MsgPhoneCode::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:MsgPhoneCode)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // string area_code = 1;
+  if (this->area_code().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_area_code().data(), static_cast<int>(this->_internal_area_code().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "MsgPhoneCode.area_code");
+    target = stream->WriteStringMaybeAliased(
+        1, this->_internal_area_code(), target);
+  }
+
+  // string phone = 2;
+  if (this->phone().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_phone().data(), static_cast<int>(this->_internal_phone().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "MsgPhoneCode.phone");
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_phone(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:MsgPhoneCode)
+  return target;
+}
+
+size_t MsgPhoneCode::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:MsgPhoneCode)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // string area_code = 1;
+  if (this->area_code().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_area_code());
+  }
+
+  // string phone = 2;
+  if (this->phone().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_phone());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void MsgPhoneCode::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:MsgPhoneCode)
+  GOOGLE_DCHECK_NE(&from, this);
+  const MsgPhoneCode* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgPhoneCode>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgPhoneCode)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgPhoneCode)
+    MergeFrom(*source);
+  }
+}
+
+void MsgPhoneCode::MergeFrom(const MsgPhoneCode& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:MsgPhoneCode)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.area_code().size() > 0) {
+    _internal_set_area_code(from._internal_area_code());
+  }
+  if (from.phone().size() > 0) {
+    _internal_set_phone(from._internal_phone());
+  }
+}
+
+void MsgPhoneCode::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:MsgPhoneCode)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void MsgPhoneCode::CopyFrom(const MsgPhoneCode& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:MsgPhoneCode)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool MsgPhoneCode::IsInitialized() const {
+  return true;
+}
+
+void MsgPhoneCode::InternalSwap(MsgPhoneCode* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  area_code_.Swap(&other->area_code_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  phone_.Swap(&other->phone_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata MsgPhoneCode::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::MsgPlayerLogin* Arena::CreateMaybeMessage< ::MsgPlayerLogin >(Arena* arena) {
@@ -12921,6 +13312,9 @@ template<> PROTOBUF_NOINLINE ::MsgBankRecord* Arena::CreateMaybeMessage< ::MsgBa
 }
 template<> PROTOBUF_NOINLINE ::MsgBankRecordResp* Arena::CreateMaybeMessage< ::MsgBankRecordResp >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MsgBankRecordResp >(arena);
+}
+template<> PROTOBUF_NOINLINE ::MsgPhoneCode* Arena::CreateMaybeMessage< ::MsgPhoneCode >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::MsgPhoneCode >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 
