@@ -22,108 +22,107 @@ public static partial class LoginReflection {
   static LoginReflection() {
     byte[] descriptorData = global::System.Convert.FromBase64String(
         string.Concat(
-          "ChdQcm90by9Mb2dpbi9Mb2dpbi5wcm90byKRAgoOTXNnUGxheWVyTG9naW4S",
+          "ChdQcm90by9Mb2dpbi9Mb2dpbi5wcm90byL8AQoOTXNnUGxheWVyTG9naW4S",
           "DwoHYWNjb3VudBgBIAEoCRIQCghwYXNzd29yZBgCIAEoCRITCgtwbGF0Zm9y",
           "bV9pZBgDIAEoBRISCgpjaGFubmVsX2lkGAQgASgFEhMKC2NsaWVudF90eXBl",
           "GAUgASgFEhIKCmxvZ2luX3R5cGUYBiABKAUSEwoLbWFjaGluZV9udW0YByAB",
           "KAkSDwoHdXNlcl9pcBgIIAEoCRIQCghpc19kcmFpbhgJIAEoCBIOCgZhdmF0",
           "YXIYCiABKAkSEAoIbmlja25hbWUYCyABKAkSDQoFcGhvbmUYDCABKAkSDAoE",
-          "Y29kZRgNIAEoBRITCgtpbnZpdGVfY29kZRgOIAEoCSKzAgoSTXNnUGxheWVy",
-          "TG9naW5SZXNwEhAKCHJlc19jb2RlGAEgASgFEg8KB3VzZXJfaWQYAiABKAUS",
-          "FAoMYmVhdXRpZnVsX2lkGAMgASgFEg8KB2FjY291bnQYBCABKAkSEAoIbmlj",
-          "a25hbWUYBSABKAkSDgoGYXZhdGFyGAYgASgJEhYKDmZpcnN0X3JlY2hhcmdl",
-          "GAcgASgIEhEKCXVzZXJfdHlwZRgIIAEoBRIQCghpc19kcmFpbhgJIAEoCBIM",
-          "CgRjb2luGAogASgEEhEKCXBob25lX251bRgLIAEoCRIRCgl2aXBfbGV2ZWwY",
-          "DCABKAUSFAoMYXZhdGFyX2ZyYW1lGA0gASgFEhMKC2ludml0ZV9jb2RlGA4g",
-          "ASgJEhUKDWJhbmtfcGFzc3dvcmQYDyABKAkiPwoRTXNnTW9kaWZ5UGFzc3dv",
-          "cmQSFAoMb2xkX3Bhc3N3b3JkGAEgASgJEhQKDG5ld19wYXNzd29yZBgCIAEo",
-          "CSJWCgxNc2dCaW5kUGhvbmUSDAoEY29kZRgBIAEoBRIRCglwaG9uZV9udW0Y",
-          "AiABKAkSEAoIcGFzc3dvcmQYAyABKAkSEwoLaW52aXRlX2NvZGUYBCABKAki",
-          "IwoLTXNnQ29tbW9uS1YSCQoBaxgBIAEoBRIJCgF2GAIgASgFImkKDk1zZ0No",
-          "ZWNrSW5JbmZvEhIKCmNoZWNrX2RheXMYASABKAUSDwoHaXNfb3BlbhgCIAEo",
-          "CBIQCghjYW5fcGljaxgDIAEoCBIgCgpDaGVja0luQ2ZnGAQgAygLMgwuTXNn",
-          "Q29tbW9uS1YiZAoXTXNnVHVybnRhYmxlSGlzdG9yeURhdGESDwoHdXNlcl9p",
-          "ZBgBIAEoBRINCgVzY29yZRgCIAEoBRINCgVhd2FyZBgDIAEoBRIMCgR0eXBl",
-          "GAQgASgFEgwKBHRpbWUYBSABKAkiqwEKEE1zZ1R1cm50YWJsZURhdGESEAoI",
-          "cGxheV9udW0YASABKAUSDQoFc2NvcmUYAiABKAUSEgoKbmVlZF9zY29yZRgD",
-          "IAEoBRISCgpsaW1pdF90dXJuGAQgASgFEiMKDXR1cm50YWJsZV9jZmcYBSAD",
-          "KAsyDC5Nc2dDb21tb25LVhIpCgdoaXN0b3J5GAYgAygLMhguTXNnVHVybnRh",
-          "YmxlSGlzdG9yeURhdGEiKwoMTXNnTWFpbHNJbmZvEhsKBW1haWxzGAEgAygL",
-          "MgwuTXNnTWFpbERhdGEirAEKC01zZ01haWxEYXRhEg8KB21haWxfaWQYASAB",
-          "KAUSFAoMc2VuZF91c2VyX2lkGAIgASgFEhEKCXNlbmRfdGltZRgDIAEoBRIN",
-          "CgV0aXRsZRgEIAEoCRIPCgdjb250ZW50GAUgASgJEgwKBGdvbGQYBiABKAMS",
-          "DwoHaXNfcmVhZBgHIAEoCBIQCghpc19jbGFpbRgIIAEoCBISCgp0b191c2Vy",
-          "X2lkGAkgASgFIjYKDE1zZ1NoYXJlRGF0YRITCgtpbnZpdGVfY29kZRgBIAEo",
-          "CRIRCgliaW5kX2xpc3QYAiADKAUiJAoRTXNnQmluZFBhcmVudERhdGESDwoH",
-          "c3RyQ29kZRgBIAEoCSJjChJNc2dJbnZpdGVBd2FyZEluZm8SEQoJaW52aXRl",
-          "TnVtGAEgASgFEhEKCXBpY2tJbmRleBgCIAEoBRInCghhd2FyZENmZxgDIAMo",
-          "CzIVLk1zZ0ludml0ZUF3YXJkQ29uZmlnIjgKFE1zZ0ludml0ZUF3YXJkQ29u",
-          "ZmlnEhEKCWludml0ZU51bRgBIAEoBRINCgVhd2FyZBgCIAEoBSJ3Cg9Nc2dS",
-          "ZWNoYXJnZUluZm8SEQoJaW52aXRlTnVtGAEgASgFEhIKCnRvZGF5QXdhcmQY",
-          "AiABKAMSEgoKdG90YWxBd2FyZBgDIAEoAxIVCg1jYW5QaWNrQW1vdW50GAQg",
-          "ASgDEhIKCmludml0ZUNvZGUYBSABKAkiTAoYTXNnUXVlcnlSZWJhdGVSZWNv",
-          "cmRJbmZvEjAKEXF1ZXJ5UmViYXRlUmVjb3JkGAEgAygLMhUuTXNnUXVlcnlS",
-          "ZWJhdGVSZWNvcmQiVgoUTXNnUXVlcnlSZWJhdGVSZWNvcmQSFgoOcmVjaGFy",
-          "Z2VVc2VySWQYASABKAUSFgoOcmVjaGFyZ2VBbW91bnQYAiABKAUSDgoGcmVi",
-          "YXRlGAMgASgFIlsKEU1zZ0ZvcmdldFBhc3N3b3JkEhMKC2NsaWVudF90eXBl",
-          "GAEgASgFEg0KBXBob25lGAIgASgJEgwKBGNvZGUYAyABKAUSFAoMbmV3X3Bh",
-          "c3N3b3JkGAQgASgJIvYBCgpNc2dWSVBJbmZvEhEKCXZpcF9sZXZlbBgBIAEo",
-          "BRISCgpuZWVkX3Njb3JlGAIgASgDEhUKDXR1cm50YWJsZV9udW0YAyABKAUS",
-          "GAoQdHJ1bXBldF9kaXNjb3VudBgEIAEoBRIWCg5jaGVja19hZGRpdGlvbhgF",
-          "IAEoBRIWCg5zaGFyZV9hZGRpdGlvbhgGIAEoBRISCgp3b3JsZF9jaGF0GAcg",
-          "ASgIEg4KBmF2YXRhchgIIAEoBRIUCgxhdmF0YXJfZnJhbWUYCSABKAUSEgoK",
-          "YXdhcmRfZ29sZBgKIAEoBRISCgpvbmVfdG9fb25lGAsgASgIIi0KDE1zZ1ZJ",
-          "UENvbmZpZxIdCgh2aXBfaW5mbxgBIAMoCzILLk1zZ1ZJUEluZm8iLwoNTXNn",
-          "VXBncmFkZVZJUBIQCghyZXNfY29kZRgBIAEoBRIMCgRnb2xkGAIgASgDIiMK",
-          "EE1zZ0dldEF2YXRhckluZm8SDwoHYXZhdGFycxgBIAMoBSL3AQoNTXNnUGxh",
-          "eWVySW5mbxIPCgd1c2VyX2lkGAEgASgFEhQKDGJlYXV0aWZ1bF9pZBgCIAEo",
-          "BRIQCghuaWNrbmFtZRgDIAEoCRIOCgZhdmF0YXIYBCABKAkSDAoEY29pbhgF",
-          "IAEoBBIRCglwaG9uZV9udW0YBiABKAkSEQoJdmlwX2xldmVsGAcgASgFEhQK",
-          "DGF2YXRhcl9mcmFtZRgIIAEoBRIRCglzaWduYXR1cmUYCSABKAkSEwoLem1k",
-          "X2dhbWVfaWQYCiABKAUSFAoMem1kX3dpbl9nb2xkGAsgASgEEhUKDWJhbmtf",
-          "cGFzc3dvcmQYDCABKAgiMwoNTXNnQWN0aXZlSW5mbxIPCgd1c2VyX2lkGAEg",
-          "ASgFEhEKCWFjdGl2ZV9pZBgCIAEoBSLYAQoNQWN0aXZlSW5mb1JldBIRCglh",
-          "Y3RpdmVfaWQYASABKAUSFQoNc3ViX2FjdGl2ZV9pZBgCIAEoBRIOCgZwYXJh",
-          "bTEYAyABKAUSDgoGcGFyYW0yGAQgASgFEg4KBnBhcmFtMxgFIAEoBRIRCglw",
-          "cm9ncmVzczEYBiABKAUSEQoJcHJvZ3Jlc3MyGAcgASgFEhEKCXByb2dyZXNz",
-          "MxgIIAEoBRIOCgZyZXdhcmQYCSABKAUSEwoLcmV3YXJkX3R5cGUYCiABKAUS",
-          "DwoHaXNfcGljaxgLIAEoCCI2ChJNc2dBY3RpdmVJbmZvU0NSZXQSIAoIdmVj",
-          "X2luZm8YASADKAsyDi5BY3RpdmVJbmZvUmV0IlAKE01zZ0FjdGl2ZUluZm9D",
-          "U1BpY2sSDwoHdXNlcl9pZBgBIAEoBRIRCglhY3RpdmVfaWQYAiABKAUSFQoN",
-          "c3ViX2FjdGl2ZV9pZBgDIAEoBSLrAQoTTXNnQWN0aXZlSW5mb1NDUGljaxIR",
-          "CglhY3RpdmVfaWQYASABKAUSFQoNc3ViX2FjdGl2ZV9pZBgCIAEoBRIOCgZw",
-          "YXJhbTEYAyABKAUSDgoGcGFyYW0yGAQgASgFEg4KBnBhcmFtMxgFIAEoBRIR",
-          "Cglwcm9ncmVzczEYBiABKAUSEQoJcHJvZ3Jlc3MyGAcgASgFEhEKCXByb2dy",
-          "ZXNzMxgIIAEoBRIOCgZyZXdhcmQYCSABKAUSEwoLcmV3YXJkX3R5cGUYCiAB",
-          "KAUSDwoHaXNfcGljaxgLIAEoBRILCgNyZXMYDCABKAgiOAoSTXNnTW9kaWZ5",
-          "U2lnbmF0dXJlEg8KB3VzZXJfaWQYASABKAUSEQoJc2lnbmF0dXJlGAIgASgJ",
-          "IjcKFU1zZ0JhbmtDaGFuZ2VQYXNzd29yZBIQCghwYXNzd29yZBgBIAEoCRIM",
-          "CgRjb2RlGAIgASgFIjQKDk1zZ0JhbmtPcGVyYXRlEgwKBGdvbGQYASABKAMS",
-          "FAoMb3BlcmF0ZV90eXBlGAIgASgFIkkKDk1zZ0JhbmtUYWtlT3V0EhEKCXJl",
-          "dF92YWx1ZRgBIAEoBRIRCgl1c2VyX2dvbGQYAiABKAMSEQoJYmFua19nb2xk",
-          "GAMgASgDIj4KD01zZ0JhbmtUcmFuc2ZlchIUCgxyZWN2X3VzZXJfaWQYASAB",
-          "KAUSFQoNdHJhbnNmZXJfZ29sZBgCIAEoAyKKAQoKTXNnVG9wSW5mbxIPCgdy",
-          "YW5rX2lkGAEgASgFEg8KB3VzZXJfaWQYAiABKAUSDAoEZ29sZBgDIAEoBBIR",
-          "Cgl2aXBfbGV2ZWwYBCABKA0SFAoMYXZhdGFyX2ZyYW1lGAUgASgFEhAKCGhl",
-          "YWRfdXJsGAYgASgJEhEKCW5pY2tfbmFtZRgHIAEoCSJXCgpNc2dHZXRSYW5r",
-          "EhEKCXJhbmtfdHlwZRgBIAEoBRIPCgd1c2VyX2lkGAIgASgFEhQKDGN1cnJl",
-          "bnRfcGFnZRgDIAEoBRIPCgdtYXhfcm93GAQgASgFIosBCg5Nc2dUb3BMaXN0",
-          "UmVzcBIPCgd1c2VyX2lkGAEgASgFEhEKCXJhbmtfdHlwZRgCIAEoBRIWCg50",
-          "aGlzX3JhbmtfbmRleBgDIAEoBRIRCgl0aGlzX2dvbGQYBCABKAUSDgoGaXNf",
-          "ZW5kGAUgASgFEhoKBWxpc3RzGAYgAygLMgsuTXNnVG9wSW5mbyI7ChNNc2dC",
-          "YW5rVHJhbnNmZXJSZXNwEhEKCXJldF92YWx1ZRgBIAEoBRIRCgliYW5rX2dv",
-          "bGQYAiABKAMiZAoNTXNnQmFua1JlY29yZBIXCg9vcGVyYXRlX3VzZXJfaWQY",
-          "ASABKAUSFQoNdHJhbnNmZXJfZ29sZBgCIAEoAxINCgV0aW1lchgDIAEoBRIU",
-          "CgxvcGVyYXRlX3R5cGUYBCABKAUiNAoRTXNnQmFua1JlY29yZFJlc3ASHwoH",
-          "cmVjb3JkcxgBIAMoCzIOLk1zZ0JhbmtSZWNvcmQiMAoMTXNnUGhvbmVDb2Rl",
-          "EhEKCWFyZWFfY29kZRgBIAEoCRINCgVwaG9uZRgCIAEoCWIGcHJvdG8z"));
+          "Y29kZRgNIAEoBSKeAgoSTXNnUGxheWVyTG9naW5SZXNwEhAKCHJlc19jb2Rl",
+          "GAEgASgFEg8KB3VzZXJfaWQYAiABKAUSFAoMYmVhdXRpZnVsX2lkGAMgASgF",
+          "Eg8KB2FjY291bnQYBCABKAkSEAoIbmlja25hbWUYBSABKAkSDgoGYXZhdGFy",
+          "GAYgASgJEhYKDmZpcnN0X3JlY2hhcmdlGAcgASgIEhEKCXVzZXJfdHlwZRgI",
+          "IAEoBRIQCghpc19kcmFpbhgJIAEoCBIMCgRjb2luGAogASgEEhEKCXBob25l",
+          "X251bRgLIAEoCRIRCgl2aXBfbGV2ZWwYDCABKAUSFAoMYXZhdGFyX2ZyYW1l",
+          "GA0gASgFEhUKDWJhbmtfcGFzc3dvcmQYECABKAkiPwoRTXNnTW9kaWZ5UGFz",
+          "c3dvcmQSFAoMb2xkX3Bhc3N3b3JkGAEgASgJEhQKDG5ld19wYXNzd29yZBgC",
+          "IAEoCSJBCgxNc2dCaW5kUGhvbmUSDAoEY29kZRgBIAEoBRIRCglwaG9uZV9u",
+          "dW0YAiABKAkSEAoIcGFzc3dvcmQYAyABKAkiIwoLTXNnQ29tbW9uS1YSCQoB",
+          "axgBIAEoBRIJCgF2GAIgASgFImkKDk1zZ0NoZWNrSW5JbmZvEhIKCmNoZWNr",
+          "X2RheXMYASABKAUSDwoHaXNfb3BlbhgCIAEoCBIQCghjYW5fcGljaxgDIAEo",
+          "CBIgCgpDaGVja0luQ2ZnGAQgAygLMgwuTXNnQ29tbW9uS1YiZAoXTXNnVHVy",
+          "bnRhYmxlSGlzdG9yeURhdGESDwoHdXNlcl9pZBgBIAEoBRINCgVzY29yZRgC",
+          "IAEoBRINCgVhd2FyZBgDIAEoBRIMCgR0eXBlGAQgASgFEgwKBHRpbWUYBSAB",
+          "KAkiqwEKEE1zZ1R1cm50YWJsZURhdGESEAoIcGxheV9udW0YASABKAUSDQoF",
+          "c2NvcmUYAiABKAUSEgoKbmVlZF9zY29yZRgDIAEoBRISCgpsaW1pdF90dXJu",
+          "GAQgASgFEiMKDXR1cm50YWJsZV9jZmcYBSADKAsyDC5Nc2dDb21tb25LVhIp",
+          "CgdoaXN0b3J5GAYgAygLMhguTXNnVHVybnRhYmxlSGlzdG9yeURhdGEiKwoM",
+          "TXNnTWFpbHNJbmZvEhsKBW1haWxzGAEgAygLMgwuTXNnTWFpbERhdGEirAEK",
+          "C01zZ01haWxEYXRhEg8KB21haWxfaWQYASABKAUSFAoMc2VuZF91c2VyX2lk",
+          "GAIgASgFEhEKCXNlbmRfdGltZRgDIAEoBRINCgV0aXRsZRgEIAEoCRIPCgdj",
+          "b250ZW50GAUgASgJEgwKBGdvbGQYBiABKAMSDwoHaXNfcmVhZBgHIAEoCBIQ",
+          "Cghpc19jbGFpbRgIIAEoCBISCgp0b191c2VyX2lkGAkgASgFIjYKDE1zZ1No",
+          "YXJlRGF0YRITCgtpbnZpdGVfY29kZRgBIAEoCRIRCgliaW5kX2xpc3QYAiAD",
+          "KAUiJAoRTXNnQmluZFBhcmVudERhdGESDwoHc3RyQ29kZRgBIAEoCSJjChJN",
+          "c2dJbnZpdGVBd2FyZEluZm8SEQoJaW52aXRlTnVtGAEgASgFEhEKCXBpY2tJ",
+          "bmRleBgCIAEoBRInCghhd2FyZENmZxgDIAMoCzIVLk1zZ0ludml0ZUF3YXJk",
+          "Q29uZmlnIjgKFE1zZ0ludml0ZUF3YXJkQ29uZmlnEhEKCWludml0ZU51bRgB",
+          "IAEoBRINCgVhd2FyZBgCIAEoBSJ3Cg9Nc2dSZWNoYXJnZUluZm8SEQoJaW52",
+          "aXRlTnVtGAEgASgFEhIKCnRvZGF5QXdhcmQYAiABKAMSEgoKdG90YWxBd2Fy",
+          "ZBgDIAEoAxIVCg1jYW5QaWNrQW1vdW50GAQgASgDEhIKCmludml0ZUNvZGUY",
+          "BSABKAkiTAoYTXNnUXVlcnlSZWJhdGVSZWNvcmRJbmZvEjAKEXF1ZXJ5UmVi",
+          "YXRlUmVjb3JkGAEgAygLMhUuTXNnUXVlcnlSZWJhdGVSZWNvcmQiVgoUTXNn",
+          "UXVlcnlSZWJhdGVSZWNvcmQSFgoOcmVjaGFyZ2VVc2VySWQYASABKAUSFgoO",
+          "cmVjaGFyZ2VBbW91bnQYAiABKAUSDgoGcmViYXRlGAMgASgFIlsKEU1zZ0Zv",
+          "cmdldFBhc3N3b3JkEhMKC2NsaWVudF90eXBlGAEgASgFEg0KBXBob25lGAIg",
+          "ASgJEgwKBGNvZGUYAyABKAUSFAoMbmV3X3Bhc3N3b3JkGAQgASgJIvYBCgpN",
+          "c2dWSVBJbmZvEhEKCXZpcF9sZXZlbBgBIAEoBRISCgpuZWVkX3Njb3JlGAIg",
+          "ASgDEhUKDXR1cm50YWJsZV9udW0YAyABKAUSGAoQdHJ1bXBldF9kaXNjb3Vu",
+          "dBgEIAEoBRIWCg5jaGVja19hZGRpdGlvbhgFIAEoBRIWCg5zaGFyZV9hZGRp",
+          "dGlvbhgGIAEoBRISCgp3b3JsZF9jaGF0GAcgASgIEg4KBmF2YXRhchgIIAEo",
+          "BRIUCgxhdmF0YXJfZnJhbWUYCSABKAUSEgoKYXdhcmRfZ29sZBgKIAEoBRIS",
+          "CgpvbmVfdG9fb25lGAsgASgIIi0KDE1zZ1ZJUENvbmZpZxIdCgh2aXBfaW5m",
+          "bxgBIAMoCzILLk1zZ1ZJUEluZm8iLwoNTXNnVXBncmFkZVZJUBIQCghyZXNf",
+          "Y29kZRgBIAEoBRIMCgRnb2xkGAIgASgDIiMKEE1zZ0dldEF2YXRhckluZm8S",
+          "DwoHYXZhdGFycxgBIAMoBSL3AQoNTXNnUGxheWVySW5mbxIPCgd1c2VyX2lk",
+          "GAEgASgFEhQKDGJlYXV0aWZ1bF9pZBgCIAEoBRIQCghuaWNrbmFtZRgDIAEo",
+          "CRIOCgZhdmF0YXIYBCABKAkSDAoEY29pbhgFIAEoBBIRCglwaG9uZV9udW0Y",
+          "BiABKAkSEQoJdmlwX2xldmVsGAcgASgFEhQKDGF2YXRhcl9mcmFtZRgIIAEo",
+          "BRIRCglzaWduYXR1cmUYCSABKAkSEwoLem1kX2dhbWVfaWQYCiABKAUSFAoM",
+          "em1kX3dpbl9nb2xkGAsgASgEEhUKDWJhbmtfcGFzc3dvcmQYDCABKAgiMwoN",
+          "TXNnQWN0aXZlSW5mbxIPCgd1c2VyX2lkGAEgASgFEhEKCWFjdGl2ZV9pZBgC",
+          "IAEoBSLYAQoNQWN0aXZlSW5mb1JldBIRCglhY3RpdmVfaWQYASABKAUSFQoN",
+          "c3ViX2FjdGl2ZV9pZBgCIAEoBRIOCgZwYXJhbTEYAyABKAUSDgoGcGFyYW0y",
+          "GAQgASgFEg4KBnBhcmFtMxgFIAEoBRIRCglwcm9ncmVzczEYBiABKAUSEQoJ",
+          "cHJvZ3Jlc3MyGAcgASgFEhEKCXByb2dyZXNzMxgIIAEoBRIOCgZyZXdhcmQY",
+          "CSABKAUSEwoLcmV3YXJkX3R5cGUYCiABKAUSDwoHaXNfcGljaxgLIAEoCCI2",
+          "ChJNc2dBY3RpdmVJbmZvU0NSZXQSIAoIdmVjX2luZm8YASADKAsyDi5BY3Rp",
+          "dmVJbmZvUmV0IlAKE01zZ0FjdGl2ZUluZm9DU1BpY2sSDwoHdXNlcl9pZBgB",
+          "IAEoBRIRCglhY3RpdmVfaWQYAiABKAUSFQoNc3ViX2FjdGl2ZV9pZBgDIAEo",
+          "BSLrAQoTTXNnQWN0aXZlSW5mb1NDUGljaxIRCglhY3RpdmVfaWQYASABKAUS",
+          "FQoNc3ViX2FjdGl2ZV9pZBgCIAEoBRIOCgZwYXJhbTEYAyABKAUSDgoGcGFy",
+          "YW0yGAQgASgFEg4KBnBhcmFtMxgFIAEoBRIRCglwcm9ncmVzczEYBiABKAUS",
+          "EQoJcHJvZ3Jlc3MyGAcgASgFEhEKCXByb2dyZXNzMxgIIAEoBRIOCgZyZXdh",
+          "cmQYCSABKAUSEwoLcmV3YXJkX3R5cGUYCiABKAUSDwoHaXNfcGljaxgLIAEo",
+          "BRILCgNyZXMYDCABKAgiOAoSTXNnTW9kaWZ5U2lnbmF0dXJlEg8KB3VzZXJf",
+          "aWQYASABKAUSEQoJc2lnbmF0dXJlGAIgASgJIjcKFU1zZ0JhbmtDaGFuZ2VQ",
+          "YXNzd29yZBIQCghwYXNzd29yZBgBIAEoCRIMCgRjb2RlGAIgASgFIjQKDk1z",
+          "Z0JhbmtPcGVyYXRlEgwKBGdvbGQYASABKAMSFAoMb3BlcmF0ZV90eXBlGAIg",
+          "ASgFIkkKDk1zZ0JhbmtUYWtlT3V0EhEKCXJldF92YWx1ZRgBIAEoBRIRCgl1",
+          "c2VyX2dvbGQYAiABKAMSEQoJYmFua19nb2xkGAMgASgDIj4KD01zZ0JhbmtU",
+          "cmFuc2ZlchIUCgxyZWN2X3VzZXJfaWQYASABKAUSFQoNdHJhbnNmZXJfZ29s",
+          "ZBgCIAEoAyKKAQoKTXNnVG9wSW5mbxIPCgdyYW5rX2lkGAEgASgFEg8KB3Vz",
+          "ZXJfaWQYAiABKAUSDAoEZ29sZBgDIAEoBBIRCgl2aXBfbGV2ZWwYBCABKA0S",
+          "FAoMYXZhdGFyX2ZyYW1lGAUgASgFEhAKCGhlYWRfdXJsGAYgASgJEhEKCW5p",
+          "Y2tfbmFtZRgHIAEoCSJXCgpNc2dHZXRSYW5rEhEKCXJhbmtfdHlwZRgBIAEo",
+          "BRIPCgd1c2VyX2lkGAIgASgFEhQKDGN1cnJlbnRfcGFnZRgDIAEoBRIPCgdt",
+          "YXhfcm93GAQgASgFIosBCg5Nc2dUb3BMaXN0UmVzcBIPCgd1c2VyX2lkGAEg",
+          "ASgFEhEKCXJhbmtfdHlwZRgCIAEoBRIWCg50aGlzX3JhbmtfbmRleBgDIAEo",
+          "BRIRCgl0aGlzX2dvbGQYBCABKAUSDgoGaXNfZW5kGAUgASgFEhoKBWxpc3Rz",
+          "GAYgAygLMgsuTXNnVG9wSW5mbyI7ChNNc2dCYW5rVHJhbnNmZXJSZXNwEhEK",
+          "CXJldF92YWx1ZRgBIAEoBRIRCgliYW5rX2dvbGQYAiABKAMiZAoNTXNnQmFu",
+          "a1JlY29yZBIXCg9vcGVyYXRlX3VzZXJfaWQYASABKAUSFQoNdHJhbnNmZXJf",
+          "Z29sZBgCIAEoAxINCgV0aW1lchgDIAEoBRIUCgxvcGVyYXRlX3R5cGUYBCAB",
+          "KAUiNAoRTXNnQmFua1JlY29yZFJlc3ASHwoHcmVjb3JkcxgBIAMoCzIOLk1z",
+          "Z0JhbmtSZWNvcmQiMAoMTXNnUGhvbmVDb2RlEhEKCWFyZWFfY29kZRgBIAEo",
+          "CRINCgVwaG9uZRgCIAEoCWIGcHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPlayerLogin), global::MsgPlayerLogin.Parser, new[]{ "Account", "Password", "PlatformId", "ChannelId", "ClientType", "LoginType", "MachineNum", "UserIp", "IsDrain", "Avatar", "Nickname", "Phone", "Code", "InviteCode" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPlayerLoginResp), global::MsgPlayerLoginResp.Parser, new[]{ "ResCode", "UserId", "BeautifulId", "Account", "Nickname", "Avatar", "FirstRecharge", "UserType", "IsDrain", "Coin", "PhoneNum", "VipLevel", "AvatarFrame", "InviteCode", "BankPassword" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPlayerLogin), global::MsgPlayerLogin.Parser, new[]{ "Account", "Password", "PlatformId", "ChannelId", "ClientType", "LoginType", "MachineNum", "UserIp", "IsDrain", "Avatar", "Nickname", "Phone", "Code" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPlayerLoginResp), global::MsgPlayerLoginResp.Parser, new[]{ "ResCode", "UserId", "BeautifulId", "Account", "Nickname", "Avatar", "FirstRecharge", "UserType", "IsDrain", "Coin", "PhoneNum", "VipLevel", "AvatarFrame", "BankPassword" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgModifyPassword), global::MsgModifyPassword.Parser, new[]{ "OldPassword", "NewPassword" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBindPhone), global::MsgBindPhone.Parser, new[]{ "Code", "PhoneNum", "Password", "InviteCode" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBindPhone), global::MsgBindPhone.Parser, new[]{ "Code", "PhoneNum", "Password" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgCommonKV), global::MsgCommonKV.Parser, new[]{ "K", "V" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgCheckInInfo), global::MsgCheckInInfo.Parser, new[]{ "CheckDays", "IsOpen", "CanPick", "CheckInCfg" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurntableHistoryData), global::MsgTurntableHistoryData.Parser, new[]{ "UserId", "Score", "Award", "Type", "Time" }, null, null, null, null),
@@ -211,7 +210,6 @@ public sealed partial class MsgPlayerLogin : pb::IMessage<MsgPlayerLogin>
     nickname_ = other.nickname_;
     phone_ = other.phone_;
     code_ = other.code_;
-    inviteCode_ = other.inviteCode_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -402,20 +400,6 @@ public sealed partial class MsgPlayerLogin : pb::IMessage<MsgPlayerLogin>
     }
   }
 
-  /// <summary>Field number for the "invite_code" field.</summary>
-  public const int InviteCodeFieldNumber = 14;
-  private string inviteCode_ = "";
-  /// <summary>
-  ///邀请码
-  /// </summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public string InviteCode {
-    get { return inviteCode_; }
-    set {
-      inviteCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-    }
-  }
-
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as MsgPlayerLogin);
@@ -442,7 +426,6 @@ public sealed partial class MsgPlayerLogin : pb::IMessage<MsgPlayerLogin>
     if (Nickname != other.Nickname) return false;
     if (Phone != other.Phone) return false;
     if (Code != other.Code) return false;
-    if (InviteCode != other.InviteCode) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -462,7 +445,6 @@ public sealed partial class MsgPlayerLogin : pb::IMessage<MsgPlayerLogin>
     if (Nickname.Length != 0) hash ^= Nickname.GetHashCode();
     if (Phone.Length != 0) hash ^= Phone.GetHashCode();
     if (Code != 0) hash ^= Code.GetHashCode();
-    if (InviteCode.Length != 0) hash ^= InviteCode.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -531,10 +513,6 @@ public sealed partial class MsgPlayerLogin : pb::IMessage<MsgPlayerLogin>
       output.WriteRawTag(104);
       output.WriteInt32(Code);
     }
-    if (InviteCode.Length != 0) {
-      output.WriteRawTag(114);
-      output.WriteString(InviteCode);
-    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -596,10 +574,6 @@ public sealed partial class MsgPlayerLogin : pb::IMessage<MsgPlayerLogin>
       output.WriteRawTag(104);
       output.WriteInt32(Code);
     }
-    if (InviteCode.Length != 0) {
-      output.WriteRawTag(114);
-      output.WriteString(InviteCode);
-    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -647,9 +621,6 @@ public sealed partial class MsgPlayerLogin : pb::IMessage<MsgPlayerLogin>
     }
     if (Code != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(Code);
-    }
-    if (InviteCode.Length != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeStringSize(InviteCode);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -700,9 +671,6 @@ public sealed partial class MsgPlayerLogin : pb::IMessage<MsgPlayerLogin>
     }
     if (other.Code != 0) {
       Code = other.Code;
-    }
-    if (other.InviteCode.Length != 0) {
-      InviteCode = other.InviteCode;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -768,10 +736,6 @@ public sealed partial class MsgPlayerLogin : pb::IMessage<MsgPlayerLogin>
         }
         case 104: {
           Code = input.ReadInt32();
-          break;
-        }
-        case 114: {
-          InviteCode = input.ReadString();
           break;
         }
       }
@@ -840,10 +804,6 @@ public sealed partial class MsgPlayerLogin : pb::IMessage<MsgPlayerLogin>
           Code = input.ReadInt32();
           break;
         }
-        case 114: {
-          InviteCode = input.ReadString();
-          break;
-        }
       }
     }
   }
@@ -896,7 +856,6 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
     phoneNum_ = other.phoneNum_;
     vipLevel_ = other.vipLevel_;
     avatarFrame_ = other.avatarFrame_;
-    inviteCode_ = other.inviteCode_;
     bankPassword_ = other.bankPassword_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
@@ -1088,22 +1047,8 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
     }
   }
 
-  /// <summary>Field number for the "invite_code" field.</summary>
-  public const int InviteCodeFieldNumber = 14;
-  private string inviteCode_ = "";
-  /// <summary>
-  ///邀请码
-  /// </summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public string InviteCode {
-    get { return inviteCode_; }
-    set {
-      inviteCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-    }
-  }
-
   /// <summary>Field number for the "bank_password" field.</summary>
-  public const int BankPasswordFieldNumber = 15;
+  public const int BankPasswordFieldNumber = 16;
   private string bankPassword_ = "";
   /// <summary>
   ///银行密码
@@ -1142,7 +1087,6 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
     if (PhoneNum != other.PhoneNum) return false;
     if (VipLevel != other.VipLevel) return false;
     if (AvatarFrame != other.AvatarFrame) return false;
-    if (InviteCode != other.InviteCode) return false;
     if (BankPassword != other.BankPassword) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
@@ -1163,7 +1107,6 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
     if (PhoneNum.Length != 0) hash ^= PhoneNum.GetHashCode();
     if (VipLevel != 0) hash ^= VipLevel.GetHashCode();
     if (AvatarFrame != 0) hash ^= AvatarFrame.GetHashCode();
-    if (InviteCode.Length != 0) hash ^= InviteCode.GetHashCode();
     if (BankPassword.Length != 0) hash ^= BankPassword.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
@@ -1233,12 +1176,8 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
       output.WriteRawTag(104);
       output.WriteInt32(AvatarFrame);
     }
-    if (InviteCode.Length != 0) {
-      output.WriteRawTag(114);
-      output.WriteString(InviteCode);
-    }
     if (BankPassword.Length != 0) {
-      output.WriteRawTag(122);
+      output.WriteRawTag(130, 1);
       output.WriteString(BankPassword);
     }
     if (_unknownFields != null) {
@@ -1302,12 +1241,8 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
       output.WriteRawTag(104);
       output.WriteInt32(AvatarFrame);
     }
-    if (InviteCode.Length != 0) {
-      output.WriteRawTag(114);
-      output.WriteString(InviteCode);
-    }
     if (BankPassword.Length != 0) {
-      output.WriteRawTag(122);
+      output.WriteRawTag(130, 1);
       output.WriteString(BankPassword);
     }
     if (_unknownFields != null) {
@@ -1358,11 +1293,8 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
     if (AvatarFrame != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(AvatarFrame);
     }
-    if (InviteCode.Length != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeStringSize(InviteCode);
-    }
     if (BankPassword.Length != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeStringSize(BankPassword);
+      size += 2 + pb::CodedOutputStream.ComputeStringSize(BankPassword);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -1413,9 +1345,6 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
     }
     if (other.AvatarFrame != 0) {
       AvatarFrame = other.AvatarFrame;
-    }
-    if (other.InviteCode.Length != 0) {
-      InviteCode = other.InviteCode;
     }
     if (other.BankPassword.Length != 0) {
       BankPassword = other.BankPassword;
@@ -1486,11 +1415,7 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
           AvatarFrame = input.ReadInt32();
           break;
         }
-        case 114: {
-          InviteCode = input.ReadString();
-          break;
-        }
-        case 122: {
+        case 130: {
           BankPassword = input.ReadString();
           break;
         }
@@ -1560,11 +1485,7 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
           AvatarFrame = input.ReadInt32();
           break;
         }
-        case 114: {
-          InviteCode = input.ReadString();
-          break;
-        }
-        case 122: {
+        case 130: {
           BankPassword = input.ReadString();
           break;
         }
@@ -1827,7 +1748,6 @@ public sealed partial class MsgBindPhone : pb::IMessage<MsgBindPhone>
     code_ = other.code_;
     phoneNum_ = other.phoneNum_;
     password_ = other.password_;
-    inviteCode_ = other.inviteCode_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -1878,20 +1798,6 @@ public sealed partial class MsgBindPhone : pb::IMessage<MsgBindPhone>
     }
   }
 
-  /// <summary>Field number for the "invite_code" field.</summary>
-  public const int InviteCodeFieldNumber = 4;
-  private string inviteCode_ = "";
-  /// <summary>
-  ///邀请码
-  /// </summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public string InviteCode {
-    get { return inviteCode_; }
-    set {
-      inviteCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-    }
-  }
-
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as MsgBindPhone);
@@ -1908,7 +1814,6 @@ public sealed partial class MsgBindPhone : pb::IMessage<MsgBindPhone>
     if (Code != other.Code) return false;
     if (PhoneNum != other.PhoneNum) return false;
     if (Password != other.Password) return false;
-    if (InviteCode != other.InviteCode) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -1918,7 +1823,6 @@ public sealed partial class MsgBindPhone : pb::IMessage<MsgBindPhone>
     if (Code != 0) hash ^= Code.GetHashCode();
     if (PhoneNum.Length != 0) hash ^= PhoneNum.GetHashCode();
     if (Password.Length != 0) hash ^= Password.GetHashCode();
-    if (InviteCode.Length != 0) hash ^= InviteCode.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -1947,10 +1851,6 @@ public sealed partial class MsgBindPhone : pb::IMessage<MsgBindPhone>
       output.WriteRawTag(26);
       output.WriteString(Password);
     }
-    if (InviteCode.Length != 0) {
-      output.WriteRawTag(34);
-      output.WriteString(InviteCode);
-    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -1972,10 +1872,6 @@ public sealed partial class MsgBindPhone : pb::IMessage<MsgBindPhone>
       output.WriteRawTag(26);
       output.WriteString(Password);
     }
-    if (InviteCode.Length != 0) {
-      output.WriteRawTag(34);
-      output.WriteString(InviteCode);
-    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -1993,9 +1889,6 @@ public sealed partial class MsgBindPhone : pb::IMessage<MsgBindPhone>
     }
     if (Password.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(Password);
-    }
-    if (InviteCode.Length != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeStringSize(InviteCode);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -2016,9 +1909,6 @@ public sealed partial class MsgBindPhone : pb::IMessage<MsgBindPhone>
     }
     if (other.Password.Length != 0) {
       Password = other.Password;
-    }
-    if (other.InviteCode.Length != 0) {
-      InviteCode = other.InviteCode;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -2046,10 +1936,6 @@ public sealed partial class MsgBindPhone : pb::IMessage<MsgBindPhone>
           Password = input.ReadString();
           break;
         }
-        case 34: {
-          InviteCode = input.ReadString();
-          break;
-        }
       }
     }
   #endif
@@ -2074,10 +1960,6 @@ public sealed partial class MsgBindPhone : pb::IMessage<MsgBindPhone>
         }
         case 26: {
           Password = input.ReadString();
-          break;
-        }
-        case 34: {
-          InviteCode = input.ReadString();
           break;
         }
       }
