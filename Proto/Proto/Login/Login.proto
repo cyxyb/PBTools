@@ -34,6 +34,7 @@ message MsgPlayerLoginResp
 	string		phone_num		= 11;	//手机号
 	int32		vip_level		= 12;	//VIP等级
 	int32		avatar_frame	= 13;	//头像框
+	string      signature		= 14;	//个性签名
 	string      bank_password	= 16;	//银行密码
 }
 

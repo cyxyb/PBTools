@@ -168,6 +168,7 @@ message MsgLoginPlayerInfo
 	int32		channel_id		= 15;	//渠道ID
 	string      bank_password	= 16;	//银行密码
 	uint64		bank_gold		= 17;	//银行金币
+	string      signature		= 18;	//个性签名
 }
 
 //游戏服务器玩家信息
