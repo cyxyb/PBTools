@@ -3218,6 +3218,7 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
     kPasswordFieldNumber = 12,
     kBankPasswordFieldNumber = 16,
     kInviteCodeFieldNumber = 18,
+    kSignatureFieldNumber = 19,
     kResCodeFieldNumber = 1,
     kUserIdFieldNumber = 2,
     kBeautifulIdFieldNumber = 3,
@@ -3342,6 +3343,22 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
   std::string* _internal_mutable_invite_code();
   public:
 
+  // string signature = 19;
+  void clear_signature();
+  const std::string& signature() const;
+  void set_signature(const std::string& value);
+  void set_signature(std::string&& value);
+  void set_signature(const char* value);
+  void set_signature(const char* value, size_t size);
+  std::string* mutable_signature();
+  std::string* release_signature();
+  void set_allocated_signature(std::string* signature);
+  private:
+  const std::string& _internal_signature() const;
+  void _internal_set_signature(const std::string& value);
+  std::string* _internal_mutable_signature();
+  public:
+
   // int32 res_code = 1;
   void clear_res_code();
   ::PROTOBUF_NAMESPACE_ID::int32 res_code() const;
@@ -3455,6 +3472,7 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr password_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr bank_password_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr invite_code_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr signature_;
   ::PROTOBUF_NAMESPACE_ID::int32 res_code_;
   ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 beautiful_id_;
@@ -9845,6 +9863,67 @@ inline void MsgLoginPlayerInfo::set_allocated_invite_code(std::string* invite_co
   invite_code_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), invite_code,
       GetArena());
   // @@protoc_insertion_point(field_set_allocated:MsgLoginPlayerInfo.invite_code)
+}
+
+// string signature = 19;
+inline void MsgLoginPlayerInfo::clear_signature() {
+  signature_.ClearToEmpty();
+}
+inline const std::string& MsgLoginPlayerInfo::signature() const {
+  // @@protoc_insertion_point(field_get:MsgLoginPlayerInfo.signature)
+  return _internal_signature();
+}
+inline void MsgLoginPlayerInfo::set_signature(const std::string& value) {
+  _internal_set_signature(value);
+  // @@protoc_insertion_point(field_set:MsgLoginPlayerInfo.signature)
+}
+inline std::string* MsgLoginPlayerInfo::mutable_signature() {
+  // @@protoc_insertion_point(field_mutable:MsgLoginPlayerInfo.signature)
+  return _internal_mutable_signature();
+}
+inline const std::string& MsgLoginPlayerInfo::_internal_signature() const {
+  return signature_.Get();
+}
+inline void MsgLoginPlayerInfo::_internal_set_signature(const std::string& value) {
+  
+  signature_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgLoginPlayerInfo::set_signature(std::string&& value) {
+  
+  signature_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgLoginPlayerInfo.signature)
+}
+inline void MsgLoginPlayerInfo::set_signature(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  signature_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgLoginPlayerInfo.signature)
+}
+inline void MsgLoginPlayerInfo::set_signature(const char* value,
+    size_t size) {
+  
+  signature_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgLoginPlayerInfo.signature)
+}
+inline std::string* MsgLoginPlayerInfo::_internal_mutable_signature() {
+  
+  return signature_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgLoginPlayerInfo::release_signature() {
+  // @@protoc_insertion_point(field_release:MsgLoginPlayerInfo.signature)
+  return signature_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgLoginPlayerInfo::set_allocated_signature(std::string* signature) {
+  if (signature != nullptr) {
+    
+  } else {
+    
+  }
+  signature_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), signature,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgLoginPlayerInfo.signature)
 }
 
 // -------------------------------------------------------------------
