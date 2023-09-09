@@ -41,7 +41,7 @@ enum EMsgIDLogin
 	MsgIDSign_PlayerCheckInResp					= 27;		//玩家签到返回(MsgCommonN32)
 	MsgIDTurntable_QueryData					= 28;		//查询转盘数据(MsgCommonBool)
 	MsgIDTurntable_QueryDataResp				= 29;		//查询转盘数据返回(MsgTurntableData)
-	MsgIDTurntable_PlayTurntable				= 30;		//转动转盘(MsgCommonBool)
+	MsgIDTurntable_PlayTurntable				= 30;		//转动转盘(MsgTurntableResp)
 	MsgIDTurntable_PlayTurntableResp			= 31;		//转动转盘返回(MsgCommonN32)
 	MsgIDMail_SyncMailList						= 32;		//同步邮件列表(MsgCommonBool)
 	MsgIDMail_SyncMailListResp					= 33;		//同步邮件列表返回(MsgMailsInfo)

@@ -255,7 +255,7 @@ public enum EMsgIDLogin {
   /// </summary>
   [pbr::OriginalName("MsgIDTurntable_QueryDataResp")] MsgIdturntableQueryDataResp = 29,
   /// <summary>
-  ///转动转盘(MsgCommonBool)
+  ///转动转盘(MsgTurntableResp)
   /// </summary>
   [pbr::OriginalName("MsgIDTurntable_PlayTurntable")] MsgIdturntablePlayTurntable = 30,
   /// <summary>
