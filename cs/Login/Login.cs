@@ -120,7 +120,7 @@ public static partial class LoginReflection {
           "byI7ChNNc2dCYW5rVHJhbnNmZXJSZXNwEhEKCXJldF92YWx1ZRgBIAEoBRIR",
           "CgliYW5rX2dvbGQYAiABKAMiZAoNTXNnQmFua1JlY29yZBIXCg9vcGVyYXRl",
           "X3VzZXJfaWQYASABKAUSFQoNdHJhbnNmZXJfZ29sZBgCIAEoAxINCgV0aW1l",
-          "chgDIAEoBRIUCgxvcGVyYXRlX3R5cGUYBCABKAUiNAoRTXNnQmFua1JlY29y",
+          "chgDIAEoCRIUCgxvcGVyYXRlX3R5cGUYBCABKAUiNAoRTXNnQmFua1JlY29y",
           "ZFJlc3ASHwoHcmVjb3JkcxgBIAMoCzIOLk1zZ0JhbmtSZWNvcmQiMAoMTXNn",
           "UGhvbmVDb2RlEhEKCWFyZWFfY29kZRgBIAEoCRINCgVwaG9uZRgCIAEoCWIG",
           "cHJvdG8z"));
@@ -12524,15 +12524,15 @@ public sealed partial class MsgBankRecord : pb::IMessage<MsgBankRecord>
 
   /// <summary>Field number for the "timer" field.</summary>
   public const int TimerFieldNumber = 3;
-  private int timer_;
+  private string timer_ = "";
   /// <summary>
   ///时间戳
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public int Timer {
+  public string Timer {
     get { return timer_; }
     set {
-      timer_ = value;
+      timer_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
     }
   }
 
@@ -12575,7 +12575,7 @@ public sealed partial class MsgBankRecord : pb::IMessage<MsgBankRecord>
     int hash = 1;
     if (OperateUserId != 0) hash ^= OperateUserId.GetHashCode();
     if (TransferGold != 0L) hash ^= TransferGold.GetHashCode();
-    if (Timer != 0) hash ^= Timer.GetHashCode();
+    if (Timer.Length != 0) hash ^= Timer.GetHashCode();
     if (OperateType != 0) hash ^= OperateType.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
@@ -12601,9 +12601,9 @@ public sealed partial class MsgBankRecord : pb::IMessage<MsgBankRecord>
       output.WriteRawTag(16);
       output.WriteInt64(TransferGold);
     }
-    if (Timer != 0) {
-      output.WriteRawTag(24);
-      output.WriteInt32(Timer);
+    if (Timer.Length != 0) {
+      output.WriteRawTag(26);
+      output.WriteString(Timer);
     }
     if (OperateType != 0) {
       output.WriteRawTag(32);
@@ -12626,9 +12626,9 @@ public sealed partial class MsgBankRecord : pb::IMessage<MsgBankRecord>
       output.WriteRawTag(16);
       output.WriteInt64(TransferGold);
     }
-    if (Timer != 0) {
-      output.WriteRawTag(24);
-      output.WriteInt32(Timer);
+    if (Timer.Length != 0) {
+      output.WriteRawTag(26);
+      output.WriteString(Timer);
     }
     if (OperateType != 0) {
       output.WriteRawTag(32);
@@ -12649,8 +12649,8 @@ public sealed partial class MsgBankRecord : pb::IMessage<MsgBankRecord>
     if (TransferGold != 0L) {
       size += 1 + pb::CodedOutputStream.ComputeInt64Size(TransferGold);
     }
-    if (Timer != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Timer);
+    if (Timer.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Timer);
     }
     if (OperateType != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(OperateType);
@@ -12672,7 +12672,7 @@ public sealed partial class MsgBankRecord : pb::IMessage<MsgBankRecord>
     if (other.TransferGold != 0L) {
       TransferGold = other.TransferGold;
     }
-    if (other.Timer != 0) {
+    if (other.Timer.Length != 0) {
       Timer = other.Timer;
     }
     if (other.OperateType != 0) {
@@ -12700,8 +12700,8 @@ public sealed partial class MsgBankRecord : pb::IMessage<MsgBankRecord>
           TransferGold = input.ReadInt64();
           break;
         }
-        case 24: {
-          Timer = input.ReadInt32();
+        case 26: {
+          Timer = input.ReadString();
           break;
         }
         case 32: {
@@ -12730,8 +12730,8 @@ public sealed partial class MsgBankRecord : pb::IMessage<MsgBankRecord>
           TransferGold = input.ReadInt64();
           break;
         }
-        case 24: {
-          Timer = input.ReadInt32();
+        case 26: {
+          Timer = input.ReadString();
           break;
         }
         case 32: {

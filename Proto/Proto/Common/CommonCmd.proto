@@ -132,7 +132,11 @@ enum EMsgIDGame
 enum EMsgIDChat
 {
 	MsgIDChat_Null						= 0;
-	//ID从1001开始
+	//ID从2001开始
 	MsgIDChat_Login						= 2001;		//玩家登录(MsgChatLogin)
 	MsgIDChat_LoginResp					= 2002;		//玩家登录返回(MsgChatLoginResp)
+	MsgIDChat_Logout					= 2003;		//玩家下线(MsgCommonBool)
+	MsgIDChat_LogoutResp				= 2004;		//玩家下线返回(MsgCommonN32)
+	MsgIDChat_SendMsg					= 2005;		//发送消息(MsgChatMsg)
+	MsgIDChat_NotifyChatMsgResp			= 2006;		//发送消息返回(MsgNotifyChatMsg)
 }

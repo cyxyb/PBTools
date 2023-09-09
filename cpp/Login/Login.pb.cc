@@ -1354,7 +1354,7 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "ferResp\022\021\n\tret_value\030\001 \001(\005\022\021\n\tbank_gold\030"
   "\002 \001(\003\"d\n\rMsgBankRecord\022\027\n\017operate_user_i"
   "d\030\001 \001(\005\022\025\n\rtransfer_gold\030\002 \001(\003\022\r\n\005timer\030"
-  "\003 \001(\005\022\024\n\014operate_type\030\004 \001(\005\"4\n\021MsgBankRe"
+  "\003 \001(\t\022\024\n\014operate_type\030\004 \001(\005\"4\n\021MsgBankRe"
   "cordResp\022\037\n\007records\030\001 \003(\0132\016.MsgBankRecor"
   "d\"0\n\014MsgPhoneCode\022\021\n\tarea_code\030\001 \001(\t\022\r\n\005"
   "phone\030\002 \001(\tb\006proto3"
@@ -13255,6 +13255,11 @@ MsgBankRecord::MsgBankRecord(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 MsgBankRecord::MsgBankRecord(const MsgBankRecord& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  timer_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from._internal_timer().empty()) {
+    timer_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_timer(), 
+      GetArena());
+  }
   ::memcpy(&transfer_gold_, &from.transfer_gold_,
     static_cast<size_t>(reinterpret_cast<char*>(&operate_type_) -
     reinterpret_cast<char*>(&transfer_gold_)) + sizeof(operate_type_));
@@ -13262,6 +13267,8 @@ MsgBankRecord::MsgBankRecord(const MsgBankRecord& from)
 }
 
 void MsgBankRecord::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgBankRecord_Login_2eproto.base);
+  timer_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&transfer_gold_) - reinterpret_cast<char*>(this)),
       0, static_cast<size_t>(reinterpret_cast<char*>(&operate_type_) -
@@ -13276,6 +13283,7 @@ MsgBankRecord::~MsgBankRecord() {
 
 void MsgBankRecord::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
+  timer_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
 void MsgBankRecord::ArenaDtor(void* object) {
@@ -13299,6 +13307,7 @@ void MsgBankRecord::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  timer_.ClearToEmpty();
   ::memset(&transfer_gold_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&operate_type_) -
       reinterpret_cast<char*>(&transfer_gold_)) + sizeof(operate_type_));
@@ -13326,10 +13335,12 @@ const char* MsgBankRecord::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 timer = 3;
+      // string timer = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          timer_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+          auto str = _internal_mutable_timer();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgBankRecord.timer"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -13380,10 +13391,14 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_transfer_gold(), target);
   }
 
-  // int32 timer = 3;
-  if (this->timer() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_timer(), target);
+  // string timer = 3;
+  if (this->timer().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_timer().data(), static_cast<int>(this->_internal_timer().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "MsgBankRecord.timer");
+    target = stream->WriteStringMaybeAliased(
+        3, this->_internal_timer(), target);
   }
 
   // int32 operate_type = 4;
@@ -13408,6 +13423,13 @@ size_t MsgBankRecord::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  // string timer = 3;
+  if (this->timer().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_timer());
+  }
+
   // int64 transfer_gold = 2;
   if (this->transfer_gold() != 0) {
     total_size += 1 +
@@ -13420,13 +13442,6 @@ size_t MsgBankRecord::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_operate_user_id());
-  }
-
-  // int32 timer = 3;
-  if (this->timer() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_timer());
   }
 
   // int32 operate_type = 4;
@@ -13467,14 +13482,14 @@ void MsgBankRecord::MergeFrom(const MsgBankRecord& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  if (from.timer().size() > 0) {
+    _internal_set_timer(from._internal_timer());
+  }
   if (from.transfer_gold() != 0) {
     _internal_set_transfer_gold(from._internal_transfer_gold());
   }
   if (from.operate_user_id() != 0) {
     _internal_set_operate_user_id(from._internal_operate_user_id());
-  }
-  if (from.timer() != 0) {
-    _internal_set_timer(from._internal_timer());
   }
   if (from.operate_type() != 0) {
     _internal_set_operate_type(from._internal_operate_type());
@@ -13502,6 +13517,7 @@ bool MsgBankRecord::IsInitialized() const {
 void MsgBankRecord::InternalSwap(MsgBankRecord* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  timer_.Swap(&other->timer_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(MsgBankRecord, operate_type_)
       + sizeof(MsgBankRecord::operate_type_)

@@ -52,3 +52,19 @@ message MsgBroadcastZmdTip
 	int32	template_id			= 8;		//模板id
 	repeated string	content		= 9;		//拼接内容数组
 }
+
+//聊天消息
+message MsgChatMsg
+{
+	int32	type				= 1;		//消息类型(1:普通消息  2:小喇叭)
+	bool	is_use_trumpet		= 2;		//是否使用小喇叭
+	string	message				= 3;		//聊天内容
+}
+
+//通知聊天消息
+message MsgNotifyChatMsg
+{
+	int32	user_id				= 1;		//用户ID
+	int32	type				= 2;		//消息类型(1:普通消息  2:小喇叭)
+	string	message				= 3;		//聊天内容
+}
