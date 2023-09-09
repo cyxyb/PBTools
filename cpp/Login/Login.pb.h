@@ -1717,14 +1717,31 @@ class MsgTurntableHistoryData PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kTimeFieldNumber = 6,
+    kNickNameFieldNumber = 2,
+    kTimeFieldNumber = 7,
     kUserIdFieldNumber = 1,
-    kScoreFieldNumber = 2,
-    kAwardFieldNumber = 3,
-    kTypeFieldNumber = 4,
-    kAwardTypeFieldNumber = 5,
+    kScoreFieldNumber = 3,
+    kAwardFieldNumber = 4,
+    kTypeFieldNumber = 5,
+    kAwardTypeFieldNumber = 6,
   };
-  // string time = 6;
+  // string nick_name = 2;
+  void clear_nick_name();
+  const std::string& nick_name() const;
+  void set_nick_name(const std::string& value);
+  void set_nick_name(std::string&& value);
+  void set_nick_name(const char* value);
+  void set_nick_name(const char* value, size_t size);
+  std::string* mutable_nick_name();
+  std::string* release_nick_name();
+  void set_allocated_nick_name(std::string* nick_name);
+  private:
+  const std::string& _internal_nick_name() const;
+  void _internal_set_nick_name(const std::string& value);
+  std::string* _internal_mutable_nick_name();
+  public:
+
+  // string time = 7;
   void clear_time();
   const std::string& time() const;
   void set_time(const std::string& value);
@@ -1749,7 +1766,7 @@ class MsgTurntableHistoryData PROTOBUF_FINAL :
   void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 score = 2;
+  // int32 score = 3;
   void clear_score();
   ::PROTOBUF_NAMESPACE_ID::int32 score() const;
   void set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -1758,7 +1775,7 @@ class MsgTurntableHistoryData PROTOBUF_FINAL :
   void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 award = 3;
+  // int32 award = 4;
   void clear_award();
   ::PROTOBUF_NAMESPACE_ID::int32 award() const;
   void set_award(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -1767,7 +1784,7 @@ class MsgTurntableHistoryData PROTOBUF_FINAL :
   void _internal_set_award(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 type = 4;
+  // int32 type = 5;
   void clear_type();
   ::PROTOBUF_NAMESPACE_ID::int32 type() const;
   void set_type(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -1776,7 +1793,7 @@ class MsgTurntableHistoryData PROTOBUF_FINAL :
   void _internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 award_type = 5;
+  // int32 award_type = 6;
   void clear_award_type();
   ::PROTOBUF_NAMESPACE_ID::int32 award_type() const;
   void set_award_type(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -1792,6 +1809,7 @@ class MsgTurntableHistoryData PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr nick_name_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr time_;
   ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 score_;
@@ -2244,7 +2262,8 @@ class MsgTurntableData PROTOBUF_FINAL :
   enum : int {
     kSilverCfgFieldNumber = 6,
     kGoldCfgFieldNumber = 7,
-    kHistoryFieldNumber = 8,
+    kThisHistoryFieldNumber = 8,
+    kBigHistoryFieldNumber = 9,
     kSilverInfoFieldNumber = 4,
     kGoldInfoFieldNumber = 5,
     kScoreFieldNumber = 1,
@@ -2287,23 +2306,41 @@ class MsgTurntableData PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgTurnCfg >&
       gold_cfg() const;
 
-  // repeated .MsgTurntableHistoryData history = 8;
-  int history_size() const;
+  // repeated .MsgTurntableHistoryData this_history = 8;
+  int this_history_size() const;
   private:
-  int _internal_history_size() const;
+  int _internal_this_history_size() const;
   public:
-  void clear_history();
-  ::MsgTurntableHistoryData* mutable_history(int index);
+  void clear_this_history();
+  ::MsgTurntableHistoryData* mutable_this_history(int index);
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgTurntableHistoryData >*
-      mutable_history();
+      mutable_this_history();
   private:
-  const ::MsgTurntableHistoryData& _internal_history(int index) const;
-  ::MsgTurntableHistoryData* _internal_add_history();
+  const ::MsgTurntableHistoryData& _internal_this_history(int index) const;
+  ::MsgTurntableHistoryData* _internal_add_this_history();
   public:
-  const ::MsgTurntableHistoryData& history(int index) const;
-  ::MsgTurntableHistoryData* add_history();
+  const ::MsgTurntableHistoryData& this_history(int index) const;
+  ::MsgTurntableHistoryData* add_this_history();
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgTurntableHistoryData >&
-      history() const;
+      this_history() const;
+
+  // repeated .MsgTurntableHistoryData big_history = 9;
+  int big_history_size() const;
+  private:
+  int _internal_big_history_size() const;
+  public:
+  void clear_big_history();
+  ::MsgTurntableHistoryData* mutable_big_history(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgTurntableHistoryData >*
+      mutable_big_history();
+  private:
+  const ::MsgTurntableHistoryData& _internal_big_history(int index) const;
+  ::MsgTurntableHistoryData* _internal_add_big_history();
+  public:
+  const ::MsgTurntableHistoryData& big_history(int index) const;
+  ::MsgTurntableHistoryData* add_big_history();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgTurntableHistoryData >&
+      big_history() const;
 
   // .MsgTurnPlayInfo silver_info = 4;
   bool has_silver_info() const;
@@ -2377,7 +2414,8 @@ class MsgTurntableData PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgTurnCfg > silver_cfg_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgTurnCfg > gold_cfg_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgTurntableHistoryData > history_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgTurntableHistoryData > this_history_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgTurntableHistoryData > big_history_;
   ::MsgTurnPlayInfo* silver_info_;
   ::MsgTurnPlayInfo* gold_info_;
   ::PROTOBUF_NAMESPACE_ID::int64 score_;
@@ -9751,7 +9789,68 @@ inline void MsgTurntableHistoryData::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 
   // @@protoc_insertion_point(field_set:MsgTurntableHistoryData.user_id)
 }
 
-// int32 score = 2;
+// string nick_name = 2;
+inline void MsgTurntableHistoryData::clear_nick_name() {
+  nick_name_.ClearToEmpty();
+}
+inline const std::string& MsgTurntableHistoryData::nick_name() const {
+  // @@protoc_insertion_point(field_get:MsgTurntableHistoryData.nick_name)
+  return _internal_nick_name();
+}
+inline void MsgTurntableHistoryData::set_nick_name(const std::string& value) {
+  _internal_set_nick_name(value);
+  // @@protoc_insertion_point(field_set:MsgTurntableHistoryData.nick_name)
+}
+inline std::string* MsgTurntableHistoryData::mutable_nick_name() {
+  // @@protoc_insertion_point(field_mutable:MsgTurntableHistoryData.nick_name)
+  return _internal_mutable_nick_name();
+}
+inline const std::string& MsgTurntableHistoryData::_internal_nick_name() const {
+  return nick_name_.Get();
+}
+inline void MsgTurntableHistoryData::_internal_set_nick_name(const std::string& value) {
+  
+  nick_name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgTurntableHistoryData::set_nick_name(std::string&& value) {
+  
+  nick_name_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgTurntableHistoryData.nick_name)
+}
+inline void MsgTurntableHistoryData::set_nick_name(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  nick_name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgTurntableHistoryData.nick_name)
+}
+inline void MsgTurntableHistoryData::set_nick_name(const char* value,
+    size_t size) {
+  
+  nick_name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgTurntableHistoryData.nick_name)
+}
+inline std::string* MsgTurntableHistoryData::_internal_mutable_nick_name() {
+  
+  return nick_name_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgTurntableHistoryData::release_nick_name() {
+  // @@protoc_insertion_point(field_release:MsgTurntableHistoryData.nick_name)
+  return nick_name_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgTurntableHistoryData::set_allocated_nick_name(std::string* nick_name) {
+  if (nick_name != nullptr) {
+    
+  } else {
+    
+  }
+  nick_name_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), nick_name,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgTurntableHistoryData.nick_name)
+}
+
+// int32 score = 3;
 inline void MsgTurntableHistoryData::clear_score() {
   score_ = 0;
 }
@@ -9771,7 +9870,7 @@ inline void MsgTurntableHistoryData::set_score(::PROTOBUF_NAMESPACE_ID::int32 va
   // @@protoc_insertion_point(field_set:MsgTurntableHistoryData.score)
 }
 
-// int32 award = 3;
+// int32 award = 4;
 inline void MsgTurntableHistoryData::clear_award() {
   award_ = 0;
 }
@@ -9791,7 +9890,7 @@ inline void MsgTurntableHistoryData::set_award(::PROTOBUF_NAMESPACE_ID::int32 va
   // @@protoc_insertion_point(field_set:MsgTurntableHistoryData.award)
 }
 
-// int32 type = 4;
+// int32 type = 5;
 inline void MsgTurntableHistoryData::clear_type() {
   type_ = 0;
 }
@@ -9811,7 +9910,7 @@ inline void MsgTurntableHistoryData::set_type(::PROTOBUF_NAMESPACE_ID::int32 val
   // @@protoc_insertion_point(field_set:MsgTurntableHistoryData.type)
 }
 
-// int32 award_type = 5;
+// int32 award_type = 6;
 inline void MsgTurntableHistoryData::clear_award_type() {
   award_type_ = 0;
 }
@@ -9831,7 +9930,7 @@ inline void MsgTurntableHistoryData::set_award_type(::PROTOBUF_NAMESPACE_ID::int
   // @@protoc_insertion_point(field_set:MsgTurntableHistoryData.award_type)
 }
 
-// string time = 6;
+// string time = 7;
 inline void MsgTurntableHistoryData::clear_time() {
   time_.ClearToEmpty();
 }
@@ -10348,43 +10447,82 @@ MsgTurntableData::gold_cfg() const {
   return gold_cfg_;
 }
 
-// repeated .MsgTurntableHistoryData history = 8;
-inline int MsgTurntableData::_internal_history_size() const {
-  return history_.size();
+// repeated .MsgTurntableHistoryData this_history = 8;
+inline int MsgTurntableData::_internal_this_history_size() const {
+  return this_history_.size();
 }
-inline int MsgTurntableData::history_size() const {
-  return _internal_history_size();
+inline int MsgTurntableData::this_history_size() const {
+  return _internal_this_history_size();
 }
-inline void MsgTurntableData::clear_history() {
-  history_.Clear();
+inline void MsgTurntableData::clear_this_history() {
+  this_history_.Clear();
 }
-inline ::MsgTurntableHistoryData* MsgTurntableData::mutable_history(int index) {
-  // @@protoc_insertion_point(field_mutable:MsgTurntableData.history)
-  return history_.Mutable(index);
+inline ::MsgTurntableHistoryData* MsgTurntableData::mutable_this_history(int index) {
+  // @@protoc_insertion_point(field_mutable:MsgTurntableData.this_history)
+  return this_history_.Mutable(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgTurntableHistoryData >*
-MsgTurntableData::mutable_history() {
-  // @@protoc_insertion_point(field_mutable_list:MsgTurntableData.history)
-  return &history_;
+MsgTurntableData::mutable_this_history() {
+  // @@protoc_insertion_point(field_mutable_list:MsgTurntableData.this_history)
+  return &this_history_;
 }
-inline const ::MsgTurntableHistoryData& MsgTurntableData::_internal_history(int index) const {
-  return history_.Get(index);
+inline const ::MsgTurntableHistoryData& MsgTurntableData::_internal_this_history(int index) const {
+  return this_history_.Get(index);
 }
-inline const ::MsgTurntableHistoryData& MsgTurntableData::history(int index) const {
-  // @@protoc_insertion_point(field_get:MsgTurntableData.history)
-  return _internal_history(index);
+inline const ::MsgTurntableHistoryData& MsgTurntableData::this_history(int index) const {
+  // @@protoc_insertion_point(field_get:MsgTurntableData.this_history)
+  return _internal_this_history(index);
 }
-inline ::MsgTurntableHistoryData* MsgTurntableData::_internal_add_history() {
-  return history_.Add();
+inline ::MsgTurntableHistoryData* MsgTurntableData::_internal_add_this_history() {
+  return this_history_.Add();
 }
-inline ::MsgTurntableHistoryData* MsgTurntableData::add_history() {
-  // @@protoc_insertion_point(field_add:MsgTurntableData.history)
-  return _internal_add_history();
+inline ::MsgTurntableHistoryData* MsgTurntableData::add_this_history() {
+  // @@protoc_insertion_point(field_add:MsgTurntableData.this_history)
+  return _internal_add_this_history();
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgTurntableHistoryData >&
-MsgTurntableData::history() const {
-  // @@protoc_insertion_point(field_list:MsgTurntableData.history)
-  return history_;
+MsgTurntableData::this_history() const {
+  // @@protoc_insertion_point(field_list:MsgTurntableData.this_history)
+  return this_history_;
+}
+
+// repeated .MsgTurntableHistoryData big_history = 9;
+inline int MsgTurntableData::_internal_big_history_size() const {
+  return big_history_.size();
+}
+inline int MsgTurntableData::big_history_size() const {
+  return _internal_big_history_size();
+}
+inline void MsgTurntableData::clear_big_history() {
+  big_history_.Clear();
+}
+inline ::MsgTurntableHistoryData* MsgTurntableData::mutable_big_history(int index) {
+  // @@protoc_insertion_point(field_mutable:MsgTurntableData.big_history)
+  return big_history_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgTurntableHistoryData >*
+MsgTurntableData::mutable_big_history() {
+  // @@protoc_insertion_point(field_mutable_list:MsgTurntableData.big_history)
+  return &big_history_;
+}
+inline const ::MsgTurntableHistoryData& MsgTurntableData::_internal_big_history(int index) const {
+  return big_history_.Get(index);
+}
+inline const ::MsgTurntableHistoryData& MsgTurntableData::big_history(int index) const {
+  // @@protoc_insertion_point(field_get:MsgTurntableData.big_history)
+  return _internal_big_history(index);
+}
+inline ::MsgTurntableHistoryData* MsgTurntableData::_internal_add_big_history() {
+  return big_history_.Add();
+}
+inline ::MsgTurntableHistoryData* MsgTurntableData::add_big_history() {
+  // @@protoc_insertion_point(field_add:MsgTurntableData.big_history)
+  return _internal_add_big_history();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgTurntableHistoryData >&
+MsgTurntableData::big_history() const {
+  // @@protoc_insertion_point(field_list:MsgTurntableData.big_history)
+  return big_history_;
 }
 
 // -------------------------------------------------------------------

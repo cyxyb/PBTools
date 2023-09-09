@@ -834,6 +834,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::MsgTurntableHistoryData, user_id_),
+  PROTOBUF_FIELD_OFFSET(::MsgTurntableHistoryData, nick_name_),
   PROTOBUF_FIELD_OFFSET(::MsgTurntableHistoryData, score_),
   PROTOBUF_FIELD_OFFSET(::MsgTurntableHistoryData, award_),
   PROTOBUF_FIELD_OFFSET(::MsgTurntableHistoryData, type_),
@@ -868,7 +869,8 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::MsgTurntableData, gold_info_),
   PROTOBUF_FIELD_OFFSET(::MsgTurntableData, silver_cfg_),
   PROTOBUF_FIELD_OFFSET(::MsgTurntableData, gold_cfg_),
-  PROTOBUF_FIELD_OFFSET(::MsgTurntableData, history_),
+  PROTOBUF_FIELD_OFFSET(::MsgTurntableData, this_history_),
+  PROTOBUF_FIELD_OFFSET(::MsgTurntableData, big_history_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgMailsInfo, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1161,41 +1163,41 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 57, -1, sizeof(::MsgCommonKV)},
   { 64, -1, sizeof(::MsgCheckInInfo)},
   { 73, -1, sizeof(::MsgTurntableHistoryData)},
-  { 84, -1, sizeof(::MsgTurnPlayInfo)},
-  { 92, -1, sizeof(::MsgTurnCfg)},
-  { 101, -1, sizeof(::MsgTurntableData)},
-  { 114, -1, sizeof(::MsgMailsInfo)},
-  { 120, -1, sizeof(::MsgMailData)},
-  { 134, -1, sizeof(::MsgShareData)},
-  { 141, -1, sizeof(::MsgBindParentData)},
-  { 147, -1, sizeof(::MsgInviteAwardInfo)},
-  { 155, -1, sizeof(::MsgInviteAwardConfig)},
-  { 162, -1, sizeof(::MsgRechargeInfo)},
-  { 172, -1, sizeof(::MsgQueryRebateRecordInfo)},
-  { 178, -1, sizeof(::MsgQueryRebateRecord)},
-  { 186, -1, sizeof(::MsgForgetPassword)},
-  { 195, -1, sizeof(::MsgVIPInfo)},
-  { 211, -1, sizeof(::MsgVIPConfig)},
-  { 217, -1, sizeof(::MsgUpgradeVIP)},
-  { 224, -1, sizeof(::MsgGetAvatarInfo)},
-  { 230, -1, sizeof(::MsgPlayerInfo)},
-  { 246, -1, sizeof(::MsgActiveInfo)},
-  { 253, -1, sizeof(::ActiveInfoRet)},
-  { 269, -1, sizeof(::MsgActiveInfoSCRet)},
-  { 275, -1, sizeof(::MsgActiveInfoCSPick)},
-  { 283, -1, sizeof(::MsgActiveInfoSCPick)},
-  { 300, -1, sizeof(::MsgModifySignature)},
-  { 307, -1, sizeof(::MsgBankChangePassword)},
-  { 314, -1, sizeof(::MsgBankOperate)},
-  { 321, -1, sizeof(::MsgBankTakeOut)},
-  { 329, -1, sizeof(::MsgBankTransfer)},
-  { 336, -1, sizeof(::MsgTopInfo)},
-  { 348, -1, sizeof(::MsgGetRank)},
-  { 357, -1, sizeof(::MsgTopListResp)},
-  { 368, -1, sizeof(::MsgBankTransferResp)},
-  { 375, -1, sizeof(::MsgBankRecord)},
-  { 384, -1, sizeof(::MsgBankRecordResp)},
-  { 390, -1, sizeof(::MsgPhoneCode)},
+  { 85, -1, sizeof(::MsgTurnPlayInfo)},
+  { 93, -1, sizeof(::MsgTurnCfg)},
+  { 102, -1, sizeof(::MsgTurntableData)},
+  { 116, -1, sizeof(::MsgMailsInfo)},
+  { 122, -1, sizeof(::MsgMailData)},
+  { 136, -1, sizeof(::MsgShareData)},
+  { 143, -1, sizeof(::MsgBindParentData)},
+  { 149, -1, sizeof(::MsgInviteAwardInfo)},
+  { 157, -1, sizeof(::MsgInviteAwardConfig)},
+  { 164, -1, sizeof(::MsgRechargeInfo)},
+  { 174, -1, sizeof(::MsgQueryRebateRecordInfo)},
+  { 180, -1, sizeof(::MsgQueryRebateRecord)},
+  { 188, -1, sizeof(::MsgForgetPassword)},
+  { 197, -1, sizeof(::MsgVIPInfo)},
+  { 213, -1, sizeof(::MsgVIPConfig)},
+  { 219, -1, sizeof(::MsgUpgradeVIP)},
+  { 226, -1, sizeof(::MsgGetAvatarInfo)},
+  { 232, -1, sizeof(::MsgPlayerInfo)},
+  { 248, -1, sizeof(::MsgActiveInfo)},
+  { 255, -1, sizeof(::ActiveInfoRet)},
+  { 271, -1, sizeof(::MsgActiveInfoSCRet)},
+  { 277, -1, sizeof(::MsgActiveInfoCSPick)},
+  { 285, -1, sizeof(::MsgActiveInfoSCPick)},
+  { 302, -1, sizeof(::MsgModifySignature)},
+  { 309, -1, sizeof(::MsgBankChangePassword)},
+  { 316, -1, sizeof(::MsgBankOperate)},
+  { 323, -1, sizeof(::MsgBankTakeOut)},
+  { 331, -1, sizeof(::MsgBankTransfer)},
+  { 338, -1, sizeof(::MsgTopInfo)},
+  { 350, -1, sizeof(::MsgGetRank)},
+  { 359, -1, sizeof(::MsgTopListResp)},
+  { 370, -1, sizeof(::MsgBankTransferResp)},
+  { 377, -1, sizeof(::MsgBankRecord)},
+  { 386, -1, sizeof(::MsgBankRecordResp)},
+  { 392, -1, sizeof(::MsgPhoneCode)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -1267,97 +1269,99 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "gCommonKV\022\t\n\001k\030\001 \001(\005\022\t\n\001v\030\002 \001(\005\"i\n\016MsgCh"
   "eckInInfo\022\022\n\ncheck_days\030\001 \001(\005\022\017\n\007is_open"
   "\030\002 \001(\010\022\020\n\010can_pick\030\003 \001(\010\022 \n\nCheckInCfg\030\004"
-  " \003(\0132\014.MsgCommonKV\"x\n\027MsgTurntableHistor"
-  "yData\022\017\n\007user_id\030\001 \001(\005\022\r\n\005score\030\002 \001(\005\022\r\n"
-  "\005award\030\003 \001(\005\022\014\n\004type\030\004 \001(\005\022\022\n\naward_type"
-  "\030\005 \001(\005\022\014\n\004time\030\006 \001(\t\"K\n\017MsgTurnPlayInfo\022"
-  "\020\n\010play_num\030\001 \001(\005\022\022\n\nlimit_turn\030\002 \001(\005\022\022\n"
-  "\nneed_score\030\003 \001(\005\"L\n\nMsgTurnCfg\022\r\n\005index"
-  "\030\001 \001(\005\022\r\n\005arwad\030\002 \001(\005\022\022\n\narwad_type\030\003 \001("
-  "\005\022\014\n\004type\030\004 \001(\005\"\200\002\n\020MsgTurntableData\022\r\n\005"
-  "score\030\001 \001(\003\022\020\n\010turn_pro\030\002 \001(\005\022\024\n\014turn_ma"
-  "x_pro\030\003 \001(\005\022%\n\013silver_info\030\004 \001(\0132\020.MsgTu"
-  "rnPlayInfo\022#\n\tgold_info\030\005 \001(\0132\020.MsgTurnP"
-  "layInfo\022\037\n\nsilver_cfg\030\006 \003(\0132\013.MsgTurnCfg"
-  "\022\035\n\010gold_cfg\030\007 \003(\0132\013.MsgTurnCfg\022)\n\007histo"
-  "ry\030\010 \003(\0132\030.MsgTurntableHistoryData\"+\n\014Ms"
-  "gMailsInfo\022\033\n\005mails\030\001 \003(\0132\014.MsgMailData\""
-  "\254\001\n\013MsgMailData\022\017\n\007mail_id\030\001 \001(\005\022\024\n\014send"
-  "_user_id\030\002 \001(\005\022\021\n\tsend_time\030\003 \001(\005\022\r\n\005tit"
-  "le\030\004 \001(\t\022\017\n\007content\030\005 \001(\t\022\014\n\004gold\030\006 \001(\003\022"
-  "\017\n\007is_read\030\007 \001(\010\022\020\n\010is_claim\030\010 \001(\010\022\022\n\nto"
-  "_user_id\030\t \001(\005\"6\n\014MsgShareData\022\023\n\013invite"
-  "_code\030\001 \001(\t\022\021\n\tbind_list\030\002 \003(\005\"$\n\021MsgBin"
-  "dParentData\022\017\n\007strCode\030\001 \001(\t\"c\n\022MsgInvit"
-  "eAwardInfo\022\021\n\tinviteNum\030\001 \001(\005\022\021\n\tpickInd"
-  "ex\030\002 \001(\005\022\'\n\010awardCfg\030\003 \003(\0132\025.MsgInviteAw"
-  "ardConfig\"8\n\024MsgInviteAwardConfig\022\021\n\tinv"
-  "iteNum\030\001 \001(\005\022\r\n\005award\030\002 \001(\005\"w\n\017MsgRechar"
-  "geInfo\022\021\n\tinviteNum\030\001 \001(\005\022\022\n\ntodayAward\030"
-  "\002 \001(\003\022\022\n\ntotalAward\030\003 \001(\003\022\025\n\rcanPickAmou"
-  "nt\030\004 \001(\003\022\022\n\ninviteCode\030\005 \001(\t\"L\n\030MsgQuery"
-  "RebateRecordInfo\0220\n\021queryRebateRecord\030\001 "
-  "\003(\0132\025.MsgQueryRebateRecord\"V\n\024MsgQueryRe"
-  "bateRecord\022\026\n\016rechargeUserId\030\001 \001(\005\022\026\n\016re"
-  "chargeAmount\030\002 \001(\005\022\016\n\006rebate\030\003 \001(\005\"[\n\021Ms"
-  "gForgetPassword\022\023\n\013client_type\030\001 \001(\005\022\r\n\005"
-  "phone\030\002 \001(\t\022\014\n\004code\030\003 \001(\005\022\024\n\014new_passwor"
-  "d\030\004 \001(\t\"\366\001\n\nMsgVIPInfo\022\021\n\tvip_level\030\001 \001("
-  "\005\022\022\n\nneed_score\030\002 \001(\003\022\025\n\rturntable_num\030\003"
-  " \001(\005\022\030\n\020trumpet_discount\030\004 \001(\005\022\026\n\016check_"
-  "addition\030\005 \001(\005\022\026\n\016share_addition\030\006 \001(\005\022\022"
-  "\n\nworld_chat\030\007 \001(\010\022\016\n\006avatar\030\010 \001(\005\022\024\n\014av"
-  "atar_frame\030\t \001(\005\022\022\n\naward_gold\030\n \001(\005\022\022\n\n"
-  "one_to_one\030\013 \001(\010\"-\n\014MsgVIPConfig\022\035\n\010vip_"
-  "info\030\001 \003(\0132\013.MsgVIPInfo\"/\n\rMsgUpgradeVIP"
-  "\022\020\n\010res_code\030\001 \001(\005\022\014\n\004gold\030\002 \001(\003\"#\n\020MsgG"
-  "etAvatarInfo\022\017\n\007avatars\030\001 \003(\005\"\340\001\n\rMsgPla"
-  "yerInfo\022\017\n\007user_id\030\001 \001(\005\022\024\n\014beautiful_id"
-  "\030\002 \001(\005\022\020\n\010nickname\030\003 \001(\t\022\016\n\006avatar\030\004 \001(\t"
-  "\022\014\n\004coin\030\005 \001(\004\022\021\n\tphone_num\030\006 \001(\t\022\021\n\tvip"
-  "_level\030\007 \001(\005\022\024\n\014avatar_frame\030\010 \001(\005\022\021\n\tsi"
-  "gnature\030\t \001(\t\022\023\n\013zmd_game_id\030\n \001(\005\022\024\n\014zm"
-  "d_win_gold\030\013 \001(\004\"3\n\rMsgActiveInfo\022\017\n\007use"
-  "r_id\030\001 \001(\005\022\021\n\tactive_id\030\002 \001(\005\"\330\001\n\rActive"
-  "InfoRet\022\021\n\tactive_id\030\001 \001(\005\022\025\n\rsub_active"
-  "_id\030\002 \001(\005\022\016\n\006param1\030\003 \001(\005\022\016\n\006param2\030\004 \001("
-  "\005\022\016\n\006param3\030\005 \001(\005\022\021\n\tprogress1\030\006 \001(\005\022\021\n\t"
-  "progress2\030\007 \001(\005\022\021\n\tprogress3\030\010 \001(\005\022\016\n\006re"
-  "ward\030\t \001(\005\022\023\n\013reward_type\030\n \001(\005\022\017\n\007is_pi"
-  "ck\030\013 \001(\010\"6\n\022MsgActiveInfoSCRet\022 \n\010vec_in"
-  "fo\030\001 \003(\0132\016.ActiveInfoRet\"P\n\023MsgActiveInf"
-  "oCSPick\022\017\n\007user_id\030\001 \001(\005\022\021\n\tactive_id\030\002 "
-  "\001(\005\022\025\n\rsub_active_id\030\003 \001(\005\"\353\001\n\023MsgActive"
-  "InfoSCPick\022\021\n\tactive_id\030\001 \001(\005\022\025\n\rsub_act"
-  "ive_id\030\002 \001(\005\022\016\n\006param1\030\003 \001(\005\022\016\n\006param2\030\004"
-  " \001(\005\022\016\n\006param3\030\005 \001(\005\022\021\n\tprogress1\030\006 \001(\005\022"
-  "\021\n\tprogress2\030\007 \001(\005\022\021\n\tprogress3\030\010 \001(\005\022\016\n"
-  "\006reward\030\t \001(\005\022\023\n\013reward_type\030\n \001(\005\022\017\n\007is"
-  "_pick\030\013 \001(\005\022\013\n\003res\030\014 \001(\010\"8\n\022MsgModifySig"
-  "nature\022\017\n\007user_id\030\001 \001(\005\022\021\n\tsignature\030\002 \001"
-  "(\t\"7\n\025MsgBankChangePassword\022\020\n\010password\030"
-  "\001 \001(\t\022\014\n\004code\030\002 \001(\005\"4\n\016MsgBankOperate\022\014\n"
-  "\004gold\030\001 \001(\003\022\024\n\014operate_type\030\002 \001(\005\"I\n\016Msg"
-  "BankTakeOut\022\021\n\tret_value\030\001 \001(\005\022\021\n\tuser_g"
-  "old\030\002 \001(\003\022\021\n\tbank_gold\030\003 \001(\003\">\n\017MsgBankT"
-  "ransfer\022\024\n\014recv_user_id\030\001 \001(\005\022\025\n\rtransfe"
-  "r_gold\030\002 \001(\003\"\212\001\n\nMsgTopInfo\022\017\n\007rank_id\030\001"
-  " \001(\005\022\017\n\007user_id\030\002 \001(\005\022\014\n\004gold\030\003 \001(\004\022\021\n\tv"
-  "ip_level\030\004 \001(\r\022\024\n\014avatar_frame\030\005 \001(\005\022\020\n\010"
-  "head_url\030\006 \001(\t\022\021\n\tnick_name\030\007 \001(\t\"W\n\nMsg"
-  "GetRank\022\021\n\trank_type\030\001 \001(\005\022\017\n\007user_id\030\002 "
-  "\001(\005\022\024\n\014current_page\030\003 \001(\005\022\017\n\007max_row\030\004 \001"
-  "(\005\"\213\001\n\016MsgTopListResp\022\017\n\007user_id\030\001 \001(\005\022\021"
-  "\n\trank_type\030\002 \001(\005\022\026\n\016this_rank_ndex\030\003 \001("
-  "\005\022\021\n\tthis_gold\030\004 \001(\005\022\016\n\006is_end\030\005 \001(\005\022\032\n\005"
-  "lists\030\006 \003(\0132\013.MsgTopInfo\";\n\023MsgBankTrans"
-  "ferResp\022\021\n\tret_value\030\001 \001(\005\022\021\n\tbank_gold\030"
-  "\002 \001(\003\"d\n\rMsgBankRecord\022\027\n\017operate_user_i"
-  "d\030\001 \001(\005\022\025\n\rtransfer_gold\030\002 \001(\003\022\r\n\005timer\030"
-  "\003 \001(\t\022\024\n\014operate_type\030\004 \001(\005\"4\n\021MsgBankRe"
-  "cordResp\022\037\n\007records\030\001 \003(\0132\016.MsgBankRecor"
-  "d\"0\n\014MsgPhoneCode\022\021\n\tarea_code\030\001 \001(\t\022\r\n\005"
-  "phone\030\002 \001(\tb\006proto3"
+  " \003(\0132\014.MsgCommonKV\"\213\001\n\027MsgTurntableHisto"
+  "ryData\022\017\n\007user_id\030\001 \001(\005\022\021\n\tnick_name\030\002 \001"
+  "(\t\022\r\n\005score\030\003 \001(\005\022\r\n\005award\030\004 \001(\005\022\014\n\004type"
+  "\030\005 \001(\005\022\022\n\naward_type\030\006 \001(\005\022\014\n\004time\030\007 \001(\t"
+  "\"K\n\017MsgTurnPlayInfo\022\020\n\010play_num\030\001 \001(\005\022\022\n"
+  "\nlimit_turn\030\002 \001(\005\022\022\n\nneed_score\030\003 \001(\005\"L\n"
+  "\nMsgTurnCfg\022\r\n\005index\030\001 \001(\005\022\r\n\005arwad\030\002 \001("
+  "\005\022\022\n\narwad_type\030\003 \001(\005\022\014\n\004type\030\004 \001(\005\"\264\002\n\020"
+  "MsgTurntableData\022\r\n\005score\030\001 \001(\003\022\020\n\010turn_"
+  "pro\030\002 \001(\005\022\024\n\014turn_max_pro\030\003 \001(\005\022%\n\013silve"
+  "r_info\030\004 \001(\0132\020.MsgTurnPlayInfo\022#\n\tgold_i"
+  "nfo\030\005 \001(\0132\020.MsgTurnPlayInfo\022\037\n\nsilver_cf"
+  "g\030\006 \003(\0132\013.MsgTurnCfg\022\035\n\010gold_cfg\030\007 \003(\0132\013"
+  ".MsgTurnCfg\022.\n\014this_history\030\010 \003(\0132\030.MsgT"
+  "urntableHistoryData\022-\n\013big_history\030\t \003(\013"
+  "2\030.MsgTurntableHistoryData\"+\n\014MsgMailsIn"
+  "fo\022\033\n\005mails\030\001 \003(\0132\014.MsgMailData\"\254\001\n\013MsgM"
+  "ailData\022\017\n\007mail_id\030\001 \001(\005\022\024\n\014send_user_id"
+  "\030\002 \001(\005\022\021\n\tsend_time\030\003 \001(\005\022\r\n\005title\030\004 \001(\t"
+  "\022\017\n\007content\030\005 \001(\t\022\014\n\004gold\030\006 \001(\003\022\017\n\007is_re"
+  "ad\030\007 \001(\010\022\020\n\010is_claim\030\010 \001(\010\022\022\n\nto_user_id"
+  "\030\t \001(\005\"6\n\014MsgShareData\022\023\n\013invite_code\030\001 "
+  "\001(\t\022\021\n\tbind_list\030\002 \003(\005\"$\n\021MsgBindParentD"
+  "ata\022\017\n\007strCode\030\001 \001(\t\"c\n\022MsgInviteAwardIn"
+  "fo\022\021\n\tinviteNum\030\001 \001(\005\022\021\n\tpickIndex\030\002 \001(\005"
+  "\022\'\n\010awardCfg\030\003 \003(\0132\025.MsgInviteAwardConfi"
+  "g\"8\n\024MsgInviteAwardConfig\022\021\n\tinviteNum\030\001"
+  " \001(\005\022\r\n\005award\030\002 \001(\005\"w\n\017MsgRechargeInfo\022\021"
+  "\n\tinviteNum\030\001 \001(\005\022\022\n\ntodayAward\030\002 \001(\003\022\022\n"
+  "\ntotalAward\030\003 \001(\003\022\025\n\rcanPickAmount\030\004 \001(\003"
+  "\022\022\n\ninviteCode\030\005 \001(\t\"L\n\030MsgQueryRebateRe"
+  "cordInfo\0220\n\021queryRebateRecord\030\001 \003(\0132\025.Ms"
+  "gQueryRebateRecord\"V\n\024MsgQueryRebateReco"
+  "rd\022\026\n\016rechargeUserId\030\001 \001(\005\022\026\n\016rechargeAm"
+  "ount\030\002 \001(\005\022\016\n\006rebate\030\003 \001(\005\"[\n\021MsgForgetP"
+  "assword\022\023\n\013client_type\030\001 \001(\005\022\r\n\005phone\030\002 "
+  "\001(\t\022\014\n\004code\030\003 \001(\005\022\024\n\014new_password\030\004 \001(\t\""
+  "\366\001\n\nMsgVIPInfo\022\021\n\tvip_level\030\001 \001(\005\022\022\n\nnee"
+  "d_score\030\002 \001(\003\022\025\n\rturntable_num\030\003 \001(\005\022\030\n\020"
+  "trumpet_discount\030\004 \001(\005\022\026\n\016check_addition"
+  "\030\005 \001(\005\022\026\n\016share_addition\030\006 \001(\005\022\022\n\nworld_"
+  "chat\030\007 \001(\010\022\016\n\006avatar\030\010 \001(\005\022\024\n\014avatar_fra"
+  "me\030\t \001(\005\022\022\n\naward_gold\030\n \001(\005\022\022\n\none_to_o"
+  "ne\030\013 \001(\010\"-\n\014MsgVIPConfig\022\035\n\010vip_info\030\001 \003"
+  "(\0132\013.MsgVIPInfo\"/\n\rMsgUpgradeVIP\022\020\n\010res_"
+  "code\030\001 \001(\005\022\014\n\004gold\030\002 \001(\003\"#\n\020MsgGetAvatar"
+  "Info\022\017\n\007avatars\030\001 \003(\005\"\340\001\n\rMsgPlayerInfo\022"
+  "\017\n\007user_id\030\001 \001(\005\022\024\n\014beautiful_id\030\002 \001(\005\022\020"
+  "\n\010nickname\030\003 \001(\t\022\016\n\006avatar\030\004 \001(\t\022\014\n\004coin"
+  "\030\005 \001(\004\022\021\n\tphone_num\030\006 \001(\t\022\021\n\tvip_level\030\007"
+  " \001(\005\022\024\n\014avatar_frame\030\010 \001(\005\022\021\n\tsignature\030"
+  "\t \001(\t\022\023\n\013zmd_game_id\030\n \001(\005\022\024\n\014zmd_win_go"
+  "ld\030\013 \001(\004\"3\n\rMsgActiveInfo\022\017\n\007user_id\030\001 \001"
+  "(\005\022\021\n\tactive_id\030\002 \001(\005\"\330\001\n\rActiveInfoRet\022"
+  "\021\n\tactive_id\030\001 \001(\005\022\025\n\rsub_active_id\030\002 \001("
+  "\005\022\016\n\006param1\030\003 \001(\005\022\016\n\006param2\030\004 \001(\005\022\016\n\006par"
+  "am3\030\005 \001(\005\022\021\n\tprogress1\030\006 \001(\005\022\021\n\tprogress"
+  "2\030\007 \001(\005\022\021\n\tprogress3\030\010 \001(\005\022\016\n\006reward\030\t \001"
+  "(\005\022\023\n\013reward_type\030\n \001(\005\022\017\n\007is_pick\030\013 \001(\010"
+  "\"6\n\022MsgActiveInfoSCRet\022 \n\010vec_info\030\001 \003(\013"
+  "2\016.ActiveInfoRet\"P\n\023MsgActiveInfoCSPick\022"
+  "\017\n\007user_id\030\001 \001(\005\022\021\n\tactive_id\030\002 \001(\005\022\025\n\rs"
+  "ub_active_id\030\003 \001(\005\"\353\001\n\023MsgActiveInfoSCPi"
+  "ck\022\021\n\tactive_id\030\001 \001(\005\022\025\n\rsub_active_id\030\002"
+  " \001(\005\022\016\n\006param1\030\003 \001(\005\022\016\n\006param2\030\004 \001(\005\022\016\n\006"
+  "param3\030\005 \001(\005\022\021\n\tprogress1\030\006 \001(\005\022\021\n\tprogr"
+  "ess2\030\007 \001(\005\022\021\n\tprogress3\030\010 \001(\005\022\016\n\006reward\030"
+  "\t \001(\005\022\023\n\013reward_type\030\n \001(\005\022\017\n\007is_pick\030\013 "
+  "\001(\005\022\013\n\003res\030\014 \001(\010\"8\n\022MsgModifySignature\022\017"
+  "\n\007user_id\030\001 \001(\005\022\021\n\tsignature\030\002 \001(\t\"7\n\025Ms"
+  "gBankChangePassword\022\020\n\010password\030\001 \001(\t\022\014\n"
+  "\004code\030\002 \001(\005\"4\n\016MsgBankOperate\022\014\n\004gold\030\001 "
+  "\001(\003\022\024\n\014operate_type\030\002 \001(\005\"I\n\016MsgBankTake"
+  "Out\022\021\n\tret_value\030\001 \001(\005\022\021\n\tuser_gold\030\002 \001("
+  "\003\022\021\n\tbank_gold\030\003 \001(\003\">\n\017MsgBankTransfer\022"
+  "\024\n\014recv_user_id\030\001 \001(\005\022\025\n\rtransfer_gold\030\002"
+  " \001(\003\"\212\001\n\nMsgTopInfo\022\017\n\007rank_id\030\001 \001(\005\022\017\n\007"
+  "user_id\030\002 \001(\005\022\014\n\004gold\030\003 \001(\004\022\021\n\tvip_level"
+  "\030\004 \001(\r\022\024\n\014avatar_frame\030\005 \001(\005\022\020\n\010head_url"
+  "\030\006 \001(\t\022\021\n\tnick_name\030\007 \001(\t\"W\n\nMsgGetRank\022"
+  "\021\n\trank_type\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\024\n\014c"
+  "urrent_page\030\003 \001(\005\022\017\n\007max_row\030\004 \001(\005\"\213\001\n\016M"
+  "sgTopListResp\022\017\n\007user_id\030\001 \001(\005\022\021\n\trank_t"
+  "ype\030\002 \001(\005\022\026\n\016this_rank_ndex\030\003 \001(\005\022\021\n\tthi"
+  "s_gold\030\004 \001(\005\022\016\n\006is_end\030\005 \001(\005\022\032\n\005lists\030\006 "
+  "\003(\0132\013.MsgTopInfo\";\n\023MsgBankTransferResp\022"
+  "\021\n\tret_value\030\001 \001(\005\022\021\n\tbank_gold\030\002 \001(\003\"d\n"
+  "\rMsgBankRecord\022\027\n\017operate_user_id\030\001 \001(\005\022"
+  "\025\n\rtransfer_gold\030\002 \001(\003\022\r\n\005timer\030\003 \001(\t\022\024\n"
+  "\014operate_type\030\004 \001(\005\"4\n\021MsgBankRecordResp"
+  "\022\037\n\007records\030\001 \003(\0132\016.MsgBankRecord\"0\n\014Msg"
+  "PhoneCode\022\021\n\tarea_code\030\001 \001(\t\022\r\n\005phone\030\002 "
+  "\001(\tb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Login_2eproto_deps[1] = {
 };
@@ -1407,7 +1411,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Login_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Login_2eproto = {
-  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 4539,
+  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 4611,
   &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 42, 0,
   schemas, file_default_instances, TableStruct_Login_2eproto::offsets,
   file_level_metadata_Login_2eproto, 42, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
@@ -3809,6 +3813,11 @@ MsgTurntableHistoryData::MsgTurntableHistoryData(::PROTOBUF_NAMESPACE_ID::Arena*
 MsgTurntableHistoryData::MsgTurntableHistoryData(const MsgTurntableHistoryData& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  nick_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from._internal_nick_name().empty()) {
+    nick_name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_nick_name(), 
+      GetArena());
+  }
   time_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (!from._internal_time().empty()) {
     time_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_time(), 
@@ -3822,6 +3831,7 @@ MsgTurntableHistoryData::MsgTurntableHistoryData(const MsgTurntableHistoryData& 
 
 void MsgTurntableHistoryData::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgTurntableHistoryData_Login_2eproto.base);
+  nick_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   time_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&user_id_) - reinterpret_cast<char*>(this)),
@@ -3837,6 +3847,7 @@ MsgTurntableHistoryData::~MsgTurntableHistoryData() {
 
 void MsgTurntableHistoryData::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
+  nick_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   time_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -3861,6 +3872,7 @@ void MsgTurntableHistoryData::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  nick_name_.ClearToEmpty();
   time_.ClearToEmpty();
   ::memset(&user_id_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&award_type_) -
@@ -3882,37 +3894,46 @@ const char* MsgTurntableHistoryData::_InternalParse(const char* ptr, ::PROTOBUF_
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 score = 2;
+      // string nick_name = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          auto str = _internal_mutable_nick_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgTurntableHistoryData.nick_name"));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 score = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 award = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+      // int32 award = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           award_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 type = 4;
-      case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+      // int32 type = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
           type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 award_type = 5;
-      case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+      // int32 award_type = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
           award_type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // string time = 6;
-      case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+      // string time = 7;
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
           auto str = _internal_mutable_time();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgTurntableHistoryData.time"));
@@ -3953,38 +3974,48 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_user_id(), target);
   }
 
-  // int32 score = 2;
+  // string nick_name = 2;
+  if (this->nick_name().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_nick_name().data(), static_cast<int>(this->_internal_nick_name().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "MsgTurntableHistoryData.nick_name");
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_nick_name(), target);
+  }
+
+  // int32 score = 3;
   if (this->score() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_score(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_score(), target);
   }
 
-  // int32 award = 3;
+  // int32 award = 4;
   if (this->award() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_award(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_award(), target);
   }
 
-  // int32 type = 4;
+  // int32 type = 5;
   if (this->type() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_type(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_type(), target);
   }
 
-  // int32 award_type = 5;
+  // int32 award_type = 6;
   if (this->award_type() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_award_type(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_award_type(), target);
   }
 
-  // string time = 6;
+  // string time = 7;
   if (this->time().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_time().data(), static_cast<int>(this->_internal_time().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "MsgTurntableHistoryData.time");
     target = stream->WriteStringMaybeAliased(
-        6, this->_internal_time(), target);
+        7, this->_internal_time(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -4003,7 +4034,14 @@ size_t MsgTurntableHistoryData::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string time = 6;
+  // string nick_name = 2;
+  if (this->nick_name().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_nick_name());
+  }
+
+  // string time = 7;
   if (this->time().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
@@ -4017,28 +4055,28 @@ size_t MsgTurntableHistoryData::ByteSizeLong() const {
         this->_internal_user_id());
   }
 
-  // int32 score = 2;
+  // int32 score = 3;
   if (this->score() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_score());
   }
 
-  // int32 award = 3;
+  // int32 award = 4;
   if (this->award() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_award());
   }
 
-  // int32 type = 4;
+  // int32 type = 5;
   if (this->type() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_type());
   }
 
-  // int32 award_type = 5;
+  // int32 award_type = 6;
   if (this->award_type() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
@@ -4076,6 +4114,9 @@ void MsgTurntableHistoryData::MergeFrom(const MsgTurntableHistoryData& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  if (from.nick_name().size() > 0) {
+    _internal_set_nick_name(from._internal_nick_name());
+  }
   if (from.time().size() > 0) {
     _internal_set_time(from._internal_time());
   }
@@ -4117,6 +4158,7 @@ bool MsgTurntableHistoryData::IsInitialized() const {
 void MsgTurntableHistoryData::InternalSwap(MsgTurntableHistoryData* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  nick_name_.Swap(&other->nick_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   time_.Swap(&other->time_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(MsgTurntableHistoryData, award_type_)
@@ -4678,7 +4720,8 @@ MsgTurntableData::MsgTurntableData(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena),
   silver_cfg_(arena),
   gold_cfg_(arena),
-  history_(arena) {
+  this_history_(arena),
+  big_history_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:MsgTurntableData)
@@ -4687,7 +4730,8 @@ MsgTurntableData::MsgTurntableData(const MsgTurntableData& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       silver_cfg_(from.silver_cfg_),
       gold_cfg_(from.gold_cfg_),
-      history_(from.history_) {
+      this_history_(from.this_history_),
+      big_history_(from.big_history_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_silver_info()) {
     silver_info_ = new ::MsgTurnPlayInfo(*from.silver_info_);
@@ -4748,7 +4792,8 @@ void MsgTurntableData::Clear() {
 
   silver_cfg_.Clear();
   gold_cfg_.Clear();
-  history_.Clear();
+  this_history_.Clear();
+  big_history_.Clear();
   if (GetArena() == nullptr && silver_info_ != nullptr) {
     delete silver_info_;
   }
@@ -4829,16 +4874,28 @@ const char* MsgTurntableData::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<58>(ptr));
         } else goto handle_unusual;
         continue;
-      // repeated .MsgTurntableHistoryData history = 8;
+      // repeated .MsgTurntableHistoryData this_history = 8;
       case 8:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 66)) {
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ctx->ParseMessage(_internal_add_history(), ptr);
+            ptr = ctx->ParseMessage(_internal_add_this_history(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<66>(ptr));
+        } else goto handle_unusual;
+        continue;
+      // repeated .MsgTurntableHistoryData big_history = 9;
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_big_history(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<74>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -4919,12 +4976,20 @@ failure:
       InternalWriteMessage(7, this->_internal_gold_cfg(i), target, stream);
   }
 
-  // repeated .MsgTurntableHistoryData history = 8;
+  // repeated .MsgTurntableHistoryData this_history = 8;
   for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_history_size()); i < n; i++) {
+      n = static_cast<unsigned int>(this->_internal_this_history_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(8, this->_internal_history(i), target, stream);
+      InternalWriteMessage(8, this->_internal_this_history(i), target, stream);
+  }
+
+  // repeated .MsgTurntableHistoryData big_history = 9;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_big_history_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(9, this->_internal_big_history(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -4957,9 +5022,16 @@ size_t MsgTurntableData::ByteSizeLong() const {
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  // repeated .MsgTurntableHistoryData history = 8;
-  total_size += 1UL * this->_internal_history_size();
-  for (const auto& msg : this->history_) {
+  // repeated .MsgTurntableHistoryData this_history = 8;
+  total_size += 1UL * this->_internal_this_history_size();
+  for (const auto& msg : this->this_history_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  // repeated .MsgTurntableHistoryData big_history = 9;
+  total_size += 1UL * this->_internal_big_history_size();
+  for (const auto& msg : this->big_history_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
@@ -5032,7 +5104,8 @@ void MsgTurntableData::MergeFrom(const MsgTurntableData& from) {
 
   silver_cfg_.MergeFrom(from.silver_cfg_);
   gold_cfg_.MergeFrom(from.gold_cfg_);
-  history_.MergeFrom(from.history_);
+  this_history_.MergeFrom(from.this_history_);
+  big_history_.MergeFrom(from.big_history_);
   if (from.has_silver_info()) {
     _internal_mutable_silver_info()->::MsgTurnPlayInfo::MergeFrom(from._internal_silver_info());
   }
@@ -5073,7 +5146,8 @@ void MsgTurntableData::InternalSwap(MsgTurntableData* other) {
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   silver_cfg_.InternalSwap(&other->silver_cfg_);
   gold_cfg_.InternalSwap(&other->gold_cfg_);
-  history_.InternalSwap(&other->history_);
+  this_history_.InternalSwap(&other->this_history_);
+  big_history_.InternalSwap(&other->big_history_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(MsgTurntableData, turn_max_pro_)
       + sizeof(MsgTurntableData::turn_max_pro_)

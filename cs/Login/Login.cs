@@ -43,87 +43,88 @@ public static partial class LoginReflection {
           "TXNnQ29tbW9uS1YSCQoBaxgBIAEoBRIJCgF2GAIgASgFImkKDk1zZ0NoZWNr",
           "SW5JbmZvEhIKCmNoZWNrX2RheXMYASABKAUSDwoHaXNfb3BlbhgCIAEoCBIQ",
           "CghjYW5fcGljaxgDIAEoCBIgCgpDaGVja0luQ2ZnGAQgAygLMgwuTXNnQ29t",
-          "bW9uS1YieAoXTXNnVHVybnRhYmxlSGlzdG9yeURhdGESDwoHdXNlcl9pZBgB",
-          "IAEoBRINCgVzY29yZRgCIAEoBRINCgVhd2FyZBgDIAEoBRIMCgR0eXBlGAQg",
-          "ASgFEhIKCmF3YXJkX3R5cGUYBSABKAUSDAoEdGltZRgGIAEoCSJLCg9Nc2dU",
-          "dXJuUGxheUluZm8SEAoIcGxheV9udW0YASABKAUSEgoKbGltaXRfdHVybhgC",
-          "IAEoBRISCgpuZWVkX3Njb3JlGAMgASgFIkwKCk1zZ1R1cm5DZmcSDQoFaW5k",
-          "ZXgYASABKAUSDQoFYXJ3YWQYAiABKAUSEgoKYXJ3YWRfdHlwZRgDIAEoBRIM",
-          "CgR0eXBlGAQgASgFIoACChBNc2dUdXJudGFibGVEYXRhEg0KBXNjb3JlGAEg",
-          "ASgDEhAKCHR1cm5fcHJvGAIgASgFEhQKDHR1cm5fbWF4X3BybxgDIAEoBRIl",
-          "CgtzaWx2ZXJfaW5mbxgEIAEoCzIQLk1zZ1R1cm5QbGF5SW5mbxIjCglnb2xk",
-          "X2luZm8YBSABKAsyEC5Nc2dUdXJuUGxheUluZm8SHwoKc2lsdmVyX2NmZxgG",
-          "IAMoCzILLk1zZ1R1cm5DZmcSHQoIZ29sZF9jZmcYByADKAsyCy5Nc2dUdXJu",
-          "Q2ZnEikKB2hpc3RvcnkYCCADKAsyGC5Nc2dUdXJudGFibGVIaXN0b3J5RGF0",
-          "YSIrCgxNc2dNYWlsc0luZm8SGwoFbWFpbHMYASADKAsyDC5Nc2dNYWlsRGF0",
-          "YSKsAQoLTXNnTWFpbERhdGESDwoHbWFpbF9pZBgBIAEoBRIUCgxzZW5kX3Vz",
-          "ZXJfaWQYAiABKAUSEQoJc2VuZF90aW1lGAMgASgFEg0KBXRpdGxlGAQgASgJ",
-          "Eg8KB2NvbnRlbnQYBSABKAkSDAoEZ29sZBgGIAEoAxIPCgdpc19yZWFkGAcg",
-          "ASgIEhAKCGlzX2NsYWltGAggASgIEhIKCnRvX3VzZXJfaWQYCSABKAUiNgoM",
-          "TXNnU2hhcmVEYXRhEhMKC2ludml0ZV9jb2RlGAEgASgJEhEKCWJpbmRfbGlz",
-          "dBgCIAMoBSIkChFNc2dCaW5kUGFyZW50RGF0YRIPCgdzdHJDb2RlGAEgASgJ",
-          "ImMKEk1zZ0ludml0ZUF3YXJkSW5mbxIRCglpbnZpdGVOdW0YASABKAUSEQoJ",
-          "cGlja0luZGV4GAIgASgFEicKCGF3YXJkQ2ZnGAMgAygLMhUuTXNnSW52aXRl",
-          "QXdhcmRDb25maWciOAoUTXNnSW52aXRlQXdhcmRDb25maWcSEQoJaW52aXRl",
-          "TnVtGAEgASgFEg0KBWF3YXJkGAIgASgFIncKD01zZ1JlY2hhcmdlSW5mbxIR",
-          "CglpbnZpdGVOdW0YASABKAUSEgoKdG9kYXlBd2FyZBgCIAEoAxISCgp0b3Rh",
-          "bEF3YXJkGAMgASgDEhUKDWNhblBpY2tBbW91bnQYBCABKAMSEgoKaW52aXRl",
-          "Q29kZRgFIAEoCSJMChhNc2dRdWVyeVJlYmF0ZVJlY29yZEluZm8SMAoRcXVl",
-          "cnlSZWJhdGVSZWNvcmQYASADKAsyFS5Nc2dRdWVyeVJlYmF0ZVJlY29yZCJW",
-          "ChRNc2dRdWVyeVJlYmF0ZVJlY29yZBIWCg5yZWNoYXJnZVVzZXJJZBgBIAEo",
-          "BRIWCg5yZWNoYXJnZUFtb3VudBgCIAEoBRIOCgZyZWJhdGUYAyABKAUiWwoR",
-          "TXNnRm9yZ2V0UGFzc3dvcmQSEwoLY2xpZW50X3R5cGUYASABKAUSDQoFcGhv",
-          "bmUYAiABKAkSDAoEY29kZRgDIAEoBRIUCgxuZXdfcGFzc3dvcmQYBCABKAki",
-          "9gEKCk1zZ1ZJUEluZm8SEQoJdmlwX2xldmVsGAEgASgFEhIKCm5lZWRfc2Nv",
-          "cmUYAiABKAMSFQoNdHVybnRhYmxlX251bRgDIAEoBRIYChB0cnVtcGV0X2Rp",
-          "c2NvdW50GAQgASgFEhYKDmNoZWNrX2FkZGl0aW9uGAUgASgFEhYKDnNoYXJl",
-          "X2FkZGl0aW9uGAYgASgFEhIKCndvcmxkX2NoYXQYByABKAgSDgoGYXZhdGFy",
-          "GAggASgFEhQKDGF2YXRhcl9mcmFtZRgJIAEoBRISCgphd2FyZF9nb2xkGAog",
-          "ASgFEhIKCm9uZV90b19vbmUYCyABKAgiLQoMTXNnVklQQ29uZmlnEh0KCHZp",
-          "cF9pbmZvGAEgAygLMgsuTXNnVklQSW5mbyIvCg1Nc2dVcGdyYWRlVklQEhAK",
-          "CHJlc19jb2RlGAEgASgFEgwKBGdvbGQYAiABKAMiIwoQTXNnR2V0QXZhdGFy",
-          "SW5mbxIPCgdhdmF0YXJzGAEgAygFIuABCg1Nc2dQbGF5ZXJJbmZvEg8KB3Vz",
-          "ZXJfaWQYASABKAUSFAoMYmVhdXRpZnVsX2lkGAIgASgFEhAKCG5pY2tuYW1l",
-          "GAMgASgJEg4KBmF2YXRhchgEIAEoCRIMCgRjb2luGAUgASgEEhEKCXBob25l",
-          "X251bRgGIAEoCRIRCgl2aXBfbGV2ZWwYByABKAUSFAoMYXZhdGFyX2ZyYW1l",
-          "GAggASgFEhEKCXNpZ25hdHVyZRgJIAEoCRITCgt6bWRfZ2FtZV9pZBgKIAEo",
-          "BRIUCgx6bWRfd2luX2dvbGQYCyABKAQiMwoNTXNnQWN0aXZlSW5mbxIPCgd1",
-          "c2VyX2lkGAEgASgFEhEKCWFjdGl2ZV9pZBgCIAEoBSLYAQoNQWN0aXZlSW5m",
-          "b1JldBIRCglhY3RpdmVfaWQYASABKAUSFQoNc3ViX2FjdGl2ZV9pZBgCIAEo",
-          "BRIOCgZwYXJhbTEYAyABKAUSDgoGcGFyYW0yGAQgASgFEg4KBnBhcmFtMxgF",
-          "IAEoBRIRCglwcm9ncmVzczEYBiABKAUSEQoJcHJvZ3Jlc3MyGAcgASgFEhEK",
-          "CXByb2dyZXNzMxgIIAEoBRIOCgZyZXdhcmQYCSABKAUSEwoLcmV3YXJkX3R5",
-          "cGUYCiABKAUSDwoHaXNfcGljaxgLIAEoCCI2ChJNc2dBY3RpdmVJbmZvU0NS",
-          "ZXQSIAoIdmVjX2luZm8YASADKAsyDi5BY3RpdmVJbmZvUmV0IlAKE01zZ0Fj",
-          "dGl2ZUluZm9DU1BpY2sSDwoHdXNlcl9pZBgBIAEoBRIRCglhY3RpdmVfaWQY",
-          "AiABKAUSFQoNc3ViX2FjdGl2ZV9pZBgDIAEoBSLrAQoTTXNnQWN0aXZlSW5m",
-          "b1NDUGljaxIRCglhY3RpdmVfaWQYASABKAUSFQoNc3ViX2FjdGl2ZV9pZBgC",
-          "IAEoBRIOCgZwYXJhbTEYAyABKAUSDgoGcGFyYW0yGAQgASgFEg4KBnBhcmFt",
-          "MxgFIAEoBRIRCglwcm9ncmVzczEYBiABKAUSEQoJcHJvZ3Jlc3MyGAcgASgF",
-          "EhEKCXByb2dyZXNzMxgIIAEoBRIOCgZyZXdhcmQYCSABKAUSEwoLcmV3YXJk",
-          "X3R5cGUYCiABKAUSDwoHaXNfcGljaxgLIAEoBRILCgNyZXMYDCABKAgiOAoS",
-          "TXNnTW9kaWZ5U2lnbmF0dXJlEg8KB3VzZXJfaWQYASABKAUSEQoJc2lnbmF0",
-          "dXJlGAIgASgJIjcKFU1zZ0JhbmtDaGFuZ2VQYXNzd29yZBIQCghwYXNzd29y",
-          "ZBgBIAEoCRIMCgRjb2RlGAIgASgFIjQKDk1zZ0JhbmtPcGVyYXRlEgwKBGdv",
-          "bGQYASABKAMSFAoMb3BlcmF0ZV90eXBlGAIgASgFIkkKDk1zZ0JhbmtUYWtl",
-          "T3V0EhEKCXJldF92YWx1ZRgBIAEoBRIRCgl1c2VyX2dvbGQYAiABKAMSEQoJ",
-          "YmFua19nb2xkGAMgASgDIj4KD01zZ0JhbmtUcmFuc2ZlchIUCgxyZWN2X3Vz",
-          "ZXJfaWQYASABKAUSFQoNdHJhbnNmZXJfZ29sZBgCIAEoAyKKAQoKTXNnVG9w",
-          "SW5mbxIPCgdyYW5rX2lkGAEgASgFEg8KB3VzZXJfaWQYAiABKAUSDAoEZ29s",
-          "ZBgDIAEoBBIRCgl2aXBfbGV2ZWwYBCABKA0SFAoMYXZhdGFyX2ZyYW1lGAUg",
-          "ASgFEhAKCGhlYWRfdXJsGAYgASgJEhEKCW5pY2tfbmFtZRgHIAEoCSJXCgpN",
-          "c2dHZXRSYW5rEhEKCXJhbmtfdHlwZRgBIAEoBRIPCgd1c2VyX2lkGAIgASgF",
-          "EhQKDGN1cnJlbnRfcGFnZRgDIAEoBRIPCgdtYXhfcm93GAQgASgFIosBCg5N",
-          "c2dUb3BMaXN0UmVzcBIPCgd1c2VyX2lkGAEgASgFEhEKCXJhbmtfdHlwZRgC",
-          "IAEoBRIWCg50aGlzX3JhbmtfbmRleBgDIAEoBRIRCgl0aGlzX2dvbGQYBCAB",
-          "KAUSDgoGaXNfZW5kGAUgASgFEhoKBWxpc3RzGAYgAygLMgsuTXNnVG9wSW5m",
-          "byI7ChNNc2dCYW5rVHJhbnNmZXJSZXNwEhEKCXJldF92YWx1ZRgBIAEoBRIR",
-          "CgliYW5rX2dvbGQYAiABKAMiZAoNTXNnQmFua1JlY29yZBIXCg9vcGVyYXRl",
-          "X3VzZXJfaWQYASABKAUSFQoNdHJhbnNmZXJfZ29sZBgCIAEoAxINCgV0aW1l",
-          "chgDIAEoCRIUCgxvcGVyYXRlX3R5cGUYBCABKAUiNAoRTXNnQmFua1JlY29y",
-          "ZFJlc3ASHwoHcmVjb3JkcxgBIAMoCzIOLk1zZ0JhbmtSZWNvcmQiMAoMTXNn",
-          "UGhvbmVDb2RlEhEKCWFyZWFfY29kZRgBIAEoCRINCgVwaG9uZRgCIAEoCWIG",
-          "cHJvdG8z"));
+          "bW9uS1YiiwEKF01zZ1R1cm50YWJsZUhpc3RvcnlEYXRhEg8KB3VzZXJfaWQY",
+          "ASABKAUSEQoJbmlja19uYW1lGAIgASgJEg0KBXNjb3JlGAMgASgFEg0KBWF3",
+          "YXJkGAQgASgFEgwKBHR5cGUYBSABKAUSEgoKYXdhcmRfdHlwZRgGIAEoBRIM",
+          "CgR0aW1lGAcgASgJIksKD01zZ1R1cm5QbGF5SW5mbxIQCghwbGF5X251bRgB",
+          "IAEoBRISCgpsaW1pdF90dXJuGAIgASgFEhIKCm5lZWRfc2NvcmUYAyABKAUi",
+          "TAoKTXNnVHVybkNmZxINCgVpbmRleBgBIAEoBRINCgVhcndhZBgCIAEoBRIS",
+          "CgphcndhZF90eXBlGAMgASgFEgwKBHR5cGUYBCABKAUitAIKEE1zZ1R1cm50",
+          "YWJsZURhdGESDQoFc2NvcmUYASABKAMSEAoIdHVybl9wcm8YAiABKAUSFAoM",
+          "dHVybl9tYXhfcHJvGAMgASgFEiUKC3NpbHZlcl9pbmZvGAQgASgLMhAuTXNn",
+          "VHVyblBsYXlJbmZvEiMKCWdvbGRfaW5mbxgFIAEoCzIQLk1zZ1R1cm5QbGF5",
+          "SW5mbxIfCgpzaWx2ZXJfY2ZnGAYgAygLMgsuTXNnVHVybkNmZxIdCghnb2xk",
+          "X2NmZxgHIAMoCzILLk1zZ1R1cm5DZmcSLgoMdGhpc19oaXN0b3J5GAggAygL",
+          "MhguTXNnVHVybnRhYmxlSGlzdG9yeURhdGESLQoLYmlnX2hpc3RvcnkYCSAD",
+          "KAsyGC5Nc2dUdXJudGFibGVIaXN0b3J5RGF0YSIrCgxNc2dNYWlsc0luZm8S",
+          "GwoFbWFpbHMYASADKAsyDC5Nc2dNYWlsRGF0YSKsAQoLTXNnTWFpbERhdGES",
+          "DwoHbWFpbF9pZBgBIAEoBRIUCgxzZW5kX3VzZXJfaWQYAiABKAUSEQoJc2Vu",
+          "ZF90aW1lGAMgASgFEg0KBXRpdGxlGAQgASgJEg8KB2NvbnRlbnQYBSABKAkS",
+          "DAoEZ29sZBgGIAEoAxIPCgdpc19yZWFkGAcgASgIEhAKCGlzX2NsYWltGAgg",
+          "ASgIEhIKCnRvX3VzZXJfaWQYCSABKAUiNgoMTXNnU2hhcmVEYXRhEhMKC2lu",
+          "dml0ZV9jb2RlGAEgASgJEhEKCWJpbmRfbGlzdBgCIAMoBSIkChFNc2dCaW5k",
+          "UGFyZW50RGF0YRIPCgdzdHJDb2RlGAEgASgJImMKEk1zZ0ludml0ZUF3YXJk",
+          "SW5mbxIRCglpbnZpdGVOdW0YASABKAUSEQoJcGlja0luZGV4GAIgASgFEicK",
+          "CGF3YXJkQ2ZnGAMgAygLMhUuTXNnSW52aXRlQXdhcmRDb25maWciOAoUTXNn",
+          "SW52aXRlQXdhcmRDb25maWcSEQoJaW52aXRlTnVtGAEgASgFEg0KBWF3YXJk",
+          "GAIgASgFIncKD01zZ1JlY2hhcmdlSW5mbxIRCglpbnZpdGVOdW0YASABKAUS",
+          "EgoKdG9kYXlBd2FyZBgCIAEoAxISCgp0b3RhbEF3YXJkGAMgASgDEhUKDWNh",
+          "blBpY2tBbW91bnQYBCABKAMSEgoKaW52aXRlQ29kZRgFIAEoCSJMChhNc2dR",
+          "dWVyeVJlYmF0ZVJlY29yZEluZm8SMAoRcXVlcnlSZWJhdGVSZWNvcmQYASAD",
+          "KAsyFS5Nc2dRdWVyeVJlYmF0ZVJlY29yZCJWChRNc2dRdWVyeVJlYmF0ZVJl",
+          "Y29yZBIWCg5yZWNoYXJnZVVzZXJJZBgBIAEoBRIWCg5yZWNoYXJnZUFtb3Vu",
+          "dBgCIAEoBRIOCgZyZWJhdGUYAyABKAUiWwoRTXNnRm9yZ2V0UGFzc3dvcmQS",
+          "EwoLY2xpZW50X3R5cGUYASABKAUSDQoFcGhvbmUYAiABKAkSDAoEY29kZRgD",
+          "IAEoBRIUCgxuZXdfcGFzc3dvcmQYBCABKAki9gEKCk1zZ1ZJUEluZm8SEQoJ",
+          "dmlwX2xldmVsGAEgASgFEhIKCm5lZWRfc2NvcmUYAiABKAMSFQoNdHVybnRh",
+          "YmxlX251bRgDIAEoBRIYChB0cnVtcGV0X2Rpc2NvdW50GAQgASgFEhYKDmNo",
+          "ZWNrX2FkZGl0aW9uGAUgASgFEhYKDnNoYXJlX2FkZGl0aW9uGAYgASgFEhIK",
+          "CndvcmxkX2NoYXQYByABKAgSDgoGYXZhdGFyGAggASgFEhQKDGF2YXRhcl9m",
+          "cmFtZRgJIAEoBRISCgphd2FyZF9nb2xkGAogASgFEhIKCm9uZV90b19vbmUY",
+          "CyABKAgiLQoMTXNnVklQQ29uZmlnEh0KCHZpcF9pbmZvGAEgAygLMgsuTXNn",
+          "VklQSW5mbyIvCg1Nc2dVcGdyYWRlVklQEhAKCHJlc19jb2RlGAEgASgFEgwK",
+          "BGdvbGQYAiABKAMiIwoQTXNnR2V0QXZhdGFySW5mbxIPCgdhdmF0YXJzGAEg",
+          "AygFIuABCg1Nc2dQbGF5ZXJJbmZvEg8KB3VzZXJfaWQYASABKAUSFAoMYmVh",
+          "dXRpZnVsX2lkGAIgASgFEhAKCG5pY2tuYW1lGAMgASgJEg4KBmF2YXRhchgE",
+          "IAEoCRIMCgRjb2luGAUgASgEEhEKCXBob25lX251bRgGIAEoCRIRCgl2aXBf",
+          "bGV2ZWwYByABKAUSFAoMYXZhdGFyX2ZyYW1lGAggASgFEhEKCXNpZ25hdHVy",
+          "ZRgJIAEoCRITCgt6bWRfZ2FtZV9pZBgKIAEoBRIUCgx6bWRfd2luX2dvbGQY",
+          "CyABKAQiMwoNTXNnQWN0aXZlSW5mbxIPCgd1c2VyX2lkGAEgASgFEhEKCWFj",
+          "dGl2ZV9pZBgCIAEoBSLYAQoNQWN0aXZlSW5mb1JldBIRCglhY3RpdmVfaWQY",
+          "ASABKAUSFQoNc3ViX2FjdGl2ZV9pZBgCIAEoBRIOCgZwYXJhbTEYAyABKAUS",
+          "DgoGcGFyYW0yGAQgASgFEg4KBnBhcmFtMxgFIAEoBRIRCglwcm9ncmVzczEY",
+          "BiABKAUSEQoJcHJvZ3Jlc3MyGAcgASgFEhEKCXByb2dyZXNzMxgIIAEoBRIO",
+          "CgZyZXdhcmQYCSABKAUSEwoLcmV3YXJkX3R5cGUYCiABKAUSDwoHaXNfcGlj",
+          "axgLIAEoCCI2ChJNc2dBY3RpdmVJbmZvU0NSZXQSIAoIdmVjX2luZm8YASAD",
+          "KAsyDi5BY3RpdmVJbmZvUmV0IlAKE01zZ0FjdGl2ZUluZm9DU1BpY2sSDwoH",
+          "dXNlcl9pZBgBIAEoBRIRCglhY3RpdmVfaWQYAiABKAUSFQoNc3ViX2FjdGl2",
+          "ZV9pZBgDIAEoBSLrAQoTTXNnQWN0aXZlSW5mb1NDUGljaxIRCglhY3RpdmVf",
+          "aWQYASABKAUSFQoNc3ViX2FjdGl2ZV9pZBgCIAEoBRIOCgZwYXJhbTEYAyAB",
+          "KAUSDgoGcGFyYW0yGAQgASgFEg4KBnBhcmFtMxgFIAEoBRIRCglwcm9ncmVz",
+          "czEYBiABKAUSEQoJcHJvZ3Jlc3MyGAcgASgFEhEKCXByb2dyZXNzMxgIIAEo",
+          "BRIOCgZyZXdhcmQYCSABKAUSEwoLcmV3YXJkX3R5cGUYCiABKAUSDwoHaXNf",
+          "cGljaxgLIAEoBRILCgNyZXMYDCABKAgiOAoSTXNnTW9kaWZ5U2lnbmF0dXJl",
+          "Eg8KB3VzZXJfaWQYASABKAUSEQoJc2lnbmF0dXJlGAIgASgJIjcKFU1zZ0Jh",
+          "bmtDaGFuZ2VQYXNzd29yZBIQCghwYXNzd29yZBgBIAEoCRIMCgRjb2RlGAIg",
+          "ASgFIjQKDk1zZ0JhbmtPcGVyYXRlEgwKBGdvbGQYASABKAMSFAoMb3BlcmF0",
+          "ZV90eXBlGAIgASgFIkkKDk1zZ0JhbmtUYWtlT3V0EhEKCXJldF92YWx1ZRgB",
+          "IAEoBRIRCgl1c2VyX2dvbGQYAiABKAMSEQoJYmFua19nb2xkGAMgASgDIj4K",
+          "D01zZ0JhbmtUcmFuc2ZlchIUCgxyZWN2X3VzZXJfaWQYASABKAUSFQoNdHJh",
+          "bnNmZXJfZ29sZBgCIAEoAyKKAQoKTXNnVG9wSW5mbxIPCgdyYW5rX2lkGAEg",
+          "ASgFEg8KB3VzZXJfaWQYAiABKAUSDAoEZ29sZBgDIAEoBBIRCgl2aXBfbGV2",
+          "ZWwYBCABKA0SFAoMYXZhdGFyX2ZyYW1lGAUgASgFEhAKCGhlYWRfdXJsGAYg",
+          "ASgJEhEKCW5pY2tfbmFtZRgHIAEoCSJXCgpNc2dHZXRSYW5rEhEKCXJhbmtf",
+          "dHlwZRgBIAEoBRIPCgd1c2VyX2lkGAIgASgFEhQKDGN1cnJlbnRfcGFnZRgD",
+          "IAEoBRIPCgdtYXhfcm93GAQgASgFIosBCg5Nc2dUb3BMaXN0UmVzcBIPCgd1",
+          "c2VyX2lkGAEgASgFEhEKCXJhbmtfdHlwZRgCIAEoBRIWCg50aGlzX3Jhbmtf",
+          "bmRleBgDIAEoBRIRCgl0aGlzX2dvbGQYBCABKAUSDgoGaXNfZW5kGAUgASgF",
+          "EhoKBWxpc3RzGAYgAygLMgsuTXNnVG9wSW5mbyI7ChNNc2dCYW5rVHJhbnNm",
+          "ZXJSZXNwEhEKCXJldF92YWx1ZRgBIAEoBRIRCgliYW5rX2dvbGQYAiABKAMi",
+          "ZAoNTXNnQmFua1JlY29yZBIXCg9vcGVyYXRlX3VzZXJfaWQYASABKAUSFQoN",
+          "dHJhbnNmZXJfZ29sZBgCIAEoAxINCgV0aW1lchgDIAEoCRIUCgxvcGVyYXRl",
+          "X3R5cGUYBCABKAUiNAoRTXNnQmFua1JlY29yZFJlc3ASHwoHcmVjb3JkcxgB",
+          "IAMoCzIOLk1zZ0JhbmtSZWNvcmQiMAoMTXNnUGhvbmVDb2RlEhEKCWFyZWFf",
+          "Y29kZRgBIAEoCRINCgVwaG9uZRgCIAEoCWIGcHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -133,10 +134,10 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBindPhone), global::MsgBindPhone.Parser, new[]{ "Code", "PhoneNum", "Password", "InviteCode" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgCommonKV), global::MsgCommonKV.Parser, new[]{ "K", "V" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgCheckInInfo), global::MsgCheckInInfo.Parser, new[]{ "CheckDays", "IsOpen", "CanPick", "CheckInCfg" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurntableHistoryData), global::MsgTurntableHistoryData.Parser, new[]{ "UserId", "Score", "Award", "Type", "AwardType", "Time" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurntableHistoryData), global::MsgTurntableHistoryData.Parser, new[]{ "UserId", "NickName", "Score", "Award", "Type", "AwardType", "Time" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurnPlayInfo), global::MsgTurnPlayInfo.Parser, new[]{ "PlayNum", "LimitTurn", "NeedScore" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurnCfg), global::MsgTurnCfg.Parser, new[]{ "Index", "Arwad", "ArwadType", "Type" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurntableData), global::MsgTurntableData.Parser, new[]{ "Score", "TurnPro", "TurnMaxPro", "SilverInfo", "GoldInfo", "SilverCfg", "GoldCfg", "History" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurntableData), global::MsgTurntableData.Parser, new[]{ "Score", "TurnPro", "TurnMaxPro", "SilverInfo", "GoldInfo", "SilverCfg", "GoldCfg", "ThisHistory", "BigHistory" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgMailsInfo), global::MsgMailsInfo.Parser, new[]{ "Mails" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgMailData), global::MsgMailData.Parser, new[]{ "MailId", "SendUserId", "SendTime", "Title", "Content", "Gold", "IsRead", "IsClaim", "ToUserId" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgShareData), global::MsgShareData.Parser, new[]{ "InviteCode", "BindList" }, null, null, null, null),
@@ -2705,6 +2706,7 @@ public sealed partial class MsgTurntableHistoryData : pb::IMessage<MsgTurntableH
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public MsgTurntableHistoryData(MsgTurntableHistoryData other) : this() {
     userId_ = other.userId_;
+    nickName_ = other.nickName_;
     score_ = other.score_;
     award_ = other.award_;
     type_ = other.type_;
@@ -2732,8 +2734,22 @@ public sealed partial class MsgTurntableHistoryData : pb::IMessage<MsgTurntableH
     }
   }
 
+  /// <summary>Field number for the "nick_name" field.</summary>
+  public const int NickNameFieldNumber = 2;
+  private string nickName_ = "";
+  /// <summary>
+  ///昵称 
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string NickName {
+    get { return nickName_; }
+    set {
+      nickName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
   /// <summary>Field number for the "score" field.</summary>
-  public const int ScoreFieldNumber = 2;
+  public const int ScoreFieldNumber = 3;
   private int score_;
   /// <summary>
   ///使用积分
@@ -2747,7 +2763,7 @@ public sealed partial class MsgTurntableHistoryData : pb::IMessage<MsgTurntableH
   }
 
   /// <summary>Field number for the "award" field.</summary>
-  public const int AwardFieldNumber = 3;
+  public const int AwardFieldNumber = 4;
   private int award_;
   /// <summary>
   ///转盘奖励
@@ -2761,7 +2777,7 @@ public sealed partial class MsgTurntableHistoryData : pb::IMessage<MsgTurntableH
   }
 
   /// <summary>Field number for the "type" field.</summary>
-  public const int TypeFieldNumber = 4;
+  public const int TypeFieldNumber = 5;
   private int type_;
   /// <summary>
   ///类型(0:个人 1:大赢家)
@@ -2775,7 +2791,7 @@ public sealed partial class MsgTurntableHistoryData : pb::IMessage<MsgTurntableH
   }
 
   /// <summary>Field number for the "award_type" field.</summary>
-  public const int AwardTypeFieldNumber = 5;
+  public const int AwardTypeFieldNumber = 6;
   private int awardType_;
   /// <summary>
   ///奖励类型
@@ -2789,7 +2805,7 @@ public sealed partial class MsgTurntableHistoryData : pb::IMessage<MsgTurntableH
   }
 
   /// <summary>Field number for the "time" field.</summary>
-  public const int TimeFieldNumber = 6;
+  public const int TimeFieldNumber = 7;
   private string time_ = "";
   /// <summary>
   ///时间
@@ -2816,6 +2832,7 @@ public sealed partial class MsgTurntableHistoryData : pb::IMessage<MsgTurntableH
       return true;
     }
     if (UserId != other.UserId) return false;
+    if (NickName != other.NickName) return false;
     if (Score != other.Score) return false;
     if (Award != other.Award) return false;
     if (Type != other.Type) return false;
@@ -2828,6 +2845,7 @@ public sealed partial class MsgTurntableHistoryData : pb::IMessage<MsgTurntableH
   public override int GetHashCode() {
     int hash = 1;
     if (UserId != 0) hash ^= UserId.GetHashCode();
+    if (NickName.Length != 0) hash ^= NickName.GetHashCode();
     if (Score != 0) hash ^= Score.GetHashCode();
     if (Award != 0) hash ^= Award.GetHashCode();
     if (Type != 0) hash ^= Type.GetHashCode();
@@ -2853,24 +2871,28 @@ public sealed partial class MsgTurntableHistoryData : pb::IMessage<MsgTurntableH
       output.WriteRawTag(8);
       output.WriteInt32(UserId);
     }
+    if (NickName.Length != 0) {
+      output.WriteRawTag(18);
+      output.WriteString(NickName);
+    }
     if (Score != 0) {
-      output.WriteRawTag(16);
+      output.WriteRawTag(24);
       output.WriteInt32(Score);
     }
     if (Award != 0) {
-      output.WriteRawTag(24);
+      output.WriteRawTag(32);
       output.WriteInt32(Award);
     }
     if (Type != 0) {
-      output.WriteRawTag(32);
+      output.WriteRawTag(40);
       output.WriteInt32(Type);
     }
     if (AwardType != 0) {
-      output.WriteRawTag(40);
+      output.WriteRawTag(48);
       output.WriteInt32(AwardType);
     }
     if (Time.Length != 0) {
-      output.WriteRawTag(50);
+      output.WriteRawTag(58);
       output.WriteString(Time);
     }
     if (_unknownFields != null) {
@@ -2886,24 +2908,28 @@ public sealed partial class MsgTurntableHistoryData : pb::IMessage<MsgTurntableH
       output.WriteRawTag(8);
       output.WriteInt32(UserId);
     }
+    if (NickName.Length != 0) {
+      output.WriteRawTag(18);
+      output.WriteString(NickName);
+    }
     if (Score != 0) {
-      output.WriteRawTag(16);
+      output.WriteRawTag(24);
       output.WriteInt32(Score);
     }
     if (Award != 0) {
-      output.WriteRawTag(24);
+      output.WriteRawTag(32);
       output.WriteInt32(Award);
     }
     if (Type != 0) {
-      output.WriteRawTag(32);
+      output.WriteRawTag(40);
       output.WriteInt32(Type);
     }
     if (AwardType != 0) {
-      output.WriteRawTag(40);
+      output.WriteRawTag(48);
       output.WriteInt32(AwardType);
     }
     if (Time.Length != 0) {
-      output.WriteRawTag(50);
+      output.WriteRawTag(58);
       output.WriteString(Time);
     }
     if (_unknownFields != null) {
@@ -2917,6 +2943,9 @@ public sealed partial class MsgTurntableHistoryData : pb::IMessage<MsgTurntableH
     int size = 0;
     if (UserId != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserId);
+    }
+    if (NickName.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(NickName);
     }
     if (Score != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(Score);
@@ -2946,6 +2975,9 @@ public sealed partial class MsgTurntableHistoryData : pb::IMessage<MsgTurntableH
     }
     if (other.UserId != 0) {
       UserId = other.UserId;
+    }
+    if (other.NickName.Length != 0) {
+      NickName = other.NickName;
     }
     if (other.Score != 0) {
       Score = other.Score;
@@ -2980,23 +3012,27 @@ public sealed partial class MsgTurntableHistoryData : pb::IMessage<MsgTurntableH
           UserId = input.ReadInt32();
           break;
         }
-        case 16: {
-          Score = input.ReadInt32();
+        case 18: {
+          NickName = input.ReadString();
           break;
         }
         case 24: {
-          Award = input.ReadInt32();
+          Score = input.ReadInt32();
           break;
         }
         case 32: {
-          Type = input.ReadInt32();
+          Award = input.ReadInt32();
           break;
         }
         case 40: {
+          Type = input.ReadInt32();
+          break;
+        }
+        case 48: {
           AwardType = input.ReadInt32();
           break;
         }
-        case 50: {
+        case 58: {
           Time = input.ReadString();
           break;
         }
@@ -3018,23 +3054,27 @@ public sealed partial class MsgTurntableHistoryData : pb::IMessage<MsgTurntableH
           UserId = input.ReadInt32();
           break;
         }
-        case 16: {
-          Score = input.ReadInt32();
+        case 18: {
+          NickName = input.ReadString();
           break;
         }
         case 24: {
-          Award = input.ReadInt32();
+          Score = input.ReadInt32();
           break;
         }
         case 32: {
-          Type = input.ReadInt32();
+          Award = input.ReadInt32();
           break;
         }
         case 40: {
+          Type = input.ReadInt32();
+          break;
+        }
+        case 48: {
           AwardType = input.ReadInt32();
           break;
         }
-        case 50: {
+        case 58: {
           Time = input.ReadString();
           break;
         }
@@ -3629,7 +3669,8 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
     goldInfo_ = other.goldInfo_ != null ? other.goldInfo_.Clone() : null;
     silverCfg_ = other.silverCfg_.Clone();
     goldCfg_ = other.goldCfg_.Clone();
-    history_ = other.history_.Clone();
+    thisHistory_ = other.thisHistory_.Clone();
+    bigHistory_ = other.bigHistory_.Clone();
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -3734,17 +3775,30 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
     get { return goldCfg_; }
   }
 
-  /// <summary>Field number for the "history" field.</summary>
-  public const int HistoryFieldNumber = 8;
-  private static readonly pb::FieldCodec<global::MsgTurntableHistoryData> _repeated_history_codec
+  /// <summary>Field number for the "this_history" field.</summary>
+  public const int ThisHistoryFieldNumber = 8;
+  private static readonly pb::FieldCodec<global::MsgTurntableHistoryData> _repeated_thisHistory_codec
       = pb::FieldCodec.ForMessage(66, global::MsgTurntableHistoryData.Parser);
-  private readonly pbc::RepeatedField<global::MsgTurntableHistoryData> history_ = new pbc::RepeatedField<global::MsgTurntableHistoryData>();
+  private readonly pbc::RepeatedField<global::MsgTurntableHistoryData> thisHistory_ = new pbc::RepeatedField<global::MsgTurntableHistoryData>();
   /// <summary>
-  ///历史数据
+  ///自己的历史数据
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public pbc::RepeatedField<global::MsgTurntableHistoryData> History {
-    get { return history_; }
+  public pbc::RepeatedField<global::MsgTurntableHistoryData> ThisHistory {
+    get { return thisHistory_; }
+  }
+
+  /// <summary>Field number for the "big_history" field.</summary>
+  public const int BigHistoryFieldNumber = 9;
+  private static readonly pb::FieldCodec<global::MsgTurntableHistoryData> _repeated_bigHistory_codec
+      = pb::FieldCodec.ForMessage(74, global::MsgTurntableHistoryData.Parser);
+  private readonly pbc::RepeatedField<global::MsgTurntableHistoryData> bigHistory_ = new pbc::RepeatedField<global::MsgTurntableHistoryData>();
+  /// <summary>
+  ///大赢家历史数据
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<global::MsgTurntableHistoryData> BigHistory {
+    get { return bigHistory_; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3767,7 +3821,8 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
     if (!object.Equals(GoldInfo, other.GoldInfo)) return false;
     if(!silverCfg_.Equals(other.silverCfg_)) return false;
     if(!goldCfg_.Equals(other.goldCfg_)) return false;
-    if(!history_.Equals(other.history_)) return false;
+    if(!thisHistory_.Equals(other.thisHistory_)) return false;
+    if(!bigHistory_.Equals(other.bigHistory_)) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -3781,7 +3836,8 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
     if (goldInfo_ != null) hash ^= GoldInfo.GetHashCode();
     hash ^= silverCfg_.GetHashCode();
     hash ^= goldCfg_.GetHashCode();
-    hash ^= history_.GetHashCode();
+    hash ^= thisHistory_.GetHashCode();
+    hash ^= bigHistory_.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -3820,7 +3876,8 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
     }
     silverCfg_.WriteTo(output, _repeated_silverCfg_codec);
     goldCfg_.WriteTo(output, _repeated_goldCfg_codec);
-    history_.WriteTo(output, _repeated_history_codec);
+    thisHistory_.WriteTo(output, _repeated_thisHistory_codec);
+    bigHistory_.WriteTo(output, _repeated_bigHistory_codec);
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -3852,7 +3909,8 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
     }
     silverCfg_.WriteTo(ref output, _repeated_silverCfg_codec);
     goldCfg_.WriteTo(ref output, _repeated_goldCfg_codec);
-    history_.WriteTo(ref output, _repeated_history_codec);
+    thisHistory_.WriteTo(ref output, _repeated_thisHistory_codec);
+    bigHistory_.WriteTo(ref output, _repeated_bigHistory_codec);
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -3879,7 +3937,8 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
     }
     size += silverCfg_.CalculateSize(_repeated_silverCfg_codec);
     size += goldCfg_.CalculateSize(_repeated_goldCfg_codec);
-    size += history_.CalculateSize(_repeated_history_codec);
+    size += thisHistory_.CalculateSize(_repeated_thisHistory_codec);
+    size += bigHistory_.CalculateSize(_repeated_bigHistory_codec);
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
     }
@@ -3914,7 +3973,8 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
     }
     silverCfg_.Add(other.silverCfg_);
     goldCfg_.Add(other.goldCfg_);
-    history_.Add(other.history_);
+    thisHistory_.Add(other.thisHistory_);
+    bigHistory_.Add(other.bigHistory_);
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
 
@@ -3964,7 +4024,11 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
           break;
         }
         case 66: {
-          history_.AddEntriesFrom(input, _repeated_history_codec);
+          thisHistory_.AddEntriesFrom(input, _repeated_thisHistory_codec);
+          break;
+        }
+        case 74: {
+          bigHistory_.AddEntriesFrom(input, _repeated_bigHistory_codec);
           break;
         }
       }
@@ -4016,7 +4080,11 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
           break;
         }
         case 66: {
-          history_.AddEntriesFrom(ref input, _repeated_history_codec);
+          thisHistory_.AddEntriesFrom(ref input, _repeated_thisHistory_codec);
+          break;
+        }
+        case 74: {
+          bigHistory_.AddEntriesFrom(ref input, _repeated_bigHistory_codec);
           break;
         }
       }

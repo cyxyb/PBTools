@@ -75,11 +75,12 @@ message MsgCheckInInfo
 message MsgTurntableHistoryData
 {
 	int32		user_id					= 1;	//玩家ID
-	int32		score					= 2;	//使用积分
-	int32		award					= 3;	//转盘奖励
-	int32		type					= 4;	//类型(0:个人 1:大赢家)
-	int32		award_type				= 5;	//奖励类型
-	string		time					= 6;	//时间
+	string		nick_name				= 2;	//昵称 
+	int32		score					= 3;	//使用积分
+	int32		award					= 4;	//转盘奖励
+	int32		type					= 5;	//类型(0:个人 1:大赢家)
+	int32		award_type				= 6;	//奖励类型
+	string		time					= 7;	//时间
 }
 
 message MsgTurnPlayInfo
@@ -107,7 +108,8 @@ message MsgTurntableData
 	MsgTurnPlayInfo gold_info			= 5;	//黄金盘信息
 	repeated MsgTurnCfg silver_cfg		= 6;	//盘配置 
 	repeated MsgTurnCfg gold_cfg		= 7;	//黄金盘配置
-	repeated MsgTurntableHistoryData history = 8;	//历史数据
+	repeated MsgTurntableHistoryData this_history = 8;	//自己的历史数据
+	repeated MsgTurntableHistoryData big_history = 9;	//大赢家历史数据
 }
 
 
