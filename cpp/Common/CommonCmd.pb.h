@@ -244,12 +244,16 @@ enum EMsgIDChat : int {
   MsgIDChat_Null = 0,
   MsgIDChat_Login = 2001,
   MsgIDChat_LoginResp = 2002,
+  MsgIDChat_Logout = 2003,
+  MsgIDChat_LogoutResp = 2004,
+  MsgIDChat_SendMsg = 2005,
+  MsgIDChat_NotifyChatMsgResp = 2006,
   EMsgIDChat_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDChat_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDChat_IsValid(int value);
 constexpr EMsgIDChat EMsgIDChat_MIN = MsgIDChat_Null;
-constexpr EMsgIDChat EMsgIDChat_MAX = MsgIDChat_LoginResp;
+constexpr EMsgIDChat EMsgIDChat_MAX = MsgIDChat_NotifyChatMsgResp;
 constexpr int EMsgIDChat_ARRAYSIZE = EMsgIDChat_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDChat_descriptor();

@@ -113,9 +113,12 @@ const char descriptor_table_protodef_CommonCmd_2eproto[] PROTOBUF_SECTION_VARIAB
   "ueryRoundRecordResp\020\370\007\022!\n\034MsgIDGame_Quer"
   "yDayRecordResp\020\371\007\022\033\n\026MsgIDGame_AddOneRec"
   "ord\020\372\007\022&\n!MsgIDGame_NotifyPlayerOfflineR"
-  "esp\020\373\007*P\n\nEMsgIDChat\022\022\n\016MsgIDChat_Null\020\000"
-  "\022\024\n\017MsgIDChat_Login\020\321\017\022\030\n\023MsgIDChat_Logi"
-  "nResp\020\322\017b\006proto3"
+  "esp\020\373\007*\274\001\n\nEMsgIDChat\022\022\n\016MsgIDChat_Null\020"
+  "\000\022\024\n\017MsgIDChat_Login\020\321\017\022\030\n\023MsgIDChat_Log"
+  "inResp\020\322\017\022\025\n\020MsgIDChat_Logout\020\323\017\022\031\n\024MsgI"
+  "DChat_LogoutResp\020\324\017\022\026\n\021MsgIDChat_SendMsg"
+  "\020\325\017\022 \n\033MsgIDChat_NotifyChatMsgResp\020\326\017b\006p"
+  "roto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_CommonCmd_2eproto_deps[1] = {
 };
@@ -123,7 +126,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Com
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_CommonCmd_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_CommonCmd_2eproto = {
-  false, false, descriptor_table_protodef_CommonCmd_2eproto, "CommonCmd.proto", 3736,
+  false, false, descriptor_table_protodef_CommonCmd_2eproto, "CommonCmd.proto", 3845,
   &descriptor_table_CommonCmd_2eproto_once, descriptor_table_CommonCmd_2eproto_sccs, descriptor_table_CommonCmd_2eproto_deps, 0, 0,
   schemas, file_default_instances, TableStruct_CommonCmd_2eproto::offsets,
   file_level_metadata_CommonCmd_2eproto, 0, file_level_enum_descriptors_CommonCmd_2eproto, file_level_service_descriptors_CommonCmd_2eproto,
@@ -292,6 +295,10 @@ bool EMsgIDChat_IsValid(int value) {
     case 0:
     case 2001:
     case 2002:
+    case 2003:
+    case 2004:
+    case 2005:
+    case 2006:
       return true;
     default:
       return false;
