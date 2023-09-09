@@ -385,3 +385,10 @@ message MsgDBBindPhoneRes
 	string		phone				= 2;	//手机号码
 	string		password			= 3;	//玩家密码
 };
+
+//登录聊天服务器
+message MsgDBChatLogin
+{
+	int32		user_id				= 1;	//玩家ID
+	string		password			= 2;	//玩家密码
+};

@@ -19,6 +19,7 @@ message MsgChatLoginResp
 	string		avatar			= 5;	//头像
 	int32		vip_level		= 6;	//VIP等级
 	int32		avatar_frame	= 7;	//头像框
+	int32		client_type		= 8;	//包类型
 }
 
 //聊天服务器信息

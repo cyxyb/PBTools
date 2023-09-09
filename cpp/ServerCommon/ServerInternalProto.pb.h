@@ -46,7 +46,7 @@ struct TableStruct_ServerInternalProto_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[41]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[42]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -83,6 +83,9 @@ extern MsgDBBindPhoneDefaultTypeInternal _MsgDBBindPhone_default_instance_;
 class MsgDBBindPhoneRes;
 class MsgDBBindPhoneResDefaultTypeInternal;
 extern MsgDBBindPhoneResDefaultTypeInternal _MsgDBBindPhoneRes_default_instance_;
+class MsgDBChatLogin;
+class MsgDBChatLoginDefaultTypeInternal;
+extern MsgDBChatLoginDefaultTypeInternal _MsgDBChatLogin_default_instance_;
 class MsgDBFingerGuessQueryRecord;
 class MsgDBFingerGuessQueryRecordDefaultTypeInternal;
 extern MsgDBFingerGuessQueryRecordDefaultTypeInternal _MsgDBFingerGuessQueryRecord_default_instance_;
@@ -187,6 +190,7 @@ template<> ::MsgDBBankTakeOut* Arena::CreateMaybeMessage<::MsgDBBankTakeOut>(Are
 template<> ::MsgDBBankTransfer* Arena::CreateMaybeMessage<::MsgDBBankTransfer>(Arena*);
 template<> ::MsgDBBindPhone* Arena::CreateMaybeMessage<::MsgDBBindPhone>(Arena*);
 template<> ::MsgDBBindPhoneRes* Arena::CreateMaybeMessage<::MsgDBBindPhoneRes>(Arena*);
+template<> ::MsgDBChatLogin* Arena::CreateMaybeMessage<::MsgDBChatLogin>(Arena*);
 template<> ::MsgDBFingerGuessQueryRecord* Arena::CreateMaybeMessage<::MsgDBFingerGuessQueryRecord>(Arena*);
 template<> ::MsgDBFingerGuessWriteScore* Arena::CreateMaybeMessage<::MsgDBFingerGuessWriteScore>(Arena*);
 template<> ::MsgDBFingerGuessWriteScoreResp* Arena::CreateMaybeMessage<::MsgDBFingerGuessWriteScoreResp>(Arena*);
@@ -7599,6 +7603,160 @@ class MsgDBBindPhoneRes PROTOBUF_FINAL :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
+// -------------------------------------------------------------------
+
+class MsgDBChatLogin PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgDBChatLogin) */ {
+ public:
+  inline MsgDBChatLogin() : MsgDBChatLogin(nullptr) {}
+  virtual ~MsgDBChatLogin();
+
+  MsgDBChatLogin(const MsgDBChatLogin& from);
+  MsgDBChatLogin(MsgDBChatLogin&& from) noexcept
+    : MsgDBChatLogin() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgDBChatLogin& operator=(const MsgDBChatLogin& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgDBChatLogin& operator=(MsgDBChatLogin&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgDBChatLogin& default_instance();
+
+  static inline const MsgDBChatLogin* internal_default_instance() {
+    return reinterpret_cast<const MsgDBChatLogin*>(
+               &_MsgDBChatLogin_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    41;
+
+  friend void swap(MsgDBChatLogin& a, MsgDBChatLogin& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgDBChatLogin* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgDBChatLogin* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgDBChatLogin* New() const final {
+    return CreateMaybeMessage<MsgDBChatLogin>(nullptr);
+  }
+
+  MsgDBChatLogin* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgDBChatLogin>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgDBChatLogin& from);
+  void MergeFrom(const MsgDBChatLogin& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgDBChatLogin* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgDBChatLogin";
+  }
+  protected:
+  explicit MsgDBChatLogin(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kPasswordFieldNumber = 2,
+    kUserIdFieldNumber = 1,
+  };
+  // string password = 2;
+  void clear_password();
+  const std::string& password() const;
+  void set_password(const std::string& value);
+  void set_password(std::string&& value);
+  void set_password(const char* value);
+  void set_password(const char* value, size_t size);
+  std::string* mutable_password();
+  std::string* release_password();
+  void set_allocated_password(std::string* password);
+  private:
+  const std::string& _internal_password() const;
+  void _internal_set_password(const std::string& value);
+  std::string* _internal_mutable_password();
+  public:
+
+  // int32 user_id = 1;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgDBChatLogin)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr password_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
 // ===================================================================
 
 
@@ -12854,9 +13012,96 @@ inline void MsgDBBindPhoneRes::set_allocated_password(std::string* password) {
   // @@protoc_insertion_point(field_set_allocated:MsgDBBindPhoneRes.password)
 }
 
+// -------------------------------------------------------------------
+
+// MsgDBChatLogin
+
+// int32 user_id = 1;
+inline void MsgDBChatLogin::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBChatLogin::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBChatLogin::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBChatLogin.user_id)
+  return _internal_user_id();
+}
+inline void MsgDBChatLogin::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgDBChatLogin::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBChatLogin.user_id)
+}
+
+// string password = 2;
+inline void MsgDBChatLogin::clear_password() {
+  password_.ClearToEmpty();
+}
+inline const std::string& MsgDBChatLogin::password() const {
+  // @@protoc_insertion_point(field_get:MsgDBChatLogin.password)
+  return _internal_password();
+}
+inline void MsgDBChatLogin::set_password(const std::string& value) {
+  _internal_set_password(value);
+  // @@protoc_insertion_point(field_set:MsgDBChatLogin.password)
+}
+inline std::string* MsgDBChatLogin::mutable_password() {
+  // @@protoc_insertion_point(field_mutable:MsgDBChatLogin.password)
+  return _internal_mutable_password();
+}
+inline const std::string& MsgDBChatLogin::_internal_password() const {
+  return password_.Get();
+}
+inline void MsgDBChatLogin::_internal_set_password(const std::string& value) {
+  
+  password_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgDBChatLogin::set_password(std::string&& value) {
+  
+  password_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgDBChatLogin.password)
+}
+inline void MsgDBChatLogin::set_password(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  password_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgDBChatLogin.password)
+}
+inline void MsgDBChatLogin::set_password(const char* value,
+    size_t size) {
+  
+  password_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgDBChatLogin.password)
+}
+inline std::string* MsgDBChatLogin::_internal_mutable_password() {
+  
+  return password_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgDBChatLogin::release_password() {
+  // @@protoc_insertion_point(field_release:MsgDBChatLogin.password)
+  return password_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgDBChatLogin::set_allocated_password(std::string* password) {
+  if (password != nullptr) {
+    
+  } else {
+    
+  }
+  password_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), password,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgDBChatLogin.password)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

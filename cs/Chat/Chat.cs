@@ -25,20 +25,20 @@ namespace Chat {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChVQcm90by9DaGF0L0NoYXQucHJvdG8SBENoYXQiMQoMTXNnQ2hhdExvZ2lu",
-            "Eg8KB3VzZXJfaWQYASABKAUSEAoIcGFzc3dvcmQYAiABKAkilgEKEE1zZ0No",
+            "Eg8KB3VzZXJfaWQYASABKAUSEAoIcGFzc3dvcmQYAiABKAkiqwEKEE1zZ0No",
             "YXRMb2dpblJlc3ASEAoIcmVzX2NvZGUYASABKAUSDwoHdXNlcl9pZBgCIAEo",
             "BRIUCgxiZWF1dGlmdWxfaWQYAyABKAUSEAoIbmlja25hbWUYBCABKAkSDgoG",
             "YXZhdGFyGAUgASgJEhEKCXZpcF9sZXZlbBgGIAEoBRIUCgxhdmF0YXJfZnJh",
-            "bWUYByABKAUiaAoRTXNnQ2hhdFNlcnZlckluZm8SCgoCaXAYASABKAUSDAoE",
-            "cG9ydBgCIAEoBRIRCglzZXJ2ZXJfaWQYAyABKAUSEgoKb25saW5lX251bRgE",
-            "IAEoBRISCgptYXhfcGxheWVyGAUgASgFIkYKEU1zZ0NoYXRTZXJ2ZXJMaXN0",
-            "EjEKEGNoYXRfc2VydmVyX2xpc3QYASADKAsyFy5DaGF0Lk1zZ0NoYXRTZXJ2",
-            "ZXJJbmZvYgZwcm90bzM="));
+            "bWUYByABKAUSEwoLY2xpZW50X3R5cGUYCCABKAUiaAoRTXNnQ2hhdFNlcnZl",
+            "ckluZm8SCgoCaXAYASABKAUSDAoEcG9ydBgCIAEoBRIRCglzZXJ2ZXJfaWQY",
+            "AyABKAUSEgoKb25saW5lX251bRgEIAEoBRISCgptYXhfcGxheWVyGAUgASgF",
+            "IkYKEU1zZ0NoYXRTZXJ2ZXJMaXN0EjEKEGNoYXRfc2VydmVyX2xpc3QYASAD",
+            "KAsyFy5DaGF0Lk1zZ0NoYXRTZXJ2ZXJJbmZvYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Chat.MsgChatLogin), global::Chat.MsgChatLogin.Parser, new[]{ "UserId", "Password" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Chat.MsgChatLoginResp), global::Chat.MsgChatLoginResp.Parser, new[]{ "ResCode", "UserId", "BeautifulId", "Nickname", "Avatar", "VipLevel", "AvatarFrame" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Chat.MsgChatLoginResp), global::Chat.MsgChatLoginResp.Parser, new[]{ "ResCode", "UserId", "BeautifulId", "Nickname", "Avatar", "VipLevel", "AvatarFrame", "ClientType" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chat.MsgChatServerInfo), global::Chat.MsgChatServerInfo.Parser, new[]{ "Ip", "Port", "ServerId", "OnlineNum", "MaxPlayer" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chat.MsgChatServerList), global::Chat.MsgChatServerList.Parser, new[]{ "ChatServerList" }, null, null, null, null)
           }));
@@ -303,6 +303,7 @@ namespace Chat {
       avatar_ = other.avatar_;
       vipLevel_ = other.vipLevel_;
       avatarFrame_ = other.avatarFrame_;
+      clientType_ = other.clientType_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -409,6 +410,20 @@ namespace Chat {
       }
     }
 
+    /// <summary>Field number for the "client_type" field.</summary>
+    public const int ClientTypeFieldNumber = 8;
+    private int clientType_;
+    /// <summary>
+    ///包类型
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int ClientType {
+      get { return clientType_; }
+      set {
+        clientType_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as MsgChatLoginResp);
@@ -429,6 +444,7 @@ namespace Chat {
       if (Avatar != other.Avatar) return false;
       if (VipLevel != other.VipLevel) return false;
       if (AvatarFrame != other.AvatarFrame) return false;
+      if (ClientType != other.ClientType) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -442,6 +458,7 @@ namespace Chat {
       if (Avatar.Length != 0) hash ^= Avatar.GetHashCode();
       if (VipLevel != 0) hash ^= VipLevel.GetHashCode();
       if (AvatarFrame != 0) hash ^= AvatarFrame.GetHashCode();
+      if (ClientType != 0) hash ^= ClientType.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -486,6 +503,10 @@ namespace Chat {
         output.WriteRawTag(56);
         output.WriteInt32(AvatarFrame);
       }
+      if (ClientType != 0) {
+        output.WriteRawTag(64);
+        output.WriteInt32(ClientType);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -523,6 +544,10 @@ namespace Chat {
         output.WriteRawTag(56);
         output.WriteInt32(AvatarFrame);
       }
+      if (ClientType != 0) {
+        output.WriteRawTag(64);
+        output.WriteInt32(ClientType);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -552,6 +577,9 @@ namespace Chat {
       }
       if (AvatarFrame != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(AvatarFrame);
+      }
+      if (ClientType != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ClientType);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -584,6 +612,9 @@ namespace Chat {
       }
       if (other.AvatarFrame != 0) {
         AvatarFrame = other.AvatarFrame;
+      }
+      if (other.ClientType != 0) {
+        ClientType = other.ClientType;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -627,6 +658,10 @@ namespace Chat {
             AvatarFrame = input.ReadInt32();
             break;
           }
+          case 64: {
+            ClientType = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -667,6 +702,10 @@ namespace Chat {
           }
           case 56: {
             AvatarFrame = input.ReadInt32();
+            break;
+          }
+          case 64: {
+            ClientType = input.ReadInt32();
             break;
           }
         }

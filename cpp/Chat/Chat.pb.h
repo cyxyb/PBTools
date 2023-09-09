@@ -350,6 +350,7 @@ class MsgChatLoginResp PROTOBUF_FINAL :
     kBeautifulIdFieldNumber = 3,
     kVipLevelFieldNumber = 6,
     kAvatarFrameFieldNumber = 7,
+    kClientTypeFieldNumber = 8,
   };
   // string nickname = 4;
   void clear_nickname();
@@ -428,6 +429,15 @@ class MsgChatLoginResp PROTOBUF_FINAL :
   void _internal_set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 client_type = 8;
+  void clear_client_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 client_type() const;
+  void set_client_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_client_type() const;
+  void _internal_set_client_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:Chat.MsgChatLoginResp)
  private:
   class _Internal;
@@ -442,6 +452,7 @@ class MsgChatLoginResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 beautiful_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 vip_level_;
   ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame_;
+  ::PROTOBUF_NAMESPACE_ID::int32 client_type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Chat_2eproto;
 };
@@ -1086,6 +1097,26 @@ inline void MsgChatLoginResp::_internal_set_avatar_frame(::PROTOBUF_NAMESPACE_ID
 inline void MsgChatLoginResp::set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_avatar_frame(value);
   // @@protoc_insertion_point(field_set:Chat.MsgChatLoginResp.avatar_frame)
+}
+
+// int32 client_type = 8;
+inline void MsgChatLoginResp::clear_client_type() {
+  client_type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChatLoginResp::_internal_client_type() const {
+  return client_type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChatLoginResp::client_type() const {
+  // @@protoc_insertion_point(field_get:Chat.MsgChatLoginResp.client_type)
+  return _internal_client_type();
+}
+inline void MsgChatLoginResp::_internal_set_client_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  client_type_ = value;
+}
+inline void MsgChatLoginResp::set_client_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_client_type(value);
+  // @@protoc_insertion_point(field_set:Chat.MsgChatLoginResp.client_type)
 }
 
 // -------------------------------------------------------------------

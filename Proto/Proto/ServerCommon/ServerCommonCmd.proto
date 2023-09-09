@@ -167,4 +167,7 @@ enum EMsgIDDB
 	GAME2DB_QueryJckpotInfo			= 2013;	//查询奖池信息
 	DB2GAME_QueryJckpotInfoResp		= 2014;	//查询奖池信息返回
 	GAME2DB_UpdateJckpotInfo		= 2015;	//更新奖池信息
+	//3001-4000 ChatServer2DB
+	CHAT2DB_Login					= 3001;	//登录
+	DB2CHAT_LoginResp				= 3002;	//登录返回
 }

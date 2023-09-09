@@ -63,7 +63,7 @@ const char descriptor_table_protodef_ServerCommonCmd_2eproto[] PROTOBUF_SECTION_
   "R_Register\020\211\'\022\037\n\032RelayServer2CENTER_AddM"
   "ail\020\212\'\022\'\n\"RelayServer2CENTER_RechargeSuc"
   "cess\020\213\'\022 \n\033RelayServer2CENTER_Withdraw\020\214"
-  "\'\022\031\n\024Chat2Center_Register\020\361.*\337\025\n\010EMsgIDD"
+  "\'\022\031\n\024Chat2Center_Register\020\361.*\213\026\n\010EMsgIDD"
   "B\022\020\n\014MsgIDDB_NULL\020\000\022\035\n\031CENTER2DB_UpdateO"
   "nlineNum\020\001\022\033\n\027CENTER2DB_InitOnlineNum\020\002\022"
   "\033\n\027CENTER2DB_RegisterLogin\020\003\022\035\n\031CENTER2D"
@@ -133,7 +133,8 @@ const char descriptor_table_protodef_ServerCommonCmd_2eproto[] PROTOBUF_SECTION_
   "rd\020\333\017\022 \n\033GAME2DB_WriteDisConnectData\020\334\017\022"
   "\034\n\027GAME2DB_QueryJckpotInfo\020\335\017\022 \n\033DB2GAME"
   "_QueryJckpotInfoResp\020\336\017\022\035\n\030GAME2DB_Updat"
-  "eJckpotInfo\020\337\017b\006proto3"
+  "eJckpotInfo\020\337\017\022\022\n\rCHAT2DB_Login\020\271\027\022\026\n\021DB"
+  "2CHAT_LoginResp\020\272\027b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_ServerCommonCmd_2eproto_deps[1] = {
 };
@@ -141,7 +142,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Ser
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ServerCommonCmd_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ServerCommonCmd_2eproto = {
-  false, false, descriptor_table_protodef_ServerCommonCmd_2eproto, "ServerCommonCmd.proto", 4462,
+  false, false, descriptor_table_protodef_ServerCommonCmd_2eproto, "ServerCommonCmd.proto", 4506,
   &descriptor_table_ServerCommonCmd_2eproto_once, descriptor_table_ServerCommonCmd_2eproto_sccs, descriptor_table_ServerCommonCmd_2eproto_deps, 0, 0,
   schemas, file_default_instances, TableStruct_ServerCommonCmd_2eproto::offsets,
   file_level_metadata_ServerCommonCmd_2eproto, 0, file_level_enum_descriptors_ServerCommonCmd_2eproto, file_level_service_descriptors_ServerCommonCmd_2eproto,
@@ -322,6 +323,8 @@ bool EMsgIDDB_IsValid(int value) {
     case 2013:
     case 2014:
     case 2015:
+    case 3001:
+    case 3002:
       return true;
     default:
       return false;
