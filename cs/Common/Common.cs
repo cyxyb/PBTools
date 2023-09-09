@@ -43,7 +43,11 @@ public static partial class CommonReflection {
           "UGxheWVySW5mbxIPCgd1c2VyX2lkGAEgASgFEhQKDGJlYXV0aWZ1bF9pZBgC",
           "IAEoBRIQCghuaWNrbmFtZRgDIAEoCRIOCgZhdmF0YXIYBCABKAkSEQoJdmlw",
           "X2xldmVsGAUgASgFEhQKDGF2YXRhcl9mcmFtZRgGIAEoBRITCgtjbGllbnRf",
-          "dHlwZRgHIAEoBWIGcHJvdG8z"));
+          "dHlwZRgHIAEoBSJoChFNc2dDaGF0U2VydmVySW5mbxIKCgJpcBgBIAEoBRIM",
+          "CgRwb3J0GAIgASgFEhEKCXNlcnZlcl9pZBgDIAEoBRISCgpvbmxpbmVfbnVt",
+          "GAQgASgFEhIKCm1heF9wbGF5ZXIYBSABKAUiQQoRTXNnQ2hhdFNlcnZlckxp",
+          "c3QSLAoQY2hhdF9zZXJ2ZXJfbGlzdBgBIAMoCzISLk1zZ0NoYXRTZXJ2ZXJJ",
+          "bmZvYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -57,7 +61,9 @@ public static partial class CommonReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgNotifyChatNormalMsg), global::MsgNotifyChatNormalMsg.Parser, new[]{ "UserId", "Message" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgChatTrumpetMsg), global::MsgChatTrumpetMsg.Parser, new[]{ "IsUseTrumpet", "Message" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgNotifyChatTrumpetMsg), global::MsgNotifyChatTrumpetMsg.Parser, new[]{ "UserId", "PlayerInfo", "Message" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgChatPlayerInfo), global::MsgChatPlayerInfo.Parser, new[]{ "UserId", "BeautifulId", "Nickname", "Avatar", "VipLevel", "AvatarFrame", "ClientType" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgChatPlayerInfo), global::MsgChatPlayerInfo.Parser, new[]{ "UserId", "BeautifulId", "Nickname", "Avatar", "VipLevel", "AvatarFrame", "ClientType" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgChatServerInfo), global::MsgChatServerInfo.Parser, new[]{ "Ip", "Port", "ServerId", "OnlineNum", "MaxPlayer" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgChatServerList), global::MsgChatServerList.Parser, new[]{ "ChatServerList" }, null, null, null, null)
         }));
   }
   #endregion
@@ -2951,6 +2957,507 @@ public sealed partial class MsgChatPlayerInfo : pb::IMessage<MsgChatPlayerInfo>
         }
         case 56: {
           ClientType = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///聊天服务器信息
+/// </summary>
+public sealed partial class MsgChatServerInfo : pb::IMessage<MsgChatServerInfo>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgChatServerInfo> _parser = new pb::MessageParser<MsgChatServerInfo>(() => new MsgChatServerInfo());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgChatServerInfo> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::CommonReflection.Descriptor.MessageTypes[11]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgChatServerInfo() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgChatServerInfo(MsgChatServerInfo other) : this() {
+    ip_ = other.ip_;
+    port_ = other.port_;
+    serverId_ = other.serverId_;
+    onlineNum_ = other.onlineNum_;
+    maxPlayer_ = other.maxPlayer_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgChatServerInfo Clone() {
+    return new MsgChatServerInfo(this);
+  }
+
+  /// <summary>Field number for the "ip" field.</summary>
+  public const int IpFieldNumber = 1;
+  private int ip_;
+  /// <summary>
+  ///IP
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Ip {
+    get { return ip_; }
+    set {
+      ip_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "port" field.</summary>
+  public const int PortFieldNumber = 2;
+  private int port_;
+  /// <summary>
+  ///端口
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Port {
+    get { return port_; }
+    set {
+      port_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "server_id" field.</summary>
+  public const int ServerIdFieldNumber = 3;
+  private int serverId_;
+  /// <summary>
+  ///服务器ID
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int ServerId {
+    get { return serverId_; }
+    set {
+      serverId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "online_num" field.</summary>
+  public const int OnlineNumFieldNumber = 4;
+  private int onlineNum_;
+  /// <summary>
+  ///在线人数
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int OnlineNum {
+    get { return onlineNum_; }
+    set {
+      onlineNum_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "max_player" field.</summary>
+  public const int MaxPlayerFieldNumber = 5;
+  private int maxPlayer_;
+  /// <summary>
+  ///最大人数
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int MaxPlayer {
+    get { return maxPlayer_; }
+    set {
+      maxPlayer_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgChatServerInfo);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgChatServerInfo other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (Ip != other.Ip) return false;
+    if (Port != other.Port) return false;
+    if (ServerId != other.ServerId) return false;
+    if (OnlineNum != other.OnlineNum) return false;
+    if (MaxPlayer != other.MaxPlayer) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (Ip != 0) hash ^= Ip.GetHashCode();
+    if (Port != 0) hash ^= Port.GetHashCode();
+    if (ServerId != 0) hash ^= ServerId.GetHashCode();
+    if (OnlineNum != 0) hash ^= OnlineNum.GetHashCode();
+    if (MaxPlayer != 0) hash ^= MaxPlayer.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (Ip != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(Ip);
+    }
+    if (Port != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(Port);
+    }
+    if (ServerId != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(ServerId);
+    }
+    if (OnlineNum != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(OnlineNum);
+    }
+    if (MaxPlayer != 0) {
+      output.WriteRawTag(40);
+      output.WriteInt32(MaxPlayer);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (Ip != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(Ip);
+    }
+    if (Port != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(Port);
+    }
+    if (ServerId != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(ServerId);
+    }
+    if (OnlineNum != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(OnlineNum);
+    }
+    if (MaxPlayer != 0) {
+      output.WriteRawTag(40);
+      output.WriteInt32(MaxPlayer);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (Ip != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Ip);
+    }
+    if (Port != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Port);
+    }
+    if (ServerId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(ServerId);
+    }
+    if (OnlineNum != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(OnlineNum);
+    }
+    if (MaxPlayer != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(MaxPlayer);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgChatServerInfo other) {
+    if (other == null) {
+      return;
+    }
+    if (other.Ip != 0) {
+      Ip = other.Ip;
+    }
+    if (other.Port != 0) {
+      Port = other.Port;
+    }
+    if (other.ServerId != 0) {
+      ServerId = other.ServerId;
+    }
+    if (other.OnlineNum != 0) {
+      OnlineNum = other.OnlineNum;
+    }
+    if (other.MaxPlayer != 0) {
+      MaxPlayer = other.MaxPlayer;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          Ip = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          Port = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          ServerId = input.ReadInt32();
+          break;
+        }
+        case 32: {
+          OnlineNum = input.ReadInt32();
+          break;
+        }
+        case 40: {
+          MaxPlayer = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          Ip = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          Port = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          ServerId = input.ReadInt32();
+          break;
+        }
+        case 32: {
+          OnlineNum = input.ReadInt32();
+          break;
+        }
+        case 40: {
+          MaxPlayer = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///聊天服务器列表
+/// </summary>
+public sealed partial class MsgChatServerList : pb::IMessage<MsgChatServerList>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgChatServerList> _parser = new pb::MessageParser<MsgChatServerList>(() => new MsgChatServerList());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgChatServerList> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::CommonReflection.Descriptor.MessageTypes[12]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgChatServerList() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgChatServerList(MsgChatServerList other) : this() {
+    chatServerList_ = other.chatServerList_.Clone();
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgChatServerList Clone() {
+    return new MsgChatServerList(this);
+  }
+
+  /// <summary>Field number for the "chat_server_list" field.</summary>
+  public const int ChatServerListFieldNumber = 1;
+  private static readonly pb::FieldCodec<global::MsgChatServerInfo> _repeated_chatServerList_codec
+      = pb::FieldCodec.ForMessage(10, global::MsgChatServerInfo.Parser);
+  private readonly pbc::RepeatedField<global::MsgChatServerInfo> chatServerList_ = new pbc::RepeatedField<global::MsgChatServerInfo>();
+  /// <summary>
+  ///服务器列表 
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<global::MsgChatServerInfo> ChatServerList {
+    get { return chatServerList_; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgChatServerList);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgChatServerList other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if(!chatServerList_.Equals(other.chatServerList_)) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    hash ^= chatServerList_.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    chatServerList_.WriteTo(output, _repeated_chatServerList_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    chatServerList_.WriteTo(ref output, _repeated_chatServerList_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    size += chatServerList_.CalculateSize(_repeated_chatServerList_codec);
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgChatServerList other) {
+    if (other == null) {
+      return;
+    }
+    chatServerList_.Add(other.chatServerList_);
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 10: {
+          chatServerList_.AddEntriesFrom(input, _repeated_chatServerList_codec);
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 10: {
+          chatServerList_.AddEntriesFrom(ref input, _repeated_chatServerList_codec);
           break;
         }
       }

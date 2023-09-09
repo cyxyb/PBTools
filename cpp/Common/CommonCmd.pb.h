@@ -245,12 +245,11 @@ enum EMsgIDChat : int {
   MsgIDChat_Null = 0,
   MsgIDChat_Login = 2001,
   MsgIDChat_LoginResp = 2002,
-  MsgIDChat_Logout = 2003,
-  MsgIDChat_LogoutResp = 2004,
-  MsgIDChat_SendNormalMsg = 2005,
-  MsgIDChat_NotifyChatNormalMsgResp = 2006,
-  MsgIDChat_SendTrumpetMsg = 2007,
-  MsgIDChat_NotifyChatTrumpetMsgResp = 2008,
+  MsgIDChat_LogoutResp = 2003,
+  MsgIDChat_SendNormalMsg = 2004,
+  MsgIDChat_NotifyChatNormalMsgResp = 2005,
+  MsgIDChat_SendTrumpetMsg = 2006,
+  MsgIDChat_NotifyChatTrumpetMsgResp = 2007,
   EMsgIDChat_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDChat_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };

@@ -21,19 +21,3 @@ message MsgChatLoginResp
 	int32		avatar_frame	= 7;	//头像框
 	int32		client_type		= 8;	//包类型
 }
-
-//聊天服务器信息
-message MsgChatServerInfo
-{
-	int32	ip					= 1;		//IP
-	int32	port				= 2;		//端口
-	int32	server_id			= 3;		//服务器ID
-	int32	online_num			= 4;		//在线人数
-	int32	max_player			= 5;		//最大人数
-}
-
-//聊天服务器列表
-message MsgChatServerList
-{
-	repeated MsgChatServerInfo	chat_server_list		= 1;	//服务器列表 
-}

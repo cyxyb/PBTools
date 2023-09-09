@@ -104,13 +104,12 @@ public static partial class CommonCmdReflection {
           "IwoeTXNnSURHYW1lX1F1ZXJ5Um91bmRSZWNvcmRSZXNwEPgHEiEKHE1zZ0lE",
           "R2FtZV9RdWVyeURheVJlY29yZFJlc3AQ+QcSGwoWTXNnSURHYW1lX0FkZE9u",
           "ZVJlY29yZBD6BxImCiFNc2dJREdhbWVfTm90aWZ5UGxheWVyT2ZmbGluZVJl",
-          "c3AQ+wcqkAIKCkVNc2dJRENoYXQSEgoOTXNnSURDaGF0X051bGwQABIUCg9N",
-          "c2dJRENoYXRfTG9naW4Q0Q8SGAoTTXNnSURDaGF0X0xvZ2luUmVzcBDSDxIV",
-          "ChBNc2dJRENoYXRfTG9nb3V0ENMPEhkKFE1zZ0lEQ2hhdF9Mb2dvdXRSZXNw",
-          "ENQPEhwKF01zZ0lEQ2hhdF9TZW5kTm9ybWFsTXNnENUPEiYKIU1zZ0lEQ2hh",
-          "dF9Ob3RpZnlDaGF0Tm9ybWFsTXNnUmVzcBDWDxIdChhNc2dJRENoYXRfU2Vu",
-          "ZFRydW1wZXRNc2cQ1w8SJwoiTXNnSURDaGF0X05vdGlmeUNoYXRUcnVtcGV0",
-          "TXNnUmVzcBDYD2IGcHJvdG8z"));
+          "c3AQ+wcq+QEKCkVNc2dJRENoYXQSEgoOTXNnSURDaGF0X051bGwQABIUCg9N",
+          "c2dJRENoYXRfTG9naW4Q0Q8SGAoTTXNnSURDaGF0X0xvZ2luUmVzcBDSDxIZ",
+          "ChRNc2dJRENoYXRfTG9nb3V0UmVzcBDTDxIcChdNc2dJRENoYXRfU2VuZE5v",
+          "cm1hbE1zZxDUDxImCiFNc2dJRENoYXRfTm90aWZ5Q2hhdE5vcm1hbE1zZ1Jl",
+          "c3AQ1Q8SHQoYTXNnSURDaGF0X1NlbmRUcnVtcGV0TXNnENYPEicKIk1zZ0lE",
+          "Q2hhdF9Ob3RpZnlDaGF0VHJ1bXBldE1zZ1Jlc3AQ1w9iBnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::EMsgIDMain), typeof(global::EMsgIDLogin), typeof(global::EMsgIDGame), typeof(global::EMsgIDChat), }, null, null));
@@ -598,29 +597,25 @@ public enum EMsgIDChat {
   /// </summary>
   [pbr::OriginalName("MsgIDChat_LoginResp")] MsgIdchatLoginResp = 2002,
   /// <summary>
-  ///玩家下线(MsgCommonBool)
-  /// </summary>
-  [pbr::OriginalName("MsgIDChat_Logout")] MsgIdchatLogout = 2003,
-  /// <summary>
   ///玩家下线返回(MsgCommonN32)
   /// </summary>
-  [pbr::OriginalName("MsgIDChat_LogoutResp")] MsgIdchatLogoutResp = 2004,
+  [pbr::OriginalName("MsgIDChat_LogoutResp")] MsgIdchatLogoutResp = 2003,
   /// <summary>
   ///发送普通消息(MsgCommonStr)
   /// </summary>
-  [pbr::OriginalName("MsgIDChat_SendNormalMsg")] MsgIdchatSendNormalMsg = 2005,
+  [pbr::OriginalName("MsgIDChat_SendNormalMsg")] MsgIdchatSendNormalMsg = 2004,
   /// <summary>
   ///发送普通消息返回(MsgNotifyChatNormalMsg)
   /// </summary>
-  [pbr::OriginalName("MsgIDChat_NotifyChatNormalMsgResp")] MsgIdchatNotifyChatNormalMsgResp = 2006,
+  [pbr::OriginalName("MsgIDChat_NotifyChatNormalMsgResp")] MsgIdchatNotifyChatNormalMsgResp = 2005,
   /// <summary>
   ///发送小喇叭消息(MsgChatTrumpetMsg)
   /// </summary>
-  [pbr::OriginalName("MsgIDChat_SendTrumpetMsg")] MsgIdchatSendTrumpetMsg = 2007,
+  [pbr::OriginalName("MsgIDChat_SendTrumpetMsg")] MsgIdchatSendTrumpetMsg = 2006,
   /// <summary>
   ///发送小喇叭消息返回(MsgNotifyChatTrumpetMsg)
   /// </summary>
-  [pbr::OriginalName("MsgIDChat_NotifyChatTrumpetMsgResp")] MsgIdchatNotifyChatTrumpetMsgResp = 2008,
+  [pbr::OriginalName("MsgIDChat_NotifyChatTrumpetMsgResp")] MsgIdchatNotifyChatTrumpetMsgResp = 2007,
 }
 
 #endregion

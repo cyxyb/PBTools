@@ -46,7 +46,7 @@ struct TableStruct_ServerInternalProto_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[42]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[43]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -176,6 +176,9 @@ extern MsgSendPhoneCodeDefaultTypeInternal _MsgSendPhoneCode_default_instance_;
 class MsgStorageCode;
 class MsgStorageCodeDefaultTypeInternal;
 extern MsgStorageCodeDefaultTypeInternal _MsgStorageCode_default_instance_;
+class MsgUpdateChatServerOnlineNum;
+class MsgUpdateChatServerOnlineNumDefaultTypeInternal;
+extern MsgUpdateChatServerOnlineNumDefaultTypeInternal _MsgUpdateChatServerOnlineNum_default_instance_;
 class MsgUpdateGameServerOnlineNum;
 class MsgUpdateGameServerOnlineNumDefaultTypeInternal;
 extern MsgUpdateGameServerOnlineNumDefaultTypeInternal _MsgUpdateGameServerOnlineNum_default_instance_;
@@ -221,6 +224,7 @@ template<> ::MsgRelayServerRecharge* Arena::CreateMaybeMessage<::MsgRelayServerR
 template<> ::MsgRelayServerRegister* Arena::CreateMaybeMessage<::MsgRelayServerRegister>(Arena*);
 template<> ::MsgSendPhoneCode* Arena::CreateMaybeMessage<::MsgSendPhoneCode>(Arena*);
 template<> ::MsgStorageCode* Arena::CreateMaybeMessage<::MsgStorageCode>(Arena*);
+template<> ::MsgUpdateChatServerOnlineNum* Arena::CreateMaybeMessage<::MsgUpdateChatServerOnlineNum>(Arena*);
 template<> ::MsgUpdateGameServerOnlineNum* Arena::CreateMaybeMessage<::MsgUpdateGameServerOnlineNum>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 
@@ -2571,6 +2575,153 @@ class MsgRelayServerRecharge PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
+class MsgUpdateChatServerOnlineNum PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgUpdateChatServerOnlineNum) */ {
+ public:
+  inline MsgUpdateChatServerOnlineNum() : MsgUpdateChatServerOnlineNum(nullptr) {}
+  virtual ~MsgUpdateChatServerOnlineNum();
+
+  MsgUpdateChatServerOnlineNum(const MsgUpdateChatServerOnlineNum& from);
+  MsgUpdateChatServerOnlineNum(MsgUpdateChatServerOnlineNum&& from) noexcept
+    : MsgUpdateChatServerOnlineNum() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgUpdateChatServerOnlineNum& operator=(const MsgUpdateChatServerOnlineNum& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgUpdateChatServerOnlineNum& operator=(MsgUpdateChatServerOnlineNum&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgUpdateChatServerOnlineNum& default_instance();
+
+  static inline const MsgUpdateChatServerOnlineNum* internal_default_instance() {
+    return reinterpret_cast<const MsgUpdateChatServerOnlineNum*>(
+               &_MsgUpdateChatServerOnlineNum_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    14;
+
+  friend void swap(MsgUpdateChatServerOnlineNum& a, MsgUpdateChatServerOnlineNum& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgUpdateChatServerOnlineNum* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgUpdateChatServerOnlineNum* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgUpdateChatServerOnlineNum* New() const final {
+    return CreateMaybeMessage<MsgUpdateChatServerOnlineNum>(nullptr);
+  }
+
+  MsgUpdateChatServerOnlineNum* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgUpdateChatServerOnlineNum>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgUpdateChatServerOnlineNum& from);
+  void MergeFrom(const MsgUpdateChatServerOnlineNum& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgUpdateChatServerOnlineNum* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgUpdateChatServerOnlineNum";
+  }
+  protected:
+  explicit MsgUpdateChatServerOnlineNum(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kServerIdFieldNumber = 1,
+    kOnlineNumFieldNumber = 2,
+  };
+  // int32 server_id = 1;
+  void clear_server_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 server_id() const;
+  void set_server_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_server_id() const;
+  void _internal_set_server_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 online_num = 2;
+  void clear_online_num();
+  ::PROTOBUF_NAMESPACE_ID::int32 online_num() const;
+  void set_online_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_online_num() const;
+  void _internal_set_online_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgUpdateChatServerOnlineNum)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 server_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 online_num_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
+// -------------------------------------------------------------------
+
 class MsgDBUpdateOnlineNum PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgDBUpdateOnlineNum) */ {
  public:
@@ -2612,7 +2763,7 @@ class MsgDBUpdateOnlineNum PROTOBUF_FINAL :
                &_MsgDBUpdateOnlineNum_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    14;
+    15;
 
   friend void swap(MsgDBUpdateOnlineNum& a, MsgDBUpdateOnlineNum& b) {
     a.Swap(&b);
@@ -2770,7 +2921,7 @@ class MsgDBRegisterLogin PROTOBUF_FINAL :
                &_MsgDBRegisterLogin_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    15;
+    16;
 
   friend void swap(MsgDBRegisterLogin& a, MsgDBRegisterLogin& b) {
     a.Swap(&b);
@@ -2917,7 +3068,7 @@ class MsgPlayerAttribute PROTOBUF_FINAL :
                &_MsgPlayerAttribute_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    16;
+    17;
 
   friend void swap(MsgPlayerAttribute& a, MsgPlayerAttribute& b) {
     a.Swap(&b);
@@ -3144,7 +3295,7 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
                &_MsgLoginPlayerInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    17;
+    18;
 
   friend void swap(MsgLoginPlayerInfo& a, MsgLoginPlayerInfo& b) {
     a.Swap(&b);
@@ -3534,7 +3685,7 @@ class MsgDBLoginOut PROTOBUF_FINAL :
                &_MsgDBLoginOut_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    18;
+    19;
 
   friend void swap(MsgDBLoginOut& a, MsgDBLoginOut& b) {
     a.Swap(&b);
@@ -3681,7 +3832,7 @@ class MsgDBUpdatePlayerInfo PROTOBUF_FINAL :
                &_MsgDBUpdatePlayerInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    19;
+    20;
 
   friend void swap(MsgDBUpdatePlayerInfo& a, MsgDBUpdatePlayerInfo& b) {
     a.Swap(&b);
@@ -3893,7 +4044,7 @@ class MsgDBMailData PROTOBUF_FINAL :
                &_MsgDBMailData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    20;
+    21;
 
   friend void swap(MsgDBMailData& a, MsgDBMailData& b) {
     a.Swap(&b);
@@ -4040,7 +4191,7 @@ class MsgDBMail PROTOBUF_FINAL :
                &_MsgDBMail_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    21;
+    22;
 
   friend void swap(MsgDBMail& a, MsgDBMail& b) {
     a.Swap(&b);
@@ -4278,7 +4429,7 @@ class MsgDBRegisterGame PROTOBUF_FINAL :
                &_MsgDBRegisterGame_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    22;
+    23;
 
   friend void swap(MsgDBRegisterGame& a, MsgDBRegisterGame& b) {
     a.Swap(&b);
@@ -4432,7 +4583,7 @@ class MsgDBLoadRobot PROTOBUF_FINAL :
                &_MsgDBLoadRobot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    23;
+    24;
 
   friend void swap(MsgDBLoadRobot& a, MsgDBLoadRobot& b) {
     a.Swap(&b);
@@ -4582,7 +4733,7 @@ class MsgDBGamePlayerLogin PROTOBUF_FINAL :
                &_MsgDBGamePlayerLogin_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    24;
+    25;
 
   friend void swap(MsgDBGamePlayerLogin& a, MsgDBGamePlayerLogin& b) {
     a.Swap(&b);
@@ -4747,7 +4898,7 @@ class MsgDBPlayerReconnectData PROTOBUF_FINAL :
                &_MsgDBPlayerReconnectData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    25;
+    26;
 
   friend void swap(MsgDBPlayerReconnectData& a, MsgDBPlayerReconnectData& b) {
     a.Swap(&b);
@@ -4974,7 +5125,7 @@ class MsgDBGamePlayerLoginResp PROTOBUF_FINAL :
                &_MsgDBGamePlayerLoginResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    26;
+    27;
 
   friend void swap(MsgDBGamePlayerLoginResp& a, MsgDBGamePlayerLoginResp& b) {
     a.Swap(&b);
@@ -5239,7 +5390,7 @@ class MsgDBWriteScore PROTOBUF_FINAL :
                &_MsgDBWriteScore_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    27;
+    28;
 
   friend void swap(MsgDBWriteScore& a, MsgDBWriteScore& b) {
     a.Swap(&b);
@@ -5426,7 +5577,7 @@ class MsgDBWriteScoreResp PROTOBUF_FINAL :
                &_MsgDBWriteScoreResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    28;
+    29;
 
   friend void swap(MsgDBWriteScoreResp& a, MsgDBWriteScoreResp& b) {
     a.Swap(&b);
@@ -5639,7 +5790,7 @@ class MsgDBFingerGuessWriteScore PROTOBUF_FINAL :
                &_MsgDBFingerGuessWriteScore_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    29;
+    30;
 
   friend void swap(MsgDBFingerGuessWriteScore& a, MsgDBFingerGuessWriteScore& b) {
     a.Swap(&b);
@@ -5808,7 +5959,7 @@ class MsgDBFingerGuessWriteScoreResp PROTOBUF_FINAL :
                &_MsgDBFingerGuessWriteScoreResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    30;
+    31;
 
   friend void swap(MsgDBFingerGuessWriteScoreResp& a, MsgDBFingerGuessWriteScoreResp& b) {
     a.Swap(&b);
@@ -6010,7 +6161,7 @@ class MsgDBFingerGuessQueryRecord PROTOBUF_FINAL :
                &_MsgDBFingerGuessQueryRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    31;
+    32;
 
   friend void swap(MsgDBFingerGuessQueryRecord& a, MsgDBFingerGuessQueryRecord& b) {
     a.Swap(&b);
@@ -6179,7 +6330,7 @@ class MsgDBModifyAvatar PROTOBUF_FINAL :
                &_MsgDBModifyAvatar_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    32;
+    33;
 
   friend void swap(MsgDBModifyAvatar& a, MsgDBModifyAvatar& b) {
     a.Swap(&b);
@@ -6333,7 +6484,7 @@ class MsgDBUpdateJackpot PROTOBUF_FINAL :
                &_MsgDBUpdateJackpot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    33;
+    34;
 
   friend void swap(MsgDBUpdateJackpot& a, MsgDBUpdateJackpot& b) {
     a.Swap(&b);
@@ -6491,7 +6642,7 @@ class MsgDBBankChangePassword PROTOBUF_FINAL :
                &_MsgDBBankChangePassword_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    34;
+    35;
 
   friend void swap(MsgDBBankChangePassword& a, MsgDBBankChangePassword& b) {
     a.Swap(&b);
@@ -6645,7 +6796,7 @@ class MsgDBBankOperate PROTOBUF_FINAL :
                &_MsgDBBankOperate_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    35;
+    36;
 
   friend void swap(MsgDBBankOperate& a, MsgDBBankOperate& b) {
     a.Swap(&b);
@@ -6803,7 +6954,7 @@ class MsgDBBankTakeOut PROTOBUF_FINAL :
                &_MsgDBBankTakeOut_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    36;
+    37;
 
   friend void swap(MsgDBBankTakeOut& a, MsgDBBankTakeOut& b) {
     a.Swap(&b);
@@ -6961,7 +7112,7 @@ class MsgDBBankTransfer PROTOBUF_FINAL :
                &_MsgDBBankTransfer_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    37;
+    38;
 
   friend void swap(MsgDBBankTransfer& a, MsgDBBankTransfer& b) {
     a.Swap(&b);
@@ -7119,7 +7270,7 @@ class MsgStorageCode PROTOBUF_FINAL :
                &_MsgStorageCode_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    38;
+    39;
 
   friend void swap(MsgStorageCode& a, MsgStorageCode& b) {
     a.Swap(&b);
@@ -7284,7 +7435,7 @@ class MsgDBBindPhone PROTOBUF_FINAL :
                &_MsgDBBindPhone_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    39;
+    40;
 
   friend void swap(MsgDBBindPhone& a, MsgDBBindPhone& b) {
     a.Swap(&b);
@@ -7474,7 +7625,7 @@ class MsgDBBindPhoneRes PROTOBUF_FINAL :
                &_MsgDBBindPhoneRes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    40;
+    41;
 
   friend void swap(MsgDBBindPhoneRes& a, MsgDBBindPhoneRes& b) {
     a.Swap(&b);
@@ -7646,7 +7797,7 @@ class MsgDBChatLogin PROTOBUF_FINAL :
                &_MsgDBChatLogin_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    41;
+    42;
 
   friend void swap(MsgDBChatLogin& a, MsgDBChatLogin& b) {
     a.Swap(&b);
@@ -9016,6 +9167,50 @@ inline void MsgRelayServerRecharge::_internal_set_type(::PROTOBUF_NAMESPACE_ID::
 inline void MsgRelayServerRecharge::set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_type(value);
   // @@protoc_insertion_point(field_set:MsgRelayServerRecharge.type)
+}
+
+// -------------------------------------------------------------------
+
+// MsgUpdateChatServerOnlineNum
+
+// int32 server_id = 1;
+inline void MsgUpdateChatServerOnlineNum::clear_server_id() {
+  server_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgUpdateChatServerOnlineNum::_internal_server_id() const {
+  return server_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgUpdateChatServerOnlineNum::server_id() const {
+  // @@protoc_insertion_point(field_get:MsgUpdateChatServerOnlineNum.server_id)
+  return _internal_server_id();
+}
+inline void MsgUpdateChatServerOnlineNum::_internal_set_server_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  server_id_ = value;
+}
+inline void MsgUpdateChatServerOnlineNum::set_server_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_server_id(value);
+  // @@protoc_insertion_point(field_set:MsgUpdateChatServerOnlineNum.server_id)
+}
+
+// int32 online_num = 2;
+inline void MsgUpdateChatServerOnlineNum::clear_online_num() {
+  online_num_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgUpdateChatServerOnlineNum::_internal_online_num() const {
+  return online_num_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgUpdateChatServerOnlineNum::online_num() const {
+  // @@protoc_insertion_point(field_get:MsgUpdateChatServerOnlineNum.online_num)
+  return _internal_online_num();
+}
+inline void MsgUpdateChatServerOnlineNum::_internal_set_online_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  online_num_ = value;
+}
+inline void MsgUpdateChatServerOnlineNum::set_online_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_online_num(value);
+  // @@protoc_insertion_point(field_set:MsgUpdateChatServerOnlineNum.online_num)
 }
 
 // -------------------------------------------------------------------
@@ -13100,6 +13295,8 @@ inline void MsgDBChatLogin::set_allocated_password(std::string* password) {
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

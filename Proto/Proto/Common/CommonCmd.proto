@@ -136,10 +136,9 @@ enum EMsgIDChat
 	//ID从2001开始
 	MsgIDChat_Login						= 2001;		//玩家登录(MsgChatLogin)
 	MsgIDChat_LoginResp					= 2002;		//玩家登录返回(MsgChatLoginResp)
-	MsgIDChat_Logout					= 2003;		//玩家下线(MsgCommonBool)
-	MsgIDChat_LogoutResp				= 2004;		//玩家下线返回(MsgCommonN32)
-	MsgIDChat_SendNormalMsg				= 2005;		//发送普通消息(MsgCommonStr)
-	MsgIDChat_NotifyChatNormalMsgResp	= 2006;		//发送普通消息返回(MsgNotifyChatNormalMsg)
-	MsgIDChat_SendTrumpetMsg			= 2007;		//发送小喇叭消息(MsgChatTrumpetMsg)
-	MsgIDChat_NotifyChatTrumpetMsgResp	= 2008;		//发送小喇叭消息返回(MsgNotifyChatTrumpetMsg)
+	MsgIDChat_LogoutResp				= 2003;		//玩家下线返回(MsgCommonN32)
+	MsgIDChat_SendNormalMsg				= 2004;		//发送普通消息(MsgCommonStr)
+	MsgIDChat_NotifyChatNormalMsgResp	= 2005;		//发送普通消息返回(MsgNotifyChatNormalMsg)
+	MsgIDChat_SendTrumpetMsg			= 2006;		//发送小喇叭消息(MsgChatTrumpetMsg)
+	MsgIDChat_NotifyChatTrumpetMsgResp	= 2007;		//发送小喇叭消息返回(MsgNotifyChatTrumpetMsg)
 }

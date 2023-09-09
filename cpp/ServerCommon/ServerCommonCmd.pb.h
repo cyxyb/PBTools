@@ -113,6 +113,7 @@ enum EMsgIDServerInternalProto : int {
   LOGIN2CENTER_GetChatServerList = 19,
   CENTER2LOGIN_GetChatServerListResp = 20,
   LOGIN2CENTER_BroadcastTip = 21,
+  CENTER2LOGIN_UpdateChatServerOnlineNum = 22,
   GAME2CENTER_Register = 2001,
   GAME2CENTER_UnRegister = 2002,
   GAME2CENTER_ApplyRobot = 2003,
@@ -130,12 +131,13 @@ enum EMsgIDServerInternalProto : int {
   RelayServer2CENTER_RechargeSuccess = 5003,
   RelayServer2CENTER_Withdraw = 5004,
   Chat2Center_Register = 6001,
+  Chat2Center_UpdateOnlineNum = 6002,
   EMsgIDServerInternalProto_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDServerInternalProto_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDServerInternalProto_IsValid(int value);
 constexpr EMsgIDServerInternalProto EMsgIDServerInternalProto_MIN = SERVER_INTERNAL_NULL;
-constexpr EMsgIDServerInternalProto EMsgIDServerInternalProto_MAX = Chat2Center_Register;
+constexpr EMsgIDServerInternalProto EMsgIDServerInternalProto_MAX = Chat2Center_UpdateOnlineNum;
 constexpr int EMsgIDServerInternalProto_ARRAYSIZE = EMsgIDServerInternalProto_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDServerInternalProto_descriptor();
