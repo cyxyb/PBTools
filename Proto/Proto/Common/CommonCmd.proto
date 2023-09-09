@@ -102,6 +102,7 @@ enum EMsgIDLogin
 	MsgIDBank_BankRecord						= 88;		//银行转账记录()
 	MsgIDBank_BankRecordResp					= 89;		//银行转账记录返回(MsgBankRecordResp)
 	MsgIDLogin_NotifyChatServerList				= 90;		//通知聊天服务器列表(MsgChatServerList)
+	MsgIDLogin_QueryChatServerList				= 91;		//请求聊天服务器列表(MsgCommonBool)
 }
 
 enum EMsgIDGame
@@ -137,6 +138,8 @@ enum EMsgIDChat
 	MsgIDChat_LoginResp					= 2002;		//玩家登录返回(MsgChatLoginResp)
 	MsgIDChat_Logout					= 2003;		//玩家下线(MsgCommonBool)
 	MsgIDChat_LogoutResp				= 2004;		//玩家下线返回(MsgCommonN32)
-	MsgIDChat_SendMsg					= 2005;		//发送消息(MsgChatMsg)
-	MsgIDChat_NotifyChatMsgResp			= 2006;		//发送消息返回(MsgNotifyChatMsg)
+	MsgIDChat_SendNormalMsg				= 2005;		//发送普通消息(MsgCommonStr)
+	MsgIDChat_NotifyChatNormalMsgResp	= 2006;		//发送普通消息返回(MsgNotifyChatNormalMsg)
+	MsgIDChat_SendTrumpetMsg			= 2007;		//发送小喇叭消息(MsgChatTrumpetMsg)
+	MsgIDChat_NotifyChatTrumpetMsgResp	= 2008;		//发送小喇叭消息返回(MsgNotifyChatTrumpetMsg)
 }

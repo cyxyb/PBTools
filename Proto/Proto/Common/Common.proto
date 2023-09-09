@@ -53,18 +53,35 @@ message MsgBroadcastZmdTip
 	repeated string	content		= 9;		//拼接内容数组
 }
 
-//聊天消息
-message MsgChatMsg
+//通知普通聊天消息
+message MsgNotifyChatNormalMsg
 {
-	int32	type				= 1;		//消息类型(1:普通消息  2:小喇叭)
-	bool	is_use_trumpet		= 2;		//是否使用小喇叭
-	string	message				= 3;		//聊天内容
+	int32	user_id				= 1;		//用户ID
+	string	message				= 2;		//聊天内容
+}
+
+//聊天消息
+message MsgChatTrumpetMsg
+{
+	bool	is_use_trumpet		= 1;		//是否使用小喇叭
+	string	message				= 2;		//聊天内容
 }
 
 //通知聊天消息
-message MsgNotifyChatMsg
+message MsgNotifyChatTrumpetMsg
 {
-	int32	user_id				= 1;		//用户ID
-	int32	type				= 2;		//消息类型(1:普通消息  2:小喇叭)
-	string	message				= 3;		//聊天内容
+	int32	user_id					= 1;		//用户ID
+	MsgChatPlayerInfo player_info	= 2;		//玩家信息
+	string	message					= 3;		//聊天内容
+}
+
+//聊天玩家数据
+message MsgChatPlayerInfo
+{
+	int32		user_id			= 1;	//玩家ID
+	int32		beautiful_id	= 2;	//玩家靓号
+	string		nickname		= 3;	//玩家昵称
+	string		avatar			= 4;	//头像
+	int32		vip_level		= 5;	//VIP等级
+	int32		avatar_frame	= 6;	//头像框
 }
