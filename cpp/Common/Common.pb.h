@@ -1864,6 +1864,7 @@ class MsgChatPlayerInfo PROTOBUF_FINAL :
     kBeautifulIdFieldNumber = 2,
     kVipLevelFieldNumber = 5,
     kAvatarFrameFieldNumber = 6,
+    kClientTypeFieldNumber = 7,
   };
   // string nickname = 3;
   void clear_nickname();
@@ -1933,6 +1934,15 @@ class MsgChatPlayerInfo PROTOBUF_FINAL :
   void _internal_set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 client_type = 7;
+  void clear_client_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 client_type() const;
+  void set_client_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_client_type() const;
+  void _internal_set_client_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgChatPlayerInfo)
  private:
   class _Internal;
@@ -1946,6 +1956,7 @@ class MsgChatPlayerInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 beautiful_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 vip_level_;
   ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame_;
+  ::PROTOBUF_NAMESPACE_ID::int32 client_type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Common_2eproto;
 };
@@ -3162,6 +3173,26 @@ inline void MsgChatPlayerInfo::_internal_set_avatar_frame(::PROTOBUF_NAMESPACE_I
 inline void MsgChatPlayerInfo::set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_avatar_frame(value);
   // @@protoc_insertion_point(field_set:MsgChatPlayerInfo.avatar_frame)
+}
+
+// int32 client_type = 7;
+inline void MsgChatPlayerInfo::clear_client_type() {
+  client_type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChatPlayerInfo::_internal_client_type() const {
+  return client_type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChatPlayerInfo::client_type() const {
+  // @@protoc_insertion_point(field_get:MsgChatPlayerInfo.client_type)
+  return _internal_client_type();
+}
+inline void MsgChatPlayerInfo::_internal_set_client_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  client_type_ = value;
+}
+inline void MsgChatPlayerInfo::set_client_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_client_type(value);
+  // @@protoc_insertion_point(field_set:MsgChatPlayerInfo.client_type)
 }
 
 #ifdef __GNUC__

@@ -300,6 +300,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Common_2eproto::offsets[] PROT
   PROTOBUF_FIELD_OFFSET(::MsgChatPlayerInfo, avatar_),
   PROTOBUF_FIELD_OFFSET(::MsgChatPlayerInfo, vip_level_),
   PROTOBUF_FIELD_OFFSET(::MsgChatPlayerInfo, avatar_frame_),
+  PROTOBUF_FIELD_OFFSET(::MsgChatPlayerInfo, client_type_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::MsgCommonBool)},
@@ -349,11 +350,11 @@ const char descriptor_table_protodef_Common_2eproto[] PROTOBUF_SECTION_VARIABLE(
   "sg\022\026\n\016is_use_trumpet\030\001 \001(\010\022\017\n\007message\030\002 "
   "\001(\t\"d\n\027MsgNotifyChatTrumpetMsg\022\017\n\007user_i"
   "d\030\001 \001(\005\022\'\n\013player_info\030\002 \001(\0132\022.MsgChatPl"
-  "ayerInfo\022\017\n\007message\030\003 \001(\t\"\205\001\n\021MsgChatPla"
+  "ayerInfo\022\017\n\007message\030\003 \001(\t\"\232\001\n\021MsgChatPla"
   "yerInfo\022\017\n\007user_id\030\001 \001(\005\022\024\n\014beautiful_id"
   "\030\002 \001(\005\022\020\n\010nickname\030\003 \001(\t\022\016\n\006avatar\030\004 \001(\t"
   "\022\021\n\tvip_level\030\005 \001(\005\022\024\n\014avatar_frame\030\006 \001("
-  "\005b\006proto3"
+  "\005\022\023\n\013client_type\030\007 \001(\005b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Common_2eproto_deps[1] = {
 };
@@ -372,7 +373,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Com
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Common_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Common_2eproto = {
-  false, false, descriptor_table_protodef_Common_2eproto, "Common.proto", 929,
+  false, false, descriptor_table_protodef_Common_2eproto, "Common.proto", 950,
   &descriptor_table_Common_2eproto_once, descriptor_table_Common_2eproto_sccs, descriptor_table_Common_2eproto_deps, 11, 0,
   schemas, file_default_instances, TableStruct_Common_2eproto::offsets,
   file_level_metadata_Common_2eproto, 11, file_level_enum_descriptors_Common_2eproto, file_level_service_descriptors_Common_2eproto,
@@ -2940,8 +2941,8 @@ MsgChatPlayerInfo::MsgChatPlayerInfo(const MsgChatPlayerInfo& from)
       GetArena());
   }
   ::memcpy(&user_id_, &from.user_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&avatar_frame_) -
-    reinterpret_cast<char*>(&user_id_)) + sizeof(avatar_frame_));
+    static_cast<size_t>(reinterpret_cast<char*>(&client_type_) -
+    reinterpret_cast<char*>(&user_id_)) + sizeof(client_type_));
   // @@protoc_insertion_point(copy_constructor:MsgChatPlayerInfo)
 }
 
@@ -2951,8 +2952,8 @@ void MsgChatPlayerInfo::SharedCtor() {
   avatar_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&user_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&avatar_frame_) -
-      reinterpret_cast<char*>(&user_id_)) + sizeof(avatar_frame_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&client_type_) -
+      reinterpret_cast<char*>(&user_id_)) + sizeof(client_type_));
 }
 
 MsgChatPlayerInfo::~MsgChatPlayerInfo() {
@@ -2991,8 +2992,8 @@ void MsgChatPlayerInfo::Clear() {
   nickname_.ClearToEmpty();
   avatar_.ClearToEmpty();
   ::memset(&user_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&avatar_frame_) -
-      reinterpret_cast<char*>(&user_id_)) + sizeof(avatar_frame_));
+      reinterpret_cast<char*>(&client_type_) -
+      reinterpret_cast<char*>(&user_id_)) + sizeof(client_type_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -3046,6 +3047,13 @@ const char* MsgChatPlayerInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
           avatar_frame_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 client_type = 7;
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
+          client_type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -3121,6 +3129,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_avatar_frame(), target);
   }
 
+  // int32 client_type = 7;
+  if (this->client_type() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(7, this->_internal_client_type(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -3179,6 +3193,13 @@ size_t MsgChatPlayerInfo::ByteSizeLong() const {
         this->_internal_avatar_frame());
   }
 
+  // int32 client_type = 7;
+  if (this->client_type() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_client_type());
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
         _internal_metadata_, total_size, &_cached_size_);
@@ -3228,6 +3249,9 @@ void MsgChatPlayerInfo::MergeFrom(const MsgChatPlayerInfo& from) {
   if (from.avatar_frame() != 0) {
     _internal_set_avatar_frame(from._internal_avatar_frame());
   }
+  if (from.client_type() != 0) {
+    _internal_set_client_type(from._internal_client_type());
+  }
 }
 
 void MsgChatPlayerInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -3254,8 +3278,8 @@ void MsgChatPlayerInfo::InternalSwap(MsgChatPlayerInfo* other) {
   nickname_.Swap(&other->nickname_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   avatar_.Swap(&other->avatar_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgChatPlayerInfo, avatar_frame_)
-      + sizeof(MsgChatPlayerInfo::avatar_frame_)
+      PROTOBUF_FIELD_OFFSET(MsgChatPlayerInfo, client_type_)
+      + sizeof(MsgChatPlayerInfo::client_type_)
       - PROTOBUF_FIELD_OFFSET(MsgChatPlayerInfo, user_id_)>(
           reinterpret_cast<char*>(&user_id_),
           reinterpret_cast<char*>(&other->user_id_));
