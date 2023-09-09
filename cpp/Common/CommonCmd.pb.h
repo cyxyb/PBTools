@@ -175,12 +175,13 @@ enum EMsgIDLogin : int {
   MsgIDBank_BankRecord = 88,
   MsgIDBank_BankRecordResp = 89,
   MsgIDLogin_NotifyChatServerList = 90,
+  MsgIDLogin_QueryChatServerList = 91,
   EMsgIDLogin_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDLogin_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDLogin_IsValid(int value);
 constexpr EMsgIDLogin EMsgIDLogin_MIN = MsgIDLogin_Null;
-constexpr EMsgIDLogin EMsgIDLogin_MAX = MsgIDLogin_NotifyChatServerList;
+constexpr EMsgIDLogin EMsgIDLogin_MAX = MsgIDLogin_QueryChatServerList;
 constexpr int EMsgIDLogin_ARRAYSIZE = EMsgIDLogin_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDLogin_descriptor();
@@ -246,14 +247,16 @@ enum EMsgIDChat : int {
   MsgIDChat_LoginResp = 2002,
   MsgIDChat_Logout = 2003,
   MsgIDChat_LogoutResp = 2004,
-  MsgIDChat_SendMsg = 2005,
-  MsgIDChat_NotifyChatMsgResp = 2006,
+  MsgIDChat_SendNormalMsg = 2005,
+  MsgIDChat_NotifyChatNormalMsgResp = 2006,
+  MsgIDChat_SendTrumpetMsg = 2007,
+  MsgIDChat_NotifyChatTrumpetMsgResp = 2008,
   EMsgIDChat_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDChat_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDChat_IsValid(int value);
 constexpr EMsgIDChat EMsgIDChat_MIN = MsgIDChat_Null;
-constexpr EMsgIDChat EMsgIDChat_MAX = MsgIDChat_NotifyChatMsgResp;
+constexpr EMsgIDChat EMsgIDChat_MAX = MsgIDChat_NotifyChatTrumpetMsgResp;
 constexpr int EMsgIDChat_ARRAYSIZE = EMsgIDChat_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDChat_descriptor();
