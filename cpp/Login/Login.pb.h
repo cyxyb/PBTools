@@ -1918,7 +1918,6 @@ class MsgTurnPlayInfo PROTOBUF_FINAL :
     kPlayNumFieldNumber = 1,
     kLimitTurnFieldNumber = 2,
     kNeedScoreFieldNumber = 3,
-    kTurnProFieldNumber = 4,
   };
   // int32 play_num = 1;
   void clear_play_num();
@@ -1947,15 +1946,6 @@ class MsgTurnPlayInfo PROTOBUF_FINAL :
   void _internal_set_need_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 turn_pro = 4;
-  void clear_turn_pro();
-  ::PROTOBUF_NAMESPACE_ID::int32 turn_pro() const;
-  void set_turn_pro(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_turn_pro() const;
-  void _internal_set_turn_pro(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
   // @@protoc_insertion_point(class_scope:MsgTurnPlayInfo)
  private:
   class _Internal;
@@ -1966,7 +1956,6 @@ class MsgTurnPlayInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 play_num_;
   ::PROTOBUF_NAMESPACE_ID::int32 limit_turn_;
   ::PROTOBUF_NAMESPACE_ID::int32 need_score_;
-  ::PROTOBUF_NAMESPACE_ID::int32 turn_pro_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -2086,7 +2075,8 @@ class MsgTurnCfg PROTOBUF_FINAL :
   enum : int {
     kIndexFieldNumber = 1,
     kArwadFieldNumber = 2,
-    kArwadtypeFieldNumber = 3,
+    kArwadTypeFieldNumber = 3,
+    kTypeFieldNumber = 4,
   };
   // int32 index = 1;
   void clear_index();
@@ -2097,7 +2087,7 @@ class MsgTurnCfg PROTOBUF_FINAL :
   void _internal_set_index(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 Arwad = 2;
+  // int32 arwad = 2;
   void clear_arwad();
   ::PROTOBUF_NAMESPACE_ID::int32 arwad() const;
   void set_arwad(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -2106,13 +2096,22 @@ class MsgTurnCfg PROTOBUF_FINAL :
   void _internal_set_arwad(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 Arwadtype = 3;
-  void clear_arwadtype();
-  ::PROTOBUF_NAMESPACE_ID::int32 arwadtype() const;
-  void set_arwadtype(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // int32 arwad_type = 3;
+  void clear_arwad_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 arwad_type() const;
+  void set_arwad_type(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_arwadtype() const;
-  void _internal_set_arwadtype(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_arwad_type() const;
+  void _internal_set_arwad_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 type = 4;
+  void clear_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 type() const;
+  void set_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_type() const;
+  void _internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:MsgTurnCfg)
@@ -2124,7 +2123,8 @@ class MsgTurnCfg PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int32 index_;
   ::PROTOBUF_NAMESPACE_ID::int32 arwad_;
-  ::PROTOBUF_NAMESPACE_ID::int32 arwadtype_;
+  ::PROTOBUF_NAMESPACE_ID::int32 arwad_type_;
+  ::PROTOBUF_NAMESPACE_ID::int32 type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -2242,14 +2242,16 @@ class MsgTurntableData PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kSilverCfgFieldNumber = 4,
-    kGoldCfgFieldNumber = 5,
-    kHistoryFieldNumber = 6,
-    kSilverInfoFieldNumber = 2,
-    kGoldInfoFieldNumber = 3,
+    kSilverCfgFieldNumber = 6,
+    kGoldCfgFieldNumber = 7,
+    kHistoryFieldNumber = 8,
+    kSilverInfoFieldNumber = 4,
+    kGoldInfoFieldNumber = 5,
     kScoreFieldNumber = 1,
+    kTurnProFieldNumber = 2,
+    kTurnMaxProFieldNumber = 3,
   };
-  // repeated .MsgTurnCfg silver_cfg = 4;
+  // repeated .MsgTurnCfg silver_cfg = 6;
   int silver_cfg_size() const;
   private:
   int _internal_silver_cfg_size() const;
@@ -2267,7 +2269,7 @@ class MsgTurntableData PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgTurnCfg >&
       silver_cfg() const;
 
-  // repeated .MsgTurnCfg gold_cfg = 5;
+  // repeated .MsgTurnCfg gold_cfg = 7;
   int gold_cfg_size() const;
   private:
   int _internal_gold_cfg_size() const;
@@ -2285,7 +2287,7 @@ class MsgTurntableData PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgTurnCfg >&
       gold_cfg() const;
 
-  // repeated .MsgTurntableHistoryData history = 6;
+  // repeated .MsgTurntableHistoryData history = 8;
   int history_size() const;
   private:
   int _internal_history_size() const;
@@ -2303,7 +2305,7 @@ class MsgTurntableData PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgTurntableHistoryData >&
       history() const;
 
-  // .MsgTurnPlayInfo silver_info = 2;
+  // .MsgTurnPlayInfo silver_info = 4;
   bool has_silver_info() const;
   private:
   bool _internal_has_silver_info() const;
@@ -2321,7 +2323,7 @@ class MsgTurntableData PROTOBUF_FINAL :
       ::MsgTurnPlayInfo* silver_info);
   ::MsgTurnPlayInfo* unsafe_arena_release_silver_info();
 
-  // .MsgTurnPlayInfo gold_info = 3;
+  // .MsgTurnPlayInfo gold_info = 5;
   bool has_gold_info() const;
   private:
   bool _internal_has_gold_info() const;
@@ -2348,6 +2350,24 @@ class MsgTurntableData PROTOBUF_FINAL :
   void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
+  // int32 turn_pro = 2;
+  void clear_turn_pro();
+  ::PROTOBUF_NAMESPACE_ID::int32 turn_pro() const;
+  void set_turn_pro(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_turn_pro() const;
+  void _internal_set_turn_pro(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 turn_max_pro = 3;
+  void clear_turn_max_pro();
+  ::PROTOBUF_NAMESPACE_ID::int32 turn_max_pro() const;
+  void set_turn_max_pro(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_turn_max_pro() const;
+  void _internal_set_turn_max_pro(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgTurntableData)
  private:
   class _Internal;
@@ -2361,6 +2381,8 @@ class MsgTurntableData PROTOBUF_FINAL :
   ::MsgTurnPlayInfo* silver_info_;
   ::MsgTurnPlayInfo* gold_info_;
   ::PROTOBUF_NAMESPACE_ID::int64 score_;
+  ::PROTOBUF_NAMESPACE_ID::int32 turn_pro_;
+  ::PROTOBUF_NAMESPACE_ID::int32 turn_max_pro_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -9927,26 +9949,6 @@ inline void MsgTurnPlayInfo::set_need_score(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:MsgTurnPlayInfo.need_score)
 }
 
-// int32 turn_pro = 4;
-inline void MsgTurnPlayInfo::clear_turn_pro() {
-  turn_pro_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurnPlayInfo::_internal_turn_pro() const {
-  return turn_pro_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurnPlayInfo::turn_pro() const {
-  // @@protoc_insertion_point(field_get:MsgTurnPlayInfo.turn_pro)
-  return _internal_turn_pro();
-}
-inline void MsgTurnPlayInfo::_internal_set_turn_pro(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  turn_pro_ = value;
-}
-inline void MsgTurnPlayInfo::set_turn_pro(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_turn_pro(value);
-  // @@protoc_insertion_point(field_set:MsgTurnPlayInfo.turn_pro)
-}
-
 // -------------------------------------------------------------------
 
 // MsgTurnCfg
@@ -9971,7 +9973,7 @@ inline void MsgTurnCfg::set_index(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:MsgTurnCfg.index)
 }
 
-// int32 Arwad = 2;
+// int32 arwad = 2;
 inline void MsgTurnCfg::clear_arwad() {
   arwad_ = 0;
 }
@@ -9979,7 +9981,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurnCfg::_internal_arwad() const {
   return arwad_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurnCfg::arwad() const {
-  // @@protoc_insertion_point(field_get:MsgTurnCfg.Arwad)
+  // @@protoc_insertion_point(field_get:MsgTurnCfg.arwad)
   return _internal_arwad();
 }
 inline void MsgTurnCfg::_internal_set_arwad(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -9988,27 +9990,47 @@ inline void MsgTurnCfg::_internal_set_arwad(::PROTOBUF_NAMESPACE_ID::int32 value
 }
 inline void MsgTurnCfg::set_arwad(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_arwad(value);
-  // @@protoc_insertion_point(field_set:MsgTurnCfg.Arwad)
+  // @@protoc_insertion_point(field_set:MsgTurnCfg.arwad)
 }
 
-// int32 Arwadtype = 3;
-inline void MsgTurnCfg::clear_arwadtype() {
-  arwadtype_ = 0;
+// int32 arwad_type = 3;
+inline void MsgTurnCfg::clear_arwad_type() {
+  arwad_type_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurnCfg::_internal_arwadtype() const {
-  return arwadtype_;
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurnCfg::_internal_arwad_type() const {
+  return arwad_type_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurnCfg::arwadtype() const {
-  // @@protoc_insertion_point(field_get:MsgTurnCfg.Arwadtype)
-  return _internal_arwadtype();
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurnCfg::arwad_type() const {
+  // @@protoc_insertion_point(field_get:MsgTurnCfg.arwad_type)
+  return _internal_arwad_type();
 }
-inline void MsgTurnCfg::_internal_set_arwadtype(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgTurnCfg::_internal_set_arwad_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
-  arwadtype_ = value;
+  arwad_type_ = value;
 }
-inline void MsgTurnCfg::set_arwadtype(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_arwadtype(value);
-  // @@protoc_insertion_point(field_set:MsgTurnCfg.Arwadtype)
+inline void MsgTurnCfg::set_arwad_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_arwad_type(value);
+  // @@protoc_insertion_point(field_set:MsgTurnCfg.arwad_type)
+}
+
+// int32 type = 4;
+inline void MsgTurnCfg::clear_type() {
+  type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurnCfg::_internal_type() const {
+  return type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurnCfg::type() const {
+  // @@protoc_insertion_point(field_get:MsgTurnCfg.type)
+  return _internal_type();
+}
+inline void MsgTurnCfg::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  type_ = value;
+}
+inline void MsgTurnCfg::set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_type(value);
+  // @@protoc_insertion_point(field_set:MsgTurnCfg.type)
 }
 
 // -------------------------------------------------------------------
@@ -10035,7 +10057,47 @@ inline void MsgTurntableData::set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   // @@protoc_insertion_point(field_set:MsgTurntableData.score)
 }
 
-// .MsgTurnPlayInfo silver_info = 2;
+// int32 turn_pro = 2;
+inline void MsgTurntableData::clear_turn_pro() {
+  turn_pro_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurntableData::_internal_turn_pro() const {
+  return turn_pro_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurntableData::turn_pro() const {
+  // @@protoc_insertion_point(field_get:MsgTurntableData.turn_pro)
+  return _internal_turn_pro();
+}
+inline void MsgTurntableData::_internal_set_turn_pro(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  turn_pro_ = value;
+}
+inline void MsgTurntableData::set_turn_pro(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_turn_pro(value);
+  // @@protoc_insertion_point(field_set:MsgTurntableData.turn_pro)
+}
+
+// int32 turn_max_pro = 3;
+inline void MsgTurntableData::clear_turn_max_pro() {
+  turn_max_pro_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurntableData::_internal_turn_max_pro() const {
+  return turn_max_pro_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurntableData::turn_max_pro() const {
+  // @@protoc_insertion_point(field_get:MsgTurntableData.turn_max_pro)
+  return _internal_turn_max_pro();
+}
+inline void MsgTurntableData::_internal_set_turn_max_pro(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  turn_max_pro_ = value;
+}
+inline void MsgTurntableData::set_turn_max_pro(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_turn_max_pro(value);
+  // @@protoc_insertion_point(field_set:MsgTurntableData.turn_max_pro)
+}
+
+// .MsgTurnPlayInfo silver_info = 4;
 inline bool MsgTurntableData::_internal_has_silver_info() const {
   return this != internal_default_instance() && silver_info_ != nullptr;
 }
@@ -10118,7 +10180,7 @@ inline void MsgTurntableData::set_allocated_silver_info(::MsgTurnPlayInfo* silve
   // @@protoc_insertion_point(field_set_allocated:MsgTurntableData.silver_info)
 }
 
-// .MsgTurnPlayInfo gold_info = 3;
+// .MsgTurnPlayInfo gold_info = 5;
 inline bool MsgTurntableData::_internal_has_gold_info() const {
   return this != internal_default_instance() && gold_info_ != nullptr;
 }
@@ -10201,7 +10263,7 @@ inline void MsgTurntableData::set_allocated_gold_info(::MsgTurnPlayInfo* gold_in
   // @@protoc_insertion_point(field_set_allocated:MsgTurntableData.gold_info)
 }
 
-// repeated .MsgTurnCfg silver_cfg = 4;
+// repeated .MsgTurnCfg silver_cfg = 6;
 inline int MsgTurntableData::_internal_silver_cfg_size() const {
   return silver_cfg_.size();
 }
@@ -10240,7 +10302,7 @@ MsgTurntableData::silver_cfg() const {
   return silver_cfg_;
 }
 
-// repeated .MsgTurnCfg gold_cfg = 5;
+// repeated .MsgTurnCfg gold_cfg = 7;
 inline int MsgTurntableData::_internal_gold_cfg_size() const {
   return gold_cfg_.size();
 }
@@ -10279,7 +10341,7 @@ MsgTurntableData::gold_cfg() const {
   return gold_cfg_;
 }
 
-// repeated .MsgTurntableHistoryData history = 6;
+// repeated .MsgTurntableHistoryData history = 8;
 inline int MsgTurntableData::_internal_history_size() const {
   return history_.size();
 }

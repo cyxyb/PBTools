@@ -87,25 +87,27 @@ message MsgTurnPlayInfo
 	int32		play_num				= 1;	//已转动次数
 	int32		limit_turn				= 2;	//转动限制次数
 	int32		need_score				= 3;	//转动需要积分
-	int32		turn_pro				= 4;	//转动进度
 }
 
 message MsgTurnCfg
 {
 	int32		index					= 1;	//转盘索引
-	int32		Arwad					= 2;	//奖励
-	int32		Arwadtype				= 3;	//奖励类型
+	int32		arwad					= 2;	//奖励
+	int32		arwad_type				= 3;	//奖励类型
+	int32		type					= 4;	//类型 1 白银盘 2 黄金盘
 }
 
 //转盘信息
 message MsgTurntableData
 {
 	int64		score					= 1;	//玩家积分
-	MsgTurnPlayInfo silver_info			= 2;	//白银盘信息
-	MsgTurnPlayInfo gold_info			= 3;	//黄金盘信息
-	repeated MsgTurnCfg silver_cfg		= 4;	//白银盘配置
-	repeated MsgTurnCfg gold_cfg		= 5;	//黄金盘配置
-	repeated MsgTurntableHistoryData history = 6;	//历史数据
+	int32		turn_pro				= 2;	//转动进度
+	int32		turn_max_pro			= 3;	//转动最大进度
+	MsgTurnPlayInfo silver_info			= 4;	//白银盘信息
+	MsgTurnPlayInfo gold_info			= 5;	//黄金盘信息
+	repeated MsgTurnCfg silver_cfg		= 6;	//盘配置 
+	repeated MsgTurnCfg gold_cfg		= 7;	//黄金盘配置
+	repeated MsgTurntableHistoryData history = 8;	//历史数据
 }
 
 
