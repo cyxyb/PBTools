@@ -255,11 +255,11 @@ public enum EMsgIDLogin {
   /// </summary>
   [pbr::OriginalName("MsgIDTurntable_QueryDataResp")] MsgIdturntableQueryDataResp = 29,
   /// <summary>
-  ///转动转盘(MsgTurntableResp)
+  ///转动转盘(MsgTurntable)
   /// </summary>
   [pbr::OriginalName("MsgIDTurntable_PlayTurntable")] MsgIdturntablePlayTurntable = 30,
   /// <summary>
-  ///转动转盘返回(MsgCommonN32)
+  ///转动转盘返回(MsgTurntableResp)
   /// </summary>
   [pbr::OriginalName("MsgIDTurntable_PlayTurntableResp")] MsgIdturntablePlayTurntableResp = 31,
   /// <summary>

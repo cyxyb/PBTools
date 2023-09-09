@@ -46,7 +46,7 @@ struct TableStruct_Login_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[43]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[44]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -164,6 +164,9 @@ extern MsgTurnCfgDefaultTypeInternal _MsgTurnCfg_default_instance_;
 class MsgTurnPlayInfo;
 class MsgTurnPlayInfoDefaultTypeInternal;
 extern MsgTurnPlayInfoDefaultTypeInternal _MsgTurnPlayInfo_default_instance_;
+class MsgTurntable;
+class MsgTurntableDefaultTypeInternal;
+extern MsgTurntableDefaultTypeInternal _MsgTurntable_default_instance_;
 class MsgTurntableData;
 class MsgTurntableDataDefaultTypeInternal;
 extern MsgTurntableDataDefaultTypeInternal _MsgTurntableData_default_instance_;
@@ -220,6 +223,7 @@ template<> ::MsgTopInfo* Arena::CreateMaybeMessage<::MsgTopInfo>(Arena*);
 template<> ::MsgTopListResp* Arena::CreateMaybeMessage<::MsgTopListResp>(Arena*);
 template<> ::MsgTurnCfg* Arena::CreateMaybeMessage<::MsgTurnCfg>(Arena*);
 template<> ::MsgTurnPlayInfo* Arena::CreateMaybeMessage<::MsgTurnPlayInfo>(Arena*);
+template<> ::MsgTurntable* Arena::CreateMaybeMessage<::MsgTurntable>(Arena*);
 template<> ::MsgTurntableData* Arena::CreateMaybeMessage<::MsgTurntableData>(Arena*);
 template<> ::MsgTurntableHistoryData* Arena::CreateMaybeMessage<::MsgTurntableHistoryData>(Arena*);
 template<> ::MsgTurntableResp* Arena::CreateMaybeMessage<::MsgTurntableResp>(Arena*);
@@ -2441,6 +2445,153 @@ class MsgTurntableData PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
+class MsgTurntable PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgTurntable) */ {
+ public:
+  inline MsgTurntable() : MsgTurntable(nullptr) {}
+  virtual ~MsgTurntable();
+
+  MsgTurntable(const MsgTurntable& from);
+  MsgTurntable(MsgTurntable&& from) noexcept
+    : MsgTurntable() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgTurntable& operator=(const MsgTurntable& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgTurntable& operator=(MsgTurntable&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgTurntable& default_instance();
+
+  static inline const MsgTurntable* internal_default_instance() {
+    return reinterpret_cast<const MsgTurntable*>(
+               &_MsgTurntable_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    10;
+
+  friend void swap(MsgTurntable& a, MsgTurntable& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgTurntable* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgTurntable* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgTurntable* New() const final {
+    return CreateMaybeMessage<MsgTurntable>(nullptr);
+  }
+
+  MsgTurntable* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgTurntable>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgTurntable& from);
+  void MergeFrom(const MsgTurntable& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgTurntable* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgTurntable";
+  }
+  protected:
+  explicit MsgTurntable(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kTurnTypeFieldNumber = 2,
+    kUserIdFieldNumber = 1,
+  };
+  // int64 turn_type = 2;
+  void clear_turn_type();
+  ::PROTOBUF_NAMESPACE_ID::int64 turn_type() const;
+  void set_turn_type(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_turn_type() const;
+  void _internal_set_turn_type(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int32 user_id = 1;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgTurntable)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int64 turn_type_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
+// -------------------------------------------------------------------
+
 class MsgTurntableResp PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgTurntableResp) */ {
  public:
@@ -2482,7 +2633,7 @@ class MsgTurntableResp PROTOBUF_FINAL :
                &_MsgTurntableResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    11;
 
   friend void swap(MsgTurntableResp& a, MsgTurntableResp& b) {
     a.Swap(&b);
@@ -2651,7 +2802,7 @@ class MsgMailsInfo PROTOBUF_FINAL :
                &_MsgMailsInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    12;
 
   friend void swap(MsgMailsInfo& a, MsgMailsInfo& b) {
     a.Swap(&b);
@@ -2796,7 +2947,7 @@ class MsgMailData PROTOBUF_FINAL :
                &_MsgMailData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    12;
+    13;
 
   friend void swap(MsgMailData& a, MsgMailData& b) {
     a.Swap(&b);
@@ -3034,7 +3185,7 @@ class MsgShareData PROTOBUF_FINAL :
                &_MsgShareData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    13;
+    14;
 
   friend void swap(MsgShareData& a, MsgShareData& b) {
     a.Swap(&b);
@@ -3202,7 +3353,7 @@ class MsgBindParentData PROTOBUF_FINAL :
                &_MsgBindParentData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    14;
+    15;
 
   friend void swap(MsgBindParentData& a, MsgBindParentData& b) {
     a.Swap(&b);
@@ -3345,7 +3496,7 @@ class MsgInviteAwardInfo PROTOBUF_FINAL :
                &_MsgInviteAwardInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    15;
+    16;
 
   friend void swap(MsgInviteAwardInfo& a, MsgInviteAwardInfo& b) {
     a.Swap(&b);
@@ -3512,7 +3663,7 @@ class MsgInviteAwardConfig PROTOBUF_FINAL :
                &_MsgInviteAwardConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    16;
+    17;
 
   friend void swap(MsgInviteAwardConfig& a, MsgInviteAwardConfig& b) {
     a.Swap(&b);
@@ -3659,7 +3810,7 @@ class MsgRechargeInfo PROTOBUF_FINAL :
                &_MsgRechargeInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    17;
+    18;
 
   friend void swap(MsgRechargeInfo& a, MsgRechargeInfo& b) {
     a.Swap(&b);
@@ -3846,7 +3997,7 @@ class MsgQueryRebateRecordInfo PROTOBUF_FINAL :
                &_MsgQueryRebateRecordInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    18;
+    19;
 
   friend void swap(MsgQueryRebateRecordInfo& a, MsgQueryRebateRecordInfo& b) {
     a.Swap(&b);
@@ -3991,7 +4142,7 @@ class MsgQueryRebateRecord PROTOBUF_FINAL :
                &_MsgQueryRebateRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    19;
+    20;
 
   friend void swap(MsgQueryRebateRecord& a, MsgQueryRebateRecord& b) {
     a.Swap(&b);
@@ -4149,7 +4300,7 @@ class MsgForgetPassword PROTOBUF_FINAL :
                &_MsgForgetPassword_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    20;
+    21;
 
   friend void swap(MsgForgetPassword& a, MsgForgetPassword& b) {
     a.Swap(&b);
@@ -4332,7 +4483,7 @@ class MsgVIPInfo PROTOBUF_FINAL :
                &_MsgVIPInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    21;
+    22;
 
   friend void swap(MsgVIPInfo& a, MsgVIPInfo& b) {
     a.Swap(&b);
@@ -4578,7 +4729,7 @@ class MsgVIPConfig PROTOBUF_FINAL :
                &_MsgVIPConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    22;
+    23;
 
   friend void swap(MsgVIPConfig& a, MsgVIPConfig& b) {
     a.Swap(&b);
@@ -4723,7 +4874,7 @@ class MsgUpgradeVIP PROTOBUF_FINAL :
                &_MsgUpgradeVIP_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    23;
+    24;
 
   friend void swap(MsgUpgradeVIP& a, MsgUpgradeVIP& b) {
     a.Swap(&b);
@@ -4870,7 +5021,7 @@ class MsgGetAvatarInfo PROTOBUF_FINAL :
                &_MsgGetAvatarInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    24;
+    25;
 
   friend void swap(MsgGetAvatarInfo& a, MsgGetAvatarInfo& b) {
     a.Swap(&b);
@@ -5020,7 +5171,7 @@ class MsgPlayerInfo PROTOBUF_FINAL :
                &_MsgPlayerInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    25;
+    26;
 
   friend void swap(MsgPlayerInfo& a, MsgPlayerInfo& b) {
     a.Swap(&b);
@@ -5294,7 +5445,7 @@ class MsgActiveInfo PROTOBUF_FINAL :
                &_MsgActiveInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    26;
+    27;
 
   friend void swap(MsgActiveInfo& a, MsgActiveInfo& b) {
     a.Swap(&b);
@@ -5441,7 +5592,7 @@ class ActiveInfoRet PROTOBUF_FINAL :
                &_ActiveInfoRet_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    27;
+    28;
 
   friend void swap(ActiveInfoRet& a, ActiveInfoRet& b) {
     a.Swap(&b);
@@ -5687,7 +5838,7 @@ class MsgActiveInfoSCRet PROTOBUF_FINAL :
                &_MsgActiveInfoSCRet_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    28;
+    29;
 
   friend void swap(MsgActiveInfoSCRet& a, MsgActiveInfoSCRet& b) {
     a.Swap(&b);
@@ -5832,7 +5983,7 @@ class MsgActiveInfoCSPick PROTOBUF_FINAL :
                &_MsgActiveInfoCSPick_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    29;
+    30;
 
   friend void swap(MsgActiveInfoCSPick& a, MsgActiveInfoCSPick& b) {
     a.Swap(&b);
@@ -5990,7 +6141,7 @@ class MsgActiveInfoSCPick PROTOBUF_FINAL :
                &_MsgActiveInfoSCPick_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    30;
+    31;
 
   friend void swap(MsgActiveInfoSCPick& a, MsgActiveInfoSCPick& b) {
     a.Swap(&b);
@@ -6247,7 +6398,7 @@ class MsgModifySignature PROTOBUF_FINAL :
                &_MsgModifySignature_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    31;
+    32;
 
   friend void swap(MsgModifySignature& a, MsgModifySignature& b) {
     a.Swap(&b);
@@ -6401,7 +6552,7 @@ class MsgBankChangePassword PROTOBUF_FINAL :
                &_MsgBankChangePassword_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    32;
+    33;
 
   friend void swap(MsgBankChangePassword& a, MsgBankChangePassword& b) {
     a.Swap(&b);
@@ -6555,7 +6706,7 @@ class MsgBankOperate PROTOBUF_FINAL :
                &_MsgBankOperate_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    33;
+    34;
 
   friend void swap(MsgBankOperate& a, MsgBankOperate& b) {
     a.Swap(&b);
@@ -6702,7 +6853,7 @@ class MsgBankTakeOut PROTOBUF_FINAL :
                &_MsgBankTakeOut_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    34;
+    35;
 
   friend void swap(MsgBankTakeOut& a, MsgBankTakeOut& b) {
     a.Swap(&b);
@@ -6860,7 +7011,7 @@ class MsgBankTransfer PROTOBUF_FINAL :
                &_MsgBankTransfer_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    35;
+    36;
 
   friend void swap(MsgBankTransfer& a, MsgBankTransfer& b) {
     a.Swap(&b);
@@ -7007,7 +7158,7 @@ class MsgTopInfo PROTOBUF_FINAL :
                &_MsgTopInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    36;
+    37;
 
   friend void swap(MsgTopInfo& a, MsgTopInfo& b) {
     a.Swap(&b);
@@ -7223,7 +7374,7 @@ class MsgGetRank PROTOBUF_FINAL :
                &_MsgGetRank_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    37;
+    38;
 
   friend void swap(MsgGetRank& a, MsgGetRank& b) {
     a.Swap(&b);
@@ -7392,7 +7543,7 @@ class MsgTopListResp PROTOBUF_FINAL :
                &_MsgTopListResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    38;
+    39;
 
   friend void swap(MsgTopListResp& a, MsgTopListResp& b) {
     a.Swap(&b);
@@ -7592,7 +7743,7 @@ class MsgBankTransferResp PROTOBUF_FINAL :
                &_MsgBankTransferResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    39;
+    40;
 
   friend void swap(MsgBankTransferResp& a, MsgBankTransferResp& b) {
     a.Swap(&b);
@@ -7739,7 +7890,7 @@ class MsgBankRecord PROTOBUF_FINAL :
                &_MsgBankRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    40;
+    41;
 
   friend void swap(MsgBankRecord& a, MsgBankRecord& b) {
     a.Swap(&b);
@@ -7915,7 +8066,7 @@ class MsgBankRecordResp PROTOBUF_FINAL :
                &_MsgBankRecordResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    41;
+    42;
 
   friend void swap(MsgBankRecordResp& a, MsgBankRecordResp& b) {
     a.Swap(&b);
@@ -8060,7 +8211,7 @@ class MsgPhoneCode PROTOBUF_FINAL :
                &_MsgPhoneCode_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    42;
+    43;
 
   friend void swap(MsgPhoneCode& a, MsgPhoneCode& b) {
     a.Swap(&b);
@@ -10727,6 +10878,50 @@ inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgTurntableHistoryDat
 MsgTurntableData::big_history() const {
   // @@protoc_insertion_point(field_list:MsgTurntableData.big_history)
   return big_history_;
+}
+
+// -------------------------------------------------------------------
+
+// MsgTurntable
+
+// int32 user_id = 1;
+inline void MsgTurntable::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurntable::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurntable::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgTurntable.user_id)
+  return _internal_user_id();
+}
+inline void MsgTurntable::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgTurntable::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgTurntable.user_id)
+}
+
+// int64 turn_type = 2;
+inline void MsgTurntable::clear_turn_type() {
+  turn_type_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgTurntable::_internal_turn_type() const {
+  return turn_type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgTurntable::turn_type() const {
+  // @@protoc_insertion_point(field_get:MsgTurntable.turn_type)
+  return _internal_turn_type();
+}
+inline void MsgTurntable::_internal_set_turn_type(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  turn_type_ = value;
+}
+inline void MsgTurntable::set_turn_type(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_turn_type(value);
+  // @@protoc_insertion_point(field_set:MsgTurntable.turn_type)
 }
 
 // -------------------------------------------------------------------
@@ -14329,6 +14524,8 @@ inline void MsgPhoneCode::set_allocated_phone(std::string* phone) {
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

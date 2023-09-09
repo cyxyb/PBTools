@@ -114,6 +114,13 @@ message MsgTurntableData
 	repeated MsgTurntableHistoryData big_history = 10;	//大赢家历史数据
 }
 
+//玩转盘
+message MsgTurntable
+{
+	int32		user_id					= 1;	//玩家ID
+	int64		turn_type				= 2;	//转盘ID
+}
+
 //转盘玩后返回
 message MsgTurntableResp
 {

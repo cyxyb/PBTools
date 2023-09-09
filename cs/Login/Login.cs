@@ -57,77 +57,78 @@ public static partial class LoginReflection {
           "KAsyCy5Nc2dUdXJuQ2ZnEh0KCGdvbGRfY2ZnGAggAygLMgsuTXNnVHVybkNm",
           "ZxIuCgx0aGlzX2hpc3RvcnkYCSADKAsyGC5Nc2dUdXJudGFibGVIaXN0b3J5",
           "RGF0YRItCgtiaWdfaGlzdG9yeRgKIAMoCzIYLk1zZ1R1cm50YWJsZUhpc3Rv",
-          "cnlEYXRhIlkKEE1zZ1R1cm50YWJsZVJlc3ASDQoFc2NvcmUYASABKAMSEQoJ",
-          "QXdhcmRUeXBlGAIgASgFEhAKCE5ld1ZhbHVlGAMgASgDEhEKCVR1cm5JbmRl",
-          "eBgEIAEoAyIrCgxNc2dNYWlsc0luZm8SGwoFbWFpbHMYASADKAsyDC5Nc2dN",
-          "YWlsRGF0YSKsAQoLTXNnTWFpbERhdGESDwoHbWFpbF9pZBgBIAEoBRIUCgxz",
-          "ZW5kX3VzZXJfaWQYAiABKAUSEQoJc2VuZF90aW1lGAMgASgFEg0KBXRpdGxl",
-          "GAQgASgJEg8KB2NvbnRlbnQYBSABKAkSDAoEZ29sZBgGIAEoAxIPCgdpc19y",
-          "ZWFkGAcgASgIEhAKCGlzX2NsYWltGAggASgIEhIKCnRvX3VzZXJfaWQYCSAB",
-          "KAUiNgoMTXNnU2hhcmVEYXRhEhMKC2ludml0ZV9jb2RlGAEgASgJEhEKCWJp",
-          "bmRfbGlzdBgCIAMoBSIkChFNc2dCaW5kUGFyZW50RGF0YRIPCgdzdHJDb2Rl",
-          "GAEgASgJImMKEk1zZ0ludml0ZUF3YXJkSW5mbxIRCglpbnZpdGVOdW0YASAB",
-          "KAUSEQoJcGlja0luZGV4GAIgASgFEicKCGF3YXJkQ2ZnGAMgAygLMhUuTXNn",
-          "SW52aXRlQXdhcmRDb25maWciOAoUTXNnSW52aXRlQXdhcmRDb25maWcSEQoJ",
-          "aW52aXRlTnVtGAEgASgFEg0KBWF3YXJkGAIgASgFIncKD01zZ1JlY2hhcmdl",
-          "SW5mbxIRCglpbnZpdGVOdW0YASABKAUSEgoKdG9kYXlBd2FyZBgCIAEoAxIS",
-          "Cgp0b3RhbEF3YXJkGAMgASgDEhUKDWNhblBpY2tBbW91bnQYBCABKAMSEgoK",
-          "aW52aXRlQ29kZRgFIAEoCSJMChhNc2dRdWVyeVJlYmF0ZVJlY29yZEluZm8S",
-          "MAoRcXVlcnlSZWJhdGVSZWNvcmQYASADKAsyFS5Nc2dRdWVyeVJlYmF0ZVJl",
-          "Y29yZCJWChRNc2dRdWVyeVJlYmF0ZVJlY29yZBIWCg5yZWNoYXJnZVVzZXJJ",
-          "ZBgBIAEoBRIWCg5yZWNoYXJnZUFtb3VudBgCIAEoBRIOCgZyZWJhdGUYAyAB",
-          "KAUiWwoRTXNnRm9yZ2V0UGFzc3dvcmQSEwoLY2xpZW50X3R5cGUYASABKAUS",
-          "DQoFcGhvbmUYAiABKAkSDAoEY29kZRgDIAEoBRIUCgxuZXdfcGFzc3dvcmQY",
-          "BCABKAki9gEKCk1zZ1ZJUEluZm8SEQoJdmlwX2xldmVsGAEgASgFEhIKCm5l",
-          "ZWRfc2NvcmUYAiABKAMSFQoNdHVybnRhYmxlX251bRgDIAEoBRIYChB0cnVt",
-          "cGV0X2Rpc2NvdW50GAQgASgFEhYKDmNoZWNrX2FkZGl0aW9uGAUgASgFEhYK",
-          "DnNoYXJlX2FkZGl0aW9uGAYgASgFEhIKCndvcmxkX2NoYXQYByABKAgSDgoG",
-          "YXZhdGFyGAggASgFEhQKDGF2YXRhcl9mcmFtZRgJIAEoBRISCgphd2FyZF9n",
-          "b2xkGAogASgFEhIKCm9uZV90b19vbmUYCyABKAgiLQoMTXNnVklQQ29uZmln",
-          "Eh0KCHZpcF9pbmZvGAEgAygLMgsuTXNnVklQSW5mbyIvCg1Nc2dVcGdyYWRl",
-          "VklQEhAKCHJlc19jb2RlGAEgASgFEgwKBGdvbGQYAiABKAMiIwoQTXNnR2V0",
-          "QXZhdGFySW5mbxIPCgdhdmF0YXJzGAEgAygFIuABCg1Nc2dQbGF5ZXJJbmZv",
-          "Eg8KB3VzZXJfaWQYASABKAUSFAoMYmVhdXRpZnVsX2lkGAIgASgFEhAKCG5p",
-          "Y2tuYW1lGAMgASgJEg4KBmF2YXRhchgEIAEoCRIMCgRjb2luGAUgASgEEhEK",
-          "CXBob25lX251bRgGIAEoCRIRCgl2aXBfbGV2ZWwYByABKAUSFAoMYXZhdGFy",
-          "X2ZyYW1lGAggASgFEhEKCXNpZ25hdHVyZRgJIAEoCRITCgt6bWRfZ2FtZV9p",
-          "ZBgKIAEoBRIUCgx6bWRfd2luX2dvbGQYCyABKAQiMwoNTXNnQWN0aXZlSW5m",
-          "bxIPCgd1c2VyX2lkGAEgASgFEhEKCWFjdGl2ZV9pZBgCIAEoBSLYAQoNQWN0",
-          "aXZlSW5mb1JldBIRCglhY3RpdmVfaWQYASABKAUSFQoNc3ViX2FjdGl2ZV9p",
-          "ZBgCIAEoBRIOCgZwYXJhbTEYAyABKAUSDgoGcGFyYW0yGAQgASgFEg4KBnBh",
-          "cmFtMxgFIAEoBRIRCglwcm9ncmVzczEYBiABKAUSEQoJcHJvZ3Jlc3MyGAcg",
-          "ASgFEhEKCXByb2dyZXNzMxgIIAEoBRIOCgZyZXdhcmQYCSABKAUSEwoLcmV3",
-          "YXJkX3R5cGUYCiABKAUSDwoHaXNfcGljaxgLIAEoCCI2ChJNc2dBY3RpdmVJ",
-          "bmZvU0NSZXQSIAoIdmVjX2luZm8YASADKAsyDi5BY3RpdmVJbmZvUmV0IlAK",
-          "E01zZ0FjdGl2ZUluZm9DU1BpY2sSDwoHdXNlcl9pZBgBIAEoBRIRCglhY3Rp",
-          "dmVfaWQYAiABKAUSFQoNc3ViX2FjdGl2ZV9pZBgDIAEoBSLrAQoTTXNnQWN0",
-          "aXZlSW5mb1NDUGljaxIRCglhY3RpdmVfaWQYASABKAUSFQoNc3ViX2FjdGl2",
-          "ZV9pZBgCIAEoBRIOCgZwYXJhbTEYAyABKAUSDgoGcGFyYW0yGAQgASgFEg4K",
-          "BnBhcmFtMxgFIAEoBRIRCglwcm9ncmVzczEYBiABKAUSEQoJcHJvZ3Jlc3My",
-          "GAcgASgFEhEKCXByb2dyZXNzMxgIIAEoBRIOCgZyZXdhcmQYCSABKAUSEwoL",
-          "cmV3YXJkX3R5cGUYCiABKAUSDwoHaXNfcGljaxgLIAEoBRILCgNyZXMYDCAB",
-          "KAgiOAoSTXNnTW9kaWZ5U2lnbmF0dXJlEg8KB3VzZXJfaWQYASABKAUSEQoJ",
-          "c2lnbmF0dXJlGAIgASgJIjcKFU1zZ0JhbmtDaGFuZ2VQYXNzd29yZBIQCghw",
-          "YXNzd29yZBgBIAEoCRIMCgRjb2RlGAIgASgFIjQKDk1zZ0JhbmtPcGVyYXRl",
-          "EgwKBGdvbGQYASABKAMSFAoMb3BlcmF0ZV90eXBlGAIgASgFIkkKDk1zZ0Jh",
-          "bmtUYWtlT3V0EhEKCXJldF92YWx1ZRgBIAEoBRIRCgl1c2VyX2dvbGQYAiAB",
-          "KAMSEQoJYmFua19nb2xkGAMgASgDIj4KD01zZ0JhbmtUcmFuc2ZlchIUCgxy",
-          "ZWN2X3VzZXJfaWQYASABKAUSFQoNdHJhbnNmZXJfZ29sZBgCIAEoAyKKAQoK",
-          "TXNnVG9wSW5mbxIPCgdyYW5rX2lkGAEgASgFEg8KB3VzZXJfaWQYAiABKAUS",
-          "DAoEZ29sZBgDIAEoBBIRCgl2aXBfbGV2ZWwYBCABKA0SFAoMYXZhdGFyX2Zy",
-          "YW1lGAUgASgFEhAKCGhlYWRfdXJsGAYgASgJEhEKCW5pY2tfbmFtZRgHIAEo",
-          "CSJXCgpNc2dHZXRSYW5rEhEKCXJhbmtfdHlwZRgBIAEoBRIPCgd1c2VyX2lk",
-          "GAIgASgFEhQKDGN1cnJlbnRfcGFnZRgDIAEoBRIPCgdtYXhfcm93GAQgASgF",
-          "IosBCg5Nc2dUb3BMaXN0UmVzcBIPCgd1c2VyX2lkGAEgASgFEhEKCXJhbmtf",
-          "dHlwZRgCIAEoBRIWCg50aGlzX3JhbmtfbmRleBgDIAEoBRIRCgl0aGlzX2dv",
-          "bGQYBCABKAUSDgoGaXNfZW5kGAUgASgFEhoKBWxpc3RzGAYgAygLMgsuTXNn",
-          "VG9wSW5mbyI7ChNNc2dCYW5rVHJhbnNmZXJSZXNwEhEKCXJldF92YWx1ZRgB",
-          "IAEoBRIRCgliYW5rX2dvbGQYAiABKAMiZAoNTXNnQmFua1JlY29yZBIXCg9v",
-          "cGVyYXRlX3VzZXJfaWQYASABKAUSFQoNdHJhbnNmZXJfZ29sZBgCIAEoAxIN",
-          "CgV0aW1lchgDIAEoCRIUCgxvcGVyYXRlX3R5cGUYBCABKAUiNAoRTXNnQmFu",
-          "a1JlY29yZFJlc3ASHwoHcmVjb3JkcxgBIAMoCzIOLk1zZ0JhbmtSZWNvcmQi",
-          "MAoMTXNnUGhvbmVDb2RlEhEKCWFyZWFfY29kZRgBIAEoCRINCgVwaG9uZRgC",
-          "IAEoCWIGcHJvdG8z"));
+          "cnlEYXRhIjIKDE1zZ1R1cm50YWJsZRIPCgd1c2VyX2lkGAEgASgFEhEKCXR1",
+          "cm5fdHlwZRgCIAEoAyJZChBNc2dUdXJudGFibGVSZXNwEg0KBXNjb3JlGAEg",
+          "ASgDEhEKCUF3YXJkVHlwZRgCIAEoBRIQCghOZXdWYWx1ZRgDIAEoAxIRCglU",
+          "dXJuSW5kZXgYBCABKAMiKwoMTXNnTWFpbHNJbmZvEhsKBW1haWxzGAEgAygL",
+          "MgwuTXNnTWFpbERhdGEirAEKC01zZ01haWxEYXRhEg8KB21haWxfaWQYASAB",
+          "KAUSFAoMc2VuZF91c2VyX2lkGAIgASgFEhEKCXNlbmRfdGltZRgDIAEoBRIN",
+          "CgV0aXRsZRgEIAEoCRIPCgdjb250ZW50GAUgASgJEgwKBGdvbGQYBiABKAMS",
+          "DwoHaXNfcmVhZBgHIAEoCBIQCghpc19jbGFpbRgIIAEoCBISCgp0b191c2Vy",
+          "X2lkGAkgASgFIjYKDE1zZ1NoYXJlRGF0YRITCgtpbnZpdGVfY29kZRgBIAEo",
+          "CRIRCgliaW5kX2xpc3QYAiADKAUiJAoRTXNnQmluZFBhcmVudERhdGESDwoH",
+          "c3RyQ29kZRgBIAEoCSJjChJNc2dJbnZpdGVBd2FyZEluZm8SEQoJaW52aXRl",
+          "TnVtGAEgASgFEhEKCXBpY2tJbmRleBgCIAEoBRInCghhd2FyZENmZxgDIAMo",
+          "CzIVLk1zZ0ludml0ZUF3YXJkQ29uZmlnIjgKFE1zZ0ludml0ZUF3YXJkQ29u",
+          "ZmlnEhEKCWludml0ZU51bRgBIAEoBRINCgVhd2FyZBgCIAEoBSJ3Cg9Nc2dS",
+          "ZWNoYXJnZUluZm8SEQoJaW52aXRlTnVtGAEgASgFEhIKCnRvZGF5QXdhcmQY",
+          "AiABKAMSEgoKdG90YWxBd2FyZBgDIAEoAxIVCg1jYW5QaWNrQW1vdW50GAQg",
+          "ASgDEhIKCmludml0ZUNvZGUYBSABKAkiTAoYTXNnUXVlcnlSZWJhdGVSZWNv",
+          "cmRJbmZvEjAKEXF1ZXJ5UmViYXRlUmVjb3JkGAEgAygLMhUuTXNnUXVlcnlS",
+          "ZWJhdGVSZWNvcmQiVgoUTXNnUXVlcnlSZWJhdGVSZWNvcmQSFgoOcmVjaGFy",
+          "Z2VVc2VySWQYASABKAUSFgoOcmVjaGFyZ2VBbW91bnQYAiABKAUSDgoGcmVi",
+          "YXRlGAMgASgFIlsKEU1zZ0ZvcmdldFBhc3N3b3JkEhMKC2NsaWVudF90eXBl",
+          "GAEgASgFEg0KBXBob25lGAIgASgJEgwKBGNvZGUYAyABKAUSFAoMbmV3X3Bh",
+          "c3N3b3JkGAQgASgJIvYBCgpNc2dWSVBJbmZvEhEKCXZpcF9sZXZlbBgBIAEo",
+          "BRISCgpuZWVkX3Njb3JlGAIgASgDEhUKDXR1cm50YWJsZV9udW0YAyABKAUS",
+          "GAoQdHJ1bXBldF9kaXNjb3VudBgEIAEoBRIWCg5jaGVja19hZGRpdGlvbhgF",
+          "IAEoBRIWCg5zaGFyZV9hZGRpdGlvbhgGIAEoBRISCgp3b3JsZF9jaGF0GAcg",
+          "ASgIEg4KBmF2YXRhchgIIAEoBRIUCgxhdmF0YXJfZnJhbWUYCSABKAUSEgoK",
+          "YXdhcmRfZ29sZBgKIAEoBRISCgpvbmVfdG9fb25lGAsgASgIIi0KDE1zZ1ZJ",
+          "UENvbmZpZxIdCgh2aXBfaW5mbxgBIAMoCzILLk1zZ1ZJUEluZm8iLwoNTXNn",
+          "VXBncmFkZVZJUBIQCghyZXNfY29kZRgBIAEoBRIMCgRnb2xkGAIgASgDIiMK",
+          "EE1zZ0dldEF2YXRhckluZm8SDwoHYXZhdGFycxgBIAMoBSLgAQoNTXNnUGxh",
+          "eWVySW5mbxIPCgd1c2VyX2lkGAEgASgFEhQKDGJlYXV0aWZ1bF9pZBgCIAEo",
+          "BRIQCghuaWNrbmFtZRgDIAEoCRIOCgZhdmF0YXIYBCABKAkSDAoEY29pbhgF",
+          "IAEoBBIRCglwaG9uZV9udW0YBiABKAkSEQoJdmlwX2xldmVsGAcgASgFEhQK",
+          "DGF2YXRhcl9mcmFtZRgIIAEoBRIRCglzaWduYXR1cmUYCSABKAkSEwoLem1k",
+          "X2dhbWVfaWQYCiABKAUSFAoMem1kX3dpbl9nb2xkGAsgASgEIjMKDU1zZ0Fj",
+          "dGl2ZUluZm8SDwoHdXNlcl9pZBgBIAEoBRIRCglhY3RpdmVfaWQYAiABKAUi",
+          "2AEKDUFjdGl2ZUluZm9SZXQSEQoJYWN0aXZlX2lkGAEgASgFEhUKDXN1Yl9h",
+          "Y3RpdmVfaWQYAiABKAUSDgoGcGFyYW0xGAMgASgFEg4KBnBhcmFtMhgEIAEo",
+          "BRIOCgZwYXJhbTMYBSABKAUSEQoJcHJvZ3Jlc3MxGAYgASgFEhEKCXByb2dy",
+          "ZXNzMhgHIAEoBRIRCglwcm9ncmVzczMYCCABKAUSDgoGcmV3YXJkGAkgASgF",
+          "EhMKC3Jld2FyZF90eXBlGAogASgFEg8KB2lzX3BpY2sYCyABKAgiNgoSTXNn",
+          "QWN0aXZlSW5mb1NDUmV0EiAKCHZlY19pbmZvGAEgAygLMg4uQWN0aXZlSW5m",
+          "b1JldCJQChNNc2dBY3RpdmVJbmZvQ1NQaWNrEg8KB3VzZXJfaWQYASABKAUS",
+          "EQoJYWN0aXZlX2lkGAIgASgFEhUKDXN1Yl9hY3RpdmVfaWQYAyABKAUi6wEK",
+          "E01zZ0FjdGl2ZUluZm9TQ1BpY2sSEQoJYWN0aXZlX2lkGAEgASgFEhUKDXN1",
+          "Yl9hY3RpdmVfaWQYAiABKAUSDgoGcGFyYW0xGAMgASgFEg4KBnBhcmFtMhgE",
+          "IAEoBRIOCgZwYXJhbTMYBSABKAUSEQoJcHJvZ3Jlc3MxGAYgASgFEhEKCXBy",
+          "b2dyZXNzMhgHIAEoBRIRCglwcm9ncmVzczMYCCABKAUSDgoGcmV3YXJkGAkg",
+          "ASgFEhMKC3Jld2FyZF90eXBlGAogASgFEg8KB2lzX3BpY2sYCyABKAUSCwoD",
+          "cmVzGAwgASgIIjgKEk1zZ01vZGlmeVNpZ25hdHVyZRIPCgd1c2VyX2lkGAEg",
+          "ASgFEhEKCXNpZ25hdHVyZRgCIAEoCSI3ChVNc2dCYW5rQ2hhbmdlUGFzc3dv",
+          "cmQSEAoIcGFzc3dvcmQYASABKAkSDAoEY29kZRgCIAEoBSI0Cg5Nc2dCYW5r",
+          "T3BlcmF0ZRIMCgRnb2xkGAEgASgDEhQKDG9wZXJhdGVfdHlwZRgCIAEoBSJJ",
+          "Cg5Nc2dCYW5rVGFrZU91dBIRCglyZXRfdmFsdWUYASABKAUSEQoJdXNlcl9n",
+          "b2xkGAIgASgDEhEKCWJhbmtfZ29sZBgDIAEoAyI+Cg9Nc2dCYW5rVHJhbnNm",
+          "ZXISFAoMcmVjdl91c2VyX2lkGAEgASgFEhUKDXRyYW5zZmVyX2dvbGQYAiAB",
+          "KAMiigEKCk1zZ1RvcEluZm8SDwoHcmFua19pZBgBIAEoBRIPCgd1c2VyX2lk",
+          "GAIgASgFEgwKBGdvbGQYAyABKAQSEQoJdmlwX2xldmVsGAQgASgNEhQKDGF2",
+          "YXRhcl9mcmFtZRgFIAEoBRIQCghoZWFkX3VybBgGIAEoCRIRCgluaWNrX25h",
+          "bWUYByABKAkiVwoKTXNnR2V0UmFuaxIRCglyYW5rX3R5cGUYASABKAUSDwoH",
+          "dXNlcl9pZBgCIAEoBRIUCgxjdXJyZW50X3BhZ2UYAyABKAUSDwoHbWF4X3Jv",
+          "dxgEIAEoBSKLAQoOTXNnVG9wTGlzdFJlc3ASDwoHdXNlcl9pZBgBIAEoBRIR",
+          "CglyYW5rX3R5cGUYAiABKAUSFgoOdGhpc19yYW5rX25kZXgYAyABKAUSEQoJ",
+          "dGhpc19nb2xkGAQgASgFEg4KBmlzX2VuZBgFIAEoBRIaCgVsaXN0cxgGIAMo",
+          "CzILLk1zZ1RvcEluZm8iOwoTTXNnQmFua1RyYW5zZmVyUmVzcBIRCglyZXRf",
+          "dmFsdWUYASABKAUSEQoJYmFua19nb2xkGAIgASgDImQKDU1zZ0JhbmtSZWNv",
+          "cmQSFwoPb3BlcmF0ZV91c2VyX2lkGAEgASgFEhUKDXRyYW5zZmVyX2dvbGQY",
+          "AiABKAMSDQoFdGltZXIYAyABKAkSFAoMb3BlcmF0ZV90eXBlGAQgASgFIjQK",
+          "EU1zZ0JhbmtSZWNvcmRSZXNwEh8KB3JlY29yZHMYASADKAsyDi5Nc2dCYW5r",
+          "UmVjb3JkIjAKDE1zZ1Bob25lQ29kZRIRCglhcmVhX2NvZGUYASABKAkSDQoF",
+          "cGhvbmUYAiABKAliBnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -141,6 +142,7 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurnPlayInfo), global::MsgTurnPlayInfo.Parser, new[]{ "PlayNum", "LimitTurn", "NeedScore" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurnCfg), global::MsgTurnCfg.Parser, new[]{ "Index", "Arwad", "ArwadType", "Type" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurntableData), global::MsgTurntableData.Parser, new[]{ "Score", "TurnPro", "TurnMaxPro", "GoldToScore", "SilverInfo", "GoldInfo", "SilverCfg", "GoldCfg", "ThisHistory", "BigHistory" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurntable), global::MsgTurntable.Parser, new[]{ "UserId", "TurnType" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurntableResp), global::MsgTurntableResp.Parser, new[]{ "Score", "AwardType", "NewValue", "TurnIndex" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgMailsInfo), global::MsgMailsInfo.Parser, new[]{ "Mails" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgMailData), global::MsgMailData.Parser, new[]{ "MailId", "SendUserId", "SendTime", "Title", "Content", "Gold", "IsRead", "IsClaim", "ToUserId" }, null, null, null, null),
@@ -4138,6 +4140,223 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
 }
 
 /// <summary>
+///玩转盘
+/// </summary>
+public sealed partial class MsgTurntable : pb::IMessage<MsgTurntable>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgTurntable> _parser = new pb::MessageParser<MsgTurntable>(() => new MsgTurntable());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgTurntable> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[10]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgTurntable() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgTurntable(MsgTurntable other) : this() {
+    userId_ = other.userId_;
+    turnType_ = other.turnType_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgTurntable Clone() {
+    return new MsgTurntable(this);
+  }
+
+  /// <summary>Field number for the "user_id" field.</summary>
+  public const int UserIdFieldNumber = 1;
+  private int userId_;
+  /// <summary>
+  ///玩家ID
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int UserId {
+    get { return userId_; }
+    set {
+      userId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "turn_type" field.</summary>
+  public const int TurnTypeFieldNumber = 2;
+  private long turnType_;
+  /// <summary>
+  ///转盘ID
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public long TurnType {
+    get { return turnType_; }
+    set {
+      turnType_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgTurntable);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgTurntable other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (UserId != other.UserId) return false;
+    if (TurnType != other.TurnType) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (UserId != 0) hash ^= UserId.GetHashCode();
+    if (TurnType != 0L) hash ^= TurnType.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (UserId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(UserId);
+    }
+    if (TurnType != 0L) {
+      output.WriteRawTag(16);
+      output.WriteInt64(TurnType);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (UserId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(UserId);
+    }
+    if (TurnType != 0L) {
+      output.WriteRawTag(16);
+      output.WriteInt64(TurnType);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (UserId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserId);
+    }
+    if (TurnType != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(TurnType);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgTurntable other) {
+    if (other == null) {
+      return;
+    }
+    if (other.UserId != 0) {
+      UserId = other.UserId;
+    }
+    if (other.TurnType != 0L) {
+      TurnType = other.TurnType;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          UserId = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          TurnType = input.ReadInt64();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          UserId = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          TurnType = input.ReadInt64();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
 ///转盘玩后返回
 /// </summary>
 public sealed partial class MsgTurntableResp : pb::IMessage<MsgTurntableResp>
@@ -4152,7 +4371,7 @@ public sealed partial class MsgTurntableResp : pb::IMessage<MsgTurntableResp>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[10]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[11]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4447,7 +4666,7 @@ public sealed partial class MsgMailsInfo : pb::IMessage<MsgMailsInfo>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[11]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[12]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4614,7 +4833,7 @@ public sealed partial class MsgMailData : pb::IMessage<MsgMailData>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[12]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[13]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5104,7 +5323,7 @@ public sealed partial class MsgShareData : pb::IMessage<MsgShareData>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[13]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[14]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5312,7 +5531,7 @@ public sealed partial class MsgBindParentData : pb::IMessage<MsgBindParentData>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[14]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[15]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5490,7 +5709,7 @@ public sealed partial class MsgInviteAwardInfo : pb::IMessage<MsgInviteAwardInfo
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[15]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[16]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5735,7 +5954,7 @@ public sealed partial class MsgInviteAwardConfig : pb::IMessage<MsgInviteAwardCo
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[16]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[17]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5952,7 +6171,7 @@ public sealed partial class MsgRechargeInfo : pb::IMessage<MsgRechargeInfo>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[17]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[18]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6286,7 +6505,7 @@ public sealed partial class MsgQueryRebateRecordInfo : pb::IMessage<MsgQueryReba
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[18]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[19]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6453,7 +6672,7 @@ public sealed partial class MsgQueryRebateRecord : pb::IMessage<MsgQueryRebateRe
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[19]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[20]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6709,7 +6928,7 @@ public sealed partial class MsgForgetPassword : pb::IMessage<MsgForgetPassword>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[20]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[21]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7004,7 +7223,7 @@ public sealed partial class MsgVIPInfo : pb::IMessage<MsgVIPInfo>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[21]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[22]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7572,7 +7791,7 @@ public sealed partial class MsgVIPConfig : pb::IMessage<MsgVIPConfig>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[22]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[23]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7739,7 +7958,7 @@ public sealed partial class MsgUpgradeVIP : pb::IMessage<MsgUpgradeVIP>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[23]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[24]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7956,7 +8175,7 @@ public sealed partial class MsgGetAvatarInfo : pb::IMessage<MsgGetAvatarInfo>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[24]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[25]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8125,7 +8344,7 @@ public sealed partial class MsgPlayerInfo : pb::IMessage<MsgPlayerInfo>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[25]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[26]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8690,7 +8909,7 @@ public sealed partial class MsgActiveInfo : pb::IMessage<MsgActiveInfo>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[26]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[27]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -8904,7 +9123,7 @@ public sealed partial class ActiveInfoRet : pb::IMessage<ActiveInfoRet>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[27]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[28]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9457,7 +9676,7 @@ public sealed partial class MsgActiveInfoSCRet : pb::IMessage<MsgActiveInfoSCRet
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[28]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[29]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9618,7 +9837,7 @@ public sealed partial class MsgActiveInfoCSPick : pb::IMessage<MsgActiveInfoCSPi
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[29]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[30]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -9871,7 +10090,7 @@ public sealed partial class MsgActiveInfoSCPick : pb::IMessage<MsgActiveInfoSCPi
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[30]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[31]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10463,7 +10682,7 @@ public sealed partial class MsgModifySignature : pb::IMessage<MsgModifySignature
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[31]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[32]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10681,7 +10900,7 @@ public sealed partial class MsgBankChangePassword : pb::IMessage<MsgBankChangePa
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[32]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[33]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -10898,7 +11117,7 @@ public sealed partial class MsgBankOperate : pb::IMessage<MsgBankOperate>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[33]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[34]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11115,7 +11334,7 @@ public sealed partial class MsgBankTakeOut : pb::IMessage<MsgBankTakeOut>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[34]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[35]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11371,7 +11590,7 @@ public sealed partial class MsgBankTransfer : pb::IMessage<MsgBankTransfer>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[35]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[36]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11588,7 +11807,7 @@ public sealed partial class MsgTopInfo : pb::IMessage<MsgTopInfo>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[36]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[37]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -11997,7 +12216,7 @@ public sealed partial class MsgGetRank : pb::IMessage<MsgGetRank>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[37]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[38]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -12292,7 +12511,7 @@ public sealed partial class MsgTopListResp : pb::IMessage<MsgTopListResp>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[38]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[39]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -12654,7 +12873,7 @@ public sealed partial class MsgBankTransferResp : pb::IMessage<MsgBankTransferRe
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[39]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[40]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -12871,7 +13090,7 @@ public sealed partial class MsgBankRecord : pb::IMessage<MsgBankRecord>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[40]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[41]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -13163,7 +13382,7 @@ public sealed partial class MsgBankRecordResp : pb::IMessage<MsgBankRecordResp>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[41]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[42]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -13327,7 +13546,7 @@ public sealed partial class MsgPhoneCode : pb::IMessage<MsgPhoneCode>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[42]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[43]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
