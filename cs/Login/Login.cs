@@ -46,17 +46,17 @@ public static partial class LoginReflection {
           "bW9uS1YiiwEKF01zZ1R1cm50YWJsZUhpc3RvcnlEYXRhEg8KB3VzZXJfaWQY",
           "ASABKAUSEQoJbmlja19uYW1lGAIgASgJEg0KBXNjb3JlGAMgASgFEg0KBWF3",
           "YXJkGAQgASgFEgwKBHR5cGUYBSABKAUSEgoKYXdhcmRfdHlwZRgGIAEoBRIM",
-          "CgR0aW1lGAcgASgJIksKD01zZ1R1cm5QbGF5SW5mbxIQCghwbGF5X251bRgB",
-          "IAEoBRISCgpsaW1pdF90dXJuGAIgASgFEhIKCm5lZWRfc2NvcmUYAyABKAUi",
-          "TAoKTXNnVHVybkNmZxINCgVpbmRleBgBIAEoBRINCgVhcndhZBgCIAEoBRIS",
-          "CgphcndhZF90eXBlGAMgASgFEgwKBHR5cGUYBCABKAUiywIKEE1zZ1R1cm50",
-          "YWJsZURhdGESDQoFc2NvcmUYASABKAMSEAoIdHVybl9wcm8YAiABKAUSFAoM",
-          "dHVybl9tYXhfcHJvGAMgASgFEhUKDWdvbGRfdG9fc2NvcmUYBCABKAUSJQoL",
-          "c2lsdmVyX2luZm8YBSABKAsyEC5Nc2dUdXJuUGxheUluZm8SIwoJZ29sZF9p",
-          "bmZvGAYgASgLMhAuTXNnVHVyblBsYXlJbmZvEh8KCnNpbHZlcl9jZmcYByAD",
-          "KAsyCy5Nc2dUdXJuQ2ZnEh0KCGdvbGRfY2ZnGAggAygLMgsuTXNnVHVybkNm",
-          "ZxIuCgx0aGlzX2hpc3RvcnkYCSADKAsyGC5Nc2dUdXJudGFibGVIaXN0b3J5",
-          "RGF0YRItCgtiaWdfaGlzdG9yeRgKIAMoCzIYLk1zZ1R1cm50YWJsZUhpc3Rv",
+          "CgR0aW1lGAcgASgJIl0KD01zZ1R1cm5QbGF5SW5mbxIQCghwbGF5X251bRgB",
+          "IAEoBRISCgpsaW1pdF90dXJuGAIgASgFEhIKCm5lZWRfc2NvcmUYAyABKAUS",
+          "EAoIdHVybl9wcm8YBCABKAUiTAoKTXNnVHVybkNmZxINCgVpbmRleBgBIAEo",
+          "BRINCgVhcndhZBgCIAEoBRISCgphcndhZF90eXBlGAMgASgFEgwKBHR5cGUY",
+          "BCABKAUiuQIKEE1zZ1R1cm50YWJsZURhdGESDQoFc2NvcmUYASABKAMSFAoM",
+          "dHVybl9tYXhfcHJvGAIgASgFEhUKDWdvbGRfdG9fc2NvcmUYAyABKAUSJQoL",
+          "c2lsdmVyX2luZm8YBCABKAsyEC5Nc2dUdXJuUGxheUluZm8SIwoJZ29sZF9p",
+          "bmZvGAUgASgLMhAuTXNnVHVyblBsYXlJbmZvEh8KCnNpbHZlcl9jZmcYBiAD",
+          "KAsyCy5Nc2dUdXJuQ2ZnEh0KCGdvbGRfY2ZnGAcgAygLMgsuTXNnVHVybkNm",
+          "ZxIuCgx0aGlzX2hpc3RvcnkYCCADKAsyGC5Nc2dUdXJudGFibGVIaXN0b3J5",
+          "RGF0YRItCgtiaWdfaGlzdG9yeRgJIAMoCzIYLk1zZ1R1cm50YWJsZUhpc3Rv",
           "cnlEYXRhIjIKDE1zZ1R1cm50YWJsZRIPCgd1c2VyX2lkGAEgASgFEhEKCXR1",
           "cm5fdHlwZRgCIAEoAyJuChBNc2dUdXJudGFibGVSZXNwEg0KBXNjb3JlGAEg",
           "ASgDEhIKCmF3YXJkX3R5cGUYAiABKAUSEQoJbmV3X3ZhbHVlGAMgASgDEhEK",
@@ -139,9 +139,9 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgCommonKV), global::MsgCommonKV.Parser, new[]{ "K", "V" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgCheckInInfo), global::MsgCheckInInfo.Parser, new[]{ "CheckDays", "IsOpen", "CanPick", "CheckInCfg" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurntableHistoryData), global::MsgTurntableHistoryData.Parser, new[]{ "UserId", "NickName", "Score", "Award", "Type", "AwardType", "Time" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurnPlayInfo), global::MsgTurnPlayInfo.Parser, new[]{ "PlayNum", "LimitTurn", "NeedScore" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurnPlayInfo), global::MsgTurnPlayInfo.Parser, new[]{ "PlayNum", "LimitTurn", "NeedScore", "TurnPro" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurnCfg), global::MsgTurnCfg.Parser, new[]{ "Index", "Arwad", "ArwadType", "Type" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurntableData), global::MsgTurntableData.Parser, new[]{ "Score", "TurnPro", "TurnMaxPro", "GoldToScore", "SilverInfo", "GoldInfo", "SilverCfg", "GoldCfg", "ThisHistory", "BigHistory" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurntableData), global::MsgTurntableData.Parser, new[]{ "Score", "TurnMaxPro", "GoldToScore", "SilverInfo", "GoldInfo", "SilverCfg", "GoldCfg", "ThisHistory", "BigHistory" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurntable), global::MsgTurntable.Parser, new[]{ "UserId", "TurnType" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurntableResp), global::MsgTurntableResp.Parser, new[]{ "Score", "AwardType", "NewValue", "TurnIndex", "GetValue" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgMailsInfo), global::MsgMailsInfo.Parser, new[]{ "Mails" }, null, null, null, null),
@@ -3123,6 +3123,7 @@ public sealed partial class MsgTurnPlayInfo : pb::IMessage<MsgTurnPlayInfo>
     playNum_ = other.playNum_;
     limitTurn_ = other.limitTurn_;
     needScore_ = other.needScore_;
+    turnPro_ = other.turnPro_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -3173,6 +3174,20 @@ public sealed partial class MsgTurnPlayInfo : pb::IMessage<MsgTurnPlayInfo>
     }
   }
 
+  /// <summary>Field number for the "turn_pro" field.</summary>
+  public const int TurnProFieldNumber = 4;
+  private int turnPro_;
+  /// <summary>
+  ///当前 进度
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int TurnPro {
+    get { return turnPro_; }
+    set {
+      turnPro_ = value;
+    }
+  }
+
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as MsgTurnPlayInfo);
@@ -3189,6 +3204,7 @@ public sealed partial class MsgTurnPlayInfo : pb::IMessage<MsgTurnPlayInfo>
     if (PlayNum != other.PlayNum) return false;
     if (LimitTurn != other.LimitTurn) return false;
     if (NeedScore != other.NeedScore) return false;
+    if (TurnPro != other.TurnPro) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -3198,6 +3214,7 @@ public sealed partial class MsgTurnPlayInfo : pb::IMessage<MsgTurnPlayInfo>
     if (PlayNum != 0) hash ^= PlayNum.GetHashCode();
     if (LimitTurn != 0) hash ^= LimitTurn.GetHashCode();
     if (NeedScore != 0) hash ^= NeedScore.GetHashCode();
+    if (TurnPro != 0) hash ^= TurnPro.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -3226,6 +3243,10 @@ public sealed partial class MsgTurnPlayInfo : pb::IMessage<MsgTurnPlayInfo>
       output.WriteRawTag(24);
       output.WriteInt32(NeedScore);
     }
+    if (TurnPro != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(TurnPro);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -3247,6 +3268,10 @@ public sealed partial class MsgTurnPlayInfo : pb::IMessage<MsgTurnPlayInfo>
       output.WriteRawTag(24);
       output.WriteInt32(NeedScore);
     }
+    if (TurnPro != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(TurnPro);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -3264,6 +3289,9 @@ public sealed partial class MsgTurnPlayInfo : pb::IMessage<MsgTurnPlayInfo>
     }
     if (NeedScore != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(NeedScore);
+    }
+    if (TurnPro != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(TurnPro);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -3284,6 +3312,9 @@ public sealed partial class MsgTurnPlayInfo : pb::IMessage<MsgTurnPlayInfo>
     }
     if (other.NeedScore != 0) {
       NeedScore = other.NeedScore;
+    }
+    if (other.TurnPro != 0) {
+      TurnPro = other.TurnPro;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -3311,6 +3342,10 @@ public sealed partial class MsgTurnPlayInfo : pb::IMessage<MsgTurnPlayInfo>
           NeedScore = input.ReadInt32();
           break;
         }
+        case 32: {
+          TurnPro = input.ReadInt32();
+          break;
+        }
       }
     }
   #endif
@@ -3335,6 +3370,10 @@ public sealed partial class MsgTurnPlayInfo : pb::IMessage<MsgTurnPlayInfo>
         }
         case 24: {
           NeedScore = input.ReadInt32();
+          break;
+        }
+        case 32: {
+          TurnPro = input.ReadInt32();
           break;
         }
       }
@@ -3669,7 +3708,6 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public MsgTurntableData(MsgTurntableData other) : this() {
     score_ = other.score_;
-    turnPro_ = other.turnPro_;
     turnMaxPro_ = other.turnMaxPro_;
     goldToScore_ = other.goldToScore_;
     silverInfo_ = other.silverInfo_ != null ? other.silverInfo_.Clone() : null;
@@ -3700,22 +3738,8 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
     }
   }
 
-  /// <summary>Field number for the "turn_pro" field.</summary>
-  public const int TurnProFieldNumber = 2;
-  private int turnPro_;
-  /// <summary>
-  ///转动进度
-  /// </summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public int TurnPro {
-    get { return turnPro_; }
-    set {
-      turnPro_ = value;
-    }
-  }
-
   /// <summary>Field number for the "turn_max_pro" field.</summary>
-  public const int TurnMaxProFieldNumber = 3;
+  public const int TurnMaxProFieldNumber = 2;
   private int turnMaxPro_;
   /// <summary>
   ///转动最大进度
@@ -3729,7 +3753,7 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
   }
 
   /// <summary>Field number for the "gold_to_score" field.</summary>
-  public const int GoldToScoreFieldNumber = 4;
+  public const int GoldToScoreFieldNumber = 3;
   private int goldToScore_;
   /// <summary>
   ///金币与积分比例
@@ -3743,7 +3767,7 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
   }
 
   /// <summary>Field number for the "silver_info" field.</summary>
-  public const int SilverInfoFieldNumber = 5;
+  public const int SilverInfoFieldNumber = 4;
   private global::MsgTurnPlayInfo silverInfo_;
   /// <summary>
   ///白银盘信息
@@ -3757,7 +3781,7 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
   }
 
   /// <summary>Field number for the "gold_info" field.</summary>
-  public const int GoldInfoFieldNumber = 6;
+  public const int GoldInfoFieldNumber = 5;
   private global::MsgTurnPlayInfo goldInfo_;
   /// <summary>
   ///黄金盘信息
@@ -3771,9 +3795,9 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
   }
 
   /// <summary>Field number for the "silver_cfg" field.</summary>
-  public const int SilverCfgFieldNumber = 7;
+  public const int SilverCfgFieldNumber = 6;
   private static readonly pb::FieldCodec<global::MsgTurnCfg> _repeated_silverCfg_codec
-      = pb::FieldCodec.ForMessage(58, global::MsgTurnCfg.Parser);
+      = pb::FieldCodec.ForMessage(50, global::MsgTurnCfg.Parser);
   private readonly pbc::RepeatedField<global::MsgTurnCfg> silverCfg_ = new pbc::RepeatedField<global::MsgTurnCfg>();
   /// <summary>
   ///盘配置 
@@ -3784,9 +3808,9 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
   }
 
   /// <summary>Field number for the "gold_cfg" field.</summary>
-  public const int GoldCfgFieldNumber = 8;
+  public const int GoldCfgFieldNumber = 7;
   private static readonly pb::FieldCodec<global::MsgTurnCfg> _repeated_goldCfg_codec
-      = pb::FieldCodec.ForMessage(66, global::MsgTurnCfg.Parser);
+      = pb::FieldCodec.ForMessage(58, global::MsgTurnCfg.Parser);
   private readonly pbc::RepeatedField<global::MsgTurnCfg> goldCfg_ = new pbc::RepeatedField<global::MsgTurnCfg>();
   /// <summary>
   ///黄金盘配置
@@ -3797,9 +3821,9 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
   }
 
   /// <summary>Field number for the "this_history" field.</summary>
-  public const int ThisHistoryFieldNumber = 9;
+  public const int ThisHistoryFieldNumber = 8;
   private static readonly pb::FieldCodec<global::MsgTurntableHistoryData> _repeated_thisHistory_codec
-      = pb::FieldCodec.ForMessage(74, global::MsgTurntableHistoryData.Parser);
+      = pb::FieldCodec.ForMessage(66, global::MsgTurntableHistoryData.Parser);
   private readonly pbc::RepeatedField<global::MsgTurntableHistoryData> thisHistory_ = new pbc::RepeatedField<global::MsgTurntableHistoryData>();
   /// <summary>
   ///自己的历史数据
@@ -3810,9 +3834,9 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
   }
 
   /// <summary>Field number for the "big_history" field.</summary>
-  public const int BigHistoryFieldNumber = 10;
+  public const int BigHistoryFieldNumber = 9;
   private static readonly pb::FieldCodec<global::MsgTurntableHistoryData> _repeated_bigHistory_codec
-      = pb::FieldCodec.ForMessage(82, global::MsgTurntableHistoryData.Parser);
+      = pb::FieldCodec.ForMessage(74, global::MsgTurntableHistoryData.Parser);
   private readonly pbc::RepeatedField<global::MsgTurntableHistoryData> bigHistory_ = new pbc::RepeatedField<global::MsgTurntableHistoryData>();
   /// <summary>
   ///大赢家历史数据
@@ -3836,7 +3860,6 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
       return true;
     }
     if (Score != other.Score) return false;
-    if (TurnPro != other.TurnPro) return false;
     if (TurnMaxPro != other.TurnMaxPro) return false;
     if (GoldToScore != other.GoldToScore) return false;
     if (!object.Equals(SilverInfo, other.SilverInfo)) return false;
@@ -3852,7 +3875,6 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
   public override int GetHashCode() {
     int hash = 1;
     if (Score != 0L) hash ^= Score.GetHashCode();
-    if (TurnPro != 0) hash ^= TurnPro.GetHashCode();
     if (TurnMaxPro != 0) hash ^= TurnMaxPro.GetHashCode();
     if (GoldToScore != 0) hash ^= GoldToScore.GetHashCode();
     if (silverInfo_ != null) hash ^= SilverInfo.GetHashCode();
@@ -3881,24 +3903,20 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
       output.WriteRawTag(8);
       output.WriteInt64(Score);
     }
-    if (TurnPro != 0) {
-      output.WriteRawTag(16);
-      output.WriteInt32(TurnPro);
-    }
     if (TurnMaxPro != 0) {
-      output.WriteRawTag(24);
+      output.WriteRawTag(16);
       output.WriteInt32(TurnMaxPro);
     }
     if (GoldToScore != 0) {
-      output.WriteRawTag(32);
+      output.WriteRawTag(24);
       output.WriteInt32(GoldToScore);
     }
     if (silverInfo_ != null) {
-      output.WriteRawTag(42);
+      output.WriteRawTag(34);
       output.WriteMessage(SilverInfo);
     }
     if (goldInfo_ != null) {
-      output.WriteRawTag(50);
+      output.WriteRawTag(42);
       output.WriteMessage(GoldInfo);
     }
     silverCfg_.WriteTo(output, _repeated_silverCfg_codec);
@@ -3918,24 +3936,20 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
       output.WriteRawTag(8);
       output.WriteInt64(Score);
     }
-    if (TurnPro != 0) {
-      output.WriteRawTag(16);
-      output.WriteInt32(TurnPro);
-    }
     if (TurnMaxPro != 0) {
-      output.WriteRawTag(24);
+      output.WriteRawTag(16);
       output.WriteInt32(TurnMaxPro);
     }
     if (GoldToScore != 0) {
-      output.WriteRawTag(32);
+      output.WriteRawTag(24);
       output.WriteInt32(GoldToScore);
     }
     if (silverInfo_ != null) {
-      output.WriteRawTag(42);
+      output.WriteRawTag(34);
       output.WriteMessage(SilverInfo);
     }
     if (goldInfo_ != null) {
-      output.WriteRawTag(50);
+      output.WriteRawTag(42);
       output.WriteMessage(GoldInfo);
     }
     silverCfg_.WriteTo(ref output, _repeated_silverCfg_codec);
@@ -3953,9 +3967,6 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
     int size = 0;
     if (Score != 0L) {
       size += 1 + pb::CodedOutputStream.ComputeInt64Size(Score);
-    }
-    if (TurnPro != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeInt32Size(TurnPro);
     }
     if (TurnMaxPro != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(TurnMaxPro);
@@ -3986,9 +3997,6 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
     }
     if (other.Score != 0L) {
       Score = other.Score;
-    }
-    if (other.TurnPro != 0) {
-      TurnPro = other.TurnPro;
     }
     if (other.TurnMaxPro != 0) {
       TurnMaxPro = other.TurnMaxPro;
@@ -4031,44 +4039,40 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
           break;
         }
         case 16: {
-          TurnPro = input.ReadInt32();
-          break;
-        }
-        case 24: {
           TurnMaxPro = input.ReadInt32();
           break;
         }
-        case 32: {
+        case 24: {
           GoldToScore = input.ReadInt32();
           break;
         }
-        case 42: {
+        case 34: {
           if (silverInfo_ == null) {
             SilverInfo = new global::MsgTurnPlayInfo();
           }
           input.ReadMessage(SilverInfo);
           break;
         }
-        case 50: {
+        case 42: {
           if (goldInfo_ == null) {
             GoldInfo = new global::MsgTurnPlayInfo();
           }
           input.ReadMessage(GoldInfo);
           break;
         }
-        case 58: {
+        case 50: {
           silverCfg_.AddEntriesFrom(input, _repeated_silverCfg_codec);
           break;
         }
-        case 66: {
+        case 58: {
           goldCfg_.AddEntriesFrom(input, _repeated_goldCfg_codec);
           break;
         }
-        case 74: {
+        case 66: {
           thisHistory_.AddEntriesFrom(input, _repeated_thisHistory_codec);
           break;
         }
-        case 82: {
+        case 74: {
           bigHistory_.AddEntriesFrom(input, _repeated_bigHistory_codec);
           break;
         }
@@ -4091,44 +4095,40 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
           break;
         }
         case 16: {
-          TurnPro = input.ReadInt32();
-          break;
-        }
-        case 24: {
           TurnMaxPro = input.ReadInt32();
           break;
         }
-        case 32: {
+        case 24: {
           GoldToScore = input.ReadInt32();
           break;
         }
-        case 42: {
+        case 34: {
           if (silverInfo_ == null) {
             SilverInfo = new global::MsgTurnPlayInfo();
           }
           input.ReadMessage(SilverInfo);
           break;
         }
-        case 50: {
+        case 42: {
           if (goldInfo_ == null) {
             GoldInfo = new global::MsgTurnPlayInfo();
           }
           input.ReadMessage(GoldInfo);
           break;
         }
-        case 58: {
+        case 50: {
           silverCfg_.AddEntriesFrom(ref input, _repeated_silverCfg_codec);
           break;
         }
-        case 66: {
+        case 58: {
           goldCfg_.AddEntriesFrom(ref input, _repeated_goldCfg_codec);
           break;
         }
-        case 74: {
+        case 66: {
           thisHistory_.AddEntriesFrom(ref input, _repeated_thisHistory_codec);
           break;
         }
-        case 82: {
+        case 74: {
           bigHistory_.AddEntriesFrom(ref input, _repeated_bigHistory_codec);
           break;
         }

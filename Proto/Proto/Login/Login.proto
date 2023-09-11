@@ -88,6 +88,7 @@ message MsgTurnPlayInfo
 	int32		play_num				= 1;	//已转动次数
 	int32		limit_turn				= 2;	//转动限制次数
 	int32		need_score				= 3;	//转动需要积分
+	int32		turn_pro				= 4;	//当前 进度
 }
 
 message MsgTurnCfg
@@ -102,16 +103,15 @@ message MsgTurnCfg
 message MsgTurntableData
 {
 	int64		score					= 1;	//玩家积分
-	int32		turn_pro				= 2;	//转动进度
-	int32		turn_max_pro			= 3;	//转动最大进度
-	int32		gold_to_score			= 4;	//金币与积分比例
+	int32		turn_max_pro			= 2;	//转动最大进度
+	int32		gold_to_score			= 3;	//金币与积分比例
 
-	MsgTurnPlayInfo silver_info			= 5;	//白银盘信息
-	MsgTurnPlayInfo gold_info			= 6;	//黄金盘信息
-	repeated MsgTurnCfg silver_cfg		= 7;	//盘配置 
-	repeated MsgTurnCfg gold_cfg		= 8;	//黄金盘配置
-	repeated MsgTurntableHistoryData this_history = 9;	//自己的历史数据
-	repeated MsgTurntableHistoryData big_history = 10;	//大赢家历史数据
+	MsgTurnPlayInfo silver_info			= 4;	//白银盘信息
+	MsgTurnPlayInfo gold_info			= 5;	//黄金盘信息
+	repeated MsgTurnCfg silver_cfg		= 6;	//盘配置 
+	repeated MsgTurnCfg gold_cfg		= 7;	//黄金盘配置
+	repeated MsgTurntableHistoryData this_history = 8;	//自己的历史数据
+	repeated MsgTurntableHistoryData big_history = 9;	//大赢家历史数据
 }
 
 //玩转盘

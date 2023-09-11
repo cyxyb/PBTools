@@ -1944,6 +1944,7 @@ class MsgTurnPlayInfo PROTOBUF_FINAL :
     kPlayNumFieldNumber = 1,
     kLimitTurnFieldNumber = 2,
     kNeedScoreFieldNumber = 3,
+    kTurnProFieldNumber = 4,
   };
   // int32 play_num = 1;
   void clear_play_num();
@@ -1972,6 +1973,15 @@ class MsgTurnPlayInfo PROTOBUF_FINAL :
   void _internal_set_need_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 turn_pro = 4;
+  void clear_turn_pro();
+  ::PROTOBUF_NAMESPACE_ID::int32 turn_pro() const;
+  void set_turn_pro(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_turn_pro() const;
+  void _internal_set_turn_pro(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgTurnPlayInfo)
  private:
   class _Internal;
@@ -1982,6 +1992,7 @@ class MsgTurnPlayInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 play_num_;
   ::PROTOBUF_NAMESPACE_ID::int32 limit_turn_;
   ::PROTOBUF_NAMESPACE_ID::int32 need_score_;
+  ::PROTOBUF_NAMESPACE_ID::int32 turn_pro_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -2268,18 +2279,17 @@ class MsgTurntableData PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kSilverCfgFieldNumber = 7,
-    kGoldCfgFieldNumber = 8,
-    kThisHistoryFieldNumber = 9,
-    kBigHistoryFieldNumber = 10,
-    kSilverInfoFieldNumber = 5,
-    kGoldInfoFieldNumber = 6,
+    kSilverCfgFieldNumber = 6,
+    kGoldCfgFieldNumber = 7,
+    kThisHistoryFieldNumber = 8,
+    kBigHistoryFieldNumber = 9,
+    kSilverInfoFieldNumber = 4,
+    kGoldInfoFieldNumber = 5,
     kScoreFieldNumber = 1,
-    kTurnProFieldNumber = 2,
-    kTurnMaxProFieldNumber = 3,
-    kGoldToScoreFieldNumber = 4,
+    kTurnMaxProFieldNumber = 2,
+    kGoldToScoreFieldNumber = 3,
   };
-  // repeated .MsgTurnCfg silver_cfg = 7;
+  // repeated .MsgTurnCfg silver_cfg = 6;
   int silver_cfg_size() const;
   private:
   int _internal_silver_cfg_size() const;
@@ -2297,7 +2307,7 @@ class MsgTurntableData PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgTurnCfg >&
       silver_cfg() const;
 
-  // repeated .MsgTurnCfg gold_cfg = 8;
+  // repeated .MsgTurnCfg gold_cfg = 7;
   int gold_cfg_size() const;
   private:
   int _internal_gold_cfg_size() const;
@@ -2315,7 +2325,7 @@ class MsgTurntableData PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgTurnCfg >&
       gold_cfg() const;
 
-  // repeated .MsgTurntableHistoryData this_history = 9;
+  // repeated .MsgTurntableHistoryData this_history = 8;
   int this_history_size() const;
   private:
   int _internal_this_history_size() const;
@@ -2333,7 +2343,7 @@ class MsgTurntableData PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgTurntableHistoryData >&
       this_history() const;
 
-  // repeated .MsgTurntableHistoryData big_history = 10;
+  // repeated .MsgTurntableHistoryData big_history = 9;
   int big_history_size() const;
   private:
   int _internal_big_history_size() const;
@@ -2351,7 +2361,7 @@ class MsgTurntableData PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgTurntableHistoryData >&
       big_history() const;
 
-  // .MsgTurnPlayInfo silver_info = 5;
+  // .MsgTurnPlayInfo silver_info = 4;
   bool has_silver_info() const;
   private:
   bool _internal_has_silver_info() const;
@@ -2369,7 +2379,7 @@ class MsgTurntableData PROTOBUF_FINAL :
       ::MsgTurnPlayInfo* silver_info);
   ::MsgTurnPlayInfo* unsafe_arena_release_silver_info();
 
-  // .MsgTurnPlayInfo gold_info = 6;
+  // .MsgTurnPlayInfo gold_info = 5;
   bool has_gold_info() const;
   private:
   bool _internal_has_gold_info() const;
@@ -2396,16 +2406,7 @@ class MsgTurntableData PROTOBUF_FINAL :
   void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int32 turn_pro = 2;
-  void clear_turn_pro();
-  ::PROTOBUF_NAMESPACE_ID::int32 turn_pro() const;
-  void set_turn_pro(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_turn_pro() const;
-  void _internal_set_turn_pro(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 turn_max_pro = 3;
+  // int32 turn_max_pro = 2;
   void clear_turn_max_pro();
   ::PROTOBUF_NAMESPACE_ID::int32 turn_max_pro() const;
   void set_turn_max_pro(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -2414,7 +2415,7 @@ class MsgTurntableData PROTOBUF_FINAL :
   void _internal_set_turn_max_pro(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 gold_to_score = 4;
+  // int32 gold_to_score = 3;
   void clear_gold_to_score();
   ::PROTOBUF_NAMESPACE_ID::int32 gold_to_score() const;
   void set_gold_to_score(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -2437,7 +2438,6 @@ class MsgTurntableData PROTOBUF_FINAL :
   ::MsgTurnPlayInfo* silver_info_;
   ::MsgTurnPlayInfo* gold_info_;
   ::PROTOBUF_NAMESPACE_ID::int64 score_;
-  ::PROTOBUF_NAMESPACE_ID::int32 turn_pro_;
   ::PROTOBUF_NAMESPACE_ID::int32 turn_max_pro_;
   ::PROTOBUF_NAMESPACE_ID::int32 gold_to_score_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
@@ -10401,6 +10401,26 @@ inline void MsgTurnPlayInfo::set_need_score(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:MsgTurnPlayInfo.need_score)
 }
 
+// int32 turn_pro = 4;
+inline void MsgTurnPlayInfo::clear_turn_pro() {
+  turn_pro_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurnPlayInfo::_internal_turn_pro() const {
+  return turn_pro_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurnPlayInfo::turn_pro() const {
+  // @@protoc_insertion_point(field_get:MsgTurnPlayInfo.turn_pro)
+  return _internal_turn_pro();
+}
+inline void MsgTurnPlayInfo::_internal_set_turn_pro(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  turn_pro_ = value;
+}
+inline void MsgTurnPlayInfo::set_turn_pro(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_turn_pro(value);
+  // @@protoc_insertion_point(field_set:MsgTurnPlayInfo.turn_pro)
+}
+
 // -------------------------------------------------------------------
 
 // MsgTurnCfg
@@ -10509,27 +10529,7 @@ inline void MsgTurntableData::set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   // @@protoc_insertion_point(field_set:MsgTurntableData.score)
 }
 
-// int32 turn_pro = 2;
-inline void MsgTurntableData::clear_turn_pro() {
-  turn_pro_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurntableData::_internal_turn_pro() const {
-  return turn_pro_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurntableData::turn_pro() const {
-  // @@protoc_insertion_point(field_get:MsgTurntableData.turn_pro)
-  return _internal_turn_pro();
-}
-inline void MsgTurntableData::_internal_set_turn_pro(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  turn_pro_ = value;
-}
-inline void MsgTurntableData::set_turn_pro(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_turn_pro(value);
-  // @@protoc_insertion_point(field_set:MsgTurntableData.turn_pro)
-}
-
-// int32 turn_max_pro = 3;
+// int32 turn_max_pro = 2;
 inline void MsgTurntableData::clear_turn_max_pro() {
   turn_max_pro_ = 0;
 }
@@ -10549,7 +10549,7 @@ inline void MsgTurntableData::set_turn_max_pro(::PROTOBUF_NAMESPACE_ID::int32 va
   // @@protoc_insertion_point(field_set:MsgTurntableData.turn_max_pro)
 }
 
-// int32 gold_to_score = 4;
+// int32 gold_to_score = 3;
 inline void MsgTurntableData::clear_gold_to_score() {
   gold_to_score_ = 0;
 }
@@ -10569,7 +10569,7 @@ inline void MsgTurntableData::set_gold_to_score(::PROTOBUF_NAMESPACE_ID::int32 v
   // @@protoc_insertion_point(field_set:MsgTurntableData.gold_to_score)
 }
 
-// .MsgTurnPlayInfo silver_info = 5;
+// .MsgTurnPlayInfo silver_info = 4;
 inline bool MsgTurntableData::_internal_has_silver_info() const {
   return this != internal_default_instance() && silver_info_ != nullptr;
 }
@@ -10652,7 +10652,7 @@ inline void MsgTurntableData::set_allocated_silver_info(::MsgTurnPlayInfo* silve
   // @@protoc_insertion_point(field_set_allocated:MsgTurntableData.silver_info)
 }
 
-// .MsgTurnPlayInfo gold_info = 6;
+// .MsgTurnPlayInfo gold_info = 5;
 inline bool MsgTurntableData::_internal_has_gold_info() const {
   return this != internal_default_instance() && gold_info_ != nullptr;
 }
@@ -10735,7 +10735,7 @@ inline void MsgTurntableData::set_allocated_gold_info(::MsgTurnPlayInfo* gold_in
   // @@protoc_insertion_point(field_set_allocated:MsgTurntableData.gold_info)
 }
 
-// repeated .MsgTurnCfg silver_cfg = 7;
+// repeated .MsgTurnCfg silver_cfg = 6;
 inline int MsgTurntableData::_internal_silver_cfg_size() const {
   return silver_cfg_.size();
 }
@@ -10774,7 +10774,7 @@ MsgTurntableData::silver_cfg() const {
   return silver_cfg_;
 }
 
-// repeated .MsgTurnCfg gold_cfg = 8;
+// repeated .MsgTurnCfg gold_cfg = 7;
 inline int MsgTurntableData::_internal_gold_cfg_size() const {
   return gold_cfg_.size();
 }
@@ -10813,7 +10813,7 @@ MsgTurntableData::gold_cfg() const {
   return gold_cfg_;
 }
 
-// repeated .MsgTurntableHistoryData this_history = 9;
+// repeated .MsgTurntableHistoryData this_history = 8;
 inline int MsgTurntableData::_internal_this_history_size() const {
   return this_history_.size();
 }
@@ -10852,7 +10852,7 @@ MsgTurntableData::this_history() const {
   return this_history_;
 }
 
-// repeated .MsgTurntableHistoryData big_history = 10;
+// repeated .MsgTurntableHistoryData big_history = 9;
 inline int MsgTurntableData::_internal_big_history_size() const {
   return big_history_.size();
 }
