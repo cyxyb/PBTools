@@ -7986,8 +7986,8 @@ class MsgBankRecord PROTOBUF_FINAL :
   enum : int {
     kTimerFieldNumber = 3,
     kTransferGoldFieldNumber = 2,
-    kOperateUserIdFieldNumber = 1,
-    kOperateTypeFieldNumber = 4,
+    kSendUserIdFieldNumber = 1,
+    kRecvUserIdFieldNumber = 4,
   };
   // string timer = 3;
   void clear_timer();
@@ -8014,22 +8014,22 @@ class MsgBankRecord PROTOBUF_FINAL :
   void _internal_set_transfer_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int32 operate_user_id = 1;
-  void clear_operate_user_id();
-  ::PROTOBUF_NAMESPACE_ID::int32 operate_user_id() const;
-  void set_operate_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // int32 send_user_id = 1;
+  void clear_send_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 send_user_id() const;
+  void set_send_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_operate_user_id() const;
-  void _internal_set_operate_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_send_user_id() const;
+  void _internal_set_send_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 operate_type = 4;
-  void clear_operate_type();
-  ::PROTOBUF_NAMESPACE_ID::int32 operate_type() const;
-  void set_operate_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // int32 recv_user_id = 4;
+  void clear_recv_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 recv_user_id() const;
+  void set_recv_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_operate_type() const;
-  void _internal_set_operate_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_recv_user_id() const;
+  void _internal_set_recv_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:MsgBankRecord)
@@ -8041,8 +8041,8 @@ class MsgBankRecord PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr timer_;
   ::PROTOBUF_NAMESPACE_ID::int64 transfer_gold_;
-  ::PROTOBUF_NAMESPACE_ID::int32 operate_user_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 operate_type_;
+  ::PROTOBUF_NAMESPACE_ID::int32 send_user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 recv_user_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -14720,24 +14720,24 @@ inline void MsgBankTransferResp::set_bank_gold(::PROTOBUF_NAMESPACE_ID::int64 va
 
 // MsgBankRecord
 
-// int32 operate_user_id = 1;
-inline void MsgBankRecord::clear_operate_user_id() {
-  operate_user_id_ = 0;
+// int32 send_user_id = 1;
+inline void MsgBankRecord::clear_send_user_id() {
+  send_user_id_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBankRecord::_internal_operate_user_id() const {
-  return operate_user_id_;
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBankRecord::_internal_send_user_id() const {
+  return send_user_id_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBankRecord::operate_user_id() const {
-  // @@protoc_insertion_point(field_get:MsgBankRecord.operate_user_id)
-  return _internal_operate_user_id();
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBankRecord::send_user_id() const {
+  // @@protoc_insertion_point(field_get:MsgBankRecord.send_user_id)
+  return _internal_send_user_id();
 }
-inline void MsgBankRecord::_internal_set_operate_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgBankRecord::_internal_set_send_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
-  operate_user_id_ = value;
+  send_user_id_ = value;
 }
-inline void MsgBankRecord::set_operate_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_operate_user_id(value);
-  // @@protoc_insertion_point(field_set:MsgBankRecord.operate_user_id)
+inline void MsgBankRecord::set_send_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_send_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgBankRecord.send_user_id)
 }
 
 // int64 transfer_gold = 2;
@@ -14821,24 +14821,24 @@ inline void MsgBankRecord::set_allocated_timer(std::string* timer) {
   // @@protoc_insertion_point(field_set_allocated:MsgBankRecord.timer)
 }
 
-// int32 operate_type = 4;
-inline void MsgBankRecord::clear_operate_type() {
-  operate_type_ = 0;
+// int32 recv_user_id = 4;
+inline void MsgBankRecord::clear_recv_user_id() {
+  recv_user_id_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBankRecord::_internal_operate_type() const {
-  return operate_type_;
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBankRecord::_internal_recv_user_id() const {
+  return recv_user_id_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBankRecord::operate_type() const {
-  // @@protoc_insertion_point(field_get:MsgBankRecord.operate_type)
-  return _internal_operate_type();
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBankRecord::recv_user_id() const {
+  // @@protoc_insertion_point(field_get:MsgBankRecord.recv_user_id)
+  return _internal_recv_user_id();
 }
-inline void MsgBankRecord::_internal_set_operate_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgBankRecord::_internal_set_recv_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
-  operate_type_ = value;
+  recv_user_id_ = value;
 }
-inline void MsgBankRecord::set_operate_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_operate_type(value);
-  // @@protoc_insertion_point(field_set:MsgBankRecord.operate_type)
+inline void MsgBankRecord::set_recv_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_recv_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgBankRecord.recv_user_id)
 }
 
 // -------------------------------------------------------------------

@@ -1242,10 +1242,10 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::MsgBankRecord, operate_user_id_),
+  PROTOBUF_FIELD_OFFSET(::MsgBankRecord, send_user_id_),
   PROTOBUF_FIELD_OFFSET(::MsgBankRecord, transfer_gold_),
   PROTOBUF_FIELD_OFFSET(::MsgBankRecord, timer_),
-  PROTOBUF_FIELD_OFFSET(::MsgBankRecord, operate_type_),
+  PROTOBUF_FIELD_OFFSET(::MsgBankRecord, recv_user_id_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgBankRecordResp, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1495,16 +1495,16 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "this_rank_ndex\030\003 \001(\005\022\021\n\tthis_gold\030\004 \001(\005\022"
   "\016\n\006is_end\030\005 \001(\005\022\032\n\005lists\030\006 \003(\0132\013.MsgTopI"
   "nfo\";\n\023MsgBankTransferResp\022\021\n\tret_value\030"
-  "\001 \001(\005\022\021\n\tbank_gold\030\002 \001(\003\"d\n\rMsgBankRecor"
-  "d\022\027\n\017operate_user_id\030\001 \001(\005\022\025\n\rtransfer_g"
-  "old\030\002 \001(\003\022\r\n\005timer\030\003 \001(\t\022\024\n\014operate_type"
-  "\030\004 \001(\005\"4\n\021MsgBankRecordResp\022\037\n\007records\030\001"
-  " \003(\0132\016.MsgBankRecord\"0\n\014MsgPhoneCode\022\021\n\t"
-  "area_code\030\001 \001(\t\022\r\n\005phone\030\002 \001(\t\",\n\007MsgIte"
-  "m\022\017\n\007item_id\030\001 \001(\005\022\020\n\010item_num\030\002 \001(\003\"\'\n\r"
-  "MsgPlayerItem\022\026\n\004item\030\001 \003(\0132\010.MsgItem\":\n"
-  "\023MsgBankQueryNicname\022\021\n\tret_Value\030\001 \001(\005\022"
-  "\020\n\010nickname\030\002 \001(\tb\006proto3"
+  "\001 \001(\005\022\021\n\tbank_gold\030\002 \001(\003\"a\n\rMsgBankRecor"
+  "d\022\024\n\014send_user_id\030\001 \001(\005\022\025\n\rtransfer_gold"
+  "\030\002 \001(\003\022\r\n\005timer\030\003 \001(\t\022\024\n\014recv_user_id\030\004 "
+  "\001(\005\"4\n\021MsgBankRecordResp\022\037\n\007records\030\001 \003("
+  "\0132\016.MsgBankRecord\"0\n\014MsgPhoneCode\022\021\n\tare"
+  "a_code\030\001 \001(\t\022\r\n\005phone\030\002 \001(\t\",\n\007MsgItem\022\017"
+  "\n\007item_id\030\001 \001(\005\022\020\n\010item_num\030\002 \001(\003\"\'\n\rMsg"
+  "PlayerItem\022\026\n\004item\030\001 \003(\0132\010.MsgItem\":\n\023Ms"
+  "gBankQueryNicname\022\021\n\tret_Value\030\001 \001(\005\022\020\n\010"
+  "nickname\030\002 \001(\tb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Login_2eproto_deps[1] = {
 };
@@ -1559,7 +1559,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Login_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Login_2eproto = {
-  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 4945,
+  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 4942,
   &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 47, 0,
   schemas, file_default_instances, TableStruct_Login_2eproto::offsets,
   file_level_metadata_Login_2eproto, 47, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
@@ -14033,8 +14033,8 @@ MsgBankRecord::MsgBankRecord(const MsgBankRecord& from)
       GetArena());
   }
   ::memcpy(&transfer_gold_, &from.transfer_gold_,
-    static_cast<size_t>(reinterpret_cast<char*>(&operate_type_) -
-    reinterpret_cast<char*>(&transfer_gold_)) + sizeof(operate_type_));
+    static_cast<size_t>(reinterpret_cast<char*>(&recv_user_id_) -
+    reinterpret_cast<char*>(&transfer_gold_)) + sizeof(recv_user_id_));
   // @@protoc_insertion_point(copy_constructor:MsgBankRecord)
 }
 
@@ -14043,8 +14043,8 @@ void MsgBankRecord::SharedCtor() {
   timer_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&transfer_gold_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&operate_type_) -
-      reinterpret_cast<char*>(&transfer_gold_)) + sizeof(operate_type_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&recv_user_id_) -
+      reinterpret_cast<char*>(&transfer_gold_)) + sizeof(recv_user_id_));
 }
 
 MsgBankRecord::~MsgBankRecord() {
@@ -14081,8 +14081,8 @@ void MsgBankRecord::Clear() {
 
   timer_.ClearToEmpty();
   ::memset(&transfer_gold_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&operate_type_) -
-      reinterpret_cast<char*>(&transfer_gold_)) + sizeof(operate_type_));
+      reinterpret_cast<char*>(&recv_user_id_) -
+      reinterpret_cast<char*>(&transfer_gold_)) + sizeof(recv_user_id_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -14093,10 +14093,10 @@ const char* MsgBankRecord::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // int32 operate_user_id = 1;
+      // int32 send_user_id = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          operate_user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          send_user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -14116,10 +14116,10 @@ const char* MsgBankRecord::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 operate_type = 4;
+      // int32 recv_user_id = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          operate_type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          recv_user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -14151,10 +14151,10 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 operate_user_id = 1;
-  if (this->operate_user_id() != 0) {
+  // int32 send_user_id = 1;
+  if (this->send_user_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_operate_user_id(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_send_user_id(), target);
   }
 
   // int64 transfer_gold = 2;
@@ -14173,10 +14173,10 @@ failure:
         3, this->_internal_timer(), target);
   }
 
-  // int32 operate_type = 4;
-  if (this->operate_type() != 0) {
+  // int32 recv_user_id = 4;
+  if (this->recv_user_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_operate_type(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_recv_user_id(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -14209,18 +14209,18 @@ size_t MsgBankRecord::ByteSizeLong() const {
         this->_internal_transfer_gold());
   }
 
-  // int32 operate_user_id = 1;
-  if (this->operate_user_id() != 0) {
+  // int32 send_user_id = 1;
+  if (this->send_user_id() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_operate_user_id());
+        this->_internal_send_user_id());
   }
 
-  // int32 operate_type = 4;
-  if (this->operate_type() != 0) {
+  // int32 recv_user_id = 4;
+  if (this->recv_user_id() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_operate_type());
+        this->_internal_recv_user_id());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -14260,11 +14260,11 @@ void MsgBankRecord::MergeFrom(const MsgBankRecord& from) {
   if (from.transfer_gold() != 0) {
     _internal_set_transfer_gold(from._internal_transfer_gold());
   }
-  if (from.operate_user_id() != 0) {
-    _internal_set_operate_user_id(from._internal_operate_user_id());
+  if (from.send_user_id() != 0) {
+    _internal_set_send_user_id(from._internal_send_user_id());
   }
-  if (from.operate_type() != 0) {
-    _internal_set_operate_type(from._internal_operate_type());
+  if (from.recv_user_id() != 0) {
+    _internal_set_recv_user_id(from._internal_recv_user_id());
   }
 }
 
@@ -14291,8 +14291,8 @@ void MsgBankRecord::InternalSwap(MsgBankRecord* other) {
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   timer_.Swap(&other->timer_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgBankRecord, operate_type_)
-      + sizeof(MsgBankRecord::operate_type_)
+      PROTOBUF_FIELD_OFFSET(MsgBankRecord, recv_user_id_)
+      + sizeof(MsgBankRecord::recv_user_id_)
       - PROTOBUF_FIELD_OFFSET(MsgBankRecord, transfer_gold_)>(
           reinterpret_cast<char*>(&transfer_gold_),
           reinterpret_cast<char*>(&other->transfer_gold_));

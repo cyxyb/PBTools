@@ -365,6 +365,7 @@ message MsgDBBankTakeOut
 	int32 ret_value = 1;				//返回值 0成功 非0失败
 	int64 user_gold = 2;				//玩家携带金币
 	int64 bank_gold = 3;				//玩家银行金币
+	int32 recv_user_id = 4;				//接受id
 }
 //银行转账
 message MsgDBBankTransfer
@@ -419,4 +420,9 @@ message MsgDBBuyGoods
 	int32	user_id				= 1;		//玩家ID
 	int32	item_id				= 2;		//商品id
 	int32	item_num			= 3;		//商品数量
+}
+message MsgSynchronousLogin
+{
+	int32	user_id				= 1;		//玩家ID
+	int64	gold				= 2;		//变动金币
 }

@@ -124,15 +124,15 @@ public static partial class LoginReflection {
           "c19yYW5rX25kZXgYAyABKAUSEQoJdGhpc19nb2xkGAQgASgFEg4KBmlzX2Vu",
           "ZBgFIAEoBRIaCgVsaXN0cxgGIAMoCzILLk1zZ1RvcEluZm8iOwoTTXNnQmFu",
           "a1RyYW5zZmVyUmVzcBIRCglyZXRfdmFsdWUYASABKAUSEQoJYmFua19nb2xk",
-          "GAIgASgDImQKDU1zZ0JhbmtSZWNvcmQSFwoPb3BlcmF0ZV91c2VyX2lkGAEg",
-          "ASgFEhUKDXRyYW5zZmVyX2dvbGQYAiABKAMSDQoFdGltZXIYAyABKAkSFAoM",
-          "b3BlcmF0ZV90eXBlGAQgASgFIjQKEU1zZ0JhbmtSZWNvcmRSZXNwEh8KB3Jl",
-          "Y29yZHMYASADKAsyDi5Nc2dCYW5rUmVjb3JkIjAKDE1zZ1Bob25lQ29kZRIR",
-          "CglhcmVhX2NvZGUYASABKAkSDQoFcGhvbmUYAiABKAkiLAoHTXNnSXRlbRIP",
-          "CgdpdGVtX2lkGAEgASgFEhAKCGl0ZW1fbnVtGAIgASgDIicKDU1zZ1BsYXll",
-          "ckl0ZW0SFgoEaXRlbRgBIAMoCzIILk1zZ0l0ZW0iOgoTTXNnQmFua1F1ZXJ5",
-          "TmljbmFtZRIRCglyZXRfVmFsdWUYASABKAUSEAoIbmlja25hbWUYAiABKAli",
-          "BnByb3RvMw=="));
+          "GAIgASgDImEKDU1zZ0JhbmtSZWNvcmQSFAoMc2VuZF91c2VyX2lkGAEgASgF",
+          "EhUKDXRyYW5zZmVyX2dvbGQYAiABKAMSDQoFdGltZXIYAyABKAkSFAoMcmVj",
+          "dl91c2VyX2lkGAQgASgFIjQKEU1zZ0JhbmtSZWNvcmRSZXNwEh8KB3JlY29y",
+          "ZHMYASADKAsyDi5Nc2dCYW5rUmVjb3JkIjAKDE1zZ1Bob25lQ29kZRIRCglh",
+          "cmVhX2NvZGUYASABKAkSDQoFcGhvbmUYAiABKAkiLAoHTXNnSXRlbRIPCgdp",
+          "dGVtX2lkGAEgASgFEhAKCGl0ZW1fbnVtGAIgASgDIicKDU1zZ1BsYXllckl0",
+          "ZW0SFgoEaXRlbRgBIAMoCzIILk1zZ0l0ZW0iOgoTTXNnQmFua1F1ZXJ5Tmlj",
+          "bmFtZRIRCglyZXRfVmFsdWUYASABKAUSEAoIbmlja25hbWUYAiABKAliBnBy",
+          "b3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -177,7 +177,7 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgGetRank), global::MsgGetRank.Parser, new[]{ "RankType", "UserId", "CurrentPage", "MaxRow" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTopListResp), global::MsgTopListResp.Parser, new[]{ "UserId", "RankType", "ThisRankNdex", "ThisGold", "IsEnd", "Lists" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankTransferResp), global::MsgBankTransferResp.Parser, new[]{ "RetValue", "BankGold" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankRecord), global::MsgBankRecord.Parser, new[]{ "OperateUserId", "TransferGold", "Timer", "OperateType" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankRecord), global::MsgBankRecord.Parser, new[]{ "SendUserId", "TransferGold", "Timer", "RecvUserId" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankRecordResp), global::MsgBankRecordResp.Parser, new[]{ "Records" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPhoneCode), global::MsgPhoneCode.Parser, new[]{ "AreaCode", "Phone" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgItem), global::MsgItem.Parser, new[]{ "ItemId", "ItemNum" }, null, null, null, null),
@@ -13153,10 +13153,10 @@ public sealed partial class MsgBankRecord : pb::IMessage<MsgBankRecord>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public MsgBankRecord(MsgBankRecord other) : this() {
-    operateUserId_ = other.operateUserId_;
+    sendUserId_ = other.sendUserId_;
     transferGold_ = other.transferGold_;
     timer_ = other.timer_;
-    operateType_ = other.operateType_;
+    recvUserId_ = other.recvUserId_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -13165,17 +13165,17 @@ public sealed partial class MsgBankRecord : pb::IMessage<MsgBankRecord>
     return new MsgBankRecord(this);
   }
 
-  /// <summary>Field number for the "operate_user_id" field.</summary>
-  public const int OperateUserIdFieldNumber = 1;
-  private int operateUserId_;
+  /// <summary>Field number for the "send_user_id" field.</summary>
+  public const int SendUserIdFieldNumber = 1;
+  private int sendUserId_;
   /// <summary>
-  ///目标id
+  ///发送id
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public int OperateUserId {
-    get { return operateUserId_; }
+  public int SendUserId {
+    get { return sendUserId_; }
     set {
-      operateUserId_ = value;
+      sendUserId_ = value;
     }
   }
 
@@ -13207,17 +13207,17 @@ public sealed partial class MsgBankRecord : pb::IMessage<MsgBankRecord>
     }
   }
 
-  /// <summary>Field number for the "operate_type" field.</summary>
-  public const int OperateTypeFieldNumber = 4;
-  private int operateType_;
+  /// <summary>Field number for the "recv_user_id" field.</summary>
+  public const int RecvUserIdFieldNumber = 4;
+  private int recvUserId_;
   /// <summary>
-  ///1转出2接受
+  ///接受id
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public int OperateType {
-    get { return operateType_; }
+  public int RecvUserId {
+    get { return recvUserId_; }
     set {
-      operateType_ = value;
+      recvUserId_ = value;
     }
   }
 
@@ -13234,20 +13234,20 @@ public sealed partial class MsgBankRecord : pb::IMessage<MsgBankRecord>
     if (ReferenceEquals(other, this)) {
       return true;
     }
-    if (OperateUserId != other.OperateUserId) return false;
+    if (SendUserId != other.SendUserId) return false;
     if (TransferGold != other.TransferGold) return false;
     if (Timer != other.Timer) return false;
-    if (OperateType != other.OperateType) return false;
+    if (RecvUserId != other.RecvUserId) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override int GetHashCode() {
     int hash = 1;
-    if (OperateUserId != 0) hash ^= OperateUserId.GetHashCode();
+    if (SendUserId != 0) hash ^= SendUserId.GetHashCode();
     if (TransferGold != 0L) hash ^= TransferGold.GetHashCode();
     if (Timer.Length != 0) hash ^= Timer.GetHashCode();
-    if (OperateType != 0) hash ^= OperateType.GetHashCode();
+    if (RecvUserId != 0) hash ^= RecvUserId.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -13264,9 +13264,9 @@ public sealed partial class MsgBankRecord : pb::IMessage<MsgBankRecord>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     output.WriteRawMessage(this);
   #else
-    if (OperateUserId != 0) {
+    if (SendUserId != 0) {
       output.WriteRawTag(8);
-      output.WriteInt32(OperateUserId);
+      output.WriteInt32(SendUserId);
     }
     if (TransferGold != 0L) {
       output.WriteRawTag(16);
@@ -13276,9 +13276,9 @@ public sealed partial class MsgBankRecord : pb::IMessage<MsgBankRecord>
       output.WriteRawTag(26);
       output.WriteString(Timer);
     }
-    if (OperateType != 0) {
+    if (RecvUserId != 0) {
       output.WriteRawTag(32);
-      output.WriteInt32(OperateType);
+      output.WriteInt32(RecvUserId);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -13289,9 +13289,9 @@ public sealed partial class MsgBankRecord : pb::IMessage<MsgBankRecord>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-    if (OperateUserId != 0) {
+    if (SendUserId != 0) {
       output.WriteRawTag(8);
-      output.WriteInt32(OperateUserId);
+      output.WriteInt32(SendUserId);
     }
     if (TransferGold != 0L) {
       output.WriteRawTag(16);
@@ -13301,9 +13301,9 @@ public sealed partial class MsgBankRecord : pb::IMessage<MsgBankRecord>
       output.WriteRawTag(26);
       output.WriteString(Timer);
     }
-    if (OperateType != 0) {
+    if (RecvUserId != 0) {
       output.WriteRawTag(32);
-      output.WriteInt32(OperateType);
+      output.WriteInt32(RecvUserId);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
@@ -13314,8 +13314,8 @@ public sealed partial class MsgBankRecord : pb::IMessage<MsgBankRecord>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int CalculateSize() {
     int size = 0;
-    if (OperateUserId != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeInt32Size(OperateUserId);
+    if (SendUserId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(SendUserId);
     }
     if (TransferGold != 0L) {
       size += 1 + pb::CodedOutputStream.ComputeInt64Size(TransferGold);
@@ -13323,8 +13323,8 @@ public sealed partial class MsgBankRecord : pb::IMessage<MsgBankRecord>
     if (Timer.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(Timer);
     }
-    if (OperateType != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeInt32Size(OperateType);
+    if (RecvUserId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(RecvUserId);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -13337,8 +13337,8 @@ public sealed partial class MsgBankRecord : pb::IMessage<MsgBankRecord>
     if (other == null) {
       return;
     }
-    if (other.OperateUserId != 0) {
-      OperateUserId = other.OperateUserId;
+    if (other.SendUserId != 0) {
+      SendUserId = other.SendUserId;
     }
     if (other.TransferGold != 0L) {
       TransferGold = other.TransferGold;
@@ -13346,8 +13346,8 @@ public sealed partial class MsgBankRecord : pb::IMessage<MsgBankRecord>
     if (other.Timer.Length != 0) {
       Timer = other.Timer;
     }
-    if (other.OperateType != 0) {
-      OperateType = other.OperateType;
+    if (other.RecvUserId != 0) {
+      RecvUserId = other.RecvUserId;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -13364,7 +13364,7 @@ public sealed partial class MsgBankRecord : pb::IMessage<MsgBankRecord>
           _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
           break;
         case 8: {
-          OperateUserId = input.ReadInt32();
+          SendUserId = input.ReadInt32();
           break;
         }
         case 16: {
@@ -13376,7 +13376,7 @@ public sealed partial class MsgBankRecord : pb::IMessage<MsgBankRecord>
           break;
         }
         case 32: {
-          OperateType = input.ReadInt32();
+          RecvUserId = input.ReadInt32();
           break;
         }
       }
@@ -13394,7 +13394,7 @@ public sealed partial class MsgBankRecord : pb::IMessage<MsgBankRecord>
           _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
           break;
         case 8: {
-          OperateUserId = input.ReadInt32();
+          SendUserId = input.ReadInt32();
           break;
         }
         case 16: {
@@ -13406,7 +13406,7 @@ public sealed partial class MsgBankRecord : pb::IMessage<MsgBankRecord>
           break;
         }
         case 32: {
-          OperateType = input.ReadInt32();
+          RecvUserId = input.ReadInt32();
           break;
         }
       }

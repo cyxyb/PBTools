@@ -382,10 +382,10 @@ message MsgBankTransferResp
 //银行转账记录
 message MsgBankRecord
 {
-	int32 operate_user_id = 1;//目标id
+	int32 send_user_id = 1;//发送id
 	int64 transfer_gold = 2;//操作金币
 	string timer = 3;//时间戳
-	int32 operate_type = 4;//1转出2接受
+	int32 recv_user_id = 4;//接受id
 };
 message MsgBankRecordResp
 {

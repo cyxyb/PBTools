@@ -42,6 +42,7 @@ enum EMsgIDServerInternalProto
 	CENTER2LOGIN_GetChatServerListResp		= 20;	//获取聊天服务器列表返回
 	LOGIN2CENTER_BroadcastTip				= 21;	//大厅请求跑马灯广播
 	CENTER2LOGIN_UpdateChatServerOnlineNum	= 22;	//更新聊天服务器在线人数
+	LOGIN2CENTER_BankSynchronousLogin		= 23;	//同步赠送金币
 	
 	//1001-2000 game <-> center
 	GAME2CENTER_Register			= 2001;	//游戏服务器注册
@@ -71,6 +72,7 @@ enum EMsgIDServerInternalProto
 	Chat2Center_UpdateOnlineNum			= 6002;	//更新聊天服务器在线人数
 	Chat2Center_SendTrumpetMsg			= 6003;	//发送小喇叭消息
 	Center2Chat_SendTrumpetMsgResp		= 6004;	//发送小喇叭消息返回
+
 }
 
 enum EMsgIDDB

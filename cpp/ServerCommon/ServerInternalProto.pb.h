@@ -46,7 +46,7 @@ struct TableStruct_ServerInternalProto_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[46]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[47]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -185,6 +185,9 @@ extern MsgSendPhoneCodeDefaultTypeInternal _MsgSendPhoneCode_default_instance_;
 class MsgStorageCode;
 class MsgStorageCodeDefaultTypeInternal;
 extern MsgStorageCodeDefaultTypeInternal _MsgStorageCode_default_instance_;
+class MsgSynchronousLogin;
+class MsgSynchronousLoginDefaultTypeInternal;
+extern MsgSynchronousLoginDefaultTypeInternal _MsgSynchronousLogin_default_instance_;
 class MsgUpdateChatServerOnlineNum;
 class MsgUpdateChatServerOnlineNumDefaultTypeInternal;
 extern MsgUpdateChatServerOnlineNumDefaultTypeInternal _MsgUpdateChatServerOnlineNum_default_instance_;
@@ -236,6 +239,7 @@ template<> ::MsgRelayServerRecharge* Arena::CreateMaybeMessage<::MsgRelayServerR
 template<> ::MsgRelayServerRegister* Arena::CreateMaybeMessage<::MsgRelayServerRegister>(Arena*);
 template<> ::MsgSendPhoneCode* Arena::CreateMaybeMessage<::MsgSendPhoneCode>(Arena*);
 template<> ::MsgStorageCode* Arena::CreateMaybeMessage<::MsgStorageCode>(Arena*);
+template<> ::MsgSynchronousLogin* Arena::CreateMaybeMessage<::MsgSynchronousLogin>(Arena*);
 template<> ::MsgUpdateChatServerOnlineNum* Arena::CreateMaybeMessage<::MsgUpdateChatServerOnlineNum>(Arena*);
 template<> ::MsgUpdateGameServerOnlineNum* Arena::CreateMaybeMessage<::MsgUpdateGameServerOnlineNum>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
@@ -7185,8 +7189,9 @@ class MsgDBBankTakeOut PROTOBUF_FINAL :
 
   enum : int {
     kUserGoldFieldNumber = 2,
-    kBankGoldFieldNumber = 3,
     kRetValueFieldNumber = 1,
+    kRecvUserIdFieldNumber = 4,
+    kBankGoldFieldNumber = 3,
   };
   // int64 user_gold = 2;
   void clear_user_gold();
@@ -7195,15 +7200,6 @@ class MsgDBBankTakeOut PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::int64 _internal_user_gold() const;
   void _internal_set_user_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
-  // int64 bank_gold = 3;
-  void clear_bank_gold();
-  ::PROTOBUF_NAMESPACE_ID::int64 bank_gold() const;
-  void set_bank_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_bank_gold() const;
-  void _internal_set_bank_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
   // int32 ret_value = 1;
@@ -7215,6 +7211,24 @@ class MsgDBBankTakeOut PROTOBUF_FINAL :
   void _internal_set_ret_value(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 recv_user_id = 4;
+  void clear_recv_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 recv_user_id() const;
+  void set_recv_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_recv_user_id() const;
+  void _internal_set_recv_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int64 bank_gold = 3;
+  void clear_bank_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 bank_gold() const;
+  void set_bank_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_bank_gold() const;
+  void _internal_set_bank_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgDBBankTakeOut)
  private:
   class _Internal;
@@ -7223,8 +7237,9 @@ class MsgDBBankTakeOut PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int64 user_gold_;
-  ::PROTOBUF_NAMESPACE_ID::int64 bank_gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 ret_value_;
+  ::PROTOBUF_NAMESPACE_ID::int32 recv_user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int64 bank_gold_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -8376,6 +8391,153 @@ class MsgDBBuyGoods PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 item_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 item_num_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgSynchronousLogin PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgSynchronousLogin) */ {
+ public:
+  inline MsgSynchronousLogin() : MsgSynchronousLogin(nullptr) {}
+  virtual ~MsgSynchronousLogin();
+
+  MsgSynchronousLogin(const MsgSynchronousLogin& from);
+  MsgSynchronousLogin(MsgSynchronousLogin&& from) noexcept
+    : MsgSynchronousLogin() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgSynchronousLogin& operator=(const MsgSynchronousLogin& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgSynchronousLogin& operator=(MsgSynchronousLogin&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgSynchronousLogin& default_instance();
+
+  static inline const MsgSynchronousLogin* internal_default_instance() {
+    return reinterpret_cast<const MsgSynchronousLogin*>(
+               &_MsgSynchronousLogin_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    46;
+
+  friend void swap(MsgSynchronousLogin& a, MsgSynchronousLogin& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgSynchronousLogin* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgSynchronousLogin* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgSynchronousLogin* New() const final {
+    return CreateMaybeMessage<MsgSynchronousLogin>(nullptr);
+  }
+
+  MsgSynchronousLogin* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgSynchronousLogin>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgSynchronousLogin& from);
+  void MergeFrom(const MsgSynchronousLogin& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgSynchronousLogin* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgSynchronousLogin";
+  }
+  protected:
+  explicit MsgSynchronousLogin(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kGoldFieldNumber = 2,
+    kUserIdFieldNumber = 1,
+  };
+  // int64 gold = 2;
+  void clear_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 gold() const;
+  void set_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_gold() const;
+  void _internal_set_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int32 user_id = 1;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgSynchronousLogin)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int64 gold_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -13200,6 +13362,26 @@ inline void MsgDBBankTakeOut::set_bank_gold(::PROTOBUF_NAMESPACE_ID::int64 value
   // @@protoc_insertion_point(field_set:MsgDBBankTakeOut.bank_gold)
 }
 
+// int32 recv_user_id = 4;
+inline void MsgDBBankTakeOut::clear_recv_user_id() {
+  recv_user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBBankTakeOut::_internal_recv_user_id() const {
+  return recv_user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBBankTakeOut::recv_user_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBBankTakeOut.recv_user_id)
+  return _internal_recv_user_id();
+}
+inline void MsgDBBankTakeOut::_internal_set_recv_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  recv_user_id_ = value;
+}
+inline void MsgDBBankTakeOut::set_recv_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_recv_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBBankTakeOut.recv_user_id)
+}
+
 // -------------------------------------------------------------------
 
 // MsgDBBankTransfer
@@ -13956,9 +14138,55 @@ inline void MsgDBBuyGoods::set_item_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:MsgDBBuyGoods.item_num)
 }
 
+// -------------------------------------------------------------------
+
+// MsgSynchronousLogin
+
+// int32 user_id = 1;
+inline void MsgSynchronousLogin::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSynchronousLogin::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSynchronousLogin::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgSynchronousLogin.user_id)
+  return _internal_user_id();
+}
+inline void MsgSynchronousLogin::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgSynchronousLogin::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgSynchronousLogin.user_id)
+}
+
+// int64 gold = 2;
+inline void MsgSynchronousLogin::clear_gold() {
+  gold_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSynchronousLogin::_internal_gold() const {
+  return gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSynchronousLogin::gold() const {
+  // @@protoc_insertion_point(field_get:MsgSynchronousLogin.gold)
+  return _internal_gold();
+}
+inline void MsgSynchronousLogin::_internal_set_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  gold_ = value;
+}
+inline void MsgSynchronousLogin::set_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_gold(value);
+  // @@protoc_insertion_point(field_set:MsgSynchronousLogin.gold)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
