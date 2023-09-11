@@ -919,6 +919,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::MsgTurnPlayInfo, limit_turn_),
   PROTOBUF_FIELD_OFFSET(::MsgTurnPlayInfo, need_score_),
   PROTOBUF_FIELD_OFFSET(::MsgTurnPlayInfo, turn_pro_),
+  PROTOBUF_FIELD_OFFSET(::MsgTurnPlayInfo, turn_max_pro_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgTurnCfg, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -934,7 +935,6 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::MsgTurntableData, score_),
-  PROTOBUF_FIELD_OFFSET(::MsgTurntableData, turn_max_pro_),
   PROTOBUF_FIELD_OFFSET(::MsgTurntableData, gold_to_score_),
   PROTOBUF_FIELD_OFFSET(::MsgTurntableData, silver_info_),
   PROTOBUF_FIELD_OFFSET(::MsgTurntableData, gold_info_),
@@ -1265,8 +1265,8 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 64, -1, sizeof(::MsgCheckInInfo)},
   { 73, -1, sizeof(::MsgTurntableHistoryData)},
   { 85, -1, sizeof(::MsgTurnPlayInfo)},
-  { 94, -1, sizeof(::MsgTurnCfg)},
-  { 103, -1, sizeof(::MsgTurntableData)},
+  { 95, -1, sizeof(::MsgTurnCfg)},
+  { 104, -1, sizeof(::MsgTurntableData)},
   { 117, -1, sizeof(::MsgTurntable)},
   { 124, -1, sizeof(::MsgTurntableResp)},
   { 134, -1, sizeof(::MsgMailsInfo)},
@@ -1382,12 +1382,12 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "ryData\022\017\n\007user_id\030\001 \001(\005\022\021\n\tnick_name\030\002 \001"
   "(\t\022\r\n\005score\030\003 \001(\005\022\r\n\005award\030\004 \001(\005\022\014\n\004type"
   "\030\005 \001(\005\022\022\n\naward_type\030\006 \001(\005\022\014\n\004time\030\007 \001(\t"
-  "\"]\n\017MsgTurnPlayInfo\022\020\n\010play_num\030\001 \001(\005\022\022\n"
+  "\"s\n\017MsgTurnPlayInfo\022\020\n\010play_num\030\001 \001(\005\022\022\n"
   "\nlimit_turn\030\002 \001(\005\022\022\n\nneed_score\030\003 \001(\005\022\020\n"
-  "\010turn_pro\030\004 \001(\005\"L\n\nMsgTurnCfg\022\r\n\005index\030\001"
-  " \001(\005\022\r\n\005arwad\030\002 \001(\005\022\022\n\narwad_type\030\003 \001(\005\022"
-  "\014\n\004type\030\004 \001(\005\"\271\002\n\020MsgTurntableData\022\r\n\005sc"
-  "ore\030\001 \001(\003\022\024\n\014turn_max_pro\030\002 \001(\005\022\025\n\rgold_"
+  "\010turn_pro\030\004 \001(\005\022\024\n\014turn_max_pro\030\005 \001(\005\"L\n"
+  "\nMsgTurnCfg\022\r\n\005index\030\001 \001(\005\022\r\n\005arwad\030\002 \001("
+  "\005\022\022\n\narwad_type\030\003 \001(\005\022\014\n\004type\030\004 \001(\005\"\243\002\n\020"
+  "MsgTurntableData\022\r\n\005score\030\001 \001(\003\022\025\n\rgold_"
   "to_score\030\003 \001(\005\022%\n\013silver_info\030\004 \001(\0132\020.Ms"
   "gTurnPlayInfo\022#\n\tgold_info\030\005 \001(\0132\020.MsgTu"
   "rnPlayInfo\022\037\n\nsilver_cfg\030\006 \003(\0132\013.MsgTurn"
@@ -4309,16 +4309,16 @@ MsgTurnPlayInfo::MsgTurnPlayInfo(const MsgTurnPlayInfo& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&play_num_, &from.play_num_,
-    static_cast<size_t>(reinterpret_cast<char*>(&turn_pro_) -
-    reinterpret_cast<char*>(&play_num_)) + sizeof(turn_pro_));
+    static_cast<size_t>(reinterpret_cast<char*>(&turn_max_pro_) -
+    reinterpret_cast<char*>(&play_num_)) + sizeof(turn_max_pro_));
   // @@protoc_insertion_point(copy_constructor:MsgTurnPlayInfo)
 }
 
 void MsgTurnPlayInfo::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&play_num_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&turn_pro_) -
-      reinterpret_cast<char*>(&play_num_)) + sizeof(turn_pro_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&turn_max_pro_) -
+      reinterpret_cast<char*>(&play_num_)) + sizeof(turn_max_pro_));
 }
 
 MsgTurnPlayInfo::~MsgTurnPlayInfo() {
@@ -4353,8 +4353,8 @@ void MsgTurnPlayInfo::Clear() {
   (void) cached_has_bits;
 
   ::memset(&play_num_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&turn_pro_) -
-      reinterpret_cast<char*>(&play_num_)) + sizeof(turn_pro_));
+      reinterpret_cast<char*>(&turn_max_pro_) -
+      reinterpret_cast<char*>(&play_num_)) + sizeof(turn_max_pro_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -4390,6 +4390,13 @@ const char* MsgTurnPlayInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           turn_pro_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 turn_max_pro = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          turn_max_pro_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -4445,6 +4452,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_turn_pro(), target);
   }
 
+  // int32 turn_max_pro = 5;
+  if (this->turn_max_pro() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_turn_max_pro(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -4487,6 +4500,13 @@ size_t MsgTurnPlayInfo::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_turn_pro());
+  }
+
+  // int32 turn_max_pro = 5;
+  if (this->turn_max_pro() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_turn_max_pro());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -4532,6 +4552,9 @@ void MsgTurnPlayInfo::MergeFrom(const MsgTurnPlayInfo& from) {
   if (from.turn_pro() != 0) {
     _internal_set_turn_pro(from._internal_turn_pro());
   }
+  if (from.turn_max_pro() != 0) {
+    _internal_set_turn_max_pro(from._internal_turn_max_pro());
+  }
 }
 
 void MsgTurnPlayInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -4556,8 +4579,8 @@ void MsgTurnPlayInfo::InternalSwap(MsgTurnPlayInfo* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgTurnPlayInfo, turn_pro_)
-      + sizeof(MsgTurnPlayInfo::turn_pro_)
+      PROTOBUF_FIELD_OFFSET(MsgTurnPlayInfo, turn_max_pro_)
+      + sizeof(MsgTurnPlayInfo::turn_max_pro_)
       - PROTOBUF_FIELD_OFFSET(MsgTurnPlayInfo, play_num_)>(
           reinterpret_cast<char*>(&play_num_),
           reinterpret_cast<char*>(&other->play_num_));
@@ -4965,13 +4988,6 @@ const char* MsgTurntableData::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 turn_max_pro = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          turn_max_pro_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
       // int32 gold_to_score = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
@@ -5073,12 +5089,6 @@ failure:
   if (this->score() != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_score(), target);
-  }
-
-  // int32 turn_max_pro = 2;
-  if (this->turn_max_pro() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_turn_max_pro(), target);
   }
 
   // int32 gold_to_score = 3;
@@ -5200,13 +5210,6 @@ size_t MsgTurntableData::ByteSizeLong() const {
         this->_internal_score());
   }
 
-  // int32 turn_max_pro = 2;
-  if (this->turn_max_pro() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_turn_max_pro());
-  }
-
   // int32 gold_to_score = 3;
   if (this->gold_to_score() != 0) {
     total_size += 1 +
@@ -5257,9 +5260,6 @@ void MsgTurntableData::MergeFrom(const MsgTurntableData& from) {
   }
   if (from.score() != 0) {
     _internal_set_score(from._internal_score());
-  }
-  if (from.turn_max_pro() != 0) {
-    _internal_set_turn_max_pro(from._internal_turn_max_pro());
   }
   if (from.gold_to_score() != 0) {
     _internal_set_gold_to_score(from._internal_gold_to_score());

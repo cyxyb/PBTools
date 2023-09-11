@@ -89,6 +89,7 @@ message MsgTurnPlayInfo
 	int32		limit_turn				= 2;	//转动限制次数
 	int32		need_score				= 3;	//转动需要积分
 	int32		turn_pro				= 4;	//当前 进度
+	int32		turn_max_pro			= 5;	//转动最大进度
 }
 
 message MsgTurnCfg
@@ -103,7 +104,6 @@ message MsgTurnCfg
 message MsgTurntableData
 {
 	int64		score					= 1;	//玩家积分
-	int32		turn_max_pro			= 2;	//转动最大进度
 	int32		gold_to_score			= 3;	//金币与积分比例
 
 	MsgTurnPlayInfo silver_info			= 4;	//白银盘信息

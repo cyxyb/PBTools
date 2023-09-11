@@ -46,12 +46,12 @@ public static partial class LoginReflection {
           "bW9uS1YiiwEKF01zZ1R1cm50YWJsZUhpc3RvcnlEYXRhEg8KB3VzZXJfaWQY",
           "ASABKAUSEQoJbmlja19uYW1lGAIgASgJEg0KBXNjb3JlGAMgASgFEg0KBWF3",
           "YXJkGAQgASgFEgwKBHR5cGUYBSABKAUSEgoKYXdhcmRfdHlwZRgGIAEoBRIM",
-          "CgR0aW1lGAcgASgJIl0KD01zZ1R1cm5QbGF5SW5mbxIQCghwbGF5X251bRgB",
+          "CgR0aW1lGAcgASgJInMKD01zZ1R1cm5QbGF5SW5mbxIQCghwbGF5X251bRgB",
           "IAEoBRISCgpsaW1pdF90dXJuGAIgASgFEhIKCm5lZWRfc2NvcmUYAyABKAUS",
-          "EAoIdHVybl9wcm8YBCABKAUiTAoKTXNnVHVybkNmZxINCgVpbmRleBgBIAEo",
-          "BRINCgVhcndhZBgCIAEoBRISCgphcndhZF90eXBlGAMgASgFEgwKBHR5cGUY",
-          "BCABKAUiuQIKEE1zZ1R1cm50YWJsZURhdGESDQoFc2NvcmUYASABKAMSFAoM",
-          "dHVybl9tYXhfcHJvGAIgASgFEhUKDWdvbGRfdG9fc2NvcmUYAyABKAUSJQoL",
+          "EAoIdHVybl9wcm8YBCABKAUSFAoMdHVybl9tYXhfcHJvGAUgASgFIkwKCk1z",
+          "Z1R1cm5DZmcSDQoFaW5kZXgYASABKAUSDQoFYXJ3YWQYAiABKAUSEgoKYXJ3",
+          "YWRfdHlwZRgDIAEoBRIMCgR0eXBlGAQgASgFIqMCChBNc2dUdXJudGFibGVE",
+          "YXRhEg0KBXNjb3JlGAEgASgDEhUKDWdvbGRfdG9fc2NvcmUYAyABKAUSJQoL",
           "c2lsdmVyX2luZm8YBCABKAsyEC5Nc2dUdXJuUGxheUluZm8SIwoJZ29sZF9p",
           "bmZvGAUgASgLMhAuTXNnVHVyblBsYXlJbmZvEh8KCnNpbHZlcl9jZmcYBiAD",
           "KAsyCy5Nc2dUdXJuQ2ZnEh0KCGdvbGRfY2ZnGAcgAygLMgsuTXNnVHVybkNm",
@@ -141,9 +141,9 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgCommonKV), global::MsgCommonKV.Parser, new[]{ "K", "V" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgCheckInInfo), global::MsgCheckInInfo.Parser, new[]{ "CheckDays", "IsOpen", "CanPick", "CheckInCfg" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurntableHistoryData), global::MsgTurntableHistoryData.Parser, new[]{ "UserId", "NickName", "Score", "Award", "Type", "AwardType", "Time" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurnPlayInfo), global::MsgTurnPlayInfo.Parser, new[]{ "PlayNum", "LimitTurn", "NeedScore", "TurnPro" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurnPlayInfo), global::MsgTurnPlayInfo.Parser, new[]{ "PlayNum", "LimitTurn", "NeedScore", "TurnPro", "TurnMaxPro" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurnCfg), global::MsgTurnCfg.Parser, new[]{ "Index", "Arwad", "ArwadType", "Type" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurntableData), global::MsgTurntableData.Parser, new[]{ "Score", "TurnMaxPro", "GoldToScore", "SilverInfo", "GoldInfo", "SilverCfg", "GoldCfg", "ThisHistory", "BigHistory" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurntableData), global::MsgTurntableData.Parser, new[]{ "Score", "GoldToScore", "SilverInfo", "GoldInfo", "SilverCfg", "GoldCfg", "ThisHistory", "BigHistory" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurntable), global::MsgTurntable.Parser, new[]{ "UserId", "TurnType" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTurntableResp), global::MsgTurntableResp.Parser, new[]{ "Score", "AwardType", "NewValue", "TurnIndex", "GetValue" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgMailsInfo), global::MsgMailsInfo.Parser, new[]{ "Mails" }, null, null, null, null),
@@ -3128,6 +3128,7 @@ public sealed partial class MsgTurnPlayInfo : pb::IMessage<MsgTurnPlayInfo>
     limitTurn_ = other.limitTurn_;
     needScore_ = other.needScore_;
     turnPro_ = other.turnPro_;
+    turnMaxPro_ = other.turnMaxPro_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -3192,6 +3193,20 @@ public sealed partial class MsgTurnPlayInfo : pb::IMessage<MsgTurnPlayInfo>
     }
   }
 
+  /// <summary>Field number for the "turn_max_pro" field.</summary>
+  public const int TurnMaxProFieldNumber = 5;
+  private int turnMaxPro_;
+  /// <summary>
+  ///转动最大进度
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int TurnMaxPro {
+    get { return turnMaxPro_; }
+    set {
+      turnMaxPro_ = value;
+    }
+  }
+
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as MsgTurnPlayInfo);
@@ -3209,6 +3224,7 @@ public sealed partial class MsgTurnPlayInfo : pb::IMessage<MsgTurnPlayInfo>
     if (LimitTurn != other.LimitTurn) return false;
     if (NeedScore != other.NeedScore) return false;
     if (TurnPro != other.TurnPro) return false;
+    if (TurnMaxPro != other.TurnMaxPro) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -3219,6 +3235,7 @@ public sealed partial class MsgTurnPlayInfo : pb::IMessage<MsgTurnPlayInfo>
     if (LimitTurn != 0) hash ^= LimitTurn.GetHashCode();
     if (NeedScore != 0) hash ^= NeedScore.GetHashCode();
     if (TurnPro != 0) hash ^= TurnPro.GetHashCode();
+    if (TurnMaxPro != 0) hash ^= TurnMaxPro.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -3251,6 +3268,10 @@ public sealed partial class MsgTurnPlayInfo : pb::IMessage<MsgTurnPlayInfo>
       output.WriteRawTag(32);
       output.WriteInt32(TurnPro);
     }
+    if (TurnMaxPro != 0) {
+      output.WriteRawTag(40);
+      output.WriteInt32(TurnMaxPro);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -3276,6 +3297,10 @@ public sealed partial class MsgTurnPlayInfo : pb::IMessage<MsgTurnPlayInfo>
       output.WriteRawTag(32);
       output.WriteInt32(TurnPro);
     }
+    if (TurnMaxPro != 0) {
+      output.WriteRawTag(40);
+      output.WriteInt32(TurnMaxPro);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -3296,6 +3321,9 @@ public sealed partial class MsgTurnPlayInfo : pb::IMessage<MsgTurnPlayInfo>
     }
     if (TurnPro != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(TurnPro);
+    }
+    if (TurnMaxPro != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(TurnMaxPro);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -3319,6 +3347,9 @@ public sealed partial class MsgTurnPlayInfo : pb::IMessage<MsgTurnPlayInfo>
     }
     if (other.TurnPro != 0) {
       TurnPro = other.TurnPro;
+    }
+    if (other.TurnMaxPro != 0) {
+      TurnMaxPro = other.TurnMaxPro;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -3350,6 +3381,10 @@ public sealed partial class MsgTurnPlayInfo : pb::IMessage<MsgTurnPlayInfo>
           TurnPro = input.ReadInt32();
           break;
         }
+        case 40: {
+          TurnMaxPro = input.ReadInt32();
+          break;
+        }
       }
     }
   #endif
@@ -3378,6 +3413,10 @@ public sealed partial class MsgTurnPlayInfo : pb::IMessage<MsgTurnPlayInfo>
         }
         case 32: {
           TurnPro = input.ReadInt32();
+          break;
+        }
+        case 40: {
+          TurnMaxPro = input.ReadInt32();
           break;
         }
       }
@@ -3712,7 +3751,6 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public MsgTurntableData(MsgTurntableData other) : this() {
     score_ = other.score_;
-    turnMaxPro_ = other.turnMaxPro_;
     goldToScore_ = other.goldToScore_;
     silverInfo_ = other.silverInfo_ != null ? other.silverInfo_.Clone() : null;
     goldInfo_ = other.goldInfo_ != null ? other.goldInfo_.Clone() : null;
@@ -3739,20 +3777,6 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
     get { return score_; }
     set {
       score_ = value;
-    }
-  }
-
-  /// <summary>Field number for the "turn_max_pro" field.</summary>
-  public const int TurnMaxProFieldNumber = 2;
-  private int turnMaxPro_;
-  /// <summary>
-  ///转动最大进度
-  /// </summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public int TurnMaxPro {
-    get { return turnMaxPro_; }
-    set {
-      turnMaxPro_ = value;
     }
   }
 
@@ -3864,7 +3888,6 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
       return true;
     }
     if (Score != other.Score) return false;
-    if (TurnMaxPro != other.TurnMaxPro) return false;
     if (GoldToScore != other.GoldToScore) return false;
     if (!object.Equals(SilverInfo, other.SilverInfo)) return false;
     if (!object.Equals(GoldInfo, other.GoldInfo)) return false;
@@ -3879,7 +3902,6 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
   public override int GetHashCode() {
     int hash = 1;
     if (Score != 0L) hash ^= Score.GetHashCode();
-    if (TurnMaxPro != 0) hash ^= TurnMaxPro.GetHashCode();
     if (GoldToScore != 0) hash ^= GoldToScore.GetHashCode();
     if (silverInfo_ != null) hash ^= SilverInfo.GetHashCode();
     if (goldInfo_ != null) hash ^= GoldInfo.GetHashCode();
@@ -3906,10 +3928,6 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
     if (Score != 0L) {
       output.WriteRawTag(8);
       output.WriteInt64(Score);
-    }
-    if (TurnMaxPro != 0) {
-      output.WriteRawTag(16);
-      output.WriteInt32(TurnMaxPro);
     }
     if (GoldToScore != 0) {
       output.WriteRawTag(24);
@@ -3940,10 +3958,6 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
       output.WriteRawTag(8);
       output.WriteInt64(Score);
     }
-    if (TurnMaxPro != 0) {
-      output.WriteRawTag(16);
-      output.WriteInt32(TurnMaxPro);
-    }
     if (GoldToScore != 0) {
       output.WriteRawTag(24);
       output.WriteInt32(GoldToScore);
@@ -3972,9 +3986,6 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
     if (Score != 0L) {
       size += 1 + pb::CodedOutputStream.ComputeInt64Size(Score);
     }
-    if (TurnMaxPro != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeInt32Size(TurnMaxPro);
-    }
     if (GoldToScore != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(GoldToScore);
     }
@@ -4001,9 +4012,6 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
     }
     if (other.Score != 0L) {
       Score = other.Score;
-    }
-    if (other.TurnMaxPro != 0) {
-      TurnMaxPro = other.TurnMaxPro;
     }
     if (other.GoldToScore != 0) {
       GoldToScore = other.GoldToScore;
@@ -4040,10 +4048,6 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
           break;
         case 8: {
           Score = input.ReadInt64();
-          break;
-        }
-        case 16: {
-          TurnMaxPro = input.ReadInt32();
           break;
         }
         case 24: {
@@ -4096,10 +4100,6 @@ public sealed partial class MsgTurntableData : pb::IMessage<MsgTurntableData>
           break;
         case 8: {
           Score = input.ReadInt64();
-          break;
-        }
-        case 16: {
-          TurnMaxPro = input.ReadInt32();
           break;
         }
         case 24: {

@@ -1953,6 +1953,7 @@ class MsgTurnPlayInfo PROTOBUF_FINAL :
     kLimitTurnFieldNumber = 2,
     kNeedScoreFieldNumber = 3,
     kTurnProFieldNumber = 4,
+    kTurnMaxProFieldNumber = 5,
   };
   // int32 play_num = 1;
   void clear_play_num();
@@ -1990,6 +1991,15 @@ class MsgTurnPlayInfo PROTOBUF_FINAL :
   void _internal_set_turn_pro(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 turn_max_pro = 5;
+  void clear_turn_max_pro();
+  ::PROTOBUF_NAMESPACE_ID::int32 turn_max_pro() const;
+  void set_turn_max_pro(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_turn_max_pro() const;
+  void _internal_set_turn_max_pro(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgTurnPlayInfo)
  private:
   class _Internal;
@@ -2001,6 +2011,7 @@ class MsgTurnPlayInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 limit_turn_;
   ::PROTOBUF_NAMESPACE_ID::int32 need_score_;
   ::PROTOBUF_NAMESPACE_ID::int32 turn_pro_;
+  ::PROTOBUF_NAMESPACE_ID::int32 turn_max_pro_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -2294,7 +2305,6 @@ class MsgTurntableData PROTOBUF_FINAL :
     kSilverInfoFieldNumber = 4,
     kGoldInfoFieldNumber = 5,
     kScoreFieldNumber = 1,
-    kTurnMaxProFieldNumber = 2,
     kGoldToScoreFieldNumber = 3,
   };
   // repeated .MsgTurnCfg silver_cfg = 6;
@@ -2414,15 +2424,6 @@ class MsgTurntableData PROTOBUF_FINAL :
   void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int32 turn_max_pro = 2;
-  void clear_turn_max_pro();
-  ::PROTOBUF_NAMESPACE_ID::int32 turn_max_pro() const;
-  void set_turn_max_pro(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_turn_max_pro() const;
-  void _internal_set_turn_max_pro(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
   // int32 gold_to_score = 3;
   void clear_gold_to_score();
   ::PROTOBUF_NAMESPACE_ID::int32 gold_to_score() const;
@@ -2446,7 +2447,6 @@ class MsgTurntableData PROTOBUF_FINAL :
   ::MsgTurnPlayInfo* silver_info_;
   ::MsgTurnPlayInfo* gold_info_;
   ::PROTOBUF_NAMESPACE_ID::int64 score_;
-  ::PROTOBUF_NAMESPACE_ID::int32 turn_max_pro_;
   ::PROTOBUF_NAMESPACE_ID::int32 gold_to_score_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
@@ -10721,6 +10721,26 @@ inline void MsgTurnPlayInfo::set_turn_pro(::PROTOBUF_NAMESPACE_ID::int32 value) 
   // @@protoc_insertion_point(field_set:MsgTurnPlayInfo.turn_pro)
 }
 
+// int32 turn_max_pro = 5;
+inline void MsgTurnPlayInfo::clear_turn_max_pro() {
+  turn_max_pro_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurnPlayInfo::_internal_turn_max_pro() const {
+  return turn_max_pro_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurnPlayInfo::turn_max_pro() const {
+  // @@protoc_insertion_point(field_get:MsgTurnPlayInfo.turn_max_pro)
+  return _internal_turn_max_pro();
+}
+inline void MsgTurnPlayInfo::_internal_set_turn_max_pro(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  turn_max_pro_ = value;
+}
+inline void MsgTurnPlayInfo::set_turn_max_pro(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_turn_max_pro(value);
+  // @@protoc_insertion_point(field_set:MsgTurnPlayInfo.turn_max_pro)
+}
+
 // -------------------------------------------------------------------
 
 // MsgTurnCfg
@@ -10827,26 +10847,6 @@ inline void MsgTurntableData::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int64
 inline void MsgTurntableData::set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_score(value);
   // @@protoc_insertion_point(field_set:MsgTurntableData.score)
-}
-
-// int32 turn_max_pro = 2;
-inline void MsgTurntableData::clear_turn_max_pro() {
-  turn_max_pro_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurntableData::_internal_turn_max_pro() const {
-  return turn_max_pro_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurntableData::turn_max_pro() const {
-  // @@protoc_insertion_point(field_get:MsgTurntableData.turn_max_pro)
-  return _internal_turn_max_pro();
-}
-inline void MsgTurntableData::_internal_set_turn_max_pro(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  turn_max_pro_ = value;
-}
-inline void MsgTurntableData::set_turn_max_pro(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_turn_max_pro(value);
-  // @@protoc_insertion_point(field_set:MsgTurntableData.turn_max_pro)
 }
 
 // int32 gold_to_score = 3;
