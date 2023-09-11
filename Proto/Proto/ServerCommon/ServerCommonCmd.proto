@@ -153,10 +153,6 @@ enum EMsgIDDB
 	DB2LOGIN_BankChangePasswordResp	= 1061; //修改密码返回
 	LOGIN2DB_BankSetPassword		= 1062; //set银行密码
 	DB2LOGIN_BankSetPasswordResp	= 1063; //set密码返回
-	LOGIN2DB_GetPlayerItem			= 1064;	//获取玩家道具列表
-	DB2LOGIN_GetPlayerItemResp		= 1065;	//获取玩家道具列表返回
-	LOGIN2DB_BankQueryNickname 		= 1066;	//查询用户昵称
-	DB2LOGIN_BankQueryNicknameResp	= 1067; //查询昵称返回 
 	//2001-3000 GameServer2DB
 	GAME2DB_Login					= 2001;	//玩家登录游戏
 	DB2GAME_LoginResp				= 2002;	//玩家登录游戏返回

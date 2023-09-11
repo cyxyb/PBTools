@@ -89,7 +89,6 @@ message MsgTurnPlayInfo
 	int32		limit_turn				= 2;	//转动限制次数
 	int32		need_score				= 3;	//转动需要积分
 	int32		turn_pro				= 4;	//当前 进度
-	int32		turn_max_pro			= 5;	//转动最大进度
 }
 
 message MsgTurnCfg
@@ -104,6 +103,7 @@ message MsgTurnCfg
 message MsgTurntableData
 {
 	int64		score					= 1;	//玩家积分
+	int32		turn_max_pro			= 2;	//转动最大进度
 	int32		gold_to_score			= 3;	//金币与积分比例
 
 	MsgTurnPlayInfo silver_info			= 4;	//白银盘信息
@@ -398,18 +398,3 @@ message MsgPhoneCode
 	string		area_code			= 1;	//区号
 	string		phone				= 2;	//手机号
 };
-
-
-//玩家道具
-message MsgItem
-{
-	int32		item_id				= 1;	//道具id
-	int64		item_num			= 2;	//道具数量
-};
-
-//玩家道具
-message MsgPlayerItem
-{
-	repeated MsgItem item			= 1;	//玩家道具
-};
-
