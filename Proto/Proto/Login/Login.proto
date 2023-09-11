@@ -413,3 +413,8 @@ message MsgPlayerItem
 	repeated MsgItem item			= 1;	//玩家道具
 };
 
+message MsgBankQueryNicname
+{//查询玩家昵称
+	int32 ret_Value = 1;//返回值
+	string nickname = 2;//昵称
+}
