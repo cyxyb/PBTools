@@ -7192,6 +7192,7 @@ class MsgDBBankTakeOut PROTOBUF_FINAL :
     kRetValueFieldNumber = 1,
     kRecvUserIdFieldNumber = 4,
     kBankGoldFieldNumber = 3,
+    kAddGoldFieldNumber = 5,
   };
   // int64 user_gold = 2;
   void clear_user_gold();
@@ -7229,6 +7230,15 @@ class MsgDBBankTakeOut PROTOBUF_FINAL :
   void _internal_set_bank_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
+  // int64 add_gold = 5;
+  void clear_add_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 add_gold() const;
+  void set_add_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_add_gold() const;
+  void _internal_set_add_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgDBBankTakeOut)
  private:
   class _Internal;
@@ -7240,6 +7250,7 @@ class MsgDBBankTakeOut PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 ret_value_;
   ::PROTOBUF_NAMESPACE_ID::int32 recv_user_id_;
   ::PROTOBUF_NAMESPACE_ID::int64 bank_gold_;
+  ::PROTOBUF_NAMESPACE_ID::int64 add_gold_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -13380,6 +13391,26 @@ inline void MsgDBBankTakeOut::_internal_set_recv_user_id(::PROTOBUF_NAMESPACE_ID
 inline void MsgDBBankTakeOut::set_recv_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_recv_user_id(value);
   // @@protoc_insertion_point(field_set:MsgDBBankTakeOut.recv_user_id)
+}
+
+// int64 add_gold = 5;
+inline void MsgDBBankTakeOut::clear_add_gold() {
+  add_gold_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBBankTakeOut::_internal_add_gold() const {
+  return add_gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBBankTakeOut::add_gold() const {
+  // @@protoc_insertion_point(field_get:MsgDBBankTakeOut.add_gold)
+  return _internal_add_gold();
+}
+inline void MsgDBBankTakeOut::_internal_set_add_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  add_gold_ = value;
+}
+inline void MsgDBBankTakeOut::set_add_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_add_gold(value);
+  // @@protoc_insertion_point(field_set:MsgDBBankTakeOut.add_gold)
 }
 
 // -------------------------------------------------------------------

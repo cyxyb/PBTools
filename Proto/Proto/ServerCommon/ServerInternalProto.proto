@@ -366,6 +366,7 @@ message MsgDBBankTakeOut
 	int64 user_gold = 2;				//玩家携带金币
 	int64 bank_gold = 3;				//玩家银行金币
 	int32 recv_user_id = 4;				//接受id
+	int64 add_gold = 5;					//修改金币
 }
 //银行转账
 message MsgDBBankTransfer

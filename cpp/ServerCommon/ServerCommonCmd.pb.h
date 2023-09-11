@@ -115,6 +115,7 @@ enum EMsgIDServerInternalProto : int {
   LOGIN2CENTER_BroadcastTip = 21,
   CENTER2LOGIN_UpdateChatServerOnlineNum = 22,
   LOGIN2CENTER_BankSynchronousLogin = 23,
+  CENTER2LOGIN_BankSynchronousLoginResp = 24,
   GAME2CENTER_Register = 2001,
   GAME2CENTER_UnRegister = 2002,
   GAME2CENTER_ApplyRobot = 2003,

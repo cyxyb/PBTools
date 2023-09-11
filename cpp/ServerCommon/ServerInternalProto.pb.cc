@@ -1185,6 +1185,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ServerInternalProto_2eproto::o
   PROTOBUF_FIELD_OFFSET(::MsgDBBankTakeOut, user_gold_),
   PROTOBUF_FIELD_OFFSET(::MsgDBBankTakeOut, bank_gold_),
   PROTOBUF_FIELD_OFFSET(::MsgDBBankTakeOut, recv_user_id_),
+  PROTOBUF_FIELD_OFFSET(::MsgDBBankTakeOut, add_gold_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgDBBankTransfer, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1288,14 +1289,14 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 341, -1, sizeof(::MsgDBBankChangePassword)},
   { 348, -1, sizeof(::MsgDBBankOperate)},
   { 356, -1, sizeof(::MsgDBBankTakeOut)},
-  { 365, -1, sizeof(::MsgDBBankTransfer)},
-  { 373, -1, sizeof(::MsgStorageCode)},
-  { 381, -1, sizeof(::MsgDBBindPhone)},
-  { 390, -1, sizeof(::MsgDBBindPhoneRes)},
-  { 398, -1, sizeof(::MsgDBChatLogin)},
-  { 405, -1, sizeof(::MsgDBChatTrumpetMsg)},
-  { 412, -1, sizeof(::MsgDBBuyGoods)},
-  { 420, -1, sizeof(::MsgSynchronousLogin)},
+  { 366, -1, sizeof(::MsgDBBankTransfer)},
+  { 374, -1, sizeof(::MsgStorageCode)},
+  { 382, -1, sizeof(::MsgDBBindPhone)},
+  { 391, -1, sizeof(::MsgDBBindPhoneRes)},
+  { 399, -1, sizeof(::MsgDBChatLogin)},
+  { 406, -1, sizeof(::MsgDBChatTrumpetMsg)},
+  { 413, -1, sizeof(::MsgDBBuyGoods)},
+  { 421, -1, sizeof(::MsgSynchronousLogin)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -1450,23 +1451,24 @@ const char descriptor_table_protodef_ServerInternalProto_2eproto[] PROTOBUF_SECT
   "t\030\003 \001(\003\"<\n\027MsgDBBankChangePassword\022\017\n\007us"
   "er_id\030\001 \001(\005\022\020\n\010Password\030\002 \001(\t\"G\n\020MsgDBBa"
   "nkOperate\022\017\n\007user_id\030\001 \001(\005\022\014\n\004gold\030\002 \001(\003"
-  "\022\024\n\014operate_type\030\003 \001(\005\"a\n\020MsgDBBankTakeO"
+  "\022\024\n\014operate_type\030\003 \001(\005\"s\n\020MsgDBBankTakeO"
   "ut\022\021\n\tret_value\030\001 \001(\005\022\021\n\tuser_gold\030\002 \001(\003"
   "\022\021\n\tbank_gold\030\003 \001(\003\022\024\n\014recv_user_id\030\004 \001("
-  "\005\"V\n\021MsgDBBankTransfer\022\024\n\014from_user_id\030\001"
-  " \001(\005\022\024\n\014recv_user_id\030\002 \001(\005\022\025\n\rtransfer_g"
-  "old\030\003 \001(\003\">\n\016MsgStorageCode\022\017\n\007user_id\030\001"
-  " \001(\005\022\r\n\005phone\030\002 \001(\t\022\014\n\004code\030\003 \001(\005\"W\n\016Msg"
-  "DBBindPhone\022\017\n\007user_id\030\001 \001(\005\022\023\n\013invite_c"
-  "ode\030\002 \001(\t\022\r\n\005phone\030\003 \001(\t\022\020\n\010password\030\004 \001"
-  "(\t\"F\n\021MsgDBBindPhoneRes\022\020\n\010res_code\030\001 \001("
-  "\005\022\r\n\005phone\030\002 \001(\t\022\020\n\010password\030\003 \001(\t\"3\n\016Ms"
-  "gDBChatLogin\022\017\n\007user_id\030\001 \001(\005\022\020\n\010passwor"
-  "d\030\002 \001(\t\"7\n\023MsgDBChatTrumpetMsg\022\017\n\007user_i"
-  "d\030\001 \001(\005\022\017\n\007message\030\002 \001(\t\"C\n\rMsgDBBuyGood"
-  "s\022\017\n\007user_id\030\001 \001(\005\022\017\n\007item_id\030\002 \001(\005\022\020\n\010i"
-  "tem_num\030\003 \001(\005\"4\n\023MsgSynchronousLogin\022\017\n\007"
-  "user_id\030\001 \001(\005\022\014\n\004gold\030\002 \001(\003b\006proto3"
+  "\005\022\020\n\010add_gold\030\005 \001(\003\"V\n\021MsgDBBankTransfer"
+  "\022\024\n\014from_user_id\030\001 \001(\005\022\024\n\014recv_user_id\030\002"
+  " \001(\005\022\025\n\rtransfer_gold\030\003 \001(\003\">\n\016MsgStorag"
+  "eCode\022\017\n\007user_id\030\001 \001(\005\022\r\n\005phone\030\002 \001(\t\022\014\n"
+  "\004code\030\003 \001(\005\"W\n\016MsgDBBindPhone\022\017\n\007user_id"
+  "\030\001 \001(\005\022\023\n\013invite_code\030\002 \001(\t\022\r\n\005phone\030\003 \001"
+  "(\t\022\020\n\010password\030\004 \001(\t\"F\n\021MsgDBBindPhoneRe"
+  "s\022\020\n\010res_code\030\001 \001(\005\022\r\n\005phone\030\002 \001(\t\022\020\n\010pa"
+  "ssword\030\003 \001(\t\"3\n\016MsgDBChatLogin\022\017\n\007user_i"
+  "d\030\001 \001(\005\022\020\n\010password\030\002 \001(\t\"7\n\023MsgDBChatTr"
+  "umpetMsg\022\017\n\007user_id\030\001 \001(\005\022\017\n\007message\030\002 \001"
+  "(\t\"C\n\rMsgDBBuyGoods\022\017\n\007user_id\030\001 \001(\005\022\017\n\007"
+  "item_id\030\002 \001(\005\022\020\n\010item_num\030\003 \001(\005\"4\n\023MsgSy"
+  "nchronousLogin\022\017\n\007user_id\030\001 \001(\005\022\014\n\004gold\030"
+  "\002 \001(\003b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_ServerInternalProto_2eproto_deps[1] = {
 };
@@ -1521,7 +1523,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Ser
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ServerInternalProto_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ServerInternalProto_2eproto = {
-  false, false, descriptor_table_protodef_ServerInternalProto_2eproto, "ServerInternalProto.proto", 4715,
+  false, false, descriptor_table_protodef_ServerInternalProto_2eproto, "ServerInternalProto.proto", 4733,
   &descriptor_table_ServerInternalProto_2eproto_once, descriptor_table_ServerInternalProto_2eproto_sccs, descriptor_table_ServerInternalProto_2eproto_deps, 47, 0,
   schemas, file_default_instances, TableStruct_ServerInternalProto_2eproto::offsets,
   file_level_metadata_ServerInternalProto_2eproto, 47, file_level_enum_descriptors_ServerInternalProto_2eproto, file_level_service_descriptors_ServerInternalProto_2eproto,
@@ -12731,16 +12733,16 @@ MsgDBBankTakeOut::MsgDBBankTakeOut(const MsgDBBankTakeOut& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&user_gold_, &from.user_gold_,
-    static_cast<size_t>(reinterpret_cast<char*>(&bank_gold_) -
-    reinterpret_cast<char*>(&user_gold_)) + sizeof(bank_gold_));
+    static_cast<size_t>(reinterpret_cast<char*>(&add_gold_) -
+    reinterpret_cast<char*>(&user_gold_)) + sizeof(add_gold_));
   // @@protoc_insertion_point(copy_constructor:MsgDBBankTakeOut)
 }
 
 void MsgDBBankTakeOut::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&user_gold_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&bank_gold_) -
-      reinterpret_cast<char*>(&user_gold_)) + sizeof(bank_gold_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&add_gold_) -
+      reinterpret_cast<char*>(&user_gold_)) + sizeof(add_gold_));
 }
 
 MsgDBBankTakeOut::~MsgDBBankTakeOut() {
@@ -12775,8 +12777,8 @@ void MsgDBBankTakeOut::Clear() {
   (void) cached_has_bits;
 
   ::memset(&user_gold_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&bank_gold_) -
-      reinterpret_cast<char*>(&user_gold_)) + sizeof(bank_gold_));
+      reinterpret_cast<char*>(&add_gold_) -
+      reinterpret_cast<char*>(&user_gold_)) + sizeof(add_gold_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -12812,6 +12814,13 @@ const char* MsgDBBankTakeOut::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           recv_user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 add_gold = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          add_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -12867,6 +12876,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_recv_user_id(), target);
   }
 
+  // int64 add_gold = 5;
+  if (this->add_gold() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_add_gold(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -12909,6 +12924,13 @@ size_t MsgDBBankTakeOut::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_bank_gold());
+  }
+
+  // int64 add_gold = 5;
+  if (this->add_gold() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_add_gold());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -12954,6 +12976,9 @@ void MsgDBBankTakeOut::MergeFrom(const MsgDBBankTakeOut& from) {
   if (from.bank_gold() != 0) {
     _internal_set_bank_gold(from._internal_bank_gold());
   }
+  if (from.add_gold() != 0) {
+    _internal_set_add_gold(from._internal_add_gold());
+  }
 }
 
 void MsgDBBankTakeOut::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -12978,8 +13003,8 @@ void MsgDBBankTakeOut::InternalSwap(MsgDBBankTakeOut* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgDBBankTakeOut, bank_gold_)
-      + sizeof(MsgDBBankTakeOut::bank_gold_)
+      PROTOBUF_FIELD_OFFSET(MsgDBBankTakeOut, add_gold_)
+      + sizeof(MsgDBBankTakeOut::add_gold_)
       - PROTOBUF_FIELD_OFFSET(MsgDBBankTakeOut, user_gold_)>(
           reinterpret_cast<char*>(&user_gold_),
           reinterpret_cast<char*>(&other->user_gold_));
