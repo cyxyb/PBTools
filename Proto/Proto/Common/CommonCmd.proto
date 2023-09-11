@@ -103,8 +103,8 @@ enum EMsgIDLogin
 	MsgIDBank_BankRecordResp					= 89;		//银行转账记录返回(MsgBankRecordResp)
 	MsgIDLogin_NotifyChatServerList				= 90;		//通知聊天服务器列表(MsgChatServerList)
 	MsgIDLogin_QueryChatServerList				= 91;		//请求聊天服务器列表(MsgCommonBool)
-	MsgIDLogin_GetPlayerItem					= 92;		//获取玩家道具列表(MsgCommonBool)
-	MsgIDLogin_GetPlayerItemResp				= 93;		//获取玩家道具列表返回(MsgPlayerItem)
+	MsgIDLogin_BankQueryUserInfo				= 92;		//请求用户昵称(MsgCommonN32)
+	MsgIDLogin_BankQueryUserInfoResp			= 93;		//请求用户昵称返回(MsgCommonStr)
 }
 
 enum EMsgIDGame
