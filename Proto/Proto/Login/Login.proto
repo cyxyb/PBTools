@@ -125,9 +125,10 @@ message MsgTurntable
 message MsgTurntableResp
 {
 	int64		score						= 1;	//最新积分
-	int32		AwardType					= 2;	//奖励类型
-	int64		NewValue					= 3;	//奖励值
-	int64		TurnIndex					= 4;	//转到下标
+	int32		award_type					= 2;	//奖励类型
+	int64		new_value					= 3;	//最新奖励值
+	int64		turnIndex					= 4;	//转到下标
+	int64		get_value					= 5;	//奖励值
 }
 
 
