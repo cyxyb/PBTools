@@ -25,7 +25,7 @@ public static partial class CommonCmdReflection {
           "ChxQcm90by9Db21tb24vQ29tbW9uQ21kLnByb3RvKoYBCgpFTXNnSURNYWlu",
           "EhMKD0VNc2dJRE1haW5fTnVsbBAAEh4KGUVNc2dJRE1haW5fTG9naW5fVXNl",
           "ckluZm8Q6QcSFAoPRU1zZ0lETWFpbl9HYW1lENEPEhcKEkVNc2dJRE1haW5f",
-          "U3ViR2FtZRDSDxIUCg9FTXNnSURNYWluX0NoYXQQuRcq3BcKC0VNc2dJRExv",
+          "U3ViR2FtZRDSDxIUCg9FTXNnSURNYWluX0NoYXQQuRcqkBgKC0VNc2dJRExv",
           "Z2luEhMKD01zZ0lETG9naW5fTnVsbBAAEhQKEE1zZ0lETG9naW5fTG9naW4Q",
           "ARIYChRNc2dJRExvZ2luX0xvZ2luUmVzcBACEh0KGU1zZ0lETG9naW5fTW9k",
           "aWZ5Tmlja05hbWUQAxIhCh1Nc2dJRExvZ2luX01vZGlmeU5pY2tOYW1lUmVz",
@@ -93,26 +93,28 @@ public static partial class CommonCmdReflection {
           "cnZlckxpc3QQWxIcChhNc2dJRExvZ2luX0dldFBsYXllckl0ZW0QXBIgChxN",
           "c2dJRExvZ2luX0dldFBsYXllckl0ZW1SZXNwEF0SIAocTXNnSURMb2dpbl9C",
           "YW5rUXVlcnlVc2VySW5mbxBeEiQKIE1zZ0lETG9naW5fQmFua1F1ZXJ5VXNl",
-          "ckluZm9SZXNwEF8q7gQKCkVNc2dJREdhbWUSEgoOTXNnSURHYW1lX051bGwQ",
-          "ABIUCg9Nc2dJREdhbWVfTG9naW4Q6QcSGAoTTXNnSURHYW1lX0xvZ2luUmVz",
-          "cBDqBxIeChlNc2dJREdhbWVfU3F1ZWV6ZVNlYXRSZXNwEOsHEhUKEE1zZ0lE",
-          "R2FtZV9Mb2dvdXQQ7AcSGgoVTXNnSURHYW1lX0F1dG9TaXREb3duEO0HEhoK",
-          "FU1zZ0lER2FtZV9TaXREb3duUmVzcBDuBxIhChxNc2dJREdhbWVfU3luY1Bs",
-          "YXllckluZm9SZXNwEO8HEiYKIU1zZ0lER2FtZV9Ob3RpZnlQbGF5ZXJTdGFu",
-          "ZFVwUmVzcBDwBxIjCh5Nc2dJREdhbWVfU3luY1BsYXllcnNTY29yZVJlc3AQ",
-          "8QcSHAoXTXNnSURHYW1lX1NlbmRHYW1lU2VuY2UQ8gcSIAobTXNnSURHYW1l",
-          "X1NlbmRHYW1lU2VuY2VSZXNwEPMHEiAKG01zZ0lER2FtZV9Ob3RpZnlNZXNz",
-          "YWdlUmVzcBD0BxIZChRNc2dJREdhbWVfQ3JlYXRlUm9vbRD1BxIXChJNc2dJ",
-          "REdhbWVfSm9pblJvb20Q9gcSGgoVTXNnSURHYW1lX1F1ZXJ5UmVjb3JkEPcH",
-          "EiMKHk1zZ0lER2FtZV9RdWVyeVJvdW5kUmVjb3JkUmVzcBD4BxIhChxNc2dJ",
-          "REdhbWVfUXVlcnlEYXlSZWNvcmRSZXNwEPkHEhsKFk1zZ0lER2FtZV9BZGRP",
-          "bmVSZWNvcmQQ+gcSJgohTXNnSURHYW1lX05vdGlmeVBsYXllck9mZmxpbmVS",
-          "ZXNwEPsHKvkBCgpFTXNnSURDaGF0EhIKDk1zZ0lEQ2hhdF9OdWxsEAASFAoP",
-          "TXNnSURDaGF0X0xvZ2luENEPEhgKE01zZ0lEQ2hhdF9Mb2dpblJlc3AQ0g8S",
-          "GQoUTXNnSURDaGF0X0xvZ291dFJlc3AQ0w8SHAoXTXNnSURDaGF0X1NlbmRO",
-          "b3JtYWxNc2cQ1A8SJgohTXNnSURDaGF0X05vdGlmeUNoYXROb3JtYWxNc2dS",
-          "ZXNwENUPEh0KGE1zZ0lEQ2hhdF9TZW5kVHJ1bXBldE1zZxDWDxInCiJNc2dJ",
-          "RENoYXRfTm90aWZ5Q2hhdFRydW1wZXRNc2dSZXNwENcPYgZwcm90bzM="));
+          "ckluZm9SZXNwEF8SFgoSTXNnSURTaG9wX0J1eUdvb2RzEGASGgoWTXNnSURT",
+          "aG9wX0J1eUdvb2RzUmVzcBBhKu4ECgpFTXNnSURHYW1lEhIKDk1zZ0lER2Ft",
+          "ZV9OdWxsEAASFAoPTXNnSURHYW1lX0xvZ2luEOkHEhgKE01zZ0lER2FtZV9M",
+          "b2dpblJlc3AQ6gcSHgoZTXNnSURHYW1lX1NxdWVlemVTZWF0UmVzcBDrBxIV",
+          "ChBNc2dJREdhbWVfTG9nb3V0EOwHEhoKFU1zZ0lER2FtZV9BdXRvU2l0RG93",
+          "bhDtBxIaChVNc2dJREdhbWVfU2l0RG93blJlc3AQ7gcSIQocTXNnSURHYW1l",
+          "X1N5bmNQbGF5ZXJJbmZvUmVzcBDvBxImCiFNc2dJREdhbWVfTm90aWZ5UGxh",
+          "eWVyU3RhbmRVcFJlc3AQ8AcSIwoeTXNnSURHYW1lX1N5bmNQbGF5ZXJzU2Nv",
+          "cmVSZXNwEPEHEhwKF01zZ0lER2FtZV9TZW5kR2FtZVNlbmNlEPIHEiAKG01z",
+          "Z0lER2FtZV9TZW5kR2FtZVNlbmNlUmVzcBDzBxIgChtNc2dJREdhbWVfTm90",
+          "aWZ5TWVzc2FnZVJlc3AQ9AcSGQoUTXNnSURHYW1lX0NyZWF0ZVJvb20Q9QcS",
+          "FwoSTXNnSURHYW1lX0pvaW5Sb29tEPYHEhoKFU1zZ0lER2FtZV9RdWVyeVJl",
+          "Y29yZBD3BxIjCh5Nc2dJREdhbWVfUXVlcnlSb3VuZFJlY29yZFJlc3AQ+AcS",
+          "IQocTXNnSURHYW1lX1F1ZXJ5RGF5UmVjb3JkUmVzcBD5BxIbChZNc2dJREdh",
+          "bWVfQWRkT25lUmVjb3JkEPoHEiYKIU1zZ0lER2FtZV9Ob3RpZnlQbGF5ZXJP",
+          "ZmZsaW5lUmVzcBD7Byr5AQoKRU1zZ0lEQ2hhdBISCg5Nc2dJRENoYXRfTnVs",
+          "bBAAEhQKD01zZ0lEQ2hhdF9Mb2dpbhDRDxIYChNNc2dJRENoYXRfTG9naW5S",
+          "ZXNwENIPEhkKFE1zZ0lEQ2hhdF9Mb2dvdXRSZXNwENMPEhwKF01zZ0lEQ2hh",
+          "dF9TZW5kTm9ybWFsTXNnENQPEiYKIU1zZ0lEQ2hhdF9Ob3RpZnlDaGF0Tm9y",
+          "bWFsTXNnUmVzcBDVDxIdChhNc2dJRENoYXRfU2VuZFRydW1wZXRNc2cQ1g8S",
+          "JwoiTXNnSURDaGF0X05vdGlmeUNoYXRUcnVtcGV0TXNnUmVzcBDXD2IGcHJv",
+          "dG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::EMsgIDMain), typeof(global::EMsgIDLogin), typeof(global::EMsgIDGame), typeof(global::EMsgIDChat), }, null, null));
@@ -523,6 +525,14 @@ public enum EMsgIDLogin {
   ///请求用户昵称返回(MsgCommonStr)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_BankQueryUserInfoResp")] MsgIdloginBankQueryUserInfoResp = 95,
+  /// <summary>
+  ///购买商品(MsgCommonKV)
+  /// </summary>
+  [pbr::OriginalName("MsgIDShop_BuyGoods")] MsgIdshopBuyGoods = 96,
+  /// <summary>
+  ///购买商品返回(MsgCommonN32)
+  /// </summary>
+  [pbr::OriginalName("MsgIDShop_BuyGoodsResp")] MsgIdshopBuyGoodsResp = 97,
 }
 
 public enum EMsgIDGame {
@@ -628,7 +638,7 @@ public enum EMsgIDChat {
   /// </summary>
   [pbr::OriginalName("MsgIDChat_NotifyChatNormalMsgResp")] MsgIdchatNotifyChatNormalMsgResp = 2005,
   /// <summary>
-  ///发送小喇叭消息(MsgChatTrumpetMsg)
+  ///发送小喇叭消息(MsgCommonStr)
   /// </summary>
   [pbr::OriginalName("MsgIDChat_SendTrumpetMsg")] MsgIdchatSendTrumpetMsg = 2006,
   /// <summary>

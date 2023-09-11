@@ -132,12 +132,14 @@ enum EMsgIDServerInternalProto : int {
   RelayServer2CENTER_Withdraw = 5004,
   Chat2Center_Register = 6001,
   Chat2Center_UpdateOnlineNum = 6002,
+  Chat2Center_SendTrumpetMsg = 6003,
+  Center2Chat_SendTrumpetMsgResp = 6004,
   EMsgIDServerInternalProto_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDServerInternalProto_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDServerInternalProto_IsValid(int value);
 constexpr EMsgIDServerInternalProto EMsgIDServerInternalProto_MIN = SERVER_INTERNAL_NULL;
-constexpr EMsgIDServerInternalProto EMsgIDServerInternalProto_MAX = Chat2Center_UpdateOnlineNum;
+constexpr EMsgIDServerInternalProto EMsgIDServerInternalProto_MAX = Center2Chat_SendTrumpetMsgResp;
 constexpr int EMsgIDServerInternalProto_ARRAYSIZE = EMsgIDServerInternalProto_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDServerInternalProto_descriptor();
@@ -236,6 +238,8 @@ enum EMsgIDDB : int {
   DB2LOGIN_GetPlayerItemResp = 1065,
   LOGIN2DB_BankQueryNickname = 1066,
   DB2LOGIN_BankQueryNicknameResp = 1067,
+  LOGIN2DB_BuyGoods = 1068,
+  DB2LOGIN_BuyGoodsResp = 1069,
   GAME2DB_Login = 2001,
   DB2GAME_LoginResp = 2002,
   GAME2DB_LoadCheatRate = 2003,
@@ -253,12 +257,14 @@ enum EMsgIDDB : int {
   GAME2DB_UpdateJckpotInfo = 2015,
   CHAT2DB_Login = 3001,
   DB2CHAT_LoginResp = 3002,
+  CHAT2DB_SendTrumpetMsg = 3003,
+  DB2CHAT_SendTrumpetMsgResp = 3004,
   EMsgIDDB_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDDB_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDDB_IsValid(int value);
 constexpr EMsgIDDB EMsgIDDB_MIN = MsgIDDB_NULL;
-constexpr EMsgIDDB EMsgIDDB_MAX = DB2CHAT_LoginResp;
+constexpr EMsgIDDB EMsgIDDB_MAX = DB2CHAT_SendTrumpetMsgResp;
 constexpr int EMsgIDDB_ARRAYSIZE = EMsgIDDB_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDDB_descriptor();
