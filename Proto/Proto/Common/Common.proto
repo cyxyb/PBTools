@@ -60,19 +60,11 @@ message MsgNotifyChatNormalMsg
 	string	message				= 2;		//聊天内容
 }
 
-//聊天消息
-message MsgChatTrumpetMsg
-{
-	bool	is_use_trumpet		= 1;		//是否使用小喇叭
-	string	message				= 2;		//聊天内容
-}
-
 //通知聊天消息
 message MsgNotifyChatTrumpetMsg
 {
-	int32	user_id					= 1;		//用户ID
-	MsgChatPlayerInfo player_info	= 2;		//玩家信息
-	string	message					= 3;		//聊天内容
+	MsgChatPlayerInfo player_info	= 1;		//玩家信息
+	string	message					= 2;		//聊天内容
 }
 
 //聊天玩家数据

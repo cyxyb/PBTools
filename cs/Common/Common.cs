@@ -36,18 +36,16 @@ public static partial class CommonReflection {
           "KAkSEAoIaGVhZF91cmwYBiABKAkSEwoLbGFuZ3VhZ2VfaWQYByABKAUSEwoL",
           "dGVtcGxhdGVfaWQYCCABKAUSDwoHY29udGVudBgJIAMoCSI6ChZNc2dOb3Rp",
           "ZnlDaGF0Tm9ybWFsTXNnEg8KB3VzZXJfaWQYASABKAUSDwoHbWVzc2FnZRgC",
-          "IAEoCSI8ChFNc2dDaGF0VHJ1bXBldE1zZxIWCg5pc191c2VfdHJ1bXBldBgB",
-          "IAEoCBIPCgdtZXNzYWdlGAIgASgJImQKF01zZ05vdGlmeUNoYXRUcnVtcGV0",
-          "TXNnEg8KB3VzZXJfaWQYASABKAUSJwoLcGxheWVyX2luZm8YAiABKAsyEi5N",
-          "c2dDaGF0UGxheWVySW5mbxIPCgdtZXNzYWdlGAMgASgJIpoBChFNc2dDaGF0",
-          "UGxheWVySW5mbxIPCgd1c2VyX2lkGAEgASgFEhQKDGJlYXV0aWZ1bF9pZBgC",
-          "IAEoBRIQCghuaWNrbmFtZRgDIAEoCRIOCgZhdmF0YXIYBCABKAkSEQoJdmlw",
-          "X2xldmVsGAUgASgFEhQKDGF2YXRhcl9mcmFtZRgGIAEoBRITCgtjbGllbnRf",
-          "dHlwZRgHIAEoBSJoChFNc2dDaGF0U2VydmVySW5mbxIKCgJpcBgBIAEoBRIM",
-          "CgRwb3J0GAIgASgFEhEKCXNlcnZlcl9pZBgDIAEoBRISCgpvbmxpbmVfbnVt",
-          "GAQgASgFEhIKCm1heF9wbGF5ZXIYBSABKAUiQQoRTXNnQ2hhdFNlcnZlckxp",
-          "c3QSLAoQY2hhdF9zZXJ2ZXJfbGlzdBgBIAMoCzISLk1zZ0NoYXRTZXJ2ZXJJ",
-          "bmZvYgZwcm90bzM="));
+          "IAEoCSJTChdNc2dOb3RpZnlDaGF0VHJ1bXBldE1zZxInCgtwbGF5ZXJfaW5m",
+          "bxgBIAEoCzISLk1zZ0NoYXRQbGF5ZXJJbmZvEg8KB21lc3NhZ2UYAiABKAki",
+          "mgEKEU1zZ0NoYXRQbGF5ZXJJbmZvEg8KB3VzZXJfaWQYASABKAUSFAoMYmVh",
+          "dXRpZnVsX2lkGAIgASgFEhAKCG5pY2tuYW1lGAMgASgJEg4KBmF2YXRhchgE",
+          "IAEoCRIRCgl2aXBfbGV2ZWwYBSABKAUSFAoMYXZhdGFyX2ZyYW1lGAYgASgF",
+          "EhMKC2NsaWVudF90eXBlGAcgASgFImgKEU1zZ0NoYXRTZXJ2ZXJJbmZvEgoK",
+          "AmlwGAEgASgFEgwKBHBvcnQYAiABKAUSEQoJc2VydmVyX2lkGAMgASgFEhIK",
+          "Cm9ubGluZV9udW0YBCABKAUSEgoKbWF4X3BsYXllchgFIAEoBSJBChFNc2dD",
+          "aGF0U2VydmVyTGlzdBIsChBjaGF0X3NlcnZlcl9saXN0GAEgAygLMhIuTXNn",
+          "Q2hhdFNlcnZlckluZm9iBnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -59,8 +57,7 @@ public static partial class CommonReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgGameServerList), global::MsgGameServerList.Parser, new[]{ "GameServerList" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBroadcastZmdTip), global::MsgBroadcastZmdTip.Parser, new[]{ "UserId", "GameId", "RoomLevel", "WinGold", "NickName", "HeadUrl", "LanguageId", "TemplateId", "Content" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgNotifyChatNormalMsg), global::MsgNotifyChatNormalMsg.Parser, new[]{ "UserId", "Message" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgChatTrumpetMsg), global::MsgChatTrumpetMsg.Parser, new[]{ "IsUseTrumpet", "Message" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgNotifyChatTrumpetMsg), global::MsgNotifyChatTrumpetMsg.Parser, new[]{ "UserId", "PlayerInfo", "Message" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgNotifyChatTrumpetMsg), global::MsgNotifyChatTrumpetMsg.Parser, new[]{ "PlayerInfo", "Message" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgChatPlayerInfo), global::MsgChatPlayerInfo.Parser, new[]{ "UserId", "BeautifulId", "Nickname", "Avatar", "VipLevel", "AvatarFrame", "ClientType" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgChatServerInfo), global::MsgChatServerInfo.Parser, new[]{ "Ip", "Port", "ServerId", "OnlineNum", "MaxPlayer" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgChatServerList), global::MsgChatServerList.Parser, new[]{ "ChatServerList" }, null, null, null, null)
@@ -2073,223 +2070,6 @@ public sealed partial class MsgNotifyChatNormalMsg : pb::IMessage<MsgNotifyChatN
 }
 
 /// <summary>
-///聊天消息
-/// </summary>
-public sealed partial class MsgChatTrumpetMsg : pb::IMessage<MsgChatTrumpetMsg>
-#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    , pb::IBufferMessage
-#endif
-{
-  private static readonly pb::MessageParser<MsgChatTrumpetMsg> _parser = new pb::MessageParser<MsgChatTrumpetMsg>(() => new MsgChatTrumpetMsg());
-  private pb::UnknownFieldSet _unknownFields;
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pb::MessageParser<MsgChatTrumpetMsg> Parser { get { return _parser; } }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pbr::MessageDescriptor Descriptor {
-    get { return global::CommonReflection.Descriptor.MessageTypes[8]; }
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  pbr::MessageDescriptor pb::IMessage.Descriptor {
-    get { return Descriptor; }
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public MsgChatTrumpetMsg() {
-    OnConstruction();
-  }
-
-  partial void OnConstruction();
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public MsgChatTrumpetMsg(MsgChatTrumpetMsg other) : this() {
-    isUseTrumpet_ = other.isUseTrumpet_;
-    message_ = other.message_;
-    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public MsgChatTrumpetMsg Clone() {
-    return new MsgChatTrumpetMsg(this);
-  }
-
-  /// <summary>Field number for the "is_use_trumpet" field.</summary>
-  public const int IsUseTrumpetFieldNumber = 1;
-  private bool isUseTrumpet_;
-  /// <summary>
-  ///是否使用小喇叭
-  /// </summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool IsUseTrumpet {
-    get { return isUseTrumpet_; }
-    set {
-      isUseTrumpet_ = value;
-    }
-  }
-
-  /// <summary>Field number for the "message" field.</summary>
-  public const int MessageFieldNumber = 2;
-  private string message_ = "";
-  /// <summary>
-  ///聊天内容
-  /// </summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public string Message {
-    get { return message_; }
-    set {
-      message_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-    }
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public override bool Equals(object other) {
-    return Equals(other as MsgChatTrumpetMsg);
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Equals(MsgChatTrumpetMsg other) {
-    if (ReferenceEquals(other, null)) {
-      return false;
-    }
-    if (ReferenceEquals(other, this)) {
-      return true;
-    }
-    if (IsUseTrumpet != other.IsUseTrumpet) return false;
-    if (Message != other.Message) return false;
-    return Equals(_unknownFields, other._unknownFields);
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public override int GetHashCode() {
-    int hash = 1;
-    if (IsUseTrumpet != false) hash ^= IsUseTrumpet.GetHashCode();
-    if (Message.Length != 0) hash ^= Message.GetHashCode();
-    if (_unknownFields != null) {
-      hash ^= _unknownFields.GetHashCode();
-    }
-    return hash;
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public override string ToString() {
-    return pb::JsonFormatter.ToDiagnosticString(this);
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void WriteTo(pb::CodedOutputStream output) {
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    output.WriteRawMessage(this);
-  #else
-    if (IsUseTrumpet != false) {
-      output.WriteRawTag(8);
-      output.WriteBool(IsUseTrumpet);
-    }
-    if (Message.Length != 0) {
-      output.WriteRawTag(18);
-      output.WriteString(Message);
-    }
-    if (_unknownFields != null) {
-      _unknownFields.WriteTo(output);
-    }
-  #endif
-  }
-
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-    if (IsUseTrumpet != false) {
-      output.WriteRawTag(8);
-      output.WriteBool(IsUseTrumpet);
-    }
-    if (Message.Length != 0) {
-      output.WriteRawTag(18);
-      output.WriteString(Message);
-    }
-    if (_unknownFields != null) {
-      _unknownFields.WriteTo(ref output);
-    }
-  }
-  #endif
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public int CalculateSize() {
-    int size = 0;
-    if (IsUseTrumpet != false) {
-      size += 1 + 1;
-    }
-    if (Message.Length != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeStringSize(Message);
-    }
-    if (_unknownFields != null) {
-      size += _unknownFields.CalculateSize();
-    }
-    return size;
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(MsgChatTrumpetMsg other) {
-    if (other == null) {
-      return;
-    }
-    if (other.IsUseTrumpet != false) {
-      IsUseTrumpet = other.IsUseTrumpet;
-    }
-    if (other.Message.Length != 0) {
-      Message = other.Message;
-    }
-    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(pb::CodedInputStream input) {
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    input.ReadRawMessage(this);
-  #else
-    uint tag;
-    while ((tag = input.ReadTag()) != 0) {
-      switch(tag) {
-        default:
-          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-          break;
-        case 8: {
-          IsUseTrumpet = input.ReadBool();
-          break;
-        }
-        case 18: {
-          Message = input.ReadString();
-          break;
-        }
-      }
-    }
-  #endif
-  }
-
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-    uint tag;
-    while ((tag = input.ReadTag()) != 0) {
-      switch(tag) {
-        default:
-          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-          break;
-        case 8: {
-          IsUseTrumpet = input.ReadBool();
-          break;
-        }
-        case 18: {
-          Message = input.ReadString();
-          break;
-        }
-      }
-    }
-  }
-  #endif
-
-}
-
-/// <summary>
 ///通知聊天消息
 /// </summary>
 public sealed partial class MsgNotifyChatTrumpetMsg : pb::IMessage<MsgNotifyChatTrumpetMsg>
@@ -2304,7 +2084,7 @@ public sealed partial class MsgNotifyChatTrumpetMsg : pb::IMessage<MsgNotifyChat
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::CommonReflection.Descriptor.MessageTypes[9]; }
+    get { return global::CommonReflection.Descriptor.MessageTypes[8]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2321,7 +2101,6 @@ public sealed partial class MsgNotifyChatTrumpetMsg : pb::IMessage<MsgNotifyChat
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public MsgNotifyChatTrumpetMsg(MsgNotifyChatTrumpetMsg other) : this() {
-    userId_ = other.userId_;
     playerInfo_ = other.playerInfo_ != null ? other.playerInfo_.Clone() : null;
     message_ = other.message_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -2332,22 +2111,8 @@ public sealed partial class MsgNotifyChatTrumpetMsg : pb::IMessage<MsgNotifyChat
     return new MsgNotifyChatTrumpetMsg(this);
   }
 
-  /// <summary>Field number for the "user_id" field.</summary>
-  public const int UserIdFieldNumber = 1;
-  private int userId_;
-  /// <summary>
-  ///用户ID
-  /// </summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public int UserId {
-    get { return userId_; }
-    set {
-      userId_ = value;
-    }
-  }
-
   /// <summary>Field number for the "player_info" field.</summary>
-  public const int PlayerInfoFieldNumber = 2;
+  public const int PlayerInfoFieldNumber = 1;
   private global::MsgChatPlayerInfo playerInfo_;
   /// <summary>
   ///玩家信息
@@ -2361,7 +2126,7 @@ public sealed partial class MsgNotifyChatTrumpetMsg : pb::IMessage<MsgNotifyChat
   }
 
   /// <summary>Field number for the "message" field.</summary>
-  public const int MessageFieldNumber = 3;
+  public const int MessageFieldNumber = 2;
   private string message_ = "";
   /// <summary>
   ///聊天内容
@@ -2387,7 +2152,6 @@ public sealed partial class MsgNotifyChatTrumpetMsg : pb::IMessage<MsgNotifyChat
     if (ReferenceEquals(other, this)) {
       return true;
     }
-    if (UserId != other.UserId) return false;
     if (!object.Equals(PlayerInfo, other.PlayerInfo)) return false;
     if (Message != other.Message) return false;
     return Equals(_unknownFields, other._unknownFields);
@@ -2396,7 +2160,6 @@ public sealed partial class MsgNotifyChatTrumpetMsg : pb::IMessage<MsgNotifyChat
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override int GetHashCode() {
     int hash = 1;
-    if (UserId != 0) hash ^= UserId.GetHashCode();
     if (playerInfo_ != null) hash ^= PlayerInfo.GetHashCode();
     if (Message.Length != 0) hash ^= Message.GetHashCode();
     if (_unknownFields != null) {
@@ -2415,16 +2178,12 @@ public sealed partial class MsgNotifyChatTrumpetMsg : pb::IMessage<MsgNotifyChat
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     output.WriteRawMessage(this);
   #else
-    if (UserId != 0) {
-      output.WriteRawTag(8);
-      output.WriteInt32(UserId);
-    }
     if (playerInfo_ != null) {
-      output.WriteRawTag(18);
+      output.WriteRawTag(10);
       output.WriteMessage(PlayerInfo);
     }
     if (Message.Length != 0) {
-      output.WriteRawTag(26);
+      output.WriteRawTag(18);
       output.WriteString(Message);
     }
     if (_unknownFields != null) {
@@ -2436,16 +2195,12 @@ public sealed partial class MsgNotifyChatTrumpetMsg : pb::IMessage<MsgNotifyChat
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-    if (UserId != 0) {
-      output.WriteRawTag(8);
-      output.WriteInt32(UserId);
-    }
     if (playerInfo_ != null) {
-      output.WriteRawTag(18);
+      output.WriteRawTag(10);
       output.WriteMessage(PlayerInfo);
     }
     if (Message.Length != 0) {
-      output.WriteRawTag(26);
+      output.WriteRawTag(18);
       output.WriteString(Message);
     }
     if (_unknownFields != null) {
@@ -2457,9 +2212,6 @@ public sealed partial class MsgNotifyChatTrumpetMsg : pb::IMessage<MsgNotifyChat
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int CalculateSize() {
     int size = 0;
-    if (UserId != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserId);
-    }
     if (playerInfo_ != null) {
       size += 1 + pb::CodedOutputStream.ComputeMessageSize(PlayerInfo);
     }
@@ -2476,9 +2228,6 @@ public sealed partial class MsgNotifyChatTrumpetMsg : pb::IMessage<MsgNotifyChat
   public void MergeFrom(MsgNotifyChatTrumpetMsg other) {
     if (other == null) {
       return;
-    }
-    if (other.UserId != 0) {
-      UserId = other.UserId;
     }
     if (other.playerInfo_ != null) {
       if (playerInfo_ == null) {
@@ -2503,18 +2252,14 @@ public sealed partial class MsgNotifyChatTrumpetMsg : pb::IMessage<MsgNotifyChat
         default:
           _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
           break;
-        case 8: {
-          UserId = input.ReadInt32();
-          break;
-        }
-        case 18: {
+        case 10: {
           if (playerInfo_ == null) {
             PlayerInfo = new global::MsgChatPlayerInfo();
           }
           input.ReadMessage(PlayerInfo);
           break;
         }
-        case 26: {
+        case 18: {
           Message = input.ReadString();
           break;
         }
@@ -2532,18 +2277,14 @@ public sealed partial class MsgNotifyChatTrumpetMsg : pb::IMessage<MsgNotifyChat
         default:
           _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
           break;
-        case 8: {
-          UserId = input.ReadInt32();
-          break;
-        }
-        case 18: {
+        case 10: {
           if (playerInfo_ == null) {
             PlayerInfo = new global::MsgChatPlayerInfo();
           }
           input.ReadMessage(PlayerInfo);
           break;
         }
-        case 26: {
+        case 18: {
           Message = input.ReadString();
           break;
         }
@@ -2569,7 +2310,7 @@ public sealed partial class MsgChatPlayerInfo : pb::IMessage<MsgChatPlayerInfo>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::CommonReflection.Descriptor.MessageTypes[10]; }
+    get { return global::CommonReflection.Descriptor.MessageTypes[9]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2981,7 +2722,7 @@ public sealed partial class MsgChatServerInfo : pb::IMessage<MsgChatServerInfo>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::CommonReflection.Descriptor.MessageTypes[11]; }
+    get { return global::CommonReflection.Descriptor.MessageTypes[10]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3315,7 +3056,7 @@ public sealed partial class MsgChatServerList : pb::IMessage<MsgChatServerList>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::CommonReflection.Descriptor.MessageTypes[12]; }
+    get { return global::CommonReflection.Descriptor.MessageTypes[11]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

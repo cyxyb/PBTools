@@ -127,6 +127,12 @@ message MsgUpdateChatServerOnlineNum
 
 
 /////////////////////////服务器与数据库///////////////////////////
+message MsgDBCommonKV
+{
+	int32		k				= 1;	//key
+	int32		v				= 2;	//value
+}
+
 //更新在线人数
 message MsgDBUpdateOnlineNum
 {
@@ -399,3 +405,18 @@ message MsgDBChatLogin
 	int32		user_id				= 1;	//玩家ID
 	string		password			= 2;	//玩家密码
 };
+
+//聊天消息
+message MsgDBChatTrumpetMsg
+{
+	int32	user_id				= 1;		//玩家ID
+	string	message				= 2;		//聊天内容
+}
+
+//聊天消息
+message MsgDBBuyGoods
+{
+	int32	user_id				= 1;		//玩家ID
+	int32	item_id				= 2;		//商品id
+	int32	item_num			= 3;		//商品数量
+}
