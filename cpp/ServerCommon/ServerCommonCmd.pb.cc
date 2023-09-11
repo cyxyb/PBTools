@@ -65,7 +65,7 @@ const char descriptor_table_protodef_ServerCommonCmd_2eproto[] PROTOBUF_SECTION_
   "AddMail\020\212\'\022\'\n\"RelayServer2CENTER_Recharg"
   "eSuccess\020\213\'\022 \n\033RelayServer2CENTER_Withdr"
   "aw\020\214\'\022\031\n\024Chat2Center_Register\020\361.\022 \n\033Chat"
-  "2Center_UpdateOnlineNum\020\362.*\213\026\n\010EMsgIDDB\022"
+  "2Center_UpdateOnlineNum\020\362.*\311\026\n\010EMsgIDDB\022"
   "\020\n\014MsgIDDB_NULL\020\000\022\035\n\031CENTER2DB_UpdateOnl"
   "ineNum\020\001\022\033\n\027CENTER2DB_InitOnlineNum\020\002\022\033\n"
   "\027CENTER2DB_RegisterLogin\020\003\022\035\n\031CENTER2DB_"
@@ -123,20 +123,22 @@ const char descriptor_table_protodef_ServerCommonCmd_2eproto[] PROTOBUF_SECTION_
   "kRecordResp\020\243\010\022 \n\033LOGIN2DB_BankChangePas"
   "sword\020\244\010\022$\n\037DB2LOGIN_BankChangePasswordR"
   "esp\020\245\010\022\035\n\030LOGIN2DB_BankSetPassword\020\246\010\022!\n"
-  "\034DB2LOGIN_BankSetPasswordResp\020\247\010\022\022\n\rGAME"
-  "2DB_Login\020\321\017\022\026\n\021DB2GAME_LoginResp\020\322\017\022\032\n\025"
-  "GAME2DB_LoadCheatRate\020\323\017\022\032\n\025DB2GAME_Load"
-  "CheatRate\020\324\017\022\027\n\022GAME2DB_WriteScore\020\325\017\022\027\n"
-  "\022DB2GAME_WriteScore\020\326\017\022\"\n\035GAME2DB_Finger"
-  "GuessWriteScore\020\327\017\022\"\n\035DB2GAME_FingerGues"
-  "sWriteScore\020\330\017\022#\n\036GAME2DB_FingerGuessQue"
-  "ryRecord\020\331\017\022#\n\036DB2GAME_FingerGuessRoundR"
-  "ecord\020\332\017\022!\n\034DB2GAME_FingerGuessDayRecord"
-  "\020\333\017\022 \n\033GAME2DB_WriteDisConnectData\020\334\017\022\034\n"
-  "\027GAME2DB_QueryJckpotInfo\020\335\017\022 \n\033DB2GAME_Q"
-  "ueryJckpotInfoResp\020\336\017\022\035\n\030GAME2DB_UpdateJ"
-  "ckpotInfo\020\337\017\022\022\n\rCHAT2DB_Login\020\271\027\022\026\n\021DB2C"
-  "HAT_LoginResp\020\272\027b\006proto3"
+  "\034DB2LOGIN_BankSetPasswordResp\020\247\010\022\033\n\026LOGI"
+  "N2DB_GetPlayerItem\020\250\010\022\037\n\032DB2LOGIN_GetPla"
+  "yerItemResp\020\251\010\022\022\n\rGAME2DB_Login\020\321\017\022\026\n\021DB"
+  "2GAME_LoginResp\020\322\017\022\032\n\025GAME2DB_LoadCheatR"
+  "ate\020\323\017\022\032\n\025DB2GAME_LoadCheatRate\020\324\017\022\027\n\022GA"
+  "ME2DB_WriteScore\020\325\017\022\027\n\022DB2GAME_WriteScor"
+  "e\020\326\017\022\"\n\035GAME2DB_FingerGuessWriteScore\020\327\017"
+  "\022\"\n\035DB2GAME_FingerGuessWriteScore\020\330\017\022#\n\036"
+  "GAME2DB_FingerGuessQueryRecord\020\331\017\022#\n\036DB2"
+  "GAME_FingerGuessRoundRecord\020\332\017\022!\n\034DB2GAM"
+  "E_FingerGuessDayRecord\020\333\017\022 \n\033GAME2DB_Wri"
+  "teDisConnectData\020\334\017\022\034\n\027GAME2DB_QueryJckp"
+  "otInfo\020\335\017\022 \n\033DB2GAME_QueryJckpotInfoResp"
+  "\020\336\017\022\035\n\030GAME2DB_UpdateJckpotInfo\020\337\017\022\022\n\rCH"
+  "AT2DB_Login\020\271\027\022\026\n\021DB2CHAT_LoginResp\020\272\027b\006"
+  "proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_ServerCommonCmd_2eproto_deps[1] = {
 };
@@ -144,7 +146,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Ser
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ServerCommonCmd_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ServerCommonCmd_2eproto = {
-  false, false, descriptor_table_protodef_ServerCommonCmd_2eproto, "ServerCommonCmd.proto", 4584,
+  false, false, descriptor_table_protodef_ServerCommonCmd_2eproto, "ServerCommonCmd.proto", 4646,
   &descriptor_table_ServerCommonCmd_2eproto_once, descriptor_table_ServerCommonCmd_2eproto_sccs, descriptor_table_ServerCommonCmd_2eproto_deps, 0, 0,
   schemas, file_default_instances, TableStruct_ServerCommonCmd_2eproto::offsets,
   file_level_metadata_ServerCommonCmd_2eproto, 0, file_level_enum_descriptors_ServerCommonCmd_2eproto, file_level_service_descriptors_ServerCommonCmd_2eproto,
@@ -312,6 +314,8 @@ bool EMsgIDDB_IsValid(int value) {
     case 1061:
     case 1062:
     case 1063:
+    case 1064:
+    case 1065:
     case 2001:
     case 2002:
     case 2003:
