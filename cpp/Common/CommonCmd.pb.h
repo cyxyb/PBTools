@@ -176,8 +176,10 @@ enum EMsgIDLogin : int {
   MsgIDBank_BankRecordResp = 89,
   MsgIDLogin_NotifyChatServerList = 90,
   MsgIDLogin_QueryChatServerList = 91,
-  MsgIDLogin_BankQueryUserInfo = 92,
-  MsgIDLogin_BankQueryUserInfoResp = 93,
+  MsgIDLogin_GetPlayerItem = 92,
+  MsgIDLogin_GetPlayerItemResp = 93,
+  MsgIDLogin_BankQueryUserInfo = 94,
+  MsgIDLogin_BankQueryUserInfoResp = 95,
   EMsgIDLogin_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDLogin_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };

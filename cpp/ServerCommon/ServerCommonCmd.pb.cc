@@ -65,7 +65,7 @@ const char descriptor_table_protodef_ServerCommonCmd_2eproto[] PROTOBUF_SECTION_
   "AddMail\020\212\'\022\'\n\"RelayServer2CENTER_Recharg"
   "eSuccess\020\213\'\022 \n\033RelayServer2CENTER_Withdr"
   "aw\020\214\'\022\031\n\024Chat2Center_Register\020\361.\022 \n\033Chat"
-  "2Center_UpdateOnlineNum\020\362.*\321\026\n\010EMsgIDDB\022"
+  "2Center_UpdateOnlineNum\020\362.*\217\027\n\010EMsgIDDB\022"
   "\020\n\014MsgIDDB_NULL\020\000\022\035\n\031CENTER2DB_UpdateOnl"
   "ineNum\020\001\022\033\n\027CENTER2DB_InitOnlineNum\020\002\022\033\n"
   "\027CENTER2DB_RegisterLogin\020\003\022\035\n\031CENTER2DB_"
@@ -123,22 +123,23 @@ const char descriptor_table_protodef_ServerCommonCmd_2eproto[] PROTOBUF_SECTION_
   "kRecordResp\020\243\010\022 \n\033LOGIN2DB_BankChangePas"
   "sword\020\244\010\022$\n\037DB2LOGIN_BankChangePasswordR"
   "esp\020\245\010\022\035\n\030LOGIN2DB_BankSetPassword\020\246\010\022!\n"
-  "\034DB2LOGIN_BankSetPasswordResp\020\247\010\022\037\n\032LOGI"
-  "N2DB_BankQueryNickname\020\250\010\022#\n\036DB2LOGIN_Ba"
-  "nkQueryNicknameResp\020\251\010\022\022\n\rGAME2DB_Login\020"
-  "\321\017\022\026\n\021DB2GAME_LoginResp\020\322\017\022\032\n\025GAME2DB_Lo"
-  "adCheatRate\020\323\017\022\032\n\025DB2GAME_LoadCheatRate\020"
-  "\324\017\022\027\n\022GAME2DB_WriteScore\020\325\017\022\027\n\022DB2GAME_W"
-  "riteScore\020\326\017\022\"\n\035GAME2DB_FingerGuessWrite"
-  "Score\020\327\017\022\"\n\035DB2GAME_FingerGuessWriteScor"
-  "e\020\330\017\022#\n\036GAME2DB_FingerGuessQueryRecord\020\331"
-  "\017\022#\n\036DB2GAME_FingerGuessRoundRecord\020\332\017\022!"
-  "\n\034DB2GAME_FingerGuessDayRecord\020\333\017\022 \n\033GAM"
-  "E2DB_WriteDisConnectData\020\334\017\022\034\n\027GAME2DB_Q"
-  "ueryJckpotInfo\020\335\017\022 \n\033DB2GAME_QueryJckpot"
-  "InfoResp\020\336\017\022\035\n\030GAME2DB_UpdateJckpotInfo\020"
-  "\337\017\022\022\n\rCHAT2DB_Login\020\271\027\022\026\n\021DB2CHAT_LoginR"
-  "esp\020\272\027b\006proto3"
+  "\034DB2LOGIN_BankSetPasswordResp\020\247\010\022\033\n\026LOGI"
+  "N2DB_GetPlayerItem\020\250\010\022\037\n\032DB2LOGIN_GetPla"
+  "yerItemResp\020\251\010\022\037\n\032LOGIN2DB_BankQueryNick"
+  "name\020\252\010\022#\n\036DB2LOGIN_BankQueryNicknameRes"
+  "p\020\253\010\022\022\n\rGAME2DB_Login\020\321\017\022\026\n\021DB2GAME_Logi"
+  "nResp\020\322\017\022\032\n\025GAME2DB_LoadCheatRate\020\323\017\022\032\n\025"
+  "DB2GAME_LoadCheatRate\020\324\017\022\027\n\022GAME2DB_Writ"
+  "eScore\020\325\017\022\027\n\022DB2GAME_WriteScore\020\326\017\022\"\n\035GA"
+  "ME2DB_FingerGuessWriteScore\020\327\017\022\"\n\035DB2GAM"
+  "E_FingerGuessWriteScore\020\330\017\022#\n\036GAME2DB_Fi"
+  "ngerGuessQueryRecord\020\331\017\022#\n\036DB2GAME_Finge"
+  "rGuessRoundRecord\020\332\017\022!\n\034DB2GAME_FingerGu"
+  "essDayRecord\020\333\017\022 \n\033GAME2DB_WriteDisConne"
+  "ctData\020\334\017\022\034\n\027GAME2DB_QueryJckpotInfo\020\335\017\022"
+  " \n\033DB2GAME_QueryJckpotInfoResp\020\336\017\022\035\n\030GAM"
+  "E2DB_UpdateJckpotInfo\020\337\017\022\022\n\rCHAT2DB_Logi"
+  "n\020\271\027\022\026\n\021DB2CHAT_LoginResp\020\272\027b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_ServerCommonCmd_2eproto_deps[1] = {
 };
@@ -146,7 +147,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Ser
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ServerCommonCmd_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ServerCommonCmd_2eproto = {
-  false, false, descriptor_table_protodef_ServerCommonCmd_2eproto, "ServerCommonCmd.proto", 4654,
+  false, false, descriptor_table_protodef_ServerCommonCmd_2eproto, "ServerCommonCmd.proto", 4716,
   &descriptor_table_ServerCommonCmd_2eproto_once, descriptor_table_ServerCommonCmd_2eproto_sccs, descriptor_table_ServerCommonCmd_2eproto_deps, 0, 0,
   schemas, file_default_instances, TableStruct_ServerCommonCmd_2eproto::offsets,
   file_level_metadata_ServerCommonCmd_2eproto, 0, file_level_enum_descriptors_ServerCommonCmd_2eproto, file_level_service_descriptors_ServerCommonCmd_2eproto,
@@ -316,6 +317,8 @@ bool EMsgIDDB_IsValid(int value) {
     case 1063:
     case 1064:
     case 1065:
+    case 1066:
+    case 1067:
     case 2001:
     case 2002:
     case 2003:
