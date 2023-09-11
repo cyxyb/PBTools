@@ -376,7 +376,7 @@ message MsgTopListResp
 //银行转账
 message MsgBankTransferResp
 {
-	int32 ret_value = 1;				//返回值 0操作成功 操作失败：1：金币有误2：没有权限向该用户转账3：不能小于限制金币4：你被禁止转账
+	int32 ret_value = 1;				//返回值 0操作成功 非零操作失败：多语言码
 	int64 bank_gold = 2;				//玩家银行金币
 };
 //银行转账记录

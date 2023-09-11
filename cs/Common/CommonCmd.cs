@@ -522,7 +522,7 @@ public enum EMsgIDLogin {
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_BankQueryUserInfo")] MsgIdloginBankQueryUserInfo = 94,
   /// <summary>
-  ///请求用户昵称返回(MsgCommonStr)
+  ///请求用户昵称返回(MsgBankQueryNicname)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_BankQueryUserInfoResp")] MsgIdloginBankQueryUserInfoResp = 95,
   /// <summary>

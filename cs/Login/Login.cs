@@ -130,7 +130,9 @@ public static partial class LoginReflection {
           "Y29yZHMYASADKAsyDi5Nc2dCYW5rUmVjb3JkIjAKDE1zZ1Bob25lQ29kZRIR",
           "CglhcmVhX2NvZGUYASABKAkSDQoFcGhvbmUYAiABKAkiLAoHTXNnSXRlbRIP",
           "CgdpdGVtX2lkGAEgASgFEhAKCGl0ZW1fbnVtGAIgASgDIicKDU1zZ1BsYXll",
-          "ckl0ZW0SFgoEaXRlbRgBIAMoCzIILk1zZ0l0ZW1iBnByb3RvMw=="));
+          "ckl0ZW0SFgoEaXRlbRgBIAMoCzIILk1zZ0l0ZW0iOgoTTXNnQmFua1F1ZXJ5",
+          "TmljbmFtZRIRCglyZXRfVmFsdWUYASABKAUSEAoIbmlja25hbWUYAiABKAli",
+          "BnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -179,7 +181,8 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankRecordResp), global::MsgBankRecordResp.Parser, new[]{ "Records" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPhoneCode), global::MsgPhoneCode.Parser, new[]{ "AreaCode", "Phone" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgItem), global::MsgItem.Parser, new[]{ "ItemId", "ItemNum" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPlayerItem), global::MsgPlayerItem.Parser, new[]{ "Item" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPlayerItem), global::MsgPlayerItem.Parser, new[]{ "Item" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankQueryNicname), global::MsgBankQueryNicname.Parser, new[]{ "RetValue", "Nickname" }, null, null, null, null)
         }));
   }
   #endregion
@@ -12947,7 +12950,7 @@ public sealed partial class MsgBankTransferResp : pb::IMessage<MsgBankTransferRe
   public const int RetValueFieldNumber = 1;
   private int retValue_;
   /// <summary>
-  ///返回值 0操作成功 操作失败：1：金币有误2：没有权限向该用户转账3：不能小于限制金币4：你被禁止转账
+  ///返回值 0操作成功 非零操作失败：多语言码
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int RetValue {
@@ -14166,6 +14169,223 @@ public sealed partial class MsgPlayerItem : pb::IMessage<MsgPlayerItem>
           break;
         case 10: {
           item_.AddEntriesFrom(ref input, _repeated_item_codec);
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///查询玩家昵称
+/// </summary>
+public sealed partial class MsgBankQueryNicname : pb::IMessage<MsgBankQueryNicname>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgBankQueryNicname> _parser = new pb::MessageParser<MsgBankQueryNicname>(() => new MsgBankQueryNicname());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgBankQueryNicname> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[46]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankQueryNicname() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankQueryNicname(MsgBankQueryNicname other) : this() {
+    retValue_ = other.retValue_;
+    nickname_ = other.nickname_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBankQueryNicname Clone() {
+    return new MsgBankQueryNicname(this);
+  }
+
+  /// <summary>Field number for the "ret_Value" field.</summary>
+  public const int RetValueFieldNumber = 1;
+  private int retValue_;
+  /// <summary>
+  ///返回值
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int RetValue {
+    get { return retValue_; }
+    set {
+      retValue_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "nickname" field.</summary>
+  public const int NicknameFieldNumber = 2;
+  private string nickname_ = "";
+  /// <summary>
+  ///昵称
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string Nickname {
+    get { return nickname_; }
+    set {
+      nickname_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgBankQueryNicname);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgBankQueryNicname other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (RetValue != other.RetValue) return false;
+    if (Nickname != other.Nickname) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (RetValue != 0) hash ^= RetValue.GetHashCode();
+    if (Nickname.Length != 0) hash ^= Nickname.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (RetValue != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(RetValue);
+    }
+    if (Nickname.Length != 0) {
+      output.WriteRawTag(18);
+      output.WriteString(Nickname);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (RetValue != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(RetValue);
+    }
+    if (Nickname.Length != 0) {
+      output.WriteRawTag(18);
+      output.WriteString(Nickname);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (RetValue != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(RetValue);
+    }
+    if (Nickname.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Nickname);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgBankQueryNicname other) {
+    if (other == null) {
+      return;
+    }
+    if (other.RetValue != 0) {
+      RetValue = other.RetValue;
+    }
+    if (other.Nickname.Length != 0) {
+      Nickname = other.Nickname;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          RetValue = input.ReadInt32();
+          break;
+        }
+        case 18: {
+          Nickname = input.ReadString();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          RetValue = input.ReadInt32();
+          break;
+        }
+        case 18: {
+          Nickname = input.ReadString();
           break;
         }
       }
