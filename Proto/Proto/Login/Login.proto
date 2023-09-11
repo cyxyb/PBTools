@@ -398,3 +398,18 @@ message MsgPhoneCode
 	string		area_code			= 1;	//区号
 	string		phone				= 2;	//手机号
 };
+
+
+//玩家道具
+message MsgItem
+{
+	int32		item_id				= 1;	//道具id
+	int64		item_num			= 2;	//道具数量
+};
+
+//玩家道具
+message MsgPlayerItem
+{
+	repeated MsgItem item			= 1;	//玩家道具
+};
+
