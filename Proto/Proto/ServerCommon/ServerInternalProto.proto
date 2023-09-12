@@ -274,8 +274,9 @@ message MsgDBGamePlayerLoginResp
 	uint64		coin			= 6;	//玩家金币
 	string		password		= 7;	//玩家密码
 	int32		cheat_rate		= 8;	//玩家作弊率
-	bool		vip				= 9;	//是否VIP
-	MsgDBPlayerReconnectData reconnect_data = 10;	//重连数据
+	int32		vip_level		= 9;	//VIP等级
+	int32		avatar_frame	= 10;	//头像框
+	MsgDBPlayerReconnectData reconnect_data = 11;	//重连数据
 }
 
 //写分

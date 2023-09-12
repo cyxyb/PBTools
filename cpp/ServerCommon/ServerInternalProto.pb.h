@@ -5362,13 +5362,14 @@ class MsgDBGamePlayerLoginResp PROTOBUF_FINAL :
     kNicknameFieldNumber = 4,
     kAvatarFieldNumber = 5,
     kPasswordFieldNumber = 7,
-    kReconnectDataFieldNumber = 10,
+    kReconnectDataFieldNumber = 11,
     kResCodeFieldNumber = 1,
     kUserIdFieldNumber = 2,
     kBeautifulIdFieldNumber = 3,
     kCheatRateFieldNumber = 8,
     kCoinFieldNumber = 6,
-    kVipFieldNumber = 9,
+    kVipLevelFieldNumber = 9,
+    kAvatarFrameFieldNumber = 10,
   };
   // string nickname = 4;
   void clear_nickname();
@@ -5418,7 +5419,7 @@ class MsgDBGamePlayerLoginResp PROTOBUF_FINAL :
   std::string* _internal_mutable_password();
   public:
 
-  // .MsgDBPlayerReconnectData reconnect_data = 10;
+  // .MsgDBPlayerReconnectData reconnect_data = 11;
   bool has_reconnect_data() const;
   private:
   bool _internal_has_reconnect_data() const;
@@ -5481,13 +5482,22 @@ class MsgDBGamePlayerLoginResp PROTOBUF_FINAL :
   void _internal_set_coin(::PROTOBUF_NAMESPACE_ID::uint64 value);
   public:
 
-  // bool vip = 9;
-  void clear_vip();
-  bool vip() const;
-  void set_vip(bool value);
+  // int32 vip_level = 9;
+  void clear_vip_level();
+  ::PROTOBUF_NAMESPACE_ID::int32 vip_level() const;
+  void set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  bool _internal_vip() const;
-  void _internal_set_vip(bool value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_vip_level() const;
+  void _internal_set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 avatar_frame = 10;
+  void clear_avatar_frame();
+  ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame() const;
+  void set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_avatar_frame() const;
+  void _internal_set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:MsgDBGamePlayerLoginResp)
@@ -5506,7 +5516,8 @@ class MsgDBGamePlayerLoginResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 beautiful_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 cheat_rate_;
   ::PROTOBUF_NAMESPACE_ID::uint64 coin_;
-  bool vip_;
+  ::PROTOBUF_NAMESPACE_ID::int32 vip_level_;
+  ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -12287,27 +12298,47 @@ inline void MsgDBGamePlayerLoginResp::set_cheat_rate(::PROTOBUF_NAMESPACE_ID::in
   // @@protoc_insertion_point(field_set:MsgDBGamePlayerLoginResp.cheat_rate)
 }
 
-// bool vip = 9;
-inline void MsgDBGamePlayerLoginResp::clear_vip() {
-  vip_ = false;
+// int32 vip_level = 9;
+inline void MsgDBGamePlayerLoginResp::clear_vip_level() {
+  vip_level_ = 0;
 }
-inline bool MsgDBGamePlayerLoginResp::_internal_vip() const {
-  return vip_;
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBGamePlayerLoginResp::_internal_vip_level() const {
+  return vip_level_;
 }
-inline bool MsgDBGamePlayerLoginResp::vip() const {
-  // @@protoc_insertion_point(field_get:MsgDBGamePlayerLoginResp.vip)
-  return _internal_vip();
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBGamePlayerLoginResp::vip_level() const {
+  // @@protoc_insertion_point(field_get:MsgDBGamePlayerLoginResp.vip_level)
+  return _internal_vip_level();
 }
-inline void MsgDBGamePlayerLoginResp::_internal_set_vip(bool value) {
+inline void MsgDBGamePlayerLoginResp::_internal_set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
-  vip_ = value;
+  vip_level_ = value;
 }
-inline void MsgDBGamePlayerLoginResp::set_vip(bool value) {
-  _internal_set_vip(value);
-  // @@protoc_insertion_point(field_set:MsgDBGamePlayerLoginResp.vip)
+inline void MsgDBGamePlayerLoginResp::set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_vip_level(value);
+  // @@protoc_insertion_point(field_set:MsgDBGamePlayerLoginResp.vip_level)
 }
 
-// .MsgDBPlayerReconnectData reconnect_data = 10;
+// int32 avatar_frame = 10;
+inline void MsgDBGamePlayerLoginResp::clear_avatar_frame() {
+  avatar_frame_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBGamePlayerLoginResp::_internal_avatar_frame() const {
+  return avatar_frame_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBGamePlayerLoginResp::avatar_frame() const {
+  // @@protoc_insertion_point(field_get:MsgDBGamePlayerLoginResp.avatar_frame)
+  return _internal_avatar_frame();
+}
+inline void MsgDBGamePlayerLoginResp::_internal_set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  avatar_frame_ = value;
+}
+inline void MsgDBGamePlayerLoginResp::set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_avatar_frame(value);
+  // @@protoc_insertion_point(field_set:MsgDBGamePlayerLoginResp.avatar_frame)
+}
+
+// .MsgDBPlayerReconnectData reconnect_data = 11;
 inline bool MsgDBGamePlayerLoginResp::_internal_has_reconnect_data() const {
   return this != internal_default_instance() && reconnect_data_ != nullptr;
 }
