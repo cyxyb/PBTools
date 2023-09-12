@@ -3548,6 +3548,7 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
     kAvatarFrameFieldNumber = 14,
     kChannelIdFieldNumber = 15,
     kBankGoldFieldNumber = 17,
+    kAgentLevelFieldNumber = 20,
   };
   // string account = 4;
   void clear_account();
@@ -3776,6 +3777,15 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
   void _internal_set_bank_gold(::PROTOBUF_NAMESPACE_ID::uint64 value);
   public:
 
+  // int32 agent_level = 20;
+  void clear_agent_level();
+  ::PROTOBUF_NAMESPACE_ID::int32 agent_level() const;
+  void set_agent_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_agent_level() const;
+  void _internal_set_agent_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgLoginPlayerInfo)
  private:
   class _Internal;
@@ -3802,6 +3812,7 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame_;
   ::PROTOBUF_NAMESPACE_ID::int32 channel_id_;
   ::PROTOBUF_NAMESPACE_ID::uint64 bank_gold_;
+  ::PROTOBUF_NAMESPACE_ID::int32 agent_level_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -10987,6 +10998,26 @@ inline void MsgLoginPlayerInfo::set_allocated_signature(std::string* signature) 
   signature_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), signature,
       GetArena());
   // @@protoc_insertion_point(field_set_allocated:MsgLoginPlayerInfo.signature)
+}
+
+// int32 agent_level = 20;
+inline void MsgLoginPlayerInfo::clear_agent_level() {
+  agent_level_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgLoginPlayerInfo::_internal_agent_level() const {
+  return agent_level_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgLoginPlayerInfo::agent_level() const {
+  // @@protoc_insertion_point(field_get:MsgLoginPlayerInfo.agent_level)
+  return _internal_agent_level();
+}
+inline void MsgLoginPlayerInfo::_internal_set_agent_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  agent_level_ = value;
+}
+inline void MsgLoginPlayerInfo::set_agent_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_agent_level(value);
+  // @@protoc_insertion_point(field_set:MsgLoginPlayerInfo.agent_level)
 }
 
 // -------------------------------------------------------------------

@@ -183,6 +183,7 @@ message MsgLoginPlayerInfo
 	uint64		bank_gold		= 17;	//银行金币
 	string		invite_code		= 18;	//邀请码
 	string      signature		= 19;	//个性签名
+	int32		agent_level		= 20;	//代理等级
 }
 
 //游戏服务器玩家信息

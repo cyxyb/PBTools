@@ -39,6 +39,7 @@ message MsgPlayerLoginResp
 	string		invite_code		= 14;	//邀请码
 	string      bank_password	= 15;	//银行密码
 	string      signature		= 16;	//个性签名
+	int32		agent_level		= 17;	//代理等级
 }
 
 //修改密码
@@ -297,13 +298,13 @@ message MsgActiveInfoCSPick
 message MsgActiveInfoSCPick
 {
 	int32 active_id = 1;				//活动id: 5：每日反馈 6：新手任务邀请码 7：新手任务累充 8：新手任务游戏次数(多福多寿) 9：在线奖励10：新手任务游戏次数(龙虎斗) 11：新手任务游戏次数(小火箭)
-	int32 sub_active_id = 2;			//子活动id
-	int32 param1 = 3;					//完成条件
+	int32 sub_active_id = 2;			//子活动id 123
+	int32 param1 = 3;					//完成条件1-3-5
 	int32 param2 = 4;
 	int32 param3 = 5;
-	int32 progress1 = 6;				//完成度 负数为完成 正数为未完成
+	int32 progress1 = 6;				//完成度 
 	int32 progress2 = 7;
-	int32 progress3 = 8;
+	int32 progress3 = 8;				
 	int32 reward = 9;					//活动奖励
 	int32 reward_type = 10;				//活动奖励类型2转盘奖励1金币
 	int32 is_pick = 11;					//活动奖励是否领取
