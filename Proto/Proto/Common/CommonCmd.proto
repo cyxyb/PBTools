@@ -33,7 +33,7 @@ enum EMsgIDLogin
 	MsgIDMail_DeleteAllReadMailResp				= 19;		//删除已读邮件返回(MsgCommonN32)
 	MsgIDLogin_PhoneCode						= 20;		//验证码(MsgPhoneCode)
 	MsgIDLogin_PhoneCodeResp					= 21;		//验证码返回(MsgCommonN32)
-	MsgIDLogin_SyncPlayerGoldResp				= 22;		//同步玩家金币(MsgCommonN64)
+	MsgIDLogin_GetPlayerGold					= 22;		//获取玩家金币(MsgCommonN32)
 	MsgIDLogin_NotifyGameServerList				= 23;		//通知游戏服务器列表(MsgGameServerList)
 	MsgIDSign_QueryCheckInInfo					= 24;		//查询签到信息(MsgCommonBool)
 	MsgIDSign_QueryCheckInInfoResp				= 25;		//查询签到信息返回(MsgCheckInInfo)

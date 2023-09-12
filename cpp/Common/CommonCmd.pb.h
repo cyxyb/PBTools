@@ -106,7 +106,7 @@ enum EMsgIDLogin : int {
   MsgIDMail_DeleteAllReadMailResp = 19,
   MsgIDLogin_PhoneCode = 20,
   MsgIDLogin_PhoneCodeResp = 21,
-  MsgIDLogin_SyncPlayerGoldResp = 22,
+  MsgIDLogin_GetPlayerGold = 22,
   MsgIDLogin_NotifyGameServerList = 23,
   MsgIDSign_QueryCheckInInfo = 24,
   MsgIDSign_QueryCheckInInfoResp = 25,
