@@ -248,14 +248,27 @@ class MsgHandCards PROTOBUF_FINAL :
   enum : int {
     kCardsFieldNumber = 1,
   };
-  // int32 cards = 1;
-  void clear_cards();
-  ::PROTOBUF_NAMESPACE_ID::int32 cards() const;
-  void set_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // repeated int32 cards = 1;
+  int cards_size() const;
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_cards() const;
-  void _internal_set_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
+  int _internal_cards_size() const;
   public:
+  void clear_cards();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_cards(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_cards() const;
+  void _internal_add_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_cards();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 cards(int index) const;
+  void set_cards(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      cards() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_cards();
 
   // @@protoc_insertion_point(class_scope:TeenPatti_India.MsgHandCards)
  private:
@@ -264,7 +277,8 @@ class MsgHandCards PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int32 cards_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > cards_;
+  mutable std::atomic<int> _cards_cached_byte_size_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_TeenPatti_5fIndia_2eproto;
 };
@@ -1998,24 +2012,51 @@ class MsgGameResult PROTOBUF_FINAL :
 #endif  // __GNUC__
 // MsgHandCards
 
-// int32 cards = 1;
-inline void MsgHandCards::clear_cards() {
-  cards_ = 0;
+// repeated int32 cards = 1;
+inline int MsgHandCards::_internal_cards_size() const {
+  return cards_.size();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgHandCards::_internal_cards() const {
+inline int MsgHandCards::cards_size() const {
+  return _internal_cards_size();
+}
+inline void MsgHandCards::clear_cards() {
+  cards_.Clear();
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgHandCards::_internal_cards(int index) const {
+  return cards_.Get(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgHandCards::cards(int index) const {
+  // @@protoc_insertion_point(field_get:TeenPatti_India.MsgHandCards.cards)
+  return _internal_cards(index);
+}
+inline void MsgHandCards::set_cards(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  cards_.Set(index, value);
+  // @@protoc_insertion_point(field_set:TeenPatti_India.MsgHandCards.cards)
+}
+inline void MsgHandCards::_internal_add_cards(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  cards_.Add(value);
+}
+inline void MsgHandCards::add_cards(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_cards(value);
+  // @@protoc_insertion_point(field_add:TeenPatti_India.MsgHandCards.cards)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+MsgHandCards::_internal_cards() const {
   return cards_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgHandCards::cards() const {
-  // @@protoc_insertion_point(field_get:TeenPatti_India.MsgHandCards.cards)
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+MsgHandCards::cards() const {
+  // @@protoc_insertion_point(field_list:TeenPatti_India.MsgHandCards.cards)
   return _internal_cards();
 }
-inline void MsgHandCards::_internal_set_cards(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  cards_ = value;
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+MsgHandCards::_internal_mutable_cards() {
+  return &cards_;
 }
-inline void MsgHandCards::set_cards(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_cards(value);
-  // @@protoc_insertion_point(field_set:TeenPatti_India.MsgHandCards.cards)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+MsgHandCards::mutable_cards() {
+  // @@protoc_insertion_point(field_mutable_list:TeenPatti_India.MsgHandCards.cards)
+  return _internal_mutable_cards();
 }
 
 // -------------------------------------------------------------------

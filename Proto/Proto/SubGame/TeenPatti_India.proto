@@ -17,7 +17,7 @@ enum EMsgIDSubGame
 
 message MsgHandCards
 {
-	int32			  	cards			= 1;	//手牌
+	repeated int32		cards			= 1;	//手牌
 }
 
 //场景消息

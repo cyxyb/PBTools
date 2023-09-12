@@ -320,7 +320,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
 
 const char descriptor_table_protodef_TeenPatti_5fIndia_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n\025TeenPatti_India.proto\022\017TeenPatti_India"
-  "\"\035\n\014MsgHandCards\022\r\n\005cards\030\001 \001(\005\"\354\002\n\014MsgS"
+  "\"\035\n\014MsgHandCards\022\r\n\005cards\030\001 \003(\005\"\354\002\n\014MsgS"
   "ceneInfo\022\021\n\tmax_score\030\001 \001(\003\022\027\n\017table_max"
   "_score\030\002 \001(\003\022\022\n\ncell_score\030\003 \001(\005\022\021\n\tcur_"
   "times\030\004 \001(\005\022\023\n\013table_state\030\005 \001(\005\022\027\n\017tota"
@@ -413,20 +413,20 @@ class MsgHandCards::_Internal {
 };
 
 MsgHandCards::MsgHandCards(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  cards_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:TeenPatti_India.MsgHandCards)
 }
 MsgHandCards::MsgHandCards(const MsgHandCards& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      cards_(from.cards_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  cards_ = from.cards_;
   // @@protoc_insertion_point(copy_constructor:TeenPatti_India.MsgHandCards)
 }
 
 void MsgHandCards::SharedCtor() {
-  cards_ = 0;
 }
 
 MsgHandCards::~MsgHandCards() {
@@ -460,7 +460,7 @@ void MsgHandCards::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cards_ = 0;
+  cards_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -471,10 +471,13 @@ const char* MsgHandCards::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // int32 cards = 1;
+      // repeated int32 cards = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          cards_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_cards(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8) {
+          _internal_add_cards(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -506,10 +509,13 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 cards = 1;
-  if (this->cards() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_cards(), target);
+  // repeated int32 cards = 1;
+  {
+    int byte_size = _cards_cached_byte_size_.load(std::memory_order_relaxed);
+    if (byte_size > 0) {
+      target = stream->WriteInt32Packed(
+          1, _internal_cards(), byte_size, target);
+    }
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -528,11 +534,19 @@ size_t MsgHandCards::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // int32 cards = 1;
-  if (this->cards() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_cards());
+  // repeated int32 cards = 1;
+  {
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      Int32Size(this->cards_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
+    }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _cards_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -566,9 +580,7 @@ void MsgHandCards::MergeFrom(const MsgHandCards& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.cards() != 0) {
-    _internal_set_cards(from._internal_cards());
-  }
+  cards_.MergeFrom(from.cards_);
 }
 
 void MsgHandCards::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -592,7 +604,7 @@ bool MsgHandCards::IsInitialized() const {
 void MsgHandCards::InternalSwap(MsgHandCards* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  swap(cards_, other->cards_);
+  cards_.InternalSwap(&other->cards_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MsgHandCards::GetMetadata() const {

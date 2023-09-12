@@ -25,7 +25,7 @@ namespace TeenPattiIndia {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiNQcm90by9TdWJHYW1lL1RlZW5QYXR0aV9JbmRpYS5wcm90bxIPVGVlblBh",
-            "dHRpX0luZGlhIh0KDE1zZ0hhbmRDYXJkcxINCgVjYXJkcxgBIAEoBSLsAgoM",
+            "dHRpX0luZGlhIh0KDE1zZ0hhbmRDYXJkcxINCgVjYXJkcxgBIAMoBSLsAgoM",
             "TXNnU2NlbmVJbmZvEhEKCW1heF9zY29yZRgBIAEoAxIXCg90YWJsZV9tYXhf",
             "c2NvcmUYAiABKAMSEgoKY2VsbF9zY29yZRgDIAEoBRIRCgljdXJfdGltZXMY",
             "BCABKAUSEwoLdGFibGVfc3RhdGUYBSABKAUSFwoPdG90YWxfYmV0X3Njb3Jl",
@@ -146,7 +146,7 @@ namespace TeenPattiIndia {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public MsgHandCards(MsgHandCards other) : this() {
-      cards_ = other.cards_;
+      cards_ = other.cards_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -157,16 +157,15 @@ namespace TeenPattiIndia {
 
     /// <summary>Field number for the "cards" field.</summary>
     public const int CardsFieldNumber = 1;
-    private int cards_;
+    private static readonly pb::FieldCodec<int> _repeated_cards_codec
+        = pb::FieldCodec.ForInt32(10);
+    private readonly pbc::RepeatedField<int> cards_ = new pbc::RepeatedField<int>();
     /// <summary>
     ///手牌
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Cards {
+    public pbc::RepeatedField<int> Cards {
       get { return cards_; }
-      set {
-        cards_ = value;
-      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -182,14 +181,14 @@ namespace TeenPattiIndia {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Cards != other.Cards) return false;
+      if(!cards_.Equals(other.cards_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Cards != 0) hash ^= Cards.GetHashCode();
+      hash ^= cards_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -206,10 +205,7 @@ namespace TeenPattiIndia {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Cards != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Cards);
-      }
+      cards_.WriteTo(output, _repeated_cards_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -219,10 +215,7 @@ namespace TeenPattiIndia {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Cards != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Cards);
-      }
+      cards_.WriteTo(ref output, _repeated_cards_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -232,9 +225,7 @@ namespace TeenPattiIndia {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Cards != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Cards);
-      }
+      size += cards_.CalculateSize(_repeated_cards_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -246,9 +237,7 @@ namespace TeenPattiIndia {
       if (other == null) {
         return;
       }
-      if (other.Cards != 0) {
-        Cards = other.Cards;
-      }
+      cards_.Add(other.cards_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -263,8 +252,9 @@ namespace TeenPattiIndia {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
+          case 10:
           case 8: {
-            Cards = input.ReadInt32();
+            cards_.AddEntriesFrom(input, _repeated_cards_codec);
             break;
           }
         }
@@ -281,8 +271,9 @@ namespace TeenPattiIndia {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
+          case 10:
           case 8: {
-            Cards = input.ReadInt32();
+            cards_.AddEntriesFrom(ref input, _repeated_cards_codec);
             break;
           }
         }
