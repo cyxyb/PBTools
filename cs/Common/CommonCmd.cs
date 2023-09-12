@@ -531,7 +531,7 @@ public enum EMsgIDLogin {
   /// </summary>
   [pbr::OriginalName("MsgIDShop_BuyGoods")] MsgIdshopBuyGoods = 96,
   /// <summary>
-  ///购买商品返回(MsgCommonN32)
+  ///购买商品返回(MsgCommonKV)
   /// </summary>
   [pbr::OriginalName("MsgIDShop_BuyGoodsResp")] MsgIdshopBuyGoodsResp = 97,
   /// <summary>
