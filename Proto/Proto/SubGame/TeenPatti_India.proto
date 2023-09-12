@@ -13,6 +13,7 @@ enum EMsgIDSubGame
 	MsgIDSubGame_CompareCardResp		= 6;	//玩家请求比牌(MsgCompareCardResp)
 	MsgIDSubGame_CompareRetResp			= 7;	//玩家比牌结果(MsgCompareCardRetResp)
 	MsgIDSubGame_GameResultResp			= 8;	//玩家下注记录(MsgGameResultResp)
+	MsgIDSubGame_NotifyStateResp		= 9;	//桌子状态
 }
 
 message MsgHandCards
@@ -100,8 +101,8 @@ message MsgCompareCardRetResp
 	int32				lost_id			= 2;	//输家椅子号
 	int32				compare_id		= 3;	//比牌椅子号
 	int32				passive_id		= 4;	//被比椅子号
-	int32				compare_cards	= 5;	//比牌玩家手牌
-	int32				passive_cards	= 6;	//被比玩家手牌
+	repeated int32		compare_cards	= 5;	//比牌玩家手牌
+	repeated int32		passive_cards	= 6;	//被比玩家手牌
 }                                           
 
 

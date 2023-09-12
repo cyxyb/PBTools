@@ -48,17 +48,18 @@ namespace TeenPattiIndia {
             "GAEgASgFEhIKCmNvbXBhcmVfaWQYAiABKAUimAEKFU1zZ0NvbXBhcmVDYXJk",
             "UmV0UmVzcBIYChBjdXJyZW50X2NoYWlyX2lkGAEgASgFEg8KB2xvc3RfaWQY",
             "AiABKAUSEgoKY29tcGFyZV9pZBgDIAEoBRISCgpwYXNzaXZlX2lkGAQgASgF",
-            "EhUKDWNvbXBhcmVfY2FyZHMYBSABKAUSFQoNcGFzc2l2ZV9jYXJkcxgGIAEo",
+            "EhUKDWNvbXBhcmVfY2FyZHMYBSADKAUSFQoNcGFzc2l2ZV9jYXJkcxgGIAMo",
             "BSJ9Cg1Nc2dHYW1lUmVzdWx0EhAKCGdhbWVfdGF4GAEgASgFEhIKCmdhbWVf",
             "c2NvcmUYAiADKAMSMwoMcGxheWVyX2hhbmRzGAMgAygLMh0uVGVlblBhdHRp",
-            "X0luZGlhLk1zZ0hhbmRDYXJkcxIRCgllbmRfc3RhdGUYBCABKAUqmAIKDUVN",
+            "X0luZGlhLk1zZ0hhbmRDYXJkcxIRCgllbmRfc3RhdGUYBCABKAUqugIKDUVN",
             "c2dJRFN1YkdhbWUSFQoRTXNnSURTdWJHYW1lX051bGwQABIeChpNc2dJRFN1",
             "YkdhbWVfR2FtZVN0YXJ0UmVzcBABEhcKE01zZ0lEU3ViR2FtZV9BY3Rpb24Q",
             "AhIbChdNc2dJRFN1YkdhbWVfR2l2ZVVwUmVzcBADEhkKFU1zZ0lEU3ViR2Ft",
             "ZV9Mb29rQ2FyZBAEEhsKF01zZ0lEU3ViR2FtZV9BZGRCZXRSZXNwEAUSIAoc",
             "TXNnSURTdWJHYW1lX0NvbXBhcmVDYXJkUmVzcBAGEh8KG01zZ0lEU3ViR2Ft",
             "ZV9Db21wYXJlUmV0UmVzcBAHEh8KG01zZ0lEU3ViR2FtZV9HYW1lUmVzdWx0",
-            "UmVzcBAIYgZwcm90bzM="));
+            "UmVzcBAIEiAKHE1zZ0lEU3ViR2FtZV9Ob3RpZnlTdGF0ZVJlc3AQCWIGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::TeenPattiIndia.EMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -112,6 +113,10 @@ namespace TeenPattiIndia {
     ///玩家下注记录(MsgGameResultResp)
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_GameResultResp")] MsgIdsubGameGameResultResp = 8,
+    /// <summary>
+    ///桌子状态
+    /// </summary>
+    [pbr::OriginalName("MsgIDSubGame_NotifyStateResp")] MsgIdsubGameNotifyStateResp = 9,
   }
 
   #endregion
@@ -2666,8 +2671,8 @@ namespace TeenPattiIndia {
       lostId_ = other.lostId_;
       compareId_ = other.compareId_;
       passiveId_ = other.passiveId_;
-      compareCards_ = other.compareCards_;
-      passiveCards_ = other.passiveCards_;
+      compareCards_ = other.compareCards_.Clone();
+      passiveCards_ = other.passiveCards_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2734,30 +2739,28 @@ namespace TeenPattiIndia {
 
     /// <summary>Field number for the "compare_cards" field.</summary>
     public const int CompareCardsFieldNumber = 5;
-    private int compareCards_;
+    private static readonly pb::FieldCodec<int> _repeated_compareCards_codec
+        = pb::FieldCodec.ForInt32(42);
+    private readonly pbc::RepeatedField<int> compareCards_ = new pbc::RepeatedField<int>();
     /// <summary>
     ///比牌玩家手牌
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CompareCards {
+    public pbc::RepeatedField<int> CompareCards {
       get { return compareCards_; }
-      set {
-        compareCards_ = value;
-      }
     }
 
     /// <summary>Field number for the "passive_cards" field.</summary>
     public const int PassiveCardsFieldNumber = 6;
-    private int passiveCards_;
+    private static readonly pb::FieldCodec<int> _repeated_passiveCards_codec
+        = pb::FieldCodec.ForInt32(50);
+    private readonly pbc::RepeatedField<int> passiveCards_ = new pbc::RepeatedField<int>();
     /// <summary>
     ///被比玩家手牌
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int PassiveCards {
+    public pbc::RepeatedField<int> PassiveCards {
       get { return passiveCards_; }
-      set {
-        passiveCards_ = value;
-      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2777,8 +2780,8 @@ namespace TeenPattiIndia {
       if (LostId != other.LostId) return false;
       if (CompareId != other.CompareId) return false;
       if (PassiveId != other.PassiveId) return false;
-      if (CompareCards != other.CompareCards) return false;
-      if (PassiveCards != other.PassiveCards) return false;
+      if(!compareCards_.Equals(other.compareCards_)) return false;
+      if(!passiveCards_.Equals(other.passiveCards_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2789,8 +2792,8 @@ namespace TeenPattiIndia {
       if (LostId != 0) hash ^= LostId.GetHashCode();
       if (CompareId != 0) hash ^= CompareId.GetHashCode();
       if (PassiveId != 0) hash ^= PassiveId.GetHashCode();
-      if (CompareCards != 0) hash ^= CompareCards.GetHashCode();
-      if (PassiveCards != 0) hash ^= PassiveCards.GetHashCode();
+      hash ^= compareCards_.GetHashCode();
+      hash ^= passiveCards_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2823,14 +2826,8 @@ namespace TeenPattiIndia {
         output.WriteRawTag(32);
         output.WriteInt32(PassiveId);
       }
-      if (CompareCards != 0) {
-        output.WriteRawTag(40);
-        output.WriteInt32(CompareCards);
-      }
-      if (PassiveCards != 0) {
-        output.WriteRawTag(48);
-        output.WriteInt32(PassiveCards);
-      }
+      compareCards_.WriteTo(output, _repeated_compareCards_codec);
+      passiveCards_.WriteTo(output, _repeated_passiveCards_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2856,14 +2853,8 @@ namespace TeenPattiIndia {
         output.WriteRawTag(32);
         output.WriteInt32(PassiveId);
       }
-      if (CompareCards != 0) {
-        output.WriteRawTag(40);
-        output.WriteInt32(CompareCards);
-      }
-      if (PassiveCards != 0) {
-        output.WriteRawTag(48);
-        output.WriteInt32(PassiveCards);
-      }
+      compareCards_.WriteTo(ref output, _repeated_compareCards_codec);
+      passiveCards_.WriteTo(ref output, _repeated_passiveCards_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2885,12 +2876,8 @@ namespace TeenPattiIndia {
       if (PassiveId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(PassiveId);
       }
-      if (CompareCards != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CompareCards);
-      }
-      if (PassiveCards != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PassiveCards);
-      }
+      size += compareCards_.CalculateSize(_repeated_compareCards_codec);
+      size += passiveCards_.CalculateSize(_repeated_passiveCards_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -2914,12 +2901,8 @@ namespace TeenPattiIndia {
       if (other.PassiveId != 0) {
         PassiveId = other.PassiveId;
       }
-      if (other.CompareCards != 0) {
-        CompareCards = other.CompareCards;
-      }
-      if (other.PassiveCards != 0) {
-        PassiveCards = other.PassiveCards;
-      }
+      compareCards_.Add(other.compareCards_);
+      passiveCards_.Add(other.passiveCards_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -2950,12 +2933,14 @@ namespace TeenPattiIndia {
             PassiveId = input.ReadInt32();
             break;
           }
+          case 42:
           case 40: {
-            CompareCards = input.ReadInt32();
+            compareCards_.AddEntriesFrom(input, _repeated_compareCards_codec);
             break;
           }
+          case 50:
           case 48: {
-            PassiveCards = input.ReadInt32();
+            passiveCards_.AddEntriesFrom(input, _repeated_passiveCards_codec);
             break;
           }
         }
@@ -2988,12 +2973,14 @@ namespace TeenPattiIndia {
             PassiveId = input.ReadInt32();
             break;
           }
+          case 42:
           case 40: {
-            CompareCards = input.ReadInt32();
+            compareCards_.AddEntriesFrom(ref input, _repeated_compareCards_codec);
             break;
           }
+          case 50:
           case 48: {
-            PassiveCards = input.ReadInt32();
+            passiveCards_.AddEntriesFrom(ref input, _repeated_passiveCards_codec);
             break;
           }
         }

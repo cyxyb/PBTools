@@ -110,12 +110,13 @@ enum EMsgIDSubGame : int {
   MsgIDSubGame_CompareCardResp = 6,
   MsgIDSubGame_CompareRetResp = 7,
   MsgIDSubGame_GameResultResp = 8,
+  MsgIDSubGame_NotifyStateResp = 9,
   EMsgIDSubGame_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDSubGame_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDSubGame_IsValid(int value);
 constexpr EMsgIDSubGame EMsgIDSubGame_MIN = MsgIDSubGame_Null;
-constexpr EMsgIDSubGame EMsgIDSubGame_MAX = MsgIDSubGame_GameResultResp;
+constexpr EMsgIDSubGame EMsgIDSubGame_MAX = MsgIDSubGame_NotifyStateResp;
 constexpr int EMsgIDSubGame_ARRAYSIZE = EMsgIDSubGame_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDSubGame_descriptor();
@@ -1732,13 +1733,57 @@ class MsgCompareCardRetResp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
+    kCompareCardsFieldNumber = 5,
+    kPassiveCardsFieldNumber = 6,
     kCurrentChairIdFieldNumber = 1,
     kLostIdFieldNumber = 2,
     kCompareIdFieldNumber = 3,
     kPassiveIdFieldNumber = 4,
-    kCompareCardsFieldNumber = 5,
-    kPassiveCardsFieldNumber = 6,
   };
+  // repeated int32 compare_cards = 5;
+  int compare_cards_size() const;
+  private:
+  int _internal_compare_cards_size() const;
+  public:
+  void clear_compare_cards();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_compare_cards(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_compare_cards() const;
+  void _internal_add_compare_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_compare_cards();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 compare_cards(int index) const;
+  void set_compare_cards(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_compare_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      compare_cards() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_compare_cards();
+
+  // repeated int32 passive_cards = 6;
+  int passive_cards_size() const;
+  private:
+  int _internal_passive_cards_size() const;
+  public:
+  void clear_passive_cards();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_passive_cards(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_passive_cards() const;
+  void _internal_add_passive_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_passive_cards();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 passive_cards(int index) const;
+  void set_passive_cards(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_passive_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      passive_cards() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_passive_cards();
+
   // int32 current_chair_id = 1;
   void clear_current_chair_id();
   ::PROTOBUF_NAMESPACE_ID::int32 current_chair_id() const;
@@ -1775,24 +1820,6 @@ class MsgCompareCardRetResp PROTOBUF_FINAL :
   void _internal_set_passive_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 compare_cards = 5;
-  void clear_compare_cards();
-  ::PROTOBUF_NAMESPACE_ID::int32 compare_cards() const;
-  void set_compare_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_compare_cards() const;
-  void _internal_set_compare_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 passive_cards = 6;
-  void clear_passive_cards();
-  ::PROTOBUF_NAMESPACE_ID::int32 passive_cards() const;
-  void set_passive_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_passive_cards() const;
-  void _internal_set_passive_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
   // @@protoc_insertion_point(class_scope:TeenPatti_India.MsgCompareCardRetResp)
  private:
   class _Internal;
@@ -1800,12 +1827,14 @@ class MsgCompareCardRetResp PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > compare_cards_;
+  mutable std::atomic<int> _compare_cards_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > passive_cards_;
+  mutable std::atomic<int> _passive_cards_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::int32 current_chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 lost_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 compare_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 passive_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 compare_cards_;
-  ::PROTOBUF_NAMESPACE_ID::int32 passive_cards_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_TeenPatti_5fIndia_2eproto;
 };
@@ -3062,44 +3091,98 @@ inline void MsgCompareCardRetResp::set_passive_id(::PROTOBUF_NAMESPACE_ID::int32
   // @@protoc_insertion_point(field_set:TeenPatti_India.MsgCompareCardRetResp.passive_id)
 }
 
-// int32 compare_cards = 5;
+// repeated int32 compare_cards = 5;
+inline int MsgCompareCardRetResp::_internal_compare_cards_size() const {
+  return compare_cards_.size();
+}
+inline int MsgCompareCardRetResp::compare_cards_size() const {
+  return _internal_compare_cards_size();
+}
 inline void MsgCompareCardRetResp::clear_compare_cards() {
-  compare_cards_ = 0;
+  compare_cards_.Clear();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgCompareCardRetResp::_internal_compare_cards() const {
-  return compare_cards_;
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgCompareCardRetResp::_internal_compare_cards(int index) const {
+  return compare_cards_.Get(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgCompareCardRetResp::compare_cards() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgCompareCardRetResp::compare_cards(int index) const {
   // @@protoc_insertion_point(field_get:TeenPatti_India.MsgCompareCardRetResp.compare_cards)
-  return _internal_compare_cards();
+  return _internal_compare_cards(index);
 }
-inline void MsgCompareCardRetResp::_internal_set_compare_cards(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  compare_cards_ = value;
-}
-inline void MsgCompareCardRetResp::set_compare_cards(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_compare_cards(value);
+inline void MsgCompareCardRetResp::set_compare_cards(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  compare_cards_.Set(index, value);
   // @@protoc_insertion_point(field_set:TeenPatti_India.MsgCompareCardRetResp.compare_cards)
 }
-
-// int32 passive_cards = 6;
-inline void MsgCompareCardRetResp::clear_passive_cards() {
-  passive_cards_ = 0;
+inline void MsgCompareCardRetResp::_internal_add_compare_cards(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  compare_cards_.Add(value);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgCompareCardRetResp::_internal_passive_cards() const {
+inline void MsgCompareCardRetResp::add_compare_cards(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_compare_cards(value);
+  // @@protoc_insertion_point(field_add:TeenPatti_India.MsgCompareCardRetResp.compare_cards)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+MsgCompareCardRetResp::_internal_compare_cards() const {
+  return compare_cards_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+MsgCompareCardRetResp::compare_cards() const {
+  // @@protoc_insertion_point(field_list:TeenPatti_India.MsgCompareCardRetResp.compare_cards)
+  return _internal_compare_cards();
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+MsgCompareCardRetResp::_internal_mutable_compare_cards() {
+  return &compare_cards_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+MsgCompareCardRetResp::mutable_compare_cards() {
+  // @@protoc_insertion_point(field_mutable_list:TeenPatti_India.MsgCompareCardRetResp.compare_cards)
+  return _internal_mutable_compare_cards();
+}
+
+// repeated int32 passive_cards = 6;
+inline int MsgCompareCardRetResp::_internal_passive_cards_size() const {
+  return passive_cards_.size();
+}
+inline int MsgCompareCardRetResp::passive_cards_size() const {
+  return _internal_passive_cards_size();
+}
+inline void MsgCompareCardRetResp::clear_passive_cards() {
+  passive_cards_.Clear();
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgCompareCardRetResp::_internal_passive_cards(int index) const {
+  return passive_cards_.Get(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgCompareCardRetResp::passive_cards(int index) const {
+  // @@protoc_insertion_point(field_get:TeenPatti_India.MsgCompareCardRetResp.passive_cards)
+  return _internal_passive_cards(index);
+}
+inline void MsgCompareCardRetResp::set_passive_cards(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  passive_cards_.Set(index, value);
+  // @@protoc_insertion_point(field_set:TeenPatti_India.MsgCompareCardRetResp.passive_cards)
+}
+inline void MsgCompareCardRetResp::_internal_add_passive_cards(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  passive_cards_.Add(value);
+}
+inline void MsgCompareCardRetResp::add_passive_cards(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_passive_cards(value);
+  // @@protoc_insertion_point(field_add:TeenPatti_India.MsgCompareCardRetResp.passive_cards)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+MsgCompareCardRetResp::_internal_passive_cards() const {
   return passive_cards_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgCompareCardRetResp::passive_cards() const {
-  // @@protoc_insertion_point(field_get:TeenPatti_India.MsgCompareCardRetResp.passive_cards)
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+MsgCompareCardRetResp::passive_cards() const {
+  // @@protoc_insertion_point(field_list:TeenPatti_India.MsgCompareCardRetResp.passive_cards)
   return _internal_passive_cards();
 }
-inline void MsgCompareCardRetResp::_internal_set_passive_cards(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  passive_cards_ = value;
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+MsgCompareCardRetResp::_internal_mutable_passive_cards() {
+  return &passive_cards_;
 }
-inline void MsgCompareCardRetResp::set_passive_cards(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_passive_cards(value);
-  // @@protoc_insertion_point(field_set:TeenPatti_India.MsgCompareCardRetResp.passive_cards)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+MsgCompareCardRetResp::mutable_passive_cards() {
+  // @@protoc_insertion_point(field_mutable_list:TeenPatti_India.MsgCompareCardRetResp.passive_cards)
+  return _internal_mutable_passive_cards();
 }
 
 // -------------------------------------------------------------------
