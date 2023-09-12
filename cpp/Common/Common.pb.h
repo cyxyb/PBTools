@@ -1127,7 +1127,7 @@ class MsgBroadcastZmdTip PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kContentFieldNumber = 9,
+    kContentFieldNumber = 11,
     kNickNameFieldNumber = 5,
     kHeadUrlFieldNumber = 6,
     kUserIdFieldNumber = 1,
@@ -1136,8 +1136,10 @@ class MsgBroadcastZmdTip PROTOBUF_FINAL :
     kRoomLevelFieldNumber = 3,
     kLanguageIdFieldNumber = 7,
     kTemplateIdFieldNumber = 8,
+    kVipLevelFieldNumber = 9,
+    kAvatarFrameFieldNumber = 10,
   };
-  // repeated string content = 9;
+  // repeated string content = 11;
   int content_size() const;
   private:
   int _internal_content_size() const;
@@ -1247,6 +1249,24 @@ class MsgBroadcastZmdTip PROTOBUF_FINAL :
   void _internal_set_template_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 vip_level = 9;
+  void clear_vip_level();
+  ::PROTOBUF_NAMESPACE_ID::int32 vip_level() const;
+  void set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_vip_level() const;
+  void _internal_set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 avatar_frame = 10;
+  void clear_avatar_frame();
+  ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame() const;
+  void set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_avatar_frame() const;
+  void _internal_set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgBroadcastZmdTip)
  private:
   class _Internal;
@@ -1263,6 +1283,8 @@ class MsgBroadcastZmdTip PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 room_level_;
   ::PROTOBUF_NAMESPACE_ID::int32 language_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 template_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 vip_level_;
+  ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Common_2eproto;
 };
@@ -2721,7 +2743,47 @@ inline void MsgBroadcastZmdTip::set_template_id(::PROTOBUF_NAMESPACE_ID::int32 v
   // @@protoc_insertion_point(field_set:MsgBroadcastZmdTip.template_id)
 }
 
-// repeated string content = 9;
+// int32 vip_level = 9;
+inline void MsgBroadcastZmdTip::clear_vip_level() {
+  vip_level_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBroadcastZmdTip::_internal_vip_level() const {
+  return vip_level_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBroadcastZmdTip::vip_level() const {
+  // @@protoc_insertion_point(field_get:MsgBroadcastZmdTip.vip_level)
+  return _internal_vip_level();
+}
+inline void MsgBroadcastZmdTip::_internal_set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  vip_level_ = value;
+}
+inline void MsgBroadcastZmdTip::set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_vip_level(value);
+  // @@protoc_insertion_point(field_set:MsgBroadcastZmdTip.vip_level)
+}
+
+// int32 avatar_frame = 10;
+inline void MsgBroadcastZmdTip::clear_avatar_frame() {
+  avatar_frame_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBroadcastZmdTip::_internal_avatar_frame() const {
+  return avatar_frame_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBroadcastZmdTip::avatar_frame() const {
+  // @@protoc_insertion_point(field_get:MsgBroadcastZmdTip.avatar_frame)
+  return _internal_avatar_frame();
+}
+inline void MsgBroadcastZmdTip::_internal_set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  avatar_frame_ = value;
+}
+inline void MsgBroadcastZmdTip::set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_avatar_frame(value);
+  // @@protoc_insertion_point(field_set:MsgBroadcastZmdTip.avatar_frame)
+}
+
+// repeated string content = 11;
 inline int MsgBroadcastZmdTip::_internal_content_size() const {
   return content_.size();
 }

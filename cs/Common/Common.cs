@@ -30,22 +30,23 @@ public static partial class CommonReflection {
           "bGluZV9udW0YBCABKAUSDwoHa2luZF9pZBgFIAEoBRISCgpyb29tX2xldmVs",
           "GAYgASgFEhIKCmxpbWl0X2dvbGQYByABKAUSEgoKbWF4X3BsYXllchgIIAEo",
           "BSJBChFNc2dHYW1lU2VydmVyTGlzdBIsChBnYW1lX3NlcnZlcl9saXN0GAEg",
-          "AygLMhIuTXNnR2FtZVNlcnZlckluZm8ivAEKEk1zZ0Jyb2FkY2FzdFptZFRp",
+          "AygLMhIuTXNnR2FtZVNlcnZlckluZm8i5QEKEk1zZ0Jyb2FkY2FzdFptZFRp",
           "cBIPCgd1c2VyX2lkGAEgASgFEg8KB2dhbWVfaWQYAiABKAUSEgoKcm9vbV9s",
           "ZXZlbBgDIAEoBRIQCgh3aW5fZ29sZBgEIAEoBBIRCgluaWNrX25hbWUYBSAB",
           "KAkSEAoIaGVhZF91cmwYBiABKAkSEwoLbGFuZ3VhZ2VfaWQYByABKAUSEwoL",
-          "dGVtcGxhdGVfaWQYCCABKAUSDwoHY29udGVudBgJIAMoCSI6ChZNc2dOb3Rp",
-          "ZnlDaGF0Tm9ybWFsTXNnEg8KB3VzZXJfaWQYASABKAUSDwoHbWVzc2FnZRgC",
-          "IAEoCSJTChdNc2dOb3RpZnlDaGF0VHJ1bXBldE1zZxInCgtwbGF5ZXJfaW5m",
-          "bxgBIAEoCzISLk1zZ0NoYXRQbGF5ZXJJbmZvEg8KB21lc3NhZ2UYAiABKAki",
-          "mgEKEU1zZ0NoYXRQbGF5ZXJJbmZvEg8KB3VzZXJfaWQYASABKAUSFAoMYmVh",
-          "dXRpZnVsX2lkGAIgASgFEhAKCG5pY2tuYW1lGAMgASgJEg4KBmF2YXRhchgE",
-          "IAEoCRIRCgl2aXBfbGV2ZWwYBSABKAUSFAoMYXZhdGFyX2ZyYW1lGAYgASgF",
-          "EhMKC2NsaWVudF90eXBlGAcgASgFImgKEU1zZ0NoYXRTZXJ2ZXJJbmZvEgoK",
-          "AmlwGAEgASgFEgwKBHBvcnQYAiABKAUSEQoJc2VydmVyX2lkGAMgASgFEhIK",
-          "Cm9ubGluZV9udW0YBCABKAUSEgoKbWF4X3BsYXllchgFIAEoBSJBChFNc2dD",
-          "aGF0U2VydmVyTGlzdBIsChBjaGF0X3NlcnZlcl9saXN0GAEgAygLMhIuTXNn",
-          "Q2hhdFNlcnZlckluZm9iBnByb3RvMw=="));
+          "dGVtcGxhdGVfaWQYCCABKAUSEQoJdmlwX2xldmVsGAkgASgFEhQKDGF2YXRh",
+          "cl9mcmFtZRgKIAEoBRIPCgdjb250ZW50GAsgAygJIjoKFk1zZ05vdGlmeUNo",
+          "YXROb3JtYWxNc2cSDwoHdXNlcl9pZBgBIAEoBRIPCgdtZXNzYWdlGAIgASgJ",
+          "IlMKF01zZ05vdGlmeUNoYXRUcnVtcGV0TXNnEicKC3BsYXllcl9pbmZvGAEg",
+          "ASgLMhIuTXNnQ2hhdFBsYXllckluZm8SDwoHbWVzc2FnZRgCIAEoCSKaAQoR",
+          "TXNnQ2hhdFBsYXllckluZm8SDwoHdXNlcl9pZBgBIAEoBRIUCgxiZWF1dGlm",
+          "dWxfaWQYAiABKAUSEAoIbmlja25hbWUYAyABKAkSDgoGYXZhdGFyGAQgASgJ",
+          "EhEKCXZpcF9sZXZlbBgFIAEoBRIUCgxhdmF0YXJfZnJhbWUYBiABKAUSEwoL",
+          "Y2xpZW50X3R5cGUYByABKAUiaAoRTXNnQ2hhdFNlcnZlckluZm8SCgoCaXAY",
+          "ASABKAUSDAoEcG9ydBgCIAEoBRIRCglzZXJ2ZXJfaWQYAyABKAUSEgoKb25s",
+          "aW5lX251bRgEIAEoBRISCgptYXhfcGxheWVyGAUgASgFIkEKEU1zZ0NoYXRT",
+          "ZXJ2ZXJMaXN0EiwKEGNoYXRfc2VydmVyX2xpc3QYASADKAsyEi5Nc2dDaGF0",
+          "U2VydmVySW5mb2IGcHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -55,7 +56,7 @@ public static partial class CommonReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgCommonStr), global::MsgCommonStr.Parser, new[]{ "Value" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgGameServerInfo), global::MsgGameServerInfo.Parser, new[]{ "Ip", "Port", "ServerId", "OnlineNum", "KindId", "RoomLevel", "LimitGold", "MaxPlayer" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgGameServerList), global::MsgGameServerList.Parser, new[]{ "GameServerList" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBroadcastZmdTip), global::MsgBroadcastZmdTip.Parser, new[]{ "UserId", "GameId", "RoomLevel", "WinGold", "NickName", "HeadUrl", "LanguageId", "TemplateId", "Content" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBroadcastZmdTip), global::MsgBroadcastZmdTip.Parser, new[]{ "UserId", "GameId", "RoomLevel", "WinGold", "NickName", "HeadUrl", "LanguageId", "TemplateId", "VipLevel", "AvatarFrame", "Content" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgNotifyChatNormalMsg), global::MsgNotifyChatNormalMsg.Parser, new[]{ "UserId", "Message" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgNotifyChatTrumpetMsg), global::MsgNotifyChatTrumpetMsg.Parser, new[]{ "PlayerInfo", "Message" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgChatPlayerInfo), global::MsgChatPlayerInfo.Parser, new[]{ "UserId", "BeautifulId", "Nickname", "Avatar", "VipLevel", "AvatarFrame", "ClientType" }, null, null, null, null),
@@ -1413,6 +1414,8 @@ public sealed partial class MsgBroadcastZmdTip : pb::IMessage<MsgBroadcastZmdTip
     headUrl_ = other.headUrl_;
     languageId_ = other.languageId_;
     templateId_ = other.templateId_;
+    vipLevel_ = other.vipLevel_;
+    avatarFrame_ = other.avatarFrame_;
     content_ = other.content_.Clone();
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
@@ -1534,10 +1537,38 @@ public sealed partial class MsgBroadcastZmdTip : pb::IMessage<MsgBroadcastZmdTip
     }
   }
 
+  /// <summary>Field number for the "vip_level" field.</summary>
+  public const int VipLevelFieldNumber = 9;
+  private int vipLevel_;
+  /// <summary>
+  ///VIP等级
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int VipLevel {
+    get { return vipLevel_; }
+    set {
+      vipLevel_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "avatar_frame" field.</summary>
+  public const int AvatarFrameFieldNumber = 10;
+  private int avatarFrame_;
+  /// <summary>
+  ///头像框
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int AvatarFrame {
+    get { return avatarFrame_; }
+    set {
+      avatarFrame_ = value;
+    }
+  }
+
   /// <summary>Field number for the "content" field.</summary>
-  public const int ContentFieldNumber = 9;
+  public const int ContentFieldNumber = 11;
   private static readonly pb::FieldCodec<string> _repeated_content_codec
-      = pb::FieldCodec.ForString(74);
+      = pb::FieldCodec.ForString(90);
   private readonly pbc::RepeatedField<string> content_ = new pbc::RepeatedField<string>();
   /// <summary>
   ///拼接内容数组
@@ -1568,6 +1599,8 @@ public sealed partial class MsgBroadcastZmdTip : pb::IMessage<MsgBroadcastZmdTip
     if (HeadUrl != other.HeadUrl) return false;
     if (LanguageId != other.LanguageId) return false;
     if (TemplateId != other.TemplateId) return false;
+    if (VipLevel != other.VipLevel) return false;
+    if (AvatarFrame != other.AvatarFrame) return false;
     if(!content_.Equals(other.content_)) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
@@ -1583,6 +1616,8 @@ public sealed partial class MsgBroadcastZmdTip : pb::IMessage<MsgBroadcastZmdTip
     if (HeadUrl.Length != 0) hash ^= HeadUrl.GetHashCode();
     if (LanguageId != 0) hash ^= LanguageId.GetHashCode();
     if (TemplateId != 0) hash ^= TemplateId.GetHashCode();
+    if (VipLevel != 0) hash ^= VipLevel.GetHashCode();
+    if (AvatarFrame != 0) hash ^= AvatarFrame.GetHashCode();
     hash ^= content_.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
@@ -1632,6 +1667,14 @@ public sealed partial class MsgBroadcastZmdTip : pb::IMessage<MsgBroadcastZmdTip
       output.WriteRawTag(64);
       output.WriteInt32(TemplateId);
     }
+    if (VipLevel != 0) {
+      output.WriteRawTag(72);
+      output.WriteInt32(VipLevel);
+    }
+    if (AvatarFrame != 0) {
+      output.WriteRawTag(80);
+      output.WriteInt32(AvatarFrame);
+    }
     content_.WriteTo(output, _repeated_content_codec);
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -1674,6 +1717,14 @@ public sealed partial class MsgBroadcastZmdTip : pb::IMessage<MsgBroadcastZmdTip
       output.WriteRawTag(64);
       output.WriteInt32(TemplateId);
     }
+    if (VipLevel != 0) {
+      output.WriteRawTag(72);
+      output.WriteInt32(VipLevel);
+    }
+    if (AvatarFrame != 0) {
+      output.WriteRawTag(80);
+      output.WriteInt32(AvatarFrame);
+    }
     content_.WriteTo(ref output, _repeated_content_codec);
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
@@ -1707,6 +1758,12 @@ public sealed partial class MsgBroadcastZmdTip : pb::IMessage<MsgBroadcastZmdTip
     }
     if (TemplateId != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(TemplateId);
+    }
+    if (VipLevel != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(VipLevel);
+    }
+    if (AvatarFrame != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(AvatarFrame);
     }
     size += content_.CalculateSize(_repeated_content_codec);
     if (_unknownFields != null) {
@@ -1743,6 +1800,12 @@ public sealed partial class MsgBroadcastZmdTip : pb::IMessage<MsgBroadcastZmdTip
     }
     if (other.TemplateId != 0) {
       TemplateId = other.TemplateId;
+    }
+    if (other.VipLevel != 0) {
+      VipLevel = other.VipLevel;
+    }
+    if (other.AvatarFrame != 0) {
+      AvatarFrame = other.AvatarFrame;
     }
     content_.Add(other.content_);
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -1791,7 +1854,15 @@ public sealed partial class MsgBroadcastZmdTip : pb::IMessage<MsgBroadcastZmdTip
           TemplateId = input.ReadInt32();
           break;
         }
-        case 74: {
+        case 72: {
+          VipLevel = input.ReadInt32();
+          break;
+        }
+        case 80: {
+          AvatarFrame = input.ReadInt32();
+          break;
+        }
+        case 90: {
           content_.AddEntriesFrom(input, _repeated_content_codec);
           break;
         }
@@ -1841,7 +1912,15 @@ public sealed partial class MsgBroadcastZmdTip : pb::IMessage<MsgBroadcastZmdTip
           TemplateId = input.ReadInt32();
           break;
         }
-        case 74: {
+        case 72: {
+          VipLevel = input.ReadInt32();
+          break;
+        }
+        case 80: {
+          AvatarFrame = input.ReadInt32();
+          break;
+        }
+        case 90: {
           content_.AddEntriesFrom(ref input, _repeated_content_codec);
           break;
         }

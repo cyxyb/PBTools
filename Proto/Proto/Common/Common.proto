@@ -50,7 +50,9 @@ message MsgBroadcastZmdTip
 	string	head_url			= 6;		//头像url
 	int32	language_id			= 7;		//多语言id
 	int32	template_id			= 8;		//模板id
-	repeated string	content		= 9;		//拼接内容数组
+	int32	vip_level			= 9;		//VIP等级
+	int32	avatar_frame		= 10;		//头像框
+	repeated string	content		= 11;		//拼接内容数组
 }
 
 //通知普通聊天消息

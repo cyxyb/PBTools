@@ -285,6 +285,8 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Common_2eproto::offsets[] PROT
   PROTOBUF_FIELD_OFFSET(::MsgBroadcastZmdTip, head_url_),
   PROTOBUF_FIELD_OFFSET(::MsgBroadcastZmdTip, language_id_),
   PROTOBUF_FIELD_OFFSET(::MsgBroadcastZmdTip, template_id_),
+  PROTOBUF_FIELD_OFFSET(::MsgBroadcastZmdTip, vip_level_),
+  PROTOBUF_FIELD_OFFSET(::MsgBroadcastZmdTip, avatar_frame_),
   PROTOBUF_FIELD_OFFSET(::MsgBroadcastZmdTip, content_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgNotifyChatNormalMsg, _internal_metadata_),
@@ -337,11 +339,11 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 24, -1, sizeof(::MsgGameServerInfo)},
   { 37, -1, sizeof(::MsgGameServerList)},
   { 43, -1, sizeof(::MsgBroadcastZmdTip)},
-  { 57, -1, sizeof(::MsgNotifyChatNormalMsg)},
-  { 64, -1, sizeof(::MsgNotifyChatTrumpetMsg)},
-  { 71, -1, sizeof(::MsgChatPlayerInfo)},
-  { 83, -1, sizeof(::MsgChatServerInfo)},
-  { 93, -1, sizeof(::MsgChatServerList)},
+  { 59, -1, sizeof(::MsgNotifyChatNormalMsg)},
+  { 66, -1, sizeof(::MsgNotifyChatTrumpetMsg)},
+  { 73, -1, sizeof(::MsgChatPlayerInfo)},
+  { 85, -1, sizeof(::MsgChatServerInfo)},
+  { 95, -1, sizeof(::MsgChatServerList)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -369,24 +371,25 @@ const char descriptor_table_protodef_Common_2eproto[] PROTOBUF_SECTION_VARIABLE(
   "\001(\005\022\022\n\nroom_level\030\006 \001(\005\022\022\n\nlimit_gold\030\007 "
   "\001(\005\022\022\n\nmax_player\030\010 \001(\005\"A\n\021MsgGameServer"
   "List\022,\n\020game_server_list\030\001 \003(\0132\022.MsgGame"
-  "ServerInfo\"\274\001\n\022MsgBroadcastZmdTip\022\017\n\007use"
+  "ServerInfo\"\345\001\n\022MsgBroadcastZmdTip\022\017\n\007use"
   "r_id\030\001 \001(\005\022\017\n\007game_id\030\002 \001(\005\022\022\n\nroom_leve"
   "l\030\003 \001(\005\022\020\n\010win_gold\030\004 \001(\004\022\021\n\tnick_name\030\005"
   " \001(\t\022\020\n\010head_url\030\006 \001(\t\022\023\n\013language_id\030\007 "
-  "\001(\005\022\023\n\013template_id\030\010 \001(\005\022\017\n\007content\030\t \003("
-  "\t\":\n\026MsgNotifyChatNormalMsg\022\017\n\007user_id\030\001"
-  " \001(\005\022\017\n\007message\030\002 \001(\t\"S\n\027MsgNotifyChatTr"
-  "umpetMsg\022\'\n\013player_info\030\001 \001(\0132\022.MsgChatP"
-  "layerInfo\022\017\n\007message\030\002 \001(\t\"\232\001\n\021MsgChatPl"
-  "ayerInfo\022\017\n\007user_id\030\001 \001(\005\022\024\n\014beautiful_i"
-  "d\030\002 \001(\005\022\020\n\010nickname\030\003 \001(\t\022\016\n\006avatar\030\004 \001("
-  "\t\022\021\n\tvip_level\030\005 \001(\005\022\024\n\014avatar_frame\030\006 \001"
-  "(\005\022\023\n\013client_type\030\007 \001(\005\"h\n\021MsgChatServer"
-  "Info\022\n\n\002ip\030\001 \001(\005\022\014\n\004port\030\002 \001(\005\022\021\n\tserver"
-  "_id\030\003 \001(\005\022\022\n\nonline_num\030\004 \001(\005\022\022\n\nmax_pla"
-  "yer\030\005 \001(\005\"A\n\021MsgChatServerList\022,\n\020chat_s"
-  "erver_list\030\001 \003(\0132\022.MsgChatServerInfob\006pr"
-  "oto3"
+  "\001(\005\022\023\n\013template_id\030\010 \001(\005\022\021\n\tvip_level\030\t "
+  "\001(\005\022\024\n\014avatar_frame\030\n \001(\005\022\017\n\007content\030\013 \003"
+  "(\t\":\n\026MsgNotifyChatNormalMsg\022\017\n\007user_id\030"
+  "\001 \001(\005\022\017\n\007message\030\002 \001(\t\"S\n\027MsgNotifyChatT"
+  "rumpetMsg\022\'\n\013player_info\030\001 \001(\0132\022.MsgChat"
+  "PlayerInfo\022\017\n\007message\030\002 \001(\t\"\232\001\n\021MsgChatP"
+  "layerInfo\022\017\n\007user_id\030\001 \001(\005\022\024\n\014beautiful_"
+  "id\030\002 \001(\005\022\020\n\010nickname\030\003 \001(\t\022\016\n\006avatar\030\004 \001"
+  "(\t\022\021\n\tvip_level\030\005 \001(\005\022\024\n\014avatar_frame\030\006 "
+  "\001(\005\022\023\n\013client_type\030\007 \001(\005\"h\n\021MsgChatServe"
+  "rInfo\022\n\n\002ip\030\001 \001(\005\022\014\n\004port\030\002 \001(\005\022\021\n\tserve"
+  "r_id\030\003 \001(\005\022\022\n\nonline_num\030\004 \001(\005\022\022\n\nmax_pl"
+  "ayer\030\005 \001(\005\"A\n\021MsgChatServerList\022,\n\020chat_"
+  "server_list\030\001 \003(\0132\022.MsgChatServerInfob\006p"
+  "roto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Common_2eproto_deps[1] = {
 };
@@ -406,7 +409,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Com
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Common_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Common_2eproto = {
-  false, false, descriptor_table_protodef_Common_2eproto, "Common.proto", 1044,
+  false, false, descriptor_table_protodef_Common_2eproto, "Common.proto", 1085,
   &descriptor_table_Common_2eproto_once, descriptor_table_Common_2eproto_sccs, descriptor_table_Common_2eproto_deps, 12, 0,
   schemas, file_default_instances, TableStruct_Common_2eproto::offsets,
   file_level_metadata_Common_2eproto, 12, file_level_enum_descriptors_Common_2eproto, file_level_service_descriptors_Common_2eproto,
@@ -1796,8 +1799,8 @@ MsgBroadcastZmdTip::MsgBroadcastZmdTip(const MsgBroadcastZmdTip& from)
       GetArena());
   }
   ::memcpy(&user_id_, &from.user_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&template_id_) -
-    reinterpret_cast<char*>(&user_id_)) + sizeof(template_id_));
+    static_cast<size_t>(reinterpret_cast<char*>(&avatar_frame_) -
+    reinterpret_cast<char*>(&user_id_)) + sizeof(avatar_frame_));
   // @@protoc_insertion_point(copy_constructor:MsgBroadcastZmdTip)
 }
 
@@ -1807,8 +1810,8 @@ void MsgBroadcastZmdTip::SharedCtor() {
   head_url_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&user_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&template_id_) -
-      reinterpret_cast<char*>(&user_id_)) + sizeof(template_id_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&avatar_frame_) -
+      reinterpret_cast<char*>(&user_id_)) + sizeof(avatar_frame_));
 }
 
 MsgBroadcastZmdTip::~MsgBroadcastZmdTip() {
@@ -1848,8 +1851,8 @@ void MsgBroadcastZmdTip::Clear() {
   nick_name_.ClearToEmpty();
   head_url_.ClearToEmpty();
   ::memset(&user_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&template_id_) -
-      reinterpret_cast<char*>(&user_id_)) + sizeof(template_id_));
+      reinterpret_cast<char*>(&avatar_frame_) -
+      reinterpret_cast<char*>(&user_id_)) + sizeof(avatar_frame_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -1920,9 +1923,23 @@ const char* MsgBroadcastZmdTip::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated string content = 9;
+      // int32 vip_level = 9;
       case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+          vip_level_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 avatar_frame = 10;
+      case 10:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
+          avatar_frame_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated string content = 11;
+      case 11:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 90)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -1931,7 +1948,7 @@ const char* MsgBroadcastZmdTip::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
             CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgBroadcastZmdTip.content"));
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<74>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<90>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -2018,14 +2035,26 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(8, this->_internal_template_id(), target);
   }
 
-  // repeated string content = 9;
+  // int32 vip_level = 9;
+  if (this->vip_level() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(9, this->_internal_vip_level(), target);
+  }
+
+  // int32 avatar_frame = 10;
+  if (this->avatar_frame() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(10, this->_internal_avatar_frame(), target);
+  }
+
+  // repeated string content = 11;
   for (int i = 0, n = this->_internal_content_size(); i < n; i++) {
     const auto& s = this->_internal_content(i);
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       s.data(), static_cast<int>(s.length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "MsgBroadcastZmdTip.content");
-    target = stream->WriteString(9, s, target);
+    target = stream->WriteString(11, s, target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -2044,7 +2073,7 @@ size_t MsgBroadcastZmdTip::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated string content = 9;
+  // repeated string content = 11;
   total_size += 1 *
       ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(content_.size());
   for (int i = 0, n = content_.size(); i < n; i++) {
@@ -2108,6 +2137,20 @@ size_t MsgBroadcastZmdTip::ByteSizeLong() const {
         this->_internal_template_id());
   }
 
+  // int32 vip_level = 9;
+  if (this->vip_level() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_vip_level());
+  }
+
+  // int32 avatar_frame = 10;
+  if (this->avatar_frame() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_avatar_frame());
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
         _internal_metadata_, total_size, &_cached_size_);
@@ -2164,6 +2207,12 @@ void MsgBroadcastZmdTip::MergeFrom(const MsgBroadcastZmdTip& from) {
   if (from.template_id() != 0) {
     _internal_set_template_id(from._internal_template_id());
   }
+  if (from.vip_level() != 0) {
+    _internal_set_vip_level(from._internal_vip_level());
+  }
+  if (from.avatar_frame() != 0) {
+    _internal_set_avatar_frame(from._internal_avatar_frame());
+  }
 }
 
 void MsgBroadcastZmdTip::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -2191,8 +2240,8 @@ void MsgBroadcastZmdTip::InternalSwap(MsgBroadcastZmdTip* other) {
   nick_name_.Swap(&other->nick_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   head_url_.Swap(&other->head_url_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgBroadcastZmdTip, template_id_)
-      + sizeof(MsgBroadcastZmdTip::template_id_)
+      PROTOBUF_FIELD_OFFSET(MsgBroadcastZmdTip, avatar_frame_)
+      + sizeof(MsgBroadcastZmdTip::avatar_frame_)
       - PROTOBUF_FIELD_OFFSET(MsgBroadcastZmdTip, user_id_)>(
           reinterpret_cast<char*>(&user_id_),
           reinterpret_cast<char*>(&other->user_id_));
