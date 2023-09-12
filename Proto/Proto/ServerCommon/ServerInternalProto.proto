@@ -260,7 +260,8 @@ message MsgDBPlayerReconnectData
 	int32		left_free_game_cnt	= 5;	//免费游戏剩余次数
 	int32		small_game_type		= 6;	//小游戏类型
 	int32		small_game_fail_cnt	= 7;	//小游戏失败次数
-	repeated int32 param			= 8;	//额外数据
+	int32		game_level			= 8;	//房间等级
+	repeated int32 param			= 9;	//额外数据
 }
 
 //游戏登录

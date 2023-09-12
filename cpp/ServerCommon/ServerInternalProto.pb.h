@@ -5132,7 +5132,7 @@ class MsgDBPlayerReconnectData PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kParamFieldNumber = 8,
+    kParamFieldNumber = 9,
     kUserIdFieldNumber = 1,
     kServerIdFieldNumber = 2,
     kMultipleFieldNumber = 3,
@@ -5140,8 +5140,9 @@ class MsgDBPlayerReconnectData PROTOBUF_FINAL :
     kLeftFreeGameCntFieldNumber = 5,
     kSmallGameTypeFieldNumber = 6,
     kSmallGameFailCntFieldNumber = 7,
+    kGameLevelFieldNumber = 8,
   };
-  // repeated int32 param = 8;
+  // repeated int32 param = 9;
   int param_size() const;
   private:
   int _internal_param_size() const;
@@ -5226,6 +5227,15 @@ class MsgDBPlayerReconnectData PROTOBUF_FINAL :
   void _internal_set_small_game_fail_cnt(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 game_level = 8;
+  void clear_game_level();
+  ::PROTOBUF_NAMESPACE_ID::int32 game_level() const;
+  void set_game_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_game_level() const;
+  void _internal_set_game_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgDBPlayerReconnectData)
  private:
   class _Internal;
@@ -5242,6 +5252,7 @@ class MsgDBPlayerReconnectData PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 left_free_game_cnt_;
   ::PROTOBUF_NAMESPACE_ID::int32 small_game_type_;
   ::PROTOBUF_NAMESPACE_ID::int32 small_game_fail_cnt_;
+  ::PROTOBUF_NAMESPACE_ID::int32 game_level_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -11964,7 +11975,27 @@ inline void MsgDBPlayerReconnectData::set_small_game_fail_cnt(::PROTOBUF_NAMESPA
   // @@protoc_insertion_point(field_set:MsgDBPlayerReconnectData.small_game_fail_cnt)
 }
 
-// repeated int32 param = 8;
+// int32 game_level = 8;
+inline void MsgDBPlayerReconnectData::clear_game_level() {
+  game_level_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBPlayerReconnectData::_internal_game_level() const {
+  return game_level_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBPlayerReconnectData::game_level() const {
+  // @@protoc_insertion_point(field_get:MsgDBPlayerReconnectData.game_level)
+  return _internal_game_level();
+}
+inline void MsgDBPlayerReconnectData::_internal_set_game_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  game_level_ = value;
+}
+inline void MsgDBPlayerReconnectData::set_game_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_game_level(value);
+  // @@protoc_insertion_point(field_set:MsgDBPlayerReconnectData.game_level)
+}
+
+// repeated int32 param = 9;
 inline int MsgDBPlayerReconnectData::_internal_param_size() const {
   return param_.size();
 }
