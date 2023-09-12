@@ -163,6 +163,8 @@ enum EMsgIDDB
 	DB2LOGIN_BankQueryNicknameResp	= 1067; //查询昵称返回 
 	LOGIN2DB_BuyGoods				= 1068;	//购买商品
 	DB2LOGIN_BuyGoodsResp			= 1069;	//购买商品返回
+	LOGIN2DB_QueryTrumpetPrice		= 1070;	//查询小喇叭价格
+	DB2LOGIN_QueryTrumpetPriceResp	= 1071;	//查询小喇叭价格返回
 	//2001-3000 GameServer2DB
 	GAME2DB_Login					= 2001;	//玩家登录游戏
 	DB2GAME_LoginResp				= 2002;	//玩家登录游戏返回

@@ -109,6 +109,8 @@ enum EMsgIDLogin
 	MsgIDLogin_BankQueryUserInfoResp			= 95;		//请求用户昵称返回(MsgBankQueryNicname)
 	MsgIDShop_BuyGoods							= 96;		//购买商品(MsgCommonKV)
 	MsgIDShop_BuyGoodsResp						= 97;		//购买商品返回(MsgCommonN32)
+	MsgIDShop_QueryTrumpetPrice					= 98;		//查询小喇叭价格(MsgCommonBool)
+	MsgIDShop_QueryTrumpetPriceResp				= 99;		//查询小喇叭价格返回(MsgCommonN32)
 }
 
 enum EMsgIDGame
