@@ -223,7 +223,7 @@ public enum EMsgIDLogin {
   /// </summary>
   [pbr::OriginalName("MsgIDMail_DeleteAllReadMailResp")] MsgIdmailDeleteAllReadMailResp = 19,
   /// <summary>
-  ///验证码(MsgPhoneCode)
+  ///验证码(MsgCommonStr)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_PhoneCode")] MsgIdloginPhoneCode = 20,
   /// <summary>
