@@ -6,39 +6,38 @@ enum EMsgIDXCS
 		SUB_CS_JACKPOT 		= 1;		//请求彩金分数
 		SUB_SC_SEND_ACCPOOL = 2;		//奖池返回(MsgCommonN64)
 		SUB_SC_RESULTS_INFO = 3; 		//玛丽结果返回
-}
+};
 
 message SC_SceneInfo
 {
-	int32			nCurChip;						// 下注列表的一个
-	int32			nFreeCount;						// 剩余免费次数
-	repeated int32		nChipList;		// 下注列表
-	repeated int32		nLineRate;	// 财神倍数 免费赔付
-	int64	lGodScore;						// 财神阶段总分
-	int32		nbLimitChip;					// 不知道干嘛 
-	int32		niLimitChip;					// 不知道干嘛
-	int32		nReturn;						// 重转(0重转 1不)
-	int64	lJackpot;						// 奖池当前分数
-};
+	int32				cur_chip		= 1;	// 下注列表的一个
+	int32				free_count		= 2;	// 剩余免费次数
+	repeated int32		chip_list		= 3;	// 下注列表
+	repeated int32		line_rate		= 4;	// 财神倍数 免费赔付
+	int64				god_score		= 5;	// 财神阶段总分
+	int32				limit_chip		= 6;	// 不知道干嘛 
+	int32				ilimit_chip		= 7;	// 不知道干嘛
+	int32				re_turn			= 8;	// 重转(0重转 1不)
+	int64				jackpot			= 10;	// 奖池当前分数
+};                                     
 
-// 游戏结果返回
+message LineType
+{
+	repeated int32 line_type = 1;
+}                        
+// 游戏结果返回                        
 message CMD_3D_SC_Result
 {
-	BYTE	cbIcon[MAX_ALLICON];			// 桌面结果
-	BYTE	cbLineType[MAX_LINES][MAX_COL];	// 线类型(不知道干嘛)
-	BYTE	cbCaiShenCount;					// 财神个数
-	BYTE	cbFreeCount;					// 免费次数
-	int		nGameType;						// 0:普通 1:财源滚滚 2:金玉满堂
-	INT64	lWinScore;						// 总得分
-	int		nTemp;							// 不知道干嘛
-	int		nbLimitChip;					// 不知道干嘛 
-	int		niLimitChip;					// 不知道干嘛
-	int		nSuperRate;						// 是否超级倍率
-	int		nReturn;						// 是否重转
-	INT64	lJackpot;						// 奖池分数
-};
-
-message CMD_3D_SC_Jackpot
-{
-	INT64	lJackpotScore;					//玩家分数
+	repeated int32		icon			= 1;	// 桌面结果
+	repeated LineType	line_type		= 2;	// 线类型(不知道干嘛)
+	int32				cai_shen_count	= 3;	// 财神个数
+	int32				free_count		= 4;	// 免费次数
+	int32				game_type		= 5;	// 0:普通 1:财源滚滚 2:金玉满堂
+	int64				win_score		= 6;	// 总得分
+	int32				temp			= 7;	// 不知道干嘛
+	int32				limit_chip		= 8;	// 不知道干嘛 
+	int32				limit_chip2		= 10;	// 不知道干嘛
+	int32				super_rate		= 11;	// 是否超级倍率
+	int32				re_turn			= 12;	// 是否重转
+	int64				jackpot			= 13;	// 奖池分数
 };
