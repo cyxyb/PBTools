@@ -17,7 +17,6 @@ message MsgPlayerLogin
 	string		phone			= 12;	//手机号
 	int32		code			= 13;	//验证码
 	string		invite_code		= 14;	//邀请码
-	string		bank_password	= 15;	//玩家银行密码
 }
 
 //玩家登录返回
@@ -37,7 +36,7 @@ message MsgPlayerLoginResp
 	int32		vip_level		= 12;	//VIP等级
 	int32		avatar_frame	= 13;	//头像框
 	string		invite_code		= 14;	//邀请码
-	string      bank_password	= 15;	//银行密码
+	bool      	bank_password	= 15;	//银行密码
 	string      signature		= 16;	//个性签名
 	int32		agent_level		= 17;	//代理等级
 }
