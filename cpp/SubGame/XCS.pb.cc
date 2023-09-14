@@ -15,6 +15,7 @@
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
 extern PROTOBUF_INTERNAL_EXPORT_XCS_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_LineType_XCS_2eproto;
+namespace XCS {
 class SC_SceneInfoDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SC_SceneInfo> _instance;
@@ -27,12 +28,13 @@ class CMD_3D_SC_ResultDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CMD_3D_SC_Result> _instance;
 } _CMD_3D_SC_Result_default_instance_;
+}  // namespace XCS
 static void InitDefaultsscc_info_CMD_3D_SC_Result_XCS_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_CMD_3D_SC_Result_default_instance_;
-    new (ptr) ::CMD_3D_SC_Result();
+    void* ptr = &::XCS::_CMD_3D_SC_Result_default_instance_;
+    new (ptr) ::XCS::CMD_3D_SC_Result();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -45,8 +47,8 @@ static void InitDefaultsscc_info_LineType_XCS_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_LineType_default_instance_;
-    new (ptr) ::LineType();
+    void* ptr = &::XCS::_LineType_default_instance_;
+    new (ptr) ::XCS::LineType();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -58,8 +60,8 @@ static void InitDefaultsscc_info_SC_SceneInfo_XCS_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_SC_SceneInfo_default_instance_;
-    new (ptr) ::SC_SceneInfo();
+    void* ptr = &::XCS::_SC_SceneInfo_default_instance_;
+    new (ptr) ::XCS::SC_SceneInfo();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
@@ -73,71 +75,72 @@ static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_s
 
 const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_XCS_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::SC_SceneInfo, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::XCS::SC_SceneInfo, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::SC_SceneInfo, cur_chip_),
-  PROTOBUF_FIELD_OFFSET(::SC_SceneInfo, free_count_),
-  PROTOBUF_FIELD_OFFSET(::SC_SceneInfo, chip_list_),
-  PROTOBUF_FIELD_OFFSET(::SC_SceneInfo, line_rate_),
-  PROTOBUF_FIELD_OFFSET(::SC_SceneInfo, god_score_),
-  PROTOBUF_FIELD_OFFSET(::SC_SceneInfo, limit_chip_),
-  PROTOBUF_FIELD_OFFSET(::SC_SceneInfo, ilimit_chip_),
-  PROTOBUF_FIELD_OFFSET(::SC_SceneInfo, re_turn_),
-  PROTOBUF_FIELD_OFFSET(::SC_SceneInfo, jackpot_),
+  PROTOBUF_FIELD_OFFSET(::XCS::SC_SceneInfo, cur_chip_),
+  PROTOBUF_FIELD_OFFSET(::XCS::SC_SceneInfo, free_count_),
+  PROTOBUF_FIELD_OFFSET(::XCS::SC_SceneInfo, chip_list_),
+  PROTOBUF_FIELD_OFFSET(::XCS::SC_SceneInfo, line_rate_),
+  PROTOBUF_FIELD_OFFSET(::XCS::SC_SceneInfo, god_score_),
+  PROTOBUF_FIELD_OFFSET(::XCS::SC_SceneInfo, limit_chip_),
+  PROTOBUF_FIELD_OFFSET(::XCS::SC_SceneInfo, ilimit_chip_),
+  PROTOBUF_FIELD_OFFSET(::XCS::SC_SceneInfo, re_turn_),
+  PROTOBUF_FIELD_OFFSET(::XCS::SC_SceneInfo, jackpot_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::LineType, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::XCS::LineType, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::LineType, line_type_),
+  PROTOBUF_FIELD_OFFSET(::XCS::LineType, line_type_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CMD_3D_SC_Result, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::XCS::CMD_3D_SC_Result, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::CMD_3D_SC_Result, icon_),
-  PROTOBUF_FIELD_OFFSET(::CMD_3D_SC_Result, line_type_),
-  PROTOBUF_FIELD_OFFSET(::CMD_3D_SC_Result, cai_shen_count_),
-  PROTOBUF_FIELD_OFFSET(::CMD_3D_SC_Result, free_count_),
-  PROTOBUF_FIELD_OFFSET(::CMD_3D_SC_Result, game_type_),
-  PROTOBUF_FIELD_OFFSET(::CMD_3D_SC_Result, win_score_),
-  PROTOBUF_FIELD_OFFSET(::CMD_3D_SC_Result, temp_),
-  PROTOBUF_FIELD_OFFSET(::CMD_3D_SC_Result, limit_chip_),
-  PROTOBUF_FIELD_OFFSET(::CMD_3D_SC_Result, limit_chip2_),
-  PROTOBUF_FIELD_OFFSET(::CMD_3D_SC_Result, super_rate_),
-  PROTOBUF_FIELD_OFFSET(::CMD_3D_SC_Result, re_turn_),
-  PROTOBUF_FIELD_OFFSET(::CMD_3D_SC_Result, jackpot_),
+  PROTOBUF_FIELD_OFFSET(::XCS::CMD_3D_SC_Result, icon_),
+  PROTOBUF_FIELD_OFFSET(::XCS::CMD_3D_SC_Result, line_type_),
+  PROTOBUF_FIELD_OFFSET(::XCS::CMD_3D_SC_Result, cai_shen_count_),
+  PROTOBUF_FIELD_OFFSET(::XCS::CMD_3D_SC_Result, free_count_),
+  PROTOBUF_FIELD_OFFSET(::XCS::CMD_3D_SC_Result, game_type_),
+  PROTOBUF_FIELD_OFFSET(::XCS::CMD_3D_SC_Result, win_score_),
+  PROTOBUF_FIELD_OFFSET(::XCS::CMD_3D_SC_Result, temp_),
+  PROTOBUF_FIELD_OFFSET(::XCS::CMD_3D_SC_Result, limit_chip_),
+  PROTOBUF_FIELD_OFFSET(::XCS::CMD_3D_SC_Result, limit_chip2_),
+  PROTOBUF_FIELD_OFFSET(::XCS::CMD_3D_SC_Result, super_rate_),
+  PROTOBUF_FIELD_OFFSET(::XCS::CMD_3D_SC_Result, re_turn_),
+  PROTOBUF_FIELD_OFFSET(::XCS::CMD_3D_SC_Result, jackpot_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::SC_SceneInfo)},
-  { 14, -1, sizeof(::LineType)},
-  { 20, -1, sizeof(::CMD_3D_SC_Result)},
+  { 0, -1, sizeof(::XCS::SC_SceneInfo)},
+  { 14, -1, sizeof(::XCS::LineType)},
+  { 20, -1, sizeof(::XCS::CMD_3D_SC_Result)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_SC_SceneInfo_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_LineType_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_CMD_3D_SC_Result_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::XCS::_SC_SceneInfo_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::XCS::_LineType_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::XCS::_CMD_3D_SC_Result_default_instance_),
 };
 
 const char descriptor_table_protodef_XCS_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\tXCS.proto\"\270\001\n\014SC_SceneInfo\022\020\n\010cur_chip"
-  "\030\001 \001(\005\022\022\n\nfree_count\030\002 \001(\005\022\021\n\tchip_list\030"
-  "\003 \003(\005\022\021\n\tline_rate\030\004 \003(\005\022\021\n\tgod_score\030\005 "
-  "\001(\003\022\022\n\nlimit_chip\030\006 \001(\005\022\023\n\013ilimit_chip\030\007"
-  " \001(\005\022\017\n\007re_turn\030\010 \001(\005\022\017\n\007jackpot\030\n \001(\003\"\035"
-  "\n\010LineType\022\021\n\tline_type\030\001 \003(\005\"\375\001\n\020CMD_3D"
-  "_SC_Result\022\014\n\004icon\030\001 \003(\005\022\034\n\tline_type\030\002 "
-  "\003(\0132\t.LineType\022\026\n\016cai_shen_count\030\003 \001(\005\022\022"
-  "\n\nfree_count\030\004 \001(\005\022\021\n\tgame_type\030\005 \001(\005\022\021\n"
-  "\twin_score\030\006 \001(\003\022\014\n\004temp\030\007 \001(\005\022\022\n\nlimit_"
-  "chip\030\010 \001(\005\022\023\n\013limit_chip2\030\n \001(\005\022\022\n\nsuper"
-  "_rate\030\013 \001(\005\022\017\n\007re_turn\030\014 \001(\005\022\017\n\007jackpot\030"
-  "\r \001(\003*h\n\tEMsgIDXCS\022\025\n\021SUB_CS_GAME_START\020"
-  "\000\022\022\n\016SUB_CS_JACKPOT\020\001\022\027\n\023SUB_SC_SEND_ACC"
-  "POOL\020\002\022\027\n\023SUB_SC_RESULTS_INFO\020\003b\006proto3"
+  "\n\tXCS.proto\022\003XCS\"\270\001\n\014SC_SceneInfo\022\020\n\010cur"
+  "_chip\030\001 \001(\005\022\022\n\nfree_count\030\002 \001(\005\022\021\n\tchip_"
+  "list\030\003 \003(\005\022\021\n\tline_rate\030\004 \003(\005\022\021\n\tgod_sco"
+  "re\030\005 \001(\003\022\022\n\nlimit_chip\030\006 \001(\005\022\023\n\013ilimit_c"
+  "hip\030\007 \001(\005\022\017\n\007re_turn\030\010 \001(\005\022\017\n\007jackpot\030\n "
+  "\001(\003\"\035\n\010LineType\022\021\n\tline_type\030\001 \003(\005\"\201\002\n\020C"
+  "MD_3D_SC_Result\022\014\n\004icon\030\001 \003(\005\022 \n\tline_ty"
+  "pe\030\002 \003(\0132\r.XCS.LineType\022\026\n\016cai_shen_coun"
+  "t\030\003 \001(\005\022\022\n\nfree_count\030\004 \001(\005\022\021\n\tgame_type"
+  "\030\005 \001(\005\022\021\n\twin_score\030\006 \001(\003\022\014\n\004temp\030\007 \001(\005\022"
+  "\022\n\nlimit_chip\030\010 \001(\005\022\023\n\013limit_chip2\030\n \001(\005"
+  "\022\022\n\nsuper_rate\030\013 \001(\005\022\017\n\007re_turn\030\014 \001(\005\022\017\n"
+  "\007jackpot\030\r \001(\003*h\n\tEMsgIDXCS\022\025\n\021SUB_CS_GA"
+  "ME_START\020\000\022\022\n\016SUB_CS_JACKPOT\020\001\022\027\n\023SUB_SC"
+  "_SEND_ACCPOOL\020\002\022\027\n\023SUB_SC_RESULTS_INFO\020\003"
+  "b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_XCS_2eproto_deps[1] = {
 };
@@ -148,7 +151,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_XCS
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_XCS_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_XCS_2eproto = {
-  false, false, descriptor_table_protodef_XCS_2eproto, "XCS.proto", 599,
+  false, false, descriptor_table_protodef_XCS_2eproto, "XCS.proto", 608,
   &descriptor_table_XCS_2eproto_once, descriptor_table_XCS_2eproto_sccs, descriptor_table_XCS_2eproto_deps, 3, 0,
   schemas, file_default_instances, TableStruct_XCS_2eproto::offsets,
   file_level_metadata_XCS_2eproto, 3, file_level_enum_descriptors_XCS_2eproto, file_level_service_descriptors_XCS_2eproto,
@@ -156,6 +159,7 @@ const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_XCS_2e
 
 // Force running AddDescriptors() at dynamic initialization time.
 static bool dynamic_init_dummy_XCS_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_XCS_2eproto)), true);
+namespace XCS {
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDXCS_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_XCS_2eproto);
   return file_level_enum_descriptors_XCS_2eproto[0];
@@ -185,7 +189,7 @@ SC_SceneInfo::SC_SceneInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   line_rate_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:SC_SceneInfo)
+  // @@protoc_insertion_point(arena_constructor:XCS.SC_SceneInfo)
 }
 SC_SceneInfo::SC_SceneInfo(const SC_SceneInfo& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
@@ -195,7 +199,7 @@ SC_SceneInfo::SC_SceneInfo(const SC_SceneInfo& from)
   ::memcpy(&cur_chip_, &from.cur_chip_,
     static_cast<size_t>(reinterpret_cast<char*>(&re_turn_) -
     reinterpret_cast<char*>(&cur_chip_)) + sizeof(re_turn_));
-  // @@protoc_insertion_point(copy_constructor:SC_SceneInfo)
+  // @@protoc_insertion_point(copy_constructor:XCS.SC_SceneInfo)
 }
 
 void SC_SceneInfo::SharedCtor() {
@@ -206,7 +210,7 @@ void SC_SceneInfo::SharedCtor() {
 }
 
 SC_SceneInfo::~SC_SceneInfo() {
-  // @@protoc_insertion_point(destructor:SC_SceneInfo)
+  // @@protoc_insertion_point(destructor:XCS.SC_SceneInfo)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -231,7 +235,7 @@ const SC_SceneInfo& SC_SceneInfo::default_instance() {
 
 
 void SC_SceneInfo::Clear() {
-// @@protoc_insertion_point(message_clear_start:SC_SceneInfo)
+// @@protoc_insertion_point(message_clear_start:XCS.SC_SceneInfo)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -344,7 +348,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* SC_SceneInfo::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:SC_SceneInfo)
+  // @@protoc_insertion_point(serialize_to_array_start:XCS.SC_SceneInfo)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -412,12 +416,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:SC_SceneInfo)
+  // @@protoc_insertion_point(serialize_to_array_end:XCS.SC_SceneInfo)
   return target;
 }
 
 size_t SC_SceneInfo::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:SC_SceneInfo)
+// @@protoc_insertion_point(message_byte_size_start:XCS.SC_SceneInfo)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -513,22 +517,22 @@ size_t SC_SceneInfo::ByteSizeLong() const {
 }
 
 void SC_SceneInfo::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:SC_SceneInfo)
+// @@protoc_insertion_point(generalized_merge_from_start:XCS.SC_SceneInfo)
   GOOGLE_DCHECK_NE(&from, this);
   const SC_SceneInfo* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SC_SceneInfo>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:SC_SceneInfo)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:XCS.SC_SceneInfo)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:SC_SceneInfo)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:XCS.SC_SceneInfo)
     MergeFrom(*source);
   }
 }
 
 void SC_SceneInfo::MergeFrom(const SC_SceneInfo& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:SC_SceneInfo)
+// @@protoc_insertion_point(class_specific_merge_from_start:XCS.SC_SceneInfo)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -560,14 +564,14 @@ void SC_SceneInfo::MergeFrom(const SC_SceneInfo& from) {
 }
 
 void SC_SceneInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:SC_SceneInfo)
+// @@protoc_insertion_point(generalized_copy_from_start:XCS.SC_SceneInfo)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void SC_SceneInfo::CopyFrom(const SC_SceneInfo& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:SC_SceneInfo)
+// @@protoc_insertion_point(class_specific_copy_from_start:XCS.SC_SceneInfo)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -606,20 +610,20 @@ LineType::LineType(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   line_type_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:LineType)
+  // @@protoc_insertion_point(arena_constructor:XCS.LineType)
 }
 LineType::LineType(const LineType& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       line_type_(from.line_type_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:LineType)
+  // @@protoc_insertion_point(copy_constructor:XCS.LineType)
 }
 
 void LineType::SharedCtor() {
 }
 
 LineType::~LineType() {
-  // @@protoc_insertion_point(destructor:LineType)
+  // @@protoc_insertion_point(destructor:XCS.LineType)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -644,7 +648,7 @@ const LineType& LineType::default_instance() {
 
 
 void LineType::Clear() {
-// @@protoc_insertion_point(message_clear_start:LineType)
+// @@protoc_insertion_point(message_clear_start:XCS.LineType)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -694,7 +698,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* LineType::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:LineType)
+  // @@protoc_insertion_point(serialize_to_array_start:XCS.LineType)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -711,12 +715,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:LineType)
+  // @@protoc_insertion_point(serialize_to_array_end:XCS.LineType)
   return target;
 }
 
 size_t LineType::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:LineType)
+// @@protoc_insertion_point(message_byte_size_start:XCS.LineType)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -748,22 +752,22 @@ size_t LineType::ByteSizeLong() const {
 }
 
 void LineType::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:LineType)
+// @@protoc_insertion_point(generalized_merge_from_start:XCS.LineType)
   GOOGLE_DCHECK_NE(&from, this);
   const LineType* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<LineType>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:LineType)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:XCS.LineType)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:LineType)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:XCS.LineType)
     MergeFrom(*source);
   }
 }
 
 void LineType::MergeFrom(const LineType& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:LineType)
+// @@protoc_insertion_point(class_specific_merge_from_start:XCS.LineType)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -773,14 +777,14 @@ void LineType::MergeFrom(const LineType& from) {
 }
 
 void LineType::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:LineType)
+// @@protoc_insertion_point(generalized_copy_from_start:XCS.LineType)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void LineType::CopyFrom(const LineType& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:LineType)
+// @@protoc_insertion_point(class_specific_copy_from_start:XCS.LineType)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -813,7 +817,7 @@ CMD_3D_SC_Result::CMD_3D_SC_Result(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   line_type_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:CMD_3D_SC_Result)
+  // @@protoc_insertion_point(arena_constructor:XCS.CMD_3D_SC_Result)
 }
 CMD_3D_SC_Result::CMD_3D_SC_Result(const CMD_3D_SC_Result& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
@@ -823,7 +827,7 @@ CMD_3D_SC_Result::CMD_3D_SC_Result(const CMD_3D_SC_Result& from)
   ::memcpy(&cai_shen_count_, &from.cai_shen_count_,
     static_cast<size_t>(reinterpret_cast<char*>(&jackpot_) -
     reinterpret_cast<char*>(&cai_shen_count_)) + sizeof(jackpot_));
-  // @@protoc_insertion_point(copy_constructor:CMD_3D_SC_Result)
+  // @@protoc_insertion_point(copy_constructor:XCS.CMD_3D_SC_Result)
 }
 
 void CMD_3D_SC_Result::SharedCtor() {
@@ -835,7 +839,7 @@ void CMD_3D_SC_Result::SharedCtor() {
 }
 
 CMD_3D_SC_Result::~CMD_3D_SC_Result() {
-  // @@protoc_insertion_point(destructor:CMD_3D_SC_Result)
+  // @@protoc_insertion_point(destructor:XCS.CMD_3D_SC_Result)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -860,7 +864,7 @@ const CMD_3D_SC_Result& CMD_3D_SC_Result::default_instance() {
 
 
 void CMD_3D_SC_Result::Clear() {
-// @@protoc_insertion_point(message_clear_start:CMD_3D_SC_Result)
+// @@protoc_insertion_point(message_clear_start:XCS.CMD_3D_SC_Result)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -890,7 +894,7 @@ const char* CMD_3D_SC_Result::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated .LineType line_type = 2;
+      // repeated .XCS.LineType line_type = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr -= 1;
@@ -996,7 +1000,7 @@ failure:
 
 ::PROTOBUF_NAMESPACE_ID::uint8* CMD_3D_SC_Result::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CMD_3D_SC_Result)
+  // @@protoc_insertion_point(serialize_to_array_start:XCS.CMD_3D_SC_Result)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1009,7 +1013,7 @@ failure:
     }
   }
 
-  // repeated .LineType line_type = 2;
+  // repeated .XCS.LineType line_type = 2;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_line_type_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
@@ -1081,12 +1085,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CMD_3D_SC_Result)
+  // @@protoc_insertion_point(serialize_to_array_end:XCS.CMD_3D_SC_Result)
   return target;
 }
 
 size_t CMD_3D_SC_Result::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CMD_3D_SC_Result)
+// @@protoc_insertion_point(message_byte_size_start:XCS.CMD_3D_SC_Result)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1108,7 +1112,7 @@ size_t CMD_3D_SC_Result::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  // repeated .LineType line_type = 2;
+  // repeated .XCS.LineType line_type = 2;
   total_size += 1UL * this->_internal_line_type_size();
   for (const auto& msg : this->line_type_) {
     total_size +=
@@ -1195,22 +1199,22 @@ size_t CMD_3D_SC_Result::ByteSizeLong() const {
 }
 
 void CMD_3D_SC_Result::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:CMD_3D_SC_Result)
+// @@protoc_insertion_point(generalized_merge_from_start:XCS.CMD_3D_SC_Result)
   GOOGLE_DCHECK_NE(&from, this);
   const CMD_3D_SC_Result* source =
       ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_3D_SC_Result>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:CMD_3D_SC_Result)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:XCS.CMD_3D_SC_Result)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:CMD_3D_SC_Result)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:XCS.CMD_3D_SC_Result)
     MergeFrom(*source);
   }
 }
 
 void CMD_3D_SC_Result::MergeFrom(const CMD_3D_SC_Result& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:CMD_3D_SC_Result)
+// @@protoc_insertion_point(class_specific_merge_from_start:XCS.CMD_3D_SC_Result)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1251,14 +1255,14 @@ void CMD_3D_SC_Result::MergeFrom(const CMD_3D_SC_Result& from) {
 }
 
 void CMD_3D_SC_Result::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:CMD_3D_SC_Result)
+// @@protoc_insertion_point(generalized_copy_from_start:XCS.CMD_3D_SC_Result)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void CMD_3D_SC_Result::CopyFrom(const CMD_3D_SC_Result& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CMD_3D_SC_Result)
+// @@protoc_insertion_point(class_specific_copy_from_start:XCS.CMD_3D_SC_Result)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1287,15 +1291,16 @@ void CMD_3D_SC_Result::InternalSwap(CMD_3D_SC_Result* other) {
 
 
 // @@protoc_insertion_point(namespace_scope)
+}  // namespace XCS
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::SC_SceneInfo* Arena::CreateMaybeMessage< ::SC_SceneInfo >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::SC_SceneInfo >(arena);
+template<> PROTOBUF_NOINLINE ::XCS::SC_SceneInfo* Arena::CreateMaybeMessage< ::XCS::SC_SceneInfo >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::XCS::SC_SceneInfo >(arena);
 }
-template<> PROTOBUF_NOINLINE ::LineType* Arena::CreateMaybeMessage< ::LineType >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::LineType >(arena);
+template<> PROTOBUF_NOINLINE ::XCS::LineType* Arena::CreateMaybeMessage< ::XCS::LineType >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::XCS::LineType >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CMD_3D_SC_Result* Arena::CreateMaybeMessage< ::CMD_3D_SC_Result >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CMD_3D_SC_Result >(arena);
+template<> PROTOBUF_NOINLINE ::XCS::CMD_3D_SC_Result* Arena::CreateMaybeMessage< ::XCS::CMD_3D_SC_Result >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::XCS::CMD_3D_SC_Result >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 
