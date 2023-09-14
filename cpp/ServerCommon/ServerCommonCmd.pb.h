@@ -285,6 +285,33 @@ inline bool EMsgIDDB_Parse(
   return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<EMsgIDDB>(
     EMsgIDDB_descriptor(), name, value);
 }
+enum EGameBattleTypeID : int {
+  GAME_NORMAL = 0,
+  GAME_HUNDRED = 1,
+  GAME_CREATE = 2,
+  GAME_BATTLE = 3,
+  EGameBattleTypeID_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
+  EGameBattleTypeID_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
+};
+bool EGameBattleTypeID_IsValid(int value);
+constexpr EGameBattleTypeID EGameBattleTypeID_MIN = GAME_NORMAL;
+constexpr EGameBattleTypeID EGameBattleTypeID_MAX = GAME_BATTLE;
+constexpr int EGameBattleTypeID_ARRAYSIZE = EGameBattleTypeID_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EGameBattleTypeID_descriptor();
+template<typename T>
+inline const std::string& EGameBattleTypeID_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, EGameBattleTypeID>::value ||
+    ::std::is_integral<T>::value,
+    "Incorrect type passed to function EGameBattleTypeID_Name.");
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    EGameBattleTypeID_descriptor(), enum_t_value);
+}
+inline bool EGameBattleTypeID_Parse(
+    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, EGameBattleTypeID* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<EGameBattleTypeID>(
+    EGameBattleTypeID_descriptor(), name, value);
+}
 // ===================================================================
 
 
@@ -320,6 +347,11 @@ template <> struct is_proto_enum< ::EMsgIDDB> : ::std::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::EMsgIDDB>() {
   return ::EMsgIDDB_descriptor();
+}
+template <> struct is_proto_enum< ::EGameBattleTypeID> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::EGameBattleTypeID>() {
+  return ::EGameBattleTypeID_descriptor();
 }
 
 PROTOBUF_NAMESPACE_CLOSE
