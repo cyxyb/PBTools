@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-enum EMsgIDXCS
+package XCS;
+
+enum EMsgID
 {
 		SUB_CS_GAME_START 	= 0; 		//开始游戏(MsgCommonN32)
 		SUB_CS_JACKPOT 		= 1;		//请求彩金分数
