@@ -277,6 +277,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TeenPatti_5fIndia_2eproto::off
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::TeenPatti_India::MsgCompareCardRetResp, current_chair_id_),
+  PROTOBUF_FIELD_OFFSET(::TeenPatti_India::MsgCompareCardRetResp, current_act_),
   PROTOBUF_FIELD_OFFSET(::TeenPatti_India::MsgCompareCardRetResp, lost_id_),
   PROTOBUF_FIELD_OFFSET(::TeenPatti_India::MsgCompareCardRetResp, compare_id_),
   PROTOBUF_FIELD_OFFSET(::TeenPatti_India::MsgCompareCardRetResp, passive_id_),
@@ -302,7 +303,7 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 60, -1, sizeof(::TeenPatti_India::MsgAddBetResp)},
   { 70, -1, sizeof(::TeenPatti_India::MsgCompareCardResp)},
   { 77, -1, sizeof(::TeenPatti_India::MsgCompareCardRetResp)},
-  { 88, -1, sizeof(::TeenPatti_India::MsgGameResult)},
+  { 89, -1, sizeof(::TeenPatti_India::MsgGameResult)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -342,23 +343,23 @@ const char descriptor_table_protodef_TeenPatti_5fIndia_2eproto[] PROTOBUF_SECTIO
   "r_chair_id\030\001 \001(\005\022\021\n\tcur_times\030\002 \001(\005\022\023\n\013c"
   "urrent_act\030\003 \001(\005\022\024\n\014add_chair_id\030\004 \001(\005\022\021"
   "\n\tadd_score\030\005 \001(\005\":\n\022MsgCompareCardResp\022"
-  "\020\n\010chair_id\030\001 \001(\005\022\022\n\ncompare_id\030\002 \001(\005\"\230\001"
+  "\020\n\010chair_id\030\001 \001(\005\022\022\n\ncompare_id\030\002 \001(\005\"\255\001"
   "\n\025MsgCompareCardRetResp\022\030\n\020current_chair"
-  "_id\030\001 \001(\005\022\017\n\007lost_id\030\002 \001(\005\022\022\n\ncompare_id"
-  "\030\003 \001(\005\022\022\n\npassive_id\030\004 \001(\005\022\025\n\rcompare_ca"
-  "rds\030\005 \003(\005\022\025\n\rpassive_cards\030\006 \003(\005\"}\n\rMsgG"
-  "ameResult\022\020\n\010game_tax\030\001 \001(\005\022\022\n\ngame_scor"
-  "e\030\002 \003(\003\0223\n\014player_hands\030\003 \003(\0132\035.TeenPatt"
-  "i_India.MsgHandCards\022\021\n\tend_state\030\004 \001(\005*"
-  "\272\002\n\rEMsgIDSubGame\022\025\n\021MsgIDSubGame_Null\020\000"
-  "\022\036\n\032MsgIDSubGame_GameStartResp\020\001\022\027\n\023MsgI"
-  "DSubGame_Action\020\002\022\033\n\027MsgIDSubGame_GiveUp"
-  "Resp\020\003\022\031\n\025MsgIDSubGame_LookCard\020\004\022\033\n\027Msg"
-  "IDSubGame_AddBetResp\020\005\022 \n\034MsgIDSubGame_C"
-  "ompareCardResp\020\006\022\037\n\033MsgIDSubGame_Compare"
-  "RetResp\020\007\022\037\n\033MsgIDSubGame_GameResultResp"
-  "\020\010\022 \n\034MsgIDSubGame_NotifyStateResp\020\tb\006pr"
-  "oto3"
+  "_id\030\001 \001(\005\022\023\n\013current_act\030\002 \001(\005\022\017\n\007lost_i"
+  "d\030\003 \001(\005\022\022\n\ncompare_id\030\004 \001(\005\022\022\n\npassive_i"
+  "d\030\005 \001(\005\022\025\n\rcompare_cards\030\006 \003(\005\022\025\n\rpassiv"
+  "e_cards\030\007 \003(\005\"}\n\rMsgGameResult\022\020\n\010game_t"
+  "ax\030\001 \001(\005\022\022\n\ngame_score\030\002 \003(\003\0223\n\014player_h"
+  "ands\030\003 \003(\0132\035.TeenPatti_India.MsgHandCard"
+  "s\022\021\n\tend_state\030\004 \001(\005*\272\002\n\rEMsgIDSubGame\022\025"
+  "\n\021MsgIDSubGame_Null\020\000\022\036\n\032MsgIDSubGame_Ga"
+  "meStartResp\020\001\022\027\n\023MsgIDSubGame_Action\020\002\022\033"
+  "\n\027MsgIDSubGame_GiveUpResp\020\003\022\031\n\025MsgIDSubG"
+  "ame_LookCard\020\004\022\033\n\027MsgIDSubGame_AddBetRes"
+  "p\020\005\022 \n\034MsgIDSubGame_CompareCardResp\020\006\022\037\n"
+  "\033MsgIDSubGame_CompareRetResp\020\007\022\037\n\033MsgIDS"
+  "ubGame_GameResultResp\020\010\022 \n\034MsgIDSubGame_"
+  "NotifyStateResp\020\tb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_TeenPatti_5fIndia_2eproto_deps[1] = {
 };
@@ -376,7 +377,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Tee
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_TeenPatti_5fIndia_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_TeenPatti_5fIndia_2eproto = {
-  false, false, descriptor_table_protodef_TeenPatti_5fIndia_2eproto, "TeenPatti_India.proto", 1564,
+  false, false, descriptor_table_protodef_TeenPatti_5fIndia_2eproto, "TeenPatti_India.proto", 1585,
   &descriptor_table_TeenPatti_5fIndia_2eproto_once, descriptor_table_TeenPatti_5fIndia_2eproto_sccs, descriptor_table_TeenPatti_5fIndia_2eproto_deps, 10, 0,
   schemas, file_default_instances, TableStruct_TeenPatti_5fIndia_2eproto::offsets,
   file_level_metadata_TeenPatti_5fIndia_2eproto, 10, file_level_enum_descriptors_TeenPatti_5fIndia_2eproto, file_level_service_descriptors_TeenPatti_5fIndia_2eproto,
@@ -2862,43 +2863,50 @@ const char* MsgCompareCardRetResp::_InternalParse(const char* ptr, ::PROTOBUF_NA
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 lost_id = 2;
+      // int32 current_act = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          current_act_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 lost_id = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           lost_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 compare_id = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+      // int32 compare_id = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           compare_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 passive_id = 4;
-      case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+      // int32 passive_id = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
           passive_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated int32 compare_cards = 5;
-      case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+      // repeated int32 compare_cards = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_compare_cards(), ptr, ctx);
           CHK_(ptr);
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40) {
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48) {
           _internal_add_compare_cards(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated int32 passive_cards = 6;
-      case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+      // repeated int32 passive_cards = 7;
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_passive_cards(), ptr, ctx);
           CHK_(ptr);
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48) {
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56) {
           _internal_add_passive_cards(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
@@ -2937,39 +2945,45 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_current_chair_id(), target);
   }
 
-  // int32 lost_id = 2;
+  // int32 current_act = 2;
+  if (this->current_act() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_current_act(), target);
+  }
+
+  // int32 lost_id = 3;
   if (this->lost_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_lost_id(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_lost_id(), target);
   }
 
-  // int32 compare_id = 3;
+  // int32 compare_id = 4;
   if (this->compare_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_compare_id(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_compare_id(), target);
   }
 
-  // int32 passive_id = 4;
+  // int32 passive_id = 5;
   if (this->passive_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_passive_id(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_passive_id(), target);
   }
 
-  // repeated int32 compare_cards = 5;
+  // repeated int32 compare_cards = 6;
   {
     int byte_size = _compare_cards_cached_byte_size_.load(std::memory_order_relaxed);
     if (byte_size > 0) {
       target = stream->WriteInt32Packed(
-          5, _internal_compare_cards(), byte_size, target);
+          6, _internal_compare_cards(), byte_size, target);
     }
   }
 
-  // repeated int32 passive_cards = 6;
+  // repeated int32 passive_cards = 7;
   {
     int byte_size = _passive_cards_cached_byte_size_.load(std::memory_order_relaxed);
     if (byte_size > 0) {
       target = stream->WriteInt32Packed(
-          6, _internal_passive_cards(), byte_size, target);
+          7, _internal_passive_cards(), byte_size, target);
     }
   }
 
@@ -2989,7 +3003,7 @@ size_t MsgCompareCardRetResp::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated int32 compare_cards = 5;
+  // repeated int32 compare_cards = 6;
   {
     size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       Int32Size(this->compare_cards_);
@@ -3004,7 +3018,7 @@ size_t MsgCompareCardRetResp::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  // repeated int32 passive_cards = 6;
+  // repeated int32 passive_cards = 7;
   {
     size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       Int32Size(this->passive_cards_);
@@ -3026,21 +3040,28 @@ size_t MsgCompareCardRetResp::ByteSizeLong() const {
         this->_internal_current_chair_id());
   }
 
-  // int32 lost_id = 2;
+  // int32 current_act = 2;
+  if (this->current_act() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_current_act());
+  }
+
+  // int32 lost_id = 3;
   if (this->lost_id() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_lost_id());
   }
 
-  // int32 compare_id = 3;
+  // int32 compare_id = 4;
   if (this->compare_id() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_compare_id());
   }
 
-  // int32 passive_id = 4;
+  // int32 passive_id = 5;
   if (this->passive_id() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
@@ -3082,6 +3103,9 @@ void MsgCompareCardRetResp::MergeFrom(const MsgCompareCardRetResp& from) {
   passive_cards_.MergeFrom(from.passive_cards_);
   if (from.current_chair_id() != 0) {
     _internal_set_current_chair_id(from._internal_current_chair_id());
+  }
+  if (from.current_act() != 0) {
+    _internal_set_current_act(from._internal_current_act());
   }
   if (from.lost_id() != 0) {
     _internal_set_lost_id(from._internal_lost_id());
