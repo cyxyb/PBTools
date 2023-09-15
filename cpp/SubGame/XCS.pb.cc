@@ -137,10 +137,10 @@ const char descriptor_table_protodef_XCS_2eproto[] PROTOBUF_SECTION_VARIABLE(pro
   "\030\005 \001(\005\022\021\n\twin_score\030\006 \001(\003\022\014\n\004temp\030\007 \001(\005\022"
   "\022\n\nlimit_chip\030\010 \001(\005\022\023\n\013limit_chip2\030\n \001(\005"
   "\022\022\n\nsuper_rate\030\013 \001(\005\022\017\n\007re_turn\030\014 \001(\005\022\017\n"
-  "\007jackpot\030\r \001(\003*e\n\006EMsgID\022\025\n\021SUB_CS_GAME_"
-  "START\020\000\022\022\n\016SUB_CS_JACKPOT\020\001\022\027\n\023SUB_SC_SE"
-  "ND_ACCPOOL\020\002\022\027\n\023SUB_SC_RESULTS_INFO\020\003b\006p"
-  "roto3"
+  "\007jackpot\030\r \001(\003*h\n\tEMsgIDXCS\022\025\n\021SUB_CS_GA"
+  "ME_START\020\000\022\022\n\016SUB_CS_JACKPOT\020\001\022\027\n\023SUB_SC"
+  "_SEND_ACCPOOL\020\002\022\027\n\023SUB_SC_RESULTS_INFO\020\003"
+  "b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_XCS_2eproto_deps[1] = {
 };
@@ -151,7 +151,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_XCS
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_XCS_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_XCS_2eproto = {
-  false, false, descriptor_table_protodef_XCS_2eproto, "XCS.proto", 605,
+  false, false, descriptor_table_protodef_XCS_2eproto, "XCS.proto", 608,
   &descriptor_table_XCS_2eproto_once, descriptor_table_XCS_2eproto_sccs, descriptor_table_XCS_2eproto_deps, 3, 0,
   schemas, file_default_instances, TableStruct_XCS_2eproto::offsets,
   file_level_metadata_XCS_2eproto, 3, file_level_enum_descriptors_XCS_2eproto, file_level_service_descriptors_XCS_2eproto,
@@ -160,11 +160,11 @@ const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_XCS_2e
 // Force running AddDescriptors() at dynamic initialization time.
 static bool dynamic_init_dummy_XCS_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_XCS_2eproto)), true);
 namespace XCS {
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgID_descriptor() {
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDXCS_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_XCS_2eproto);
   return file_level_enum_descriptors_XCS_2eproto[0];
 }
-bool EMsgID_IsValid(int value) {
+bool EMsgIDXCS_IsValid(int value) {
   switch (value) {
     case 0:
     case 1:

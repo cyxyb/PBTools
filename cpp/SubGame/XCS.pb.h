@@ -72,32 +72,32 @@ template<> ::XCS::SC_SceneInfo* Arena::CreateMaybeMessage<::XCS::SC_SceneInfo>(A
 PROTOBUF_NAMESPACE_CLOSE
 namespace XCS {
 
-enum EMsgID : int {
+enum EMsgIDXCS : int {
   SUB_CS_GAME_START = 0,
   SUB_CS_JACKPOT = 1,
   SUB_SC_SEND_ACCPOOL = 2,
   SUB_SC_RESULTS_INFO = 3,
-  EMsgID_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
-  EMsgID_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
+  EMsgIDXCS_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
+  EMsgIDXCS_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
-bool EMsgID_IsValid(int value);
-constexpr EMsgID EMsgID_MIN = SUB_CS_GAME_START;
-constexpr EMsgID EMsgID_MAX = SUB_SC_RESULTS_INFO;
-constexpr int EMsgID_ARRAYSIZE = EMsgID_MAX + 1;
+bool EMsgIDXCS_IsValid(int value);
+constexpr EMsgIDXCS EMsgIDXCS_MIN = SUB_CS_GAME_START;
+constexpr EMsgIDXCS EMsgIDXCS_MAX = SUB_SC_RESULTS_INFO;
+constexpr int EMsgIDXCS_ARRAYSIZE = EMsgIDXCS_MAX + 1;
 
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgID_descriptor();
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDXCS_descriptor();
 template<typename T>
-inline const std::string& EMsgID_Name(T enum_t_value) {
-  static_assert(::std::is_same<T, EMsgID>::value ||
+inline const std::string& EMsgIDXCS_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, EMsgIDXCS>::value ||
     ::std::is_integral<T>::value,
-    "Incorrect type passed to function EMsgID_Name.");
+    "Incorrect type passed to function EMsgIDXCS_Name.");
   return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
-    EMsgID_descriptor(), enum_t_value);
+    EMsgIDXCS_descriptor(), enum_t_value);
 }
-inline bool EMsgID_Parse(
-    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, EMsgID* value) {
-  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<EMsgID>(
-    EMsgID_descriptor(), name, value);
+inline bool EMsgIDXCS_Parse(
+    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, EMsgIDXCS* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<EMsgIDXCS>(
+    EMsgIDXCS_descriptor(), name, value);
 }
 // ===================================================================
 
@@ -1381,10 +1381,10 @@ inline void CMD_3D_SC_Result::set_jackpot(::PROTOBUF_NAMESPACE_ID::int64 value) 
 
 PROTOBUF_NAMESPACE_OPEN
 
-template <> struct is_proto_enum< ::XCS::EMsgID> : ::std::true_type {};
+template <> struct is_proto_enum< ::XCS::EMsgIDXCS> : ::std::true_type {};
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::XCS::EMsgID>() {
-  return ::XCS::EMsgID_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< ::XCS::EMsgIDXCS>() {
+  return ::XCS::EMsgIDXCS_descriptor();
 }
 
 PROTOBUF_NAMESPACE_CLOSE
