@@ -111,6 +111,8 @@ enum EMsgIDLogin
 	MsgIDShop_BuyGoodsResp						= 97;		//购买商品返回(MsgCommonKV)
 	MsgIDShop_QueryTrumpetPrice					= 98;		//查询小喇叭价格(MsgCommonBool)
 	MsgIDShop_QueryTrumpetPriceResp				= 99;		//查询小喇叭价格返回(MsgCommonN32)
+	MsgIDLogin_QueryServerTime					= 100;		//请求服务器时间(MsgCommonBool)
+	MsgIDLogin_QueryServerTimeResp				= 101;		//请求服务器时间返回(MsgCommonN64)
 }
 
 enum EMsgIDGame
