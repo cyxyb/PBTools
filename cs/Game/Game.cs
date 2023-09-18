@@ -23,31 +23,32 @@ public static partial class GameReflection {
     byte[] descriptorData = global::System.Convert.FromBase64String(
         string.Concat(
           "ChVQcm90by9HYW1lL0dhbWUucHJvdG8iNwoSTXNnR2FtZVBsYXllckxvZ2lu",
-          "Eg8KB3VzZXJfaWQYASABKAUSEAoIcGFzc3dvcmQYAiABKAkijgEKEU1zZ0dh",
+          "Eg8KB3VzZXJfaWQYASABKAUSEAoIcGFzc3dvcmQYAiABKAkitwEKEU1zZ0dh",
           "bWVQbGF5ZXJJbmZvEg8KB3VzZXJfaWQYASABKAUSFAoMYmVhdXRpZnVsX2lk",
           "GAIgASgFEhAKCG5pY2tuYW1lGAMgASgJEg4KBmF2YXRhchgEIAEoCRIMCgRj",
           "b2luGAUgASgEEhAKCHRhYmxlX2lkGAYgASgFEhAKCGNoYWlyX2lkGAcgASgF",
-          "IoEBChZNc2dHYW1lUGxheWVyTG9naW5SZXNwEhAKCHJlc19jb2RlGAEgASgF",
-          "Eg8KB3VzZXJfaWQYAiABKAUSFAoMYmVhdXRpZnVsX2lkGAMgASgFEhAKCG5p",
-          "Y2tuYW1lGAQgASgJEg4KBmF2YXRhchgFIAEoCRIMCgRjb2luGAYgASgEIjUK",
-          "E01zZ1N5bmNQbGF5ZXJzU2NvcmUSEAoIY2hhaXJfaWQYASABKAUSDAoEY29p",
-          "bhgCIAEoBCJVCgxNc2dSb3VuZERhdGESDAoEdGltZRgBIAEoBRITCgt3aW5f",
-          "dXNlcl9pZBgCIAEoBRIUCgxsb3NlX3VzZXJfaWQYAyABKAUSDAoEZ29sZBgE",
-          "IAEoAyJJChFNc2dUb3RhbFJvdW5kRGF0YRIRCgl0b3RhbF9udW0YASABKAUS",
-          "IQoKcm91bmRfZGF0YRgCIAMoCzINLk1zZ1JvdW5kRGF0YSKqAQoKTXNnRGF5",
-          "RGF0YRIMCgR0aW1lGAEgASgJEhgKEHRvdGFsX3BsYXlfY291bnQYAiABKAUS",
-          "EgoKbG9zZV9jb3VudBgDIAEoBRIRCglsb3NlX2dvbGQYBCABKAMSEQoJd2lu",
-          "X2NvdW50GAUgASgFEhAKCHdpbl9nb2xkGAYgASgDEhIKCnRvdGFsX2dvbGQY",
-          "ByABKAMSFAoMc3VycGx1c19nb2xkGAggASgDIkUKD01zZ1RvdGFsRGF5RGF0",
-          "YRIRCgl0b3RhbF9udW0YASABKAUSHwoKZGFpbHlfZGF0YRgCIAMoCzILLk1z",
-          "Z0RheURhdGEiOQoOTXNnUXVlcnlSZWNvcmQSDAoEcGFnZRgBIAEoBRILCgNu",
-          "dW0YAiABKAUSDAoEdHlwZRgDIAEoBSI3Cg5Nc2dKYWNrcG90SW5mbxIPCgdq",
-          "YWNrcG90GAEgASgDEhQKDGZha2VfamFja3BvdBgCIAEoA2IGcHJvdG8z"));
+          "EhEKCXZpcF9sZXZlbBgIIAEoBRIUCgxhdmF0YXJfZnJhbWUYCSABKAUigQEK",
+          "Fk1zZ0dhbWVQbGF5ZXJMb2dpblJlc3ASEAoIcmVzX2NvZGUYASABKAUSDwoH",
+          "dXNlcl9pZBgCIAEoBRIUCgxiZWF1dGlmdWxfaWQYAyABKAUSEAoIbmlja25h",
+          "bWUYBCABKAkSDgoGYXZhdGFyGAUgASgJEgwKBGNvaW4YBiABKAQiNQoTTXNn",
+          "U3luY1BsYXllcnNTY29yZRIQCghjaGFpcl9pZBgBIAEoBRIMCgRjb2luGAIg",
+          "ASgEIlUKDE1zZ1JvdW5kRGF0YRIMCgR0aW1lGAEgASgFEhMKC3dpbl91c2Vy",
+          "X2lkGAIgASgFEhQKDGxvc2VfdXNlcl9pZBgDIAEoBRIMCgRnb2xkGAQgASgD",
+          "IkkKEU1zZ1RvdGFsUm91bmREYXRhEhEKCXRvdGFsX251bRgBIAEoBRIhCgpy",
+          "b3VuZF9kYXRhGAIgAygLMg0uTXNnUm91bmREYXRhIqoBCgpNc2dEYXlEYXRh",
+          "EgwKBHRpbWUYASABKAkSGAoQdG90YWxfcGxheV9jb3VudBgCIAEoBRISCgps",
+          "b3NlX2NvdW50GAMgASgFEhEKCWxvc2VfZ29sZBgEIAEoAxIRCgl3aW5fY291",
+          "bnQYBSABKAUSEAoId2luX2dvbGQYBiABKAMSEgoKdG90YWxfZ29sZBgHIAEo",
+          "AxIUCgxzdXJwbHVzX2dvbGQYCCABKAMiRQoPTXNnVG90YWxEYXlEYXRhEhEK",
+          "CXRvdGFsX251bRgBIAEoBRIfCgpkYWlseV9kYXRhGAIgAygLMgsuTXNnRGF5",
+          "RGF0YSI5Cg5Nc2dRdWVyeVJlY29yZBIMCgRwYWdlGAEgASgFEgsKA251bRgC",
+          "IAEoBRIMCgR0eXBlGAMgASgFIjcKDk1zZ0phY2twb3RJbmZvEg8KB2phY2tw",
+          "b3QYASABKAMSFAoMZmFrZV9qYWNrcG90GAIgASgDYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgGamePlayerLogin), global::MsgGamePlayerLogin.Parser, new[]{ "UserId", "Password" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgGamePlayerInfo), global::MsgGamePlayerInfo.Parser, new[]{ "UserId", "BeautifulId", "Nickname", "Avatar", "Coin", "TableId", "ChairId" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgGamePlayerInfo), global::MsgGamePlayerInfo.Parser, new[]{ "UserId", "BeautifulId", "Nickname", "Avatar", "Coin", "TableId", "ChairId", "VipLevel", "AvatarFrame" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgGamePlayerLoginResp), global::MsgGamePlayerLoginResp.Parser, new[]{ "ResCode", "UserId", "BeautifulId", "Nickname", "Avatar", "Coin" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgSyncPlayersScore), global::MsgSyncPlayersScore.Parser, new[]{ "ChairId", "Coin" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgRoundData), global::MsgRoundData.Parser, new[]{ "Time", "WinUserId", "LoseUserId", "Gold" }, null, null, null, null),
@@ -318,6 +319,8 @@ public sealed partial class MsgGamePlayerInfo : pb::IMessage<MsgGamePlayerInfo>
     coin_ = other.coin_;
     tableId_ = other.tableId_;
     chairId_ = other.chairId_;
+    vipLevel_ = other.vipLevel_;
+    avatarFrame_ = other.avatarFrame_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -424,6 +427,34 @@ public sealed partial class MsgGamePlayerInfo : pb::IMessage<MsgGamePlayerInfo>
     }
   }
 
+  /// <summary>Field number for the "vip_level" field.</summary>
+  public const int VipLevelFieldNumber = 8;
+  private int vipLevel_;
+  /// <summary>
+  ///VIP等级
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int VipLevel {
+    get { return vipLevel_; }
+    set {
+      vipLevel_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "avatar_frame" field.</summary>
+  public const int AvatarFrameFieldNumber = 9;
+  private int avatarFrame_;
+  /// <summary>
+  ///头像框
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int AvatarFrame {
+    get { return avatarFrame_; }
+    set {
+      avatarFrame_ = value;
+    }
+  }
+
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as MsgGamePlayerInfo);
@@ -444,6 +475,8 @@ public sealed partial class MsgGamePlayerInfo : pb::IMessage<MsgGamePlayerInfo>
     if (Coin != other.Coin) return false;
     if (TableId != other.TableId) return false;
     if (ChairId != other.ChairId) return false;
+    if (VipLevel != other.VipLevel) return false;
+    if (AvatarFrame != other.AvatarFrame) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -457,6 +490,8 @@ public sealed partial class MsgGamePlayerInfo : pb::IMessage<MsgGamePlayerInfo>
     if (Coin != 0UL) hash ^= Coin.GetHashCode();
     if (TableId != 0) hash ^= TableId.GetHashCode();
     if (ChairId != 0) hash ^= ChairId.GetHashCode();
+    if (VipLevel != 0) hash ^= VipLevel.GetHashCode();
+    if (AvatarFrame != 0) hash ^= AvatarFrame.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -501,6 +536,14 @@ public sealed partial class MsgGamePlayerInfo : pb::IMessage<MsgGamePlayerInfo>
       output.WriteRawTag(56);
       output.WriteInt32(ChairId);
     }
+    if (VipLevel != 0) {
+      output.WriteRawTag(64);
+      output.WriteInt32(VipLevel);
+    }
+    if (AvatarFrame != 0) {
+      output.WriteRawTag(72);
+      output.WriteInt32(AvatarFrame);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -538,6 +581,14 @@ public sealed partial class MsgGamePlayerInfo : pb::IMessage<MsgGamePlayerInfo>
       output.WriteRawTag(56);
       output.WriteInt32(ChairId);
     }
+    if (VipLevel != 0) {
+      output.WriteRawTag(64);
+      output.WriteInt32(VipLevel);
+    }
+    if (AvatarFrame != 0) {
+      output.WriteRawTag(72);
+      output.WriteInt32(AvatarFrame);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -567,6 +618,12 @@ public sealed partial class MsgGamePlayerInfo : pb::IMessage<MsgGamePlayerInfo>
     }
     if (ChairId != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChairId);
+    }
+    if (VipLevel != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(VipLevel);
+    }
+    if (AvatarFrame != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(AvatarFrame);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -599,6 +656,12 @@ public sealed partial class MsgGamePlayerInfo : pb::IMessage<MsgGamePlayerInfo>
     }
     if (other.ChairId != 0) {
       ChairId = other.ChairId;
+    }
+    if (other.VipLevel != 0) {
+      VipLevel = other.VipLevel;
+    }
+    if (other.AvatarFrame != 0) {
+      AvatarFrame = other.AvatarFrame;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -642,6 +705,14 @@ public sealed partial class MsgGamePlayerInfo : pb::IMessage<MsgGamePlayerInfo>
           ChairId = input.ReadInt32();
           break;
         }
+        case 64: {
+          VipLevel = input.ReadInt32();
+          break;
+        }
+        case 72: {
+          AvatarFrame = input.ReadInt32();
+          break;
+        }
       }
     }
   #endif
@@ -682,6 +753,14 @@ public sealed partial class MsgGamePlayerInfo : pb::IMessage<MsgGamePlayerInfo>
         }
         case 56: {
           ChairId = input.ReadInt32();
+          break;
+        }
+        case 64: {
+          VipLevel = input.ReadInt32();
+          break;
+        }
+        case 72: {
+          AvatarFrame = input.ReadInt32();
           break;
         }
       }

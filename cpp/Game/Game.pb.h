@@ -371,6 +371,8 @@ class MsgGamePlayerInfo PROTOBUF_FINAL :
     kCoinFieldNumber = 5,
     kTableIdFieldNumber = 6,
     kChairIdFieldNumber = 7,
+    kVipLevelFieldNumber = 8,
+    kAvatarFrameFieldNumber = 9,
   };
   // string nickname = 3;
   void clear_nickname();
@@ -449,6 +451,24 @@ class MsgGamePlayerInfo PROTOBUF_FINAL :
   void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 vip_level = 8;
+  void clear_vip_level();
+  ::PROTOBUF_NAMESPACE_ID::int32 vip_level() const;
+  void set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_vip_level() const;
+  void _internal_set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 avatar_frame = 9;
+  void clear_avatar_frame();
+  ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame() const;
+  void set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_avatar_frame() const;
+  void _internal_set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgGamePlayerInfo)
  private:
   class _Internal;
@@ -463,6 +483,8 @@ class MsgGamePlayerInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::uint64 coin_;
   ::PROTOBUF_NAMESPACE_ID::int32 table_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 vip_level_;
+  ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Game_2eproto;
 };
@@ -2140,6 +2162,46 @@ inline void MsgGamePlayerInfo::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::i
 inline void MsgGamePlayerInfo::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
   // @@protoc_insertion_point(field_set:MsgGamePlayerInfo.chair_id)
+}
+
+// int32 vip_level = 8;
+inline void MsgGamePlayerInfo::clear_vip_level() {
+  vip_level_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgGamePlayerInfo::_internal_vip_level() const {
+  return vip_level_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgGamePlayerInfo::vip_level() const {
+  // @@protoc_insertion_point(field_get:MsgGamePlayerInfo.vip_level)
+  return _internal_vip_level();
+}
+inline void MsgGamePlayerInfo::_internal_set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  vip_level_ = value;
+}
+inline void MsgGamePlayerInfo::set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_vip_level(value);
+  // @@protoc_insertion_point(field_set:MsgGamePlayerInfo.vip_level)
+}
+
+// int32 avatar_frame = 9;
+inline void MsgGamePlayerInfo::clear_avatar_frame() {
+  avatar_frame_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgGamePlayerInfo::_internal_avatar_frame() const {
+  return avatar_frame_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgGamePlayerInfo::avatar_frame() const {
+  // @@protoc_insertion_point(field_get:MsgGamePlayerInfo.avatar_frame)
+  return _internal_avatar_frame();
+}
+inline void MsgGamePlayerInfo::_internal_set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  avatar_frame_ = value;
+}
+inline void MsgGamePlayerInfo::set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_avatar_frame(value);
+  // @@protoc_insertion_point(field_set:MsgGamePlayerInfo.avatar_frame)
 }
 
 // -------------------------------------------------------------------

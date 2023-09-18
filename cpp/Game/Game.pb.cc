@@ -212,6 +212,8 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Game_2eproto::offsets[] PROTOB
   PROTOBUF_FIELD_OFFSET(::MsgGamePlayerInfo, coin_),
   PROTOBUF_FIELD_OFFSET(::MsgGamePlayerInfo, table_id_),
   PROTOBUF_FIELD_OFFSET(::MsgGamePlayerInfo, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::MsgGamePlayerInfo, vip_level_),
+  PROTOBUF_FIELD_OFFSET(::MsgGamePlayerInfo, avatar_frame_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgGamePlayerLoginResp, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -285,14 +287,14 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Game_2eproto::offsets[] PROTOB
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::MsgGamePlayerLogin)},
   { 7, -1, sizeof(::MsgGamePlayerInfo)},
-  { 19, -1, sizeof(::MsgGamePlayerLoginResp)},
-  { 30, -1, sizeof(::MsgSyncPlayersScore)},
-  { 37, -1, sizeof(::MsgRoundData)},
-  { 46, -1, sizeof(::MsgTotalRoundData)},
-  { 53, -1, sizeof(::MsgDayData)},
-  { 66, -1, sizeof(::MsgTotalDayData)},
-  { 73, -1, sizeof(::MsgQueryRecord)},
-  { 81, -1, sizeof(::MsgJackpotInfo)},
+  { 21, -1, sizeof(::MsgGamePlayerLoginResp)},
+  { 32, -1, sizeof(::MsgSyncPlayersScore)},
+  { 39, -1, sizeof(::MsgRoundData)},
+  { 48, -1, sizeof(::MsgTotalRoundData)},
+  { 55, -1, sizeof(::MsgDayData)},
+  { 68, -1, sizeof(::MsgTotalDayData)},
+  { 75, -1, sizeof(::MsgQueryRecord)},
+  { 83, -1, sizeof(::MsgJackpotInfo)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -310,29 +312,30 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
 
 const char descriptor_table_protodef_Game_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n\nGame.proto\"7\n\022MsgGamePlayerLogin\022\017\n\007us"
-  "er_id\030\001 \001(\005\022\020\n\010password\030\002 \001(\t\"\216\001\n\021MsgGam"
+  "er_id\030\001 \001(\005\022\020\n\010password\030\002 \001(\t\"\267\001\n\021MsgGam"
   "ePlayerInfo\022\017\n\007user_id\030\001 \001(\005\022\024\n\014beautifu"
   "l_id\030\002 \001(\005\022\020\n\010nickname\030\003 \001(\t\022\016\n\006avatar\030\004"
   " \001(\t\022\014\n\004coin\030\005 \001(\004\022\020\n\010table_id\030\006 \001(\005\022\020\n\010"
-  "chair_id\030\007 \001(\005\"\201\001\n\026MsgGamePlayerLoginRes"
-  "p\022\020\n\010res_code\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\024\n\014"
-  "beautiful_id\030\003 \001(\005\022\020\n\010nickname\030\004 \001(\t\022\016\n\006"
-  "avatar\030\005 \001(\t\022\014\n\004coin\030\006 \001(\004\"5\n\023MsgSyncPla"
-  "yersScore\022\020\n\010chair_id\030\001 \001(\005\022\014\n\004coin\030\002 \001("
-  "\004\"U\n\014MsgRoundData\022\014\n\004time\030\001 \001(\005\022\023\n\013win_u"
-  "ser_id\030\002 \001(\005\022\024\n\014lose_user_id\030\003 \001(\005\022\014\n\004go"
-  "ld\030\004 \001(\003\"I\n\021MsgTotalRoundData\022\021\n\ttotal_n"
-  "um\030\001 \001(\005\022!\n\nround_data\030\002 \003(\0132\r.MsgRoundD"
-  "ata\"\252\001\n\nMsgDayData\022\014\n\004time\030\001 \001(\t\022\030\n\020tota"
-  "l_play_count\030\002 \001(\005\022\022\n\nlose_count\030\003 \001(\005\022\021"
-  "\n\tlose_gold\030\004 \001(\003\022\021\n\twin_count\030\005 \001(\005\022\020\n\010"
-  "win_gold\030\006 \001(\003\022\022\n\ntotal_gold\030\007 \001(\003\022\024\n\014su"
-  "rplus_gold\030\010 \001(\003\"E\n\017MsgTotalDayData\022\021\n\tt"
-  "otal_num\030\001 \001(\005\022\037\n\ndaily_data\030\002 \003(\0132\013.Msg"
-  "DayData\"9\n\016MsgQueryRecord\022\014\n\004page\030\001 \001(\005\022"
-  "\013\n\003num\030\002 \001(\005\022\014\n\004type\030\003 \001(\005\"7\n\016MsgJackpot"
-  "Info\022\017\n\007jackpot\030\001 \001(\003\022\024\n\014fake_jackpot\030\002 "
-  "\001(\003b\006proto3"
+  "chair_id\030\007 \001(\005\022\021\n\tvip_level\030\010 \001(\005\022\024\n\014ava"
+  "tar_frame\030\t \001(\005\"\201\001\n\026MsgGamePlayerLoginRe"
+  "sp\022\020\n\010res_code\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\024\n"
+  "\014beautiful_id\030\003 \001(\005\022\020\n\010nickname\030\004 \001(\t\022\016\n"
+  "\006avatar\030\005 \001(\t\022\014\n\004coin\030\006 \001(\004\"5\n\023MsgSyncPl"
+  "ayersScore\022\020\n\010chair_id\030\001 \001(\005\022\014\n\004coin\030\002 \001"
+  "(\004\"U\n\014MsgRoundData\022\014\n\004time\030\001 \001(\005\022\023\n\013win_"
+  "user_id\030\002 \001(\005\022\024\n\014lose_user_id\030\003 \001(\005\022\014\n\004g"
+  "old\030\004 \001(\003\"I\n\021MsgTotalRoundData\022\021\n\ttotal_"
+  "num\030\001 \001(\005\022!\n\nround_data\030\002 \003(\0132\r.MsgRound"
+  "Data\"\252\001\n\nMsgDayData\022\014\n\004time\030\001 \001(\t\022\030\n\020tot"
+  "al_play_count\030\002 \001(\005\022\022\n\nlose_count\030\003 \001(\005\022"
+  "\021\n\tlose_gold\030\004 \001(\003\022\021\n\twin_count\030\005 \001(\005\022\020\n"
+  "\010win_gold\030\006 \001(\003\022\022\n\ntotal_gold\030\007 \001(\003\022\024\n\014s"
+  "urplus_gold\030\010 \001(\003\"E\n\017MsgTotalDayData\022\021\n\t"
+  "total_num\030\001 \001(\005\022\037\n\ndaily_data\030\002 \003(\0132\013.Ms"
+  "gDayData\"9\n\016MsgQueryRecord\022\014\n\004page\030\001 \001(\005"
+  "\022\013\n\003num\030\002 \001(\005\022\014\n\004type\030\003 \001(\005\"7\n\016MsgJackpo"
+  "tInfo\022\017\n\007jackpot\030\001 \001(\003\022\024\n\014fake_jackpot\030\002"
+  " \001(\003b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Game_2eproto_deps[1] = {
 };
@@ -350,7 +353,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Gam
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Game_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Game_2eproto = {
-  false, false, descriptor_table_protodef_Game_2eproto, "Game.proto", 931,
+  false, false, descriptor_table_protodef_Game_2eproto, "Game.proto", 972,
   &descriptor_table_Game_2eproto_once, descriptor_table_Game_2eproto_sccs, descriptor_table_Game_2eproto_deps, 10, 0,
   schemas, file_default_instances, TableStruct_Game_2eproto::offsets,
   file_level_metadata_Game_2eproto, 10, file_level_enum_descriptors_Game_2eproto, file_level_service_descriptors_Game_2eproto,
@@ -618,8 +621,8 @@ MsgGamePlayerInfo::MsgGamePlayerInfo(const MsgGamePlayerInfo& from)
       GetArena());
   }
   ::memcpy(&user_id_, &from.user_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&chair_id_) -
-    reinterpret_cast<char*>(&user_id_)) + sizeof(chair_id_));
+    static_cast<size_t>(reinterpret_cast<char*>(&avatar_frame_) -
+    reinterpret_cast<char*>(&user_id_)) + sizeof(avatar_frame_));
   // @@protoc_insertion_point(copy_constructor:MsgGamePlayerInfo)
 }
 
@@ -629,8 +632,8 @@ void MsgGamePlayerInfo::SharedCtor() {
   avatar_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&user_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&chair_id_) -
-      reinterpret_cast<char*>(&user_id_)) + sizeof(chair_id_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&avatar_frame_) -
+      reinterpret_cast<char*>(&user_id_)) + sizeof(avatar_frame_));
 }
 
 MsgGamePlayerInfo::~MsgGamePlayerInfo() {
@@ -669,8 +672,8 @@ void MsgGamePlayerInfo::Clear() {
   nickname_.ClearToEmpty();
   avatar_.ClearToEmpty();
   ::memset(&user_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&chair_id_) -
-      reinterpret_cast<char*>(&user_id_)) + sizeof(chair_id_));
+      reinterpret_cast<char*>(&avatar_frame_) -
+      reinterpret_cast<char*>(&user_id_)) + sizeof(avatar_frame_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -731,6 +734,20 @@ const char* MsgGamePlayerInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
       case 7:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
           chair_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 vip_level = 8;
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+          vip_level_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 avatar_frame = 9;
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+          avatar_frame_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -812,6 +829,18 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(7, this->_internal_chair_id(), target);
   }
 
+  // int32 vip_level = 8;
+  if (this->vip_level() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(8, this->_internal_vip_level(), target);
+  }
+
+  // int32 avatar_frame = 9;
+  if (this->avatar_frame() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(9, this->_internal_avatar_frame(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -877,6 +906,20 @@ size_t MsgGamePlayerInfo::ByteSizeLong() const {
         this->_internal_chair_id());
   }
 
+  // int32 vip_level = 8;
+  if (this->vip_level() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_vip_level());
+  }
+
+  // int32 avatar_frame = 9;
+  if (this->avatar_frame() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_avatar_frame());
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
         _internal_metadata_, total_size, &_cached_size_);
@@ -929,6 +972,12 @@ void MsgGamePlayerInfo::MergeFrom(const MsgGamePlayerInfo& from) {
   if (from.chair_id() != 0) {
     _internal_set_chair_id(from._internal_chair_id());
   }
+  if (from.vip_level() != 0) {
+    _internal_set_vip_level(from._internal_vip_level());
+  }
+  if (from.avatar_frame() != 0) {
+    _internal_set_avatar_frame(from._internal_avatar_frame());
+  }
 }
 
 void MsgGamePlayerInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -955,8 +1004,8 @@ void MsgGamePlayerInfo::InternalSwap(MsgGamePlayerInfo* other) {
   nickname_.Swap(&other->nickname_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   avatar_.Swap(&other->avatar_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgGamePlayerInfo, chair_id_)
-      + sizeof(MsgGamePlayerInfo::chair_id_)
+      PROTOBUF_FIELD_OFFSET(MsgGamePlayerInfo, avatar_frame_)
+      + sizeof(MsgGamePlayerInfo::avatar_frame_)
       - PROTOBUF_FIELD_OFFSET(MsgGamePlayerInfo, user_id_)>(
           reinterpret_cast<char*>(&user_id_),
           reinterpret_cast<char*>(&other->user_id_));

@@ -2,10 +2,10 @@ syntax = "proto3";
 
 package XCS;
 
-enum EMsgID
+enum EMsgIDXCS
 {
 		SUB_CS_GAME_START 	= 0; 		//开始游戏(MsgCommonN32)
-		SUB_CS_JACKPOT 		= 1;		//请求彩金分数
+		SUB_CS_JACKPOT 		= 1;		//请求彩金分数()
 		SUB_SC_SEND_ACCPOOL = 2;		//奖池返回(MsgCommonN64)
 		SUB_SC_RESULTS_INFO = 3; 		//玛丽结果返回
 };

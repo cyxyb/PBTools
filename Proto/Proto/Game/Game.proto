@@ -17,6 +17,8 @@ message MsgGamePlayerInfo
 	uint64		coin			= 5;	//玩家金币
 	int32		table_id		= 6;	//玩家座位号
 	int32		chair_id		= 7;	//玩家椅子号
+	int32		vip_level		= 8;	//VIP等级
+	int32		avatar_frame	= 9;	//头像框
 }
 
 //游戏登录返回

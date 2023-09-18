@@ -35,12 +35,12 @@ namespace XCS {
             "BRIRCglnYW1lX3R5cGUYBSABKAUSEQoJd2luX3Njb3JlGAYgASgDEgwKBHRl",
             "bXAYByABKAUSEgoKbGltaXRfY2hpcBgIIAEoBRITCgtsaW1pdF9jaGlwMhgK",
             "IAEoBRISCgpzdXBlcl9yYXRlGAsgASgFEg8KB3JlX3R1cm4YDCABKAUSDwoH",
-            "amFja3BvdBgNIAEoAyplCgZFTXNnSUQSFQoRU1VCX0NTX0dBTUVfU1RBUlQQ",
-            "ABISCg5TVUJfQ1NfSkFDS1BPVBABEhcKE1NVQl9TQ19TRU5EX0FDQ1BPT0wQ",
-            "AhIXChNTVUJfU0NfUkVTVUxUU19JTkZPEANiBnByb3RvMw=="));
+            "amFja3BvdBgNIAEoAypoCglFTXNnSURYQ1MSFQoRU1VCX0NTX0dBTUVfU1RB",
+            "UlQQABISCg5TVUJfQ1NfSkFDS1BPVBABEhcKE1NVQl9TQ19TRU5EX0FDQ1BP",
+            "T0wQAhIXChNTVUJfU0NfUkVTVUxUU19JTkZPEANiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::XCS.EMsgID), }, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::XCS.EMsgIDXCS), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::XCS.SC_SceneInfo), global::XCS.SC_SceneInfo.Parser, new[]{ "CurChip", "FreeCount", "ChipList", "LineRate", "GodScore", "LimitChip", "IlimitChip", "ReTurn", "Jackpot" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::XCS.LineType), global::XCS.LineType.Parser, new[]{ "LineType_" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::XCS.CMD_3D_SC_Result), global::XCS.CMD_3D_SC_Result.Parser, new[]{ "Icon", "LineType", "CaiShenCount", "FreeCount", "GameType", "WinScore", "Temp", "LimitChip", "LimitChip2", "SuperRate", "ReTurn", "Jackpot" }, null, null, null, null)
@@ -50,13 +50,13 @@ namespace XCS {
 
   }
   #region Enums
-  public enum EMsgID {
+  public enum EMsgIDXCS {
     /// <summary>
     ///开始游戏(MsgCommonN32)
     /// </summary>
     [pbr::OriginalName("SUB_CS_GAME_START")] SubCsGameStart = 0,
     /// <summary>
-    ///请求彩金分数
+    ///请求彩金分数()
     /// </summary>
     [pbr::OriginalName("SUB_CS_JACKPOT")] SubCsJackpot = 1,
     /// <summary>
