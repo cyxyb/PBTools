@@ -26,10 +26,10 @@ message MsgSceneInfo
 {
 	int64			  	max_score		= 1;	//最大下注
 	int64			  	table_max_score	= 2;	//最大下注
-	int32			  	cell_score		= 3;	//底分
+	int64			  	cell_score		= 3;	//底分
 	int32				cur_times		= 4;	//当前倍数
 	int32				table_state		= 5;	//桌子状态
-	int32				total_bet_score	= 6;	//桌内总下注
+	int64				total_bet_score	= 6;	//桌内总下注
 	int32				banker_chair_id	= 7;	//庄家椅子号
 	int32				cur_chair_id	= 8;	//当前操作椅子号
 	repeated int32		ming_zhu		= 9;	//明注状态
@@ -49,7 +49,7 @@ message MsgGameStartResp
 	int32				banker_chair_id	= 3;	//庄家椅子号
 	int64				max_score		= 4;	//最大下注
 	int64				max_blind		= 5;	//盲投次数限制
-	int32				cell_score		= 6;	//底分
+	int64				cell_score		= 6;	//底分
 	int64				table_max_score	= 7;	//桌内最大下注
 }
 
@@ -81,7 +81,7 @@ message MsgAddBetResp
 	int32				cur_times		= 2;	//当前倍数
 	int32				current_act		= 3;	//当前操作码
 	int32				add_chair_id	= 4;	//下注玩家椅子号
-	int32				add_score		= 5;	//下注金额
+	int64				add_score		= 5;	//下注金额
 	//int32				compare_state	= 6;	//是否比牌应答
 
 }

@@ -515,13 +515,13 @@ class MsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_table_max_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int32 cell_score = 3;
+  // int64 cell_score = 3;
   void clear_cell_score();
-  ::PROTOBUF_NAMESPACE_ID::int32 cell_score() const;
-  void set_cell_score(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int64 cell_score() const;
+  void set_cell_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_cell_score() const;
-  void _internal_set_cell_score(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_cell_score() const;
+  void _internal_set_cell_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
   // int32 cur_times = 4;
@@ -542,13 +542,13 @@ class MsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_table_state(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 total_bet_score = 6;
+  // int64 total_bet_score = 6;
   void clear_total_bet_score();
-  ::PROTOBUF_NAMESPACE_ID::int32 total_bet_score() const;
-  void set_total_bet_score(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int64 total_bet_score() const;
+  void set_total_bet_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_total_bet_score() const;
-  void _internal_set_total_bet_score(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_total_bet_score() const;
+  void _internal_set_total_bet_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
   // int32 banker_chair_id = 7;
@@ -612,10 +612,10 @@ class MsgSceneInfo PROTOBUF_FINAL :
   ::TeenPatti_India::MsgHandCards* hand_cards_;
   ::PROTOBUF_NAMESPACE_ID::int64 max_score_;
   ::PROTOBUF_NAMESPACE_ID::int64 table_max_score_;
-  ::PROTOBUF_NAMESPACE_ID::int32 cell_score_;
+  ::PROTOBUF_NAMESPACE_ID::int64 cell_score_;
   ::PROTOBUF_NAMESPACE_ID::int32 cur_times_;
   ::PROTOBUF_NAMESPACE_ID::int32 table_state_;
-  ::PROTOBUF_NAMESPACE_ID::int32 total_bet_score_;
+  ::PROTOBUF_NAMESPACE_ID::int64 total_bet_score_;
   ::PROTOBUF_NAMESPACE_ID::int32 banker_chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 cur_chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 cur_chair_act_;
@@ -741,10 +741,10 @@ class MsgGameStartResp PROTOBUF_FINAL :
     kCurChairIdFieldNumber = 1,
     kCurTimesFieldNumber = 2,
     kMaxScoreFieldNumber = 4,
-    kBankerChairIdFieldNumber = 3,
-    kCellScoreFieldNumber = 6,
     kMaxBlindFieldNumber = 5,
+    kCellScoreFieldNumber = 6,
     kTableMaxScoreFieldNumber = 7,
+    kBankerChairIdFieldNumber = 3,
   };
   // int32 cur_chair_id = 1;
   void clear_cur_chair_id();
@@ -773,24 +773,6 @@ class MsgGameStartResp PROTOBUF_FINAL :
   void _internal_set_max_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int32 banker_chair_id = 3;
-  void clear_banker_chair_id();
-  ::PROTOBUF_NAMESPACE_ID::int32 banker_chair_id() const;
-  void set_banker_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_banker_chair_id() const;
-  void _internal_set_banker_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 cell_score = 6;
-  void clear_cell_score();
-  ::PROTOBUF_NAMESPACE_ID::int32 cell_score() const;
-  void set_cell_score(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_cell_score() const;
-  void _internal_set_cell_score(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
   // int64 max_blind = 5;
   void clear_max_blind();
   ::PROTOBUF_NAMESPACE_ID::int64 max_blind() const;
@@ -800,6 +782,15 @@ class MsgGameStartResp PROTOBUF_FINAL :
   void _internal_set_max_blind(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
+  // int64 cell_score = 6;
+  void clear_cell_score();
+  ::PROTOBUF_NAMESPACE_ID::int64 cell_score() const;
+  void set_cell_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_cell_score() const;
+  void _internal_set_cell_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
   // int64 table_max_score = 7;
   void clear_table_max_score();
   ::PROTOBUF_NAMESPACE_ID::int64 table_max_score() const;
@@ -807,6 +798,15 @@ class MsgGameStartResp PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::int64 _internal_table_max_score() const;
   void _internal_set_table_max_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int32 banker_chair_id = 3;
+  void clear_banker_chair_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 banker_chair_id() const;
+  void set_banker_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_banker_chair_id() const;
+  void _internal_set_banker_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:TeenPatti_India.MsgGameStartResp)
@@ -819,10 +819,10 @@ class MsgGameStartResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 cur_chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 cur_times_;
   ::PROTOBUF_NAMESPACE_ID::int64 max_score_;
-  ::PROTOBUF_NAMESPACE_ID::int32 banker_chair_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 cell_score_;
   ::PROTOBUF_NAMESPACE_ID::int64 max_blind_;
+  ::PROTOBUF_NAMESPACE_ID::int64 cell_score_;
   ::PROTOBUF_NAMESPACE_ID::int64 table_max_score_;
+  ::PROTOBUF_NAMESPACE_ID::int32 banker_chair_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_TeenPatti_5fIndia_2eproto;
 };
@@ -1448,13 +1448,13 @@ class MsgAddBetResp PROTOBUF_FINAL :
   void _internal_set_add_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 add_score = 5;
+  // int64 add_score = 5;
   void clear_add_score();
-  ::PROTOBUF_NAMESPACE_ID::int32 add_score() const;
-  void set_add_score(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int64 add_score() const;
+  void set_add_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_add_score() const;
-  void _internal_set_add_score(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_add_score() const;
+  void _internal_set_add_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
   // @@protoc_insertion_point(class_scope:TeenPatti_India.MsgAddBetResp)
@@ -1468,7 +1468,7 @@ class MsgAddBetResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 cur_times_;
   ::PROTOBUF_NAMESPACE_ID::int32 current_act_;
   ::PROTOBUF_NAMESPACE_ID::int32 add_chair_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 add_score_;
+  ::PROTOBUF_NAMESPACE_ID::int64 add_score_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_TeenPatti_5fIndia_2eproto;
 };
@@ -2143,22 +2143,22 @@ inline void MsgSceneInfo::set_table_max_score(::PROTOBUF_NAMESPACE_ID::int64 val
   // @@protoc_insertion_point(field_set:TeenPatti_India.MsgSceneInfo.table_max_score)
 }
 
-// int32 cell_score = 3;
+// int64 cell_score = 3;
 inline void MsgSceneInfo::clear_cell_score() {
-  cell_score_ = 0;
+  cell_score_ = PROTOBUF_LONGLONG(0);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::_internal_cell_score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSceneInfo::_internal_cell_score() const {
   return cell_score_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::cell_score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSceneInfo::cell_score() const {
   // @@protoc_insertion_point(field_get:TeenPatti_India.MsgSceneInfo.cell_score)
   return _internal_cell_score();
 }
-inline void MsgSceneInfo::_internal_set_cell_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgSceneInfo::_internal_set_cell_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   
   cell_score_ = value;
 }
-inline void MsgSceneInfo::set_cell_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgSceneInfo::set_cell_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_cell_score(value);
   // @@protoc_insertion_point(field_set:TeenPatti_India.MsgSceneInfo.cell_score)
 }
@@ -2203,22 +2203,22 @@ inline void MsgSceneInfo::set_table_state(::PROTOBUF_NAMESPACE_ID::int32 value) 
   // @@protoc_insertion_point(field_set:TeenPatti_India.MsgSceneInfo.table_state)
 }
 
-// int32 total_bet_score = 6;
+// int64 total_bet_score = 6;
 inline void MsgSceneInfo::clear_total_bet_score() {
-  total_bet_score_ = 0;
+  total_bet_score_ = PROTOBUF_LONGLONG(0);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::_internal_total_bet_score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSceneInfo::_internal_total_bet_score() const {
   return total_bet_score_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::total_bet_score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSceneInfo::total_bet_score() const {
   // @@protoc_insertion_point(field_get:TeenPatti_India.MsgSceneInfo.total_bet_score)
   return _internal_total_bet_score();
 }
-inline void MsgSceneInfo::_internal_set_total_bet_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgSceneInfo::_internal_set_total_bet_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   
   total_bet_score_ = value;
 }
-inline void MsgSceneInfo::set_total_bet_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgSceneInfo::set_total_bet_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_total_bet_score(value);
   // @@protoc_insertion_point(field_set:TeenPatti_India.MsgSceneInfo.total_bet_score)
 }
@@ -2651,22 +2651,22 @@ inline void MsgGameStartResp::set_max_blind(::PROTOBUF_NAMESPACE_ID::int64 value
   // @@protoc_insertion_point(field_set:TeenPatti_India.MsgGameStartResp.max_blind)
 }
 
-// int32 cell_score = 6;
+// int64 cell_score = 6;
 inline void MsgGameStartResp::clear_cell_score() {
-  cell_score_ = 0;
+  cell_score_ = PROTOBUF_LONGLONG(0);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgGameStartResp::_internal_cell_score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgGameStartResp::_internal_cell_score() const {
   return cell_score_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgGameStartResp::cell_score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgGameStartResp::cell_score() const {
   // @@protoc_insertion_point(field_get:TeenPatti_India.MsgGameStartResp.cell_score)
   return _internal_cell_score();
 }
-inline void MsgGameStartResp::_internal_set_cell_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgGameStartResp::_internal_set_cell_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   
   cell_score_ = value;
 }
-inline void MsgGameStartResp::set_cell_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgGameStartResp::set_cell_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_cell_score(value);
   // @@protoc_insertion_point(field_set:TeenPatti_India.MsgGameStartResp.cell_score)
 }
@@ -2954,22 +2954,22 @@ inline void MsgAddBetResp::set_add_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:TeenPatti_India.MsgAddBetResp.add_chair_id)
 }
 
-// int32 add_score = 5;
+// int64 add_score = 5;
 inline void MsgAddBetResp::clear_add_score() {
-  add_score_ = 0;
+  add_score_ = PROTOBUF_LONGLONG(0);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgAddBetResp::_internal_add_score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgAddBetResp::_internal_add_score() const {
   return add_score_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgAddBetResp::add_score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgAddBetResp::add_score() const {
   // @@protoc_insertion_point(field_get:TeenPatti_India.MsgAddBetResp.add_score)
   return _internal_add_score();
 }
-inline void MsgAddBetResp::_internal_set_add_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgAddBetResp::_internal_set_add_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   
   add_score_ = value;
 }
-inline void MsgAddBetResp::set_add_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgAddBetResp::set_add_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_add_score(value);
   // @@protoc_insertion_point(field_set:TeenPatti_India.MsgAddBetResp.add_score)
 }

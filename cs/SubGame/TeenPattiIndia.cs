@@ -27,9 +27,9 @@ namespace TeenPattiIndia {
             "CiNQcm90by9TdWJHYW1lL1RlZW5QYXR0aV9JbmRpYS5wcm90bxIPVGVlblBh",
             "dHRpX0luZGlhIh0KDE1zZ0hhbmRDYXJkcxINCgVjYXJkcxgBIAMoBSLsAgoM",
             "TXNnU2NlbmVJbmZvEhEKCW1heF9zY29yZRgBIAEoAxIXCg90YWJsZV9tYXhf",
-            "c2NvcmUYAiABKAMSEgoKY2VsbF9zY29yZRgDIAEoBRIRCgljdXJfdGltZXMY",
+            "c2NvcmUYAiABKAMSEgoKY2VsbF9zY29yZRgDIAEoAxIRCgljdXJfdGltZXMY",
             "BCABKAUSEwoLdGFibGVfc3RhdGUYBSABKAUSFwoPdG90YWxfYmV0X3Njb3Jl",
-            "GAYgASgFEhcKD2Jhbmtlcl9jaGFpcl9pZBgHIAEoBRIUCgxjdXJfY2hhaXJf",
+            "GAYgASgDEhcKD2Jhbmtlcl9jaGFpcl9pZBgHIAEoBRIUCgxjdXJfY2hhaXJf",
             "aWQYCCABKAUSEAoIbWluZ196aHUYCSADKAUSMQoKaGFuZF9jYXJkcxgKIAEo",
             "CzIdLlRlZW5QYXR0aV9JbmRpYS5Nc2dIYW5kQ2FyZHMSEwoLcGxheV9zdGF0",
             "dXMYCyADKAUSEgoKcGxheWVyX2JldBgMIAMoBRIVCg1jdXJfY2hhaXJfYWN0",
@@ -37,14 +37,14 @@ namespace TeenPattiIndia {
             "KAgipwEKEE1zZ0dhbWVTdGFydFJlc3ASFAoMY3VyX2NoYWlyX2lkGAEgASgF",
             "EhEKCWN1cl90aW1lcxgCIAEoBRIXCg9iYW5rZXJfY2hhaXJfaWQYAyABKAUS",
             "EQoJbWF4X3Njb3JlGAQgASgDEhEKCW1heF9ibGluZBgFIAEoAxISCgpjZWxs",
-            "X3Njb3JlGAYgASgFEhcKD3RhYmxlX21heF9zY29yZRgHIAEoAyJQCglNc2dB",
+            "X3Njb3JlGAYgASgDEhcKD3RhYmxlX21heF9zY29yZRgHIAEoAyJQCglNc2dB",
             "Y3Rpb24SCwoDYWN0GAEgASgFEhEKCWJldF9zY29yZRgCIAEoAxIUCgxjb21w",
             "YXJlX3VzZXIYAyABKAMSDQoFaXNfb2sYBCABKAgiIQoNTXNnR2l2ZVVwUmVz",
             "cBIQCghjaGFpcl9pZBgBIAEoBSIyCg9Nc2dMb29rQ2FyZFJlc3ASEAoIY2hh",
             "aXJfaWQYASABKAUSDQoFY2FyZHMYAiADKAUidgoNTXNnQWRkQmV0UmVzcBIU",
             "CgxjdXJfY2hhaXJfaWQYASABKAUSEQoJY3VyX3RpbWVzGAIgASgFEhMKC2N1",
             "cnJlbnRfYWN0GAMgASgFEhQKDGFkZF9jaGFpcl9pZBgEIAEoBRIRCglhZGRf",
-            "c2NvcmUYBSABKAUiOgoSTXNnQ29tcGFyZUNhcmRSZXNwEhAKCGNoYWlyX2lk",
+            "c2NvcmUYBSABKAMiOgoSTXNnQ29tcGFyZUNhcmRSZXNwEhAKCGNoYWlyX2lk",
             "GAEgASgFEhIKCmNvbXBhcmVfaWQYAiABKAUirQEKFU1zZ0NvbXBhcmVDYXJk",
             "UmV0UmVzcBIYChBjdXJyZW50X2NoYWlyX2lkGAEgASgFEhMKC2N1cnJlbnRf",
             "YWN0GAIgASgFEg8KB2xvc3RfaWQYAyABKAUSEgoKY29tcGFyZV9pZBgEIAEo",
@@ -373,12 +373,12 @@ namespace TeenPattiIndia {
 
     /// <summary>Field number for the "cell_score" field.</summary>
     public const int CellScoreFieldNumber = 3;
-    private int cellScore_;
+    private long cellScore_;
     /// <summary>
     ///底分
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CellScore {
+    public long CellScore {
       get { return cellScore_; }
       set {
         cellScore_ = value;
@@ -415,12 +415,12 @@ namespace TeenPattiIndia {
 
     /// <summary>Field number for the "total_bet_score" field.</summary>
     public const int TotalBetScoreFieldNumber = 6;
-    private int totalBetScore_;
+    private long totalBetScore_;
     /// <summary>
     ///桌内总下注
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int TotalBetScore {
+    public long TotalBetScore {
       get { return totalBetScore_; }
       set {
         totalBetScore_ = value;
@@ -586,10 +586,10 @@ namespace TeenPattiIndia {
       int hash = 1;
       if (MaxScore != 0L) hash ^= MaxScore.GetHashCode();
       if (TableMaxScore != 0L) hash ^= TableMaxScore.GetHashCode();
-      if (CellScore != 0) hash ^= CellScore.GetHashCode();
+      if (CellScore != 0L) hash ^= CellScore.GetHashCode();
       if (CurTimes != 0) hash ^= CurTimes.GetHashCode();
       if (TableState != 0) hash ^= TableState.GetHashCode();
-      if (TotalBetScore != 0) hash ^= TotalBetScore.GetHashCode();
+      if (TotalBetScore != 0L) hash ^= TotalBetScore.GetHashCode();
       if (BankerChairId != 0) hash ^= BankerChairId.GetHashCode();
       if (CurChairId != 0) hash ^= CurChairId.GetHashCode();
       hash ^= mingZhu_.GetHashCode();
@@ -623,9 +623,9 @@ namespace TeenPattiIndia {
         output.WriteRawTag(16);
         output.WriteInt64(TableMaxScore);
       }
-      if (CellScore != 0) {
+      if (CellScore != 0L) {
         output.WriteRawTag(24);
-        output.WriteInt32(CellScore);
+        output.WriteInt64(CellScore);
       }
       if (CurTimes != 0) {
         output.WriteRawTag(32);
@@ -635,9 +635,9 @@ namespace TeenPattiIndia {
         output.WriteRawTag(40);
         output.WriteInt32(TableState);
       }
-      if (TotalBetScore != 0) {
+      if (TotalBetScore != 0L) {
         output.WriteRawTag(48);
-        output.WriteInt32(TotalBetScore);
+        output.WriteInt64(TotalBetScore);
       }
       if (BankerChairId != 0) {
         output.WriteRawTag(56);
@@ -683,9 +683,9 @@ namespace TeenPattiIndia {
         output.WriteRawTag(16);
         output.WriteInt64(TableMaxScore);
       }
-      if (CellScore != 0) {
+      if (CellScore != 0L) {
         output.WriteRawTag(24);
-        output.WriteInt32(CellScore);
+        output.WriteInt64(CellScore);
       }
       if (CurTimes != 0) {
         output.WriteRawTag(32);
@@ -695,9 +695,9 @@ namespace TeenPattiIndia {
         output.WriteRawTag(40);
         output.WriteInt32(TableState);
       }
-      if (TotalBetScore != 0) {
+      if (TotalBetScore != 0L) {
         output.WriteRawTag(48);
-        output.WriteInt32(TotalBetScore);
+        output.WriteInt64(TotalBetScore);
       }
       if (BankerChairId != 0) {
         output.WriteRawTag(56);
@@ -741,8 +741,8 @@ namespace TeenPattiIndia {
       if (TableMaxScore != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(TableMaxScore);
       }
-      if (CellScore != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CellScore);
+      if (CellScore != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(CellScore);
       }
       if (CurTimes != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(CurTimes);
@@ -750,8 +750,8 @@ namespace TeenPattiIndia {
       if (TableState != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(TableState);
       }
-      if (TotalBetScore != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TotalBetScore);
+      if (TotalBetScore != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(TotalBetScore);
       }
       if (BankerChairId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(BankerChairId);
@@ -791,7 +791,7 @@ namespace TeenPattiIndia {
       if (other.TableMaxScore != 0L) {
         TableMaxScore = other.TableMaxScore;
       }
-      if (other.CellScore != 0) {
+      if (other.CellScore != 0L) {
         CellScore = other.CellScore;
       }
       if (other.CurTimes != 0) {
@@ -800,7 +800,7 @@ namespace TeenPattiIndia {
       if (other.TableState != 0) {
         TableState = other.TableState;
       }
-      if (other.TotalBetScore != 0) {
+      if (other.TotalBetScore != 0L) {
         TotalBetScore = other.TotalBetScore;
       }
       if (other.BankerChairId != 0) {
@@ -850,7 +850,7 @@ namespace TeenPattiIndia {
             break;
           }
           case 24: {
-            CellScore = input.ReadInt32();
+            CellScore = input.ReadInt64();
             break;
           }
           case 32: {
@@ -862,7 +862,7 @@ namespace TeenPattiIndia {
             break;
           }
           case 48: {
-            TotalBetScore = input.ReadInt32();
+            TotalBetScore = input.ReadInt64();
             break;
           }
           case 56: {
@@ -930,7 +930,7 @@ namespace TeenPattiIndia {
             break;
           }
           case 24: {
-            CellScore = input.ReadInt32();
+            CellScore = input.ReadInt64();
             break;
           }
           case 32: {
@@ -942,7 +942,7 @@ namespace TeenPattiIndia {
             break;
           }
           case 48: {
-            TotalBetScore = input.ReadInt32();
+            TotalBetScore = input.ReadInt64();
             break;
           }
           case 56: {
@@ -1113,12 +1113,12 @@ namespace TeenPattiIndia {
 
     /// <summary>Field number for the "cell_score" field.</summary>
     public const int CellScoreFieldNumber = 6;
-    private int cellScore_;
+    private long cellScore_;
     /// <summary>
     ///底分
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CellScore {
+    public long CellScore {
       get { return cellScore_; }
       set {
         cellScore_ = value;
@@ -1170,7 +1170,7 @@ namespace TeenPattiIndia {
       if (BankerChairId != 0) hash ^= BankerChairId.GetHashCode();
       if (MaxScore != 0L) hash ^= MaxScore.GetHashCode();
       if (MaxBlind != 0L) hash ^= MaxBlind.GetHashCode();
-      if (CellScore != 0) hash ^= CellScore.GetHashCode();
+      if (CellScore != 0L) hash ^= CellScore.GetHashCode();
       if (TableMaxScore != 0L) hash ^= TableMaxScore.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1208,9 +1208,9 @@ namespace TeenPattiIndia {
         output.WriteRawTag(40);
         output.WriteInt64(MaxBlind);
       }
-      if (CellScore != 0) {
+      if (CellScore != 0L) {
         output.WriteRawTag(48);
-        output.WriteInt32(CellScore);
+        output.WriteInt64(CellScore);
       }
       if (TableMaxScore != 0L) {
         output.WriteRawTag(56);
@@ -1245,9 +1245,9 @@ namespace TeenPattiIndia {
         output.WriteRawTag(40);
         output.WriteInt64(MaxBlind);
       }
-      if (CellScore != 0) {
+      if (CellScore != 0L) {
         output.WriteRawTag(48);
-        output.WriteInt32(CellScore);
+        output.WriteInt64(CellScore);
       }
       if (TableMaxScore != 0L) {
         output.WriteRawTag(56);
@@ -1277,8 +1277,8 @@ namespace TeenPattiIndia {
       if (MaxBlind != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(MaxBlind);
       }
-      if (CellScore != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CellScore);
+      if (CellScore != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(CellScore);
       }
       if (TableMaxScore != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(TableMaxScore);
@@ -1309,7 +1309,7 @@ namespace TeenPattiIndia {
       if (other.MaxBlind != 0L) {
         MaxBlind = other.MaxBlind;
       }
-      if (other.CellScore != 0) {
+      if (other.CellScore != 0L) {
         CellScore = other.CellScore;
       }
       if (other.TableMaxScore != 0L) {
@@ -1350,7 +1350,7 @@ namespace TeenPattiIndia {
             break;
           }
           case 48: {
-            CellScore = input.ReadInt32();
+            CellScore = input.ReadInt64();
             break;
           }
           case 56: {
@@ -1392,7 +1392,7 @@ namespace TeenPattiIndia {
             break;
           }
           case 48: {
-            CellScore = input.ReadInt32();
+            CellScore = input.ReadInt64();
             break;
           }
           case 56: {
@@ -2187,12 +2187,12 @@ namespace TeenPattiIndia {
 
     /// <summary>Field number for the "add_score" field.</summary>
     public const int AddScoreFieldNumber = 5;
-    private int addScore_;
+    private long addScore_;
     /// <summary>
     ///下注金额
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int AddScore {
+    public long AddScore {
       get { return addScore_; }
       set {
         addScore_ = value;
@@ -2227,7 +2227,7 @@ namespace TeenPattiIndia {
       if (CurTimes != 0) hash ^= CurTimes.GetHashCode();
       if (CurrentAct != 0) hash ^= CurrentAct.GetHashCode();
       if (AddChairId != 0) hash ^= AddChairId.GetHashCode();
-      if (AddScore != 0) hash ^= AddScore.GetHashCode();
+      if (AddScore != 0L) hash ^= AddScore.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2260,9 +2260,9 @@ namespace TeenPattiIndia {
         output.WriteRawTag(32);
         output.WriteInt32(AddChairId);
       }
-      if (AddScore != 0) {
+      if (AddScore != 0L) {
         output.WriteRawTag(40);
-        output.WriteInt32(AddScore);
+        output.WriteInt64(AddScore);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -2289,9 +2289,9 @@ namespace TeenPattiIndia {
         output.WriteRawTag(32);
         output.WriteInt32(AddChairId);
       }
-      if (AddScore != 0) {
+      if (AddScore != 0L) {
         output.WriteRawTag(40);
-        output.WriteInt32(AddScore);
+        output.WriteInt64(AddScore);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -2314,8 +2314,8 @@ namespace TeenPattiIndia {
       if (AddChairId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(AddChairId);
       }
-      if (AddScore != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(AddScore);
+      if (AddScore != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(AddScore);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2340,7 +2340,7 @@ namespace TeenPattiIndia {
       if (other.AddChairId != 0) {
         AddChairId = other.AddChairId;
       }
-      if (other.AddScore != 0) {
+      if (other.AddScore != 0L) {
         AddScore = other.AddScore;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -2374,7 +2374,7 @@ namespace TeenPattiIndia {
             break;
           }
           case 40: {
-            AddScore = input.ReadInt32();
+            AddScore = input.ReadInt64();
             break;
           }
         }
@@ -2408,7 +2408,7 @@ namespace TeenPattiIndia {
             break;
           }
           case 40: {
-            AddScore = input.ReadInt32();
+            AddScore = input.ReadInt64();
             break;
           }
         }

@@ -323,9 +323,9 @@ const char descriptor_table_protodef_TeenPatti_5fIndia_2eproto[] PROTOBUF_SECTIO
   "\n\025TeenPatti_India.proto\022\017TeenPatti_India"
   "\"\035\n\014MsgHandCards\022\r\n\005cards\030\001 \003(\005\"\354\002\n\014MsgS"
   "ceneInfo\022\021\n\tmax_score\030\001 \001(\003\022\027\n\017table_max"
-  "_score\030\002 \001(\003\022\022\n\ncell_score\030\003 \001(\005\022\021\n\tcur_"
+  "_score\030\002 \001(\003\022\022\n\ncell_score\030\003 \001(\003\022\021\n\tcur_"
   "times\030\004 \001(\005\022\023\n\013table_state\030\005 \001(\005\022\027\n\017tota"
-  "l_bet_score\030\006 \001(\005\022\027\n\017banker_chair_id\030\007 \001"
+  "l_bet_score\030\006 \001(\003\022\027\n\017banker_chair_id\030\007 \001"
   "(\005\022\024\n\014cur_chair_id\030\010 \001(\005\022\020\n\010ming_zhu\030\t \003"
   "(\005\0221\n\nhand_cards\030\n \001(\0132\035.TeenPatti_India"
   ".MsgHandCards\022\023\n\013play_status\030\013 \003(\005\022\022\n\npl"
@@ -334,7 +334,7 @@ const char descriptor_table_protodef_TeenPatti_5fIndia_2eproto[] PROTOBUF_SECTIO
   "\001\n\020MsgGameStartResp\022\024\n\014cur_chair_id\030\001 \001("
   "\005\022\021\n\tcur_times\030\002 \001(\005\022\027\n\017banker_chair_id\030"
   "\003 \001(\005\022\021\n\tmax_score\030\004 \001(\003\022\021\n\tmax_blind\030\005 "
-  "\001(\003\022\022\n\ncell_score\030\006 \001(\005\022\027\n\017table_max_sco"
+  "\001(\003\022\022\n\ncell_score\030\006 \001(\003\022\027\n\017table_max_sco"
   "re\030\007 \001(\003\"P\n\tMsgAction\022\013\n\003act\030\001 \001(\005\022\021\n\tbe"
   "t_score\030\002 \001(\003\022\024\n\014compare_user\030\003 \001(\003\022\r\n\005i"
   "s_ok\030\004 \001(\010\"!\n\rMsgGiveUpResp\022\020\n\010chair_id\030"
@@ -342,7 +342,7 @@ const char descriptor_table_protodef_TeenPatti_5fIndia_2eproto[] PROTOBUF_SECTIO
   "(\005\022\r\n\005cards\030\002 \003(\005\"v\n\rMsgAddBetResp\022\024\n\014cu"
   "r_chair_id\030\001 \001(\005\022\021\n\tcur_times\030\002 \001(\005\022\023\n\013c"
   "urrent_act\030\003 \001(\005\022\024\n\014add_chair_id\030\004 \001(\005\022\021"
-  "\n\tadd_score\030\005 \001(\005\":\n\022MsgCompareCardResp\022"
+  "\n\tadd_score\030\005 \001(\003\":\n\022MsgCompareCardResp\022"
   "\020\n\010chair_id\030\001 \001(\005\022\022\n\ncompare_id\030\002 \001(\005\"\255\001"
   "\n\025MsgCompareCardRetResp\022\030\n\020current_chair"
   "_id\030\001 \001(\005\022\023\n\013current_act\030\002 \001(\005\022\017\n\007lost_i"
@@ -726,7 +726,7 @@ const char* MsgSceneInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 cell_score = 3;
+      // int64 cell_score = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           cell_score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
@@ -747,7 +747,7 @@ const char* MsgSceneInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 total_bet_score = 6;
+      // int64 total_bet_score = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
           total_bet_score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
@@ -866,10 +866,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_table_max_score(), target);
   }
 
-  // int32 cell_score = 3;
+  // int64 cell_score = 3;
   if (this->cell_score() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_cell_score(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_cell_score(), target);
   }
 
   // int32 cur_times = 4;
@@ -884,10 +884,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_table_state(), target);
   }
 
-  // int32 total_bet_score = 6;
+  // int64 total_bet_score = 6;
   if (this->total_bet_score() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_total_bet_score(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(6, this->_internal_total_bet_score(), target);
   }
 
   // int32 banker_chair_id = 7;
@@ -1037,10 +1037,10 @@ size_t MsgSceneInfo::ByteSizeLong() const {
         this->_internal_table_max_score());
   }
 
-  // int32 cell_score = 3;
+  // int64 cell_score = 3;
   if (this->cell_score() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_cell_score());
   }
 
@@ -1058,10 +1058,10 @@ size_t MsgSceneInfo::ByteSizeLong() const {
         this->_internal_table_state());
   }
 
-  // int32 total_bet_score = 6;
+  // int64 total_bet_score = 6;
   if (this->total_bet_score() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_total_bet_score());
   }
 
@@ -1223,16 +1223,16 @@ MsgGameStartResp::MsgGameStartResp(const MsgGameStartResp& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&cur_chair_id_, &from.cur_chair_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&table_max_score_) -
-    reinterpret_cast<char*>(&cur_chair_id_)) + sizeof(table_max_score_));
+    static_cast<size_t>(reinterpret_cast<char*>(&banker_chair_id_) -
+    reinterpret_cast<char*>(&cur_chair_id_)) + sizeof(banker_chair_id_));
   // @@protoc_insertion_point(copy_constructor:TeenPatti_India.MsgGameStartResp)
 }
 
 void MsgGameStartResp::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&cur_chair_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&table_max_score_) -
-      reinterpret_cast<char*>(&cur_chair_id_)) + sizeof(table_max_score_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&banker_chair_id_) -
+      reinterpret_cast<char*>(&cur_chair_id_)) + sizeof(banker_chair_id_));
 }
 
 MsgGameStartResp::~MsgGameStartResp() {
@@ -1267,8 +1267,8 @@ void MsgGameStartResp::Clear() {
   (void) cached_has_bits;
 
   ::memset(&cur_chair_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&table_max_score_) -
-      reinterpret_cast<char*>(&cur_chair_id_)) + sizeof(table_max_score_));
+      reinterpret_cast<char*>(&banker_chair_id_) -
+      reinterpret_cast<char*>(&cur_chair_id_)) + sizeof(banker_chair_id_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -1314,7 +1314,7 @@ const char* MsgGameStartResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 cell_score = 6;
+      // int64 cell_score = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
           cell_score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
@@ -1386,10 +1386,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_max_blind(), target);
   }
 
-  // int32 cell_score = 6;
+  // int64 cell_score = 6;
   if (this->cell_score() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_cell_score(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(6, this->_internal_cell_score(), target);
   }
 
   // int64 table_max_score = 7;
@@ -1435,20 +1435,6 @@ size_t MsgGameStartResp::ByteSizeLong() const {
         this->_internal_max_score());
   }
 
-  // int32 banker_chair_id = 3;
-  if (this->banker_chair_id() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_banker_chair_id());
-  }
-
-  // int32 cell_score = 6;
-  if (this->cell_score() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_cell_score());
-  }
-
   // int64 max_blind = 5;
   if (this->max_blind() != 0) {
     total_size += 1 +
@@ -1456,11 +1442,25 @@ size_t MsgGameStartResp::ByteSizeLong() const {
         this->_internal_max_blind());
   }
 
+  // int64 cell_score = 6;
+  if (this->cell_score() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_cell_score());
+  }
+
   // int64 table_max_score = 7;
   if (this->table_max_score() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_table_max_score());
+  }
+
+  // int32 banker_chair_id = 3;
+  if (this->banker_chair_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_banker_chair_id());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1503,17 +1503,17 @@ void MsgGameStartResp::MergeFrom(const MsgGameStartResp& from) {
   if (from.max_score() != 0) {
     _internal_set_max_score(from._internal_max_score());
   }
-  if (from.banker_chair_id() != 0) {
-    _internal_set_banker_chair_id(from._internal_banker_chair_id());
+  if (from.max_blind() != 0) {
+    _internal_set_max_blind(from._internal_max_blind());
   }
   if (from.cell_score() != 0) {
     _internal_set_cell_score(from._internal_cell_score());
   }
-  if (from.max_blind() != 0) {
-    _internal_set_max_blind(from._internal_max_blind());
-  }
   if (from.table_max_score() != 0) {
     _internal_set_table_max_score(from._internal_table_max_score());
+  }
+  if (from.banker_chair_id() != 0) {
+    _internal_set_banker_chair_id(from._internal_banker_chair_id());
   }
 }
 
@@ -1539,8 +1539,8 @@ void MsgGameStartResp::InternalSwap(MsgGameStartResp* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgGameStartResp, table_max_score_)
-      + sizeof(MsgGameStartResp::table_max_score_)
+      PROTOBUF_FIELD_OFFSET(MsgGameStartResp, banker_chair_id_)
+      + sizeof(MsgGameStartResp::banker_chair_id_)
       - PROTOBUF_FIELD_OFFSET(MsgGameStartResp, cur_chair_id_)>(
           reinterpret_cast<char*>(&cur_chair_id_),
           reinterpret_cast<char*>(&other->cur_chair_id_));
@@ -2351,7 +2351,7 @@ const char* MsgAddBetResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 add_score = 5;
+      // int64 add_score = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
           add_score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
@@ -2410,10 +2410,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_add_chair_id(), target);
   }
 
-  // int32 add_score = 5;
+  // int64 add_score = 5;
   if (this->add_score() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_add_score(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_add_score(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -2460,10 +2460,10 @@ size_t MsgAddBetResp::ByteSizeLong() const {
         this->_internal_add_chair_id());
   }
 
-  // int32 add_score = 5;
+  // int64 add_score = 5;
   if (this->add_score() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_add_score());
   }
 
