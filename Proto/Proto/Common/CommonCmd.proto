@@ -113,6 +113,8 @@ enum EMsgIDLogin
 	MsgIDShop_QueryTrumpetPriceResp				= 99;		//查询小喇叭价格返回(MsgCommonN32)
 	MsgIDLogin_QueryServerTime					= 100;		//请求服务器时间(MsgCommonBool)
 	MsgIDLogin_QueryServerTimeResp				= 101;		//请求服务器时间返回(MsgCommonN64)
+	MsgIDLogin_Heart							= 102;		//心跳(MsgCommonBool)
+	MsgIDLogin_HeartResp						= 103;		//心跳返回(MsgCommonBool)
 }
 
 enum EMsgIDGame
