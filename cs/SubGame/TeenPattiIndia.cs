@@ -45,25 +45,25 @@ namespace TeenPattiIndia {
             "aW9uEgsKA2FjdBgBIAEoBRIRCgliZXRfc2NvcmUYAiABKAMSFAoMY29tcGFy",
             "ZV91c2VyGAMgASgDEg0KBWlzX29rGAQgASgIIiEKDU1zZ0dpdmVVcFJlc3AS",
             "EAoIY2hhaXJfaWQYASABKAUiMgoPTXNnTG9va0NhcmRSZXNwEhAKCGNoYWly",
-            "X2lkGAEgASgFEg0KBWNhcmRzGAIgAygFInYKDU1zZ0FkZEJldFJlc3ASFAoM",
-            "Y3VyX2NoYWlyX2lkGAEgASgFEhEKCWN1cl90aW1lcxgCIAEoBRITCgtjdXJy",
-            "ZW50X2FjdBgDIAEoBRIUCgxhZGRfY2hhaXJfaWQYBCABKAUSEQoJYWRkX3Nj",
-            "b3JlGAUgASgDIjoKEk1zZ0NvbXBhcmVDYXJkUmVzcBIQCghjaGFpcl9pZBgB",
-            "IAEoBRISCgpjb21wYXJlX2lkGAIgASgFIq0BChVNc2dDb21wYXJlQ2FyZFJl",
-            "dFJlc3ASGAoQY3VycmVudF9jaGFpcl9pZBgBIAEoBRITCgtjdXJyZW50X2Fj",
-            "dBgCIAEoBRIPCgdsb3N0X2lkGAMgASgFEhIKCmNvbXBhcmVfaWQYBCABKAUS",
-            "EgoKcGFzc2l2ZV9pZBgFIAEoBRIVCg1jb21wYXJlX2NhcmRzGAYgAygFEhUK",
-            "DXBhc3NpdmVfY2FyZHMYByADKAUifQoNTXNnR2FtZVJlc3VsdBIQCghnYW1l",
-            "X3RheBgBIAEoBRISCgpnYW1lX3Njb3JlGAIgAygDEjMKDHBsYXllcl9oYW5k",
-            "cxgDIAMoCzIdLlRlZW5QYXR0aV9JbmRpYS5Nc2dIYW5kQ2FyZHMSEQoJZW5k",
-            "X3N0YXRlGAQgASgFKroCCg1FTXNnSURTdWJHYW1lEhUKEU1zZ0lEU3ViR2Ft",
-            "ZV9OdWxsEAASHgoaTXNnSURTdWJHYW1lX0dhbWVTdGFydFJlc3AQARIXChNN",
-            "c2dJRFN1YkdhbWVfQWN0aW9uEAISGwoXTXNnSURTdWJHYW1lX0dpdmVVcFJl",
-            "c3AQAxIZChVNc2dJRFN1YkdhbWVfTG9va0NhcmQQBBIbChdNc2dJRFN1Ykdh",
-            "bWVfQWRkQmV0UmVzcBAFEiAKHE1zZ0lEU3ViR2FtZV9Db21wYXJlQ2FyZFJl",
-            "c3AQBhIfChtNc2dJRFN1YkdhbWVfQ29tcGFyZVJldFJlc3AQBxIfChtNc2dJ",
-            "RFN1YkdhbWVfR2FtZVJlc3VsdFJlc3AQCBIgChxNc2dJRFN1YkdhbWVfTm90",
-            "aWZ5U3RhdGVSZXNwEAliBnByb3RvMw=="));
+            "X2lkGAEgASgFEg0KBWNhcmRzGAIgAygFIokBCg1Nc2dBZGRCZXRSZXNwEhQK",
+            "DGN1cl9jaGFpcl9pZBgBIAEoBRIRCgljdXJfdGltZXMYAiABKAUSEwoLY3Vy",
+            "cmVudF9hY3QYAyABKAUSFAoMYWRkX2NoYWlyX2lkGAQgASgFEhEKCWFkZF9z",
+            "Y29yZRgFIAEoAxIRCglvcGVyX3RpbWUYBiABKAMiOgoSTXNnQ29tcGFyZUNh",
+            "cmRSZXNwEhAKCGNoYWlyX2lkGAEgASgFEhIKCmNvbXBhcmVfaWQYAiABKAUi",
+            "rQEKFU1zZ0NvbXBhcmVDYXJkUmV0UmVzcBIYChBjdXJyZW50X2NoYWlyX2lk",
+            "GAEgASgFEhMKC2N1cnJlbnRfYWN0GAIgASgFEg8KB2xvc3RfaWQYAyABKAUS",
+            "EgoKY29tcGFyZV9pZBgEIAEoBRISCgpwYXNzaXZlX2lkGAUgASgFEhUKDWNv",
+            "bXBhcmVfY2FyZHMYBiADKAUSFQoNcGFzc2l2ZV9jYXJkcxgHIAMoBSJ9Cg1N",
+            "c2dHYW1lUmVzdWx0EhAKCGdhbWVfdGF4GAEgASgFEhIKCmdhbWVfc2NvcmUY",
+            "AiADKAMSMwoMcGxheWVyX2hhbmRzGAMgAygLMh0uVGVlblBhdHRpX0luZGlh",
+            "Lk1zZ0hhbmRDYXJkcxIRCgllbmRfc3RhdGUYBCABKAUqugIKDUVNc2dJRFN1",
+            "YkdhbWUSFQoRTXNnSURTdWJHYW1lX051bGwQABIeChpNc2dJRFN1YkdhbWVf",
+            "R2FtZVN0YXJ0UmVzcBABEhcKE01zZ0lEU3ViR2FtZV9BY3Rpb24QAhIbChdN",
+            "c2dJRFN1YkdhbWVfR2l2ZVVwUmVzcBADEhkKFU1zZ0lEU3ViR2FtZV9Mb29r",
+            "Q2FyZBAEEhsKF01zZ0lEU3ViR2FtZV9BZGRCZXRSZXNwEAUSIAocTXNnSURT",
+            "dWJHYW1lX0NvbXBhcmVDYXJkUmVzcBAGEh8KG01zZ0lEU3ViR2FtZV9Db21w",
+            "YXJlUmV0UmVzcBAHEh8KG01zZ0lEU3ViR2FtZV9HYW1lUmVzdWx0UmVzcBAI",
+            "EiAKHE1zZ0lEU3ViR2FtZV9Ob3RpZnlTdGF0ZVJlc3AQCWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::TeenPattiIndia.EMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -74,7 +74,7 @@ namespace TeenPattiIndia {
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.MsgAction), global::TeenPattiIndia.MsgAction.Parser, new[]{ "Act", "BetScore", "CompareUser", "IsOk" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.MsgGiveUpResp), global::TeenPattiIndia.MsgGiveUpResp.Parser, new[]{ "ChairId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.MsgLookCardResp), global::TeenPattiIndia.MsgLookCardResp.Parser, new[]{ "ChairId", "Cards" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.MsgAddBetResp), global::TeenPattiIndia.MsgAddBetResp.Parser, new[]{ "CurChairId", "CurTimes", "CurrentAct", "AddChairId", "AddScore" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.MsgAddBetResp), global::TeenPattiIndia.MsgAddBetResp.Parser, new[]{ "CurChairId", "CurTimes", "CurrentAct", "AddChairId", "AddScore", "OperTime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.MsgCompareCardResp), global::TeenPattiIndia.MsgCompareCardResp.Parser, new[]{ "ChairId", "CompareId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.MsgCompareCardRetResp), global::TeenPattiIndia.MsgCompareCardRetResp.Parser, new[]{ "CurrentChairId", "CurrentAct", "LostId", "CompareId", "PassiveId", "CompareCards", "PassiveCards" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.MsgGameResult), global::TeenPattiIndia.MsgGameResult.Parser, new[]{ "GameTax", "GameScore", "PlayerHands", "EndState" }, null, null, null, null)
@@ -2551,6 +2551,7 @@ namespace TeenPattiIndia {
       currentAct_ = other.currentAct_;
       addChairId_ = other.addChairId_;
       addScore_ = other.addScore_;
+      operTime_ = other.operTime_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2629,6 +2630,20 @@ namespace TeenPattiIndia {
       }
     }
 
+    /// <summary>Field number for the "oper_time" field.</summary>
+    public const int OperTimeFieldNumber = 6;
+    private long operTime_;
+    /// <summary>
+    ///操作时间
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long OperTime {
+      get { return operTime_; }
+      set {
+        operTime_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as MsgAddBetResp);
@@ -2647,6 +2662,7 @@ namespace TeenPattiIndia {
       if (CurrentAct != other.CurrentAct) return false;
       if (AddChairId != other.AddChairId) return false;
       if (AddScore != other.AddScore) return false;
+      if (OperTime != other.OperTime) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2658,6 +2674,7 @@ namespace TeenPattiIndia {
       if (CurrentAct != 0) hash ^= CurrentAct.GetHashCode();
       if (AddChairId != 0) hash ^= AddChairId.GetHashCode();
       if (AddScore != 0L) hash ^= AddScore.GetHashCode();
+      if (OperTime != 0L) hash ^= OperTime.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2694,6 +2711,10 @@ namespace TeenPattiIndia {
         output.WriteRawTag(40);
         output.WriteInt64(AddScore);
       }
+      if (OperTime != 0L) {
+        output.WriteRawTag(48);
+        output.WriteInt64(OperTime);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2723,6 +2744,10 @@ namespace TeenPattiIndia {
         output.WriteRawTag(40);
         output.WriteInt64(AddScore);
       }
+      if (OperTime != 0L) {
+        output.WriteRawTag(48);
+        output.WriteInt64(OperTime);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2746,6 +2771,9 @@ namespace TeenPattiIndia {
       }
       if (AddScore != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(AddScore);
+      }
+      if (OperTime != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(OperTime);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2772,6 +2800,9 @@ namespace TeenPattiIndia {
       }
       if (other.AddScore != 0L) {
         AddScore = other.AddScore;
+      }
+      if (other.OperTime != 0L) {
+        OperTime = other.OperTime;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2807,6 +2838,10 @@ namespace TeenPattiIndia {
             AddScore = input.ReadInt64();
             break;
           }
+          case 48: {
+            OperTime = input.ReadInt64();
+            break;
+          }
         }
       }
     #endif
@@ -2839,6 +2874,10 @@ namespace TeenPattiIndia {
           }
           case 40: {
             AddScore = input.ReadInt64();
+            break;
+          }
+          case 48: {
+            OperTime = input.ReadInt64();
             break;
           }
         }

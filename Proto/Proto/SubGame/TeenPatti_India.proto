@@ -14,6 +14,8 @@ enum EMsgIDSubGame
 	MsgIDSubGame_CompareRetResp			= 7;	//玩家比牌结果(MsgCompareCardRetResp)
 	MsgIDSubGame_GameResultResp			= 8;	//玩家下注记录(MsgGameResultResp)
 	MsgIDSubGame_NotifyStateResp		= 9;	//桌子状态
+
+	/////////////////////////机器人消息///////////////////////
 }
 
 message MsgHandCards
@@ -94,7 +96,8 @@ message MsgAddBetResp
 	int32				current_act		= 3;	//当前操作码
 	int32				add_chair_id	= 4;	//下注玩家椅子号
 	int64				add_score		= 5;	//下注金额
-	//int32				compare_state	= 6;	//是否比牌应答
+	int64				oper_time		= 6;	//操作时间
+	//int32				compare_state	= 7;	//是否比牌应答
 
 }
 
@@ -128,3 +131,4 @@ message MsgGameResult
 }                                           
 
 
+//////////////////////////////////////////////////////////////机器人消息///////////////////////////////////////

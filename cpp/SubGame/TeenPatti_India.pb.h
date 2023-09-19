@@ -1598,6 +1598,7 @@ class MsgAddBetResp PROTOBUF_FINAL :
     kCurrentActFieldNumber = 3,
     kAddChairIdFieldNumber = 4,
     kAddScoreFieldNumber = 5,
+    kOperTimeFieldNumber = 6,
   };
   // int32 cur_chair_id = 1;
   void clear_cur_chair_id();
@@ -1644,6 +1645,15 @@ class MsgAddBetResp PROTOBUF_FINAL :
   void _internal_set_add_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
+  // int64 oper_time = 6;
+  void clear_oper_time();
+  ::PROTOBUF_NAMESPACE_ID::int64 oper_time() const;
+  void set_oper_time(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_oper_time() const;
+  void _internal_set_oper_time(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:TeenPatti_India.MsgAddBetResp)
  private:
   class _Internal;
@@ -1656,6 +1666,7 @@ class MsgAddBetResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 current_act_;
   ::PROTOBUF_NAMESPACE_ID::int32 add_chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int64 add_score_;
+  ::PROTOBUF_NAMESPACE_ID::int64 oper_time_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_TeenPatti_5fIndia_2eproto;
 };
@@ -3323,6 +3334,26 @@ inline void MsgAddBetResp::_internal_set_add_score(::PROTOBUF_NAMESPACE_ID::int6
 inline void MsgAddBetResp::set_add_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_add_score(value);
   // @@protoc_insertion_point(field_set:TeenPatti_India.MsgAddBetResp.add_score)
+}
+
+// int64 oper_time = 6;
+inline void MsgAddBetResp::clear_oper_time() {
+  oper_time_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgAddBetResp::_internal_oper_time() const {
+  return oper_time_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgAddBetResp::oper_time() const {
+  // @@protoc_insertion_point(field_get:TeenPatti_India.MsgAddBetResp.oper_time)
+  return _internal_oper_time();
+}
+inline void MsgAddBetResp::_internal_set_oper_time(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  oper_time_ = value;
+}
+inline void MsgAddBetResp::set_oper_time(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_oper_time(value);
+  // @@protoc_insertion_point(field_set:TeenPatti_India.MsgAddBetResp.oper_time)
 }
 
 // -------------------------------------------------------------------
