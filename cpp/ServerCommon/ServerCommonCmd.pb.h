@@ -244,6 +244,8 @@ enum EMsgIDDB : int {
   DB2LOGIN_BuyGoodsResp = 1069,
   LOGIN2DB_QueryTrumpetPrice = 1070,
   DB2LOGIN_QueryTrumpetPriceResp = 1071,
+  LOGIN2DB_QuerySubAgentInfo = 1072,
+  DB2LOGIN_QuerySubAgentInfoResp = 1073,
   GAME2DB_Login = 2001,
   DB2GAME_LoginResp = 2002,
   GAME2DB_LoadCheatRate = 2003,

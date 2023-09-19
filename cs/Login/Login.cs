@@ -131,8 +131,13 @@ public static partial class LoginReflection {
           "YV9jb2RlGAEgASgJEg0KBXBob25lGAIgASgJIiwKB01zZ0l0ZW0SDwoHaXRl",
           "bV9pZBgBIAEoBRIQCghpdGVtX251bRgCIAEoAyInCg1Nc2dQbGF5ZXJJdGVt",
           "EhYKBGl0ZW0YASADKAsyCC5Nc2dJdGVtIjoKE01zZ0JhbmtRdWVyeU5pY25h",
-          "bWUSEQoJcmV0X1ZhbHVlGAEgASgFEhAKCG5pY2tuYW1lGAIgASgJYgZwcm90",
-          "bzM="));
+          "bWUSEQoJcmV0X1ZhbHVlGAEgASgFEhAKCG5pY2tuYW1lGAIgASgJIp4BChZN",
+          "c2dTdWJhZ2VudEluZm9ybWF0aW9uEhYKDmFnZW50X25pY2tuYW1lGAEgASgJ",
+          "EhUKDWFnZW50X3VzZXJfaWQYAiABKAUSEgoKYWdlbnRfdHlwZRgDIAEoBRIW",
+          "Cg50b3RhbF9zaGlmdF90bxgEIAEoAxIWCg50b3RhbF9yb2xsX291dBgFIAEo",
+          "AxIRCgl2aXBfbGV2ZWwYBiABKAUiSwocTXNnVHRvdGFsU3ViYWdlbnRJbmZv",
+          "cm1hdGlvbhIrCgphZ2VudF9pbmZvGAEgAygLMhcuTXNnU3ViYWdlbnRJbmZv",
+          "cm1hdGlvbmIGcHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -182,7 +187,9 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPhoneCode), global::MsgPhoneCode.Parser, new[]{ "AreaCode", "Phone" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgItem), global::MsgItem.Parser, new[]{ "ItemId", "ItemNum" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPlayerItem), global::MsgPlayerItem.Parser, new[]{ "Item" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankQueryNicname), global::MsgBankQueryNicname.Parser, new[]{ "RetValue", "Nickname" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankQueryNicname), global::MsgBankQueryNicname.Parser, new[]{ "RetValue", "Nickname" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgSubagentInformation), global::MsgSubagentInformation.Parser, new[]{ "AgentNickname", "AgentUserId", "AgentType", "TotalShiftTo", "TotalRollOut", "VipLevel" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgTtotalSubagentInformation), global::MsgTtotalSubagentInformation.Parser, new[]{ "AgentInfo" }, null, null, null, null)
         }));
   }
   #endregion
@@ -14386,6 +14393,537 @@ public sealed partial class MsgBankQueryNicname : pb::IMessage<MsgBankQueryNicna
         }
         case 18: {
           Nickname = input.ReadString();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+public sealed partial class MsgSubagentInformation : pb::IMessage<MsgSubagentInformation>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgSubagentInformation> _parser = new pb::MessageParser<MsgSubagentInformation>(() => new MsgSubagentInformation());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgSubagentInformation> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[47]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgSubagentInformation() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgSubagentInformation(MsgSubagentInformation other) : this() {
+    agentNickname_ = other.agentNickname_;
+    agentUserId_ = other.agentUserId_;
+    agentType_ = other.agentType_;
+    totalShiftTo_ = other.totalShiftTo_;
+    totalRollOut_ = other.totalRollOut_;
+    vipLevel_ = other.vipLevel_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgSubagentInformation Clone() {
+    return new MsgSubagentInformation(this);
+  }
+
+  /// <summary>Field number for the "agent_nickname" field.</summary>
+  public const int AgentNicknameFieldNumber = 1;
+  private string agentNickname_ = "";
+  /// <summary>
+  ///代理昵称
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string AgentNickname {
+    get { return agentNickname_; }
+    set {
+      agentNickname_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "agent_user_id" field.</summary>
+  public const int AgentUserIdFieldNumber = 2;
+  private int agentUserId_;
+  /// <summary>
+  ///代理id
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int AgentUserId {
+    get { return agentUserId_; }
+    set {
+      agentUserId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "agent_type" field.</summary>
+  public const int AgentTypeFieldNumber = 3;
+  private int agentType_;
+  /// <summary>
+  ///代理身份
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int AgentType {
+    get { return agentType_; }
+    set {
+      agentType_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "total_shift_to" field.</summary>
+  public const int TotalShiftToFieldNumber = 4;
+  private long totalShiftTo_;
+  /// <summary>
+  ///总转入
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public long TotalShiftTo {
+    get { return totalShiftTo_; }
+    set {
+      totalShiftTo_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "total_roll_out" field.</summary>
+  public const int TotalRollOutFieldNumber = 5;
+  private long totalRollOut_;
+  /// <summary>
+  ///总转出
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public long TotalRollOut {
+    get { return totalRollOut_; }
+    set {
+      totalRollOut_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "vip_level" field.</summary>
+  public const int VipLevelFieldNumber = 6;
+  private int vipLevel_;
+  /// <summary>
+  ///代理身份
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int VipLevel {
+    get { return vipLevel_; }
+    set {
+      vipLevel_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgSubagentInformation);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgSubagentInformation other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (AgentNickname != other.AgentNickname) return false;
+    if (AgentUserId != other.AgentUserId) return false;
+    if (AgentType != other.AgentType) return false;
+    if (TotalShiftTo != other.TotalShiftTo) return false;
+    if (TotalRollOut != other.TotalRollOut) return false;
+    if (VipLevel != other.VipLevel) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (AgentNickname.Length != 0) hash ^= AgentNickname.GetHashCode();
+    if (AgentUserId != 0) hash ^= AgentUserId.GetHashCode();
+    if (AgentType != 0) hash ^= AgentType.GetHashCode();
+    if (TotalShiftTo != 0L) hash ^= TotalShiftTo.GetHashCode();
+    if (TotalRollOut != 0L) hash ^= TotalRollOut.GetHashCode();
+    if (VipLevel != 0) hash ^= VipLevel.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (AgentNickname.Length != 0) {
+      output.WriteRawTag(10);
+      output.WriteString(AgentNickname);
+    }
+    if (AgentUserId != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(AgentUserId);
+    }
+    if (AgentType != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(AgentType);
+    }
+    if (TotalShiftTo != 0L) {
+      output.WriteRawTag(32);
+      output.WriteInt64(TotalShiftTo);
+    }
+    if (TotalRollOut != 0L) {
+      output.WriteRawTag(40);
+      output.WriteInt64(TotalRollOut);
+    }
+    if (VipLevel != 0) {
+      output.WriteRawTag(48);
+      output.WriteInt32(VipLevel);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (AgentNickname.Length != 0) {
+      output.WriteRawTag(10);
+      output.WriteString(AgentNickname);
+    }
+    if (AgentUserId != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(AgentUserId);
+    }
+    if (AgentType != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(AgentType);
+    }
+    if (TotalShiftTo != 0L) {
+      output.WriteRawTag(32);
+      output.WriteInt64(TotalShiftTo);
+    }
+    if (TotalRollOut != 0L) {
+      output.WriteRawTag(40);
+      output.WriteInt64(TotalRollOut);
+    }
+    if (VipLevel != 0) {
+      output.WriteRawTag(48);
+      output.WriteInt32(VipLevel);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (AgentNickname.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(AgentNickname);
+    }
+    if (AgentUserId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(AgentUserId);
+    }
+    if (AgentType != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(AgentType);
+    }
+    if (TotalShiftTo != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(TotalShiftTo);
+    }
+    if (TotalRollOut != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(TotalRollOut);
+    }
+    if (VipLevel != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(VipLevel);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgSubagentInformation other) {
+    if (other == null) {
+      return;
+    }
+    if (other.AgentNickname.Length != 0) {
+      AgentNickname = other.AgentNickname;
+    }
+    if (other.AgentUserId != 0) {
+      AgentUserId = other.AgentUserId;
+    }
+    if (other.AgentType != 0) {
+      AgentType = other.AgentType;
+    }
+    if (other.TotalShiftTo != 0L) {
+      TotalShiftTo = other.TotalShiftTo;
+    }
+    if (other.TotalRollOut != 0L) {
+      TotalRollOut = other.TotalRollOut;
+    }
+    if (other.VipLevel != 0) {
+      VipLevel = other.VipLevel;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 10: {
+          AgentNickname = input.ReadString();
+          break;
+        }
+        case 16: {
+          AgentUserId = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          AgentType = input.ReadInt32();
+          break;
+        }
+        case 32: {
+          TotalShiftTo = input.ReadInt64();
+          break;
+        }
+        case 40: {
+          TotalRollOut = input.ReadInt64();
+          break;
+        }
+        case 48: {
+          VipLevel = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 10: {
+          AgentNickname = input.ReadString();
+          break;
+        }
+        case 16: {
+          AgentUserId = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          AgentType = input.ReadInt32();
+          break;
+        }
+        case 32: {
+          TotalShiftTo = input.ReadInt64();
+          break;
+        }
+        case 40: {
+          TotalRollOut = input.ReadInt64();
+          break;
+        }
+        case 48: {
+          VipLevel = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+public sealed partial class MsgTtotalSubagentInformation : pb::IMessage<MsgTtotalSubagentInformation>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgTtotalSubagentInformation> _parser = new pb::MessageParser<MsgTtotalSubagentInformation>(() => new MsgTtotalSubagentInformation());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgTtotalSubagentInformation> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[48]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgTtotalSubagentInformation() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgTtotalSubagentInformation(MsgTtotalSubagentInformation other) : this() {
+    agentInfo_ = other.agentInfo_.Clone();
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgTtotalSubagentInformation Clone() {
+    return new MsgTtotalSubagentInformation(this);
+  }
+
+  /// <summary>Field number for the "agent_info" field.</summary>
+  public const int AgentInfoFieldNumber = 1;
+  private static readonly pb::FieldCodec<global::MsgSubagentInformation> _repeated_agentInfo_codec
+      = pb::FieldCodec.ForMessage(10, global::MsgSubagentInformation.Parser);
+  private readonly pbc::RepeatedField<global::MsgSubagentInformation> agentInfo_ = new pbc::RepeatedField<global::MsgSubagentInformation>();
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<global::MsgSubagentInformation> AgentInfo {
+    get { return agentInfo_; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgTtotalSubagentInformation);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgTtotalSubagentInformation other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if(!agentInfo_.Equals(other.agentInfo_)) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    hash ^= agentInfo_.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    agentInfo_.WriteTo(output, _repeated_agentInfo_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    agentInfo_.WriteTo(ref output, _repeated_agentInfo_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    size += agentInfo_.CalculateSize(_repeated_agentInfo_codec);
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgTtotalSubagentInformation other) {
+    if (other == null) {
+      return;
+    }
+    agentInfo_.Add(other.agentInfo_);
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 10: {
+          agentInfo_.AddEntriesFrom(input, _repeated_agentInfo_codec);
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 10: {
+          agentInfo_.AddEntriesFrom(ref input, _repeated_agentInfo_codec);
           break;
         }
       }

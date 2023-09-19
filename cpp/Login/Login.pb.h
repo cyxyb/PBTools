@@ -46,7 +46,7 @@ struct TableStruct_Login_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[47]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[49]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -161,12 +161,18 @@ extern MsgRechargeInfoDefaultTypeInternal _MsgRechargeInfo_default_instance_;
 class MsgShareData;
 class MsgShareDataDefaultTypeInternal;
 extern MsgShareDataDefaultTypeInternal _MsgShareData_default_instance_;
+class MsgSubagentInformation;
+class MsgSubagentInformationDefaultTypeInternal;
+extern MsgSubagentInformationDefaultTypeInternal _MsgSubagentInformation_default_instance_;
 class MsgTopInfo;
 class MsgTopInfoDefaultTypeInternal;
 extern MsgTopInfoDefaultTypeInternal _MsgTopInfo_default_instance_;
 class MsgTopListResp;
 class MsgTopListRespDefaultTypeInternal;
 extern MsgTopListRespDefaultTypeInternal _MsgTopListResp_default_instance_;
+class MsgTtotalSubagentInformation;
+class MsgTtotalSubagentInformationDefaultTypeInternal;
+extern MsgTtotalSubagentInformationDefaultTypeInternal _MsgTtotalSubagentInformation_default_instance_;
 class MsgTurnCfg;
 class MsgTurnCfgDefaultTypeInternal;
 extern MsgTurnCfgDefaultTypeInternal _MsgTurnCfg_default_instance_;
@@ -231,8 +237,10 @@ template<> ::MsgQueryRebateRecord* Arena::CreateMaybeMessage<::MsgQueryRebateRec
 template<> ::MsgQueryRebateRecordInfo* Arena::CreateMaybeMessage<::MsgQueryRebateRecordInfo>(Arena*);
 template<> ::MsgRechargeInfo* Arena::CreateMaybeMessage<::MsgRechargeInfo>(Arena*);
 template<> ::MsgShareData* Arena::CreateMaybeMessage<::MsgShareData>(Arena*);
+template<> ::MsgSubagentInformation* Arena::CreateMaybeMessage<::MsgSubagentInformation>(Arena*);
 template<> ::MsgTopInfo* Arena::CreateMaybeMessage<::MsgTopInfo>(Arena*);
 template<> ::MsgTopListResp* Arena::CreateMaybeMessage<::MsgTopListResp>(Arena*);
+template<> ::MsgTtotalSubagentInformation* Arena::CreateMaybeMessage<::MsgTtotalSubagentInformation>(Arena*);
 template<> ::MsgTurnCfg* Arena::CreateMaybeMessage<::MsgTurnCfg>(Arena*);
 template<> ::MsgTurnPlayInfo* Arena::CreateMaybeMessage<::MsgTurnPlayInfo>(Arena*);
 template<> ::MsgTurntable* Arena::CreateMaybeMessage<::MsgTurntable>(Arena*);
@@ -8784,6 +8792,349 @@ class MsgBankQueryNicname PROTOBUF_FINAL :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
+// -------------------------------------------------------------------
+
+class MsgSubagentInformation PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgSubagentInformation) */ {
+ public:
+  inline MsgSubagentInformation() : MsgSubagentInformation(nullptr) {}
+  virtual ~MsgSubagentInformation();
+
+  MsgSubagentInformation(const MsgSubagentInformation& from);
+  MsgSubagentInformation(MsgSubagentInformation&& from) noexcept
+    : MsgSubagentInformation() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgSubagentInformation& operator=(const MsgSubagentInformation& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgSubagentInformation& operator=(MsgSubagentInformation&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgSubagentInformation& default_instance();
+
+  static inline const MsgSubagentInformation* internal_default_instance() {
+    return reinterpret_cast<const MsgSubagentInformation*>(
+               &_MsgSubagentInformation_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    47;
+
+  friend void swap(MsgSubagentInformation& a, MsgSubagentInformation& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgSubagentInformation* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgSubagentInformation* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgSubagentInformation* New() const final {
+    return CreateMaybeMessage<MsgSubagentInformation>(nullptr);
+  }
+
+  MsgSubagentInformation* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgSubagentInformation>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgSubagentInformation& from);
+  void MergeFrom(const MsgSubagentInformation& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgSubagentInformation* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgSubagentInformation";
+  }
+  protected:
+  explicit MsgSubagentInformation(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kAgentNicknameFieldNumber = 1,
+    kAgentUserIdFieldNumber = 2,
+    kAgentTypeFieldNumber = 3,
+    kTotalShiftToFieldNumber = 4,
+    kTotalRollOutFieldNumber = 5,
+    kVipLevelFieldNumber = 6,
+  };
+  // string agent_nickname = 1;
+  void clear_agent_nickname();
+  const std::string& agent_nickname() const;
+  void set_agent_nickname(const std::string& value);
+  void set_agent_nickname(std::string&& value);
+  void set_agent_nickname(const char* value);
+  void set_agent_nickname(const char* value, size_t size);
+  std::string* mutable_agent_nickname();
+  std::string* release_agent_nickname();
+  void set_allocated_agent_nickname(std::string* agent_nickname);
+  private:
+  const std::string& _internal_agent_nickname() const;
+  void _internal_set_agent_nickname(const std::string& value);
+  std::string* _internal_mutable_agent_nickname();
+  public:
+
+  // int32 agent_user_id = 2;
+  void clear_agent_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 agent_user_id() const;
+  void set_agent_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_agent_user_id() const;
+  void _internal_set_agent_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 agent_type = 3;
+  void clear_agent_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 agent_type() const;
+  void set_agent_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_agent_type() const;
+  void _internal_set_agent_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int64 total_shift_to = 4;
+  void clear_total_shift_to();
+  ::PROTOBUF_NAMESPACE_ID::int64 total_shift_to() const;
+  void set_total_shift_to(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_total_shift_to() const;
+  void _internal_set_total_shift_to(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int64 total_roll_out = 5;
+  void clear_total_roll_out();
+  ::PROTOBUF_NAMESPACE_ID::int64 total_roll_out() const;
+  void set_total_roll_out(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_total_roll_out() const;
+  void _internal_set_total_roll_out(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int32 vip_level = 6;
+  void clear_vip_level();
+  ::PROTOBUF_NAMESPACE_ID::int32 vip_level() const;
+  void set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_vip_level() const;
+  void _internal_set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgSubagentInformation)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr agent_nickname_;
+  ::PROTOBUF_NAMESPACE_ID::int32 agent_user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 agent_type_;
+  ::PROTOBUF_NAMESPACE_ID::int64 total_shift_to_;
+  ::PROTOBUF_NAMESPACE_ID::int64 total_roll_out_;
+  ::PROTOBUF_NAMESPACE_ID::int32 vip_level_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgTtotalSubagentInformation PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgTtotalSubagentInformation) */ {
+ public:
+  inline MsgTtotalSubagentInformation() : MsgTtotalSubagentInformation(nullptr) {}
+  virtual ~MsgTtotalSubagentInformation();
+
+  MsgTtotalSubagentInformation(const MsgTtotalSubagentInformation& from);
+  MsgTtotalSubagentInformation(MsgTtotalSubagentInformation&& from) noexcept
+    : MsgTtotalSubagentInformation() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgTtotalSubagentInformation& operator=(const MsgTtotalSubagentInformation& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgTtotalSubagentInformation& operator=(MsgTtotalSubagentInformation&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgTtotalSubagentInformation& default_instance();
+
+  static inline const MsgTtotalSubagentInformation* internal_default_instance() {
+    return reinterpret_cast<const MsgTtotalSubagentInformation*>(
+               &_MsgTtotalSubagentInformation_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    48;
+
+  friend void swap(MsgTtotalSubagentInformation& a, MsgTtotalSubagentInformation& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgTtotalSubagentInformation* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgTtotalSubagentInformation* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgTtotalSubagentInformation* New() const final {
+    return CreateMaybeMessage<MsgTtotalSubagentInformation>(nullptr);
+  }
+
+  MsgTtotalSubagentInformation* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgTtotalSubagentInformation>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgTtotalSubagentInformation& from);
+  void MergeFrom(const MsgTtotalSubagentInformation& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgTtotalSubagentInformation* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgTtotalSubagentInformation";
+  }
+  protected:
+  explicit MsgTtotalSubagentInformation(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kAgentInfoFieldNumber = 1,
+  };
+  // repeated .MsgSubagentInformation agent_info = 1;
+  int agent_info_size() const;
+  private:
+  int _internal_agent_info_size() const;
+  public:
+  void clear_agent_info();
+  ::MsgSubagentInformation* mutable_agent_info(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgSubagentInformation >*
+      mutable_agent_info();
+  private:
+  const ::MsgSubagentInformation& _internal_agent_info(int index) const;
+  ::MsgSubagentInformation* _internal_add_agent_info();
+  public:
+  const ::MsgSubagentInformation& agent_info(int index) const;
+  ::MsgSubagentInformation* add_agent_info();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgSubagentInformation >&
+      agent_info() const;
+
+  // @@protoc_insertion_point(class_scope:MsgTtotalSubagentInformation)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgSubagentInformation > agent_info_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
 // ===================================================================
 
 
@@ -15086,9 +15437,221 @@ inline void MsgBankQueryNicname::set_allocated_nickname(std::string* nickname) {
   // @@protoc_insertion_point(field_set_allocated:MsgBankQueryNicname.nickname)
 }
 
+// -------------------------------------------------------------------
+
+// MsgSubagentInformation
+
+// string agent_nickname = 1;
+inline void MsgSubagentInformation::clear_agent_nickname() {
+  agent_nickname_.ClearToEmpty();
+}
+inline const std::string& MsgSubagentInformation::agent_nickname() const {
+  // @@protoc_insertion_point(field_get:MsgSubagentInformation.agent_nickname)
+  return _internal_agent_nickname();
+}
+inline void MsgSubagentInformation::set_agent_nickname(const std::string& value) {
+  _internal_set_agent_nickname(value);
+  // @@protoc_insertion_point(field_set:MsgSubagentInformation.agent_nickname)
+}
+inline std::string* MsgSubagentInformation::mutable_agent_nickname() {
+  // @@protoc_insertion_point(field_mutable:MsgSubagentInformation.agent_nickname)
+  return _internal_mutable_agent_nickname();
+}
+inline const std::string& MsgSubagentInformation::_internal_agent_nickname() const {
+  return agent_nickname_.Get();
+}
+inline void MsgSubagentInformation::_internal_set_agent_nickname(const std::string& value) {
+  
+  agent_nickname_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgSubagentInformation::set_agent_nickname(std::string&& value) {
+  
+  agent_nickname_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgSubagentInformation.agent_nickname)
+}
+inline void MsgSubagentInformation::set_agent_nickname(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  agent_nickname_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgSubagentInformation.agent_nickname)
+}
+inline void MsgSubagentInformation::set_agent_nickname(const char* value,
+    size_t size) {
+  
+  agent_nickname_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgSubagentInformation.agent_nickname)
+}
+inline std::string* MsgSubagentInformation::_internal_mutable_agent_nickname() {
+  
+  return agent_nickname_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgSubagentInformation::release_agent_nickname() {
+  // @@protoc_insertion_point(field_release:MsgSubagentInformation.agent_nickname)
+  return agent_nickname_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgSubagentInformation::set_allocated_agent_nickname(std::string* agent_nickname) {
+  if (agent_nickname != nullptr) {
+    
+  } else {
+    
+  }
+  agent_nickname_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), agent_nickname,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgSubagentInformation.agent_nickname)
+}
+
+// int32 agent_user_id = 2;
+inline void MsgSubagentInformation::clear_agent_user_id() {
+  agent_user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSubagentInformation::_internal_agent_user_id() const {
+  return agent_user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSubagentInformation::agent_user_id() const {
+  // @@protoc_insertion_point(field_get:MsgSubagentInformation.agent_user_id)
+  return _internal_agent_user_id();
+}
+inline void MsgSubagentInformation::_internal_set_agent_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  agent_user_id_ = value;
+}
+inline void MsgSubagentInformation::set_agent_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_agent_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgSubagentInformation.agent_user_id)
+}
+
+// int32 agent_type = 3;
+inline void MsgSubagentInformation::clear_agent_type() {
+  agent_type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSubagentInformation::_internal_agent_type() const {
+  return agent_type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSubagentInformation::agent_type() const {
+  // @@protoc_insertion_point(field_get:MsgSubagentInformation.agent_type)
+  return _internal_agent_type();
+}
+inline void MsgSubagentInformation::_internal_set_agent_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  agent_type_ = value;
+}
+inline void MsgSubagentInformation::set_agent_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_agent_type(value);
+  // @@protoc_insertion_point(field_set:MsgSubagentInformation.agent_type)
+}
+
+// int64 total_shift_to = 4;
+inline void MsgSubagentInformation::clear_total_shift_to() {
+  total_shift_to_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSubagentInformation::_internal_total_shift_to() const {
+  return total_shift_to_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSubagentInformation::total_shift_to() const {
+  // @@protoc_insertion_point(field_get:MsgSubagentInformation.total_shift_to)
+  return _internal_total_shift_to();
+}
+inline void MsgSubagentInformation::_internal_set_total_shift_to(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  total_shift_to_ = value;
+}
+inline void MsgSubagentInformation::set_total_shift_to(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_total_shift_to(value);
+  // @@protoc_insertion_point(field_set:MsgSubagentInformation.total_shift_to)
+}
+
+// int64 total_roll_out = 5;
+inline void MsgSubagentInformation::clear_total_roll_out() {
+  total_roll_out_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSubagentInformation::_internal_total_roll_out() const {
+  return total_roll_out_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSubagentInformation::total_roll_out() const {
+  // @@protoc_insertion_point(field_get:MsgSubagentInformation.total_roll_out)
+  return _internal_total_roll_out();
+}
+inline void MsgSubagentInformation::_internal_set_total_roll_out(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  total_roll_out_ = value;
+}
+inline void MsgSubagentInformation::set_total_roll_out(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_total_roll_out(value);
+  // @@protoc_insertion_point(field_set:MsgSubagentInformation.total_roll_out)
+}
+
+// int32 vip_level = 6;
+inline void MsgSubagentInformation::clear_vip_level() {
+  vip_level_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSubagentInformation::_internal_vip_level() const {
+  return vip_level_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSubagentInformation::vip_level() const {
+  // @@protoc_insertion_point(field_get:MsgSubagentInformation.vip_level)
+  return _internal_vip_level();
+}
+inline void MsgSubagentInformation::_internal_set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  vip_level_ = value;
+}
+inline void MsgSubagentInformation::set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_vip_level(value);
+  // @@protoc_insertion_point(field_set:MsgSubagentInformation.vip_level)
+}
+
+// -------------------------------------------------------------------
+
+// MsgTtotalSubagentInformation
+
+// repeated .MsgSubagentInformation agent_info = 1;
+inline int MsgTtotalSubagentInformation::_internal_agent_info_size() const {
+  return agent_info_.size();
+}
+inline int MsgTtotalSubagentInformation::agent_info_size() const {
+  return _internal_agent_info_size();
+}
+inline void MsgTtotalSubagentInformation::clear_agent_info() {
+  agent_info_.Clear();
+}
+inline ::MsgSubagentInformation* MsgTtotalSubagentInformation::mutable_agent_info(int index) {
+  // @@protoc_insertion_point(field_mutable:MsgTtotalSubagentInformation.agent_info)
+  return agent_info_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgSubagentInformation >*
+MsgTtotalSubagentInformation::mutable_agent_info() {
+  // @@protoc_insertion_point(field_mutable_list:MsgTtotalSubagentInformation.agent_info)
+  return &agent_info_;
+}
+inline const ::MsgSubagentInformation& MsgTtotalSubagentInformation::_internal_agent_info(int index) const {
+  return agent_info_.Get(index);
+}
+inline const ::MsgSubagentInformation& MsgTtotalSubagentInformation::agent_info(int index) const {
+  // @@protoc_insertion_point(field_get:MsgTtotalSubagentInformation.agent_info)
+  return _internal_agent_info(index);
+}
+inline ::MsgSubagentInformation* MsgTtotalSubagentInformation::_internal_add_agent_info() {
+  return agent_info_.Add();
+}
+inline ::MsgSubagentInformation* MsgTtotalSubagentInformation::add_agent_info() {
+  // @@protoc_insertion_point(field_add:MsgTtotalSubagentInformation.agent_info)
+  return _internal_add_agent_info();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgSubagentInformation >&
+MsgTtotalSubagentInformation::agent_info() const {
+  // @@protoc_insertion_point(field_list:MsgTtotalSubagentInformation.agent_info)
+  return agent_info_;
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
