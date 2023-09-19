@@ -133,7 +133,7 @@ public static partial class LoginReflection {
           "EhYKBGl0ZW0YASADKAsyCC5Nc2dJdGVtIjoKE01zZ0JhbmtRdWVyeU5pY25h",
           "bWUSEQoJcmV0X1ZhbHVlGAEgASgFEhAKCG5pY2tuYW1lGAIgASgJIp4BChZN",
           "c2dTdWJhZ2VudEluZm9ybWF0aW9uEhYKDmFnZW50X25pY2tuYW1lGAEgASgJ",
-          "EhUKDWFnZW50X3VzZXJfaWQYAiABKAUSEgoKYWdlbnRfdHlwZRgDIAEoBRIW",
+          "EhUKDWFnZW50X3VzZXJfaWQYAiABKAUSEgoKYWdlbnRfdHlwZRgDIAEoCBIW",
           "Cg50b3RhbF9zaGlmdF90bxgEIAEoAxIWCg50b3RhbF9yb2xsX291dBgFIAEo",
           "AxIRCgl2aXBfbGV2ZWwYBiABKAUiSwocTXNnVHRvdGFsU3ViYWdlbnRJbmZv",
           "cm1hdGlvbhIrCgphZ2VudF9pbmZvGAEgAygLMhcuTXNnU3ViYWdlbnRJbmZv",
@@ -14475,12 +14475,12 @@ public sealed partial class MsgSubagentInformation : pb::IMessage<MsgSubagentInf
 
   /// <summary>Field number for the "agent_type" field.</summary>
   public const int AgentTypeFieldNumber = 3;
-  private int agentType_;
+  private bool agentType_;
   /// <summary>
-  ///代理身份
+  ///代理身份0玩家1代理
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public int AgentType {
+  public bool AgentType {
     get { return agentType_; }
     set {
       agentType_ = value;
@@ -14519,7 +14519,7 @@ public sealed partial class MsgSubagentInformation : pb::IMessage<MsgSubagentInf
   public const int VipLevelFieldNumber = 6;
   private int vipLevel_;
   /// <summary>
-  ///代理身份
+  ///代理VIP
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int VipLevel {
@@ -14556,7 +14556,7 @@ public sealed partial class MsgSubagentInformation : pb::IMessage<MsgSubagentInf
     int hash = 1;
     if (AgentNickname.Length != 0) hash ^= AgentNickname.GetHashCode();
     if (AgentUserId != 0) hash ^= AgentUserId.GetHashCode();
-    if (AgentType != 0) hash ^= AgentType.GetHashCode();
+    if (AgentType != false) hash ^= AgentType.GetHashCode();
     if (TotalShiftTo != 0L) hash ^= TotalShiftTo.GetHashCode();
     if (TotalRollOut != 0L) hash ^= TotalRollOut.GetHashCode();
     if (VipLevel != 0) hash ^= VipLevel.GetHashCode();
@@ -14584,9 +14584,9 @@ public sealed partial class MsgSubagentInformation : pb::IMessage<MsgSubagentInf
       output.WriteRawTag(16);
       output.WriteInt32(AgentUserId);
     }
-    if (AgentType != 0) {
+    if (AgentType != false) {
       output.WriteRawTag(24);
-      output.WriteInt32(AgentType);
+      output.WriteBool(AgentType);
     }
     if (TotalShiftTo != 0L) {
       output.WriteRawTag(32);
@@ -14617,9 +14617,9 @@ public sealed partial class MsgSubagentInformation : pb::IMessage<MsgSubagentInf
       output.WriteRawTag(16);
       output.WriteInt32(AgentUserId);
     }
-    if (AgentType != 0) {
+    if (AgentType != false) {
       output.WriteRawTag(24);
-      output.WriteInt32(AgentType);
+      output.WriteBool(AgentType);
     }
     if (TotalShiftTo != 0L) {
       output.WriteRawTag(32);
@@ -14648,8 +14648,8 @@ public sealed partial class MsgSubagentInformation : pb::IMessage<MsgSubagentInf
     if (AgentUserId != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(AgentUserId);
     }
-    if (AgentType != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeInt32Size(AgentType);
+    if (AgentType != false) {
+      size += 1 + 1;
     }
     if (TotalShiftTo != 0L) {
       size += 1 + pb::CodedOutputStream.ComputeInt64Size(TotalShiftTo);
@@ -14677,7 +14677,7 @@ public sealed partial class MsgSubagentInformation : pb::IMessage<MsgSubagentInf
     if (other.AgentUserId != 0) {
       AgentUserId = other.AgentUserId;
     }
-    if (other.AgentType != 0) {
+    if (other.AgentType != false) {
       AgentType = other.AgentType;
     }
     if (other.TotalShiftTo != 0L) {
@@ -14712,7 +14712,7 @@ public sealed partial class MsgSubagentInformation : pb::IMessage<MsgSubagentInf
           break;
         }
         case 24: {
-          AgentType = input.ReadInt32();
+          AgentType = input.ReadBool();
           break;
         }
         case 32: {
@@ -14750,7 +14750,7 @@ public sealed partial class MsgSubagentInformation : pb::IMessage<MsgSubagentInf
           break;
         }
         case 24: {
-          AgentType = input.ReadInt32();
+          AgentType = input.ReadBool();
           break;
         }
         case 32: {

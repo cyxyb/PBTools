@@ -1563,7 +1563,7 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "ankQueryNicname\022\021\n\tret_Value\030\001 \001(\005\022\020\n\010ni"
   "ckname\030\002 \001(\t\"\236\001\n\026MsgSubagentInformation\022"
   "\026\n\016agent_nickname\030\001 \001(\t\022\025\n\ragent_user_id"
-  "\030\002 \001(\005\022\022\n\nagent_type\030\003 \001(\005\022\026\n\016total_shif"
+  "\030\002 \001(\005\022\022\n\nagent_type\030\003 \001(\010\022\026\n\016total_shif"
   "t_to\030\004 \001(\003\022\026\n\016total_roll_out\030\005 \001(\003\022\021\n\tvi"
   "p_level\030\006 \001(\005\"K\n\034MsgTtotalSubagentInform"
   "ation\022+\n\nagent_info\030\001 \003(\0132\027.MsgSubagentI"
@@ -15539,7 +15539,7 @@ const char* MsgSubagentInformation::_InternalParse(const char* ptr, ::PROTOBUF_N
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 agent_type = 3;
+      // bool agent_type = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           agent_type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
@@ -15611,10 +15611,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_agent_user_id(), target);
   }
 
-  // int32 agent_type = 3;
+  // bool agent_type = 3;
   if (this->agent_type() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_agent_type(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_agent_type(), target);
   }
 
   // int64 total_shift_to = 4;
@@ -15665,11 +15665,9 @@ size_t MsgSubagentInformation::ByteSizeLong() const {
         this->_internal_agent_user_id());
   }
 
-  // int32 agent_type = 3;
+  // bool agent_type = 3;
   if (this->agent_type() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_agent_type());
+    total_size += 1 + 1;
   }
 
   // int64 total_shift_to = 4;

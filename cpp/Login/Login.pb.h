@@ -8938,13 +8938,13 @@ class MsgSubagentInformation PROTOBUF_FINAL :
   void _internal_set_agent_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 agent_type = 3;
+  // bool agent_type = 3;
   void clear_agent_type();
-  ::PROTOBUF_NAMESPACE_ID::int32 agent_type() const;
-  void set_agent_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  bool agent_type() const;
+  void set_agent_type(bool value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_agent_type() const;
-  void _internal_set_agent_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  bool _internal_agent_type() const;
+  void _internal_set_agent_type(bool value);
   public:
 
   // int64 total_shift_to = 4;
@@ -8983,7 +8983,7 @@ class MsgSubagentInformation PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr agent_nickname_;
   ::PROTOBUF_NAMESPACE_ID::int32 agent_user_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 agent_type_;
+  bool agent_type_;
   ::PROTOBUF_NAMESPACE_ID::int64 total_shift_to_;
   ::PROTOBUF_NAMESPACE_ID::int64 total_roll_out_;
   ::PROTOBUF_NAMESPACE_ID::int32 vip_level_;
@@ -15522,22 +15522,22 @@ inline void MsgSubagentInformation::set_agent_user_id(::PROTOBUF_NAMESPACE_ID::i
   // @@protoc_insertion_point(field_set:MsgSubagentInformation.agent_user_id)
 }
 
-// int32 agent_type = 3;
+// bool agent_type = 3;
 inline void MsgSubagentInformation::clear_agent_type() {
-  agent_type_ = 0;
+  agent_type_ = false;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSubagentInformation::_internal_agent_type() const {
+inline bool MsgSubagentInformation::_internal_agent_type() const {
   return agent_type_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSubagentInformation::agent_type() const {
+inline bool MsgSubagentInformation::agent_type() const {
   // @@protoc_insertion_point(field_get:MsgSubagentInformation.agent_type)
   return _internal_agent_type();
 }
-inline void MsgSubagentInformation::_internal_set_agent_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgSubagentInformation::_internal_set_agent_type(bool value) {
   
   agent_type_ = value;
 }
-inline void MsgSubagentInformation::set_agent_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgSubagentInformation::set_agent_type(bool value) {
   _internal_set_agent_type(value);
   // @@protoc_insertion_point(field_set:MsgSubagentInformation.agent_type)
 }
