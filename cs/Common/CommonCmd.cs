@@ -25,7 +25,7 @@ public static partial class CommonCmdReflection {
           "ChxQcm90by9Db21tb24vQ29tbW9uQ21kLnByb3RvKoYBCgpFTXNnSURNYWlu",
           "EhMKD0VNc2dJRE1haW5fTnVsbBAAEh4KGUVNc2dJRE1haW5fTG9naW5fVXNl",
           "ckluZm8Q6QcSFAoPRU1zZ0lETWFpbl9HYW1lENEPEhcKEkVNc2dJRE1haW5f",
-          "U3ViR2FtZRDSDxIUCg9FTXNnSURNYWluX0NoYXQQuRcqlRkKC0VNc2dJRExv",
+          "U3ViR2FtZRDSDxIUCg9FTXNnSURNYWluX0NoYXQQuRcqxRkKC0VNc2dJRExv",
           "Z2luEhMKD01zZ0lETG9naW5fTnVsbBAAEhQKEE1zZ0lETG9naW5fTG9naW4Q",
           "ARIYChRNc2dJRExvZ2luX0xvZ2luUmVzcBACEh0KGU1zZ0lETG9naW5fTW9k",
           "aWZ5Tmlja05hbWUQAxIhCh1Nc2dJRExvZ2luX01vZGlmeU5pY2tOYW1lUmVz",
@@ -97,27 +97,28 @@ public static partial class CommonCmdReflection {
           "dXlHb29kc1Jlc3AQYRIfChtNc2dJRFNob3BfUXVlcnlUcnVtcGV0UHJpY2UQ",
           "YhIjCh9Nc2dJRFNob3BfUXVlcnlUcnVtcGV0UHJpY2VSZXNwEGMSHgoaTXNn",
           "SURMb2dpbl9RdWVyeVNlcnZlclRpbWUQZBIiCh5Nc2dJRExvZ2luX1F1ZXJ5",
-          "U2VydmVyVGltZVJlc3AQZSruBAoKRU1zZ0lER2FtZRISCg5Nc2dJREdhbWVf",
-          "TnVsbBAAEhQKD01zZ0lER2FtZV9Mb2dpbhDpBxIYChNNc2dJREdhbWVfTG9n",
-          "aW5SZXNwEOoHEh4KGU1zZ0lER2FtZV9TcXVlZXplU2VhdFJlc3AQ6wcSFQoQ",
-          "TXNnSURHYW1lX0xvZ291dBDsBxIaChVNc2dJREdhbWVfQXV0b1NpdERvd24Q",
-          "7QcSGgoVTXNnSURHYW1lX1NpdERvd25SZXNwEO4HEiEKHE1zZ0lER2FtZV9T",
-          "eW5jUGxheWVySW5mb1Jlc3AQ7wcSJgohTXNnSURHYW1lX05vdGlmeVBsYXll",
-          "clN0YW5kVXBSZXNwEPAHEiMKHk1zZ0lER2FtZV9TeW5jUGxheWVyc1Njb3Jl",
-          "UmVzcBDxBxIcChdNc2dJREdhbWVfU2VuZEdhbWVTZW5jZRDyBxIgChtNc2dJ",
-          "REdhbWVfU2VuZEdhbWVTZW5jZVJlc3AQ8wcSIAobTXNnSURHYW1lX05vdGlm",
-          "eU1lc3NhZ2VSZXNwEPQHEhkKFE1zZ0lER2FtZV9DcmVhdGVSb29tEPUHEhcK",
-          "Ek1zZ0lER2FtZV9Kb2luUm9vbRD2BxIaChVNc2dJREdhbWVfUXVlcnlSZWNv",
-          "cmQQ9wcSIwoeTXNnSURHYW1lX1F1ZXJ5Um91bmRSZWNvcmRSZXNwEPgHEiEK",
-          "HE1zZ0lER2FtZV9RdWVyeURheVJlY29yZFJlc3AQ+QcSGwoWTXNnSURHYW1l",
-          "X0FkZE9uZVJlY29yZBD6BxImCiFNc2dJREdhbWVfTm90aWZ5UGxheWVyT2Zm",
-          "bGluZVJlc3AQ+wcq+QEKCkVNc2dJRENoYXQSEgoOTXNnSURDaGF0X051bGwQ",
-          "ABIUCg9Nc2dJRENoYXRfTG9naW4Q0Q8SGAoTTXNnSURDaGF0X0xvZ2luUmVz",
-          "cBDSDxIZChRNc2dJRENoYXRfTG9nb3V0UmVzcBDTDxIcChdNc2dJRENoYXRf",
-          "U2VuZE5vcm1hbE1zZxDUDxImCiFNc2dJRENoYXRfTm90aWZ5Q2hhdE5vcm1h",
-          "bE1zZ1Jlc3AQ1Q8SHQoYTXNnSURDaGF0X1NlbmRUcnVtcGV0TXNnENYPEicK",
-          "Ik1zZ0lEQ2hhdF9Ob3RpZnlDaGF0VHJ1bXBldE1zZ1Jlc3AQ1w9iBnByb3Rv",
-          "Mw=="));
+          "U2VydmVyVGltZVJlc3AQZRIUChBNc2dJRExvZ2luX0hlYXJ0EGYSGAoUTXNn",
+          "SURMb2dpbl9IZWFydFJlc3AQZyruBAoKRU1zZ0lER2FtZRISCg5Nc2dJREdh",
+          "bWVfTnVsbBAAEhQKD01zZ0lER2FtZV9Mb2dpbhDpBxIYChNNc2dJREdhbWVf",
+          "TG9naW5SZXNwEOoHEh4KGU1zZ0lER2FtZV9TcXVlZXplU2VhdFJlc3AQ6wcS",
+          "FQoQTXNnSURHYW1lX0xvZ291dBDsBxIaChVNc2dJREdhbWVfQXV0b1NpdERv",
+          "d24Q7QcSGgoVTXNnSURHYW1lX1NpdERvd25SZXNwEO4HEiEKHE1zZ0lER2Ft",
+          "ZV9TeW5jUGxheWVySW5mb1Jlc3AQ7wcSJgohTXNnSURHYW1lX05vdGlmeVBs",
+          "YXllclN0YW5kVXBSZXNwEPAHEiMKHk1zZ0lER2FtZV9TeW5jUGxheWVyc1Nj",
+          "b3JlUmVzcBDxBxIcChdNc2dJREdhbWVfU2VuZEdhbWVTZW5jZRDyBxIgChtN",
+          "c2dJREdhbWVfU2VuZEdhbWVTZW5jZVJlc3AQ8wcSIAobTXNnSURHYW1lX05v",
+          "dGlmeU1lc3NhZ2VSZXNwEPQHEhkKFE1zZ0lER2FtZV9DcmVhdGVSb29tEPUH",
+          "EhcKEk1zZ0lER2FtZV9Kb2luUm9vbRD2BxIaChVNc2dJREdhbWVfUXVlcnlS",
+          "ZWNvcmQQ9wcSIwoeTXNnSURHYW1lX1F1ZXJ5Um91bmRSZWNvcmRSZXNwEPgH",
+          "EiEKHE1zZ0lER2FtZV9RdWVyeURheVJlY29yZFJlc3AQ+QcSGwoWTXNnSURH",
+          "YW1lX0FkZE9uZVJlY29yZBD6BxImCiFNc2dJREdhbWVfTm90aWZ5UGxheWVy",
+          "T2ZmbGluZVJlc3AQ+wcq+QEKCkVNc2dJRENoYXQSEgoOTXNnSURDaGF0X051",
+          "bGwQABIUCg9Nc2dJRENoYXRfTG9naW4Q0Q8SGAoTTXNnSURDaGF0X0xvZ2lu",
+          "UmVzcBDSDxIZChRNc2dJRENoYXRfTG9nb3V0UmVzcBDTDxIcChdNc2dJRENo",
+          "YXRfU2VuZE5vcm1hbE1zZxDUDxImCiFNc2dJRENoYXRfTm90aWZ5Q2hhdE5v",
+          "cm1hbE1zZ1Jlc3AQ1Q8SHQoYTXNnSURDaGF0X1NlbmRUcnVtcGV0TXNnENYP",
+          "EicKIk1zZ0lEQ2hhdF9Ob3RpZnlDaGF0VHJ1bXBldE1zZ1Jlc3AQ1w9iBnBy",
+          "b3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::EMsgIDMain), typeof(global::EMsgIDLogin), typeof(global::EMsgIDGame), typeof(global::EMsgIDChat), }, null, null));
@@ -552,6 +553,14 @@ public enum EMsgIDLogin {
   ///请求服务器时间返回(MsgCommonN64)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_QueryServerTimeResp")] MsgIdloginQueryServerTimeResp = 101,
+  /// <summary>
+  ///心跳(MsgCommonBool)
+  /// </summary>
+  [pbr::OriginalName("MsgIDLogin_Heart")] MsgIdloginHeart = 102,
+  /// <summary>
+  ///心跳返回(MsgCommonBool)
+  /// </summary>
+  [pbr::OriginalName("MsgIDLogin_HeartResp")] MsgIdloginHeartResp = 103,
 }
 
 public enum EMsgIDGame {
