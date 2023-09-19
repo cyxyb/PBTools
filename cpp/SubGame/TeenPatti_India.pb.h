@@ -104,6 +104,95 @@ template<> ::TeenPatti_India::MsgSceneInfo* Arena::CreateMaybeMessage<::TeenPatt
 PROTOBUF_NAMESPACE_CLOSE
 namespace TeenPatti_India {
 
+enum EGameState : int {
+  GS_TP_READY = 0,
+  GS_TP_DEAL = 1,
+  GS_TP_PLAYING = 2,
+  GS_TP_RESULT = 3,
+  EGameState_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
+  EGameState_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
+};
+bool EGameState_IsValid(int value);
+constexpr EGameState EGameState_MIN = GS_TP_READY;
+constexpr EGameState EGameState_MAX = GS_TP_RESULT;
+constexpr int EGameState_ARRAYSIZE = EGameState_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EGameState_descriptor();
+template<typename T>
+inline const std::string& EGameState_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, EGameState>::value ||
+    ::std::is_integral<T>::value,
+    "Incorrect type passed to function EGameState_Name.");
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    EGameState_descriptor(), enum_t_value);
+}
+inline bool EGameState_Parse(
+    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, EGameState* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<EGameState>(
+    EGameState_descriptor(), name, value);
+}
+enum ECardType : int {
+  CT_SINGLE = 0,
+  CT_DOUBLE = 1,
+  CT_SHUN_ZI = 2,
+  CT_JIN_HUA = 3,
+  CT_SHUN_JIN = 4,
+  CT_BAO_ZI = 5,
+  CT_SPECIAL = 6,
+  CT_MAX = 7,
+  ECardType_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
+  ECardType_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
+};
+bool ECardType_IsValid(int value);
+constexpr ECardType ECardType_MIN = CT_SINGLE;
+constexpr ECardType ECardType_MAX = CT_MAX;
+constexpr int ECardType_ARRAYSIZE = ECardType_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ECardType_descriptor();
+template<typename T>
+inline const std::string& ECardType_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, ECardType>::value ||
+    ::std::is_integral<T>::value,
+    "Incorrect type passed to function ECardType_Name.");
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    ECardType_descriptor(), enum_t_value);
+}
+inline bool ECardType_Parse(
+    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, ECardType* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<ECardType>(
+    ECardType_descriptor(), name, value);
+}
+enum EGameAction : int {
+  InvaldAct = 0,
+  GiveUp = 1,
+  LookCard = 2,
+  CallBet = 4,
+  AddBet = 8,
+  CompareCard = 16,
+  CompareReply = 32,
+  AllCompare = 64,
+  EGameAction_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
+  EGameAction_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
+};
+bool EGameAction_IsValid(int value);
+constexpr EGameAction EGameAction_MIN = InvaldAct;
+constexpr EGameAction EGameAction_MAX = AllCompare;
+constexpr int EGameAction_ARRAYSIZE = EGameAction_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EGameAction_descriptor();
+template<typename T>
+inline const std::string& EGameAction_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, EGameAction>::value ||
+    ::std::is_integral<T>::value,
+    "Incorrect type passed to function EGameAction_Name.");
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    EGameAction_descriptor(), enum_t_value);
+}
+inline bool EGameAction_Parse(
+    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, EGameAction* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<EGameAction>(
+    EGameAction_descriptor(), name, value);
+}
 enum EMsgIDSubGame : int {
   MsgIDSubGame_Null = 0,
   MsgIDSubGame_GameStartResp = 1,
@@ -115,12 +204,18 @@ enum EMsgIDSubGame : int {
   MsgIDSubGame_CompareRetResp = 7,
   MsgIDSubGame_GameResultResp = 8,
   MsgIDSubGame_NotifyStateResp = 9,
+  MsgIDSubGame_NotifySystemCheatResp = 20,
+  MsgIDSubGame_NotifyCardTypeResp = 21,
+  MsgIDSubGame_NotifyIsMaxResp = 22,
+  MsgIDSubGame_NotifyRemainDoubleResp = 23,
+  MsgIDSubGame_NotifyRoundResp = 24,
+  MsgIDSubGame_NotifyLastActResp = 25,
   EMsgIDSubGame_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDSubGame_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDSubGame_IsValid(int value);
 constexpr EMsgIDSubGame EMsgIDSubGame_MIN = MsgIDSubGame_Null;
-constexpr EMsgIDSubGame EMsgIDSubGame_MAX = MsgIDSubGame_NotifyStateResp;
+constexpr EMsgIDSubGame EMsgIDSubGame_MAX = MsgIDSubGame_NotifyLastActResp;
 constexpr int EMsgIDSubGame_ARRAYSIZE = EMsgIDSubGame_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDSubGame_descriptor();
@@ -601,7 +696,8 @@ class MsgSceneInfo PROTOBUF_FINAL :
     kCurChairIdFieldNumber = 8,
     kCurChairActFieldNumber = 10,
     kOutTimeFieldNumber = 11,
-    kCompareStateFieldNumber = 12,
+    kCompareUserFieldNumber = 12,
+    kCompareStateFieldNumber = 13,
   };
   // repeated .TeenPatti_India.MsgPlayerInfo player_infos = 9;
   int player_infos_size() const;
@@ -711,7 +807,16 @@ class MsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_out_time(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // bool compare_state = 12;
+  // bool compare_user = 12;
+  void clear_compare_user();
+  bool compare_user() const;
+  void set_compare_user(bool value);
+  private:
+  bool _internal_compare_user() const;
+  void _internal_set_compare_user(bool value);
+  public:
+
+  // bool compare_state = 13;
   void clear_compare_state();
   bool compare_state() const;
   void set_compare_state(bool value);
@@ -738,6 +843,7 @@ class MsgSceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 cur_chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 cur_chair_act_;
   ::PROTOBUF_NAMESPACE_ID::int32 out_time_;
+  bool compare_user_;
   bool compare_state_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_TeenPatti_5fIndia_2eproto;
@@ -2638,7 +2744,27 @@ inline void MsgSceneInfo::set_out_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:TeenPatti_India.MsgSceneInfo.out_time)
 }
 
-// bool compare_state = 12;
+// bool compare_user = 12;
+inline void MsgSceneInfo::clear_compare_user() {
+  compare_user_ = false;
+}
+inline bool MsgSceneInfo::_internal_compare_user() const {
+  return compare_user_;
+}
+inline bool MsgSceneInfo::compare_user() const {
+  // @@protoc_insertion_point(field_get:TeenPatti_India.MsgSceneInfo.compare_user)
+  return _internal_compare_user();
+}
+inline void MsgSceneInfo::_internal_set_compare_user(bool value) {
+  
+  compare_user_ = value;
+}
+inline void MsgSceneInfo::set_compare_user(bool value) {
+  _internal_set_compare_user(value);
+  // @@protoc_insertion_point(field_set:TeenPatti_India.MsgSceneInfo.compare_user)
+}
+
+// bool compare_state = 13;
 inline void MsgSceneInfo::clear_compare_state() {
   compare_state_ = false;
 }
@@ -3507,6 +3633,21 @@ inline void MsgGameResult::set_end_state(::PROTOBUF_NAMESPACE_ID::int32 value) {
 
 PROTOBUF_NAMESPACE_OPEN
 
+template <> struct is_proto_enum< ::TeenPatti_India::EGameState> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::TeenPatti_India::EGameState>() {
+  return ::TeenPatti_India::EGameState_descriptor();
+}
+template <> struct is_proto_enum< ::TeenPatti_India::ECardType> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::TeenPatti_India::ECardType>() {
+  return ::TeenPatti_India::ECardType_descriptor();
+}
+template <> struct is_proto_enum< ::TeenPatti_India::EGameAction> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::TeenPatti_India::EGameAction>() {
+  return ::TeenPatti_India::EGameAction_descriptor();
+}
 template <> struct is_proto_enum< ::TeenPatti_India::EMsgIDSubGame> : ::std::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::TeenPatti_India::EMsgIDSubGame>() {

@@ -2,6 +2,42 @@ syntax = "proto3";
 
 package TeenPatti_India;
 
+//桌子状态
+enum EGameState
+{	
+	GS_TP_READY							= 0;	//准备
+	GS_TP_DEAL							= 1;	//发牌
+	GS_TP_PLAYING						= 2;	//游戏
+	GS_TP_RESULT						= 3;	//结算
+};
+
+//牌型
+enum ECardType
+{
+	//扑克类型
+	CT_SINGLE							= 0;	//单牌类型
+	CT_DOUBLE							= 1;	//对子类型
+	CT_SHUN_ZI							= 2;	//顺子类型
+	CT_JIN_HUA							= 3;	//金花类型
+	CT_SHUN_JIN							= 4;	//顺金类型
+	CT_BAO_ZI							= 5;	//豹子类型
+	CT_SPECIAL							= 6;	//特殊类型
+	CT_MAX								= 7;	//最大牌型
+};
+
+//操作码
+enum EGameAction
+{
+	InvaldAct							= 0;	//无效
+	GiveUp								= 1;	//弃牌
+	LookCard							= 2;	//看牌
+	CallBet								= 4;	//跟注
+	AddBet								= 8;	//加注
+	CompareCard							= 16;	//比牌
+	CompareReply						= 32;	//比牌应答
+	AllCompare							= 64;	//全场比牌
+};
+
 enum EMsgIDSubGame
 {
 	MsgIDSubGame_Null					= 0;
@@ -16,6 +52,12 @@ enum EMsgIDSubGame
 	MsgIDSubGame_NotifyStateResp		= 9;	//桌子状态
 
 	/////////////////////////机器人消息///////////////////////
+	MsgIDSubGame_NotifySystemCheatResp	= 20;	//通知系统作弊率
+	MsgIDSubGame_NotifyCardTypeResp		= 21;	//通知牌型
+	MsgIDSubGame_NotifyIsMaxResp		= 22;	//通知是否最大
+	MsgIDSubGame_NotifyRemainDoubleResp	= 23;	//是否剩2人
+	MsgIDSubGame_NotifyRoundResp		= 24;	//通知回合数
+	MsgIDSubGame_NotifyLastActResp		= 25;	//通知玩家行为
 }
 
 message MsgHandCards
@@ -47,7 +89,9 @@ message MsgSceneInfo
 	repeated MsgPlayerInfo player_infos	= 9;	//玩家状态
 	int32				cur_chair_act	= 10;	//当前玩家的操作码
 	int32				out_time		= 11;	//当前状态剩余超时时间
-	bool				compare_state	= 12;	//当前是否处理比牌中
+
+	bool				compare_user	= 12;	//比牌发起玩家
+	bool				compare_state	= 13;	//当前是否处理比牌中
 }
 
 //游戏开始
@@ -60,6 +104,8 @@ message MsgGameStartResp
 	int64				max_blind		= 5;	//盲投次数限制
 	int64				cell_score		= 6;	//底分
 	int64				table_max_score	= 7;	//桌内最大下注
+
+
 }
 
 //玩家操作
