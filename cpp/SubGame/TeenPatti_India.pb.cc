@@ -358,7 +358,7 @@ const char descriptor_table_protodef_TeenPatti_5fIndia_2eproto[] PROTOBUF_SECTIO
   "layerInfo\022\017\n\007user_id\030\001 \001(\005\022\020\n\010nickname\030\002"
   " \001(\t\022\016\n\006avatar\030\003 \001(\t\022\021\n\tvip_level\030\004 \001(\005\022"
   "\024\n\014avatar_frame\030\005 \001(\005\022\020\n\010chair_id\030\006 \001(\005\022"
-  "\020\n\010ming_zhu\030\007 \001(\005\022\023\n\013play_status\030\010 \003(\005\022\022"
+  "\020\n\010ming_zhu\030\007 \001(\005\022\023\n\013play_status\030\010 \001(\005\022\022"
   "\n\nplayer_bet\030\t \001(\005\022-\n\006handls\030\n \001(\0132\035.Tee"
   "nPatti_India.MsgHandCards\"\264\002\n\014MsgSceneIn"
   "fo\022\021\n\tmax_score\030\001 \001(\003\022\027\n\017table_max_score"
@@ -666,15 +666,13 @@ MsgPlayerInfo::_Internal::handls(const MsgPlayerInfo* msg) {
   return *msg->handls_;
 }
 MsgPlayerInfo::MsgPlayerInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  play_status_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:TeenPatti_India.MsgPlayerInfo)
 }
 MsgPlayerInfo::MsgPlayerInfo(const MsgPlayerInfo& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      play_status_(from.play_status_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   nickname_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (!from._internal_nickname().empty()) {
@@ -741,7 +739,6 @@ void MsgPlayerInfo::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  play_status_.Clear();
   nickname_.ClearToEmpty();
   avatar_.ClearToEmpty();
   if (GetArena() == nullptr && handls_ != nullptr) {
@@ -814,13 +811,10 @@ const char* MsgPlayerInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated int32 play_status = 8;
+      // int32 play_status = 8;
       case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 66)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_play_status(), ptr, ctx);
-          CHK_(ptr);
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64) {
-          _internal_add_play_status(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+          play_status_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -916,13 +910,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(7, this->_internal_ming_zhu(), target);
   }
 
-  // repeated int32 play_status = 8;
-  {
-    int byte_size = _play_status_cached_byte_size_.load(std::memory_order_relaxed);
-    if (byte_size > 0) {
-      target = stream->WriteInt32Packed(
-          8, _internal_play_status(), byte_size, target);
-    }
+  // int32 play_status = 8;
+  if (this->play_status() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(8, this->_internal_play_status(), target);
   }
 
   // int32 player_bet = 9;
@@ -954,21 +945,6 @@ size_t MsgPlayerInfo::ByteSizeLong() const {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
-
-  // repeated int32 play_status = 8;
-  {
-    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      Int32Size(this->play_status_);
-    if (data_size > 0) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
-    }
-    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
-    _play_status_cached_byte_size_.store(cached_size,
-                                    std::memory_order_relaxed);
-    total_size += data_size;
-  }
 
   // string nickname = 2;
   if (this->nickname().size() > 0) {
@@ -1026,6 +1002,13 @@ size_t MsgPlayerInfo::ByteSizeLong() const {
         this->_internal_ming_zhu());
   }
 
+  // int32 play_status = 8;
+  if (this->play_status() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_play_status());
+  }
+
   // int32 player_bet = 9;
   if (this->player_bet() != 0) {
     total_size += 1 +
@@ -1064,7 +1047,6 @@ void MsgPlayerInfo::MergeFrom(const MsgPlayerInfo& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  play_status_.MergeFrom(from.play_status_);
   if (from.nickname().size() > 0) {
     _internal_set_nickname(from._internal_nickname());
   }
@@ -1088,6 +1070,9 @@ void MsgPlayerInfo::MergeFrom(const MsgPlayerInfo& from) {
   }
   if (from.ming_zhu() != 0) {
     _internal_set_ming_zhu(from._internal_ming_zhu());
+  }
+  if (from.play_status() != 0) {
+    _internal_set_play_status(from._internal_play_status());
   }
   if (from.player_bet() != 0) {
     _internal_set_player_bet(from._internal_player_bet());
@@ -1115,7 +1100,6 @@ bool MsgPlayerInfo::IsInitialized() const {
 void MsgPlayerInfo::InternalSwap(MsgPlayerInfo* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  play_status_.InternalSwap(&other->play_status_);
   nickname_.Swap(&other->nickname_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   avatar_.Swap(&other->avatar_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<

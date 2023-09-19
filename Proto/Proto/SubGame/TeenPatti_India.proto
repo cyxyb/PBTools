@@ -30,7 +30,7 @@ message MsgPlayerInfo
 	int32				avatar_frame	= 5;	//头像框
 	int32				chair_id		= 6;	//座位号
 	int32				ming_zhu		= 7;	//明注状态
-	repeated int32		play_status		= 8;	//玩家状态
+	int32				play_status		= 8;	//玩家状态
 	int32				player_bet		= 9;	//玩家投注总和
 	MsgHandCards		handls			= 10;	//手牌
 }

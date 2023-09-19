@@ -401,7 +401,6 @@ class MsgPlayerInfo PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kPlayStatusFieldNumber = 8,
     kNicknameFieldNumber = 2,
     kAvatarFieldNumber = 3,
     kHandlsFieldNumber = 10,
@@ -410,30 +409,9 @@ class MsgPlayerInfo PROTOBUF_FINAL :
     kAvatarFrameFieldNumber = 5,
     kChairIdFieldNumber = 6,
     kMingZhuFieldNumber = 7,
+    kPlayStatusFieldNumber = 8,
     kPlayerBetFieldNumber = 9,
   };
-  // repeated int32 play_status = 8;
-  int play_status_size() const;
-  private:
-  int _internal_play_status_size() const;
-  public:
-  void clear_play_status();
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_play_status(int index) const;
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      _internal_play_status() const;
-  void _internal_add_play_status(::PROTOBUF_NAMESPACE_ID::int32 value);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      _internal_mutable_play_status();
-  public:
-  ::PROTOBUF_NAMESPACE_ID::int32 play_status(int index) const;
-  void set_play_status(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
-  void add_play_status(::PROTOBUF_NAMESPACE_ID::int32 value);
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      play_status() const;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      mutable_play_status();
-
   // string nickname = 2;
   void clear_nickname();
   const std::string& nickname() const;
@@ -529,6 +507,15 @@ class MsgPlayerInfo PROTOBUF_FINAL :
   void _internal_set_ming_zhu(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 play_status = 8;
+  void clear_play_status();
+  ::PROTOBUF_NAMESPACE_ID::int32 play_status() const;
+  void set_play_status(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_play_status() const;
+  void _internal_set_play_status(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // int32 player_bet = 9;
   void clear_player_bet();
   ::PROTOBUF_NAMESPACE_ID::int32 player_bet() const;
@@ -545,8 +532,6 @@ class MsgPlayerInfo PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > play_status_;
-  mutable std::atomic<int> _play_status_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr nickname_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr avatar_;
   ::TeenPatti_India::MsgHandCards* handls_;
@@ -555,6 +540,7 @@ class MsgPlayerInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 ming_zhu_;
+  ::PROTOBUF_NAMESPACE_ID::int32 play_status_;
   ::PROTOBUF_NAMESPACE_ID::int32 player_bet_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_TeenPatti_5fIndia_2eproto;
@@ -2526,51 +2512,24 @@ inline void MsgPlayerInfo::set_ming_zhu(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:TeenPatti_India.MsgPlayerInfo.ming_zhu)
 }
 
-// repeated int32 play_status = 8;
-inline int MsgPlayerInfo::_internal_play_status_size() const {
-  return play_status_.size();
-}
-inline int MsgPlayerInfo::play_status_size() const {
-  return _internal_play_status_size();
-}
+// int32 play_status = 8;
 inline void MsgPlayerInfo::clear_play_status() {
-  play_status_.Clear();
+  play_status_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPlayerInfo::_internal_play_status(int index) const {
-  return play_status_.Get(index);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPlayerInfo::play_status(int index) const {
-  // @@protoc_insertion_point(field_get:TeenPatti_India.MsgPlayerInfo.play_status)
-  return _internal_play_status(index);
-}
-inline void MsgPlayerInfo::set_play_status(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
-  play_status_.Set(index, value);
-  // @@protoc_insertion_point(field_set:TeenPatti_India.MsgPlayerInfo.play_status)
-}
-inline void MsgPlayerInfo::_internal_add_play_status(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  play_status_.Add(value);
-}
-inline void MsgPlayerInfo::add_play_status(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_add_play_status(value);
-  // @@protoc_insertion_point(field_add:TeenPatti_India.MsgPlayerInfo.play_status)
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-MsgPlayerInfo::_internal_play_status() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPlayerInfo::_internal_play_status() const {
   return play_status_;
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-MsgPlayerInfo::play_status() const {
-  // @@protoc_insertion_point(field_list:TeenPatti_India.MsgPlayerInfo.play_status)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPlayerInfo::play_status() const {
+  // @@protoc_insertion_point(field_get:TeenPatti_India.MsgPlayerInfo.play_status)
   return _internal_play_status();
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-MsgPlayerInfo::_internal_mutable_play_status() {
-  return &play_status_;
+inline void MsgPlayerInfo::_internal_set_play_status(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  play_status_ = value;
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-MsgPlayerInfo::mutable_play_status() {
-  // @@protoc_insertion_point(field_mutable_list:TeenPatti_India.MsgPlayerInfo.play_status)
-  return _internal_mutable_play_status();
+inline void MsgPlayerInfo::set_play_status(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_play_status(value);
+  // @@protoc_insertion_point(field_set:TeenPatti_India.MsgPlayerInfo.play_status)
 }
 
 // int32 player_bet = 9;

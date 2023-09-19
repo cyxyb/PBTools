@@ -29,7 +29,7 @@ namespace TeenPattiIndia {
             "TXNnUGxheWVySW5mbxIPCgd1c2VyX2lkGAEgASgFEhAKCG5pY2tuYW1lGAIg",
             "ASgJEg4KBmF2YXRhchgDIAEoCRIRCgl2aXBfbGV2ZWwYBCABKAUSFAoMYXZh",
             "dGFyX2ZyYW1lGAUgASgFEhAKCGNoYWlyX2lkGAYgASgFEhAKCG1pbmdfemh1",
-            "GAcgASgFEhMKC3BsYXlfc3RhdHVzGAggAygFEhIKCnBsYXllcl9iZXQYCSAB",
+            "GAcgASgFEhMKC3BsYXlfc3RhdHVzGAggASgFEhIKCnBsYXllcl9iZXQYCSAB",
             "KAUSLQoGaGFuZGxzGAogASgLMh0uVGVlblBhdHRpX0luZGlhLk1zZ0hhbmRD",
             "YXJkcyK0AgoMTXNnU2NlbmVJbmZvEhEKCW1heF9zY29yZRgBIAEoAxIXCg90",
             "YWJsZV9tYXhfc2NvcmUYAiABKAMSEgoKY2VsbF9zY29yZRgDIAEoAxIRCglj",
@@ -329,7 +329,7 @@ namespace TeenPattiIndia {
       avatarFrame_ = other.avatarFrame_;
       chairId_ = other.chairId_;
       mingZhu_ = other.mingZhu_;
-      playStatus_ = other.playStatus_.Clone();
+      playStatus_ = other.playStatus_;
       playerBet_ = other.playerBet_;
       handls_ = other.handls_ != null ? other.handls_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -440,15 +440,16 @@ namespace TeenPattiIndia {
 
     /// <summary>Field number for the "play_status" field.</summary>
     public const int PlayStatusFieldNumber = 8;
-    private static readonly pb::FieldCodec<int> _repeated_playStatus_codec
-        = pb::FieldCodec.ForInt32(66);
-    private readonly pbc::RepeatedField<int> playStatus_ = new pbc::RepeatedField<int>();
+    private int playStatus_;
     /// <summary>
     ///玩家状态
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<int> PlayStatus {
+    public int PlayStatus {
       get { return playStatus_; }
+      set {
+        playStatus_ = value;
+      }
     }
 
     /// <summary>Field number for the "player_bet" field.</summary>
@@ -499,7 +500,7 @@ namespace TeenPattiIndia {
       if (AvatarFrame != other.AvatarFrame) return false;
       if (ChairId != other.ChairId) return false;
       if (MingZhu != other.MingZhu) return false;
-      if(!playStatus_.Equals(other.playStatus_)) return false;
+      if (PlayStatus != other.PlayStatus) return false;
       if (PlayerBet != other.PlayerBet) return false;
       if (!object.Equals(Handls, other.Handls)) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -515,7 +516,7 @@ namespace TeenPattiIndia {
       if (AvatarFrame != 0) hash ^= AvatarFrame.GetHashCode();
       if (ChairId != 0) hash ^= ChairId.GetHashCode();
       if (MingZhu != 0) hash ^= MingZhu.GetHashCode();
-      hash ^= playStatus_.GetHashCode();
+      if (PlayStatus != 0) hash ^= PlayStatus.GetHashCode();
       if (PlayerBet != 0) hash ^= PlayerBet.GetHashCode();
       if (handls_ != null) hash ^= Handls.GetHashCode();
       if (_unknownFields != null) {
@@ -562,7 +563,10 @@ namespace TeenPattiIndia {
         output.WriteRawTag(56);
         output.WriteInt32(MingZhu);
       }
-      playStatus_.WriteTo(output, _repeated_playStatus_codec);
+      if (PlayStatus != 0) {
+        output.WriteRawTag(64);
+        output.WriteInt32(PlayStatus);
+      }
       if (PlayerBet != 0) {
         output.WriteRawTag(72);
         output.WriteInt32(PlayerBet);
@@ -608,7 +612,10 @@ namespace TeenPattiIndia {
         output.WriteRawTag(56);
         output.WriteInt32(MingZhu);
       }
-      playStatus_.WriteTo(ref output, _repeated_playStatus_codec);
+      if (PlayStatus != 0) {
+        output.WriteRawTag(64);
+        output.WriteInt32(PlayStatus);
+      }
       if (PlayerBet != 0) {
         output.WriteRawTag(72);
         output.WriteInt32(PlayerBet);
@@ -647,7 +654,9 @@ namespace TeenPattiIndia {
       if (MingZhu != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(MingZhu);
       }
-      size += playStatus_.CalculateSize(_repeated_playStatus_codec);
+      if (PlayStatus != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PlayStatus);
+      }
       if (PlayerBet != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(PlayerBet);
       }
@@ -686,7 +695,9 @@ namespace TeenPattiIndia {
       if (other.MingZhu != 0) {
         MingZhu = other.MingZhu;
       }
-      playStatus_.Add(other.playStatus_);
+      if (other.PlayStatus != 0) {
+        PlayStatus = other.PlayStatus;
+      }
       if (other.PlayerBet != 0) {
         PlayerBet = other.PlayerBet;
       }
@@ -738,9 +749,8 @@ namespace TeenPattiIndia {
             MingZhu = input.ReadInt32();
             break;
           }
-          case 66:
           case 64: {
-            playStatus_.AddEntriesFrom(input, _repeated_playStatus_codec);
+            PlayStatus = input.ReadInt32();
             break;
           }
           case 72: {
@@ -796,9 +806,8 @@ namespace TeenPattiIndia {
             MingZhu = input.ReadInt32();
             break;
           }
-          case 66:
           case 64: {
-            playStatus_.AddEntriesFrom(ref input, _repeated_playStatus_codec);
+            PlayStatus = input.ReadInt32();
             break;
           }
           case 72: {
