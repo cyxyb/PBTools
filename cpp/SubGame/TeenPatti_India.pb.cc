@@ -365,7 +365,7 @@ const char descriptor_table_protodef_TeenPatti_5fIndia_2eproto[] PROTOBUF_SECTIO
   "\030\002 \001(\003\022\022\n\ncell_score\030\003 \001(\003\022\021\n\tcur_times\030"
   "\004 \001(\005\022\023\n\013table_state\030\005 \001(\005\022\027\n\017total_bet_"
   "score\030\006 \001(\003\022\027\n\017banker_chair_id\030\007 \001(\005\022\024\n\014"
-  "cur_chair_id\030\010 \001(\005\0224\n\014player_infos\030\t \001(\013"
+  "cur_chair_id\030\010 \001(\005\0224\n\014player_infos\030\t \003(\013"
   "2\036.TeenPatti_India.MsgPlayerInfo\022\025\n\rcur_"
   "chair_act\030\n \001(\005\022\020\n\010out_time\030\013 \001(\005\022\025\n\rcom"
   "pare_state\030\014 \001(\010\"\247\001\n\020MsgGameStartResp\022\024\n"
@@ -1135,27 +1135,19 @@ void MsgPlayerInfo::InternalSwap(MsgPlayerInfo* other) {
 
 class MsgSceneInfo::_Internal {
  public:
-  static const ::TeenPatti_India::MsgPlayerInfo& player_infos(const MsgSceneInfo* msg);
 };
 
-const ::TeenPatti_India::MsgPlayerInfo&
-MsgSceneInfo::_Internal::player_infos(const MsgSceneInfo* msg) {
-  return *msg->player_infos_;
-}
 MsgSceneInfo::MsgSceneInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  player_infos_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:TeenPatti_India.MsgSceneInfo)
 }
 MsgSceneInfo::MsgSceneInfo(const MsgSceneInfo& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      player_infos_(from.player_infos_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  if (from._internal_has_player_infos()) {
-    player_infos_ = new ::TeenPatti_India::MsgPlayerInfo(*from.player_infos_);
-  } else {
-    player_infos_ = nullptr;
-  }
   ::memcpy(&max_score_, &from.max_score_,
     static_cast<size_t>(reinterpret_cast<char*>(&compare_state_) -
     reinterpret_cast<char*>(&max_score_)) + sizeof(compare_state_));
@@ -1165,9 +1157,9 @@ MsgSceneInfo::MsgSceneInfo(const MsgSceneInfo& from)
 void MsgSceneInfo::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgSceneInfo_TeenPatti_5fIndia_2eproto.base);
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&player_infos_) - reinterpret_cast<char*>(this)),
+      reinterpret_cast<char*>(&max_score_) - reinterpret_cast<char*>(this)),
       0, static_cast<size_t>(reinterpret_cast<char*>(&compare_state_) -
-      reinterpret_cast<char*>(&player_infos_)) + sizeof(compare_state_));
+      reinterpret_cast<char*>(&max_score_)) + sizeof(compare_state_));
 }
 
 MsgSceneInfo::~MsgSceneInfo() {
@@ -1178,7 +1170,6 @@ MsgSceneInfo::~MsgSceneInfo() {
 
 void MsgSceneInfo::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
-  if (this != internal_default_instance()) delete player_infos_;
 }
 
 void MsgSceneInfo::ArenaDtor(void* object) {
@@ -1202,10 +1193,7 @@ void MsgSceneInfo::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && player_infos_ != nullptr) {
-    delete player_infos_;
-  }
-  player_infos_ = nullptr;
+  player_infos_.Clear();
   ::memset(&max_score_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&compare_state_) -
       reinterpret_cast<char*>(&max_score_)) + sizeof(compare_state_));
@@ -1275,11 +1263,16 @@ const char* MsgSceneInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .TeenPatti_India.MsgPlayerInfo player_infos = 9;
+      // repeated .TeenPatti_India.MsgPlayerInfo player_infos = 9;
       case 9:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
-          ptr = ctx->ParseMessage(_internal_mutable_player_infos(), ptr);
-          CHK_(ptr);
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_player_infos(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<74>(ptr));
         } else goto handle_unusual;
         continue;
       // int32 cur_chair_act = 10;
@@ -1379,12 +1372,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(8, this->_internal_cur_chair_id(), target);
   }
 
-  // .TeenPatti_India.MsgPlayerInfo player_infos = 9;
-  if (this->has_player_infos()) {
+  // repeated .TeenPatti_India.MsgPlayerInfo player_infos = 9;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_player_infos_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        9, _Internal::player_infos(this), target, stream);
+      InternalWriteMessage(9, this->_internal_player_infos(i), target, stream);
   }
 
   // int32 cur_chair_act = 10;
@@ -1421,11 +1414,11 @@ size_t MsgSceneInfo::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .TeenPatti_India.MsgPlayerInfo player_infos = 9;
-  if (this->has_player_infos()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *player_infos_);
+  // repeated .TeenPatti_India.MsgPlayerInfo player_infos = 9;
+  total_size += 1UL * this->_internal_player_infos_size();
+  for (const auto& msg : this->player_infos_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // int64 max_score = 1;
@@ -1534,9 +1527,7 @@ void MsgSceneInfo::MergeFrom(const MsgSceneInfo& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_player_infos()) {
-    _internal_mutable_player_infos()->::TeenPatti_India::MsgPlayerInfo::MergeFrom(from._internal_player_infos());
-  }
+  player_infos_.MergeFrom(from.player_infos_);
   if (from.max_score() != 0) {
     _internal_set_max_score(from._internal_max_score());
   }
@@ -1593,12 +1584,13 @@ bool MsgSceneInfo::IsInitialized() const {
 void MsgSceneInfo::InternalSwap(MsgSceneInfo* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  player_infos_.InternalSwap(&other->player_infos_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(MsgSceneInfo, compare_state_)
       + sizeof(MsgSceneInfo::compare_state_)
-      - PROTOBUF_FIELD_OFFSET(MsgSceneInfo, player_infos_)>(
-          reinterpret_cast<char*>(&player_infos_),
-          reinterpret_cast<char*>(&other->player_infos_));
+      - PROTOBUF_FIELD_OFFSET(MsgSceneInfo, max_score_)>(
+          reinterpret_cast<char*>(&max_score_),
+          reinterpret_cast<char*>(&other->max_score_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MsgSceneInfo::GetMetadata() const {

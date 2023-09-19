@@ -35,7 +35,7 @@ namespace TeenPattiIndia {
             "YWJsZV9tYXhfc2NvcmUYAiABKAMSEgoKY2VsbF9zY29yZRgDIAEoAxIRCglj",
             "dXJfdGltZXMYBCABKAUSEwoLdGFibGVfc3RhdGUYBSABKAUSFwoPdG90YWxf",
             "YmV0X3Njb3JlGAYgASgDEhcKD2Jhbmtlcl9jaGFpcl9pZBgHIAEoBRIUCgxj",
-            "dXJfY2hhaXJfaWQYCCABKAUSNAoMcGxheWVyX2luZm9zGAkgASgLMh4uVGVl",
+            "dXJfY2hhaXJfaWQYCCABKAUSNAoMcGxheWVyX2luZm9zGAkgAygLMh4uVGVl",
             "blBhdHRpX0luZGlhLk1zZ1BsYXllckluZm8SFQoNY3VyX2NoYWlyX2FjdBgK",
             "IAEoBRIQCghvdXRfdGltZRgLIAEoBRIVCg1jb21wYXJlX3N0YXRlGAwgASgI",
             "IqcBChBNc2dHYW1lU3RhcnRSZXNwEhQKDGN1cl9jaGFpcl9pZBgBIAEoBRIR",
@@ -859,7 +859,7 @@ namespace TeenPattiIndia {
       totalBetScore_ = other.totalBetScore_;
       bankerChairId_ = other.bankerChairId_;
       curChairId_ = other.curChairId_;
-      playerInfos_ = other.playerInfos_ != null ? other.playerInfos_.Clone() : null;
+      playerInfos_ = other.playerInfos_.Clone();
       curChairAct_ = other.curChairAct_;
       outTime_ = other.outTime_;
       compareState_ = other.compareState_;
@@ -985,16 +985,15 @@ namespace TeenPattiIndia {
 
     /// <summary>Field number for the "player_infos" field.</summary>
     public const int PlayerInfosFieldNumber = 9;
-    private global::TeenPattiIndia.MsgPlayerInfo playerInfos_;
+    private static readonly pb::FieldCodec<global::TeenPattiIndia.MsgPlayerInfo> _repeated_playerInfos_codec
+        = pb::FieldCodec.ForMessage(74, global::TeenPattiIndia.MsgPlayerInfo.Parser);
+    private readonly pbc::RepeatedField<global::TeenPattiIndia.MsgPlayerInfo> playerInfos_ = new pbc::RepeatedField<global::TeenPattiIndia.MsgPlayerInfo>();
     /// <summary>
     ///玩家状态
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::TeenPattiIndia.MsgPlayerInfo PlayerInfos {
+    public pbc::RepeatedField<global::TeenPattiIndia.MsgPlayerInfo> PlayerInfos {
       get { return playerInfos_; }
-      set {
-        playerInfos_ = value;
-      }
     }
 
     /// <summary>Field number for the "cur_chair_act" field.</summary>
@@ -1060,7 +1059,7 @@ namespace TeenPattiIndia {
       if (TotalBetScore != other.TotalBetScore) return false;
       if (BankerChairId != other.BankerChairId) return false;
       if (CurChairId != other.CurChairId) return false;
-      if (!object.Equals(PlayerInfos, other.PlayerInfos)) return false;
+      if(!playerInfos_.Equals(other.playerInfos_)) return false;
       if (CurChairAct != other.CurChairAct) return false;
       if (OutTime != other.OutTime) return false;
       if (CompareState != other.CompareState) return false;
@@ -1078,7 +1077,7 @@ namespace TeenPattiIndia {
       if (TotalBetScore != 0L) hash ^= TotalBetScore.GetHashCode();
       if (BankerChairId != 0) hash ^= BankerChairId.GetHashCode();
       if (CurChairId != 0) hash ^= CurChairId.GetHashCode();
-      if (playerInfos_ != null) hash ^= PlayerInfos.GetHashCode();
+      hash ^= playerInfos_.GetHashCode();
       if (CurChairAct != 0) hash ^= CurChairAct.GetHashCode();
       if (OutTime != 0) hash ^= OutTime.GetHashCode();
       if (CompareState != false) hash ^= CompareState.GetHashCode();
@@ -1130,10 +1129,7 @@ namespace TeenPattiIndia {
         output.WriteRawTag(64);
         output.WriteInt32(CurChairId);
       }
-      if (playerInfos_ != null) {
-        output.WriteRawTag(74);
-        output.WriteMessage(PlayerInfos);
-      }
+      playerInfos_.WriteTo(output, _repeated_playerInfos_codec);
       if (CurChairAct != 0) {
         output.WriteRawTag(80);
         output.WriteInt32(CurChairAct);
@@ -1187,10 +1183,7 @@ namespace TeenPattiIndia {
         output.WriteRawTag(64);
         output.WriteInt32(CurChairId);
       }
-      if (playerInfos_ != null) {
-        output.WriteRawTag(74);
-        output.WriteMessage(PlayerInfos);
-      }
+      playerInfos_.WriteTo(ref output, _repeated_playerInfos_codec);
       if (CurChairAct != 0) {
         output.WriteRawTag(80);
         output.WriteInt32(CurChairAct);
@@ -1236,9 +1229,7 @@ namespace TeenPattiIndia {
       if (CurChairId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(CurChairId);
       }
-      if (playerInfos_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PlayerInfos);
-      }
+      size += playerInfos_.CalculateSize(_repeated_playerInfos_codec);
       if (CurChairAct != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(CurChairAct);
       }
@@ -1283,12 +1274,7 @@ namespace TeenPattiIndia {
       if (other.CurChairId != 0) {
         CurChairId = other.CurChairId;
       }
-      if (other.playerInfos_ != null) {
-        if (playerInfos_ == null) {
-          PlayerInfos = new global::TeenPattiIndia.MsgPlayerInfo();
-        }
-        PlayerInfos.MergeFrom(other.PlayerInfos);
-      }
+      playerInfos_.Add(other.playerInfos_);
       if (other.CurChairAct != 0) {
         CurChairAct = other.CurChairAct;
       }
@@ -1345,10 +1331,7 @@ namespace TeenPattiIndia {
             break;
           }
           case 74: {
-            if (playerInfos_ == null) {
-              PlayerInfos = new global::TeenPattiIndia.MsgPlayerInfo();
-            }
-            input.ReadMessage(PlayerInfos);
+            playerInfos_.AddEntriesFrom(input, _repeated_playerInfos_codec);
             break;
           }
           case 80: {
@@ -1410,10 +1393,7 @@ namespace TeenPattiIndia {
             break;
           }
           case 74: {
-            if (playerInfos_ == null) {
-              PlayerInfos = new global::TeenPattiIndia.MsgPlayerInfo();
-            }
-            input.ReadMessage(PlayerInfos);
+            playerInfos_.AddEntriesFrom(ref input, _repeated_playerInfos_codec);
             break;
           }
           case 80: {

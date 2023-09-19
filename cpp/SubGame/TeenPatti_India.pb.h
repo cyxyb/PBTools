@@ -686,23 +686,23 @@ class MsgSceneInfo PROTOBUF_FINAL :
     kOutTimeFieldNumber = 11,
     kCompareStateFieldNumber = 12,
   };
-  // .TeenPatti_India.MsgPlayerInfo player_infos = 9;
-  bool has_player_infos() const;
+  // repeated .TeenPatti_India.MsgPlayerInfo player_infos = 9;
+  int player_infos_size() const;
   private:
-  bool _internal_has_player_infos() const;
+  int _internal_player_infos_size() const;
   public:
   void clear_player_infos();
-  const ::TeenPatti_India::MsgPlayerInfo& player_infos() const;
-  ::TeenPatti_India::MsgPlayerInfo* release_player_infos();
-  ::TeenPatti_India::MsgPlayerInfo* mutable_player_infos();
-  void set_allocated_player_infos(::TeenPatti_India::MsgPlayerInfo* player_infos);
+  ::TeenPatti_India::MsgPlayerInfo* mutable_player_infos(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TeenPatti_India::MsgPlayerInfo >*
+      mutable_player_infos();
   private:
-  const ::TeenPatti_India::MsgPlayerInfo& _internal_player_infos() const;
-  ::TeenPatti_India::MsgPlayerInfo* _internal_mutable_player_infos();
+  const ::TeenPatti_India::MsgPlayerInfo& _internal_player_infos(int index) const;
+  ::TeenPatti_India::MsgPlayerInfo* _internal_add_player_infos();
   public:
-  void unsafe_arena_set_allocated_player_infos(
-      ::TeenPatti_India::MsgPlayerInfo* player_infos);
-  ::TeenPatti_India::MsgPlayerInfo* unsafe_arena_release_player_infos();
+  const ::TeenPatti_India::MsgPlayerInfo& player_infos(int index) const;
+  ::TeenPatti_India::MsgPlayerInfo* add_player_infos();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TeenPatti_India::MsgPlayerInfo >&
+      player_infos() const;
 
   // int64 max_score = 1;
   void clear_max_score();
@@ -810,7 +810,7 @@ class MsgSceneInfo PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::TeenPatti_India::MsgPlayerInfo* player_infos_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TeenPatti_India::MsgPlayerInfo > player_infos_;
   ::PROTOBUF_NAMESPACE_ID::int64 max_score_;
   ::PROTOBUF_NAMESPACE_ID::int64 table_max_score_;
   ::PROTOBUF_NAMESPACE_ID::int64 cell_score_;
@@ -2840,87 +2840,43 @@ inline void MsgSceneInfo::set_cur_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value)
   // @@protoc_insertion_point(field_set:TeenPatti_India.MsgSceneInfo.cur_chair_id)
 }
 
-// .TeenPatti_India.MsgPlayerInfo player_infos = 9;
-inline bool MsgSceneInfo::_internal_has_player_infos() const {
-  return this != internal_default_instance() && player_infos_ != nullptr;
+// repeated .TeenPatti_India.MsgPlayerInfo player_infos = 9;
+inline int MsgSceneInfo::_internal_player_infos_size() const {
+  return player_infos_.size();
 }
-inline bool MsgSceneInfo::has_player_infos() const {
-  return _internal_has_player_infos();
+inline int MsgSceneInfo::player_infos_size() const {
+  return _internal_player_infos_size();
 }
 inline void MsgSceneInfo::clear_player_infos() {
-  if (GetArena() == nullptr && player_infos_ != nullptr) {
-    delete player_infos_;
-  }
-  player_infos_ = nullptr;
+  player_infos_.Clear();
 }
-inline const ::TeenPatti_India::MsgPlayerInfo& MsgSceneInfo::_internal_player_infos() const {
-  const ::TeenPatti_India::MsgPlayerInfo* p = player_infos_;
-  return p != nullptr ? *p : reinterpret_cast<const ::TeenPatti_India::MsgPlayerInfo&>(
-      ::TeenPatti_India::_MsgPlayerInfo_default_instance_);
-}
-inline const ::TeenPatti_India::MsgPlayerInfo& MsgSceneInfo::player_infos() const {
-  // @@protoc_insertion_point(field_get:TeenPatti_India.MsgSceneInfo.player_infos)
-  return _internal_player_infos();
-}
-inline void MsgSceneInfo::unsafe_arena_set_allocated_player_infos(
-    ::TeenPatti_India::MsgPlayerInfo* player_infos) {
-  if (GetArena() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(player_infos_);
-  }
-  player_infos_ = player_infos;
-  if (player_infos) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:TeenPatti_India.MsgSceneInfo.player_infos)
-}
-inline ::TeenPatti_India::MsgPlayerInfo* MsgSceneInfo::release_player_infos() {
-  
-  ::TeenPatti_India::MsgPlayerInfo* temp = player_infos_;
-  player_infos_ = nullptr;
-  if (GetArena() != nullptr) {
-    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
-  }
-  return temp;
-}
-inline ::TeenPatti_India::MsgPlayerInfo* MsgSceneInfo::unsafe_arena_release_player_infos() {
-  // @@protoc_insertion_point(field_release:TeenPatti_India.MsgSceneInfo.player_infos)
-  
-  ::TeenPatti_India::MsgPlayerInfo* temp = player_infos_;
-  player_infos_ = nullptr;
-  return temp;
-}
-inline ::TeenPatti_India::MsgPlayerInfo* MsgSceneInfo::_internal_mutable_player_infos() {
-  
-  if (player_infos_ == nullptr) {
-    auto* p = CreateMaybeMessage<::TeenPatti_India::MsgPlayerInfo>(GetArena());
-    player_infos_ = p;
-  }
-  return player_infos_;
-}
-inline ::TeenPatti_India::MsgPlayerInfo* MsgSceneInfo::mutable_player_infos() {
+inline ::TeenPatti_India::MsgPlayerInfo* MsgSceneInfo::mutable_player_infos(int index) {
   // @@protoc_insertion_point(field_mutable:TeenPatti_India.MsgSceneInfo.player_infos)
-  return _internal_mutable_player_infos();
+  return player_infos_.Mutable(index);
 }
-inline void MsgSceneInfo::set_allocated_player_infos(::TeenPatti_India::MsgPlayerInfo* player_infos) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
-  if (message_arena == nullptr) {
-    delete player_infos_;
-  }
-  if (player_infos) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(player_infos);
-    if (message_arena != submessage_arena) {
-      player_infos = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, player_infos, submessage_arena);
-    }
-    
-  } else {
-    
-  }
-  player_infos_ = player_infos;
-  // @@protoc_insertion_point(field_set_allocated:TeenPatti_India.MsgSceneInfo.player_infos)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TeenPatti_India::MsgPlayerInfo >*
+MsgSceneInfo::mutable_player_infos() {
+  // @@protoc_insertion_point(field_mutable_list:TeenPatti_India.MsgSceneInfo.player_infos)
+  return &player_infos_;
+}
+inline const ::TeenPatti_India::MsgPlayerInfo& MsgSceneInfo::_internal_player_infos(int index) const {
+  return player_infos_.Get(index);
+}
+inline const ::TeenPatti_India::MsgPlayerInfo& MsgSceneInfo::player_infos(int index) const {
+  // @@protoc_insertion_point(field_get:TeenPatti_India.MsgSceneInfo.player_infos)
+  return _internal_player_infos(index);
+}
+inline ::TeenPatti_India::MsgPlayerInfo* MsgSceneInfo::_internal_add_player_infos() {
+  return player_infos_.Add();
+}
+inline ::TeenPatti_India::MsgPlayerInfo* MsgSceneInfo::add_player_infos() {
+  // @@protoc_insertion_point(field_add:TeenPatti_India.MsgSceneInfo.player_infos)
+  return _internal_add_player_infos();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TeenPatti_India::MsgPlayerInfo >&
+MsgSceneInfo::player_infos() const {
+  // @@protoc_insertion_point(field_list:TeenPatti_India.MsgSceneInfo.player_infos)
+  return player_infos_;
 }
 
 // int32 cur_chair_act = 10;

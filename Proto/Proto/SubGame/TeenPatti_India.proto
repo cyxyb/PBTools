@@ -47,7 +47,7 @@ message MsgSceneInfo
 	int64				total_bet_score	= 6;	//桌内总下注
 	int32				banker_chair_id	= 7;	//庄家椅子号
 	int32				cur_chair_id	= 8;	//当前操作椅子号
-	MsgPlayerInfo		player_infos	= 9;	//玩家状态
+	repeated MsgPlayerInfo player_infos	= 9;	//玩家状态
 	int32				cur_chair_act	= 10;	//当前玩家的操作码
 	int32				out_time		= 11;	//当前状态剩余超时时间
 	bool				compare_state	= 12;	//当前是否处理比牌中
