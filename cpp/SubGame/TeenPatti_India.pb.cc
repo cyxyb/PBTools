@@ -224,11 +224,6 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TeenPatti_5fIndia_2eproto::off
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TeenPatti_India::MsgPlayerInfo, user_id_),
-  PROTOBUF_FIELD_OFFSET(::TeenPatti_India::MsgPlayerInfo, nickname_),
-  PROTOBUF_FIELD_OFFSET(::TeenPatti_India::MsgPlayerInfo, avatar_),
-  PROTOBUF_FIELD_OFFSET(::TeenPatti_India::MsgPlayerInfo, vip_level_),
-  PROTOBUF_FIELD_OFFSET(::TeenPatti_India::MsgPlayerInfo, avatar_frame_),
   PROTOBUF_FIELD_OFFSET(::TeenPatti_India::MsgPlayerInfo, chair_id_),
   PROTOBUF_FIELD_OFFSET(::TeenPatti_India::MsgPlayerInfo, ming_zhu_),
   PROTOBUF_FIELD_OFFSET(::TeenPatti_India::MsgPlayerInfo, play_status_),
@@ -328,15 +323,15 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TeenPatti_5fIndia_2eproto::off
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::TeenPatti_India::MsgHandCards)},
   { 6, -1, sizeof(::TeenPatti_India::MsgPlayerInfo)},
-  { 21, -1, sizeof(::TeenPatti_India::MsgSceneInfo)},
-  { 38, -1, sizeof(::TeenPatti_India::MsgGameStartResp)},
-  { 50, -1, sizeof(::TeenPatti_India::MsgAction)},
-  { 59, -1, sizeof(::TeenPatti_India::MsgGiveUpResp)},
-  { 65, -1, sizeof(::TeenPatti_India::MsgLookCardResp)},
-  { 72, -1, sizeof(::TeenPatti_India::MsgAddBetResp)},
-  { 83, -1, sizeof(::TeenPatti_India::MsgCompareCardResp)},
-  { 90, -1, sizeof(::TeenPatti_India::MsgCompareCardRetResp)},
-  { 102, -1, sizeof(::TeenPatti_India::MsgGameResult)},
+  { 16, -1, sizeof(::TeenPatti_India::MsgSceneInfo)},
+  { 33, -1, sizeof(::TeenPatti_India::MsgGameStartResp)},
+  { 45, -1, sizeof(::TeenPatti_India::MsgAction)},
+  { 54, -1, sizeof(::TeenPatti_India::MsgGiveUpResp)},
+  { 60, -1, sizeof(::TeenPatti_India::MsgLookCardResp)},
+  { 67, -1, sizeof(::TeenPatti_India::MsgAddBetResp)},
+  { 78, -1, sizeof(::TeenPatti_India::MsgCompareCardResp)},
+  { 85, -1, sizeof(::TeenPatti_India::MsgCompareCardRetResp)},
+  { 97, -1, sizeof(::TeenPatti_India::MsgGameResult)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -355,50 +350,48 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
 
 const char descriptor_table_protodef_TeenPatti_5fIndia_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n\025TeenPatti_India.proto\022\017TeenPatti_India"
-  "\"\035\n\014MsgHandCards\022\r\n\005cards\030\001 \003(\005\"\347\001\n\rMsgP"
-  "layerInfo\022\017\n\007user_id\030\001 \001(\005\022\020\n\010nickname\030\002"
-  " \001(\t\022\016\n\006avatar\030\003 \001(\t\022\021\n\tvip_level\030\004 \001(\005\022"
-  "\024\n\014avatar_frame\030\005 \001(\005\022\020\n\010chair_id\030\006 \001(\005\022"
-  "\020\n\010ming_zhu\030\007 \001(\005\022\023\n\013play_status\030\010 \001(\005\022\022"
-  "\n\nplayer_bet\030\t \001(\005\022-\n\006handls\030\n \001(\0132\035.Tee"
-  "nPatti_India.MsgHandCards\"\264\002\n\014MsgSceneIn"
-  "fo\022\021\n\tmax_score\030\001 \001(\003\022\027\n\017table_max_score"
-  "\030\002 \001(\003\022\022\n\ncell_score\030\003 \001(\003\022\021\n\tcur_times\030"
-  "\004 \001(\005\022\023\n\013table_state\030\005 \001(\005\022\027\n\017total_bet_"
-  "score\030\006 \001(\003\022\027\n\017banker_chair_id\030\007 \001(\005\022\024\n\014"
-  "cur_chair_id\030\010 \001(\005\0224\n\014player_infos\030\t \003(\013"
-  "2\036.TeenPatti_India.MsgPlayerInfo\022\025\n\rcur_"
-  "chair_act\030\n \001(\005\022\020\n\010out_time\030\013 \001(\005\022\025\n\rcom"
-  "pare_state\030\014 \001(\010\"\247\001\n\020MsgGameStartResp\022\024\n"
-  "\014cur_chair_id\030\001 \001(\005\022\021\n\tcur_times\030\002 \001(\005\022\027"
-  "\n\017banker_chair_id\030\003 \001(\005\022\021\n\tmax_score\030\004 \001"
-  "(\003\022\021\n\tmax_blind\030\005 \001(\003\022\022\n\ncell_score\030\006 \001("
-  "\003\022\027\n\017table_max_score\030\007 \001(\003\"P\n\tMsgAction\022"
-  "\013\n\003act\030\001 \001(\005\022\021\n\tbet_score\030\002 \001(\003\022\024\n\014compa"
-  "re_user\030\003 \001(\003\022\r\n\005is_ok\030\004 \001(\010\"!\n\rMsgGiveU"
-  "pResp\022\020\n\010chair_id\030\001 \001(\005\"2\n\017MsgLookCardRe"
-  "sp\022\020\n\010chair_id\030\001 \001(\005\022\r\n\005cards\030\002 \003(\005\"\211\001\n\r"
-  "MsgAddBetResp\022\024\n\014cur_chair_id\030\001 \001(\005\022\021\n\tc"
-  "ur_times\030\002 \001(\005\022\023\n\013current_act\030\003 \001(\005\022\024\n\014a"
-  "dd_chair_id\030\004 \001(\005\022\021\n\tadd_score\030\005 \001(\003\022\021\n\t"
-  "oper_time\030\006 \001(\003\":\n\022MsgCompareCardResp\022\020\n"
-  "\010chair_id\030\001 \001(\005\022\022\n\ncompare_id\030\002 \001(\005\"\255\001\n\025"
-  "MsgCompareCardRetResp\022\030\n\020current_chair_i"
-  "d\030\001 \001(\005\022\023\n\013current_act\030\002 \001(\005\022\017\n\007lost_id\030"
-  "\003 \001(\005\022\022\n\ncompare_id\030\004 \001(\005\022\022\n\npassive_id\030"
-  "\005 \001(\005\022\025\n\rcompare_cards\030\006 \003(\005\022\025\n\rpassive_"
-  "cards\030\007 \003(\005\"}\n\rMsgGameResult\022\020\n\010game_tax"
-  "\030\001 \001(\005\022\022\n\ngame_score\030\002 \003(\003\0223\n\014player_han"
-  "ds\030\003 \003(\0132\035.TeenPatti_India.MsgHandCards\022"
-  "\021\n\tend_state\030\004 \001(\005*\272\002\n\rEMsgIDSubGame\022\025\n\021"
-  "MsgIDSubGame_Null\020\000\022\036\n\032MsgIDSubGame_Game"
-  "StartResp\020\001\022\027\n\023MsgIDSubGame_Action\020\002\022\033\n\027"
-  "MsgIDSubGame_GiveUpResp\020\003\022\031\n\025MsgIDSubGam"
-  "e_LookCard\020\004\022\033\n\027MsgIDSubGame_AddBetResp\020"
-  "\005\022 \n\034MsgIDSubGame_CompareCardResp\020\006\022\037\n\033M"
-  "sgIDSubGame_CompareRetResp\020\007\022\037\n\033MsgIDSub"
-  "Game_GameResultResp\020\010\022 \n\034MsgIDSubGame_No"
-  "tifyStateResp\020\tb\006proto3"
+  "\"\035\n\014MsgHandCards\022\r\n\005cards\030\001 \003(\005\"\213\001\n\rMsgP"
+  "layerInfo\022\020\n\010chair_id\030\001 \001(\005\022\020\n\010ming_zhu\030"
+  "\002 \001(\005\022\023\n\013play_status\030\003 \001(\005\022\022\n\nplayer_bet"
+  "\030\004 \001(\005\022-\n\006handls\030\005 \001(\0132\035.TeenPatti_India"
+  ".MsgHandCards\"\264\002\n\014MsgSceneInfo\022\021\n\tmax_sc"
+  "ore\030\001 \001(\003\022\027\n\017table_max_score\030\002 \001(\003\022\022\n\nce"
+  "ll_score\030\003 \001(\003\022\021\n\tcur_times\030\004 \001(\005\022\023\n\013tab"
+  "le_state\030\005 \001(\005\022\027\n\017total_bet_score\030\006 \001(\003\022"
+  "\027\n\017banker_chair_id\030\007 \001(\005\022\024\n\014cur_chair_id"
+  "\030\010 \001(\005\0224\n\014player_infos\030\t \003(\0132\036.TeenPatti"
+  "_India.MsgPlayerInfo\022\025\n\rcur_chair_act\030\n "
+  "\001(\005\022\020\n\010out_time\030\013 \001(\005\022\025\n\rcompare_state\030\014"
+  " \001(\010\"\247\001\n\020MsgGameStartResp\022\024\n\014cur_chair_i"
+  "d\030\001 \001(\005\022\021\n\tcur_times\030\002 \001(\005\022\027\n\017banker_cha"
+  "ir_id\030\003 \001(\005\022\021\n\tmax_score\030\004 \001(\003\022\021\n\tmax_bl"
+  "ind\030\005 \001(\003\022\022\n\ncell_score\030\006 \001(\003\022\027\n\017table_m"
+  "ax_score\030\007 \001(\003\"P\n\tMsgAction\022\013\n\003act\030\001 \001(\005"
+  "\022\021\n\tbet_score\030\002 \001(\003\022\024\n\014compare_user\030\003 \001("
+  "\003\022\r\n\005is_ok\030\004 \001(\010\"!\n\rMsgGiveUpResp\022\020\n\010cha"
+  "ir_id\030\001 \001(\005\"2\n\017MsgLookCardResp\022\020\n\010chair_"
+  "id\030\001 \001(\005\022\r\n\005cards\030\002 \003(\005\"\211\001\n\rMsgAddBetRes"
+  "p\022\024\n\014cur_chair_id\030\001 \001(\005\022\021\n\tcur_times\030\002 \001"
+  "(\005\022\023\n\013current_act\030\003 \001(\005\022\024\n\014add_chair_id\030"
+  "\004 \001(\005\022\021\n\tadd_score\030\005 \001(\003\022\021\n\toper_time\030\006 "
+  "\001(\003\":\n\022MsgCompareCardResp\022\020\n\010chair_id\030\001 "
+  "\001(\005\022\022\n\ncompare_id\030\002 \001(\005\"\255\001\n\025MsgCompareCa"
+  "rdRetResp\022\030\n\020current_chair_id\030\001 \001(\005\022\023\n\013c"
+  "urrent_act\030\002 \001(\005\022\017\n\007lost_id\030\003 \001(\005\022\022\n\ncom"
+  "pare_id\030\004 \001(\005\022\022\n\npassive_id\030\005 \001(\005\022\025\n\rcom"
+  "pare_cards\030\006 \003(\005\022\025\n\rpassive_cards\030\007 \003(\005\""
+  "}\n\rMsgGameResult\022\020\n\010game_tax\030\001 \001(\005\022\022\n\nga"
+  "me_score\030\002 \003(\003\0223\n\014player_hands\030\003 \003(\0132\035.T"
+  "eenPatti_India.MsgHandCards\022\021\n\tend_state"
+  "\030\004 \001(\005*\272\002\n\rEMsgIDSubGame\022\025\n\021MsgIDSubGame"
+  "_Null\020\000\022\036\n\032MsgIDSubGame_GameStartResp\020\001\022"
+  "\027\n\023MsgIDSubGame_Action\020\002\022\033\n\027MsgIDSubGame"
+  "_GiveUpResp\020\003\022\031\n\025MsgIDSubGame_LookCard\020\004"
+  "\022\033\n\027MsgIDSubGame_AddBetResp\020\005\022 \n\034MsgIDSu"
+  "bGame_CompareCardResp\020\006\022\037\n\033MsgIDSubGame_"
+  "CompareRetResp\020\007\022\037\n\033MsgIDSubGame_GameRes"
+  "ultResp\020\010\022 \n\034MsgIDSubGame_NotifyStateRes"
+  "p\020\tb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_TeenPatti_5fIndia_2eproto_deps[1] = {
 };
@@ -417,7 +410,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Tee
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_TeenPatti_5fIndia_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_TeenPatti_5fIndia_2eproto = {
-  false, false, descriptor_table_protodef_TeenPatti_5fIndia_2eproto, "TeenPatti_India.proto", 1783,
+  false, false, descriptor_table_protodef_TeenPatti_5fIndia_2eproto, "TeenPatti_India.proto", 1691,
   &descriptor_table_TeenPatti_5fIndia_2eproto_once, descriptor_table_TeenPatti_5fIndia_2eproto_sccs, descriptor_table_TeenPatti_5fIndia_2eproto_deps, 11, 0,
   schemas, file_default_instances, TableStruct_TeenPatti_5fIndia_2eproto::offsets,
   file_level_metadata_TeenPatti_5fIndia_2eproto, 11, file_level_enum_descriptors_TeenPatti_5fIndia_2eproto, file_level_service_descriptors_TeenPatti_5fIndia_2eproto,
@@ -675,31 +668,19 @@ MsgPlayerInfo::MsgPlayerInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 MsgPlayerInfo::MsgPlayerInfo(const MsgPlayerInfo& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  nickname_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_nickname().empty()) {
-    nickname_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_nickname(), 
-      GetArena());
-  }
-  avatar_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_avatar().empty()) {
-    avatar_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_avatar(), 
-      GetArena());
-  }
   if (from._internal_has_handls()) {
     handls_ = new ::TeenPatti_India::MsgHandCards(*from.handls_);
   } else {
     handls_ = nullptr;
   }
-  ::memcpy(&user_id_, &from.user_id_,
+  ::memcpy(&chair_id_, &from.chair_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&player_bet_) -
-    reinterpret_cast<char*>(&user_id_)) + sizeof(player_bet_));
+    reinterpret_cast<char*>(&chair_id_)) + sizeof(player_bet_));
   // @@protoc_insertion_point(copy_constructor:TeenPatti_India.MsgPlayerInfo)
 }
 
 void MsgPlayerInfo::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgPlayerInfo_TeenPatti_5fIndia_2eproto.base);
-  nickname_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  avatar_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&handls_) - reinterpret_cast<char*>(this)),
       0, static_cast<size_t>(reinterpret_cast<char*>(&player_bet_) -
@@ -714,8 +695,6 @@ MsgPlayerInfo::~MsgPlayerInfo() {
 
 void MsgPlayerInfo::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
-  nickname_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  avatar_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete handls_;
 }
 
@@ -740,15 +719,13 @@ void MsgPlayerInfo::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  nickname_.ClearToEmpty();
-  avatar_.ClearToEmpty();
   if (GetArena() == nullptr && handls_ != nullptr) {
     delete handls_;
   }
   handls_ = nullptr;
-  ::memset(&user_id_, 0, static_cast<size_t>(
+  ::memset(&chair_id_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&player_bet_) -
-      reinterpret_cast<char*>(&user_id_)) + sizeof(player_bet_));
+      reinterpret_cast<char*>(&chair_id_)) + sizeof(player_bet_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -759,76 +736,37 @@ const char* MsgPlayerInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // int32 user_id = 1;
+      // int32 chair_id = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // string nickname = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_nickname();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TeenPatti_India.MsgPlayerInfo.nickname"));
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // string avatar = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          auto str = _internal_mutable_avatar();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TeenPatti_India.MsgPlayerInfo.avatar"));
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 vip_level = 4;
-      case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          vip_level_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 avatar_frame = 5;
-      case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
-          avatar_frame_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 chair_id = 6;
-      case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
           chair_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 ming_zhu = 7;
-      case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
+      // int32 ming_zhu = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           ming_zhu_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 play_status = 8;
-      case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+      // int32 play_status = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           play_status_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 player_bet = 9;
-      case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+      // int32 player_bet = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           player_bet_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .TeenPatti_India.MsgHandCards handls = 10;
-      case 10:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 82)) {
+      // .TeenPatti_India.MsgHandCards handls = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
           ptr = ctx->ParseMessage(_internal_mutable_handls(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
@@ -861,74 +799,36 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 user_id = 1;
-  if (this->user_id() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_user_id(), target);
-  }
-
-  // string nickname = 2;
-  if (this->nickname().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_nickname().data(), static_cast<int>(this->_internal_nickname().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "TeenPatti_India.MsgPlayerInfo.nickname");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_nickname(), target);
-  }
-
-  // string avatar = 3;
-  if (this->avatar().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_avatar().data(), static_cast<int>(this->_internal_avatar().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "TeenPatti_India.MsgPlayerInfo.avatar");
-    target = stream->WriteStringMaybeAliased(
-        3, this->_internal_avatar(), target);
-  }
-
-  // int32 vip_level = 4;
-  if (this->vip_level() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_vip_level(), target);
-  }
-
-  // int32 avatar_frame = 5;
-  if (this->avatar_frame() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_avatar_frame(), target);
-  }
-
-  // int32 chair_id = 6;
+  // int32 chair_id = 1;
   if (this->chair_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_chair_id(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_chair_id(), target);
   }
 
-  // int32 ming_zhu = 7;
+  // int32 ming_zhu = 2;
   if (this->ming_zhu() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(7, this->_internal_ming_zhu(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_ming_zhu(), target);
   }
 
-  // int32 play_status = 8;
+  // int32 play_status = 3;
   if (this->play_status() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(8, this->_internal_play_status(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_play_status(), target);
   }
 
-  // int32 player_bet = 9;
+  // int32 player_bet = 4;
   if (this->player_bet() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(9, this->_internal_player_bet(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_player_bet(), target);
   }
 
-  // .TeenPatti_India.MsgHandCards handls = 10;
+  // .TeenPatti_India.MsgHandCards handls = 5;
   if (this->has_handls()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(
-        10, _Internal::handls(this), target, stream);
+        5, _Internal::handls(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -947,70 +847,35 @@ size_t MsgPlayerInfo::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string nickname = 2;
-  if (this->nickname().size() > 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_nickname());
-  }
-
-  // string avatar = 3;
-  if (this->avatar().size() > 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_avatar());
-  }
-
-  // .TeenPatti_India.MsgHandCards handls = 10;
+  // .TeenPatti_India.MsgHandCards handls = 5;
   if (this->has_handls()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *handls_);
   }
 
-  // int32 user_id = 1;
-  if (this->user_id() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_user_id());
-  }
-
-  // int32 vip_level = 4;
-  if (this->vip_level() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_vip_level());
-  }
-
-  // int32 avatar_frame = 5;
-  if (this->avatar_frame() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_avatar_frame());
-  }
-
-  // int32 chair_id = 6;
+  // int32 chair_id = 1;
   if (this->chair_id() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_chair_id());
   }
 
-  // int32 ming_zhu = 7;
+  // int32 ming_zhu = 2;
   if (this->ming_zhu() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_ming_zhu());
   }
 
-  // int32 play_status = 8;
+  // int32 play_status = 3;
   if (this->play_status() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_play_status());
   }
 
-  // int32 player_bet = 9;
+  // int32 player_bet = 4;
   if (this->player_bet() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
@@ -1048,23 +913,8 @@ void MsgPlayerInfo::MergeFrom(const MsgPlayerInfo& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.nickname().size() > 0) {
-    _internal_set_nickname(from._internal_nickname());
-  }
-  if (from.avatar().size() > 0) {
-    _internal_set_avatar(from._internal_avatar());
-  }
   if (from.has_handls()) {
     _internal_mutable_handls()->::TeenPatti_India::MsgHandCards::MergeFrom(from._internal_handls());
-  }
-  if (from.user_id() != 0) {
-    _internal_set_user_id(from._internal_user_id());
-  }
-  if (from.vip_level() != 0) {
-    _internal_set_vip_level(from._internal_vip_level());
-  }
-  if (from.avatar_frame() != 0) {
-    _internal_set_avatar_frame(from._internal_avatar_frame());
   }
   if (from.chair_id() != 0) {
     _internal_set_chair_id(from._internal_chair_id());
@@ -1101,8 +951,6 @@ bool MsgPlayerInfo::IsInitialized() const {
 void MsgPlayerInfo::InternalSwap(MsgPlayerInfo* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  nickname_.Swap(&other->nickname_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  avatar_.Swap(&other->avatar_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(MsgPlayerInfo, player_bet_)
       + sizeof(MsgPlayerInfo::player_bet_)

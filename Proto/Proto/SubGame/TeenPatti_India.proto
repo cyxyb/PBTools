@@ -25,16 +25,11 @@ message MsgHandCards
 
 message MsgPlayerInfo
 {
-	int32				user_id			= 1;	//玩家ID
-	string				nickname		= 2;	//玩家昵称
-	string				avatar			= 3;	//头像
-	int32				vip_level		= 4;	//VIP等级
-	int32				avatar_frame	= 5;	//头像框
-	int32				chair_id		= 6;	//座位号
-	int32				ming_zhu		= 7;	//明注状态
-	int32				play_status		= 8;	//玩家状态
-	int32				player_bet		= 9;	//玩家投注总和
-	MsgHandCards		handls			= 10;	//手牌
+	int32				chair_id		= 1;	//玩家椅子号
+	int32				ming_zhu		= 2;	//明注状态
+	int32				play_status		= 3;	//玩家状态
+	int32				player_bet		= 4;	//玩家投注总和
+	MsgHandCards		handls			= 5;	//手牌
 }
 
 
