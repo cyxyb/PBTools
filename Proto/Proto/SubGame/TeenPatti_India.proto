@@ -21,6 +21,21 @@ message MsgHandCards
 	repeated int32		cards			= 1;	//手牌
 }
 
+message MsgPlayerInfo
+{
+	int32				user_id			= 1;	//玩家ID
+	string				nickname		= 2;	//玩家昵称
+	string				avatar			= 3;	//头像
+	int32				vip_level		= 4;	//VIP等级
+	int32				avatar_frame	= 5;	//头像框
+	int32				chair_id		= 6;	//座位号
+	int32				ming_zhu		= 7;	//明注状态
+	repeated int32		play_status		= 8;	//玩家状态
+	int32				player_bet		= 9;	//玩家投注总和
+	MsgHandCards		handls			= 10;	//手牌
+}
+
+
 //场景消息
 message MsgSceneInfo
 {
@@ -32,13 +47,10 @@ message MsgSceneInfo
 	int64				total_bet_score	= 6;	//桌内总下注
 	int32				banker_chair_id	= 7;	//庄家椅子号
 	int32				cur_chair_id	= 8;	//当前操作椅子号
-	repeated int32		ming_zhu		= 9;	//明注状态
-	MsgHandCards		hand_cards		= 10;	//手牌
-	repeated int32		play_status		= 11;	//玩家状态
-	repeated int32		player_bet		= 12;	//玩家投注总和
-	int32				cur_chair_act	= 13;	//当前玩家的操作码
-	int32				out_time		= 14;	//当前状态剩余超时时间
-	bool				compare_state	= 15;	//当前是否处理比牌中
+	MsgPlayerInfo		player_infos	= 9;	//玩家状态
+	int32				cur_chair_act	= 10;	//当前玩家的操作码
+	int32				out_time		= 11;	//当前状态剩余超时时间
+	bool				compare_state	= 12;	//当前是否处理比牌中
 }
 
 //游戏开始
