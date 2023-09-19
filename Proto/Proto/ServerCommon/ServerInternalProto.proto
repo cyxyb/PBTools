@@ -430,3 +430,12 @@ message MsgSynchronousLogin
 	int32	user_id				= 1;		//玩家ID
 	int64	gold				= 2;		//变动金币
 }
+message MsgDBSubagentInformation
+{
+	string agent_nickname 	= 1;			//代理昵称
+	int32 agent_user_id 	= 2;			//代理id
+	int32 agent_type 		= 3;			//代理身份
+	int64 total_shift_to 	= 4;			//总转入
+	int64 total_roll_out 	= 5;			//总转出
+	int32 vip_level 		= 6;			//代理身份
+}
