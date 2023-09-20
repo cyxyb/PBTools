@@ -9,6 +9,17 @@ message MsgChatLogin
 	string		password		= 2;	//玩家密码
 }
 
+//玩家信息
+message MsgChatUserInfo
+{
+	int32		user_id			= 1;	//玩家ID
+	int32		beautiful_id	= 2;	//玩家靓号
+	string		nickname		= 3;	//玩家昵称
+	string		avatar			= 4;	//头像
+	int32		vip_level		= 5;	//VIP等级
+	int32		avatar_frame	= 6;	//头像框
+}
+
 //玩家登录返回
 message MsgChatLoginResp
 {
@@ -21,3 +32,10 @@ message MsgChatLoginResp
 	int32		avatar_frame	= 7;	//头像框
 	int32		client_type		= 8;	//包类型
 }
+
+//玩家信息
+message MsgSyncUserInfo
+{
+	repeated	MsgChatUserInfo user_info = 1;	//玩家信息
+}
+

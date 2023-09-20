@@ -157,4 +157,5 @@ enum EMsgIDChat
 	MsgIDChat_NotifyChatNormalMsgResp	= 2005;		//发送普通消息返回(MsgNotifyChatNormalMsg)
 	MsgIDChat_SendTrumpetMsg			= 2006;		//发送小喇叭消息(MsgCommonStr)
 	MsgIDChat_NotifyChatTrumpetMsgResp	= 2007;		//发送小喇叭消息返回(MsgNotifyChatTrumpetMsg)
+	MsgIDChat_SyncUserInfoResp			= 2008;		//同步玩家信息(MsgSyncUserInfo)
 }
