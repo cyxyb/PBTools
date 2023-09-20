@@ -90,7 +90,8 @@ message TPMsgPlayerInfo
 	int32				play_status		= 3;	//玩家状态
 	int32				player_bet		= 4;	//玩家投注总和
 	int32				card_type		= 5;	//牌型
-	TPMsgHandCards		handls			= 6;	//手牌
+	int64				win_gold		= 6;	//输赢分
+	TPMsgHandCards		handls			= 7;	//手牌
 }
 
 
