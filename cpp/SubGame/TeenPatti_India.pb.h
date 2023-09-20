@@ -684,15 +684,16 @@ class TPMsgPlayerInfo PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kHandlsFieldNumber = 7,
+    kHandlsFieldNumber = 8,
     kChairIdFieldNumber = 1,
     kMingZhuFieldNumber = 2,
     kPlayStatusFieldNumber = 3,
     kPlayerBetFieldNumber = 4,
-    kWinGoldFieldNumber = 6,
+    kGoldFieldNumber = 6,
+    kWinGoldFieldNumber = 7,
     kCardTypeFieldNumber = 5,
   };
-  // .TeenPatti_India.TPMsgHandCards handls = 7;
+  // .TeenPatti_India.TPMsgHandCards handls = 8;
   bool has_handls() const;
   private:
   bool _internal_has_handls() const;
@@ -746,7 +747,16 @@ class TPMsgPlayerInfo PROTOBUF_FINAL :
   void _internal_set_player_bet(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int64 win_gold = 6;
+  // int64 gold = 6;
+  void clear_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 gold() const;
+  void set_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_gold() const;
+  void _internal_set_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int64 win_gold = 7;
   void clear_win_gold();
   ::PROTOBUF_NAMESPACE_ID::int64 win_gold() const;
   void set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
@@ -776,6 +786,7 @@ class TPMsgPlayerInfo PROTOBUF_FINAL :
   bool ming_zhu_;
   ::PROTOBUF_NAMESPACE_ID::int32 play_status_;
   ::PROTOBUF_NAMESPACE_ID::int32 player_bet_;
+  ::PROTOBUF_NAMESPACE_ID::int64 gold_;
   ::PROTOBUF_NAMESPACE_ID::int64 win_gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 card_type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
@@ -3019,7 +3030,27 @@ inline void TPMsgPlayerInfo::set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value)
   // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgPlayerInfo.card_type)
 }
 
-// int64 win_gold = 6;
+// int64 gold = 6;
+inline void TPMsgPlayerInfo::clear_gold() {
+  gold_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 TPMsgPlayerInfo::_internal_gold() const {
+  return gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 TPMsgPlayerInfo::gold() const {
+  // @@protoc_insertion_point(field_get:TeenPatti_India.TPMsgPlayerInfo.gold)
+  return _internal_gold();
+}
+inline void TPMsgPlayerInfo::_internal_set_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  gold_ = value;
+}
+inline void TPMsgPlayerInfo::set_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_gold(value);
+  // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgPlayerInfo.gold)
+}
+
+// int64 win_gold = 7;
 inline void TPMsgPlayerInfo::clear_win_gold() {
   win_gold_ = PROTOBUF_LONGLONG(0);
 }
@@ -3039,7 +3070,7 @@ inline void TPMsgPlayerInfo::set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value) 
   // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgPlayerInfo.win_gold)
 }
 
-// .TeenPatti_India.TPMsgHandCards handls = 7;
+// .TeenPatti_India.TPMsgHandCards handls = 8;
 inline bool TPMsgPlayerInfo::_internal_has_handls() const {
   return this != internal_default_instance() && handls_ != nullptr;
 }
