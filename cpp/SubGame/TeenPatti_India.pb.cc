@@ -357,12 +357,8 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TeenPatti_5fIndia_2eproto::off
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TeenPatti_India::TPMsgAddBetResp, cur_chair_id_),
-  PROTOBUF_FIELD_OFFSET(::TeenPatti_India::TPMsgAddBetResp, cur_times_),
-  PROTOBUF_FIELD_OFFSET(::TeenPatti_India::TPMsgAddBetResp, current_act_),
   PROTOBUF_FIELD_OFFSET(::TeenPatti_India::TPMsgAddBetResp, add_chair_id_),
   PROTOBUF_FIELD_OFFSET(::TeenPatti_India::TPMsgAddBetResp, add_score_),
-  PROTOBUF_FIELD_OFFSET(::TeenPatti_India::TPMsgAddBetResp, oper_time_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::TeenPatti_India::TPMsgCompareCardResp, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -410,10 +406,10 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 75, -1, sizeof(::TeenPatti_India::TPMsgGiveUpResp)},
   { 81, -1, sizeof(::TeenPatti_India::TPMsgLookCardResp)},
   { 88, -1, sizeof(::TeenPatti_India::TPMsgAddBetResp)},
-  { 99, -1, sizeof(::TeenPatti_India::TPMsgCompareCardResp)},
-  { 106, -1, sizeof(::TeenPatti_India::TPMsgCompareCardRetResp)},
-  { 118, -1, sizeof(::TeenPatti_India::TPMsgGameResult)},
-  { 127, -1, sizeof(::TeenPatti_India::TPMSgNotifyPlayerAct)},
+  { 95, -1, sizeof(::TeenPatti_India::TPMsgCompareCardResp)},
+  { 102, -1, sizeof(::TeenPatti_India::TPMsgCompareCardRetResp)},
+  { 114, -1, sizeof(::TeenPatti_India::TPMsgGameResult)},
+  { 123, -1, sizeof(::TeenPatti_India::TPMSgNotifyPlayerAct)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -462,47 +458,45 @@ const char descriptor_table_protodef_TeenPatti_5fIndia_2eproto[] PROTOBUF_SECTIO
   "mpare_user\030\003 \001(\003\022\r\n\005is_ok\030\004 \001(\010\"#\n\017TPMsg"
   "GiveUpResp\022\020\n\010chair_id\030\001 \001(\005\"4\n\021TPMsgLoo"
   "kCardResp\022\020\n\010chair_id\030\001 \001(\005\022\r\n\005cards\030\002 \003"
-  "(\005\"\213\001\n\017TPMsgAddBetResp\022\024\n\014cur_chair_id\030\001"
-  " \001(\005\022\021\n\tcur_times\030\002 \001(\005\022\023\n\013current_act\030\003"
-  " \001(\005\022\024\n\014add_chair_id\030\004 \001(\005\022\021\n\tadd_score\030"
-  "\005 \001(\003\022\021\n\toper_time\030\006 \001(\003\"<\n\024TPMsgCompare"
-  "CardResp\022\020\n\010chair_id\030\001 \001(\005\022\022\n\ncompare_id"
-  "\030\002 \001(\005\"\257\001\n\027TPMsgCompareCardRetResp\022\030\n\020cu"
-  "rrent_chair_id\030\001 \001(\005\022\023\n\013current_act\030\002 \001("
-  "\005\022\017\n\007lost_id\030\003 \001(\005\022\022\n\ncompare_id\030\004 \001(\005\022\022"
-  "\n\npassive_id\030\005 \001(\005\022\025\n\rcompare_cards\030\006 \003("
-  "\005\022\025\n\rpassive_cards\030\007 \003(\005\"\201\001\n\017TPMsgGameRe"
-  "sult\022\020\n\010game_tax\030\001 \001(\005\022\022\n\ngame_score\030\002 \003"
-  "(\003\0225\n\014player_hands\030\003 \003(\0132\037.TeenPatti_Ind"
-  "ia.TPMsgHandCards\022\021\n\tend_state\030\004 \001(\005\"5\n\024"
-  "TPMSgNotifyPlayerAct\022\020\n\010chair_id\030\001 \001(\005\022\013"
-  "\n\003act\030\002 \001(\005*g\n\014ETPGameState\022\017\n\013GS_TP_REA"
-  "DY\020\000\022\016\n\nGS_TP_DEAL\020\001\022\021\n\rGS_TP_PLAYING\020\002\022"
-  "\021\n\rGS_TP_COMPARE\020\003\022\020\n\014GS_TP_RESULT\020\004*E\n\016"
-  "ETPPlayerState\022\014\n\010PS_READY\020\000\022\013\n\007PS_PLAY\020"
-  "\001\022\013\n\007PS_GIVE\020\002\022\013\n\007PS_FAIL\020\003*\207\001\n\013ETPCardT"
-  "ype\022\r\n\tCT_SINGLE\020\000\022\r\n\tCT_DOUBLE\020\001\022\016\n\nCT_"
-  "JIN_HUA\020\002\022\016\n\nCT_SHUN_ZI\020\003\022\017\n\013CT_SHUN_JIN"
-  "\020\004\022\r\n\tCT_BAO_ZI\020\005\022\016\n\nCT_SPECIAL\020\006\022\n\n\006CT_"
-  "MAX\020\007*\204\001\n\rETPGameAction\022\r\n\tInvaldAct\020\000\022\n"
-  "\n\006GiveUp\020\001\022\014\n\010LookCard\020\002\022\013\n\007CallBet\020\004\022\n\n"
-  "\006AddBet\020\010\022\017\n\013CompareCard\020\020\022\020\n\014CompareRep"
-  "ly\020 \022\016\n\nAllCompare\020@*\275\004\n\017ETPMsgIDSubGame"
-  "\022\025\n\021MsgIDSubGame_Null\020\000\022\036\n\032MsgIDSubGame_"
-  "GameStartResp\020\001\022!\n\035MsgIDSubGame_NotifyAc"
-  "tionResp\020\002\022\027\n\023MsgIDSubGame_Action\020\003\022\033\n\027M"
-  "sgIDSubGame_GiveUpResp\020\004\022\031\n\025MsgIDSubGame"
-  "_LookCard\020\005\022\033\n\027MsgIDSubGame_AddBetResp\020\006"
-  "\022 \n\034MsgIDSubGame_CompareCardResp\020\007\022\037\n\033Ms"
-  "gIDSubGame_CompareRetResp\020\010\022\037\n\033MsgIDSubG"
-  "ame_GameResultResp\020\t\022 \n\034MsgIDSubGame_Not"
-  "ifyStateResp\020\n\022&\n\"MsgIDSubGame_NotifySys"
-  "temCheatResp\020\024\022#\n\037MsgIDSubGame_NotifyCar"
-  "dTypeResp\020\025\022 \n\034MsgIDSubGame_NotifyIsMaxR"
-  "esp\020\026\022\'\n#MsgIDSubGame_NotifyRemainDouble"
-  "Resp\020\027\022 \n\034MsgIDSubGame_NotifyRoundResp\020\030"
-  "\022\"\n\036MsgIDSubGame_NotifyLastActResp\020\031b\006pr"
-  "oto3"
+  "(\005\":\n\017TPMsgAddBetResp\022\024\n\014add_chair_id\030\001 "
+  "\001(\005\022\021\n\tadd_score\030\002 \001(\003\"<\n\024TPMsgCompareCa"
+  "rdResp\022\020\n\010chair_id\030\001 \001(\005\022\022\n\ncompare_id\030\002"
+  " \001(\005\"\257\001\n\027TPMsgCompareCardRetResp\022\030\n\020curr"
+  "ent_chair_id\030\001 \001(\005\022\023\n\013current_act\030\002 \001(\005\022"
+  "\017\n\007lost_id\030\003 \001(\005\022\022\n\ncompare_id\030\004 \001(\005\022\022\n\n"
+  "passive_id\030\005 \001(\005\022\025\n\rcompare_cards\030\006 \003(\005\022"
+  "\025\n\rpassive_cards\030\007 \003(\005\"\201\001\n\017TPMsgGameResu"
+  "lt\022\020\n\010game_tax\030\001 \001(\005\022\022\n\ngame_score\030\002 \003(\003"
+  "\0225\n\014player_hands\030\003 \003(\0132\037.TeenPatti_India"
+  ".TPMsgHandCards\022\021\n\tend_state\030\004 \001(\005\"5\n\024TP"
+  "MSgNotifyPlayerAct\022\020\n\010chair_id\030\001 \001(\005\022\013\n\003"
+  "act\030\002 \001(\005*g\n\014ETPGameState\022\017\n\013GS_TP_READY"
+  "\020\000\022\016\n\nGS_TP_DEAL\020\001\022\021\n\rGS_TP_PLAYING\020\002\022\021\n"
+  "\rGS_TP_COMPARE\020\003\022\020\n\014GS_TP_RESULT\020\004*E\n\016ET"
+  "PPlayerState\022\014\n\010PS_READY\020\000\022\013\n\007PS_PLAY\020\001\022"
+  "\013\n\007PS_GIVE\020\002\022\013\n\007PS_FAIL\020\003*\207\001\n\013ETPCardTyp"
+  "e\022\r\n\tCT_SINGLE\020\000\022\r\n\tCT_DOUBLE\020\001\022\016\n\nCT_JI"
+  "N_HUA\020\002\022\016\n\nCT_SHUN_ZI\020\003\022\017\n\013CT_SHUN_JIN\020\004"
+  "\022\r\n\tCT_BAO_ZI\020\005\022\016\n\nCT_SPECIAL\020\006\022\n\n\006CT_MA"
+  "X\020\007*\204\001\n\rETPGameAction\022\r\n\tInvaldAct\020\000\022\n\n\006"
+  "GiveUp\020\001\022\014\n\010LookCard\020\002\022\013\n\007CallBet\020\004\022\n\n\006A"
+  "ddBet\020\010\022\017\n\013CompareCard\020\020\022\020\n\014CompareReply"
+  "\020 \022\016\n\nAllCompare\020@*\275\004\n\017ETPMsgIDSubGame\022\025"
+  "\n\021MsgIDSubGame_Null\020\000\022\036\n\032MsgIDSubGame_Ga"
+  "meStartResp\020\001\022!\n\035MsgIDSubGame_NotifyActi"
+  "onResp\020\002\022\027\n\023MsgIDSubGame_Action\020\003\022\033\n\027Msg"
+  "IDSubGame_GiveUpResp\020\004\022\031\n\025MsgIDSubGame_L"
+  "ookCard\020\005\022\033\n\027MsgIDSubGame_AddBetResp\020\006\022 "
+  "\n\034MsgIDSubGame_CompareCardResp\020\007\022\037\n\033MsgI"
+  "DSubGame_CompareRetResp\020\010\022\037\n\033MsgIDSubGam"
+  "e_GameResultResp\020\t\022 \n\034MsgIDSubGame_Notif"
+  "yStateResp\020\n\022&\n\"MsgIDSubGame_NotifySyste"
+  "mCheatResp\020\024\022#\n\037MsgIDSubGame_NotifyCardT"
+  "ypeResp\020\025\022 \n\034MsgIDSubGame_NotifyIsMaxRes"
+  "p\020\026\022\'\n#MsgIDSubGame_NotifyRemainDoubleRe"
+  "sp\020\027\022 \n\034MsgIDSubGame_NotifyRoundResp\020\030\022\""
+  "\n\036MsgIDSubGame_NotifyLastActResp\020\031b\006prot"
+  "o3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_TeenPatti_5fIndia_2eproto_deps[1] = {
 };
@@ -524,7 +518,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Tee
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_TeenPatti_5fIndia_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_TeenPatti_5fIndia_2eproto = {
-  false, false, descriptor_table_protodef_TeenPatti_5fIndia_2eproto, "TeenPatti_India.proto", 2724,
+  false, false, descriptor_table_protodef_TeenPatti_5fIndia_2eproto, "TeenPatti_India.proto", 2642,
   &descriptor_table_TeenPatti_5fIndia_2eproto_once, descriptor_table_TeenPatti_5fIndia_2eproto_sccs, descriptor_table_TeenPatti_5fIndia_2eproto_deps, 14, 0,
   schemas, file_default_instances, TableStruct_TeenPatti_5fIndia_2eproto::offsets,
   file_level_metadata_TeenPatti_5fIndia_2eproto, 14, file_level_enum_descriptors_TeenPatti_5fIndia_2eproto, file_level_service_descriptors_TeenPatti_5fIndia_2eproto,
@@ -3303,17 +3297,17 @@ TPMsgAddBetResp::TPMsgAddBetResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 TPMsgAddBetResp::TPMsgAddBetResp(const TPMsgAddBetResp& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&cur_chair_id_, &from.cur_chair_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&oper_time_) -
-    reinterpret_cast<char*>(&cur_chair_id_)) + sizeof(oper_time_));
+  ::memcpy(&add_score_, &from.add_score_,
+    static_cast<size_t>(reinterpret_cast<char*>(&add_chair_id_) -
+    reinterpret_cast<char*>(&add_score_)) + sizeof(add_chair_id_));
   // @@protoc_insertion_point(copy_constructor:TeenPatti_India.TPMsgAddBetResp)
 }
 
 void TPMsgAddBetResp::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&cur_chair_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&oper_time_) -
-      reinterpret_cast<char*>(&cur_chair_id_)) + sizeof(oper_time_));
+      reinterpret_cast<char*>(&add_score_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&add_chair_id_) -
+      reinterpret_cast<char*>(&add_score_)) + sizeof(add_chair_id_));
 }
 
 TPMsgAddBetResp::~TPMsgAddBetResp() {
@@ -3347,9 +3341,9 @@ void TPMsgAddBetResp::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&cur_chair_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&oper_time_) -
-      reinterpret_cast<char*>(&cur_chair_id_)) + sizeof(oper_time_));
+  ::memset(&add_score_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&add_chair_id_) -
+      reinterpret_cast<char*>(&add_score_)) + sizeof(add_chair_id_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -3360,45 +3354,17 @@ const char* TPMsgAddBetResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // int32 cur_chair_id = 1;
+      // int32 add_chair_id = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          cur_chair_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 cur_times = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          cur_times_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 current_act = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          current_act_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 add_chair_id = 4;
-      case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           add_chair_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int64 add_score = 5;
-      case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+      // int64 add_score = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           add_score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int64 oper_time = 6;
-      case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
-          oper_time_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -3430,40 +3396,16 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 cur_chair_id = 1;
-  if (this->cur_chair_id() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_cur_chair_id(), target);
-  }
-
-  // int32 cur_times = 2;
-  if (this->cur_times() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_cur_times(), target);
-  }
-
-  // int32 current_act = 3;
-  if (this->current_act() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_current_act(), target);
-  }
-
-  // int32 add_chair_id = 4;
+  // int32 add_chair_id = 1;
   if (this->add_chair_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_add_chair_id(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_add_chair_id(), target);
   }
 
-  // int64 add_score = 5;
+  // int64 add_score = 2;
   if (this->add_score() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_add_score(), target);
-  }
-
-  // int64 oper_time = 6;
-  if (this->oper_time() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(6, this->_internal_oper_time(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_add_score(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -3482,46 +3424,18 @@ size_t TPMsgAddBetResp::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // int32 cur_chair_id = 1;
-  if (this->cur_chair_id() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_cur_chair_id());
-  }
-
-  // int32 cur_times = 2;
-  if (this->cur_times() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_cur_times());
-  }
-
-  // int32 current_act = 3;
-  if (this->current_act() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_current_act());
-  }
-
-  // int32 add_chair_id = 4;
-  if (this->add_chair_id() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_add_chair_id());
-  }
-
-  // int64 add_score = 5;
+  // int64 add_score = 2;
   if (this->add_score() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_add_score());
   }
 
-  // int64 oper_time = 6;
-  if (this->oper_time() != 0) {
+  // int32 add_chair_id = 1;
+  if (this->add_chair_id() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_oper_time());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_add_chair_id());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -3555,23 +3469,11 @@ void TPMsgAddBetResp::MergeFrom(const TPMsgAddBetResp& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.cur_chair_id() != 0) {
-    _internal_set_cur_chair_id(from._internal_cur_chair_id());
-  }
-  if (from.cur_times() != 0) {
-    _internal_set_cur_times(from._internal_cur_times());
-  }
-  if (from.current_act() != 0) {
-    _internal_set_current_act(from._internal_current_act());
-  }
-  if (from.add_chair_id() != 0) {
-    _internal_set_add_chair_id(from._internal_add_chair_id());
-  }
   if (from.add_score() != 0) {
     _internal_set_add_score(from._internal_add_score());
   }
-  if (from.oper_time() != 0) {
-    _internal_set_oper_time(from._internal_oper_time());
+  if (from.add_chair_id() != 0) {
+    _internal_set_add_chair_id(from._internal_add_chair_id());
   }
 }
 
@@ -3597,11 +3499,11 @@ void TPMsgAddBetResp::InternalSwap(TPMsgAddBetResp* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(TPMsgAddBetResp, oper_time_)
-      + sizeof(TPMsgAddBetResp::oper_time_)
-      - PROTOBUF_FIELD_OFFSET(TPMsgAddBetResp, cur_chair_id_)>(
-          reinterpret_cast<char*>(&cur_chair_id_),
-          reinterpret_cast<char*>(&other->cur_chair_id_));
+      PROTOBUF_FIELD_OFFSET(TPMsgAddBetResp, add_chair_id_)
+      + sizeof(TPMsgAddBetResp::add_chair_id_)
+      - PROTOBUF_FIELD_OFFSET(TPMsgAddBetResp, add_score_)>(
+          reinterpret_cast<char*>(&add_score_),
+          reinterpret_cast<char*>(&other->add_score_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata TPMsgAddBetResp::GetMetadata() const {

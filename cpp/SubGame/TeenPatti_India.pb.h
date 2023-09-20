@@ -2031,50 +2031,10 @@ class TPMsgAddBetResp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kCurChairIdFieldNumber = 1,
-    kCurTimesFieldNumber = 2,
-    kCurrentActFieldNumber = 3,
-    kAddChairIdFieldNumber = 4,
-    kAddScoreFieldNumber = 5,
-    kOperTimeFieldNumber = 6,
+    kAddScoreFieldNumber = 2,
+    kAddChairIdFieldNumber = 1,
   };
-  // int32 cur_chair_id = 1;
-  void clear_cur_chair_id();
-  ::PROTOBUF_NAMESPACE_ID::int32 cur_chair_id() const;
-  void set_cur_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_cur_chair_id() const;
-  void _internal_set_cur_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 cur_times = 2;
-  void clear_cur_times();
-  ::PROTOBUF_NAMESPACE_ID::int32 cur_times() const;
-  void set_cur_times(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_cur_times() const;
-  void _internal_set_cur_times(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 current_act = 3;
-  void clear_current_act();
-  ::PROTOBUF_NAMESPACE_ID::int32 current_act() const;
-  void set_current_act(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_current_act() const;
-  void _internal_set_current_act(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 add_chair_id = 4;
-  void clear_add_chair_id();
-  ::PROTOBUF_NAMESPACE_ID::int32 add_chair_id() const;
-  void set_add_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_add_chair_id() const;
-  void _internal_set_add_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int64 add_score = 5;
+  // int64 add_score = 2;
   void clear_add_score();
   ::PROTOBUF_NAMESPACE_ID::int64 add_score() const;
   void set_add_score(::PROTOBUF_NAMESPACE_ID::int64 value);
@@ -2083,13 +2043,13 @@ class TPMsgAddBetResp PROTOBUF_FINAL :
   void _internal_set_add_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int64 oper_time = 6;
-  void clear_oper_time();
-  ::PROTOBUF_NAMESPACE_ID::int64 oper_time() const;
-  void set_oper_time(::PROTOBUF_NAMESPACE_ID::int64 value);
+  // int32 add_chair_id = 1;
+  void clear_add_chair_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 add_chair_id() const;
+  void set_add_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_oper_time() const;
-  void _internal_set_oper_time(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_add_chair_id() const;
+  void _internal_set_add_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:TeenPatti_India.TPMsgAddBetResp)
@@ -2099,12 +2059,8 @@ class TPMsgAddBetResp PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int32 cur_chair_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 cur_times_;
-  ::PROTOBUF_NAMESPACE_ID::int32 current_act_;
-  ::PROTOBUF_NAMESPACE_ID::int32 add_chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int64 add_score_;
-  ::PROTOBUF_NAMESPACE_ID::int64 oper_time_;
+  ::PROTOBUF_NAMESPACE_ID::int32 add_chair_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_TeenPatti_5fIndia_2eproto;
 };
@@ -3867,67 +3823,7 @@ TPMsgLookCardResp::mutable_cards() {
 
 // TPMsgAddBetResp
 
-// int32 cur_chair_id = 1;
-inline void TPMsgAddBetResp::clear_cur_chair_id() {
-  cur_chair_id_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 TPMsgAddBetResp::_internal_cur_chair_id() const {
-  return cur_chair_id_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 TPMsgAddBetResp::cur_chair_id() const {
-  // @@protoc_insertion_point(field_get:TeenPatti_India.TPMsgAddBetResp.cur_chair_id)
-  return _internal_cur_chair_id();
-}
-inline void TPMsgAddBetResp::_internal_set_cur_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  cur_chair_id_ = value;
-}
-inline void TPMsgAddBetResp::set_cur_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_cur_chair_id(value);
-  // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgAddBetResp.cur_chair_id)
-}
-
-// int32 cur_times = 2;
-inline void TPMsgAddBetResp::clear_cur_times() {
-  cur_times_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 TPMsgAddBetResp::_internal_cur_times() const {
-  return cur_times_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 TPMsgAddBetResp::cur_times() const {
-  // @@protoc_insertion_point(field_get:TeenPatti_India.TPMsgAddBetResp.cur_times)
-  return _internal_cur_times();
-}
-inline void TPMsgAddBetResp::_internal_set_cur_times(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  cur_times_ = value;
-}
-inline void TPMsgAddBetResp::set_cur_times(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_cur_times(value);
-  // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgAddBetResp.cur_times)
-}
-
-// int32 current_act = 3;
-inline void TPMsgAddBetResp::clear_current_act() {
-  current_act_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 TPMsgAddBetResp::_internal_current_act() const {
-  return current_act_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 TPMsgAddBetResp::current_act() const {
-  // @@protoc_insertion_point(field_get:TeenPatti_India.TPMsgAddBetResp.current_act)
-  return _internal_current_act();
-}
-inline void TPMsgAddBetResp::_internal_set_current_act(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  current_act_ = value;
-}
-inline void TPMsgAddBetResp::set_current_act(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_current_act(value);
-  // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgAddBetResp.current_act)
-}
-
-// int32 add_chair_id = 4;
+// int32 add_chair_id = 1;
 inline void TPMsgAddBetResp::clear_add_chair_id() {
   add_chair_id_ = 0;
 }
@@ -3947,7 +3843,7 @@ inline void TPMsgAddBetResp::set_add_chair_id(::PROTOBUF_NAMESPACE_ID::int32 val
   // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgAddBetResp.add_chair_id)
 }
 
-// int64 add_score = 5;
+// int64 add_score = 2;
 inline void TPMsgAddBetResp::clear_add_score() {
   add_score_ = PROTOBUF_LONGLONG(0);
 }
@@ -3965,26 +3861,6 @@ inline void TPMsgAddBetResp::_internal_set_add_score(::PROTOBUF_NAMESPACE_ID::in
 inline void TPMsgAddBetResp::set_add_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_add_score(value);
   // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgAddBetResp.add_score)
-}
-
-// int64 oper_time = 6;
-inline void TPMsgAddBetResp::clear_oper_time() {
-  oper_time_ = PROTOBUF_LONGLONG(0);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 TPMsgAddBetResp::_internal_oper_time() const {
-  return oper_time_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 TPMsgAddBetResp::oper_time() const {
-  // @@protoc_insertion_point(field_get:TeenPatti_India.TPMsgAddBetResp.oper_time)
-  return _internal_oper_time();
-}
-inline void TPMsgAddBetResp::_internal_set_oper_time(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  
-  oper_time_ = value;
-}
-inline void TPMsgAddBetResp::set_oper_time(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_oper_time(value);
-  // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgAddBetResp.oper_time)
 }
 
 // -------------------------------------------------------------------

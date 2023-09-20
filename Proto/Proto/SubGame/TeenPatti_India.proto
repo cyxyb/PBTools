@@ -165,13 +165,8 @@ message TPMsgLookCardResp
 
 message TPMsgAddBetResp
 {
-	int32				cur_chair_id	= 1;	//下个操作玩家椅子号
-	int32				cur_times		= 2;	//当前倍数
-	int32				current_act		= 3;	//当前操作码
-	int32				add_chair_id	= 4;	//下注玩家椅子号
-	int64				add_score		= 5;	//下注金额
-	int64				oper_time		= 6;	//操作时间
-
+	int32				add_chair_id	= 1;	//下注玩家椅子号
+	int64				add_score		= 2;	//下注金额
 }
 
 //玩家请求比牌
