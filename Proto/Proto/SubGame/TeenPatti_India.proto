@@ -110,7 +110,7 @@ message TPMsgSceneInfo
 	int32				cur_chair_act	= 10;	//当前玩家的操作码
 	int32				out_time		= 11;	//当前状态剩余超时时间
 
-	bool				compare_user	= 12;	//比牌发起玩家
+	int32				compare_user	= 12;	//比牌发起玩家
 	int32				compare_win		= 13;	//比牌赢家
 
 	repeated TPMsgPlayerInfo player_infos	= 14;	//玩家状态
@@ -203,3 +203,8 @@ message TPMsgGameResult
 
 
 //////////////////////////////////////////////////////////////机器人消息///////////////////////////////////////
+message TPMSgNotifyPlayerAct
+{
+	int32				chair_id		= 1;	//玩家椅子号
+	int32				act				= 2;	//被比玩家椅子号
+}

@@ -36,7 +36,7 @@ namespace TeenPattiIndia {
             "EhMKC3RhYmxlX3N0YXRlGAUgASgFEhcKD3RvdGFsX2JldF9zY29yZRgGIAEo",
             "AxILCgN0YXgYByABKAUSFwoPYmFua2VyX2NoYWlyX2lkGAggASgFEhQKDGN1",
             "cl9jaGFpcl9pZBgJIAEoBRIVCg1jdXJfY2hhaXJfYWN0GAogASgFEhAKCG91",
-            "dF90aW1lGAsgASgFEhQKDGNvbXBhcmVfdXNlchgMIAEoCBITCgtjb21wYXJl",
+            "dF90aW1lGAsgASgFEhQKDGNvbXBhcmVfdXNlchgMIAEoBRITCgtjb21wYXJl",
             "X3dpbhgNIAEoBRI2CgxwbGF5ZXJfaW5mb3MYDiADKAsyIC5UZWVuUGF0dGlf",
             "SW5kaWEuVFBNc2dQbGF5ZXJJbmZvIqkBChJUUE1zZ0dhbWVTdGFydFJlc3AS",
             "FAoMY3VyX2NoYWlyX2lkGAEgASgFEhEKCWN1cl90aW1lcxgCIAEoBRIXCg9i",
@@ -59,30 +59,32 @@ namespace TeenPattiIndia {
             "EhUKDWNvbXBhcmVfY2FyZHMYBiADKAUSFQoNcGFzc2l2ZV9jYXJkcxgHIAMo",
             "BSKBAQoPVFBNc2dHYW1lUmVzdWx0EhAKCGdhbWVfdGF4GAEgASgFEhIKCmdh",
             "bWVfc2NvcmUYAiADKAMSNQoMcGxheWVyX2hhbmRzGAMgAygLMh8uVGVlblBh",
-            "dHRpX0luZGlhLlRQTXNnSGFuZENhcmRzEhEKCWVuZF9zdGF0ZRgEIAEoBSpn",
-            "CgxFVFBHYW1lU3RhdGUSDwoLR1NfVFBfUkVBRFkQABIOCgpHU19UUF9ERUFM",
-            "EAESEQoNR1NfVFBfUExBWUlORxACEhEKDUdTX1RQX0NPTVBBUkUQAxIQCgxH",
-            "U19UUF9SRVNVTFQQBCpFCg5FVFBQbGF5ZXJTdGF0ZRIMCghQU19SRUFEWRAA",
-            "EgsKB1BTX1BMQVkQARILCgdQU19HSVZFEAISCwoHUFNfRkFJTBADKocBCgtF",
-            "VFBDYXJkVHlwZRINCglDVF9TSU5HTEUQABINCglDVF9ET1VCTEUQARIOCgpD",
-            "VF9KSU5fSFVBEAISDgoKQ1RfU0hVTl9aSRADEg8KC0NUX1NIVU5fSklOEAQS",
-            "DQoJQ1RfQkFPX1pJEAUSDgoKQ1RfU1BFQ0lBTBAGEgoKBkNUX01BWBAHKoQB",
-            "Cg1FVFBHYW1lQWN0aW9uEg0KCUludmFsZEFjdBAAEgoKBkdpdmVVcBABEgwK",
-            "CExvb2tDYXJkEAISCwoHQ2FsbEJldBAEEgoKBkFkZEJldBAIEg8KC0NvbXBh",
-            "cmVDYXJkEBASEAoMQ29tcGFyZVJlcGx5ECASDgoKQWxsQ29tcGFyZRBAKr0E",
-            "Cg9FVFBNc2dJRFN1YkdhbWUSFQoRTXNnSURTdWJHYW1lX051bGwQABIeChpN",
-            "c2dJRFN1YkdhbWVfR2FtZVN0YXJ0UmVzcBABEiEKHU1zZ0lEU3ViR2FtZV9O",
-            "b3RpZnlBY3Rpb25SZXNwEAISFwoTTXNnSURTdWJHYW1lX0FjdGlvbhADEhsK",
-            "F01zZ0lEU3ViR2FtZV9HaXZlVXBSZXNwEAQSGQoVTXNnSURTdWJHYW1lX0xv",
-            "b2tDYXJkEAUSGwoXTXNnSURTdWJHYW1lX0FkZEJldFJlc3AQBhIgChxNc2dJ",
-            "RFN1YkdhbWVfQ29tcGFyZUNhcmRSZXNwEAcSHwobTXNnSURTdWJHYW1lX0Nv",
-            "bXBhcmVSZXRSZXNwEAgSHwobTXNnSURTdWJHYW1lX0dhbWVSZXN1bHRSZXNw",
-            "EAkSIAocTXNnSURTdWJHYW1lX05vdGlmeVN0YXRlUmVzcBAKEiYKIk1zZ0lE",
-            "U3ViR2FtZV9Ob3RpZnlTeXN0ZW1DaGVhdFJlc3AQFBIjCh9Nc2dJRFN1Ykdh",
-            "bWVfTm90aWZ5Q2FyZFR5cGVSZXNwEBUSIAocTXNnSURTdWJHYW1lX05vdGlm",
-            "eUlzTWF4UmVzcBAWEicKI01zZ0lEU3ViR2FtZV9Ob3RpZnlSZW1haW5Eb3Vi",
-            "bGVSZXNwEBcSIAocTXNnSURTdWJHYW1lX05vdGlmeVJvdW5kUmVzcBAYEiIK",
-            "Hk1zZ0lEU3ViR2FtZV9Ob3RpZnlMYXN0QWN0UmVzcBAZYgZwcm90bzM="));
+            "dHRpX0luZGlhLlRQTXNnSGFuZENhcmRzEhEKCWVuZF9zdGF0ZRgEIAEoBSI1",
+            "ChRUUE1TZ05vdGlmeVBsYXllckFjdBIQCghjaGFpcl9pZBgBIAEoBRILCgNh",
+            "Y3QYAiABKAUqZwoMRVRQR2FtZVN0YXRlEg8KC0dTX1RQX1JFQURZEAASDgoK",
+            "R1NfVFBfREVBTBABEhEKDUdTX1RQX1BMQVlJTkcQAhIRCg1HU19UUF9DT01Q",
+            "QVJFEAMSEAoMR1NfVFBfUkVTVUxUEAQqRQoORVRQUGxheWVyU3RhdGUSDAoI",
+            "UFNfUkVBRFkQABILCgdQU19QTEFZEAESCwoHUFNfR0lWRRACEgsKB1BTX0ZB",
+            "SUwQAyqHAQoLRVRQQ2FyZFR5cGUSDQoJQ1RfU0lOR0xFEAASDQoJQ1RfRE9V",
+            "QkxFEAESDgoKQ1RfSklOX0hVQRACEg4KCkNUX1NIVU5fWkkQAxIPCgtDVF9T",
+            "SFVOX0pJThAEEg0KCUNUX0JBT19aSRAFEg4KCkNUX1NQRUNJQUwQBhIKCgZD",
+            "VF9NQVgQByqEAQoNRVRQR2FtZUFjdGlvbhINCglJbnZhbGRBY3QQABIKCgZH",
+            "aXZlVXAQARIMCghMb29rQ2FyZBACEgsKB0NhbGxCZXQQBBIKCgZBZGRCZXQQ",
+            "CBIPCgtDb21wYXJlQ2FyZBAQEhAKDENvbXBhcmVSZXBseRAgEg4KCkFsbENv",
+            "bXBhcmUQQCq9BAoPRVRQTXNnSURTdWJHYW1lEhUKEU1zZ0lEU3ViR2FtZV9O",
+            "dWxsEAASHgoaTXNnSURTdWJHYW1lX0dhbWVTdGFydFJlc3AQARIhCh1Nc2dJ",
+            "RFN1YkdhbWVfTm90aWZ5QWN0aW9uUmVzcBACEhcKE01zZ0lEU3ViR2FtZV9B",
+            "Y3Rpb24QAxIbChdNc2dJRFN1YkdhbWVfR2l2ZVVwUmVzcBAEEhkKFU1zZ0lE",
+            "U3ViR2FtZV9Mb29rQ2FyZBAFEhsKF01zZ0lEU3ViR2FtZV9BZGRCZXRSZXNw",
+            "EAYSIAocTXNnSURTdWJHYW1lX0NvbXBhcmVDYXJkUmVzcBAHEh8KG01zZ0lE",
+            "U3ViR2FtZV9Db21wYXJlUmV0UmVzcBAIEh8KG01zZ0lEU3ViR2FtZV9HYW1l",
+            "UmVzdWx0UmVzcBAJEiAKHE1zZ0lEU3ViR2FtZV9Ob3RpZnlTdGF0ZVJlc3AQ",
+            "ChImCiJNc2dJRFN1YkdhbWVfTm90aWZ5U3lzdGVtQ2hlYXRSZXNwEBQSIwof",
+            "TXNnSURTdWJHYW1lX05vdGlmeUNhcmRUeXBlUmVzcBAVEiAKHE1zZ0lEU3Vi",
+            "R2FtZV9Ob3RpZnlJc01heFJlc3AQFhInCiNNc2dJRFN1YkdhbWVfTm90aWZ5",
+            "UmVtYWluRG91YmxlUmVzcBAXEiAKHE1zZ0lEU3ViR2FtZV9Ob3RpZnlSb3Vu",
+            "ZFJlc3AQGBIiCh5Nc2dJRFN1YkdhbWVfTm90aWZ5TGFzdEFjdFJlc3AQGWIG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::TeenPattiIndia.ETPGameState), typeof(global::TeenPattiIndia.ETPPlayerState), typeof(global::TeenPattiIndia.ETPCardType), typeof(global::TeenPattiIndia.ETPGameAction), typeof(global::TeenPattiIndia.ETPMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -98,7 +100,8 @@ namespace TeenPattiIndia {
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.TPMsgAddBetResp), global::TeenPattiIndia.TPMsgAddBetResp.Parser, new[]{ "CurChairId", "CurTimes", "CurrentAct", "AddChairId", "AddScore", "OperTime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.TPMsgCompareCardResp), global::TeenPattiIndia.TPMsgCompareCardResp.Parser, new[]{ "ChairId", "CompareId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.TPMsgCompareCardRetResp), global::TeenPattiIndia.TPMsgCompareCardRetResp.Parser, new[]{ "CurrentChairId", "CurrentAct", "LostId", "CompareId", "PassiveId", "CompareCards", "PassiveCards" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.TPMsgGameResult), global::TeenPattiIndia.TPMsgGameResult.Parser, new[]{ "GameTax", "GameScore", "PlayerHands", "EndState" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.TPMsgGameResult), global::TeenPattiIndia.TPMsgGameResult.Parser, new[]{ "GameTax", "GameScore", "PlayerHands", "EndState" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.TPMSgNotifyPlayerAct), global::TeenPattiIndia.TPMSgNotifyPlayerAct.Parser, new[]{ "ChairId", "Act" }, null, null, null, null)
           }));
     }
     #endregion
@@ -1269,12 +1272,12 @@ namespace TeenPattiIndia {
 
     /// <summary>Field number for the "compare_user" field.</summary>
     public const int CompareUserFieldNumber = 12;
-    private bool compareUser_;
+    private int compareUser_;
     /// <summary>
     ///比牌发起玩家
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CompareUser {
+    public int CompareUser {
       get { return compareUser_; }
       set {
         compareUser_ = value;
@@ -1352,7 +1355,7 @@ namespace TeenPattiIndia {
       if (CurChairId != 0) hash ^= CurChairId.GetHashCode();
       if (CurChairAct != 0) hash ^= CurChairAct.GetHashCode();
       if (OutTime != 0) hash ^= OutTime.GetHashCode();
-      if (CompareUser != false) hash ^= CompareUser.GetHashCode();
+      if (CompareUser != 0) hash ^= CompareUser.GetHashCode();
       if (CompareWin != 0) hash ^= CompareWin.GetHashCode();
       hash ^= playerInfos_.GetHashCode();
       if (_unknownFields != null) {
@@ -1415,9 +1418,9 @@ namespace TeenPattiIndia {
         output.WriteRawTag(88);
         output.WriteInt32(OutTime);
       }
-      if (CompareUser != false) {
+      if (CompareUser != 0) {
         output.WriteRawTag(96);
-        output.WriteBool(CompareUser);
+        output.WriteInt32(CompareUser);
       }
       if (CompareWin != 0) {
         output.WriteRawTag(104);
@@ -1477,9 +1480,9 @@ namespace TeenPattiIndia {
         output.WriteRawTag(88);
         output.WriteInt32(OutTime);
       }
-      if (CompareUser != false) {
+      if (CompareUser != 0) {
         output.WriteRawTag(96);
-        output.WriteBool(CompareUser);
+        output.WriteInt32(CompareUser);
       }
       if (CompareWin != 0) {
         output.WriteRawTag(104);
@@ -1528,8 +1531,8 @@ namespace TeenPattiIndia {
       if (OutTime != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(OutTime);
       }
-      if (CompareUser != false) {
-        size += 1 + 1;
+      if (CompareUser != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CompareUser);
       }
       if (CompareWin != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(CompareWin);
@@ -1579,7 +1582,7 @@ namespace TeenPattiIndia {
       if (other.OutTime != 0) {
         OutTime = other.OutTime;
       }
-      if (other.CompareUser != false) {
+      if (other.CompareUser != 0) {
         CompareUser = other.CompareUser;
       }
       if (other.CompareWin != 0) {
@@ -1645,7 +1648,7 @@ namespace TeenPattiIndia {
             break;
           }
           case 96: {
-            CompareUser = input.ReadBool();
+            CompareUser = input.ReadInt32();
             break;
           }
           case 104: {
@@ -1715,7 +1718,7 @@ namespace TeenPattiIndia {
             break;
           }
           case 96: {
-            CompareUser = input.ReadBool();
+            CompareUser = input.ReadInt32();
             break;
           }
           case 104: {
@@ -4368,6 +4371,223 @@ namespace TeenPattiIndia {
           }
           case 32: {
             EndState = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  ///////////////////////////////////////////////////////////////机器人消息///////////////////////////////////////
+  /// </summary>
+  public sealed partial class TPMSgNotifyPlayerAct : pb::IMessage<TPMSgNotifyPlayerAct>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<TPMSgNotifyPlayerAct> _parser = new pb::MessageParser<TPMSgNotifyPlayerAct>(() => new TPMSgNotifyPlayerAct());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<TPMSgNotifyPlayerAct> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[13]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TPMSgNotifyPlayerAct() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TPMSgNotifyPlayerAct(TPMSgNotifyPlayerAct other) : this() {
+      chairId_ = other.chairId_;
+      act_ = other.act_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TPMSgNotifyPlayerAct Clone() {
+      return new TPMSgNotifyPlayerAct(this);
+    }
+
+    /// <summary>Field number for the "chair_id" field.</summary>
+    public const int ChairIdFieldNumber = 1;
+    private int chairId_;
+    /// <summary>
+    ///玩家椅子号
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int ChairId {
+      get { return chairId_; }
+      set {
+        chairId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "act" field.</summary>
+    public const int ActFieldNumber = 2;
+    private int act_;
+    /// <summary>
+    ///被比玩家椅子号
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Act {
+      get { return act_; }
+      set {
+        act_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as TPMSgNotifyPlayerAct);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(TPMSgNotifyPlayerAct other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ChairId != other.ChairId) return false;
+      if (Act != other.Act) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ChairId != 0) hash ^= ChairId.GetHashCode();
+      if (Act != 0) hash ^= Act.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (ChairId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ChairId);
+      }
+      if (Act != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Act);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ChairId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ChairId);
+      }
+      if (Act != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Act);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (ChairId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChairId);
+      }
+      if (Act != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Act);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(TPMSgNotifyPlayerAct other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ChairId != 0) {
+        ChairId = other.ChairId;
+      }
+      if (other.Act != 0) {
+        Act = other.Act;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            ChairId = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            Act = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ChairId = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            Act = input.ReadInt32();
             break;
           }
         }

@@ -47,7 +47,7 @@ struct TableStruct_TeenPatti_5fIndia_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[13]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[14]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -55,6 +55,9 @@ struct TableStruct_TeenPatti_5fIndia_2eproto {
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_TeenPatti_5fIndia_2eproto;
 namespace TeenPatti_India {
+class TPMSgNotifyPlayerAct;
+class TPMSgNotifyPlayerActDefaultTypeInternal;
+extern TPMSgNotifyPlayerActDefaultTypeInternal _TPMSgNotifyPlayerAct_default_instance_;
 class TPMsgAction;
 class TPMsgActionDefaultTypeInternal;
 extern TPMsgActionDefaultTypeInternal _TPMsgAction_default_instance_;
@@ -96,6 +99,7 @@ class TPMsgTableStateDefaultTypeInternal;
 extern TPMsgTableStateDefaultTypeInternal _TPMsgTableState_default_instance_;
 }  // namespace TeenPatti_India
 PROTOBUF_NAMESPACE_OPEN
+template<> ::TeenPatti_India::TPMSgNotifyPlayerAct* Arena::CreateMaybeMessage<::TeenPatti_India::TPMSgNotifyPlayerAct>(Arena*);
 template<> ::TeenPatti_India::TPMsgAction* Arena::CreateMaybeMessage<::TeenPatti_India::TPMsgAction>(Arena*);
 template<> ::TeenPatti_India::TPMsgAddBetResp* Arena::CreateMaybeMessage<::TeenPatti_India::TPMsgAddBetResp>(Arena*);
 template<> ::TeenPatti_India::TPMsgCompareCardResp* Arena::CreateMaybeMessage<::TeenPatti_India::TPMsgCompareCardResp>(Arena*);
@@ -1012,13 +1016,13 @@ class TPMsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_out_time(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // bool compare_user = 12;
+  // int32 compare_user = 12;
   void clear_compare_user();
-  bool compare_user() const;
-  void set_compare_user(bool value);
+  ::PROTOBUF_NAMESPACE_ID::int32 compare_user() const;
+  void set_compare_user(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  bool _internal_compare_user() const;
-  void _internal_set_compare_user(bool value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_compare_user() const;
+  void _internal_set_compare_user(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 compare_win = 13;
@@ -1049,7 +1053,7 @@ class TPMsgSceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 cur_chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 cur_chair_act_;
   ::PROTOBUF_NAMESPACE_ID::int32 out_time_;
-  bool compare_user_;
+  ::PROTOBUF_NAMESPACE_ID::int32 compare_user_;
   ::PROTOBUF_NAMESPACE_ID::int32 compare_win_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_TeenPatti_5fIndia_2eproto;
@@ -2651,6 +2655,153 @@ class TPMsgGameResult PROTOBUF_FINAL :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_TeenPatti_5fIndia_2eproto;
 };
+// -------------------------------------------------------------------
+
+class TPMSgNotifyPlayerAct PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:TeenPatti_India.TPMSgNotifyPlayerAct) */ {
+ public:
+  inline TPMSgNotifyPlayerAct() : TPMSgNotifyPlayerAct(nullptr) {}
+  virtual ~TPMSgNotifyPlayerAct();
+
+  TPMSgNotifyPlayerAct(const TPMSgNotifyPlayerAct& from);
+  TPMSgNotifyPlayerAct(TPMSgNotifyPlayerAct&& from) noexcept
+    : TPMSgNotifyPlayerAct() {
+    *this = ::std::move(from);
+  }
+
+  inline TPMSgNotifyPlayerAct& operator=(const TPMSgNotifyPlayerAct& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline TPMSgNotifyPlayerAct& operator=(TPMSgNotifyPlayerAct&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const TPMSgNotifyPlayerAct& default_instance();
+
+  static inline const TPMSgNotifyPlayerAct* internal_default_instance() {
+    return reinterpret_cast<const TPMSgNotifyPlayerAct*>(
+               &_TPMSgNotifyPlayerAct_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    13;
+
+  friend void swap(TPMSgNotifyPlayerAct& a, TPMSgNotifyPlayerAct& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(TPMSgNotifyPlayerAct* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(TPMSgNotifyPlayerAct* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline TPMSgNotifyPlayerAct* New() const final {
+    return CreateMaybeMessage<TPMSgNotifyPlayerAct>(nullptr);
+  }
+
+  TPMSgNotifyPlayerAct* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<TPMSgNotifyPlayerAct>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const TPMSgNotifyPlayerAct& from);
+  void MergeFrom(const TPMSgNotifyPlayerAct& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(TPMSgNotifyPlayerAct* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "TeenPatti_India.TPMSgNotifyPlayerAct";
+  }
+  protected:
+  explicit TPMSgNotifyPlayerAct(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_TeenPatti_5fIndia_2eproto);
+    return ::descriptor_table_TeenPatti_5fIndia_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kChairIdFieldNumber = 1,
+    kActFieldNumber = 2,
+  };
+  // int32 chair_id = 1;
+  void clear_chair_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_id() const;
+  void set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_chair_id() const;
+  void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 act = 2;
+  void clear_act();
+  ::PROTOBUF_NAMESPACE_ID::int32 act() const;
+  void set_act(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_act() const;
+  void _internal_set_act(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:TeenPatti_India.TPMSgNotifyPlayerAct)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 act_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_TeenPatti_5fIndia_2eproto;
+};
 // ===================================================================
 
 
@@ -3164,22 +3315,22 @@ inline void TPMsgSceneInfo::set_out_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgSceneInfo.out_time)
 }
 
-// bool compare_user = 12;
+// int32 compare_user = 12;
 inline void TPMsgSceneInfo::clear_compare_user() {
-  compare_user_ = false;
+  compare_user_ = 0;
 }
-inline bool TPMsgSceneInfo::_internal_compare_user() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 TPMsgSceneInfo::_internal_compare_user() const {
   return compare_user_;
 }
-inline bool TPMsgSceneInfo::compare_user() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 TPMsgSceneInfo::compare_user() const {
   // @@protoc_insertion_point(field_get:TeenPatti_India.TPMsgSceneInfo.compare_user)
   return _internal_compare_user();
 }
-inline void TPMsgSceneInfo::_internal_set_compare_user(bool value) {
+inline void TPMsgSceneInfo::_internal_set_compare_user(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   compare_user_ = value;
 }
-inline void TPMsgSceneInfo::set_compare_user(bool value) {
+inline void TPMsgSceneInfo::set_compare_user(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_compare_user(value);
   // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgSceneInfo.compare_user)
 }
@@ -4146,9 +4297,55 @@ inline void TPMsgGameResult::set_end_state(::PROTOBUF_NAMESPACE_ID::int32 value)
   // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgGameResult.end_state)
 }
 
+// -------------------------------------------------------------------
+
+// TPMSgNotifyPlayerAct
+
+// int32 chair_id = 1;
+inline void TPMSgNotifyPlayerAct::clear_chair_id() {
+  chair_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 TPMSgNotifyPlayerAct::_internal_chair_id() const {
+  return chair_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 TPMSgNotifyPlayerAct::chair_id() const {
+  // @@protoc_insertion_point(field_get:TeenPatti_India.TPMSgNotifyPlayerAct.chair_id)
+  return _internal_chair_id();
+}
+inline void TPMSgNotifyPlayerAct::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  chair_id_ = value;
+}
+inline void TPMSgNotifyPlayerAct::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_chair_id(value);
+  // @@protoc_insertion_point(field_set:TeenPatti_India.TPMSgNotifyPlayerAct.chair_id)
+}
+
+// int32 act = 2;
+inline void TPMSgNotifyPlayerAct::clear_act() {
+  act_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 TPMSgNotifyPlayerAct::_internal_act() const {
+  return act_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 TPMSgNotifyPlayerAct::act() const {
+  // @@protoc_insertion_point(field_get:TeenPatti_India.TPMSgNotifyPlayerAct.act)
+  return _internal_act();
+}
+inline void TPMSgNotifyPlayerAct::_internal_set_act(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  act_ = value;
+}
+inline void TPMSgNotifyPlayerAct::set_act(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_act(value);
+  // @@protoc_insertion_point(field_set:TeenPatti_India.TPMSgNotifyPlayerAct.act)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
