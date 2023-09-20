@@ -8,7 +8,8 @@ enum ETPGameState
 	GS_TP_READY							= 0;	//准备
 	GS_TP_DEAL							= 1;	//发牌
 	GS_TP_PLAYING						= 2;	//游戏
-	GS_TP_RESULT						= 3;	//结算
+	GS_TP_COMPARE						= 3;	//比牌阶段
+	GS_TP_RESULT						= 4;	//结算
 };
 
 //玩家状态
@@ -51,14 +52,15 @@ enum ETPMsgIDSubGame
 {
 	MsgIDSubGame_Null					= 0;
 	MsgIDSubGame_GameStartResp			= 1;	//游戏开始(TPMsgGameStartResp)
-	MsgIDSubGame_Action					= 2;	//玩家操作(TPMsgAction)
-	MsgIDSubGame_GiveUpResp				= 3;	//玩家弃牌返回(TPMsgGiveUpResp)
-	MsgIDSubGame_LookCard				= 4;	//玩家看牌(TPMsgLookCardResp)
-	MsgIDSubGame_AddBetResp				= 5;	//玩家下注(TPMsgAddBetResp)
-	MsgIDSubGame_CompareCardResp		= 6;	//玩家请求比牌(TPMsgCompareCardResp)
-	MsgIDSubGame_CompareRetResp			= 7;	//玩家比牌结果(TPMsgCompareCardRetResp)
-	MsgIDSubGame_GameResultResp			= 8;	//玩家下注记录(TPMsgGameResultResp)
-	MsgIDSubGame_NotifyStateResp		= 9;	//桌子状态
+	MsgIDSubGame_NotifyActionResp		= 2;	//玩家操作(TPMsgNotifyActionResp)
+	MsgIDSubGame_Action					= 3;	//玩家操作(TPMsgAction)
+	MsgIDSubGame_GiveUpResp				= 4;	//玩家弃牌返回(TPMsgGiveUpResp)
+	MsgIDSubGame_LookCard				= 5;	//玩家看牌(TPMsgLookCardResp)
+	MsgIDSubGame_AddBetResp				= 6;	//玩家下注(TPMsgAddBetResp)
+	MsgIDSubGame_CompareCardResp		= 7;	//玩家请求比牌(TPMsgCompareCardResp)
+	MsgIDSubGame_CompareRetResp			= 8;	//玩家比牌结果(TPMsgCompareCardRetResp)
+	MsgIDSubGame_GameResultResp			= 9;	//玩家下注记录(TPMsgGameResultResp)
+	MsgIDSubGame_NotifyStateResp		= 10;	//桌子状态
 
 	/////////////////////////机器人消息///////////////////////
 	MsgIDSubGame_NotifySystemCheatResp	= 20;	//通知系统作弊率
@@ -96,12 +98,13 @@ message TPMsgSceneInfo
 	int64				total_bet_score	= 6;	//桌内总下注
 	int32				banker_chair_id	= 7;	//庄家椅子号
 	int32				cur_chair_id	= 8;	//当前操作椅子号
-	repeated TPMsgPlayerInfo player_infos	= 9;	//玩家状态
 	int32				cur_chair_act	= 10;	//当前玩家的操作码
 	int32				out_time		= 11;	//当前状态剩余超时时间
 
 	bool				compare_user	= 12;	//比牌发起玩家
-	bool				compare_state	= 13;	//当前是否处理比牌中
+	int32				compare_win		= 13;	//比牌赢家
+
+	repeated TPMsgPlayerInfo player_infos	= 9;	//玩家状态
 }
 
 //游戏开始
@@ -116,6 +119,15 @@ message TPMsgGameStartResp
 	int64				table_max_score	= 7;	//桌内最大下注
 
 
+}
+
+//游戏开始
+message TPMsgNotifyActionResp
+{
+	int32				cur_chair_id	= 1;	//下个操作玩家椅子号
+	int32				cur_times		= 2;	//当前倍数
+	int32				current_act		= 3;	//当前操作码
+	int64				oper_time		= 4;	//操作时间
 }
 
 //玩家操作

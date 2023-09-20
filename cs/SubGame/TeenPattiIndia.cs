@@ -29,62 +29,67 @@ namespace TeenPattiIndia {
             "Cg9UUE1zZ1BsYXllckluZm8SEAoIY2hhaXJfaWQYASABKAUSEAoIbWluZ196",
             "aHUYAiABKAgSEwoLcGxheV9zdGF0dXMYAyABKAUSEgoKcGxheWVyX2JldBgE",
             "IAEoBRIRCgljYXJkX3R5cGUYBSABKAUSLwoGaGFuZGxzGAYgASgLMh8uVGVl",
-            "blBhdHRpX0luZGlhLlRQTXNnSGFuZENhcmRzIs4CCg5UUE1zZ1NjZW5lSW5m",
+            "blBhdHRpX0luZGlhLlRQTXNnSGFuZENhcmRzIswCCg5UUE1zZ1NjZW5lSW5m",
             "bxIRCgltYXhfc2NvcmUYASABKAMSFwoPdGFibGVfbWF4X3Njb3JlGAIgASgD",
             "EhIKCmNlbGxfc2NvcmUYAyABKAMSEQoJY3VyX3RpbWVzGAQgASgFEhMKC3Rh",
             "YmxlX3N0YXRlGAUgASgFEhcKD3RvdGFsX2JldF9zY29yZRgGIAEoAxIXCg9i",
-            "YW5rZXJfY2hhaXJfaWQYByABKAUSFAoMY3VyX2NoYWlyX2lkGAggASgFEjYK",
-            "DHBsYXllcl9pbmZvcxgJIAMoCzIgLlRlZW5QYXR0aV9JbmRpYS5UUE1zZ1Bs",
-            "YXllckluZm8SFQoNY3VyX2NoYWlyX2FjdBgKIAEoBRIQCghvdXRfdGltZRgL",
-            "IAEoBRIUCgxjb21wYXJlX3VzZXIYDCABKAgSFQoNY29tcGFyZV9zdGF0ZRgN",
-            "IAEoCCKpAQoSVFBNc2dHYW1lU3RhcnRSZXNwEhQKDGN1cl9jaGFpcl9pZBgB",
-            "IAEoBRIRCgljdXJfdGltZXMYAiABKAUSFwoPYmFua2VyX2NoYWlyX2lkGAMg",
-            "ASgFEhEKCW1heF9zY29yZRgEIAEoAxIRCgltYXhfYmxpbmQYBSABKAMSEgoK",
-            "Y2VsbF9zY29yZRgGIAEoAxIXCg90YWJsZV9tYXhfc2NvcmUYByABKAMiUgoL",
-            "VFBNc2dBY3Rpb24SCwoDYWN0GAEgASgFEhEKCWJldF9zY29yZRgCIAEoAxIU",
-            "Cgxjb21wYXJlX3VzZXIYAyABKAMSDQoFaXNfb2sYBCABKAgiIwoPVFBNc2dH",
-            "aXZlVXBSZXNwEhAKCGNoYWlyX2lkGAEgASgFIjQKEVRQTXNnTG9va0NhcmRS",
-            "ZXNwEhAKCGNoYWlyX2lkGAEgASgFEg0KBWNhcmRzGAIgAygFIosBCg9UUE1z",
-            "Z0FkZEJldFJlc3ASFAoMY3VyX2NoYWlyX2lkGAEgASgFEhEKCWN1cl90aW1l",
-            "cxgCIAEoBRITCgtjdXJyZW50X2FjdBgDIAEoBRIUCgxhZGRfY2hhaXJfaWQY",
-            "BCABKAUSEQoJYWRkX3Njb3JlGAUgASgDEhEKCW9wZXJfdGltZRgGIAEoAyI8",
-            "ChRUUE1zZ0NvbXBhcmVDYXJkUmVzcBIQCghjaGFpcl9pZBgBIAEoBRISCgpj",
-            "b21wYXJlX2lkGAIgASgFIq8BChdUUE1zZ0NvbXBhcmVDYXJkUmV0UmVzcBIY",
-            "ChBjdXJyZW50X2NoYWlyX2lkGAEgASgFEhMKC2N1cnJlbnRfYWN0GAIgASgF",
-            "Eg8KB2xvc3RfaWQYAyABKAUSEgoKY29tcGFyZV9pZBgEIAEoBRISCgpwYXNz",
-            "aXZlX2lkGAUgASgFEhUKDWNvbXBhcmVfY2FyZHMYBiADKAUSFQoNcGFzc2l2",
-            "ZV9jYXJkcxgHIAMoBSKBAQoPVFBNc2dHYW1lUmVzdWx0EhAKCGdhbWVfdGF4",
-            "GAEgASgFEhIKCmdhbWVfc2NvcmUYAiADKAMSNQoMcGxheWVyX2hhbmRzGAMg",
-            "AygLMh8uVGVlblBhdHRpX0luZGlhLlRQTXNnSGFuZENhcmRzEhEKCWVuZF9z",
-            "dGF0ZRgEIAEoBSpUCgxFVFBHYW1lU3RhdGUSDwoLR1NfVFBfUkVBRFkQABIO",
-            "CgpHU19UUF9ERUFMEAESEQoNR1NfVFBfUExBWUlORxACEhAKDEdTX1RQX1JF",
-            "U1VMVBADKkUKDkVUUFBsYXllclN0YXRlEgwKCFBTX1JFQURZEAASCwoHUFNf",
-            "UExBWRABEgsKB1BTX0dJVkUQAhILCgdQU19GQUlMEAMqhwEKC0VUUENhcmRU",
-            "eXBlEg0KCUNUX1NJTkdMRRAAEg0KCUNUX0RPVUJMRRABEg4KCkNUX1NIVU5f",
-            "WkkQAhIOCgpDVF9KSU5fSFVBEAMSDwoLQ1RfU0hVTl9KSU4QBBINCglDVF9C",
-            "QU9fWkkQBRIOCgpDVF9TUEVDSUFMEAYSCgoGQ1RfTUFYEAcqhAEKDUVUUEdh",
-            "bWVBY3Rpb24SDQoJSW52YWxkQWN0EAASCgoGR2l2ZVVwEAESDAoITG9va0Nh",
-            "cmQQAhILCgdDYWxsQmV0EAQSCgoGQWRkQmV0EAgSDwoLQ29tcGFyZUNhcmQQ",
-            "EBIQCgxDb21wYXJlUmVwbHkQIBIOCgpBbGxDb21wYXJlEEAqmgQKD0VUUE1z",
-            "Z0lEU3ViR2FtZRIVChFNc2dJRFN1YkdhbWVfTnVsbBAAEh4KGk1zZ0lEU3Vi",
-            "R2FtZV9HYW1lU3RhcnRSZXNwEAESFwoTTXNnSURTdWJHYW1lX0FjdGlvbhAC",
-            "EhsKF01zZ0lEU3ViR2FtZV9HaXZlVXBSZXNwEAMSGQoVTXNnSURTdWJHYW1l",
-            "X0xvb2tDYXJkEAQSGwoXTXNnSURTdWJHYW1lX0FkZEJldFJlc3AQBRIgChxN",
-            "c2dJRFN1YkdhbWVfQ29tcGFyZUNhcmRSZXNwEAYSHwobTXNnSURTdWJHYW1l",
-            "X0NvbXBhcmVSZXRSZXNwEAcSHwobTXNnSURTdWJHYW1lX0dhbWVSZXN1bHRS",
-            "ZXNwEAgSIAocTXNnSURTdWJHYW1lX05vdGlmeVN0YXRlUmVzcBAJEiYKIk1z",
-            "Z0lEU3ViR2FtZV9Ob3RpZnlTeXN0ZW1DaGVhdFJlc3AQFBIjCh9Nc2dJRFN1",
-            "YkdhbWVfTm90aWZ5Q2FyZFR5cGVSZXNwEBUSIAocTXNnSURTdWJHYW1lX05v",
-            "dGlmeUlzTWF4UmVzcBAWEicKI01zZ0lEU3ViR2FtZV9Ob3RpZnlSZW1haW5E",
-            "b3VibGVSZXNwEBcSIAocTXNnSURTdWJHYW1lX05vdGlmeVJvdW5kUmVzcBAY",
-            "EiIKHk1zZ0lEU3ViR2FtZV9Ob3RpZnlMYXN0QWN0UmVzcBAZYgZwcm90bzM="));
+            "YW5rZXJfY2hhaXJfaWQYByABKAUSFAoMY3VyX2NoYWlyX2lkGAggASgFEhUK",
+            "DWN1cl9jaGFpcl9hY3QYCiABKAUSEAoIb3V0X3RpbWUYCyABKAUSFAoMY29t",
+            "cGFyZV91c2VyGAwgASgIEhMKC2NvbXBhcmVfd2luGA0gASgFEjYKDHBsYXll",
+            "cl9pbmZvcxgJIAMoCzIgLlRlZW5QYXR0aV9JbmRpYS5UUE1zZ1BsYXllcklu",
+            "Zm8iqQEKElRQTXNnR2FtZVN0YXJ0UmVzcBIUCgxjdXJfY2hhaXJfaWQYASAB",
+            "KAUSEQoJY3VyX3RpbWVzGAIgASgFEhcKD2Jhbmtlcl9jaGFpcl9pZBgDIAEo",
+            "BRIRCgltYXhfc2NvcmUYBCABKAMSEQoJbWF4X2JsaW5kGAUgASgDEhIKCmNl",
+            "bGxfc2NvcmUYBiABKAMSFwoPdGFibGVfbWF4X3Njb3JlGAcgASgDImgKFVRQ",
+            "TXNnTm90aWZ5QWN0aW9uUmVzcBIUCgxjdXJfY2hhaXJfaWQYASABKAUSEQoJ",
+            "Y3VyX3RpbWVzGAIgASgFEhMKC2N1cnJlbnRfYWN0GAMgASgFEhEKCW9wZXJf",
+            "dGltZRgEIAEoAyJSCgtUUE1zZ0FjdGlvbhILCgNhY3QYASABKAUSEQoJYmV0",
+            "X3Njb3JlGAIgASgDEhQKDGNvbXBhcmVfdXNlchgDIAEoAxINCgVpc19vaxgE",
+            "IAEoCCIjCg9UUE1zZ0dpdmVVcFJlc3ASEAoIY2hhaXJfaWQYASABKAUiNAoR",
+            "VFBNc2dMb29rQ2FyZFJlc3ASEAoIY2hhaXJfaWQYASABKAUSDQoFY2FyZHMY",
+            "AiADKAUiiwEKD1RQTXNnQWRkQmV0UmVzcBIUCgxjdXJfY2hhaXJfaWQYASAB",
+            "KAUSEQoJY3VyX3RpbWVzGAIgASgFEhMKC2N1cnJlbnRfYWN0GAMgASgFEhQK",
+            "DGFkZF9jaGFpcl9pZBgEIAEoBRIRCglhZGRfc2NvcmUYBSABKAMSEQoJb3Bl",
+            "cl90aW1lGAYgASgDIjwKFFRQTXNnQ29tcGFyZUNhcmRSZXNwEhAKCGNoYWly",
+            "X2lkGAEgASgFEhIKCmNvbXBhcmVfaWQYAiABKAUirwEKF1RQTXNnQ29tcGFy",
+            "ZUNhcmRSZXRSZXNwEhgKEGN1cnJlbnRfY2hhaXJfaWQYASABKAUSEwoLY3Vy",
+            "cmVudF9hY3QYAiABKAUSDwoHbG9zdF9pZBgDIAEoBRISCgpjb21wYXJlX2lk",
+            "GAQgASgFEhIKCnBhc3NpdmVfaWQYBSABKAUSFQoNY29tcGFyZV9jYXJkcxgG",
+            "IAMoBRIVCg1wYXNzaXZlX2NhcmRzGAcgAygFIoEBCg9UUE1zZ0dhbWVSZXN1",
+            "bHQSEAoIZ2FtZV90YXgYASABKAUSEgoKZ2FtZV9zY29yZRgCIAMoAxI1Cgxw",
+            "bGF5ZXJfaGFuZHMYAyADKAsyHy5UZWVuUGF0dGlfSW5kaWEuVFBNc2dIYW5k",
+            "Q2FyZHMSEQoJZW5kX3N0YXRlGAQgASgFKmcKDEVUUEdhbWVTdGF0ZRIPCgtH",
+            "U19UUF9SRUFEWRAAEg4KCkdTX1RQX0RFQUwQARIRCg1HU19UUF9QTEFZSU5H",
+            "EAISEQoNR1NfVFBfQ09NUEFSRRADEhAKDEdTX1RQX1JFU1VMVBAEKkUKDkVU",
+            "UFBsYXllclN0YXRlEgwKCFBTX1JFQURZEAASCwoHUFNfUExBWRABEgsKB1BT",
+            "X0dJVkUQAhILCgdQU19GQUlMEAMqhwEKC0VUUENhcmRUeXBlEg0KCUNUX1NJ",
+            "TkdMRRAAEg0KCUNUX0RPVUJMRRABEg4KCkNUX1NIVU5fWkkQAhIOCgpDVF9K",
+            "SU5fSFVBEAMSDwoLQ1RfU0hVTl9KSU4QBBINCglDVF9CQU9fWkkQBRIOCgpD",
+            "VF9TUEVDSUFMEAYSCgoGQ1RfTUFYEAcqhAEKDUVUUEdhbWVBY3Rpb24SDQoJ",
+            "SW52YWxkQWN0EAASCgoGR2l2ZVVwEAESDAoITG9va0NhcmQQAhILCgdDYWxs",
+            "QmV0EAQSCgoGQWRkQmV0EAgSDwoLQ29tcGFyZUNhcmQQEBIQCgxDb21wYXJl",
+            "UmVwbHkQIBIOCgpBbGxDb21wYXJlEEAqvQQKD0VUUE1zZ0lEU3ViR2FtZRIV",
+            "ChFNc2dJRFN1YkdhbWVfTnVsbBAAEh4KGk1zZ0lEU3ViR2FtZV9HYW1lU3Rh",
+            "cnRSZXNwEAESIQodTXNnSURTdWJHYW1lX05vdGlmeUFjdGlvblJlc3AQAhIX",
+            "ChNNc2dJRFN1YkdhbWVfQWN0aW9uEAMSGwoXTXNnSURTdWJHYW1lX0dpdmVV",
+            "cFJlc3AQBBIZChVNc2dJRFN1YkdhbWVfTG9va0NhcmQQBRIbChdNc2dJRFN1",
+            "YkdhbWVfQWRkQmV0UmVzcBAGEiAKHE1zZ0lEU3ViR2FtZV9Db21wYXJlQ2Fy",
+            "ZFJlc3AQBxIfChtNc2dJRFN1YkdhbWVfQ29tcGFyZVJldFJlc3AQCBIfChtN",
+            "c2dJRFN1YkdhbWVfR2FtZVJlc3VsdFJlc3AQCRIgChxNc2dJRFN1YkdhbWVf",
+            "Tm90aWZ5U3RhdGVSZXNwEAoSJgoiTXNnSURTdWJHYW1lX05vdGlmeVN5c3Rl",
+            "bUNoZWF0UmVzcBAUEiMKH01zZ0lEU3ViR2FtZV9Ob3RpZnlDYXJkVHlwZVJl",
+            "c3AQFRIgChxNc2dJRFN1YkdhbWVfTm90aWZ5SXNNYXhSZXNwEBYSJwojTXNn",
+            "SURTdWJHYW1lX05vdGlmeVJlbWFpbkRvdWJsZVJlc3AQFxIgChxNc2dJRFN1",
+            "YkdhbWVfTm90aWZ5Um91bmRSZXNwEBgSIgoeTXNnSURTdWJHYW1lX05vdGlm",
+            "eUxhc3RBY3RSZXNwEBliBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::TeenPattiIndia.ETPGameState), typeof(global::TeenPattiIndia.ETPPlayerState), typeof(global::TeenPattiIndia.ETPCardType), typeof(global::TeenPattiIndia.ETPGameAction), typeof(global::TeenPattiIndia.ETPMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.TPMsgHandCards), global::TeenPattiIndia.TPMsgHandCards.Parser, new[]{ "Cards" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.TPMsgPlayerInfo), global::TeenPattiIndia.TPMsgPlayerInfo.Parser, new[]{ "ChairId", "MingZhu", "PlayStatus", "PlayerBet", "CardType", "Handls" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.TPMsgSceneInfo), global::TeenPattiIndia.TPMsgSceneInfo.Parser, new[]{ "MaxScore", "TableMaxScore", "CellScore", "CurTimes", "TableState", "TotalBetScore", "BankerChairId", "CurChairId", "PlayerInfos", "CurChairAct", "OutTime", "CompareUser", "CompareState" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.TPMsgSceneInfo), global::TeenPattiIndia.TPMsgSceneInfo.Parser, new[]{ "MaxScore", "TableMaxScore", "CellScore", "CurTimes", "TableState", "TotalBetScore", "BankerChairId", "CurChairId", "CurChairAct", "OutTime", "CompareUser", "CompareWin", "PlayerInfos" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.TPMsgGameStartResp), global::TeenPattiIndia.TPMsgGameStartResp.Parser, new[]{ "CurChairId", "CurTimes", "BankerChairId", "MaxScore", "MaxBlind", "CellScore", "TableMaxScore" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.TPMsgNotifyActionResp), global::TeenPattiIndia.TPMsgNotifyActionResp.Parser, new[]{ "CurChairId", "CurTimes", "CurrentAct", "OperTime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.TPMsgAction), global::TeenPattiIndia.TPMsgAction.Parser, new[]{ "Act", "BetScore", "CompareUser", "IsOk" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.TPMsgGiveUpResp), global::TeenPattiIndia.TPMsgGiveUpResp.Parser, new[]{ "ChairId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.TPMsgLookCardResp), global::TeenPattiIndia.TPMsgLookCardResp.Parser, new[]{ "ChairId", "Cards" }, null, null, null, null),
@@ -115,9 +120,13 @@ namespace TeenPattiIndia {
     /// </summary>
     [pbr::OriginalName("GS_TP_PLAYING")] GsTpPlaying = 2,
     /// <summary>
+    ///比牌阶段
+    /// </summary>
+    [pbr::OriginalName("GS_TP_COMPARE")] GsTpCompare = 3,
+    /// <summary>
     ///结算
     /// </summary>
-    [pbr::OriginalName("GS_TP_RESULT")] GsTpResult = 3,
+    [pbr::OriginalName("GS_TP_RESULT")] GsTpResult = 4,
   }
 
   /// <summary>
@@ -225,37 +234,41 @@ namespace TeenPattiIndia {
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_GameStartResp")] MsgIdsubGameGameStartResp = 1,
     /// <summary>
+    ///玩家操作(TPMsgNotifyActionResp)
+    /// </summary>
+    [pbr::OriginalName("MsgIDSubGame_NotifyActionResp")] MsgIdsubGameNotifyActionResp = 2,
+    /// <summary>
     ///玩家操作(TPMsgAction)
     /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_Action")] MsgIdsubGameAction = 2,
+    [pbr::OriginalName("MsgIDSubGame_Action")] MsgIdsubGameAction = 3,
     /// <summary>
     ///玩家弃牌返回(TPMsgGiveUpResp)
     /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_GiveUpResp")] MsgIdsubGameGiveUpResp = 3,
+    [pbr::OriginalName("MsgIDSubGame_GiveUpResp")] MsgIdsubGameGiveUpResp = 4,
     /// <summary>
     ///玩家看牌(TPMsgLookCardResp)
     /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_LookCard")] MsgIdsubGameLookCard = 4,
+    [pbr::OriginalName("MsgIDSubGame_LookCard")] MsgIdsubGameLookCard = 5,
     /// <summary>
     ///玩家下注(TPMsgAddBetResp)
     /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_AddBetResp")] MsgIdsubGameAddBetResp = 5,
+    [pbr::OriginalName("MsgIDSubGame_AddBetResp")] MsgIdsubGameAddBetResp = 6,
     /// <summary>
     ///玩家请求比牌(TPMsgCompareCardResp)
     /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_CompareCardResp")] MsgIdsubGameCompareCardResp = 6,
+    [pbr::OriginalName("MsgIDSubGame_CompareCardResp")] MsgIdsubGameCompareCardResp = 7,
     /// <summary>
     ///玩家比牌结果(TPMsgCompareCardRetResp)
     /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_CompareRetResp")] MsgIdsubGameCompareRetResp = 7,
+    [pbr::OriginalName("MsgIDSubGame_CompareRetResp")] MsgIdsubGameCompareRetResp = 8,
     /// <summary>
     ///玩家下注记录(TPMsgGameResultResp)
     /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_GameResultResp")] MsgIdsubGameGameResultResp = 8,
+    [pbr::OriginalName("MsgIDSubGame_GameResultResp")] MsgIdsubGameGameResultResp = 9,
     /// <summary>
     ///桌子状态
     /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_NotifyStateResp")] MsgIdsubGameNotifyStateResp = 9,
+    [pbr::OriginalName("MsgIDSubGame_NotifyStateResp")] MsgIdsubGameNotifyStateResp = 10,
     /// <summary>
     //////////////////////////机器人消息///////////////////////
     /// </summary>
@@ -870,11 +883,11 @@ namespace TeenPattiIndia {
       totalBetScore_ = other.totalBetScore_;
       bankerChairId_ = other.bankerChairId_;
       curChairId_ = other.curChairId_;
-      playerInfos_ = other.playerInfos_.Clone();
       curChairAct_ = other.curChairAct_;
       outTime_ = other.outTime_;
       compareUser_ = other.compareUser_;
-      compareState_ = other.compareState_;
+      compareWin_ = other.compareWin_;
+      playerInfos_ = other.playerInfos_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -995,19 +1008,6 @@ namespace TeenPattiIndia {
       }
     }
 
-    /// <summary>Field number for the "player_infos" field.</summary>
-    public const int PlayerInfosFieldNumber = 9;
-    private static readonly pb::FieldCodec<global::TeenPattiIndia.TPMsgPlayerInfo> _repeated_playerInfos_codec
-        = pb::FieldCodec.ForMessage(74, global::TeenPattiIndia.TPMsgPlayerInfo.Parser);
-    private readonly pbc::RepeatedField<global::TeenPattiIndia.TPMsgPlayerInfo> playerInfos_ = new pbc::RepeatedField<global::TeenPattiIndia.TPMsgPlayerInfo>();
-    /// <summary>
-    ///玩家状态
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::TeenPattiIndia.TPMsgPlayerInfo> PlayerInfos {
-      get { return playerInfos_; }
-    }
-
     /// <summary>Field number for the "cur_chair_act" field.</summary>
     public const int CurChairActFieldNumber = 10;
     private int curChairAct_;
@@ -1050,18 +1050,31 @@ namespace TeenPattiIndia {
       }
     }
 
-    /// <summary>Field number for the "compare_state" field.</summary>
-    public const int CompareStateFieldNumber = 13;
-    private bool compareState_;
+    /// <summary>Field number for the "compare_win" field.</summary>
+    public const int CompareWinFieldNumber = 13;
+    private int compareWin_;
     /// <summary>
-    ///当前是否处理比牌中
+    ///比牌赢家
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool CompareState {
-      get { return compareState_; }
+    public int CompareWin {
+      get { return compareWin_; }
       set {
-        compareState_ = value;
+        compareWin_ = value;
       }
+    }
+
+    /// <summary>Field number for the "player_infos" field.</summary>
+    public const int PlayerInfosFieldNumber = 9;
+    private static readonly pb::FieldCodec<global::TeenPattiIndia.TPMsgPlayerInfo> _repeated_playerInfos_codec
+        = pb::FieldCodec.ForMessage(74, global::TeenPattiIndia.TPMsgPlayerInfo.Parser);
+    private readonly pbc::RepeatedField<global::TeenPattiIndia.TPMsgPlayerInfo> playerInfos_ = new pbc::RepeatedField<global::TeenPattiIndia.TPMsgPlayerInfo>();
+    /// <summary>
+    ///玩家状态
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::TeenPattiIndia.TPMsgPlayerInfo> PlayerInfos {
+      get { return playerInfos_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1085,11 +1098,11 @@ namespace TeenPattiIndia {
       if (TotalBetScore != other.TotalBetScore) return false;
       if (BankerChairId != other.BankerChairId) return false;
       if (CurChairId != other.CurChairId) return false;
-      if(!playerInfos_.Equals(other.playerInfos_)) return false;
       if (CurChairAct != other.CurChairAct) return false;
       if (OutTime != other.OutTime) return false;
       if (CompareUser != other.CompareUser) return false;
-      if (CompareState != other.CompareState) return false;
+      if (CompareWin != other.CompareWin) return false;
+      if(!playerInfos_.Equals(other.playerInfos_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1104,11 +1117,11 @@ namespace TeenPattiIndia {
       if (TotalBetScore != 0L) hash ^= TotalBetScore.GetHashCode();
       if (BankerChairId != 0) hash ^= BankerChairId.GetHashCode();
       if (CurChairId != 0) hash ^= CurChairId.GetHashCode();
-      hash ^= playerInfos_.GetHashCode();
       if (CurChairAct != 0) hash ^= CurChairAct.GetHashCode();
       if (OutTime != 0) hash ^= OutTime.GetHashCode();
       if (CompareUser != false) hash ^= CompareUser.GetHashCode();
-      if (CompareState != false) hash ^= CompareState.GetHashCode();
+      if (CompareWin != 0) hash ^= CompareWin.GetHashCode();
+      hash ^= playerInfos_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1170,9 +1183,9 @@ namespace TeenPattiIndia {
         output.WriteRawTag(96);
         output.WriteBool(CompareUser);
       }
-      if (CompareState != false) {
+      if (CompareWin != 0) {
         output.WriteRawTag(104);
-        output.WriteBool(CompareState);
+        output.WriteInt32(CompareWin);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1228,9 +1241,9 @@ namespace TeenPattiIndia {
         output.WriteRawTag(96);
         output.WriteBool(CompareUser);
       }
-      if (CompareState != false) {
+      if (CompareWin != 0) {
         output.WriteRawTag(104);
-        output.WriteBool(CompareState);
+        output.WriteInt32(CompareWin);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1265,7 +1278,6 @@ namespace TeenPattiIndia {
       if (CurChairId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(CurChairId);
       }
-      size += playerInfos_.CalculateSize(_repeated_playerInfos_codec);
       if (CurChairAct != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(CurChairAct);
       }
@@ -1275,9 +1287,10 @@ namespace TeenPattiIndia {
       if (CompareUser != false) {
         size += 1 + 1;
       }
-      if (CompareState != false) {
-        size += 1 + 1;
+      if (CompareWin != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CompareWin);
       }
+      size += playerInfos_.CalculateSize(_repeated_playerInfos_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1313,7 +1326,6 @@ namespace TeenPattiIndia {
       if (other.CurChairId != 0) {
         CurChairId = other.CurChairId;
       }
-      playerInfos_.Add(other.playerInfos_);
       if (other.CurChairAct != 0) {
         CurChairAct = other.CurChairAct;
       }
@@ -1323,9 +1335,10 @@ namespace TeenPattiIndia {
       if (other.CompareUser != false) {
         CompareUser = other.CompareUser;
       }
-      if (other.CompareState != false) {
-        CompareState = other.CompareState;
+      if (other.CompareWin != 0) {
+        CompareWin = other.CompareWin;
       }
+      playerInfos_.Add(other.playerInfos_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1389,7 +1402,7 @@ namespace TeenPattiIndia {
             break;
           }
           case 104: {
-            CompareState = input.ReadBool();
+            CompareWin = input.ReadInt32();
             break;
           }
         }
@@ -1455,7 +1468,7 @@ namespace TeenPattiIndia {
             break;
           }
           case 104: {
-            CompareState = input.ReadBool();
+            CompareWin = input.ReadInt32();
             break;
           }
         }
@@ -1878,6 +1891,301 @@ namespace TeenPattiIndia {
   }
 
   /// <summary>
+  ///游戏开始
+  /// </summary>
+  public sealed partial class TPMsgNotifyActionResp : pb::IMessage<TPMsgNotifyActionResp>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<TPMsgNotifyActionResp> _parser = new pb::MessageParser<TPMsgNotifyActionResp>(() => new TPMsgNotifyActionResp());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<TPMsgNotifyActionResp> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TPMsgNotifyActionResp() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TPMsgNotifyActionResp(TPMsgNotifyActionResp other) : this() {
+      curChairId_ = other.curChairId_;
+      curTimes_ = other.curTimes_;
+      currentAct_ = other.currentAct_;
+      operTime_ = other.operTime_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TPMsgNotifyActionResp Clone() {
+      return new TPMsgNotifyActionResp(this);
+    }
+
+    /// <summary>Field number for the "cur_chair_id" field.</summary>
+    public const int CurChairIdFieldNumber = 1;
+    private int curChairId_;
+    /// <summary>
+    ///下个操作玩家椅子号
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CurChairId {
+      get { return curChairId_; }
+      set {
+        curChairId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "cur_times" field.</summary>
+    public const int CurTimesFieldNumber = 2;
+    private int curTimes_;
+    /// <summary>
+    ///当前倍数
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CurTimes {
+      get { return curTimes_; }
+      set {
+        curTimes_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "current_act" field.</summary>
+    public const int CurrentActFieldNumber = 3;
+    private int currentAct_;
+    /// <summary>
+    ///当前操作码
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CurrentAct {
+      get { return currentAct_; }
+      set {
+        currentAct_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "oper_time" field.</summary>
+    public const int OperTimeFieldNumber = 4;
+    private long operTime_;
+    /// <summary>
+    ///操作时间
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long OperTime {
+      get { return operTime_; }
+      set {
+        operTime_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as TPMsgNotifyActionResp);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(TPMsgNotifyActionResp other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (CurChairId != other.CurChairId) return false;
+      if (CurTimes != other.CurTimes) return false;
+      if (CurrentAct != other.CurrentAct) return false;
+      if (OperTime != other.OperTime) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (CurChairId != 0) hash ^= CurChairId.GetHashCode();
+      if (CurTimes != 0) hash ^= CurTimes.GetHashCode();
+      if (CurrentAct != 0) hash ^= CurrentAct.GetHashCode();
+      if (OperTime != 0L) hash ^= OperTime.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (CurChairId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(CurChairId);
+      }
+      if (CurTimes != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(CurTimes);
+      }
+      if (CurrentAct != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(CurrentAct);
+      }
+      if (OperTime != 0L) {
+        output.WriteRawTag(32);
+        output.WriteInt64(OperTime);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (CurChairId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(CurChairId);
+      }
+      if (CurTimes != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(CurTimes);
+      }
+      if (CurrentAct != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(CurrentAct);
+      }
+      if (OperTime != 0L) {
+        output.WriteRawTag(32);
+        output.WriteInt64(OperTime);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (CurChairId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CurChairId);
+      }
+      if (CurTimes != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CurTimes);
+      }
+      if (CurrentAct != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CurrentAct);
+      }
+      if (OperTime != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(OperTime);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(TPMsgNotifyActionResp other) {
+      if (other == null) {
+        return;
+      }
+      if (other.CurChairId != 0) {
+        CurChairId = other.CurChairId;
+      }
+      if (other.CurTimes != 0) {
+        CurTimes = other.CurTimes;
+      }
+      if (other.CurrentAct != 0) {
+        CurrentAct = other.CurrentAct;
+      }
+      if (other.OperTime != 0L) {
+        OperTime = other.OperTime;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            CurChairId = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            CurTimes = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            CurrentAct = input.ReadInt32();
+            break;
+          }
+          case 32: {
+            OperTime = input.ReadInt64();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            CurChairId = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            CurTimes = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            CurrentAct = input.ReadInt32();
+            break;
+          }
+          case 32: {
+            OperTime = input.ReadInt64();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
   ///玩家操作
   /// </summary>
   public sealed partial class TPMsgAction : pb::IMessage<TPMsgAction>
@@ -1892,7 +2200,7 @@ namespace TeenPattiIndia {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[4]; }
+      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2187,7 +2495,7 @@ namespace TeenPattiIndia {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[5]; }
+      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2365,7 +2673,7 @@ namespace TeenPattiIndia {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[6]; }
+      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2570,7 +2878,7 @@ namespace TeenPattiIndia {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[7]; }
+      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2943,7 +3251,7 @@ namespace TeenPattiIndia {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[8]; }
+      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3160,7 +3468,7 @@ namespace TeenPattiIndia {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[9]; }
+      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3554,7 +3862,7 @@ namespace TeenPattiIndia {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[10]; }
+      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
