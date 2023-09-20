@@ -44,6 +44,8 @@ enum EMsgIDServerInternalProto
 	CENTER2LOGIN_UpdateChatServerOnlineNum	= 22;	//更新聊天服务器在线人数
 	LOGIN2CENTER_BankSynchronousLogin		= 23;	//同步赠送金币
 	CENTER2LOGIN_BankSynchronousLoginResp	= 24;	//同步赠送金币返回
+	CENTER2LOGIN_WithdrawResp				= 25;	//兑换回调
+	CENTER2LOGIN_KickUserResp				= 26;	//踢玩家
 	//1001-2000 game <-> center
 	GAME2CENTER_Register			= 2001;	//游戏服务器注册
 	GAME2CENTER_UnRegister			= 2002;	//游戏服务器注销
@@ -51,6 +53,7 @@ enum EMsgIDServerInternalProto
 	CENTER2GAME_ApplyRobotResp		= 2004;	//申请机器人返回
 	GAME2CENTER_UpdateOnlineNum		= 2005;	//更新游戏服务器在线人数
 	GAME2CENTER_BroadcastTip		= 2006;	//游戏请求跑马灯广播
+	CENTER2GAME_KickUserResp		= 2007;	//踢玩家
 	
 	//2001-3000
 	ROBOT2GAME_RobotLogin			= 3001;	//机器人登录
@@ -66,12 +69,14 @@ enum EMsgIDServerInternalProto
 	RelayServer2CENTER_AddMail			= 5002;	//添加邮件
 	RelayServer2CENTER_RechargeSuccess	= 5003;	//充值成功
 	RelayServer2CENTER_Withdraw			= 5004;	//兑换
+	RelayServer2CENTER_KickUser			= 5005;	//踢人
 	
 	//6001-7000 ChatServer <-> center
 	Chat2Center_Register				= 6001;	//聊天服注册
 	Chat2Center_UpdateOnlineNum			= 6002;	//更新聊天服务器在线人数
 	Chat2Center_SendTrumpetMsg			= 6003;	//发送小喇叭消息
 	Center2Chat_SendTrumpetMsgResp		= 6004;	//发送小喇叭消息返回
+	Center2Chat_KickUserResp			= 6005;	//踢玩家
 
 }
 
@@ -183,6 +188,8 @@ enum EMsgIDDB
 	GAME2DB_QueryJckpotInfo			= 2013;	//查询奖池信息
 	DB2GAME_QueryJckpotInfoResp		= 2014;	//查询奖池信息返回
 	GAME2DB_UpdateJckpotInfo		= 2015;	//更新奖池信息
+	GAME2DB_LoginOut				= 2016;	//玩家退出游戏
+	GAME2DB_ClearOfflineUser		= 2017;	//清除断线玩家
 	//3001-4000 ChatServer2DB
 	CHAT2DB_Login					= 3001;	//登录
 	DB2CHAT_LoginResp				= 3002;	//登录返回

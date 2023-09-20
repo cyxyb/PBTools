@@ -116,12 +116,15 @@ enum EMsgIDServerInternalProto : int {
   CENTER2LOGIN_UpdateChatServerOnlineNum = 22,
   LOGIN2CENTER_BankSynchronousLogin = 23,
   CENTER2LOGIN_BankSynchronousLoginResp = 24,
+  CENTER2LOGIN_WithdrawResp = 25,
+  CENTER2LOGIN_KickUserResp = 26,
   GAME2CENTER_Register = 2001,
   GAME2CENTER_UnRegister = 2002,
   GAME2CENTER_ApplyRobot = 2003,
   CENTER2GAME_ApplyRobotResp = 2004,
   GAME2CENTER_UpdateOnlineNum = 2005,
   GAME2CENTER_BroadcastTip = 2006,
+  CENTER2GAME_KickUserResp = 2007,
   ROBOT2GAME_RobotLogin = 3001,
   CENTER2APPRECHARGE_SendPhoneCode = 4001,
   APPRECHARGE2CENTER_HeartBeat = 4002,
@@ -132,16 +135,18 @@ enum EMsgIDServerInternalProto : int {
   RelayServer2CENTER_AddMail = 5002,
   RelayServer2CENTER_RechargeSuccess = 5003,
   RelayServer2CENTER_Withdraw = 5004,
+  RelayServer2CENTER_KickUser = 5005,
   Chat2Center_Register = 6001,
   Chat2Center_UpdateOnlineNum = 6002,
   Chat2Center_SendTrumpetMsg = 6003,
   Center2Chat_SendTrumpetMsgResp = 6004,
+  Center2Chat_KickUserResp = 6005,
   EMsgIDServerInternalProto_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDServerInternalProto_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDServerInternalProto_IsValid(int value);
 constexpr EMsgIDServerInternalProto EMsgIDServerInternalProto_MIN = SERVER_INTERNAL_NULL;
-constexpr EMsgIDServerInternalProto EMsgIDServerInternalProto_MAX = Center2Chat_SendTrumpetMsgResp;
+constexpr EMsgIDServerInternalProto EMsgIDServerInternalProto_MAX = Center2Chat_KickUserResp;
 constexpr int EMsgIDServerInternalProto_ARRAYSIZE = EMsgIDServerInternalProto_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDServerInternalProto_descriptor();
@@ -261,6 +266,8 @@ enum EMsgIDDB : int {
   GAME2DB_QueryJckpotInfo = 2013,
   DB2GAME_QueryJckpotInfoResp = 2014,
   GAME2DB_UpdateJckpotInfo = 2015,
+  GAME2DB_LoginOut = 2016,
+  GAME2DB_ClearOfflineUser = 2017,
   CHAT2DB_Login = 3001,
   DB2CHAT_LoginResp = 3002,
   CHAT2DB_SendTrumpetMsg = 3003,

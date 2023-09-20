@@ -124,6 +124,12 @@ message MsgUpdateChatServerOnlineNum
 	int32	online_num			= 2;		//在线数量
 }
 
+message MsgSynchronousLogin
+{
+	int32	user_id				= 1;		//玩家ID
+	int64	gold				= 2;		//变动金币
+}
+
 
 
 /////////////////////////服务器与数据库///////////////////////////
@@ -425,10 +431,14 @@ message MsgDBBuyGoods
 	int32	item_id				= 2;		//商品id
 	int32	item_num			= 3;		//商品数量
 }
-message MsgSynchronousLogin
+
+//玩家从游戏退出
+message MsgDBGameLoginOut
 {
 	int32	user_id				= 1;		//玩家ID
-	int64	gold				= 2;		//变动金币
+	int32	is_offline			= 2;		//是否断线
+	int32	server_id			= 3;		//服务器ID
+	int32	kind_id				= 4;		//游戏ID
 }
 message MsgDBSubagentInformation
 {
