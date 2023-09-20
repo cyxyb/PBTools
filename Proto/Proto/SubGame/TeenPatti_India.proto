@@ -60,7 +60,7 @@ enum ETPMsgIDSubGame
 	MsgIDSubGame_CompareCardResp		= 7;	//玩家请求比牌(TPMsgCompareCardResp)
 	MsgIDSubGame_CompareRetResp			= 8;	//玩家比牌结果(TPMsgCompareCardRetResp)
 	MsgIDSubGame_GameResultResp			= 9;	//玩家下注记录(TPMsgGameResultResp)
-	MsgIDSubGame_NotifyStateResp		= 10;	//桌子状态
+	MsgIDSubGame_NotifyStateResp		= 10;	//桌子状态(TPMsgTableState)
 
 	/////////////////////////机器人消息///////////////////////
 	MsgIDSubGame_NotifySystemCheatResp	= 20;	//通知系统作弊率
@@ -70,6 +70,13 @@ enum ETPMsgIDSubGame
 	MsgIDSubGame_NotifyRoundResp		= 24;	//通知回合数
 	MsgIDSubGame_NotifyLastActResp		= 25;	//通知玩家行为
 }
+
+message TPMsgTableState
+{
+	int32				state			= 1;	//桌子状态
+	int32				out_ime			= 2;	//剩余时间
+}
+
 
 message TPMsgHandCards
 {
@@ -96,7 +103,7 @@ message TPMsgSceneInfo
 	int32				cur_times		= 4;	//当前倍数
 	int32				table_state		= 5;	//桌子状态
 	int64				total_bet_score	= 6;	//桌内总下注
-	int32				tax				= 7;	//桌内总下注
+	int32				tax				= 7;	//抽水
 	
 	int32				banker_chair_id	= 8;	//庄家椅子号
 	int32				cur_chair_id	= 9;	//当前操作椅子号

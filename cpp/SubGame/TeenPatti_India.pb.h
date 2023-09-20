@@ -47,7 +47,7 @@ struct TableStruct_TeenPatti_5fIndia_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[12]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[13]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -91,6 +91,9 @@ extern TPMsgPlayerInfoDefaultTypeInternal _TPMsgPlayerInfo_default_instance_;
 class TPMsgSceneInfo;
 class TPMsgSceneInfoDefaultTypeInternal;
 extern TPMsgSceneInfoDefaultTypeInternal _TPMsgSceneInfo_default_instance_;
+class TPMsgTableState;
+class TPMsgTableStateDefaultTypeInternal;
+extern TPMsgTableStateDefaultTypeInternal _TPMsgTableState_default_instance_;
 }  // namespace TeenPatti_India
 PROTOBUF_NAMESPACE_OPEN
 template<> ::TeenPatti_India::TPMsgAction* Arena::CreateMaybeMessage<::TeenPatti_India::TPMsgAction>(Arena*);
@@ -105,6 +108,7 @@ template<> ::TeenPatti_India::TPMsgLookCardResp* Arena::CreateMaybeMessage<::Tee
 template<> ::TeenPatti_India::TPMsgNotifyActionResp* Arena::CreateMaybeMessage<::TeenPatti_India::TPMsgNotifyActionResp>(Arena*);
 template<> ::TeenPatti_India::TPMsgPlayerInfo* Arena::CreateMaybeMessage<::TeenPatti_India::TPMsgPlayerInfo>(Arena*);
 template<> ::TeenPatti_India::TPMsgSceneInfo* Arena::CreateMaybeMessage<::TeenPatti_India::TPMsgSceneInfo>(Arena*);
+template<> ::TeenPatti_India::TPMsgTableState* Arena::CreateMaybeMessage<::TeenPatti_India::TPMsgTableState>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 namespace TeenPatti_India {
 
@@ -267,6 +271,153 @@ inline bool ETPMsgIDSubGame_Parse(
 }
 // ===================================================================
 
+class TPMsgTableState PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:TeenPatti_India.TPMsgTableState) */ {
+ public:
+  inline TPMsgTableState() : TPMsgTableState(nullptr) {}
+  virtual ~TPMsgTableState();
+
+  TPMsgTableState(const TPMsgTableState& from);
+  TPMsgTableState(TPMsgTableState&& from) noexcept
+    : TPMsgTableState() {
+    *this = ::std::move(from);
+  }
+
+  inline TPMsgTableState& operator=(const TPMsgTableState& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline TPMsgTableState& operator=(TPMsgTableState&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const TPMsgTableState& default_instance();
+
+  static inline const TPMsgTableState* internal_default_instance() {
+    return reinterpret_cast<const TPMsgTableState*>(
+               &_TPMsgTableState_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    0;
+
+  friend void swap(TPMsgTableState& a, TPMsgTableState& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(TPMsgTableState* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(TPMsgTableState* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline TPMsgTableState* New() const final {
+    return CreateMaybeMessage<TPMsgTableState>(nullptr);
+  }
+
+  TPMsgTableState* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<TPMsgTableState>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const TPMsgTableState& from);
+  void MergeFrom(const TPMsgTableState& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(TPMsgTableState* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "TeenPatti_India.TPMsgTableState";
+  }
+  protected:
+  explicit TPMsgTableState(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_TeenPatti_5fIndia_2eproto);
+    return ::descriptor_table_TeenPatti_5fIndia_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kStateFieldNumber = 1,
+    kOutImeFieldNumber = 2,
+  };
+  // int32 state = 1;
+  void clear_state();
+  ::PROTOBUF_NAMESPACE_ID::int32 state() const;
+  void set_state(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_state() const;
+  void _internal_set_state(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 out_ime = 2;
+  void clear_out_ime();
+  ::PROTOBUF_NAMESPACE_ID::int32 out_ime() const;
+  void set_out_ime(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_out_ime() const;
+  void _internal_set_out_ime(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:TeenPatti_India.TPMsgTableState)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 state_;
+  ::PROTOBUF_NAMESPACE_ID::int32 out_ime_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_TeenPatti_5fIndia_2eproto;
+};
+// -------------------------------------------------------------------
+
 class TPMsgHandCards PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:TeenPatti_India.TPMsgHandCards) */ {
  public:
@@ -308,7 +459,7 @@ class TPMsgHandCards PROTOBUF_FINAL :
                &_TPMsgHandCards_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    0;
+    1;
 
   friend void swap(TPMsgHandCards& a, TPMsgHandCards& b) {
     a.Swap(&b);
@@ -458,7 +609,7 @@ class TPMsgPlayerInfo PROTOBUF_FINAL :
                &_TPMsgPlayerInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    1;
+    2;
 
   friend void swap(TPMsgPlayerInfo& a, TPMsgPlayerInfo& b) {
     a.Swap(&b);
@@ -658,7 +809,7 @@ class TPMsgSceneInfo PROTOBUF_FINAL :
                &_TPMsgSceneInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    2;
+    3;
 
   friend void swap(TPMsgSceneInfo& a, TPMsgSceneInfo& b) {
     a.Swap(&b);
@@ -946,7 +1097,7 @@ class TPMsgGameStartResp PROTOBUF_FINAL :
                &_TPMsgGameStartResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    3;
+    4;
 
   friend void swap(TPMsgGameStartResp& a, TPMsgGameStartResp& b) {
     a.Swap(&b);
@@ -1148,7 +1299,7 @@ class TPMsgNotifyActionResp PROTOBUF_FINAL :
                &_TPMsgNotifyActionResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    4;
+    5;
 
   friend void swap(TPMsgNotifyActionResp& a, TPMsgNotifyActionResp& b) {
     a.Swap(&b);
@@ -1317,7 +1468,7 @@ class TPMsgAction PROTOBUF_FINAL :
                &_TPMsgAction_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    5;
+    6;
 
   friend void swap(TPMsgAction& a, TPMsgAction& b) {
     a.Swap(&b);
@@ -1486,7 +1637,7 @@ class TPMsgGiveUpResp PROTOBUF_FINAL :
                &_TPMsgGiveUpResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    6;
+    7;
 
   friend void swap(TPMsgGiveUpResp& a, TPMsgGiveUpResp& b) {
     a.Swap(&b);
@@ -1622,7 +1773,7 @@ class TPMsgLookCardResp PROTOBUF_FINAL :
                &_TPMsgLookCardResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    7;
+    8;
 
   friend void swap(TPMsgLookCardResp& a, TPMsgLookCardResp& b) {
     a.Swap(&b);
@@ -1783,7 +1934,7 @@ class TPMsgAddBetResp PROTOBUF_FINAL :
                &_TPMsgAddBetResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    9;
 
   friend void swap(TPMsgAddBetResp& a, TPMsgAddBetResp& b) {
     a.Swap(&b);
@@ -1974,7 +2125,7 @@ class TPMsgCompareCardResp PROTOBUF_FINAL :
                &_TPMsgCompareCardResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    10;
 
   friend void swap(TPMsgCompareCardResp& a, TPMsgCompareCardResp& b) {
     a.Swap(&b);
@@ -2121,7 +2272,7 @@ class TPMsgCompareCardRetResp PROTOBUF_FINAL :
                &_TPMsgCompareCardRetResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    11;
 
   friend void swap(TPMsgCompareCardRetResp& a, TPMsgCompareCardRetResp& b) {
     a.Swap(&b);
@@ -2351,7 +2502,7 @@ class TPMsgGameResult PROTOBUF_FINAL :
                &_TPMsgGameResult_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    12;
 
   friend void swap(TPMsgGameResult& a, TPMsgGameResult& b) {
     a.Swap(&b);
@@ -2509,6 +2660,50 @@ class TPMsgGameResult PROTOBUF_FINAL :
   #pragma GCC diagnostic push
   #pragma GCC diagnostic ignored "-Wstrict-aliasing"
 #endif  // __GNUC__
+// TPMsgTableState
+
+// int32 state = 1;
+inline void TPMsgTableState::clear_state() {
+  state_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 TPMsgTableState::_internal_state() const {
+  return state_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 TPMsgTableState::state() const {
+  // @@protoc_insertion_point(field_get:TeenPatti_India.TPMsgTableState.state)
+  return _internal_state();
+}
+inline void TPMsgTableState::_internal_set_state(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  state_ = value;
+}
+inline void TPMsgTableState::set_state(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_state(value);
+  // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgTableState.state)
+}
+
+// int32 out_ime = 2;
+inline void TPMsgTableState::clear_out_ime() {
+  out_ime_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 TPMsgTableState::_internal_out_ime() const {
+  return out_ime_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 TPMsgTableState::out_ime() const {
+  // @@protoc_insertion_point(field_get:TeenPatti_India.TPMsgTableState.out_ime)
+  return _internal_out_ime();
+}
+inline void TPMsgTableState::_internal_set_out_ime(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  out_ime_ = value;
+}
+inline void TPMsgTableState::set_out_ime(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_out_ime(value);
+  // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgTableState.out_ime)
+}
+
+// -------------------------------------------------------------------
+
 // TPMsgHandCards
 
 // repeated int32 cards = 1;
@@ -3954,6 +4149,8 @@ inline void TPMsgGameResult::set_end_state(::PROTOBUF_NAMESPACE_ID::int32 value)
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

@@ -25,66 +25,68 @@ namespace TeenPattiIndia {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiNQcm90by9TdWJHYW1lL1RlZW5QYXR0aV9JbmRpYS5wcm90bxIPVGVlblBh",
-            "dHRpX0luZGlhIh8KDlRQTXNnSGFuZENhcmRzEg0KBWNhcmRzGAEgAygFIqIB",
-            "Cg9UUE1zZ1BsYXllckluZm8SEAoIY2hhaXJfaWQYASABKAUSEAoIbWluZ196",
-            "aHUYAiABKAgSEwoLcGxheV9zdGF0dXMYAyABKAUSEgoKcGxheWVyX2JldBgE",
-            "IAEoBRIRCgljYXJkX3R5cGUYBSABKAUSLwoGaGFuZGxzGAYgASgLMh8uVGVl",
-            "blBhdHRpX0luZGlhLlRQTXNnSGFuZENhcmRzItkCCg5UUE1zZ1NjZW5lSW5m",
-            "bxIRCgltYXhfc2NvcmUYASABKAMSFwoPdGFibGVfbWF4X3Njb3JlGAIgASgD",
-            "EhIKCmNlbGxfc2NvcmUYAyABKAMSEQoJY3VyX3RpbWVzGAQgASgFEhMKC3Rh",
-            "YmxlX3N0YXRlGAUgASgFEhcKD3RvdGFsX2JldF9zY29yZRgGIAEoAxILCgN0",
-            "YXgYByABKAUSFwoPYmFua2VyX2NoYWlyX2lkGAggASgFEhQKDGN1cl9jaGFp",
-            "cl9pZBgJIAEoBRIVCg1jdXJfY2hhaXJfYWN0GAogASgFEhAKCG91dF90aW1l",
-            "GAsgASgFEhQKDGNvbXBhcmVfdXNlchgMIAEoCBITCgtjb21wYXJlX3dpbhgN",
-            "IAEoBRI2CgxwbGF5ZXJfaW5mb3MYDiADKAsyIC5UZWVuUGF0dGlfSW5kaWEu",
-            "VFBNc2dQbGF5ZXJJbmZvIqkBChJUUE1zZ0dhbWVTdGFydFJlc3ASFAoMY3Vy",
-            "X2NoYWlyX2lkGAEgASgFEhEKCWN1cl90aW1lcxgCIAEoBRIXCg9iYW5rZXJf",
-            "Y2hhaXJfaWQYAyABKAUSEQoJbWF4X3Njb3JlGAQgASgDEhEKCW1heF9ibGlu",
-            "ZBgFIAEoAxISCgpjZWxsX3Njb3JlGAYgASgDEhcKD3RhYmxlX21heF9zY29y",
-            "ZRgHIAEoAyJoChVUUE1zZ05vdGlmeUFjdGlvblJlc3ASFAoMY3VyX2NoYWly",
-            "X2lkGAEgASgFEhEKCWN1cl90aW1lcxgCIAEoBRITCgtjdXJyZW50X2FjdBgD",
-            "IAEoBRIRCglvcGVyX3RpbWUYBCABKAMiUgoLVFBNc2dBY3Rpb24SCwoDYWN0",
-            "GAEgASgFEhEKCWJldF9zY29yZRgCIAEoAxIUCgxjb21wYXJlX3VzZXIYAyAB",
-            "KAMSDQoFaXNfb2sYBCABKAgiIwoPVFBNc2dHaXZlVXBSZXNwEhAKCGNoYWly",
-            "X2lkGAEgASgFIjQKEVRQTXNnTG9va0NhcmRSZXNwEhAKCGNoYWlyX2lkGAEg",
-            "ASgFEg0KBWNhcmRzGAIgAygFIosBCg9UUE1zZ0FkZEJldFJlc3ASFAoMY3Vy",
+            "dHRpX0luZGlhIjEKD1RQTXNnVGFibGVTdGF0ZRINCgVzdGF0ZRgBIAEoBRIP",
+            "CgdvdXRfaW1lGAIgASgFIh8KDlRQTXNnSGFuZENhcmRzEg0KBWNhcmRzGAEg",
+            "AygFIqIBCg9UUE1zZ1BsYXllckluZm8SEAoIY2hhaXJfaWQYASABKAUSEAoI",
+            "bWluZ196aHUYAiABKAgSEwoLcGxheV9zdGF0dXMYAyABKAUSEgoKcGxheWVy",
+            "X2JldBgEIAEoBRIRCgljYXJkX3R5cGUYBSABKAUSLwoGaGFuZGxzGAYgASgL",
+            "Mh8uVGVlblBhdHRpX0luZGlhLlRQTXNnSGFuZENhcmRzItkCCg5UUE1zZ1Nj",
+            "ZW5lSW5mbxIRCgltYXhfc2NvcmUYASABKAMSFwoPdGFibGVfbWF4X3Njb3Jl",
+            "GAIgASgDEhIKCmNlbGxfc2NvcmUYAyABKAMSEQoJY3VyX3RpbWVzGAQgASgF",
+            "EhMKC3RhYmxlX3N0YXRlGAUgASgFEhcKD3RvdGFsX2JldF9zY29yZRgGIAEo",
+            "AxILCgN0YXgYByABKAUSFwoPYmFua2VyX2NoYWlyX2lkGAggASgFEhQKDGN1",
+            "cl9jaGFpcl9pZBgJIAEoBRIVCg1jdXJfY2hhaXJfYWN0GAogASgFEhAKCG91",
+            "dF90aW1lGAsgASgFEhQKDGNvbXBhcmVfdXNlchgMIAEoCBITCgtjb21wYXJl",
+            "X3dpbhgNIAEoBRI2CgxwbGF5ZXJfaW5mb3MYDiADKAsyIC5UZWVuUGF0dGlf",
+            "SW5kaWEuVFBNc2dQbGF5ZXJJbmZvIqkBChJUUE1zZ0dhbWVTdGFydFJlc3AS",
+            "FAoMY3VyX2NoYWlyX2lkGAEgASgFEhEKCWN1cl90aW1lcxgCIAEoBRIXCg9i",
+            "YW5rZXJfY2hhaXJfaWQYAyABKAUSEQoJbWF4X3Njb3JlGAQgASgDEhEKCW1h",
+            "eF9ibGluZBgFIAEoAxISCgpjZWxsX3Njb3JlGAYgASgDEhcKD3RhYmxlX21h",
+            "eF9zY29yZRgHIAEoAyJoChVUUE1zZ05vdGlmeUFjdGlvblJlc3ASFAoMY3Vy",
             "X2NoYWlyX2lkGAEgASgFEhEKCWN1cl90aW1lcxgCIAEoBRITCgtjdXJyZW50",
-            "X2FjdBgDIAEoBRIUCgxhZGRfY2hhaXJfaWQYBCABKAUSEQoJYWRkX3Njb3Jl",
-            "GAUgASgDEhEKCW9wZXJfdGltZRgGIAEoAyI8ChRUUE1zZ0NvbXBhcmVDYXJk",
-            "UmVzcBIQCghjaGFpcl9pZBgBIAEoBRISCgpjb21wYXJlX2lkGAIgASgFIq8B",
-            "ChdUUE1zZ0NvbXBhcmVDYXJkUmV0UmVzcBIYChBjdXJyZW50X2NoYWlyX2lk",
-            "GAEgASgFEhMKC2N1cnJlbnRfYWN0GAIgASgFEg8KB2xvc3RfaWQYAyABKAUS",
-            "EgoKY29tcGFyZV9pZBgEIAEoBRISCgpwYXNzaXZlX2lkGAUgASgFEhUKDWNv",
-            "bXBhcmVfY2FyZHMYBiADKAUSFQoNcGFzc2l2ZV9jYXJkcxgHIAMoBSKBAQoP",
-            "VFBNc2dHYW1lUmVzdWx0EhAKCGdhbWVfdGF4GAEgASgFEhIKCmdhbWVfc2Nv",
-            "cmUYAiADKAMSNQoMcGxheWVyX2hhbmRzGAMgAygLMh8uVGVlblBhdHRpX0lu",
-            "ZGlhLlRQTXNnSGFuZENhcmRzEhEKCWVuZF9zdGF0ZRgEIAEoBSpnCgxFVFBH",
-            "YW1lU3RhdGUSDwoLR1NfVFBfUkVBRFkQABIOCgpHU19UUF9ERUFMEAESEQoN",
-            "R1NfVFBfUExBWUlORxACEhEKDUdTX1RQX0NPTVBBUkUQAxIQCgxHU19UUF9S",
-            "RVNVTFQQBCpFCg5FVFBQbGF5ZXJTdGF0ZRIMCghQU19SRUFEWRAAEgsKB1BT",
-            "X1BMQVkQARILCgdQU19HSVZFEAISCwoHUFNfRkFJTBADKocBCgtFVFBDYXJk",
-            "VHlwZRINCglDVF9TSU5HTEUQABINCglDVF9ET1VCTEUQARIOCgpDVF9KSU5f",
-            "SFVBEAISDgoKQ1RfU0hVTl9aSRADEg8KC0NUX1NIVU5fSklOEAQSDQoJQ1Rf",
-            "QkFPX1pJEAUSDgoKQ1RfU1BFQ0lBTBAGEgoKBkNUX01BWBAHKoQBCg1FVFBH",
-            "YW1lQWN0aW9uEg0KCUludmFsZEFjdBAAEgoKBkdpdmVVcBABEgwKCExvb2tD",
-            "YXJkEAISCwoHQ2FsbEJldBAEEgoKBkFkZEJldBAIEg8KC0NvbXBhcmVDYXJk",
-            "EBASEAoMQ29tcGFyZVJlcGx5ECASDgoKQWxsQ29tcGFyZRBAKr0ECg9FVFBN",
-            "c2dJRFN1YkdhbWUSFQoRTXNnSURTdWJHYW1lX051bGwQABIeChpNc2dJRFN1",
-            "YkdhbWVfR2FtZVN0YXJ0UmVzcBABEiEKHU1zZ0lEU3ViR2FtZV9Ob3RpZnlB",
-            "Y3Rpb25SZXNwEAISFwoTTXNnSURTdWJHYW1lX0FjdGlvbhADEhsKF01zZ0lE",
-            "U3ViR2FtZV9HaXZlVXBSZXNwEAQSGQoVTXNnSURTdWJHYW1lX0xvb2tDYXJk",
-            "EAUSGwoXTXNnSURTdWJHYW1lX0FkZEJldFJlc3AQBhIgChxNc2dJRFN1Ykdh",
-            "bWVfQ29tcGFyZUNhcmRSZXNwEAcSHwobTXNnSURTdWJHYW1lX0NvbXBhcmVS",
-            "ZXRSZXNwEAgSHwobTXNnSURTdWJHYW1lX0dhbWVSZXN1bHRSZXNwEAkSIAoc",
-            "TXNnSURTdWJHYW1lX05vdGlmeVN0YXRlUmVzcBAKEiYKIk1zZ0lEU3ViR2Ft",
-            "ZV9Ob3RpZnlTeXN0ZW1DaGVhdFJlc3AQFBIjCh9Nc2dJRFN1YkdhbWVfTm90",
-            "aWZ5Q2FyZFR5cGVSZXNwEBUSIAocTXNnSURTdWJHYW1lX05vdGlmeUlzTWF4",
-            "UmVzcBAWEicKI01zZ0lEU3ViR2FtZV9Ob3RpZnlSZW1haW5Eb3VibGVSZXNw",
-            "EBcSIAocTXNnSURTdWJHYW1lX05vdGlmeVJvdW5kUmVzcBAYEiIKHk1zZ0lE",
-            "U3ViR2FtZV9Ob3RpZnlMYXN0QWN0UmVzcBAZYgZwcm90bzM="));
+            "X2FjdBgDIAEoBRIRCglvcGVyX3RpbWUYBCABKAMiUgoLVFBNc2dBY3Rpb24S",
+            "CwoDYWN0GAEgASgFEhEKCWJldF9zY29yZRgCIAEoAxIUCgxjb21wYXJlX3Vz",
+            "ZXIYAyABKAMSDQoFaXNfb2sYBCABKAgiIwoPVFBNc2dHaXZlVXBSZXNwEhAK",
+            "CGNoYWlyX2lkGAEgASgFIjQKEVRQTXNnTG9va0NhcmRSZXNwEhAKCGNoYWly",
+            "X2lkGAEgASgFEg0KBWNhcmRzGAIgAygFIosBCg9UUE1zZ0FkZEJldFJlc3AS",
+            "FAoMY3VyX2NoYWlyX2lkGAEgASgFEhEKCWN1cl90aW1lcxgCIAEoBRITCgtj",
+            "dXJyZW50X2FjdBgDIAEoBRIUCgxhZGRfY2hhaXJfaWQYBCABKAUSEQoJYWRk",
+            "X3Njb3JlGAUgASgDEhEKCW9wZXJfdGltZRgGIAEoAyI8ChRUUE1zZ0NvbXBh",
+            "cmVDYXJkUmVzcBIQCghjaGFpcl9pZBgBIAEoBRISCgpjb21wYXJlX2lkGAIg",
+            "ASgFIq8BChdUUE1zZ0NvbXBhcmVDYXJkUmV0UmVzcBIYChBjdXJyZW50X2No",
+            "YWlyX2lkGAEgASgFEhMKC2N1cnJlbnRfYWN0GAIgASgFEg8KB2xvc3RfaWQY",
+            "AyABKAUSEgoKY29tcGFyZV9pZBgEIAEoBRISCgpwYXNzaXZlX2lkGAUgASgF",
+            "EhUKDWNvbXBhcmVfY2FyZHMYBiADKAUSFQoNcGFzc2l2ZV9jYXJkcxgHIAMo",
+            "BSKBAQoPVFBNc2dHYW1lUmVzdWx0EhAKCGdhbWVfdGF4GAEgASgFEhIKCmdh",
+            "bWVfc2NvcmUYAiADKAMSNQoMcGxheWVyX2hhbmRzGAMgAygLMh8uVGVlblBh",
+            "dHRpX0luZGlhLlRQTXNnSGFuZENhcmRzEhEKCWVuZF9zdGF0ZRgEIAEoBSpn",
+            "CgxFVFBHYW1lU3RhdGUSDwoLR1NfVFBfUkVBRFkQABIOCgpHU19UUF9ERUFM",
+            "EAESEQoNR1NfVFBfUExBWUlORxACEhEKDUdTX1RQX0NPTVBBUkUQAxIQCgxH",
+            "U19UUF9SRVNVTFQQBCpFCg5FVFBQbGF5ZXJTdGF0ZRIMCghQU19SRUFEWRAA",
+            "EgsKB1BTX1BMQVkQARILCgdQU19HSVZFEAISCwoHUFNfRkFJTBADKocBCgtF",
+            "VFBDYXJkVHlwZRINCglDVF9TSU5HTEUQABINCglDVF9ET1VCTEUQARIOCgpD",
+            "VF9KSU5fSFVBEAISDgoKQ1RfU0hVTl9aSRADEg8KC0NUX1NIVU5fSklOEAQS",
+            "DQoJQ1RfQkFPX1pJEAUSDgoKQ1RfU1BFQ0lBTBAGEgoKBkNUX01BWBAHKoQB",
+            "Cg1FVFBHYW1lQWN0aW9uEg0KCUludmFsZEFjdBAAEgoKBkdpdmVVcBABEgwK",
+            "CExvb2tDYXJkEAISCwoHQ2FsbEJldBAEEgoKBkFkZEJldBAIEg8KC0NvbXBh",
+            "cmVDYXJkEBASEAoMQ29tcGFyZVJlcGx5ECASDgoKQWxsQ29tcGFyZRBAKr0E",
+            "Cg9FVFBNc2dJRFN1YkdhbWUSFQoRTXNnSURTdWJHYW1lX051bGwQABIeChpN",
+            "c2dJRFN1YkdhbWVfR2FtZVN0YXJ0UmVzcBABEiEKHU1zZ0lEU3ViR2FtZV9O",
+            "b3RpZnlBY3Rpb25SZXNwEAISFwoTTXNnSURTdWJHYW1lX0FjdGlvbhADEhsK",
+            "F01zZ0lEU3ViR2FtZV9HaXZlVXBSZXNwEAQSGQoVTXNnSURTdWJHYW1lX0xv",
+            "b2tDYXJkEAUSGwoXTXNnSURTdWJHYW1lX0FkZEJldFJlc3AQBhIgChxNc2dJ",
+            "RFN1YkdhbWVfQ29tcGFyZUNhcmRSZXNwEAcSHwobTXNnSURTdWJHYW1lX0Nv",
+            "bXBhcmVSZXRSZXNwEAgSHwobTXNnSURTdWJHYW1lX0dhbWVSZXN1bHRSZXNw",
+            "EAkSIAocTXNnSURTdWJHYW1lX05vdGlmeVN0YXRlUmVzcBAKEiYKIk1zZ0lE",
+            "U3ViR2FtZV9Ob3RpZnlTeXN0ZW1DaGVhdFJlc3AQFBIjCh9Nc2dJRFN1Ykdh",
+            "bWVfTm90aWZ5Q2FyZFR5cGVSZXNwEBUSIAocTXNnSURTdWJHYW1lX05vdGlm",
+            "eUlzTWF4UmVzcBAWEicKI01zZ0lEU3ViR2FtZV9Ob3RpZnlSZW1haW5Eb3Vi",
+            "bGVSZXNwEBcSIAocTXNnSURTdWJHYW1lX05vdGlmeVJvdW5kUmVzcBAYEiIK",
+            "Hk1zZ0lEU3ViR2FtZV9Ob3RpZnlMYXN0QWN0UmVzcBAZYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::TeenPattiIndia.ETPGameState), typeof(global::TeenPattiIndia.ETPPlayerState), typeof(global::TeenPattiIndia.ETPCardType), typeof(global::TeenPattiIndia.ETPGameAction), typeof(global::TeenPattiIndia.ETPMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.TPMsgTableState), global::TeenPattiIndia.TPMsgTableState.Parser, new[]{ "State", "OutIme" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.TPMsgHandCards), global::TeenPattiIndia.TPMsgHandCards.Parser, new[]{ "Cards" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.TPMsgPlayerInfo), global::TeenPattiIndia.TPMsgPlayerInfo.Parser, new[]{ "ChairId", "MingZhu", "PlayStatus", "PlayerBet", "CardType", "Handls" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.TPMsgSceneInfo), global::TeenPattiIndia.TPMsgSceneInfo.Parser, new[]{ "MaxScore", "TableMaxScore", "CellScore", "CurTimes", "TableState", "TotalBetScore", "Tax", "BankerChairId", "CurChairId", "CurChairAct", "OutTime", "CompareUser", "CompareWin", "PlayerInfos" }, null, null, null, null),
@@ -266,7 +268,7 @@ namespace TeenPattiIndia {
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_GameResultResp")] MsgIdsubGameGameResultResp = 9,
     /// <summary>
-    ///桌子状态
+    ///桌子状态(TPMsgTableState)
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_NotifyStateResp")] MsgIdsubGameNotifyStateResp = 10,
     /// <summary>
@@ -298,6 +300,220 @@ namespace TeenPattiIndia {
   #endregion
 
   #region Messages
+  public sealed partial class TPMsgTableState : pb::IMessage<TPMsgTableState>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<TPMsgTableState> _parser = new pb::MessageParser<TPMsgTableState>(() => new TPMsgTableState());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<TPMsgTableState> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[0]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TPMsgTableState() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TPMsgTableState(TPMsgTableState other) : this() {
+      state_ = other.state_;
+      outIme_ = other.outIme_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TPMsgTableState Clone() {
+      return new TPMsgTableState(this);
+    }
+
+    /// <summary>Field number for the "state" field.</summary>
+    public const int StateFieldNumber = 1;
+    private int state_;
+    /// <summary>
+    ///桌子状态
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int State {
+      get { return state_; }
+      set {
+        state_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "out_ime" field.</summary>
+    public const int OutImeFieldNumber = 2;
+    private int outIme_;
+    /// <summary>
+    ///剩余时间
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int OutIme {
+      get { return outIme_; }
+      set {
+        outIme_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as TPMsgTableState);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(TPMsgTableState other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (State != other.State) return false;
+      if (OutIme != other.OutIme) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (State != 0) hash ^= State.GetHashCode();
+      if (OutIme != 0) hash ^= OutIme.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (State != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(State);
+      }
+      if (OutIme != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(OutIme);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (State != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(State);
+      }
+      if (OutIme != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(OutIme);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (State != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(State);
+      }
+      if (OutIme != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(OutIme);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(TPMsgTableState other) {
+      if (other == null) {
+        return;
+      }
+      if (other.State != 0) {
+        State = other.State;
+      }
+      if (other.OutIme != 0) {
+        OutIme = other.OutIme;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            State = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            OutIme = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            State = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            OutIme = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class TPMsgHandCards : pb::IMessage<TPMsgHandCards>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -310,7 +526,7 @@ namespace TeenPattiIndia {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[0]; }
+      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -476,7 +692,7 @@ namespace TeenPattiIndia {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[1]; }
+      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -858,7 +1074,7 @@ namespace TeenPattiIndia {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[2]; }
+      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -985,7 +1201,7 @@ namespace TeenPattiIndia {
     public const int TaxFieldNumber = 7;
     private int tax_;
     /// <summary>
-    ///桌内总下注
+    ///抽水
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int Tax {
@@ -1532,7 +1748,7 @@ namespace TeenPattiIndia {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[3]; }
+      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1944,7 +2160,7 @@ namespace TeenPattiIndia {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[4]; }
+      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2239,7 +2455,7 @@ namespace TeenPattiIndia {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[5]; }
+      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2534,7 +2750,7 @@ namespace TeenPattiIndia {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[6]; }
+      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2712,7 +2928,7 @@ namespace TeenPattiIndia {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[7]; }
+      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2917,7 +3133,7 @@ namespace TeenPattiIndia {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[8]; }
+      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3290,7 +3506,7 @@ namespace TeenPattiIndia {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[9]; }
+      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3507,7 +3723,7 @@ namespace TeenPattiIndia {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[10]; }
+      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3901,7 +4117,7 @@ namespace TeenPattiIndia {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[11]; }
+      get { return global::TeenPattiIndia.TeenPattiIndiaReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
