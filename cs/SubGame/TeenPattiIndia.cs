@@ -63,8 +63,8 @@ namespace TeenPattiIndia {
             "EAISEQoNR1NfVFBfQ09NUEFSRRADEhAKDEdTX1RQX1JFU1VMVBAEKkUKDkVU",
             "UFBsYXllclN0YXRlEgwKCFBTX1JFQURZEAASCwoHUFNfUExBWRABEgsKB1BT",
             "X0dJVkUQAhILCgdQU19GQUlMEAMqhwEKC0VUUENhcmRUeXBlEg0KCUNUX1NJ",
-            "TkdMRRAAEg0KCUNUX0RPVUJMRRABEg4KCkNUX1NIVU5fWkkQAhIOCgpDVF9K",
-            "SU5fSFVBEAMSDwoLQ1RfU0hVTl9KSU4QBBINCglDVF9CQU9fWkkQBRIOCgpD",
+            "TkdMRRAAEg0KCUNUX0RPVUJMRRABEg4KCkNUX0pJTl9IVUEQAhIOCgpDVF9T",
+            "SFVOX1pJEAMSDwoLQ1RfU0hVTl9KSU4QBBINCglDVF9CQU9fWkkQBRIOCgpD",
             "VF9TUEVDSUFMEAYSCgoGQ1RfTUFYEAcqhAEKDUVUUEdhbWVBY3Rpb24SDQoJ",
             "SW52YWxkQWN0EAASCgoGR2l2ZVVwEAESDAoITG9va0NhcmQQAhILCgdDYWxs",
             "QmV0EAQSCgoGQWRkQmV0EAgSDwoLQ29tcGFyZUNhcmQQEBIQCgxDb21wYXJl",
@@ -164,13 +164,13 @@ namespace TeenPattiIndia {
     /// </summary>
     [pbr::OriginalName("CT_DOUBLE")] CtDouble = 1,
     /// <summary>
-    ///顺子类型
-    /// </summary>
-    [pbr::OriginalName("CT_SHUN_ZI")] CtShunZi = 2,
-    /// <summary>
     ///金花类型
     /// </summary>
-    [pbr::OriginalName("CT_JIN_HUA")] CtJinHua = 3,
+    [pbr::OriginalName("CT_JIN_HUA")] CtJinHua = 2,
+    /// <summary>
+    ///顺子类型
+    /// </summary>
+    [pbr::OriginalName("CT_SHUN_ZI")] CtShunZi = 3,
     /// <summary>
     ///顺金类型
     /// </summary>

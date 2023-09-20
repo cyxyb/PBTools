@@ -166,8 +166,8 @@ inline bool ETPPlayerState_Parse(
 enum ETPCardType : int {
   CT_SINGLE = 0,
   CT_DOUBLE = 1,
-  CT_SHUN_ZI = 2,
-  CT_JIN_HUA = 3,
+  CT_JIN_HUA = 2,
+  CT_SHUN_ZI = 3,
   CT_SHUN_JIN = 4,
   CT_BAO_ZI = 5,
   CT_SPECIAL = 6,

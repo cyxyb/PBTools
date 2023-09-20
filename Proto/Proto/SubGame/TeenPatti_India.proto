@@ -27,8 +27,8 @@ enum ETPCardType
 	//扑克类型
 	CT_SINGLE							= 0;	//单牌类型
 	CT_DOUBLE							= 1;	//对子类型
-	CT_SHUN_ZI							= 2;	//顺子类型
-	CT_JIN_HUA							= 3;	//金花类型
+	CT_JIN_HUA							= 2;	//金花类型
+	CT_SHUN_ZI							= 3;	//顺子类型
 	CT_SHUN_JIN							= 4;	//顺金类型
 	CT_BAO_ZI							= 5;	//豹子类型
 	CT_SPECIAL							= 6;	//特殊类型
