@@ -96,15 +96,17 @@ message TPMsgSceneInfo
 	int32				cur_times		= 4;	//当前倍数
 	int32				table_state		= 5;	//桌子状态
 	int64				total_bet_score	= 6;	//桌内总下注
-	int32				banker_chair_id	= 7;	//庄家椅子号
-	int32				cur_chair_id	= 8;	//当前操作椅子号
+	int32				tax				= 7;	//桌内总下注
+	
+	int32				banker_chair_id	= 8;	//庄家椅子号
+	int32				cur_chair_id	= 9;	//当前操作椅子号
 	int32				cur_chair_act	= 10;	//当前玩家的操作码
 	int32				out_time		= 11;	//当前状态剩余超时时间
 
 	bool				compare_user	= 12;	//比牌发起玩家
 	int32				compare_win		= 13;	//比牌赢家
 
-	repeated TPMsgPlayerInfo player_infos	= 9;	//玩家状态
+	repeated TPMsgPlayerInfo player_infos	= 14;	//玩家状态
 }
 
 //游戏开始

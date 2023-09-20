@@ -29,65 +29,65 @@ namespace TeenPattiIndia {
             "Cg9UUE1zZ1BsYXllckluZm8SEAoIY2hhaXJfaWQYASABKAUSEAoIbWluZ196",
             "aHUYAiABKAgSEwoLcGxheV9zdGF0dXMYAyABKAUSEgoKcGxheWVyX2JldBgE",
             "IAEoBRIRCgljYXJkX3R5cGUYBSABKAUSLwoGaGFuZGxzGAYgASgLMh8uVGVl",
-            "blBhdHRpX0luZGlhLlRQTXNnSGFuZENhcmRzIswCCg5UUE1zZ1NjZW5lSW5m",
+            "blBhdHRpX0luZGlhLlRQTXNnSGFuZENhcmRzItkCCg5UUE1zZ1NjZW5lSW5m",
             "bxIRCgltYXhfc2NvcmUYASABKAMSFwoPdGFibGVfbWF4X3Njb3JlGAIgASgD",
             "EhIKCmNlbGxfc2NvcmUYAyABKAMSEQoJY3VyX3RpbWVzGAQgASgFEhMKC3Rh",
-            "YmxlX3N0YXRlGAUgASgFEhcKD3RvdGFsX2JldF9zY29yZRgGIAEoAxIXCg9i",
-            "YW5rZXJfY2hhaXJfaWQYByABKAUSFAoMY3VyX2NoYWlyX2lkGAggASgFEhUK",
-            "DWN1cl9jaGFpcl9hY3QYCiABKAUSEAoIb3V0X3RpbWUYCyABKAUSFAoMY29t",
-            "cGFyZV91c2VyGAwgASgIEhMKC2NvbXBhcmVfd2luGA0gASgFEjYKDHBsYXll",
-            "cl9pbmZvcxgJIAMoCzIgLlRlZW5QYXR0aV9JbmRpYS5UUE1zZ1BsYXllcklu",
-            "Zm8iqQEKElRQTXNnR2FtZVN0YXJ0UmVzcBIUCgxjdXJfY2hhaXJfaWQYASAB",
-            "KAUSEQoJY3VyX3RpbWVzGAIgASgFEhcKD2Jhbmtlcl9jaGFpcl9pZBgDIAEo",
-            "BRIRCgltYXhfc2NvcmUYBCABKAMSEQoJbWF4X2JsaW5kGAUgASgDEhIKCmNl",
-            "bGxfc2NvcmUYBiABKAMSFwoPdGFibGVfbWF4X3Njb3JlGAcgASgDImgKFVRQ",
-            "TXNnTm90aWZ5QWN0aW9uUmVzcBIUCgxjdXJfY2hhaXJfaWQYASABKAUSEQoJ",
-            "Y3VyX3RpbWVzGAIgASgFEhMKC2N1cnJlbnRfYWN0GAMgASgFEhEKCW9wZXJf",
-            "dGltZRgEIAEoAyJSCgtUUE1zZ0FjdGlvbhILCgNhY3QYASABKAUSEQoJYmV0",
-            "X3Njb3JlGAIgASgDEhQKDGNvbXBhcmVfdXNlchgDIAEoAxINCgVpc19vaxgE",
-            "IAEoCCIjCg9UUE1zZ0dpdmVVcFJlc3ASEAoIY2hhaXJfaWQYASABKAUiNAoR",
-            "VFBNc2dMb29rQ2FyZFJlc3ASEAoIY2hhaXJfaWQYASABKAUSDQoFY2FyZHMY",
-            "AiADKAUiiwEKD1RQTXNnQWRkQmV0UmVzcBIUCgxjdXJfY2hhaXJfaWQYASAB",
-            "KAUSEQoJY3VyX3RpbWVzGAIgASgFEhMKC2N1cnJlbnRfYWN0GAMgASgFEhQK",
-            "DGFkZF9jaGFpcl9pZBgEIAEoBRIRCglhZGRfc2NvcmUYBSABKAMSEQoJb3Bl",
-            "cl90aW1lGAYgASgDIjwKFFRQTXNnQ29tcGFyZUNhcmRSZXNwEhAKCGNoYWly",
-            "X2lkGAEgASgFEhIKCmNvbXBhcmVfaWQYAiABKAUirwEKF1RQTXNnQ29tcGFy",
-            "ZUNhcmRSZXRSZXNwEhgKEGN1cnJlbnRfY2hhaXJfaWQYASABKAUSEwoLY3Vy",
-            "cmVudF9hY3QYAiABKAUSDwoHbG9zdF9pZBgDIAEoBRISCgpjb21wYXJlX2lk",
-            "GAQgASgFEhIKCnBhc3NpdmVfaWQYBSABKAUSFQoNY29tcGFyZV9jYXJkcxgG",
-            "IAMoBRIVCg1wYXNzaXZlX2NhcmRzGAcgAygFIoEBCg9UUE1zZ0dhbWVSZXN1",
-            "bHQSEAoIZ2FtZV90YXgYASABKAUSEgoKZ2FtZV9zY29yZRgCIAMoAxI1Cgxw",
-            "bGF5ZXJfaGFuZHMYAyADKAsyHy5UZWVuUGF0dGlfSW5kaWEuVFBNc2dIYW5k",
-            "Q2FyZHMSEQoJZW5kX3N0YXRlGAQgASgFKmcKDEVUUEdhbWVTdGF0ZRIPCgtH",
-            "U19UUF9SRUFEWRAAEg4KCkdTX1RQX0RFQUwQARIRCg1HU19UUF9QTEFZSU5H",
-            "EAISEQoNR1NfVFBfQ09NUEFSRRADEhAKDEdTX1RQX1JFU1VMVBAEKkUKDkVU",
-            "UFBsYXllclN0YXRlEgwKCFBTX1JFQURZEAASCwoHUFNfUExBWRABEgsKB1BT",
-            "X0dJVkUQAhILCgdQU19GQUlMEAMqhwEKC0VUUENhcmRUeXBlEg0KCUNUX1NJ",
-            "TkdMRRAAEg0KCUNUX0RPVUJMRRABEg4KCkNUX0pJTl9IVUEQAhIOCgpDVF9T",
-            "SFVOX1pJEAMSDwoLQ1RfU0hVTl9KSU4QBBINCglDVF9CQU9fWkkQBRIOCgpD",
-            "VF9TUEVDSUFMEAYSCgoGQ1RfTUFYEAcqhAEKDUVUUEdhbWVBY3Rpb24SDQoJ",
-            "SW52YWxkQWN0EAASCgoGR2l2ZVVwEAESDAoITG9va0NhcmQQAhILCgdDYWxs",
-            "QmV0EAQSCgoGQWRkQmV0EAgSDwoLQ29tcGFyZUNhcmQQEBIQCgxDb21wYXJl",
-            "UmVwbHkQIBIOCgpBbGxDb21wYXJlEEAqvQQKD0VUUE1zZ0lEU3ViR2FtZRIV",
-            "ChFNc2dJRFN1YkdhbWVfTnVsbBAAEh4KGk1zZ0lEU3ViR2FtZV9HYW1lU3Rh",
-            "cnRSZXNwEAESIQodTXNnSURTdWJHYW1lX05vdGlmeUFjdGlvblJlc3AQAhIX",
-            "ChNNc2dJRFN1YkdhbWVfQWN0aW9uEAMSGwoXTXNnSURTdWJHYW1lX0dpdmVV",
-            "cFJlc3AQBBIZChVNc2dJRFN1YkdhbWVfTG9va0NhcmQQBRIbChdNc2dJRFN1",
-            "YkdhbWVfQWRkQmV0UmVzcBAGEiAKHE1zZ0lEU3ViR2FtZV9Db21wYXJlQ2Fy",
-            "ZFJlc3AQBxIfChtNc2dJRFN1YkdhbWVfQ29tcGFyZVJldFJlc3AQCBIfChtN",
-            "c2dJRFN1YkdhbWVfR2FtZVJlc3VsdFJlc3AQCRIgChxNc2dJRFN1YkdhbWVf",
-            "Tm90aWZ5U3RhdGVSZXNwEAoSJgoiTXNnSURTdWJHYW1lX05vdGlmeVN5c3Rl",
-            "bUNoZWF0UmVzcBAUEiMKH01zZ0lEU3ViR2FtZV9Ob3RpZnlDYXJkVHlwZVJl",
-            "c3AQFRIgChxNc2dJRFN1YkdhbWVfTm90aWZ5SXNNYXhSZXNwEBYSJwojTXNn",
-            "SURTdWJHYW1lX05vdGlmeVJlbWFpbkRvdWJsZVJlc3AQFxIgChxNc2dJRFN1",
-            "YkdhbWVfTm90aWZ5Um91bmRSZXNwEBgSIgoeTXNnSURTdWJHYW1lX05vdGlm",
-            "eUxhc3RBY3RSZXNwEBliBnByb3RvMw=="));
+            "YmxlX3N0YXRlGAUgASgFEhcKD3RvdGFsX2JldF9zY29yZRgGIAEoAxILCgN0",
+            "YXgYByABKAUSFwoPYmFua2VyX2NoYWlyX2lkGAggASgFEhQKDGN1cl9jaGFp",
+            "cl9pZBgJIAEoBRIVCg1jdXJfY2hhaXJfYWN0GAogASgFEhAKCG91dF90aW1l",
+            "GAsgASgFEhQKDGNvbXBhcmVfdXNlchgMIAEoCBITCgtjb21wYXJlX3dpbhgN",
+            "IAEoBRI2CgxwbGF5ZXJfaW5mb3MYDiADKAsyIC5UZWVuUGF0dGlfSW5kaWEu",
+            "VFBNc2dQbGF5ZXJJbmZvIqkBChJUUE1zZ0dhbWVTdGFydFJlc3ASFAoMY3Vy",
+            "X2NoYWlyX2lkGAEgASgFEhEKCWN1cl90aW1lcxgCIAEoBRIXCg9iYW5rZXJf",
+            "Y2hhaXJfaWQYAyABKAUSEQoJbWF4X3Njb3JlGAQgASgDEhEKCW1heF9ibGlu",
+            "ZBgFIAEoAxISCgpjZWxsX3Njb3JlGAYgASgDEhcKD3RhYmxlX21heF9zY29y",
+            "ZRgHIAEoAyJoChVUUE1zZ05vdGlmeUFjdGlvblJlc3ASFAoMY3VyX2NoYWly",
+            "X2lkGAEgASgFEhEKCWN1cl90aW1lcxgCIAEoBRITCgtjdXJyZW50X2FjdBgD",
+            "IAEoBRIRCglvcGVyX3RpbWUYBCABKAMiUgoLVFBNc2dBY3Rpb24SCwoDYWN0",
+            "GAEgASgFEhEKCWJldF9zY29yZRgCIAEoAxIUCgxjb21wYXJlX3VzZXIYAyAB",
+            "KAMSDQoFaXNfb2sYBCABKAgiIwoPVFBNc2dHaXZlVXBSZXNwEhAKCGNoYWly",
+            "X2lkGAEgASgFIjQKEVRQTXNnTG9va0NhcmRSZXNwEhAKCGNoYWlyX2lkGAEg",
+            "ASgFEg0KBWNhcmRzGAIgAygFIosBCg9UUE1zZ0FkZEJldFJlc3ASFAoMY3Vy",
+            "X2NoYWlyX2lkGAEgASgFEhEKCWN1cl90aW1lcxgCIAEoBRITCgtjdXJyZW50",
+            "X2FjdBgDIAEoBRIUCgxhZGRfY2hhaXJfaWQYBCABKAUSEQoJYWRkX3Njb3Jl",
+            "GAUgASgDEhEKCW9wZXJfdGltZRgGIAEoAyI8ChRUUE1zZ0NvbXBhcmVDYXJk",
+            "UmVzcBIQCghjaGFpcl9pZBgBIAEoBRISCgpjb21wYXJlX2lkGAIgASgFIq8B",
+            "ChdUUE1zZ0NvbXBhcmVDYXJkUmV0UmVzcBIYChBjdXJyZW50X2NoYWlyX2lk",
+            "GAEgASgFEhMKC2N1cnJlbnRfYWN0GAIgASgFEg8KB2xvc3RfaWQYAyABKAUS",
+            "EgoKY29tcGFyZV9pZBgEIAEoBRISCgpwYXNzaXZlX2lkGAUgASgFEhUKDWNv",
+            "bXBhcmVfY2FyZHMYBiADKAUSFQoNcGFzc2l2ZV9jYXJkcxgHIAMoBSKBAQoP",
+            "VFBNc2dHYW1lUmVzdWx0EhAKCGdhbWVfdGF4GAEgASgFEhIKCmdhbWVfc2Nv",
+            "cmUYAiADKAMSNQoMcGxheWVyX2hhbmRzGAMgAygLMh8uVGVlblBhdHRpX0lu",
+            "ZGlhLlRQTXNnSGFuZENhcmRzEhEKCWVuZF9zdGF0ZRgEIAEoBSpnCgxFVFBH",
+            "YW1lU3RhdGUSDwoLR1NfVFBfUkVBRFkQABIOCgpHU19UUF9ERUFMEAESEQoN",
+            "R1NfVFBfUExBWUlORxACEhEKDUdTX1RQX0NPTVBBUkUQAxIQCgxHU19UUF9S",
+            "RVNVTFQQBCpFCg5FVFBQbGF5ZXJTdGF0ZRIMCghQU19SRUFEWRAAEgsKB1BT",
+            "X1BMQVkQARILCgdQU19HSVZFEAISCwoHUFNfRkFJTBADKocBCgtFVFBDYXJk",
+            "VHlwZRINCglDVF9TSU5HTEUQABINCglDVF9ET1VCTEUQARIOCgpDVF9KSU5f",
+            "SFVBEAISDgoKQ1RfU0hVTl9aSRADEg8KC0NUX1NIVU5fSklOEAQSDQoJQ1Rf",
+            "QkFPX1pJEAUSDgoKQ1RfU1BFQ0lBTBAGEgoKBkNUX01BWBAHKoQBCg1FVFBH",
+            "YW1lQWN0aW9uEg0KCUludmFsZEFjdBAAEgoKBkdpdmVVcBABEgwKCExvb2tD",
+            "YXJkEAISCwoHQ2FsbEJldBAEEgoKBkFkZEJldBAIEg8KC0NvbXBhcmVDYXJk",
+            "EBASEAoMQ29tcGFyZVJlcGx5ECASDgoKQWxsQ29tcGFyZRBAKr0ECg9FVFBN",
+            "c2dJRFN1YkdhbWUSFQoRTXNnSURTdWJHYW1lX051bGwQABIeChpNc2dJRFN1",
+            "YkdhbWVfR2FtZVN0YXJ0UmVzcBABEiEKHU1zZ0lEU3ViR2FtZV9Ob3RpZnlB",
+            "Y3Rpb25SZXNwEAISFwoTTXNnSURTdWJHYW1lX0FjdGlvbhADEhsKF01zZ0lE",
+            "U3ViR2FtZV9HaXZlVXBSZXNwEAQSGQoVTXNnSURTdWJHYW1lX0xvb2tDYXJk",
+            "EAUSGwoXTXNnSURTdWJHYW1lX0FkZEJldFJlc3AQBhIgChxNc2dJRFN1Ykdh",
+            "bWVfQ29tcGFyZUNhcmRSZXNwEAcSHwobTXNnSURTdWJHYW1lX0NvbXBhcmVS",
+            "ZXRSZXNwEAgSHwobTXNnSURTdWJHYW1lX0dhbWVSZXN1bHRSZXNwEAkSIAoc",
+            "TXNnSURTdWJHYW1lX05vdGlmeVN0YXRlUmVzcBAKEiYKIk1zZ0lEU3ViR2Ft",
+            "ZV9Ob3RpZnlTeXN0ZW1DaGVhdFJlc3AQFBIjCh9Nc2dJRFN1YkdhbWVfTm90",
+            "aWZ5Q2FyZFR5cGVSZXNwEBUSIAocTXNnSURTdWJHYW1lX05vdGlmeUlzTWF4",
+            "UmVzcBAWEicKI01zZ0lEU3ViR2FtZV9Ob3RpZnlSZW1haW5Eb3VibGVSZXNw",
+            "EBcSIAocTXNnSURTdWJHYW1lX05vdGlmeVJvdW5kUmVzcBAYEiIKHk1zZ0lE",
+            "U3ViR2FtZV9Ob3RpZnlMYXN0QWN0UmVzcBAZYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::TeenPattiIndia.ETPGameState), typeof(global::TeenPattiIndia.ETPPlayerState), typeof(global::TeenPattiIndia.ETPCardType), typeof(global::TeenPattiIndia.ETPGameAction), typeof(global::TeenPattiIndia.ETPMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.TPMsgHandCards), global::TeenPattiIndia.TPMsgHandCards.Parser, new[]{ "Cards" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.TPMsgPlayerInfo), global::TeenPattiIndia.TPMsgPlayerInfo.Parser, new[]{ "ChairId", "MingZhu", "PlayStatus", "PlayerBet", "CardType", "Handls" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.TPMsgSceneInfo), global::TeenPattiIndia.TPMsgSceneInfo.Parser, new[]{ "MaxScore", "TableMaxScore", "CellScore", "CurTimes", "TableState", "TotalBetScore", "BankerChairId", "CurChairId", "CurChairAct", "OutTime", "CompareUser", "CompareWin", "PlayerInfos" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.TPMsgSceneInfo), global::TeenPattiIndia.TPMsgSceneInfo.Parser, new[]{ "MaxScore", "TableMaxScore", "CellScore", "CurTimes", "TableState", "TotalBetScore", "Tax", "BankerChairId", "CurChairId", "CurChairAct", "OutTime", "CompareUser", "CompareWin", "PlayerInfos" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.TPMsgGameStartResp), global::TeenPattiIndia.TPMsgGameStartResp.Parser, new[]{ "CurChairId", "CurTimes", "BankerChairId", "MaxScore", "MaxBlind", "CellScore", "TableMaxScore" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.TPMsgNotifyActionResp), global::TeenPattiIndia.TPMsgNotifyActionResp.Parser, new[]{ "CurChairId", "CurTimes", "CurrentAct", "OperTime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiIndia.TPMsgAction), global::TeenPattiIndia.TPMsgAction.Parser, new[]{ "Act", "BetScore", "CompareUser", "IsOk" }, null, null, null, null),
@@ -881,6 +881,7 @@ namespace TeenPattiIndia {
       curTimes_ = other.curTimes_;
       tableState_ = other.tableState_;
       totalBetScore_ = other.totalBetScore_;
+      tax_ = other.tax_;
       bankerChairId_ = other.bankerChairId_;
       curChairId_ = other.curChairId_;
       curChairAct_ = other.curChairAct_;
@@ -980,8 +981,22 @@ namespace TeenPattiIndia {
       }
     }
 
+    /// <summary>Field number for the "tax" field.</summary>
+    public const int TaxFieldNumber = 7;
+    private int tax_;
+    /// <summary>
+    ///桌内总下注
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Tax {
+      get { return tax_; }
+      set {
+        tax_ = value;
+      }
+    }
+
     /// <summary>Field number for the "banker_chair_id" field.</summary>
-    public const int BankerChairIdFieldNumber = 7;
+    public const int BankerChairIdFieldNumber = 8;
     private int bankerChairId_;
     /// <summary>
     ///庄家椅子号
@@ -995,7 +1010,7 @@ namespace TeenPattiIndia {
     }
 
     /// <summary>Field number for the "cur_chair_id" field.</summary>
-    public const int CurChairIdFieldNumber = 8;
+    public const int CurChairIdFieldNumber = 9;
     private int curChairId_;
     /// <summary>
     ///当前操作椅子号
@@ -1065,9 +1080,9 @@ namespace TeenPattiIndia {
     }
 
     /// <summary>Field number for the "player_infos" field.</summary>
-    public const int PlayerInfosFieldNumber = 9;
+    public const int PlayerInfosFieldNumber = 14;
     private static readonly pb::FieldCodec<global::TeenPattiIndia.TPMsgPlayerInfo> _repeated_playerInfos_codec
-        = pb::FieldCodec.ForMessage(74, global::TeenPattiIndia.TPMsgPlayerInfo.Parser);
+        = pb::FieldCodec.ForMessage(114, global::TeenPattiIndia.TPMsgPlayerInfo.Parser);
     private readonly pbc::RepeatedField<global::TeenPattiIndia.TPMsgPlayerInfo> playerInfos_ = new pbc::RepeatedField<global::TeenPattiIndia.TPMsgPlayerInfo>();
     /// <summary>
     ///玩家状态
@@ -1096,6 +1111,7 @@ namespace TeenPattiIndia {
       if (CurTimes != other.CurTimes) return false;
       if (TableState != other.TableState) return false;
       if (TotalBetScore != other.TotalBetScore) return false;
+      if (Tax != other.Tax) return false;
       if (BankerChairId != other.BankerChairId) return false;
       if (CurChairId != other.CurChairId) return false;
       if (CurChairAct != other.CurChairAct) return false;
@@ -1115,6 +1131,7 @@ namespace TeenPattiIndia {
       if (CurTimes != 0) hash ^= CurTimes.GetHashCode();
       if (TableState != 0) hash ^= TableState.GetHashCode();
       if (TotalBetScore != 0L) hash ^= TotalBetScore.GetHashCode();
+      if (Tax != 0) hash ^= Tax.GetHashCode();
       if (BankerChairId != 0) hash ^= BankerChairId.GetHashCode();
       if (CurChairId != 0) hash ^= CurChairId.GetHashCode();
       if (CurChairAct != 0) hash ^= CurChairAct.GetHashCode();
@@ -1162,15 +1179,18 @@ namespace TeenPattiIndia {
         output.WriteRawTag(48);
         output.WriteInt64(TotalBetScore);
       }
-      if (BankerChairId != 0) {
+      if (Tax != 0) {
         output.WriteRawTag(56);
+        output.WriteInt32(Tax);
+      }
+      if (BankerChairId != 0) {
+        output.WriteRawTag(64);
         output.WriteInt32(BankerChairId);
       }
       if (CurChairId != 0) {
-        output.WriteRawTag(64);
+        output.WriteRawTag(72);
         output.WriteInt32(CurChairId);
       }
-      playerInfos_.WriteTo(output, _repeated_playerInfos_codec);
       if (CurChairAct != 0) {
         output.WriteRawTag(80);
         output.WriteInt32(CurChairAct);
@@ -1187,6 +1207,7 @@ namespace TeenPattiIndia {
         output.WriteRawTag(104);
         output.WriteInt32(CompareWin);
       }
+      playerInfos_.WriteTo(output, _repeated_playerInfos_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1220,15 +1241,18 @@ namespace TeenPattiIndia {
         output.WriteRawTag(48);
         output.WriteInt64(TotalBetScore);
       }
-      if (BankerChairId != 0) {
+      if (Tax != 0) {
         output.WriteRawTag(56);
+        output.WriteInt32(Tax);
+      }
+      if (BankerChairId != 0) {
+        output.WriteRawTag(64);
         output.WriteInt32(BankerChairId);
       }
       if (CurChairId != 0) {
-        output.WriteRawTag(64);
+        output.WriteRawTag(72);
         output.WriteInt32(CurChairId);
       }
-      playerInfos_.WriteTo(ref output, _repeated_playerInfos_codec);
       if (CurChairAct != 0) {
         output.WriteRawTag(80);
         output.WriteInt32(CurChairAct);
@@ -1245,6 +1269,7 @@ namespace TeenPattiIndia {
         output.WriteRawTag(104);
         output.WriteInt32(CompareWin);
       }
+      playerInfos_.WriteTo(ref output, _repeated_playerInfos_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1271,6 +1296,9 @@ namespace TeenPattiIndia {
       }
       if (TotalBetScore != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(TotalBetScore);
+      }
+      if (Tax != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Tax);
       }
       if (BankerChairId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(BankerChairId);
@@ -1319,6 +1347,9 @@ namespace TeenPattiIndia {
       }
       if (other.TotalBetScore != 0L) {
         TotalBetScore = other.TotalBetScore;
+      }
+      if (other.Tax != 0) {
+        Tax = other.Tax;
       }
       if (other.BankerChairId != 0) {
         BankerChairId = other.BankerChairId;
@@ -1378,15 +1409,15 @@ namespace TeenPattiIndia {
             break;
           }
           case 56: {
-            BankerChairId = input.ReadInt32();
+            Tax = input.ReadInt32();
             break;
           }
           case 64: {
-            CurChairId = input.ReadInt32();
+            BankerChairId = input.ReadInt32();
             break;
           }
-          case 74: {
-            playerInfos_.AddEntriesFrom(input, _repeated_playerInfos_codec);
+          case 72: {
+            CurChairId = input.ReadInt32();
             break;
           }
           case 80: {
@@ -1403,6 +1434,10 @@ namespace TeenPattiIndia {
           }
           case 104: {
             CompareWin = input.ReadInt32();
+            break;
+          }
+          case 114: {
+            playerInfos_.AddEntriesFrom(input, _repeated_playerInfos_codec);
             break;
           }
         }
@@ -1444,15 +1479,15 @@ namespace TeenPattiIndia {
             break;
           }
           case 56: {
-            BankerChairId = input.ReadInt32();
+            Tax = input.ReadInt32();
             break;
           }
           case 64: {
-            CurChairId = input.ReadInt32();
+            BankerChairId = input.ReadInt32();
             break;
           }
-          case 74: {
-            playerInfos_.AddEntriesFrom(ref input, _repeated_playerInfos_codec);
+          case 72: {
+            CurChairId = input.ReadInt32();
             break;
           }
           case 80: {
@@ -1469,6 +1504,10 @@ namespace TeenPattiIndia {
           }
           case 104: {
             CompareWin = input.ReadInt32();
+            break;
+          }
+          case 114: {
+            playerInfos_.AddEntriesFrom(ref input, _repeated_playerInfos_codec);
             break;
           }
         }

@@ -729,21 +729,22 @@ class TPMsgSceneInfo PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kPlayerInfosFieldNumber = 9,
+    kPlayerInfosFieldNumber = 14,
     kMaxScoreFieldNumber = 1,
     kTableMaxScoreFieldNumber = 2,
     kCellScoreFieldNumber = 3,
     kCurTimesFieldNumber = 4,
     kTableStateFieldNumber = 5,
     kTotalBetScoreFieldNumber = 6,
-    kBankerChairIdFieldNumber = 7,
-    kCurChairIdFieldNumber = 8,
+    kTaxFieldNumber = 7,
+    kBankerChairIdFieldNumber = 8,
+    kCurChairIdFieldNumber = 9,
     kCurChairActFieldNumber = 10,
     kOutTimeFieldNumber = 11,
     kCompareUserFieldNumber = 12,
     kCompareWinFieldNumber = 13,
   };
-  // repeated .TeenPatti_India.TPMsgPlayerInfo player_infos = 9;
+  // repeated .TeenPatti_India.TPMsgPlayerInfo player_infos = 14;
   int player_infos_size() const;
   private:
   int _internal_player_infos_size() const;
@@ -815,7 +816,16 @@ class TPMsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_total_bet_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int32 banker_chair_id = 7;
+  // int32 tax = 7;
+  void clear_tax();
+  ::PROTOBUF_NAMESPACE_ID::int32 tax() const;
+  void set_tax(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_tax() const;
+  void _internal_set_tax(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 banker_chair_id = 8;
   void clear_banker_chair_id();
   ::PROTOBUF_NAMESPACE_ID::int32 banker_chair_id() const;
   void set_banker_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -824,7 +834,7 @@ class TPMsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_banker_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 cur_chair_id = 8;
+  // int32 cur_chair_id = 9;
   void clear_cur_chair_id();
   ::PROTOBUF_NAMESPACE_ID::int32 cur_chair_id() const;
   void set_cur_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -883,6 +893,7 @@ class TPMsgSceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 cur_times_;
   ::PROTOBUF_NAMESPACE_ID::int32 table_state_;
   ::PROTOBUF_NAMESPACE_ID::int64 total_bet_score_;
+  ::PROTOBUF_NAMESPACE_ID::int32 tax_;
   ::PROTOBUF_NAMESPACE_ID::int32 banker_chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 cur_chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 cur_chair_act_;
@@ -2858,7 +2869,27 @@ inline void TPMsgSceneInfo::set_total_bet_score(::PROTOBUF_NAMESPACE_ID::int64 v
   // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgSceneInfo.total_bet_score)
 }
 
-// int32 banker_chair_id = 7;
+// int32 tax = 7;
+inline void TPMsgSceneInfo::clear_tax() {
+  tax_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 TPMsgSceneInfo::_internal_tax() const {
+  return tax_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 TPMsgSceneInfo::tax() const {
+  // @@protoc_insertion_point(field_get:TeenPatti_India.TPMsgSceneInfo.tax)
+  return _internal_tax();
+}
+inline void TPMsgSceneInfo::_internal_set_tax(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  tax_ = value;
+}
+inline void TPMsgSceneInfo::set_tax(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_tax(value);
+  // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgSceneInfo.tax)
+}
+
+// int32 banker_chair_id = 8;
 inline void TPMsgSceneInfo::clear_banker_chair_id() {
   banker_chair_id_ = 0;
 }
@@ -2878,7 +2909,7 @@ inline void TPMsgSceneInfo::set_banker_chair_id(::PROTOBUF_NAMESPACE_ID::int32 v
   // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgSceneInfo.banker_chair_id)
 }
 
-// int32 cur_chair_id = 8;
+// int32 cur_chair_id = 9;
 inline void TPMsgSceneInfo::clear_cur_chair_id() {
   cur_chair_id_ = 0;
 }
@@ -2978,7 +3009,7 @@ inline void TPMsgSceneInfo::set_compare_win(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgSceneInfo.compare_win)
 }
 
-// repeated .TeenPatti_India.TPMsgPlayerInfo player_infos = 9;
+// repeated .TeenPatti_India.TPMsgPlayerInfo player_infos = 14;
 inline int TPMsgSceneInfo::_internal_player_infos_size() const {
   return player_infos_.size();
 }
