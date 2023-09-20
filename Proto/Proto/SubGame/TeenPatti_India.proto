@@ -135,10 +135,10 @@ message TPMsgGameStartResp
 //游戏开始
 message TPMsgNotifyActionResp
 {
-	int32				cur_chair_id	= 1;	//下个操作玩家椅子号
+	int32				cur_chair_id	= 1;	//操作玩家椅子号
 	int32				cur_times		= 2;	//当前倍数
 	int32				current_act		= 3;	//当前操作码
-	int64				oper_time		= 4;	//操作时间
+	int32				oper_time		= 4;	//操作时间
 }
 
 //玩家操作
