@@ -121,7 +121,7 @@ public static partial class LoginReflection {
           "cmFua190eXBlGAEgASgFEg8KB3VzZXJfaWQYAiABKAUSFAoMY3VycmVudF9w",
           "YWdlGAMgASgFEg8KB21heF9yb3cYBCABKAUiiwEKDk1zZ1RvcExpc3RSZXNw",
           "Eg8KB3VzZXJfaWQYASABKAUSEQoJcmFua190eXBlGAIgASgFEhYKDnRoaXNf",
-          "cmFua19uZGV4GAMgASgFEhEKCXRoaXNfZ29sZBgEIAEoBRIOCgZpc19lbmQY",
+          "cmFua19uZGV4GAMgASgFEhEKCXRoaXNfZ29sZBgEIAEoAxIOCgZpc19lbmQY",
           "BSABKAUSGgoFbGlzdHMYBiADKAsyCy5Nc2dUb3BJbmZvIjsKE01zZ0JhbmtU",
           "cmFuc2ZlclJlc3ASEQoJcmV0X3ZhbHVlGAEgASgFEhEKCWJhbmtfZ29sZBgC",
           "IAEoAyJhCg1Nc2dCYW5rUmVjb3JkEhQKDHNlbmRfdXNlcl9pZBgBIAEoBRIV",
@@ -12639,12 +12639,12 @@ public sealed partial class MsgTopListResp : pb::IMessage<MsgTopListResp>
 
   /// <summary>Field number for the "this_gold" field.</summary>
   public const int ThisGoldFieldNumber = 4;
-  private int thisGold_;
+  private long thisGold_;
   /// <summary>
   ///自己的金币
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public int ThisGold {
+  public long ThisGold {
     get { return thisGold_; }
     set {
       thisGold_ = value;
@@ -12706,7 +12706,7 @@ public sealed partial class MsgTopListResp : pb::IMessage<MsgTopListResp>
     if (UserId != 0) hash ^= UserId.GetHashCode();
     if (RankType != 0) hash ^= RankType.GetHashCode();
     if (ThisRankNdex != 0) hash ^= ThisRankNdex.GetHashCode();
-    if (ThisGold != 0) hash ^= ThisGold.GetHashCode();
+    if (ThisGold != 0L) hash ^= ThisGold.GetHashCode();
     if (IsEnd != 0) hash ^= IsEnd.GetHashCode();
     hash ^= lists_.GetHashCode();
     if (_unknownFields != null) {
@@ -12737,9 +12737,9 @@ public sealed partial class MsgTopListResp : pb::IMessage<MsgTopListResp>
       output.WriteRawTag(24);
       output.WriteInt32(ThisRankNdex);
     }
-    if (ThisGold != 0) {
+    if (ThisGold != 0L) {
       output.WriteRawTag(32);
-      output.WriteInt32(ThisGold);
+      output.WriteInt64(ThisGold);
     }
     if (IsEnd != 0) {
       output.WriteRawTag(40);
@@ -12767,9 +12767,9 @@ public sealed partial class MsgTopListResp : pb::IMessage<MsgTopListResp>
       output.WriteRawTag(24);
       output.WriteInt32(ThisRankNdex);
     }
-    if (ThisGold != 0) {
+    if (ThisGold != 0L) {
       output.WriteRawTag(32);
-      output.WriteInt32(ThisGold);
+      output.WriteInt64(ThisGold);
     }
     if (IsEnd != 0) {
       output.WriteRawTag(40);
@@ -12794,8 +12794,8 @@ public sealed partial class MsgTopListResp : pb::IMessage<MsgTopListResp>
     if (ThisRankNdex != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(ThisRankNdex);
     }
-    if (ThisGold != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeInt32Size(ThisGold);
+    if (ThisGold != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(ThisGold);
     }
     if (IsEnd != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(IsEnd);
@@ -12821,7 +12821,7 @@ public sealed partial class MsgTopListResp : pb::IMessage<MsgTopListResp>
     if (other.ThisRankNdex != 0) {
       ThisRankNdex = other.ThisRankNdex;
     }
-    if (other.ThisGold != 0) {
+    if (other.ThisGold != 0L) {
       ThisGold = other.ThisGold;
     }
     if (other.IsEnd != 0) {
@@ -12855,7 +12855,7 @@ public sealed partial class MsgTopListResp : pb::IMessage<MsgTopListResp>
           break;
         }
         case 32: {
-          ThisGold = input.ReadInt32();
+          ThisGold = input.ReadInt64();
           break;
         }
         case 40: {
@@ -12893,7 +12893,7 @@ public sealed partial class MsgTopListResp : pb::IMessage<MsgTopListResp>
           break;
         }
         case 32: {
-          ThisGold = input.ReadInt32();
+          ThisGold = input.ReadInt64();
           break;
         }
         case 40: {

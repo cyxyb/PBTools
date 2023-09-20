@@ -7634,8 +7634,8 @@ class MsgTopListResp PROTOBUF_FINAL :
     kListsFieldNumber = 6,
     kUserIdFieldNumber = 1,
     kRankTypeFieldNumber = 2,
-    kThisRankNdexFieldNumber = 3,
     kThisGoldFieldNumber = 4,
+    kThisRankNdexFieldNumber = 3,
     kIsEndFieldNumber = 5,
   };
   // repeated .MsgTopInfo lists = 6;
@@ -7674,6 +7674,15 @@ class MsgTopListResp PROTOBUF_FINAL :
   void _internal_set_rank_type(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int64 this_gold = 4;
+  void clear_this_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 this_gold() const;
+  void set_this_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_this_gold() const;
+  void _internal_set_this_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
   // int32 this_rank_ndex = 3;
   void clear_this_rank_ndex();
   ::PROTOBUF_NAMESPACE_ID::int32 this_rank_ndex() const;
@@ -7681,15 +7690,6 @@ class MsgTopListResp PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::int32 _internal_this_rank_ndex() const;
   void _internal_set_this_rank_ndex(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 this_gold = 4;
-  void clear_this_gold();
-  ::PROTOBUF_NAMESPACE_ID::int32 this_gold() const;
-  void set_this_gold(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_this_gold() const;
-  void _internal_set_this_gold(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 is_end = 5;
@@ -7711,8 +7711,8 @@ class MsgTopListResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgTopInfo > lists_;
   ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 rank_type_;
+  ::PROTOBUF_NAMESPACE_ID::int64 this_gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 this_rank_ndex_;
-  ::PROTOBUF_NAMESPACE_ID::int32 this_gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 is_end_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
@@ -14848,22 +14848,22 @@ inline void MsgTopListResp::set_this_rank_ndex(::PROTOBUF_NAMESPACE_ID::int32 va
   // @@protoc_insertion_point(field_set:MsgTopListResp.this_rank_ndex)
 }
 
-// int32 this_gold = 4;
+// int64 this_gold = 4;
 inline void MsgTopListResp::clear_this_gold() {
-  this_gold_ = 0;
+  this_gold_ = PROTOBUF_LONGLONG(0);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTopListResp::_internal_this_gold() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgTopListResp::_internal_this_gold() const {
   return this_gold_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTopListResp::this_gold() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgTopListResp::this_gold() const {
   // @@protoc_insertion_point(field_get:MsgTopListResp.this_gold)
   return _internal_this_gold();
 }
-inline void MsgTopListResp::_internal_set_this_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgTopListResp::_internal_set_this_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
   
   this_gold_ = value;
 }
-inline void MsgTopListResp::set_this_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgTopListResp::set_this_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_this_gold(value);
   // @@protoc_insertion_point(field_set:MsgTopListResp.this_gold)
 }

@@ -3,7 +3,7 @@ syntax = "proto3";
 package TeenPatti_India;
 
 //桌子状态
-enum EGameState
+enum ETPGameState
 {	
 	GS_TP_READY							= 0;	//准备
 	GS_TP_DEAL							= 1;	//发牌
@@ -11,8 +11,17 @@ enum EGameState
 	GS_TP_RESULT						= 3;	//结算
 };
 
+//玩家状态
+enum ETPPlayerState
+{	
+	PS_READY							= 0;	//准备
+	PS_PLAY								= 1;	//游戏
+	PS_GIVE								= 2;	//弃牌
+	PS_FAIL								= 3;	//淘汰
+};
+
 //牌型
-enum ECardType
+enum ETPCardType
 {
 	//扑克类型
 	CT_SINGLE							= 0;	//单牌类型
@@ -26,7 +35,7 @@ enum ECardType
 };
 
 //操作码
-enum EGameAction
+enum ETPGameAction
 {
 	InvaldAct							= 0;	//无效
 	GiveUp								= 1;	//弃牌
@@ -38,17 +47,17 @@ enum EGameAction
 	AllCompare							= 64;	//全场比牌
 };
 
-enum EMsgIDSubGame
+enum ETPMsgIDSubGame
 {
 	MsgIDSubGame_Null					= 0;
-	MsgIDSubGame_GameStartResp			= 1;	//游戏开始(MsgGameStartResp)
-	MsgIDSubGame_Action					= 2;	//玩家操作(MsgAction)
-	MsgIDSubGame_GiveUpResp				= 3;	//玩家弃牌返回(MsgGiveUpResp)
-	MsgIDSubGame_LookCard				= 4;	//玩家看牌(MsgLookCardResp)
-	MsgIDSubGame_AddBetResp				= 5;	//玩家下注(MsgAddBetResp)
-	MsgIDSubGame_CompareCardResp		= 6;	//玩家请求比牌(MsgCompareCardResp)
-	MsgIDSubGame_CompareRetResp			= 7;	//玩家比牌结果(MsgCompareCardRetResp)
-	MsgIDSubGame_GameResultResp			= 8;	//玩家下注记录(MsgGameResultResp)
+	MsgIDSubGame_GameStartResp			= 1;	//游戏开始(TPMsgGameStartResp)
+	MsgIDSubGame_Action					= 2;	//玩家操作(TPMsgAction)
+	MsgIDSubGame_GiveUpResp				= 3;	//玩家弃牌返回(TPMsgGiveUpResp)
+	MsgIDSubGame_LookCard				= 4;	//玩家看牌(TPMsgLookCardResp)
+	MsgIDSubGame_AddBetResp				= 5;	//玩家下注(TPMsgAddBetResp)
+	MsgIDSubGame_CompareCardResp		= 6;	//玩家请求比牌(TPMsgCompareCardResp)
+	MsgIDSubGame_CompareRetResp			= 7;	//玩家比牌结果(TPMsgCompareCardRetResp)
+	MsgIDSubGame_GameResultResp			= 8;	//玩家下注记录(TPMsgGameResultResp)
 	MsgIDSubGame_NotifyStateResp		= 9;	//桌子状态
 
 	/////////////////////////机器人消息///////////////////////
@@ -60,23 +69,24 @@ enum EMsgIDSubGame
 	MsgIDSubGame_NotifyLastActResp		= 25;	//通知玩家行为
 }
 
-message MsgHandCards
+message TPMsgHandCards
 {
 	repeated int32		cards			= 1;	//手牌
 }
 
-message MsgPlayerInfo
+message TPMsgPlayerInfo
 {
 	int32				chair_id		= 1;	//玩家椅子号
-	int32				ming_zhu		= 2;	//明注状态
+	bool				ming_zhu		= 2;	//明注状态
 	int32				play_status		= 3;	//玩家状态
 	int32				player_bet		= 4;	//玩家投注总和
-	MsgHandCards		handls			= 5;	//手牌
+	int32				card_type		= 5;	//牌型
+	TPMsgHandCards		handls			= 6;	//手牌
 }
 
 
 //场景消息
-message MsgSceneInfo
+message TPMsgSceneInfo
 {
 	int64			  	max_score		= 1;	//最大下注
 	int64			  	table_max_score	= 2;	//最大下注
@@ -86,7 +96,7 @@ message MsgSceneInfo
 	int64				total_bet_score	= 6;	//桌内总下注
 	int32				banker_chair_id	= 7;	//庄家椅子号
 	int32				cur_chair_id	= 8;	//当前操作椅子号
-	repeated MsgPlayerInfo player_infos	= 9;	//玩家状态
+	repeated TPMsgPlayerInfo player_infos	= 9;	//玩家状态
 	int32				cur_chair_act	= 10;	//当前玩家的操作码
 	int32				out_time		= 11;	//当前状态剩余超时时间
 
@@ -95,7 +105,7 @@ message MsgSceneInfo
 }
 
 //游戏开始
-message MsgGameStartResp
+message TPMsgGameStartResp
 {
 	int32				cur_chair_id	= 1;	//操作玩家椅子号
 	int32				cur_times		= 2;	//当前倍数
@@ -109,7 +119,7 @@ message MsgGameStartResp
 }
 
 //玩家操作
-message MsgAction
+message TPMsgAction
 {
 	int32				act				= 1;	//操作标示
 	int64				bet_score		= 2;	//下注金额
@@ -118,19 +128,19 @@ message MsgAction
 }
 
 //玩家弃牌返回
-message MsgGiveUpResp
+message TPMsgGiveUpResp
 {
 	int32				chair_id		= 1;	//玩家椅子号
 }
 
 //玩家看牌
-message MsgLookCardResp
+message TPMsgLookCardResp
 {
 	int32				chair_id		= 1;	//玩家椅子号
 	repeated int32		cards			= 2;	//手牌
 }
 
-message MsgAddBetResp
+message TPMsgAddBetResp
 {
 	int32				cur_chair_id	= 1;	//下个操作玩家椅子号
 	int32				cur_times		= 2;	//当前倍数
@@ -138,19 +148,18 @@ message MsgAddBetResp
 	int32				add_chair_id	= 4;	//下注玩家椅子号
 	int64				add_score		= 5;	//下注金额
 	int64				oper_time		= 6;	//操作时间
-	//int32				compare_state	= 7;	//是否比牌应答
 
 }
 
 //玩家请求比牌
-message MsgCompareCardResp
+message TPMsgCompareCardResp
 {
 	int32				chair_id		= 1;	//玩家椅子号
 	int32				compare_id		= 2;	//被比玩家椅子号
 }
 
 //玩家比牌结果
-message MsgCompareCardRetResp
+message TPMsgCompareCardRetResp
 {
 	int32				current_chair_id= 1;	//下个操作玩家椅子号
 	int32				current_act		= 2;	//当前操作码=
@@ -163,11 +172,11 @@ message MsgCompareCardRetResp
 
 
 //游戏结果                                  
-message MsgGameResult                           
+message TPMsgGameResult                           
 {                                           
 	int32					game_tax		= 1;	//税收
 	repeated int64			game_score		= 2;	//输赢分
-	repeated MsgHandCards	player_hands	= 3;	//手牌
+	repeated TPMsgHandCards	player_hands	= 3;	//手牌
 	int32					end_state		= 4;	//结束状态  1 比牌结束 2 全场秀牌
 }                                           
 

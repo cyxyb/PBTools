@@ -1549,7 +1549,7 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "\001(\005\022\017\n\007user_id\030\002 \001(\005\022\024\n\014current_page\030\003 \001"
   "(\005\022\017\n\007max_row\030\004 \001(\005\"\213\001\n\016MsgTopListResp\022\017"
   "\n\007user_id\030\001 \001(\005\022\021\n\trank_type\030\002 \001(\005\022\026\n\016th"
-  "is_rank_ndex\030\003 \001(\005\022\021\n\tthis_gold\030\004 \001(\005\022\016\n"
+  "is_rank_ndex\030\003 \001(\005\022\021\n\tthis_gold\030\004 \001(\003\022\016\n"
   "\006is_end\030\005 \001(\005\022\032\n\005lists\030\006 \003(\0132\013.MsgTopInf"
   "o\";\n\023MsgBankTransferResp\022\021\n\tret_value\030\001 "
   "\001(\005\022\021\n\tbank_gold\030\002 \001(\003\"a\n\rMsgBankRecord\022"
@@ -13582,7 +13582,7 @@ const char* MsgTopListResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 this_gold = 4;
+      // int64 this_gold = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           this_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
@@ -13654,10 +13654,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_this_rank_ndex(), target);
   }
 
-  // int32 this_gold = 4;
+  // int64 this_gold = 4;
   if (this->this_gold() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_this_gold(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_this_gold(), target);
   }
 
   // int32 is_end = 5;
@@ -13711,18 +13711,18 @@ size_t MsgTopListResp::ByteSizeLong() const {
         this->_internal_rank_type());
   }
 
+  // int64 this_gold = 4;
+  if (this->this_gold() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_this_gold());
+  }
+
   // int32 this_rank_ndex = 3;
   if (this->this_rank_ndex() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_this_rank_ndex());
-  }
-
-  // int32 this_gold = 4;
-  if (this->this_gold() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_this_gold());
   }
 
   // int32 is_end = 5;
@@ -13770,11 +13770,11 @@ void MsgTopListResp::MergeFrom(const MsgTopListResp& from) {
   if (from.rank_type() != 0) {
     _internal_set_rank_type(from._internal_rank_type());
   }
-  if (from.this_rank_ndex() != 0) {
-    _internal_set_this_rank_ndex(from._internal_this_rank_ndex());
-  }
   if (from.this_gold() != 0) {
     _internal_set_this_gold(from._internal_this_gold());
+  }
+  if (from.this_rank_ndex() != 0) {
+    _internal_set_this_rank_ndex(from._internal_this_rank_ndex());
   }
   if (from.is_end() != 0) {
     _internal_set_is_end(from._internal_is_end());

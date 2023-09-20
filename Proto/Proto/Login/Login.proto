@@ -367,7 +367,7 @@ message MsgTopListResp
 	int32 user_id						= 1;		//请求玩家userID
 	int32 rank_type						= 2;		//排行榜类型 1: 财富排行榜 2：输赢排行榜
 	int32 this_rank_ndex				= 3;		//自己的排名
-	int32 this_gold						= 4;		//自己的金币
+	int64 this_gold						= 4;		//自己的金币
 	int32 is_end						= 5;		//是否到尾了
 	repeated MsgTopInfo	lists			= 6;		//大富豪排行榜
 };
