@@ -130,14 +130,14 @@ public static partial class LoginReflection {
           "GAEgAygLMg4uTXNnQmFua1JlY29yZCIwCgxNc2dQaG9uZUNvZGUSEQoJYXJl",
           "YV9jb2RlGAEgASgJEg0KBXBob25lGAIgASgJIiwKB01zZ0l0ZW0SDwoHaXRl",
           "bV9pZBgBIAEoBRIQCghpdGVtX251bRgCIAEoAyInCg1Nc2dQbGF5ZXJJdGVt",
-          "EhYKBGl0ZW0YASADKAsyCC5Nc2dJdGVtIjoKE01zZ0JhbmtRdWVyeU5pY25h",
-          "bWUSEQoJcmV0X1ZhbHVlGAEgASgFEhAKCG5pY2tuYW1lGAIgASgJIp4BChZN",
-          "c2dTdWJhZ2VudEluZm9ybWF0aW9uEhYKDmFnZW50X25pY2tuYW1lGAEgASgJ",
-          "EhUKDWFnZW50X3VzZXJfaWQYAiABKAUSEgoKYWdlbnRfdHlwZRgDIAEoCBIW",
-          "Cg50b3RhbF9zaGlmdF90bxgEIAEoAxIWCg50b3RhbF9yb2xsX291dBgFIAEo",
-          "AxIRCgl2aXBfbGV2ZWwYBiABKAUiSwocTXNnVHRvdGFsU3ViYWdlbnRJbmZv",
-          "cm1hdGlvbhIrCgphZ2VudF9pbmZvGAEgAygLMhcuTXNnU3ViYWdlbnRJbmZv",
-          "cm1hdGlvbmIGcHJvdG8z"));
+          "EhYKBGl0ZW0YASADKAsyCC5Nc2dJdGVtIkcKE01zZ0JhbmtRdWVyeU5pY25h",
+          "bWUSEQoJcmV0X1ZhbHVlGAEgASgFEhAKCG5pY2tuYW1lGAIgASgJEgsKA3Rh",
+          "eBgDIAEoBSKeAQoWTXNnU3ViYWdlbnRJbmZvcm1hdGlvbhIWCg5hZ2VudF9u",
+          "aWNrbmFtZRgBIAEoCRIVCg1hZ2VudF91c2VyX2lkGAIgASgFEhIKCmFnZW50",
+          "X3R5cGUYAyABKAgSFgoOdG90YWxfc2hpZnRfdG8YBCABKAMSFgoOdG90YWxf",
+          "cm9sbF9vdXQYBSABKAMSEQoJdmlwX2xldmVsGAYgASgFIksKHE1zZ1R0b3Rh",
+          "bFN1YmFnZW50SW5mb3JtYXRpb24SKwoKYWdlbnRfaW5mbxgBIAMoCzIXLk1z",
+          "Z1N1YmFnZW50SW5mb3JtYXRpb25iBnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -187,7 +187,7 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPhoneCode), global::MsgPhoneCode.Parser, new[]{ "AreaCode", "Phone" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgItem), global::MsgItem.Parser, new[]{ "ItemId", "ItemNum" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPlayerItem), global::MsgPlayerItem.Parser, new[]{ "Item" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankQueryNicname), global::MsgBankQueryNicname.Parser, new[]{ "RetValue", "Nickname" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankQueryNicname), global::MsgBankQueryNicname.Parser, new[]{ "RetValue", "Nickname", "Tax" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgSubagentInformation), global::MsgSubagentInformation.Parser, new[]{ "AgentNickname", "AgentUserId", "AgentType", "TotalShiftTo", "TotalRollOut", "VipLevel" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTtotalSubagentInformation), global::MsgTtotalSubagentInformation.Parser, new[]{ "AgentInfo" }, null, null, null, null)
         }));
@@ -14186,7 +14186,7 @@ public sealed partial class MsgPlayerItem : pb::IMessage<MsgPlayerItem>
 }
 
 /// <summary>
-///查询玩家昵称
+///查询玩家转账对象
 /// </summary>
 public sealed partial class MsgBankQueryNicname : pb::IMessage<MsgBankQueryNicname>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -14219,6 +14219,7 @@ public sealed partial class MsgBankQueryNicname : pb::IMessage<MsgBankQueryNicna
   public MsgBankQueryNicname(MsgBankQueryNicname other) : this() {
     retValue_ = other.retValue_;
     nickname_ = other.nickname_;
+    tax_ = other.tax_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -14255,6 +14256,20 @@ public sealed partial class MsgBankQueryNicname : pb::IMessage<MsgBankQueryNicna
     }
   }
 
+  /// <summary>Field number for the "tax" field.</summary>
+  public const int TaxFieldNumber = 3;
+  private int tax_;
+  /// <summary>
+  ///税收值 百分比
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Tax {
+    get { return tax_; }
+    set {
+      tax_ = value;
+    }
+  }
+
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as MsgBankQueryNicname);
@@ -14270,6 +14285,7 @@ public sealed partial class MsgBankQueryNicname : pb::IMessage<MsgBankQueryNicna
     }
     if (RetValue != other.RetValue) return false;
     if (Nickname != other.Nickname) return false;
+    if (Tax != other.Tax) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -14278,6 +14294,7 @@ public sealed partial class MsgBankQueryNicname : pb::IMessage<MsgBankQueryNicna
     int hash = 1;
     if (RetValue != 0) hash ^= RetValue.GetHashCode();
     if (Nickname.Length != 0) hash ^= Nickname.GetHashCode();
+    if (Tax != 0) hash ^= Tax.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -14302,6 +14319,10 @@ public sealed partial class MsgBankQueryNicname : pb::IMessage<MsgBankQueryNicna
       output.WriteRawTag(18);
       output.WriteString(Nickname);
     }
+    if (Tax != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(Tax);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -14319,6 +14340,10 @@ public sealed partial class MsgBankQueryNicname : pb::IMessage<MsgBankQueryNicna
       output.WriteRawTag(18);
       output.WriteString(Nickname);
     }
+    if (Tax != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(Tax);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -14333,6 +14358,9 @@ public sealed partial class MsgBankQueryNicname : pb::IMessage<MsgBankQueryNicna
     }
     if (Nickname.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(Nickname);
+    }
+    if (Tax != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Tax);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -14350,6 +14378,9 @@ public sealed partial class MsgBankQueryNicname : pb::IMessage<MsgBankQueryNicna
     }
     if (other.Nickname.Length != 0) {
       Nickname = other.Nickname;
+    }
+    if (other.Tax != 0) {
+      Tax = other.Tax;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -14373,6 +14404,10 @@ public sealed partial class MsgBankQueryNicname : pb::IMessage<MsgBankQueryNicna
           Nickname = input.ReadString();
           break;
         }
+        case 24: {
+          Tax = input.ReadInt32();
+          break;
+        }
       }
     }
   #endif
@@ -14393,6 +14428,10 @@ public sealed partial class MsgBankQueryNicname : pb::IMessage<MsgBankQueryNicna
         }
         case 18: {
           Nickname = input.ReadString();
+          break;
+        }
+        case 24: {
+          Tax = input.ReadInt32();
           break;
         }
       }

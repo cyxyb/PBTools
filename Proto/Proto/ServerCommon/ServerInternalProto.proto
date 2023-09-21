@@ -449,3 +449,8 @@ message MsgDBSubagentInformation
 	int64 total_roll_out 	= 5;			//总转出
 	int32 vip_level 		= 6;			//代理身份
 }
+message MsgDBQueryBankTax
+{
+	int32 from_user_id = 1;					//发送者ID
+	int32 recv_user_id = 2;					//接受Id
+}
