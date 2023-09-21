@@ -167,7 +167,7 @@ message TPMsgAddBetResp
 {
 	int32				add_chair_id	= 1;	//下注玩家椅子号
 	int64				add_score		= 2;	//下注金额
-	int64				bet_type		= 3;	//下注行为类型  1跟注  2 加注 3比牌
+	int64				bet_type		= 3;	//下注行为类型  ETPGameAction
 }
 
 //玩家请求比牌
