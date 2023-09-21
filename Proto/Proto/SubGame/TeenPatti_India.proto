@@ -160,7 +160,8 @@ message TPMsgGiveUpResp
 message TPMsgLookCardResp
 {
 	int32				chair_id		= 1;	//玩家椅子号
-	repeated int32		cards			= 2;	//手牌
+	int32				card_type		= 2;	//牌型
+	repeated int32		cards			= 3;	//手牌
 }
 
 message TPMsgAddBetResp
@@ -195,8 +196,9 @@ message TPMsgGameResult
 {                                           
 	int32					game_tax		= 1;	//税收
 	repeated int64			game_score		= 2;	//输赢分
-	repeated TPMsgHandCards	player_hands	= 3;	//手牌
-	int32					end_state		= 4;	//结束状态  1 比牌结束 2 全场秀牌
+	repeated int32			card_type		= 3;	//牌型
+	repeated TPMsgHandCards	player_hands	= 4;	//手牌
+	int32					end_state		= 5;	//结束状态  1 比牌结束 2 全场秀牌
 }                                           
 
 

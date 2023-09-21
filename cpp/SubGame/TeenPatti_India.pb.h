@@ -1870,10 +1870,11 @@ class TPMsgLookCardResp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kCardsFieldNumber = 2,
+    kCardsFieldNumber = 3,
     kChairIdFieldNumber = 1,
+    kCardTypeFieldNumber = 2,
   };
-  // repeated int32 cards = 2;
+  // repeated int32 cards = 3;
   int cards_size() const;
   private:
   int _internal_cards_size() const;
@@ -1904,6 +1905,15 @@ class TPMsgLookCardResp PROTOBUF_FINAL :
   void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 card_type = 2;
+  void clear_card_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 card_type() const;
+  void set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_card_type() const;
+  void _internal_set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:TeenPatti_India.TPMsgLookCardResp)
  private:
   class _Internal;
@@ -1914,6 +1924,7 @@ class TPMsgLookCardResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > cards_;
   mutable std::atomic<int> _cards_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 card_type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_TeenPatti_5fIndia_2eproto;
 };
@@ -2567,9 +2578,10 @@ class TPMsgGameResult PROTOBUF_FINAL :
 
   enum : int {
     kGameScoreFieldNumber = 2,
-    kPlayerHandsFieldNumber = 3,
+    kCardTypeFieldNumber = 3,
+    kPlayerHandsFieldNumber = 4,
     kGameTaxFieldNumber = 1,
-    kEndStateFieldNumber = 4,
+    kEndStateFieldNumber = 5,
   };
   // repeated int64 game_score = 2;
   int game_score_size() const;
@@ -2593,7 +2605,29 @@ class TPMsgGameResult PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
       mutable_game_score();
 
-  // repeated .TeenPatti_India.TPMsgHandCards player_hands = 3;
+  // repeated int32 card_type = 3;
+  int card_type_size() const;
+  private:
+  int _internal_card_type_size() const;
+  public:
+  void clear_card_type();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_card_type(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_card_type() const;
+  void _internal_add_card_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_card_type();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 card_type(int index) const;
+  void set_card_type(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_card_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      card_type() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_card_type();
+
+  // repeated .TeenPatti_India.TPMsgHandCards player_hands = 4;
   int player_hands_size() const;
   private:
   int _internal_player_hands_size() const;
@@ -2620,7 +2654,7 @@ class TPMsgGameResult PROTOBUF_FINAL :
   void _internal_set_game_tax(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 end_state = 4;
+  // int32 end_state = 5;
   void clear_end_state();
   ::PROTOBUF_NAMESPACE_ID::int32 end_state() const;
   void set_end_state(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -2638,6 +2672,8 @@ class TPMsgGameResult PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 > game_score_;
   mutable std::atomic<int> _game_score_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > card_type_;
+  mutable std::atomic<int> _card_type_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TeenPatti_India::TPMsgHandCards > player_hands_;
   ::PROTOBUF_NAMESPACE_ID::int32 game_tax_;
   ::PROTOBUF_NAMESPACE_ID::int32 end_state_;
@@ -3783,7 +3819,27 @@ inline void TPMsgLookCardResp::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgLookCardResp.chair_id)
 }
 
-// repeated int32 cards = 2;
+// int32 card_type = 2;
+inline void TPMsgLookCardResp::clear_card_type() {
+  card_type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 TPMsgLookCardResp::_internal_card_type() const {
+  return card_type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 TPMsgLookCardResp::card_type() const {
+  // @@protoc_insertion_point(field_get:TeenPatti_India.TPMsgLookCardResp.card_type)
+  return _internal_card_type();
+}
+inline void TPMsgLookCardResp::_internal_set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  card_type_ = value;
+}
+inline void TPMsgLookCardResp::set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_card_type(value);
+  // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgLookCardResp.card_type)
+}
+
+// repeated int32 cards = 3;
 inline int TPMsgLookCardResp::_internal_cards_size() const {
   return cards_.size();
 }
@@ -4207,7 +4263,54 @@ TPMsgGameResult::mutable_game_score() {
   return _internal_mutable_game_score();
 }
 
-// repeated .TeenPatti_India.TPMsgHandCards player_hands = 3;
+// repeated int32 card_type = 3;
+inline int TPMsgGameResult::_internal_card_type_size() const {
+  return card_type_.size();
+}
+inline int TPMsgGameResult::card_type_size() const {
+  return _internal_card_type_size();
+}
+inline void TPMsgGameResult::clear_card_type() {
+  card_type_.Clear();
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 TPMsgGameResult::_internal_card_type(int index) const {
+  return card_type_.Get(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 TPMsgGameResult::card_type(int index) const {
+  // @@protoc_insertion_point(field_get:TeenPatti_India.TPMsgGameResult.card_type)
+  return _internal_card_type(index);
+}
+inline void TPMsgGameResult::set_card_type(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  card_type_.Set(index, value);
+  // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgGameResult.card_type)
+}
+inline void TPMsgGameResult::_internal_add_card_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  card_type_.Add(value);
+}
+inline void TPMsgGameResult::add_card_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_card_type(value);
+  // @@protoc_insertion_point(field_add:TeenPatti_India.TPMsgGameResult.card_type)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+TPMsgGameResult::_internal_card_type() const {
+  return card_type_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+TPMsgGameResult::card_type() const {
+  // @@protoc_insertion_point(field_list:TeenPatti_India.TPMsgGameResult.card_type)
+  return _internal_card_type();
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+TPMsgGameResult::_internal_mutable_card_type() {
+  return &card_type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+TPMsgGameResult::mutable_card_type() {
+  // @@protoc_insertion_point(field_mutable_list:TeenPatti_India.TPMsgGameResult.card_type)
+  return _internal_mutable_card_type();
+}
+
+// repeated .TeenPatti_India.TPMsgHandCards player_hands = 4;
 inline int TPMsgGameResult::_internal_player_hands_size() const {
   return player_hands_.size();
 }
@@ -4246,7 +4349,7 @@ TPMsgGameResult::player_hands() const {
   return player_hands_;
 }
 
-// int32 end_state = 4;
+// int32 end_state = 5;
 inline void TPMsgGameResult::clear_end_state() {
   end_state_ = 0;
 }
