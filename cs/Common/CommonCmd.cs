@@ -115,13 +115,13 @@ public static partial class CommonCmdReflection {
           "eVJlY29yZBD3BxIjCh5Nc2dJREdhbWVfUXVlcnlSb3VuZFJlY29yZFJlc3AQ",
           "+AcSIQocTXNnSURHYW1lX1F1ZXJ5RGF5UmVjb3JkUmVzcBD5BxIbChZNc2dJ",
           "REdhbWVfQWRkT25lUmVjb3JkEPoHEiYKIU1zZ0lER2FtZV9Ob3RpZnlQbGF5",
-          "ZXJPZmZsaW5lUmVzcBD7Byr5AQoKRU1zZ0lEQ2hhdBISCg5Nc2dJRENoYXRf",
+          "ZXJPZmZsaW5lUmVzcBD7ByqaAgoKRU1zZ0lEQ2hhdBISCg5Nc2dJRENoYXRf",
           "TnVsbBAAEhQKD01zZ0lEQ2hhdF9Mb2dpbhDRDxIYChNNc2dJRENoYXRfTG9n",
           "aW5SZXNwENIPEhkKFE1zZ0lEQ2hhdF9Mb2dvdXRSZXNwENMPEhwKF01zZ0lE",
           "Q2hhdF9TZW5kTm9ybWFsTXNnENQPEiYKIU1zZ0lEQ2hhdF9Ob3RpZnlDaGF0",
           "Tm9ybWFsTXNnUmVzcBDVDxIdChhNc2dJRENoYXRfU2VuZFRydW1wZXRNc2cQ",
-          "1g8SJwoiTXNnSURDaGF0X05vdGlmeUNoYXRUcnVtcGV0TXNnUmVzcBDXD2IG",
-          "cHJvdG8z"));
+          "1g8SJwoiTXNnSURDaGF0X05vdGlmeUNoYXRUcnVtcGV0TXNnUmVzcBDXDxIf",
+          "ChpNc2dJRENoYXRfU3luY1VzZXJJbmZvUmVzcBDYD2IGcHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::EMsgIDMain), typeof(global::EMsgIDLogin), typeof(global::EMsgIDGame), typeof(global::EMsgIDChat), }, null, null));
@@ -692,6 +692,10 @@ public enum EMsgIDChat {
   ///发送小喇叭消息返回(MsgNotifyChatTrumpetMsg)
   /// </summary>
   [pbr::OriginalName("MsgIDChat_NotifyChatTrumpetMsgResp")] MsgIdchatNotifyChatTrumpetMsgResp = 2007,
+  /// <summary>
+  ///同步玩家信息(MsgSyncUserInfo)
+  /// </summary>
+  [pbr::OriginalName("MsgIDChat_SyncUserInfoResp")] MsgIdchatSyncUserInfoResp = 2008,
 }
 
 #endregion
