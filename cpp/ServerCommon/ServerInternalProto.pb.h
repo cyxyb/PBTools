@@ -46,7 +46,7 @@ struct TableStruct_ServerInternalProto_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[49]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[50]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -131,6 +131,9 @@ extern MsgDBModifyAvatarDefaultTypeInternal _MsgDBModifyAvatar_default_instance_
 class MsgDBPlayerReconnectData;
 class MsgDBPlayerReconnectDataDefaultTypeInternal;
 extern MsgDBPlayerReconnectDataDefaultTypeInternal _MsgDBPlayerReconnectData_default_instance_;
+class MsgDBQueryBankTax;
+class MsgDBQueryBankTaxDefaultTypeInternal;
+extern MsgDBQueryBankTaxDefaultTypeInternal _MsgDBQueryBankTax_default_instance_;
 class MsgDBRegisterGame;
 class MsgDBRegisterGameDefaultTypeInternal;
 extern MsgDBRegisterGameDefaultTypeInternal _MsgDBRegisterGame_default_instance_;
@@ -227,6 +230,7 @@ template<> ::MsgDBMail* Arena::CreateMaybeMessage<::MsgDBMail>(Arena*);
 template<> ::MsgDBMailData* Arena::CreateMaybeMessage<::MsgDBMailData>(Arena*);
 template<> ::MsgDBModifyAvatar* Arena::CreateMaybeMessage<::MsgDBModifyAvatar>(Arena*);
 template<> ::MsgDBPlayerReconnectData* Arena::CreateMaybeMessage<::MsgDBPlayerReconnectData>(Arena*);
+template<> ::MsgDBQueryBankTax* Arena::CreateMaybeMessage<::MsgDBQueryBankTax>(Arena*);
 template<> ::MsgDBRegisterGame* Arena::CreateMaybeMessage<::MsgDBRegisterGame>(Arena*);
 template<> ::MsgDBRegisterLogin* Arena::CreateMaybeMessage<::MsgDBRegisterLogin>(Arena*);
 template<> ::MsgDBSubagentInformation* Arena::CreateMaybeMessage<::MsgDBSubagentInformation>(Arena*);
@@ -8960,6 +8964,153 @@ class MsgDBSubagentInformation PROTOBUF_FINAL :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
+// -------------------------------------------------------------------
+
+class MsgDBQueryBankTax PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgDBQueryBankTax) */ {
+ public:
+  inline MsgDBQueryBankTax() : MsgDBQueryBankTax(nullptr) {}
+  virtual ~MsgDBQueryBankTax();
+
+  MsgDBQueryBankTax(const MsgDBQueryBankTax& from);
+  MsgDBQueryBankTax(MsgDBQueryBankTax&& from) noexcept
+    : MsgDBQueryBankTax() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgDBQueryBankTax& operator=(const MsgDBQueryBankTax& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgDBQueryBankTax& operator=(MsgDBQueryBankTax&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgDBQueryBankTax& default_instance();
+
+  static inline const MsgDBQueryBankTax* internal_default_instance() {
+    return reinterpret_cast<const MsgDBQueryBankTax*>(
+               &_MsgDBQueryBankTax_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    49;
+
+  friend void swap(MsgDBQueryBankTax& a, MsgDBQueryBankTax& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgDBQueryBankTax* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgDBQueryBankTax* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgDBQueryBankTax* New() const final {
+    return CreateMaybeMessage<MsgDBQueryBankTax>(nullptr);
+  }
+
+  MsgDBQueryBankTax* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgDBQueryBankTax>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgDBQueryBankTax& from);
+  void MergeFrom(const MsgDBQueryBankTax& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgDBQueryBankTax* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgDBQueryBankTax";
+  }
+  protected:
+  explicit MsgDBQueryBankTax(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kFromUserIdFieldNumber = 1,
+    kRecvUserIdFieldNumber = 2,
+  };
+  // int32 from_user_id = 1;
+  void clear_from_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 from_user_id() const;
+  void set_from_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_from_user_id() const;
+  void _internal_set_from_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 recv_user_id = 2;
+  void clear_recv_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 recv_user_id() const;
+  void set_recv_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_recv_user_id() const;
+  void _internal_set_recv_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgDBQueryBankTax)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 from_user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 recv_user_id_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
 // ===================================================================
 
 
@@ -14930,9 +15081,55 @@ inline void MsgDBSubagentInformation::set_vip_level(::PROTOBUF_NAMESPACE_ID::int
   // @@protoc_insertion_point(field_set:MsgDBSubagentInformation.vip_level)
 }
 
+// -------------------------------------------------------------------
+
+// MsgDBQueryBankTax
+
+// int32 from_user_id = 1;
+inline void MsgDBQueryBankTax::clear_from_user_id() {
+  from_user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBQueryBankTax::_internal_from_user_id() const {
+  return from_user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBQueryBankTax::from_user_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBQueryBankTax.from_user_id)
+  return _internal_from_user_id();
+}
+inline void MsgDBQueryBankTax::_internal_set_from_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  from_user_id_ = value;
+}
+inline void MsgDBQueryBankTax::set_from_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_from_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBQueryBankTax.from_user_id)
+}
+
+// int32 recv_user_id = 2;
+inline void MsgDBQueryBankTax::clear_recv_user_id() {
+  recv_user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBQueryBankTax::_internal_recv_user_id() const {
+  return recv_user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBQueryBankTax::recv_user_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBQueryBankTax.recv_user_id)
+  return _internal_recv_user_id();
+}
+inline void MsgDBQueryBankTax::_internal_set_recv_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  recv_user_id_ = value;
+}
+inline void MsgDBQueryBankTax::set_recv_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_recv_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBQueryBankTax.recv_user_id)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

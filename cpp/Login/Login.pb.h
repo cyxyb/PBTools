@@ -8754,6 +8754,7 @@ class MsgBankQueryNicname PROTOBUF_FINAL :
   enum : int {
     kNicknameFieldNumber = 2,
     kRetValueFieldNumber = 1,
+    kTaxFieldNumber = 3,
   };
   // string nickname = 2;
   void clear_nickname();
@@ -8780,6 +8781,15 @@ class MsgBankQueryNicname PROTOBUF_FINAL :
   void _internal_set_ret_value(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 tax = 3;
+  void clear_tax();
+  ::PROTOBUF_NAMESPACE_ID::int32 tax() const;
+  void set_tax(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_tax() const;
+  void _internal_set_tax(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgBankQueryNicname)
  private:
   class _Internal;
@@ -8789,6 +8799,7 @@ class MsgBankQueryNicname PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr nickname_;
   ::PROTOBUF_NAMESPACE_ID::int32 ret_value_;
+  ::PROTOBUF_NAMESPACE_ID::int32 tax_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -15435,6 +15446,26 @@ inline void MsgBankQueryNicname::set_allocated_nickname(std::string* nickname) {
   nickname_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), nickname,
       GetArena());
   // @@protoc_insertion_point(field_set_allocated:MsgBankQueryNicname.nickname)
+}
+
+// int32 tax = 3;
+inline void MsgBankQueryNicname::clear_tax() {
+  tax_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBankQueryNicname::_internal_tax() const {
+  return tax_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBankQueryNicname::tax() const {
+  // @@protoc_insertion_point(field_get:MsgBankQueryNicname.tax)
+  return _internal_tax();
+}
+inline void MsgBankQueryNicname::_internal_set_tax(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  tax_ = value;
+}
+inline void MsgBankQueryNicname::set_tax(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_tax(value);
+  // @@protoc_insertion_point(field_set:MsgBankQueryNicname.tax)
 }
 
 // -------------------------------------------------------------------

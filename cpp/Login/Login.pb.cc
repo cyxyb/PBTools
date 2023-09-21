@@ -1315,6 +1315,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::MsgBankQueryNicname, ret_value_),
   PROTOBUF_FIELD_OFFSET(::MsgBankQueryNicname, nickname_),
+  PROTOBUF_FIELD_OFFSET(::MsgBankQueryNicname, tax_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgSubagentInformation, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1381,8 +1382,8 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 417, -1, sizeof(::MsgItem)},
   { 424, -1, sizeof(::MsgPlayerItem)},
   { 430, -1, sizeof(::MsgBankQueryNicname)},
-  { 437, -1, sizeof(::MsgSubagentInformation)},
-  { 448, -1, sizeof(::MsgTtotalSubagentInformation)},
+  { 438, -1, sizeof(::MsgSubagentInformation)},
+  { 449, -1, sizeof(::MsgTtotalSubagentInformation)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -1559,15 +1560,15 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "\016.MsgBankRecord\"0\n\014MsgPhoneCode\022\021\n\tarea_"
   "code\030\001 \001(\t\022\r\n\005phone\030\002 \001(\t\",\n\007MsgItem\022\017\n\007"
   "item_id\030\001 \001(\005\022\020\n\010item_num\030\002 \001(\003\"\'\n\rMsgPl"
-  "ayerItem\022\026\n\004item\030\001 \003(\0132\010.MsgItem\":\n\023MsgB"
+  "ayerItem\022\026\n\004item\030\001 \003(\0132\010.MsgItem\"G\n\023MsgB"
   "ankQueryNicname\022\021\n\tret_Value\030\001 \001(\005\022\020\n\010ni"
-  "ckname\030\002 \001(\t\"\236\001\n\026MsgSubagentInformation\022"
-  "\026\n\016agent_nickname\030\001 \001(\t\022\025\n\ragent_user_id"
-  "\030\002 \001(\005\022\022\n\nagent_type\030\003 \001(\010\022\026\n\016total_shif"
-  "t_to\030\004 \001(\003\022\026\n\016total_roll_out\030\005 \001(\003\022\021\n\tvi"
-  "p_level\030\006 \001(\005\"K\n\034MsgTtotalSubagentInform"
-  "ation\022+\n\nagent_info\030\001 \003(\0132\027.MsgSubagentI"
-  "nformationb\006proto3"
+  "ckname\030\002 \001(\t\022\013\n\003tax\030\003 \001(\005\"\236\001\n\026MsgSubagen"
+  "tInformation\022\026\n\016agent_nickname\030\001 \001(\t\022\025\n\r"
+  "agent_user_id\030\002 \001(\005\022\022\n\nagent_type\030\003 \001(\010\022"
+  "\026\n\016total_shift_to\030\004 \001(\003\022\026\n\016total_roll_ou"
+  "t\030\005 \001(\003\022\021\n\tvip_level\030\006 \001(\005\"K\n\034MsgTtotalS"
+  "ubagentInformation\022+\n\nagent_info\030\001 \003(\0132\027"
+  ".MsgSubagentInformationb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Login_2eproto_deps[1] = {
 };
@@ -1624,7 +1625,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Login_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Login_2eproto = {
-  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 5178,
+  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 5191,
   &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 49, 0,
   schemas, file_default_instances, TableStruct_Login_2eproto::offsets,
   file_level_metadata_Login_2eproto, 49, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
@@ -15229,14 +15230,19 @@ MsgBankQueryNicname::MsgBankQueryNicname(const MsgBankQueryNicname& from)
     nickname_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_nickname(), 
       GetArena());
   }
-  ret_value_ = from.ret_value_;
+  ::memcpy(&ret_value_, &from.ret_value_,
+    static_cast<size_t>(reinterpret_cast<char*>(&tax_) -
+    reinterpret_cast<char*>(&ret_value_)) + sizeof(tax_));
   // @@protoc_insertion_point(copy_constructor:MsgBankQueryNicname)
 }
 
 void MsgBankQueryNicname::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgBankQueryNicname_Login_2eproto.base);
   nickname_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ret_value_ = 0;
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&ret_value_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&tax_) -
+      reinterpret_cast<char*>(&ret_value_)) + sizeof(tax_));
 }
 
 MsgBankQueryNicname::~MsgBankQueryNicname() {
@@ -15272,7 +15278,9 @@ void MsgBankQueryNicname::Clear() {
   (void) cached_has_bits;
 
   nickname_.ClearToEmpty();
-  ret_value_ = 0;
+  ::memset(&ret_value_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&tax_) -
+      reinterpret_cast<char*>(&ret_value_)) + sizeof(tax_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -15296,6 +15304,13 @@ const char* MsgBankQueryNicname::_InternalParse(const char* ptr, ::PROTOBUF_NAME
           auto str = _internal_mutable_nickname();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgBankQueryNicname.nickname"));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 tax = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          tax_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -15343,6 +15358,12 @@ failure:
         2, this->_internal_nickname(), target);
   }
 
+  // int32 tax = 3;
+  if (this->tax() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_tax(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -15371,6 +15392,13 @@ size_t MsgBankQueryNicname::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_ret_value());
+  }
+
+  // int32 tax = 3;
+  if (this->tax() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_tax());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -15410,6 +15438,9 @@ void MsgBankQueryNicname::MergeFrom(const MsgBankQueryNicname& from) {
   if (from.ret_value() != 0) {
     _internal_set_ret_value(from._internal_ret_value());
   }
+  if (from.tax() != 0) {
+    _internal_set_tax(from._internal_tax());
+  }
 }
 
 void MsgBankQueryNicname::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -15434,7 +15465,12 @@ void MsgBankQueryNicname::InternalSwap(MsgBankQueryNicname* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   nickname_.Swap(&other->nickname_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  swap(ret_value_, other->ret_value_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(MsgBankQueryNicname, tax_)
+      + sizeof(MsgBankQueryNicname::tax_)
+      - PROTOBUF_FIELD_OFFSET(MsgBankQueryNicname, ret_value_)>(
+          reinterpret_cast<char*>(&ret_value_),
+          reinterpret_cast<char*>(&other->ret_value_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MsgBankQueryNicname::GetMetadata() const {
