@@ -2032,6 +2032,7 @@ class TPMsgAddBetResp PROTOBUF_FINAL :
 
   enum : int {
     kAddScoreFieldNumber = 2,
+    kBetTypeFieldNumber = 3,
     kAddChairIdFieldNumber = 1,
   };
   // int64 add_score = 2;
@@ -2041,6 +2042,15 @@ class TPMsgAddBetResp PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::int64 _internal_add_score() const;
   void _internal_set_add_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int64 bet_type = 3;
+  void clear_bet_type();
+  ::PROTOBUF_NAMESPACE_ID::int64 bet_type() const;
+  void set_bet_type(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_bet_type() const;
+  void _internal_set_bet_type(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
   // int32 add_chair_id = 1;
@@ -2060,6 +2070,7 @@ class TPMsgAddBetResp PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int64 add_score_;
+  ::PROTOBUF_NAMESPACE_ID::int64 bet_type_;
   ::PROTOBUF_NAMESPACE_ID::int32 add_chair_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_TeenPatti_5fIndia_2eproto;
@@ -3861,6 +3872,26 @@ inline void TPMsgAddBetResp::_internal_set_add_score(::PROTOBUF_NAMESPACE_ID::in
 inline void TPMsgAddBetResp::set_add_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_add_score(value);
   // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgAddBetResp.add_score)
+}
+
+// int64 bet_type = 3;
+inline void TPMsgAddBetResp::clear_bet_type() {
+  bet_type_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 TPMsgAddBetResp::_internal_bet_type() const {
+  return bet_type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 TPMsgAddBetResp::bet_type() const {
+  // @@protoc_insertion_point(field_get:TeenPatti_India.TPMsgAddBetResp.bet_type)
+  return _internal_bet_type();
+}
+inline void TPMsgAddBetResp::_internal_set_bet_type(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  bet_type_ = value;
+}
+inline void TPMsgAddBetResp::set_bet_type(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_bet_type(value);
+  // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgAddBetResp.bet_type)
 }
 
 // -------------------------------------------------------------------

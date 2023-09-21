@@ -59,7 +59,7 @@ enum ETPMsgIDSubGame
 	MsgIDSubGame_AddBetResp				= 6;	//玩家下注(TPMsgAddBetResp)
 	MsgIDSubGame_CompareCardResp		= 7;	//玩家请求比牌(TPMsgCompareCardResp)
 	MsgIDSubGame_CompareRetResp			= 8;	//玩家比牌结果(TPMsgCompareCardRetResp)
-	MsgIDSubGame_GameResultResp			= 9;	//玩家下注记录(TPMsgGameResultResp)
+	MsgIDSubGame_GameResultResp			= 9;	//玩家下注记录(TPMsgGameResult)
 	MsgIDSubGame_NotifyStateResp		= 10;	//桌子状态(TPMsgTableState)
 
 	/////////////////////////机器人消息///////////////////////
@@ -167,6 +167,7 @@ message TPMsgAddBetResp
 {
 	int32				add_chair_id	= 1;	//下注玩家椅子号
 	int64				add_score		= 2;	//下注金额
+	int64				bet_type		= 3;	//下注行为类型  1跟注  2 加注 3比牌
 }
 
 //玩家请求比牌
