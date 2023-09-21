@@ -3273,7 +3273,7 @@ namespace TeenPattiIndia {
     public const int BetTypeFieldNumber = 3;
     private long betType_;
     /// <summary>
-    ///下注行为类型  1跟注  2 加注 3比牌
+    ///下注行为类型  ETPGameAction
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long BetType {
