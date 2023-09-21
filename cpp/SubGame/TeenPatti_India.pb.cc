@@ -435,7 +435,7 @@ const char descriptor_table_protodef_TeenPatti_5fIndia_2eproto[] PROTOBUF_SECTIO
   "t_ime\030\002 \001(\005\"\037\n\016TPMsgHandCards\022\r\n\005cards\030\001"
   " \003(\005\"\302\001\n\017TPMsgPlayerInfo\022\020\n\010chair_id\030\001 \001"
   "(\005\022\020\n\010ming_zhu\030\002 \001(\010\022\023\n\013play_status\030\003 \001("
-  "\005\022\022\n\nplayer_bet\030\004 \001(\005\022\021\n\tcard_type\030\005 \001(\005"
+  "\005\022\022\n\nplayer_bet\030\004 \001(\003\022\021\n\tcard_type\030\005 \001(\005"
   "\022\014\n\004gold\030\006 \001(\003\022\020\n\010win_gold\030\007 \001(\003\022/\n\006hand"
   "ls\030\010 \001(\0132\037.TeenPatti_India.TPMsgHandCard"
   "s\"\331\002\n\016TPMsgSceneInfo\022\021\n\tmax_score\030\001 \001(\003\022"
@@ -453,7 +453,7 @@ const char descriptor_table_protodef_TeenPatti_5fIndia_2eproto[] PROTOBUF_SECTIO
   "cell_score\030\006 \001(\003\022\027\n\017table_max_score\030\007 \001("
   "\003\"h\n\025TPMsgNotifyActionResp\022\024\n\014cur_chair_"
   "id\030\001 \001(\005\022\021\n\tcur_times\030\002 \001(\005\022\023\n\013current_a"
-  "ct\030\003 \001(\005\022\021\n\toper_time\030\004 \001(\003\"R\n\013TPMsgActi"
+  "ct\030\003 \001(\005\022\021\n\toper_time\030\004 \001(\005\"R\n\013TPMsgActi"
   "on\022\013\n\003act\030\001 \001(\005\022\021\n\tbet_score\030\002 \001(\003\022\024\n\014co"
   "mpare_user\030\003 \001(\003\022\r\n\005is_ok\030\004 \001(\010\"#\n\017TPMsg"
   "GiveUpResp\022\020\n\010chair_id\030\001 \001(\005\"4\n\021TPMsgLoo"
@@ -1091,8 +1091,8 @@ TPMsgPlayerInfo::TPMsgPlayerInfo(const TPMsgPlayerInfo& from)
     handls_ = nullptr;
   }
   ::memcpy(&chair_id_, &from.chair_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&card_type_) -
-    reinterpret_cast<char*>(&chair_id_)) + sizeof(card_type_));
+    static_cast<size_t>(reinterpret_cast<char*>(&win_gold_) -
+    reinterpret_cast<char*>(&chair_id_)) + sizeof(win_gold_));
   // @@protoc_insertion_point(copy_constructor:TeenPatti_India.TPMsgPlayerInfo)
 }
 
@@ -1100,8 +1100,8 @@ void TPMsgPlayerInfo::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_TPMsgPlayerInfo_TeenPatti_5fIndia_2eproto.base);
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&handls_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&card_type_) -
-      reinterpret_cast<char*>(&handls_)) + sizeof(card_type_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&win_gold_) -
+      reinterpret_cast<char*>(&handls_)) + sizeof(win_gold_));
 }
 
 TPMsgPlayerInfo::~TPMsgPlayerInfo() {
@@ -1141,8 +1141,8 @@ void TPMsgPlayerInfo::Clear() {
   }
   handls_ = nullptr;
   ::memset(&chair_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&card_type_) -
-      reinterpret_cast<char*>(&chair_id_)) + sizeof(card_type_));
+      reinterpret_cast<char*>(&win_gold_) -
+      reinterpret_cast<char*>(&chair_id_)) + sizeof(win_gold_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -1174,7 +1174,7 @@ const char* TPMsgPlayerInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 player_bet = 4;
+      // int64 player_bet = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           player_bet_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
@@ -1255,10 +1255,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_play_status(), target);
   }
 
-  // int32 player_bet = 4;
+  // int64 player_bet = 4;
   if (this->player_bet() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_player_bet(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_player_bet(), target);
   }
 
   // int32 card_type = 5;
@@ -1322,6 +1322,13 @@ size_t TPMsgPlayerInfo::ByteSizeLong() const {
     total_size += 1 + 1;
   }
 
+  // int64 player_bet = 4;
+  if (this->player_bet() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_player_bet());
+  }
+
   // int32 play_status = 3;
   if (this->play_status() != 0) {
     total_size += 1 +
@@ -1329,11 +1336,11 @@ size_t TPMsgPlayerInfo::ByteSizeLong() const {
         this->_internal_play_status());
   }
 
-  // int32 player_bet = 4;
-  if (this->player_bet() != 0) {
+  // int32 card_type = 5;
+  if (this->card_type() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_player_bet());
+        this->_internal_card_type());
   }
 
   // int64 gold = 6;
@@ -1348,13 +1355,6 @@ size_t TPMsgPlayerInfo::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_win_gold());
-  }
-
-  // int32 card_type = 5;
-  if (this->card_type() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_card_type());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1397,20 +1397,20 @@ void TPMsgPlayerInfo::MergeFrom(const TPMsgPlayerInfo& from) {
   if (from.ming_zhu() != 0) {
     _internal_set_ming_zhu(from._internal_ming_zhu());
   }
+  if (from.player_bet() != 0) {
+    _internal_set_player_bet(from._internal_player_bet());
+  }
   if (from.play_status() != 0) {
     _internal_set_play_status(from._internal_play_status());
   }
-  if (from.player_bet() != 0) {
-    _internal_set_player_bet(from._internal_player_bet());
+  if (from.card_type() != 0) {
+    _internal_set_card_type(from._internal_card_type());
   }
   if (from.gold() != 0) {
     _internal_set_gold(from._internal_gold());
   }
   if (from.win_gold() != 0) {
     _internal_set_win_gold(from._internal_win_gold());
-  }
-  if (from.card_type() != 0) {
-    _internal_set_card_type(from._internal_card_type());
   }
 }
 
@@ -1436,8 +1436,8 @@ void TPMsgPlayerInfo::InternalSwap(TPMsgPlayerInfo* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(TPMsgPlayerInfo, card_type_)
-      + sizeof(TPMsgPlayerInfo::card_type_)
+      PROTOBUF_FIELD_OFFSET(TPMsgPlayerInfo, win_gold_)
+      + sizeof(TPMsgPlayerInfo::win_gold_)
       - PROTOBUF_FIELD_OFFSET(TPMsgPlayerInfo, handls_)>(
           reinterpret_cast<char*>(&handls_),
           reinterpret_cast<char*>(&other->handls_));
@@ -2323,16 +2323,16 @@ TPMsgNotifyActionResp::TPMsgNotifyActionResp(const TPMsgNotifyActionResp& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&cur_chair_id_, &from.cur_chair_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&current_act_) -
-    reinterpret_cast<char*>(&cur_chair_id_)) + sizeof(current_act_));
+    static_cast<size_t>(reinterpret_cast<char*>(&oper_time_) -
+    reinterpret_cast<char*>(&cur_chair_id_)) + sizeof(oper_time_));
   // @@protoc_insertion_point(copy_constructor:TeenPatti_India.TPMsgNotifyActionResp)
 }
 
 void TPMsgNotifyActionResp::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&cur_chair_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&current_act_) -
-      reinterpret_cast<char*>(&cur_chair_id_)) + sizeof(current_act_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&oper_time_) -
+      reinterpret_cast<char*>(&cur_chair_id_)) + sizeof(oper_time_));
 }
 
 TPMsgNotifyActionResp::~TPMsgNotifyActionResp() {
@@ -2367,8 +2367,8 @@ void TPMsgNotifyActionResp::Clear() {
   (void) cached_has_bits;
 
   ::memset(&cur_chair_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&current_act_) -
-      reinterpret_cast<char*>(&cur_chair_id_)) + sizeof(current_act_));
+      reinterpret_cast<char*>(&oper_time_) -
+      reinterpret_cast<char*>(&cur_chair_id_)) + sizeof(oper_time_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -2400,7 +2400,7 @@ const char* TPMsgNotifyActionResp::_InternalParse(const char* ptr, ::PROTOBUF_NA
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int64 oper_time = 4;
+      // int32 oper_time = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           oper_time_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
@@ -2453,10 +2453,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_current_act(), target);
   }
 
-  // int64 oper_time = 4;
+  // int32 oper_time = 4;
   if (this->oper_time() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_oper_time(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_oper_time(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -2489,18 +2489,18 @@ size_t TPMsgNotifyActionResp::ByteSizeLong() const {
         this->_internal_cur_times());
   }
 
-  // int64 oper_time = 4;
-  if (this->oper_time() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_oper_time());
-  }
-
   // int32 current_act = 3;
   if (this->current_act() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_current_act());
+  }
+
+  // int32 oper_time = 4;
+  if (this->oper_time() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_oper_time());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -2540,11 +2540,11 @@ void TPMsgNotifyActionResp::MergeFrom(const TPMsgNotifyActionResp& from) {
   if (from.cur_times() != 0) {
     _internal_set_cur_times(from._internal_cur_times());
   }
-  if (from.oper_time() != 0) {
-    _internal_set_oper_time(from._internal_oper_time());
-  }
   if (from.current_act() != 0) {
     _internal_set_current_act(from._internal_current_act());
+  }
+  if (from.oper_time() != 0) {
+    _internal_set_oper_time(from._internal_oper_time());
   }
 }
 
@@ -2570,8 +2570,8 @@ void TPMsgNotifyActionResp::InternalSwap(TPMsgNotifyActionResp* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(TPMsgNotifyActionResp, current_act_)
-      + sizeof(TPMsgNotifyActionResp::current_act_)
+      PROTOBUF_FIELD_OFFSET(TPMsgNotifyActionResp, oper_time_)
+      + sizeof(TPMsgNotifyActionResp::oper_time_)
       - PROTOBUF_FIELD_OFFSET(TPMsgNotifyActionResp, cur_chair_id_)>(
           reinterpret_cast<char*>(&cur_chair_id_),
           reinterpret_cast<char*>(&other->cur_chair_id_));

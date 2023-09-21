@@ -29,7 +29,7 @@ namespace TeenPattiIndia {
             "CgdvdXRfaW1lGAIgASgFIh8KDlRQTXNnSGFuZENhcmRzEg0KBWNhcmRzGAEg",
             "AygFIsIBCg9UUE1zZ1BsYXllckluZm8SEAoIY2hhaXJfaWQYASABKAUSEAoI",
             "bWluZ196aHUYAiABKAgSEwoLcGxheV9zdGF0dXMYAyABKAUSEgoKcGxheWVy",
-            "X2JldBgEIAEoBRIRCgljYXJkX3R5cGUYBSABKAUSDAoEZ29sZBgGIAEoAxIQ",
+            "X2JldBgEIAEoAxIRCgljYXJkX3R5cGUYBSABKAUSDAoEZ29sZBgGIAEoAxIQ",
             "Cgh3aW5fZ29sZBgHIAEoAxIvCgZoYW5kbHMYCCABKAsyHy5UZWVuUGF0dGlf",
             "SW5kaWEuVFBNc2dIYW5kQ2FyZHMi2QIKDlRQTXNnU2NlbmVJbmZvEhEKCW1h",
             "eF9zY29yZRgBIAEoAxIXCg90YWJsZV9tYXhfc2NvcmUYAiABKAMSEgoKY2Vs",
@@ -45,7 +45,7 @@ namespace TeenPattiIndia {
             "EhIKCmNlbGxfc2NvcmUYBiABKAMSFwoPdGFibGVfbWF4X3Njb3JlGAcgASgD",
             "ImgKFVRQTXNnTm90aWZ5QWN0aW9uUmVzcBIUCgxjdXJfY2hhaXJfaWQYASAB",
             "KAUSEQoJY3VyX3RpbWVzGAIgASgFEhMKC2N1cnJlbnRfYWN0GAMgASgFEhEK",
-            "CW9wZXJfdGltZRgEIAEoAyJSCgtUUE1zZ0FjdGlvbhILCgNhY3QYASABKAUS",
+            "CW9wZXJfdGltZRgEIAEoBSJSCgtUUE1zZ0FjdGlvbhILCgNhY3QYASABKAUS",
             "EQoJYmV0X3Njb3JlGAIgASgDEhQKDGNvbXBhcmVfdXNlchgDIAEoAxINCgVp",
             "c19vaxgEIAEoCCIjCg9UUE1zZ0dpdmVVcFJlc3ASEAoIY2hhaXJfaWQYASAB",
             "KAUiNAoRVFBNc2dMb29rQ2FyZFJlc3ASEAoIY2hhaXJfaWQYASABKAUSDQoF",
@@ -771,12 +771,12 @@ namespace TeenPattiIndia {
 
     /// <summary>Field number for the "player_bet" field.</summary>
     public const int PlayerBetFieldNumber = 4;
-    private int playerBet_;
+    private long playerBet_;
     /// <summary>
     ///玩家投注总和
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int PlayerBet {
+    public long PlayerBet {
       get { return playerBet_; }
       set {
         playerBet_ = value;
@@ -869,7 +869,7 @@ namespace TeenPattiIndia {
       if (ChairId != 0) hash ^= ChairId.GetHashCode();
       if (MingZhu != false) hash ^= MingZhu.GetHashCode();
       if (PlayStatus != 0) hash ^= PlayStatus.GetHashCode();
-      if (PlayerBet != 0) hash ^= PlayerBet.GetHashCode();
+      if (PlayerBet != 0L) hash ^= PlayerBet.GetHashCode();
       if (CardType != 0) hash ^= CardType.GetHashCode();
       if (Gold != 0L) hash ^= Gold.GetHashCode();
       if (WinGold != 0L) hash ^= WinGold.GetHashCode();
@@ -902,9 +902,9 @@ namespace TeenPattiIndia {
         output.WriteRawTag(24);
         output.WriteInt32(PlayStatus);
       }
-      if (PlayerBet != 0) {
+      if (PlayerBet != 0L) {
         output.WriteRawTag(32);
-        output.WriteInt32(PlayerBet);
+        output.WriteInt64(PlayerBet);
       }
       if (CardType != 0) {
         output.WriteRawTag(40);
@@ -943,9 +943,9 @@ namespace TeenPattiIndia {
         output.WriteRawTag(24);
         output.WriteInt32(PlayStatus);
       }
-      if (PlayerBet != 0) {
+      if (PlayerBet != 0L) {
         output.WriteRawTag(32);
-        output.WriteInt32(PlayerBet);
+        output.WriteInt64(PlayerBet);
       }
       if (CardType != 0) {
         output.WriteRawTag(40);
@@ -981,8 +981,8 @@ namespace TeenPattiIndia {
       if (PlayStatus != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(PlayStatus);
       }
-      if (PlayerBet != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PlayerBet);
+      if (PlayerBet != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(PlayerBet);
       }
       if (CardType != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(CardType);
@@ -1016,7 +1016,7 @@ namespace TeenPattiIndia {
       if (other.PlayStatus != 0) {
         PlayStatus = other.PlayStatus;
       }
-      if (other.PlayerBet != 0) {
+      if (other.PlayerBet != 0L) {
         PlayerBet = other.PlayerBet;
       }
       if (other.CardType != 0) {
@@ -1061,7 +1061,7 @@ namespace TeenPattiIndia {
             break;
           }
           case 32: {
-            PlayerBet = input.ReadInt32();
+            PlayerBet = input.ReadInt64();
             break;
           }
           case 40: {
@@ -1110,7 +1110,7 @@ namespace TeenPattiIndia {
             break;
           }
           case 32: {
-            PlayerBet = input.ReadInt32();
+            PlayerBet = input.ReadInt64();
             break;
           }
           case 40: {
@@ -2273,7 +2273,7 @@ namespace TeenPattiIndia {
     public const int CurChairIdFieldNumber = 1;
     private int curChairId_;
     /// <summary>
-    ///下个操作玩家椅子号
+    ///操作玩家椅子号
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CurChairId {
@@ -2313,12 +2313,12 @@ namespace TeenPattiIndia {
 
     /// <summary>Field number for the "oper_time" field.</summary>
     public const int OperTimeFieldNumber = 4;
-    private long operTime_;
+    private int operTime_;
     /// <summary>
     ///操作时间
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long OperTime {
+    public int OperTime {
       get { return operTime_; }
       set {
         operTime_ = value;
@@ -2351,7 +2351,7 @@ namespace TeenPattiIndia {
       if (CurChairId != 0) hash ^= CurChairId.GetHashCode();
       if (CurTimes != 0) hash ^= CurTimes.GetHashCode();
       if (CurrentAct != 0) hash ^= CurrentAct.GetHashCode();
-      if (OperTime != 0L) hash ^= OperTime.GetHashCode();
+      if (OperTime != 0) hash ^= OperTime.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2380,9 +2380,9 @@ namespace TeenPattiIndia {
         output.WriteRawTag(24);
         output.WriteInt32(CurrentAct);
       }
-      if (OperTime != 0L) {
+      if (OperTime != 0) {
         output.WriteRawTag(32);
-        output.WriteInt64(OperTime);
+        output.WriteInt32(OperTime);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -2405,9 +2405,9 @@ namespace TeenPattiIndia {
         output.WriteRawTag(24);
         output.WriteInt32(CurrentAct);
       }
-      if (OperTime != 0L) {
+      if (OperTime != 0) {
         output.WriteRawTag(32);
-        output.WriteInt64(OperTime);
+        output.WriteInt32(OperTime);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -2427,8 +2427,8 @@ namespace TeenPattiIndia {
       if (CurrentAct != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(CurrentAct);
       }
-      if (OperTime != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(OperTime);
+      if (OperTime != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(OperTime);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2450,7 +2450,7 @@ namespace TeenPattiIndia {
       if (other.CurrentAct != 0) {
         CurrentAct = other.CurrentAct;
       }
-      if (other.OperTime != 0L) {
+      if (other.OperTime != 0) {
         OperTime = other.OperTime;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -2480,7 +2480,7 @@ namespace TeenPattiIndia {
             break;
           }
           case 32: {
-            OperTime = input.ReadInt64();
+            OperTime = input.ReadInt32();
             break;
           }
         }
@@ -2510,7 +2510,7 @@ namespace TeenPattiIndia {
             break;
           }
           case 32: {
-            OperTime = input.ReadInt64();
+            OperTime = input.ReadInt32();
             break;
           }
         }
