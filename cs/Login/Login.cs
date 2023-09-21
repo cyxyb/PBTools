@@ -130,14 +130,14 @@ public static partial class LoginReflection {
           "GAEgAygLMg4uTXNnQmFua1JlY29yZCIwCgxNc2dQaG9uZUNvZGUSEQoJYXJl",
           "YV9jb2RlGAEgASgJEg0KBXBob25lGAIgASgJIiwKB01zZ0l0ZW0SDwoHaXRl",
           "bV9pZBgBIAEoBRIQCghpdGVtX251bRgCIAEoAyInCg1Nc2dQbGF5ZXJJdGVt",
-          "EhYKBGl0ZW0YASADKAsyCC5Nc2dJdGVtIkcKE01zZ0JhbmtRdWVyeU5pY25h",
-          "bWUSEQoJcmV0X1ZhbHVlGAEgASgFEhAKCG5pY2tuYW1lGAIgASgJEgsKA3Rh",
-          "eBgDIAEoBSKeAQoWTXNnU3ViYWdlbnRJbmZvcm1hdGlvbhIWCg5hZ2VudF9u",
-          "aWNrbmFtZRgBIAEoCRIVCg1hZ2VudF91c2VyX2lkGAIgASgFEhIKCmFnZW50",
-          "X3R5cGUYAyABKAgSFgoOdG90YWxfc2hpZnRfdG8YBCABKAMSFgoOdG90YWxf",
-          "cm9sbF9vdXQYBSABKAMSEQoJdmlwX2xldmVsGAYgASgFIksKHE1zZ1R0b3Rh",
-          "bFN1YmFnZW50SW5mb3JtYXRpb24SKwoKYWdlbnRfaW5mbxgBIAMoCzIXLk1z",
-          "Z1N1YmFnZW50SW5mb3JtYXRpb25iBnByb3RvMw=="));
+          "EhYKBGl0ZW0YASADKAsyCC5Nc2dJdGVtIkgKFE1zZ0JhbmtRdWVyeU5pY2tu",
+          "YW1lEhEKCXJldF9WYWx1ZRgBIAEoBRIQCghuaWNrbmFtZRgCIAEoCRILCgN0",
+          "YXgYAyABKAUingEKFk1zZ1N1YmFnZW50SW5mb3JtYXRpb24SFgoOYWdlbnRf",
+          "bmlja25hbWUYASABKAkSFQoNYWdlbnRfdXNlcl9pZBgCIAEoBRISCgphZ2Vu",
+          "dF90eXBlGAMgASgIEhYKDnRvdGFsX3NoaWZ0X3RvGAQgASgDEhYKDnRvdGFs",
+          "X3JvbGxfb3V0GAUgASgDEhEKCXZpcF9sZXZlbBgGIAEoBSJLChxNc2dUdG90",
+          "YWxTdWJhZ2VudEluZm9ybWF0aW9uEisKCmFnZW50X2luZm8YASADKAsyFy5N",
+          "c2dTdWJhZ2VudEluZm9ybWF0aW9uYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -187,7 +187,7 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPhoneCode), global::MsgPhoneCode.Parser, new[]{ "AreaCode", "Phone" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgItem), global::MsgItem.Parser, new[]{ "ItemId", "ItemNum" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPlayerItem), global::MsgPlayerItem.Parser, new[]{ "Item" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankQueryNicname), global::MsgBankQueryNicname.Parser, new[]{ "RetValue", "Nickname", "Tax" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankQueryNickname), global::MsgBankQueryNickname.Parser, new[]{ "RetValue", "Nickname", "Tax" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgSubagentInformation), global::MsgSubagentInformation.Parser, new[]{ "AgentNickname", "AgentUserId", "AgentType", "TotalShiftTo", "TotalRollOut", "VipLevel" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTtotalSubagentInformation), global::MsgTtotalSubagentInformation.Parser, new[]{ "AgentInfo" }, null, null, null, null)
         }));
@@ -14188,15 +14188,15 @@ public sealed partial class MsgPlayerItem : pb::IMessage<MsgPlayerItem>
 /// <summary>
 ///查询玩家转账对象
 /// </summary>
-public sealed partial class MsgBankQueryNicname : pb::IMessage<MsgBankQueryNicname>
+public sealed partial class MsgBankQueryNickname : pb::IMessage<MsgBankQueryNickname>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     , pb::IBufferMessage
 #endif
 {
-  private static readonly pb::MessageParser<MsgBankQueryNicname> _parser = new pb::MessageParser<MsgBankQueryNicname>(() => new MsgBankQueryNicname());
+  private static readonly pb::MessageParser<MsgBankQueryNickname> _parser = new pb::MessageParser<MsgBankQueryNickname>(() => new MsgBankQueryNickname());
   private pb::UnknownFieldSet _unknownFields;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pb::MessageParser<MsgBankQueryNicname> Parser { get { return _parser; } }
+  public static pb::MessageParser<MsgBankQueryNickname> Parser { get { return _parser; } }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
@@ -14209,14 +14209,14 @@ public sealed partial class MsgBankQueryNicname : pb::IMessage<MsgBankQueryNicna
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public MsgBankQueryNicname() {
+  public MsgBankQueryNickname() {
     OnConstruction();
   }
 
   partial void OnConstruction();
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public MsgBankQueryNicname(MsgBankQueryNicname other) : this() {
+  public MsgBankQueryNickname(MsgBankQueryNickname other) : this() {
     retValue_ = other.retValue_;
     nickname_ = other.nickname_;
     tax_ = other.tax_;
@@ -14224,8 +14224,8 @@ public sealed partial class MsgBankQueryNicname : pb::IMessage<MsgBankQueryNicna
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public MsgBankQueryNicname Clone() {
-    return new MsgBankQueryNicname(this);
+  public MsgBankQueryNickname Clone() {
+    return new MsgBankQueryNickname(this);
   }
 
   /// <summary>Field number for the "ret_Value" field.</summary>
@@ -14272,11 +14272,11 @@ public sealed partial class MsgBankQueryNicname : pb::IMessage<MsgBankQueryNicna
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
-    return Equals(other as MsgBankQueryNicname);
+    return Equals(other as MsgBankQueryNickname);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Equals(MsgBankQueryNicname other) {
+  public bool Equals(MsgBankQueryNickname other) {
     if (ReferenceEquals(other, null)) {
       return false;
     }
@@ -14369,7 +14369,7 @@ public sealed partial class MsgBankQueryNicname : pb::IMessage<MsgBankQueryNicna
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(MsgBankQueryNicname other) {
+  public void MergeFrom(MsgBankQueryNickname other) {
     if (other == null) {
       return;
     }

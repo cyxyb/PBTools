@@ -413,8 +413,9 @@ message MsgPlayerItem
 	repeated MsgItem item			= 1;	//玩家道具
 };
 
-message MsgBankQueryNicname
-{//查询玩家转账对象
+//查询玩家转账对象
+message MsgBankQueryNickname
+{
 	int32 ret_Value = 1;//返回值
 	string nickname = 2;//昵称
 	int32 tax 		= 3;//税收值 百分比
