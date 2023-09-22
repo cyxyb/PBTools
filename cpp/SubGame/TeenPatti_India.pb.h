@@ -2347,15 +2347,17 @@ class TPMsgCompareCardRetResp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kCompareCardsFieldNumber = 6,
-    kPassiveCardsFieldNumber = 7,
+    kCompareCardsFieldNumber = 8,
+    kPassiveCardsFieldNumber = 9,
     kCurrentChairIdFieldNumber = 1,
     kCurrentActFieldNumber = 2,
     kLostIdFieldNumber = 3,
     kCompareIdFieldNumber = 4,
     kPassiveIdFieldNumber = 5,
+    kCompareTypeFieldNumber = 6,
+    kPassiveTypeFieldNumber = 7,
   };
-  // repeated int32 compare_cards = 6;
+  // repeated int32 compare_cards = 8;
   int compare_cards_size() const;
   private:
   int _internal_compare_cards_size() const;
@@ -2377,7 +2379,7 @@ class TPMsgCompareCardRetResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_compare_cards();
 
-  // repeated int32 passive_cards = 7;
+  // repeated int32 passive_cards = 9;
   int passive_cards_size() const;
   private:
   int _internal_passive_cards_size() const;
@@ -2444,6 +2446,24 @@ class TPMsgCompareCardRetResp PROTOBUF_FINAL :
   void _internal_set_passive_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 compare_type = 6;
+  void clear_compare_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 compare_type() const;
+  void set_compare_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_compare_type() const;
+  void _internal_set_compare_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 passive_type = 7;
+  void clear_passive_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 passive_type() const;
+  void set_passive_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_passive_type() const;
+  void _internal_set_passive_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:TeenPatti_India.TPMsgCompareCardRetResp)
  private:
   class _Internal;
@@ -2460,6 +2480,8 @@ class TPMsgCompareCardRetResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 lost_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 compare_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 passive_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 compare_type_;
+  ::PROTOBUF_NAMESPACE_ID::int32 passive_type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_TeenPatti_5fIndia_2eproto;
 };
@@ -4098,7 +4120,47 @@ inline void TPMsgCompareCardRetResp::set_passive_id(::PROTOBUF_NAMESPACE_ID::int
   // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgCompareCardRetResp.passive_id)
 }
 
-// repeated int32 compare_cards = 6;
+// int32 compare_type = 6;
+inline void TPMsgCompareCardRetResp::clear_compare_type() {
+  compare_type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 TPMsgCompareCardRetResp::_internal_compare_type() const {
+  return compare_type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 TPMsgCompareCardRetResp::compare_type() const {
+  // @@protoc_insertion_point(field_get:TeenPatti_India.TPMsgCompareCardRetResp.compare_type)
+  return _internal_compare_type();
+}
+inline void TPMsgCompareCardRetResp::_internal_set_compare_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  compare_type_ = value;
+}
+inline void TPMsgCompareCardRetResp::set_compare_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_compare_type(value);
+  // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgCompareCardRetResp.compare_type)
+}
+
+// int32 passive_type = 7;
+inline void TPMsgCompareCardRetResp::clear_passive_type() {
+  passive_type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 TPMsgCompareCardRetResp::_internal_passive_type() const {
+  return passive_type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 TPMsgCompareCardRetResp::passive_type() const {
+  // @@protoc_insertion_point(field_get:TeenPatti_India.TPMsgCompareCardRetResp.passive_type)
+  return _internal_passive_type();
+}
+inline void TPMsgCompareCardRetResp::_internal_set_passive_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  passive_type_ = value;
+}
+inline void TPMsgCompareCardRetResp::set_passive_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_passive_type(value);
+  // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgCompareCardRetResp.passive_type)
+}
+
+// repeated int32 compare_cards = 8;
 inline int TPMsgCompareCardRetResp::_internal_compare_cards_size() const {
   return compare_cards_.size();
 }
@@ -4145,7 +4207,7 @@ TPMsgCompareCardRetResp::mutable_compare_cards() {
   return _internal_mutable_compare_cards();
 }
 
-// repeated int32 passive_cards = 7;
+// repeated int32 passive_cards = 9;
 inline int TPMsgCompareCardRetResp::_internal_passive_cards_size() const {
   return passive_cards_.size();
 }
