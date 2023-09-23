@@ -1870,11 +1870,12 @@ class TPMsgLookCardResp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kCardsFieldNumber = 3,
+    kCardsFieldNumber = 4,
     kChairIdFieldNumber = 1,
     kCardTypeFieldNumber = 2,
+    kNewActFieldNumber = 3,
   };
-  // repeated int32 cards = 3;
+  // repeated int32 cards = 4;
   int cards_size() const;
   private:
   int _internal_cards_size() const;
@@ -1914,6 +1915,15 @@ class TPMsgLookCardResp PROTOBUF_FINAL :
   void _internal_set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 new_act = 3;
+  void clear_new_act();
+  ::PROTOBUF_NAMESPACE_ID::int32 new_act() const;
+  void set_new_act(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_new_act() const;
+  void _internal_set_new_act(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:TeenPatti_India.TPMsgLookCardResp)
  private:
   class _Internal;
@@ -1925,6 +1935,7 @@ class TPMsgLookCardResp PROTOBUF_FINAL :
   mutable std::atomic<int> _cards_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 card_type_;
+  ::PROTOBUF_NAMESPACE_ID::int32 new_act_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_TeenPatti_5fIndia_2eproto;
 };
@@ -3861,7 +3872,27 @@ inline void TPMsgLookCardResp::set_card_type(::PROTOBUF_NAMESPACE_ID::int32 valu
   // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgLookCardResp.card_type)
 }
 
-// repeated int32 cards = 3;
+// int32 new_act = 3;
+inline void TPMsgLookCardResp::clear_new_act() {
+  new_act_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 TPMsgLookCardResp::_internal_new_act() const {
+  return new_act_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 TPMsgLookCardResp::new_act() const {
+  // @@protoc_insertion_point(field_get:TeenPatti_India.TPMsgLookCardResp.new_act)
+  return _internal_new_act();
+}
+inline void TPMsgLookCardResp::_internal_set_new_act(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  new_act_ = value;
+}
+inline void TPMsgLookCardResp::set_new_act(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_new_act(value);
+  // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgLookCardResp.new_act)
+}
+
+// repeated int32 cards = 4;
 inline int TPMsgLookCardResp::_internal_cards_size() const {
   return cards_.size();
 }

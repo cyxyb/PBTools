@@ -161,7 +161,8 @@ message TPMsgLookCardResp
 {
 	int32				chair_id		= 1;	//玩家椅子号
 	int32				card_type		= 2;	//牌型
-	repeated int32		cards			= 3;	//手牌
+	int32				new_act			= 3;	//最新操作码
+	repeated int32		cards			= 4;	//手牌
 }
 
 message TPMsgAddBetResp
