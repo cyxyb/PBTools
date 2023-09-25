@@ -321,6 +321,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TeenPatti_5fIndia_2eproto::off
   PROTOBUF_FIELD_OFFSET(::TeenPatti_India::TPMsgGameStartResp, max_blind_),
   PROTOBUF_FIELD_OFFSET(::TeenPatti_India::TPMsgGameStartResp, cell_score_),
   PROTOBUF_FIELD_OFFSET(::TeenPatti_India::TPMsgGameStartResp, table_max_score_),
+  PROTOBUF_FIELD_OFFSET(::TeenPatti_India::TPMsgGameStartResp, play_index_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::TeenPatti_India::TPMsgNotifyActionResp, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -407,15 +408,15 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 13, -1, sizeof(::TeenPatti_India::TPMsgPlayerInfo)},
   { 26, -1, sizeof(::TeenPatti_India::TPMsgSceneInfo)},
   { 45, -1, sizeof(::TeenPatti_India::TPMsgGameStartResp)},
-  { 57, -1, sizeof(::TeenPatti_India::TPMsgNotifyActionResp)},
-  { 66, -1, sizeof(::TeenPatti_India::TPMsgAction)},
-  { 75, -1, sizeof(::TeenPatti_India::TPMsgGiveUpResp)},
-  { 81, -1, sizeof(::TeenPatti_India::TPMsgLookCardResp)},
-  { 90, -1, sizeof(::TeenPatti_India::TPMsgAddBetResp)},
-  { 98, -1, sizeof(::TeenPatti_India::TPMsgCompareCardResp)},
-  { 105, -1, sizeof(::TeenPatti_India::TPMsgCompareCardRetResp)},
-  { 119, -1, sizeof(::TeenPatti_India::TPMsgGameResult)},
-  { 129, -1, sizeof(::TeenPatti_India::TPMSgNotifyPlayerAct)},
+  { 58, -1, sizeof(::TeenPatti_India::TPMsgNotifyActionResp)},
+  { 67, -1, sizeof(::TeenPatti_India::TPMsgAction)},
+  { 76, -1, sizeof(::TeenPatti_India::TPMsgGiveUpResp)},
+  { 82, -1, sizeof(::TeenPatti_India::TPMsgLookCardResp)},
+  { 91, -1, sizeof(::TeenPatti_India::TPMsgAddBetResp)},
+  { 99, -1, sizeof(::TeenPatti_India::TPMsgCompareCardResp)},
+  { 106, -1, sizeof(::TeenPatti_India::TPMsgCompareCardRetResp)},
+  { 120, -1, sizeof(::TeenPatti_India::TPMsgGameResult)},
+  { 130, -1, sizeof(::TeenPatti_India::TPMSgNotifyPlayerAct)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -452,59 +453,60 @@ const char descriptor_table_protodef_TeenPatti_5fIndia_2eproto[] PROTOBUF_SECTIO
   "_id\030\t \001(\005\022\025\n\rcur_chair_act\030\n \001(\005\022\020\n\010out_"
   "time\030\013 \001(\005\022\024\n\014compare_user\030\014 \001(\005\022\023\n\013comp"
   "are_win\030\r \001(\005\0226\n\014player_infos\030\016 \003(\0132 .Te"
-  "enPatti_India.TPMsgPlayerInfo\"\251\001\n\022TPMsgG"
+  "enPatti_India.TPMsgPlayerInfo\"\275\001\n\022TPMsgG"
   "ameStartResp\022\024\n\014cur_chair_id\030\001 \001(\005\022\021\n\tcu"
   "r_times\030\002 \001(\005\022\027\n\017banker_chair_id\030\003 \001(\005\022\021"
   "\n\tmax_score\030\004 \001(\003\022\021\n\tmax_blind\030\005 \001(\003\022\022\n\n"
   "cell_score\030\006 \001(\003\022\027\n\017table_max_score\030\007 \001("
-  "\003\"h\n\025TPMsgNotifyActionResp\022\024\n\014cur_chair_"
-  "id\030\001 \001(\005\022\021\n\tcur_times\030\002 \001(\005\022\023\n\013current_a"
-  "ct\030\003 \001(\005\022\021\n\toper_time\030\004 \001(\005\"R\n\013TPMsgActi"
-  "on\022\013\n\003act\030\001 \001(\005\022\021\n\tbet_score\030\002 \001(\003\022\024\n\014co"
-  "mpare_user\030\003 \001(\003\022\r\n\005is_ok\030\004 \001(\010\"#\n\017TPMsg"
-  "GiveUpResp\022\020\n\010chair_id\030\001 \001(\005\"X\n\021TPMsgLoo"
-  "kCardResp\022\020\n\010chair_id\030\001 \001(\005\022\021\n\tcard_type"
-  "\030\002 \001(\005\022\017\n\007new_act\030\003 \001(\005\022\r\n\005cards\030\004 \003(\005\"L"
-  "\n\017TPMsgAddBetResp\022\024\n\014add_chair_id\030\001 \001(\005\022"
-  "\021\n\tadd_score\030\002 \001(\003\022\020\n\010bet_type\030\003 \001(\003\"<\n\024"
-  "TPMsgCompareCardResp\022\020\n\010chair_id\030\001 \001(\005\022\022"
-  "\n\ncompare_id\030\002 \001(\005\"\333\001\n\027TPMsgCompareCardR"
-  "etResp\022\030\n\020current_chair_id\030\001 \001(\005\022\023\n\013curr"
-  "ent_act\030\002 \001(\005\022\017\n\007lost_id\030\003 \001(\005\022\022\n\ncompar"
-  "e_id\030\004 \001(\005\022\022\n\npassive_id\030\005 \001(\005\022\024\n\014compar"
-  "e_type\030\006 \001(\005\022\024\n\014passive_type\030\007 \001(\005\022\025\n\rco"
-  "mpare_cards\030\010 \003(\005\022\025\n\rpassive_cards\030\t \003(\005"
-  "\"\224\001\n\017TPMsgGameResult\022\020\n\010game_tax\030\001 \001(\005\022\022"
-  "\n\ngame_score\030\002 \003(\003\022\021\n\tcard_type\030\003 \003(\005\0225\n"
-  "\014player_hands\030\004 \003(\0132\037.TeenPatti_India.TP"
-  "MsgHandCards\022\021\n\tend_state\030\005 \001(\005\"5\n\024TPMSg"
-  "NotifyPlayerAct\022\020\n\010chair_id\030\001 \001(\005\022\013\n\003act"
-  "\030\002 \001(\005*g\n\014ETPGameState\022\017\n\013GS_TP_READY\020\000\022"
-  "\016\n\nGS_TP_DEAL\020\001\022\021\n\rGS_TP_PLAYING\020\002\022\021\n\rGS"
-  "_TP_COMPARE\020\003\022\020\n\014GS_TP_RESULT\020\004*E\n\016ETPPl"
-  "ayerState\022\014\n\010PS_READY\020\000\022\013\n\007PS_PLAY\020\001\022\013\n\007"
-  "PS_GIVE\020\002\022\013\n\007PS_FAIL\020\003*\207\001\n\013ETPCardType\022\r"
-  "\n\tCT_SINGLE\020\000\022\r\n\tCT_DOUBLE\020\001\022\016\n\nCT_JIN_H"
-  "UA\020\002\022\016\n\nCT_SHUN_ZI\020\003\022\017\n\013CT_SHUN_JIN\020\004\022\r\n"
-  "\tCT_BAO_ZI\020\005\022\016\n\nCT_SPECIAL\020\006\022\n\n\006CT_MAX\020\007"
-  "*\204\001\n\rETPGameAction\022\r\n\tInvaldAct\020\000\022\n\n\006Giv"
-  "eUp\020\001\022\014\n\010LookCard\020\002\022\013\n\007CallBet\020\004\022\n\n\006AddB"
-  "et\020\010\022\017\n\013CompareCard\020\020\022\020\n\014CompareReply\020 \022"
-  "\016\n\nAllCompare\020@*\275\004\n\017ETPMsgIDSubGame\022\025\n\021M"
-  "sgIDSubGame_Null\020\000\022\036\n\032MsgIDSubGame_GameS"
-  "tartResp\020\001\022!\n\035MsgIDSubGame_NotifyActionR"
-  "esp\020\002\022\027\n\023MsgIDSubGame_Action\020\003\022\033\n\027MsgIDS"
-  "ubGame_GiveUpResp\020\004\022\031\n\025MsgIDSubGame_Look"
-  "Card\020\005\022\033\n\027MsgIDSubGame_AddBetResp\020\006\022 \n\034M"
-  "sgIDSubGame_CompareCardResp\020\007\022\037\n\033MsgIDSu"
-  "bGame_CompareRetResp\020\010\022\037\n\033MsgIDSubGame_G"
-  "ameResultResp\020\t\022 \n\034MsgIDSubGame_NotifySt"
-  "ateResp\020\n\022&\n\"MsgIDSubGame_NotifySystemCh"
-  "eatResp\020\024\022#\n\037MsgIDSubGame_NotifyCardType"
-  "Resp\020\025\022 \n\034MsgIDSubGame_NotifyIsMaxResp\020\026"
-  "\022\'\n#MsgIDSubGame_NotifyRemainDoubleResp\020"
-  "\027\022 \n\034MsgIDSubGame_NotifyRoundResp\020\030\022\"\n\036M"
-  "sgIDSubGame_NotifyLastActResp\020\031b\006proto3"
+  "\003\022\022\n\nplay_index\030\010 \003(\005\"h\n\025TPMsgNotifyActi"
+  "onResp\022\024\n\014cur_chair_id\030\001 \001(\005\022\021\n\tcur_time"
+  "s\030\002 \001(\005\022\023\n\013current_act\030\003 \001(\005\022\021\n\toper_tim"
+  "e\030\004 \001(\005\"R\n\013TPMsgAction\022\013\n\003act\030\001 \001(\005\022\021\n\tb"
+  "et_score\030\002 \001(\003\022\024\n\014compare_user\030\003 \001(\003\022\r\n\005"
+  "is_ok\030\004 \001(\010\"#\n\017TPMsgGiveUpResp\022\020\n\010chair_"
+  "id\030\001 \001(\005\"X\n\021TPMsgLookCardResp\022\020\n\010chair_i"
+  "d\030\001 \001(\005\022\021\n\tcard_type\030\002 \001(\005\022\017\n\007new_act\030\003 "
+  "\001(\005\022\r\n\005cards\030\004 \003(\005\"L\n\017TPMsgAddBetResp\022\024\n"
+  "\014add_chair_id\030\001 \001(\005\022\021\n\tadd_score\030\002 \001(\003\022\020"
+  "\n\010bet_type\030\003 \001(\003\"<\n\024TPMsgCompareCardResp"
+  "\022\020\n\010chair_id\030\001 \001(\005\022\022\n\ncompare_id\030\002 \001(\005\"\333"
+  "\001\n\027TPMsgCompareCardRetResp\022\030\n\020current_ch"
+  "air_id\030\001 \001(\005\022\023\n\013current_act\030\002 \001(\005\022\017\n\007los"
+  "t_id\030\003 \001(\005\022\022\n\ncompare_id\030\004 \001(\005\022\022\n\npassiv"
+  "e_id\030\005 \001(\005\022\024\n\014compare_type\030\006 \001(\005\022\024\n\014pass"
+  "ive_type\030\007 \001(\005\022\025\n\rcompare_cards\030\010 \003(\005\022\025\n"
+  "\rpassive_cards\030\t \003(\005\"\224\001\n\017TPMsgGameResult"
+  "\022\020\n\010game_tax\030\001 \001(\005\022\022\n\ngame_score\030\002 \003(\003\022\021"
+  "\n\tcard_type\030\003 \003(\005\0225\n\014player_hands\030\004 \003(\0132"
+  "\037.TeenPatti_India.TPMsgHandCards\022\021\n\tend_"
+  "state\030\005 \001(\005\"5\n\024TPMSgNotifyPlayerAct\022\020\n\010c"
+  "hair_id\030\001 \001(\005\022\013\n\003act\030\002 \001(\005*g\n\014ETPGameSta"
+  "te\022\017\n\013GS_TP_READY\020\000\022\016\n\nGS_TP_DEAL\020\001\022\021\n\rG"
+  "S_TP_PLAYING\020\002\022\021\n\rGS_TP_COMPARE\020\003\022\020\n\014GS_"
+  "TP_RESULT\020\004*E\n\016ETPPlayerState\022\014\n\010PS_READ"
+  "Y\020\000\022\013\n\007PS_PLAY\020\001\022\013\n\007PS_GIVE\020\002\022\013\n\007PS_FAIL"
+  "\020\003*\207\001\n\013ETPCardType\022\r\n\tCT_SINGLE\020\000\022\r\n\tCT_"
+  "DOUBLE\020\001\022\016\n\nCT_JIN_HUA\020\002\022\016\n\nCT_SHUN_ZI\020\003"
+  "\022\017\n\013CT_SHUN_JIN\020\004\022\r\n\tCT_BAO_ZI\020\005\022\016\n\nCT_S"
+  "PECIAL\020\006\022\n\n\006CT_MAX\020\007*\204\001\n\rETPGameAction\022\r"
+  "\n\tInvaldAct\020\000\022\n\n\006GiveUp\020\001\022\014\n\010LookCard\020\002\022"
+  "\013\n\007CallBet\020\004\022\n\n\006AddBet\020\010\022\017\n\013CompareCard\020"
+  "\020\022\020\n\014CompareReply\020 \022\016\n\nAllCompare\020@*\275\004\n\017"
+  "ETPMsgIDSubGame\022\025\n\021MsgIDSubGame_Null\020\000\022\036"
+  "\n\032MsgIDSubGame_GameStartResp\020\001\022!\n\035MsgIDS"
+  "ubGame_NotifyActionResp\020\002\022\027\n\023MsgIDSubGam"
+  "e_Action\020\003\022\033\n\027MsgIDSubGame_GiveUpResp\020\004\022"
+  "\031\n\025MsgIDSubGame_LookCard\020\005\022\033\n\027MsgIDSubGa"
+  "me_AddBetResp\020\006\022 \n\034MsgIDSubGame_CompareC"
+  "ardResp\020\007\022\037\n\033MsgIDSubGame_CompareRetResp"
+  "\020\010\022\037\n\033MsgIDSubGame_GameResultResp\020\t\022 \n\034M"
+  "sgIDSubGame_NotifyStateResp\020\n\022&\n\"MsgIDSu"
+  "bGame_NotifySystemCheatResp\020\024\022#\n\037MsgIDSu"
+  "bGame_NotifyCardTypeResp\020\025\022 \n\034MsgIDSubGa"
+  "me_NotifyIsMaxResp\020\026\022\'\n#MsgIDSubGame_Not"
+  "ifyRemainDoubleResp\020\027\022 \n\034MsgIDSubGame_No"
+  "tifyRoundResp\020\030\022\"\n\036MsgIDSubGame_NotifyLa"
+  "stActResp\020\031b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_TeenPatti_5fIndia_2eproto_deps[1] = {
 };
@@ -526,7 +528,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Tee
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_TeenPatti_5fIndia_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_TeenPatti_5fIndia_2eproto = {
-  false, false, descriptor_table_protodef_TeenPatti_5fIndia_2eproto, "TeenPatti_India.proto", 2759,
+  false, false, descriptor_table_protodef_TeenPatti_5fIndia_2eproto, "TeenPatti_India.proto", 2779,
   &descriptor_table_TeenPatti_5fIndia_2eproto_once, descriptor_table_TeenPatti_5fIndia_2eproto_sccs, descriptor_table_TeenPatti_5fIndia_2eproto_deps, 14, 0,
   schemas, file_default_instances, TableStruct_TeenPatti_5fIndia_2eproto::offsets,
   file_level_metadata_TeenPatti_5fIndia_2eproto, 14, file_level_enum_descriptors_TeenPatti_5fIndia_2eproto, file_level_service_descriptors_TeenPatti_5fIndia_2eproto,
@@ -1978,13 +1980,15 @@ class TPMsgGameStartResp::_Internal {
 };
 
 TPMsgGameStartResp::TPMsgGameStartResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  play_index_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:TeenPatti_India.TPMsgGameStartResp)
 }
 TPMsgGameStartResp::TPMsgGameStartResp(const TPMsgGameStartResp& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      play_index_(from.play_index_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&cur_chair_id_, &from.cur_chair_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&banker_chair_id_) -
@@ -2030,6 +2034,7 @@ void TPMsgGameStartResp::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  play_index_.Clear();
   ::memset(&cur_chair_id_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&banker_chair_id_) -
       reinterpret_cast<char*>(&cur_chair_id_)) + sizeof(banker_chair_id_));
@@ -2089,6 +2094,16 @@ const char* TPMsgGameStartResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
       case 7:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
           table_max_score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated int32 play_index = 8;
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 66)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_play_index(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64) {
+          _internal_add_play_index(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2162,6 +2177,15 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(7, this->_internal_table_max_score(), target);
   }
 
+  // repeated int32 play_index = 8;
+  {
+    int byte_size = _play_index_cached_byte_size_.load(std::memory_order_relaxed);
+    if (byte_size > 0) {
+      target = stream->WriteInt32Packed(
+          8, _internal_play_index(), byte_size, target);
+    }
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -2177,6 +2201,21 @@ size_t TPMsgGameStartResp::ByteSizeLong() const {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
+
+  // repeated int32 play_index = 8;
+  {
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      Int32Size(this->play_index_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
+    }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _play_index_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
+  }
 
   // int32 cur_chair_id = 1;
   if (this->cur_chair_id() != 0) {
@@ -2258,6 +2297,7 @@ void TPMsgGameStartResp::MergeFrom(const TPMsgGameStartResp& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  play_index_.MergeFrom(from.play_index_);
   if (from.cur_chair_id() != 0) {
     _internal_set_cur_chair_id(from._internal_cur_chair_id());
   }
@@ -2302,6 +2342,7 @@ bool TPMsgGameStartResp::IsInitialized() const {
 void TPMsgGameStartResp::InternalSwap(TPMsgGameStartResp* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  play_index_.InternalSwap(&other->play_index_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(TPMsgGameStartResp, banker_chair_id_)
       + sizeof(TPMsgGameStartResp::banker_chair_id_)

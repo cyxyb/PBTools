@@ -129,7 +129,7 @@ message TPMsgGameStartResp
 	int64				cell_score		= 6;	//底分
 	int64				table_max_score	= 7;	//桌内最大下注
 
-
+	repeated int32		play_index		= 8;	//在玩下标
 }
 
 //游戏开始

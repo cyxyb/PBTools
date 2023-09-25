@@ -1194,6 +1194,7 @@ class TPMsgGameStartResp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
+    kPlayIndexFieldNumber = 8,
     kCurChairIdFieldNumber = 1,
     kCurTimesFieldNumber = 2,
     kMaxScoreFieldNumber = 4,
@@ -1202,6 +1203,28 @@ class TPMsgGameStartResp PROTOBUF_FINAL :
     kTableMaxScoreFieldNumber = 7,
     kBankerChairIdFieldNumber = 3,
   };
+  // repeated int32 play_index = 8;
+  int play_index_size() const;
+  private:
+  int _internal_play_index_size() const;
+  public:
+  void clear_play_index();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_play_index(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_play_index() const;
+  void _internal_add_play_index(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_play_index();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 play_index(int index) const;
+  void set_play_index(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_play_index(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      play_index() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_play_index();
+
   // int32 cur_chair_id = 1;
   void clear_cur_chair_id();
   ::PROTOBUF_NAMESPACE_ID::int32 cur_chair_id() const;
@@ -1272,6 +1295,8 @@ class TPMsgGameStartResp PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > play_index_;
+  mutable std::atomic<int> _play_index_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::int32 cur_chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 cur_times_;
   ::PROTOBUF_NAMESPACE_ID::int64 max_score_;
@@ -3634,6 +3659,53 @@ inline void TPMsgGameStartResp::_internal_set_table_max_score(::PROTOBUF_NAMESPA
 inline void TPMsgGameStartResp::set_table_max_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_table_max_score(value);
   // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgGameStartResp.table_max_score)
+}
+
+// repeated int32 play_index = 8;
+inline int TPMsgGameStartResp::_internal_play_index_size() const {
+  return play_index_.size();
+}
+inline int TPMsgGameStartResp::play_index_size() const {
+  return _internal_play_index_size();
+}
+inline void TPMsgGameStartResp::clear_play_index() {
+  play_index_.Clear();
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 TPMsgGameStartResp::_internal_play_index(int index) const {
+  return play_index_.Get(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 TPMsgGameStartResp::play_index(int index) const {
+  // @@protoc_insertion_point(field_get:TeenPatti_India.TPMsgGameStartResp.play_index)
+  return _internal_play_index(index);
+}
+inline void TPMsgGameStartResp::set_play_index(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  play_index_.Set(index, value);
+  // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgGameStartResp.play_index)
+}
+inline void TPMsgGameStartResp::_internal_add_play_index(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  play_index_.Add(value);
+}
+inline void TPMsgGameStartResp::add_play_index(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_play_index(value);
+  // @@protoc_insertion_point(field_add:TeenPatti_India.TPMsgGameStartResp.play_index)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+TPMsgGameStartResp::_internal_play_index() const {
+  return play_index_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+TPMsgGameStartResp::play_index() const {
+  // @@protoc_insertion_point(field_list:TeenPatti_India.TPMsgGameStartResp.play_index)
+  return _internal_play_index();
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+TPMsgGameStartResp::_internal_mutable_play_index() {
+  return &play_index_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+TPMsgGameStartResp::mutable_play_index() {
+  // @@protoc_insertion_point(field_mutable_list:TeenPatti_India.TPMsgGameStartResp.play_index)
+  return _internal_mutable_play_index();
 }
 
 // -------------------------------------------------------------------
