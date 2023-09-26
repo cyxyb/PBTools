@@ -707,6 +707,7 @@ class MsgPlayerLoginResp PROTOBUF_FINAL :
     kPhoneNumFieldNumber = 11,
     kInviteCodeFieldNumber = 14,
     kSignatureFieldNumber = 16,
+    kPasswordFieldNumber = 18,
     kResCodeFieldNumber = 1,
     kUserIdFieldNumber = 2,
     kBeautifulIdFieldNumber = 3,
@@ -813,6 +814,22 @@ class MsgPlayerLoginResp PROTOBUF_FINAL :
   const std::string& _internal_signature() const;
   void _internal_set_signature(const std::string& value);
   std::string* _internal_mutable_signature();
+  public:
+
+  // string password = 18;
+  void clear_password();
+  const std::string& password() const;
+  void set_password(const std::string& value);
+  void set_password(std::string&& value);
+  void set_password(const char* value);
+  void set_password(const char* value, size_t size);
+  std::string* mutable_password();
+  std::string* release_password();
+  void set_allocated_password(std::string* password);
+  private:
+  const std::string& _internal_password() const;
+  void _internal_set_password(const std::string& value);
+  std::string* _internal_mutable_password();
   public:
 
   // int32 res_code = 1;
@@ -927,6 +944,7 @@ class MsgPlayerLoginResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr phone_num_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr invite_code_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr signature_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr password_;
   ::PROTOBUF_NAMESPACE_ID::int32 res_code_;
   ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 beautiful_id_;
@@ -10353,6 +10371,67 @@ inline void MsgPlayerLoginResp::_internal_set_agent_level(::PROTOBUF_NAMESPACE_I
 inline void MsgPlayerLoginResp::set_agent_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_agent_level(value);
   // @@protoc_insertion_point(field_set:MsgPlayerLoginResp.agent_level)
+}
+
+// string password = 18;
+inline void MsgPlayerLoginResp::clear_password() {
+  password_.ClearToEmpty();
+}
+inline const std::string& MsgPlayerLoginResp::password() const {
+  // @@protoc_insertion_point(field_get:MsgPlayerLoginResp.password)
+  return _internal_password();
+}
+inline void MsgPlayerLoginResp::set_password(const std::string& value) {
+  _internal_set_password(value);
+  // @@protoc_insertion_point(field_set:MsgPlayerLoginResp.password)
+}
+inline std::string* MsgPlayerLoginResp::mutable_password() {
+  // @@protoc_insertion_point(field_mutable:MsgPlayerLoginResp.password)
+  return _internal_mutable_password();
+}
+inline const std::string& MsgPlayerLoginResp::_internal_password() const {
+  return password_.Get();
+}
+inline void MsgPlayerLoginResp::_internal_set_password(const std::string& value) {
+  
+  password_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgPlayerLoginResp::set_password(std::string&& value) {
+  
+  password_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgPlayerLoginResp.password)
+}
+inline void MsgPlayerLoginResp::set_password(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  password_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgPlayerLoginResp.password)
+}
+inline void MsgPlayerLoginResp::set_password(const char* value,
+    size_t size) {
+  
+  password_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgPlayerLoginResp.password)
+}
+inline std::string* MsgPlayerLoginResp::_internal_mutable_password() {
+  
+  return password_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgPlayerLoginResp::release_password() {
+  // @@protoc_insertion_point(field_release:MsgPlayerLoginResp.password)
+  return password_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgPlayerLoginResp::set_allocated_password(std::string* password) {
+  if (password != nullptr) {
+    
+  } else {
+    
+  }
+  password_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), password,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgPlayerLoginResp.password)
 }
 
 // -------------------------------------------------------------------
