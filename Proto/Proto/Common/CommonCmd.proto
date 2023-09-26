@@ -144,6 +144,7 @@ enum EMsgIDGame
 	MsgIDGame_QueryDayRecordResp		= 1017;		//猜拳每日数据数据记录(MsgTotalDayData)
 	MsgIDGame_AddOneRecord				= 1018;		//猜拳增加一条记录
 	MsgIDGame_NotifyPlayerOfflineResp	= 1019;		//通知玩家断线(MsgCommonN32)
+	MsgIDGame_ChangeTableResp			= 1020;		//换桌(MsgCommonN32)
 }
 
 enum EMsgIDChat
