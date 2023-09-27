@@ -130,6 +130,7 @@ message MsgTurntableResp
 	int64		new_value					= 3;	//最新奖励值
 	int64		turnIndex					= 4;	//转到下标
 	int64		get_value					= 5;	//奖励值
+	int32 		code						= 6;	//错误Code
 }
 
 
