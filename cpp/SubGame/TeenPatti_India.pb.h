@@ -1906,12 +1906,13 @@ class TPMsgLookCardResp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kCardsFieldNumber = 4,
+    kCardsFieldNumber = 5,
     kChairIdFieldNumber = 1,
     kCardTypeFieldNumber = 2,
-    kNewActFieldNumber = 3,
+    kCurChairIdFieldNumber = 3,
+    kNewActFieldNumber = 4,
   };
-  // repeated int32 cards = 4;
+  // repeated int32 cards = 5;
   int cards_size() const;
   private:
   int _internal_cards_size() const;
@@ -1951,7 +1952,16 @@ class TPMsgLookCardResp PROTOBUF_FINAL :
   void _internal_set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 new_act = 3;
+  // int32 cur_chair_id = 3;
+  void clear_cur_chair_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 cur_chair_id() const;
+  void set_cur_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_cur_chair_id() const;
+  void _internal_set_cur_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 new_act = 4;
   void clear_new_act();
   ::PROTOBUF_NAMESPACE_ID::int32 new_act() const;
   void set_new_act(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -1971,6 +1981,7 @@ class TPMsgLookCardResp PROTOBUF_FINAL :
   mutable std::atomic<int> _cards_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 card_type_;
+  ::PROTOBUF_NAMESPACE_ID::int32 cur_chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 new_act_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_TeenPatti_5fIndia_2eproto;
@@ -3975,7 +3986,27 @@ inline void TPMsgLookCardResp::set_card_type(::PROTOBUF_NAMESPACE_ID::int32 valu
   // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgLookCardResp.card_type)
 }
 
-// int32 new_act = 3;
+// int32 cur_chair_id = 3;
+inline void TPMsgLookCardResp::clear_cur_chair_id() {
+  cur_chair_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 TPMsgLookCardResp::_internal_cur_chair_id() const {
+  return cur_chair_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 TPMsgLookCardResp::cur_chair_id() const {
+  // @@protoc_insertion_point(field_get:TeenPatti_India.TPMsgLookCardResp.cur_chair_id)
+  return _internal_cur_chair_id();
+}
+inline void TPMsgLookCardResp::_internal_set_cur_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  cur_chair_id_ = value;
+}
+inline void TPMsgLookCardResp::set_cur_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_cur_chair_id(value);
+  // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgLookCardResp.cur_chair_id)
+}
+
+// int32 new_act = 4;
 inline void TPMsgLookCardResp::clear_new_act() {
   new_act_ = 0;
 }
@@ -3995,7 +4026,7 @@ inline void TPMsgLookCardResp::set_new_act(::PROTOBUF_NAMESPACE_ID::int32 value)
   // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgLookCardResp.new_act)
 }
 
-// repeated int32 cards = 4;
+// repeated int32 cards = 5;
 inline int TPMsgLookCardResp::_internal_cards_size() const {
   return cards_.size();
 }
