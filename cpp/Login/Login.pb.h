@@ -719,7 +719,6 @@ class MsgPlayerLoginResp PROTOBUF_FINAL :
     kVipLevelFieldNumber = 12,
     kAvatarFrameFieldNumber = 13,
     kAgentLevelFieldNumber = 17,
-    kLimitLoginFieldNumber = 19,
   };
   // string account = 4;
   void clear_account();
@@ -932,15 +931,6 @@ class MsgPlayerLoginResp PROTOBUF_FINAL :
   void _internal_set_agent_level(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 LimitLogin = 19;
-  void clear_limitlogin();
-  ::PROTOBUF_NAMESPACE_ID::int32 limitlogin() const;
-  void set_limitlogin(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_limitlogin() const;
-  void _internal_set_limitlogin(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
   // @@protoc_insertion_point(class_scope:MsgPlayerLoginResp)
  private:
   class _Internal;
@@ -966,7 +956,6 @@ class MsgPlayerLoginResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 vip_level_;
   ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame_;
   ::PROTOBUF_NAMESPACE_ID::int32 agent_level_;
-  ::PROTOBUF_NAMESPACE_ID::int32 limitlogin_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -10454,26 +10443,6 @@ inline void MsgPlayerLoginResp::set_allocated_password(std::string* password) {
   password_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), password,
       GetArena());
   // @@protoc_insertion_point(field_set_allocated:MsgPlayerLoginResp.password)
-}
-
-// int32 LimitLogin = 19;
-inline void MsgPlayerLoginResp::clear_limitlogin() {
-  limitlogin_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPlayerLoginResp::_internal_limitlogin() const {
-  return limitlogin_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPlayerLoginResp::limitlogin() const {
-  // @@protoc_insertion_point(field_get:MsgPlayerLoginResp.LimitLogin)
-  return _internal_limitlogin();
-}
-inline void MsgPlayerLoginResp::_internal_set_limitlogin(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  limitlogin_ = value;
-}
-inline void MsgPlayerLoginResp::set_limitlogin(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_limitlogin(value);
-  // @@protoc_insertion_point(field_set:MsgPlayerLoginResp.LimitLogin)
 }
 
 // -------------------------------------------------------------------

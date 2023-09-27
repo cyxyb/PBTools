@@ -40,7 +40,6 @@ message MsgPlayerLoginResp
 	string      signature		= 16;	//个性签名
 	int32		agent_level		= 17;	//代理等级
 	string		password		= 18;	//玩家密码
-	int32		LimitLogin		= 19;   //限制登陆 0正常 非零多语言
 }
 
 //修改密码

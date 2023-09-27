@@ -3708,7 +3708,6 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
     kChannelIdFieldNumber = 15,
     kBankGoldFieldNumber = 17,
     kAgentLevelFieldNumber = 20,
-    kLimitLoginFieldNumber = 21,
   };
   // string account = 4;
   void clear_account();
@@ -3946,15 +3945,6 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
   void _internal_set_agent_level(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 LimitLogin = 21;
-  void clear_limitlogin();
-  ::PROTOBUF_NAMESPACE_ID::int32 limitlogin() const;
-  void set_limitlogin(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_limitlogin() const;
-  void _internal_set_limitlogin(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
   // @@protoc_insertion_point(class_scope:MsgLoginPlayerInfo)
  private:
   class _Internal;
@@ -3982,7 +3972,6 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 channel_id_;
   ::PROTOBUF_NAMESPACE_ID::uint64 bank_gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 agent_level_;
-  ::PROTOBUF_NAMESPACE_ID::int32 limitlogin_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -11599,26 +11588,6 @@ inline void MsgLoginPlayerInfo::_internal_set_agent_level(::PROTOBUF_NAMESPACE_I
 inline void MsgLoginPlayerInfo::set_agent_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_agent_level(value);
   // @@protoc_insertion_point(field_set:MsgLoginPlayerInfo.agent_level)
-}
-
-// int32 LimitLogin = 21;
-inline void MsgLoginPlayerInfo::clear_limitlogin() {
-  limitlogin_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgLoginPlayerInfo::_internal_limitlogin() const {
-  return limitlogin_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgLoginPlayerInfo::limitlogin() const {
-  // @@protoc_insertion_point(field_get:MsgLoginPlayerInfo.LimitLogin)
-  return _internal_limitlogin();
-}
-inline void MsgLoginPlayerInfo::_internal_set_limitlogin(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  limitlogin_ = value;
-}
-inline void MsgLoginPlayerInfo::set_limitlogin(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_limitlogin(value);
-  // @@protoc_insertion_point(field_set:MsgLoginPlayerInfo.LimitLogin)
 }
 
 // -------------------------------------------------------------------
