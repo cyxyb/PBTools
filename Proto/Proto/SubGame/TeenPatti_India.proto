@@ -193,6 +193,7 @@ message TPMsgCompareCardRetResp
 	int32				passive_type	= 7;	//被比玩家牌型
 	repeated int32		compare_cards	= 8;	//比牌玩家手牌
 	repeated int32		passive_cards	= 9;	//被比玩家手牌
+	bool				is_agree		= 10;	//同意否
 }                                           
 
 

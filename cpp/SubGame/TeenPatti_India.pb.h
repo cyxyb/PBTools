@@ -2414,6 +2414,7 @@ class TPMsgCompareCardRetResp PROTOBUF_FINAL :
     kPassiveIdFieldNumber = 5,
     kCompareTypeFieldNumber = 6,
     kPassiveTypeFieldNumber = 7,
+    kIsAgreeFieldNumber = 10,
   };
   // repeated int32 compare_cards = 8;
   int compare_cards_size() const;
@@ -2522,6 +2523,15 @@ class TPMsgCompareCardRetResp PROTOBUF_FINAL :
   void _internal_set_passive_type(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // bool is_agree = 10;
+  void clear_is_agree();
+  bool is_agree() const;
+  void set_is_agree(bool value);
+  private:
+  bool _internal_is_agree() const;
+  void _internal_set_is_agree(bool value);
+  public:
+
   // @@protoc_insertion_point(class_scope:TeenPatti_India.TPMsgCompareCardRetResp)
  private:
   class _Internal;
@@ -2540,6 +2550,7 @@ class TPMsgCompareCardRetResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 passive_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 compare_type_;
   ::PROTOBUF_NAMESPACE_ID::int32 passive_type_;
+  bool is_agree_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_TeenPatti_5fIndia_2eproto;
 };
@@ -4417,6 +4428,26 @@ inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 TPMsgCompareCardRetResp::mutable_passive_cards() {
   // @@protoc_insertion_point(field_mutable_list:TeenPatti_India.TPMsgCompareCardRetResp.passive_cards)
   return _internal_mutable_passive_cards();
+}
+
+// bool is_agree = 10;
+inline void TPMsgCompareCardRetResp::clear_is_agree() {
+  is_agree_ = false;
+}
+inline bool TPMsgCompareCardRetResp::_internal_is_agree() const {
+  return is_agree_;
+}
+inline bool TPMsgCompareCardRetResp::is_agree() const {
+  // @@protoc_insertion_point(field_get:TeenPatti_India.TPMsgCompareCardRetResp.is_agree)
+  return _internal_is_agree();
+}
+inline void TPMsgCompareCardRetResp::_internal_set_is_agree(bool value) {
+  
+  is_agree_ = value;
+}
+inline void TPMsgCompareCardRetResp::set_is_agree(bool value) {
+  _internal_set_is_agree(value);
+  // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgCompareCardRetResp.is_agree)
 }
 
 // -------------------------------------------------------------------
