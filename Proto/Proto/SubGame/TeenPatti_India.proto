@@ -89,10 +89,11 @@ message TPMsgPlayerInfo
 	bool				ming_zhu		= 2;	//明注状态
 	int32				play_status		= 3;	//玩家状态
 	int64				player_bet		= 4;	//玩家投注总和
-	int32				card_type		= 5;	//牌型
-	int64				gold			= 6;	//自己的金币，别人的是空
-	int64				win_gold		= 7;	//输赢分
-	TPMsgHandCards		handls			= 8;	//手牌
+	int64				last_bet		= 5;	//上次下注
+	int32				card_type		= 6;	//牌型
+	int64				gold			= 7;	//自己的金币，别人的是空
+	int64				win_gold		= 8;	//输赢分
+	TPMsgHandCards		handls			= 9;	//手牌
 }
 
 
