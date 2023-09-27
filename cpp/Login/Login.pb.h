@@ -2731,8 +2731,9 @@ class MsgTurntableResp PROTOBUF_FINAL :
     kScoreFieldNumber = 1,
     kNewValueFieldNumber = 3,
     kTurnIndexFieldNumber = 4,
-    kGetValueFieldNumber = 5,
     kAwardTypeFieldNumber = 2,
+    kCodeFieldNumber = 6,
+    kGetValueFieldNumber = 5,
   };
   // int64 score = 1;
   void clear_score();
@@ -2761,15 +2762,6 @@ class MsgTurntableResp PROTOBUF_FINAL :
   void _internal_set_turnindex(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int64 get_value = 5;
-  void clear_get_value();
-  ::PROTOBUF_NAMESPACE_ID::int64 get_value() const;
-  void set_get_value(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_get_value() const;
-  void _internal_set_get_value(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
   // int32 award_type = 2;
   void clear_award_type();
   ::PROTOBUF_NAMESPACE_ID::int32 award_type() const;
@@ -2777,6 +2769,24 @@ class MsgTurntableResp PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::int32 _internal_award_type() const;
   void _internal_set_award_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 code = 6;
+  void clear_code();
+  ::PROTOBUF_NAMESPACE_ID::int32 code() const;
+  void set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_code() const;
+  void _internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int64 get_value = 5;
+  void clear_get_value();
+  ::PROTOBUF_NAMESPACE_ID::int64 get_value() const;
+  void set_get_value(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_get_value() const;
+  void _internal_set_get_value(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
   // @@protoc_insertion_point(class_scope:MsgTurntableResp)
@@ -2789,8 +2799,9 @@ class MsgTurntableResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int64 score_;
   ::PROTOBUF_NAMESPACE_ID::int64 new_value_;
   ::PROTOBUF_NAMESPACE_ID::int64 turnindex_;
-  ::PROTOBUF_NAMESPACE_ID::int64 get_value_;
   ::PROTOBUF_NAMESPACE_ID::int32 award_type_;
+  ::PROTOBUF_NAMESPACE_ID::int32 code_;
+  ::PROTOBUF_NAMESPACE_ID::int64 get_value_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -11840,6 +11851,26 @@ inline void MsgTurntableResp::_internal_set_get_value(::PROTOBUF_NAMESPACE_ID::i
 inline void MsgTurntableResp::set_get_value(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_get_value(value);
   // @@protoc_insertion_point(field_set:MsgTurntableResp.get_value)
+}
+
+// int32 code = 6;
+inline void MsgTurntableResp::clear_code() {
+  code_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurntableResp::_internal_code() const {
+  return code_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTurntableResp::code() const {
+  // @@protoc_insertion_point(field_get:MsgTurntableResp.code)
+  return _internal_code();
+}
+inline void MsgTurntableResp::_internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  code_ = value;
+}
+inline void MsgTurntableResp::set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_code(value);
+  // @@protoc_insertion_point(field_set:MsgTurntableResp.code)
 }
 
 // -------------------------------------------------------------------
