@@ -66,31 +66,31 @@ namespace TeenPattiIndia {
             "dGUYBSABKAUiNQoUVFBNU2dOb3RpZnlQbGF5ZXJBY3QSEAoIY2hhaXJfaWQY",
             "ASABKAUSCwoDYWN0GAIgASgFKmcKDEVUUEdhbWVTdGF0ZRIPCgtHU19UUF9S",
             "RUFEWRAAEg4KCkdTX1RQX0RFQUwQARIRCg1HU19UUF9QTEFZSU5HEAISEQoN",
-            "R1NfVFBfQ09NUEFSRRADEhAKDEdTX1RQX1JFU1VMVBAEKkUKDkVUUFBsYXll",
+            "R1NfVFBfQ09NUEFSRRADEhAKDEdTX1RQX1JFU1VMVBAEKlUKDkVUUFBsYXll",
             "clN0YXRlEgwKCFBTX1JFQURZEAASCwoHUFNfUExBWRABEgsKB1BTX0dJVkUQ",
-            "AhILCgdQU19GQUlMEAMqhwEKC0VUUENhcmRUeXBlEg0KCUNUX1NJTkdMRRAA",
-            "Eg0KCUNUX0RPVUJMRRABEg4KCkNUX0pJTl9IVUEQAhIOCgpDVF9TSFVOX1pJ",
-            "EAMSDwoLQ1RfU0hVTl9KSU4QBBINCglDVF9CQU9fWkkQBRIOCgpDVF9TUEVD",
-            "SUFMEAYSCgoGQ1RfTUFYEAcqhAEKDUVUUEdhbWVBY3Rpb24SDQoJSW52YWxk",
-            "QWN0EAASCgoGR2l2ZVVwEAESDAoITG9va0NhcmQQAhILCgdDYWxsQmV0EAQS",
-            "CgoGQWRkQmV0EAgSDwoLQ29tcGFyZUNhcmQQEBIQCgxDb21wYXJlUmVwbHkQ",
-            "IBIOCgpBbGxDb21wYXJlEEAqvwUKD0VUUE1zZ0lEU3ViR2FtZRIVChFNc2dJ",
-            "RFN1YkdhbWVfTnVsbBAAEh4KGk1zZ0lEU3ViR2FtZV9HYW1lU3RhcnRSZXNw",
-            "EAESIQodTXNnSURTdWJHYW1lX05vdGlmeUFjdGlvblJlc3AQAhIXChNNc2dJ",
-            "RFN1YkdhbWVfQWN0aW9uEAMSGwoXTXNnSURTdWJHYW1lX0dpdmVVcFJlc3AQ",
-            "BBIZChVNc2dJRFN1YkdhbWVfTG9va0NhcmQQBRIbChdNc2dJRFN1YkdhbWVf",
-            "QWRkQmV0UmVzcBAGEiAKHE1zZ0lEU3ViR2FtZV9Db21wYXJlQ2FyZFJlc3AQ",
-            "BxIfChtNc2dJRFN1YkdhbWVfQ29tcGFyZVJldFJlc3AQCBIfChtNc2dJRFN1",
-            "YkdhbWVfR2FtZVJlc3VsdFJlc3AQCRIgChxNc2dJRFN1YkdhbWVfTm90aWZ5",
-            "U3RhdGVSZXNwEAoSHAoYTXNnSURTdWJHYW1lX1RpbWVPdXRSZXNwEAsSHQoZ",
-            "TXNnSURTdWJHYW1lX1RpbWVPdXRSZWFkeRAMEiEKHU1zZ0lEU3ViR2FtZV9U",
-            "aW1lT3V0UmVhZHlSZXNwEA0SIAocTXNnSURTdWJHYW1lX1RpbWVPdXRLaWNr",
-            "UmVzcBAOEiYKIk1zZ0lEU3ViR2FtZV9Ob3RpZnlTeXN0ZW1DaGVhdFJlc3AQ",
-            "FBIjCh9Nc2dJRFN1YkdhbWVfTm90aWZ5Q2FyZFR5cGVSZXNwEBUSIAocTXNn",
-            "SURTdWJHYW1lX05vdGlmeUlzTWF4UmVzcBAWEicKI01zZ0lEU3ViR2FtZV9O",
-            "b3RpZnlSZW1haW5Eb3VibGVSZXNwEBcSIAocTXNnSURTdWJHYW1lX05vdGlm",
-            "eVJvdW5kUmVzcBAYEiIKHk1zZ0lEU3ViR2FtZV9Ob3RpZnlMYXN0QWN0UmVz",
-            "cBAZYgZwcm90bzM="));
+            "AhILCgdQU19GQUlMEAMSDgoKUFNfVElNRU9VVBAEKocBCgtFVFBDYXJkVHlw",
+            "ZRINCglDVF9TSU5HTEUQABINCglDVF9ET1VCTEUQARIOCgpDVF9KSU5fSFVB",
+            "EAISDgoKQ1RfU0hVTl9aSRADEg8KC0NUX1NIVU5fSklOEAQSDQoJQ1RfQkFP",
+            "X1pJEAUSDgoKQ1RfU1BFQ0lBTBAGEgoKBkNUX01BWBAHKoQBCg1FVFBHYW1l",
+            "QWN0aW9uEg0KCUludmFsZEFjdBAAEgoKBkdpdmVVcBABEgwKCExvb2tDYXJk",
+            "EAISCwoHQ2FsbEJldBAEEgoKBkFkZEJldBAIEg8KC0NvbXBhcmVDYXJkEBAS",
+            "EAoMQ29tcGFyZVJlcGx5ECASDgoKQWxsQ29tcGFyZRBAKr8FCg9FVFBNc2dJ",
+            "RFN1YkdhbWUSFQoRTXNnSURTdWJHYW1lX051bGwQABIeChpNc2dJRFN1Ykdh",
+            "bWVfR2FtZVN0YXJ0UmVzcBABEiEKHU1zZ0lEU3ViR2FtZV9Ob3RpZnlBY3Rp",
+            "b25SZXNwEAISFwoTTXNnSURTdWJHYW1lX0FjdGlvbhADEhsKF01zZ0lEU3Vi",
+            "R2FtZV9HaXZlVXBSZXNwEAQSGQoVTXNnSURTdWJHYW1lX0xvb2tDYXJkEAUS",
+            "GwoXTXNnSURTdWJHYW1lX0FkZEJldFJlc3AQBhIgChxNc2dJRFN1YkdhbWVf",
+            "Q29tcGFyZUNhcmRSZXNwEAcSHwobTXNnSURTdWJHYW1lX0NvbXBhcmVSZXRS",
+            "ZXNwEAgSHwobTXNnSURTdWJHYW1lX0dhbWVSZXN1bHRSZXNwEAkSIAocTXNn",
+            "SURTdWJHYW1lX05vdGlmeVN0YXRlUmVzcBAKEhwKGE1zZ0lEU3ViR2FtZV9U",
+            "aW1lT3V0UmVzcBALEh0KGU1zZ0lEU3ViR2FtZV9UaW1lT3V0UmVhZHkQDBIh",
+            "Ch1Nc2dJRFN1YkdhbWVfVGltZU91dFJlYWR5UmVzcBANEiAKHE1zZ0lEU3Vi",
+            "R2FtZV9UaW1lT3V0S2lja1Jlc3AQDhImCiJNc2dJRFN1YkdhbWVfTm90aWZ5",
+            "U3lzdGVtQ2hlYXRSZXNwEBQSIwofTXNnSURTdWJHYW1lX05vdGlmeUNhcmRU",
+            "eXBlUmVzcBAVEiAKHE1zZ0lEU3ViR2FtZV9Ob3RpZnlJc01heFJlc3AQFhIn",
+            "CiNNc2dJRFN1YkdhbWVfTm90aWZ5UmVtYWluRG91YmxlUmVzcBAXEiAKHE1z",
+            "Z0lEU3ViR2FtZV9Ob3RpZnlSb3VuZFJlc3AQGBIiCh5Nc2dJRFN1YkdhbWVf",
+            "Tm90aWZ5TGFzdEFjdFJlc3AQGWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::TeenPattiIndia.ETPGameState), typeof(global::TeenPattiIndia.ETPPlayerState), typeof(global::TeenPattiIndia.ETPCardType), typeof(global::TeenPattiIndia.ETPGameAction), typeof(global::TeenPattiIndia.ETPMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -160,6 +160,10 @@ namespace TeenPattiIndia {
     ///淘汰
     /// </summary>
     [pbr::OriginalName("PS_FAIL")] PsFail = 3,
+    /// <summary>
+    ///超时
+    /// </summary>
+    [pbr::OriginalName("PS_TIMEOUT")] PsTimeout = 4,
   }
 
   /// <summary>

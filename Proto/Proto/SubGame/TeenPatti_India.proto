@@ -19,6 +19,7 @@ enum ETPPlayerState
 	PS_PLAY								= 1;	//游戏
 	PS_GIVE								= 2;	//弃牌
 	PS_FAIL								= 3;	//淘汰
+	PS_TIMEOUT							= 4;	//超时
 };
 
 //牌型

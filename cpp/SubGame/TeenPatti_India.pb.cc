@@ -487,34 +487,34 @@ const char descriptor_table_protodef_TeenPatti_5fIndia_2eproto[] PROTOBUF_SECTIO
   "tifyPlayerAct\022\020\n\010chair_id\030\001 \001(\005\022\013\n\003act\030\002"
   " \001(\005*g\n\014ETPGameState\022\017\n\013GS_TP_READY\020\000\022\016\n"
   "\nGS_TP_DEAL\020\001\022\021\n\rGS_TP_PLAYING\020\002\022\021\n\rGS_T"
-  "P_COMPARE\020\003\022\020\n\014GS_TP_RESULT\020\004*E\n\016ETPPlay"
+  "P_COMPARE\020\003\022\020\n\014GS_TP_RESULT\020\004*U\n\016ETPPlay"
   "erState\022\014\n\010PS_READY\020\000\022\013\n\007PS_PLAY\020\001\022\013\n\007PS"
-  "_GIVE\020\002\022\013\n\007PS_FAIL\020\003*\207\001\n\013ETPCardType\022\r\n\t"
-  "CT_SINGLE\020\000\022\r\n\tCT_DOUBLE\020\001\022\016\n\nCT_JIN_HUA"
-  "\020\002\022\016\n\nCT_SHUN_ZI\020\003\022\017\n\013CT_SHUN_JIN\020\004\022\r\n\tC"
-  "T_BAO_ZI\020\005\022\016\n\nCT_SPECIAL\020\006\022\n\n\006CT_MAX\020\007*\204"
-  "\001\n\rETPGameAction\022\r\n\tInvaldAct\020\000\022\n\n\006GiveU"
-  "p\020\001\022\014\n\010LookCard\020\002\022\013\n\007CallBet\020\004\022\n\n\006AddBet"
-  "\020\010\022\017\n\013CompareCard\020\020\022\020\n\014CompareReply\020 \022\016\n"
-  "\nAllCompare\020@*\277\005\n\017ETPMsgIDSubGame\022\025\n\021Msg"
-  "IDSubGame_Null\020\000\022\036\n\032MsgIDSubGame_GameSta"
-  "rtResp\020\001\022!\n\035MsgIDSubGame_NotifyActionRes"
-  "p\020\002\022\027\n\023MsgIDSubGame_Action\020\003\022\033\n\027MsgIDSub"
-  "Game_GiveUpResp\020\004\022\031\n\025MsgIDSubGame_LookCa"
-  "rd\020\005\022\033\n\027MsgIDSubGame_AddBetResp\020\006\022 \n\034Msg"
-  "IDSubGame_CompareCardResp\020\007\022\037\n\033MsgIDSubG"
-  "ame_CompareRetResp\020\010\022\037\n\033MsgIDSubGame_Gam"
-  "eResultResp\020\t\022 \n\034MsgIDSubGame_NotifyStat"
-  "eResp\020\n\022\034\n\030MsgIDSubGame_TimeOutResp\020\013\022\035\n"
-  "\031MsgIDSubGame_TimeOutReady\020\014\022!\n\035MsgIDSub"
-  "Game_TimeOutReadyResp\020\r\022 \n\034MsgIDSubGame_"
-  "TimeOutKickResp\020\016\022&\n\"MsgIDSubGame_Notify"
-  "SystemCheatResp\020\024\022#\n\037MsgIDSubGame_Notify"
-  "CardTypeResp\020\025\022 \n\034MsgIDSubGame_NotifyIsM"
-  "axResp\020\026\022\'\n#MsgIDSubGame_NotifyRemainDou"
-  "bleResp\020\027\022 \n\034MsgIDSubGame_NotifyRoundRes"
-  "p\020\030\022\"\n\036MsgIDSubGame_NotifyLastActResp\020\031b"
-  "\006proto3"
+  "_GIVE\020\002\022\013\n\007PS_FAIL\020\003\022\016\n\nPS_TIMEOUT\020\004*\207\001\n"
+  "\013ETPCardType\022\r\n\tCT_SINGLE\020\000\022\r\n\tCT_DOUBLE"
+  "\020\001\022\016\n\nCT_JIN_HUA\020\002\022\016\n\nCT_SHUN_ZI\020\003\022\017\n\013CT"
+  "_SHUN_JIN\020\004\022\r\n\tCT_BAO_ZI\020\005\022\016\n\nCT_SPECIAL"
+  "\020\006\022\n\n\006CT_MAX\020\007*\204\001\n\rETPGameAction\022\r\n\tInva"
+  "ldAct\020\000\022\n\n\006GiveUp\020\001\022\014\n\010LookCard\020\002\022\013\n\007Cal"
+  "lBet\020\004\022\n\n\006AddBet\020\010\022\017\n\013CompareCard\020\020\022\020\n\014C"
+  "ompareReply\020 \022\016\n\nAllCompare\020@*\277\005\n\017ETPMsg"
+  "IDSubGame\022\025\n\021MsgIDSubGame_Null\020\000\022\036\n\032MsgI"
+  "DSubGame_GameStartResp\020\001\022!\n\035MsgIDSubGame"
+  "_NotifyActionResp\020\002\022\027\n\023MsgIDSubGame_Acti"
+  "on\020\003\022\033\n\027MsgIDSubGame_GiveUpResp\020\004\022\031\n\025Msg"
+  "IDSubGame_LookCard\020\005\022\033\n\027MsgIDSubGame_Add"
+  "BetResp\020\006\022 \n\034MsgIDSubGame_CompareCardRes"
+  "p\020\007\022\037\n\033MsgIDSubGame_CompareRetResp\020\010\022\037\n\033"
+  "MsgIDSubGame_GameResultResp\020\t\022 \n\034MsgIDSu"
+  "bGame_NotifyStateResp\020\n\022\034\n\030MsgIDSubGame_"
+  "TimeOutResp\020\013\022\035\n\031MsgIDSubGame_TimeOutRea"
+  "dy\020\014\022!\n\035MsgIDSubGame_TimeOutReadyResp\020\r\022"
+  " \n\034MsgIDSubGame_TimeOutKickResp\020\016\022&\n\"Msg"
+  "IDSubGame_NotifySystemCheatResp\020\024\022#\n\037Msg"
+  "IDSubGame_NotifyCardTypeResp\020\025\022 \n\034MsgIDS"
+  "ubGame_NotifyIsMaxResp\020\026\022\'\n#MsgIDSubGame"
+  "_NotifyRemainDoubleResp\020\027\022 \n\034MsgIDSubGam"
+  "e_NotifyRoundResp\020\030\022\"\n\036MsgIDSubGame_Noti"
+  "fyLastActResp\020\031b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_TeenPatti_5fIndia_2eproto_deps[1] = {
 };
@@ -536,7 +536,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Tee
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_TeenPatti_5fIndia_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_TeenPatti_5fIndia_2eproto = {
-  false, false, descriptor_table_protodef_TeenPatti_5fIndia_2eproto, "TeenPatti_India.proto", 2967,
+  false, false, descriptor_table_protodef_TeenPatti_5fIndia_2eproto, "TeenPatti_India.proto", 2983,
   &descriptor_table_TeenPatti_5fIndia_2eproto_once, descriptor_table_TeenPatti_5fIndia_2eproto_sccs, descriptor_table_TeenPatti_5fIndia_2eproto_deps, 14, 0,
   schemas, file_default_instances, TableStruct_TeenPatti_5fIndia_2eproto::offsets,
   file_level_metadata_TeenPatti_5fIndia_2eproto, 14, file_level_enum_descriptors_TeenPatti_5fIndia_2eproto, file_level_service_descriptors_TeenPatti_5fIndia_2eproto,
@@ -572,6 +572,7 @@ bool ETPPlayerState_IsValid(int value) {
     case 1:
     case 2:
     case 3:
+    case 4:
       return true;
     default:
       return false;

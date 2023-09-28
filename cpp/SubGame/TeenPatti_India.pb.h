@@ -149,12 +149,13 @@ enum ETPPlayerState : int {
   PS_PLAY = 1,
   PS_GIVE = 2,
   PS_FAIL = 3,
+  PS_TIMEOUT = 4,
   ETPPlayerState_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   ETPPlayerState_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool ETPPlayerState_IsValid(int value);
 constexpr ETPPlayerState ETPPlayerState_MIN = PS_READY;
-constexpr ETPPlayerState ETPPlayerState_MAX = PS_FAIL;
+constexpr ETPPlayerState ETPPlayerState_MAX = PS_TIMEOUT;
 constexpr int ETPPlayerState_ARRAYSIZE = ETPPlayerState_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ETPPlayerState_descriptor();
