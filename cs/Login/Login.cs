@@ -4530,7 +4530,7 @@ public sealed partial class MsgTurntableResp : pb::IMessage<MsgTurntableResp>
   public const int CodeFieldNumber = 6;
   private int code_;
   /// <summary>
-  ///错误Code
+  ///错误Code 前端码211020/211021
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int Code {

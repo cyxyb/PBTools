@@ -74,7 +74,7 @@ namespace TeenPattiIndia {
             "SUFMEAYSCgoGQ1RfTUFYEAcqhAEKDUVUUEdhbWVBY3Rpb24SDQoJSW52YWxk",
             "QWN0EAASCgoGR2l2ZVVwEAESDAoITG9va0NhcmQQAhILCgdDYWxsQmV0EAQS",
             "CgoGQWRkQmV0EAgSDwoLQ29tcGFyZUNhcmQQEBIQCgxDb21wYXJlUmVwbHkQ",
-            "IBIOCgpBbGxDb21wYXJlEEAqvQQKD0VUUE1zZ0lEU3ViR2FtZRIVChFNc2dJ",
+            "IBIOCgpBbGxDb21wYXJlEEAqnQUKD0VUUE1zZ0lEU3ViR2FtZRIVChFNc2dJ",
             "RFN1YkdhbWVfTnVsbBAAEh4KGk1zZ0lEU3ViR2FtZV9HYW1lU3RhcnRSZXNw",
             "EAESIQodTXNnSURTdWJHYW1lX05vdGlmeUFjdGlvblJlc3AQAhIXChNNc2dJ",
             "RFN1YkdhbWVfQWN0aW9uEAMSGwoXTXNnSURTdWJHYW1lX0dpdmVVcFJlc3AQ",
@@ -82,12 +82,14 @@ namespace TeenPattiIndia {
             "QWRkQmV0UmVzcBAGEiAKHE1zZ0lEU3ViR2FtZV9Db21wYXJlQ2FyZFJlc3AQ",
             "BxIfChtNc2dJRFN1YkdhbWVfQ29tcGFyZVJldFJlc3AQCBIfChtNc2dJRFN1",
             "YkdhbWVfR2FtZVJlc3VsdFJlc3AQCRIgChxNc2dJRFN1YkdhbWVfTm90aWZ5",
-            "U3RhdGVSZXNwEAoSJgoiTXNnSURTdWJHYW1lX05vdGlmeVN5c3RlbUNoZWF0",
-            "UmVzcBAUEiMKH01zZ0lEU3ViR2FtZV9Ob3RpZnlDYXJkVHlwZVJlc3AQFRIg",
-            "ChxNc2dJRFN1YkdhbWVfTm90aWZ5SXNNYXhSZXNwEBYSJwojTXNnSURTdWJH",
-            "YW1lX05vdGlmeVJlbWFpbkRvdWJsZVJlc3AQFxIgChxNc2dJRFN1YkdhbWVf",
-            "Tm90aWZ5Um91bmRSZXNwEBgSIgoeTXNnSURTdWJHYW1lX05vdGlmeUxhc3RB",
-            "Y3RSZXNwEBliBnByb3RvMw=="));
+            "U3RhdGVSZXNwEAoSHAoYTXNnSURTdWJHYW1lX1RpbWVPdXRSZXNwEAsSHQoZ",
+            "TXNnSURTdWJHYW1lX1RpbWVPdXRSZWFkeRAMEiEKHU1zZ0lEU3ViR2FtZV9U",
+            "aW1lT3V0UmVhZHlSZXNwEA0SJgoiTXNnSURTdWJHYW1lX05vdGlmeVN5c3Rl",
+            "bUNoZWF0UmVzcBAUEiMKH01zZ0lEU3ViR2FtZV9Ob3RpZnlDYXJkVHlwZVJl",
+            "c3AQFRIgChxNc2dJRFN1YkdhbWVfTm90aWZ5SXNNYXhSZXNwEBYSJwojTXNn",
+            "SURTdWJHYW1lX05vdGlmeVJlbWFpbkRvdWJsZVJlc3AQFxIgChxNc2dJRFN1",
+            "YkdhbWVfTm90aWZ5Um91bmRSZXNwEBgSIgoeTXNnSURTdWJHYW1lX05vdGlm",
+            "eUxhc3RBY3RSZXNwEBliBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::TeenPattiIndia.ETPGameState), typeof(global::TeenPattiIndia.ETPPlayerState), typeof(global::TeenPattiIndia.ETPCardType), typeof(global::TeenPattiIndia.ETPGameAction), typeof(global::TeenPattiIndia.ETPMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -277,6 +279,18 @@ namespace TeenPattiIndia {
     ///桌子状态(TPMsgTableState)
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_NotifyStateResp")] MsgIdsubGameNotifyStateResp = 10,
+    /// <summary>
+    ///通知超时(MsgCommonBool)
+    /// </summary>
+    [pbr::OriginalName("MsgIDSubGame_TimeOutResp")] MsgIdsubGameTimeOutResp = 11,
+    /// <summary>
+    ///重新准备(MsgCommonBool)
+    /// </summary>
+    [pbr::OriginalName("MsgIDSubGame_TimeOutReady")] MsgIdsubGameTimeOutReady = 12,
+    /// <summary>
+    ///准备返回(MsgCommonBool)
+    /// </summary>
+    [pbr::OriginalName("MsgIDSubGame_TimeOutReadyResp")] MsgIdsubGameTimeOutReadyResp = 13,
     /// <summary>
     //////////////////////////机器人消息///////////////////////
     /// </summary>

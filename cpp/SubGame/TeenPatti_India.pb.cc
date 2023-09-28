@@ -496,7 +496,7 @@ const char descriptor_table_protodef_TeenPatti_5fIndia_2eproto[] PROTOBUF_SECTIO
   "\001\n\rETPGameAction\022\r\n\tInvaldAct\020\000\022\n\n\006GiveU"
   "p\020\001\022\014\n\010LookCard\020\002\022\013\n\007CallBet\020\004\022\n\n\006AddBet"
   "\020\010\022\017\n\013CompareCard\020\020\022\020\n\014CompareReply\020 \022\016\n"
-  "\nAllCompare\020@*\275\004\n\017ETPMsgIDSubGame\022\025\n\021Msg"
+  "\nAllCompare\020@*\235\005\n\017ETPMsgIDSubGame\022\025\n\021Msg"
   "IDSubGame_Null\020\000\022\036\n\032MsgIDSubGame_GameSta"
   "rtResp\020\001\022!\n\035MsgIDSubGame_NotifyActionRes"
   "p\020\002\022\027\n\023MsgIDSubGame_Action\020\003\022\033\n\027MsgIDSub"
@@ -505,12 +505,15 @@ const char descriptor_table_protodef_TeenPatti_5fIndia_2eproto[] PROTOBUF_SECTIO
   "IDSubGame_CompareCardResp\020\007\022\037\n\033MsgIDSubG"
   "ame_CompareRetResp\020\010\022\037\n\033MsgIDSubGame_Gam"
   "eResultResp\020\t\022 \n\034MsgIDSubGame_NotifyStat"
-  "eResp\020\n\022&\n\"MsgIDSubGame_NotifySystemChea"
-  "tResp\020\024\022#\n\037MsgIDSubGame_NotifyCardTypeRe"
-  "sp\020\025\022 \n\034MsgIDSubGame_NotifyIsMaxResp\020\026\022\'"
-  "\n#MsgIDSubGame_NotifyRemainDoubleResp\020\027\022"
-  " \n\034MsgIDSubGame_NotifyRoundResp\020\030\022\"\n\036Msg"
-  "IDSubGame_NotifyLastActResp\020\031b\006proto3"
+  "eResp\020\n\022\034\n\030MsgIDSubGame_TimeOutResp\020\013\022\035\n"
+  "\031MsgIDSubGame_TimeOutReady\020\014\022!\n\035MsgIDSub"
+  "Game_TimeOutReadyResp\020\r\022&\n\"MsgIDSubGame_"
+  "NotifySystemCheatResp\020\024\022#\n\037MsgIDSubGame_"
+  "NotifyCardTypeResp\020\025\022 \n\034MsgIDSubGame_Not"
+  "ifyIsMaxResp\020\026\022\'\n#MsgIDSubGame_NotifyRem"
+  "ainDoubleResp\020\027\022 \n\034MsgIDSubGame_NotifyRo"
+  "undResp\020\030\022\"\n\036MsgIDSubGame_NotifyLastActR"
+  "esp\020\031b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_TeenPatti_5fIndia_2eproto_deps[1] = {
 };
@@ -532,7 +535,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Tee
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_TeenPatti_5fIndia_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_TeenPatti_5fIndia_2eproto = {
-  false, false, descriptor_table_protodef_TeenPatti_5fIndia_2eproto, "TeenPatti_India.proto", 2837,
+  false, false, descriptor_table_protodef_TeenPatti_5fIndia_2eproto, "TeenPatti_India.proto", 2933,
   &descriptor_table_TeenPatti_5fIndia_2eproto_once, descriptor_table_TeenPatti_5fIndia_2eproto_sccs, descriptor_table_TeenPatti_5fIndia_2eproto_deps, 14, 0,
   schemas, file_default_instances, TableStruct_TeenPatti_5fIndia_2eproto::offsets,
   file_level_metadata_TeenPatti_5fIndia_2eproto, 14, file_level_enum_descriptors_TeenPatti_5fIndia_2eproto, file_level_service_descriptors_TeenPatti_5fIndia_2eproto,
@@ -631,6 +634,9 @@ bool ETPMsgIDSubGame_IsValid(int value) {
     case 8:
     case 9:
     case 10:
+    case 11:
+    case 12:
+    case 13:
     case 20:
     case 21:
     case 22:
