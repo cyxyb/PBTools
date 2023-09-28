@@ -64,6 +64,7 @@ enum ETPMsgIDSubGame
 	MsgIDSubGame_TimeOutResp			= 11;	//通知超时(MsgCommonBool)
 	MsgIDSubGame_TimeOutReady			= 12;	//重新准备(MsgCommonBool)
 	MsgIDSubGame_TimeOutReadyResp		= 13;	//准备返回(MsgCommonBool)
+	MsgIDSubGame_TimeOutKickResp		= 14;	//超时踢了游戏(MsgCommonBool)
 
 	/////////////////////////机器人消息///////////////////////
 	MsgIDSubGame_NotifySystemCheatResp	= 20;	//通知系统作弊率

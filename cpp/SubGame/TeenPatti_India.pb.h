@@ -248,6 +248,7 @@ enum ETPMsgIDSubGame : int {
   MsgIDSubGame_TimeOutResp = 11,
   MsgIDSubGame_TimeOutReady = 12,
   MsgIDSubGame_TimeOutReadyResp = 13,
+  MsgIDSubGame_TimeOutKickResp = 14,
   MsgIDSubGame_NotifySystemCheatResp = 20,
   MsgIDSubGame_NotifyCardTypeResp = 21,
   MsgIDSubGame_NotifyIsMaxResp = 22,
