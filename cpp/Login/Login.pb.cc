@@ -15,8 +15,6 @@
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
 extern PROTOBUF_INTERNAL_EXPORT_Login_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ActiveInfoRet_Login_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_Login_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgBankRecord_Login_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_Login_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgBindParentInfo_Login_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_Login_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgCommonKV_Login_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_Login_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgInviteAwardConfig_Login_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_Login_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgItem_Login_2eproto;
@@ -24,6 +22,7 @@ extern PROTOBUF_INTERNAL_EXPORT_Login_2eproto ::PROTOBUF_NAMESPACE_ID::internal:
 extern PROTOBUF_INTERNAL_EXPORT_Login_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgQueryRebateRecord_Login_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_Login_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgSubagentInformation_Login_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_Login_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgTopInfo_Login_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_Login_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgTransferRecord_Login_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_Login_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgTurnCfg_Login_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_Login_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgTurnPlayInfo_Login_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_Login_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgTurntableHistoryData_Login_2eproto;
@@ -160,22 +159,10 @@ class MsgModifySignatureDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgModifySignature> _instance;
 } _MsgModifySignature_default_instance_;
-class MsgBankChangePasswordDefaultTypeInternal {
+class MsgTransferOperateDefaultTypeInternal {
  public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgBankChangePassword> _instance;
-} _MsgBankChangePassword_default_instance_;
-class MsgBankOperateDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgBankOperate> _instance;
-} _MsgBankOperate_default_instance_;
-class MsgBankTakeOutDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgBankTakeOut> _instance;
-} _MsgBankTakeOut_default_instance_;
-class MsgBankTransferDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgBankTransfer> _instance;
-} _MsgBankTransfer_default_instance_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgTransferOperate> _instance;
+} _MsgTransferOperate_default_instance_;
 class MsgTopInfoDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgTopInfo> _instance;
@@ -188,18 +175,26 @@ class MsgTopListRespDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgTopListResp> _instance;
 } _MsgTopListResp_default_instance_;
-class MsgBankTransferRespDefaultTypeInternal {
+class MsgTransferOperateRespDefaultTypeInternal {
  public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgBankTransferResp> _instance;
-} _MsgBankTransferResp_default_instance_;
-class MsgBankRecordDefaultTypeInternal {
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgTransferOperateResp> _instance;
+} _MsgTransferOperateResp_default_instance_;
+class MsgTransferOperateSyncRespDefaultTypeInternal {
  public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgBankRecord> _instance;
-} _MsgBankRecord_default_instance_;
-class MsgBankRecordRespDefaultTypeInternal {
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgTransferOperateSyncResp> _instance;
+} _MsgTransferOperateSyncResp_default_instance_;
+class MsgTransferReceiveRespDefaultTypeInternal {
  public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgBankRecordResp> _instance;
-} _MsgBankRecordResp_default_instance_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgTransferReceiveResp> _instance;
+} _MsgTransferReceiveResp_default_instance_;
+class MsgTransferRecordDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgTransferRecord> _instance;
+} _MsgTransferRecord_default_instance_;
+class MsgTransferRecordRespDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgTransferRecordResp> _instance;
+} _MsgTransferRecordResp_default_instance_;
 class MsgPhoneCodeDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgPhoneCode> _instance;
@@ -212,10 +207,10 @@ class MsgPlayerItemDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgPlayerItem> _instance;
 } _MsgPlayerItem_default_instance_;
-class MsgBankQueryNicknameDefaultTypeInternal {
+class MsgTransferQueryNicknameDefaultTypeInternal {
  public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgBankQueryNickname> _instance;
-} _MsgBankQueryNickname_default_instance_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgTransferQueryNickname> _instance;
+} _MsgTransferQueryNickname_default_instance_;
 class MsgSubagentInformationDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgSubagentInformation> _instance;
@@ -224,10 +219,6 @@ class MsgTtotalSubagentInformationDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgTtotalSubagentInformation> _instance;
 } _MsgTtotalSubagentInformation_default_instance_;
-class MsgBindParentInfoDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgBindParentInfo> _instance;
-} _MsgBindParentInfo_default_instance_;
 class MsgBindInviteCodeRespDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgBindInviteCodeResp> _instance;
@@ -298,111 +289,6 @@ static void InitDefaultsscc_info_MsgActiveInfoSCRet_Login_2eproto() {
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MsgActiveInfoSCRet_Login_2eproto}, {
       &scc_info_ActiveInfoRet_Login_2eproto.base,}};
 
-static void InitDefaultsscc_info_MsgBankChangePassword_Login_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_MsgBankChangePassword_default_instance_;
-    new (ptr) ::MsgBankChangePassword();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgBankChangePassword_Login_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgBankChangePassword_Login_2eproto}, {}};
-
-static void InitDefaultsscc_info_MsgBankOperate_Login_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_MsgBankOperate_default_instance_;
-    new (ptr) ::MsgBankOperate();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgBankOperate_Login_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgBankOperate_Login_2eproto}, {}};
-
-static void InitDefaultsscc_info_MsgBankQueryNickname_Login_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_MsgBankQueryNickname_default_instance_;
-    new (ptr) ::MsgBankQueryNickname();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgBankQueryNickname_Login_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgBankQueryNickname_Login_2eproto}, {}};
-
-static void InitDefaultsscc_info_MsgBankRecord_Login_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_MsgBankRecord_default_instance_;
-    new (ptr) ::MsgBankRecord();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgBankRecord_Login_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgBankRecord_Login_2eproto}, {}};
-
-static void InitDefaultsscc_info_MsgBankRecordResp_Login_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_MsgBankRecordResp_default_instance_;
-    new (ptr) ::MsgBankRecordResp();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_MsgBankRecordResp_Login_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MsgBankRecordResp_Login_2eproto}, {
-      &scc_info_MsgBankRecord_Login_2eproto.base,}};
-
-static void InitDefaultsscc_info_MsgBankTakeOut_Login_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_MsgBankTakeOut_default_instance_;
-    new (ptr) ::MsgBankTakeOut();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgBankTakeOut_Login_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgBankTakeOut_Login_2eproto}, {}};
-
-static void InitDefaultsscc_info_MsgBankTransfer_Login_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_MsgBankTransfer_default_instance_;
-    new (ptr) ::MsgBankTransfer();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgBankTransfer_Login_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgBankTransfer_Login_2eproto}, {}};
-
-static void InitDefaultsscc_info_MsgBankTransferResp_Login_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_MsgBankTransferResp_default_instance_;
-    new (ptr) ::MsgBankTransferResp();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgBankTransferResp_Login_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgBankTransferResp_Login_2eproto}, {}};
-
 static void InitDefaultsscc_info_MsgBindInviteCodeResp_Login_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -413,9 +299,8 @@ static void InitDefaultsscc_info_MsgBindInviteCodeResp_Login_2eproto() {
   }
 }
 
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_MsgBindInviteCodeResp_Login_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MsgBindInviteCodeResp_Login_2eproto}, {
-      &scc_info_MsgBindParentInfo_Login_2eproto.base,}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgBindInviteCodeResp_Login_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgBindInviteCodeResp_Login_2eproto}, {}};
 
 static void InitDefaultsscc_info_MsgBindParentData_Login_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -429,19 +314,6 @@ static void InitDefaultsscc_info_MsgBindParentData_Login_2eproto() {
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgBindParentData_Login_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgBindParentData_Login_2eproto}, {}};
-
-static void InitDefaultsscc_info_MsgBindParentInfo_Login_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_MsgBindParentInfo_default_instance_;
-    new (ptr) ::MsgBindParentInfo();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgBindParentInfo_Login_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgBindParentInfo_Login_2eproto}, {}};
 
 static void InitDefaultsscc_info_MsgBindPhone_Login_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -774,6 +646,98 @@ static void InitDefaultsscc_info_MsgTopListResp_Login_2eproto() {
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MsgTopListResp_Login_2eproto}, {
       &scc_info_MsgTopInfo_Login_2eproto.base,}};
 
+static void InitDefaultsscc_info_MsgTransferOperate_Login_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_MsgTransferOperate_default_instance_;
+    new (ptr) ::MsgTransferOperate();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgTransferOperate_Login_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgTransferOperate_Login_2eproto}, {}};
+
+static void InitDefaultsscc_info_MsgTransferOperateResp_Login_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_MsgTransferOperateResp_default_instance_;
+    new (ptr) ::MsgTransferOperateResp();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgTransferOperateResp_Login_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgTransferOperateResp_Login_2eproto}, {}};
+
+static void InitDefaultsscc_info_MsgTransferOperateSyncResp_Login_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_MsgTransferOperateSyncResp_default_instance_;
+    new (ptr) ::MsgTransferOperateSyncResp();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgTransferOperateSyncResp_Login_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgTransferOperateSyncResp_Login_2eproto}, {}};
+
+static void InitDefaultsscc_info_MsgTransferQueryNickname_Login_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_MsgTransferQueryNickname_default_instance_;
+    new (ptr) ::MsgTransferQueryNickname();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgTransferQueryNickname_Login_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgTransferQueryNickname_Login_2eproto}, {}};
+
+static void InitDefaultsscc_info_MsgTransferReceiveResp_Login_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_MsgTransferReceiveResp_default_instance_;
+    new (ptr) ::MsgTransferReceiveResp();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgTransferReceiveResp_Login_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgTransferReceiveResp_Login_2eproto}, {}};
+
+static void InitDefaultsscc_info_MsgTransferRecord_Login_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_MsgTransferRecord_default_instance_;
+    new (ptr) ::MsgTransferRecord();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgTransferRecord_Login_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgTransferRecord_Login_2eproto}, {}};
+
+static void InitDefaultsscc_info_MsgTransferRecordResp_Login_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_MsgTransferRecordResp_default_instance_;
+    new (ptr) ::MsgTransferRecordResp();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_MsgTransferRecordResp_Login_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MsgTransferRecordResp_Login_2eproto}, {
+      &scc_info_MsgTransferRecord_Login_2eproto.base,}};
+
 static void InitDefaultsscc_info_MsgTtotalSubagentInformation_Login_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -909,7 +873,7 @@ static void InitDefaultsscc_info_MsgVIPInfo_Login_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgVIPInfo_Login_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgVIPInfo_Login_2eproto}, {}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Login_2eproto[51];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Login_2eproto[49];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_Login_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_Login_2eproto = nullptr;
 
@@ -952,7 +916,6 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::MsgPlayerLoginResp, vip_level_),
   PROTOBUF_FIELD_OFFSET(::MsgPlayerLoginResp, avatar_frame_),
   PROTOBUF_FIELD_OFFSET(::MsgPlayerLoginResp, invite_code_),
-  PROTOBUF_FIELD_OFFSET(::MsgPlayerLoginResp, bank_password_),
   PROTOBUF_FIELD_OFFSET(::MsgPlayerLoginResp, signature_),
   PROTOBUF_FIELD_OFFSET(::MsgPlayerLoginResp, agent_level_),
   PROTOBUF_FIELD_OFFSET(::MsgPlayerLoginResp, password_),
@@ -1244,34 +1207,12 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::MsgModifySignature, user_id_),
   PROTOBUF_FIELD_OFFSET(::MsgModifySignature, signature_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::MsgBankChangePassword, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::MsgTransferOperate, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::MsgBankChangePassword, password_),
-  PROTOBUF_FIELD_OFFSET(::MsgBankChangePassword, code_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::MsgBankOperate, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::MsgBankOperate, gold_),
-  PROTOBUF_FIELD_OFFSET(::MsgBankOperate, operate_type_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::MsgBankTakeOut, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::MsgBankTakeOut, ret_value_),
-  PROTOBUF_FIELD_OFFSET(::MsgBankTakeOut, user_gold_),
-  PROTOBUF_FIELD_OFFSET(::MsgBankTakeOut, bank_gold_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::MsgBankTransfer, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::MsgBankTransfer, recv_user_id_),
-  PROTOBUF_FIELD_OFFSET(::MsgBankTransfer, transfer_gold_),
+  PROTOBUF_FIELD_OFFSET(::MsgTransferOperate, recv_user_id_),
+  PROTOBUF_FIELD_OFFSET(::MsgTransferOperate, transfer_gold_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgTopInfo, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1305,27 +1246,45 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::MsgTopListResp, is_end_),
   PROTOBUF_FIELD_OFFSET(::MsgTopListResp, lists_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::MsgBankTransferResp, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::MsgTransferOperateResp, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::MsgBankTransferResp, ret_value_),
-  PROTOBUF_FIELD_OFFSET(::MsgBankTransferResp, bank_gold_),
+  PROTOBUF_FIELD_OFFSET(::MsgTransferOperateResp, ret_value_),
+  PROTOBUF_FIELD_OFFSET(::MsgTransferOperateResp, user_gold_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::MsgBankRecord, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::MsgTransferOperateSyncResp, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::MsgBankRecord, send_user_id_),
-  PROTOBUF_FIELD_OFFSET(::MsgBankRecord, transfer_gold_),
-  PROTOBUF_FIELD_OFFSET(::MsgBankRecord, timer_),
-  PROTOBUF_FIELD_OFFSET(::MsgBankRecord, recv_user_id_),
+  PROTOBUF_FIELD_OFFSET(::MsgTransferOperateSyncResp, ret_value_),
+  PROTOBUF_FIELD_OFFSET(::MsgTransferOperateSyncResp, send_user_id_),
+  PROTOBUF_FIELD_OFFSET(::MsgTransferOperateSyncResp, add_gold_),
+  PROTOBUF_FIELD_OFFSET(::MsgTransferOperateSyncResp, receive_state_),
+  PROTOBUF_FIELD_OFFSET(::MsgTransferOperateSyncResp, transfer_id_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::MsgBankRecordResp, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::MsgTransferReceiveResp, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::MsgBankRecordResp, records_),
+  PROTOBUF_FIELD_OFFSET(::MsgTransferReceiveResp, ret_value_),
+  PROTOBUF_FIELD_OFFSET(::MsgTransferReceiveResp, user_gold_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::MsgTransferRecord, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::MsgTransferRecord, send_user_id_),
+  PROTOBUF_FIELD_OFFSET(::MsgTransferRecord, transfer_gold_),
+  PROTOBUF_FIELD_OFFSET(::MsgTransferRecord, timer_),
+  PROTOBUF_FIELD_OFFSET(::MsgTransferRecord, recv_user_id_),
+  PROTOBUF_FIELD_OFFSET(::MsgTransferRecord, receive_state_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::MsgTransferRecordResp, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::MsgTransferRecordResp, records_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgPhoneCode, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1347,13 +1306,13 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::MsgPlayerItem, item_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::MsgBankQueryNickname, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::MsgTransferQueryNickname, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::MsgBankQueryNickname, ret_value_),
-  PROTOBUF_FIELD_OFFSET(::MsgBankQueryNickname, nickname_),
-  PROTOBUF_FIELD_OFFSET(::MsgBankQueryNickname, tax_),
+  PROTOBUF_FIELD_OFFSET(::MsgTransferQueryNickname, ret_value_),
+  PROTOBUF_FIELD_OFFSET(::MsgTransferQueryNickname, nickname_),
+  PROTOBUF_FIELD_OFFSET(::MsgTransferQueryNickname, tax_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgSubagentInformation, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1372,75 +1331,63 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::MsgTtotalSubagentInformation, agent_info_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::MsgBindParentInfo, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::MsgBindParentInfo, user_id_),
-  PROTOBUF_FIELD_OFFSET(::MsgBindParentInfo, avatar_),
-  PROTOBUF_FIELD_OFFSET(::MsgBindParentInfo, avatar_frame_),
-  PROTOBUF_FIELD_OFFSET(::MsgBindParentInfo, nick_name_),
-  ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgBindInviteCodeResp, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::MsgBindInviteCodeResp, res_code_),
   PROTOBUF_FIELD_OFFSET(::MsgBindInviteCodeResp, user_type_),
-  PROTOBUF_FIELD_OFFSET(::MsgBindInviteCodeResp, info_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::MsgPlayerLogin)},
   { 19, -1, sizeof(::MsgPlayerLoginResp)},
-  { 42, -1, sizeof(::MsgModifyPassword)},
-  { 49, -1, sizeof(::MsgBindPhone)},
-  { 58, -1, sizeof(::MsgCommonKV)},
-  { 65, -1, sizeof(::MsgCheckInInfo)},
-  { 74, -1, sizeof(::MsgTurntableHistoryData)},
-  { 86, -1, sizeof(::MsgTurnPlayInfo)},
-  { 96, -1, sizeof(::MsgTurnCfg)},
-  { 105, -1, sizeof(::MsgTurntableData)},
-  { 118, -1, sizeof(::MsgTurntable)},
-  { 125, -1, sizeof(::MsgTurntableResp)},
-  { 136, -1, sizeof(::MsgMailsInfo)},
-  { 142, -1, sizeof(::MsgMailData)},
-  { 156, -1, sizeof(::MsgShareData)},
-  { 163, -1, sizeof(::MsgBindParentData)},
-  { 169, -1, sizeof(::MsgInviteAwardInfo)},
-  { 177, -1, sizeof(::MsgInviteAwardConfig)},
-  { 184, -1, sizeof(::MsgRechargeInfo)},
-  { 194, -1, sizeof(::MsgQueryRebateRecordInfo)},
-  { 200, -1, sizeof(::MsgQueryRebateRecord)},
-  { 208, -1, sizeof(::MsgForgetPassword)},
-  { 217, -1, sizeof(::MsgVIPInfo)},
-  { 233, -1, sizeof(::MsgVIPConfig)},
-  { 239, -1, sizeof(::MsgUpgradeVIP)},
-  { 246, -1, sizeof(::MsgGetAvatarInfo)},
-  { 252, -1, sizeof(::MsgPlayerInfo)},
-  { 268, -1, sizeof(::MsgActiveInfo)},
-  { 275, -1, sizeof(::ActiveInfoRet)},
-  { 291, -1, sizeof(::MsgActiveInfoSCRet)},
-  { 297, -1, sizeof(::MsgActiveInfoCSPick)},
-  { 305, -1, sizeof(::MsgActiveInfoSCPick)},
-  { 322, -1, sizeof(::MsgModifySignature)},
-  { 329, -1, sizeof(::MsgBankChangePassword)},
-  { 336, -1, sizeof(::MsgBankOperate)},
-  { 343, -1, sizeof(::MsgBankTakeOut)},
-  { 351, -1, sizeof(::MsgBankTransfer)},
-  { 358, -1, sizeof(::MsgTopInfo)},
-  { 370, -1, sizeof(::MsgGetRank)},
-  { 379, -1, sizeof(::MsgTopListResp)},
-  { 390, -1, sizeof(::MsgBankTransferResp)},
-  { 397, -1, sizeof(::MsgBankRecord)},
-  { 406, -1, sizeof(::MsgBankRecordResp)},
-  { 412, -1, sizeof(::MsgPhoneCode)},
-  { 419, -1, sizeof(::MsgItem)},
-  { 426, -1, sizeof(::MsgPlayerItem)},
-  { 432, -1, sizeof(::MsgBankQueryNickname)},
-  { 440, -1, sizeof(::MsgSubagentInformation)},
-  { 451, -1, sizeof(::MsgTtotalSubagentInformation)},
-  { 457, -1, sizeof(::MsgBindParentInfo)},
-  { 466, -1, sizeof(::MsgBindInviteCodeResp)},
+  { 41, -1, sizeof(::MsgModifyPassword)},
+  { 48, -1, sizeof(::MsgBindPhone)},
+  { 57, -1, sizeof(::MsgCommonKV)},
+  { 64, -1, sizeof(::MsgCheckInInfo)},
+  { 73, -1, sizeof(::MsgTurntableHistoryData)},
+  { 85, -1, sizeof(::MsgTurnPlayInfo)},
+  { 95, -1, sizeof(::MsgTurnCfg)},
+  { 104, -1, sizeof(::MsgTurntableData)},
+  { 117, -1, sizeof(::MsgTurntable)},
+  { 124, -1, sizeof(::MsgTurntableResp)},
+  { 135, -1, sizeof(::MsgMailsInfo)},
+  { 141, -1, sizeof(::MsgMailData)},
+  { 155, -1, sizeof(::MsgShareData)},
+  { 162, -1, sizeof(::MsgBindParentData)},
+  { 168, -1, sizeof(::MsgInviteAwardInfo)},
+  { 176, -1, sizeof(::MsgInviteAwardConfig)},
+  { 183, -1, sizeof(::MsgRechargeInfo)},
+  { 193, -1, sizeof(::MsgQueryRebateRecordInfo)},
+  { 199, -1, sizeof(::MsgQueryRebateRecord)},
+  { 207, -1, sizeof(::MsgForgetPassword)},
+  { 216, -1, sizeof(::MsgVIPInfo)},
+  { 232, -1, sizeof(::MsgVIPConfig)},
+  { 238, -1, sizeof(::MsgUpgradeVIP)},
+  { 245, -1, sizeof(::MsgGetAvatarInfo)},
+  { 251, -1, sizeof(::MsgPlayerInfo)},
+  { 267, -1, sizeof(::MsgActiveInfo)},
+  { 274, -1, sizeof(::ActiveInfoRet)},
+  { 290, -1, sizeof(::MsgActiveInfoSCRet)},
+  { 296, -1, sizeof(::MsgActiveInfoCSPick)},
+  { 304, -1, sizeof(::MsgActiveInfoSCPick)},
+  { 321, -1, sizeof(::MsgModifySignature)},
+  { 328, -1, sizeof(::MsgTransferOperate)},
+  { 335, -1, sizeof(::MsgTopInfo)},
+  { 347, -1, sizeof(::MsgGetRank)},
+  { 356, -1, sizeof(::MsgTopListResp)},
+  { 367, -1, sizeof(::MsgTransferOperateResp)},
+  { 374, -1, sizeof(::MsgTransferOperateSyncResp)},
+  { 384, -1, sizeof(::MsgTransferReceiveResp)},
+  { 391, -1, sizeof(::MsgTransferRecord)},
+  { 401, -1, sizeof(::MsgTransferRecordResp)},
+  { 407, -1, sizeof(::MsgPhoneCode)},
+  { 414, -1, sizeof(::MsgItem)},
+  { 421, -1, sizeof(::MsgPlayerItem)},
+  { 427, -1, sizeof(::MsgTransferQueryNickname)},
+  { 435, -1, sizeof(::MsgSubagentInformation)},
+  { 446, -1, sizeof(::MsgTtotalSubagentInformation)},
+  { 452, -1, sizeof(::MsgBindInviteCodeResp)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -1477,23 +1424,21 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgActiveInfoCSPick_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgActiveInfoSCPick_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgModifySignature_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgBankChangePassword_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgBankOperate_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgBankTakeOut_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgBankTransfer_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgTransferOperate_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgTopInfo_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgGetRank_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgTopListResp_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgBankTransferResp_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgBankRecord_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgBankRecordResp_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgTransferOperateResp_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgTransferOperateSyncResp_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgTransferReceiveResp_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgTransferRecord_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgTransferRecordResp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgPhoneCode_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgItem_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgPlayerItem_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgBankQueryNickname_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgTransferQueryNickname_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgSubagentInformation_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgTtotalSubagentInformation_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgBindParentInfo_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgBindInviteCodeResp_default_instance_),
 };
 
@@ -1505,155 +1450,143 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "_num\030\007 \001(\t\022\017\n\007user_ip\030\010 \001(\t\022\020\n\010is_drain\030"
   "\t \001(\010\022\016\n\006avatar\030\n \001(\t\022\020\n\010nickname\030\013 \001(\t\022"
   "\r\n\005phone\030\014 \001(\t\022\014\n\004code\030\r \001(\005\022\023\n\013invite_c"
-  "ode\030\016 \001(\t\"\355\002\n\022MsgPlayerLoginResp\022\020\n\010res_"
+  "ode\030\016 \001(\t\"\326\002\n\022MsgPlayerLoginResp\022\020\n\010res_"
   "code\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\024\n\014beautiful"
   "_id\030\003 \001(\005\022\017\n\007account\030\004 \001(\t\022\020\n\010nickname\030\005"
   " \001(\t\022\016\n\006avatar\030\006 \001(\t\022\026\n\016first_recharge\030\007"
   " \001(\010\022\021\n\tuser_type\030\010 \001(\005\022\020\n\010is_drain\030\t \001("
   "\010\022\014\n\004coin\030\n \001(\004\022\021\n\tphone_num\030\013 \001(\t\022\021\n\tvi"
   "p_level\030\014 \001(\005\022\024\n\014avatar_frame\030\r \001(\005\022\023\n\013i"
-  "nvite_code\030\016 \001(\t\022\025\n\rbank_password\030\017 \001(\010\022"
-  "\021\n\tsignature\030\020 \001(\t\022\023\n\013agent_level\030\021 \001(\005\022"
-  "\020\n\010password\030\022 \001(\t\"\?\n\021MsgModifyPassword\022\024"
-  "\n\014old_password\030\001 \001(\t\022\024\n\014new_password\030\002 \001"
-  "(\t\"V\n\014MsgBindPhone\022\014\n\004code\030\001 \001(\005\022\021\n\tphon"
-  "e_num\030\002 \001(\t\022\020\n\010password\030\003 \001(\t\022\023\n\013invite_"
-  "code\030\004 \001(\t\"#\n\013MsgCommonKV\022\t\n\001k\030\001 \001(\005\022\t\n\001"
-  "v\030\002 \001(\005\"i\n\016MsgCheckInInfo\022\022\n\ncheck_days\030"
-  "\001 \001(\005\022\017\n\007is_open\030\002 \001(\010\022\020\n\010can_pick\030\003 \001(\010"
-  "\022 \n\nCheckInCfg\030\004 \003(\0132\014.MsgCommonKV\"\213\001\n\027M"
-  "sgTurntableHistoryData\022\017\n\007user_id\030\001 \001(\005\022"
-  "\021\n\tnick_name\030\002 \001(\t\022\r\n\005score\030\003 \001(\005\022\r\n\005awa"
-  "rd\030\004 \001(\005\022\014\n\004type\030\005 \001(\005\022\022\n\naward_type\030\006 \001"
-  "(\005\022\014\n\004time\030\007 \001(\t\"s\n\017MsgTurnPlayInfo\022\020\n\010p"
-  "lay_num\030\001 \001(\005\022\022\n\nlimit_turn\030\002 \001(\005\022\022\n\nnee"
-  "d_score\030\003 \001(\005\022\020\n\010turn_pro\030\004 \001(\005\022\024\n\014turn_"
-  "max_pro\030\005 \001(\005\"L\n\nMsgTurnCfg\022\r\n\005index\030\001 \001"
-  "(\005\022\r\n\005arwad\030\002 \001(\005\022\022\n\narwad_type\030\003 \001(\005\022\014\n"
-  "\004type\030\004 \001(\005\"\243\002\n\020MsgTurntableData\022\r\n\005scor"
-  "e\030\001 \001(\003\022\025\n\rgold_to_score\030\003 \001(\005\022%\n\013silver"
-  "_info\030\004 \001(\0132\020.MsgTurnPlayInfo\022#\n\tgold_in"
-  "fo\030\005 \001(\0132\020.MsgTurnPlayInfo\022\037\n\nsilver_cfg"
-  "\030\006 \003(\0132\013.MsgTurnCfg\022\035\n\010gold_cfg\030\007 \003(\0132\013."
-  "MsgTurnCfg\022.\n\014this_history\030\010 \003(\0132\030.MsgTu"
-  "rntableHistoryData\022-\n\013big_history\030\t \003(\0132"
-  "\030.MsgTurntableHistoryData\"2\n\014MsgTurntabl"
-  "e\022\017\n\007user_id\030\001 \001(\005\022\021\n\tturn_type\030\002 \001(\003\"|\n"
-  "\020MsgTurntableResp\022\r\n\005score\030\001 \001(\003\022\022\n\nawar"
-  "d_type\030\002 \001(\005\022\021\n\tnew_value\030\003 \001(\003\022\021\n\tturnI"
-  "ndex\030\004 \001(\003\022\021\n\tget_value\030\005 \001(\003\022\014\n\004code\030\006 "
-  "\001(\005\"+\n\014MsgMailsInfo\022\033\n\005mails\030\001 \003(\0132\014.Msg"
-  "MailData\"\254\001\n\013MsgMailData\022\017\n\007mail_id\030\001 \001("
-  "\005\022\024\n\014send_user_id\030\002 \001(\005\022\021\n\tsend_time\030\003 \001"
-  "(\005\022\r\n\005title\030\004 \001(\t\022\017\n\007content\030\005 \001(\t\022\014\n\004go"
-  "ld\030\006 \001(\003\022\017\n\007is_read\030\007 \001(\010\022\020\n\010is_claim\030\010 "
-  "\001(\010\022\022\n\nto_user_id\030\t \001(\005\"6\n\014MsgShareData\022"
-  "\023\n\013invite_code\030\001 \001(\t\022\021\n\tbind_list\030\002 \003(\005\""
-  "$\n\021MsgBindParentData\022\017\n\007strCode\030\001 \001(\t\"c\n"
-  "\022MsgInviteAwardInfo\022\021\n\tinviteNum\030\001 \001(\005\022\021"
-  "\n\tpickIndex\030\002 \001(\005\022\'\n\010awardCfg\030\003 \003(\0132\025.Ms"
-  "gInviteAwardConfig\"8\n\024MsgInviteAwardConf"
-  "ig\022\021\n\tinviteNum\030\001 \001(\005\022\r\n\005award\030\002 \001(\005\"w\n\017"
-  "MsgRechargeInfo\022\021\n\tinviteNum\030\001 \001(\005\022\022\n\nto"
-  "dayAward\030\002 \001(\003\022\022\n\ntotalAward\030\003 \001(\003\022\025\n\rca"
-  "nPickAmount\030\004 \001(\003\022\022\n\ninviteCode\030\005 \001(\t\"L\n"
-  "\030MsgQueryRebateRecordInfo\0220\n\021queryRebate"
-  "Record\030\001 \003(\0132\025.MsgQueryRebateRecord\"V\n\024M"
-  "sgQueryRebateRecord\022\026\n\016rechargeUserId\030\001 "
-  "\001(\005\022\026\n\016rechargeAmount\030\002 \001(\005\022\016\n\006rebate\030\003 "
-  "\001(\005\"[\n\021MsgForgetPassword\022\023\n\013client_type\030"
-  "\001 \001(\005\022\r\n\005phone\030\002 \001(\t\022\014\n\004code\030\003 \001(\005\022\024\n\014ne"
-  "w_password\030\004 \001(\t\"\366\001\n\nMsgVIPInfo\022\021\n\tvip_l"
-  "evel\030\001 \001(\005\022\022\n\nneed_score\030\002 \001(\003\022\025\n\rturnta"
-  "ble_num\030\003 \001(\005\022\030\n\020trumpet_discount\030\004 \001(\005\022"
-  "\026\n\016check_addition\030\005 \001(\005\022\026\n\016share_additio"
-  "n\030\006 \001(\005\022\022\n\nworld_chat\030\007 \001(\010\022\016\n\006avatar\030\010 "
-  "\001(\005\022\024\n\014avatar_frame\030\t \001(\005\022\022\n\naward_gold\030"
-  "\n \001(\005\022\022\n\none_to_one\030\013 \001(\010\"-\n\014MsgVIPConfi"
-  "g\022\035\n\010vip_info\030\001 \003(\0132\013.MsgVIPInfo\"/\n\rMsgU"
-  "pgradeVIP\022\020\n\010res_code\030\001 \001(\005\022\014\n\004gold\030\002 \001("
-  "\003\"#\n\020MsgGetAvatarInfo\022\017\n\007avatars\030\001 \003(\005\"\340"
-  "\001\n\rMsgPlayerInfo\022\017\n\007user_id\030\001 \001(\005\022\024\n\014bea"
-  "utiful_id\030\002 \001(\005\022\020\n\010nickname\030\003 \001(\t\022\016\n\006ava"
-  "tar\030\004 \001(\t\022\014\n\004coin\030\005 \001(\004\022\021\n\tphone_num\030\006 \001"
-  "(\t\022\021\n\tvip_level\030\007 \001(\005\022\024\n\014avatar_frame\030\010 "
-  "\001(\005\022\021\n\tsignature\030\t \001(\t\022\023\n\013zmd_game_id\030\n "
-  "\001(\005\022\024\n\014zmd_win_gold\030\013 \001(\004\"3\n\rMsgActiveIn"
-  "fo\022\017\n\007user_id\030\001 \001(\005\022\021\n\tactive_id\030\002 \001(\005\"\330"
-  "\001\n\rActiveInfoRet\022\021\n\tactive_id\030\001 \001(\005\022\025\n\rs"
-  "ub_active_id\030\002 \001(\005\022\016\n\006param1\030\003 \001(\005\022\016\n\006pa"
-  "ram2\030\004 \001(\005\022\016\n\006param3\030\005 \001(\005\022\021\n\tprogress1\030"
-  "\006 \001(\005\022\021\n\tprogress2\030\007 \001(\005\022\021\n\tprogress3\030\010 "
-  "\001(\005\022\016\n\006reward\030\t \001(\005\022\023\n\013reward_type\030\n \001(\005"
-  "\022\017\n\007is_pick\030\013 \001(\010\"6\n\022MsgActiveInfoSCRet\022"
-  " \n\010vec_info\030\001 \003(\0132\016.ActiveInfoRet\"P\n\023Msg"
-  "ActiveInfoCSPick\022\017\n\007user_id\030\001 \001(\005\022\021\n\tact"
-  "ive_id\030\002 \001(\005\022\025\n\rsub_active_id\030\003 \001(\005\"\353\001\n\023"
-  "MsgActiveInfoSCPick\022\021\n\tactive_id\030\001 \001(\005\022\025"
-  "\n\rsub_active_id\030\002 \001(\005\022\016\n\006param1\030\003 \001(\005\022\016\n"
-  "\006param2\030\004 \001(\005\022\016\n\006param3\030\005 \001(\005\022\021\n\tprogres"
-  "s1\030\006 \001(\005\022\021\n\tprogress2\030\007 \001(\005\022\021\n\tprogress3"
-  "\030\010 \001(\005\022\016\n\006reward\030\t \001(\005\022\023\n\013reward_type\030\n "
-  "\001(\005\022\017\n\007is_pick\030\013 \001(\005\022\013\n\003res\030\014 \001(\010\"8\n\022Msg"
-  "ModifySignature\022\017\n\007user_id\030\001 \001(\005\022\021\n\tsign"
-  "ature\030\002 \001(\t\"7\n\025MsgBankChangePassword\022\020\n\010"
-  "password\030\001 \001(\t\022\014\n\004code\030\002 \001(\005\"4\n\016MsgBankO"
-  "perate\022\014\n\004gold\030\001 \001(\003\022\024\n\014operate_type\030\002 \001"
-  "(\005\"I\n\016MsgBankTakeOut\022\021\n\tret_value\030\001 \001(\005\022"
-  "\021\n\tuser_gold\030\002 \001(\003\022\021\n\tbank_gold\030\003 \001(\003\">\n"
-  "\017MsgBankTransfer\022\024\n\014recv_user_id\030\001 \001(\005\022\025"
-  "\n\rtransfer_gold\030\002 \001(\003\"\212\001\n\nMsgTopInfo\022\017\n\007"
-  "rank_id\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\014\n\004gold\030\003"
-  " \001(\004\022\021\n\tvip_level\030\004 \001(\r\022\024\n\014avatar_frame\030"
-  "\005 \001(\005\022\020\n\010head_url\030\006 \001(\t\022\021\n\tnick_name\030\007 \001"
-  "(\t\"W\n\nMsgGetRank\022\021\n\trank_type\030\001 \001(\005\022\017\n\007u"
-  "ser_id\030\002 \001(\005\022\024\n\014current_page\030\003 \001(\005\022\017\n\007ma"
-  "x_row\030\004 \001(\005\"\213\001\n\016MsgTopListResp\022\017\n\007user_i"
-  "d\030\001 \001(\005\022\021\n\trank_type\030\002 \001(\005\022\026\n\016this_rank_"
-  "ndex\030\003 \001(\005\022\021\n\tthis_gold\030\004 \001(\003\022\016\n\006is_end\030"
-  "\005 \001(\005\022\032\n\005lists\030\006 \003(\0132\013.MsgTopInfo\";\n\023Msg"
-  "BankTransferResp\022\021\n\tret_value\030\001 \001(\005\022\021\n\tb"
-  "ank_gold\030\002 \001(\003\"a\n\rMsgBankRecord\022\024\n\014send_"
-  "user_id\030\001 \001(\005\022\025\n\rtransfer_gold\030\002 \001(\003\022\r\n\005"
-  "timer\030\003 \001(\t\022\024\n\014recv_user_id\030\004 \001(\005\"4\n\021Msg"
-  "BankRecordResp\022\037\n\007records\030\001 \003(\0132\016.MsgBan"
-  "kRecord\"0\n\014MsgPhoneCode\022\021\n\tarea_code\030\001 \001"
-  "(\t\022\r\n\005phone\030\002 \001(\t\",\n\007MsgItem\022\017\n\007item_id\030"
-  "\001 \001(\005\022\020\n\010item_num\030\002 \001(\003\"\'\n\rMsgPlayerItem"
-  "\022\026\n\004item\030\001 \003(\0132\010.MsgItem\"H\n\024MsgBankQuery"
-  "Nickname\022\021\n\tret_Value\030\001 \001(\005\022\020\n\010nickname\030"
-  "\002 \001(\t\022\013\n\003tax\030\003 \001(\005\"\236\001\n\026MsgSubagentInform"
-  "ation\022\026\n\016agent_nickname\030\001 \001(\t\022\025\n\ragent_u"
-  "ser_id\030\002 \001(\005\022\022\n\nagent_type\030\003 \001(\010\022\026\n\016tota"
-  "l_shift_to\030\004 \001(\003\022\026\n\016total_roll_out\030\005 \001(\003"
-  "\022\021\n\tvip_level\030\006 \001(\005\"K\n\034MsgTtotalSubagent"
-  "Information\022+\n\nagent_info\030\001 \003(\0132\027.MsgSub"
-  "agentInformation\"]\n\021MsgBindParentInfo\022\017\n"
-  "\007user_id\030\001 \001(\005\022\016\n\006avatar\030\002 \001(\t\022\024\n\014avatar"
-  "_frame\030\003 \001(\005\022\021\n\tnick_name\030\004 \001(\t\"^\n\025MsgBi"
-  "ndInviteCodeResp\022\020\n\010res_code\030\001 \001(\005\022\021\n\tus"
-  "er_type\030\002 \001(\005\022 \n\004info\030\003 \001(\0132\022.MsgBindPar"
-  "entInfob\006proto3"
+  "nvite_code\030\016 \001(\t\022\021\n\tsignature\030\020 \001(\t\022\023\n\013a"
+  "gent_level\030\021 \001(\005\022\020\n\010password\030\022 \001(\t\"\?\n\021Ms"
+  "gModifyPassword\022\024\n\014old_password\030\001 \001(\t\022\024\n"
+  "\014new_password\030\002 \001(\t\"V\n\014MsgBindPhone\022\014\n\004c"
+  "ode\030\001 \001(\005\022\021\n\tphone_num\030\002 \001(\t\022\020\n\010password"
+  "\030\003 \001(\t\022\023\n\013invite_code\030\004 \001(\t\"#\n\013MsgCommon"
+  "KV\022\t\n\001k\030\001 \001(\005\022\t\n\001v\030\002 \001(\005\"i\n\016MsgCheckInIn"
+  "fo\022\022\n\ncheck_days\030\001 \001(\005\022\017\n\007is_open\030\002 \001(\010\022"
+  "\020\n\010can_pick\030\003 \001(\010\022 \n\nCheckInCfg\030\004 \003(\0132\014."
+  "MsgCommonKV\"\213\001\n\027MsgTurntableHistoryData\022"
+  "\017\n\007user_id\030\001 \001(\005\022\021\n\tnick_name\030\002 \001(\t\022\r\n\005s"
+  "core\030\003 \001(\005\022\r\n\005award\030\004 \001(\005\022\014\n\004type\030\005 \001(\005\022"
+  "\022\n\naward_type\030\006 \001(\005\022\014\n\004time\030\007 \001(\t\"s\n\017Msg"
+  "TurnPlayInfo\022\020\n\010play_num\030\001 \001(\005\022\022\n\nlimit_"
+  "turn\030\002 \001(\005\022\022\n\nneed_score\030\003 \001(\005\022\020\n\010turn_p"
+  "ro\030\004 \001(\005\022\024\n\014turn_max_pro\030\005 \001(\005\"L\n\nMsgTur"
+  "nCfg\022\r\n\005index\030\001 \001(\005\022\r\n\005arwad\030\002 \001(\005\022\022\n\nar"
+  "wad_type\030\003 \001(\005\022\014\n\004type\030\004 \001(\005\"\243\002\n\020MsgTurn"
+  "tableData\022\r\n\005score\030\001 \001(\003\022\025\n\rgold_to_scor"
+  "e\030\003 \001(\005\022%\n\013silver_info\030\004 \001(\0132\020.MsgTurnPl"
+  "ayInfo\022#\n\tgold_info\030\005 \001(\0132\020.MsgTurnPlayI"
+  "nfo\022\037\n\nsilver_cfg\030\006 \003(\0132\013.MsgTurnCfg\022\035\n\010"
+  "gold_cfg\030\007 \003(\0132\013.MsgTurnCfg\022.\n\014this_hist"
+  "ory\030\010 \003(\0132\030.MsgTurntableHistoryData\022-\n\013b"
+  "ig_history\030\t \003(\0132\030.MsgTurntableHistoryDa"
+  "ta\"2\n\014MsgTurntable\022\017\n\007user_id\030\001 \001(\005\022\021\n\tt"
+  "urn_type\030\002 \001(\003\"|\n\020MsgTurntableResp\022\r\n\005sc"
+  "ore\030\001 \001(\003\022\022\n\naward_type\030\002 \001(\005\022\021\n\tnew_val"
+  "ue\030\003 \001(\003\022\021\n\tturnIndex\030\004 \001(\003\022\021\n\tget_value"
+  "\030\005 \001(\003\022\014\n\004code\030\006 \001(\005\"+\n\014MsgMailsInfo\022\033\n\005"
+  "mails\030\001 \003(\0132\014.MsgMailData\"\254\001\n\013MsgMailDat"
+  "a\022\017\n\007mail_id\030\001 \001(\005\022\024\n\014send_user_id\030\002 \001(\005"
+  "\022\021\n\tsend_time\030\003 \001(\005\022\r\n\005title\030\004 \001(\t\022\017\n\007co"
+  "ntent\030\005 \001(\t\022\014\n\004gold\030\006 \001(\003\022\017\n\007is_read\030\007 \001"
+  "(\010\022\020\n\010is_claim\030\010 \001(\010\022\022\n\nto_user_id\030\t \001(\005"
+  "\"6\n\014MsgShareData\022\023\n\013invite_code\030\001 \001(\t\022\021\n"
+  "\tbind_list\030\002 \003(\005\"$\n\021MsgBindParentData\022\017\n"
+  "\007strCode\030\001 \001(\t\"c\n\022MsgInviteAwardInfo\022\021\n\t"
+  "inviteNum\030\001 \001(\005\022\021\n\tpickIndex\030\002 \001(\005\022\'\n\010aw"
+  "ardCfg\030\003 \003(\0132\025.MsgInviteAwardConfig\"8\n\024M"
+  "sgInviteAwardConfig\022\021\n\tinviteNum\030\001 \001(\005\022\r"
+  "\n\005award\030\002 \001(\005\"w\n\017MsgRechargeInfo\022\021\n\tinvi"
+  "teNum\030\001 \001(\005\022\022\n\ntodayAward\030\002 \001(\003\022\022\n\ntotal"
+  "Award\030\003 \001(\003\022\025\n\rcanPickAmount\030\004 \001(\003\022\022\n\nin"
+  "viteCode\030\005 \001(\t\"L\n\030MsgQueryRebateRecordIn"
+  "fo\0220\n\021queryRebateRecord\030\001 \003(\0132\025.MsgQuery"
+  "RebateRecord\"V\n\024MsgQueryRebateRecord\022\026\n\016"
+  "rechargeUserId\030\001 \001(\005\022\026\n\016rechargeAmount\030\002"
+  " \001(\005\022\016\n\006rebate\030\003 \001(\005\"[\n\021MsgForgetPasswor"
+  "d\022\023\n\013client_type\030\001 \001(\005\022\r\n\005phone\030\002 \001(\t\022\014\n"
+  "\004code\030\003 \001(\005\022\024\n\014new_password\030\004 \001(\t\"\366\001\n\nMs"
+  "gVIPInfo\022\021\n\tvip_level\030\001 \001(\005\022\022\n\nneed_scor"
+  "e\030\002 \001(\003\022\025\n\rturntable_num\030\003 \001(\005\022\030\n\020trumpe"
+  "t_discount\030\004 \001(\005\022\026\n\016check_addition\030\005 \001(\005"
+  "\022\026\n\016share_addition\030\006 \001(\005\022\022\n\nworld_chat\030\007"
+  " \001(\010\022\016\n\006avatar\030\010 \001(\005\022\024\n\014avatar_frame\030\t \001"
+  "(\005\022\022\n\naward_gold\030\n \001(\005\022\022\n\none_to_one\030\013 \001"
+  "(\010\"-\n\014MsgVIPConfig\022\035\n\010vip_info\030\001 \003(\0132\013.M"
+  "sgVIPInfo\"/\n\rMsgUpgradeVIP\022\020\n\010res_code\030\001"
+  " \001(\005\022\014\n\004gold\030\002 \001(\003\"#\n\020MsgGetAvatarInfo\022\017"
+  "\n\007avatars\030\001 \003(\005\"\340\001\n\rMsgPlayerInfo\022\017\n\007use"
+  "r_id\030\001 \001(\005\022\024\n\014beautiful_id\030\002 \001(\005\022\020\n\010nick"
+  "name\030\003 \001(\t\022\016\n\006avatar\030\004 \001(\t\022\014\n\004coin\030\005 \001(\004"
+  "\022\021\n\tphone_num\030\006 \001(\t\022\021\n\tvip_level\030\007 \001(\005\022\024"
+  "\n\014avatar_frame\030\010 \001(\005\022\021\n\tsignature\030\t \001(\t\022"
+  "\023\n\013zmd_game_id\030\n \001(\005\022\024\n\014zmd_win_gold\030\013 \001"
+  "(\004\"3\n\rMsgActiveInfo\022\017\n\007user_id\030\001 \001(\005\022\021\n\t"
+  "active_id\030\002 \001(\005\"\330\001\n\rActiveInfoRet\022\021\n\tact"
+  "ive_id\030\001 \001(\005\022\025\n\rsub_active_id\030\002 \001(\005\022\016\n\006p"
+  "aram1\030\003 \001(\005\022\016\n\006param2\030\004 \001(\005\022\016\n\006param3\030\005 "
+  "\001(\005\022\021\n\tprogress1\030\006 \001(\005\022\021\n\tprogress2\030\007 \001("
+  "\005\022\021\n\tprogress3\030\010 \001(\005\022\016\n\006reward\030\t \001(\005\022\023\n\013"
+  "reward_type\030\n \001(\005\022\017\n\007is_pick\030\013 \001(\010\"6\n\022Ms"
+  "gActiveInfoSCRet\022 \n\010vec_info\030\001 \003(\0132\016.Act"
+  "iveInfoRet\"P\n\023MsgActiveInfoCSPick\022\017\n\007use"
+  "r_id\030\001 \001(\005\022\021\n\tactive_id\030\002 \001(\005\022\025\n\rsub_act"
+  "ive_id\030\003 \001(\005\"\353\001\n\023MsgActiveInfoSCPick\022\021\n\t"
+  "active_id\030\001 \001(\005\022\025\n\rsub_active_id\030\002 \001(\005\022\016"
+  "\n\006param1\030\003 \001(\005\022\016\n\006param2\030\004 \001(\005\022\016\n\006param3"
+  "\030\005 \001(\005\022\021\n\tprogress1\030\006 \001(\005\022\021\n\tprogress2\030\007"
+  " \001(\005\022\021\n\tprogress3\030\010 \001(\005\022\016\n\006reward\030\t \001(\005\022"
+  "\023\n\013reward_type\030\n \001(\005\022\017\n\007is_pick\030\013 \001(\005\022\013\n"
+  "\003res\030\014 \001(\010\"8\n\022MsgModifySignature\022\017\n\007user"
+  "_id\030\001 \001(\005\022\021\n\tsignature\030\002 \001(\t\"A\n\022MsgTrans"
+  "ferOperate\022\024\n\014recv_user_id\030\001 \001(\005\022\025\n\rtran"
+  "sfer_gold\030\002 \001(\003\"\212\001\n\nMsgTopInfo\022\017\n\007rank_i"
+  "d\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\014\n\004gold\030\003 \001(\004\022\021"
+  "\n\tvip_level\030\004 \001(\r\022\024\n\014avatar_frame\030\005 \001(\005\022"
+  "\020\n\010head_url\030\006 \001(\t\022\021\n\tnick_name\030\007 \001(\t\"W\n\n"
+  "MsgGetRank\022\021\n\trank_type\030\001 \001(\005\022\017\n\007user_id"
+  "\030\002 \001(\005\022\024\n\014current_page\030\003 \001(\005\022\017\n\007max_row\030"
+  "\004 \001(\005\"\213\001\n\016MsgTopListResp\022\017\n\007user_id\030\001 \001("
+  "\005\022\021\n\trank_type\030\002 \001(\005\022\026\n\016this_rank_ndex\030\003"
+  " \001(\005\022\021\n\tthis_gold\030\004 \001(\003\022\016\n\006is_end\030\005 \001(\005\022"
+  "\032\n\005lists\030\006 \003(\0132\013.MsgTopInfo\">\n\026MsgTransf"
+  "erOperateResp\022\021\n\tret_value\030\001 \001(\005\022\021\n\tuser"
+  "_gold\030\002 \001(\003\"\203\001\n\032MsgTransferOperateSyncRe"
+  "sp\022\021\n\tret_value\030\001 \001(\005\022\024\n\014send_user_id\030\003 "
+  "\001(\005\022\020\n\010add_gold\030\004 \001(\003\022\025\n\rreceive_state\030\006"
+  " \001(\003\022\023\n\013transfer_id\030\007 \001(\003\">\n\026MsgTransfer"
+  "ReceiveResp\022\021\n\tret_value\030\001 \001(\005\022\021\n\tuser_g"
+  "old\030\002 \001(\003\"|\n\021MsgTransferRecord\022\024\n\014send_u"
+  "ser_id\030\001 \001(\005\022\025\n\rtransfer_gold\030\002 \001(\003\022\r\n\005t"
+  "imer\030\003 \001(\t\022\024\n\014recv_user_id\030\004 \001(\005\022\025\n\rrece"
+  "ive_state\030\005 \001(\005\"<\n\025MsgTransferRecordResp"
+  "\022#\n\007records\030\001 \003(\0132\022.MsgTransferRecord\"0\n"
+  "\014MsgPhoneCode\022\021\n\tarea_code\030\001 \001(\t\022\r\n\005phon"
+  "e\030\002 \001(\t\",\n\007MsgItem\022\017\n\007item_id\030\001 \001(\005\022\020\n\010i"
+  "tem_num\030\002 \001(\003\"\'\n\rMsgPlayerItem\022\026\n\004item\030\001"
+  " \003(\0132\010.MsgItem\"L\n\030MsgTransferQueryNickna"
+  "me\022\021\n\tret_Value\030\001 \001(\005\022\020\n\010nickname\030\002 \001(\t\022"
+  "\013\n\003tax\030\003 \001(\005\"\236\001\n\026MsgSubagentInformation\022"
+  "\026\n\016agent_nickname\030\001 \001(\t\022\025\n\ragent_user_id"
+  "\030\002 \001(\005\022\022\n\nagent_type\030\003 \001(\010\022\026\n\016total_shif"
+  "t_to\030\004 \001(\003\022\026\n\016total_roll_out\030\005 \001(\003\022\021\n\tvi"
+  "p_level\030\006 \001(\005\"K\n\034MsgTtotalSubagentInform"
+  "ation\022+\n\nagent_info\030\001 \003(\0132\027.MsgSubagentI"
+  "nformation\"<\n\025MsgBindInviteCodeResp\022\020\n\010r"
+  "es_code\030\001 \001(\005\022\021\n\tuser_type\030\002 \001(\005b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Login_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Login_2eproto_sccs[51] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Login_2eproto_sccs[49] = {
   &scc_info_ActiveInfoRet_Login_2eproto.base,
   &scc_info_MsgActiveInfo_Login_2eproto.base,
   &scc_info_MsgActiveInfoCSPick_Login_2eproto.base,
   &scc_info_MsgActiveInfoSCPick_Login_2eproto.base,
   &scc_info_MsgActiveInfoSCRet_Login_2eproto.base,
-  &scc_info_MsgBankChangePassword_Login_2eproto.base,
-  &scc_info_MsgBankOperate_Login_2eproto.base,
-  &scc_info_MsgBankQueryNickname_Login_2eproto.base,
-  &scc_info_MsgBankRecord_Login_2eproto.base,
-  &scc_info_MsgBankRecordResp_Login_2eproto.base,
-  &scc_info_MsgBankTakeOut_Login_2eproto.base,
-  &scc_info_MsgBankTransfer_Login_2eproto.base,
-  &scc_info_MsgBankTransferResp_Login_2eproto.base,
   &scc_info_MsgBindInviteCodeResp_Login_2eproto.base,
   &scc_info_MsgBindParentData_Login_2eproto.base,
-  &scc_info_MsgBindParentInfo_Login_2eproto.base,
   &scc_info_MsgBindPhone_Login_2eproto.base,
   &scc_info_MsgCheckInInfo_Login_2eproto.base,
   &scc_info_MsgCommonKV_Login_2eproto.base,
@@ -1679,6 +1612,13 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
   &scc_info_MsgSubagentInformation_Login_2eproto.base,
   &scc_info_MsgTopInfo_Login_2eproto.base,
   &scc_info_MsgTopListResp_Login_2eproto.base,
+  &scc_info_MsgTransferOperate_Login_2eproto.base,
+  &scc_info_MsgTransferOperateResp_Login_2eproto.base,
+  &scc_info_MsgTransferOperateSyncResp_Login_2eproto.base,
+  &scc_info_MsgTransferQueryNickname_Login_2eproto.base,
+  &scc_info_MsgTransferReceiveResp_Login_2eproto.base,
+  &scc_info_MsgTransferRecord_Login_2eproto.base,
+  &scc_info_MsgTransferRecordResp_Login_2eproto.base,
   &scc_info_MsgTtotalSubagentInformation_Login_2eproto.base,
   &scc_info_MsgTurnCfg_Login_2eproto.base,
   &scc_info_MsgTurnPlayInfo_Login_2eproto.base,
@@ -1692,10 +1632,10 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Login_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Login_2eproto = {
-  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 5415,
-  &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 51, 0,
+  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 5320,
+  &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 49, 0,
   schemas, file_default_instances, TableStruct_Login_2eproto::offsets,
-  file_level_metadata_Login_2eproto, 51, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
+  file_level_metadata_Login_2eproto, 49, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -2562,13 +2502,6 @@ const char* MsgPlayerLoginResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // bool bank_password = 15;
-      case 15:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 120)) {
-          bank_password_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
       // string signature = 16;
       case 16:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 130)) {
@@ -2726,12 +2659,6 @@ failure:
         14, this->_internal_invite_code(), target);
   }
 
-  // bool bank_password = 15;
-  if (this->bank_password() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(15, this->_internal_bank_password(), target);
-  }
-
   // string signature = 16;
   if (this->signature().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
@@ -2851,13 +2778,6 @@ size_t MsgPlayerLoginResp::ByteSizeLong() const {
         this->_internal_user_type());
   }
 
-  // uint64 coin = 10;
-  if (this->coin() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->_internal_coin());
-  }
-
   // bool first_recharge = 7;
   if (this->first_recharge() != 0) {
     total_size += 1 + 1;
@@ -2868,16 +2788,18 @@ size_t MsgPlayerLoginResp::ByteSizeLong() const {
     total_size += 1 + 1;
   }
 
-  // bool bank_password = 15;
-  if (this->bank_password() != 0) {
-    total_size += 1 + 1;
-  }
-
   // int32 vip_level = 12;
   if (this->vip_level() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_vip_level());
+  }
+
+  // uint64 coin = 10;
+  if (this->coin() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
+        this->_internal_coin());
   }
 
   // int32 avatar_frame = 13;
@@ -2958,20 +2880,17 @@ void MsgPlayerLoginResp::MergeFrom(const MsgPlayerLoginResp& from) {
   if (from.user_type() != 0) {
     _internal_set_user_type(from._internal_user_type());
   }
-  if (from.coin() != 0) {
-    _internal_set_coin(from._internal_coin());
-  }
   if (from.first_recharge() != 0) {
     _internal_set_first_recharge(from._internal_first_recharge());
   }
   if (from.is_drain() != 0) {
     _internal_set_is_drain(from._internal_is_drain());
   }
-  if (from.bank_password() != 0) {
-    _internal_set_bank_password(from._internal_bank_password());
-  }
   if (from.vip_level() != 0) {
     _internal_set_vip_level(from._internal_vip_level());
+  }
+  if (from.coin() != 0) {
+    _internal_set_coin(from._internal_coin());
   }
   if (from.avatar_frame() != 0) {
     _internal_set_avatar_frame(from._internal_avatar_frame());
@@ -12023,773 +11942,59 @@ void MsgModifySignature::InternalSwap(MsgModifySignature* other) {
 
 // ===================================================================
 
-class MsgBankChangePassword::_Internal {
+class MsgTransferOperate::_Internal {
  public:
 };
 
-MsgBankChangePassword::MsgBankChangePassword(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+MsgTransferOperate::MsgTransferOperate(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:MsgBankChangePassword)
+  // @@protoc_insertion_point(arena_constructor:MsgTransferOperate)
 }
-MsgBankChangePassword::MsgBankChangePassword(const MsgBankChangePassword& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  password_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_password().empty()) {
-    password_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_password(), 
-      GetArena());
-  }
-  code_ = from.code_;
-  // @@protoc_insertion_point(copy_constructor:MsgBankChangePassword)
-}
-
-void MsgBankChangePassword::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgBankChangePassword_Login_2eproto.base);
-  password_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  code_ = 0;
-}
-
-MsgBankChangePassword::~MsgBankChangePassword() {
-  // @@protoc_insertion_point(destructor:MsgBankChangePassword)
-  SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-void MsgBankChangePassword::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-  password_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-
-void MsgBankChangePassword::ArenaDtor(void* object) {
-  MsgBankChangePassword* _this = reinterpret_cast< MsgBankChangePassword* >(object);
-  (void)_this;
-}
-void MsgBankChangePassword::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
-void MsgBankChangePassword::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
-}
-const MsgBankChangePassword& MsgBankChangePassword::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgBankChangePassword_Login_2eproto.base);
-  return *internal_default_instance();
-}
-
-
-void MsgBankChangePassword::Clear() {
-// @@protoc_insertion_point(message_clear_start:MsgBankChangePassword)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  password_.ClearToEmpty();
-  code_ = 0;
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-const char* MsgBankChangePassword::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
-    switch (tag >> 3) {
-      // string password = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_password();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgBankChangePassword.password"));
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 code = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          code_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
-    }  // switch
-  }  // while
-success:
-  return ptr;
-failure:
-  ptr = nullptr;
-  goto success;
-#undef CHK_
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* MsgBankChangePassword::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:MsgBankChangePassword)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // string password = 1;
-  if (this->password().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_password().data(), static_cast<int>(this->_internal_password().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "MsgBankChangePassword.password");
-    target = stream->WriteStringMaybeAliased(
-        1, this->_internal_password(), target);
-  }
-
-  // int32 code = 2;
-  if (this->code() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_code(), target);
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:MsgBankChangePassword)
-  return target;
-}
-
-size_t MsgBankChangePassword::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:MsgBankChangePassword)
-  size_t total_size = 0;
-
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  // string password = 1;
-  if (this->password().size() > 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_password());
-  }
-
-  // int32 code = 2;
-  if (this->code() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_code());
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
-}
-
-void MsgBankChangePassword::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:MsgBankChangePassword)
-  GOOGLE_DCHECK_NE(&from, this);
-  const MsgBankChangePassword* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgBankChangePassword>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgBankChangePassword)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgBankChangePassword)
-    MergeFrom(*source);
-  }
-}
-
-void MsgBankChangePassword::MergeFrom(const MsgBankChangePassword& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:MsgBankChangePassword)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from.password().size() > 0) {
-    _internal_set_password(from._internal_password());
-  }
-  if (from.code() != 0) {
-    _internal_set_code(from._internal_code());
-  }
-}
-
-void MsgBankChangePassword::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:MsgBankChangePassword)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void MsgBankChangePassword::CopyFrom(const MsgBankChangePassword& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:MsgBankChangePassword)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool MsgBankChangePassword::IsInitialized() const {
-  return true;
-}
-
-void MsgBankChangePassword::InternalSwap(MsgBankChangePassword* other) {
-  using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  password_.Swap(&other->password_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  swap(code_, other->code_);
-}
-
-::PROTOBUF_NAMESPACE_ID::Metadata MsgBankChangePassword::GetMetadata() const {
-  return GetMetadataStatic();
-}
-
-
-// ===================================================================
-
-class MsgBankOperate::_Internal {
- public:
-};
-
-MsgBankOperate::MsgBankOperate(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:MsgBankOperate)
-}
-MsgBankOperate::MsgBankOperate(const MsgBankOperate& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&gold_, &from.gold_,
-    static_cast<size_t>(reinterpret_cast<char*>(&operate_type_) -
-    reinterpret_cast<char*>(&gold_)) + sizeof(operate_type_));
-  // @@protoc_insertion_point(copy_constructor:MsgBankOperate)
-}
-
-void MsgBankOperate::SharedCtor() {
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&gold_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&operate_type_) -
-      reinterpret_cast<char*>(&gold_)) + sizeof(operate_type_));
-}
-
-MsgBankOperate::~MsgBankOperate() {
-  // @@protoc_insertion_point(destructor:MsgBankOperate)
-  SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-void MsgBankOperate::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-}
-
-void MsgBankOperate::ArenaDtor(void* object) {
-  MsgBankOperate* _this = reinterpret_cast< MsgBankOperate* >(object);
-  (void)_this;
-}
-void MsgBankOperate::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
-void MsgBankOperate::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
-}
-const MsgBankOperate& MsgBankOperate::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgBankOperate_Login_2eproto.base);
-  return *internal_default_instance();
-}
-
-
-void MsgBankOperate::Clear() {
-// @@protoc_insertion_point(message_clear_start:MsgBankOperate)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  ::memset(&gold_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&operate_type_) -
-      reinterpret_cast<char*>(&gold_)) + sizeof(operate_type_));
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-const char* MsgBankOperate::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
-    switch (tag >> 3) {
-      // int64 gold = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 operate_type = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          operate_type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
-    }  // switch
-  }  // while
-success:
-  return ptr;
-failure:
-  ptr = nullptr;
-  goto success;
-#undef CHK_
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* MsgBankOperate::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:MsgBankOperate)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // int64 gold = 1;
-  if (this->gold() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_gold(), target);
-  }
-
-  // int32 operate_type = 2;
-  if (this->operate_type() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_operate_type(), target);
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:MsgBankOperate)
-  return target;
-}
-
-size_t MsgBankOperate::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:MsgBankOperate)
-  size_t total_size = 0;
-
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  // int64 gold = 1;
-  if (this->gold() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_gold());
-  }
-
-  // int32 operate_type = 2;
-  if (this->operate_type() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_operate_type());
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
-}
-
-void MsgBankOperate::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:MsgBankOperate)
-  GOOGLE_DCHECK_NE(&from, this);
-  const MsgBankOperate* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgBankOperate>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgBankOperate)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgBankOperate)
-    MergeFrom(*source);
-  }
-}
-
-void MsgBankOperate::MergeFrom(const MsgBankOperate& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:MsgBankOperate)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from.gold() != 0) {
-    _internal_set_gold(from._internal_gold());
-  }
-  if (from.operate_type() != 0) {
-    _internal_set_operate_type(from._internal_operate_type());
-  }
-}
-
-void MsgBankOperate::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:MsgBankOperate)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void MsgBankOperate::CopyFrom(const MsgBankOperate& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:MsgBankOperate)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool MsgBankOperate::IsInitialized() const {
-  return true;
-}
-
-void MsgBankOperate::InternalSwap(MsgBankOperate* other) {
-  using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgBankOperate, operate_type_)
-      + sizeof(MsgBankOperate::operate_type_)
-      - PROTOBUF_FIELD_OFFSET(MsgBankOperate, gold_)>(
-          reinterpret_cast<char*>(&gold_),
-          reinterpret_cast<char*>(&other->gold_));
-}
-
-::PROTOBUF_NAMESPACE_ID::Metadata MsgBankOperate::GetMetadata() const {
-  return GetMetadataStatic();
-}
-
-
-// ===================================================================
-
-class MsgBankTakeOut::_Internal {
- public:
-};
-
-MsgBankTakeOut::MsgBankTakeOut(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:MsgBankTakeOut)
-}
-MsgBankTakeOut::MsgBankTakeOut(const MsgBankTakeOut& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&user_gold_, &from.user_gold_,
-    static_cast<size_t>(reinterpret_cast<char*>(&ret_value_) -
-    reinterpret_cast<char*>(&user_gold_)) + sizeof(ret_value_));
-  // @@protoc_insertion_point(copy_constructor:MsgBankTakeOut)
-}
-
-void MsgBankTakeOut::SharedCtor() {
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&user_gold_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&ret_value_) -
-      reinterpret_cast<char*>(&user_gold_)) + sizeof(ret_value_));
-}
-
-MsgBankTakeOut::~MsgBankTakeOut() {
-  // @@protoc_insertion_point(destructor:MsgBankTakeOut)
-  SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-void MsgBankTakeOut::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-}
-
-void MsgBankTakeOut::ArenaDtor(void* object) {
-  MsgBankTakeOut* _this = reinterpret_cast< MsgBankTakeOut* >(object);
-  (void)_this;
-}
-void MsgBankTakeOut::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
-void MsgBankTakeOut::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
-}
-const MsgBankTakeOut& MsgBankTakeOut::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgBankTakeOut_Login_2eproto.base);
-  return *internal_default_instance();
-}
-
-
-void MsgBankTakeOut::Clear() {
-// @@protoc_insertion_point(message_clear_start:MsgBankTakeOut)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  ::memset(&user_gold_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&ret_value_) -
-      reinterpret_cast<char*>(&user_gold_)) + sizeof(ret_value_));
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-const char* MsgBankTakeOut::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
-    switch (tag >> 3) {
-      // int32 ret_value = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ret_value_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int64 user_gold = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          user_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int64 bank_gold = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          bank_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
-    }  // switch
-  }  // while
-success:
-  return ptr;
-failure:
-  ptr = nullptr;
-  goto success;
-#undef CHK_
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* MsgBankTakeOut::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:MsgBankTakeOut)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // int32 ret_value = 1;
-  if (this->ret_value() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_ret_value(), target);
-  }
-
-  // int64 user_gold = 2;
-  if (this->user_gold() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_user_gold(), target);
-  }
-
-  // int64 bank_gold = 3;
-  if (this->bank_gold() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_bank_gold(), target);
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:MsgBankTakeOut)
-  return target;
-}
-
-size_t MsgBankTakeOut::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:MsgBankTakeOut)
-  size_t total_size = 0;
-
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  // int64 user_gold = 2;
-  if (this->user_gold() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_user_gold());
-  }
-
-  // int64 bank_gold = 3;
-  if (this->bank_gold() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_bank_gold());
-  }
-
-  // int32 ret_value = 1;
-  if (this->ret_value() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_ret_value());
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
-}
-
-void MsgBankTakeOut::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:MsgBankTakeOut)
-  GOOGLE_DCHECK_NE(&from, this);
-  const MsgBankTakeOut* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgBankTakeOut>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgBankTakeOut)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgBankTakeOut)
-    MergeFrom(*source);
-  }
-}
-
-void MsgBankTakeOut::MergeFrom(const MsgBankTakeOut& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:MsgBankTakeOut)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from.user_gold() != 0) {
-    _internal_set_user_gold(from._internal_user_gold());
-  }
-  if (from.bank_gold() != 0) {
-    _internal_set_bank_gold(from._internal_bank_gold());
-  }
-  if (from.ret_value() != 0) {
-    _internal_set_ret_value(from._internal_ret_value());
-  }
-}
-
-void MsgBankTakeOut::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:MsgBankTakeOut)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void MsgBankTakeOut::CopyFrom(const MsgBankTakeOut& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:MsgBankTakeOut)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool MsgBankTakeOut::IsInitialized() const {
-  return true;
-}
-
-void MsgBankTakeOut::InternalSwap(MsgBankTakeOut* other) {
-  using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgBankTakeOut, ret_value_)
-      + sizeof(MsgBankTakeOut::ret_value_)
-      - PROTOBUF_FIELD_OFFSET(MsgBankTakeOut, user_gold_)>(
-          reinterpret_cast<char*>(&user_gold_),
-          reinterpret_cast<char*>(&other->user_gold_));
-}
-
-::PROTOBUF_NAMESPACE_ID::Metadata MsgBankTakeOut::GetMetadata() const {
-  return GetMetadataStatic();
-}
-
-
-// ===================================================================
-
-class MsgBankTransfer::_Internal {
- public:
-};
-
-MsgBankTransfer::MsgBankTransfer(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:MsgBankTransfer)
-}
-MsgBankTransfer::MsgBankTransfer(const MsgBankTransfer& from)
+MsgTransferOperate::MsgTransferOperate(const MsgTransferOperate& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&transfer_gold_, &from.transfer_gold_,
     static_cast<size_t>(reinterpret_cast<char*>(&recv_user_id_) -
     reinterpret_cast<char*>(&transfer_gold_)) + sizeof(recv_user_id_));
-  // @@protoc_insertion_point(copy_constructor:MsgBankTransfer)
+  // @@protoc_insertion_point(copy_constructor:MsgTransferOperate)
 }
 
-void MsgBankTransfer::SharedCtor() {
+void MsgTransferOperate::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&transfer_gold_) - reinterpret_cast<char*>(this)),
       0, static_cast<size_t>(reinterpret_cast<char*>(&recv_user_id_) -
       reinterpret_cast<char*>(&transfer_gold_)) + sizeof(recv_user_id_));
 }
 
-MsgBankTransfer::~MsgBankTransfer() {
-  // @@protoc_insertion_point(destructor:MsgBankTransfer)
+MsgTransferOperate::~MsgTransferOperate() {
+  // @@protoc_insertion_point(destructor:MsgTransferOperate)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void MsgBankTransfer::SharedDtor() {
+void MsgTransferOperate::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void MsgBankTransfer::ArenaDtor(void* object) {
-  MsgBankTransfer* _this = reinterpret_cast< MsgBankTransfer* >(object);
+void MsgTransferOperate::ArenaDtor(void* object) {
+  MsgTransferOperate* _this = reinterpret_cast< MsgTransferOperate* >(object);
   (void)_this;
 }
-void MsgBankTransfer::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+void MsgTransferOperate::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 }
-void MsgBankTransfer::SetCachedSize(int size) const {
+void MsgTransferOperate::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const MsgBankTransfer& MsgBankTransfer::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgBankTransfer_Login_2eproto.base);
+const MsgTransferOperate& MsgTransferOperate::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgTransferOperate_Login_2eproto.base);
   return *internal_default_instance();
 }
 
 
-void MsgBankTransfer::Clear() {
-// @@protoc_insertion_point(message_clear_start:MsgBankTransfer)
+void MsgTransferOperate::Clear() {
+// @@protoc_insertion_point(message_clear_start:MsgTransferOperate)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -12800,7 +12005,7 @@ void MsgBankTransfer::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* MsgBankTransfer::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* MsgTransferOperate::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
@@ -12843,9 +12048,9 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* MsgBankTransfer::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* MsgTransferOperate::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:MsgBankTransfer)
+  // @@protoc_insertion_point(serialize_to_array_start:MsgTransferOperate)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -12865,12 +12070,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:MsgBankTransfer)
+  // @@protoc_insertion_point(serialize_to_array_end:MsgTransferOperate)
   return target;
 }
 
-size_t MsgBankTransfer::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:MsgBankTransfer)
+size_t MsgTransferOperate::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:MsgTransferOperate)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -12900,23 +12105,23 @@ size_t MsgBankTransfer::ByteSizeLong() const {
   return total_size;
 }
 
-void MsgBankTransfer::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:MsgBankTransfer)
+void MsgTransferOperate::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:MsgTransferOperate)
   GOOGLE_DCHECK_NE(&from, this);
-  const MsgBankTransfer* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgBankTransfer>(
+  const MsgTransferOperate* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgTransferOperate>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgBankTransfer)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgTransferOperate)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgBankTransfer)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgTransferOperate)
     MergeFrom(*source);
   }
 }
 
-void MsgBankTransfer::MergeFrom(const MsgBankTransfer& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:MsgBankTransfer)
+void MsgTransferOperate::MergeFrom(const MsgTransferOperate& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:MsgTransferOperate)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -12930,36 +12135,36 @@ void MsgBankTransfer::MergeFrom(const MsgBankTransfer& from) {
   }
 }
 
-void MsgBankTransfer::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:MsgBankTransfer)
+void MsgTransferOperate::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:MsgTransferOperate)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-void MsgBankTransfer::CopyFrom(const MsgBankTransfer& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:MsgBankTransfer)
+void MsgTransferOperate::CopyFrom(const MsgTransferOperate& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:MsgTransferOperate)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool MsgBankTransfer::IsInitialized() const {
+bool MsgTransferOperate::IsInitialized() const {
   return true;
 }
 
-void MsgBankTransfer::InternalSwap(MsgBankTransfer* other) {
+void MsgTransferOperate::InternalSwap(MsgTransferOperate* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgBankTransfer, recv_user_id_)
-      + sizeof(MsgBankTransfer::recv_user_id_)
-      - PROTOBUF_FIELD_OFFSET(MsgBankTransfer, transfer_gold_)>(
+      PROTOBUF_FIELD_OFFSET(MsgTransferOperate, recv_user_id_)
+      + sizeof(MsgTransferOperate::recv_user_id_)
+      - PROTOBUF_FIELD_OFFSET(MsgTransferOperate, transfer_gold_)>(
           reinterpret_cast<char*>(&transfer_gold_),
           reinterpret_cast<char*>(&other->transfer_gold_));
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata MsgBankTransfer::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata MsgTransferOperate::GetMetadata() const {
   return GetMetadataStatic();
 }
 
@@ -13947,70 +13152,70 @@ void MsgTopListResp::InternalSwap(MsgTopListResp* other) {
 
 // ===================================================================
 
-class MsgBankTransferResp::_Internal {
+class MsgTransferOperateResp::_Internal {
  public:
 };
 
-MsgBankTransferResp::MsgBankTransferResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+MsgTransferOperateResp::MsgTransferOperateResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:MsgBankTransferResp)
+  // @@protoc_insertion_point(arena_constructor:MsgTransferOperateResp)
 }
-MsgBankTransferResp::MsgBankTransferResp(const MsgBankTransferResp& from)
+MsgTransferOperateResp::MsgTransferOperateResp(const MsgTransferOperateResp& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&bank_gold_, &from.bank_gold_,
+  ::memcpy(&user_gold_, &from.user_gold_,
     static_cast<size_t>(reinterpret_cast<char*>(&ret_value_) -
-    reinterpret_cast<char*>(&bank_gold_)) + sizeof(ret_value_));
-  // @@protoc_insertion_point(copy_constructor:MsgBankTransferResp)
+    reinterpret_cast<char*>(&user_gold_)) + sizeof(ret_value_));
+  // @@protoc_insertion_point(copy_constructor:MsgTransferOperateResp)
 }
 
-void MsgBankTransferResp::SharedCtor() {
+void MsgTransferOperateResp::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&bank_gold_) - reinterpret_cast<char*>(this)),
+      reinterpret_cast<char*>(&user_gold_) - reinterpret_cast<char*>(this)),
       0, static_cast<size_t>(reinterpret_cast<char*>(&ret_value_) -
-      reinterpret_cast<char*>(&bank_gold_)) + sizeof(ret_value_));
+      reinterpret_cast<char*>(&user_gold_)) + sizeof(ret_value_));
 }
 
-MsgBankTransferResp::~MsgBankTransferResp() {
-  // @@protoc_insertion_point(destructor:MsgBankTransferResp)
+MsgTransferOperateResp::~MsgTransferOperateResp() {
+  // @@protoc_insertion_point(destructor:MsgTransferOperateResp)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void MsgBankTransferResp::SharedDtor() {
+void MsgTransferOperateResp::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void MsgBankTransferResp::ArenaDtor(void* object) {
-  MsgBankTransferResp* _this = reinterpret_cast< MsgBankTransferResp* >(object);
+void MsgTransferOperateResp::ArenaDtor(void* object) {
+  MsgTransferOperateResp* _this = reinterpret_cast< MsgTransferOperateResp* >(object);
   (void)_this;
 }
-void MsgBankTransferResp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+void MsgTransferOperateResp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 }
-void MsgBankTransferResp::SetCachedSize(int size) const {
+void MsgTransferOperateResp::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const MsgBankTransferResp& MsgBankTransferResp::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgBankTransferResp_Login_2eproto.base);
+const MsgTransferOperateResp& MsgTransferOperateResp::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgTransferOperateResp_Login_2eproto.base);
   return *internal_default_instance();
 }
 
 
-void MsgBankTransferResp::Clear() {
-// @@protoc_insertion_point(message_clear_start:MsgBankTransferResp)
+void MsgTransferOperateResp::Clear() {
+// @@protoc_insertion_point(message_clear_start:MsgTransferOperateResp)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&bank_gold_, 0, static_cast<size_t>(
+  ::memset(&user_gold_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&ret_value_) -
-      reinterpret_cast<char*>(&bank_gold_)) + sizeof(ret_value_));
+      reinterpret_cast<char*>(&user_gold_)) + sizeof(ret_value_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* MsgBankTransferResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* MsgTransferOperateResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
@@ -14024,10 +13229,10 @@ const char* MsgBankTransferResp::_InternalParse(const char* ptr, ::PROTOBUF_NAME
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int64 bank_gold = 2;
+      // int64 user_gold = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          bank_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          user_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -14053,9 +13258,9 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* MsgBankTransferResp::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* MsgTransferOperateResp::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:MsgBankTransferResp)
+  // @@protoc_insertion_point(serialize_to_array_start:MsgTransferOperateResp)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -14065,33 +13270,33 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_ret_value(), target);
   }
 
-  // int64 bank_gold = 2;
-  if (this->bank_gold() != 0) {
+  // int64 user_gold = 2;
+  if (this->user_gold() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_bank_gold(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_user_gold(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:MsgBankTransferResp)
+  // @@protoc_insertion_point(serialize_to_array_end:MsgTransferOperateResp)
   return target;
 }
 
-size_t MsgBankTransferResp::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:MsgBankTransferResp)
+size_t MsgTransferOperateResp::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:MsgTransferOperateResp)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // int64 bank_gold = 2;
-  if (this->bank_gold() != 0) {
+  // int64 user_gold = 2;
+  if (this->user_gold() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_bank_gold());
+        this->_internal_user_gold());
   }
 
   // int32 ret_value = 1;
@@ -14110,83 +13315,610 @@ size_t MsgBankTransferResp::ByteSizeLong() const {
   return total_size;
 }
 
-void MsgBankTransferResp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:MsgBankTransferResp)
+void MsgTransferOperateResp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:MsgTransferOperateResp)
   GOOGLE_DCHECK_NE(&from, this);
-  const MsgBankTransferResp* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgBankTransferResp>(
+  const MsgTransferOperateResp* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgTransferOperateResp>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgBankTransferResp)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgTransferOperateResp)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgBankTransferResp)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgTransferOperateResp)
     MergeFrom(*source);
   }
 }
 
-void MsgBankTransferResp::MergeFrom(const MsgBankTransferResp& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:MsgBankTransferResp)
+void MsgTransferOperateResp::MergeFrom(const MsgTransferOperateResp& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:MsgTransferOperateResp)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.bank_gold() != 0) {
-    _internal_set_bank_gold(from._internal_bank_gold());
+  if (from.user_gold() != 0) {
+    _internal_set_user_gold(from._internal_user_gold());
   }
   if (from.ret_value() != 0) {
     _internal_set_ret_value(from._internal_ret_value());
   }
 }
 
-void MsgBankTransferResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:MsgBankTransferResp)
+void MsgTransferOperateResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:MsgTransferOperateResp)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-void MsgBankTransferResp::CopyFrom(const MsgBankTransferResp& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:MsgBankTransferResp)
+void MsgTransferOperateResp::CopyFrom(const MsgTransferOperateResp& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:MsgTransferOperateResp)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool MsgBankTransferResp::IsInitialized() const {
+bool MsgTransferOperateResp::IsInitialized() const {
   return true;
 }
 
-void MsgBankTransferResp::InternalSwap(MsgBankTransferResp* other) {
+void MsgTransferOperateResp::InternalSwap(MsgTransferOperateResp* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgBankTransferResp, ret_value_)
-      + sizeof(MsgBankTransferResp::ret_value_)
-      - PROTOBUF_FIELD_OFFSET(MsgBankTransferResp, bank_gold_)>(
-          reinterpret_cast<char*>(&bank_gold_),
-          reinterpret_cast<char*>(&other->bank_gold_));
+      PROTOBUF_FIELD_OFFSET(MsgTransferOperateResp, ret_value_)
+      + sizeof(MsgTransferOperateResp::ret_value_)
+      - PROTOBUF_FIELD_OFFSET(MsgTransferOperateResp, user_gold_)>(
+          reinterpret_cast<char*>(&user_gold_),
+          reinterpret_cast<char*>(&other->user_gold_));
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata MsgBankTransferResp::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata MsgTransferOperateResp::GetMetadata() const {
   return GetMetadataStatic();
 }
 
 
 // ===================================================================
 
-class MsgBankRecord::_Internal {
+class MsgTransferOperateSyncResp::_Internal {
  public:
 };
 
-MsgBankRecord::MsgBankRecord(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+MsgTransferOperateSyncResp::MsgTransferOperateSyncResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:MsgBankRecord)
+  // @@protoc_insertion_point(arena_constructor:MsgTransferOperateSyncResp)
 }
-MsgBankRecord::MsgBankRecord(const MsgBankRecord& from)
+MsgTransferOperateSyncResp::MsgTransferOperateSyncResp(const MsgTransferOperateSyncResp& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&ret_value_, &from.ret_value_,
+    static_cast<size_t>(reinterpret_cast<char*>(&transfer_id_) -
+    reinterpret_cast<char*>(&ret_value_)) + sizeof(transfer_id_));
+  // @@protoc_insertion_point(copy_constructor:MsgTransferOperateSyncResp)
+}
+
+void MsgTransferOperateSyncResp::SharedCtor() {
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&ret_value_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&transfer_id_) -
+      reinterpret_cast<char*>(&ret_value_)) + sizeof(transfer_id_));
+}
+
+MsgTransferOperateSyncResp::~MsgTransferOperateSyncResp() {
+  // @@protoc_insertion_point(destructor:MsgTransferOperateSyncResp)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void MsgTransferOperateSyncResp::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void MsgTransferOperateSyncResp::ArenaDtor(void* object) {
+  MsgTransferOperateSyncResp* _this = reinterpret_cast< MsgTransferOperateSyncResp* >(object);
+  (void)_this;
+}
+void MsgTransferOperateSyncResp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void MsgTransferOperateSyncResp::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const MsgTransferOperateSyncResp& MsgTransferOperateSyncResp::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgTransferOperateSyncResp_Login_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void MsgTransferOperateSyncResp::Clear() {
+// @@protoc_insertion_point(message_clear_start:MsgTransferOperateSyncResp)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&ret_value_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&transfer_id_) -
+      reinterpret_cast<char*>(&ret_value_)) + sizeof(transfer_id_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* MsgTransferOperateSyncResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 ret_value = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          ret_value_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 send_user_id = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          send_user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 add_gold = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          add_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 receive_state = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+          receive_state_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 transfer_id = 7;
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
+          transfer_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* MsgTransferOperateSyncResp::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:MsgTransferOperateSyncResp)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 ret_value = 1;
+  if (this->ret_value() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_ret_value(), target);
+  }
+
+  // int32 send_user_id = 3;
+  if (this->send_user_id() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_send_user_id(), target);
+  }
+
+  // int64 add_gold = 4;
+  if (this->add_gold() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_add_gold(), target);
+  }
+
+  // int64 receive_state = 6;
+  if (this->receive_state() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(6, this->_internal_receive_state(), target);
+  }
+
+  // int64 transfer_id = 7;
+  if (this->transfer_id() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(7, this->_internal_transfer_id(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:MsgTransferOperateSyncResp)
+  return target;
+}
+
+size_t MsgTransferOperateSyncResp::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:MsgTransferOperateSyncResp)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // int32 ret_value = 1;
+  if (this->ret_value() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_ret_value());
+  }
+
+  // int32 send_user_id = 3;
+  if (this->send_user_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_send_user_id());
+  }
+
+  // int64 add_gold = 4;
+  if (this->add_gold() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_add_gold());
+  }
+
+  // int64 receive_state = 6;
+  if (this->receive_state() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_receive_state());
+  }
+
+  // int64 transfer_id = 7;
+  if (this->transfer_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_transfer_id());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void MsgTransferOperateSyncResp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:MsgTransferOperateSyncResp)
+  GOOGLE_DCHECK_NE(&from, this);
+  const MsgTransferOperateSyncResp* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgTransferOperateSyncResp>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgTransferOperateSyncResp)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgTransferOperateSyncResp)
+    MergeFrom(*source);
+  }
+}
+
+void MsgTransferOperateSyncResp::MergeFrom(const MsgTransferOperateSyncResp& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:MsgTransferOperateSyncResp)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.ret_value() != 0) {
+    _internal_set_ret_value(from._internal_ret_value());
+  }
+  if (from.send_user_id() != 0) {
+    _internal_set_send_user_id(from._internal_send_user_id());
+  }
+  if (from.add_gold() != 0) {
+    _internal_set_add_gold(from._internal_add_gold());
+  }
+  if (from.receive_state() != 0) {
+    _internal_set_receive_state(from._internal_receive_state());
+  }
+  if (from.transfer_id() != 0) {
+    _internal_set_transfer_id(from._internal_transfer_id());
+  }
+}
+
+void MsgTransferOperateSyncResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:MsgTransferOperateSyncResp)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void MsgTransferOperateSyncResp::CopyFrom(const MsgTransferOperateSyncResp& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:MsgTransferOperateSyncResp)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool MsgTransferOperateSyncResp::IsInitialized() const {
+  return true;
+}
+
+void MsgTransferOperateSyncResp::InternalSwap(MsgTransferOperateSyncResp* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(MsgTransferOperateSyncResp, transfer_id_)
+      + sizeof(MsgTransferOperateSyncResp::transfer_id_)
+      - PROTOBUF_FIELD_OFFSET(MsgTransferOperateSyncResp, ret_value_)>(
+          reinterpret_cast<char*>(&ret_value_),
+          reinterpret_cast<char*>(&other->ret_value_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata MsgTransferOperateSyncResp::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class MsgTransferReceiveResp::_Internal {
+ public:
+};
+
+MsgTransferReceiveResp::MsgTransferReceiveResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:MsgTransferReceiveResp)
+}
+MsgTransferReceiveResp::MsgTransferReceiveResp(const MsgTransferReceiveResp& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&user_gold_, &from.user_gold_,
+    static_cast<size_t>(reinterpret_cast<char*>(&ret_value_) -
+    reinterpret_cast<char*>(&user_gold_)) + sizeof(ret_value_));
+  // @@protoc_insertion_point(copy_constructor:MsgTransferReceiveResp)
+}
+
+void MsgTransferReceiveResp::SharedCtor() {
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&user_gold_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&ret_value_) -
+      reinterpret_cast<char*>(&user_gold_)) + sizeof(ret_value_));
+}
+
+MsgTransferReceiveResp::~MsgTransferReceiveResp() {
+  // @@protoc_insertion_point(destructor:MsgTransferReceiveResp)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void MsgTransferReceiveResp::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void MsgTransferReceiveResp::ArenaDtor(void* object) {
+  MsgTransferReceiveResp* _this = reinterpret_cast< MsgTransferReceiveResp* >(object);
+  (void)_this;
+}
+void MsgTransferReceiveResp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void MsgTransferReceiveResp::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const MsgTransferReceiveResp& MsgTransferReceiveResp::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgTransferReceiveResp_Login_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void MsgTransferReceiveResp::Clear() {
+// @@protoc_insertion_point(message_clear_start:MsgTransferReceiveResp)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&user_gold_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&ret_value_) -
+      reinterpret_cast<char*>(&user_gold_)) + sizeof(ret_value_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* MsgTransferReceiveResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 ret_value = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          ret_value_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 user_gold = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          user_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* MsgTransferReceiveResp::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:MsgTransferReceiveResp)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 ret_value = 1;
+  if (this->ret_value() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_ret_value(), target);
+  }
+
+  // int64 user_gold = 2;
+  if (this->user_gold() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_user_gold(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:MsgTransferReceiveResp)
+  return target;
+}
+
+size_t MsgTransferReceiveResp::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:MsgTransferReceiveResp)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // int64 user_gold = 2;
+  if (this->user_gold() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_user_gold());
+  }
+
+  // int32 ret_value = 1;
+  if (this->ret_value() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_ret_value());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void MsgTransferReceiveResp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:MsgTransferReceiveResp)
+  GOOGLE_DCHECK_NE(&from, this);
+  const MsgTransferReceiveResp* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgTransferReceiveResp>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgTransferReceiveResp)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgTransferReceiveResp)
+    MergeFrom(*source);
+  }
+}
+
+void MsgTransferReceiveResp::MergeFrom(const MsgTransferReceiveResp& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:MsgTransferReceiveResp)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.user_gold() != 0) {
+    _internal_set_user_gold(from._internal_user_gold());
+  }
+  if (from.ret_value() != 0) {
+    _internal_set_ret_value(from._internal_ret_value());
+  }
+}
+
+void MsgTransferReceiveResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:MsgTransferReceiveResp)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void MsgTransferReceiveResp::CopyFrom(const MsgTransferReceiveResp& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:MsgTransferReceiveResp)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool MsgTransferReceiveResp::IsInitialized() const {
+  return true;
+}
+
+void MsgTransferReceiveResp::InternalSwap(MsgTransferReceiveResp* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(MsgTransferReceiveResp, ret_value_)
+      + sizeof(MsgTransferReceiveResp::ret_value_)
+      - PROTOBUF_FIELD_OFFSET(MsgTransferReceiveResp, user_gold_)>(
+          reinterpret_cast<char*>(&user_gold_),
+          reinterpret_cast<char*>(&other->user_gold_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata MsgTransferReceiveResp::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class MsgTransferRecord::_Internal {
+ public:
+};
+
+MsgTransferRecord::MsgTransferRecord(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:MsgTransferRecord)
+}
+MsgTransferRecord::MsgTransferRecord(const MsgTransferRecord& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   timer_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
@@ -14195,60 +13927,60 @@ MsgBankRecord::MsgBankRecord(const MsgBankRecord& from)
       GetArena());
   }
   ::memcpy(&transfer_gold_, &from.transfer_gold_,
-    static_cast<size_t>(reinterpret_cast<char*>(&recv_user_id_) -
-    reinterpret_cast<char*>(&transfer_gold_)) + sizeof(recv_user_id_));
-  // @@protoc_insertion_point(copy_constructor:MsgBankRecord)
+    static_cast<size_t>(reinterpret_cast<char*>(&receive_state_) -
+    reinterpret_cast<char*>(&transfer_gold_)) + sizeof(receive_state_));
+  // @@protoc_insertion_point(copy_constructor:MsgTransferRecord)
 }
 
-void MsgBankRecord::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgBankRecord_Login_2eproto.base);
+void MsgTransferRecord::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgTransferRecord_Login_2eproto.base);
   timer_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&transfer_gold_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&recv_user_id_) -
-      reinterpret_cast<char*>(&transfer_gold_)) + sizeof(recv_user_id_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&receive_state_) -
+      reinterpret_cast<char*>(&transfer_gold_)) + sizeof(receive_state_));
 }
 
-MsgBankRecord::~MsgBankRecord() {
-  // @@protoc_insertion_point(destructor:MsgBankRecord)
+MsgTransferRecord::~MsgTransferRecord() {
+  // @@protoc_insertion_point(destructor:MsgTransferRecord)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void MsgBankRecord::SharedDtor() {
+void MsgTransferRecord::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
   timer_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
-void MsgBankRecord::ArenaDtor(void* object) {
-  MsgBankRecord* _this = reinterpret_cast< MsgBankRecord* >(object);
+void MsgTransferRecord::ArenaDtor(void* object) {
+  MsgTransferRecord* _this = reinterpret_cast< MsgTransferRecord* >(object);
   (void)_this;
 }
-void MsgBankRecord::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+void MsgTransferRecord::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 }
-void MsgBankRecord::SetCachedSize(int size) const {
+void MsgTransferRecord::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const MsgBankRecord& MsgBankRecord::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgBankRecord_Login_2eproto.base);
+const MsgTransferRecord& MsgTransferRecord::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgTransferRecord_Login_2eproto.base);
   return *internal_default_instance();
 }
 
 
-void MsgBankRecord::Clear() {
-// @@protoc_insertion_point(message_clear_start:MsgBankRecord)
+void MsgTransferRecord::Clear() {
+// @@protoc_insertion_point(message_clear_start:MsgTransferRecord)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   timer_.ClearToEmpty();
   ::memset(&transfer_gold_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&recv_user_id_) -
-      reinterpret_cast<char*>(&transfer_gold_)) + sizeof(recv_user_id_));
+      reinterpret_cast<char*>(&receive_state_) -
+      reinterpret_cast<char*>(&transfer_gold_)) + sizeof(receive_state_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* MsgBankRecord::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* MsgTransferRecord::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
@@ -14274,7 +14006,7 @@ const char* MsgBankRecord::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
           auto str = _internal_mutable_timer();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgBankRecord.timer"));
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgTransferRecord.timer"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -14282,6 +14014,13 @@ const char* MsgBankRecord::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           recv_user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 receive_state = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          receive_state_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -14307,9 +14046,9 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* MsgBankRecord::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* MsgTransferRecord::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:MsgBankRecord)
+  // @@protoc_insertion_point(serialize_to_array_start:MsgTransferRecord)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -14330,7 +14069,7 @@ failure:
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_timer().data(), static_cast<int>(this->_internal_timer().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "MsgBankRecord.timer");
+      "MsgTransferRecord.timer");
     target = stream->WriteStringMaybeAliased(
         3, this->_internal_timer(), target);
   }
@@ -14341,16 +14080,22 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_recv_user_id(), target);
   }
 
+  // int32 receive_state = 5;
+  if (this->receive_state() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_receive_state(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:MsgBankRecord)
+  // @@protoc_insertion_point(serialize_to_array_end:MsgTransferRecord)
   return target;
 }
 
-size_t MsgBankRecord::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:MsgBankRecord)
+size_t MsgTransferRecord::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:MsgTransferRecord)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -14385,6 +14130,13 @@ size_t MsgBankRecord::ByteSizeLong() const {
         this->_internal_recv_user_id());
   }
 
+  // int32 receive_state = 5;
+  if (this->receive_state() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_receive_state());
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
         _internal_metadata_, total_size, &_cached_size_);
@@ -14394,23 +14146,23 @@ size_t MsgBankRecord::ByteSizeLong() const {
   return total_size;
 }
 
-void MsgBankRecord::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:MsgBankRecord)
+void MsgTransferRecord::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:MsgTransferRecord)
   GOOGLE_DCHECK_NE(&from, this);
-  const MsgBankRecord* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgBankRecord>(
+  const MsgTransferRecord* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgTransferRecord>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgBankRecord)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgTransferRecord)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgBankRecord)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgTransferRecord)
     MergeFrom(*source);
   }
 }
 
-void MsgBankRecord::MergeFrom(const MsgBankRecord& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:MsgBankRecord)
+void MsgTransferRecord::MergeFrom(const MsgTransferRecord& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:MsgTransferRecord)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -14428,94 +14180,97 @@ void MsgBankRecord::MergeFrom(const MsgBankRecord& from) {
   if (from.recv_user_id() != 0) {
     _internal_set_recv_user_id(from._internal_recv_user_id());
   }
+  if (from.receive_state() != 0) {
+    _internal_set_receive_state(from._internal_receive_state());
+  }
 }
 
-void MsgBankRecord::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:MsgBankRecord)
+void MsgTransferRecord::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:MsgTransferRecord)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-void MsgBankRecord::CopyFrom(const MsgBankRecord& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:MsgBankRecord)
+void MsgTransferRecord::CopyFrom(const MsgTransferRecord& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:MsgTransferRecord)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool MsgBankRecord::IsInitialized() const {
+bool MsgTransferRecord::IsInitialized() const {
   return true;
 }
 
-void MsgBankRecord::InternalSwap(MsgBankRecord* other) {
+void MsgTransferRecord::InternalSwap(MsgTransferRecord* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   timer_.Swap(&other->timer_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgBankRecord, recv_user_id_)
-      + sizeof(MsgBankRecord::recv_user_id_)
-      - PROTOBUF_FIELD_OFFSET(MsgBankRecord, transfer_gold_)>(
+      PROTOBUF_FIELD_OFFSET(MsgTransferRecord, receive_state_)
+      + sizeof(MsgTransferRecord::receive_state_)
+      - PROTOBUF_FIELD_OFFSET(MsgTransferRecord, transfer_gold_)>(
           reinterpret_cast<char*>(&transfer_gold_),
           reinterpret_cast<char*>(&other->transfer_gold_));
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata MsgBankRecord::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata MsgTransferRecord::GetMetadata() const {
   return GetMetadataStatic();
 }
 
 
 // ===================================================================
 
-class MsgBankRecordResp::_Internal {
+class MsgTransferRecordResp::_Internal {
  public:
 };
 
-MsgBankRecordResp::MsgBankRecordResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+MsgTransferRecordResp::MsgTransferRecordResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena),
   records_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:MsgBankRecordResp)
+  // @@protoc_insertion_point(arena_constructor:MsgTransferRecordResp)
 }
-MsgBankRecordResp::MsgBankRecordResp(const MsgBankRecordResp& from)
+MsgTransferRecordResp::MsgTransferRecordResp(const MsgTransferRecordResp& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       records_(from.records_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:MsgBankRecordResp)
+  // @@protoc_insertion_point(copy_constructor:MsgTransferRecordResp)
 }
 
-void MsgBankRecordResp::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgBankRecordResp_Login_2eproto.base);
+void MsgTransferRecordResp::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgTransferRecordResp_Login_2eproto.base);
 }
 
-MsgBankRecordResp::~MsgBankRecordResp() {
-  // @@protoc_insertion_point(destructor:MsgBankRecordResp)
+MsgTransferRecordResp::~MsgTransferRecordResp() {
+  // @@protoc_insertion_point(destructor:MsgTransferRecordResp)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void MsgBankRecordResp::SharedDtor() {
+void MsgTransferRecordResp::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void MsgBankRecordResp::ArenaDtor(void* object) {
-  MsgBankRecordResp* _this = reinterpret_cast< MsgBankRecordResp* >(object);
+void MsgTransferRecordResp::ArenaDtor(void* object) {
+  MsgTransferRecordResp* _this = reinterpret_cast< MsgTransferRecordResp* >(object);
   (void)_this;
 }
-void MsgBankRecordResp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+void MsgTransferRecordResp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 }
-void MsgBankRecordResp::SetCachedSize(int size) const {
+void MsgTransferRecordResp::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const MsgBankRecordResp& MsgBankRecordResp::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgBankRecordResp_Login_2eproto.base);
+const MsgTransferRecordResp& MsgTransferRecordResp::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgTransferRecordResp_Login_2eproto.base);
   return *internal_default_instance();
 }
 
 
-void MsgBankRecordResp::Clear() {
-// @@protoc_insertion_point(message_clear_start:MsgBankRecordResp)
+void MsgTransferRecordResp::Clear() {
+// @@protoc_insertion_point(message_clear_start:MsgTransferRecordResp)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -14524,14 +14279,14 @@ void MsgBankRecordResp::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* MsgBankRecordResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* MsgTransferRecordResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // repeated .MsgBankRecord records = 1;
+      // repeated .MsgTransferRecord records = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr -= 1;
@@ -14565,13 +14320,13 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* MsgBankRecordResp::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* MsgTransferRecordResp::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:MsgBankRecordResp)
+  // @@protoc_insertion_point(serialize_to_array_start:MsgTransferRecordResp)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated .MsgBankRecord records = 1;
+  // repeated .MsgTransferRecord records = 1;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_records_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
@@ -14583,19 +14338,19 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:MsgBankRecordResp)
+  // @@protoc_insertion_point(serialize_to_array_end:MsgTransferRecordResp)
   return target;
 }
 
-size_t MsgBankRecordResp::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:MsgBankRecordResp)
+size_t MsgTransferRecordResp::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:MsgTransferRecordResp)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .MsgBankRecord records = 1;
+  // repeated .MsgTransferRecord records = 1;
   total_size += 1UL * this->_internal_records_size();
   for (const auto& msg : this->records_) {
     total_size +=
@@ -14611,23 +14366,23 @@ size_t MsgBankRecordResp::ByteSizeLong() const {
   return total_size;
 }
 
-void MsgBankRecordResp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:MsgBankRecordResp)
+void MsgTransferRecordResp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:MsgTransferRecordResp)
   GOOGLE_DCHECK_NE(&from, this);
-  const MsgBankRecordResp* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgBankRecordResp>(
+  const MsgTransferRecordResp* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgTransferRecordResp>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgBankRecordResp)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgTransferRecordResp)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgBankRecordResp)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgTransferRecordResp)
     MergeFrom(*source);
   }
 }
 
-void MsgBankRecordResp::MergeFrom(const MsgBankRecordResp& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:MsgBankRecordResp)
+void MsgTransferRecordResp::MergeFrom(const MsgTransferRecordResp& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:MsgTransferRecordResp)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -14636,31 +14391,31 @@ void MsgBankRecordResp::MergeFrom(const MsgBankRecordResp& from) {
   records_.MergeFrom(from.records_);
 }
 
-void MsgBankRecordResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:MsgBankRecordResp)
+void MsgTransferRecordResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:MsgTransferRecordResp)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-void MsgBankRecordResp::CopyFrom(const MsgBankRecordResp& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:MsgBankRecordResp)
+void MsgTransferRecordResp::CopyFrom(const MsgTransferRecordResp& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:MsgTransferRecordResp)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool MsgBankRecordResp::IsInitialized() const {
+bool MsgTransferRecordResp::IsInitialized() const {
   return true;
 }
 
-void MsgBankRecordResp::InternalSwap(MsgBankRecordResp* other) {
+void MsgTransferRecordResp::InternalSwap(MsgTransferRecordResp* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   records_.InternalSwap(&other->records_);
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata MsgBankRecordResp::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata MsgTransferRecordResp::GetMetadata() const {
   return GetMetadataStatic();
 }
 
@@ -15340,17 +15095,17 @@ void MsgPlayerItem::InternalSwap(MsgPlayerItem* other) {
 
 // ===================================================================
 
-class MsgBankQueryNickname::_Internal {
+class MsgTransferQueryNickname::_Internal {
  public:
 };
 
-MsgBankQueryNickname::MsgBankQueryNickname(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+MsgTransferQueryNickname::MsgTransferQueryNickname(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:MsgBankQueryNickname)
+  // @@protoc_insertion_point(arena_constructor:MsgTransferQueryNickname)
 }
-MsgBankQueryNickname::MsgBankQueryNickname(const MsgBankQueryNickname& from)
+MsgTransferQueryNickname::MsgTransferQueryNickname(const MsgTransferQueryNickname& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   nickname_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
@@ -15361,11 +15116,11 @@ MsgBankQueryNickname::MsgBankQueryNickname(const MsgBankQueryNickname& from)
   ::memcpy(&ret_value_, &from.ret_value_,
     static_cast<size_t>(reinterpret_cast<char*>(&tax_) -
     reinterpret_cast<char*>(&ret_value_)) + sizeof(tax_));
-  // @@protoc_insertion_point(copy_constructor:MsgBankQueryNickname)
+  // @@protoc_insertion_point(copy_constructor:MsgTransferQueryNickname)
 }
 
-void MsgBankQueryNickname::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgBankQueryNickname_Login_2eproto.base);
+void MsgTransferQueryNickname::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgTransferQueryNickname_Login_2eproto.base);
   nickname_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&ret_value_) - reinterpret_cast<char*>(this)),
@@ -15373,34 +15128,34 @@ void MsgBankQueryNickname::SharedCtor() {
       reinterpret_cast<char*>(&ret_value_)) + sizeof(tax_));
 }
 
-MsgBankQueryNickname::~MsgBankQueryNickname() {
-  // @@protoc_insertion_point(destructor:MsgBankQueryNickname)
+MsgTransferQueryNickname::~MsgTransferQueryNickname() {
+  // @@protoc_insertion_point(destructor:MsgTransferQueryNickname)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void MsgBankQueryNickname::SharedDtor() {
+void MsgTransferQueryNickname::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
   nickname_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
-void MsgBankQueryNickname::ArenaDtor(void* object) {
-  MsgBankQueryNickname* _this = reinterpret_cast< MsgBankQueryNickname* >(object);
+void MsgTransferQueryNickname::ArenaDtor(void* object) {
+  MsgTransferQueryNickname* _this = reinterpret_cast< MsgTransferQueryNickname* >(object);
   (void)_this;
 }
-void MsgBankQueryNickname::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+void MsgTransferQueryNickname::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 }
-void MsgBankQueryNickname::SetCachedSize(int size) const {
+void MsgTransferQueryNickname::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const MsgBankQueryNickname& MsgBankQueryNickname::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgBankQueryNickname_Login_2eproto.base);
+const MsgTransferQueryNickname& MsgTransferQueryNickname::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgTransferQueryNickname_Login_2eproto.base);
   return *internal_default_instance();
 }
 
 
-void MsgBankQueryNickname::Clear() {
-// @@protoc_insertion_point(message_clear_start:MsgBankQueryNickname)
+void MsgTransferQueryNickname::Clear() {
+// @@protoc_insertion_point(message_clear_start:MsgTransferQueryNickname)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -15412,7 +15167,7 @@ void MsgBankQueryNickname::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* MsgBankQueryNickname::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* MsgTransferQueryNickname::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
@@ -15431,7 +15186,7 @@ const char* MsgBankQueryNickname::_InternalParse(const char* ptr, ::PROTOBUF_NAM
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           auto str = _internal_mutable_nickname();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgBankQueryNickname.nickname"));
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgTransferQueryNickname.nickname"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -15464,9 +15219,9 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* MsgBankQueryNickname::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* MsgTransferQueryNickname::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:MsgBankQueryNickname)
+  // @@protoc_insertion_point(serialize_to_array_start:MsgTransferQueryNickname)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -15481,7 +15236,7 @@ failure:
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_nickname().data(), static_cast<int>(this->_internal_nickname().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "MsgBankQueryNickname.nickname");
+      "MsgTransferQueryNickname.nickname");
     target = stream->WriteStringMaybeAliased(
         2, this->_internal_nickname(), target);
   }
@@ -15496,12 +15251,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:MsgBankQueryNickname)
+  // @@protoc_insertion_point(serialize_to_array_end:MsgTransferQueryNickname)
   return target;
 }
 
-size_t MsgBankQueryNickname::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:MsgBankQueryNickname)
+size_t MsgTransferQueryNickname::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:MsgTransferQueryNickname)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -15538,23 +15293,23 @@ size_t MsgBankQueryNickname::ByteSizeLong() const {
   return total_size;
 }
 
-void MsgBankQueryNickname::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:MsgBankQueryNickname)
+void MsgTransferQueryNickname::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:MsgTransferQueryNickname)
   GOOGLE_DCHECK_NE(&from, this);
-  const MsgBankQueryNickname* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgBankQueryNickname>(
+  const MsgTransferQueryNickname* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgTransferQueryNickname>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgBankQueryNickname)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgTransferQueryNickname)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgBankQueryNickname)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgTransferQueryNickname)
     MergeFrom(*source);
   }
 }
 
-void MsgBankQueryNickname::MergeFrom(const MsgBankQueryNickname& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:MsgBankQueryNickname)
+void MsgTransferQueryNickname::MergeFrom(const MsgTransferQueryNickname& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:MsgTransferQueryNickname)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -15571,37 +15326,37 @@ void MsgBankQueryNickname::MergeFrom(const MsgBankQueryNickname& from) {
   }
 }
 
-void MsgBankQueryNickname::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:MsgBankQueryNickname)
+void MsgTransferQueryNickname::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:MsgTransferQueryNickname)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-void MsgBankQueryNickname::CopyFrom(const MsgBankQueryNickname& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:MsgBankQueryNickname)
+void MsgTransferQueryNickname::CopyFrom(const MsgTransferQueryNickname& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:MsgTransferQueryNickname)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool MsgBankQueryNickname::IsInitialized() const {
+bool MsgTransferQueryNickname::IsInitialized() const {
   return true;
 }
 
-void MsgBankQueryNickname::InternalSwap(MsgBankQueryNickname* other) {
+void MsgTransferQueryNickname::InternalSwap(MsgTransferQueryNickname* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   nickname_.Swap(&other->nickname_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgBankQueryNickname, tax_)
-      + sizeof(MsgBankQueryNickname::tax_)
-      - PROTOBUF_FIELD_OFFSET(MsgBankQueryNickname, ret_value_)>(
+      PROTOBUF_FIELD_OFFSET(MsgTransferQueryNickname, tax_)
+      + sizeof(MsgTransferQueryNickname::tax_)
+      - PROTOBUF_FIELD_OFFSET(MsgTransferQueryNickname, ret_value_)>(
           reinterpret_cast<char*>(&ret_value_),
           reinterpret_cast<char*>(&other->ret_value_));
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata MsgBankQueryNickname::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata MsgTransferQueryNickname::GetMetadata() const {
   return GetMetadataStatic();
 }
 
@@ -16143,321 +15898,10 @@ void MsgTtotalSubagentInformation::InternalSwap(MsgTtotalSubagentInformation* ot
 
 // ===================================================================
 
-class MsgBindParentInfo::_Internal {
- public:
-};
-
-MsgBindParentInfo::MsgBindParentInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:MsgBindParentInfo)
-}
-MsgBindParentInfo::MsgBindParentInfo(const MsgBindParentInfo& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  avatar_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_avatar().empty()) {
-    avatar_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_avatar(), 
-      GetArena());
-  }
-  nick_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_nick_name().empty()) {
-    nick_name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_nick_name(), 
-      GetArena());
-  }
-  ::memcpy(&user_id_, &from.user_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&avatar_frame_) -
-    reinterpret_cast<char*>(&user_id_)) + sizeof(avatar_frame_));
-  // @@protoc_insertion_point(copy_constructor:MsgBindParentInfo)
-}
-
-void MsgBindParentInfo::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgBindParentInfo_Login_2eproto.base);
-  avatar_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  nick_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&user_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&avatar_frame_) -
-      reinterpret_cast<char*>(&user_id_)) + sizeof(avatar_frame_));
-}
-
-MsgBindParentInfo::~MsgBindParentInfo() {
-  // @@protoc_insertion_point(destructor:MsgBindParentInfo)
-  SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-void MsgBindParentInfo::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-  avatar_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  nick_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-
-void MsgBindParentInfo::ArenaDtor(void* object) {
-  MsgBindParentInfo* _this = reinterpret_cast< MsgBindParentInfo* >(object);
-  (void)_this;
-}
-void MsgBindParentInfo::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
-void MsgBindParentInfo::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
-}
-const MsgBindParentInfo& MsgBindParentInfo::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgBindParentInfo_Login_2eproto.base);
-  return *internal_default_instance();
-}
-
-
-void MsgBindParentInfo::Clear() {
-// @@protoc_insertion_point(message_clear_start:MsgBindParentInfo)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  avatar_.ClearToEmpty();
-  nick_name_.ClearToEmpty();
-  ::memset(&user_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&avatar_frame_) -
-      reinterpret_cast<char*>(&user_id_)) + sizeof(avatar_frame_));
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-const char* MsgBindParentInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
-    switch (tag >> 3) {
-      // int32 user_id = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // string avatar = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_avatar();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgBindParentInfo.avatar"));
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 avatar_frame = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          avatar_frame_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // string nick_name = 4;
-      case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
-          auto str = _internal_mutable_nick_name();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgBindParentInfo.nick_name"));
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
-    }  // switch
-  }  // while
-success:
-  return ptr;
-failure:
-  ptr = nullptr;
-  goto success;
-#undef CHK_
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* MsgBindParentInfo::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:MsgBindParentInfo)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // int32 user_id = 1;
-  if (this->user_id() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_user_id(), target);
-  }
-
-  // string avatar = 2;
-  if (this->avatar().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_avatar().data(), static_cast<int>(this->_internal_avatar().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "MsgBindParentInfo.avatar");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_avatar(), target);
-  }
-
-  // int32 avatar_frame = 3;
-  if (this->avatar_frame() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_avatar_frame(), target);
-  }
-
-  // string nick_name = 4;
-  if (this->nick_name().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_nick_name().data(), static_cast<int>(this->_internal_nick_name().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "MsgBindParentInfo.nick_name");
-    target = stream->WriteStringMaybeAliased(
-        4, this->_internal_nick_name(), target);
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:MsgBindParentInfo)
-  return target;
-}
-
-size_t MsgBindParentInfo::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:MsgBindParentInfo)
-  size_t total_size = 0;
-
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  // string avatar = 2;
-  if (this->avatar().size() > 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_avatar());
-  }
-
-  // string nick_name = 4;
-  if (this->nick_name().size() > 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_nick_name());
-  }
-
-  // int32 user_id = 1;
-  if (this->user_id() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_user_id());
-  }
-
-  // int32 avatar_frame = 3;
-  if (this->avatar_frame() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_avatar_frame());
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
-}
-
-void MsgBindParentInfo::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:MsgBindParentInfo)
-  GOOGLE_DCHECK_NE(&from, this);
-  const MsgBindParentInfo* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgBindParentInfo>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgBindParentInfo)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgBindParentInfo)
-    MergeFrom(*source);
-  }
-}
-
-void MsgBindParentInfo::MergeFrom(const MsgBindParentInfo& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:MsgBindParentInfo)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from.avatar().size() > 0) {
-    _internal_set_avatar(from._internal_avatar());
-  }
-  if (from.nick_name().size() > 0) {
-    _internal_set_nick_name(from._internal_nick_name());
-  }
-  if (from.user_id() != 0) {
-    _internal_set_user_id(from._internal_user_id());
-  }
-  if (from.avatar_frame() != 0) {
-    _internal_set_avatar_frame(from._internal_avatar_frame());
-  }
-}
-
-void MsgBindParentInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:MsgBindParentInfo)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void MsgBindParentInfo::CopyFrom(const MsgBindParentInfo& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:MsgBindParentInfo)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool MsgBindParentInfo::IsInitialized() const {
-  return true;
-}
-
-void MsgBindParentInfo::InternalSwap(MsgBindParentInfo* other) {
-  using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  avatar_.Swap(&other->avatar_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  nick_name_.Swap(&other->nick_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgBindParentInfo, avatar_frame_)
-      + sizeof(MsgBindParentInfo::avatar_frame_)
-      - PROTOBUF_FIELD_OFFSET(MsgBindParentInfo, user_id_)>(
-          reinterpret_cast<char*>(&user_id_),
-          reinterpret_cast<char*>(&other->user_id_));
-}
-
-::PROTOBUF_NAMESPACE_ID::Metadata MsgBindParentInfo::GetMetadata() const {
-  return GetMetadataStatic();
-}
-
-
-// ===================================================================
-
 class MsgBindInviteCodeResp::_Internal {
  public:
-  static const ::MsgBindParentInfo& info(const MsgBindInviteCodeResp* msg);
 };
 
-const ::MsgBindParentInfo&
-MsgBindInviteCodeResp::_Internal::info(const MsgBindInviteCodeResp* msg) {
-  return *msg->info_;
-}
 MsgBindInviteCodeResp::MsgBindInviteCodeResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
@@ -16467,11 +15911,6 @@ MsgBindInviteCodeResp::MsgBindInviteCodeResp(::PROTOBUF_NAMESPACE_ID::Arena* are
 MsgBindInviteCodeResp::MsgBindInviteCodeResp(const MsgBindInviteCodeResp& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  if (from._internal_has_info()) {
-    info_ = new ::MsgBindParentInfo(*from.info_);
-  } else {
-    info_ = nullptr;
-  }
   ::memcpy(&res_code_, &from.res_code_,
     static_cast<size_t>(reinterpret_cast<char*>(&user_type_) -
     reinterpret_cast<char*>(&res_code_)) + sizeof(user_type_));
@@ -16479,11 +15918,10 @@ MsgBindInviteCodeResp::MsgBindInviteCodeResp(const MsgBindInviteCodeResp& from)
 }
 
 void MsgBindInviteCodeResp::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgBindInviteCodeResp_Login_2eproto.base);
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&info_) - reinterpret_cast<char*>(this)),
+      reinterpret_cast<char*>(&res_code_) - reinterpret_cast<char*>(this)),
       0, static_cast<size_t>(reinterpret_cast<char*>(&user_type_) -
-      reinterpret_cast<char*>(&info_)) + sizeof(user_type_));
+      reinterpret_cast<char*>(&res_code_)) + sizeof(user_type_));
 }
 
 MsgBindInviteCodeResp::~MsgBindInviteCodeResp() {
@@ -16494,7 +15932,6 @@ MsgBindInviteCodeResp::~MsgBindInviteCodeResp() {
 
 void MsgBindInviteCodeResp::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
-  if (this != internal_default_instance()) delete info_;
 }
 
 void MsgBindInviteCodeResp::ArenaDtor(void* object) {
@@ -16518,10 +15955,6 @@ void MsgBindInviteCodeResp::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && info_ != nullptr) {
-    delete info_;
-  }
-  info_ = nullptr;
   ::memset(&res_code_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&user_type_) -
       reinterpret_cast<char*>(&res_code_)) + sizeof(user_type_));
@@ -16546,13 +15979,6 @@ const char* MsgBindInviteCodeResp::_InternalParse(const char* ptr, ::PROTOBUF_NA
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           user_type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // .MsgBindParentInfo info = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          ptr = ctx->ParseMessage(_internal_mutable_info(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -16596,14 +16022,6 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_user_type(), target);
   }
 
-  // .MsgBindParentInfo info = 3;
-  if (this->has_info()) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::info(this), target, stream);
-  }
-
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -16619,13 +16037,6 @@ size_t MsgBindInviteCodeResp::ByteSizeLong() const {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
-
-  // .MsgBindParentInfo info = 3;
-  if (this->has_info()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *info_);
-  }
 
   // int32 res_code = 1;
   if (this->res_code() != 0) {
@@ -16672,9 +16083,6 @@ void MsgBindInviteCodeResp::MergeFrom(const MsgBindInviteCodeResp& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_info()) {
-    _internal_mutable_info()->::MsgBindParentInfo::MergeFrom(from._internal_info());
-  }
   if (from.res_code() != 0) {
     _internal_set_res_code(from._internal_res_code());
   }
@@ -16707,9 +16115,9 @@ void MsgBindInviteCodeResp::InternalSwap(MsgBindInviteCodeResp* other) {
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(MsgBindInviteCodeResp, user_type_)
       + sizeof(MsgBindInviteCodeResp::user_type_)
-      - PROTOBUF_FIELD_OFFSET(MsgBindInviteCodeResp, info_)>(
-          reinterpret_cast<char*>(&info_),
-          reinterpret_cast<char*>(&other->info_));
+      - PROTOBUF_FIELD_OFFSET(MsgBindInviteCodeResp, res_code_)>(
+          reinterpret_cast<char*>(&res_code_),
+          reinterpret_cast<char*>(&other->res_code_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MsgBindInviteCodeResp::GetMetadata() const {
@@ -16818,17 +16226,8 @@ template<> PROTOBUF_NOINLINE ::MsgActiveInfoSCPick* Arena::CreateMaybeMessage< :
 template<> PROTOBUF_NOINLINE ::MsgModifySignature* Arena::CreateMaybeMessage< ::MsgModifySignature >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MsgModifySignature >(arena);
 }
-template<> PROTOBUF_NOINLINE ::MsgBankChangePassword* Arena::CreateMaybeMessage< ::MsgBankChangePassword >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::MsgBankChangePassword >(arena);
-}
-template<> PROTOBUF_NOINLINE ::MsgBankOperate* Arena::CreateMaybeMessage< ::MsgBankOperate >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::MsgBankOperate >(arena);
-}
-template<> PROTOBUF_NOINLINE ::MsgBankTakeOut* Arena::CreateMaybeMessage< ::MsgBankTakeOut >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::MsgBankTakeOut >(arena);
-}
-template<> PROTOBUF_NOINLINE ::MsgBankTransfer* Arena::CreateMaybeMessage< ::MsgBankTransfer >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::MsgBankTransfer >(arena);
+template<> PROTOBUF_NOINLINE ::MsgTransferOperate* Arena::CreateMaybeMessage< ::MsgTransferOperate >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::MsgTransferOperate >(arena);
 }
 template<> PROTOBUF_NOINLINE ::MsgTopInfo* Arena::CreateMaybeMessage< ::MsgTopInfo >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MsgTopInfo >(arena);
@@ -16839,14 +16238,20 @@ template<> PROTOBUF_NOINLINE ::MsgGetRank* Arena::CreateMaybeMessage< ::MsgGetRa
 template<> PROTOBUF_NOINLINE ::MsgTopListResp* Arena::CreateMaybeMessage< ::MsgTopListResp >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MsgTopListResp >(arena);
 }
-template<> PROTOBUF_NOINLINE ::MsgBankTransferResp* Arena::CreateMaybeMessage< ::MsgBankTransferResp >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::MsgBankTransferResp >(arena);
+template<> PROTOBUF_NOINLINE ::MsgTransferOperateResp* Arena::CreateMaybeMessage< ::MsgTransferOperateResp >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::MsgTransferOperateResp >(arena);
 }
-template<> PROTOBUF_NOINLINE ::MsgBankRecord* Arena::CreateMaybeMessage< ::MsgBankRecord >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::MsgBankRecord >(arena);
+template<> PROTOBUF_NOINLINE ::MsgTransferOperateSyncResp* Arena::CreateMaybeMessage< ::MsgTransferOperateSyncResp >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::MsgTransferOperateSyncResp >(arena);
 }
-template<> PROTOBUF_NOINLINE ::MsgBankRecordResp* Arena::CreateMaybeMessage< ::MsgBankRecordResp >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::MsgBankRecordResp >(arena);
+template<> PROTOBUF_NOINLINE ::MsgTransferReceiveResp* Arena::CreateMaybeMessage< ::MsgTransferReceiveResp >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::MsgTransferReceiveResp >(arena);
+}
+template<> PROTOBUF_NOINLINE ::MsgTransferRecord* Arena::CreateMaybeMessage< ::MsgTransferRecord >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::MsgTransferRecord >(arena);
+}
+template<> PROTOBUF_NOINLINE ::MsgTransferRecordResp* Arena::CreateMaybeMessage< ::MsgTransferRecordResp >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::MsgTransferRecordResp >(arena);
 }
 template<> PROTOBUF_NOINLINE ::MsgPhoneCode* Arena::CreateMaybeMessage< ::MsgPhoneCode >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MsgPhoneCode >(arena);
@@ -16857,17 +16262,14 @@ template<> PROTOBUF_NOINLINE ::MsgItem* Arena::CreateMaybeMessage< ::MsgItem >(A
 template<> PROTOBUF_NOINLINE ::MsgPlayerItem* Arena::CreateMaybeMessage< ::MsgPlayerItem >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MsgPlayerItem >(arena);
 }
-template<> PROTOBUF_NOINLINE ::MsgBankQueryNickname* Arena::CreateMaybeMessage< ::MsgBankQueryNickname >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::MsgBankQueryNickname >(arena);
+template<> PROTOBUF_NOINLINE ::MsgTransferQueryNickname* Arena::CreateMaybeMessage< ::MsgTransferQueryNickname >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::MsgTransferQueryNickname >(arena);
 }
 template<> PROTOBUF_NOINLINE ::MsgSubagentInformation* Arena::CreateMaybeMessage< ::MsgSubagentInformation >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MsgSubagentInformation >(arena);
 }
 template<> PROTOBUF_NOINLINE ::MsgTtotalSubagentInformation* Arena::CreateMaybeMessage< ::MsgTtotalSubagentInformation >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MsgTtotalSubagentInformation >(arena);
-}
-template<> PROTOBUF_NOINLINE ::MsgBindParentInfo* Arena::CreateMaybeMessage< ::MsgBindParentInfo >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::MsgBindParentInfo >(arena);
 }
 template<> PROTOBUF_NOINLINE ::MsgBindInviteCodeResp* Arena::CreateMaybeMessage< ::MsgBindInviteCodeResp >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MsgBindInviteCodeResp >(arena);

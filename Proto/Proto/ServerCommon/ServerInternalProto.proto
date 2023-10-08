@@ -442,3 +442,9 @@ message MsgDBTransferReceive
 	int32 receive_user_id 	= 1;			//领取用户Id
 	int64 receive_id		= 2;			//领取id
 }
+//绑定邀请码
+message MsgDBBindInviteCode
+{
+	int32 	user_id = 1;					//玩家ID
+	string 	invite_code = 2;				//邀请码
+}

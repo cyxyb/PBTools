@@ -25,7 +25,7 @@ public static partial class CommonCmdReflection {
           "ChxQcm90by9Db21tb24vQ29tbW9uQ21kLnByb3RvKoYBCgpFTXNnSURNYWlu",
           "EhMKD0VNc2dJRE1haW5fTnVsbBAAEh4KGUVNc2dJRE1haW5fTG9naW5fVXNl",
           "ckluZm8Q6QcSFAoPRU1zZ0lETWFpbl9HYW1lENEPEhcKEkVNc2dJRE1haW5f",
-          "U3ViR2FtZRDSDxIUCg9FTXNnSURNYWluX0NoYXQQuRcq0BsKC0VNc2dJRExv",
+          "U3ViR2FtZRDSDxIUCg9FTXNnSURNYWluX0NoYXQQuRcq4RkKC0VNc2dJRExv",
           "Z2luEhMKD01zZ0lETG9naW5fTnVsbBAAEhQKEE1zZ0lETG9naW5fTG9naW4Q",
           "ARIYChRNc2dJRExvZ2luX0xvZ2luUmVzcBACEh0KGU1zZ0lETG9naW5fTW9k",
           "aWZ5Tmlja05hbWUQAxIhCh1Nc2dJRExvZ2luX01vZGlmeU5pY2tOYW1lUmVz",
@@ -79,53 +79,48 @@ public static partial class CommonCmdReflection {
           "aXZlX1BpY2tBY3RpdmVJbmZvEEYSIgoeTXNnSURBY3RpdmVfUGlja0FjdGl2",
           "ZUluZm9SZXNwEEcSGQoVTXNnSURTaWduYXR1cmVfTW9kaWZ5EEgSHQoZTXNn",
           "SURTaWduYXR1cmVfTW9kaWZ5UmVzcBBJEhEKDU1zZ0lEUmFua19HZXQQShIV",
-          "ChFNc2dJRFJhbmtfR2V0UmVzcBBLEhkKFU1zZ0lEQmFua19TZXRQYXNzd29y",
-          "ZBBMEh0KGU1zZ0lEQmFua19TZXRQYXNzd29yZFJlc3AQTRIZChVNc2dJREJh",
-          "bmtfVmVyaWZ5UGhvbmUQThIdChlNc2dJREJhbmtfVmVyaWZ5UGhvbmVSZXNw",
-          "EE8SHAoYTXNnSURCYW5rX0NoYW5nZVBhc3N3b3JkEFASIAocTXNnSURCYW5r",
-          "X0NoYW5nZVBhc3N3b3JkUmVzcBBREhYKEk1zZ0lEQmFua19PcGVuQmFuaxBS",
-          "EhoKFk1zZ0lEQmFua19PcGVuQmFua1Jlc3AQUxIZChVNc2dJREJhbmtfQmFu",
-          "a09wZXJhdGUQVBIdChlNc2dJREJhbmtfQmFua09wZXJhdGVSZXNwEFUSGgoW",
-          "TXNnSURCYW5rX0JhbmtUcmFuc2ZlchBWEh4KGk1zZ0lEQmFua19CYW5rVHJh",
-          "bnNmZXJSZXNwEFcSGAoUTXNnSURCYW5rX0JhbmtSZWNvcmQQWBIcChhNc2dJ",
-          "REJhbmtfQmFua1JlY29yZFJlc3AQWRIjCh9Nc2dJRExvZ2luX05vdGlmeUNo",
-          "YXRTZXJ2ZXJMaXN0EFoSIgoeTXNnSURMb2dpbl9RdWVyeUNoYXRTZXJ2ZXJM",
-          "aXN0EFsSHAoYTXNnSURMb2dpbl9HZXRQbGF5ZXJJdGVtEFwSIAocTXNnSURM",
-          "b2dpbl9HZXRQbGF5ZXJJdGVtUmVzcBBdEiAKHE1zZ0lETG9naW5fQmFua1F1",
-          "ZXJ5VXNlckluZm8QXhIkCiBNc2dJRExvZ2luX0JhbmtRdWVyeVVzZXJJbmZv",
-          "UmVzcBBfEhYKEk1zZ0lEU2hvcF9CdXlHb29kcxBgEhoKFk1zZ0lEU2hvcF9C",
-          "dXlHb29kc1Jlc3AQYRIfChtNc2dJRFNob3BfUXVlcnlUcnVtcGV0UHJpY2UQ",
-          "YhIjCh9Nc2dJRFNob3BfUXVlcnlUcnVtcGV0UHJpY2VSZXNwEGMSHgoaTXNn",
-          "SURMb2dpbl9RdWVyeVNlcnZlclRpbWUQZBIiCh5Nc2dJRExvZ2luX1F1ZXJ5",
-          "U2VydmVyVGltZVJlc3AQZRIUChBNc2dJRExvZ2luX0hlYXJ0EGYSGAoUTXNn",
-          "SURMb2dpbl9IZWFydFJlc3AQZxIgChxNc2dJREFnZW50X1F1ZXJ5U3ViQWdl",
-          "bnRJbmZvEGgSJAogTXNnSURBZ2VudF9RdWVyeVN1YkFnZW50SW5mb1Jlc3AQ",
-          "aRIbChdNc2dJRExvZ2luX0tpY2tVc2VyUmVzcBBqEiIKHk1zZ0lEQmFua19C",
-          "YW5rVHJhbnNmZXJTeW5jUmVzcBBrEh0KGU1zZ0lEU2hhcmVfQmluZEludml0",
-          "ZUNvZGUQbBIhCh1Nc2dJRFNoYXJlX0JpbmRJbnZpdGVDb2RlUmVzcBBtEhwK",
-          "GE1zZ0lEU2hhcmVfUXVlcnlCaW5kSW5mbxBuEiAKHE1zZ0lEU2hhcmVfUXVl",
-          "cnlCaW5kSW5mb1Jlc3AQbyqKBQoKRU1zZ0lER2FtZRISCg5Nc2dJREdhbWVf",
-          "TnVsbBAAEhQKD01zZ0lER2FtZV9Mb2dpbhDpBxIYChNNc2dJREdhbWVfTG9n",
-          "aW5SZXNwEOoHEh4KGU1zZ0lER2FtZV9TcXVlZXplU2VhdFJlc3AQ6wcSFQoQ",
-          "TXNnSURHYW1lX0xvZ291dBDsBxIaChVNc2dJREdhbWVfQXV0b1NpdERvd24Q",
-          "7QcSGgoVTXNnSURHYW1lX1NpdERvd25SZXNwEO4HEiEKHE1zZ0lER2FtZV9T",
-          "eW5jUGxheWVySW5mb1Jlc3AQ7wcSJgohTXNnSURHYW1lX05vdGlmeVBsYXll",
-          "clN0YW5kVXBSZXNwEPAHEiMKHk1zZ0lER2FtZV9TeW5jUGxheWVyc1Njb3Jl",
-          "UmVzcBDxBxIcChdNc2dJREdhbWVfU2VuZEdhbWVTZW5jZRDyBxIgChtNc2dJ",
-          "REdhbWVfU2VuZEdhbWVTZW5jZVJlc3AQ8wcSIAobTXNnSURHYW1lX05vdGlm",
-          "eU1lc3NhZ2VSZXNwEPQHEhkKFE1zZ0lER2FtZV9DcmVhdGVSb29tEPUHEhcK",
-          "Ek1zZ0lER2FtZV9Kb2luUm9vbRD2BxIaChVNc2dJREdhbWVfUXVlcnlSZWNv",
-          "cmQQ9wcSIwoeTXNnSURHYW1lX1F1ZXJ5Um91bmRSZWNvcmRSZXNwEPgHEiEK",
-          "HE1zZ0lER2FtZV9RdWVyeURheVJlY29yZFJlc3AQ+QcSGwoWTXNnSURHYW1l",
-          "X0FkZE9uZVJlY29yZBD6BxImCiFNc2dJREdhbWVfTm90aWZ5UGxheWVyT2Zm",
-          "bGluZVJlc3AQ+wcSGgoVTXNnSURHYW1lX0NoYW5nZVRhYmxlEPwHKpoCCgpF",
-          "TXNnSURDaGF0EhIKDk1zZ0lEQ2hhdF9OdWxsEAASFAoPTXNnSURDaGF0X0xv",
-          "Z2luENEPEhgKE01zZ0lEQ2hhdF9Mb2dpblJlc3AQ0g8SGQoUTXNnSURDaGF0",
-          "X0xvZ291dFJlc3AQ0w8SHAoXTXNnSURDaGF0X1NlbmROb3JtYWxNc2cQ1A8S",
-          "JgohTXNnSURDaGF0X05vdGlmeUNoYXROb3JtYWxNc2dSZXNwENUPEh0KGE1z",
-          "Z0lEQ2hhdF9TZW5kVHJ1bXBldE1zZxDWDxInCiJNc2dJRENoYXRfTm90aWZ5",
-          "Q2hhdFRydW1wZXRNc2dSZXNwENcPEh8KGk1zZ0lEQ2hhdF9TeW5jVXNlcklu",
-          "Zm9SZXNwENgPYgZwcm90bzM="));
+          "ChFNc2dJRFJhbmtfR2V0UmVzcBBLEiEKHU1zZ0lEVHJhbnNmZXJfVHJhbnNm",
+          "ZXJSZWNlaXZlEEwSJQohTXNnSURUcmFuc2Zlcl9UcmFuc2ZlclJlY2VpdmVS",
+          "ZXNwEE0SIQodTXNnSURUcmFuc2Zlcl9UcmFuc2Zlck9wZXJhdGUQThIlCiFN",
+          "c2dJRFRyYW5zZmVyX1RyYW5zZmVyT3BlcmF0ZVJlc3AQTxIgChxNc2dJRFRy",
+          "YW5zZmVyX1RyYW5zZmVyUmVjb3JkEFASJAogTXNnSURUcmFuc2Zlcl9UcmFu",
+          "c2ZlclJlY29yZFJlc3AQURIjCh9Nc2dJRExvZ2luX05vdGlmeUNoYXRTZXJ2",
+          "ZXJMaXN0EFISIgoeTXNnSURMb2dpbl9RdWVyeUNoYXRTZXJ2ZXJMaXN0EFMS",
+          "HAoYTXNnSURMb2dpbl9HZXRQbGF5ZXJJdGVtEFQSIAocTXNnSURMb2dpbl9H",
+          "ZXRQbGF5ZXJJdGVtUmVzcBBVEiQKIE1zZ0lETG9naW5fVHJhbnNmZXJRdWVy",
+          "eVVzZXJJbmZvEFYSKAokTXNnSURMb2dpbl9UcmFuc2ZlclF1ZXJ5VXNlcklu",
+          "Zm9SZXNwEFcSFgoSTXNnSURTaG9wX0J1eUdvb2RzEFgSGgoWTXNnSURTaG9w",
+          "X0J1eUdvb2RzUmVzcBBZEh8KG01zZ0lEU2hvcF9RdWVyeVRydW1wZXRQcmlj",
+          "ZRBaEiMKH01zZ0lEU2hvcF9RdWVyeVRydW1wZXRQcmljZVJlc3AQWxIeChpN",
+          "c2dJRExvZ2luX1F1ZXJ5U2VydmVyVGltZRBcEiIKHk1zZ0lETG9naW5fUXVl",
+          "cnlTZXJ2ZXJUaW1lUmVzcBBdEhQKEE1zZ0lETG9naW5fSGVhcnQQXhIYChRN",
+          "c2dJRExvZ2luX0hlYXJ0UmVzcBBfEiAKHE1zZ0lEQWdlbnRfUXVlcnlTdWJB",
+          "Z2VudEluZm8QYBIkCiBNc2dJREFnZW50X1F1ZXJ5U3ViQWdlbnRJbmZvUmVz",
+          "cBBhEhsKF01zZ0lETG9naW5fS2lja1VzZXJSZXNwEGISJQohTXNnSURCYW5r",
+          "X1RyYW5zZmVyT3BlcmF0ZVN5bmNSZXNwEGMSHQoZTXNnSURTaGFyZV9CaW5k",
+          "SW52aXRlQ29kZRBsEiEKHU1zZ0lEU2hhcmVfQmluZEludml0ZUNvZGVSZXNw",
+          "EG0qigUKCkVNc2dJREdhbWUSEgoOTXNnSURHYW1lX051bGwQABIUCg9Nc2dJ",
+          "REdhbWVfTG9naW4Q6QcSGAoTTXNnSURHYW1lX0xvZ2luUmVzcBDqBxIeChlN",
+          "c2dJREdhbWVfU3F1ZWV6ZVNlYXRSZXNwEOsHEhUKEE1zZ0lER2FtZV9Mb2dv",
+          "dXQQ7AcSGgoVTXNnSURHYW1lX0F1dG9TaXREb3duEO0HEhoKFU1zZ0lER2Ft",
+          "ZV9TaXREb3duUmVzcBDuBxIhChxNc2dJREdhbWVfU3luY1BsYXllckluZm9S",
+          "ZXNwEO8HEiYKIU1zZ0lER2FtZV9Ob3RpZnlQbGF5ZXJTdGFuZFVwUmVzcBDw",
+          "BxIjCh5Nc2dJREdhbWVfU3luY1BsYXllcnNTY29yZVJlc3AQ8QcSHAoXTXNn",
+          "SURHYW1lX1NlbmRHYW1lU2VuY2UQ8gcSIAobTXNnSURHYW1lX1NlbmRHYW1l",
+          "U2VuY2VSZXNwEPMHEiAKG01zZ0lER2FtZV9Ob3RpZnlNZXNzYWdlUmVzcBD0",
+          "BxIZChRNc2dJREdhbWVfQ3JlYXRlUm9vbRD1BxIXChJNc2dJREdhbWVfSm9p",
+          "blJvb20Q9gcSGgoVTXNnSURHYW1lX1F1ZXJ5UmVjb3JkEPcHEiMKHk1zZ0lE",
+          "R2FtZV9RdWVyeVJvdW5kUmVjb3JkUmVzcBD4BxIhChxNc2dJREdhbWVfUXVl",
+          "cnlEYXlSZWNvcmRSZXNwEPkHEhsKFk1zZ0lER2FtZV9BZGRPbmVSZWNvcmQQ",
+          "+gcSJgohTXNnSURHYW1lX05vdGlmeVBsYXllck9mZmxpbmVSZXNwEPsHEhoK",
+          "FU1zZ0lER2FtZV9DaGFuZ2VUYWJsZRD8ByqaAgoKRU1zZ0lEQ2hhdBISCg5N",
+          "c2dJRENoYXRfTnVsbBAAEhQKD01zZ0lEQ2hhdF9Mb2dpbhDRDxIYChNNc2dJ",
+          "RENoYXRfTG9naW5SZXNwENIPEhkKFE1zZ0lEQ2hhdF9Mb2dvdXRSZXNwENMP",
+          "EhwKF01zZ0lEQ2hhdF9TZW5kTm9ybWFsTXNnENQPEiYKIU1zZ0lEQ2hhdF9O",
+          "b3RpZnlDaGF0Tm9ybWFsTXNnUmVzcBDVDxIdChhNc2dJRENoYXRfU2VuZFRy",
+          "dW1wZXRNc2cQ1g8SJwoiTXNnSURDaGF0X05vdGlmeUNoYXRUcnVtcGV0TXNn",
+          "UmVzcBDXDxIfChpNc2dJRENoYXRfU3luY1VzZXJJbmZvUmVzcBDYD2IGcHJv",
+          "dG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::EMsgIDMain), typeof(global::EMsgIDLogin), typeof(global::EMsgIDGame), typeof(global::EMsgIDChat), }, null, null));
@@ -457,149 +452,109 @@ public enum EMsgIDLogin {
   /// </summary>
   [pbr::OriginalName("MsgIDRank_GetResp")] MsgIdrankGetResp = 75,
   /// <summary>
-  ///银行设置密码(MsgCommonStr)
+  ///转账领取(MsgCommonN32)
   /// </summary>
-  [pbr::OriginalName("MsgIDBank_SetPassword")] MsgIdbankSetPassword = 76,
+  [pbr::OriginalName("MsgIDTransfer_TransferReceive")] MsgIdtransferTransferReceive = 76,
   /// <summary>
-  ///银行设置密码返回(MsgBankTakeOut)
+  ///转账领取返回(MsgTransferReceiveResp)
   /// </summary>
-  [pbr::OriginalName("MsgIDBank_SetPasswordResp")] MsgIdbankSetPasswordResp = 77,
+  [pbr::OriginalName("MsgIDTransfer_TransferReceiveResp")] MsgIdtransferTransferReceiveResp = 77,
   /// <summary>
-  ///验证手机();
+  ///转账(MsgTransferOperate)
   /// </summary>
-  [pbr::OriginalName("MsgIDBank_VerifyPhone")] MsgIdbankVerifyPhone = 78,
+  [pbr::OriginalName("MsgIDTransfer_TransferOperate")] MsgIdtransferTransferOperate = 78,
   /// <summary>
-  ///验证手机返回(MsgCommonBool)
+  ///转账返回(MsgTransferOperateResp)
   /// </summary>
-  [pbr::OriginalName("MsgIDBank_VerifyPhoneResp")] MsgIdbankVerifyPhoneResp = 79,
+  [pbr::OriginalName("MsgIDTransfer_TransferOperateResp")] MsgIdtransferTransferOperateResp = 79,
   /// <summary>
-  ///银行修改密码(MsgBankChangePassword)
+  ///转账记录(MsgCommonBool)
   /// </summary>
-  [pbr::OriginalName("MsgIDBank_ChangePassword")] MsgIdbankChangePassword = 80,
+  [pbr::OriginalName("MsgIDTransfer_TransferRecord")] MsgIdtransferTransferRecord = 80,
   /// <summary>
-  ///银行修改密码返回(MsgCommonN32)0成功非1和旧密码相同
+  ///转账记录返回(MsgTransferRecordResp)
   /// </summary>
-  [pbr::OriginalName("MsgIDBank_ChangePasswordResp")] MsgIdbankChangePasswordResp = 81,
-  /// <summary>
-  ///银行打开银行(MsgCommonStr)
-  /// </summary>
-  [pbr::OriginalName("MsgIDBank_OpenBank")] MsgIdbankOpenBank = 82,
-  /// <summary>
-  ///银行打开银行返回(MsgBankTakeOut)
-  /// </summary>
-  [pbr::OriginalName("MsgIDBank_OpenBankResp")] MsgIdbankOpenBankResp = 83,
-  /// <summary>
-  ///银行存入(MsgBankOperate)
-  /// </summary>
-  [pbr::OriginalName("MsgIDBank_BankOperate")] MsgIdbankBankOperate = 84,
-  /// <summary>
-  ///银行存入返回(MsgBankTakeOut)
-  /// </summary>
-  [pbr::OriginalName("MsgIDBank_BankOperateResp")] MsgIdbankBankOperateResp = 85,
-  /// <summary>
-  ///银行转账(MsgBankTransfer)
-  /// </summary>
-  [pbr::OriginalName("MsgIDBank_BankTransfer")] MsgIdbankBankTransfer = 86,
-  /// <summary>
-  ///银行转账返回(MsgBankTransferResp)
-  /// </summary>
-  [pbr::OriginalName("MsgIDBank_BankTransferResp")] MsgIdbankBankTransferResp = 87,
-  /// <summary>
-  ///银行转账记录()
-  /// </summary>
-  [pbr::OriginalName("MsgIDBank_BankRecord")] MsgIdbankBankRecord = 88,
-  /// <summary>
-  ///银行转账记录返回(MsgBankRecordResp)
-  /// </summary>
-  [pbr::OriginalName("MsgIDBank_BankRecordResp")] MsgIdbankBankRecordResp = 89,
+  [pbr::OriginalName("MsgIDTransfer_TransferRecordResp")] MsgIdtransferTransferRecordResp = 81,
   /// <summary>
   ///通知聊天服务器列表(MsgChatServerList)
   /// </summary>
-  [pbr::OriginalName("MsgIDLogin_NotifyChatServerList")] MsgIdloginNotifyChatServerList = 90,
+  [pbr::OriginalName("MsgIDLogin_NotifyChatServerList")] MsgIdloginNotifyChatServerList = 82,
   /// <summary>
   ///请求聊天服务器列表(MsgCommonBool)
   /// </summary>
-  [pbr::OriginalName("MsgIDLogin_QueryChatServerList")] MsgIdloginQueryChatServerList = 91,
+  [pbr::OriginalName("MsgIDLogin_QueryChatServerList")] MsgIdloginQueryChatServerList = 83,
   /// <summary>
   ///获取玩家道具列表(MsgCommonBool)
   /// </summary>
-  [pbr::OriginalName("MsgIDLogin_GetPlayerItem")] MsgIdloginGetPlayerItem = 92,
+  [pbr::OriginalName("MsgIDLogin_GetPlayerItem")] MsgIdloginGetPlayerItem = 84,
   /// <summary>
   ///获取玩家道具列表返回(MsgPlayerItem)
   /// </summary>
-  [pbr::OriginalName("MsgIDLogin_GetPlayerItemResp")] MsgIdloginGetPlayerItemResp = 93,
+  [pbr::OriginalName("MsgIDLogin_GetPlayerItemResp")] MsgIdloginGetPlayerItemResp = 85,
   /// <summary>
   ///请求用户昵称(MsgCommonN32)
   /// </summary>
-  [pbr::OriginalName("MsgIDLogin_BankQueryUserInfo")] MsgIdloginBankQueryUserInfo = 94,
+  [pbr::OriginalName("MsgIDLogin_TransferQueryUserInfo")] MsgIdloginTransferQueryUserInfo = 86,
   /// <summary>
-  ///请求用户昵称返回(MsgBankQueryNickname)
+  ///请求用户昵称返回(MsgTransferQueryNickname)
   /// </summary>
-  [pbr::OriginalName("MsgIDLogin_BankQueryUserInfoResp")] MsgIdloginBankQueryUserInfoResp = 95,
+  [pbr::OriginalName("MsgIDLogin_TransferQueryUserInfoResp")] MsgIdloginTransferQueryUserInfoResp = 87,
   /// <summary>
   ///购买商品(MsgCommonKV)
   /// </summary>
-  [pbr::OriginalName("MsgIDShop_BuyGoods")] MsgIdshopBuyGoods = 96,
+  [pbr::OriginalName("MsgIDShop_BuyGoods")] MsgIdshopBuyGoods = 88,
   /// <summary>
   ///购买商品返回(MsgCommonKV)
   /// </summary>
-  [pbr::OriginalName("MsgIDShop_BuyGoodsResp")] MsgIdshopBuyGoodsResp = 97,
+  [pbr::OriginalName("MsgIDShop_BuyGoodsResp")] MsgIdshopBuyGoodsResp = 89,
   /// <summary>
   ///查询小喇叭价格(MsgCommonBool)
   /// </summary>
-  [pbr::OriginalName("MsgIDShop_QueryTrumpetPrice")] MsgIdshopQueryTrumpetPrice = 98,
+  [pbr::OriginalName("MsgIDShop_QueryTrumpetPrice")] MsgIdshopQueryTrumpetPrice = 90,
   /// <summary>
   ///查询小喇叭价格返回(MsgCommonN32)
   /// </summary>
-  [pbr::OriginalName("MsgIDShop_QueryTrumpetPriceResp")] MsgIdshopQueryTrumpetPriceResp = 99,
+  [pbr::OriginalName("MsgIDShop_QueryTrumpetPriceResp")] MsgIdshopQueryTrumpetPriceResp = 91,
   /// <summary>
   ///请求服务器时间(MsgCommonBool)
   /// </summary>
-  [pbr::OriginalName("MsgIDLogin_QueryServerTime")] MsgIdloginQueryServerTime = 100,
+  [pbr::OriginalName("MsgIDLogin_QueryServerTime")] MsgIdloginQueryServerTime = 92,
   /// <summary>
   ///请求服务器时间返回(MsgCommonN64)
   /// </summary>
-  [pbr::OriginalName("MsgIDLogin_QueryServerTimeResp")] MsgIdloginQueryServerTimeResp = 101,
+  [pbr::OriginalName("MsgIDLogin_QueryServerTimeResp")] MsgIdloginQueryServerTimeResp = 93,
   /// <summary>
   ///心跳(MsgCommonBool)
   /// </summary>
-  [pbr::OriginalName("MsgIDLogin_Heart")] MsgIdloginHeart = 102,
+  [pbr::OriginalName("MsgIDLogin_Heart")] MsgIdloginHeart = 94,
   /// <summary>
   ///心跳返回(MsgCommonBool)	
   /// </summary>
-  [pbr::OriginalName("MsgIDLogin_HeartResp")] MsgIdloginHeartResp = 103,
+  [pbr::OriginalName("MsgIDLogin_HeartResp")] MsgIdloginHeartResp = 95,
   /// <summary>
   ///查询子代理信息()
   /// </summary>
-  [pbr::OriginalName("MsgIDAgent_QuerySubAgentInfo")] MsgIdagentQuerySubAgentInfo = 104,
+  [pbr::OriginalName("MsgIDAgent_QuerySubAgentInfo")] MsgIdagentQuerySubAgentInfo = 96,
   /// <summary>
   ///查询子代理信息返回(MsgTtotalSubagentInformation)
   /// </summary>
-  [pbr::OriginalName("MsgIDAgent_QuerySubAgentInfoResp")] MsgIdagentQuerySubAgentInfoResp = 105,
+  [pbr::OriginalName("MsgIDAgent_QuerySubAgentInfoResp")] MsgIdagentQuerySubAgentInfoResp = 97,
   /// <summary>
   ///踢出玩家(MsgCommonBool)
   /// </summary>
-  [pbr::OriginalName("MsgIDLogin_KickUserResp")] MsgIdloginKickUserResp = 106,
+  [pbr::OriginalName("MsgIDLogin_KickUserResp")] MsgIdloginKickUserResp = 98,
   /// <summary>
-  ///银行转账同步返回(MsgBankTransferResp)
+  ///转账同步返回(MsgTransferOperateSyncResp)
   /// </summary>
-  [pbr::OriginalName("MsgIDBank_BankTransferSyncResp")] MsgIdbankBankTransferSyncResp = 107,
+  [pbr::OriginalName("MsgIDBank_TransferOperateSyncResp")] MsgIdbankTransferOperateSyncResp = 99,
   /// <summary>
   ///绑定邀请码(MsgCommonStr)
   /// </summary>
   [pbr::OriginalName("MsgIDShare_BindInviteCode")] MsgIdshareBindInviteCode = 108,
   /// <summary>
-  ///绑定邀请码返回(MsgBindInviteCodeResp)
+  ///绑定邀请码返回(MsgCommonN32)
   /// </summary>
   [pbr::OriginalName("MsgIDShare_BindInviteCodeResp")] MsgIdshareBindInviteCodeResp = 109,
-  /// <summary>
-  ///查询绑定信息(MsgCommonBool)
-  /// </summary>
-  [pbr::OriginalName("MsgIDShare_QueryBindInfo")] MsgIdshareQueryBindInfo = 110,
-  /// <summary>
-  ///查询绑定信息返回(MsgBindParentInfo)
-  /// </summary>
-  [pbr::OriginalName("MsgIDShare_QueryBindInfoResp")] MsgIdshareQueryBindInfoResp = 111,
 }
 
 public enum EMsgIDGame {
