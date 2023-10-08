@@ -435,3 +435,9 @@ message MsgTtotalSubagentInformation
 {
 	repeated MsgSubagentInformation agent_info = 1;
 }
+
+message MsgBindInviteCodeResp
+{
+	int32		res_code	= 1;		//返回码
+	int32		user_type	= 2;		//玩家类型
+}
