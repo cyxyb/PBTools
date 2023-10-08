@@ -172,6 +172,8 @@ enum EMsgIDDB
 	DB2LOGIN_QueryTrumpetPriceResp	= 1071;	//查询小喇叭价格返回
 	LOGIN2DB_QuerySubAgentInfo		= 1072;	//查询子代理信息
 	DB2LOGIN_QuerySubAgentInfoResp	= 1073;	//查询子代理信息返回
+	LOGIN2DB_BindInviteCode			= 1074;	//绑定邀请码
+	DB2LOGIN_BindInviteCodeResp		= 1075;	//绑定邀请码返回
 	//2001-3000 GameServer2DB
 	GAME2DB_Login					= 2001;	//玩家登录游戏
 	DB2GAME_LoginResp				= 2002;	//玩家登录游戏返回
