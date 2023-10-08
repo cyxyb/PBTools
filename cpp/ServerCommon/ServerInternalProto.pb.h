@@ -9251,9 +9251,25 @@ class MsgDBBindInviteCode PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kUserIdFieldNumber = 1,
     kInviteCodeFieldNumber = 2,
+    kUserIdFieldNumber = 1,
   };
+  // string invite_code = 2;
+  void clear_invite_code();
+  const std::string& invite_code() const;
+  void set_invite_code(const std::string& value);
+  void set_invite_code(std::string&& value);
+  void set_invite_code(const char* value);
+  void set_invite_code(const char* value, size_t size);
+  std::string* mutable_invite_code();
+  std::string* release_invite_code();
+  void set_allocated_invite_code(std::string* invite_code);
+  private:
+  const std::string& _internal_invite_code() const;
+  void _internal_set_invite_code(const std::string& value);
+  std::string* _internal_mutable_invite_code();
+  public:
+
   // int32 user_id = 1;
   void clear_user_id();
   ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
@@ -9263,15 +9279,6 @@ class MsgDBBindInviteCode PROTOBUF_FINAL :
   void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 invite_code = 2;
-  void clear_invite_code();
-  ::PROTOBUF_NAMESPACE_ID::int32 invite_code() const;
-  void set_invite_code(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_invite_code() const;
-  void _internal_set_invite_code(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
   // @@protoc_insertion_point(class_scope:MsgDBBindInviteCode)
  private:
   class _Internal;
@@ -9279,8 +9286,8 @@ class MsgDBBindInviteCode PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr invite_code_;
   ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 invite_code_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -15362,24 +15369,65 @@ inline void MsgDBBindInviteCode::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 valu
   // @@protoc_insertion_point(field_set:MsgDBBindInviteCode.user_id)
 }
 
-// int32 invite_code = 2;
+// string invite_code = 2;
 inline void MsgDBBindInviteCode::clear_invite_code() {
-  invite_code_ = 0;
+  invite_code_.ClearToEmpty();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBBindInviteCode::_internal_invite_code() const {
-  return invite_code_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBBindInviteCode::invite_code() const {
+inline const std::string& MsgDBBindInviteCode::invite_code() const {
   // @@protoc_insertion_point(field_get:MsgDBBindInviteCode.invite_code)
   return _internal_invite_code();
 }
-inline void MsgDBBindInviteCode::_internal_set_invite_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  invite_code_ = value;
-}
-inline void MsgDBBindInviteCode::set_invite_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgDBBindInviteCode::set_invite_code(const std::string& value) {
   _internal_set_invite_code(value);
   // @@protoc_insertion_point(field_set:MsgDBBindInviteCode.invite_code)
+}
+inline std::string* MsgDBBindInviteCode::mutable_invite_code() {
+  // @@protoc_insertion_point(field_mutable:MsgDBBindInviteCode.invite_code)
+  return _internal_mutable_invite_code();
+}
+inline const std::string& MsgDBBindInviteCode::_internal_invite_code() const {
+  return invite_code_.Get();
+}
+inline void MsgDBBindInviteCode::_internal_set_invite_code(const std::string& value) {
+  
+  invite_code_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgDBBindInviteCode::set_invite_code(std::string&& value) {
+  
+  invite_code_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgDBBindInviteCode.invite_code)
+}
+inline void MsgDBBindInviteCode::set_invite_code(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  invite_code_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgDBBindInviteCode.invite_code)
+}
+inline void MsgDBBindInviteCode::set_invite_code(const char* value,
+    size_t size) {
+  
+  invite_code_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgDBBindInviteCode.invite_code)
+}
+inline std::string* MsgDBBindInviteCode::_internal_mutable_invite_code() {
+  
+  return invite_code_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgDBBindInviteCode::release_invite_code() {
+  // @@protoc_insertion_point(field_release:MsgDBBindInviteCode.invite_code)
+  return invite_code_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgDBBindInviteCode::set_allocated_invite_code(std::string* invite_code) {
+  if (invite_code != nullptr) {
+    
+  } else {
+    
+  }
+  invite_code_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), invite_code,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgDBBindInviteCode.invite_code)
 }
 
 #ifdef __GNUC__

@@ -1595,7 +1595,7 @@ const char descriptor_table_protodef_ServerInternalProto_2eproto[] PROTOBUF_SECT
   "(\003\022\021\n\tvip_level\030\006 \001(\005\"\?\n\021MsgDBQueryBankT"
   "ax\022\024\n\014from_user_id\030\001 \001(\005\022\024\n\014recv_user_id"
   "\030\002 \001(\005\";\n\023MsgDBBindInviteCode\022\017\n\007user_id"
-  "\030\001 \001(\005\022\023\n\013invite_code\030\002 \001(\005b\006proto3"
+  "\030\001 \001(\005\022\023\n\013invite_code\030\002 \001(\tb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_ServerInternalProto_2eproto_deps[1] = {
 };
@@ -16166,17 +16166,19 @@ MsgDBBindInviteCode::MsgDBBindInviteCode(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 MsgDBBindInviteCode::MsgDBBindInviteCode(const MsgDBBindInviteCode& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&user_id_, &from.user_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&invite_code_) -
-    reinterpret_cast<char*>(&user_id_)) + sizeof(invite_code_));
+  invite_code_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from._internal_invite_code().empty()) {
+    invite_code_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_invite_code(), 
+      GetArena());
+  }
+  user_id_ = from.user_id_;
   // @@protoc_insertion_point(copy_constructor:MsgDBBindInviteCode)
 }
 
 void MsgDBBindInviteCode::SharedCtor() {
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&user_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&invite_code_) -
-      reinterpret_cast<char*>(&user_id_)) + sizeof(invite_code_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgDBBindInviteCode_ServerInternalProto_2eproto.base);
+  invite_code_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  user_id_ = 0;
 }
 
 MsgDBBindInviteCode::~MsgDBBindInviteCode() {
@@ -16187,6 +16189,7 @@ MsgDBBindInviteCode::~MsgDBBindInviteCode() {
 
 void MsgDBBindInviteCode::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
+  invite_code_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
 void MsgDBBindInviteCode::ArenaDtor(void* object) {
@@ -16210,9 +16213,8 @@ void MsgDBBindInviteCode::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&user_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&invite_code_) -
-      reinterpret_cast<char*>(&user_id_)) + sizeof(invite_code_));
+  invite_code_.ClearToEmpty();
+  user_id_ = 0;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -16230,10 +16232,12 @@ const char* MsgDBBindInviteCode::_InternalParse(const char* ptr, ::PROTOBUF_NAME
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 invite_code = 2;
+      // string invite_code = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          invite_code_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          auto str = _internal_mutable_invite_code();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgDBBindInviteCode.invite_code"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -16271,10 +16275,14 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_user_id(), target);
   }
 
-  // int32 invite_code = 2;
-  if (this->invite_code() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_invite_code(), target);
+  // string invite_code = 2;
+  if (this->invite_code().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_invite_code().data(), static_cast<int>(this->_internal_invite_code().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "MsgDBBindInviteCode.invite_code");
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_invite_code(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -16293,18 +16301,18 @@ size_t MsgDBBindInviteCode::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  // string invite_code = 2;
+  if (this->invite_code().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_invite_code());
+  }
+
   // int32 user_id = 1;
   if (this->user_id() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_user_id());
-  }
-
-  // int32 invite_code = 2;
-  if (this->invite_code() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_invite_code());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -16338,11 +16346,11 @@ void MsgDBBindInviteCode::MergeFrom(const MsgDBBindInviteCode& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  if (from.invite_code().size() > 0) {
+    _internal_set_invite_code(from._internal_invite_code());
+  }
   if (from.user_id() != 0) {
     _internal_set_user_id(from._internal_user_id());
-  }
-  if (from.invite_code() != 0) {
-    _internal_set_invite_code(from._internal_invite_code());
   }
 }
 
@@ -16367,12 +16375,8 @@ bool MsgDBBindInviteCode::IsInitialized() const {
 void MsgDBBindInviteCode::InternalSwap(MsgDBBindInviteCode* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgDBBindInviteCode, invite_code_)
-      + sizeof(MsgDBBindInviteCode::invite_code_)
-      - PROTOBUF_FIELD_OFFSET(MsgDBBindInviteCode, user_id_)>(
-          reinterpret_cast<char*>(&user_id_),
-          reinterpret_cast<char*>(&other->user_id_));
+  invite_code_.Swap(&other->invite_code_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  swap(user_id_, other->user_id_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MsgDBBindInviteCode::GetMetadata() const {

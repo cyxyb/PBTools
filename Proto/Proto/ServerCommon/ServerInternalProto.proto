@@ -460,6 +460,6 @@ message MsgDBQueryBankTax
 //绑定邀请码
 message MsgDBBindInviteCode
 {
-	int32 user_id = 1;						//玩家ID
-	int32 invite_code = 2;					//邀请码
+	int32 	user_id = 1;					//玩家ID
+	string 	invite_code = 2;				//邀请码
 }
