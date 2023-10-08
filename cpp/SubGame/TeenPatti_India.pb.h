@@ -922,7 +922,7 @@ class TPMsgSceneInfo PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kPlayerInfosFieldNumber = 14,
+    kPlayerInfosFieldNumber = 15,
     kMaxScoreFieldNumber = 1,
     kTableMaxScoreFieldNumber = 2,
     kCellScoreFieldNumber = 3,
@@ -934,10 +934,11 @@ class TPMsgSceneInfo PROTOBUF_FINAL :
     kCurChairIdFieldNumber = 9,
     kCurChairActFieldNumber = 10,
     kOutTimeFieldNumber = 11,
-    kCompareUserFieldNumber = 12,
-    kCompareWinFieldNumber = 13,
+    kTotalTimeFieldNumber = 12,
+    kCompareUserFieldNumber = 13,
+    kCompareWinFieldNumber = 14,
   };
-  // repeated .TeenPatti_India.TPMsgPlayerInfo player_infos = 14;
+  // repeated .TeenPatti_India.TPMsgPlayerInfo player_infos = 15;
   int player_infos_size() const;
   private:
   int _internal_player_infos_size() const;
@@ -1054,7 +1055,16 @@ class TPMsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_out_time(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 compare_user = 12;
+  // int32 total_time = 12;
+  void clear_total_time();
+  ::PROTOBUF_NAMESPACE_ID::int32 total_time() const;
+  void set_total_time(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_total_time() const;
+  void _internal_set_total_time(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 compare_user = 13;
   void clear_compare_user();
   ::PROTOBUF_NAMESPACE_ID::int32 compare_user() const;
   void set_compare_user(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -1063,7 +1073,7 @@ class TPMsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_compare_user(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 compare_win = 13;
+  // int32 compare_win = 14;
   void clear_compare_win();
   ::PROTOBUF_NAMESPACE_ID::int32 compare_win() const;
   void set_compare_win(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -1091,6 +1101,7 @@ class TPMsgSceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 cur_chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 cur_chair_act_;
   ::PROTOBUF_NAMESPACE_ID::int32 out_time_;
+  ::PROTOBUF_NAMESPACE_ID::int32 total_time_;
   ::PROTOBUF_NAMESPACE_ID::int32 compare_user_;
   ::PROTOBUF_NAMESPACE_ID::int32 compare_win_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
@@ -3496,7 +3507,27 @@ inline void TPMsgSceneInfo::set_out_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgSceneInfo.out_time)
 }
 
-// int32 compare_user = 12;
+// int32 total_time = 12;
+inline void TPMsgSceneInfo::clear_total_time() {
+  total_time_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 TPMsgSceneInfo::_internal_total_time() const {
+  return total_time_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 TPMsgSceneInfo::total_time() const {
+  // @@protoc_insertion_point(field_get:TeenPatti_India.TPMsgSceneInfo.total_time)
+  return _internal_total_time();
+}
+inline void TPMsgSceneInfo::_internal_set_total_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  total_time_ = value;
+}
+inline void TPMsgSceneInfo::set_total_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_total_time(value);
+  // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgSceneInfo.total_time)
+}
+
+// int32 compare_user = 13;
 inline void TPMsgSceneInfo::clear_compare_user() {
   compare_user_ = 0;
 }
@@ -3516,7 +3547,7 @@ inline void TPMsgSceneInfo::set_compare_user(::PROTOBUF_NAMESPACE_ID::int32 valu
   // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgSceneInfo.compare_user)
 }
 
-// int32 compare_win = 13;
+// int32 compare_win = 14;
 inline void TPMsgSceneInfo::clear_compare_win() {
   compare_win_ = 0;
 }
@@ -3536,7 +3567,7 @@ inline void TPMsgSceneInfo::set_compare_win(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:TeenPatti_India.TPMsgSceneInfo.compare_win)
 }
 
-// repeated .TeenPatti_India.TPMsgPlayerInfo player_infos = 14;
+// repeated .TeenPatti_India.TPMsgPlayerInfo player_infos = 15;
 inline int TPMsgSceneInfo::_internal_player_infos_size() const {
   return player_infos_.size();
 }

@@ -117,11 +117,12 @@ message TPMsgSceneInfo
 	int32				cur_chair_id	= 9;	//当前操作椅子号
 	int32				cur_chair_act	= 10;	//当前玩家的操作码
 	int32				out_time		= 11;	//当前状态剩余超时时间
+	int32				total_time		= 12;	//当前状态总时间
 
-	int32				compare_user	= 12;	//比牌发起玩家
-	int32				compare_win		= 13;	//比牌赢家
+	int32				compare_user	= 13;	//比牌发起玩家
+	int32				compare_win		= 14;	//比牌赢家
 
-	repeated TPMsgPlayerInfo player_infos	= 14;	//玩家状态
+	repeated TPMsgPlayerInfo player_infos	= 15;	//玩家状态
 }
 
 //游戏开始
