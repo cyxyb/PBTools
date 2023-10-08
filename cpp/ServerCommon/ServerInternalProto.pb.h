@@ -46,7 +46,7 @@ struct TableStruct_ServerInternalProto_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[50]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[51]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -77,6 +77,9 @@ extern MsgDBBankTakeOutDefaultTypeInternal _MsgDBBankTakeOut_default_instance_;
 class MsgDBBankTransfer;
 class MsgDBBankTransferDefaultTypeInternal;
 extern MsgDBBankTransferDefaultTypeInternal _MsgDBBankTransfer_default_instance_;
+class MsgDBBindInviteCode;
+class MsgDBBindInviteCodeDefaultTypeInternal;
+extern MsgDBBindInviteCodeDefaultTypeInternal _MsgDBBindInviteCode_default_instance_;
 class MsgDBBindPhone;
 class MsgDBBindPhoneDefaultTypeInternal;
 extern MsgDBBindPhoneDefaultTypeInternal _MsgDBBindPhone_default_instance_;
@@ -212,6 +215,7 @@ template<> ::MsgDBBankChangePassword* Arena::CreateMaybeMessage<::MsgDBBankChang
 template<> ::MsgDBBankOperate* Arena::CreateMaybeMessage<::MsgDBBankOperate>(Arena*);
 template<> ::MsgDBBankTakeOut* Arena::CreateMaybeMessage<::MsgDBBankTakeOut>(Arena*);
 template<> ::MsgDBBankTransfer* Arena::CreateMaybeMessage<::MsgDBBankTransfer>(Arena*);
+template<> ::MsgDBBindInviteCode* Arena::CreateMaybeMessage<::MsgDBBindInviteCode>(Arena*);
 template<> ::MsgDBBindPhone* Arena::CreateMaybeMessage<::MsgDBBindPhone>(Arena*);
 template<> ::MsgDBBindPhoneRes* Arena::CreateMaybeMessage<::MsgDBBindPhoneRes>(Arena*);
 template<> ::MsgDBBuyGoods* Arena::CreateMaybeMessage<::MsgDBBuyGoods>(Arena*);
@@ -9133,6 +9137,153 @@ class MsgDBQueryBankTax PROTOBUF_FINAL :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
+// -------------------------------------------------------------------
+
+class MsgDBBindInviteCode PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgDBBindInviteCode) */ {
+ public:
+  inline MsgDBBindInviteCode() : MsgDBBindInviteCode(nullptr) {}
+  virtual ~MsgDBBindInviteCode();
+
+  MsgDBBindInviteCode(const MsgDBBindInviteCode& from);
+  MsgDBBindInviteCode(MsgDBBindInviteCode&& from) noexcept
+    : MsgDBBindInviteCode() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgDBBindInviteCode& operator=(const MsgDBBindInviteCode& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgDBBindInviteCode& operator=(MsgDBBindInviteCode&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgDBBindInviteCode& default_instance();
+
+  static inline const MsgDBBindInviteCode* internal_default_instance() {
+    return reinterpret_cast<const MsgDBBindInviteCode*>(
+               &_MsgDBBindInviteCode_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    50;
+
+  friend void swap(MsgDBBindInviteCode& a, MsgDBBindInviteCode& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgDBBindInviteCode* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgDBBindInviteCode* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgDBBindInviteCode* New() const final {
+    return CreateMaybeMessage<MsgDBBindInviteCode>(nullptr);
+  }
+
+  MsgDBBindInviteCode* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgDBBindInviteCode>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgDBBindInviteCode& from);
+  void MergeFrom(const MsgDBBindInviteCode& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgDBBindInviteCode* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgDBBindInviteCode";
+  }
+  protected:
+  explicit MsgDBBindInviteCode(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kUserIdFieldNumber = 1,
+    kInviteCodeFieldNumber = 2,
+  };
+  // int32 user_id = 1;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 invite_code = 2;
+  void clear_invite_code();
+  ::PROTOBUF_NAMESPACE_ID::int32 invite_code() const;
+  void set_invite_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_invite_code() const;
+  void _internal_set_invite_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgDBBindInviteCode)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 invite_code_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
 // ===================================================================
 
 
@@ -15187,9 +15338,55 @@ inline void MsgDBQueryBankTax::set_recv_user_id(::PROTOBUF_NAMESPACE_ID::int32 v
   // @@protoc_insertion_point(field_set:MsgDBQueryBankTax.recv_user_id)
 }
 
+// -------------------------------------------------------------------
+
+// MsgDBBindInviteCode
+
+// int32 user_id = 1;
+inline void MsgDBBindInviteCode::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBBindInviteCode::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBBindInviteCode::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBBindInviteCode.user_id)
+  return _internal_user_id();
+}
+inline void MsgDBBindInviteCode::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgDBBindInviteCode::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBBindInviteCode.user_id)
+}
+
+// int32 invite_code = 2;
+inline void MsgDBBindInviteCode::clear_invite_code() {
+  invite_code_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBBindInviteCode::_internal_invite_code() const {
+  return invite_code_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBBindInviteCode::invite_code() const {
+  // @@protoc_insertion_point(field_get:MsgDBBindInviteCode.invite_code)
+  return _internal_invite_code();
+}
+inline void MsgDBBindInviteCode::_internal_set_invite_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  invite_code_ = value;
+}
+inline void MsgDBBindInviteCode::set_invite_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_invite_code(value);
+  // @@protoc_insertion_point(field_set:MsgDBBindInviteCode.invite_code)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

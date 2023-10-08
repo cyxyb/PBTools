@@ -456,3 +456,10 @@ message MsgDBQueryBankTax
 	int32 from_user_id = 1;					//发送者ID
 	int32 recv_user_id = 2;					//接受Id
 }
+
+//绑定邀请码
+message MsgDBBindInviteCode
+{
+	int32 user_id = 1;						//玩家ID
+	int32 invite_code = 2;					//邀请码
+}
