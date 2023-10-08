@@ -36,7 +36,6 @@ message MsgPlayerLoginResp
 	int32		vip_level		= 12;	//VIP等级
 	int32		avatar_frame	= 13;	//头像框
 	string		invite_code		= 14;	//邀请码
-	bool      	bank_password	= 15;	//银行密码
 	string      signature		= 16;	//个性签名
 	int32		agent_level		= 17;	//代理等级
 	string		password		= 18;	//玩家密码
@@ -317,27 +316,8 @@ message MsgModifySignature
 	string		signature		= 2;	//新的签名
 };
 //银行
-//修改密码
-message MsgBankChangePassword
-{
-	string password = 1;				//密码
-	int32 code =2;						//验证码
-};
-//银行存取操作
-message MsgBankOperate
-{
-	int64 gold = 1;						//操作金币
-	int32 operate_type = 2;				//1银行存2银行取
-};
-//银行存取操作结果
-message MsgBankTakeOut
-{
-	int32 ret_value = 1;				//返回值 0成功1失败
-	int64 user_gold = 2;				//玩家携带金币
-	int64 bank_gold = 3;				//玩家银行金币
-};
 //银行转账
-message MsgBankTransfer
+message MsgTransferOperate
 {
 	int32 recv_user_id = 1;//接受Id
 	int64 transfer_gold = 2;//操作金币
@@ -376,22 +356,37 @@ message MsgTopListResp
 
 
 //银行转账
-message MsgBankTransferResp
+message MsgTransferOperateResp
 {
 	int32 ret_value = 1;				//返回值 0操作成功 非零操作失败：多语言码
-	int64 bank_gold = 2;				//玩家银行金币
+	int64 user_gold = 2;				//玩家金币
 };
+message MsgTransferOperateSyncResp
+{
+	int32 ret_value 			= 1;		//返回值 0：成功 非零：多语言码			
+	int32 send_user_id 			= 3;		//发送Id
+	int64 add_gold 				= 4;		//操作金币
+	int64 receive_state 		= 6;		//领取状态 0：未领取 1:已领取
+	int64 transfer_id			= 7;		//转账id 
+}
+message MsgTransferReceiveResp
+{
+	int32 ret_value 	= 1;				//领取返回值 0:成功 失败：多语言码
+	int64 user_gold 	= 2;				//用户金币
+}
+
 //银行转账记录
-message MsgBankRecord
+message MsgTransferRecord
 {
-	int32 send_user_id = 1;//发送id
-	int64 transfer_gold = 2;//操作金币
-	string timer = 3;//时间戳
-	int32 recv_user_id = 4;//接受id
+	int32 send_user_id 	= 1;			//发送id
+	int64 transfer_gold = 2;			//操作金币
+	string timer 		= 3;			//时间戳
+	int32 recv_user_id 	= 4;			//接受id
+	int32 receive_state = 5;			//状态
 };
-message MsgBankRecordResp
+message MsgTransferRecordResp
 {
-	repeated MsgBankRecord records = 1;
+	repeated MsgTransferRecord records = 1;
 };
 
 //请求验证码
@@ -416,7 +411,7 @@ message MsgPlayerItem
 };
 
 //查询玩家转账对象
-message MsgBankQueryNickname
+message MsgTransferQueryNickname
 {
 	int32 ret_Value = 1;//返回值
 	string nickname = 2;//昵称

@@ -124,12 +124,6 @@ message MsgUpdateChatServerOnlineNum
 	int32	online_num			= 2;		//在线数量
 }
 
-message MsgSynchronousLogin
-{
-	int32	user_id				= 1;		//玩家ID
-	int64	gold				= 2;		//变动金币
-}
-
 
 
 /////////////////////////服务器与数据库///////////////////////////
@@ -162,7 +156,6 @@ message MsgPlayerAttribute
 	int32	user_type			= 3;		//玩家类型
 	string	phone				= 4;		//电话
 	int64	coin				= 5;		//金币
-	int64	bank_coin			= 6;		//银行金币
 	int32	head_id				= 7;		//头像ID
 	string	nickname			= 8;		//昵称
 }
@@ -185,8 +178,6 @@ message MsgLoginPlayerInfo
 	int32		vip_level		= 13;	//vip等级
 	int32		avatar_frame	= 14;	//头像框
 	int32		channel_id		= 15;	//渠道ID
-	string      bank_password	= 16;	//银行密码
-	uint64		bank_gold		= 17;	//银行金币
 	string		invite_code		= 18;	//邀请码
 	string      signature		= 19;	//个性签名
 	int32		agent_level		= 20;	//代理等级
@@ -357,33 +348,13 @@ message MsgDBUpdateJackpot
 }
 
 //银行
-message MsgDBBankChangePassword
-{
-	int32 user_id = 1;					//玩家ID
-	string Password = 2;				//密码
-}
-//银行存取操作
-message MsgDBBankOperate
-{
-	int32 user_id = 1;					//玩家ID
-	int64 gold = 2;						//操作金币
-	int32 operate_type = 3;			//1银行存2银行取
-}
-//银行存取操作结果
-message MsgDBBankTakeOut
-{
-	int32 ret_value = 1;				//返回值 0成功 非0失败
-	int64 user_gold = 2;				//玩家携带金币
-	int64 bank_gold = 3;				//玩家银行金币
-	int32 recv_user_id = 4;				//接受id
-	int64 add_gold = 5;					//修改金币
-}
 //银行转账
-message MsgDBBankTransfer
+message MsgDBTransferOperate
 {
-	int32 from_user_id = 1;//转账id
-	int32 recv_user_id = 2;//接受Id
-	int64 transfer_gold = 3;//操作金币
+	int32 from_user_id						= 1;	//转账id
+	int32 recv_user_id						= 2;	//接受Id
+	int64 transfer_gold 					= 3;	//操作金币
+	int32 transfer_type						= 4;	//转账状态
 }
 
 //缓存验证码
@@ -451,15 +422,23 @@ message MsgDBSubagentInformation
 	int64 total_roll_out 	= 5;			//总转出
 	int32 vip_level 		= 6;			//代理身份
 }
-message MsgDBQueryBankTax
+message MsgDBQueryTransferTax
 {
 	int32 from_user_id = 1;					//发送者ID
 	int32 recv_user_id = 2;					//接受Id
 }
-
-//绑定邀请码
-message MsgDBBindInviteCode
+message MsgDBTransferTakeOut
 {
-	int32 	user_id = 1;					//玩家ID
-	string 	invite_code = 2;				//邀请码
+	int32 ret_value 			= 1;		//返回值 0：成功 非零：多语言码			
+	int32 recv_user_id 			= 2;		//接受Id
+	int32 send_user_id 			= 3;		//发送Id
+	int64 add_gold 				= 4;		//操作金币
+	int64 user_gold 			= 5;		//玩家金币
+	int64 receive_state 		= 6;		//领取状态 0：未领取 1:已领取
+	int64 transfer_id			= 7;		//转账id 
+}
+message MsgDBTransferReceive
+{
+	int32 receive_user_id 	= 1;			//领取用户Id
+	int64 receive_id		= 2;			//领取id
 }
