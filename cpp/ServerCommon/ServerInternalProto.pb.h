@@ -5551,6 +5551,7 @@ class MsgDBGamePlayerLoginResp PROTOBUF_FINAL :
     kCoinFieldNumber = 6,
     kVipLevelFieldNumber = 9,
     kAvatarFrameFieldNumber = 10,
+    kLoginServerIdFieldNumber = 12,
   };
   // string nickname = 4;
   void clear_nickname();
@@ -5681,6 +5682,15 @@ class MsgDBGamePlayerLoginResp PROTOBUF_FINAL :
   void _internal_set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 login_server_id = 12;
+  void clear_login_server_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 login_server_id() const;
+  void set_login_server_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_login_server_id() const;
+  void _internal_set_login_server_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgDBGamePlayerLoginResp)
  private:
   class _Internal;
@@ -5699,6 +5709,7 @@ class MsgDBGamePlayerLoginResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::uint64 coin_;
   ::PROTOBUF_NAMESPACE_ID::int32 vip_level_;
   ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame_;
+  ::PROTOBUF_NAMESPACE_ID::int32 login_server_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -8715,6 +8726,7 @@ class MsgDBGameLoginOut PROTOBUF_FINAL :
     kIsOfflineFieldNumber = 2,
     kServerIdFieldNumber = 3,
     kKindIdFieldNumber = 4,
+    kLoginServerIdFieldNumber = 5,
   };
   // int32 user_id = 1;
   void clear_user_id();
@@ -8752,6 +8764,15 @@ class MsgDBGameLoginOut PROTOBUF_FINAL :
   void _internal_set_kind_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 login_server_id = 5;
+  void clear_login_server_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 login_server_id() const;
+  void set_login_server_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_login_server_id() const;
+  void _internal_set_login_server_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgDBGameLoginOut)
  private:
   class _Internal;
@@ -8763,6 +8784,7 @@ class MsgDBGameLoginOut PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 is_offline_;
   ::PROTOBUF_NAMESPACE_ID::int32 server_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 kind_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 login_server_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -13053,6 +13075,26 @@ inline void MsgDBGamePlayerLoginResp::set_allocated_reconnect_data(::MsgDBPlayer
   // @@protoc_insertion_point(field_set_allocated:MsgDBGamePlayerLoginResp.reconnect_data)
 }
 
+// int32 login_server_id = 12;
+inline void MsgDBGamePlayerLoginResp::clear_login_server_id() {
+  login_server_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBGamePlayerLoginResp::_internal_login_server_id() const {
+  return login_server_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBGamePlayerLoginResp::login_server_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBGamePlayerLoginResp.login_server_id)
+  return _internal_login_server_id();
+}
+inline void MsgDBGamePlayerLoginResp::_internal_set_login_server_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  login_server_id_ = value;
+}
+inline void MsgDBGamePlayerLoginResp::set_login_server_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_login_server_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBGamePlayerLoginResp.login_server_id)
+}
+
 // -------------------------------------------------------------------
 
 // MsgDBWriteScore
@@ -14914,6 +14956,26 @@ inline void MsgDBGameLoginOut::_internal_set_kind_id(::PROTOBUF_NAMESPACE_ID::in
 inline void MsgDBGameLoginOut::set_kind_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_kind_id(value);
   // @@protoc_insertion_point(field_set:MsgDBGameLoginOut.kind_id)
+}
+
+// int32 login_server_id = 5;
+inline void MsgDBGameLoginOut::clear_login_server_id() {
+  login_server_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBGameLoginOut::_internal_login_server_id() const {
+  return login_server_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBGameLoginOut::login_server_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBGameLoginOut.login_server_id)
+  return _internal_login_server_id();
+}
+inline void MsgDBGameLoginOut::_internal_set_login_server_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  login_server_id_ = value;
+}
+inline void MsgDBGameLoginOut::set_login_server_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_login_server_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBGameLoginOut.login_server_id)
 }
 
 // -------------------------------------------------------------------

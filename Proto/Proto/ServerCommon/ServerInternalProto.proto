@@ -285,6 +285,7 @@ message MsgDBGamePlayerLoginResp
 	int32		vip_level		= 9;	//VIP等级
 	int32		avatar_frame	= 10;	//头像框
 	MsgDBPlayerReconnectData reconnect_data = 11;	//重连数据
+	int32		login_server_id = 12;	//登录服ID
 }
 
 //写分
@@ -439,6 +440,7 @@ message MsgDBGameLoginOut
 	int32	is_offline			= 2;		//是否断线
 	int32	server_id			= 3;		//服务器ID
 	int32	kind_id				= 4;		//游戏ID
+	int32	login_server_id		= 5;		//登录服ID
 }
 message MsgDBSubagentInformation
 {
