@@ -270,6 +270,7 @@ enum EMsgIDDB : int {
   GAME2DB_UpdateJckpotInfo = 2015,
   GAME2DB_LoginOut = 2016,
   GAME2DB_ClearOfflineUser = 2017,
+  GAME2DB_UserReConnect = 2018,
   CHAT2DB_Login = 3001,
   DB2CHAT_LoginResp = 3002,
   CHAT2DB_SendTrumpetMsg = 3003,

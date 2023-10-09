@@ -192,6 +192,7 @@ enum EMsgIDDB
 	GAME2DB_UpdateJckpotInfo		= 2015;	//更新奖池信息
 	GAME2DB_LoginOut				= 2016;	//玩家退出游戏
 	GAME2DB_ClearOfflineUser		= 2017;	//清除断线玩家
+	GAME2DB_UserReConnect			= 2018;	//玩家重连
 	//3001-4000 ChatServer2DB
 	CHAT2DB_Login					= 3001;	//登录
 	DB2CHAT_LoginResp				= 3002;	//登录返回

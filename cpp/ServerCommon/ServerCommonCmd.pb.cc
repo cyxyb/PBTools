@@ -73,7 +73,7 @@ const char descriptor_table_protodef_ServerCommonCmd_2eproto[] PROTOBUF_SECTION_
   ".\022 \n\033Chat2Center_UpdateOnlineNum\020\362.\022\037\n\032C"
   "hat2Center_SendTrumpetMsg\020\363.\022#\n\036Center2C"
   "hat_SendTrumpetMsgResp\020\364.\022\035\n\030Center2Chat"
-  "_KickUserResp\020\365.*\203\032\n\010EMsgIDDB\022\020\n\014MsgIDDB"
+  "_KickUserResp\020\365.*\237\032\n\010EMsgIDDB\022\020\n\014MsgIDDB"
   "_NULL\020\000\022\035\n\031CENTER2DB_UpdateOnlineNum\020\001\022\033"
   "\n\027CENTER2DB_InitOnlineNum\020\002\022\033\n\027CENTER2DB"
   "_RegisterLogin\020\003\022\035\n\031CENTER2DB_Unregister"
@@ -154,12 +154,12 @@ const char descriptor_table_protodef_ServerCommonCmd_2eproto[] PROTOBUF_SECTION_
   "fo\020\335\017\022 \n\033DB2GAME_QueryJckpotInfoResp\020\336\017\022"
   "\035\n\030GAME2DB_UpdateJckpotInfo\020\337\017\022\025\n\020GAME2D"
   "B_LoginOut\020\340\017\022\035\n\030GAME2DB_ClearOfflineUse"
-  "r\020\341\017\022\022\n\rCHAT2DB_Login\020\271\027\022\026\n\021DB2CHAT_Logi"
-  "nResp\020\272\027\022\033\n\026CHAT2DB_SendTrumpetMsg\020\273\027\022\037\n"
-  "\032DB2CHAT_SendTrumpetMsgResp\020\274\027*X\n\021EGameB"
-  "attleTypeID\022\017\n\013GAME_NORMAL\020\000\022\020\n\014GAME_HUN"
-  "DRED\020\001\022\017\n\013GAME_CREATE\020\002\022\017\n\013GAME_BATTLE\020\003"
-  "b\006proto3"
+  "r\020\341\017\022\032\n\025GAME2DB_UserReConnect\020\342\017\022\022\n\rCHAT"
+  "2DB_Login\020\271\027\022\026\n\021DB2CHAT_LoginResp\020\272\027\022\033\n\026"
+  "CHAT2DB_SendTrumpetMsg\020\273\027\022\037\n\032DB2CHAT_Sen"
+  "dTrumpetMsgResp\020\274\027*X\n\021EGameBattleTypeID\022"
+  "\017\n\013GAME_NORMAL\020\000\022\020\n\014GAME_HUNDRED\020\001\022\017\n\013GA"
+  "ME_CREATE\020\002\022\017\n\013GAME_BATTLE\020\003b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_ServerCommonCmd_2eproto_deps[1] = {
 };
@@ -167,7 +167,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Ser
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ServerCommonCmd_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ServerCommonCmd_2eproto = {
-  false, false, descriptor_table_protodef_ServerCommonCmd_2eproto, "ServerCommonCmd.proto", 5488,
+  false, false, descriptor_table_protodef_ServerCommonCmd_2eproto, "ServerCommonCmd.proto", 5516,
   &descriptor_table_ServerCommonCmd_2eproto_once, descriptor_table_ServerCommonCmd_2eproto_sccs, descriptor_table_ServerCommonCmd_2eproto_deps, 0, 0,
   schemas, file_default_instances, TableStruct_ServerCommonCmd_2eproto::offsets,
   file_level_metadata_ServerCommonCmd_2eproto, 0, file_level_enum_descriptors_ServerCommonCmd_2eproto, file_level_service_descriptors_ServerCommonCmd_2eproto,
@@ -373,6 +373,7 @@ bool EMsgIDDB_IsValid(int value) {
     case 2015:
     case 2016:
     case 2017:
+    case 2018:
     case 3001:
     case 3002:
     case 3003:
