@@ -172,6 +172,10 @@ enum EMsgIDDB
 	DB2LOGIN_QueryTrumpetPriceResp	= 1071;	//查询小喇叭价格返回
 	LOGIN2DB_QuerySubAgentInfo		= 1072;	//查询子代理信息
 	DB2LOGIN_QuerySubAgentInfoResp	= 1073;	//查询子代理信息返回
+	LOGIN2DB_BindInviteCode			= 1074;	//绑定邀请码
+	DB2LOGIN_BindInviteCodeResp		= 1075;	//绑定邀请码返回
+	LOGIN2DB_QueryBindInfo			= 1076;	//查询绑定上级信息
+	DB2LOGIN_QueryBindInfoResp		= 1077;	//查询绑定上级信息返回
 	//2001-3000 GameServer2DB
 	GAME2DB_Login					= 2001;	//玩家登录游戏
 	DB2GAME_LoginResp				= 2002;	//玩家登录游戏返回
@@ -190,6 +194,7 @@ enum EMsgIDDB
 	GAME2DB_UpdateJckpotInfo		= 2015;	//更新奖池信息
 	GAME2DB_LoginOut				= 2016;	//玩家退出游戏
 	GAME2DB_ClearOfflineUser		= 2017;	//清除断线玩家
+	GAME2DB_UserReConnect			= 2018;	//玩家重连
 	//3001-4000 ChatServer2DB
 	CHAT2DB_Login					= 3001;	//登录
 	DB2CHAT_LoginResp				= 3002;	//登录返回

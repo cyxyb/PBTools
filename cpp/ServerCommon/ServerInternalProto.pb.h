@@ -46,7 +46,7 @@ struct TableStruct_ServerInternalProto_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[50]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[51]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -77,6 +77,9 @@ extern MsgDBBankTakeOutDefaultTypeInternal _MsgDBBankTakeOut_default_instance_;
 class MsgDBBankTransfer;
 class MsgDBBankTransferDefaultTypeInternal;
 extern MsgDBBankTransferDefaultTypeInternal _MsgDBBankTransfer_default_instance_;
+class MsgDBBindInviteCode;
+class MsgDBBindInviteCodeDefaultTypeInternal;
+extern MsgDBBindInviteCodeDefaultTypeInternal _MsgDBBindInviteCode_default_instance_;
 class MsgDBBindPhone;
 class MsgDBBindPhoneDefaultTypeInternal;
 extern MsgDBBindPhoneDefaultTypeInternal _MsgDBBindPhone_default_instance_;
@@ -212,6 +215,7 @@ template<> ::MsgDBBankChangePassword* Arena::CreateMaybeMessage<::MsgDBBankChang
 template<> ::MsgDBBankOperate* Arena::CreateMaybeMessage<::MsgDBBankOperate>(Arena*);
 template<> ::MsgDBBankTakeOut* Arena::CreateMaybeMessage<::MsgDBBankTakeOut>(Arena*);
 template<> ::MsgDBBankTransfer* Arena::CreateMaybeMessage<::MsgDBBankTransfer>(Arena*);
+template<> ::MsgDBBindInviteCode* Arena::CreateMaybeMessage<::MsgDBBindInviteCode>(Arena*);
 template<> ::MsgDBBindPhone* Arena::CreateMaybeMessage<::MsgDBBindPhone>(Arena*);
 template<> ::MsgDBBindPhoneRes* Arena::CreateMaybeMessage<::MsgDBBindPhoneRes>(Arena*);
 template<> ::MsgDBBuyGoods* Arena::CreateMaybeMessage<::MsgDBBuyGoods>(Arena*);
@@ -5551,6 +5555,7 @@ class MsgDBGamePlayerLoginResp PROTOBUF_FINAL :
     kCoinFieldNumber = 6,
     kVipLevelFieldNumber = 9,
     kAvatarFrameFieldNumber = 10,
+    kLoginServerIdFieldNumber = 12,
   };
   // string nickname = 4;
   void clear_nickname();
@@ -5681,6 +5686,15 @@ class MsgDBGamePlayerLoginResp PROTOBUF_FINAL :
   void _internal_set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 login_server_id = 12;
+  void clear_login_server_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 login_server_id() const;
+  void set_login_server_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_login_server_id() const;
+  void _internal_set_login_server_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgDBGamePlayerLoginResp)
  private:
   class _Internal;
@@ -5699,6 +5713,7 @@ class MsgDBGamePlayerLoginResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::uint64 coin_;
   ::PROTOBUF_NAMESPACE_ID::int32 vip_level_;
   ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame_;
+  ::PROTOBUF_NAMESPACE_ID::int32 login_server_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -8715,6 +8730,7 @@ class MsgDBGameLoginOut PROTOBUF_FINAL :
     kIsOfflineFieldNumber = 2,
     kServerIdFieldNumber = 3,
     kKindIdFieldNumber = 4,
+    kLoginServerIdFieldNumber = 5,
   };
   // int32 user_id = 1;
   void clear_user_id();
@@ -8752,6 +8768,15 @@ class MsgDBGameLoginOut PROTOBUF_FINAL :
   void _internal_set_kind_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 login_server_id = 5;
+  void clear_login_server_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 login_server_id() const;
+  void set_login_server_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_login_server_id() const;
+  void _internal_set_login_server_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgDBGameLoginOut)
  private:
   class _Internal;
@@ -8763,6 +8788,7 @@ class MsgDBGameLoginOut PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 is_offline_;
   ::PROTOBUF_NAMESPACE_ID::int32 server_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 kind_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 login_server_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -9108,6 +9134,160 @@ class MsgDBQueryBankTax PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int32 from_user_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 recv_user_id_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgDBBindInviteCode PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgDBBindInviteCode) */ {
+ public:
+  inline MsgDBBindInviteCode() : MsgDBBindInviteCode(nullptr) {}
+  virtual ~MsgDBBindInviteCode();
+
+  MsgDBBindInviteCode(const MsgDBBindInviteCode& from);
+  MsgDBBindInviteCode(MsgDBBindInviteCode&& from) noexcept
+    : MsgDBBindInviteCode() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgDBBindInviteCode& operator=(const MsgDBBindInviteCode& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgDBBindInviteCode& operator=(MsgDBBindInviteCode&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgDBBindInviteCode& default_instance();
+
+  static inline const MsgDBBindInviteCode* internal_default_instance() {
+    return reinterpret_cast<const MsgDBBindInviteCode*>(
+               &_MsgDBBindInviteCode_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    50;
+
+  friend void swap(MsgDBBindInviteCode& a, MsgDBBindInviteCode& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgDBBindInviteCode* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgDBBindInviteCode* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgDBBindInviteCode* New() const final {
+    return CreateMaybeMessage<MsgDBBindInviteCode>(nullptr);
+  }
+
+  MsgDBBindInviteCode* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgDBBindInviteCode>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgDBBindInviteCode& from);
+  void MergeFrom(const MsgDBBindInviteCode& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgDBBindInviteCode* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgDBBindInviteCode";
+  }
+  protected:
+  explicit MsgDBBindInviteCode(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kInviteCodeFieldNumber = 2,
+    kUserIdFieldNumber = 1,
+  };
+  // string invite_code = 2;
+  void clear_invite_code();
+  const std::string& invite_code() const;
+  void set_invite_code(const std::string& value);
+  void set_invite_code(std::string&& value);
+  void set_invite_code(const char* value);
+  void set_invite_code(const char* value, size_t size);
+  std::string* mutable_invite_code();
+  std::string* release_invite_code();
+  void set_allocated_invite_code(std::string* invite_code);
+  private:
+  const std::string& _internal_invite_code() const;
+  void _internal_set_invite_code(const std::string& value);
+  std::string* _internal_mutable_invite_code();
+  public:
+
+  // int32 user_id = 1;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgDBBindInviteCode)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr invite_code_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -13053,6 +13233,26 @@ inline void MsgDBGamePlayerLoginResp::set_allocated_reconnect_data(::MsgDBPlayer
   // @@protoc_insertion_point(field_set_allocated:MsgDBGamePlayerLoginResp.reconnect_data)
 }
 
+// int32 login_server_id = 12;
+inline void MsgDBGamePlayerLoginResp::clear_login_server_id() {
+  login_server_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBGamePlayerLoginResp::_internal_login_server_id() const {
+  return login_server_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBGamePlayerLoginResp::login_server_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBGamePlayerLoginResp.login_server_id)
+  return _internal_login_server_id();
+}
+inline void MsgDBGamePlayerLoginResp::_internal_set_login_server_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  login_server_id_ = value;
+}
+inline void MsgDBGamePlayerLoginResp::set_login_server_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_login_server_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBGamePlayerLoginResp.login_server_id)
+}
+
 // -------------------------------------------------------------------
 
 // MsgDBWriteScore
@@ -14916,6 +15116,26 @@ inline void MsgDBGameLoginOut::set_kind_id(::PROTOBUF_NAMESPACE_ID::int32 value)
   // @@protoc_insertion_point(field_set:MsgDBGameLoginOut.kind_id)
 }
 
+// int32 login_server_id = 5;
+inline void MsgDBGameLoginOut::clear_login_server_id() {
+  login_server_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBGameLoginOut::_internal_login_server_id() const {
+  return login_server_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBGameLoginOut::login_server_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBGameLoginOut.login_server_id)
+  return _internal_login_server_id();
+}
+inline void MsgDBGameLoginOut::_internal_set_login_server_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  login_server_id_ = value;
+}
+inline void MsgDBGameLoginOut::set_login_server_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_login_server_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBGameLoginOut.login_server_id)
+}
+
 // -------------------------------------------------------------------
 
 // MsgDBSubagentInformation
@@ -15125,9 +15345,96 @@ inline void MsgDBQueryBankTax::set_recv_user_id(::PROTOBUF_NAMESPACE_ID::int32 v
   // @@protoc_insertion_point(field_set:MsgDBQueryBankTax.recv_user_id)
 }
 
+// -------------------------------------------------------------------
+
+// MsgDBBindInviteCode
+
+// int32 user_id = 1;
+inline void MsgDBBindInviteCode::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBBindInviteCode::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBBindInviteCode::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBBindInviteCode.user_id)
+  return _internal_user_id();
+}
+inline void MsgDBBindInviteCode::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgDBBindInviteCode::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBBindInviteCode.user_id)
+}
+
+// string invite_code = 2;
+inline void MsgDBBindInviteCode::clear_invite_code() {
+  invite_code_.ClearToEmpty();
+}
+inline const std::string& MsgDBBindInviteCode::invite_code() const {
+  // @@protoc_insertion_point(field_get:MsgDBBindInviteCode.invite_code)
+  return _internal_invite_code();
+}
+inline void MsgDBBindInviteCode::set_invite_code(const std::string& value) {
+  _internal_set_invite_code(value);
+  // @@protoc_insertion_point(field_set:MsgDBBindInviteCode.invite_code)
+}
+inline std::string* MsgDBBindInviteCode::mutable_invite_code() {
+  // @@protoc_insertion_point(field_mutable:MsgDBBindInviteCode.invite_code)
+  return _internal_mutable_invite_code();
+}
+inline const std::string& MsgDBBindInviteCode::_internal_invite_code() const {
+  return invite_code_.Get();
+}
+inline void MsgDBBindInviteCode::_internal_set_invite_code(const std::string& value) {
+  
+  invite_code_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgDBBindInviteCode::set_invite_code(std::string&& value) {
+  
+  invite_code_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgDBBindInviteCode.invite_code)
+}
+inline void MsgDBBindInviteCode::set_invite_code(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  invite_code_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgDBBindInviteCode.invite_code)
+}
+inline void MsgDBBindInviteCode::set_invite_code(const char* value,
+    size_t size) {
+  
+  invite_code_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgDBBindInviteCode.invite_code)
+}
+inline std::string* MsgDBBindInviteCode::_internal_mutable_invite_code() {
+  
+  return invite_code_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgDBBindInviteCode::release_invite_code() {
+  // @@protoc_insertion_point(field_release:MsgDBBindInviteCode.invite_code)
+  return invite_code_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgDBBindInviteCode::set_allocated_invite_code(std::string* invite_code) {
+  if (invite_code != nullptr) {
+    
+  } else {
+    
+  }
+  invite_code_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), invite_code,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgDBBindInviteCode.invite_code)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
