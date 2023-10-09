@@ -1,0 +1,223 @@
+syntax = "proto3";
+
+package TeenPatti_AK47;
+
+//桌子状态
+enum EAKGameState
+{	
+	GS_TP_READY							= 0;	//准备
+	GS_TP_DEAL							= 1;	//发牌
+	GS_TP_PLAYING						= 2;	//游戏
+	GS_TP_COMPARE						= 3;	//比牌阶段
+	GS_TP_RESULT						= 4;	//结算
+};
+
+//玩家状态
+enum EAKPlayerState
+{	
+	PS_READY							= 0;	//准备
+	PS_PLAY								= 1;	//游戏
+	PS_GIVE								= 2;	//弃牌
+	PS_FAIL								= 3;	//淘汰
+	PS_TIMEOUT							= 4;	//超时
+};
+
+//牌型
+enum EAKCardType
+{
+	//扑克类型
+	CT_SINGLE							= 0;	//单牌类型
+	CT_DOUBLE							= 1;	//对子类型
+	CT_JIN_HUA							= 2;	//金花类型
+	CT_SHUN_ZI							= 3;	//顺子类型
+	CT_SHUN_JIN							= 4;	//顺金类型
+	CT_BAO_ZI							= 5;	//豹子类型
+	CT_SPECIAL							= 6;	//特殊类型
+	CT_MAX								= 7;	//最大牌型
+};
+
+//操作码
+enum EAKGameAction
+{
+	InvaldAct							= 0;	//无效
+	GiveUp								= 1;	//弃牌
+	LookCard							= 2;	//看牌
+	CallBet								= 4;	//跟注
+	AddBet								= 8;	//加注
+	CompareCard							= 16;	//比牌
+	CompareReply						= 32;	//比牌应答
+	AllCompare							= 64;	//全场比牌
+};
+
+enum EAKMsgIDSubGame
+{
+	MsgIDSubGame_Null					= 0;
+	MsgIDSubGame_GameStartResp			= 1;	//游戏开始(AKMsgGameStartResp)
+	MsgIDSubGame_NotifyActionResp		= 2;	//玩家操作(AKMsgNotifyActionResp)
+	MsgIDSubGame_Action					= 3;	//玩家操作(AKMsgAction)
+	MsgIDSubGame_GiveUpResp				= 4;	//玩家弃牌返回(AKMsgGiveUpResp)
+	MsgIDSubGame_LookCard				= 5;	//玩家看牌(AKMsgLookCardResp)
+	MsgIDSubGame_AddBetResp				= 6;	//玩家下注(AKMsgAddBetResp)
+	MsgIDSubGame_CompareCardResp		= 7;	//玩家请求比牌(AKMsgCompareCardResp)
+	MsgIDSubGame_CompareRetResp			= 8;	//玩家比牌结果(AKMsgCompareCardRetResp)
+	MsgIDSubGame_GameResultResp			= 9;	//玩家下注记录(AKMsgGameResult)
+	MsgIDSubGame_NotifyStateResp		= 10;	//桌子状态(AKMsgTableState)
+	MsgIDSubGame_TimeOutResp			= 11;	//通知超时(MsgCommonBool)
+	MsgIDSubGame_TimeOutReady			= 12;	//重新准备(MsgCommonBool)
+	MsgIDSubGame_TimeOutReadyResp		= 13;	//准备返回(MsgCommonBool)
+	MsgIDSubGame_TimeOutKickResp		= 14;	//超时踢了游戏(MsgCommonBool)
+
+	/////////////////////////机器人消息///////////////////////
+	MsgIDSubGame_NotifySystemCheatResp	= 20;	//通知系统作弊率
+	MsgIDSubGame_NotifyCardTypeResp		= 21;	//通知牌型
+	MsgIDSubGame_NotifyIsMaxResp		= 22;	//通知是否最大
+	MsgIDSubGame_NotifyRemainDoubleResp	= 23;	//是否剩2人
+	MsgIDSubGame_NotifyRoundResp		= 24;	//通知回合数
+	MsgIDSubGame_NotifyLastActResp		= 25;	//通知玩家行为
+}
+
+message AKMsgTableState
+{
+	int32				state			= 1;	//桌子状态
+	int32				out_ime			= 2;	//剩余时间
+}
+
+
+message AKMsgHandCards
+{
+	repeated int32		cards			= 1;	//手牌
+	repeated int32		change_cards	= 2;	//变动后的手牌
+}
+
+message AKMsgPlayerInfo
+{
+	int32				chair_id		= 1;	//玩家椅子号
+	bool				ming_zhu		= 2;	//明注状态
+	int32				play_status		= 3;	//玩家状态
+	int64				player_bet		= 4;	//玩家投注总和
+	int64				last_bet		= 5;	//上次下注
+	int32				card_type		= 6;	//牌型
+	int64				gold			= 7;	//自己的金币，别人的是空
+	int64				win_gold		= 8;	//输赢分
+	AKMsgHandCards		handls			= 9;	//手牌
+}
+
+
+//场景消息
+message AKMsgSceneInfo
+{
+	int64			  	max_score		= 1;	//最大下注
+	int64			  	table_max_score	= 2;	//最大下注
+	int64			  	cell_score		= 3;	//底分
+	int32				cur_times		= 4;	//当前倍数
+	int32				table_state		= 5;	//桌子状态
+	int64				total_bet_score	= 6;	//桌内总下注
+	int32				tax				= 7;	//抽水
+	
+	int32				banker_chair_id	= 8;	//庄家椅子号
+	int32				cur_chair_id	= 9;	//当前操作椅子号
+	int32				cur_chair_act	= 10;	//当前玩家的操作码
+	int32				out_time		= 11;	//当前状态剩余超时时间
+	int32				total_time		= 12;	//当前状态总时间
+
+	int32				compare_user	= 13;	//比牌发起玩家
+	int32				compare_win		= 14;	//比牌赢家
+
+	repeated AKMsgPlayerInfo player_infos	= 15;	//玩家状态
+}
+
+//游戏开始
+message AKMsgGameStartResp
+{
+	int32				cur_chair_id	= 1;	//操作玩家椅子号
+	int32				cur_times		= 2;	//当前倍数
+	int32				banker_chair_id	= 3;	//庄家椅子号
+	int64				max_score		= 4;	//最大下注
+	int64				max_blind		= 5;	//盲投次数限制
+	int64				cell_score		= 6;	//底分
+	int64				table_max_score	= 7;	//桌内最大下注
+
+	repeated int32		play_index		= 8;	//在玩下标
+}
+
+//游戏开始
+message AKMsgNotifyActionResp
+{
+	int32				cur_chair_id	= 1;	//操作玩家椅子号
+	int32				cur_times		= 2;	//当前倍数
+	int32				current_act		= 3;	//当前操作码
+	int32				oper_time		= 4;	//操作时间
+}
+
+//玩家操作
+message AKMsgAction
+{
+	int32				act				= 1;	//操作标示
+	int64				bet_score		= 2;	//下注金额
+	int64				compare_user	= 3;	//比牌椅子id
+	bool				is_ok			= 4;	//是否同意比牌
+}
+
+//玩家弃牌返回
+message AKMsgGiveUpResp
+{
+	int32				chair_id		= 1;	//玩家椅子号
+}
+
+//玩家看牌
+message AKMsgLookCardResp
+{
+	int32				chair_id		= 1;	//玩家椅子号
+	int32				card_type		= 2;	//牌型
+	int32				cur_chair_id	= 3;	//玩家椅子号
+	int32				new_act			= 4;	//最新操作码
+	repeated int32		cards			= 5;	//手牌
+}
+
+message AKMsgAddBetResp
+{
+	int32				add_chair_id	= 1;	//下注玩家椅子号
+	int64				add_score		= 2;	//下注金额
+	int64				bet_type		= 3;	//下注行为类型  EAKGameAction
+}
+
+//玩家请求比牌
+message AKMsgCompareCardResp
+{
+	int32				chair_id		= 1;	//玩家椅子号
+	int32				compare_id		= 2;	//被比玩家椅子号
+}
+
+//玩家比牌结果
+message AKMsgCompareCardRetResp
+{
+	int32				current_chair_id= 1;	//下个操作玩家椅子号
+	int32				current_act		= 2;	//当前操作码=
+	int32				lost_id			= 3;	//输家椅子号
+	int32				compare_id		= 4;	//比牌椅子号
+	int32				passive_id		= 5;	//被比椅子号
+	int32				compare_type	= 6;	//比牌玩家牌型
+	int32				passive_type	= 7;	//被比玩家牌型
+	repeated int32		compare_cards	= 8;	//比牌玩家手牌
+	repeated int32		passive_cards	= 9;	//被比玩家手牌
+	bool				is_agree		= 10;	//同意否
+}                                           
+
+
+//游戏结果                                  
+message AKMsgGameResult                           
+{                                           
+	int32					game_tax		= 1;	//税收
+	repeated int64			game_score		= 2;	//输赢分
+	repeated int32			card_type		= 3;	//牌型
+	repeated AKMsgHandCards	player_hands	= 4;	//手牌
+	int32					end_state		= 5;	//结束状态  1 比牌结束 2 全场秀牌
+}                                           
+
+
+//////////////////////////////////////////////////////////////机器人消息///////////////////////////////////////
+message AKMsgNotifyPlayerAct
+{
+	int32				chair_id		= 1;	//玩家椅子号
+	int32				act				= 2;	//被比玩家椅子号
+}
