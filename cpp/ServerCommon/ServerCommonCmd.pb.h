@@ -253,6 +253,8 @@ enum EMsgIDDB : int {
   DB2LOGIN_QuerySubAgentInfoResp = 1073,
   LOGIN2DB_BindInviteCode = 1074,
   DB2LOGIN_BindInviteCodeResp = 1075,
+  LOGIN2DB_QueryBindInfo = 1076,
+  DB2LOGIN_QueryBindInfoResp = 1077,
   GAME2DB_Login = 2001,
   DB2GAME_LoginResp = 2002,
   GAME2DB_LoadCheatRate = 2003,

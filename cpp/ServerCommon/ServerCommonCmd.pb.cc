@@ -73,7 +73,7 @@ const char descriptor_table_protodef_ServerCommonCmd_2eproto[] PROTOBUF_SECTION_
   ".\022 \n\033Chat2Center_UpdateOnlineNum\020\362.\022\037\n\032C"
   "hat2Center_SendTrumpetMsg\020\363.\022#\n\036Center2C"
   "hat_SendTrumpetMsgResp\020\364.\022\035\n\030Center2Chat"
-  "_KickUserResp\020\365.*\237\032\n\010EMsgIDDB\022\020\n\014MsgIDDB"
+  "_KickUserResp\020\365.*\335\032\n\010EMsgIDDB\022\020\n\014MsgIDDB"
   "_NULL\020\000\022\035\n\031CENTER2DB_UpdateOnlineNum\020\001\022\033"
   "\n\027CENTER2DB_InitOnlineNum\020\002\022\033\n\027CENTER2DB"
   "_RegisterLogin\020\003\022\035\n\031CENTER2DB_Unregister"
@@ -141,25 +141,27 @@ const char descriptor_table_protodef_ServerCommonCmd_2eproto[] PROTOBUF_SECTION_
   "LOGIN2DB_QuerySubAgentInfo\020\260\010\022#\n\036DB2LOGI"
   "N_QuerySubAgentInfoResp\020\261\010\022\034\n\027LOGIN2DB_B"
   "indInviteCode\020\262\010\022 \n\033DB2LOGIN_BindInviteC"
-  "odeResp\020\263\010\022\022\n\rGAME2DB_Login\020\321\017\022\026\n\021DB2GAM"
-  "E_LoginResp\020\322\017\022\032\n\025GAME2DB_LoadCheatRate\020"
-  "\323\017\022\032\n\025DB2GAME_LoadCheatRate\020\324\017\022\027\n\022GAME2D"
-  "B_WriteScore\020\325\017\022\027\n\022DB2GAME_WriteScore\020\326\017"
-  "\022\"\n\035GAME2DB_FingerGuessWriteScore\020\327\017\022\"\n\035"
-  "DB2GAME_FingerGuessWriteScore\020\330\017\022#\n\036GAME"
-  "2DB_FingerGuessQueryRecord\020\331\017\022#\n\036DB2GAME"
-  "_FingerGuessRoundRecord\020\332\017\022!\n\034DB2GAME_Fi"
-  "ngerGuessDayRecord\020\333\017\022 \n\033GAME2DB_WriteDi"
-  "sConnectData\020\334\017\022\034\n\027GAME2DB_QueryJckpotIn"
-  "fo\020\335\017\022 \n\033DB2GAME_QueryJckpotInfoResp\020\336\017\022"
-  "\035\n\030GAME2DB_UpdateJckpotInfo\020\337\017\022\025\n\020GAME2D"
-  "B_LoginOut\020\340\017\022\035\n\030GAME2DB_ClearOfflineUse"
-  "r\020\341\017\022\032\n\025GAME2DB_UserReConnect\020\342\017\022\022\n\rCHAT"
-  "2DB_Login\020\271\027\022\026\n\021DB2CHAT_LoginResp\020\272\027\022\033\n\026"
-  "CHAT2DB_SendTrumpetMsg\020\273\027\022\037\n\032DB2CHAT_Sen"
-  "dTrumpetMsgResp\020\274\027*X\n\021EGameBattleTypeID\022"
-  "\017\n\013GAME_NORMAL\020\000\022\020\n\014GAME_HUNDRED\020\001\022\017\n\013GA"
-  "ME_CREATE\020\002\022\017\n\013GAME_BATTLE\020\003b\006proto3"
+  "odeResp\020\263\010\022\033\n\026LOGIN2DB_QueryBindInfo\020\264\010\022"
+  "\037\n\032DB2LOGIN_QueryBindInfoResp\020\265\010\022\022\n\rGAME"
+  "2DB_Login\020\321\017\022\026\n\021DB2GAME_LoginResp\020\322\017\022\032\n\025"
+  "GAME2DB_LoadCheatRate\020\323\017\022\032\n\025DB2GAME_Load"
+  "CheatRate\020\324\017\022\027\n\022GAME2DB_WriteScore\020\325\017\022\027\n"
+  "\022DB2GAME_WriteScore\020\326\017\022\"\n\035GAME2DB_Finger"
+  "GuessWriteScore\020\327\017\022\"\n\035DB2GAME_FingerGues"
+  "sWriteScore\020\330\017\022#\n\036GAME2DB_FingerGuessQue"
+  "ryRecord\020\331\017\022#\n\036DB2GAME_FingerGuessRoundR"
+  "ecord\020\332\017\022!\n\034DB2GAME_FingerGuessDayRecord"
+  "\020\333\017\022 \n\033GAME2DB_WriteDisConnectData\020\334\017\022\034\n"
+  "\027GAME2DB_QueryJckpotInfo\020\335\017\022 \n\033DB2GAME_Q"
+  "ueryJckpotInfoResp\020\336\017\022\035\n\030GAME2DB_UpdateJ"
+  "ckpotInfo\020\337\017\022\025\n\020GAME2DB_LoginOut\020\340\017\022\035\n\030G"
+  "AME2DB_ClearOfflineUser\020\341\017\022\032\n\025GAME2DB_Us"
+  "erReConnect\020\342\017\022\022\n\rCHAT2DB_Login\020\271\027\022\026\n\021DB"
+  "2CHAT_LoginResp\020\272\027\022\033\n\026CHAT2DB_SendTrumpe"
+  "tMsg\020\273\027\022\037\n\032DB2CHAT_SendTrumpetMsgResp\020\274\027"
+  "*X\n\021EGameBattleTypeID\022\017\n\013GAME_NORMAL\020\000\022\020"
+  "\n\014GAME_HUNDRED\020\001\022\017\n\013GAME_CREATE\020\002\022\017\n\013GAM"
+  "E_BATTLE\020\003b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_ServerCommonCmd_2eproto_deps[1] = {
 };
@@ -167,7 +169,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Ser
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ServerCommonCmd_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ServerCommonCmd_2eproto = {
-  false, false, descriptor_table_protodef_ServerCommonCmd_2eproto, "ServerCommonCmd.proto", 5516,
+  false, false, descriptor_table_protodef_ServerCommonCmd_2eproto, "ServerCommonCmd.proto", 5578,
   &descriptor_table_ServerCommonCmd_2eproto_once, descriptor_table_ServerCommonCmd_2eproto_sccs, descriptor_table_ServerCommonCmd_2eproto_deps, 0, 0,
   schemas, file_default_instances, TableStruct_ServerCommonCmd_2eproto::offsets,
   file_level_metadata_ServerCommonCmd_2eproto, 0, file_level_enum_descriptors_ServerCommonCmd_2eproto, file_level_service_descriptors_ServerCommonCmd_2eproto,
@@ -356,6 +358,8 @@ bool EMsgIDDB_IsValid(int value) {
     case 1073:
     case 1074:
     case 1075:
+    case 1076:
+    case 1077:
     case 2001:
     case 2002:
     case 2003:

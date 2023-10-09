@@ -436,8 +436,20 @@ message MsgTtotalSubagentInformation
 	repeated MsgSubagentInformation agent_info = 1;
 }
 
+//分享绑定上级信息返回
+message MsgBindParentInfo
+{
+	int32		user_id			= 1;		//玩家ID
+	string		avatar			= 2;		//头像
+	int32		avatar_frame	= 3;		//头像框
+	string		nick_name		= 4;		//昵称
+}
+
+
+//绑定邀请码返回
 message MsgBindInviteCodeResp
 {
 	int32		res_code	= 1;		//返回码
 	int32		user_type	= 2;		//玩家类型
+	MsgBindParentInfo info	= 3;		//绑定上级信息
 }

@@ -138,8 +138,11 @@ public static partial class LoginReflection {
           "FgoOdG90YWxfc2hpZnRfdG8YBCABKAMSFgoOdG90YWxfcm9sbF9vdXQYBSAB",
           "KAMSEQoJdmlwX2xldmVsGAYgASgFIksKHE1zZ1R0b3RhbFN1YmFnZW50SW5m",
           "b3JtYXRpb24SKwoKYWdlbnRfaW5mbxgBIAMoCzIXLk1zZ1N1YmFnZW50SW5m",
-          "b3JtYXRpb24iPAoVTXNnQmluZEludml0ZUNvZGVSZXNwEhAKCHJlc19jb2Rl",
-          "GAEgASgFEhEKCXVzZXJfdHlwZRgCIAEoBWIGcHJvdG8z"));
+          "b3JtYXRpb24iXQoRTXNnQmluZFBhcmVudEluZm8SDwoHdXNlcl9pZBgBIAEo",
+          "BRIOCgZhdmF0YXIYAiABKAkSFAoMYXZhdGFyX2ZyYW1lGAMgASgFEhEKCW5p",
+          "Y2tfbmFtZRgEIAEoCSJeChVNc2dCaW5kSW52aXRlQ29kZVJlc3ASEAoIcmVz",
+          "X2NvZGUYASABKAUSEQoJdXNlcl90eXBlGAIgASgFEiAKBGluZm8YAyABKAsy",
+          "Ei5Nc2dCaW5kUGFyZW50SW5mb2IGcHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -192,7 +195,8 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBankQueryNickname), global::MsgBankQueryNickname.Parser, new[]{ "RetValue", "Nickname", "Tax" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgSubagentInformation), global::MsgSubagentInformation.Parser, new[]{ "AgentNickname", "AgentUserId", "AgentType", "TotalShiftTo", "TotalRollOut", "VipLevel" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTtotalSubagentInformation), global::MsgTtotalSubagentInformation.Parser, new[]{ "AgentInfo" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBindInviteCodeResp), global::MsgBindInviteCodeResp.Parser, new[]{ "ResCode", "UserType" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBindParentInfo), global::MsgBindParentInfo.Parser, new[]{ "UserId", "Avatar", "AvatarFrame", "NickName" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBindInviteCodeResp), global::MsgBindInviteCodeResp.Parser, new[]{ "ResCode", "UserType", "Info" }, null, null, null, null)
         }));
   }
   #endregion
@@ -15053,6 +15057,304 @@ public sealed partial class MsgTtotalSubagentInformation : pb::IMessage<MsgTtota
 
 }
 
+/// <summary>
+///分享绑定上级信息返回
+/// </summary>
+public sealed partial class MsgBindParentInfo : pb::IMessage<MsgBindParentInfo>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgBindParentInfo> _parser = new pb::MessageParser<MsgBindParentInfo>(() => new MsgBindParentInfo());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgBindParentInfo> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[49]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBindParentInfo() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBindParentInfo(MsgBindParentInfo other) : this() {
+    userId_ = other.userId_;
+    avatar_ = other.avatar_;
+    avatarFrame_ = other.avatarFrame_;
+    nickName_ = other.nickName_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBindParentInfo Clone() {
+    return new MsgBindParentInfo(this);
+  }
+
+  /// <summary>Field number for the "user_id" field.</summary>
+  public const int UserIdFieldNumber = 1;
+  private int userId_;
+  /// <summary>
+  ///玩家ID
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int UserId {
+    get { return userId_; }
+    set {
+      userId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "avatar" field.</summary>
+  public const int AvatarFieldNumber = 2;
+  private string avatar_ = "";
+  /// <summary>
+  ///头像
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string Avatar {
+    get { return avatar_; }
+    set {
+      avatar_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "avatar_frame" field.</summary>
+  public const int AvatarFrameFieldNumber = 3;
+  private int avatarFrame_;
+  /// <summary>
+  ///头像框
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int AvatarFrame {
+    get { return avatarFrame_; }
+    set {
+      avatarFrame_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "nick_name" field.</summary>
+  public const int NickNameFieldNumber = 4;
+  private string nickName_ = "";
+  /// <summary>
+  ///昵称
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string NickName {
+    get { return nickName_; }
+    set {
+      nickName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgBindParentInfo);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgBindParentInfo other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (UserId != other.UserId) return false;
+    if (Avatar != other.Avatar) return false;
+    if (AvatarFrame != other.AvatarFrame) return false;
+    if (NickName != other.NickName) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (UserId != 0) hash ^= UserId.GetHashCode();
+    if (Avatar.Length != 0) hash ^= Avatar.GetHashCode();
+    if (AvatarFrame != 0) hash ^= AvatarFrame.GetHashCode();
+    if (NickName.Length != 0) hash ^= NickName.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (UserId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(UserId);
+    }
+    if (Avatar.Length != 0) {
+      output.WriteRawTag(18);
+      output.WriteString(Avatar);
+    }
+    if (AvatarFrame != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(AvatarFrame);
+    }
+    if (NickName.Length != 0) {
+      output.WriteRawTag(34);
+      output.WriteString(NickName);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (UserId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(UserId);
+    }
+    if (Avatar.Length != 0) {
+      output.WriteRawTag(18);
+      output.WriteString(Avatar);
+    }
+    if (AvatarFrame != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(AvatarFrame);
+    }
+    if (NickName.Length != 0) {
+      output.WriteRawTag(34);
+      output.WriteString(NickName);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (UserId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserId);
+    }
+    if (Avatar.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Avatar);
+    }
+    if (AvatarFrame != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(AvatarFrame);
+    }
+    if (NickName.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(NickName);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgBindParentInfo other) {
+    if (other == null) {
+      return;
+    }
+    if (other.UserId != 0) {
+      UserId = other.UserId;
+    }
+    if (other.Avatar.Length != 0) {
+      Avatar = other.Avatar;
+    }
+    if (other.AvatarFrame != 0) {
+      AvatarFrame = other.AvatarFrame;
+    }
+    if (other.NickName.Length != 0) {
+      NickName = other.NickName;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          UserId = input.ReadInt32();
+          break;
+        }
+        case 18: {
+          Avatar = input.ReadString();
+          break;
+        }
+        case 24: {
+          AvatarFrame = input.ReadInt32();
+          break;
+        }
+        case 34: {
+          NickName = input.ReadString();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          UserId = input.ReadInt32();
+          break;
+        }
+        case 18: {
+          Avatar = input.ReadString();
+          break;
+        }
+        case 24: {
+          AvatarFrame = input.ReadInt32();
+          break;
+        }
+        case 34: {
+          NickName = input.ReadString();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///绑定邀请码返回
+/// </summary>
 public sealed partial class MsgBindInviteCodeResp : pb::IMessage<MsgBindInviteCodeResp>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     , pb::IBufferMessage
@@ -15065,7 +15367,7 @@ public sealed partial class MsgBindInviteCodeResp : pb::IMessage<MsgBindInviteCo
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[49]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[50]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -15084,6 +15386,7 @@ public sealed partial class MsgBindInviteCodeResp : pb::IMessage<MsgBindInviteCo
   public MsgBindInviteCodeResp(MsgBindInviteCodeResp other) : this() {
     resCode_ = other.resCode_;
     userType_ = other.userType_;
+    info_ = other.info_ != null ? other.info_.Clone() : null;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -15120,6 +15423,20 @@ public sealed partial class MsgBindInviteCodeResp : pb::IMessage<MsgBindInviteCo
     }
   }
 
+  /// <summary>Field number for the "info" field.</summary>
+  public const int InfoFieldNumber = 3;
+  private global::MsgBindParentInfo info_;
+  /// <summary>
+  ///绑定上级信息
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public global::MsgBindParentInfo Info {
+    get { return info_; }
+    set {
+      info_ = value;
+    }
+  }
+
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as MsgBindInviteCodeResp);
@@ -15135,6 +15452,7 @@ public sealed partial class MsgBindInviteCodeResp : pb::IMessage<MsgBindInviteCo
     }
     if (ResCode != other.ResCode) return false;
     if (UserType != other.UserType) return false;
+    if (!object.Equals(Info, other.Info)) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -15143,6 +15461,7 @@ public sealed partial class MsgBindInviteCodeResp : pb::IMessage<MsgBindInviteCo
     int hash = 1;
     if (ResCode != 0) hash ^= ResCode.GetHashCode();
     if (UserType != 0) hash ^= UserType.GetHashCode();
+    if (info_ != null) hash ^= Info.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -15167,6 +15486,10 @@ public sealed partial class MsgBindInviteCodeResp : pb::IMessage<MsgBindInviteCo
       output.WriteRawTag(16);
       output.WriteInt32(UserType);
     }
+    if (info_ != null) {
+      output.WriteRawTag(26);
+      output.WriteMessage(Info);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -15184,6 +15507,10 @@ public sealed partial class MsgBindInviteCodeResp : pb::IMessage<MsgBindInviteCo
       output.WriteRawTag(16);
       output.WriteInt32(UserType);
     }
+    if (info_ != null) {
+      output.WriteRawTag(26);
+      output.WriteMessage(Info);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -15198,6 +15525,9 @@ public sealed partial class MsgBindInviteCodeResp : pb::IMessage<MsgBindInviteCo
     }
     if (UserType != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserType);
+    }
+    if (info_ != null) {
+      size += 1 + pb::CodedOutputStream.ComputeMessageSize(Info);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -15215,6 +15545,12 @@ public sealed partial class MsgBindInviteCodeResp : pb::IMessage<MsgBindInviteCo
     }
     if (other.UserType != 0) {
       UserType = other.UserType;
+    }
+    if (other.info_ != null) {
+      if (info_ == null) {
+        Info = new global::MsgBindParentInfo();
+      }
+      Info.MergeFrom(other.Info);
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -15238,6 +15574,13 @@ public sealed partial class MsgBindInviteCodeResp : pb::IMessage<MsgBindInviteCo
           UserType = input.ReadInt32();
           break;
         }
+        case 26: {
+          if (info_ == null) {
+            Info = new global::MsgBindParentInfo();
+          }
+          input.ReadMessage(Info);
+          break;
+        }
       }
     }
   #endif
@@ -15258,6 +15601,13 @@ public sealed partial class MsgBindInviteCodeResp : pb::IMessage<MsgBindInviteCo
         }
         case 16: {
           UserType = input.ReadInt32();
+          break;
+        }
+        case 26: {
+          if (info_ == null) {
+            Info = new global::MsgBindParentInfo();
+          }
+          input.ReadMessage(Info);
           break;
         }
       }
