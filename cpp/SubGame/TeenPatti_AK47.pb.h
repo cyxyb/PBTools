@@ -1947,13 +1947,12 @@ class AKMsgLookCardResp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kHandlCardsFieldNumber = 5,
+    kHandlCardsFieldNumber = 4,
     kChairIdFieldNumber = 1,
-    kCardTypeFieldNumber = 2,
-    kCurChairIdFieldNumber = 3,
-    kNewActFieldNumber = 4,
+    kCurChairIdFieldNumber = 2,
+    kNewActFieldNumber = 3,
   };
-  // .TeenPatti_AK47.AKMsgHandCards handl_cards = 5;
+  // .TeenPatti_AK47.AKMsgHandCards handl_cards = 4;
   bool has_handl_cards() const;
   private:
   bool _internal_has_handl_cards() const;
@@ -1980,16 +1979,7 @@ class AKMsgLookCardResp PROTOBUF_FINAL :
   void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 card_type = 2;
-  void clear_card_type();
-  ::PROTOBUF_NAMESPACE_ID::int32 card_type() const;
-  void set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_card_type() const;
-  void _internal_set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 cur_chair_id = 3;
+  // int32 cur_chair_id = 2;
   void clear_cur_chair_id();
   ::PROTOBUF_NAMESPACE_ID::int32 cur_chair_id() const;
   void set_cur_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -1998,7 +1988,7 @@ class AKMsgLookCardResp PROTOBUF_FINAL :
   void _internal_set_cur_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 new_act = 4;
+  // int32 new_act = 3;
   void clear_new_act();
   ::PROTOBUF_NAMESPACE_ID::int32 new_act() const;
   void set_new_act(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -2016,7 +2006,6 @@ class AKMsgLookCardResp PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::TeenPatti_AK47::AKMsgHandCards* handl_cards_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 card_type_;
   ::PROTOBUF_NAMESPACE_ID::int32 cur_chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 new_act_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
@@ -2673,10 +2662,9 @@ class AKMsgGameResult PROTOBUF_FINAL :
 
   enum : int {
     kGameScoreFieldNumber = 2,
-    kCardTypeFieldNumber = 3,
-    kPlayerHandsFieldNumber = 4,
+    kPlayerHandsFieldNumber = 3,
     kGameTaxFieldNumber = 1,
-    kEndStateFieldNumber = 5,
+    kEndStateFieldNumber = 4,
   };
   // repeated int64 game_score = 2;
   int game_score_size() const;
@@ -2700,29 +2688,7 @@ class AKMsgGameResult PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
       mutable_game_score();
 
-  // repeated int32 card_type = 3;
-  int card_type_size() const;
-  private:
-  int _internal_card_type_size() const;
-  public:
-  void clear_card_type();
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_card_type(int index) const;
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      _internal_card_type() const;
-  void _internal_add_card_type(::PROTOBUF_NAMESPACE_ID::int32 value);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      _internal_mutable_card_type();
-  public:
-  ::PROTOBUF_NAMESPACE_ID::int32 card_type(int index) const;
-  void set_card_type(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
-  void add_card_type(::PROTOBUF_NAMESPACE_ID::int32 value);
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      card_type() const;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      mutable_card_type();
-
-  // repeated .TeenPatti_AK47.AKMsgHandCards player_hands = 4;
+  // repeated .TeenPatti_AK47.AKMsgHandCards player_hands = 3;
   int player_hands_size() const;
   private:
   int _internal_player_hands_size() const;
@@ -2749,7 +2715,7 @@ class AKMsgGameResult PROTOBUF_FINAL :
   void _internal_set_game_tax(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 end_state = 5;
+  // int32 end_state = 4;
   void clear_end_state();
   ::PROTOBUF_NAMESPACE_ID::int32 end_state() const;
   void set_end_state(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -2767,8 +2733,6 @@ class AKMsgGameResult PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 > game_score_;
   mutable std::atomic<int> _game_score_cached_byte_size_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > card_type_;
-  mutable std::atomic<int> _card_type_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TeenPatti_AK47::AKMsgHandCards > player_hands_;
   ::PROTOBUF_NAMESPACE_ID::int32 game_tax_;
   ::PROTOBUF_NAMESPACE_ID::int32 end_state_;
@@ -4048,27 +4012,7 @@ inline void AKMsgLookCardResp::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:TeenPatti_AK47.AKMsgLookCardResp.chair_id)
 }
 
-// int32 card_type = 2;
-inline void AKMsgLookCardResp::clear_card_type() {
-  card_type_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 AKMsgLookCardResp::_internal_card_type() const {
-  return card_type_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 AKMsgLookCardResp::card_type() const {
-  // @@protoc_insertion_point(field_get:TeenPatti_AK47.AKMsgLookCardResp.card_type)
-  return _internal_card_type();
-}
-inline void AKMsgLookCardResp::_internal_set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  card_type_ = value;
-}
-inline void AKMsgLookCardResp::set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_card_type(value);
-  // @@protoc_insertion_point(field_set:TeenPatti_AK47.AKMsgLookCardResp.card_type)
-}
-
-// int32 cur_chair_id = 3;
+// int32 cur_chair_id = 2;
 inline void AKMsgLookCardResp::clear_cur_chair_id() {
   cur_chair_id_ = 0;
 }
@@ -4088,7 +4032,7 @@ inline void AKMsgLookCardResp::set_cur_chair_id(::PROTOBUF_NAMESPACE_ID::int32 v
   // @@protoc_insertion_point(field_set:TeenPatti_AK47.AKMsgLookCardResp.cur_chair_id)
 }
 
-// int32 new_act = 4;
+// int32 new_act = 3;
 inline void AKMsgLookCardResp::clear_new_act() {
   new_act_ = 0;
 }
@@ -4108,7 +4052,7 @@ inline void AKMsgLookCardResp::set_new_act(::PROTOBUF_NAMESPACE_ID::int32 value)
   // @@protoc_insertion_point(field_set:TeenPatti_AK47.AKMsgLookCardResp.new_act)
 }
 
-// .TeenPatti_AK47.AKMsgHandCards handl_cards = 5;
+// .TeenPatti_AK47.AKMsgHandCards handl_cards = 4;
 inline bool AKMsgLookCardResp::_internal_has_handl_cards() const {
   return this != internal_default_instance() && handl_cards_ != nullptr;
 }
@@ -4660,54 +4604,7 @@ AKMsgGameResult::mutable_game_score() {
   return _internal_mutable_game_score();
 }
 
-// repeated int32 card_type = 3;
-inline int AKMsgGameResult::_internal_card_type_size() const {
-  return card_type_.size();
-}
-inline int AKMsgGameResult::card_type_size() const {
-  return _internal_card_type_size();
-}
-inline void AKMsgGameResult::clear_card_type() {
-  card_type_.Clear();
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 AKMsgGameResult::_internal_card_type(int index) const {
-  return card_type_.Get(index);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 AKMsgGameResult::card_type(int index) const {
-  // @@protoc_insertion_point(field_get:TeenPatti_AK47.AKMsgGameResult.card_type)
-  return _internal_card_type(index);
-}
-inline void AKMsgGameResult::set_card_type(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
-  card_type_.Set(index, value);
-  // @@protoc_insertion_point(field_set:TeenPatti_AK47.AKMsgGameResult.card_type)
-}
-inline void AKMsgGameResult::_internal_add_card_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  card_type_.Add(value);
-}
-inline void AKMsgGameResult::add_card_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_add_card_type(value);
-  // @@protoc_insertion_point(field_add:TeenPatti_AK47.AKMsgGameResult.card_type)
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-AKMsgGameResult::_internal_card_type() const {
-  return card_type_;
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-AKMsgGameResult::card_type() const {
-  // @@protoc_insertion_point(field_list:TeenPatti_AK47.AKMsgGameResult.card_type)
-  return _internal_card_type();
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-AKMsgGameResult::_internal_mutable_card_type() {
-  return &card_type_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-AKMsgGameResult::mutable_card_type() {
-  // @@protoc_insertion_point(field_mutable_list:TeenPatti_AK47.AKMsgGameResult.card_type)
-  return _internal_mutable_card_type();
-}
-
-// repeated .TeenPatti_AK47.AKMsgHandCards player_hands = 4;
+// repeated .TeenPatti_AK47.AKMsgHandCards player_hands = 3;
 inline int AKMsgGameResult::_internal_player_hands_size() const {
   return player_hands_.size();
 }
@@ -4746,7 +4643,7 @@ AKMsgGameResult::player_hands() const {
   return player_hands_;
 }
 
-// int32 end_state = 5;
+// int32 end_state = 4;
 inline void AKMsgGameResult::clear_end_state() {
   end_state_ = 0;
 }

@@ -168,10 +168,9 @@ message AKMsgGiveUpResp
 message AKMsgLookCardResp
 {
 	int32				chair_id		= 1;	//玩家椅子号
-	int32				card_type		= 2;	//牌型
-	int32				cur_chair_id	= 3;	//玩家椅子号
-	int32				new_act			= 4;	//最新操作码
-	AKMsgHandCards		handl_cards		= 5;	//手牌
+	int32				cur_chair_id	= 2;	//玩家椅子号
+	int32				new_act			= 3;	//最新操作码
+	AKMsgHandCards		handl_cards		= 4;	//手牌
 }
 
 message AKMsgAddBetResp
@@ -207,9 +206,8 @@ message AKMsgGameResult
 {                                           
 	int32					game_tax		= 1;	//税收
 	repeated int64			game_score		= 2;	//输赢分
-	repeated int32			card_type		= 3;	//牌型
-	repeated AKMsgHandCards	player_hands	= 4;	//手牌
-	int32					end_state		= 5;	//结束状态  1 比牌结束 2 全场秀牌
+	repeated AKMsgHandCards	player_hands	= 3;	//手牌
+	int32					end_state		= 4;	//结束状态  1 比牌结束 2 全场秀牌
 }                                           
 
 
