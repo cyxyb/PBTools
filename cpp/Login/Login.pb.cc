@@ -1294,10 +1294,12 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::MsgTransferRecord, send_user_id_),
+  PROTOBUF_FIELD_OFFSET(::MsgTransferRecord, nickname_),
   PROTOBUF_FIELD_OFFSET(::MsgTransferRecord, transfer_gold_),
   PROTOBUF_FIELD_OFFSET(::MsgTransferRecord, timer_),
   PROTOBUF_FIELD_OFFSET(::MsgTransferRecord, recv_user_id_),
   PROTOBUF_FIELD_OFFSET(::MsgTransferRecord, receive_state_),
+  PROTOBUF_FIELD_OFFSET(::MsgTransferRecord, transfer_id_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgTransferRecordResp, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1409,15 +1411,15 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 374, -1, sizeof(::MsgTransferOperateSyncResp)},
   { 384, -1, sizeof(::MsgTransferReceiveResp)},
   { 391, -1, sizeof(::MsgTransferRecord)},
-  { 401, -1, sizeof(::MsgTransferRecordResp)},
-  { 407, -1, sizeof(::MsgPhoneCode)},
-  { 414, -1, sizeof(::MsgItem)},
-  { 421, -1, sizeof(::MsgPlayerItem)},
-  { 427, -1, sizeof(::MsgTransferQueryNickname)},
-  { 435, -1, sizeof(::MsgSubagentInformation)},
-  { 446, -1, sizeof(::MsgTtotalSubagentInformation)},
-  { 452, -1, sizeof(::MsgBindParentInfo)},
-  { 461, -1, sizeof(::MsgBindInviteCodeResp)},
+  { 403, -1, sizeof(::MsgTransferRecordResp)},
+  { 409, -1, sizeof(::MsgPhoneCode)},
+  { 416, -1, sizeof(::MsgItem)},
+  { 423, -1, sizeof(::MsgPlayerItem)},
+  { 429, -1, sizeof(::MsgTransferQueryNickname)},
+  { 437, -1, sizeof(::MsgSubagentInformation)},
+  { 448, -1, sizeof(::MsgTtotalSubagentInformation)},
+  { 454, -1, sizeof(::MsgBindParentInfo)},
+  { 463, -1, sizeof(::MsgBindInviteCodeResp)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -1589,10 +1591,11 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "\001(\005\022\020\n\010add_gold\030\004 \001(\003\022\025\n\rreceive_state\030\006"
   " \001(\003\022\023\n\013transfer_id\030\007 \001(\003\">\n\026MsgTransfer"
   "ReceiveResp\022\021\n\tret_value\030\001 \001(\005\022\021\n\tuser_g"
-  "old\030\002 \001(\003\"|\n\021MsgTransferRecord\022\024\n\014send_u"
-  "ser_id\030\001 \001(\005\022\025\n\rtransfer_gold\030\002 \001(\003\022\r\n\005t"
-  "imer\030\003 \001(\t\022\024\n\014recv_user_id\030\004 \001(\005\022\025\n\rrece"
-  "ive_state\030\005 \001(\005\"<\n\025MsgTransferRecordResp"
+  "old\030\002 \001(\003\"\243\001\n\021MsgTransferRecord\022\024\n\014send_"
+  "user_id\030\001 \001(\005\022\020\n\010nickname\030\002 \001(\t\022\025\n\rtrans"
+  "fer_gold\030\003 \001(\003\022\r\n\005timer\030\005 \001(\t\022\024\n\014recv_us"
+  "er_id\030\006 \001(\005\022\025\n\rreceive_state\030\007 \001(\005\022\023\n\013tr"
+  "ansfer_id\030\010 \001(\003\"<\n\025MsgTransferRecordResp"
   "\022#\n\007records\030\001 \003(\0132\022.MsgTransferRecord\"0\n"
   "\014MsgPhoneCode\022\021\n\tarea_code\030\001 \001(\t\022\r\n\005phon"
   "e\030\002 \001(\t\",\n\007MsgItem\022\017\n\007item_id\030\001 \001(\005\022\020\n\010i"
@@ -1668,7 +1671,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Login_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Login_2eproto = {
-  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 5449,
+  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 5489,
   &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 50, 0,
   schemas, file_default_instances, TableStruct_Login_2eproto::offsets,
   file_level_metadata_Login_2eproto, 50, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
@@ -13957,6 +13960,11 @@ MsgTransferRecord::MsgTransferRecord(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 MsgTransferRecord::MsgTransferRecord(const MsgTransferRecord& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  nickname_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from._internal_nickname().empty()) {
+    nickname_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_nickname(), 
+      GetArena());
+  }
   timer_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (!from._internal_timer().empty()) {
     timer_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_timer(), 
@@ -13970,6 +13978,7 @@ MsgTransferRecord::MsgTransferRecord(const MsgTransferRecord& from)
 
 void MsgTransferRecord::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgTransferRecord_Login_2eproto.base);
+  nickname_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   timer_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&transfer_gold_) - reinterpret_cast<char*>(this)),
@@ -13985,6 +13994,7 @@ MsgTransferRecord::~MsgTransferRecord() {
 
 void MsgTransferRecord::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
+  nickname_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   timer_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -14009,6 +14019,7 @@ void MsgTransferRecord::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  nickname_.ClearToEmpty();
   timer_.ClearToEmpty();
   ::memset(&transfer_gold_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&receive_state_) -
@@ -14030,33 +14041,49 @@ const char* MsgTransferRecord::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int64 transfer_gold = 2;
+      // string nickname = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          auto str = _internal_mutable_nickname();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgTransferRecord.nickname"));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 transfer_gold = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           transfer_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // string timer = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+      // string timer = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
           auto str = _internal_mutable_timer();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgTransferRecord.timer"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 recv_user_id = 4;
-      case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+      // int32 recv_user_id = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
           recv_user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 receive_state = 5;
-      case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+      // int32 receive_state = 7;
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
           receive_state_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 transfer_id = 8;
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+          transfer_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -14094,32 +14121,48 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_send_user_id(), target);
   }
 
-  // int64 transfer_gold = 2;
-  if (this->transfer_gold() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_transfer_gold(), target);
+  // string nickname = 2;
+  if (this->nickname().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_nickname().data(), static_cast<int>(this->_internal_nickname().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "MsgTransferRecord.nickname");
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_nickname(), target);
   }
 
-  // string timer = 3;
+  // int64 transfer_gold = 3;
+  if (this->transfer_gold() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_transfer_gold(), target);
+  }
+
+  // string timer = 5;
   if (this->timer().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_timer().data(), static_cast<int>(this->_internal_timer().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "MsgTransferRecord.timer");
     target = stream->WriteStringMaybeAliased(
-        3, this->_internal_timer(), target);
+        5, this->_internal_timer(), target);
   }
 
-  // int32 recv_user_id = 4;
+  // int32 recv_user_id = 6;
   if (this->recv_user_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_recv_user_id(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_recv_user_id(), target);
   }
 
-  // int32 receive_state = 5;
+  // int32 receive_state = 7;
   if (this->receive_state() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_receive_state(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(7, this->_internal_receive_state(), target);
+  }
+
+  // int64 transfer_id = 8;
+  if (this->transfer_id() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(8, this->_internal_transfer_id(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -14138,14 +14181,21 @@ size_t MsgTransferRecord::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string timer = 3;
+  // string nickname = 2;
+  if (this->nickname().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_nickname());
+  }
+
+  // string timer = 5;
   if (this->timer().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_timer());
   }
 
-  // int64 transfer_gold = 2;
+  // int64 transfer_gold = 3;
   if (this->transfer_gold() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
@@ -14159,14 +14209,21 @@ size_t MsgTransferRecord::ByteSizeLong() const {
         this->_internal_send_user_id());
   }
 
-  // int32 recv_user_id = 4;
+  // int32 recv_user_id = 6;
   if (this->recv_user_id() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_recv_user_id());
   }
 
-  // int32 receive_state = 5;
+  // int64 transfer_id = 8;
+  if (this->transfer_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_transfer_id());
+  }
+
+  // int32 receive_state = 7;
   if (this->receive_state() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
@@ -14204,6 +14261,9 @@ void MsgTransferRecord::MergeFrom(const MsgTransferRecord& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  if (from.nickname().size() > 0) {
+    _internal_set_nickname(from._internal_nickname());
+  }
   if (from.timer().size() > 0) {
     _internal_set_timer(from._internal_timer());
   }
@@ -14215,6 +14275,9 @@ void MsgTransferRecord::MergeFrom(const MsgTransferRecord& from) {
   }
   if (from.recv_user_id() != 0) {
     _internal_set_recv_user_id(from._internal_recv_user_id());
+  }
+  if (from.transfer_id() != 0) {
+    _internal_set_transfer_id(from._internal_transfer_id());
   }
   if (from.receive_state() != 0) {
     _internal_set_receive_state(from._internal_receive_state());
@@ -14242,6 +14305,7 @@ bool MsgTransferRecord::IsInitialized() const {
 void MsgTransferRecord::InternalSwap(MsgTransferRecord* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  nickname_.Swap(&other->nickname_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   timer_.Swap(&other->timer_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(MsgTransferRecord, receive_state_)

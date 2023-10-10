@@ -383,10 +383,12 @@ message MsgTransferReceiveResp
 message MsgTransferRecord
 {
 	int32 send_user_id 	= 1;			//发送id
-	int64 transfer_gold = 2;			//操作金币
-	string timer 		= 3;			//时间戳
-	int32 recv_user_id 	= 4;			//接受id
-	int32 receive_state = 5;			//状态
+	string nickname		= 2;			//玩家昵称
+	int64 transfer_gold = 3;			//操作金币
+	string timer 		= 5;			//时间戳
+	int32 recv_user_id 	= 6;			//接受id
+	int32 receive_state = 7;			//状态 0：未领取 1:已领取
+	int64 transfer_id	= 8;			//转账id 
 };
 message MsgTransferRecordResp
 {

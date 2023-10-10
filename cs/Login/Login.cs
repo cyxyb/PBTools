@@ -124,26 +124,27 @@ public static partial class LoginReflection {
           "EQoJcmV0X3ZhbHVlGAEgASgFEhQKDHNlbmRfdXNlcl9pZBgDIAEoBRIQCghh",
           "ZGRfZ29sZBgEIAEoAxIVCg1yZWNlaXZlX3N0YXRlGAYgASgDEhMKC3RyYW5z",
           "ZmVyX2lkGAcgASgDIj4KFk1zZ1RyYW5zZmVyUmVjZWl2ZVJlc3ASEQoJcmV0",
-          "X3ZhbHVlGAEgASgFEhEKCXVzZXJfZ29sZBgCIAEoAyJ8ChFNc2dUcmFuc2Zl",
-          "clJlY29yZBIUCgxzZW5kX3VzZXJfaWQYASABKAUSFQoNdHJhbnNmZXJfZ29s",
-          "ZBgCIAEoAxINCgV0aW1lchgDIAEoCRIUCgxyZWN2X3VzZXJfaWQYBCABKAUS",
-          "FQoNcmVjZWl2ZV9zdGF0ZRgFIAEoBSI8ChVNc2dUcmFuc2ZlclJlY29yZFJl",
-          "c3ASIwoHcmVjb3JkcxgBIAMoCzISLk1zZ1RyYW5zZmVyUmVjb3JkIjAKDE1z",
-          "Z1Bob25lQ29kZRIRCglhcmVhX2NvZGUYASABKAkSDQoFcGhvbmUYAiABKAki",
-          "LAoHTXNnSXRlbRIPCgdpdGVtX2lkGAEgASgFEhAKCGl0ZW1fbnVtGAIgASgD",
-          "IicKDU1zZ1BsYXllckl0ZW0SFgoEaXRlbRgBIAMoCzIILk1zZ0l0ZW0iTAoY",
-          "TXNnVHJhbnNmZXJRdWVyeU5pY2tuYW1lEhEKCXJldF9WYWx1ZRgBIAEoBRIQ",
-          "CghuaWNrbmFtZRgCIAEoCRILCgN0YXgYAyABKAUingEKFk1zZ1N1YmFnZW50",
-          "SW5mb3JtYXRpb24SFgoOYWdlbnRfbmlja25hbWUYASABKAkSFQoNYWdlbnRf",
-          "dXNlcl9pZBgCIAEoBRISCgphZ2VudF90eXBlGAMgASgIEhYKDnRvdGFsX3No",
-          "aWZ0X3RvGAQgASgDEhYKDnRvdGFsX3JvbGxfb3V0GAUgASgDEhEKCXZpcF9s",
-          "ZXZlbBgGIAEoBSJLChxNc2dUdG90YWxTdWJhZ2VudEluZm9ybWF0aW9uEisK",
-          "CmFnZW50X2luZm8YASADKAsyFy5Nc2dTdWJhZ2VudEluZm9ybWF0aW9uIl0K",
-          "EU1zZ0JpbmRQYXJlbnRJbmZvEg8KB3VzZXJfaWQYASABKAUSDgoGYXZhdGFy",
-          "GAIgASgJEhQKDGF2YXRhcl9mcmFtZRgDIAEoBRIRCgluaWNrX25hbWUYBCAB",
-          "KAkiXgoVTXNnQmluZEludml0ZUNvZGVSZXNwEhAKCHJlc19jb2RlGAEgASgF",
-          "EhEKCXVzZXJfdHlwZRgCIAEoBRIgCgRpbmZvGAMgASgLMhIuTXNnQmluZFBh",
-          "cmVudEluZm9iBnByb3RvMw=="));
+          "X3ZhbHVlGAEgASgFEhEKCXVzZXJfZ29sZBgCIAEoAyKjAQoRTXNnVHJhbnNm",
+          "ZXJSZWNvcmQSFAoMc2VuZF91c2VyX2lkGAEgASgFEhAKCG5pY2tuYW1lGAIg",
+          "ASgJEhUKDXRyYW5zZmVyX2dvbGQYAyABKAMSDQoFdGltZXIYBSABKAkSFAoM",
+          "cmVjdl91c2VyX2lkGAYgASgFEhUKDXJlY2VpdmVfc3RhdGUYByABKAUSEwoL",
+          "dHJhbnNmZXJfaWQYCCABKAMiPAoVTXNnVHJhbnNmZXJSZWNvcmRSZXNwEiMK",
+          "B3JlY29yZHMYASADKAsyEi5Nc2dUcmFuc2ZlclJlY29yZCIwCgxNc2dQaG9u",
+          "ZUNvZGUSEQoJYXJlYV9jb2RlGAEgASgJEg0KBXBob25lGAIgASgJIiwKB01z",
+          "Z0l0ZW0SDwoHaXRlbV9pZBgBIAEoBRIQCghpdGVtX251bRgCIAEoAyInCg1N",
+          "c2dQbGF5ZXJJdGVtEhYKBGl0ZW0YASADKAsyCC5Nc2dJdGVtIkwKGE1zZ1Ry",
+          "YW5zZmVyUXVlcnlOaWNrbmFtZRIRCglyZXRfVmFsdWUYASABKAUSEAoIbmlj",
+          "a25hbWUYAiABKAkSCwoDdGF4GAMgASgFIp4BChZNc2dTdWJhZ2VudEluZm9y",
+          "bWF0aW9uEhYKDmFnZW50X25pY2tuYW1lGAEgASgJEhUKDWFnZW50X3VzZXJf",
+          "aWQYAiABKAUSEgoKYWdlbnRfdHlwZRgDIAEoCBIWCg50b3RhbF9zaGlmdF90",
+          "bxgEIAEoAxIWCg50b3RhbF9yb2xsX291dBgFIAEoAxIRCgl2aXBfbGV2ZWwY",
+          "BiABKAUiSwocTXNnVHRvdGFsU3ViYWdlbnRJbmZvcm1hdGlvbhIrCgphZ2Vu",
+          "dF9pbmZvGAEgAygLMhcuTXNnU3ViYWdlbnRJbmZvcm1hdGlvbiJdChFNc2dC",
+          "aW5kUGFyZW50SW5mbxIPCgd1c2VyX2lkGAEgASgFEg4KBmF2YXRhchgCIAEo",
+          "CRIUCgxhdmF0YXJfZnJhbWUYAyABKAUSEQoJbmlja19uYW1lGAQgASgJIl4K",
+          "FU1zZ0JpbmRJbnZpdGVDb2RlUmVzcBIQCghyZXNfY29kZRgBIAEoBRIRCgl1",
+          "c2VyX3R5cGUYAiABKAUSIAoEaW5mbxgDIAEoCzISLk1zZ0JpbmRQYXJlbnRJ",
+          "bmZvYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -187,7 +188,7 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTransferOperateResp), global::MsgTransferOperateResp.Parser, new[]{ "RetValue", "UserGold" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTransferOperateSyncResp), global::MsgTransferOperateSyncResp.Parser, new[]{ "RetValue", "SendUserId", "AddGold", "ReceiveState", "TransferId" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTransferReceiveResp), global::MsgTransferReceiveResp.Parser, new[]{ "RetValue", "UserGold" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgTransferRecord), global::MsgTransferRecord.Parser, new[]{ "SendUserId", "TransferGold", "Timer", "RecvUserId", "ReceiveState" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgTransferRecord), global::MsgTransferRecord.Parser, new[]{ "SendUserId", "Nickname", "TransferGold", "Timer", "RecvUserId", "ReceiveState", "TransferId" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTransferRecordResp), global::MsgTransferRecordResp.Parser, new[]{ "Records" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPhoneCode), global::MsgPhoneCode.Parser, new[]{ "AreaCode", "Phone" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgItem), global::MsgItem.Parser, new[]{ "ItemId", "ItemNum" }, null, null, null, null),
@@ -13068,10 +13069,12 @@ public sealed partial class MsgTransferRecord : pb::IMessage<MsgTransferRecord>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public MsgTransferRecord(MsgTransferRecord other) : this() {
     sendUserId_ = other.sendUserId_;
+    nickname_ = other.nickname_;
     transferGold_ = other.transferGold_;
     timer_ = other.timer_;
     recvUserId_ = other.recvUserId_;
     receiveState_ = other.receiveState_;
+    transferId_ = other.transferId_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -13094,8 +13097,22 @@ public sealed partial class MsgTransferRecord : pb::IMessage<MsgTransferRecord>
     }
   }
 
+  /// <summary>Field number for the "nickname" field.</summary>
+  public const int NicknameFieldNumber = 2;
+  private string nickname_ = "";
+  /// <summary>
+  ///玩家昵称
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string Nickname {
+    get { return nickname_; }
+    set {
+      nickname_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
   /// <summary>Field number for the "transfer_gold" field.</summary>
-  public const int TransferGoldFieldNumber = 2;
+  public const int TransferGoldFieldNumber = 3;
   private long transferGold_;
   /// <summary>
   ///操作金币
@@ -13109,7 +13126,7 @@ public sealed partial class MsgTransferRecord : pb::IMessage<MsgTransferRecord>
   }
 
   /// <summary>Field number for the "timer" field.</summary>
-  public const int TimerFieldNumber = 3;
+  public const int TimerFieldNumber = 5;
   private string timer_ = "";
   /// <summary>
   ///时间戳
@@ -13123,7 +13140,7 @@ public sealed partial class MsgTransferRecord : pb::IMessage<MsgTransferRecord>
   }
 
   /// <summary>Field number for the "recv_user_id" field.</summary>
-  public const int RecvUserIdFieldNumber = 4;
+  public const int RecvUserIdFieldNumber = 6;
   private int recvUserId_;
   /// <summary>
   ///接受id
@@ -13137,16 +13154,30 @@ public sealed partial class MsgTransferRecord : pb::IMessage<MsgTransferRecord>
   }
 
   /// <summary>Field number for the "receive_state" field.</summary>
-  public const int ReceiveStateFieldNumber = 5;
+  public const int ReceiveStateFieldNumber = 7;
   private int receiveState_;
   /// <summary>
-  ///状态
+  ///状态 0：未领取 1:已领取
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int ReceiveState {
     get { return receiveState_; }
     set {
       receiveState_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "transfer_id" field.</summary>
+  public const int TransferIdFieldNumber = 8;
+  private long transferId_;
+  /// <summary>
+  ///转账id 
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public long TransferId {
+    get { return transferId_; }
+    set {
+      transferId_ = value;
     }
   }
 
@@ -13164,10 +13195,12 @@ public sealed partial class MsgTransferRecord : pb::IMessage<MsgTransferRecord>
       return true;
     }
     if (SendUserId != other.SendUserId) return false;
+    if (Nickname != other.Nickname) return false;
     if (TransferGold != other.TransferGold) return false;
     if (Timer != other.Timer) return false;
     if (RecvUserId != other.RecvUserId) return false;
     if (ReceiveState != other.ReceiveState) return false;
+    if (TransferId != other.TransferId) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -13175,10 +13208,12 @@ public sealed partial class MsgTransferRecord : pb::IMessage<MsgTransferRecord>
   public override int GetHashCode() {
     int hash = 1;
     if (SendUserId != 0) hash ^= SendUserId.GetHashCode();
+    if (Nickname.Length != 0) hash ^= Nickname.GetHashCode();
     if (TransferGold != 0L) hash ^= TransferGold.GetHashCode();
     if (Timer.Length != 0) hash ^= Timer.GetHashCode();
     if (RecvUserId != 0) hash ^= RecvUserId.GetHashCode();
     if (ReceiveState != 0) hash ^= ReceiveState.GetHashCode();
+    if (TransferId != 0L) hash ^= TransferId.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -13199,21 +13234,29 @@ public sealed partial class MsgTransferRecord : pb::IMessage<MsgTransferRecord>
       output.WriteRawTag(8);
       output.WriteInt32(SendUserId);
     }
+    if (Nickname.Length != 0) {
+      output.WriteRawTag(18);
+      output.WriteString(Nickname);
+    }
     if (TransferGold != 0L) {
-      output.WriteRawTag(16);
+      output.WriteRawTag(24);
       output.WriteInt64(TransferGold);
     }
     if (Timer.Length != 0) {
-      output.WriteRawTag(26);
+      output.WriteRawTag(42);
       output.WriteString(Timer);
     }
     if (RecvUserId != 0) {
-      output.WriteRawTag(32);
+      output.WriteRawTag(48);
       output.WriteInt32(RecvUserId);
     }
     if (ReceiveState != 0) {
-      output.WriteRawTag(40);
+      output.WriteRawTag(56);
       output.WriteInt32(ReceiveState);
+    }
+    if (TransferId != 0L) {
+      output.WriteRawTag(64);
+      output.WriteInt64(TransferId);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -13228,21 +13271,29 @@ public sealed partial class MsgTransferRecord : pb::IMessage<MsgTransferRecord>
       output.WriteRawTag(8);
       output.WriteInt32(SendUserId);
     }
+    if (Nickname.Length != 0) {
+      output.WriteRawTag(18);
+      output.WriteString(Nickname);
+    }
     if (TransferGold != 0L) {
-      output.WriteRawTag(16);
+      output.WriteRawTag(24);
       output.WriteInt64(TransferGold);
     }
     if (Timer.Length != 0) {
-      output.WriteRawTag(26);
+      output.WriteRawTag(42);
       output.WriteString(Timer);
     }
     if (RecvUserId != 0) {
-      output.WriteRawTag(32);
+      output.WriteRawTag(48);
       output.WriteInt32(RecvUserId);
     }
     if (ReceiveState != 0) {
-      output.WriteRawTag(40);
+      output.WriteRawTag(56);
       output.WriteInt32(ReceiveState);
+    }
+    if (TransferId != 0L) {
+      output.WriteRawTag(64);
+      output.WriteInt64(TransferId);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
@@ -13256,6 +13307,9 @@ public sealed partial class MsgTransferRecord : pb::IMessage<MsgTransferRecord>
     if (SendUserId != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(SendUserId);
     }
+    if (Nickname.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Nickname);
+    }
     if (TransferGold != 0L) {
       size += 1 + pb::CodedOutputStream.ComputeInt64Size(TransferGold);
     }
@@ -13267,6 +13321,9 @@ public sealed partial class MsgTransferRecord : pb::IMessage<MsgTransferRecord>
     }
     if (ReceiveState != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(ReceiveState);
+    }
+    if (TransferId != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(TransferId);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -13282,6 +13339,9 @@ public sealed partial class MsgTransferRecord : pb::IMessage<MsgTransferRecord>
     if (other.SendUserId != 0) {
       SendUserId = other.SendUserId;
     }
+    if (other.Nickname.Length != 0) {
+      Nickname = other.Nickname;
+    }
     if (other.TransferGold != 0L) {
       TransferGold = other.TransferGold;
     }
@@ -13293,6 +13353,9 @@ public sealed partial class MsgTransferRecord : pb::IMessage<MsgTransferRecord>
     }
     if (other.ReceiveState != 0) {
       ReceiveState = other.ReceiveState;
+    }
+    if (other.TransferId != 0L) {
+      TransferId = other.TransferId;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -13312,20 +13375,28 @@ public sealed partial class MsgTransferRecord : pb::IMessage<MsgTransferRecord>
           SendUserId = input.ReadInt32();
           break;
         }
-        case 16: {
+        case 18: {
+          Nickname = input.ReadString();
+          break;
+        }
+        case 24: {
           TransferGold = input.ReadInt64();
           break;
         }
-        case 26: {
+        case 42: {
           Timer = input.ReadString();
           break;
         }
-        case 32: {
+        case 48: {
           RecvUserId = input.ReadInt32();
           break;
         }
-        case 40: {
+        case 56: {
           ReceiveState = input.ReadInt32();
+          break;
+        }
+        case 64: {
+          TransferId = input.ReadInt64();
           break;
         }
       }
@@ -13346,20 +13417,28 @@ public sealed partial class MsgTransferRecord : pb::IMessage<MsgTransferRecord>
           SendUserId = input.ReadInt32();
           break;
         }
-        case 16: {
+        case 18: {
+          Nickname = input.ReadString();
+          break;
+        }
+        case 24: {
           TransferGold = input.ReadInt64();
           break;
         }
-        case 26: {
+        case 42: {
           Timer = input.ReadString();
           break;
         }
-        case 32: {
+        case 48: {
           RecvUserId = input.ReadInt32();
           break;
         }
-        case 40: {
+        case 56: {
           ReceiveState = input.ReadInt32();
+          break;
+        }
+        case 64: {
+          TransferId = input.ReadInt64();
           break;
         }
       }

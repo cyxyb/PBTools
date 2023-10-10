@@ -7868,13 +7868,31 @@ class MsgTransferRecord PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kTimerFieldNumber = 3,
-    kTransferGoldFieldNumber = 2,
+    kNicknameFieldNumber = 2,
+    kTimerFieldNumber = 5,
+    kTransferGoldFieldNumber = 3,
     kSendUserIdFieldNumber = 1,
-    kRecvUserIdFieldNumber = 4,
-    kReceiveStateFieldNumber = 5,
+    kRecvUserIdFieldNumber = 6,
+    kTransferIdFieldNumber = 8,
+    kReceiveStateFieldNumber = 7,
   };
-  // string timer = 3;
+  // string nickname = 2;
+  void clear_nickname();
+  const std::string& nickname() const;
+  void set_nickname(const std::string& value);
+  void set_nickname(std::string&& value);
+  void set_nickname(const char* value);
+  void set_nickname(const char* value, size_t size);
+  std::string* mutable_nickname();
+  std::string* release_nickname();
+  void set_allocated_nickname(std::string* nickname);
+  private:
+  const std::string& _internal_nickname() const;
+  void _internal_set_nickname(const std::string& value);
+  std::string* _internal_mutable_nickname();
+  public:
+
+  // string timer = 5;
   void clear_timer();
   const std::string& timer() const;
   void set_timer(const std::string& value);
@@ -7890,7 +7908,7 @@ class MsgTransferRecord PROTOBUF_FINAL :
   std::string* _internal_mutable_timer();
   public:
 
-  // int64 transfer_gold = 2;
+  // int64 transfer_gold = 3;
   void clear_transfer_gold();
   ::PROTOBUF_NAMESPACE_ID::int64 transfer_gold() const;
   void set_transfer_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
@@ -7908,7 +7926,7 @@ class MsgTransferRecord PROTOBUF_FINAL :
   void _internal_set_send_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 recv_user_id = 4;
+  // int32 recv_user_id = 6;
   void clear_recv_user_id();
   ::PROTOBUF_NAMESPACE_ID::int32 recv_user_id() const;
   void set_recv_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -7917,7 +7935,16 @@ class MsgTransferRecord PROTOBUF_FINAL :
   void _internal_set_recv_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 receive_state = 5;
+  // int64 transfer_id = 8;
+  void clear_transfer_id();
+  ::PROTOBUF_NAMESPACE_ID::int64 transfer_id() const;
+  void set_transfer_id(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_transfer_id() const;
+  void _internal_set_transfer_id(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int32 receive_state = 7;
   void clear_receive_state();
   ::PROTOBUF_NAMESPACE_ID::int32 receive_state() const;
   void set_receive_state(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -7933,10 +7960,12 @@ class MsgTransferRecord PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr nickname_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr timer_;
   ::PROTOBUF_NAMESPACE_ID::int64 transfer_gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 send_user_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 recv_user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int64 transfer_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 receive_state_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
@@ -15273,7 +15302,68 @@ inline void MsgTransferRecord::set_send_user_id(::PROTOBUF_NAMESPACE_ID::int32 v
   // @@protoc_insertion_point(field_set:MsgTransferRecord.send_user_id)
 }
 
-// int64 transfer_gold = 2;
+// string nickname = 2;
+inline void MsgTransferRecord::clear_nickname() {
+  nickname_.ClearToEmpty();
+}
+inline const std::string& MsgTransferRecord::nickname() const {
+  // @@protoc_insertion_point(field_get:MsgTransferRecord.nickname)
+  return _internal_nickname();
+}
+inline void MsgTransferRecord::set_nickname(const std::string& value) {
+  _internal_set_nickname(value);
+  // @@protoc_insertion_point(field_set:MsgTransferRecord.nickname)
+}
+inline std::string* MsgTransferRecord::mutable_nickname() {
+  // @@protoc_insertion_point(field_mutable:MsgTransferRecord.nickname)
+  return _internal_mutable_nickname();
+}
+inline const std::string& MsgTransferRecord::_internal_nickname() const {
+  return nickname_.Get();
+}
+inline void MsgTransferRecord::_internal_set_nickname(const std::string& value) {
+  
+  nickname_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgTransferRecord::set_nickname(std::string&& value) {
+  
+  nickname_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgTransferRecord.nickname)
+}
+inline void MsgTransferRecord::set_nickname(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  nickname_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgTransferRecord.nickname)
+}
+inline void MsgTransferRecord::set_nickname(const char* value,
+    size_t size) {
+  
+  nickname_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgTransferRecord.nickname)
+}
+inline std::string* MsgTransferRecord::_internal_mutable_nickname() {
+  
+  return nickname_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgTransferRecord::release_nickname() {
+  // @@protoc_insertion_point(field_release:MsgTransferRecord.nickname)
+  return nickname_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgTransferRecord::set_allocated_nickname(std::string* nickname) {
+  if (nickname != nullptr) {
+    
+  } else {
+    
+  }
+  nickname_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), nickname,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgTransferRecord.nickname)
+}
+
+// int64 transfer_gold = 3;
 inline void MsgTransferRecord::clear_transfer_gold() {
   transfer_gold_ = PROTOBUF_LONGLONG(0);
 }
@@ -15293,7 +15383,7 @@ inline void MsgTransferRecord::set_transfer_gold(::PROTOBUF_NAMESPACE_ID::int64 
   // @@protoc_insertion_point(field_set:MsgTransferRecord.transfer_gold)
 }
 
-// string timer = 3;
+// string timer = 5;
 inline void MsgTransferRecord::clear_timer() {
   timer_.ClearToEmpty();
 }
@@ -15354,7 +15444,7 @@ inline void MsgTransferRecord::set_allocated_timer(std::string* timer) {
   // @@protoc_insertion_point(field_set_allocated:MsgTransferRecord.timer)
 }
 
-// int32 recv_user_id = 4;
+// int32 recv_user_id = 6;
 inline void MsgTransferRecord::clear_recv_user_id() {
   recv_user_id_ = 0;
 }
@@ -15374,7 +15464,7 @@ inline void MsgTransferRecord::set_recv_user_id(::PROTOBUF_NAMESPACE_ID::int32 v
   // @@protoc_insertion_point(field_set:MsgTransferRecord.recv_user_id)
 }
 
-// int32 receive_state = 5;
+// int32 receive_state = 7;
 inline void MsgTransferRecord::clear_receive_state() {
   receive_state_ = 0;
 }
@@ -15392,6 +15482,26 @@ inline void MsgTransferRecord::_internal_set_receive_state(::PROTOBUF_NAMESPACE_
 inline void MsgTransferRecord::set_receive_state(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_receive_state(value);
   // @@protoc_insertion_point(field_set:MsgTransferRecord.receive_state)
+}
+
+// int64 transfer_id = 8;
+inline void MsgTransferRecord::clear_transfer_id() {
+  transfer_id_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgTransferRecord::_internal_transfer_id() const {
+  return transfer_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgTransferRecord::transfer_id() const {
+  // @@protoc_insertion_point(field_get:MsgTransferRecord.transfer_id)
+  return _internal_transfer_id();
+}
+inline void MsgTransferRecord::_internal_set_transfer_id(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  transfer_id_ = value;
+}
+inline void MsgTransferRecord::set_transfer_id(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_transfer_id(value);
+  // @@protoc_insertion_point(field_set:MsgTransferRecord.transfer_id)
 }
 
 // -------------------------------------------------------------------
