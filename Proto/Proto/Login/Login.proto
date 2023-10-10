@@ -355,12 +355,14 @@ message MsgTopListResp
 };
 
 
-//银行转账
+//银行转账返回
 message MsgTransferOperateResp
 {
 	int32 ret_value = 1;				//返回值 0操作成功 非零操作失败：多语言码
 	int64 user_gold = 2;				//玩家金币
 };
+
+//转账通知
 message MsgTransferOperateSyncResp
 {
 	int32 ret_value 			= 1;		//返回值 0：成功 非零：多语言码			
@@ -369,6 +371,8 @@ message MsgTransferOperateSyncResp
 	int64 receive_state 		= 6;		//领取状态 0：未领取 1:已领取
 	int64 transfer_id			= 7;		//转账id 
 }
+
+//领取返回
 message MsgTransferReceiveResp
 {
 	int32 ret_value 	= 1;				//领取返回值 0:成功 失败：多语言码

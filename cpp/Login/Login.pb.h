@@ -46,7 +46,7 @@ struct TableStruct_Login_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[49]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[50]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -74,6 +74,9 @@ extern MsgBindInviteCodeRespDefaultTypeInternal _MsgBindInviteCodeResp_default_i
 class MsgBindParentData;
 class MsgBindParentDataDefaultTypeInternal;
 extern MsgBindParentDataDefaultTypeInternal _MsgBindParentData_default_instance_;
+class MsgBindParentInfo;
+class MsgBindParentInfoDefaultTypeInternal;
+extern MsgBindParentInfoDefaultTypeInternal _MsgBindParentInfo_default_instance_;
 class MsgBindPhone;
 class MsgBindPhoneDefaultTypeInternal;
 extern MsgBindPhoneDefaultTypeInternal _MsgBindPhone_default_instance_;
@@ -208,6 +211,7 @@ template<> ::MsgActiveInfoSCPick* Arena::CreateMaybeMessage<::MsgActiveInfoSCPic
 template<> ::MsgActiveInfoSCRet* Arena::CreateMaybeMessage<::MsgActiveInfoSCRet>(Arena*);
 template<> ::MsgBindInviteCodeResp* Arena::CreateMaybeMessage<::MsgBindInviteCodeResp>(Arena*);
 template<> ::MsgBindParentData* Arena::CreateMaybeMessage<::MsgBindParentData>(Arena*);
+template<> ::MsgBindParentInfo* Arena::CreateMaybeMessage<::MsgBindParentInfo>(Arena*);
 template<> ::MsgBindPhone* Arena::CreateMaybeMessage<::MsgBindPhone>(Arena*);
 template<> ::MsgCheckInInfo* Arena::CreateMaybeMessage<::MsgCheckInInfo>(Arena*);
 template<> ::MsgCommonKV* Arena::CreateMaybeMessage<::MsgCommonKV>(Arena*);
@@ -9045,6 +9049,189 @@ class MsgTtotalSubagentInformation PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
+class MsgBindParentInfo PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgBindParentInfo) */ {
+ public:
+  inline MsgBindParentInfo() : MsgBindParentInfo(nullptr) {}
+  virtual ~MsgBindParentInfo();
+
+  MsgBindParentInfo(const MsgBindParentInfo& from);
+  MsgBindParentInfo(MsgBindParentInfo&& from) noexcept
+    : MsgBindParentInfo() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgBindParentInfo& operator=(const MsgBindParentInfo& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgBindParentInfo& operator=(MsgBindParentInfo&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgBindParentInfo& default_instance();
+
+  static inline const MsgBindParentInfo* internal_default_instance() {
+    return reinterpret_cast<const MsgBindParentInfo*>(
+               &_MsgBindParentInfo_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    48;
+
+  friend void swap(MsgBindParentInfo& a, MsgBindParentInfo& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgBindParentInfo* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgBindParentInfo* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgBindParentInfo* New() const final {
+    return CreateMaybeMessage<MsgBindParentInfo>(nullptr);
+  }
+
+  MsgBindParentInfo* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgBindParentInfo>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgBindParentInfo& from);
+  void MergeFrom(const MsgBindParentInfo& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgBindParentInfo* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgBindParentInfo";
+  }
+  protected:
+  explicit MsgBindParentInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kAvatarFieldNumber = 2,
+    kNickNameFieldNumber = 4,
+    kUserIdFieldNumber = 1,
+    kAvatarFrameFieldNumber = 3,
+  };
+  // string avatar = 2;
+  void clear_avatar();
+  const std::string& avatar() const;
+  void set_avatar(const std::string& value);
+  void set_avatar(std::string&& value);
+  void set_avatar(const char* value);
+  void set_avatar(const char* value, size_t size);
+  std::string* mutable_avatar();
+  std::string* release_avatar();
+  void set_allocated_avatar(std::string* avatar);
+  private:
+  const std::string& _internal_avatar() const;
+  void _internal_set_avatar(const std::string& value);
+  std::string* _internal_mutable_avatar();
+  public:
+
+  // string nick_name = 4;
+  void clear_nick_name();
+  const std::string& nick_name() const;
+  void set_nick_name(const std::string& value);
+  void set_nick_name(std::string&& value);
+  void set_nick_name(const char* value);
+  void set_nick_name(const char* value, size_t size);
+  std::string* mutable_nick_name();
+  std::string* release_nick_name();
+  void set_allocated_nick_name(std::string* nick_name);
+  private:
+  const std::string& _internal_nick_name() const;
+  void _internal_set_nick_name(const std::string& value);
+  std::string* _internal_mutable_nick_name();
+  public:
+
+  // int32 user_id = 1;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 avatar_frame = 3;
+  void clear_avatar_frame();
+  ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame() const;
+  void set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_avatar_frame() const;
+  void _internal_set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgBindParentInfo)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr avatar_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr nick_name_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
+// -------------------------------------------------------------------
+
 class MsgBindInviteCodeResp PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgBindInviteCodeResp) */ {
  public:
@@ -9086,7 +9273,7 @@ class MsgBindInviteCodeResp PROTOBUF_FINAL :
                &_MsgBindInviteCodeResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    48;
+    49;
 
   friend void swap(MsgBindInviteCodeResp& a, MsgBindInviteCodeResp& b) {
     a.Swap(&b);
@@ -9157,9 +9344,28 @@ class MsgBindInviteCodeResp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
+    kInfoFieldNumber = 3,
     kResCodeFieldNumber = 1,
     kUserTypeFieldNumber = 2,
   };
+  // .MsgBindParentInfo info = 3;
+  bool has_info() const;
+  private:
+  bool _internal_has_info() const;
+  public:
+  void clear_info();
+  const ::MsgBindParentInfo& info() const;
+  ::MsgBindParentInfo* release_info();
+  ::MsgBindParentInfo* mutable_info();
+  void set_allocated_info(::MsgBindParentInfo* info);
+  private:
+  const ::MsgBindParentInfo& _internal_info() const;
+  ::MsgBindParentInfo* _internal_mutable_info();
+  public:
+  void unsafe_arena_set_allocated_info(
+      ::MsgBindParentInfo* info);
+  ::MsgBindParentInfo* unsafe_arena_release_info();
+
   // int32 res_code = 1;
   void clear_res_code();
   ::PROTOBUF_NAMESPACE_ID::int32 res_code() const;
@@ -9185,6 +9391,7 @@ class MsgBindInviteCodeResp PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::MsgBindParentInfo* info_;
   ::PROTOBUF_NAMESPACE_ID::int32 res_code_;
   ::PROTOBUF_NAMESPACE_ID::int32 user_type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
@@ -15758,6 +15965,172 @@ MsgTtotalSubagentInformation::agent_info() const {
 
 // -------------------------------------------------------------------
 
+// MsgBindParentInfo
+
+// int32 user_id = 1;
+inline void MsgBindParentInfo::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBindParentInfo::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBindParentInfo::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgBindParentInfo.user_id)
+  return _internal_user_id();
+}
+inline void MsgBindParentInfo::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgBindParentInfo::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgBindParentInfo.user_id)
+}
+
+// string avatar = 2;
+inline void MsgBindParentInfo::clear_avatar() {
+  avatar_.ClearToEmpty();
+}
+inline const std::string& MsgBindParentInfo::avatar() const {
+  // @@protoc_insertion_point(field_get:MsgBindParentInfo.avatar)
+  return _internal_avatar();
+}
+inline void MsgBindParentInfo::set_avatar(const std::string& value) {
+  _internal_set_avatar(value);
+  // @@protoc_insertion_point(field_set:MsgBindParentInfo.avatar)
+}
+inline std::string* MsgBindParentInfo::mutable_avatar() {
+  // @@protoc_insertion_point(field_mutable:MsgBindParentInfo.avatar)
+  return _internal_mutable_avatar();
+}
+inline const std::string& MsgBindParentInfo::_internal_avatar() const {
+  return avatar_.Get();
+}
+inline void MsgBindParentInfo::_internal_set_avatar(const std::string& value) {
+  
+  avatar_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgBindParentInfo::set_avatar(std::string&& value) {
+  
+  avatar_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgBindParentInfo.avatar)
+}
+inline void MsgBindParentInfo::set_avatar(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  avatar_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgBindParentInfo.avatar)
+}
+inline void MsgBindParentInfo::set_avatar(const char* value,
+    size_t size) {
+  
+  avatar_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgBindParentInfo.avatar)
+}
+inline std::string* MsgBindParentInfo::_internal_mutable_avatar() {
+  
+  return avatar_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgBindParentInfo::release_avatar() {
+  // @@protoc_insertion_point(field_release:MsgBindParentInfo.avatar)
+  return avatar_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgBindParentInfo::set_allocated_avatar(std::string* avatar) {
+  if (avatar != nullptr) {
+    
+  } else {
+    
+  }
+  avatar_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), avatar,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgBindParentInfo.avatar)
+}
+
+// int32 avatar_frame = 3;
+inline void MsgBindParentInfo::clear_avatar_frame() {
+  avatar_frame_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBindParentInfo::_internal_avatar_frame() const {
+  return avatar_frame_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBindParentInfo::avatar_frame() const {
+  // @@protoc_insertion_point(field_get:MsgBindParentInfo.avatar_frame)
+  return _internal_avatar_frame();
+}
+inline void MsgBindParentInfo::_internal_set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  avatar_frame_ = value;
+}
+inline void MsgBindParentInfo::set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_avatar_frame(value);
+  // @@protoc_insertion_point(field_set:MsgBindParentInfo.avatar_frame)
+}
+
+// string nick_name = 4;
+inline void MsgBindParentInfo::clear_nick_name() {
+  nick_name_.ClearToEmpty();
+}
+inline const std::string& MsgBindParentInfo::nick_name() const {
+  // @@protoc_insertion_point(field_get:MsgBindParentInfo.nick_name)
+  return _internal_nick_name();
+}
+inline void MsgBindParentInfo::set_nick_name(const std::string& value) {
+  _internal_set_nick_name(value);
+  // @@protoc_insertion_point(field_set:MsgBindParentInfo.nick_name)
+}
+inline std::string* MsgBindParentInfo::mutable_nick_name() {
+  // @@protoc_insertion_point(field_mutable:MsgBindParentInfo.nick_name)
+  return _internal_mutable_nick_name();
+}
+inline const std::string& MsgBindParentInfo::_internal_nick_name() const {
+  return nick_name_.Get();
+}
+inline void MsgBindParentInfo::_internal_set_nick_name(const std::string& value) {
+  
+  nick_name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgBindParentInfo::set_nick_name(std::string&& value) {
+  
+  nick_name_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgBindParentInfo.nick_name)
+}
+inline void MsgBindParentInfo::set_nick_name(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  nick_name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgBindParentInfo.nick_name)
+}
+inline void MsgBindParentInfo::set_nick_name(const char* value,
+    size_t size) {
+  
+  nick_name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgBindParentInfo.nick_name)
+}
+inline std::string* MsgBindParentInfo::_internal_mutable_nick_name() {
+  
+  return nick_name_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgBindParentInfo::release_nick_name() {
+  // @@protoc_insertion_point(field_release:MsgBindParentInfo.nick_name)
+  return nick_name_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgBindParentInfo::set_allocated_nick_name(std::string* nick_name) {
+  if (nick_name != nullptr) {
+    
+  } else {
+    
+  }
+  nick_name_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), nick_name,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgBindParentInfo.nick_name)
+}
+
+// -------------------------------------------------------------------
+
 // MsgBindInviteCodeResp
 
 // int32 res_code = 1;
@@ -15800,9 +16173,94 @@ inline void MsgBindInviteCodeResp::set_user_type(::PROTOBUF_NAMESPACE_ID::int32 
   // @@protoc_insertion_point(field_set:MsgBindInviteCodeResp.user_type)
 }
 
+// .MsgBindParentInfo info = 3;
+inline bool MsgBindInviteCodeResp::_internal_has_info() const {
+  return this != internal_default_instance() && info_ != nullptr;
+}
+inline bool MsgBindInviteCodeResp::has_info() const {
+  return _internal_has_info();
+}
+inline void MsgBindInviteCodeResp::clear_info() {
+  if (GetArena() == nullptr && info_ != nullptr) {
+    delete info_;
+  }
+  info_ = nullptr;
+}
+inline const ::MsgBindParentInfo& MsgBindInviteCodeResp::_internal_info() const {
+  const ::MsgBindParentInfo* p = info_;
+  return p != nullptr ? *p : reinterpret_cast<const ::MsgBindParentInfo&>(
+      ::_MsgBindParentInfo_default_instance_);
+}
+inline const ::MsgBindParentInfo& MsgBindInviteCodeResp::info() const {
+  // @@protoc_insertion_point(field_get:MsgBindInviteCodeResp.info)
+  return _internal_info();
+}
+inline void MsgBindInviteCodeResp::unsafe_arena_set_allocated_info(
+    ::MsgBindParentInfo* info) {
+  if (GetArena() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(info_);
+  }
+  info_ = info;
+  if (info) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:MsgBindInviteCodeResp.info)
+}
+inline ::MsgBindParentInfo* MsgBindInviteCodeResp::release_info() {
+  
+  ::MsgBindParentInfo* temp = info_;
+  info_ = nullptr;
+  if (GetArena() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+  return temp;
+}
+inline ::MsgBindParentInfo* MsgBindInviteCodeResp::unsafe_arena_release_info() {
+  // @@protoc_insertion_point(field_release:MsgBindInviteCodeResp.info)
+  
+  ::MsgBindParentInfo* temp = info_;
+  info_ = nullptr;
+  return temp;
+}
+inline ::MsgBindParentInfo* MsgBindInviteCodeResp::_internal_mutable_info() {
+  
+  if (info_ == nullptr) {
+    auto* p = CreateMaybeMessage<::MsgBindParentInfo>(GetArena());
+    info_ = p;
+  }
+  return info_;
+}
+inline ::MsgBindParentInfo* MsgBindInviteCodeResp::mutable_info() {
+  // @@protoc_insertion_point(field_mutable:MsgBindInviteCodeResp.info)
+  return _internal_mutable_info();
+}
+inline void MsgBindInviteCodeResp::set_allocated_info(::MsgBindParentInfo* info) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  if (message_arena == nullptr) {
+    delete info_;
+  }
+  if (info) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(info);
+    if (message_arena != submessage_arena) {
+      info = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, info, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  info_ = info;
+  // @@protoc_insertion_point(field_set_allocated:MsgBindInviteCodeResp.info)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
