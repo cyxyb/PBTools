@@ -461,7 +461,7 @@ public enum EMsgIDLogin {
   /// </summary>
   [pbr::OriginalName("MsgIDTransfer_TransferOperateResp")] MsgIdtransferTransferOperateResp = 77,
   /// <summary>
-  ///转账领取(MsgCommonN32)
+  ///转账领取(MsgCommonN64)
   /// </summary>
   [pbr::OriginalName("MsgIDTransfer_TransferReceive")] MsgIdtransferTransferReceive = 78,
   /// <summary>
