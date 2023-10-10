@@ -85,8 +85,9 @@ message AKMsgTableState
 
 message AKMsgHandCards
 {
-	repeated int32		cards			= 1;	//手牌
-	repeated int32		change_cards	= 2;	//变动后的手牌
+	int32				card_type		= 1;	//牌型
+	repeated int32		cards			= 2;	//手牌
+	repeated int32		change_cards	= 3;	//变动后的手牌
 }
 
 message AKMsgPlayerInfo
@@ -96,10 +97,9 @@ message AKMsgPlayerInfo
 	int32				play_status		= 3;	//玩家状态
 	int64				player_bet		= 4;	//玩家投注总和
 	int64				last_bet		= 5;	//上次下注
-	int32				card_type		= 6;	//牌型
-	int64				gold			= 7;	//自己的金币，别人的是空
-	int64				win_gold		= 8;	//输赢分
-	AKMsgHandCards		handls			= 9;	//手牌
+	int64				gold			= 6;	//自己的金币，别人的是空
+	int64				win_gold		= 7;	//输赢分
+	AKMsgHandCards		handl_cards		= 8;	//手牌
 }
 
 
@@ -171,7 +171,7 @@ message AKMsgLookCardResp
 	int32				card_type		= 2;	//牌型
 	int32				cur_chair_id	= 3;	//玩家椅子号
 	int32				new_act			= 4;	//最新操作码
-	repeated int32		cards			= 5;	//手牌
+	AKMsgHandCards		handl_cards		= 5;	//手牌
 }
 
 message AKMsgAddBetResp
@@ -198,8 +198,8 @@ message AKMsgCompareCardRetResp
 	int32				passive_id		= 5;	//被比椅子号
 	int32				compare_type	= 6;	//比牌玩家牌型
 	int32				passive_type	= 7;	//被比玩家牌型
-	repeated int32		compare_cards	= 8;	//比牌玩家手牌
-	repeated int32		passive_cards	= 9;	//被比玩家手牌
+	AKMsgHandCards		compare_cards	= 8;	//比牌玩家手牌
+	AKMsgHandCards		passive_cards	= 9;	//被比玩家手牌
 	bool				is_agree		= 10;	//同意否
 }                                           
 

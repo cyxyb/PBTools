@@ -539,10 +539,11 @@ class AKMsgHandCards PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kCardsFieldNumber = 1,
-    kChangeCardsFieldNumber = 2,
+    kCardsFieldNumber = 2,
+    kChangeCardsFieldNumber = 3,
+    kCardTypeFieldNumber = 1,
   };
-  // repeated int32 cards = 1;
+  // repeated int32 cards = 2;
   int cards_size() const;
   private:
   int _internal_cards_size() const;
@@ -564,7 +565,7 @@ class AKMsgHandCards PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_cards();
 
-  // repeated int32 change_cards = 2;
+  // repeated int32 change_cards = 3;
   int change_cards_size() const;
   private:
   int _internal_change_cards_size() const;
@@ -586,6 +587,15 @@ class AKMsgHandCards PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_change_cards();
 
+  // int32 card_type = 1;
+  void clear_card_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 card_type() const;
+  void set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_card_type() const;
+  void _internal_set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:TeenPatti_AK47.AKMsgHandCards)
  private:
   class _Internal;
@@ -597,6 +607,7 @@ class AKMsgHandCards PROTOBUF_FINAL :
   mutable std::atomic<int> _cards_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > change_cards_;
   mutable std::atomic<int> _change_cards_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::int32 card_type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_TeenPatti_5fAK47_2eproto;
 };
@@ -714,33 +725,32 @@ class AKMsgPlayerInfo PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kHandlsFieldNumber = 9,
+    kHandlCardsFieldNumber = 8,
     kChairIdFieldNumber = 1,
     kMingZhuFieldNumber = 2,
     kPlayerBetFieldNumber = 4,
-    kPlayStatusFieldNumber = 3,
-    kCardTypeFieldNumber = 6,
     kLastBetFieldNumber = 5,
-    kGoldFieldNumber = 7,
-    kWinGoldFieldNumber = 8,
+    kGoldFieldNumber = 6,
+    kWinGoldFieldNumber = 7,
+    kPlayStatusFieldNumber = 3,
   };
-  // .TeenPatti_AK47.AKMsgHandCards handls = 9;
-  bool has_handls() const;
+  // .TeenPatti_AK47.AKMsgHandCards handl_cards = 8;
+  bool has_handl_cards() const;
   private:
-  bool _internal_has_handls() const;
+  bool _internal_has_handl_cards() const;
   public:
-  void clear_handls();
-  const ::TeenPatti_AK47::AKMsgHandCards& handls() const;
-  ::TeenPatti_AK47::AKMsgHandCards* release_handls();
-  ::TeenPatti_AK47::AKMsgHandCards* mutable_handls();
-  void set_allocated_handls(::TeenPatti_AK47::AKMsgHandCards* handls);
+  void clear_handl_cards();
+  const ::TeenPatti_AK47::AKMsgHandCards& handl_cards() const;
+  ::TeenPatti_AK47::AKMsgHandCards* release_handl_cards();
+  ::TeenPatti_AK47::AKMsgHandCards* mutable_handl_cards();
+  void set_allocated_handl_cards(::TeenPatti_AK47::AKMsgHandCards* handl_cards);
   private:
-  const ::TeenPatti_AK47::AKMsgHandCards& _internal_handls() const;
-  ::TeenPatti_AK47::AKMsgHandCards* _internal_mutable_handls();
+  const ::TeenPatti_AK47::AKMsgHandCards& _internal_handl_cards() const;
+  ::TeenPatti_AK47::AKMsgHandCards* _internal_mutable_handl_cards();
   public:
-  void unsafe_arena_set_allocated_handls(
-      ::TeenPatti_AK47::AKMsgHandCards* handls);
-  ::TeenPatti_AK47::AKMsgHandCards* unsafe_arena_release_handls();
+  void unsafe_arena_set_allocated_handl_cards(
+      ::TeenPatti_AK47::AKMsgHandCards* handl_cards);
+  ::TeenPatti_AK47::AKMsgHandCards* unsafe_arena_release_handl_cards();
 
   // int32 chair_id = 1;
   void clear_chair_id();
@@ -769,24 +779,6 @@ class AKMsgPlayerInfo PROTOBUF_FINAL :
   void _internal_set_player_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int32 play_status = 3;
-  void clear_play_status();
-  ::PROTOBUF_NAMESPACE_ID::int32 play_status() const;
-  void set_play_status(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_play_status() const;
-  void _internal_set_play_status(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 card_type = 6;
-  void clear_card_type();
-  ::PROTOBUF_NAMESPACE_ID::int32 card_type() const;
-  void set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_card_type() const;
-  void _internal_set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
   // int64 last_bet = 5;
   void clear_last_bet();
   ::PROTOBUF_NAMESPACE_ID::int64 last_bet() const;
@@ -796,7 +788,7 @@ class AKMsgPlayerInfo PROTOBUF_FINAL :
   void _internal_set_last_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int64 gold = 7;
+  // int64 gold = 6;
   void clear_gold();
   ::PROTOBUF_NAMESPACE_ID::int64 gold() const;
   void set_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
@@ -805,13 +797,22 @@ class AKMsgPlayerInfo PROTOBUF_FINAL :
   void _internal_set_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int64 win_gold = 8;
+  // int64 win_gold = 7;
   void clear_win_gold();
   ::PROTOBUF_NAMESPACE_ID::int64 win_gold() const;
   void set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
   private:
   ::PROTOBUF_NAMESPACE_ID::int64 _internal_win_gold() const;
   void _internal_set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int32 play_status = 3;
+  void clear_play_status();
+  ::PROTOBUF_NAMESPACE_ID::int32 play_status() const;
+  void set_play_status(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_play_status() const;
+  void _internal_set_play_status(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:TeenPatti_AK47.AKMsgPlayerInfo)
@@ -821,15 +822,14 @@ class AKMsgPlayerInfo PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::TeenPatti_AK47::AKMsgHandCards* handls_;
+  ::TeenPatti_AK47::AKMsgHandCards* handl_cards_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   bool ming_zhu_;
   ::PROTOBUF_NAMESPACE_ID::int64 player_bet_;
-  ::PROTOBUF_NAMESPACE_ID::int32 play_status_;
-  ::PROTOBUF_NAMESPACE_ID::int32 card_type_;
   ::PROTOBUF_NAMESPACE_ID::int64 last_bet_;
   ::PROTOBUF_NAMESPACE_ID::int64 gold_;
   ::PROTOBUF_NAMESPACE_ID::int64 win_gold_;
+  ::PROTOBUF_NAMESPACE_ID::int32 play_status_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_TeenPatti_5fAK47_2eproto;
 };
@@ -1947,33 +1947,29 @@ class AKMsgLookCardResp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kCardsFieldNumber = 5,
+    kHandlCardsFieldNumber = 5,
     kChairIdFieldNumber = 1,
     kCardTypeFieldNumber = 2,
     kCurChairIdFieldNumber = 3,
     kNewActFieldNumber = 4,
   };
-  // repeated int32 cards = 5;
-  int cards_size() const;
+  // .TeenPatti_AK47.AKMsgHandCards handl_cards = 5;
+  bool has_handl_cards() const;
   private:
-  int _internal_cards_size() const;
+  bool _internal_has_handl_cards() const;
   public:
-  void clear_cards();
+  void clear_handl_cards();
+  const ::TeenPatti_AK47::AKMsgHandCards& handl_cards() const;
+  ::TeenPatti_AK47::AKMsgHandCards* release_handl_cards();
+  ::TeenPatti_AK47::AKMsgHandCards* mutable_handl_cards();
+  void set_allocated_handl_cards(::TeenPatti_AK47::AKMsgHandCards* handl_cards);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_cards(int index) const;
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      _internal_cards() const;
-  void _internal_add_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      _internal_mutable_cards();
+  const ::TeenPatti_AK47::AKMsgHandCards& _internal_handl_cards() const;
+  ::TeenPatti_AK47::AKMsgHandCards* _internal_mutable_handl_cards();
   public:
-  ::PROTOBUF_NAMESPACE_ID::int32 cards(int index) const;
-  void set_cards(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
-  void add_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      cards() const;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      mutable_cards();
+  void unsafe_arena_set_allocated_handl_cards(
+      ::TeenPatti_AK47::AKMsgHandCards* handl_cards);
+  ::TeenPatti_AK47::AKMsgHandCards* unsafe_arena_release_handl_cards();
 
   // int32 chair_id = 1;
   void clear_chair_id();
@@ -2018,8 +2014,7 @@ class AKMsgLookCardResp PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > cards_;
-  mutable std::atomic<int> _cards_cached_byte_size_;
+  ::TeenPatti_AK47::AKMsgHandCards* handl_cards_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 card_type_;
   ::PROTOBUF_NAMESPACE_ID::int32 cur_chair_id_;
@@ -2457,49 +2452,41 @@ class AKMsgCompareCardRetResp PROTOBUF_FINAL :
     kPassiveTypeFieldNumber = 7,
     kIsAgreeFieldNumber = 10,
   };
-  // repeated int32 compare_cards = 8;
-  int compare_cards_size() const;
+  // .TeenPatti_AK47.AKMsgHandCards compare_cards = 8;
+  bool has_compare_cards() const;
   private:
-  int _internal_compare_cards_size() const;
+  bool _internal_has_compare_cards() const;
   public:
   void clear_compare_cards();
+  const ::TeenPatti_AK47::AKMsgHandCards& compare_cards() const;
+  ::TeenPatti_AK47::AKMsgHandCards* release_compare_cards();
+  ::TeenPatti_AK47::AKMsgHandCards* mutable_compare_cards();
+  void set_allocated_compare_cards(::TeenPatti_AK47::AKMsgHandCards* compare_cards);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_compare_cards(int index) const;
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      _internal_compare_cards() const;
-  void _internal_add_compare_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      _internal_mutable_compare_cards();
+  const ::TeenPatti_AK47::AKMsgHandCards& _internal_compare_cards() const;
+  ::TeenPatti_AK47::AKMsgHandCards* _internal_mutable_compare_cards();
   public:
-  ::PROTOBUF_NAMESPACE_ID::int32 compare_cards(int index) const;
-  void set_compare_cards(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
-  void add_compare_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      compare_cards() const;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      mutable_compare_cards();
+  void unsafe_arena_set_allocated_compare_cards(
+      ::TeenPatti_AK47::AKMsgHandCards* compare_cards);
+  ::TeenPatti_AK47::AKMsgHandCards* unsafe_arena_release_compare_cards();
 
-  // repeated int32 passive_cards = 9;
-  int passive_cards_size() const;
+  // .TeenPatti_AK47.AKMsgHandCards passive_cards = 9;
+  bool has_passive_cards() const;
   private:
-  int _internal_passive_cards_size() const;
+  bool _internal_has_passive_cards() const;
   public:
   void clear_passive_cards();
+  const ::TeenPatti_AK47::AKMsgHandCards& passive_cards() const;
+  ::TeenPatti_AK47::AKMsgHandCards* release_passive_cards();
+  ::TeenPatti_AK47::AKMsgHandCards* mutable_passive_cards();
+  void set_allocated_passive_cards(::TeenPatti_AK47::AKMsgHandCards* passive_cards);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_passive_cards(int index) const;
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      _internal_passive_cards() const;
-  void _internal_add_passive_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      _internal_mutable_passive_cards();
+  const ::TeenPatti_AK47::AKMsgHandCards& _internal_passive_cards() const;
+  ::TeenPatti_AK47::AKMsgHandCards* _internal_mutable_passive_cards();
   public:
-  ::PROTOBUF_NAMESPACE_ID::int32 passive_cards(int index) const;
-  void set_passive_cards(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
-  void add_passive_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      passive_cards() const;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      mutable_passive_cards();
+  void unsafe_arena_set_allocated_passive_cards(
+      ::TeenPatti_AK47::AKMsgHandCards* passive_cards);
+  ::TeenPatti_AK47::AKMsgHandCards* unsafe_arena_release_passive_cards();
 
   // int32 current_chair_id = 1;
   void clear_current_chair_id();
@@ -2580,10 +2567,8 @@ class AKMsgCompareCardRetResp PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > compare_cards_;
-  mutable std::atomic<int> _compare_cards_cached_byte_size_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > passive_cards_;
-  mutable std::atomic<int> _passive_cards_cached_byte_size_;
+  ::TeenPatti_AK47::AKMsgHandCards* compare_cards_;
+  ::TeenPatti_AK47::AKMsgHandCards* passive_cards_;
   ::PROTOBUF_NAMESPACE_ID::int32 current_chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 current_act_;
   ::PROTOBUF_NAMESPACE_ID::int32 lost_id_;
@@ -3014,7 +2999,27 @@ inline void AKMsgTableState::set_out_ime(::PROTOBUF_NAMESPACE_ID::int32 value) {
 
 // AKMsgHandCards
 
-// repeated int32 cards = 1;
+// int32 card_type = 1;
+inline void AKMsgHandCards::clear_card_type() {
+  card_type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 AKMsgHandCards::_internal_card_type() const {
+  return card_type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 AKMsgHandCards::card_type() const {
+  // @@protoc_insertion_point(field_get:TeenPatti_AK47.AKMsgHandCards.card_type)
+  return _internal_card_type();
+}
+inline void AKMsgHandCards::_internal_set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  card_type_ = value;
+}
+inline void AKMsgHandCards::set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_card_type(value);
+  // @@protoc_insertion_point(field_set:TeenPatti_AK47.AKMsgHandCards.card_type)
+}
+
+// repeated int32 cards = 2;
 inline int AKMsgHandCards::_internal_cards_size() const {
   return cards_.size();
 }
@@ -3061,7 +3066,7 @@ AKMsgHandCards::mutable_cards() {
   return _internal_mutable_cards();
 }
 
-// repeated int32 change_cards = 2;
+// repeated int32 change_cards = 3;
 inline int AKMsgHandCards::_internal_change_cards_size() const {
   return change_cards_.size();
 }
@@ -3212,27 +3217,7 @@ inline void AKMsgPlayerInfo::set_last_bet(::PROTOBUF_NAMESPACE_ID::int64 value) 
   // @@protoc_insertion_point(field_set:TeenPatti_AK47.AKMsgPlayerInfo.last_bet)
 }
 
-// int32 card_type = 6;
-inline void AKMsgPlayerInfo::clear_card_type() {
-  card_type_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 AKMsgPlayerInfo::_internal_card_type() const {
-  return card_type_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 AKMsgPlayerInfo::card_type() const {
-  // @@protoc_insertion_point(field_get:TeenPatti_AK47.AKMsgPlayerInfo.card_type)
-  return _internal_card_type();
-}
-inline void AKMsgPlayerInfo::_internal_set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  card_type_ = value;
-}
-inline void AKMsgPlayerInfo::set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_card_type(value);
-  // @@protoc_insertion_point(field_set:TeenPatti_AK47.AKMsgPlayerInfo.card_type)
-}
-
-// int64 gold = 7;
+// int64 gold = 6;
 inline void AKMsgPlayerInfo::clear_gold() {
   gold_ = PROTOBUF_LONGLONG(0);
 }
@@ -3252,7 +3237,7 @@ inline void AKMsgPlayerInfo::set_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
   // @@protoc_insertion_point(field_set:TeenPatti_AK47.AKMsgPlayerInfo.gold)
 }
 
-// int64 win_gold = 8;
+// int64 win_gold = 7;
 inline void AKMsgPlayerInfo::clear_win_gold() {
   win_gold_ = PROTOBUF_LONGLONG(0);
 }
@@ -3272,87 +3257,87 @@ inline void AKMsgPlayerInfo::set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value) 
   // @@protoc_insertion_point(field_set:TeenPatti_AK47.AKMsgPlayerInfo.win_gold)
 }
 
-// .TeenPatti_AK47.AKMsgHandCards handls = 9;
-inline bool AKMsgPlayerInfo::_internal_has_handls() const {
-  return this != internal_default_instance() && handls_ != nullptr;
+// .TeenPatti_AK47.AKMsgHandCards handl_cards = 8;
+inline bool AKMsgPlayerInfo::_internal_has_handl_cards() const {
+  return this != internal_default_instance() && handl_cards_ != nullptr;
 }
-inline bool AKMsgPlayerInfo::has_handls() const {
-  return _internal_has_handls();
+inline bool AKMsgPlayerInfo::has_handl_cards() const {
+  return _internal_has_handl_cards();
 }
-inline void AKMsgPlayerInfo::clear_handls() {
-  if (GetArena() == nullptr && handls_ != nullptr) {
-    delete handls_;
+inline void AKMsgPlayerInfo::clear_handl_cards() {
+  if (GetArena() == nullptr && handl_cards_ != nullptr) {
+    delete handl_cards_;
   }
-  handls_ = nullptr;
+  handl_cards_ = nullptr;
 }
-inline const ::TeenPatti_AK47::AKMsgHandCards& AKMsgPlayerInfo::_internal_handls() const {
-  const ::TeenPatti_AK47::AKMsgHandCards* p = handls_;
+inline const ::TeenPatti_AK47::AKMsgHandCards& AKMsgPlayerInfo::_internal_handl_cards() const {
+  const ::TeenPatti_AK47::AKMsgHandCards* p = handl_cards_;
   return p != nullptr ? *p : reinterpret_cast<const ::TeenPatti_AK47::AKMsgHandCards&>(
       ::TeenPatti_AK47::_AKMsgHandCards_default_instance_);
 }
-inline const ::TeenPatti_AK47::AKMsgHandCards& AKMsgPlayerInfo::handls() const {
-  // @@protoc_insertion_point(field_get:TeenPatti_AK47.AKMsgPlayerInfo.handls)
-  return _internal_handls();
+inline const ::TeenPatti_AK47::AKMsgHandCards& AKMsgPlayerInfo::handl_cards() const {
+  // @@protoc_insertion_point(field_get:TeenPatti_AK47.AKMsgPlayerInfo.handl_cards)
+  return _internal_handl_cards();
 }
-inline void AKMsgPlayerInfo::unsafe_arena_set_allocated_handls(
-    ::TeenPatti_AK47::AKMsgHandCards* handls) {
+inline void AKMsgPlayerInfo::unsafe_arena_set_allocated_handl_cards(
+    ::TeenPatti_AK47::AKMsgHandCards* handl_cards) {
   if (GetArena() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(handls_);
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(handl_cards_);
   }
-  handls_ = handls;
-  if (handls) {
+  handl_cards_ = handl_cards;
+  if (handl_cards) {
     
   } else {
     
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:TeenPatti_AK47.AKMsgPlayerInfo.handls)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:TeenPatti_AK47.AKMsgPlayerInfo.handl_cards)
 }
-inline ::TeenPatti_AK47::AKMsgHandCards* AKMsgPlayerInfo::release_handls() {
+inline ::TeenPatti_AK47::AKMsgHandCards* AKMsgPlayerInfo::release_handl_cards() {
   
-  ::TeenPatti_AK47::AKMsgHandCards* temp = handls_;
-  handls_ = nullptr;
+  ::TeenPatti_AK47::AKMsgHandCards* temp = handl_cards_;
+  handl_cards_ = nullptr;
   if (GetArena() != nullptr) {
     temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
   }
   return temp;
 }
-inline ::TeenPatti_AK47::AKMsgHandCards* AKMsgPlayerInfo::unsafe_arena_release_handls() {
-  // @@protoc_insertion_point(field_release:TeenPatti_AK47.AKMsgPlayerInfo.handls)
+inline ::TeenPatti_AK47::AKMsgHandCards* AKMsgPlayerInfo::unsafe_arena_release_handl_cards() {
+  // @@protoc_insertion_point(field_release:TeenPatti_AK47.AKMsgPlayerInfo.handl_cards)
   
-  ::TeenPatti_AK47::AKMsgHandCards* temp = handls_;
-  handls_ = nullptr;
+  ::TeenPatti_AK47::AKMsgHandCards* temp = handl_cards_;
+  handl_cards_ = nullptr;
   return temp;
 }
-inline ::TeenPatti_AK47::AKMsgHandCards* AKMsgPlayerInfo::_internal_mutable_handls() {
+inline ::TeenPatti_AK47::AKMsgHandCards* AKMsgPlayerInfo::_internal_mutable_handl_cards() {
   
-  if (handls_ == nullptr) {
+  if (handl_cards_ == nullptr) {
     auto* p = CreateMaybeMessage<::TeenPatti_AK47::AKMsgHandCards>(GetArena());
-    handls_ = p;
+    handl_cards_ = p;
   }
-  return handls_;
+  return handl_cards_;
 }
-inline ::TeenPatti_AK47::AKMsgHandCards* AKMsgPlayerInfo::mutable_handls() {
-  // @@protoc_insertion_point(field_mutable:TeenPatti_AK47.AKMsgPlayerInfo.handls)
-  return _internal_mutable_handls();
+inline ::TeenPatti_AK47::AKMsgHandCards* AKMsgPlayerInfo::mutable_handl_cards() {
+  // @@protoc_insertion_point(field_mutable:TeenPatti_AK47.AKMsgPlayerInfo.handl_cards)
+  return _internal_mutable_handl_cards();
 }
-inline void AKMsgPlayerInfo::set_allocated_handls(::TeenPatti_AK47::AKMsgHandCards* handls) {
+inline void AKMsgPlayerInfo::set_allocated_handl_cards(::TeenPatti_AK47::AKMsgHandCards* handl_cards) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   if (message_arena == nullptr) {
-    delete handls_;
+    delete handl_cards_;
   }
-  if (handls) {
+  if (handl_cards) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(handls);
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(handl_cards);
     if (message_arena != submessage_arena) {
-      handls = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, handls, submessage_arena);
+      handl_cards = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, handl_cards, submessage_arena);
     }
     
   } else {
     
   }
-  handls_ = handls;
-  // @@protoc_insertion_point(field_set_allocated:TeenPatti_AK47.AKMsgPlayerInfo.handls)
+  handl_cards_ = handl_cards;
+  // @@protoc_insertion_point(field_set_allocated:TeenPatti_AK47.AKMsgPlayerInfo.handl_cards)
 }
 
 // -------------------------------------------------------------------
@@ -4145,51 +4130,87 @@ inline void AKMsgLookCardResp::set_new_act(::PROTOBUF_NAMESPACE_ID::int32 value)
   // @@protoc_insertion_point(field_set:TeenPatti_AK47.AKMsgLookCardResp.new_act)
 }
 
-// repeated int32 cards = 5;
-inline int AKMsgLookCardResp::_internal_cards_size() const {
-  return cards_.size();
+// .TeenPatti_AK47.AKMsgHandCards handl_cards = 5;
+inline bool AKMsgLookCardResp::_internal_has_handl_cards() const {
+  return this != internal_default_instance() && handl_cards_ != nullptr;
 }
-inline int AKMsgLookCardResp::cards_size() const {
-  return _internal_cards_size();
+inline bool AKMsgLookCardResp::has_handl_cards() const {
+  return _internal_has_handl_cards();
 }
-inline void AKMsgLookCardResp::clear_cards() {
-  cards_.Clear();
+inline void AKMsgLookCardResp::clear_handl_cards() {
+  if (GetArena() == nullptr && handl_cards_ != nullptr) {
+    delete handl_cards_;
+  }
+  handl_cards_ = nullptr;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 AKMsgLookCardResp::_internal_cards(int index) const {
-  return cards_.Get(index);
+inline const ::TeenPatti_AK47::AKMsgHandCards& AKMsgLookCardResp::_internal_handl_cards() const {
+  const ::TeenPatti_AK47::AKMsgHandCards* p = handl_cards_;
+  return p != nullptr ? *p : reinterpret_cast<const ::TeenPatti_AK47::AKMsgHandCards&>(
+      ::TeenPatti_AK47::_AKMsgHandCards_default_instance_);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 AKMsgLookCardResp::cards(int index) const {
-  // @@protoc_insertion_point(field_get:TeenPatti_AK47.AKMsgLookCardResp.cards)
-  return _internal_cards(index);
+inline const ::TeenPatti_AK47::AKMsgHandCards& AKMsgLookCardResp::handl_cards() const {
+  // @@protoc_insertion_point(field_get:TeenPatti_AK47.AKMsgLookCardResp.handl_cards)
+  return _internal_handl_cards();
 }
-inline void AKMsgLookCardResp::set_cards(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
-  cards_.Set(index, value);
-  // @@protoc_insertion_point(field_set:TeenPatti_AK47.AKMsgLookCardResp.cards)
+inline void AKMsgLookCardResp::unsafe_arena_set_allocated_handl_cards(
+    ::TeenPatti_AK47::AKMsgHandCards* handl_cards) {
+  if (GetArena() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(handl_cards_);
+  }
+  handl_cards_ = handl_cards;
+  if (handl_cards) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:TeenPatti_AK47.AKMsgLookCardResp.handl_cards)
 }
-inline void AKMsgLookCardResp::_internal_add_cards(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  cards_.Add(value);
+inline ::TeenPatti_AK47::AKMsgHandCards* AKMsgLookCardResp::release_handl_cards() {
+  
+  ::TeenPatti_AK47::AKMsgHandCards* temp = handl_cards_;
+  handl_cards_ = nullptr;
+  if (GetArena() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+  return temp;
 }
-inline void AKMsgLookCardResp::add_cards(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_add_cards(value);
-  // @@protoc_insertion_point(field_add:TeenPatti_AK47.AKMsgLookCardResp.cards)
+inline ::TeenPatti_AK47::AKMsgHandCards* AKMsgLookCardResp::unsafe_arena_release_handl_cards() {
+  // @@protoc_insertion_point(field_release:TeenPatti_AK47.AKMsgLookCardResp.handl_cards)
+  
+  ::TeenPatti_AK47::AKMsgHandCards* temp = handl_cards_;
+  handl_cards_ = nullptr;
+  return temp;
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-AKMsgLookCardResp::_internal_cards() const {
-  return cards_;
+inline ::TeenPatti_AK47::AKMsgHandCards* AKMsgLookCardResp::_internal_mutable_handl_cards() {
+  
+  if (handl_cards_ == nullptr) {
+    auto* p = CreateMaybeMessage<::TeenPatti_AK47::AKMsgHandCards>(GetArena());
+    handl_cards_ = p;
+  }
+  return handl_cards_;
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-AKMsgLookCardResp::cards() const {
-  // @@protoc_insertion_point(field_list:TeenPatti_AK47.AKMsgLookCardResp.cards)
-  return _internal_cards();
+inline ::TeenPatti_AK47::AKMsgHandCards* AKMsgLookCardResp::mutable_handl_cards() {
+  // @@protoc_insertion_point(field_mutable:TeenPatti_AK47.AKMsgLookCardResp.handl_cards)
+  return _internal_mutable_handl_cards();
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-AKMsgLookCardResp::_internal_mutable_cards() {
-  return &cards_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-AKMsgLookCardResp::mutable_cards() {
-  // @@protoc_insertion_point(field_mutable_list:TeenPatti_AK47.AKMsgLookCardResp.cards)
-  return _internal_mutable_cards();
+inline void AKMsgLookCardResp::set_allocated_handl_cards(::TeenPatti_AK47::AKMsgHandCards* handl_cards) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  if (message_arena == nullptr) {
+    delete handl_cards_;
+  }
+  if (handl_cards) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(handl_cards);
+    if (message_arena != submessage_arena) {
+      handl_cards = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, handl_cards, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  handl_cards_ = handl_cards;
+  // @@protoc_insertion_point(field_set_allocated:TeenPatti_AK47.AKMsgLookCardResp.handl_cards)
 }
 
 // -------------------------------------------------------------------
@@ -4444,98 +4465,170 @@ inline void AKMsgCompareCardRetResp::set_passive_type(::PROTOBUF_NAMESPACE_ID::i
   // @@protoc_insertion_point(field_set:TeenPatti_AK47.AKMsgCompareCardRetResp.passive_type)
 }
 
-// repeated int32 compare_cards = 8;
-inline int AKMsgCompareCardRetResp::_internal_compare_cards_size() const {
-  return compare_cards_.size();
+// .TeenPatti_AK47.AKMsgHandCards compare_cards = 8;
+inline bool AKMsgCompareCardRetResp::_internal_has_compare_cards() const {
+  return this != internal_default_instance() && compare_cards_ != nullptr;
 }
-inline int AKMsgCompareCardRetResp::compare_cards_size() const {
-  return _internal_compare_cards_size();
+inline bool AKMsgCompareCardRetResp::has_compare_cards() const {
+  return _internal_has_compare_cards();
 }
 inline void AKMsgCompareCardRetResp::clear_compare_cards() {
-  compare_cards_.Clear();
+  if (GetArena() == nullptr && compare_cards_ != nullptr) {
+    delete compare_cards_;
+  }
+  compare_cards_ = nullptr;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 AKMsgCompareCardRetResp::_internal_compare_cards(int index) const {
-  return compare_cards_.Get(index);
+inline const ::TeenPatti_AK47::AKMsgHandCards& AKMsgCompareCardRetResp::_internal_compare_cards() const {
+  const ::TeenPatti_AK47::AKMsgHandCards* p = compare_cards_;
+  return p != nullptr ? *p : reinterpret_cast<const ::TeenPatti_AK47::AKMsgHandCards&>(
+      ::TeenPatti_AK47::_AKMsgHandCards_default_instance_);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 AKMsgCompareCardRetResp::compare_cards(int index) const {
+inline const ::TeenPatti_AK47::AKMsgHandCards& AKMsgCompareCardRetResp::compare_cards() const {
   // @@protoc_insertion_point(field_get:TeenPatti_AK47.AKMsgCompareCardRetResp.compare_cards)
-  return _internal_compare_cards(index);
-}
-inline void AKMsgCompareCardRetResp::set_compare_cards(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
-  compare_cards_.Set(index, value);
-  // @@protoc_insertion_point(field_set:TeenPatti_AK47.AKMsgCompareCardRetResp.compare_cards)
-}
-inline void AKMsgCompareCardRetResp::_internal_add_compare_cards(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  compare_cards_.Add(value);
-}
-inline void AKMsgCompareCardRetResp::add_compare_cards(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_add_compare_cards(value);
-  // @@protoc_insertion_point(field_add:TeenPatti_AK47.AKMsgCompareCardRetResp.compare_cards)
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-AKMsgCompareCardRetResp::_internal_compare_cards() const {
-  return compare_cards_;
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-AKMsgCompareCardRetResp::compare_cards() const {
-  // @@protoc_insertion_point(field_list:TeenPatti_AK47.AKMsgCompareCardRetResp.compare_cards)
   return _internal_compare_cards();
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-AKMsgCompareCardRetResp::_internal_mutable_compare_cards() {
-  return &compare_cards_;
+inline void AKMsgCompareCardRetResp::unsafe_arena_set_allocated_compare_cards(
+    ::TeenPatti_AK47::AKMsgHandCards* compare_cards) {
+  if (GetArena() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(compare_cards_);
+  }
+  compare_cards_ = compare_cards;
+  if (compare_cards) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:TeenPatti_AK47.AKMsgCompareCardRetResp.compare_cards)
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-AKMsgCompareCardRetResp::mutable_compare_cards() {
-  // @@protoc_insertion_point(field_mutable_list:TeenPatti_AK47.AKMsgCompareCardRetResp.compare_cards)
+inline ::TeenPatti_AK47::AKMsgHandCards* AKMsgCompareCardRetResp::release_compare_cards() {
+  
+  ::TeenPatti_AK47::AKMsgHandCards* temp = compare_cards_;
+  compare_cards_ = nullptr;
+  if (GetArena() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+  return temp;
+}
+inline ::TeenPatti_AK47::AKMsgHandCards* AKMsgCompareCardRetResp::unsafe_arena_release_compare_cards() {
+  // @@protoc_insertion_point(field_release:TeenPatti_AK47.AKMsgCompareCardRetResp.compare_cards)
+  
+  ::TeenPatti_AK47::AKMsgHandCards* temp = compare_cards_;
+  compare_cards_ = nullptr;
+  return temp;
+}
+inline ::TeenPatti_AK47::AKMsgHandCards* AKMsgCompareCardRetResp::_internal_mutable_compare_cards() {
+  
+  if (compare_cards_ == nullptr) {
+    auto* p = CreateMaybeMessage<::TeenPatti_AK47::AKMsgHandCards>(GetArena());
+    compare_cards_ = p;
+  }
+  return compare_cards_;
+}
+inline ::TeenPatti_AK47::AKMsgHandCards* AKMsgCompareCardRetResp::mutable_compare_cards() {
+  // @@protoc_insertion_point(field_mutable:TeenPatti_AK47.AKMsgCompareCardRetResp.compare_cards)
   return _internal_mutable_compare_cards();
 }
-
-// repeated int32 passive_cards = 9;
-inline int AKMsgCompareCardRetResp::_internal_passive_cards_size() const {
-  return passive_cards_.size();
+inline void AKMsgCompareCardRetResp::set_allocated_compare_cards(::TeenPatti_AK47::AKMsgHandCards* compare_cards) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  if (message_arena == nullptr) {
+    delete compare_cards_;
+  }
+  if (compare_cards) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(compare_cards);
+    if (message_arena != submessage_arena) {
+      compare_cards = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, compare_cards, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  compare_cards_ = compare_cards;
+  // @@protoc_insertion_point(field_set_allocated:TeenPatti_AK47.AKMsgCompareCardRetResp.compare_cards)
 }
-inline int AKMsgCompareCardRetResp::passive_cards_size() const {
-  return _internal_passive_cards_size();
+
+// .TeenPatti_AK47.AKMsgHandCards passive_cards = 9;
+inline bool AKMsgCompareCardRetResp::_internal_has_passive_cards() const {
+  return this != internal_default_instance() && passive_cards_ != nullptr;
+}
+inline bool AKMsgCompareCardRetResp::has_passive_cards() const {
+  return _internal_has_passive_cards();
 }
 inline void AKMsgCompareCardRetResp::clear_passive_cards() {
-  passive_cards_.Clear();
+  if (GetArena() == nullptr && passive_cards_ != nullptr) {
+    delete passive_cards_;
+  }
+  passive_cards_ = nullptr;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 AKMsgCompareCardRetResp::_internal_passive_cards(int index) const {
-  return passive_cards_.Get(index);
+inline const ::TeenPatti_AK47::AKMsgHandCards& AKMsgCompareCardRetResp::_internal_passive_cards() const {
+  const ::TeenPatti_AK47::AKMsgHandCards* p = passive_cards_;
+  return p != nullptr ? *p : reinterpret_cast<const ::TeenPatti_AK47::AKMsgHandCards&>(
+      ::TeenPatti_AK47::_AKMsgHandCards_default_instance_);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 AKMsgCompareCardRetResp::passive_cards(int index) const {
+inline const ::TeenPatti_AK47::AKMsgHandCards& AKMsgCompareCardRetResp::passive_cards() const {
   // @@protoc_insertion_point(field_get:TeenPatti_AK47.AKMsgCompareCardRetResp.passive_cards)
-  return _internal_passive_cards(index);
-}
-inline void AKMsgCompareCardRetResp::set_passive_cards(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
-  passive_cards_.Set(index, value);
-  // @@protoc_insertion_point(field_set:TeenPatti_AK47.AKMsgCompareCardRetResp.passive_cards)
-}
-inline void AKMsgCompareCardRetResp::_internal_add_passive_cards(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  passive_cards_.Add(value);
-}
-inline void AKMsgCompareCardRetResp::add_passive_cards(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_add_passive_cards(value);
-  // @@protoc_insertion_point(field_add:TeenPatti_AK47.AKMsgCompareCardRetResp.passive_cards)
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-AKMsgCompareCardRetResp::_internal_passive_cards() const {
-  return passive_cards_;
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-AKMsgCompareCardRetResp::passive_cards() const {
-  // @@protoc_insertion_point(field_list:TeenPatti_AK47.AKMsgCompareCardRetResp.passive_cards)
   return _internal_passive_cards();
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-AKMsgCompareCardRetResp::_internal_mutable_passive_cards() {
-  return &passive_cards_;
+inline void AKMsgCompareCardRetResp::unsafe_arena_set_allocated_passive_cards(
+    ::TeenPatti_AK47::AKMsgHandCards* passive_cards) {
+  if (GetArena() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(passive_cards_);
+  }
+  passive_cards_ = passive_cards;
+  if (passive_cards) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:TeenPatti_AK47.AKMsgCompareCardRetResp.passive_cards)
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-AKMsgCompareCardRetResp::mutable_passive_cards() {
-  // @@protoc_insertion_point(field_mutable_list:TeenPatti_AK47.AKMsgCompareCardRetResp.passive_cards)
+inline ::TeenPatti_AK47::AKMsgHandCards* AKMsgCompareCardRetResp::release_passive_cards() {
+  
+  ::TeenPatti_AK47::AKMsgHandCards* temp = passive_cards_;
+  passive_cards_ = nullptr;
+  if (GetArena() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+  return temp;
+}
+inline ::TeenPatti_AK47::AKMsgHandCards* AKMsgCompareCardRetResp::unsafe_arena_release_passive_cards() {
+  // @@protoc_insertion_point(field_release:TeenPatti_AK47.AKMsgCompareCardRetResp.passive_cards)
+  
+  ::TeenPatti_AK47::AKMsgHandCards* temp = passive_cards_;
+  passive_cards_ = nullptr;
+  return temp;
+}
+inline ::TeenPatti_AK47::AKMsgHandCards* AKMsgCompareCardRetResp::_internal_mutable_passive_cards() {
+  
+  if (passive_cards_ == nullptr) {
+    auto* p = CreateMaybeMessage<::TeenPatti_AK47::AKMsgHandCards>(GetArena());
+    passive_cards_ = p;
+  }
+  return passive_cards_;
+}
+inline ::TeenPatti_AK47::AKMsgHandCards* AKMsgCompareCardRetResp::mutable_passive_cards() {
+  // @@protoc_insertion_point(field_mutable:TeenPatti_AK47.AKMsgCompareCardRetResp.passive_cards)
   return _internal_mutable_passive_cards();
+}
+inline void AKMsgCompareCardRetResp::set_allocated_passive_cards(::TeenPatti_AK47::AKMsgHandCards* passive_cards) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  if (message_arena == nullptr) {
+    delete passive_cards_;
+  }
+  if (passive_cards) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(passive_cards);
+    if (message_arena != submessage_arena) {
+      passive_cards = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, passive_cards, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  passive_cards_ = passive_cards;
+  // @@protoc_insertion_point(field_set_allocated:TeenPatti_AK47.AKMsgCompareCardRetResp.passive_cards)
 }
 
 // bool is_agree = 10;
