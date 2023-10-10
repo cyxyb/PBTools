@@ -386,8 +386,6 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TeenPatti_5fAK47_2eproto::offs
   PROTOBUF_FIELD_OFFSET(::TeenPatti_AK47::AKMsgCompareCardRetResp, lost_id_),
   PROTOBUF_FIELD_OFFSET(::TeenPatti_AK47::AKMsgCompareCardRetResp, compare_id_),
   PROTOBUF_FIELD_OFFSET(::TeenPatti_AK47::AKMsgCompareCardRetResp, passive_id_),
-  PROTOBUF_FIELD_OFFSET(::TeenPatti_AK47::AKMsgCompareCardRetResp, compare_type_),
-  PROTOBUF_FIELD_OFFSET(::TeenPatti_AK47::AKMsgCompareCardRetResp, passive_type_),
   PROTOBUF_FIELD_OFFSET(::TeenPatti_AK47::AKMsgCompareCardRetResp, compare_cards_),
   PROTOBUF_FIELD_OFFSET(::TeenPatti_AK47::AKMsgCompareCardRetResp, passive_cards_),
   PROTOBUF_FIELD_OFFSET(::TeenPatti_AK47::AKMsgCompareCardRetResp, is_agree_),
@@ -422,8 +420,8 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 95, -1, sizeof(::TeenPatti_AK47::AKMsgAddBetResp)},
   { 103, -1, sizeof(::TeenPatti_AK47::AKMsgCompareCardResp)},
   { 110, -1, sizeof(::TeenPatti_AK47::AKMsgCompareCardRetResp)},
-  { 125, -1, sizeof(::TeenPatti_AK47::AKMsgGameResult)},
-  { 135, -1, sizeof(::TeenPatti_AK47::AKMsgNotifyPlayerAct)},
+  { 123, -1, sizeof(::TeenPatti_AK47::AKMsgGameResult)},
+  { 133, -1, sizeof(::TeenPatti_AK47::AKMsgNotifyPlayerAct)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -480,49 +478,48 @@ const char descriptor_table_protodef_TeenPatti_5fAK47_2eproto[] PROTOBUF_SECTION
   "\024\n\014add_chair_id\030\001 \001(\005\022\021\n\tadd_score\030\002 \001(\003"
   "\022\020\n\010bet_type\030\003 \001(\003\"<\n\024AKMsgCompareCardRe"
   "sp\022\020\n\010chair_id\030\001 \001(\005\022\022\n\ncompare_id\030\002 \001(\005"
-  "\"\255\002\n\027AKMsgCompareCardRetResp\022\030\n\020current_"
+  "\"\201\002\n\027AKMsgCompareCardRetResp\022\030\n\020current_"
   "chair_id\030\001 \001(\005\022\023\n\013current_act\030\002 \001(\005\022\017\n\007l"
   "ost_id\030\003 \001(\005\022\022\n\ncompare_id\030\004 \001(\005\022\022\n\npass"
-  "ive_id\030\005 \001(\005\022\024\n\014compare_type\030\006 \001(\005\022\024\n\014pa"
-  "ssive_type\030\007 \001(\005\0225\n\rcompare_cards\030\010 \001(\0132"
-  "\036.TeenPatti_AK47.AKMsgHandCards\0225\n\rpassi"
-  "ve_cards\030\t \001(\0132\036.TeenPatti_AK47.AKMsgHan"
-  "dCards\022\020\n\010is_agree\030\n \001(\010\"\223\001\n\017AKMsgGameRe"
-  "sult\022\020\n\010game_tax\030\001 \001(\005\022\022\n\ngame_score\030\002 \003"
-  "(\003\022\021\n\tcard_type\030\003 \003(\005\0224\n\014player_hands\030\004 "
-  "\003(\0132\036.TeenPatti_AK47.AKMsgHandCards\022\021\n\te"
-  "nd_state\030\005 \001(\005\"5\n\024AKMsgNotifyPlayerAct\022\020"
-  "\n\010chair_id\030\001 \001(\005\022\013\n\003act\030\002 \001(\005*g\n\014EAKGame"
-  "State\022\017\n\013GS_TP_READY\020\000\022\016\n\nGS_TP_DEAL\020\001\022\021"
-  "\n\rGS_TP_PLAYING\020\002\022\021\n\rGS_TP_COMPARE\020\003\022\020\n\014"
-  "GS_TP_RESULT\020\004*U\n\016EAKPlayerState\022\014\n\010PS_R"
-  "EADY\020\000\022\013\n\007PS_PLAY\020\001\022\013\n\007PS_GIVE\020\002\022\013\n\007PS_F"
-  "AIL\020\003\022\016\n\nPS_TIMEOUT\020\004*\207\001\n\013EAKCardType\022\r\n"
-  "\tCT_SINGLE\020\000\022\r\n\tCT_DOUBLE\020\001\022\016\n\nCT_JIN_HU"
-  "A\020\002\022\016\n\nCT_SHUN_ZI\020\003\022\017\n\013CT_SHUN_JIN\020\004\022\r\n\t"
-  "CT_BAO_ZI\020\005\022\016\n\nCT_SPECIAL\020\006\022\n\n\006CT_MAX\020\007*"
-  "\204\001\n\rEAKGameAction\022\r\n\tInvaldAct\020\000\022\n\n\006Give"
-  "Up\020\001\022\014\n\010LookCard\020\002\022\013\n\007CallBet\020\004\022\n\n\006AddBe"
-  "t\020\010\022\017\n\013CompareCard\020\020\022\020\n\014CompareReply\020 \022\016"
-  "\n\nAllCompare\020@*\277\005\n\017EAKMsgIDSubGame\022\025\n\021Ms"
-  "gIDSubGame_Null\020\000\022\036\n\032MsgIDSubGame_GameSt"
-  "artResp\020\001\022!\n\035MsgIDSubGame_NotifyActionRe"
-  "sp\020\002\022\027\n\023MsgIDSubGame_Action\020\003\022\033\n\027MsgIDSu"
-  "bGame_GiveUpResp\020\004\022\031\n\025MsgIDSubGame_LookC"
-  "ard\020\005\022\033\n\027MsgIDSubGame_AddBetResp\020\006\022 \n\034Ms"
-  "gIDSubGame_CompareCardResp\020\007\022\037\n\033MsgIDSub"
-  "Game_CompareRetResp\020\010\022\037\n\033MsgIDSubGame_Ga"
-  "meResultResp\020\t\022 \n\034MsgIDSubGame_NotifySta"
-  "teResp\020\n\022\034\n\030MsgIDSubGame_TimeOutResp\020\013\022\035"
-  "\n\031MsgIDSubGame_TimeOutReady\020\014\022!\n\035MsgIDSu"
-  "bGame_TimeOutReadyResp\020\r\022 \n\034MsgIDSubGame"
-  "_TimeOutKickResp\020\016\022&\n\"MsgIDSubGame_Notif"
-  "ySystemCheatResp\020\024\022#\n\037MsgIDSubGame_Notif"
-  "yCardTypeResp\020\025\022 \n\034MsgIDSubGame_NotifyIs"
-  "MaxResp\020\026\022\'\n#MsgIDSubGame_NotifyRemainDo"
-  "ubleResp\020\027\022 \n\034MsgIDSubGame_NotifyRoundRe"
-  "sp\020\030\022\"\n\036MsgIDSubGame_NotifyLastActResp\020\031"
-  "b\006proto3"
+  "ive_id\030\005 \001(\005\0225\n\rcompare_cards\030\006 \001(\0132\036.Te"
+  "enPatti_AK47.AKMsgHandCards\0225\n\rpassive_c"
+  "ards\030\007 \001(\0132\036.TeenPatti_AK47.AKMsgHandCar"
+  "ds\022\020\n\010is_agree\030\010 \001(\010\"\223\001\n\017AKMsgGameResult"
+  "\022\020\n\010game_tax\030\001 \001(\005\022\022\n\ngame_score\030\002 \003(\003\022\021"
+  "\n\tcard_type\030\003 \003(\005\0224\n\014player_hands\030\004 \003(\0132"
+  "\036.TeenPatti_AK47.AKMsgHandCards\022\021\n\tend_s"
+  "tate\030\005 \001(\005\"5\n\024AKMsgNotifyPlayerAct\022\020\n\010ch"
+  "air_id\030\001 \001(\005\022\013\n\003act\030\002 \001(\005*g\n\014EAKGameStat"
+  "e\022\017\n\013GS_TP_READY\020\000\022\016\n\nGS_TP_DEAL\020\001\022\021\n\rGS"
+  "_TP_PLAYING\020\002\022\021\n\rGS_TP_COMPARE\020\003\022\020\n\014GS_T"
+  "P_RESULT\020\004*U\n\016EAKPlayerState\022\014\n\010PS_READY"
+  "\020\000\022\013\n\007PS_PLAY\020\001\022\013\n\007PS_GIVE\020\002\022\013\n\007PS_FAIL\020"
+  "\003\022\016\n\nPS_TIMEOUT\020\004*\207\001\n\013EAKCardType\022\r\n\tCT_"
+  "SINGLE\020\000\022\r\n\tCT_DOUBLE\020\001\022\016\n\nCT_JIN_HUA\020\002\022"
+  "\016\n\nCT_SHUN_ZI\020\003\022\017\n\013CT_SHUN_JIN\020\004\022\r\n\tCT_B"
+  "AO_ZI\020\005\022\016\n\nCT_SPECIAL\020\006\022\n\n\006CT_MAX\020\007*\204\001\n\r"
+  "EAKGameAction\022\r\n\tInvaldAct\020\000\022\n\n\006GiveUp\020\001"
+  "\022\014\n\010LookCard\020\002\022\013\n\007CallBet\020\004\022\n\n\006AddBet\020\010\022"
+  "\017\n\013CompareCard\020\020\022\020\n\014CompareReply\020 \022\016\n\nAl"
+  "lCompare\020@*\277\005\n\017EAKMsgIDSubGame\022\025\n\021MsgIDS"
+  "ubGame_Null\020\000\022\036\n\032MsgIDSubGame_GameStartR"
+  "esp\020\001\022!\n\035MsgIDSubGame_NotifyActionResp\020\002"
+  "\022\027\n\023MsgIDSubGame_Action\020\003\022\033\n\027MsgIDSubGam"
+  "e_GiveUpResp\020\004\022\031\n\025MsgIDSubGame_LookCard\020"
+  "\005\022\033\n\027MsgIDSubGame_AddBetResp\020\006\022 \n\034MsgIDS"
+  "ubGame_CompareCardResp\020\007\022\037\n\033MsgIDSubGame"
+  "_CompareRetResp\020\010\022\037\n\033MsgIDSubGame_GameRe"
+  "sultResp\020\t\022 \n\034MsgIDSubGame_NotifyStateRe"
+  "sp\020\n\022\034\n\030MsgIDSubGame_TimeOutResp\020\013\022\035\n\031Ms"
+  "gIDSubGame_TimeOutReady\020\014\022!\n\035MsgIDSubGam"
+  "e_TimeOutReadyResp\020\r\022 \n\034MsgIDSubGame_Tim"
+  "eOutKickResp\020\016\022&\n\"MsgIDSubGame_NotifySys"
+  "temCheatResp\020\024\022#\n\037MsgIDSubGame_NotifyCar"
+  "dTypeResp\020\025\022 \n\034MsgIDSubGame_NotifyIsMaxR"
+  "esp\020\026\022\'\n#MsgIDSubGame_NotifyRemainDouble"
+  "Resp\020\027\022 \n\034MsgIDSubGame_NotifyRoundResp\020\030"
+  "\022\"\n\036MsgIDSubGame_NotifyLastActResp\020\031b\006pr"
+  "oto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_TeenPatti_5fAK47_2eproto_deps[1] = {
 };
@@ -544,7 +541,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Tee
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_TeenPatti_5fAK47_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_TeenPatti_5fAK47_2eproto = {
-  false, false, descriptor_table_protodef_TeenPatti_5fAK47_2eproto, "TeenPatti_AK47.proto", 3128,
+  false, false, descriptor_table_protodef_TeenPatti_5fAK47_2eproto, "TeenPatti_AK47.proto", 3084,
   &descriptor_table_TeenPatti_5fAK47_2eproto_once, descriptor_table_TeenPatti_5fAK47_2eproto_sccs, descriptor_table_TeenPatti_5fAK47_2eproto_deps, 14, 0,
   schemas, file_default_instances, TableStruct_TeenPatti_5fAK47_2eproto::offsets,
   file_level_metadata_TeenPatti_5fAK47_2eproto, 14, file_level_enum_descriptors_TeenPatti_5fAK47_2eproto, file_level_service_descriptors_TeenPatti_5fAK47_2eproto,
@@ -4143,37 +4140,23 @@ const char* AKMsgCompareCardRetResp::_InternalParse(const char* ptr, ::PROTOBUF_
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 compare_type = 6;
+      // .TeenPatti_AK47.AKMsgHandCards compare_cards = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
-          compare_type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 passive_type = 7;
-      case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
-          passive_type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // .TeenPatti_AK47.AKMsgHandCards compare_cards = 8;
-      case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 66)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
           ptr = ctx->ParseMessage(_internal_mutable_compare_cards(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .TeenPatti_AK47.AKMsgHandCards passive_cards = 9;
-      case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
+      // .TeenPatti_AK47.AKMsgHandCards passive_cards = 7;
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
           ptr = ctx->ParseMessage(_internal_mutable_passive_cards(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // bool is_agree = 10;
-      case 10:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
+      // bool is_agree = 8;
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
           is_agree_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
@@ -4236,38 +4219,26 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_passive_id(), target);
   }
 
-  // int32 compare_type = 6;
-  if (this->compare_type() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_compare_type(), target);
-  }
-
-  // int32 passive_type = 7;
-  if (this->passive_type() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(7, this->_internal_passive_type(), target);
-  }
-
-  // .TeenPatti_AK47.AKMsgHandCards compare_cards = 8;
+  // .TeenPatti_AK47.AKMsgHandCards compare_cards = 6;
   if (this->has_compare_cards()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(
-        8, _Internal::compare_cards(this), target, stream);
+        6, _Internal::compare_cards(this), target, stream);
   }
 
-  // .TeenPatti_AK47.AKMsgHandCards passive_cards = 9;
+  // .TeenPatti_AK47.AKMsgHandCards passive_cards = 7;
   if (this->has_passive_cards()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(
-        9, _Internal::passive_cards(this), target, stream);
+        7, _Internal::passive_cards(this), target, stream);
   }
 
-  // bool is_agree = 10;
+  // bool is_agree = 8;
   if (this->is_agree() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(10, this->_internal_is_agree(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(8, this->_internal_is_agree(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -4286,14 +4257,14 @@ size_t AKMsgCompareCardRetResp::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .TeenPatti_AK47.AKMsgHandCards compare_cards = 8;
+  // .TeenPatti_AK47.AKMsgHandCards compare_cards = 6;
   if (this->has_compare_cards()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *compare_cards_);
   }
 
-  // .TeenPatti_AK47.AKMsgHandCards passive_cards = 9;
+  // .TeenPatti_AK47.AKMsgHandCards passive_cards = 7;
   if (this->has_passive_cards()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
@@ -4335,21 +4306,7 @@ size_t AKMsgCompareCardRetResp::ByteSizeLong() const {
         this->_internal_passive_id());
   }
 
-  // int32 compare_type = 6;
-  if (this->compare_type() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_compare_type());
-  }
-
-  // int32 passive_type = 7;
-  if (this->passive_type() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_passive_type());
-  }
-
-  // bool is_agree = 10;
+  // bool is_agree = 8;
   if (this->is_agree() != 0) {
     total_size += 1 + 1;
   }
@@ -4405,12 +4362,6 @@ void AKMsgCompareCardRetResp::MergeFrom(const AKMsgCompareCardRetResp& from) {
   }
   if (from.passive_id() != 0) {
     _internal_set_passive_id(from._internal_passive_id());
-  }
-  if (from.compare_type() != 0) {
-    _internal_set_compare_type(from._internal_compare_type());
-  }
-  if (from.passive_type() != 0) {
-    _internal_set_passive_type(from._internal_passive_type());
   }
   if (from.is_agree() != 0) {
     _internal_set_is_agree(from._internal_is_agree());

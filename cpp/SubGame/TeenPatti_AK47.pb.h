@@ -2441,18 +2441,16 @@ class AKMsgCompareCardRetResp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kCompareCardsFieldNumber = 8,
-    kPassiveCardsFieldNumber = 9,
+    kCompareCardsFieldNumber = 6,
+    kPassiveCardsFieldNumber = 7,
     kCurrentChairIdFieldNumber = 1,
     kCurrentActFieldNumber = 2,
     kLostIdFieldNumber = 3,
     kCompareIdFieldNumber = 4,
     kPassiveIdFieldNumber = 5,
-    kCompareTypeFieldNumber = 6,
-    kPassiveTypeFieldNumber = 7,
-    kIsAgreeFieldNumber = 10,
+    kIsAgreeFieldNumber = 8,
   };
-  // .TeenPatti_AK47.AKMsgHandCards compare_cards = 8;
+  // .TeenPatti_AK47.AKMsgHandCards compare_cards = 6;
   bool has_compare_cards() const;
   private:
   bool _internal_has_compare_cards() const;
@@ -2470,7 +2468,7 @@ class AKMsgCompareCardRetResp PROTOBUF_FINAL :
       ::TeenPatti_AK47::AKMsgHandCards* compare_cards);
   ::TeenPatti_AK47::AKMsgHandCards* unsafe_arena_release_compare_cards();
 
-  // .TeenPatti_AK47.AKMsgHandCards passive_cards = 9;
+  // .TeenPatti_AK47.AKMsgHandCards passive_cards = 7;
   bool has_passive_cards() const;
   private:
   bool _internal_has_passive_cards() const;
@@ -2533,25 +2531,7 @@ class AKMsgCompareCardRetResp PROTOBUF_FINAL :
   void _internal_set_passive_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 compare_type = 6;
-  void clear_compare_type();
-  ::PROTOBUF_NAMESPACE_ID::int32 compare_type() const;
-  void set_compare_type(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_compare_type() const;
-  void _internal_set_compare_type(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 passive_type = 7;
-  void clear_passive_type();
-  ::PROTOBUF_NAMESPACE_ID::int32 passive_type() const;
-  void set_passive_type(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_passive_type() const;
-  void _internal_set_passive_type(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // bool is_agree = 10;
+  // bool is_agree = 8;
   void clear_is_agree();
   bool is_agree() const;
   void set_is_agree(bool value);
@@ -2574,8 +2554,6 @@ class AKMsgCompareCardRetResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 lost_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 compare_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 passive_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 compare_type_;
-  ::PROTOBUF_NAMESPACE_ID::int32 passive_type_;
   bool is_agree_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_TeenPatti_5fAK47_2eproto;
@@ -4425,47 +4403,7 @@ inline void AKMsgCompareCardRetResp::set_passive_id(::PROTOBUF_NAMESPACE_ID::int
   // @@protoc_insertion_point(field_set:TeenPatti_AK47.AKMsgCompareCardRetResp.passive_id)
 }
 
-// int32 compare_type = 6;
-inline void AKMsgCompareCardRetResp::clear_compare_type() {
-  compare_type_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 AKMsgCompareCardRetResp::_internal_compare_type() const {
-  return compare_type_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 AKMsgCompareCardRetResp::compare_type() const {
-  // @@protoc_insertion_point(field_get:TeenPatti_AK47.AKMsgCompareCardRetResp.compare_type)
-  return _internal_compare_type();
-}
-inline void AKMsgCompareCardRetResp::_internal_set_compare_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  compare_type_ = value;
-}
-inline void AKMsgCompareCardRetResp::set_compare_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_compare_type(value);
-  // @@protoc_insertion_point(field_set:TeenPatti_AK47.AKMsgCompareCardRetResp.compare_type)
-}
-
-// int32 passive_type = 7;
-inline void AKMsgCompareCardRetResp::clear_passive_type() {
-  passive_type_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 AKMsgCompareCardRetResp::_internal_passive_type() const {
-  return passive_type_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 AKMsgCompareCardRetResp::passive_type() const {
-  // @@protoc_insertion_point(field_get:TeenPatti_AK47.AKMsgCompareCardRetResp.passive_type)
-  return _internal_passive_type();
-}
-inline void AKMsgCompareCardRetResp::_internal_set_passive_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  passive_type_ = value;
-}
-inline void AKMsgCompareCardRetResp::set_passive_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_passive_type(value);
-  // @@protoc_insertion_point(field_set:TeenPatti_AK47.AKMsgCompareCardRetResp.passive_type)
-}
-
-// .TeenPatti_AK47.AKMsgHandCards compare_cards = 8;
+// .TeenPatti_AK47.AKMsgHandCards compare_cards = 6;
 inline bool AKMsgCompareCardRetResp::_internal_has_compare_cards() const {
   return this != internal_default_instance() && compare_cards_ != nullptr;
 }
@@ -4548,7 +4486,7 @@ inline void AKMsgCompareCardRetResp::set_allocated_compare_cards(::TeenPatti_AK4
   // @@protoc_insertion_point(field_set_allocated:TeenPatti_AK47.AKMsgCompareCardRetResp.compare_cards)
 }
 
-// .TeenPatti_AK47.AKMsgHandCards passive_cards = 9;
+// .TeenPatti_AK47.AKMsgHandCards passive_cards = 7;
 inline bool AKMsgCompareCardRetResp::_internal_has_passive_cards() const {
   return this != internal_default_instance() && passive_cards_ != nullptr;
 }
@@ -4631,7 +4569,7 @@ inline void AKMsgCompareCardRetResp::set_allocated_passive_cards(::TeenPatti_AK4
   // @@protoc_insertion_point(field_set_allocated:TeenPatti_AK47.AKMsgCompareCardRetResp.passive_cards)
 }
 
-// bool is_agree = 10;
+// bool is_agree = 8;
 inline void AKMsgCompareCardRetResp::clear_is_agree() {
   is_agree_ = false;
 }

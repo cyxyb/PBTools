@@ -196,11 +196,9 @@ message AKMsgCompareCardRetResp
 	int32				lost_id			= 3;	//输家椅子号
 	int32				compare_id		= 4;	//比牌椅子号
 	int32				passive_id		= 5;	//被比椅子号
-	int32				compare_type	= 6;	//比牌玩家牌型
-	int32				passive_type	= 7;	//被比玩家牌型
-	AKMsgHandCards		compare_cards	= 8;	//比牌玩家手牌
-	AKMsgHandCards		passive_cards	= 9;	//被比玩家手牌
-	bool				is_agree		= 10;	//同意否
+	AKMsgHandCards		compare_cards	= 6;	//比牌玩家手牌
+	AKMsgHandCards		passive_cards	= 7;	//被比玩家手牌
+	bool				is_agree		= 8;	//同意否
 }                                           
 
 

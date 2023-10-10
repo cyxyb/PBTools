@@ -56,44 +56,43 @@ namespace TeenPattiAK47 {
             "SGFuZENhcmRzIkwKD0FLTXNnQWRkQmV0UmVzcBIUCgxhZGRfY2hhaXJfaWQY",
             "ASABKAUSEQoJYWRkX3Njb3JlGAIgASgDEhAKCGJldF90eXBlGAMgASgDIjwK",
             "FEFLTXNnQ29tcGFyZUNhcmRSZXNwEhAKCGNoYWlyX2lkGAEgASgFEhIKCmNv",
-            "bXBhcmVfaWQYAiABKAUirQIKF0FLTXNnQ29tcGFyZUNhcmRSZXRSZXNwEhgK",
+            "bXBhcmVfaWQYAiABKAUigQIKF0FLTXNnQ29tcGFyZUNhcmRSZXRSZXNwEhgK",
             "EGN1cnJlbnRfY2hhaXJfaWQYASABKAUSEwoLY3VycmVudF9hY3QYAiABKAUS",
             "DwoHbG9zdF9pZBgDIAEoBRISCgpjb21wYXJlX2lkGAQgASgFEhIKCnBhc3Np",
-            "dmVfaWQYBSABKAUSFAoMY29tcGFyZV90eXBlGAYgASgFEhQKDHBhc3NpdmVf",
-            "dHlwZRgHIAEoBRI1Cg1jb21wYXJlX2NhcmRzGAggASgLMh4uVGVlblBhdHRp",
-            "X0FLNDcuQUtNc2dIYW5kQ2FyZHMSNQoNcGFzc2l2ZV9jYXJkcxgJIAEoCzIe",
-            "LlRlZW5QYXR0aV9BSzQ3LkFLTXNnSGFuZENhcmRzEhAKCGlzX2FncmVlGAog",
-            "ASgIIpMBCg9BS01zZ0dhbWVSZXN1bHQSEAoIZ2FtZV90YXgYASABKAUSEgoK",
-            "Z2FtZV9zY29yZRgCIAMoAxIRCgljYXJkX3R5cGUYAyADKAUSNAoMcGxheWVy",
-            "X2hhbmRzGAQgAygLMh4uVGVlblBhdHRpX0FLNDcuQUtNc2dIYW5kQ2FyZHMS",
-            "EQoJZW5kX3N0YXRlGAUgASgFIjUKFEFLTXNnTm90aWZ5UGxheWVyQWN0EhAK",
-            "CGNoYWlyX2lkGAEgASgFEgsKA2FjdBgCIAEoBSpnCgxFQUtHYW1lU3RhdGUS",
-            "DwoLR1NfVFBfUkVBRFkQABIOCgpHU19UUF9ERUFMEAESEQoNR1NfVFBfUExB",
-            "WUlORxACEhEKDUdTX1RQX0NPTVBBUkUQAxIQCgxHU19UUF9SRVNVTFQQBCpV",
-            "Cg5FQUtQbGF5ZXJTdGF0ZRIMCghQU19SRUFEWRAAEgsKB1BTX1BMQVkQARIL",
-            "CgdQU19HSVZFEAISCwoHUFNfRkFJTBADEg4KClBTX1RJTUVPVVQQBCqHAQoL",
-            "RUFLQ2FyZFR5cGUSDQoJQ1RfU0lOR0xFEAASDQoJQ1RfRE9VQkxFEAESDgoK",
-            "Q1RfSklOX0hVQRACEg4KCkNUX1NIVU5fWkkQAxIPCgtDVF9TSFVOX0pJThAE",
-            "Eg0KCUNUX0JBT19aSRAFEg4KCkNUX1NQRUNJQUwQBhIKCgZDVF9NQVgQByqE",
-            "AQoNRUFLR2FtZUFjdGlvbhINCglJbnZhbGRBY3QQABIKCgZHaXZlVXAQARIM",
-            "CghMb29rQ2FyZBACEgsKB0NhbGxCZXQQBBIKCgZBZGRCZXQQCBIPCgtDb21w",
-            "YXJlQ2FyZBAQEhAKDENvbXBhcmVSZXBseRAgEg4KCkFsbENvbXBhcmUQQCq/",
-            "BQoPRUFLTXNnSURTdWJHYW1lEhUKEU1zZ0lEU3ViR2FtZV9OdWxsEAASHgoa",
-            "TXNnSURTdWJHYW1lX0dhbWVTdGFydFJlc3AQARIhCh1Nc2dJRFN1YkdhbWVf",
-            "Tm90aWZ5QWN0aW9uUmVzcBACEhcKE01zZ0lEU3ViR2FtZV9BY3Rpb24QAxIb",
-            "ChdNc2dJRFN1YkdhbWVfR2l2ZVVwUmVzcBAEEhkKFU1zZ0lEU3ViR2FtZV9M",
-            "b29rQ2FyZBAFEhsKF01zZ0lEU3ViR2FtZV9BZGRCZXRSZXNwEAYSIAocTXNn",
-            "SURTdWJHYW1lX0NvbXBhcmVDYXJkUmVzcBAHEh8KG01zZ0lEU3ViR2FtZV9D",
-            "b21wYXJlUmV0UmVzcBAIEh8KG01zZ0lEU3ViR2FtZV9HYW1lUmVzdWx0UmVz",
-            "cBAJEiAKHE1zZ0lEU3ViR2FtZV9Ob3RpZnlTdGF0ZVJlc3AQChIcChhNc2dJ",
-            "RFN1YkdhbWVfVGltZU91dFJlc3AQCxIdChlNc2dJRFN1YkdhbWVfVGltZU91",
-            "dFJlYWR5EAwSIQodTXNnSURTdWJHYW1lX1RpbWVPdXRSZWFkeVJlc3AQDRIg",
-            "ChxNc2dJRFN1YkdhbWVfVGltZU91dEtpY2tSZXNwEA4SJgoiTXNnSURTdWJH",
-            "YW1lX05vdGlmeVN5c3RlbUNoZWF0UmVzcBAUEiMKH01zZ0lEU3ViR2FtZV9O",
-            "b3RpZnlDYXJkVHlwZVJlc3AQFRIgChxNc2dJRFN1YkdhbWVfTm90aWZ5SXNN",
-            "YXhSZXNwEBYSJwojTXNnSURTdWJHYW1lX05vdGlmeVJlbWFpbkRvdWJsZVJl",
-            "c3AQFxIgChxNc2dJRFN1YkdhbWVfTm90aWZ5Um91bmRSZXNwEBgSIgoeTXNn",
-            "SURTdWJHYW1lX05vdGlmeUxhc3RBY3RSZXNwEBliBnByb3RvMw=="));
+            "dmVfaWQYBSABKAUSNQoNY29tcGFyZV9jYXJkcxgGIAEoCzIeLlRlZW5QYXR0",
+            "aV9BSzQ3LkFLTXNnSGFuZENhcmRzEjUKDXBhc3NpdmVfY2FyZHMYByABKAsy",
+            "Hi5UZWVuUGF0dGlfQUs0Ny5BS01zZ0hhbmRDYXJkcxIQCghpc19hZ3JlZRgI",
+            "IAEoCCKTAQoPQUtNc2dHYW1lUmVzdWx0EhAKCGdhbWVfdGF4GAEgASgFEhIK",
+            "CmdhbWVfc2NvcmUYAiADKAMSEQoJY2FyZF90eXBlGAMgAygFEjQKDHBsYXll",
+            "cl9oYW5kcxgEIAMoCzIeLlRlZW5QYXR0aV9BSzQ3LkFLTXNnSGFuZENhcmRz",
+            "EhEKCWVuZF9zdGF0ZRgFIAEoBSI1ChRBS01zZ05vdGlmeVBsYXllckFjdBIQ",
+            "CghjaGFpcl9pZBgBIAEoBRILCgNhY3QYAiABKAUqZwoMRUFLR2FtZVN0YXRl",
+            "Eg8KC0dTX1RQX1JFQURZEAASDgoKR1NfVFBfREVBTBABEhEKDUdTX1RQX1BM",
+            "QVlJTkcQAhIRCg1HU19UUF9DT01QQVJFEAMSEAoMR1NfVFBfUkVTVUxUEAQq",
+            "VQoORUFLUGxheWVyU3RhdGUSDAoIUFNfUkVBRFkQABILCgdQU19QTEFZEAES",
+            "CwoHUFNfR0lWRRACEgsKB1BTX0ZBSUwQAxIOCgpQU19USU1FT1VUEAQqhwEK",
+            "C0VBS0NhcmRUeXBlEg0KCUNUX1NJTkdMRRAAEg0KCUNUX0RPVUJMRRABEg4K",
+            "CkNUX0pJTl9IVUEQAhIOCgpDVF9TSFVOX1pJEAMSDwoLQ1RfU0hVTl9KSU4Q",
+            "BBINCglDVF9CQU9fWkkQBRIOCgpDVF9TUEVDSUFMEAYSCgoGQ1RfTUFYEAcq",
+            "hAEKDUVBS0dhbWVBY3Rpb24SDQoJSW52YWxkQWN0EAASCgoGR2l2ZVVwEAES",
+            "DAoITG9va0NhcmQQAhILCgdDYWxsQmV0EAQSCgoGQWRkQmV0EAgSDwoLQ29t",
+            "cGFyZUNhcmQQEBIQCgxDb21wYXJlUmVwbHkQIBIOCgpBbGxDb21wYXJlEEAq",
+            "vwUKD0VBS01zZ0lEU3ViR2FtZRIVChFNc2dJRFN1YkdhbWVfTnVsbBAAEh4K",
+            "Gk1zZ0lEU3ViR2FtZV9HYW1lU3RhcnRSZXNwEAESIQodTXNnSURTdWJHYW1l",
+            "X05vdGlmeUFjdGlvblJlc3AQAhIXChNNc2dJRFN1YkdhbWVfQWN0aW9uEAMS",
+            "GwoXTXNnSURTdWJHYW1lX0dpdmVVcFJlc3AQBBIZChVNc2dJRFN1YkdhbWVf",
+            "TG9va0NhcmQQBRIbChdNc2dJRFN1YkdhbWVfQWRkQmV0UmVzcBAGEiAKHE1z",
+            "Z0lEU3ViR2FtZV9Db21wYXJlQ2FyZFJlc3AQBxIfChtNc2dJRFN1YkdhbWVf",
+            "Q29tcGFyZVJldFJlc3AQCBIfChtNc2dJRFN1YkdhbWVfR2FtZVJlc3VsdFJl",
+            "c3AQCRIgChxNc2dJRFN1YkdhbWVfTm90aWZ5U3RhdGVSZXNwEAoSHAoYTXNn",
+            "SURTdWJHYW1lX1RpbWVPdXRSZXNwEAsSHQoZTXNnSURTdWJHYW1lX1RpbWVP",
+            "dXRSZWFkeRAMEiEKHU1zZ0lEU3ViR2FtZV9UaW1lT3V0UmVhZHlSZXNwEA0S",
+            "IAocTXNnSURTdWJHYW1lX1RpbWVPdXRLaWNrUmVzcBAOEiYKIk1zZ0lEU3Vi",
+            "R2FtZV9Ob3RpZnlTeXN0ZW1DaGVhdFJlc3AQFBIjCh9Nc2dJRFN1YkdhbWVf",
+            "Tm90aWZ5Q2FyZFR5cGVSZXNwEBUSIAocTXNnSURTdWJHYW1lX05vdGlmeUlz",
+            "TWF4UmVzcBAWEicKI01zZ0lEU3ViR2FtZV9Ob3RpZnlSZW1haW5Eb3VibGVS",
+            "ZXNwEBcSIAocTXNnSURTdWJHYW1lX05vdGlmeVJvdW5kUmVzcBAYEiIKHk1z",
+            "Z0lEU3ViR2FtZV9Ob3RpZnlMYXN0QWN0UmVzcBAZYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::TeenPattiAK47.EAKGameState), typeof(global::TeenPattiAK47.EAKPlayerState), typeof(global::TeenPattiAK47.EAKCardType), typeof(global::TeenPattiAK47.EAKGameAction), typeof(global::TeenPattiAK47.EAKMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -108,7 +107,7 @@ namespace TeenPattiAK47 {
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiAK47.AKMsgLookCardResp), global::TeenPattiAK47.AKMsgLookCardResp.Parser, new[]{ "ChairId", "CardType", "CurChairId", "NewAct", "HandlCards" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiAK47.AKMsgAddBetResp), global::TeenPattiAK47.AKMsgAddBetResp.Parser, new[]{ "AddChairId", "AddScore", "BetType" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiAK47.AKMsgCompareCardResp), global::TeenPattiAK47.AKMsgCompareCardResp.Parser, new[]{ "ChairId", "CompareId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiAK47.AKMsgCompareCardRetResp), global::TeenPattiAK47.AKMsgCompareCardRetResp.Parser, new[]{ "CurrentChairId", "CurrentAct", "LostId", "CompareId", "PassiveId", "CompareType", "PassiveType", "CompareCards", "PassiveCards", "IsAgree" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiAK47.AKMsgCompareCardRetResp), global::TeenPattiAK47.AKMsgCompareCardRetResp.Parser, new[]{ "CurrentChairId", "CurrentAct", "LostId", "CompareId", "PassiveId", "CompareCards", "PassiveCards", "IsAgree" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiAK47.AKMsgGameResult), global::TeenPattiAK47.AKMsgGameResult.Parser, new[]{ "GameTax", "GameScore", "CardType", "PlayerHands", "EndState" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiAK47.AKMsgNotifyPlayerAct), global::TeenPattiAK47.AKMsgNotifyPlayerAct.Parser, new[]{ "ChairId", "Act" }, null, null, null, null)
           }));
@@ -4011,8 +4010,6 @@ namespace TeenPattiAK47 {
       lostId_ = other.lostId_;
       compareId_ = other.compareId_;
       passiveId_ = other.passiveId_;
-      compareType_ = other.compareType_;
-      passiveType_ = other.passiveType_;
       compareCards_ = other.compareCards_ != null ? other.compareCards_.Clone() : null;
       passiveCards_ = other.passiveCards_ != null ? other.passiveCards_.Clone() : null;
       isAgree_ = other.isAgree_;
@@ -4094,36 +4091,8 @@ namespace TeenPattiAK47 {
       }
     }
 
-    /// <summary>Field number for the "compare_type" field.</summary>
-    public const int CompareTypeFieldNumber = 6;
-    private int compareType_;
-    /// <summary>
-    ///比牌玩家牌型
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CompareType {
-      get { return compareType_; }
-      set {
-        compareType_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "passive_type" field.</summary>
-    public const int PassiveTypeFieldNumber = 7;
-    private int passiveType_;
-    /// <summary>
-    ///被比玩家牌型
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int PassiveType {
-      get { return passiveType_; }
-      set {
-        passiveType_ = value;
-      }
-    }
-
     /// <summary>Field number for the "compare_cards" field.</summary>
-    public const int CompareCardsFieldNumber = 8;
+    public const int CompareCardsFieldNumber = 6;
     private global::TeenPattiAK47.AKMsgHandCards compareCards_;
     /// <summary>
     ///比牌玩家手牌
@@ -4137,7 +4106,7 @@ namespace TeenPattiAK47 {
     }
 
     /// <summary>Field number for the "passive_cards" field.</summary>
-    public const int PassiveCardsFieldNumber = 9;
+    public const int PassiveCardsFieldNumber = 7;
     private global::TeenPattiAK47.AKMsgHandCards passiveCards_;
     /// <summary>
     ///被比玩家手牌
@@ -4151,7 +4120,7 @@ namespace TeenPattiAK47 {
     }
 
     /// <summary>Field number for the "is_agree" field.</summary>
-    public const int IsAgreeFieldNumber = 10;
+    public const int IsAgreeFieldNumber = 8;
     private bool isAgree_;
     /// <summary>
     ///同意否
@@ -4182,8 +4151,6 @@ namespace TeenPattiAK47 {
       if (LostId != other.LostId) return false;
       if (CompareId != other.CompareId) return false;
       if (PassiveId != other.PassiveId) return false;
-      if (CompareType != other.CompareType) return false;
-      if (PassiveType != other.PassiveType) return false;
       if (!object.Equals(CompareCards, other.CompareCards)) return false;
       if (!object.Equals(PassiveCards, other.PassiveCards)) return false;
       if (IsAgree != other.IsAgree) return false;
@@ -4198,8 +4165,6 @@ namespace TeenPattiAK47 {
       if (LostId != 0) hash ^= LostId.GetHashCode();
       if (CompareId != 0) hash ^= CompareId.GetHashCode();
       if (PassiveId != 0) hash ^= PassiveId.GetHashCode();
-      if (CompareType != 0) hash ^= CompareType.GetHashCode();
-      if (PassiveType != 0) hash ^= PassiveType.GetHashCode();
       if (compareCards_ != null) hash ^= CompareCards.GetHashCode();
       if (passiveCards_ != null) hash ^= PassiveCards.GetHashCode();
       if (IsAgree != false) hash ^= IsAgree.GetHashCode();
@@ -4239,24 +4204,16 @@ namespace TeenPattiAK47 {
         output.WriteRawTag(40);
         output.WriteInt32(PassiveId);
       }
-      if (CompareType != 0) {
-        output.WriteRawTag(48);
-        output.WriteInt32(CompareType);
-      }
-      if (PassiveType != 0) {
-        output.WriteRawTag(56);
-        output.WriteInt32(PassiveType);
-      }
       if (compareCards_ != null) {
-        output.WriteRawTag(66);
+        output.WriteRawTag(50);
         output.WriteMessage(CompareCards);
       }
       if (passiveCards_ != null) {
-        output.WriteRawTag(74);
+        output.WriteRawTag(58);
         output.WriteMessage(PassiveCards);
       }
       if (IsAgree != false) {
-        output.WriteRawTag(80);
+        output.WriteRawTag(64);
         output.WriteBool(IsAgree);
       }
       if (_unknownFields != null) {
@@ -4288,24 +4245,16 @@ namespace TeenPattiAK47 {
         output.WriteRawTag(40);
         output.WriteInt32(PassiveId);
       }
-      if (CompareType != 0) {
-        output.WriteRawTag(48);
-        output.WriteInt32(CompareType);
-      }
-      if (PassiveType != 0) {
-        output.WriteRawTag(56);
-        output.WriteInt32(PassiveType);
-      }
       if (compareCards_ != null) {
-        output.WriteRawTag(66);
+        output.WriteRawTag(50);
         output.WriteMessage(CompareCards);
       }
       if (passiveCards_ != null) {
-        output.WriteRawTag(74);
+        output.WriteRawTag(58);
         output.WriteMessage(PassiveCards);
       }
       if (IsAgree != false) {
-        output.WriteRawTag(80);
+        output.WriteRawTag(64);
         output.WriteBool(IsAgree);
       }
       if (_unknownFields != null) {
@@ -4331,12 +4280,6 @@ namespace TeenPattiAK47 {
       }
       if (PassiveId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(PassiveId);
-      }
-      if (CompareType != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CompareType);
-      }
-      if (PassiveType != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PassiveType);
       }
       if (compareCards_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(CompareCards);
@@ -4372,12 +4315,6 @@ namespace TeenPattiAK47 {
       }
       if (other.PassiveId != 0) {
         PassiveId = other.PassiveId;
-      }
-      if (other.CompareType != 0) {
-        CompareType = other.CompareType;
-      }
-      if (other.PassiveType != 0) {
-        PassiveType = other.PassiveType;
       }
       if (other.compareCards_ != null) {
         if (compareCards_ == null) {
@@ -4428,29 +4365,21 @@ namespace TeenPattiAK47 {
             PassiveId = input.ReadInt32();
             break;
           }
-          case 48: {
-            CompareType = input.ReadInt32();
-            break;
-          }
-          case 56: {
-            PassiveType = input.ReadInt32();
-            break;
-          }
-          case 66: {
+          case 50: {
             if (compareCards_ == null) {
               CompareCards = new global::TeenPattiAK47.AKMsgHandCards();
             }
             input.ReadMessage(CompareCards);
             break;
           }
-          case 74: {
+          case 58: {
             if (passiveCards_ == null) {
               PassiveCards = new global::TeenPattiAK47.AKMsgHandCards();
             }
             input.ReadMessage(PassiveCards);
             break;
           }
-          case 80: {
+          case 64: {
             IsAgree = input.ReadBool();
             break;
           }
@@ -4488,29 +4417,21 @@ namespace TeenPattiAK47 {
             PassiveId = input.ReadInt32();
             break;
           }
-          case 48: {
-            CompareType = input.ReadInt32();
-            break;
-          }
-          case 56: {
-            PassiveType = input.ReadInt32();
-            break;
-          }
-          case 66: {
+          case 50: {
             if (compareCards_ == null) {
               CompareCards = new global::TeenPattiAK47.AKMsgHandCards();
             }
             input.ReadMessage(CompareCards);
             break;
           }
-          case 74: {
+          case 58: {
             if (passiveCards_ == null) {
               PassiveCards = new global::TeenPattiAK47.AKMsgHandCards();
             }
             input.ReadMessage(PassiveCards);
             break;
           }
-          case 80: {
+          case 64: {
             IsAgree = input.ReadBool();
             break;
           }
