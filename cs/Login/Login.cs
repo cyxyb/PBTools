@@ -123,28 +123,28 @@ public static partial class LoginReflection {
           "ZXJfZ29sZBgCIAEoAyKDAQoaTXNnVHJhbnNmZXJPcGVyYXRlU3luY1Jlc3AS",
           "EQoJcmV0X3ZhbHVlGAEgASgFEhQKDHNlbmRfdXNlcl9pZBgDIAEoBRIQCghh",
           "ZGRfZ29sZBgEIAEoAxIVCg1yZWNlaXZlX3N0YXRlGAYgASgDEhMKC3RyYW5z",
-          "ZmVyX2lkGAcgASgDIj4KFk1zZ1RyYW5zZmVyUmVjZWl2ZVJlc3ASEQoJcmV0",
-          "X3ZhbHVlGAEgASgFEhEKCXVzZXJfZ29sZBgCIAEoAyKjAQoRTXNnVHJhbnNm",
-          "ZXJSZWNvcmQSFAoMc2VuZF91c2VyX2lkGAEgASgFEhAKCG5pY2tuYW1lGAIg",
-          "ASgJEhUKDXRyYW5zZmVyX2dvbGQYAyABKAMSDQoFdGltZXIYBSABKAkSFAoM",
-          "cmVjdl91c2VyX2lkGAYgASgFEhUKDXJlY2VpdmVfc3RhdGUYByABKAUSEwoL",
-          "dHJhbnNmZXJfaWQYCCABKAMiPAoVTXNnVHJhbnNmZXJSZWNvcmRSZXNwEiMK",
-          "B3JlY29yZHMYASADKAsyEi5Nc2dUcmFuc2ZlclJlY29yZCIwCgxNc2dQaG9u",
-          "ZUNvZGUSEQoJYXJlYV9jb2RlGAEgASgJEg0KBXBob25lGAIgASgJIiwKB01z",
-          "Z0l0ZW0SDwoHaXRlbV9pZBgBIAEoBRIQCghpdGVtX251bRgCIAEoAyInCg1N",
-          "c2dQbGF5ZXJJdGVtEhYKBGl0ZW0YASADKAsyCC5Nc2dJdGVtIkwKGE1zZ1Ry",
-          "YW5zZmVyUXVlcnlOaWNrbmFtZRIRCglyZXRfVmFsdWUYASABKAUSEAoIbmlj",
-          "a25hbWUYAiABKAkSCwoDdGF4GAMgASgFIp4BChZNc2dTdWJhZ2VudEluZm9y",
-          "bWF0aW9uEhYKDmFnZW50X25pY2tuYW1lGAEgASgJEhUKDWFnZW50X3VzZXJf",
-          "aWQYAiABKAUSEgoKYWdlbnRfdHlwZRgDIAEoCBIWCg50b3RhbF9zaGlmdF90",
-          "bxgEIAEoAxIWCg50b3RhbF9yb2xsX291dBgFIAEoAxIRCgl2aXBfbGV2ZWwY",
-          "BiABKAUiSwocTXNnVHRvdGFsU3ViYWdlbnRJbmZvcm1hdGlvbhIrCgphZ2Vu",
-          "dF9pbmZvGAEgAygLMhcuTXNnU3ViYWdlbnRJbmZvcm1hdGlvbiJdChFNc2dC",
-          "aW5kUGFyZW50SW5mbxIPCgd1c2VyX2lkGAEgASgFEg4KBmF2YXRhchgCIAEo",
-          "CRIUCgxhdmF0YXJfZnJhbWUYAyABKAUSEQoJbmlja19uYW1lGAQgASgJIl4K",
-          "FU1zZ0JpbmRJbnZpdGVDb2RlUmVzcBIQCghyZXNfY29kZRgBIAEoBRIRCgl1",
-          "c2VyX3R5cGUYAiABKAUSIAoEaW5mbxgDIAEoCzISLk1zZ0JpbmRQYXJlbnRJ",
-          "bmZvYgZwcm90bzM="));
+          "ZmVyX2lkGAcgASgDIkAKFk1zZ1RyYW5zZmVyUmVjZWl2ZVJlc3ASEQoJcmV0",
+          "X3ZhbHVlGAEgASgFEhMKC2NoYW5nZV9nb2xkGAIgASgDIqMBChFNc2dUcmFu",
+          "c2ZlclJlY29yZBIUCgxzZW5kX3VzZXJfaWQYASABKAUSEAoIbmlja25hbWUY",
+          "AiABKAkSFQoNdHJhbnNmZXJfZ29sZBgDIAEoAxINCgV0aW1lchgFIAEoCRIU",
+          "CgxyZWN2X3VzZXJfaWQYBiABKAUSFQoNcmVjZWl2ZV9zdGF0ZRgHIAEoBRIT",
+          "Cgt0cmFuc2Zlcl9pZBgIIAEoAyI8ChVNc2dUcmFuc2ZlclJlY29yZFJlc3AS",
+          "IwoHcmVjb3JkcxgBIAMoCzISLk1zZ1RyYW5zZmVyUmVjb3JkIjAKDE1zZ1Bo",
+          "b25lQ29kZRIRCglhcmVhX2NvZGUYASABKAkSDQoFcGhvbmUYAiABKAkiLAoH",
+          "TXNnSXRlbRIPCgdpdGVtX2lkGAEgASgFEhAKCGl0ZW1fbnVtGAIgASgDIicK",
+          "DU1zZ1BsYXllckl0ZW0SFgoEaXRlbRgBIAMoCzIILk1zZ0l0ZW0iTAoYTXNn",
+          "VHJhbnNmZXJRdWVyeU5pY2tuYW1lEhEKCXJldF9WYWx1ZRgBIAEoBRIQCghu",
+          "aWNrbmFtZRgCIAEoCRILCgN0YXgYAyABKAUingEKFk1zZ1N1YmFnZW50SW5m",
+          "b3JtYXRpb24SFgoOYWdlbnRfbmlja25hbWUYASABKAkSFQoNYWdlbnRfdXNl",
+          "cl9pZBgCIAEoBRISCgphZ2VudF90eXBlGAMgASgIEhYKDnRvdGFsX3NoaWZ0",
+          "X3RvGAQgASgDEhYKDnRvdGFsX3JvbGxfb3V0GAUgASgDEhEKCXZpcF9sZXZl",
+          "bBgGIAEoBSJLChxNc2dUdG90YWxTdWJhZ2VudEluZm9ybWF0aW9uEisKCmFn",
+          "ZW50X2luZm8YASADKAsyFy5Nc2dTdWJhZ2VudEluZm9ybWF0aW9uIl0KEU1z",
+          "Z0JpbmRQYXJlbnRJbmZvEg8KB3VzZXJfaWQYASABKAUSDgoGYXZhdGFyGAIg",
+          "ASgJEhQKDGF2YXRhcl9mcmFtZRgDIAEoBRIRCgluaWNrX25hbWUYBCABKAki",
+          "XgoVTXNnQmluZEludml0ZUNvZGVSZXNwEhAKCHJlc19jb2RlGAEgASgFEhEK",
+          "CXVzZXJfdHlwZRgCIAEoBRIgCgRpbmZvGAMgASgLMhIuTXNnQmluZFBhcmVu",
+          "dEluZm9iBnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -187,7 +187,7 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTopListResp), global::MsgTopListResp.Parser, new[]{ "UserId", "RankType", "ThisRankNdex", "ThisGold", "IsEnd", "Lists" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTransferOperateResp), global::MsgTransferOperateResp.Parser, new[]{ "RetValue", "UserGold" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTransferOperateSyncResp), global::MsgTransferOperateSyncResp.Parser, new[]{ "RetValue", "SendUserId", "AddGold", "ReceiveState", "TransferId" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgTransferReceiveResp), global::MsgTransferReceiveResp.Parser, new[]{ "RetValue", "UserGold" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgTransferReceiveResp), global::MsgTransferReceiveResp.Parser, new[]{ "RetValue", "ChangeGold" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTransferRecord), global::MsgTransferRecord.Parser, new[]{ "SendUserId", "Nickname", "TransferGold", "Timer", "RecvUserId", "ReceiveState", "TransferId" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTransferRecordResp), global::MsgTransferRecordResp.Parser, new[]{ "Records" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPhoneCode), global::MsgPhoneCode.Parser, new[]{ "AreaCode", "Phone" }, null, null, null, null),
@@ -12852,7 +12852,7 @@ public sealed partial class MsgTransferReceiveResp : pb::IMessage<MsgTransferRec
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public MsgTransferReceiveResp(MsgTransferReceiveResp other) : this() {
     retValue_ = other.retValue_;
-    userGold_ = other.userGold_;
+    changeGold_ = other.changeGold_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -12875,17 +12875,17 @@ public sealed partial class MsgTransferReceiveResp : pb::IMessage<MsgTransferRec
     }
   }
 
-  /// <summary>Field number for the "user_gold" field.</summary>
-  public const int UserGoldFieldNumber = 2;
-  private long userGold_;
+  /// <summary>Field number for the "change_gold" field.</summary>
+  public const int ChangeGoldFieldNumber = 2;
+  private long changeGold_;
   /// <summary>
-  ///用户金币
+  ///用户领取金币
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public long UserGold {
-    get { return userGold_; }
+  public long ChangeGold {
+    get { return changeGold_; }
     set {
-      userGold_ = value;
+      changeGold_ = value;
     }
   }
 
@@ -12903,7 +12903,7 @@ public sealed partial class MsgTransferReceiveResp : pb::IMessage<MsgTransferRec
       return true;
     }
     if (RetValue != other.RetValue) return false;
-    if (UserGold != other.UserGold) return false;
+    if (ChangeGold != other.ChangeGold) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -12911,7 +12911,7 @@ public sealed partial class MsgTransferReceiveResp : pb::IMessage<MsgTransferRec
   public override int GetHashCode() {
     int hash = 1;
     if (RetValue != 0) hash ^= RetValue.GetHashCode();
-    if (UserGold != 0L) hash ^= UserGold.GetHashCode();
+    if (ChangeGold != 0L) hash ^= ChangeGold.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -12932,9 +12932,9 @@ public sealed partial class MsgTransferReceiveResp : pb::IMessage<MsgTransferRec
       output.WriteRawTag(8);
       output.WriteInt32(RetValue);
     }
-    if (UserGold != 0L) {
+    if (ChangeGold != 0L) {
       output.WriteRawTag(16);
-      output.WriteInt64(UserGold);
+      output.WriteInt64(ChangeGold);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -12949,9 +12949,9 @@ public sealed partial class MsgTransferReceiveResp : pb::IMessage<MsgTransferRec
       output.WriteRawTag(8);
       output.WriteInt32(RetValue);
     }
-    if (UserGold != 0L) {
+    if (ChangeGold != 0L) {
       output.WriteRawTag(16);
-      output.WriteInt64(UserGold);
+      output.WriteInt64(ChangeGold);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
@@ -12965,8 +12965,8 @@ public sealed partial class MsgTransferReceiveResp : pb::IMessage<MsgTransferRec
     if (RetValue != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(RetValue);
     }
-    if (UserGold != 0L) {
-      size += 1 + pb::CodedOutputStream.ComputeInt64Size(UserGold);
+    if (ChangeGold != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(ChangeGold);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -12982,8 +12982,8 @@ public sealed partial class MsgTransferReceiveResp : pb::IMessage<MsgTransferRec
     if (other.RetValue != 0) {
       RetValue = other.RetValue;
     }
-    if (other.UserGold != 0L) {
-      UserGold = other.UserGold;
+    if (other.ChangeGold != 0L) {
+      ChangeGold = other.ChangeGold;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -13004,7 +13004,7 @@ public sealed partial class MsgTransferReceiveResp : pb::IMessage<MsgTransferRec
           break;
         }
         case 16: {
-          UserGold = input.ReadInt64();
+          ChangeGold = input.ReadInt64();
           break;
         }
       }
@@ -13026,7 +13026,7 @@ public sealed partial class MsgTransferReceiveResp : pb::IMessage<MsgTransferRec
           break;
         }
         case 16: {
-          UserGold = input.ReadInt64();
+          ChangeGold = input.ReadInt64();
           break;
         }
       }

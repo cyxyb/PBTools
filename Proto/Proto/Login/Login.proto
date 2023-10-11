@@ -376,7 +376,7 @@ message MsgTransferOperateSyncResp
 message MsgTransferReceiveResp
 {
 	int32 ret_value 	= 1;				//领取返回值 0:成功 失败：多语言码
-	int64 user_gold 	= 2;				//用户金币
+	int64 change_gold 	= 2;				//用户领取金币
 }
 
 //银行转账记录

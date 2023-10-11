@@ -1287,7 +1287,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::MsgTransferReceiveResp, ret_value_),
-  PROTOBUF_FIELD_OFFSET(::MsgTransferReceiveResp, user_gold_),
+  PROTOBUF_FIELD_OFFSET(::MsgTransferReceiveResp, change_gold_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgTransferRecord, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1589,31 +1589,31 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "_gold\030\002 \001(\003\"\203\001\n\032MsgTransferOperateSyncRe"
   "sp\022\021\n\tret_value\030\001 \001(\005\022\024\n\014send_user_id\030\003 "
   "\001(\005\022\020\n\010add_gold\030\004 \001(\003\022\025\n\rreceive_state\030\006"
-  " \001(\003\022\023\n\013transfer_id\030\007 \001(\003\">\n\026MsgTransfer"
-  "ReceiveResp\022\021\n\tret_value\030\001 \001(\005\022\021\n\tuser_g"
-  "old\030\002 \001(\003\"\243\001\n\021MsgTransferRecord\022\024\n\014send_"
-  "user_id\030\001 \001(\005\022\020\n\010nickname\030\002 \001(\t\022\025\n\rtrans"
-  "fer_gold\030\003 \001(\003\022\r\n\005timer\030\005 \001(\t\022\024\n\014recv_us"
-  "er_id\030\006 \001(\005\022\025\n\rreceive_state\030\007 \001(\005\022\023\n\013tr"
-  "ansfer_id\030\010 \001(\003\"<\n\025MsgTransferRecordResp"
-  "\022#\n\007records\030\001 \003(\0132\022.MsgTransferRecord\"0\n"
-  "\014MsgPhoneCode\022\021\n\tarea_code\030\001 \001(\t\022\r\n\005phon"
-  "e\030\002 \001(\t\",\n\007MsgItem\022\017\n\007item_id\030\001 \001(\005\022\020\n\010i"
-  "tem_num\030\002 \001(\003\"\'\n\rMsgPlayerItem\022\026\n\004item\030\001"
-  " \003(\0132\010.MsgItem\"L\n\030MsgTransferQueryNickna"
-  "me\022\021\n\tret_Value\030\001 \001(\005\022\020\n\010nickname\030\002 \001(\t\022"
-  "\013\n\003tax\030\003 \001(\005\"\236\001\n\026MsgSubagentInformation\022"
-  "\026\n\016agent_nickname\030\001 \001(\t\022\025\n\ragent_user_id"
-  "\030\002 \001(\005\022\022\n\nagent_type\030\003 \001(\010\022\026\n\016total_shif"
-  "t_to\030\004 \001(\003\022\026\n\016total_roll_out\030\005 \001(\003\022\021\n\tvi"
-  "p_level\030\006 \001(\005\"K\n\034MsgTtotalSubagentInform"
-  "ation\022+\n\nagent_info\030\001 \003(\0132\027.MsgSubagentI"
-  "nformation\"]\n\021MsgBindParentInfo\022\017\n\007user_"
-  "id\030\001 \001(\005\022\016\n\006avatar\030\002 \001(\t\022\024\n\014avatar_frame"
-  "\030\003 \001(\005\022\021\n\tnick_name\030\004 \001(\t\"^\n\025MsgBindInvi"
-  "teCodeResp\022\020\n\010res_code\030\001 \001(\005\022\021\n\tuser_typ"
-  "e\030\002 \001(\005\022 \n\004info\030\003 \001(\0132\022.MsgBindParentInf"
-  "ob\006proto3"
+  " \001(\003\022\023\n\013transfer_id\030\007 \001(\003\"@\n\026MsgTransfer"
+  "ReceiveResp\022\021\n\tret_value\030\001 \001(\005\022\023\n\013change"
+  "_gold\030\002 \001(\003\"\243\001\n\021MsgTransferRecord\022\024\n\014sen"
+  "d_user_id\030\001 \001(\005\022\020\n\010nickname\030\002 \001(\t\022\025\n\rtra"
+  "nsfer_gold\030\003 \001(\003\022\r\n\005timer\030\005 \001(\t\022\024\n\014recv_"
+  "user_id\030\006 \001(\005\022\025\n\rreceive_state\030\007 \001(\005\022\023\n\013"
+  "transfer_id\030\010 \001(\003\"<\n\025MsgTransferRecordRe"
+  "sp\022#\n\007records\030\001 \003(\0132\022.MsgTransferRecord\""
+  "0\n\014MsgPhoneCode\022\021\n\tarea_code\030\001 \001(\t\022\r\n\005ph"
+  "one\030\002 \001(\t\",\n\007MsgItem\022\017\n\007item_id\030\001 \001(\005\022\020\n"
+  "\010item_num\030\002 \001(\003\"\'\n\rMsgPlayerItem\022\026\n\004item"
+  "\030\001 \003(\0132\010.MsgItem\"L\n\030MsgTransferQueryNick"
+  "name\022\021\n\tret_Value\030\001 \001(\005\022\020\n\010nickname\030\002 \001("
+  "\t\022\013\n\003tax\030\003 \001(\005\"\236\001\n\026MsgSubagentInformatio"
+  "n\022\026\n\016agent_nickname\030\001 \001(\t\022\025\n\ragent_user_"
+  "id\030\002 \001(\005\022\022\n\nagent_type\030\003 \001(\010\022\026\n\016total_sh"
+  "ift_to\030\004 \001(\003\022\026\n\016total_roll_out\030\005 \001(\003\022\021\n\t"
+  "vip_level\030\006 \001(\005\"K\n\034MsgTtotalSubagentInfo"
+  "rmation\022+\n\nagent_info\030\001 \003(\0132\027.MsgSubagen"
+  "tInformation\"]\n\021MsgBindParentInfo\022\017\n\007use"
+  "r_id\030\001 \001(\005\022\016\n\006avatar\030\002 \001(\t\022\024\n\014avatar_fra"
+  "me\030\003 \001(\005\022\021\n\tnick_name\030\004 \001(\t\"^\n\025MsgBindIn"
+  "viteCodeResp\022\020\n\010res_code\030\001 \001(\005\022\021\n\tuser_t"
+  "ype\030\002 \001(\005\022 \n\004info\030\003 \001(\0132\022.MsgBindParentI"
+  "nfob\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Login_2eproto_deps[1] = {
 };
@@ -1671,7 +1671,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Login_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Login_2eproto = {
-  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 5489,
+  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 5491,
   &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 50, 0,
   schemas, file_default_instances, TableStruct_Login_2eproto::offsets,
   file_level_metadata_Login_2eproto, 50, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
@@ -13731,17 +13731,17 @@ MsgTransferReceiveResp::MsgTransferReceiveResp(::PROTOBUF_NAMESPACE_ID::Arena* a
 MsgTransferReceiveResp::MsgTransferReceiveResp(const MsgTransferReceiveResp& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&user_gold_, &from.user_gold_,
+  ::memcpy(&change_gold_, &from.change_gold_,
     static_cast<size_t>(reinterpret_cast<char*>(&ret_value_) -
-    reinterpret_cast<char*>(&user_gold_)) + sizeof(ret_value_));
+    reinterpret_cast<char*>(&change_gold_)) + sizeof(ret_value_));
   // @@protoc_insertion_point(copy_constructor:MsgTransferReceiveResp)
 }
 
 void MsgTransferReceiveResp::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&user_gold_) - reinterpret_cast<char*>(this)),
+      reinterpret_cast<char*>(&change_gold_) - reinterpret_cast<char*>(this)),
       0, static_cast<size_t>(reinterpret_cast<char*>(&ret_value_) -
-      reinterpret_cast<char*>(&user_gold_)) + sizeof(ret_value_));
+      reinterpret_cast<char*>(&change_gold_)) + sizeof(ret_value_));
 }
 
 MsgTransferReceiveResp::~MsgTransferReceiveResp() {
@@ -13775,9 +13775,9 @@ void MsgTransferReceiveResp::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&user_gold_, 0, static_cast<size_t>(
+  ::memset(&change_gold_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&ret_value_) -
-      reinterpret_cast<char*>(&user_gold_)) + sizeof(ret_value_));
+      reinterpret_cast<char*>(&change_gold_)) + sizeof(ret_value_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -13795,10 +13795,10 @@ const char* MsgTransferReceiveResp::_InternalParse(const char* ptr, ::PROTOBUF_N
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int64 user_gold = 2;
+      // int64 change_gold = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          user_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          change_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -13836,10 +13836,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_ret_value(), target);
   }
 
-  // int64 user_gold = 2;
-  if (this->user_gold() != 0) {
+  // int64 change_gold = 2;
+  if (this->change_gold() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_user_gold(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_change_gold(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -13858,11 +13858,11 @@ size_t MsgTransferReceiveResp::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // int64 user_gold = 2;
-  if (this->user_gold() != 0) {
+  // int64 change_gold = 2;
+  if (this->change_gold() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_user_gold());
+        this->_internal_change_gold());
   }
 
   // int32 ret_value = 1;
@@ -13903,8 +13903,8 @@ void MsgTransferReceiveResp::MergeFrom(const MsgTransferReceiveResp& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.user_gold() != 0) {
-    _internal_set_user_gold(from._internal_user_gold());
+  if (from.change_gold() != 0) {
+    _internal_set_change_gold(from._internal_change_gold());
   }
   if (from.ret_value() != 0) {
     _internal_set_ret_value(from._internal_ret_value());
@@ -13935,9 +13935,9 @@ void MsgTransferReceiveResp::InternalSwap(MsgTransferReceiveResp* other) {
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(MsgTransferReceiveResp, ret_value_)
       + sizeof(MsgTransferReceiveResp::ret_value_)
-      - PROTOBUF_FIELD_OFFSET(MsgTransferReceiveResp, user_gold_)>(
-          reinterpret_cast<char*>(&user_gold_),
-          reinterpret_cast<char*>(&other->user_gold_));
+      - PROTOBUF_FIELD_OFFSET(MsgTransferReceiveResp, change_gold_)>(
+          reinterpret_cast<char*>(&change_gold_),
+          reinterpret_cast<char*>(&other->change_gold_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MsgTransferReceiveResp::GetMetadata() const {
