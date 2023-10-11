@@ -1,0 +1,176 @@
+syntax = "proto3";
+
+package Rummy;
+
+//桌子状态
+enum ERMGameState
+{	
+	GS_TP_READY		= 0;	//准备
+	GS_TP_DEAL		= 1;	//发牌
+	GS_TP_PLAYING	= 2;	//游戏
+	GS_TP_SHOW		= 3;	//秀牌
+	GS_TP_RESULT	= 4;	//结算
+};
+
+//玩家状态
+enum ERMPlayerState
+{	
+	PS_READY		= 0;	//准备
+	PS_PLAY			= 1;	//游戏
+	PS_GIVE			= 2;	//弃牌
+	PS_TIMEOUT		= 3;	//超时
+};
+
+//操作码
+enum ERMGameAction
+{
+	InvaldAct		= 0;	//无效
+	DropCard		= 1;	//弃牌
+	NaCard			= 2;	//拿牌
+	ChuCard			= 4;	//出牌
+	SortsCard		= 8;	//理牌
+	ShowCard		= 16;	//秀牌
+};
+
+enum ERMColCardType
+{
+	//扑克类型
+	COL_SINGLE		= 0;	//单牌类型
+	COL_BAO_ZI		= 1;	//豹子类型
+	COL_SHUN_ZHI	= 2;	//百搭顺金
+	COL_QING_SHUN	= 3;	//顺金类型
+	COL_MAX			= 4;	//最大牌型
+};
+
+enum ERMMsgIDSubGame
+{
+	MsgIDSubGame_Null					= 0;
+	MsgIDSubGame_GameStartResp			= 1;	//游戏开始(RMMsgGameStartResp)
+	MsgIDSubGame_NotifyActionResp		= 2;	//玩家操作(RMMsgNotifyActionResp)
+	MsgIDSubGame_Action					= 3;	//玩家操作(RMMsgAction)
+	MsgIDSubGame_ActionResp				= 4;	//玩家操作返回(RMMsgAction)
+	MsgIDSubGame_GiveUpResp				= 5;	//玩家弃牌返回(RMMsgGiveUpResp)
+	MsgIDSubGame_GameResultResp			= 6;	//结算(RMMsgGameResult)
+
+	MsgIDSubGame_NotifyStateResp		= 10;	//桌子状态(RMMsgTableState)
+	MsgIDSubGame_TimeOutResp			= 11;	//通知超时(MsgCommonBool)
+	MsgIDSubGame_TimeOutReady			= 12;	//重新准备(MsgCommonBool)
+	MsgIDSubGame_TimeOutReadyResp		= 13;	//准备返回(MsgCommonBool)
+	MsgIDSubGame_TimeOutKickResp		= 14;	//超时踢了游戏(MsgCommonBool)
+
+	/////////////////////////机器人消息///////////////////////
+	MsgIDSubGame_NotifySystemCheatResp	= 20;	//通知系统作弊率
+	MsgIDSubGame_NotifyCardTypeResp		= 21;	//通知牌型
+	MsgIDSubGame_NotifyIsMaxResp		= 22;	//通知是否最大
+	MsgIDSubGame_NotifyRemainDoubleResp	= 23;	//是否剩2人
+	MsgIDSubGame_NotifyRoundResp		= 24;	//通知回合数
+	MsgIDSubGame_NotifyLastActResp		= 25;	//通知玩家行为
+}
+
+message RMColumnInfo
+{
+	int32				start_value		= 1;	//开始值
+	int32				col_type		= 2;	//分组类型
+	repeated	int32	cards			= 3;	//操作玩家椅子号
+}
+
+message RMMsgTableState
+{
+	int32				state			= 1;	//桌子状态
+	int32				out_ime			= 2;	//剩余时间
+}
+
+
+message RMMsgHandCards
+{
+	repeated int32		cards			= 1;	//手牌
+}
+
+message RMMsgPlayerInfo
+{
+	int32					chair_id		= 1;	//玩家椅子号
+	int32					play_status		= 2;	//玩家状态
+	int32					card_type		= 3;	//牌型
+	int64					gold			= 4;	//自己的金币，别人的是空
+	int64					win_gold		= 5;	//输赢分
+	repeated int32			cards			= 6;	//手牌
+	repeated RMColumnInfo 	hand_group_info	= 7;	//手牌分组
+}
+
+//场景消息
+message RMMsgSceneInfo
+{
+	int64			  			max_multiple	= 1;	//最大倍数
+	int64			  			cell_score		= 2;	//底分
+	int32						table_state		= 3;	//桌子状态
+	int32						tax				= 4;	//抽水
+	int32						banker_chair_id	= 5;	//庄家椅子号
+	int32						cur_chair_id	= 6;	//当前操作椅子号
+	int32						cur_chair_act	= 7;	//当前玩家的操作码
+	int32						out_time		= 8;	//当前状态剩余超时时间
+	int32						total_time		= 9;	//当前状态总时间
+
+	int32						wild_card		= 10;	//百搭牌
+	int32						surplus_card_num= 11;	//牌堆牌数量
+	repeated int32				out_cards		= 12;	//失效牌
+
+	repeated RMMsgPlayerInfo 	player_infos 	= 13;	//玩家状态
+
+}
+
+//游戏开始
+message RMMsgGameStartResp
+{
+	int32				cur_chair_id	= 1;	//操作玩家椅子号
+	int32				banker_chair_id	= 2;	//庄家椅子号
+	int64				max_score		= 3;	//最大下注
+	int64				cell_score		= 4;	//底分
+	int64				max_multiple	= 5;	//最大倍数
+
+	int32				wild_card		= 10;	//百搭牌
+	int32				surplus_card_num= 11;	//牌堆牌数量
+	repeated int32		out_cards		= 12;	//失效牌
+
+	repeated int32		play_index		= 6;	//在玩下标
+	repeated int32		cards			= 7;	//手牌
+}
+
+//游戏开始
+message RMMsgNotifyActionResp
+{
+	int32				cur_chair_id	= 1;	//操作玩家椅子号
+	int32				current_act		= 3;	//当前操作码
+	int32				oper_time		= 4;	//操作时间
+}
+
+//玩家操作
+message RMMsgAction
+{
+	int32					act_type		= 1;	//操作标示
+	int32					dest_card		= 2;	//目标牌
+	bool					na_pai_out_card = 3;	//是否拿最后一张了的牌
+	repeated RMColumnInfo 	hand_group_info	= 4;	//手牌分组
+}
+
+//玩家弃牌返回
+message RMMsgGiveUpResp
+{
+	int32					chair_id		= 1;	//玩家椅子号
+	int32					loss_gold		= 2;	//输分
+}
+
+//游戏结果                                  
+message RMMsgGameResult                           
+{                                           
+	int32						game_tax		= 1;	//税收
+	repeated RMMsgPlayerInfo	player_hands	= 2;	//手牌
+	int32						end_state		= 3;	//结束状态  1 比牌结束 2 全场秀牌
+}                                           
+
+
+//////////////////////////////////////////////////////////////机器人消息///////////////////////////////////////
+message RMMsgNotifyPlayerAct
+{
+	int32				chair_id		= 1;	//玩家椅子号
+	int32				act				= 2;	//被比玩家椅子号
+}
