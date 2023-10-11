@@ -74,6 +74,8 @@ message RMColumnInfo
 	repeated	int32	cards			= 3;	//操作玩家椅子号
 }
 
+
+
 message RMMsgTableState
 {
 	int32				state			= 1;	//桌子状态
@@ -150,6 +152,15 @@ message RMMsgAction
 	int32					dest_card		= 2;	//目标牌
 	bool					na_pai_out_card = 3;	//是否拿最后一张了的牌
 	repeated RMColumnInfo 	hand_group_info	= 4;	//手牌分组
+	uint32					dorp_multiple	= 5;	//弃牌倍数
+}
+
+message RMMsgActionChoice
+{
+	int32				determined_level	= 1;	//等级
+	bool				is_determine		= 2;	//确定
+	repeated RMMsgAction choices			= 3;	//历史
+	RMMsgAction			determined_action	= 4;	//确定操作
 }
 
 //玩家弃牌返回
@@ -157,6 +168,7 @@ message RMMsgGiveUpResp
 {
 	int32					chair_id		= 1;	//玩家椅子号
 	int32					loss_gold		= 2;	//输分
+	uint32					dorp_multiple	= 3;	//弃牌倍数
 }
 
 //游戏结果                                  

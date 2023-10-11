@@ -46,36 +46,41 @@ namespace Rummy {
             "X2NhcmRzGAwgAygFEhIKCnBsYXlfaW5kZXgYBiADKAUSDQoFY2FyZHMYByAD",
             "KAUiVQoVUk1Nc2dOb3RpZnlBY3Rpb25SZXNwEhQKDGN1cl9jaGFpcl9pZBgB",
             "IAEoBRITCgtjdXJyZW50X2FjdBgDIAEoBRIRCglvcGVyX3RpbWUYBCABKAUi",
-            "eQoLUk1Nc2dBY3Rpb24SEAoIYWN0X3R5cGUYASABKAUSEQoJZGVzdF9jYXJk",
-            "GAIgASgFEhcKD25hX3BhaV9vdXRfY2FyZBgDIAEoCBIsCg9oYW5kX2dyb3Vw",
-            "X2luZm8YBCADKAsyEy5SdW1teS5STUNvbHVtbkluZm8iNgoPUk1Nc2dHaXZl",
-            "VXBSZXNwEhAKCGNoYWlyX2lkGAEgASgFEhEKCWxvc3NfZ29sZBgCIAEoBSJk",
-            "Cg9STU1zZ0dhbWVSZXN1bHQSEAoIZ2FtZV90YXgYASABKAUSLAoMcGxheWVy",
-            "X2hhbmRzGAIgAygLMhYuUnVtbXkuUk1Nc2dQbGF5ZXJJbmZvEhEKCWVuZF9z",
-            "dGF0ZRgDIAEoBSI1ChRSTU1zZ05vdGlmeVBsYXllckFjdBIQCghjaGFpcl9p",
-            "ZBgBIAEoBRILCgNhY3QYAiABKAUqZAoMRVJNR2FtZVN0YXRlEg8KC0dTX1RQ",
-            "X1JFQURZEAASDgoKR1NfVFBfREVBTBABEhEKDUdTX1RQX1BMQVlJTkcQAhIO",
-            "CgpHU19UUF9TSE9XEAMSEAoMR1NfVFBfUkVTVUxUEAQqSAoORVJNUGxheWVy",
-            "U3RhdGUSDAoIUFNfUkVBRFkQABILCgdQU19QTEFZEAESCwoHUFNfR0lWRRAC",
-            "Eg4KClBTX1RJTUVPVVQQAypiCg1FUk1HYW1lQWN0aW9uEg0KCUludmFsZEFj",
-            "dBAAEgwKCERyb3BDYXJkEAESCgoGTmFDYXJkEAISCwoHQ2h1Q2FyZBAEEg0K",
-            "CVNvcnRzQ2FyZBAIEgwKCFNob3dDYXJkEBAqYgoORVJNQ29sQ2FyZFR5cGUS",
-            "DgoKQ09MX1NJTkdMRRAAEg4KCkNPTF9CQU9fWkkQARIQCgxDT0xfU0hVTl9a",
-            "SEkQAhIRCg1DT0xfUUlOR19TSFVOEAMSCwoHQ09MX01BWBAEKuEECg9FUk1N",
-            "c2dJRFN1YkdhbWUSFQoRTXNnSURTdWJHYW1lX051bGwQABIeChpNc2dJRFN1",
-            "YkdhbWVfR2FtZVN0YXJ0UmVzcBABEiEKHU1zZ0lEU3ViR2FtZV9Ob3RpZnlB",
-            "Y3Rpb25SZXNwEAISFwoTTXNnSURTdWJHYW1lX0FjdGlvbhADEhsKF01zZ0lE",
-            "U3ViR2FtZV9BY3Rpb25SZXNwEAQSGwoXTXNnSURTdWJHYW1lX0dpdmVVcFJl",
-            "c3AQBRIfChtNc2dJRFN1YkdhbWVfR2FtZVJlc3VsdFJlc3AQBhIgChxNc2dJ",
-            "RFN1YkdhbWVfTm90aWZ5U3RhdGVSZXNwEAoSHAoYTXNnSURTdWJHYW1lX1Rp",
-            "bWVPdXRSZXNwEAsSHQoZTXNnSURTdWJHYW1lX1RpbWVPdXRSZWFkeRAMEiEK",
-            "HU1zZ0lEU3ViR2FtZV9UaW1lT3V0UmVhZHlSZXNwEA0SIAocTXNnSURTdWJH",
-            "YW1lX1RpbWVPdXRLaWNrUmVzcBAOEiYKIk1zZ0lEU3ViR2FtZV9Ob3RpZnlT",
-            "eXN0ZW1DaGVhdFJlc3AQFBIjCh9Nc2dJRFN1YkdhbWVfTm90aWZ5Q2FyZFR5",
-            "cGVSZXNwEBUSIAocTXNnSURTdWJHYW1lX05vdGlmeUlzTWF4UmVzcBAWEicK",
-            "I01zZ0lEU3ViR2FtZV9Ob3RpZnlSZW1haW5Eb3VibGVSZXNwEBcSIAocTXNn",
-            "SURTdWJHYW1lX05vdGlmeVJvdW5kUmVzcBAYEiIKHk1zZ0lEU3ViR2FtZV9O",
-            "b3RpZnlMYXN0QWN0UmVzcBAZYgZwcm90bzM="));
+            "kAEKC1JNTXNnQWN0aW9uEhAKCGFjdF90eXBlGAEgASgFEhEKCWRlc3RfY2Fy",
+            "ZBgCIAEoBRIXCg9uYV9wYWlfb3V0X2NhcmQYAyABKAgSLAoPaGFuZF9ncm91",
+            "cF9pbmZvGAQgAygLMhMuUnVtbXkuUk1Db2x1bW5JbmZvEhUKDWRvcnBfbXVs",
+            "dGlwbGUYBSABKA0ilwEKEVJNTXNnQWN0aW9uQ2hvaWNlEhgKEGRldGVybWlu",
+            "ZWRfbGV2ZWwYASABKAUSFAoMaXNfZGV0ZXJtaW5lGAIgASgIEiMKB2Nob2lj",
+            "ZXMYAyADKAsyEi5SdW1teS5STU1zZ0FjdGlvbhItChFkZXRlcm1pbmVkX2Fj",
+            "dGlvbhgEIAEoCzISLlJ1bW15LlJNTXNnQWN0aW9uIk0KD1JNTXNnR2l2ZVVw",
+            "UmVzcBIQCghjaGFpcl9pZBgBIAEoBRIRCglsb3NzX2dvbGQYAiABKAUSFQoN",
+            "ZG9ycF9tdWx0aXBsZRgDIAEoDSJkCg9STU1zZ0dhbWVSZXN1bHQSEAoIZ2Ft",
+            "ZV90YXgYASABKAUSLAoMcGxheWVyX2hhbmRzGAIgAygLMhYuUnVtbXkuUk1N",
+            "c2dQbGF5ZXJJbmZvEhEKCWVuZF9zdGF0ZRgDIAEoBSI1ChRSTU1zZ05vdGlm",
+            "eVBsYXllckFjdBIQCghjaGFpcl9pZBgBIAEoBRILCgNhY3QYAiABKAUqZAoM",
+            "RVJNR2FtZVN0YXRlEg8KC0dTX1RQX1JFQURZEAASDgoKR1NfVFBfREVBTBAB",
+            "EhEKDUdTX1RQX1BMQVlJTkcQAhIOCgpHU19UUF9TSE9XEAMSEAoMR1NfVFBf",
+            "UkVTVUxUEAQqSAoORVJNUGxheWVyU3RhdGUSDAoIUFNfUkVBRFkQABILCgdQ",
+            "U19QTEFZEAESCwoHUFNfR0lWRRACEg4KClBTX1RJTUVPVVQQAypiCg1FUk1H",
+            "YW1lQWN0aW9uEg0KCUludmFsZEFjdBAAEgwKCERyb3BDYXJkEAESCgoGTmFD",
+            "YXJkEAISCwoHQ2h1Q2FyZBAEEg0KCVNvcnRzQ2FyZBAIEgwKCFNob3dDYXJk",
+            "EBAqYgoORVJNQ29sQ2FyZFR5cGUSDgoKQ09MX1NJTkdMRRAAEg4KCkNPTF9C",
+            "QU9fWkkQARIQCgxDT0xfU0hVTl9aSEkQAhIRCg1DT0xfUUlOR19TSFVOEAMS",
+            "CwoHQ09MX01BWBAEKuEECg9FUk1Nc2dJRFN1YkdhbWUSFQoRTXNnSURTdWJH",
+            "YW1lX051bGwQABIeChpNc2dJRFN1YkdhbWVfR2FtZVN0YXJ0UmVzcBABEiEK",
+            "HU1zZ0lEU3ViR2FtZV9Ob3RpZnlBY3Rpb25SZXNwEAISFwoTTXNnSURTdWJH",
+            "YW1lX0FjdGlvbhADEhsKF01zZ0lEU3ViR2FtZV9BY3Rpb25SZXNwEAQSGwoX",
+            "TXNnSURTdWJHYW1lX0dpdmVVcFJlc3AQBRIfChtNc2dJRFN1YkdhbWVfR2Ft",
+            "ZVJlc3VsdFJlc3AQBhIgChxNc2dJRFN1YkdhbWVfTm90aWZ5U3RhdGVSZXNw",
+            "EAoSHAoYTXNnSURTdWJHYW1lX1RpbWVPdXRSZXNwEAsSHQoZTXNnSURTdWJH",
+            "YW1lX1RpbWVPdXRSZWFkeRAMEiEKHU1zZ0lEU3ViR2FtZV9UaW1lT3V0UmVh",
+            "ZHlSZXNwEA0SIAocTXNnSURTdWJHYW1lX1RpbWVPdXRLaWNrUmVzcBAOEiYK",
+            "Ik1zZ0lEU3ViR2FtZV9Ob3RpZnlTeXN0ZW1DaGVhdFJlc3AQFBIjCh9Nc2dJ",
+            "RFN1YkdhbWVfTm90aWZ5Q2FyZFR5cGVSZXNwEBUSIAocTXNnSURTdWJHYW1l",
+            "X05vdGlmeUlzTWF4UmVzcBAWEicKI01zZ0lEU3ViR2FtZV9Ob3RpZnlSZW1h",
+            "aW5Eb3VibGVSZXNwEBcSIAocTXNnSURTdWJHYW1lX05vdGlmeVJvdW5kUmVz",
+            "cBAYEiIKHk1zZ0lEU3ViR2FtZV9Ob3RpZnlMYXN0QWN0UmVzcBAZYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Rummy.ERMGameState), typeof(global::Rummy.ERMPlayerState), typeof(global::Rummy.ERMGameAction), typeof(global::Rummy.ERMColCardType), typeof(global::Rummy.ERMMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -86,8 +91,9 @@ namespace Rummy {
             new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgSceneInfo), global::Rummy.RMMsgSceneInfo.Parser, new[]{ "MaxMultiple", "CellScore", "TableState", "Tax", "BankerChairId", "CurChairId", "CurChairAct", "OutTime", "TotalTime", "WildCard", "SurplusCardNum", "OutCards", "PlayerInfos" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgGameStartResp), global::Rummy.RMMsgGameStartResp.Parser, new[]{ "CurChairId", "BankerChairId", "MaxScore", "CellScore", "MaxMultiple", "WildCard", "SurplusCardNum", "OutCards", "PlayIndex", "Cards" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgNotifyActionResp), global::Rummy.RMMsgNotifyActionResp.Parser, new[]{ "CurChairId", "CurrentAct", "OperTime" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgAction), global::Rummy.RMMsgAction.Parser, new[]{ "ActType", "DestCard", "NaPaiOutCard", "HandGroupInfo" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgGiveUpResp), global::Rummy.RMMsgGiveUpResp.Parser, new[]{ "ChairId", "LossGold" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgAction), global::Rummy.RMMsgAction.Parser, new[]{ "ActType", "DestCard", "NaPaiOutCard", "HandGroupInfo", "DorpMultiple" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgActionChoice), global::Rummy.RMMsgActionChoice.Parser, new[]{ "DeterminedLevel", "IsDetermine", "Choices", "DeterminedAction" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgGiveUpResp), global::Rummy.RMMsgGiveUpResp.Parser, new[]{ "ChairId", "LossGold", "DorpMultiple" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgGameResult), global::Rummy.RMMsgGameResult.Parser, new[]{ "GameTax", "PlayerHands", "EndState" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgNotifyPlayerAct), global::Rummy.RMMsgNotifyPlayerAct.Parser, new[]{ "ChairId", "Act" }, null, null, null, null)
           }));
@@ -2705,6 +2711,7 @@ namespace Rummy {
       destCard_ = other.destCard_;
       naPaiOutCard_ = other.naPaiOutCard_;
       handGroupInfo_ = other.handGroupInfo_.Clone();
+      dorpMultiple_ = other.dorpMultiple_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2768,6 +2775,20 @@ namespace Rummy {
       get { return handGroupInfo_; }
     }
 
+    /// <summary>Field number for the "dorp_multiple" field.</summary>
+    public const int DorpMultipleFieldNumber = 5;
+    private uint dorpMultiple_;
+    /// <summary>
+    ///弃牌倍数
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint DorpMultiple {
+      get { return dorpMultiple_; }
+      set {
+        dorpMultiple_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as RMMsgAction);
@@ -2785,6 +2806,7 @@ namespace Rummy {
       if (DestCard != other.DestCard) return false;
       if (NaPaiOutCard != other.NaPaiOutCard) return false;
       if(!handGroupInfo_.Equals(other.handGroupInfo_)) return false;
+      if (DorpMultiple != other.DorpMultiple) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2795,6 +2817,7 @@ namespace Rummy {
       if (DestCard != 0) hash ^= DestCard.GetHashCode();
       if (NaPaiOutCard != false) hash ^= NaPaiOutCard.GetHashCode();
       hash ^= handGroupInfo_.GetHashCode();
+      if (DorpMultiple != 0) hash ^= DorpMultiple.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2824,6 +2847,10 @@ namespace Rummy {
         output.WriteBool(NaPaiOutCard);
       }
       handGroupInfo_.WriteTo(output, _repeated_handGroupInfo_codec);
+      if (DorpMultiple != 0) {
+        output.WriteRawTag(40);
+        output.WriteUInt32(DorpMultiple);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2846,6 +2873,10 @@ namespace Rummy {
         output.WriteBool(NaPaiOutCard);
       }
       handGroupInfo_.WriteTo(ref output, _repeated_handGroupInfo_codec);
+      if (DorpMultiple != 0) {
+        output.WriteRawTag(40);
+        output.WriteUInt32(DorpMultiple);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2865,6 +2896,9 @@ namespace Rummy {
         size += 1 + 1;
       }
       size += handGroupInfo_.CalculateSize(_repeated_handGroupInfo_codec);
+      if (DorpMultiple != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(DorpMultiple);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -2886,6 +2920,9 @@ namespace Rummy {
         NaPaiOutCard = other.NaPaiOutCard;
       }
       handGroupInfo_.Add(other.handGroupInfo_);
+      if (other.DorpMultiple != 0) {
+        DorpMultiple = other.DorpMultiple;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -2914,6 +2951,10 @@ namespace Rummy {
           }
           case 34: {
             handGroupInfo_.AddEntriesFrom(input, _repeated_handGroupInfo_codec);
+            break;
+          }
+          case 40: {
+            DorpMultiple = input.ReadUInt32();
             break;
           }
         }
@@ -2946,6 +2987,300 @@ namespace Rummy {
             handGroupInfo_.AddEntriesFrom(ref input, _repeated_handGroupInfo_codec);
             break;
           }
+          case 40: {
+            DorpMultiple = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class RMMsgActionChoice : pb::IMessage<RMMsgActionChoice>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<RMMsgActionChoice> _parser = new pb::MessageParser<RMMsgActionChoice>(() => new RMMsgActionChoice());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<RMMsgActionChoice> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Rummy.RummyReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RMMsgActionChoice() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RMMsgActionChoice(RMMsgActionChoice other) : this() {
+      determinedLevel_ = other.determinedLevel_;
+      isDetermine_ = other.isDetermine_;
+      choices_ = other.choices_.Clone();
+      determinedAction_ = other.determinedAction_ != null ? other.determinedAction_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RMMsgActionChoice Clone() {
+      return new RMMsgActionChoice(this);
+    }
+
+    /// <summary>Field number for the "determined_level" field.</summary>
+    public const int DeterminedLevelFieldNumber = 1;
+    private int determinedLevel_;
+    /// <summary>
+    ///等级
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int DeterminedLevel {
+      get { return determinedLevel_; }
+      set {
+        determinedLevel_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "is_determine" field.</summary>
+    public const int IsDetermineFieldNumber = 2;
+    private bool isDetermine_;
+    /// <summary>
+    ///确定
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsDetermine {
+      get { return isDetermine_; }
+      set {
+        isDetermine_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "choices" field.</summary>
+    public const int ChoicesFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::Rummy.RMMsgAction> _repeated_choices_codec
+        = pb::FieldCodec.ForMessage(26, global::Rummy.RMMsgAction.Parser);
+    private readonly pbc::RepeatedField<global::Rummy.RMMsgAction> choices_ = new pbc::RepeatedField<global::Rummy.RMMsgAction>();
+    /// <summary>
+    ///历史
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Rummy.RMMsgAction> Choices {
+      get { return choices_; }
+    }
+
+    /// <summary>Field number for the "determined_action" field.</summary>
+    public const int DeterminedActionFieldNumber = 4;
+    private global::Rummy.RMMsgAction determinedAction_;
+    /// <summary>
+    ///确定操作
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Rummy.RMMsgAction DeterminedAction {
+      get { return determinedAction_; }
+      set {
+        determinedAction_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as RMMsgActionChoice);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(RMMsgActionChoice other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (DeterminedLevel != other.DeterminedLevel) return false;
+      if (IsDetermine != other.IsDetermine) return false;
+      if(!choices_.Equals(other.choices_)) return false;
+      if (!object.Equals(DeterminedAction, other.DeterminedAction)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (DeterminedLevel != 0) hash ^= DeterminedLevel.GetHashCode();
+      if (IsDetermine != false) hash ^= IsDetermine.GetHashCode();
+      hash ^= choices_.GetHashCode();
+      if (determinedAction_ != null) hash ^= DeterminedAction.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (DeterminedLevel != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(DeterminedLevel);
+      }
+      if (IsDetermine != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(IsDetermine);
+      }
+      choices_.WriteTo(output, _repeated_choices_codec);
+      if (determinedAction_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(DeterminedAction);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (DeterminedLevel != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(DeterminedLevel);
+      }
+      if (IsDetermine != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(IsDetermine);
+      }
+      choices_.WriteTo(ref output, _repeated_choices_codec);
+      if (determinedAction_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(DeterminedAction);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (DeterminedLevel != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(DeterminedLevel);
+      }
+      if (IsDetermine != false) {
+        size += 1 + 1;
+      }
+      size += choices_.CalculateSize(_repeated_choices_codec);
+      if (determinedAction_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DeterminedAction);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(RMMsgActionChoice other) {
+      if (other == null) {
+        return;
+      }
+      if (other.DeterminedLevel != 0) {
+        DeterminedLevel = other.DeterminedLevel;
+      }
+      if (other.IsDetermine != false) {
+        IsDetermine = other.IsDetermine;
+      }
+      choices_.Add(other.choices_);
+      if (other.determinedAction_ != null) {
+        if (determinedAction_ == null) {
+          DeterminedAction = new global::Rummy.RMMsgAction();
+        }
+        DeterminedAction.MergeFrom(other.DeterminedAction);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            DeterminedLevel = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            IsDetermine = input.ReadBool();
+            break;
+          }
+          case 26: {
+            choices_.AddEntriesFrom(input, _repeated_choices_codec);
+            break;
+          }
+          case 34: {
+            if (determinedAction_ == null) {
+              DeterminedAction = new global::Rummy.RMMsgAction();
+            }
+            input.ReadMessage(DeterminedAction);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            DeterminedLevel = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            IsDetermine = input.ReadBool();
+            break;
+          }
+          case 26: {
+            choices_.AddEntriesFrom(ref input, _repeated_choices_codec);
+            break;
+          }
+          case 34: {
+            if (determinedAction_ == null) {
+              DeterminedAction = new global::Rummy.RMMsgAction();
+            }
+            input.ReadMessage(DeterminedAction);
+            break;
+          }
         }
       }
     }
@@ -2968,7 +3303,7 @@ namespace Rummy {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Rummy.RummyReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Rummy.RummyReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2987,6 +3322,7 @@ namespace Rummy {
     public RMMsgGiveUpResp(RMMsgGiveUpResp other) : this() {
       chairId_ = other.chairId_;
       lossGold_ = other.lossGold_;
+      dorpMultiple_ = other.dorpMultiple_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3023,6 +3359,20 @@ namespace Rummy {
       }
     }
 
+    /// <summary>Field number for the "dorp_multiple" field.</summary>
+    public const int DorpMultipleFieldNumber = 3;
+    private uint dorpMultiple_;
+    /// <summary>
+    ///弃牌倍数
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint DorpMultiple {
+      get { return dorpMultiple_; }
+      set {
+        dorpMultiple_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as RMMsgGiveUpResp);
@@ -3038,6 +3388,7 @@ namespace Rummy {
       }
       if (ChairId != other.ChairId) return false;
       if (LossGold != other.LossGold) return false;
+      if (DorpMultiple != other.DorpMultiple) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -3046,6 +3397,7 @@ namespace Rummy {
       int hash = 1;
       if (ChairId != 0) hash ^= ChairId.GetHashCode();
       if (LossGold != 0) hash ^= LossGold.GetHashCode();
+      if (DorpMultiple != 0) hash ^= DorpMultiple.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3070,6 +3422,10 @@ namespace Rummy {
         output.WriteRawTag(16);
         output.WriteInt32(LossGold);
       }
+      if (DorpMultiple != 0) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(DorpMultiple);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3087,6 +3443,10 @@ namespace Rummy {
         output.WriteRawTag(16);
         output.WriteInt32(LossGold);
       }
+      if (DorpMultiple != 0) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(DorpMultiple);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -3101,6 +3461,9 @@ namespace Rummy {
       }
       if (LossGold != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(LossGold);
+      }
+      if (DorpMultiple != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(DorpMultiple);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3118,6 +3481,9 @@ namespace Rummy {
       }
       if (other.LossGold != 0) {
         LossGold = other.LossGold;
+      }
+      if (other.DorpMultiple != 0) {
+        DorpMultiple = other.DorpMultiple;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3139,6 +3505,10 @@ namespace Rummy {
           }
           case 16: {
             LossGold = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            DorpMultiple = input.ReadUInt32();
             break;
           }
         }
@@ -3163,6 +3533,10 @@ namespace Rummy {
             LossGold = input.ReadInt32();
             break;
           }
+          case 24: {
+            DorpMultiple = input.ReadUInt32();
+            break;
+          }
         }
       }
     }
@@ -3185,7 +3559,7 @@ namespace Rummy {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Rummy.RummyReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Rummy.RummyReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3430,7 +3804,7 @@ namespace Rummy {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Rummy.RummyReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Rummy.RummyReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

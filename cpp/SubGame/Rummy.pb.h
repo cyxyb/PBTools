@@ -47,7 +47,7 @@ struct TableStruct_Rummy_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[11]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[12]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -61,6 +61,9 @@ extern RMColumnInfoDefaultTypeInternal _RMColumnInfo_default_instance_;
 class RMMsgAction;
 class RMMsgActionDefaultTypeInternal;
 extern RMMsgActionDefaultTypeInternal _RMMsgAction_default_instance_;
+class RMMsgActionChoice;
+class RMMsgActionChoiceDefaultTypeInternal;
+extern RMMsgActionChoiceDefaultTypeInternal _RMMsgActionChoice_default_instance_;
 class RMMsgGameResult;
 class RMMsgGameResultDefaultTypeInternal;
 extern RMMsgGameResultDefaultTypeInternal _RMMsgGameResult_default_instance_;
@@ -92,6 +95,7 @@ extern RMMsgTableStateDefaultTypeInternal _RMMsgTableState_default_instance_;
 PROTOBUF_NAMESPACE_OPEN
 template<> ::Rummy::RMColumnInfo* Arena::CreateMaybeMessage<::Rummy::RMColumnInfo>(Arena*);
 template<> ::Rummy::RMMsgAction* Arena::CreateMaybeMessage<::Rummy::RMMsgAction>(Arena*);
+template<> ::Rummy::RMMsgActionChoice* Arena::CreateMaybeMessage<::Rummy::RMMsgActionChoice>(Arena*);
 template<> ::Rummy::RMMsgGameResult* Arena::CreateMaybeMessage<::Rummy::RMMsgGameResult>(Arena*);
 template<> ::Rummy::RMMsgGameStartResp* Arena::CreateMaybeMessage<::Rummy::RMMsgGameStartResp>(Arena*);
 template<> ::Rummy::RMMsgGiveUpResp* Arena::CreateMaybeMessage<::Rummy::RMMsgGiveUpResp>(Arena*);
@@ -1795,6 +1799,7 @@ class RMMsgAction PROTOBUF_FINAL :
     kActTypeFieldNumber = 1,
     kDestCardFieldNumber = 2,
     kNaPaiOutCardFieldNumber = 3,
+    kDorpMultipleFieldNumber = 5,
   };
   // repeated .Rummy.RMColumnInfo hand_group_info = 4;
   int hand_group_info_size() const;
@@ -1841,6 +1846,15 @@ class RMMsgAction PROTOBUF_FINAL :
   void _internal_set_na_pai_out_card(bool value);
   public:
 
+  // uint32 dorp_multiple = 5;
+  void clear_dorp_multiple();
+  ::PROTOBUF_NAMESPACE_ID::uint32 dorp_multiple() const;
+  void set_dorp_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::uint32 _internal_dorp_multiple() const;
+  void _internal_set_dorp_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:Rummy.RMMsgAction)
  private:
   class _Internal;
@@ -1852,6 +1866,194 @@ class RMMsgAction PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 act_type_;
   ::PROTOBUF_NAMESPACE_ID::int32 dest_card_;
   bool na_pai_out_card_;
+  ::PROTOBUF_NAMESPACE_ID::uint32 dorp_multiple_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Rummy_2eproto;
+};
+// -------------------------------------------------------------------
+
+class RMMsgActionChoice PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Rummy.RMMsgActionChoice) */ {
+ public:
+  inline RMMsgActionChoice() : RMMsgActionChoice(nullptr) {}
+  virtual ~RMMsgActionChoice();
+
+  RMMsgActionChoice(const RMMsgActionChoice& from);
+  RMMsgActionChoice(RMMsgActionChoice&& from) noexcept
+    : RMMsgActionChoice() {
+    *this = ::std::move(from);
+  }
+
+  inline RMMsgActionChoice& operator=(const RMMsgActionChoice& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline RMMsgActionChoice& operator=(RMMsgActionChoice&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const RMMsgActionChoice& default_instance();
+
+  static inline const RMMsgActionChoice* internal_default_instance() {
+    return reinterpret_cast<const RMMsgActionChoice*>(
+               &_RMMsgActionChoice_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    8;
+
+  friend void swap(RMMsgActionChoice& a, RMMsgActionChoice& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(RMMsgActionChoice* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(RMMsgActionChoice* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline RMMsgActionChoice* New() const final {
+    return CreateMaybeMessage<RMMsgActionChoice>(nullptr);
+  }
+
+  RMMsgActionChoice* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<RMMsgActionChoice>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const RMMsgActionChoice& from);
+  void MergeFrom(const RMMsgActionChoice& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(RMMsgActionChoice* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "Rummy.RMMsgActionChoice";
+  }
+  protected:
+  explicit RMMsgActionChoice(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Rummy_2eproto);
+    return ::descriptor_table_Rummy_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kChoicesFieldNumber = 3,
+    kDeterminedActionFieldNumber = 4,
+    kDeterminedLevelFieldNumber = 1,
+    kIsDetermineFieldNumber = 2,
+  };
+  // repeated .Rummy.RMMsgAction choices = 3;
+  int choices_size() const;
+  private:
+  int _internal_choices_size() const;
+  public:
+  void clear_choices();
+  ::Rummy::RMMsgAction* mutable_choices(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Rummy::RMMsgAction >*
+      mutable_choices();
+  private:
+  const ::Rummy::RMMsgAction& _internal_choices(int index) const;
+  ::Rummy::RMMsgAction* _internal_add_choices();
+  public:
+  const ::Rummy::RMMsgAction& choices(int index) const;
+  ::Rummy::RMMsgAction* add_choices();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Rummy::RMMsgAction >&
+      choices() const;
+
+  // .Rummy.RMMsgAction determined_action = 4;
+  bool has_determined_action() const;
+  private:
+  bool _internal_has_determined_action() const;
+  public:
+  void clear_determined_action();
+  const ::Rummy::RMMsgAction& determined_action() const;
+  ::Rummy::RMMsgAction* release_determined_action();
+  ::Rummy::RMMsgAction* mutable_determined_action();
+  void set_allocated_determined_action(::Rummy::RMMsgAction* determined_action);
+  private:
+  const ::Rummy::RMMsgAction& _internal_determined_action() const;
+  ::Rummy::RMMsgAction* _internal_mutable_determined_action();
+  public:
+  void unsafe_arena_set_allocated_determined_action(
+      ::Rummy::RMMsgAction* determined_action);
+  ::Rummy::RMMsgAction* unsafe_arena_release_determined_action();
+
+  // int32 determined_level = 1;
+  void clear_determined_level();
+  ::PROTOBUF_NAMESPACE_ID::int32 determined_level() const;
+  void set_determined_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_determined_level() const;
+  void _internal_set_determined_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // bool is_determine = 2;
+  void clear_is_determine();
+  bool is_determine() const;
+  void set_is_determine(bool value);
+  private:
+  bool _internal_is_determine() const;
+  void _internal_set_is_determine(bool value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:Rummy.RMMsgActionChoice)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Rummy::RMMsgAction > choices_;
+  ::Rummy::RMMsgAction* determined_action_;
+  ::PROTOBUF_NAMESPACE_ID::int32 determined_level_;
+  bool is_determine_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Rummy_2eproto;
 };
@@ -1898,7 +2100,7 @@ class RMMsgGiveUpResp PROTOBUF_FINAL :
                &_RMMsgGiveUpResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    9;
 
   friend void swap(RMMsgGiveUpResp& a, RMMsgGiveUpResp& b) {
     a.Swap(&b);
@@ -1971,6 +2173,7 @@ class RMMsgGiveUpResp PROTOBUF_FINAL :
   enum : int {
     kChairIdFieldNumber = 1,
     kLossGoldFieldNumber = 2,
+    kDorpMultipleFieldNumber = 3,
   };
   // int32 chair_id = 1;
   void clear_chair_id();
@@ -1990,6 +2193,15 @@ class RMMsgGiveUpResp PROTOBUF_FINAL :
   void _internal_set_loss_gold(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // uint32 dorp_multiple = 3;
+  void clear_dorp_multiple();
+  ::PROTOBUF_NAMESPACE_ID::uint32 dorp_multiple() const;
+  void set_dorp_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::uint32 _internal_dorp_multiple() const;
+  void _internal_set_dorp_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:Rummy.RMMsgGiveUpResp)
  private:
   class _Internal;
@@ -1999,6 +2211,7 @@ class RMMsgGiveUpResp PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 loss_gold_;
+  ::PROTOBUF_NAMESPACE_ID::uint32 dorp_multiple_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Rummy_2eproto;
 };
@@ -2045,7 +2258,7 @@ class RMMsgGameResult PROTOBUF_FINAL :
                &_RMMsgGameResult_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    10;
 
   friend void swap(RMMsgGameResult& a, RMMsgGameResult& b) {
     a.Swap(&b);
@@ -2212,7 +2425,7 @@ class RMMsgNotifyPlayerAct PROTOBUF_FINAL :
                &_RMMsgNotifyPlayerAct_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    11;
 
   friend void swap(RMMsgNotifyPlayerAct& a, RMMsgNotifyPlayerAct& b) {
     a.Swap(&b);
@@ -3461,6 +3674,192 @@ RMMsgAction::hand_group_info() const {
   return hand_group_info_;
 }
 
+// uint32 dorp_multiple = 5;
+inline void RMMsgAction::clear_dorp_multiple() {
+  dorp_multiple_ = 0u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint32 RMMsgAction::_internal_dorp_multiple() const {
+  return dorp_multiple_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint32 RMMsgAction::dorp_multiple() const {
+  // @@protoc_insertion_point(field_get:Rummy.RMMsgAction.dorp_multiple)
+  return _internal_dorp_multiple();
+}
+inline void RMMsgAction::_internal_set_dorp_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+  
+  dorp_multiple_ = value;
+}
+inline void RMMsgAction::set_dorp_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+  _internal_set_dorp_multiple(value);
+  // @@protoc_insertion_point(field_set:Rummy.RMMsgAction.dorp_multiple)
+}
+
+// -------------------------------------------------------------------
+
+// RMMsgActionChoice
+
+// int32 determined_level = 1;
+inline void RMMsgActionChoice::clear_determined_level() {
+  determined_level_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgActionChoice::_internal_determined_level() const {
+  return determined_level_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgActionChoice::determined_level() const {
+  // @@protoc_insertion_point(field_get:Rummy.RMMsgActionChoice.determined_level)
+  return _internal_determined_level();
+}
+inline void RMMsgActionChoice::_internal_set_determined_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  determined_level_ = value;
+}
+inline void RMMsgActionChoice::set_determined_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_determined_level(value);
+  // @@protoc_insertion_point(field_set:Rummy.RMMsgActionChoice.determined_level)
+}
+
+// bool is_determine = 2;
+inline void RMMsgActionChoice::clear_is_determine() {
+  is_determine_ = false;
+}
+inline bool RMMsgActionChoice::_internal_is_determine() const {
+  return is_determine_;
+}
+inline bool RMMsgActionChoice::is_determine() const {
+  // @@protoc_insertion_point(field_get:Rummy.RMMsgActionChoice.is_determine)
+  return _internal_is_determine();
+}
+inline void RMMsgActionChoice::_internal_set_is_determine(bool value) {
+  
+  is_determine_ = value;
+}
+inline void RMMsgActionChoice::set_is_determine(bool value) {
+  _internal_set_is_determine(value);
+  // @@protoc_insertion_point(field_set:Rummy.RMMsgActionChoice.is_determine)
+}
+
+// repeated .Rummy.RMMsgAction choices = 3;
+inline int RMMsgActionChoice::_internal_choices_size() const {
+  return choices_.size();
+}
+inline int RMMsgActionChoice::choices_size() const {
+  return _internal_choices_size();
+}
+inline void RMMsgActionChoice::clear_choices() {
+  choices_.Clear();
+}
+inline ::Rummy::RMMsgAction* RMMsgActionChoice::mutable_choices(int index) {
+  // @@protoc_insertion_point(field_mutable:Rummy.RMMsgActionChoice.choices)
+  return choices_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Rummy::RMMsgAction >*
+RMMsgActionChoice::mutable_choices() {
+  // @@protoc_insertion_point(field_mutable_list:Rummy.RMMsgActionChoice.choices)
+  return &choices_;
+}
+inline const ::Rummy::RMMsgAction& RMMsgActionChoice::_internal_choices(int index) const {
+  return choices_.Get(index);
+}
+inline const ::Rummy::RMMsgAction& RMMsgActionChoice::choices(int index) const {
+  // @@protoc_insertion_point(field_get:Rummy.RMMsgActionChoice.choices)
+  return _internal_choices(index);
+}
+inline ::Rummy::RMMsgAction* RMMsgActionChoice::_internal_add_choices() {
+  return choices_.Add();
+}
+inline ::Rummy::RMMsgAction* RMMsgActionChoice::add_choices() {
+  // @@protoc_insertion_point(field_add:Rummy.RMMsgActionChoice.choices)
+  return _internal_add_choices();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Rummy::RMMsgAction >&
+RMMsgActionChoice::choices() const {
+  // @@protoc_insertion_point(field_list:Rummy.RMMsgActionChoice.choices)
+  return choices_;
+}
+
+// .Rummy.RMMsgAction determined_action = 4;
+inline bool RMMsgActionChoice::_internal_has_determined_action() const {
+  return this != internal_default_instance() && determined_action_ != nullptr;
+}
+inline bool RMMsgActionChoice::has_determined_action() const {
+  return _internal_has_determined_action();
+}
+inline void RMMsgActionChoice::clear_determined_action() {
+  if (GetArena() == nullptr && determined_action_ != nullptr) {
+    delete determined_action_;
+  }
+  determined_action_ = nullptr;
+}
+inline const ::Rummy::RMMsgAction& RMMsgActionChoice::_internal_determined_action() const {
+  const ::Rummy::RMMsgAction* p = determined_action_;
+  return p != nullptr ? *p : reinterpret_cast<const ::Rummy::RMMsgAction&>(
+      ::Rummy::_RMMsgAction_default_instance_);
+}
+inline const ::Rummy::RMMsgAction& RMMsgActionChoice::determined_action() const {
+  // @@protoc_insertion_point(field_get:Rummy.RMMsgActionChoice.determined_action)
+  return _internal_determined_action();
+}
+inline void RMMsgActionChoice::unsafe_arena_set_allocated_determined_action(
+    ::Rummy::RMMsgAction* determined_action) {
+  if (GetArena() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(determined_action_);
+  }
+  determined_action_ = determined_action;
+  if (determined_action) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:Rummy.RMMsgActionChoice.determined_action)
+}
+inline ::Rummy::RMMsgAction* RMMsgActionChoice::release_determined_action() {
+  
+  ::Rummy::RMMsgAction* temp = determined_action_;
+  determined_action_ = nullptr;
+  if (GetArena() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+  return temp;
+}
+inline ::Rummy::RMMsgAction* RMMsgActionChoice::unsafe_arena_release_determined_action() {
+  // @@protoc_insertion_point(field_release:Rummy.RMMsgActionChoice.determined_action)
+  
+  ::Rummy::RMMsgAction* temp = determined_action_;
+  determined_action_ = nullptr;
+  return temp;
+}
+inline ::Rummy::RMMsgAction* RMMsgActionChoice::_internal_mutable_determined_action() {
+  
+  if (determined_action_ == nullptr) {
+    auto* p = CreateMaybeMessage<::Rummy::RMMsgAction>(GetArena());
+    determined_action_ = p;
+  }
+  return determined_action_;
+}
+inline ::Rummy::RMMsgAction* RMMsgActionChoice::mutable_determined_action() {
+  // @@protoc_insertion_point(field_mutable:Rummy.RMMsgActionChoice.determined_action)
+  return _internal_mutable_determined_action();
+}
+inline void RMMsgActionChoice::set_allocated_determined_action(::Rummy::RMMsgAction* determined_action) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  if (message_arena == nullptr) {
+    delete determined_action_;
+  }
+  if (determined_action) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(determined_action);
+    if (message_arena != submessage_arena) {
+      determined_action = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, determined_action, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  determined_action_ = determined_action;
+  // @@protoc_insertion_point(field_set_allocated:Rummy.RMMsgActionChoice.determined_action)
+}
+
 // -------------------------------------------------------------------
 
 // RMMsgGiveUpResp
@@ -3503,6 +3902,26 @@ inline void RMMsgGiveUpResp::_internal_set_loss_gold(::PROTOBUF_NAMESPACE_ID::in
 inline void RMMsgGiveUpResp::set_loss_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_loss_gold(value);
   // @@protoc_insertion_point(field_set:Rummy.RMMsgGiveUpResp.loss_gold)
+}
+
+// uint32 dorp_multiple = 3;
+inline void RMMsgGiveUpResp::clear_dorp_multiple() {
+  dorp_multiple_ = 0u;
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint32 RMMsgGiveUpResp::_internal_dorp_multiple() const {
+  return dorp_multiple_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint32 RMMsgGiveUpResp::dorp_multiple() const {
+  // @@protoc_insertion_point(field_get:Rummy.RMMsgGiveUpResp.dorp_multiple)
+  return _internal_dorp_multiple();
+}
+inline void RMMsgGiveUpResp::_internal_set_dorp_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+  
+  dorp_multiple_ = value;
+}
+inline void RMMsgGiveUpResp::set_dorp_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+  _internal_set_dorp_multiple(value);
+  // @@protoc_insertion_point(field_set:Rummy.RMMsgGiveUpResp.dorp_multiple)
 }
 
 // -------------------------------------------------------------------
@@ -3635,6 +4054,8 @@ inline void RMMsgNotifyPlayerAct::set_act(::PROTOBUF_NAMESPACE_ID::int32 value) 
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
