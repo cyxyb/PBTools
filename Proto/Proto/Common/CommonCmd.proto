@@ -89,7 +89,7 @@ enum EMsgIDLogin
 	MsgIDRank_GetResp							= 75;		//排行榜返回(MsgTopList)
 	MsgIDTransfer_TransferOperate				= 76;		//转账(MsgTransferOperate)
 	MsgIDTransfer_TransferOperateResp			= 77;		//转账返回(MsgTransferOperateResp)
-	MsgIDTransfer_TransferReceive				= 78;		//转账领取(MsgCommonN32)
+	MsgIDTransfer_TransferReceive				= 78;		//转账领取(MsgCommonN64)
 	MsgIDTransfer_TransferReceiveResp			= 79;		//转账领取返回(MsgTransferReceiveResp)
 	MsgIDTransfer_TransferRecord				= 80;		//转账记录(MsgCommonBool)
 	MsgIDTransfer_TransferRecordResp			= 81;		//转账记录返回(MsgTransferRecordResp)

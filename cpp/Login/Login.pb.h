@@ -7721,16 +7721,16 @@ class MsgTransferReceiveResp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kUserGoldFieldNumber = 2,
+    kChangeGoldFieldNumber = 2,
     kRetValueFieldNumber = 1,
   };
-  // int64 user_gold = 2;
-  void clear_user_gold();
-  ::PROTOBUF_NAMESPACE_ID::int64 user_gold() const;
-  void set_user_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  // int64 change_gold = 2;
+  void clear_change_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 change_gold() const;
+  void set_change_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_user_gold() const;
-  void _internal_set_user_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_change_gold() const;
+  void _internal_set_change_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
   // int32 ret_value = 1;
@@ -7749,7 +7749,7 @@ class MsgTransferReceiveResp PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int64 user_gold_;
+  ::PROTOBUF_NAMESPACE_ID::int64 change_gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 ret_value_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
@@ -15258,24 +15258,24 @@ inline void MsgTransferReceiveResp::set_ret_value(::PROTOBUF_NAMESPACE_ID::int32
   // @@protoc_insertion_point(field_set:MsgTransferReceiveResp.ret_value)
 }
 
-// int64 user_gold = 2;
-inline void MsgTransferReceiveResp::clear_user_gold() {
-  user_gold_ = PROTOBUF_LONGLONG(0);
+// int64 change_gold = 2;
+inline void MsgTransferReceiveResp::clear_change_gold() {
+  change_gold_ = PROTOBUF_LONGLONG(0);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgTransferReceiveResp::_internal_user_gold() const {
-  return user_gold_;
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgTransferReceiveResp::_internal_change_gold() const {
+  return change_gold_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgTransferReceiveResp::user_gold() const {
-  // @@protoc_insertion_point(field_get:MsgTransferReceiveResp.user_gold)
-  return _internal_user_gold();
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgTransferReceiveResp::change_gold() const {
+  // @@protoc_insertion_point(field_get:MsgTransferReceiveResp.change_gold)
+  return _internal_change_gold();
 }
-inline void MsgTransferReceiveResp::_internal_set_user_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void MsgTransferReceiveResp::_internal_set_change_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
   
-  user_gold_ = value;
+  change_gold_ = value;
 }
-inline void MsgTransferReceiveResp::set_user_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_user_gold(value);
-  // @@protoc_insertion_point(field_set:MsgTransferReceiveResp.user_gold)
+inline void MsgTransferReceiveResp::set_change_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_change_gold(value);
+  // @@protoc_insertion_point(field_set:MsgTransferReceiveResp.change_gold)
 }
 
 // -------------------------------------------------------------------
