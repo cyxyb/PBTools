@@ -46,17 +46,19 @@ enum ERMMsgIDSubGame
 {
 	MsgIDSubGame_Null					= 0;
 	MsgIDSubGame_GameStartResp			= 1;	//游戏开始(RMMsgGameStartResp)
-	MsgIDSubGame_NotifyActionResp		= 2;	//玩家操作(RMMsgNotifyActionResp)
+	MsgIDSubGame_NotifyActionResp		= 2;	//通知玩家操作(RMMsgNotifyActionResp)
 	MsgIDSubGame_Action					= 3;	//玩家操作(RMMsgAction)
-	MsgIDSubGame_ActionResp				= 4;	//玩家操作返回(RMMsgAction)
+	MsgIDSubGame_ActionResp				= 4;	//玩家操作返回(RMMsgActionResp)
 	MsgIDSubGame_GiveUpResp				= 5;	//玩家弃牌返回(RMMsgGiveUpResp)
 	MsgIDSubGame_GameResultResp			= 6;	//结算(RMMsgGameResult)
 
 	MsgIDSubGame_NotifyStateResp		= 10;	//桌子状态(RMMsgTableState)
+
 	MsgIDSubGame_TimeOutResp			= 11;	//通知超时(MsgCommonBool)
 	MsgIDSubGame_TimeOutReady			= 12;	//重新准备(MsgCommonBool)
 	MsgIDSubGame_TimeOutReadyResp		= 13;	//准备返回(MsgCommonBool)
 	MsgIDSubGame_TimeOutKickResp		= 14;	//超时踢了游戏(MsgCommonBool)
+	MsgIDSubGame_NotifyTrusteeshipResp	= 15;	//托管变化通知(RMMsgNotifyTrusteeship)
 
 	/////////////////////////机器人消息///////////////////////
 	MsgIDSubGame_NotifySystemCheatResp	= 20;	//通知系统作弊率
@@ -74,8 +76,6 @@ message RMColumnInfo
 	repeated	int32	cards			= 3;	//操作玩家椅子号
 }
 
-
-
 message RMMsgTableState
 {
 	int32				state			= 1;	//桌子状态
@@ -92,9 +92,8 @@ message RMMsgPlayerInfo
 {
 	int32					chair_id		= 1;	//玩家椅子号
 	int32					play_status		= 2;	//玩家状态
-	int32					card_type		= 3;	//牌型
-	int64					gold			= 4;	//自己的金币，别人的是空
-	int64					win_gold		= 5;	//输赢分
+	int64					gold			= 3;	//自己的金币，别人的是空
+	int64					win_gold		= 4;	//输赢分
 	repeated int32			cards			= 6;	//手牌
 	repeated RMColumnInfo 	hand_group_info	= 7;	//手牌分组
 }
@@ -106,18 +105,18 @@ message RMMsgSceneInfo
 	int64			  			cell_score		= 2;	//底分
 	int32						table_state		= 3;	//桌子状态
 	int32						tax				= 4;	//抽水
+
 	int32						banker_chair_id	= 5;	//庄家椅子号
 	int32						cur_chair_id	= 6;	//当前操作椅子号
 	int32						cur_chair_act	= 7;	//当前玩家的操作码
 	int32						out_time		= 8;	//当前状态剩余超时时间
 	int32						total_time		= 9;	//当前状态总时间
 
-	int32						wild_card		= 10;	//百搭牌
+	int32						joker_card		= 10;	//百搭牌
 	int32						surplus_card_num= 11;	//牌堆牌数量
 	repeated int32				out_cards		= 12;	//失效牌
 
 	repeated RMMsgPlayerInfo 	player_infos 	= 13;	//玩家状态
-
 }
 
 //游戏开始
@@ -130,14 +129,14 @@ message RMMsgGameStartResp
 	int64				max_multiple	= 5;	//最大倍数
 
 	int32				wild_card		= 10;	//百搭牌
-	int32				surplus_card_num= 11;	//牌堆牌数量
+	int32				left_card_num	= 11;	//牌堆牌数量
 	repeated int32		out_cards		= 12;	//失效牌
 
-	repeated int32		play_index		= 6;	//在玩下标
-	repeated int32		cards			= 7;	//手牌
+	repeated int32		play_index		= 13;	//在玩下标
+	repeated int32		cards			= 15;	//手牌
 }
 
-//游戏开始
+//通知操作
 message RMMsgNotifyActionResp
 {
 	int32				cur_chair_id	= 1;	//操作玩家椅子号
@@ -150,9 +149,21 @@ message RMMsgAction
 {
 	int32					act_type		= 1;	//操作标示
 	int32					dest_card		= 2;	//目标牌
-	bool					na_pai_out_card = 3;	//是否拿最后一张了的牌
-	repeated RMColumnInfo 	hand_group_info	= 4;	//手牌分组
-	uint32					dorp_multiple	= 5;	//弃牌倍数
+	bool					get_out_card 	= 3;	//是否拿最后一张了的牌
+	repeated RMColumnInfo 	hand_group_info	= 4;	//手牌分组	(拿牌的时候可以不传 出牌时必传)
+}
+
+//玩家操作
+message RMMsgActionResp
+{
+	int32 					chair_id		= 1;
+	int32					act_type		= 2;	//操作标示
+	int32					dest_card		= 3;	//目标牌
+	bool					get_out_card	= 4;	//是否拿最后一张了的牌
+	uint32					dorp_multiple	= 6;	//弃牌倍数
+	bool 					auto_action		= 7;	//是否自动
+	int32					left_card_num	= 9;	//剩余牌堆数量
+	repeated RMColumnInfo 	hand_group_info	= 10;	//手牌分组
 }
 
 message RMMsgActionChoice
@@ -175,8 +186,15 @@ message RMMsgGiveUpResp
 message RMMsgGameResult                           
 {                                           
 	int32						game_tax		= 1;	//税收
-	repeated RMMsgPlayerInfo	player_hands	= 2;	//手牌
+	repeated RMMsgPlayerInfo	player_info		= 2;	//手牌
 	int32						end_state		= 3;	//结束状态  1 比牌结束 2 全场秀牌
+}     
+
+//托管                               
+message RMMsgNotifyTrusteeship                           
+{                                           
+	int32						seat_index		= 1;	//
+	bool						is_trusteeship	= 2;	//
 }                                           
 
 

@@ -47,7 +47,7 @@ struct TableStruct_Rummy_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[12]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[14]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -64,6 +64,9 @@ extern RMMsgActionDefaultTypeInternal _RMMsgAction_default_instance_;
 class RMMsgActionChoice;
 class RMMsgActionChoiceDefaultTypeInternal;
 extern RMMsgActionChoiceDefaultTypeInternal _RMMsgActionChoice_default_instance_;
+class RMMsgActionResp;
+class RMMsgActionRespDefaultTypeInternal;
+extern RMMsgActionRespDefaultTypeInternal _RMMsgActionResp_default_instance_;
 class RMMsgGameResult;
 class RMMsgGameResultDefaultTypeInternal;
 extern RMMsgGameResultDefaultTypeInternal _RMMsgGameResult_default_instance_;
@@ -82,6 +85,9 @@ extern RMMsgNotifyActionRespDefaultTypeInternal _RMMsgNotifyActionResp_default_i
 class RMMsgNotifyPlayerAct;
 class RMMsgNotifyPlayerActDefaultTypeInternal;
 extern RMMsgNotifyPlayerActDefaultTypeInternal _RMMsgNotifyPlayerAct_default_instance_;
+class RMMsgNotifyTrusteeship;
+class RMMsgNotifyTrusteeshipDefaultTypeInternal;
+extern RMMsgNotifyTrusteeshipDefaultTypeInternal _RMMsgNotifyTrusteeship_default_instance_;
 class RMMsgPlayerInfo;
 class RMMsgPlayerInfoDefaultTypeInternal;
 extern RMMsgPlayerInfoDefaultTypeInternal _RMMsgPlayerInfo_default_instance_;
@@ -96,12 +102,14 @@ PROTOBUF_NAMESPACE_OPEN
 template<> ::Rummy::RMColumnInfo* Arena::CreateMaybeMessage<::Rummy::RMColumnInfo>(Arena*);
 template<> ::Rummy::RMMsgAction* Arena::CreateMaybeMessage<::Rummy::RMMsgAction>(Arena*);
 template<> ::Rummy::RMMsgActionChoice* Arena::CreateMaybeMessage<::Rummy::RMMsgActionChoice>(Arena*);
+template<> ::Rummy::RMMsgActionResp* Arena::CreateMaybeMessage<::Rummy::RMMsgActionResp>(Arena*);
 template<> ::Rummy::RMMsgGameResult* Arena::CreateMaybeMessage<::Rummy::RMMsgGameResult>(Arena*);
 template<> ::Rummy::RMMsgGameStartResp* Arena::CreateMaybeMessage<::Rummy::RMMsgGameStartResp>(Arena*);
 template<> ::Rummy::RMMsgGiveUpResp* Arena::CreateMaybeMessage<::Rummy::RMMsgGiveUpResp>(Arena*);
 template<> ::Rummy::RMMsgHandCards* Arena::CreateMaybeMessage<::Rummy::RMMsgHandCards>(Arena*);
 template<> ::Rummy::RMMsgNotifyActionResp* Arena::CreateMaybeMessage<::Rummy::RMMsgNotifyActionResp>(Arena*);
 template<> ::Rummy::RMMsgNotifyPlayerAct* Arena::CreateMaybeMessage<::Rummy::RMMsgNotifyPlayerAct>(Arena*);
+template<> ::Rummy::RMMsgNotifyTrusteeship* Arena::CreateMaybeMessage<::Rummy::RMMsgNotifyTrusteeship>(Arena*);
 template<> ::Rummy::RMMsgPlayerInfo* Arena::CreateMaybeMessage<::Rummy::RMMsgPlayerInfo>(Arena*);
 template<> ::Rummy::RMMsgSceneInfo* Arena::CreateMaybeMessage<::Rummy::RMMsgSceneInfo>(Arena*);
 template<> ::Rummy::RMMsgTableState* Arena::CreateMaybeMessage<::Rummy::RMMsgTableState>(Arena*);
@@ -233,6 +241,7 @@ enum ERMMsgIDSubGame : int {
   MsgIDSubGame_TimeOutReady = 12,
   MsgIDSubGame_TimeOutReadyResp = 13,
   MsgIDSubGame_TimeOutKickResp = 14,
+  MsgIDSubGame_NotifyTrusteeshipResp = 15,
   MsgIDSubGame_NotifySystemCheatResp = 20,
   MsgIDSubGame_NotifyCardTypeResp = 21,
   MsgIDSubGame_NotifyIsMaxResp = 22,
@@ -848,9 +857,8 @@ class RMMsgPlayerInfo PROTOBUF_FINAL :
     kHandGroupInfoFieldNumber = 7,
     kChairIdFieldNumber = 1,
     kPlayStatusFieldNumber = 2,
-    kGoldFieldNumber = 4,
-    kWinGoldFieldNumber = 5,
-    kCardTypeFieldNumber = 3,
+    kGoldFieldNumber = 3,
+    kWinGoldFieldNumber = 4,
   };
   // repeated int32 cards = 6;
   int cards_size() const;
@@ -910,7 +918,7 @@ class RMMsgPlayerInfo PROTOBUF_FINAL :
   void _internal_set_play_status(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int64 gold = 4;
+  // int64 gold = 3;
   void clear_gold();
   ::PROTOBUF_NAMESPACE_ID::int64 gold() const;
   void set_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
@@ -919,22 +927,13 @@ class RMMsgPlayerInfo PROTOBUF_FINAL :
   void _internal_set_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int64 win_gold = 5;
+  // int64 win_gold = 4;
   void clear_win_gold();
   ::PROTOBUF_NAMESPACE_ID::int64 win_gold() const;
   void set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
   private:
   ::PROTOBUF_NAMESPACE_ID::int64 _internal_win_gold() const;
   void _internal_set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
-  // int32 card_type = 3;
-  void clear_card_type();
-  ::PROTOBUF_NAMESPACE_ID::int32 card_type() const;
-  void set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_card_type() const;
-  void _internal_set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:Rummy.RMMsgPlayerInfo)
@@ -951,7 +950,6 @@ class RMMsgPlayerInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 play_status_;
   ::PROTOBUF_NAMESPACE_ID::int64 gold_;
   ::PROTOBUF_NAMESPACE_ID::int64 win_gold_;
-  ::PROTOBUF_NAMESPACE_ID::int32 card_type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Rummy_2eproto;
 };
@@ -1080,7 +1078,7 @@ class RMMsgSceneInfo PROTOBUF_FINAL :
     kCurChairActFieldNumber = 7,
     kOutTimeFieldNumber = 8,
     kTotalTimeFieldNumber = 9,
-    kWildCardFieldNumber = 10,
+    kJokerCardFieldNumber = 10,
     kSurplusCardNumFieldNumber = 11,
   };
   // repeated int32 out_cards = 12;
@@ -1204,13 +1202,13 @@ class RMMsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_total_time(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 wild_card = 10;
-  void clear_wild_card();
-  ::PROTOBUF_NAMESPACE_ID::int32 wild_card() const;
-  void set_wild_card(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // int32 joker_card = 10;
+  void clear_joker_card();
+  ::PROTOBUF_NAMESPACE_ID::int32 joker_card() const;
+  void set_joker_card(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_wild_card() const;
-  void _internal_set_wild_card(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_joker_card() const;
+  void _internal_set_joker_card(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 surplus_card_num = 11;
@@ -1241,7 +1239,7 @@ class RMMsgSceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 cur_chair_act_;
   ::PROTOBUF_NAMESPACE_ID::int32 out_time_;
   ::PROTOBUF_NAMESPACE_ID::int32 total_time_;
-  ::PROTOBUF_NAMESPACE_ID::int32 wild_card_;
+  ::PROTOBUF_NAMESPACE_ID::int32 joker_card_;
   ::PROTOBUF_NAMESPACE_ID::int32 surplus_card_num_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Rummy_2eproto;
@@ -1360,61 +1358,17 @@ class RMMsgGameStartResp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kPlayIndexFieldNumber = 6,
-    kCardsFieldNumber = 7,
     kOutCardsFieldNumber = 12,
+    kPlayIndexFieldNumber = 13,
+    kCardsFieldNumber = 15,
     kCurChairIdFieldNumber = 1,
     kBankerChairIdFieldNumber = 2,
     kMaxScoreFieldNumber = 3,
     kCellScoreFieldNumber = 4,
     kMaxMultipleFieldNumber = 5,
     kWildCardFieldNumber = 10,
-    kSurplusCardNumFieldNumber = 11,
+    kLeftCardNumFieldNumber = 11,
   };
-  // repeated int32 play_index = 6;
-  int play_index_size() const;
-  private:
-  int _internal_play_index_size() const;
-  public:
-  void clear_play_index();
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_play_index(int index) const;
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      _internal_play_index() const;
-  void _internal_add_play_index(::PROTOBUF_NAMESPACE_ID::int32 value);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      _internal_mutable_play_index();
-  public:
-  ::PROTOBUF_NAMESPACE_ID::int32 play_index(int index) const;
-  void set_play_index(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
-  void add_play_index(::PROTOBUF_NAMESPACE_ID::int32 value);
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      play_index() const;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      mutable_play_index();
-
-  // repeated int32 cards = 7;
-  int cards_size() const;
-  private:
-  int _internal_cards_size() const;
-  public:
-  void clear_cards();
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_cards(int index) const;
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      _internal_cards() const;
-  void _internal_add_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      _internal_mutable_cards();
-  public:
-  ::PROTOBUF_NAMESPACE_ID::int32 cards(int index) const;
-  void set_cards(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
-  void add_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      cards() const;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      mutable_cards();
-
   // repeated int32 out_cards = 12;
   int out_cards_size() const;
   private:
@@ -1436,6 +1390,50 @@ class RMMsgGameStartResp PROTOBUF_FINAL :
       out_cards() const;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_out_cards();
+
+  // repeated int32 play_index = 13;
+  int play_index_size() const;
+  private:
+  int _internal_play_index_size() const;
+  public:
+  void clear_play_index();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_play_index(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_play_index() const;
+  void _internal_add_play_index(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_play_index();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 play_index(int index) const;
+  void set_play_index(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_play_index(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      play_index() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_play_index();
+
+  // repeated int32 cards = 15;
+  int cards_size() const;
+  private:
+  int _internal_cards_size() const;
+  public:
+  void clear_cards();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_cards(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_cards() const;
+  void _internal_add_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_cards();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 cards(int index) const;
+  void set_cards(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      cards() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_cards();
 
   // int32 cur_chair_id = 1;
   void clear_cur_chair_id();
@@ -1491,13 +1489,13 @@ class RMMsgGameStartResp PROTOBUF_FINAL :
   void _internal_set_wild_card(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 surplus_card_num = 11;
-  void clear_surplus_card_num();
-  ::PROTOBUF_NAMESPACE_ID::int32 surplus_card_num() const;
-  void set_surplus_card_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // int32 left_card_num = 11;
+  void clear_left_card_num();
+  ::PROTOBUF_NAMESPACE_ID::int32 left_card_num() const;
+  void set_left_card_num(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_surplus_card_num() const;
-  void _internal_set_surplus_card_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_left_card_num() const;
+  void _internal_set_left_card_num(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:Rummy.RMMsgGameStartResp)
@@ -1507,19 +1505,19 @@ class RMMsgGameStartResp PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > out_cards_;
+  mutable std::atomic<int> _out_cards_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > play_index_;
   mutable std::atomic<int> _play_index_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > cards_;
   mutable std::atomic<int> _cards_cached_byte_size_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > out_cards_;
-  mutable std::atomic<int> _out_cards_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::int32 cur_chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 banker_chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int64 max_score_;
   ::PROTOBUF_NAMESPACE_ID::int64 cell_score_;
   ::PROTOBUF_NAMESPACE_ID::int64 max_multiple_;
   ::PROTOBUF_NAMESPACE_ID::int32 wild_card_;
-  ::PROTOBUF_NAMESPACE_ID::int32 surplus_card_num_;
+  ::PROTOBUF_NAMESPACE_ID::int32 left_card_num_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Rummy_2eproto;
 };
@@ -1798,8 +1796,7 @@ class RMMsgAction PROTOBUF_FINAL :
     kHandGroupInfoFieldNumber = 4,
     kActTypeFieldNumber = 1,
     kDestCardFieldNumber = 2,
-    kNaPaiOutCardFieldNumber = 3,
-    kDorpMultipleFieldNumber = 5,
+    kGetOutCardFieldNumber = 3,
   };
   // repeated .Rummy.RMColumnInfo hand_group_info = 4;
   int hand_group_info_size() const;
@@ -1837,22 +1834,13 @@ class RMMsgAction PROTOBUF_FINAL :
   void _internal_set_dest_card(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // bool na_pai_out_card = 3;
-  void clear_na_pai_out_card();
-  bool na_pai_out_card() const;
-  void set_na_pai_out_card(bool value);
+  // bool get_out_card = 3;
+  void clear_get_out_card();
+  bool get_out_card() const;
+  void set_get_out_card(bool value);
   private:
-  bool _internal_na_pai_out_card() const;
-  void _internal_set_na_pai_out_card(bool value);
-  public:
-
-  // uint32 dorp_multiple = 5;
-  void clear_dorp_multiple();
-  ::PROTOBUF_NAMESPACE_ID::uint32 dorp_multiple() const;
-  void set_dorp_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::uint32 _internal_dorp_multiple() const;
-  void _internal_set_dorp_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value);
+  bool _internal_get_out_card() const;
+  void _internal_set_get_out_card(bool value);
   public:
 
   // @@protoc_insertion_point(class_scope:Rummy.RMMsgAction)
@@ -1865,8 +1853,229 @@ class RMMsgAction PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Rummy::RMColumnInfo > hand_group_info_;
   ::PROTOBUF_NAMESPACE_ID::int32 act_type_;
   ::PROTOBUF_NAMESPACE_ID::int32 dest_card_;
-  bool na_pai_out_card_;
+  bool get_out_card_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Rummy_2eproto;
+};
+// -------------------------------------------------------------------
+
+class RMMsgActionResp PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Rummy.RMMsgActionResp) */ {
+ public:
+  inline RMMsgActionResp() : RMMsgActionResp(nullptr) {}
+  virtual ~RMMsgActionResp();
+
+  RMMsgActionResp(const RMMsgActionResp& from);
+  RMMsgActionResp(RMMsgActionResp&& from) noexcept
+    : RMMsgActionResp() {
+    *this = ::std::move(from);
+  }
+
+  inline RMMsgActionResp& operator=(const RMMsgActionResp& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline RMMsgActionResp& operator=(RMMsgActionResp&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const RMMsgActionResp& default_instance();
+
+  static inline const RMMsgActionResp* internal_default_instance() {
+    return reinterpret_cast<const RMMsgActionResp*>(
+               &_RMMsgActionResp_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    8;
+
+  friend void swap(RMMsgActionResp& a, RMMsgActionResp& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(RMMsgActionResp* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(RMMsgActionResp* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline RMMsgActionResp* New() const final {
+    return CreateMaybeMessage<RMMsgActionResp>(nullptr);
+  }
+
+  RMMsgActionResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<RMMsgActionResp>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const RMMsgActionResp& from);
+  void MergeFrom(const RMMsgActionResp& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(RMMsgActionResp* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "Rummy.RMMsgActionResp";
+  }
+  protected:
+  explicit RMMsgActionResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Rummy_2eproto);
+    return ::descriptor_table_Rummy_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kHandGroupInfoFieldNumber = 10,
+    kChairIdFieldNumber = 1,
+    kActTypeFieldNumber = 2,
+    kDestCardFieldNumber = 3,
+    kGetOutCardFieldNumber = 4,
+    kAutoActionFieldNumber = 7,
+    kDorpMultipleFieldNumber = 6,
+    kLeftCardNumFieldNumber = 9,
+  };
+  // repeated .Rummy.RMColumnInfo hand_group_info = 10;
+  int hand_group_info_size() const;
+  private:
+  int _internal_hand_group_info_size() const;
+  public:
+  void clear_hand_group_info();
+  ::Rummy::RMColumnInfo* mutable_hand_group_info(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Rummy::RMColumnInfo >*
+      mutable_hand_group_info();
+  private:
+  const ::Rummy::RMColumnInfo& _internal_hand_group_info(int index) const;
+  ::Rummy::RMColumnInfo* _internal_add_hand_group_info();
+  public:
+  const ::Rummy::RMColumnInfo& hand_group_info(int index) const;
+  ::Rummy::RMColumnInfo* add_hand_group_info();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Rummy::RMColumnInfo >&
+      hand_group_info() const;
+
+  // int32 chair_id = 1;
+  void clear_chair_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_id() const;
+  void set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_chair_id() const;
+  void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 act_type = 2;
+  void clear_act_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 act_type() const;
+  void set_act_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_act_type() const;
+  void _internal_set_act_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 dest_card = 3;
+  void clear_dest_card();
+  ::PROTOBUF_NAMESPACE_ID::int32 dest_card() const;
+  void set_dest_card(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_dest_card() const;
+  void _internal_set_dest_card(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // bool get_out_card = 4;
+  void clear_get_out_card();
+  bool get_out_card() const;
+  void set_get_out_card(bool value);
+  private:
+  bool _internal_get_out_card() const;
+  void _internal_set_get_out_card(bool value);
+  public:
+
+  // bool auto_action = 7;
+  void clear_auto_action();
+  bool auto_action() const;
+  void set_auto_action(bool value);
+  private:
+  bool _internal_auto_action() const;
+  void _internal_set_auto_action(bool value);
+  public:
+
+  // uint32 dorp_multiple = 6;
+  void clear_dorp_multiple();
+  ::PROTOBUF_NAMESPACE_ID::uint32 dorp_multiple() const;
+  void set_dorp_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::uint32 _internal_dorp_multiple() const;
+  void _internal_set_dorp_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value);
+  public:
+
+  // int32 left_card_num = 9;
+  void clear_left_card_num();
+  ::PROTOBUF_NAMESPACE_ID::int32 left_card_num() const;
+  void set_left_card_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_left_card_num() const;
+  void _internal_set_left_card_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:Rummy.RMMsgActionResp)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Rummy::RMColumnInfo > hand_group_info_;
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 act_type_;
+  ::PROTOBUF_NAMESPACE_ID::int32 dest_card_;
+  bool get_out_card_;
+  bool auto_action_;
   ::PROTOBUF_NAMESPACE_ID::uint32 dorp_multiple_;
+  ::PROTOBUF_NAMESPACE_ID::int32 left_card_num_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Rummy_2eproto;
 };
@@ -1913,7 +2122,7 @@ class RMMsgActionChoice PROTOBUF_FINAL :
                &_RMMsgActionChoice_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    9;
 
   friend void swap(RMMsgActionChoice& a, RMMsgActionChoice& b) {
     a.Swap(&b);
@@ -2100,7 +2309,7 @@ class RMMsgGiveUpResp PROTOBUF_FINAL :
                &_RMMsgGiveUpResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    10;
 
   friend void swap(RMMsgGiveUpResp& a, RMMsgGiveUpResp& b) {
     a.Swap(&b);
@@ -2258,7 +2467,7 @@ class RMMsgGameResult PROTOBUF_FINAL :
                &_RMMsgGameResult_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    11;
 
   friend void swap(RMMsgGameResult& a, RMMsgGameResult& b) {
     a.Swap(&b);
@@ -2329,27 +2538,27 @@ class RMMsgGameResult PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kPlayerHandsFieldNumber = 2,
+    kPlayerInfoFieldNumber = 2,
     kGameTaxFieldNumber = 1,
     kEndStateFieldNumber = 3,
   };
-  // repeated .Rummy.RMMsgPlayerInfo player_hands = 2;
-  int player_hands_size() const;
+  // repeated .Rummy.RMMsgPlayerInfo player_info = 2;
+  int player_info_size() const;
   private:
-  int _internal_player_hands_size() const;
+  int _internal_player_info_size() const;
   public:
-  void clear_player_hands();
-  ::Rummy::RMMsgPlayerInfo* mutable_player_hands(int index);
+  void clear_player_info();
+  ::Rummy::RMMsgPlayerInfo* mutable_player_info(int index);
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Rummy::RMMsgPlayerInfo >*
-      mutable_player_hands();
+      mutable_player_info();
   private:
-  const ::Rummy::RMMsgPlayerInfo& _internal_player_hands(int index) const;
-  ::Rummy::RMMsgPlayerInfo* _internal_add_player_hands();
+  const ::Rummy::RMMsgPlayerInfo& _internal_player_info(int index) const;
+  ::Rummy::RMMsgPlayerInfo* _internal_add_player_info();
   public:
-  const ::Rummy::RMMsgPlayerInfo& player_hands(int index) const;
-  ::Rummy::RMMsgPlayerInfo* add_player_hands();
+  const ::Rummy::RMMsgPlayerInfo& player_info(int index) const;
+  ::Rummy::RMMsgPlayerInfo* add_player_info();
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Rummy::RMMsgPlayerInfo >&
-      player_hands() const;
+      player_info() const;
 
   // int32 game_tax = 1;
   void clear_game_tax();
@@ -2376,9 +2585,156 @@ class RMMsgGameResult PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Rummy::RMMsgPlayerInfo > player_hands_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Rummy::RMMsgPlayerInfo > player_info_;
   ::PROTOBUF_NAMESPACE_ID::int32 game_tax_;
   ::PROTOBUF_NAMESPACE_ID::int32 end_state_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Rummy_2eproto;
+};
+// -------------------------------------------------------------------
+
+class RMMsgNotifyTrusteeship PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Rummy.RMMsgNotifyTrusteeship) */ {
+ public:
+  inline RMMsgNotifyTrusteeship() : RMMsgNotifyTrusteeship(nullptr) {}
+  virtual ~RMMsgNotifyTrusteeship();
+
+  RMMsgNotifyTrusteeship(const RMMsgNotifyTrusteeship& from);
+  RMMsgNotifyTrusteeship(RMMsgNotifyTrusteeship&& from) noexcept
+    : RMMsgNotifyTrusteeship() {
+    *this = ::std::move(from);
+  }
+
+  inline RMMsgNotifyTrusteeship& operator=(const RMMsgNotifyTrusteeship& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline RMMsgNotifyTrusteeship& operator=(RMMsgNotifyTrusteeship&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const RMMsgNotifyTrusteeship& default_instance();
+
+  static inline const RMMsgNotifyTrusteeship* internal_default_instance() {
+    return reinterpret_cast<const RMMsgNotifyTrusteeship*>(
+               &_RMMsgNotifyTrusteeship_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    12;
+
+  friend void swap(RMMsgNotifyTrusteeship& a, RMMsgNotifyTrusteeship& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(RMMsgNotifyTrusteeship* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(RMMsgNotifyTrusteeship* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline RMMsgNotifyTrusteeship* New() const final {
+    return CreateMaybeMessage<RMMsgNotifyTrusteeship>(nullptr);
+  }
+
+  RMMsgNotifyTrusteeship* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<RMMsgNotifyTrusteeship>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const RMMsgNotifyTrusteeship& from);
+  void MergeFrom(const RMMsgNotifyTrusteeship& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(RMMsgNotifyTrusteeship* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "Rummy.RMMsgNotifyTrusteeship";
+  }
+  protected:
+  explicit RMMsgNotifyTrusteeship(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Rummy_2eproto);
+    return ::descriptor_table_Rummy_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kSeatIndexFieldNumber = 1,
+    kIsTrusteeshipFieldNumber = 2,
+  };
+  // int32 seat_index = 1;
+  void clear_seat_index();
+  ::PROTOBUF_NAMESPACE_ID::int32 seat_index() const;
+  void set_seat_index(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_seat_index() const;
+  void _internal_set_seat_index(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // bool is_trusteeship = 2;
+  void clear_is_trusteeship();
+  bool is_trusteeship() const;
+  void set_is_trusteeship(bool value);
+  private:
+  bool _internal_is_trusteeship() const;
+  void _internal_set_is_trusteeship(bool value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:Rummy.RMMsgNotifyTrusteeship)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 seat_index_;
+  bool is_trusteeship_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Rummy_2eproto;
 };
@@ -2425,7 +2781,7 @@ class RMMsgNotifyPlayerAct PROTOBUF_FINAL :
                &_RMMsgNotifyPlayerAct_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    13;
 
   friend void swap(RMMsgNotifyPlayerAct& a, RMMsgNotifyPlayerAct& b) {
     a.Swap(&b);
@@ -2766,27 +3122,7 @@ inline void RMMsgPlayerInfo::set_play_status(::PROTOBUF_NAMESPACE_ID::int32 valu
   // @@protoc_insertion_point(field_set:Rummy.RMMsgPlayerInfo.play_status)
 }
 
-// int32 card_type = 3;
-inline void RMMsgPlayerInfo::clear_card_type() {
-  card_type_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgPlayerInfo::_internal_card_type() const {
-  return card_type_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgPlayerInfo::card_type() const {
-  // @@protoc_insertion_point(field_get:Rummy.RMMsgPlayerInfo.card_type)
-  return _internal_card_type();
-}
-inline void RMMsgPlayerInfo::_internal_set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  card_type_ = value;
-}
-inline void RMMsgPlayerInfo::set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_card_type(value);
-  // @@protoc_insertion_point(field_set:Rummy.RMMsgPlayerInfo.card_type)
-}
-
-// int64 gold = 4;
+// int64 gold = 3;
 inline void RMMsgPlayerInfo::clear_gold() {
   gold_ = PROTOBUF_LONGLONG(0);
 }
@@ -2806,7 +3142,7 @@ inline void RMMsgPlayerInfo::set_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
   // @@protoc_insertion_point(field_set:Rummy.RMMsgPlayerInfo.gold)
 }
 
-// int64 win_gold = 5;
+// int64 win_gold = 4;
 inline void RMMsgPlayerInfo::clear_win_gold() {
   win_gold_ = PROTOBUF_LONGLONG(0);
 }
@@ -3096,24 +3432,24 @@ inline void RMMsgSceneInfo::set_total_time(::PROTOBUF_NAMESPACE_ID::int32 value)
   // @@protoc_insertion_point(field_set:Rummy.RMMsgSceneInfo.total_time)
 }
 
-// int32 wild_card = 10;
-inline void RMMsgSceneInfo::clear_wild_card() {
-  wild_card_ = 0;
+// int32 joker_card = 10;
+inline void RMMsgSceneInfo::clear_joker_card() {
+  joker_card_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgSceneInfo::_internal_wild_card() const {
-  return wild_card_;
+inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgSceneInfo::_internal_joker_card() const {
+  return joker_card_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgSceneInfo::wild_card() const {
-  // @@protoc_insertion_point(field_get:Rummy.RMMsgSceneInfo.wild_card)
-  return _internal_wild_card();
+inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgSceneInfo::joker_card() const {
+  // @@protoc_insertion_point(field_get:Rummy.RMMsgSceneInfo.joker_card)
+  return _internal_joker_card();
 }
-inline void RMMsgSceneInfo::_internal_set_wild_card(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void RMMsgSceneInfo::_internal_set_joker_card(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
-  wild_card_ = value;
+  joker_card_ = value;
 }
-inline void RMMsgSceneInfo::set_wild_card(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_wild_card(value);
-  // @@protoc_insertion_point(field_set:Rummy.RMMsgSceneInfo.wild_card)
+inline void RMMsgSceneInfo::set_joker_card(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_joker_card(value);
+  // @@protoc_insertion_point(field_set:Rummy.RMMsgSceneInfo.joker_card)
 }
 
 // int32 surplus_card_num = 11;
@@ -3346,24 +3682,24 @@ inline void RMMsgGameStartResp::set_wild_card(::PROTOBUF_NAMESPACE_ID::int32 val
   // @@protoc_insertion_point(field_set:Rummy.RMMsgGameStartResp.wild_card)
 }
 
-// int32 surplus_card_num = 11;
-inline void RMMsgGameStartResp::clear_surplus_card_num() {
-  surplus_card_num_ = 0;
+// int32 left_card_num = 11;
+inline void RMMsgGameStartResp::clear_left_card_num() {
+  left_card_num_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgGameStartResp::_internal_surplus_card_num() const {
-  return surplus_card_num_;
+inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgGameStartResp::_internal_left_card_num() const {
+  return left_card_num_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgGameStartResp::surplus_card_num() const {
-  // @@protoc_insertion_point(field_get:Rummy.RMMsgGameStartResp.surplus_card_num)
-  return _internal_surplus_card_num();
+inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgGameStartResp::left_card_num() const {
+  // @@protoc_insertion_point(field_get:Rummy.RMMsgGameStartResp.left_card_num)
+  return _internal_left_card_num();
 }
-inline void RMMsgGameStartResp::_internal_set_surplus_card_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void RMMsgGameStartResp::_internal_set_left_card_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
-  surplus_card_num_ = value;
+  left_card_num_ = value;
 }
-inline void RMMsgGameStartResp::set_surplus_card_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_surplus_card_num(value);
-  // @@protoc_insertion_point(field_set:Rummy.RMMsgGameStartResp.surplus_card_num)
+inline void RMMsgGameStartResp::set_left_card_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_left_card_num(value);
+  // @@protoc_insertion_point(field_set:Rummy.RMMsgGameStartResp.left_card_num)
 }
 
 // repeated int32 out_cards = 12;
@@ -3413,7 +3749,7 @@ RMMsgGameStartResp::mutable_out_cards() {
   return _internal_mutable_out_cards();
 }
 
-// repeated int32 play_index = 6;
+// repeated int32 play_index = 13;
 inline int RMMsgGameStartResp::_internal_play_index_size() const {
   return play_index_.size();
 }
@@ -3460,7 +3796,7 @@ RMMsgGameStartResp::mutable_play_index() {
   return _internal_mutable_play_index();
 }
 
-// repeated int32 cards = 7;
+// repeated int32 cards = 15;
 inline int RMMsgGameStartResp::_internal_cards_size() const {
   return cards_.size();
 }
@@ -3615,24 +3951,24 @@ inline void RMMsgAction::set_dest_card(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:Rummy.RMMsgAction.dest_card)
 }
 
-// bool na_pai_out_card = 3;
-inline void RMMsgAction::clear_na_pai_out_card() {
-  na_pai_out_card_ = false;
+// bool get_out_card = 3;
+inline void RMMsgAction::clear_get_out_card() {
+  get_out_card_ = false;
 }
-inline bool RMMsgAction::_internal_na_pai_out_card() const {
-  return na_pai_out_card_;
+inline bool RMMsgAction::_internal_get_out_card() const {
+  return get_out_card_;
 }
-inline bool RMMsgAction::na_pai_out_card() const {
-  // @@protoc_insertion_point(field_get:Rummy.RMMsgAction.na_pai_out_card)
-  return _internal_na_pai_out_card();
+inline bool RMMsgAction::get_out_card() const {
+  // @@protoc_insertion_point(field_get:Rummy.RMMsgAction.get_out_card)
+  return _internal_get_out_card();
 }
-inline void RMMsgAction::_internal_set_na_pai_out_card(bool value) {
+inline void RMMsgAction::_internal_set_get_out_card(bool value) {
   
-  na_pai_out_card_ = value;
+  get_out_card_ = value;
 }
-inline void RMMsgAction::set_na_pai_out_card(bool value) {
-  _internal_set_na_pai_out_card(value);
-  // @@protoc_insertion_point(field_set:Rummy.RMMsgAction.na_pai_out_card)
+inline void RMMsgAction::set_get_out_card(bool value) {
+  _internal_set_get_out_card(value);
+  // @@protoc_insertion_point(field_set:Rummy.RMMsgAction.get_out_card)
 }
 
 // repeated .Rummy.RMColumnInfo hand_group_info = 4;
@@ -3674,24 +4010,187 @@ RMMsgAction::hand_group_info() const {
   return hand_group_info_;
 }
 
-// uint32 dorp_multiple = 5;
-inline void RMMsgAction::clear_dorp_multiple() {
+// -------------------------------------------------------------------
+
+// RMMsgActionResp
+
+// int32 chair_id = 1;
+inline void RMMsgActionResp::clear_chair_id() {
+  chair_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgActionResp::_internal_chair_id() const {
+  return chair_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgActionResp::chair_id() const {
+  // @@protoc_insertion_point(field_get:Rummy.RMMsgActionResp.chair_id)
+  return _internal_chair_id();
+}
+inline void RMMsgActionResp::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  chair_id_ = value;
+}
+inline void RMMsgActionResp::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_chair_id(value);
+  // @@protoc_insertion_point(field_set:Rummy.RMMsgActionResp.chair_id)
+}
+
+// int32 act_type = 2;
+inline void RMMsgActionResp::clear_act_type() {
+  act_type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgActionResp::_internal_act_type() const {
+  return act_type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgActionResp::act_type() const {
+  // @@protoc_insertion_point(field_get:Rummy.RMMsgActionResp.act_type)
+  return _internal_act_type();
+}
+inline void RMMsgActionResp::_internal_set_act_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  act_type_ = value;
+}
+inline void RMMsgActionResp::set_act_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_act_type(value);
+  // @@protoc_insertion_point(field_set:Rummy.RMMsgActionResp.act_type)
+}
+
+// int32 dest_card = 3;
+inline void RMMsgActionResp::clear_dest_card() {
+  dest_card_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgActionResp::_internal_dest_card() const {
+  return dest_card_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgActionResp::dest_card() const {
+  // @@protoc_insertion_point(field_get:Rummy.RMMsgActionResp.dest_card)
+  return _internal_dest_card();
+}
+inline void RMMsgActionResp::_internal_set_dest_card(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  dest_card_ = value;
+}
+inline void RMMsgActionResp::set_dest_card(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_dest_card(value);
+  // @@protoc_insertion_point(field_set:Rummy.RMMsgActionResp.dest_card)
+}
+
+// bool get_out_card = 4;
+inline void RMMsgActionResp::clear_get_out_card() {
+  get_out_card_ = false;
+}
+inline bool RMMsgActionResp::_internal_get_out_card() const {
+  return get_out_card_;
+}
+inline bool RMMsgActionResp::get_out_card() const {
+  // @@protoc_insertion_point(field_get:Rummy.RMMsgActionResp.get_out_card)
+  return _internal_get_out_card();
+}
+inline void RMMsgActionResp::_internal_set_get_out_card(bool value) {
+  
+  get_out_card_ = value;
+}
+inline void RMMsgActionResp::set_get_out_card(bool value) {
+  _internal_set_get_out_card(value);
+  // @@protoc_insertion_point(field_set:Rummy.RMMsgActionResp.get_out_card)
+}
+
+// uint32 dorp_multiple = 6;
+inline void RMMsgActionResp::clear_dorp_multiple() {
   dorp_multiple_ = 0u;
 }
-inline ::PROTOBUF_NAMESPACE_ID::uint32 RMMsgAction::_internal_dorp_multiple() const {
+inline ::PROTOBUF_NAMESPACE_ID::uint32 RMMsgActionResp::_internal_dorp_multiple() const {
   return dorp_multiple_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::uint32 RMMsgAction::dorp_multiple() const {
-  // @@protoc_insertion_point(field_get:Rummy.RMMsgAction.dorp_multiple)
+inline ::PROTOBUF_NAMESPACE_ID::uint32 RMMsgActionResp::dorp_multiple() const {
+  // @@protoc_insertion_point(field_get:Rummy.RMMsgActionResp.dorp_multiple)
   return _internal_dorp_multiple();
 }
-inline void RMMsgAction::_internal_set_dorp_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+inline void RMMsgActionResp::_internal_set_dorp_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value) {
   
   dorp_multiple_ = value;
 }
-inline void RMMsgAction::set_dorp_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+inline void RMMsgActionResp::set_dorp_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value) {
   _internal_set_dorp_multiple(value);
-  // @@protoc_insertion_point(field_set:Rummy.RMMsgAction.dorp_multiple)
+  // @@protoc_insertion_point(field_set:Rummy.RMMsgActionResp.dorp_multiple)
+}
+
+// bool auto_action = 7;
+inline void RMMsgActionResp::clear_auto_action() {
+  auto_action_ = false;
+}
+inline bool RMMsgActionResp::_internal_auto_action() const {
+  return auto_action_;
+}
+inline bool RMMsgActionResp::auto_action() const {
+  // @@protoc_insertion_point(field_get:Rummy.RMMsgActionResp.auto_action)
+  return _internal_auto_action();
+}
+inline void RMMsgActionResp::_internal_set_auto_action(bool value) {
+  
+  auto_action_ = value;
+}
+inline void RMMsgActionResp::set_auto_action(bool value) {
+  _internal_set_auto_action(value);
+  // @@protoc_insertion_point(field_set:Rummy.RMMsgActionResp.auto_action)
+}
+
+// int32 left_card_num = 9;
+inline void RMMsgActionResp::clear_left_card_num() {
+  left_card_num_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgActionResp::_internal_left_card_num() const {
+  return left_card_num_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgActionResp::left_card_num() const {
+  // @@protoc_insertion_point(field_get:Rummy.RMMsgActionResp.left_card_num)
+  return _internal_left_card_num();
+}
+inline void RMMsgActionResp::_internal_set_left_card_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  left_card_num_ = value;
+}
+inline void RMMsgActionResp::set_left_card_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_left_card_num(value);
+  // @@protoc_insertion_point(field_set:Rummy.RMMsgActionResp.left_card_num)
+}
+
+// repeated .Rummy.RMColumnInfo hand_group_info = 10;
+inline int RMMsgActionResp::_internal_hand_group_info_size() const {
+  return hand_group_info_.size();
+}
+inline int RMMsgActionResp::hand_group_info_size() const {
+  return _internal_hand_group_info_size();
+}
+inline void RMMsgActionResp::clear_hand_group_info() {
+  hand_group_info_.Clear();
+}
+inline ::Rummy::RMColumnInfo* RMMsgActionResp::mutable_hand_group_info(int index) {
+  // @@protoc_insertion_point(field_mutable:Rummy.RMMsgActionResp.hand_group_info)
+  return hand_group_info_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Rummy::RMColumnInfo >*
+RMMsgActionResp::mutable_hand_group_info() {
+  // @@protoc_insertion_point(field_mutable_list:Rummy.RMMsgActionResp.hand_group_info)
+  return &hand_group_info_;
+}
+inline const ::Rummy::RMColumnInfo& RMMsgActionResp::_internal_hand_group_info(int index) const {
+  return hand_group_info_.Get(index);
+}
+inline const ::Rummy::RMColumnInfo& RMMsgActionResp::hand_group_info(int index) const {
+  // @@protoc_insertion_point(field_get:Rummy.RMMsgActionResp.hand_group_info)
+  return _internal_hand_group_info(index);
+}
+inline ::Rummy::RMColumnInfo* RMMsgActionResp::_internal_add_hand_group_info() {
+  return hand_group_info_.Add();
+}
+inline ::Rummy::RMColumnInfo* RMMsgActionResp::add_hand_group_info() {
+  // @@protoc_insertion_point(field_add:Rummy.RMMsgActionResp.hand_group_info)
+  return _internal_add_hand_group_info();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Rummy::RMColumnInfo >&
+RMMsgActionResp::hand_group_info() const {
+  // @@protoc_insertion_point(field_list:Rummy.RMMsgActionResp.hand_group_info)
+  return hand_group_info_;
 }
 
 // -------------------------------------------------------------------
@@ -3948,43 +4447,43 @@ inline void RMMsgGameResult::set_game_tax(::PROTOBUF_NAMESPACE_ID::int32 value) 
   // @@protoc_insertion_point(field_set:Rummy.RMMsgGameResult.game_tax)
 }
 
-// repeated .Rummy.RMMsgPlayerInfo player_hands = 2;
-inline int RMMsgGameResult::_internal_player_hands_size() const {
-  return player_hands_.size();
+// repeated .Rummy.RMMsgPlayerInfo player_info = 2;
+inline int RMMsgGameResult::_internal_player_info_size() const {
+  return player_info_.size();
 }
-inline int RMMsgGameResult::player_hands_size() const {
-  return _internal_player_hands_size();
+inline int RMMsgGameResult::player_info_size() const {
+  return _internal_player_info_size();
 }
-inline void RMMsgGameResult::clear_player_hands() {
-  player_hands_.Clear();
+inline void RMMsgGameResult::clear_player_info() {
+  player_info_.Clear();
 }
-inline ::Rummy::RMMsgPlayerInfo* RMMsgGameResult::mutable_player_hands(int index) {
-  // @@protoc_insertion_point(field_mutable:Rummy.RMMsgGameResult.player_hands)
-  return player_hands_.Mutable(index);
+inline ::Rummy::RMMsgPlayerInfo* RMMsgGameResult::mutable_player_info(int index) {
+  // @@protoc_insertion_point(field_mutable:Rummy.RMMsgGameResult.player_info)
+  return player_info_.Mutable(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Rummy::RMMsgPlayerInfo >*
-RMMsgGameResult::mutable_player_hands() {
-  // @@protoc_insertion_point(field_mutable_list:Rummy.RMMsgGameResult.player_hands)
-  return &player_hands_;
+RMMsgGameResult::mutable_player_info() {
+  // @@protoc_insertion_point(field_mutable_list:Rummy.RMMsgGameResult.player_info)
+  return &player_info_;
 }
-inline const ::Rummy::RMMsgPlayerInfo& RMMsgGameResult::_internal_player_hands(int index) const {
-  return player_hands_.Get(index);
+inline const ::Rummy::RMMsgPlayerInfo& RMMsgGameResult::_internal_player_info(int index) const {
+  return player_info_.Get(index);
 }
-inline const ::Rummy::RMMsgPlayerInfo& RMMsgGameResult::player_hands(int index) const {
-  // @@protoc_insertion_point(field_get:Rummy.RMMsgGameResult.player_hands)
-  return _internal_player_hands(index);
+inline const ::Rummy::RMMsgPlayerInfo& RMMsgGameResult::player_info(int index) const {
+  // @@protoc_insertion_point(field_get:Rummy.RMMsgGameResult.player_info)
+  return _internal_player_info(index);
 }
-inline ::Rummy::RMMsgPlayerInfo* RMMsgGameResult::_internal_add_player_hands() {
-  return player_hands_.Add();
+inline ::Rummy::RMMsgPlayerInfo* RMMsgGameResult::_internal_add_player_info() {
+  return player_info_.Add();
 }
-inline ::Rummy::RMMsgPlayerInfo* RMMsgGameResult::add_player_hands() {
-  // @@protoc_insertion_point(field_add:Rummy.RMMsgGameResult.player_hands)
-  return _internal_add_player_hands();
+inline ::Rummy::RMMsgPlayerInfo* RMMsgGameResult::add_player_info() {
+  // @@protoc_insertion_point(field_add:Rummy.RMMsgGameResult.player_info)
+  return _internal_add_player_info();
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Rummy::RMMsgPlayerInfo >&
-RMMsgGameResult::player_hands() const {
-  // @@protoc_insertion_point(field_list:Rummy.RMMsgGameResult.player_hands)
-  return player_hands_;
+RMMsgGameResult::player_info() const {
+  // @@protoc_insertion_point(field_list:Rummy.RMMsgGameResult.player_info)
+  return player_info_;
 }
 
 // int32 end_state = 3;
@@ -4005,6 +4504,50 @@ inline void RMMsgGameResult::_internal_set_end_state(::PROTOBUF_NAMESPACE_ID::in
 inline void RMMsgGameResult::set_end_state(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_end_state(value);
   // @@protoc_insertion_point(field_set:Rummy.RMMsgGameResult.end_state)
+}
+
+// -------------------------------------------------------------------
+
+// RMMsgNotifyTrusteeship
+
+// int32 seat_index = 1;
+inline void RMMsgNotifyTrusteeship::clear_seat_index() {
+  seat_index_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgNotifyTrusteeship::_internal_seat_index() const {
+  return seat_index_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgNotifyTrusteeship::seat_index() const {
+  // @@protoc_insertion_point(field_get:Rummy.RMMsgNotifyTrusteeship.seat_index)
+  return _internal_seat_index();
+}
+inline void RMMsgNotifyTrusteeship::_internal_set_seat_index(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  seat_index_ = value;
+}
+inline void RMMsgNotifyTrusteeship::set_seat_index(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_seat_index(value);
+  // @@protoc_insertion_point(field_set:Rummy.RMMsgNotifyTrusteeship.seat_index)
+}
+
+// bool is_trusteeship = 2;
+inline void RMMsgNotifyTrusteeship::clear_is_trusteeship() {
+  is_trusteeship_ = false;
+}
+inline bool RMMsgNotifyTrusteeship::_internal_is_trusteeship() const {
+  return is_trusteeship_;
+}
+inline bool RMMsgNotifyTrusteeship::is_trusteeship() const {
+  // @@protoc_insertion_point(field_get:Rummy.RMMsgNotifyTrusteeship.is_trusteeship)
+  return _internal_is_trusteeship();
+}
+inline void RMMsgNotifyTrusteeship::_internal_set_is_trusteeship(bool value) {
+  
+  is_trusteeship_ = value;
+}
+inline void RMMsgNotifyTrusteeship::set_is_trusteeship(bool value) {
+  _internal_set_is_trusteeship(value);
+  // @@protoc_insertion_point(field_set:Rummy.RMMsgNotifyTrusteeship.is_trusteeship)
 }
 
 // -------------------------------------------------------------------
@@ -4054,6 +4597,10 @@ inline void RMMsgNotifyPlayerAct::set_act(::PROTOBUF_NAMESPACE_ID::int32 value) 
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

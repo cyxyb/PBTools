@@ -50,6 +50,10 @@ class RMMsgActionDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<RMMsgAction> _instance;
 } _RMMsgAction_default_instance_;
+class RMMsgActionRespDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<RMMsgActionResp> _instance;
+} _RMMsgActionResp_default_instance_;
 class RMMsgActionChoiceDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<RMMsgActionChoice> _instance;
@@ -62,6 +66,10 @@ class RMMsgGameResultDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<RMMsgGameResult> _instance;
 } _RMMsgGameResult_default_instance_;
+class RMMsgNotifyTrusteeshipDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<RMMsgNotifyTrusteeship> _instance;
+} _RMMsgNotifyTrusteeship_default_instance_;
 class RMMsgNotifyPlayerActDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<RMMsgNotifyPlayerAct> _instance;
@@ -107,6 +115,20 @@ static void InitDefaultsscc_info_RMMsgActionChoice_Rummy_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_RMMsgActionChoice_Rummy_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_RMMsgActionChoice_Rummy_2eproto}, {
       &scc_info_RMMsgAction_Rummy_2eproto.base,}};
+
+static void InitDefaultsscc_info_RMMsgActionResp_Rummy_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::Rummy::_RMMsgActionResp_default_instance_;
+    new (ptr) ::Rummy::RMMsgActionResp();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_RMMsgActionResp_Rummy_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_RMMsgActionResp_Rummy_2eproto}, {
+      &scc_info_RMColumnInfo_Rummy_2eproto.base,}};
 
 static void InitDefaultsscc_info_RMMsgGameResult_Rummy_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -187,6 +209,19 @@ static void InitDefaultsscc_info_RMMsgNotifyPlayerAct_Rummy_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RMMsgNotifyPlayerAct_Rummy_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_RMMsgNotifyPlayerAct_Rummy_2eproto}, {}};
 
+static void InitDefaultsscc_info_RMMsgNotifyTrusteeship_Rummy_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::Rummy::_RMMsgNotifyTrusteeship_default_instance_;
+    new (ptr) ::Rummy::RMMsgNotifyTrusteeship();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RMMsgNotifyTrusteeship_Rummy_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_RMMsgNotifyTrusteeship_Rummy_2eproto}, {}};
+
 static void InitDefaultsscc_info_RMMsgPlayerInfo_Rummy_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -228,7 +263,7 @@ static void InitDefaultsscc_info_RMMsgTableState_Rummy_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RMMsgTableState_Rummy_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_RMMsgTableState_Rummy_2eproto}, {}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Rummy_2eproto[12];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Rummy_2eproto[14];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_Rummy_2eproto[5];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_Rummy_2eproto = nullptr;
 
@@ -261,7 +296,6 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Rummy_2eproto::offsets[] PROTO
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgPlayerInfo, chair_id_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgPlayerInfo, play_status_),
-  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgPlayerInfo, card_type_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgPlayerInfo, gold_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgPlayerInfo, win_gold_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgPlayerInfo, cards_),
@@ -280,7 +314,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Rummy_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgSceneInfo, cur_chair_act_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgSceneInfo, out_time_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgSceneInfo, total_time_),
-  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgSceneInfo, wild_card_),
+  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgSceneInfo, joker_card_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgSceneInfo, surplus_card_num_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgSceneInfo, out_cards_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgSceneInfo, player_infos_),
@@ -295,7 +329,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Rummy_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, cell_score_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, max_multiple_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, wild_card_),
-  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, surplus_card_num_),
+  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, left_card_num_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, out_cards_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, play_index_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, cards_),
@@ -314,9 +348,21 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Rummy_2eproto::offsets[] PROTO
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgAction, act_type_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgAction, dest_card_),
-  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgAction, na_pai_out_card_),
+  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgAction, get_out_card_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgAction, hand_group_info_),
-  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgAction, dorp_multiple_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgActionResp, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgActionResp, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgActionResp, act_type_),
+  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgActionResp, dest_card_),
+  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgActionResp, get_out_card_),
+  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgActionResp, dorp_multiple_),
+  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgActionResp, auto_action_),
+  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgActionResp, left_card_num_),
+  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgActionResp, hand_group_info_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgActionChoice, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -340,8 +386,15 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Rummy_2eproto::offsets[] PROTO
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameResult, game_tax_),
-  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameResult, player_hands_),
+  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameResult, player_info_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameResult, end_state_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgNotifyTrusteeship, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgNotifyTrusteeship, seat_index_),
+  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgNotifyTrusteeship, is_trusteeship_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgNotifyPlayerAct, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -355,14 +408,16 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 8, -1, sizeof(::Rummy::RMMsgTableState)},
   { 15, -1, sizeof(::Rummy::RMMsgHandCards)},
   { 21, -1, sizeof(::Rummy::RMMsgPlayerInfo)},
-  { 33, -1, sizeof(::Rummy::RMMsgSceneInfo)},
-  { 51, -1, sizeof(::Rummy::RMMsgGameStartResp)},
-  { 66, -1, sizeof(::Rummy::RMMsgNotifyActionResp)},
-  { 74, -1, sizeof(::Rummy::RMMsgAction)},
-  { 84, -1, sizeof(::Rummy::RMMsgActionChoice)},
-  { 93, -1, sizeof(::Rummy::RMMsgGiveUpResp)},
-  { 101, -1, sizeof(::Rummy::RMMsgGameResult)},
-  { 109, -1, sizeof(::Rummy::RMMsgNotifyPlayerAct)},
+  { 32, -1, sizeof(::Rummy::RMMsgSceneInfo)},
+  { 50, -1, sizeof(::Rummy::RMMsgGameStartResp)},
+  { 65, -1, sizeof(::Rummy::RMMsgNotifyActionResp)},
+  { 73, -1, sizeof(::Rummy::RMMsgAction)},
+  { 82, -1, sizeof(::Rummy::RMMsgActionResp)},
+  { 95, -1, sizeof(::Rummy::RMMsgActionChoice)},
+  { 104, -1, sizeof(::Rummy::RMMsgGiveUpResp)},
+  { 112, -1, sizeof(::Rummy::RMMsgGameResult)},
+  { 120, -1, sizeof(::Rummy::RMMsgNotifyTrusteeship)},
+  { 127, -1, sizeof(::Rummy::RMMsgNotifyPlayerAct)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -374,9 +429,11 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Rummy::_RMMsgGameStartResp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Rummy::_RMMsgNotifyActionResp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Rummy::_RMMsgAction_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Rummy::_RMMsgActionResp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Rummy::_RMMsgActionChoice_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Rummy::_RMMsgGiveUpResp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Rummy::_RMMsgGameResult_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Rummy::_RMMsgNotifyTrusteeship_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Rummy::_RMMsgNotifyPlayerAct_default_instance_),
 };
 
@@ -385,88 +442,97 @@ const char descriptor_table_protodef_Rummy_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "start_value\030\001 \001(\005\022\020\n\010col_type\030\002 \001(\005\022\r\n\005c"
   "ards\030\003 \003(\005\"1\n\017RMMsgTableState\022\r\n\005state\030\001"
   " \001(\005\022\017\n\007out_ime\030\002 \001(\005\"\037\n\016RMMsgHandCards\022"
-  "\r\n\005cards\030\001 \003(\005\"\250\001\n\017RMMsgPlayerInfo\022\020\n\010ch"
-  "air_id\030\001 \001(\005\022\023\n\013play_status\030\002 \001(\005\022\021\n\tcar"
-  "d_type\030\003 \001(\005\022\014\n\004gold\030\004 \001(\003\022\020\n\010win_gold\030\005"
-  " \001(\003\022\r\n\005cards\030\006 \003(\005\022,\n\017hand_group_info\030\007"
-  " \003(\0132\023.Rummy.RMColumnInfo\"\266\002\n\016RMMsgScene"
-  "Info\022\024\n\014max_multiple\030\001 \001(\003\022\022\n\ncell_score"
-  "\030\002 \001(\003\022\023\n\013table_state\030\003 \001(\005\022\013\n\003tax\030\004 \001(\005"
-  "\022\027\n\017banker_chair_id\030\005 \001(\005\022\024\n\014cur_chair_i"
-  "d\030\006 \001(\005\022\025\n\rcur_chair_act\030\007 \001(\005\022\020\n\010out_ti"
-  "me\030\010 \001(\005\022\022\n\ntotal_time\030\t \001(\005\022\021\n\twild_car"
-  "d\030\n \001(\005\022\030\n\020surplus_card_num\030\013 \001(\005\022\021\n\tout"
-  "_cards\030\014 \003(\005\022,\n\014player_infos\030\r \003(\0132\026.Rum"
-  "my.RMMsgPlayerInfo\"\343\001\n\022RMMsgGameStartRes"
-  "p\022\024\n\014cur_chair_id\030\001 \001(\005\022\027\n\017banker_chair_"
-  "id\030\002 \001(\005\022\021\n\tmax_score\030\003 \001(\003\022\022\n\ncell_scor"
-  "e\030\004 \001(\003\022\024\n\014max_multiple\030\005 \001(\003\022\021\n\twild_ca"
-  "rd\030\n \001(\005\022\030\n\020surplus_card_num\030\013 \001(\005\022\021\n\tou"
-  "t_cards\030\014 \003(\005\022\022\n\nplay_index\030\006 \003(\005\022\r\n\005car"
-  "ds\030\007 \003(\005\"U\n\025RMMsgNotifyActionResp\022\024\n\014cur"
-  "_chair_id\030\001 \001(\005\022\023\n\013current_act\030\003 \001(\005\022\021\n\t"
-  "oper_time\030\004 \001(\005\"\220\001\n\013RMMsgAction\022\020\n\010act_t"
-  "ype\030\001 \001(\005\022\021\n\tdest_card\030\002 \001(\005\022\027\n\017na_pai_o"
-  "ut_card\030\003 \001(\010\022,\n\017hand_group_info\030\004 \003(\0132\023"
-  ".Rummy.RMColumnInfo\022\025\n\rdorp_multiple\030\005 \001"
-  "(\r\"\227\001\n\021RMMsgActionChoice\022\030\n\020determined_l"
-  "evel\030\001 \001(\005\022\024\n\014is_determine\030\002 \001(\010\022#\n\007choi"
-  "ces\030\003 \003(\0132\022.Rummy.RMMsgAction\022-\n\021determi"
-  "ned_action\030\004 \001(\0132\022.Rummy.RMMsgAction\"M\n\017"
-  "RMMsgGiveUpResp\022\020\n\010chair_id\030\001 \001(\005\022\021\n\tlos"
-  "s_gold\030\002 \001(\005\022\025\n\rdorp_multiple\030\003 \001(\r\"d\n\017R"
-  "MMsgGameResult\022\020\n\010game_tax\030\001 \001(\005\022,\n\014play"
-  "er_hands\030\002 \003(\0132\026.Rummy.RMMsgPlayerInfo\022\021"
-  "\n\tend_state\030\003 \001(\005\"5\n\024RMMsgNotifyPlayerAc"
-  "t\022\020\n\010chair_id\030\001 \001(\005\022\013\n\003act\030\002 \001(\005*d\n\014ERMG"
-  "ameState\022\017\n\013GS_TP_READY\020\000\022\016\n\nGS_TP_DEAL\020"
-  "\001\022\021\n\rGS_TP_PLAYING\020\002\022\016\n\nGS_TP_SHOW\020\003\022\020\n\014"
-  "GS_TP_RESULT\020\004*H\n\016ERMPlayerState\022\014\n\010PS_R"
-  "EADY\020\000\022\013\n\007PS_PLAY\020\001\022\013\n\007PS_GIVE\020\002\022\016\n\nPS_T"
-  "IMEOUT\020\003*b\n\rERMGameAction\022\r\n\tInvaldAct\020\000"
-  "\022\014\n\010DropCard\020\001\022\n\n\006NaCard\020\002\022\013\n\007ChuCard\020\004\022"
-  "\r\n\tSortsCard\020\010\022\014\n\010ShowCard\020\020*b\n\016ERMColCa"
-  "rdType\022\016\n\nCOL_SINGLE\020\000\022\016\n\nCOL_BAO_ZI\020\001\022\020"
-  "\n\014COL_SHUN_ZHI\020\002\022\021\n\rCOL_QING_SHUN\020\003\022\013\n\007C"
-  "OL_MAX\020\004*\341\004\n\017ERMMsgIDSubGame\022\025\n\021MsgIDSub"
-  "Game_Null\020\000\022\036\n\032MsgIDSubGame_GameStartRes"
-  "p\020\001\022!\n\035MsgIDSubGame_NotifyActionResp\020\002\022\027"
-  "\n\023MsgIDSubGame_Action\020\003\022\033\n\027MsgIDSubGame_"
-  "ActionResp\020\004\022\033\n\027MsgIDSubGame_GiveUpResp\020"
-  "\005\022\037\n\033MsgIDSubGame_GameResultResp\020\006\022 \n\034Ms"
-  "gIDSubGame_NotifyStateResp\020\n\022\034\n\030MsgIDSub"
-  "Game_TimeOutResp\020\013\022\035\n\031MsgIDSubGame_TimeO"
-  "utReady\020\014\022!\n\035MsgIDSubGame_TimeOutReadyRe"
-  "sp\020\r\022 \n\034MsgIDSubGame_TimeOutKickResp\020\016\022&"
-  "\n\"MsgIDSubGame_NotifySystemCheatResp\020\024\022#"
-  "\n\037MsgIDSubGame_NotifyCardTypeResp\020\025\022 \n\034M"
-  "sgIDSubGame_NotifyIsMaxResp\020\026\022\'\n#MsgIDSu"
-  "bGame_NotifyRemainDoubleResp\020\027\022 \n\034MsgIDS"
-  "ubGame_NotifyRoundResp\020\030\022\"\n\036MsgIDSubGame"
-  "_NotifyLastActResp\020\031b\006proto3"
+  "\r\n\005cards\030\001 \003(\005\"\225\001\n\017RMMsgPlayerInfo\022\020\n\010ch"
+  "air_id\030\001 \001(\005\022\023\n\013play_status\030\002 \001(\005\022\014\n\004gol"
+  "d\030\003 \001(\003\022\020\n\010win_gold\030\004 \001(\003\022\r\n\005cards\030\006 \003(\005"
+  "\022,\n\017hand_group_info\030\007 \003(\0132\023.Rummy.RMColu"
+  "mnInfo\"\267\002\n\016RMMsgSceneInfo\022\024\n\014max_multipl"
+  "e\030\001 \001(\003\022\022\n\ncell_score\030\002 \001(\003\022\023\n\013table_sta"
+  "te\030\003 \001(\005\022\013\n\003tax\030\004 \001(\005\022\027\n\017banker_chair_id"
+  "\030\005 \001(\005\022\024\n\014cur_chair_id\030\006 \001(\005\022\025\n\rcur_chai"
+  "r_act\030\007 \001(\005\022\020\n\010out_time\030\010 \001(\005\022\022\n\ntotal_t"
+  "ime\030\t \001(\005\022\022\n\njoker_card\030\n \001(\005\022\030\n\020surplus"
+  "_card_num\030\013 \001(\005\022\021\n\tout_cards\030\014 \003(\005\022,\n\014pl"
+  "ayer_infos\030\r \003(\0132\026.Rummy.RMMsgPlayerInfo"
+  "\"\340\001\n\022RMMsgGameStartResp\022\024\n\014cur_chair_id\030"
+  "\001 \001(\005\022\027\n\017banker_chair_id\030\002 \001(\005\022\021\n\tmax_sc"
+  "ore\030\003 \001(\003\022\022\n\ncell_score\030\004 \001(\003\022\024\n\014max_mul"
+  "tiple\030\005 \001(\003\022\021\n\twild_card\030\n \001(\005\022\025\n\rleft_c"
+  "ard_num\030\013 \001(\005\022\021\n\tout_cards\030\014 \003(\005\022\022\n\nplay"
+  "_index\030\r \003(\005\022\r\n\005cards\030\017 \003(\005\"U\n\025RMMsgNoti"
+  "fyActionResp\022\024\n\014cur_chair_id\030\001 \001(\005\022\023\n\013cu"
+  "rrent_act\030\003 \001(\005\022\021\n\toper_time\030\004 \001(\005\"v\n\013RM"
+  "MsgAction\022\020\n\010act_type\030\001 \001(\005\022\021\n\tdest_card"
+  "\030\002 \001(\005\022\024\n\014get_out_card\030\003 \001(\010\022,\n\017hand_gro"
+  "up_info\030\004 \003(\0132\023.Rummy.RMColumnInfo\"\317\001\n\017R"
+  "MMsgActionResp\022\020\n\010chair_id\030\001 \001(\005\022\020\n\010act_"
+  "type\030\002 \001(\005\022\021\n\tdest_card\030\003 \001(\005\022\024\n\014get_out"
+  "_card\030\004 \001(\010\022\025\n\rdorp_multiple\030\006 \001(\r\022\023\n\013au"
+  "to_action\030\007 \001(\010\022\025\n\rleft_card_num\030\t \001(\005\022,"
+  "\n\017hand_group_info\030\n \003(\0132\023.Rummy.RMColumn"
+  "Info\"\227\001\n\021RMMsgActionChoice\022\030\n\020determined"
+  "_level\030\001 \001(\005\022\024\n\014is_determine\030\002 \001(\010\022#\n\007ch"
+  "oices\030\003 \003(\0132\022.Rummy.RMMsgAction\022-\n\021deter"
+  "mined_action\030\004 \001(\0132\022.Rummy.RMMsgAction\"M"
+  "\n\017RMMsgGiveUpResp\022\020\n\010chair_id\030\001 \001(\005\022\021\n\tl"
+  "oss_gold\030\002 \001(\005\022\025\n\rdorp_multiple\030\003 \001(\r\"c\n"
+  "\017RMMsgGameResult\022\020\n\010game_tax\030\001 \001(\005\022+\n\013pl"
+  "ayer_info\030\002 \003(\0132\026.Rummy.RMMsgPlayerInfo\022"
+  "\021\n\tend_state\030\003 \001(\005\"D\n\026RMMsgNotifyTrustee"
+  "ship\022\022\n\nseat_index\030\001 \001(\005\022\026\n\016is_trusteesh"
+  "ip\030\002 \001(\010\"5\n\024RMMsgNotifyPlayerAct\022\020\n\010chai"
+  "r_id\030\001 \001(\005\022\013\n\003act\030\002 \001(\005*d\n\014ERMGameState\022"
+  "\017\n\013GS_TP_READY\020\000\022\016\n\nGS_TP_DEAL\020\001\022\021\n\rGS_T"
+  "P_PLAYING\020\002\022\016\n\nGS_TP_SHOW\020\003\022\020\n\014GS_TP_RES"
+  "ULT\020\004*H\n\016ERMPlayerState\022\014\n\010PS_READY\020\000\022\013\n"
+  "\007PS_PLAY\020\001\022\013\n\007PS_GIVE\020\002\022\016\n\nPS_TIMEOUT\020\003*"
+  "b\n\rERMGameAction\022\r\n\tInvaldAct\020\000\022\014\n\010DropC"
+  "ard\020\001\022\n\n\006NaCard\020\002\022\013\n\007ChuCard\020\004\022\r\n\tSortsC"
+  "ard\020\010\022\014\n\010ShowCard\020\020*b\n\016ERMColCardType\022\016\n"
+  "\nCOL_SINGLE\020\000\022\016\n\nCOL_BAO_ZI\020\001\022\020\n\014COL_SHU"
+  "N_ZHI\020\002\022\021\n\rCOL_QING_SHUN\020\003\022\013\n\007COL_MAX\020\004*"
+  "\211\005\n\017ERMMsgIDSubGame\022\025\n\021MsgIDSubGame_Null"
+  "\020\000\022\036\n\032MsgIDSubGame_GameStartResp\020\001\022!\n\035Ms"
+  "gIDSubGame_NotifyActionResp\020\002\022\027\n\023MsgIDSu"
+  "bGame_Action\020\003\022\033\n\027MsgIDSubGame_ActionRes"
+  "p\020\004\022\033\n\027MsgIDSubGame_GiveUpResp\020\005\022\037\n\033MsgI"
+  "DSubGame_GameResultResp\020\006\022 \n\034MsgIDSubGam"
+  "e_NotifyStateResp\020\n\022\034\n\030MsgIDSubGame_Time"
+  "OutResp\020\013\022\035\n\031MsgIDSubGame_TimeOutReady\020\014"
+  "\022!\n\035MsgIDSubGame_TimeOutReadyResp\020\r\022 \n\034M"
+  "sgIDSubGame_TimeOutKickResp\020\016\022&\n\"MsgIDSu"
+  "bGame_NotifyTrusteeshipResp\020\017\022&\n\"MsgIDSu"
+  "bGame_NotifySystemCheatResp\020\024\022#\n\037MsgIDSu"
+  "bGame_NotifyCardTypeResp\020\025\022 \n\034MsgIDSubGa"
+  "me_NotifyIsMaxResp\020\026\022\'\n#MsgIDSubGame_Not"
+  "ifyRemainDoubleResp\020\027\022 \n\034MsgIDSubGame_No"
+  "tifyRoundResp\020\030\022\"\n\036MsgIDSubGame_NotifyLa"
+  "stActResp\020\031b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Rummy_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Rummy_2eproto_sccs[12] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Rummy_2eproto_sccs[14] = {
   &scc_info_RMColumnInfo_Rummy_2eproto.base,
   &scc_info_RMMsgAction_Rummy_2eproto.base,
   &scc_info_RMMsgActionChoice_Rummy_2eproto.base,
+  &scc_info_RMMsgActionResp_Rummy_2eproto.base,
   &scc_info_RMMsgGameResult_Rummy_2eproto.base,
   &scc_info_RMMsgGameStartResp_Rummy_2eproto.base,
   &scc_info_RMMsgGiveUpResp_Rummy_2eproto.base,
   &scc_info_RMMsgHandCards_Rummy_2eproto.base,
   &scc_info_RMMsgNotifyActionResp_Rummy_2eproto.base,
   &scc_info_RMMsgNotifyPlayerAct_Rummy_2eproto.base,
+  &scc_info_RMMsgNotifyTrusteeship_Rummy_2eproto.base,
   &scc_info_RMMsgPlayerInfo_Rummy_2eproto.base,
   &scc_info_RMMsgSceneInfo_Rummy_2eproto.base,
   &scc_info_RMMsgTableState_Rummy_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Rummy_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Rummy_2eproto = {
-  false, false, descriptor_table_protodef_Rummy_2eproto, "Rummy.proto", 2508,
-  &descriptor_table_Rummy_2eproto_once, descriptor_table_Rummy_2eproto_sccs, descriptor_table_Rummy_2eproto_deps, 12, 0,
+  false, false, descriptor_table_protodef_Rummy_2eproto, "Rummy.proto", 2779,
+  &descriptor_table_Rummy_2eproto_once, descriptor_table_Rummy_2eproto_sccs, descriptor_table_Rummy_2eproto_deps, 14, 0,
   schemas, file_default_instances, TableStruct_Rummy_2eproto::offsets,
-  file_level_metadata_Rummy_2eproto, 12, file_level_enum_descriptors_Rummy_2eproto, file_level_service_descriptors_Rummy_2eproto,
+  file_level_metadata_Rummy_2eproto, 14, file_level_enum_descriptors_Rummy_2eproto, file_level_service_descriptors_Rummy_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -558,6 +624,7 @@ bool ERMMsgIDSubGame_IsValid(int value) {
     case 12:
     case 13:
     case 14:
+    case 15:
     case 20:
     case 21:
     case 22:
@@ -1294,8 +1361,8 @@ RMMsgPlayerInfo::RMMsgPlayerInfo(const RMMsgPlayerInfo& from)
       hand_group_info_(from.hand_group_info_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&chair_id_, &from.chair_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&card_type_) -
-    reinterpret_cast<char*>(&chair_id_)) + sizeof(card_type_));
+    static_cast<size_t>(reinterpret_cast<char*>(&win_gold_) -
+    reinterpret_cast<char*>(&chair_id_)) + sizeof(win_gold_));
   // @@protoc_insertion_point(copy_constructor:Rummy.RMMsgPlayerInfo)
 }
 
@@ -1303,8 +1370,8 @@ void RMMsgPlayerInfo::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_RMMsgPlayerInfo_Rummy_2eproto.base);
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&chair_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&card_type_) -
-      reinterpret_cast<char*>(&chair_id_)) + sizeof(card_type_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&win_gold_) -
+      reinterpret_cast<char*>(&chair_id_)) + sizeof(win_gold_));
 }
 
 RMMsgPlayerInfo::~RMMsgPlayerInfo() {
@@ -1341,8 +1408,8 @@ void RMMsgPlayerInfo::Clear() {
   cards_.Clear();
   hand_group_info_.Clear();
   ::memset(&chair_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&card_type_) -
-      reinterpret_cast<char*>(&chair_id_)) + sizeof(card_type_));
+      reinterpret_cast<char*>(&win_gold_) -
+      reinterpret_cast<char*>(&chair_id_)) + sizeof(win_gold_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -1367,23 +1434,16 @@ const char* RMMsgPlayerInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 card_type = 3;
+      // int64 gold = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          card_type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int64 gold = 4;
-      case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int64 win_gold = 5;
-      case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+      // int64 win_gold = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           win_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
@@ -1450,22 +1510,16 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_play_status(), target);
   }
 
-  // int32 card_type = 3;
-  if (this->card_type() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_card_type(), target);
-  }
-
-  // int64 gold = 4;
+  // int64 gold = 3;
   if (this->gold() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_gold(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_gold(), target);
   }
 
-  // int64 win_gold = 5;
+  // int64 win_gold = 4;
   if (this->win_gold() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_win_gold(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_win_gold(), target);
   }
 
   // repeated int32 cards = 6;
@@ -1537,25 +1591,18 @@ size_t RMMsgPlayerInfo::ByteSizeLong() const {
         this->_internal_play_status());
   }
 
-  // int64 gold = 4;
+  // int64 gold = 3;
   if (this->gold() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_gold());
   }
 
-  // int64 win_gold = 5;
+  // int64 win_gold = 4;
   if (this->win_gold() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_win_gold());
-  }
-
-  // int32 card_type = 3;
-  if (this->card_type() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_card_type());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1603,9 +1650,6 @@ void RMMsgPlayerInfo::MergeFrom(const RMMsgPlayerInfo& from) {
   if (from.win_gold() != 0) {
     _internal_set_win_gold(from._internal_win_gold());
   }
-  if (from.card_type() != 0) {
-    _internal_set_card_type(from._internal_card_type());
-  }
 }
 
 void RMMsgPlayerInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -1632,8 +1676,8 @@ void RMMsgPlayerInfo::InternalSwap(RMMsgPlayerInfo* other) {
   cards_.InternalSwap(&other->cards_);
   hand_group_info_.InternalSwap(&other->hand_group_info_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(RMMsgPlayerInfo, card_type_)
-      + sizeof(RMMsgPlayerInfo::card_type_)
+      PROTOBUF_FIELD_OFFSET(RMMsgPlayerInfo, win_gold_)
+      + sizeof(RMMsgPlayerInfo::win_gold_)
       - PROTOBUF_FIELD_OFFSET(RMMsgPlayerInfo, chair_id_)>(
           reinterpret_cast<char*>(&chair_id_),
           reinterpret_cast<char*>(&other->chair_id_));
@@ -1786,10 +1830,10 @@ const char* RMMsgSceneInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 wild_card = 10;
+      // int32 joker_card = 10;
       case 10:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
-          wild_card_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          joker_card_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1904,10 +1948,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(9, this->_internal_total_time(), target);
   }
 
-  // int32 wild_card = 10;
-  if (this->wild_card() != 0) {
+  // int32 joker_card = 10;
+  if (this->joker_card() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(10, this->_internal_wild_card(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(10, this->_internal_joker_card(), target);
   }
 
   // int32 surplus_card_num = 11;
@@ -2034,11 +2078,11 @@ size_t RMMsgSceneInfo::ByteSizeLong() const {
         this->_internal_total_time());
   }
 
-  // int32 wild_card = 10;
-  if (this->wild_card() != 0) {
+  // int32 joker_card = 10;
+  if (this->joker_card() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_wild_card());
+        this->_internal_joker_card());
   }
 
   // int32 surplus_card_num = 11;
@@ -2108,8 +2152,8 @@ void RMMsgSceneInfo::MergeFrom(const RMMsgSceneInfo& from) {
   if (from.total_time() != 0) {
     _internal_set_total_time(from._internal_total_time());
   }
-  if (from.wild_card() != 0) {
-    _internal_set_wild_card(from._internal_wild_card());
+  if (from.joker_card() != 0) {
+    _internal_set_joker_card(from._internal_joker_card());
   }
   if (from.surplus_card_num() != 0) {
     _internal_set_surplus_card_num(from._internal_surplus_card_num());
@@ -2160,30 +2204,30 @@ class RMMsgGameStartResp::_Internal {
 
 RMMsgGameStartResp::RMMsgGameStartResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  out_cards_(arena),
   play_index_(arena),
-  cards_(arena),
-  out_cards_(arena) {
+  cards_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:Rummy.RMMsgGameStartResp)
 }
 RMMsgGameStartResp::RMMsgGameStartResp(const RMMsgGameStartResp& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      out_cards_(from.out_cards_),
       play_index_(from.play_index_),
-      cards_(from.cards_),
-      out_cards_(from.out_cards_) {
+      cards_(from.cards_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&cur_chair_id_, &from.cur_chair_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&surplus_card_num_) -
-    reinterpret_cast<char*>(&cur_chair_id_)) + sizeof(surplus_card_num_));
+    static_cast<size_t>(reinterpret_cast<char*>(&left_card_num_) -
+    reinterpret_cast<char*>(&cur_chair_id_)) + sizeof(left_card_num_));
   // @@protoc_insertion_point(copy_constructor:Rummy.RMMsgGameStartResp)
 }
 
 void RMMsgGameStartResp::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&cur_chair_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&surplus_card_num_) -
-      reinterpret_cast<char*>(&cur_chair_id_)) + sizeof(surplus_card_num_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&left_card_num_) -
+      reinterpret_cast<char*>(&cur_chair_id_)) + sizeof(left_card_num_));
 }
 
 RMMsgGameStartResp::~RMMsgGameStartResp() {
@@ -2217,12 +2261,12 @@ void RMMsgGameStartResp::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  out_cards_.Clear();
   play_index_.Clear();
   cards_.Clear();
-  out_cards_.Clear();
   ::memset(&cur_chair_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&surplus_card_num_) -
-      reinterpret_cast<char*>(&cur_chair_id_)) + sizeof(surplus_card_num_));
+      reinterpret_cast<char*>(&left_card_num_) -
+      reinterpret_cast<char*>(&cur_chair_id_)) + sizeof(left_card_num_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -2268,26 +2312,6 @@ const char* RMMsgGameStartResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated int32 play_index = 6;
-      case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_play_index(), ptr, ctx);
-          CHK_(ptr);
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48) {
-          _internal_add_play_index(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // repeated int32 cards = 7;
-      case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_cards(), ptr, ctx);
-          CHK_(ptr);
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56) {
-          _internal_add_cards(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
       // int32 wild_card = 10;
       case 10:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
@@ -2295,10 +2319,10 @@ const char* RMMsgGameStartResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 surplus_card_num = 11;
+      // int32 left_card_num = 11;
       case 11:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 88)) {
-          surplus_card_num_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          left_card_num_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2309,6 +2333,26 @@ const char* RMMsgGameStartResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
           CHK_(ptr);
         } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 96) {
           _internal_add_out_cards(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated int32 play_index = 13;
+      case 13:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 106)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_play_index(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 104) {
+          _internal_add_play_index(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated int32 cards = 15;
+      case 15:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 122)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_cards(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 120) {
+          _internal_add_cards(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2370,34 +2414,16 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_max_multiple(), target);
   }
 
-  // repeated int32 play_index = 6;
-  {
-    int byte_size = _play_index_cached_byte_size_.load(std::memory_order_relaxed);
-    if (byte_size > 0) {
-      target = stream->WriteInt32Packed(
-          6, _internal_play_index(), byte_size, target);
-    }
-  }
-
-  // repeated int32 cards = 7;
-  {
-    int byte_size = _cards_cached_byte_size_.load(std::memory_order_relaxed);
-    if (byte_size > 0) {
-      target = stream->WriteInt32Packed(
-          7, _internal_cards(), byte_size, target);
-    }
-  }
-
   // int32 wild_card = 10;
   if (this->wild_card() != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(10, this->_internal_wild_card(), target);
   }
 
-  // int32 surplus_card_num = 11;
-  if (this->surplus_card_num() != 0) {
+  // int32 left_card_num = 11;
+  if (this->left_card_num() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(11, this->_internal_surplus_card_num(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(11, this->_internal_left_card_num(), target);
   }
 
   // repeated int32 out_cards = 12;
@@ -2406,6 +2432,24 @@ failure:
     if (byte_size > 0) {
       target = stream->WriteInt32Packed(
           12, _internal_out_cards(), byte_size, target);
+    }
+  }
+
+  // repeated int32 play_index = 13;
+  {
+    int byte_size = _play_index_cached_byte_size_.load(std::memory_order_relaxed);
+    if (byte_size > 0) {
+      target = stream->WriteInt32Packed(
+          13, _internal_play_index(), byte_size, target);
+    }
+  }
+
+  // repeated int32 cards = 15;
+  {
+    int byte_size = _cards_cached_byte_size_.load(std::memory_order_relaxed);
+    if (byte_size > 0) {
+      target = stream->WriteInt32Packed(
+          15, _internal_cards(), byte_size, target);
     }
   }
 
@@ -2425,7 +2469,22 @@ size_t RMMsgGameStartResp::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated int32 play_index = 6;
+  // repeated int32 out_cards = 12;
+  {
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      Int32Size(this->out_cards_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
+    }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _out_cards_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
+  }
+
+  // repeated int32 play_index = 13;
   {
     size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       Int32Size(this->play_index_);
@@ -2440,7 +2499,7 @@ size_t RMMsgGameStartResp::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  // repeated int32 cards = 7;
+  // repeated int32 cards = 15;
   {
     size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       Int32Size(this->cards_);
@@ -2451,21 +2510,6 @@ size_t RMMsgGameStartResp::ByteSizeLong() const {
     }
     int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
     _cards_cached_byte_size_.store(cached_size,
-                                    std::memory_order_relaxed);
-    total_size += data_size;
-  }
-
-  // repeated int32 out_cards = 12;
-  {
-    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      Int32Size(this->out_cards_);
-    if (data_size > 0) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
-    }
-    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
-    _out_cards_cached_byte_size_.store(cached_size,
                                     std::memory_order_relaxed);
     total_size += data_size;
   }
@@ -2512,11 +2556,11 @@ size_t RMMsgGameStartResp::ByteSizeLong() const {
         this->_internal_wild_card());
   }
 
-  // int32 surplus_card_num = 11;
-  if (this->surplus_card_num() != 0) {
+  // int32 left_card_num = 11;
+  if (this->left_card_num() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_surplus_card_num());
+        this->_internal_left_card_num());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -2550,9 +2594,9 @@ void RMMsgGameStartResp::MergeFrom(const RMMsgGameStartResp& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  out_cards_.MergeFrom(from.out_cards_);
   play_index_.MergeFrom(from.play_index_);
   cards_.MergeFrom(from.cards_);
-  out_cards_.MergeFrom(from.out_cards_);
   if (from.cur_chair_id() != 0) {
     _internal_set_cur_chair_id(from._internal_cur_chair_id());
   }
@@ -2571,8 +2615,8 @@ void RMMsgGameStartResp::MergeFrom(const RMMsgGameStartResp& from) {
   if (from.wild_card() != 0) {
     _internal_set_wild_card(from._internal_wild_card());
   }
-  if (from.surplus_card_num() != 0) {
-    _internal_set_surplus_card_num(from._internal_surplus_card_num());
+  if (from.left_card_num() != 0) {
+    _internal_set_left_card_num(from._internal_left_card_num());
   }
 }
 
@@ -2597,12 +2641,12 @@ bool RMMsgGameStartResp::IsInitialized() const {
 void RMMsgGameStartResp::InternalSwap(RMMsgGameStartResp* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  out_cards_.InternalSwap(&other->out_cards_);
   play_index_.InternalSwap(&other->play_index_);
   cards_.InternalSwap(&other->cards_);
-  out_cards_.InternalSwap(&other->out_cards_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(RMMsgGameStartResp, surplus_card_num_)
-      + sizeof(RMMsgGameStartResp::surplus_card_num_)
+      PROTOBUF_FIELD_OFFSET(RMMsgGameStartResp, left_card_num_)
+      + sizeof(RMMsgGameStartResp::left_card_num_)
       - PROTOBUF_FIELD_OFFSET(RMMsgGameStartResp, cur_chair_id_)>(
           reinterpret_cast<char*>(&cur_chair_id_),
           reinterpret_cast<char*>(&other->cur_chair_id_));
@@ -2883,8 +2927,8 @@ RMMsgAction::RMMsgAction(const RMMsgAction& from)
       hand_group_info_(from.hand_group_info_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&act_type_, &from.act_type_,
-    static_cast<size_t>(reinterpret_cast<char*>(&dorp_multiple_) -
-    reinterpret_cast<char*>(&act_type_)) + sizeof(dorp_multiple_));
+    static_cast<size_t>(reinterpret_cast<char*>(&get_out_card_) -
+    reinterpret_cast<char*>(&act_type_)) + sizeof(get_out_card_));
   // @@protoc_insertion_point(copy_constructor:Rummy.RMMsgAction)
 }
 
@@ -2892,8 +2936,8 @@ void RMMsgAction::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_RMMsgAction_Rummy_2eproto.base);
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&act_type_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&dorp_multiple_) -
-      reinterpret_cast<char*>(&act_type_)) + sizeof(dorp_multiple_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&get_out_card_) -
+      reinterpret_cast<char*>(&act_type_)) + sizeof(get_out_card_));
 }
 
 RMMsgAction::~RMMsgAction() {
@@ -2929,8 +2973,8 @@ void RMMsgAction::Clear() {
 
   hand_group_info_.Clear();
   ::memset(&act_type_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&dorp_multiple_) -
-      reinterpret_cast<char*>(&act_type_)) + sizeof(dorp_multiple_));
+      reinterpret_cast<char*>(&get_out_card_) -
+      reinterpret_cast<char*>(&act_type_)) + sizeof(get_out_card_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -2955,10 +2999,10 @@ const char* RMMsgAction::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // bool na_pai_out_card = 3;
+      // bool get_out_card = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          na_pai_out_card_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          get_out_card_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2972,13 +3016,6 @@ const char* RMMsgAction::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<34>(ptr));
-        } else goto handle_unusual;
-        continue;
-      // uint32 dorp_multiple = 5;
-      case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
-          dorp_multiple_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
         } else goto handle_unusual;
         continue;
       default: {
@@ -3021,10 +3058,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_dest_card(), target);
   }
 
-  // bool na_pai_out_card = 3;
-  if (this->na_pai_out_card() != 0) {
+  // bool get_out_card = 3;
+  if (this->get_out_card() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_na_pai_out_card(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_get_out_card(), target);
   }
 
   // repeated .Rummy.RMColumnInfo hand_group_info = 4;
@@ -3033,12 +3070,6 @@ failure:
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(4, this->_internal_hand_group_info(i), target, stream);
-  }
-
-  // uint32 dorp_multiple = 5;
-  if (this->dorp_multiple() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(5, this->_internal_dorp_multiple(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -3078,16 +3109,9 @@ size_t RMMsgAction::ByteSizeLong() const {
         this->_internal_dest_card());
   }
 
-  // bool na_pai_out_card = 3;
-  if (this->na_pai_out_card() != 0) {
+  // bool get_out_card = 3;
+  if (this->get_out_card() != 0) {
     total_size += 1 + 1;
-  }
-
-  // uint32 dorp_multiple = 5;
-  if (this->dorp_multiple() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_dorp_multiple());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -3128,11 +3152,8 @@ void RMMsgAction::MergeFrom(const RMMsgAction& from) {
   if (from.dest_card() != 0) {
     _internal_set_dest_card(from._internal_dest_card());
   }
-  if (from.na_pai_out_card() != 0) {
-    _internal_set_na_pai_out_card(from._internal_na_pai_out_card());
-  }
-  if (from.dorp_multiple() != 0) {
-    _internal_set_dorp_multiple(from._internal_dorp_multiple());
+  if (from.get_out_card() != 0) {
+    _internal_set_get_out_card(from._internal_get_out_card());
   }
 }
 
@@ -3159,14 +3180,387 @@ void RMMsgAction::InternalSwap(RMMsgAction* other) {
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   hand_group_info_.InternalSwap(&other->hand_group_info_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(RMMsgAction, dorp_multiple_)
-      + sizeof(RMMsgAction::dorp_multiple_)
+      PROTOBUF_FIELD_OFFSET(RMMsgAction, get_out_card_)
+      + sizeof(RMMsgAction::get_out_card_)
       - PROTOBUF_FIELD_OFFSET(RMMsgAction, act_type_)>(
           reinterpret_cast<char*>(&act_type_),
           reinterpret_cast<char*>(&other->act_type_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata RMMsgAction::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class RMMsgActionResp::_Internal {
+ public:
+};
+
+RMMsgActionResp::RMMsgActionResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  hand_group_info_(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:Rummy.RMMsgActionResp)
+}
+RMMsgActionResp::RMMsgActionResp(const RMMsgActionResp& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      hand_group_info_(from.hand_group_info_) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&chair_id_, &from.chair_id_,
+    static_cast<size_t>(reinterpret_cast<char*>(&left_card_num_) -
+    reinterpret_cast<char*>(&chair_id_)) + sizeof(left_card_num_));
+  // @@protoc_insertion_point(copy_constructor:Rummy.RMMsgActionResp)
+}
+
+void RMMsgActionResp::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_RMMsgActionResp_Rummy_2eproto.base);
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&chair_id_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&left_card_num_) -
+      reinterpret_cast<char*>(&chair_id_)) + sizeof(left_card_num_));
+}
+
+RMMsgActionResp::~RMMsgActionResp() {
+  // @@protoc_insertion_point(destructor:Rummy.RMMsgActionResp)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void RMMsgActionResp::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void RMMsgActionResp::ArenaDtor(void* object) {
+  RMMsgActionResp* _this = reinterpret_cast< RMMsgActionResp* >(object);
+  (void)_this;
+}
+void RMMsgActionResp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void RMMsgActionResp::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const RMMsgActionResp& RMMsgActionResp::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_RMMsgActionResp_Rummy_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void RMMsgActionResp::Clear() {
+// @@protoc_insertion_point(message_clear_start:Rummy.RMMsgActionResp)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  hand_group_info_.Clear();
+  ::memset(&chair_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&left_card_num_) -
+      reinterpret_cast<char*>(&chair_id_)) + sizeof(left_card_num_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* RMMsgActionResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 chair_id = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          chair_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 act_type = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          act_type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 dest_card = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          dest_card_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // bool get_out_card = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          get_out_card_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // uint32 dorp_multiple = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+          dorp_multiple_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // bool auto_action = 7;
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
+          auto_action_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 left_card_num = 9;
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+          left_card_num_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated .Rummy.RMColumnInfo hand_group_info = 10;
+      case 10:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 82)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_hand_group_info(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<82>(ptr));
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* RMMsgActionResp::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:Rummy.RMMsgActionResp)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 chair_id = 1;
+  if (this->chair_id() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_chair_id(), target);
+  }
+
+  // int32 act_type = 2;
+  if (this->act_type() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_act_type(), target);
+  }
+
+  // int32 dest_card = 3;
+  if (this->dest_card() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_dest_card(), target);
+  }
+
+  // bool get_out_card = 4;
+  if (this->get_out_card() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(4, this->_internal_get_out_card(), target);
+  }
+
+  // uint32 dorp_multiple = 6;
+  if (this->dorp_multiple() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(6, this->_internal_dorp_multiple(), target);
+  }
+
+  // bool auto_action = 7;
+  if (this->auto_action() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(7, this->_internal_auto_action(), target);
+  }
+
+  // int32 left_card_num = 9;
+  if (this->left_card_num() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(9, this->_internal_left_card_num(), target);
+  }
+
+  // repeated .Rummy.RMColumnInfo hand_group_info = 10;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_hand_group_info_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(10, this->_internal_hand_group_info(i), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:Rummy.RMMsgActionResp)
+  return target;
+}
+
+size_t RMMsgActionResp::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Rummy.RMMsgActionResp)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated .Rummy.RMColumnInfo hand_group_info = 10;
+  total_size += 1UL * this->_internal_hand_group_info_size();
+  for (const auto& msg : this->hand_group_info_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  // int32 chair_id = 1;
+  if (this->chair_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_chair_id());
+  }
+
+  // int32 act_type = 2;
+  if (this->act_type() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_act_type());
+  }
+
+  // int32 dest_card = 3;
+  if (this->dest_card() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_dest_card());
+  }
+
+  // bool get_out_card = 4;
+  if (this->get_out_card() != 0) {
+    total_size += 1 + 1;
+  }
+
+  // bool auto_action = 7;
+  if (this->auto_action() != 0) {
+    total_size += 1 + 1;
+  }
+
+  // uint32 dorp_multiple = 6;
+  if (this->dorp_multiple() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
+        this->_internal_dorp_multiple());
+  }
+
+  // int32 left_card_num = 9;
+  if (this->left_card_num() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_left_card_num());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void RMMsgActionResp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:Rummy.RMMsgActionResp)
+  GOOGLE_DCHECK_NE(&from, this);
+  const RMMsgActionResp* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<RMMsgActionResp>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Rummy.RMMsgActionResp)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:Rummy.RMMsgActionResp)
+    MergeFrom(*source);
+  }
+}
+
+void RMMsgActionResp::MergeFrom(const RMMsgActionResp& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Rummy.RMMsgActionResp)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  hand_group_info_.MergeFrom(from.hand_group_info_);
+  if (from.chair_id() != 0) {
+    _internal_set_chair_id(from._internal_chair_id());
+  }
+  if (from.act_type() != 0) {
+    _internal_set_act_type(from._internal_act_type());
+  }
+  if (from.dest_card() != 0) {
+    _internal_set_dest_card(from._internal_dest_card());
+  }
+  if (from.get_out_card() != 0) {
+    _internal_set_get_out_card(from._internal_get_out_card());
+  }
+  if (from.auto_action() != 0) {
+    _internal_set_auto_action(from._internal_auto_action());
+  }
+  if (from.dorp_multiple() != 0) {
+    _internal_set_dorp_multiple(from._internal_dorp_multiple());
+  }
+  if (from.left_card_num() != 0) {
+    _internal_set_left_card_num(from._internal_left_card_num());
+  }
+}
+
+void RMMsgActionResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:Rummy.RMMsgActionResp)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void RMMsgActionResp::CopyFrom(const RMMsgActionResp& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Rummy.RMMsgActionResp)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool RMMsgActionResp::IsInitialized() const {
+  return true;
+}
+
+void RMMsgActionResp::InternalSwap(RMMsgActionResp* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  hand_group_info_.InternalSwap(&other->hand_group_info_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(RMMsgActionResp, left_card_num_)
+      + sizeof(RMMsgActionResp::left_card_num_)
+      - PROTOBUF_FIELD_OFFSET(RMMsgActionResp, chair_id_)>(
+          reinterpret_cast<char*>(&chair_id_),
+          reinterpret_cast<char*>(&other->chair_id_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata RMMsgActionResp::GetMetadata() const {
   return GetMetadataStatic();
 }
 
@@ -3731,14 +4125,14 @@ class RMMsgGameResult::_Internal {
 
 RMMsgGameResult::RMMsgGameResult(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  player_hands_(arena) {
+  player_info_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:Rummy.RMMsgGameResult)
 }
 RMMsgGameResult::RMMsgGameResult(const RMMsgGameResult& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      player_hands_(from.player_hands_) {
+      player_info_(from.player_info_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&game_tax_, &from.game_tax_,
     static_cast<size_t>(reinterpret_cast<char*>(&end_state_) -
@@ -3785,7 +4179,7 @@ void RMMsgGameResult::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  player_hands_.Clear();
+  player_info_.Clear();
   ::memset(&game_tax_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&end_state_) -
       reinterpret_cast<char*>(&game_tax_)) + sizeof(end_state_));
@@ -3806,13 +4200,13 @@ const char* RMMsgGameResult::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated .Rummy.RMMsgPlayerInfo player_hands = 2;
+      // repeated .Rummy.RMMsgPlayerInfo player_info = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ctx->ParseMessage(_internal_add_player_hands(), ptr);
+            ptr = ctx->ParseMessage(_internal_add_player_info(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
@@ -3859,12 +4253,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_game_tax(), target);
   }
 
-  // repeated .Rummy.RMMsgPlayerInfo player_hands = 2;
+  // repeated .Rummy.RMMsgPlayerInfo player_info = 2;
   for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_player_hands_size()); i < n; i++) {
+      n = static_cast<unsigned int>(this->_internal_player_info_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_player_hands(i), target, stream);
+      InternalWriteMessage(2, this->_internal_player_info(i), target, stream);
   }
 
   // int32 end_state = 3;
@@ -3889,9 +4283,9 @@ size_t RMMsgGameResult::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .Rummy.RMMsgPlayerInfo player_hands = 2;
-  total_size += 1UL * this->_internal_player_hands_size();
-  for (const auto& msg : this->player_hands_) {
+  // repeated .Rummy.RMMsgPlayerInfo player_info = 2;
+  total_size += 1UL * this->_internal_player_info_size();
+  for (const auto& msg : this->player_info_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
@@ -3941,7 +4335,7 @@ void RMMsgGameResult::MergeFrom(const RMMsgGameResult& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  player_hands_.MergeFrom(from.player_hands_);
+  player_info_.MergeFrom(from.player_info_);
   if (from.game_tax() != 0) {
     _internal_set_game_tax(from._internal_game_tax());
   }
@@ -3971,7 +4365,7 @@ bool RMMsgGameResult::IsInitialized() const {
 void RMMsgGameResult::InternalSwap(RMMsgGameResult* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  player_hands_.InternalSwap(&other->player_hands_);
+  player_info_.InternalSwap(&other->player_info_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(RMMsgGameResult, end_state_)
       + sizeof(RMMsgGameResult::end_state_)
@@ -3981,6 +4375,233 @@ void RMMsgGameResult::InternalSwap(RMMsgGameResult* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata RMMsgGameResult::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class RMMsgNotifyTrusteeship::_Internal {
+ public:
+};
+
+RMMsgNotifyTrusteeship::RMMsgNotifyTrusteeship(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:Rummy.RMMsgNotifyTrusteeship)
+}
+RMMsgNotifyTrusteeship::RMMsgNotifyTrusteeship(const RMMsgNotifyTrusteeship& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&seat_index_, &from.seat_index_,
+    static_cast<size_t>(reinterpret_cast<char*>(&is_trusteeship_) -
+    reinterpret_cast<char*>(&seat_index_)) + sizeof(is_trusteeship_));
+  // @@protoc_insertion_point(copy_constructor:Rummy.RMMsgNotifyTrusteeship)
+}
+
+void RMMsgNotifyTrusteeship::SharedCtor() {
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&seat_index_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&is_trusteeship_) -
+      reinterpret_cast<char*>(&seat_index_)) + sizeof(is_trusteeship_));
+}
+
+RMMsgNotifyTrusteeship::~RMMsgNotifyTrusteeship() {
+  // @@protoc_insertion_point(destructor:Rummy.RMMsgNotifyTrusteeship)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void RMMsgNotifyTrusteeship::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void RMMsgNotifyTrusteeship::ArenaDtor(void* object) {
+  RMMsgNotifyTrusteeship* _this = reinterpret_cast< RMMsgNotifyTrusteeship* >(object);
+  (void)_this;
+}
+void RMMsgNotifyTrusteeship::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void RMMsgNotifyTrusteeship::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const RMMsgNotifyTrusteeship& RMMsgNotifyTrusteeship::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_RMMsgNotifyTrusteeship_Rummy_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void RMMsgNotifyTrusteeship::Clear() {
+// @@protoc_insertion_point(message_clear_start:Rummy.RMMsgNotifyTrusteeship)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&seat_index_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&is_trusteeship_) -
+      reinterpret_cast<char*>(&seat_index_)) + sizeof(is_trusteeship_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* RMMsgNotifyTrusteeship::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 seat_index = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          seat_index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // bool is_trusteeship = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          is_trusteeship_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* RMMsgNotifyTrusteeship::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:Rummy.RMMsgNotifyTrusteeship)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 seat_index = 1;
+  if (this->seat_index() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_seat_index(), target);
+  }
+
+  // bool is_trusteeship = 2;
+  if (this->is_trusteeship() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(2, this->_internal_is_trusteeship(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:Rummy.RMMsgNotifyTrusteeship)
+  return target;
+}
+
+size_t RMMsgNotifyTrusteeship::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Rummy.RMMsgNotifyTrusteeship)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // int32 seat_index = 1;
+  if (this->seat_index() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_seat_index());
+  }
+
+  // bool is_trusteeship = 2;
+  if (this->is_trusteeship() != 0) {
+    total_size += 1 + 1;
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void RMMsgNotifyTrusteeship::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:Rummy.RMMsgNotifyTrusteeship)
+  GOOGLE_DCHECK_NE(&from, this);
+  const RMMsgNotifyTrusteeship* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<RMMsgNotifyTrusteeship>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Rummy.RMMsgNotifyTrusteeship)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:Rummy.RMMsgNotifyTrusteeship)
+    MergeFrom(*source);
+  }
+}
+
+void RMMsgNotifyTrusteeship::MergeFrom(const RMMsgNotifyTrusteeship& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Rummy.RMMsgNotifyTrusteeship)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.seat_index() != 0) {
+    _internal_set_seat_index(from._internal_seat_index());
+  }
+  if (from.is_trusteeship() != 0) {
+    _internal_set_is_trusteeship(from._internal_is_trusteeship());
+  }
+}
+
+void RMMsgNotifyTrusteeship::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:Rummy.RMMsgNotifyTrusteeship)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void RMMsgNotifyTrusteeship::CopyFrom(const RMMsgNotifyTrusteeship& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Rummy.RMMsgNotifyTrusteeship)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool RMMsgNotifyTrusteeship::IsInitialized() const {
+  return true;
+}
+
+void RMMsgNotifyTrusteeship::InternalSwap(RMMsgNotifyTrusteeship* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(RMMsgNotifyTrusteeship, is_trusteeship_)
+      + sizeof(RMMsgNotifyTrusteeship::is_trusteeship_)
+      - PROTOBUF_FIELD_OFFSET(RMMsgNotifyTrusteeship, seat_index_)>(
+          reinterpret_cast<char*>(&seat_index_),
+          reinterpret_cast<char*>(&other->seat_index_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata RMMsgNotifyTrusteeship::GetMetadata() const {
   return GetMetadataStatic();
 }
 
@@ -4241,6 +4862,9 @@ template<> PROTOBUF_NOINLINE ::Rummy::RMMsgNotifyActionResp* Arena::CreateMaybeM
 template<> PROTOBUF_NOINLINE ::Rummy::RMMsgAction* Arena::CreateMaybeMessage< ::Rummy::RMMsgAction >(Arena* arena) {
   return Arena::CreateMessageInternal< ::Rummy::RMMsgAction >(arena);
 }
+template<> PROTOBUF_NOINLINE ::Rummy::RMMsgActionResp* Arena::CreateMaybeMessage< ::Rummy::RMMsgActionResp >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::Rummy::RMMsgActionResp >(arena);
+}
 template<> PROTOBUF_NOINLINE ::Rummy::RMMsgActionChoice* Arena::CreateMaybeMessage< ::Rummy::RMMsgActionChoice >(Arena* arena) {
   return Arena::CreateMessageInternal< ::Rummy::RMMsgActionChoice >(arena);
 }
@@ -4249,6 +4873,9 @@ template<> PROTOBUF_NOINLINE ::Rummy::RMMsgGiveUpResp* Arena::CreateMaybeMessage
 }
 template<> PROTOBUF_NOINLINE ::Rummy::RMMsgGameResult* Arena::CreateMaybeMessage< ::Rummy::RMMsgGameResult >(Arena* arena) {
   return Arena::CreateMessageInternal< ::Rummy::RMMsgGameResult >(arena);
+}
+template<> PROTOBUF_NOINLINE ::Rummy::RMMsgNotifyTrusteeship* Arena::CreateMaybeMessage< ::Rummy::RMMsgNotifyTrusteeship >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::Rummy::RMMsgNotifyTrusteeship >(arena);
 }
 template<> PROTOBUF_NOINLINE ::Rummy::RMMsgNotifyPlayerAct* Arena::CreateMaybeMessage< ::Rummy::RMMsgNotifyPlayerAct >(Arena* arena) {
   return Arena::CreateMessageInternal< ::Rummy::RMMsgNotifyPlayerAct >(arena);
