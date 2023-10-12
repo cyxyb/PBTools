@@ -47,7 +47,7 @@ struct TableStruct_DQDZ_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[9]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[8]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -79,9 +79,6 @@ extern SC_SceneInfoDefaultTypeInternal _SC_SceneInfo_default_instance_;
 class tagGameConfig;
 class tagGameConfigDefaultTypeInternal;
 extern tagGameConfigDefaultTypeInternal _tagGameConfig_default_instance_;
-class tagGameData;
-class tagGameDataDefaultTypeInternal;
-extern tagGameDataDefaultTypeInternal _tagGameData_default_instance_;
 }  // namespace DQDZ
 PROTOBUF_NAMESPACE_OPEN
 template<> ::DQDZ::CMD_3D_CS_RequestCaiJin* Arena::CreateMaybeMessage<::DQDZ::CMD_3D_CS_RequestCaiJin>(Arena*);
@@ -92,7 +89,6 @@ template<> ::DQDZ::CMD_3D_SC_Result* Arena::CreateMaybeMessage<::DQDZ::CMD_3D_SC
 template<> ::DQDZ::CMD_StartBallGame* Arena::CreateMaybeMessage<::DQDZ::CMD_StartBallGame>(Arena*);
 template<> ::DQDZ::SC_SceneInfo* Arena::CreateMaybeMessage<::DQDZ::SC_SceneInfo>(Arena*);
 template<> ::DQDZ::tagGameConfig* Arena::CreateMaybeMessage<::DQDZ::tagGameConfig>(Arena*);
-template<> ::DQDZ::tagGameData* Arena::CreateMaybeMessage<::DQDZ::tagGameData>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 namespace DQDZ {
 
@@ -584,197 +580,6 @@ class CMD_3D_CS_RequestCaiJin PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
-class tagGameData PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:DQDZ.tagGameData) */ {
- public:
-  inline tagGameData() : tagGameData(nullptr) {}
-  virtual ~tagGameData();
-
-  tagGameData(const tagGameData& from);
-  tagGameData(tagGameData&& from) noexcept
-    : tagGameData() {
-    *this = ::std::move(from);
-  }
-
-  inline tagGameData& operator=(const tagGameData& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline tagGameData& operator=(tagGameData&& from) noexcept {
-    if (GetArena() == from.GetArena()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return GetMetadataStatic().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return GetMetadataStatic().reflection;
-  }
-  static const tagGameData& default_instance();
-
-  static inline const tagGameData* internal_default_instance() {
-    return reinterpret_cast<const tagGameData*>(
-               &_tagGameData_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    3;
-
-  friend void swap(tagGameData& a, tagGameData& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(tagGameData* other) {
-    if (other == this) return;
-    if (GetArena() == other->GetArena()) {
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(tagGameData* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetArena() == other->GetArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline tagGameData* New() const final {
-    return CreateMaybeMessage<tagGameData>(nullptr);
-  }
-
-  tagGameData* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<tagGameData>(arena);
-  }
-  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const tagGameData& from);
-  void MergeFrom(const tagGameData& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
-      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  inline void SharedCtor();
-  inline void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(tagGameData* other);
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "DQDZ.tagGameData";
-  }
-  protected:
-  explicit tagGameData(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  private:
-  static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  public:
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-  private:
-  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
-    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_DQDZ_2eproto);
-    return ::descriptor_table_DQDZ_2eproto.file_level_metadata[kIndexInFileMessages];
-  }
-
-  public:
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kUserStateFieldNumber = 1,
-    kFreeCountFieldNumber = 2,
-    kMultipleFieldNumber = 3,
-    kBetFieldNumber = 4,
-    kGoldFieldNumber = 5,
-    kCaiJinFieldNumber = 6,
-  };
-  // int32 user_state = 1;
-  void clear_user_state();
-  ::PROTOBUF_NAMESPACE_ID::int32 user_state() const;
-  void set_user_state(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_state() const;
-  void _internal_set_user_state(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 free_count = 2;
-  void clear_free_count();
-  ::PROTOBUF_NAMESPACE_ID::int32 free_count() const;
-  void set_free_count(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_free_count() const;
-  void _internal_set_free_count(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 multiple = 3;
-  void clear_multiple();
-  ::PROTOBUF_NAMESPACE_ID::int32 multiple() const;
-  void set_multiple(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_multiple() const;
-  void _internal_set_multiple(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 bet = 4;
-  void clear_bet();
-  ::PROTOBUF_NAMESPACE_ID::int32 bet() const;
-  void set_bet(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_bet() const;
-  void _internal_set_bet(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int64 gold = 5;
-  void clear_gold();
-  ::PROTOBUF_NAMESPACE_ID::int64 gold() const;
-  void set_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_gold() const;
-  void _internal_set_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
-  // int64 cai_jin = 6;
-  void clear_cai_jin();
-  ::PROTOBUF_NAMESPACE_ID::int64 cai_jin() const;
-  void set_cai_jin(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_cai_jin() const;
-  void _internal_set_cai_jin(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:DQDZ.tagGameData)
- private:
-  class _Internal;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int32 user_state_;
-  ::PROTOBUF_NAMESPACE_ID::int32 free_count_;
-  ::PROTOBUF_NAMESPACE_ID::int32 multiple_;
-  ::PROTOBUF_NAMESPACE_ID::int32 bet_;
-  ::PROTOBUF_NAMESPACE_ID::int64 gold_;
-  ::PROTOBUF_NAMESPACE_ID::int64 cai_jin_;
-  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  friend struct ::TableStruct_DQDZ_2eproto;
-};
-// -------------------------------------------------------------------
-
 class SC_SceneInfo PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:DQDZ.SC_SceneInfo) */ {
  public:
@@ -816,7 +621,7 @@ class SC_SceneInfo PROTOBUF_FINAL :
                &_SC_SceneInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    4;
+    3;
 
   friend void swap(SC_SceneInfo& a, SC_SceneInfo& b) {
     a.Swap(&b);
@@ -887,30 +692,17 @@ class SC_SceneInfo PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kGameDataFieldNumber = 5,
     kUserIdFieldNumber = 1,
     kNetCodeFieldNumber = 2,
     kChairIdFieldNumber = 3,
     kTableIdFieldNumber = 4,
+    kUserStateFieldNumber = 5,
+    kFreeCountFieldNumber = 6,
+    kMultipleFieldNumber = 7,
+    kBetFieldNumber = 8,
+    kGoldFieldNumber = 9,
+    kCaiJinFieldNumber = 10,
   };
-  // .DQDZ.tagGameData game_Data = 5;
-  bool has_game_data() const;
-  private:
-  bool _internal_has_game_data() const;
-  public:
-  void clear_game_data();
-  const ::DQDZ::tagGameData& game_data() const;
-  ::DQDZ::tagGameData* release_game_data();
-  ::DQDZ::tagGameData* mutable_game_data();
-  void set_allocated_game_data(::DQDZ::tagGameData* game_data);
-  private:
-  const ::DQDZ::tagGameData& _internal_game_data() const;
-  ::DQDZ::tagGameData* _internal_mutable_game_data();
-  public:
-  void unsafe_arena_set_allocated_game_data(
-      ::DQDZ::tagGameData* game_data);
-  ::DQDZ::tagGameData* unsafe_arena_release_game_data();
-
   // int32 user_id = 1;
   void clear_user_id();
   ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
@@ -947,6 +739,60 @@ class SC_SceneInfo PROTOBUF_FINAL :
   void _internal_set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 user_state = 5;
+  void clear_user_state();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_state() const;
+  void set_user_state(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_state() const;
+  void _internal_set_user_state(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 free_count = 6;
+  void clear_free_count();
+  ::PROTOBUF_NAMESPACE_ID::int32 free_count() const;
+  void set_free_count(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_free_count() const;
+  void _internal_set_free_count(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 multiple = 7;
+  void clear_multiple();
+  ::PROTOBUF_NAMESPACE_ID::int32 multiple() const;
+  void set_multiple(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_multiple() const;
+  void _internal_set_multiple(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 bet = 8;
+  void clear_bet();
+  ::PROTOBUF_NAMESPACE_ID::int32 bet() const;
+  void set_bet(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_bet() const;
+  void _internal_set_bet(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int64 gold = 9;
+  void clear_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 gold() const;
+  void set_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_gold() const;
+  void _internal_set_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int64 cai_jin = 10;
+  void clear_cai_jin();
+  ::PROTOBUF_NAMESPACE_ID::int64 cai_jin() const;
+  void set_cai_jin(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_cai_jin() const;
+  void _internal_set_cai_jin(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:DQDZ.SC_SceneInfo)
  private:
   class _Internal;
@@ -954,11 +800,16 @@ class SC_SceneInfo PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::DQDZ::tagGameData* game_data_;
   ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 net_code_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 table_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_state_;
+  ::PROTOBUF_NAMESPACE_ID::int32 free_count_;
+  ::PROTOBUF_NAMESPACE_ID::int32 multiple_;
+  ::PROTOBUF_NAMESPACE_ID::int32 bet_;
+  ::PROTOBUF_NAMESPACE_ID::int64 gold_;
+  ::PROTOBUF_NAMESPACE_ID::int64 cai_jin_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_DQDZ_2eproto;
 };
@@ -1005,7 +856,7 @@ class tagGameConfig PROTOBUF_FINAL :
                &_tagGameConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    5;
+    4;
 
   friend void swap(tagGameConfig& a, tagGameConfig& b) {
     a.Swap(&b);
@@ -1076,10 +927,9 @@ class tagGameConfig PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kBetFieldNumber = 2,
-    kBetCountFieldNumber = 1,
+    kBetFieldNumber = 1,
   };
-  // repeated int32 bet = 2;
+  // repeated int32 bet = 1;
   int bet_size() const;
   private:
   int _internal_bet_size() const;
@@ -1101,15 +951,6 @@ class tagGameConfig PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_bet();
 
-  // int32 bet_count = 1;
-  void clear_bet_count();
-  ::PROTOBUF_NAMESPACE_ID::int32 bet_count() const;
-  void set_bet_count(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_bet_count() const;
-  void _internal_set_bet_count(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
   // @@protoc_insertion_point(class_scope:DQDZ.tagGameConfig)
  private:
   class _Internal;
@@ -1119,7 +960,6 @@ class tagGameConfig PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > bet_;
   mutable std::atomic<int> _bet_cached_byte_size_;
-  ::PROTOBUF_NAMESPACE_ID::int32 bet_count_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_DQDZ_2eproto;
 };
@@ -1166,7 +1006,7 @@ class CMD_3D_SC_Result PROTOBUF_FINAL :
                &_CMD_3D_SC_Result_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    6;
+    5;
 
   friend void swap(CMD_3D_SC_Result& a, CMD_3D_SC_Result& b) {
     a.Swap(&b);
@@ -1393,7 +1233,7 @@ class CMD_StartBallGame PROTOBUF_FINAL :
                &_CMD_StartBallGame_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    7;
+    6;
 
   friend void swap(CMD_StartBallGame& a, CMD_StartBallGame& b) {
     a.Swap(&b);
@@ -1584,7 +1424,7 @@ class CMD_3D_SC_Jackpot PROTOBUF_FINAL :
                &_CMD_3D_SC_Jackpot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    7;
 
   friend void swap(CMD_3D_SC_Jackpot& a, CMD_3D_SC_Jackpot& b) {
     a.Swap(&b);
@@ -1838,130 +1678,6 @@ inline void CMD_3D_CS_RequestCaiJin::set_verify_code(::PROTOBUF_NAMESPACE_ID::in
 
 // -------------------------------------------------------------------
 
-// tagGameData
-
-// int32 user_state = 1;
-inline void tagGameData::clear_user_state() {
-  user_state_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 tagGameData::_internal_user_state() const {
-  return user_state_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 tagGameData::user_state() const {
-  // @@protoc_insertion_point(field_get:DQDZ.tagGameData.user_state)
-  return _internal_user_state();
-}
-inline void tagGameData::_internal_set_user_state(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  user_state_ = value;
-}
-inline void tagGameData::set_user_state(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_user_state(value);
-  // @@protoc_insertion_point(field_set:DQDZ.tagGameData.user_state)
-}
-
-// int32 free_count = 2;
-inline void tagGameData::clear_free_count() {
-  free_count_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 tagGameData::_internal_free_count() const {
-  return free_count_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 tagGameData::free_count() const {
-  // @@protoc_insertion_point(field_get:DQDZ.tagGameData.free_count)
-  return _internal_free_count();
-}
-inline void tagGameData::_internal_set_free_count(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  free_count_ = value;
-}
-inline void tagGameData::set_free_count(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_free_count(value);
-  // @@protoc_insertion_point(field_set:DQDZ.tagGameData.free_count)
-}
-
-// int32 multiple = 3;
-inline void tagGameData::clear_multiple() {
-  multiple_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 tagGameData::_internal_multiple() const {
-  return multiple_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 tagGameData::multiple() const {
-  // @@protoc_insertion_point(field_get:DQDZ.tagGameData.multiple)
-  return _internal_multiple();
-}
-inline void tagGameData::_internal_set_multiple(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  multiple_ = value;
-}
-inline void tagGameData::set_multiple(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_multiple(value);
-  // @@protoc_insertion_point(field_set:DQDZ.tagGameData.multiple)
-}
-
-// int32 bet = 4;
-inline void tagGameData::clear_bet() {
-  bet_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 tagGameData::_internal_bet() const {
-  return bet_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 tagGameData::bet() const {
-  // @@protoc_insertion_point(field_get:DQDZ.tagGameData.bet)
-  return _internal_bet();
-}
-inline void tagGameData::_internal_set_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  bet_ = value;
-}
-inline void tagGameData::set_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_bet(value);
-  // @@protoc_insertion_point(field_set:DQDZ.tagGameData.bet)
-}
-
-// int64 gold = 5;
-inline void tagGameData::clear_gold() {
-  gold_ = PROTOBUF_LONGLONG(0);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 tagGameData::_internal_gold() const {
-  return gold_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 tagGameData::gold() const {
-  // @@protoc_insertion_point(field_get:DQDZ.tagGameData.gold)
-  return _internal_gold();
-}
-inline void tagGameData::_internal_set_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  
-  gold_ = value;
-}
-inline void tagGameData::set_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_gold(value);
-  // @@protoc_insertion_point(field_set:DQDZ.tagGameData.gold)
-}
-
-// int64 cai_jin = 6;
-inline void tagGameData::clear_cai_jin() {
-  cai_jin_ = PROTOBUF_LONGLONG(0);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 tagGameData::_internal_cai_jin() const {
-  return cai_jin_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 tagGameData::cai_jin() const {
-  // @@protoc_insertion_point(field_get:DQDZ.tagGameData.cai_jin)
-  return _internal_cai_jin();
-}
-inline void tagGameData::_internal_set_cai_jin(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  
-  cai_jin_ = value;
-}
-inline void tagGameData::set_cai_jin(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_cai_jin(value);
-  // @@protoc_insertion_point(field_set:DQDZ.tagGameData.cai_jin)
-}
-
-// -------------------------------------------------------------------
-
 // SC_SceneInfo
 
 // int32 user_id = 1;
@@ -2044,114 +1760,131 @@ inline void SC_SceneInfo::set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:DQDZ.SC_SceneInfo.table_id)
 }
 
-// .DQDZ.tagGameData game_Data = 5;
-inline bool SC_SceneInfo::_internal_has_game_data() const {
-  return this != internal_default_instance() && game_data_ != nullptr;
+// int32 user_state = 5;
+inline void SC_SceneInfo::clear_user_state() {
+  user_state_ = 0;
 }
-inline bool SC_SceneInfo::has_game_data() const {
-  return _internal_has_game_data();
+inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::_internal_user_state() const {
+  return user_state_;
 }
-inline void SC_SceneInfo::clear_game_data() {
-  if (GetArena() == nullptr && game_data_ != nullptr) {
-    delete game_data_;
-  }
-  game_data_ = nullptr;
+inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::user_state() const {
+  // @@protoc_insertion_point(field_get:DQDZ.SC_SceneInfo.user_state)
+  return _internal_user_state();
 }
-inline const ::DQDZ::tagGameData& SC_SceneInfo::_internal_game_data() const {
-  const ::DQDZ::tagGameData* p = game_data_;
-  return p != nullptr ? *p : reinterpret_cast<const ::DQDZ::tagGameData&>(
-      ::DQDZ::_tagGameData_default_instance_);
-}
-inline const ::DQDZ::tagGameData& SC_SceneInfo::game_data() const {
-  // @@protoc_insertion_point(field_get:DQDZ.SC_SceneInfo.game_Data)
-  return _internal_game_data();
-}
-inline void SC_SceneInfo::unsafe_arena_set_allocated_game_data(
-    ::DQDZ::tagGameData* game_data) {
-  if (GetArena() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(game_data_);
-  }
-  game_data_ = game_data;
-  if (game_data) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:DQDZ.SC_SceneInfo.game_Data)
-}
-inline ::DQDZ::tagGameData* SC_SceneInfo::release_game_data() {
+inline void SC_SceneInfo::_internal_set_user_state(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
-  ::DQDZ::tagGameData* temp = game_data_;
-  game_data_ = nullptr;
-  if (GetArena() != nullptr) {
-    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
-  }
-  return temp;
+  user_state_ = value;
 }
-inline ::DQDZ::tagGameData* SC_SceneInfo::unsafe_arena_release_game_data() {
-  // @@protoc_insertion_point(field_release:DQDZ.SC_SceneInfo.game_Data)
+inline void SC_SceneInfo::set_user_state(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_state(value);
+  // @@protoc_insertion_point(field_set:DQDZ.SC_SceneInfo.user_state)
+}
+
+// int32 free_count = 6;
+inline void SC_SceneInfo::clear_free_count() {
+  free_count_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::_internal_free_count() const {
+  return free_count_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::free_count() const {
+  // @@protoc_insertion_point(field_get:DQDZ.SC_SceneInfo.free_count)
+  return _internal_free_count();
+}
+inline void SC_SceneInfo::_internal_set_free_count(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
-  ::DQDZ::tagGameData* temp = game_data_;
-  game_data_ = nullptr;
-  return temp;
+  free_count_ = value;
 }
-inline ::DQDZ::tagGameData* SC_SceneInfo::_internal_mutable_game_data() {
+inline void SC_SceneInfo::set_free_count(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_free_count(value);
+  // @@protoc_insertion_point(field_set:DQDZ.SC_SceneInfo.free_count)
+}
+
+// int32 multiple = 7;
+inline void SC_SceneInfo::clear_multiple() {
+  multiple_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::_internal_multiple() const {
+  return multiple_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::multiple() const {
+  // @@protoc_insertion_point(field_get:DQDZ.SC_SceneInfo.multiple)
+  return _internal_multiple();
+}
+inline void SC_SceneInfo::_internal_set_multiple(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
-  if (game_data_ == nullptr) {
-    auto* p = CreateMaybeMessage<::DQDZ::tagGameData>(GetArena());
-    game_data_ = p;
-  }
-  return game_data_;
+  multiple_ = value;
 }
-inline ::DQDZ::tagGameData* SC_SceneInfo::mutable_game_data() {
-  // @@protoc_insertion_point(field_mutable:DQDZ.SC_SceneInfo.game_Data)
-  return _internal_mutable_game_data();
+inline void SC_SceneInfo::set_multiple(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_multiple(value);
+  // @@protoc_insertion_point(field_set:DQDZ.SC_SceneInfo.multiple)
 }
-inline void SC_SceneInfo::set_allocated_game_data(::DQDZ::tagGameData* game_data) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
-  if (message_arena == nullptr) {
-    delete game_data_;
-  }
-  if (game_data) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(game_data);
-    if (message_arena != submessage_arena) {
-      game_data = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, game_data, submessage_arena);
-    }
-    
-  } else {
-    
-  }
-  game_data_ = game_data;
-  // @@protoc_insertion_point(field_set_allocated:DQDZ.SC_SceneInfo.game_Data)
+
+// int32 bet = 8;
+inline void SC_SceneInfo::clear_bet() {
+  bet_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::_internal_bet() const {
+  return bet_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::bet() const {
+  // @@protoc_insertion_point(field_get:DQDZ.SC_SceneInfo.bet)
+  return _internal_bet();
+}
+inline void SC_SceneInfo::_internal_set_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  bet_ = value;
+}
+inline void SC_SceneInfo::set_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_bet(value);
+  // @@protoc_insertion_point(field_set:DQDZ.SC_SceneInfo.bet)
+}
+
+// int64 gold = 9;
+inline void SC_SceneInfo::clear_gold() {
+  gold_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 SC_SceneInfo::_internal_gold() const {
+  return gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 SC_SceneInfo::gold() const {
+  // @@protoc_insertion_point(field_get:DQDZ.SC_SceneInfo.gold)
+  return _internal_gold();
+}
+inline void SC_SceneInfo::_internal_set_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  gold_ = value;
+}
+inline void SC_SceneInfo::set_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_gold(value);
+  // @@protoc_insertion_point(field_set:DQDZ.SC_SceneInfo.gold)
+}
+
+// int64 cai_jin = 10;
+inline void SC_SceneInfo::clear_cai_jin() {
+  cai_jin_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 SC_SceneInfo::_internal_cai_jin() const {
+  return cai_jin_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 SC_SceneInfo::cai_jin() const {
+  // @@protoc_insertion_point(field_get:DQDZ.SC_SceneInfo.cai_jin)
+  return _internal_cai_jin();
+}
+inline void SC_SceneInfo::_internal_set_cai_jin(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  cai_jin_ = value;
+}
+inline void SC_SceneInfo::set_cai_jin(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_cai_jin(value);
+  // @@protoc_insertion_point(field_set:DQDZ.SC_SceneInfo.cai_jin)
 }
 
 // -------------------------------------------------------------------
 
 // tagGameConfig
 
-// int32 bet_count = 1;
-inline void tagGameConfig::clear_bet_count() {
-  bet_count_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 tagGameConfig::_internal_bet_count() const {
-  return bet_count_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 tagGameConfig::bet_count() const {
-  // @@protoc_insertion_point(field_get:DQDZ.tagGameConfig.bet_count)
-  return _internal_bet_count();
-}
-inline void tagGameConfig::_internal_set_bet_count(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  bet_count_ = value;
-}
-inline void tagGameConfig::set_bet_count(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_bet_count(value);
-  // @@protoc_insertion_point(field_set:DQDZ.tagGameConfig.bet_count)
-}
-
-// repeated int32 bet = 2;
+// repeated int32 bet = 1;
 inline int tagGameConfig::_internal_bet_size() const {
   return bet_.size();
 }
@@ -2540,8 +2273,6 @@ inline void CMD_3D_SC_Jackpot::set_jackpot_score(::PROTOBUF_NAMESPACE_ID::int64 
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
-// -------------------------------------------------------------------
-
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

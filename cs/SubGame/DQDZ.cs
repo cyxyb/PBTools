@@ -29,36 +29,34 @@ namespace DQDZ {
             "ASgFEgsKA2JldBgDIAEoBSI/ChdDTURfM0RfQ1NfU3RhcnRCYWxsR2FtZRIP",
             "Cgd2ZXJzaW9uGAEgASgFEhMKC3ZlcmlmeV9jb2RlGAIgASgFIj8KF0NNRF8z",
             "RF9DU19SZXF1ZXN0Q2FpSmluEg8KB3ZlcnNpb24YASABKAUSEwoLdmVyaWZ5",
-            "X2NvZGUYAiABKAUicwoLdGFnR2FtZURhdGESEgoKdXNlcl9zdGF0ZRgBIAEo",
-            "BRISCgpmcmVlX2NvdW50GAIgASgFEhAKCG11bHRpcGxlGAMgASgFEgsKA2Jl",
-            "dBgEIAEoBRIMCgRnb2xkGAUgASgDEg8KB2NhaV9qaW4YBiABKAMiewoMU0Nf",
-            "U2NlbmVJbmZvEg8KB3VzZXJfaWQYASABKAUSEAoIbmV0X2NvZGUYAiABKAUS",
-            "EAoIY2hhaXJfaWQYAyABKAUSEAoIdGFibGVfaWQYBCABKAUSJAoJZ2FtZV9E",
-            "YXRhGAUgASgLMhEuRFFEWi50YWdHYW1lRGF0YSIvCg10YWdHYW1lQ29uZmln",
-            "EhEKCWJldF9jb3VudBgBIAEoBRILCgNiZXQYAiADKAUimQEKEENNRF8zRF9T",
-            "Q19SZXN1bHQSDwoHdXNlcl9pZBgBIAEoBRILCgNiZXQYAiABKAUSEAoId2lu",
-            "X2dvbGQYAyABKAMSEAoIY29tX2dvbGQYBCABKAMSEAoIY3VyX2dvbGQYBSAB",
-            "KAMSDwoHY2FpX2ppbhgGIAEoAxISCgpmcmVlX2NvdW50GAcgASgFEgwKBGlj",
-            "b24YCCADKAUieAoRQ01EX1N0YXJ0QmFsbEdhbWUSDwoHdXNlcl9pZBgBIAEo",
-            "BRILCgNyZXQYAiABKAUSEAoIYWRkX2dvbGQYAyABKAMSEAoIY3VyX2dvbGQY",
-            "BCABKAMSDwoHY2FpX2ppbhgFIAEoAxIQCghtdWx0aXBsZRgGIAEoBSIqChFD",
-            "TURfM0RfU0NfSmFja3BvdBIVCg1qYWNrcG90X3Njb3JlGAEgASgDKqoCChBF",
-            "TXNnSUREUURaU2VydmVyEhUKEVNVQl9DU19HQU1FX1NUQVJUEAASGgoWU1VC",
-            "X0NTX1NUQVJUX0JBTExfR0FNRRABEhoKFlNVQl9DU19SRVFVRVNUX0NBSV9K",
-            "SU4QAhIVChFTVUJfU0NfR0FNRV9TVEFSVBADEhQKEFNVQl9TQ19HQU1FX09W",
-            "RVIQBBIcChhTVUJfU0NfVVBEQVRFX1BSSVpFX1BPT0wQBRIWChJTVUJfU0Nf",
-            "R0FNRV9DT05GSUcQBhIUChBTVUJfU0NfR0FNRV9EQVRBEAcSFQoRU1VCX1ND",
-            "X1NUQVJUX0dBTUUQCBIaChZTVUJfU0NfU1RBUlRfQkFMTF9HQU1FEAkSGwoX",
-            "U1VCX1NDX1JFU1BPTlNFX0NBSV9KSU4QCmIGcHJvdG8z"));
+            "X2NvZGUYAiABKAUiuwEKDFNDX1NjZW5lSW5mbxIPCgd1c2VyX2lkGAEgASgF",
+            "EhAKCG5ldF9jb2RlGAIgASgFEhAKCGNoYWlyX2lkGAMgASgFEhAKCHRhYmxl",
+            "X2lkGAQgASgFEhIKCnVzZXJfc3RhdGUYBSABKAUSEgoKZnJlZV9jb3VudBgG",
+            "IAEoBRIQCghtdWx0aXBsZRgHIAEoBRILCgNiZXQYCCABKAUSDAoEZ29sZBgJ",
+            "IAEoAxIPCgdjYWlfamluGAogASgDIhwKDXRhZ0dhbWVDb25maWcSCwoDYmV0",
+            "GAEgAygFIpkBChBDTURfM0RfU0NfUmVzdWx0Eg8KB3VzZXJfaWQYASABKAUS",
+            "CwoDYmV0GAIgASgFEhAKCHdpbl9nb2xkGAMgASgDEhAKCGNvbV9nb2xkGAQg",
+            "ASgDEhAKCGN1cl9nb2xkGAUgASgDEg8KB2NhaV9qaW4YBiABKAMSEgoKZnJl",
+            "ZV9jb3VudBgHIAEoBRIMCgRpY29uGAggAygFIngKEUNNRF9TdGFydEJhbGxH",
+            "YW1lEg8KB3VzZXJfaWQYASABKAUSCwoDcmV0GAIgASgFEhAKCGFkZF9nb2xk",
+            "GAMgASgDEhAKCGN1cl9nb2xkGAQgASgDEg8KB2NhaV9qaW4YBSABKAMSEAoI",
+            "bXVsdGlwbGUYBiABKAUiKgoRQ01EXzNEX1NDX0phY2twb3QSFQoNamFja3Bv",
+            "dF9zY29yZRgBIAEoAyqqAgoQRU1zZ0lERFFEWlNlcnZlchIVChFTVUJfQ1Nf",
+            "R0FNRV9TVEFSVBAAEhoKFlNVQl9DU19TVEFSVF9CQUxMX0dBTUUQARIaChZT",
+            "VUJfQ1NfUkVRVUVTVF9DQUlfSklOEAISFQoRU1VCX1NDX0dBTUVfU1RBUlQQ",
+            "AxIUChBTVUJfU0NfR0FNRV9PVkVSEAQSHAoYU1VCX1NDX1VQREFURV9QUkla",
+            "RV9QT09MEAUSFgoSU1VCX1NDX0dBTUVfQ09ORklHEAYSFAoQU1VCX1NDX0dB",
+            "TUVfREFUQRAHEhUKEVNVQl9TQ19TVEFSVF9HQU1FEAgSGgoWU1VCX1NDX1NU",
+            "QVJUX0JBTExfR0FNRRAJEhsKF1NVQl9TQ19SRVNQT05TRV9DQUlfSklOEApi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::DQDZ.EMsgIDDQDZServer), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::DQDZ.CMD_3D_CS_StartGame), global::DQDZ.CMD_3D_CS_StartGame.Parser, new[]{ "Version", "VerifyCode", "Bet" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DQDZ.CMD_3D_CS_StartBallGame), global::DQDZ.CMD_3D_CS_StartBallGame.Parser, new[]{ "Version", "VerifyCode" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DQDZ.CMD_3D_CS_RequestCaiJin), global::DQDZ.CMD_3D_CS_RequestCaiJin.Parser, new[]{ "Version", "VerifyCode" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::DQDZ.tagGameData), global::DQDZ.tagGameData.Parser, new[]{ "UserState", "FreeCount", "Multiple", "Bet", "Gold", "CaiJin" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::DQDZ.SC_SceneInfo), global::DQDZ.SC_SceneInfo.Parser, new[]{ "UserId", "NetCode", "ChairId", "TableId", "GameData" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::DQDZ.tagGameConfig), global::DQDZ.tagGameConfig.Parser, new[]{ "BetCount", "Bet" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DQDZ.SC_SceneInfo), global::DQDZ.SC_SceneInfo.Parser, new[]{ "UserId", "NetCode", "ChairId", "TableId", "UserState", "FreeCount", "Multiple", "Bet", "Gold", "CaiJin" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DQDZ.tagGameConfig), global::DQDZ.tagGameConfig.Parser, new[]{ "Bet" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DQDZ.CMD_3D_SC_Result), global::DQDZ.CMD_3D_SC_Result.Parser, new[]{ "UserId", "Bet", "WinGold", "ComGold", "CurGold", "CaiJin", "FreeCount", "Icon" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DQDZ.CMD_StartBallGame), global::DQDZ.CMD_StartBallGame.Parser, new[]{ "UserId", "Ret", "AddGold", "CurGold", "CaiJin", "Multiple" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DQDZ.CMD_3D_SC_Jackpot), global::DQDZ.CMD_3D_SC_Jackpot.Parser, new[]{ "JackpotScore" }, null, null, null, null)
@@ -811,376 +809,6 @@ namespace DQDZ {
 
   }
 
-  public sealed partial class tagGameData : pb::IMessage<tagGameData>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<tagGameData> _parser = new pb::MessageParser<tagGameData>(() => new tagGameData());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<tagGameData> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::DQDZ.DQDZReflection.Descriptor.MessageTypes[3]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public tagGameData() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public tagGameData(tagGameData other) : this() {
-      userState_ = other.userState_;
-      freeCount_ = other.freeCount_;
-      multiple_ = other.multiple_;
-      bet_ = other.bet_;
-      gold_ = other.gold_;
-      caiJin_ = other.caiJin_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public tagGameData Clone() {
-      return new tagGameData(this);
-    }
-
-    /// <summary>Field number for the "user_state" field.</summary>
-    public const int UserStateFieldNumber = 1;
-    private int userState_;
-    /// <summary>
-    /// 玩家状态  0 普通模式， 1 点球模式 , 2 免费模式
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int UserState {
-      get { return userState_; }
-      set {
-        userState_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "free_count" field.</summary>
-    public const int FreeCountFieldNumber = 2;
-    private int freeCount_;
-    /// <summary>
-    /// 免费次数
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int FreeCount {
-      get { return freeCount_; }
-      set {
-        freeCount_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "multiple" field.</summary>
-    public const int MultipleFieldNumber = 3;
-    private int multiple_;
-    /// <summary>
-    /// 当前倍率
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Multiple {
-      get { return multiple_; }
-      set {
-        multiple_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "bet" field.</summary>
-    public const int BetFieldNumber = 4;
-    private int bet_;
-    /// <summary>
-    /// 下注值
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Bet {
-      get { return bet_; }
-      set {
-        bet_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "gold" field.</summary>
-    public const int GoldFieldNumber = 5;
-    private long gold_;
-    /// <summary>
-    /// 金币
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long Gold {
-      get { return gold_; }
-      set {
-        gold_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "cai_jin" field.</summary>
-    public const int CaiJinFieldNumber = 6;
-    private long caiJin_;
-    /// <summary>
-    /// 彩金
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long CaiJin {
-      get { return caiJin_; }
-      set {
-        caiJin_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as tagGameData);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(tagGameData other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (UserState != other.UserState) return false;
-      if (FreeCount != other.FreeCount) return false;
-      if (Multiple != other.Multiple) return false;
-      if (Bet != other.Bet) return false;
-      if (Gold != other.Gold) return false;
-      if (CaiJin != other.CaiJin) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (UserState != 0) hash ^= UserState.GetHashCode();
-      if (FreeCount != 0) hash ^= FreeCount.GetHashCode();
-      if (Multiple != 0) hash ^= Multiple.GetHashCode();
-      if (Bet != 0) hash ^= Bet.GetHashCode();
-      if (Gold != 0L) hash ^= Gold.GetHashCode();
-      if (CaiJin != 0L) hash ^= CaiJin.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (UserState != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(UserState);
-      }
-      if (FreeCount != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(FreeCount);
-      }
-      if (Multiple != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(Multiple);
-      }
-      if (Bet != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(Bet);
-      }
-      if (Gold != 0L) {
-        output.WriteRawTag(40);
-        output.WriteInt64(Gold);
-      }
-      if (CaiJin != 0L) {
-        output.WriteRawTag(48);
-        output.WriteInt64(CaiJin);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (UserState != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(UserState);
-      }
-      if (FreeCount != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(FreeCount);
-      }
-      if (Multiple != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(Multiple);
-      }
-      if (Bet != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(Bet);
-      }
-      if (Gold != 0L) {
-        output.WriteRawTag(40);
-        output.WriteInt64(Gold);
-      }
-      if (CaiJin != 0L) {
-        output.WriteRawTag(48);
-        output.WriteInt64(CaiJin);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (UserState != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserState);
-      }
-      if (FreeCount != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(FreeCount);
-      }
-      if (Multiple != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Multiple);
-      }
-      if (Bet != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Bet);
-      }
-      if (Gold != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Gold);
-      }
-      if (CaiJin != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(CaiJin);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(tagGameData other) {
-      if (other == null) {
-        return;
-      }
-      if (other.UserState != 0) {
-        UserState = other.UserState;
-      }
-      if (other.FreeCount != 0) {
-        FreeCount = other.FreeCount;
-      }
-      if (other.Multiple != 0) {
-        Multiple = other.Multiple;
-      }
-      if (other.Bet != 0) {
-        Bet = other.Bet;
-      }
-      if (other.Gold != 0L) {
-        Gold = other.Gold;
-      }
-      if (other.CaiJin != 0L) {
-        CaiJin = other.CaiJin;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            UserState = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            FreeCount = input.ReadInt32();
-            break;
-          }
-          case 24: {
-            Multiple = input.ReadInt32();
-            break;
-          }
-          case 32: {
-            Bet = input.ReadInt32();
-            break;
-          }
-          case 40: {
-            Gold = input.ReadInt64();
-            break;
-          }
-          case 48: {
-            CaiJin = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            UserState = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            FreeCount = input.ReadInt32();
-            break;
-          }
-          case 24: {
-            Multiple = input.ReadInt32();
-            break;
-          }
-          case 32: {
-            Bet = input.ReadInt32();
-            break;
-          }
-          case 40: {
-            Gold = input.ReadInt64();
-            break;
-          }
-          case 48: {
-            CaiJin = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
   public sealed partial class SC_SceneInfo : pb::IMessage<SC_SceneInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1193,7 +821,7 @@ namespace DQDZ {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::DQDZ.DQDZReflection.Descriptor.MessageTypes[4]; }
+      get { return global::DQDZ.DQDZReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1214,7 +842,12 @@ namespace DQDZ {
       netCode_ = other.netCode_;
       chairId_ = other.chairId_;
       tableId_ = other.tableId_;
-      gameData_ = other.gameData_ != null ? other.gameData_.Clone() : null;
+      userState_ = other.userState_;
+      freeCount_ = other.freeCount_;
+      multiple_ = other.multiple_;
+      bet_ = other.bet_;
+      gold_ = other.gold_;
+      caiJin_ = other.caiJin_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1279,17 +912,87 @@ namespace DQDZ {
       }
     }
 
-    /// <summary>Field number for the "game_Data" field.</summary>
-    public const int GameDataFieldNumber = 5;
-    private global::DQDZ.tagGameData gameData_;
+    /// <summary>Field number for the "user_state" field.</summary>
+    public const int UserStateFieldNumber = 5;
+    private int userState_;
     /// <summary>
-    /// 游戏数据
+    /// 玩家状态  0 普通模式， 1 点球模式 , 2 免费模式
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::DQDZ.tagGameData GameData {
-      get { return gameData_; }
+    public int UserState {
+      get { return userState_; }
       set {
-        gameData_ = value;
+        userState_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "free_count" field.</summary>
+    public const int FreeCountFieldNumber = 6;
+    private int freeCount_;
+    /// <summary>
+    /// 免费次数
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int FreeCount {
+      get { return freeCount_; }
+      set {
+        freeCount_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "multiple" field.</summary>
+    public const int MultipleFieldNumber = 7;
+    private int multiple_;
+    /// <summary>
+    /// 当前倍率
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Multiple {
+      get { return multiple_; }
+      set {
+        multiple_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "bet" field.</summary>
+    public const int BetFieldNumber = 8;
+    private int bet_;
+    /// <summary>
+    /// 下注值
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Bet {
+      get { return bet_; }
+      set {
+        bet_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "gold" field.</summary>
+    public const int GoldFieldNumber = 9;
+    private long gold_;
+    /// <summary>
+    /// 金币
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long Gold {
+      get { return gold_; }
+      set {
+        gold_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "cai_jin" field.</summary>
+    public const int CaiJinFieldNumber = 10;
+    private long caiJin_;
+    /// <summary>
+    /// 彩金
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long CaiJin {
+      get { return caiJin_; }
+      set {
+        caiJin_ = value;
       }
     }
 
@@ -1310,7 +1013,12 @@ namespace DQDZ {
       if (NetCode != other.NetCode) return false;
       if (ChairId != other.ChairId) return false;
       if (TableId != other.TableId) return false;
-      if (!object.Equals(GameData, other.GameData)) return false;
+      if (UserState != other.UserState) return false;
+      if (FreeCount != other.FreeCount) return false;
+      if (Multiple != other.Multiple) return false;
+      if (Bet != other.Bet) return false;
+      if (Gold != other.Gold) return false;
+      if (CaiJin != other.CaiJin) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1321,7 +1029,12 @@ namespace DQDZ {
       if (NetCode != 0) hash ^= NetCode.GetHashCode();
       if (ChairId != 0) hash ^= ChairId.GetHashCode();
       if (TableId != 0) hash ^= TableId.GetHashCode();
-      if (gameData_ != null) hash ^= GameData.GetHashCode();
+      if (UserState != 0) hash ^= UserState.GetHashCode();
+      if (FreeCount != 0) hash ^= FreeCount.GetHashCode();
+      if (Multiple != 0) hash ^= Multiple.GetHashCode();
+      if (Bet != 0) hash ^= Bet.GetHashCode();
+      if (Gold != 0L) hash ^= Gold.GetHashCode();
+      if (CaiJin != 0L) hash ^= CaiJin.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1354,9 +1067,29 @@ namespace DQDZ {
         output.WriteRawTag(32);
         output.WriteInt32(TableId);
       }
-      if (gameData_ != null) {
-        output.WriteRawTag(42);
-        output.WriteMessage(GameData);
+      if (UserState != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(UserState);
+      }
+      if (FreeCount != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(FreeCount);
+      }
+      if (Multiple != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(Multiple);
+      }
+      if (Bet != 0) {
+        output.WriteRawTag(64);
+        output.WriteInt32(Bet);
+      }
+      if (Gold != 0L) {
+        output.WriteRawTag(72);
+        output.WriteInt64(Gold);
+      }
+      if (CaiJin != 0L) {
+        output.WriteRawTag(80);
+        output.WriteInt64(CaiJin);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1383,9 +1116,29 @@ namespace DQDZ {
         output.WriteRawTag(32);
         output.WriteInt32(TableId);
       }
-      if (gameData_ != null) {
-        output.WriteRawTag(42);
-        output.WriteMessage(GameData);
+      if (UserState != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(UserState);
+      }
+      if (FreeCount != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(FreeCount);
+      }
+      if (Multiple != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(Multiple);
+      }
+      if (Bet != 0) {
+        output.WriteRawTag(64);
+        output.WriteInt32(Bet);
+      }
+      if (Gold != 0L) {
+        output.WriteRawTag(72);
+        output.WriteInt64(Gold);
+      }
+      if (CaiJin != 0L) {
+        output.WriteRawTag(80);
+        output.WriteInt64(CaiJin);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1408,8 +1161,23 @@ namespace DQDZ {
       if (TableId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(TableId);
       }
-      if (gameData_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GameData);
+      if (UserState != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserState);
+      }
+      if (FreeCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(FreeCount);
+      }
+      if (Multiple != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Multiple);
+      }
+      if (Bet != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Bet);
+      }
+      if (Gold != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Gold);
+      }
+      if (CaiJin != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(CaiJin);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1434,11 +1202,23 @@ namespace DQDZ {
       if (other.TableId != 0) {
         TableId = other.TableId;
       }
-      if (other.gameData_ != null) {
-        if (gameData_ == null) {
-          GameData = new global::DQDZ.tagGameData();
-        }
-        GameData.MergeFrom(other.GameData);
+      if (other.UserState != 0) {
+        UserState = other.UserState;
+      }
+      if (other.FreeCount != 0) {
+        FreeCount = other.FreeCount;
+      }
+      if (other.Multiple != 0) {
+        Multiple = other.Multiple;
+      }
+      if (other.Bet != 0) {
+        Bet = other.Bet;
+      }
+      if (other.Gold != 0L) {
+        Gold = other.Gold;
+      }
+      if (other.CaiJin != 0L) {
+        CaiJin = other.CaiJin;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1470,11 +1250,28 @@ namespace DQDZ {
             TableId = input.ReadInt32();
             break;
           }
-          case 42: {
-            if (gameData_ == null) {
-              GameData = new global::DQDZ.tagGameData();
-            }
-            input.ReadMessage(GameData);
+          case 40: {
+            UserState = input.ReadInt32();
+            break;
+          }
+          case 48: {
+            FreeCount = input.ReadInt32();
+            break;
+          }
+          case 56: {
+            Multiple = input.ReadInt32();
+            break;
+          }
+          case 64: {
+            Bet = input.ReadInt32();
+            break;
+          }
+          case 72: {
+            Gold = input.ReadInt64();
+            break;
+          }
+          case 80: {
+            CaiJin = input.ReadInt64();
             break;
           }
         }
@@ -1507,11 +1304,28 @@ namespace DQDZ {
             TableId = input.ReadInt32();
             break;
           }
-          case 42: {
-            if (gameData_ == null) {
-              GameData = new global::DQDZ.tagGameData();
-            }
-            input.ReadMessage(GameData);
+          case 40: {
+            UserState = input.ReadInt32();
+            break;
+          }
+          case 48: {
+            FreeCount = input.ReadInt32();
+            break;
+          }
+          case 56: {
+            Multiple = input.ReadInt32();
+            break;
+          }
+          case 64: {
+            Bet = input.ReadInt32();
+            break;
+          }
+          case 72: {
+            Gold = input.ReadInt64();
+            break;
+          }
+          case 80: {
+            CaiJin = input.ReadInt64();
             break;
           }
         }
@@ -1533,7 +1347,7 @@ namespace DQDZ {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::DQDZ.DQDZReflection.Descriptor.MessageTypes[5]; }
+      get { return global::DQDZ.DQDZReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1550,7 +1364,6 @@ namespace DQDZ {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public tagGameConfig(tagGameConfig other) : this() {
-      betCount_ = other.betCount_;
       bet_ = other.bet_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -1560,24 +1373,10 @@ namespace DQDZ {
       return new tagGameConfig(this);
     }
 
-    /// <summary>Field number for the "bet_count" field.</summary>
-    public const int BetCountFieldNumber = 1;
-    private int betCount_;
-    /// <summary>
-    /// 可以选择的个数
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int BetCount {
-      get { return betCount_; }
-      set {
-        betCount_ = value;
-      }
-    }
-
     /// <summary>Field number for the "bet" field.</summary>
-    public const int BetFieldNumber = 2;
+    public const int BetFieldNumber = 1;
     private static readonly pb::FieldCodec<int> _repeated_bet_codec
-        = pb::FieldCodec.ForInt32(18);
+        = pb::FieldCodec.ForInt32(10);
     private readonly pbc::RepeatedField<int> bet_ = new pbc::RepeatedField<int>();
     /// <summary>
     /// 下注信息
@@ -1600,7 +1399,6 @@ namespace DQDZ {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (BetCount != other.BetCount) return false;
       if(!bet_.Equals(other.bet_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1608,7 +1406,6 @@ namespace DQDZ {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (BetCount != 0) hash ^= BetCount.GetHashCode();
       hash ^= bet_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1626,10 +1423,6 @@ namespace DQDZ {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (BetCount != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(BetCount);
-      }
       bet_.WriteTo(output, _repeated_bet_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1640,10 +1433,6 @@ namespace DQDZ {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (BetCount != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(BetCount);
-      }
       bet_.WriteTo(ref output, _repeated_bet_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1654,9 +1443,6 @@ namespace DQDZ {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (BetCount != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(BetCount);
-      }
       size += bet_.CalculateSize(_repeated_bet_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1668,9 +1454,6 @@ namespace DQDZ {
     public void MergeFrom(tagGameConfig other) {
       if (other == null) {
         return;
-      }
-      if (other.BetCount != 0) {
-        BetCount = other.BetCount;
       }
       bet_.Add(other.bet_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -1687,12 +1470,8 @@ namespace DQDZ {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
+          case 10:
           case 8: {
-            BetCount = input.ReadInt32();
-            break;
-          }
-          case 18:
-          case 16: {
             bet_.AddEntriesFrom(input, _repeated_bet_codec);
             break;
           }
@@ -1710,12 +1489,8 @@ namespace DQDZ {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
+          case 10:
           case 8: {
-            BetCount = input.ReadInt32();
-            break;
-          }
-          case 18:
-          case 16: {
             bet_.AddEntriesFrom(ref input, _repeated_bet_codec);
             break;
           }
@@ -1741,7 +1516,7 @@ namespace DQDZ {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::DQDZ.DQDZReflection.Descriptor.MessageTypes[6]; }
+      get { return global::DQDZ.DQDZReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2180,7 +1955,7 @@ namespace DQDZ {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::DQDZ.DQDZReflection.Descriptor.MessageTypes[7]; }
+      get { return global::DQDZ.DQDZReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2547,7 +2322,7 @@ namespace DQDZ {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::DQDZ.DQDZReflection.Descriptor.MessageTypes[8]; }
+      get { return global::DQDZ.DQDZReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
