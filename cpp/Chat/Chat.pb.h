@@ -556,6 +556,7 @@ class MsgChatLoginResp PROTOBUF_FINAL :
     kVipLevelFieldNumber = 6,
     kAvatarFrameFieldNumber = 7,
     kClientTypeFieldNumber = 8,
+    kLimitChatFieldNumber = 9,
   };
   // string nickname = 4;
   void clear_nickname();
@@ -643,6 +644,15 @@ class MsgChatLoginResp PROTOBUF_FINAL :
   void _internal_set_client_type(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 limit_chat = 9;
+  void clear_limit_chat();
+  ::PROTOBUF_NAMESPACE_ID::int32 limit_chat() const;
+  void set_limit_chat(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_limit_chat() const;
+  void _internal_set_limit_chat(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:Chat.MsgChatLoginResp)
  private:
   class _Internal;
@@ -658,6 +668,7 @@ class MsgChatLoginResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 vip_level_;
   ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame_;
   ::PROTOBUF_NAMESPACE_ID::int32 client_type_;
+  ::PROTOBUF_NAMESPACE_ID::int32 limit_chat_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Chat_2eproto;
 };
@@ -1348,6 +1359,26 @@ inline void MsgChatLoginResp::_internal_set_client_type(::PROTOBUF_NAMESPACE_ID:
 inline void MsgChatLoginResp::set_client_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_client_type(value);
   // @@protoc_insertion_point(field_set:Chat.MsgChatLoginResp.client_type)
+}
+
+// int32 limit_chat = 9;
+inline void MsgChatLoginResp::clear_limit_chat() {
+  limit_chat_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChatLoginResp::_internal_limit_chat() const {
+  return limit_chat_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChatLoginResp::limit_chat() const {
+  // @@protoc_insertion_point(field_get:Chat.MsgChatLoginResp.limit_chat)
+  return _internal_limit_chat();
+}
+inline void MsgChatLoginResp::_internal_set_limit_chat(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  limit_chat_ = value;
+}
+inline void MsgChatLoginResp::set_limit_chat(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_limit_chat(value);
+  // @@protoc_insertion_point(field_set:Chat.MsgChatLoginResp.limit_chat)
 }
 
 // -------------------------------------------------------------------

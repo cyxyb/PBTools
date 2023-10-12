@@ -48,6 +48,7 @@ enum EMsgIDServerInternalProto
 	CENTER2LOGIN_KickUserResp					= 26;	//踢玩家
 	LOGIN2CENTER_ReceiveSynchronousLogin		= 27;	//领取转账同步金币
 	CENTER2LOGIN_ReceiveSynchronousLoginResp	= 28;	//领取转账同步金币返回
+	CENTER2LOGIN_RefreshGoldResp				= 29;	//刷新GM添加金币返回
 	//1001-2000 game <-> center
 	GAME2CENTER_Register			= 2001;	//游戏服务器注册
 	GAME2CENTER_UnRegister			= 2002;	//游戏服务器注销
@@ -72,6 +73,8 @@ enum EMsgIDServerInternalProto
 	RelayServer2CENTER_RechargeSuccess	= 5003;	//充值成功
 	RelayServer2CENTER_Withdraw			= 5004;	//兑换
 	RelayServer2CENTER_KickUser			= 5005;	//踢人
+	RelayServer2CENTER_LimitChat		= 5006;	//限制用户聊天
+	RelayServer2CENTER_RefreshGold		= 5007;	//刷新GM添加金币
 	
 	//6001-7000 ChatServer <-> center
 	Chat2Center_Register				= 6001;	//聊天服注册
@@ -79,7 +82,7 @@ enum EMsgIDServerInternalProto
 	Chat2Center_SendTrumpetMsg			= 6003;	//发送小喇叭消息
 	Center2Chat_SendTrumpetMsgResp		= 6004;	//发送小喇叭消息返回
 	Center2Chat_KickUserResp			= 6005;	//踢玩家
-
+	Center2Chat_LimitChatLoginResp		= 6006;	//限制玩家聊天返回
 }
 
 enum EMsgIDDB
@@ -196,7 +199,6 @@ enum EMsgIDDB
 	DB2CHAT_LoginResp					= 3002;	//登录返回
 	CHAT2DB_SendTrumpetMsg				= 3003;	//发送小喇叭消息
 	DB2CHAT_SendTrumpetMsgResp			= 3004;	//发送小喇叭消息返回
-	
 }
 
 enum EGameBattleTypeID

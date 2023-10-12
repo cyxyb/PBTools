@@ -123,7 +123,12 @@ message MsgUpdateChatServerOnlineNum
 	int32	server_id			= 1;		//服务器ID
 	int32	online_num			= 2;		//在线数量
 }
-
+//限制玩家聊天
+message MsgUpdateLImitChat
+{
+	int32 user_id 				= 1;		//玩家id	
+	int32 chat_limit_state 		= 2;		//聊天状态
+}
 
 
 /////////////////////////服务器与数据库///////////////////////////

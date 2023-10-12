@@ -122,6 +122,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Chat_2eproto::offsets[] PROTOB
   PROTOBUF_FIELD_OFFSET(::Chat::MsgChatLoginResp, vip_level_),
   PROTOBUF_FIELD_OFFSET(::Chat::MsgChatLoginResp, avatar_frame_),
   PROTOBUF_FIELD_OFFSET(::Chat::MsgChatLoginResp, client_type_),
+  PROTOBUF_FIELD_OFFSET(::Chat::MsgChatLoginResp, limit_chat_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::Chat::MsgSyncUserInfo, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -133,7 +134,7 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 0, -1, sizeof(::Chat::MsgChatLogin)},
   { 7, -1, sizeof(::Chat::MsgChatUserInfo)},
   { 18, -1, sizeof(::Chat::MsgChatLoginResp)},
-  { 31, -1, sizeof(::Chat::MsgSyncUserInfo)},
+  { 32, -1, sizeof(::Chat::MsgSyncUserInfo)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -149,13 +150,13 @@ const char descriptor_table_protodef_Chat_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "tUserInfo\022\017\n\007user_id\030\001 \001(\005\022\024\n\014beautiful_"
   "id\030\002 \001(\005\022\020\n\010nickname\030\003 \001(\t\022\016\n\006avatar\030\004 \001"
   "(\t\022\021\n\tvip_level\030\005 \001(\005\022\024\n\014avatar_frame\030\006 "
-  "\001(\005\"\253\001\n\020MsgChatLoginResp\022\020\n\010res_code\030\001 \001"
+  "\001(\005\"\277\001\n\020MsgChatLoginResp\022\020\n\010res_code\030\001 \001"
   "(\005\022\017\n\007user_id\030\002 \001(\005\022\024\n\014beautiful_id\030\003 \001("
   "\005\022\020\n\010nickname\030\004 \001(\t\022\016\n\006avatar\030\005 \001(\t\022\021\n\tv"
   "ip_level\030\006 \001(\005\022\024\n\014avatar_frame\030\007 \001(\005\022\023\n\013"
-  "client_type\030\010 \001(\005\";\n\017MsgSyncUserInfo\022(\n\t"
-  "user_info\030\001 \003(\0132\025.Chat.MsgChatUserInfob\006"
-  "proto3"
+  "client_type\030\010 \001(\005\022\022\n\nlimit_chat\030\t \001(\005\";\n"
+  "\017MsgSyncUserInfo\022(\n\tuser_info\030\001 \003(\0132\025.Ch"
+  "at.MsgChatUserInfob\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Chat_2eproto_deps[1] = {
 };
@@ -167,7 +168,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Cha
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Chat_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Chat_2eproto = {
-  false, false, descriptor_table_protodef_Chat_2eproto, "Chat.proto", 446,
+  false, false, descriptor_table_protodef_Chat_2eproto, "Chat.proto", 466,
   &descriptor_table_Chat_2eproto_once, descriptor_table_Chat_2eproto_sccs, descriptor_table_Chat_2eproto_deps, 4, 0,
   schemas, file_default_instances, TableStruct_Chat_2eproto::offsets,
   file_level_metadata_Chat_2eproto, 4, file_level_enum_descriptors_Chat_2eproto, file_level_service_descriptors_Chat_2eproto,
@@ -788,8 +789,8 @@ MsgChatLoginResp::MsgChatLoginResp(const MsgChatLoginResp& from)
       GetArena());
   }
   ::memcpy(&res_code_, &from.res_code_,
-    static_cast<size_t>(reinterpret_cast<char*>(&client_type_) -
-    reinterpret_cast<char*>(&res_code_)) + sizeof(client_type_));
+    static_cast<size_t>(reinterpret_cast<char*>(&limit_chat_) -
+    reinterpret_cast<char*>(&res_code_)) + sizeof(limit_chat_));
   // @@protoc_insertion_point(copy_constructor:Chat.MsgChatLoginResp)
 }
 
@@ -799,8 +800,8 @@ void MsgChatLoginResp::SharedCtor() {
   avatar_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&res_code_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&client_type_) -
-      reinterpret_cast<char*>(&res_code_)) + sizeof(client_type_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&limit_chat_) -
+      reinterpret_cast<char*>(&res_code_)) + sizeof(limit_chat_));
 }
 
 MsgChatLoginResp::~MsgChatLoginResp() {
@@ -839,8 +840,8 @@ void MsgChatLoginResp::Clear() {
   nickname_.ClearToEmpty();
   avatar_.ClearToEmpty();
   ::memset(&res_code_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&client_type_) -
-      reinterpret_cast<char*>(&res_code_)) + sizeof(client_type_));
+      reinterpret_cast<char*>(&limit_chat_) -
+      reinterpret_cast<char*>(&res_code_)) + sizeof(limit_chat_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -908,6 +909,13 @@ const char* MsgChatLoginResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
       case 8:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
           client_type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 limit_chat = 9;
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+          limit_chat_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -995,6 +1003,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(8, this->_internal_client_type(), target);
   }
 
+  // int32 limit_chat = 9;
+  if (this->limit_chat() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(9, this->_internal_limit_chat(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -1067,6 +1081,13 @@ size_t MsgChatLoginResp::ByteSizeLong() const {
         this->_internal_client_type());
   }
 
+  // int32 limit_chat = 9;
+  if (this->limit_chat() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_limit_chat());
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
         _internal_metadata_, total_size, &_cached_size_);
@@ -1122,6 +1143,9 @@ void MsgChatLoginResp::MergeFrom(const MsgChatLoginResp& from) {
   if (from.client_type() != 0) {
     _internal_set_client_type(from._internal_client_type());
   }
+  if (from.limit_chat() != 0) {
+    _internal_set_limit_chat(from._internal_limit_chat());
+  }
 }
 
 void MsgChatLoginResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -1148,8 +1172,8 @@ void MsgChatLoginResp::InternalSwap(MsgChatLoginResp* other) {
   nickname_.Swap(&other->nickname_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   avatar_.Swap(&other->avatar_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgChatLoginResp, client_type_)
-      + sizeof(MsgChatLoginResp::client_type_)
+      PROTOBUF_FIELD_OFFSET(MsgChatLoginResp, limit_chat_)
+      + sizeof(MsgChatLoginResp::limit_chat_)
       - PROTOBUF_FIELD_OFFSET(MsgChatLoginResp, res_code_)>(
           reinterpret_cast<char*>(&res_code_),
           reinterpret_cast<char*>(&other->res_code_));
