@@ -61,8 +61,7 @@ message SC_SceneInfo
 
 message tagGameConfig
 {
-	int32	bet_count			= 1;			// 可以选择的个数
-	repeated int32 bet			= 2;			// 下注信息
+	repeated int32 bet			= 1;			// 下注信息
 };
 
 
