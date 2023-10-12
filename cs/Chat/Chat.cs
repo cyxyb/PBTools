@@ -28,19 +28,19 @@ namespace Chat {
             "Eg8KB3VzZXJfaWQYASABKAUSEAoIcGFzc3dvcmQYAiABKAkigwEKD01zZ0No",
             "YXRVc2VySW5mbxIPCgd1c2VyX2lkGAEgASgFEhQKDGJlYXV0aWZ1bF9pZBgC",
             "IAEoBRIQCghuaWNrbmFtZRgDIAEoCRIOCgZhdmF0YXIYBCABKAkSEQoJdmlw",
-            "X2xldmVsGAUgASgFEhQKDGF2YXRhcl9mcmFtZRgGIAEoBSKrAQoQTXNnQ2hh",
+            "X2xldmVsGAUgASgFEhQKDGF2YXRhcl9mcmFtZRgGIAEoBSK/AQoQTXNnQ2hh",
             "dExvZ2luUmVzcBIQCghyZXNfY29kZRgBIAEoBRIPCgd1c2VyX2lkGAIgASgF",
             "EhQKDGJlYXV0aWZ1bF9pZBgDIAEoBRIQCghuaWNrbmFtZRgEIAEoCRIOCgZh",
             "dmF0YXIYBSABKAkSEQoJdmlwX2xldmVsGAYgASgFEhQKDGF2YXRhcl9mcmFt",
-            "ZRgHIAEoBRITCgtjbGllbnRfdHlwZRgIIAEoBSI7Cg9Nc2dTeW5jVXNlcklu",
-            "Zm8SKAoJdXNlcl9pbmZvGAEgAygLMhUuQ2hhdC5Nc2dDaGF0VXNlckluZm9i",
-            "BnByb3RvMw=="));
+            "ZRgHIAEoBRITCgtjbGllbnRfdHlwZRgIIAEoBRISCgpsaW1pdF9jaGF0GAkg",
+            "ASgFIjsKD01zZ1N5bmNVc2VySW5mbxIoCgl1c2VyX2luZm8YASADKAsyFS5D",
+            "aGF0Lk1zZ0NoYXRVc2VySW5mb2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Chat.MsgChatLogin), global::Chat.MsgChatLogin.Parser, new[]{ "UserId", "Password" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chat.MsgChatUserInfo), global::Chat.MsgChatUserInfo.Parser, new[]{ "UserId", "BeautifulId", "Nickname", "Avatar", "VipLevel", "AvatarFrame" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Chat.MsgChatLoginResp), global::Chat.MsgChatLoginResp.Parser, new[]{ "ResCode", "UserId", "BeautifulId", "Nickname", "Avatar", "VipLevel", "AvatarFrame", "ClientType" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Chat.MsgChatLoginResp), global::Chat.MsgChatLoginResp.Parser, new[]{ "ResCode", "UserId", "BeautifulId", "Nickname", "Avatar", "VipLevel", "AvatarFrame", "ClientType", "LimitChat" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chat.MsgSyncUserInfo), global::Chat.MsgSyncUserInfo.Parser, new[]{ "UserInfo" }, null, null, null, null)
           }));
     }
@@ -678,6 +678,7 @@ namespace Chat {
       vipLevel_ = other.vipLevel_;
       avatarFrame_ = other.avatarFrame_;
       clientType_ = other.clientType_;
+      limitChat_ = other.limitChat_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -798,6 +799,20 @@ namespace Chat {
       }
     }
 
+    /// <summary>Field number for the "limit_chat" field.</summary>
+    public const int LimitChatFieldNumber = 9;
+    private int limitChat_;
+    /// <summary>
+    ///聊天限制
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int LimitChat {
+      get { return limitChat_; }
+      set {
+        limitChat_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as MsgChatLoginResp);
@@ -819,6 +834,7 @@ namespace Chat {
       if (VipLevel != other.VipLevel) return false;
       if (AvatarFrame != other.AvatarFrame) return false;
       if (ClientType != other.ClientType) return false;
+      if (LimitChat != other.LimitChat) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -833,6 +849,7 @@ namespace Chat {
       if (VipLevel != 0) hash ^= VipLevel.GetHashCode();
       if (AvatarFrame != 0) hash ^= AvatarFrame.GetHashCode();
       if (ClientType != 0) hash ^= ClientType.GetHashCode();
+      if (LimitChat != 0) hash ^= LimitChat.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -881,6 +898,10 @@ namespace Chat {
         output.WriteRawTag(64);
         output.WriteInt32(ClientType);
       }
+      if (LimitChat != 0) {
+        output.WriteRawTag(72);
+        output.WriteInt32(LimitChat);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -922,6 +943,10 @@ namespace Chat {
         output.WriteRawTag(64);
         output.WriteInt32(ClientType);
       }
+      if (LimitChat != 0) {
+        output.WriteRawTag(72);
+        output.WriteInt32(LimitChat);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -954,6 +979,9 @@ namespace Chat {
       }
       if (ClientType != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ClientType);
+      }
+      if (LimitChat != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(LimitChat);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -989,6 +1017,9 @@ namespace Chat {
       }
       if (other.ClientType != 0) {
         ClientType = other.ClientType;
+      }
+      if (other.LimitChat != 0) {
+        LimitChat = other.LimitChat;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1036,6 +1067,10 @@ namespace Chat {
             ClientType = input.ReadInt32();
             break;
           }
+          case 72: {
+            LimitChat = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -1080,6 +1115,10 @@ namespace Chat {
           }
           case 64: {
             ClientType = input.ReadInt32();
+            break;
+          }
+          case 72: {
+            LimitChat = input.ReadInt32();
             break;
           }
         }

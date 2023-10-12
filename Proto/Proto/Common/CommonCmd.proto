@@ -115,6 +115,7 @@ enum EMsgIDLogin
 	MsgIDShare_BindInviteCodeResp				= 101;		//绑定邀请码返回(MsgBindInviteCodeResp)
 	MsgIDShare_QueryBindInfo					= 102;		//查询绑定信息(MsgCommonBool)
 	MsgIDShare_QueryBindInfoResp				= 103;		//查询绑定信息返回(MsgBindParentInfo)
+
 }
 
 enum EMsgIDGame
@@ -155,4 +156,5 @@ enum EMsgIDChat
 	MsgIDChat_SendTrumpetMsg			= 2006;		//发送小喇叭消息(MsgCommonStr)
 	MsgIDChat_NotifyChatTrumpetMsgResp	= 2007;		//发送小喇叭消息返回(MsgNotifyChatTrumpetMsg)
 	MsgIDChat_SyncUserInfoResp			= 2008;		//同步玩家信息(MsgSyncUserInfo)
+	MsgIDChat_SetLilitChatResp			= 2009;		//设置限制聊天返回(MsgCommonN32)
 }

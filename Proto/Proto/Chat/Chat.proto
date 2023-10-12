@@ -31,6 +31,7 @@ message MsgChatLoginResp
 	int32		vip_level		= 6;	//VIP等级
 	int32		avatar_frame	= 7;	//头像框
 	int32		client_type		= 8;	//包类型
+	int32		limit_chat		= 9;	//聊天限制
 }
 
 //玩家信息
