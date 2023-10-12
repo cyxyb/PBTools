@@ -1,0 +1,95 @@
+syntax = "proto3";
+
+package DQDZ;
+
+//服务器消息
+enum EMsgIDDQDZServer
+{
+	SUB_CS_GAME_START 			= 0;	//开始游戏(CMD_3D_CS_StartGame)
+	SUB_CS_START_BALL_GAME		= 1;	//(CMD_3D_CS_StartBallGame)
+	SUB_CS_REQUEST_CAI_JIN		= 2;	//(CMD_3D_CS_RequestCaiJin)
+	SUB_SC_GAME_START			= 3;	//启动游戏 （没用）
+	SUB_SC_GAME_OVER			= 4; 	//游戏结束
+	SUB_SC_UPDATE_PRIZE_POOL 	= 5;	//奖池分数CMD_3D_SC_Jackpot
+	SUB_SC_GAME_CONFIG			= 6;	//tagGameConfig
+	SUB_SC_GAME_DATA			= 7;	//SC_SceneInfo
+	SUB_SC_START_GAME			= 8;	//CMD_3D_SC_Result
+	SUB_SC_START_BALL_GAME		= 9;	//CMD_StartBallGame
+	SUB_SC_RESPONSE_CAI_JIN		= 10;	//CMD_3D_CS_RequestCaiJin
+}
+
+// 开始游戏
+message CMD_3D_CS_StartGame
+{
+	int32	version 			= 1;			// 版本
+	int32	verify_code			= 2;			// 验证码
+	int32	bet					= 3;			// 押注
+};
+
+// 小游戏
+message CMD_3D_CS_StartBallGame
+{
+	int32	version				= 1;			// 版本
+	int32	verify_code			= 2;			// 验证码
+};
+
+// 请求彩金
+message CMD_3D_CS_RequestCaiJin
+{
+	int32	version				= 1;			// 版本
+	int32	verify_code			= 2;			// 验证码
+};
+
+message tagGameData 
+{
+	int32	user_state			= 1;			// 玩家状态  0 普通模式， 1 点球模式 , 2 免费模式
+	int32	free_count			= 2;			// 免费次数
+	int32	multiple			= 3;			// 当前倍率
+	int32	bet					= 4;			// 下注值
+	int64	gold				= 5;			// 金币
+	int64	cai_jin				= 6;			// 彩金
+};
+
+message SC_SceneInfo
+{
+	int32	user_id				= 1;			// 玩家id
+	int32	net_code			= 2;			// 验证码
+	int32	chair_id			= 3;			// 椅子号
+	int32	table_id			= 4;			// 0 没用上
+	tagGameData	game_Data		= 5;			// 游戏数据
+};
+
+message tagGameConfig
+{
+	int32	bet_count			= 1;			// 可以选择的个数
+	repeated int32 bet			= 2;			// 下注信息
+};
+
+
+// 游戏结果返回
+message CMD_3D_SC_Result
+{
+	int32	user_id			= 1;				// 玩家id
+	int32	bet				= 2;				// 玩家下注		押注值
+	int64	win_gold		= 3;				// 赢得金币
+	int64	com_gold		= 4;				// 下注的金币	押注值*40
+	int64	cur_gold		= 5;				// 自己的金币
+	int64	cai_jin			= 6;				//	caijin
+	int32	free_count		= 7;				// 免费次数
+	repeated int32	icon	= 8;				// 图标结果集
+};
+
+message CMD_StartBallGame
+{
+	int32	user_id				= 1;
+	int32	ret					= 2;		// 免费奖励的类型 0 没有， 1金币奖励	2 金币翻倍 
+	int64	add_gold			= 3;		// 获得的金币
+	int64	cur_gold			= 4;		// 下注金币				押注值
+	int64	cai_jin				= 5;		// 彩金
+	int32	multiple			= 6;		// 倍数
+};
+
+message CMD_3D_SC_Jackpot
+{
+	int64	jackpot_score 		= 1;		// 奖池分数
+};
