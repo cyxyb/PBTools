@@ -13,12 +13,12 @@ enum ERMGameState
 };
 
 //玩家状态
-enum ERMPlayerState
-{	
+enum PlayerState
+{
 	PS_READY		= 0;	//准备
 	PS_PLAY			= 1;	//游戏
 	PS_GIVE			= 2;	//弃牌
-	PS_TIMEOUT		= 3;	//超时
+	PS_FAIL			= 3;	//失败
 };
 
 //操作码
@@ -94,8 +94,8 @@ message RMMsgPlayerInfo
 	int32					play_status		= 2;	//玩家状态
 	int64					gold			= 3;	//自己的金币，别人的是空
 	int64					win_gold		= 4;	//输赢分
-	repeated int32			cards			= 6;	//手牌
-	repeated RMColumnInfo 	hand_group_info	= 7;	//手牌分组
+	repeated int32			cards			= 5;	//手牌
+	repeated RMColumnInfo 	hand_group_info	= 6;	//手牌分组
 }
 
 //场景消息
@@ -147,10 +147,11 @@ message RMMsgNotifyActionResp
 //玩家操作
 message RMMsgAction
 {
-	int32					act_type		= 1;	//操作标示
-	int32					dest_card		= 2;	//目标牌
-	bool					get_out_card 	= 3;	//是否拿最后一张了的牌
-	repeated RMColumnInfo 	hand_group_info	= 4;	//手牌分组	(拿牌的时候可以不传 出牌时必传)
+	int32 					chair_id		= 1;
+	int32					act_type		= 2;	//操作标示
+	int32					dest_card		= 3;	//目标牌
+	bool					get_out_card 	= 4;	//是否拿最后一张了的牌
+	repeated RMColumnInfo 	hand_group_info	= 5;	//手牌分组	(拿牌的时候可以不传 出牌时必传)
 }
 
 //玩家操作

@@ -144,32 +144,32 @@ inline bool ERMGameState_Parse(
   return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<ERMGameState>(
     ERMGameState_descriptor(), name, value);
 }
-enum ERMPlayerState : int {
+enum PlayerState : int {
   PS_READY = 0,
   PS_PLAY = 1,
   PS_GIVE = 2,
-  PS_TIMEOUT = 3,
-  ERMPlayerState_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
-  ERMPlayerState_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
+  PS_FAIL = 3,
+  PlayerState_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
+  PlayerState_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
-bool ERMPlayerState_IsValid(int value);
-constexpr ERMPlayerState ERMPlayerState_MIN = PS_READY;
-constexpr ERMPlayerState ERMPlayerState_MAX = PS_TIMEOUT;
-constexpr int ERMPlayerState_ARRAYSIZE = ERMPlayerState_MAX + 1;
+bool PlayerState_IsValid(int value);
+constexpr PlayerState PlayerState_MIN = PS_READY;
+constexpr PlayerState PlayerState_MAX = PS_FAIL;
+constexpr int PlayerState_ARRAYSIZE = PlayerState_MAX + 1;
 
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ERMPlayerState_descriptor();
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* PlayerState_descriptor();
 template<typename T>
-inline const std::string& ERMPlayerState_Name(T enum_t_value) {
-  static_assert(::std::is_same<T, ERMPlayerState>::value ||
+inline const std::string& PlayerState_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, PlayerState>::value ||
     ::std::is_integral<T>::value,
-    "Incorrect type passed to function ERMPlayerState_Name.");
+    "Incorrect type passed to function PlayerState_Name.");
   return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
-    ERMPlayerState_descriptor(), enum_t_value);
+    PlayerState_descriptor(), enum_t_value);
 }
-inline bool ERMPlayerState_Parse(
-    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, ERMPlayerState* value) {
-  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<ERMPlayerState>(
-    ERMPlayerState_descriptor(), name, value);
+inline bool PlayerState_Parse(
+    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, PlayerState* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<PlayerState>(
+    PlayerState_descriptor(), name, value);
 }
 enum ERMGameAction : int {
   InvaldAct = 0,
@@ -853,14 +853,14 @@ class RMMsgPlayerInfo PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kCardsFieldNumber = 6,
-    kHandGroupInfoFieldNumber = 7,
+    kCardsFieldNumber = 5,
+    kHandGroupInfoFieldNumber = 6,
     kChairIdFieldNumber = 1,
     kPlayStatusFieldNumber = 2,
     kGoldFieldNumber = 3,
     kWinGoldFieldNumber = 4,
   };
-  // repeated int32 cards = 6;
+  // repeated int32 cards = 5;
   int cards_size() const;
   private:
   int _internal_cards_size() const;
@@ -882,7 +882,7 @@ class RMMsgPlayerInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_cards();
 
-  // repeated .Rummy.RMColumnInfo hand_group_info = 7;
+  // repeated .Rummy.RMColumnInfo hand_group_info = 6;
   int hand_group_info_size() const;
   private:
   int _internal_hand_group_info_size() const;
@@ -1793,12 +1793,13 @@ class RMMsgAction PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kHandGroupInfoFieldNumber = 4,
-    kActTypeFieldNumber = 1,
-    kDestCardFieldNumber = 2,
-    kGetOutCardFieldNumber = 3,
+    kHandGroupInfoFieldNumber = 5,
+    kChairIdFieldNumber = 1,
+    kActTypeFieldNumber = 2,
+    kDestCardFieldNumber = 3,
+    kGetOutCardFieldNumber = 4,
   };
-  // repeated .Rummy.RMColumnInfo hand_group_info = 4;
+  // repeated .Rummy.RMColumnInfo hand_group_info = 5;
   int hand_group_info_size() const;
   private:
   int _internal_hand_group_info_size() const;
@@ -1816,7 +1817,16 @@ class RMMsgAction PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Rummy::RMColumnInfo >&
       hand_group_info() const;
 
-  // int32 act_type = 1;
+  // int32 chair_id = 1;
+  void clear_chair_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_id() const;
+  void set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_chair_id() const;
+  void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 act_type = 2;
   void clear_act_type();
   ::PROTOBUF_NAMESPACE_ID::int32 act_type() const;
   void set_act_type(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -1825,7 +1835,7 @@ class RMMsgAction PROTOBUF_FINAL :
   void _internal_set_act_type(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 dest_card = 2;
+  // int32 dest_card = 3;
   void clear_dest_card();
   ::PROTOBUF_NAMESPACE_ID::int32 dest_card() const;
   void set_dest_card(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -1834,7 +1844,7 @@ class RMMsgAction PROTOBUF_FINAL :
   void _internal_set_dest_card(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // bool get_out_card = 3;
+  // bool get_out_card = 4;
   void clear_get_out_card();
   bool get_out_card() const;
   void set_get_out_card(bool value);
@@ -1851,6 +1861,7 @@ class RMMsgAction PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Rummy::RMColumnInfo > hand_group_info_;
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 act_type_;
   ::PROTOBUF_NAMESPACE_ID::int32 dest_card_;
   bool get_out_card_;
@@ -3162,7 +3173,7 @@ inline void RMMsgPlayerInfo::set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value) 
   // @@protoc_insertion_point(field_set:Rummy.RMMsgPlayerInfo.win_gold)
 }
 
-// repeated int32 cards = 6;
+// repeated int32 cards = 5;
 inline int RMMsgPlayerInfo::_internal_cards_size() const {
   return cards_.size();
 }
@@ -3209,7 +3220,7 @@ RMMsgPlayerInfo::mutable_cards() {
   return _internal_mutable_cards();
 }
 
-// repeated .Rummy.RMColumnInfo hand_group_info = 7;
+// repeated .Rummy.RMColumnInfo hand_group_info = 6;
 inline int RMMsgPlayerInfo::_internal_hand_group_info_size() const {
   return hand_group_info_.size();
 }
@@ -3911,7 +3922,27 @@ inline void RMMsgNotifyActionResp::set_oper_time(::PROTOBUF_NAMESPACE_ID::int32 
 
 // RMMsgAction
 
-// int32 act_type = 1;
+// int32 chair_id = 1;
+inline void RMMsgAction::clear_chair_id() {
+  chair_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgAction::_internal_chair_id() const {
+  return chair_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgAction::chair_id() const {
+  // @@protoc_insertion_point(field_get:Rummy.RMMsgAction.chair_id)
+  return _internal_chair_id();
+}
+inline void RMMsgAction::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  chair_id_ = value;
+}
+inline void RMMsgAction::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_chair_id(value);
+  // @@protoc_insertion_point(field_set:Rummy.RMMsgAction.chair_id)
+}
+
+// int32 act_type = 2;
 inline void RMMsgAction::clear_act_type() {
   act_type_ = 0;
 }
@@ -3931,7 +3962,7 @@ inline void RMMsgAction::set_act_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:Rummy.RMMsgAction.act_type)
 }
 
-// int32 dest_card = 2;
+// int32 dest_card = 3;
 inline void RMMsgAction::clear_dest_card() {
   dest_card_ = 0;
 }
@@ -3951,7 +3982,7 @@ inline void RMMsgAction::set_dest_card(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:Rummy.RMMsgAction.dest_card)
 }
 
-// bool get_out_card = 3;
+// bool get_out_card = 4;
 inline void RMMsgAction::clear_get_out_card() {
   get_out_card_ = false;
 }
@@ -3971,7 +4002,7 @@ inline void RMMsgAction::set_get_out_card(bool value) {
   // @@protoc_insertion_point(field_set:Rummy.RMMsgAction.get_out_card)
 }
 
-// repeated .Rummy.RMColumnInfo hand_group_info = 4;
+// repeated .Rummy.RMColumnInfo hand_group_info = 5;
 inline int RMMsgAction::_internal_hand_group_info_size() const {
   return hand_group_info_.size();
 }
@@ -4635,10 +4666,10 @@ template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::Rummy::ERMGameState>() {
   return ::Rummy::ERMGameState_descriptor();
 }
-template <> struct is_proto_enum< ::Rummy::ERMPlayerState> : ::std::true_type {};
+template <> struct is_proto_enum< ::Rummy::PlayerState> : ::std::true_type {};
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::Rummy::ERMPlayerState>() {
-  return ::Rummy::ERMPlayerState_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< ::Rummy::PlayerState>() {
+  return ::Rummy::PlayerState_descriptor();
 }
 template <> struct is_proto_enum< ::Rummy::ERMGameAction> : ::std::true_type {};
 template <>
