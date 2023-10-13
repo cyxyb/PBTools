@@ -9579,13 +9579,13 @@ class MsgDotRechargeResp PROTOBUF_FINAL :
   void _internal_set_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int32 is_new_recharge = 1;
+  // bool is_new_recharge = 1;
   void clear_is_new_recharge();
-  ::PROTOBUF_NAMESPACE_ID::int32 is_new_recharge() const;
-  void set_is_new_recharge(::PROTOBUF_NAMESPACE_ID::int32 value);
+  bool is_new_recharge() const;
+  void set_is_new_recharge(bool value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_is_new_recharge() const;
-  void _internal_set_is_new_recharge(::PROTOBUF_NAMESPACE_ID::int32 value);
+  bool _internal_is_new_recharge() const;
+  void _internal_set_is_new_recharge(bool value);
   public:
 
   // @@protoc_insertion_point(class_scope:MsgDotRechargeResp)
@@ -9598,7 +9598,7 @@ class MsgDotRechargeResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > recharge_info_;
   mutable std::atomic<int> _recharge_info_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::int64 gold_;
-  ::PROTOBUF_NAMESPACE_ID::int32 is_new_recharge_;
+  bool is_new_recharge_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -16546,22 +16546,22 @@ inline void MsgBindInviteCodeResp::set_allocated_info(::MsgBindParentInfo* info)
 
 // MsgDotRechargeResp
 
-// int32 is_new_recharge = 1;
+// bool is_new_recharge = 1;
 inline void MsgDotRechargeResp::clear_is_new_recharge() {
-  is_new_recharge_ = 0;
+  is_new_recharge_ = false;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDotRechargeResp::_internal_is_new_recharge() const {
+inline bool MsgDotRechargeResp::_internal_is_new_recharge() const {
   return is_new_recharge_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDotRechargeResp::is_new_recharge() const {
+inline bool MsgDotRechargeResp::is_new_recharge() const {
   // @@protoc_insertion_point(field_get:MsgDotRechargeResp.is_new_recharge)
   return _internal_is_new_recharge();
 }
-inline void MsgDotRechargeResp::_internal_set_is_new_recharge(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgDotRechargeResp::_internal_set_is_new_recharge(bool value) {
   
   is_new_recharge_ = value;
 }
-inline void MsgDotRechargeResp::set_is_new_recharge(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgDotRechargeResp::set_is_new_recharge(bool value) {
   _internal_set_is_new_recharge(value);
   // @@protoc_insertion_point(field_set:MsgDotRechargeResp.is_new_recharge)
 }

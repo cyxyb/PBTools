@@ -1641,7 +1641,7 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "viteCodeResp\022\020\n\010res_code\030\001 \001(\005\022\021\n\tuser_t"
   "ype\030\002 \001(\005\022 \n\004info\030\003 \001(\0132\022.MsgBindParentI"
   "nfo\"R\n\022MsgDotRechargeResp\022\027\n\017is_new_rech"
-  "arge\030\001 \001(\005\022\014\n\004gold\030\002 \001(\003\022\025\n\rrecharge_inf"
+  "arge\030\001 \001(\010\022\014\n\004gold\030\002 \001(\003\022\025\n\rrecharge_inf"
   "o\030\003 \003(\005b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Login_2eproto_deps[1] = {
@@ -16677,7 +16677,7 @@ const char* MsgDotRechargeResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // int32 is_new_recharge = 1;
+      // bool is_new_recharge = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
           is_new_recharge_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
@@ -16729,10 +16729,10 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 is_new_recharge = 1;
+  // bool is_new_recharge = 1;
   if (this->is_new_recharge() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_is_new_recharge(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(1, this->_internal_is_new_recharge(), target);
   }
 
   // int64 gold = 2;
@@ -16788,11 +16788,9 @@ size_t MsgDotRechargeResp::ByteSizeLong() const {
         this->_internal_gold());
   }
 
-  // int32 is_new_recharge = 1;
+  // bool is_new_recharge = 1;
   if (this->is_new_recharge() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_is_new_recharge());
+    total_size += 1 + 1;
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {

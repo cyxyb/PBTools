@@ -145,7 +145,7 @@ public static partial class LoginReflection {
           "XgoVTXNnQmluZEludml0ZUNvZGVSZXNwEhAKCHJlc19jb2RlGAEgASgFEhEK",
           "CXVzZXJfdHlwZRgCIAEoBRIgCgRpbmZvGAMgASgLMhIuTXNnQmluZFBhcmVu",
           "dEluZm8iUgoSTXNnRG90UmVjaGFyZ2VSZXNwEhcKD2lzX25ld19yZWNoYXJn",
-          "ZRgBIAEoBRIMCgRnb2xkGAIgASgDEhUKDXJlY2hhcmdlX2luZm8YAyADKAVi",
+          "ZRgBIAEoCBIMCgRnb2xkGAIgASgDEhUKDXJlY2hhcmdlX2luZm8YAyADKAVi",
           "BnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
@@ -15605,12 +15605,12 @@ public sealed partial class MsgDotRechargeResp : pb::IMessage<MsgDotRechargeResp
 
   /// <summary>Field number for the "is_new_recharge" field.</summary>
   public const int IsNewRechargeFieldNumber = 1;
-  private int isNewRecharge_;
+  private bool isNewRecharge_;
   /// <summary>
   ///是否新充值用户
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public int IsNewRecharge {
+  public bool IsNewRecharge {
     get { return isNewRecharge_; }
     set {
       isNewRecharge_ = value;
@@ -15666,7 +15666,7 @@ public sealed partial class MsgDotRechargeResp : pb::IMessage<MsgDotRechargeResp
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override int GetHashCode() {
     int hash = 1;
-    if (IsNewRecharge != 0) hash ^= IsNewRecharge.GetHashCode();
+    if (IsNewRecharge != false) hash ^= IsNewRecharge.GetHashCode();
     if (Gold != 0L) hash ^= Gold.GetHashCode();
     hash ^= rechargeInfo_.GetHashCode();
     if (_unknownFields != null) {
@@ -15685,9 +15685,9 @@ public sealed partial class MsgDotRechargeResp : pb::IMessage<MsgDotRechargeResp
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     output.WriteRawMessage(this);
   #else
-    if (IsNewRecharge != 0) {
+    if (IsNewRecharge != false) {
       output.WriteRawTag(8);
-      output.WriteInt32(IsNewRecharge);
+      output.WriteBool(IsNewRecharge);
     }
     if (Gold != 0L) {
       output.WriteRawTag(16);
@@ -15703,9 +15703,9 @@ public sealed partial class MsgDotRechargeResp : pb::IMessage<MsgDotRechargeResp
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-    if (IsNewRecharge != 0) {
+    if (IsNewRecharge != false) {
       output.WriteRawTag(8);
-      output.WriteInt32(IsNewRecharge);
+      output.WriteBool(IsNewRecharge);
     }
     if (Gold != 0L) {
       output.WriteRawTag(16);
@@ -15721,8 +15721,8 @@ public sealed partial class MsgDotRechargeResp : pb::IMessage<MsgDotRechargeResp
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int CalculateSize() {
     int size = 0;
-    if (IsNewRecharge != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeInt32Size(IsNewRecharge);
+    if (IsNewRecharge != false) {
+      size += 1 + 1;
     }
     if (Gold != 0L) {
       size += 1 + pb::CodedOutputStream.ComputeInt64Size(Gold);
@@ -15739,7 +15739,7 @@ public sealed partial class MsgDotRechargeResp : pb::IMessage<MsgDotRechargeResp
     if (other == null) {
       return;
     }
-    if (other.IsNewRecharge != 0) {
+    if (other.IsNewRecharge != false) {
       IsNewRecharge = other.IsNewRecharge;
     }
     if (other.Gold != 0L) {
@@ -15761,7 +15761,7 @@ public sealed partial class MsgDotRechargeResp : pb::IMessage<MsgDotRechargeResp
           _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
           break;
         case 8: {
-          IsNewRecharge = input.ReadInt32();
+          IsNewRecharge = input.ReadBool();
           break;
         }
         case 16: {
@@ -15788,7 +15788,7 @@ public sealed partial class MsgDotRechargeResp : pb::IMessage<MsgDotRechargeResp
           _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
           break;
         case 8: {
-          IsNewRecharge = input.ReadInt32();
+          IsNewRecharge = input.ReadBool();
           break;
         }
         case 16: {
