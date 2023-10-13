@@ -46,7 +46,7 @@ struct TableStruct_Login_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[50]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[51]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -86,6 +86,9 @@ extern MsgCheckInInfoDefaultTypeInternal _MsgCheckInInfo_default_instance_;
 class MsgCommonKV;
 class MsgCommonKVDefaultTypeInternal;
 extern MsgCommonKVDefaultTypeInternal _MsgCommonKV_default_instance_;
+class MsgDotRechargeResp;
+class MsgDotRechargeRespDefaultTypeInternal;
+extern MsgDotRechargeRespDefaultTypeInternal _MsgDotRechargeResp_default_instance_;
 class MsgForgetPassword;
 class MsgForgetPasswordDefaultTypeInternal;
 extern MsgForgetPasswordDefaultTypeInternal _MsgForgetPassword_default_instance_;
@@ -215,6 +218,7 @@ template<> ::MsgBindParentInfo* Arena::CreateMaybeMessage<::MsgBindParentInfo>(A
 template<> ::MsgBindPhone* Arena::CreateMaybeMessage<::MsgBindPhone>(Arena*);
 template<> ::MsgCheckInInfo* Arena::CreateMaybeMessage<::MsgCheckInInfo>(Arena*);
 template<> ::MsgCommonKV* Arena::CreateMaybeMessage<::MsgCommonKV>(Arena*);
+template<> ::MsgDotRechargeResp* Arena::CreateMaybeMessage<::MsgDotRechargeResp>(Arena*);
 template<> ::MsgForgetPassword* Arena::CreateMaybeMessage<::MsgForgetPassword>(Arena*);
 template<> ::MsgGetAvatarInfo* Arena::CreateMaybeMessage<::MsgGetAvatarInfo>(Arena*);
 template<> ::MsgGetRank* Arena::CreateMaybeMessage<::MsgGetRank>(Arena*);
@@ -9426,6 +9430,178 @@ class MsgBindInviteCodeResp PROTOBUF_FINAL :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
+// -------------------------------------------------------------------
+
+class MsgDotRechargeResp PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgDotRechargeResp) */ {
+ public:
+  inline MsgDotRechargeResp() : MsgDotRechargeResp(nullptr) {}
+  virtual ~MsgDotRechargeResp();
+
+  MsgDotRechargeResp(const MsgDotRechargeResp& from);
+  MsgDotRechargeResp(MsgDotRechargeResp&& from) noexcept
+    : MsgDotRechargeResp() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgDotRechargeResp& operator=(const MsgDotRechargeResp& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgDotRechargeResp& operator=(MsgDotRechargeResp&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgDotRechargeResp& default_instance();
+
+  static inline const MsgDotRechargeResp* internal_default_instance() {
+    return reinterpret_cast<const MsgDotRechargeResp*>(
+               &_MsgDotRechargeResp_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    50;
+
+  friend void swap(MsgDotRechargeResp& a, MsgDotRechargeResp& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgDotRechargeResp* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgDotRechargeResp* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgDotRechargeResp* New() const final {
+    return CreateMaybeMessage<MsgDotRechargeResp>(nullptr);
+  }
+
+  MsgDotRechargeResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgDotRechargeResp>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgDotRechargeResp& from);
+  void MergeFrom(const MsgDotRechargeResp& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgDotRechargeResp* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgDotRechargeResp";
+  }
+  protected:
+  explicit MsgDotRechargeResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kRechargeInfoFieldNumber = 3,
+    kGoldFieldNumber = 2,
+    kIsNewRechargeFieldNumber = 1,
+  };
+  // repeated int32 recharge_info = 3;
+  int recharge_info_size() const;
+  private:
+  int _internal_recharge_info_size() const;
+  public:
+  void clear_recharge_info();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_recharge_info(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_recharge_info() const;
+  void _internal_add_recharge_info(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_recharge_info();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 recharge_info(int index) const;
+  void set_recharge_info(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_recharge_info(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      recharge_info() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_recharge_info();
+
+  // int64 gold = 2;
+  void clear_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 gold() const;
+  void set_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_gold() const;
+  void _internal_set_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // bool is_new_recharge = 1;
+  void clear_is_new_recharge();
+  bool is_new_recharge() const;
+  void set_is_new_recharge(bool value);
+  private:
+  bool _internal_is_new_recharge() const;
+  void _internal_set_is_new_recharge(bool value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgDotRechargeResp)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > recharge_info_;
+  mutable std::atomic<int> _recharge_info_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::int64 gold_;
+  bool is_new_recharge_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
 // ===================================================================
 
 
@@ -16366,9 +16542,102 @@ inline void MsgBindInviteCodeResp::set_allocated_info(::MsgBindParentInfo* info)
   // @@protoc_insertion_point(field_set_allocated:MsgBindInviteCodeResp.info)
 }
 
+// -------------------------------------------------------------------
+
+// MsgDotRechargeResp
+
+// bool is_new_recharge = 1;
+inline void MsgDotRechargeResp::clear_is_new_recharge() {
+  is_new_recharge_ = false;
+}
+inline bool MsgDotRechargeResp::_internal_is_new_recharge() const {
+  return is_new_recharge_;
+}
+inline bool MsgDotRechargeResp::is_new_recharge() const {
+  // @@protoc_insertion_point(field_get:MsgDotRechargeResp.is_new_recharge)
+  return _internal_is_new_recharge();
+}
+inline void MsgDotRechargeResp::_internal_set_is_new_recharge(bool value) {
+  
+  is_new_recharge_ = value;
+}
+inline void MsgDotRechargeResp::set_is_new_recharge(bool value) {
+  _internal_set_is_new_recharge(value);
+  // @@protoc_insertion_point(field_set:MsgDotRechargeResp.is_new_recharge)
+}
+
+// int64 gold = 2;
+inline void MsgDotRechargeResp::clear_gold() {
+  gold_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDotRechargeResp::_internal_gold() const {
+  return gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDotRechargeResp::gold() const {
+  // @@protoc_insertion_point(field_get:MsgDotRechargeResp.gold)
+  return _internal_gold();
+}
+inline void MsgDotRechargeResp::_internal_set_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  gold_ = value;
+}
+inline void MsgDotRechargeResp::set_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_gold(value);
+  // @@protoc_insertion_point(field_set:MsgDotRechargeResp.gold)
+}
+
+// repeated int32 recharge_info = 3;
+inline int MsgDotRechargeResp::_internal_recharge_info_size() const {
+  return recharge_info_.size();
+}
+inline int MsgDotRechargeResp::recharge_info_size() const {
+  return _internal_recharge_info_size();
+}
+inline void MsgDotRechargeResp::clear_recharge_info() {
+  recharge_info_.Clear();
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDotRechargeResp::_internal_recharge_info(int index) const {
+  return recharge_info_.Get(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDotRechargeResp::recharge_info(int index) const {
+  // @@protoc_insertion_point(field_get:MsgDotRechargeResp.recharge_info)
+  return _internal_recharge_info(index);
+}
+inline void MsgDotRechargeResp::set_recharge_info(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  recharge_info_.Set(index, value);
+  // @@protoc_insertion_point(field_set:MsgDotRechargeResp.recharge_info)
+}
+inline void MsgDotRechargeResp::_internal_add_recharge_info(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  recharge_info_.Add(value);
+}
+inline void MsgDotRechargeResp::add_recharge_info(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_recharge_info(value);
+  // @@protoc_insertion_point(field_add:MsgDotRechargeResp.recharge_info)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+MsgDotRechargeResp::_internal_recharge_info() const {
+  return recharge_info_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+MsgDotRechargeResp::recharge_info() const {
+  // @@protoc_insertion_point(field_list:MsgDotRechargeResp.recharge_info)
+  return _internal_recharge_info();
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+MsgDotRechargeResp::_internal_mutable_recharge_info() {
+  return &recharge_info_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+MsgDotRechargeResp::mutable_recharge_info() {
+  // @@protoc_insertion_point(field_mutable_list:MsgDotRechargeResp.recharge_info)
+  return _internal_mutable_recharge_info();
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
