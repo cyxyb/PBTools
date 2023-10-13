@@ -115,7 +115,8 @@ enum EMsgIDLogin
 	MsgIDShare_BindInviteCodeResp				= 101;		//绑定邀请码返回(MsgBindInviteCodeResp)
 	MsgIDShare_QueryBindInfo					= 102;		//查询绑定信息(MsgCommonBool)
 	MsgIDShare_QueryBindInfoResp				= 103;		//查询绑定信息返回(MsgBindParentInfo)
-
+	MsgIDRecharge_DotRechargeRecord				= 104;		//打点充值记录(MsgCommonBool)
+	MsgIDRecharge_DotRechargeRecordResp			= 105;		//打点充值记录返回(MsgDotRechargeResp)
 }
 
 enum EMsgIDGame

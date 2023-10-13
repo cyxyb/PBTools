@@ -144,7 +144,9 @@ public static partial class LoginReflection {
           "ASgJEhQKDGF2YXRhcl9mcmFtZRgDIAEoBRIRCgluaWNrX25hbWUYBCABKAki",
           "XgoVTXNnQmluZEludml0ZUNvZGVSZXNwEhAKCHJlc19jb2RlGAEgASgFEhEK",
           "CXVzZXJfdHlwZRgCIAEoBRIgCgRpbmZvGAMgASgLMhIuTXNnQmluZFBhcmVu",
-          "dEluZm9iBnByb3RvMw=="));
+          "dEluZm8iUgoSTXNnRG90UmVjaGFyZ2VSZXNwEhcKD2lzX25ld19yZWNoYXJn",
+          "ZRgBIAEoBRIMCgRnb2xkGAIgASgDEhUKDXJlY2hhcmdlX2luZm8YAyADKAVi",
+          "BnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -197,7 +199,8 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgSubagentInformation), global::MsgSubagentInformation.Parser, new[]{ "AgentNickname", "AgentUserId", "AgentType", "TotalShiftTo", "TotalRollOut", "VipLevel" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTtotalSubagentInformation), global::MsgTtotalSubagentInformation.Parser, new[]{ "AgentInfo" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBindParentInfo), global::MsgBindParentInfo.Parser, new[]{ "UserId", "Avatar", "AvatarFrame", "NickName" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBindInviteCodeResp), global::MsgBindInviteCodeResp.Parser, new[]{ "ResCode", "UserType", "Info" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBindInviteCodeResp), global::MsgBindInviteCodeResp.Parser, new[]{ "ResCode", "UserType", "Info" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgDotRechargeResp), global::MsgDotRechargeResp.Parser, new[]{ "IsNewRecharge", "Gold", "RechargeInfo" }, null, null, null, null)
         }));
   }
   #endregion
@@ -15548,6 +15551,253 @@ public sealed partial class MsgBindInviteCodeResp : pb::IMessage<MsgBindInviteCo
             Info = new global::MsgBindParentInfo();
           }
           input.ReadMessage(Info);
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///打点充值返回
+/// </summary>
+public sealed partial class MsgDotRechargeResp : pb::IMessage<MsgDotRechargeResp>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgDotRechargeResp> _parser = new pb::MessageParser<MsgDotRechargeResp>(() => new MsgDotRechargeResp());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgDotRechargeResp> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[50]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgDotRechargeResp() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgDotRechargeResp(MsgDotRechargeResp other) : this() {
+    isNewRecharge_ = other.isNewRecharge_;
+    gold_ = other.gold_;
+    rechargeInfo_ = other.rechargeInfo_.Clone();
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgDotRechargeResp Clone() {
+    return new MsgDotRechargeResp(this);
+  }
+
+  /// <summary>Field number for the "is_new_recharge" field.</summary>
+  public const int IsNewRechargeFieldNumber = 1;
+  private int isNewRecharge_;
+  /// <summary>
+  ///是否新充值用户
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int IsNewRecharge {
+    get { return isNewRecharge_; }
+    set {
+      isNewRecharge_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "gold" field.</summary>
+  public const int GoldFieldNumber = 2;
+  private long gold_;
+  /// <summary>
+  ///玩家类型
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public long Gold {
+    get { return gold_; }
+    set {
+      gold_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "recharge_info" field.</summary>
+  public const int RechargeInfoFieldNumber = 3;
+  private static readonly pb::FieldCodec<int> _repeated_rechargeInfo_codec
+      = pb::FieldCodec.ForInt32(26);
+  private readonly pbc::RepeatedField<int> rechargeInfo_ = new pbc::RepeatedField<int>();
+  /// <summary>
+  ///充值数量
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<int> RechargeInfo {
+    get { return rechargeInfo_; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgDotRechargeResp);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgDotRechargeResp other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (IsNewRecharge != other.IsNewRecharge) return false;
+    if (Gold != other.Gold) return false;
+    if(!rechargeInfo_.Equals(other.rechargeInfo_)) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (IsNewRecharge != 0) hash ^= IsNewRecharge.GetHashCode();
+    if (Gold != 0L) hash ^= Gold.GetHashCode();
+    hash ^= rechargeInfo_.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (IsNewRecharge != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(IsNewRecharge);
+    }
+    if (Gold != 0L) {
+      output.WriteRawTag(16);
+      output.WriteInt64(Gold);
+    }
+    rechargeInfo_.WriteTo(output, _repeated_rechargeInfo_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (IsNewRecharge != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(IsNewRecharge);
+    }
+    if (Gold != 0L) {
+      output.WriteRawTag(16);
+      output.WriteInt64(Gold);
+    }
+    rechargeInfo_.WriteTo(ref output, _repeated_rechargeInfo_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (IsNewRecharge != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(IsNewRecharge);
+    }
+    if (Gold != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(Gold);
+    }
+    size += rechargeInfo_.CalculateSize(_repeated_rechargeInfo_codec);
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgDotRechargeResp other) {
+    if (other == null) {
+      return;
+    }
+    if (other.IsNewRecharge != 0) {
+      IsNewRecharge = other.IsNewRecharge;
+    }
+    if (other.Gold != 0L) {
+      Gold = other.Gold;
+    }
+    rechargeInfo_.Add(other.rechargeInfo_);
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          IsNewRecharge = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          Gold = input.ReadInt64();
+          break;
+        }
+        case 26:
+        case 24: {
+          rechargeInfo_.AddEntriesFrom(input, _repeated_rechargeInfo_codec);
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          IsNewRecharge = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          Gold = input.ReadInt64();
+          break;
+        }
+        case 26:
+        case 24: {
+          rechargeInfo_.AddEntriesFrom(ref input, _repeated_rechargeInfo_codec);
           break;
         }
       }

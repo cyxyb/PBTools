@@ -446,11 +446,18 @@ message MsgBindParentInfo
 	string		nick_name		= 4;		//昵称
 }
 
-
 //绑定邀请码返回
 message MsgBindInviteCodeResp
 {
 	int32		res_code	= 1;		//返回码
 	int32		user_type	= 2;		//玩家类型
 	MsgBindParentInfo info	= 3;		//绑定上级信息
+}
+
+//打点充值返回
+message MsgDotRechargeResp
+{
+	int32			is_new_recharge	= 1;	//是否新充值用户
+	int64			gold			= 2;	//玩家类型
+	repeated int32 	recharge_info	= 3;	//充值数量
 }
