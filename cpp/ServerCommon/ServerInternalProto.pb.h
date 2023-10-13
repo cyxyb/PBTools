@@ -46,7 +46,7 @@ struct TableStruct_ServerInternalProto_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[50]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[51]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -134,6 +134,9 @@ extern MsgDBRegisterLoginDefaultTypeInternal _MsgDBRegisterLogin_default_instanc
 class MsgDBSubagentInformation;
 class MsgDBSubagentInformationDefaultTypeInternal;
 extern MsgDBSubagentInformationDefaultTypeInternal _MsgDBSubagentInformation_default_instance_;
+class MsgDBSyncDotData;
+class MsgDBSyncDotDataDefaultTypeInternal;
+extern MsgDBSyncDotDataDefaultTypeInternal _MsgDBSyncDotData_default_instance_;
 class MsgDBTransferOperate;
 class MsgDBTransferOperateDefaultTypeInternal;
 extern MsgDBTransferOperateDefaultTypeInternal _MsgDBTransferOperate_default_instance_;
@@ -231,6 +234,7 @@ template<> ::MsgDBQueryTransferTax* Arena::CreateMaybeMessage<::MsgDBQueryTransf
 template<> ::MsgDBRegisterGame* Arena::CreateMaybeMessage<::MsgDBRegisterGame>(Arena*);
 template<> ::MsgDBRegisterLogin* Arena::CreateMaybeMessage<::MsgDBRegisterLogin>(Arena*);
 template<> ::MsgDBSubagentInformation* Arena::CreateMaybeMessage<::MsgDBSubagentInformation>(Arena*);
+template<> ::MsgDBSyncDotData* Arena::CreateMaybeMessage<::MsgDBSyncDotData>(Arena*);
 template<> ::MsgDBTransferOperate* Arena::CreateMaybeMessage<::MsgDBTransferOperate>(Arena*);
 template<> ::MsgDBTransferReceive* Arena::CreateMaybeMessage<::MsgDBTransferReceive>(Arena*);
 template<> ::MsgDBTransferTakeOut* Arena::CreateMaybeMessage<::MsgDBTransferTakeOut>(Arena*);
@@ -9115,6 +9119,153 @@ class MsgDBBindInviteCode PROTOBUF_FINAL :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
+// -------------------------------------------------------------------
+
+class MsgDBSyncDotData PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgDBSyncDotData) */ {
+ public:
+  inline MsgDBSyncDotData() : MsgDBSyncDotData(nullptr) {}
+  virtual ~MsgDBSyncDotData();
+
+  MsgDBSyncDotData(const MsgDBSyncDotData& from);
+  MsgDBSyncDotData(MsgDBSyncDotData&& from) noexcept
+    : MsgDBSyncDotData() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgDBSyncDotData& operator=(const MsgDBSyncDotData& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgDBSyncDotData& operator=(MsgDBSyncDotData&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgDBSyncDotData& default_instance();
+
+  static inline const MsgDBSyncDotData* internal_default_instance() {
+    return reinterpret_cast<const MsgDBSyncDotData*>(
+               &_MsgDBSyncDotData_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    50;
+
+  friend void swap(MsgDBSyncDotData& a, MsgDBSyncDotData& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgDBSyncDotData* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgDBSyncDotData* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgDBSyncDotData* New() const final {
+    return CreateMaybeMessage<MsgDBSyncDotData>(nullptr);
+  }
+
+  MsgDBSyncDotData* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgDBSyncDotData>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgDBSyncDotData& from);
+  void MergeFrom(const MsgDBSyncDotData& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgDBSyncDotData* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgDBSyncDotData";
+  }
+  protected:
+  explicit MsgDBSyncDotData(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kUserIdFieldNumber = 1,
+    kTypeFieldNumber = 2,
+  };
+  // int32 user_id = 1;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 type = 2;
+  void clear_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 type() const;
+  void set_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_type() const;
+  void _internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgDBSyncDotData)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 type_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
 // ===================================================================
 
 
@@ -15108,9 +15259,55 @@ inline void MsgDBBindInviteCode::set_allocated_invite_code(std::string* invite_c
   // @@protoc_insertion_point(field_set_allocated:MsgDBBindInviteCode.invite_code)
 }
 
+// -------------------------------------------------------------------
+
+// MsgDBSyncDotData
+
+// int32 user_id = 1;
+inline void MsgDBSyncDotData::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBSyncDotData::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBSyncDotData::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBSyncDotData.user_id)
+  return _internal_user_id();
+}
+inline void MsgDBSyncDotData::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgDBSyncDotData::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBSyncDotData.user_id)
+}
+
+// int32 type = 2;
+inline void MsgDBSyncDotData::clear_type() {
+  type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBSyncDotData::_internal_type() const {
+  return type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBSyncDotData::type() const {
+  // @@protoc_insertion_point(field_get:MsgDBSyncDotData.type)
+  return _internal_type();
+}
+inline void MsgDBSyncDotData::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  type_ = value;
+}
+inline void MsgDBSyncDotData::set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_type(value);
+  // @@protoc_insertion_point(field_set:MsgDBSyncDotData.type)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

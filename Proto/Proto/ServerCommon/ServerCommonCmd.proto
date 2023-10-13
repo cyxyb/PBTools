@@ -177,6 +177,7 @@ enum EMsgIDDB
 	DB2LOGIN_QueryBindInfoResp			= 1071;	//查询绑定上级信息返回
 	LOGIN2DB_DotRechargeRecord			= 1072;	//充值打点
 	DB2LOGIN_DotRechargeRecordResp		= 1073;	//充值打点返回
+	LOGIN2DB_SyncDotData				= 1074;	//同步打点数据
 	//2001-3000 GameServer2DB	
 	GAME2DB_Login						= 2001;	//玩家登录游戏
 	DB2GAME_LoginResp					= 2002;	//玩家登录游戏返回

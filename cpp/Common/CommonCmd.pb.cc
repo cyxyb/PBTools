@@ -25,7 +25,7 @@ const char descriptor_table_protodef_CommonCmd_2eproto[] PROTOBUF_SECTION_VARIAB
   "\n\017CommonCmd.proto*\206\001\n\nEMsgIDMain\022\023\n\017EMsg"
   "IDMain_Null\020\000\022\036\n\031EMsgIDMain_Login_UserIn"
   "fo\020\351\007\022\024\n\017EMsgIDMain_Game\020\321\017\022\027\n\022EMsgIDMai"
-  "n_SubGame\020\322\017\022\024\n\017EMsgIDMain_Chat\020\271\027*\357\032\n\013E"
+  "n_SubGame\020\322\017\022\024\n\017EMsgIDMain_Chat\020\271\027*\216\033\n\013E"
   "MsgIDLogin\022\023\n\017MsgIDLogin_Null\020\000\022\024\n\020MsgID"
   "Login_Login\020\001\022\030\n\024MsgIDLogin_LoginResp\020\002\022"
   "\035\n\031MsgIDLogin_ModifyNickName\020\003\022!\n\035MsgIDL"
@@ -111,32 +111,33 @@ const char descriptor_table_protodef_CommonCmd_2eproto[] PROTOBUF_SECTION_VARIAB
   "viteCodeResp\020e\022\034\n\030MsgIDShare_QueryBindIn"
   "fo\020f\022 \n\034MsgIDShare_QueryBindInfoResp\020g\022#"
   "\n\037MsgIDRecharge_DotRechargeRecord\020h\022\'\n#M"
-  "sgIDRecharge_DotRechargeRecordResp\020i*\212\005\n"
-  "\nEMsgIDGame\022\022\n\016MsgIDGame_Null\020\000\022\024\n\017MsgID"
-  "Game_Login\020\351\007\022\030\n\023MsgIDGame_LoginResp\020\352\007\022"
-  "\036\n\031MsgIDGame_SqueezeSeatResp\020\353\007\022\025\n\020MsgID"
-  "Game_Logout\020\354\007\022\032\n\025MsgIDGame_AutoSitDown\020"
-  "\355\007\022\032\n\025MsgIDGame_SitDownResp\020\356\007\022!\n\034MsgIDG"
-  "ame_SyncPlayerInfoResp\020\357\007\022&\n!MsgIDGame_N"
-  "otifyPlayerStandUpResp\020\360\007\022#\n\036MsgIDGame_S"
-  "yncPlayersScoreResp\020\361\007\022\034\n\027MsgIDGame_Send"
-  "GameSence\020\362\007\022 \n\033MsgIDGame_SendGameSenceR"
-  "esp\020\363\007\022 \n\033MsgIDGame_NotifyMessageResp\020\364\007"
-  "\022\031\n\024MsgIDGame_CreateRoom\020\365\007\022\027\n\022MsgIDGame"
-  "_JoinRoom\020\366\007\022\032\n\025MsgIDGame_QueryRecord\020\367\007"
-  "\022#\n\036MsgIDGame_QueryRoundRecordResp\020\370\007\022!\n"
-  "\034MsgIDGame_QueryDayRecordResp\020\371\007\022\033\n\026MsgI"
-  "DGame_AddOneRecord\020\372\007\022&\n!MsgIDGame_Notif"
-  "yPlayerOfflineResp\020\373\007\022\032\n\025MsgIDGame_Chang"
-  "eTable\020\374\007*\273\002\n\nEMsgIDChat\022\022\n\016MsgIDChat_Nu"
-  "ll\020\000\022\024\n\017MsgIDChat_Login\020\321\017\022\030\n\023MsgIDChat_"
-  "LoginResp\020\322\017\022\031\n\024MsgIDChat_LogoutResp\020\323\017\022"
-  "\034\n\027MsgIDChat_SendNormalMsg\020\324\017\022&\n!MsgIDCh"
-  "at_NotifyChatNormalMsgResp\020\325\017\022\035\n\030MsgIDCh"
-  "at_SendTrumpetMsg\020\326\017\022\'\n\"MsgIDChat_Notify"
-  "ChatTrumpetMsgResp\020\327\017\022\037\n\032MsgIDChat_SyncU"
-  "serInfoResp\020\330\017\022\037\n\032MsgIDChat_SetLilitChat"
-  "Resp\020\331\017b\006proto3"
+  "sgIDRecharge_DotRechargeRecordResp\020i\022\035\n\031"
+  "MsgIDRecharge_SyncDotData\020j*\212\005\n\nEMsgIDGa"
+  "me\022\022\n\016MsgIDGame_Null\020\000\022\024\n\017MsgIDGame_Logi"
+  "n\020\351\007\022\030\n\023MsgIDGame_LoginResp\020\352\007\022\036\n\031MsgIDG"
+  "ame_SqueezeSeatResp\020\353\007\022\025\n\020MsgIDGame_Logo"
+  "ut\020\354\007\022\032\n\025MsgIDGame_AutoSitDown\020\355\007\022\032\n\025Msg"
+  "IDGame_SitDownResp\020\356\007\022!\n\034MsgIDGame_SyncP"
+  "layerInfoResp\020\357\007\022&\n!MsgIDGame_NotifyPlay"
+  "erStandUpResp\020\360\007\022#\n\036MsgIDGame_SyncPlayer"
+  "sScoreResp\020\361\007\022\034\n\027MsgIDGame_SendGameSence"
+  "\020\362\007\022 \n\033MsgIDGame_SendGameSenceResp\020\363\007\022 \n"
+  "\033MsgIDGame_NotifyMessageResp\020\364\007\022\031\n\024MsgID"
+  "Game_CreateRoom\020\365\007\022\027\n\022MsgIDGame_JoinRoom"
+  "\020\366\007\022\032\n\025MsgIDGame_QueryRecord\020\367\007\022#\n\036MsgID"
+  "Game_QueryRoundRecordResp\020\370\007\022!\n\034MsgIDGam"
+  "e_QueryDayRecordResp\020\371\007\022\033\n\026MsgIDGame_Add"
+  "OneRecord\020\372\007\022&\n!MsgIDGame_NotifyPlayerOf"
+  "flineResp\020\373\007\022\032\n\025MsgIDGame_ChangeTable\020\374\007"
+  "*\273\002\n\nEMsgIDChat\022\022\n\016MsgIDChat_Null\020\000\022\024\n\017M"
+  "sgIDChat_Login\020\321\017\022\030\n\023MsgIDChat_LoginResp"
+  "\020\322\017\022\031\n\024MsgIDChat_LogoutResp\020\323\017\022\034\n\027MsgIDC"
+  "hat_SendNormalMsg\020\324\017\022&\n!MsgIDChat_Notify"
+  "ChatNormalMsgResp\020\325\017\022\035\n\030MsgIDChat_SendTr"
+  "umpetMsg\020\326\017\022\'\n\"MsgIDChat_NotifyChatTrump"
+  "etMsgResp\020\327\017\022\037\n\032MsgIDChat_SyncUserInfoRe"
+  "sp\020\330\017\022\037\n\032MsgIDChat_SetLilitChatResp\020\331\017b\006"
+  "proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_CommonCmd_2eproto_deps[1] = {
 };
@@ -144,7 +145,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Com
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_CommonCmd_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_CommonCmd_2eproto = {
-  false, false, descriptor_table_protodef_CommonCmd_2eproto, "CommonCmd.proto", 4575,
+  false, false, descriptor_table_protodef_CommonCmd_2eproto, "CommonCmd.proto", 4606,
   &descriptor_table_CommonCmd_2eproto_once, descriptor_table_CommonCmd_2eproto_sccs, descriptor_table_CommonCmd_2eproto_deps, 0, 0,
   schemas, file_default_instances, TableStruct_CommonCmd_2eproto::offsets,
   file_level_metadata_CommonCmd_2eproto, 0, file_level_enum_descriptors_CommonCmd_2eproto, file_level_service_descriptors_CommonCmd_2eproto,
@@ -281,6 +282,7 @@ bool EMsgIDLogin_IsValid(int value) {
     case 103:
     case 104:
     case 105:
+    case 106:
       return true;
     default:
       return false;
