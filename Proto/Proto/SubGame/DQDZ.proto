@@ -10,7 +10,7 @@ enum EMsgIDDQDZServer
 	SUB_CS_REQUEST_CAI_JIN		= 2;	//(CMD_3D_CS_RequestCaiJin)
 	SUB_SC_GAME_START			= 3;	//启动游戏 （没用）
 	SUB_SC_GAME_OVER			= 4; 	//游戏结束
-	SUB_SC_UPDATE_PRIZE_POOL 	= 5;	//奖池分数CMD_3D_SC_Jackpot
+	SUB_SC_UPDATE_PRIZE_POOL 	= 5;	//奖池分数(MsgCommonN64)
 	SUB_SC_GAME_CONFIG			= 6;	//tagGameConfig
 	SUB_SC_GAME_DATA			= 7;	//SC_SceneInfo
 	SUB_SC_START_GAME			= 8;	//CMD_3D_SC_Result
@@ -82,9 +82,4 @@ message CMD_StartBallGame
 	int64	cur_gold			= 4;		// 下注金币				押注值
 	int64	cai_jin				= 5;		// 彩金
 	int32	multiple			= 6;		// 倍数
-};
-
-message CMD_3D_SC_Jackpot
-{
-	int64	jackpot_score 		= 1;		// 奖池分数
 };
