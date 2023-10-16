@@ -58,10 +58,6 @@ class RMMsgActionChoiceDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<RMMsgActionChoice> _instance;
 } _RMMsgActionChoice_default_instance_;
-class RMMsgGiveUpRespDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<RMMsgGiveUpResp> _instance;
-} _RMMsgGiveUpResp_default_instance_;
 class RMMsgGameResultDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<RMMsgGameResult> _instance;
@@ -156,19 +152,6 @@ static void InitDefaultsscc_info_RMMsgGameStartResp_Rummy_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RMMsgGameStartResp_Rummy_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_RMMsgGameStartResp_Rummy_2eproto}, {}};
 
-static void InitDefaultsscc_info_RMMsgGiveUpResp_Rummy_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::Rummy::_RMMsgGiveUpResp_default_instance_;
-    new (ptr) ::Rummy::RMMsgGiveUpResp();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RMMsgGiveUpResp_Rummy_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_RMMsgGiveUpResp_Rummy_2eproto}, {}};
-
 static void InitDefaultsscc_info_RMMsgHandCards_Rummy_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -262,7 +245,7 @@ static void InitDefaultsscc_info_RMMsgTableState_Rummy_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RMMsgTableState_Rummy_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_RMMsgTableState_Rummy_2eproto}, {}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Rummy_2eproto[14];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Rummy_2eproto[13];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_Rummy_2eproto[5];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_Rummy_2eproto = nullptr;
 
@@ -372,14 +355,6 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Rummy_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgActionChoice, choices_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgActionChoice, determined_action_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGiveUpResp, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGiveUpResp, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGiveUpResp, loss_gold_),
-  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGiveUpResp, drop_multiple_),
-  ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameResult, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
@@ -413,10 +388,9 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 73, -1, sizeof(::Rummy::RMMsgAction)},
   { 83, -1, sizeof(::Rummy::RMMsgActionResp)},
   { 95, -1, sizeof(::Rummy::RMMsgActionChoice)},
-  { 104, -1, sizeof(::Rummy::RMMsgGiveUpResp)},
-  { 112, -1, sizeof(::Rummy::RMMsgGameResult)},
-  { 120, -1, sizeof(::Rummy::RMMsgNotifyTrusteeship)},
-  { 127, -1, sizeof(::Rummy::RMMsgNotifyPlayerAct)},
+  { 104, -1, sizeof(::Rummy::RMMsgGameResult)},
+  { 112, -1, sizeof(::Rummy::RMMsgNotifyTrusteeship)},
+  { 119, -1, sizeof(::Rummy::RMMsgNotifyPlayerAct)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -430,7 +404,6 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Rummy::_RMMsgAction_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Rummy::_RMMsgActionResp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Rummy::_RMMsgActionChoice_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Rummy::_RMMsgGiveUpResp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Rummy::_RMMsgGameResult_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Rummy::_RMMsgNotifyTrusteeship_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Rummy::_RMMsgNotifyPlayerAct_default_instance_),
@@ -472,52 +445,48 @@ const char descriptor_table_protodef_Rummy_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "\022\030\n\020determined_level\030\001 \001(\005\022\024\n\014is_determi"
   "ne\030\002 \001(\010\022#\n\007choices\030\003 \003(\0132\022.Rummy.RMMsgA"
   "ction\022-\n\021determined_action\030\004 \001(\0132\022.Rummy"
-  ".RMMsgAction\"M\n\017RMMsgGiveUpResp\022\020\n\010chair"
-  "_id\030\001 \001(\005\022\021\n\tloss_gold\030\002 \001(\005\022\025\n\rdrop_mul"
-  "tiple\030\003 \001(\r\"c\n\017RMMsgGameResult\022\020\n\010game_t"
-  "ax\030\001 \001(\005\022+\n\013player_info\030\002 \003(\0132\026.Rummy.RM"
-  "MsgPlayerInfo\022\021\n\tend_state\030\003 \001(\005\"D\n\026RMMs"
-  "gNotifyTrusteeship\022\022\n\nseat_index\030\001 \001(\005\022\026"
-  "\n\016is_trusteeship\030\002 \001(\010\"5\n\024RMMsgNotifyPla"
-  "yerAct\022\020\n\010chair_id\030\001 \001(\005\022\013\n\003act\030\002 \001(\005*d\n"
-  "\014ERMGameState\022\017\n\013GS_TP_READY\020\000\022\016\n\nGS_TP_"
-  "DEAL\020\001\022\021\n\rGS_TP_PLAYING\020\002\022\016\n\nGS_TP_SHOW\020"
-  "\003\022\020\n\014GS_TP_RESULT\020\004*d\n\013PlayerState\022\014\n\010PS"
-  "_READY\020\000\022\013\n\007PS_PLAY\020\001\022\013\n\007PS_GIVE\020\002\022\013\n\007PS"
-  "_FAIL\020\003\022\020\n\014PS_SORT_CARD\020\004\022\016\n\nPS_SHOW_HU\020"
-  "\005*b\n\rERMGameAction\022\r\n\tInvaldAct\020\000\022\014\n\010Dro"
-  "pCard\020\001\022\n\n\006NaCard\020\002\022\013\n\007ChuCard\020\004\022\r\n\tSort"
-  "sCard\020\010\022\014\n\010ShowCard\020\020*b\n\016ERMColCardType\022"
-  "\016\n\nCOL_SINGLE\020\000\022\016\n\nCOL_BAO_ZI\020\001\022\020\n\014COL_S"
-  "HUN_ZHI\020\002\022\021\n\rCOL_QING_SHUN\020\003\022\013\n\007COL_MAX\020"
-  "\004*\211\005\n\017ERMMsgIDSubGame\022\025\n\021MsgIDSubGame_Nu"
-  "ll\020\000\022\036\n\032MsgIDSubGame_GameStartResp\020\001\022!\n\035"
-  "MsgIDSubGame_NotifyActionResp\020\002\022\027\n\023MsgID"
-  "SubGame_Action\020\003\022\033\n\027MsgIDSubGame_ActionR"
-  "esp\020\004\022\033\n\027MsgIDSubGame_GiveUpResp\020\005\022\037\n\033Ms"
-  "gIDSubGame_GameResultResp\020\006\022 \n\034MsgIDSubG"
-  "ame_NotifyStateResp\020\n\022\034\n\030MsgIDSubGame_Ti"
-  "meOutResp\020\013\022\035\n\031MsgIDSubGame_TimeOutReady"
-  "\020\014\022!\n\035MsgIDSubGame_TimeOutReadyResp\020\r\022 \n"
-  "\034MsgIDSubGame_TimeOutKickResp\020\016\022&\n\"MsgID"
-  "SubGame_NotifyTrusteeshipResp\020\017\022&\n\"MsgID"
-  "SubGame_NotifySystemCheatResp\020\024\022#\n\037MsgID"
-  "SubGame_NotifyCardTypeResp\020\025\022 \n\034MsgIDSub"
-  "Game_NotifyIsMaxResp\020\026\022\'\n#MsgIDSubGame_N"
-  "otifyRemainDoubleResp\020\027\022 \n\034MsgIDSubGame_"
-  "NotifyRoundResp\020\030\022\"\n\036MsgIDSubGame_Notify"
-  "LastActResp\020\031b\006proto3"
+  ".RMMsgAction\"c\n\017RMMsgGameResult\022\020\n\010game_"
+  "tax\030\001 \001(\005\022+\n\013player_info\030\002 \003(\0132\026.Rummy.R"
+  "MMsgPlayerInfo\022\021\n\tend_state\030\003 \001(\005\"D\n\026RMM"
+  "sgNotifyTrusteeship\022\022\n\nseat_index\030\001 \001(\005\022"
+  "\026\n\016is_trusteeship\030\002 \001(\010\"5\n\024RMMsgNotifyPl"
+  "ayerAct\022\020\n\010chair_id\030\001 \001(\005\022\013\n\003act\030\002 \001(\005*d"
+  "\n\014ERMGameState\022\017\n\013GS_TP_READY\020\000\022\016\n\nGS_TP"
+  "_DEAL\020\001\022\021\n\rGS_TP_PLAYING\020\002\022\016\n\nGS_TP_SHOW"
+  "\020\003\022\020\n\014GS_TP_RESULT\020\004*d\n\013PlayerState\022\014\n\010P"
+  "S_READY\020\000\022\013\n\007PS_PLAY\020\001\022\013\n\007PS_GIVE\020\002\022\013\n\007P"
+  "S_FAIL\020\003\022\020\n\014PS_SORT_CARD\020\004\022\016\n\nPS_SHOW_HU"
+  "\020\005*b\n\rERMGameAction\022\r\n\tInvaldAct\020\000\022\014\n\010Dr"
+  "opCard\020\001\022\n\n\006NaCard\020\002\022\013\n\007ChuCard\020\004\022\r\n\tSor"
+  "tsCard\020\010\022\014\n\010ShowCard\020\020*b\n\016ERMColCardType"
+  "\022\016\n\nCOL_SINGLE\020\000\022\016\n\nCOL_BAO_ZI\020\001\022\020\n\014COL_"
+  "SHUN_ZHI\020\002\022\021\n\rCOL_QING_SHUN\020\003\022\013\n\007COL_MAX"
+  "\020\004*\354\004\n\017ERMMsgIDSubGame\022\025\n\021MsgIDSubGame_N"
+  "ull\020\000\022\036\n\032MsgIDSubGame_GameStartResp\020\001\022!\n"
+  "\035MsgIDSubGame_NotifyActionResp\020\002\022\027\n\023MsgI"
+  "DSubGame_Action\020\003\022\033\n\027MsgIDSubGame_Action"
+  "Resp\020\004\022\037\n\033MsgIDSubGame_GameResultResp\020\005\022"
+  " \n\034MsgIDSubGame_NotifyStateResp\020\006\022\034\n\030Msg"
+  "IDSubGame_TimeOutResp\020\013\022\035\n\031MsgIDSubGame_"
+  "TimeOutReady\020\014\022!\n\035MsgIDSubGame_TimeOutRe"
+  "adyResp\020\r\022 \n\034MsgIDSubGame_TimeOutKickRes"
+  "p\020\016\022&\n\"MsgIDSubGame_NotifyTrusteeshipRes"
+  "p\020\017\022&\n\"MsgIDSubGame_NotifySystemCheatRes"
+  "p\020\024\022#\n\037MsgIDSubGame_NotifyCardTypeResp\020\025"
+  "\022 \n\034MsgIDSubGame_NotifyIsMaxResp\020\026\022\'\n#Ms"
+  "gIDSubGame_NotifyRemainDoubleResp\020\027\022 \n\034M"
+  "sgIDSubGame_NotifyRoundResp\020\030\022\"\n\036MsgIDSu"
+  "bGame_NotifyLastActResp\020\031b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Rummy_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Rummy_2eproto_sccs[14] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Rummy_2eproto_sccs[13] = {
   &scc_info_RMColumnInfo_Rummy_2eproto.base,
   &scc_info_RMMsgAction_Rummy_2eproto.base,
   &scc_info_RMMsgActionChoice_Rummy_2eproto.base,
   &scc_info_RMMsgActionResp_Rummy_2eproto.base,
   &scc_info_RMMsgGameResult_Rummy_2eproto.base,
   &scc_info_RMMsgGameStartResp_Rummy_2eproto.base,
-  &scc_info_RMMsgGiveUpResp_Rummy_2eproto.base,
   &scc_info_RMMsgHandCards_Rummy_2eproto.base,
   &scc_info_RMMsgNotifyActionResp_Rummy_2eproto.base,
   &scc_info_RMMsgNotifyPlayerAct_Rummy_2eproto.base,
@@ -528,10 +497,10 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Rum
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Rummy_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Rummy_2eproto = {
-  false, false, descriptor_table_protodef_Rummy_2eproto, "Rummy.proto", 2781,
-  &descriptor_table_Rummy_2eproto_once, descriptor_table_Rummy_2eproto_sccs, descriptor_table_Rummy_2eproto_deps, 14, 0,
+  false, false, descriptor_table_protodef_Rummy_2eproto, "Rummy.proto", 2673,
+  &descriptor_table_Rummy_2eproto_once, descriptor_table_Rummy_2eproto_sccs, descriptor_table_Rummy_2eproto_deps, 13, 0,
   schemas, file_default_instances, TableStruct_Rummy_2eproto::offsets,
-  file_level_metadata_Rummy_2eproto, 14, file_level_enum_descriptors_Rummy_2eproto, file_level_service_descriptors_Rummy_2eproto,
+  file_level_metadata_Rummy_2eproto, 13, file_level_enum_descriptors_Rummy_2eproto, file_level_service_descriptors_Rummy_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -620,7 +589,6 @@ bool ERMMsgIDSubGame_IsValid(int value) {
     case 4:
     case 5:
     case 6:
-    case 10:
     case 11:
     case 12:
     case 13:
@@ -3858,258 +3826,6 @@ void RMMsgActionChoice::InternalSwap(RMMsgActionChoice* other) {
 
 // ===================================================================
 
-class RMMsgGiveUpResp::_Internal {
- public:
-};
-
-RMMsgGiveUpResp::RMMsgGiveUpResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:Rummy.RMMsgGiveUpResp)
-}
-RMMsgGiveUpResp::RMMsgGiveUpResp(const RMMsgGiveUpResp& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&chair_id_, &from.chair_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&drop_multiple_) -
-    reinterpret_cast<char*>(&chair_id_)) + sizeof(drop_multiple_));
-  // @@protoc_insertion_point(copy_constructor:Rummy.RMMsgGiveUpResp)
-}
-
-void RMMsgGiveUpResp::SharedCtor() {
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&chair_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&drop_multiple_) -
-      reinterpret_cast<char*>(&chair_id_)) + sizeof(drop_multiple_));
-}
-
-RMMsgGiveUpResp::~RMMsgGiveUpResp() {
-  // @@protoc_insertion_point(destructor:Rummy.RMMsgGiveUpResp)
-  SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-void RMMsgGiveUpResp::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-}
-
-void RMMsgGiveUpResp::ArenaDtor(void* object) {
-  RMMsgGiveUpResp* _this = reinterpret_cast< RMMsgGiveUpResp* >(object);
-  (void)_this;
-}
-void RMMsgGiveUpResp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
-void RMMsgGiveUpResp::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
-}
-const RMMsgGiveUpResp& RMMsgGiveUpResp::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_RMMsgGiveUpResp_Rummy_2eproto.base);
-  return *internal_default_instance();
-}
-
-
-void RMMsgGiveUpResp::Clear() {
-// @@protoc_insertion_point(message_clear_start:Rummy.RMMsgGiveUpResp)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  ::memset(&chair_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&drop_multiple_) -
-      reinterpret_cast<char*>(&chair_id_)) + sizeof(drop_multiple_));
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-const char* RMMsgGiveUpResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
-    switch (tag >> 3) {
-      // int32 chair_id = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          chair_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 loss_gold = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          loss_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // uint32 drop_multiple = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          drop_multiple_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
-    }  // switch
-  }  // while
-success:
-  return ptr;
-failure:
-  ptr = nullptr;
-  goto success;
-#undef CHK_
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* RMMsgGiveUpResp::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:Rummy.RMMsgGiveUpResp)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // int32 chair_id = 1;
-  if (this->chair_id() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_chair_id(), target);
-  }
-
-  // int32 loss_gold = 2;
-  if (this->loss_gold() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_loss_gold(), target);
-  }
-
-  // uint32 drop_multiple = 3;
-  if (this->drop_multiple() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(3, this->_internal_drop_multiple(), target);
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:Rummy.RMMsgGiveUpResp)
-  return target;
-}
-
-size_t RMMsgGiveUpResp::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:Rummy.RMMsgGiveUpResp)
-  size_t total_size = 0;
-
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  // int32 chair_id = 1;
-  if (this->chair_id() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_chair_id());
-  }
-
-  // int32 loss_gold = 2;
-  if (this->loss_gold() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_loss_gold());
-  }
-
-  // uint32 drop_multiple = 3;
-  if (this->drop_multiple() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_drop_multiple());
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
-}
-
-void RMMsgGiveUpResp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:Rummy.RMMsgGiveUpResp)
-  GOOGLE_DCHECK_NE(&from, this);
-  const RMMsgGiveUpResp* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<RMMsgGiveUpResp>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Rummy.RMMsgGiveUpResp)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:Rummy.RMMsgGiveUpResp)
-    MergeFrom(*source);
-  }
-}
-
-void RMMsgGiveUpResp::MergeFrom(const RMMsgGiveUpResp& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:Rummy.RMMsgGiveUpResp)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from.chair_id() != 0) {
-    _internal_set_chair_id(from._internal_chair_id());
-  }
-  if (from.loss_gold() != 0) {
-    _internal_set_loss_gold(from._internal_loss_gold());
-  }
-  if (from.drop_multiple() != 0) {
-    _internal_set_drop_multiple(from._internal_drop_multiple());
-  }
-}
-
-void RMMsgGiveUpResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:Rummy.RMMsgGiveUpResp)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void RMMsgGiveUpResp::CopyFrom(const RMMsgGiveUpResp& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:Rummy.RMMsgGiveUpResp)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool RMMsgGiveUpResp::IsInitialized() const {
-  return true;
-}
-
-void RMMsgGiveUpResp::InternalSwap(RMMsgGiveUpResp* other) {
-  using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(RMMsgGiveUpResp, drop_multiple_)
-      + sizeof(RMMsgGiveUpResp::drop_multiple_)
-      - PROTOBUF_FIELD_OFFSET(RMMsgGiveUpResp, chair_id_)>(
-          reinterpret_cast<char*>(&chair_id_),
-          reinterpret_cast<char*>(&other->chair_id_));
-}
-
-::PROTOBUF_NAMESPACE_ID::Metadata RMMsgGiveUpResp::GetMetadata() const {
-  return GetMetadataStatic();
-}
-
-
-// ===================================================================
-
 class RMMsgGameResult::_Internal {
  public:
 };
@@ -4858,9 +4574,6 @@ template<> PROTOBUF_NOINLINE ::Rummy::RMMsgActionResp* Arena::CreateMaybeMessage
 }
 template<> PROTOBUF_NOINLINE ::Rummy::RMMsgActionChoice* Arena::CreateMaybeMessage< ::Rummy::RMMsgActionChoice >(Arena* arena) {
   return Arena::CreateMessageInternal< ::Rummy::RMMsgActionChoice >(arena);
-}
-template<> PROTOBUF_NOINLINE ::Rummy::RMMsgGiveUpResp* Arena::CreateMaybeMessage< ::Rummy::RMMsgGiveUpResp >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::Rummy::RMMsgGiveUpResp >(arena);
 }
 template<> PROTOBUF_NOINLINE ::Rummy::RMMsgGameResult* Arena::CreateMaybeMessage< ::Rummy::RMMsgGameResult >(Arena* arena) {
   return Arena::CreateMessageInternal< ::Rummy::RMMsgGameResult >(arena);

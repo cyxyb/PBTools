@@ -51,10 +51,8 @@ enum ERMMsgIDSubGame
 	MsgIDSubGame_NotifyActionResp		= 2;	//通知玩家操作(RMMsgNotifyActionResp)
 	MsgIDSubGame_Action					= 3;	//玩家操作(RMMsgAction)
 	MsgIDSubGame_ActionResp				= 4;	//玩家操作返回(RMMsgActionResp)
-	MsgIDSubGame_GiveUpResp				= 5;	//玩家弃牌返回(RMMsgGiveUpResp)
-	MsgIDSubGame_GameResultResp			= 6;	//结算(RMMsgGameResult)
-
-	MsgIDSubGame_NotifyStateResp		= 10;	//桌子状态(RMMsgTableState)
+	MsgIDSubGame_GameResultResp			= 5;	//结算(RMMsgGameResult)
+	MsgIDSubGame_NotifyStateResp		= 6;	//桌子状态(RMMsgTableState)
 
 	MsgIDSubGame_TimeOutResp			= 11;	//通知超时(MsgCommonBool)
 	MsgIDSubGame_TimeOutReady			= 12;	//重新准备(MsgCommonBool)
@@ -175,14 +173,6 @@ message RMMsgActionChoice
 	bool				is_determine		= 2;	//确定
 	repeated RMMsgAction choices			= 3;	//历史
 	RMMsgAction			determined_action	= 4;	//确定操作
-}
-
-//玩家弃牌返回
-message RMMsgGiveUpResp
-{
-	int32					chair_id		= 1;	//玩家椅子号
-	int32					loss_gold		= 2;	//输分
-	uint32					drop_multiple	= 3;	//弃牌倍数
 }
 
 //游戏结果                                  

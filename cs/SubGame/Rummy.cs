@@ -55,38 +55,35 @@ namespace Rummy {
             "cmRfbnVtGAkgASgFIpcBChFSTU1zZ0FjdGlvbkNob2ljZRIYChBkZXRlcm1p",
             "bmVkX2xldmVsGAEgASgFEhQKDGlzX2RldGVybWluZRgCIAEoCBIjCgdjaG9p",
             "Y2VzGAMgAygLMhIuUnVtbXkuUk1Nc2dBY3Rpb24SLQoRZGV0ZXJtaW5lZF9h",
-            "Y3Rpb24YBCABKAsyEi5SdW1teS5STU1zZ0FjdGlvbiJNCg9STU1zZ0dpdmVV",
-            "cFJlc3ASEAoIY2hhaXJfaWQYASABKAUSEQoJbG9zc19nb2xkGAIgASgFEhUK",
-            "DWRyb3BfbXVsdGlwbGUYAyABKA0iYwoPUk1Nc2dHYW1lUmVzdWx0EhAKCGdh",
-            "bWVfdGF4GAEgASgFEisKC3BsYXllcl9pbmZvGAIgAygLMhYuUnVtbXkuUk1N",
-            "c2dQbGF5ZXJJbmZvEhEKCWVuZF9zdGF0ZRgDIAEoBSJEChZSTU1zZ05vdGlm",
-            "eVRydXN0ZWVzaGlwEhIKCnNlYXRfaW5kZXgYASABKAUSFgoOaXNfdHJ1c3Rl",
-            "ZXNoaXAYAiABKAgiNQoUUk1Nc2dOb3RpZnlQbGF5ZXJBY3QSEAoIY2hhaXJf",
-            "aWQYASABKAUSCwoDYWN0GAIgASgFKmQKDEVSTUdhbWVTdGF0ZRIPCgtHU19U",
-            "UF9SRUFEWRAAEg4KCkdTX1RQX0RFQUwQARIRCg1HU19UUF9QTEFZSU5HEAIS",
-            "DgoKR1NfVFBfU0hPVxADEhAKDEdTX1RQX1JFU1VMVBAEKmQKC1BsYXllclN0",
-            "YXRlEgwKCFBTX1JFQURZEAASCwoHUFNfUExBWRABEgsKB1BTX0dJVkUQAhIL",
-            "CgdQU19GQUlMEAMSEAoMUFNfU09SVF9DQVJEEAQSDgoKUFNfU0hPV19IVRAF",
-            "KmIKDUVSTUdhbWVBY3Rpb24SDQoJSW52YWxkQWN0EAASDAoIRHJvcENhcmQQ",
-            "ARIKCgZOYUNhcmQQAhILCgdDaHVDYXJkEAQSDQoJU29ydHNDYXJkEAgSDAoI",
-            "U2hvd0NhcmQQECpiCg5FUk1Db2xDYXJkVHlwZRIOCgpDT0xfU0lOR0xFEAAS",
-            "DgoKQ09MX0JBT19aSRABEhAKDENPTF9TSFVOX1pISRACEhEKDUNPTF9RSU5H",
-            "X1NIVU4QAxILCgdDT0xfTUFYEAQqiQUKD0VSTU1zZ0lEU3ViR2FtZRIVChFN",
-            "c2dJRFN1YkdhbWVfTnVsbBAAEh4KGk1zZ0lEU3ViR2FtZV9HYW1lU3RhcnRS",
-            "ZXNwEAESIQodTXNnSURTdWJHYW1lX05vdGlmeUFjdGlvblJlc3AQAhIXChNN",
-            "c2dJRFN1YkdhbWVfQWN0aW9uEAMSGwoXTXNnSURTdWJHYW1lX0FjdGlvblJl",
-            "c3AQBBIbChdNc2dJRFN1YkdhbWVfR2l2ZVVwUmVzcBAFEh8KG01zZ0lEU3Vi",
-            "R2FtZV9HYW1lUmVzdWx0UmVzcBAGEiAKHE1zZ0lEU3ViR2FtZV9Ob3RpZnlT",
-            "dGF0ZVJlc3AQChIcChhNc2dJRFN1YkdhbWVfVGltZU91dFJlc3AQCxIdChlN",
-            "c2dJRFN1YkdhbWVfVGltZU91dFJlYWR5EAwSIQodTXNnSURTdWJHYW1lX1Rp",
-            "bWVPdXRSZWFkeVJlc3AQDRIgChxNc2dJRFN1YkdhbWVfVGltZU91dEtpY2tS",
-            "ZXNwEA4SJgoiTXNnSURTdWJHYW1lX05vdGlmeVRydXN0ZWVzaGlwUmVzcBAP",
-            "EiYKIk1zZ0lEU3ViR2FtZV9Ob3RpZnlTeXN0ZW1DaGVhdFJlc3AQFBIjCh9N",
-            "c2dJRFN1YkdhbWVfTm90aWZ5Q2FyZFR5cGVSZXNwEBUSIAocTXNnSURTdWJH",
-            "YW1lX05vdGlmeUlzTWF4UmVzcBAWEicKI01zZ0lEU3ViR2FtZV9Ob3RpZnlS",
-            "ZW1haW5Eb3VibGVSZXNwEBcSIAocTXNnSURTdWJHYW1lX05vdGlmeVJvdW5k",
-            "UmVzcBAYEiIKHk1zZ0lEU3ViR2FtZV9Ob3RpZnlMYXN0QWN0UmVzcBAZYgZw",
-            "cm90bzM="));
+            "Y3Rpb24YBCABKAsyEi5SdW1teS5STU1zZ0FjdGlvbiJjCg9STU1zZ0dhbWVS",
+            "ZXN1bHQSEAoIZ2FtZV90YXgYASABKAUSKwoLcGxheWVyX2luZm8YAiADKAsy",
+            "Fi5SdW1teS5STU1zZ1BsYXllckluZm8SEQoJZW5kX3N0YXRlGAMgASgFIkQK",
+            "FlJNTXNnTm90aWZ5VHJ1c3RlZXNoaXASEgoKc2VhdF9pbmRleBgBIAEoBRIW",
+            "Cg5pc190cnVzdGVlc2hpcBgCIAEoCCI1ChRSTU1zZ05vdGlmeVBsYXllckFj",
+            "dBIQCghjaGFpcl9pZBgBIAEoBRILCgNhY3QYAiABKAUqZAoMRVJNR2FtZVN0",
+            "YXRlEg8KC0dTX1RQX1JFQURZEAASDgoKR1NfVFBfREVBTBABEhEKDUdTX1RQ",
+            "X1BMQVlJTkcQAhIOCgpHU19UUF9TSE9XEAMSEAoMR1NfVFBfUkVTVUxUEAQq",
+            "ZAoLUGxheWVyU3RhdGUSDAoIUFNfUkVBRFkQABILCgdQU19QTEFZEAESCwoH",
+            "UFNfR0lWRRACEgsKB1BTX0ZBSUwQAxIQCgxQU19TT1JUX0NBUkQQBBIOCgpQ",
+            "U19TSE9XX0hVEAUqYgoNRVJNR2FtZUFjdGlvbhINCglJbnZhbGRBY3QQABIM",
+            "CghEcm9wQ2FyZBABEgoKBk5hQ2FyZBACEgsKB0NodUNhcmQQBBINCglTb3J0",
+            "c0NhcmQQCBIMCghTaG93Q2FyZBAQKmIKDkVSTUNvbENhcmRUeXBlEg4KCkNP",
+            "TF9TSU5HTEUQABIOCgpDT0xfQkFPX1pJEAESEAoMQ09MX1NIVU5fWkhJEAIS",
+            "EQoNQ09MX1FJTkdfU0hVThADEgsKB0NPTF9NQVgQBCrsBAoPRVJNTXNnSURT",
+            "dWJHYW1lEhUKEU1zZ0lEU3ViR2FtZV9OdWxsEAASHgoaTXNnSURTdWJHYW1l",
+            "X0dhbWVTdGFydFJlc3AQARIhCh1Nc2dJRFN1YkdhbWVfTm90aWZ5QWN0aW9u",
+            "UmVzcBACEhcKE01zZ0lEU3ViR2FtZV9BY3Rpb24QAxIbChdNc2dJRFN1Ykdh",
+            "bWVfQWN0aW9uUmVzcBAEEh8KG01zZ0lEU3ViR2FtZV9HYW1lUmVzdWx0UmVz",
+            "cBAFEiAKHE1zZ0lEU3ViR2FtZV9Ob3RpZnlTdGF0ZVJlc3AQBhIcChhNc2dJ",
+            "RFN1YkdhbWVfVGltZU91dFJlc3AQCxIdChlNc2dJRFN1YkdhbWVfVGltZU91",
+            "dFJlYWR5EAwSIQodTXNnSURTdWJHYW1lX1RpbWVPdXRSZWFkeVJlc3AQDRIg",
+            "ChxNc2dJRFN1YkdhbWVfVGltZU91dEtpY2tSZXNwEA4SJgoiTXNnSURTdWJH",
+            "YW1lX05vdGlmeVRydXN0ZWVzaGlwUmVzcBAPEiYKIk1zZ0lEU3ViR2FtZV9O",
+            "b3RpZnlTeXN0ZW1DaGVhdFJlc3AQFBIjCh9Nc2dJRFN1YkdhbWVfTm90aWZ5",
+            "Q2FyZFR5cGVSZXNwEBUSIAocTXNnSURTdWJHYW1lX05vdGlmeUlzTWF4UmVz",
+            "cBAWEicKI01zZ0lEU3ViR2FtZV9Ob3RpZnlSZW1haW5Eb3VibGVSZXNwEBcS",
+            "IAocTXNnSURTdWJHYW1lX05vdGlmeVJvdW5kUmVzcBAYEiIKHk1zZ0lEU3Vi",
+            "R2FtZV9Ob3RpZnlMYXN0QWN0UmVzcBAZYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Rummy.ERMGameState), typeof(global::Rummy.PlayerState), typeof(global::Rummy.ERMGameAction), typeof(global::Rummy.ERMColCardType), typeof(global::Rummy.ERMMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -100,7 +97,6 @@ namespace Rummy {
             new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgAction), global::Rummy.RMMsgAction.Parser, new[]{ "ChairId", "ActType", "DestCard", "GetOutCard", "HandGroupInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgActionResp), global::Rummy.RMMsgActionResp.Parser, new[]{ "ChairId", "ActType", "DestCard", "GetOutCard", "DropMultiple", "AutoAction", "LeftCardNum" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgActionChoice), global::Rummy.RMMsgActionChoice.Parser, new[]{ "DeterminedLevel", "IsDetermine", "Choices", "DeterminedAction" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgGiveUpResp), global::Rummy.RMMsgGiveUpResp.Parser, new[]{ "ChairId", "LossGold", "DropMultiple" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgGameResult), global::Rummy.RMMsgGameResult.Parser, new[]{ "GameTax", "PlayerInfo", "EndState" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgNotifyTrusteeship), global::Rummy.RMMsgNotifyTrusteeship.Parser, new[]{ "SeatIndex", "IsTrusteeship" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgNotifyPlayerAct), global::Rummy.RMMsgNotifyPlayerAct.Parser, new[]{ "ChairId", "Act" }, null, null, null, null)
@@ -238,17 +234,13 @@ namespace Rummy {
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_ActionResp")] MsgIdsubGameActionResp = 4,
     /// <summary>
-    ///玩家弃牌返回(RMMsgGiveUpResp)
-    /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_GiveUpResp")] MsgIdsubGameGiveUpResp = 5,
-    /// <summary>
     ///结算(RMMsgGameResult)
     /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_GameResultResp")] MsgIdsubGameGameResultResp = 6,
+    [pbr::OriginalName("MsgIDSubGame_GameResultResp")] MsgIdsubGameGameResultResp = 5,
     /// <summary>
     ///桌子状态(RMMsgTableState)
     /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_NotifyStateResp")] MsgIdsubGameNotifyStateResp = 10,
+    [pbr::OriginalName("MsgIDSubGame_NotifyStateResp")] MsgIdsubGameNotifyStateResp = 6,
     /// <summary>
     ///通知超时(MsgCommonBool)
     /// </summary>
@@ -3676,262 +3668,6 @@ namespace Rummy {
   }
 
   /// <summary>
-  ///玩家弃牌返回
-  /// </summary>
-  public sealed partial class RMMsgGiveUpResp : pb::IMessage<RMMsgGiveUpResp>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<RMMsgGiveUpResp> _parser = new pb::MessageParser<RMMsgGiveUpResp>(() => new RMMsgGiveUpResp());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<RMMsgGiveUpResp> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Rummy.RummyReflection.Descriptor.MessageTypes[10]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public RMMsgGiveUpResp() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public RMMsgGiveUpResp(RMMsgGiveUpResp other) : this() {
-      chairId_ = other.chairId_;
-      lossGold_ = other.lossGold_;
-      dropMultiple_ = other.dropMultiple_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public RMMsgGiveUpResp Clone() {
-      return new RMMsgGiveUpResp(this);
-    }
-
-    /// <summary>Field number for the "chair_id" field.</summary>
-    public const int ChairIdFieldNumber = 1;
-    private int chairId_;
-    /// <summary>
-    ///玩家椅子号
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int ChairId {
-      get { return chairId_; }
-      set {
-        chairId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "loss_gold" field.</summary>
-    public const int LossGoldFieldNumber = 2;
-    private int lossGold_;
-    /// <summary>
-    ///输分
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int LossGold {
-      get { return lossGold_; }
-      set {
-        lossGold_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "drop_multiple" field.</summary>
-    public const int DropMultipleFieldNumber = 3;
-    private uint dropMultiple_;
-    /// <summary>
-    ///弃牌倍数
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint DropMultiple {
-      get { return dropMultiple_; }
-      set {
-        dropMultiple_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as RMMsgGiveUpResp);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(RMMsgGiveUpResp other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (ChairId != other.ChairId) return false;
-      if (LossGold != other.LossGold) return false;
-      if (DropMultiple != other.DropMultiple) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (ChairId != 0) hash ^= ChairId.GetHashCode();
-      if (LossGold != 0) hash ^= LossGold.GetHashCode();
-      if (DropMultiple != 0) hash ^= DropMultiple.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (ChairId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(ChairId);
-      }
-      if (LossGold != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(LossGold);
-      }
-      if (DropMultiple != 0) {
-        output.WriteRawTag(24);
-        output.WriteUInt32(DropMultiple);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (ChairId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(ChairId);
-      }
-      if (LossGold != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(LossGold);
-      }
-      if (DropMultiple != 0) {
-        output.WriteRawTag(24);
-        output.WriteUInt32(DropMultiple);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (ChairId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChairId);
-      }
-      if (LossGold != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(LossGold);
-      }
-      if (DropMultiple != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(DropMultiple);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(RMMsgGiveUpResp other) {
-      if (other == null) {
-        return;
-      }
-      if (other.ChairId != 0) {
-        ChairId = other.ChairId;
-      }
-      if (other.LossGold != 0) {
-        LossGold = other.LossGold;
-      }
-      if (other.DropMultiple != 0) {
-        DropMultiple = other.DropMultiple;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            ChairId = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            LossGold = input.ReadInt32();
-            break;
-          }
-          case 24: {
-            DropMultiple = input.ReadUInt32();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            ChairId = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            LossGold = input.ReadInt32();
-            break;
-          }
-          case 24: {
-            DropMultiple = input.ReadUInt32();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  /// <summary>
   ///游戏结果                                  
   /// </summary>
   public sealed partial class RMMsgGameResult : pb::IMessage<RMMsgGameResult>
@@ -3946,7 +3682,7 @@ namespace Rummy {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Rummy.RummyReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Rummy.RummyReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4191,7 +3927,7 @@ namespace Rummy {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Rummy.RummyReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Rummy.RummyReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4406,7 +4142,7 @@ namespace Rummy {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Rummy.RummyReflection.Descriptor.MessageTypes[13]; }
+      get { return global::Rummy.RummyReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

@@ -47,7 +47,7 @@ struct TableStruct_Rummy_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[14]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[13]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -73,9 +73,6 @@ extern RMMsgGameResultDefaultTypeInternal _RMMsgGameResult_default_instance_;
 class RMMsgGameStartResp;
 class RMMsgGameStartRespDefaultTypeInternal;
 extern RMMsgGameStartRespDefaultTypeInternal _RMMsgGameStartResp_default_instance_;
-class RMMsgGiveUpResp;
-class RMMsgGiveUpRespDefaultTypeInternal;
-extern RMMsgGiveUpRespDefaultTypeInternal _RMMsgGiveUpResp_default_instance_;
 class RMMsgHandCards;
 class RMMsgHandCardsDefaultTypeInternal;
 extern RMMsgHandCardsDefaultTypeInternal _RMMsgHandCards_default_instance_;
@@ -105,7 +102,6 @@ template<> ::Rummy::RMMsgActionChoice* Arena::CreateMaybeMessage<::Rummy::RMMsgA
 template<> ::Rummy::RMMsgActionResp* Arena::CreateMaybeMessage<::Rummy::RMMsgActionResp>(Arena*);
 template<> ::Rummy::RMMsgGameResult* Arena::CreateMaybeMessage<::Rummy::RMMsgGameResult>(Arena*);
 template<> ::Rummy::RMMsgGameStartResp* Arena::CreateMaybeMessage<::Rummy::RMMsgGameStartResp>(Arena*);
-template<> ::Rummy::RMMsgGiveUpResp* Arena::CreateMaybeMessage<::Rummy::RMMsgGiveUpResp>(Arena*);
 template<> ::Rummy::RMMsgHandCards* Arena::CreateMaybeMessage<::Rummy::RMMsgHandCards>(Arena*);
 template<> ::Rummy::RMMsgNotifyActionResp* Arena::CreateMaybeMessage<::Rummy::RMMsgNotifyActionResp>(Arena*);
 template<> ::Rummy::RMMsgNotifyPlayerAct* Arena::CreateMaybeMessage<::Rummy::RMMsgNotifyPlayerAct>(Arena*);
@@ -236,9 +232,8 @@ enum ERMMsgIDSubGame : int {
   MsgIDSubGame_NotifyActionResp = 2,
   MsgIDSubGame_Action = 3,
   MsgIDSubGame_ActionResp = 4,
-  MsgIDSubGame_GiveUpResp = 5,
-  MsgIDSubGame_GameResultResp = 6,
-  MsgIDSubGame_NotifyStateResp = 10,
+  MsgIDSubGame_GameResultResp = 5,
+  MsgIDSubGame_NotifyStateResp = 6,
   MsgIDSubGame_TimeOutResp = 11,
   MsgIDSubGame_TimeOutReady = 12,
   MsgIDSubGame_TimeOutReadyResp = 13,
@@ -2261,164 +2256,6 @@ class RMMsgActionChoice PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
-class RMMsgGiveUpResp PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Rummy.RMMsgGiveUpResp) */ {
- public:
-  inline RMMsgGiveUpResp() : RMMsgGiveUpResp(nullptr) {}
-  virtual ~RMMsgGiveUpResp();
-
-  RMMsgGiveUpResp(const RMMsgGiveUpResp& from);
-  RMMsgGiveUpResp(RMMsgGiveUpResp&& from) noexcept
-    : RMMsgGiveUpResp() {
-    *this = ::std::move(from);
-  }
-
-  inline RMMsgGiveUpResp& operator=(const RMMsgGiveUpResp& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline RMMsgGiveUpResp& operator=(RMMsgGiveUpResp&& from) noexcept {
-    if (GetArena() == from.GetArena()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return GetMetadataStatic().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return GetMetadataStatic().reflection;
-  }
-  static const RMMsgGiveUpResp& default_instance();
-
-  static inline const RMMsgGiveUpResp* internal_default_instance() {
-    return reinterpret_cast<const RMMsgGiveUpResp*>(
-               &_RMMsgGiveUpResp_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    10;
-
-  friend void swap(RMMsgGiveUpResp& a, RMMsgGiveUpResp& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(RMMsgGiveUpResp* other) {
-    if (other == this) return;
-    if (GetArena() == other->GetArena()) {
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(RMMsgGiveUpResp* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetArena() == other->GetArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline RMMsgGiveUpResp* New() const final {
-    return CreateMaybeMessage<RMMsgGiveUpResp>(nullptr);
-  }
-
-  RMMsgGiveUpResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<RMMsgGiveUpResp>(arena);
-  }
-  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const RMMsgGiveUpResp& from);
-  void MergeFrom(const RMMsgGiveUpResp& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
-      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  inline void SharedCtor();
-  inline void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(RMMsgGiveUpResp* other);
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "Rummy.RMMsgGiveUpResp";
-  }
-  protected:
-  explicit RMMsgGiveUpResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  private:
-  static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  public:
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-  private:
-  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
-    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Rummy_2eproto);
-    return ::descriptor_table_Rummy_2eproto.file_level_metadata[kIndexInFileMessages];
-  }
-
-  public:
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kChairIdFieldNumber = 1,
-    kLossGoldFieldNumber = 2,
-    kDropMultipleFieldNumber = 3,
-  };
-  // int32 chair_id = 1;
-  void clear_chair_id();
-  ::PROTOBUF_NAMESPACE_ID::int32 chair_id() const;
-  void set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_chair_id() const;
-  void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 loss_gold = 2;
-  void clear_loss_gold();
-  ::PROTOBUF_NAMESPACE_ID::int32 loss_gold() const;
-  void set_loss_gold(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_loss_gold() const;
-  void _internal_set_loss_gold(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // uint32 drop_multiple = 3;
-  void clear_drop_multiple();
-  ::PROTOBUF_NAMESPACE_ID::uint32 drop_multiple() const;
-  void set_drop_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::uint32 _internal_drop_multiple() const;
-  void _internal_set_drop_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:Rummy.RMMsgGiveUpResp)
- private:
-  class _Internal;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 loss_gold_;
-  ::PROTOBUF_NAMESPACE_ID::uint32 drop_multiple_;
-  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  friend struct ::TableStruct_Rummy_2eproto;
-};
-// -------------------------------------------------------------------
-
 class RMMsgGameResult PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Rummy.RMMsgGameResult) */ {
  public:
@@ -2460,7 +2297,7 @@ class RMMsgGameResult PROTOBUF_FINAL :
                &_RMMsgGameResult_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    10;
 
   friend void swap(RMMsgGameResult& a, RMMsgGameResult& b) {
     a.Swap(&b);
@@ -2627,7 +2464,7 @@ class RMMsgNotifyTrusteeship PROTOBUF_FINAL :
                &_RMMsgNotifyTrusteeship_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    12;
+    11;
 
   friend void swap(RMMsgNotifyTrusteeship& a, RMMsgNotifyTrusteeship& b) {
     a.Swap(&b);
@@ -2774,7 +2611,7 @@ class RMMsgNotifyPlayerAct PROTOBUF_FINAL :
                &_RMMsgNotifyPlayerAct_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    13;
+    12;
 
   friend void swap(RMMsgNotifyPlayerAct& a, RMMsgNotifyPlayerAct& b) {
     a.Swap(&b);
@@ -4335,70 +4172,6 @@ inline void RMMsgActionChoice::set_allocated_determined_action(::Rummy::RMMsgAct
 
 // -------------------------------------------------------------------
 
-// RMMsgGiveUpResp
-
-// int32 chair_id = 1;
-inline void RMMsgGiveUpResp::clear_chair_id() {
-  chair_id_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgGiveUpResp::_internal_chair_id() const {
-  return chair_id_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgGiveUpResp::chair_id() const {
-  // @@protoc_insertion_point(field_get:Rummy.RMMsgGiveUpResp.chair_id)
-  return _internal_chair_id();
-}
-inline void RMMsgGiveUpResp::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  chair_id_ = value;
-}
-inline void RMMsgGiveUpResp::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:Rummy.RMMsgGiveUpResp.chair_id)
-}
-
-// int32 loss_gold = 2;
-inline void RMMsgGiveUpResp::clear_loss_gold() {
-  loss_gold_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgGiveUpResp::_internal_loss_gold() const {
-  return loss_gold_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgGiveUpResp::loss_gold() const {
-  // @@protoc_insertion_point(field_get:Rummy.RMMsgGiveUpResp.loss_gold)
-  return _internal_loss_gold();
-}
-inline void RMMsgGiveUpResp::_internal_set_loss_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  loss_gold_ = value;
-}
-inline void RMMsgGiveUpResp::set_loss_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_loss_gold(value);
-  // @@protoc_insertion_point(field_set:Rummy.RMMsgGiveUpResp.loss_gold)
-}
-
-// uint32 drop_multiple = 3;
-inline void RMMsgGiveUpResp::clear_drop_multiple() {
-  drop_multiple_ = 0u;
-}
-inline ::PROTOBUF_NAMESPACE_ID::uint32 RMMsgGiveUpResp::_internal_drop_multiple() const {
-  return drop_multiple_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::uint32 RMMsgGiveUpResp::drop_multiple() const {
-  // @@protoc_insertion_point(field_get:Rummy.RMMsgGiveUpResp.drop_multiple)
-  return _internal_drop_multiple();
-}
-inline void RMMsgGiveUpResp::_internal_set_drop_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value) {
-  
-  drop_multiple_ = value;
-}
-inline void RMMsgGiveUpResp::set_drop_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value) {
-  _internal_set_drop_multiple(value);
-  // @@protoc_insertion_point(field_set:Rummy.RMMsgGiveUpResp.drop_multiple)
-}
-
-// -------------------------------------------------------------------
-
 // RMMsgGameResult
 
 // int32 game_tax = 1;
@@ -4571,8 +4344,6 @@ inline void RMMsgNotifyPlayerAct::set_act(::PROTOBUF_NAMESPACE_ID::int32 value) 
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
-// -------------------------------------------------------------------
-
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
