@@ -328,7 +328,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Rummy_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, max_score_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, cell_score_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, max_multiple_),
-  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, wild_card_),
+  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, joker_card_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, left_card_num_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, out_cards_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, play_index_),
@@ -455,60 +455,60 @@ const char descriptor_table_protodef_Rummy_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "ime\030\t \001(\005\022\022\n\njoker_card\030\n \001(\005\022\030\n\020surplus"
   "_card_num\030\013 \001(\005\022\021\n\tout_cards\030\014 \003(\005\022,\n\014pl"
   "ayer_infos\030\r \003(\0132\026.Rummy.RMMsgPlayerInfo"
-  "\"\340\001\n\022RMMsgGameStartResp\022\024\n\014cur_chair_id\030"
+  "\"\341\001\n\022RMMsgGameStartResp\022\024\n\014cur_chair_id\030"
   "\001 \001(\005\022\027\n\017banker_chair_id\030\002 \001(\005\022\021\n\tmax_sc"
   "ore\030\003 \001(\003\022\022\n\ncell_score\030\004 \001(\003\022\024\n\014max_mul"
-  "tiple\030\005 \001(\003\022\021\n\twild_card\030\n \001(\005\022\025\n\rleft_c"
-  "ard_num\030\013 \001(\005\022\021\n\tout_cards\030\014 \003(\005\022\022\n\nplay"
-  "_index\030\r \003(\005\022\r\n\005cards\030\017 \003(\005\"U\n\025RMMsgNoti"
-  "fyActionResp\022\024\n\014cur_chair_id\030\001 \001(\005\022\023\n\013cu"
-  "rrent_act\030\003 \001(\005\022\021\n\toper_time\030\004 \001(\005\"\210\001\n\013R"
-  "MMsgAction\022\020\n\010chair_id\030\001 \001(\005\022\020\n\010act_type"
-  "\030\002 \001(\005\022\021\n\tdest_card\030\003 \001(\005\022\024\n\014get_out_car"
-  "d\030\004 \001(\010\022,\n\017hand_group_info\030\005 \003(\0132\023.Rummy"
-  ".RMColumnInfo\"\317\001\n\017RMMsgActionResp\022\020\n\010cha"
-  "ir_id\030\001 \001(\005\022\020\n\010act_type\030\002 \001(\005\022\021\n\tdest_ca"
-  "rd\030\003 \001(\005\022\024\n\014get_out_card\030\004 \001(\010\022\025\n\rdorp_m"
-  "ultiple\030\006 \001(\r\022\023\n\013auto_action\030\007 \001(\010\022\025\n\rle"
-  "ft_card_num\030\t \001(\005\022,\n\017hand_group_info\030\n \003"
-  "(\0132\023.Rummy.RMColumnInfo\"\227\001\n\021RMMsgActionC"
-  "hoice\022\030\n\020determined_level\030\001 \001(\005\022\024\n\014is_de"
-  "termine\030\002 \001(\010\022#\n\007choices\030\003 \003(\0132\022.Rummy.R"
-  "MMsgAction\022-\n\021determined_action\030\004 \001(\0132\022."
-  "Rummy.RMMsgAction\"M\n\017RMMsgGiveUpResp\022\020\n\010"
-  "chair_id\030\001 \001(\005\022\021\n\tloss_gold\030\002 \001(\005\022\025\n\rdor"
-  "p_multiple\030\003 \001(\r\"c\n\017RMMsgGameResult\022\020\n\010g"
-  "ame_tax\030\001 \001(\005\022+\n\013player_info\030\002 \003(\0132\026.Rum"
-  "my.RMMsgPlayerInfo\022\021\n\tend_state\030\003 \001(\005\"D\n"
-  "\026RMMsgNotifyTrusteeship\022\022\n\nseat_index\030\001 "
-  "\001(\005\022\026\n\016is_trusteeship\030\002 \001(\010\"5\n\024RMMsgNoti"
-  "fyPlayerAct\022\020\n\010chair_id\030\001 \001(\005\022\013\n\003act\030\002 \001"
-  "(\005*d\n\014ERMGameState\022\017\n\013GS_TP_READY\020\000\022\016\n\nG"
-  "S_TP_DEAL\020\001\022\021\n\rGS_TP_PLAYING\020\002\022\016\n\nGS_TP_"
-  "SHOW\020\003\022\020\n\014GS_TP_RESULT\020\004*B\n\013PlayerState\022"
-  "\014\n\010PS_READY\020\000\022\013\n\007PS_PLAY\020\001\022\013\n\007PS_GIVE\020\002\022"
-  "\013\n\007PS_FAIL\020\003*b\n\rERMGameAction\022\r\n\tInvaldA"
-  "ct\020\000\022\014\n\010DropCard\020\001\022\n\n\006NaCard\020\002\022\013\n\007ChuCar"
-  "d\020\004\022\r\n\tSortsCard\020\010\022\014\n\010ShowCard\020\020*b\n\016ERMC"
-  "olCardType\022\016\n\nCOL_SINGLE\020\000\022\016\n\nCOL_BAO_ZI"
-  "\020\001\022\020\n\014COL_SHUN_ZHI\020\002\022\021\n\rCOL_QING_SHUN\020\003\022"
-  "\013\n\007COL_MAX\020\004*\211\005\n\017ERMMsgIDSubGame\022\025\n\021MsgI"
-  "DSubGame_Null\020\000\022\036\n\032MsgIDSubGame_GameStar"
-  "tResp\020\001\022!\n\035MsgIDSubGame_NotifyActionResp"
-  "\020\002\022\027\n\023MsgIDSubGame_Action\020\003\022\033\n\027MsgIDSubG"
-  "ame_ActionResp\020\004\022\033\n\027MsgIDSubGame_GiveUpR"
-  "esp\020\005\022\037\n\033MsgIDSubGame_GameResultResp\020\006\022 "
-  "\n\034MsgIDSubGame_NotifyStateResp\020\n\022\034\n\030MsgI"
-  "DSubGame_TimeOutResp\020\013\022\035\n\031MsgIDSubGame_T"
-  "imeOutReady\020\014\022!\n\035MsgIDSubGame_TimeOutRea"
-  "dyResp\020\r\022 \n\034MsgIDSubGame_TimeOutKickResp"
-  "\020\016\022&\n\"MsgIDSubGame_NotifyTrusteeshipResp"
-  "\020\017\022&\n\"MsgIDSubGame_NotifySystemCheatResp"
-  "\020\024\022#\n\037MsgIDSubGame_NotifyCardTypeResp\020\025\022"
-  " \n\034MsgIDSubGame_NotifyIsMaxResp\020\026\022\'\n#Msg"
-  "IDSubGame_NotifyRemainDoubleResp\020\027\022 \n\034Ms"
-  "gIDSubGame_NotifyRoundResp\020\030\022\"\n\036MsgIDSub"
-  "Game_NotifyLastActResp\020\031b\006proto3"
+  "tiple\030\005 \001(\003\022\022\n\njoker_card\030\n \001(\005\022\025\n\rleft_"
+  "card_num\030\013 \001(\005\022\021\n\tout_cards\030\014 \003(\005\022\022\n\npla"
+  "y_index\030\r \003(\005\022\r\n\005cards\030\017 \003(\005\"U\n\025RMMsgNot"
+  "ifyActionResp\022\024\n\014cur_chair_id\030\001 \001(\005\022\023\n\013c"
+  "urrent_act\030\003 \001(\005\022\021\n\toper_time\030\004 \001(\005\"\210\001\n\013"
+  "RMMsgAction\022\020\n\010chair_id\030\001 \001(\005\022\020\n\010act_typ"
+  "e\030\002 \001(\005\022\021\n\tdest_card\030\003 \001(\005\022\024\n\014get_out_ca"
+  "rd\030\004 \001(\010\022,\n\017hand_group_info\030\005 \003(\0132\023.Rumm"
+  "y.RMColumnInfo\"\317\001\n\017RMMsgActionResp\022\020\n\010ch"
+  "air_id\030\001 \001(\005\022\020\n\010act_type\030\002 \001(\005\022\021\n\tdest_c"
+  "ard\030\003 \001(\005\022\024\n\014get_out_card\030\004 \001(\010\022\025\n\rdorp_"
+  "multiple\030\006 \001(\r\022\023\n\013auto_action\030\007 \001(\010\022\025\n\rl"
+  "eft_card_num\030\t \001(\005\022,\n\017hand_group_info\030\n "
+  "\003(\0132\023.Rummy.RMColumnInfo\"\227\001\n\021RMMsgAction"
+  "Choice\022\030\n\020determined_level\030\001 \001(\005\022\024\n\014is_d"
+  "etermine\030\002 \001(\010\022#\n\007choices\030\003 \003(\0132\022.Rummy."
+  "RMMsgAction\022-\n\021determined_action\030\004 \001(\0132\022"
+  ".Rummy.RMMsgAction\"M\n\017RMMsgGiveUpResp\022\020\n"
+  "\010chair_id\030\001 \001(\005\022\021\n\tloss_gold\030\002 \001(\005\022\025\n\rdo"
+  "rp_multiple\030\003 \001(\r\"c\n\017RMMsgGameResult\022\020\n\010"
+  "game_tax\030\001 \001(\005\022+\n\013player_info\030\002 \003(\0132\026.Ru"
+  "mmy.RMMsgPlayerInfo\022\021\n\tend_state\030\003 \001(\005\"D"
+  "\n\026RMMsgNotifyTrusteeship\022\022\n\nseat_index\030\001"
+  " \001(\005\022\026\n\016is_trusteeship\030\002 \001(\010\"5\n\024RMMsgNot"
+  "ifyPlayerAct\022\020\n\010chair_id\030\001 \001(\005\022\013\n\003act\030\002 "
+  "\001(\005*d\n\014ERMGameState\022\017\n\013GS_TP_READY\020\000\022\016\n\n"
+  "GS_TP_DEAL\020\001\022\021\n\rGS_TP_PLAYING\020\002\022\016\n\nGS_TP"
+  "_SHOW\020\003\022\020\n\014GS_TP_RESULT\020\004*B\n\013PlayerState"
+  "\022\014\n\010PS_READY\020\000\022\013\n\007PS_PLAY\020\001\022\013\n\007PS_GIVE\020\002"
+  "\022\013\n\007PS_FAIL\020\003*b\n\rERMGameAction\022\r\n\tInvald"
+  "Act\020\000\022\014\n\010DropCard\020\001\022\n\n\006NaCard\020\002\022\013\n\007ChuCa"
+  "rd\020\004\022\r\n\tSortsCard\020\010\022\014\n\010ShowCard\020\020*b\n\016ERM"
+  "ColCardType\022\016\n\nCOL_SINGLE\020\000\022\016\n\nCOL_BAO_Z"
+  "I\020\001\022\020\n\014COL_SHUN_ZHI\020\002\022\021\n\rCOL_QING_SHUN\020\003"
+  "\022\013\n\007COL_MAX\020\004*\211\005\n\017ERMMsgIDSubGame\022\025\n\021Msg"
+  "IDSubGame_Null\020\000\022\036\n\032MsgIDSubGame_GameSta"
+  "rtResp\020\001\022!\n\035MsgIDSubGame_NotifyActionRes"
+  "p\020\002\022\027\n\023MsgIDSubGame_Action\020\003\022\033\n\027MsgIDSub"
+  "Game_ActionResp\020\004\022\033\n\027MsgIDSubGame_GiveUp"
+  "Resp\020\005\022\037\n\033MsgIDSubGame_GameResultResp\020\006\022"
+  " \n\034MsgIDSubGame_NotifyStateResp\020\n\022\034\n\030Msg"
+  "IDSubGame_TimeOutResp\020\013\022\035\n\031MsgIDSubGame_"
+  "TimeOutReady\020\014\022!\n\035MsgIDSubGame_TimeOutRe"
+  "adyResp\020\r\022 \n\034MsgIDSubGame_TimeOutKickRes"
+  "p\020\016\022&\n\"MsgIDSubGame_NotifyTrusteeshipRes"
+  "p\020\017\022&\n\"MsgIDSubGame_NotifySystemCheatRes"
+  "p\020\024\022#\n\037MsgIDSubGame_NotifyCardTypeResp\020\025"
+  "\022 \n\034MsgIDSubGame_NotifyIsMaxResp\020\026\022\'\n#Ms"
+  "gIDSubGame_NotifyRemainDoubleResp\020\027\022 \n\034M"
+  "sgIDSubGame_NotifyRoundResp\020\030\022\"\n\036MsgIDSu"
+  "bGame_NotifyLastActResp\020\031b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Rummy_2eproto_deps[1] = {
 };
@@ -530,7 +530,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Rum
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Rummy_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Rummy_2eproto = {
-  false, false, descriptor_table_protodef_Rummy_2eproto, "Rummy.proto", 2792,
+  false, false, descriptor_table_protodef_Rummy_2eproto, "Rummy.proto", 2793,
   &descriptor_table_Rummy_2eproto_once, descriptor_table_Rummy_2eproto_sccs, descriptor_table_Rummy_2eproto_deps, 14, 0,
   schemas, file_default_instances, TableStruct_Rummy_2eproto::offsets,
   file_level_metadata_Rummy_2eproto, 14, file_level_enum_descriptors_Rummy_2eproto, file_level_service_descriptors_Rummy_2eproto,
@@ -2313,10 +2313,10 @@ const char* RMMsgGameStartResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 wild_card = 10;
+      // int32 joker_card = 10;
       case 10:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
-          wild_card_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          joker_card_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2415,10 +2415,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_max_multiple(), target);
   }
 
-  // int32 wild_card = 10;
-  if (this->wild_card() != 0) {
+  // int32 joker_card = 10;
+  if (this->joker_card() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(10, this->_internal_wild_card(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(10, this->_internal_joker_card(), target);
   }
 
   // int32 left_card_num = 11;
@@ -2550,11 +2550,11 @@ size_t RMMsgGameStartResp::ByteSizeLong() const {
         this->_internal_max_multiple());
   }
 
-  // int32 wild_card = 10;
-  if (this->wild_card() != 0) {
+  // int32 joker_card = 10;
+  if (this->joker_card() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_wild_card());
+        this->_internal_joker_card());
   }
 
   // int32 left_card_num = 11;
@@ -2613,8 +2613,8 @@ void RMMsgGameStartResp::MergeFrom(const RMMsgGameStartResp& from) {
   if (from.max_multiple() != 0) {
     _internal_set_max_multiple(from._internal_max_multiple());
   }
-  if (from.wild_card() != 0) {
-    _internal_set_wild_card(from._internal_wild_card());
+  if (from.joker_card() != 0) {
+    _internal_set_joker_card(from._internal_joker_card());
   }
   if (from.left_card_num() != 0) {
     _internal_set_left_card_num(from._internal_left_card_num());

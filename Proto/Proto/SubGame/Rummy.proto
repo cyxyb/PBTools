@@ -128,7 +128,7 @@ message RMMsgGameStartResp
 	int64				cell_score		= 4;	//底分
 	int64				max_multiple	= 5;	//最大倍数
 
-	int32				wild_card		= 10;	//百搭牌
+	int32				joker_card		= 10;	//百搭牌
 	int32				left_card_num	= 11;	//牌堆牌数量
 	repeated int32		out_cards		= 12;	//失效牌
 
