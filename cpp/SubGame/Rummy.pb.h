@@ -149,12 +149,14 @@ enum PlayerState : int {
   PS_PLAY = 1,
   PS_GIVE = 2,
   PS_FAIL = 3,
+  PS_SORT_CARD = 4,
+  PS_SHOW_HU = 5,
   PlayerState_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   PlayerState_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool PlayerState_IsValid(int value);
 constexpr PlayerState PlayerState_MIN = PS_READY;
-constexpr PlayerState PlayerState_MAX = PS_FAIL;
+constexpr PlayerState PlayerState_MAX = PS_SHOW_HU;
 constexpr int PlayerState_ARRAYSIZE = PlayerState_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* PlayerState_descriptor();

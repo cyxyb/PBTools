@@ -19,6 +19,8 @@ enum PlayerState
 	PS_PLAY			= 1;	//游戏
 	PS_GIVE			= 2;	//弃牌
 	PS_FAIL			= 3;	//失败
+	PS_SORT_CARD	= 4;	//理牌
+	PS_SHOW_HU		= 5;	//胡牌
 };
 
 //操作码

@@ -64,28 +64,29 @@ namespace Rummy {
             "ZXNoaXAYAiABKAgiNQoUUk1Nc2dOb3RpZnlQbGF5ZXJBY3QSEAoIY2hhaXJf",
             "aWQYASABKAUSCwoDYWN0GAIgASgFKmQKDEVSTUdhbWVTdGF0ZRIPCgtHU19U",
             "UF9SRUFEWRAAEg4KCkdTX1RQX0RFQUwQARIRCg1HU19UUF9QTEFZSU5HEAIS",
-            "DgoKR1NfVFBfU0hPVxADEhAKDEdTX1RQX1JFU1VMVBAEKkIKC1BsYXllclN0",
+            "DgoKR1NfVFBfU0hPVxADEhAKDEdTX1RQX1JFU1VMVBAEKmQKC1BsYXllclN0",
             "YXRlEgwKCFBTX1JFQURZEAASCwoHUFNfUExBWRABEgsKB1BTX0dJVkUQAhIL",
-            "CgdQU19GQUlMEAMqYgoNRVJNR2FtZUFjdGlvbhINCglJbnZhbGRBY3QQABIM",
-            "CghEcm9wQ2FyZBABEgoKBk5hQ2FyZBACEgsKB0NodUNhcmQQBBINCglTb3J0",
-            "c0NhcmQQCBIMCghTaG93Q2FyZBAQKmIKDkVSTUNvbENhcmRUeXBlEg4KCkNP",
-            "TF9TSU5HTEUQABIOCgpDT0xfQkFPX1pJEAESEAoMQ09MX1NIVU5fWkhJEAIS",
-            "EQoNQ09MX1FJTkdfU0hVThADEgsKB0NPTF9NQVgQBCqJBQoPRVJNTXNnSURT",
-            "dWJHYW1lEhUKEU1zZ0lEU3ViR2FtZV9OdWxsEAASHgoaTXNnSURTdWJHYW1l",
-            "X0dhbWVTdGFydFJlc3AQARIhCh1Nc2dJRFN1YkdhbWVfTm90aWZ5QWN0aW9u",
-            "UmVzcBACEhcKE01zZ0lEU3ViR2FtZV9BY3Rpb24QAxIbChdNc2dJRFN1Ykdh",
-            "bWVfQWN0aW9uUmVzcBAEEhsKF01zZ0lEU3ViR2FtZV9HaXZlVXBSZXNwEAUS",
-            "HwobTXNnSURTdWJHYW1lX0dhbWVSZXN1bHRSZXNwEAYSIAocTXNnSURTdWJH",
-            "YW1lX05vdGlmeVN0YXRlUmVzcBAKEhwKGE1zZ0lEU3ViR2FtZV9UaW1lT3V0",
-            "UmVzcBALEh0KGU1zZ0lEU3ViR2FtZV9UaW1lT3V0UmVhZHkQDBIhCh1Nc2dJ",
-            "RFN1YkdhbWVfVGltZU91dFJlYWR5UmVzcBANEiAKHE1zZ0lEU3ViR2FtZV9U",
-            "aW1lT3V0S2lja1Jlc3AQDhImCiJNc2dJRFN1YkdhbWVfTm90aWZ5VHJ1c3Rl",
-            "ZXNoaXBSZXNwEA8SJgoiTXNnSURTdWJHYW1lX05vdGlmeVN5c3RlbUNoZWF0",
-            "UmVzcBAUEiMKH01zZ0lEU3ViR2FtZV9Ob3RpZnlDYXJkVHlwZVJlc3AQFRIg",
-            "ChxNc2dJRFN1YkdhbWVfTm90aWZ5SXNNYXhSZXNwEBYSJwojTXNnSURTdWJH",
-            "YW1lX05vdGlmeVJlbWFpbkRvdWJsZVJlc3AQFxIgChxNc2dJRFN1YkdhbWVf",
-            "Tm90aWZ5Um91bmRSZXNwEBgSIgoeTXNnSURTdWJHYW1lX05vdGlmeUxhc3RB",
-            "Y3RSZXNwEBliBnByb3RvMw=="));
+            "CgdQU19GQUlMEAMSEAoMUFNfU09SVF9DQVJEEAQSDgoKUFNfU0hPV19IVRAF",
+            "KmIKDUVSTUdhbWVBY3Rpb24SDQoJSW52YWxkQWN0EAASDAoIRHJvcENhcmQQ",
+            "ARIKCgZOYUNhcmQQAhILCgdDaHVDYXJkEAQSDQoJU29ydHNDYXJkEAgSDAoI",
+            "U2hvd0NhcmQQECpiCg5FUk1Db2xDYXJkVHlwZRIOCgpDT0xfU0lOR0xFEAAS",
+            "DgoKQ09MX0JBT19aSRABEhAKDENPTF9TSFVOX1pISRACEhEKDUNPTF9RSU5H",
+            "X1NIVU4QAxILCgdDT0xfTUFYEAQqiQUKD0VSTU1zZ0lEU3ViR2FtZRIVChFN",
+            "c2dJRFN1YkdhbWVfTnVsbBAAEh4KGk1zZ0lEU3ViR2FtZV9HYW1lU3RhcnRS",
+            "ZXNwEAESIQodTXNnSURTdWJHYW1lX05vdGlmeUFjdGlvblJlc3AQAhIXChNN",
+            "c2dJRFN1YkdhbWVfQWN0aW9uEAMSGwoXTXNnSURTdWJHYW1lX0FjdGlvblJl",
+            "c3AQBBIbChdNc2dJRFN1YkdhbWVfR2l2ZVVwUmVzcBAFEh8KG01zZ0lEU3Vi",
+            "R2FtZV9HYW1lUmVzdWx0UmVzcBAGEiAKHE1zZ0lEU3ViR2FtZV9Ob3RpZnlT",
+            "dGF0ZVJlc3AQChIcChhNc2dJRFN1YkdhbWVfVGltZU91dFJlc3AQCxIdChlN",
+            "c2dJRFN1YkdhbWVfVGltZU91dFJlYWR5EAwSIQodTXNnSURTdWJHYW1lX1Rp",
+            "bWVPdXRSZWFkeVJlc3AQDRIgChxNc2dJRFN1YkdhbWVfVGltZU91dEtpY2tS",
+            "ZXNwEA4SJgoiTXNnSURTdWJHYW1lX05vdGlmeVRydXN0ZWVzaGlwUmVzcBAP",
+            "EiYKIk1zZ0lEU3ViR2FtZV9Ob3RpZnlTeXN0ZW1DaGVhdFJlc3AQFBIjCh9N",
+            "c2dJRFN1YkdhbWVfTm90aWZ5Q2FyZFR5cGVSZXNwEBUSIAocTXNnSURTdWJH",
+            "YW1lX05vdGlmeUlzTWF4UmVzcBAWEicKI01zZ0lEU3ViR2FtZV9Ob3RpZnlS",
+            "ZW1haW5Eb3VibGVSZXNwEBcSIAocTXNnSURTdWJHYW1lX05vdGlmeVJvdW5k",
+            "UmVzcBAYEiIKHk1zZ0lEU3ViR2FtZV9Ob3RpZnlMYXN0QWN0UmVzcBAZYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Rummy.ERMGameState), typeof(global::Rummy.PlayerState), typeof(global::Rummy.ERMGameAction), typeof(global::Rummy.ERMColCardType), typeof(global::Rummy.ERMMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -155,6 +156,14 @@ namespace Rummy {
     ///失败
     /// </summary>
     [pbr::OriginalName("PS_FAIL")] PsFail = 3,
+    /// <summary>
+    ///理牌
+    /// </summary>
+    [pbr::OriginalName("PS_SORT_CARD")] PsSortCard = 4,
+    /// <summary>
+    ///胡牌
+    /// </summary>
+    [pbr::OriginalName("PS_SHOW_HU")] PsShowHu = 5,
   }
 
   /// <summary>
