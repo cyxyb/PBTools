@@ -161,10 +161,10 @@ message RMMsgActionResp
 	int32					act_type		= 2;	//操作标示
 	int32					dest_card		= 3;	//目标牌
 	bool					get_out_card	= 4;	//是否拿最后一张了的牌
-	uint32					dorp_multiple	= 6;	//弃牌倍数
+	uint32					drop_multiple	= 6;	//弃牌倍数
 	bool 					auto_action		= 7;	//是否自动
 	int32					left_card_num	= 9;	//剩余牌堆数量
-	repeated RMColumnInfo 	hand_group_info	= 10;	//手牌分组
+	//repeated RMColumnInfo 	hand_group_info	= 10;	//手牌分组
 }
 
 message RMMsgActionChoice
@@ -180,7 +180,7 @@ message RMMsgGiveUpResp
 {
 	int32					chair_id		= 1;	//玩家椅子号
 	int32					loss_gold		= 2;	//输分
-	uint32					dorp_multiple	= 3;	//弃牌倍数
+	uint32					drop_multiple	= 3;	//弃牌倍数
 }
 
 //游戏结果                                  

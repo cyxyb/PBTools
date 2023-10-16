@@ -1982,33 +1982,14 @@ class RMMsgActionResp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kHandGroupInfoFieldNumber = 10,
     kChairIdFieldNumber = 1,
     kActTypeFieldNumber = 2,
     kDestCardFieldNumber = 3,
     kGetOutCardFieldNumber = 4,
     kAutoActionFieldNumber = 7,
-    kDorpMultipleFieldNumber = 6,
+    kDropMultipleFieldNumber = 6,
     kLeftCardNumFieldNumber = 9,
   };
-  // repeated .Rummy.RMColumnInfo hand_group_info = 10;
-  int hand_group_info_size() const;
-  private:
-  int _internal_hand_group_info_size() const;
-  public:
-  void clear_hand_group_info();
-  ::Rummy::RMColumnInfo* mutable_hand_group_info(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Rummy::RMColumnInfo >*
-      mutable_hand_group_info();
-  private:
-  const ::Rummy::RMColumnInfo& _internal_hand_group_info(int index) const;
-  ::Rummy::RMColumnInfo* _internal_add_hand_group_info();
-  public:
-  const ::Rummy::RMColumnInfo& hand_group_info(int index) const;
-  ::Rummy::RMColumnInfo* add_hand_group_info();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Rummy::RMColumnInfo >&
-      hand_group_info() const;
-
   // int32 chair_id = 1;
   void clear_chair_id();
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id() const;
@@ -2054,13 +2035,13 @@ class RMMsgActionResp PROTOBUF_FINAL :
   void _internal_set_auto_action(bool value);
   public:
 
-  // uint32 dorp_multiple = 6;
-  void clear_dorp_multiple();
-  ::PROTOBUF_NAMESPACE_ID::uint32 dorp_multiple() const;
-  void set_dorp_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value);
+  // uint32 drop_multiple = 6;
+  void clear_drop_multiple();
+  ::PROTOBUF_NAMESPACE_ID::uint32 drop_multiple() const;
+  void set_drop_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::uint32 _internal_dorp_multiple() const;
-  void _internal_set_dorp_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value);
+  ::PROTOBUF_NAMESPACE_ID::uint32 _internal_drop_multiple() const;
+  void _internal_set_drop_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value);
   public:
 
   // int32 left_card_num = 9;
@@ -2079,13 +2060,12 @@ class RMMsgActionResp PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Rummy::RMColumnInfo > hand_group_info_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 act_type_;
   ::PROTOBUF_NAMESPACE_ID::int32 dest_card_;
   bool get_out_card_;
   bool auto_action_;
-  ::PROTOBUF_NAMESPACE_ID::uint32 dorp_multiple_;
+  ::PROTOBUF_NAMESPACE_ID::uint32 drop_multiple_;
   ::PROTOBUF_NAMESPACE_ID::int32 left_card_num_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Rummy_2eproto;
@@ -2393,7 +2373,7 @@ class RMMsgGiveUpResp PROTOBUF_FINAL :
   enum : int {
     kChairIdFieldNumber = 1,
     kLossGoldFieldNumber = 2,
-    kDorpMultipleFieldNumber = 3,
+    kDropMultipleFieldNumber = 3,
   };
   // int32 chair_id = 1;
   void clear_chair_id();
@@ -2413,13 +2393,13 @@ class RMMsgGiveUpResp PROTOBUF_FINAL :
   void _internal_set_loss_gold(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // uint32 dorp_multiple = 3;
-  void clear_dorp_multiple();
-  ::PROTOBUF_NAMESPACE_ID::uint32 dorp_multiple() const;
-  void set_dorp_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value);
+  // uint32 drop_multiple = 3;
+  void clear_drop_multiple();
+  ::PROTOBUF_NAMESPACE_ID::uint32 drop_multiple() const;
+  void set_drop_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::uint32 _internal_dorp_multiple() const;
-  void _internal_set_dorp_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value);
+  ::PROTOBUF_NAMESPACE_ID::uint32 _internal_drop_multiple() const;
+  void _internal_set_drop_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:Rummy.RMMsgGiveUpResp)
@@ -2431,7 +2411,7 @@ class RMMsgGiveUpResp PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 loss_gold_;
-  ::PROTOBUF_NAMESPACE_ID::uint32 dorp_multiple_;
+  ::PROTOBUF_NAMESPACE_ID::uint32 drop_multiple_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Rummy_2eproto;
 };
@@ -4125,24 +4105,24 @@ inline void RMMsgActionResp::set_get_out_card(bool value) {
   // @@protoc_insertion_point(field_set:Rummy.RMMsgActionResp.get_out_card)
 }
 
-// uint32 dorp_multiple = 6;
-inline void RMMsgActionResp::clear_dorp_multiple() {
-  dorp_multiple_ = 0u;
+// uint32 drop_multiple = 6;
+inline void RMMsgActionResp::clear_drop_multiple() {
+  drop_multiple_ = 0u;
 }
-inline ::PROTOBUF_NAMESPACE_ID::uint32 RMMsgActionResp::_internal_dorp_multiple() const {
-  return dorp_multiple_;
+inline ::PROTOBUF_NAMESPACE_ID::uint32 RMMsgActionResp::_internal_drop_multiple() const {
+  return drop_multiple_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::uint32 RMMsgActionResp::dorp_multiple() const {
-  // @@protoc_insertion_point(field_get:Rummy.RMMsgActionResp.dorp_multiple)
-  return _internal_dorp_multiple();
+inline ::PROTOBUF_NAMESPACE_ID::uint32 RMMsgActionResp::drop_multiple() const {
+  // @@protoc_insertion_point(field_get:Rummy.RMMsgActionResp.drop_multiple)
+  return _internal_drop_multiple();
 }
-inline void RMMsgActionResp::_internal_set_dorp_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+inline void RMMsgActionResp::_internal_set_drop_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value) {
   
-  dorp_multiple_ = value;
+  drop_multiple_ = value;
 }
-inline void RMMsgActionResp::set_dorp_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value) {
-  _internal_set_dorp_multiple(value);
-  // @@protoc_insertion_point(field_set:Rummy.RMMsgActionResp.dorp_multiple)
+inline void RMMsgActionResp::set_drop_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+  _internal_set_drop_multiple(value);
+  // @@protoc_insertion_point(field_set:Rummy.RMMsgActionResp.drop_multiple)
 }
 
 // bool auto_action = 7;
@@ -4183,45 +4163,6 @@ inline void RMMsgActionResp::_internal_set_left_card_num(::PROTOBUF_NAMESPACE_ID
 inline void RMMsgActionResp::set_left_card_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_left_card_num(value);
   // @@protoc_insertion_point(field_set:Rummy.RMMsgActionResp.left_card_num)
-}
-
-// repeated .Rummy.RMColumnInfo hand_group_info = 10;
-inline int RMMsgActionResp::_internal_hand_group_info_size() const {
-  return hand_group_info_.size();
-}
-inline int RMMsgActionResp::hand_group_info_size() const {
-  return _internal_hand_group_info_size();
-}
-inline void RMMsgActionResp::clear_hand_group_info() {
-  hand_group_info_.Clear();
-}
-inline ::Rummy::RMColumnInfo* RMMsgActionResp::mutable_hand_group_info(int index) {
-  // @@protoc_insertion_point(field_mutable:Rummy.RMMsgActionResp.hand_group_info)
-  return hand_group_info_.Mutable(index);
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Rummy::RMColumnInfo >*
-RMMsgActionResp::mutable_hand_group_info() {
-  // @@protoc_insertion_point(field_mutable_list:Rummy.RMMsgActionResp.hand_group_info)
-  return &hand_group_info_;
-}
-inline const ::Rummy::RMColumnInfo& RMMsgActionResp::_internal_hand_group_info(int index) const {
-  return hand_group_info_.Get(index);
-}
-inline const ::Rummy::RMColumnInfo& RMMsgActionResp::hand_group_info(int index) const {
-  // @@protoc_insertion_point(field_get:Rummy.RMMsgActionResp.hand_group_info)
-  return _internal_hand_group_info(index);
-}
-inline ::Rummy::RMColumnInfo* RMMsgActionResp::_internal_add_hand_group_info() {
-  return hand_group_info_.Add();
-}
-inline ::Rummy::RMColumnInfo* RMMsgActionResp::add_hand_group_info() {
-  // @@protoc_insertion_point(field_add:Rummy.RMMsgActionResp.hand_group_info)
-  return _internal_add_hand_group_info();
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Rummy::RMColumnInfo >&
-RMMsgActionResp::hand_group_info() const {
-  // @@protoc_insertion_point(field_list:Rummy.RMMsgActionResp.hand_group_info)
-  return hand_group_info_;
 }
 
 // -------------------------------------------------------------------
@@ -4434,24 +4375,24 @@ inline void RMMsgGiveUpResp::set_loss_gold(::PROTOBUF_NAMESPACE_ID::int32 value)
   // @@protoc_insertion_point(field_set:Rummy.RMMsgGiveUpResp.loss_gold)
 }
 
-// uint32 dorp_multiple = 3;
-inline void RMMsgGiveUpResp::clear_dorp_multiple() {
-  dorp_multiple_ = 0u;
+// uint32 drop_multiple = 3;
+inline void RMMsgGiveUpResp::clear_drop_multiple() {
+  drop_multiple_ = 0u;
 }
-inline ::PROTOBUF_NAMESPACE_ID::uint32 RMMsgGiveUpResp::_internal_dorp_multiple() const {
-  return dorp_multiple_;
+inline ::PROTOBUF_NAMESPACE_ID::uint32 RMMsgGiveUpResp::_internal_drop_multiple() const {
+  return drop_multiple_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::uint32 RMMsgGiveUpResp::dorp_multiple() const {
-  // @@protoc_insertion_point(field_get:Rummy.RMMsgGiveUpResp.dorp_multiple)
-  return _internal_dorp_multiple();
+inline ::PROTOBUF_NAMESPACE_ID::uint32 RMMsgGiveUpResp::drop_multiple() const {
+  // @@protoc_insertion_point(field_get:Rummy.RMMsgGiveUpResp.drop_multiple)
+  return _internal_drop_multiple();
 }
-inline void RMMsgGiveUpResp::_internal_set_dorp_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+inline void RMMsgGiveUpResp::_internal_set_drop_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value) {
   
-  dorp_multiple_ = value;
+  drop_multiple_ = value;
 }
-inline void RMMsgGiveUpResp::set_dorp_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value) {
-  _internal_set_dorp_multiple(value);
-  // @@protoc_insertion_point(field_set:Rummy.RMMsgGiveUpResp.dorp_multiple)
+inline void RMMsgGiveUpResp::set_drop_multiple(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+  _internal_set_drop_multiple(value);
+  // @@protoc_insertion_point(field_set:Rummy.RMMsgGiveUpResp.drop_multiple)
 }
 
 // -------------------------------------------------------------------

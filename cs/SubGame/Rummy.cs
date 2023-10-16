@@ -48,45 +48,44 @@ namespace Rummy {
             "AyABKAUSEQoJb3Blcl90aW1lGAQgASgFIogBCgtSTU1zZ0FjdGlvbhIQCghj",
             "aGFpcl9pZBgBIAEoBRIQCghhY3RfdHlwZRgCIAEoBRIRCglkZXN0X2NhcmQY",
             "AyABKAUSFAoMZ2V0X291dF9jYXJkGAQgASgIEiwKD2hhbmRfZ3JvdXBfaW5m",
-            "bxgFIAMoCzITLlJ1bW15LlJNQ29sdW1uSW5mbyLPAQoPUk1Nc2dBY3Rpb25S",
+            "bxgFIAMoCzITLlJ1bW15LlJNQ29sdW1uSW5mbyKhAQoPUk1Nc2dBY3Rpb25S",
             "ZXNwEhAKCGNoYWlyX2lkGAEgASgFEhAKCGFjdF90eXBlGAIgASgFEhEKCWRl",
-            "c3RfY2FyZBgDIAEoBRIUCgxnZXRfb3V0X2NhcmQYBCABKAgSFQoNZG9ycF9t",
+            "c3RfY2FyZBgDIAEoBRIUCgxnZXRfb3V0X2NhcmQYBCABKAgSFQoNZHJvcF9t",
             "dWx0aXBsZRgGIAEoDRITCgthdXRvX2FjdGlvbhgHIAEoCBIVCg1sZWZ0X2Nh",
-            "cmRfbnVtGAkgASgFEiwKD2hhbmRfZ3JvdXBfaW5mbxgKIAMoCzITLlJ1bW15",
-            "LlJNQ29sdW1uSW5mbyKXAQoRUk1Nc2dBY3Rpb25DaG9pY2USGAoQZGV0ZXJt",
-            "aW5lZF9sZXZlbBgBIAEoBRIUCgxpc19kZXRlcm1pbmUYAiABKAgSIwoHY2hv",
-            "aWNlcxgDIAMoCzISLlJ1bW15LlJNTXNnQWN0aW9uEi0KEWRldGVybWluZWRf",
-            "YWN0aW9uGAQgASgLMhIuUnVtbXkuUk1Nc2dBY3Rpb24iTQoPUk1Nc2dHaXZl",
-            "VXBSZXNwEhAKCGNoYWlyX2lkGAEgASgFEhEKCWxvc3NfZ29sZBgCIAEoBRIV",
-            "Cg1kb3JwX211bHRpcGxlGAMgASgNImMKD1JNTXNnR2FtZVJlc3VsdBIQCghn",
-            "YW1lX3RheBgBIAEoBRIrCgtwbGF5ZXJfaW5mbxgCIAMoCzIWLlJ1bW15LlJN",
-            "TXNnUGxheWVySW5mbxIRCgllbmRfc3RhdGUYAyABKAUiRAoWUk1Nc2dOb3Rp",
-            "ZnlUcnVzdGVlc2hpcBISCgpzZWF0X2luZGV4GAEgASgFEhYKDmlzX3RydXN0",
-            "ZWVzaGlwGAIgASgIIjUKFFJNTXNnTm90aWZ5UGxheWVyQWN0EhAKCGNoYWly",
-            "X2lkGAEgASgFEgsKA2FjdBgCIAEoBSpkCgxFUk1HYW1lU3RhdGUSDwoLR1Nf",
-            "VFBfUkVBRFkQABIOCgpHU19UUF9ERUFMEAESEQoNR1NfVFBfUExBWUlORxAC",
-            "Eg4KCkdTX1RQX1NIT1cQAxIQCgxHU19UUF9SRVNVTFQQBCpCCgtQbGF5ZXJT",
-            "dGF0ZRIMCghQU19SRUFEWRAAEgsKB1BTX1BMQVkQARILCgdQU19HSVZFEAIS",
-            "CwoHUFNfRkFJTBADKmIKDUVSTUdhbWVBY3Rpb24SDQoJSW52YWxkQWN0EAAS",
-            "DAoIRHJvcENhcmQQARIKCgZOYUNhcmQQAhILCgdDaHVDYXJkEAQSDQoJU29y",
-            "dHNDYXJkEAgSDAoIU2hvd0NhcmQQECpiCg5FUk1Db2xDYXJkVHlwZRIOCgpD",
-            "T0xfU0lOR0xFEAASDgoKQ09MX0JBT19aSRABEhAKDENPTF9TSFVOX1pISRAC",
-            "EhEKDUNPTF9RSU5HX1NIVU4QAxILCgdDT0xfTUFYEAQqiQUKD0VSTU1zZ0lE",
-            "U3ViR2FtZRIVChFNc2dJRFN1YkdhbWVfTnVsbBAAEh4KGk1zZ0lEU3ViR2Ft",
-            "ZV9HYW1lU3RhcnRSZXNwEAESIQodTXNnSURTdWJHYW1lX05vdGlmeUFjdGlv",
-            "blJlc3AQAhIXChNNc2dJRFN1YkdhbWVfQWN0aW9uEAMSGwoXTXNnSURTdWJH",
-            "YW1lX0FjdGlvblJlc3AQBBIbChdNc2dJRFN1YkdhbWVfR2l2ZVVwUmVzcBAF",
-            "Eh8KG01zZ0lEU3ViR2FtZV9HYW1lUmVzdWx0UmVzcBAGEiAKHE1zZ0lEU3Vi",
-            "R2FtZV9Ob3RpZnlTdGF0ZVJlc3AQChIcChhNc2dJRFN1YkdhbWVfVGltZU91",
-            "dFJlc3AQCxIdChlNc2dJRFN1YkdhbWVfVGltZU91dFJlYWR5EAwSIQodTXNn",
-            "SURTdWJHYW1lX1RpbWVPdXRSZWFkeVJlc3AQDRIgChxNc2dJRFN1YkdhbWVf",
-            "VGltZU91dEtpY2tSZXNwEA4SJgoiTXNnSURTdWJHYW1lX05vdGlmeVRydXN0",
-            "ZWVzaGlwUmVzcBAPEiYKIk1zZ0lEU3ViR2FtZV9Ob3RpZnlTeXN0ZW1DaGVh",
-            "dFJlc3AQFBIjCh9Nc2dJRFN1YkdhbWVfTm90aWZ5Q2FyZFR5cGVSZXNwEBUS",
-            "IAocTXNnSURTdWJHYW1lX05vdGlmeUlzTWF4UmVzcBAWEicKI01zZ0lEU3Vi",
-            "R2FtZV9Ob3RpZnlSZW1haW5Eb3VibGVSZXNwEBcSIAocTXNnSURTdWJHYW1l",
-            "X05vdGlmeVJvdW5kUmVzcBAYEiIKHk1zZ0lEU3ViR2FtZV9Ob3RpZnlMYXN0",
-            "QWN0UmVzcBAZYgZwcm90bzM="));
+            "cmRfbnVtGAkgASgFIpcBChFSTU1zZ0FjdGlvbkNob2ljZRIYChBkZXRlcm1p",
+            "bmVkX2xldmVsGAEgASgFEhQKDGlzX2RldGVybWluZRgCIAEoCBIjCgdjaG9p",
+            "Y2VzGAMgAygLMhIuUnVtbXkuUk1Nc2dBY3Rpb24SLQoRZGV0ZXJtaW5lZF9h",
+            "Y3Rpb24YBCABKAsyEi5SdW1teS5STU1zZ0FjdGlvbiJNCg9STU1zZ0dpdmVV",
+            "cFJlc3ASEAoIY2hhaXJfaWQYASABKAUSEQoJbG9zc19nb2xkGAIgASgFEhUK",
+            "DWRyb3BfbXVsdGlwbGUYAyABKA0iYwoPUk1Nc2dHYW1lUmVzdWx0EhAKCGdh",
+            "bWVfdGF4GAEgASgFEisKC3BsYXllcl9pbmZvGAIgAygLMhYuUnVtbXkuUk1N",
+            "c2dQbGF5ZXJJbmZvEhEKCWVuZF9zdGF0ZRgDIAEoBSJEChZSTU1zZ05vdGlm",
+            "eVRydXN0ZWVzaGlwEhIKCnNlYXRfaW5kZXgYASABKAUSFgoOaXNfdHJ1c3Rl",
+            "ZXNoaXAYAiABKAgiNQoUUk1Nc2dOb3RpZnlQbGF5ZXJBY3QSEAoIY2hhaXJf",
+            "aWQYASABKAUSCwoDYWN0GAIgASgFKmQKDEVSTUdhbWVTdGF0ZRIPCgtHU19U",
+            "UF9SRUFEWRAAEg4KCkdTX1RQX0RFQUwQARIRCg1HU19UUF9QTEFZSU5HEAIS",
+            "DgoKR1NfVFBfU0hPVxADEhAKDEdTX1RQX1JFU1VMVBAEKkIKC1BsYXllclN0",
+            "YXRlEgwKCFBTX1JFQURZEAASCwoHUFNfUExBWRABEgsKB1BTX0dJVkUQAhIL",
+            "CgdQU19GQUlMEAMqYgoNRVJNR2FtZUFjdGlvbhINCglJbnZhbGRBY3QQABIM",
+            "CghEcm9wQ2FyZBABEgoKBk5hQ2FyZBACEgsKB0NodUNhcmQQBBINCglTb3J0",
+            "c0NhcmQQCBIMCghTaG93Q2FyZBAQKmIKDkVSTUNvbENhcmRUeXBlEg4KCkNP",
+            "TF9TSU5HTEUQABIOCgpDT0xfQkFPX1pJEAESEAoMQ09MX1NIVU5fWkhJEAIS",
+            "EQoNQ09MX1FJTkdfU0hVThADEgsKB0NPTF9NQVgQBCqJBQoPRVJNTXNnSURT",
+            "dWJHYW1lEhUKEU1zZ0lEU3ViR2FtZV9OdWxsEAASHgoaTXNnSURTdWJHYW1l",
+            "X0dhbWVTdGFydFJlc3AQARIhCh1Nc2dJRFN1YkdhbWVfTm90aWZ5QWN0aW9u",
+            "UmVzcBACEhcKE01zZ0lEU3ViR2FtZV9BY3Rpb24QAxIbChdNc2dJRFN1Ykdh",
+            "bWVfQWN0aW9uUmVzcBAEEhsKF01zZ0lEU3ViR2FtZV9HaXZlVXBSZXNwEAUS",
+            "HwobTXNnSURTdWJHYW1lX0dhbWVSZXN1bHRSZXNwEAYSIAocTXNnSURTdWJH",
+            "YW1lX05vdGlmeVN0YXRlUmVzcBAKEhwKGE1zZ0lEU3ViR2FtZV9UaW1lT3V0",
+            "UmVzcBALEh0KGU1zZ0lEU3ViR2FtZV9UaW1lT3V0UmVhZHkQDBIhCh1Nc2dJ",
+            "RFN1YkdhbWVfVGltZU91dFJlYWR5UmVzcBANEiAKHE1zZ0lEU3ViR2FtZV9U",
+            "aW1lT3V0S2lja1Jlc3AQDhImCiJNc2dJRFN1YkdhbWVfTm90aWZ5VHJ1c3Rl",
+            "ZXNoaXBSZXNwEA8SJgoiTXNnSURTdWJHYW1lX05vdGlmeVN5c3RlbUNoZWF0",
+            "UmVzcBAUEiMKH01zZ0lEU3ViR2FtZV9Ob3RpZnlDYXJkVHlwZVJlc3AQFRIg",
+            "ChxNc2dJRFN1YkdhbWVfTm90aWZ5SXNNYXhSZXNwEBYSJwojTXNnSURTdWJH",
+            "YW1lX05vdGlmeVJlbWFpbkRvdWJsZVJlc3AQFxIgChxNc2dJRFN1YkdhbWVf",
+            "Tm90aWZ5Um91bmRSZXNwEBgSIgoeTXNnSURTdWJHYW1lX05vdGlmeUxhc3RB",
+            "Y3RSZXNwEBliBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Rummy.ERMGameState), typeof(global::Rummy.PlayerState), typeof(global::Rummy.ERMGameAction), typeof(global::Rummy.ERMColCardType), typeof(global::Rummy.ERMMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -98,9 +97,9 @@ namespace Rummy {
             new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgGameStartResp), global::Rummy.RMMsgGameStartResp.Parser, new[]{ "CurChairId", "BankerChairId", "MaxScore", "CellScore", "MaxMultiple", "JokerCard", "LeftCardNum", "OutCards", "PlayIndex", "Cards" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgNotifyActionResp), global::Rummy.RMMsgNotifyActionResp.Parser, new[]{ "CurChairId", "CurrentAct", "OperTime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgAction), global::Rummy.RMMsgAction.Parser, new[]{ "ChairId", "ActType", "DestCard", "GetOutCard", "HandGroupInfo" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgActionResp), global::Rummy.RMMsgActionResp.Parser, new[]{ "ChairId", "ActType", "DestCard", "GetOutCard", "DorpMultiple", "AutoAction", "LeftCardNum", "HandGroupInfo" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgActionResp), global::Rummy.RMMsgActionResp.Parser, new[]{ "ChairId", "ActType", "DestCard", "GetOutCard", "DropMultiple", "AutoAction", "LeftCardNum" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgActionChoice), global::Rummy.RMMsgActionChoice.Parser, new[]{ "DeterminedLevel", "IsDetermine", "Choices", "DeterminedAction" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgGiveUpResp), global::Rummy.RMMsgGiveUpResp.Parser, new[]{ "ChairId", "LossGold", "DorpMultiple" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgGiveUpResp), global::Rummy.RMMsgGiveUpResp.Parser, new[]{ "ChairId", "LossGold", "DropMultiple" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgGameResult), global::Rummy.RMMsgGameResult.Parser, new[]{ "GameTax", "PlayerInfo", "EndState" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgNotifyTrusteeship), global::Rummy.RMMsgNotifyTrusteeship.Parser, new[]{ "SeatIndex", "IsTrusteeship" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgNotifyPlayerAct), global::Rummy.RMMsgNotifyPlayerAct.Parser, new[]{ "ChairId", "Act" }, null, null, null, null)
@@ -3004,10 +3003,9 @@ namespace Rummy {
       actType_ = other.actType_;
       destCard_ = other.destCard_;
       getOutCard_ = other.getOutCard_;
-      dorpMultiple_ = other.dorpMultiple_;
+      dropMultiple_ = other.dropMultiple_;
       autoAction_ = other.autoAction_;
       leftCardNum_ = other.leftCardNum_;
-      handGroupInfo_ = other.handGroupInfo_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3069,17 +3067,17 @@ namespace Rummy {
       }
     }
 
-    /// <summary>Field number for the "dorp_multiple" field.</summary>
-    public const int DorpMultipleFieldNumber = 6;
-    private uint dorpMultiple_;
+    /// <summary>Field number for the "drop_multiple" field.</summary>
+    public const int DropMultipleFieldNumber = 6;
+    private uint dropMultiple_;
     /// <summary>
     ///弃牌倍数
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint DorpMultiple {
-      get { return dorpMultiple_; }
+    public uint DropMultiple {
+      get { return dropMultiple_; }
       set {
-        dorpMultiple_ = value;
+        dropMultiple_ = value;
       }
     }
 
@@ -3111,19 +3109,6 @@ namespace Rummy {
       }
     }
 
-    /// <summary>Field number for the "hand_group_info" field.</summary>
-    public const int HandGroupInfoFieldNumber = 10;
-    private static readonly pb::FieldCodec<global::Rummy.RMColumnInfo> _repeated_handGroupInfo_codec
-        = pb::FieldCodec.ForMessage(82, global::Rummy.RMColumnInfo.Parser);
-    private readonly pbc::RepeatedField<global::Rummy.RMColumnInfo> handGroupInfo_ = new pbc::RepeatedField<global::Rummy.RMColumnInfo>();
-    /// <summary>
-    ///手牌分组
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Rummy.RMColumnInfo> HandGroupInfo {
-      get { return handGroupInfo_; }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as RMMsgActionResp);
@@ -3141,10 +3126,9 @@ namespace Rummy {
       if (ActType != other.ActType) return false;
       if (DestCard != other.DestCard) return false;
       if (GetOutCard != other.GetOutCard) return false;
-      if (DorpMultiple != other.DorpMultiple) return false;
+      if (DropMultiple != other.DropMultiple) return false;
       if (AutoAction != other.AutoAction) return false;
       if (LeftCardNum != other.LeftCardNum) return false;
-      if(!handGroupInfo_.Equals(other.handGroupInfo_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -3155,10 +3139,9 @@ namespace Rummy {
       if (ActType != 0) hash ^= ActType.GetHashCode();
       if (DestCard != 0) hash ^= DestCard.GetHashCode();
       if (GetOutCard != false) hash ^= GetOutCard.GetHashCode();
-      if (DorpMultiple != 0) hash ^= DorpMultiple.GetHashCode();
+      if (DropMultiple != 0) hash ^= DropMultiple.GetHashCode();
       if (AutoAction != false) hash ^= AutoAction.GetHashCode();
       if (LeftCardNum != 0) hash ^= LeftCardNum.GetHashCode();
-      hash ^= handGroupInfo_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3191,9 +3174,9 @@ namespace Rummy {
         output.WriteRawTag(32);
         output.WriteBool(GetOutCard);
       }
-      if (DorpMultiple != 0) {
+      if (DropMultiple != 0) {
         output.WriteRawTag(48);
-        output.WriteUInt32(DorpMultiple);
+        output.WriteUInt32(DropMultiple);
       }
       if (AutoAction != false) {
         output.WriteRawTag(56);
@@ -3203,7 +3186,6 @@ namespace Rummy {
         output.WriteRawTag(72);
         output.WriteInt32(LeftCardNum);
       }
-      handGroupInfo_.WriteTo(output, _repeated_handGroupInfo_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3229,9 +3211,9 @@ namespace Rummy {
         output.WriteRawTag(32);
         output.WriteBool(GetOutCard);
       }
-      if (DorpMultiple != 0) {
+      if (DropMultiple != 0) {
         output.WriteRawTag(48);
-        output.WriteUInt32(DorpMultiple);
+        output.WriteUInt32(DropMultiple);
       }
       if (AutoAction != false) {
         output.WriteRawTag(56);
@@ -3241,7 +3223,6 @@ namespace Rummy {
         output.WriteRawTag(72);
         output.WriteInt32(LeftCardNum);
       }
-      handGroupInfo_.WriteTo(ref output, _repeated_handGroupInfo_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -3263,8 +3244,8 @@ namespace Rummy {
       if (GetOutCard != false) {
         size += 1 + 1;
       }
-      if (DorpMultiple != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(DorpMultiple);
+      if (DropMultiple != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(DropMultiple);
       }
       if (AutoAction != false) {
         size += 1 + 1;
@@ -3272,7 +3253,6 @@ namespace Rummy {
       if (LeftCardNum != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(LeftCardNum);
       }
-      size += handGroupInfo_.CalculateSize(_repeated_handGroupInfo_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -3296,8 +3276,8 @@ namespace Rummy {
       if (other.GetOutCard != false) {
         GetOutCard = other.GetOutCard;
       }
-      if (other.DorpMultiple != 0) {
-        DorpMultiple = other.DorpMultiple;
+      if (other.DropMultiple != 0) {
+        DropMultiple = other.DropMultiple;
       }
       if (other.AutoAction != false) {
         AutoAction = other.AutoAction;
@@ -3305,7 +3285,6 @@ namespace Rummy {
       if (other.LeftCardNum != 0) {
         LeftCardNum = other.LeftCardNum;
       }
-      handGroupInfo_.Add(other.handGroupInfo_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -3337,7 +3316,7 @@ namespace Rummy {
             break;
           }
           case 48: {
-            DorpMultiple = input.ReadUInt32();
+            DropMultiple = input.ReadUInt32();
             break;
           }
           case 56: {
@@ -3346,10 +3325,6 @@ namespace Rummy {
           }
           case 72: {
             LeftCardNum = input.ReadInt32();
-            break;
-          }
-          case 82: {
-            handGroupInfo_.AddEntriesFrom(input, _repeated_handGroupInfo_codec);
             break;
           }
         }
@@ -3383,7 +3358,7 @@ namespace Rummy {
             break;
           }
           case 48: {
-            DorpMultiple = input.ReadUInt32();
+            DropMultiple = input.ReadUInt32();
             break;
           }
           case 56: {
@@ -3392,10 +3367,6 @@ namespace Rummy {
           }
           case 72: {
             LeftCardNum = input.ReadInt32();
-            break;
-          }
-          case 82: {
-            handGroupInfo_.AddEntriesFrom(ref input, _repeated_handGroupInfo_codec);
             break;
           }
         }
@@ -3729,7 +3700,7 @@ namespace Rummy {
     public RMMsgGiveUpResp(RMMsgGiveUpResp other) : this() {
       chairId_ = other.chairId_;
       lossGold_ = other.lossGold_;
-      dorpMultiple_ = other.dorpMultiple_;
+      dropMultiple_ = other.dropMultiple_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3766,17 +3737,17 @@ namespace Rummy {
       }
     }
 
-    /// <summary>Field number for the "dorp_multiple" field.</summary>
-    public const int DorpMultipleFieldNumber = 3;
-    private uint dorpMultiple_;
+    /// <summary>Field number for the "drop_multiple" field.</summary>
+    public const int DropMultipleFieldNumber = 3;
+    private uint dropMultiple_;
     /// <summary>
     ///弃牌倍数
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public uint DorpMultiple {
-      get { return dorpMultiple_; }
+    public uint DropMultiple {
+      get { return dropMultiple_; }
       set {
-        dorpMultiple_ = value;
+        dropMultiple_ = value;
       }
     }
 
@@ -3795,7 +3766,7 @@ namespace Rummy {
       }
       if (ChairId != other.ChairId) return false;
       if (LossGold != other.LossGold) return false;
-      if (DorpMultiple != other.DorpMultiple) return false;
+      if (DropMultiple != other.DropMultiple) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -3804,7 +3775,7 @@ namespace Rummy {
       int hash = 1;
       if (ChairId != 0) hash ^= ChairId.GetHashCode();
       if (LossGold != 0) hash ^= LossGold.GetHashCode();
-      if (DorpMultiple != 0) hash ^= DorpMultiple.GetHashCode();
+      if (DropMultiple != 0) hash ^= DropMultiple.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3829,9 +3800,9 @@ namespace Rummy {
         output.WriteRawTag(16);
         output.WriteInt32(LossGold);
       }
-      if (DorpMultiple != 0) {
+      if (DropMultiple != 0) {
         output.WriteRawTag(24);
-        output.WriteUInt32(DorpMultiple);
+        output.WriteUInt32(DropMultiple);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -3850,9 +3821,9 @@ namespace Rummy {
         output.WriteRawTag(16);
         output.WriteInt32(LossGold);
       }
-      if (DorpMultiple != 0) {
+      if (DropMultiple != 0) {
         output.WriteRawTag(24);
-        output.WriteUInt32(DorpMultiple);
+        output.WriteUInt32(DropMultiple);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -3869,8 +3840,8 @@ namespace Rummy {
       if (LossGold != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(LossGold);
       }
-      if (DorpMultiple != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(DorpMultiple);
+      if (DropMultiple != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(DropMultiple);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3889,8 +3860,8 @@ namespace Rummy {
       if (other.LossGold != 0) {
         LossGold = other.LossGold;
       }
-      if (other.DorpMultiple != 0) {
-        DorpMultiple = other.DorpMultiple;
+      if (other.DropMultiple != 0) {
+        DropMultiple = other.DropMultiple;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3915,7 +3886,7 @@ namespace Rummy {
             break;
           }
           case 24: {
-            DorpMultiple = input.ReadUInt32();
+            DropMultiple = input.ReadUInt32();
             break;
           }
         }
@@ -3941,7 +3912,7 @@ namespace Rummy {
             break;
           }
           case 24: {
-            DorpMultiple = input.ReadUInt32();
+            DropMultiple = input.ReadUInt32();
             break;
           }
         }
