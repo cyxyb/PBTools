@@ -47,7 +47,7 @@ struct TableStruct_DQDZ_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[8]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[7]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -64,9 +64,6 @@ extern CMD_3D_CS_StartBallGameDefaultTypeInternal _CMD_3D_CS_StartBallGame_defau
 class CMD_3D_CS_StartGame;
 class CMD_3D_CS_StartGameDefaultTypeInternal;
 extern CMD_3D_CS_StartGameDefaultTypeInternal _CMD_3D_CS_StartGame_default_instance_;
-class CMD_3D_SC_Jackpot;
-class CMD_3D_SC_JackpotDefaultTypeInternal;
-extern CMD_3D_SC_JackpotDefaultTypeInternal _CMD_3D_SC_Jackpot_default_instance_;
 class CMD_3D_SC_Result;
 class CMD_3D_SC_ResultDefaultTypeInternal;
 extern CMD_3D_SC_ResultDefaultTypeInternal _CMD_3D_SC_Result_default_instance_;
@@ -84,7 +81,6 @@ PROTOBUF_NAMESPACE_OPEN
 template<> ::DQDZ::CMD_3D_CS_RequestCaiJin* Arena::CreateMaybeMessage<::DQDZ::CMD_3D_CS_RequestCaiJin>(Arena*);
 template<> ::DQDZ::CMD_3D_CS_StartBallGame* Arena::CreateMaybeMessage<::DQDZ::CMD_3D_CS_StartBallGame>(Arena*);
 template<> ::DQDZ::CMD_3D_CS_StartGame* Arena::CreateMaybeMessage<::DQDZ::CMD_3D_CS_StartGame>(Arena*);
-template<> ::DQDZ::CMD_3D_SC_Jackpot* Arena::CreateMaybeMessage<::DQDZ::CMD_3D_SC_Jackpot>(Arena*);
 template<> ::DQDZ::CMD_3D_SC_Result* Arena::CreateMaybeMessage<::DQDZ::CMD_3D_SC_Result>(Arena*);
 template<> ::DQDZ::CMD_StartBallGame* Arena::CreateMaybeMessage<::DQDZ::CMD_StartBallGame>(Arena*);
 template<> ::DQDZ::SC_SceneInfo* Arena::CreateMaybeMessage<::DQDZ::SC_SceneInfo>(Arena*);
@@ -1381,142 +1377,6 @@ class CMD_StartBallGame PROTOBUF_FINAL :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_DQDZ_2eproto;
 };
-// -------------------------------------------------------------------
-
-class CMD_3D_SC_Jackpot PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:DQDZ.CMD_3D_SC_Jackpot) */ {
- public:
-  inline CMD_3D_SC_Jackpot() : CMD_3D_SC_Jackpot(nullptr) {}
-  virtual ~CMD_3D_SC_Jackpot();
-
-  CMD_3D_SC_Jackpot(const CMD_3D_SC_Jackpot& from);
-  CMD_3D_SC_Jackpot(CMD_3D_SC_Jackpot&& from) noexcept
-    : CMD_3D_SC_Jackpot() {
-    *this = ::std::move(from);
-  }
-
-  inline CMD_3D_SC_Jackpot& operator=(const CMD_3D_SC_Jackpot& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline CMD_3D_SC_Jackpot& operator=(CMD_3D_SC_Jackpot&& from) noexcept {
-    if (GetArena() == from.GetArena()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return GetMetadataStatic().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return GetMetadataStatic().reflection;
-  }
-  static const CMD_3D_SC_Jackpot& default_instance();
-
-  static inline const CMD_3D_SC_Jackpot* internal_default_instance() {
-    return reinterpret_cast<const CMD_3D_SC_Jackpot*>(
-               &_CMD_3D_SC_Jackpot_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    7;
-
-  friend void swap(CMD_3D_SC_Jackpot& a, CMD_3D_SC_Jackpot& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(CMD_3D_SC_Jackpot* other) {
-    if (other == this) return;
-    if (GetArena() == other->GetArena()) {
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(CMD_3D_SC_Jackpot* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetArena() == other->GetArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline CMD_3D_SC_Jackpot* New() const final {
-    return CreateMaybeMessage<CMD_3D_SC_Jackpot>(nullptr);
-  }
-
-  CMD_3D_SC_Jackpot* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<CMD_3D_SC_Jackpot>(arena);
-  }
-  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const CMD_3D_SC_Jackpot& from);
-  void MergeFrom(const CMD_3D_SC_Jackpot& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
-      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  inline void SharedCtor();
-  inline void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(CMD_3D_SC_Jackpot* other);
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "DQDZ.CMD_3D_SC_Jackpot";
-  }
-  protected:
-  explicit CMD_3D_SC_Jackpot(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  private:
-  static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  public:
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-  private:
-  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
-    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_DQDZ_2eproto);
-    return ::descriptor_table_DQDZ_2eproto.file_level_metadata[kIndexInFileMessages];
-  }
-
-  public:
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kJackpotScoreFieldNumber = 1,
-  };
-  // int64 jackpot_score = 1;
-  void clear_jackpot_score();
-  ::PROTOBUF_NAMESPACE_ID::int64 jackpot_score() const;
-  void set_jackpot_score(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_jackpot_score() const;
-  void _internal_set_jackpot_score(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:DQDZ.CMD_3D_SC_Jackpot)
- private:
-  class _Internal;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int64 jackpot_score_;
-  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  friend struct ::TableStruct_DQDZ_2eproto;
-};
 // ===================================================================
 
 
@@ -2246,35 +2106,9 @@ inline void CMD_StartBallGame::set_multiple(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:DQDZ.CMD_StartBallGame.multiple)
 }
 
-// -------------------------------------------------------------------
-
-// CMD_3D_SC_Jackpot
-
-// int64 jackpot_score = 1;
-inline void CMD_3D_SC_Jackpot::clear_jackpot_score() {
-  jackpot_score_ = PROTOBUF_LONGLONG(0);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 CMD_3D_SC_Jackpot::_internal_jackpot_score() const {
-  return jackpot_score_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 CMD_3D_SC_Jackpot::jackpot_score() const {
-  // @@protoc_insertion_point(field_get:DQDZ.CMD_3D_SC_Jackpot.jackpot_score)
-  return _internal_jackpot_score();
-}
-inline void CMD_3D_SC_Jackpot::_internal_set_jackpot_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  
-  jackpot_score_ = value;
-}
-inline void CMD_3D_SC_Jackpot::set_jackpot_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_jackpot_score(value);
-  // @@protoc_insertion_point(field_set:DQDZ.CMD_3D_SC_Jackpot.jackpot_score)
-}
-
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
-// -------------------------------------------------------------------
-
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

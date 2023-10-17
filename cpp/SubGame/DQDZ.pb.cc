@@ -43,10 +43,6 @@ class CMD_StartBallGameDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CMD_StartBallGame> _instance;
 } _CMD_StartBallGame_default_instance_;
-class CMD_3D_SC_JackpotDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CMD_3D_SC_Jackpot> _instance;
-} _CMD_3D_SC_Jackpot_default_instance_;
 }  // namespace DQDZ
 static void InitDefaultsscc_info_CMD_3D_CS_RequestCaiJin_DQDZ_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -86,19 +82,6 @@ static void InitDefaultsscc_info_CMD_3D_CS_StartGame_DQDZ_2eproto() {
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_CMD_3D_CS_StartGame_DQDZ_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_CMD_3D_CS_StartGame_DQDZ_2eproto}, {}};
-
-static void InitDefaultsscc_info_CMD_3D_SC_Jackpot_DQDZ_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::DQDZ::_CMD_3D_SC_Jackpot_default_instance_;
-    new (ptr) ::DQDZ::CMD_3D_SC_Jackpot();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_CMD_3D_SC_Jackpot_DQDZ_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_CMD_3D_SC_Jackpot_DQDZ_2eproto}, {}};
 
 static void InitDefaultsscc_info_CMD_3D_SC_Result_DQDZ_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -152,7 +135,7 @@ static void InitDefaultsscc_info_tagGameConfig_DQDZ_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_tagGameConfig_DQDZ_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_tagGameConfig_DQDZ_2eproto}, {}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_DQDZ_2eproto[8];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_DQDZ_2eproto[7];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_DQDZ_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_DQDZ_2eproto = nullptr;
 
@@ -224,12 +207,6 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_DQDZ_2eproto::offsets[] PROTOB
   PROTOBUF_FIELD_OFFSET(::DQDZ::CMD_StartBallGame, cur_gold_),
   PROTOBUF_FIELD_OFFSET(::DQDZ::CMD_StartBallGame, cai_jin_),
   PROTOBUF_FIELD_OFFSET(::DQDZ::CMD_StartBallGame, multiple_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::DQDZ::CMD_3D_SC_Jackpot, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::DQDZ::CMD_3D_SC_Jackpot, jackpot_score_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::DQDZ::CMD_3D_CS_StartGame)},
@@ -239,7 +216,6 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 37, -1, sizeof(::DQDZ::tagGameConfig)},
   { 43, -1, sizeof(::DQDZ::CMD_3D_SC_Result)},
   { 56, -1, sizeof(::DQDZ::CMD_StartBallGame)},
-  { 67, -1, sizeof(::DQDZ::CMD_3D_SC_Jackpot)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -250,7 +226,6 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::DQDZ::_tagGameConfig_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::DQDZ::_CMD_3D_SC_Result_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::DQDZ::_CMD_StartBallGame_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::DQDZ::_CMD_3D_SC_Jackpot_default_instance_),
 };
 
 const char descriptor_table_protodef_DQDZ_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -272,23 +247,21 @@ const char descriptor_table_protodef_DQDZ_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "\n\021CMD_StartBallGame\022\017\n\007user_id\030\001 \001(\005\022\013\n\003"
   "ret\030\002 \001(\005\022\020\n\010add_gold\030\003 \001(\003\022\020\n\010cur_gold\030"
   "\004 \001(\003\022\017\n\007cai_jin\030\005 \001(\003\022\020\n\010multiple\030\006 \001(\005"
-  "\"*\n\021CMD_3D_SC_Jackpot\022\025\n\rjackpot_score\030\001"
-  " \001(\003*\252\002\n\020EMsgIDDQDZServer\022\025\n\021SUB_CS_GAME"
-  "_START\020\000\022\032\n\026SUB_CS_START_BALL_GAME\020\001\022\032\n\026"
-  "SUB_CS_REQUEST_CAI_JIN\020\002\022\025\n\021SUB_SC_GAME_"
-  "START\020\003\022\024\n\020SUB_SC_GAME_OVER\020\004\022\034\n\030SUB_SC_"
-  "UPDATE_PRIZE_POOL\020\005\022\026\n\022SUB_SC_GAME_CONFI"
-  "G\020\006\022\024\n\020SUB_SC_GAME_DATA\020\007\022\025\n\021SUB_SC_STAR"
-  "T_GAME\020\010\022\032\n\026SUB_SC_START_BALL_GAME\020\t\022\033\n\027"
-  "SUB_SC_RESPONSE_CAI_JIN\020\nb\006proto3"
+  "*\252\002\n\020EMsgIDDQDZServer\022\025\n\021SUB_CS_GAME_STA"
+  "RT\020\000\022\032\n\026SUB_CS_START_BALL_GAME\020\001\022\032\n\026SUB_"
+  "CS_REQUEST_CAI_JIN\020\002\022\025\n\021SUB_SC_GAME_STAR"
+  "T\020\003\022\024\n\020SUB_SC_GAME_OVER\020\004\022\034\n\030SUB_SC_UPDA"
+  "TE_PRIZE_POOL\020\005\022\026\n\022SUB_SC_GAME_CONFIG\020\006\022"
+  "\024\n\020SUB_SC_GAME_DATA\020\007\022\025\n\021SUB_SC_START_GA"
+  "ME\020\010\022\032\n\026SUB_SC_START_BALL_GAME\020\t\022\033\n\027SUB_"
+  "SC_RESPONSE_CAI_JIN\020\nb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_DQDZ_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_DQDZ_2eproto_sccs[8] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_DQDZ_2eproto_sccs[7] = {
   &scc_info_CMD_3D_CS_RequestCaiJin_DQDZ_2eproto.base,
   &scc_info_CMD_3D_CS_StartBallGame_DQDZ_2eproto.base,
   &scc_info_CMD_3D_CS_StartGame_DQDZ_2eproto.base,
-  &scc_info_CMD_3D_SC_Jackpot_DQDZ_2eproto.base,
   &scc_info_CMD_3D_SC_Result_DQDZ_2eproto.base,
   &scc_info_CMD_StartBallGame_DQDZ_2eproto.base,
   &scc_info_SC_SceneInfo_DQDZ_2eproto.base,
@@ -296,10 +269,10 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_DQD
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_DQDZ_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_DQDZ_2eproto = {
-  false, false, descriptor_table_protodef_DQDZ_2eproto, "DQDZ.proto", 1073,
-  &descriptor_table_DQDZ_2eproto_once, descriptor_table_DQDZ_2eproto_sccs, descriptor_table_DQDZ_2eproto_deps, 8, 0,
+  false, false, descriptor_table_protodef_DQDZ_2eproto, "DQDZ.proto", 1029,
+  &descriptor_table_DQDZ_2eproto_once, descriptor_table_DQDZ_2eproto_sccs, descriptor_table_DQDZ_2eproto_deps, 7, 0,
   schemas, file_default_instances, TableStruct_DQDZ_2eproto::offsets,
-  file_level_metadata_DQDZ_2eproto, 8, file_level_enum_descriptors_DQDZ_2eproto, file_level_service_descriptors_DQDZ_2eproto,
+  file_level_metadata_DQDZ_2eproto, 7, file_level_enum_descriptors_DQDZ_2eproto, file_level_service_descriptors_DQDZ_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -2362,200 +2335,6 @@ void CMD_StartBallGame::InternalSwap(CMD_StartBallGame* other) {
 }
 
 
-// ===================================================================
-
-class CMD_3D_SC_Jackpot::_Internal {
- public:
-};
-
-CMD_3D_SC_Jackpot::CMD_3D_SC_Jackpot(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:DQDZ.CMD_3D_SC_Jackpot)
-}
-CMD_3D_SC_Jackpot::CMD_3D_SC_Jackpot(const CMD_3D_SC_Jackpot& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  jackpot_score_ = from.jackpot_score_;
-  // @@protoc_insertion_point(copy_constructor:DQDZ.CMD_3D_SC_Jackpot)
-}
-
-void CMD_3D_SC_Jackpot::SharedCtor() {
-  jackpot_score_ = PROTOBUF_LONGLONG(0);
-}
-
-CMD_3D_SC_Jackpot::~CMD_3D_SC_Jackpot() {
-  // @@protoc_insertion_point(destructor:DQDZ.CMD_3D_SC_Jackpot)
-  SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-void CMD_3D_SC_Jackpot::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-}
-
-void CMD_3D_SC_Jackpot::ArenaDtor(void* object) {
-  CMD_3D_SC_Jackpot* _this = reinterpret_cast< CMD_3D_SC_Jackpot* >(object);
-  (void)_this;
-}
-void CMD_3D_SC_Jackpot::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
-void CMD_3D_SC_Jackpot::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
-}
-const CMD_3D_SC_Jackpot& CMD_3D_SC_Jackpot::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_CMD_3D_SC_Jackpot_DQDZ_2eproto.base);
-  return *internal_default_instance();
-}
-
-
-void CMD_3D_SC_Jackpot::Clear() {
-// @@protoc_insertion_point(message_clear_start:DQDZ.CMD_3D_SC_Jackpot)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  jackpot_score_ = PROTOBUF_LONGLONG(0);
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-const char* CMD_3D_SC_Jackpot::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
-    switch (tag >> 3) {
-      // int64 jackpot_score = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          jackpot_score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
-    }  // switch
-  }  // while
-success:
-  return ptr;
-failure:
-  ptr = nullptr;
-  goto success;
-#undef CHK_
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* CMD_3D_SC_Jackpot::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:DQDZ.CMD_3D_SC_Jackpot)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // int64 jackpot_score = 1;
-  if (this->jackpot_score() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_jackpot_score(), target);
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:DQDZ.CMD_3D_SC_Jackpot)
-  return target;
-}
-
-size_t CMD_3D_SC_Jackpot::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:DQDZ.CMD_3D_SC_Jackpot)
-  size_t total_size = 0;
-
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  // int64 jackpot_score = 1;
-  if (this->jackpot_score() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_jackpot_score());
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
-}
-
-void CMD_3D_SC_Jackpot::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:DQDZ.CMD_3D_SC_Jackpot)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CMD_3D_SC_Jackpot* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_3D_SC_Jackpot>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:DQDZ.CMD_3D_SC_Jackpot)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:DQDZ.CMD_3D_SC_Jackpot)
-    MergeFrom(*source);
-  }
-}
-
-void CMD_3D_SC_Jackpot::MergeFrom(const CMD_3D_SC_Jackpot& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:DQDZ.CMD_3D_SC_Jackpot)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from.jackpot_score() != 0) {
-    _internal_set_jackpot_score(from._internal_jackpot_score());
-  }
-}
-
-void CMD_3D_SC_Jackpot::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:DQDZ.CMD_3D_SC_Jackpot)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void CMD_3D_SC_Jackpot::CopyFrom(const CMD_3D_SC_Jackpot& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:DQDZ.CMD_3D_SC_Jackpot)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool CMD_3D_SC_Jackpot::IsInitialized() const {
-  return true;
-}
-
-void CMD_3D_SC_Jackpot::InternalSwap(CMD_3D_SC_Jackpot* other) {
-  using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  swap(jackpot_score_, other->jackpot_score_);
-}
-
-::PROTOBUF_NAMESPACE_ID::Metadata CMD_3D_SC_Jackpot::GetMetadata() const {
-  return GetMetadataStatic();
-}
-
-
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace DQDZ
 PROTOBUF_NAMESPACE_OPEN
@@ -2579,9 +2358,6 @@ template<> PROTOBUF_NOINLINE ::DQDZ::CMD_3D_SC_Result* Arena::CreateMaybeMessage
 }
 template<> PROTOBUF_NOINLINE ::DQDZ::CMD_StartBallGame* Arena::CreateMaybeMessage< ::DQDZ::CMD_StartBallGame >(Arena* arena) {
   return Arena::CreateMessageInternal< ::DQDZ::CMD_StartBallGame >(arena);
-}
-template<> PROTOBUF_NOINLINE ::DQDZ::CMD_3D_SC_Jackpot* Arena::CreateMaybeMessage< ::DQDZ::CMD_3D_SC_Jackpot >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::DQDZ::CMD_3D_SC_Jackpot >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

@@ -40,15 +40,14 @@ namespace DQDZ {
             "ZV9jb3VudBgHIAEoBRIMCgRpY29uGAggAygFIngKEUNNRF9TdGFydEJhbGxH",
             "YW1lEg8KB3VzZXJfaWQYASABKAUSCwoDcmV0GAIgASgFEhAKCGFkZF9nb2xk",
             "GAMgASgDEhAKCGN1cl9nb2xkGAQgASgDEg8KB2NhaV9qaW4YBSABKAMSEAoI",
-            "bXVsdGlwbGUYBiABKAUiKgoRQ01EXzNEX1NDX0phY2twb3QSFQoNamFja3Bv",
-            "dF9zY29yZRgBIAEoAyqqAgoQRU1zZ0lERFFEWlNlcnZlchIVChFTVUJfQ1Nf",
-            "R0FNRV9TVEFSVBAAEhoKFlNVQl9DU19TVEFSVF9CQUxMX0dBTUUQARIaChZT",
-            "VUJfQ1NfUkVRVUVTVF9DQUlfSklOEAISFQoRU1VCX1NDX0dBTUVfU1RBUlQQ",
-            "AxIUChBTVUJfU0NfR0FNRV9PVkVSEAQSHAoYU1VCX1NDX1VQREFURV9QUkla",
-            "RV9QT09MEAUSFgoSU1VCX1NDX0dBTUVfQ09ORklHEAYSFAoQU1VCX1NDX0dB",
-            "TUVfREFUQRAHEhUKEVNVQl9TQ19TVEFSVF9HQU1FEAgSGgoWU1VCX1NDX1NU",
-            "QVJUX0JBTExfR0FNRRAJEhsKF1NVQl9TQ19SRVNQT05TRV9DQUlfSklOEApi",
-            "BnByb3RvMw=="));
+            "bXVsdGlwbGUYBiABKAUqqgIKEEVNc2dJRERRRFpTZXJ2ZXISFQoRU1VCX0NT",
+            "X0dBTUVfU1RBUlQQABIaChZTVUJfQ1NfU1RBUlRfQkFMTF9HQU1FEAESGgoW",
+            "U1VCX0NTX1JFUVVFU1RfQ0FJX0pJThACEhUKEVNVQl9TQ19HQU1FX1NUQVJU",
+            "EAMSFAoQU1VCX1NDX0dBTUVfT1ZFUhAEEhwKGFNVQl9TQ19VUERBVEVfUFJJ",
+            "WkVfUE9PTBAFEhYKElNVQl9TQ19HQU1FX0NPTkZJRxAGEhQKEFNVQl9TQ19H",
+            "QU1FX0RBVEEQBxIVChFTVUJfU0NfU1RBUlRfR0FNRRAIEhoKFlNVQl9TQ19T",
+            "VEFSVF9CQUxMX0dBTUUQCRIbChdTVUJfU0NfUkVTUE9OU0VfQ0FJX0pJThAK",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::DQDZ.EMsgIDDQDZServer), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -58,8 +57,7 @@ namespace DQDZ {
             new pbr::GeneratedClrTypeInfo(typeof(global::DQDZ.SC_SceneInfo), global::DQDZ.SC_SceneInfo.Parser, new[]{ "UserId", "NetCode", "ChairId", "TableId", "UserState", "FreeCount", "Multiple", "Bet", "Gold", "CaiJin" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DQDZ.tagGameConfig), global::DQDZ.tagGameConfig.Parser, new[]{ "Bet" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DQDZ.CMD_3D_SC_Result), global::DQDZ.CMD_3D_SC_Result.Parser, new[]{ "UserId", "Bet", "WinGold", "ComGold", "CurGold", "CaiJin", "FreeCount", "Icon" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::DQDZ.CMD_StartBallGame), global::DQDZ.CMD_StartBallGame.Parser, new[]{ "UserId", "Ret", "AddGold", "CurGold", "CaiJin", "Multiple" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::DQDZ.CMD_3D_SC_Jackpot), global::DQDZ.CMD_3D_SC_Jackpot.Parser, new[]{ "JackpotScore" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::DQDZ.CMD_StartBallGame), global::DQDZ.CMD_StartBallGame.Parser, new[]{ "UserId", "Ret", "AddGold", "CurGold", "CaiJin", "Multiple" }, null, null, null, null)
           }));
     }
     #endregion
@@ -91,7 +89,7 @@ namespace DQDZ {
     /// </summary>
     [pbr::OriginalName("SUB_SC_GAME_OVER")] SubScGameOver = 4,
     /// <summary>
-    ///奖池分数CMD_3D_SC_Jackpot
+    ///奖池分数(MsgCommonN64)
     /// </summary>
     [pbr::OriginalName("SUB_SC_UPDATE_PRIZE_POOL")] SubScUpdatePrizePool = 5,
     /// <summary>
@@ -2301,181 +2299,6 @@ namespace DQDZ {
           }
           case 48: {
             Multiple = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  public sealed partial class CMD_3D_SC_Jackpot : pb::IMessage<CMD_3D_SC_Jackpot>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<CMD_3D_SC_Jackpot> _parser = new pb::MessageParser<CMD_3D_SC_Jackpot>(() => new CMD_3D_SC_Jackpot());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<CMD_3D_SC_Jackpot> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::DQDZ.DQDZReflection.Descriptor.MessageTypes[7]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMD_3D_SC_Jackpot() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMD_3D_SC_Jackpot(CMD_3D_SC_Jackpot other) : this() {
-      jackpotScore_ = other.jackpotScore_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMD_3D_SC_Jackpot Clone() {
-      return new CMD_3D_SC_Jackpot(this);
-    }
-
-    /// <summary>Field number for the "jackpot_score" field.</summary>
-    public const int JackpotScoreFieldNumber = 1;
-    private long jackpotScore_;
-    /// <summary>
-    /// 奖池分数
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long JackpotScore {
-      get { return jackpotScore_; }
-      set {
-        jackpotScore_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as CMD_3D_SC_Jackpot);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(CMD_3D_SC_Jackpot other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (JackpotScore != other.JackpotScore) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (JackpotScore != 0L) hash ^= JackpotScore.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (JackpotScore != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(JackpotScore);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (JackpotScore != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(JackpotScore);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (JackpotScore != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(JackpotScore);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(CMD_3D_SC_Jackpot other) {
-      if (other == null) {
-        return;
-      }
-      if (other.JackpotScore != 0L) {
-        JackpotScore = other.JackpotScore;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            JackpotScore = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            JackpotScore = input.ReadInt64();
             break;
           }
         }
