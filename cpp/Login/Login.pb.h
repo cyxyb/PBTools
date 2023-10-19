@@ -46,7 +46,7 @@ struct TableStruct_Login_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[51]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[52]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -80,6 +80,9 @@ extern MsgBindParentInfoDefaultTypeInternal _MsgBindParentInfo_default_instance_
 class MsgBindPhone;
 class MsgBindPhoneDefaultTypeInternal;
 extern MsgBindPhoneDefaultTypeInternal _MsgBindPhone_default_instance_;
+class MsgBindPhoneResp;
+class MsgBindPhoneRespDefaultTypeInternal;
+extern MsgBindPhoneRespDefaultTypeInternal _MsgBindPhoneResp_default_instance_;
 class MsgCheckInInfo;
 class MsgCheckInInfoDefaultTypeInternal;
 extern MsgCheckInInfoDefaultTypeInternal _MsgCheckInInfo_default_instance_;
@@ -216,6 +219,7 @@ template<> ::MsgBindInviteCodeResp* Arena::CreateMaybeMessage<::MsgBindInviteCod
 template<> ::MsgBindParentData* Arena::CreateMaybeMessage<::MsgBindParentData>(Arena*);
 template<> ::MsgBindParentInfo* Arena::CreateMaybeMessage<::MsgBindParentInfo>(Arena*);
 template<> ::MsgBindPhone* Arena::CreateMaybeMessage<::MsgBindPhone>(Arena*);
+template<> ::MsgBindPhoneResp* Arena::CreateMaybeMessage<::MsgBindPhoneResp>(Arena*);
 template<> ::MsgCheckInInfo* Arena::CreateMaybeMessage<::MsgCheckInInfo>(Arena*);
 template<> ::MsgCommonKV* Arena::CreateMaybeMessage<::MsgCommonKV>(Arena*);
 template<> ::MsgDotRechargeResp* Arena::CreateMaybeMessage<::MsgDotRechargeResp>(Arena*);
@@ -9602,6 +9606,153 @@ class MsgDotRechargeResp PROTOBUF_FINAL :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
+// -------------------------------------------------------------------
+
+class MsgBindPhoneResp PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgBindPhoneResp) */ {
+ public:
+  inline MsgBindPhoneResp() : MsgBindPhoneResp(nullptr) {}
+  virtual ~MsgBindPhoneResp();
+
+  MsgBindPhoneResp(const MsgBindPhoneResp& from);
+  MsgBindPhoneResp(MsgBindPhoneResp&& from) noexcept
+    : MsgBindPhoneResp() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgBindPhoneResp& operator=(const MsgBindPhoneResp& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgBindPhoneResp& operator=(MsgBindPhoneResp&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgBindPhoneResp& default_instance();
+
+  static inline const MsgBindPhoneResp* internal_default_instance() {
+    return reinterpret_cast<const MsgBindPhoneResp*>(
+               &_MsgBindPhoneResp_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    51;
+
+  friend void swap(MsgBindPhoneResp& a, MsgBindPhoneResp& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgBindPhoneResp* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgBindPhoneResp* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgBindPhoneResp* New() const final {
+    return CreateMaybeMessage<MsgBindPhoneResp>(nullptr);
+  }
+
+  MsgBindPhoneResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgBindPhoneResp>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgBindPhoneResp& from);
+  void MergeFrom(const MsgBindPhoneResp& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgBindPhoneResp* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgBindPhoneResp";
+  }
+  protected:
+  explicit MsgBindPhoneResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kResCodeFieldNumber = 1,
+    kUserTypeFieldNumber = 2,
+  };
+  // int32 res_code = 1;
+  void clear_res_code();
+  ::PROTOBUF_NAMESPACE_ID::int32 res_code() const;
+  void set_res_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_res_code() const;
+  void _internal_set_res_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 user_type = 2;
+  void clear_user_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_type() const;
+  void set_user_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_type() const;
+  void _internal_set_user_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgBindPhoneResp)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 res_code_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_type_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
 // ===================================================================
 
 
@@ -16633,9 +16784,55 @@ MsgDotRechargeResp::mutable_recharge_info() {
   return _internal_mutable_recharge_info();
 }
 
+// -------------------------------------------------------------------
+
+// MsgBindPhoneResp
+
+// int32 res_code = 1;
+inline void MsgBindPhoneResp::clear_res_code() {
+  res_code_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBindPhoneResp::_internal_res_code() const {
+  return res_code_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBindPhoneResp::res_code() const {
+  // @@protoc_insertion_point(field_get:MsgBindPhoneResp.res_code)
+  return _internal_res_code();
+}
+inline void MsgBindPhoneResp::_internal_set_res_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  res_code_ = value;
+}
+inline void MsgBindPhoneResp::set_res_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_res_code(value);
+  // @@protoc_insertion_point(field_set:MsgBindPhoneResp.res_code)
+}
+
+// int32 user_type = 2;
+inline void MsgBindPhoneResp::clear_user_type() {
+  user_type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBindPhoneResp::_internal_user_type() const {
+  return user_type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBindPhoneResp::user_type() const {
+  // @@protoc_insertion_point(field_get:MsgBindPhoneResp.user_type)
+  return _internal_user_type();
+}
+inline void MsgBindPhoneResp::_internal_set_user_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_type_ = value;
+}
+inline void MsgBindPhoneResp::set_user_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_type(value);
+  // @@protoc_insertion_point(field_set:MsgBindPhoneResp.user_type)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

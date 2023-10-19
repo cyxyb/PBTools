@@ -145,8 +145,9 @@ public static partial class LoginReflection {
           "XgoVTXNnQmluZEludml0ZUNvZGVSZXNwEhAKCHJlc19jb2RlGAEgASgFEhEK",
           "CXVzZXJfdHlwZRgCIAEoBRIgCgRpbmZvGAMgASgLMhIuTXNnQmluZFBhcmVu",
           "dEluZm8iUgoSTXNnRG90UmVjaGFyZ2VSZXNwEhcKD2lzX25ld19yZWNoYXJn",
-          "ZRgBIAEoCBIMCgRnb2xkGAIgASgDEhUKDXJlY2hhcmdlX2luZm8YAyADKAVi",
-          "BnByb3RvMw=="));
+          "ZRgBIAEoCBIMCgRnb2xkGAIgASgDEhUKDXJlY2hhcmdlX2luZm8YAyADKAUi",
+          "NwoQTXNnQmluZFBob25lUmVzcBIQCghyZXNfY29kZRgBIAEoBRIRCgl1c2Vy",
+          "X3R5cGUYAiABKAViBnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -200,7 +201,8 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTtotalSubagentInformation), global::MsgTtotalSubagentInformation.Parser, new[]{ "AgentInfo" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBindParentInfo), global::MsgBindParentInfo.Parser, new[]{ "UserId", "Avatar", "AvatarFrame", "NickName" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBindInviteCodeResp), global::MsgBindInviteCodeResp.Parser, new[]{ "ResCode", "UserType", "Info" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgDotRechargeResp), global::MsgDotRechargeResp.Parser, new[]{ "IsNewRecharge", "Gold", "RechargeInfo" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgDotRechargeResp), global::MsgDotRechargeResp.Parser, new[]{ "IsNewRecharge", "Gold", "RechargeInfo" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBindPhoneResp), global::MsgBindPhoneResp.Parser, new[]{ "ResCode", "UserType" }, null, null, null, null)
         }));
   }
   #endregion
@@ -15798,6 +15800,220 @@ public sealed partial class MsgDotRechargeResp : pb::IMessage<MsgDotRechargeResp
         case 26:
         case 24: {
           rechargeInfo_.AddEntriesFrom(ref input, _repeated_rechargeInfo_codec);
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+public sealed partial class MsgBindPhoneResp : pb::IMessage<MsgBindPhoneResp>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgBindPhoneResp> _parser = new pb::MessageParser<MsgBindPhoneResp>(() => new MsgBindPhoneResp());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgBindPhoneResp> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[51]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBindPhoneResp() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBindPhoneResp(MsgBindPhoneResp other) : this() {
+    resCode_ = other.resCode_;
+    userType_ = other.userType_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBindPhoneResp Clone() {
+    return new MsgBindPhoneResp(this);
+  }
+
+  /// <summary>Field number for the "res_code" field.</summary>
+  public const int ResCodeFieldNumber = 1;
+  private int resCode_;
+  /// <summary>
+  ///返回码
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int ResCode {
+    get { return resCode_; }
+    set {
+      resCode_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "user_type" field.</summary>
+  public const int UserTypeFieldNumber = 2;
+  private int userType_;
+  /// <summary>
+  ///玩家类型
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int UserType {
+    get { return userType_; }
+    set {
+      userType_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgBindPhoneResp);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgBindPhoneResp other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (ResCode != other.ResCode) return false;
+    if (UserType != other.UserType) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (ResCode != 0) hash ^= ResCode.GetHashCode();
+    if (UserType != 0) hash ^= UserType.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (ResCode != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(ResCode);
+    }
+    if (UserType != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(UserType);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (ResCode != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(ResCode);
+    }
+    if (UserType != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(UserType);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (ResCode != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(ResCode);
+    }
+    if (UserType != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserType);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgBindPhoneResp other) {
+    if (other == null) {
+      return;
+    }
+    if (other.ResCode != 0) {
+      ResCode = other.ResCode;
+    }
+    if (other.UserType != 0) {
+      UserType = other.UserType;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          ResCode = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          UserType = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          ResCode = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          UserType = input.ReadInt32();
           break;
         }
       }
