@@ -461,9 +461,3 @@ message MsgDotRechargeResp
 	int64			gold			= 2;	//玩家类型
 	repeated int32 	recharge_info	= 3;	//充值数量
 }
-
-message MsgBindPhoneResp
-{
-	int32		res_code	= 1;		//返回码
-	int32		user_type	= 2;		//玩家类型
-}

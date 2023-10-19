@@ -7570,7 +7570,6 @@ class MsgDBBindPhoneRes PROTOBUF_FINAL :
     kPhoneFieldNumber = 2,
     kPasswordFieldNumber = 3,
     kResCodeFieldNumber = 1,
-    kUserTypeFieldNumber = 4,
   };
   // string phone = 2;
   void clear_phone();
@@ -7613,15 +7612,6 @@ class MsgDBBindPhoneRes PROTOBUF_FINAL :
   void _internal_set_res_code(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 user_type = 4;
-  void clear_user_type();
-  ::PROTOBUF_NAMESPACE_ID::int32 user_type() const;
-  void set_user_type(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_type() const;
-  void _internal_set_user_type(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
   // @@protoc_insertion_point(class_scope:MsgDBBindPhoneRes)
  private:
   class _Internal;
@@ -7632,7 +7622,6 @@ class MsgDBBindPhoneRes PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr phone_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr password_;
   ::PROTOBUF_NAMESPACE_ID::int32 res_code_;
-  ::PROTOBUF_NAMESPACE_ID::int32 user_type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -14448,26 +14437,6 @@ inline void MsgDBBindPhoneRes::set_allocated_password(std::string* password) {
   password_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), password,
       GetArena());
   // @@protoc_insertion_point(field_set_allocated:MsgDBBindPhoneRes.password)
-}
-
-// int32 user_type = 4;
-inline void MsgDBBindPhoneRes::clear_user_type() {
-  user_type_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBBindPhoneRes::_internal_user_type() const {
-  return user_type_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBBindPhoneRes::user_type() const {
-  // @@protoc_insertion_point(field_get:MsgDBBindPhoneRes.user_type)
-  return _internal_user_type();
-}
-inline void MsgDBBindPhoneRes::_internal_set_user_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  user_type_ = value;
-}
-inline void MsgDBBindPhoneRes::set_user_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_user_type(value);
-  // @@protoc_insertion_point(field_set:MsgDBBindPhoneRes.user_type)
 }
 
 // -------------------------------------------------------------------

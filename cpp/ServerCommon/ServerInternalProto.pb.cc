@@ -1271,7 +1271,6 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ServerInternalProto_2eproto::o
   PROTOBUF_FIELD_OFFSET(::MsgDBBindPhoneRes, res_code_),
   PROTOBUF_FIELD_OFFSET(::MsgDBBindPhoneRes, phone_),
   PROTOBUF_FIELD_OFFSET(::MsgDBBindPhoneRes, password_),
-  PROTOBUF_FIELD_OFFSET(::MsgDBBindPhoneRes, user_type_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgDBChatLogin, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1398,16 +1397,16 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 358, -1, sizeof(::MsgStorageCode)},
   { 366, -1, sizeof(::MsgDBBindPhone)},
   { 375, -1, sizeof(::MsgDBBindPhoneRes)},
-  { 384, -1, sizeof(::MsgDBChatLogin)},
-  { 391, -1, sizeof(::MsgDBChatTrumpetMsg)},
-  { 398, -1, sizeof(::MsgDBBuyGoods)},
-  { 406, -1, sizeof(::MsgDBGameLoginOut)},
-  { 416, -1, sizeof(::MsgDBSubagentInformation)},
-  { 427, -1, sizeof(::MsgDBQueryTransferTax)},
-  { 434, -1, sizeof(::MsgDBTransferTakeOut)},
-  { 446, -1, sizeof(::MsgDBTransferReceive)},
-  { 453, -1, sizeof(::MsgDBBindInviteCode)},
-  { 460, -1, sizeof(::MsgDBSyncDotData)},
+  { 383, -1, sizeof(::MsgDBChatLogin)},
+  { 390, -1, sizeof(::MsgDBChatTrumpetMsg)},
+  { 397, -1, sizeof(::MsgDBBuyGoods)},
+  { 405, -1, sizeof(::MsgDBGameLoginOut)},
+  { 415, -1, sizeof(::MsgDBSubagentInformation)},
+  { 426, -1, sizeof(::MsgDBQueryTransferTax)},
+  { 433, -1, sizeof(::MsgDBTransferTakeOut)},
+  { 445, -1, sizeof(::MsgDBTransferReceive)},
+  { 452, -1, sizeof(::MsgDBBindInviteCode)},
+  { 459, -1, sizeof(::MsgDBSyncDotData)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -1572,31 +1571,31 @@ const char descriptor_table_protodef_ServerInternalProto_2eproto[] PROTOBUF_SECT
   "\007user_id\030\001 \001(\005\022\r\n\005phone\030\002 \001(\t\022\014\n\004code\030\003 "
   "\001(\005\"W\n\016MsgDBBindPhone\022\017\n\007user_id\030\001 \001(\005\022\023"
   "\n\013invite_code\030\002 \001(\t\022\r\n\005phone\030\003 \001(\t\022\020\n\010pa"
-  "ssword\030\004 \001(\t\"Y\n\021MsgDBBindPhoneRes\022\020\n\010res"
+  "ssword\030\004 \001(\t\"F\n\021MsgDBBindPhoneRes\022\020\n\010res"
   "_code\030\001 \001(\005\022\r\n\005phone\030\002 \001(\t\022\020\n\010password\030\003"
-  " \001(\t\022\021\n\tuser_type\030\004 \001(\005\"3\n\016MsgDBChatLogi"
-  "n\022\017\n\007user_id\030\001 \001(\005\022\020\n\010password\030\002 \001(\t\"7\n\023"
-  "MsgDBChatTrumpetMsg\022\017\n\007user_id\030\001 \001(\005\022\017\n\007"
-  "message\030\002 \001(\t\"C\n\rMsgDBBuyGoods\022\017\n\007user_i"
-  "d\030\001 \001(\005\022\017\n\007item_id\030\002 \001(\005\022\020\n\010item_num\030\003 \001"
-  "(\005\"u\n\021MsgDBGameLoginOut\022\017\n\007user_id\030\001 \001(\005"
-  "\022\022\n\nis_offline\030\002 \001(\005\022\021\n\tserver_id\030\003 \001(\005\022"
-  "\017\n\007kind_id\030\004 \001(\005\022\027\n\017login_server_id\030\005 \001("
-  "\005\"\240\001\n\030MsgDBSubagentInformation\022\026\n\016agent_"
-  "nickname\030\001 \001(\t\022\025\n\ragent_user_id\030\002 \001(\005\022\022\n"
-  "\nagent_type\030\003 \001(\005\022\026\n\016total_shift_to\030\004 \001("
-  "\003\022\026\n\016total_roll_out\030\005 \001(\003\022\021\n\tvip_level\030\006"
-  " \001(\005\"C\n\025MsgDBQueryTransferTax\022\024\n\014from_us"
-  "er_id\030\001 \001(\005\022\024\n\014recv_user_id\030\002 \001(\005\"\246\001\n\024Ms"
-  "gDBTransferTakeOut\022\021\n\tret_value\030\001 \001(\005\022\024\n"
-  "\014recv_user_id\030\002 \001(\005\022\024\n\014send_user_id\030\003 \001("
-  "\005\022\020\n\010add_gold\030\004 \001(\003\022\021\n\tuser_gold\030\005 \001(\003\022\025"
-  "\n\rreceive_state\030\006 \001(\003\022\023\n\013transfer_id\030\007 \001"
-  "(\003\"C\n\024MsgDBTransferReceive\022\027\n\017receive_us"
-  "er_id\030\001 \001(\005\022\022\n\nreceive_id\030\002 \001(\003\";\n\023MsgDB"
-  "BindInviteCode\022\017\n\007user_id\030\001 \001(\005\022\023\n\013invit"
-  "e_code\030\002 \001(\t\"1\n\020MsgDBSyncDotData\022\017\n\007user"
-  "_id\030\001 \001(\005\022\014\n\004type\030\002 \001(\005b\006proto3"
+  " \001(\t\"3\n\016MsgDBChatLogin\022\017\n\007user_id\030\001 \001(\005\022"
+  "\020\n\010password\030\002 \001(\t\"7\n\023MsgDBChatTrumpetMsg"
+  "\022\017\n\007user_id\030\001 \001(\005\022\017\n\007message\030\002 \001(\t\"C\n\rMs"
+  "gDBBuyGoods\022\017\n\007user_id\030\001 \001(\005\022\017\n\007item_id\030"
+  "\002 \001(\005\022\020\n\010item_num\030\003 \001(\005\"u\n\021MsgDBGameLogi"
+  "nOut\022\017\n\007user_id\030\001 \001(\005\022\022\n\nis_offline\030\002 \001("
+  "\005\022\021\n\tserver_id\030\003 \001(\005\022\017\n\007kind_id\030\004 \001(\005\022\027\n"
+  "\017login_server_id\030\005 \001(\005\"\240\001\n\030MsgDBSubagent"
+  "Information\022\026\n\016agent_nickname\030\001 \001(\t\022\025\n\ra"
+  "gent_user_id\030\002 \001(\005\022\022\n\nagent_type\030\003 \001(\005\022\026"
+  "\n\016total_shift_to\030\004 \001(\003\022\026\n\016total_roll_out"
+  "\030\005 \001(\003\022\021\n\tvip_level\030\006 \001(\005\"C\n\025MsgDBQueryT"
+  "ransferTax\022\024\n\014from_user_id\030\001 \001(\005\022\024\n\014recv"
+  "_user_id\030\002 \001(\005\"\246\001\n\024MsgDBTransferTakeOut\022"
+  "\021\n\tret_value\030\001 \001(\005\022\024\n\014recv_user_id\030\002 \001(\005"
+  "\022\024\n\014send_user_id\030\003 \001(\005\022\020\n\010add_gold\030\004 \001(\003"
+  "\022\021\n\tuser_gold\030\005 \001(\003\022\025\n\rreceive_state\030\006 \001"
+  "(\003\022\023\n\013transfer_id\030\007 \001(\003\"C\n\024MsgDBTransfer"
+  "Receive\022\027\n\017receive_user_id\030\001 \001(\005\022\022\n\nrece"
+  "ive_id\030\002 \001(\003\";\n\023MsgDBBindInviteCode\022\017\n\007u"
+  "ser_id\030\001 \001(\005\022\023\n\013invite_code\030\002 \001(\t\"1\n\020Msg"
+  "DBSyncDotData\022\017\n\007user_id\030\001 \001(\005\022\014\n\004type\030\002"
+  " \001(\005b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_ServerInternalProto_2eproto_deps[1] = {
 };
@@ -1655,7 +1654,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Ser
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ServerInternalProto_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ServerInternalProto_2eproto = {
-  false, false, descriptor_table_protodef_ServerInternalProto_2eproto, "ServerInternalProto.proto", 5271,
+  false, false, descriptor_table_protodef_ServerInternalProto_2eproto, "ServerInternalProto.proto", 5252,
   &descriptor_table_ServerInternalProto_2eproto_once, descriptor_table_ServerInternalProto_2eproto_sccs, descriptor_table_ServerInternalProto_2eproto_deps, 51, 0,
   schemas, file_default_instances, TableStruct_ServerInternalProto_2eproto::offsets,
   file_level_metadata_ServerInternalProto_2eproto, 51, file_level_enum_descriptors_ServerInternalProto_2eproto, file_level_service_descriptors_ServerInternalProto_2eproto,
@@ -13480,9 +13479,7 @@ MsgDBBindPhoneRes::MsgDBBindPhoneRes(const MsgDBBindPhoneRes& from)
     password_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_password(), 
       GetArena());
   }
-  ::memcpy(&res_code_, &from.res_code_,
-    static_cast<size_t>(reinterpret_cast<char*>(&user_type_) -
-    reinterpret_cast<char*>(&res_code_)) + sizeof(user_type_));
+  res_code_ = from.res_code_;
   // @@protoc_insertion_point(copy_constructor:MsgDBBindPhoneRes)
 }
 
@@ -13490,10 +13487,7 @@ void MsgDBBindPhoneRes::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgDBBindPhoneRes_ServerInternalProto_2eproto.base);
   phone_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   password_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&res_code_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&user_type_) -
-      reinterpret_cast<char*>(&res_code_)) + sizeof(user_type_));
+  res_code_ = 0;
 }
 
 MsgDBBindPhoneRes::~MsgDBBindPhoneRes() {
@@ -13531,9 +13525,7 @@ void MsgDBBindPhoneRes::Clear() {
 
   phone_.ClearToEmpty();
   password_.ClearToEmpty();
-  ::memset(&res_code_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&user_type_) -
-      reinterpret_cast<char*>(&res_code_)) + sizeof(user_type_));
+  res_code_ = 0;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -13566,13 +13558,6 @@ const char* MsgDBBindPhoneRes::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
           auto str = _internal_mutable_password();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgDBBindPhoneRes.password"));
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 user_type = 4;
-      case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          user_type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -13630,12 +13615,6 @@ failure:
         3, this->_internal_password(), target);
   }
 
-  // int32 user_type = 4;
-  if (this->user_type() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_user_type(), target);
-  }
-
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -13671,13 +13650,6 @@ size_t MsgDBBindPhoneRes::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_res_code());
-  }
-
-  // int32 user_type = 4;
-  if (this->user_type() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_user_type());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -13720,9 +13692,6 @@ void MsgDBBindPhoneRes::MergeFrom(const MsgDBBindPhoneRes& from) {
   if (from.res_code() != 0) {
     _internal_set_res_code(from._internal_res_code());
   }
-  if (from.user_type() != 0) {
-    _internal_set_user_type(from._internal_user_type());
-  }
 }
 
 void MsgDBBindPhoneRes::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -13748,12 +13717,7 @@ void MsgDBBindPhoneRes::InternalSwap(MsgDBBindPhoneRes* other) {
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   phone_.Swap(&other->phone_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   password_.Swap(&other->password_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgDBBindPhoneRes, user_type_)
-      + sizeof(MsgDBBindPhoneRes::user_type_)
-      - PROTOBUF_FIELD_OFFSET(MsgDBBindPhoneRes, res_code_)>(
-          reinterpret_cast<char*>(&res_code_),
-          reinterpret_cast<char*>(&other->res_code_));
+  swap(res_code_, other->res_code_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MsgDBBindPhoneRes::GetMetadata() const {
