@@ -1081,6 +1081,7 @@ class CMD_3D_SC_Result PROTOBUF_FINAL :
     kCurGoldFieldNumber = 5,
     kCaiJinFieldNumber = 6,
     kFreeCountFieldNumber = 7,
+    kSmallGameFieldNumber = 9,
   };
   // repeated int32 icon = 8;
   int icon_size() const;
@@ -1167,6 +1168,15 @@ class CMD_3D_SC_Result PROTOBUF_FINAL :
   void _internal_set_free_count(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // bool small_game = 9;
+  void clear_small_game();
+  bool small_game() const;
+  void set_small_game(bool value);
+  private:
+  bool _internal_small_game() const;
+  void _internal_set_small_game(bool value);
+  public:
+
   // @@protoc_insertion_point(class_scope:DQDZ.CMD_3D_SC_Result)
  private:
   class _Internal;
@@ -1183,6 +1193,7 @@ class CMD_3D_SC_Result PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int64 cur_gold_;
   ::PROTOBUF_NAMESPACE_ID::int64 cai_jin_;
   ::PROTOBUF_NAMESPACE_ID::int32 free_count_;
+  bool small_game_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_DQDZ_2eproto;
 };
@@ -1980,6 +1991,26 @@ inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 CMD_3D_SC_Result::mutable_icon() {
   // @@protoc_insertion_point(field_mutable_list:DQDZ.CMD_3D_SC_Result.icon)
   return _internal_mutable_icon();
+}
+
+// bool small_game = 9;
+inline void CMD_3D_SC_Result::clear_small_game() {
+  small_game_ = false;
+}
+inline bool CMD_3D_SC_Result::_internal_small_game() const {
+  return small_game_;
+}
+inline bool CMD_3D_SC_Result::small_game() const {
+  // @@protoc_insertion_point(field_get:DQDZ.CMD_3D_SC_Result.small_game)
+  return _internal_small_game();
+}
+inline void CMD_3D_SC_Result::_internal_set_small_game(bool value) {
+  
+  small_game_ = value;
+}
+inline void CMD_3D_SC_Result::set_small_game(bool value) {
+  _internal_set_small_game(value);
+  // @@protoc_insertion_point(field_set:DQDZ.CMD_3D_SC_Result.small_game)
 }
 
 // -------------------------------------------------------------------

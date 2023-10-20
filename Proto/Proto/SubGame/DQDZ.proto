@@ -72,6 +72,7 @@ message CMD_3D_SC_Result
 	int64	cai_jin			= 6;				//	caijin
 	int32	free_count		= 7;				// 免费次数
 	repeated int32	icon	= 8;				// 图标结果集
+	bool	small_game		= 9;				// 小游戏
 };
 
 message CMD_StartBallGame
