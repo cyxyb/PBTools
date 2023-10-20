@@ -46,7 +46,7 @@ struct TableStruct_ServerInternalProto_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[51]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[52]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -107,6 +107,9 @@ extern MsgDBGamePlayerLoginRespDefaultTypeInternal _MsgDBGamePlayerLoginResp_def
 class MsgDBLoadRobot;
 class MsgDBLoadRobotDefaultTypeInternal;
 extern MsgDBLoadRobotDefaultTypeInternal _MsgDBLoadRobot_default_instance_;
+class MsgDBLoadRobotInfo;
+class MsgDBLoadRobotInfoDefaultTypeInternal;
+extern MsgDBLoadRobotInfoDefaultTypeInternal _MsgDBLoadRobotInfo_default_instance_;
 class MsgDBLoginOut;
 class MsgDBLoginOutDefaultTypeInternal;
 extern MsgDBLoginOutDefaultTypeInternal _MsgDBLoginOut_default_instance_;
@@ -225,6 +228,7 @@ template<> ::MsgDBGameLoginOut* Arena::CreateMaybeMessage<::MsgDBGameLoginOut>(A
 template<> ::MsgDBGamePlayerLogin* Arena::CreateMaybeMessage<::MsgDBGamePlayerLogin>(Arena*);
 template<> ::MsgDBGamePlayerLoginResp* Arena::CreateMaybeMessage<::MsgDBGamePlayerLoginResp>(Arena*);
 template<> ::MsgDBLoadRobot* Arena::CreateMaybeMessage<::MsgDBLoadRobot>(Arena*);
+template<> ::MsgDBLoadRobotInfo* Arena::CreateMaybeMessage<::MsgDBLoadRobotInfo>(Arena*);
 template<> ::MsgDBLoginOut* Arena::CreateMaybeMessage<::MsgDBLoginOut>(Arena*);
 template<> ::MsgDBMail* Arena::CreateMaybeMessage<::MsgDBMail>(Arena*);
 template<> ::MsgDBMailData* Arena::CreateMaybeMessage<::MsgDBMailData>(Arena*);
@@ -921,9 +925,31 @@ class MsgApplyRobot PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
+    kNumFieldNumber = 2,
     kServerIdFieldNumber = 1,
-    kApplyNumFieldNumber = 2,
   };
+  // repeated int32 num = 2;
+  int num_size() const;
+  private:
+  int _internal_num_size() const;
+  public:
+  void clear_num();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_num(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_num() const;
+  void _internal_add_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_num();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 num(int index) const;
+  void set_num(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      num() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_num();
+
   // int32 server_id = 1;
   void clear_server_id();
   ::PROTOBUF_NAMESPACE_ID::int32 server_id() const;
@@ -933,15 +959,6 @@ class MsgApplyRobot PROTOBUF_FINAL :
   void _internal_set_server_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 apply_num = 2;
-  void clear_apply_num();
-  ::PROTOBUF_NAMESPACE_ID::int32 apply_num() const;
-  void set_apply_num(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_apply_num() const;
-  void _internal_set_apply_num(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
   // @@protoc_insertion_point(class_scope:MsgApplyRobot)
  private:
   class _Internal;
@@ -949,8 +966,9 @@ class MsgApplyRobot PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > num_;
+  mutable std::atomic<int> _num_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::int32 server_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 apply_num_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -4839,6 +4857,153 @@ class MsgDBRegisterGame PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
+class MsgDBLoadRobotInfo PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgDBLoadRobotInfo) */ {
+ public:
+  inline MsgDBLoadRobotInfo() : MsgDBLoadRobotInfo(nullptr) {}
+  virtual ~MsgDBLoadRobotInfo();
+
+  MsgDBLoadRobotInfo(const MsgDBLoadRobotInfo& from);
+  MsgDBLoadRobotInfo(MsgDBLoadRobotInfo&& from) noexcept
+    : MsgDBLoadRobotInfo() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgDBLoadRobotInfo& operator=(const MsgDBLoadRobotInfo& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgDBLoadRobotInfo& operator=(MsgDBLoadRobotInfo&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgDBLoadRobotInfo& default_instance();
+
+  static inline const MsgDBLoadRobotInfo* internal_default_instance() {
+    return reinterpret_cast<const MsgDBLoadRobotInfo*>(
+               &_MsgDBLoadRobotInfo_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    26;
+
+  friend void swap(MsgDBLoadRobotInfo& a, MsgDBLoadRobotInfo& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgDBLoadRobotInfo* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgDBLoadRobotInfo* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgDBLoadRobotInfo* New() const final {
+    return CreateMaybeMessage<MsgDBLoadRobotInfo>(nullptr);
+  }
+
+  MsgDBLoadRobotInfo* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgDBLoadRobotInfo>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgDBLoadRobotInfo& from);
+  void MergeFrom(const MsgDBLoadRobotInfo& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgDBLoadRobotInfo* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgDBLoadRobotInfo";
+  }
+  protected:
+  explicit MsgDBLoadRobotInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kUserIdFieldNumber = 1,
+    kVipLevelFieldNumber = 2,
+  };
+  // int32 user_id = 1;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 vip_level = 2;
+  void clear_vip_level();
+  ::PROTOBUF_NAMESPACE_ID::int32 vip_level() const;
+  void set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_vip_level() const;
+  void _internal_set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgDBLoadRobotInfo)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 vip_level_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
+// -------------------------------------------------------------------
+
 class MsgDBLoadRobot PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgDBLoadRobot) */ {
  public:
@@ -4880,7 +5045,7 @@ class MsgDBLoadRobot PROTOBUF_FINAL :
                &_MsgDBLoadRobot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    26;
+    27;
 
   friend void swap(MsgDBLoadRobot& a, MsgDBLoadRobot& b) {
     a.Swap(&b);
@@ -4951,29 +5116,25 @@ class MsgDBLoadRobot PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kUserIdFieldNumber = 1,
+    kInfoFieldNumber = 1,
   };
-  // repeated int32 user_id = 1;
-  int user_id_size() const;
+  // repeated .MsgDBLoadRobotInfo info = 1;
+  int info_size() const;
   private:
-  int _internal_user_id_size() const;
+  int _internal_info_size() const;
   public:
-  void clear_user_id();
+  void clear_info();
+  ::MsgDBLoadRobotInfo* mutable_info(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgDBLoadRobotInfo >*
+      mutable_info();
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id(int index) const;
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      _internal_user_id() const;
-  void _internal_add_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      _internal_mutable_user_id();
+  const ::MsgDBLoadRobotInfo& _internal_info(int index) const;
+  ::MsgDBLoadRobotInfo* _internal_add_info();
   public:
-  ::PROTOBUF_NAMESPACE_ID::int32 user_id(int index) const;
-  void set_user_id(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
-  void add_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      user_id() const;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      mutable_user_id();
+  const ::MsgDBLoadRobotInfo& info(int index) const;
+  ::MsgDBLoadRobotInfo* add_info();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgDBLoadRobotInfo >&
+      info() const;
 
   // @@protoc_insertion_point(class_scope:MsgDBLoadRobot)
  private:
@@ -4982,8 +5143,7 @@ class MsgDBLoadRobot PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > user_id_;
-  mutable std::atomic<int> _user_id_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgDBLoadRobotInfo > info_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -5030,7 +5190,7 @@ class MsgDBGamePlayerLogin PROTOBUF_FINAL :
                &_MsgDBGamePlayerLogin_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    27;
+    28;
 
   friend void swap(MsgDBGamePlayerLogin& a, MsgDBGamePlayerLogin& b) {
     a.Swap(&b);
@@ -5195,7 +5355,7 @@ class MsgDBPlayerReconnectData PROTOBUF_FINAL :
                &_MsgDBPlayerReconnectData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    28;
+    29;
 
   friend void swap(MsgDBPlayerReconnectData& a, MsgDBPlayerReconnectData& b) {
     a.Swap(&b);
@@ -5433,7 +5593,7 @@ class MsgDBGamePlayerLoginResp PROTOBUF_FINAL :
                &_MsgDBGamePlayerLoginResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    29;
+    30;
 
   friend void swap(MsgDBGamePlayerLoginResp& a, MsgDBGamePlayerLoginResp& b) {
     a.Swap(&b);
@@ -5720,7 +5880,7 @@ class MsgDBWriteScore PROTOBUF_FINAL :
                &_MsgDBWriteScore_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    30;
+    31;
 
   friend void swap(MsgDBWriteScore& a, MsgDBWriteScore& b) {
     a.Swap(&b);
@@ -5907,7 +6067,7 @@ class MsgDBWriteScoreResp PROTOBUF_FINAL :
                &_MsgDBWriteScoreResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    31;
+    32;
 
   friend void swap(MsgDBWriteScoreResp& a, MsgDBWriteScoreResp& b) {
     a.Swap(&b);
@@ -6120,7 +6280,7 @@ class MsgDBFingerGuessWriteScore PROTOBUF_FINAL :
                &_MsgDBFingerGuessWriteScore_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    32;
+    33;
 
   friend void swap(MsgDBFingerGuessWriteScore& a, MsgDBFingerGuessWriteScore& b) {
     a.Swap(&b);
@@ -6289,7 +6449,7 @@ class MsgDBFingerGuessWriteScoreResp PROTOBUF_FINAL :
                &_MsgDBFingerGuessWriteScoreResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    33;
+    34;
 
   friend void swap(MsgDBFingerGuessWriteScoreResp& a, MsgDBFingerGuessWriteScoreResp& b) {
     a.Swap(&b);
@@ -6491,7 +6651,7 @@ class MsgDBFingerGuessQueryRecord PROTOBUF_FINAL :
                &_MsgDBFingerGuessQueryRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    34;
+    35;
 
   friend void swap(MsgDBFingerGuessQueryRecord& a, MsgDBFingerGuessQueryRecord& b) {
     a.Swap(&b);
@@ -6660,7 +6820,7 @@ class MsgDBModifyAvatar PROTOBUF_FINAL :
                &_MsgDBModifyAvatar_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    35;
+    36;
 
   friend void swap(MsgDBModifyAvatar& a, MsgDBModifyAvatar& b) {
     a.Swap(&b);
@@ -6814,7 +6974,7 @@ class MsgDBUpdateJackpot PROTOBUF_FINAL :
                &_MsgDBUpdateJackpot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    36;
+    37;
 
   friend void swap(MsgDBUpdateJackpot& a, MsgDBUpdateJackpot& b) {
     a.Swap(&b);
@@ -6972,7 +7132,7 @@ class MsgDBTransferOperate PROTOBUF_FINAL :
                &_MsgDBTransferOperate_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    37;
+    38;
 
   friend void swap(MsgDBTransferOperate& a, MsgDBTransferOperate& b) {
     a.Swap(&b);
@@ -7141,7 +7301,7 @@ class MsgStorageCode PROTOBUF_FINAL :
                &_MsgStorageCode_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    38;
+    39;
 
   friend void swap(MsgStorageCode& a, MsgStorageCode& b) {
     a.Swap(&b);
@@ -7306,7 +7466,7 @@ class MsgDBBindPhone PROTOBUF_FINAL :
                &_MsgDBBindPhone_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    39;
+    40;
 
   friend void swap(MsgDBBindPhone& a, MsgDBBindPhone& b) {
     a.Swap(&b);
@@ -7496,7 +7656,7 @@ class MsgDBBindPhoneRes PROTOBUF_FINAL :
                &_MsgDBBindPhoneRes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    40;
+    41;
 
   friend void swap(MsgDBBindPhoneRes& a, MsgDBBindPhoneRes& b) {
     a.Swap(&b);
@@ -7668,7 +7828,7 @@ class MsgDBChatLogin PROTOBUF_FINAL :
                &_MsgDBChatLogin_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    41;
+    42;
 
   friend void swap(MsgDBChatLogin& a, MsgDBChatLogin& b) {
     a.Swap(&b);
@@ -7822,7 +7982,7 @@ class MsgDBChatTrumpetMsg PROTOBUF_FINAL :
                &_MsgDBChatTrumpetMsg_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    42;
+    43;
 
   friend void swap(MsgDBChatTrumpetMsg& a, MsgDBChatTrumpetMsg& b) {
     a.Swap(&b);
@@ -7976,7 +8136,7 @@ class MsgDBBuyGoods PROTOBUF_FINAL :
                &_MsgDBBuyGoods_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    43;
+    44;
 
   friend void swap(MsgDBBuyGoods& a, MsgDBBuyGoods& b) {
     a.Swap(&b);
@@ -8134,7 +8294,7 @@ class MsgDBGameLoginOut PROTOBUF_FINAL :
                &_MsgDBGameLoginOut_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    44;
+    45;
 
   friend void swap(MsgDBGameLoginOut& a, MsgDBGameLoginOut& b) {
     a.Swap(&b);
@@ -8314,7 +8474,7 @@ class MsgDBSubagentInformation PROTOBUF_FINAL :
                &_MsgDBSubagentInformation_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    45;
+    46;
 
   friend void swap(MsgDBSubagentInformation& a, MsgDBSubagentInformation& b) {
     a.Swap(&b);
@@ -8512,7 +8672,7 @@ class MsgDBQueryTransferTax PROTOBUF_FINAL :
                &_MsgDBQueryTransferTax_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    46;
+    47;
 
   friend void swap(MsgDBQueryTransferTax& a, MsgDBQueryTransferTax& b) {
     a.Swap(&b);
@@ -8659,7 +8819,7 @@ class MsgDBTransferTakeOut PROTOBUF_FINAL :
                &_MsgDBTransferTakeOut_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    47;
+    48;
 
   friend void swap(MsgDBTransferTakeOut& a, MsgDBTransferTakeOut& b) {
     a.Swap(&b);
@@ -8861,7 +9021,7 @@ class MsgDBTransferReceive PROTOBUF_FINAL :
                &_MsgDBTransferReceive_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    48;
+    49;
 
   friend void swap(MsgDBTransferReceive& a, MsgDBTransferReceive& b) {
     a.Swap(&b);
@@ -9008,7 +9168,7 @@ class MsgDBBindInviteCode PROTOBUF_FINAL :
                &_MsgDBBindInviteCode_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    49;
+    50;
 
   friend void swap(MsgDBBindInviteCode& a, MsgDBBindInviteCode& b) {
     a.Swap(&b);
@@ -9162,7 +9322,7 @@ class MsgDBSyncDotData PROTOBUF_FINAL :
                &_MsgDBSyncDotData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    50;
+    51;
 
   friend void swap(MsgDBSyncDotData& a, MsgDBSyncDotData& b) {
     a.Swap(&b);
@@ -9650,24 +9810,51 @@ inline void MsgApplyRobot::set_server_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:MsgApplyRobot.server_id)
 }
 
-// int32 apply_num = 2;
-inline void MsgApplyRobot::clear_apply_num() {
-  apply_num_ = 0;
+// repeated int32 num = 2;
+inline int MsgApplyRobot::_internal_num_size() const {
+  return num_.size();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgApplyRobot::_internal_apply_num() const {
-  return apply_num_;
+inline int MsgApplyRobot::num_size() const {
+  return _internal_num_size();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgApplyRobot::apply_num() const {
-  // @@protoc_insertion_point(field_get:MsgApplyRobot.apply_num)
-  return _internal_apply_num();
+inline void MsgApplyRobot::clear_num() {
+  num_.Clear();
 }
-inline void MsgApplyRobot::_internal_set_apply_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  apply_num_ = value;
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgApplyRobot::_internal_num(int index) const {
+  return num_.Get(index);
 }
-inline void MsgApplyRobot::set_apply_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_apply_num(value);
-  // @@protoc_insertion_point(field_set:MsgApplyRobot.apply_num)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgApplyRobot::num(int index) const {
+  // @@protoc_insertion_point(field_get:MsgApplyRobot.num)
+  return _internal_num(index);
+}
+inline void MsgApplyRobot::set_num(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  num_.Set(index, value);
+  // @@protoc_insertion_point(field_set:MsgApplyRobot.num)
+}
+inline void MsgApplyRobot::_internal_add_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  num_.Add(value);
+}
+inline void MsgApplyRobot::add_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_num(value);
+  // @@protoc_insertion_point(field_add:MsgApplyRobot.num)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+MsgApplyRobot::_internal_num() const {
+  return num_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+MsgApplyRobot::num() const {
+  // @@protoc_insertion_point(field_list:MsgApplyRobot.num)
+  return _internal_num();
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+MsgApplyRobot::_internal_mutable_num() {
+  return &num_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+MsgApplyRobot::mutable_num() {
+  // @@protoc_insertion_point(field_mutable_list:MsgApplyRobot.num)
+  return _internal_mutable_num();
 }
 
 // -------------------------------------------------------------------
@@ -12332,53 +12519,89 @@ inline void MsgDBRegisterGame::set_allocated_server_name(std::string* server_nam
 
 // -------------------------------------------------------------------
 
-// MsgDBLoadRobot
+// MsgDBLoadRobotInfo
 
-// repeated int32 user_id = 1;
-inline int MsgDBLoadRobot::_internal_user_id_size() const {
-  return user_id_.size();
+// int32 user_id = 1;
+inline void MsgDBLoadRobotInfo::clear_user_id() {
+  user_id_ = 0;
 }
-inline int MsgDBLoadRobot::user_id_size() const {
-  return _internal_user_id_size();
-}
-inline void MsgDBLoadRobot::clear_user_id() {
-  user_id_.Clear();
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBLoadRobot::_internal_user_id(int index) const {
-  return user_id_.Get(index);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBLoadRobot::user_id(int index) const {
-  // @@protoc_insertion_point(field_get:MsgDBLoadRobot.user_id)
-  return _internal_user_id(index);
-}
-inline void MsgDBLoadRobot::set_user_id(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
-  user_id_.Set(index, value);
-  // @@protoc_insertion_point(field_set:MsgDBLoadRobot.user_id)
-}
-inline void MsgDBLoadRobot::_internal_add_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  user_id_.Add(value);
-}
-inline void MsgDBLoadRobot::add_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_add_user_id(value);
-  // @@protoc_insertion_point(field_add:MsgDBLoadRobot.user_id)
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-MsgDBLoadRobot::_internal_user_id() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBLoadRobotInfo::_internal_user_id() const {
   return user_id_;
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-MsgDBLoadRobot::user_id() const {
-  // @@protoc_insertion_point(field_list:MsgDBLoadRobot.user_id)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBLoadRobotInfo::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBLoadRobotInfo.user_id)
   return _internal_user_id();
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-MsgDBLoadRobot::_internal_mutable_user_id() {
-  return &user_id_;
+inline void MsgDBLoadRobotInfo::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-MsgDBLoadRobot::mutable_user_id() {
-  // @@protoc_insertion_point(field_mutable_list:MsgDBLoadRobot.user_id)
-  return _internal_mutable_user_id();
+inline void MsgDBLoadRobotInfo::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBLoadRobotInfo.user_id)
+}
+
+// int32 vip_level = 2;
+inline void MsgDBLoadRobotInfo::clear_vip_level() {
+  vip_level_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBLoadRobotInfo::_internal_vip_level() const {
+  return vip_level_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBLoadRobotInfo::vip_level() const {
+  // @@protoc_insertion_point(field_get:MsgDBLoadRobotInfo.vip_level)
+  return _internal_vip_level();
+}
+inline void MsgDBLoadRobotInfo::_internal_set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  vip_level_ = value;
+}
+inline void MsgDBLoadRobotInfo::set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_vip_level(value);
+  // @@protoc_insertion_point(field_set:MsgDBLoadRobotInfo.vip_level)
+}
+
+// -------------------------------------------------------------------
+
+// MsgDBLoadRobot
+
+// repeated .MsgDBLoadRobotInfo info = 1;
+inline int MsgDBLoadRobot::_internal_info_size() const {
+  return info_.size();
+}
+inline int MsgDBLoadRobot::info_size() const {
+  return _internal_info_size();
+}
+inline void MsgDBLoadRobot::clear_info() {
+  info_.Clear();
+}
+inline ::MsgDBLoadRobotInfo* MsgDBLoadRobot::mutable_info(int index) {
+  // @@protoc_insertion_point(field_mutable:MsgDBLoadRobot.info)
+  return info_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgDBLoadRobotInfo >*
+MsgDBLoadRobot::mutable_info() {
+  // @@protoc_insertion_point(field_mutable_list:MsgDBLoadRobot.info)
+  return &info_;
+}
+inline const ::MsgDBLoadRobotInfo& MsgDBLoadRobot::_internal_info(int index) const {
+  return info_.Get(index);
+}
+inline const ::MsgDBLoadRobotInfo& MsgDBLoadRobot::info(int index) const {
+  // @@protoc_insertion_point(field_get:MsgDBLoadRobot.info)
+  return _internal_info(index);
+}
+inline ::MsgDBLoadRobotInfo* MsgDBLoadRobot::_internal_add_info() {
+  return info_.Add();
+}
+inline ::MsgDBLoadRobotInfo* MsgDBLoadRobot::add_info() {
+  // @@protoc_insertion_point(field_add:MsgDBLoadRobot.info)
+  return _internal_add_info();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgDBLoadRobotInfo >&
+MsgDBLoadRobot::info() const {
+  // @@protoc_insertion_point(field_list:MsgDBLoadRobot.info)
+  return info_;
 }
 
 // -------------------------------------------------------------------
@@ -15306,6 +15529,8 @@ inline void MsgDBSyncDotData::set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

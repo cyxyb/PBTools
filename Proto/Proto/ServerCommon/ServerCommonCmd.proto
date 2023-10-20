@@ -90,7 +90,7 @@ enum EMsgIDDB
 	//0-1000 Center_Server2DB
 	MsgIDDB_NULL						= 0;
 	CENTER2DB_UpdateOnlineNum			= 1;	//更新在线人数
-	CENTER2DB_InitOnlineNum				= 2;	//初始化在线人数
+	CENTER2DB_InitServerData			= 2;	//初始化服务器数据
 	CENTER2DB_RegisterLogin				= 3;	//登录服务器注册
 	CENTER2DB_UnregisterLogin			= 4;	//登录服务器关闭
 	CENTER2DB_RegisterGame				= 5;	//游戏服务器注册
@@ -102,6 +102,7 @@ enum EMsgIDDB
 	DB2CENTER_AddMailResp				= 11;	//添加邮件返回
 	CENTER2DB_UpdateRankRichMan			= 14;	//刷新大富豪排行榜
 	CENTER2DB_InserRankBigWin			= 15;	//添加今日赢家排行榜
+	CENTER2DB_GameServerUnRegister		= 16;	//游戏服务器关闭
 	
 	//1001-2000 LoginServer2DB	
 	LOGIN2DB_Login						= 1001;	//玩家登录
@@ -197,6 +198,9 @@ enum EMsgIDDB
 	GAME2DB_LoginOut					= 2016;	//玩家退出游戏
 	GAME2DB_ClearOfflineUser			= 2017;	//清除断线玩家
 	GAME2DB_UserReConnect				= 2018;	//玩家重连
+	GAME2DB_ApplyRobot					= 2019;	//申请机器人
+	DB2GAME_ApplyRobotResp				= 2020;	//申请机器人返回
+	
 	//3001-4000 ChatServer2DB	
 	CHAT2DB_Login						= 3001;	//登录
 	DB2CHAT_LoginResp					= 3002;	//登录返回
