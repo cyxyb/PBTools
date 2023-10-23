@@ -29,13 +29,12 @@ message MsgRegisterChatServer
 	int32 	port				= 2; // 端口
 	int32 	server_id			= 3; // 服务器ID
 	int32	max_player			= 4; //	最大人数
-
 }
 
 message MsgApplyRobot
 {
 	int32	server_id		= 1;	//服务器ID
-	int32	apply_num		= 2;	//申请数量
+	repeated int32 num		= 2;	//vip等级0-7对应的机器人数量
 }
 
 message MsgApplyRobotResp
@@ -240,9 +239,15 @@ message MsgDBRegisterGame
 	string	server_name			= 2;		//服务器名字
 }
 
+message MsgDBLoadRobotInfo
+{
+	int32	user_id				= 1;		//userid
+	int32	vip_level			= 2;		//vip等级
+}
+
 message MsgDBLoadRobot
 {
-	repeated int32	user_id			= 1;		//机器人id
+	repeated MsgDBLoadRobotInfo	info	= 1;		//机器人id
 }
 
 //游戏登录

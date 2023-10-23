@@ -34,20 +34,20 @@ namespace DQDZ {
             "X2lkGAQgASgFEhIKCnVzZXJfc3RhdGUYBSABKAUSEgoKZnJlZV9jb3VudBgG",
             "IAEoBRIQCghtdWx0aXBsZRgHIAEoBRILCgNiZXQYCCABKAUSDAoEZ29sZBgJ",
             "IAEoAxIPCgdjYWlfamluGAogASgDIhwKDXRhZ0dhbWVDb25maWcSCwoDYmV0",
-            "GAEgAygFIpkBChBDTURfM0RfU0NfUmVzdWx0Eg8KB3VzZXJfaWQYASABKAUS",
+            "GAEgAygFIq0BChBDTURfM0RfU0NfUmVzdWx0Eg8KB3VzZXJfaWQYASABKAUS",
             "CwoDYmV0GAIgASgFEhAKCHdpbl9nb2xkGAMgASgDEhAKCGNvbV9nb2xkGAQg",
             "ASgDEhAKCGN1cl9nb2xkGAUgASgDEg8KB2NhaV9qaW4YBiABKAMSEgoKZnJl",
-            "ZV9jb3VudBgHIAEoBRIMCgRpY29uGAggAygFIngKEUNNRF9TdGFydEJhbGxH",
-            "YW1lEg8KB3VzZXJfaWQYASABKAUSCwoDcmV0GAIgASgFEhAKCGFkZF9nb2xk",
-            "GAMgASgDEhAKCGN1cl9nb2xkGAQgASgDEg8KB2NhaV9qaW4YBSABKAMSEAoI",
-            "bXVsdGlwbGUYBiABKAUqqgIKEEVNc2dJRERRRFpTZXJ2ZXISFQoRU1VCX0NT",
-            "X0dBTUVfU1RBUlQQABIaChZTVUJfQ1NfU1RBUlRfQkFMTF9HQU1FEAESGgoW",
-            "U1VCX0NTX1JFUVVFU1RfQ0FJX0pJThACEhUKEVNVQl9TQ19HQU1FX1NUQVJU",
-            "EAMSFAoQU1VCX1NDX0dBTUVfT1ZFUhAEEhwKGFNVQl9TQ19VUERBVEVfUFJJ",
-            "WkVfUE9PTBAFEhYKElNVQl9TQ19HQU1FX0NPTkZJRxAGEhQKEFNVQl9TQ19H",
-            "QU1FX0RBVEEQBxIVChFTVUJfU0NfU1RBUlRfR0FNRRAIEhoKFlNVQl9TQ19T",
-            "VEFSVF9CQUxMX0dBTUUQCRIbChdTVUJfU0NfUkVTUE9OU0VfQ0FJX0pJThAK",
-            "YgZwcm90bzM="));
+            "ZV9jb3VudBgHIAEoBRIMCgRpY29uGAggAygFEhIKCnNtYWxsX2dhbWUYCSAB",
+            "KAgieAoRQ01EX1N0YXJ0QmFsbEdhbWUSDwoHdXNlcl9pZBgBIAEoBRILCgNy",
+            "ZXQYAiABKAUSEAoIYWRkX2dvbGQYAyABKAMSEAoIY3VyX2dvbGQYBCABKAMS",
+            "DwoHY2FpX2ppbhgFIAEoAxIQCghtdWx0aXBsZRgGIAEoBSqqAgoQRU1zZ0lE",
+            "RFFEWlNlcnZlchIVChFTVUJfQ1NfR0FNRV9TVEFSVBAAEhoKFlNVQl9DU19T",
+            "VEFSVF9CQUxMX0dBTUUQARIaChZTVUJfQ1NfUkVRVUVTVF9DQUlfSklOEAIS",
+            "FQoRU1VCX1NDX0dBTUVfU1RBUlQQAxIUChBTVUJfU0NfR0FNRV9PVkVSEAQS",
+            "HAoYU1VCX1NDX1VQREFURV9QUklaRV9QT09MEAUSFgoSU1VCX1NDX0dBTUVf",
+            "Q09ORklHEAYSFAoQU1VCX1NDX0dBTUVfREFUQRAHEhUKEVNVQl9TQ19TVEFS",
+            "VF9HQU1FEAgSGgoWU1VCX1NDX1NUQVJUX0JBTExfR0FNRRAJEhsKF1NVQl9T",
+            "Q19SRVNQT05TRV9DQUlfSklOEApiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::DQDZ.EMsgIDDQDZServer), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -56,7 +56,7 @@ namespace DQDZ {
             new pbr::GeneratedClrTypeInfo(typeof(global::DQDZ.CMD_3D_CS_RequestCaiJin), global::DQDZ.CMD_3D_CS_RequestCaiJin.Parser, new[]{ "Version", "VerifyCode" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DQDZ.SC_SceneInfo), global::DQDZ.SC_SceneInfo.Parser, new[]{ "UserId", "NetCode", "ChairId", "TableId", "UserState", "FreeCount", "Multiple", "Bet", "Gold", "CaiJin" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DQDZ.tagGameConfig), global::DQDZ.tagGameConfig.Parser, new[]{ "Bet" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::DQDZ.CMD_3D_SC_Result), global::DQDZ.CMD_3D_SC_Result.Parser, new[]{ "UserId", "Bet", "WinGold", "ComGold", "CurGold", "CaiJin", "FreeCount", "Icon" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DQDZ.CMD_3D_SC_Result), global::DQDZ.CMD_3D_SC_Result.Parser, new[]{ "UserId", "Bet", "WinGold", "ComGold", "CurGold", "CaiJin", "FreeCount", "Icon", "SmallGame" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DQDZ.CMD_StartBallGame), global::DQDZ.CMD_StartBallGame.Parser, new[]{ "UserId", "Ret", "AddGold", "CurGold", "CaiJin", "Multiple" }, null, null, null, null)
           }));
     }
@@ -1539,6 +1539,7 @@ namespace DQDZ {
       caiJin_ = other.caiJin_;
       freeCount_ = other.freeCount_;
       icon_ = other.icon_.Clone();
+      smallGame_ = other.smallGame_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1658,6 +1659,20 @@ namespace DQDZ {
       get { return icon_; }
     }
 
+    /// <summary>Field number for the "small_game" field.</summary>
+    public const int SmallGameFieldNumber = 9;
+    private bool smallGame_;
+    /// <summary>
+    /// 小游戏
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool SmallGame {
+      get { return smallGame_; }
+      set {
+        smallGame_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as CMD_3D_SC_Result);
@@ -1679,6 +1694,7 @@ namespace DQDZ {
       if (CaiJin != other.CaiJin) return false;
       if (FreeCount != other.FreeCount) return false;
       if(!icon_.Equals(other.icon_)) return false;
+      if (SmallGame != other.SmallGame) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1693,6 +1709,7 @@ namespace DQDZ {
       if (CaiJin != 0L) hash ^= CaiJin.GetHashCode();
       if (FreeCount != 0) hash ^= FreeCount.GetHashCode();
       hash ^= icon_.GetHashCode();
+      if (SmallGame != false) hash ^= SmallGame.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1738,6 +1755,10 @@ namespace DQDZ {
         output.WriteInt32(FreeCount);
       }
       icon_.WriteTo(output, _repeated_icon_codec);
+      if (SmallGame != false) {
+        output.WriteRawTag(72);
+        output.WriteBool(SmallGame);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1776,6 +1797,10 @@ namespace DQDZ {
         output.WriteInt32(FreeCount);
       }
       icon_.WriteTo(ref output, _repeated_icon_codec);
+      if (SmallGame != false) {
+        output.WriteRawTag(72);
+        output.WriteBool(SmallGame);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1807,6 +1832,9 @@ namespace DQDZ {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(FreeCount);
       }
       size += icon_.CalculateSize(_repeated_icon_codec);
+      if (SmallGame != false) {
+        size += 1 + 1;
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1840,6 +1868,9 @@ namespace DQDZ {
         FreeCount = other.FreeCount;
       }
       icon_.Add(other.icon_);
+      if (other.SmallGame != false) {
+        SmallGame = other.SmallGame;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1887,6 +1918,10 @@ namespace DQDZ {
             icon_.AddEntriesFrom(input, _repeated_icon_codec);
             break;
           }
+          case 72: {
+            SmallGame = input.ReadBool();
+            break;
+          }
         }
       }
     #endif
@@ -1932,6 +1967,10 @@ namespace DQDZ {
           case 66:
           case 64: {
             icon_.AddEntriesFrom(ref input, _repeated_icon_codec);
+            break;
+          }
+          case 72: {
+            SmallGame = input.ReadBool();
             break;
           }
         }

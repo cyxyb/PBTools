@@ -196,6 +196,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_DQDZ_2eproto::offsets[] PROTOB
   PROTOBUF_FIELD_OFFSET(::DQDZ::CMD_3D_SC_Result, cai_jin_),
   PROTOBUF_FIELD_OFFSET(::DQDZ::CMD_3D_SC_Result, free_count_),
   PROTOBUF_FIELD_OFFSET(::DQDZ::CMD_3D_SC_Result, icon_),
+  PROTOBUF_FIELD_OFFSET(::DQDZ::CMD_3D_SC_Result, small_game_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::DQDZ::CMD_StartBallGame, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -215,7 +216,7 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 22, -1, sizeof(::DQDZ::SC_SceneInfo)},
   { 37, -1, sizeof(::DQDZ::tagGameConfig)},
   { 43, -1, sizeof(::DQDZ::CMD_3D_SC_Result)},
-  { 56, -1, sizeof(::DQDZ::CMD_StartBallGame)},
+  { 57, -1, sizeof(::DQDZ::CMD_StartBallGame)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -240,21 +241,22 @@ const char descriptor_table_protodef_DQDZ_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "tate\030\005 \001(\005\022\022\n\nfree_count\030\006 \001(\005\022\020\n\010multip"
   "le\030\007 \001(\005\022\013\n\003bet\030\010 \001(\005\022\014\n\004gold\030\t \001(\003\022\017\n\007c"
   "ai_jin\030\n \001(\003\"\034\n\rtagGameConfig\022\013\n\003bet\030\001 \003"
-  "(\005\"\231\001\n\020CMD_3D_SC_Result\022\017\n\007user_id\030\001 \001(\005"
+  "(\005\"\255\001\n\020CMD_3D_SC_Result\022\017\n\007user_id\030\001 \001(\005"
   "\022\013\n\003bet\030\002 \001(\005\022\020\n\010win_gold\030\003 \001(\003\022\020\n\010com_g"
   "old\030\004 \001(\003\022\020\n\010cur_gold\030\005 \001(\003\022\017\n\007cai_jin\030\006"
-  " \001(\003\022\022\n\nfree_count\030\007 \001(\005\022\014\n\004icon\030\010 \003(\005\"x"
-  "\n\021CMD_StartBallGame\022\017\n\007user_id\030\001 \001(\005\022\013\n\003"
-  "ret\030\002 \001(\005\022\020\n\010add_gold\030\003 \001(\003\022\020\n\010cur_gold\030"
-  "\004 \001(\003\022\017\n\007cai_jin\030\005 \001(\003\022\020\n\010multiple\030\006 \001(\005"
-  "*\252\002\n\020EMsgIDDQDZServer\022\025\n\021SUB_CS_GAME_STA"
-  "RT\020\000\022\032\n\026SUB_CS_START_BALL_GAME\020\001\022\032\n\026SUB_"
-  "CS_REQUEST_CAI_JIN\020\002\022\025\n\021SUB_SC_GAME_STAR"
-  "T\020\003\022\024\n\020SUB_SC_GAME_OVER\020\004\022\034\n\030SUB_SC_UPDA"
-  "TE_PRIZE_POOL\020\005\022\026\n\022SUB_SC_GAME_CONFIG\020\006\022"
-  "\024\n\020SUB_SC_GAME_DATA\020\007\022\025\n\021SUB_SC_START_GA"
-  "ME\020\010\022\032\n\026SUB_SC_START_BALL_GAME\020\t\022\033\n\027SUB_"
-  "SC_RESPONSE_CAI_JIN\020\nb\006proto3"
+  " \001(\003\022\022\n\nfree_count\030\007 \001(\005\022\014\n\004icon\030\010 \003(\005\022\022"
+  "\n\nsmall_game\030\t \001(\010\"x\n\021CMD_StartBallGame\022"
+  "\017\n\007user_id\030\001 \001(\005\022\013\n\003ret\030\002 \001(\005\022\020\n\010add_gol"
+  "d\030\003 \001(\003\022\020\n\010cur_gold\030\004 \001(\003\022\017\n\007cai_jin\030\005 \001"
+  "(\003\022\020\n\010multiple\030\006 \001(\005*\252\002\n\020EMsgIDDQDZServe"
+  "r\022\025\n\021SUB_CS_GAME_START\020\000\022\032\n\026SUB_CS_START"
+  "_BALL_GAME\020\001\022\032\n\026SUB_CS_REQUEST_CAI_JIN\020\002"
+  "\022\025\n\021SUB_SC_GAME_START\020\003\022\024\n\020SUB_SC_GAME_O"
+  "VER\020\004\022\034\n\030SUB_SC_UPDATE_PRIZE_POOL\020\005\022\026\n\022S"
+  "UB_SC_GAME_CONFIG\020\006\022\024\n\020SUB_SC_GAME_DATA\020"
+  "\007\022\025\n\021SUB_SC_START_GAME\020\010\022\032\n\026SUB_SC_START"
+  "_BALL_GAME\020\t\022\033\n\027SUB_SC_RESPONSE_CAI_JIN\020"
+  "\nb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_DQDZ_2eproto_deps[1] = {
 };
@@ -269,7 +271,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_DQD
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_DQDZ_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_DQDZ_2eproto = {
-  false, false, descriptor_table_protodef_DQDZ_2eproto, "DQDZ.proto", 1029,
+  false, false, descriptor_table_protodef_DQDZ_2eproto, "DQDZ.proto", 1049,
   &descriptor_table_DQDZ_2eproto_once, descriptor_table_DQDZ_2eproto_sccs, descriptor_table_DQDZ_2eproto_deps, 7, 0,
   schemas, file_default_instances, TableStruct_DQDZ_2eproto::offsets,
   file_level_metadata_DQDZ_2eproto, 7, file_level_enum_descriptors_DQDZ_2eproto, file_level_service_descriptors_DQDZ_2eproto,
@@ -1649,16 +1651,16 @@ CMD_3D_SC_Result::CMD_3D_SC_Result(const CMD_3D_SC_Result& from)
       icon_(from.icon_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&user_id_, &from.user_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&free_count_) -
-    reinterpret_cast<char*>(&user_id_)) + sizeof(free_count_));
+    static_cast<size_t>(reinterpret_cast<char*>(&small_game_) -
+    reinterpret_cast<char*>(&user_id_)) + sizeof(small_game_));
   // @@protoc_insertion_point(copy_constructor:DQDZ.CMD_3D_SC_Result)
 }
 
 void CMD_3D_SC_Result::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&user_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&free_count_) -
-      reinterpret_cast<char*>(&user_id_)) + sizeof(free_count_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&small_game_) -
+      reinterpret_cast<char*>(&user_id_)) + sizeof(small_game_));
 }
 
 CMD_3D_SC_Result::~CMD_3D_SC_Result() {
@@ -1694,8 +1696,8 @@ void CMD_3D_SC_Result::Clear() {
 
   icon_.Clear();
   ::memset(&user_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&free_count_) -
-      reinterpret_cast<char*>(&user_id_)) + sizeof(free_count_));
+      reinterpret_cast<char*>(&small_game_) -
+      reinterpret_cast<char*>(&user_id_)) + sizeof(small_game_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -1762,6 +1764,13 @@ const char* CMD_3D_SC_Result::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           CHK_(ptr);
         } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64) {
           _internal_add_icon(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // bool small_game = 9;
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+          small_game_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1844,6 +1853,12 @@ failure:
     }
   }
 
+  // bool small_game = 9;
+  if (this->small_game() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(9, this->_internal_small_game(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -1924,6 +1939,11 @@ size_t CMD_3D_SC_Result::ByteSizeLong() const {
         this->_internal_free_count());
   }
 
+  // bool small_game = 9;
+  if (this->small_game() != 0) {
+    total_size += 1 + 1;
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
         _internal_metadata_, total_size, &_cached_size_);
@@ -1977,6 +1997,9 @@ void CMD_3D_SC_Result::MergeFrom(const CMD_3D_SC_Result& from) {
   if (from.free_count() != 0) {
     _internal_set_free_count(from._internal_free_count());
   }
+  if (from.small_game() != 0) {
+    _internal_set_small_game(from._internal_small_game());
+  }
 }
 
 void CMD_3D_SC_Result::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -2002,8 +2025,8 @@ void CMD_3D_SC_Result::InternalSwap(CMD_3D_SC_Result* other) {
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   icon_.InternalSwap(&other->icon_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(CMD_3D_SC_Result, free_count_)
-      + sizeof(CMD_3D_SC_Result::free_count_)
+      PROTOBUF_FIELD_OFFSET(CMD_3D_SC_Result, small_game_)
+      + sizeof(CMD_3D_SC_Result::small_game_)
       - PROTOBUF_FIELD_OFFSET(CMD_3D_SC_Result, user_id_)>(
           reinterpret_cast<char*>(&user_id_),
           reinterpret_cast<char*>(&other->user_id_));
