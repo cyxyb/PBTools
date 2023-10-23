@@ -259,6 +259,7 @@ enum EMsgIDDB : int {
   LOGIN2DB_DotRechargeRecord = 1072,
   DB2LOGIN_DotRechargeRecordResp = 1073,
   LOGIN2DB_SyncDotData = 1074,
+  LOGIN2DB_OnlineActiveQuery = 1075,
   GAME2DB_Login = 2001,
   DB2GAME_LoginResp = 2002,
   GAME2DB_LoadCheatRate = 2003,

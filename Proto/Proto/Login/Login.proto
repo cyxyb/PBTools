@@ -461,3 +461,30 @@ message MsgDotRechargeResp
 	int64			gold			= 2;	//玩家类型
 	repeated int32 	recharge_info	= 3;	//充值数量
 }
+
+//在线时长配置
+message MsgOnlineActiveConfig
+{
+	int32 item_id = 1;						//奖励id
+	int32 item_num = 2;						//奖励数量
+	int32 type = 3;							//奖励类型 类型为1 为任务1以此类推 每个类型有四个相同类型
+	int32 online_index = 4;					//奖励索引
+	int32 times = 5;						//所需时间
+}
+
+//在线时长查询
+message MsgOnlineActiveQuery
+{
+	int32 user_times = 1;					//玩家当前时长
+	repeated int32 index_id = 2;			//0表示未领取非0已经领取
+	repeated MsgOnlineActiveConfig online_config = 3;
+}
+
+//在线时长奖励
+message MsgOlineActiveAward
+{
+	int32 item_id = 1;						//奖励id
+	int32 item_num = 2;						//奖励数量
+	int32 type = 3;							//奖励类型
+	int32 online_index = 4;					//奖励索引
+}

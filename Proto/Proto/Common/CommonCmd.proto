@@ -118,7 +118,10 @@ enum EMsgIDLogin
 	MsgIDRecharge_DotRechargeRecord				= 104;		//打点充值记录(MsgCommonBool)
 	MsgIDRecharge_DotRechargeRecordResp			= 105;		//打点充值记录返回(MsgDotRechargeResp)
 	MsgIDRecharge_SyncDotData					= 106;		//同步打点数据(MsgCommonN32)
-	
+	MsgIDOnline_OnlineActiveQuery				= 107;		//在线查询(MsgCommonBool)
+	MsgIDOnline_OnlineActiveQueryResp			= 108;		//在线查询返回(MsgOnlineActiveQuery)
+	MsgIDOnline_OnlineActivePick				= 109;		//在线领取(MsgCommonN32)
+	MsgIDOnline_OnlineActivePickResp			= 110;		//在线领取返回(MsgOlineActiveAward)
 }
 
 enum EMsgIDGame

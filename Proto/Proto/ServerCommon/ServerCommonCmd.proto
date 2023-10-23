@@ -49,6 +49,7 @@ enum EMsgIDServerInternalProto
 	LOGIN2CENTER_ReceiveSynchronousLogin		= 27;	//领取转账同步金币
 	CENTER2LOGIN_ReceiveSynchronousLoginResp	= 28;	//领取转账同步金币返回
 	CENTER2LOGIN_RefreshGoldResp				= 29;	//刷新GM添加金币返回
+	
 	//1001-2000 game <-> center
 	GAME2CENTER_Register			= 2001;	//游戏服务器注册
 	GAME2CENTER_UnRegister			= 2002;	//游戏服务器注销
@@ -179,6 +180,7 @@ enum EMsgIDDB
 	LOGIN2DB_DotRechargeRecord			= 1072;	//充值打点
 	DB2LOGIN_DotRechargeRecordResp		= 1073;	//充值打点返回
 	LOGIN2DB_SyncDotData				= 1074;	//同步打点数据
+	LOGIN2DB_OnlineActiveQuery			= 1075;	//在线查询数据
 	//2001-3000 GameServer2DB	
 	GAME2DB_Login						= 2001;	//玩家登录游戏
 	DB2GAME_LoginResp					= 2002;	//玩家登录游戏返回

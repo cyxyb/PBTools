@@ -46,7 +46,7 @@ struct TableStruct_Login_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[51]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[54]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -119,6 +119,15 @@ extern MsgModifyPasswordDefaultTypeInternal _MsgModifyPassword_default_instance_
 class MsgModifySignature;
 class MsgModifySignatureDefaultTypeInternal;
 extern MsgModifySignatureDefaultTypeInternal _MsgModifySignature_default_instance_;
+class MsgOlineActiveAward;
+class MsgOlineActiveAwardDefaultTypeInternal;
+extern MsgOlineActiveAwardDefaultTypeInternal _MsgOlineActiveAward_default_instance_;
+class MsgOnlineActiveConfig;
+class MsgOnlineActiveConfigDefaultTypeInternal;
+extern MsgOnlineActiveConfigDefaultTypeInternal _MsgOnlineActiveConfig_default_instance_;
+class MsgOnlineActiveQuery;
+class MsgOnlineActiveQueryDefaultTypeInternal;
+extern MsgOnlineActiveQueryDefaultTypeInternal _MsgOnlineActiveQuery_default_instance_;
 class MsgPhoneCode;
 class MsgPhoneCodeDefaultTypeInternal;
 extern MsgPhoneCodeDefaultTypeInternal _MsgPhoneCode_default_instance_;
@@ -229,6 +238,9 @@ template<> ::MsgMailData* Arena::CreateMaybeMessage<::MsgMailData>(Arena*);
 template<> ::MsgMailsInfo* Arena::CreateMaybeMessage<::MsgMailsInfo>(Arena*);
 template<> ::MsgModifyPassword* Arena::CreateMaybeMessage<::MsgModifyPassword>(Arena*);
 template<> ::MsgModifySignature* Arena::CreateMaybeMessage<::MsgModifySignature>(Arena*);
+template<> ::MsgOlineActiveAward* Arena::CreateMaybeMessage<::MsgOlineActiveAward>(Arena*);
+template<> ::MsgOnlineActiveConfig* Arena::CreateMaybeMessage<::MsgOnlineActiveConfig>(Arena*);
+template<> ::MsgOnlineActiveQuery* Arena::CreateMaybeMessage<::MsgOnlineActiveQuery>(Arena*);
 template<> ::MsgPhoneCode* Arena::CreateMaybeMessage<::MsgPhoneCode>(Arena*);
 template<> ::MsgPlayerInfo* Arena::CreateMaybeMessage<::MsgPlayerInfo>(Arena*);
 template<> ::MsgPlayerItem* Arena::CreateMaybeMessage<::MsgPlayerItem>(Arena*);
@@ -9602,6 +9614,536 @@ class MsgDotRechargeResp PROTOBUF_FINAL :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
+// -------------------------------------------------------------------
+
+class MsgOnlineActiveConfig PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgOnlineActiveConfig) */ {
+ public:
+  inline MsgOnlineActiveConfig() : MsgOnlineActiveConfig(nullptr) {}
+  virtual ~MsgOnlineActiveConfig();
+
+  MsgOnlineActiveConfig(const MsgOnlineActiveConfig& from);
+  MsgOnlineActiveConfig(MsgOnlineActiveConfig&& from) noexcept
+    : MsgOnlineActiveConfig() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgOnlineActiveConfig& operator=(const MsgOnlineActiveConfig& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgOnlineActiveConfig& operator=(MsgOnlineActiveConfig&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgOnlineActiveConfig& default_instance();
+
+  static inline const MsgOnlineActiveConfig* internal_default_instance() {
+    return reinterpret_cast<const MsgOnlineActiveConfig*>(
+               &_MsgOnlineActiveConfig_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    51;
+
+  friend void swap(MsgOnlineActiveConfig& a, MsgOnlineActiveConfig& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgOnlineActiveConfig* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgOnlineActiveConfig* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgOnlineActiveConfig* New() const final {
+    return CreateMaybeMessage<MsgOnlineActiveConfig>(nullptr);
+  }
+
+  MsgOnlineActiveConfig* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgOnlineActiveConfig>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgOnlineActiveConfig& from);
+  void MergeFrom(const MsgOnlineActiveConfig& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgOnlineActiveConfig* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgOnlineActiveConfig";
+  }
+  protected:
+  explicit MsgOnlineActiveConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kItemIdFieldNumber = 1,
+    kItemNumFieldNumber = 2,
+    kTypeFieldNumber = 3,
+    kOnlineIndexFieldNumber = 4,
+    kTimesFieldNumber = 5,
+  };
+  // int32 item_id = 1;
+  void clear_item_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 item_id() const;
+  void set_item_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_item_id() const;
+  void _internal_set_item_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 item_num = 2;
+  void clear_item_num();
+  ::PROTOBUF_NAMESPACE_ID::int32 item_num() const;
+  void set_item_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_item_num() const;
+  void _internal_set_item_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 type = 3;
+  void clear_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 type() const;
+  void set_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_type() const;
+  void _internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 online_index = 4;
+  void clear_online_index();
+  ::PROTOBUF_NAMESPACE_ID::int32 online_index() const;
+  void set_online_index(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_online_index() const;
+  void _internal_set_online_index(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 times = 5;
+  void clear_times();
+  ::PROTOBUF_NAMESPACE_ID::int32 times() const;
+  void set_times(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_times() const;
+  void _internal_set_times(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgOnlineActiveConfig)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 item_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 item_num_;
+  ::PROTOBUF_NAMESPACE_ID::int32 type_;
+  ::PROTOBUF_NAMESPACE_ID::int32 online_index_;
+  ::PROTOBUF_NAMESPACE_ID::int32 times_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgOnlineActiveQuery PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgOnlineActiveQuery) */ {
+ public:
+  inline MsgOnlineActiveQuery() : MsgOnlineActiveQuery(nullptr) {}
+  virtual ~MsgOnlineActiveQuery();
+
+  MsgOnlineActiveQuery(const MsgOnlineActiveQuery& from);
+  MsgOnlineActiveQuery(MsgOnlineActiveQuery&& from) noexcept
+    : MsgOnlineActiveQuery() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgOnlineActiveQuery& operator=(const MsgOnlineActiveQuery& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgOnlineActiveQuery& operator=(MsgOnlineActiveQuery&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgOnlineActiveQuery& default_instance();
+
+  static inline const MsgOnlineActiveQuery* internal_default_instance() {
+    return reinterpret_cast<const MsgOnlineActiveQuery*>(
+               &_MsgOnlineActiveQuery_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    52;
+
+  friend void swap(MsgOnlineActiveQuery& a, MsgOnlineActiveQuery& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgOnlineActiveQuery* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgOnlineActiveQuery* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgOnlineActiveQuery* New() const final {
+    return CreateMaybeMessage<MsgOnlineActiveQuery>(nullptr);
+  }
+
+  MsgOnlineActiveQuery* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgOnlineActiveQuery>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgOnlineActiveQuery& from);
+  void MergeFrom(const MsgOnlineActiveQuery& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgOnlineActiveQuery* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgOnlineActiveQuery";
+  }
+  protected:
+  explicit MsgOnlineActiveQuery(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kIndexIdFieldNumber = 2,
+    kOnlineConfigFieldNumber = 3,
+    kUserTimesFieldNumber = 1,
+  };
+  // repeated int32 index_id = 2;
+  int index_id_size() const;
+  private:
+  int _internal_index_id_size() const;
+  public:
+  void clear_index_id();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_index_id(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_index_id() const;
+  void _internal_add_index_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_index_id();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 index_id(int index) const;
+  void set_index_id(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_index_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      index_id() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_index_id();
+
+  // repeated .MsgOnlineActiveConfig online_config = 3;
+  int online_config_size() const;
+  private:
+  int _internal_online_config_size() const;
+  public:
+  void clear_online_config();
+  ::MsgOnlineActiveConfig* mutable_online_config(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgOnlineActiveConfig >*
+      mutable_online_config();
+  private:
+  const ::MsgOnlineActiveConfig& _internal_online_config(int index) const;
+  ::MsgOnlineActiveConfig* _internal_add_online_config();
+  public:
+  const ::MsgOnlineActiveConfig& online_config(int index) const;
+  ::MsgOnlineActiveConfig* add_online_config();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgOnlineActiveConfig >&
+      online_config() const;
+
+  // int32 user_times = 1;
+  void clear_user_times();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_times() const;
+  void set_user_times(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_times() const;
+  void _internal_set_user_times(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgOnlineActiveQuery)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > index_id_;
+  mutable std::atomic<int> _index_id_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgOnlineActiveConfig > online_config_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_times_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgOlineActiveAward PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgOlineActiveAward) */ {
+ public:
+  inline MsgOlineActiveAward() : MsgOlineActiveAward(nullptr) {}
+  virtual ~MsgOlineActiveAward();
+
+  MsgOlineActiveAward(const MsgOlineActiveAward& from);
+  MsgOlineActiveAward(MsgOlineActiveAward&& from) noexcept
+    : MsgOlineActiveAward() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgOlineActiveAward& operator=(const MsgOlineActiveAward& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgOlineActiveAward& operator=(MsgOlineActiveAward&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgOlineActiveAward& default_instance();
+
+  static inline const MsgOlineActiveAward* internal_default_instance() {
+    return reinterpret_cast<const MsgOlineActiveAward*>(
+               &_MsgOlineActiveAward_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    53;
+
+  friend void swap(MsgOlineActiveAward& a, MsgOlineActiveAward& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgOlineActiveAward* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgOlineActiveAward* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgOlineActiveAward* New() const final {
+    return CreateMaybeMessage<MsgOlineActiveAward>(nullptr);
+  }
+
+  MsgOlineActiveAward* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgOlineActiveAward>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgOlineActiveAward& from);
+  void MergeFrom(const MsgOlineActiveAward& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgOlineActiveAward* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgOlineActiveAward";
+  }
+  protected:
+  explicit MsgOlineActiveAward(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kItemIdFieldNumber = 1,
+    kItemNumFieldNumber = 2,
+    kTypeFieldNumber = 3,
+    kOnlineIndexFieldNumber = 4,
+  };
+  // int32 item_id = 1;
+  void clear_item_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 item_id() const;
+  void set_item_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_item_id() const;
+  void _internal_set_item_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 item_num = 2;
+  void clear_item_num();
+  ::PROTOBUF_NAMESPACE_ID::int32 item_num() const;
+  void set_item_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_item_num() const;
+  void _internal_set_item_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 type = 3;
+  void clear_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 type() const;
+  void set_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_type() const;
+  void _internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 online_index = 4;
+  void clear_online_index();
+  ::PROTOBUF_NAMESPACE_ID::int32 online_index() const;
+  void set_online_index(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_online_index() const;
+  void _internal_set_online_index(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgOlineActiveAward)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 item_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 item_num_;
+  ::PROTOBUF_NAMESPACE_ID::int32 type_;
+  ::PROTOBUF_NAMESPACE_ID::int32 online_index_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
 // ===================================================================
 
 
@@ -16633,9 +17175,313 @@ MsgDotRechargeResp::mutable_recharge_info() {
   return _internal_mutable_recharge_info();
 }
 
+// -------------------------------------------------------------------
+
+// MsgOnlineActiveConfig
+
+// int32 item_id = 1;
+inline void MsgOnlineActiveConfig::clear_item_id() {
+  item_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOnlineActiveConfig::_internal_item_id() const {
+  return item_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOnlineActiveConfig::item_id() const {
+  // @@protoc_insertion_point(field_get:MsgOnlineActiveConfig.item_id)
+  return _internal_item_id();
+}
+inline void MsgOnlineActiveConfig::_internal_set_item_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  item_id_ = value;
+}
+inline void MsgOnlineActiveConfig::set_item_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_item_id(value);
+  // @@protoc_insertion_point(field_set:MsgOnlineActiveConfig.item_id)
+}
+
+// int32 item_num = 2;
+inline void MsgOnlineActiveConfig::clear_item_num() {
+  item_num_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOnlineActiveConfig::_internal_item_num() const {
+  return item_num_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOnlineActiveConfig::item_num() const {
+  // @@protoc_insertion_point(field_get:MsgOnlineActiveConfig.item_num)
+  return _internal_item_num();
+}
+inline void MsgOnlineActiveConfig::_internal_set_item_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  item_num_ = value;
+}
+inline void MsgOnlineActiveConfig::set_item_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_item_num(value);
+  // @@protoc_insertion_point(field_set:MsgOnlineActiveConfig.item_num)
+}
+
+// int32 type = 3;
+inline void MsgOnlineActiveConfig::clear_type() {
+  type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOnlineActiveConfig::_internal_type() const {
+  return type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOnlineActiveConfig::type() const {
+  // @@protoc_insertion_point(field_get:MsgOnlineActiveConfig.type)
+  return _internal_type();
+}
+inline void MsgOnlineActiveConfig::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  type_ = value;
+}
+inline void MsgOnlineActiveConfig::set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_type(value);
+  // @@protoc_insertion_point(field_set:MsgOnlineActiveConfig.type)
+}
+
+// int32 online_index = 4;
+inline void MsgOnlineActiveConfig::clear_online_index() {
+  online_index_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOnlineActiveConfig::_internal_online_index() const {
+  return online_index_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOnlineActiveConfig::online_index() const {
+  // @@protoc_insertion_point(field_get:MsgOnlineActiveConfig.online_index)
+  return _internal_online_index();
+}
+inline void MsgOnlineActiveConfig::_internal_set_online_index(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  online_index_ = value;
+}
+inline void MsgOnlineActiveConfig::set_online_index(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_online_index(value);
+  // @@protoc_insertion_point(field_set:MsgOnlineActiveConfig.online_index)
+}
+
+// int32 times = 5;
+inline void MsgOnlineActiveConfig::clear_times() {
+  times_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOnlineActiveConfig::_internal_times() const {
+  return times_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOnlineActiveConfig::times() const {
+  // @@protoc_insertion_point(field_get:MsgOnlineActiveConfig.times)
+  return _internal_times();
+}
+inline void MsgOnlineActiveConfig::_internal_set_times(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  times_ = value;
+}
+inline void MsgOnlineActiveConfig::set_times(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_times(value);
+  // @@protoc_insertion_point(field_set:MsgOnlineActiveConfig.times)
+}
+
+// -------------------------------------------------------------------
+
+// MsgOnlineActiveQuery
+
+// int32 user_times = 1;
+inline void MsgOnlineActiveQuery::clear_user_times() {
+  user_times_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOnlineActiveQuery::_internal_user_times() const {
+  return user_times_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOnlineActiveQuery::user_times() const {
+  // @@protoc_insertion_point(field_get:MsgOnlineActiveQuery.user_times)
+  return _internal_user_times();
+}
+inline void MsgOnlineActiveQuery::_internal_set_user_times(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_times_ = value;
+}
+inline void MsgOnlineActiveQuery::set_user_times(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_times(value);
+  // @@protoc_insertion_point(field_set:MsgOnlineActiveQuery.user_times)
+}
+
+// repeated int32 index_id = 2;
+inline int MsgOnlineActiveQuery::_internal_index_id_size() const {
+  return index_id_.size();
+}
+inline int MsgOnlineActiveQuery::index_id_size() const {
+  return _internal_index_id_size();
+}
+inline void MsgOnlineActiveQuery::clear_index_id() {
+  index_id_.Clear();
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOnlineActiveQuery::_internal_index_id(int index) const {
+  return index_id_.Get(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOnlineActiveQuery::index_id(int index) const {
+  // @@protoc_insertion_point(field_get:MsgOnlineActiveQuery.index_id)
+  return _internal_index_id(index);
+}
+inline void MsgOnlineActiveQuery::set_index_id(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  index_id_.Set(index, value);
+  // @@protoc_insertion_point(field_set:MsgOnlineActiveQuery.index_id)
+}
+inline void MsgOnlineActiveQuery::_internal_add_index_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  index_id_.Add(value);
+}
+inline void MsgOnlineActiveQuery::add_index_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_index_id(value);
+  // @@protoc_insertion_point(field_add:MsgOnlineActiveQuery.index_id)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+MsgOnlineActiveQuery::_internal_index_id() const {
+  return index_id_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+MsgOnlineActiveQuery::index_id() const {
+  // @@protoc_insertion_point(field_list:MsgOnlineActiveQuery.index_id)
+  return _internal_index_id();
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+MsgOnlineActiveQuery::_internal_mutable_index_id() {
+  return &index_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+MsgOnlineActiveQuery::mutable_index_id() {
+  // @@protoc_insertion_point(field_mutable_list:MsgOnlineActiveQuery.index_id)
+  return _internal_mutable_index_id();
+}
+
+// repeated .MsgOnlineActiveConfig online_config = 3;
+inline int MsgOnlineActiveQuery::_internal_online_config_size() const {
+  return online_config_.size();
+}
+inline int MsgOnlineActiveQuery::online_config_size() const {
+  return _internal_online_config_size();
+}
+inline void MsgOnlineActiveQuery::clear_online_config() {
+  online_config_.Clear();
+}
+inline ::MsgOnlineActiveConfig* MsgOnlineActiveQuery::mutable_online_config(int index) {
+  // @@protoc_insertion_point(field_mutable:MsgOnlineActiveQuery.online_config)
+  return online_config_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgOnlineActiveConfig >*
+MsgOnlineActiveQuery::mutable_online_config() {
+  // @@protoc_insertion_point(field_mutable_list:MsgOnlineActiveQuery.online_config)
+  return &online_config_;
+}
+inline const ::MsgOnlineActiveConfig& MsgOnlineActiveQuery::_internal_online_config(int index) const {
+  return online_config_.Get(index);
+}
+inline const ::MsgOnlineActiveConfig& MsgOnlineActiveQuery::online_config(int index) const {
+  // @@protoc_insertion_point(field_get:MsgOnlineActiveQuery.online_config)
+  return _internal_online_config(index);
+}
+inline ::MsgOnlineActiveConfig* MsgOnlineActiveQuery::_internal_add_online_config() {
+  return online_config_.Add();
+}
+inline ::MsgOnlineActiveConfig* MsgOnlineActiveQuery::add_online_config() {
+  // @@protoc_insertion_point(field_add:MsgOnlineActiveQuery.online_config)
+  return _internal_add_online_config();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgOnlineActiveConfig >&
+MsgOnlineActiveQuery::online_config() const {
+  // @@protoc_insertion_point(field_list:MsgOnlineActiveQuery.online_config)
+  return online_config_;
+}
+
+// -------------------------------------------------------------------
+
+// MsgOlineActiveAward
+
+// int32 item_id = 1;
+inline void MsgOlineActiveAward::clear_item_id() {
+  item_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOlineActiveAward::_internal_item_id() const {
+  return item_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOlineActiveAward::item_id() const {
+  // @@protoc_insertion_point(field_get:MsgOlineActiveAward.item_id)
+  return _internal_item_id();
+}
+inline void MsgOlineActiveAward::_internal_set_item_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  item_id_ = value;
+}
+inline void MsgOlineActiveAward::set_item_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_item_id(value);
+  // @@protoc_insertion_point(field_set:MsgOlineActiveAward.item_id)
+}
+
+// int32 item_num = 2;
+inline void MsgOlineActiveAward::clear_item_num() {
+  item_num_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOlineActiveAward::_internal_item_num() const {
+  return item_num_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOlineActiveAward::item_num() const {
+  // @@protoc_insertion_point(field_get:MsgOlineActiveAward.item_num)
+  return _internal_item_num();
+}
+inline void MsgOlineActiveAward::_internal_set_item_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  item_num_ = value;
+}
+inline void MsgOlineActiveAward::set_item_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_item_num(value);
+  // @@protoc_insertion_point(field_set:MsgOlineActiveAward.item_num)
+}
+
+// int32 type = 3;
+inline void MsgOlineActiveAward::clear_type() {
+  type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOlineActiveAward::_internal_type() const {
+  return type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOlineActiveAward::type() const {
+  // @@protoc_insertion_point(field_get:MsgOlineActiveAward.type)
+  return _internal_type();
+}
+inline void MsgOlineActiveAward::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  type_ = value;
+}
+inline void MsgOlineActiveAward::set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_type(value);
+  // @@protoc_insertion_point(field_set:MsgOlineActiveAward.type)
+}
+
+// int32 online_index = 4;
+inline void MsgOlineActiveAward::clear_online_index() {
+  online_index_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOlineActiveAward::_internal_online_index() const {
+  return online_index_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOlineActiveAward::online_index() const {
+  // @@protoc_insertion_point(field_get:MsgOlineActiveAward.online_index)
+  return _internal_online_index();
+}
+inline void MsgOlineActiveAward::_internal_set_online_index(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  online_index_ = value;
+}
+inline void MsgOlineActiveAward::set_online_index(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_online_index(value);
+  // @@protoc_insertion_point(field_set:MsgOlineActiveAward.online_index)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
