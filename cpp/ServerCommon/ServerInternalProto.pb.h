@@ -46,7 +46,7 @@ struct TableStruct_ServerInternalProto_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[52]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[53]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -122,6 +122,9 @@ extern MsgDBMailDataDefaultTypeInternal _MsgDBMailData_default_instance_;
 class MsgDBModifyAvatar;
 class MsgDBModifyAvatarDefaultTypeInternal;
 extern MsgDBModifyAvatarDefaultTypeInternal _MsgDBModifyAvatar_default_instance_;
+class MsgDBOnlineActivePick;
+class MsgDBOnlineActivePickDefaultTypeInternal;
+extern MsgDBOnlineActivePickDefaultTypeInternal _MsgDBOnlineActivePick_default_instance_;
 class MsgDBPlayerReconnectData;
 class MsgDBPlayerReconnectDataDefaultTypeInternal;
 extern MsgDBPlayerReconnectDataDefaultTypeInternal _MsgDBPlayerReconnectData_default_instance_;
@@ -233,6 +236,7 @@ template<> ::MsgDBLoginOut* Arena::CreateMaybeMessage<::MsgDBLoginOut>(Arena*);
 template<> ::MsgDBMail* Arena::CreateMaybeMessage<::MsgDBMail>(Arena*);
 template<> ::MsgDBMailData* Arena::CreateMaybeMessage<::MsgDBMailData>(Arena*);
 template<> ::MsgDBModifyAvatar* Arena::CreateMaybeMessage<::MsgDBModifyAvatar>(Arena*);
+template<> ::MsgDBOnlineActivePick* Arena::CreateMaybeMessage<::MsgDBOnlineActivePick>(Arena*);
 template<> ::MsgDBPlayerReconnectData* Arena::CreateMaybeMessage<::MsgDBPlayerReconnectData>(Arena*);
 template<> ::MsgDBQueryTransferTax* Arena::CreateMaybeMessage<::MsgDBQueryTransferTax>(Arena*);
 template<> ::MsgDBRegisterGame* Arena::CreateMaybeMessage<::MsgDBRegisterGame>(Arena*);
@@ -9426,6 +9430,153 @@ class MsgDBSyncDotData PROTOBUF_FINAL :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
+// -------------------------------------------------------------------
+
+class MsgDBOnlineActivePick PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgDBOnlineActivePick) */ {
+ public:
+  inline MsgDBOnlineActivePick() : MsgDBOnlineActivePick(nullptr) {}
+  virtual ~MsgDBOnlineActivePick();
+
+  MsgDBOnlineActivePick(const MsgDBOnlineActivePick& from);
+  MsgDBOnlineActivePick(MsgDBOnlineActivePick&& from) noexcept
+    : MsgDBOnlineActivePick() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgDBOnlineActivePick& operator=(const MsgDBOnlineActivePick& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgDBOnlineActivePick& operator=(MsgDBOnlineActivePick&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgDBOnlineActivePick& default_instance();
+
+  static inline const MsgDBOnlineActivePick* internal_default_instance() {
+    return reinterpret_cast<const MsgDBOnlineActivePick*>(
+               &_MsgDBOnlineActivePick_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    52;
+
+  friend void swap(MsgDBOnlineActivePick& a, MsgDBOnlineActivePick& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgDBOnlineActivePick* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgDBOnlineActivePick* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgDBOnlineActivePick* New() const final {
+    return CreateMaybeMessage<MsgDBOnlineActivePick>(nullptr);
+  }
+
+  MsgDBOnlineActivePick* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgDBOnlineActivePick>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgDBOnlineActivePick& from);
+  void MergeFrom(const MsgDBOnlineActivePick& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgDBOnlineActivePick* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgDBOnlineActivePick";
+  }
+  protected:
+  explicit MsgDBOnlineActivePick(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kUserIdFieldNumber = 1,
+    kTypeFieldNumber = 2,
+  };
+  // int32 user_id = 1;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 type = 2;
+  void clear_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 type() const;
+  void set_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_type() const;
+  void _internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgDBOnlineActivePick)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 type_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
 // ===================================================================
 
 
@@ -15526,9 +15677,55 @@ inline void MsgDBSyncDotData::set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:MsgDBSyncDotData.type)
 }
 
+// -------------------------------------------------------------------
+
+// MsgDBOnlineActivePick
+
+// int32 user_id = 1;
+inline void MsgDBOnlineActivePick::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBOnlineActivePick::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBOnlineActivePick::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBOnlineActivePick.user_id)
+  return _internal_user_id();
+}
+inline void MsgDBOnlineActivePick::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgDBOnlineActivePick::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBOnlineActivePick.user_id)
+}
+
+// int32 type = 2;
+inline void MsgDBOnlineActivePick::clear_type() {
+  type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBOnlineActivePick::_internal_type() const {
+  return type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBOnlineActivePick::type() const {
+  // @@protoc_insertion_point(field_get:MsgDBOnlineActivePick.type)
+  return _internal_type();
+}
+inline void MsgDBOnlineActivePick::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  type_ = value;
+}
+inline void MsgDBOnlineActivePick::set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_type(value);
+  // @@protoc_insertion_point(field_set:MsgDBOnlineActivePick.type)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
