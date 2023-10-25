@@ -240,10 +240,8 @@ enum ERMMsgIDSubGame : int {
   MsgIDSubGame_TimeOutKickResp = 14,
   MsgIDSubGame_NotifyTrusteeshipResp = 15,
   MsgIDSubGame_NotifySystemCheatResp = 20,
-  MsgIDSubGame_NotifyCardTypeResp = 21,
+  MsgIDSubGame_NotifyNextCardResp = 21,
   MsgIDSubGame_NotifyIsMaxResp = 22,
-  MsgIDSubGame_NotifyRemainDoubleResp = 23,
-  MsgIDSubGame_NotifyRoundResp = 24,
   MsgIDSubGame_NotifyLastActResp = 25,
   ERMMsgIDSubGame_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   ERMMsgIDSubGame_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()

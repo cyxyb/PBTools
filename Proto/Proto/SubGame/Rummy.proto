@@ -62,10 +62,8 @@ enum ERMMsgIDSubGame
 
 	/////////////////////////机器人消息///////////////////////
 	MsgIDSubGame_NotifySystemCheatResp	= 20;	//通知系统作弊率
-	MsgIDSubGame_NotifyCardTypeResp		= 21;	//通知牌型
+	MsgIDSubGame_NotifyNextCardResp		= 21;	//通知玩家人下一张牌
 	MsgIDSubGame_NotifyIsMaxResp		= 22;	//通知是否最大
-	MsgIDSubGame_NotifyRemainDoubleResp	= 23;	//是否剩2人
-	MsgIDSubGame_NotifyRoundResp		= 24;	//通知回合数
 	MsgIDSubGame_NotifyLastActResp		= 25;	//通知玩家行为
 }
 

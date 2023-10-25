@@ -461,7 +461,7 @@ const char descriptor_table_protodef_Rummy_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "tsCard\020\010\022\014\n\010ShowCard\020\020*b\n\016ERMColCardType"
   "\022\016\n\nCOL_SINGLE\020\000\022\016\n\nCOL_BAO_ZI\020\001\022\020\n\014COL_"
   "SHUN_ZHI\020\002\022\021\n\rCOL_QING_SHUN\020\003\022\013\n\007COL_MAX"
-  "\020\004*\354\004\n\017ERMMsgIDSubGame\022\025\n\021MsgIDSubGame_N"
+  "\020\004*\241\004\n\017ERMMsgIDSubGame\022\025\n\021MsgIDSubGame_N"
   "ull\020\000\022\036\n\032MsgIDSubGame_GameStartResp\020\001\022!\n"
   "\035MsgIDSubGame_NotifyActionResp\020\002\022\027\n\023MsgI"
   "DSubGame_Action\020\003\022\033\n\027MsgIDSubGame_Action"
@@ -472,11 +472,9 @@ const char descriptor_table_protodef_Rummy_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "adyResp\020\r\022 \n\034MsgIDSubGame_TimeOutKickRes"
   "p\020\016\022&\n\"MsgIDSubGame_NotifyTrusteeshipRes"
   "p\020\017\022&\n\"MsgIDSubGame_NotifySystemCheatRes"
-  "p\020\024\022#\n\037MsgIDSubGame_NotifyCardTypeResp\020\025"
-  "\022 \n\034MsgIDSubGame_NotifyIsMaxResp\020\026\022\'\n#Ms"
-  "gIDSubGame_NotifyRemainDoubleResp\020\027\022 \n\034M"
-  "sgIDSubGame_NotifyRoundResp\020\030\022\"\n\036MsgIDSu"
-  "bGame_NotifyLastActResp\020\031b\006proto3"
+  "p\020\024\022#\n\037MsgIDSubGame_NotifyNextCardResp\020\025"
+  "\022 \n\034MsgIDSubGame_NotifyIsMaxResp\020\026\022\"\n\036Ms"
+  "gIDSubGame_NotifyLastActResp\020\031b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Rummy_2eproto_deps[1] = {
 };
@@ -497,7 +495,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Rum
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Rummy_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Rummy_2eproto = {
-  false, false, descriptor_table_protodef_Rummy_2eproto, "Rummy.proto", 2673,
+  false, false, descriptor_table_protodef_Rummy_2eproto, "Rummy.proto", 2598,
   &descriptor_table_Rummy_2eproto_once, descriptor_table_Rummy_2eproto_sccs, descriptor_table_Rummy_2eproto_deps, 13, 0,
   schemas, file_default_instances, TableStruct_Rummy_2eproto::offsets,
   file_level_metadata_Rummy_2eproto, 13, file_level_enum_descriptors_Rummy_2eproto, file_level_service_descriptors_Rummy_2eproto,
@@ -597,8 +595,6 @@ bool ERMMsgIDSubGame_IsValid(int value) {
     case 20:
     case 21:
     case 22:
-    case 23:
-    case 24:
     case 25:
       return true;
     default:

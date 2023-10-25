@@ -69,7 +69,7 @@ namespace Rummy {
             "CghEcm9wQ2FyZBABEgoKBk5hQ2FyZBACEgsKB0NodUNhcmQQBBINCglTb3J0",
             "c0NhcmQQCBIMCghTaG93Q2FyZBAQKmIKDkVSTUNvbENhcmRUeXBlEg4KCkNP",
             "TF9TSU5HTEUQABIOCgpDT0xfQkFPX1pJEAESEAoMQ09MX1NIVU5fWkhJEAIS",
-            "EQoNQ09MX1FJTkdfU0hVThADEgsKB0NPTF9NQVgQBCrsBAoPRVJNTXNnSURT",
+            "EQoNQ09MX1FJTkdfU0hVThADEgsKB0NPTF9NQVgQBCqhBAoPRVJNTXNnSURT",
             "dWJHYW1lEhUKEU1zZ0lEU3ViR2FtZV9OdWxsEAASHgoaTXNnSURTdWJHYW1l",
             "X0dhbWVTdGFydFJlc3AQARIhCh1Nc2dJRFN1YkdhbWVfTm90aWZ5QWN0aW9u",
             "UmVzcBACEhcKE01zZ0lEU3ViR2FtZV9BY3Rpb24QAxIbChdNc2dJRFN1Ykdh",
@@ -80,10 +80,9 @@ namespace Rummy {
             "ChxNc2dJRFN1YkdhbWVfVGltZU91dEtpY2tSZXNwEA4SJgoiTXNnSURTdWJH",
             "YW1lX05vdGlmeVRydXN0ZWVzaGlwUmVzcBAPEiYKIk1zZ0lEU3ViR2FtZV9O",
             "b3RpZnlTeXN0ZW1DaGVhdFJlc3AQFBIjCh9Nc2dJRFN1YkdhbWVfTm90aWZ5",
-            "Q2FyZFR5cGVSZXNwEBUSIAocTXNnSURTdWJHYW1lX05vdGlmeUlzTWF4UmVz",
-            "cBAWEicKI01zZ0lEU3ViR2FtZV9Ob3RpZnlSZW1haW5Eb3VibGVSZXNwEBcS",
-            "IAocTXNnSURTdWJHYW1lX05vdGlmeVJvdW5kUmVzcBAYEiIKHk1zZ0lEU3Vi",
-            "R2FtZV9Ob3RpZnlMYXN0QWN0UmVzcBAZYgZwcm90bzM="));
+            "TmV4dENhcmRSZXNwEBUSIAocTXNnSURTdWJHYW1lX05vdGlmeUlzTWF4UmVz",
+            "cBAWEiIKHk1zZ0lEU3ViR2FtZV9Ob3RpZnlMYXN0QWN0UmVzcBAZYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Rummy.ERMGameState), typeof(global::Rummy.PlayerState), typeof(global::Rummy.ERMGameAction), typeof(global::Rummy.ERMColCardType), typeof(global::Rummy.ERMMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -266,21 +265,13 @@ namespace Rummy {
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_NotifySystemCheatResp")] MsgIdsubGameNotifySystemCheatResp = 20,
     /// <summary>
-    ///通知牌型
+    ///通知玩家人下一张牌
     /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_NotifyCardTypeResp")] MsgIdsubGameNotifyCardTypeResp = 21,
+    [pbr::OriginalName("MsgIDSubGame_NotifyNextCardResp")] MsgIdsubGameNotifyNextCardResp = 21,
     /// <summary>
     ///通知是否最大
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_NotifyIsMaxResp")] MsgIdsubGameNotifyIsMaxResp = 22,
-    /// <summary>
-    ///是否剩2人
-    /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_NotifyRemainDoubleResp")] MsgIdsubGameNotifyRemainDoubleResp = 23,
-    /// <summary>
-    ///通知回合数
-    /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_NotifyRoundResp")] MsgIdsubGameNotifyRoundResp = 24,
     /// <summary>
     ///通知玩家行为
     /// </summary>

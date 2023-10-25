@@ -397,6 +397,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TeenPatti_5fAK47_2eproto::offs
   PROTOBUF_FIELD_OFFSET(::TeenPatti_AK47::AKMsgGameResult, game_score_),
   PROTOBUF_FIELD_OFFSET(::TeenPatti_AK47::AKMsgGameResult, player_hands_),
   PROTOBUF_FIELD_OFFSET(::TeenPatti_AK47::AKMsgGameResult, end_state_),
+  PROTOBUF_FIELD_OFFSET(::TeenPatti_AK47::AKMsgGameResult, player_new_score_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::TeenPatti_AK47::AKMsgNotifyPlayerAct, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -419,7 +420,7 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 102, -1, sizeof(::TeenPatti_AK47::AKMsgCompareCardResp)},
   { 109, -1, sizeof(::TeenPatti_AK47::AKMsgCompareCardRetResp)},
   { 122, -1, sizeof(::TeenPatti_AK47::AKMsgGameResult)},
-  { 131, -1, sizeof(::TeenPatti_AK47::AKMsgNotifyPlayerAct)},
+  { 132, -1, sizeof(::TeenPatti_AK47::AKMsgNotifyPlayerAct)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -482,41 +483,41 @@ const char descriptor_table_protodef_TeenPatti_5fAK47_2eproto[] PROTOBUF_SECTION
   "pare_cards\030\006 \001(\0132\036.TeenPatti_AK47.AKMsgH"
   "andCards\0225\n\rpassive_cards\030\007 \001(\0132\036.TeenPa"
   "tti_AK47.AKMsgHandCards\022\020\n\010is_agree\030\010 \001("
-  "\010\"\200\001\n\017AKMsgGameResult\022\020\n\010game_tax\030\001 \001(\005\022"
+  "\010\"\232\001\n\017AKMsgGameResult\022\020\n\010game_tax\030\001 \001(\005\022"
   "\022\n\ngame_score\030\002 \003(\003\0224\n\014player_hands\030\003 \003("
   "\0132\036.TeenPatti_AK47.AKMsgHandCards\022\021\n\tend"
-  "_state\030\004 \001(\005\"5\n\024AKMsgNotifyPlayerAct\022\020\n\010"
-  "chair_id\030\001 \001(\005\022\013\n\003act\030\002 \001(\005*g\n\014EAKGameSt"
-  "ate\022\017\n\013GS_TP_READY\020\000\022\016\n\nGS_TP_DEAL\020\001\022\021\n\r"
-  "GS_TP_PLAYING\020\002\022\021\n\rGS_TP_COMPARE\020\003\022\020\n\014GS"
-  "_TP_RESULT\020\004*U\n\016EAKPlayerState\022\014\n\010PS_REA"
-  "DY\020\000\022\013\n\007PS_PLAY\020\001\022\013\n\007PS_GIVE\020\002\022\013\n\007PS_FAI"
-  "L\020\003\022\016\n\nPS_TIMEOUT\020\004*\207\001\n\013EAKCardType\022\r\n\tC"
-  "T_SINGLE\020\000\022\r\n\tCT_DOUBLE\020\001\022\016\n\nCT_JIN_HUA\020"
-  "\002\022\016\n\nCT_SHUN_ZI\020\003\022\017\n\013CT_SHUN_JIN\020\004\022\r\n\tCT"
-  "_BAO_ZI\020\005\022\016\n\nCT_SPECIAL\020\006\022\n\n\006CT_MAX\020\007*\204\001"
-  "\n\rEAKGameAction\022\r\n\tInvaldAct\020\000\022\n\n\006GiveUp"
-  "\020\001\022\014\n\010LookCard\020\002\022\013\n\007CallBet\020\004\022\n\n\006AddBet\020"
-  "\010\022\017\n\013CompareCard\020\020\022\020\n\014CompareReply\020 \022\016\n\n"
-  "AllCompare\020@*\277\005\n\017EAKMsgIDSubGame\022\025\n\021MsgI"
-  "DSubGame_Null\020\000\022\036\n\032MsgIDSubGame_GameStar"
-  "tResp\020\001\022!\n\035MsgIDSubGame_NotifyActionResp"
-  "\020\002\022\027\n\023MsgIDSubGame_Action\020\003\022\033\n\027MsgIDSubG"
-  "ame_GiveUpResp\020\004\022\031\n\025MsgIDSubGame_LookCar"
-  "d\020\005\022\033\n\027MsgIDSubGame_AddBetResp\020\006\022 \n\034MsgI"
-  "DSubGame_CompareCardResp\020\007\022\037\n\033MsgIDSubGa"
-  "me_CompareRetResp\020\010\022\037\n\033MsgIDSubGame_Game"
-  "ResultResp\020\t\022 \n\034MsgIDSubGame_NotifyState"
-  "Resp\020\n\022\034\n\030MsgIDSubGame_TimeOutResp\020\013\022\035\n\031"
-  "MsgIDSubGame_TimeOutReady\020\014\022!\n\035MsgIDSubG"
-  "ame_TimeOutReadyResp\020\r\022 \n\034MsgIDSubGame_T"
-  "imeOutKickResp\020\016\022&\n\"MsgIDSubGame_NotifyS"
-  "ystemCheatResp\020\024\022#\n\037MsgIDSubGame_NotifyC"
-  "ardTypeResp\020\025\022 \n\034MsgIDSubGame_NotifyIsMa"
-  "xResp\020\026\022\'\n#MsgIDSubGame_NotifyRemainDoub"
-  "leResp\020\027\022 \n\034MsgIDSubGame_NotifyRoundResp"
-  "\020\030\022\"\n\036MsgIDSubGame_NotifyLastActResp\020\031b\006"
-  "proto3"
+  "_state\030\004 \001(\005\022\030\n\020player_new_score\030\006 \003(\003\"5"
+  "\n\024AKMsgNotifyPlayerAct\022\020\n\010chair_id\030\001 \001(\005"
+  "\022\013\n\003act\030\002 \001(\005*g\n\014EAKGameState\022\017\n\013GS_TP_R"
+  "EADY\020\000\022\016\n\nGS_TP_DEAL\020\001\022\021\n\rGS_TP_PLAYING\020"
+  "\002\022\021\n\rGS_TP_COMPARE\020\003\022\020\n\014GS_TP_RESULT\020\004*U"
+  "\n\016EAKPlayerState\022\014\n\010PS_READY\020\000\022\013\n\007PS_PLA"
+  "Y\020\001\022\013\n\007PS_GIVE\020\002\022\013\n\007PS_FAIL\020\003\022\016\n\nPS_TIME"
+  "OUT\020\004*\207\001\n\013EAKCardType\022\r\n\tCT_SINGLE\020\000\022\r\n\t"
+  "CT_DOUBLE\020\001\022\016\n\nCT_JIN_HUA\020\002\022\016\n\nCT_SHUN_Z"
+  "I\020\003\022\017\n\013CT_SHUN_JIN\020\004\022\r\n\tCT_BAO_ZI\020\005\022\016\n\nC"
+  "T_SPECIAL\020\006\022\n\n\006CT_MAX\020\007*\204\001\n\rEAKGameActio"
+  "n\022\r\n\tInvaldAct\020\000\022\n\n\006GiveUp\020\001\022\014\n\010LookCard"
+  "\020\002\022\013\n\007CallBet\020\004\022\n\n\006AddBet\020\010\022\017\n\013CompareCa"
+  "rd\020\020\022\020\n\014CompareReply\020 \022\016\n\nAllCompare\020@*\277"
+  "\005\n\017EAKMsgIDSubGame\022\025\n\021MsgIDSubGame_Null\020"
+  "\000\022\036\n\032MsgIDSubGame_GameStartResp\020\001\022!\n\035Msg"
+  "IDSubGame_NotifyActionResp\020\002\022\027\n\023MsgIDSub"
+  "Game_Action\020\003\022\033\n\027MsgIDSubGame_GiveUpResp"
+  "\020\004\022\031\n\025MsgIDSubGame_LookCard\020\005\022\033\n\027MsgIDSu"
+  "bGame_AddBetResp\020\006\022 \n\034MsgIDSubGame_Compa"
+  "reCardResp\020\007\022\037\n\033MsgIDSubGame_CompareRetR"
+  "esp\020\010\022\037\n\033MsgIDSubGame_GameResultResp\020\t\022 "
+  "\n\034MsgIDSubGame_NotifyStateResp\020\n\022\034\n\030MsgI"
+  "DSubGame_TimeOutResp\020\013\022\035\n\031MsgIDSubGame_T"
+  "imeOutReady\020\014\022!\n\035MsgIDSubGame_TimeOutRea"
+  "dyResp\020\r\022 \n\034MsgIDSubGame_TimeOutKickResp"
+  "\020\016\022&\n\"MsgIDSubGame_NotifySystemCheatResp"
+  "\020\024\022#\n\037MsgIDSubGame_NotifyCardTypeResp\020\025\022"
+  " \n\034MsgIDSubGame_NotifyIsMaxResp\020\026\022\'\n#Msg"
+  "IDSubGame_NotifyRemainDoubleResp\020\027\022 \n\034Ms"
+  "gIDSubGame_NotifyRoundResp\020\030\022\"\n\036MsgIDSub"
+  "Game_NotifyLastActResp\020\031b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_TeenPatti_5fAK47_2eproto_deps[1] = {
 };
@@ -538,7 +539,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Tee
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_TeenPatti_5fAK47_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_TeenPatti_5fAK47_2eproto = {
-  false, false, descriptor_table_protodef_TeenPatti_5fAK47_2eproto, "TeenPatti_AK47.proto", 3046,
+  false, false, descriptor_table_protodef_TeenPatti_5fAK47_2eproto, "TeenPatti_AK47.proto", 3072,
   &descriptor_table_TeenPatti_5fAK47_2eproto_once, descriptor_table_TeenPatti_5fAK47_2eproto_sccs, descriptor_table_TeenPatti_5fAK47_2eproto_deps, 14, 0,
   schemas, file_default_instances, TableStruct_TeenPatti_5fAK47_2eproto::offsets,
   file_level_metadata_TeenPatti_5fAK47_2eproto, 14, file_level_enum_descriptors_TeenPatti_5fAK47_2eproto, file_level_service_descriptors_TeenPatti_5fAK47_2eproto,
@@ -4385,7 +4386,8 @@ class AKMsgGameResult::_Internal {
 AKMsgGameResult::AKMsgGameResult(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena),
   game_score_(arena),
-  player_hands_(arena) {
+  player_hands_(arena),
+  player_new_score_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:TeenPatti_AK47.AKMsgGameResult)
@@ -4393,7 +4395,8 @@ AKMsgGameResult::AKMsgGameResult(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 AKMsgGameResult::AKMsgGameResult(const AKMsgGameResult& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       game_score_(from.game_score_),
-      player_hands_(from.player_hands_) {
+      player_hands_(from.player_hands_),
+      player_new_score_(from.player_new_score_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&game_tax_, &from.game_tax_,
     static_cast<size_t>(reinterpret_cast<char*>(&end_state_) -
@@ -4442,6 +4445,7 @@ void AKMsgGameResult::Clear() {
 
   game_score_.Clear();
   player_hands_.Clear();
+  player_new_score_.Clear();
   ::memset(&game_tax_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&end_state_) -
       reinterpret_cast<char*>(&game_tax_)) + sizeof(end_state_));
@@ -4488,6 +4492,16 @@ const char* AKMsgGameResult::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           end_state_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated int64 player_new_score = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt64Parser(_internal_mutable_player_new_score(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48) {
+          _internal_add_player_new_score(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -4548,6 +4562,15 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_end_state(), target);
   }
 
+  // repeated int64 player_new_score = 6;
+  {
+    int byte_size = _player_new_score_cached_byte_size_.load(std::memory_order_relaxed);
+    if (byte_size > 0) {
+      target = stream->WriteInt64Packed(
+          6, _internal_player_new_score(), byte_size, target);
+    }
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -4584,6 +4607,21 @@ size_t AKMsgGameResult::ByteSizeLong() const {
   for (const auto& msg : this->player_hands_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  // repeated int64 player_new_score = 6;
+  {
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      Int64Size(this->player_new_score_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
+    }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _player_new_score_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
   }
 
   // int32 game_tax = 1;
@@ -4633,6 +4671,7 @@ void AKMsgGameResult::MergeFrom(const AKMsgGameResult& from) {
 
   game_score_.MergeFrom(from.game_score_);
   player_hands_.MergeFrom(from.player_hands_);
+  player_new_score_.MergeFrom(from.player_new_score_);
   if (from.game_tax() != 0) {
     _internal_set_game_tax(from._internal_game_tax());
   }
@@ -4664,6 +4703,7 @@ void AKMsgGameResult::InternalSwap(AKMsgGameResult* other) {
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   game_score_.InternalSwap(&other->game_score_);
   player_hands_.InternalSwap(&other->player_hands_);
+  player_new_score_.InternalSwap(&other->player_new_score_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(AKMsgGameResult, end_state_)
       + sizeof(AKMsgGameResult::end_state_)

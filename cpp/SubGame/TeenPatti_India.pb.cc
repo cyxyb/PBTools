@@ -398,6 +398,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TeenPatti_5fIndia_2eproto::off
   PROTOBUF_FIELD_OFFSET(::TeenPatti_India::TPMsgGameResult, card_type_),
   PROTOBUF_FIELD_OFFSET(::TeenPatti_India::TPMsgGameResult, player_hands_),
   PROTOBUF_FIELD_OFFSET(::TeenPatti_India::TPMsgGameResult, end_state_),
+  PROTOBUF_FIELD_OFFSET(::TeenPatti_India::TPMsgGameResult, player_new_score_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::TeenPatti_India::TPMSgNotifyPlayerAct, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -420,7 +421,7 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 102, -1, sizeof(::TeenPatti_India::TPMsgCompareCardResp)},
   { 109, -1, sizeof(::TeenPatti_India::TPMsgCompareCardRetResp)},
   { 124, -1, sizeof(::TeenPatti_India::TPMsgGameResult)},
-  { 134, -1, sizeof(::TeenPatti_India::TPMSgNotifyPlayerAct)},
+  { 135, -1, sizeof(::TeenPatti_India::TPMSgNotifyPlayerAct)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -481,42 +482,42 @@ const char descriptor_table_protodef_TeenPatti_5fIndia_2eproto[] PROTOBUF_SECTIO
   "e_id\030\004 \001(\005\022\022\n\npassive_id\030\005 \001(\005\022\024\n\014compar"
   "e_type\030\006 \001(\005\022\024\n\014passive_type\030\007 \001(\005\022\025\n\rco"
   "mpare_cards\030\010 \003(\005\022\025\n\rpassive_cards\030\t \003(\005"
-  "\022\020\n\010is_agree\030\n \001(\010\"\224\001\n\017TPMsgGameResult\022\020"
+  "\022\020\n\010is_agree\030\n \001(\010\"\256\001\n\017TPMsgGameResult\022\020"
   "\n\010game_tax\030\001 \001(\005\022\022\n\ngame_score\030\002 \003(\003\022\021\n\t"
   "card_type\030\003 \003(\005\0225\n\014player_hands\030\004 \003(\0132\037."
   "TeenPatti_India.TPMsgHandCards\022\021\n\tend_st"
-  "ate\030\005 \001(\005\"5\n\024TPMSgNotifyPlayerAct\022\020\n\010cha"
-  "ir_id\030\001 \001(\005\022\013\n\003act\030\002 \001(\005*g\n\014ETPGameState"
-  "\022\017\n\013GS_TP_READY\020\000\022\016\n\nGS_TP_DEAL\020\001\022\021\n\rGS_"
-  "TP_PLAYING\020\002\022\021\n\rGS_TP_COMPARE\020\003\022\020\n\014GS_TP"
-  "_RESULT\020\004*U\n\016ETPPlayerState\022\014\n\010PS_READY\020"
-  "\000\022\013\n\007PS_PLAY\020\001\022\013\n\007PS_GIVE\020\002\022\013\n\007PS_FAIL\020\003"
-  "\022\016\n\nPS_TIMEOUT\020\004*\207\001\n\013ETPCardType\022\r\n\tCT_S"
-  "INGLE\020\000\022\r\n\tCT_DOUBLE\020\001\022\016\n\nCT_JIN_HUA\020\002\022\016"
-  "\n\nCT_SHUN_ZI\020\003\022\017\n\013CT_SHUN_JIN\020\004\022\r\n\tCT_BA"
-  "O_ZI\020\005\022\016\n\nCT_SPECIAL\020\006\022\n\n\006CT_MAX\020\007*\204\001\n\rE"
-  "TPGameAction\022\r\n\tInvaldAct\020\000\022\n\n\006GiveUp\020\001\022"
-  "\014\n\010LookCard\020\002\022\013\n\007CallBet\020\004\022\n\n\006AddBet\020\010\022\017"
-  "\n\013CompareCard\020\020\022\020\n\014CompareReply\020 \022\016\n\nAll"
-  "Compare\020@*\277\005\n\017ETPMsgIDSubGame\022\025\n\021MsgIDSu"
-  "bGame_Null\020\000\022\036\n\032MsgIDSubGame_GameStartRe"
-  "sp\020\001\022!\n\035MsgIDSubGame_NotifyActionResp\020\002\022"
-  "\027\n\023MsgIDSubGame_Action\020\003\022\033\n\027MsgIDSubGame"
-  "_GiveUpResp\020\004\022\031\n\025MsgIDSubGame_LookCard\020\005"
-  "\022\033\n\027MsgIDSubGame_AddBetResp\020\006\022 \n\034MsgIDSu"
-  "bGame_CompareCardResp\020\007\022\037\n\033MsgIDSubGame_"
-  "CompareRetResp\020\010\022\037\n\033MsgIDSubGame_GameRes"
-  "ultResp\020\t\022 \n\034MsgIDSubGame_NotifyStateRes"
-  "p\020\n\022\034\n\030MsgIDSubGame_TimeOutResp\020\013\022\035\n\031Msg"
-  "IDSubGame_TimeOutReady\020\014\022!\n\035MsgIDSubGame"
-  "_TimeOutReadyResp\020\r\022 \n\034MsgIDSubGame_Time"
-  "OutKickResp\020\016\022&\n\"MsgIDSubGame_NotifySyst"
-  "emCheatResp\020\024\022#\n\037MsgIDSubGame_NotifyCard"
-  "TypeResp\020\025\022 \n\034MsgIDSubGame_NotifyIsMaxRe"
-  "sp\020\026\022\'\n#MsgIDSubGame_NotifyRemainDoubleR"
-  "esp\020\027\022 \n\034MsgIDSubGame_NotifyRoundResp\020\030\022"
-  "\"\n\036MsgIDSubGame_NotifyLastActResp\020\031b\006pro"
-  "to3"
+  "ate\030\005 \001(\005\022\030\n\020player_new_score\030\006 \003(\003\"5\n\024T"
+  "PMSgNotifyPlayerAct\022\020\n\010chair_id\030\001 \001(\005\022\013\n"
+  "\003act\030\002 \001(\005*g\n\014ETPGameState\022\017\n\013GS_TP_READ"
+  "Y\020\000\022\016\n\nGS_TP_DEAL\020\001\022\021\n\rGS_TP_PLAYING\020\002\022\021"
+  "\n\rGS_TP_COMPARE\020\003\022\020\n\014GS_TP_RESULT\020\004*U\n\016E"
+  "TPPlayerState\022\014\n\010PS_READY\020\000\022\013\n\007PS_PLAY\020\001"
+  "\022\013\n\007PS_GIVE\020\002\022\013\n\007PS_FAIL\020\003\022\016\n\nPS_TIMEOUT"
+  "\020\004*\207\001\n\013ETPCardType\022\r\n\tCT_SINGLE\020\000\022\r\n\tCT_"
+  "DOUBLE\020\001\022\016\n\nCT_JIN_HUA\020\002\022\016\n\nCT_SHUN_ZI\020\003"
+  "\022\017\n\013CT_SHUN_JIN\020\004\022\r\n\tCT_BAO_ZI\020\005\022\016\n\nCT_S"
+  "PECIAL\020\006\022\n\n\006CT_MAX\020\007*\204\001\n\rETPGameAction\022\r"
+  "\n\tInvaldAct\020\000\022\n\n\006GiveUp\020\001\022\014\n\010LookCard\020\002\022"
+  "\013\n\007CallBet\020\004\022\n\n\006AddBet\020\010\022\017\n\013CompareCard\020"
+  "\020\022\020\n\014CompareReply\020 \022\016\n\nAllCompare\020@*\277\005\n\017"
+  "ETPMsgIDSubGame\022\025\n\021MsgIDSubGame_Null\020\000\022\036"
+  "\n\032MsgIDSubGame_GameStartResp\020\001\022!\n\035MsgIDS"
+  "ubGame_NotifyActionResp\020\002\022\027\n\023MsgIDSubGam"
+  "e_Action\020\003\022\033\n\027MsgIDSubGame_GiveUpResp\020\004\022"
+  "\031\n\025MsgIDSubGame_LookCard\020\005\022\033\n\027MsgIDSubGa"
+  "me_AddBetResp\020\006\022 \n\034MsgIDSubGame_CompareC"
+  "ardResp\020\007\022\037\n\033MsgIDSubGame_CompareRetResp"
+  "\020\010\022\037\n\033MsgIDSubGame_GameResultResp\020\t\022 \n\034M"
+  "sgIDSubGame_NotifyStateResp\020\n\022\034\n\030MsgIDSu"
+  "bGame_TimeOutResp\020\013\022\035\n\031MsgIDSubGame_Time"
+  "OutReady\020\014\022!\n\035MsgIDSubGame_TimeOutReadyR"
+  "esp\020\r\022 \n\034MsgIDSubGame_TimeOutKickResp\020\016\022"
+  "&\n\"MsgIDSubGame_NotifySystemCheatResp\020\024\022"
+  "#\n\037MsgIDSubGame_NotifyCardTypeResp\020\025\022 \n\034"
+  "MsgIDSubGame_NotifyIsMaxResp\020\026\022\'\n#MsgIDS"
+  "ubGame_NotifyRemainDoubleResp\020\027\022 \n\034MsgID"
+  "SubGame_NotifyRoundResp\020\030\022\"\n\036MsgIDSubGam"
+  "e_NotifyLastActResp\020\031b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_TeenPatti_5fIndia_2eproto_deps[1] = {
 };
@@ -538,7 +539,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Tee
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_TeenPatti_5fIndia_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_TeenPatti_5fIndia_2eproto = {
-  false, false, descriptor_table_protodef_TeenPatti_5fIndia_2eproto, "TeenPatti_India.proto", 3003,
+  false, false, descriptor_table_protodef_TeenPatti_5fIndia_2eproto, "TeenPatti_India.proto", 3029,
   &descriptor_table_TeenPatti_5fIndia_2eproto_once, descriptor_table_TeenPatti_5fIndia_2eproto_sccs, descriptor_table_TeenPatti_5fIndia_2eproto_deps, 14, 0,
   schemas, file_default_instances, TableStruct_TeenPatti_5fIndia_2eproto::offsets,
   file_level_metadata_TeenPatti_5fIndia_2eproto, 14, file_level_enum_descriptors_TeenPatti_5fIndia_2eproto, file_level_service_descriptors_TeenPatti_5fIndia_2eproto,
@@ -4407,7 +4408,8 @@ TPMsgGameResult::TPMsgGameResult(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena),
   game_score_(arena),
   card_type_(arena),
-  player_hands_(arena) {
+  player_hands_(arena),
+  player_new_score_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:TeenPatti_India.TPMsgGameResult)
@@ -4416,7 +4418,8 @@ TPMsgGameResult::TPMsgGameResult(const TPMsgGameResult& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       game_score_(from.game_score_),
       card_type_(from.card_type_),
-      player_hands_(from.player_hands_) {
+      player_hands_(from.player_hands_),
+      player_new_score_(from.player_new_score_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&game_tax_, &from.game_tax_,
     static_cast<size_t>(reinterpret_cast<char*>(&end_state_) -
@@ -4466,6 +4469,7 @@ void TPMsgGameResult::Clear() {
   game_score_.Clear();
   card_type_.Clear();
   player_hands_.Clear();
+  player_new_score_.Clear();
   ::memset(&game_tax_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&end_state_) -
       reinterpret_cast<char*>(&game_tax_)) + sizeof(end_state_));
@@ -4522,6 +4526,16 @@ const char* TPMsgGameResult::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
           end_state_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated int64 player_new_score = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt64Parser(_internal_mutable_player_new_score(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48) {
+          _internal_add_player_new_score(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -4591,6 +4605,15 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_end_state(), target);
   }
 
+  // repeated int64 player_new_score = 6;
+  {
+    int byte_size = _player_new_score_cached_byte_size_.load(std::memory_order_relaxed);
+    if (byte_size > 0) {
+      target = stream->WriteInt64Packed(
+          6, _internal_player_new_score(), byte_size, target);
+    }
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -4644,6 +4667,21 @@ size_t TPMsgGameResult::ByteSizeLong() const {
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
+  // repeated int64 player_new_score = 6;
+  {
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      Int64Size(this->player_new_score_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
+    }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _player_new_score_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
+  }
+
   // int32 game_tax = 1;
   if (this->game_tax() != 0) {
     total_size += 1 +
@@ -4692,6 +4730,7 @@ void TPMsgGameResult::MergeFrom(const TPMsgGameResult& from) {
   game_score_.MergeFrom(from.game_score_);
   card_type_.MergeFrom(from.card_type_);
   player_hands_.MergeFrom(from.player_hands_);
+  player_new_score_.MergeFrom(from.player_new_score_);
   if (from.game_tax() != 0) {
     _internal_set_game_tax(from._internal_game_tax());
   }
@@ -4724,6 +4763,7 @@ void TPMsgGameResult::InternalSwap(TPMsgGameResult* other) {
   game_score_.InternalSwap(&other->game_score_);
   card_type_.InternalSwap(&other->card_type_);
   player_hands_.InternalSwap(&other->player_hands_);
+  player_new_score_.InternalSwap(&other->player_new_score_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(TPMsgGameResult, end_state_)
       + sizeof(TPMsgGameResult::end_state_)
