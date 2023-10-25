@@ -553,13 +553,13 @@ class MsgPlayerLogin PROTOBUF_FINAL :
   void _internal_set_login_type(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // bool is_drain = 9;
+  // int32 is_drain = 9;
   void clear_is_drain();
-  bool is_drain() const;
-  void set_is_drain(bool value);
+  ::PROTOBUF_NAMESPACE_ID::int32 is_drain() const;
+  void set_is_drain(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  bool _internal_is_drain() const;
-  void _internal_set_is_drain(bool value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_is_drain() const;
+  void _internal_set_is_drain(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 code = 13;
@@ -590,7 +590,7 @@ class MsgPlayerLogin PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 channel_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 client_type_;
   ::PROTOBUF_NAMESPACE_ID::int32 login_type_;
-  bool is_drain_;
+  ::PROTOBUF_NAMESPACE_ID::int32 is_drain_;
   ::PROTOBUF_NAMESPACE_ID::int32 code_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
@@ -719,11 +719,11 @@ class MsgPlayerLoginResp PROTOBUF_FINAL :
     kResCodeFieldNumber = 1,
     kUserIdFieldNumber = 2,
     kBeautifulIdFieldNumber = 3,
-    kUserTypeFieldNumber = 8,
     kFirstRechargeFieldNumber = 7,
+    kUserTypeFieldNumber = 8,
     kIsDrainFieldNumber = 9,
-    kVipLevelFieldNumber = 12,
     kCoinFieldNumber = 10,
+    kVipLevelFieldNumber = 12,
     kAvatarFrameFieldNumber = 13,
     kAgentLevelFieldNumber = 17,
   };
@@ -866,15 +866,6 @@ class MsgPlayerLoginResp PROTOBUF_FINAL :
   void _internal_set_beautiful_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 user_type = 8;
-  void clear_user_type();
-  ::PROTOBUF_NAMESPACE_ID::int32 user_type() const;
-  void set_user_type(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_type() const;
-  void _internal_set_user_type(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
   // bool first_recharge = 7;
   void clear_first_recharge();
   bool first_recharge() const;
@@ -884,22 +875,22 @@ class MsgPlayerLoginResp PROTOBUF_FINAL :
   void _internal_set_first_recharge(bool value);
   public:
 
-  // bool is_drain = 9;
-  void clear_is_drain();
-  bool is_drain() const;
-  void set_is_drain(bool value);
+  // int32 user_type = 8;
+  void clear_user_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_type() const;
+  void set_user_type(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  bool _internal_is_drain() const;
-  void _internal_set_is_drain(bool value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_type() const;
+  void _internal_set_user_type(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 vip_level = 12;
-  void clear_vip_level();
-  ::PROTOBUF_NAMESPACE_ID::int32 vip_level() const;
-  void set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // int32 is_drain = 9;
+  void clear_is_drain();
+  ::PROTOBUF_NAMESPACE_ID::int32 is_drain() const;
+  void set_is_drain(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_vip_level() const;
-  void _internal_set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_is_drain() const;
+  void _internal_set_is_drain(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // uint64 coin = 10;
@@ -909,6 +900,15 @@ class MsgPlayerLoginResp PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::uint64 _internal_coin() const;
   void _internal_set_coin(::PROTOBUF_NAMESPACE_ID::uint64 value);
+  public:
+
+  // int32 vip_level = 12;
+  void clear_vip_level();
+  ::PROTOBUF_NAMESPACE_ID::int32 vip_level() const;
+  void set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_vip_level() const;
+  void _internal_set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 avatar_frame = 13;
@@ -946,11 +946,11 @@ class MsgPlayerLoginResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 res_code_;
   ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 beautiful_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 user_type_;
   bool first_recharge_;
-  bool is_drain_;
-  ::PROTOBUF_NAMESPACE_ID::int32 vip_level_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_type_;
+  ::PROTOBUF_NAMESPACE_ID::int32 is_drain_;
   ::PROTOBUF_NAMESPACE_ID::uint64 coin_;
+  ::PROTOBUF_NAMESPACE_ID::int32 vip_level_;
   ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame_;
   ::PROTOBUF_NAMESPACE_ID::int32 agent_level_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
@@ -9937,22 +9937,22 @@ inline void MsgPlayerLogin::set_allocated_user_ip(std::string* user_ip) {
   // @@protoc_insertion_point(field_set_allocated:MsgPlayerLogin.user_ip)
 }
 
-// bool is_drain = 9;
+// int32 is_drain = 9;
 inline void MsgPlayerLogin::clear_is_drain() {
-  is_drain_ = false;
+  is_drain_ = 0;
 }
-inline bool MsgPlayerLogin::_internal_is_drain() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPlayerLogin::_internal_is_drain() const {
   return is_drain_;
 }
-inline bool MsgPlayerLogin::is_drain() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPlayerLogin::is_drain() const {
   // @@protoc_insertion_point(field_get:MsgPlayerLogin.is_drain)
   return _internal_is_drain();
 }
-inline void MsgPlayerLogin::_internal_set_is_drain(bool value) {
+inline void MsgPlayerLogin::_internal_set_is_drain(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   is_drain_ = value;
 }
-inline void MsgPlayerLogin::set_is_drain(bool value) {
+inline void MsgPlayerLogin::set_is_drain(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_is_drain(value);
   // @@protoc_insertion_point(field_set:MsgPlayerLogin.is_drain)
 }
@@ -10508,22 +10508,22 @@ inline void MsgPlayerLoginResp::set_user_type(::PROTOBUF_NAMESPACE_ID::int32 val
   // @@protoc_insertion_point(field_set:MsgPlayerLoginResp.user_type)
 }
 
-// bool is_drain = 9;
+// int32 is_drain = 9;
 inline void MsgPlayerLoginResp::clear_is_drain() {
-  is_drain_ = false;
+  is_drain_ = 0;
 }
-inline bool MsgPlayerLoginResp::_internal_is_drain() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPlayerLoginResp::_internal_is_drain() const {
   return is_drain_;
 }
-inline bool MsgPlayerLoginResp::is_drain() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPlayerLoginResp::is_drain() const {
   // @@protoc_insertion_point(field_get:MsgPlayerLoginResp.is_drain)
   return _internal_is_drain();
 }
-inline void MsgPlayerLoginResp::_internal_set_is_drain(bool value) {
+inline void MsgPlayerLoginResp::_internal_set_is_drain(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   is_drain_ = value;
 }
-inline void MsgPlayerLoginResp::set_is_drain(bool value) {
+inline void MsgPlayerLoginResp::set_is_drain(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_is_drain(value);
   // @@protoc_insertion_point(field_set:MsgPlayerLoginResp.is_drain)
 }

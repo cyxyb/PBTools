@@ -26,13 +26,13 @@ public static partial class LoginReflection {
           "DwoHYWNjb3VudBgBIAEoCRIQCghwYXNzd29yZBgCIAEoCRITCgtwbGF0Zm9y",
           "bV9pZBgDIAEoBRISCgpjaGFubmVsX2lkGAQgASgFEhMKC2NsaWVudF90eXBl",
           "GAUgASgFEhIKCmxvZ2luX3R5cGUYBiABKAUSEwoLbWFjaGluZV9udW0YByAB",
-          "KAkSDwoHdXNlcl9pcBgIIAEoCRIQCghpc19kcmFpbhgJIAEoCBIOCgZhdmF0",
+          "KAkSDwoHdXNlcl9pcBgIIAEoCRIQCghpc19kcmFpbhgJIAEoBRIOCgZhdmF0",
           "YXIYCiABKAkSEAoIbmlja25hbWUYCyABKAkSDQoFcGhvbmUYDCABKAkSDAoE",
           "Y29kZRgNIAEoBRITCgtpbnZpdGVfY29kZRgOIAEoCSLWAgoSTXNnUGxheWVy",
           "TG9naW5SZXNwEhAKCHJlc19jb2RlGAEgASgFEg8KB3VzZXJfaWQYAiABKAUS",
           "FAoMYmVhdXRpZnVsX2lkGAMgASgFEg8KB2FjY291bnQYBCABKAkSEAoIbmlj",
           "a25hbWUYBSABKAkSDgoGYXZhdGFyGAYgASgJEhYKDmZpcnN0X3JlY2hhcmdl",
-          "GAcgASgIEhEKCXVzZXJfdHlwZRgIIAEoBRIQCghpc19kcmFpbhgJIAEoCBIM",
+          "GAcgASgIEhEKCXVzZXJfdHlwZRgIIAEoBRIQCghpc19kcmFpbhgJIAEoBRIM",
           "CgRjb2luGAogASgEEhEKCXBob25lX251bRgLIAEoCRIRCgl2aXBfbGV2ZWwY",
           "DCABKAUSFAoMYXZhdGFyX2ZyYW1lGA0gASgFEhMKC2ludml0ZV9jb2RlGA4g",
           "ASgJEhEKCXNpZ25hdHVyZRgQIAEoCRITCgthZ2VudF9sZXZlbBgRIAEoBRIQ",
@@ -375,12 +375,12 @@ public sealed partial class MsgPlayerLogin : pb::IMessage<MsgPlayerLogin>
 
   /// <summary>Field number for the "is_drain" field.</summary>
   public const int IsDrainFieldNumber = 9;
-  private bool isDrain_;
+  private int isDrain_;
   /// <summary>
-  ///是否引流量 0:不是 1:是
+  ///0:谷歌商店来源 1:推广渠道(facebook等) 2:自定义连接并且初始玩家类型为线下
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool IsDrain {
+  public int IsDrain {
     get { return isDrain_; }
     set {
       isDrain_ = value;
@@ -498,7 +498,7 @@ public sealed partial class MsgPlayerLogin : pb::IMessage<MsgPlayerLogin>
     if (LoginType != 0) hash ^= LoginType.GetHashCode();
     if (MachineNum.Length != 0) hash ^= MachineNum.GetHashCode();
     if (UserIp.Length != 0) hash ^= UserIp.GetHashCode();
-    if (IsDrain != false) hash ^= IsDrain.GetHashCode();
+    if (IsDrain != 0) hash ^= IsDrain.GetHashCode();
     if (Avatar.Length != 0) hash ^= Avatar.GetHashCode();
     if (Nickname.Length != 0) hash ^= Nickname.GetHashCode();
     if (Phone.Length != 0) hash ^= Phone.GetHashCode();
@@ -552,9 +552,9 @@ public sealed partial class MsgPlayerLogin : pb::IMessage<MsgPlayerLogin>
       output.WriteRawTag(66);
       output.WriteString(UserIp);
     }
-    if (IsDrain != false) {
+    if (IsDrain != 0) {
       output.WriteRawTag(72);
-      output.WriteBool(IsDrain);
+      output.WriteInt32(IsDrain);
     }
     if (Avatar.Length != 0) {
       output.WriteRawTag(82);
@@ -617,9 +617,9 @@ public sealed partial class MsgPlayerLogin : pb::IMessage<MsgPlayerLogin>
       output.WriteRawTag(66);
       output.WriteString(UserIp);
     }
-    if (IsDrain != false) {
+    if (IsDrain != 0) {
       output.WriteRawTag(72);
-      output.WriteBool(IsDrain);
+      output.WriteInt32(IsDrain);
     }
     if (Avatar.Length != 0) {
       output.WriteRawTag(82);
@@ -674,8 +674,8 @@ public sealed partial class MsgPlayerLogin : pb::IMessage<MsgPlayerLogin>
     if (UserIp.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(UserIp);
     }
-    if (IsDrain != false) {
-      size += 1 + 1;
+    if (IsDrain != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(IsDrain);
     }
     if (Avatar.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(Avatar);
@@ -727,7 +727,7 @@ public sealed partial class MsgPlayerLogin : pb::IMessage<MsgPlayerLogin>
     if (other.UserIp.Length != 0) {
       UserIp = other.UserIp;
     }
-    if (other.IsDrain != false) {
+    if (other.IsDrain != 0) {
       IsDrain = other.IsDrain;
     }
     if (other.Avatar.Length != 0) {
@@ -792,7 +792,7 @@ public sealed partial class MsgPlayerLogin : pb::IMessage<MsgPlayerLogin>
           break;
         }
         case 72: {
-          IsDrain = input.ReadBool();
+          IsDrain = input.ReadInt32();
           break;
         }
         case 82: {
@@ -862,7 +862,7 @@ public sealed partial class MsgPlayerLogin : pb::IMessage<MsgPlayerLogin>
           break;
         }
         case 72: {
-          IsDrain = input.ReadBool();
+          IsDrain = input.ReadInt32();
           break;
         }
         case 82: {
@@ -1063,12 +1063,12 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
 
   /// <summary>Field number for the "is_drain" field.</summary>
   public const int IsDrainFieldNumber = 9;
-  private bool isDrain_;
+  private int isDrain_;
   /// <summary>
-  ///是否引流量 0:不是 1:是
+  ///0:谷歌商店来源 1:推广渠道(facebook等) 2:自定义连接并且初始玩家类型为线下
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool IsDrain {
+  public int IsDrain {
     get { return isDrain_; }
     set {
       isDrain_ = value;
@@ -1231,7 +1231,7 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
     if (Avatar.Length != 0) hash ^= Avatar.GetHashCode();
     if (FirstRecharge != false) hash ^= FirstRecharge.GetHashCode();
     if (UserType != 0) hash ^= UserType.GetHashCode();
-    if (IsDrain != false) hash ^= IsDrain.GetHashCode();
+    if (IsDrain != 0) hash ^= IsDrain.GetHashCode();
     if (Coin != 0UL) hash ^= Coin.GetHashCode();
     if (PhoneNum.Length != 0) hash ^= PhoneNum.GetHashCode();
     if (VipLevel != 0) hash ^= VipLevel.GetHashCode();
@@ -1288,9 +1288,9 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
       output.WriteRawTag(64);
       output.WriteInt32(UserType);
     }
-    if (IsDrain != false) {
+    if (IsDrain != 0) {
       output.WriteRawTag(72);
-      output.WriteBool(IsDrain);
+      output.WriteInt32(IsDrain);
     }
     if (Coin != 0UL) {
       output.WriteRawTag(80);
@@ -1365,9 +1365,9 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
       output.WriteRawTag(64);
       output.WriteInt32(UserType);
     }
-    if (IsDrain != false) {
+    if (IsDrain != 0) {
       output.WriteRawTag(72);
-      output.WriteBool(IsDrain);
+      output.WriteInt32(IsDrain);
     }
     if (Coin != 0UL) {
       output.WriteRawTag(80);
@@ -1434,8 +1434,8 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
     if (UserType != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserType);
     }
-    if (IsDrain != false) {
-      size += 1 + 1;
+    if (IsDrain != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(IsDrain);
     }
     if (Coin != 0UL) {
       size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Coin);
@@ -1496,7 +1496,7 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
     if (other.UserType != 0) {
       UserType = other.UserType;
     }
-    if (other.IsDrain != false) {
+    if (other.IsDrain != 0) {
       IsDrain = other.IsDrain;
     }
     if (other.Coin != 0UL) {
@@ -1570,7 +1570,7 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
           break;
         }
         case 72: {
-          IsDrain = input.ReadBool();
+          IsDrain = input.ReadInt32();
           break;
         }
         case 80: {
@@ -1652,7 +1652,7 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
           break;
         }
         case 72: {
-          IsDrain = input.ReadBool();
+          IsDrain = input.ReadInt32();
           break;
         }
         case 80: {
