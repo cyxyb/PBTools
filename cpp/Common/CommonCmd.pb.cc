@@ -132,7 +132,7 @@ const char descriptor_table_protodef_CommonCmd_2eproto[] PROTOBUF_SECTION_VARIAB
   "dRecordResp\020\370\007\022!\n\034MsgIDGame_QueryDayReco"
   "rdResp\020\371\007\022\033\n\026MsgIDGame_AddOneRecord\020\372\007\022&"
   "\n!MsgIDGame_NotifyPlayerOfflineResp\020\373\007\022\032"
-  "\n\025MsgIDGame_ChangeTable\020\374\007*\273\002\n\nEMsgIDCha"
+  "\n\025MsgIDGame_ChangeTable\020\374\007*\375\002\n\nEMsgIDCha"
   "t\022\022\n\016MsgIDChat_Null\020\000\022\024\n\017MsgIDChat_Login"
   "\020\321\017\022\030\n\023MsgIDChat_LoginResp\020\322\017\022\031\n\024MsgIDCh"
   "at_LogoutResp\020\323\017\022\034\n\027MsgIDChat_SendNormal"
@@ -140,7 +140,9 @@ const char descriptor_table_protodef_CommonCmd_2eproto[] PROTOBUF_SECTION_VARIAB
   "esp\020\325\017\022\035\n\030MsgIDChat_SendTrumpetMsg\020\326\017\022\'\n"
   "\"MsgIDChat_NotifyChatTrumpetMsgResp\020\327\017\022\037"
   "\n\032MsgIDChat_SyncUserInfoResp\020\330\017\022\037\n\032MsgID"
-  "Chat_SetLilitChatResp\020\331\017b\006proto3"
+  "Chat_SetLilitChatResp\020\331\017\022\035\n\030MsgIDChat_Ge"
+  "tChatHistory\020\332\017\022!\n\034MsgIDChat_GetChatHist"
+  "oryResp\020\333\017b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_CommonCmd_2eproto_deps[1] = {
 };
@@ -148,7 +150,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Com
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_CommonCmd_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_CommonCmd_2eproto = {
-  false, false, descriptor_table_protodef_CommonCmd_2eproto, "CommonCmd.proto", 4752,
+  false, false, descriptor_table_protodef_CommonCmd_2eproto, "CommonCmd.proto", 4818,
   &descriptor_table_CommonCmd_2eproto_once, descriptor_table_CommonCmd_2eproto_sccs, descriptor_table_CommonCmd_2eproto_deps, 0, 0,
   schemas, file_default_instances, TableStruct_CommonCmd_2eproto::offsets,
   file_level_metadata_CommonCmd_2eproto, 0, file_level_enum_descriptors_CommonCmd_2eproto, file_level_service_descriptors_CommonCmd_2eproto,
@@ -345,6 +347,8 @@ bool EMsgIDChat_IsValid(int value) {
     case 2007:
     case 2008:
     case 2009:
+    case 2010:
+    case 2011:
       return true;
     default:
       return false;

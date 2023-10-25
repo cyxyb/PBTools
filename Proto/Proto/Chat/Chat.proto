@@ -40,3 +40,25 @@ message MsgSyncUserInfo
 	repeated	MsgChatUserInfo user_info = 1;	//玩家信息
 }
 
+message MsgChatHistory
+{
+	int32		chat_type		= 1;	//消息类型(0:普通消息 1:小喇叭消息)
+	int32		start_index		= 2;	//请求历史消息第一条消息的下标
+}
+
+message MsgChatInfo
+{
+	int32		user_id			= 1;	//玩家ID
+	int32		beautiful_id	= 2;	//玩家靓号
+	string		nickname		= 3;	//玩家昵称
+	string		avatar			= 4;	//头像
+	int32		vip_level		= 5;	//VIP等级
+	int32		avatar_frame	= 6;	//头像框
+	string		msg				= 7;	//聊天消息
+}
+
+message MsgChatHistoryResp
+{
+	int32		chat_type		= 1;	//消息类型(0:普通消息 1:小喇叭消息)
+	repeated MsgChatInfo info	= 2;	//聊天消息
+}
