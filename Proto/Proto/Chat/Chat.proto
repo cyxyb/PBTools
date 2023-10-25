@@ -48,14 +48,10 @@ message MsgChatHistory
 
 message MsgChatInfo
 {
-	int32		user_id			= 1;	//玩家ID
-	int32		beautiful_id	= 2;	//玩家靓号
-	string		nickname		= 3;	//玩家昵称
-	string		avatar			= 4;	//头像
-	int32		vip_level		= 5;	//VIP等级
-	int32		avatar_frame	= 6;	//头像框
-	string		msg				= 7;	//聊天消息
-	int32		index			= 8;	//消息索引
+
+	MsgChatUserInfo	user_info	= 1;	//玩家信息
+	string		msg				= 2;	//聊天消息
+	int32		index			= 3;	//消息索引
 }
 
 message MsgChatHistoryResp

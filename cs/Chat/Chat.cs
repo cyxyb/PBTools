@@ -35,13 +35,11 @@ namespace Chat {
             "ZRgHIAEoBRITCgtjbGllbnRfdHlwZRgIIAEoBRISCgpsaW1pdF9jaGF0GAkg",
             "ASgFIjsKD01zZ1N5bmNVc2VySW5mbxIoCgl1c2VyX2luZm8YASADKAsyFS5D",
             "aGF0Lk1zZ0NoYXRVc2VySW5mbyI4Cg5Nc2dDaGF0SGlzdG9yeRIRCgljaGF0",
-            "X3R5cGUYASABKAUSEwoLc3RhcnRfaW5kZXgYAiABKAUimwEKC01zZ0NoYXRJ",
-            "bmZvEg8KB3VzZXJfaWQYASABKAUSFAoMYmVhdXRpZnVsX2lkGAIgASgFEhAK",
-            "CG5pY2tuYW1lGAMgASgJEg4KBmF2YXRhchgEIAEoCRIRCgl2aXBfbGV2ZWwY",
-            "BSABKAUSFAoMYXZhdGFyX2ZyYW1lGAYgASgFEgsKA21zZxgHIAEoCRINCgVp",
-            "bmRleBgIIAEoBSJIChJNc2dDaGF0SGlzdG9yeVJlc3ASEQoJY2hhdF90eXBl",
-            "GAEgASgFEh8KBGluZm8YAiADKAsyES5DaGF0Lk1zZ0NoYXRJbmZvYgZwcm90",
-            "bzM="));
+            "X3R5cGUYASABKAUSEwoLc3RhcnRfaW5kZXgYAiABKAUiUwoLTXNnQ2hhdElu",
+            "Zm8SKAoJdXNlcl9pbmZvGAEgASgLMhUuQ2hhdC5Nc2dDaGF0VXNlckluZm8S",
+            "CwoDbXNnGAIgASgJEg0KBWluZGV4GAMgASgFIkgKEk1zZ0NoYXRIaXN0b3J5",
+            "UmVzcBIRCgljaGF0X3R5cGUYASABKAUSHwoEaW5mbxgCIAMoCzIRLkNoYXQu",
+            "TXNnQ2hhdEluZm9iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -50,7 +48,7 @@ namespace Chat {
             new pbr::GeneratedClrTypeInfo(typeof(global::Chat.MsgChatLoginResp), global::Chat.MsgChatLoginResp.Parser, new[]{ "ResCode", "UserId", "BeautifulId", "Nickname", "Avatar", "VipLevel", "AvatarFrame", "ClientType", "LimitChat" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chat.MsgSyncUserInfo), global::Chat.MsgSyncUserInfo.Parser, new[]{ "UserInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chat.MsgChatHistory), global::Chat.MsgChatHistory.Parser, new[]{ "ChatType", "StartIndex" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Chat.MsgChatInfo), global::Chat.MsgChatInfo.Parser, new[]{ "UserId", "BeautifulId", "Nickname", "Avatar", "VipLevel", "AvatarFrame", "Msg", "Index" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Chat.MsgChatInfo), global::Chat.MsgChatInfo.Parser, new[]{ "UserInfo", "Msg", "Index" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Chat.MsgChatHistoryResp), global::Chat.MsgChatHistoryResp.Parser, new[]{ "ChatType", "Info" }, null, null, null, null)
           }));
     }
@@ -1548,12 +1546,7 @@ namespace Chat {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public MsgChatInfo(MsgChatInfo other) : this() {
-      userId_ = other.userId_;
-      beautifulId_ = other.beautifulId_;
-      nickname_ = other.nickname_;
-      avatar_ = other.avatar_;
-      vipLevel_ = other.vipLevel_;
-      avatarFrame_ = other.avatarFrame_;
+      userInfo_ = other.userInfo_ != null ? other.userInfo_.Clone() : null;
       msg_ = other.msg_;
       index_ = other.index_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -1564,92 +1557,22 @@ namespace Chat {
       return new MsgChatInfo(this);
     }
 
-    /// <summary>Field number for the "user_id" field.</summary>
-    public const int UserIdFieldNumber = 1;
-    private int userId_;
+    /// <summary>Field number for the "user_info" field.</summary>
+    public const int UserInfoFieldNumber = 1;
+    private global::Chat.MsgChatUserInfo userInfo_;
     /// <summary>
-    ///玩家ID
+    ///玩家信息
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int UserId {
-      get { return userId_; }
+    public global::Chat.MsgChatUserInfo UserInfo {
+      get { return userInfo_; }
       set {
-        userId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "beautiful_id" field.</summary>
-    public const int BeautifulIdFieldNumber = 2;
-    private int beautifulId_;
-    /// <summary>
-    ///玩家靓号
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int BeautifulId {
-      get { return beautifulId_; }
-      set {
-        beautifulId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "nickname" field.</summary>
-    public const int NicknameFieldNumber = 3;
-    private string nickname_ = "";
-    /// <summary>
-    ///玩家昵称
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Nickname {
-      get { return nickname_; }
-      set {
-        nickname_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "avatar" field.</summary>
-    public const int AvatarFieldNumber = 4;
-    private string avatar_ = "";
-    /// <summary>
-    ///头像
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Avatar {
-      get { return avatar_; }
-      set {
-        avatar_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "vip_level" field.</summary>
-    public const int VipLevelFieldNumber = 5;
-    private int vipLevel_;
-    /// <summary>
-    ///VIP等级
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int VipLevel {
-      get { return vipLevel_; }
-      set {
-        vipLevel_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "avatar_frame" field.</summary>
-    public const int AvatarFrameFieldNumber = 6;
-    private int avatarFrame_;
-    /// <summary>
-    ///头像框
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int AvatarFrame {
-      get { return avatarFrame_; }
-      set {
-        avatarFrame_ = value;
+        userInfo_ = value;
       }
     }
 
     /// <summary>Field number for the "msg" field.</summary>
-    public const int MsgFieldNumber = 7;
+    public const int MsgFieldNumber = 2;
     private string msg_ = "";
     /// <summary>
     ///聊天消息
@@ -1663,7 +1586,7 @@ namespace Chat {
     }
 
     /// <summary>Field number for the "index" field.</summary>
-    public const int IndexFieldNumber = 8;
+    public const int IndexFieldNumber = 3;
     private int index_;
     /// <summary>
     ///消息索引
@@ -1689,12 +1612,7 @@ namespace Chat {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (UserId != other.UserId) return false;
-      if (BeautifulId != other.BeautifulId) return false;
-      if (Nickname != other.Nickname) return false;
-      if (Avatar != other.Avatar) return false;
-      if (VipLevel != other.VipLevel) return false;
-      if (AvatarFrame != other.AvatarFrame) return false;
+      if (!object.Equals(UserInfo, other.UserInfo)) return false;
       if (Msg != other.Msg) return false;
       if (Index != other.Index) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -1703,12 +1621,7 @@ namespace Chat {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (UserId != 0) hash ^= UserId.GetHashCode();
-      if (BeautifulId != 0) hash ^= BeautifulId.GetHashCode();
-      if (Nickname.Length != 0) hash ^= Nickname.GetHashCode();
-      if (Avatar.Length != 0) hash ^= Avatar.GetHashCode();
-      if (VipLevel != 0) hash ^= VipLevel.GetHashCode();
-      if (AvatarFrame != 0) hash ^= AvatarFrame.GetHashCode();
+      if (userInfo_ != null) hash ^= UserInfo.GetHashCode();
       if (Msg.Length != 0) hash ^= Msg.GetHashCode();
       if (Index != 0) hash ^= Index.GetHashCode();
       if (_unknownFields != null) {
@@ -1727,36 +1640,16 @@ namespace Chat {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (UserId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(UserId);
-      }
-      if (BeautifulId != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(BeautifulId);
-      }
-      if (Nickname.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Nickname);
-      }
-      if (Avatar.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteString(Avatar);
-      }
-      if (VipLevel != 0) {
-        output.WriteRawTag(40);
-        output.WriteInt32(VipLevel);
-      }
-      if (AvatarFrame != 0) {
-        output.WriteRawTag(48);
-        output.WriteInt32(AvatarFrame);
+      if (userInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(UserInfo);
       }
       if (Msg.Length != 0) {
-        output.WriteRawTag(58);
+        output.WriteRawTag(18);
         output.WriteString(Msg);
       }
       if (Index != 0) {
-        output.WriteRawTag(64);
+        output.WriteRawTag(24);
         output.WriteInt32(Index);
       }
       if (_unknownFields != null) {
@@ -1768,36 +1661,16 @@ namespace Chat {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (UserId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(UserId);
-      }
-      if (BeautifulId != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(BeautifulId);
-      }
-      if (Nickname.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Nickname);
-      }
-      if (Avatar.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteString(Avatar);
-      }
-      if (VipLevel != 0) {
-        output.WriteRawTag(40);
-        output.WriteInt32(VipLevel);
-      }
-      if (AvatarFrame != 0) {
-        output.WriteRawTag(48);
-        output.WriteInt32(AvatarFrame);
+      if (userInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(UserInfo);
       }
       if (Msg.Length != 0) {
-        output.WriteRawTag(58);
+        output.WriteRawTag(18);
         output.WriteString(Msg);
       }
       if (Index != 0) {
-        output.WriteRawTag(64);
+        output.WriteRawTag(24);
         output.WriteInt32(Index);
       }
       if (_unknownFields != null) {
@@ -1809,23 +1682,8 @@ namespace Chat {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (UserId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserId);
-      }
-      if (BeautifulId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(BeautifulId);
-      }
-      if (Nickname.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Nickname);
-      }
-      if (Avatar.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Avatar);
-      }
-      if (VipLevel != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(VipLevel);
-      }
-      if (AvatarFrame != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(AvatarFrame);
+      if (userInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(UserInfo);
       }
       if (Msg.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Msg);
@@ -1844,23 +1702,11 @@ namespace Chat {
       if (other == null) {
         return;
       }
-      if (other.UserId != 0) {
-        UserId = other.UserId;
-      }
-      if (other.BeautifulId != 0) {
-        BeautifulId = other.BeautifulId;
-      }
-      if (other.Nickname.Length != 0) {
-        Nickname = other.Nickname;
-      }
-      if (other.Avatar.Length != 0) {
-        Avatar = other.Avatar;
-      }
-      if (other.VipLevel != 0) {
-        VipLevel = other.VipLevel;
-      }
-      if (other.AvatarFrame != 0) {
-        AvatarFrame = other.AvatarFrame;
+      if (other.userInfo_ != null) {
+        if (userInfo_ == null) {
+          UserInfo = new global::Chat.MsgChatUserInfo();
+        }
+        UserInfo.MergeFrom(other.UserInfo);
       }
       if (other.Msg.Length != 0) {
         Msg = other.Msg;
@@ -1882,35 +1728,18 @@ namespace Chat {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            UserId = input.ReadInt32();
+          case 10: {
+            if (userInfo_ == null) {
+              UserInfo = new global::Chat.MsgChatUserInfo();
+            }
+            input.ReadMessage(UserInfo);
             break;
           }
-          case 16: {
-            BeautifulId = input.ReadInt32();
-            break;
-          }
-          case 26: {
-            Nickname = input.ReadString();
-            break;
-          }
-          case 34: {
-            Avatar = input.ReadString();
-            break;
-          }
-          case 40: {
-            VipLevel = input.ReadInt32();
-            break;
-          }
-          case 48: {
-            AvatarFrame = input.ReadInt32();
-            break;
-          }
-          case 58: {
+          case 18: {
             Msg = input.ReadString();
             break;
           }
-          case 64: {
+          case 24: {
             Index = input.ReadInt32();
             break;
           }
@@ -1928,35 +1757,18 @@ namespace Chat {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            UserId = input.ReadInt32();
+          case 10: {
+            if (userInfo_ == null) {
+              UserInfo = new global::Chat.MsgChatUserInfo();
+            }
+            input.ReadMessage(UserInfo);
             break;
           }
-          case 16: {
-            BeautifulId = input.ReadInt32();
-            break;
-          }
-          case 26: {
-            Nickname = input.ReadString();
-            break;
-          }
-          case 34: {
-            Avatar = input.ReadString();
-            break;
-          }
-          case 40: {
-            VipLevel = input.ReadInt32();
-            break;
-          }
-          case 48: {
-            AvatarFrame = input.ReadInt32();
-            break;
-          }
-          case 58: {
+          case 18: {
             Msg = input.ReadString();
             break;
           }
-          case 64: {
+          case 24: {
             Index = input.ReadInt32();
             break;
           }
