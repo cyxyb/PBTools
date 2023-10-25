@@ -120,14 +120,16 @@ public static partial class CommonCmdReflection {
           "c2dJREdhbWVfUXVlcnlSb3VuZFJlY29yZFJlc3AQ+AcSIQocTXNnSURHYW1l",
           "X1F1ZXJ5RGF5UmVjb3JkUmVzcBD5BxIbChZNc2dJREdhbWVfQWRkT25lUmVj",
           "b3JkEPoHEiYKIU1zZ0lER2FtZV9Ob3RpZnlQbGF5ZXJPZmZsaW5lUmVzcBD7",
-          "BxIaChVNc2dJREdhbWVfQ2hhbmdlVGFibGUQ/AcquwIKCkVNc2dJRENoYXQS",
+          "BxIaChVNc2dJREdhbWVfQ2hhbmdlVGFibGUQ/Acq/QIKCkVNc2dJRENoYXQS",
           "EgoOTXNnSURDaGF0X051bGwQABIUCg9Nc2dJRENoYXRfTG9naW4Q0Q8SGAoT",
           "TXNnSURDaGF0X0xvZ2luUmVzcBDSDxIZChRNc2dJRENoYXRfTG9nb3V0UmVz",
           "cBDTDxIcChdNc2dJRENoYXRfU2VuZE5vcm1hbE1zZxDUDxImCiFNc2dJRENo",
           "YXRfTm90aWZ5Q2hhdE5vcm1hbE1zZ1Jlc3AQ1Q8SHQoYTXNnSURDaGF0X1Nl",
           "bmRUcnVtcGV0TXNnENYPEicKIk1zZ0lEQ2hhdF9Ob3RpZnlDaGF0VHJ1bXBl",
           "dE1zZ1Jlc3AQ1w8SHwoaTXNnSURDaGF0X1N5bmNVc2VySW5mb1Jlc3AQ2A8S",
-          "HwoaTXNnSURDaGF0X1NldExpbGl0Q2hhdFJlc3AQ2Q9iBnByb3RvMw=="));
+          "HwoaTXNnSURDaGF0X1NldExpbGl0Q2hhdFJlc3AQ2Q8SHQoYTXNnSURDaGF0",
+          "X0dldENoYXRIaXN0b3J5ENoPEiEKHE1zZ0lEQ2hhdF9HZXRDaGF0SGlzdG9y",
+          "eVJlc3AQ2w9iBnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::EMsgIDMain), typeof(global::EMsgIDLogin), typeof(global::EMsgIDGame), typeof(global::EMsgIDChat), }, null, null));
@@ -722,6 +724,14 @@ public enum EMsgIDChat {
   ///设置限制聊天返回(MsgCommonN32)
   /// </summary>
   [pbr::OriginalName("MsgIDChat_SetLilitChatResp")] MsgIdchatSetLilitChatResp = 2009,
+  /// <summary>
+  ///获取聊天历史记录(MsgChatHistory)
+  /// </summary>
+  [pbr::OriginalName("MsgIDChat_GetChatHistory")] MsgIdchatGetChatHistory = 2010,
+  /// <summary>
+  ///获取聊天历史记录返回(MsgChatHistoryResp)
+  /// </summary>
+  [pbr::OriginalName("MsgIDChat_GetChatHistoryResp")] MsgIdchatGetChatHistoryResp = 2011,
 }
 
 #endregion

@@ -40,3 +40,22 @@ message MsgSyncUserInfo
 	repeated	MsgChatUserInfo user_info = 1;	//玩家信息
 }
 
+message MsgChatHistory
+{
+	int32		chat_type		= 1;	//消息类型(0:普通消息 1:小喇叭消息)
+	int32		start_index		= 2;	//请求历史消息的索引
+}
+
+message MsgChatInfo
+{
+
+	MsgChatUserInfo	user_info	= 1;	//玩家信息
+	string		msg				= 2;	//聊天消息
+	int32		index			= 3;	//消息索引
+}
+
+message MsgChatHistoryResp
+{
+	int32		chat_type		= 1;	//消息类型(0:普通消息 1:小喇叭消息)
+	repeated MsgChatInfo info	= 2;	//聊天消息
+}

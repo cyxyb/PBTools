@@ -14,6 +14,7 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
+extern PROTOBUF_INTERNAL_EXPORT_Chat_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_MsgChatInfo_Chat_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_Chat_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgChatUserInfo_Chat_2eproto;
 namespace Chat {
 class MsgChatLoginDefaultTypeInternal {
@@ -32,7 +33,60 @@ class MsgSyncUserInfoDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgSyncUserInfo> _instance;
 } _MsgSyncUserInfo_default_instance_;
+class MsgChatHistoryDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgChatHistory> _instance;
+} _MsgChatHistory_default_instance_;
+class MsgChatInfoDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgChatInfo> _instance;
+} _MsgChatInfo_default_instance_;
+class MsgChatHistoryRespDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgChatHistoryResp> _instance;
+} _MsgChatHistoryResp_default_instance_;
 }  // namespace Chat
+static void InitDefaultsscc_info_MsgChatHistory_Chat_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::Chat::_MsgChatHistory_default_instance_;
+    new (ptr) ::Chat::MsgChatHistory();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgChatHistory_Chat_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgChatHistory_Chat_2eproto}, {}};
+
+static void InitDefaultsscc_info_MsgChatHistoryResp_Chat_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::Chat::_MsgChatHistoryResp_default_instance_;
+    new (ptr) ::Chat::MsgChatHistoryResp();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_MsgChatHistoryResp_Chat_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MsgChatHistoryResp_Chat_2eproto}, {
+      &scc_info_MsgChatInfo_Chat_2eproto.base,}};
+
+static void InitDefaultsscc_info_MsgChatInfo_Chat_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::Chat::_MsgChatInfo_default_instance_;
+    new (ptr) ::Chat::MsgChatInfo();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_MsgChatInfo_Chat_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MsgChatInfo_Chat_2eproto}, {
+      &scc_info_MsgChatUserInfo_Chat_2eproto.base,}};
+
 static void InitDefaultsscc_info_MsgChatLogin_Chat_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -86,7 +140,7 @@ static void InitDefaultsscc_info_MsgSyncUserInfo_Chat_2eproto() {
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MsgSyncUserInfo_Chat_2eproto}, {
       &scc_info_MsgChatUserInfo_Chat_2eproto.base,}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Chat_2eproto[4];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Chat_2eproto[7];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_Chat_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_Chat_2eproto = nullptr;
 
@@ -129,12 +183,37 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Chat_2eproto::offsets[] PROTOB
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::Chat::MsgSyncUserInfo, user_info_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::Chat::MsgChatHistory, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::Chat::MsgChatHistory, chat_type_),
+  PROTOBUF_FIELD_OFFSET(::Chat::MsgChatHistory, start_index_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::Chat::MsgChatInfo, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::Chat::MsgChatInfo, user_info_),
+  PROTOBUF_FIELD_OFFSET(::Chat::MsgChatInfo, msg_),
+  PROTOBUF_FIELD_OFFSET(::Chat::MsgChatInfo, index_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::Chat::MsgChatHistoryResp, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::Chat::MsgChatHistoryResp, chat_type_),
+  PROTOBUF_FIELD_OFFSET(::Chat::MsgChatHistoryResp, info_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::Chat::MsgChatLogin)},
   { 7, -1, sizeof(::Chat::MsgChatUserInfo)},
   { 18, -1, sizeof(::Chat::MsgChatLoginResp)},
   { 32, -1, sizeof(::Chat::MsgSyncUserInfo)},
+  { 38, -1, sizeof(::Chat::MsgChatHistory)},
+  { 45, -1, sizeof(::Chat::MsgChatInfo)},
+  { 53, -1, sizeof(::Chat::MsgChatHistoryResp)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -142,6 +221,9 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Chat::_MsgChatUserInfo_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Chat::_MsgChatLoginResp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Chat::_MsgSyncUserInfo_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Chat::_MsgChatHistory_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Chat::_MsgChatInfo_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Chat::_MsgChatHistoryResp_default_instance_),
 };
 
 const char descriptor_table_protodef_Chat_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -156,11 +238,20 @@ const char descriptor_table_protodef_Chat_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "ip_level\030\006 \001(\005\022\024\n\014avatar_frame\030\007 \001(\005\022\023\n\013"
   "client_type\030\010 \001(\005\022\022\n\nlimit_chat\030\t \001(\005\";\n"
   "\017MsgSyncUserInfo\022(\n\tuser_info\030\001 \003(\0132\025.Ch"
-  "at.MsgChatUserInfob\006proto3"
+  "at.MsgChatUserInfo\"8\n\016MsgChatHistory\022\021\n\t"
+  "chat_type\030\001 \001(\005\022\023\n\013start_index\030\002 \001(\005\"S\n\013"
+  "MsgChatInfo\022(\n\tuser_info\030\001 \001(\0132\025.Chat.Ms"
+  "gChatUserInfo\022\013\n\003msg\030\002 \001(\t\022\r\n\005index\030\003 \001("
+  "\005\"H\n\022MsgChatHistoryResp\022\021\n\tchat_type\030\001 \001"
+  "(\005\022\037\n\004info\030\002 \003(\0132\021.Chat.MsgChatInfob\006pro"
+  "to3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Chat_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Chat_2eproto_sccs[4] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Chat_2eproto_sccs[7] = {
+  &scc_info_MsgChatHistory_Chat_2eproto.base,
+  &scc_info_MsgChatHistoryResp_Chat_2eproto.base,
+  &scc_info_MsgChatInfo_Chat_2eproto.base,
   &scc_info_MsgChatLogin_Chat_2eproto.base,
   &scc_info_MsgChatLoginResp_Chat_2eproto.base,
   &scc_info_MsgChatUserInfo_Chat_2eproto.base,
@@ -168,10 +259,10 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Cha
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Chat_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Chat_2eproto = {
-  false, false, descriptor_table_protodef_Chat_2eproto, "Chat.proto", 466,
-  &descriptor_table_Chat_2eproto_once, descriptor_table_Chat_2eproto_sccs, descriptor_table_Chat_2eproto_deps, 4, 0,
+  false, false, descriptor_table_protodef_Chat_2eproto, "Chat.proto", 683,
+  &descriptor_table_Chat_2eproto_once, descriptor_table_Chat_2eproto_sccs, descriptor_table_Chat_2eproto_deps, 7, 0,
   schemas, file_default_instances, TableStruct_Chat_2eproto::offsets,
-  file_level_metadata_Chat_2eproto, 4, file_level_enum_descriptors_Chat_2eproto, file_level_service_descriptors_Chat_2eproto,
+  file_level_metadata_Chat_2eproto, 7, file_level_enum_descriptors_Chat_2eproto, file_level_service_descriptors_Chat_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -1384,6 +1475,743 @@ void MsgSyncUserInfo::InternalSwap(MsgSyncUserInfo* other) {
 }
 
 
+// ===================================================================
+
+class MsgChatHistory::_Internal {
+ public:
+};
+
+MsgChatHistory::MsgChatHistory(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:Chat.MsgChatHistory)
+}
+MsgChatHistory::MsgChatHistory(const MsgChatHistory& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&chat_type_, &from.chat_type_,
+    static_cast<size_t>(reinterpret_cast<char*>(&start_index_) -
+    reinterpret_cast<char*>(&chat_type_)) + sizeof(start_index_));
+  // @@protoc_insertion_point(copy_constructor:Chat.MsgChatHistory)
+}
+
+void MsgChatHistory::SharedCtor() {
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&chat_type_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&start_index_) -
+      reinterpret_cast<char*>(&chat_type_)) + sizeof(start_index_));
+}
+
+MsgChatHistory::~MsgChatHistory() {
+  // @@protoc_insertion_point(destructor:Chat.MsgChatHistory)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void MsgChatHistory::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void MsgChatHistory::ArenaDtor(void* object) {
+  MsgChatHistory* _this = reinterpret_cast< MsgChatHistory* >(object);
+  (void)_this;
+}
+void MsgChatHistory::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void MsgChatHistory::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const MsgChatHistory& MsgChatHistory::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgChatHistory_Chat_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void MsgChatHistory::Clear() {
+// @@protoc_insertion_point(message_clear_start:Chat.MsgChatHistory)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&chat_type_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&start_index_) -
+      reinterpret_cast<char*>(&chat_type_)) + sizeof(start_index_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* MsgChatHistory::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 chat_type = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          chat_type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 start_index = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          start_index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* MsgChatHistory::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:Chat.MsgChatHistory)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 chat_type = 1;
+  if (this->chat_type() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_chat_type(), target);
+  }
+
+  // int32 start_index = 2;
+  if (this->start_index() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_start_index(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:Chat.MsgChatHistory)
+  return target;
+}
+
+size_t MsgChatHistory::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Chat.MsgChatHistory)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // int32 chat_type = 1;
+  if (this->chat_type() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_chat_type());
+  }
+
+  // int32 start_index = 2;
+  if (this->start_index() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_start_index());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void MsgChatHistory::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:Chat.MsgChatHistory)
+  GOOGLE_DCHECK_NE(&from, this);
+  const MsgChatHistory* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgChatHistory>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Chat.MsgChatHistory)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:Chat.MsgChatHistory)
+    MergeFrom(*source);
+  }
+}
+
+void MsgChatHistory::MergeFrom(const MsgChatHistory& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Chat.MsgChatHistory)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.chat_type() != 0) {
+    _internal_set_chat_type(from._internal_chat_type());
+  }
+  if (from.start_index() != 0) {
+    _internal_set_start_index(from._internal_start_index());
+  }
+}
+
+void MsgChatHistory::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:Chat.MsgChatHistory)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void MsgChatHistory::CopyFrom(const MsgChatHistory& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Chat.MsgChatHistory)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool MsgChatHistory::IsInitialized() const {
+  return true;
+}
+
+void MsgChatHistory::InternalSwap(MsgChatHistory* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(MsgChatHistory, start_index_)
+      + sizeof(MsgChatHistory::start_index_)
+      - PROTOBUF_FIELD_OFFSET(MsgChatHistory, chat_type_)>(
+          reinterpret_cast<char*>(&chat_type_),
+          reinterpret_cast<char*>(&other->chat_type_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata MsgChatHistory::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class MsgChatInfo::_Internal {
+ public:
+  static const ::Chat::MsgChatUserInfo& user_info(const MsgChatInfo* msg);
+};
+
+const ::Chat::MsgChatUserInfo&
+MsgChatInfo::_Internal::user_info(const MsgChatInfo* msg) {
+  return *msg->user_info_;
+}
+MsgChatInfo::MsgChatInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:Chat.MsgChatInfo)
+}
+MsgChatInfo::MsgChatInfo(const MsgChatInfo& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  msg_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from._internal_msg().empty()) {
+    msg_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_msg(), 
+      GetArena());
+  }
+  if (from._internal_has_user_info()) {
+    user_info_ = new ::Chat::MsgChatUserInfo(*from.user_info_);
+  } else {
+    user_info_ = nullptr;
+  }
+  index_ = from.index_;
+  // @@protoc_insertion_point(copy_constructor:Chat.MsgChatInfo)
+}
+
+void MsgChatInfo::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgChatInfo_Chat_2eproto.base);
+  msg_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&user_info_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&index_) -
+      reinterpret_cast<char*>(&user_info_)) + sizeof(index_));
+}
+
+MsgChatInfo::~MsgChatInfo() {
+  // @@protoc_insertion_point(destructor:Chat.MsgChatInfo)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void MsgChatInfo::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  msg_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (this != internal_default_instance()) delete user_info_;
+}
+
+void MsgChatInfo::ArenaDtor(void* object) {
+  MsgChatInfo* _this = reinterpret_cast< MsgChatInfo* >(object);
+  (void)_this;
+}
+void MsgChatInfo::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void MsgChatInfo::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const MsgChatInfo& MsgChatInfo::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgChatInfo_Chat_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void MsgChatInfo::Clear() {
+// @@protoc_insertion_point(message_clear_start:Chat.MsgChatInfo)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  msg_.ClearToEmpty();
+  if (GetArena() == nullptr && user_info_ != nullptr) {
+    delete user_info_;
+  }
+  user_info_ = nullptr;
+  index_ = 0;
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* MsgChatInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // .Chat.MsgChatUserInfo user_info = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_user_info(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string msg = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          auto str = _internal_mutable_msg();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "Chat.MsgChatInfo.msg"));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 index = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* MsgChatInfo::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:Chat.MsgChatInfo)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .Chat.MsgChatUserInfo user_info = 1;
+  if (this->has_user_info()) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        1, _Internal::user_info(this), target, stream);
+  }
+
+  // string msg = 2;
+  if (this->msg().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_msg().data(), static_cast<int>(this->_internal_msg().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Chat.MsgChatInfo.msg");
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_msg(), target);
+  }
+
+  // int32 index = 3;
+  if (this->index() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_index(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:Chat.MsgChatInfo)
+  return target;
+}
+
+size_t MsgChatInfo::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Chat.MsgChatInfo)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // string msg = 2;
+  if (this->msg().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_msg());
+  }
+
+  // .Chat.MsgChatUserInfo user_info = 1;
+  if (this->has_user_info()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *user_info_);
+  }
+
+  // int32 index = 3;
+  if (this->index() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_index());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void MsgChatInfo::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:Chat.MsgChatInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  const MsgChatInfo* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgChatInfo>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Chat.MsgChatInfo)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:Chat.MsgChatInfo)
+    MergeFrom(*source);
+  }
+}
+
+void MsgChatInfo::MergeFrom(const MsgChatInfo& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Chat.MsgChatInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.msg().size() > 0) {
+    _internal_set_msg(from._internal_msg());
+  }
+  if (from.has_user_info()) {
+    _internal_mutable_user_info()->::Chat::MsgChatUserInfo::MergeFrom(from._internal_user_info());
+  }
+  if (from.index() != 0) {
+    _internal_set_index(from._internal_index());
+  }
+}
+
+void MsgChatInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:Chat.MsgChatInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void MsgChatInfo::CopyFrom(const MsgChatInfo& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Chat.MsgChatInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool MsgChatInfo::IsInitialized() const {
+  return true;
+}
+
+void MsgChatInfo::InternalSwap(MsgChatInfo* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  msg_.Swap(&other->msg_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(MsgChatInfo, index_)
+      + sizeof(MsgChatInfo::index_)
+      - PROTOBUF_FIELD_OFFSET(MsgChatInfo, user_info_)>(
+          reinterpret_cast<char*>(&user_info_),
+          reinterpret_cast<char*>(&other->user_info_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata MsgChatInfo::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class MsgChatHistoryResp::_Internal {
+ public:
+};
+
+MsgChatHistoryResp::MsgChatHistoryResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  info_(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:Chat.MsgChatHistoryResp)
+}
+MsgChatHistoryResp::MsgChatHistoryResp(const MsgChatHistoryResp& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      info_(from.info_) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  chat_type_ = from.chat_type_;
+  // @@protoc_insertion_point(copy_constructor:Chat.MsgChatHistoryResp)
+}
+
+void MsgChatHistoryResp::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgChatHistoryResp_Chat_2eproto.base);
+  chat_type_ = 0;
+}
+
+MsgChatHistoryResp::~MsgChatHistoryResp() {
+  // @@protoc_insertion_point(destructor:Chat.MsgChatHistoryResp)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void MsgChatHistoryResp::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void MsgChatHistoryResp::ArenaDtor(void* object) {
+  MsgChatHistoryResp* _this = reinterpret_cast< MsgChatHistoryResp* >(object);
+  (void)_this;
+}
+void MsgChatHistoryResp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void MsgChatHistoryResp::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const MsgChatHistoryResp& MsgChatHistoryResp::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgChatHistoryResp_Chat_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void MsgChatHistoryResp::Clear() {
+// @@protoc_insertion_point(message_clear_start:Chat.MsgChatHistoryResp)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  info_.Clear();
+  chat_type_ = 0;
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* MsgChatHistoryResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 chat_type = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          chat_type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated .Chat.MsgChatInfo info = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_info(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* MsgChatHistoryResp::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:Chat.MsgChatHistoryResp)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 chat_type = 1;
+  if (this->chat_type() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_chat_type(), target);
+  }
+
+  // repeated .Chat.MsgChatInfo info = 2;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_info_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(2, this->_internal_info(i), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:Chat.MsgChatHistoryResp)
+  return target;
+}
+
+size_t MsgChatHistoryResp::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Chat.MsgChatHistoryResp)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated .Chat.MsgChatInfo info = 2;
+  total_size += 1UL * this->_internal_info_size();
+  for (const auto& msg : this->info_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  // int32 chat_type = 1;
+  if (this->chat_type() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_chat_type());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void MsgChatHistoryResp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:Chat.MsgChatHistoryResp)
+  GOOGLE_DCHECK_NE(&from, this);
+  const MsgChatHistoryResp* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgChatHistoryResp>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Chat.MsgChatHistoryResp)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:Chat.MsgChatHistoryResp)
+    MergeFrom(*source);
+  }
+}
+
+void MsgChatHistoryResp::MergeFrom(const MsgChatHistoryResp& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Chat.MsgChatHistoryResp)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  info_.MergeFrom(from.info_);
+  if (from.chat_type() != 0) {
+    _internal_set_chat_type(from._internal_chat_type());
+  }
+}
+
+void MsgChatHistoryResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:Chat.MsgChatHistoryResp)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void MsgChatHistoryResp::CopyFrom(const MsgChatHistoryResp& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Chat.MsgChatHistoryResp)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool MsgChatHistoryResp::IsInitialized() const {
+  return true;
+}
+
+void MsgChatHistoryResp::InternalSwap(MsgChatHistoryResp* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  info_.InternalSwap(&other->info_);
+  swap(chat_type_, other->chat_type_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata MsgChatHistoryResp::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace Chat
 PROTOBUF_NAMESPACE_OPEN
@@ -1398,6 +2226,15 @@ template<> PROTOBUF_NOINLINE ::Chat::MsgChatLoginResp* Arena::CreateMaybeMessage
 }
 template<> PROTOBUF_NOINLINE ::Chat::MsgSyncUserInfo* Arena::CreateMaybeMessage< ::Chat::MsgSyncUserInfo >(Arena* arena) {
   return Arena::CreateMessageInternal< ::Chat::MsgSyncUserInfo >(arena);
+}
+template<> PROTOBUF_NOINLINE ::Chat::MsgChatHistory* Arena::CreateMaybeMessage< ::Chat::MsgChatHistory >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::Chat::MsgChatHistory >(arena);
+}
+template<> PROTOBUF_NOINLINE ::Chat::MsgChatInfo* Arena::CreateMaybeMessage< ::Chat::MsgChatInfo >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::Chat::MsgChatInfo >(arena);
+}
+template<> PROTOBUF_NOINLINE ::Chat::MsgChatHistoryResp* Arena::CreateMaybeMessage< ::Chat::MsgChatHistoryResp >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::Chat::MsgChatHistoryResp >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

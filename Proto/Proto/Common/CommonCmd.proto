@@ -163,4 +163,7 @@ enum EMsgIDChat
 	MsgIDChat_NotifyChatTrumpetMsgResp	= 2007;		//发送小喇叭消息返回(MsgNotifyChatTrumpetMsg)
 	MsgIDChat_SyncUserInfoResp			= 2008;		//同步玩家信息(MsgSyncUserInfo)
 	MsgIDChat_SetLilitChatResp			= 2009;		//设置限制聊天返回(MsgCommonN32)
+	MsgIDChat_GetChatHistory			= 2010;		//获取聊天历史记录(MsgChatHistory)
+	MsgIDChat_GetChatHistoryResp		= 2011;		//获取聊天历史记录返回(MsgChatHistoryResp)
+	
 }
