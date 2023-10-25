@@ -61,37 +61,38 @@ namespace TeenPattiAK47 {
             "CmNvbXBhcmVfaWQYBCABKAUSEgoKcGFzc2l2ZV9pZBgFIAEoBRI1Cg1jb21w",
             "YXJlX2NhcmRzGAYgASgLMh4uVGVlblBhdHRpX0FLNDcuQUtNc2dIYW5kQ2Fy",
             "ZHMSNQoNcGFzc2l2ZV9jYXJkcxgHIAEoCzIeLlRlZW5QYXR0aV9BSzQ3LkFL",
-            "TXNnSGFuZENhcmRzEhAKCGlzX2FncmVlGAggASgIIoABCg9BS01zZ0dhbWVS",
+            "TXNnSGFuZENhcmRzEhAKCGlzX2FncmVlGAggASgIIpoBCg9BS01zZ0dhbWVS",
             "ZXN1bHQSEAoIZ2FtZV90YXgYASABKAUSEgoKZ2FtZV9zY29yZRgCIAMoAxI0",
             "CgxwbGF5ZXJfaGFuZHMYAyADKAsyHi5UZWVuUGF0dGlfQUs0Ny5BS01zZ0hh",
-            "bmRDYXJkcxIRCgllbmRfc3RhdGUYBCABKAUiNQoUQUtNc2dOb3RpZnlQbGF5",
-            "ZXJBY3QSEAoIY2hhaXJfaWQYASABKAUSCwoDYWN0GAIgASgFKmcKDEVBS0dh",
-            "bWVTdGF0ZRIPCgtHU19UUF9SRUFEWRAAEg4KCkdTX1RQX0RFQUwQARIRCg1H",
-            "U19UUF9QTEFZSU5HEAISEQoNR1NfVFBfQ09NUEFSRRADEhAKDEdTX1RQX1JF",
-            "U1VMVBAEKlUKDkVBS1BsYXllclN0YXRlEgwKCFBTX1JFQURZEAASCwoHUFNf",
-            "UExBWRABEgsKB1BTX0dJVkUQAhILCgdQU19GQUlMEAMSDgoKUFNfVElNRU9V",
-            "VBAEKocBCgtFQUtDYXJkVHlwZRINCglDVF9TSU5HTEUQABINCglDVF9ET1VC",
-            "TEUQARIOCgpDVF9KSU5fSFVBEAISDgoKQ1RfU0hVTl9aSRADEg8KC0NUX1NI",
-            "VU5fSklOEAQSDQoJQ1RfQkFPX1pJEAUSDgoKQ1RfU1BFQ0lBTBAGEgoKBkNU",
-            "X01BWBAHKoQBCg1FQUtHYW1lQWN0aW9uEg0KCUludmFsZEFjdBAAEgoKBkdp",
-            "dmVVcBABEgwKCExvb2tDYXJkEAISCwoHQ2FsbEJldBAEEgoKBkFkZEJldBAI",
-            "Eg8KC0NvbXBhcmVDYXJkEBASEAoMQ29tcGFyZVJlcGx5ECASDgoKQWxsQ29t",
-            "cGFyZRBAKr8FCg9FQUtNc2dJRFN1YkdhbWUSFQoRTXNnSURTdWJHYW1lX051",
-            "bGwQABIeChpNc2dJRFN1YkdhbWVfR2FtZVN0YXJ0UmVzcBABEiEKHU1zZ0lE",
-            "U3ViR2FtZV9Ob3RpZnlBY3Rpb25SZXNwEAISFwoTTXNnSURTdWJHYW1lX0Fj",
-            "dGlvbhADEhsKF01zZ0lEU3ViR2FtZV9HaXZlVXBSZXNwEAQSGQoVTXNnSURT",
-            "dWJHYW1lX0xvb2tDYXJkEAUSGwoXTXNnSURTdWJHYW1lX0FkZEJldFJlc3AQ",
-            "BhIgChxNc2dJRFN1YkdhbWVfQ29tcGFyZUNhcmRSZXNwEAcSHwobTXNnSURT",
-            "dWJHYW1lX0NvbXBhcmVSZXRSZXNwEAgSHwobTXNnSURTdWJHYW1lX0dhbWVS",
-            "ZXN1bHRSZXNwEAkSIAocTXNnSURTdWJHYW1lX05vdGlmeVN0YXRlUmVzcBAK",
-            "EhwKGE1zZ0lEU3ViR2FtZV9UaW1lT3V0UmVzcBALEh0KGU1zZ0lEU3ViR2Ft",
-            "ZV9UaW1lT3V0UmVhZHkQDBIhCh1Nc2dJRFN1YkdhbWVfVGltZU91dFJlYWR5",
-            "UmVzcBANEiAKHE1zZ0lEU3ViR2FtZV9UaW1lT3V0S2lja1Jlc3AQDhImCiJN",
-            "c2dJRFN1YkdhbWVfTm90aWZ5U3lzdGVtQ2hlYXRSZXNwEBQSIwofTXNnSURT",
-            "dWJHYW1lX05vdGlmeUNhcmRUeXBlUmVzcBAVEiAKHE1zZ0lEU3ViR2FtZV9O",
-            "b3RpZnlJc01heFJlc3AQFhInCiNNc2dJRFN1YkdhbWVfTm90aWZ5UmVtYWlu",
-            "RG91YmxlUmVzcBAXEiAKHE1zZ0lEU3ViR2FtZV9Ob3RpZnlSb3VuZFJlc3AQ",
-            "GBIiCh5Nc2dJRFN1YkdhbWVfTm90aWZ5TGFzdEFjdFJlc3AQGWIGcHJvdG8z"));
+            "bmRDYXJkcxIRCgllbmRfc3RhdGUYBCABKAUSGAoQcGxheWVyX25ld19zY29y",
+            "ZRgGIAMoAyI1ChRBS01zZ05vdGlmeVBsYXllckFjdBIQCghjaGFpcl9pZBgB",
+            "IAEoBRILCgNhY3QYAiABKAUqZwoMRUFLR2FtZVN0YXRlEg8KC0dTX1RQX1JF",
+            "QURZEAASDgoKR1NfVFBfREVBTBABEhEKDUdTX1RQX1BMQVlJTkcQAhIRCg1H",
+            "U19UUF9DT01QQVJFEAMSEAoMR1NfVFBfUkVTVUxUEAQqVQoORUFLUGxheWVy",
+            "U3RhdGUSDAoIUFNfUkVBRFkQABILCgdQU19QTEFZEAESCwoHUFNfR0lWRRAC",
+            "EgsKB1BTX0ZBSUwQAxIOCgpQU19USU1FT1VUEAQqhwEKC0VBS0NhcmRUeXBl",
+            "Eg0KCUNUX1NJTkdMRRAAEg0KCUNUX0RPVUJMRRABEg4KCkNUX0pJTl9IVUEQ",
+            "AhIOCgpDVF9TSFVOX1pJEAMSDwoLQ1RfU0hVTl9KSU4QBBINCglDVF9CQU9f",
+            "WkkQBRIOCgpDVF9TUEVDSUFMEAYSCgoGQ1RfTUFYEAcqhAEKDUVBS0dhbWVB",
+            "Y3Rpb24SDQoJSW52YWxkQWN0EAASCgoGR2l2ZVVwEAESDAoITG9va0NhcmQQ",
+            "AhILCgdDYWxsQmV0EAQSCgoGQWRkQmV0EAgSDwoLQ29tcGFyZUNhcmQQEBIQ",
+            "CgxDb21wYXJlUmVwbHkQIBIOCgpBbGxDb21wYXJlEEAqvwUKD0VBS01zZ0lE",
+            "U3ViR2FtZRIVChFNc2dJRFN1YkdhbWVfTnVsbBAAEh4KGk1zZ0lEU3ViR2Ft",
+            "ZV9HYW1lU3RhcnRSZXNwEAESIQodTXNnSURTdWJHYW1lX05vdGlmeUFjdGlv",
+            "blJlc3AQAhIXChNNc2dJRFN1YkdhbWVfQWN0aW9uEAMSGwoXTXNnSURTdWJH",
+            "YW1lX0dpdmVVcFJlc3AQBBIZChVNc2dJRFN1YkdhbWVfTG9va0NhcmQQBRIb",
+            "ChdNc2dJRFN1YkdhbWVfQWRkQmV0UmVzcBAGEiAKHE1zZ0lEU3ViR2FtZV9D",
+            "b21wYXJlQ2FyZFJlc3AQBxIfChtNc2dJRFN1YkdhbWVfQ29tcGFyZVJldFJl",
+            "c3AQCBIfChtNc2dJRFN1YkdhbWVfR2FtZVJlc3VsdFJlc3AQCRIgChxNc2dJ",
+            "RFN1YkdhbWVfTm90aWZ5U3RhdGVSZXNwEAoSHAoYTXNnSURTdWJHYW1lX1Rp",
+            "bWVPdXRSZXNwEAsSHQoZTXNnSURTdWJHYW1lX1RpbWVPdXRSZWFkeRAMEiEK",
+            "HU1zZ0lEU3ViR2FtZV9UaW1lT3V0UmVhZHlSZXNwEA0SIAocTXNnSURTdWJH",
+            "YW1lX1RpbWVPdXRLaWNrUmVzcBAOEiYKIk1zZ0lEU3ViR2FtZV9Ob3RpZnlT",
+            "eXN0ZW1DaGVhdFJlc3AQFBIjCh9Nc2dJRFN1YkdhbWVfTm90aWZ5Q2FyZFR5",
+            "cGVSZXNwEBUSIAocTXNnSURTdWJHYW1lX05vdGlmeUlzTWF4UmVzcBAWEicK",
+            "I01zZ0lEU3ViR2FtZV9Ob3RpZnlSZW1haW5Eb3VibGVSZXNwEBcSIAocTXNn",
+            "SURTdWJHYW1lX05vdGlmeVJvdW5kUmVzcBAYEiIKHk1zZ0lEU3ViR2FtZV9O",
+            "b3RpZnlMYXN0QWN0UmVzcBAZYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::TeenPattiAK47.EAKGameState), typeof(global::TeenPattiAK47.EAKPlayerState), typeof(global::TeenPattiAK47.EAKCardType), typeof(global::TeenPattiAK47.EAKGameAction), typeof(global::TeenPattiAK47.EAKMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -107,7 +108,7 @@ namespace TeenPattiAK47 {
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiAK47.AKMsgAddBetResp), global::TeenPattiAK47.AKMsgAddBetResp.Parser, new[]{ "AddChairId", "AddScore", "BetType" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiAK47.AKMsgCompareCardResp), global::TeenPattiAK47.AKMsgCompareCardResp.Parser, new[]{ "ChairId", "CompareId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiAK47.AKMsgCompareCardRetResp), global::TeenPattiAK47.AKMsgCompareCardRetResp.Parser, new[]{ "CurrentChairId", "CurrentAct", "LostId", "CompareId", "PassiveId", "CompareCards", "PassiveCards", "IsAgree" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiAK47.AKMsgGameResult), global::TeenPattiAK47.AKMsgGameResult.Parser, new[]{ "GameTax", "GameScore", "PlayerHands", "EndState" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiAK47.AKMsgGameResult), global::TeenPattiAK47.AKMsgGameResult.Parser, new[]{ "GameTax", "GameScore", "PlayerHands", "EndState", "PlayerNewScore" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::TeenPattiAK47.AKMsgNotifyPlayerAct), global::TeenPattiAK47.AKMsgNotifyPlayerAct.Parser, new[]{ "ChairId", "Act" }, null, null, null, null)
           }));
     }
@@ -4438,6 +4439,7 @@ namespace TeenPattiAK47 {
       gameScore_ = other.gameScore_.Clone();
       playerHands_ = other.playerHands_.Clone();
       endState_ = other.endState_;
+      playerNewScore_ = other.playerNewScore_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -4500,6 +4502,19 @@ namespace TeenPattiAK47 {
       }
     }
 
+    /// <summary>Field number for the "player_new_score" field.</summary>
+    public const int PlayerNewScoreFieldNumber = 6;
+    private static readonly pb::FieldCodec<long> _repeated_playerNewScore_codec
+        = pb::FieldCodec.ForInt64(50);
+    private readonly pbc::RepeatedField<long> playerNewScore_ = new pbc::RepeatedField<long>();
+    /// <summary>
+    ///玩家最新金币
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<long> PlayerNewScore {
+      get { return playerNewScore_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as AKMsgGameResult);
@@ -4517,6 +4532,7 @@ namespace TeenPattiAK47 {
       if(!gameScore_.Equals(other.gameScore_)) return false;
       if(!playerHands_.Equals(other.playerHands_)) return false;
       if (EndState != other.EndState) return false;
+      if(!playerNewScore_.Equals(other.playerNewScore_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -4527,6 +4543,7 @@ namespace TeenPattiAK47 {
       hash ^= gameScore_.GetHashCode();
       hash ^= playerHands_.GetHashCode();
       if (EndState != 0) hash ^= EndState.GetHashCode();
+      hash ^= playerNewScore_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -4553,6 +4570,7 @@ namespace TeenPattiAK47 {
         output.WriteRawTag(32);
         output.WriteInt32(EndState);
       }
+      playerNewScore_.WriteTo(output, _repeated_playerNewScore_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -4572,6 +4590,7 @@ namespace TeenPattiAK47 {
         output.WriteRawTag(32);
         output.WriteInt32(EndState);
       }
+      playerNewScore_.WriteTo(ref output, _repeated_playerNewScore_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -4589,6 +4608,7 @@ namespace TeenPattiAK47 {
       if (EndState != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(EndState);
       }
+      size += playerNewScore_.CalculateSize(_repeated_playerNewScore_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -4608,6 +4628,7 @@ namespace TeenPattiAK47 {
       if (other.EndState != 0) {
         EndState = other.EndState;
       }
+      playerNewScore_.Add(other.playerNewScore_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -4639,6 +4660,11 @@ namespace TeenPattiAK47 {
             EndState = input.ReadInt32();
             break;
           }
+          case 50:
+          case 48: {
+            playerNewScore_.AddEntriesFrom(input, _repeated_playerNewScore_codec);
+            break;
+          }
         }
       }
     #endif
@@ -4668,6 +4694,11 @@ namespace TeenPattiAK47 {
           }
           case 32: {
             EndState = input.ReadInt32();
+            break;
+          }
+          case 50:
+          case 48: {
+            playerNewScore_.AddEntriesFrom(ref input, _repeated_playerNewScore_codec);
             break;
           }
         }

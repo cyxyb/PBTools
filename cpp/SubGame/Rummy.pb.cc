@@ -58,10 +58,6 @@ class RMMsgActionChoiceDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<RMMsgActionChoice> _instance;
 } _RMMsgActionChoice_default_instance_;
-class RMMsgGiveUpRespDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<RMMsgGiveUpResp> _instance;
-} _RMMsgGiveUpResp_default_instance_;
 class RMMsgGameResultDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<RMMsgGameResult> _instance;
@@ -126,9 +122,8 @@ static void InitDefaultsscc_info_RMMsgActionResp_Rummy_2eproto() {
   }
 }
 
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_RMMsgActionResp_Rummy_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_RMMsgActionResp_Rummy_2eproto}, {
-      &scc_info_RMColumnInfo_Rummy_2eproto.base,}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RMMsgActionResp_Rummy_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_RMMsgActionResp_Rummy_2eproto}, {}};
 
 static void InitDefaultsscc_info_RMMsgGameResult_Rummy_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -156,19 +151,6 @@ static void InitDefaultsscc_info_RMMsgGameStartResp_Rummy_2eproto() {
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RMMsgGameStartResp_Rummy_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_RMMsgGameStartResp_Rummy_2eproto}, {}};
-
-static void InitDefaultsscc_info_RMMsgGiveUpResp_Rummy_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::Rummy::_RMMsgGiveUpResp_default_instance_;
-    new (ptr) ::Rummy::RMMsgGiveUpResp();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RMMsgGiveUpResp_Rummy_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_RMMsgGiveUpResp_Rummy_2eproto}, {}};
 
 static void InitDefaultsscc_info_RMMsgHandCards_Rummy_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -263,7 +245,7 @@ static void InitDefaultsscc_info_RMMsgTableState_Rummy_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RMMsgTableState_Rummy_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_RMMsgTableState_Rummy_2eproto}, {}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Rummy_2eproto[14];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Rummy_2eproto[13];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_Rummy_2eproto[5];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_Rummy_2eproto = nullptr;
 
@@ -328,7 +310,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Rummy_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, max_score_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, cell_score_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, max_multiple_),
-  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, wild_card_),
+  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, joker_card_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, left_card_num_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, out_cards_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, play_index_),
@@ -360,10 +342,9 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Rummy_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgActionResp, act_type_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgActionResp, dest_card_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgActionResp, get_out_card_),
-  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgActionResp, dorp_multiple_),
+  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgActionResp, drop_multiple_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgActionResp, auto_action_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgActionResp, left_card_num_),
-  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgActionResp, hand_group_info_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgActionChoice, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -373,14 +354,6 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Rummy_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgActionChoice, is_determine_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgActionChoice, choices_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgActionChoice, determined_action_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGiveUpResp, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGiveUpResp, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGiveUpResp, loss_gold_),
-  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGiveUpResp, dorp_multiple_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameResult, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -414,11 +387,10 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 65, -1, sizeof(::Rummy::RMMsgNotifyActionResp)},
   { 73, -1, sizeof(::Rummy::RMMsgAction)},
   { 83, -1, sizeof(::Rummy::RMMsgActionResp)},
-  { 96, -1, sizeof(::Rummy::RMMsgActionChoice)},
-  { 105, -1, sizeof(::Rummy::RMMsgGiveUpResp)},
-  { 113, -1, sizeof(::Rummy::RMMsgGameResult)},
-  { 121, -1, sizeof(::Rummy::RMMsgNotifyTrusteeship)},
-  { 128, -1, sizeof(::Rummy::RMMsgNotifyPlayerAct)},
+  { 95, -1, sizeof(::Rummy::RMMsgActionChoice)},
+  { 104, -1, sizeof(::Rummy::RMMsgGameResult)},
+  { 112, -1, sizeof(::Rummy::RMMsgNotifyTrusteeship)},
+  { 119, -1, sizeof(::Rummy::RMMsgNotifyPlayerAct)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -432,7 +404,6 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Rummy::_RMMsgAction_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Rummy::_RMMsgActionResp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Rummy::_RMMsgActionChoice_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Rummy::_RMMsgGiveUpResp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Rummy::_RMMsgGameResult_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Rummy::_RMMsgNotifyTrusteeship_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Rummy::_RMMsgNotifyPlayerAct_default_instance_),
@@ -455,71 +426,65 @@ const char descriptor_table_protodef_Rummy_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "ime\030\t \001(\005\022\022\n\njoker_card\030\n \001(\005\022\030\n\020surplus"
   "_card_num\030\013 \001(\005\022\021\n\tout_cards\030\014 \003(\005\022,\n\014pl"
   "ayer_infos\030\r \003(\0132\026.Rummy.RMMsgPlayerInfo"
-  "\"\340\001\n\022RMMsgGameStartResp\022\024\n\014cur_chair_id\030"
+  "\"\341\001\n\022RMMsgGameStartResp\022\024\n\014cur_chair_id\030"
   "\001 \001(\005\022\027\n\017banker_chair_id\030\002 \001(\005\022\021\n\tmax_sc"
   "ore\030\003 \001(\003\022\022\n\ncell_score\030\004 \001(\003\022\024\n\014max_mul"
-  "tiple\030\005 \001(\003\022\021\n\twild_card\030\n \001(\005\022\025\n\rleft_c"
-  "ard_num\030\013 \001(\005\022\021\n\tout_cards\030\014 \003(\005\022\022\n\nplay"
-  "_index\030\r \003(\005\022\r\n\005cards\030\017 \003(\005\"U\n\025RMMsgNoti"
-  "fyActionResp\022\024\n\014cur_chair_id\030\001 \001(\005\022\023\n\013cu"
-  "rrent_act\030\003 \001(\005\022\021\n\toper_time\030\004 \001(\005\"\210\001\n\013R"
-  "MMsgAction\022\020\n\010chair_id\030\001 \001(\005\022\020\n\010act_type"
-  "\030\002 \001(\005\022\021\n\tdest_card\030\003 \001(\005\022\024\n\014get_out_car"
-  "d\030\004 \001(\010\022,\n\017hand_group_info\030\005 \003(\0132\023.Rummy"
-  ".RMColumnInfo\"\317\001\n\017RMMsgActionResp\022\020\n\010cha"
-  "ir_id\030\001 \001(\005\022\020\n\010act_type\030\002 \001(\005\022\021\n\tdest_ca"
-  "rd\030\003 \001(\005\022\024\n\014get_out_card\030\004 \001(\010\022\025\n\rdorp_m"
-  "ultiple\030\006 \001(\r\022\023\n\013auto_action\030\007 \001(\010\022\025\n\rle"
-  "ft_card_num\030\t \001(\005\022,\n\017hand_group_info\030\n \003"
-  "(\0132\023.Rummy.RMColumnInfo\"\227\001\n\021RMMsgActionC"
-  "hoice\022\030\n\020determined_level\030\001 \001(\005\022\024\n\014is_de"
-  "termine\030\002 \001(\010\022#\n\007choices\030\003 \003(\0132\022.Rummy.R"
-  "MMsgAction\022-\n\021determined_action\030\004 \001(\0132\022."
-  "Rummy.RMMsgAction\"M\n\017RMMsgGiveUpResp\022\020\n\010"
-  "chair_id\030\001 \001(\005\022\021\n\tloss_gold\030\002 \001(\005\022\025\n\rdor"
-  "p_multiple\030\003 \001(\r\"c\n\017RMMsgGameResult\022\020\n\010g"
-  "ame_tax\030\001 \001(\005\022+\n\013player_info\030\002 \003(\0132\026.Rum"
-  "my.RMMsgPlayerInfo\022\021\n\tend_state\030\003 \001(\005\"D\n"
-  "\026RMMsgNotifyTrusteeship\022\022\n\nseat_index\030\001 "
-  "\001(\005\022\026\n\016is_trusteeship\030\002 \001(\010\"5\n\024RMMsgNoti"
-  "fyPlayerAct\022\020\n\010chair_id\030\001 \001(\005\022\013\n\003act\030\002 \001"
-  "(\005*d\n\014ERMGameState\022\017\n\013GS_TP_READY\020\000\022\016\n\nG"
-  "S_TP_DEAL\020\001\022\021\n\rGS_TP_PLAYING\020\002\022\016\n\nGS_TP_"
-  "SHOW\020\003\022\020\n\014GS_TP_RESULT\020\004*B\n\013PlayerState\022"
-  "\014\n\010PS_READY\020\000\022\013\n\007PS_PLAY\020\001\022\013\n\007PS_GIVE\020\002\022"
-  "\013\n\007PS_FAIL\020\003*b\n\rERMGameAction\022\r\n\tInvaldA"
-  "ct\020\000\022\014\n\010DropCard\020\001\022\n\n\006NaCard\020\002\022\013\n\007ChuCar"
-  "d\020\004\022\r\n\tSortsCard\020\010\022\014\n\010ShowCard\020\020*b\n\016ERMC"
-  "olCardType\022\016\n\nCOL_SINGLE\020\000\022\016\n\nCOL_BAO_ZI"
-  "\020\001\022\020\n\014COL_SHUN_ZHI\020\002\022\021\n\rCOL_QING_SHUN\020\003\022"
-  "\013\n\007COL_MAX\020\004*\211\005\n\017ERMMsgIDSubGame\022\025\n\021MsgI"
-  "DSubGame_Null\020\000\022\036\n\032MsgIDSubGame_GameStar"
-  "tResp\020\001\022!\n\035MsgIDSubGame_NotifyActionResp"
-  "\020\002\022\027\n\023MsgIDSubGame_Action\020\003\022\033\n\027MsgIDSubG"
-  "ame_ActionResp\020\004\022\033\n\027MsgIDSubGame_GiveUpR"
-  "esp\020\005\022\037\n\033MsgIDSubGame_GameResultResp\020\006\022 "
-  "\n\034MsgIDSubGame_NotifyStateResp\020\n\022\034\n\030MsgI"
-  "DSubGame_TimeOutResp\020\013\022\035\n\031MsgIDSubGame_T"
-  "imeOutReady\020\014\022!\n\035MsgIDSubGame_TimeOutRea"
-  "dyResp\020\r\022 \n\034MsgIDSubGame_TimeOutKickResp"
-  "\020\016\022&\n\"MsgIDSubGame_NotifyTrusteeshipResp"
-  "\020\017\022&\n\"MsgIDSubGame_NotifySystemCheatResp"
-  "\020\024\022#\n\037MsgIDSubGame_NotifyCardTypeResp\020\025\022"
-  " \n\034MsgIDSubGame_NotifyIsMaxResp\020\026\022\'\n#Msg"
-  "IDSubGame_NotifyRemainDoubleResp\020\027\022 \n\034Ms"
-  "gIDSubGame_NotifyRoundResp\020\030\022\"\n\036MsgIDSub"
-  "Game_NotifyLastActResp\020\031b\006proto3"
+  "tiple\030\005 \001(\003\022\022\n\njoker_card\030\n \001(\005\022\025\n\rleft_"
+  "card_num\030\013 \001(\005\022\021\n\tout_cards\030\014 \003(\005\022\022\n\npla"
+  "y_index\030\r \003(\005\022\r\n\005cards\030\017 \003(\005\"U\n\025RMMsgNot"
+  "ifyActionResp\022\024\n\014cur_chair_id\030\001 \001(\005\022\023\n\013c"
+  "urrent_act\030\003 \001(\005\022\021\n\toper_time\030\004 \001(\005\"\210\001\n\013"
+  "RMMsgAction\022\020\n\010chair_id\030\001 \001(\005\022\020\n\010act_typ"
+  "e\030\002 \001(\005\022\021\n\tdest_card\030\003 \001(\005\022\024\n\014get_out_ca"
+  "rd\030\004 \001(\010\022,\n\017hand_group_info\030\005 \003(\0132\023.Rumm"
+  "y.RMColumnInfo\"\241\001\n\017RMMsgActionResp\022\020\n\010ch"
+  "air_id\030\001 \001(\005\022\020\n\010act_type\030\002 \001(\005\022\021\n\tdest_c"
+  "ard\030\003 \001(\005\022\024\n\014get_out_card\030\004 \001(\010\022\025\n\rdrop_"
+  "multiple\030\006 \001(\r\022\023\n\013auto_action\030\007 \001(\010\022\025\n\rl"
+  "eft_card_num\030\t \001(\005\"\227\001\n\021RMMsgActionChoice"
+  "\022\030\n\020determined_level\030\001 \001(\005\022\024\n\014is_determi"
+  "ne\030\002 \001(\010\022#\n\007choices\030\003 \003(\0132\022.Rummy.RMMsgA"
+  "ction\022-\n\021determined_action\030\004 \001(\0132\022.Rummy"
+  ".RMMsgAction\"c\n\017RMMsgGameResult\022\020\n\010game_"
+  "tax\030\001 \001(\005\022+\n\013player_info\030\002 \003(\0132\026.Rummy.R"
+  "MMsgPlayerInfo\022\021\n\tend_state\030\003 \001(\005\"D\n\026RMM"
+  "sgNotifyTrusteeship\022\022\n\nseat_index\030\001 \001(\005\022"
+  "\026\n\016is_trusteeship\030\002 \001(\010\"5\n\024RMMsgNotifyPl"
+  "ayerAct\022\020\n\010chair_id\030\001 \001(\005\022\013\n\003act\030\002 \001(\005*d"
+  "\n\014ERMGameState\022\017\n\013GS_TP_READY\020\000\022\016\n\nGS_TP"
+  "_DEAL\020\001\022\021\n\rGS_TP_PLAYING\020\002\022\016\n\nGS_TP_SHOW"
+  "\020\003\022\020\n\014GS_TP_RESULT\020\004*d\n\013PlayerState\022\014\n\010P"
+  "S_READY\020\000\022\013\n\007PS_PLAY\020\001\022\013\n\007PS_GIVE\020\002\022\013\n\007P"
+  "S_FAIL\020\003\022\020\n\014PS_SORT_CARD\020\004\022\016\n\nPS_SHOW_HU"
+  "\020\005*b\n\rERMGameAction\022\r\n\tInvaldAct\020\000\022\014\n\010Dr"
+  "opCard\020\001\022\n\n\006NaCard\020\002\022\013\n\007ChuCard\020\004\022\r\n\tSor"
+  "tsCard\020\010\022\014\n\010ShowCard\020\020*b\n\016ERMColCardType"
+  "\022\016\n\nCOL_SINGLE\020\000\022\016\n\nCOL_BAO_ZI\020\001\022\020\n\014COL_"
+  "SHUN_ZHI\020\002\022\021\n\rCOL_QING_SHUN\020\003\022\013\n\007COL_MAX"
+  "\020\004*\241\004\n\017ERMMsgIDSubGame\022\025\n\021MsgIDSubGame_N"
+  "ull\020\000\022\036\n\032MsgIDSubGame_GameStartResp\020\001\022!\n"
+  "\035MsgIDSubGame_NotifyActionResp\020\002\022\027\n\023MsgI"
+  "DSubGame_Action\020\003\022\033\n\027MsgIDSubGame_Action"
+  "Resp\020\004\022\037\n\033MsgIDSubGame_GameResultResp\020\005\022"
+  " \n\034MsgIDSubGame_NotifyStateResp\020\006\022\034\n\030Msg"
+  "IDSubGame_TimeOutResp\020\013\022\035\n\031MsgIDSubGame_"
+  "TimeOutReady\020\014\022!\n\035MsgIDSubGame_TimeOutRe"
+  "adyResp\020\r\022 \n\034MsgIDSubGame_TimeOutKickRes"
+  "p\020\016\022&\n\"MsgIDSubGame_NotifyTrusteeshipRes"
+  "p\020\017\022&\n\"MsgIDSubGame_NotifySystemCheatRes"
+  "p\020\024\022#\n\037MsgIDSubGame_NotifyNextCardResp\020\025"
+  "\022 \n\034MsgIDSubGame_NotifyIsMaxResp\020\026\022\"\n\036Ms"
+  "gIDSubGame_NotifyLastActResp\020\031b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Rummy_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Rummy_2eproto_sccs[14] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Rummy_2eproto_sccs[13] = {
   &scc_info_RMColumnInfo_Rummy_2eproto.base,
   &scc_info_RMMsgAction_Rummy_2eproto.base,
   &scc_info_RMMsgActionChoice_Rummy_2eproto.base,
   &scc_info_RMMsgActionResp_Rummy_2eproto.base,
   &scc_info_RMMsgGameResult_Rummy_2eproto.base,
   &scc_info_RMMsgGameStartResp_Rummy_2eproto.base,
-  &scc_info_RMMsgGiveUpResp_Rummy_2eproto.base,
   &scc_info_RMMsgHandCards_Rummy_2eproto.base,
   &scc_info_RMMsgNotifyActionResp_Rummy_2eproto.base,
   &scc_info_RMMsgNotifyPlayerAct_Rummy_2eproto.base,
@@ -530,10 +495,10 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Rum
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Rummy_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Rummy_2eproto = {
-  false, false, descriptor_table_protodef_Rummy_2eproto, "Rummy.proto", 2792,
-  &descriptor_table_Rummy_2eproto_once, descriptor_table_Rummy_2eproto_sccs, descriptor_table_Rummy_2eproto_deps, 14, 0,
+  false, false, descriptor_table_protodef_Rummy_2eproto, "Rummy.proto", 2598,
+  &descriptor_table_Rummy_2eproto_once, descriptor_table_Rummy_2eproto_sccs, descriptor_table_Rummy_2eproto_deps, 13, 0,
   schemas, file_default_instances, TableStruct_Rummy_2eproto::offsets,
-  file_level_metadata_Rummy_2eproto, 14, file_level_enum_descriptors_Rummy_2eproto, file_level_service_descriptors_Rummy_2eproto,
+  file_level_metadata_Rummy_2eproto, 13, file_level_enum_descriptors_Rummy_2eproto, file_level_service_descriptors_Rummy_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -566,6 +531,8 @@ bool PlayerState_IsValid(int value) {
     case 1:
     case 2:
     case 3:
+    case 4:
+    case 5:
       return true;
     default:
       return false;
@@ -620,7 +587,6 @@ bool ERMMsgIDSubGame_IsValid(int value) {
     case 4:
     case 5:
     case 6:
-    case 10:
     case 11:
     case 12:
     case 13:
@@ -629,8 +595,6 @@ bool ERMMsgIDSubGame_IsValid(int value) {
     case 20:
     case 21:
     case 22:
-    case 23:
-    case 24:
     case 25:
       return true;
     default:
@@ -2313,10 +2277,10 @@ const char* RMMsgGameStartResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 wild_card = 10;
+      // int32 joker_card = 10;
       case 10:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
-          wild_card_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          joker_card_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2415,10 +2379,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_max_multiple(), target);
   }
 
-  // int32 wild_card = 10;
-  if (this->wild_card() != 0) {
+  // int32 joker_card = 10;
+  if (this->joker_card() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(10, this->_internal_wild_card(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(10, this->_internal_joker_card(), target);
   }
 
   // int32 left_card_num = 11;
@@ -2550,11 +2514,11 @@ size_t RMMsgGameStartResp::ByteSizeLong() const {
         this->_internal_max_multiple());
   }
 
-  // int32 wild_card = 10;
-  if (this->wild_card() != 0) {
+  // int32 joker_card = 10;
+  if (this->joker_card() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_wild_card());
+        this->_internal_joker_card());
   }
 
   // int32 left_card_num = 11;
@@ -2613,8 +2577,8 @@ void RMMsgGameStartResp::MergeFrom(const RMMsgGameStartResp& from) {
   if (from.max_multiple() != 0) {
     _internal_set_max_multiple(from._internal_max_multiple());
   }
-  if (from.wild_card() != 0) {
-    _internal_set_wild_card(from._internal_wild_card());
+  if (from.joker_card() != 0) {
+    _internal_set_joker_card(from._internal_joker_card());
   }
   if (from.left_card_num() != 0) {
     _internal_set_left_card_num(from._internal_left_card_num());
@@ -3223,15 +3187,13 @@ class RMMsgActionResp::_Internal {
 };
 
 RMMsgActionResp::RMMsgActionResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  hand_group_info_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:Rummy.RMMsgActionResp)
 }
 RMMsgActionResp::RMMsgActionResp(const RMMsgActionResp& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      hand_group_info_(from.hand_group_info_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&chair_id_, &from.chair_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&left_card_num_) -
@@ -3240,7 +3202,6 @@ RMMsgActionResp::RMMsgActionResp(const RMMsgActionResp& from)
 }
 
 void RMMsgActionResp::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_RMMsgActionResp_Rummy_2eproto.base);
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&chair_id_) - reinterpret_cast<char*>(this)),
       0, static_cast<size_t>(reinterpret_cast<char*>(&left_card_num_) -
@@ -3278,7 +3239,6 @@ void RMMsgActionResp::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  hand_group_info_.Clear();
   ::memset(&chair_id_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&left_card_num_) -
       reinterpret_cast<char*>(&chair_id_)) + sizeof(left_card_num_));
@@ -3320,10 +3280,10 @@ const char* RMMsgActionResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // uint32 dorp_multiple = 6;
+      // uint32 drop_multiple = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
-          dorp_multiple_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          drop_multiple_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -3339,18 +3299,6 @@ const char* RMMsgActionResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
           left_card_num_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // repeated .Rummy.RMColumnInfo hand_group_info = 10;
-      case 10:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 82)) {
-          ptr -= 1;
-          do {
-            ptr += 1;
-            ptr = ctx->ParseMessage(_internal_add_hand_group_info(), ptr);
-            CHK_(ptr);
-            if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<82>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -3405,10 +3353,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(4, this->_internal_get_out_card(), target);
   }
 
-  // uint32 dorp_multiple = 6;
-  if (this->dorp_multiple() != 0) {
+  // uint32 drop_multiple = 6;
+  if (this->drop_multiple() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(6, this->_internal_dorp_multiple(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(6, this->_internal_drop_multiple(), target);
   }
 
   // bool auto_action = 7;
@@ -3421,14 +3369,6 @@ failure:
   if (this->left_card_num() != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(9, this->_internal_left_card_num(), target);
-  }
-
-  // repeated .Rummy.RMColumnInfo hand_group_info = 10;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_hand_group_info_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(10, this->_internal_hand_group_info(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -3446,13 +3386,6 @@ size_t RMMsgActionResp::ByteSizeLong() const {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
-
-  // repeated .Rummy.RMColumnInfo hand_group_info = 10;
-  total_size += 1UL * this->_internal_hand_group_info_size();
-  for (const auto& msg : this->hand_group_info_) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
-  }
 
   // int32 chair_id = 1;
   if (this->chair_id() != 0) {
@@ -3485,11 +3418,11 @@ size_t RMMsgActionResp::ByteSizeLong() const {
     total_size += 1 + 1;
   }
 
-  // uint32 dorp_multiple = 6;
-  if (this->dorp_multiple() != 0) {
+  // uint32 drop_multiple = 6;
+  if (this->drop_multiple() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_dorp_multiple());
+        this->_internal_drop_multiple());
   }
 
   // int32 left_card_num = 9;
@@ -3530,7 +3463,6 @@ void RMMsgActionResp::MergeFrom(const RMMsgActionResp& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  hand_group_info_.MergeFrom(from.hand_group_info_);
   if (from.chair_id() != 0) {
     _internal_set_chair_id(from._internal_chair_id());
   }
@@ -3546,8 +3478,8 @@ void RMMsgActionResp::MergeFrom(const RMMsgActionResp& from) {
   if (from.auto_action() != 0) {
     _internal_set_auto_action(from._internal_auto_action());
   }
-  if (from.dorp_multiple() != 0) {
-    _internal_set_dorp_multiple(from._internal_dorp_multiple());
+  if (from.drop_multiple() != 0) {
+    _internal_set_drop_multiple(from._internal_drop_multiple());
   }
   if (from.left_card_num() != 0) {
     _internal_set_left_card_num(from._internal_left_card_num());
@@ -3575,7 +3507,6 @@ bool RMMsgActionResp::IsInitialized() const {
 void RMMsgActionResp::InternalSwap(RMMsgActionResp* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  hand_group_info_.InternalSwap(&other->hand_group_info_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(RMMsgActionResp, left_card_num_)
       + sizeof(RMMsgActionResp::left_card_num_)
@@ -3885,258 +3816,6 @@ void RMMsgActionChoice::InternalSwap(RMMsgActionChoice* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata RMMsgActionChoice::GetMetadata() const {
-  return GetMetadataStatic();
-}
-
-
-// ===================================================================
-
-class RMMsgGiveUpResp::_Internal {
- public:
-};
-
-RMMsgGiveUpResp::RMMsgGiveUpResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:Rummy.RMMsgGiveUpResp)
-}
-RMMsgGiveUpResp::RMMsgGiveUpResp(const RMMsgGiveUpResp& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&chair_id_, &from.chair_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&dorp_multiple_) -
-    reinterpret_cast<char*>(&chair_id_)) + sizeof(dorp_multiple_));
-  // @@protoc_insertion_point(copy_constructor:Rummy.RMMsgGiveUpResp)
-}
-
-void RMMsgGiveUpResp::SharedCtor() {
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&chair_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&dorp_multiple_) -
-      reinterpret_cast<char*>(&chair_id_)) + sizeof(dorp_multiple_));
-}
-
-RMMsgGiveUpResp::~RMMsgGiveUpResp() {
-  // @@protoc_insertion_point(destructor:Rummy.RMMsgGiveUpResp)
-  SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-void RMMsgGiveUpResp::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-}
-
-void RMMsgGiveUpResp::ArenaDtor(void* object) {
-  RMMsgGiveUpResp* _this = reinterpret_cast< RMMsgGiveUpResp* >(object);
-  (void)_this;
-}
-void RMMsgGiveUpResp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
-void RMMsgGiveUpResp::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
-}
-const RMMsgGiveUpResp& RMMsgGiveUpResp::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_RMMsgGiveUpResp_Rummy_2eproto.base);
-  return *internal_default_instance();
-}
-
-
-void RMMsgGiveUpResp::Clear() {
-// @@protoc_insertion_point(message_clear_start:Rummy.RMMsgGiveUpResp)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  ::memset(&chair_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&dorp_multiple_) -
-      reinterpret_cast<char*>(&chair_id_)) + sizeof(dorp_multiple_));
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-const char* RMMsgGiveUpResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
-    switch (tag >> 3) {
-      // int32 chair_id = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          chair_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 loss_gold = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          loss_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // uint32 dorp_multiple = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          dorp_multiple_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
-    }  // switch
-  }  // while
-success:
-  return ptr;
-failure:
-  ptr = nullptr;
-  goto success;
-#undef CHK_
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* RMMsgGiveUpResp::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:Rummy.RMMsgGiveUpResp)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // int32 chair_id = 1;
-  if (this->chair_id() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_chair_id(), target);
-  }
-
-  // int32 loss_gold = 2;
-  if (this->loss_gold() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_loss_gold(), target);
-  }
-
-  // uint32 dorp_multiple = 3;
-  if (this->dorp_multiple() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(3, this->_internal_dorp_multiple(), target);
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:Rummy.RMMsgGiveUpResp)
-  return target;
-}
-
-size_t RMMsgGiveUpResp::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:Rummy.RMMsgGiveUpResp)
-  size_t total_size = 0;
-
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  // int32 chair_id = 1;
-  if (this->chair_id() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_chair_id());
-  }
-
-  // int32 loss_gold = 2;
-  if (this->loss_gold() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_loss_gold());
-  }
-
-  // uint32 dorp_multiple = 3;
-  if (this->dorp_multiple() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_dorp_multiple());
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
-}
-
-void RMMsgGiveUpResp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:Rummy.RMMsgGiveUpResp)
-  GOOGLE_DCHECK_NE(&from, this);
-  const RMMsgGiveUpResp* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<RMMsgGiveUpResp>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Rummy.RMMsgGiveUpResp)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:Rummy.RMMsgGiveUpResp)
-    MergeFrom(*source);
-  }
-}
-
-void RMMsgGiveUpResp::MergeFrom(const RMMsgGiveUpResp& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:Rummy.RMMsgGiveUpResp)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from.chair_id() != 0) {
-    _internal_set_chair_id(from._internal_chair_id());
-  }
-  if (from.loss_gold() != 0) {
-    _internal_set_loss_gold(from._internal_loss_gold());
-  }
-  if (from.dorp_multiple() != 0) {
-    _internal_set_dorp_multiple(from._internal_dorp_multiple());
-  }
-}
-
-void RMMsgGiveUpResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:Rummy.RMMsgGiveUpResp)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void RMMsgGiveUpResp::CopyFrom(const RMMsgGiveUpResp& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:Rummy.RMMsgGiveUpResp)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool RMMsgGiveUpResp::IsInitialized() const {
-  return true;
-}
-
-void RMMsgGiveUpResp::InternalSwap(RMMsgGiveUpResp* other) {
-  using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(RMMsgGiveUpResp, dorp_multiple_)
-      + sizeof(RMMsgGiveUpResp::dorp_multiple_)
-      - PROTOBUF_FIELD_OFFSET(RMMsgGiveUpResp, chair_id_)>(
-          reinterpret_cast<char*>(&chair_id_),
-          reinterpret_cast<char*>(&other->chair_id_));
-}
-
-::PROTOBUF_NAMESPACE_ID::Metadata RMMsgGiveUpResp::GetMetadata() const {
   return GetMetadataStatic();
 }
 
@@ -4891,9 +4570,6 @@ template<> PROTOBUF_NOINLINE ::Rummy::RMMsgActionResp* Arena::CreateMaybeMessage
 }
 template<> PROTOBUF_NOINLINE ::Rummy::RMMsgActionChoice* Arena::CreateMaybeMessage< ::Rummy::RMMsgActionChoice >(Arena* arena) {
   return Arena::CreateMessageInternal< ::Rummy::RMMsgActionChoice >(arena);
-}
-template<> PROTOBUF_NOINLINE ::Rummy::RMMsgGiveUpResp* Arena::CreateMaybeMessage< ::Rummy::RMMsgGiveUpResp >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::Rummy::RMMsgGiveUpResp >(arena);
 }
 template<> PROTOBUF_NOINLINE ::Rummy::RMMsgGameResult* Arena::CreateMaybeMessage< ::Rummy::RMMsgGameResult >(Arena* arena) {
   return Arena::CreateMessageInternal< ::Rummy::RMMsgGameResult >(arena);

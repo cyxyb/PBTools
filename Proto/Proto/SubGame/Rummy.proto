@@ -19,6 +19,8 @@ enum PlayerState
 	PS_PLAY			= 1;	//游戏
 	PS_GIVE			= 2;	//弃牌
 	PS_FAIL			= 3;	//失败
+	PS_SORT_CARD	= 4;	//理牌
+	PS_SHOW_HU		= 5;	//胡牌
 };
 
 //操作码
@@ -49,10 +51,8 @@ enum ERMMsgIDSubGame
 	MsgIDSubGame_NotifyActionResp		= 2;	//通知玩家操作(RMMsgNotifyActionResp)
 	MsgIDSubGame_Action					= 3;	//玩家操作(RMMsgAction)
 	MsgIDSubGame_ActionResp				= 4;	//玩家操作返回(RMMsgActionResp)
-	MsgIDSubGame_GiveUpResp				= 5;	//玩家弃牌返回(RMMsgGiveUpResp)
-	MsgIDSubGame_GameResultResp			= 6;	//结算(RMMsgGameResult)
-
-	MsgIDSubGame_NotifyStateResp		= 10;	//桌子状态(RMMsgTableState)
+	MsgIDSubGame_GameResultResp			= 5;	//结算(RMMsgGameResult)
+	MsgIDSubGame_NotifyStateResp		= 6;	//桌子状态(RMMsgTableState)
 
 	MsgIDSubGame_TimeOutResp			= 11;	//通知超时(MsgCommonBool)
 	MsgIDSubGame_TimeOutReady			= 12;	//重新准备(MsgCommonBool)
@@ -62,10 +62,8 @@ enum ERMMsgIDSubGame
 
 	/////////////////////////机器人消息///////////////////////
 	MsgIDSubGame_NotifySystemCheatResp	= 20;	//通知系统作弊率
-	MsgIDSubGame_NotifyCardTypeResp		= 21;	//通知牌型
+	MsgIDSubGame_NotifyNextCardResp		= 21;	//通知玩家人下一张牌
 	MsgIDSubGame_NotifyIsMaxResp		= 22;	//通知是否最大
-	MsgIDSubGame_NotifyRemainDoubleResp	= 23;	//是否剩2人
-	MsgIDSubGame_NotifyRoundResp		= 24;	//通知回合数
 	MsgIDSubGame_NotifyLastActResp		= 25;	//通知玩家行为
 }
 
@@ -128,7 +126,7 @@ message RMMsgGameStartResp
 	int64				cell_score		= 4;	//底分
 	int64				max_multiple	= 5;	//最大倍数
 
-	int32				wild_card		= 10;	//百搭牌
+	int32				joker_card		= 10;	//百搭牌
 	int32				left_card_num	= 11;	//牌堆牌数量
 	repeated int32		out_cards		= 12;	//失效牌
 
@@ -161,10 +159,10 @@ message RMMsgActionResp
 	int32					act_type		= 2;	//操作标示
 	int32					dest_card		= 3;	//目标牌
 	bool					get_out_card	= 4;	//是否拿最后一张了的牌
-	uint32					dorp_multiple	= 6;	//弃牌倍数
+	uint32					drop_multiple	= 6;	//弃牌倍数
 	bool 					auto_action		= 7;	//是否自动
 	int32					left_card_num	= 9;	//剩余牌堆数量
-	repeated RMColumnInfo 	hand_group_info	= 10;	//手牌分组
+	//repeated RMColumnInfo 	hand_group_info	= 10;	//手牌分组
 }
 
 message RMMsgActionChoice
@@ -173,14 +171,6 @@ message RMMsgActionChoice
 	bool				is_determine		= 2;	//确定
 	repeated RMMsgAction choices			= 3;	//历史
 	RMMsgAction			determined_action	= 4;	//确定操作
-}
-
-//玩家弃牌返回
-message RMMsgGiveUpResp
-{
-	int32					chair_id		= 1;	//玩家椅子号
-	int32					loss_gold		= 2;	//输分
-	uint32					dorp_multiple	= 3;	//弃牌倍数
 }
 
 //游戏结果                                  

@@ -208,6 +208,7 @@ message AKMsgGameResult
 	repeated int64			game_score		= 2;	//输赢分
 	repeated AKMsgHandCards	player_hands	= 3;	//手牌
 	int32					end_state		= 4;	//结束状态  1 比牌结束 2 全场秀牌
+	repeated int64			player_new_score= 6;	//玩家最新金币
 }                                           
 
 

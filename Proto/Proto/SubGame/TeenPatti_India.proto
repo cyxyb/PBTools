@@ -211,6 +211,7 @@ message TPMsgGameResult
 	repeated int32			card_type		= 3;	//牌型
 	repeated TPMsgHandCards	player_hands	= 4;	//手牌
 	int32					end_state		= 5;	//结束状态  1 比牌结束 2 全场秀牌
+	repeated int64			player_new_score= 6;	//玩家最新金币
 }                                           
 
 
