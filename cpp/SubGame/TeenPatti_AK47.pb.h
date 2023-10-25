@@ -1247,6 +1247,7 @@ class AKMsgGameStartResp PROTOBUF_FINAL :
 
   enum : int {
     kPlayIndexFieldNumber = 8,
+    kPlayerNewScoreFieldNumber = 9,
     kCurChairIdFieldNumber = 1,
     kCurTimesFieldNumber = 2,
     kMaxScoreFieldNumber = 4,
@@ -1276,6 +1277,28 @@ class AKMsgGameStartResp PROTOBUF_FINAL :
       play_index() const;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_play_index();
+
+  // repeated int64 player_new_score = 9;
+  int player_new_score_size() const;
+  private:
+  int _internal_player_new_score_size() const;
+  public:
+  void clear_player_new_score();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_player_new_score(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
+      _internal_player_new_score() const;
+  void _internal_add_player_new_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
+      _internal_mutable_player_new_score();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int64 player_new_score(int index) const;
+  void set_player_new_score(int index, ::PROTOBUF_NAMESPACE_ID::int64 value);
+  void add_player_new_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
+      player_new_score() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
+      mutable_player_new_score();
 
   // int32 cur_chair_id = 1;
   void clear_cur_chair_id();
@@ -1349,6 +1372,8 @@ class AKMsgGameStartResp PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > play_index_;
   mutable std::atomic<int> _play_index_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 > player_new_score_;
+  mutable std::atomic<int> _player_new_score_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::int32 cur_chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 cur_times_;
   ::PROTOBUF_NAMESPACE_ID::int64 max_score_;
@@ -2663,7 +2688,6 @@ class AKMsgGameResult PROTOBUF_FINAL :
   enum : int {
     kGameScoreFieldNumber = 2,
     kPlayerHandsFieldNumber = 3,
-    kPlayerNewScoreFieldNumber = 6,
     kGameTaxFieldNumber = 1,
     kEndStateFieldNumber = 4,
   };
@@ -2707,28 +2731,6 @@ class AKMsgGameResult PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TeenPatti_AK47::AKMsgHandCards >&
       player_hands() const;
 
-  // repeated int64 player_new_score = 6;
-  int player_new_score_size() const;
-  private:
-  int _internal_player_new_score_size() const;
-  public:
-  void clear_player_new_score();
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_player_new_score(int index) const;
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
-      _internal_player_new_score() const;
-  void _internal_add_player_new_score(::PROTOBUF_NAMESPACE_ID::int64 value);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
-      _internal_mutable_player_new_score();
-  public:
-  ::PROTOBUF_NAMESPACE_ID::int64 player_new_score(int index) const;
-  void set_player_new_score(int index, ::PROTOBUF_NAMESPACE_ID::int64 value);
-  void add_player_new_score(::PROTOBUF_NAMESPACE_ID::int64 value);
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
-      player_new_score() const;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
-      mutable_player_new_score();
-
   // int32 game_tax = 1;
   void clear_game_tax();
   ::PROTOBUF_NAMESPACE_ID::int32 game_tax() const;
@@ -2757,8 +2759,6 @@ class AKMsgGameResult PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 > game_score_;
   mutable std::atomic<int> _game_score_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::TeenPatti_AK47::AKMsgHandCards > player_hands_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 > player_new_score_;
-  mutable std::atomic<int> _player_new_score_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::int32 game_tax_;
   ::PROTOBUF_NAMESPACE_ID::int32 end_state_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
@@ -3821,6 +3821,53 @@ AKMsgGameStartResp::mutable_play_index() {
   return _internal_mutable_play_index();
 }
 
+// repeated int64 player_new_score = 9;
+inline int AKMsgGameStartResp::_internal_player_new_score_size() const {
+  return player_new_score_.size();
+}
+inline int AKMsgGameStartResp::player_new_score_size() const {
+  return _internal_player_new_score_size();
+}
+inline void AKMsgGameStartResp::clear_player_new_score() {
+  player_new_score_.Clear();
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 AKMsgGameStartResp::_internal_player_new_score(int index) const {
+  return player_new_score_.Get(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 AKMsgGameStartResp::player_new_score(int index) const {
+  // @@protoc_insertion_point(field_get:TeenPatti_AK47.AKMsgGameStartResp.player_new_score)
+  return _internal_player_new_score(index);
+}
+inline void AKMsgGameStartResp::set_player_new_score(int index, ::PROTOBUF_NAMESPACE_ID::int64 value) {
+  player_new_score_.Set(index, value);
+  // @@protoc_insertion_point(field_set:TeenPatti_AK47.AKMsgGameStartResp.player_new_score)
+}
+inline void AKMsgGameStartResp::_internal_add_player_new_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  player_new_score_.Add(value);
+}
+inline void AKMsgGameStartResp::add_player_new_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_add_player_new_score(value);
+  // @@protoc_insertion_point(field_add:TeenPatti_AK47.AKMsgGameStartResp.player_new_score)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
+AKMsgGameStartResp::_internal_player_new_score() const {
+  return player_new_score_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
+AKMsgGameStartResp::player_new_score() const {
+  // @@protoc_insertion_point(field_list:TeenPatti_AK47.AKMsgGameStartResp.player_new_score)
+  return _internal_player_new_score();
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
+AKMsgGameStartResp::_internal_mutable_player_new_score() {
+  return &player_new_score_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
+AKMsgGameStartResp::mutable_player_new_score() {
+  // @@protoc_insertion_point(field_mutable_list:TeenPatti_AK47.AKMsgGameStartResp.player_new_score)
+  return _internal_mutable_player_new_score();
+}
+
 // -------------------------------------------------------------------
 
 // AKMsgNotifyActionResp
@@ -4686,53 +4733,6 @@ inline void AKMsgGameResult::_internal_set_end_state(::PROTOBUF_NAMESPACE_ID::in
 inline void AKMsgGameResult::set_end_state(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_end_state(value);
   // @@protoc_insertion_point(field_set:TeenPatti_AK47.AKMsgGameResult.end_state)
-}
-
-// repeated int64 player_new_score = 6;
-inline int AKMsgGameResult::_internal_player_new_score_size() const {
-  return player_new_score_.size();
-}
-inline int AKMsgGameResult::player_new_score_size() const {
-  return _internal_player_new_score_size();
-}
-inline void AKMsgGameResult::clear_player_new_score() {
-  player_new_score_.Clear();
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 AKMsgGameResult::_internal_player_new_score(int index) const {
-  return player_new_score_.Get(index);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 AKMsgGameResult::player_new_score(int index) const {
-  // @@protoc_insertion_point(field_get:TeenPatti_AK47.AKMsgGameResult.player_new_score)
-  return _internal_player_new_score(index);
-}
-inline void AKMsgGameResult::set_player_new_score(int index, ::PROTOBUF_NAMESPACE_ID::int64 value) {
-  player_new_score_.Set(index, value);
-  // @@protoc_insertion_point(field_set:TeenPatti_AK47.AKMsgGameResult.player_new_score)
-}
-inline void AKMsgGameResult::_internal_add_player_new_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  player_new_score_.Add(value);
-}
-inline void AKMsgGameResult::add_player_new_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_add_player_new_score(value);
-  // @@protoc_insertion_point(field_add:TeenPatti_AK47.AKMsgGameResult.player_new_score)
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
-AKMsgGameResult::_internal_player_new_score() const {
-  return player_new_score_;
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
-AKMsgGameResult::player_new_score() const {
-  // @@protoc_insertion_point(field_list:TeenPatti_AK47.AKMsgGameResult.player_new_score)
-  return _internal_player_new_score();
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
-AKMsgGameResult::_internal_mutable_player_new_score() {
-  return &player_new_score_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
-AKMsgGameResult::mutable_player_new_score() {
-  // @@protoc_insertion_point(field_mutable_list:TeenPatti_AK47.AKMsgGameResult.player_new_score)
-  return _internal_mutable_player_new_score();
 }
 
 // -------------------------------------------------------------------

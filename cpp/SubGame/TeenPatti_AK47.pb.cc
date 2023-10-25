@@ -327,6 +327,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TeenPatti_5fAK47_2eproto::offs
   PROTOBUF_FIELD_OFFSET(::TeenPatti_AK47::AKMsgGameStartResp, cell_score_),
   PROTOBUF_FIELD_OFFSET(::TeenPatti_AK47::AKMsgGameStartResp, table_max_score_),
   PROTOBUF_FIELD_OFFSET(::TeenPatti_AK47::AKMsgGameStartResp, play_index_),
+  PROTOBUF_FIELD_OFFSET(::TeenPatti_AK47::AKMsgGameStartResp, player_new_score_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::TeenPatti_AK47::AKMsgNotifyActionResp, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -397,7 +398,6 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TeenPatti_5fAK47_2eproto::offs
   PROTOBUF_FIELD_OFFSET(::TeenPatti_AK47::AKMsgGameResult, game_score_),
   PROTOBUF_FIELD_OFFSET(::TeenPatti_AK47::AKMsgGameResult, player_hands_),
   PROTOBUF_FIELD_OFFSET(::TeenPatti_AK47::AKMsgGameResult, end_state_),
-  PROTOBUF_FIELD_OFFSET(::TeenPatti_AK47::AKMsgGameResult, player_new_score_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::TeenPatti_AK47::AKMsgNotifyPlayerAct, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -412,14 +412,14 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 15, -1, sizeof(::TeenPatti_AK47::AKMsgPlayerInfo)},
   { 28, -1, sizeof(::TeenPatti_AK47::AKMsgSceneInfo)},
   { 48, -1, sizeof(::TeenPatti_AK47::AKMsgGameStartResp)},
-  { 61, -1, sizeof(::TeenPatti_AK47::AKMsgNotifyActionResp)},
-  { 70, -1, sizeof(::TeenPatti_AK47::AKMsgAction)},
-  { 79, -1, sizeof(::TeenPatti_AK47::AKMsgGiveUpResp)},
-  { 85, -1, sizeof(::TeenPatti_AK47::AKMsgLookCardResp)},
-  { 94, -1, sizeof(::TeenPatti_AK47::AKMsgAddBetResp)},
-  { 102, -1, sizeof(::TeenPatti_AK47::AKMsgCompareCardResp)},
-  { 109, -1, sizeof(::TeenPatti_AK47::AKMsgCompareCardRetResp)},
-  { 122, -1, sizeof(::TeenPatti_AK47::AKMsgGameResult)},
+  { 62, -1, sizeof(::TeenPatti_AK47::AKMsgNotifyActionResp)},
+  { 71, -1, sizeof(::TeenPatti_AK47::AKMsgAction)},
+  { 80, -1, sizeof(::TeenPatti_AK47::AKMsgGiveUpResp)},
+  { 86, -1, sizeof(::TeenPatti_AK47::AKMsgLookCardResp)},
+  { 95, -1, sizeof(::TeenPatti_AK47::AKMsgAddBetResp)},
+  { 103, -1, sizeof(::TeenPatti_AK47::AKMsgCompareCardResp)},
+  { 110, -1, sizeof(::TeenPatti_AK47::AKMsgCompareCardRetResp)},
+  { 123, -1, sizeof(::TeenPatti_AK47::AKMsgGameResult)},
   { 132, -1, sizeof(::TeenPatti_AK47::AKMsgNotifyPlayerAct)},
 };
 
@@ -459,34 +459,34 @@ const char descriptor_table_protodef_TeenPatti_5fAK47_2eproto[] PROTOBUF_SECTION
   "t_time\030\013 \001(\005\022\022\n\ntotal_time\030\014 \001(\005\022\024\n\014comp"
   "are_user\030\r \001(\005\022\023\n\013compare_win\030\016 \001(\005\0225\n\014p"
   "layer_infos\030\017 \003(\0132\037.TeenPatti_AK47.AKMsg"
-  "PlayerInfo\"\275\001\n\022AKMsgGameStartResp\022\024\n\014cur"
+  "PlayerInfo\"\327\001\n\022AKMsgGameStartResp\022\024\n\014cur"
   "_chair_id\030\001 \001(\005\022\021\n\tcur_times\030\002 \001(\005\022\027\n\017ba"
   "nker_chair_id\030\003 \001(\005\022\021\n\tmax_score\030\004 \001(\003\022\021"
   "\n\tmax_blind\030\005 \001(\003\022\022\n\ncell_score\030\006 \001(\003\022\027\n"
   "\017table_max_score\030\007 \001(\003\022\022\n\nplay_index\030\010 \003"
-  "(\005\"h\n\025AKMsgNotifyActionResp\022\024\n\014cur_chair"
-  "_id\030\001 \001(\005\022\021\n\tcur_times\030\002 \001(\005\022\023\n\013current_"
-  "act\030\003 \001(\005\022\021\n\toper_time\030\004 \001(\005\"R\n\013AKMsgAct"
-  "ion\022\013\n\003act\030\001 \001(\005\022\021\n\tbet_score\030\002 \001(\003\022\024\n\014c"
-  "ompare_user\030\003 \001(\003\022\r\n\005is_ok\030\004 \001(\010\"#\n\017AKMs"
-  "gGiveUpResp\022\020\n\010chair_id\030\001 \001(\005\"\201\001\n\021AKMsgL"
-  "ookCardResp\022\020\n\010chair_id\030\001 \001(\005\022\024\n\014cur_cha"
-  "ir_id\030\002 \001(\005\022\017\n\007new_act\030\003 \001(\005\0223\n\013handl_ca"
-  "rds\030\004 \001(\0132\036.TeenPatti_AK47.AKMsgHandCard"
-  "s\"L\n\017AKMsgAddBetResp\022\024\n\014add_chair_id\030\001 \001"
-  "(\005\022\021\n\tadd_score\030\002 \001(\003\022\020\n\010bet_type\030\003 \001(\003\""
-  "<\n\024AKMsgCompareCardResp\022\020\n\010chair_id\030\001 \001("
-  "\005\022\022\n\ncompare_id\030\002 \001(\005\"\201\002\n\027AKMsgCompareCa"
-  "rdRetResp\022\030\n\020current_chair_id\030\001 \001(\005\022\023\n\013c"
-  "urrent_act\030\002 \001(\005\022\017\n\007lost_id\030\003 \001(\005\022\022\n\ncom"
-  "pare_id\030\004 \001(\005\022\022\n\npassive_id\030\005 \001(\005\0225\n\rcom"
-  "pare_cards\030\006 \001(\0132\036.TeenPatti_AK47.AKMsgH"
-  "andCards\0225\n\rpassive_cards\030\007 \001(\0132\036.TeenPa"
-  "tti_AK47.AKMsgHandCards\022\020\n\010is_agree\030\010 \001("
-  "\010\"\232\001\n\017AKMsgGameResult\022\020\n\010game_tax\030\001 \001(\005\022"
-  "\022\n\ngame_score\030\002 \003(\003\0224\n\014player_hands\030\003 \003("
-  "\0132\036.TeenPatti_AK47.AKMsgHandCards\022\021\n\tend"
-  "_state\030\004 \001(\005\022\030\n\020player_new_score\030\006 \003(\003\"5"
+  "(\005\022\030\n\020player_new_score\030\t \003(\003\"h\n\025AKMsgNot"
+  "ifyActionResp\022\024\n\014cur_chair_id\030\001 \001(\005\022\021\n\tc"
+  "ur_times\030\002 \001(\005\022\023\n\013current_act\030\003 \001(\005\022\021\n\to"
+  "per_time\030\004 \001(\005\"R\n\013AKMsgAction\022\013\n\003act\030\001 \001"
+  "(\005\022\021\n\tbet_score\030\002 \001(\003\022\024\n\014compare_user\030\003 "
+  "\001(\003\022\r\n\005is_ok\030\004 \001(\010\"#\n\017AKMsgGiveUpResp\022\020\n"
+  "\010chair_id\030\001 \001(\005\"\201\001\n\021AKMsgLookCardResp\022\020\n"
+  "\010chair_id\030\001 \001(\005\022\024\n\014cur_chair_id\030\002 \001(\005\022\017\n"
+  "\007new_act\030\003 \001(\005\0223\n\013handl_cards\030\004 \001(\0132\036.Te"
+  "enPatti_AK47.AKMsgHandCards\"L\n\017AKMsgAddB"
+  "etResp\022\024\n\014add_chair_id\030\001 \001(\005\022\021\n\tadd_scor"
+  "e\030\002 \001(\003\022\020\n\010bet_type\030\003 \001(\003\"<\n\024AKMsgCompar"
+  "eCardResp\022\020\n\010chair_id\030\001 \001(\005\022\022\n\ncompare_i"
+  "d\030\002 \001(\005\"\201\002\n\027AKMsgCompareCardRetResp\022\030\n\020c"
+  "urrent_chair_id\030\001 \001(\005\022\023\n\013current_act\030\002 \001"
+  "(\005\022\017\n\007lost_id\030\003 \001(\005\022\022\n\ncompare_id\030\004 \001(\005\022"
+  "\022\n\npassive_id\030\005 \001(\005\0225\n\rcompare_cards\030\006 \001"
+  "(\0132\036.TeenPatti_AK47.AKMsgHandCards\0225\n\rpa"
+  "ssive_cards\030\007 \001(\0132\036.TeenPatti_AK47.AKMsg"
+  "HandCards\022\020\n\010is_agree\030\010 \001(\010\"\200\001\n\017AKMsgGam"
+  "eResult\022\020\n\010game_tax\030\001 \001(\005\022\022\n\ngame_score\030"
+  "\002 \003(\003\0224\n\014player_hands\030\003 \003(\0132\036.TeenPatti_"
+  "AK47.AKMsgHandCards\022\021\n\tend_state\030\004 \001(\005\"5"
   "\n\024AKMsgNotifyPlayerAct\022\020\n\010chair_id\030\001 \001(\005"
   "\022\013\n\003act\030\002 \001(\005*g\n\014EAKGameState\022\017\n\013GS_TP_R"
   "EADY\020\000\022\016\n\nGS_TP_DEAL\020\001\022\021\n\rGS_TP_PLAYING\020"
@@ -2086,14 +2086,16 @@ class AKMsgGameStartResp::_Internal {
 
 AKMsgGameStartResp::AKMsgGameStartResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  play_index_(arena) {
+  play_index_(arena),
+  player_new_score_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:TeenPatti_AK47.AKMsgGameStartResp)
 }
 AKMsgGameStartResp::AKMsgGameStartResp(const AKMsgGameStartResp& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      play_index_(from.play_index_) {
+      play_index_(from.play_index_),
+      player_new_score_(from.player_new_score_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&cur_chair_id_, &from.cur_chair_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&banker_chair_id_) -
@@ -2140,6 +2142,7 @@ void AKMsgGameStartResp::Clear() {
   (void) cached_has_bits;
 
   play_index_.Clear();
+  player_new_score_.Clear();
   ::memset(&cur_chair_id_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&banker_chair_id_) -
       reinterpret_cast<char*>(&cur_chair_id_)) + sizeof(banker_chair_id_));
@@ -2209,6 +2212,16 @@ const char* AKMsgGameStartResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
           CHK_(ptr);
         } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64) {
           _internal_add_play_index(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated int64 player_new_score = 9;
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt64Parser(_internal_mutable_player_new_score(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72) {
+          _internal_add_player_new_score(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2291,6 +2304,15 @@ failure:
     }
   }
 
+  // repeated int64 player_new_score = 9;
+  {
+    int byte_size = _player_new_score_cached_byte_size_.load(std::memory_order_relaxed);
+    if (byte_size > 0) {
+      target = stream->WriteInt64Packed(
+          9, _internal_player_new_score(), byte_size, target);
+    }
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -2318,6 +2340,21 @@ size_t AKMsgGameStartResp::ByteSizeLong() const {
     }
     int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
     _play_index_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
+  }
+
+  // repeated int64 player_new_score = 9;
+  {
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      Int64Size(this->player_new_score_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
+    }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _player_new_score_cached_byte_size_.store(cached_size,
                                     std::memory_order_relaxed);
     total_size += data_size;
   }
@@ -2403,6 +2440,7 @@ void AKMsgGameStartResp::MergeFrom(const AKMsgGameStartResp& from) {
   (void) cached_has_bits;
 
   play_index_.MergeFrom(from.play_index_);
+  player_new_score_.MergeFrom(from.player_new_score_);
   if (from.cur_chair_id() != 0) {
     _internal_set_cur_chair_id(from._internal_cur_chair_id());
   }
@@ -2448,6 +2486,7 @@ void AKMsgGameStartResp::InternalSwap(AKMsgGameStartResp* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   play_index_.InternalSwap(&other->play_index_);
+  player_new_score_.InternalSwap(&other->player_new_score_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(AKMsgGameStartResp, banker_chair_id_)
       + sizeof(AKMsgGameStartResp::banker_chair_id_)
@@ -4386,8 +4425,7 @@ class AKMsgGameResult::_Internal {
 AKMsgGameResult::AKMsgGameResult(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena),
   game_score_(arena),
-  player_hands_(arena),
-  player_new_score_(arena) {
+  player_hands_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:TeenPatti_AK47.AKMsgGameResult)
@@ -4395,8 +4433,7 @@ AKMsgGameResult::AKMsgGameResult(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 AKMsgGameResult::AKMsgGameResult(const AKMsgGameResult& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       game_score_(from.game_score_),
-      player_hands_(from.player_hands_),
-      player_new_score_(from.player_new_score_) {
+      player_hands_(from.player_hands_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&game_tax_, &from.game_tax_,
     static_cast<size_t>(reinterpret_cast<char*>(&end_state_) -
@@ -4445,7 +4482,6 @@ void AKMsgGameResult::Clear() {
 
   game_score_.Clear();
   player_hands_.Clear();
-  player_new_score_.Clear();
   ::memset(&game_tax_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&end_state_) -
       reinterpret_cast<char*>(&game_tax_)) + sizeof(end_state_));
@@ -4492,16 +4528,6 @@ const char* AKMsgGameResult::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           end_state_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // repeated int64 player_new_score = 6;
-      case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt64Parser(_internal_mutable_player_new_score(), ptr, ctx);
-          CHK_(ptr);
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48) {
-          _internal_add_player_new_score(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -4562,15 +4588,6 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_end_state(), target);
   }
 
-  // repeated int64 player_new_score = 6;
-  {
-    int byte_size = _player_new_score_cached_byte_size_.load(std::memory_order_relaxed);
-    if (byte_size > 0) {
-      target = stream->WriteInt64Packed(
-          6, _internal_player_new_score(), byte_size, target);
-    }
-  }
-
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -4607,21 +4624,6 @@ size_t AKMsgGameResult::ByteSizeLong() const {
   for (const auto& msg : this->player_hands_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
-  }
-
-  // repeated int64 player_new_score = 6;
-  {
-    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      Int64Size(this->player_new_score_);
-    if (data_size > 0) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
-    }
-    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
-    _player_new_score_cached_byte_size_.store(cached_size,
-                                    std::memory_order_relaxed);
-    total_size += data_size;
   }
 
   // int32 game_tax = 1;
@@ -4671,7 +4673,6 @@ void AKMsgGameResult::MergeFrom(const AKMsgGameResult& from) {
 
   game_score_.MergeFrom(from.game_score_);
   player_hands_.MergeFrom(from.player_hands_);
-  player_new_score_.MergeFrom(from.player_new_score_);
   if (from.game_tax() != 0) {
     _internal_set_game_tax(from._internal_game_tax());
   }
@@ -4703,7 +4704,6 @@ void AKMsgGameResult::InternalSwap(AKMsgGameResult* other) {
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   game_score_.InternalSwap(&other->game_score_);
   player_hands_.InternalSwap(&other->player_hands_);
-  player_new_score_.InternalSwap(&other->player_new_score_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(AKMsgGameResult, end_state_)
       + sizeof(AKMsgGameResult::end_state_)
