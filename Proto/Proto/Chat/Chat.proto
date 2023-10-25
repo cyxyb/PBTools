@@ -43,7 +43,7 @@ message MsgSyncUserInfo
 message MsgChatHistory
 {
 	int32		chat_type		= 1;	//消息类型(0:普通消息 1:小喇叭消息)
-	int32		start_index		= 2;	//请求历史消息第一条消息的下标
+	int32		start_index		= 2;	//请求历史消息的索引
 }
 
 message MsgChatInfo
@@ -55,6 +55,7 @@ message MsgChatInfo
 	int32		vip_level		= 5;	//VIP等级
 	int32		avatar_frame	= 6;	//头像框
 	string		msg				= 7;	//聊天消息
+	int32		index			= 8;	//消息索引
 }
 
 message MsgChatHistoryResp

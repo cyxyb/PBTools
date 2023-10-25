@@ -201,6 +201,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Chat_2eproto::offsets[] PROTOB
   PROTOBUF_FIELD_OFFSET(::Chat::MsgChatInfo, vip_level_),
   PROTOBUF_FIELD_OFFSET(::Chat::MsgChatInfo, avatar_frame_),
   PROTOBUF_FIELD_OFFSET(::Chat::MsgChatInfo, msg_),
+  PROTOBUF_FIELD_OFFSET(::Chat::MsgChatInfo, index_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::Chat::MsgChatHistoryResp, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -216,7 +217,7 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 32, -1, sizeof(::Chat::MsgSyncUserInfo)},
   { 38, -1, sizeof(::Chat::MsgChatHistory)},
   { 45, -1, sizeof(::Chat::MsgChatInfo)},
-  { 57, -1, sizeof(::Chat::MsgChatHistoryResp)},
+  { 58, -1, sizeof(::Chat::MsgChatHistoryResp)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -242,13 +243,13 @@ const char descriptor_table_protodef_Chat_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "client_type\030\010 \001(\005\022\022\n\nlimit_chat\030\t \001(\005\";\n"
   "\017MsgSyncUserInfo\022(\n\tuser_info\030\001 \003(\0132\025.Ch"
   "at.MsgChatUserInfo\"8\n\016MsgChatHistory\022\021\n\t"
-  "chat_type\030\001 \001(\005\022\023\n\013start_index\030\002 \001(\005\"\214\001\n"
+  "chat_type\030\001 \001(\005\022\023\n\013start_index\030\002 \001(\005\"\233\001\n"
   "\013MsgChatInfo\022\017\n\007user_id\030\001 \001(\005\022\024\n\014beautif"
   "ul_id\030\002 \001(\005\022\020\n\010nickname\030\003 \001(\t\022\016\n\006avatar\030"
   "\004 \001(\t\022\021\n\tvip_level\030\005 \001(\005\022\024\n\014avatar_frame"
-  "\030\006 \001(\005\022\013\n\003msg\030\007 \001(\t\"H\n\022MsgChatHistoryRes"
-  "p\022\021\n\tchat_type\030\001 \001(\005\022\037\n\004info\030\002 \003(\0132\021.Cha"
-  "t.MsgChatInfob\006proto3"
+  "\030\006 \001(\005\022\013\n\003msg\030\007 \001(\t\022\r\n\005index\030\010 \001(\005\"H\n\022Ms"
+  "gChatHistoryResp\022\021\n\tchat_type\030\001 \001(\005\022\037\n\004i"
+  "nfo\030\002 \003(\0132\021.Chat.MsgChatInfob\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Chat_2eproto_deps[1] = {
 };
@@ -263,7 +264,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Cha
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Chat_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Chat_2eproto = {
-  false, false, descriptor_table_protodef_Chat_2eproto, "Chat.proto", 741,
+  false, false, descriptor_table_protodef_Chat_2eproto, "Chat.proto", 756,
   &descriptor_table_Chat_2eproto_once, descriptor_table_Chat_2eproto_sccs, descriptor_table_Chat_2eproto_deps, 7, 0,
   schemas, file_default_instances, TableStruct_Chat_2eproto::offsets,
   file_level_metadata_Chat_2eproto, 7, file_level_enum_descriptors_Chat_2eproto, file_level_service_descriptors_Chat_2eproto,
@@ -1739,8 +1740,8 @@ MsgChatInfo::MsgChatInfo(const MsgChatInfo& from)
       GetArena());
   }
   ::memcpy(&user_id_, &from.user_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&avatar_frame_) -
-    reinterpret_cast<char*>(&user_id_)) + sizeof(avatar_frame_));
+    static_cast<size_t>(reinterpret_cast<char*>(&index_) -
+    reinterpret_cast<char*>(&user_id_)) + sizeof(index_));
   // @@protoc_insertion_point(copy_constructor:Chat.MsgChatInfo)
 }
 
@@ -1751,8 +1752,8 @@ void MsgChatInfo::SharedCtor() {
   msg_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&user_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&avatar_frame_) -
-      reinterpret_cast<char*>(&user_id_)) + sizeof(avatar_frame_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&index_) -
+      reinterpret_cast<char*>(&user_id_)) + sizeof(index_));
 }
 
 MsgChatInfo::~MsgChatInfo() {
@@ -1793,8 +1794,8 @@ void MsgChatInfo::Clear() {
   avatar_.ClearToEmpty();
   msg_.ClearToEmpty();
   ::memset(&user_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&avatar_frame_) -
-      reinterpret_cast<char*>(&user_id_)) + sizeof(avatar_frame_));
+      reinterpret_cast<char*>(&index_) -
+      reinterpret_cast<char*>(&user_id_)) + sizeof(index_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -1857,6 +1858,13 @@ const char* MsgChatInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
           auto str = _internal_mutable_msg();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "Chat.MsgChatInfo.msg"));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 index = 8;
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+          index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1942,6 +1950,12 @@ failure:
         7, this->_internal_msg(), target);
   }
 
+  // int32 index = 8;
+  if (this->index() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(8, this->_internal_index(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -2007,6 +2021,13 @@ size_t MsgChatInfo::ByteSizeLong() const {
         this->_internal_avatar_frame());
   }
 
+  // int32 index = 8;
+  if (this->index() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_index());
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
         _internal_metadata_, total_size, &_cached_size_);
@@ -2059,6 +2080,9 @@ void MsgChatInfo::MergeFrom(const MsgChatInfo& from) {
   if (from.avatar_frame() != 0) {
     _internal_set_avatar_frame(from._internal_avatar_frame());
   }
+  if (from.index() != 0) {
+    _internal_set_index(from._internal_index());
+  }
 }
 
 void MsgChatInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -2086,8 +2110,8 @@ void MsgChatInfo::InternalSwap(MsgChatInfo* other) {
   avatar_.Swap(&other->avatar_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   msg_.Swap(&other->msg_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgChatInfo, avatar_frame_)
-      + sizeof(MsgChatInfo::avatar_frame_)
+      PROTOBUF_FIELD_OFFSET(MsgChatInfo, index_)
+      + sizeof(MsgChatInfo::index_)
       - PROTOBUF_FIELD_OFFSET(MsgChatInfo, user_id_)>(
           reinterpret_cast<char*>(&user_id_),
           reinterpret_cast<char*>(&other->user_id_));

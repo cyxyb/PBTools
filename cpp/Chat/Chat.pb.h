@@ -1097,6 +1097,7 @@ class MsgChatInfo PROTOBUF_FINAL :
     kBeautifulIdFieldNumber = 2,
     kVipLevelFieldNumber = 5,
     kAvatarFrameFieldNumber = 6,
+    kIndexFieldNumber = 8,
   };
   // string nickname = 3;
   void clear_nickname();
@@ -1182,6 +1183,15 @@ class MsgChatInfo PROTOBUF_FINAL :
   void _internal_set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 index = 8;
+  void clear_index();
+  ::PROTOBUF_NAMESPACE_ID::int32 index() const;
+  void set_index(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_index() const;
+  void _internal_set_index(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:Chat.MsgChatInfo)
  private:
   class _Internal;
@@ -1196,6 +1206,7 @@ class MsgChatInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 beautiful_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 vip_level_;
   ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame_;
+  ::PROTOBUF_NAMESPACE_ID::int32 index_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Chat_2eproto;
 };
@@ -2271,6 +2282,26 @@ inline void MsgChatInfo::set_allocated_msg(std::string* msg) {
   msg_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), msg,
       GetArena());
   // @@protoc_insertion_point(field_set_allocated:Chat.MsgChatInfo.msg)
+}
+
+// int32 index = 8;
+inline void MsgChatInfo::clear_index() {
+  index_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChatInfo::_internal_index() const {
+  return index_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChatInfo::index() const {
+  // @@protoc_insertion_point(field_get:Chat.MsgChatInfo.index)
+  return _internal_index();
+}
+inline void MsgChatInfo::_internal_set_index(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  index_ = value;
+}
+inline void MsgChatInfo::set_index(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_index(value);
+  // @@protoc_insertion_point(field_set:Chat.MsgChatInfo.index)
 }
 
 // -------------------------------------------------------------------
