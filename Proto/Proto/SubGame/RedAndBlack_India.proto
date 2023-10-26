@@ -31,6 +31,7 @@ message MsgSceneInfo
 	repeated int32		state_time		= 5;	//各个状态配置时间(0:准备 7s 1:下注 15s 2:结算 10s)
 	int32				remain_time		= 6;	//已过时间
 	int32				state			= 7;	//当前状态
+	repeated int32		mul				= 8;	//倍数(红、黑、对子(9-A)、金花、顺子、同花顺、三条)
 }
 
 //玩家下注

@@ -400,6 +400,7 @@ class MsgSceneInfo PROTOBUF_FINAL :
     kRecordFieldNumber = 2,
     kBetLimitFieldNumber = 3,
     kStateTimeFieldNumber = 5,
+    kMulFieldNumber = 8,
     kPlayerLimitFieldNumber = 4,
     kRemainTimeFieldNumber = 6,
     kStateFieldNumber = 7,
@@ -488,6 +489,28 @@ class MsgSceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_state_time();
 
+  // repeated int32 mul = 8;
+  int mul_size() const;
+  private:
+  int _internal_mul_size() const;
+  public:
+  void clear_mul();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_mul(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_mul() const;
+  void _internal_add_mul(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_mul();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 mul(int index) const;
+  void set_mul(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_mul(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      mul() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_mul();
+
   // int32 player_limit = 4;
   void clear_player_limit();
   ::PROTOBUF_NAMESPACE_ID::int32 player_limit() const;
@@ -529,6 +552,8 @@ class MsgSceneInfo PROTOBUF_FINAL :
   mutable std::atomic<int> _bet_limit_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > state_time_;
   mutable std::atomic<int> _state_time_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > mul_;
+  mutable std::atomic<int> _mul_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::int32 player_limit_;
   ::PROTOBUF_NAMESPACE_ID::int32 remain_time_;
   ::PROTOBUF_NAMESPACE_ID::int32 state_;
@@ -2274,6 +2299,53 @@ inline void MsgSceneInfo::_internal_set_state(::PROTOBUF_NAMESPACE_ID::int32 val
 inline void MsgSceneInfo::set_state(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_state(value);
   // @@protoc_insertion_point(field_set:RedAndBlack_India.MsgSceneInfo.state)
+}
+
+// repeated int32 mul = 8;
+inline int MsgSceneInfo::_internal_mul_size() const {
+  return mul_.size();
+}
+inline int MsgSceneInfo::mul_size() const {
+  return _internal_mul_size();
+}
+inline void MsgSceneInfo::clear_mul() {
+  mul_.Clear();
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::_internal_mul(int index) const {
+  return mul_.Get(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::mul(int index) const {
+  // @@protoc_insertion_point(field_get:RedAndBlack_India.MsgSceneInfo.mul)
+  return _internal_mul(index);
+}
+inline void MsgSceneInfo::set_mul(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  mul_.Set(index, value);
+  // @@protoc_insertion_point(field_set:RedAndBlack_India.MsgSceneInfo.mul)
+}
+inline void MsgSceneInfo::_internal_add_mul(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  mul_.Add(value);
+}
+inline void MsgSceneInfo::add_mul(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_mul(value);
+  // @@protoc_insertion_point(field_add:RedAndBlack_India.MsgSceneInfo.mul)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+MsgSceneInfo::_internal_mul() const {
+  return mul_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+MsgSceneInfo::mul() const {
+  // @@protoc_insertion_point(field_list:RedAndBlack_India.MsgSceneInfo.mul)
+  return _internal_mul();
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+MsgSceneInfo::_internal_mutable_mul() {
+  return &mul_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+MsgSceneInfo::mutable_mul() {
+  // @@protoc_insertion_point(field_mutable_list:RedAndBlack_India.MsgSceneInfo.mul)
+  return _internal_mutable_mul();
 }
 
 // -------------------------------------------------------------------
