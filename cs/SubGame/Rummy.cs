@@ -981,7 +981,7 @@ namespace Rummy {
     public const int GoldFieldNumber = 3;
     private long gold_;
     /// <summary>
-    ///自己的金币，别人的是空
+    ///自己的金币别人的是空	结算的时候不能用这个值不是最新的，在开始发牌的时候会告诉玩家最新的金币
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long Gold {
@@ -995,7 +995,7 @@ namespace Rummy {
     public const int WinGoldFieldNumber = 4;
     private long winGold_;
     /// <summary>
-    ///输赢分
+    ///输赢分	每局结算的
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long WinGold {
