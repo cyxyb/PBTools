@@ -463,7 +463,7 @@ const char descriptor_table_protodef_Rummy_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "\022\n\n\006NaCard\020\002\022\013\n\007ChuCard\020\004\022\r\n\tSortsCard\020\010"
   "\022\014\n\010ShowCard\020\020*b\n\016ERMColCardType\022\016\n\nCOL_"
   "SINGLE\020\000\022\016\n\nCOL_BAO_ZI\020\001\022\020\n\014COL_SHUN_ZHI"
-  "\020\002\022\021\n\rCOL_QING_SHUN\020\003\022\013\n\007COL_MAX\020\004*\241\004\n\017E"
+  "\020\002\022\021\n\rCOL_QING_SHUN\020\003\022\013\n\007COL_MAX\020\004*\310\004\n\017E"
   "RMMsgIDSubGame\022\025\n\021MsgIDSubGame_Null\020\000\022\036\n"
   "\032MsgIDSubGame_GameStartResp\020\001\022!\n\035MsgIDSu"
   "bGame_NotifyActionResp\020\002\022\027\n\023MsgIDSubGame"
@@ -477,7 +477,8 @@ const char descriptor_table_protodef_Rummy_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "sgIDSubGame_NotifySystemCheatResp\020\024\022#\n\037M"
   "sgIDSubGame_NotifyNextCardResp\020\025\022 \n\034MsgI"
   "DSubGame_NotifyIsMaxResp\020\026\022\"\n\036MsgIDSubGa"
-  "me_NotifyLastActResp\020\031b\006proto3"
+  "me_NotifyLastActResp\020\031\022%\n!MsgIDSubGame_N"
+  "otifyOperPlayerInfo\020(b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Rummy_2eproto_deps[1] = {
 };
@@ -498,7 +499,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Rum
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Rummy_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Rummy_2eproto = {
-  false, false, descriptor_table_protodef_Rummy_2eproto, "Rummy.proto", 2630,
+  false, false, descriptor_table_protodef_Rummy_2eproto, "Rummy.proto", 2669,
   &descriptor_table_Rummy_2eproto_once, descriptor_table_Rummy_2eproto_sccs, descriptor_table_Rummy_2eproto_deps, 13, 0,
   schemas, file_default_instances, TableStruct_Rummy_2eproto::offsets,
   file_level_metadata_Rummy_2eproto, 13, file_level_enum_descriptors_Rummy_2eproto, file_level_service_descriptors_Rummy_2eproto,
@@ -599,6 +600,7 @@ bool ERMMsgIDSubGame_IsValid(int value) {
     case 21:
     case 22:
     case 25:
+    case 40:
       return true;
     default:
       return false;

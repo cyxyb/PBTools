@@ -70,7 +70,7 @@ namespace Rummy {
             "CgoGTmFDYXJkEAISCwoHQ2h1Q2FyZBAEEg0KCVNvcnRzQ2FyZBAIEgwKCFNo",
             "b3dDYXJkEBAqYgoORVJNQ29sQ2FyZFR5cGUSDgoKQ09MX1NJTkdMRRAAEg4K",
             "CkNPTF9CQU9fWkkQARIQCgxDT0xfU0hVTl9aSEkQAhIRCg1DT0xfUUlOR19T",
-            "SFVOEAMSCwoHQ09MX01BWBAEKqEECg9FUk1Nc2dJRFN1YkdhbWUSFQoRTXNn",
+            "SFVOEAMSCwoHQ09MX01BWBAEKsgECg9FUk1Nc2dJRFN1YkdhbWUSFQoRTXNn",
             "SURTdWJHYW1lX051bGwQABIeChpNc2dJRFN1YkdhbWVfR2FtZVN0YXJ0UmVz",
             "cBABEiEKHU1zZ0lEU3ViR2FtZV9Ob3RpZnlBY3Rpb25SZXNwEAISFwoTTXNn",
             "SURTdWJHYW1lX0FjdGlvbhADEhsKF01zZ0lEU3ViR2FtZV9BY3Rpb25SZXNw",
@@ -82,7 +82,8 @@ namespace Rummy {
             "c3RlZXNoaXBSZXNwEA8SJgoiTXNnSURTdWJHYW1lX05vdGlmeVN5c3RlbUNo",
             "ZWF0UmVzcBAUEiMKH01zZ0lEU3ViR2FtZV9Ob3RpZnlOZXh0Q2FyZFJlc3AQ",
             "FRIgChxNc2dJRFN1YkdhbWVfTm90aWZ5SXNNYXhSZXNwEBYSIgoeTXNnSURT",
-            "dWJHYW1lX05vdGlmeUxhc3RBY3RSZXNwEBliBnByb3RvMw=="));
+            "dWJHYW1lX05vdGlmeUxhc3RBY3RSZXNwEBkSJQohTXNnSURTdWJHYW1lX05v",
+            "dGlmeU9wZXJQbGF5ZXJJbmZvEChiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Rummy.ERMGameState), typeof(global::Rummy.PlayerState), typeof(global::Rummy.ERMGameAction), typeof(global::Rummy.ERMColCardType), typeof(global::Rummy.ERMMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -276,6 +277,10 @@ namespace Rummy {
     ///通知玩家行为
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_NotifyLastActResp")] MsgIdsubGameNotifyLastActResp = 25,
+    /// <summary>
+    ///////////////////////////测试消息
+    /// </summary>
+    [pbr::OriginalName("MsgIDSubGame_NotifyOperPlayerInfo")] MsgIdsubGameNotifyOperPlayerInfo = 40,
   }
 
   #endregion

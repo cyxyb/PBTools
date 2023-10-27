@@ -65,6 +65,11 @@ enum ERMMsgIDSubGame
 	MsgIDSubGame_NotifyNextCardResp		= 21;	//通知玩家人下一张牌
 	MsgIDSubGame_NotifyIsMaxResp		= 22;	//通知是否最大
 	MsgIDSubGame_NotifyLastActResp		= 25;	//通知玩家行为
+
+	
+	//////////////////////////测试消息
+	MsgIDSubGame_NotifyOperPlayerInfo	= 40;	//玩家操作后的手牌变化(RMMsgPlayerInfo)
+
 }
 
 message RMColumnInfo

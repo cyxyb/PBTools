@@ -243,12 +243,13 @@ enum ERMMsgIDSubGame : int {
   MsgIDSubGame_NotifyNextCardResp = 21,
   MsgIDSubGame_NotifyIsMaxResp = 22,
   MsgIDSubGame_NotifyLastActResp = 25,
+  MsgIDSubGame_NotifyOperPlayerInfo = 40,
   ERMMsgIDSubGame_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   ERMMsgIDSubGame_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool ERMMsgIDSubGame_IsValid(int value);
 constexpr ERMMsgIDSubGame ERMMsgIDSubGame_MIN = MsgIDSubGame_Null;
-constexpr ERMMsgIDSubGame ERMMsgIDSubGame_MAX = MsgIDSubGame_NotifyLastActResp;
+constexpr ERMMsgIDSubGame ERMMsgIDSubGame_MAX = MsgIDSubGame_NotifyOperPlayerInfo;
 constexpr int ERMMsgIDSubGame_ARRAYSIZE = ERMMsgIDSubGame_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ERMMsgIDSubGame_descriptor();
