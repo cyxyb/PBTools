@@ -281,6 +281,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Rummy_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgPlayerInfo, gold_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgPlayerInfo, win_gold_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgPlayerInfo, cards_),
+  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgPlayerInfo, cur_act_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgPlayerInfo, hand_group_info_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgSceneInfo, _internal_metadata_),
@@ -297,7 +298,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Rummy_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgSceneInfo, out_time_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgSceneInfo, total_time_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgSceneInfo, joker_card_),
-  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgSceneInfo, surplus_card_num_),
+  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgSceneInfo, left_card_num_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgSceneInfo, out_cards_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgSceneInfo, player_infos_),
   ~0u,  // no _has_bits_
@@ -310,6 +311,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Rummy_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, max_score_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, cell_score_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, max_multiple_),
+  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, new_gold_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, joker_card_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, left_card_num_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgGameStartResp, out_cards_),
@@ -382,15 +384,15 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 8, -1, sizeof(::Rummy::RMMsgTableState)},
   { 15, -1, sizeof(::Rummy::RMMsgHandCards)},
   { 21, -1, sizeof(::Rummy::RMMsgPlayerInfo)},
-  { 32, -1, sizeof(::Rummy::RMMsgSceneInfo)},
-  { 50, -1, sizeof(::Rummy::RMMsgGameStartResp)},
-  { 65, -1, sizeof(::Rummy::RMMsgNotifyActionResp)},
-  { 73, -1, sizeof(::Rummy::RMMsgAction)},
-  { 83, -1, sizeof(::Rummy::RMMsgActionResp)},
-  { 95, -1, sizeof(::Rummy::RMMsgActionChoice)},
-  { 104, -1, sizeof(::Rummy::RMMsgGameResult)},
-  { 112, -1, sizeof(::Rummy::RMMsgNotifyTrusteeship)},
-  { 119, -1, sizeof(::Rummy::RMMsgNotifyPlayerAct)},
+  { 33, -1, sizeof(::Rummy::RMMsgSceneInfo)},
+  { 51, -1, sizeof(::Rummy::RMMsgGameStartResp)},
+  { 67, -1, sizeof(::Rummy::RMMsgNotifyActionResp)},
+  { 75, -1, sizeof(::Rummy::RMMsgAction)},
+  { 85, -1, sizeof(::Rummy::RMMsgActionResp)},
+  { 97, -1, sizeof(::Rummy::RMMsgActionChoice)},
+  { 106, -1, sizeof(::Rummy::RMMsgGameResult)},
+  { 114, -1, sizeof(::Rummy::RMMsgNotifyTrusteeship)},
+  { 121, -1, sizeof(::Rummy::RMMsgNotifyPlayerAct)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -414,67 +416,68 @@ const char descriptor_table_protodef_Rummy_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "start_value\030\001 \001(\005\022\020\n\010col_type\030\002 \001(\005\022\r\n\005c"
   "ards\030\003 \003(\005\"1\n\017RMMsgTableState\022\r\n\005state\030\001"
   " \001(\005\022\017\n\007out_ime\030\002 \001(\005\"\037\n\016RMMsgHandCards\022"
-  "\r\n\005cards\030\001 \003(\005\"\225\001\n\017RMMsgPlayerInfo\022\020\n\010ch"
+  "\r\n\005cards\030\001 \003(\005\"\246\001\n\017RMMsgPlayerInfo\022\020\n\010ch"
   "air_id\030\001 \001(\005\022\023\n\013play_status\030\002 \001(\005\022\014\n\004gol"
   "d\030\003 \001(\003\022\020\n\010win_gold\030\004 \001(\003\022\r\n\005cards\030\005 \003(\005"
-  "\022,\n\017hand_group_info\030\006 \003(\0132\023.Rummy.RMColu"
-  "mnInfo\"\267\002\n\016RMMsgSceneInfo\022\024\n\014max_multipl"
-  "e\030\001 \001(\003\022\022\n\ncell_score\030\002 \001(\003\022\023\n\013table_sta"
-  "te\030\003 \001(\005\022\013\n\003tax\030\004 \001(\005\022\027\n\017banker_chair_id"
-  "\030\005 \001(\005\022\024\n\014cur_chair_id\030\006 \001(\005\022\025\n\rcur_chai"
-  "r_act\030\007 \001(\005\022\020\n\010out_time\030\010 \001(\005\022\022\n\ntotal_t"
-  "ime\030\t \001(\005\022\022\n\njoker_card\030\n \001(\005\022\030\n\020surplus"
-  "_card_num\030\013 \001(\005\022\021\n\tout_cards\030\014 \003(\005\022,\n\014pl"
-  "ayer_infos\030\r \003(\0132\026.Rummy.RMMsgPlayerInfo"
-  "\"\341\001\n\022RMMsgGameStartResp\022\024\n\014cur_chair_id\030"
-  "\001 \001(\005\022\027\n\017banker_chair_id\030\002 \001(\005\022\021\n\tmax_sc"
-  "ore\030\003 \001(\003\022\022\n\ncell_score\030\004 \001(\003\022\024\n\014max_mul"
-  "tiple\030\005 \001(\003\022\022\n\njoker_card\030\n \001(\005\022\025\n\rleft_"
-  "card_num\030\013 \001(\005\022\021\n\tout_cards\030\014 \003(\005\022\022\n\npla"
-  "y_index\030\r \003(\005\022\r\n\005cards\030\017 \003(\005\"U\n\025RMMsgNot"
-  "ifyActionResp\022\024\n\014cur_chair_id\030\001 \001(\005\022\023\n\013c"
-  "urrent_act\030\003 \001(\005\022\021\n\toper_time\030\004 \001(\005\"\210\001\n\013"
-  "RMMsgAction\022\020\n\010chair_id\030\001 \001(\005\022\020\n\010act_typ"
-  "e\030\002 \001(\005\022\021\n\tdest_card\030\003 \001(\005\022\024\n\014get_out_ca"
-  "rd\030\004 \001(\010\022,\n\017hand_group_info\030\005 \003(\0132\023.Rumm"
-  "y.RMColumnInfo\"\241\001\n\017RMMsgActionResp\022\020\n\010ch"
-  "air_id\030\001 \001(\005\022\020\n\010act_type\030\002 \001(\005\022\021\n\tdest_c"
-  "ard\030\003 \001(\005\022\024\n\014get_out_card\030\004 \001(\010\022\025\n\rdrop_"
-  "multiple\030\006 \001(\r\022\023\n\013auto_action\030\007 \001(\010\022\025\n\rl"
-  "eft_card_num\030\t \001(\005\"\227\001\n\021RMMsgActionChoice"
-  "\022\030\n\020determined_level\030\001 \001(\005\022\024\n\014is_determi"
-  "ne\030\002 \001(\010\022#\n\007choices\030\003 \003(\0132\022.Rummy.RMMsgA"
-  "ction\022-\n\021determined_action\030\004 \001(\0132\022.Rummy"
-  ".RMMsgAction\"c\n\017RMMsgGameResult\022\020\n\010game_"
-  "tax\030\001 \001(\005\022+\n\013player_info\030\002 \003(\0132\026.Rummy.R"
-  "MMsgPlayerInfo\022\021\n\tend_state\030\003 \001(\005\"D\n\026RMM"
-  "sgNotifyTrusteeship\022\022\n\nseat_index\030\001 \001(\005\022"
-  "\026\n\016is_trusteeship\030\002 \001(\010\"5\n\024RMMsgNotifyPl"
-  "ayerAct\022\020\n\010chair_id\030\001 \001(\005\022\013\n\003act\030\002 \001(\005*d"
-  "\n\014ERMGameState\022\017\n\013GS_TP_READY\020\000\022\016\n\nGS_TP"
-  "_DEAL\020\001\022\021\n\rGS_TP_PLAYING\020\002\022\016\n\nGS_TP_SHOW"
-  "\020\003\022\020\n\014GS_TP_RESULT\020\004*d\n\013PlayerState\022\014\n\010P"
-  "S_READY\020\000\022\013\n\007PS_PLAY\020\001\022\013\n\007PS_GIVE\020\002\022\013\n\007P"
-  "S_FAIL\020\003\022\020\n\014PS_SORT_CARD\020\004\022\016\n\nPS_SHOW_HU"
-  "\020\005*b\n\rERMGameAction\022\r\n\tInvaldAct\020\000\022\014\n\010Dr"
-  "opCard\020\001\022\n\n\006NaCard\020\002\022\013\n\007ChuCard\020\004\022\r\n\tSor"
-  "tsCard\020\010\022\014\n\010ShowCard\020\020*b\n\016ERMColCardType"
-  "\022\016\n\nCOL_SINGLE\020\000\022\016\n\nCOL_BAO_ZI\020\001\022\020\n\014COL_"
-  "SHUN_ZHI\020\002\022\021\n\rCOL_QING_SHUN\020\003\022\013\n\007COL_MAX"
-  "\020\004*\241\004\n\017ERMMsgIDSubGame\022\025\n\021MsgIDSubGame_N"
-  "ull\020\000\022\036\n\032MsgIDSubGame_GameStartResp\020\001\022!\n"
-  "\035MsgIDSubGame_NotifyActionResp\020\002\022\027\n\023MsgI"
-  "DSubGame_Action\020\003\022\033\n\027MsgIDSubGame_Action"
-  "Resp\020\004\022\037\n\033MsgIDSubGame_GameResultResp\020\005\022"
-  " \n\034MsgIDSubGame_NotifyStateResp\020\006\022\034\n\030Msg"
-  "IDSubGame_TimeOutResp\020\013\022\035\n\031MsgIDSubGame_"
-  "TimeOutReady\020\014\022!\n\035MsgIDSubGame_TimeOutRe"
-  "adyResp\020\r\022 \n\034MsgIDSubGame_TimeOutKickRes"
-  "p\020\016\022&\n\"MsgIDSubGame_NotifyTrusteeshipRes"
-  "p\020\017\022&\n\"MsgIDSubGame_NotifySystemCheatRes"
-  "p\020\024\022#\n\037MsgIDSubGame_NotifyNextCardResp\020\025"
-  "\022 \n\034MsgIDSubGame_NotifyIsMaxResp\020\026\022\"\n\036Ms"
-  "gIDSubGame_NotifyLastActResp\020\031b\006proto3"
+  "\022\017\n\007cur_act\030\006 \001(\005\022,\n\017hand_group_info\030\007 \003"
+  "(\0132\023.Rummy.RMColumnInfo\"\264\002\n\016RMMsgSceneIn"
+  "fo\022\024\n\014max_multiple\030\001 \001(\003\022\022\n\ncell_score\030\002"
+  " \001(\003\022\023\n\013table_state\030\003 \001(\005\022\013\n\003tax\030\004 \001(\005\022\027"
+  "\n\017banker_chair_id\030\005 \001(\005\022\024\n\014cur_chair_id\030"
+  "\006 \001(\005\022\025\n\rcur_chair_act\030\007 \001(\005\022\020\n\010out_time"
+  "\030\010 \001(\005\022\022\n\ntotal_time\030\t \001(\005\022\022\n\njoker_card"
+  "\030\n \001(\005\022\025\n\rleft_card_num\030\013 \001(\005\022\021\n\tout_car"
+  "ds\030\014 \003(\005\022,\n\014player_infos\030\r \003(\0132\026.Rummy.R"
+  "MMsgPlayerInfo\"\363\001\n\022RMMsgGameStartResp\022\024\n"
+  "\014cur_chair_id\030\001 \001(\005\022\027\n\017banker_chair_id\030\002"
+  " \001(\005\022\021\n\tmax_score\030\003 \001(\003\022\022\n\ncell_score\030\004 "
+  "\001(\003\022\024\n\014max_multiple\030\005 \001(\003\022\020\n\010new_gold\030\t "
+  "\001(\003\022\022\n\njoker_card\030\n \001(\005\022\025\n\rleft_card_num"
+  "\030\013 \001(\005\022\021\n\tout_cards\030\014 \003(\005\022\022\n\nplay_index\030"
+  "\r \003(\005\022\r\n\005cards\030\017 \003(\005\"U\n\025RMMsgNotifyActio"
+  "nResp\022\024\n\014cur_chair_id\030\001 \001(\005\022\023\n\013current_a"
+  "ct\030\003 \001(\005\022\021\n\toper_time\030\004 \001(\005\"\210\001\n\013RMMsgAct"
+  "ion\022\020\n\010chair_id\030\001 \001(\005\022\020\n\010act_type\030\002 \001(\005\022"
+  "\021\n\tdest_card\030\003 \001(\005\022\024\n\014get_out_card\030\004 \001(\010"
+  "\022,\n\017hand_group_info\030\005 \003(\0132\023.Rummy.RMColu"
+  "mnInfo\"\241\001\n\017RMMsgActionResp\022\020\n\010chair_id\030\001"
+  " \001(\005\022\020\n\010act_type\030\002 \001(\005\022\021\n\tdest_card\030\003 \001("
+  "\005\022\024\n\014get_out_card\030\004 \001(\010\022\025\n\rdrop_multiple"
+  "\030\006 \001(\r\022\023\n\013auto_action\030\007 \001(\010\022\025\n\rleft_card"
+  "_num\030\t \001(\005\"\227\001\n\021RMMsgActionChoice\022\030\n\020dete"
+  "rmined_level\030\001 \001(\005\022\024\n\014is_determine\030\002 \001(\010"
+  "\022#\n\007choices\030\003 \003(\0132\022.Rummy.RMMsgAction\022-\n"
+  "\021determined_action\030\004 \001(\0132\022.Rummy.RMMsgAc"
+  "tion\"c\n\017RMMsgGameResult\022\020\n\010game_tax\030\001 \001("
+  "\005\022+\n\013player_info\030\002 \003(\0132\026.Rummy.RMMsgPlay"
+  "erInfo\022\021\n\tend_state\030\003 \001(\005\"D\n\026RMMsgNotify"
+  "Trusteeship\022\022\n\nseat_index\030\001 \001(\005\022\026\n\016is_tr"
+  "usteeship\030\002 \001(\010\"5\n\024RMMsgNotifyPlayerAct\022"
+  "\020\n\010chair_id\030\001 \001(\005\022\013\n\003act\030\002 \001(\005*d\n\014ERMGam"
+  "eState\022\017\n\013GS_TP_READY\020\000\022\016\n\nGS_TP_DEAL\020\001\022"
+  "\021\n\rGS_TP_PLAYING\020\002\022\016\n\nGS_TP_SHOW\020\003\022\020\n\014GS"
+  "_TP_RESULT\020\004*d\n\013PlayerState\022\014\n\010PS_READY\020"
+  "\000\022\013\n\007PS_PLAY\020\001\022\013\n\007PS_GIVE\020\002\022\013\n\007PS_FAIL\020\003"
+  "\022\020\n\014PS_SORT_CARD\020\004\022\016\n\nPS_SHOW_HU\020\005*b\n\rER"
+  "MGameAction\022\r\n\tInvaldAct\020\000\022\014\n\010DropCard\020\001"
+  "\022\n\n\006NaCard\020\002\022\013\n\007ChuCard\020\004\022\r\n\tSortsCard\020\010"
+  "\022\014\n\010ShowCard\020\020*b\n\016ERMColCardType\022\016\n\nCOL_"
+  "SINGLE\020\000\022\016\n\nCOL_BAO_ZI\020\001\022\020\n\014COL_SHUN_ZHI"
+  "\020\002\022\021\n\rCOL_QING_SHUN\020\003\022\013\n\007COL_MAX\020\004*\241\004\n\017E"
+  "RMMsgIDSubGame\022\025\n\021MsgIDSubGame_Null\020\000\022\036\n"
+  "\032MsgIDSubGame_GameStartResp\020\001\022!\n\035MsgIDSu"
+  "bGame_NotifyActionResp\020\002\022\027\n\023MsgIDSubGame"
+  "_Action\020\003\022\033\n\027MsgIDSubGame_ActionResp\020\004\022\037"
+  "\n\033MsgIDSubGame_GameResultResp\020\005\022 \n\034MsgID"
+  "SubGame_NotifyStateResp\020\006\022\034\n\030MsgIDSubGam"
+  "e_TimeOutResp\020\013\022\035\n\031MsgIDSubGame_TimeOutR"
+  "eady\020\014\022!\n\035MsgIDSubGame_TimeOutReadyResp\020"
+  "\r\022 \n\034MsgIDSubGame_TimeOutKickResp\020\016\022&\n\"M"
+  "sgIDSubGame_NotifyTrusteeshipResp\020\017\022&\n\"M"
+  "sgIDSubGame_NotifySystemCheatResp\020\024\022#\n\037M"
+  "sgIDSubGame_NotifyNextCardResp\020\025\022 \n\034MsgI"
+  "DSubGame_NotifyIsMaxResp\020\026\022\"\n\036MsgIDSubGa"
+  "me_NotifyLastActResp\020\031b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Rummy_2eproto_deps[1] = {
 };
@@ -495,7 +498,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Rum
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Rummy_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Rummy_2eproto = {
-  false, false, descriptor_table_protodef_Rummy_2eproto, "Rummy.proto", 2598,
+  false, false, descriptor_table_protodef_Rummy_2eproto, "Rummy.proto", 2630,
   &descriptor_table_Rummy_2eproto_once, descriptor_table_Rummy_2eproto_sccs, descriptor_table_Rummy_2eproto_deps, 13, 0,
   schemas, file_default_instances, TableStruct_Rummy_2eproto::offsets,
   file_level_metadata_Rummy_2eproto, 13, file_level_enum_descriptors_Rummy_2eproto, file_level_service_descriptors_Rummy_2eproto,
@@ -1326,8 +1329,8 @@ RMMsgPlayerInfo::RMMsgPlayerInfo(const RMMsgPlayerInfo& from)
       hand_group_info_(from.hand_group_info_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&chair_id_, &from.chair_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&win_gold_) -
-    reinterpret_cast<char*>(&chair_id_)) + sizeof(win_gold_));
+    static_cast<size_t>(reinterpret_cast<char*>(&cur_act_) -
+    reinterpret_cast<char*>(&chair_id_)) + sizeof(cur_act_));
   // @@protoc_insertion_point(copy_constructor:Rummy.RMMsgPlayerInfo)
 }
 
@@ -1335,8 +1338,8 @@ void RMMsgPlayerInfo::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_RMMsgPlayerInfo_Rummy_2eproto.base);
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&chair_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&win_gold_) -
-      reinterpret_cast<char*>(&chair_id_)) + sizeof(win_gold_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&cur_act_) -
+      reinterpret_cast<char*>(&chair_id_)) + sizeof(cur_act_));
 }
 
 RMMsgPlayerInfo::~RMMsgPlayerInfo() {
@@ -1373,8 +1376,8 @@ void RMMsgPlayerInfo::Clear() {
   cards_.Clear();
   hand_group_info_.Clear();
   ::memset(&chair_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&win_gold_) -
-      reinterpret_cast<char*>(&chair_id_)) + sizeof(win_gold_));
+      reinterpret_cast<char*>(&cur_act_) -
+      reinterpret_cast<char*>(&chair_id_)) + sizeof(cur_act_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -1423,16 +1426,23 @@ const char* RMMsgPlayerInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated .Rummy.RMColumnInfo hand_group_info = 6;
+      // int32 cur_act = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+          cur_act_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated .Rummy.RMColumnInfo hand_group_info = 7;
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
           ptr -= 1;
           do {
             ptr += 1;
             ptr = ctx->ParseMessage(_internal_add_hand_group_info(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<50>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<58>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -1496,12 +1506,18 @@ failure:
     }
   }
 
-  // repeated .Rummy.RMColumnInfo hand_group_info = 6;
+  // int32 cur_act = 6;
+  if (this->cur_act() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_cur_act(), target);
+  }
+
+  // repeated .Rummy.RMColumnInfo hand_group_info = 7;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_hand_group_info_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(6, this->_internal_hand_group_info(i), target, stream);
+      InternalWriteMessage(7, this->_internal_hand_group_info(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1535,7 +1551,7 @@ size_t RMMsgPlayerInfo::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  // repeated .Rummy.RMColumnInfo hand_group_info = 6;
+  // repeated .Rummy.RMColumnInfo hand_group_info = 7;
   total_size += 1UL * this->_internal_hand_group_info_size();
   for (const auto& msg : this->hand_group_info_) {
     total_size +=
@@ -1568,6 +1584,13 @@ size_t RMMsgPlayerInfo::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_win_gold());
+  }
+
+  // int32 cur_act = 6;
+  if (this->cur_act() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_cur_act());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1615,6 +1638,9 @@ void RMMsgPlayerInfo::MergeFrom(const RMMsgPlayerInfo& from) {
   if (from.win_gold() != 0) {
     _internal_set_win_gold(from._internal_win_gold());
   }
+  if (from.cur_act() != 0) {
+    _internal_set_cur_act(from._internal_cur_act());
+  }
 }
 
 void RMMsgPlayerInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -1641,8 +1667,8 @@ void RMMsgPlayerInfo::InternalSwap(RMMsgPlayerInfo* other) {
   cards_.InternalSwap(&other->cards_);
   hand_group_info_.InternalSwap(&other->hand_group_info_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(RMMsgPlayerInfo, win_gold_)
-      + sizeof(RMMsgPlayerInfo::win_gold_)
+      PROTOBUF_FIELD_OFFSET(RMMsgPlayerInfo, cur_act_)
+      + sizeof(RMMsgPlayerInfo::cur_act_)
       - PROTOBUF_FIELD_OFFSET(RMMsgPlayerInfo, chair_id_)>(
           reinterpret_cast<char*>(&chair_id_),
           reinterpret_cast<char*>(&other->chair_id_));
@@ -1673,8 +1699,8 @@ RMMsgSceneInfo::RMMsgSceneInfo(const RMMsgSceneInfo& from)
       player_infos_(from.player_infos_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&max_multiple_, &from.max_multiple_,
-    static_cast<size_t>(reinterpret_cast<char*>(&surplus_card_num_) -
-    reinterpret_cast<char*>(&max_multiple_)) + sizeof(surplus_card_num_));
+    static_cast<size_t>(reinterpret_cast<char*>(&left_card_num_) -
+    reinterpret_cast<char*>(&max_multiple_)) + sizeof(left_card_num_));
   // @@protoc_insertion_point(copy_constructor:Rummy.RMMsgSceneInfo)
 }
 
@@ -1682,8 +1708,8 @@ void RMMsgSceneInfo::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_RMMsgSceneInfo_Rummy_2eproto.base);
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&max_multiple_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&surplus_card_num_) -
-      reinterpret_cast<char*>(&max_multiple_)) + sizeof(surplus_card_num_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&left_card_num_) -
+      reinterpret_cast<char*>(&max_multiple_)) + sizeof(left_card_num_));
 }
 
 RMMsgSceneInfo::~RMMsgSceneInfo() {
@@ -1720,8 +1746,8 @@ void RMMsgSceneInfo::Clear() {
   out_cards_.Clear();
   player_infos_.Clear();
   ::memset(&max_multiple_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&surplus_card_num_) -
-      reinterpret_cast<char*>(&max_multiple_)) + sizeof(surplus_card_num_));
+      reinterpret_cast<char*>(&left_card_num_) -
+      reinterpret_cast<char*>(&max_multiple_)) + sizeof(left_card_num_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -1802,10 +1828,10 @@ const char* RMMsgSceneInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 surplus_card_num = 11;
+      // int32 left_card_num = 11;
       case 11:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 88)) {
-          surplus_card_num_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          left_card_num_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1919,10 +1945,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(10, this->_internal_joker_card(), target);
   }
 
-  // int32 surplus_card_num = 11;
-  if (this->surplus_card_num() != 0) {
+  // int32 left_card_num = 11;
+  if (this->left_card_num() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(11, this->_internal_surplus_card_num(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(11, this->_internal_left_card_num(), target);
   }
 
   // repeated int32 out_cards = 12;
@@ -2050,11 +2076,11 @@ size_t RMMsgSceneInfo::ByteSizeLong() const {
         this->_internal_joker_card());
   }
 
-  // int32 surplus_card_num = 11;
-  if (this->surplus_card_num() != 0) {
+  // int32 left_card_num = 11;
+  if (this->left_card_num() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_surplus_card_num());
+        this->_internal_left_card_num());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -2120,8 +2146,8 @@ void RMMsgSceneInfo::MergeFrom(const RMMsgSceneInfo& from) {
   if (from.joker_card() != 0) {
     _internal_set_joker_card(from._internal_joker_card());
   }
-  if (from.surplus_card_num() != 0) {
-    _internal_set_surplus_card_num(from._internal_surplus_card_num());
+  if (from.left_card_num() != 0) {
+    _internal_set_left_card_num(from._internal_left_card_num());
   }
 }
 
@@ -2149,8 +2175,8 @@ void RMMsgSceneInfo::InternalSwap(RMMsgSceneInfo* other) {
   out_cards_.InternalSwap(&other->out_cards_);
   player_infos_.InternalSwap(&other->player_infos_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(RMMsgSceneInfo, surplus_card_num_)
-      + sizeof(RMMsgSceneInfo::surplus_card_num_)
+      PROTOBUF_FIELD_OFFSET(RMMsgSceneInfo, left_card_num_)
+      + sizeof(RMMsgSceneInfo::left_card_num_)
       - PROTOBUF_FIELD_OFFSET(RMMsgSceneInfo, max_multiple_)>(
           reinterpret_cast<char*>(&max_multiple_),
           reinterpret_cast<char*>(&other->max_multiple_));
@@ -2277,6 +2303,13 @@ const char* RMMsgGameStartResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
+      // int64 new_gold = 9;
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+          new_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       // int32 joker_card = 10;
       case 10:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
@@ -2377,6 +2410,12 @@ failure:
   if (this->max_multiple() != 0) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_max_multiple(), target);
+  }
+
+  // int64 new_gold = 9;
+  if (this->new_gold() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(9, this->_internal_new_gold(), target);
   }
 
   // int32 joker_card = 10;
@@ -2514,6 +2553,13 @@ size_t RMMsgGameStartResp::ByteSizeLong() const {
         this->_internal_max_multiple());
   }
 
+  // int64 new_gold = 9;
+  if (this->new_gold() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_new_gold());
+  }
+
   // int32 joker_card = 10;
   if (this->joker_card() != 0) {
     total_size += 1 +
@@ -2576,6 +2622,9 @@ void RMMsgGameStartResp::MergeFrom(const RMMsgGameStartResp& from) {
   }
   if (from.max_multiple() != 0) {
     _internal_set_max_multiple(from._internal_max_multiple());
+  }
+  if (from.new_gold() != 0) {
+    _internal_set_new_gold(from._internal_new_gold());
   }
   if (from.joker_card() != 0) {
     _internal_set_joker_card(from._internal_joker_card());

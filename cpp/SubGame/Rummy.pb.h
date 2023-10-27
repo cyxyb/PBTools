@@ -849,11 +849,12 @@ class RMMsgPlayerInfo PROTOBUF_FINAL :
 
   enum : int {
     kCardsFieldNumber = 5,
-    kHandGroupInfoFieldNumber = 6,
+    kHandGroupInfoFieldNumber = 7,
     kChairIdFieldNumber = 1,
     kPlayStatusFieldNumber = 2,
     kGoldFieldNumber = 3,
     kWinGoldFieldNumber = 4,
+    kCurActFieldNumber = 6,
   };
   // repeated int32 cards = 5;
   int cards_size() const;
@@ -877,7 +878,7 @@ class RMMsgPlayerInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_cards();
 
-  // repeated .Rummy.RMColumnInfo hand_group_info = 6;
+  // repeated .Rummy.RMColumnInfo hand_group_info = 7;
   int hand_group_info_size() const;
   private:
   int _internal_hand_group_info_size() const;
@@ -931,6 +932,15 @@ class RMMsgPlayerInfo PROTOBUF_FINAL :
   void _internal_set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
+  // int32 cur_act = 6;
+  void clear_cur_act();
+  ::PROTOBUF_NAMESPACE_ID::int32 cur_act() const;
+  void set_cur_act(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_cur_act() const;
+  void _internal_set_cur_act(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:Rummy.RMMsgPlayerInfo)
  private:
   class _Internal;
@@ -945,6 +955,7 @@ class RMMsgPlayerInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 play_status_;
   ::PROTOBUF_NAMESPACE_ID::int64 gold_;
   ::PROTOBUF_NAMESPACE_ID::int64 win_gold_;
+  ::PROTOBUF_NAMESPACE_ID::int32 cur_act_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Rummy_2eproto;
 };
@@ -1074,7 +1085,7 @@ class RMMsgSceneInfo PROTOBUF_FINAL :
     kOutTimeFieldNumber = 8,
     kTotalTimeFieldNumber = 9,
     kJokerCardFieldNumber = 10,
-    kSurplusCardNumFieldNumber = 11,
+    kLeftCardNumFieldNumber = 11,
   };
   // repeated int32 out_cards = 12;
   int out_cards_size() const;
@@ -1206,13 +1217,13 @@ class RMMsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_joker_card(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 surplus_card_num = 11;
-  void clear_surplus_card_num();
-  ::PROTOBUF_NAMESPACE_ID::int32 surplus_card_num() const;
-  void set_surplus_card_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // int32 left_card_num = 11;
+  void clear_left_card_num();
+  ::PROTOBUF_NAMESPACE_ID::int32 left_card_num() const;
+  void set_left_card_num(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_surplus_card_num() const;
-  void _internal_set_surplus_card_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_left_card_num() const;
+  void _internal_set_left_card_num(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:Rummy.RMMsgSceneInfo)
@@ -1235,7 +1246,7 @@ class RMMsgSceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 out_time_;
   ::PROTOBUF_NAMESPACE_ID::int32 total_time_;
   ::PROTOBUF_NAMESPACE_ID::int32 joker_card_;
-  ::PROTOBUF_NAMESPACE_ID::int32 surplus_card_num_;
+  ::PROTOBUF_NAMESPACE_ID::int32 left_card_num_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Rummy_2eproto;
 };
@@ -1361,6 +1372,7 @@ class RMMsgGameStartResp PROTOBUF_FINAL :
     kMaxScoreFieldNumber = 3,
     kCellScoreFieldNumber = 4,
     kMaxMultipleFieldNumber = 5,
+    kNewGoldFieldNumber = 9,
     kJokerCardFieldNumber = 10,
     kLeftCardNumFieldNumber = 11,
   };
@@ -1475,6 +1487,15 @@ class RMMsgGameStartResp PROTOBUF_FINAL :
   void _internal_set_max_multiple(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
+  // int64 new_gold = 9;
+  void clear_new_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 new_gold() const;
+  void set_new_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_new_gold() const;
+  void _internal_set_new_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
   // int32 joker_card = 10;
   void clear_joker_card();
   ::PROTOBUF_NAMESPACE_ID::int32 joker_card() const;
@@ -1511,6 +1532,7 @@ class RMMsgGameStartResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int64 max_score_;
   ::PROTOBUF_NAMESPACE_ID::int64 cell_score_;
   ::PROTOBUF_NAMESPACE_ID::int64 max_multiple_;
+  ::PROTOBUF_NAMESPACE_ID::int64 new_gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 joker_card_;
   ::PROTOBUF_NAMESPACE_ID::int32 left_card_num_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
@@ -3037,7 +3059,27 @@ RMMsgPlayerInfo::mutable_cards() {
   return _internal_mutable_cards();
 }
 
-// repeated .Rummy.RMColumnInfo hand_group_info = 6;
+// int32 cur_act = 6;
+inline void RMMsgPlayerInfo::clear_cur_act() {
+  cur_act_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgPlayerInfo::_internal_cur_act() const {
+  return cur_act_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgPlayerInfo::cur_act() const {
+  // @@protoc_insertion_point(field_get:Rummy.RMMsgPlayerInfo.cur_act)
+  return _internal_cur_act();
+}
+inline void RMMsgPlayerInfo::_internal_set_cur_act(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  cur_act_ = value;
+}
+inline void RMMsgPlayerInfo::set_cur_act(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_cur_act(value);
+  // @@protoc_insertion_point(field_set:Rummy.RMMsgPlayerInfo.cur_act)
+}
+
+// repeated .Rummy.RMColumnInfo hand_group_info = 7;
 inline int RMMsgPlayerInfo::_internal_hand_group_info_size() const {
   return hand_group_info_.size();
 }
@@ -3280,24 +3322,24 @@ inline void RMMsgSceneInfo::set_joker_card(::PROTOBUF_NAMESPACE_ID::int32 value)
   // @@protoc_insertion_point(field_set:Rummy.RMMsgSceneInfo.joker_card)
 }
 
-// int32 surplus_card_num = 11;
-inline void RMMsgSceneInfo::clear_surplus_card_num() {
-  surplus_card_num_ = 0;
+// int32 left_card_num = 11;
+inline void RMMsgSceneInfo::clear_left_card_num() {
+  left_card_num_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgSceneInfo::_internal_surplus_card_num() const {
-  return surplus_card_num_;
+inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgSceneInfo::_internal_left_card_num() const {
+  return left_card_num_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgSceneInfo::surplus_card_num() const {
-  // @@protoc_insertion_point(field_get:Rummy.RMMsgSceneInfo.surplus_card_num)
-  return _internal_surplus_card_num();
+inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgSceneInfo::left_card_num() const {
+  // @@protoc_insertion_point(field_get:Rummy.RMMsgSceneInfo.left_card_num)
+  return _internal_left_card_num();
 }
-inline void RMMsgSceneInfo::_internal_set_surplus_card_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void RMMsgSceneInfo::_internal_set_left_card_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
-  surplus_card_num_ = value;
+  left_card_num_ = value;
 }
-inline void RMMsgSceneInfo::set_surplus_card_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_surplus_card_num(value);
-  // @@protoc_insertion_point(field_set:Rummy.RMMsgSceneInfo.surplus_card_num)
+inline void RMMsgSceneInfo::set_left_card_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_left_card_num(value);
+  // @@protoc_insertion_point(field_set:Rummy.RMMsgSceneInfo.left_card_num)
 }
 
 // repeated int32 out_cards = 12;
@@ -3488,6 +3530,26 @@ inline void RMMsgGameStartResp::_internal_set_max_multiple(::PROTOBUF_NAMESPACE_
 inline void RMMsgGameStartResp::set_max_multiple(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_max_multiple(value);
   // @@protoc_insertion_point(field_set:Rummy.RMMsgGameStartResp.max_multiple)
+}
+
+// int64 new_gold = 9;
+inline void RMMsgGameStartResp::clear_new_gold() {
+  new_gold_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 RMMsgGameStartResp::_internal_new_gold() const {
+  return new_gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 RMMsgGameStartResp::new_gold() const {
+  // @@protoc_insertion_point(field_get:Rummy.RMMsgGameStartResp.new_gold)
+  return _internal_new_gold();
+}
+inline void RMMsgGameStartResp::_internal_set_new_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  new_gold_ = value;
+}
+inline void RMMsgGameStartResp::set_new_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_new_gold(value);
+  // @@protoc_insertion_point(field_set:Rummy.RMMsgGameStartResp.new_gold)
 }
 
 // int32 joker_card = 10;
