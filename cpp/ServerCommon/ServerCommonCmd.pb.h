@@ -263,6 +263,7 @@ enum EMsgIDDB : int {
   DB2LOGIN_OnlineActiveQueryResp = 1076,
   LOGIN2DB_OnlineActivePick = 1077,
   DB2LOGIN_OnlineActivePickResp = 1078,
+  LOGIN2DB_ActiveFBShareData = 1079,
   GAME2DB_Login = 2001,
   DB2GAME_LoginResp = 2002,
   GAME2DB_LoadCheatRate = 2003,

@@ -26,35 +26,36 @@ namespace RedAndBlackIndia {
           string.Concat(
             "CiVQcm90by9TdWJHYW1lL1JlZEFuZEJsYWNrX0luZGlhLnByb3RvEhFSZWRB",
             "bmRCbGFja19JbmRpYSIuCglNc2dSZWNvcmQSDgoGcmVzdWx0GAEgASgFEhEK",
-            "CWNhcmRfdHlwZRgCIAEoBSKqAQoMTXNnU2NlbmVJbmZvEgsKA2JldBgBIAMo",
+            "CWNhcmRfdHlwZRgCIAEoBSK3AQoMTXNnU2NlbmVJbmZvEgsKA2JldBgBIAMo",
             "BRIsCgZyZWNvcmQYAiADKAsyHC5SZWRBbmRCbGFja19JbmRpYS5Nc2dSZWNv",
             "cmQSEQoJYmV0X2xpbWl0GAMgAygFEhQKDHBsYXllcl9saW1pdBgEIAEoBRIS",
             "CgpzdGF0ZV90aW1lGAUgAygFEhMKC3JlbWFpbl90aW1lGAYgASgFEg0KBXN0",
-            "YXRlGAcgASgFIiUKBk1zZ0JldBINCgVpbmRleBgBIAEoBRIMCgRhcmVhGAIg",
-            "ASgFIksKCk1zZ0JldFJlc3ASEAoIY2hhaXJfaWQYASABKAUSKwoIYmV0X2lu",
-            "Zm8YAiABKAsyGS5SZWRBbmRCbGFja19JbmRpYS5Nc2dCZXQiPwoRTXNnU2lu",
-            "Z2xlQWdhaW5CZXQSDQoFaW5kZXgYASABKAUSDAoEYXJlYRgCIAEoBRINCgVj",
-            "b3VudBgDIAEoBSJLCgtNc2dBZ2FpbkJldBI8Cg5hZ2Fpbl9iZXRfaW5mbxgB",
-            "IAMoCzIkLlJlZEFuZEJsYWNrX0luZGlhLk1zZ1NpbmdsZUFnYWluQmV0IlsK",
-            "D01zZ0FnYWluQmV0UmVzcBIQCghjaGFpcl9pZBgBIAEoBRI2Cg5hZ2Fpbl9i",
-            "ZXRfaW5mbxgCIAEoCzIeLlJlZEFuZEJsYWNrX0luZGlhLk1zZ0FnYWluQmV0",
-            "IisKCU1zZ1dpbk1zZxIQCghjaGFpcl9pZBgBIAEoBRIMCgRnb2xkGAIgASgD",
-            "ImsKCU1zZ1Jlc3VsdBItCgd3aW5fbXNnGAEgAygLMhwuUmVkQW5kQmxhY2tf",
-            "SW5kaWEuTXNnV2luTXNnEgwKBGNhcmQYAiADKAUSEQoJY2FyZF90eXBlGAMg",
-            "AygFEg4KBnJlc3VsdBgEIAEoBSI6CgtNc2dUb3RhbEJldBIQCghjaGFpcl9p",
-            "ZBgBIAEoBRILCgNiZXQYAiADKAUSDAoEZ29sZBgDIAMoAyJCCgxNc2dCZXRS",
-            "ZWNvcmQSMgoKYmV0X3JlY29yZBgBIAMoCzIeLlJlZEFuZEJsYWNrX0luZGlh",
-            "Lk1zZ1RvdGFsQmV0KvMBCg1FTXNnSURTdWJHYW1lEhUKEU1zZ0lEU3ViR2Ft",
-            "ZV9OdWxsEAASFAoQTXNnSURTdWJHYW1lX0JldBABEhgKFE1zZ0lEU3ViR2Ft",
-            "ZV9CZXRSZXNwEAISGQoVTXNnSURTdWJHYW1lX0FnYWluQmV0EAMSHQoZTXNn",
-            "SURTdWJHYW1lX0FnYWluQmV0UmVzcBAEEh8KG01zZ0lEU3ViR2FtZV9HYW1l",
-            "UmVzdWx0UmVzcBAFEh4KGk1zZ0lEU3ViR2FtZV9CZXRSZWNvcmRSZXNwEAYS",
-            "IAocTXNnSURTdWJHYW1lX05vdGlmeVN0YXRlUmVzcBAHYgZwcm90bzM="));
+            "YXRlGAcgASgFEgsKA211bBgIIAMoBSIlCgZNc2dCZXQSDQoFaW5kZXgYASAB",
+            "KAUSDAoEYXJlYRgCIAEoBSJLCgpNc2dCZXRSZXNwEhAKCGNoYWlyX2lkGAEg",
+            "ASgFEisKCGJldF9pbmZvGAIgASgLMhkuUmVkQW5kQmxhY2tfSW5kaWEuTXNn",
+            "QmV0Ij8KEU1zZ1NpbmdsZUFnYWluQmV0Eg0KBWluZGV4GAEgASgFEgwKBGFy",
+            "ZWEYAiABKAUSDQoFY291bnQYAyABKAUiSwoLTXNnQWdhaW5CZXQSPAoOYWdh",
+            "aW5fYmV0X2luZm8YASADKAsyJC5SZWRBbmRCbGFja19JbmRpYS5Nc2dTaW5n",
+            "bGVBZ2FpbkJldCJbCg9Nc2dBZ2FpbkJldFJlc3ASEAoIY2hhaXJfaWQYASAB",
+            "KAUSNgoOYWdhaW5fYmV0X2luZm8YAiABKAsyHi5SZWRBbmRCbGFja19JbmRp",
+            "YS5Nc2dBZ2FpbkJldCIrCglNc2dXaW5Nc2cSEAoIY2hhaXJfaWQYASABKAUS",
+            "DAoEZ29sZBgCIAEoAyJrCglNc2dSZXN1bHQSLQoHd2luX21zZxgBIAMoCzIc",
+            "LlJlZEFuZEJsYWNrX0luZGlhLk1zZ1dpbk1zZxIMCgRjYXJkGAIgAygFEhEK",
+            "CWNhcmRfdHlwZRgDIAMoBRIOCgZyZXN1bHQYBCABKAUiOgoLTXNnVG90YWxC",
+            "ZXQSEAoIY2hhaXJfaWQYASABKAUSCwoDYmV0GAIgAygFEgwKBGdvbGQYAyAD",
+            "KAMiQgoMTXNnQmV0UmVjb3JkEjIKCmJldF9yZWNvcmQYASADKAsyHi5SZWRB",
+            "bmRCbGFja19JbmRpYS5Nc2dUb3RhbEJldCrzAQoNRU1zZ0lEU3ViR2FtZRIV",
+            "ChFNc2dJRFN1YkdhbWVfTnVsbBAAEhQKEE1zZ0lEU3ViR2FtZV9CZXQQARIY",
+            "ChRNc2dJRFN1YkdhbWVfQmV0UmVzcBACEhkKFU1zZ0lEU3ViR2FtZV9BZ2Fp",
+            "bkJldBADEh0KGU1zZ0lEU3ViR2FtZV9BZ2FpbkJldFJlc3AQBBIfChtNc2dJ",
+            "RFN1YkdhbWVfR2FtZVJlc3VsdFJlc3AQBRIeChpNc2dJRFN1YkdhbWVfQmV0",
+            "UmVjb3JkUmVzcBAGEiAKHE1zZ0lEU3ViR2FtZV9Ob3RpZnlTdGF0ZVJlc3AQ",
+            "B2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::RedAndBlackIndia.EMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::RedAndBlackIndia.MsgRecord), global::RedAndBlackIndia.MsgRecord.Parser, new[]{ "Result", "CardType" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::RedAndBlackIndia.MsgSceneInfo), global::RedAndBlackIndia.MsgSceneInfo.Parser, new[]{ "Bet", "Record", "BetLimit", "PlayerLimit", "StateTime", "RemainTime", "State" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::RedAndBlackIndia.MsgSceneInfo), global::RedAndBlackIndia.MsgSceneInfo.Parser, new[]{ "Bet", "Record", "BetLimit", "PlayerLimit", "StateTime", "RemainTime", "State", "Mul" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::RedAndBlackIndia.MsgBet), global::RedAndBlackIndia.MsgBet.Parser, new[]{ "Index", "Area" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::RedAndBlackIndia.MsgBetResp), global::RedAndBlackIndia.MsgBetResp.Parser, new[]{ "ChairId", "BetInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::RedAndBlackIndia.MsgSingleAgainBet), global::RedAndBlackIndia.MsgSingleAgainBet.Parser, new[]{ "Index", "Area", "Count" }, null, null, null, null),
@@ -361,6 +362,7 @@ namespace RedAndBlackIndia {
       stateTime_ = other.stateTime_.Clone();
       remainTime_ = other.remainTime_;
       state_ = other.state_;
+      mul_ = other.mul_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -463,6 +465,19 @@ namespace RedAndBlackIndia {
       }
     }
 
+    /// <summary>Field number for the "mul" field.</summary>
+    public const int MulFieldNumber = 8;
+    private static readonly pb::FieldCodec<int> _repeated_mul_codec
+        = pb::FieldCodec.ForInt32(66);
+    private readonly pbc::RepeatedField<int> mul_ = new pbc::RepeatedField<int>();
+    /// <summary>
+    ///倍数(红、黑、对子(9-A)、金花、顺子、同花顺、三条)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<int> Mul {
+      get { return mul_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as MsgSceneInfo);
@@ -483,6 +498,7 @@ namespace RedAndBlackIndia {
       if(!stateTime_.Equals(other.stateTime_)) return false;
       if (RemainTime != other.RemainTime) return false;
       if (State != other.State) return false;
+      if(!mul_.Equals(other.mul_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -496,6 +512,7 @@ namespace RedAndBlackIndia {
       hash ^= stateTime_.GetHashCode();
       if (RemainTime != 0) hash ^= RemainTime.GetHashCode();
       if (State != 0) hash ^= State.GetHashCode();
+      hash ^= mul_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -528,6 +545,7 @@ namespace RedAndBlackIndia {
         output.WriteRawTag(56);
         output.WriteInt32(State);
       }
+      mul_.WriteTo(output, _repeated_mul_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -553,6 +571,7 @@ namespace RedAndBlackIndia {
         output.WriteRawTag(56);
         output.WriteInt32(State);
       }
+      mul_.WriteTo(ref output, _repeated_mul_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -575,6 +594,7 @@ namespace RedAndBlackIndia {
       if (State != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(State);
       }
+      size += mul_.CalculateSize(_repeated_mul_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -599,6 +619,7 @@ namespace RedAndBlackIndia {
       if (other.State != 0) {
         State = other.State;
       }
+      mul_.Add(other.mul_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -644,6 +665,11 @@ namespace RedAndBlackIndia {
             State = input.ReadInt32();
             break;
           }
+          case 66:
+          case 64: {
+            mul_.AddEntriesFrom(input, _repeated_mul_codec);
+            break;
+          }
         }
       }
     #endif
@@ -687,6 +713,11 @@ namespace RedAndBlackIndia {
           }
           case 56: {
             State = input.ReadInt32();
+            break;
+          }
+          case 66:
+          case 64: {
+            mul_.AddEntriesFrom(ref input, _repeated_mul_codec);
             break;
           }
         }

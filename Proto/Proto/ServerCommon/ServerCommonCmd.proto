@@ -184,6 +184,7 @@ enum EMsgIDDB
 	DB2LOGIN_OnlineActiveQueryResp		= 1076;	//在线查询返回
 	LOGIN2DB_OnlineActivePick			= 1077;	//在线领取数据
 	DB2LOGIN_OnlineActivePickResp		= 1078;	//在线领取返回
+	LOGIN2DB_ActiveFBShareData			= 1079;	//日常任务fb分享任务			
 	//2001-3000 GameServer2DB	
 	GAME2DB_Login						= 2001;	//玩家登录游戏
 	DB2GAME_LoginResp					= 2002;	//玩家登录游戏返回

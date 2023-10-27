@@ -122,6 +122,7 @@ enum EMsgIDLogin
 	MsgIDOnline_OnlineActiveQueryResp			= 108;		//在线查询返回(MsgOnlineActiveQuery)
 	MsgIDOnline_OnlineActivePick				= 109;		//在线领取(MsgCommonN32)
 	MsgIDOnline_OnlineActivePickResp			= 110;		//在线领取返回(MsgOlineActiveAward)
+	MsgIDActive_ActiveFBShareData				= 111;		//日常任务fb分享任务(MsgCommonBool)
 }
 
 enum EMsgIDGame
@@ -163,4 +164,7 @@ enum EMsgIDChat
 	MsgIDChat_NotifyChatTrumpetMsgResp	= 2007;		//发送小喇叭消息返回(MsgNotifyChatTrumpetMsg)
 	MsgIDChat_SyncUserInfoResp			= 2008;		//同步玩家信息(MsgSyncUserInfo)
 	MsgIDChat_SetLilitChatResp			= 2009;		//设置限制聊天返回(MsgCommonN32)
+	MsgIDChat_GetChatHistory			= 2010;		//获取聊天历史记录(MsgChatHistory)
+	MsgIDChat_GetChatHistoryResp		= 2011;		//获取聊天历史记录返回(MsgChatHistoryResp)
+	
 }

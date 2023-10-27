@@ -58,15 +58,17 @@ message MsgBroadcastZmdTip
 //通知普通聊天消息
 message MsgNotifyChatNormalMsg
 {
-	int32	user_id				= 1;		//用户ID
-	string	message				= 2;		//聊天内容
+	int32	index				= 1;		//消息索引
+	int32	user_id				= 2;		//用户ID
+	string	message				= 3;		//聊天内容
 }
 
 //通知聊天消息
 message MsgNotifyChatTrumpetMsg
 {
-	MsgChatPlayerInfo player_info	= 1;		//玩家信息
-	string	message					= 2;		//聊天内容
+	int32	index					= 1;		//消息索引
+	MsgChatPlayerInfo player_info	= 2;		//玩家信息
+	string	message					= 3;		//聊天内容
 }
 
 //聊天玩家数据
