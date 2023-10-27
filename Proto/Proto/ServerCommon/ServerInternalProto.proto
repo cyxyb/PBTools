@@ -61,6 +61,14 @@ message MsgSendPhoneCode
 {
 	string	phone				= 1;		//手机号
 	int32	code				= 2;		//验证码
+	int32	id					= 3;		//索引
+}
+
+//更新验证码状态
+message MsgUpdatePhoneCodeState
+{
+	int32	id					= 1;		//索引
+	string	channel				= 4;		//渠道名
 }
 
 //更新游戏服务器在线人数
