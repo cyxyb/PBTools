@@ -473,3 +473,10 @@ message MsgDBOnlineActivePick
 	int32 	user_id = 1;					//玩家ID
 	int32 	type 	= 2;					//类型
 }
+
+//使用兑换码
+message MsgDBCDKExchange
+{
+	int32 	user_id 	= 1;				//玩家ID
+	string 	cdk_code 	= 2;				//兑换码
+}

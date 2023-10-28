@@ -123,6 +123,8 @@ enum EMsgIDLogin
 	MsgIDOnline_OnlineActivePick				= 109;		//在线领取(MsgCommonN32)
 	MsgIDOnline_OnlineActivePickResp			= 110;		//在线领取返回(MsgOlineActiveAward)
 	MsgIDActive_ActiveFBShareData				= 111;		//日常任务fb分享任务(MsgCommonBool)
+	MsgIDCDK_CDKexchangeInfo					= 112;		//CDK兑换码查询信息(MsgCommonStr)
+	MsgIDCDK_CDKexchangeInfoResp				= 113;		//CDK兑换码查询信息返回(MsgCDKExchangeResp)
 }
 
 enum EMsgIDGame

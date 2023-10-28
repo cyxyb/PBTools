@@ -152,8 +152,10 @@ public static partial class LoginReflection {
           "EgoKdXNlcl90aW1lcxgBIAEoBRIQCghpbmRleF9pZBgCIAMoBRItCg1vbmxp",
           "bmVfY29uZmlnGAMgAygLMhYuTXNnT25saW5lQWN0aXZlQ29uZmlnIlwKE01z",
           "Z09saW5lQWN0aXZlQXdhcmQSDwoHaXRlbV9pZBgBIAEoBRIQCghpdGVtX251",
-          "bRgCIAEoBRIMCgR0eXBlGAMgASgFEhQKDG9ubGluZV9pbmRleBgEIAEoBWIG",
-          "cHJvdG8z"));
+          "bRgCIAEoBRIMCgR0eXBlGAMgASgFEhQKDG9ubGluZV9pbmRleBgEIAEoBSJc",
+          "ChJNc2dDREtFeGNoYW5nZVJlc3ASEAoIcmV0X2NvZGUYASABKAUSDwoHaXRl",
+          "bV9pZBgCIAEoBRIQCghpdGVtX251bRgDIAEoBRIRCglpdGVtX3R5cGUYBCAB",
+          "KAViBnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -210,7 +212,8 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgDotRechargeResp), global::MsgDotRechargeResp.Parser, new[]{ "IsNewRecharge", "Gold", "RechargeInfo" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgOnlineActiveConfig), global::MsgOnlineActiveConfig.Parser, new[]{ "ItemId", "ItemNum", "Type", "OnlineIndex", "Times" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgOnlineActiveQuery), global::MsgOnlineActiveQuery.Parser, new[]{ "UserTimes", "IndexId", "OnlineConfig" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgOlineActiveAward), global::MsgOlineActiveAward.Parser, new[]{ "ItemId", "ItemNum", "Type", "OnlineIndex" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgOlineActiveAward), global::MsgOlineActiveAward.Parser, new[]{ "ItemId", "ItemNum", "Type", "OnlineIndex" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgCDKExchangeResp), global::MsgCDKExchangeResp.Parser, new[]{ "RetCode", "ItemId", "ItemNum", "ItemType" }, null, null, null, null)
         }));
   }
   #endregion
@@ -16670,6 +16673,301 @@ public sealed partial class MsgOlineActiveAward : pb::IMessage<MsgOlineActiveAwa
         }
         case 32: {
           OnlineIndex = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///CDK使用兑换
+/// </summary>
+public sealed partial class MsgCDKExchangeResp : pb::IMessage<MsgCDKExchangeResp>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgCDKExchangeResp> _parser = new pb::MessageParser<MsgCDKExchangeResp>(() => new MsgCDKExchangeResp());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgCDKExchangeResp> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[54]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgCDKExchangeResp() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgCDKExchangeResp(MsgCDKExchangeResp other) : this() {
+    retCode_ = other.retCode_;
+    itemId_ = other.itemId_;
+    itemNum_ = other.itemNum_;
+    itemType_ = other.itemType_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgCDKExchangeResp Clone() {
+    return new MsgCDKExchangeResp(this);
+  }
+
+  /// <summary>Field number for the "ret_code" field.</summary>
+  public const int RetCodeFieldNumber = 1;
+  private int retCode_;
+  /// <summary>
+  ///返回多语言码：0成功
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int RetCode {
+    get { return retCode_; }
+    set {
+      retCode_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "item_id" field.</summary>
+  public const int ItemIdFieldNumber = 2;
+  private int itemId_;
+  /// <summary>
+  ///奖励道具id
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int ItemId {
+    get { return itemId_; }
+    set {
+      itemId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "item_num" field.</summary>
+  public const int ItemNumFieldNumber = 3;
+  private int itemNum_;
+  /// <summary>
+  ///奖励道具数量
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int ItemNum {
+    get { return itemNum_; }
+    set {
+      itemNum_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "item_type" field.</summary>
+  public const int ItemTypeFieldNumber = 4;
+  private int itemType_;
+  /// <summary>
+  ///奖励道具类型：1金币
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int ItemType {
+    get { return itemType_; }
+    set {
+      itemType_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgCDKExchangeResp);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgCDKExchangeResp other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (RetCode != other.RetCode) return false;
+    if (ItemId != other.ItemId) return false;
+    if (ItemNum != other.ItemNum) return false;
+    if (ItemType != other.ItemType) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (RetCode != 0) hash ^= RetCode.GetHashCode();
+    if (ItemId != 0) hash ^= ItemId.GetHashCode();
+    if (ItemNum != 0) hash ^= ItemNum.GetHashCode();
+    if (ItemType != 0) hash ^= ItemType.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (RetCode != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(RetCode);
+    }
+    if (ItemId != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(ItemId);
+    }
+    if (ItemNum != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(ItemNum);
+    }
+    if (ItemType != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(ItemType);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (RetCode != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(RetCode);
+    }
+    if (ItemId != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(ItemId);
+    }
+    if (ItemNum != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(ItemNum);
+    }
+    if (ItemType != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(ItemType);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (RetCode != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(RetCode);
+    }
+    if (ItemId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(ItemId);
+    }
+    if (ItemNum != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(ItemNum);
+    }
+    if (ItemType != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(ItemType);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgCDKExchangeResp other) {
+    if (other == null) {
+      return;
+    }
+    if (other.RetCode != 0) {
+      RetCode = other.RetCode;
+    }
+    if (other.ItemId != 0) {
+      ItemId = other.ItemId;
+    }
+    if (other.ItemNum != 0) {
+      ItemNum = other.ItemNum;
+    }
+    if (other.ItemType != 0) {
+      ItemType = other.ItemType;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          RetCode = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          ItemId = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          ItemNum = input.ReadInt32();
+          break;
+        }
+        case 32: {
+          ItemType = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          RetCode = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          ItemId = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          ItemNum = input.ReadInt32();
+          break;
+        }
+        case 32: {
+          ItemType = input.ReadInt32();
           break;
         }
       }

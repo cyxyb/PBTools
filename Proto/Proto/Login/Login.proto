@@ -488,3 +488,12 @@ message MsgOlineActiveAward
 	int32 type = 3;							//奖励类型
 	int32 online_index = 4;					//奖励索引
 }
+
+//CDK使用兑换
+message MsgCDKExchangeResp
+{
+	int32 ret_code 	= 1;					//返回多语言码：0成功
+	int32 item_id 	= 2;					//奖励道具id
+	int32 item_num 	= 3;					//奖励道具数量
+	int32 item_type = 4;					//奖励道具类型：1金币
+}
