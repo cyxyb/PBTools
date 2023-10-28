@@ -488,12 +488,12 @@ message MsgOlineActiveAward
 //CDK使用兑换
 message MsgCDKExchange
 {
-	int32 ret_code 	= 1;					//返回多语言码：0成功
-	int32 item_id 	= 2;					//奖励道具id
-	int32 item_num 	= 3;					//奖励道具数量
-	int32 item_type = 4;					//奖励道具类型：1金币
+	int32 item_id 	= 1;					//奖励道具id
+	int32 item_num 	= 2;					//奖励道具数量
+	int32 item_type = 3;					//奖励道具类型：1金币
 }
-message MsgCDKExchangeReso
+message MsgCDKExchangeResp
 {
-	repeated MsgCDKExchange info = 1;		//奖励列表
+	int32 ret_code 	= 1;					//返回多语言码：0成功
+	repeated MsgCDKExchange info = 2;		//奖励列表
 }

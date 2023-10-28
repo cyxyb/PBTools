@@ -151,10 +151,10 @@ public static partial class LoginReflection {
           "dGltZXMYASABKAUSEAoIaW5kZXhfaWQYAiADKAUSLQoNb25saW5lX2NvbmZp",
           "ZxgDIAMoCzIWLk1zZ09ubGluZUFjdGl2ZUNvbmZpZyJcChNNc2dPbGluZUFj",
           "dGl2ZUF3YXJkEg8KB2l0ZW1faWQYASABKAUSEAoIaXRlbV9udW0YAiABKAUS",
-          "DAoEdHlwZRgDIAEoBRIUCgxvbmxpbmVfaW5kZXgYBCABKAUiWAoOTXNnQ0RL",
-          "RXhjaGFuZ2USEAoIcmV0X2NvZGUYASABKAUSDwoHaXRlbV9pZBgCIAEoBRIQ",
-          "CghpdGVtX251bRgDIAEoBRIRCglpdGVtX3R5cGUYBCABKAUiMwoSTXNnQ0RL",
-          "RXhjaGFuZ2VSZXNvEh0KBGluZm8YASADKAsyDy5Nc2dDREtFeGNoYW5nZWIG",
+          "DAoEdHlwZRgDIAEoBRIUCgxvbmxpbmVfaW5kZXgYBCABKAUiRgoOTXNnQ0RL",
+          "RXhjaGFuZ2USDwoHaXRlbV9pZBgBIAEoBRIQCghpdGVtX251bRgCIAEoBRIR",
+          "CglpdGVtX3R5cGUYAyABKAUiRQoSTXNnQ0RLRXhjaGFuZ2VSZXNwEhAKCHJl",
+          "dF9jb2RlGAEgASgFEh0KBGluZm8YAiADKAsyDy5Nc2dDREtFeGNoYW5nZWIG",
           "cHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
@@ -212,8 +212,8 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgOnlineActiveConfig), global::MsgOnlineActiveConfig.Parser, new[]{ "ItemId", "ItemNum", "Type", "OnlineIndex", "Times" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgOnlineActiveQuery), global::MsgOnlineActiveQuery.Parser, new[]{ "UserTimes", "IndexId", "OnlineConfig" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgOlineActiveAward), global::MsgOlineActiveAward.Parser, new[]{ "ItemId", "ItemNum", "Type", "OnlineIndex" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgCDKExchange), global::MsgCDKExchange.Parser, new[]{ "RetCode", "ItemId", "ItemNum", "ItemType" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgCDKExchangeReso), global::MsgCDKExchangeReso.Parser, new[]{ "Info" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgCDKExchange), global::MsgCDKExchange.Parser, new[]{ "ItemId", "ItemNum", "ItemType" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgCDKExchangeResp), global::MsgCDKExchangeResp.Parser, new[]{ "RetCode", "Info" }, null, null, null, null)
         }));
   }
   #endregion
@@ -16503,7 +16503,6 @@ public sealed partial class MsgCDKExchange : pb::IMessage<MsgCDKExchange>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public MsgCDKExchange(MsgCDKExchange other) : this() {
-    retCode_ = other.retCode_;
     itemId_ = other.itemId_;
     itemNum_ = other.itemNum_;
     itemType_ = other.itemType_;
@@ -16515,22 +16514,8 @@ public sealed partial class MsgCDKExchange : pb::IMessage<MsgCDKExchange>
     return new MsgCDKExchange(this);
   }
 
-  /// <summary>Field number for the "ret_code" field.</summary>
-  public const int RetCodeFieldNumber = 1;
-  private int retCode_;
-  /// <summary>
-  ///返回多语言码：0成功
-  /// </summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public int RetCode {
-    get { return retCode_; }
-    set {
-      retCode_ = value;
-    }
-  }
-
   /// <summary>Field number for the "item_id" field.</summary>
-  public const int ItemIdFieldNumber = 2;
+  public const int ItemIdFieldNumber = 1;
   private int itemId_;
   /// <summary>
   ///奖励道具id
@@ -16544,7 +16529,7 @@ public sealed partial class MsgCDKExchange : pb::IMessage<MsgCDKExchange>
   }
 
   /// <summary>Field number for the "item_num" field.</summary>
-  public const int ItemNumFieldNumber = 3;
+  public const int ItemNumFieldNumber = 2;
   private int itemNum_;
   /// <summary>
   ///奖励道具数量
@@ -16558,7 +16543,7 @@ public sealed partial class MsgCDKExchange : pb::IMessage<MsgCDKExchange>
   }
 
   /// <summary>Field number for the "item_type" field.</summary>
-  public const int ItemTypeFieldNumber = 4;
+  public const int ItemTypeFieldNumber = 3;
   private int itemType_;
   /// <summary>
   ///奖励道具类型：1金币
@@ -16584,7 +16569,6 @@ public sealed partial class MsgCDKExchange : pb::IMessage<MsgCDKExchange>
     if (ReferenceEquals(other, this)) {
       return true;
     }
-    if (RetCode != other.RetCode) return false;
     if (ItemId != other.ItemId) return false;
     if (ItemNum != other.ItemNum) return false;
     if (ItemType != other.ItemType) return false;
@@ -16594,7 +16578,6 @@ public sealed partial class MsgCDKExchange : pb::IMessage<MsgCDKExchange>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override int GetHashCode() {
     int hash = 1;
-    if (RetCode != 0) hash ^= RetCode.GetHashCode();
     if (ItemId != 0) hash ^= ItemId.GetHashCode();
     if (ItemNum != 0) hash ^= ItemNum.GetHashCode();
     if (ItemType != 0) hash ^= ItemType.GetHashCode();
@@ -16614,20 +16597,16 @@ public sealed partial class MsgCDKExchange : pb::IMessage<MsgCDKExchange>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     output.WriteRawMessage(this);
   #else
-    if (RetCode != 0) {
-      output.WriteRawTag(8);
-      output.WriteInt32(RetCode);
-    }
     if (ItemId != 0) {
-      output.WriteRawTag(16);
+      output.WriteRawTag(8);
       output.WriteInt32(ItemId);
     }
     if (ItemNum != 0) {
-      output.WriteRawTag(24);
+      output.WriteRawTag(16);
       output.WriteInt32(ItemNum);
     }
     if (ItemType != 0) {
-      output.WriteRawTag(32);
+      output.WriteRawTag(24);
       output.WriteInt32(ItemType);
     }
     if (_unknownFields != null) {
@@ -16639,20 +16618,16 @@ public sealed partial class MsgCDKExchange : pb::IMessage<MsgCDKExchange>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-    if (RetCode != 0) {
-      output.WriteRawTag(8);
-      output.WriteInt32(RetCode);
-    }
     if (ItemId != 0) {
-      output.WriteRawTag(16);
+      output.WriteRawTag(8);
       output.WriteInt32(ItemId);
     }
     if (ItemNum != 0) {
-      output.WriteRawTag(24);
+      output.WriteRawTag(16);
       output.WriteInt32(ItemNum);
     }
     if (ItemType != 0) {
-      output.WriteRawTag(32);
+      output.WriteRawTag(24);
       output.WriteInt32(ItemType);
     }
     if (_unknownFields != null) {
@@ -16664,9 +16639,6 @@ public sealed partial class MsgCDKExchange : pb::IMessage<MsgCDKExchange>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int CalculateSize() {
     int size = 0;
-    if (RetCode != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeInt32Size(RetCode);
-    }
     if (ItemId != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(ItemId);
     }
@@ -16686,9 +16658,6 @@ public sealed partial class MsgCDKExchange : pb::IMessage<MsgCDKExchange>
   public void MergeFrom(MsgCDKExchange other) {
     if (other == null) {
       return;
-    }
-    if (other.RetCode != 0) {
-      RetCode = other.RetCode;
     }
     if (other.ItemId != 0) {
       ItemId = other.ItemId;
@@ -16714,19 +16683,222 @@ public sealed partial class MsgCDKExchange : pb::IMessage<MsgCDKExchange>
           _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
           break;
         case 8: {
-          RetCode = input.ReadInt32();
-          break;
-        }
-        case 16: {
           ItemId = input.ReadInt32();
           break;
         }
-        case 24: {
+        case 16: {
           ItemNum = input.ReadInt32();
           break;
         }
-        case 32: {
+        case 24: {
           ItemType = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          ItemId = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          ItemNum = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          ItemType = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+public sealed partial class MsgCDKExchangeResp : pb::IMessage<MsgCDKExchangeResp>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgCDKExchangeResp> _parser = new pb::MessageParser<MsgCDKExchangeResp>(() => new MsgCDKExchangeResp());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgCDKExchangeResp> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[54]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgCDKExchangeResp() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgCDKExchangeResp(MsgCDKExchangeResp other) : this() {
+    retCode_ = other.retCode_;
+    info_ = other.info_.Clone();
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgCDKExchangeResp Clone() {
+    return new MsgCDKExchangeResp(this);
+  }
+
+  /// <summary>Field number for the "ret_code" field.</summary>
+  public const int RetCodeFieldNumber = 1;
+  private int retCode_;
+  /// <summary>
+  ///返回多语言码：0成功
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int RetCode {
+    get { return retCode_; }
+    set {
+      retCode_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "info" field.</summary>
+  public const int InfoFieldNumber = 2;
+  private static readonly pb::FieldCodec<global::MsgCDKExchange> _repeated_info_codec
+      = pb::FieldCodec.ForMessage(18, global::MsgCDKExchange.Parser);
+  private readonly pbc::RepeatedField<global::MsgCDKExchange> info_ = new pbc::RepeatedField<global::MsgCDKExchange>();
+  /// <summary>
+  ///奖励列表
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<global::MsgCDKExchange> Info {
+    get { return info_; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgCDKExchangeResp);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgCDKExchangeResp other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (RetCode != other.RetCode) return false;
+    if(!info_.Equals(other.info_)) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (RetCode != 0) hash ^= RetCode.GetHashCode();
+    hash ^= info_.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (RetCode != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(RetCode);
+    }
+    info_.WriteTo(output, _repeated_info_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (RetCode != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(RetCode);
+    }
+    info_.WriteTo(ref output, _repeated_info_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (RetCode != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(RetCode);
+    }
+    size += info_.CalculateSize(_repeated_info_codec);
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgCDKExchangeResp other) {
+    if (other == null) {
+      return;
+    }
+    if (other.RetCode != 0) {
+      RetCode = other.RetCode;
+    }
+    info_.Add(other.info_);
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          RetCode = input.ReadInt32();
+          break;
+        }
+        case 18: {
+          info_.AddEntriesFrom(input, _repeated_info_codec);
           break;
         }
       }
@@ -16747,179 +16919,7 @@ public sealed partial class MsgCDKExchange : pb::IMessage<MsgCDKExchange>
           RetCode = input.ReadInt32();
           break;
         }
-        case 16: {
-          ItemId = input.ReadInt32();
-          break;
-        }
-        case 24: {
-          ItemNum = input.ReadInt32();
-          break;
-        }
-        case 32: {
-          ItemType = input.ReadInt32();
-          break;
-        }
-      }
-    }
-  }
-  #endif
-
-}
-
-public sealed partial class MsgCDKExchangeReso : pb::IMessage<MsgCDKExchangeReso>
-#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    , pb::IBufferMessage
-#endif
-{
-  private static readonly pb::MessageParser<MsgCDKExchangeReso> _parser = new pb::MessageParser<MsgCDKExchangeReso>(() => new MsgCDKExchangeReso());
-  private pb::UnknownFieldSet _unknownFields;
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pb::MessageParser<MsgCDKExchangeReso> Parser { get { return _parser; } }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[54]; }
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  pbr::MessageDescriptor pb::IMessage.Descriptor {
-    get { return Descriptor; }
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public MsgCDKExchangeReso() {
-    OnConstruction();
-  }
-
-  partial void OnConstruction();
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public MsgCDKExchangeReso(MsgCDKExchangeReso other) : this() {
-    info_ = other.info_.Clone();
-    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public MsgCDKExchangeReso Clone() {
-    return new MsgCDKExchangeReso(this);
-  }
-
-  /// <summary>Field number for the "info" field.</summary>
-  public const int InfoFieldNumber = 1;
-  private static readonly pb::FieldCodec<global::MsgCDKExchange> _repeated_info_codec
-      = pb::FieldCodec.ForMessage(10, global::MsgCDKExchange.Parser);
-  private readonly pbc::RepeatedField<global::MsgCDKExchange> info_ = new pbc::RepeatedField<global::MsgCDKExchange>();
-  /// <summary>
-  ///奖励列表
-  /// </summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public pbc::RepeatedField<global::MsgCDKExchange> Info {
-    get { return info_; }
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public override bool Equals(object other) {
-    return Equals(other as MsgCDKExchangeReso);
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Equals(MsgCDKExchangeReso other) {
-    if (ReferenceEquals(other, null)) {
-      return false;
-    }
-    if (ReferenceEquals(other, this)) {
-      return true;
-    }
-    if(!info_.Equals(other.info_)) return false;
-    return Equals(_unknownFields, other._unknownFields);
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public override int GetHashCode() {
-    int hash = 1;
-    hash ^= info_.GetHashCode();
-    if (_unknownFields != null) {
-      hash ^= _unknownFields.GetHashCode();
-    }
-    return hash;
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public override string ToString() {
-    return pb::JsonFormatter.ToDiagnosticString(this);
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void WriteTo(pb::CodedOutputStream output) {
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    output.WriteRawMessage(this);
-  #else
-    info_.WriteTo(output, _repeated_info_codec);
-    if (_unknownFields != null) {
-      _unknownFields.WriteTo(output);
-    }
-  #endif
-  }
-
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-    info_.WriteTo(ref output, _repeated_info_codec);
-    if (_unknownFields != null) {
-      _unknownFields.WriteTo(ref output);
-    }
-  }
-  #endif
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public int CalculateSize() {
-    int size = 0;
-    size += info_.CalculateSize(_repeated_info_codec);
-    if (_unknownFields != null) {
-      size += _unknownFields.CalculateSize();
-    }
-    return size;
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(MsgCDKExchangeReso other) {
-    if (other == null) {
-      return;
-    }
-    info_.Add(other.info_);
-    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(pb::CodedInputStream input) {
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    input.ReadRawMessage(this);
-  #else
-    uint tag;
-    while ((tag = input.ReadTag()) != 0) {
-      switch(tag) {
-        default:
-          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-          break;
-        case 10: {
-          info_.AddEntriesFrom(input, _repeated_info_codec);
-          break;
-        }
-      }
-    }
-  #endif
-  }
-
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-    uint tag;
-    while ((tag = input.ReadTag()) != 0) {
-      switch(tag) {
-        default:
-          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-          break;
-        case 10: {
+        case 18: {
           info_.AddEntriesFrom(ref input, _repeated_info_codec);
           break;
         }
