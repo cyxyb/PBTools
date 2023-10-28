@@ -16,6 +16,7 @@
 #include <google/protobuf/port_def.inc>
 extern PROTOBUF_INTERNAL_EXPORT_Login_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ActiveInfoRet_Login_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_Login_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgBindParentInfo_Login_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_Login_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgCDKExchange_Login_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_Login_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgCommonKV_Login_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_Login_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgInviteAwardConfig_Login_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_Login_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgItem_Login_2eproto;
@@ -137,10 +138,6 @@ class MsgPlayerInfoDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgPlayerInfo> _instance;
 } _MsgPlayerInfo_default_instance_;
-class MsgActiveInfoDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgActiveInfo> _instance;
-} _MsgActiveInfo_default_instance_;
 class ActiveInfoRetDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<ActiveInfoRet> _instance;
@@ -245,10 +242,14 @@ class MsgOlineActiveAwardDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgOlineActiveAward> _instance;
 } _MsgOlineActiveAward_default_instance_;
-class MsgCDKExchangeRespDefaultTypeInternal {
+class MsgCDKExchangeDefaultTypeInternal {
  public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgCDKExchangeResp> _instance;
-} _MsgCDKExchangeResp_default_instance_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgCDKExchange> _instance;
+} _MsgCDKExchange_default_instance_;
+class MsgCDKExchangeResoDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgCDKExchangeReso> _instance;
+} _MsgCDKExchangeReso_default_instance_;
 static void InitDefaultsscc_info_ActiveInfoRet_Login_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -261,19 +262,6 @@ static void InitDefaultsscc_info_ActiveInfoRet_Login_2eproto() {
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ActiveInfoRet_Login_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ActiveInfoRet_Login_2eproto}, {}};
-
-static void InitDefaultsscc_info_MsgActiveInfo_Login_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_MsgActiveInfo_default_instance_;
-    new (ptr) ::MsgActiveInfo();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgActiveInfo_Login_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgActiveInfo_Login_2eproto}, {}};
 
 static void InitDefaultsscc_info_MsgActiveInfoCSPick_Login_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -368,18 +356,32 @@ static void InitDefaultsscc_info_MsgBindPhone_Login_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgBindPhone_Login_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgBindPhone_Login_2eproto}, {}};
 
-static void InitDefaultsscc_info_MsgCDKExchangeResp_Login_2eproto() {
+static void InitDefaultsscc_info_MsgCDKExchange_Login_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_MsgCDKExchangeResp_default_instance_;
-    new (ptr) ::MsgCDKExchangeResp();
+    void* ptr = &::_MsgCDKExchange_default_instance_;
+    new (ptr) ::MsgCDKExchange();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
 
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgCDKExchangeResp_Login_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgCDKExchangeResp_Login_2eproto}, {}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgCDKExchange_Login_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgCDKExchange_Login_2eproto}, {}};
+
+static void InitDefaultsscc_info_MsgCDKExchangeReso_Login_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_MsgCDKExchangeReso_default_instance_;
+    new (ptr) ::MsgCDKExchangeReso();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_MsgCDKExchangeReso_Login_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MsgCDKExchangeReso_Login_2eproto}, {
+      &scc_info_MsgCDKExchange_Login_2eproto.base,}};
 
 static void InitDefaultsscc_info_MsgCheckInInfo_Login_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -1252,13 +1254,6 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::MsgPlayerInfo, zmd_game_id_),
   PROTOBUF_FIELD_OFFSET(::MsgPlayerInfo, zmd_win_gold_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::MsgActiveInfo, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::MsgActiveInfo, user_id_),
-  PROTOBUF_FIELD_OFFSET(::MsgActiveInfo, active_id_),
-  ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::ActiveInfoRet, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
@@ -1491,14 +1486,20 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::MsgOlineActiveAward, type_),
   PROTOBUF_FIELD_OFFSET(::MsgOlineActiveAward, online_index_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::MsgCDKExchangeResp, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::MsgCDKExchange, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::MsgCDKExchangeResp, ret_code_),
-  PROTOBUF_FIELD_OFFSET(::MsgCDKExchangeResp, item_id_),
-  PROTOBUF_FIELD_OFFSET(::MsgCDKExchangeResp, item_num_),
-  PROTOBUF_FIELD_OFFSET(::MsgCDKExchangeResp, item_type_),
+  PROTOBUF_FIELD_OFFSET(::MsgCDKExchange, ret_code_),
+  PROTOBUF_FIELD_OFFSET(::MsgCDKExchange, item_id_),
+  PROTOBUF_FIELD_OFFSET(::MsgCDKExchange, item_num_),
+  PROTOBUF_FIELD_OFFSET(::MsgCDKExchange, item_type_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::MsgCDKExchangeReso, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::MsgCDKExchangeReso, info_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::MsgPlayerLogin)},
@@ -1528,34 +1529,34 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 238, -1, sizeof(::MsgUpgradeVIP)},
   { 245, -1, sizeof(::MsgGetAvatarInfo)},
   { 251, -1, sizeof(::MsgPlayerInfo)},
-  { 267, -1, sizeof(::MsgActiveInfo)},
-  { 274, -1, sizeof(::ActiveInfoRet)},
-  { 290, -1, sizeof(::MsgActiveInfoSCRet)},
-  { 296, -1, sizeof(::MsgActiveInfoCSPick)},
-  { 304, -1, sizeof(::MsgActiveInfoSCPick)},
-  { 321, -1, sizeof(::MsgModifySignature)},
-  { 328, -1, sizeof(::MsgTransferOperate)},
-  { 335, -1, sizeof(::MsgTopInfo)},
-  { 347, -1, sizeof(::MsgGetRank)},
-  { 356, -1, sizeof(::MsgTopListResp)},
-  { 367, -1, sizeof(::MsgTransferOperateResp)},
-  { 374, -1, sizeof(::MsgTransferOperateSyncResp)},
-  { 384, -1, sizeof(::MsgTransferReceiveResp)},
-  { 391, -1, sizeof(::MsgTransferRecord)},
-  { 403, -1, sizeof(::MsgTransferRecordResp)},
-  { 409, -1, sizeof(::MsgPhoneCode)},
-  { 416, -1, sizeof(::MsgItem)},
-  { 423, -1, sizeof(::MsgPlayerItem)},
-  { 429, -1, sizeof(::MsgTransferQueryNickname)},
-  { 437, -1, sizeof(::MsgSubagentInformation)},
-  { 448, -1, sizeof(::MsgTtotalSubagentInformation)},
-  { 454, -1, sizeof(::MsgBindParentInfo)},
-  { 463, -1, sizeof(::MsgBindInviteCodeResp)},
-  { 471, -1, sizeof(::MsgDotRechargeResp)},
-  { 479, -1, sizeof(::MsgOnlineActiveConfig)},
-  { 489, -1, sizeof(::MsgOnlineActiveQuery)},
-  { 497, -1, sizeof(::MsgOlineActiveAward)},
-  { 506, -1, sizeof(::MsgCDKExchangeResp)},
+  { 267, -1, sizeof(::ActiveInfoRet)},
+  { 283, -1, sizeof(::MsgActiveInfoSCRet)},
+  { 289, -1, sizeof(::MsgActiveInfoCSPick)},
+  { 297, -1, sizeof(::MsgActiveInfoSCPick)},
+  { 314, -1, sizeof(::MsgModifySignature)},
+  { 321, -1, sizeof(::MsgTransferOperate)},
+  { 328, -1, sizeof(::MsgTopInfo)},
+  { 340, -1, sizeof(::MsgGetRank)},
+  { 349, -1, sizeof(::MsgTopListResp)},
+  { 360, -1, sizeof(::MsgTransferOperateResp)},
+  { 367, -1, sizeof(::MsgTransferOperateSyncResp)},
+  { 377, -1, sizeof(::MsgTransferReceiveResp)},
+  { 384, -1, sizeof(::MsgTransferRecord)},
+  { 396, -1, sizeof(::MsgTransferRecordResp)},
+  { 402, -1, sizeof(::MsgPhoneCode)},
+  { 409, -1, sizeof(::MsgItem)},
+  { 416, -1, sizeof(::MsgPlayerItem)},
+  { 422, -1, sizeof(::MsgTransferQueryNickname)},
+  { 430, -1, sizeof(::MsgSubagentInformation)},
+  { 441, -1, sizeof(::MsgTtotalSubagentInformation)},
+  { 447, -1, sizeof(::MsgBindParentInfo)},
+  { 456, -1, sizeof(::MsgBindInviteCodeResp)},
+  { 464, -1, sizeof(::MsgDotRechargeResp)},
+  { 472, -1, sizeof(::MsgOnlineActiveConfig)},
+  { 482, -1, sizeof(::MsgOnlineActiveQuery)},
+  { 490, -1, sizeof(::MsgOlineActiveAward)},
+  { 499, -1, sizeof(::MsgCDKExchange)},
+  { 508, -1, sizeof(::MsgCDKExchangeReso)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -1586,7 +1587,6 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgUpgradeVIP_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgGetAvatarInfo_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgPlayerInfo_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgActiveInfo_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_ActiveInfoRet_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgActiveInfoSCRet_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgActiveInfoCSPick_default_instance_),
@@ -1613,7 +1613,8 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgOnlineActiveConfig_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgOnlineActiveQuery_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgOlineActiveAward_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgCDKExchangeResp_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgCDKExchange_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgCDKExchangeReso_default_instance_),
 };
 
 const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -1697,82 +1698,81 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "\022\021\n\tphone_num\030\006 \001(\t\022\021\n\tvip_level\030\007 \001(\005\022\024"
   "\n\014avatar_frame\030\010 \001(\005\022\021\n\tsignature\030\t \001(\t\022"
   "\023\n\013zmd_game_id\030\n \001(\005\022\024\n\014zmd_win_gold\030\013 \001"
-  "(\004\"3\n\rMsgActiveInfo\022\017\n\007user_id\030\001 \001(\005\022\021\n\t"
-  "active_id\030\002 \001(\005\"\330\001\n\rActiveInfoRet\022\021\n\tact"
-  "ive_id\030\001 \001(\005\022\025\n\rsub_active_id\030\002 \001(\005\022\016\n\006p"
-  "aram1\030\003 \001(\005\022\016\n\006param2\030\004 \001(\005\022\016\n\006param3\030\005 "
-  "\001(\005\022\021\n\tprogress1\030\006 \001(\005\022\021\n\tprogress2\030\007 \001("
-  "\005\022\021\n\tprogress3\030\010 \001(\005\022\016\n\006reward\030\t \001(\005\022\023\n\013"
-  "reward_type\030\n \001(\005\022\017\n\007is_pick\030\013 \001(\010\"6\n\022Ms"
-  "gActiveInfoSCRet\022 \n\010vec_info\030\001 \003(\0132\016.Act"
-  "iveInfoRet\"P\n\023MsgActiveInfoCSPick\022\017\n\007use"
-  "r_id\030\001 \001(\005\022\021\n\tactive_id\030\002 \001(\005\022\025\n\rsub_act"
-  "ive_id\030\003 \001(\005\"\353\001\n\023MsgActiveInfoSCPick\022\021\n\t"
-  "active_id\030\001 \001(\005\022\025\n\rsub_active_id\030\002 \001(\005\022\016"
-  "\n\006param1\030\003 \001(\005\022\016\n\006param2\030\004 \001(\005\022\016\n\006param3"
-  "\030\005 \001(\005\022\021\n\tprogress1\030\006 \001(\005\022\021\n\tprogress2\030\007"
-  " \001(\005\022\021\n\tprogress3\030\010 \001(\005\022\016\n\006reward\030\t \001(\005\022"
-  "\023\n\013reward_type\030\n \001(\005\022\017\n\007is_pick\030\013 \001(\005\022\013\n"
-  "\003res\030\014 \001(\010\"8\n\022MsgModifySignature\022\017\n\007user"
-  "_id\030\001 \001(\005\022\021\n\tsignature\030\002 \001(\t\"A\n\022MsgTrans"
-  "ferOperate\022\024\n\014recv_user_id\030\001 \001(\005\022\025\n\rtran"
-  "sfer_gold\030\002 \001(\003\"\212\001\n\nMsgTopInfo\022\017\n\007rank_i"
-  "d\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\014\n\004gold\030\003 \001(\004\022\021"
-  "\n\tvip_level\030\004 \001(\r\022\024\n\014avatar_frame\030\005 \001(\005\022"
-  "\020\n\010head_url\030\006 \001(\t\022\021\n\tnick_name\030\007 \001(\t\"W\n\n"
-  "MsgGetRank\022\021\n\trank_type\030\001 \001(\005\022\017\n\007user_id"
-  "\030\002 \001(\005\022\024\n\014current_page\030\003 \001(\005\022\017\n\007max_row\030"
-  "\004 \001(\005\"\213\001\n\016MsgTopListResp\022\017\n\007user_id\030\001 \001("
-  "\005\022\021\n\trank_type\030\002 \001(\005\022\026\n\016this_rank_ndex\030\003"
-  " \001(\005\022\021\n\tthis_gold\030\004 \001(\003\022\016\n\006is_end\030\005 \001(\005\022"
-  "\032\n\005lists\030\006 \003(\0132\013.MsgTopInfo\">\n\026MsgTransf"
-  "erOperateResp\022\021\n\tret_value\030\001 \001(\005\022\021\n\tuser"
-  "_gold\030\002 \001(\003\"\203\001\n\032MsgTransferOperateSyncRe"
-  "sp\022\021\n\tret_value\030\001 \001(\005\022\024\n\014send_user_id\030\003 "
-  "\001(\005\022\020\n\010add_gold\030\004 \001(\003\022\025\n\rreceive_state\030\006"
-  " \001(\003\022\023\n\013transfer_id\030\007 \001(\003\"@\n\026MsgTransfer"
-  "ReceiveResp\022\021\n\tret_value\030\001 \001(\005\022\023\n\013change"
-  "_gold\030\002 \001(\003\"\243\001\n\021MsgTransferRecord\022\024\n\014sen"
-  "d_user_id\030\001 \001(\005\022\020\n\010nickname\030\002 \001(\t\022\025\n\rtra"
-  "nsfer_gold\030\003 \001(\003\022\r\n\005timer\030\005 \001(\t\022\024\n\014recv_"
-  "user_id\030\006 \001(\005\022\025\n\rreceive_state\030\007 \001(\005\022\023\n\013"
-  "transfer_id\030\010 \001(\003\"<\n\025MsgTransferRecordRe"
-  "sp\022#\n\007records\030\001 \003(\0132\022.MsgTransferRecord\""
-  "0\n\014MsgPhoneCode\022\021\n\tarea_code\030\001 \001(\t\022\r\n\005ph"
-  "one\030\002 \001(\t\",\n\007MsgItem\022\017\n\007item_id\030\001 \001(\005\022\020\n"
-  "\010item_num\030\002 \001(\003\"\'\n\rMsgPlayerItem\022\026\n\004item"
-  "\030\001 \003(\0132\010.MsgItem\"L\n\030MsgTransferQueryNick"
-  "name\022\021\n\tret_Value\030\001 \001(\005\022\020\n\010nickname\030\002 \001("
-  "\t\022\013\n\003tax\030\003 \001(\005\"\236\001\n\026MsgSubagentInformatio"
-  "n\022\026\n\016agent_nickname\030\001 \001(\t\022\025\n\ragent_user_"
-  "id\030\002 \001(\005\022\022\n\nagent_type\030\003 \001(\010\022\026\n\016total_sh"
-  "ift_to\030\004 \001(\003\022\026\n\016total_roll_out\030\005 \001(\003\022\021\n\t"
-  "vip_level\030\006 \001(\005\"K\n\034MsgTtotalSubagentInfo"
-  "rmation\022+\n\nagent_info\030\001 \003(\0132\027.MsgSubagen"
-  "tInformation\"]\n\021MsgBindParentInfo\022\017\n\007use"
-  "r_id\030\001 \001(\005\022\016\n\006avatar\030\002 \001(\t\022\024\n\014avatar_fra"
-  "me\030\003 \001(\005\022\021\n\tnick_name\030\004 \001(\t\"^\n\025MsgBindIn"
-  "viteCodeResp\022\020\n\010res_code\030\001 \001(\005\022\021\n\tuser_t"
-  "ype\030\002 \001(\005\022 \n\004info\030\003 \001(\0132\022.MsgBindParentI"
-  "nfo\"R\n\022MsgDotRechargeResp\022\027\n\017is_new_rech"
-  "arge\030\001 \001(\010\022\014\n\004gold\030\002 \001(\003\022\025\n\rrecharge_inf"
-  "o\030\003 \003(\005\"m\n\025MsgOnlineActiveConfig\022\017\n\007item"
-  "_id\030\001 \001(\005\022\020\n\010item_num\030\002 \001(\005\022\014\n\004type\030\003 \001("
-  "\005\022\024\n\014online_index\030\004 \001(\005\022\r\n\005times\030\005 \001(\005\"k"
-  "\n\024MsgOnlineActiveQuery\022\022\n\nuser_times\030\001 \001"
-  "(\005\022\020\n\010index_id\030\002 \003(\005\022-\n\ronline_config\030\003 "
-  "\003(\0132\026.MsgOnlineActiveConfig\"\\\n\023MsgOlineA"
-  "ctiveAward\022\017\n\007item_id\030\001 \001(\005\022\020\n\010item_num\030"
-  "\002 \001(\005\022\014\n\004type\030\003 \001(\005\022\024\n\014online_index\030\004 \001("
-  "\005\"\\\n\022MsgCDKExchangeResp\022\020\n\010ret_code\030\001 \001("
-  "\005\022\017\n\007item_id\030\002 \001(\005\022\020\n\010item_num\030\003 \001(\005\022\021\n\t"
-  "item_type\030\004 \001(\005b\006proto3"
+  "(\004\"\330\001\n\rActiveInfoRet\022\021\n\tactive_id\030\001 \001(\005\022"
+  "\025\n\rsub_active_id\030\002 \001(\005\022\016\n\006param1\030\003 \001(\005\022\016"
+  "\n\006param2\030\004 \001(\005\022\016\n\006param3\030\005 \001(\005\022\021\n\tprogre"
+  "ss1\030\006 \001(\005\022\021\n\tprogress2\030\007 \001(\005\022\021\n\tprogress"
+  "3\030\010 \001(\005\022\016\n\006reward\030\t \001(\005\022\023\n\013reward_type\030\n"
+  " \001(\005\022\017\n\007is_pick\030\013 \001(\010\"6\n\022MsgActiveInfoSC"
+  "Ret\022 \n\010vec_info\030\001 \003(\0132\016.ActiveInfoRet\"P\n"
+  "\023MsgActiveInfoCSPick\022\017\n\007user_id\030\001 \001(\005\022\021\n"
+  "\tactive_id\030\002 \001(\005\022\025\n\rsub_active_id\030\003 \001(\005\""
+  "\353\001\n\023MsgActiveInfoSCPick\022\021\n\tactive_id\030\001 \001"
+  "(\005\022\025\n\rsub_active_id\030\002 \001(\005\022\016\n\006param1\030\003 \001("
+  "\005\022\016\n\006param2\030\004 \001(\005\022\016\n\006param3\030\005 \001(\005\022\021\n\tpro"
+  "gress1\030\006 \001(\005\022\021\n\tprogress2\030\007 \001(\005\022\021\n\tprogr"
+  "ess3\030\010 \001(\005\022\016\n\006reward\030\t \001(\005\022\023\n\013reward_typ"
+  "e\030\n \001(\005\022\017\n\007is_pick\030\013 \001(\005\022\013\n\003res\030\014 \001(\010\"8\n"
+  "\022MsgModifySignature\022\017\n\007user_id\030\001 \001(\005\022\021\n\t"
+  "signature\030\002 \001(\t\"A\n\022MsgTransferOperate\022\024\n"
+  "\014recv_user_id\030\001 \001(\005\022\025\n\rtransfer_gold\030\002 \001"
+  "(\003\"\212\001\n\nMsgTopInfo\022\017\n\007rank_id\030\001 \001(\005\022\017\n\007us"
+  "er_id\030\002 \001(\005\022\014\n\004gold\030\003 \001(\004\022\021\n\tvip_level\030\004"
+  " \001(\r\022\024\n\014avatar_frame\030\005 \001(\005\022\020\n\010head_url\030\006"
+  " \001(\t\022\021\n\tnick_name\030\007 \001(\t\"W\n\nMsgGetRank\022\021\n"
+  "\trank_type\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\024\n\014cur"
+  "rent_page\030\003 \001(\005\022\017\n\007max_row\030\004 \001(\005\"\213\001\n\016Msg"
+  "TopListResp\022\017\n\007user_id\030\001 \001(\005\022\021\n\trank_typ"
+  "e\030\002 \001(\005\022\026\n\016this_rank_ndex\030\003 \001(\005\022\021\n\tthis_"
+  "gold\030\004 \001(\003\022\016\n\006is_end\030\005 \001(\005\022\032\n\005lists\030\006 \003("
+  "\0132\013.MsgTopInfo\">\n\026MsgTransferOperateResp"
+  "\022\021\n\tret_value\030\001 \001(\005\022\021\n\tuser_gold\030\002 \001(\003\"\203"
+  "\001\n\032MsgTransferOperateSyncResp\022\021\n\tret_val"
+  "ue\030\001 \001(\005\022\024\n\014send_user_id\030\003 \001(\005\022\020\n\010add_go"
+  "ld\030\004 \001(\003\022\025\n\rreceive_state\030\006 \001(\003\022\023\n\013trans"
+  "fer_id\030\007 \001(\003\"@\n\026MsgTransferReceiveResp\022\021"
+  "\n\tret_value\030\001 \001(\005\022\023\n\013change_gold\030\002 \001(\003\"\243"
+  "\001\n\021MsgTransferRecord\022\024\n\014send_user_id\030\001 \001"
+  "(\005\022\020\n\010nickname\030\002 \001(\t\022\025\n\rtransfer_gold\030\003 "
+  "\001(\003\022\r\n\005timer\030\005 \001(\t\022\024\n\014recv_user_id\030\006 \001(\005"
+  "\022\025\n\rreceive_state\030\007 \001(\005\022\023\n\013transfer_id\030\010"
+  " \001(\003\"<\n\025MsgTransferRecordResp\022#\n\007records"
+  "\030\001 \003(\0132\022.MsgTransferRecord\"0\n\014MsgPhoneCo"
+  "de\022\021\n\tarea_code\030\001 \001(\t\022\r\n\005phone\030\002 \001(\t\",\n\007"
+  "MsgItem\022\017\n\007item_id\030\001 \001(\005\022\020\n\010item_num\030\002 \001"
+  "(\003\"\'\n\rMsgPlayerItem\022\026\n\004item\030\001 \003(\0132\010.MsgI"
+  "tem\"L\n\030MsgTransferQueryNickname\022\021\n\tret_V"
+  "alue\030\001 \001(\005\022\020\n\010nickname\030\002 \001(\t\022\013\n\003tax\030\003 \001("
+  "\005\"\236\001\n\026MsgSubagentInformation\022\026\n\016agent_ni"
+  "ckname\030\001 \001(\t\022\025\n\ragent_user_id\030\002 \001(\005\022\022\n\na"
+  "gent_type\030\003 \001(\010\022\026\n\016total_shift_to\030\004 \001(\003\022"
+  "\026\n\016total_roll_out\030\005 \001(\003\022\021\n\tvip_level\030\006 \001"
+  "(\005\"K\n\034MsgTtotalSubagentInformation\022+\n\nag"
+  "ent_info\030\001 \003(\0132\027.MsgSubagentInformation\""
+  "]\n\021MsgBindParentInfo\022\017\n\007user_id\030\001 \001(\005\022\016\n"
+  "\006avatar\030\002 \001(\t\022\024\n\014avatar_frame\030\003 \001(\005\022\021\n\tn"
+  "ick_name\030\004 \001(\t\"^\n\025MsgBindInviteCodeResp\022"
+  "\020\n\010res_code\030\001 \001(\005\022\021\n\tuser_type\030\002 \001(\005\022 \n\004"
+  "info\030\003 \001(\0132\022.MsgBindParentInfo\"R\n\022MsgDot"
+  "RechargeResp\022\027\n\017is_new_recharge\030\001 \001(\010\022\014\n"
+  "\004gold\030\002 \001(\003\022\025\n\rrecharge_info\030\003 \003(\005\"m\n\025Ms"
+  "gOnlineActiveConfig\022\017\n\007item_id\030\001 \001(\005\022\020\n\010"
+  "item_num\030\002 \001(\005\022\014\n\004type\030\003 \001(\005\022\024\n\014online_i"
+  "ndex\030\004 \001(\005\022\r\n\005times\030\005 \001(\005\"k\n\024MsgOnlineAc"
+  "tiveQuery\022\022\n\nuser_times\030\001 \001(\005\022\020\n\010index_i"
+  "d\030\002 \003(\005\022-\n\ronline_config\030\003 \003(\0132\026.MsgOnli"
+  "neActiveConfig\"\\\n\023MsgOlineActiveAward\022\017\n"
+  "\007item_id\030\001 \001(\005\022\020\n\010item_num\030\002 \001(\005\022\014\n\004type"
+  "\030\003 \001(\005\022\024\n\014online_index\030\004 \001(\005\"X\n\016MsgCDKEx"
+  "change\022\020\n\010ret_code\030\001 \001(\005\022\017\n\007item_id\030\002 \001("
+  "\005\022\020\n\010item_num\030\003 \001(\005\022\021\n\titem_type\030\004 \001(\005\"3"
+  "\n\022MsgCDKExchangeReso\022\035\n\004info\030\001 \003(\0132\017.Msg"
+  "CDKExchangeb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Login_2eproto_deps[1] = {
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Login_2eproto_sccs[55] = {
   &scc_info_ActiveInfoRet_Login_2eproto.base,
-  &scc_info_MsgActiveInfo_Login_2eproto.base,
   &scc_info_MsgActiveInfoCSPick_Login_2eproto.base,
   &scc_info_MsgActiveInfoSCPick_Login_2eproto.base,
   &scc_info_MsgActiveInfoSCRet_Login_2eproto.base,
@@ -1780,7 +1780,8 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
   &scc_info_MsgBindParentData_Login_2eproto.base,
   &scc_info_MsgBindParentInfo_Login_2eproto.base,
   &scc_info_MsgBindPhone_Login_2eproto.base,
-  &scc_info_MsgCDKExchangeResp_Login_2eproto.base,
+  &scc_info_MsgCDKExchange_Login_2eproto.base,
+  &scc_info_MsgCDKExchangeReso_Login_2eproto.base,
   &scc_info_MsgCheckInInfo_Login_2eproto.base,
   &scc_info_MsgCommonKV_Login_2eproto.base,
   &scc_info_MsgDotRechargeResp_Login_2eproto.base,
@@ -1829,7 +1830,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Login_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Login_2eproto = {
-  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 5983,
+  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 5979,
   &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 55, 0,
   schemas, file_default_instances, TableStruct_Login_2eproto::offsets,
   file_level_metadata_Login_2eproto, 55, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
@@ -10338,235 +10339,6 @@ void MsgPlayerInfo::InternalSwap(MsgPlayerInfo* other) {
 
 // ===================================================================
 
-class MsgActiveInfo::_Internal {
- public:
-};
-
-MsgActiveInfo::MsgActiveInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:MsgActiveInfo)
-}
-MsgActiveInfo::MsgActiveInfo(const MsgActiveInfo& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&user_id_, &from.user_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&active_id_) -
-    reinterpret_cast<char*>(&user_id_)) + sizeof(active_id_));
-  // @@protoc_insertion_point(copy_constructor:MsgActiveInfo)
-}
-
-void MsgActiveInfo::SharedCtor() {
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&user_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&active_id_) -
-      reinterpret_cast<char*>(&user_id_)) + sizeof(active_id_));
-}
-
-MsgActiveInfo::~MsgActiveInfo() {
-  // @@protoc_insertion_point(destructor:MsgActiveInfo)
-  SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-void MsgActiveInfo::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-}
-
-void MsgActiveInfo::ArenaDtor(void* object) {
-  MsgActiveInfo* _this = reinterpret_cast< MsgActiveInfo* >(object);
-  (void)_this;
-}
-void MsgActiveInfo::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
-void MsgActiveInfo::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
-}
-const MsgActiveInfo& MsgActiveInfo::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgActiveInfo_Login_2eproto.base);
-  return *internal_default_instance();
-}
-
-
-void MsgActiveInfo::Clear() {
-// @@protoc_insertion_point(message_clear_start:MsgActiveInfo)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  ::memset(&user_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&active_id_) -
-      reinterpret_cast<char*>(&user_id_)) + sizeof(active_id_));
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-const char* MsgActiveInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
-    switch (tag >> 3) {
-      // int32 user_id = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 active_id = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          active_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
-    }  // switch
-  }  // while
-success:
-  return ptr;
-failure:
-  ptr = nullptr;
-  goto success;
-#undef CHK_
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* MsgActiveInfo::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:MsgActiveInfo)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // int32 user_id = 1;
-  if (this->user_id() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_user_id(), target);
-  }
-
-  // int32 active_id = 2;
-  if (this->active_id() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_active_id(), target);
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:MsgActiveInfo)
-  return target;
-}
-
-size_t MsgActiveInfo::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:MsgActiveInfo)
-  size_t total_size = 0;
-
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  // int32 user_id = 1;
-  if (this->user_id() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_user_id());
-  }
-
-  // int32 active_id = 2;
-  if (this->active_id() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_active_id());
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
-}
-
-void MsgActiveInfo::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:MsgActiveInfo)
-  GOOGLE_DCHECK_NE(&from, this);
-  const MsgActiveInfo* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgActiveInfo>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgActiveInfo)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgActiveInfo)
-    MergeFrom(*source);
-  }
-}
-
-void MsgActiveInfo::MergeFrom(const MsgActiveInfo& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:MsgActiveInfo)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from.user_id() != 0) {
-    _internal_set_user_id(from._internal_user_id());
-  }
-  if (from.active_id() != 0) {
-    _internal_set_active_id(from._internal_active_id());
-  }
-}
-
-void MsgActiveInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:MsgActiveInfo)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void MsgActiveInfo::CopyFrom(const MsgActiveInfo& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:MsgActiveInfo)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool MsgActiveInfo::IsInitialized() const {
-  return true;
-}
-
-void MsgActiveInfo::InternalSwap(MsgActiveInfo* other) {
-  using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgActiveInfo, active_id_)
-      + sizeof(MsgActiveInfo::active_id_)
-      - PROTOBUF_FIELD_OFFSET(MsgActiveInfo, user_id_)>(
-          reinterpret_cast<char*>(&user_id_),
-          reinterpret_cast<char*>(&other->user_id_));
-}
-
-::PROTOBUF_NAMESPACE_ID::Metadata MsgActiveInfo::GetMetadata() const {
-  return GetMetadataStatic();
-}
-
-
-// ===================================================================
-
 class ActiveInfoRet::_Internal {
  public:
 };
@@ -17841,59 +17613,59 @@ void MsgOlineActiveAward::InternalSwap(MsgOlineActiveAward* other) {
 
 // ===================================================================
 
-class MsgCDKExchangeResp::_Internal {
+class MsgCDKExchange::_Internal {
  public:
 };
 
-MsgCDKExchangeResp::MsgCDKExchangeResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+MsgCDKExchange::MsgCDKExchange(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:MsgCDKExchangeResp)
+  // @@protoc_insertion_point(arena_constructor:MsgCDKExchange)
 }
-MsgCDKExchangeResp::MsgCDKExchangeResp(const MsgCDKExchangeResp& from)
+MsgCDKExchange::MsgCDKExchange(const MsgCDKExchange& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&ret_code_, &from.ret_code_,
     static_cast<size_t>(reinterpret_cast<char*>(&item_type_) -
     reinterpret_cast<char*>(&ret_code_)) + sizeof(item_type_));
-  // @@protoc_insertion_point(copy_constructor:MsgCDKExchangeResp)
+  // @@protoc_insertion_point(copy_constructor:MsgCDKExchange)
 }
 
-void MsgCDKExchangeResp::SharedCtor() {
+void MsgCDKExchange::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&ret_code_) - reinterpret_cast<char*>(this)),
       0, static_cast<size_t>(reinterpret_cast<char*>(&item_type_) -
       reinterpret_cast<char*>(&ret_code_)) + sizeof(item_type_));
 }
 
-MsgCDKExchangeResp::~MsgCDKExchangeResp() {
-  // @@protoc_insertion_point(destructor:MsgCDKExchangeResp)
+MsgCDKExchange::~MsgCDKExchange() {
+  // @@protoc_insertion_point(destructor:MsgCDKExchange)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void MsgCDKExchangeResp::SharedDtor() {
+void MsgCDKExchange::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void MsgCDKExchangeResp::ArenaDtor(void* object) {
-  MsgCDKExchangeResp* _this = reinterpret_cast< MsgCDKExchangeResp* >(object);
+void MsgCDKExchange::ArenaDtor(void* object) {
+  MsgCDKExchange* _this = reinterpret_cast< MsgCDKExchange* >(object);
   (void)_this;
 }
-void MsgCDKExchangeResp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+void MsgCDKExchange::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 }
-void MsgCDKExchangeResp::SetCachedSize(int size) const {
+void MsgCDKExchange::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const MsgCDKExchangeResp& MsgCDKExchangeResp::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgCDKExchangeResp_Login_2eproto.base);
+const MsgCDKExchange& MsgCDKExchange::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgCDKExchange_Login_2eproto.base);
   return *internal_default_instance();
 }
 
 
-void MsgCDKExchangeResp::Clear() {
-// @@protoc_insertion_point(message_clear_start:MsgCDKExchangeResp)
+void MsgCDKExchange::Clear() {
+// @@protoc_insertion_point(message_clear_start:MsgCDKExchange)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -17904,7 +17676,7 @@ void MsgCDKExchangeResp::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* MsgCDKExchangeResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* MsgCDKExchange::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
@@ -17961,9 +17733,9 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* MsgCDKExchangeResp::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* MsgCDKExchange::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:MsgCDKExchangeResp)
+  // @@protoc_insertion_point(serialize_to_array_start:MsgCDKExchange)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -17995,12 +17767,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:MsgCDKExchangeResp)
+  // @@protoc_insertion_point(serialize_to_array_end:MsgCDKExchange)
   return target;
 }
 
-size_t MsgCDKExchangeResp::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:MsgCDKExchangeResp)
+size_t MsgCDKExchange::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:MsgCDKExchange)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -18044,23 +17816,23 @@ size_t MsgCDKExchangeResp::ByteSizeLong() const {
   return total_size;
 }
 
-void MsgCDKExchangeResp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:MsgCDKExchangeResp)
+void MsgCDKExchange::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:MsgCDKExchange)
   GOOGLE_DCHECK_NE(&from, this);
-  const MsgCDKExchangeResp* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgCDKExchangeResp>(
+  const MsgCDKExchange* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgCDKExchange>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgCDKExchangeResp)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgCDKExchange)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgCDKExchangeResp)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgCDKExchange)
     MergeFrom(*source);
   }
 }
 
-void MsgCDKExchangeResp::MergeFrom(const MsgCDKExchangeResp& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:MsgCDKExchangeResp)
+void MsgCDKExchange::MergeFrom(const MsgCDKExchange& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:MsgCDKExchange)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -18080,36 +17852,236 @@ void MsgCDKExchangeResp::MergeFrom(const MsgCDKExchangeResp& from) {
   }
 }
 
-void MsgCDKExchangeResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:MsgCDKExchangeResp)
+void MsgCDKExchange::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:MsgCDKExchange)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-void MsgCDKExchangeResp::CopyFrom(const MsgCDKExchangeResp& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:MsgCDKExchangeResp)
+void MsgCDKExchange::CopyFrom(const MsgCDKExchange& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:MsgCDKExchange)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool MsgCDKExchangeResp::IsInitialized() const {
+bool MsgCDKExchange::IsInitialized() const {
   return true;
 }
 
-void MsgCDKExchangeResp::InternalSwap(MsgCDKExchangeResp* other) {
+void MsgCDKExchange::InternalSwap(MsgCDKExchange* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgCDKExchangeResp, item_type_)
-      + sizeof(MsgCDKExchangeResp::item_type_)
-      - PROTOBUF_FIELD_OFFSET(MsgCDKExchangeResp, ret_code_)>(
+      PROTOBUF_FIELD_OFFSET(MsgCDKExchange, item_type_)
+      + sizeof(MsgCDKExchange::item_type_)
+      - PROTOBUF_FIELD_OFFSET(MsgCDKExchange, ret_code_)>(
           reinterpret_cast<char*>(&ret_code_),
           reinterpret_cast<char*>(&other->ret_code_));
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata MsgCDKExchangeResp::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata MsgCDKExchange::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class MsgCDKExchangeReso::_Internal {
+ public:
+};
+
+MsgCDKExchangeReso::MsgCDKExchangeReso(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  info_(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:MsgCDKExchangeReso)
+}
+MsgCDKExchangeReso::MsgCDKExchangeReso(const MsgCDKExchangeReso& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      info_(from.info_) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:MsgCDKExchangeReso)
+}
+
+void MsgCDKExchangeReso::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgCDKExchangeReso_Login_2eproto.base);
+}
+
+MsgCDKExchangeReso::~MsgCDKExchangeReso() {
+  // @@protoc_insertion_point(destructor:MsgCDKExchangeReso)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void MsgCDKExchangeReso::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void MsgCDKExchangeReso::ArenaDtor(void* object) {
+  MsgCDKExchangeReso* _this = reinterpret_cast< MsgCDKExchangeReso* >(object);
+  (void)_this;
+}
+void MsgCDKExchangeReso::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void MsgCDKExchangeReso::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const MsgCDKExchangeReso& MsgCDKExchangeReso::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgCDKExchangeReso_Login_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void MsgCDKExchangeReso::Clear() {
+// @@protoc_insertion_point(message_clear_start:MsgCDKExchangeReso)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  info_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* MsgCDKExchangeReso::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // repeated .MsgCDKExchange info = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_info(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* MsgCDKExchangeReso::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:MsgCDKExchangeReso)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated .MsgCDKExchange info = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_info_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(1, this->_internal_info(i), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:MsgCDKExchangeReso)
+  return target;
+}
+
+size_t MsgCDKExchangeReso::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:MsgCDKExchangeReso)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated .MsgCDKExchange info = 1;
+  total_size += 1UL * this->_internal_info_size();
+  for (const auto& msg : this->info_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void MsgCDKExchangeReso::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:MsgCDKExchangeReso)
+  GOOGLE_DCHECK_NE(&from, this);
+  const MsgCDKExchangeReso* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgCDKExchangeReso>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgCDKExchangeReso)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgCDKExchangeReso)
+    MergeFrom(*source);
+  }
+}
+
+void MsgCDKExchangeReso::MergeFrom(const MsgCDKExchangeReso& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:MsgCDKExchangeReso)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  info_.MergeFrom(from.info_);
+}
+
+void MsgCDKExchangeReso::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:MsgCDKExchangeReso)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void MsgCDKExchangeReso::CopyFrom(const MsgCDKExchangeReso& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:MsgCDKExchangeReso)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool MsgCDKExchangeReso::IsInitialized() const {
+  return true;
+}
+
+void MsgCDKExchangeReso::InternalSwap(MsgCDKExchangeReso* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  info_.InternalSwap(&other->info_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata MsgCDKExchangeReso::GetMetadata() const {
   return GetMetadataStatic();
 }
 
@@ -18197,9 +18169,6 @@ template<> PROTOBUF_NOINLINE ::MsgGetAvatarInfo* Arena::CreateMaybeMessage< ::Ms
 template<> PROTOBUF_NOINLINE ::MsgPlayerInfo* Arena::CreateMaybeMessage< ::MsgPlayerInfo >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MsgPlayerInfo >(arena);
 }
-template<> PROTOBUF_NOINLINE ::MsgActiveInfo* Arena::CreateMaybeMessage< ::MsgActiveInfo >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::MsgActiveInfo >(arena);
-}
 template<> PROTOBUF_NOINLINE ::ActiveInfoRet* Arena::CreateMaybeMessage< ::ActiveInfoRet >(Arena* arena) {
   return Arena::CreateMessageInternal< ::ActiveInfoRet >(arena);
 }
@@ -18278,8 +18247,11 @@ template<> PROTOBUF_NOINLINE ::MsgOnlineActiveQuery* Arena::CreateMaybeMessage< 
 template<> PROTOBUF_NOINLINE ::MsgOlineActiveAward* Arena::CreateMaybeMessage< ::MsgOlineActiveAward >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MsgOlineActiveAward >(arena);
 }
-template<> PROTOBUF_NOINLINE ::MsgCDKExchangeResp* Arena::CreateMaybeMessage< ::MsgCDKExchangeResp >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::MsgCDKExchangeResp >(arena);
+template<> PROTOBUF_NOINLINE ::MsgCDKExchange* Arena::CreateMaybeMessage< ::MsgCDKExchange >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::MsgCDKExchange >(arena);
+}
+template<> PROTOBUF_NOINLINE ::MsgCDKExchangeReso* Arena::CreateMaybeMessage< ::MsgCDKExchangeReso >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::MsgCDKExchangeReso >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

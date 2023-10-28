@@ -423,15 +423,15 @@ public enum EMsgIDLogin {
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_QueryPlayerInfo")] MsgIdloginQueryPlayerInfo = 65,
   /// <summary>
-  ///查询玩家信息返回(MsgPlayerInfo)
+  ///查询玩家信息返回(MsgCommonBool)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_QueryPlayerInfoResp")] MsgIdloginQueryPlayerInfoResp = 66,
   /// <summary>
-  ///查询玩家活动数据(MsgActiveInfo)
+  ///查询玩家活动数据(MsgActiveInfoSCRet)
   /// </summary>
   [pbr::OriginalName("MsgIDActive_QueryActiveInfo")] MsgIdactiveQueryActiveInfo = 67,
   /// <summary>
-  ///查询玩家活动数据返回(sActiveInfoSCRet)
+  ///查询玩家活动数据返回(MsgActiveInfoSCRet)
   /// </summary>
   [pbr::OriginalName("MsgIDActive_QueryActiveInfoResp")] MsgIdactiveQueryActiveInfoResp = 68,
   /// <summary>
