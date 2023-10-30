@@ -46,7 +46,7 @@ struct TableStruct_ServerInternalProto_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[53]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[55]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -77,6 +77,9 @@ extern MsgDBBindPhoneResDefaultTypeInternal _MsgDBBindPhoneRes_default_instance_
 class MsgDBBuyGoods;
 class MsgDBBuyGoodsDefaultTypeInternal;
 extern MsgDBBuyGoodsDefaultTypeInternal _MsgDBBuyGoods_default_instance_;
+class MsgDBCDKExchange;
+class MsgDBCDKExchangeDefaultTypeInternal;
+extern MsgDBCDKExchangeDefaultTypeInternal _MsgDBCDKExchange_default_instance_;
 class MsgDBChatLogin;
 class MsgDBChatLoginDefaultTypeInternal;
 extern MsgDBChatLoginDefaultTypeInternal _MsgDBChatLogin_default_instance_;
@@ -212,6 +215,9 @@ extern MsgUpdateGameServerOnlineNumDefaultTypeInternal _MsgUpdateGameServerOnlin
 class MsgUpdateLImitChat;
 class MsgUpdateLImitChatDefaultTypeInternal;
 extern MsgUpdateLImitChatDefaultTypeInternal _MsgUpdateLImitChat_default_instance_;
+class MsgUpdatePhoneCodeState;
+class MsgUpdatePhoneCodeStateDefaultTypeInternal;
+extern MsgUpdatePhoneCodeStateDefaultTypeInternal _MsgUpdatePhoneCodeState_default_instance_;
 PROTOBUF_NAMESPACE_OPEN
 template<> ::MsgApplyRobot* Arena::CreateMaybeMessage<::MsgApplyRobot>(Arena*);
 template<> ::MsgApplyRobotResp* Arena::CreateMaybeMessage<::MsgApplyRobotResp>(Arena*);
@@ -221,6 +227,7 @@ template<> ::MsgDBBindInviteCode* Arena::CreateMaybeMessage<::MsgDBBindInviteCod
 template<> ::MsgDBBindPhone* Arena::CreateMaybeMessage<::MsgDBBindPhone>(Arena*);
 template<> ::MsgDBBindPhoneRes* Arena::CreateMaybeMessage<::MsgDBBindPhoneRes>(Arena*);
 template<> ::MsgDBBuyGoods* Arena::CreateMaybeMessage<::MsgDBBuyGoods>(Arena*);
+template<> ::MsgDBCDKExchange* Arena::CreateMaybeMessage<::MsgDBCDKExchange>(Arena*);
 template<> ::MsgDBChatLogin* Arena::CreateMaybeMessage<::MsgDBChatLogin>(Arena*);
 template<> ::MsgDBChatTrumpetMsg* Arena::CreateMaybeMessage<::MsgDBChatTrumpetMsg>(Arena*);
 template<> ::MsgDBCommonKV* Arena::CreateMaybeMessage<::MsgDBCommonKV>(Arena*);
@@ -266,6 +273,7 @@ template<> ::MsgStorageCode* Arena::CreateMaybeMessage<::MsgStorageCode>(Arena*)
 template<> ::MsgUpdateChatServerOnlineNum* Arena::CreateMaybeMessage<::MsgUpdateChatServerOnlineNum>(Arena*);
 template<> ::MsgUpdateGameServerOnlineNum* Arena::CreateMaybeMessage<::MsgUpdateGameServerOnlineNum>(Arena*);
 template<> ::MsgUpdateLImitChat* Arena::CreateMaybeMessage<::MsgUpdateLImitChat>(Arena*);
+template<> ::MsgUpdatePhoneCodeState* Arena::CreateMaybeMessage<::MsgUpdatePhoneCodeState>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 
 // ===================================================================
@@ -1572,6 +1580,7 @@ class MsgSendPhoneCode PROTOBUF_FINAL :
   enum : int {
     kPhoneFieldNumber = 1,
     kCodeFieldNumber = 2,
+    kIdFieldNumber = 3,
   };
   // string phone = 1;
   void clear_phone();
@@ -1598,6 +1607,15 @@ class MsgSendPhoneCode PROTOBUF_FINAL :
   void _internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 id = 3;
+  void clear_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 id() const;
+  void set_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_id() const;
+  void _internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgSendPhoneCode)
  private:
   class _Internal;
@@ -1607,6 +1625,161 @@ class MsgSendPhoneCode PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr phone_;
   ::PROTOBUF_NAMESPACE_ID::int32 code_;
+  ::PROTOBUF_NAMESPACE_ID::int32 id_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgUpdatePhoneCodeState PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgUpdatePhoneCodeState) */ {
+ public:
+  inline MsgUpdatePhoneCodeState() : MsgUpdatePhoneCodeState(nullptr) {}
+  virtual ~MsgUpdatePhoneCodeState();
+
+  MsgUpdatePhoneCodeState(const MsgUpdatePhoneCodeState& from);
+  MsgUpdatePhoneCodeState(MsgUpdatePhoneCodeState&& from) noexcept
+    : MsgUpdatePhoneCodeState() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgUpdatePhoneCodeState& operator=(const MsgUpdatePhoneCodeState& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgUpdatePhoneCodeState& operator=(MsgUpdatePhoneCodeState&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgUpdatePhoneCodeState& default_instance();
+
+  static inline const MsgUpdatePhoneCodeState* internal_default_instance() {
+    return reinterpret_cast<const MsgUpdatePhoneCodeState*>(
+               &_MsgUpdatePhoneCodeState_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    8;
+
+  friend void swap(MsgUpdatePhoneCodeState& a, MsgUpdatePhoneCodeState& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgUpdatePhoneCodeState* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgUpdatePhoneCodeState* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgUpdatePhoneCodeState* New() const final {
+    return CreateMaybeMessage<MsgUpdatePhoneCodeState>(nullptr);
+  }
+
+  MsgUpdatePhoneCodeState* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgUpdatePhoneCodeState>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgUpdatePhoneCodeState& from);
+  void MergeFrom(const MsgUpdatePhoneCodeState& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgUpdatePhoneCodeState* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgUpdatePhoneCodeState";
+  }
+  protected:
+  explicit MsgUpdatePhoneCodeState(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kChannelFieldNumber = 4,
+    kIdFieldNumber = 1,
+  };
+  // string channel = 4;
+  void clear_channel();
+  const std::string& channel() const;
+  void set_channel(const std::string& value);
+  void set_channel(std::string&& value);
+  void set_channel(const char* value);
+  void set_channel(const char* value, size_t size);
+  std::string* mutable_channel();
+  std::string* release_channel();
+  void set_allocated_channel(std::string* channel);
+  private:
+  const std::string& _internal_channel() const;
+  void _internal_set_channel(const std::string& value);
+  std::string* _internal_mutable_channel();
+  public:
+
+  // int32 id = 1;
+  void clear_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 id() const;
+  void set_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_id() const;
+  void _internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgUpdatePhoneCodeState)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr channel_;
+  ::PROTOBUF_NAMESPACE_ID::int32 id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -1653,7 +1826,7 @@ class MsgUpdateGameServerOnlineNum PROTOBUF_FINAL :
                &_MsgUpdateGameServerOnlineNum_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    9;
 
   friend void swap(MsgUpdateGameServerOnlineNum& a, MsgUpdateGameServerOnlineNum& b) {
     a.Swap(&b);
@@ -1822,7 +1995,7 @@ class MsgGameServerUnRegister PROTOBUF_FINAL :
                &_MsgGameServerUnRegister_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    10;
 
   friend void swap(MsgGameServerUnRegister& a, MsgGameServerUnRegister& b) {
     a.Swap(&b);
@@ -1980,7 +2153,7 @@ class MsgLoadCheatRate PROTOBUF_FINAL :
                &_MsgLoadCheatRate_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    11;
 
   friend void swap(MsgLoadCheatRate& a, MsgLoadCheatRate& b) {
     a.Swap(&b);
@@ -2149,7 +2322,7 @@ class MsgRelayServerRegister PROTOBUF_FINAL :
                &_MsgRelayServerRegister_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    12;
 
   friend void swap(MsgRelayServerRegister& a, MsgRelayServerRegister& b) {
     a.Swap(&b);
@@ -2296,7 +2469,7 @@ class MsgRelayServerAddMail PROTOBUF_FINAL :
                &_MsgRelayServerAddMail_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    12;
+    13;
 
   friend void swap(MsgRelayServerAddMail& a, MsgRelayServerAddMail& b) {
     a.Swap(&b);
@@ -2501,7 +2674,7 @@ class MsgRelayServerRecharge PROTOBUF_FINAL :
                &_MsgRelayServerRecharge_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    13;
+    14;
 
   friend void swap(MsgRelayServerRecharge& a, MsgRelayServerRecharge& b) {
     a.Swap(&b);
@@ -2670,7 +2843,7 @@ class MsgUpdateChatServerOnlineNum PROTOBUF_FINAL :
                &_MsgUpdateChatServerOnlineNum_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    14;
+    15;
 
   friend void swap(MsgUpdateChatServerOnlineNum& a, MsgUpdateChatServerOnlineNum& b) {
     a.Swap(&b);
@@ -2817,7 +2990,7 @@ class MsgUpdateLImitChat PROTOBUF_FINAL :
                &_MsgUpdateLImitChat_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    15;
+    16;
 
   friend void swap(MsgUpdateLImitChat& a, MsgUpdateLImitChat& b) {
     a.Swap(&b);
@@ -2964,7 +3137,7 @@ class MsgDBCommonKV PROTOBUF_FINAL :
                &_MsgDBCommonKV_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    16;
+    17;
 
   friend void swap(MsgDBCommonKV& a, MsgDBCommonKV& b) {
     a.Swap(&b);
@@ -3111,7 +3284,7 @@ class MsgDBUpdateOnlineNum PROTOBUF_FINAL :
                &_MsgDBUpdateOnlineNum_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    17;
+    18;
 
   friend void swap(MsgDBUpdateOnlineNum& a, MsgDBUpdateOnlineNum& b) {
     a.Swap(&b);
@@ -3269,7 +3442,7 @@ class MsgDBRegisterLogin PROTOBUF_FINAL :
                &_MsgDBRegisterLogin_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    18;
+    19;
 
   friend void swap(MsgDBRegisterLogin& a, MsgDBRegisterLogin& b) {
     a.Swap(&b);
@@ -3416,7 +3589,7 @@ class MsgPlayerAttribute PROTOBUF_FINAL :
                &_MsgPlayerAttribute_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    19;
+    20;
 
   friend void swap(MsgPlayerAttribute& a, MsgPlayerAttribute& b) {
     a.Swap(&b);
@@ -3632,7 +3805,7 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
                &_MsgLoginPlayerInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    20;
+    21;
 
   friend void swap(MsgLoginPlayerInfo& a, MsgLoginPlayerInfo& b) {
     a.Swap(&b);
@@ -4004,7 +4177,7 @@ class MsgDBLoginOut PROTOBUF_FINAL :
                &_MsgDBLoginOut_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    21;
+    22;
 
   friend void swap(MsgDBLoginOut& a, MsgDBLoginOut& b) {
     a.Swap(&b);
@@ -4151,7 +4324,7 @@ class MsgDBUpdatePlayerInfo PROTOBUF_FINAL :
                &_MsgDBUpdatePlayerInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    22;
+    23;
 
   friend void swap(MsgDBUpdatePlayerInfo& a, MsgDBUpdatePlayerInfo& b) {
     a.Swap(&b);
@@ -4363,7 +4536,7 @@ class MsgDBMailData PROTOBUF_FINAL :
                &_MsgDBMailData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    23;
+    24;
 
   friend void swap(MsgDBMailData& a, MsgDBMailData& b) {
     a.Swap(&b);
@@ -4510,7 +4683,7 @@ class MsgDBMail PROTOBUF_FINAL :
                &_MsgDBMail_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    24;
+    25;
 
   friend void swap(MsgDBMail& a, MsgDBMail& b) {
     a.Swap(&b);
@@ -4748,7 +4921,7 @@ class MsgDBRegisterGame PROTOBUF_FINAL :
                &_MsgDBRegisterGame_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    25;
+    26;
 
   friend void swap(MsgDBRegisterGame& a, MsgDBRegisterGame& b) {
     a.Swap(&b);
@@ -4902,7 +5075,7 @@ class MsgDBLoadRobotInfo PROTOBUF_FINAL :
                &_MsgDBLoadRobotInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    26;
+    27;
 
   friend void swap(MsgDBLoadRobotInfo& a, MsgDBLoadRobotInfo& b) {
     a.Swap(&b);
@@ -5049,7 +5222,7 @@ class MsgDBLoadRobot PROTOBUF_FINAL :
                &_MsgDBLoadRobot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    27;
+    28;
 
   friend void swap(MsgDBLoadRobot& a, MsgDBLoadRobot& b) {
     a.Swap(&b);
@@ -5194,7 +5367,7 @@ class MsgDBGamePlayerLogin PROTOBUF_FINAL :
                &_MsgDBGamePlayerLogin_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    28;
+    29;
 
   friend void swap(MsgDBGamePlayerLogin& a, MsgDBGamePlayerLogin& b) {
     a.Swap(&b);
@@ -5359,7 +5532,7 @@ class MsgDBPlayerReconnectData PROTOBUF_FINAL :
                &_MsgDBPlayerReconnectData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    29;
+    30;
 
   friend void swap(MsgDBPlayerReconnectData& a, MsgDBPlayerReconnectData& b) {
     a.Swap(&b);
@@ -5597,7 +5770,7 @@ class MsgDBGamePlayerLoginResp PROTOBUF_FINAL :
                &_MsgDBGamePlayerLoginResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    30;
+    31;
 
   friend void swap(MsgDBGamePlayerLoginResp& a, MsgDBGamePlayerLoginResp& b) {
     a.Swap(&b);
@@ -5884,7 +6057,7 @@ class MsgDBWriteScore PROTOBUF_FINAL :
                &_MsgDBWriteScore_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    31;
+    32;
 
   friend void swap(MsgDBWriteScore& a, MsgDBWriteScore& b) {
     a.Swap(&b);
@@ -6071,7 +6244,7 @@ class MsgDBWriteScoreResp PROTOBUF_FINAL :
                &_MsgDBWriteScoreResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    32;
+    33;
 
   friend void swap(MsgDBWriteScoreResp& a, MsgDBWriteScoreResp& b) {
     a.Swap(&b);
@@ -6284,7 +6457,7 @@ class MsgDBFingerGuessWriteScore PROTOBUF_FINAL :
                &_MsgDBFingerGuessWriteScore_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    33;
+    34;
 
   friend void swap(MsgDBFingerGuessWriteScore& a, MsgDBFingerGuessWriteScore& b) {
     a.Swap(&b);
@@ -6453,7 +6626,7 @@ class MsgDBFingerGuessWriteScoreResp PROTOBUF_FINAL :
                &_MsgDBFingerGuessWriteScoreResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    34;
+    35;
 
   friend void swap(MsgDBFingerGuessWriteScoreResp& a, MsgDBFingerGuessWriteScoreResp& b) {
     a.Swap(&b);
@@ -6655,7 +6828,7 @@ class MsgDBFingerGuessQueryRecord PROTOBUF_FINAL :
                &_MsgDBFingerGuessQueryRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    35;
+    36;
 
   friend void swap(MsgDBFingerGuessQueryRecord& a, MsgDBFingerGuessQueryRecord& b) {
     a.Swap(&b);
@@ -6824,7 +6997,7 @@ class MsgDBModifyAvatar PROTOBUF_FINAL :
                &_MsgDBModifyAvatar_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    36;
+    37;
 
   friend void swap(MsgDBModifyAvatar& a, MsgDBModifyAvatar& b) {
     a.Swap(&b);
@@ -6978,7 +7151,7 @@ class MsgDBUpdateJackpot PROTOBUF_FINAL :
                &_MsgDBUpdateJackpot_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    37;
+    38;
 
   friend void swap(MsgDBUpdateJackpot& a, MsgDBUpdateJackpot& b) {
     a.Swap(&b);
@@ -7136,7 +7309,7 @@ class MsgDBTransferOperate PROTOBUF_FINAL :
                &_MsgDBTransferOperate_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    38;
+    39;
 
   friend void swap(MsgDBTransferOperate& a, MsgDBTransferOperate& b) {
     a.Swap(&b);
@@ -7305,7 +7478,7 @@ class MsgStorageCode PROTOBUF_FINAL :
                &_MsgStorageCode_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    39;
+    40;
 
   friend void swap(MsgStorageCode& a, MsgStorageCode& b) {
     a.Swap(&b);
@@ -7470,7 +7643,7 @@ class MsgDBBindPhone PROTOBUF_FINAL :
                &_MsgDBBindPhone_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    40;
+    41;
 
   friend void swap(MsgDBBindPhone& a, MsgDBBindPhone& b) {
     a.Swap(&b);
@@ -7660,7 +7833,7 @@ class MsgDBBindPhoneRes PROTOBUF_FINAL :
                &_MsgDBBindPhoneRes_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    41;
+    42;
 
   friend void swap(MsgDBBindPhoneRes& a, MsgDBBindPhoneRes& b) {
     a.Swap(&b);
@@ -7832,7 +8005,7 @@ class MsgDBChatLogin PROTOBUF_FINAL :
                &_MsgDBChatLogin_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    42;
+    43;
 
   friend void swap(MsgDBChatLogin& a, MsgDBChatLogin& b) {
     a.Swap(&b);
@@ -7986,7 +8159,7 @@ class MsgDBChatTrumpetMsg PROTOBUF_FINAL :
                &_MsgDBChatTrumpetMsg_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    43;
+    44;
 
   friend void swap(MsgDBChatTrumpetMsg& a, MsgDBChatTrumpetMsg& b) {
     a.Swap(&b);
@@ -8140,7 +8313,7 @@ class MsgDBBuyGoods PROTOBUF_FINAL :
                &_MsgDBBuyGoods_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    44;
+    45;
 
   friend void swap(MsgDBBuyGoods& a, MsgDBBuyGoods& b) {
     a.Swap(&b);
@@ -8298,7 +8471,7 @@ class MsgDBGameLoginOut PROTOBUF_FINAL :
                &_MsgDBGameLoginOut_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    45;
+    46;
 
   friend void swap(MsgDBGameLoginOut& a, MsgDBGameLoginOut& b) {
     a.Swap(&b);
@@ -8478,7 +8651,7 @@ class MsgDBSubagentInformation PROTOBUF_FINAL :
                &_MsgDBSubagentInformation_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    46;
+    47;
 
   friend void swap(MsgDBSubagentInformation& a, MsgDBSubagentInformation& b) {
     a.Swap(&b);
@@ -8676,7 +8849,7 @@ class MsgDBQueryTransferTax PROTOBUF_FINAL :
                &_MsgDBQueryTransferTax_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    47;
+    48;
 
   friend void swap(MsgDBQueryTransferTax& a, MsgDBQueryTransferTax& b) {
     a.Swap(&b);
@@ -8823,7 +8996,7 @@ class MsgDBTransferTakeOut PROTOBUF_FINAL :
                &_MsgDBTransferTakeOut_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    48;
+    49;
 
   friend void swap(MsgDBTransferTakeOut& a, MsgDBTransferTakeOut& b) {
     a.Swap(&b);
@@ -9025,7 +9198,7 @@ class MsgDBTransferReceive PROTOBUF_FINAL :
                &_MsgDBTransferReceive_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    49;
+    50;
 
   friend void swap(MsgDBTransferReceive& a, MsgDBTransferReceive& b) {
     a.Swap(&b);
@@ -9172,7 +9345,7 @@ class MsgDBBindInviteCode PROTOBUF_FINAL :
                &_MsgDBBindInviteCode_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    50;
+    51;
 
   friend void swap(MsgDBBindInviteCode& a, MsgDBBindInviteCode& b) {
     a.Swap(&b);
@@ -9326,7 +9499,7 @@ class MsgDBSyncDotData PROTOBUF_FINAL :
                &_MsgDBSyncDotData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    51;
+    52;
 
   friend void swap(MsgDBSyncDotData& a, MsgDBSyncDotData& b) {
     a.Swap(&b);
@@ -9473,7 +9646,7 @@ class MsgDBOnlineActivePick PROTOBUF_FINAL :
                &_MsgDBOnlineActivePick_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    52;
+    53;
 
   friend void swap(MsgDBOnlineActivePick& a, MsgDBOnlineActivePick& b) {
     a.Swap(&b);
@@ -9574,6 +9747,160 @@ class MsgDBOnlineActivePick PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 type_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgDBCDKExchange PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgDBCDKExchange) */ {
+ public:
+  inline MsgDBCDKExchange() : MsgDBCDKExchange(nullptr) {}
+  virtual ~MsgDBCDKExchange();
+
+  MsgDBCDKExchange(const MsgDBCDKExchange& from);
+  MsgDBCDKExchange(MsgDBCDKExchange&& from) noexcept
+    : MsgDBCDKExchange() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgDBCDKExchange& operator=(const MsgDBCDKExchange& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgDBCDKExchange& operator=(MsgDBCDKExchange&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgDBCDKExchange& default_instance();
+
+  static inline const MsgDBCDKExchange* internal_default_instance() {
+    return reinterpret_cast<const MsgDBCDKExchange*>(
+               &_MsgDBCDKExchange_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    54;
+
+  friend void swap(MsgDBCDKExchange& a, MsgDBCDKExchange& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgDBCDKExchange* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgDBCDKExchange* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgDBCDKExchange* New() const final {
+    return CreateMaybeMessage<MsgDBCDKExchange>(nullptr);
+  }
+
+  MsgDBCDKExchange* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgDBCDKExchange>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgDBCDKExchange& from);
+  void MergeFrom(const MsgDBCDKExchange& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgDBCDKExchange* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgDBCDKExchange";
+  }
+  protected:
+  explicit MsgDBCDKExchange(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kCdkCodeFieldNumber = 2,
+    kUserIdFieldNumber = 1,
+  };
+  // string cdk_code = 2;
+  void clear_cdk_code();
+  const std::string& cdk_code() const;
+  void set_cdk_code(const std::string& value);
+  void set_cdk_code(std::string&& value);
+  void set_cdk_code(const char* value);
+  void set_cdk_code(const char* value, size_t size);
+  std::string* mutable_cdk_code();
+  std::string* release_cdk_code();
+  void set_allocated_cdk_code(std::string* cdk_code);
+  private:
+  const std::string& _internal_cdk_code() const;
+  void _internal_set_cdk_code(const std::string& value);
+  std::string* _internal_mutable_cdk_code();
+  public:
+
+  // int32 user_id = 1;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgDBCDKExchange)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr cdk_code_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -10297,6 +10624,111 @@ inline void MsgSendPhoneCode::_internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 
 inline void MsgSendPhoneCode::set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_code(value);
   // @@protoc_insertion_point(field_set:MsgSendPhoneCode.code)
+}
+
+// int32 id = 3;
+inline void MsgSendPhoneCode::clear_id() {
+  id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSendPhoneCode::_internal_id() const {
+  return id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSendPhoneCode::id() const {
+  // @@protoc_insertion_point(field_get:MsgSendPhoneCode.id)
+  return _internal_id();
+}
+inline void MsgSendPhoneCode::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  id_ = value;
+}
+inline void MsgSendPhoneCode::set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_id(value);
+  // @@protoc_insertion_point(field_set:MsgSendPhoneCode.id)
+}
+
+// -------------------------------------------------------------------
+
+// MsgUpdatePhoneCodeState
+
+// int32 id = 1;
+inline void MsgUpdatePhoneCodeState::clear_id() {
+  id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgUpdatePhoneCodeState::_internal_id() const {
+  return id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgUpdatePhoneCodeState::id() const {
+  // @@protoc_insertion_point(field_get:MsgUpdatePhoneCodeState.id)
+  return _internal_id();
+}
+inline void MsgUpdatePhoneCodeState::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  id_ = value;
+}
+inline void MsgUpdatePhoneCodeState::set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_id(value);
+  // @@protoc_insertion_point(field_set:MsgUpdatePhoneCodeState.id)
+}
+
+// string channel = 4;
+inline void MsgUpdatePhoneCodeState::clear_channel() {
+  channel_.ClearToEmpty();
+}
+inline const std::string& MsgUpdatePhoneCodeState::channel() const {
+  // @@protoc_insertion_point(field_get:MsgUpdatePhoneCodeState.channel)
+  return _internal_channel();
+}
+inline void MsgUpdatePhoneCodeState::set_channel(const std::string& value) {
+  _internal_set_channel(value);
+  // @@protoc_insertion_point(field_set:MsgUpdatePhoneCodeState.channel)
+}
+inline std::string* MsgUpdatePhoneCodeState::mutable_channel() {
+  // @@protoc_insertion_point(field_mutable:MsgUpdatePhoneCodeState.channel)
+  return _internal_mutable_channel();
+}
+inline const std::string& MsgUpdatePhoneCodeState::_internal_channel() const {
+  return channel_.Get();
+}
+inline void MsgUpdatePhoneCodeState::_internal_set_channel(const std::string& value) {
+  
+  channel_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgUpdatePhoneCodeState::set_channel(std::string&& value) {
+  
+  channel_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgUpdatePhoneCodeState.channel)
+}
+inline void MsgUpdatePhoneCodeState::set_channel(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  channel_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgUpdatePhoneCodeState.channel)
+}
+inline void MsgUpdatePhoneCodeState::set_channel(const char* value,
+    size_t size) {
+  
+  channel_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgUpdatePhoneCodeState.channel)
+}
+inline std::string* MsgUpdatePhoneCodeState::_internal_mutable_channel() {
+  
+  return channel_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgUpdatePhoneCodeState::release_channel() {
+  // @@protoc_insertion_point(field_release:MsgUpdatePhoneCodeState.channel)
+  return channel_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgUpdatePhoneCodeState::set_allocated_channel(std::string* channel) {
+  if (channel != nullptr) {
+    
+  } else {
+    
+  }
+  channel_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), channel,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgUpdatePhoneCodeState.channel)
 }
 
 // -------------------------------------------------------------------
@@ -15721,9 +16153,98 @@ inline void MsgDBOnlineActivePick::set_type(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:MsgDBOnlineActivePick.type)
 }
 
+// -------------------------------------------------------------------
+
+// MsgDBCDKExchange
+
+// int32 user_id = 1;
+inline void MsgDBCDKExchange::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBCDKExchange::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBCDKExchange::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBCDKExchange.user_id)
+  return _internal_user_id();
+}
+inline void MsgDBCDKExchange::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgDBCDKExchange::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBCDKExchange.user_id)
+}
+
+// string cdk_code = 2;
+inline void MsgDBCDKExchange::clear_cdk_code() {
+  cdk_code_.ClearToEmpty();
+}
+inline const std::string& MsgDBCDKExchange::cdk_code() const {
+  // @@protoc_insertion_point(field_get:MsgDBCDKExchange.cdk_code)
+  return _internal_cdk_code();
+}
+inline void MsgDBCDKExchange::set_cdk_code(const std::string& value) {
+  _internal_set_cdk_code(value);
+  // @@protoc_insertion_point(field_set:MsgDBCDKExchange.cdk_code)
+}
+inline std::string* MsgDBCDKExchange::mutable_cdk_code() {
+  // @@protoc_insertion_point(field_mutable:MsgDBCDKExchange.cdk_code)
+  return _internal_mutable_cdk_code();
+}
+inline const std::string& MsgDBCDKExchange::_internal_cdk_code() const {
+  return cdk_code_.Get();
+}
+inline void MsgDBCDKExchange::_internal_set_cdk_code(const std::string& value) {
+  
+  cdk_code_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgDBCDKExchange::set_cdk_code(std::string&& value) {
+  
+  cdk_code_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgDBCDKExchange.cdk_code)
+}
+inline void MsgDBCDKExchange::set_cdk_code(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  cdk_code_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgDBCDKExchange.cdk_code)
+}
+inline void MsgDBCDKExchange::set_cdk_code(const char* value,
+    size_t size) {
+  
+  cdk_code_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgDBCDKExchange.cdk_code)
+}
+inline std::string* MsgDBCDKExchange::_internal_mutable_cdk_code() {
+  
+  return cdk_code_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgDBCDKExchange::release_cdk_code() {
+  // @@protoc_insertion_point(field_release:MsgDBCDKExchange.cdk_code)
+  return cdk_code_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgDBCDKExchange::set_allocated_cdk_code(std::string* cdk_code) {
+  if (cdk_code != nullptr) {
+    
+  } else {
+    
+  }
+  cdk_code_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), cdk_code,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgDBCDKExchange.cdk_code)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

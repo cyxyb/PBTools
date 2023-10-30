@@ -265,19 +265,15 @@ message MsgPlayerInfo
 	uint64		zmd_win_gold	= 11;	//走马灯数据记录
 }
 
-message MsgActiveInfo
-{
-	int32		user_id				= 1;	//userid
-	int32		active_id			= 2;	//activeid
-}
+//日常任务
 message ActiveInfoRet
 {
-	int32	active_id 		= 1;		//活动id: 5：每日反馈 6：新手任务邀请码 7：新手任务累充 8：新手任务游戏次数(多福多寿) 9：在线奖励10：新手任务游戏次数(龙虎斗) 11：新手任务游戏次数(小火箭)
+	int32	active_id 		= 1;		//活动id: 5、teenpattie 6、fb分享 7、轮盘 8、宙斯 10、捕鱼 11、小火箭 12、下注筹码 13、龙虎
 	int32	sub_active_id 	= 2;		//子活动id
 	int32	param1 			= 3;		//完成条件
-	int32	param2 			= 4;		
-	int32	param3 			= 5;		
-	int32	progress1 		= 6;		//完成度 负数为完成 正数为未完成
+	int32	param2 			= 4;		//多语言文字提示码	
+	int32	param3 			= 5;		//游戏id
+	int32	progress1 		= 6;		//完成度 
 	int32	progress2 		= 7;		
 	int32	progress3 		= 8;		
 	int32	reward 			= 9;		//活动奖励
@@ -292,14 +288,14 @@ message MsgActiveInfoSCRet
 message MsgActiveInfoCSPick
 {
 	int32 user_id = 1; 					//玩家id
-	int32 active_id = 2; 				//活动id: 3在线奖励
-	int32 sub_active_id = 3;			//活动id: 5：每日反馈 6：新手任务邀请码 7：新手任务累充 8：新手任务游戏次数(多福多寿) 9：在线奖励10：新手任务游戏次数(龙虎斗) 11：新手任务游戏次数(小火箭)
+	int32 active_id = 2; 				//活动id: 5、teenpattie 6、fb分享 7、轮盘 8、宙斯 10、捕鱼 11、小火箭 12、下注筹码 13、龙虎
+	int32 sub_active_id = 3;			//活动id: 1
 };
 message MsgActiveInfoSCPick
 {
-	int32 active_id = 1;				//活动id: 5：每日反馈 6：新手任务邀请码 7：新手任务累充 8：新手任务游戏次数(多福多寿) 9：在线奖励10：新手任务游戏次数(龙虎斗) 11：新手任务游戏次数(小火箭)
-	int32 sub_active_id = 2;			//子活动id 123
-	int32 param1 = 3;					//完成条件1-3-5
+	int32 active_id = 1;				//活动id: 5、teenpattie 6、fb分享 7、轮盘 8、宙斯 10、捕鱼 11、小火箭 12、下注筹码 13、龙虎
+	int32 sub_active_id = 2;			//子活动id 1
+	int32 param1 = 3;					//完成条件
 	int32 param2 = 4;
 	int32 param3 = 5;
 	int32 progress1 = 6;				//完成度 
@@ -487,4 +483,17 @@ message MsgOlineActiveAward
 	int32 item_num = 2;						//奖励数量
 	int32 type = 3;							//奖励类型
 	int32 online_index = 4;					//奖励索引
+}
+
+//CDK使用兑换
+message MsgCDKExchange
+{
+	int32 item_id 	= 1;					//奖励道具id
+	int32 item_num 	= 2;					//奖励道具数量
+	int32 item_type = 3;					//奖励道具类型：1金币
+}
+message MsgCDKExchangeResp
+{
+	int32 ret_code 	= 1;					//返回多语言码：0成功
+	repeated MsgCDKExchange info = 2;		//奖励列表
 }

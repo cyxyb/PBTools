@@ -185,6 +185,9 @@ enum EMsgIDDB
 	LOGIN2DB_OnlineActivePick			= 1077;	//在线领取数据
 	DB2LOGIN_OnlineActivePickResp		= 1078;	//在线领取返回
 	LOGIN2DB_ActiveFBShareData			= 1079;	//日常任务fb分享任务			
+	LOGIN2DB_CDKExchange				= 1080;	//使用兑换码
+	DB2LOGIN_CDKExchangeResp			= 1081;	//使用兑换码返回
+	DB2LOGIN_StorageCodeResp			= 1082; //缓存验证码返回
 	//2001-3000 GameServer2DB	
 	GAME2DB_Login						= 2001;	//玩家登录游戏
 	DB2GAME_LoginResp					= 2002;	//玩家登录游戏返回
@@ -212,6 +215,9 @@ enum EMsgIDDB
 	DB2CHAT_LoginResp					= 3002;	//登录返回
 	CHAT2DB_SendTrumpetMsg				= 3003;	//发送小喇叭消息
 	DB2CHAT_SendTrumpetMsgResp			= 3004;	//发送小喇叭消息返回
+	
+	//4001-5000 AppRecharge2DB
+	App2DB_UpdatePhoneCodeState			= 4001;	//更新验证码状态
 }
 
 enum EGameBattleTypeID
