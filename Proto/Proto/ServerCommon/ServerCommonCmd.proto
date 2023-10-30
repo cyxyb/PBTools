@@ -188,6 +188,8 @@ enum EMsgIDDB
 	LOGIN2DB_CDKExchange				= 1080;	//使用兑换码
 	DB2LOGIN_CDKExchangeResp			= 1081;	//使用兑换码返回
 	DB2LOGIN_StorageCodeResp			= 1082; //缓存验证码返回
+	LOGIN2DB_PersonalDetails			= 1083; //修改玩家个人展示信息
+	DB2LOGIN_PersonalDetailsResp		= 1084; //修改玩家个人展示信息返回
 	//2001-3000 GameServer2DB	
 	GAME2DB_Login						= 2001;	//玩家登录游戏
 	DB2GAME_LoginResp					= 2002;	//玩家登录游戏返回

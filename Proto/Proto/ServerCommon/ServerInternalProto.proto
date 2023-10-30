@@ -488,3 +488,9 @@ message MsgDBCDKExchange
 	int32 	user_id 	= 1;				//玩家ID
 	string 	cdk_code 	= 2;				//兑换码
 }
+message MsgDBPersonalDetailsRespAdd
+{
+	int32 	user_id = 1;					//玩家ID
+	int32 	type 	= 2;					//信息类型 1:WhatsApp、2:telegram、3:facebook
+	string	msg		= 3;					//账号信息限长64字节
+}

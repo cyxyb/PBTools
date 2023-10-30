@@ -39,6 +39,9 @@ message MsgPlayerLoginResp
 	string      signature		= 16;	//个性签名
 	int32		agent_level		= 17;	//代理等级
 	string		password		= 18;	//玩家密码
+	string      whatsup_msg		= 19;	//个性whats
+	string      telegram_msg	= 20;	//个性telegram
+	string      facebook_msg	= 21;	//个性facebook
 }
 
 //修改密码
@@ -263,12 +266,15 @@ message MsgPlayerInfo
 	string		signature		= 9;	//签名
 	int32		zmd_game_id		= 10;	//走马灯数据记录
 	uint64		zmd_win_gold	= 11;	//走马灯数据记录
+	string      whatsup_msg		= 19;	//个性whats
+	string      telegram_msg	= 20;	//个性telegram
+	string      facebook_msg	= 21;	//个性facebook
 }
 
 //日常任务
 message ActiveInfoRet
 {
-	int32	active_id 		= 1;		//活动id: 5、teenpattie 6、fb分享 7、轮盘 8、宙斯 10、捕鱼 11、小火箭 12、下注筹码 13、龙虎
+	int32	active_id 		= 1;		//活动id: 5、teenpattie 6、fb分享 7、轮盘 8、宙斯 10、捕鱼 11、小火箭 12、下注筹码 13、龙虎 14、总进度活动
 	int32	sub_active_id 	= 2;		//子活动id
 	int32	param1 			= 3;		//完成条件
 	int32	param2 			= 4;		//多语言文字提示码	
@@ -288,12 +294,12 @@ message MsgActiveInfoSCRet
 message MsgActiveInfoCSPick
 {
 	int32 user_id = 1; 					//玩家id
-	int32 active_id = 2; 				//活动id: 5、teenpattie 6、fb分享 7、轮盘 8、宙斯 10、捕鱼 11、小火箭 12、下注筹码 13、龙虎
+	int32 active_id = 2; 				//活动id: 5、teenpattie 6、fb分享 7、轮盘 8、宙斯 10、捕鱼 11、小火箭 12、下注筹码 13、龙虎 14、总进度活动
 	int32 sub_active_id = 3;			//活动id: 1
 };
 message MsgActiveInfoSCPick
 {
-	int32 active_id = 1;				//活动id: 5、teenpattie 6、fb分享 7、轮盘 8、宙斯 10、捕鱼 11、小火箭 12、下注筹码 13、龙虎
+	int32 active_id = 1;				//活动id: 5、teenpattie 6、fb分享 7、轮盘 8、宙斯 10、捕鱼 11、小火箭 12、下注筹码 13、龙虎 14、总进度活动
 	int32 sub_active_id = 2;			//子活动id 1
 	int32 param1 = 3;					//完成条件
 	int32 param2 = 4;
@@ -496,4 +502,9 @@ message MsgCDKExchangeResp
 {
 	int32 ret_code 	= 1;					//返回多语言码：0成功
 	repeated MsgCDKExchange info = 2;		//奖励列表
+}
+message MsgPersonalDetailsRespAdd
+{
+	int32 	type 	= 1;					//信息类型 1:WhatsApp、2:telegram、3:facebook
+	string	msg		= 2;					//账号信息限长64字节
 }

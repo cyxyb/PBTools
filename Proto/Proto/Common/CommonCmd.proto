@@ -77,7 +77,7 @@ enum EMsgIDLogin
 	MsgIDAvatar_ModifyAvatarFrame				= 63;		//修改玩家头像框(MsgCommonN32)
 	MsgIDAvatar_ModifyAvatarFrameResp			= 64;		//修改玩家头像框返回(MsgCommonN32)
 	MsgIDLogin_QueryPlayerInfo					= 65;		//查询玩家信息(MsgCommonN32)
-	MsgIDLogin_QueryPlayerInfoResp				= 66;		//查询玩家信息返回(MsgCommonBool)
+	MsgIDLogin_QueryPlayerInfoResp				= 66;		//查询玩家信息返回(MsgPlayerInfo)
 	MsgIDActive_QueryActiveInfo					= 67;		//查询玩家活动数据(MsgActiveInfoSCRet)
 	MsgIDActive_QueryActiveInfoResp				= 68;		//查询玩家活动数据返回(MsgActiveInfoSCRet)
 	MsgIDZMD_BroadcastTipResp					= 69;		//跑马灯广播(MsgBroadcastTip)
@@ -125,6 +125,8 @@ enum EMsgIDLogin
 	MsgIDActive_ActiveFBShareData				= 111;		//日常任务fb分享任务(MsgCommonBool)
 	MsgIDCDK_CDKexchangeInfo					= 112;		//CDK兑换码查询信息(MsgCommonStr)
 	MsgIDCDK_CDKexchangeInfoResp				= 113;		//CDK兑换码查询信息返回(MsgCDKExchangeResp)
+	MsgIDLogin_PersonalDetails					= 114;		//新增个人信息(MsgPersonalDetailsRespAdd)
+	MsgIDLogin_PersonalDetailsResp				= 115;		//新增个人信息(MsgCommonBool)
 }
 
 enum EMsgIDGame

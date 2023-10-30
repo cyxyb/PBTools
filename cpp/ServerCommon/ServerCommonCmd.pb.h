@@ -267,6 +267,8 @@ enum EMsgIDDB : int {
   LOGIN2DB_CDKExchange = 1080,
   DB2LOGIN_CDKExchangeResp = 1081,
   DB2LOGIN_StorageCodeResp = 1082,
+  LOGIN2DB_PersonalDetails = 1083,
+  DB2LOGIN_PersonalDetailsResp = 1084,
   GAME2DB_Login = 2001,
   DB2GAME_LoginResp = 2002,
   GAME2DB_LoadCheatRate = 2003,
