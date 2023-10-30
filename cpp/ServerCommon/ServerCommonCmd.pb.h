@@ -266,6 +266,7 @@ enum EMsgIDDB : int {
   LOGIN2DB_ActiveFBShareData = 1079,
   LOGIN2DB_CDKExchange = 1080,
   DB2LOGIN_CDKExchangeResp = 1081,
+  DB2LOGIN_StorageCodeResp = 1082,
   GAME2DB_Login = 2001,
   DB2GAME_LoginResp = 2002,
   GAME2DB_LoadCheatRate = 2003,
@@ -290,12 +291,13 @@ enum EMsgIDDB : int {
   DB2CHAT_LoginResp = 3002,
   CHAT2DB_SendTrumpetMsg = 3003,
   DB2CHAT_SendTrumpetMsgResp = 3004,
+  App2DB_UpdatePhoneCodeState = 4001,
   EMsgIDDB_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDDB_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDDB_IsValid(int value);
 constexpr EMsgIDDB EMsgIDDB_MIN = MsgIDDB_NULL;
-constexpr EMsgIDDB EMsgIDDB_MAX = DB2CHAT_SendTrumpetMsgResp;
+constexpr EMsgIDDB EMsgIDDB_MAX = App2DB_UpdatePhoneCodeState;
 constexpr int EMsgIDDB_ARRAYSIZE = EMsgIDDB_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDDB_descriptor();
