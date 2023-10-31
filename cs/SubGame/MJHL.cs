@@ -24,23 +24,21 @@ namespace MJHL {
     static MJHLReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChhQcm90by9TdWJHYW1lL01KSEwucHJvdG8SBE1KSEwiSgoFUm91bmQSDAoE",
-            "aWNvbhgBIAMoBRIOCgZIaXRJZHgYAiADKAUSFgoOR29sZF9JY29uX0luZm8Y",
-            "AyADKAUSCwoDb2RkGAQgASgFIlcKDFNDX1NjZW5lSW5mbxISCgpuRnJlZUNv",
-            "dW50GAEgASgFEhIKCm5DdXJyZW5CZXQYAiABKAUSEQoJbkJldENvdW50GAMg",
-            "ASgFEgwKBG5CZXQYBCADKAUiIgoOQ01EX1NDX0JldEZhaWwSEAoIblJlc0Nv",
-            "ZGUYASABKAUibwoQQ01EXzNEX1NDX1Jlc3VsdBIgCgt0YWdJY29uSW5mbxgB",
-            "IAMoCzILLk1KSEwuUm91bmQSEwoLdGFibGVBbGxPZGQYAiABKAUSEgoKbkZy",
-            "ZWVUaW1lcxgDIAEoBRIQCghuV2luR29sZBgEIAEoBSpPCgpFTXNnSURNSkhM",
-            "EhUKEVNVQl9DU19HQU1FX1NUQVJUEAASEwoPU1VCX1NDX0JFVF9GQUlMEAES",
-            "FQoRU1VCX1NDX1NUQVJUX0dBTUUQAmIGcHJvdG8z"));
+            "ChhQcm90by9TdWJHYW1lL01KSEwucHJvdG8SBE1KSEwiSwoFUm91bmQSDAoE",
+            "aWNvbhgBIAMoBRIPCgdoaXRfaWR4GAIgAygFEhYKDmdvbGRfaWNvbl9pbmZv",
+            "GAMgAygFEgsKA29kZBgEIAEoBSJDCgxTQ19TY2VuZUluZm8SEgoKZnJlZV9j",
+            "b3VudBgBIAEoBRISCgpjdXJyZW5fYmV0GAIgASgFEgsKA2JldBgDIAMoBSJz",
+            "ChBDTURfM0RfU0NfUmVzdWx0EiIKDXRhZ19pY29uX2luZm8YASADKAsyCy5N",
+            "SkhMLlJvdW5kEhUKDXRhYmxlX2FsbF9vZGQYAiABKAUSEgoKZnJlZV90aW1l",
+            "cxgDIAEoBRIQCgh3aW5fZ29sZBgEIAEoBSpPCgpFTXNnSURNSkhMEhUKEVNV",
+            "Ql9DU19HQU1FX1NUQVJUEAASEwoPU1VCX1NDX0JFVF9GQUlMEAESFQoRU1VC",
+            "X1NDX1NUQVJUX0dBTUUQAmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::MJHL.EMsgIDMJHL), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::MJHL.Round), global::MJHL.Round.Parser, new[]{ "Icon", "HitIdx", "GoldIconInfo", "Odd" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::MJHL.SC_SceneInfo), global::MJHL.SC_SceneInfo.Parser, new[]{ "NFreeCount", "NCurrenBet", "NBetCount", "NBet" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::MJHL.CMD_SC_BetFail), global::MJHL.CMD_SC_BetFail.Parser, new[]{ "NResCode" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::MJHL.CMD_3D_SC_Result), global::MJHL.CMD_3D_SC_Result.Parser, new[]{ "TagIconInfo", "TableAllOdd", "NFreeTimes", "NWinGold" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::MJHL.SC_SceneInfo), global::MJHL.SC_SceneInfo.Parser, new[]{ "FreeCount", "CurrenBet", "Bet" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::MJHL.CMD_3D_SC_Result), global::MJHL.CMD_3D_SC_Result.Parser, new[]{ "TagIconInfo", "TableAllOdd", "FreeTimes", "WinGold" }, null, null, null, null)
           }));
     }
     #endregion
@@ -56,7 +54,7 @@ namespace MJHL {
     /// </summary>
     [pbr::OriginalName("SUB_CS_GAME_START")] SubCsGameStart = 0,
     /// <summary>
-    ///游戏结束
+    ///游戏结束(MsgCommonN32)// 0：金币不足 1：下注失败
     /// </summary>
     [pbr::OriginalName("SUB_SC_BET_FAIL")] SubScBetFail = 1,
     /// <summary>
@@ -122,7 +120,7 @@ namespace MJHL {
       get { return icon_; }
     }
 
-    /// <summary>Field number for the "HitIdx" field.</summary>
+    /// <summary>Field number for the "hit_idx" field.</summary>
     public const int HitIdxFieldNumber = 2;
     private static readonly pb::FieldCodec<int> _repeated_hitIdx_codec
         = pb::FieldCodec.ForInt32(18);
@@ -135,7 +133,7 @@ namespace MJHL {
       get { return hitIdx_; }
     }
 
-    /// <summary>Field number for the "Gold_Icon_Info" field.</summary>
+    /// <summary>Field number for the "gold_icon_info" field.</summary>
     public const int GoldIconInfoFieldNumber = 3;
     private static readonly pb::FieldCodec<int> _repeated_goldIconInfo_codec
         = pb::FieldCodec.ForInt32(26);
@@ -362,10 +360,9 @@ namespace MJHL {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public SC_SceneInfo(SC_SceneInfo other) : this() {
-      nFreeCount_ = other.nFreeCount_;
-      nCurrenBet_ = other.nCurrenBet_;
-      nBetCount_ = other.nBetCount_;
-      nBet_ = other.nBet_.Clone();
+      freeCount_ = other.freeCount_;
+      currenBet_ = other.currenBet_;
+      bet_ = other.bet_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -374,56 +371,42 @@ namespace MJHL {
       return new SC_SceneInfo(this);
     }
 
-    /// <summary>Field number for the "nFreeCount" field.</summary>
-    public const int NFreeCountFieldNumber = 1;
-    private int nFreeCount_;
+    /// <summary>Field number for the "free_count" field.</summary>
+    public const int FreeCountFieldNumber = 1;
+    private int freeCount_;
     /// <summary>
     /// 免费次数
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int NFreeCount {
-      get { return nFreeCount_; }
+    public int FreeCount {
+      get { return freeCount_; }
       set {
-        nFreeCount_ = value;
+        freeCount_ = value;
       }
     }
 
-    /// <summary>Field number for the "nCurrenBet" field.</summary>
-    public const int NCurrenBetFieldNumber = 2;
-    private int nCurrenBet_;
+    /// <summary>Field number for the "curren_bet" field.</summary>
+    public const int CurrenBetFieldNumber = 2;
+    private int currenBet_;
     /// <summary>
     /// 当前下注
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int NCurrenBet {
-      get { return nCurrenBet_; }
+    public int CurrenBet {
+      get { return currenBet_; }
       set {
-        nCurrenBet_ = value;
+        currenBet_ = value;
       }
     }
 
-    /// <summary>Field number for the "nBetCount" field.</summary>
-    public const int NBetCountFieldNumber = 3;
-    private int nBetCount_;
-    /// <summary>
-    /// 下注列表个数
-    /// </summary>
+    /// <summary>Field number for the "bet" field.</summary>
+    public const int BetFieldNumber = 3;
+    private static readonly pb::FieldCodec<int> _repeated_bet_codec
+        = pb::FieldCodec.ForInt32(26);
+    private readonly pbc::RepeatedField<int> bet_ = new pbc::RepeatedField<int>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int NBetCount {
-      get { return nBetCount_; }
-      set {
-        nBetCount_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "nBet" field.</summary>
-    public const int NBetFieldNumber = 4;
-    private static readonly pb::FieldCodec<int> _repeated_nBet_codec
-        = pb::FieldCodec.ForInt32(34);
-    private readonly pbc::RepeatedField<int> nBet_ = new pbc::RepeatedField<int>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<int> NBet {
-      get { return nBet_; }
+    public pbc::RepeatedField<int> Bet {
+      get { return bet_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -439,20 +422,18 @@ namespace MJHL {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (NFreeCount != other.NFreeCount) return false;
-      if (NCurrenBet != other.NCurrenBet) return false;
-      if (NBetCount != other.NBetCount) return false;
-      if(!nBet_.Equals(other.nBet_)) return false;
+      if (FreeCount != other.FreeCount) return false;
+      if (CurrenBet != other.CurrenBet) return false;
+      if(!bet_.Equals(other.bet_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (NFreeCount != 0) hash ^= NFreeCount.GetHashCode();
-      if (NCurrenBet != 0) hash ^= NCurrenBet.GetHashCode();
-      if (NBetCount != 0) hash ^= NBetCount.GetHashCode();
-      hash ^= nBet_.GetHashCode();
+      if (FreeCount != 0) hash ^= FreeCount.GetHashCode();
+      if (CurrenBet != 0) hash ^= CurrenBet.GetHashCode();
+      hash ^= bet_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -469,19 +450,15 @@ namespace MJHL {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (NFreeCount != 0) {
+      if (FreeCount != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(NFreeCount);
+        output.WriteInt32(FreeCount);
       }
-      if (NCurrenBet != 0) {
+      if (CurrenBet != 0) {
         output.WriteRawTag(16);
-        output.WriteInt32(NCurrenBet);
+        output.WriteInt32(CurrenBet);
       }
-      if (NBetCount != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(NBetCount);
-      }
-      nBet_.WriteTo(output, _repeated_nBet_codec);
+      bet_.WriteTo(output, _repeated_bet_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -491,19 +468,15 @@ namespace MJHL {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (NFreeCount != 0) {
+      if (FreeCount != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(NFreeCount);
+        output.WriteInt32(FreeCount);
       }
-      if (NCurrenBet != 0) {
+      if (CurrenBet != 0) {
         output.WriteRawTag(16);
-        output.WriteInt32(NCurrenBet);
+        output.WriteInt32(CurrenBet);
       }
-      if (NBetCount != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(NBetCount);
-      }
-      nBet_.WriteTo(ref output, _repeated_nBet_codec);
+      bet_.WriteTo(ref output, _repeated_bet_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -513,16 +486,13 @@ namespace MJHL {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (NFreeCount != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(NFreeCount);
+      if (FreeCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(FreeCount);
       }
-      if (NCurrenBet != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(NCurrenBet);
+      if (CurrenBet != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CurrenBet);
       }
-      if (NBetCount != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(NBetCount);
-      }
-      size += nBet_.CalculateSize(_repeated_nBet_codec);
+      size += bet_.CalculateSize(_repeated_bet_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -534,16 +504,13 @@ namespace MJHL {
       if (other == null) {
         return;
       }
-      if (other.NFreeCount != 0) {
-        NFreeCount = other.NFreeCount;
+      if (other.FreeCount != 0) {
+        FreeCount = other.FreeCount;
       }
-      if (other.NCurrenBet != 0) {
-        NCurrenBet = other.NCurrenBet;
+      if (other.CurrenBet != 0) {
+        CurrenBet = other.CurrenBet;
       }
-      if (other.NBetCount != 0) {
-        NBetCount = other.NBetCount;
-      }
-      nBet_.Add(other.nBet_);
+      bet_.Add(other.bet_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -559,20 +526,16 @@ namespace MJHL {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            NFreeCount = input.ReadInt32();
+            FreeCount = input.ReadInt32();
             break;
           }
           case 16: {
-            NCurrenBet = input.ReadInt32();
+            CurrenBet = input.ReadInt32();
             break;
           }
+          case 26:
           case 24: {
-            NBetCount = input.ReadInt32();
-            break;
-          }
-          case 34:
-          case 32: {
-            nBet_.AddEntriesFrom(input, _repeated_nBet_codec);
+            bet_.AddEntriesFrom(input, _repeated_bet_codec);
             break;
           }
         }
@@ -590,195 +553,16 @@ namespace MJHL {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            NFreeCount = input.ReadInt32();
+            FreeCount = input.ReadInt32();
             break;
           }
           case 16: {
-            NCurrenBet = input.ReadInt32();
+            CurrenBet = input.ReadInt32();
             break;
           }
+          case 26:
           case 24: {
-            NBetCount = input.ReadInt32();
-            break;
-          }
-          case 34:
-          case 32: {
-            nBet_.AddEntriesFrom(ref input, _repeated_nBet_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  public sealed partial class CMD_SC_BetFail : pb::IMessage<CMD_SC_BetFail>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<CMD_SC_BetFail> _parser = new pb::MessageParser<CMD_SC_BetFail>(() => new CMD_SC_BetFail());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<CMD_SC_BetFail> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::MJHL.MJHLReflection.Descriptor.MessageTypes[2]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMD_SC_BetFail() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMD_SC_BetFail(CMD_SC_BetFail other) : this() {
-      nResCode_ = other.nResCode_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public CMD_SC_BetFail Clone() {
-      return new CMD_SC_BetFail(this);
-    }
-
-    /// <summary>Field number for the "nResCode" field.</summary>
-    public const int NResCodeFieldNumber = 1;
-    private int nResCode_;
-    /// <summary>
-    /// 0：金币不足 1：下注失败
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int NResCode {
-      get { return nResCode_; }
-      set {
-        nResCode_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as CMD_SC_BetFail);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(CMD_SC_BetFail other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (NResCode != other.NResCode) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (NResCode != 0) hash ^= NResCode.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (NResCode != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(NResCode);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (NResCode != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(NResCode);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (NResCode != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(NResCode);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(CMD_SC_BetFail other) {
-      if (other == null) {
-        return;
-      }
-      if (other.NResCode != 0) {
-        NResCode = other.NResCode;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            NResCode = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            NResCode = input.ReadInt32();
+            bet_.AddEntriesFrom(ref input, _repeated_bet_codec);
             break;
           }
         }
@@ -803,7 +587,7 @@ namespace MJHL {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::MJHL.MJHLReflection.Descriptor.MessageTypes[3]; }
+      get { return global::MJHL.MJHLReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -822,8 +606,8 @@ namespace MJHL {
     public CMD_3D_SC_Result(CMD_3D_SC_Result other) : this() {
       tagIconInfo_ = other.tagIconInfo_.Clone();
       tableAllOdd_ = other.tableAllOdd_;
-      nFreeTimes_ = other.nFreeTimes_;
-      nWinGold_ = other.nWinGold_;
+      freeTimes_ = other.freeTimes_;
+      winGold_ = other.winGold_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -832,7 +616,7 @@ namespace MJHL {
       return new CMD_3D_SC_Result(this);
     }
 
-    /// <summary>Field number for the "tagIconInfo" field.</summary>
+    /// <summary>Field number for the "tag_icon_info" field.</summary>
     public const int TagIconInfoFieldNumber = 1;
     private static readonly pb::FieldCodec<global::MJHL.Round> _repeated_tagIconInfo_codec
         = pb::FieldCodec.ForMessage(10, global::MJHL.Round.Parser);
@@ -845,7 +629,7 @@ namespace MJHL {
       get { return tagIconInfo_; }
     }
 
-    /// <summary>Field number for the "tableAllOdd" field.</summary>
+    /// <summary>Field number for the "table_all_odd" field.</summary>
     public const int TableAllOddFieldNumber = 2;
     private int tableAllOdd_;
     /// <summary>
@@ -859,31 +643,31 @@ namespace MJHL {
       }
     }
 
-    /// <summary>Field number for the "nFreeTimes" field.</summary>
-    public const int NFreeTimesFieldNumber = 3;
-    private int nFreeTimes_;
+    /// <summary>Field number for the "free_times" field.</summary>
+    public const int FreeTimesFieldNumber = 3;
+    private int freeTimes_;
     /// <summary>
     /// 免费次数
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int NFreeTimes {
-      get { return nFreeTimes_; }
+    public int FreeTimes {
+      get { return freeTimes_; }
       set {
-        nFreeTimes_ = value;
+        freeTimes_ = value;
       }
     }
 
-    /// <summary>Field number for the "nWinGold" field.</summary>
-    public const int NWinGoldFieldNumber = 4;
-    private int nWinGold_;
+    /// <summary>Field number for the "win_gold" field.</summary>
+    public const int WinGoldFieldNumber = 4;
+    private int winGold_;
     /// <summary>
     /// 赢得金币
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int NWinGold {
-      get { return nWinGold_; }
+    public int WinGold {
+      get { return winGold_; }
       set {
-        nWinGold_ = value;
+        winGold_ = value;
       }
     }
 
@@ -902,8 +686,8 @@ namespace MJHL {
       }
       if(!tagIconInfo_.Equals(other.tagIconInfo_)) return false;
       if (TableAllOdd != other.TableAllOdd) return false;
-      if (NFreeTimes != other.NFreeTimes) return false;
-      if (NWinGold != other.NWinGold) return false;
+      if (FreeTimes != other.FreeTimes) return false;
+      if (WinGold != other.WinGold) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -912,8 +696,8 @@ namespace MJHL {
       int hash = 1;
       hash ^= tagIconInfo_.GetHashCode();
       if (TableAllOdd != 0) hash ^= TableAllOdd.GetHashCode();
-      if (NFreeTimes != 0) hash ^= NFreeTimes.GetHashCode();
-      if (NWinGold != 0) hash ^= NWinGold.GetHashCode();
+      if (FreeTimes != 0) hash ^= FreeTimes.GetHashCode();
+      if (WinGold != 0) hash ^= WinGold.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -935,13 +719,13 @@ namespace MJHL {
         output.WriteRawTag(16);
         output.WriteInt32(TableAllOdd);
       }
-      if (NFreeTimes != 0) {
+      if (FreeTimes != 0) {
         output.WriteRawTag(24);
-        output.WriteInt32(NFreeTimes);
+        output.WriteInt32(FreeTimes);
       }
-      if (NWinGold != 0) {
+      if (WinGold != 0) {
         output.WriteRawTag(32);
-        output.WriteInt32(NWinGold);
+        output.WriteInt32(WinGold);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -957,13 +741,13 @@ namespace MJHL {
         output.WriteRawTag(16);
         output.WriteInt32(TableAllOdd);
       }
-      if (NFreeTimes != 0) {
+      if (FreeTimes != 0) {
         output.WriteRawTag(24);
-        output.WriteInt32(NFreeTimes);
+        output.WriteInt32(FreeTimes);
       }
-      if (NWinGold != 0) {
+      if (WinGold != 0) {
         output.WriteRawTag(32);
-        output.WriteInt32(NWinGold);
+        output.WriteInt32(WinGold);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -978,11 +762,11 @@ namespace MJHL {
       if (TableAllOdd != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(TableAllOdd);
       }
-      if (NFreeTimes != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(NFreeTimes);
+      if (FreeTimes != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(FreeTimes);
       }
-      if (NWinGold != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(NWinGold);
+      if (WinGold != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(WinGold);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -999,11 +783,11 @@ namespace MJHL {
       if (other.TableAllOdd != 0) {
         TableAllOdd = other.TableAllOdd;
       }
-      if (other.NFreeTimes != 0) {
-        NFreeTimes = other.NFreeTimes;
+      if (other.FreeTimes != 0) {
+        FreeTimes = other.FreeTimes;
       }
-      if (other.NWinGold != 0) {
-        NWinGold = other.NWinGold;
+      if (other.WinGold != 0) {
+        WinGold = other.WinGold;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1028,11 +812,11 @@ namespace MJHL {
             break;
           }
           case 24: {
-            NFreeTimes = input.ReadInt32();
+            FreeTimes = input.ReadInt32();
             break;
           }
           case 32: {
-            NWinGold = input.ReadInt32();
+            WinGold = input.ReadInt32();
             break;
           }
         }
@@ -1058,11 +842,11 @@ namespace MJHL {
             break;
           }
           case 24: {
-            NFreeTimes = input.ReadInt32();
+            FreeTimes = input.ReadInt32();
             break;
           }
           case 32: {
-            NWinGold = input.ReadInt32();
+            WinGold = input.ReadInt32();
             break;
           }
         }

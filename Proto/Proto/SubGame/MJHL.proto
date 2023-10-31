@@ -14,23 +14,22 @@ enum EMsgIDMJHL
 message Round
 {
 	repeated int32 icon = 1;				// 图标
-	repeated int32 HitIdx = 2;			// 命中图标下标 命中 1
-	repeated int32 Gold_Icon_Info = 3;		// 金色图标下标 金色 1
+	repeated int32 hit_idx = 2;				// 命中图标下标 命中 1
+	repeated int32 gold_icon_info = 3;		// 金色图标下标 金色 1
 	int32			odd = 4;				// 单次倍数
 };
 message SC_SceneInfo
 {
-	int32	nFreeCount = 1;			// 免费次数
-	int32	nCurrenBet = 2;			// 当前下注
-	int32	nBetCount = 3;			// 下注列表个数
-	repeated int32	nBet = 4;
+	int32	free_count = 1;			// 免费次数
+	int32	curren_bet = 2;			// 当前下注
+	repeated int32	bet = 3;
 };
 
 // 游戏结果返回
 message CMD_3D_SC_Result
 {
-	repeated Round	tagIconInfo = 1;	//每一轮的数据
-	int32			tableAllOdd = 2;		// 总倍数
-	int32			nFreeTimes = 3;			// 免费次数
-	int32			nWinGold = 4;			// 赢得金币
+	repeated Round	tag_icon_info = 1;		//每一轮的数据
+	int32			table_all_odd = 2;		// 总倍数
+	int32			free_times = 3;			// 免费次数
+	int32			win_gold = 4;			// 赢得金币
 };

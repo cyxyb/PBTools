@@ -47,7 +47,7 @@ struct TableStruct_MJHL_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[4]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[3]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -58,9 +58,6 @@ namespace MJHL {
 class CMD_3D_SC_Result;
 class CMD_3D_SC_ResultDefaultTypeInternal;
 extern CMD_3D_SC_ResultDefaultTypeInternal _CMD_3D_SC_Result_default_instance_;
-class CMD_SC_BetFail;
-class CMD_SC_BetFailDefaultTypeInternal;
-extern CMD_SC_BetFailDefaultTypeInternal _CMD_SC_BetFail_default_instance_;
 class Round;
 class RoundDefaultTypeInternal;
 extern RoundDefaultTypeInternal _Round_default_instance_;
@@ -70,7 +67,6 @@ extern SC_SceneInfoDefaultTypeInternal _SC_SceneInfo_default_instance_;
 }  // namespace MJHL
 PROTOBUF_NAMESPACE_OPEN
 template<> ::MJHL::CMD_3D_SC_Result* Arena::CreateMaybeMessage<::MJHL::CMD_3D_SC_Result>(Arena*);
-template<> ::MJHL::CMD_SC_BetFail* Arena::CreateMaybeMessage<::MJHL::CMD_SC_BetFail>(Arena*);
 template<> ::MJHL::Round* Arena::CreateMaybeMessage<::MJHL::Round>(Arena*);
 template<> ::MJHL::SC_SceneInfo* Arena::CreateMaybeMessage<::MJHL::SC_SceneInfo>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
@@ -243,29 +239,29 @@ class Round PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_icon();
 
-  // repeated int32 HitIdx = 2;
-  int hitidx_size() const;
+  // repeated int32 hit_idx = 2;
+  int hit_idx_size() const;
   private:
-  int _internal_hitidx_size() const;
+  int _internal_hit_idx_size() const;
   public:
-  void clear_hitidx();
+  void clear_hit_idx();
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_hitidx(int index) const;
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_hit_idx(int index) const;
   const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      _internal_hitidx() const;
-  void _internal_add_hitidx(::PROTOBUF_NAMESPACE_ID::int32 value);
+      _internal_hit_idx() const;
+  void _internal_add_hit_idx(::PROTOBUF_NAMESPACE_ID::int32 value);
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      _internal_mutable_hitidx();
+      _internal_mutable_hit_idx();
   public:
-  ::PROTOBUF_NAMESPACE_ID::int32 hitidx(int index) const;
-  void set_hitidx(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
-  void add_hitidx(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 hit_idx(int index) const;
+  void set_hit_idx(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_hit_idx(::PROTOBUF_NAMESPACE_ID::int32 value);
   const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      hitidx() const;
+      hit_idx() const;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      mutable_hitidx();
+      mutable_hit_idx();
 
-  // repeated int32 Gold_Icon_Info = 3;
+  // repeated int32 gold_icon_info = 3;
   int gold_icon_info_size() const;
   private:
   int _internal_gold_icon_info_size() const;
@@ -305,8 +301,8 @@ class Round PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > icon_;
   mutable std::atomic<int> _icon_cached_byte_size_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > hitidx_;
-  mutable std::atomic<int> _hitidx_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > hit_idx_;
+  mutable std::atomic<int> _hit_idx_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > gold_icon_info_;
   mutable std::atomic<int> _gold_icon_info_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::int32 odd_;
@@ -427,58 +423,48 @@ class SC_SceneInfo PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kNBetFieldNumber = 4,
-    kNFreeCountFieldNumber = 1,
-    kNCurrenBetFieldNumber = 2,
-    kNBetCountFieldNumber = 3,
+    kBetFieldNumber = 3,
+    kFreeCountFieldNumber = 1,
+    kCurrenBetFieldNumber = 2,
   };
-  // repeated int32 nBet = 4;
-  int nbet_size() const;
+  // repeated int32 bet = 3;
+  int bet_size() const;
   private:
-  int _internal_nbet_size() const;
+  int _internal_bet_size() const;
   public:
-  void clear_nbet();
+  void clear_bet();
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_nbet(int index) const;
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_bet(int index) const;
   const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      _internal_nbet() const;
-  void _internal_add_nbet(::PROTOBUF_NAMESPACE_ID::int32 value);
+      _internal_bet() const;
+  void _internal_add_bet(::PROTOBUF_NAMESPACE_ID::int32 value);
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      _internal_mutable_nbet();
+      _internal_mutable_bet();
   public:
-  ::PROTOBUF_NAMESPACE_ID::int32 nbet(int index) const;
-  void set_nbet(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
-  void add_nbet(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 bet(int index) const;
+  void set_bet(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_bet(::PROTOBUF_NAMESPACE_ID::int32 value);
   const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      nbet() const;
+      bet() const;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      mutable_nbet();
+      mutable_bet();
 
-  // int32 nFreeCount = 1;
-  void clear_nfreecount();
-  ::PROTOBUF_NAMESPACE_ID::int32 nfreecount() const;
-  void set_nfreecount(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // int32 free_count = 1;
+  void clear_free_count();
+  ::PROTOBUF_NAMESPACE_ID::int32 free_count() const;
+  void set_free_count(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_nfreecount() const;
-  void _internal_set_nfreecount(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_free_count() const;
+  void _internal_set_free_count(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 nCurrenBet = 2;
-  void clear_ncurrenbet();
-  ::PROTOBUF_NAMESPACE_ID::int32 ncurrenbet() const;
-  void set_ncurrenbet(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // int32 curren_bet = 2;
+  void clear_curren_bet();
+  ::PROTOBUF_NAMESPACE_ID::int32 curren_bet() const;
+  void set_curren_bet(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_ncurrenbet() const;
-  void _internal_set_ncurrenbet(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 nBetCount = 3;
-  void clear_nbetcount();
-  ::PROTOBUF_NAMESPACE_ID::int32 nbetcount() const;
-  void set_nbetcount(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_nbetcount() const;
-  void _internal_set_nbetcount(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_curren_bet() const;
+  void _internal_set_curren_bet(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:MJHL.SC_SceneInfo)
@@ -488,147 +474,10 @@ class SC_SceneInfo PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > nbet_;
-  mutable std::atomic<int> _nbet_cached_byte_size_;
-  ::PROTOBUF_NAMESPACE_ID::int32 nfreecount_;
-  ::PROTOBUF_NAMESPACE_ID::int32 ncurrenbet_;
-  ::PROTOBUF_NAMESPACE_ID::int32 nbetcount_;
-  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  friend struct ::TableStruct_MJHL_2eproto;
-};
-// -------------------------------------------------------------------
-
-class CMD_SC_BetFail PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MJHL.CMD_SC_BetFail) */ {
- public:
-  inline CMD_SC_BetFail() : CMD_SC_BetFail(nullptr) {}
-  virtual ~CMD_SC_BetFail();
-
-  CMD_SC_BetFail(const CMD_SC_BetFail& from);
-  CMD_SC_BetFail(CMD_SC_BetFail&& from) noexcept
-    : CMD_SC_BetFail() {
-    *this = ::std::move(from);
-  }
-
-  inline CMD_SC_BetFail& operator=(const CMD_SC_BetFail& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline CMD_SC_BetFail& operator=(CMD_SC_BetFail&& from) noexcept {
-    if (GetArena() == from.GetArena()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return GetMetadataStatic().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return GetMetadataStatic().reflection;
-  }
-  static const CMD_SC_BetFail& default_instance();
-
-  static inline const CMD_SC_BetFail* internal_default_instance() {
-    return reinterpret_cast<const CMD_SC_BetFail*>(
-               &_CMD_SC_BetFail_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    2;
-
-  friend void swap(CMD_SC_BetFail& a, CMD_SC_BetFail& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(CMD_SC_BetFail* other) {
-    if (other == this) return;
-    if (GetArena() == other->GetArena()) {
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(CMD_SC_BetFail* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetArena() == other->GetArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline CMD_SC_BetFail* New() const final {
-    return CreateMaybeMessage<CMD_SC_BetFail>(nullptr);
-  }
-
-  CMD_SC_BetFail* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<CMD_SC_BetFail>(arena);
-  }
-  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const CMD_SC_BetFail& from);
-  void MergeFrom(const CMD_SC_BetFail& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
-      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  inline void SharedCtor();
-  inline void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(CMD_SC_BetFail* other);
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "MJHL.CMD_SC_BetFail";
-  }
-  protected:
-  explicit CMD_SC_BetFail(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  private:
-  static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  public:
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-  private:
-  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
-    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_MJHL_2eproto);
-    return ::descriptor_table_MJHL_2eproto.file_level_metadata[kIndexInFileMessages];
-  }
-
-  public:
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kNResCodeFieldNumber = 1,
-  };
-  // int32 nResCode = 1;
-  void clear_nrescode();
-  ::PROTOBUF_NAMESPACE_ID::int32 nrescode() const;
-  void set_nrescode(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_nrescode() const;
-  void _internal_set_nrescode(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:MJHL.CMD_SC_BetFail)
- private:
-  class _Internal;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int32 nrescode_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > bet_;
+  mutable std::atomic<int> _bet_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::int32 free_count_;
+  ::PROTOBUF_NAMESPACE_ID::int32 curren_bet_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_MJHL_2eproto;
 };
@@ -675,7 +524,7 @@ class CMD_3D_SC_Result PROTOBUF_FINAL :
                &_CMD_3D_SC_Result_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    3;
+    2;
 
   friend void swap(CMD_3D_SC_Result& a, CMD_3D_SC_Result& b) {
     a.Swap(&b);
@@ -748,52 +597,52 @@ class CMD_3D_SC_Result PROTOBUF_FINAL :
   enum : int {
     kTagIconInfoFieldNumber = 1,
     kTableAllOddFieldNumber = 2,
-    kNFreeTimesFieldNumber = 3,
-    kNWinGoldFieldNumber = 4,
+    kFreeTimesFieldNumber = 3,
+    kWinGoldFieldNumber = 4,
   };
-  // repeated .MJHL.Round tagIconInfo = 1;
-  int tagiconinfo_size() const;
+  // repeated .MJHL.Round tag_icon_info = 1;
+  int tag_icon_info_size() const;
   private:
-  int _internal_tagiconinfo_size() const;
+  int _internal_tag_icon_info_size() const;
   public:
-  void clear_tagiconinfo();
-  ::MJHL::Round* mutable_tagiconinfo(int index);
+  void clear_tag_icon_info();
+  ::MJHL::Round* mutable_tag_icon_info(int index);
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MJHL::Round >*
-      mutable_tagiconinfo();
+      mutable_tag_icon_info();
   private:
-  const ::MJHL::Round& _internal_tagiconinfo(int index) const;
-  ::MJHL::Round* _internal_add_tagiconinfo();
+  const ::MJHL::Round& _internal_tag_icon_info(int index) const;
+  ::MJHL::Round* _internal_add_tag_icon_info();
   public:
-  const ::MJHL::Round& tagiconinfo(int index) const;
-  ::MJHL::Round* add_tagiconinfo();
+  const ::MJHL::Round& tag_icon_info(int index) const;
+  ::MJHL::Round* add_tag_icon_info();
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MJHL::Round >&
-      tagiconinfo() const;
+      tag_icon_info() const;
 
-  // int32 tableAllOdd = 2;
-  void clear_tableallodd();
-  ::PROTOBUF_NAMESPACE_ID::int32 tableallodd() const;
-  void set_tableallodd(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // int32 table_all_odd = 2;
+  void clear_table_all_odd();
+  ::PROTOBUF_NAMESPACE_ID::int32 table_all_odd() const;
+  void set_table_all_odd(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_tableallodd() const;
-  void _internal_set_tableallodd(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_table_all_odd() const;
+  void _internal_set_table_all_odd(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 nFreeTimes = 3;
-  void clear_nfreetimes();
-  ::PROTOBUF_NAMESPACE_ID::int32 nfreetimes() const;
-  void set_nfreetimes(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // int32 free_times = 3;
+  void clear_free_times();
+  ::PROTOBUF_NAMESPACE_ID::int32 free_times() const;
+  void set_free_times(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_nfreetimes() const;
-  void _internal_set_nfreetimes(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_free_times() const;
+  void _internal_set_free_times(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 nWinGold = 4;
-  void clear_nwingold();
-  ::PROTOBUF_NAMESPACE_ID::int32 nwingold() const;
-  void set_nwingold(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // int32 win_gold = 4;
+  void clear_win_gold();
+  ::PROTOBUF_NAMESPACE_ID::int32 win_gold() const;
+  void set_win_gold(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_nwingold() const;
-  void _internal_set_nwingold(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_win_gold() const;
+  void _internal_set_win_gold(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:MJHL.CMD_3D_SC_Result)
@@ -803,10 +652,10 @@ class CMD_3D_SC_Result PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MJHL::Round > tagiconinfo_;
-  ::PROTOBUF_NAMESPACE_ID::int32 tableallodd_;
-  ::PROTOBUF_NAMESPACE_ID::int32 nfreetimes_;
-  ::PROTOBUF_NAMESPACE_ID::int32 nwingold_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MJHL::Round > tag_icon_info_;
+  ::PROTOBUF_NAMESPACE_ID::int32 table_all_odd_;
+  ::PROTOBUF_NAMESPACE_ID::int32 free_times_;
+  ::PROTOBUF_NAMESPACE_ID::int32 win_gold_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_MJHL_2eproto;
 };
@@ -868,54 +717,54 @@ Round::mutable_icon() {
   return _internal_mutable_icon();
 }
 
-// repeated int32 HitIdx = 2;
-inline int Round::_internal_hitidx_size() const {
-  return hitidx_.size();
+// repeated int32 hit_idx = 2;
+inline int Round::_internal_hit_idx_size() const {
+  return hit_idx_.size();
 }
-inline int Round::hitidx_size() const {
-  return _internal_hitidx_size();
+inline int Round::hit_idx_size() const {
+  return _internal_hit_idx_size();
 }
-inline void Round::clear_hitidx() {
-  hitidx_.Clear();
+inline void Round::clear_hit_idx() {
+  hit_idx_.Clear();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 Round::_internal_hitidx(int index) const {
-  return hitidx_.Get(index);
+inline ::PROTOBUF_NAMESPACE_ID::int32 Round::_internal_hit_idx(int index) const {
+  return hit_idx_.Get(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 Round::hitidx(int index) const {
-  // @@protoc_insertion_point(field_get:MJHL.Round.HitIdx)
-  return _internal_hitidx(index);
+inline ::PROTOBUF_NAMESPACE_ID::int32 Round::hit_idx(int index) const {
+  // @@protoc_insertion_point(field_get:MJHL.Round.hit_idx)
+  return _internal_hit_idx(index);
 }
-inline void Round::set_hitidx(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
-  hitidx_.Set(index, value);
-  // @@protoc_insertion_point(field_set:MJHL.Round.HitIdx)
+inline void Round::set_hit_idx(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  hit_idx_.Set(index, value);
+  // @@protoc_insertion_point(field_set:MJHL.Round.hit_idx)
 }
-inline void Round::_internal_add_hitidx(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  hitidx_.Add(value);
+inline void Round::_internal_add_hit_idx(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  hit_idx_.Add(value);
 }
-inline void Round::add_hitidx(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_add_hitidx(value);
-  // @@protoc_insertion_point(field_add:MJHL.Round.HitIdx)
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-Round::_internal_hitidx() const {
-  return hitidx_;
+inline void Round::add_hit_idx(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_hit_idx(value);
+  // @@protoc_insertion_point(field_add:MJHL.Round.hit_idx)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-Round::hitidx() const {
-  // @@protoc_insertion_point(field_list:MJHL.Round.HitIdx)
-  return _internal_hitidx();
+Round::_internal_hit_idx() const {
+  return hit_idx_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+Round::hit_idx() const {
+  // @@protoc_insertion_point(field_list:MJHL.Round.hit_idx)
+  return _internal_hit_idx();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-Round::_internal_mutable_hitidx() {
-  return &hitidx_;
+Round::_internal_mutable_hit_idx() {
+  return &hit_idx_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-Round::mutable_hitidx() {
-  // @@protoc_insertion_point(field_mutable_list:MJHL.Round.HitIdx)
-  return _internal_mutable_hitidx();
+Round::mutable_hit_idx() {
+  // @@protoc_insertion_point(field_mutable_list:MJHL.Round.hit_idx)
+  return _internal_mutable_hit_idx();
 }
 
-// repeated int32 Gold_Icon_Info = 3;
+// repeated int32 gold_icon_info = 3;
 inline int Round::_internal_gold_icon_info_size() const {
   return gold_icon_info_.size();
 }
@@ -929,19 +778,19 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 Round::_internal_gold_icon_info(int index)
   return gold_icon_info_.Get(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 Round::gold_icon_info(int index) const {
-  // @@protoc_insertion_point(field_get:MJHL.Round.Gold_Icon_Info)
+  // @@protoc_insertion_point(field_get:MJHL.Round.gold_icon_info)
   return _internal_gold_icon_info(index);
 }
 inline void Round::set_gold_icon_info(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   gold_icon_info_.Set(index, value);
-  // @@protoc_insertion_point(field_set:MJHL.Round.Gold_Icon_Info)
+  // @@protoc_insertion_point(field_set:MJHL.Round.gold_icon_info)
 }
 inline void Round::_internal_add_gold_icon_info(::PROTOBUF_NAMESPACE_ID::int32 value) {
   gold_icon_info_.Add(value);
 }
 inline void Round::add_gold_icon_info(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_gold_icon_info(value);
-  // @@protoc_insertion_point(field_add:MJHL.Round.Gold_Icon_Info)
+  // @@protoc_insertion_point(field_add:MJHL.Round.gold_icon_info)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 Round::_internal_gold_icon_info() const {
@@ -949,7 +798,7 @@ Round::_internal_gold_icon_info() const {
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 Round::gold_icon_info() const {
-  // @@protoc_insertion_point(field_list:MJHL.Round.Gold_Icon_Info)
+  // @@protoc_insertion_point(field_list:MJHL.Round.gold_icon_info)
   return _internal_gold_icon_info();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
@@ -958,7 +807,7 @@ Round::_internal_mutable_gold_icon_info() {
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 Round::mutable_gold_icon_info() {
-  // @@protoc_insertion_point(field_mutable_list:MJHL.Round.Gold_Icon_Info)
+  // @@protoc_insertion_point(field_mutable_list:MJHL.Round.gold_icon_info)
   return _internal_mutable_gold_icon_info();
 }
 
@@ -986,245 +835,199 @@ inline void Round::set_odd(::PROTOBUF_NAMESPACE_ID::int32 value) {
 
 // SC_SceneInfo
 
-// int32 nFreeCount = 1;
-inline void SC_SceneInfo::clear_nfreecount() {
-  nfreecount_ = 0;
+// int32 free_count = 1;
+inline void SC_SceneInfo::clear_free_count() {
+  free_count_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::_internal_nfreecount() const {
-  return nfreecount_;
+inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::_internal_free_count() const {
+  return free_count_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::nfreecount() const {
-  // @@protoc_insertion_point(field_get:MJHL.SC_SceneInfo.nFreeCount)
-  return _internal_nfreecount();
+inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::free_count() const {
+  // @@protoc_insertion_point(field_get:MJHL.SC_SceneInfo.free_count)
+  return _internal_free_count();
 }
-inline void SC_SceneInfo::_internal_set_nfreecount(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void SC_SceneInfo::_internal_set_free_count(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
-  nfreecount_ = value;
+  free_count_ = value;
 }
-inline void SC_SceneInfo::set_nfreecount(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_nfreecount(value);
-  // @@protoc_insertion_point(field_set:MJHL.SC_SceneInfo.nFreeCount)
+inline void SC_SceneInfo::set_free_count(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_free_count(value);
+  // @@protoc_insertion_point(field_set:MJHL.SC_SceneInfo.free_count)
 }
 
-// int32 nCurrenBet = 2;
-inline void SC_SceneInfo::clear_ncurrenbet() {
-  ncurrenbet_ = 0;
+// int32 curren_bet = 2;
+inline void SC_SceneInfo::clear_curren_bet() {
+  curren_bet_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::_internal_ncurrenbet() const {
-  return ncurrenbet_;
+inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::_internal_curren_bet() const {
+  return curren_bet_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::ncurrenbet() const {
-  // @@protoc_insertion_point(field_get:MJHL.SC_SceneInfo.nCurrenBet)
-  return _internal_ncurrenbet();
+inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::curren_bet() const {
+  // @@protoc_insertion_point(field_get:MJHL.SC_SceneInfo.curren_bet)
+  return _internal_curren_bet();
 }
-inline void SC_SceneInfo::_internal_set_ncurrenbet(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void SC_SceneInfo::_internal_set_curren_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
-  ncurrenbet_ = value;
+  curren_bet_ = value;
 }
-inline void SC_SceneInfo::set_ncurrenbet(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_ncurrenbet(value);
-  // @@protoc_insertion_point(field_set:MJHL.SC_SceneInfo.nCurrenBet)
+inline void SC_SceneInfo::set_curren_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_curren_bet(value);
+  // @@protoc_insertion_point(field_set:MJHL.SC_SceneInfo.curren_bet)
 }
 
-// int32 nBetCount = 3;
-inline void SC_SceneInfo::clear_nbetcount() {
-  nbetcount_ = 0;
+// repeated int32 bet = 3;
+inline int SC_SceneInfo::_internal_bet_size() const {
+  return bet_.size();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::_internal_nbetcount() const {
-  return nbetcount_;
+inline int SC_SceneInfo::bet_size() const {
+  return _internal_bet_size();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::nbetcount() const {
-  // @@protoc_insertion_point(field_get:MJHL.SC_SceneInfo.nBetCount)
-  return _internal_nbetcount();
+inline void SC_SceneInfo::clear_bet() {
+  bet_.Clear();
 }
-inline void SC_SceneInfo::_internal_set_nbetcount(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  nbetcount_ = value;
+inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::_internal_bet(int index) const {
+  return bet_.Get(index);
 }
-inline void SC_SceneInfo::set_nbetcount(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_nbetcount(value);
-  // @@protoc_insertion_point(field_set:MJHL.SC_SceneInfo.nBetCount)
+inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::bet(int index) const {
+  // @@protoc_insertion_point(field_get:MJHL.SC_SceneInfo.bet)
+  return _internal_bet(index);
 }
-
-// repeated int32 nBet = 4;
-inline int SC_SceneInfo::_internal_nbet_size() const {
-  return nbet_.size();
+inline void SC_SceneInfo::set_bet(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  bet_.Set(index, value);
+  // @@protoc_insertion_point(field_set:MJHL.SC_SceneInfo.bet)
 }
-inline int SC_SceneInfo::nbet_size() const {
-  return _internal_nbet_size();
+inline void SC_SceneInfo::_internal_add_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  bet_.Add(value);
 }
-inline void SC_SceneInfo::clear_nbet() {
-  nbet_.Clear();
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::_internal_nbet(int index) const {
-  return nbet_.Get(index);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::nbet(int index) const {
-  // @@protoc_insertion_point(field_get:MJHL.SC_SceneInfo.nBet)
-  return _internal_nbet(index);
-}
-inline void SC_SceneInfo::set_nbet(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
-  nbet_.Set(index, value);
-  // @@protoc_insertion_point(field_set:MJHL.SC_SceneInfo.nBet)
-}
-inline void SC_SceneInfo::_internal_add_nbet(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  nbet_.Add(value);
-}
-inline void SC_SceneInfo::add_nbet(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_add_nbet(value);
-  // @@protoc_insertion_point(field_add:MJHL.SC_SceneInfo.nBet)
+inline void SC_SceneInfo::add_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_bet(value);
+  // @@protoc_insertion_point(field_add:MJHL.SC_SceneInfo.bet)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-SC_SceneInfo::_internal_nbet() const {
-  return nbet_;
+SC_SceneInfo::_internal_bet() const {
+  return bet_;
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-SC_SceneInfo::nbet() const {
-  // @@protoc_insertion_point(field_list:MJHL.SC_SceneInfo.nBet)
-  return _internal_nbet();
+SC_SceneInfo::bet() const {
+  // @@protoc_insertion_point(field_list:MJHL.SC_SceneInfo.bet)
+  return _internal_bet();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-SC_SceneInfo::_internal_mutable_nbet() {
-  return &nbet_;
+SC_SceneInfo::_internal_mutable_bet() {
+  return &bet_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-SC_SceneInfo::mutable_nbet() {
-  // @@protoc_insertion_point(field_mutable_list:MJHL.SC_SceneInfo.nBet)
-  return _internal_mutable_nbet();
-}
-
-// -------------------------------------------------------------------
-
-// CMD_SC_BetFail
-
-// int32 nResCode = 1;
-inline void CMD_SC_BetFail::clear_nrescode() {
-  nrescode_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_SC_BetFail::_internal_nrescode() const {
-  return nrescode_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_SC_BetFail::nrescode() const {
-  // @@protoc_insertion_point(field_get:MJHL.CMD_SC_BetFail.nResCode)
-  return _internal_nrescode();
-}
-inline void CMD_SC_BetFail::_internal_set_nrescode(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  nrescode_ = value;
-}
-inline void CMD_SC_BetFail::set_nrescode(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_nrescode(value);
-  // @@protoc_insertion_point(field_set:MJHL.CMD_SC_BetFail.nResCode)
+SC_SceneInfo::mutable_bet() {
+  // @@protoc_insertion_point(field_mutable_list:MJHL.SC_SceneInfo.bet)
+  return _internal_mutable_bet();
 }
 
 // -------------------------------------------------------------------
 
 // CMD_3D_SC_Result
 
-// repeated .MJHL.Round tagIconInfo = 1;
-inline int CMD_3D_SC_Result::_internal_tagiconinfo_size() const {
-  return tagiconinfo_.size();
+// repeated .MJHL.Round tag_icon_info = 1;
+inline int CMD_3D_SC_Result::_internal_tag_icon_info_size() const {
+  return tag_icon_info_.size();
 }
-inline int CMD_3D_SC_Result::tagiconinfo_size() const {
-  return _internal_tagiconinfo_size();
+inline int CMD_3D_SC_Result::tag_icon_info_size() const {
+  return _internal_tag_icon_info_size();
 }
-inline void CMD_3D_SC_Result::clear_tagiconinfo() {
-  tagiconinfo_.Clear();
+inline void CMD_3D_SC_Result::clear_tag_icon_info() {
+  tag_icon_info_.Clear();
 }
-inline ::MJHL::Round* CMD_3D_SC_Result::mutable_tagiconinfo(int index) {
-  // @@protoc_insertion_point(field_mutable:MJHL.CMD_3D_SC_Result.tagIconInfo)
-  return tagiconinfo_.Mutable(index);
+inline ::MJHL::Round* CMD_3D_SC_Result::mutable_tag_icon_info(int index) {
+  // @@protoc_insertion_point(field_mutable:MJHL.CMD_3D_SC_Result.tag_icon_info)
+  return tag_icon_info_.Mutable(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MJHL::Round >*
-CMD_3D_SC_Result::mutable_tagiconinfo() {
-  // @@protoc_insertion_point(field_mutable_list:MJHL.CMD_3D_SC_Result.tagIconInfo)
-  return &tagiconinfo_;
+CMD_3D_SC_Result::mutable_tag_icon_info() {
+  // @@protoc_insertion_point(field_mutable_list:MJHL.CMD_3D_SC_Result.tag_icon_info)
+  return &tag_icon_info_;
 }
-inline const ::MJHL::Round& CMD_3D_SC_Result::_internal_tagiconinfo(int index) const {
-  return tagiconinfo_.Get(index);
+inline const ::MJHL::Round& CMD_3D_SC_Result::_internal_tag_icon_info(int index) const {
+  return tag_icon_info_.Get(index);
 }
-inline const ::MJHL::Round& CMD_3D_SC_Result::tagiconinfo(int index) const {
-  // @@protoc_insertion_point(field_get:MJHL.CMD_3D_SC_Result.tagIconInfo)
-  return _internal_tagiconinfo(index);
+inline const ::MJHL::Round& CMD_3D_SC_Result::tag_icon_info(int index) const {
+  // @@protoc_insertion_point(field_get:MJHL.CMD_3D_SC_Result.tag_icon_info)
+  return _internal_tag_icon_info(index);
 }
-inline ::MJHL::Round* CMD_3D_SC_Result::_internal_add_tagiconinfo() {
-  return tagiconinfo_.Add();
+inline ::MJHL::Round* CMD_3D_SC_Result::_internal_add_tag_icon_info() {
+  return tag_icon_info_.Add();
 }
-inline ::MJHL::Round* CMD_3D_SC_Result::add_tagiconinfo() {
-  // @@protoc_insertion_point(field_add:MJHL.CMD_3D_SC_Result.tagIconInfo)
-  return _internal_add_tagiconinfo();
+inline ::MJHL::Round* CMD_3D_SC_Result::add_tag_icon_info() {
+  // @@protoc_insertion_point(field_add:MJHL.CMD_3D_SC_Result.tag_icon_info)
+  return _internal_add_tag_icon_info();
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MJHL::Round >&
-CMD_3D_SC_Result::tagiconinfo() const {
-  // @@protoc_insertion_point(field_list:MJHL.CMD_3D_SC_Result.tagIconInfo)
-  return tagiconinfo_;
+CMD_3D_SC_Result::tag_icon_info() const {
+  // @@protoc_insertion_point(field_list:MJHL.CMD_3D_SC_Result.tag_icon_info)
+  return tag_icon_info_;
 }
 
-// int32 tableAllOdd = 2;
-inline void CMD_3D_SC_Result::clear_tableallodd() {
-  tableallodd_ = 0;
+// int32 table_all_odd = 2;
+inline void CMD_3D_SC_Result::clear_table_all_odd() {
+  table_all_odd_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_3D_SC_Result::_internal_tableallodd() const {
-  return tableallodd_;
+inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_3D_SC_Result::_internal_table_all_odd() const {
+  return table_all_odd_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_3D_SC_Result::tableallodd() const {
-  // @@protoc_insertion_point(field_get:MJHL.CMD_3D_SC_Result.tableAllOdd)
-  return _internal_tableallodd();
+inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_3D_SC_Result::table_all_odd() const {
+  // @@protoc_insertion_point(field_get:MJHL.CMD_3D_SC_Result.table_all_odd)
+  return _internal_table_all_odd();
 }
-inline void CMD_3D_SC_Result::_internal_set_tableallodd(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void CMD_3D_SC_Result::_internal_set_table_all_odd(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
-  tableallodd_ = value;
+  table_all_odd_ = value;
 }
-inline void CMD_3D_SC_Result::set_tableallodd(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_tableallodd(value);
-  // @@protoc_insertion_point(field_set:MJHL.CMD_3D_SC_Result.tableAllOdd)
+inline void CMD_3D_SC_Result::set_table_all_odd(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_table_all_odd(value);
+  // @@protoc_insertion_point(field_set:MJHL.CMD_3D_SC_Result.table_all_odd)
 }
 
-// int32 nFreeTimes = 3;
-inline void CMD_3D_SC_Result::clear_nfreetimes() {
-  nfreetimes_ = 0;
+// int32 free_times = 3;
+inline void CMD_3D_SC_Result::clear_free_times() {
+  free_times_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_3D_SC_Result::_internal_nfreetimes() const {
-  return nfreetimes_;
+inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_3D_SC_Result::_internal_free_times() const {
+  return free_times_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_3D_SC_Result::nfreetimes() const {
-  // @@protoc_insertion_point(field_get:MJHL.CMD_3D_SC_Result.nFreeTimes)
-  return _internal_nfreetimes();
+inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_3D_SC_Result::free_times() const {
+  // @@protoc_insertion_point(field_get:MJHL.CMD_3D_SC_Result.free_times)
+  return _internal_free_times();
 }
-inline void CMD_3D_SC_Result::_internal_set_nfreetimes(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void CMD_3D_SC_Result::_internal_set_free_times(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
-  nfreetimes_ = value;
+  free_times_ = value;
 }
-inline void CMD_3D_SC_Result::set_nfreetimes(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_nfreetimes(value);
-  // @@protoc_insertion_point(field_set:MJHL.CMD_3D_SC_Result.nFreeTimes)
+inline void CMD_3D_SC_Result::set_free_times(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_free_times(value);
+  // @@protoc_insertion_point(field_set:MJHL.CMD_3D_SC_Result.free_times)
 }
 
-// int32 nWinGold = 4;
-inline void CMD_3D_SC_Result::clear_nwingold() {
-  nwingold_ = 0;
+// int32 win_gold = 4;
+inline void CMD_3D_SC_Result::clear_win_gold() {
+  win_gold_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_3D_SC_Result::_internal_nwingold() const {
-  return nwingold_;
+inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_3D_SC_Result::_internal_win_gold() const {
+  return win_gold_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_3D_SC_Result::nwingold() const {
-  // @@protoc_insertion_point(field_get:MJHL.CMD_3D_SC_Result.nWinGold)
-  return _internal_nwingold();
+inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_3D_SC_Result::win_gold() const {
+  // @@protoc_insertion_point(field_get:MJHL.CMD_3D_SC_Result.win_gold)
+  return _internal_win_gold();
 }
-inline void CMD_3D_SC_Result::_internal_set_nwingold(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void CMD_3D_SC_Result::_internal_set_win_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
-  nwingold_ = value;
+  win_gold_ = value;
 }
-inline void CMD_3D_SC_Result::set_nwingold(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_nwingold(value);
-  // @@protoc_insertion_point(field_set:MJHL.CMD_3D_SC_Result.nWinGold)
+inline void CMD_3D_SC_Result::set_win_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_win_gold(value);
+  // @@protoc_insertion_point(field_set:MJHL.CMD_3D_SC_Result.win_gold)
 }
 
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
-// -------------------------------------------------------------------
-
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

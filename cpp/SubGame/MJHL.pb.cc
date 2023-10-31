@@ -24,10 +24,6 @@ class SC_SceneInfoDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SC_SceneInfo> _instance;
 } _SC_SceneInfo_default_instance_;
-class CMD_SC_BetFailDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CMD_SC_BetFail> _instance;
-} _CMD_SC_BetFail_default_instance_;
 class CMD_3D_SC_ResultDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CMD_3D_SC_Result> _instance;
@@ -46,19 +42,6 @@ static void InitDefaultsscc_info_CMD_3D_SC_Result_MJHL_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_CMD_3D_SC_Result_MJHL_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_CMD_3D_SC_Result_MJHL_2eproto}, {
       &scc_info_Round_MJHL_2eproto.base,}};
-
-static void InitDefaultsscc_info_CMD_SC_BetFail_MJHL_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::MJHL::_CMD_SC_BetFail_default_instance_;
-    new (ptr) ::MJHL::CMD_SC_BetFail();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_CMD_SC_BetFail_MJHL_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_CMD_SC_BetFail_MJHL_2eproto}, {}};
 
 static void InitDefaultsscc_info_Round_MJHL_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -86,7 +69,7 @@ static void InitDefaultsscc_info_SC_SceneInfo_MJHL_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SC_SceneInfo_MJHL_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SC_SceneInfo_MJHL_2eproto}, {}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_MJHL_2eproto[4];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_MJHL_2eproto[3];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_MJHL_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_MJHL_2eproto = nullptr;
 
@@ -97,7 +80,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_MJHL_2eproto::offsets[] PROTOB
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::MJHL::Round, icon_),
-  PROTOBUF_FIELD_OFFSET(::MJHL::Round, hitidx_),
+  PROTOBUF_FIELD_OFFSET(::MJHL::Round, hit_idx_),
   PROTOBUF_FIELD_OFFSET(::MJHL::Round, gold_icon_info_),
   PROTOBUF_FIELD_OFFSET(::MJHL::Round, odd_),
   ~0u,  // no _has_bits_
@@ -105,67 +88,56 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_MJHL_2eproto::offsets[] PROTOB
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::MJHL::SC_SceneInfo, nfreecount_),
-  PROTOBUF_FIELD_OFFSET(::MJHL::SC_SceneInfo, ncurrenbet_),
-  PROTOBUF_FIELD_OFFSET(::MJHL::SC_SceneInfo, nbetcount_),
-  PROTOBUF_FIELD_OFFSET(::MJHL::SC_SceneInfo, nbet_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::MJHL::CMD_SC_BetFail, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::MJHL::CMD_SC_BetFail, nrescode_),
+  PROTOBUF_FIELD_OFFSET(::MJHL::SC_SceneInfo, free_count_),
+  PROTOBUF_FIELD_OFFSET(::MJHL::SC_SceneInfo, curren_bet_),
+  PROTOBUF_FIELD_OFFSET(::MJHL::SC_SceneInfo, bet_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MJHL::CMD_3D_SC_Result, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::MJHL::CMD_3D_SC_Result, tagiconinfo_),
-  PROTOBUF_FIELD_OFFSET(::MJHL::CMD_3D_SC_Result, tableallodd_),
-  PROTOBUF_FIELD_OFFSET(::MJHL::CMD_3D_SC_Result, nfreetimes_),
-  PROTOBUF_FIELD_OFFSET(::MJHL::CMD_3D_SC_Result, nwingold_),
+  PROTOBUF_FIELD_OFFSET(::MJHL::CMD_3D_SC_Result, tag_icon_info_),
+  PROTOBUF_FIELD_OFFSET(::MJHL::CMD_3D_SC_Result, table_all_odd_),
+  PROTOBUF_FIELD_OFFSET(::MJHL::CMD_3D_SC_Result, free_times_),
+  PROTOBUF_FIELD_OFFSET(::MJHL::CMD_3D_SC_Result, win_gold_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::MJHL::Round)},
   { 9, -1, sizeof(::MJHL::SC_SceneInfo)},
-  { 18, -1, sizeof(::MJHL::CMD_SC_BetFail)},
-  { 24, -1, sizeof(::MJHL::CMD_3D_SC_Result)},
+  { 17, -1, sizeof(::MJHL::CMD_3D_SC_Result)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::MJHL::_Round_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::MJHL::_SC_SceneInfo_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::MJHL::_CMD_SC_BetFail_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::MJHL::_CMD_3D_SC_Result_default_instance_),
 };
 
 const char descriptor_table_protodef_MJHL_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\nMJHL.proto\022\004MJHL\"J\n\005Round\022\014\n\004icon\030\001 \003("
-  "\005\022\016\n\006HitIdx\030\002 \003(\005\022\026\n\016Gold_Icon_Info\030\003 \003("
-  "\005\022\013\n\003odd\030\004 \001(\005\"W\n\014SC_SceneInfo\022\022\n\nnFreeC"
-  "ount\030\001 \001(\005\022\022\n\nnCurrenBet\030\002 \001(\005\022\021\n\tnBetCo"
-  "unt\030\003 \001(\005\022\014\n\004nBet\030\004 \003(\005\"\"\n\016CMD_SC_BetFai"
-  "l\022\020\n\010nResCode\030\001 \001(\005\"o\n\020CMD_3D_SC_Result\022"
-  " \n\013tagIconInfo\030\001 \003(\0132\013.MJHL.Round\022\023\n\013tab"
-  "leAllOdd\030\002 \001(\005\022\022\n\nnFreeTimes\030\003 \001(\005\022\020\n\010nW"
-  "inGold\030\004 \001(\005*O\n\nEMsgIDMJHL\022\025\n\021SUB_CS_GAM"
-  "E_START\020\000\022\023\n\017SUB_SC_BET_FAIL\020\001\022\025\n\021SUB_SC"
-  "_START_GAME\020\002b\006proto3"
+  "\n\nMJHL.proto\022\004MJHL\"K\n\005Round\022\014\n\004icon\030\001 \003("
+  "\005\022\017\n\007hit_idx\030\002 \003(\005\022\026\n\016gold_icon_info\030\003 \003"
+  "(\005\022\013\n\003odd\030\004 \001(\005\"C\n\014SC_SceneInfo\022\022\n\nfree_"
+  "count\030\001 \001(\005\022\022\n\ncurren_bet\030\002 \001(\005\022\013\n\003bet\030\003"
+  " \003(\005\"s\n\020CMD_3D_SC_Result\022\"\n\rtag_icon_inf"
+  "o\030\001 \003(\0132\013.MJHL.Round\022\025\n\rtable_all_odd\030\002 "
+  "\001(\005\022\022\n\nfree_times\030\003 \001(\005\022\020\n\010win_gold\030\004 \001("
+  "\005*O\n\nEMsgIDMJHL\022\025\n\021SUB_CS_GAME_START\020\000\022\023"
+  "\n\017SUB_SC_BET_FAIL\020\001\022\025\n\021SUB_SC_START_GAME"
+  "\020\002b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_MJHL_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_MJHL_2eproto_sccs[4] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_MJHL_2eproto_sccs[3] = {
   &scc_info_CMD_3D_SC_Result_MJHL_2eproto.base,
-  &scc_info_CMD_SC_BetFail_MJHL_2eproto.base,
   &scc_info_Round_MJHL_2eproto.base,
   &scc_info_SC_SceneInfo_MJHL_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_MJHL_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_MJHL_2eproto = {
-  false, false, descriptor_table_protodef_MJHL_2eproto, "MJHL.proto", 421,
-  &descriptor_table_MJHL_2eproto_once, descriptor_table_MJHL_2eproto_sccs, descriptor_table_MJHL_2eproto_deps, 4, 0,
+  false, false, descriptor_table_protodef_MJHL_2eproto, "MJHL.proto", 370,
+  &descriptor_table_MJHL_2eproto_once, descriptor_table_MJHL_2eproto_sccs, descriptor_table_MJHL_2eproto_deps, 3, 0,
   schemas, file_default_instances, TableStruct_MJHL_2eproto::offsets,
-  file_level_metadata_MJHL_2eproto, 4, file_level_enum_descriptors_MJHL_2eproto, file_level_service_descriptors_MJHL_2eproto,
+  file_level_metadata_MJHL_2eproto, 3, file_level_enum_descriptors_MJHL_2eproto, file_level_service_descriptors_MJHL_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -196,7 +168,7 @@ class Round::_Internal {
 Round::Round(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena),
   icon_(arena),
-  hitidx_(arena),
+  hit_idx_(arena),
   gold_icon_info_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
@@ -205,7 +177,7 @@ Round::Round(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 Round::Round(const Round& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       icon_(from.icon_),
-      hitidx_(from.hitidx_),
+      hit_idx_(from.hit_idx_),
       gold_icon_info_(from.gold_icon_info_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   odd_ = from.odd_;
@@ -248,7 +220,7 @@ void Round::Clear() {
   (void) cached_has_bits;
 
   icon_.Clear();
-  hitidx_.Clear();
+  hit_idx_.Clear();
   gold_icon_info_.Clear();
   odd_ = 0;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
@@ -271,17 +243,17 @@ const char* Round::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::inte
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated int32 HitIdx = 2;
+      // repeated int32 hit_idx = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_hitidx(), ptr, ctx);
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_hit_idx(), ptr, ctx);
           CHK_(ptr);
         } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16) {
-          _internal_add_hitidx(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+          _internal_add_hit_idx(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated int32 Gold_Icon_Info = 3;
+      // repeated int32 gold_icon_info = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_gold_icon_info(), ptr, ctx);
@@ -335,16 +307,16 @@ failure:
     }
   }
 
-  // repeated int32 HitIdx = 2;
+  // repeated int32 hit_idx = 2;
   {
-    int byte_size = _hitidx_cached_byte_size_.load(std::memory_order_relaxed);
+    int byte_size = _hit_idx_cached_byte_size_.load(std::memory_order_relaxed);
     if (byte_size > 0) {
       target = stream->WriteInt32Packed(
-          2, _internal_hitidx(), byte_size, target);
+          2, _internal_hit_idx(), byte_size, target);
     }
   }
 
-  // repeated int32 Gold_Icon_Info = 3;
+  // repeated int32 gold_icon_info = 3;
   {
     int byte_size = _gold_icon_info_cached_byte_size_.load(std::memory_order_relaxed);
     if (byte_size > 0) {
@@ -390,22 +362,22 @@ size_t Round::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  // repeated int32 HitIdx = 2;
+  // repeated int32 hit_idx = 2;
   {
     size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      Int32Size(this->hitidx_);
+      Int32Size(this->hit_idx_);
     if (data_size > 0) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
             static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
     }
     int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
-    _hitidx_cached_byte_size_.store(cached_size,
+    _hit_idx_cached_byte_size_.store(cached_size,
                                     std::memory_order_relaxed);
     total_size += data_size;
   }
 
-  // repeated int32 Gold_Icon_Info = 3;
+  // repeated int32 gold_icon_info = 3;
   {
     size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       Int32Size(this->gold_icon_info_);
@@ -459,7 +431,7 @@ void Round::MergeFrom(const Round& from) {
   (void) cached_has_bits;
 
   icon_.MergeFrom(from.icon_);
-  hitidx_.MergeFrom(from.hitidx_);
+  hit_idx_.MergeFrom(from.hit_idx_);
   gold_icon_info_.MergeFrom(from.gold_icon_info_);
   if (from.odd() != 0) {
     _internal_set_odd(from._internal_odd());
@@ -488,7 +460,7 @@ void Round::InternalSwap(Round* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   icon_.InternalSwap(&other->icon_);
-  hitidx_.InternalSwap(&other->hitidx_);
+  hit_idx_.InternalSwap(&other->hit_idx_);
   gold_icon_info_.InternalSwap(&other->gold_icon_info_);
   swap(odd_, other->odd_);
 }
@@ -506,26 +478,26 @@ class SC_SceneInfo::_Internal {
 
 SC_SceneInfo::SC_SceneInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  nbet_(arena) {
+  bet_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:MJHL.SC_SceneInfo)
 }
 SC_SceneInfo::SC_SceneInfo(const SC_SceneInfo& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      nbet_(from.nbet_) {
+      bet_(from.bet_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&nfreecount_, &from.nfreecount_,
-    static_cast<size_t>(reinterpret_cast<char*>(&nbetcount_) -
-    reinterpret_cast<char*>(&nfreecount_)) + sizeof(nbetcount_));
+  ::memcpy(&free_count_, &from.free_count_,
+    static_cast<size_t>(reinterpret_cast<char*>(&curren_bet_) -
+    reinterpret_cast<char*>(&free_count_)) + sizeof(curren_bet_));
   // @@protoc_insertion_point(copy_constructor:MJHL.SC_SceneInfo)
 }
 
 void SC_SceneInfo::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&nfreecount_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&nbetcount_) -
-      reinterpret_cast<char*>(&nfreecount_)) + sizeof(nbetcount_));
+      reinterpret_cast<char*>(&free_count_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&curren_bet_) -
+      reinterpret_cast<char*>(&free_count_)) + sizeof(curren_bet_));
 }
 
 SC_SceneInfo::~SC_SceneInfo() {
@@ -559,10 +531,10 @@ void SC_SceneInfo::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  nbet_.Clear();
-  ::memset(&nfreecount_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&nbetcount_) -
-      reinterpret_cast<char*>(&nfreecount_)) + sizeof(nbetcount_));
+  bet_.Clear();
+  ::memset(&free_count_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&curren_bet_) -
+      reinterpret_cast<char*>(&free_count_)) + sizeof(curren_bet_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -573,34 +545,27 @@ const char* SC_SceneInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // int32 nFreeCount = 1;
+      // int32 free_count = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          nfreecount_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          free_count_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 nCurrenBet = 2;
+      // int32 curren_bet = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          ncurrenbet_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          curren_bet_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 nBetCount = 3;
+      // repeated int32 bet = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          nbetcount_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_bet(), ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // repeated int32 nBet = 4;
-      case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_nbet(), ptr, ctx);
-          CHK_(ptr);
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32) {
-          _internal_add_nbet(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24) {
+          _internal_add_bet(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -632,30 +597,24 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 nFreeCount = 1;
-  if (this->nfreecount() != 0) {
+  // int32 free_count = 1;
+  if (this->free_count() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_nfreecount(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_free_count(), target);
   }
 
-  // int32 nCurrenBet = 2;
-  if (this->ncurrenbet() != 0) {
+  // int32 curren_bet = 2;
+  if (this->curren_bet() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_ncurrenbet(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_curren_bet(), target);
   }
 
-  // int32 nBetCount = 3;
-  if (this->nbetcount() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_nbetcount(), target);
-  }
-
-  // repeated int32 nBet = 4;
+  // repeated int32 bet = 3;
   {
-    int byte_size = _nbet_cached_byte_size_.load(std::memory_order_relaxed);
+    int byte_size = _bet_cached_byte_size_.load(std::memory_order_relaxed);
     if (byte_size > 0) {
       target = stream->WriteInt32Packed(
-          4, _internal_nbet(), byte_size, target);
+          3, _internal_bet(), byte_size, target);
     }
   }
 
@@ -675,40 +634,33 @@ size_t SC_SceneInfo::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated int32 nBet = 4;
+  // repeated int32 bet = 3;
   {
     size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      Int32Size(this->nbet_);
+      Int32Size(this->bet_);
     if (data_size > 0) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
             static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
     }
     int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
-    _nbet_cached_byte_size_.store(cached_size,
+    _bet_cached_byte_size_.store(cached_size,
                                     std::memory_order_relaxed);
     total_size += data_size;
   }
 
-  // int32 nFreeCount = 1;
-  if (this->nfreecount() != 0) {
+  // int32 free_count = 1;
+  if (this->free_count() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_nfreecount());
+        this->_internal_free_count());
   }
 
-  // int32 nCurrenBet = 2;
-  if (this->ncurrenbet() != 0) {
+  // int32 curren_bet = 2;
+  if (this->curren_bet() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_ncurrenbet());
-  }
-
-  // int32 nBetCount = 3;
-  if (this->nbetcount() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_nbetcount());
+        this->_internal_curren_bet());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -742,15 +694,12 @@ void SC_SceneInfo::MergeFrom(const SC_SceneInfo& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  nbet_.MergeFrom(from.nbet_);
-  if (from.nfreecount() != 0) {
-    _internal_set_nfreecount(from._internal_nfreecount());
+  bet_.MergeFrom(from.bet_);
+  if (from.free_count() != 0) {
+    _internal_set_free_count(from._internal_free_count());
   }
-  if (from.ncurrenbet() != 0) {
-    _internal_set_ncurrenbet(from._internal_ncurrenbet());
-  }
-  if (from.nbetcount() != 0) {
-    _internal_set_nbetcount(from._internal_nbetcount());
+  if (from.curren_bet() != 0) {
+    _internal_set_curren_bet(from._internal_curren_bet());
   }
 }
 
@@ -775,210 +724,16 @@ bool SC_SceneInfo::IsInitialized() const {
 void SC_SceneInfo::InternalSwap(SC_SceneInfo* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  nbet_.InternalSwap(&other->nbet_);
+  bet_.InternalSwap(&other->bet_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(SC_SceneInfo, nbetcount_)
-      + sizeof(SC_SceneInfo::nbetcount_)
-      - PROTOBUF_FIELD_OFFSET(SC_SceneInfo, nfreecount_)>(
-          reinterpret_cast<char*>(&nfreecount_),
-          reinterpret_cast<char*>(&other->nfreecount_));
+      PROTOBUF_FIELD_OFFSET(SC_SceneInfo, curren_bet_)
+      + sizeof(SC_SceneInfo::curren_bet_)
+      - PROTOBUF_FIELD_OFFSET(SC_SceneInfo, free_count_)>(
+          reinterpret_cast<char*>(&free_count_),
+          reinterpret_cast<char*>(&other->free_count_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SC_SceneInfo::GetMetadata() const {
-  return GetMetadataStatic();
-}
-
-
-// ===================================================================
-
-class CMD_SC_BetFail::_Internal {
- public:
-};
-
-CMD_SC_BetFail::CMD_SC_BetFail(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:MJHL.CMD_SC_BetFail)
-}
-CMD_SC_BetFail::CMD_SC_BetFail(const CMD_SC_BetFail& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  nrescode_ = from.nrescode_;
-  // @@protoc_insertion_point(copy_constructor:MJHL.CMD_SC_BetFail)
-}
-
-void CMD_SC_BetFail::SharedCtor() {
-  nrescode_ = 0;
-}
-
-CMD_SC_BetFail::~CMD_SC_BetFail() {
-  // @@protoc_insertion_point(destructor:MJHL.CMD_SC_BetFail)
-  SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-void CMD_SC_BetFail::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-}
-
-void CMD_SC_BetFail::ArenaDtor(void* object) {
-  CMD_SC_BetFail* _this = reinterpret_cast< CMD_SC_BetFail* >(object);
-  (void)_this;
-}
-void CMD_SC_BetFail::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
-void CMD_SC_BetFail::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
-}
-const CMD_SC_BetFail& CMD_SC_BetFail::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_CMD_SC_BetFail_MJHL_2eproto.base);
-  return *internal_default_instance();
-}
-
-
-void CMD_SC_BetFail::Clear() {
-// @@protoc_insertion_point(message_clear_start:MJHL.CMD_SC_BetFail)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  nrescode_ = 0;
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-const char* CMD_SC_BetFail::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
-    switch (tag >> 3) {
-      // int32 nResCode = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          nrescode_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
-    }  // switch
-  }  // while
-success:
-  return ptr;
-failure:
-  ptr = nullptr;
-  goto success;
-#undef CHK_
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* CMD_SC_BetFail::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:MJHL.CMD_SC_BetFail)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // int32 nResCode = 1;
-  if (this->nrescode() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_nrescode(), target);
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:MJHL.CMD_SC_BetFail)
-  return target;
-}
-
-size_t CMD_SC_BetFail::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:MJHL.CMD_SC_BetFail)
-  size_t total_size = 0;
-
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  // int32 nResCode = 1;
-  if (this->nrescode() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_nrescode());
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
-}
-
-void CMD_SC_BetFail::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:MJHL.CMD_SC_BetFail)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CMD_SC_BetFail* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_SC_BetFail>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MJHL.CMD_SC_BetFail)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:MJHL.CMD_SC_BetFail)
-    MergeFrom(*source);
-  }
-}
-
-void CMD_SC_BetFail::MergeFrom(const CMD_SC_BetFail& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:MJHL.CMD_SC_BetFail)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from.nrescode() != 0) {
-    _internal_set_nrescode(from._internal_nrescode());
-  }
-}
-
-void CMD_SC_BetFail::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:MJHL.CMD_SC_BetFail)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void CMD_SC_BetFail::CopyFrom(const CMD_SC_BetFail& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:MJHL.CMD_SC_BetFail)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool CMD_SC_BetFail::IsInitialized() const {
-  return true;
-}
-
-void CMD_SC_BetFail::InternalSwap(CMD_SC_BetFail* other) {
-  using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  swap(nrescode_, other->nrescode_);
-}
-
-::PROTOBUF_NAMESPACE_ID::Metadata CMD_SC_BetFail::GetMetadata() const {
   return GetMetadataStatic();
 }
 
@@ -991,27 +746,27 @@ class CMD_3D_SC_Result::_Internal {
 
 CMD_3D_SC_Result::CMD_3D_SC_Result(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  tagiconinfo_(arena) {
+  tag_icon_info_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:MJHL.CMD_3D_SC_Result)
 }
 CMD_3D_SC_Result::CMD_3D_SC_Result(const CMD_3D_SC_Result& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      tagiconinfo_(from.tagiconinfo_) {
+      tag_icon_info_(from.tag_icon_info_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&tableallodd_, &from.tableallodd_,
-    static_cast<size_t>(reinterpret_cast<char*>(&nwingold_) -
-    reinterpret_cast<char*>(&tableallodd_)) + sizeof(nwingold_));
+  ::memcpy(&table_all_odd_, &from.table_all_odd_,
+    static_cast<size_t>(reinterpret_cast<char*>(&win_gold_) -
+    reinterpret_cast<char*>(&table_all_odd_)) + sizeof(win_gold_));
   // @@protoc_insertion_point(copy_constructor:MJHL.CMD_3D_SC_Result)
 }
 
 void CMD_3D_SC_Result::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_CMD_3D_SC_Result_MJHL_2eproto.base);
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&tableallodd_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&nwingold_) -
-      reinterpret_cast<char*>(&tableallodd_)) + sizeof(nwingold_));
+      reinterpret_cast<char*>(&table_all_odd_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&win_gold_) -
+      reinterpret_cast<char*>(&table_all_odd_)) + sizeof(win_gold_));
 }
 
 CMD_3D_SC_Result::~CMD_3D_SC_Result() {
@@ -1045,10 +800,10 @@ void CMD_3D_SC_Result::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  tagiconinfo_.Clear();
-  ::memset(&tableallodd_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&nwingold_) -
-      reinterpret_cast<char*>(&tableallodd_)) + sizeof(nwingold_));
+  tag_icon_info_.Clear();
+  ::memset(&table_all_odd_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&win_gold_) -
+      reinterpret_cast<char*>(&table_all_odd_)) + sizeof(win_gold_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -1059,36 +814,36 @@ const char* CMD_3D_SC_Result::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // repeated .MJHL.Round tagIconInfo = 1;
+      // repeated .MJHL.Round tag_icon_info = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ctx->ParseMessage(_internal_add_tagiconinfo(), ptr);
+            ptr = ctx->ParseMessage(_internal_add_tag_icon_info(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
         } else goto handle_unusual;
         continue;
-      // int32 tableAllOdd = 2;
+      // int32 table_all_odd = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          tableallodd_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          table_all_odd_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 nFreeTimes = 3;
+      // int32 free_times = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          nfreetimes_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          free_times_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 nWinGold = 4;
+      // int32 win_gold = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          nwingold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          win_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1120,30 +875,30 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated .MJHL.Round tagIconInfo = 1;
+  // repeated .MJHL.Round tag_icon_info = 1;
   for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_tagiconinfo_size()); i < n; i++) {
+      n = static_cast<unsigned int>(this->_internal_tag_icon_info_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_tagiconinfo(i), target, stream);
+      InternalWriteMessage(1, this->_internal_tag_icon_info(i), target, stream);
   }
 
-  // int32 tableAllOdd = 2;
-  if (this->tableallodd() != 0) {
+  // int32 table_all_odd = 2;
+  if (this->table_all_odd() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_tableallodd(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_table_all_odd(), target);
   }
 
-  // int32 nFreeTimes = 3;
-  if (this->nfreetimes() != 0) {
+  // int32 free_times = 3;
+  if (this->free_times() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_nfreetimes(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_free_times(), target);
   }
 
-  // int32 nWinGold = 4;
-  if (this->nwingold() != 0) {
+  // int32 win_gold = 4;
+  if (this->win_gold() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_nwingold(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_win_gold(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1162,32 +917,32 @@ size_t CMD_3D_SC_Result::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .MJHL.Round tagIconInfo = 1;
-  total_size += 1UL * this->_internal_tagiconinfo_size();
-  for (const auto& msg : this->tagiconinfo_) {
+  // repeated .MJHL.Round tag_icon_info = 1;
+  total_size += 1UL * this->_internal_tag_icon_info_size();
+  for (const auto& msg : this->tag_icon_info_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  // int32 tableAllOdd = 2;
-  if (this->tableallodd() != 0) {
+  // int32 table_all_odd = 2;
+  if (this->table_all_odd() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_tableallodd());
+        this->_internal_table_all_odd());
   }
 
-  // int32 nFreeTimes = 3;
-  if (this->nfreetimes() != 0) {
+  // int32 free_times = 3;
+  if (this->free_times() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_nfreetimes());
+        this->_internal_free_times());
   }
 
-  // int32 nWinGold = 4;
-  if (this->nwingold() != 0) {
+  // int32 win_gold = 4;
+  if (this->win_gold() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_nwingold());
+        this->_internal_win_gold());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1221,15 +976,15 @@ void CMD_3D_SC_Result::MergeFrom(const CMD_3D_SC_Result& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  tagiconinfo_.MergeFrom(from.tagiconinfo_);
-  if (from.tableallodd() != 0) {
-    _internal_set_tableallodd(from._internal_tableallodd());
+  tag_icon_info_.MergeFrom(from.tag_icon_info_);
+  if (from.table_all_odd() != 0) {
+    _internal_set_table_all_odd(from._internal_table_all_odd());
   }
-  if (from.nfreetimes() != 0) {
-    _internal_set_nfreetimes(from._internal_nfreetimes());
+  if (from.free_times() != 0) {
+    _internal_set_free_times(from._internal_free_times());
   }
-  if (from.nwingold() != 0) {
-    _internal_set_nwingold(from._internal_nwingold());
+  if (from.win_gold() != 0) {
+    _internal_set_win_gold(from._internal_win_gold());
   }
 }
 
@@ -1254,13 +1009,13 @@ bool CMD_3D_SC_Result::IsInitialized() const {
 void CMD_3D_SC_Result::InternalSwap(CMD_3D_SC_Result* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  tagiconinfo_.InternalSwap(&other->tagiconinfo_);
+  tag_icon_info_.InternalSwap(&other->tag_icon_info_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(CMD_3D_SC_Result, nwingold_)
-      + sizeof(CMD_3D_SC_Result::nwingold_)
-      - PROTOBUF_FIELD_OFFSET(CMD_3D_SC_Result, tableallodd_)>(
-          reinterpret_cast<char*>(&tableallodd_),
-          reinterpret_cast<char*>(&other->tableallodd_));
+      PROTOBUF_FIELD_OFFSET(CMD_3D_SC_Result, win_gold_)
+      + sizeof(CMD_3D_SC_Result::win_gold_)
+      - PROTOBUF_FIELD_OFFSET(CMD_3D_SC_Result, table_all_odd_)>(
+          reinterpret_cast<char*>(&table_all_odd_),
+          reinterpret_cast<char*>(&other->table_all_odd_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata CMD_3D_SC_Result::GetMetadata() const {
@@ -1276,9 +1031,6 @@ template<> PROTOBUF_NOINLINE ::MJHL::Round* Arena::CreateMaybeMessage< ::MJHL::R
 }
 template<> PROTOBUF_NOINLINE ::MJHL::SC_SceneInfo* Arena::CreateMaybeMessage< ::MJHL::SC_SceneInfo >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MJHL::SC_SceneInfo >(arena);
-}
-template<> PROTOBUF_NOINLINE ::MJHL::CMD_SC_BetFail* Arena::CreateMaybeMessage< ::MJHL::CMD_SC_BetFail >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::MJHL::CMD_SC_BetFail >(arena);
 }
 template<> PROTOBUF_NOINLINE ::MJHL::CMD_3D_SC_Result* Arena::CreateMaybeMessage< ::MJHL::CMD_3D_SC_Result >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MJHL::CMD_3D_SC_Result >(arena);
