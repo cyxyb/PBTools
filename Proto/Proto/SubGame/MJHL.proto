@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package MJHL;
+
+//服务器消息
+enum EMsgIDMJHL
+{
+	SUB_CS_GAME_START	 		= 0; //开始游戏(MsgCommonN32)
+	SUB_SC_BET_FAIL				= 1; //游戏结束(MsgCommonN32)// 0：金币不足 1：下注失败
+	SUB_SC_START_GAME		 	= 2; //场景消息(SC_SceneInfo)
+}
+
+
+message Round
+{
+	repeated int32 icon = 1;				// 图标
+	repeated int32 HitIdx = 2;			// 命中图标下标 命中 1
+	repeated int32 Gold_Icon_Info = 3;		// 金色图标下标 金色 1
+	int32			odd = 4;				// 单次倍数
+};
+message SC_SceneInfo
+{
+	int32	nFreeCount = 1;			// 免费次数
+	int32	nCurrenBet = 2;			// 当前下注
+	int32	nBetCount = 3;			// 下注列表个数
+	repeated int32	nBet = 4;
+};
+
+// 游戏结果返回
+message CMD_3D_SC_Result
+{
+	repeated Round	tagIconInfo = 1;	//每一轮的数据
+	int32			tableAllOdd = 2;		// 总倍数
+	int32			nFreeTimes = 3;			// 免费次数
+	int32			nWinGold = 4;			// 赢得金币
+};
