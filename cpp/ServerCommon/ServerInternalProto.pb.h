@@ -3887,6 +3887,9 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
     kPasswordFieldNumber = 12,
     kInviteCodeFieldNumber = 18,
     kSignatureFieldNumber = 19,
+    kWhatsupMsgFieldNumber = 21,
+    kTelegramMsgFieldNumber = 22,
+    kFacebookMsgFieldNumber = 23,
     kResCodeFieldNumber = 1,
     kUserIdFieldNumber = 2,
     kBeautifulIdFieldNumber = 3,
@@ -4011,6 +4014,54 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
   std::string* _internal_mutable_signature();
   public:
 
+  // string whatsup_msg = 21;
+  void clear_whatsup_msg();
+  const std::string& whatsup_msg() const;
+  void set_whatsup_msg(const std::string& value);
+  void set_whatsup_msg(std::string&& value);
+  void set_whatsup_msg(const char* value);
+  void set_whatsup_msg(const char* value, size_t size);
+  std::string* mutable_whatsup_msg();
+  std::string* release_whatsup_msg();
+  void set_allocated_whatsup_msg(std::string* whatsup_msg);
+  private:
+  const std::string& _internal_whatsup_msg() const;
+  void _internal_set_whatsup_msg(const std::string& value);
+  std::string* _internal_mutable_whatsup_msg();
+  public:
+
+  // string telegram_msg = 22;
+  void clear_telegram_msg();
+  const std::string& telegram_msg() const;
+  void set_telegram_msg(const std::string& value);
+  void set_telegram_msg(std::string&& value);
+  void set_telegram_msg(const char* value);
+  void set_telegram_msg(const char* value, size_t size);
+  std::string* mutable_telegram_msg();
+  std::string* release_telegram_msg();
+  void set_allocated_telegram_msg(std::string* telegram_msg);
+  private:
+  const std::string& _internal_telegram_msg() const;
+  void _internal_set_telegram_msg(const std::string& value);
+  std::string* _internal_mutable_telegram_msg();
+  public:
+
+  // string facebook_msg = 23;
+  void clear_facebook_msg();
+  const std::string& facebook_msg() const;
+  void set_facebook_msg(const std::string& value);
+  void set_facebook_msg(std::string&& value);
+  void set_facebook_msg(const char* value);
+  void set_facebook_msg(const char* value, size_t size);
+  std::string* mutable_facebook_msg();
+  std::string* release_facebook_msg();
+  void set_allocated_facebook_msg(std::string* facebook_msg);
+  private:
+  const std::string& _internal_facebook_msg() const;
+  void _internal_set_facebook_msg(const std::string& value);
+  std::string* _internal_mutable_facebook_msg();
+  public:
+
   // int32 res_code = 1;
   void clear_res_code();
   ::PROTOBUF_NAMESPACE_ID::int32 res_code() const;
@@ -4124,6 +4175,9 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr password_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr invite_code_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr signature_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr whatsup_msg_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr telegram_msg_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr facebook_msg_;
   ::PROTOBUF_NAMESPACE_ID::int32 res_code_;
   ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 beautiful_id_;
@@ -12581,6 +12635,189 @@ inline void MsgLoginPlayerInfo::_internal_set_agent_level(::PROTOBUF_NAMESPACE_I
 inline void MsgLoginPlayerInfo::set_agent_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_agent_level(value);
   // @@protoc_insertion_point(field_set:MsgLoginPlayerInfo.agent_level)
+}
+
+// string whatsup_msg = 21;
+inline void MsgLoginPlayerInfo::clear_whatsup_msg() {
+  whatsup_msg_.ClearToEmpty();
+}
+inline const std::string& MsgLoginPlayerInfo::whatsup_msg() const {
+  // @@protoc_insertion_point(field_get:MsgLoginPlayerInfo.whatsup_msg)
+  return _internal_whatsup_msg();
+}
+inline void MsgLoginPlayerInfo::set_whatsup_msg(const std::string& value) {
+  _internal_set_whatsup_msg(value);
+  // @@protoc_insertion_point(field_set:MsgLoginPlayerInfo.whatsup_msg)
+}
+inline std::string* MsgLoginPlayerInfo::mutable_whatsup_msg() {
+  // @@protoc_insertion_point(field_mutable:MsgLoginPlayerInfo.whatsup_msg)
+  return _internal_mutable_whatsup_msg();
+}
+inline const std::string& MsgLoginPlayerInfo::_internal_whatsup_msg() const {
+  return whatsup_msg_.Get();
+}
+inline void MsgLoginPlayerInfo::_internal_set_whatsup_msg(const std::string& value) {
+  
+  whatsup_msg_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgLoginPlayerInfo::set_whatsup_msg(std::string&& value) {
+  
+  whatsup_msg_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgLoginPlayerInfo.whatsup_msg)
+}
+inline void MsgLoginPlayerInfo::set_whatsup_msg(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  whatsup_msg_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgLoginPlayerInfo.whatsup_msg)
+}
+inline void MsgLoginPlayerInfo::set_whatsup_msg(const char* value,
+    size_t size) {
+  
+  whatsup_msg_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgLoginPlayerInfo.whatsup_msg)
+}
+inline std::string* MsgLoginPlayerInfo::_internal_mutable_whatsup_msg() {
+  
+  return whatsup_msg_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgLoginPlayerInfo::release_whatsup_msg() {
+  // @@protoc_insertion_point(field_release:MsgLoginPlayerInfo.whatsup_msg)
+  return whatsup_msg_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgLoginPlayerInfo::set_allocated_whatsup_msg(std::string* whatsup_msg) {
+  if (whatsup_msg != nullptr) {
+    
+  } else {
+    
+  }
+  whatsup_msg_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), whatsup_msg,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgLoginPlayerInfo.whatsup_msg)
+}
+
+// string telegram_msg = 22;
+inline void MsgLoginPlayerInfo::clear_telegram_msg() {
+  telegram_msg_.ClearToEmpty();
+}
+inline const std::string& MsgLoginPlayerInfo::telegram_msg() const {
+  // @@protoc_insertion_point(field_get:MsgLoginPlayerInfo.telegram_msg)
+  return _internal_telegram_msg();
+}
+inline void MsgLoginPlayerInfo::set_telegram_msg(const std::string& value) {
+  _internal_set_telegram_msg(value);
+  // @@protoc_insertion_point(field_set:MsgLoginPlayerInfo.telegram_msg)
+}
+inline std::string* MsgLoginPlayerInfo::mutable_telegram_msg() {
+  // @@protoc_insertion_point(field_mutable:MsgLoginPlayerInfo.telegram_msg)
+  return _internal_mutable_telegram_msg();
+}
+inline const std::string& MsgLoginPlayerInfo::_internal_telegram_msg() const {
+  return telegram_msg_.Get();
+}
+inline void MsgLoginPlayerInfo::_internal_set_telegram_msg(const std::string& value) {
+  
+  telegram_msg_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgLoginPlayerInfo::set_telegram_msg(std::string&& value) {
+  
+  telegram_msg_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgLoginPlayerInfo.telegram_msg)
+}
+inline void MsgLoginPlayerInfo::set_telegram_msg(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  telegram_msg_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgLoginPlayerInfo.telegram_msg)
+}
+inline void MsgLoginPlayerInfo::set_telegram_msg(const char* value,
+    size_t size) {
+  
+  telegram_msg_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgLoginPlayerInfo.telegram_msg)
+}
+inline std::string* MsgLoginPlayerInfo::_internal_mutable_telegram_msg() {
+  
+  return telegram_msg_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgLoginPlayerInfo::release_telegram_msg() {
+  // @@protoc_insertion_point(field_release:MsgLoginPlayerInfo.telegram_msg)
+  return telegram_msg_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgLoginPlayerInfo::set_allocated_telegram_msg(std::string* telegram_msg) {
+  if (telegram_msg != nullptr) {
+    
+  } else {
+    
+  }
+  telegram_msg_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), telegram_msg,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgLoginPlayerInfo.telegram_msg)
+}
+
+// string facebook_msg = 23;
+inline void MsgLoginPlayerInfo::clear_facebook_msg() {
+  facebook_msg_.ClearToEmpty();
+}
+inline const std::string& MsgLoginPlayerInfo::facebook_msg() const {
+  // @@protoc_insertion_point(field_get:MsgLoginPlayerInfo.facebook_msg)
+  return _internal_facebook_msg();
+}
+inline void MsgLoginPlayerInfo::set_facebook_msg(const std::string& value) {
+  _internal_set_facebook_msg(value);
+  // @@protoc_insertion_point(field_set:MsgLoginPlayerInfo.facebook_msg)
+}
+inline std::string* MsgLoginPlayerInfo::mutable_facebook_msg() {
+  // @@protoc_insertion_point(field_mutable:MsgLoginPlayerInfo.facebook_msg)
+  return _internal_mutable_facebook_msg();
+}
+inline const std::string& MsgLoginPlayerInfo::_internal_facebook_msg() const {
+  return facebook_msg_.Get();
+}
+inline void MsgLoginPlayerInfo::_internal_set_facebook_msg(const std::string& value) {
+  
+  facebook_msg_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgLoginPlayerInfo::set_facebook_msg(std::string&& value) {
+  
+  facebook_msg_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgLoginPlayerInfo.facebook_msg)
+}
+inline void MsgLoginPlayerInfo::set_facebook_msg(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  facebook_msg_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgLoginPlayerInfo.facebook_msg)
+}
+inline void MsgLoginPlayerInfo::set_facebook_msg(const char* value,
+    size_t size) {
+  
+  facebook_msg_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgLoginPlayerInfo.facebook_msg)
+}
+inline std::string* MsgLoginPlayerInfo::_internal_mutable_facebook_msg() {
+  
+  return facebook_msg_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgLoginPlayerInfo::release_facebook_msg() {
+  // @@protoc_insertion_point(field_release:MsgLoginPlayerInfo.facebook_msg)
+  return facebook_msg_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgLoginPlayerInfo::set_allocated_facebook_msg(std::string* facebook_msg) {
+  if (facebook_msg != nullptr) {
+    
+  } else {
+    
+  }
+  facebook_msg_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), facebook_msg,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgLoginPlayerInfo.facebook_msg)
 }
 
 // -------------------------------------------------------------------

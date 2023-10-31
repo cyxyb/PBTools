@@ -193,6 +193,9 @@ message MsgLoginPlayerInfo
 	string		invite_code		= 18;	//邀请码
 	string      signature		= 19;	//个性签名
 	int32		agent_level		= 20;	//代理等级
+	string      whatsup_msg		= 21;	//个性whats
+	string      telegram_msg	= 22;	//个性telegram
+	string      facebook_msg	= 23;	//个性facebook
 }
 
 //游戏服务器玩家信息
