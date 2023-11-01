@@ -127,6 +127,7 @@ enum EMsgIDLogin
 	MsgIDCDK_CDKexchangeInfoResp				= 113;		//CDK兑换码查询信息返回(MsgCDKExchangeResp)
 	MsgIDLogin_PersonalDetails					= 114;		//新增个人信息(MsgPersonalDetailsRespAdd)
 	MsgIDLogin_PersonalDetailsResp				= 115;		//新增个人信息(MsgCommonBool)
+	MsgIDLogin_NotifyServerOfflineResp			= 116;		//通知服务器(MsgCommonBool)
 }
 
 enum EMsgIDGame
