@@ -30,7 +30,7 @@ namespace MJHL {
             "b3VudBgBIAEoBRISCgpjdXJyZW5fYmV0GAIgASgFEgsKA2JldBgDIAMoBSJz",
             "ChBDTURfM0RfU0NfUmVzdWx0EiIKDXRhZ19pY29uX2luZm8YASADKAsyCy5N",
             "SkhMLlJvdW5kEhUKDXRhYmxlX2FsbF9vZGQYAiABKAUSEgoKZnJlZV90aW1l",
-            "cxgDIAEoBRIQCgh3aW5fZ29sZBgEIAEoBSpPCgpFTXNnSURNSkhMEhUKEVNV",
+            "cxgDIAEoBRIQCgh3aW5fZ29sZBgEIAEoAypPCgpFTXNnSURNSkhMEhUKEVNV",
             "Ql9DU19HQU1FX1NUQVJUEAASEwoPU1VCX1NDX0JFVF9GQUlMEAESFQoRU1VC",
             "X1NDX1NUQVJUX0dBTUUQAmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
@@ -659,12 +659,12 @@ namespace MJHL {
 
     /// <summary>Field number for the "win_gold" field.</summary>
     public const int WinGoldFieldNumber = 4;
-    private int winGold_;
+    private long winGold_;
     /// <summary>
     /// 赢得金币
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int WinGold {
+    public long WinGold {
       get { return winGold_; }
       set {
         winGold_ = value;
@@ -697,7 +697,7 @@ namespace MJHL {
       hash ^= tagIconInfo_.GetHashCode();
       if (TableAllOdd != 0) hash ^= TableAllOdd.GetHashCode();
       if (FreeTimes != 0) hash ^= FreeTimes.GetHashCode();
-      if (WinGold != 0) hash ^= WinGold.GetHashCode();
+      if (WinGold != 0L) hash ^= WinGold.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -723,9 +723,9 @@ namespace MJHL {
         output.WriteRawTag(24);
         output.WriteInt32(FreeTimes);
       }
-      if (WinGold != 0) {
+      if (WinGold != 0L) {
         output.WriteRawTag(32);
-        output.WriteInt32(WinGold);
+        output.WriteInt64(WinGold);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -745,9 +745,9 @@ namespace MJHL {
         output.WriteRawTag(24);
         output.WriteInt32(FreeTimes);
       }
-      if (WinGold != 0) {
+      if (WinGold != 0L) {
         output.WriteRawTag(32);
-        output.WriteInt32(WinGold);
+        output.WriteInt64(WinGold);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -765,8 +765,8 @@ namespace MJHL {
       if (FreeTimes != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(FreeTimes);
       }
-      if (WinGold != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(WinGold);
+      if (WinGold != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(WinGold);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -786,7 +786,7 @@ namespace MJHL {
       if (other.FreeTimes != 0) {
         FreeTimes = other.FreeTimes;
       }
-      if (other.WinGold != 0) {
+      if (other.WinGold != 0L) {
         WinGold = other.WinGold;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -816,7 +816,7 @@ namespace MJHL {
             break;
           }
           case 32: {
-            WinGold = input.ReadInt32();
+            WinGold = input.ReadInt64();
             break;
           }
         }
@@ -846,7 +846,7 @@ namespace MJHL {
             break;
           }
           case 32: {
-            WinGold = input.ReadInt32();
+            WinGold = input.ReadInt64();
             break;
           }
         }

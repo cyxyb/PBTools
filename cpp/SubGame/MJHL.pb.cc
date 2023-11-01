@@ -121,7 +121,7 @@ const char descriptor_table_protodef_MJHL_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   " \003(\005\"s\n\020CMD_3D_SC_Result\022\"\n\rtag_icon_inf"
   "o\030\001 \003(\0132\013.MJHL.Round\022\025\n\rtable_all_odd\030\002 "
   "\001(\005\022\022\n\nfree_times\030\003 \001(\005\022\020\n\010win_gold\030\004 \001("
-  "\005*O\n\nEMsgIDMJHL\022\025\n\021SUB_CS_GAME_START\020\000\022\023"
+  "\003*O\n\nEMsgIDMJHL\022\025\n\021SUB_CS_GAME_START\020\000\022\023"
   "\n\017SUB_SC_BET_FAIL\020\001\022\025\n\021SUB_SC_START_GAME"
   "\020\002b\006proto3"
   ;
@@ -840,7 +840,7 @@ const char* CMD_3D_SC_Result::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 win_gold = 4;
+      // int64 win_gold = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           win_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
@@ -895,10 +895,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_free_times(), target);
   }
 
-  // int32 win_gold = 4;
+  // int64 win_gold = 4;
   if (this->win_gold() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_win_gold(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_win_gold(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -938,10 +938,10 @@ size_t CMD_3D_SC_Result::ByteSizeLong() const {
         this->_internal_free_times());
   }
 
-  // int32 win_gold = 4;
+  // int64 win_gold = 4;
   if (this->win_gold() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_win_gold());
   }
 
