@@ -31,5 +31,5 @@ message CMD_3D_SC_Result
 	repeated Round	tag_icon_info = 1;		//每一轮的数据
 	int32			table_all_odd = 2;		// 总倍数
 	int32			free_times = 3;			// 免费次数
-	int32			win_gold = 4;			// 赢得金币
+	int64			win_gold = 4;			// 赢得金币
 };
