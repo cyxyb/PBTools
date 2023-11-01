@@ -49,6 +49,7 @@ enum EMsgIDServerInternalProto
 	LOGIN2CENTER_ReceiveSynchronousLogin		= 27;	//领取转账同步金币
 	CENTER2LOGIN_ReceiveSynchronousLoginResp	= 28;	//领取转账同步金币返回
 	CENTER2LOGIN_RefreshGoldResp				= 29;	//刷新GM添加金币返回
+	CENTER2LOGIN_NotifyServerOfflinrResp		= 30;	//通知服务器即将维护
 	
 	//1001-2000 game <-> center
 	GAME2CENTER_Register			= 2001;	//游戏服务器注册
@@ -76,6 +77,7 @@ enum EMsgIDServerInternalProto
 	RelayServer2CENTER_KickUser			= 5005;	//踢人
 	RelayServer2CENTER_LimitChat		= 5006;	//限制用户聊天
 	RelayServer2CENTER_RefreshGold		= 5007;	//刷新GM添加金币
+	RelayServer2CENTER_NotifyServerOffline = 5008;	//通知服务器即将维护
 	
 	//6001-7000 ChatServer <-> center
 	Chat2Center_Register				= 6001;	//聊天服注册
