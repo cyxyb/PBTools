@@ -458,27 +458,28 @@ const char descriptor_table_protodef_Rummy_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "\021\n\rGS_TP_PLAYING\020\002\022\016\n\nGS_TP_SHOW\020\003\022\020\n\014GS"
   "_TP_RESULT\020\004*d\n\013PlayerState\022\014\n\010PS_READY\020"
   "\000\022\013\n\007PS_PLAY\020\001\022\013\n\007PS_GIVE\020\002\022\013\n\007PS_FAIL\020\003"
-  "\022\020\n\014PS_SORT_CARD\020\004\022\016\n\nPS_SHOW_HU\020\005*b\n\rER"
+  "\022\020\n\014PS_SORT_CARD\020\004\022\016\n\nPS_SHOW_HU\020\005*s\n\rER"
   "MGameAction\022\r\n\tInvaldAct\020\000\022\014\n\010DropCard\020\001"
   "\022\n\n\006NaCard\020\002\022\013\n\007ChuCard\020\004\022\r\n\tSortsCard\020\010"
-  "\022\014\n\010ShowCard\020\020*b\n\016ERMColCardType\022\016\n\nCOL_"
-  "SINGLE\020\000\022\016\n\nCOL_BAO_ZI\020\001\022\020\n\014COL_SHUN_ZHI"
-  "\020\002\022\021\n\rCOL_QING_SHUN\020\003\022\013\n\007COL_MAX\020\004*\310\004\n\017E"
-  "RMMsgIDSubGame\022\025\n\021MsgIDSubGame_Null\020\000\022\036\n"
-  "\032MsgIDSubGame_GameStartResp\020\001\022!\n\035MsgIDSu"
-  "bGame_NotifyActionResp\020\002\022\027\n\023MsgIDSubGame"
-  "_Action\020\003\022\033\n\027MsgIDSubGame_ActionResp\020\004\022\037"
-  "\n\033MsgIDSubGame_GameResultResp\020\005\022 \n\034MsgID"
-  "SubGame_NotifyStateResp\020\006\022\034\n\030MsgIDSubGam"
-  "e_TimeOutResp\020\013\022\035\n\031MsgIDSubGame_TimeOutR"
-  "eady\020\014\022!\n\035MsgIDSubGame_TimeOutReadyResp\020"
-  "\r\022 \n\034MsgIDSubGame_TimeOutKickResp\020\016\022&\n\"M"
-  "sgIDSubGame_NotifyTrusteeshipResp\020\017\022&\n\"M"
-  "sgIDSubGame_NotifySystemCheatResp\020\024\022#\n\037M"
-  "sgIDSubGame_NotifyNextCardResp\020\025\022 \n\034MsgI"
-  "DSubGame_NotifyIsMaxResp\020\026\022\"\n\036MsgIDSubGa"
-  "me_NotifyLastActResp\020\031\022%\n!MsgIDSubGame_N"
-  "otifyOperPlayerInfo\020(b\006proto3"
+  "\022\014\n\010ShowCard\020\020\022\017\n\013TrusteeShip\020 *b\n\016ERMCo"
+  "lCardType\022\016\n\nCOL_SINGLE\020\000\022\016\n\nCOL_BAO_ZI\020"
+  "\001\022\020\n\014COL_SHUN_ZHI\020\002\022\021\n\rCOL_QING_SHUN\020\003\022\013"
+  "\n\007COL_MAX\020\004*\310\004\n\017ERMMsgIDSubGame\022\025\n\021MsgID"
+  "SubGame_Null\020\000\022\036\n\032MsgIDSubGame_GameStart"
+  "Resp\020\001\022!\n\035MsgIDSubGame_NotifyActionResp\020"
+  "\002\022\027\n\023MsgIDSubGame_Action\020\003\022\033\n\027MsgIDSubGa"
+  "me_ActionResp\020\004\022\037\n\033MsgIDSubGame_GameResu"
+  "ltResp\020\005\022 \n\034MsgIDSubGame_NotifyStateResp"
+  "\020\006\022\034\n\030MsgIDSubGame_TimeOutResp\020\013\022\035\n\031MsgI"
+  "DSubGame_TimeOutReady\020\014\022!\n\035MsgIDSubGame_"
+  "TimeOutReadyResp\020\r\022 \n\034MsgIDSubGame_TimeO"
+  "utKickResp\020\016\022&\n\"MsgIDSubGame_NotifyTrust"
+  "eeshipResp\020\017\022&\n\"MsgIDSubGame_NotifySyste"
+  "mCheatResp\020\024\022#\n\037MsgIDSubGame_NotifyNextC"
+  "ardResp\020\025\022 \n\034MsgIDSubGame_NotifyIsMaxRes"
+  "p\020\026\022\"\n\036MsgIDSubGame_NotifyLastActResp\020\031\022"
+  "%\n!MsgIDSubGame_NotifyOperPlayerInfo\020(b\006"
+  "proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Rummy_2eproto_deps[1] = {
 };
@@ -499,7 +500,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Rum
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Rummy_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Rummy_2eproto = {
-  false, false, descriptor_table_protodef_Rummy_2eproto, "Rummy.proto", 2669,
+  false, false, descriptor_table_protodef_Rummy_2eproto, "Rummy.proto", 2686,
   &descriptor_table_Rummy_2eproto_once, descriptor_table_Rummy_2eproto_sccs, descriptor_table_Rummy_2eproto_deps, 13, 0,
   schemas, file_default_instances, TableStruct_Rummy_2eproto::offsets,
   file_level_metadata_Rummy_2eproto, 13, file_level_enum_descriptors_Rummy_2eproto, file_level_service_descriptors_Rummy_2eproto,
@@ -555,6 +556,7 @@ bool ERMGameAction_IsValid(int value) {
     case 4:
     case 8:
     case 16:
+    case 32:
       return true;
     default:
       return false;
