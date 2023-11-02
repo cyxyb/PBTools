@@ -176,12 +176,13 @@ enum ERMGameAction : int {
   ChuCard = 4,
   SortsCard = 8,
   ShowCard = 16,
+  TrusteeShip = 32,
   ERMGameAction_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   ERMGameAction_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool ERMGameAction_IsValid(int value);
 constexpr ERMGameAction ERMGameAction_MIN = InvaldAct;
-constexpr ERMGameAction ERMGameAction_MAX = ShowCard;
+constexpr ERMGameAction ERMGameAction_MAX = TrusteeShip;
 constexpr int ERMGameAction_ARRAYSIZE = ERMGameAction_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ERMGameAction_descriptor();

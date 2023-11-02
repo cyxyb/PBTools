@@ -65,25 +65,25 @@ namespace Rummy {
             "UkVBRFkQABIOCgpHU19UUF9ERUFMEAESEQoNR1NfVFBfUExBWUlORxACEg4K",
             "CkdTX1RQX1NIT1cQAxIQCgxHU19UUF9SRVNVTFQQBCpkCgtQbGF5ZXJTdGF0",
             "ZRIMCghQU19SRUFEWRAAEgsKB1BTX1BMQVkQARILCgdQU19HSVZFEAISCwoH",
-            "UFNfRkFJTBADEhAKDFBTX1NPUlRfQ0FSRBAEEg4KClBTX1NIT1dfSFUQBSpi",
+            "UFNfRkFJTBADEhAKDFBTX1NPUlRfQ0FSRBAEEg4KClBTX1NIT1dfSFUQBSpz",
             "Cg1FUk1HYW1lQWN0aW9uEg0KCUludmFsZEFjdBAAEgwKCERyb3BDYXJkEAES",
             "CgoGTmFDYXJkEAISCwoHQ2h1Q2FyZBAEEg0KCVNvcnRzQ2FyZBAIEgwKCFNo",
-            "b3dDYXJkEBAqYgoORVJNQ29sQ2FyZFR5cGUSDgoKQ09MX1NJTkdMRRAAEg4K",
-            "CkNPTF9CQU9fWkkQARIQCgxDT0xfU0hVTl9aSEkQAhIRCg1DT0xfUUlOR19T",
-            "SFVOEAMSCwoHQ09MX01BWBAEKsgECg9FUk1Nc2dJRFN1YkdhbWUSFQoRTXNn",
-            "SURTdWJHYW1lX051bGwQABIeChpNc2dJRFN1YkdhbWVfR2FtZVN0YXJ0UmVz",
-            "cBABEiEKHU1zZ0lEU3ViR2FtZV9Ob3RpZnlBY3Rpb25SZXNwEAISFwoTTXNn",
-            "SURTdWJHYW1lX0FjdGlvbhADEhsKF01zZ0lEU3ViR2FtZV9BY3Rpb25SZXNw",
-            "EAQSHwobTXNnSURTdWJHYW1lX0dhbWVSZXN1bHRSZXNwEAUSIAocTXNnSURT",
-            "dWJHYW1lX05vdGlmeVN0YXRlUmVzcBAGEhwKGE1zZ0lEU3ViR2FtZV9UaW1l",
-            "T3V0UmVzcBALEh0KGU1zZ0lEU3ViR2FtZV9UaW1lT3V0UmVhZHkQDBIhCh1N",
-            "c2dJRFN1YkdhbWVfVGltZU91dFJlYWR5UmVzcBANEiAKHE1zZ0lEU3ViR2Ft",
-            "ZV9UaW1lT3V0S2lja1Jlc3AQDhImCiJNc2dJRFN1YkdhbWVfTm90aWZ5VHJ1",
-            "c3RlZXNoaXBSZXNwEA8SJgoiTXNnSURTdWJHYW1lX05vdGlmeVN5c3RlbUNo",
-            "ZWF0UmVzcBAUEiMKH01zZ0lEU3ViR2FtZV9Ob3RpZnlOZXh0Q2FyZFJlc3AQ",
-            "FRIgChxNc2dJRFN1YkdhbWVfTm90aWZ5SXNNYXhSZXNwEBYSIgoeTXNnSURT",
-            "dWJHYW1lX05vdGlmeUxhc3RBY3RSZXNwEBkSJQohTXNnSURTdWJHYW1lX05v",
-            "dGlmeU9wZXJQbGF5ZXJJbmZvEChiBnByb3RvMw=="));
+            "b3dDYXJkEBASDwoLVHJ1c3RlZVNoaXAQICpiCg5FUk1Db2xDYXJkVHlwZRIO",
+            "CgpDT0xfU0lOR0xFEAASDgoKQ09MX0JBT19aSRABEhAKDENPTF9TSFVOX1pI",
+            "SRACEhEKDUNPTF9RSU5HX1NIVU4QAxILCgdDT0xfTUFYEAQqyAQKD0VSTU1z",
+            "Z0lEU3ViR2FtZRIVChFNc2dJRFN1YkdhbWVfTnVsbBAAEh4KGk1zZ0lEU3Vi",
+            "R2FtZV9HYW1lU3RhcnRSZXNwEAESIQodTXNnSURTdWJHYW1lX05vdGlmeUFj",
+            "dGlvblJlc3AQAhIXChNNc2dJRFN1YkdhbWVfQWN0aW9uEAMSGwoXTXNnSURT",
+            "dWJHYW1lX0FjdGlvblJlc3AQBBIfChtNc2dJRFN1YkdhbWVfR2FtZVJlc3Vs",
+            "dFJlc3AQBRIgChxNc2dJRFN1YkdhbWVfTm90aWZ5U3RhdGVSZXNwEAYSHAoY",
+            "TXNnSURTdWJHYW1lX1RpbWVPdXRSZXNwEAsSHQoZTXNnSURTdWJHYW1lX1Rp",
+            "bWVPdXRSZWFkeRAMEiEKHU1zZ0lEU3ViR2FtZV9UaW1lT3V0UmVhZHlSZXNw",
+            "EA0SIAocTXNnSURTdWJHYW1lX1RpbWVPdXRLaWNrUmVzcBAOEiYKIk1zZ0lE",
+            "U3ViR2FtZV9Ob3RpZnlUcnVzdGVlc2hpcFJlc3AQDxImCiJNc2dJRFN1Ykdh",
+            "bWVfTm90aWZ5U3lzdGVtQ2hlYXRSZXNwEBQSIwofTXNnSURTdWJHYW1lX05v",
+            "dGlmeU5leHRDYXJkUmVzcBAVEiAKHE1zZ0lEU3ViR2FtZV9Ob3RpZnlJc01h",
+            "eFJlc3AQFhIiCh5Nc2dJRFN1YkdhbWVfTm90aWZ5TGFzdEFjdFJlc3AQGRIl",
+            "CiFNc2dJRFN1YkdhbWVfTm90aWZ5T3BlclBsYXllckluZm8QKGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Rummy.ERMGameState), typeof(global::Rummy.PlayerState), typeof(global::Rummy.ERMGameAction), typeof(global::Rummy.ERMColCardType), typeof(global::Rummy.ERMMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -190,6 +190,10 @@ namespace Rummy {
     ///秀牌
     /// </summary>
     [pbr::OriginalName("ShowCard")] ShowCard = 16,
+    /// <summary>
+    ///托管
+    /// </summary>
+    [pbr::OriginalName("TrusteeShip")] TrusteeShip = 32,
   }
 
   public enum ERMColCardType {
@@ -2810,7 +2814,7 @@ namespace Rummy {
     public const int GetOutCardFieldNumber = 4;
     private bool getOutCard_;
     /// <summary>
-    ///是否拿最后一张了的牌
+    ///是否拿最后一张了的牌 (act_type= TrusteeShip ,此变量，为是否托管)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool GetOutCard {

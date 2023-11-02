@@ -32,6 +32,7 @@ enum ERMGameAction
 	ChuCard			= 4;	//出牌
 	SortsCard		= 8;	//理牌
 	ShowCard		= 16;	//秀牌
+	TrusteeShip		= 32;	//托管
 };
 
 enum ERMColCardType
@@ -157,7 +158,7 @@ message RMMsgAction
 	int32 					chair_id		= 1;
 	int32					act_type		= 2;	//操作标示
 	int32					dest_card		= 3;	//目标牌
-	bool					get_out_card 	= 4;	//是否拿最后一张了的牌
+	bool					get_out_card 	= 4;	//是否拿最后一张了的牌 (act_type= TrusteeShip ,此变量，为是否托管)
 	repeated RMColumnInfo 	hand_group_info	= 5;	//手牌分组	(拿牌的时候可以不传 出牌时必传)
 }
 

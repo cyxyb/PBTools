@@ -9109,6 +9109,9 @@ public sealed partial class ActiveInfoRet : pb::IMessage<ActiveInfoRet>
   /// <summary>Field number for the "param2" field.</summary>
   public const int Param2FieldNumber = 4;
   private int param2_;
+  /// <summary>
+  ///多语言文字提示码	
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int Param2 {
     get { return param2_; }
@@ -9120,6 +9123,9 @@ public sealed partial class ActiveInfoRet : pb::IMessage<ActiveInfoRet>
   /// <summary>Field number for the "param3" field.</summary>
   public const int Param3FieldNumber = 5;
   private int param3_;
+  /// <summary>
+  ///游戏id
+  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int Param3 {
     get { return param3_; }
