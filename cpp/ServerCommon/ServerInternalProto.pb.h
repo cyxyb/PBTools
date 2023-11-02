@@ -1747,10 +1747,11 @@ class MsgUpdatePhoneCodeState PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kChannelFieldNumber = 4,
+    kChannelFieldNumber = 2,
     kIdFieldNumber = 1,
+    kSuccessFieldNumber = 3,
   };
-  // string channel = 4;
+  // string channel = 2;
   void clear_channel();
   const std::string& channel() const;
   void set_channel(const std::string& value);
@@ -1775,6 +1776,15 @@ class MsgUpdatePhoneCodeState PROTOBUF_FINAL :
   void _internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 success = 3;
+  void clear_success();
+  ::PROTOBUF_NAMESPACE_ID::int32 success() const;
+  void set_success(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_success() const;
+  void _internal_set_success(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgUpdatePhoneCodeState)
  private:
   class _Internal;
@@ -1784,6 +1794,7 @@ class MsgUpdatePhoneCodeState PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr channel_;
   ::PROTOBUF_NAMESPACE_ID::int32 id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 success_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -10893,7 +10904,7 @@ inline void MsgUpdatePhoneCodeState::set_id(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:MsgUpdatePhoneCodeState.id)
 }
 
-// string channel = 4;
+// string channel = 2;
 inline void MsgUpdatePhoneCodeState::clear_channel() {
   channel_.ClearToEmpty();
 }
@@ -10952,6 +10963,26 @@ inline void MsgUpdatePhoneCodeState::set_allocated_channel(std::string* channel)
   channel_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), channel,
       GetArena());
   // @@protoc_insertion_point(field_set_allocated:MsgUpdatePhoneCodeState.channel)
+}
+
+// int32 success = 3;
+inline void MsgUpdatePhoneCodeState::clear_success() {
+  success_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgUpdatePhoneCodeState::_internal_success() const {
+  return success_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgUpdatePhoneCodeState::success() const {
+  // @@protoc_insertion_point(field_get:MsgUpdatePhoneCodeState.success)
+  return _internal_success();
+}
+inline void MsgUpdatePhoneCodeState::_internal_set_success(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  success_ = value;
+}
+inline void MsgUpdatePhoneCodeState::set_success(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_success(value);
+  // @@protoc_insertion_point(field_set:MsgUpdatePhoneCodeState.success)
 }
 
 // -------------------------------------------------------------------
