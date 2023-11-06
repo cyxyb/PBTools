@@ -1574,7 +1574,6 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::MsgInviteUserInfo, invite_time_),
   PROTOBUF_FIELD_OFFSET(::MsgInviteUserInfo, beautiful_id_),
   PROTOBUF_FIELD_OFFSET(::MsgInviteUserInfo, nickname_),
-  PROTOBUF_FIELD_OFFSET(::MsgInviteUserInfo, isverify_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgInviteUserResp, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1640,7 +1639,7 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 512, -1, sizeof(::MsgCDKExchangeResp)},
   { 519, -1, sizeof(::MsgPersonalDetailsRespAdd)},
   { 526, -1, sizeof(::MsgInviteUserInfo)},
-  { 536, -1, sizeof(::MsgInviteUserResp)},
+  { 535, -1, sizeof(::MsgInviteUserResp)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -1858,11 +1857,11 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   " \001(\005\"E\n\022MsgCDKExchangeResp\022\020\n\010ret_code\030\001"
   " \001(\005\022\035\n\004info\030\002 \003(\0132\017.MsgCDKExchange\"6\n\031M"
   "sgPersonalDetailsRespAdd\022\014\n\004type\030\001 \001(\005\022\013"
-  "\n\003msg\030\002 \001(\t\"u\n\021MsgInviteUserInfo\022\021\n\tvip_"
+  "\n\003msg\030\002 \001(\t\"c\n\021MsgInviteUserInfo\022\021\n\tvip_"
   "level\030\001 \001(\005\022\023\n\013invite_time\030\002 \001(\t\022\024\n\014beau"
-  "tiful_id\030\003 \001(\005\022\020\n\010nickname\030\004 \001(\t\022\020\n\010IsVe"
-  "rify\030\005 \001(\010\"5\n\021MsgInviteUserResp\022 \n\004info\030"
-  "\001 \003(\0132\022.MsgInviteUserInfob\006proto3"
+  "tiful_id\030\003 \001(\005\022\020\n\010nickname\030\004 \001(\t\"5\n\021MsgI"
+  "nviteUserResp\022 \n\004info\030\001 \003(\0132\022.MsgInviteU"
+  "serInfob\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Login_2eproto_deps[1] = {
 };
@@ -1928,7 +1927,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Login_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Login_2eproto = {
-  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 6313,
+  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 6295,
   &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 58, 0,
   schemas, file_default_instances, TableStruct_Login_2eproto::offsets,
   file_level_metadata_Login_2eproto, 58, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
@@ -18652,8 +18651,8 @@ MsgInviteUserInfo::MsgInviteUserInfo(const MsgInviteUserInfo& from)
       GetArena());
   }
   ::memcpy(&vip_level_, &from.vip_level_,
-    static_cast<size_t>(reinterpret_cast<char*>(&isverify_) -
-    reinterpret_cast<char*>(&vip_level_)) + sizeof(isverify_));
+    static_cast<size_t>(reinterpret_cast<char*>(&beautiful_id_) -
+    reinterpret_cast<char*>(&vip_level_)) + sizeof(beautiful_id_));
   // @@protoc_insertion_point(copy_constructor:MsgInviteUserInfo)
 }
 
@@ -18663,8 +18662,8 @@ void MsgInviteUserInfo::SharedCtor() {
   nickname_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&vip_level_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&isverify_) -
-      reinterpret_cast<char*>(&vip_level_)) + sizeof(isverify_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&beautiful_id_) -
+      reinterpret_cast<char*>(&vip_level_)) + sizeof(beautiful_id_));
 }
 
 MsgInviteUserInfo::~MsgInviteUserInfo() {
@@ -18703,8 +18702,8 @@ void MsgInviteUserInfo::Clear() {
   invite_time_.ClearToEmpty();
   nickname_.ClearToEmpty();
   ::memset(&vip_level_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&isverify_) -
-      reinterpret_cast<char*>(&vip_level_)) + sizeof(isverify_));
+      reinterpret_cast<char*>(&beautiful_id_) -
+      reinterpret_cast<char*>(&vip_level_)) + sizeof(beautiful_id_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -18744,13 +18743,6 @@ const char* MsgInviteUserInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
           auto str = _internal_mutable_nickname();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgInviteUserInfo.nickname"));
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // bool IsVerify = 5;
-      case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
-          isverify_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -18814,12 +18806,6 @@ failure:
         4, this->_internal_nickname(), target);
   }
 
-  // bool IsVerify = 5;
-  if (this->isverify() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(5, this->_internal_isverify(), target);
-  }
-
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -18862,11 +18848,6 @@ size_t MsgInviteUserInfo::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_beautiful_id());
-  }
-
-  // bool IsVerify = 5;
-  if (this->isverify() != 0) {
-    total_size += 1 + 1;
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -18912,9 +18893,6 @@ void MsgInviteUserInfo::MergeFrom(const MsgInviteUserInfo& from) {
   if (from.beautiful_id() != 0) {
     _internal_set_beautiful_id(from._internal_beautiful_id());
   }
-  if (from.isverify() != 0) {
-    _internal_set_isverify(from._internal_isverify());
-  }
 }
 
 void MsgInviteUserInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -18941,8 +18919,8 @@ void MsgInviteUserInfo::InternalSwap(MsgInviteUserInfo* other) {
   invite_time_.Swap(&other->invite_time_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   nickname_.Swap(&other->nickname_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgInviteUserInfo, isverify_)
-      + sizeof(MsgInviteUserInfo::isverify_)
+      PROTOBUF_FIELD_OFFSET(MsgInviteUserInfo, beautiful_id_)
+      + sizeof(MsgInviteUserInfo::beautiful_id_)
       - PROTOBUF_FIELD_OFFSET(MsgInviteUserInfo, vip_level_)>(
           reinterpret_cast<char*>(&vip_level_),
           reinterpret_cast<char*>(&other->vip_level_));

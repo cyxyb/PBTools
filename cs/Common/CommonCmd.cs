@@ -631,7 +631,7 @@ public enum EMsgIDLogin {
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_NotifyServerOfflineResp")] MsgIdloginNotifyServerOfflineResp = 116,
   /// <summary>
-  ///通知更新Vip经验(MsgCommonN32)
+  ///通知更新Vip经验(MsgCommonBool)
   /// </summary>
   [pbr::OriginalName("MsgIDShare_NotifyUpdateVipExpResp")] MsgIdshareNotifyUpdateVipExpResp = 117,
   /// <summary>

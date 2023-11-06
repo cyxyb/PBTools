@@ -10696,7 +10696,6 @@ class MsgInviteUserInfo PROTOBUF_FINAL :
     kNicknameFieldNumber = 4,
     kVipLevelFieldNumber = 1,
     kBeautifulIdFieldNumber = 3,
-    kIsVerifyFieldNumber = 5,
   };
   // string invite_time = 2;
   void clear_invite_time();
@@ -10748,15 +10747,6 @@ class MsgInviteUserInfo PROTOBUF_FINAL :
   void _internal_set_beautiful_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // bool IsVerify = 5;
-  void clear_isverify();
-  bool isverify() const;
-  void set_isverify(bool value);
-  private:
-  bool _internal_isverify() const;
-  void _internal_set_isverify(bool value);
-  public:
-
   // @@protoc_insertion_point(class_scope:MsgInviteUserInfo)
  private:
   class _Internal;
@@ -10768,7 +10758,6 @@ class MsgInviteUserInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr nickname_;
   ::PROTOBUF_NAMESPACE_ID::int32 vip_level_;
   ::PROTOBUF_NAMESPACE_ID::int32 beautiful_id_;
-  bool isverify_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -18924,26 +18913,6 @@ inline void MsgInviteUserInfo::set_allocated_nickname(std::string* nickname) {
   nickname_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), nickname,
       GetArena());
   // @@protoc_insertion_point(field_set_allocated:MsgInviteUserInfo.nickname)
-}
-
-// bool IsVerify = 5;
-inline void MsgInviteUserInfo::clear_isverify() {
-  isverify_ = false;
-}
-inline bool MsgInviteUserInfo::_internal_isverify() const {
-  return isverify_;
-}
-inline bool MsgInviteUserInfo::isverify() const {
-  // @@protoc_insertion_point(field_get:MsgInviteUserInfo.IsVerify)
-  return _internal_isverify();
-}
-inline void MsgInviteUserInfo::_internal_set_isverify(bool value) {
-  
-  isverify_ = value;
-}
-inline void MsgInviteUserInfo::set_isverify(bool value) {
-  _internal_set_isverify(value);
-  // @@protoc_insertion_point(field_set:MsgInviteUserInfo.IsVerify)
 }
 
 // -------------------------------------------------------------------

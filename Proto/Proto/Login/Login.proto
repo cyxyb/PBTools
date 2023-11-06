@@ -515,7 +515,6 @@ message MsgInviteUserInfo
 	string	invite_time		= 2;		//邀请时间
 	int32	beautiful_id	= 3;		//靓号
 	string	nickname		= 4;		//昵称
-	bool	IsVerify		= 5;		//是否验证
 }
 
 //邀请玩家信息

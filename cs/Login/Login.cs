@@ -158,11 +158,11 @@ public static partial class LoginReflection {
           "ZW1fbnVtGAIgASgFEhEKCWl0ZW1fdHlwZRgDIAEoBSJFChJNc2dDREtFeGNo",
           "YW5nZVJlc3ASEAoIcmV0X2NvZGUYASABKAUSHQoEaW5mbxgCIAMoCzIPLk1z",
           "Z0NES0V4Y2hhbmdlIjYKGU1zZ1BlcnNvbmFsRGV0YWlsc1Jlc3BBZGQSDAoE",
-          "dHlwZRgBIAEoBRILCgNtc2cYAiABKAkidQoRTXNnSW52aXRlVXNlckluZm8S",
+          "dHlwZRgBIAEoBRILCgNtc2cYAiABKAkiYwoRTXNnSW52aXRlVXNlckluZm8S",
           "EQoJdmlwX2xldmVsGAEgASgFEhMKC2ludml0ZV90aW1lGAIgASgJEhQKDGJl",
-          "YXV0aWZ1bF9pZBgDIAEoBRIQCghuaWNrbmFtZRgEIAEoCRIQCghJc1Zlcmlm",
-          "eRgFIAEoCCI1ChFNc2dJbnZpdGVVc2VyUmVzcBIgCgRpbmZvGAEgAygLMhIu",
-          "TXNnSW52aXRlVXNlckluZm9iBnByb3RvMw=="));
+          "YXV0aWZ1bF9pZBgDIAEoBRIQCghuaWNrbmFtZRgEIAEoCSI1ChFNc2dJbnZp",
+          "dGVVc2VyUmVzcBIgCgRpbmZvGAEgAygLMhIuTXNnSW52aXRlVXNlckluZm9i",
+          "BnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -222,7 +222,7 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgCDKExchange), global::MsgCDKExchange.Parser, new[]{ "ItemId", "ItemNum", "ItemType" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgCDKExchangeResp), global::MsgCDKExchangeResp.Parser, new[]{ "RetCode", "Info" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPersonalDetailsRespAdd), global::MsgPersonalDetailsRespAdd.Parser, new[]{ "Type", "Msg" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgInviteUserInfo), global::MsgInviteUserInfo.Parser, new[]{ "VipLevel", "InviteTime", "BeautifulId", "Nickname", "IsVerify" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgInviteUserInfo), global::MsgInviteUserInfo.Parser, new[]{ "VipLevel", "InviteTime", "BeautifulId", "Nickname" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgInviteUserResp), global::MsgInviteUserResp.Parser, new[]{ "Info" }, null, null, null, null)
         }));
   }
@@ -17391,7 +17391,6 @@ public sealed partial class MsgInviteUserInfo : pb::IMessage<MsgInviteUserInfo>
     inviteTime_ = other.inviteTime_;
     beautifulId_ = other.beautifulId_;
     nickname_ = other.nickname_;
-    isVerify_ = other.isVerify_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -17456,20 +17455,6 @@ public sealed partial class MsgInviteUserInfo : pb::IMessage<MsgInviteUserInfo>
     }
   }
 
-  /// <summary>Field number for the "IsVerify" field.</summary>
-  public const int IsVerifyFieldNumber = 5;
-  private bool isVerify_;
-  /// <summary>
-  ///是否验证
-  /// </summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool IsVerify {
-    get { return isVerify_; }
-    set {
-      isVerify_ = value;
-    }
-  }
-
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as MsgInviteUserInfo);
@@ -17487,7 +17472,6 @@ public sealed partial class MsgInviteUserInfo : pb::IMessage<MsgInviteUserInfo>
     if (InviteTime != other.InviteTime) return false;
     if (BeautifulId != other.BeautifulId) return false;
     if (Nickname != other.Nickname) return false;
-    if (IsVerify != other.IsVerify) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -17498,7 +17482,6 @@ public sealed partial class MsgInviteUserInfo : pb::IMessage<MsgInviteUserInfo>
     if (InviteTime.Length != 0) hash ^= InviteTime.GetHashCode();
     if (BeautifulId != 0) hash ^= BeautifulId.GetHashCode();
     if (Nickname.Length != 0) hash ^= Nickname.GetHashCode();
-    if (IsVerify != false) hash ^= IsVerify.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -17531,10 +17514,6 @@ public sealed partial class MsgInviteUserInfo : pb::IMessage<MsgInviteUserInfo>
       output.WriteRawTag(34);
       output.WriteString(Nickname);
     }
-    if (IsVerify != false) {
-      output.WriteRawTag(40);
-      output.WriteBool(IsVerify);
-    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -17560,10 +17539,6 @@ public sealed partial class MsgInviteUserInfo : pb::IMessage<MsgInviteUserInfo>
       output.WriteRawTag(34);
       output.WriteString(Nickname);
     }
-    if (IsVerify != false) {
-      output.WriteRawTag(40);
-      output.WriteBool(IsVerify);
-    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -17584,9 +17559,6 @@ public sealed partial class MsgInviteUserInfo : pb::IMessage<MsgInviteUserInfo>
     }
     if (Nickname.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(Nickname);
-    }
-    if (IsVerify != false) {
-      size += 1 + 1;
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -17610,9 +17582,6 @@ public sealed partial class MsgInviteUserInfo : pb::IMessage<MsgInviteUserInfo>
     }
     if (other.Nickname.Length != 0) {
       Nickname = other.Nickname;
-    }
-    if (other.IsVerify != false) {
-      IsVerify = other.IsVerify;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -17644,10 +17613,6 @@ public sealed partial class MsgInviteUserInfo : pb::IMessage<MsgInviteUserInfo>
           Nickname = input.ReadString();
           break;
         }
-        case 40: {
-          IsVerify = input.ReadBool();
-          break;
-        }
       }
     }
   #endif
@@ -17676,10 +17641,6 @@ public sealed partial class MsgInviteUserInfo : pb::IMessage<MsgInviteUserInfo>
         }
         case 34: {
           Nickname = input.ReadString();
-          break;
-        }
-        case 40: {
-          IsVerify = input.ReadBool();
           break;
         }
       }
