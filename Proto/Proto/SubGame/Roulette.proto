@@ -5,12 +5,13 @@ package Roulette;
 //消息号
 enum EMsgIDRoulette
 {
-	MsgID_SC_GameRecord 	= 0;		//游戏记录()	
-	MsgID_SC_GameBottom 	= 1;		//游戏下注()
-	MsgID_SC_BottomCancel 	= 2;		//撤回下注()
-	MsgID_SC_GameResult		= 3;		//游戏结果()
-	MsgID_CS_GameBottom 	= 4;		//下注()
-	MsgID_CS_BottomCancel 	= 5;		//下注撤回()
+	MsgID_SC_GameRecord 	= 0;		//游戏记录(GmaeALLRecord)	
+	MsgID_SC_GameBottom 	= 1;		//游戏下注(MsgBetResp)
+	MsgID_SC_BottomCancel 	= 2;		//撤回下注(RevocationBet)
+	MsgID_SC_GameResult		= 3;		//游戏结果(MsgGmaeResult)
+	MsgID_SC_GameState		= 4;		//游戏状态(GameState)
+	MsgID_CS_GameBottom 	= 5;		//下注(MsgBet)
+	MsgID_CS_BottomCancel 	= 6;		//下注撤回(RevocationBet)
 }
 //ALL 数据展示
 message GmaeALLRecord
@@ -40,19 +41,24 @@ message GmaeConfg
 	repeated int32 bet 					= 1;	//下注配置
 	repeated int32 bet_limit_min 		= 2;	//最小下注限制
 	repeated int32 bet_limit_max		= 3;    //最大下注限制
-	repeated BettonArea bet_area_cfg	= 4;   //下注区域配置
+	repeated BettonArea bet_area_cfg	= 4;   	//下注区域配置
 	repeated int32 multiple_cfg			= 5;    //区域倍数
+}
+//游戏状态
+message GameState 
+{
+	int32 game_state					= 1;	//游戏状态0：下注状态 1：结算状态
+	int32 times							= 2;	//剩余时间 S
 }
 //场景数据
 message MsgSceneInfo
 {	
 	GmaeConfg game_fog 					= 1;	//戏配置
-	repeated int32 game_record			= 2;	//游戏输赢区域记录
+	repeated int32 game_record			= 2;	//游戏输赢区域记录12条
 	repeated GmaeALLRecord all_record 	= 3;	//戏ALL数据展示
-	int32 game_state					= 4;	//游戏状态
-	int32 times							= 5;	//剩余时间
-	repeated int32 game_bet				= 6;	//游戏下注
-	repeated UserInfo user_top 			= 7;	//玩家数据
+	GameState game_state				= 4;	//游戏状态
+	repeated int32 game_bet				= 5;	//游戏下注
+	repeated UserInfo user_top 			= 6;	//玩家数据最多100个玩家
 }
 //玩家下注
 message MsgBet

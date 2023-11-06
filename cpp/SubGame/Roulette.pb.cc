@@ -16,6 +16,7 @@
 #include <google/protobuf/port_def.inc>
 extern PROTOBUF_INTERNAL_EXPORT_Roulette_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_AgainBet_Roulette_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_Roulette_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_BettonArea_Roulette_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_Roulette_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GameState_Roulette_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_Roulette_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GmaeALLRecord_Roulette_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_Roulette_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GmaeConfg_Roulette_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_Roulette_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgBet_Roulette_2eproto;
@@ -39,6 +40,10 @@ class GmaeConfgDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GmaeConfg> _instance;
 } _GmaeConfg_default_instance_;
+class GameStateDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameState> _instance;
+} _GameState_default_instance_;
 class MsgSceneInfoDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgSceneInfo> _instance;
@@ -102,6 +107,19 @@ static void InitDefaultsscc_info_BettonArea_Roulette_2eproto() {
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_BettonArea_Roulette_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_BettonArea_Roulette_2eproto}, {}};
+
+static void InitDefaultsscc_info_GameState_Roulette_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::Roulette::_GameState_default_instance_;
+    new (ptr) ::Roulette::GameState();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GameState_Roulette_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_GameState_Roulette_2eproto}, {}};
 
 static void InitDefaultsscc_info_GmaeALLRecord_Roulette_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -195,10 +213,11 @@ static void InitDefaultsscc_info_MsgSceneInfo_Roulette_2eproto() {
   }
 }
 
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<3> scc_info_MsgSceneInfo_Roulette_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 3, 0, InitDefaultsscc_info_MsgSceneInfo_Roulette_2eproto}, {
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<4> scc_info_MsgSceneInfo_Roulette_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 4, 0, InitDefaultsscc_info_MsgSceneInfo_Roulette_2eproto}, {
       &scc_info_GmaeConfg_Roulette_2eproto.base,
       &scc_info_GmaeALLRecord_Roulette_2eproto.base,
+      &scc_info_GameState_Roulette_2eproto.base,
       &scc_info_UserInfo_Roulette_2eproto.base,}};
 
 static void InitDefaultsscc_info_RevocationBet_Roulette_2eproto() {
@@ -253,7 +272,7 @@ static void InitDefaultsscc_info_WinMsg_Roulette_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_WinMsg_Roulette_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_WinMsg_Roulette_2eproto}, {}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Roulette_2eproto[13];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Roulette_2eproto[14];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_Roulette_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_Roulette_2eproto = nullptr;
 
@@ -294,6 +313,13 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Roulette_2eproto::offsets[] PR
   PROTOBUF_FIELD_OFFSET(::Roulette::GmaeConfg, bet_area_cfg_),
   PROTOBUF_FIELD_OFFSET(::Roulette::GmaeConfg, multiple_cfg_),
   ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::Roulette::GameState, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::Roulette::GameState, game_state_),
+  PROTOBUF_FIELD_OFFSET(::Roulette::GameState, times_),
+  ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::Roulette::MsgSceneInfo, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
@@ -302,7 +328,6 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Roulette_2eproto::offsets[] PR
   PROTOBUF_FIELD_OFFSET(::Roulette::MsgSceneInfo, game_record_),
   PROTOBUF_FIELD_OFFSET(::Roulette::MsgSceneInfo, all_record_),
   PROTOBUF_FIELD_OFFSET(::Roulette::MsgSceneInfo, game_state_),
-  PROTOBUF_FIELD_OFFSET(::Roulette::MsgSceneInfo, times_),
   PROTOBUF_FIELD_OFFSET(::Roulette::MsgSceneInfo, game_bet_),
   PROTOBUF_FIELD_OFFSET(::Roulette::MsgSceneInfo, user_top_),
   ~0u,  // no _has_bits_
@@ -367,15 +392,16 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 12, -1, sizeof(::Roulette::BettonArea)},
   { 18, -1, sizeof(::Roulette::UserInfo)},
   { 25, -1, sizeof(::Roulette::GmaeConfg)},
-  { 35, -1, sizeof(::Roulette::MsgSceneInfo)},
-  { 47, -1, sizeof(::Roulette::MsgBet)},
-  { 54, -1, sizeof(::Roulette::MsgBetResp)},
-  { 61, -1, sizeof(::Roulette::SingleAgainBet)},
-  { 69, -1, sizeof(::Roulette::AgainBet)},
-  { 75, -1, sizeof(::Roulette::MsgAgainBetResp)},
-  { 82, -1, sizeof(::Roulette::RevocationBet)},
-  { 89, -1, sizeof(::Roulette::WinMsg)},
-  { 96, -1, sizeof(::Roulette::MsgGmaeResult)},
+  { 35, -1, sizeof(::Roulette::GameState)},
+  { 42, -1, sizeof(::Roulette::MsgSceneInfo)},
+  { 53, -1, sizeof(::Roulette::MsgBet)},
+  { 60, -1, sizeof(::Roulette::MsgBetResp)},
+  { 67, -1, sizeof(::Roulette::SingleAgainBet)},
+  { 75, -1, sizeof(::Roulette::AgainBet)},
+  { 81, -1, sizeof(::Roulette::MsgAgainBetResp)},
+  { 88, -1, sizeof(::Roulette::RevocationBet)},
+  { 95, -1, sizeof(::Roulette::WinMsg)},
+  { 102, -1, sizeof(::Roulette::MsgGmaeResult)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -383,6 +409,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Roulette::_BettonArea_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Roulette::_UserInfo_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Roulette::_GmaeConfg_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Roulette::_GameState_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Roulette::_MsgSceneInfo_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Roulette::_MsgBet_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Roulette::_MsgBetResp_default_instance_),
@@ -404,35 +431,38 @@ const char descriptor_table_protodef_Roulette_2eproto[] PROTOBUF_SECTION_VARIABL
   "l_win\030\002 \001(\003\"\210\001\n\tGmaeConfg\022\013\n\003bet\030\001 \003(\005\022\025"
   "\n\rbet_limit_min\030\002 \003(\005\022\025\n\rbet_limit_max\030\003"
   " \003(\005\022*\n\014bet_area_cfg\030\004 \003(\0132\024.Roulette.Be"
-  "ttonArea\022\024\n\014multiple_cfg\030\005 \003(\005\"\322\001\n\014MsgSc"
-  "eneInfo\022%\n\010game_fog\030\001 \001(\0132\023.Roulette.Gma"
-  "eConfg\022\023\n\013game_record\030\002 \003(\005\022+\n\nall_recor"
-  "d\030\003 \003(\0132\027.Roulette.GmaeALLRecord\022\022\n\ngame"
-  "_state\030\004 \001(\005\022\r\n\005times\030\005 \001(\005\022\020\n\010game_bet\030"
-  "\006 \003(\005\022$\n\010user_top\030\007 \003(\0132\022.Roulette.UserI"
-  "nfo\"%\n\006MsgBet\022\r\n\005index\030\001 \001(\005\022\014\n\004area\030\002 \001"
-  "(\005\"B\n\nMsgBetResp\022\020\n\010chair_id\030\001 \001(\005\022\"\n\010be"
-  "t_info\030\002 \001(\0132\020.Roulette.MsgBet\"<\n\016Single"
-  "AgainBet\022\r\n\005index\030\001 \001(\005\022\014\n\004area\030\002 \001(\005\022\r\n"
-  "\005count\030\003 \001(\005\"<\n\010AgainBet\0220\n\016again_bet_in"
-  "fo\030\001 \003(\0132\030.Roulette.SingleAgainBet\"O\n\017Ms"
-  "gAgainBetResp\022\020\n\010chair_id\030\001 \001(\005\022*\n\016again"
-  "_bet_info\030\002 \001(\0132\022.Roulette.AgainBet\"<\n\rR"
-  "evocationBet\022\030\n\020revocation_state\030\001 \001(\005\022\021"
-  "\n\tbet_index\030\002 \001(\005\"(\n\006WinMsg\022\020\n\010chair_id\030"
-  "\001 \001(\005\022\014\n\004gold\030\002 \001(\003\"F\n\rMsgGmaeResult\022\022\n\n"
-  "result_num\030\001 \001(\005\022!\n\007win_msg\030\002 \003(\0132\020.Roul"
-  "ette.WinMsg*\252\001\n\016EMsgIDRoulette\022\027\n\023MsgID_"
-  "SC_GameRecord\020\000\022\027\n\023MsgID_SC_GameBottom\020\001"
-  "\022\031\n\025MsgID_SC_BottomCancel\020\002\022\027\n\023MsgID_SC_"
-  "GameResult\020\003\022\027\n\023MsgID_CS_GameBottom\020\004\022\031\n"
-  "\025MsgID_CS_BottomCancel\020\005b\006proto3"
+  "ttonArea\022\024\n\014multiple_cfg\030\005 \003(\005\".\n\tGameSt"
+  "ate\022\022\n\ngame_state\030\001 \001(\005\022\r\n\005times\030\002 \001(\005\"\330"
+  "\001\n\014MsgSceneInfo\022%\n\010game_fog\030\001 \001(\0132\023.Roul"
+  "ette.GmaeConfg\022\023\n\013game_record\030\002 \003(\005\022+\n\na"
+  "ll_record\030\003 \003(\0132\027.Roulette.GmaeALLRecord"
+  "\022\'\n\ngame_state\030\004 \001(\0132\023.Roulette.GameStat"
+  "e\022\020\n\010game_bet\030\005 \003(\005\022$\n\010user_top\030\006 \003(\0132\022."
+  "Roulette.UserInfo\"%\n\006MsgBet\022\r\n\005index\030\001 \001"
+  "(\005\022\014\n\004area\030\002 \001(\005\"B\n\nMsgBetResp\022\020\n\010chair_"
+  "id\030\001 \001(\005\022\"\n\010bet_info\030\002 \001(\0132\020.Roulette.Ms"
+  "gBet\"<\n\016SingleAgainBet\022\r\n\005index\030\001 \001(\005\022\014\n"
+  "\004area\030\002 \001(\005\022\r\n\005count\030\003 \001(\005\"<\n\010AgainBet\0220"
+  "\n\016again_bet_info\030\001 \003(\0132\030.Roulette.Single"
+  "AgainBet\"O\n\017MsgAgainBetResp\022\020\n\010chair_id\030"
+  "\001 \001(\005\022*\n\016again_bet_info\030\002 \001(\0132\022.Roulette"
+  ".AgainBet\"<\n\rRevocationBet\022\030\n\020revocation"
+  "_state\030\001 \001(\005\022\021\n\tbet_index\030\002 \001(\005\"(\n\006WinMs"
+  "g\022\020\n\010chair_id\030\001 \001(\005\022\014\n\004gold\030\002 \001(\003\"F\n\rMsg"
+  "GmaeResult\022\022\n\nresult_num\030\001 \001(\005\022!\n\007win_ms"
+  "g\030\002 \003(\0132\020.Roulette.WinMsg*\302\001\n\016EMsgIDRoul"
+  "ette\022\027\n\023MsgID_SC_GameRecord\020\000\022\027\n\023MsgID_S"
+  "C_GameBottom\020\001\022\031\n\025MsgID_SC_BottomCancel\020"
+  "\002\022\027\n\023MsgID_SC_GameResult\020\003\022\026\n\022MsgID_SC_G"
+  "ameState\020\004\022\027\n\023MsgID_CS_GameBottom\020\005\022\031\n\025M"
+  "sgID_CS_BottomCancel\020\006b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Roulette_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Roulette_2eproto_sccs[13] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Roulette_2eproto_sccs[14] = {
   &scc_info_AgainBet_Roulette_2eproto.base,
   &scc_info_BettonArea_Roulette_2eproto.base,
+  &scc_info_GameState_Roulette_2eproto.base,
   &scc_info_GmaeALLRecord_Roulette_2eproto.base,
   &scc_info_GmaeConfg_Roulette_2eproto.base,
   &scc_info_MsgAgainBetResp_Roulette_2eproto.base,
@@ -447,10 +477,10 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Rou
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Roulette_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Roulette_2eproto = {
-  false, false, descriptor_table_protodef_Roulette_2eproto, "Roulette.proto", 1272,
-  &descriptor_table_Roulette_2eproto_once, descriptor_table_Roulette_2eproto_sccs, descriptor_table_Roulette_2eproto_deps, 13, 0,
+  false, false, descriptor_table_protodef_Roulette_2eproto, "Roulette.proto", 1350,
+  &descriptor_table_Roulette_2eproto_once, descriptor_table_Roulette_2eproto_sccs, descriptor_table_Roulette_2eproto_deps, 14, 0,
   schemas, file_default_instances, TableStruct_Roulette_2eproto::offsets,
-  file_level_metadata_Roulette_2eproto, 13, file_level_enum_descriptors_Roulette_2eproto, file_level_service_descriptors_Roulette_2eproto,
+  file_level_metadata_Roulette_2eproto, 14, file_level_enum_descriptors_Roulette_2eproto, file_level_service_descriptors_Roulette_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -468,6 +498,7 @@ bool EMsgIDRoulette_IsValid(int value) {
     case 3:
     case 4:
     case 5:
+    case 6:
       return true;
     default:
       return false;
@@ -1612,14 +1643,248 @@ void GmaeConfg::InternalSwap(GmaeConfg* other) {
 
 // ===================================================================
 
+class GameState::_Internal {
+ public:
+};
+
+GameState::GameState(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:Roulette.GameState)
+}
+GameState::GameState(const GameState& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&game_state_, &from.game_state_,
+    static_cast<size_t>(reinterpret_cast<char*>(&times_) -
+    reinterpret_cast<char*>(&game_state_)) + sizeof(times_));
+  // @@protoc_insertion_point(copy_constructor:Roulette.GameState)
+}
+
+void GameState::SharedCtor() {
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&game_state_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&times_) -
+      reinterpret_cast<char*>(&game_state_)) + sizeof(times_));
+}
+
+GameState::~GameState() {
+  // @@protoc_insertion_point(destructor:Roulette.GameState)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void GameState::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void GameState::ArenaDtor(void* object) {
+  GameState* _this = reinterpret_cast< GameState* >(object);
+  (void)_this;
+}
+void GameState::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void GameState::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const GameState& GameState::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameState_Roulette_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void GameState::Clear() {
+// @@protoc_insertion_point(message_clear_start:Roulette.GameState)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&game_state_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&times_) -
+      reinterpret_cast<char*>(&game_state_)) + sizeof(times_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* GameState::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 game_state = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          game_state_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 times = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          times_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* GameState::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:Roulette.GameState)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 game_state = 1;
+  if (this->game_state() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_game_state(), target);
+  }
+
+  // int32 times = 2;
+  if (this->times() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_times(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:Roulette.GameState)
+  return target;
+}
+
+size_t GameState::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Roulette.GameState)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // int32 game_state = 1;
+  if (this->game_state() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_game_state());
+  }
+
+  // int32 times = 2;
+  if (this->times() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_times());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void GameState::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:Roulette.GameState)
+  GOOGLE_DCHECK_NE(&from, this);
+  const GameState* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<GameState>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Roulette.GameState)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:Roulette.GameState)
+    MergeFrom(*source);
+  }
+}
+
+void GameState::MergeFrom(const GameState& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Roulette.GameState)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.game_state() != 0) {
+    _internal_set_game_state(from._internal_game_state());
+  }
+  if (from.times() != 0) {
+    _internal_set_times(from._internal_times());
+  }
+}
+
+void GameState::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:Roulette.GameState)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void GameState::CopyFrom(const GameState& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Roulette.GameState)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool GameState::IsInitialized() const {
+  return true;
+}
+
+void GameState::InternalSwap(GameState* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(GameState, times_)
+      + sizeof(GameState::times_)
+      - PROTOBUF_FIELD_OFFSET(GameState, game_state_)>(
+          reinterpret_cast<char*>(&game_state_),
+          reinterpret_cast<char*>(&other->game_state_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata GameState::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
 class MsgSceneInfo::_Internal {
  public:
   static const ::Roulette::GmaeConfg& game_fog(const MsgSceneInfo* msg);
+  static const ::Roulette::GameState& game_state(const MsgSceneInfo* msg);
 };
 
 const ::Roulette::GmaeConfg&
 MsgSceneInfo::_Internal::game_fog(const MsgSceneInfo* msg) {
   return *msg->game_fog_;
+}
+const ::Roulette::GameState&
+MsgSceneInfo::_Internal::game_state(const MsgSceneInfo* msg) {
+  return *msg->game_state_;
 }
 MsgSceneInfo::MsgSceneInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena),
@@ -1643,9 +1908,11 @@ MsgSceneInfo::MsgSceneInfo(const MsgSceneInfo& from)
   } else {
     game_fog_ = nullptr;
   }
-  ::memcpy(&game_state_, &from.game_state_,
-    static_cast<size_t>(reinterpret_cast<char*>(&times_) -
-    reinterpret_cast<char*>(&game_state_)) + sizeof(times_));
+  if (from._internal_has_game_state()) {
+    game_state_ = new ::Roulette::GameState(*from.game_state_);
+  } else {
+    game_state_ = nullptr;
+  }
   // @@protoc_insertion_point(copy_constructor:Roulette.MsgSceneInfo)
 }
 
@@ -1653,8 +1920,8 @@ void MsgSceneInfo::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgSceneInfo_Roulette_2eproto.base);
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&game_fog_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&times_) -
-      reinterpret_cast<char*>(&game_fog_)) + sizeof(times_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&game_state_) -
+      reinterpret_cast<char*>(&game_fog_)) + sizeof(game_state_));
 }
 
 MsgSceneInfo::~MsgSceneInfo() {
@@ -1666,6 +1933,7 @@ MsgSceneInfo::~MsgSceneInfo() {
 void MsgSceneInfo::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete game_fog_;
+  if (this != internal_default_instance()) delete game_state_;
 }
 
 void MsgSceneInfo::ArenaDtor(void* object) {
@@ -1697,9 +1965,10 @@ void MsgSceneInfo::Clear() {
     delete game_fog_;
   }
   game_fog_ = nullptr;
-  ::memset(&game_state_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&times_) -
-      reinterpret_cast<char*>(&game_state_)) + sizeof(times_));
+  if (GetArena() == nullptr && game_state_ != nullptr) {
+    delete game_state_;
+  }
+  game_state_ = nullptr;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -1739,40 +2008,33 @@ const char* MsgSceneInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<26>(ptr));
         } else goto handle_unusual;
         continue;
-      // int32 game_state = 4;
+      // .Roulette.GameState game_state = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          game_state_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+          ptr = ctx->ParseMessage(_internal_mutable_game_state(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 times = 5;
+      // repeated int32 game_bet = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
-          times_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // repeated int32 game_bet = 6;
-      case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_game_bet(), ptr, ctx);
           CHK_(ptr);
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48) {
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40) {
           _internal_add_game_bet(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated .Roulette.UserInfo user_top = 7;
-      case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+      // repeated .Roulette.UserInfo user_top = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
           ptr -= 1;
           do {
             ptr += 1;
             ptr = ctx->ParseMessage(_internal_add_user_top(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<58>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<50>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -1828,33 +2090,29 @@ failure:
       InternalWriteMessage(3, this->_internal_all_record(i), target, stream);
   }
 
-  // int32 game_state = 4;
-  if (this->game_state() != 0) {
+  // .Roulette.GameState game_state = 4;
+  if (this->has_game_state()) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_game_state(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        4, _Internal::game_state(this), target, stream);
   }
 
-  // int32 times = 5;
-  if (this->times() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_times(), target);
-  }
-
-  // repeated int32 game_bet = 6;
+  // repeated int32 game_bet = 5;
   {
     int byte_size = _game_bet_cached_byte_size_.load(std::memory_order_relaxed);
     if (byte_size > 0) {
       target = stream->WriteInt32Packed(
-          6, _internal_game_bet(), byte_size, target);
+          5, _internal_game_bet(), byte_size, target);
     }
   }
 
-  // repeated .Roulette.UserInfo user_top = 7;
+  // repeated .Roulette.UserInfo user_top = 6;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_user_top_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(7, this->_internal_user_top(i), target, stream);
+      InternalWriteMessage(6, this->_internal_user_top(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1895,7 +2153,7 @@ size_t MsgSceneInfo::ByteSizeLong() const {
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  // repeated int32 game_bet = 6;
+  // repeated int32 game_bet = 5;
   {
     size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       Int32Size(this->game_bet_);
@@ -1910,7 +2168,7 @@ size_t MsgSceneInfo::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  // repeated .Roulette.UserInfo user_top = 7;
+  // repeated .Roulette.UserInfo user_top = 6;
   total_size += 1UL * this->_internal_user_top_size();
   for (const auto& msg : this->user_top_) {
     total_size +=
@@ -1924,18 +2182,11 @@ size_t MsgSceneInfo::ByteSizeLong() const {
         *game_fog_);
   }
 
-  // int32 game_state = 4;
-  if (this->game_state() != 0) {
+  // .Roulette.GameState game_state = 4;
+  if (this->has_game_state()) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_game_state());
-  }
-
-  // int32 times = 5;
-  if (this->times() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_times());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *game_state_);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1976,11 +2227,8 @@ void MsgSceneInfo::MergeFrom(const MsgSceneInfo& from) {
   if (from.has_game_fog()) {
     _internal_mutable_game_fog()->::Roulette::GmaeConfg::MergeFrom(from._internal_game_fog());
   }
-  if (from.game_state() != 0) {
-    _internal_set_game_state(from._internal_game_state());
-  }
-  if (from.times() != 0) {
-    _internal_set_times(from._internal_times());
+  if (from.has_game_state()) {
+    _internal_mutable_game_state()->::Roulette::GameState::MergeFrom(from._internal_game_state());
   }
 }
 
@@ -2010,8 +2258,8 @@ void MsgSceneInfo::InternalSwap(MsgSceneInfo* other) {
   game_bet_.InternalSwap(&other->game_bet_);
   user_top_.InternalSwap(&other->user_top_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgSceneInfo, times_)
-      + sizeof(MsgSceneInfo::times_)
+      PROTOBUF_FIELD_OFFSET(MsgSceneInfo, game_state_)
+      + sizeof(MsgSceneInfo::game_state_)
       - PROTOBUF_FIELD_OFFSET(MsgSceneInfo, game_fog_)>(
           reinterpret_cast<char*>(&game_fog_),
           reinterpret_cast<char*>(&other->game_fog_));
@@ -3888,6 +4136,9 @@ template<> PROTOBUF_NOINLINE ::Roulette::UserInfo* Arena::CreateMaybeMessage< ::
 }
 template<> PROTOBUF_NOINLINE ::Roulette::GmaeConfg* Arena::CreateMaybeMessage< ::Roulette::GmaeConfg >(Arena* arena) {
   return Arena::CreateMessageInternal< ::Roulette::GmaeConfg >(arena);
+}
+template<> PROTOBUF_NOINLINE ::Roulette::GameState* Arena::CreateMaybeMessage< ::Roulette::GameState >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::Roulette::GameState >(arena);
 }
 template<> PROTOBUF_NOINLINE ::Roulette::MsgSceneInfo* Arena::CreateMaybeMessage< ::Roulette::MsgSceneInfo >(Arena* arena) {
   return Arena::CreateMessageInternal< ::Roulette::MsgSceneInfo >(arena);
