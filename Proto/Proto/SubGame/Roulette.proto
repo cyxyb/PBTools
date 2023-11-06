@@ -8,10 +8,12 @@ enum EMsgIDRoulette
 	MsgID_SC_GameRecord 	= 0;		//游戏记录(GmaeALLRecord)	
 	MsgID_SC_GameBottom 	= 1;		//游戏下注(MsgBetResp)
 	MsgID_SC_BottomCancel 	= 2;		//撤回下注(RevocationBet)
-	MsgID_SC_GameResult		= 3;		//游戏结果(MsgGmaeResult)
-	MsgID_SC_GameState		= 4;		//游戏状态(GameState)
-	MsgID_CS_GameBottom 	= 5;		//下注(MsgBet)
-	MsgID_CS_BottomCancel 	= 6;		//下注撤回(RevocationBet)
+	MsgID_SC_AgainBet		= 3;		//续投(MsgAgainBetResp)
+	MsgID_SC_GameResult		= 4;		//游戏结果(MsgGmaeResult)
+	MsgID_SC_GameState		= 5;		//游戏状态(GameState)
+	MsgID_CS_GameBottom 	= 6;		//下注(MsgBet)
+	MsgID_CS_BottomCancel 	= 7;		//下注撤回(RevocationBet)
+	MsgID_CS_AgainBet		= 8;		//续投(MsgAgainBet)
 }
 //ALL 数据展示
 message GmaeALLRecord
@@ -50,6 +52,12 @@ message GameState
 	int32 game_state					= 1;	//游戏状态0：下注状态 1：结算状态
 	int32 times							= 2;	//剩余时间 S
 }
+//下注记录
+message UserBetRecord
+{
+	int32 chair_id 						= 1;	//下注区域
+	int64 bet_value 					= 2;	//下注值
+}
 //场景数据
 message MsgSceneInfo
 {	
@@ -57,9 +65,10 @@ message MsgSceneInfo
 	repeated int32 game_record			= 2;	//游戏输赢区域记录12条
 	repeated GmaeALLRecord all_record 	= 3;	//戏ALL数据展示
 	GameState game_state				= 4;	//游戏状态
-	repeated int32 game_bet				= 5;	//游戏下注
+	repeated UserBetRecord game_bet		= 5;	//游戏下注
 	repeated UserInfo user_top 			= 6;	//玩家数据最多100个玩家
 }
+
 //玩家下注
 message MsgBet
 {
@@ -76,13 +85,13 @@ message MsgBetResp
 //玩家下注
 message SingleAgainBet
 {
-	int32			index			= 1;	//押注下标
-	int32			area			= 2;	//押注区域(0-196)
-	int32			count			= 3;	//次数
+	int32			index			= 1;	//押注下标1 
+	int32			area			= 2;	//押注区域(0-196)0
+	int32			count			= 3;	//次数5 
 }
 
 //玩家续投
-message AgainBet
+message MsgAgainBet
 {
 	repeated SingleAgainBet again_bet_info = 1;	//玩家续投
 }
@@ -91,7 +100,7 @@ message AgainBet
 message MsgAgainBetResp
 {
 	int32			chair_id		= 1;	//玩家椅子号
-	AgainBet		again_bet_info	= 2;	//玩家续投信息
+	MsgAgainBet		again_bet_info	= 2;	//玩家续投信息
 } 
 //撤回下注
 message RevocationBet

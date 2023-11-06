@@ -34,27 +34,30 @@ namespace Roulette {
             "EhUKDWJldF9saW1pdF9tYXgYAyADKAUSKgoMYmV0X2FyZWFfY2ZnGAQgAygL",
             "MhQuUm91bGV0dGUuQmV0dG9uQXJlYRIUCgxtdWx0aXBsZV9jZmcYBSADKAUi",
             "LgoJR2FtZVN0YXRlEhIKCmdhbWVfc3RhdGUYASABKAUSDQoFdGltZXMYAiAB",
-            "KAUi2AEKDE1zZ1NjZW5lSW5mbxIlCghnYW1lX2ZvZxgBIAEoCzITLlJvdWxl",
-            "dHRlLkdtYWVDb25mZxITCgtnYW1lX3JlY29yZBgCIAMoBRIrCgphbGxfcmVj",
-            "b3JkGAMgAygLMhcuUm91bGV0dGUuR21hZUFMTFJlY29yZBInCgpnYW1lX3N0",
-            "YXRlGAQgASgLMhMuUm91bGV0dGUuR2FtZVN0YXRlEhAKCGdhbWVfYmV0GAUg",
-            "AygFEiQKCHVzZXJfdG9wGAYgAygLMhIuUm91bGV0dGUuVXNlckluZm8iJQoG",
-            "TXNnQmV0Eg0KBWluZGV4GAEgASgFEgwKBGFyZWEYAiABKAUiQgoKTXNnQmV0",
-            "UmVzcBIQCghjaGFpcl9pZBgBIAEoBRIiCghiZXRfaW5mbxgCIAEoCzIQLlJv",
-            "dWxldHRlLk1zZ0JldCI8Cg5TaW5nbGVBZ2FpbkJldBINCgVpbmRleBgBIAEo",
-            "BRIMCgRhcmVhGAIgASgFEg0KBWNvdW50GAMgASgFIjwKCEFnYWluQmV0EjAK",
-            "DmFnYWluX2JldF9pbmZvGAEgAygLMhguUm91bGV0dGUuU2luZ2xlQWdhaW5C",
-            "ZXQiTwoPTXNnQWdhaW5CZXRSZXNwEhAKCGNoYWlyX2lkGAEgASgFEioKDmFn",
-            "YWluX2JldF9pbmZvGAIgASgLMhIuUm91bGV0dGUuQWdhaW5CZXQiPAoNUmV2",
-            "b2NhdGlvbkJldBIYChByZXZvY2F0aW9uX3N0YXRlGAEgASgFEhEKCWJldF9p",
-            "bmRleBgCIAEoBSIoCgZXaW5Nc2cSEAoIY2hhaXJfaWQYASABKAUSDAoEZ29s",
-            "ZBgCIAEoAyJGCg1Nc2dHbWFlUmVzdWx0EhIKCnJlc3VsdF9udW0YASABKAUS",
-            "IQoHd2luX21zZxgCIAMoCzIQLlJvdWxldHRlLldpbk1zZyrCAQoORU1zZ0lE",
-            "Um91bGV0dGUSFwoTTXNnSURfU0NfR2FtZVJlY29yZBAAEhcKE01zZ0lEX1ND",
-            "X0dhbWVCb3R0b20QARIZChVNc2dJRF9TQ19Cb3R0b21DYW5jZWwQAhIXChNN",
-            "c2dJRF9TQ19HYW1lUmVzdWx0EAMSFgoSTXNnSURfU0NfR2FtZVN0YXRlEAQS",
-            "FwoTTXNnSURfQ1NfR2FtZUJvdHRvbRAFEhkKFU1zZ0lEX0NTX0JvdHRvbUNh",
-            "bmNlbBAGYgZwcm90bzM="));
+            "KAUiNAoNVXNlckJldFJlY29yZBIQCghjaGFpcl9pZBgBIAEoBRIRCgliZXRf",
+            "dmFsdWUYAiABKAMi8QEKDE1zZ1NjZW5lSW5mbxIlCghnYW1lX2ZvZxgBIAEo",
+            "CzITLlJvdWxldHRlLkdtYWVDb25mZxITCgtnYW1lX3JlY29yZBgCIAMoBRIr",
+            "CgphbGxfcmVjb3JkGAMgAygLMhcuUm91bGV0dGUuR21hZUFMTFJlY29yZBIn",
+            "CgpnYW1lX3N0YXRlGAQgASgLMhMuUm91bGV0dGUuR2FtZVN0YXRlEikKCGdh",
+            "bWVfYmV0GAUgAygLMhcuUm91bGV0dGUuVXNlckJldFJlY29yZBIkCgh1c2Vy",
+            "X3RvcBgGIAMoCzISLlJvdWxldHRlLlVzZXJJbmZvIiUKBk1zZ0JldBINCgVp",
+            "bmRleBgBIAEoBRIMCgRhcmVhGAIgASgFIkIKCk1zZ0JldFJlc3ASEAoIY2hh",
+            "aXJfaWQYASABKAUSIgoIYmV0X2luZm8YAiABKAsyEC5Sb3VsZXR0ZS5Nc2dC",
+            "ZXQiPAoOU2luZ2xlQWdhaW5CZXQSDQoFaW5kZXgYASABKAUSDAoEYXJlYRgC",
+            "IAEoBRINCgVjb3VudBgDIAEoBSI/CgtNc2dBZ2FpbkJldBIwCg5hZ2Fpbl9i",
+            "ZXRfaW5mbxgBIAMoCzIYLlJvdWxldHRlLlNpbmdsZUFnYWluQmV0IlIKD01z",
+            "Z0FnYWluQmV0UmVzcBIQCghjaGFpcl9pZBgBIAEoBRItCg5hZ2Fpbl9iZXRf",
+            "aW5mbxgCIAEoCzIVLlJvdWxldHRlLk1zZ0FnYWluQmV0IjwKDVJldm9jYXRp",
+            "b25CZXQSGAoQcmV2b2NhdGlvbl9zdGF0ZRgBIAEoBRIRCgliZXRfaW5kZXgY",
+            "AiABKAUiKAoGV2luTXNnEhAKCGNoYWlyX2lkGAEgASgFEgwKBGdvbGQYAiAB",
+            "KAMiRgoNTXNnR21hZVJlc3VsdBISCgpyZXN1bHRfbnVtGAEgASgFEiEKB3dp",
+            "bl9tc2cYAiADKAsyEC5Sb3VsZXR0ZS5XaW5Nc2cq8AEKDkVNc2dJRFJvdWxl",
+            "dHRlEhcKE01zZ0lEX1NDX0dhbWVSZWNvcmQQABIXChNNc2dJRF9TQ19HYW1l",
+            "Qm90dG9tEAESGQoVTXNnSURfU0NfQm90dG9tQ2FuY2VsEAISFQoRTXNnSURf",
+            "U0NfQWdhaW5CZXQQAxIXChNNc2dJRF9TQ19HYW1lUmVzdWx0EAQSFgoSTXNn",
+            "SURfU0NfR2FtZVN0YXRlEAUSFwoTTXNnSURfQ1NfR2FtZUJvdHRvbRAGEhkK",
+            "FU1zZ0lEX0NTX0JvdHRvbUNhbmNlbBAHEhUKEU1zZ0lEX0NTX0FnYWluQmV0",
+            "EAhiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Roulette.EMsgIDRoulette), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -63,11 +66,12 @@ namespace Roulette {
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.UserInfo), global::Roulette.UserInfo.Parser, new[]{ "TotalBet", "TotalWin" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.GmaeConfg), global::Roulette.GmaeConfg.Parser, new[]{ "Bet", "BetLimitMin", "BetLimitMax", "BetAreaCfg", "MultipleCfg" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.GameState), global::Roulette.GameState.Parser, new[]{ "GameState_", "Times" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.UserBetRecord), global::Roulette.UserBetRecord.Parser, new[]{ "ChairId", "BetValue" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.MsgSceneInfo), global::Roulette.MsgSceneInfo.Parser, new[]{ "GameFog", "GameRecord", "AllRecord", "GameState", "GameBet", "UserTop" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.MsgBet), global::Roulette.MsgBet.Parser, new[]{ "Index", "Area" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.MsgBetResp), global::Roulette.MsgBetResp.Parser, new[]{ "ChairId", "BetInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.SingleAgainBet), global::Roulette.SingleAgainBet.Parser, new[]{ "Index", "Area", "Count" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.AgainBet), global::Roulette.AgainBet.Parser, new[]{ "AgainBetInfo" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.MsgAgainBet), global::Roulette.MsgAgainBet.Parser, new[]{ "AgainBetInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.MsgAgainBetResp), global::Roulette.MsgAgainBetResp.Parser, new[]{ "ChairId", "AgainBetInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.RevocationBet), global::Roulette.RevocationBet.Parser, new[]{ "RevocationState", "BetIndex" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.WinMsg), global::Roulette.WinMsg.Parser, new[]{ "ChairId", "Gold" }, null, null, null, null),
@@ -95,21 +99,29 @@ namespace Roulette {
     /// </summary>
     [pbr::OriginalName("MsgID_SC_BottomCancel")] MsgIdScBottomCancel = 2,
     /// <summary>
+    ///续投(MsgAgainBetResp)
+    /// </summary>
+    [pbr::OriginalName("MsgID_SC_AgainBet")] MsgIdScAgainBet = 3,
+    /// <summary>
     ///游戏结果(MsgGmaeResult)
     /// </summary>
-    [pbr::OriginalName("MsgID_SC_GameResult")] MsgIdScGameResult = 3,
+    [pbr::OriginalName("MsgID_SC_GameResult")] MsgIdScGameResult = 4,
     /// <summary>
     ///游戏状态(GameState)
     /// </summary>
-    [pbr::OriginalName("MsgID_SC_GameState")] MsgIdScGameState = 4,
+    [pbr::OriginalName("MsgID_SC_GameState")] MsgIdScGameState = 5,
     /// <summary>
     ///下注(MsgBet)
     /// </summary>
-    [pbr::OriginalName("MsgID_CS_GameBottom")] MsgIdCsGameBottom = 5,
+    [pbr::OriginalName("MsgID_CS_GameBottom")] MsgIdCsGameBottom = 6,
     /// <summary>
     ///下注撤回(RevocationBet)
     /// </summary>
-    [pbr::OriginalName("MsgID_CS_BottomCancel")] MsgIdCsBottomCancel = 6,
+    [pbr::OriginalName("MsgID_CS_BottomCancel")] MsgIdCsBottomCancel = 7,
+    /// <summary>
+    ///续投(MsgAgainBet)
+    /// </summary>
+    [pbr::OriginalName("MsgID_CS_AgainBet")] MsgIdCsAgainBet = 8,
   }
 
   #endregion
@@ -1409,6 +1421,223 @@ namespace Roulette {
   }
 
   /// <summary>
+  ///下注记录
+  /// </summary>
+  public sealed partial class UserBetRecord : pb::IMessage<UserBetRecord>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<UserBetRecord> _parser = new pb::MessageParser<UserBetRecord>(() => new UserBetRecord());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<UserBetRecord> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserBetRecord() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserBetRecord(UserBetRecord other) : this() {
+      chairId_ = other.chairId_;
+      betValue_ = other.betValue_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserBetRecord Clone() {
+      return new UserBetRecord(this);
+    }
+
+    /// <summary>Field number for the "chair_id" field.</summary>
+    public const int ChairIdFieldNumber = 1;
+    private int chairId_;
+    /// <summary>
+    ///下注区域
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int ChairId {
+      get { return chairId_; }
+      set {
+        chairId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "bet_value" field.</summary>
+    public const int BetValueFieldNumber = 2;
+    private long betValue_;
+    /// <summary>
+    ///下注值
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long BetValue {
+      get { return betValue_; }
+      set {
+        betValue_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as UserBetRecord);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(UserBetRecord other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ChairId != other.ChairId) return false;
+      if (BetValue != other.BetValue) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ChairId != 0) hash ^= ChairId.GetHashCode();
+      if (BetValue != 0L) hash ^= BetValue.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (ChairId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ChairId);
+      }
+      if (BetValue != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(BetValue);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ChairId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ChairId);
+      }
+      if (BetValue != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(BetValue);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (ChairId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChairId);
+      }
+      if (BetValue != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(BetValue);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(UserBetRecord other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ChairId != 0) {
+        ChairId = other.ChairId;
+      }
+      if (other.BetValue != 0L) {
+        BetValue = other.BetValue;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            ChairId = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            BetValue = input.ReadInt64();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ChairId = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            BetValue = input.ReadInt64();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
   ///场景数据
   /// </summary>
   public sealed partial class MsgSceneInfo : pb::IMessage<MsgSceneInfo>
@@ -1423,7 +1652,7 @@ namespace Roulette {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1510,14 +1739,14 @@ namespace Roulette {
 
     /// <summary>Field number for the "game_bet" field.</summary>
     public const int GameBetFieldNumber = 5;
-    private static readonly pb::FieldCodec<int> _repeated_gameBet_codec
-        = pb::FieldCodec.ForInt32(42);
-    private readonly pbc::RepeatedField<int> gameBet_ = new pbc::RepeatedField<int>();
+    private static readonly pb::FieldCodec<global::Roulette.UserBetRecord> _repeated_gameBet_codec
+        = pb::FieldCodec.ForMessage(42, global::Roulette.UserBetRecord.Parser);
+    private readonly pbc::RepeatedField<global::Roulette.UserBetRecord> gameBet_ = new pbc::RepeatedField<global::Roulette.UserBetRecord>();
     /// <summary>
     ///游戏下注
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<int> GameBet {
+    public pbc::RepeatedField<global::Roulette.UserBetRecord> GameBet {
       get { return gameBet_; }
     }
 
@@ -1697,8 +1926,7 @@ namespace Roulette {
             input.ReadMessage(GameState);
             break;
           }
-          case 42:
-          case 40: {
+          case 42: {
             gameBet_.AddEntriesFrom(input, _repeated_gameBet_codec);
             break;
           }
@@ -1743,8 +1971,7 @@ namespace Roulette {
             input.ReadMessage(GameState);
             break;
           }
-          case 42:
-          case 40: {
+          case 42: {
             gameBet_.AddEntriesFrom(ref input, _repeated_gameBet_codec);
             break;
           }
@@ -1774,7 +2001,7 @@ namespace Roulette {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1991,7 +2218,7 @@ namespace Roulette {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2217,7 +2444,7 @@ namespace Roulette {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2249,7 +2476,7 @@ namespace Roulette {
     public const int IndexFieldNumber = 1;
     private int index_;
     /// <summary>
-    ///押注下标
+    ///押注下标1 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int Index {
@@ -2263,7 +2490,7 @@ namespace Roulette {
     public const int AreaFieldNumber = 2;
     private int area_;
     /// <summary>
-    ///押注区域(0-196)
+    ///押注区域(0-196)0
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int Area {
@@ -2277,7 +2504,7 @@ namespace Roulette {
     public const int CountFieldNumber = 3;
     private int count_;
     /// <summary>
-    ///次数
+    ///次数5 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int Count {
@@ -2461,19 +2688,19 @@ namespace Roulette {
   /// <summary>
   ///玩家续投
   /// </summary>
-  public sealed partial class AgainBet : pb::IMessage<AgainBet>
+  public sealed partial class MsgAgainBet : pb::IMessage<MsgAgainBet>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<AgainBet> _parser = new pb::MessageParser<AgainBet>(() => new AgainBet());
+    private static readonly pb::MessageParser<MsgAgainBet> _parser = new pb::MessageParser<MsgAgainBet>(() => new MsgAgainBet());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<AgainBet> Parser { get { return _parser; } }
+    public static pb::MessageParser<MsgAgainBet> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2482,21 +2709,21 @@ namespace Roulette {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public AgainBet() {
+    public MsgAgainBet() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public AgainBet(AgainBet other) : this() {
+    public MsgAgainBet(MsgAgainBet other) : this() {
       againBetInfo_ = other.againBetInfo_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public AgainBet Clone() {
-      return new AgainBet(this);
+    public MsgAgainBet Clone() {
+      return new MsgAgainBet(this);
     }
 
     /// <summary>Field number for the "again_bet_info" field.</summary>
@@ -2514,11 +2741,11 @@ namespace Roulette {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as AgainBet);
+      return Equals(other as MsgAgainBet);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(AgainBet other) {
+    public bool Equals(MsgAgainBet other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -2577,7 +2804,7 @@ namespace Roulette {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(AgainBet other) {
+    public void MergeFrom(MsgAgainBet other) {
       if (other == null) {
         return;
       }
@@ -2640,7 +2867,7 @@ namespace Roulette {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2683,12 +2910,12 @@ namespace Roulette {
 
     /// <summary>Field number for the "again_bet_info" field.</summary>
     public const int AgainBetInfoFieldNumber = 2;
-    private global::Roulette.AgainBet againBetInfo_;
+    private global::Roulette.MsgAgainBet againBetInfo_;
     /// <summary>
     ///玩家续投信息
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Roulette.AgainBet AgainBetInfo {
+    public global::Roulette.MsgAgainBet AgainBetInfo {
       get { return againBetInfo_; }
       set {
         againBetInfo_ = value;
@@ -2790,7 +3017,7 @@ namespace Roulette {
       }
       if (other.againBetInfo_ != null) {
         if (againBetInfo_ == null) {
-          AgainBetInfo = new global::Roulette.AgainBet();
+          AgainBetInfo = new global::Roulette.MsgAgainBet();
         }
         AgainBetInfo.MergeFrom(other.AgainBetInfo);
       }
@@ -2814,7 +3041,7 @@ namespace Roulette {
           }
           case 18: {
             if (againBetInfo_ == null) {
-              AgainBetInfo = new global::Roulette.AgainBet();
+              AgainBetInfo = new global::Roulette.MsgAgainBet();
             }
             input.ReadMessage(AgainBetInfo);
             break;
@@ -2839,7 +3066,7 @@ namespace Roulette {
           }
           case 18: {
             if (againBetInfo_ == null) {
-              AgainBetInfo = new global::Roulette.AgainBet();
+              AgainBetInfo = new global::Roulette.MsgAgainBet();
             }
             input.ReadMessage(AgainBetInfo);
             break;
@@ -2866,7 +3093,7 @@ namespace Roulette {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3083,7 +3310,7 @@ namespace Roulette {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3300,7 +3527,7 @@ namespace Roulette {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[13]; }
+      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

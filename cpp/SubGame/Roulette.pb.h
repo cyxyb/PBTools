@@ -47,7 +47,7 @@ struct TableStruct_Roulette_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[14]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[15]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -55,9 +55,6 @@ struct TableStruct_Roulette_2eproto {
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Roulette_2eproto;
 namespace Roulette {
-class AgainBet;
-class AgainBetDefaultTypeInternal;
-extern AgainBetDefaultTypeInternal _AgainBet_default_instance_;
 class BettonArea;
 class BettonAreaDefaultTypeInternal;
 extern BettonAreaDefaultTypeInternal _BettonArea_default_instance_;
@@ -70,6 +67,9 @@ extern GmaeALLRecordDefaultTypeInternal _GmaeALLRecord_default_instance_;
 class GmaeConfg;
 class GmaeConfgDefaultTypeInternal;
 extern GmaeConfgDefaultTypeInternal _GmaeConfg_default_instance_;
+class MsgAgainBet;
+class MsgAgainBetDefaultTypeInternal;
+extern MsgAgainBetDefaultTypeInternal _MsgAgainBet_default_instance_;
 class MsgAgainBetResp;
 class MsgAgainBetRespDefaultTypeInternal;
 extern MsgAgainBetRespDefaultTypeInternal _MsgAgainBetResp_default_instance_;
@@ -91,6 +91,9 @@ extern RevocationBetDefaultTypeInternal _RevocationBet_default_instance_;
 class SingleAgainBet;
 class SingleAgainBetDefaultTypeInternal;
 extern SingleAgainBetDefaultTypeInternal _SingleAgainBet_default_instance_;
+class UserBetRecord;
+class UserBetRecordDefaultTypeInternal;
+extern UserBetRecordDefaultTypeInternal _UserBetRecord_default_instance_;
 class UserInfo;
 class UserInfoDefaultTypeInternal;
 extern UserInfoDefaultTypeInternal _UserInfo_default_instance_;
@@ -99,11 +102,11 @@ class WinMsgDefaultTypeInternal;
 extern WinMsgDefaultTypeInternal _WinMsg_default_instance_;
 }  // namespace Roulette
 PROTOBUF_NAMESPACE_OPEN
-template<> ::Roulette::AgainBet* Arena::CreateMaybeMessage<::Roulette::AgainBet>(Arena*);
 template<> ::Roulette::BettonArea* Arena::CreateMaybeMessage<::Roulette::BettonArea>(Arena*);
 template<> ::Roulette::GameState* Arena::CreateMaybeMessage<::Roulette::GameState>(Arena*);
 template<> ::Roulette::GmaeALLRecord* Arena::CreateMaybeMessage<::Roulette::GmaeALLRecord>(Arena*);
 template<> ::Roulette::GmaeConfg* Arena::CreateMaybeMessage<::Roulette::GmaeConfg>(Arena*);
+template<> ::Roulette::MsgAgainBet* Arena::CreateMaybeMessage<::Roulette::MsgAgainBet>(Arena*);
 template<> ::Roulette::MsgAgainBetResp* Arena::CreateMaybeMessage<::Roulette::MsgAgainBetResp>(Arena*);
 template<> ::Roulette::MsgBet* Arena::CreateMaybeMessage<::Roulette::MsgBet>(Arena*);
 template<> ::Roulette::MsgBetResp* Arena::CreateMaybeMessage<::Roulette::MsgBetResp>(Arena*);
@@ -111,6 +114,7 @@ template<> ::Roulette::MsgGmaeResult* Arena::CreateMaybeMessage<::Roulette::MsgG
 template<> ::Roulette::MsgSceneInfo* Arena::CreateMaybeMessage<::Roulette::MsgSceneInfo>(Arena*);
 template<> ::Roulette::RevocationBet* Arena::CreateMaybeMessage<::Roulette::RevocationBet>(Arena*);
 template<> ::Roulette::SingleAgainBet* Arena::CreateMaybeMessage<::Roulette::SingleAgainBet>(Arena*);
+template<> ::Roulette::UserBetRecord* Arena::CreateMaybeMessage<::Roulette::UserBetRecord>(Arena*);
 template<> ::Roulette::UserInfo* Arena::CreateMaybeMessage<::Roulette::UserInfo>(Arena*);
 template<> ::Roulette::WinMsg* Arena::CreateMaybeMessage<::Roulette::WinMsg>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
@@ -120,16 +124,18 @@ enum EMsgIDRoulette : int {
   MsgID_SC_GameRecord = 0,
   MsgID_SC_GameBottom = 1,
   MsgID_SC_BottomCancel = 2,
-  MsgID_SC_GameResult = 3,
-  MsgID_SC_GameState = 4,
-  MsgID_CS_GameBottom = 5,
-  MsgID_CS_BottomCancel = 6,
+  MsgID_SC_AgainBet = 3,
+  MsgID_SC_GameResult = 4,
+  MsgID_SC_GameState = 5,
+  MsgID_CS_GameBottom = 6,
+  MsgID_CS_BottomCancel = 7,
+  MsgID_CS_AgainBet = 8,
   EMsgIDRoulette_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDRoulette_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDRoulette_IsValid(int value);
 constexpr EMsgIDRoulette EMsgIDRoulette_MIN = MsgID_SC_GameRecord;
-constexpr EMsgIDRoulette EMsgIDRoulette_MAX = MsgID_CS_BottomCancel;
+constexpr EMsgIDRoulette EMsgIDRoulette_MAX = MsgID_CS_AgainBet;
 constexpr int EMsgIDRoulette_ARRAYSIZE = EMsgIDRoulette_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDRoulette_descriptor();
@@ -1039,6 +1045,153 @@ class GameState PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
+class UserBetRecord PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Roulette.UserBetRecord) */ {
+ public:
+  inline UserBetRecord() : UserBetRecord(nullptr) {}
+  virtual ~UserBetRecord();
+
+  UserBetRecord(const UserBetRecord& from);
+  UserBetRecord(UserBetRecord&& from) noexcept
+    : UserBetRecord() {
+    *this = ::std::move(from);
+  }
+
+  inline UserBetRecord& operator=(const UserBetRecord& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline UserBetRecord& operator=(UserBetRecord&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const UserBetRecord& default_instance();
+
+  static inline const UserBetRecord* internal_default_instance() {
+    return reinterpret_cast<const UserBetRecord*>(
+               &_UserBetRecord_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    5;
+
+  friend void swap(UserBetRecord& a, UserBetRecord& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(UserBetRecord* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(UserBetRecord* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline UserBetRecord* New() const final {
+    return CreateMaybeMessage<UserBetRecord>(nullptr);
+  }
+
+  UserBetRecord* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<UserBetRecord>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const UserBetRecord& from);
+  void MergeFrom(const UserBetRecord& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(UserBetRecord* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "Roulette.UserBetRecord";
+  }
+  protected:
+  explicit UserBetRecord(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Roulette_2eproto);
+    return ::descriptor_table_Roulette_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kBetValueFieldNumber = 2,
+    kChairIdFieldNumber = 1,
+  };
+  // int64 bet_value = 2;
+  void clear_bet_value();
+  ::PROTOBUF_NAMESPACE_ID::int64 bet_value() const;
+  void set_bet_value(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_bet_value() const;
+  void _internal_set_bet_value(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int32 chair_id = 1;
+  void clear_chair_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_id() const;
+  void set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_chair_id() const;
+  void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:Roulette.UserBetRecord)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int64 bet_value_;
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Roulette_2eproto;
+};
+// -------------------------------------------------------------------
+
 class MsgSceneInfo PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Roulette.MsgSceneInfo) */ {
  public:
@@ -1080,7 +1233,7 @@ class MsgSceneInfo PROTOBUF_FINAL :
                &_MsgSceneInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    5;
+    6;
 
   friend void swap(MsgSceneInfo& a, MsgSceneInfo& b) {
     a.Swap(&b);
@@ -1198,27 +1351,23 @@ class MsgSceneInfo PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::GmaeALLRecord >&
       all_record() const;
 
-  // repeated int32 game_bet = 5;
+  // repeated .Roulette.UserBetRecord game_bet = 5;
   int game_bet_size() const;
   private:
   int _internal_game_bet_size() const;
   public:
   void clear_game_bet();
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_game_bet(int index) const;
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      _internal_game_bet() const;
-  void _internal_add_game_bet(::PROTOBUF_NAMESPACE_ID::int32 value);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      _internal_mutable_game_bet();
-  public:
-  ::PROTOBUF_NAMESPACE_ID::int32 game_bet(int index) const;
-  void set_game_bet(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
-  void add_game_bet(::PROTOBUF_NAMESPACE_ID::int32 value);
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      game_bet() const;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+  ::Roulette::UserBetRecord* mutable_game_bet(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::UserBetRecord >*
       mutable_game_bet();
+  private:
+  const ::Roulette::UserBetRecord& _internal_game_bet(int index) const;
+  ::Roulette::UserBetRecord* _internal_add_game_bet();
+  public:
+  const ::Roulette::UserBetRecord& game_bet(int index) const;
+  ::Roulette::UserBetRecord* add_game_bet();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::UserBetRecord >&
+      game_bet() const;
 
   // repeated .Roulette.UserInfo user_top = 6;
   int user_top_size() const;
@@ -1284,8 +1433,7 @@ class MsgSceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > game_record_;
   mutable std::atomic<int> _game_record_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::GmaeALLRecord > all_record_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > game_bet_;
-  mutable std::atomic<int> _game_bet_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::UserBetRecord > game_bet_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::UserInfo > user_top_;
   ::Roulette::GmaeConfg* game_fog_;
   ::Roulette::GameState* game_state_;
@@ -1335,7 +1483,7 @@ class MsgBet PROTOBUF_FINAL :
                &_MsgBet_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    6;
+    7;
 
   friend void swap(MsgBet& a, MsgBet& b) {
     a.Swap(&b);
@@ -1482,7 +1630,7 @@ class MsgBetResp PROTOBUF_FINAL :
                &_MsgBetResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    7;
+    8;
 
   friend void swap(MsgBetResp& a, MsgBetResp& b) {
     a.Swap(&b);
@@ -1638,7 +1786,7 @@ class SingleAgainBet PROTOBUF_FINAL :
                &_SingleAgainBet_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    9;
 
   friend void swap(SingleAgainBet& a, SingleAgainBet& b) {
     a.Swap(&b);
@@ -1755,23 +1903,23 @@ class SingleAgainBet PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
-class AgainBet PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Roulette.AgainBet) */ {
+class MsgAgainBet PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Roulette.MsgAgainBet) */ {
  public:
-  inline AgainBet() : AgainBet(nullptr) {}
-  virtual ~AgainBet();
+  inline MsgAgainBet() : MsgAgainBet(nullptr) {}
+  virtual ~MsgAgainBet();
 
-  AgainBet(const AgainBet& from);
-  AgainBet(AgainBet&& from) noexcept
-    : AgainBet() {
+  MsgAgainBet(const MsgAgainBet& from);
+  MsgAgainBet(MsgAgainBet&& from) noexcept
+    : MsgAgainBet() {
     *this = ::std::move(from);
   }
 
-  inline AgainBet& operator=(const AgainBet& from) {
+  inline MsgAgainBet& operator=(const MsgAgainBet& from) {
     CopyFrom(from);
     return *this;
   }
-  inline AgainBet& operator=(AgainBet&& from) noexcept {
+  inline MsgAgainBet& operator=(MsgAgainBet&& from) noexcept {
     if (GetArena() == from.GetArena()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -1789,19 +1937,19 @@ class AgainBet PROTOBUF_FINAL :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return GetMetadataStatic().reflection;
   }
-  static const AgainBet& default_instance();
+  static const MsgAgainBet& default_instance();
 
-  static inline const AgainBet* internal_default_instance() {
-    return reinterpret_cast<const AgainBet*>(
-               &_AgainBet_default_instance_);
+  static inline const MsgAgainBet* internal_default_instance() {
+    return reinterpret_cast<const MsgAgainBet*>(
+               &_MsgAgainBet_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    10;
 
-  friend void swap(AgainBet& a, AgainBet& b) {
+  friend void swap(MsgAgainBet& a, MsgAgainBet& b) {
     a.Swap(&b);
   }
-  inline void Swap(AgainBet* other) {
+  inline void Swap(MsgAgainBet* other) {
     if (other == this) return;
     if (GetArena() == other->GetArena()) {
       InternalSwap(other);
@@ -1809,7 +1957,7 @@ class AgainBet PROTOBUF_FINAL :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(AgainBet* other) {
+  void UnsafeArenaSwap(MsgAgainBet* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetArena() == other->GetArena());
     InternalSwap(other);
@@ -1817,17 +1965,17 @@ class AgainBet PROTOBUF_FINAL :
 
   // implements Message ----------------------------------------------
 
-  inline AgainBet* New() const final {
-    return CreateMaybeMessage<AgainBet>(nullptr);
+  inline MsgAgainBet* New() const final {
+    return CreateMaybeMessage<MsgAgainBet>(nullptr);
   }
 
-  AgainBet* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<AgainBet>(arena);
+  MsgAgainBet* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgAgainBet>(arena);
   }
   void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
   void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const AgainBet& from);
-  void MergeFrom(const AgainBet& from);
+  void CopyFrom(const MsgAgainBet& from);
+  void MergeFrom(const MsgAgainBet& from);
   PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
   bool IsInitialized() const final;
 
@@ -1841,13 +1989,13 @@ class AgainBet PROTOBUF_FINAL :
   inline void SharedCtor();
   inline void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(AgainBet* other);
+  void InternalSwap(MsgAgainBet* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "Roulette.AgainBet";
+    return "Roulette.MsgAgainBet";
   }
   protected:
-  explicit AgainBet(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  explicit MsgAgainBet(::PROTOBUF_NAMESPACE_ID::Arena* arena);
   private:
   static void ArenaDtor(void* object);
   inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -1887,7 +2035,7 @@ class AgainBet PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::SingleAgainBet >&
       again_bet_info() const;
 
-  // @@protoc_insertion_point(class_scope:Roulette.AgainBet)
+  // @@protoc_insertion_point(class_scope:Roulette.MsgAgainBet)
  private:
   class _Internal;
 
@@ -1941,7 +2089,7 @@ class MsgAgainBetResp PROTOBUF_FINAL :
                &_MsgAgainBetResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    11;
 
   friend void swap(MsgAgainBetResp& a, MsgAgainBetResp& b) {
     a.Swap(&b);
@@ -2015,23 +2163,23 @@ class MsgAgainBetResp PROTOBUF_FINAL :
     kAgainBetInfoFieldNumber = 2,
     kChairIdFieldNumber = 1,
   };
-  // .Roulette.AgainBet again_bet_info = 2;
+  // .Roulette.MsgAgainBet again_bet_info = 2;
   bool has_again_bet_info() const;
   private:
   bool _internal_has_again_bet_info() const;
   public:
   void clear_again_bet_info();
-  const ::Roulette::AgainBet& again_bet_info() const;
-  ::Roulette::AgainBet* release_again_bet_info();
-  ::Roulette::AgainBet* mutable_again_bet_info();
-  void set_allocated_again_bet_info(::Roulette::AgainBet* again_bet_info);
+  const ::Roulette::MsgAgainBet& again_bet_info() const;
+  ::Roulette::MsgAgainBet* release_again_bet_info();
+  ::Roulette::MsgAgainBet* mutable_again_bet_info();
+  void set_allocated_again_bet_info(::Roulette::MsgAgainBet* again_bet_info);
   private:
-  const ::Roulette::AgainBet& _internal_again_bet_info() const;
-  ::Roulette::AgainBet* _internal_mutable_again_bet_info();
+  const ::Roulette::MsgAgainBet& _internal_again_bet_info() const;
+  ::Roulette::MsgAgainBet* _internal_mutable_again_bet_info();
   public:
   void unsafe_arena_set_allocated_again_bet_info(
-      ::Roulette::AgainBet* again_bet_info);
-  ::Roulette::AgainBet* unsafe_arena_release_again_bet_info();
+      ::Roulette::MsgAgainBet* again_bet_info);
+  ::Roulette::MsgAgainBet* unsafe_arena_release_again_bet_info();
 
   // int32 chair_id = 1;
   void clear_chair_id();
@@ -2049,7 +2197,7 @@ class MsgAgainBetResp PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::Roulette::AgainBet* again_bet_info_;
+  ::Roulette::MsgAgainBet* again_bet_info_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Roulette_2eproto;
@@ -2097,7 +2245,7 @@ class RevocationBet PROTOBUF_FINAL :
                &_RevocationBet_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    12;
 
   friend void swap(RevocationBet& a, RevocationBet& b) {
     a.Swap(&b);
@@ -2244,7 +2392,7 @@ class WinMsg PROTOBUF_FINAL :
                &_WinMsg_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    12;
+    13;
 
   friend void swap(WinMsg& a, WinMsg& b) {
     a.Swap(&b);
@@ -2391,7 +2539,7 @@ class MsgGmaeResult PROTOBUF_FINAL :
                &_MsgGmaeResult_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    13;
+    14;
 
   friend void swap(MsgGmaeResult& a, MsgGmaeResult& b) {
     a.Swap(&b);
@@ -3027,6 +3175,50 @@ inline void GameState::set_times(::PROTOBUF_NAMESPACE_ID::int32 value) {
 
 // -------------------------------------------------------------------
 
+// UserBetRecord
+
+// int32 chair_id = 1;
+inline void UserBetRecord::clear_chair_id() {
+  chair_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 UserBetRecord::_internal_chair_id() const {
+  return chair_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 UserBetRecord::chair_id() const {
+  // @@protoc_insertion_point(field_get:Roulette.UserBetRecord.chair_id)
+  return _internal_chair_id();
+}
+inline void UserBetRecord::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  chair_id_ = value;
+}
+inline void UserBetRecord::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_chair_id(value);
+  // @@protoc_insertion_point(field_set:Roulette.UserBetRecord.chair_id)
+}
+
+// int64 bet_value = 2;
+inline void UserBetRecord::clear_bet_value() {
+  bet_value_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 UserBetRecord::_internal_bet_value() const {
+  return bet_value_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 UserBetRecord::bet_value() const {
+  // @@protoc_insertion_point(field_get:Roulette.UserBetRecord.bet_value)
+  return _internal_bet_value();
+}
+inline void UserBetRecord::_internal_set_bet_value(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  bet_value_ = value;
+}
+inline void UserBetRecord::set_bet_value(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_bet_value(value);
+  // @@protoc_insertion_point(field_set:Roulette.UserBetRecord.bet_value)
+}
+
+// -------------------------------------------------------------------
+
 // MsgSceneInfo
 
 // .Roulette.GmaeConfg game_fog = 1;
@@ -3281,7 +3473,7 @@ inline void MsgSceneInfo::set_allocated_game_state(::Roulette::GameState* game_s
   // @@protoc_insertion_point(field_set_allocated:Roulette.MsgSceneInfo.game_state)
 }
 
-// repeated int32 game_bet = 5;
+// repeated .Roulette.UserBetRecord game_bet = 5;
 inline int MsgSceneInfo::_internal_game_bet_size() const {
   return game_bet_.size();
 }
@@ -3291,41 +3483,33 @@ inline int MsgSceneInfo::game_bet_size() const {
 inline void MsgSceneInfo::clear_game_bet() {
   game_bet_.Clear();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::_internal_game_bet(int index) const {
+inline ::Roulette::UserBetRecord* MsgSceneInfo::mutable_game_bet(int index) {
+  // @@protoc_insertion_point(field_mutable:Roulette.MsgSceneInfo.game_bet)
+  return game_bet_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::UserBetRecord >*
+MsgSceneInfo::mutable_game_bet() {
+  // @@protoc_insertion_point(field_mutable_list:Roulette.MsgSceneInfo.game_bet)
+  return &game_bet_;
+}
+inline const ::Roulette::UserBetRecord& MsgSceneInfo::_internal_game_bet(int index) const {
   return game_bet_.Get(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::game_bet(int index) const {
+inline const ::Roulette::UserBetRecord& MsgSceneInfo::game_bet(int index) const {
   // @@protoc_insertion_point(field_get:Roulette.MsgSceneInfo.game_bet)
   return _internal_game_bet(index);
 }
-inline void MsgSceneInfo::set_game_bet(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
-  game_bet_.Set(index, value);
-  // @@protoc_insertion_point(field_set:Roulette.MsgSceneInfo.game_bet)
+inline ::Roulette::UserBetRecord* MsgSceneInfo::_internal_add_game_bet() {
+  return game_bet_.Add();
 }
-inline void MsgSceneInfo::_internal_add_game_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  game_bet_.Add(value);
-}
-inline void MsgSceneInfo::add_game_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_add_game_bet(value);
+inline ::Roulette::UserBetRecord* MsgSceneInfo::add_game_bet() {
   // @@protoc_insertion_point(field_add:Roulette.MsgSceneInfo.game_bet)
+  return _internal_add_game_bet();
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-MsgSceneInfo::_internal_game_bet() const {
-  return game_bet_;
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::UserBetRecord >&
 MsgSceneInfo::game_bet() const {
   // @@protoc_insertion_point(field_list:Roulette.MsgSceneInfo.game_bet)
-  return _internal_game_bet();
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-MsgSceneInfo::_internal_mutable_game_bet() {
-  return &game_bet_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-MsgSceneInfo::mutable_game_bet() {
-  // @@protoc_insertion_point(field_mutable_list:Roulette.MsgSceneInfo.game_bet)
-  return _internal_mutable_game_bet();
+  return game_bet_;
 }
 
 // repeated .Roulette.UserInfo user_top = 6;
@@ -3584,44 +3768,44 @@ inline void SingleAgainBet::set_count(::PROTOBUF_NAMESPACE_ID::int32 value) {
 
 // -------------------------------------------------------------------
 
-// AgainBet
+// MsgAgainBet
 
 // repeated .Roulette.SingleAgainBet again_bet_info = 1;
-inline int AgainBet::_internal_again_bet_info_size() const {
+inline int MsgAgainBet::_internal_again_bet_info_size() const {
   return again_bet_info_.size();
 }
-inline int AgainBet::again_bet_info_size() const {
+inline int MsgAgainBet::again_bet_info_size() const {
   return _internal_again_bet_info_size();
 }
-inline void AgainBet::clear_again_bet_info() {
+inline void MsgAgainBet::clear_again_bet_info() {
   again_bet_info_.Clear();
 }
-inline ::Roulette::SingleAgainBet* AgainBet::mutable_again_bet_info(int index) {
-  // @@protoc_insertion_point(field_mutable:Roulette.AgainBet.again_bet_info)
+inline ::Roulette::SingleAgainBet* MsgAgainBet::mutable_again_bet_info(int index) {
+  // @@protoc_insertion_point(field_mutable:Roulette.MsgAgainBet.again_bet_info)
   return again_bet_info_.Mutable(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::SingleAgainBet >*
-AgainBet::mutable_again_bet_info() {
-  // @@protoc_insertion_point(field_mutable_list:Roulette.AgainBet.again_bet_info)
+MsgAgainBet::mutable_again_bet_info() {
+  // @@protoc_insertion_point(field_mutable_list:Roulette.MsgAgainBet.again_bet_info)
   return &again_bet_info_;
 }
-inline const ::Roulette::SingleAgainBet& AgainBet::_internal_again_bet_info(int index) const {
+inline const ::Roulette::SingleAgainBet& MsgAgainBet::_internal_again_bet_info(int index) const {
   return again_bet_info_.Get(index);
 }
-inline const ::Roulette::SingleAgainBet& AgainBet::again_bet_info(int index) const {
-  // @@protoc_insertion_point(field_get:Roulette.AgainBet.again_bet_info)
+inline const ::Roulette::SingleAgainBet& MsgAgainBet::again_bet_info(int index) const {
+  // @@protoc_insertion_point(field_get:Roulette.MsgAgainBet.again_bet_info)
   return _internal_again_bet_info(index);
 }
-inline ::Roulette::SingleAgainBet* AgainBet::_internal_add_again_bet_info() {
+inline ::Roulette::SingleAgainBet* MsgAgainBet::_internal_add_again_bet_info() {
   return again_bet_info_.Add();
 }
-inline ::Roulette::SingleAgainBet* AgainBet::add_again_bet_info() {
-  // @@protoc_insertion_point(field_add:Roulette.AgainBet.again_bet_info)
+inline ::Roulette::SingleAgainBet* MsgAgainBet::add_again_bet_info() {
+  // @@protoc_insertion_point(field_add:Roulette.MsgAgainBet.again_bet_info)
   return _internal_add_again_bet_info();
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::SingleAgainBet >&
-AgainBet::again_bet_info() const {
-  // @@protoc_insertion_point(field_list:Roulette.AgainBet.again_bet_info)
+MsgAgainBet::again_bet_info() const {
+  // @@protoc_insertion_point(field_list:Roulette.MsgAgainBet.again_bet_info)
   return again_bet_info_;
 }
 
@@ -3649,7 +3833,7 @@ inline void MsgAgainBetResp::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) 
   // @@protoc_insertion_point(field_set:Roulette.MsgAgainBetResp.chair_id)
 }
 
-// .Roulette.AgainBet again_bet_info = 2;
+// .Roulette.MsgAgainBet again_bet_info = 2;
 inline bool MsgAgainBetResp::_internal_has_again_bet_info() const {
   return this != internal_default_instance() && again_bet_info_ != nullptr;
 }
@@ -3662,17 +3846,17 @@ inline void MsgAgainBetResp::clear_again_bet_info() {
   }
   again_bet_info_ = nullptr;
 }
-inline const ::Roulette::AgainBet& MsgAgainBetResp::_internal_again_bet_info() const {
-  const ::Roulette::AgainBet* p = again_bet_info_;
-  return p != nullptr ? *p : reinterpret_cast<const ::Roulette::AgainBet&>(
-      ::Roulette::_AgainBet_default_instance_);
+inline const ::Roulette::MsgAgainBet& MsgAgainBetResp::_internal_again_bet_info() const {
+  const ::Roulette::MsgAgainBet* p = again_bet_info_;
+  return p != nullptr ? *p : reinterpret_cast<const ::Roulette::MsgAgainBet&>(
+      ::Roulette::_MsgAgainBet_default_instance_);
 }
-inline const ::Roulette::AgainBet& MsgAgainBetResp::again_bet_info() const {
+inline const ::Roulette::MsgAgainBet& MsgAgainBetResp::again_bet_info() const {
   // @@protoc_insertion_point(field_get:Roulette.MsgAgainBetResp.again_bet_info)
   return _internal_again_bet_info();
 }
 inline void MsgAgainBetResp::unsafe_arena_set_allocated_again_bet_info(
-    ::Roulette::AgainBet* again_bet_info) {
+    ::Roulette::MsgAgainBet* again_bet_info) {
   if (GetArena() == nullptr) {
     delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(again_bet_info_);
   }
@@ -3684,35 +3868,35 @@ inline void MsgAgainBetResp::unsafe_arena_set_allocated_again_bet_info(
   }
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:Roulette.MsgAgainBetResp.again_bet_info)
 }
-inline ::Roulette::AgainBet* MsgAgainBetResp::release_again_bet_info() {
+inline ::Roulette::MsgAgainBet* MsgAgainBetResp::release_again_bet_info() {
   
-  ::Roulette::AgainBet* temp = again_bet_info_;
+  ::Roulette::MsgAgainBet* temp = again_bet_info_;
   again_bet_info_ = nullptr;
   if (GetArena() != nullptr) {
     temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
   }
   return temp;
 }
-inline ::Roulette::AgainBet* MsgAgainBetResp::unsafe_arena_release_again_bet_info() {
+inline ::Roulette::MsgAgainBet* MsgAgainBetResp::unsafe_arena_release_again_bet_info() {
   // @@protoc_insertion_point(field_release:Roulette.MsgAgainBetResp.again_bet_info)
   
-  ::Roulette::AgainBet* temp = again_bet_info_;
+  ::Roulette::MsgAgainBet* temp = again_bet_info_;
   again_bet_info_ = nullptr;
   return temp;
 }
-inline ::Roulette::AgainBet* MsgAgainBetResp::_internal_mutable_again_bet_info() {
+inline ::Roulette::MsgAgainBet* MsgAgainBetResp::_internal_mutable_again_bet_info() {
   
   if (again_bet_info_ == nullptr) {
-    auto* p = CreateMaybeMessage<::Roulette::AgainBet>(GetArena());
+    auto* p = CreateMaybeMessage<::Roulette::MsgAgainBet>(GetArena());
     again_bet_info_ = p;
   }
   return again_bet_info_;
 }
-inline ::Roulette::AgainBet* MsgAgainBetResp::mutable_again_bet_info() {
+inline ::Roulette::MsgAgainBet* MsgAgainBetResp::mutable_again_bet_info() {
   // @@protoc_insertion_point(field_mutable:Roulette.MsgAgainBetResp.again_bet_info)
   return _internal_mutable_again_bet_info();
 }
-inline void MsgAgainBetResp::set_allocated_again_bet_info(::Roulette::AgainBet* again_bet_info) {
+inline void MsgAgainBetResp::set_allocated_again_bet_info(::Roulette::MsgAgainBet* again_bet_info) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   if (message_arena == nullptr) {
     delete again_bet_info_;
@@ -3886,6 +4070,8 @@ MsgGmaeResult::win_msg() const {
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
