@@ -50,6 +50,8 @@ enum EMsgIDServerInternalProto
 	CENTER2LOGIN_ReceiveSynchronousLoginResp	= 28;	//领取转账同步金币返回
 	CENTER2LOGIN_RefreshGoldResp				= 29;	//刷新GM添加金币返回
 	CENTER2LOGIN_NotifyServerOfflinrResp		= 30;	//通知服务器即将维护
+	LOGIN2CENTER_NotifyUpdateVipExp				= 31;	//通知更新Vip经验
+	CENTER2LOGIN_NotifyUpdateVipExpResp			= 32;	//通知更新Vip经验返回
 	
 	//1001-2000 game <-> center
 	GAME2CENTER_Register			= 2001;	//游戏服务器注册
@@ -136,8 +138,8 @@ enum EMsgIDDB
 	DB2LOGIN_GetPlayerGoldResp			= 1026;	//获取玩家金币返回
 	LOGIN2DB_GetVIPConfig				= 1027;	//获取VIP配置
 	DB2LOGIN_GetVIPConfigResp			= 1028;	//获取VIP配置返回
-	LOGIN2DB_GetHitCoding				= 1029;	//获取玩家打码量
-	DB2LOGIN_GetHitCodingResp			= 1030;	//获取玩家打码量返回
+	LOGIN2DB_GetPlayerVipExp			= 1029;	//获取玩家vip经验
+	DB2LOGIN_GetPlayerVipExpResp		= 1030;	//获取玩家vip经验返回
 	LOGIN2DB_VIPUpgrade					= 1031;	//vip升级
 	DB2LOGIN_VIPUpgradeResp				= 1032;	//vip升级返回
 	LOGIN2DB_ModifyAvatar				= 1033;	//修改头像

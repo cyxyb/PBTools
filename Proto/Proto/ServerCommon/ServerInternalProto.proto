@@ -498,3 +498,12 @@ message MsgDBPersonalDetailsRespAdd
 	int32 	type 	= 2;					//信息类型 1:WhatsApp、2:telegram、3:facebook
 	string	msg		= 3;					//账号信息限长64字节
 }
+
+//玩家VIP信息
+message MsgDBUpgradeVIP
+{
+	int32		res_code					= 1;	//返回码(0:成功 非0:失败)
+	int64		gold						= 2;	//玩家当前金币
+	int32		bind_id						= 3;	//绑定id
+	int32		add_vip_exp					= 4;	//增加经验
+}

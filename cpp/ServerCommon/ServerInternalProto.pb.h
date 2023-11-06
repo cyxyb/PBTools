@@ -46,7 +46,7 @@ struct TableStruct_ServerInternalProto_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[56]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[57]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -167,6 +167,9 @@ extern MsgDBUpdateOnlineNumDefaultTypeInternal _MsgDBUpdateOnlineNum_default_ins
 class MsgDBUpdatePlayerInfo;
 class MsgDBUpdatePlayerInfoDefaultTypeInternal;
 extern MsgDBUpdatePlayerInfoDefaultTypeInternal _MsgDBUpdatePlayerInfo_default_instance_;
+class MsgDBUpgradeVIP;
+class MsgDBUpgradeVIPDefaultTypeInternal;
+extern MsgDBUpgradeVIPDefaultTypeInternal _MsgDBUpgradeVIP_default_instance_;
 class MsgDBWriteScore;
 class MsgDBWriteScoreDefaultTypeInternal;
 extern MsgDBWriteScoreDefaultTypeInternal _MsgDBWriteScore_default_instance_;
@@ -260,6 +263,7 @@ template<> ::MsgDBTransferTakeOut* Arena::CreateMaybeMessage<::MsgDBTransferTake
 template<> ::MsgDBUpdateJackpot* Arena::CreateMaybeMessage<::MsgDBUpdateJackpot>(Arena*);
 template<> ::MsgDBUpdateOnlineNum* Arena::CreateMaybeMessage<::MsgDBUpdateOnlineNum>(Arena*);
 template<> ::MsgDBUpdatePlayerInfo* Arena::CreateMaybeMessage<::MsgDBUpdatePlayerInfo>(Arena*);
+template<> ::MsgDBUpgradeVIP* Arena::CreateMaybeMessage<::MsgDBUpgradeVIP>(Arena*);
 template<> ::MsgDBWriteScore* Arena::CreateMaybeMessage<::MsgDBWriteScore>(Arena*);
 template<> ::MsgDBWriteScoreResp* Arena::CreateMaybeMessage<::MsgDBWriteScoreResp>(Arena*);
 template<> ::MsgGameServerUnRegister* Arena::CreateMaybeMessage<::MsgGameServerUnRegister>(Arena*);
@@ -10138,6 +10142,175 @@ class MsgDBPersonalDetailsRespAdd PROTOBUF_FINAL :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
+// -------------------------------------------------------------------
+
+class MsgDBUpgradeVIP PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgDBUpgradeVIP) */ {
+ public:
+  inline MsgDBUpgradeVIP() : MsgDBUpgradeVIP(nullptr) {}
+  virtual ~MsgDBUpgradeVIP();
+
+  MsgDBUpgradeVIP(const MsgDBUpgradeVIP& from);
+  MsgDBUpgradeVIP(MsgDBUpgradeVIP&& from) noexcept
+    : MsgDBUpgradeVIP() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgDBUpgradeVIP& operator=(const MsgDBUpgradeVIP& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgDBUpgradeVIP& operator=(MsgDBUpgradeVIP&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgDBUpgradeVIP& default_instance();
+
+  static inline const MsgDBUpgradeVIP* internal_default_instance() {
+    return reinterpret_cast<const MsgDBUpgradeVIP*>(
+               &_MsgDBUpgradeVIP_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    56;
+
+  friend void swap(MsgDBUpgradeVIP& a, MsgDBUpgradeVIP& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgDBUpgradeVIP* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgDBUpgradeVIP* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgDBUpgradeVIP* New() const final {
+    return CreateMaybeMessage<MsgDBUpgradeVIP>(nullptr);
+  }
+
+  MsgDBUpgradeVIP* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgDBUpgradeVIP>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgDBUpgradeVIP& from);
+  void MergeFrom(const MsgDBUpgradeVIP& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgDBUpgradeVIP* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgDBUpgradeVIP";
+  }
+  protected:
+  explicit MsgDBUpgradeVIP(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kGoldFieldNumber = 2,
+    kResCodeFieldNumber = 1,
+    kBindIdFieldNumber = 3,
+    kAddVipExpFieldNumber = 4,
+  };
+  // int64 gold = 2;
+  void clear_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 gold() const;
+  void set_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_gold() const;
+  void _internal_set_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int32 res_code = 1;
+  void clear_res_code();
+  ::PROTOBUF_NAMESPACE_ID::int32 res_code() const;
+  void set_res_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_res_code() const;
+  void _internal_set_res_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 bind_id = 3;
+  void clear_bind_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 bind_id() const;
+  void set_bind_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_bind_id() const;
+  void _internal_set_bind_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 add_vip_exp = 4;
+  void clear_add_vip_exp();
+  ::PROTOBUF_NAMESPACE_ID::int32 add_vip_exp() const;
+  void set_add_vip_exp(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_add_vip_exp() const;
+  void _internal_set_add_vip_exp(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgDBUpgradeVIP)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int64 gold_;
+  ::PROTOBUF_NAMESPACE_ID::int32 res_code_;
+  ::PROTOBUF_NAMESPACE_ID::int32 bind_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 add_vip_exp_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
 // ===================================================================
 
 
@@ -16780,9 +16953,95 @@ inline void MsgDBPersonalDetailsRespAdd::set_allocated_msg(std::string* msg) {
   // @@protoc_insertion_point(field_set_allocated:MsgDBPersonalDetailsRespAdd.msg)
 }
 
+// -------------------------------------------------------------------
+
+// MsgDBUpgradeVIP
+
+// int32 res_code = 1;
+inline void MsgDBUpgradeVIP::clear_res_code() {
+  res_code_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBUpgradeVIP::_internal_res_code() const {
+  return res_code_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBUpgradeVIP::res_code() const {
+  // @@protoc_insertion_point(field_get:MsgDBUpgradeVIP.res_code)
+  return _internal_res_code();
+}
+inline void MsgDBUpgradeVIP::_internal_set_res_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  res_code_ = value;
+}
+inline void MsgDBUpgradeVIP::set_res_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_res_code(value);
+  // @@protoc_insertion_point(field_set:MsgDBUpgradeVIP.res_code)
+}
+
+// int64 gold = 2;
+inline void MsgDBUpgradeVIP::clear_gold() {
+  gold_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBUpgradeVIP::_internal_gold() const {
+  return gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBUpgradeVIP::gold() const {
+  // @@protoc_insertion_point(field_get:MsgDBUpgradeVIP.gold)
+  return _internal_gold();
+}
+inline void MsgDBUpgradeVIP::_internal_set_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  gold_ = value;
+}
+inline void MsgDBUpgradeVIP::set_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_gold(value);
+  // @@protoc_insertion_point(field_set:MsgDBUpgradeVIP.gold)
+}
+
+// int32 bind_id = 3;
+inline void MsgDBUpgradeVIP::clear_bind_id() {
+  bind_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBUpgradeVIP::_internal_bind_id() const {
+  return bind_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBUpgradeVIP::bind_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBUpgradeVIP.bind_id)
+  return _internal_bind_id();
+}
+inline void MsgDBUpgradeVIP::_internal_set_bind_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  bind_id_ = value;
+}
+inline void MsgDBUpgradeVIP::set_bind_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_bind_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBUpgradeVIP.bind_id)
+}
+
+// int32 add_vip_exp = 4;
+inline void MsgDBUpgradeVIP::clear_add_vip_exp() {
+  add_vip_exp_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBUpgradeVIP::_internal_add_vip_exp() const {
+  return add_vip_exp_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBUpgradeVIP::add_vip_exp() const {
+  // @@protoc_insertion_point(field_get:MsgDBUpgradeVIP.add_vip_exp)
+  return _internal_add_vip_exp();
+}
+inline void MsgDBUpgradeVIP::_internal_set_add_vip_exp(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  add_vip_exp_ = value;
+}
+inline void MsgDBUpgradeVIP::set_add_vip_exp(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_add_vip_exp(value);
+  // @@protoc_insertion_point(field_set:MsgDBUpgradeVIP.add_vip_exp)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

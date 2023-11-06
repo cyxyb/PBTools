@@ -141,8 +141,8 @@ enum EMsgIDLogin : int {
   MsgIDLogin_GetPlayerGoldResp = 54,
   MsgIDVIP_GetVIPConfig = 55,
   MsgIDVIP_GetVIPConfigResp = 56,
-  MsgIDVIP_GetPlayerExp = 57,
-  MsgIDVIP_GetPlayerExpResp = 58,
+  MsgIDVIP_GetPlayerVipExp = 57,
+  MsgIDVIP_GetPlayerVipExpResp = 58,
   MsgIDVIP_VIPUpgrade = 59,
   MsgIDVIP_VIPUpgradeResp = 60,
   MsgIDAvatar_GetAvatarInfo = 61,
@@ -201,13 +201,14 @@ enum EMsgIDLogin : int {
   MsgIDLogin_PersonalDetails = 114,
   MsgIDLogin_PersonalDetailsResp = 115,
   MsgIDLogin_NotifyServerOfflineResp = 116,
-  MsgIDShare_NotifyInviteUserInfoChange = 117,
+  MsgIDShare_NotifyUpdateVipExpResp = 117,
+  MsgIDShare_NotifyAddNewSubResp = 118,
   EMsgIDLogin_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDLogin_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDLogin_IsValid(int value);
 constexpr EMsgIDLogin EMsgIDLogin_MIN = MsgIDLogin_Null;
-constexpr EMsgIDLogin EMsgIDLogin_MAX = MsgIDShare_NotifyInviteUserInfoChange;
+constexpr EMsgIDLogin EMsgIDLogin_MAX = MsgIDShare_NotifyAddNewSubResp;
 constexpr int EMsgIDLogin_ARRAYSIZE = EMsgIDLogin_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDLogin_descriptor();

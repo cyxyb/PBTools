@@ -68,8 +68,8 @@ enum EMsgIDLogin
 	MsgIDLogin_GetPlayerGoldResp				= 54;		//获取玩家金币(MsgCommonN64)
 	MsgIDVIP_GetVIPConfig						= 55;		//获取VIP配置(MsgCommonBool)
 	MsgIDVIP_GetVIPConfigResp					= 56;		//获取VIP配置返回(MsgVIPConfig)
-	MsgIDVIP_GetPlayerExp						= 57;		//获取玩家VIP经验(MsgCommonBool)
-	MsgIDVIP_GetPlayerExpResp					= 58;		//获取玩家VIP经验返回(MsgCommonN32)
+	MsgIDVIP_GetPlayerVipExp					= 57;		//获取玩家VIP经验(MsgCommonBool)
+	MsgIDVIP_GetPlayerVipExpResp				= 58;		//获取玩家VIP经验返回(MsgCommonN32)
 	MsgIDVIP_VIPUpgrade							= 59;		//升级VIP(MsgCommonBool)
 	MsgIDVIP_VIPUpgradeResp						= 60;		//升级VIP返回(MsgUpgradeVIP)
 	MsgIDAvatar_GetAvatarInfo					= 61;		//获取头像和头像框信息(MsgCommonBool)
@@ -128,7 +128,8 @@ enum EMsgIDLogin
 	MsgIDLogin_PersonalDetails					= 114;		//新增个人信息(MsgPersonalDetailsRespAdd)
 	MsgIDLogin_PersonalDetailsResp				= 115;		//新增个人信息(MsgCommonBool)
 	MsgIDLogin_NotifyServerOfflineResp			= 116;		//通知服务器(MsgCommonBool)
-	MsgIDShare_NotifyInviteUserInfoChange		= 117;		//通知邀请玩家信息改变(MsgCommonBool)
+	MsgIDShare_NotifyUpdateVipExpResp			= 117;		//通知更新Vip经验(MsgCommonBool)
+	MsgIDShare_NotifyAddNewSubResp				= 118;		//通知增加新的下级(MsgCommonBool)
 }
 
 enum EMsgIDGame
