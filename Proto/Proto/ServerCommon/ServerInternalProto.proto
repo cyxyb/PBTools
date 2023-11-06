@@ -138,6 +138,14 @@ message MsgUpdateLImitChat
 	int32 chat_limit_state 		= 2;		//聊天状态
 }
 
+//后台命令
+message MsgWebCmd
+{
+	int32 cmd_id 				= 1;		//后台命令号	
+	int32 param1		 		= 2;		//参数1
+	int32 param2		 		= 3;		//参数2
+	int32 param3		 		= 4;		//参数3
+}
 
 /////////////////////////服务器与数据库///////////////////////////
 message MsgDBCommonKV
@@ -197,6 +205,8 @@ message MsgLoginPlayerInfo
 	string      whatsup_msg		= 21;	//个性whats
 	string      telegram_msg	= 22;	//个性telegram
 	string      facebook_msg	= 23;	//个性facebook
+	int32		new_inviter		= 24;	//新邀请玩家
+	int32		bind_id			= 25;	//绑定id
 }
 
 //游戏服务器玩家信息

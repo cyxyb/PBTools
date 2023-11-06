@@ -52,6 +52,9 @@ enum EMsgIDServerInternalProto
 	CENTER2LOGIN_NotifyServerOfflinrResp		= 30;	//通知服务器即将维护
 	LOGIN2CENTER_NotifyUpdateVipExp				= 31;	//通知更新Vip经验
 	CENTER2LOGIN_NotifyUpdateVipExpResp			= 32;	//通知更新Vip经验返回
+	LOGIN2CENTER_NotifyNewInviter				= 33;	//通知有新的邀请玩家绑定
+	CENTER2LOGIN_NotifyNewInviterResp			= 34;	//通知有新的邀请玩家绑定返回
+	CENTER2LOGIN_NotifyWebAddVipExp				= 35;	//通知后台更新Vip经验
 	
 	//1001-2000 game <-> center
 	GAME2CENTER_Register			= 2001;	//游戏服务器注册
@@ -80,6 +83,7 @@ enum EMsgIDServerInternalProto
 	RelayServer2CENTER_LimitChat		= 5006;	//限制用户聊天
 	RelayServer2CENTER_RefreshGold		= 5007;	//刷新GM添加金币
 	RelayServer2CENTER_NotifyServerOffline = 5008;	//通知服务器即将维护
+	RelayServer2CENTER_WebCmd 			= 5009;	//后台命令
 	
 	//6001-7000 ChatServer <-> center
 	Chat2Center_Register				= 6001;	//聊天服注册
