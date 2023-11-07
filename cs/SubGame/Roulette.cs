@@ -36,7 +36,7 @@ namespace Roulette {
             "DQoFdGltZXMYBiADKAUiLgoJR2FtZVN0YXRlEhIKCmdhbWVfc3RhdGUYASAB",
             "KAUSDQoFdGltZXMYAiABKAUiNAoNVXNlckJldFJlY29yZBIQCghiZXRfYXJl",
             "YRgBIAEoBRIRCgliZXRfdmFsdWUYAiABKAMi8gEKDE1zZ1NjZW5lSW5mbxIl",
-            "CghnYW1lX2ZvZxgBIAEoCzITLlJvdWxldHRlLkdhbWVDb25mZxITCgtnYW1l",
+            "CghnYW1lX2NmZxgBIAEoCzITLlJvdWxldHRlLkdhbWVDb25mZxITCgtnYW1l",
             "X3JlY29yZBgCIAMoBRIrCgphbGxfcmVjb3JkGAMgAygLMhcuUm91bGV0dGUu",
             "R2FtZUFMTFJlY29yZBInCgpnYW1lX3N0YXRlGAQgASgLMhMuUm91bGV0dGUu",
             "R2FtZVN0YXRlEioKCXRvdGFsX2JldBgFIAMoCzIXLlJvdWxldHRlLlVzZXJC",
@@ -68,7 +68,7 @@ namespace Roulette {
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.GameConfg), global::Roulette.GameConfg.Parser, new[]{ "Bet", "BetLimitMin", "BetLimitMax", "BetAreaCfg", "MultipleCfg", "Times" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.GameState), global::Roulette.GameState.Parser, new[]{ "GameState_", "Times" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.UserBetRecord), global::Roulette.UserBetRecord.Parser, new[]{ "BetArea", "BetValue" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.MsgSceneInfo), global::Roulette.MsgSceneInfo.Parser, new[]{ "GameFog", "GameRecord", "AllRecord", "GameState", "TotalBet", "UserTop" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.MsgSceneInfo), global::Roulette.MsgSceneInfo.Parser, new[]{ "GameCfg", "GameRecord", "AllRecord", "GameState", "TotalBet", "UserTop" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.BetInfo), global::Roulette.BetInfo.Parser, new[]{ "Index", "Area" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.MsgBet), global::Roulette.MsgBet.Parser, new[]{ "Info" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.MsgBetResp), global::Roulette.MsgBetResp.Parser, new[]{ "ChairId", "BetInfo" }, null, null, null, null),
@@ -1701,7 +1701,7 @@ namespace Roulette {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public MsgSceneInfo(MsgSceneInfo other) : this() {
-      gameFog_ = other.gameFog_ != null ? other.gameFog_.Clone() : null;
+      gameCfg_ = other.gameCfg_ != null ? other.gameCfg_.Clone() : null;
       gameRecord_ = other.gameRecord_.Clone();
       allRecord_ = other.allRecord_.Clone();
       gameState_ = other.gameState_ != null ? other.gameState_.Clone() : null;
@@ -1715,17 +1715,17 @@ namespace Roulette {
       return new MsgSceneInfo(this);
     }
 
-    /// <summary>Field number for the "game_fog" field.</summary>
-    public const int GameFogFieldNumber = 1;
-    private global::Roulette.GameConfg gameFog_;
+    /// <summary>Field number for the "game_cfg" field.</summary>
+    public const int GameCfgFieldNumber = 1;
+    private global::Roulette.GameConfg gameCfg_;
     /// <summary>
     ///戏配置
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Roulette.GameConfg GameFog {
-      get { return gameFog_; }
+    public global::Roulette.GameConfg GameCfg {
+      get { return gameCfg_; }
       set {
-        gameFog_ = value;
+        gameCfg_ = value;
       }
     }
 
@@ -1808,7 +1808,7 @@ namespace Roulette {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (!object.Equals(GameFog, other.GameFog)) return false;
+      if (!object.Equals(GameCfg, other.GameCfg)) return false;
       if(!gameRecord_.Equals(other.gameRecord_)) return false;
       if(!allRecord_.Equals(other.allRecord_)) return false;
       if (!object.Equals(GameState, other.GameState)) return false;
@@ -1820,7 +1820,7 @@ namespace Roulette {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (gameFog_ != null) hash ^= GameFog.GetHashCode();
+      if (gameCfg_ != null) hash ^= GameCfg.GetHashCode();
       hash ^= gameRecord_.GetHashCode();
       hash ^= allRecord_.GetHashCode();
       if (gameState_ != null) hash ^= GameState.GetHashCode();
@@ -1842,9 +1842,9 @@ namespace Roulette {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (gameFog_ != null) {
+      if (gameCfg_ != null) {
         output.WriteRawTag(10);
-        output.WriteMessage(GameFog);
+        output.WriteMessage(GameCfg);
       }
       gameRecord_.WriteTo(output, _repeated_gameRecord_codec);
       allRecord_.WriteTo(output, _repeated_allRecord_codec);
@@ -1863,9 +1863,9 @@ namespace Roulette {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (gameFog_ != null) {
+      if (gameCfg_ != null) {
         output.WriteRawTag(10);
-        output.WriteMessage(GameFog);
+        output.WriteMessage(GameCfg);
       }
       gameRecord_.WriteTo(ref output, _repeated_gameRecord_codec);
       allRecord_.WriteTo(ref output, _repeated_allRecord_codec);
@@ -1884,8 +1884,8 @@ namespace Roulette {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (gameFog_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GameFog);
+      if (gameCfg_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(GameCfg);
       }
       size += gameRecord_.CalculateSize(_repeated_gameRecord_codec);
       size += allRecord_.CalculateSize(_repeated_allRecord_codec);
@@ -1905,11 +1905,11 @@ namespace Roulette {
       if (other == null) {
         return;
       }
-      if (other.gameFog_ != null) {
-        if (gameFog_ == null) {
-          GameFog = new global::Roulette.GameConfg();
+      if (other.gameCfg_ != null) {
+        if (gameCfg_ == null) {
+          GameCfg = new global::Roulette.GameConfg();
         }
-        GameFog.MergeFrom(other.GameFog);
+        GameCfg.MergeFrom(other.GameCfg);
       }
       gameRecord_.Add(other.gameRecord_);
       allRecord_.Add(other.allRecord_);
@@ -1936,10 +1936,10 @@ namespace Roulette {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            if (gameFog_ == null) {
-              GameFog = new global::Roulette.GameConfg();
+            if (gameCfg_ == null) {
+              GameCfg = new global::Roulette.GameConfg();
             }
-            input.ReadMessage(GameFog);
+            input.ReadMessage(GameCfg);
             break;
           }
           case 18:
@@ -1981,10 +1981,10 @@ namespace Roulette {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            if (gameFog_ == null) {
-              GameFog = new global::Roulette.GameConfg();
+            if (gameCfg_ == null) {
+              GameCfg = new global::Roulette.GameConfg();
             }
-            input.ReadMessage(GameFog);
+            input.ReadMessage(GameCfg);
             break;
           }
           case 18:

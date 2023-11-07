@@ -1337,7 +1337,7 @@ class MsgSceneInfo PROTOBUF_FINAL :
     kAllRecordFieldNumber = 3,
     kTotalBetFieldNumber = 5,
     kUserTopFieldNumber = 6,
-    kGameFogFieldNumber = 1,
+    kGameCfgFieldNumber = 1,
     kGameStateFieldNumber = 4,
   };
   // repeated int32 game_record = 2;
@@ -1416,23 +1416,23 @@ class MsgSceneInfo PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::UserInfo >&
       user_top() const;
 
-  // .Roulette.GameConfg game_fog = 1;
-  bool has_game_fog() const;
+  // .Roulette.GameConfg game_cfg = 1;
+  bool has_game_cfg() const;
   private:
-  bool _internal_has_game_fog() const;
+  bool _internal_has_game_cfg() const;
   public:
-  void clear_game_fog();
-  const ::Roulette::GameConfg& game_fog() const;
-  ::Roulette::GameConfg* release_game_fog();
-  ::Roulette::GameConfg* mutable_game_fog();
-  void set_allocated_game_fog(::Roulette::GameConfg* game_fog);
+  void clear_game_cfg();
+  const ::Roulette::GameConfg& game_cfg() const;
+  ::Roulette::GameConfg* release_game_cfg();
+  ::Roulette::GameConfg* mutable_game_cfg();
+  void set_allocated_game_cfg(::Roulette::GameConfg* game_cfg);
   private:
-  const ::Roulette::GameConfg& _internal_game_fog() const;
-  ::Roulette::GameConfg* _internal_mutable_game_fog();
+  const ::Roulette::GameConfg& _internal_game_cfg() const;
+  ::Roulette::GameConfg* _internal_mutable_game_cfg();
   public:
-  void unsafe_arena_set_allocated_game_fog(
-      ::Roulette::GameConfg* game_fog);
-  ::Roulette::GameConfg* unsafe_arena_release_game_fog();
+  void unsafe_arena_set_allocated_game_cfg(
+      ::Roulette::GameConfg* game_cfg);
+  ::Roulette::GameConfg* unsafe_arena_release_game_cfg();
 
   // .Roulette.GameState game_state = 4;
   bool has_game_state() const;
@@ -1464,7 +1464,7 @@ class MsgSceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::GameALLRecord > all_record_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::UserBetRecord > total_bet_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::UserInfo > user_top_;
-  ::Roulette::GameConfg* game_fog_;
+  ::Roulette::GameConfg* game_cfg_;
   ::Roulette::GameState* game_state_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Roulette_2eproto;
@@ -3445,87 +3445,87 @@ inline void UserBetRecord::set_bet_value(::PROTOBUF_NAMESPACE_ID::int64 value) {
 
 // MsgSceneInfo
 
-// .Roulette.GameConfg game_fog = 1;
-inline bool MsgSceneInfo::_internal_has_game_fog() const {
-  return this != internal_default_instance() && game_fog_ != nullptr;
+// .Roulette.GameConfg game_cfg = 1;
+inline bool MsgSceneInfo::_internal_has_game_cfg() const {
+  return this != internal_default_instance() && game_cfg_ != nullptr;
 }
-inline bool MsgSceneInfo::has_game_fog() const {
-  return _internal_has_game_fog();
+inline bool MsgSceneInfo::has_game_cfg() const {
+  return _internal_has_game_cfg();
 }
-inline void MsgSceneInfo::clear_game_fog() {
-  if (GetArena() == nullptr && game_fog_ != nullptr) {
-    delete game_fog_;
+inline void MsgSceneInfo::clear_game_cfg() {
+  if (GetArena() == nullptr && game_cfg_ != nullptr) {
+    delete game_cfg_;
   }
-  game_fog_ = nullptr;
+  game_cfg_ = nullptr;
 }
-inline const ::Roulette::GameConfg& MsgSceneInfo::_internal_game_fog() const {
-  const ::Roulette::GameConfg* p = game_fog_;
+inline const ::Roulette::GameConfg& MsgSceneInfo::_internal_game_cfg() const {
+  const ::Roulette::GameConfg* p = game_cfg_;
   return p != nullptr ? *p : reinterpret_cast<const ::Roulette::GameConfg&>(
       ::Roulette::_GameConfg_default_instance_);
 }
-inline const ::Roulette::GameConfg& MsgSceneInfo::game_fog() const {
-  // @@protoc_insertion_point(field_get:Roulette.MsgSceneInfo.game_fog)
-  return _internal_game_fog();
+inline const ::Roulette::GameConfg& MsgSceneInfo::game_cfg() const {
+  // @@protoc_insertion_point(field_get:Roulette.MsgSceneInfo.game_cfg)
+  return _internal_game_cfg();
 }
-inline void MsgSceneInfo::unsafe_arena_set_allocated_game_fog(
-    ::Roulette::GameConfg* game_fog) {
+inline void MsgSceneInfo::unsafe_arena_set_allocated_game_cfg(
+    ::Roulette::GameConfg* game_cfg) {
   if (GetArena() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(game_fog_);
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(game_cfg_);
   }
-  game_fog_ = game_fog;
-  if (game_fog) {
+  game_cfg_ = game_cfg;
+  if (game_cfg) {
     
   } else {
     
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:Roulette.MsgSceneInfo.game_fog)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:Roulette.MsgSceneInfo.game_cfg)
 }
-inline ::Roulette::GameConfg* MsgSceneInfo::release_game_fog() {
+inline ::Roulette::GameConfg* MsgSceneInfo::release_game_cfg() {
   
-  ::Roulette::GameConfg* temp = game_fog_;
-  game_fog_ = nullptr;
+  ::Roulette::GameConfg* temp = game_cfg_;
+  game_cfg_ = nullptr;
   if (GetArena() != nullptr) {
     temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
   }
   return temp;
 }
-inline ::Roulette::GameConfg* MsgSceneInfo::unsafe_arena_release_game_fog() {
-  // @@protoc_insertion_point(field_release:Roulette.MsgSceneInfo.game_fog)
+inline ::Roulette::GameConfg* MsgSceneInfo::unsafe_arena_release_game_cfg() {
+  // @@protoc_insertion_point(field_release:Roulette.MsgSceneInfo.game_cfg)
   
-  ::Roulette::GameConfg* temp = game_fog_;
-  game_fog_ = nullptr;
+  ::Roulette::GameConfg* temp = game_cfg_;
+  game_cfg_ = nullptr;
   return temp;
 }
-inline ::Roulette::GameConfg* MsgSceneInfo::_internal_mutable_game_fog() {
+inline ::Roulette::GameConfg* MsgSceneInfo::_internal_mutable_game_cfg() {
   
-  if (game_fog_ == nullptr) {
+  if (game_cfg_ == nullptr) {
     auto* p = CreateMaybeMessage<::Roulette::GameConfg>(GetArena());
-    game_fog_ = p;
+    game_cfg_ = p;
   }
-  return game_fog_;
+  return game_cfg_;
 }
-inline ::Roulette::GameConfg* MsgSceneInfo::mutable_game_fog() {
-  // @@protoc_insertion_point(field_mutable:Roulette.MsgSceneInfo.game_fog)
-  return _internal_mutable_game_fog();
+inline ::Roulette::GameConfg* MsgSceneInfo::mutable_game_cfg() {
+  // @@protoc_insertion_point(field_mutable:Roulette.MsgSceneInfo.game_cfg)
+  return _internal_mutable_game_cfg();
 }
-inline void MsgSceneInfo::set_allocated_game_fog(::Roulette::GameConfg* game_fog) {
+inline void MsgSceneInfo::set_allocated_game_cfg(::Roulette::GameConfg* game_cfg) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   if (message_arena == nullptr) {
-    delete game_fog_;
+    delete game_cfg_;
   }
-  if (game_fog) {
+  if (game_cfg) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(game_fog);
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(game_cfg);
     if (message_arena != submessage_arena) {
-      game_fog = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, game_fog, submessage_arena);
+      game_cfg = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, game_cfg, submessage_arena);
     }
     
   } else {
     
   }
-  game_fog_ = game_fog;
-  // @@protoc_insertion_point(field_set_allocated:Roulette.MsgSceneInfo.game_fog)
+  game_cfg_ = game_cfg;
+  // @@protoc_insertion_point(field_set_allocated:Roulette.MsgSceneInfo.game_cfg)
 }
 
 // repeated int32 game_record = 2;

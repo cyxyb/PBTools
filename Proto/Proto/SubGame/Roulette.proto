@@ -62,7 +62,7 @@ message UserBetRecord
 //场景数据
 message MsgSceneInfo
 {	
-	GameConfg game_fog 					= 1;	//戏配置
+	GameConfg game_cfg 					= 1;	//戏配置
 	repeated int32 game_record			= 2;	//游戏输赢区域记录12条
 	repeated GameALLRecord all_record 	= 3;	//戏ALL数据展示
 	GameState game_state				= 4;	//游戏状态
