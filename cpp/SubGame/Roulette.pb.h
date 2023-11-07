@@ -775,6 +775,7 @@ class GameConfg PROTOBUF_FINAL :
     kBetAreaCfgFieldNumber = 4,
     kMultipleCfgFieldNumber = 5,
     kTimesFieldNumber = 6,
+    kLimitTotalBetFieldNumber = 7,
   };
   // repeated int32 bet = 1;
   int bet_size() const;
@@ -904,6 +905,15 @@ class GameConfg PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_times();
 
+  // int64 limit_total_bet = 7;
+  void clear_limit_total_bet();
+  ::PROTOBUF_NAMESPACE_ID::int64 limit_total_bet() const;
+  void set_limit_total_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_limit_total_bet() const;
+  void _internal_set_limit_total_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:Roulette.GameConfg)
  private:
   class _Internal;
@@ -922,6 +932,7 @@ class GameConfg PROTOBUF_FINAL :
   mutable std::atomic<int> _multiple_cfg_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > times_;
   mutable std::atomic<int> _times_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::int64 limit_total_bet_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Roulette_2eproto;
 };
@@ -1334,10 +1345,10 @@ class MsgSceneInfo PROTOBUF_FINAL :
 
   enum : int {
     kGameRecordFieldNumber = 2,
-    kAllRecordFieldNumber = 3,
     kTotalBetFieldNumber = 5,
     kUserTopFieldNumber = 6,
     kGameCfgFieldNumber = 1,
+    kAllRecordFieldNumber = 3,
     kGameStateFieldNumber = 4,
   };
   // repeated int32 game_record = 2;
@@ -1361,24 +1372,6 @@ class MsgSceneInfo PROTOBUF_FINAL :
       game_record() const;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_game_record();
-
-  // repeated .Roulette.GameALLRecord all_record = 3;
-  int all_record_size() const;
-  private:
-  int _internal_all_record_size() const;
-  public:
-  void clear_all_record();
-  ::Roulette::GameALLRecord* mutable_all_record(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::GameALLRecord >*
-      mutable_all_record();
-  private:
-  const ::Roulette::GameALLRecord& _internal_all_record(int index) const;
-  ::Roulette::GameALLRecord* _internal_add_all_record();
-  public:
-  const ::Roulette::GameALLRecord& all_record(int index) const;
-  ::Roulette::GameALLRecord* add_all_record();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::GameALLRecord >&
-      all_record() const;
 
   // repeated .Roulette.UserBetRecord total_bet = 5;
   int total_bet_size() const;
@@ -1434,6 +1427,24 @@ class MsgSceneInfo PROTOBUF_FINAL :
       ::Roulette::GameConfg* game_cfg);
   ::Roulette::GameConfg* unsafe_arena_release_game_cfg();
 
+  // .Roulette.GameALLRecord all_record = 3;
+  bool has_all_record() const;
+  private:
+  bool _internal_has_all_record() const;
+  public:
+  void clear_all_record();
+  const ::Roulette::GameALLRecord& all_record() const;
+  ::Roulette::GameALLRecord* release_all_record();
+  ::Roulette::GameALLRecord* mutable_all_record();
+  void set_allocated_all_record(::Roulette::GameALLRecord* all_record);
+  private:
+  const ::Roulette::GameALLRecord& _internal_all_record() const;
+  ::Roulette::GameALLRecord* _internal_mutable_all_record();
+  public:
+  void unsafe_arena_set_allocated_all_record(
+      ::Roulette::GameALLRecord* all_record);
+  ::Roulette::GameALLRecord* unsafe_arena_release_all_record();
+
   // .Roulette.GameState game_state = 4;
   bool has_game_state() const;
   private:
@@ -1461,10 +1472,10 @@ class MsgSceneInfo PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > game_record_;
   mutable std::atomic<int> _game_record_cached_byte_size_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::GameALLRecord > all_record_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::UserBetRecord > total_bet_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::UserInfo > user_top_;
   ::Roulette::GameConfg* game_cfg_;
+  ::Roulette::GameALLRecord* all_record_;
   ::Roulette::GameState* game_state_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Roulette_2eproto;
@@ -3353,6 +3364,26 @@ GameConfg::mutable_times() {
   return _internal_mutable_times();
 }
 
+// int64 limit_total_bet = 7;
+inline void GameConfg::clear_limit_total_bet() {
+  limit_total_bet_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 GameConfg::_internal_limit_total_bet() const {
+  return limit_total_bet_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 GameConfg::limit_total_bet() const {
+  // @@protoc_insertion_point(field_get:Roulette.GameConfg.limit_total_bet)
+  return _internal_limit_total_bet();
+}
+inline void GameConfg::_internal_set_limit_total_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  limit_total_bet_ = value;
+}
+inline void GameConfg::set_limit_total_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_limit_total_bet(value);
+  // @@protoc_insertion_point(field_set:Roulette.GameConfg.limit_total_bet)
+}
+
 // -------------------------------------------------------------------
 
 // GameState
@@ -3575,43 +3606,87 @@ MsgSceneInfo::mutable_game_record() {
   return _internal_mutable_game_record();
 }
 
-// repeated .Roulette.GameALLRecord all_record = 3;
-inline int MsgSceneInfo::_internal_all_record_size() const {
-  return all_record_.size();
+// .Roulette.GameALLRecord all_record = 3;
+inline bool MsgSceneInfo::_internal_has_all_record() const {
+  return this != internal_default_instance() && all_record_ != nullptr;
 }
-inline int MsgSceneInfo::all_record_size() const {
-  return _internal_all_record_size();
+inline bool MsgSceneInfo::has_all_record() const {
+  return _internal_has_all_record();
 }
 inline void MsgSceneInfo::clear_all_record() {
-  all_record_.Clear();
+  if (GetArena() == nullptr && all_record_ != nullptr) {
+    delete all_record_;
+  }
+  all_record_ = nullptr;
 }
-inline ::Roulette::GameALLRecord* MsgSceneInfo::mutable_all_record(int index) {
-  // @@protoc_insertion_point(field_mutable:Roulette.MsgSceneInfo.all_record)
-  return all_record_.Mutable(index);
+inline const ::Roulette::GameALLRecord& MsgSceneInfo::_internal_all_record() const {
+  const ::Roulette::GameALLRecord* p = all_record_;
+  return p != nullptr ? *p : reinterpret_cast<const ::Roulette::GameALLRecord&>(
+      ::Roulette::_GameALLRecord_default_instance_);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::GameALLRecord >*
-MsgSceneInfo::mutable_all_record() {
-  // @@protoc_insertion_point(field_mutable_list:Roulette.MsgSceneInfo.all_record)
-  return &all_record_;
-}
-inline const ::Roulette::GameALLRecord& MsgSceneInfo::_internal_all_record(int index) const {
-  return all_record_.Get(index);
-}
-inline const ::Roulette::GameALLRecord& MsgSceneInfo::all_record(int index) const {
+inline const ::Roulette::GameALLRecord& MsgSceneInfo::all_record() const {
   // @@protoc_insertion_point(field_get:Roulette.MsgSceneInfo.all_record)
-  return _internal_all_record(index);
+  return _internal_all_record();
 }
-inline ::Roulette::GameALLRecord* MsgSceneInfo::_internal_add_all_record() {
-  return all_record_.Add();
+inline void MsgSceneInfo::unsafe_arena_set_allocated_all_record(
+    ::Roulette::GameALLRecord* all_record) {
+  if (GetArena() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(all_record_);
+  }
+  all_record_ = all_record;
+  if (all_record) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:Roulette.MsgSceneInfo.all_record)
 }
-inline ::Roulette::GameALLRecord* MsgSceneInfo::add_all_record() {
-  // @@protoc_insertion_point(field_add:Roulette.MsgSceneInfo.all_record)
-  return _internal_add_all_record();
+inline ::Roulette::GameALLRecord* MsgSceneInfo::release_all_record() {
+  
+  ::Roulette::GameALLRecord* temp = all_record_;
+  all_record_ = nullptr;
+  if (GetArena() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+  return temp;
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::GameALLRecord >&
-MsgSceneInfo::all_record() const {
-  // @@protoc_insertion_point(field_list:Roulette.MsgSceneInfo.all_record)
+inline ::Roulette::GameALLRecord* MsgSceneInfo::unsafe_arena_release_all_record() {
+  // @@protoc_insertion_point(field_release:Roulette.MsgSceneInfo.all_record)
+  
+  ::Roulette::GameALLRecord* temp = all_record_;
+  all_record_ = nullptr;
+  return temp;
+}
+inline ::Roulette::GameALLRecord* MsgSceneInfo::_internal_mutable_all_record() {
+  
+  if (all_record_ == nullptr) {
+    auto* p = CreateMaybeMessage<::Roulette::GameALLRecord>(GetArena());
+    all_record_ = p;
+  }
   return all_record_;
+}
+inline ::Roulette::GameALLRecord* MsgSceneInfo::mutable_all_record() {
+  // @@protoc_insertion_point(field_mutable:Roulette.MsgSceneInfo.all_record)
+  return _internal_mutable_all_record();
+}
+inline void MsgSceneInfo::set_allocated_all_record(::Roulette::GameALLRecord* all_record) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  if (message_arena == nullptr) {
+    delete all_record_;
+  }
+  if (all_record) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(all_record);
+    if (message_arena != submessage_arena) {
+      all_record = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, all_record, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  all_record_ = all_record;
+  // @@protoc_insertion_point(field_set_allocated:Roulette.MsgSceneInfo.all_record)
 }
 
 // .Roulette.GameState game_state = 4;

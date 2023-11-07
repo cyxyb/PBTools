@@ -46,6 +46,7 @@ message GameConfg
 	repeated BettonArea bet_area_cfg	= 4;   	//下注区域配置
 	repeated int32 multiple_cfg			= 5;    //区域倍数
 	repeated int32 times				= 6;	//阶段时间
+	int64 limit_total_bet				= 7;	//限制总压住
 }
 //游戏状态
 message GameState 
@@ -64,7 +65,7 @@ message MsgSceneInfo
 {	
 	GameConfg game_cfg 					= 1;	//戏配置
 	repeated int32 game_record			= 2;	//游戏输赢区域记录12条
-	repeated GameALLRecord all_record 	= 3;	//戏ALL数据展示
+	GameALLRecord all_record 			= 3;	//戏ALL数据展示
 	GameState game_state				= 4;	//游戏状态
 	repeated UserBetRecord total_bet	= 5;	//游戏下注
 	repeated UserInfo user_top 			= 6;	//玩家数据最多100个玩家
@@ -73,8 +74,8 @@ message MsgSceneInfo
 //下注信息
 message BetInfo
 {
-	int32			index			= 1;	//押注下标
-	int32			area			= 2;	//押注区域(0-196)
+	int32			index			= 1;	//押注下标(0-n)
+	int32			area			= 2;	//押注区域(1-199)
 }
 
 //玩家下注
@@ -93,7 +94,7 @@ message MsgBetResp
 message SingleAgainBet
 {
 	int32			index			= 1;	//押注下标1 
-	int32			area			= 2;	//押注区域(0-196)0
+	int32			area			= 2;	//押注区域(1-199)
 	int32			count			= 3;	//次数5 
 }
 
