@@ -141,8 +141,8 @@ enum EMsgIDLogin : int {
   MsgIDLogin_GetPlayerGoldResp = 54,
   MsgIDVIP_GetVIPConfig = 55,
   MsgIDVIP_GetVIPConfigResp = 56,
-  MsgIDVIP_GetPlayerHitCoding = 57,
-  MsgIDVIP_GetPlayerHitCodingResp = 58,
+  MsgIDVIP_GetPlayerVipExp = 57,
+  MsgIDVIP_GetPlayerVipExpResp = 58,
   MsgIDVIP_VIPUpgrade = 59,
   MsgIDVIP_VIPUpgradeResp = 60,
   MsgIDAvatar_GetAvatarInfo = 61,
@@ -184,10 +184,10 @@ enum EMsgIDLogin : int {
   MsgIDAgent_QuerySubAgentInfoResp = 97,
   MsgIDLogin_KickUserResp = 98,
   MsgIDBank_TransferOperateSyncResp = 99,
-  MsgIDShare_BindInviteCode = 100,
-  MsgIDShare_BindInviteCodeResp = 101,
-  MsgIDShare_QueryBindInfo = 102,
-  MsgIDShare_QueryBindInfoResp = 103,
+  MsgIDShare_QueryShareInfo = 100,
+  MsgIDShare_QueryShareInfoResp = 101,
+  MsgIDShare_QueryInviteUser = 102,
+  MsgIDShare_QueryInviteUserResp = 103,
   MsgIDRecharge_DotRechargeRecord = 104,
   MsgIDRecharge_DotRechargeRecordResp = 105,
   MsgIDRecharge_SyncDotData = 106,
@@ -201,12 +201,14 @@ enum EMsgIDLogin : int {
   MsgIDLogin_PersonalDetails = 114,
   MsgIDLogin_PersonalDetailsResp = 115,
   MsgIDLogin_NotifyServerOfflineResp = 116,
+  MsgIDShare_NotifyUpdateVipExpResp = 117,
+  MsgIDShare_NotifyAddNewSubResp = 118,
   EMsgIDLogin_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDLogin_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDLogin_IsValid(int value);
 constexpr EMsgIDLogin EMsgIDLogin_MIN = MsgIDLogin_Null;
-constexpr EMsgIDLogin EMsgIDLogin_MAX = MsgIDLogin_NotifyServerOfflineResp;
+constexpr EMsgIDLogin EMsgIDLogin_MAX = MsgIDShare_NotifyAddNewSubResp;
 constexpr int EMsgIDLogin_ARRAYSIZE = EMsgIDLogin_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDLogin_descriptor();
