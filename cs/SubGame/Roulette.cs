@@ -25,20 +25,20 @@ namespace Roulette {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChxQcm90by9TdWJHYW1lL1JvdWxldHRlLnByb3RvEghSb3VsZXR0ZSKMAQoN",
-            "R21hZUFMTFJlY29yZBIRCglibGFja19udW0YASABKAUSDwoHcmVkX251bRgC",
+            "R2FtZUFMTFJlY29yZBIRCglibGFja19udW0YASABKAUSDwoHcmVkX251bRgC",
             "IAEoBRIQCghldmVuX251bRgDIAEoBRIPCgdvZGRfbnVtGAQgASgFEg8KB2Jp",
             "Z19udW0YBSABKAUSEQoJc21hbGxfbnVtGAYgASgFEhAKCHplcm9fbnVtGAcg",
             "ASgFIh4KCkJldHRvbkFyZWESEAoIYXJlYV9jZmcYASADKAUiMAoIVXNlcklu",
             "Zm8SEQoJdG90YWxfYmV0GAEgASgDEhEKCXRvdGFsX3dpbhgCIAEoAyKXAQoJ",
-            "R21hZUNvbmZnEgsKA2JldBgBIAMoBRIVCg1iZXRfbGltaXRfbWluGAIgAygF",
+            "R2FtZUNvbmZnEgsKA2JldBgBIAMoBRIVCg1iZXRfbGltaXRfbWluGAIgAygF",
             "EhUKDWJldF9saW1pdF9tYXgYAyADKAUSKgoMYmV0X2FyZWFfY2ZnGAQgAygL",
             "MhQuUm91bGV0dGUuQmV0dG9uQXJlYRIUCgxtdWx0aXBsZV9jZmcYBSADKAUS",
             "DQoFdGltZXMYBiADKAUiLgoJR2FtZVN0YXRlEhIKCmdhbWVfc3RhdGUYASAB",
             "KAUSDQoFdGltZXMYAiABKAUiNAoNVXNlckJldFJlY29yZBIQCghiZXRfYXJl",
             "YRgBIAEoBRIRCgliZXRfdmFsdWUYAiABKAMi8gEKDE1zZ1NjZW5lSW5mbxIl",
-            "CghnYW1lX2ZvZxgBIAEoCzITLlJvdWxldHRlLkdtYWVDb25mZxITCgtnYW1l",
+            "CghnYW1lX2ZvZxgBIAEoCzITLlJvdWxldHRlLkdhbWVDb25mZxITCgtnYW1l",
             "X3JlY29yZBgCIAMoBRIrCgphbGxfcmVjb3JkGAMgAygLMhcuUm91bGV0dGUu",
-            "R21hZUFMTFJlY29yZBInCgpnYW1lX3N0YXRlGAQgASgLMhMuUm91bGV0dGUu",
+            "R2FtZUFMTFJlY29yZBInCgpnYW1lX3N0YXRlGAQgASgLMhMuUm91bGV0dGUu",
             "R2FtZVN0YXRlEioKCXRvdGFsX2JldBgFIAMoCzIXLlJvdWxldHRlLlVzZXJC",
             "ZXRSZWNvcmQSJAoIdXNlcl90b3AYBiADKAsyEi5Sb3VsZXR0ZS5Vc2VySW5m",
             "byImCgdCZXRJbmZvEg0KBWluZGV4GAEgASgFEgwKBGFyZWEYAiABKAUiKQoG",
@@ -62,10 +62,10 @@ namespace Roulette {
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Roulette.EMsgIDRoulette), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.GmaeALLRecord), global::Roulette.GmaeALLRecord.Parser, new[]{ "BlackNum", "RedNum", "EvenNum", "OddNum", "BigNum", "SmallNum", "ZeroNum" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.GameALLRecord), global::Roulette.GameALLRecord.Parser, new[]{ "BlackNum", "RedNum", "EvenNum", "OddNum", "BigNum", "SmallNum", "ZeroNum" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.BettonArea), global::Roulette.BettonArea.Parser, new[]{ "AreaCfg" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.UserInfo), global::Roulette.UserInfo.Parser, new[]{ "TotalBet", "TotalWin" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.GmaeConfg), global::Roulette.GmaeConfg.Parser, new[]{ "Bet", "BetLimitMin", "BetLimitMax", "BetAreaCfg", "MultipleCfg", "Times" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.GameConfg), global::Roulette.GameConfg.Parser, new[]{ "Bet", "BetLimitMin", "BetLimitMax", "BetAreaCfg", "MultipleCfg", "Times" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.GameState), global::Roulette.GameState.Parser, new[]{ "GameState_", "Times" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.UserBetRecord), global::Roulette.UserBetRecord.Parser, new[]{ "BetArea", "BetValue" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.MsgSceneInfo), global::Roulette.MsgSceneInfo.Parser, new[]{ "GameFog", "GameRecord", "AllRecord", "GameState", "TotalBet", "UserTop" }, null, null, null, null),
@@ -89,7 +89,7 @@ namespace Roulette {
   /// </summary>
   public enum EMsgIDRoulette {
     /// <summary>
-    ///游戏记录(GmaeALLRecord)	
+    ///游戏记录(GameALLRecord)	
     /// </summary>
     [pbr::OriginalName("MsgID_SC_GameRecord")] MsgIdScGameRecord = 0,
     /// <summary>
@@ -105,7 +105,7 @@ namespace Roulette {
     /// </summary>
     [pbr::OriginalName("MsgID_SC_AgainBet")] MsgIdScAgainBet = 3,
     /// <summary>
-    ///游戏结果(MsgGmaeResult)
+    ///游戏结果(MsgGameResult)
     /// </summary>
     [pbr::OriginalName("MsgID_SC_GameResult")] MsgIdScGameResult = 4,
     /// <summary>
@@ -132,15 +132,15 @@ namespace Roulette {
   /// <summary>
   ///ALL 数据展示
   /// </summary>
-  public sealed partial class GmaeALLRecord : pb::IMessage<GmaeALLRecord>
+  public sealed partial class GameALLRecord : pb::IMessage<GameALLRecord>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<GmaeALLRecord> _parser = new pb::MessageParser<GmaeALLRecord>(() => new GmaeALLRecord());
+    private static readonly pb::MessageParser<GameALLRecord> _parser = new pb::MessageParser<GameALLRecord>(() => new GameALLRecord());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<GmaeALLRecord> Parser { get { return _parser; } }
+    public static pb::MessageParser<GameALLRecord> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -153,14 +153,14 @@ namespace Roulette {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GmaeALLRecord() {
+    public GameALLRecord() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GmaeALLRecord(GmaeALLRecord other) : this() {
+    public GameALLRecord(GameALLRecord other) : this() {
       blackNum_ = other.blackNum_;
       redNum_ = other.redNum_;
       evenNum_ = other.evenNum_;
@@ -172,8 +172,8 @@ namespace Roulette {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GmaeALLRecord Clone() {
-      return new GmaeALLRecord(this);
+    public GameALLRecord Clone() {
+      return new GameALLRecord(this);
     }
 
     /// <summary>Field number for the "black_num" field.</summary>
@@ -276,11 +276,11 @@ namespace Roulette {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as GmaeALLRecord);
+      return Equals(other as GameALLRecord);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(GmaeALLRecord other) {
+    public bool Equals(GameALLRecord other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -425,7 +425,7 @@ namespace Roulette {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(GmaeALLRecord other) {
+    public void MergeFrom(GameALLRecord other) {
       if (other == null) {
         return;
       }
@@ -921,15 +921,15 @@ namespace Roulette {
   /// <summary>
   ///游戏配置
   /// </summary>
-  public sealed partial class GmaeConfg : pb::IMessage<GmaeConfg>
+  public sealed partial class GameConfg : pb::IMessage<GameConfg>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<GmaeConfg> _parser = new pb::MessageParser<GmaeConfg>(() => new GmaeConfg());
+    private static readonly pb::MessageParser<GameConfg> _parser = new pb::MessageParser<GameConfg>(() => new GameConfg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<GmaeConfg> Parser { get { return _parser; } }
+    public static pb::MessageParser<GameConfg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -942,14 +942,14 @@ namespace Roulette {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GmaeConfg() {
+    public GameConfg() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GmaeConfg(GmaeConfg other) : this() {
+    public GameConfg(GameConfg other) : this() {
       bet_ = other.bet_.Clone();
       betLimitMin_ = other.betLimitMin_.Clone();
       betLimitMax_ = other.betLimitMax_.Clone();
@@ -960,8 +960,8 @@ namespace Roulette {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public GmaeConfg Clone() {
-      return new GmaeConfg(this);
+    public GameConfg Clone() {
+      return new GameConfg(this);
     }
 
     /// <summary>Field number for the "bet" field.</summary>
@@ -1044,11 +1044,11 @@ namespace Roulette {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as GmaeConfg);
+      return Equals(other as GameConfg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(GmaeConfg other) {
+    public bool Equals(GameConfg other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -1132,7 +1132,7 @@ namespace Roulette {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(GmaeConfg other) {
+    public void MergeFrom(GameConfg other) {
       if (other == null) {
         return;
       }
@@ -1717,12 +1717,12 @@ namespace Roulette {
 
     /// <summary>Field number for the "game_fog" field.</summary>
     public const int GameFogFieldNumber = 1;
-    private global::Roulette.GmaeConfg gameFog_;
+    private global::Roulette.GameConfg gameFog_;
     /// <summary>
     ///戏配置
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Roulette.GmaeConfg GameFog {
+    public global::Roulette.GameConfg GameFog {
       get { return gameFog_; }
       set {
         gameFog_ = value;
@@ -1744,14 +1744,14 @@ namespace Roulette {
 
     /// <summary>Field number for the "all_record" field.</summary>
     public const int AllRecordFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::Roulette.GmaeALLRecord> _repeated_allRecord_codec
-        = pb::FieldCodec.ForMessage(26, global::Roulette.GmaeALLRecord.Parser);
-    private readonly pbc::RepeatedField<global::Roulette.GmaeALLRecord> allRecord_ = new pbc::RepeatedField<global::Roulette.GmaeALLRecord>();
+    private static readonly pb::FieldCodec<global::Roulette.GameALLRecord> _repeated_allRecord_codec
+        = pb::FieldCodec.ForMessage(26, global::Roulette.GameALLRecord.Parser);
+    private readonly pbc::RepeatedField<global::Roulette.GameALLRecord> allRecord_ = new pbc::RepeatedField<global::Roulette.GameALLRecord>();
     /// <summary>
     ///戏ALL数据展示
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Roulette.GmaeALLRecord> AllRecord {
+    public pbc::RepeatedField<global::Roulette.GameALLRecord> AllRecord {
       get { return allRecord_; }
     }
 
@@ -1907,7 +1907,7 @@ namespace Roulette {
       }
       if (other.gameFog_ != null) {
         if (gameFog_ == null) {
-          GameFog = new global::Roulette.GmaeConfg();
+          GameFog = new global::Roulette.GameConfg();
         }
         GameFog.MergeFrom(other.GameFog);
       }
@@ -1937,7 +1937,7 @@ namespace Roulette {
             break;
           case 10: {
             if (gameFog_ == null) {
-              GameFog = new global::Roulette.GmaeConfg();
+              GameFog = new global::Roulette.GameConfg();
             }
             input.ReadMessage(GameFog);
             break;
@@ -1982,7 +1982,7 @@ namespace Roulette {
             break;
           case 10: {
             if (gameFog_ == null) {
-              GameFog = new global::Roulette.GmaeConfg();
+              GameFog = new global::Roulette.GameConfg();
             }
             input.ReadMessage(GameFog);
             break;

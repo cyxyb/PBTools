@@ -5,18 +5,18 @@ package Roulette;
 //消息号
 enum EMsgIDRoulette
 {
-	MsgID_SC_GameRecord 	= 0;		//游戏记录(GmaeALLRecord)	
+	MsgID_SC_GameRecord 	= 0;		//游戏记录(GameALLRecord)	
 	MsgID_SC_GameBottom 	= 1;		//游戏下注(MsgBetResp)
 	MsgID_SC_BottomCancel 	= 2;		//撤回下注(RevocationBet)
 	MsgID_SC_AgainBet		= 3;		//续投(MsgAgainBetResp)
-	MsgID_SC_GameResult		= 4;		//游戏结果(MsgGmaeResult)
+	MsgID_SC_GameResult		= 4;		//游戏结果(MsgGameResult)
 	MsgID_SC_GameState		= 5;		//游戏状态(GameState)
 	MsgID_CS_GameBottom 	= 6;		//下注(MsgBet)
 	MsgID_CS_BottomCancel 	= 7;		//下注撤回(RevocationBet)
 	MsgID_CS_AgainBet		= 8;		//续投(MsgAgainBet)
 }
 //ALL 数据展示
-message GmaeALLRecord
+message GameALLRecord
 {
 	int32 black_num 		= 1;		//黑色数字出现几率
 	int32 red_num 			= 2;        //红色数字出现几率
@@ -38,7 +38,7 @@ message UserInfo
 	int64 total_win = 2;
 }
 //游戏配置
-message GmaeConfg
+message GameConfg
 {
 	repeated int32 bet 					= 1;	//下注配置
 	repeated int32 bet_limit_min 		= 2;	//最小下注限制
@@ -62,9 +62,9 @@ message UserBetRecord
 //场景数据
 message MsgSceneInfo
 {	
-	GmaeConfg game_fog 					= 1;	//戏配置
+	GameConfg game_fog 					= 1;	//戏配置
 	repeated int32 game_record			= 2;	//游戏输赢区域记录12条
-	repeated GmaeALLRecord all_record 	= 3;	//戏ALL数据展示
+	repeated GameALLRecord all_record 	= 3;	//戏ALL数据展示
 	GameState game_state				= 4;	//游戏状态
 	repeated UserBetRecord total_bet	= 5;	//游戏下注
 	repeated UserInfo user_top 			= 6;	//玩家数据最多100个玩家

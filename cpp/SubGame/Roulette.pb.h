@@ -61,15 +61,15 @@ extern BetInfoDefaultTypeInternal _BetInfo_default_instance_;
 class BettonArea;
 class BettonAreaDefaultTypeInternal;
 extern BettonAreaDefaultTypeInternal _BettonArea_default_instance_;
+class GameALLRecord;
+class GameALLRecordDefaultTypeInternal;
+extern GameALLRecordDefaultTypeInternal _GameALLRecord_default_instance_;
+class GameConfg;
+class GameConfgDefaultTypeInternal;
+extern GameConfgDefaultTypeInternal _GameConfg_default_instance_;
 class GameState;
 class GameStateDefaultTypeInternal;
 extern GameStateDefaultTypeInternal _GameState_default_instance_;
-class GmaeALLRecord;
-class GmaeALLRecordDefaultTypeInternal;
-extern GmaeALLRecordDefaultTypeInternal _GmaeALLRecord_default_instance_;
-class GmaeConfg;
-class GmaeConfgDefaultTypeInternal;
-extern GmaeConfgDefaultTypeInternal _GmaeConfg_default_instance_;
 class MsgAgainBet;
 class MsgAgainBetDefaultTypeInternal;
 extern MsgAgainBetDefaultTypeInternal _MsgAgainBet_default_instance_;
@@ -107,9 +107,9 @@ extern WinMsgDefaultTypeInternal _WinMsg_default_instance_;
 PROTOBUF_NAMESPACE_OPEN
 template<> ::Roulette::BetInfo* Arena::CreateMaybeMessage<::Roulette::BetInfo>(Arena*);
 template<> ::Roulette::BettonArea* Arena::CreateMaybeMessage<::Roulette::BettonArea>(Arena*);
+template<> ::Roulette::GameALLRecord* Arena::CreateMaybeMessage<::Roulette::GameALLRecord>(Arena*);
+template<> ::Roulette::GameConfg* Arena::CreateMaybeMessage<::Roulette::GameConfg>(Arena*);
 template<> ::Roulette::GameState* Arena::CreateMaybeMessage<::Roulette::GameState>(Arena*);
-template<> ::Roulette::GmaeALLRecord* Arena::CreateMaybeMessage<::Roulette::GmaeALLRecord>(Arena*);
-template<> ::Roulette::GmaeConfg* Arena::CreateMaybeMessage<::Roulette::GmaeConfg>(Arena*);
 template<> ::Roulette::MsgAgainBet* Arena::CreateMaybeMessage<::Roulette::MsgAgainBet>(Arena*);
 template<> ::Roulette::MsgAgainBetResp* Arena::CreateMaybeMessage<::Roulette::MsgAgainBetResp>(Arena*);
 template<> ::Roulette::MsgBet* Arena::CreateMaybeMessage<::Roulette::MsgBet>(Arena*);
@@ -158,23 +158,23 @@ inline bool EMsgIDRoulette_Parse(
 }
 // ===================================================================
 
-class GmaeALLRecord PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Roulette.GmaeALLRecord) */ {
+class GameALLRecord PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Roulette.GameALLRecord) */ {
  public:
-  inline GmaeALLRecord() : GmaeALLRecord(nullptr) {}
-  virtual ~GmaeALLRecord();
+  inline GameALLRecord() : GameALLRecord(nullptr) {}
+  virtual ~GameALLRecord();
 
-  GmaeALLRecord(const GmaeALLRecord& from);
-  GmaeALLRecord(GmaeALLRecord&& from) noexcept
-    : GmaeALLRecord() {
+  GameALLRecord(const GameALLRecord& from);
+  GameALLRecord(GameALLRecord&& from) noexcept
+    : GameALLRecord() {
     *this = ::std::move(from);
   }
 
-  inline GmaeALLRecord& operator=(const GmaeALLRecord& from) {
+  inline GameALLRecord& operator=(const GameALLRecord& from) {
     CopyFrom(from);
     return *this;
   }
-  inline GmaeALLRecord& operator=(GmaeALLRecord&& from) noexcept {
+  inline GameALLRecord& operator=(GameALLRecord&& from) noexcept {
     if (GetArena() == from.GetArena()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -192,19 +192,19 @@ class GmaeALLRecord PROTOBUF_FINAL :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return GetMetadataStatic().reflection;
   }
-  static const GmaeALLRecord& default_instance();
+  static const GameALLRecord& default_instance();
 
-  static inline const GmaeALLRecord* internal_default_instance() {
-    return reinterpret_cast<const GmaeALLRecord*>(
-               &_GmaeALLRecord_default_instance_);
+  static inline const GameALLRecord* internal_default_instance() {
+    return reinterpret_cast<const GameALLRecord*>(
+               &_GameALLRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     0;
 
-  friend void swap(GmaeALLRecord& a, GmaeALLRecord& b) {
+  friend void swap(GameALLRecord& a, GameALLRecord& b) {
     a.Swap(&b);
   }
-  inline void Swap(GmaeALLRecord* other) {
+  inline void Swap(GameALLRecord* other) {
     if (other == this) return;
     if (GetArena() == other->GetArena()) {
       InternalSwap(other);
@@ -212,7 +212,7 @@ class GmaeALLRecord PROTOBUF_FINAL :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(GmaeALLRecord* other) {
+  void UnsafeArenaSwap(GameALLRecord* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetArena() == other->GetArena());
     InternalSwap(other);
@@ -220,17 +220,17 @@ class GmaeALLRecord PROTOBUF_FINAL :
 
   // implements Message ----------------------------------------------
 
-  inline GmaeALLRecord* New() const final {
-    return CreateMaybeMessage<GmaeALLRecord>(nullptr);
+  inline GameALLRecord* New() const final {
+    return CreateMaybeMessage<GameALLRecord>(nullptr);
   }
 
-  GmaeALLRecord* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<GmaeALLRecord>(arena);
+  GameALLRecord* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<GameALLRecord>(arena);
   }
   void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
   void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const GmaeALLRecord& from);
-  void MergeFrom(const GmaeALLRecord& from);
+  void CopyFrom(const GameALLRecord& from);
+  void MergeFrom(const GameALLRecord& from);
   PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
   bool IsInitialized() const final;
 
@@ -244,13 +244,13 @@ class GmaeALLRecord PROTOBUF_FINAL :
   inline void SharedCtor();
   inline void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(GmaeALLRecord* other);
+  void InternalSwap(GameALLRecord* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "Roulette.GmaeALLRecord";
+    return "Roulette.GameALLRecord";
   }
   protected:
-  explicit GmaeALLRecord(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  explicit GameALLRecord(::PROTOBUF_NAMESPACE_ID::Arena* arena);
   private:
   static void ArenaDtor(void* object);
   inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -341,7 +341,7 @@ class GmaeALLRecord PROTOBUF_FINAL :
   void _internal_set_zero_num(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:Roulette.GmaeALLRecord)
+  // @@protoc_insertion_point(class_scope:Roulette.GameALLRecord)
  private:
   class _Internal;
 
@@ -657,23 +657,23 @@ class UserInfo PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
-class GmaeConfg PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Roulette.GmaeConfg) */ {
+class GameConfg PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Roulette.GameConfg) */ {
  public:
-  inline GmaeConfg() : GmaeConfg(nullptr) {}
-  virtual ~GmaeConfg();
+  inline GameConfg() : GameConfg(nullptr) {}
+  virtual ~GameConfg();
 
-  GmaeConfg(const GmaeConfg& from);
-  GmaeConfg(GmaeConfg&& from) noexcept
-    : GmaeConfg() {
+  GameConfg(const GameConfg& from);
+  GameConfg(GameConfg&& from) noexcept
+    : GameConfg() {
     *this = ::std::move(from);
   }
 
-  inline GmaeConfg& operator=(const GmaeConfg& from) {
+  inline GameConfg& operator=(const GameConfg& from) {
     CopyFrom(from);
     return *this;
   }
-  inline GmaeConfg& operator=(GmaeConfg&& from) noexcept {
+  inline GameConfg& operator=(GameConfg&& from) noexcept {
     if (GetArena() == from.GetArena()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -691,19 +691,19 @@ class GmaeConfg PROTOBUF_FINAL :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return GetMetadataStatic().reflection;
   }
-  static const GmaeConfg& default_instance();
+  static const GameConfg& default_instance();
 
-  static inline const GmaeConfg* internal_default_instance() {
-    return reinterpret_cast<const GmaeConfg*>(
-               &_GmaeConfg_default_instance_);
+  static inline const GameConfg* internal_default_instance() {
+    return reinterpret_cast<const GameConfg*>(
+               &_GameConfg_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     3;
 
-  friend void swap(GmaeConfg& a, GmaeConfg& b) {
+  friend void swap(GameConfg& a, GameConfg& b) {
     a.Swap(&b);
   }
-  inline void Swap(GmaeConfg* other) {
+  inline void Swap(GameConfg* other) {
     if (other == this) return;
     if (GetArena() == other->GetArena()) {
       InternalSwap(other);
@@ -711,7 +711,7 @@ class GmaeConfg PROTOBUF_FINAL :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(GmaeConfg* other) {
+  void UnsafeArenaSwap(GameConfg* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetArena() == other->GetArena());
     InternalSwap(other);
@@ -719,17 +719,17 @@ class GmaeConfg PROTOBUF_FINAL :
 
   // implements Message ----------------------------------------------
 
-  inline GmaeConfg* New() const final {
-    return CreateMaybeMessage<GmaeConfg>(nullptr);
+  inline GameConfg* New() const final {
+    return CreateMaybeMessage<GameConfg>(nullptr);
   }
 
-  GmaeConfg* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<GmaeConfg>(arena);
+  GameConfg* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<GameConfg>(arena);
   }
   void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
   void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const GmaeConfg& from);
-  void MergeFrom(const GmaeConfg& from);
+  void CopyFrom(const GameConfg& from);
+  void MergeFrom(const GameConfg& from);
   PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
   bool IsInitialized() const final;
 
@@ -743,13 +743,13 @@ class GmaeConfg PROTOBUF_FINAL :
   inline void SharedCtor();
   inline void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(GmaeConfg* other);
+  void InternalSwap(GameConfg* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "Roulette.GmaeConfg";
+    return "Roulette.GameConfg";
   }
   protected:
-  explicit GmaeConfg(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  explicit GameConfg(::PROTOBUF_NAMESPACE_ID::Arena* arena);
   private:
   static void ArenaDtor(void* object);
   inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -904,7 +904,7 @@ class GmaeConfg PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_times();
 
-  // @@protoc_insertion_point(class_scope:Roulette.GmaeConfg)
+  // @@protoc_insertion_point(class_scope:Roulette.GameConfg)
  private:
   class _Internal;
 
@@ -1362,22 +1362,22 @@ class MsgSceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_game_record();
 
-  // repeated .Roulette.GmaeALLRecord all_record = 3;
+  // repeated .Roulette.GameALLRecord all_record = 3;
   int all_record_size() const;
   private:
   int _internal_all_record_size() const;
   public:
   void clear_all_record();
-  ::Roulette::GmaeALLRecord* mutable_all_record(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::GmaeALLRecord >*
+  ::Roulette::GameALLRecord* mutable_all_record(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::GameALLRecord >*
       mutable_all_record();
   private:
-  const ::Roulette::GmaeALLRecord& _internal_all_record(int index) const;
-  ::Roulette::GmaeALLRecord* _internal_add_all_record();
+  const ::Roulette::GameALLRecord& _internal_all_record(int index) const;
+  ::Roulette::GameALLRecord* _internal_add_all_record();
   public:
-  const ::Roulette::GmaeALLRecord& all_record(int index) const;
-  ::Roulette::GmaeALLRecord* add_all_record();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::GmaeALLRecord >&
+  const ::Roulette::GameALLRecord& all_record(int index) const;
+  ::Roulette::GameALLRecord* add_all_record();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::GameALLRecord >&
       all_record() const;
 
   // repeated .Roulette.UserBetRecord total_bet = 5;
@@ -1416,23 +1416,23 @@ class MsgSceneInfo PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::UserInfo >&
       user_top() const;
 
-  // .Roulette.GmaeConfg game_fog = 1;
+  // .Roulette.GameConfg game_fog = 1;
   bool has_game_fog() const;
   private:
   bool _internal_has_game_fog() const;
   public:
   void clear_game_fog();
-  const ::Roulette::GmaeConfg& game_fog() const;
-  ::Roulette::GmaeConfg* release_game_fog();
-  ::Roulette::GmaeConfg* mutable_game_fog();
-  void set_allocated_game_fog(::Roulette::GmaeConfg* game_fog);
+  const ::Roulette::GameConfg& game_fog() const;
+  ::Roulette::GameConfg* release_game_fog();
+  ::Roulette::GameConfg* mutable_game_fog();
+  void set_allocated_game_fog(::Roulette::GameConfg* game_fog);
   private:
-  const ::Roulette::GmaeConfg& _internal_game_fog() const;
-  ::Roulette::GmaeConfg* _internal_mutable_game_fog();
+  const ::Roulette::GameConfg& _internal_game_fog() const;
+  ::Roulette::GameConfg* _internal_mutable_game_fog();
   public:
   void unsafe_arena_set_allocated_game_fog(
-      ::Roulette::GmaeConfg* game_fog);
-  ::Roulette::GmaeConfg* unsafe_arena_release_game_fog();
+      ::Roulette::GameConfg* game_fog);
+  ::Roulette::GameConfg* unsafe_arena_release_game_fog();
 
   // .Roulette.GameState game_state = 4;
   bool has_game_state() const;
@@ -1461,10 +1461,10 @@ class MsgSceneInfo PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > game_record_;
   mutable std::atomic<int> _game_record_cached_byte_size_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::GmaeALLRecord > all_record_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::GameALLRecord > all_record_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::UserBetRecord > total_bet_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::UserInfo > user_top_;
-  ::Roulette::GmaeConfg* game_fog_;
+  ::Roulette::GameConfg* game_fog_;
   ::Roulette::GameState* game_state_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Roulette_2eproto;
@@ -2838,146 +2838,146 @@ class MsgGameResult PROTOBUF_FINAL :
   #pragma GCC diagnostic push
   #pragma GCC diagnostic ignored "-Wstrict-aliasing"
 #endif  // __GNUC__
-// GmaeALLRecord
+// GameALLRecord
 
 // int32 black_num = 1;
-inline void GmaeALLRecord::clear_black_num() {
+inline void GameALLRecord::clear_black_num() {
   black_num_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 GmaeALLRecord::_internal_black_num() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 GameALLRecord::_internal_black_num() const {
   return black_num_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 GmaeALLRecord::black_num() const {
-  // @@protoc_insertion_point(field_get:Roulette.GmaeALLRecord.black_num)
+inline ::PROTOBUF_NAMESPACE_ID::int32 GameALLRecord::black_num() const {
+  // @@protoc_insertion_point(field_get:Roulette.GameALLRecord.black_num)
   return _internal_black_num();
 }
-inline void GmaeALLRecord::_internal_set_black_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void GameALLRecord::_internal_set_black_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   black_num_ = value;
 }
-inline void GmaeALLRecord::set_black_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void GameALLRecord::set_black_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_black_num(value);
-  // @@protoc_insertion_point(field_set:Roulette.GmaeALLRecord.black_num)
+  // @@protoc_insertion_point(field_set:Roulette.GameALLRecord.black_num)
 }
 
 // int32 red_num = 2;
-inline void GmaeALLRecord::clear_red_num() {
+inline void GameALLRecord::clear_red_num() {
   red_num_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 GmaeALLRecord::_internal_red_num() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 GameALLRecord::_internal_red_num() const {
   return red_num_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 GmaeALLRecord::red_num() const {
-  // @@protoc_insertion_point(field_get:Roulette.GmaeALLRecord.red_num)
+inline ::PROTOBUF_NAMESPACE_ID::int32 GameALLRecord::red_num() const {
+  // @@protoc_insertion_point(field_get:Roulette.GameALLRecord.red_num)
   return _internal_red_num();
 }
-inline void GmaeALLRecord::_internal_set_red_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void GameALLRecord::_internal_set_red_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   red_num_ = value;
 }
-inline void GmaeALLRecord::set_red_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void GameALLRecord::set_red_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_red_num(value);
-  // @@protoc_insertion_point(field_set:Roulette.GmaeALLRecord.red_num)
+  // @@protoc_insertion_point(field_set:Roulette.GameALLRecord.red_num)
 }
 
 // int32 even_num = 3;
-inline void GmaeALLRecord::clear_even_num() {
+inline void GameALLRecord::clear_even_num() {
   even_num_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 GmaeALLRecord::_internal_even_num() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 GameALLRecord::_internal_even_num() const {
   return even_num_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 GmaeALLRecord::even_num() const {
-  // @@protoc_insertion_point(field_get:Roulette.GmaeALLRecord.even_num)
+inline ::PROTOBUF_NAMESPACE_ID::int32 GameALLRecord::even_num() const {
+  // @@protoc_insertion_point(field_get:Roulette.GameALLRecord.even_num)
   return _internal_even_num();
 }
-inline void GmaeALLRecord::_internal_set_even_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void GameALLRecord::_internal_set_even_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   even_num_ = value;
 }
-inline void GmaeALLRecord::set_even_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void GameALLRecord::set_even_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_even_num(value);
-  // @@protoc_insertion_point(field_set:Roulette.GmaeALLRecord.even_num)
+  // @@protoc_insertion_point(field_set:Roulette.GameALLRecord.even_num)
 }
 
 // int32 odd_num = 4;
-inline void GmaeALLRecord::clear_odd_num() {
+inline void GameALLRecord::clear_odd_num() {
   odd_num_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 GmaeALLRecord::_internal_odd_num() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 GameALLRecord::_internal_odd_num() const {
   return odd_num_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 GmaeALLRecord::odd_num() const {
-  // @@protoc_insertion_point(field_get:Roulette.GmaeALLRecord.odd_num)
+inline ::PROTOBUF_NAMESPACE_ID::int32 GameALLRecord::odd_num() const {
+  // @@protoc_insertion_point(field_get:Roulette.GameALLRecord.odd_num)
   return _internal_odd_num();
 }
-inline void GmaeALLRecord::_internal_set_odd_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void GameALLRecord::_internal_set_odd_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   odd_num_ = value;
 }
-inline void GmaeALLRecord::set_odd_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void GameALLRecord::set_odd_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_odd_num(value);
-  // @@protoc_insertion_point(field_set:Roulette.GmaeALLRecord.odd_num)
+  // @@protoc_insertion_point(field_set:Roulette.GameALLRecord.odd_num)
 }
 
 // int32 big_num = 5;
-inline void GmaeALLRecord::clear_big_num() {
+inline void GameALLRecord::clear_big_num() {
   big_num_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 GmaeALLRecord::_internal_big_num() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 GameALLRecord::_internal_big_num() const {
   return big_num_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 GmaeALLRecord::big_num() const {
-  // @@protoc_insertion_point(field_get:Roulette.GmaeALLRecord.big_num)
+inline ::PROTOBUF_NAMESPACE_ID::int32 GameALLRecord::big_num() const {
+  // @@protoc_insertion_point(field_get:Roulette.GameALLRecord.big_num)
   return _internal_big_num();
 }
-inline void GmaeALLRecord::_internal_set_big_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void GameALLRecord::_internal_set_big_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   big_num_ = value;
 }
-inline void GmaeALLRecord::set_big_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void GameALLRecord::set_big_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_big_num(value);
-  // @@protoc_insertion_point(field_set:Roulette.GmaeALLRecord.big_num)
+  // @@protoc_insertion_point(field_set:Roulette.GameALLRecord.big_num)
 }
 
 // int32 small_num = 6;
-inline void GmaeALLRecord::clear_small_num() {
+inline void GameALLRecord::clear_small_num() {
   small_num_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 GmaeALLRecord::_internal_small_num() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 GameALLRecord::_internal_small_num() const {
   return small_num_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 GmaeALLRecord::small_num() const {
-  // @@protoc_insertion_point(field_get:Roulette.GmaeALLRecord.small_num)
+inline ::PROTOBUF_NAMESPACE_ID::int32 GameALLRecord::small_num() const {
+  // @@protoc_insertion_point(field_get:Roulette.GameALLRecord.small_num)
   return _internal_small_num();
 }
-inline void GmaeALLRecord::_internal_set_small_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void GameALLRecord::_internal_set_small_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   small_num_ = value;
 }
-inline void GmaeALLRecord::set_small_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void GameALLRecord::set_small_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_small_num(value);
-  // @@protoc_insertion_point(field_set:Roulette.GmaeALLRecord.small_num)
+  // @@protoc_insertion_point(field_set:Roulette.GameALLRecord.small_num)
 }
 
 // int32 zero_num = 7;
-inline void GmaeALLRecord::clear_zero_num() {
+inline void GameALLRecord::clear_zero_num() {
   zero_num_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 GmaeALLRecord::_internal_zero_num() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 GameALLRecord::_internal_zero_num() const {
   return zero_num_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 GmaeALLRecord::zero_num() const {
-  // @@protoc_insertion_point(field_get:Roulette.GmaeALLRecord.zero_num)
+inline ::PROTOBUF_NAMESPACE_ID::int32 GameALLRecord::zero_num() const {
+  // @@protoc_insertion_point(field_get:Roulette.GameALLRecord.zero_num)
   return _internal_zero_num();
 }
-inline void GmaeALLRecord::_internal_set_zero_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void GameALLRecord::_internal_set_zero_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   zero_num_ = value;
 }
-inline void GmaeALLRecord::set_zero_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void GameALLRecord::set_zero_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_zero_num(value);
-  // @@protoc_insertion_point(field_set:Roulette.GmaeALLRecord.zero_num)
+  // @@protoc_insertion_point(field_set:Roulette.GameALLRecord.zero_num)
 }
 
 // -------------------------------------------------------------------
@@ -3077,279 +3077,279 @@ inline void UserInfo::set_total_win(::PROTOBUF_NAMESPACE_ID::int64 value) {
 
 // -------------------------------------------------------------------
 
-// GmaeConfg
+// GameConfg
 
 // repeated int32 bet = 1;
-inline int GmaeConfg::_internal_bet_size() const {
+inline int GameConfg::_internal_bet_size() const {
   return bet_.size();
 }
-inline int GmaeConfg::bet_size() const {
+inline int GameConfg::bet_size() const {
   return _internal_bet_size();
 }
-inline void GmaeConfg::clear_bet() {
+inline void GameConfg::clear_bet() {
   bet_.Clear();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 GmaeConfg::_internal_bet(int index) const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 GameConfg::_internal_bet(int index) const {
   return bet_.Get(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 GmaeConfg::bet(int index) const {
-  // @@protoc_insertion_point(field_get:Roulette.GmaeConfg.bet)
+inline ::PROTOBUF_NAMESPACE_ID::int32 GameConfg::bet(int index) const {
+  // @@protoc_insertion_point(field_get:Roulette.GameConfg.bet)
   return _internal_bet(index);
 }
-inline void GmaeConfg::set_bet(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void GameConfg::set_bet(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   bet_.Set(index, value);
-  // @@protoc_insertion_point(field_set:Roulette.GmaeConfg.bet)
+  // @@protoc_insertion_point(field_set:Roulette.GameConfg.bet)
 }
-inline void GmaeConfg::_internal_add_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void GameConfg::_internal_add_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
   bet_.Add(value);
 }
-inline void GmaeConfg::add_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void GameConfg::add_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_bet(value);
-  // @@protoc_insertion_point(field_add:Roulette.GmaeConfg.bet)
+  // @@protoc_insertion_point(field_add:Roulette.GameConfg.bet)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-GmaeConfg::_internal_bet() const {
+GameConfg::_internal_bet() const {
   return bet_;
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-GmaeConfg::bet() const {
-  // @@protoc_insertion_point(field_list:Roulette.GmaeConfg.bet)
+GameConfg::bet() const {
+  // @@protoc_insertion_point(field_list:Roulette.GameConfg.bet)
   return _internal_bet();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-GmaeConfg::_internal_mutable_bet() {
+GameConfg::_internal_mutable_bet() {
   return &bet_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-GmaeConfg::mutable_bet() {
-  // @@protoc_insertion_point(field_mutable_list:Roulette.GmaeConfg.bet)
+GameConfg::mutable_bet() {
+  // @@protoc_insertion_point(field_mutable_list:Roulette.GameConfg.bet)
   return _internal_mutable_bet();
 }
 
 // repeated int32 bet_limit_min = 2;
-inline int GmaeConfg::_internal_bet_limit_min_size() const {
+inline int GameConfg::_internal_bet_limit_min_size() const {
   return bet_limit_min_.size();
 }
-inline int GmaeConfg::bet_limit_min_size() const {
+inline int GameConfg::bet_limit_min_size() const {
   return _internal_bet_limit_min_size();
 }
-inline void GmaeConfg::clear_bet_limit_min() {
+inline void GameConfg::clear_bet_limit_min() {
   bet_limit_min_.Clear();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 GmaeConfg::_internal_bet_limit_min(int index) const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 GameConfg::_internal_bet_limit_min(int index) const {
   return bet_limit_min_.Get(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 GmaeConfg::bet_limit_min(int index) const {
-  // @@protoc_insertion_point(field_get:Roulette.GmaeConfg.bet_limit_min)
+inline ::PROTOBUF_NAMESPACE_ID::int32 GameConfg::bet_limit_min(int index) const {
+  // @@protoc_insertion_point(field_get:Roulette.GameConfg.bet_limit_min)
   return _internal_bet_limit_min(index);
 }
-inline void GmaeConfg::set_bet_limit_min(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void GameConfg::set_bet_limit_min(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   bet_limit_min_.Set(index, value);
-  // @@protoc_insertion_point(field_set:Roulette.GmaeConfg.bet_limit_min)
+  // @@protoc_insertion_point(field_set:Roulette.GameConfg.bet_limit_min)
 }
-inline void GmaeConfg::_internal_add_bet_limit_min(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void GameConfg::_internal_add_bet_limit_min(::PROTOBUF_NAMESPACE_ID::int32 value) {
   bet_limit_min_.Add(value);
 }
-inline void GmaeConfg::add_bet_limit_min(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void GameConfg::add_bet_limit_min(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_bet_limit_min(value);
-  // @@protoc_insertion_point(field_add:Roulette.GmaeConfg.bet_limit_min)
+  // @@protoc_insertion_point(field_add:Roulette.GameConfg.bet_limit_min)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-GmaeConfg::_internal_bet_limit_min() const {
+GameConfg::_internal_bet_limit_min() const {
   return bet_limit_min_;
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-GmaeConfg::bet_limit_min() const {
-  // @@protoc_insertion_point(field_list:Roulette.GmaeConfg.bet_limit_min)
+GameConfg::bet_limit_min() const {
+  // @@protoc_insertion_point(field_list:Roulette.GameConfg.bet_limit_min)
   return _internal_bet_limit_min();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-GmaeConfg::_internal_mutable_bet_limit_min() {
+GameConfg::_internal_mutable_bet_limit_min() {
   return &bet_limit_min_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-GmaeConfg::mutable_bet_limit_min() {
-  // @@protoc_insertion_point(field_mutable_list:Roulette.GmaeConfg.bet_limit_min)
+GameConfg::mutable_bet_limit_min() {
+  // @@protoc_insertion_point(field_mutable_list:Roulette.GameConfg.bet_limit_min)
   return _internal_mutable_bet_limit_min();
 }
 
 // repeated int32 bet_limit_max = 3;
-inline int GmaeConfg::_internal_bet_limit_max_size() const {
+inline int GameConfg::_internal_bet_limit_max_size() const {
   return bet_limit_max_.size();
 }
-inline int GmaeConfg::bet_limit_max_size() const {
+inline int GameConfg::bet_limit_max_size() const {
   return _internal_bet_limit_max_size();
 }
-inline void GmaeConfg::clear_bet_limit_max() {
+inline void GameConfg::clear_bet_limit_max() {
   bet_limit_max_.Clear();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 GmaeConfg::_internal_bet_limit_max(int index) const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 GameConfg::_internal_bet_limit_max(int index) const {
   return bet_limit_max_.Get(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 GmaeConfg::bet_limit_max(int index) const {
-  // @@protoc_insertion_point(field_get:Roulette.GmaeConfg.bet_limit_max)
+inline ::PROTOBUF_NAMESPACE_ID::int32 GameConfg::bet_limit_max(int index) const {
+  // @@protoc_insertion_point(field_get:Roulette.GameConfg.bet_limit_max)
   return _internal_bet_limit_max(index);
 }
-inline void GmaeConfg::set_bet_limit_max(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void GameConfg::set_bet_limit_max(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   bet_limit_max_.Set(index, value);
-  // @@protoc_insertion_point(field_set:Roulette.GmaeConfg.bet_limit_max)
+  // @@protoc_insertion_point(field_set:Roulette.GameConfg.bet_limit_max)
 }
-inline void GmaeConfg::_internal_add_bet_limit_max(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void GameConfg::_internal_add_bet_limit_max(::PROTOBUF_NAMESPACE_ID::int32 value) {
   bet_limit_max_.Add(value);
 }
-inline void GmaeConfg::add_bet_limit_max(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void GameConfg::add_bet_limit_max(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_bet_limit_max(value);
-  // @@protoc_insertion_point(field_add:Roulette.GmaeConfg.bet_limit_max)
+  // @@protoc_insertion_point(field_add:Roulette.GameConfg.bet_limit_max)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-GmaeConfg::_internal_bet_limit_max() const {
+GameConfg::_internal_bet_limit_max() const {
   return bet_limit_max_;
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-GmaeConfg::bet_limit_max() const {
-  // @@protoc_insertion_point(field_list:Roulette.GmaeConfg.bet_limit_max)
+GameConfg::bet_limit_max() const {
+  // @@protoc_insertion_point(field_list:Roulette.GameConfg.bet_limit_max)
   return _internal_bet_limit_max();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-GmaeConfg::_internal_mutable_bet_limit_max() {
+GameConfg::_internal_mutable_bet_limit_max() {
   return &bet_limit_max_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-GmaeConfg::mutable_bet_limit_max() {
-  // @@protoc_insertion_point(field_mutable_list:Roulette.GmaeConfg.bet_limit_max)
+GameConfg::mutable_bet_limit_max() {
+  // @@protoc_insertion_point(field_mutable_list:Roulette.GameConfg.bet_limit_max)
   return _internal_mutable_bet_limit_max();
 }
 
 // repeated .Roulette.BettonArea bet_area_cfg = 4;
-inline int GmaeConfg::_internal_bet_area_cfg_size() const {
+inline int GameConfg::_internal_bet_area_cfg_size() const {
   return bet_area_cfg_.size();
 }
-inline int GmaeConfg::bet_area_cfg_size() const {
+inline int GameConfg::bet_area_cfg_size() const {
   return _internal_bet_area_cfg_size();
 }
-inline void GmaeConfg::clear_bet_area_cfg() {
+inline void GameConfg::clear_bet_area_cfg() {
   bet_area_cfg_.Clear();
 }
-inline ::Roulette::BettonArea* GmaeConfg::mutable_bet_area_cfg(int index) {
-  // @@protoc_insertion_point(field_mutable:Roulette.GmaeConfg.bet_area_cfg)
+inline ::Roulette::BettonArea* GameConfg::mutable_bet_area_cfg(int index) {
+  // @@protoc_insertion_point(field_mutable:Roulette.GameConfg.bet_area_cfg)
   return bet_area_cfg_.Mutable(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::BettonArea >*
-GmaeConfg::mutable_bet_area_cfg() {
-  // @@protoc_insertion_point(field_mutable_list:Roulette.GmaeConfg.bet_area_cfg)
+GameConfg::mutable_bet_area_cfg() {
+  // @@protoc_insertion_point(field_mutable_list:Roulette.GameConfg.bet_area_cfg)
   return &bet_area_cfg_;
 }
-inline const ::Roulette::BettonArea& GmaeConfg::_internal_bet_area_cfg(int index) const {
+inline const ::Roulette::BettonArea& GameConfg::_internal_bet_area_cfg(int index) const {
   return bet_area_cfg_.Get(index);
 }
-inline const ::Roulette::BettonArea& GmaeConfg::bet_area_cfg(int index) const {
-  // @@protoc_insertion_point(field_get:Roulette.GmaeConfg.bet_area_cfg)
+inline const ::Roulette::BettonArea& GameConfg::bet_area_cfg(int index) const {
+  // @@protoc_insertion_point(field_get:Roulette.GameConfg.bet_area_cfg)
   return _internal_bet_area_cfg(index);
 }
-inline ::Roulette::BettonArea* GmaeConfg::_internal_add_bet_area_cfg() {
+inline ::Roulette::BettonArea* GameConfg::_internal_add_bet_area_cfg() {
   return bet_area_cfg_.Add();
 }
-inline ::Roulette::BettonArea* GmaeConfg::add_bet_area_cfg() {
-  // @@protoc_insertion_point(field_add:Roulette.GmaeConfg.bet_area_cfg)
+inline ::Roulette::BettonArea* GameConfg::add_bet_area_cfg() {
+  // @@protoc_insertion_point(field_add:Roulette.GameConfg.bet_area_cfg)
   return _internal_add_bet_area_cfg();
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::BettonArea >&
-GmaeConfg::bet_area_cfg() const {
-  // @@protoc_insertion_point(field_list:Roulette.GmaeConfg.bet_area_cfg)
+GameConfg::bet_area_cfg() const {
+  // @@protoc_insertion_point(field_list:Roulette.GameConfg.bet_area_cfg)
   return bet_area_cfg_;
 }
 
 // repeated int32 multiple_cfg = 5;
-inline int GmaeConfg::_internal_multiple_cfg_size() const {
+inline int GameConfg::_internal_multiple_cfg_size() const {
   return multiple_cfg_.size();
 }
-inline int GmaeConfg::multiple_cfg_size() const {
+inline int GameConfg::multiple_cfg_size() const {
   return _internal_multiple_cfg_size();
 }
-inline void GmaeConfg::clear_multiple_cfg() {
+inline void GameConfg::clear_multiple_cfg() {
   multiple_cfg_.Clear();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 GmaeConfg::_internal_multiple_cfg(int index) const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 GameConfg::_internal_multiple_cfg(int index) const {
   return multiple_cfg_.Get(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 GmaeConfg::multiple_cfg(int index) const {
-  // @@protoc_insertion_point(field_get:Roulette.GmaeConfg.multiple_cfg)
+inline ::PROTOBUF_NAMESPACE_ID::int32 GameConfg::multiple_cfg(int index) const {
+  // @@protoc_insertion_point(field_get:Roulette.GameConfg.multiple_cfg)
   return _internal_multiple_cfg(index);
 }
-inline void GmaeConfg::set_multiple_cfg(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void GameConfg::set_multiple_cfg(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   multiple_cfg_.Set(index, value);
-  // @@protoc_insertion_point(field_set:Roulette.GmaeConfg.multiple_cfg)
+  // @@protoc_insertion_point(field_set:Roulette.GameConfg.multiple_cfg)
 }
-inline void GmaeConfg::_internal_add_multiple_cfg(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void GameConfg::_internal_add_multiple_cfg(::PROTOBUF_NAMESPACE_ID::int32 value) {
   multiple_cfg_.Add(value);
 }
-inline void GmaeConfg::add_multiple_cfg(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void GameConfg::add_multiple_cfg(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_multiple_cfg(value);
-  // @@protoc_insertion_point(field_add:Roulette.GmaeConfg.multiple_cfg)
+  // @@protoc_insertion_point(field_add:Roulette.GameConfg.multiple_cfg)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-GmaeConfg::_internal_multiple_cfg() const {
+GameConfg::_internal_multiple_cfg() const {
   return multiple_cfg_;
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-GmaeConfg::multiple_cfg() const {
-  // @@protoc_insertion_point(field_list:Roulette.GmaeConfg.multiple_cfg)
+GameConfg::multiple_cfg() const {
+  // @@protoc_insertion_point(field_list:Roulette.GameConfg.multiple_cfg)
   return _internal_multiple_cfg();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-GmaeConfg::_internal_mutable_multiple_cfg() {
+GameConfg::_internal_mutable_multiple_cfg() {
   return &multiple_cfg_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-GmaeConfg::mutable_multiple_cfg() {
-  // @@protoc_insertion_point(field_mutable_list:Roulette.GmaeConfg.multiple_cfg)
+GameConfg::mutable_multiple_cfg() {
+  // @@protoc_insertion_point(field_mutable_list:Roulette.GameConfg.multiple_cfg)
   return _internal_mutable_multiple_cfg();
 }
 
 // repeated int32 times = 6;
-inline int GmaeConfg::_internal_times_size() const {
+inline int GameConfg::_internal_times_size() const {
   return times_.size();
 }
-inline int GmaeConfg::times_size() const {
+inline int GameConfg::times_size() const {
   return _internal_times_size();
 }
-inline void GmaeConfg::clear_times() {
+inline void GameConfg::clear_times() {
   times_.Clear();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 GmaeConfg::_internal_times(int index) const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 GameConfg::_internal_times(int index) const {
   return times_.Get(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 GmaeConfg::times(int index) const {
-  // @@protoc_insertion_point(field_get:Roulette.GmaeConfg.times)
+inline ::PROTOBUF_NAMESPACE_ID::int32 GameConfg::times(int index) const {
+  // @@protoc_insertion_point(field_get:Roulette.GameConfg.times)
   return _internal_times(index);
 }
-inline void GmaeConfg::set_times(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void GameConfg::set_times(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   times_.Set(index, value);
-  // @@protoc_insertion_point(field_set:Roulette.GmaeConfg.times)
+  // @@protoc_insertion_point(field_set:Roulette.GameConfg.times)
 }
-inline void GmaeConfg::_internal_add_times(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void GameConfg::_internal_add_times(::PROTOBUF_NAMESPACE_ID::int32 value) {
   times_.Add(value);
 }
-inline void GmaeConfg::add_times(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void GameConfg::add_times(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_times(value);
-  // @@protoc_insertion_point(field_add:Roulette.GmaeConfg.times)
+  // @@protoc_insertion_point(field_add:Roulette.GameConfg.times)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-GmaeConfg::_internal_times() const {
+GameConfg::_internal_times() const {
   return times_;
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-GmaeConfg::times() const {
-  // @@protoc_insertion_point(field_list:Roulette.GmaeConfg.times)
+GameConfg::times() const {
+  // @@protoc_insertion_point(field_list:Roulette.GameConfg.times)
   return _internal_times();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-GmaeConfg::_internal_mutable_times() {
+GameConfg::_internal_mutable_times() {
   return &times_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-GmaeConfg::mutable_times() {
-  // @@protoc_insertion_point(field_mutable_list:Roulette.GmaeConfg.times)
+GameConfg::mutable_times() {
+  // @@protoc_insertion_point(field_mutable_list:Roulette.GameConfg.times)
   return _internal_mutable_times();
 }
 
@@ -3445,7 +3445,7 @@ inline void UserBetRecord::set_bet_value(::PROTOBUF_NAMESPACE_ID::int64 value) {
 
 // MsgSceneInfo
 
-// .Roulette.GmaeConfg game_fog = 1;
+// .Roulette.GameConfg game_fog = 1;
 inline bool MsgSceneInfo::_internal_has_game_fog() const {
   return this != internal_default_instance() && game_fog_ != nullptr;
 }
@@ -3458,17 +3458,17 @@ inline void MsgSceneInfo::clear_game_fog() {
   }
   game_fog_ = nullptr;
 }
-inline const ::Roulette::GmaeConfg& MsgSceneInfo::_internal_game_fog() const {
-  const ::Roulette::GmaeConfg* p = game_fog_;
-  return p != nullptr ? *p : reinterpret_cast<const ::Roulette::GmaeConfg&>(
-      ::Roulette::_GmaeConfg_default_instance_);
+inline const ::Roulette::GameConfg& MsgSceneInfo::_internal_game_fog() const {
+  const ::Roulette::GameConfg* p = game_fog_;
+  return p != nullptr ? *p : reinterpret_cast<const ::Roulette::GameConfg&>(
+      ::Roulette::_GameConfg_default_instance_);
 }
-inline const ::Roulette::GmaeConfg& MsgSceneInfo::game_fog() const {
+inline const ::Roulette::GameConfg& MsgSceneInfo::game_fog() const {
   // @@protoc_insertion_point(field_get:Roulette.MsgSceneInfo.game_fog)
   return _internal_game_fog();
 }
 inline void MsgSceneInfo::unsafe_arena_set_allocated_game_fog(
-    ::Roulette::GmaeConfg* game_fog) {
+    ::Roulette::GameConfg* game_fog) {
   if (GetArena() == nullptr) {
     delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(game_fog_);
   }
@@ -3480,35 +3480,35 @@ inline void MsgSceneInfo::unsafe_arena_set_allocated_game_fog(
   }
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:Roulette.MsgSceneInfo.game_fog)
 }
-inline ::Roulette::GmaeConfg* MsgSceneInfo::release_game_fog() {
+inline ::Roulette::GameConfg* MsgSceneInfo::release_game_fog() {
   
-  ::Roulette::GmaeConfg* temp = game_fog_;
+  ::Roulette::GameConfg* temp = game_fog_;
   game_fog_ = nullptr;
   if (GetArena() != nullptr) {
     temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
   }
   return temp;
 }
-inline ::Roulette::GmaeConfg* MsgSceneInfo::unsafe_arena_release_game_fog() {
+inline ::Roulette::GameConfg* MsgSceneInfo::unsafe_arena_release_game_fog() {
   // @@protoc_insertion_point(field_release:Roulette.MsgSceneInfo.game_fog)
   
-  ::Roulette::GmaeConfg* temp = game_fog_;
+  ::Roulette::GameConfg* temp = game_fog_;
   game_fog_ = nullptr;
   return temp;
 }
-inline ::Roulette::GmaeConfg* MsgSceneInfo::_internal_mutable_game_fog() {
+inline ::Roulette::GameConfg* MsgSceneInfo::_internal_mutable_game_fog() {
   
   if (game_fog_ == nullptr) {
-    auto* p = CreateMaybeMessage<::Roulette::GmaeConfg>(GetArena());
+    auto* p = CreateMaybeMessage<::Roulette::GameConfg>(GetArena());
     game_fog_ = p;
   }
   return game_fog_;
 }
-inline ::Roulette::GmaeConfg* MsgSceneInfo::mutable_game_fog() {
+inline ::Roulette::GameConfg* MsgSceneInfo::mutable_game_fog() {
   // @@protoc_insertion_point(field_mutable:Roulette.MsgSceneInfo.game_fog)
   return _internal_mutable_game_fog();
 }
-inline void MsgSceneInfo::set_allocated_game_fog(::Roulette::GmaeConfg* game_fog) {
+inline void MsgSceneInfo::set_allocated_game_fog(::Roulette::GameConfg* game_fog) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   if (message_arena == nullptr) {
     delete game_fog_;
@@ -3575,7 +3575,7 @@ MsgSceneInfo::mutable_game_record() {
   return _internal_mutable_game_record();
 }
 
-// repeated .Roulette.GmaeALLRecord all_record = 3;
+// repeated .Roulette.GameALLRecord all_record = 3;
 inline int MsgSceneInfo::_internal_all_record_size() const {
   return all_record_.size();
 }
@@ -3585,30 +3585,30 @@ inline int MsgSceneInfo::all_record_size() const {
 inline void MsgSceneInfo::clear_all_record() {
   all_record_.Clear();
 }
-inline ::Roulette::GmaeALLRecord* MsgSceneInfo::mutable_all_record(int index) {
+inline ::Roulette::GameALLRecord* MsgSceneInfo::mutable_all_record(int index) {
   // @@protoc_insertion_point(field_mutable:Roulette.MsgSceneInfo.all_record)
   return all_record_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::GmaeALLRecord >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::GameALLRecord >*
 MsgSceneInfo::mutable_all_record() {
   // @@protoc_insertion_point(field_mutable_list:Roulette.MsgSceneInfo.all_record)
   return &all_record_;
 }
-inline const ::Roulette::GmaeALLRecord& MsgSceneInfo::_internal_all_record(int index) const {
+inline const ::Roulette::GameALLRecord& MsgSceneInfo::_internal_all_record(int index) const {
   return all_record_.Get(index);
 }
-inline const ::Roulette::GmaeALLRecord& MsgSceneInfo::all_record(int index) const {
+inline const ::Roulette::GameALLRecord& MsgSceneInfo::all_record(int index) const {
   // @@protoc_insertion_point(field_get:Roulette.MsgSceneInfo.all_record)
   return _internal_all_record(index);
 }
-inline ::Roulette::GmaeALLRecord* MsgSceneInfo::_internal_add_all_record() {
+inline ::Roulette::GameALLRecord* MsgSceneInfo::_internal_add_all_record() {
   return all_record_.Add();
 }
-inline ::Roulette::GmaeALLRecord* MsgSceneInfo::add_all_record() {
+inline ::Roulette::GameALLRecord* MsgSceneInfo::add_all_record() {
   // @@protoc_insertion_point(field_add:Roulette.MsgSceneInfo.all_record)
   return _internal_add_all_record();
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::GmaeALLRecord >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Roulette::GameALLRecord >&
 MsgSceneInfo::all_record() const {
   // @@protoc_insertion_point(field_list:Roulette.MsgSceneInfo.all_record)
   return all_record_;
