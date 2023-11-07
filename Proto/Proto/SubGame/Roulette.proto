@@ -1,0 +1,130 @@
+syntax = "proto3";
+
+package Roulette;
+
+//消息号
+enum EMsgIDRoulette
+{
+	MsgID_SC_GameRecord 	= 0;		//游戏记录(GameALLRecord)	
+	MsgID_SC_GameBottom 	= 1;		//游戏下注(MsgBetResp)
+	MsgID_SC_BottomCancel 	= 2;		//撤回下注(RevocationBet)
+	MsgID_SC_AgainBet		= 3;		//续投(MsgAgainBetResp)
+	MsgID_SC_GameResult		= 4;		//游戏结果(MsgGameResult)
+	MsgID_SC_GameState		= 5;		//游戏状态(GameState)
+	MsgID_CS_GameBottom 	= 6;		//下注(MsgBet)
+	MsgID_CS_BottomCancel 	= 7;		//下注撤回(RevocationBet)
+	MsgID_CS_AgainBet		= 8;		//续投(MsgAgainBet)
+}
+//ALL 数据展示
+message GameALLRecord
+{
+	int32 black_num 		= 1;		//黑色数字出现几率
+	int32 red_num 			= 2;        //红色数字出现几率
+	int32 even_num 			= 3;        //偶数数字出现几率
+	int32 odd_num 			= 4;        //奇数数字出现几率
+	int32 big_num 			= 5;        //大：19-36
+	int32 small_num 		= 6;        //小：1-18（注意不含0）
+	int32 zero_num 			= 7;        //0的几率
+}
+//下注区域配置
+message BettonArea
+{
+	repeated int32 area_cfg = 1;
+}
+//玩家数据
+message UserInfo
+{
+	int64 total_bet = 1;
+	int64 total_win = 2;
+}
+//游戏配置
+message GameConfg
+{
+	repeated int32 bet 					= 1;	//下注配置
+	repeated int32 bet_limit_min 		= 2;	//最小下注限制
+	repeated int32 bet_limit_max		= 3;    //最大下注限制
+	repeated BettonArea bet_area_cfg	= 4;   	//下注区域配置
+	repeated int32 multiple_cfg			= 5;    //区域倍数
+	repeated int32 times				= 6;	//阶段时间
+}
+//游戏状态
+message GameState 
+{
+	int32 game_state					= 1;	//游戏状态0：下注状态 1：结算状态
+	int32 times							= 2;	//剩余时间 S
+}
+//下注记录
+message UserBetRecord
+{
+	int32 bet_area 						= 1;	//下注区域
+	int64 bet_value 					= 2;	//下注值
+}
+//场景数据
+message MsgSceneInfo
+{	
+	GameConfg game_cfg 					= 1;	//戏配置
+	repeated int32 game_record			= 2;	//游戏输赢区域记录12条
+	repeated GameALLRecord all_record 	= 3;	//戏ALL数据展示
+	GameState game_state				= 4;	//游戏状态
+	repeated UserBetRecord total_bet	= 5;	//游戏下注
+	repeated UserInfo user_top 			= 6;	//玩家数据最多100个玩家
+}
+
+//下注信息
+message BetInfo
+{
+	int32			index			= 1;	//押注下标
+	int32			area			= 2;	//押注区域(0-196)
+}
+
+//玩家下注
+message MsgBet
+{
+	repeated BetInfo info			= 1;	//下注信息
+}
+
+//玩家下注返回
+message MsgBetResp
+{
+	int32			chair_id		= 1;	//玩家椅子号
+	MsgBet			bet_info		= 2;	//玩家下注信息
+}
+//玩家下注
+message SingleAgainBet
+{
+	int32			index			= 1;	//押注下标1 
+	int32			area			= 2;	//押注区域(0-196)0
+	int32			count			= 3;	//次数5 
+}
+
+//玩家续投
+message MsgAgainBet
+{
+	repeated SingleAgainBet again_bet_info = 1;	//玩家续投
+}
+
+//玩家续投返回
+message MsgAgainBetResp
+{
+	int32			chair_id		= 1;	//玩家椅子号
+	MsgAgainBet		again_bet_info	= 2;	//玩家续投信息
+} 
+//撤回下注
+message RevocationBet
+{
+	repeated int32 revocation_gold 	= 1;	//撤回下注 
+}
+
+//玩家输赢信息                              
+message WinMsg                           
+{                                           
+	int32			chair_id		= 1;	//玩家椅子号
+	int64			gold			= 2;	//玩家输赢信息
+}                                           
+
+//游戏结果                                  
+message MsgGameResult                          
+{      
+	int32 				result_num 	= 1;    //轮盘结果0-36                               
+	repeated WinMsg 	win_msg		= 2;	//玩家输赢信息
+}
