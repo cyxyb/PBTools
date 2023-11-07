@@ -50,6 +50,11 @@ enum EMsgIDServerInternalProto
 	CENTER2LOGIN_ReceiveSynchronousLoginResp	= 28;	//领取转账同步金币返回
 	CENTER2LOGIN_RefreshGoldResp				= 29;	//刷新GM添加金币返回
 	CENTER2LOGIN_NotifyServerOfflinrResp		= 30;	//通知服务器即将维护
+	LOGIN2CENTER_NotifyUpdateVipExp				= 31;	//通知更新Vip经验
+	CENTER2LOGIN_NotifyUpdateVipExpResp			= 32;	//通知更新Vip经验返回
+	LOGIN2CENTER_NotifyNewInviter				= 33;	//通知有新的邀请玩家绑定
+	CENTER2LOGIN_NotifyNewInviterResp			= 34;	//通知有新的邀请玩家绑定返回
+	CENTER2LOGIN_NotifyWebAddVipExp				= 35;	//通知后台更新Vip经验
 	
 	//1001-2000 game <-> center
 	GAME2CENTER_Register			= 2001;	//游戏服务器注册
@@ -78,6 +83,7 @@ enum EMsgIDServerInternalProto
 	RelayServer2CENTER_LimitChat		= 5006;	//限制用户聊天
 	RelayServer2CENTER_RefreshGold		= 5007;	//刷新GM添加金币
 	RelayServer2CENTER_NotifyServerOffline = 5008;	//通知服务器即将维护
+	RelayServer2CENTER_WebCmd 			= 5009;	//后台命令
 	
 	//6001-7000 ChatServer <-> center
 	Chat2Center_Register				= 6001;	//聊天服注册
@@ -136,8 +142,8 @@ enum EMsgIDDB
 	DB2LOGIN_GetPlayerGoldResp			= 1026;	//获取玩家金币返回
 	LOGIN2DB_GetVIPConfig				= 1027;	//获取VIP配置
 	DB2LOGIN_GetVIPConfigResp			= 1028;	//获取VIP配置返回
-	LOGIN2DB_GetHitCoding				= 1029;	//获取玩家打码量
-	DB2LOGIN_GetHitCodingResp			= 1030;	//获取玩家打码量返回
+	LOGIN2DB_GetPlayerVipExp			= 1029;	//获取玩家vip经验
+	DB2LOGIN_GetPlayerVipExpResp		= 1030;	//获取玩家vip经验返回
 	LOGIN2DB_VIPUpgrade					= 1031;	//vip升级
 	DB2LOGIN_VIPUpgradeResp				= 1032;	//vip升级返回
 	LOGIN2DB_ModifyAvatar				= 1033;	//修改头像
@@ -177,8 +183,8 @@ enum EMsgIDDB
 	DB2LOGIN_TransferReceiveResp		= 1067; //领取转账返回
 	LOGIN2DB_BindInviteCode				= 1068;	//绑定邀请码
 	DB2LOGIN_BindInviteCodeResp			= 1069;	//绑定邀请码返回
-	LOGIN2DB_QueryBindInfo				= 1070;	//查询绑定上级信息
-	DB2LOGIN_QueryBindInfoResp			= 1071;	//查询绑定上级信息返回
+	LOGIN2DB_QueryShareInfo				= 1070;	//查询分享信息
+	DB2LOGIN_QueryShareInfoResp			= 1071;	//查询分享信息返回
 	LOGIN2DB_DotRechargeRecord			= 1072;	//充值打点
 	DB2LOGIN_DotRechargeRecordResp		= 1073;	//充值打点返回
 	LOGIN2DB_SyncDotData				= 1074;	//同步打点数据
@@ -192,6 +198,8 @@ enum EMsgIDDB
 	DB2LOGIN_StorageCodeResp			= 1082; //缓存验证码返回
 	LOGIN2DB_PersonalDetails			= 1083; //修改玩家个人展示信息
 	DB2LOGIN_PersonalDetailsResp		= 1084; //修改玩家个人展示信息返回
+	LOGIN2DB_QueryInviteUser			= 1085; //获取邀请玩家信息
+	DB2LOGIN_QueryInviteUserResp		= 1086; //获取邀请玩家信息返回
 	//2001-3000 GameServer2DB	
 	GAME2DB_Login						= 2001;	//玩家登录游戏
 	DB2GAME_LoginResp					= 2002;	//玩家登录游戏返回

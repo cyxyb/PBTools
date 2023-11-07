@@ -68,7 +68,8 @@ message MsgSendPhoneCode
 message MsgUpdatePhoneCodeState
 {
 	int32	id					= 1;		//索引
-	string	channel				= 4;		//渠道名
+	string	channel				= 2;		//渠道名
+	int32	success				= 3;		//是否成功
 }
 
 //更新游戏服务器在线人数
@@ -137,6 +138,14 @@ message MsgUpdateLImitChat
 	int32 chat_limit_state 		= 2;		//聊天状态
 }
 
+//后台命令
+message MsgWebCmd
+{
+	int32 cmd_id 				= 1;		//后台命令号	
+	int32 param1		 		= 2;		//参数1
+	int32 param2		 		= 3;		//参数2
+	int32 param3		 		= 4;		//参数3
+}
 
 /////////////////////////服务器与数据库///////////////////////////
 message MsgDBCommonKV
@@ -196,6 +205,8 @@ message MsgLoginPlayerInfo
 	string      whatsup_msg		= 21;	//个性whats
 	string      telegram_msg	= 22;	//个性telegram
 	string      facebook_msg	= 23;	//个性facebook
+	int32		new_inviter		= 24;	//新邀请玩家
+	int32		bind_id			= 25;	//绑定id
 }
 
 //游戏服务器玩家信息
@@ -496,4 +507,13 @@ message MsgDBPersonalDetailsRespAdd
 	int32 	user_id = 1;					//玩家ID
 	int32 	type 	= 2;					//信息类型 1:WhatsApp、2:telegram、3:facebook
 	string	msg		= 3;					//账号信息限长64字节
+}
+
+//玩家VIP信息
+message MsgDBUpgradeVIP
+{
+	int32		res_code					= 1;	//返回码(0:成功 非0:失败)
+	int64		gold						= 2;	//玩家当前金币
+	int32		bind_id						= 3;	//绑定id
+	int32		add_vip_exp					= 4;	//增加经验
 }
