@@ -28,69 +28,71 @@ namespace Rummy {
             "bkluZm8SEwoLc3RhcnRfdmFsdWUYASABKAUSEAoIY29sX3R5cGUYAiABKAUS",
             "DQoFY2FyZHMYAyADKAUiMQoPUk1Nc2dUYWJsZVN0YXRlEg0KBXN0YXRlGAEg",
             "ASgFEg8KB291dF9pbWUYAiABKAUiHwoOUk1Nc2dIYW5kQ2FyZHMSDQoFY2Fy",
-            "ZHMYASADKAUipgEKD1JNTXNnUGxheWVySW5mbxIQCghjaGFpcl9pZBgBIAEo",
+            "ZHMYASADKAUi8gEKD1JNTXNnUGxheWVySW5mbxIQCghjaGFpcl9pZBgBIAEo",
             "BRITCgtwbGF5X3N0YXR1cxgCIAEoBRIMCgRnb2xkGAMgASgDEhAKCHdpbl9n",
-            "b2xkGAQgASgDEg0KBWNhcmRzGAUgAygFEg8KB2N1cl9hY3QYBiABKAUSLAoP",
-            "aGFuZF9ncm91cF9pbmZvGAcgAygLMhMuUnVtbXkuUk1Db2x1bW5JbmZvIrQC",
-            "Cg5STU1zZ1NjZW5lSW5mbxIUCgxtYXhfbXVsdGlwbGUYASABKAMSEgoKY2Vs",
-            "bF9zY29yZRgCIAEoAxITCgt0YWJsZV9zdGF0ZRgDIAEoBRILCgN0YXgYBCAB",
-            "KAUSFwoPYmFua2VyX2NoYWlyX2lkGAUgASgFEhQKDGN1cl9jaGFpcl9pZBgG",
-            "IAEoBRIVCg1jdXJfY2hhaXJfYWN0GAcgASgFEhAKCG91dF90aW1lGAggASgF",
-            "EhIKCnRvdGFsX3RpbWUYCSABKAUSEgoKam9rZXJfY2FyZBgKIAEoBRIVCg1s",
-            "ZWZ0X2NhcmRfbnVtGAsgASgFEhEKCW91dF9jYXJkcxgMIAMoBRIsCgxwbGF5",
-            "ZXJfaW5mb3MYDSADKAsyFi5SdW1teS5STU1zZ1BsYXllckluZm8i8wEKElJN",
-            "TXNnR2FtZVN0YXJ0UmVzcBIUCgxjdXJfY2hhaXJfaWQYASABKAUSFwoPYmFu",
-            "a2VyX2NoYWlyX2lkGAIgASgFEhEKCW1heF9zY29yZRgDIAEoAxISCgpjZWxs",
-            "X3Njb3JlGAQgASgDEhQKDG1heF9tdWx0aXBsZRgFIAEoAxIQCghuZXdfZ29s",
-            "ZBgJIAEoAxISCgpqb2tlcl9jYXJkGAogASgFEhUKDWxlZnRfY2FyZF9udW0Y",
-            "CyABKAUSEQoJb3V0X2NhcmRzGAwgAygFEhIKCnBsYXlfaW5kZXgYDSADKAUS",
-            "DQoFY2FyZHMYDyADKAUiVQoVUk1Nc2dOb3RpZnlBY3Rpb25SZXNwEhQKDGN1",
-            "cl9jaGFpcl9pZBgBIAEoBRITCgtjdXJyZW50X2FjdBgDIAEoBRIRCglvcGVy",
-            "X3RpbWUYBCABKAUiiAEKC1JNTXNnQWN0aW9uEhAKCGNoYWlyX2lkGAEgASgF",
-            "EhAKCGFjdF90eXBlGAIgASgFEhEKCWRlc3RfY2FyZBgDIAEoBRIUCgxnZXRf",
-            "b3V0X2NhcmQYBCABKAgSLAoPaGFuZF9ncm91cF9pbmZvGAUgAygLMhMuUnVt",
-            "bXkuUk1Db2x1bW5JbmZvIqEBCg9STU1zZ0FjdGlvblJlc3ASEAoIY2hhaXJf",
-            "aWQYASABKAUSEAoIYWN0X3R5cGUYAiABKAUSEQoJZGVzdF9jYXJkGAMgASgF",
-            "EhQKDGdldF9vdXRfY2FyZBgEIAEoCBIVCg1kcm9wX211bHRpcGxlGAYgASgN",
-            "EhMKC2F1dG9fYWN0aW9uGAcgASgIEhUKDWxlZnRfY2FyZF9udW0YCSABKAUi",
-            "lwEKEVJNTXNnQWN0aW9uQ2hvaWNlEhgKEGRldGVybWluZWRfbGV2ZWwYASAB",
-            "KAUSFAoMaXNfZGV0ZXJtaW5lGAIgASgIEiMKB2Nob2ljZXMYAyADKAsyEi5S",
-            "dW1teS5STU1zZ0FjdGlvbhItChFkZXRlcm1pbmVkX2FjdGlvbhgEIAEoCzIS",
-            "LlJ1bW15LlJNTXNnQWN0aW9uImMKD1JNTXNnR2FtZVJlc3VsdBIQCghnYW1l",
-            "X3RheBgBIAEoBRIrCgtwbGF5ZXJfaW5mbxgCIAMoCzIWLlJ1bW15LlJNTXNn",
-            "UGxheWVySW5mbxIRCgllbmRfc3RhdGUYAyABKAUiRAoWUk1Nc2dOb3RpZnlU",
-            "cnVzdGVlc2hpcBISCgpzZWF0X2luZGV4GAEgASgFEhYKDmlzX3RydXN0ZWVz",
-            "aGlwGAIgASgIIjUKFFJNTXNnTm90aWZ5UGxheWVyQWN0EhAKCGNoYWlyX2lk",
-            "GAEgASgFEgsKA2FjdBgCIAEoBSpkCgxFUk1HYW1lU3RhdGUSDwoLR1NfVFBf",
-            "UkVBRFkQABIOCgpHU19UUF9ERUFMEAESEQoNR1NfVFBfUExBWUlORxACEg4K",
-            "CkdTX1RQX1NIT1cQAxIQCgxHU19UUF9SRVNVTFQQBCpkCgtQbGF5ZXJTdGF0",
-            "ZRIMCghQU19SRUFEWRAAEgsKB1BTX1BMQVkQARILCgdQU19HSVZFEAISCwoH",
-            "UFNfRkFJTBADEhAKDFBTX1NPUlRfQ0FSRBAEEg4KClBTX1NIT1dfSFUQBSpz",
-            "Cg1FUk1HYW1lQWN0aW9uEg0KCUludmFsZEFjdBAAEgwKCERyb3BDYXJkEAES",
-            "CgoGTmFDYXJkEAISCwoHQ2h1Q2FyZBAEEg0KCVNvcnRzQ2FyZBAIEgwKCFNo",
-            "b3dDYXJkEBASDwoLVHJ1c3RlZVNoaXAQICpiCg5FUk1Db2xDYXJkVHlwZRIO",
-            "CgpDT0xfU0lOR0xFEAASDgoKQ09MX0JBT19aSRABEhAKDENPTF9TSFVOX1pI",
-            "SRACEhEKDUNPTF9RSU5HX1NIVU4QAxILCgdDT0xfTUFYEAQqyAQKD0VSTU1z",
-            "Z0lEU3ViR2FtZRIVChFNc2dJRFN1YkdhbWVfTnVsbBAAEh4KGk1zZ0lEU3Vi",
-            "R2FtZV9HYW1lU3RhcnRSZXNwEAESIQodTXNnSURTdWJHYW1lX05vdGlmeUFj",
-            "dGlvblJlc3AQAhIXChNNc2dJRFN1YkdhbWVfQWN0aW9uEAMSGwoXTXNnSURT",
-            "dWJHYW1lX0FjdGlvblJlc3AQBBIfChtNc2dJRFN1YkdhbWVfR2FtZVJlc3Vs",
-            "dFJlc3AQBRIgChxNc2dJRFN1YkdhbWVfTm90aWZ5U3RhdGVSZXNwEAYSHAoY",
-            "TXNnSURTdWJHYW1lX1RpbWVPdXRSZXNwEAsSHQoZTXNnSURTdWJHYW1lX1Rp",
-            "bWVPdXRSZWFkeRAMEiEKHU1zZ0lEU3ViR2FtZV9UaW1lT3V0UmVhZHlSZXNw",
-            "EA0SIAocTXNnSURTdWJHYW1lX1RpbWVPdXRLaWNrUmVzcBAOEiYKIk1zZ0lE",
-            "U3ViR2FtZV9Ob3RpZnlUcnVzdGVlc2hpcFJlc3AQDxImCiJNc2dJRFN1Ykdh",
-            "bWVfTm90aWZ5U3lzdGVtQ2hlYXRSZXNwEBQSIwofTXNnSURTdWJHYW1lX05v",
-            "dGlmeU5leHRDYXJkUmVzcBAVEiAKHE1zZ0lEU3ViR2FtZV9Ob3RpZnlJc01h",
-            "eFJlc3AQFhIiCh5Nc2dJRFN1YkdhbWVfTm90aWZ5TGFzdEFjdFJlc3AQGRIl",
-            "CiFNc2dJRFN1YkdhbWVfTm90aWZ5T3BlclBsYXllckluZm8QKGIGcHJvdG8z"));
+            "b2xkGAQgASgDEg0KBWNhcmRzGAUgAygFEg8KB2N1cl9hY3QYBiABKAUSEQoJ",
+            "bmlja19uYW1lGAcgASgJEg4KBmF2YXRhchgIIAEoCRIRCgl2aXBfbGV2ZWwY",
+            "CSABKAUSFAoMYXZhdGFyX2ZyYW1lGAogASgFEiwKD2hhbmRfZ3JvdXBfaW5m",
+            "bxgLIAMoCzITLlJ1bW15LlJNQ29sdW1uSW5mbyK0AgoOUk1Nc2dTY2VuZUlu",
+            "Zm8SFAoMbWF4X211bHRpcGxlGAEgASgDEhIKCmNlbGxfc2NvcmUYAiABKAMS",
+            "EwoLdGFibGVfc3RhdGUYAyABKAUSCwoDdGF4GAQgASgFEhcKD2Jhbmtlcl9j",
+            "aGFpcl9pZBgFIAEoBRIUCgxjdXJfY2hhaXJfaWQYBiABKAUSFQoNY3VyX2No",
+            "YWlyX2FjdBgHIAEoBRIQCghvdXRfdGltZRgIIAEoBRISCgp0b3RhbF90aW1l",
+            "GAkgASgFEhIKCmpva2VyX2NhcmQYCiABKAUSFQoNbGVmdF9jYXJkX251bRgL",
+            "IAEoBRIRCglvdXRfY2FyZHMYDCADKAUSLAoMcGxheWVyX2luZm9zGA0gAygL",
+            "MhYuUnVtbXkuUk1Nc2dQbGF5ZXJJbmZvIvMBChJSTU1zZ0dhbWVTdGFydFJl",
+            "c3ASFAoMY3VyX2NoYWlyX2lkGAEgASgFEhcKD2Jhbmtlcl9jaGFpcl9pZBgC",
+            "IAEoBRIRCgltYXhfc2NvcmUYAyABKAMSEgoKY2VsbF9zY29yZRgEIAEoAxIU",
+            "CgxtYXhfbXVsdGlwbGUYBSABKAMSEAoIbmV3X2dvbGQYCSABKAMSEgoKam9r",
+            "ZXJfY2FyZBgKIAEoBRIVCg1sZWZ0X2NhcmRfbnVtGAsgASgFEhEKCW91dF9j",
+            "YXJkcxgMIAMoBRISCgpwbGF5X2luZGV4GA0gAygFEg0KBWNhcmRzGA8gAygF",
+            "IlUKFVJNTXNnTm90aWZ5QWN0aW9uUmVzcBIUCgxjdXJfY2hhaXJfaWQYASAB",
+            "KAUSEwoLY3VycmVudF9hY3QYAyABKAUSEQoJb3Blcl90aW1lGAQgASgFIogB",
+            "CgtSTU1zZ0FjdGlvbhIQCghjaGFpcl9pZBgBIAEoBRIQCghhY3RfdHlwZRgC",
+            "IAEoBRIRCglkZXN0X2NhcmQYAyABKAUSFAoMZ2V0X291dF9jYXJkGAQgASgI",
+            "EiwKD2hhbmRfZ3JvdXBfaW5mbxgFIAMoCzITLlJ1bW15LlJNQ29sdW1uSW5m",
+            "byKhAQoPUk1Nc2dBY3Rpb25SZXNwEhAKCGNoYWlyX2lkGAEgASgFEhAKCGFj",
+            "dF90eXBlGAIgASgFEhEKCWRlc3RfY2FyZBgDIAEoBRIUCgxnZXRfb3V0X2Nh",
+            "cmQYBCABKAgSFQoNZHJvcF9tdWx0aXBsZRgGIAEoDRITCgthdXRvX2FjdGlv",
+            "bhgHIAEoCBIVCg1sZWZ0X2NhcmRfbnVtGAkgASgFIpcBChFSTU1zZ0FjdGlv",
+            "bkNob2ljZRIYChBkZXRlcm1pbmVkX2xldmVsGAEgASgFEhQKDGlzX2RldGVy",
+            "bWluZRgCIAEoCBIjCgdjaG9pY2VzGAMgAygLMhIuUnVtbXkuUk1Nc2dBY3Rp",
+            "b24SLQoRZGV0ZXJtaW5lZF9hY3Rpb24YBCABKAsyEi5SdW1teS5STU1zZ0Fj",
+            "dGlvbiJjCg9STU1zZ0dhbWVSZXN1bHQSEAoIZ2FtZV90YXgYASABKAUSKwoL",
+            "cGxheWVyX2luZm8YAiADKAsyFi5SdW1teS5STU1zZ1BsYXllckluZm8SEQoJ",
+            "ZW5kX3N0YXRlGAMgASgFIkQKFlJNTXNnTm90aWZ5VHJ1c3RlZXNoaXASEgoK",
+            "c2VhdF9pbmRleBgBIAEoBRIWCg5pc190cnVzdGVlc2hpcBgCIAEoCCI1ChRS",
+            "TU1zZ05vdGlmeVBsYXllckFjdBIQCghjaGFpcl9pZBgBIAEoBRILCgNhY3QY",
+            "AiABKAUqZAoMRVJNR2FtZVN0YXRlEg8KC0dTX1RQX1JFQURZEAASDgoKR1Nf",
+            "VFBfREVBTBABEhEKDUdTX1RQX1BMQVlJTkcQAhIOCgpHU19UUF9TSE9XEAMS",
+            "EAoMR1NfVFBfUkVTVUxUEAQqZAoLUGxheWVyU3RhdGUSDAoIUFNfUkVBRFkQ",
+            "ABILCgdQU19QTEFZEAESCwoHUFNfR0lWRRACEgsKB1BTX0ZBSUwQAxIQCgxQ",
+            "U19TT1JUX0NBUkQQBBIOCgpQU19TSE9XX0hVEAUqcwoNRVJNR2FtZUFjdGlv",
+            "bhINCglJbnZhbGRBY3QQABIMCghEcm9wQ2FyZBABEgoKBk5hQ2FyZBACEgsK",
+            "B0NodUNhcmQQBBINCglTb3J0c0NhcmQQCBIMCghTaG93Q2FyZBAQEg8KC1Ry",
+            "dXN0ZWVTaGlwECAqYgoORVJNQ29sQ2FyZFR5cGUSDgoKQ09MX1NJTkdMRRAA",
+            "Eg4KCkNPTF9CQU9fWkkQARIQCgxDT0xfU0hVTl9aSEkQAhIRCg1DT0xfUUlO",
+            "R19TSFVOEAMSCwoHQ09MX01BWBAEKsgECg9FUk1Nc2dJRFN1YkdhbWUSFQoR",
+            "TXNnSURTdWJHYW1lX051bGwQABIeChpNc2dJRFN1YkdhbWVfR2FtZVN0YXJ0",
+            "UmVzcBABEiEKHU1zZ0lEU3ViR2FtZV9Ob3RpZnlBY3Rpb25SZXNwEAISFwoT",
+            "TXNnSURTdWJHYW1lX0FjdGlvbhADEhsKF01zZ0lEU3ViR2FtZV9BY3Rpb25S",
+            "ZXNwEAQSHwobTXNnSURTdWJHYW1lX0dhbWVSZXN1bHRSZXNwEAUSIAocTXNn",
+            "SURTdWJHYW1lX05vdGlmeVN0YXRlUmVzcBAGEhwKGE1zZ0lEU3ViR2FtZV9U",
+            "aW1lT3V0UmVzcBALEh0KGU1zZ0lEU3ViR2FtZV9UaW1lT3V0UmVhZHkQDBIh",
+            "Ch1Nc2dJRFN1YkdhbWVfVGltZU91dFJlYWR5UmVzcBANEiAKHE1zZ0lEU3Vi",
+            "R2FtZV9UaW1lT3V0S2lja1Jlc3AQDhImCiJNc2dJRFN1YkdhbWVfTm90aWZ5",
+            "VHJ1c3RlZXNoaXBSZXNwEA8SJgoiTXNnSURTdWJHYW1lX05vdGlmeVN5c3Rl",
+            "bUNoZWF0UmVzcBAUEiMKH01zZ0lEU3ViR2FtZV9Ob3RpZnlOZXh0Q2FyZFJl",
+            "c3AQFRIgChxNc2dJRFN1YkdhbWVfTm90aWZ5SXNNYXhSZXNwEBYSIgoeTXNn",
+            "SURTdWJHYW1lX05vdGlmeUxhc3RBY3RSZXNwEBkSJQohTXNnSURTdWJHYW1l",
+            "X05vdGlmeU9wZXJQbGF5ZXJJbmZvEChiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Rummy.ERMGameState), typeof(global::Rummy.PlayerState), typeof(global::Rummy.ERMGameAction), typeof(global::Rummy.ERMColCardType), typeof(global::Rummy.ERMMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMColumnInfo), global::Rummy.RMColumnInfo.Parser, new[]{ "StartValue", "ColType", "Cards" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgTableState), global::Rummy.RMMsgTableState.Parser, new[]{ "State", "OutIme" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgHandCards), global::Rummy.RMMsgHandCards.Parser, new[]{ "Cards" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgPlayerInfo), global::Rummy.RMMsgPlayerInfo.Parser, new[]{ "ChairId", "PlayStatus", "Gold", "WinGold", "Cards", "CurAct", "HandGroupInfo" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgPlayerInfo), global::Rummy.RMMsgPlayerInfo.Parser, new[]{ "ChairId", "PlayStatus", "Gold", "WinGold", "Cards", "CurAct", "NickName", "Avatar", "VipLevel", "AvatarFrame", "HandGroupInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgSceneInfo), global::Rummy.RMMsgSceneInfo.Parser, new[]{ "MaxMultiple", "CellScore", "TableState", "Tax", "BankerChairId", "CurChairId", "CurChairAct", "OutTime", "TotalTime", "JokerCard", "LeftCardNum", "OutCards", "PlayerInfos" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgGameStartResp), global::Rummy.RMMsgGameStartResp.Parser, new[]{ "CurChairId", "BankerChairId", "MaxScore", "CellScore", "MaxMultiple", "NewGold", "JokerCard", "LeftCardNum", "OutCards", "PlayIndex", "Cards" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Rummy.RMMsgNotifyActionResp), global::Rummy.RMMsgNotifyActionResp.Parser, new[]{ "CurChairId", "CurrentAct", "OperTime" }, null, null, null, null),
@@ -949,6 +951,10 @@ namespace Rummy {
       winGold_ = other.winGold_;
       cards_ = other.cards_.Clone();
       curAct_ = other.curAct_;
+      nickName_ = other.nickName_;
+      avatar_ = other.avatar_;
+      vipLevel_ = other.vipLevel_;
+      avatarFrame_ = other.avatarFrame_;
       handGroupInfo_ = other.handGroupInfo_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -1041,10 +1047,66 @@ namespace Rummy {
       }
     }
 
+    /// <summary>Field number for the "nick_name" field.</summary>
+    public const int NickNameFieldNumber = 7;
+    private string nickName_ = "";
+    /// <summary>
+    ///昵称
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string NickName {
+      get { return nickName_; }
+      set {
+        nickName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "avatar" field.</summary>
+    public const int AvatarFieldNumber = 8;
+    private string avatar_ = "";
+    /// <summary>
+    ///头像
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Avatar {
+      get { return avatar_; }
+      set {
+        avatar_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "vip_level" field.</summary>
+    public const int VipLevelFieldNumber = 9;
+    private int vipLevel_;
+    /// <summary>
+    ///vip等级
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int VipLevel {
+      get { return vipLevel_; }
+      set {
+        vipLevel_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "avatar_frame" field.</summary>
+    public const int AvatarFrameFieldNumber = 10;
+    private int avatarFrame_;
+    /// <summary>
+    ///头像
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int AvatarFrame {
+      get { return avatarFrame_; }
+      set {
+        avatarFrame_ = value;
+      }
+    }
+
     /// <summary>Field number for the "hand_group_info" field.</summary>
-    public const int HandGroupInfoFieldNumber = 7;
+    public const int HandGroupInfoFieldNumber = 11;
     private static readonly pb::FieldCodec<global::Rummy.RMColumnInfo> _repeated_handGroupInfo_codec
-        = pb::FieldCodec.ForMessage(58, global::Rummy.RMColumnInfo.Parser);
+        = pb::FieldCodec.ForMessage(90, global::Rummy.RMColumnInfo.Parser);
     private readonly pbc::RepeatedField<global::Rummy.RMColumnInfo> handGroupInfo_ = new pbc::RepeatedField<global::Rummy.RMColumnInfo>();
     /// <summary>
     ///手牌分组
@@ -1073,6 +1135,10 @@ namespace Rummy {
       if (WinGold != other.WinGold) return false;
       if(!cards_.Equals(other.cards_)) return false;
       if (CurAct != other.CurAct) return false;
+      if (NickName != other.NickName) return false;
+      if (Avatar != other.Avatar) return false;
+      if (VipLevel != other.VipLevel) return false;
+      if (AvatarFrame != other.AvatarFrame) return false;
       if(!handGroupInfo_.Equals(other.handGroupInfo_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1086,6 +1152,10 @@ namespace Rummy {
       if (WinGold != 0L) hash ^= WinGold.GetHashCode();
       hash ^= cards_.GetHashCode();
       if (CurAct != 0) hash ^= CurAct.GetHashCode();
+      if (NickName.Length != 0) hash ^= NickName.GetHashCode();
+      if (Avatar.Length != 0) hash ^= Avatar.GetHashCode();
+      if (VipLevel != 0) hash ^= VipLevel.GetHashCode();
+      if (AvatarFrame != 0) hash ^= AvatarFrame.GetHashCode();
       hash ^= handGroupInfo_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1124,6 +1194,22 @@ namespace Rummy {
         output.WriteRawTag(48);
         output.WriteInt32(CurAct);
       }
+      if (NickName.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(NickName);
+      }
+      if (Avatar.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(Avatar);
+      }
+      if (VipLevel != 0) {
+        output.WriteRawTag(72);
+        output.WriteInt32(VipLevel);
+      }
+      if (AvatarFrame != 0) {
+        output.WriteRawTag(80);
+        output.WriteInt32(AvatarFrame);
+      }
       handGroupInfo_.WriteTo(output, _repeated_handGroupInfo_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1155,6 +1241,22 @@ namespace Rummy {
         output.WriteRawTag(48);
         output.WriteInt32(CurAct);
       }
+      if (NickName.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(NickName);
+      }
+      if (Avatar.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(Avatar);
+      }
+      if (VipLevel != 0) {
+        output.WriteRawTag(72);
+        output.WriteInt32(VipLevel);
+      }
+      if (AvatarFrame != 0) {
+        output.WriteRawTag(80);
+        output.WriteInt32(AvatarFrame);
+      }
       handGroupInfo_.WriteTo(ref output, _repeated_handGroupInfo_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1180,6 +1282,18 @@ namespace Rummy {
       size += cards_.CalculateSize(_repeated_cards_codec);
       if (CurAct != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(CurAct);
+      }
+      if (NickName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(NickName);
+      }
+      if (Avatar.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Avatar);
+      }
+      if (VipLevel != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(VipLevel);
+      }
+      if (AvatarFrame != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(AvatarFrame);
       }
       size += handGroupInfo_.CalculateSize(_repeated_handGroupInfo_codec);
       if (_unknownFields != null) {
@@ -1208,6 +1322,18 @@ namespace Rummy {
       cards_.Add(other.cards_);
       if (other.CurAct != 0) {
         CurAct = other.CurAct;
+      }
+      if (other.NickName.Length != 0) {
+        NickName = other.NickName;
+      }
+      if (other.Avatar.Length != 0) {
+        Avatar = other.Avatar;
+      }
+      if (other.VipLevel != 0) {
+        VipLevel = other.VipLevel;
+      }
+      if (other.AvatarFrame != 0) {
+        AvatarFrame = other.AvatarFrame;
       }
       handGroupInfo_.Add(other.handGroupInfo_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -1250,6 +1376,22 @@ namespace Rummy {
             break;
           }
           case 58: {
+            NickName = input.ReadString();
+            break;
+          }
+          case 66: {
+            Avatar = input.ReadString();
+            break;
+          }
+          case 72: {
+            VipLevel = input.ReadInt32();
+            break;
+          }
+          case 80: {
+            AvatarFrame = input.ReadInt32();
+            break;
+          }
+          case 90: {
             handGroupInfo_.AddEntriesFrom(input, _repeated_handGroupInfo_codec);
             break;
           }
@@ -1293,6 +1435,22 @@ namespace Rummy {
             break;
           }
           case 58: {
+            NickName = input.ReadString();
+            break;
+          }
+          case 66: {
+            Avatar = input.ReadString();
+            break;
+          }
+          case 72: {
+            VipLevel = input.ReadInt32();
+            break;
+          }
+          case 80: {
+            AvatarFrame = input.ReadInt32();
+            break;
+          }
+          case 90: {
             handGroupInfo_.AddEntriesFrom(ref input, _repeated_handGroupInfo_codec);
             break;
           }

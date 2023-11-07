@@ -100,7 +100,13 @@ message RMMsgPlayerInfo
 	int64					win_gold		= 4;	//输赢分	每局结算的
 	repeated int32			cards			= 5;	//手牌
 	int32					cur_act			= 6;	//当前玩家的操作码
-	repeated RMColumnInfo 	hand_group_info	= 7;	//手牌分组
+
+	string					nick_name		= 7;	//昵称
+	string					avatar			= 8;	//头像
+	int32 					vip_level		= 9;	//vip等级
+	int32					avatar_frame	= 10;	//头像
+
+	repeated RMColumnInfo 	hand_group_info	= 11;	//手牌分组
 }
 
 //场景消息

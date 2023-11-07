@@ -851,12 +851,16 @@ class RMMsgPlayerInfo PROTOBUF_FINAL :
 
   enum : int {
     kCardsFieldNumber = 5,
-    kHandGroupInfoFieldNumber = 7,
+    kHandGroupInfoFieldNumber = 11,
+    kNickNameFieldNumber = 7,
+    kAvatarFieldNumber = 8,
     kChairIdFieldNumber = 1,
     kPlayStatusFieldNumber = 2,
     kGoldFieldNumber = 3,
     kWinGoldFieldNumber = 4,
     kCurActFieldNumber = 6,
+    kVipLevelFieldNumber = 9,
+    kAvatarFrameFieldNumber = 10,
   };
   // repeated int32 cards = 5;
   int cards_size() const;
@@ -880,7 +884,7 @@ class RMMsgPlayerInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_cards();
 
-  // repeated .Rummy.RMColumnInfo hand_group_info = 7;
+  // repeated .Rummy.RMColumnInfo hand_group_info = 11;
   int hand_group_info_size() const;
   private:
   int _internal_hand_group_info_size() const;
@@ -897,6 +901,38 @@ class RMMsgPlayerInfo PROTOBUF_FINAL :
   ::Rummy::RMColumnInfo* add_hand_group_info();
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Rummy::RMColumnInfo >&
       hand_group_info() const;
+
+  // string nick_name = 7;
+  void clear_nick_name();
+  const std::string& nick_name() const;
+  void set_nick_name(const std::string& value);
+  void set_nick_name(std::string&& value);
+  void set_nick_name(const char* value);
+  void set_nick_name(const char* value, size_t size);
+  std::string* mutable_nick_name();
+  std::string* release_nick_name();
+  void set_allocated_nick_name(std::string* nick_name);
+  private:
+  const std::string& _internal_nick_name() const;
+  void _internal_set_nick_name(const std::string& value);
+  std::string* _internal_mutable_nick_name();
+  public:
+
+  // string avatar = 8;
+  void clear_avatar();
+  const std::string& avatar() const;
+  void set_avatar(const std::string& value);
+  void set_avatar(std::string&& value);
+  void set_avatar(const char* value);
+  void set_avatar(const char* value, size_t size);
+  std::string* mutable_avatar();
+  std::string* release_avatar();
+  void set_allocated_avatar(std::string* avatar);
+  private:
+  const std::string& _internal_avatar() const;
+  void _internal_set_avatar(const std::string& value);
+  std::string* _internal_mutable_avatar();
+  public:
 
   // int32 chair_id = 1;
   void clear_chair_id();
@@ -943,6 +979,24 @@ class RMMsgPlayerInfo PROTOBUF_FINAL :
   void _internal_set_cur_act(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 vip_level = 9;
+  void clear_vip_level();
+  ::PROTOBUF_NAMESPACE_ID::int32 vip_level() const;
+  void set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_vip_level() const;
+  void _internal_set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 avatar_frame = 10;
+  void clear_avatar_frame();
+  ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame() const;
+  void set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_avatar_frame() const;
+  void _internal_set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:Rummy.RMMsgPlayerInfo)
  private:
   class _Internal;
@@ -953,11 +1007,15 @@ class RMMsgPlayerInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > cards_;
   mutable std::atomic<int> _cards_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Rummy::RMColumnInfo > hand_group_info_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr nick_name_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr avatar_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 play_status_;
   ::PROTOBUF_NAMESPACE_ID::int64 gold_;
   ::PROTOBUF_NAMESPACE_ID::int64 win_gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 cur_act_;
+  ::PROTOBUF_NAMESPACE_ID::int32 vip_level_;
+  ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Rummy_2eproto;
 };
@@ -3081,7 +3139,169 @@ inline void RMMsgPlayerInfo::set_cur_act(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:Rummy.RMMsgPlayerInfo.cur_act)
 }
 
-// repeated .Rummy.RMColumnInfo hand_group_info = 7;
+// string nick_name = 7;
+inline void RMMsgPlayerInfo::clear_nick_name() {
+  nick_name_.ClearToEmpty();
+}
+inline const std::string& RMMsgPlayerInfo::nick_name() const {
+  // @@protoc_insertion_point(field_get:Rummy.RMMsgPlayerInfo.nick_name)
+  return _internal_nick_name();
+}
+inline void RMMsgPlayerInfo::set_nick_name(const std::string& value) {
+  _internal_set_nick_name(value);
+  // @@protoc_insertion_point(field_set:Rummy.RMMsgPlayerInfo.nick_name)
+}
+inline std::string* RMMsgPlayerInfo::mutable_nick_name() {
+  // @@protoc_insertion_point(field_mutable:Rummy.RMMsgPlayerInfo.nick_name)
+  return _internal_mutable_nick_name();
+}
+inline const std::string& RMMsgPlayerInfo::_internal_nick_name() const {
+  return nick_name_.Get();
+}
+inline void RMMsgPlayerInfo::_internal_set_nick_name(const std::string& value) {
+  
+  nick_name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void RMMsgPlayerInfo::set_nick_name(std::string&& value) {
+  
+  nick_name_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:Rummy.RMMsgPlayerInfo.nick_name)
+}
+inline void RMMsgPlayerInfo::set_nick_name(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  nick_name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:Rummy.RMMsgPlayerInfo.nick_name)
+}
+inline void RMMsgPlayerInfo::set_nick_name(const char* value,
+    size_t size) {
+  
+  nick_name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:Rummy.RMMsgPlayerInfo.nick_name)
+}
+inline std::string* RMMsgPlayerInfo::_internal_mutable_nick_name() {
+  
+  return nick_name_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* RMMsgPlayerInfo::release_nick_name() {
+  // @@protoc_insertion_point(field_release:Rummy.RMMsgPlayerInfo.nick_name)
+  return nick_name_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void RMMsgPlayerInfo::set_allocated_nick_name(std::string* nick_name) {
+  if (nick_name != nullptr) {
+    
+  } else {
+    
+  }
+  nick_name_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), nick_name,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:Rummy.RMMsgPlayerInfo.nick_name)
+}
+
+// string avatar = 8;
+inline void RMMsgPlayerInfo::clear_avatar() {
+  avatar_.ClearToEmpty();
+}
+inline const std::string& RMMsgPlayerInfo::avatar() const {
+  // @@protoc_insertion_point(field_get:Rummy.RMMsgPlayerInfo.avatar)
+  return _internal_avatar();
+}
+inline void RMMsgPlayerInfo::set_avatar(const std::string& value) {
+  _internal_set_avatar(value);
+  // @@protoc_insertion_point(field_set:Rummy.RMMsgPlayerInfo.avatar)
+}
+inline std::string* RMMsgPlayerInfo::mutable_avatar() {
+  // @@protoc_insertion_point(field_mutable:Rummy.RMMsgPlayerInfo.avatar)
+  return _internal_mutable_avatar();
+}
+inline const std::string& RMMsgPlayerInfo::_internal_avatar() const {
+  return avatar_.Get();
+}
+inline void RMMsgPlayerInfo::_internal_set_avatar(const std::string& value) {
+  
+  avatar_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void RMMsgPlayerInfo::set_avatar(std::string&& value) {
+  
+  avatar_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:Rummy.RMMsgPlayerInfo.avatar)
+}
+inline void RMMsgPlayerInfo::set_avatar(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  avatar_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:Rummy.RMMsgPlayerInfo.avatar)
+}
+inline void RMMsgPlayerInfo::set_avatar(const char* value,
+    size_t size) {
+  
+  avatar_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:Rummy.RMMsgPlayerInfo.avatar)
+}
+inline std::string* RMMsgPlayerInfo::_internal_mutable_avatar() {
+  
+  return avatar_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* RMMsgPlayerInfo::release_avatar() {
+  // @@protoc_insertion_point(field_release:Rummy.RMMsgPlayerInfo.avatar)
+  return avatar_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void RMMsgPlayerInfo::set_allocated_avatar(std::string* avatar) {
+  if (avatar != nullptr) {
+    
+  } else {
+    
+  }
+  avatar_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), avatar,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:Rummy.RMMsgPlayerInfo.avatar)
+}
+
+// int32 vip_level = 9;
+inline void RMMsgPlayerInfo::clear_vip_level() {
+  vip_level_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgPlayerInfo::_internal_vip_level() const {
+  return vip_level_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgPlayerInfo::vip_level() const {
+  // @@protoc_insertion_point(field_get:Rummy.RMMsgPlayerInfo.vip_level)
+  return _internal_vip_level();
+}
+inline void RMMsgPlayerInfo::_internal_set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  vip_level_ = value;
+}
+inline void RMMsgPlayerInfo::set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_vip_level(value);
+  // @@protoc_insertion_point(field_set:Rummy.RMMsgPlayerInfo.vip_level)
+}
+
+// int32 avatar_frame = 10;
+inline void RMMsgPlayerInfo::clear_avatar_frame() {
+  avatar_frame_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgPlayerInfo::_internal_avatar_frame() const {
+  return avatar_frame_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 RMMsgPlayerInfo::avatar_frame() const {
+  // @@protoc_insertion_point(field_get:Rummy.RMMsgPlayerInfo.avatar_frame)
+  return _internal_avatar_frame();
+}
+inline void RMMsgPlayerInfo::_internal_set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  avatar_frame_ = value;
+}
+inline void RMMsgPlayerInfo::set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_avatar_frame(value);
+  // @@protoc_insertion_point(field_set:Rummy.RMMsgPlayerInfo.avatar_frame)
+}
+
+// repeated .Rummy.RMColumnInfo hand_group_info = 11;
 inline int RMMsgPlayerInfo::_internal_hand_group_info_size() const {
   return hand_group_info_.size();
 }

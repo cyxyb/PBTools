@@ -282,6 +282,10 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Rummy_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgPlayerInfo, win_gold_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgPlayerInfo, cards_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgPlayerInfo, cur_act_),
+  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgPlayerInfo, nick_name_),
+  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgPlayerInfo, avatar_),
+  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgPlayerInfo, vip_level_),
+  PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgPlayerInfo, avatar_frame_),
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgPlayerInfo, hand_group_info_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::Rummy::RMMsgSceneInfo, _internal_metadata_),
@@ -384,15 +388,15 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 8, -1, sizeof(::Rummy::RMMsgTableState)},
   { 15, -1, sizeof(::Rummy::RMMsgHandCards)},
   { 21, -1, sizeof(::Rummy::RMMsgPlayerInfo)},
-  { 33, -1, sizeof(::Rummy::RMMsgSceneInfo)},
-  { 51, -1, sizeof(::Rummy::RMMsgGameStartResp)},
-  { 67, -1, sizeof(::Rummy::RMMsgNotifyActionResp)},
-  { 75, -1, sizeof(::Rummy::RMMsgAction)},
-  { 85, -1, sizeof(::Rummy::RMMsgActionResp)},
-  { 97, -1, sizeof(::Rummy::RMMsgActionChoice)},
-  { 106, -1, sizeof(::Rummy::RMMsgGameResult)},
-  { 114, -1, sizeof(::Rummy::RMMsgNotifyTrusteeship)},
-  { 121, -1, sizeof(::Rummy::RMMsgNotifyPlayerAct)},
+  { 37, -1, sizeof(::Rummy::RMMsgSceneInfo)},
+  { 55, -1, sizeof(::Rummy::RMMsgGameStartResp)},
+  { 71, -1, sizeof(::Rummy::RMMsgNotifyActionResp)},
+  { 79, -1, sizeof(::Rummy::RMMsgAction)},
+  { 89, -1, sizeof(::Rummy::RMMsgActionResp)},
+  { 101, -1, sizeof(::Rummy::RMMsgActionChoice)},
+  { 110, -1, sizeof(::Rummy::RMMsgGameResult)},
+  { 118, -1, sizeof(::Rummy::RMMsgNotifyTrusteeship)},
+  { 125, -1, sizeof(::Rummy::RMMsgNotifyPlayerAct)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -416,70 +420,72 @@ const char descriptor_table_protodef_Rummy_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "start_value\030\001 \001(\005\022\020\n\010col_type\030\002 \001(\005\022\r\n\005c"
   "ards\030\003 \003(\005\"1\n\017RMMsgTableState\022\r\n\005state\030\001"
   " \001(\005\022\017\n\007out_ime\030\002 \001(\005\"\037\n\016RMMsgHandCards\022"
-  "\r\n\005cards\030\001 \003(\005\"\246\001\n\017RMMsgPlayerInfo\022\020\n\010ch"
+  "\r\n\005cards\030\001 \003(\005\"\362\001\n\017RMMsgPlayerInfo\022\020\n\010ch"
   "air_id\030\001 \001(\005\022\023\n\013play_status\030\002 \001(\005\022\014\n\004gol"
   "d\030\003 \001(\003\022\020\n\010win_gold\030\004 \001(\003\022\r\n\005cards\030\005 \003(\005"
-  "\022\017\n\007cur_act\030\006 \001(\005\022,\n\017hand_group_info\030\007 \003"
-  "(\0132\023.Rummy.RMColumnInfo\"\264\002\n\016RMMsgSceneIn"
-  "fo\022\024\n\014max_multiple\030\001 \001(\003\022\022\n\ncell_score\030\002"
-  " \001(\003\022\023\n\013table_state\030\003 \001(\005\022\013\n\003tax\030\004 \001(\005\022\027"
-  "\n\017banker_chair_id\030\005 \001(\005\022\024\n\014cur_chair_id\030"
-  "\006 \001(\005\022\025\n\rcur_chair_act\030\007 \001(\005\022\020\n\010out_time"
-  "\030\010 \001(\005\022\022\n\ntotal_time\030\t \001(\005\022\022\n\njoker_card"
-  "\030\n \001(\005\022\025\n\rleft_card_num\030\013 \001(\005\022\021\n\tout_car"
-  "ds\030\014 \003(\005\022,\n\014player_infos\030\r \003(\0132\026.Rummy.R"
-  "MMsgPlayerInfo\"\363\001\n\022RMMsgGameStartResp\022\024\n"
-  "\014cur_chair_id\030\001 \001(\005\022\027\n\017banker_chair_id\030\002"
-  " \001(\005\022\021\n\tmax_score\030\003 \001(\003\022\022\n\ncell_score\030\004 "
-  "\001(\003\022\024\n\014max_multiple\030\005 \001(\003\022\020\n\010new_gold\030\t "
-  "\001(\003\022\022\n\njoker_card\030\n \001(\005\022\025\n\rleft_card_num"
-  "\030\013 \001(\005\022\021\n\tout_cards\030\014 \003(\005\022\022\n\nplay_index\030"
-  "\r \003(\005\022\r\n\005cards\030\017 \003(\005\"U\n\025RMMsgNotifyActio"
-  "nResp\022\024\n\014cur_chair_id\030\001 \001(\005\022\023\n\013current_a"
-  "ct\030\003 \001(\005\022\021\n\toper_time\030\004 \001(\005\"\210\001\n\013RMMsgAct"
-  "ion\022\020\n\010chair_id\030\001 \001(\005\022\020\n\010act_type\030\002 \001(\005\022"
-  "\021\n\tdest_card\030\003 \001(\005\022\024\n\014get_out_card\030\004 \001(\010"
-  "\022,\n\017hand_group_info\030\005 \003(\0132\023.Rummy.RMColu"
-  "mnInfo\"\241\001\n\017RMMsgActionResp\022\020\n\010chair_id\030\001"
-  " \001(\005\022\020\n\010act_type\030\002 \001(\005\022\021\n\tdest_card\030\003 \001("
-  "\005\022\024\n\014get_out_card\030\004 \001(\010\022\025\n\rdrop_multiple"
-  "\030\006 \001(\r\022\023\n\013auto_action\030\007 \001(\010\022\025\n\rleft_card"
-  "_num\030\t \001(\005\"\227\001\n\021RMMsgActionChoice\022\030\n\020dete"
-  "rmined_level\030\001 \001(\005\022\024\n\014is_determine\030\002 \001(\010"
-  "\022#\n\007choices\030\003 \003(\0132\022.Rummy.RMMsgAction\022-\n"
-  "\021determined_action\030\004 \001(\0132\022.Rummy.RMMsgAc"
-  "tion\"c\n\017RMMsgGameResult\022\020\n\010game_tax\030\001 \001("
-  "\005\022+\n\013player_info\030\002 \003(\0132\026.Rummy.RMMsgPlay"
-  "erInfo\022\021\n\tend_state\030\003 \001(\005\"D\n\026RMMsgNotify"
-  "Trusteeship\022\022\n\nseat_index\030\001 \001(\005\022\026\n\016is_tr"
-  "usteeship\030\002 \001(\010\"5\n\024RMMsgNotifyPlayerAct\022"
-  "\020\n\010chair_id\030\001 \001(\005\022\013\n\003act\030\002 \001(\005*d\n\014ERMGam"
-  "eState\022\017\n\013GS_TP_READY\020\000\022\016\n\nGS_TP_DEAL\020\001\022"
-  "\021\n\rGS_TP_PLAYING\020\002\022\016\n\nGS_TP_SHOW\020\003\022\020\n\014GS"
-  "_TP_RESULT\020\004*d\n\013PlayerState\022\014\n\010PS_READY\020"
-  "\000\022\013\n\007PS_PLAY\020\001\022\013\n\007PS_GIVE\020\002\022\013\n\007PS_FAIL\020\003"
-  "\022\020\n\014PS_SORT_CARD\020\004\022\016\n\nPS_SHOW_HU\020\005*s\n\rER"
-  "MGameAction\022\r\n\tInvaldAct\020\000\022\014\n\010DropCard\020\001"
-  "\022\n\n\006NaCard\020\002\022\013\n\007ChuCard\020\004\022\r\n\tSortsCard\020\010"
-  "\022\014\n\010ShowCard\020\020\022\017\n\013TrusteeShip\020 *b\n\016ERMCo"
-  "lCardType\022\016\n\nCOL_SINGLE\020\000\022\016\n\nCOL_BAO_ZI\020"
-  "\001\022\020\n\014COL_SHUN_ZHI\020\002\022\021\n\rCOL_QING_SHUN\020\003\022\013"
-  "\n\007COL_MAX\020\004*\310\004\n\017ERMMsgIDSubGame\022\025\n\021MsgID"
-  "SubGame_Null\020\000\022\036\n\032MsgIDSubGame_GameStart"
-  "Resp\020\001\022!\n\035MsgIDSubGame_NotifyActionResp\020"
-  "\002\022\027\n\023MsgIDSubGame_Action\020\003\022\033\n\027MsgIDSubGa"
-  "me_ActionResp\020\004\022\037\n\033MsgIDSubGame_GameResu"
-  "ltResp\020\005\022 \n\034MsgIDSubGame_NotifyStateResp"
-  "\020\006\022\034\n\030MsgIDSubGame_TimeOutResp\020\013\022\035\n\031MsgI"
-  "DSubGame_TimeOutReady\020\014\022!\n\035MsgIDSubGame_"
-  "TimeOutReadyResp\020\r\022 \n\034MsgIDSubGame_TimeO"
-  "utKickResp\020\016\022&\n\"MsgIDSubGame_NotifyTrust"
-  "eeshipResp\020\017\022&\n\"MsgIDSubGame_NotifySyste"
-  "mCheatResp\020\024\022#\n\037MsgIDSubGame_NotifyNextC"
-  "ardResp\020\025\022 \n\034MsgIDSubGame_NotifyIsMaxRes"
-  "p\020\026\022\"\n\036MsgIDSubGame_NotifyLastActResp\020\031\022"
-  "%\n!MsgIDSubGame_NotifyOperPlayerInfo\020(b\006"
-  "proto3"
+  "\022\017\n\007cur_act\030\006 \001(\005\022\021\n\tnick_name\030\007 \001(\t\022\016\n\006"
+  "avatar\030\010 \001(\t\022\021\n\tvip_level\030\t \001(\005\022\024\n\014avata"
+  "r_frame\030\n \001(\005\022,\n\017hand_group_info\030\013 \003(\0132\023"
+  ".Rummy.RMColumnInfo\"\264\002\n\016RMMsgSceneInfo\022\024"
+  "\n\014max_multiple\030\001 \001(\003\022\022\n\ncell_score\030\002 \001(\003"
+  "\022\023\n\013table_state\030\003 \001(\005\022\013\n\003tax\030\004 \001(\005\022\027\n\017ba"
+  "nker_chair_id\030\005 \001(\005\022\024\n\014cur_chair_id\030\006 \001("
+  "\005\022\025\n\rcur_chair_act\030\007 \001(\005\022\020\n\010out_time\030\010 \001"
+  "(\005\022\022\n\ntotal_time\030\t \001(\005\022\022\n\njoker_card\030\n \001"
+  "(\005\022\025\n\rleft_card_num\030\013 \001(\005\022\021\n\tout_cards\030\014"
+  " \003(\005\022,\n\014player_infos\030\r \003(\0132\026.Rummy.RMMsg"
+  "PlayerInfo\"\363\001\n\022RMMsgGameStartResp\022\024\n\014cur"
+  "_chair_id\030\001 \001(\005\022\027\n\017banker_chair_id\030\002 \001(\005"
+  "\022\021\n\tmax_score\030\003 \001(\003\022\022\n\ncell_score\030\004 \001(\003\022"
+  "\024\n\014max_multiple\030\005 \001(\003\022\020\n\010new_gold\030\t \001(\003\022"
+  "\022\n\njoker_card\030\n \001(\005\022\025\n\rleft_card_num\030\013 \001"
+  "(\005\022\021\n\tout_cards\030\014 \003(\005\022\022\n\nplay_index\030\r \003("
+  "\005\022\r\n\005cards\030\017 \003(\005\"U\n\025RMMsgNotifyActionRes"
+  "p\022\024\n\014cur_chair_id\030\001 \001(\005\022\023\n\013current_act\030\003"
+  " \001(\005\022\021\n\toper_time\030\004 \001(\005\"\210\001\n\013RMMsgAction\022"
+  "\020\n\010chair_id\030\001 \001(\005\022\020\n\010act_type\030\002 \001(\005\022\021\n\td"
+  "est_card\030\003 \001(\005\022\024\n\014get_out_card\030\004 \001(\010\022,\n\017"
+  "hand_group_info\030\005 \003(\0132\023.Rummy.RMColumnIn"
+  "fo\"\241\001\n\017RMMsgActionResp\022\020\n\010chair_id\030\001 \001(\005"
+  "\022\020\n\010act_type\030\002 \001(\005\022\021\n\tdest_card\030\003 \001(\005\022\024\n"
+  "\014get_out_card\030\004 \001(\010\022\025\n\rdrop_multiple\030\006 \001"
+  "(\r\022\023\n\013auto_action\030\007 \001(\010\022\025\n\rleft_card_num"
+  "\030\t \001(\005\"\227\001\n\021RMMsgActionChoice\022\030\n\020determin"
+  "ed_level\030\001 \001(\005\022\024\n\014is_determine\030\002 \001(\010\022#\n\007"
+  "choices\030\003 \003(\0132\022.Rummy.RMMsgAction\022-\n\021det"
+  "ermined_action\030\004 \001(\0132\022.Rummy.RMMsgAction"
+  "\"c\n\017RMMsgGameResult\022\020\n\010game_tax\030\001 \001(\005\022+\n"
+  "\013player_info\030\002 \003(\0132\026.Rummy.RMMsgPlayerIn"
+  "fo\022\021\n\tend_state\030\003 \001(\005\"D\n\026RMMsgNotifyTrus"
+  "teeship\022\022\n\nseat_index\030\001 \001(\005\022\026\n\016is_truste"
+  "eship\030\002 \001(\010\"5\n\024RMMsgNotifyPlayerAct\022\020\n\010c"
+  "hair_id\030\001 \001(\005\022\013\n\003act\030\002 \001(\005*d\n\014ERMGameSta"
+  "te\022\017\n\013GS_TP_READY\020\000\022\016\n\nGS_TP_DEAL\020\001\022\021\n\rG"
+  "S_TP_PLAYING\020\002\022\016\n\nGS_TP_SHOW\020\003\022\020\n\014GS_TP_"
+  "RESULT\020\004*d\n\013PlayerState\022\014\n\010PS_READY\020\000\022\013\n"
+  "\007PS_PLAY\020\001\022\013\n\007PS_GIVE\020\002\022\013\n\007PS_FAIL\020\003\022\020\n\014"
+  "PS_SORT_CARD\020\004\022\016\n\nPS_SHOW_HU\020\005*s\n\rERMGam"
+  "eAction\022\r\n\tInvaldAct\020\000\022\014\n\010DropCard\020\001\022\n\n\006"
+  "NaCard\020\002\022\013\n\007ChuCard\020\004\022\r\n\tSortsCard\020\010\022\014\n\010"
+  "ShowCard\020\020\022\017\n\013TrusteeShip\020 *b\n\016ERMColCar"
+  "dType\022\016\n\nCOL_SINGLE\020\000\022\016\n\nCOL_BAO_ZI\020\001\022\020\n"
+  "\014COL_SHUN_ZHI\020\002\022\021\n\rCOL_QING_SHUN\020\003\022\013\n\007CO"
+  "L_MAX\020\004*\310\004\n\017ERMMsgIDSubGame\022\025\n\021MsgIDSubG"
+  "ame_Null\020\000\022\036\n\032MsgIDSubGame_GameStartResp"
+  "\020\001\022!\n\035MsgIDSubGame_NotifyActionResp\020\002\022\027\n"
+  "\023MsgIDSubGame_Action\020\003\022\033\n\027MsgIDSubGame_A"
+  "ctionResp\020\004\022\037\n\033MsgIDSubGame_GameResultRe"
+  "sp\020\005\022 \n\034MsgIDSubGame_NotifyStateResp\020\006\022\034"
+  "\n\030MsgIDSubGame_TimeOutResp\020\013\022\035\n\031MsgIDSub"
+  "Game_TimeOutReady\020\014\022!\n\035MsgIDSubGame_Time"
+  "OutReadyResp\020\r\022 \n\034MsgIDSubGame_TimeOutKi"
+  "ckResp\020\016\022&\n\"MsgIDSubGame_NotifyTrusteesh"
+  "ipResp\020\017\022&\n\"MsgIDSubGame_NotifySystemChe"
+  "atResp\020\024\022#\n\037MsgIDSubGame_NotifyNextCardR"
+  "esp\020\025\022 \n\034MsgIDSubGame_NotifyIsMaxResp\020\026\022"
+  "\"\n\036MsgIDSubGame_NotifyLastActResp\020\031\022%\n!M"
+  "sgIDSubGame_NotifyOperPlayerInfo\020(b\006prot"
+  "o3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Rummy_2eproto_deps[1] = {
 };
@@ -500,7 +506,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Rum
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Rummy_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Rummy_2eproto = {
-  false, false, descriptor_table_protodef_Rummy_2eproto, "Rummy.proto", 2686,
+  false, false, descriptor_table_protodef_Rummy_2eproto, "Rummy.proto", 2762,
   &descriptor_table_Rummy_2eproto_once, descriptor_table_Rummy_2eproto_sccs, descriptor_table_Rummy_2eproto_deps, 13, 0,
   schemas, file_default_instances, TableStruct_Rummy_2eproto::offsets,
   file_level_metadata_Rummy_2eproto, 13, file_level_enum_descriptors_Rummy_2eproto, file_level_service_descriptors_Rummy_2eproto,
@@ -1332,18 +1338,30 @@ RMMsgPlayerInfo::RMMsgPlayerInfo(const RMMsgPlayerInfo& from)
       cards_(from.cards_),
       hand_group_info_(from.hand_group_info_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  nick_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from._internal_nick_name().empty()) {
+    nick_name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_nick_name(), 
+      GetArena());
+  }
+  avatar_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from._internal_avatar().empty()) {
+    avatar_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_avatar(), 
+      GetArena());
+  }
   ::memcpy(&chair_id_, &from.chair_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&cur_act_) -
-    reinterpret_cast<char*>(&chair_id_)) + sizeof(cur_act_));
+    static_cast<size_t>(reinterpret_cast<char*>(&avatar_frame_) -
+    reinterpret_cast<char*>(&chair_id_)) + sizeof(avatar_frame_));
   // @@protoc_insertion_point(copy_constructor:Rummy.RMMsgPlayerInfo)
 }
 
 void RMMsgPlayerInfo::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_RMMsgPlayerInfo_Rummy_2eproto.base);
+  nick_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  avatar_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&chair_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&cur_act_) -
-      reinterpret_cast<char*>(&chair_id_)) + sizeof(cur_act_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&avatar_frame_) -
+      reinterpret_cast<char*>(&chair_id_)) + sizeof(avatar_frame_));
 }
 
 RMMsgPlayerInfo::~RMMsgPlayerInfo() {
@@ -1354,6 +1372,8 @@ RMMsgPlayerInfo::~RMMsgPlayerInfo() {
 
 void RMMsgPlayerInfo::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
+  nick_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  avatar_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
 void RMMsgPlayerInfo::ArenaDtor(void* object) {
@@ -1379,9 +1399,11 @@ void RMMsgPlayerInfo::Clear() {
 
   cards_.Clear();
   hand_group_info_.Clear();
+  nick_name_.ClearToEmpty();
+  avatar_.ClearToEmpty();
   ::memset(&chair_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&cur_act_) -
-      reinterpret_cast<char*>(&chair_id_)) + sizeof(cur_act_));
+      reinterpret_cast<char*>(&avatar_frame_) -
+      reinterpret_cast<char*>(&chair_id_)) + sizeof(avatar_frame_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -1437,16 +1459,48 @@ const char* RMMsgPlayerInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated .Rummy.RMColumnInfo hand_group_info = 7;
+      // string nick_name = 7;
       case 7:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+          auto str = _internal_mutable_nick_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "Rummy.RMMsgPlayerInfo.nick_name"));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string avatar = 8;
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 66)) {
+          auto str = _internal_mutable_avatar();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "Rummy.RMMsgPlayerInfo.avatar"));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 vip_level = 9;
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+          vip_level_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 avatar_frame = 10;
+      case 10:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
+          avatar_frame_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated .Rummy.RMColumnInfo hand_group_info = 11;
+      case 11:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 90)) {
           ptr -= 1;
           do {
             ptr += 1;
             ptr = ctx->ParseMessage(_internal_add_hand_group_info(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<58>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<90>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -1516,12 +1570,44 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_cur_act(), target);
   }
 
-  // repeated .Rummy.RMColumnInfo hand_group_info = 7;
+  // string nick_name = 7;
+  if (this->nick_name().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_nick_name().data(), static_cast<int>(this->_internal_nick_name().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Rummy.RMMsgPlayerInfo.nick_name");
+    target = stream->WriteStringMaybeAliased(
+        7, this->_internal_nick_name(), target);
+  }
+
+  // string avatar = 8;
+  if (this->avatar().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_avatar().data(), static_cast<int>(this->_internal_avatar().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "Rummy.RMMsgPlayerInfo.avatar");
+    target = stream->WriteStringMaybeAliased(
+        8, this->_internal_avatar(), target);
+  }
+
+  // int32 vip_level = 9;
+  if (this->vip_level() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(9, this->_internal_vip_level(), target);
+  }
+
+  // int32 avatar_frame = 10;
+  if (this->avatar_frame() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(10, this->_internal_avatar_frame(), target);
+  }
+
+  // repeated .Rummy.RMColumnInfo hand_group_info = 11;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_hand_group_info_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(7, this->_internal_hand_group_info(i), target, stream);
+      InternalWriteMessage(11, this->_internal_hand_group_info(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1555,11 +1641,25 @@ size_t RMMsgPlayerInfo::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  // repeated .Rummy.RMColumnInfo hand_group_info = 7;
+  // repeated .Rummy.RMColumnInfo hand_group_info = 11;
   total_size += 1UL * this->_internal_hand_group_info_size();
   for (const auto& msg : this->hand_group_info_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  // string nick_name = 7;
+  if (this->nick_name().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_nick_name());
+  }
+
+  // string avatar = 8;
+  if (this->avatar().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_avatar());
   }
 
   // int32 chair_id = 1;
@@ -1597,6 +1697,20 @@ size_t RMMsgPlayerInfo::ByteSizeLong() const {
         this->_internal_cur_act());
   }
 
+  // int32 vip_level = 9;
+  if (this->vip_level() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_vip_level());
+  }
+
+  // int32 avatar_frame = 10;
+  if (this->avatar_frame() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_avatar_frame());
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
         _internal_metadata_, total_size, &_cached_size_);
@@ -1630,6 +1744,12 @@ void RMMsgPlayerInfo::MergeFrom(const RMMsgPlayerInfo& from) {
 
   cards_.MergeFrom(from.cards_);
   hand_group_info_.MergeFrom(from.hand_group_info_);
+  if (from.nick_name().size() > 0) {
+    _internal_set_nick_name(from._internal_nick_name());
+  }
+  if (from.avatar().size() > 0) {
+    _internal_set_avatar(from._internal_avatar());
+  }
   if (from.chair_id() != 0) {
     _internal_set_chair_id(from._internal_chair_id());
   }
@@ -1644,6 +1764,12 @@ void RMMsgPlayerInfo::MergeFrom(const RMMsgPlayerInfo& from) {
   }
   if (from.cur_act() != 0) {
     _internal_set_cur_act(from._internal_cur_act());
+  }
+  if (from.vip_level() != 0) {
+    _internal_set_vip_level(from._internal_vip_level());
+  }
+  if (from.avatar_frame() != 0) {
+    _internal_set_avatar_frame(from._internal_avatar_frame());
   }
 }
 
@@ -1670,9 +1796,11 @@ void RMMsgPlayerInfo::InternalSwap(RMMsgPlayerInfo* other) {
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   cards_.InternalSwap(&other->cards_);
   hand_group_info_.InternalSwap(&other->hand_group_info_);
+  nick_name_.Swap(&other->nick_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  avatar_.Swap(&other->avatar_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(RMMsgPlayerInfo, cur_act_)
-      + sizeof(RMMsgPlayerInfo::cur_act_)
+      PROTOBUF_FIELD_OFFSET(RMMsgPlayerInfo, avatar_frame_)
+      + sizeof(RMMsgPlayerInfo::avatar_frame_)
       - PROTOBUF_FIELD_OFFSET(RMMsgPlayerInfo, chair_id_)>(
           reinterpret_cast<char*>(&chair_id_),
           reinterpret_cast<char*>(&other->chair_id_));
