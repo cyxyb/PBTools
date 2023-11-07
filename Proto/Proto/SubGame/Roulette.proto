@@ -45,6 +45,7 @@ message GmaeConfg
 	repeated int32 bet_limit_max		= 3;    //最大下注限制
 	repeated BettonArea bet_area_cfg	= 4;   	//下注区域配置
 	repeated int32 multiple_cfg			= 5;    //区域倍数
+	repeated int32 times				= 6;	//阶段时间
 }
 //游戏状态
 message GameState 
@@ -55,7 +56,7 @@ message GameState
 //下注记录
 message UserBetRecord
 {
-	int32 chair_id 						= 1;	//下注区域
+	int32 bet_area 						= 1;	//下注区域
 	int64 bet_value 					= 2;	//下注值
 }
 //场景数据
@@ -65,15 +66,21 @@ message MsgSceneInfo
 	repeated int32 game_record			= 2;	//游戏输赢区域记录12条
 	repeated GmaeALLRecord all_record 	= 3;	//戏ALL数据展示
 	GameState game_state				= 4;	//游戏状态
-	repeated UserBetRecord game_bet		= 5;	//游戏下注
+	repeated UserBetRecord total_bet	= 5;	//游戏下注
 	repeated UserInfo user_top 			= 6;	//玩家数据最多100个玩家
+}
+
+//下注信息
+message BetInfo
+{
+	int32			index			= 1;	//押注下标
+	int32			area			= 2;	//押注区域(0-196)
 }
 
 //玩家下注
 message MsgBet
 {
-	int32			index			= 1;	//押注下标
-	int32			area			= 2;	//押注区域(0-196)
+	repeated BetInfo info			= 1;	//下注信息
 }
 
 //玩家下注返回
@@ -105,8 +112,7 @@ message MsgAgainBetResp
 //撤回下注
 message RevocationBet
 {
-	int32 revocation_state 	= 1;			//1撤回上一步2撤回全部
-	int32 bet_index 		= 2;			//下注区域id 
+	repeated int32 revocation_gold 	= 1;	//撤回下注 
 }
 
 //玩家输赢信息                              
@@ -117,7 +123,7 @@ message WinMsg
 }                                           
 
 //游戏结果                                  
-message MsgGmaeResult                          
+message MsgGameResult                          
 {      
 	int32 				result_num 	= 1;    //轮盘结果0-36                               
 	repeated WinMsg 	win_msg		= 2;	//玩家输赢信息

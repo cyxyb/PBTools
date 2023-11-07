@@ -29,53 +29,55 @@ namespace Roulette {
             "IAEoBRIQCghldmVuX251bRgDIAEoBRIPCgdvZGRfbnVtGAQgASgFEg8KB2Jp",
             "Z19udW0YBSABKAUSEQoJc21hbGxfbnVtGAYgASgFEhAKCHplcm9fbnVtGAcg",
             "ASgFIh4KCkJldHRvbkFyZWESEAoIYXJlYV9jZmcYASADKAUiMAoIVXNlcklu",
-            "Zm8SEQoJdG90YWxfYmV0GAEgASgDEhEKCXRvdGFsX3dpbhgCIAEoAyKIAQoJ",
+            "Zm8SEQoJdG90YWxfYmV0GAEgASgDEhEKCXRvdGFsX3dpbhgCIAEoAyKXAQoJ",
             "R21hZUNvbmZnEgsKA2JldBgBIAMoBRIVCg1iZXRfbGltaXRfbWluGAIgAygF",
             "EhUKDWJldF9saW1pdF9tYXgYAyADKAUSKgoMYmV0X2FyZWFfY2ZnGAQgAygL",
-            "MhQuUm91bGV0dGUuQmV0dG9uQXJlYRIUCgxtdWx0aXBsZV9jZmcYBSADKAUi",
-            "LgoJR2FtZVN0YXRlEhIKCmdhbWVfc3RhdGUYASABKAUSDQoFdGltZXMYAiAB",
-            "KAUiNAoNVXNlckJldFJlY29yZBIQCghjaGFpcl9pZBgBIAEoBRIRCgliZXRf",
-            "dmFsdWUYAiABKAMi8QEKDE1zZ1NjZW5lSW5mbxIlCghnYW1lX2ZvZxgBIAEo",
-            "CzITLlJvdWxldHRlLkdtYWVDb25mZxITCgtnYW1lX3JlY29yZBgCIAMoBRIr",
-            "CgphbGxfcmVjb3JkGAMgAygLMhcuUm91bGV0dGUuR21hZUFMTFJlY29yZBIn",
-            "CgpnYW1lX3N0YXRlGAQgASgLMhMuUm91bGV0dGUuR2FtZVN0YXRlEikKCGdh",
-            "bWVfYmV0GAUgAygLMhcuUm91bGV0dGUuVXNlckJldFJlY29yZBIkCgh1c2Vy",
-            "X3RvcBgGIAMoCzISLlJvdWxldHRlLlVzZXJJbmZvIiUKBk1zZ0JldBINCgVp",
-            "bmRleBgBIAEoBRIMCgRhcmVhGAIgASgFIkIKCk1zZ0JldFJlc3ASEAoIY2hh",
-            "aXJfaWQYASABKAUSIgoIYmV0X2luZm8YAiABKAsyEC5Sb3VsZXR0ZS5Nc2dC",
-            "ZXQiPAoOU2luZ2xlQWdhaW5CZXQSDQoFaW5kZXgYASABKAUSDAoEYXJlYRgC",
-            "IAEoBRINCgVjb3VudBgDIAEoBSI/CgtNc2dBZ2FpbkJldBIwCg5hZ2Fpbl9i",
-            "ZXRfaW5mbxgBIAMoCzIYLlJvdWxldHRlLlNpbmdsZUFnYWluQmV0IlIKD01z",
-            "Z0FnYWluQmV0UmVzcBIQCghjaGFpcl9pZBgBIAEoBRItCg5hZ2Fpbl9iZXRf",
-            "aW5mbxgCIAEoCzIVLlJvdWxldHRlLk1zZ0FnYWluQmV0IjwKDVJldm9jYXRp",
-            "b25CZXQSGAoQcmV2b2NhdGlvbl9zdGF0ZRgBIAEoBRIRCgliZXRfaW5kZXgY",
-            "AiABKAUiKAoGV2luTXNnEhAKCGNoYWlyX2lkGAEgASgFEgwKBGdvbGQYAiAB",
-            "KAMiRgoNTXNnR21hZVJlc3VsdBISCgpyZXN1bHRfbnVtGAEgASgFEiEKB3dp",
-            "bl9tc2cYAiADKAsyEC5Sb3VsZXR0ZS5XaW5Nc2cq8AEKDkVNc2dJRFJvdWxl",
-            "dHRlEhcKE01zZ0lEX1NDX0dhbWVSZWNvcmQQABIXChNNc2dJRF9TQ19HYW1l",
-            "Qm90dG9tEAESGQoVTXNnSURfU0NfQm90dG9tQ2FuY2VsEAISFQoRTXNnSURf",
-            "U0NfQWdhaW5CZXQQAxIXChNNc2dJRF9TQ19HYW1lUmVzdWx0EAQSFgoSTXNn",
-            "SURfU0NfR2FtZVN0YXRlEAUSFwoTTXNnSURfQ1NfR2FtZUJvdHRvbRAGEhkK",
-            "FU1zZ0lEX0NTX0JvdHRvbUNhbmNlbBAHEhUKEU1zZ0lEX0NTX0FnYWluQmV0",
-            "EAhiBnByb3RvMw=="));
+            "MhQuUm91bGV0dGUuQmV0dG9uQXJlYRIUCgxtdWx0aXBsZV9jZmcYBSADKAUS",
+            "DQoFdGltZXMYBiADKAUiLgoJR2FtZVN0YXRlEhIKCmdhbWVfc3RhdGUYASAB",
+            "KAUSDQoFdGltZXMYAiABKAUiNAoNVXNlckJldFJlY29yZBIQCghiZXRfYXJl",
+            "YRgBIAEoBRIRCgliZXRfdmFsdWUYAiABKAMi8gEKDE1zZ1NjZW5lSW5mbxIl",
+            "CghnYW1lX2ZvZxgBIAEoCzITLlJvdWxldHRlLkdtYWVDb25mZxITCgtnYW1l",
+            "X3JlY29yZBgCIAMoBRIrCgphbGxfcmVjb3JkGAMgAygLMhcuUm91bGV0dGUu",
+            "R21hZUFMTFJlY29yZBInCgpnYW1lX3N0YXRlGAQgASgLMhMuUm91bGV0dGUu",
+            "R2FtZVN0YXRlEioKCXRvdGFsX2JldBgFIAMoCzIXLlJvdWxldHRlLlVzZXJC",
+            "ZXRSZWNvcmQSJAoIdXNlcl90b3AYBiADKAsyEi5Sb3VsZXR0ZS5Vc2VySW5m",
+            "byImCgdCZXRJbmZvEg0KBWluZGV4GAEgASgFEgwKBGFyZWEYAiABKAUiKQoG",
+            "TXNnQmV0Eh8KBGluZm8YASADKAsyES5Sb3VsZXR0ZS5CZXRJbmZvIkIKCk1z",
+            "Z0JldFJlc3ASEAoIY2hhaXJfaWQYASABKAUSIgoIYmV0X2luZm8YAiABKAsy",
+            "EC5Sb3VsZXR0ZS5Nc2dCZXQiPAoOU2luZ2xlQWdhaW5CZXQSDQoFaW5kZXgY",
+            "ASABKAUSDAoEYXJlYRgCIAEoBRINCgVjb3VudBgDIAEoBSI/CgtNc2dBZ2Fp",
+            "bkJldBIwCg5hZ2Fpbl9iZXRfaW5mbxgBIAMoCzIYLlJvdWxldHRlLlNpbmds",
+            "ZUFnYWluQmV0IlIKD01zZ0FnYWluQmV0UmVzcBIQCghjaGFpcl9pZBgBIAEo",
+            "BRItCg5hZ2Fpbl9iZXRfaW5mbxgCIAEoCzIVLlJvdWxldHRlLk1zZ0FnYWlu",
+            "QmV0IigKDVJldm9jYXRpb25CZXQSFwoPcmV2b2NhdGlvbl9nb2xkGAEgAygF",
+            "IigKBldpbk1zZxIQCghjaGFpcl9pZBgBIAEoBRIMCgRnb2xkGAIgASgDIkYK",
+            "DU1zZ0dhbWVSZXN1bHQSEgoKcmVzdWx0X251bRgBIAEoBRIhCgd3aW5fbXNn",
+            "GAIgAygLMhAuUm91bGV0dGUuV2luTXNnKvABCg5FTXNnSURSb3VsZXR0ZRIX",
+            "ChNNc2dJRF9TQ19HYW1lUmVjb3JkEAASFwoTTXNnSURfU0NfR2FtZUJvdHRv",
+            "bRABEhkKFU1zZ0lEX1NDX0JvdHRvbUNhbmNlbBACEhUKEU1zZ0lEX1NDX0Fn",
+            "YWluQmV0EAMSFwoTTXNnSURfU0NfR2FtZVJlc3VsdBAEEhYKEk1zZ0lEX1ND",
+            "X0dhbWVTdGF0ZRAFEhcKE01zZ0lEX0NTX0dhbWVCb3R0b20QBhIZChVNc2dJ",
+            "RF9DU19Cb3R0b21DYW5jZWwQBxIVChFNc2dJRF9DU19BZ2FpbkJldBAIYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Roulette.EMsgIDRoulette), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.GmaeALLRecord), global::Roulette.GmaeALLRecord.Parser, new[]{ "BlackNum", "RedNum", "EvenNum", "OddNum", "BigNum", "SmallNum", "ZeroNum" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.BettonArea), global::Roulette.BettonArea.Parser, new[]{ "AreaCfg" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.UserInfo), global::Roulette.UserInfo.Parser, new[]{ "TotalBet", "TotalWin" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.GmaeConfg), global::Roulette.GmaeConfg.Parser, new[]{ "Bet", "BetLimitMin", "BetLimitMax", "BetAreaCfg", "MultipleCfg" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.GmaeConfg), global::Roulette.GmaeConfg.Parser, new[]{ "Bet", "BetLimitMin", "BetLimitMax", "BetAreaCfg", "MultipleCfg", "Times" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.GameState), global::Roulette.GameState.Parser, new[]{ "GameState_", "Times" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.UserBetRecord), global::Roulette.UserBetRecord.Parser, new[]{ "ChairId", "BetValue" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.MsgSceneInfo), global::Roulette.MsgSceneInfo.Parser, new[]{ "GameFog", "GameRecord", "AllRecord", "GameState", "GameBet", "UserTop" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.MsgBet), global::Roulette.MsgBet.Parser, new[]{ "Index", "Area" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.UserBetRecord), global::Roulette.UserBetRecord.Parser, new[]{ "BetArea", "BetValue" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.MsgSceneInfo), global::Roulette.MsgSceneInfo.Parser, new[]{ "GameFog", "GameRecord", "AllRecord", "GameState", "TotalBet", "UserTop" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.BetInfo), global::Roulette.BetInfo.Parser, new[]{ "Index", "Area" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.MsgBet), global::Roulette.MsgBet.Parser, new[]{ "Info" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.MsgBetResp), global::Roulette.MsgBetResp.Parser, new[]{ "ChairId", "BetInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.SingleAgainBet), global::Roulette.SingleAgainBet.Parser, new[]{ "Index", "Area", "Count" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.MsgAgainBet), global::Roulette.MsgAgainBet.Parser, new[]{ "AgainBetInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.MsgAgainBetResp), global::Roulette.MsgAgainBetResp.Parser, new[]{ "ChairId", "AgainBetInfo" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.RevocationBet), global::Roulette.RevocationBet.Parser, new[]{ "RevocationState", "BetIndex" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.RevocationBet), global::Roulette.RevocationBet.Parser, new[]{ "RevocationGold" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.WinMsg), global::Roulette.WinMsg.Parser, new[]{ "ChairId", "Gold" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.MsgGmaeResult), global::Roulette.MsgGmaeResult.Parser, new[]{ "ResultNum", "WinMsg" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.MsgGameResult), global::Roulette.MsgGameResult.Parser, new[]{ "ResultNum", "WinMsg" }, null, null, null, null)
           }));
     }
     #endregion
@@ -953,6 +955,7 @@ namespace Roulette {
       betLimitMax_ = other.betLimitMax_.Clone();
       betAreaCfg_ = other.betAreaCfg_.Clone();
       multipleCfg_ = other.multipleCfg_.Clone();
+      times_ = other.times_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1026,6 +1029,19 @@ namespace Roulette {
       get { return multipleCfg_; }
     }
 
+    /// <summary>Field number for the "times" field.</summary>
+    public const int TimesFieldNumber = 6;
+    private static readonly pb::FieldCodec<int> _repeated_times_codec
+        = pb::FieldCodec.ForInt32(50);
+    private readonly pbc::RepeatedField<int> times_ = new pbc::RepeatedField<int>();
+    /// <summary>
+    ///阶段时间
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<int> Times {
+      get { return times_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GmaeConfg);
@@ -1044,6 +1060,7 @@ namespace Roulette {
       if(!betLimitMax_.Equals(other.betLimitMax_)) return false;
       if(!betAreaCfg_.Equals(other.betAreaCfg_)) return false;
       if(!multipleCfg_.Equals(other.multipleCfg_)) return false;
+      if(!times_.Equals(other.times_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1055,6 +1072,7 @@ namespace Roulette {
       hash ^= betLimitMax_.GetHashCode();
       hash ^= betAreaCfg_.GetHashCode();
       hash ^= multipleCfg_.GetHashCode();
+      hash ^= times_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1076,6 +1094,7 @@ namespace Roulette {
       betLimitMax_.WriteTo(output, _repeated_betLimitMax_codec);
       betAreaCfg_.WriteTo(output, _repeated_betAreaCfg_codec);
       multipleCfg_.WriteTo(output, _repeated_multipleCfg_codec);
+      times_.WriteTo(output, _repeated_times_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1090,6 +1109,7 @@ namespace Roulette {
       betLimitMax_.WriteTo(ref output, _repeated_betLimitMax_codec);
       betAreaCfg_.WriteTo(ref output, _repeated_betAreaCfg_codec);
       multipleCfg_.WriteTo(ref output, _repeated_multipleCfg_codec);
+      times_.WriteTo(ref output, _repeated_times_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1104,6 +1124,7 @@ namespace Roulette {
       size += betLimitMax_.CalculateSize(_repeated_betLimitMax_codec);
       size += betAreaCfg_.CalculateSize(_repeated_betAreaCfg_codec);
       size += multipleCfg_.CalculateSize(_repeated_multipleCfg_codec);
+      size += times_.CalculateSize(_repeated_times_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1120,6 +1141,7 @@ namespace Roulette {
       betLimitMax_.Add(other.betLimitMax_);
       betAreaCfg_.Add(other.betAreaCfg_);
       multipleCfg_.Add(other.multipleCfg_);
+      times_.Add(other.times_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1158,6 +1180,11 @@ namespace Roulette {
             multipleCfg_.AddEntriesFrom(input, _repeated_multipleCfg_codec);
             break;
           }
+          case 50:
+          case 48: {
+            times_.AddEntriesFrom(input, _repeated_times_codec);
+            break;
+          }
         }
       }
     #endif
@@ -1194,6 +1221,11 @@ namespace Roulette {
           case 42:
           case 40: {
             multipleCfg_.AddEntriesFrom(ref input, _repeated_multipleCfg_codec);
+            break;
+          }
+          case 50:
+          case 48: {
+            times_.AddEntriesFrom(ref input, _repeated_times_codec);
             break;
           }
         }
@@ -1452,7 +1484,7 @@ namespace Roulette {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public UserBetRecord(UserBetRecord other) : this() {
-      chairId_ = other.chairId_;
+      betArea_ = other.betArea_;
       betValue_ = other.betValue_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -1462,17 +1494,17 @@ namespace Roulette {
       return new UserBetRecord(this);
     }
 
-    /// <summary>Field number for the "chair_id" field.</summary>
-    public const int ChairIdFieldNumber = 1;
-    private int chairId_;
+    /// <summary>Field number for the "bet_area" field.</summary>
+    public const int BetAreaFieldNumber = 1;
+    private int betArea_;
     /// <summary>
     ///下注区域
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int ChairId {
-      get { return chairId_; }
+    public int BetArea {
+      get { return betArea_; }
       set {
-        chairId_ = value;
+        betArea_ = value;
       }
     }
 
@@ -1503,7 +1535,7 @@ namespace Roulette {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (ChairId != other.ChairId) return false;
+      if (BetArea != other.BetArea) return false;
       if (BetValue != other.BetValue) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1511,7 +1543,7 @@ namespace Roulette {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (ChairId != 0) hash ^= ChairId.GetHashCode();
+      if (BetArea != 0) hash ^= BetArea.GetHashCode();
       if (BetValue != 0L) hash ^= BetValue.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1529,9 +1561,9 @@ namespace Roulette {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (ChairId != 0) {
+      if (BetArea != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(ChairId);
+        output.WriteInt32(BetArea);
       }
       if (BetValue != 0L) {
         output.WriteRawTag(16);
@@ -1546,9 +1578,9 @@ namespace Roulette {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (ChairId != 0) {
+      if (BetArea != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(ChairId);
+        output.WriteInt32(BetArea);
       }
       if (BetValue != 0L) {
         output.WriteRawTag(16);
@@ -1563,8 +1595,8 @@ namespace Roulette {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (ChairId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChairId);
+      if (BetArea != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(BetArea);
       }
       if (BetValue != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(BetValue);
@@ -1580,8 +1612,8 @@ namespace Roulette {
       if (other == null) {
         return;
       }
-      if (other.ChairId != 0) {
-        ChairId = other.ChairId;
+      if (other.BetArea != 0) {
+        BetArea = other.BetArea;
       }
       if (other.BetValue != 0L) {
         BetValue = other.BetValue;
@@ -1601,7 +1633,7 @@ namespace Roulette {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            ChairId = input.ReadInt32();
+            BetArea = input.ReadInt32();
             break;
           }
           case 16: {
@@ -1623,7 +1655,7 @@ namespace Roulette {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            ChairId = input.ReadInt32();
+            BetArea = input.ReadInt32();
             break;
           }
           case 16: {
@@ -1673,7 +1705,7 @@ namespace Roulette {
       gameRecord_ = other.gameRecord_.Clone();
       allRecord_ = other.allRecord_.Clone();
       gameState_ = other.gameState_ != null ? other.gameState_.Clone() : null;
-      gameBet_ = other.gameBet_.Clone();
+      totalBet_ = other.totalBet_.Clone();
       userTop_ = other.userTop_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -1737,17 +1769,17 @@ namespace Roulette {
       }
     }
 
-    /// <summary>Field number for the "game_bet" field.</summary>
-    public const int GameBetFieldNumber = 5;
-    private static readonly pb::FieldCodec<global::Roulette.UserBetRecord> _repeated_gameBet_codec
+    /// <summary>Field number for the "total_bet" field.</summary>
+    public const int TotalBetFieldNumber = 5;
+    private static readonly pb::FieldCodec<global::Roulette.UserBetRecord> _repeated_totalBet_codec
         = pb::FieldCodec.ForMessage(42, global::Roulette.UserBetRecord.Parser);
-    private readonly pbc::RepeatedField<global::Roulette.UserBetRecord> gameBet_ = new pbc::RepeatedField<global::Roulette.UserBetRecord>();
+    private readonly pbc::RepeatedField<global::Roulette.UserBetRecord> totalBet_ = new pbc::RepeatedField<global::Roulette.UserBetRecord>();
     /// <summary>
     ///游戏下注
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Roulette.UserBetRecord> GameBet {
-      get { return gameBet_; }
+    public pbc::RepeatedField<global::Roulette.UserBetRecord> TotalBet {
+      get { return totalBet_; }
     }
 
     /// <summary>Field number for the "user_top" field.</summary>
@@ -1780,7 +1812,7 @@ namespace Roulette {
       if(!gameRecord_.Equals(other.gameRecord_)) return false;
       if(!allRecord_.Equals(other.allRecord_)) return false;
       if (!object.Equals(GameState, other.GameState)) return false;
-      if(!gameBet_.Equals(other.gameBet_)) return false;
+      if(!totalBet_.Equals(other.totalBet_)) return false;
       if(!userTop_.Equals(other.userTop_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1792,7 +1824,7 @@ namespace Roulette {
       hash ^= gameRecord_.GetHashCode();
       hash ^= allRecord_.GetHashCode();
       if (gameState_ != null) hash ^= GameState.GetHashCode();
-      hash ^= gameBet_.GetHashCode();
+      hash ^= totalBet_.GetHashCode();
       hash ^= userTop_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1820,7 +1852,7 @@ namespace Roulette {
         output.WriteRawTag(34);
         output.WriteMessage(GameState);
       }
-      gameBet_.WriteTo(output, _repeated_gameBet_codec);
+      totalBet_.WriteTo(output, _repeated_totalBet_codec);
       userTop_.WriteTo(output, _repeated_userTop_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1841,7 +1873,7 @@ namespace Roulette {
         output.WriteRawTag(34);
         output.WriteMessage(GameState);
       }
-      gameBet_.WriteTo(ref output, _repeated_gameBet_codec);
+      totalBet_.WriteTo(ref output, _repeated_totalBet_codec);
       userTop_.WriteTo(ref output, _repeated_userTop_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1860,7 +1892,7 @@ namespace Roulette {
       if (gameState_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(GameState);
       }
-      size += gameBet_.CalculateSize(_repeated_gameBet_codec);
+      size += totalBet_.CalculateSize(_repeated_totalBet_codec);
       size += userTop_.CalculateSize(_repeated_userTop_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1887,7 +1919,7 @@ namespace Roulette {
         }
         GameState.MergeFrom(other.GameState);
       }
-      gameBet_.Add(other.gameBet_);
+      totalBet_.Add(other.totalBet_);
       userTop_.Add(other.userTop_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1927,7 +1959,7 @@ namespace Roulette {
             break;
           }
           case 42: {
-            gameBet_.AddEntriesFrom(input, _repeated_gameBet_codec);
+            totalBet_.AddEntriesFrom(input, _repeated_totalBet_codec);
             break;
           }
           case 50: {
@@ -1972,7 +2004,7 @@ namespace Roulette {
             break;
           }
           case 42: {
-            gameBet_.AddEntriesFrom(ref input, _repeated_gameBet_codec);
+            totalBet_.AddEntriesFrom(ref input, _repeated_totalBet_codec);
             break;
           }
           case 50: {
@@ -1987,17 +2019,17 @@ namespace Roulette {
   }
 
   /// <summary>
-  ///玩家下注
+  ///下注信息
   /// </summary>
-  public sealed partial class MsgBet : pb::IMessage<MsgBet>
+  public sealed partial class BetInfo : pb::IMessage<BetInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<MsgBet> _parser = new pb::MessageParser<MsgBet>(() => new MsgBet());
+    private static readonly pb::MessageParser<BetInfo> _parser = new pb::MessageParser<BetInfo>(() => new BetInfo());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<MsgBet> Parser { get { return _parser; } }
+    public static pb::MessageParser<BetInfo> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -2010,22 +2042,22 @@ namespace Roulette {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgBet() {
+    public BetInfo() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgBet(MsgBet other) : this() {
+    public BetInfo(BetInfo other) : this() {
       index_ = other.index_;
       area_ = other.area_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgBet Clone() {
-      return new MsgBet(this);
+    public BetInfo Clone() {
+      return new BetInfo(this);
     }
 
     /// <summary>Field number for the "index" field.</summary>
@@ -2058,11 +2090,11 @@ namespace Roulette {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as MsgBet);
+      return Equals(other as BetInfo);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(MsgBet other) {
+    public bool Equals(BetInfo other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -2142,7 +2174,7 @@ namespace Roulette {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(MsgBet other) {
+    public void MergeFrom(BetInfo other) {
       if (other == null) {
         return;
       }
@@ -2204,6 +2236,173 @@ namespace Roulette {
   }
 
   /// <summary>
+  ///玩家下注
+  /// </summary>
+  public sealed partial class MsgBet : pb::IMessage<MsgBet>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<MsgBet> _parser = new pb::MessageParser<MsgBet>(() => new MsgBet());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<MsgBet> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MsgBet() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MsgBet(MsgBet other) : this() {
+      info_ = other.info_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MsgBet Clone() {
+      return new MsgBet(this);
+    }
+
+    /// <summary>Field number for the "info" field.</summary>
+    public const int InfoFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Roulette.BetInfo> _repeated_info_codec
+        = pb::FieldCodec.ForMessage(10, global::Roulette.BetInfo.Parser);
+    private readonly pbc::RepeatedField<global::Roulette.BetInfo> info_ = new pbc::RepeatedField<global::Roulette.BetInfo>();
+    /// <summary>
+    ///下注信息
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Roulette.BetInfo> Info {
+      get { return info_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as MsgBet);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(MsgBet other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!info_.Equals(other.info_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= info_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      info_.WriteTo(output, _repeated_info_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      info_.WriteTo(ref output, _repeated_info_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += info_.CalculateSize(_repeated_info_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(MsgBet other) {
+      if (other == null) {
+        return;
+      }
+      info_.Add(other.info_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            info_.AddEntriesFrom(input, _repeated_info_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            info_.AddEntriesFrom(ref input, _repeated_info_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
   ///玩家下注返回
   /// </summary>
   public sealed partial class MsgBetResp : pb::IMessage<MsgBetResp>
@@ -2218,7 +2417,7 @@ namespace Roulette {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2444,7 +2643,7 @@ namespace Roulette {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2700,7 +2899,7 @@ namespace Roulette {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2867,7 +3066,7 @@ namespace Roulette {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3093,7 +3292,7 @@ namespace Roulette {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3110,8 +3309,7 @@ namespace Roulette {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public RevocationBet(RevocationBet other) : this() {
-      revocationState_ = other.revocationState_;
-      betIndex_ = other.betIndex_;
+      revocationGold_ = other.revocationGold_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3120,32 +3318,17 @@ namespace Roulette {
       return new RevocationBet(this);
     }
 
-    /// <summary>Field number for the "revocation_state" field.</summary>
-    public const int RevocationStateFieldNumber = 1;
-    private int revocationState_;
+    /// <summary>Field number for the "revocation_gold" field.</summary>
+    public const int RevocationGoldFieldNumber = 1;
+    private static readonly pb::FieldCodec<int> _repeated_revocationGold_codec
+        = pb::FieldCodec.ForInt32(10);
+    private readonly pbc::RepeatedField<int> revocationGold_ = new pbc::RepeatedField<int>();
     /// <summary>
-    ///1撤回上一步2撤回全部
+    ///撤回下注 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int RevocationState {
-      get { return revocationState_; }
-      set {
-        revocationState_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "bet_index" field.</summary>
-    public const int BetIndexFieldNumber = 2;
-    private int betIndex_;
-    /// <summary>
-    ///下注区域id 
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int BetIndex {
-      get { return betIndex_; }
-      set {
-        betIndex_ = value;
-      }
+    public pbc::RepeatedField<int> RevocationGold {
+      get { return revocationGold_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3161,16 +3344,14 @@ namespace Roulette {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (RevocationState != other.RevocationState) return false;
-      if (BetIndex != other.BetIndex) return false;
+      if(!revocationGold_.Equals(other.revocationGold_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (RevocationState != 0) hash ^= RevocationState.GetHashCode();
-      if (BetIndex != 0) hash ^= BetIndex.GetHashCode();
+      hash ^= revocationGold_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3187,14 +3368,7 @@ namespace Roulette {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (RevocationState != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(RevocationState);
-      }
-      if (BetIndex != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(BetIndex);
-      }
+      revocationGold_.WriteTo(output, _repeated_revocationGold_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3204,14 +3378,7 @@ namespace Roulette {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (RevocationState != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(RevocationState);
-      }
-      if (BetIndex != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(BetIndex);
-      }
+      revocationGold_.WriteTo(ref output, _repeated_revocationGold_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -3221,12 +3388,7 @@ namespace Roulette {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (RevocationState != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(RevocationState);
-      }
-      if (BetIndex != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(BetIndex);
-      }
+      size += revocationGold_.CalculateSize(_repeated_revocationGold_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -3238,12 +3400,7 @@ namespace Roulette {
       if (other == null) {
         return;
       }
-      if (other.RevocationState != 0) {
-        RevocationState = other.RevocationState;
-      }
-      if (other.BetIndex != 0) {
-        BetIndex = other.BetIndex;
-      }
+      revocationGold_.Add(other.revocationGold_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -3258,12 +3415,9 @@ namespace Roulette {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
+          case 10:
           case 8: {
-            RevocationState = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            BetIndex = input.ReadInt32();
+            revocationGold_.AddEntriesFrom(input, _repeated_revocationGold_codec);
             break;
           }
         }
@@ -3280,12 +3434,9 @@ namespace Roulette {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
+          case 10:
           case 8: {
-            RevocationState = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            BetIndex = input.ReadInt32();
+            revocationGold_.AddEntriesFrom(ref input, _repeated_revocationGold_codec);
             break;
           }
         }
@@ -3310,7 +3461,7 @@ namespace Roulette {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[13]; }
+      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3515,19 +3666,19 @@ namespace Roulette {
   /// <summary>
   ///游戏结果                                  
   /// </summary>
-  public sealed partial class MsgGmaeResult : pb::IMessage<MsgGmaeResult>
+  public sealed partial class MsgGameResult : pb::IMessage<MsgGameResult>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<MsgGmaeResult> _parser = new pb::MessageParser<MsgGmaeResult>(() => new MsgGmaeResult());
+    private static readonly pb::MessageParser<MsgGameResult> _parser = new pb::MessageParser<MsgGameResult>(() => new MsgGameResult());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<MsgGmaeResult> Parser { get { return _parser; } }
+    public static pb::MessageParser<MsgGameResult> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[14]; }
+      get { return global::Roulette.RouletteReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3536,22 +3687,22 @@ namespace Roulette {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgGmaeResult() {
+    public MsgGameResult() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgGmaeResult(MsgGmaeResult other) : this() {
+    public MsgGameResult(MsgGameResult other) : this() {
       resultNum_ = other.resultNum_;
       winMsg_ = other.winMsg_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgGmaeResult Clone() {
-      return new MsgGmaeResult(this);
+    public MsgGameResult Clone() {
+      return new MsgGameResult(this);
     }
 
     /// <summary>Field number for the "result_num" field.</summary>
@@ -3583,11 +3734,11 @@ namespace Roulette {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as MsgGmaeResult);
+      return Equals(other as MsgGameResult);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(MsgGmaeResult other) {
+    public bool Equals(MsgGameResult other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -3659,7 +3810,7 @@ namespace Roulette {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(MsgGmaeResult other) {
+    public void MergeFrom(MsgGameResult other) {
       if (other == null) {
         return;
       }
