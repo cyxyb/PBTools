@@ -47,6 +47,7 @@ message GameConfg
 	repeated int32 multiple_cfg			= 5;    //区域倍数
 	repeated int32 times				= 6;	//阶段时间
 	int64 limit_total_bet				= 7;	//限制总压住
+	repeated int32 area_multiple		= 8;    //区域倍数(用于展示)
 }
 //游戏状态
 message GameState 
@@ -89,6 +90,7 @@ message MsgBetResp
 {
 	int32			chair_id		= 1;	//玩家椅子号
 	MsgBet			bet_info		= 2;	//玩家下注信息
+	int32 			ret_code		= 3;	//下注返回多语言码 1下注倍数超限 2下注区域筹码超限 3金币不足
 }
 //玩家下注
 message SingleAgainBet

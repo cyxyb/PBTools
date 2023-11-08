@@ -775,6 +775,7 @@ class GameConfg PROTOBUF_FINAL :
     kBetAreaCfgFieldNumber = 4,
     kMultipleCfgFieldNumber = 5,
     kTimesFieldNumber = 6,
+    kAreaMultipleFieldNumber = 8,
     kLimitTotalBetFieldNumber = 7,
   };
   // repeated int32 bet = 1;
@@ -905,6 +906,28 @@ class GameConfg PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_times();
 
+  // repeated int32 area_multiple = 8;
+  int area_multiple_size() const;
+  private:
+  int _internal_area_multiple_size() const;
+  public:
+  void clear_area_multiple();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_area_multiple(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_area_multiple() const;
+  void _internal_add_area_multiple(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_area_multiple();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 area_multiple(int index) const;
+  void set_area_multiple(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_area_multiple(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      area_multiple() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_area_multiple();
+
   // int64 limit_total_bet = 7;
   void clear_limit_total_bet();
   ::PROTOBUF_NAMESPACE_ID::int64 limit_total_bet() const;
@@ -932,6 +955,8 @@ class GameConfg PROTOBUF_FINAL :
   mutable std::atomic<int> _multiple_cfg_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > times_;
   mutable std::atomic<int> _times_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > area_multiple_;
+  mutable std::atomic<int> _area_multiple_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::int64 limit_total_bet_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Roulette_2eproto;
@@ -1888,6 +1913,7 @@ class MsgBetResp PROTOBUF_FINAL :
   enum : int {
     kBetInfoFieldNumber = 2,
     kChairIdFieldNumber = 1,
+    kRetCodeFieldNumber = 3,
   };
   // .Roulette.MsgBet bet_info = 2;
   bool has_bet_info() const;
@@ -1916,6 +1942,15 @@ class MsgBetResp PROTOBUF_FINAL :
   void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 ret_code = 3;
+  void clear_ret_code();
+  ::PROTOBUF_NAMESPACE_ID::int32 ret_code() const;
+  void set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_ret_code() const;
+  void _internal_set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:Roulette.MsgBetResp)
  private:
   class _Internal;
@@ -1925,6 +1960,7 @@ class MsgBetResp PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::Roulette::MsgBet* bet_info_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 ret_code_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Roulette_2eproto;
 };
@@ -3384,6 +3420,53 @@ inline void GameConfg::set_limit_total_bet(::PROTOBUF_NAMESPACE_ID::int64 value)
   // @@protoc_insertion_point(field_set:Roulette.GameConfg.limit_total_bet)
 }
 
+// repeated int32 area_multiple = 8;
+inline int GameConfg::_internal_area_multiple_size() const {
+  return area_multiple_.size();
+}
+inline int GameConfg::area_multiple_size() const {
+  return _internal_area_multiple_size();
+}
+inline void GameConfg::clear_area_multiple() {
+  area_multiple_.Clear();
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 GameConfg::_internal_area_multiple(int index) const {
+  return area_multiple_.Get(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 GameConfg::area_multiple(int index) const {
+  // @@protoc_insertion_point(field_get:Roulette.GameConfg.area_multiple)
+  return _internal_area_multiple(index);
+}
+inline void GameConfg::set_area_multiple(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  area_multiple_.Set(index, value);
+  // @@protoc_insertion_point(field_set:Roulette.GameConfg.area_multiple)
+}
+inline void GameConfg::_internal_add_area_multiple(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  area_multiple_.Add(value);
+}
+inline void GameConfg::add_area_multiple(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_area_multiple(value);
+  // @@protoc_insertion_point(field_add:Roulette.GameConfg.area_multiple)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+GameConfg::_internal_area_multiple() const {
+  return area_multiple_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+GameConfg::area_multiple() const {
+  // @@protoc_insertion_point(field_list:Roulette.GameConfg.area_multiple)
+  return _internal_area_multiple();
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+GameConfg::_internal_mutable_area_multiple() {
+  return &area_multiple_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+GameConfg::mutable_area_multiple() {
+  // @@protoc_insertion_point(field_mutable_list:Roulette.GameConfg.area_multiple)
+  return _internal_mutable_area_multiple();
+}
+
 // -------------------------------------------------------------------
 
 // GameState
@@ -4042,6 +4125,26 @@ inline void MsgBetResp::set_allocated_bet_info(::Roulette::MsgBet* bet_info) {
   }
   bet_info_ = bet_info;
   // @@protoc_insertion_point(field_set_allocated:Roulette.MsgBetResp.bet_info)
+}
+
+// int32 ret_code = 3;
+inline void MsgBetResp::clear_ret_code() {
+  ret_code_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBetResp::_internal_ret_code() const {
+  return ret_code_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBetResp::ret_code() const {
+  // @@protoc_insertion_point(field_get:Roulette.MsgBetResp.ret_code)
+  return _internal_ret_code();
+}
+inline void MsgBetResp::_internal_set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  ret_code_ = value;
+}
+inline void MsgBetResp::set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_ret_code(value);
+  // @@protoc_insertion_point(field_set:Roulette.MsgBetResp.ret_code)
 }
 
 // -------------------------------------------------------------------
