@@ -90,7 +90,7 @@ message MsgBetResp
 {
 	int32			chair_id		= 1;	//玩家椅子号
 	MsgBet			bet_info		= 2;	//玩家下注信息
-	int32 			ret_code		= 3;	//下注返回多语言码 1下注倍数超限 2下注区域筹码超限 3金币不足
+	int32 			ret_code		= 3;	//下注返回多语言码 0不管 1下注倍数超限 2下注区域筹码超限 3金币不足
 }
 //玩家下注
 message SingleAgainBet

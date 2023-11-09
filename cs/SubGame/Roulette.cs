@@ -2567,7 +2567,7 @@ namespace Roulette {
     public const int RetCodeFieldNumber = 3;
     private int retCode_;
     /// <summary>
-    ///下注返回多语言码 1下注倍数超限 2下注区域筹码超限 3金币不足
+    ///下注返回多语言码 0不管 1下注倍数超限 2下注区域筹码超限 3金币不足
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int RetCode {
