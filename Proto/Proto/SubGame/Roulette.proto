@@ -34,8 +34,9 @@ message BettonArea
 //玩家数据
 message UserInfo
 {
-	int64 total_bet = 1;
-	int64 total_win = 2;
+	int32 chair_id	= 1;
+	int64 total_bet = 2;
+	int64 total_win = 3;
 }
 //游戏配置
 message GameConfg

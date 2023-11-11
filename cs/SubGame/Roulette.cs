@@ -28,45 +28,45 @@ namespace Roulette {
             "R2FtZUFMTFJlY29yZBIRCglibGFja19udW0YASABKAUSDwoHcmVkX251bRgC",
             "IAEoBRIQCghldmVuX251bRgDIAEoBRIPCgdvZGRfbnVtGAQgASgFEg8KB2Jp",
             "Z19udW0YBSABKAUSEQoJc21hbGxfbnVtGAYgASgFEhAKCHplcm9fbnVtGAcg",
-            "ASgFIh4KCkJldHRvbkFyZWESEAoIYXJlYV9jZmcYASADKAUiMAoIVXNlcklu",
-            "Zm8SEQoJdG90YWxfYmV0GAEgASgDEhEKCXRvdGFsX3dpbhgCIAEoAyLHAQoJ",
-            "R2FtZUNvbmZnEgsKA2JldBgBIAMoBRIVCg1iZXRfbGltaXRfbWluGAIgAygF",
-            "EhUKDWJldF9saW1pdF9tYXgYAyADKAUSKgoMYmV0X2FyZWFfY2ZnGAQgAygL",
-            "MhQuUm91bGV0dGUuQmV0dG9uQXJlYRIUCgxtdWx0aXBsZV9jZmcYBSADKAUS",
-            "DQoFdGltZXMYBiADKAUSFwoPbGltaXRfdG90YWxfYmV0GAcgASgDEhUKDWFy",
-            "ZWFfbXVsdGlwbGUYCCADKAUiLgoJR2FtZVN0YXRlEhIKCmdhbWVfc3RhdGUY",
-            "ASABKAUSDQoFdGltZXMYAiABKAUiNAoNVXNlckJldFJlY29yZBIQCghiZXRf",
-            "YXJlYRgBIAEoBRIRCgliZXRfdmFsdWUYAiABKAMi8gEKDE1zZ1NjZW5lSW5m",
-            "bxIlCghnYW1lX2NmZxgBIAEoCzITLlJvdWxldHRlLkdhbWVDb25mZxITCgtn",
-            "YW1lX3JlY29yZBgCIAMoBRIrCgphbGxfcmVjb3JkGAMgASgLMhcuUm91bGV0",
-            "dGUuR2FtZUFMTFJlY29yZBInCgpnYW1lX3N0YXRlGAQgASgLMhMuUm91bGV0",
-            "dGUuR2FtZVN0YXRlEioKCXRvdGFsX2JldBgFIAMoCzIXLlJvdWxldHRlLlVz",
-            "ZXJCZXRSZWNvcmQSJAoIdXNlcl90b3AYBiADKAsyEi5Sb3VsZXR0ZS5Vc2Vy",
-            "SW5mbyImCgdCZXRJbmZvEg0KBWluZGV4GAEgASgFEgwKBGFyZWEYAiABKAUi",
-            "KQoGTXNnQmV0Eh8KBGluZm8YASADKAsyES5Sb3VsZXR0ZS5CZXRJbmZvIlQK",
-            "Ck1zZ0JldFJlc3ASEAoIY2hhaXJfaWQYASABKAUSIgoIYmV0X2luZm8YAiAB",
-            "KAsyEC5Sb3VsZXR0ZS5Nc2dCZXQSEAoIcmV0X2NvZGUYAyABKAUiPAoOU2lu",
-            "Z2xlQWdhaW5CZXQSDQoFaW5kZXgYASABKAUSDAoEYXJlYRgCIAEoBRINCgVj",
-            "b3VudBgDIAEoBSI/CgtNc2dBZ2FpbkJldBIwCg5hZ2Fpbl9iZXRfaW5mbxgB",
-            "IAMoCzIYLlJvdWxldHRlLlNpbmdsZUFnYWluQmV0IlIKD01zZ0FnYWluQmV0",
-            "UmVzcBIQCghjaGFpcl9pZBgBIAEoBRItCg5hZ2Fpbl9iZXRfaW5mbxgCIAEo",
-            "CzIVLlJvdWxldHRlLk1zZ0FnYWluQmV0IigKDVJldm9jYXRpb25CZXQSFwoP",
-            "cmV2b2NhdGlvbl9nb2xkGAEgAygFIk0KBldpbk1zZxIQCghjaGFpcl9pZBgB",
-            "IAEoBRIMCgRnb2xkGAIgASgDEhEKCXVzZXJfZ29sZBgDIAEoAxIQCgh3aW5f",
-            "Z29sZBgEIAEoAyJGCg1Nc2dHYW1lUmVzdWx0EhIKCnJlc3VsdF9udW0YASAB",
-            "KAUSIQoHd2luX21zZxgCIAMoCzIQLlJvdWxldHRlLldpbk1zZyrwAQoORU1z",
-            "Z0lEUm91bGV0dGUSFwoTTXNnSURfU0NfR2FtZVJlY29yZBAAEhcKE01zZ0lE",
-            "X1NDX0dhbWVCb3R0b20QARIZChVNc2dJRF9TQ19Cb3R0b21DYW5jZWwQAhIV",
-            "ChFNc2dJRF9TQ19BZ2FpbkJldBADEhcKE01zZ0lEX1NDX0dhbWVSZXN1bHQQ",
-            "BBIWChJNc2dJRF9TQ19HYW1lU3RhdGUQBRIXChNNc2dJRF9DU19HYW1lQm90",
-            "dG9tEAYSGQoVTXNnSURfQ1NfQm90dG9tQ2FuY2VsEAcSFQoRTXNnSURfQ1Nf",
-            "QWdhaW5CZXQQCGIGcHJvdG8z"));
+            "ASgFIh4KCkJldHRvbkFyZWESEAoIYXJlYV9jZmcYASADKAUiQgoIVXNlcklu",
+            "Zm8SEAoIY2hhaXJfaWQYASABKAUSEQoJdG90YWxfYmV0GAIgASgDEhEKCXRv",
+            "dGFsX3dpbhgDIAEoAyLHAQoJR2FtZUNvbmZnEgsKA2JldBgBIAMoBRIVCg1i",
+            "ZXRfbGltaXRfbWluGAIgAygFEhUKDWJldF9saW1pdF9tYXgYAyADKAUSKgoM",
+            "YmV0X2FyZWFfY2ZnGAQgAygLMhQuUm91bGV0dGUuQmV0dG9uQXJlYRIUCgxt",
+            "dWx0aXBsZV9jZmcYBSADKAUSDQoFdGltZXMYBiADKAUSFwoPbGltaXRfdG90",
+            "YWxfYmV0GAcgASgDEhUKDWFyZWFfbXVsdGlwbGUYCCADKAUiLgoJR2FtZVN0",
+            "YXRlEhIKCmdhbWVfc3RhdGUYASABKAUSDQoFdGltZXMYAiABKAUiNAoNVXNl",
+            "ckJldFJlY29yZBIQCghiZXRfYXJlYRgBIAEoBRIRCgliZXRfdmFsdWUYAiAB",
+            "KAMi8gEKDE1zZ1NjZW5lSW5mbxIlCghnYW1lX2NmZxgBIAEoCzITLlJvdWxl",
+            "dHRlLkdhbWVDb25mZxITCgtnYW1lX3JlY29yZBgCIAMoBRIrCgphbGxfcmVj",
+            "b3JkGAMgASgLMhcuUm91bGV0dGUuR2FtZUFMTFJlY29yZBInCgpnYW1lX3N0",
+            "YXRlGAQgASgLMhMuUm91bGV0dGUuR2FtZVN0YXRlEioKCXRvdGFsX2JldBgF",
+            "IAMoCzIXLlJvdWxldHRlLlVzZXJCZXRSZWNvcmQSJAoIdXNlcl90b3AYBiAD",
+            "KAsyEi5Sb3VsZXR0ZS5Vc2VySW5mbyImCgdCZXRJbmZvEg0KBWluZGV4GAEg",
+            "ASgFEgwKBGFyZWEYAiABKAUiKQoGTXNnQmV0Eh8KBGluZm8YASADKAsyES5S",
+            "b3VsZXR0ZS5CZXRJbmZvIlQKCk1zZ0JldFJlc3ASEAoIY2hhaXJfaWQYASAB",
+            "KAUSIgoIYmV0X2luZm8YAiABKAsyEC5Sb3VsZXR0ZS5Nc2dCZXQSEAoIcmV0",
+            "X2NvZGUYAyABKAUiPAoOU2luZ2xlQWdhaW5CZXQSDQoFaW5kZXgYASABKAUS",
+            "DAoEYXJlYRgCIAEoBRINCgVjb3VudBgDIAEoBSI/CgtNc2dBZ2FpbkJldBIw",
+            "Cg5hZ2Fpbl9iZXRfaW5mbxgBIAMoCzIYLlJvdWxldHRlLlNpbmdsZUFnYWlu",
+            "QmV0IlIKD01zZ0FnYWluQmV0UmVzcBIQCghjaGFpcl9pZBgBIAEoBRItCg5h",
+            "Z2Fpbl9iZXRfaW5mbxgCIAEoCzIVLlJvdWxldHRlLk1zZ0FnYWluQmV0IigK",
+            "DVJldm9jYXRpb25CZXQSFwoPcmV2b2NhdGlvbl9nb2xkGAEgAygFIk0KBldp",
+            "bk1zZxIQCghjaGFpcl9pZBgBIAEoBRIMCgRnb2xkGAIgASgDEhEKCXVzZXJf",
+            "Z29sZBgDIAEoAxIQCgh3aW5fZ29sZBgEIAEoAyJGCg1Nc2dHYW1lUmVzdWx0",
+            "EhIKCnJlc3VsdF9udW0YASABKAUSIQoHd2luX21zZxgCIAMoCzIQLlJvdWxl",
+            "dHRlLldpbk1zZyrwAQoORU1zZ0lEUm91bGV0dGUSFwoTTXNnSURfU0NfR2Ft",
+            "ZVJlY29yZBAAEhcKE01zZ0lEX1NDX0dhbWVCb3R0b20QARIZChVNc2dJRF9T",
+            "Q19Cb3R0b21DYW5jZWwQAhIVChFNc2dJRF9TQ19BZ2FpbkJldBADEhcKE01z",
+            "Z0lEX1NDX0dhbWVSZXN1bHQQBBIWChJNc2dJRF9TQ19HYW1lU3RhdGUQBRIX",
+            "ChNNc2dJRF9DU19HYW1lQm90dG9tEAYSGQoVTXNnSURfQ1NfQm90dG9tQ2Fu",
+            "Y2VsEAcSFQoRTXNnSURfQ1NfQWdhaW5CZXQQCGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Roulette.EMsgIDRoulette), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.GameALLRecord), global::Roulette.GameALLRecord.Parser, new[]{ "BlackNum", "RedNum", "EvenNum", "OddNum", "BigNum", "SmallNum", "ZeroNum" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.BettonArea), global::Roulette.BettonArea.Parser, new[]{ "AreaCfg" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.UserInfo), global::Roulette.UserInfo.Parser, new[]{ "TotalBet", "TotalWin" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.UserInfo), global::Roulette.UserInfo.Parser, new[]{ "ChairId", "TotalBet", "TotalWin" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.GameConfg), global::Roulette.GameConfg.Parser, new[]{ "Bet", "BetLimitMin", "BetLimitMax", "BetAreaCfg", "MultipleCfg", "Times", "LimitTotalBet", "AreaMultiple" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.GameState), global::Roulette.GameState.Parser, new[]{ "GameState_", "Times" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.UserBetRecord), global::Roulette.UserBetRecord.Parser, new[]{ "BetArea", "BetValue" }, null, null, null, null),
@@ -741,6 +741,7 @@ namespace Roulette {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public UserInfo(UserInfo other) : this() {
+      chairId_ = other.chairId_;
       totalBet_ = other.totalBet_;
       totalWin_ = other.totalWin_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -751,8 +752,19 @@ namespace Roulette {
       return new UserInfo(this);
     }
 
+    /// <summary>Field number for the "chair_id" field.</summary>
+    public const int ChairIdFieldNumber = 1;
+    private int chairId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int ChairId {
+      get { return chairId_; }
+      set {
+        chairId_ = value;
+      }
+    }
+
     /// <summary>Field number for the "total_bet" field.</summary>
-    public const int TotalBetFieldNumber = 1;
+    public const int TotalBetFieldNumber = 2;
     private long totalBet_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long TotalBet {
@@ -763,7 +775,7 @@ namespace Roulette {
     }
 
     /// <summary>Field number for the "total_win" field.</summary>
-    public const int TotalWinFieldNumber = 2;
+    public const int TotalWinFieldNumber = 3;
     private long totalWin_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long TotalWin {
@@ -786,6 +798,7 @@ namespace Roulette {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (ChairId != other.ChairId) return false;
       if (TotalBet != other.TotalBet) return false;
       if (TotalWin != other.TotalWin) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -794,6 +807,7 @@ namespace Roulette {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
+      if (ChairId != 0) hash ^= ChairId.GetHashCode();
       if (TotalBet != 0L) hash ^= TotalBet.GetHashCode();
       if (TotalWin != 0L) hash ^= TotalWin.GetHashCode();
       if (_unknownFields != null) {
@@ -812,12 +826,16 @@ namespace Roulette {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (TotalBet != 0L) {
+      if (ChairId != 0) {
         output.WriteRawTag(8);
+        output.WriteInt32(ChairId);
+      }
+      if (TotalBet != 0L) {
+        output.WriteRawTag(16);
         output.WriteInt64(TotalBet);
       }
       if (TotalWin != 0L) {
-        output.WriteRawTag(16);
+        output.WriteRawTag(24);
         output.WriteInt64(TotalWin);
       }
       if (_unknownFields != null) {
@@ -829,12 +847,16 @@ namespace Roulette {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (TotalBet != 0L) {
+      if (ChairId != 0) {
         output.WriteRawTag(8);
+        output.WriteInt32(ChairId);
+      }
+      if (TotalBet != 0L) {
+        output.WriteRawTag(16);
         output.WriteInt64(TotalBet);
       }
       if (TotalWin != 0L) {
-        output.WriteRawTag(16);
+        output.WriteRawTag(24);
         output.WriteInt64(TotalWin);
       }
       if (_unknownFields != null) {
@@ -846,6 +868,9 @@ namespace Roulette {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      if (ChairId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChairId);
+      }
       if (TotalBet != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(TotalBet);
       }
@@ -862,6 +887,9 @@ namespace Roulette {
     public void MergeFrom(UserInfo other) {
       if (other == null) {
         return;
+      }
+      if (other.ChairId != 0) {
+        ChairId = other.ChairId;
       }
       if (other.TotalBet != 0L) {
         TotalBet = other.TotalBet;
@@ -884,10 +912,14 @@ namespace Roulette {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            TotalBet = input.ReadInt64();
+            ChairId = input.ReadInt32();
             break;
           }
           case 16: {
+            TotalBet = input.ReadInt64();
+            break;
+          }
+          case 24: {
             TotalWin = input.ReadInt64();
             break;
           }
@@ -906,10 +938,14 @@ namespace Roulette {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            TotalBet = input.ReadInt64();
+            ChairId = input.ReadInt32();
             break;
           }
           case 16: {
+            TotalBet = input.ReadInt64();
+            break;
+          }
+          case 24: {
             TotalWin = input.ReadInt64();
             break;
           }
