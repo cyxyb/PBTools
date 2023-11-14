@@ -436,6 +436,8 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Roulette_2eproto::offsets[] PR
   PROTOBUF_FIELD_OFFSET(::Roulette::WinMsg, gold_),
   PROTOBUF_FIELD_OFFSET(::Roulette::WinMsg, user_gold_),
   PROTOBUF_FIELD_OFFSET(::Roulette::WinMsg, win_gold_),
+  PROTOBUF_FIELD_OFFSET(::Roulette::WinMsg, total_bet_),
+  PROTOBUF_FIELD_OFFSET(::Roulette::WinMsg, total_win_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::Roulette::MsgGameResult, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -460,7 +462,7 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 99, -1, sizeof(::Roulette::MsgAgainBetResp)},
   { 106, -1, sizeof(::Roulette::RevocationBet)},
   { 112, -1, sizeof(::Roulette::WinMsg)},
-  { 121, -1, sizeof(::Roulette::MsgGameResult)},
+  { 123, -1, sizeof(::Roulette::MsgGameResult)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -514,17 +516,18 @@ const char descriptor_table_protodef_Roulette_2eproto[] PROTOBUF_SECTION_VARIABL
   "gAgainBetResp\022\020\n\010chair_id\030\001 \001(\005\022-\n\016again"
   "_bet_info\030\002 \001(\0132\025.Roulette.MsgAgainBet\"("
   "\n\rRevocationBet\022\027\n\017revocation_gold\030\001 \003(\005"
-  "\"M\n\006WinMsg\022\020\n\010chair_id\030\001 \001(\005\022\014\n\004gold\030\002 \001"
-  "(\003\022\021\n\tuser_gold\030\003 \001(\003\022\020\n\010win_gold\030\004 \001(\003\""
-  "F\n\rMsgGameResult\022\022\n\nresult_num\030\001 \001(\005\022!\n\007"
-  "win_msg\030\002 \003(\0132\020.Roulette.WinMsg*\360\001\n\016EMsg"
-  "IDRoulette\022\027\n\023MsgID_SC_GameRecord\020\000\022\027\n\023M"
-  "sgID_SC_GameBottom\020\001\022\031\n\025MsgID_SC_BottomC"
-  "ancel\020\002\022\025\n\021MsgID_SC_AgainBet\020\003\022\027\n\023MsgID_"
-  "SC_GameResult\020\004\022\026\n\022MsgID_SC_GameState\020\005\022"
-  "\027\n\023MsgID_CS_GameBottom\020\006\022\031\n\025MsgID_CS_Bot"
-  "tomCancel\020\007\022\025\n\021MsgID_CS_AgainBet\020\010b\006prot"
-  "o3"
+  "\"s\n\006WinMsg\022\020\n\010chair_id\030\001 \001(\005\022\014\n\004gold\030\002 \001"
+  "(\003\022\021\n\tuser_gold\030\003 \001(\003\022\020\n\010win_gold\030\004 \001(\003\022"
+  "\021\n\ttotal_bet\030\005 \001(\003\022\021\n\ttotal_win\030\006 \001(\003\"F\n"
+  "\rMsgGameResult\022\022\n\nresult_num\030\001 \001(\005\022!\n\007wi"
+  "n_msg\030\002 \003(\0132\020.Roulette.WinMsg*\205\002\n\016EMsgID"
+  "Roulette\022\027\n\023MsgID_SC_GameRecord\020\000\022\027\n\023Msg"
+  "ID_SC_GameBottom\020\001\022\031\n\025MsgID_SC_BottomCan"
+  "cel\020\002\022\025\n\021MsgID_SC_AgainBet\020\003\022\027\n\023MsgID_SC"
+  "_GameResult\020\004\022\026\n\022MsgID_SC_GameState\020\005\022\027\n"
+  "\023MsgID_CS_GameBottom\020\006\022\031\n\025MsgID_CS_Botto"
+  "mCancel\020\007\022\025\n\021MsgID_CS_AgainBet\020\010\022\023\n\017MsgI"
+  "D_SC_AI_BET\020\tb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Roulette_2eproto_deps[1] = {
 };
@@ -548,7 +551,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Rou
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Roulette_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Roulette_2eproto = {
-  false, false, descriptor_table_protodef_Roulette_2eproto, "Roulette.proto", 1642,
+  false, false, descriptor_table_protodef_Roulette_2eproto, "Roulette.proto", 1701,
   &descriptor_table_Roulette_2eproto_once, descriptor_table_Roulette_2eproto_sccs, descriptor_table_Roulette_2eproto_deps, 16, 0,
   schemas, file_default_instances, TableStruct_Roulette_2eproto::offsets,
   file_level_metadata_Roulette_2eproto, 16, file_level_enum_descriptors_Roulette_2eproto, file_level_service_descriptors_Roulette_2eproto,
@@ -572,6 +575,7 @@ bool EMsgIDRoulette_IsValid(int value) {
     case 6:
     case 7:
     case 8:
+    case 9:
       return true;
     default:
       return false;
@@ -4401,6 +4405,20 @@ const char* WinMsg::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::int
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
+      // int64 total_bet = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          total_bet_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 total_win = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+          total_win_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
@@ -4453,6 +4471,18 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_win_gold(), target);
   }
 
+  // int64 total_bet = 5;
+  if (this->total_bet() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_total_bet(), target);
+  }
+
+  // int64 total_win = 6;
+  if (this->total_win() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(6, this->_internal_total_win(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -4488,6 +4518,20 @@ size_t WinMsg::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_win_gold());
+  }
+
+  // int64 total_bet = 5;
+  if (this->total_bet() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_total_bet());
+  }
+
+  // int64 total_win = 6;
+  if (this->total_win() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_total_win());
   }
 
   // int32 chair_id = 1;
@@ -4536,6 +4580,12 @@ void WinMsg::MergeFrom(const WinMsg& from) {
   }
   if (from.win_gold() != 0) {
     _internal_set_win_gold(from._internal_win_gold());
+  }
+  if (from.total_bet() != 0) {
+    _internal_set_total_bet(from._internal_total_bet());
+  }
+  if (from.total_win() != 0) {
+    _internal_set_total_win(from._internal_total_win());
   }
   if (from.chair_id() != 0) {
     _internal_set_chair_id(from._internal_chair_id());

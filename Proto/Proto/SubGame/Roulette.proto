@@ -14,6 +14,7 @@ enum EMsgIDRoulette
 	MsgID_CS_GameBottom 	= 6;		//下注(MsgBet)
 	MsgID_CS_BottomCancel 	= 7;		//下注撤回(RevocationBet)
 	MsgID_CS_AgainBet		= 8;		//续投(MsgAgainBet)
+	MsgID_SC_AI_BET			= 9;		//机器人下注（前端不管
 }
 //ALL 数据展示
 message GameALLRecord
@@ -118,7 +119,6 @@ message RevocationBet
 {
 	repeated int32 revocation_gold 	= 1;	//撤回下注 
 }
-
 //玩家输赢信息                              
 message WinMsg                           
 {                                           
@@ -126,7 +126,9 @@ message WinMsg
 	int64			gold			= 2;	//玩家输赢信息（真实输赢）
 	int64			user_gold		= 3;	//玩家金币	
 	int64			win_gold		= 4;	//中奖金币
-}                                           
+	int64 			total_bet 		= 5;	//总压
+	int64 			total_win 		= 6;	//总输赢
+}                             		              
 
 //游戏结果                                  
 message MsgGameResult                          
