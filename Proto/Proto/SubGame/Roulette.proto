@@ -126,8 +126,6 @@ message WinMsg
 	int64			gold			= 2;	//玩家输赢信息（真实输赢）
 	int64			user_gold		= 3;	//玩家金币	
 	int64			win_gold		= 4;	//中奖金币
-	int64 			total_bet 		= 5;	//总压
-	int64 			total_win 		= 6;	//总输赢
 }                             		              
 
 //游戏结果                                  
