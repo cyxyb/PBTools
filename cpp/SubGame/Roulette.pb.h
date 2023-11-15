@@ -2701,7 +2701,7 @@ class WinMsg PROTOBUF_FINAL :
   enum : int {
     kGoldFieldNumber = 2,
     kUserGoldFieldNumber = 3,
-    kWinGoldFieldNumber = 4,
+    kWinCountFieldNumber = 4,
     kChairIdFieldNumber = 1,
   };
   // int64 gold = 2;
@@ -2722,13 +2722,13 @@ class WinMsg PROTOBUF_FINAL :
   void _internal_set_user_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int64 win_gold = 4;
-  void clear_win_gold();
-  ::PROTOBUF_NAMESPACE_ID::int64 win_gold() const;
-  void set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  // int64 win_count = 4;
+  void clear_win_count();
+  ::PROTOBUF_NAMESPACE_ID::int64 win_count() const;
+  void set_win_count(::PROTOBUF_NAMESPACE_ID::int64 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_win_gold() const;
-  void _internal_set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_win_count() const;
+  void _internal_set_win_count(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
   // int32 chair_id = 1;
@@ -2749,7 +2749,7 @@ class WinMsg PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int64 gold_;
   ::PROTOBUF_NAMESPACE_ID::int64 user_gold_;
-  ::PROTOBUF_NAMESPACE_ID::int64 win_gold_;
+  ::PROTOBUF_NAMESPACE_ID::int64 win_count_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Roulette_2eproto;
@@ -4530,24 +4530,24 @@ inline void WinMsg::set_user_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
   // @@protoc_insertion_point(field_set:Roulette.WinMsg.user_gold)
 }
 
-// int64 win_gold = 4;
-inline void WinMsg::clear_win_gold() {
-  win_gold_ = PROTOBUF_LONGLONG(0);
+// int64 win_count = 4;
+inline void WinMsg::clear_win_count() {
+  win_count_ = PROTOBUF_LONGLONG(0);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 WinMsg::_internal_win_gold() const {
-  return win_gold_;
+inline ::PROTOBUF_NAMESPACE_ID::int64 WinMsg::_internal_win_count() const {
+  return win_count_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 WinMsg::win_gold() const {
-  // @@protoc_insertion_point(field_get:Roulette.WinMsg.win_gold)
-  return _internal_win_gold();
+inline ::PROTOBUF_NAMESPACE_ID::int64 WinMsg::win_count() const {
+  // @@protoc_insertion_point(field_get:Roulette.WinMsg.win_count)
+  return _internal_win_count();
 }
-inline void WinMsg::_internal_set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void WinMsg::_internal_set_win_count(::PROTOBUF_NAMESPACE_ID::int64 value) {
   
-  win_gold_ = value;
+  win_count_ = value;
 }
-inline void WinMsg::set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_win_gold(value);
-  // @@protoc_insertion_point(field_set:Roulette.WinMsg.win_gold)
+inline void WinMsg::set_win_count(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_win_count(value);
+  // @@protoc_insertion_point(field_set:Roulette.WinMsg.win_count)
 }
 
 // -------------------------------------------------------------------
