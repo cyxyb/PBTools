@@ -541,8 +541,8 @@ const char descriptor_table_protodef_Game_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "le_id\030\001 \001(\005\022\020\n\010table_no\030\002 \001(\005\022\020\n\010passwor"
   "d\030\003 \001(\t\"&\n\022MsgPvpJoinRoomResp\022\020\n\010ret_cod"
   "e\030\001 \001(\005\"^\n\022MsgPvpKickUserResp\022\020\n\010owner_i"
-  "d\030\001 \001(\005\022\022\n\nowner_nick\030\002 \001(\005\022\017\n\007kick_id\030\003"
-  " \001(\005\022\021\n\tkick_nick\030\004 \001(\005b\006proto3"
+  "d\030\001 \001(\005\022\022\n\nowner_nick\030\002 \001(\t\022\017\n\007kick_id\030\003"
+  " \001(\005\022\021\n\tkick_nick\030\004 \001(\tb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Game_2eproto_deps[1] = {
 };
@@ -4977,17 +4977,30 @@ MsgPvpKickUserResp::MsgPvpKickUserResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 MsgPvpKickUserResp::MsgPvpKickUserResp(const MsgPvpKickUserResp& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  owner_nick_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from._internal_owner_nick().empty()) {
+    owner_nick_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_owner_nick(), 
+      GetArena());
+  }
+  kick_nick_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from._internal_kick_nick().empty()) {
+    kick_nick_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_kick_nick(), 
+      GetArena());
+  }
   ::memcpy(&owner_id_, &from.owner_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&kick_nick_) -
-    reinterpret_cast<char*>(&owner_id_)) + sizeof(kick_nick_));
+    static_cast<size_t>(reinterpret_cast<char*>(&kick_id_) -
+    reinterpret_cast<char*>(&owner_id_)) + sizeof(kick_id_));
   // @@protoc_insertion_point(copy_constructor:MsgPvpKickUserResp)
 }
 
 void MsgPvpKickUserResp::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgPvpKickUserResp_Game_2eproto.base);
+  owner_nick_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  kick_nick_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&owner_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&kick_nick_) -
-      reinterpret_cast<char*>(&owner_id_)) + sizeof(kick_nick_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&kick_id_) -
+      reinterpret_cast<char*>(&owner_id_)) + sizeof(kick_id_));
 }
 
 MsgPvpKickUserResp::~MsgPvpKickUserResp() {
@@ -4998,6 +5011,8 @@ MsgPvpKickUserResp::~MsgPvpKickUserResp() {
 
 void MsgPvpKickUserResp::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
+  owner_nick_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  kick_nick_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
 void MsgPvpKickUserResp::ArenaDtor(void* object) {
@@ -5021,9 +5036,11 @@ void MsgPvpKickUserResp::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  owner_nick_.ClearToEmpty();
+  kick_nick_.ClearToEmpty();
   ::memset(&owner_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&kick_nick_) -
-      reinterpret_cast<char*>(&owner_id_)) + sizeof(kick_nick_));
+      reinterpret_cast<char*>(&kick_id_) -
+      reinterpret_cast<char*>(&owner_id_)) + sizeof(kick_id_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -5041,10 +5058,12 @@ const char* MsgPvpKickUserResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 owner_nick = 2;
+      // string owner_nick = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          owner_nick_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          auto str = _internal_mutable_owner_nick();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgPvpKickUserResp.owner_nick"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -5055,10 +5074,12 @@ const char* MsgPvpKickUserResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 kick_nick = 4;
+      // string kick_nick = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          kick_nick_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+          auto str = _internal_mutable_kick_nick();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgPvpKickUserResp.kick_nick"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -5096,10 +5117,14 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_owner_id(), target);
   }
 
-  // int32 owner_nick = 2;
-  if (this->owner_nick() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_owner_nick(), target);
+  // string owner_nick = 2;
+  if (this->owner_nick().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_owner_nick().data(), static_cast<int>(this->_internal_owner_nick().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "MsgPvpKickUserResp.owner_nick");
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_owner_nick(), target);
   }
 
   // int32 kick_id = 3;
@@ -5108,10 +5133,14 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_kick_id(), target);
   }
 
-  // int32 kick_nick = 4;
-  if (this->kick_nick() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_kick_nick(), target);
+  // string kick_nick = 4;
+  if (this->kick_nick().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_kick_nick().data(), static_cast<int>(this->_internal_kick_nick().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "MsgPvpKickUserResp.kick_nick");
+    target = stream->WriteStringMaybeAliased(
+        4, this->_internal_kick_nick(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -5130,6 +5159,20 @@ size_t MsgPvpKickUserResp::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  // string owner_nick = 2;
+  if (this->owner_nick().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_owner_nick());
+  }
+
+  // string kick_nick = 4;
+  if (this->kick_nick().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_kick_nick());
+  }
+
   // int32 owner_id = 1;
   if (this->owner_id() != 0) {
     total_size += 1 +
@@ -5137,25 +5180,11 @@ size_t MsgPvpKickUserResp::ByteSizeLong() const {
         this->_internal_owner_id());
   }
 
-  // int32 owner_nick = 2;
-  if (this->owner_nick() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_owner_nick());
-  }
-
   // int32 kick_id = 3;
   if (this->kick_id() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_kick_id());
-  }
-
-  // int32 kick_nick = 4;
-  if (this->kick_nick() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_kick_nick());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -5189,17 +5218,17 @@ void MsgPvpKickUserResp::MergeFrom(const MsgPvpKickUserResp& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  if (from.owner_nick().size() > 0) {
+    _internal_set_owner_nick(from._internal_owner_nick());
+  }
+  if (from.kick_nick().size() > 0) {
+    _internal_set_kick_nick(from._internal_kick_nick());
+  }
   if (from.owner_id() != 0) {
     _internal_set_owner_id(from._internal_owner_id());
   }
-  if (from.owner_nick() != 0) {
-    _internal_set_owner_nick(from._internal_owner_nick());
-  }
   if (from.kick_id() != 0) {
     _internal_set_kick_id(from._internal_kick_id());
-  }
-  if (from.kick_nick() != 0) {
-    _internal_set_kick_nick(from._internal_kick_nick());
   }
 }
 
@@ -5224,9 +5253,11 @@ bool MsgPvpKickUserResp::IsInitialized() const {
 void MsgPvpKickUserResp::InternalSwap(MsgPvpKickUserResp* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  owner_nick_.Swap(&other->owner_nick_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  kick_nick_.Swap(&other->kick_nick_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgPvpKickUserResp, kick_nick_)
-      + sizeof(MsgPvpKickUserResp::kick_nick_)
+      PROTOBUF_FIELD_OFFSET(MsgPvpKickUserResp, kick_id_)
+      + sizeof(MsgPvpKickUserResp::kick_id_)
       - PROTOBUF_FIELD_OFFSET(MsgPvpKickUserResp, owner_id_)>(
           reinterpret_cast<char*>(&owner_id_),
           reinterpret_cast<char*>(&other->owner_id_));

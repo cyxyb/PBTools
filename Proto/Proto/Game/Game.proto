@@ -152,9 +152,9 @@ message MsgPvpJoinRoomResp
 message MsgPvpKickUserResp
 {
 	int32	owner_id		= 1;	//房主ID
-	int32	owner_nick		= 2;	//房主ID
+	string	owner_nick		= 2;	//房主昵称
 	int32	kick_id			= 3;	//被踢ID
-	int32	kick_nick		= 4;	//被踢ID
+	string	kick_nick		= 4;	//被踢昵称
 }
 
 

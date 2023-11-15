@@ -55,8 +55,8 @@ public static partial class GameReflection {
           "TXNnUHZwSm9pblJvb20SEAoIdGFibGVfaWQYASABKAUSEAoIdGFibGVfbm8Y",
           "AiABKAUSEAoIcGFzc3dvcmQYAyABKAkiJgoSTXNnUHZwSm9pblJvb21SZXNw",
           "EhAKCHJldF9jb2RlGAEgASgFIl4KEk1zZ1B2cEtpY2tVc2VyUmVzcBIQCghv",
-          "d25lcl9pZBgBIAEoBRISCgpvd25lcl9uaWNrGAIgASgFEg8KB2tpY2tfaWQY",
-          "AyABKAUSEQoJa2lja19uaWNrGAQgASgFYgZwcm90bzM="));
+          "d25lcl9pZBgBIAEoBRISCgpvd25lcl9uaWNrGAIgASgJEg8KB2tpY2tfaWQY",
+          "AyABKAUSEQoJa2lja19uaWNrGAQgASgJYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -4609,15 +4609,15 @@ public sealed partial class MsgPvpKickUserResp : pb::IMessage<MsgPvpKickUserResp
 
   /// <summary>Field number for the "owner_nick" field.</summary>
   public const int OwnerNickFieldNumber = 2;
-  private int ownerNick_;
+  private string ownerNick_ = "";
   /// <summary>
-  ///房主ID
+  ///房主昵称
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public int OwnerNick {
+  public string OwnerNick {
     get { return ownerNick_; }
     set {
-      ownerNick_ = value;
+      ownerNick_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
     }
   }
 
@@ -4637,15 +4637,15 @@ public sealed partial class MsgPvpKickUserResp : pb::IMessage<MsgPvpKickUserResp
 
   /// <summary>Field number for the "kick_nick" field.</summary>
   public const int KickNickFieldNumber = 4;
-  private int kickNick_;
+  private string kickNick_ = "";
   /// <summary>
-  ///被踢ID
+  ///被踢昵称
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public int KickNick {
+  public string KickNick {
     get { return kickNick_; }
     set {
-      kickNick_ = value;
+      kickNick_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
     }
   }
 
@@ -4673,9 +4673,9 @@ public sealed partial class MsgPvpKickUserResp : pb::IMessage<MsgPvpKickUserResp
   public override int GetHashCode() {
     int hash = 1;
     if (OwnerId != 0) hash ^= OwnerId.GetHashCode();
-    if (OwnerNick != 0) hash ^= OwnerNick.GetHashCode();
+    if (OwnerNick.Length != 0) hash ^= OwnerNick.GetHashCode();
     if (KickId != 0) hash ^= KickId.GetHashCode();
-    if (KickNick != 0) hash ^= KickNick.GetHashCode();
+    if (KickNick.Length != 0) hash ^= KickNick.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -4696,17 +4696,17 @@ public sealed partial class MsgPvpKickUserResp : pb::IMessage<MsgPvpKickUserResp
       output.WriteRawTag(8);
       output.WriteInt32(OwnerId);
     }
-    if (OwnerNick != 0) {
-      output.WriteRawTag(16);
-      output.WriteInt32(OwnerNick);
+    if (OwnerNick.Length != 0) {
+      output.WriteRawTag(18);
+      output.WriteString(OwnerNick);
     }
     if (KickId != 0) {
       output.WriteRawTag(24);
       output.WriteInt32(KickId);
     }
-    if (KickNick != 0) {
-      output.WriteRawTag(32);
-      output.WriteInt32(KickNick);
+    if (KickNick.Length != 0) {
+      output.WriteRawTag(34);
+      output.WriteString(KickNick);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -4721,17 +4721,17 @@ public sealed partial class MsgPvpKickUserResp : pb::IMessage<MsgPvpKickUserResp
       output.WriteRawTag(8);
       output.WriteInt32(OwnerId);
     }
-    if (OwnerNick != 0) {
-      output.WriteRawTag(16);
-      output.WriteInt32(OwnerNick);
+    if (OwnerNick.Length != 0) {
+      output.WriteRawTag(18);
+      output.WriteString(OwnerNick);
     }
     if (KickId != 0) {
       output.WriteRawTag(24);
       output.WriteInt32(KickId);
     }
-    if (KickNick != 0) {
-      output.WriteRawTag(32);
-      output.WriteInt32(KickNick);
+    if (KickNick.Length != 0) {
+      output.WriteRawTag(34);
+      output.WriteString(KickNick);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
@@ -4745,14 +4745,14 @@ public sealed partial class MsgPvpKickUserResp : pb::IMessage<MsgPvpKickUserResp
     if (OwnerId != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(OwnerId);
     }
-    if (OwnerNick != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeInt32Size(OwnerNick);
+    if (OwnerNick.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(OwnerNick);
     }
     if (KickId != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(KickId);
     }
-    if (KickNick != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeInt32Size(KickNick);
+    if (KickNick.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(KickNick);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -4768,13 +4768,13 @@ public sealed partial class MsgPvpKickUserResp : pb::IMessage<MsgPvpKickUserResp
     if (other.OwnerId != 0) {
       OwnerId = other.OwnerId;
     }
-    if (other.OwnerNick != 0) {
+    if (other.OwnerNick.Length != 0) {
       OwnerNick = other.OwnerNick;
     }
     if (other.KickId != 0) {
       KickId = other.KickId;
     }
-    if (other.KickNick != 0) {
+    if (other.KickNick.Length != 0) {
       KickNick = other.KickNick;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -4795,16 +4795,16 @@ public sealed partial class MsgPvpKickUserResp : pb::IMessage<MsgPvpKickUserResp
           OwnerId = input.ReadInt32();
           break;
         }
-        case 16: {
-          OwnerNick = input.ReadInt32();
+        case 18: {
+          OwnerNick = input.ReadString();
           break;
         }
         case 24: {
           KickId = input.ReadInt32();
           break;
         }
-        case 32: {
-          KickNick = input.ReadInt32();
+        case 34: {
+          KickNick = input.ReadString();
           break;
         }
       }
@@ -4825,16 +4825,16 @@ public sealed partial class MsgPvpKickUserResp : pb::IMessage<MsgPvpKickUserResp
           OwnerId = input.ReadInt32();
           break;
         }
-        case 16: {
-          OwnerNick = input.ReadInt32();
+        case 18: {
+          OwnerNick = input.ReadString();
           break;
         }
         case 24: {
           KickId = input.ReadInt32();
           break;
         }
-        case 32: {
-          KickNick = input.ReadInt32();
+        case 34: {
+          KickNick = input.ReadString();
           break;
         }
       }
