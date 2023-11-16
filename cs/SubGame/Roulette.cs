@@ -51,17 +51,17 @@ namespace Roulette {
             "Cg5hZ2Fpbl9iZXRfaW5mbxgBIAMoCzIYLlJvdWxldHRlLlNpbmdsZUFnYWlu",
             "QmV0IlIKD01zZ0FnYWluQmV0UmVzcBIQCghjaGFpcl9pZBgBIAEoBRItCg5h",
             "Z2Fpbl9iZXRfaW5mbxgCIAEoCzIVLlJvdWxldHRlLk1zZ0FnYWluQmV0IigK",
-            "DVJldm9jYXRpb25CZXQSFwoPcmV2b2NhdGlvbl9nb2xkGAEgAygFIk4KBldp",
+            "DVJldm9jYXRpb25CZXQSFwoPcmV2b2NhdGlvbl9nb2xkGAEgAygFIk0KBldp",
             "bk1zZxIQCghjaGFpcl9pZBgBIAEoBRIMCgRnb2xkGAIgASgDEhEKCXVzZXJf",
-            "Z29sZBgDIAEoAxIRCgl3aW5fY291bnQYBCABKAMiRgoNTXNnR2FtZVJlc3Vs",
-            "dBISCgpyZXN1bHRfbnVtGAEgASgFEiEKB3dpbl9tc2cYAiADKAsyEC5Sb3Vs",
-            "ZXR0ZS5XaW5Nc2cqhQIKDkVNc2dJRFJvdWxldHRlEhcKE01zZ0lEX1NDX0dh",
-            "bWVSZWNvcmQQABIXChNNc2dJRF9TQ19HYW1lQm90dG9tEAESGQoVTXNnSURf",
-            "U0NfQm90dG9tQ2FuY2VsEAISFQoRTXNnSURfU0NfQWdhaW5CZXQQAxIXChNN",
-            "c2dJRF9TQ19HYW1lUmVzdWx0EAQSFgoSTXNnSURfU0NfR2FtZVN0YXRlEAUS",
-            "FwoTTXNnSURfQ1NfR2FtZUJvdHRvbRAGEhkKFU1zZ0lEX0NTX0JvdHRvbUNh",
-            "bmNlbBAHEhUKEU1zZ0lEX0NTX0FnYWluQmV0EAgSEwoPTXNnSURfU0NfQUlf",
-            "QkVUEAliBnByb3RvMw=="));
+            "Z29sZBgDIAEoAxIQCgh3aW5fZ29sZBgEIAEoAyJGCg1Nc2dHYW1lUmVzdWx0",
+            "EhIKCnJlc3VsdF9udW0YASABKAUSIQoHd2luX21zZxgCIAMoCzIQLlJvdWxl",
+            "dHRlLldpbk1zZyqFAgoORU1zZ0lEUm91bGV0dGUSFwoTTXNnSURfU0NfR2Ft",
+            "ZVJlY29yZBAAEhcKE01zZ0lEX1NDX0dhbWVCb3R0b20QARIZChVNc2dJRF9T",
+            "Q19Cb3R0b21DYW5jZWwQAhIVChFNc2dJRF9TQ19BZ2FpbkJldBADEhcKE01z",
+            "Z0lEX1NDX0dhbWVSZXN1bHQQBBIWChJNc2dJRF9TQ19HYW1lU3RhdGUQBRIX",
+            "ChNNc2dJRF9DU19HYW1lQm90dG9tEAYSGQoVTXNnSURfQ1NfQm90dG9tQ2Fu",
+            "Y2VsEAcSFQoRTXNnSURfQ1NfQWdhaW5CZXQQCBITCg9Nc2dJRF9TQ19BSV9C",
+            "RVQQCWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Roulette.EMsgIDRoulette), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -79,7 +79,7 @@ namespace Roulette {
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.MsgAgainBet), global::Roulette.MsgAgainBet.Parser, new[]{ "AgainBetInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.MsgAgainBetResp), global::Roulette.MsgAgainBetResp.Parser, new[]{ "ChairId", "AgainBetInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.RevocationBet), global::Roulette.RevocationBet.Parser, new[]{ "RevocationGold" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.WinMsg), global::Roulette.WinMsg.Parser, new[]{ "ChairId", "Gold", "UserGold", "WinCount" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.WinMsg), global::Roulette.WinMsg.Parser, new[]{ "ChairId", "Gold", "UserGold", "WinGold" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Roulette.MsgGameResult), global::Roulette.MsgGameResult.Parser, new[]{ "ResultNum", "WinMsg" }, null, null, null, null)
           }));
     }
@@ -771,6 +771,9 @@ namespace Roulette {
     /// <summary>Field number for the "total_bet" field.</summary>
     public const int TotalBetFieldNumber = 2;
     private long totalBet_;
+    /// <summary>
+    ///总下注
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long TotalBet {
       get { return totalBet_; }
@@ -782,6 +785,9 @@ namespace Roulette {
     /// <summary>Field number for the "total_win" field.</summary>
     public const int TotalWinFieldNumber = 3;
     private long totalWin_;
+    /// <summary>
+    ///总赢局数
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long TotalWin {
       get { return totalWin_; }
@@ -3652,7 +3658,7 @@ namespace Roulette {
       chairId_ = other.chairId_;
       gold_ = other.gold_;
       userGold_ = other.userGold_;
-      winCount_ = other.winCount_;
+      winGold_ = other.winGold_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3693,7 +3699,7 @@ namespace Roulette {
     public const int UserGoldFieldNumber = 3;
     private long userGold_;
     /// <summary>
-    ///玩家金币	
+    ///玩家金币
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long UserGold {
@@ -3703,17 +3709,17 @@ namespace Roulette {
       }
     }
 
-    /// <summary>Field number for the "win_count" field.</summary>
-    public const int WinCountFieldNumber = 4;
-    private long winCount_;
+    /// <summary>Field number for the "win_gold" field.</summary>
+    public const int WinGoldFieldNumber = 4;
+    private long winGold_;
     /// <summary>
-    ///中奖局数
+    ///金币
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long WinCount {
-      get { return winCount_; }
+    public long WinGold {
+      get { return winGold_; }
       set {
-        winCount_ = value;
+        winGold_ = value;
       }
     }
 
@@ -3733,7 +3739,7 @@ namespace Roulette {
       if (ChairId != other.ChairId) return false;
       if (Gold != other.Gold) return false;
       if (UserGold != other.UserGold) return false;
-      if (WinCount != other.WinCount) return false;
+      if (WinGold != other.WinGold) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -3743,7 +3749,7 @@ namespace Roulette {
       if (ChairId != 0) hash ^= ChairId.GetHashCode();
       if (Gold != 0L) hash ^= Gold.GetHashCode();
       if (UserGold != 0L) hash ^= UserGold.GetHashCode();
-      if (WinCount != 0L) hash ^= WinCount.GetHashCode();
+      if (WinGold != 0L) hash ^= WinGold.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3772,9 +3778,9 @@ namespace Roulette {
         output.WriteRawTag(24);
         output.WriteInt64(UserGold);
       }
-      if (WinCount != 0L) {
+      if (WinGold != 0L) {
         output.WriteRawTag(32);
-        output.WriteInt64(WinCount);
+        output.WriteInt64(WinGold);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -3797,9 +3803,9 @@ namespace Roulette {
         output.WriteRawTag(24);
         output.WriteInt64(UserGold);
       }
-      if (WinCount != 0L) {
+      if (WinGold != 0L) {
         output.WriteRawTag(32);
-        output.WriteInt64(WinCount);
+        output.WriteInt64(WinGold);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -3819,8 +3825,8 @@ namespace Roulette {
       if (UserGold != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(UserGold);
       }
-      if (WinCount != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(WinCount);
+      if (WinGold != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(WinGold);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3842,8 +3848,8 @@ namespace Roulette {
       if (other.UserGold != 0L) {
         UserGold = other.UserGold;
       }
-      if (other.WinCount != 0L) {
-        WinCount = other.WinCount;
+      if (other.WinGold != 0L) {
+        WinGold = other.WinGold;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3872,7 +3878,7 @@ namespace Roulette {
             break;
           }
           case 32: {
-            WinCount = input.ReadInt64();
+            WinGold = input.ReadInt64();
             break;
           }
         }
@@ -3902,7 +3908,7 @@ namespace Roulette {
             break;
           }
           case 32: {
-            WinCount = input.ReadInt64();
+            WinGold = input.ReadInt64();
             break;
           }
         }

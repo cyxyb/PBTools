@@ -435,7 +435,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Roulette_2eproto::offsets[] PR
   PROTOBUF_FIELD_OFFSET(::Roulette::WinMsg, chair_id_),
   PROTOBUF_FIELD_OFFSET(::Roulette::WinMsg, gold_),
   PROTOBUF_FIELD_OFFSET(::Roulette::WinMsg, user_gold_),
-  PROTOBUF_FIELD_OFFSET(::Roulette::WinMsg, win_count_),
+  PROTOBUF_FIELD_OFFSET(::Roulette::WinMsg, win_gold_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::Roulette::MsgGameResult, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -514,17 +514,17 @@ const char descriptor_table_protodef_Roulette_2eproto[] PROTOBUF_SECTION_VARIABL
   "gAgainBetResp\022\020\n\010chair_id\030\001 \001(\005\022-\n\016again"
   "_bet_info\030\002 \001(\0132\025.Roulette.MsgAgainBet\"("
   "\n\rRevocationBet\022\027\n\017revocation_gold\030\001 \003(\005"
-  "\"N\n\006WinMsg\022\020\n\010chair_id\030\001 \001(\005\022\014\n\004gold\030\002 \001"
-  "(\003\022\021\n\tuser_gold\030\003 \001(\003\022\021\n\twin_count\030\004 \001(\003"
-  "\"F\n\rMsgGameResult\022\022\n\nresult_num\030\001 \001(\005\022!\n"
-  "\007win_msg\030\002 \003(\0132\020.Roulette.WinMsg*\205\002\n\016EMs"
-  "gIDRoulette\022\027\n\023MsgID_SC_GameRecord\020\000\022\027\n\023"
-  "MsgID_SC_GameBottom\020\001\022\031\n\025MsgID_SC_Bottom"
-  "Cancel\020\002\022\025\n\021MsgID_SC_AgainBet\020\003\022\027\n\023MsgID"
-  "_SC_GameResult\020\004\022\026\n\022MsgID_SC_GameState\020\005"
-  "\022\027\n\023MsgID_CS_GameBottom\020\006\022\031\n\025MsgID_CS_Bo"
-  "ttomCancel\020\007\022\025\n\021MsgID_CS_AgainBet\020\010\022\023\n\017M"
-  "sgID_SC_AI_BET\020\tb\006proto3"
+  "\"M\n\006WinMsg\022\020\n\010chair_id\030\001 \001(\005\022\014\n\004gold\030\002 \001"
+  "(\003\022\021\n\tuser_gold\030\003 \001(\003\022\020\n\010win_gold\030\004 \001(\003\""
+  "F\n\rMsgGameResult\022\022\n\nresult_num\030\001 \001(\005\022!\n\007"
+  "win_msg\030\002 \003(\0132\020.Roulette.WinMsg*\205\002\n\016EMsg"
+  "IDRoulette\022\027\n\023MsgID_SC_GameRecord\020\000\022\027\n\023M"
+  "sgID_SC_GameBottom\020\001\022\031\n\025MsgID_SC_BottomC"
+  "ancel\020\002\022\025\n\021MsgID_SC_AgainBet\020\003\022\027\n\023MsgID_"
+  "SC_GameResult\020\004\022\026\n\022MsgID_SC_GameState\020\005\022"
+  "\027\n\023MsgID_CS_GameBottom\020\006\022\031\n\025MsgID_CS_Bot"
+  "tomCancel\020\007\022\025\n\021MsgID_CS_AgainBet\020\010\022\023\n\017Ms"
+  "gID_SC_AI_BET\020\tb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Roulette_2eproto_deps[1] = {
 };
@@ -548,7 +548,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Rou
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Roulette_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Roulette_2eproto = {
-  false, false, descriptor_table_protodef_Roulette_2eproto, "Roulette.proto", 1664,
+  false, false, descriptor_table_protodef_Roulette_2eproto, "Roulette.proto", 1663,
   &descriptor_table_Roulette_2eproto_once, descriptor_table_Roulette_2eproto_sccs, descriptor_table_Roulette_2eproto_deps, 16, 0,
   schemas, file_default_instances, TableStruct_Roulette_2eproto::offsets,
   file_level_metadata_Roulette_2eproto, 16, file_level_enum_descriptors_Roulette_2eproto, file_level_service_descriptors_Roulette_2eproto,
@@ -4395,10 +4395,10 @@ const char* WinMsg::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::int
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int64 win_count = 4;
+      // int64 win_gold = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          win_count_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          win_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -4448,10 +4448,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_user_gold(), target);
   }
 
-  // int64 win_count = 4;
-  if (this->win_count() != 0) {
+  // int64 win_gold = 4;
+  if (this->win_gold() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_win_count(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_win_gold(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -4484,11 +4484,11 @@ size_t WinMsg::ByteSizeLong() const {
         this->_internal_user_gold());
   }
 
-  // int64 win_count = 4;
-  if (this->win_count() != 0) {
+  // int64 win_gold = 4;
+  if (this->win_gold() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_win_count());
+        this->_internal_win_gold());
   }
 
   // int32 chair_id = 1;
@@ -4535,8 +4535,8 @@ void WinMsg::MergeFrom(const WinMsg& from) {
   if (from.user_gold() != 0) {
     _internal_set_user_gold(from._internal_user_gold());
   }
-  if (from.win_count() != 0) {
-    _internal_set_win_count(from._internal_win_count());
+  if (from.win_gold() != 0) {
+    _internal_set_win_gold(from._internal_win_gold());
   }
   if (from.chair_id() != 0) {
     _internal_set_chair_id(from._internal_chair_id());

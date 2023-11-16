@@ -124,8 +124,8 @@ message WinMsg
 {                                           
 	int32			chair_id		= 1;	//玩家椅子号
 	int64			gold			= 2;	//玩家输赢信息（真实输赢）
-	int64			user_gold		= 3;	//玩家金币	
-	int64			win_count		= 4;	//中奖局数
+	int64			user_gold		= 3;	//玩家金币
+	int64			win_gold		= 4;	//金币
 }                             		              
 
 //游戏结果                                  
