@@ -425,6 +425,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Game_2eproto::offsets[] PROTOB
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::MsgPvpRoomList, room_list_),
+  PROTOBUF_FIELD_OFFSET(::MsgPvpRoomList, create_vip_limit_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgPvpCreateRoom, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -476,11 +477,11 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 83, -1, sizeof(::MsgJackpotInfo)},
   { 90, -1, sizeof(::MsgPvpRoomInfo)},
   { 104, -1, sizeof(::MsgPvpRoomList)},
-  { 110, -1, sizeof(::MsgPvpCreateRoom)},
-  { 116, -1, sizeof(::MsgPvpCreateRoomResp)},
-  { 124, -1, sizeof(::MsgPvpJoinRoom)},
-  { 132, -1, sizeof(::MsgPvpJoinRoomResp)},
-  { 138, -1, sizeof(::MsgPvpKickUserResp)},
+  { 111, -1, sizeof(::MsgPvpCreateRoom)},
+  { 117, -1, sizeof(::MsgPvpCreateRoomResp)},
+  { 125, -1, sizeof(::MsgPvpJoinRoom)},
+  { 133, -1, sizeof(::MsgPvpJoinRoomResp)},
+  { 139, -1, sizeof(::MsgPvpKickUserResp)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -532,17 +533,18 @@ const char descriptor_table_protodef_Game_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "\005\022\022\n\ntable_name\030\002 \001(\t\022\021\n\tchair_num\030\003 \001(\005"
   "\022\022\n\njoin_limit\030\004 \001(\003\022\022\n\nis_private\030\005 \001(\010"
   "\022\020\n\010password\030\006 \001(\t\022\020\n\010owner_id\030\007 \001(\005\022\020\n\010"
-  "table_no\030\010 \001(\005\022\021\n\ttable_cfg\030\n \001(\t\"4\n\016Msg"
+  "table_no\030\010 \001(\005\022\021\n\ttable_cfg\030\n \001(\t\"N\n\016Msg"
   "PvpRoomList\022\"\n\troom_list\030\001 \003(\0132\017.MsgPvpR"
-  "oomInfo\"0\n\020MsgPvpCreateRoom\022\034\n\003cfg\030\001 \001(\013"
-  "2\017.MsgPvpRoomInfo\"L\n\024MsgPvpCreateRoomRes"
-  "p\022\020\n\010ret_code\030\001 \001(\005\022\020\n\010table_id\030\002 \001(\005\022\020\n"
-  "\010table_no\030\003 \001(\005\"F\n\016MsgPvpJoinRoom\022\020\n\010tab"
-  "le_id\030\001 \001(\005\022\020\n\010table_no\030\002 \001(\005\022\020\n\010passwor"
-  "d\030\003 \001(\t\"&\n\022MsgPvpJoinRoomResp\022\020\n\010ret_cod"
-  "e\030\001 \001(\005\"^\n\022MsgPvpKickUserResp\022\020\n\010owner_i"
-  "d\030\001 \001(\005\022\022\n\nowner_nick\030\002 \001(\t\022\017\n\007kick_id\030\003"
-  " \001(\005\022\021\n\tkick_nick\030\004 \001(\tb\006proto3"
+  "oomInfo\022\030\n\020create_vip_limit\030\002 \001(\005\"0\n\020Msg"
+  "PvpCreateRoom\022\034\n\003cfg\030\001 \001(\0132\017.MsgPvpRoomI"
+  "nfo\"L\n\024MsgPvpCreateRoomResp\022\020\n\010ret_code\030"
+  "\001 \001(\005\022\020\n\010table_id\030\002 \001(\005\022\020\n\010table_no\030\003 \001("
+  "\005\"F\n\016MsgPvpJoinRoom\022\020\n\010table_id\030\001 \001(\005\022\020\n"
+  "\010table_no\030\002 \001(\005\022\020\n\010password\030\003 \001(\t\"&\n\022Msg"
+  "PvpJoinRoomResp\022\020\n\010ret_code\030\001 \001(\005\"^\n\022Msg"
+  "PvpKickUserResp\022\020\n\010owner_id\030\001 \001(\005\022\022\n\nown"
+  "er_nick\030\002 \001(\t\022\017\n\007kick_id\030\003 \001(\005\022\021\n\tkick_n"
+  "ick\030\004 \001(\tb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Game_2eproto_deps[1] = {
 };
@@ -567,7 +569,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Gam
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Game_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Game_2eproto = {
-  false, false, descriptor_table_protodef_Game_2eproto, "Game.proto", 1551,
+  false, false, descriptor_table_protodef_Game_2eproto, "Game.proto", 1577,
   &descriptor_table_Game_2eproto_once, descriptor_table_Game_2eproto_sccs, descriptor_table_Game_2eproto_deps, 17, 0,
   schemas, file_default_instances, TableStruct_Game_2eproto::offsets,
   file_level_metadata_Game_2eproto, 17, file_level_enum_descriptors_Game_2eproto, file_level_service_descriptors_Game_2eproto,
@@ -3855,11 +3857,13 @@ MsgPvpRoomList::MsgPvpRoomList(const MsgPvpRoomList& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       room_list_(from.room_list_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  create_vip_limit_ = from.create_vip_limit_;
   // @@protoc_insertion_point(copy_constructor:MsgPvpRoomList)
 }
 
 void MsgPvpRoomList::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgPvpRoomList_Game_2eproto.base);
+  create_vip_limit_ = 0;
 }
 
 MsgPvpRoomList::~MsgPvpRoomList() {
@@ -3894,6 +3898,7 @@ void MsgPvpRoomList::Clear() {
   (void) cached_has_bits;
 
   room_list_.Clear();
+  create_vip_limit_ = 0;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -3914,6 +3919,13 @@ const char* MsgPvpRoomList::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
+        } else goto handle_unusual;
+        continue;
+      // int32 create_vip_limit = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          create_vip_limit_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
         } else goto handle_unusual;
         continue;
       default: {
@@ -3952,6 +3964,12 @@ failure:
       InternalWriteMessage(1, this->_internal_room_list(i), target, stream);
   }
 
+  // int32 create_vip_limit = 2;
+  if (this->create_vip_limit() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_create_vip_limit(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -3973,6 +3991,13 @@ size_t MsgPvpRoomList::ByteSizeLong() const {
   for (const auto& msg : this->room_list_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  // int32 create_vip_limit = 2;
+  if (this->create_vip_limit() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_create_vip_limit());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -4007,6 +4032,9 @@ void MsgPvpRoomList::MergeFrom(const MsgPvpRoomList& from) {
   (void) cached_has_bits;
 
   room_list_.MergeFrom(from.room_list_);
+  if (from.create_vip_limit() != 0) {
+    _internal_set_create_vip_limit(from._internal_create_vip_limit());
+  }
 }
 
 void MsgPvpRoomList::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -4031,6 +4059,7 @@ void MsgPvpRoomList::InternalSwap(MsgPvpRoomList* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   room_list_.InternalSwap(&other->room_list_);
+  swap(create_vip_limit_, other->create_vip_limit_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MsgPvpRoomList::GetMetadata() const {

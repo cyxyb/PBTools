@@ -2234,6 +2234,7 @@ class MsgPvpRoomList PROTOBUF_FINAL :
 
   enum : int {
     kRoomListFieldNumber = 1,
+    kCreateVipLimitFieldNumber = 2,
   };
   // repeated .MsgPvpRoomInfo room_list = 1;
   int room_list_size() const;
@@ -2253,6 +2254,15 @@ class MsgPvpRoomList PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgPvpRoomInfo >&
       room_list() const;
 
+  // int32 create_vip_limit = 2;
+  void clear_create_vip_limit();
+  ::PROTOBUF_NAMESPACE_ID::int32 create_vip_limit() const;
+  void set_create_vip_limit(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_create_vip_limit() const;
+  void _internal_set_create_vip_limit(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgPvpRoomList)
  private:
   class _Internal;
@@ -2261,6 +2271,7 @@ class MsgPvpRoomList PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgPvpRoomInfo > room_list_;
+  ::PROTOBUF_NAMESPACE_ID::int32 create_vip_limit_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Game_2eproto;
 };
@@ -4530,6 +4541,26 @@ inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgPvpRoomInfo >&
 MsgPvpRoomList::room_list() const {
   // @@protoc_insertion_point(field_list:MsgPvpRoomList.room_list)
   return room_list_;
+}
+
+// int32 create_vip_limit = 2;
+inline void MsgPvpRoomList::clear_create_vip_limit() {
+  create_vip_limit_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpRoomList::_internal_create_vip_limit() const {
+  return create_vip_limit_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpRoomList::create_vip_limit() const {
+  // @@protoc_insertion_point(field_get:MsgPvpRoomList.create_vip_limit)
+  return _internal_create_vip_limit();
+}
+inline void MsgPvpRoomList::_internal_set_create_vip_limit(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  create_vip_limit_ = value;
+}
+inline void MsgPvpRoomList::set_create_vip_limit(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_create_vip_limit(value);
+  // @@protoc_insertion_point(field_set:MsgPvpRoomList.create_vip_limit)
 }
 
 // -------------------------------------------------------------------

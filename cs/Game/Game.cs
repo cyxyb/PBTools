@@ -47,16 +47,17 @@ public static partial class GameReflection {
           "SW5mbxIQCgh0YWJsZV9pZBgBIAEoBRISCgp0YWJsZV9uYW1lGAIgASgJEhEK",
           "CWNoYWlyX251bRgDIAEoBRISCgpqb2luX2xpbWl0GAQgASgDEhIKCmlzX3By",
           "aXZhdGUYBSABKAgSEAoIcGFzc3dvcmQYBiABKAkSEAoIb3duZXJfaWQYByAB",
-          "KAUSEAoIdGFibGVfbm8YCCABKAUSEQoJdGFibGVfY2ZnGAogASgJIjQKDk1z",
+          "KAUSEAoIdGFibGVfbm8YCCABKAUSEQoJdGFibGVfY2ZnGAogASgJIk4KDk1z",
           "Z1B2cFJvb21MaXN0EiIKCXJvb21fbGlzdBgBIAMoCzIPLk1zZ1B2cFJvb21J",
-          "bmZvIjAKEE1zZ1B2cENyZWF0ZVJvb20SHAoDY2ZnGAEgASgLMg8uTXNnUHZw",
-          "Um9vbUluZm8iTAoUTXNnUHZwQ3JlYXRlUm9vbVJlc3ASEAoIcmV0X2NvZGUY",
-          "ASABKAUSEAoIdGFibGVfaWQYAiABKAUSEAoIdGFibGVfbm8YAyABKAUiRgoO",
-          "TXNnUHZwSm9pblJvb20SEAoIdGFibGVfaWQYASABKAUSEAoIdGFibGVfbm8Y",
-          "AiABKAUSEAoIcGFzc3dvcmQYAyABKAkiJgoSTXNnUHZwSm9pblJvb21SZXNw",
-          "EhAKCHJldF9jb2RlGAEgASgFIl4KEk1zZ1B2cEtpY2tVc2VyUmVzcBIQCghv",
-          "d25lcl9pZBgBIAEoBRISCgpvd25lcl9uaWNrGAIgASgJEg8KB2tpY2tfaWQY",
-          "AyABKAUSEQoJa2lja19uaWNrGAQgASgJYgZwcm90bzM="));
+          "bmZvEhgKEGNyZWF0ZV92aXBfbGltaXQYAiABKAUiMAoQTXNnUHZwQ3JlYXRl",
+          "Um9vbRIcCgNjZmcYASABKAsyDy5Nc2dQdnBSb29tSW5mbyJMChRNc2dQdnBD",
+          "cmVhdGVSb29tUmVzcBIQCghyZXRfY29kZRgBIAEoBRIQCgh0YWJsZV9pZBgC",
+          "IAEoBRIQCgh0YWJsZV9ubxgDIAEoBSJGCg5Nc2dQdnBKb2luUm9vbRIQCgh0",
+          "YWJsZV9pZBgBIAEoBRIQCgh0YWJsZV9ubxgCIAEoBRIQCghwYXNzd29yZBgD",
+          "IAEoCSImChJNc2dQdnBKb2luUm9vbVJlc3ASEAoIcmV0X2NvZGUYASABKAUi",
+          "XgoSTXNnUHZwS2lja1VzZXJSZXNwEhAKCG93bmVyX2lkGAEgASgFEhIKCm93",
+          "bmVyX25pY2sYAiABKAkSDwoHa2lja19pZBgDIAEoBRIRCglraWNrX25pY2sY",
+          "BCABKAliBnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -71,7 +72,7 @@ public static partial class GameReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgQueryRecord), global::MsgQueryRecord.Parser, new[]{ "Page", "Num", "Type" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgJackpotInfo), global::MsgJackpotInfo.Parser, new[]{ "Jackpot", "FakeJackpot" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpRoomInfo), global::MsgPvpRoomInfo.Parser, new[]{ "TableId", "TableName", "ChairNum", "JoinLimit", "IsPrivate", "Password", "OwnerId", "TableNo", "TableCfg" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpRoomList), global::MsgPvpRoomList.Parser, new[]{ "RoomList" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpRoomList), global::MsgPvpRoomList.Parser, new[]{ "RoomList", "CreateVipLimit" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpCreateRoom), global::MsgPvpCreateRoom.Parser, new[]{ "Cfg" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpCreateRoomResp), global::MsgPvpCreateRoomResp.Parser, new[]{ "RetCode", "TableId", "TableNo" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpJoinRoom), global::MsgPvpJoinRoom.Parser, new[]{ "TableId", "TableNo", "Password" }, null, null, null, null),
@@ -3535,6 +3536,7 @@ public sealed partial class MsgPvpRoomList : pb::IMessage<MsgPvpRoomList>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public MsgPvpRoomList(MsgPvpRoomList other) : this() {
     roomList_ = other.roomList_.Clone();
+    createVipLimit_ = other.createVipLimit_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -3553,6 +3555,17 @@ public sealed partial class MsgPvpRoomList : pb::IMessage<MsgPvpRoomList>
     get { return roomList_; }
   }
 
+  /// <summary>Field number for the "create_vip_limit" field.</summary>
+  public const int CreateVipLimitFieldNumber = 2;
+  private int createVipLimit_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CreateVipLimit {
+    get { return createVipLimit_; }
+    set {
+      createVipLimit_ = value;
+    }
+  }
+
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as MsgPvpRoomList);
@@ -3567,6 +3580,7 @@ public sealed partial class MsgPvpRoomList : pb::IMessage<MsgPvpRoomList>
       return true;
     }
     if(!roomList_.Equals(other.roomList_)) return false;
+    if (CreateVipLimit != other.CreateVipLimit) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -3574,6 +3588,7 @@ public sealed partial class MsgPvpRoomList : pb::IMessage<MsgPvpRoomList>
   public override int GetHashCode() {
     int hash = 1;
     hash ^= roomList_.GetHashCode();
+    if (CreateVipLimit != 0) hash ^= CreateVipLimit.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -3591,6 +3606,10 @@ public sealed partial class MsgPvpRoomList : pb::IMessage<MsgPvpRoomList>
     output.WriteRawMessage(this);
   #else
     roomList_.WriteTo(output, _repeated_roomList_codec);
+    if (CreateVipLimit != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(CreateVipLimit);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -3601,6 +3620,10 @@ public sealed partial class MsgPvpRoomList : pb::IMessage<MsgPvpRoomList>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
     roomList_.WriteTo(ref output, _repeated_roomList_codec);
+    if (CreateVipLimit != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(CreateVipLimit);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -3611,6 +3634,9 @@ public sealed partial class MsgPvpRoomList : pb::IMessage<MsgPvpRoomList>
   public int CalculateSize() {
     int size = 0;
     size += roomList_.CalculateSize(_repeated_roomList_codec);
+    if (CreateVipLimit != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(CreateVipLimit);
+    }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
     }
@@ -3623,6 +3649,9 @@ public sealed partial class MsgPvpRoomList : pb::IMessage<MsgPvpRoomList>
       return;
     }
     roomList_.Add(other.roomList_);
+    if (other.CreateVipLimit != 0) {
+      CreateVipLimit = other.CreateVipLimit;
+    }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
 
@@ -3641,6 +3670,10 @@ public sealed partial class MsgPvpRoomList : pb::IMessage<MsgPvpRoomList>
           roomList_.AddEntriesFrom(input, _repeated_roomList_codec);
           break;
         }
+        case 16: {
+          CreateVipLimit = input.ReadInt32();
+          break;
+        }
       }
     }
   #endif
@@ -3657,6 +3690,10 @@ public sealed partial class MsgPvpRoomList : pb::IMessage<MsgPvpRoomList>
           break;
         case 10: {
           roomList_.AddEntriesFrom(ref input, _repeated_roomList_codec);
+          break;
+        }
+        case 16: {
+          CreateVipLimit = input.ReadInt32();
           break;
         }
       }

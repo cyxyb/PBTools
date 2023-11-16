@@ -110,6 +110,7 @@ message MsgPvpRoomInfo
 message MsgPvpRoomList
 {
 	repeated MsgPvpRoomInfo room_list = 1;
+	int32	create_vip_limit		  = 2;
 }
 
 //pvp房间列表
