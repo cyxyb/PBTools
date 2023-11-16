@@ -247,11 +247,12 @@ enum EMsgIDGame : int {
   MsgIDGame_AddOneRecord = 1018,
   MsgIDGame_NotifyPlayerOfflineResp = 1019,
   MsgIDGame_ChangeTable = 1020,
-  MsgIDGame_Pvp_SendTableListResp = 1021,
-  MsgIDGame_Pvp_ActivateTable = 1024,
-  MsgIDGame_Pvp_ActivateTableResp = 1025,
-  MsgIDGame_Pvp_KickUser = 1026,
-  MsgIDGame_Pvp_KickUserResp = 1027,
+  MsgIDGame_Pvp_GetTableList = 1021,
+  MsgIDGame_Pvp_SendTableListResp = 1022,
+  MsgIDGame_Pvp_ActivateTable = 1025,
+  MsgIDGame_Pvp_ActivateTableResp = 1026,
+  MsgIDGame_Pvp_KickUser = 1027,
+  MsgIDGame_Pvp_KickUserResp = 1028,
   EMsgIDGame_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDGame_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };

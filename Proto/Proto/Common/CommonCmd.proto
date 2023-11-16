@@ -158,13 +158,14 @@ enum EMsgIDGame
 	MsgIDGame_ChangeTable				= 1020;		//换桌(MsgCommonN32)
 
 	////////////////////////////////////////////pvp/////////////////////////////////////////
-	MsgIDGame_Pvp_SendTableListResp		= 1021;		//发送PVP桌子列表(MsgPvpRoomList)
-	//MsgIDGame_Pvp_CreateRoomResp		= 1022;		//创建房间(MsgIDGame_SitDownResp)
-	//MsgIDGame_Pvp_JoinRoomResp		= 1023;		//加入房间(MsgIDGame_SitDownResp)
-	MsgIDGame_Pvp_ActivateTable			= 1024;		//房主激活桌子(MsgCommonBool)
-	MsgIDGame_Pvp_ActivateTableResp		= 1025;		//房主激活桌子(MsgCommonBool)
-	MsgIDGame_Pvp_KickUser				= 1026;		//房主踢人(MsgCommonN32)
-	MsgIDGame_Pvp_KickUserResp			= 1027;		//房主踢人(MsgPvpKickUserResp)
+	MsgIDGame_Pvp_GetTableList			= 1021;		//获取PVP桌子列表(MsgCommonN32)
+	MsgIDGame_Pvp_SendTableListResp		= 1022;		//发送PVP桌子列表(MsgPvpRoomList)
+	//MsgIDGame_Pvp_CreateRoomResp		= 1023;		//创建房间(MsgIDGame_SitDownResp)
+	//MsgIDGame_Pvp_JoinRoomResp		= 1024;		//加入房间(MsgIDGame_SitDownResp)
+	MsgIDGame_Pvp_ActivateTable			= 1025;		//房主激活桌子(MsgCommonBool)
+	MsgIDGame_Pvp_ActivateTableResp		= 1026;		//房主激活桌子(MsgCommonBool)
+	MsgIDGame_Pvp_KickUser				= 1027;		//房主踢人(MsgCommonN32)
+	MsgIDGame_Pvp_KickUserResp			= 1028;		//房主踢人(MsgPvpKickUserResp)
 	////////////////////////////////////////////////////////////////////////////////////////
 }
 
