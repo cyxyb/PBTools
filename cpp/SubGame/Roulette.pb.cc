@@ -338,6 +338,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Roulette_2eproto::offsets[] PR
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::Roulette::UserInfo, chair_id_),
   PROTOBUF_FIELD_OFFSET(::Roulette::UserInfo, total_bet_),
   PROTOBUF_FIELD_OFFSET(::Roulette::UserInfo, total_win_),
   ~0u,  // no _has_bits_
@@ -433,6 +434,8 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Roulette_2eproto::offsets[] PR
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::Roulette::WinMsg, chair_id_),
   PROTOBUF_FIELD_OFFSET(::Roulette::WinMsg, gold_),
+  PROTOBUF_FIELD_OFFSET(::Roulette::WinMsg, user_gold_),
+  PROTOBUF_FIELD_OFFSET(::Roulette::WinMsg, win_gold_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::Roulette::MsgGameResult, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -445,19 +448,19 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 0, -1, sizeof(::Roulette::GameALLRecord)},
   { 12, -1, sizeof(::Roulette::BettonArea)},
   { 18, -1, sizeof(::Roulette::UserInfo)},
-  { 25, -1, sizeof(::Roulette::GameConfg)},
-  { 38, -1, sizeof(::Roulette::GameState)},
-  { 45, -1, sizeof(::Roulette::UserBetRecord)},
-  { 52, -1, sizeof(::Roulette::MsgSceneInfo)},
-  { 63, -1, sizeof(::Roulette::BetInfo)},
-  { 70, -1, sizeof(::Roulette::MsgBet)},
-  { 76, -1, sizeof(::Roulette::MsgBetResp)},
-  { 84, -1, sizeof(::Roulette::SingleAgainBet)},
-  { 92, -1, sizeof(::Roulette::MsgAgainBet)},
-  { 98, -1, sizeof(::Roulette::MsgAgainBetResp)},
-  { 105, -1, sizeof(::Roulette::RevocationBet)},
-  { 111, -1, sizeof(::Roulette::WinMsg)},
-  { 118, -1, sizeof(::Roulette::MsgGameResult)},
+  { 26, -1, sizeof(::Roulette::GameConfg)},
+  { 39, -1, sizeof(::Roulette::GameState)},
+  { 46, -1, sizeof(::Roulette::UserBetRecord)},
+  { 53, -1, sizeof(::Roulette::MsgSceneInfo)},
+  { 64, -1, sizeof(::Roulette::BetInfo)},
+  { 71, -1, sizeof(::Roulette::MsgBet)},
+  { 77, -1, sizeof(::Roulette::MsgBetResp)},
+  { 85, -1, sizeof(::Roulette::SingleAgainBet)},
+  { 93, -1, sizeof(::Roulette::MsgAgainBet)},
+  { 99, -1, sizeof(::Roulette::MsgAgainBetResp)},
+  { 106, -1, sizeof(::Roulette::RevocationBet)},
+  { 112, -1, sizeof(::Roulette::WinMsg)},
+  { 121, -1, sizeof(::Roulette::MsgGameResult)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -485,41 +488,43 @@ const char descriptor_table_protodef_Roulette_2eproto[] PROTOBUF_SECTION_VARIABL
   "\022\020\n\010even_num\030\003 \001(\005\022\017\n\007odd_num\030\004 \001(\005\022\017\n\007b"
   "ig_num\030\005 \001(\005\022\021\n\tsmall_num\030\006 \001(\005\022\020\n\010zero_"
   "num\030\007 \001(\005\"\036\n\nBettonArea\022\020\n\010area_cfg\030\001 \003("
-  "\005\"0\n\010UserInfo\022\021\n\ttotal_bet\030\001 \001(\003\022\021\n\ttota"
-  "l_win\030\002 \001(\003\"\307\001\n\tGameConfg\022\013\n\003bet\030\001 \003(\005\022\025"
-  "\n\rbet_limit_min\030\002 \003(\005\022\025\n\rbet_limit_max\030\003"
-  " \003(\005\022*\n\014bet_area_cfg\030\004 \003(\0132\024.Roulette.Be"
-  "ttonArea\022\024\n\014multiple_cfg\030\005 \003(\005\022\r\n\005times\030"
-  "\006 \003(\005\022\027\n\017limit_total_bet\030\007 \001(\003\022\025\n\rarea_m"
-  "ultiple\030\010 \003(\005\".\n\tGameState\022\022\n\ngame_state"
-  "\030\001 \001(\005\022\r\n\005times\030\002 \001(\005\"4\n\rUserBetRecord\022\020"
-  "\n\010bet_area\030\001 \001(\005\022\021\n\tbet_value\030\002 \001(\003\"\362\001\n\014"
-  "MsgSceneInfo\022%\n\010game_cfg\030\001 \001(\0132\023.Roulett"
-  "e.GameConfg\022\023\n\013game_record\030\002 \003(\005\022+\n\nall_"
-  "record\030\003 \001(\0132\027.Roulette.GameALLRecord\022\'\n"
-  "\ngame_state\030\004 \001(\0132\023.Roulette.GameState\022*"
-  "\n\ttotal_bet\030\005 \003(\0132\027.Roulette.UserBetReco"
-  "rd\022$\n\010user_top\030\006 \003(\0132\022.Roulette.UserInfo"
-  "\"&\n\007BetInfo\022\r\n\005index\030\001 \001(\005\022\014\n\004area\030\002 \001(\005"
-  "\")\n\006MsgBet\022\037\n\004info\030\001 \003(\0132\021.Roulette.BetI"
-  "nfo\"T\n\nMsgBetResp\022\020\n\010chair_id\030\001 \001(\005\022\"\n\010b"
-  "et_info\030\002 \001(\0132\020.Roulette.MsgBet\022\020\n\010ret_c"
-  "ode\030\003 \001(\005\"<\n\016SingleAgainBet\022\r\n\005index\030\001 \001"
-  "(\005\022\014\n\004area\030\002 \001(\005\022\r\n\005count\030\003 \001(\005\"\?\n\013MsgAg"
-  "ainBet\0220\n\016again_bet_info\030\001 \003(\0132\030.Roulett"
-  "e.SingleAgainBet\"R\n\017MsgAgainBetResp\022\020\n\010c"
-  "hair_id\030\001 \001(\005\022-\n\016again_bet_info\030\002 \001(\0132\025."
-  "Roulette.MsgAgainBet\"(\n\rRevocationBet\022\027\n"
-  "\017revocation_gold\030\001 \003(\005\"(\n\006WinMsg\022\020\n\010chai"
-  "r_id\030\001 \001(\005\022\014\n\004gold\030\002 \001(\003\"F\n\rMsgGameResul"
-  "t\022\022\n\nresult_num\030\001 \001(\005\022!\n\007win_msg\030\002 \003(\0132\020"
-  ".Roulette.WinMsg*\360\001\n\016EMsgIDRoulette\022\027\n\023M"
-  "sgID_SC_GameRecord\020\000\022\027\n\023MsgID_SC_GameBot"
-  "tom\020\001\022\031\n\025MsgID_SC_BottomCancel\020\002\022\025\n\021MsgI"
-  "D_SC_AgainBet\020\003\022\027\n\023MsgID_SC_GameResult\020\004"
-  "\022\026\n\022MsgID_SC_GameState\020\005\022\027\n\023MsgID_CS_Gam"
-  "eBottom\020\006\022\031\n\025MsgID_CS_BottomCancel\020\007\022\025\n\021"
-  "MsgID_CS_AgainBet\020\010b\006proto3"
+  "\005\"B\n\010UserInfo\022\020\n\010chair_id\030\001 \001(\005\022\021\n\ttotal"
+  "_bet\030\002 \001(\003\022\021\n\ttotal_win\030\003 \001(\003\"\307\001\n\tGameCo"
+  "nfg\022\013\n\003bet\030\001 \003(\005\022\025\n\rbet_limit_min\030\002 \003(\005\022"
+  "\025\n\rbet_limit_max\030\003 \003(\005\022*\n\014bet_area_cfg\030\004"
+  " \003(\0132\024.Roulette.BettonArea\022\024\n\014multiple_c"
+  "fg\030\005 \003(\005\022\r\n\005times\030\006 \003(\005\022\027\n\017limit_total_b"
+  "et\030\007 \001(\003\022\025\n\rarea_multiple\030\010 \003(\005\".\n\tGameS"
+  "tate\022\022\n\ngame_state\030\001 \001(\005\022\r\n\005times\030\002 \001(\005\""
+  "4\n\rUserBetRecord\022\020\n\010bet_area\030\001 \001(\005\022\021\n\tbe"
+  "t_value\030\002 \001(\003\"\362\001\n\014MsgSceneInfo\022%\n\010game_c"
+  "fg\030\001 \001(\0132\023.Roulette.GameConfg\022\023\n\013game_re"
+  "cord\030\002 \003(\005\022+\n\nall_record\030\003 \001(\0132\027.Roulett"
+  "e.GameALLRecord\022\'\n\ngame_state\030\004 \001(\0132\023.Ro"
+  "ulette.GameState\022*\n\ttotal_bet\030\005 \003(\0132\027.Ro"
+  "ulette.UserBetRecord\022$\n\010user_top\030\006 \003(\0132\022"
+  ".Roulette.UserInfo\"&\n\007BetInfo\022\r\n\005index\030\001"
+  " \001(\005\022\014\n\004area\030\002 \001(\005\")\n\006MsgBet\022\037\n\004info\030\001 \003"
+  "(\0132\021.Roulette.BetInfo\"T\n\nMsgBetResp\022\020\n\010c"
+  "hair_id\030\001 \001(\005\022\"\n\010bet_info\030\002 \001(\0132\020.Roulet"
+  "te.MsgBet\022\020\n\010ret_code\030\003 \001(\005\"<\n\016SingleAga"
+  "inBet\022\r\n\005index\030\001 \001(\005\022\014\n\004area\030\002 \001(\005\022\r\n\005co"
+  "unt\030\003 \001(\005\"\?\n\013MsgAgainBet\0220\n\016again_bet_in"
+  "fo\030\001 \003(\0132\030.Roulette.SingleAgainBet\"R\n\017Ms"
+  "gAgainBetResp\022\020\n\010chair_id\030\001 \001(\005\022-\n\016again"
+  "_bet_info\030\002 \001(\0132\025.Roulette.MsgAgainBet\"("
+  "\n\rRevocationBet\022\027\n\017revocation_gold\030\001 \003(\005"
+  "\"M\n\006WinMsg\022\020\n\010chair_id\030\001 \001(\005\022\014\n\004gold\030\002 \001"
+  "(\003\022\021\n\tuser_gold\030\003 \001(\003\022\020\n\010win_gold\030\004 \001(\003\""
+  "F\n\rMsgGameResult\022\022\n\nresult_num\030\001 \001(\005\022!\n\007"
+  "win_msg\030\002 \003(\0132\020.Roulette.WinMsg*\205\002\n\016EMsg"
+  "IDRoulette\022\027\n\023MsgID_SC_GameRecord\020\000\022\027\n\023M"
+  "sgID_SC_GameBottom\020\001\022\031\n\025MsgID_SC_BottomC"
+  "ancel\020\002\022\025\n\021MsgID_SC_AgainBet\020\003\022\027\n\023MsgID_"
+  "SC_GameResult\020\004\022\026\n\022MsgID_SC_GameState\020\005\022"
+  "\027\n\023MsgID_CS_GameBottom\020\006\022\031\n\025MsgID_CS_Bot"
+  "tomCancel\020\007\022\025\n\021MsgID_CS_AgainBet\020\010\022\023\n\017Ms"
+  "gID_SC_AI_BET\020\tb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Roulette_2eproto_deps[1] = {
 };
@@ -543,7 +548,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Rou
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Roulette_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Roulette_2eproto = {
-  false, false, descriptor_table_protodef_Roulette_2eproto, "Roulette.proto", 1587,
+  false, false, descriptor_table_protodef_Roulette_2eproto, "Roulette.proto", 1663,
   &descriptor_table_Roulette_2eproto_once, descriptor_table_Roulette_2eproto_sccs, descriptor_table_Roulette_2eproto_deps, 16, 0,
   schemas, file_default_instances, TableStruct_Roulette_2eproto::offsets,
   file_level_metadata_Roulette_2eproto, 16, file_level_enum_descriptors_Roulette_2eproto, file_level_service_descriptors_Roulette_2eproto,
@@ -567,6 +572,7 @@ bool EMsgIDRoulette_IsValid(int value) {
     case 6:
     case 7:
     case 8:
+    case 9:
       return true;
     default:
       return false;
@@ -1140,16 +1146,16 @@ UserInfo::UserInfo(const UserInfo& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&total_bet_, &from.total_bet_,
-    static_cast<size_t>(reinterpret_cast<char*>(&total_win_) -
-    reinterpret_cast<char*>(&total_bet_)) + sizeof(total_win_));
+    static_cast<size_t>(reinterpret_cast<char*>(&chair_id_) -
+    reinterpret_cast<char*>(&total_bet_)) + sizeof(chair_id_));
   // @@protoc_insertion_point(copy_constructor:Roulette.UserInfo)
 }
 
 void UserInfo::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&total_bet_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&total_win_) -
-      reinterpret_cast<char*>(&total_bet_)) + sizeof(total_win_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&chair_id_) -
+      reinterpret_cast<char*>(&total_bet_)) + sizeof(chair_id_));
 }
 
 UserInfo::~UserInfo() {
@@ -1184,8 +1190,8 @@ void UserInfo::Clear() {
   (void) cached_has_bits;
 
   ::memset(&total_bet_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&total_win_) -
-      reinterpret_cast<char*>(&total_bet_)) + sizeof(total_win_));
+      reinterpret_cast<char*>(&chair_id_) -
+      reinterpret_cast<char*>(&total_bet_)) + sizeof(chair_id_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -1196,16 +1202,23 @@ const char* UserInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::i
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // int64 total_bet = 1;
+      // int32 chair_id = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          chair_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 total_bet = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           total_bet_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int64 total_win = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+      // int64 total_win = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           total_win_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
@@ -1238,16 +1251,22 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int64 total_bet = 1;
-  if (this->total_bet() != 0) {
+  // int32 chair_id = 1;
+  if (this->chair_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_total_bet(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_chair_id(), target);
   }
 
-  // int64 total_win = 2;
+  // int64 total_bet = 2;
+  if (this->total_bet() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_total_bet(), target);
+  }
+
+  // int64 total_win = 3;
   if (this->total_win() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_total_win(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_total_win(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1266,18 +1285,25 @@ size_t UserInfo::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // int64 total_bet = 1;
+  // int64 total_bet = 2;
   if (this->total_bet() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_total_bet());
   }
 
-  // int64 total_win = 2;
+  // int64 total_win = 3;
   if (this->total_win() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_total_win());
+  }
+
+  // int32 chair_id = 1;
+  if (this->chair_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_chair_id());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1317,6 +1343,9 @@ void UserInfo::MergeFrom(const UserInfo& from) {
   if (from.total_win() != 0) {
     _internal_set_total_win(from._internal_total_win());
   }
+  if (from.chair_id() != 0) {
+    _internal_set_chair_id(from._internal_chair_id());
+  }
 }
 
 void UserInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -1341,8 +1370,8 @@ void UserInfo::InternalSwap(UserInfo* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(UserInfo, total_win_)
-      + sizeof(UserInfo::total_win_)
+      PROTOBUF_FIELD_OFFSET(UserInfo, chair_id_)
+      + sizeof(UserInfo::chair_id_)
       - PROTOBUF_FIELD_OFFSET(UserInfo, total_bet_)>(
           reinterpret_cast<char*>(&total_bet_),
           reinterpret_cast<char*>(&other->total_bet_));
@@ -4359,6 +4388,20 @@ const char* WinMsg::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::int
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
+      // int64 user_gold = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          user_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 win_gold = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          win_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
@@ -4399,6 +4442,18 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_gold(), target);
   }
 
+  // int64 user_gold = 3;
+  if (this->user_gold() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_user_gold(), target);
+  }
+
+  // int64 win_gold = 4;
+  if (this->win_gold() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_win_gold(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -4420,6 +4475,20 @@ size_t WinMsg::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_gold());
+  }
+
+  // int64 user_gold = 3;
+  if (this->user_gold() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_user_gold());
+  }
+
+  // int64 win_gold = 4;
+  if (this->win_gold() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_win_gold());
   }
 
   // int32 chair_id = 1;
@@ -4462,6 +4531,12 @@ void WinMsg::MergeFrom(const WinMsg& from) {
 
   if (from.gold() != 0) {
     _internal_set_gold(from._internal_gold());
+  }
+  if (from.user_gold() != 0) {
+    _internal_set_user_gold(from._internal_user_gold());
+  }
+  if (from.win_gold() != 0) {
+    _internal_set_win_gold(from._internal_win_gold());
   }
   if (from.chair_id() != 0) {
     _internal_set_chair_id(from._internal_chair_id());

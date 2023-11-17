@@ -14,6 +14,7 @@ enum EMsgIDRoulette
 	MsgID_CS_GameBottom 	= 6;		//下注(MsgBet)
 	MsgID_CS_BottomCancel 	= 7;		//下注撤回(RevocationBet)
 	MsgID_CS_AgainBet		= 8;		//续投(MsgAgainBet)
+	MsgID_SC_AI_BET			= 9;		//机器人下注（前端不管
 }
 //ALL 数据展示
 message GameALLRecord
@@ -34,8 +35,9 @@ message BettonArea
 //玩家数据
 message UserInfo
 {
-	int64 total_bet = 1;
-	int64 total_win = 2;
+	int32 chair_id	= 1;
+	int64 total_bet = 2;	//总下注
+	int64 total_win = 3;	//总赢局数
 }
 //游戏配置
 message GameConfg
@@ -90,7 +92,7 @@ message MsgBetResp
 {
 	int32			chair_id		= 1;	//玩家椅子号
 	MsgBet			bet_info		= 2;	//玩家下注信息
-	int32 			ret_code		= 3;	//下注返回多语言码 1下注倍数超限 2下注区域筹码超限 3金币不足
+	int32 			ret_code		= 3;	//下注返回多语言码 0不管 1下注倍数超限 2下注区域筹码超限 3金币不足
 }
 //玩家下注
 message SingleAgainBet
@@ -117,13 +119,14 @@ message RevocationBet
 {
 	repeated int32 revocation_gold 	= 1;	//撤回下注 
 }
-
 //玩家输赢信息                              
 message WinMsg                           
 {                                           
 	int32			chair_id		= 1;	//玩家椅子号
-	int64			gold			= 2;	//玩家输赢信息
-}                                           
+	int64			gold			= 2;	//玩家输赢信息（真实输赢）
+	int64			user_gold		= 3;	//玩家金币
+	int64			win_gold		= 4;	//金币
+}                             		              
 
 //游戏结果                                  
 message MsgGameResult                          

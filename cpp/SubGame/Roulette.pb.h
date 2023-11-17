@@ -134,12 +134,13 @@ enum EMsgIDRoulette : int {
   MsgID_CS_GameBottom = 6,
   MsgID_CS_BottomCancel = 7,
   MsgID_CS_AgainBet = 8,
+  MsgID_SC_AI_BET = 9,
   EMsgIDRoulette_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDRoulette_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDRoulette_IsValid(int value);
 constexpr EMsgIDRoulette EMsgIDRoulette_MIN = MsgID_SC_GameRecord;
-constexpr EMsgIDRoulette EMsgIDRoulette_MAX = MsgID_CS_AgainBet;
+constexpr EMsgIDRoulette EMsgIDRoulette_MAX = MsgID_SC_AI_BET;
 constexpr int EMsgIDRoulette_ARRAYSIZE = EMsgIDRoulette_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDRoulette_descriptor();
@@ -622,10 +623,11 @@ class UserInfo PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kTotalBetFieldNumber = 1,
-    kTotalWinFieldNumber = 2,
+    kTotalBetFieldNumber = 2,
+    kTotalWinFieldNumber = 3,
+    kChairIdFieldNumber = 1,
   };
-  // int64 total_bet = 1;
+  // int64 total_bet = 2;
   void clear_total_bet();
   ::PROTOBUF_NAMESPACE_ID::int64 total_bet() const;
   void set_total_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
@@ -634,13 +636,22 @@ class UserInfo PROTOBUF_FINAL :
   void _internal_set_total_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int64 total_win = 2;
+  // int64 total_win = 3;
   void clear_total_win();
   ::PROTOBUF_NAMESPACE_ID::int64 total_win() const;
   void set_total_win(::PROTOBUF_NAMESPACE_ID::int64 value);
   private:
   ::PROTOBUF_NAMESPACE_ID::int64 _internal_total_win() const;
   void _internal_set_total_win(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int32 chair_id = 1;
+  void clear_chair_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_id() const;
+  void set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_chair_id() const;
+  void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:Roulette.UserInfo)
@@ -652,6 +663,7 @@ class UserInfo PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int64 total_bet_;
   ::PROTOBUF_NAMESPACE_ID::int64 total_win_;
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Roulette_2eproto;
 };
@@ -2688,6 +2700,8 @@ class WinMsg PROTOBUF_FINAL :
 
   enum : int {
     kGoldFieldNumber = 2,
+    kUserGoldFieldNumber = 3,
+    kWinGoldFieldNumber = 4,
     kChairIdFieldNumber = 1,
   };
   // int64 gold = 2;
@@ -2697,6 +2711,24 @@ class WinMsg PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::int64 _internal_gold() const;
   void _internal_set_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int64 user_gold = 3;
+  void clear_user_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 user_gold() const;
+  void set_user_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_user_gold() const;
+  void _internal_set_user_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int64 win_gold = 4;
+  void clear_win_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 win_gold() const;
+  void set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_win_gold() const;
+  void _internal_set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
   // int32 chair_id = 1;
@@ -2716,6 +2748,8 @@ class WinMsg PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int64 gold_;
+  ::PROTOBUF_NAMESPACE_ID::int64 user_gold_;
+  ::PROTOBUF_NAMESPACE_ID::int64 win_gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Roulette_2eproto;
@@ -3082,7 +3116,27 @@ BettonArea::mutable_area_cfg() {
 
 // UserInfo
 
-// int64 total_bet = 1;
+// int32 chair_id = 1;
+inline void UserInfo::clear_chair_id() {
+  chair_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 UserInfo::_internal_chair_id() const {
+  return chair_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 UserInfo::chair_id() const {
+  // @@protoc_insertion_point(field_get:Roulette.UserInfo.chair_id)
+  return _internal_chair_id();
+}
+inline void UserInfo::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  chair_id_ = value;
+}
+inline void UserInfo::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_chair_id(value);
+  // @@protoc_insertion_point(field_set:Roulette.UserInfo.chair_id)
+}
+
+// int64 total_bet = 2;
 inline void UserInfo::clear_total_bet() {
   total_bet_ = PROTOBUF_LONGLONG(0);
 }
@@ -3102,7 +3156,7 @@ inline void UserInfo::set_total_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
   // @@protoc_insertion_point(field_set:Roulette.UserInfo.total_bet)
 }
 
-// int64 total_win = 2;
+// int64 total_win = 3;
 inline void UserInfo::clear_total_win() {
   total_win_ = PROTOBUF_LONGLONG(0);
 }
@@ -4454,6 +4508,46 @@ inline void WinMsg::_internal_set_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
 inline void WinMsg::set_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_gold(value);
   // @@protoc_insertion_point(field_set:Roulette.WinMsg.gold)
+}
+
+// int64 user_gold = 3;
+inline void WinMsg::clear_user_gold() {
+  user_gold_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 WinMsg::_internal_user_gold() const {
+  return user_gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 WinMsg::user_gold() const {
+  // @@protoc_insertion_point(field_get:Roulette.WinMsg.user_gold)
+  return _internal_user_gold();
+}
+inline void WinMsg::_internal_set_user_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  user_gold_ = value;
+}
+inline void WinMsg::set_user_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_user_gold(value);
+  // @@protoc_insertion_point(field_set:Roulette.WinMsg.user_gold)
+}
+
+// int64 win_gold = 4;
+inline void WinMsg::clear_win_gold() {
+  win_gold_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 WinMsg::_internal_win_gold() const {
+  return win_gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 WinMsg::win_gold() const {
+  // @@protoc_insertion_point(field_get:Roulette.WinMsg.win_gold)
+  return _internal_win_gold();
+}
+inline void WinMsg::_internal_set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  win_gold_ = value;
+}
+inline void WinMsg::set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_win_gold(value);
+  // @@protoc_insertion_point(field_set:Roulette.WinMsg.win_gold)
 }
 
 // -------------------------------------------------------------------
