@@ -119,24 +119,24 @@ message MsgPvpRoomInfo
 message MsgPvpRoomConfig
 {
 	int32	create_vip_limit= 1;	//创建桌子vip限制
-	int32	chair_limit_min	= 2;	//创建桌子最小人数
+	int32	chair_limit_min	= 2;	//创建桌子最小人数				//创建桌子根据游戏需要传 玩家选择的值
 	int32	chair_limit_max	= 3;	//创建桌子最大人数
 
-	int64	value1_min		= 11;	//桌子特性
+	int64	value1_min		= 11;	//桌子特性						//创建桌子根据游戏需要传 玩家选择的值
 	int64	value1_max		= 12;	//桌子特性
-	int64	value2_min		= 13;	//桌子特性
+	int64	value2_min		= 13;	//桌子特性						//创建桌子根据游戏需要传 玩家选择的值
 	int64	value2_max		= 14;	//桌子特性
-	int64	value3_min		= 15;	//桌子特性
+	int64	value3_min		= 15;	//桌子特性						//创建桌子根据游戏需要传 玩家选择的值
 	int64	value3_max		= 16;	//桌子特性
-	int64	value4_min		= 17;	//桌子特性
+	int64	value4_min		= 17;	//桌子特性						//创建桌子根据游戏需要传 玩家选择的值
 	int64	value4_max		= 18;	//桌子特性
-	int64	value5_min		= 19;	//桌子特性
+	int64	value5_min		= 19;	//桌子特性						//创建桌子根据游戏需要传 玩家选择的值
 	int64	value5_max		= 20;	//桌子特性
-	int64	value6_min		= 21;	//桌子特性
+	int64	value6_min		= 21;	//桌子特性						//创建桌子根据游戏需要传 玩家选择的值
 	int64	value6_max		= 22;	//桌子特性
-	int64	value7_min		= 23;	//桌子特性
+	int64	value7_min		= 23;	//桌子特性						//创建桌子根据游戏需要传 玩家选择的值
 	int64	value7_max		= 24;	//桌子特性
-	int64	value8_min		= 25;	//桌子特性
+	int64	value8_min		= 25;	//桌子特性						//创建桌子根据游戏需要传 玩家选择的值
 	int64	value8_max		= 26;	//桌子特性	
 }
 
@@ -150,14 +150,6 @@ message MsgPvpRoomList
 message MsgPvpCreateRoom
 {
 	MsgPvpRoomInfo cfg		= 1;
-	/*
-	string	table_name		= 1;	//桌子名称
-	int32	chair_num		= 2;	//人数限制
-	int64	join_limit		= 3;	//进入房间金币需求
-	bool	is_private		= 4;	//私人桌
-	string 	password		= 5;	//密码
-	string	table_cfg		= 7;	//桌子特性配置
-	*/
 }
 
 //pvp房间列表

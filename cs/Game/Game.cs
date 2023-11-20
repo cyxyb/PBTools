@@ -3944,7 +3944,7 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
   public const int ChairLimitMinFieldNumber = 2;
   private int chairLimitMin_;
   /// <summary>
-  ///创建桌子最小人数
+  ///创建桌子最小人数				//创建桌子根据游戏需要传 玩家选择的值
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int ChairLimitMin {
@@ -3972,7 +3972,7 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
   public const int Value1MinFieldNumber = 11;
   private long value1Min_;
   /// <summary>
-  ///桌子特性
+  ///桌子特性						//创建桌子根据游戏需要传 玩家选择的值
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public long Value1Min {
@@ -4000,7 +4000,7 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
   public const int Value2MinFieldNumber = 13;
   private long value2Min_;
   /// <summary>
-  ///桌子特性
+  ///桌子特性						//创建桌子根据游戏需要传 玩家选择的值
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public long Value2Min {
@@ -4028,7 +4028,7 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
   public const int Value3MinFieldNumber = 15;
   private long value3Min_;
   /// <summary>
-  ///桌子特性
+  ///桌子特性						//创建桌子根据游戏需要传 玩家选择的值
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public long Value3Min {
@@ -4056,7 +4056,7 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
   public const int Value4MinFieldNumber = 17;
   private long value4Min_;
   /// <summary>
-  ///桌子特性
+  ///桌子特性						//创建桌子根据游戏需要传 玩家选择的值
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public long Value4Min {
@@ -4084,7 +4084,7 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
   public const int Value5MinFieldNumber = 19;
   private long value5Min_;
   /// <summary>
-  ///桌子特性
+  ///桌子特性						//创建桌子根据游戏需要传 玩家选择的值
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public long Value5Min {
@@ -4112,7 +4112,7 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
   public const int Value6MinFieldNumber = 21;
   private long value6Min_;
   /// <summary>
-  ///桌子特性
+  ///桌子特性						//创建桌子根据游戏需要传 玩家选择的值
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public long Value6Min {
@@ -4140,7 +4140,7 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
   public const int Value7MinFieldNumber = 23;
   private long value7Min_;
   /// <summary>
-  ///桌子特性
+  ///桌子特性						//创建桌子根据游戏需要传 玩家选择的值
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public long Value7Min {
@@ -4168,7 +4168,7 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
   public const int Value8MinFieldNumber = 25;
   private long value8Min_;
   /// <summary>
-  ///桌子特性
+  ///桌子特性						//创建桌子根据游戏需要传 玩家选择的值
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public long Value8Min {
@@ -4955,15 +4955,6 @@ public sealed partial class MsgPvpCreateRoom : pb::IMessage<MsgPvpCreateRoom>
   /// <summary>Field number for the "cfg" field.</summary>
   public const int CfgFieldNumber = 1;
   private global::MsgPvpRoomInfo cfg_;
-  /// <summary>
-  ///
-  ///string	table_name		= 1;	//桌子名称
-  ///int32	chair_num		= 2;	//人数限制
-  ///int64	join_limit		= 3;	//进入房间金币需求
-  ///bool	is_private		= 4;	//私人桌
-  ///string 	password		= 5;	//密码
-  ///string	table_cfg		= 7;	//桌子特性配置
-  /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public global::MsgPvpRoomInfo Cfg {
     get { return cfg_; }
