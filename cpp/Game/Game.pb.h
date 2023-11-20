@@ -1989,14 +1989,15 @@ class MsgPvpRoomInfo PROTOBUF_FINAL :
 
   enum : int {
     kTableNameFieldNumber = 2,
-    kPasswordFieldNumber = 6,
+    kPasswordFieldNumber = 7,
     kTableCfgFieldNumber = 10,
     kTableIdFieldNumber = 1,
     kChairNumFieldNumber = 3,
-    kJoinLimitFieldNumber = 4,
-    kIsPrivateFieldNumber = 5,
-    kOwnerIdFieldNumber = 7,
-    kTableNoFieldNumber = 8,
+    kJoinLimitFieldNumber = 5,
+    kEnterNumFieldNumber = 4,
+    kIsPrivateFieldNumber = 6,
+    kOwnerIdFieldNumber = 8,
+    kTableNoFieldNumber = 9,
   };
   // string table_name = 2;
   void clear_table_name();
@@ -2014,7 +2015,7 @@ class MsgPvpRoomInfo PROTOBUF_FINAL :
   std::string* _internal_mutable_table_name();
   public:
 
-  // string password = 6;
+  // string password = 7;
   void clear_password();
   const std::string& password() const;
   void set_password(const std::string& value);
@@ -2064,7 +2065,7 @@ class MsgPvpRoomInfo PROTOBUF_FINAL :
   void _internal_set_chair_num(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int64 join_limit = 4;
+  // int64 join_limit = 5;
   void clear_join_limit();
   ::PROTOBUF_NAMESPACE_ID::int64 join_limit() const;
   void set_join_limit(::PROTOBUF_NAMESPACE_ID::int64 value);
@@ -2073,7 +2074,16 @@ class MsgPvpRoomInfo PROTOBUF_FINAL :
   void _internal_set_join_limit(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // bool is_private = 5;
+  // int32 enter_num = 4;
+  void clear_enter_num();
+  ::PROTOBUF_NAMESPACE_ID::int32 enter_num() const;
+  void set_enter_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_enter_num() const;
+  void _internal_set_enter_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // bool is_private = 6;
   void clear_is_private();
   bool is_private() const;
   void set_is_private(bool value);
@@ -2082,7 +2092,7 @@ class MsgPvpRoomInfo PROTOBUF_FINAL :
   void _internal_set_is_private(bool value);
   public:
 
-  // int32 owner_id = 7;
+  // int32 owner_id = 8;
   void clear_owner_id();
   ::PROTOBUF_NAMESPACE_ID::int32 owner_id() const;
   void set_owner_id(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -2091,7 +2101,7 @@ class MsgPvpRoomInfo PROTOBUF_FINAL :
   void _internal_set_owner_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 table_no = 8;
+  // int32 table_no = 9;
   void clear_table_no();
   ::PROTOBUF_NAMESPACE_ID::int32 table_no() const;
   void set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -2113,6 +2123,7 @@ class MsgPvpRoomInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 table_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_num_;
   ::PROTOBUF_NAMESPACE_ID::int64 join_limit_;
+  ::PROTOBUF_NAMESPACE_ID::int32 enter_num_;
   bool is_private_;
   ::PROTOBUF_NAMESPACE_ID::int32 owner_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 table_no_;
@@ -4298,7 +4309,27 @@ inline void MsgPvpRoomInfo::set_chair_num(::PROTOBUF_NAMESPACE_ID::int32 value) 
   // @@protoc_insertion_point(field_set:MsgPvpRoomInfo.chair_num)
 }
 
-// int64 join_limit = 4;
+// int32 enter_num = 4;
+inline void MsgPvpRoomInfo::clear_enter_num() {
+  enter_num_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpRoomInfo::_internal_enter_num() const {
+  return enter_num_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpRoomInfo::enter_num() const {
+  // @@protoc_insertion_point(field_get:MsgPvpRoomInfo.enter_num)
+  return _internal_enter_num();
+}
+inline void MsgPvpRoomInfo::_internal_set_enter_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  enter_num_ = value;
+}
+inline void MsgPvpRoomInfo::set_enter_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_enter_num(value);
+  // @@protoc_insertion_point(field_set:MsgPvpRoomInfo.enter_num)
+}
+
+// int64 join_limit = 5;
 inline void MsgPvpRoomInfo::clear_join_limit() {
   join_limit_ = PROTOBUF_LONGLONG(0);
 }
@@ -4318,7 +4349,7 @@ inline void MsgPvpRoomInfo::set_join_limit(::PROTOBUF_NAMESPACE_ID::int64 value)
   // @@protoc_insertion_point(field_set:MsgPvpRoomInfo.join_limit)
 }
 
-// bool is_private = 5;
+// bool is_private = 6;
 inline void MsgPvpRoomInfo::clear_is_private() {
   is_private_ = false;
 }
@@ -4338,7 +4369,7 @@ inline void MsgPvpRoomInfo::set_is_private(bool value) {
   // @@protoc_insertion_point(field_set:MsgPvpRoomInfo.is_private)
 }
 
-// string password = 6;
+// string password = 7;
 inline void MsgPvpRoomInfo::clear_password() {
   password_.ClearToEmpty();
 }
@@ -4399,7 +4430,7 @@ inline void MsgPvpRoomInfo::set_allocated_password(std::string* password) {
   // @@protoc_insertion_point(field_set_allocated:MsgPvpRoomInfo.password)
 }
 
-// int32 owner_id = 7;
+// int32 owner_id = 8;
 inline void MsgPvpRoomInfo::clear_owner_id() {
   owner_id_ = 0;
 }
@@ -4419,7 +4450,7 @@ inline void MsgPvpRoomInfo::set_owner_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:MsgPvpRoomInfo.owner_id)
 }
 
-// int32 table_no = 8;
+// int32 table_no = 9;
 inline void MsgPvpRoomInfo::clear_table_no() {
   table_no_ = 0;
 }

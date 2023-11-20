@@ -148,8 +148,8 @@ enum EMsgIDGame
 	MsgIDGame_SendGameSence				= 1010;		//请求场景消息(MsgCommonBool)
 	MsgIDGame_SendGameSenceResp			= 1011;		//请求场景消息返回
 	MsgIDGame_NotifyMessageResp			= 1012;		//通用消息通知(MsgCommonN32)
-	MsgIDGame_CreateRoom				= 1013;		//创建房间(MsgCreateRoom)
-	MsgIDGame_JoinRoom					= 1014;		//加入房间(MsgJoinRoom)
+	MsgIDGame_CreateRoom				= 1013;		//创建房间(MsgPvpCreateRoom)
+	MsgIDGame_JoinRoom					= 1014;		//加入房间(MsgPvpJoinRoom)
 	MsgIDGame_QueryRecord				= 1015;		//猜拳查询数据记录(MsgQueryRecord 1:每局数据 2:每日数据)
 	MsgIDGame_QueryRoundRecordResp		= 1016;		//猜拳每局数据数据记录(MsgTotalRoundData)
 	MsgIDGame_QueryDayRecordResp		= 1017;		//猜拳每日数据数据记录(MsgTotalDayData)
@@ -168,6 +168,8 @@ enum EMsgIDGame
 	MsgIDGame_Pvp_KickUserResp			= 1028;		//房主踢人(MsgPvpKickUserResp)
 	MsgIDGame_Pvp_DestroyTable			= 1029;		//房主解散房间(MsgCommonBool)
 	MsgIDGame_Pvp_DestroyTableResp		= 1030;		//房主踢人(MsgCommonBool)
+	MsgIDGame_Pvp_FastJoinTable			= 1031;		//快速加入(MsgCommonN32)
+	MsgIDGame_Pvp_FastJoinTableResp		= 1032;		//快速加入(MsgCommonN32)
 	////////////////////////////////////////////////////////////////////////////////////////
 }
 
