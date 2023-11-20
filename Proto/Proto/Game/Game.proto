@@ -98,13 +98,14 @@ message MsgPvpRoomInfo
 	string	table_name		= 2;	//桌子名称						//创建桌子传
 	int32	chair_num		= 3;	//人数限制						//创建桌子传
 	int32	enter_num		= 4;	//已经进入数量
-	int64	join_limit		= 5;	//进入房间金币需求				 //创建桌子传
-	bool	is_private		= 6;	//私人桌						//创建桌子传
-	string 	password		= 7;	//密码							//创建桌子传
-	int32 	owner_id		= 8;	//房主id
-	int32	table_no		= 9;	//桌子编号
+	int64	join_limit_min	= 5;	//进入房间金币需求				 //创建桌子传
+	int64	join_limit_max	= 6;	//进入房间金币需求				 //创建桌子传
+	bool	is_private		= 7;	//私人桌						//创建桌子传
+	string 	password		= 8;	//密码							//创建桌子传
+	int32 	owner_id		= 9;	//房主id
+	int32	table_no		= 10;	//桌子编号
 
-	string	table_cfg		= 10;	//桌子特性配置					 //创建桌子传
+	string	table_cfg		= 15;	//桌子特性配置					 //创建桌子传
 }
 
 //pvp房间列表

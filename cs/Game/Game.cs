@@ -43,21 +43,22 @@ public static partial class GameReflection {
           "CXRvdGFsX251bRgBIAEoBRIfCgpkYWlseV9kYXRhGAIgAygLMgsuTXNnRGF5",
           "RGF0YSI5Cg5Nc2dRdWVyeVJlY29yZBIMCgRwYWdlGAEgASgFEgsKA251bRgC",
           "IAEoBRIMCgR0eXBlGAMgASgFIjcKDk1zZ0phY2twb3RJbmZvEg8KB2phY2tw",
-          "b3QYASABKAMSFAoMZmFrZV9qYWNrcG90GAIgASgDIs0BCg5Nc2dQdnBSb29t",
+          "b3QYASABKAMSFAoMZmFrZV9qYWNrcG90GAIgASgDIukBCg5Nc2dQdnBSb29t",
           "SW5mbxIQCgh0YWJsZV9pZBgBIAEoBRISCgp0YWJsZV9uYW1lGAIgASgJEhEK",
-          "CWNoYWlyX251bRgDIAEoBRIRCgllbnRlcl9udW0YBCABKAUSEgoKam9pbl9s",
-          "aW1pdBgFIAEoAxISCgppc19wcml2YXRlGAYgASgIEhAKCHBhc3N3b3JkGAcg",
-          "ASgJEhAKCG93bmVyX2lkGAggASgFEhAKCHRhYmxlX25vGAkgASgFEhEKCXRh",
-          "YmxlX2NmZxgKIAEoCSJOCg5Nc2dQdnBSb29tTGlzdBIiCglyb29tX2xpc3QY",
-          "ASADKAsyDy5Nc2dQdnBSb29tSW5mbxIYChBjcmVhdGVfdmlwX2xpbWl0GAIg",
-          "ASgFIjAKEE1zZ1B2cENyZWF0ZVJvb20SHAoDY2ZnGAEgASgLMg8uTXNnUHZw",
-          "Um9vbUluZm8iTAoUTXNnUHZwQ3JlYXRlUm9vbVJlc3ASEAoIcmV0X2NvZGUY",
-          "ASABKAUSEAoIdGFibGVfaWQYAiABKAUSEAoIdGFibGVfbm8YAyABKAUiRgoO",
-          "TXNnUHZwSm9pblJvb20SEAoIdGFibGVfaWQYASABKAUSEAoIdGFibGVfbm8Y",
-          "AiABKAUSEAoIcGFzc3dvcmQYAyABKAkiJgoSTXNnUHZwSm9pblJvb21SZXNw",
-          "EhAKCHJldF9jb2RlGAEgASgFIl4KEk1zZ1B2cEtpY2tVc2VyUmVzcBIQCghv",
-          "d25lcl9pZBgBIAEoBRISCgpvd25lcl9uaWNrGAIgASgJEg8KB2tpY2tfaWQY",
-          "AyABKAUSEQoJa2lja19uaWNrGAQgASgJYgZwcm90bzM="));
+          "CWNoYWlyX251bRgDIAEoBRIRCgllbnRlcl9udW0YBCABKAUSFgoOam9pbl9s",
+          "aW1pdF9taW4YBSABKAMSFgoOam9pbl9saW1pdF9tYXgYBiABKAMSEgoKaXNf",
+          "cHJpdmF0ZRgHIAEoCBIQCghwYXNzd29yZBgIIAEoCRIQCghvd25lcl9pZBgJ",
+          "IAEoBRIQCgh0YWJsZV9ubxgKIAEoBRIRCgl0YWJsZV9jZmcYDyABKAkiTgoO",
+          "TXNnUHZwUm9vbUxpc3QSIgoJcm9vbV9saXN0GAEgAygLMg8uTXNnUHZwUm9v",
+          "bUluZm8SGAoQY3JlYXRlX3ZpcF9saW1pdBgCIAEoBSIwChBNc2dQdnBDcmVh",
+          "dGVSb29tEhwKA2NmZxgBIAEoCzIPLk1zZ1B2cFJvb21JbmZvIkwKFE1zZ1B2",
+          "cENyZWF0ZVJvb21SZXNwEhAKCHJldF9jb2RlGAEgASgFEhAKCHRhYmxlX2lk",
+          "GAIgASgFEhAKCHRhYmxlX25vGAMgASgFIkYKDk1zZ1B2cEpvaW5Sb29tEhAK",
+          "CHRhYmxlX2lkGAEgASgFEhAKCHRhYmxlX25vGAIgASgFEhAKCHBhc3N3b3Jk",
+          "GAMgASgJIiYKEk1zZ1B2cEpvaW5Sb29tUmVzcBIQCghyZXRfY29kZRgBIAEo",
+          "BSJeChJNc2dQdnBLaWNrVXNlclJlc3ASEAoIb3duZXJfaWQYASABKAUSEgoK",
+          "b3duZXJfbmljaxgCIAEoCRIPCgdraWNrX2lkGAMgASgFEhEKCWtpY2tfbmlj",
+          "axgEIAEoCWIGcHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -71,7 +72,7 @@ public static partial class GameReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTotalDayData), global::MsgTotalDayData.Parser, new[]{ "TotalNum", "DailyData" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgQueryRecord), global::MsgQueryRecord.Parser, new[]{ "Page", "Num", "Type" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgJackpotInfo), global::MsgJackpotInfo.Parser, new[]{ "Jackpot", "FakeJackpot" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpRoomInfo), global::MsgPvpRoomInfo.Parser, new[]{ "TableId", "TableName", "ChairNum", "EnterNum", "JoinLimit", "IsPrivate", "Password", "OwnerId", "TableNo", "TableCfg" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpRoomInfo), global::MsgPvpRoomInfo.Parser, new[]{ "TableId", "TableName", "ChairNum", "EnterNum", "JoinLimitMin", "JoinLimitMax", "IsPrivate", "Password", "OwnerId", "TableNo", "TableCfg" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpRoomList), global::MsgPvpRoomList.Parser, new[]{ "RoomList", "CreateVipLimit" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpCreateRoom), global::MsgPvpCreateRoom.Parser, new[]{ "Cfg" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpCreateRoomResp), global::MsgPvpCreateRoomResp.Parser, new[]{ "RetCode", "TableId", "TableNo" }, null, null, null, null),
@@ -3049,7 +3050,8 @@ public sealed partial class MsgPvpRoomInfo : pb::IMessage<MsgPvpRoomInfo>
     tableName_ = other.tableName_;
     chairNum_ = other.chairNum_;
     enterNum_ = other.enterNum_;
-    joinLimit_ = other.joinLimit_;
+    joinLimitMin_ = other.joinLimitMin_;
+    joinLimitMax_ = other.joinLimitMax_;
     isPrivate_ = other.isPrivate_;
     password_ = other.password_;
     ownerId_ = other.ownerId_;
@@ -3119,22 +3121,36 @@ public sealed partial class MsgPvpRoomInfo : pb::IMessage<MsgPvpRoomInfo>
     }
   }
 
-  /// <summary>Field number for the "join_limit" field.</summary>
-  public const int JoinLimitFieldNumber = 5;
-  private long joinLimit_;
+  /// <summary>Field number for the "join_limit_min" field.</summary>
+  public const int JoinLimitMinFieldNumber = 5;
+  private long joinLimitMin_;
   /// <summary>
   ///进入房间金币需求				 //创建桌子传
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public long JoinLimit {
-    get { return joinLimit_; }
+  public long JoinLimitMin {
+    get { return joinLimitMin_; }
     set {
-      joinLimit_ = value;
+      joinLimitMin_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "join_limit_max" field.</summary>
+  public const int JoinLimitMaxFieldNumber = 6;
+  private long joinLimitMax_;
+  /// <summary>
+  ///进入房间金币需求				 //创建桌子传
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public long JoinLimitMax {
+    get { return joinLimitMax_; }
+    set {
+      joinLimitMax_ = value;
     }
   }
 
   /// <summary>Field number for the "is_private" field.</summary>
-  public const int IsPrivateFieldNumber = 6;
+  public const int IsPrivateFieldNumber = 7;
   private bool isPrivate_;
   /// <summary>
   ///私人桌						//创建桌子传
@@ -3148,7 +3164,7 @@ public sealed partial class MsgPvpRoomInfo : pb::IMessage<MsgPvpRoomInfo>
   }
 
   /// <summary>Field number for the "password" field.</summary>
-  public const int PasswordFieldNumber = 7;
+  public const int PasswordFieldNumber = 8;
   private string password_ = "";
   /// <summary>
   ///密码							//创建桌子传
@@ -3162,7 +3178,7 @@ public sealed partial class MsgPvpRoomInfo : pb::IMessage<MsgPvpRoomInfo>
   }
 
   /// <summary>Field number for the "owner_id" field.</summary>
-  public const int OwnerIdFieldNumber = 8;
+  public const int OwnerIdFieldNumber = 9;
   private int ownerId_;
   /// <summary>
   ///房主id
@@ -3176,7 +3192,7 @@ public sealed partial class MsgPvpRoomInfo : pb::IMessage<MsgPvpRoomInfo>
   }
 
   /// <summary>Field number for the "table_no" field.</summary>
-  public const int TableNoFieldNumber = 9;
+  public const int TableNoFieldNumber = 10;
   private int tableNo_;
   /// <summary>
   ///桌子编号
@@ -3190,7 +3206,7 @@ public sealed partial class MsgPvpRoomInfo : pb::IMessage<MsgPvpRoomInfo>
   }
 
   /// <summary>Field number for the "table_cfg" field.</summary>
-  public const int TableCfgFieldNumber = 10;
+  public const int TableCfgFieldNumber = 15;
   private string tableCfg_ = "";
   /// <summary>
   ///桌子特性配置					 //创建桌子传
@@ -3220,7 +3236,8 @@ public sealed partial class MsgPvpRoomInfo : pb::IMessage<MsgPvpRoomInfo>
     if (TableName != other.TableName) return false;
     if (ChairNum != other.ChairNum) return false;
     if (EnterNum != other.EnterNum) return false;
-    if (JoinLimit != other.JoinLimit) return false;
+    if (JoinLimitMin != other.JoinLimitMin) return false;
+    if (JoinLimitMax != other.JoinLimitMax) return false;
     if (IsPrivate != other.IsPrivate) return false;
     if (Password != other.Password) return false;
     if (OwnerId != other.OwnerId) return false;
@@ -3236,7 +3253,8 @@ public sealed partial class MsgPvpRoomInfo : pb::IMessage<MsgPvpRoomInfo>
     if (TableName.Length != 0) hash ^= TableName.GetHashCode();
     if (ChairNum != 0) hash ^= ChairNum.GetHashCode();
     if (EnterNum != 0) hash ^= EnterNum.GetHashCode();
-    if (JoinLimit != 0L) hash ^= JoinLimit.GetHashCode();
+    if (JoinLimitMin != 0L) hash ^= JoinLimitMin.GetHashCode();
+    if (JoinLimitMax != 0L) hash ^= JoinLimitMax.GetHashCode();
     if (IsPrivate != false) hash ^= IsPrivate.GetHashCode();
     if (Password.Length != 0) hash ^= Password.GetHashCode();
     if (OwnerId != 0) hash ^= OwnerId.GetHashCode();
@@ -3274,28 +3292,32 @@ public sealed partial class MsgPvpRoomInfo : pb::IMessage<MsgPvpRoomInfo>
       output.WriteRawTag(32);
       output.WriteInt32(EnterNum);
     }
-    if (JoinLimit != 0L) {
+    if (JoinLimitMin != 0L) {
       output.WriteRawTag(40);
-      output.WriteInt64(JoinLimit);
+      output.WriteInt64(JoinLimitMin);
+    }
+    if (JoinLimitMax != 0L) {
+      output.WriteRawTag(48);
+      output.WriteInt64(JoinLimitMax);
     }
     if (IsPrivate != false) {
-      output.WriteRawTag(48);
+      output.WriteRawTag(56);
       output.WriteBool(IsPrivate);
     }
     if (Password.Length != 0) {
-      output.WriteRawTag(58);
+      output.WriteRawTag(66);
       output.WriteString(Password);
     }
     if (OwnerId != 0) {
-      output.WriteRawTag(64);
+      output.WriteRawTag(72);
       output.WriteInt32(OwnerId);
     }
     if (TableNo != 0) {
-      output.WriteRawTag(72);
+      output.WriteRawTag(80);
       output.WriteInt32(TableNo);
     }
     if (TableCfg.Length != 0) {
-      output.WriteRawTag(82);
+      output.WriteRawTag(122);
       output.WriteString(TableCfg);
     }
     if (_unknownFields != null) {
@@ -3323,28 +3345,32 @@ public sealed partial class MsgPvpRoomInfo : pb::IMessage<MsgPvpRoomInfo>
       output.WriteRawTag(32);
       output.WriteInt32(EnterNum);
     }
-    if (JoinLimit != 0L) {
+    if (JoinLimitMin != 0L) {
       output.WriteRawTag(40);
-      output.WriteInt64(JoinLimit);
+      output.WriteInt64(JoinLimitMin);
+    }
+    if (JoinLimitMax != 0L) {
+      output.WriteRawTag(48);
+      output.WriteInt64(JoinLimitMax);
     }
     if (IsPrivate != false) {
-      output.WriteRawTag(48);
+      output.WriteRawTag(56);
       output.WriteBool(IsPrivate);
     }
     if (Password.Length != 0) {
-      output.WriteRawTag(58);
+      output.WriteRawTag(66);
       output.WriteString(Password);
     }
     if (OwnerId != 0) {
-      output.WriteRawTag(64);
+      output.WriteRawTag(72);
       output.WriteInt32(OwnerId);
     }
     if (TableNo != 0) {
-      output.WriteRawTag(72);
+      output.WriteRawTag(80);
       output.WriteInt32(TableNo);
     }
     if (TableCfg.Length != 0) {
-      output.WriteRawTag(82);
+      output.WriteRawTag(122);
       output.WriteString(TableCfg);
     }
     if (_unknownFields != null) {
@@ -3368,8 +3394,11 @@ public sealed partial class MsgPvpRoomInfo : pb::IMessage<MsgPvpRoomInfo>
     if (EnterNum != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(EnterNum);
     }
-    if (JoinLimit != 0L) {
-      size += 1 + pb::CodedOutputStream.ComputeInt64Size(JoinLimit);
+    if (JoinLimitMin != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(JoinLimitMin);
+    }
+    if (JoinLimitMax != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(JoinLimitMax);
     }
     if (IsPrivate != false) {
       size += 1 + 1;
@@ -3409,8 +3438,11 @@ public sealed partial class MsgPvpRoomInfo : pb::IMessage<MsgPvpRoomInfo>
     if (other.EnterNum != 0) {
       EnterNum = other.EnterNum;
     }
-    if (other.JoinLimit != 0L) {
-      JoinLimit = other.JoinLimit;
+    if (other.JoinLimitMin != 0L) {
+      JoinLimitMin = other.JoinLimitMin;
+    }
+    if (other.JoinLimitMax != 0L) {
+      JoinLimitMax = other.JoinLimitMax;
     }
     if (other.IsPrivate != false) {
       IsPrivate = other.IsPrivate;
@@ -3458,26 +3490,30 @@ public sealed partial class MsgPvpRoomInfo : pb::IMessage<MsgPvpRoomInfo>
           break;
         }
         case 40: {
-          JoinLimit = input.ReadInt64();
+          JoinLimitMin = input.ReadInt64();
           break;
         }
         case 48: {
+          JoinLimitMax = input.ReadInt64();
+          break;
+        }
+        case 56: {
           IsPrivate = input.ReadBool();
           break;
         }
-        case 58: {
+        case 66: {
           Password = input.ReadString();
           break;
         }
-        case 64: {
+        case 72: {
           OwnerId = input.ReadInt32();
           break;
         }
-        case 72: {
+        case 80: {
           TableNo = input.ReadInt32();
           break;
         }
-        case 82: {
+        case 122: {
           TableCfg = input.ReadString();
           break;
         }
@@ -3512,26 +3548,30 @@ public sealed partial class MsgPvpRoomInfo : pb::IMessage<MsgPvpRoomInfo>
           break;
         }
         case 40: {
-          JoinLimit = input.ReadInt64();
+          JoinLimitMin = input.ReadInt64();
           break;
         }
         case 48: {
+          JoinLimitMax = input.ReadInt64();
+          break;
+        }
+        case 56: {
           IsPrivate = input.ReadBool();
           break;
         }
-        case 58: {
+        case 66: {
           Password = input.ReadString();
           break;
         }
-        case 64: {
+        case 72: {
           OwnerId = input.ReadInt32();
           break;
         }
-        case 72: {
+        case 80: {
           TableNo = input.ReadInt32();
           break;
         }
-        case 82: {
+        case 122: {
           TableCfg = input.ReadString();
           break;
         }

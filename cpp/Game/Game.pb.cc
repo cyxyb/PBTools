@@ -414,7 +414,8 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Game_2eproto::offsets[] PROTOB
   PROTOBUF_FIELD_OFFSET(::MsgPvpRoomInfo, table_name_),
   PROTOBUF_FIELD_OFFSET(::MsgPvpRoomInfo, chair_num_),
   PROTOBUF_FIELD_OFFSET(::MsgPvpRoomInfo, enter_num_),
-  PROTOBUF_FIELD_OFFSET(::MsgPvpRoomInfo, join_limit_),
+  PROTOBUF_FIELD_OFFSET(::MsgPvpRoomInfo, join_limit_min_),
+  PROTOBUF_FIELD_OFFSET(::MsgPvpRoomInfo, join_limit_max_),
   PROTOBUF_FIELD_OFFSET(::MsgPvpRoomInfo, is_private_),
   PROTOBUF_FIELD_OFFSET(::MsgPvpRoomInfo, password_),
   PROTOBUF_FIELD_OFFSET(::MsgPvpRoomInfo, owner_id_),
@@ -477,12 +478,12 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 75, -1, sizeof(::MsgQueryRecord)},
   { 83, -1, sizeof(::MsgJackpotInfo)},
   { 90, -1, sizeof(::MsgPvpRoomInfo)},
-  { 105, -1, sizeof(::MsgPvpRoomList)},
-  { 112, -1, sizeof(::MsgPvpCreateRoom)},
-  { 118, -1, sizeof(::MsgPvpCreateRoomResp)},
-  { 126, -1, sizeof(::MsgPvpJoinRoom)},
-  { 134, -1, sizeof(::MsgPvpJoinRoomResp)},
-  { 140, -1, sizeof(::MsgPvpKickUserResp)},
+  { 106, -1, sizeof(::MsgPvpRoomList)},
+  { 113, -1, sizeof(::MsgPvpCreateRoom)},
+  { 119, -1, sizeof(::MsgPvpCreateRoomResp)},
+  { 127, -1, sizeof(::MsgPvpJoinRoom)},
+  { 135, -1, sizeof(::MsgPvpJoinRoomResp)},
+  { 141, -1, sizeof(::MsgPvpKickUserResp)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -530,22 +531,23 @@ const char descriptor_table_protodef_Game_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "gDayData\"9\n\016MsgQueryRecord\022\014\n\004page\030\001 \001(\005"
   "\022\013\n\003num\030\002 \001(\005\022\014\n\004type\030\003 \001(\005\"7\n\016MsgJackpo"
   "tInfo\022\017\n\007jackpot\030\001 \001(\003\022\024\n\014fake_jackpot\030\002"
-  " \001(\003\"\315\001\n\016MsgPvpRoomInfo\022\020\n\010table_id\030\001 \001("
+  " \001(\003\"\351\001\n\016MsgPvpRoomInfo\022\020\n\010table_id\030\001 \001("
   "\005\022\022\n\ntable_name\030\002 \001(\t\022\021\n\tchair_num\030\003 \001(\005"
-  "\022\021\n\tenter_num\030\004 \001(\005\022\022\n\njoin_limit\030\005 \001(\003\022"
-  "\022\n\nis_private\030\006 \001(\010\022\020\n\010password\030\007 \001(\t\022\020\n"
-  "\010owner_id\030\010 \001(\005\022\020\n\010table_no\030\t \001(\005\022\021\n\ttab"
-  "le_cfg\030\n \001(\t\"N\n\016MsgPvpRoomList\022\"\n\troom_l"
-  "ist\030\001 \003(\0132\017.MsgPvpRoomInfo\022\030\n\020create_vip"
-  "_limit\030\002 \001(\005\"0\n\020MsgPvpCreateRoom\022\034\n\003cfg\030"
-  "\001 \001(\0132\017.MsgPvpRoomInfo\"L\n\024MsgPvpCreateRo"
-  "omResp\022\020\n\010ret_code\030\001 \001(\005\022\020\n\010table_id\030\002 \001"
-  "(\005\022\020\n\010table_no\030\003 \001(\005\"F\n\016MsgPvpJoinRoom\022\020"
-  "\n\010table_id\030\001 \001(\005\022\020\n\010table_no\030\002 \001(\005\022\020\n\010pa"
-  "ssword\030\003 \001(\t\"&\n\022MsgPvpJoinRoomResp\022\020\n\010re"
-  "t_code\030\001 \001(\005\"^\n\022MsgPvpKickUserResp\022\020\n\010ow"
-  "ner_id\030\001 \001(\005\022\022\n\nowner_nick\030\002 \001(\t\022\017\n\007kick"
-  "_id\030\003 \001(\005\022\021\n\tkick_nick\030\004 \001(\tb\006proto3"
+  "\022\021\n\tenter_num\030\004 \001(\005\022\026\n\016join_limit_min\030\005 "
+  "\001(\003\022\026\n\016join_limit_max\030\006 \001(\003\022\022\n\nis_privat"
+  "e\030\007 \001(\010\022\020\n\010password\030\010 \001(\t\022\020\n\010owner_id\030\t "
+  "\001(\005\022\020\n\010table_no\030\n \001(\005\022\021\n\ttable_cfg\030\017 \001(\t"
+  "\"N\n\016MsgPvpRoomList\022\"\n\troom_list\030\001 \003(\0132\017."
+  "MsgPvpRoomInfo\022\030\n\020create_vip_limit\030\002 \001(\005"
+  "\"0\n\020MsgPvpCreateRoom\022\034\n\003cfg\030\001 \001(\0132\017.MsgP"
+  "vpRoomInfo\"L\n\024MsgPvpCreateRoomResp\022\020\n\010re"
+  "t_code\030\001 \001(\005\022\020\n\010table_id\030\002 \001(\005\022\020\n\010table_"
+  "no\030\003 \001(\005\"F\n\016MsgPvpJoinRoom\022\020\n\010table_id\030\001"
+  " \001(\005\022\020\n\010table_no\030\002 \001(\005\022\020\n\010password\030\003 \001(\t"
+  "\"&\n\022MsgPvpJoinRoomResp\022\020\n\010ret_code\030\001 \001(\005"
+  "\"^\n\022MsgPvpKickUserResp\022\020\n\010owner_id\030\001 \001(\005"
+  "\022\022\n\nowner_nick\030\002 \001(\t\022\017\n\007kick_id\030\003 \001(\005\022\021\n"
+  "\tkick_nick\030\004 \001(\tb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Game_2eproto_deps[1] = {
 };
@@ -570,7 +572,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Gam
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Game_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Game_2eproto = {
-  false, false, descriptor_table_protodef_Game_2eproto, "Game.proto", 1596,
+  false, false, descriptor_table_protodef_Game_2eproto, "Game.proto", 1624,
   &descriptor_table_Game_2eproto_once, descriptor_table_Game_2eproto_sccs, descriptor_table_Game_2eproto_deps, 17, 0,
   schemas, file_default_instances, TableStruct_Game_2eproto::offsets,
   file_level_metadata_Game_2eproto, 17, file_level_enum_descriptors_Game_2eproto, file_level_service_descriptors_Game_2eproto,
@@ -3534,46 +3536,53 @@ const char* MsgPvpRoomInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int64 join_limit = 5;
+      // int64 join_limit_min = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
-          join_limit_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          join_limit_min_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // bool is_private = 6;
+      // int64 join_limit_max = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+          join_limit_max_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // bool is_private = 7;
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
           is_private_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // string password = 7;
-      case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+      // string password = 8;
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 66)) {
           auto str = _internal_mutable_password();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgPvpRoomInfo.password"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 owner_id = 8;
-      case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+      // int32 owner_id = 9;
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
           owner_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 table_no = 9;
-      case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+      // int32 table_no = 10;
+      case 10:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
           table_no_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // string table_cfg = 10;
-      case 10:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 82)) {
+      // string table_cfg = 15;
+      case 15:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 122)) {
           auto str = _internal_mutable_table_cfg();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgPvpRoomInfo.table_cfg"));
@@ -3636,48 +3645,54 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_enter_num(), target);
   }
 
-  // int64 join_limit = 5;
-  if (this->join_limit() != 0) {
+  // int64 join_limit_min = 5;
+  if (this->join_limit_min() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_join_limit(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_join_limit_min(), target);
   }
 
-  // bool is_private = 6;
+  // int64 join_limit_max = 6;
+  if (this->join_limit_max() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(6, this->_internal_join_limit_max(), target);
+  }
+
+  // bool is_private = 7;
   if (this->is_private() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(6, this->_internal_is_private(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(7, this->_internal_is_private(), target);
   }
 
-  // string password = 7;
+  // string password = 8;
   if (this->password().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_password().data(), static_cast<int>(this->_internal_password().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "MsgPvpRoomInfo.password");
     target = stream->WriteStringMaybeAliased(
-        7, this->_internal_password(), target);
+        8, this->_internal_password(), target);
   }
 
-  // int32 owner_id = 8;
+  // int32 owner_id = 9;
   if (this->owner_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(8, this->_internal_owner_id(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(9, this->_internal_owner_id(), target);
   }
 
-  // int32 table_no = 9;
+  // int32 table_no = 10;
   if (this->table_no() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(9, this->_internal_table_no(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(10, this->_internal_table_no(), target);
   }
 
-  // string table_cfg = 10;
+  // string table_cfg = 15;
   if (this->table_cfg().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_table_cfg().data(), static_cast<int>(this->_internal_table_cfg().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "MsgPvpRoomInfo.table_cfg");
     target = stream->WriteStringMaybeAliased(
-        10, this->_internal_table_cfg(), target);
+        15, this->_internal_table_cfg(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -3703,14 +3718,14 @@ size_t MsgPvpRoomInfo::ByteSizeLong() const {
         this->_internal_table_name());
   }
 
-  // string password = 7;
+  // string password = 8;
   if (this->password().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_password());
   }
 
-  // string table_cfg = 10;
+  // string table_cfg = 15;
   if (this->table_cfg().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
@@ -3731,11 +3746,11 @@ size_t MsgPvpRoomInfo::ByteSizeLong() const {
         this->_internal_chair_num());
   }
 
-  // int64 join_limit = 5;
-  if (this->join_limit() != 0) {
+  // int64 join_limit_min = 5;
+  if (this->join_limit_min() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_join_limit());
+        this->_internal_join_limit_min());
   }
 
   // int32 enter_num = 4;
@@ -3745,19 +3760,26 @@ size_t MsgPvpRoomInfo::ByteSizeLong() const {
         this->_internal_enter_num());
   }
 
-  // bool is_private = 6;
+  // bool is_private = 7;
   if (this->is_private() != 0) {
     total_size += 1 + 1;
   }
 
-  // int32 owner_id = 8;
+  // int64 join_limit_max = 6;
+  if (this->join_limit_max() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_join_limit_max());
+  }
+
+  // int32 owner_id = 9;
   if (this->owner_id() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_owner_id());
   }
 
-  // int32 table_no = 9;
+  // int32 table_no = 10;
   if (this->table_no() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
@@ -3810,14 +3832,17 @@ void MsgPvpRoomInfo::MergeFrom(const MsgPvpRoomInfo& from) {
   if (from.chair_num() != 0) {
     _internal_set_chair_num(from._internal_chair_num());
   }
-  if (from.join_limit() != 0) {
-    _internal_set_join_limit(from._internal_join_limit());
+  if (from.join_limit_min() != 0) {
+    _internal_set_join_limit_min(from._internal_join_limit_min());
   }
   if (from.enter_num() != 0) {
     _internal_set_enter_num(from._internal_enter_num());
   }
   if (from.is_private() != 0) {
     _internal_set_is_private(from._internal_is_private());
+  }
+  if (from.join_limit_max() != 0) {
+    _internal_set_join_limit_max(from._internal_join_limit_max());
   }
   if (from.owner_id() != 0) {
     _internal_set_owner_id(from._internal_owner_id());
