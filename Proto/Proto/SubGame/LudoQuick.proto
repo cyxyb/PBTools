@@ -5,26 +5,90 @@ package LudoQuick;
 //消息号
 enum EMsgIDLudoQuick
 {
-	MsgID_ChooseSide 	= 0;	//选择阵营
-	MsgID_FirstPublish 	= 1;	//场景（流程需要前端不管）
-	MsgID_FirstPublish 	= 2;	//随机首发
-	
+	MsgID_FirstPublish 		= 0;		//场景（流程需要前端不管）
+	SUB_SC_FirstPublish 	= 1;		//随机首发(MsgCommonN32)0红1黄2蓝3绿
+	SUB_SC_StartDice		= 2;		//开始投掷(MsgStartDiceResp)
+	SUB_CS_DiceInfo			= 3;		//投掷骰子(MsgCommonBool)
+	SUB_SC_ThrowDice		= 4;		//投掷结果(MsgThrowDiceResp)
+	SUB_CS_OperateRoute		= 5;		//操作棋子(MsgOperateRoute)
+	SUB_SC_DiceInfo			= 6;		//骰子结果(MsgDiceInfoResp)
+	SUB_SC_GameResult		= 7;		//游戏结果(MsgResultResp)
 }
+//棋子信息
+message RouteInfo
+{
+	int32 chess_id 		= 1;			//棋子信息0123
+	int32 gold_bag		= 2;			//钱袋信息
+	int32 pos			= 3;			//棋子位置
+}
+//用户信息
 message UserInfo
 {
-	int32 chair_id 			= 1;		//椅子号
-	repeated route_info 	= 2;		//棋子信息
-	repeated gold_bag		= 3;		//钱袋信息
-	bool finish_line_switch = 4;		//重点线开关
+	int32 chair_id 					= 1;		//椅子号
+	repeated RouteInfo route_info 	= 2;		//棋子信息
+	bool finish_line_switch 		= 3;		//终点线开关
 }
+//棋格信息
 message ChessGrid
 {
+	int32 pos_id 		= 1;	//格子id 1-76 红
+	int32 safe_house 	= 2; 	//安全屋1是0不是
+	int32 gold_bag 		= 3; 	//是否有钱袋
+	int32 prop 			= 4; 	//道具格子
+	int32 switch 		= 5; 	//开关
+	int32 inflection 	= 6; 	//拐点
+	int32 next_pos1 	= 7; 	//常规拐点
+	int32 next_pos2 	= 8; 	//终点拐点
+	int32 start_point 	= 9; 	//起点
+	int32 end_point 	= 10;	//终点
+}
+
+//场景消息
+message	MsgSceneInfoResp
+{
+	int32 game_state 					= 1;//游戏状态 0：选场 非零：对应椅子操作中
+	int32 time_remaining 				= 2;//剩余时间
+	repeated ChessGrid chess_grid_info 	= 3;//棋格信息
+	repeated UserInfo user_info	 		= 4;//用户信息
 	
 }
-//场景消息
-message	MsgSceneInfo
+//开始投掷
+message MsgStartDiceResp
 {
-	int32 game_state = 1;//游戏场景
-	int32 time_remaining = 2;//剩余时间
-	repeated chess_grid_info = 3;//棋格信息
+	int32 chair_id = 1;//椅子号
+	int32 times = 2;//剩余时间
+}
+//投掷结果
+message MsgThrowDiceResp
+{
+	int32 chair_id 	= 1; 	//椅子号 对应颜色
+	int32 dice_roll = 2;	//骰子点数	
+}
+//操作棋子
+message MsgOperateRoute
+{
+	int32 chair_id 	= 1; 	//椅子号 对应颜色
+	int32 chess_id = 2;		//棋子ID 0123
+}
+//骰子数据
+message MsgDiceInfoResp
+{
+	int32 chair_id 		= 1; 	//椅子号 对应颜色
+	int32 chess_id	 	= 2;	//棋子ID 0123
+	int32 route_num	 	= 3;	//走了多少格
+	int32 prop_id 		= 4;	//道具类型 0：未触发 1：前进一格 2：前进三格 3：前进五格 4：前进七格 5：移动到最近棋子 6：移动到最近得安全屋 7 ：获得骰子 8：获得指定骰子 9：解除开关 10：解锁棋子
+}
+//结算信息
+message GameResult
+{
+	int32 chair_id 		= 1; 	//椅子号 对应颜色
+	UserInfo user_info 	= 2;	//用户信息
+	int64 user_gold		= 3;	//用户金币
+	int64 win 			= 4;	//本次获得
+	int64 bet			= 5;	//消耗金币
+}
+//游戏结算
+message MsgResultResp
+{
+	repeated GameResult result = 1;
 }
