@@ -60,11 +60,11 @@ public static partial class GameReflection {
           "c2l0GAcgAygFIjYKD01zZ1B2cFRhYmxlTGlzdBIjCglyb29tX2xpc3QYASAD",
           "KAsyEC5Nc2dQdnBUYWJsZUluZm8iTAoUTXNnUHZwQ3JlYXRlUm9vbVJlc3AS",
           "EAoIcmV0X2NvZGUYASABKAUSEAoIdGFibGVfaWQYAiABKAUSEAoIdGFibGVf",
-          "bm8YAyABKAUiRgoOTXNnUHZwSm9pblJvb20SEAoIdGFibGVfaWQYASABKAUS",
-          "EAoIdGFibGVfbm8YAiABKAUSEAoIcGFzc3dvcmQYAyABKAkiJgoSTXNnUHZw",
-          "Sm9pblJvb21SZXNwEhAKCHJldF9jb2RlGAEgASgFIl4KEk1zZ1B2cEtpY2tV",
-          "c2VyUmVzcBIQCghvd25lcl9pZBgBIAEoBRISCgpvd25lcl9uaWNrGAIgASgJ",
-          "Eg8KB2tpY2tfaWQYAyABKAUSEQoJa2lja19uaWNrGAQgASgJYgZwcm90bzM="));
+          "bm8YAyABKAUiRwoPTXNnUHZwSm9pblRhYmxlEhAKCHRhYmxlX2lkGAEgASgF",
+          "EhAKCHRhYmxlX25vGAIgASgFEhAKCHBhc3N3b3JkGAMgASgJIiYKEk1zZ1B2",
+          "cEpvaW5Sb29tUmVzcBIQCghyZXRfY29kZRgBIAEoBSJeChJNc2dQdnBLaWNr",
+          "VXNlclJlc3ASEAoIb3duZXJfaWQYASABKAUSEgoKb3duZXJfbmljaxgCIAEo",
+          "CRIPCgdraWNrX2lkGAMgASgFEhEKCWtpY2tfbmljaxgEIAEoCWIGcHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -84,7 +84,7 @@ public static partial class GameReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpCreateTable), global::MsgPvpCreateTable.Parser, new[]{ "IsPrivate", "TableName", "ChairNum", "Password", "ParaLsit" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpTableList), global::MsgPvpTableList.Parser, new[]{ "RoomList" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpCreateRoomResp), global::MsgPvpCreateRoomResp.Parser, new[]{ "RetCode", "TableId", "TableNo" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpJoinRoom), global::MsgPvpJoinRoom.Parser, new[]{ "TableId", "TableNo", "Password" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpJoinTable), global::MsgPvpJoinTable.Parser, new[]{ "TableId", "TableNo", "Password" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpJoinRoomResp), global::MsgPvpJoinRoomResp.Parser, new[]{ "RetCode" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpKickUserResp), global::MsgPvpKickUserResp.Parser, new[]{ "OwnerId", "OwnerNick", "KickId", "KickNick" }, null, null, null, null)
         }));
@@ -5024,15 +5024,15 @@ public sealed partial class MsgPvpCreateRoomResp : pb::IMessage<MsgPvpCreateRoom
 /// <summary>
 ///pvp房间列表
 /// </summary>
-public sealed partial class MsgPvpJoinRoom : pb::IMessage<MsgPvpJoinRoom>
+public sealed partial class MsgPvpJoinTable : pb::IMessage<MsgPvpJoinTable>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     , pb::IBufferMessage
 #endif
 {
-  private static readonly pb::MessageParser<MsgPvpJoinRoom> _parser = new pb::MessageParser<MsgPvpJoinRoom>(() => new MsgPvpJoinRoom());
+  private static readonly pb::MessageParser<MsgPvpJoinTable> _parser = new pb::MessageParser<MsgPvpJoinTable>(() => new MsgPvpJoinTable());
   private pb::UnknownFieldSet _unknownFields;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pb::MessageParser<MsgPvpJoinRoom> Parser { get { return _parser; } }
+  public static pb::MessageParser<MsgPvpJoinTable> Parser { get { return _parser; } }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
@@ -5045,14 +5045,14 @@ public sealed partial class MsgPvpJoinRoom : pb::IMessage<MsgPvpJoinRoom>
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public MsgPvpJoinRoom() {
+  public MsgPvpJoinTable() {
     OnConstruction();
   }
 
   partial void OnConstruction();
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public MsgPvpJoinRoom(MsgPvpJoinRoom other) : this() {
+  public MsgPvpJoinTable(MsgPvpJoinTable other) : this() {
     tableId_ = other.tableId_;
     tableNo_ = other.tableNo_;
     password_ = other.password_;
@@ -5060,8 +5060,8 @@ public sealed partial class MsgPvpJoinRoom : pb::IMessage<MsgPvpJoinRoom>
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public MsgPvpJoinRoom Clone() {
-    return new MsgPvpJoinRoom(this);
+  public MsgPvpJoinTable Clone() {
+    return new MsgPvpJoinTable(this);
   }
 
   /// <summary>Field number for the "table_id" field.</summary>
@@ -5108,11 +5108,11 @@ public sealed partial class MsgPvpJoinRoom : pb::IMessage<MsgPvpJoinRoom>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
-    return Equals(other as MsgPvpJoinRoom);
+    return Equals(other as MsgPvpJoinTable);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Equals(MsgPvpJoinRoom other) {
+  public bool Equals(MsgPvpJoinTable other) {
     if (ReferenceEquals(other, null)) {
       return false;
     }
@@ -5205,7 +5205,7 @@ public sealed partial class MsgPvpJoinRoom : pb::IMessage<MsgPvpJoinRoom>
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(MsgPvpJoinRoom other) {
+  public void MergeFrom(MsgPvpJoinTable other) {
     if (other == null) {
       return;
     }

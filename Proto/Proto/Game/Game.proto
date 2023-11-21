@@ -158,7 +158,7 @@ message MsgPvpCreateRoomResp
 }
 
 //pvp房间列表
-message MsgPvpJoinRoom
+message MsgPvpJoinTable
 {
 	int32	table_id		= 1;	//桌子id
 	int32	table_no		= 2;	//桌子编号

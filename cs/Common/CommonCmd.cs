@@ -699,7 +699,7 @@ public enum EMsgIDGame {
   /// </summary>
   [pbr::OriginalName("MsgIDGame_NotifyMessageResp")] MsgIdgameNotifyMessageResp = 1012,
   /// <summary>
-  ///创建房间(MsgPvpCreateRoom)
+  ///创建房间(MsgPvpCreateTable)
   /// </summary>
   [pbr::OriginalName("MsgIDGame_CreateRoom")] MsgIdgameCreateRoom = 1013,
   /// <summary>
