@@ -112,7 +112,7 @@ public static partial class CommonCmdReflection {
           "EiIKHk1zZ0lETG9naW5fUGVyc29uYWxEZXRhaWxzUmVzcBBzEiYKIk1zZ0lE",
           "TG9naW5fTm90aWZ5U2VydmVyT2ZmbGluZVJlc3AQdBIlCiFNc2dJRFNoYXJl",
           "X05vdGlmeVVwZGF0ZVZpcEV4cFJlc3AQdRIiCh5Nc2dJRFNoYXJlX05vdGlm",
-          "eUFkZE5ld1N1YlJlc3AQdirGCAoKRU1zZ0lER2FtZRISCg5Nc2dJREdhbWVf",
+          "eUFkZE5ld1N1YlJlc3AQdir0CAoKRU1zZ0lER2FtZRISCg5Nc2dJREdhbWVf",
           "TnVsbBAAEhQKD01zZ0lER2FtZV9Mb2dpbhDpBxIYChNNc2dJREdhbWVfTG9n",
           "aW5SZXNwEOoHEh4KGU1zZ0lER2FtZV9TcXVlZXplU2VhdFJlc3AQ6wcSFQoQ",
           "TXNnSURHYW1lX0xvZ291dBDsBxIaChVNc2dJREdhbWVfQXV0b1NpdERvd24Q",
@@ -121,31 +121,32 @@ public static partial class CommonCmdReflection {
           "clN0YW5kVXBSZXNwEPAHEiMKHk1zZ0lER2FtZV9TeW5jUGxheWVyc1Njb3Jl",
           "UmVzcBDxBxIcChdNc2dJREdhbWVfU2VuZEdhbWVTZW5jZRDyBxIgChtNc2dJ",
           "REdhbWVfU2VuZEdhbWVTZW5jZVJlc3AQ8wcSIAobTXNnSURHYW1lX05vdGlm",
-          "eU1lc3NhZ2VSZXNwEPQHEhoKFU1zZ0lER2FtZV9DcmVhdGVUYWJsZRD1BxIY",
-          "ChNNc2dJREdhbWVfSm9pblRhYmxlEPYHEhoKFU1zZ0lER2FtZV9RdWVyeVJl",
-          "Y29yZBD3BxIjCh5Nc2dJREdhbWVfUXVlcnlSb3VuZFJlY29yZFJlc3AQ+AcS",
-          "IQocTXNnSURHYW1lX1F1ZXJ5RGF5UmVjb3JkUmVzcBD5BxIbChZNc2dJREdh",
-          "bWVfQWRkT25lUmVjb3JkEPoHEiYKIU1zZ0lER2FtZV9Ob3RpZnlQbGF5ZXJP",
-          "ZmZsaW5lUmVzcBD7BxIaChVNc2dJREdhbWVfQ2hhbmdlVGFibGUQ/AcSJAof",
-          "TXNnSURHYW1lX1B2cF9HZXRSb29tQ29uZmlnUmVzcBD9BxIkCh9Nc2dJREdh",
-          "bWVfUHZwX1NlbmRUYWJsZUxpc3RSZXNwEP8HEiAKG01zZ0lER2FtZV9QdnBf",
-          "QWN0aXZhdGVUYWJsZRCCCBIkCh9Nc2dJREdhbWVfUHZwX0FjdGl2YXRlVGFi",
-          "bGVSZXNwEIMIEhsKFk1zZ0lER2FtZV9QdnBfS2lja1VzZXIQhAgSHwoaTXNn",
-          "SURHYW1lX1B2cF9LaWNrVXNlclJlc3AQhQgSHwoaTXNnSURHYW1lX1B2cF9E",
-          "ZXN0cm95VGFibGUQhggSIwoeTXNnSURHYW1lX1B2cF9EZXN0cm95VGFibGVS",
-          "ZXNwEIcIEiAKG01zZ0lER2FtZV9QdnBfRmFzdEpvaW5UYWJsZRCICBIkCh9N",
-          "c2dJREdhbWVfUHZwX0Zhc3RKb2luVGFibGVSZXNwEIkIEh4KGU1zZ0lER2Ft",
-          "ZV9QdnBfU2l0RG93blJlc3AQiggSGgoVTXNnSURHYW1lX1B2cF9TdGFuZFVw",
-          "EIsIEhwKF01zZ0lER2FtZV9QdnBfU3RhbmRSZXNwEIwIKv0CCgpFTXNnSURD",
-          "aGF0EhIKDk1zZ0lEQ2hhdF9OdWxsEAASFAoPTXNnSURDaGF0X0xvZ2luENEP",
-          "EhgKE01zZ0lEQ2hhdF9Mb2dpblJlc3AQ0g8SGQoUTXNnSURDaGF0X0xvZ291",
-          "dFJlc3AQ0w8SHAoXTXNnSURDaGF0X1NlbmROb3JtYWxNc2cQ1A8SJgohTXNn",
-          "SURDaGF0X05vdGlmeUNoYXROb3JtYWxNc2dSZXNwENUPEh0KGE1zZ0lEQ2hh",
-          "dF9TZW5kVHJ1bXBldE1zZxDWDxInCiJNc2dJRENoYXRfTm90aWZ5Q2hhdFRy",
-          "dW1wZXRNc2dSZXNwENcPEh8KGk1zZ0lEQ2hhdF9TeW5jVXNlckluZm9SZXNw",
-          "ENgPEh8KGk1zZ0lEQ2hhdF9TZXRMaWxpdENoYXRSZXNwENkPEh0KGE1zZ0lE",
-          "Q2hhdF9HZXRDaGF0SGlzdG9yeRDaDxIhChxNc2dJRENoYXRfR2V0Q2hhdEhp",
-          "c3RvcnlSZXNwENsPYgZwcm90bzM="));
+          "eU1lc3NhZ2VSZXNwEPQHEhoKFU1zZ0lER2FtZV9RdWVyeVJlY29yZBD3BxIj",
+          "Ch5Nc2dJREdhbWVfUXVlcnlSb3VuZFJlY29yZFJlc3AQ+AcSIQocTXNnSURH",
+          "YW1lX1F1ZXJ5RGF5UmVjb3JkUmVzcBD5BxIbChZNc2dJREdhbWVfQWRkT25l",
+          "UmVjb3JkEPoHEiYKIU1zZ0lER2FtZV9Ob3RpZnlQbGF5ZXJPZmZsaW5lUmVz",
+          "cBD7BxIaChVNc2dJREdhbWVfQ2hhbmdlVGFibGUQ/AcSJAofTXNnSURHYW1l",
+          "X1B2cF9HZXRSb29tQ29uZmlnUmVzcBCbCBIkCh9Nc2dJREdhbWVfUHZwX1Nl",
+          "bmRUYWJsZUxpc3RSZXNwEJ0IEh4KGU1zZ0lER2FtZV9QdnBfQ3JlYXRlVGFi",
+          "bGUQnggSIgodTXNnSURHYW1lX1B2cF9DcmVhdGVUYWJsZVJlc3AQnwgSHAoX",
+          "TXNnSURHYW1lX1B2cF9Kb2luVGFibGUQoAgSIAobTXNnSURHYW1lX1B2cF9K",
+          "b2luVGFibGVSZXNwEKEIEiAKG01zZ0lER2FtZV9QdnBfQWN0aXZhdGVUYWJs",
+          "ZRCiCBIkCh9Nc2dJREdhbWVfUHZwX0FjdGl2YXRlVGFibGVSZXNwEKMIEhsK",
+          "Fk1zZ0lER2FtZV9QdnBfS2lja1VzZXIQpAgSHwoaTXNnSURHYW1lX1B2cF9L",
+          "aWNrVXNlclJlc3AQpQgSHwoaTXNnSURHYW1lX1B2cF9EZXN0cm95VGFibGUQ",
+          "pggSIwoeTXNnSURHYW1lX1B2cF9EZXN0cm95VGFibGVSZXNwEKcIEiAKG01z",
+          "Z0lER2FtZV9QdnBfRmFzdEpvaW5UYWJsZRCoCBIkCh9Nc2dJREdhbWVfUHZw",
+          "X0Zhc3RKb2luVGFibGVSZXNwEKkIEhoKFU1zZ0lER2FtZV9QdnBfU3RhbmRV",
+          "cBCqCBIcChdNc2dJREdhbWVfUHZwX1N0YW5kUmVzcBCrCCr9AgoKRU1zZ0lE",
+          "Q2hhdBISCg5Nc2dJRENoYXRfTnVsbBAAEhQKD01zZ0lEQ2hhdF9Mb2dpbhDR",
+          "DxIYChNNc2dJRENoYXRfTG9naW5SZXNwENIPEhkKFE1zZ0lEQ2hhdF9Mb2dv",
+          "dXRSZXNwENMPEhwKF01zZ0lEQ2hhdF9TZW5kTm9ybWFsTXNnENQPEiYKIU1z",
+          "Z0lEQ2hhdF9Ob3RpZnlDaGF0Tm9ybWFsTXNnUmVzcBDVDxIdChhNc2dJRENo",
+          "YXRfU2VuZFRydW1wZXRNc2cQ1g8SJwoiTXNnSURDaGF0X05vdGlmeUNoYXRU",
+          "cnVtcGV0TXNnUmVzcBDXDxIfChpNc2dJRENoYXRfU3luY1VzZXJJbmZvUmVz",
+          "cBDYDxIfChpNc2dJRENoYXRfU2V0TGlsaXRDaGF0UmVzcBDZDxIdChhNc2dJ",
+          "RENoYXRfR2V0Q2hhdEhpc3RvcnkQ2g8SIQocTXNnSURDaGF0X0dldENoYXRI",
+          "aXN0b3J5UmVzcBDbD2IGcHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::EMsgIDMain), typeof(global::EMsgIDLogin), typeof(global::EMsgIDGame), typeof(global::EMsgIDChat), }, null, null));
@@ -701,14 +702,6 @@ public enum EMsgIDGame {
   /// </summary>
   [pbr::OriginalName("MsgIDGame_NotifyMessageResp")] MsgIdgameNotifyMessageResp = 1012,
   /// <summary>
-  ///创建房间(MsgPvpCreateTable)
-  /// </summary>
-  [pbr::OriginalName("MsgIDGame_CreateTable")] MsgIdgameCreateTable = 1013,
-  /// <summary>
-  ///加入房间(MsgPvpJoinTable)
-  /// </summary>
-  [pbr::OriginalName("MsgIDGame_JoinTable")] MsgIdgameJoinTable = 1014,
-  /// <summary>
   ///猜拳查询数据记录(MsgQueryRecord 1:每局数据 2:每日数据)
   /// </summary>
   [pbr::OriginalName("MsgIDGame_QueryRecord")] MsgIdgameQueryRecord = 1015,
@@ -733,58 +726,69 @@ public enum EMsgIDGame {
   /// </summary>
   [pbr::OriginalName("MsgIDGame_ChangeTable")] MsgIdgameChangeTable = 1020,
   /// <summary>
-  /////////////////////////////////////////////pvp/////////////////////////////////////////
+  ///房间配置(MsgPvpRoomConfig) 
   /// </summary>
-  [pbr::OriginalName("MsgIDGame_Pvp_GetRoomConfigResp")] MsgIdgamePvpGetRoomConfigResp = 1021,
+  [pbr::OriginalName("MsgIDGame_Pvp_GetRoomConfigResp")] MsgIdgamePvpGetRoomConfigResp = 1051,
   /// <summary>
-  ///MsgIDGame_Pvp_GetTableList		= 1022;		//获取PVP桌子列表(MsgCommonN32)
+  ///MsgIDGame_Pvp_GetTableList		= 1052;		//获取PVP桌子列表(MsgCommonN32)
   /// </summary>
-  [pbr::OriginalName("MsgIDGame_Pvp_SendTableListResp")] MsgIdgamePvpSendTableListResp = 1023,
+  [pbr::OriginalName("MsgIDGame_Pvp_SendTableListResp")] MsgIdgamePvpSendTableListResp = 1053,
   /// <summary>
-  ///MsgIDGame_Pvp_CreateRoomResp		= 1024;		//创建房间(MsgIDGame_SitDownResp)
-  ///MsgIDGame_Pvp_JoinRoomResp		= 1025;		//加入房间(MsgIDGame_SitDownResp)
+  ///创建房间(MsgPvpCreateTable)
   /// </summary>
-  [pbr::OriginalName("MsgIDGame_Pvp_ActivateTable")] MsgIdgamePvpActivateTable = 1026,
+  [pbr::OriginalName("MsgIDGame_Pvp_CreateTable")] MsgIdgamePvpCreateTable = 1054,
+  /// <summary>
+  ///创建房间(MsgPvpCreateTableResp)
+  /// </summary>
+  [pbr::OriginalName("MsgIDGame_Pvp_CreateTableResp")] MsgIdgamePvpCreateTableResp = 1055,
+  /// <summary>
+  ///加入房间(MsgPvpJoinTable)
+  /// </summary>
+  [pbr::OriginalName("MsgIDGame_Pvp_JoinTable")] MsgIdgamePvpJoinTable = 1056,
+  /// <summary>
+  ///加入房间(MsgPvpJoinTableResp)
+  /// </summary>
+  [pbr::OriginalName("MsgIDGame_Pvp_JoinTableResp")] MsgIdgamePvpJoinTableResp = 1057,
   /// <summary>
   ///房主激活桌子(MsgCommonBool)
   /// </summary>
-  [pbr::OriginalName("MsgIDGame_Pvp_ActivateTableResp")] MsgIdgamePvpActivateTableResp = 1027,
+  [pbr::OriginalName("MsgIDGame_Pvp_ActivateTable")] MsgIdgamePvpActivateTable = 1058,
+  /// <summary>
+  ///房主激活桌子(MsgCommonBool)
+  /// </summary>
+  [pbr::OriginalName("MsgIDGame_Pvp_ActivateTableResp")] MsgIdgamePvpActivateTableResp = 1059,
   /// <summary>
   ///房主踢人(MsgCommonN32)
   /// </summary>
-  [pbr::OriginalName("MsgIDGame_Pvp_KickUser")] MsgIdgamePvpKickUser = 1028,
+  [pbr::OriginalName("MsgIDGame_Pvp_KickUser")] MsgIdgamePvpKickUser = 1060,
   /// <summary>
   ///房主踢人(MsgPvpKickUserResp)
   /// </summary>
-  [pbr::OriginalName("MsgIDGame_Pvp_KickUserResp")] MsgIdgamePvpKickUserResp = 1029,
+  [pbr::OriginalName("MsgIDGame_Pvp_KickUserResp")] MsgIdgamePvpKickUserResp = 1061,
   /// <summary>
   ///房主解散房间(MsgCommonBool)
   /// </summary>
-  [pbr::OriginalName("MsgIDGame_Pvp_DestroyTable")] MsgIdgamePvpDestroyTable = 1030,
+  [pbr::OriginalName("MsgIDGame_Pvp_DestroyTable")] MsgIdgamePvpDestroyTable = 1062,
   /// <summary>
   ///房主踢人(MsgCommonBool)
   /// </summary>
-  [pbr::OriginalName("MsgIDGame_Pvp_DestroyTableResp")] MsgIdgamePvpDestroyTableResp = 1031,
+  [pbr::OriginalName("MsgIDGame_Pvp_DestroyTableResp")] MsgIdgamePvpDestroyTableResp = 1063,
   /// <summary>
   ///快速加入(MsgCommonN32)
   /// </summary>
-  [pbr::OriginalName("MsgIDGame_Pvp_FastJoinTable")] MsgIdgamePvpFastJoinTable = 1032,
+  [pbr::OriginalName("MsgIDGame_Pvp_FastJoinTable")] MsgIdgamePvpFastJoinTable = 1064,
   /// <summary>
   ///快速加入(MsgCommonN32)
   /// </summary>
-  [pbr::OriginalName("MsgIDGame_Pvp_FastJoinTableResp")] MsgIdgamePvpFastJoinTableResp = 1033,
-  /// <summary>
-  ///玩家坐下通知(MsgCommonN32)
-  /// </summary>
-  [pbr::OriginalName("MsgIDGame_Pvp_SitDownResp")] MsgIdgamePvpSitDownResp = 1034,
+  [pbr::OriginalName("MsgIDGame_Pvp_FastJoinTableResp")] MsgIdgamePvpFastJoinTableResp = 1065,
   /// <summary>
   ///玩家起立(MsgCommonN32)
   /// </summary>
-  [pbr::OriginalName("MsgIDGame_Pvp_StandUp")] MsgIdgamePvpStandUp = 1035,
+  [pbr::OriginalName("MsgIDGame_Pvp_StandUp")] MsgIdgamePvpStandUp = 1066,
   /// <summary>
   ///玩家起立通知(MsgCommonN32)
   /// </summary>
-  [pbr::OriginalName("MsgIDGame_Pvp_StandResp")] MsgIdgamePvpStandResp = 1036,
+  [pbr::OriginalName("MsgIDGame_Pvp_StandResp")] MsgIdgamePvpStandResp = 1067,
 }
 
 public enum EMsgIDChat {

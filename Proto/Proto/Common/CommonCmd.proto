@@ -148,8 +148,6 @@ enum EMsgIDGame
 	MsgIDGame_SendGameSence				= 1010;		//请求场景消息(MsgCommonBool)
 	MsgIDGame_SendGameSenceResp			= 1011;		//请求场景消息返回
 	MsgIDGame_NotifyMessageResp			= 1012;		//通用消息通知(MsgCommonN32)
-	MsgIDGame_CreateTable				= 1013;		//创建房间(MsgPvpCreateTable)
-	MsgIDGame_JoinTable					= 1014;		//加入房间(MsgPvpJoinTable)
 	MsgIDGame_QueryRecord				= 1015;		//猜拳查询数据记录(MsgQueryRecord 1:每局数据 2:每日数据)
 	MsgIDGame_QueryRoundRecordResp		= 1016;		//猜拳每局数据数据记录(MsgTotalRoundData)
 	MsgIDGame_QueryDayRecordResp		= 1017;		//猜拳每日数据数据记录(MsgTotalDayData)
@@ -158,22 +156,25 @@ enum EMsgIDGame
 	MsgIDGame_ChangeTable				= 1020;		//换桌(MsgCommonN32)
 
 	////////////////////////////////////////////pvp/////////////////////////////////////////
-	MsgIDGame_Pvp_GetRoomConfigResp		= 1021;		//房间配置(MsgPvpRoomConfig) 
-	//MsgIDGame_Pvp_GetTableList		= 1022;		//获取PVP桌子列表(MsgCommonN32)
-	MsgIDGame_Pvp_SendTableListResp		= 1023;		//发送PVP桌子列表(MsgPvpTableList)
-	//MsgIDGame_Pvp_CreateRoomResp		= 1024;		//创建房间(MsgIDGame_SitDownResp)
-	//MsgIDGame_Pvp_JoinRoomResp		= 1025;		//加入房间(MsgIDGame_SitDownResp)
-	MsgIDGame_Pvp_ActivateTable			= 1026;		//房主激活桌子(MsgCommonBool)
-	MsgIDGame_Pvp_ActivateTableResp		= 1027;		//房主激活桌子(MsgCommonBool)
-	MsgIDGame_Pvp_KickUser				= 1028;		//房主踢人(MsgCommonN32)
-	MsgIDGame_Pvp_KickUserResp			= 1029;		//房主踢人(MsgPvpKickUserResp)
-	MsgIDGame_Pvp_DestroyTable			= 1030;		//房主解散房间(MsgCommonBool)
-	MsgIDGame_Pvp_DestroyTableResp		= 1031;		//房主踢人(MsgCommonBool)
-	MsgIDGame_Pvp_FastJoinTable			= 1032;		//快速加入(MsgCommonN32)
-	MsgIDGame_Pvp_FastJoinTableResp		= 1033;		//快速加入(MsgCommonN32)
-	MsgIDGame_Pvp_SitDownResp			= 1034;		//玩家坐下通知(MsgCommonN32)
-	MsgIDGame_Pvp_StandUp				= 1035;		//玩家起立(MsgCommonN32)
-	MsgIDGame_Pvp_StandResp				= 1036;		//玩家起立通知(MsgCommonN32)
+	//ID从1051开始
+
+	MsgIDGame_Pvp_GetRoomConfigResp		= 1051;		//房间配置(MsgPvpRoomConfig) 
+	//MsgIDGame_Pvp_GetTableList		= 1052;		//获取PVP桌子列表(MsgCommonN32)
+	MsgIDGame_Pvp_SendTableListResp		= 1053;		//发送PVP桌子列表(MsgPvpTableList)
+	MsgIDGame_Pvp_CreateTable			= 1054;		//创建房间(MsgPvpCreateTable)
+	MsgIDGame_Pvp_CreateTableResp		= 1055;		//创建房间(MsgPvpCreateTableResp)
+	MsgIDGame_Pvp_JoinTable				= 1056;		//加入房间(MsgPvpJoinTable)
+	MsgIDGame_Pvp_JoinTableResp			= 1057;		//加入房间(MsgPvpJoinTableResp)
+	MsgIDGame_Pvp_ActivateTable			= 1058;		//房主激活桌子(MsgCommonBool)
+	MsgIDGame_Pvp_ActivateTableResp		= 1059;		//房主激活桌子(MsgCommonBool)
+	MsgIDGame_Pvp_KickUser				= 1060;		//房主踢人(MsgCommonN32)
+	MsgIDGame_Pvp_KickUserResp			= 1061;		//房主踢人(MsgPvpKickUserResp)
+	MsgIDGame_Pvp_DestroyTable			= 1062;		//房主解散房间(MsgCommonBool)
+	MsgIDGame_Pvp_DestroyTableResp		= 1063;		//房主踢人(MsgCommonBool)
+	MsgIDGame_Pvp_FastJoinTable			= 1064;		//快速加入(MsgCommonN32)
+	MsgIDGame_Pvp_FastJoinTableResp		= 1065;		//快速加入(MsgCommonN32)
+	MsgIDGame_Pvp_StandUp				= 1066;		//玩家起立(MsgCommonN32)
+	MsgIDGame_Pvp_StandResp				= 1067;		//玩家起立通知(MsgCommonN32)
 
 	////////////////////////////////////////////////////////////////////////////////////////
 }

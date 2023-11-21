@@ -131,6 +131,12 @@ message MsgPvpRoomConfig
 	repeated MsgPvpRoomCfgItem	para_lsit		= 11;	//桌子特性列表  		//进入房间金币下限				放在para_lsit的第一位
 }
 
+//pvp桌子列表
+message MsgPvpTableList
+{
+	repeated MsgPvpTableInfo table_list = 1;	
+}
+
 //pvp创建桌子配置
 message MsgPvpCreateTable
 {
@@ -143,12 +149,6 @@ message MsgPvpCreateTable
 	repeated int32			para_lsit			= 7;	//选定桌子特性列表
 }
 
-//pvp桌子列表
-message MsgPvpTableList
-{
-	repeated MsgPvpTableInfo table_list = 1;	
-}
-
 //pvp房间列表
 message MsgPvpCreateTableResp
 {
@@ -157,7 +157,7 @@ message MsgPvpCreateTableResp
 	int32	table_no		= 3;	//桌子编号
 }
 
-//pvp房间列表
+//pvp加入房间
 message MsgPvpJoinTable
 {
 	int32	table_id		= 1;	//桌子id
@@ -165,10 +165,12 @@ message MsgPvpJoinTable
 	string 	password		= 3;	//密码
 }
 
-//pvp房间列表
+//pvp加入房间
 message MsgPvpJoinTableResp
 {
 	int32	ret_code		= 1;	//返回码	非零失败
+	int32	table_id		= 2;	//桌子id
+	int32	table_no		= 3;	//桌子编号
 }
 
 //pvp房间列表
