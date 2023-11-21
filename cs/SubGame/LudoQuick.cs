@@ -79,7 +79,7 @@ namespace LudoQuick {
     /// </summary>
     [pbr::OriginalName("MsgID_FirstPublish")] MsgIdFirstPublish = 0,
     /// <summary>
-    ///随机首发(MsgCommonN32)0红1黄2蓝3绿
+    ///随机首发(MsgCommonN32)0红1绿2黄3蓝
     /// </summary>
     [pbr::OriginalName("SUB_SC_FirstPublish")] SubScFirstPublish = 1,
     /// <summary>
