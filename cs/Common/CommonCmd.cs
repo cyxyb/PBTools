@@ -787,7 +787,7 @@ public enum EMsgIDGame {
   /// </summary>
   [pbr::OriginalName("MsgIDGame_Pvp_StandUp")] MsgIdgamePvpStandUp = 1066,
   /// <summary>
-  ///玩家起立通知(MsgCommonN32)    		删除桌子的人数
+  ///玩家起立通知(MsgPvpStandUpTableResp)	删除桌子的人数
   /// </summary>
   [pbr::OriginalName("MsgIDGame_Pvp_StandUpResp")] MsgIdgamePvpStandUpResp = 1067,
   /// <summary>
