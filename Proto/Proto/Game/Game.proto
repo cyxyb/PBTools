@@ -146,11 +146,11 @@ message MsgPvpCreateTable
 //pvp桌子列表
 message MsgPvpTableList
 {
-	repeated MsgPvpTableInfo room_list = 1;	
+	repeated MsgPvpTableInfo table_list = 1;	
 }
 
 //pvp房间列表
-message MsgPvpCreateRoomResp
+message MsgPvpCreateTableResp
 {
 	int32	ret_code		= 1;	//返回码	非零失败
 	int32	table_id		= 2;	//桌子id
@@ -166,7 +166,7 @@ message MsgPvpJoinTable
 }
 
 //pvp房间列表
-message MsgPvpJoinRoomResp
+message MsgPvpJoinTableResp
 {
 	int32	ret_code		= 1;	//返回码	非零失败
 }

@@ -68,18 +68,18 @@ extern MsgGamePlayerLoginRespDefaultTypeInternal _MsgGamePlayerLoginResp_default
 class MsgJackpotInfo;
 class MsgJackpotInfoDefaultTypeInternal;
 extern MsgJackpotInfoDefaultTypeInternal _MsgJackpotInfo_default_instance_;
-class MsgPvpCreateRoomResp;
-class MsgPvpCreateRoomRespDefaultTypeInternal;
-extern MsgPvpCreateRoomRespDefaultTypeInternal _MsgPvpCreateRoomResp_default_instance_;
 class MsgPvpCreateTable;
 class MsgPvpCreateTableDefaultTypeInternal;
 extern MsgPvpCreateTableDefaultTypeInternal _MsgPvpCreateTable_default_instance_;
-class MsgPvpJoinRoomResp;
-class MsgPvpJoinRoomRespDefaultTypeInternal;
-extern MsgPvpJoinRoomRespDefaultTypeInternal _MsgPvpJoinRoomResp_default_instance_;
+class MsgPvpCreateTableResp;
+class MsgPvpCreateTableRespDefaultTypeInternal;
+extern MsgPvpCreateTableRespDefaultTypeInternal _MsgPvpCreateTableResp_default_instance_;
 class MsgPvpJoinTable;
 class MsgPvpJoinTableDefaultTypeInternal;
 extern MsgPvpJoinTableDefaultTypeInternal _MsgPvpJoinTable_default_instance_;
+class MsgPvpJoinTableResp;
+class MsgPvpJoinTableRespDefaultTypeInternal;
+extern MsgPvpJoinTableRespDefaultTypeInternal _MsgPvpJoinTableResp_default_instance_;
 class MsgPvpKickUserResp;
 class MsgPvpKickUserRespDefaultTypeInternal;
 extern MsgPvpKickUserRespDefaultTypeInternal _MsgPvpKickUserResp_default_instance_;
@@ -116,10 +116,10 @@ template<> ::MsgGamePlayerInfo* Arena::CreateMaybeMessage<::MsgGamePlayerInfo>(A
 template<> ::MsgGamePlayerLogin* Arena::CreateMaybeMessage<::MsgGamePlayerLogin>(Arena*);
 template<> ::MsgGamePlayerLoginResp* Arena::CreateMaybeMessage<::MsgGamePlayerLoginResp>(Arena*);
 template<> ::MsgJackpotInfo* Arena::CreateMaybeMessage<::MsgJackpotInfo>(Arena*);
-template<> ::MsgPvpCreateRoomResp* Arena::CreateMaybeMessage<::MsgPvpCreateRoomResp>(Arena*);
 template<> ::MsgPvpCreateTable* Arena::CreateMaybeMessage<::MsgPvpCreateTable>(Arena*);
-template<> ::MsgPvpJoinRoomResp* Arena::CreateMaybeMessage<::MsgPvpJoinRoomResp>(Arena*);
+template<> ::MsgPvpCreateTableResp* Arena::CreateMaybeMessage<::MsgPvpCreateTableResp>(Arena*);
 template<> ::MsgPvpJoinTable* Arena::CreateMaybeMessage<::MsgPvpJoinTable>(Arena*);
+template<> ::MsgPvpJoinTableResp* Arena::CreateMaybeMessage<::MsgPvpJoinTableResp>(Arena*);
 template<> ::MsgPvpKickUserResp* Arena::CreateMaybeMessage<::MsgPvpKickUserResp>(Arena*);
 template<> ::MsgPvpRoomCfgItem* Arena::CreateMaybeMessage<::MsgPvpRoomCfgItem>(Arena*);
 template<> ::MsgPvpRoomConfig* Arena::CreateMaybeMessage<::MsgPvpRoomConfig>(Arena*);
@@ -2858,25 +2858,25 @@ class MsgPvpTableList PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kRoomListFieldNumber = 1,
+    kTableListFieldNumber = 1,
   };
-  // repeated .MsgPvpTableInfo room_list = 1;
-  int room_list_size() const;
+  // repeated .MsgPvpTableInfo table_list = 1;
+  int table_list_size() const;
   private:
-  int _internal_room_list_size() const;
+  int _internal_table_list_size() const;
   public:
-  void clear_room_list();
-  ::MsgPvpTableInfo* mutable_room_list(int index);
+  void clear_table_list();
+  ::MsgPvpTableInfo* mutable_table_list(int index);
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgPvpTableInfo >*
-      mutable_room_list();
+      mutable_table_list();
   private:
-  const ::MsgPvpTableInfo& _internal_room_list(int index) const;
-  ::MsgPvpTableInfo* _internal_add_room_list();
+  const ::MsgPvpTableInfo& _internal_table_list(int index) const;
+  ::MsgPvpTableInfo* _internal_add_table_list();
   public:
-  const ::MsgPvpTableInfo& room_list(int index) const;
-  ::MsgPvpTableInfo* add_room_list();
+  const ::MsgPvpTableInfo& table_list(int index) const;
+  ::MsgPvpTableInfo* add_table_list();
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgPvpTableInfo >&
-      room_list() const;
+      table_list() const;
 
   // @@protoc_insertion_point(class_scope:MsgPvpTableList)
  private:
@@ -2885,29 +2885,29 @@ class MsgPvpTableList PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgPvpTableInfo > room_list_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgPvpTableInfo > table_list_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Game_2eproto;
 };
 // -------------------------------------------------------------------
 
-class MsgPvpCreateRoomResp PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgPvpCreateRoomResp) */ {
+class MsgPvpCreateTableResp PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgPvpCreateTableResp) */ {
  public:
-  inline MsgPvpCreateRoomResp() : MsgPvpCreateRoomResp(nullptr) {}
-  virtual ~MsgPvpCreateRoomResp();
+  inline MsgPvpCreateTableResp() : MsgPvpCreateTableResp(nullptr) {}
+  virtual ~MsgPvpCreateTableResp();
 
-  MsgPvpCreateRoomResp(const MsgPvpCreateRoomResp& from);
-  MsgPvpCreateRoomResp(MsgPvpCreateRoomResp&& from) noexcept
-    : MsgPvpCreateRoomResp() {
+  MsgPvpCreateTableResp(const MsgPvpCreateTableResp& from);
+  MsgPvpCreateTableResp(MsgPvpCreateTableResp&& from) noexcept
+    : MsgPvpCreateTableResp() {
     *this = ::std::move(from);
   }
 
-  inline MsgPvpCreateRoomResp& operator=(const MsgPvpCreateRoomResp& from) {
+  inline MsgPvpCreateTableResp& operator=(const MsgPvpCreateTableResp& from) {
     CopyFrom(from);
     return *this;
   }
-  inline MsgPvpCreateRoomResp& operator=(MsgPvpCreateRoomResp&& from) noexcept {
+  inline MsgPvpCreateTableResp& operator=(MsgPvpCreateTableResp&& from) noexcept {
     if (GetArena() == from.GetArena()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -2925,19 +2925,19 @@ class MsgPvpCreateRoomResp PROTOBUF_FINAL :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return GetMetadataStatic().reflection;
   }
-  static const MsgPvpCreateRoomResp& default_instance();
+  static const MsgPvpCreateTableResp& default_instance();
 
-  static inline const MsgPvpCreateRoomResp* internal_default_instance() {
-    return reinterpret_cast<const MsgPvpCreateRoomResp*>(
-               &_MsgPvpCreateRoomResp_default_instance_);
+  static inline const MsgPvpCreateTableResp* internal_default_instance() {
+    return reinterpret_cast<const MsgPvpCreateTableResp*>(
+               &_MsgPvpCreateTableResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     15;
 
-  friend void swap(MsgPvpCreateRoomResp& a, MsgPvpCreateRoomResp& b) {
+  friend void swap(MsgPvpCreateTableResp& a, MsgPvpCreateTableResp& b) {
     a.Swap(&b);
   }
-  inline void Swap(MsgPvpCreateRoomResp* other) {
+  inline void Swap(MsgPvpCreateTableResp* other) {
     if (other == this) return;
     if (GetArena() == other->GetArena()) {
       InternalSwap(other);
@@ -2945,7 +2945,7 @@ class MsgPvpCreateRoomResp PROTOBUF_FINAL :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(MsgPvpCreateRoomResp* other) {
+  void UnsafeArenaSwap(MsgPvpCreateTableResp* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetArena() == other->GetArena());
     InternalSwap(other);
@@ -2953,17 +2953,17 @@ class MsgPvpCreateRoomResp PROTOBUF_FINAL :
 
   // implements Message ----------------------------------------------
 
-  inline MsgPvpCreateRoomResp* New() const final {
-    return CreateMaybeMessage<MsgPvpCreateRoomResp>(nullptr);
+  inline MsgPvpCreateTableResp* New() const final {
+    return CreateMaybeMessage<MsgPvpCreateTableResp>(nullptr);
   }
 
-  MsgPvpCreateRoomResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<MsgPvpCreateRoomResp>(arena);
+  MsgPvpCreateTableResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgPvpCreateTableResp>(arena);
   }
   void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
   void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const MsgPvpCreateRoomResp& from);
-  void MergeFrom(const MsgPvpCreateRoomResp& from);
+  void CopyFrom(const MsgPvpCreateTableResp& from);
+  void MergeFrom(const MsgPvpCreateTableResp& from);
   PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
   bool IsInitialized() const final;
 
@@ -2977,13 +2977,13 @@ class MsgPvpCreateRoomResp PROTOBUF_FINAL :
   inline void SharedCtor();
   inline void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(MsgPvpCreateRoomResp* other);
+  void InternalSwap(MsgPvpCreateTableResp* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "MsgPvpCreateRoomResp";
+    return "MsgPvpCreateTableResp";
   }
   protected:
-  explicit MsgPvpCreateRoomResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  explicit MsgPvpCreateTableResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
   private:
   static void ArenaDtor(void* object);
   inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -3034,7 +3034,7 @@ class MsgPvpCreateRoomResp PROTOBUF_FINAL :
   void _internal_set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:MsgPvpCreateRoomResp)
+  // @@protoc_insertion_point(class_scope:MsgPvpCreateTableResp)
  private:
   class _Internal;
 
@@ -3214,23 +3214,23 @@ class MsgPvpJoinTable PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
-class MsgPvpJoinRoomResp PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgPvpJoinRoomResp) */ {
+class MsgPvpJoinTableResp PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgPvpJoinTableResp) */ {
  public:
-  inline MsgPvpJoinRoomResp() : MsgPvpJoinRoomResp(nullptr) {}
-  virtual ~MsgPvpJoinRoomResp();
+  inline MsgPvpJoinTableResp() : MsgPvpJoinTableResp(nullptr) {}
+  virtual ~MsgPvpJoinTableResp();
 
-  MsgPvpJoinRoomResp(const MsgPvpJoinRoomResp& from);
-  MsgPvpJoinRoomResp(MsgPvpJoinRoomResp&& from) noexcept
-    : MsgPvpJoinRoomResp() {
+  MsgPvpJoinTableResp(const MsgPvpJoinTableResp& from);
+  MsgPvpJoinTableResp(MsgPvpJoinTableResp&& from) noexcept
+    : MsgPvpJoinTableResp() {
     *this = ::std::move(from);
   }
 
-  inline MsgPvpJoinRoomResp& operator=(const MsgPvpJoinRoomResp& from) {
+  inline MsgPvpJoinTableResp& operator=(const MsgPvpJoinTableResp& from) {
     CopyFrom(from);
     return *this;
   }
-  inline MsgPvpJoinRoomResp& operator=(MsgPvpJoinRoomResp&& from) noexcept {
+  inline MsgPvpJoinTableResp& operator=(MsgPvpJoinTableResp&& from) noexcept {
     if (GetArena() == from.GetArena()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -3248,19 +3248,19 @@ class MsgPvpJoinRoomResp PROTOBUF_FINAL :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return GetMetadataStatic().reflection;
   }
-  static const MsgPvpJoinRoomResp& default_instance();
+  static const MsgPvpJoinTableResp& default_instance();
 
-  static inline const MsgPvpJoinRoomResp* internal_default_instance() {
-    return reinterpret_cast<const MsgPvpJoinRoomResp*>(
-               &_MsgPvpJoinRoomResp_default_instance_);
+  static inline const MsgPvpJoinTableResp* internal_default_instance() {
+    return reinterpret_cast<const MsgPvpJoinTableResp*>(
+               &_MsgPvpJoinTableResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     17;
 
-  friend void swap(MsgPvpJoinRoomResp& a, MsgPvpJoinRoomResp& b) {
+  friend void swap(MsgPvpJoinTableResp& a, MsgPvpJoinTableResp& b) {
     a.Swap(&b);
   }
-  inline void Swap(MsgPvpJoinRoomResp* other) {
+  inline void Swap(MsgPvpJoinTableResp* other) {
     if (other == this) return;
     if (GetArena() == other->GetArena()) {
       InternalSwap(other);
@@ -3268,7 +3268,7 @@ class MsgPvpJoinRoomResp PROTOBUF_FINAL :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(MsgPvpJoinRoomResp* other) {
+  void UnsafeArenaSwap(MsgPvpJoinTableResp* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetArena() == other->GetArena());
     InternalSwap(other);
@@ -3276,17 +3276,17 @@ class MsgPvpJoinRoomResp PROTOBUF_FINAL :
 
   // implements Message ----------------------------------------------
 
-  inline MsgPvpJoinRoomResp* New() const final {
-    return CreateMaybeMessage<MsgPvpJoinRoomResp>(nullptr);
+  inline MsgPvpJoinTableResp* New() const final {
+    return CreateMaybeMessage<MsgPvpJoinTableResp>(nullptr);
   }
 
-  MsgPvpJoinRoomResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<MsgPvpJoinRoomResp>(arena);
+  MsgPvpJoinTableResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgPvpJoinTableResp>(arena);
   }
   void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
   void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const MsgPvpJoinRoomResp& from);
-  void MergeFrom(const MsgPvpJoinRoomResp& from);
+  void CopyFrom(const MsgPvpJoinTableResp& from);
+  void MergeFrom(const MsgPvpJoinTableResp& from);
   PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
   bool IsInitialized() const final;
 
@@ -3300,13 +3300,13 @@ class MsgPvpJoinRoomResp PROTOBUF_FINAL :
   inline void SharedCtor();
   inline void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(MsgPvpJoinRoomResp* other);
+  void InternalSwap(MsgPvpJoinTableResp* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "MsgPvpJoinRoomResp";
+    return "MsgPvpJoinTableResp";
   }
   protected:
-  explicit MsgPvpJoinRoomResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  explicit MsgPvpJoinTableResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
   private:
   static void ArenaDtor(void* object);
   inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -3337,7 +3337,7 @@ class MsgPvpJoinRoomResp PROTOBUF_FINAL :
   void _internal_set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:MsgPvpJoinRoomResp)
+  // @@protoc_insertion_point(class_scope:MsgPvpJoinTableResp)
  private:
   class _Internal;
 
@@ -5459,107 +5459,107 @@ MsgPvpCreateTable::mutable_para_lsit() {
 
 // MsgPvpTableList
 
-// repeated .MsgPvpTableInfo room_list = 1;
-inline int MsgPvpTableList::_internal_room_list_size() const {
-  return room_list_.size();
+// repeated .MsgPvpTableInfo table_list = 1;
+inline int MsgPvpTableList::_internal_table_list_size() const {
+  return table_list_.size();
 }
-inline int MsgPvpTableList::room_list_size() const {
-  return _internal_room_list_size();
+inline int MsgPvpTableList::table_list_size() const {
+  return _internal_table_list_size();
 }
-inline void MsgPvpTableList::clear_room_list() {
-  room_list_.Clear();
+inline void MsgPvpTableList::clear_table_list() {
+  table_list_.Clear();
 }
-inline ::MsgPvpTableInfo* MsgPvpTableList::mutable_room_list(int index) {
-  // @@protoc_insertion_point(field_mutable:MsgPvpTableList.room_list)
-  return room_list_.Mutable(index);
+inline ::MsgPvpTableInfo* MsgPvpTableList::mutable_table_list(int index) {
+  // @@protoc_insertion_point(field_mutable:MsgPvpTableList.table_list)
+  return table_list_.Mutable(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgPvpTableInfo >*
-MsgPvpTableList::mutable_room_list() {
-  // @@protoc_insertion_point(field_mutable_list:MsgPvpTableList.room_list)
-  return &room_list_;
+MsgPvpTableList::mutable_table_list() {
+  // @@protoc_insertion_point(field_mutable_list:MsgPvpTableList.table_list)
+  return &table_list_;
 }
-inline const ::MsgPvpTableInfo& MsgPvpTableList::_internal_room_list(int index) const {
-  return room_list_.Get(index);
+inline const ::MsgPvpTableInfo& MsgPvpTableList::_internal_table_list(int index) const {
+  return table_list_.Get(index);
 }
-inline const ::MsgPvpTableInfo& MsgPvpTableList::room_list(int index) const {
-  // @@protoc_insertion_point(field_get:MsgPvpTableList.room_list)
-  return _internal_room_list(index);
+inline const ::MsgPvpTableInfo& MsgPvpTableList::table_list(int index) const {
+  // @@protoc_insertion_point(field_get:MsgPvpTableList.table_list)
+  return _internal_table_list(index);
 }
-inline ::MsgPvpTableInfo* MsgPvpTableList::_internal_add_room_list() {
-  return room_list_.Add();
+inline ::MsgPvpTableInfo* MsgPvpTableList::_internal_add_table_list() {
+  return table_list_.Add();
 }
-inline ::MsgPvpTableInfo* MsgPvpTableList::add_room_list() {
-  // @@protoc_insertion_point(field_add:MsgPvpTableList.room_list)
-  return _internal_add_room_list();
+inline ::MsgPvpTableInfo* MsgPvpTableList::add_table_list() {
+  // @@protoc_insertion_point(field_add:MsgPvpTableList.table_list)
+  return _internal_add_table_list();
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgPvpTableInfo >&
-MsgPvpTableList::room_list() const {
-  // @@protoc_insertion_point(field_list:MsgPvpTableList.room_list)
-  return room_list_;
+MsgPvpTableList::table_list() const {
+  // @@protoc_insertion_point(field_list:MsgPvpTableList.table_list)
+  return table_list_;
 }
 
 // -------------------------------------------------------------------
 
-// MsgPvpCreateRoomResp
+// MsgPvpCreateTableResp
 
 // int32 ret_code = 1;
-inline void MsgPvpCreateRoomResp::clear_ret_code() {
+inline void MsgPvpCreateTableResp::clear_ret_code() {
   ret_code_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpCreateRoomResp::_internal_ret_code() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpCreateTableResp::_internal_ret_code() const {
   return ret_code_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpCreateRoomResp::ret_code() const {
-  // @@protoc_insertion_point(field_get:MsgPvpCreateRoomResp.ret_code)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpCreateTableResp::ret_code() const {
+  // @@protoc_insertion_point(field_get:MsgPvpCreateTableResp.ret_code)
   return _internal_ret_code();
 }
-inline void MsgPvpCreateRoomResp::_internal_set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgPvpCreateTableResp::_internal_set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   ret_code_ = value;
 }
-inline void MsgPvpCreateRoomResp::set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgPvpCreateTableResp::set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_ret_code(value);
-  // @@protoc_insertion_point(field_set:MsgPvpCreateRoomResp.ret_code)
+  // @@protoc_insertion_point(field_set:MsgPvpCreateTableResp.ret_code)
 }
 
 // int32 table_id = 2;
-inline void MsgPvpCreateRoomResp::clear_table_id() {
+inline void MsgPvpCreateTableResp::clear_table_id() {
   table_id_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpCreateRoomResp::_internal_table_id() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpCreateTableResp::_internal_table_id() const {
   return table_id_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpCreateRoomResp::table_id() const {
-  // @@protoc_insertion_point(field_get:MsgPvpCreateRoomResp.table_id)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpCreateTableResp::table_id() const {
+  // @@protoc_insertion_point(field_get:MsgPvpCreateTableResp.table_id)
   return _internal_table_id();
 }
-inline void MsgPvpCreateRoomResp::_internal_set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgPvpCreateTableResp::_internal_set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   table_id_ = value;
 }
-inline void MsgPvpCreateRoomResp::set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgPvpCreateTableResp::set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_table_id(value);
-  // @@protoc_insertion_point(field_set:MsgPvpCreateRoomResp.table_id)
+  // @@protoc_insertion_point(field_set:MsgPvpCreateTableResp.table_id)
 }
 
 // int32 table_no = 3;
-inline void MsgPvpCreateRoomResp::clear_table_no() {
+inline void MsgPvpCreateTableResp::clear_table_no() {
   table_no_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpCreateRoomResp::_internal_table_no() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpCreateTableResp::_internal_table_no() const {
   return table_no_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpCreateRoomResp::table_no() const {
-  // @@protoc_insertion_point(field_get:MsgPvpCreateRoomResp.table_no)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpCreateTableResp::table_no() const {
+  // @@protoc_insertion_point(field_get:MsgPvpCreateTableResp.table_no)
   return _internal_table_no();
 }
-inline void MsgPvpCreateRoomResp::_internal_set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgPvpCreateTableResp::_internal_set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   table_no_ = value;
 }
-inline void MsgPvpCreateRoomResp::set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgPvpCreateTableResp::set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_table_no(value);
-  // @@protoc_insertion_point(field_set:MsgPvpCreateRoomResp.table_no)
+  // @@protoc_insertion_point(field_set:MsgPvpCreateTableResp.table_no)
 }
 
 // -------------------------------------------------------------------
@@ -5669,26 +5669,26 @@ inline void MsgPvpJoinTable::set_allocated_password(std::string* password) {
 
 // -------------------------------------------------------------------
 
-// MsgPvpJoinRoomResp
+// MsgPvpJoinTableResp
 
 // int32 ret_code = 1;
-inline void MsgPvpJoinRoomResp::clear_ret_code() {
+inline void MsgPvpJoinTableResp::clear_ret_code() {
   ret_code_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpJoinRoomResp::_internal_ret_code() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpJoinTableResp::_internal_ret_code() const {
   return ret_code_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpJoinRoomResp::ret_code() const {
-  // @@protoc_insertion_point(field_get:MsgPvpJoinRoomResp.ret_code)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpJoinTableResp::ret_code() const {
+  // @@protoc_insertion_point(field_get:MsgPvpJoinTableResp.ret_code)
   return _internal_ret_code();
 }
-inline void MsgPvpJoinRoomResp::_internal_set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgPvpJoinTableResp::_internal_set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   ret_code_ = value;
 }
-inline void MsgPvpJoinRoomResp::set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgPvpJoinTableResp::set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_ret_code(value);
-  // @@protoc_insertion_point(field_set:MsgPvpJoinRoomResp.ret_code)
+  // @@protoc_insertion_point(field_set:MsgPvpJoinTableResp.ret_code)
 }
 
 // -------------------------------------------------------------------

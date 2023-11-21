@@ -703,7 +703,7 @@ public enum EMsgIDGame {
   /// </summary>
   [pbr::OriginalName("MsgIDGame_CreateRoom")] MsgIdgameCreateRoom = 1013,
   /// <summary>
-  ///加入房间(MsgPvpJoinRoom)
+  ///加入房间(MsgPvpJoinTable)
   /// </summary>
   [pbr::OriginalName("MsgIDGame_JoinRoom")] MsgIdgameJoinRoom = 1014,
   /// <summary>
