@@ -92,16 +92,16 @@ message MsgJackpotInfo
 
 //////////////////////////////////////////////////PVP//////////////////////////////////////////////
 //pvp桌子信息
-message MsgPvpRoomInfo
+message MsgPvpTableInfo
 {
 	int32	table_id		= 1;	//桌子id
-	string	table_name		= 2;	//桌子名称						//创建桌子传
-	int32	chair_num		= 3;	//人数限制						//创建桌子传
+	string	table_name		= 2;	//桌子名称						
+	int32	chair_num		= 3;	//人数限制						
 	int32	enter_num		= 4;	//已经进入数量
-	//int64	join_limit_min	= 5;	//进入房间金币下限				 //创建桌子传
-	//int64	join_limit_max	= 6;	//进入房间金币上限				 //创建桌子传
-	bool	is_private		= 7;	//私人桌						//创建桌子传
-	string 	password		= 8;	//密码							//创建桌子传
+	//int64	join_limit_min	= 5;	//进入房间金币下限				
+	//int64	join_limit_max	= 6;	//进入房间金币上限				
+	bool	is_private		= 7;	//私人桌						
+	string 	password		= 8;	//密码							
 	int32 	owner_id		= 9;	//房主id
 	int32	table_no		= 10;	//桌子编号
 
@@ -144,15 +144,9 @@ message MsgPvpCreateTable
 }
 
 //pvp桌子列表
-message MsgPvpRoomList
+message MsgPvpTableList
 {
-	repeated MsgPvpRoomInfo room_list = 1;	
-}
-
-//pvp房间列表
-message MsgPvpCreateRoom
-{
-	MsgPvpRoomInfo cfg		= 1;
+	repeated MsgPvpTableInfo room_list = 1;	
 }
 
 //pvp房间列表
