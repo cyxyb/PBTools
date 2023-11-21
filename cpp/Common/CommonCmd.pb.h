@@ -260,13 +260,13 @@ enum EMsgIDGame : int {
   MsgIDGame_Pvp_FastJoinTable = 1064,
   MsgIDGame_Pvp_FastJoinTableResp = 1065,
   MsgIDGame_Pvp_StandUp = 1066,
-  MsgIDGame_Pvp_StandResp = 1067,
+  MsgIDGame_Pvp_StandUpResp = 1067,
   EMsgIDGame_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDGame_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDGame_IsValid(int value);
 constexpr EMsgIDGame EMsgIDGame_MIN = MsgIDGame_Null;
-constexpr EMsgIDGame EMsgIDGame_MAX = MsgIDGame_Pvp_StandResp;
+constexpr EMsgIDGame EMsgIDGame_MAX = MsgIDGame_Pvp_StandUpResp;
 constexpr int EMsgIDGame_ARRAYSIZE = EMsgIDGame_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDGame_descriptor();
