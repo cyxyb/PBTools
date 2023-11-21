@@ -174,7 +174,7 @@ enum EMsgIDGame
 	MsgIDGame_Pvp_FastJoinTable			= 1064;		//快速加入(MsgCommonN32)
 	MsgIDGame_Pvp_FastJoinTableResp		= 1065;		//快速加入(MsgCommonN32)
 	MsgIDGame_Pvp_StandUp				= 1066;		//玩家起立(MsgCommonN32)				退游戏发送
-	MsgIDGame_Pvp_StandUpResp			= 1067;		//玩家起立通知(MsgCommonN32)    		删除桌子的人数
+	MsgIDGame_Pvp_StandUpResp			= 1067;		//玩家起立通知(MsgPvpStandUpTableResp)	删除桌子的人数
 	MsgIDGame_Pvp_TableChangeOwunrResp	= 1068;		//通知房主变化(MsgPvpTableChangeOwnerResp)
 
 	////////////////////////////////////////////////////////////////////////////////////////
