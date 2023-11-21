@@ -102,6 +102,10 @@ class MsgPvpKickUserRespDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgPvpKickUserResp> _instance;
 } _MsgPvpKickUserResp_default_instance_;
+class MsgPvpTableChangeOwnerRespDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgPvpTableChangeOwnerResp> _instance;
+} _MsgPvpTableChangeOwnerResp_default_instance_;
 static void InitDefaultsscc_info_MsgDayData_Game_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -286,6 +290,19 @@ static void InitDefaultsscc_info_MsgPvpStandUpTableResp_Game_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgPvpStandUpTableResp_Game_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgPvpStandUpTableResp_Game_2eproto}, {}};
 
+static void InitDefaultsscc_info_MsgPvpTableChangeOwnerResp_Game_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_MsgPvpTableChangeOwnerResp_default_instance_;
+    new (ptr) ::MsgPvpTableChangeOwnerResp();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgPvpTableChangeOwnerResp_Game_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgPvpTableChangeOwnerResp_Game_2eproto}, {}};
+
 static void InitDefaultsscc_info_MsgPvpTableInfo_Game_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -380,7 +397,7 @@ static void InitDefaultsscc_info_MsgTotalRoundData_Game_2eproto() {
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MsgTotalRoundData_Game_2eproto}, {
       &scc_info_MsgRoundData_Game_2eproto.base,}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Game_2eproto[21];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Game_2eproto[22];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_Game_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_Game_2eproto = nullptr;
 
@@ -577,6 +594,14 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Game_2eproto::offsets[] PROTOB
   PROTOBUF_FIELD_OFFSET(::MsgPvpKickUserResp, owner_nick_),
   PROTOBUF_FIELD_OFFSET(::MsgPvpKickUserResp, kick_id_),
   PROTOBUF_FIELD_OFFSET(::MsgPvpKickUserResp, kick_nick_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::MsgPvpTableChangeOwnerResp, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::MsgPvpTableChangeOwnerResp, table_id_),
+  PROTOBUF_FIELD_OFFSET(::MsgPvpTableChangeOwnerResp, owner_id_),
+  PROTOBUF_FIELD_OFFSET(::MsgPvpTableChangeOwnerResp, is_activate_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::MsgGamePlayerLogin)},
@@ -600,6 +625,7 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 166, -1, sizeof(::MsgPvpStandUpTableResp)},
   { 174, -1, sizeof(::MsgPvpDestroyTableResp)},
   { 182, -1, sizeof(::MsgPvpKickUserResp)},
+  { 192, -1, sizeof(::MsgPvpTableChangeOwnerResp)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -624,6 +650,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgPvpStandUpTableResp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgPvpDestroyTableResp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgPvpKickUserResp_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgPvpTableChangeOwnerResp_default_instance_),
 };
 
 const char descriptor_table_protodef_Game_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -680,11 +707,13 @@ const char descriptor_table_protodef_Game_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "\001(\005\022\020\n\010table_no\030\003 \001(\005\"p\n\022MsgPvpKickUserR"
   "esp\022\020\n\010ret_code\030\001 \001(\005\022\020\n\010owner_id\030\002 \001(\005\022"
   "\022\n\nowner_nick\030\003 \001(\t\022\017\n\007kick_id\030\004 \001(\005\022\021\n\t"
-  "kick_nick\030\005 \001(\tb\006proto3"
+  "kick_nick\030\005 \001(\t\"U\n\032MsgPvpTableChangeOwne"
+  "rResp\022\020\n\010table_id\030\001 \001(\005\022\020\n\010owner_id\030\002 \001("
+  "\005\022\023\n\013is_activate\030\003 \001(\010b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Game_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Game_2eproto_sccs[21] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Game_2eproto_sccs[22] = {
   &scc_info_MsgDayData_Game_2eproto.base,
   &scc_info_MsgGamePlayerInfo_Game_2eproto.base,
   &scc_info_MsgGamePlayerLogin_Game_2eproto.base,
@@ -699,6 +728,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Gam
   &scc_info_MsgPvpRoomCfgItem_Game_2eproto.base,
   &scc_info_MsgPvpRoomConfig_Game_2eproto.base,
   &scc_info_MsgPvpStandUpTableResp_Game_2eproto.base,
+  &scc_info_MsgPvpTableChangeOwnerResp_Game_2eproto.base,
   &scc_info_MsgPvpTableInfo_Game_2eproto.base,
   &scc_info_MsgPvpTableList_Game_2eproto.base,
   &scc_info_MsgQueryRecord_Game_2eproto.base,
@@ -709,10 +739,10 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Gam
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Game_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Game_2eproto = {
-  false, false, descriptor_table_protodef_Game_2eproto, "Game.proto", 2143,
-  &descriptor_table_Game_2eproto_once, descriptor_table_Game_2eproto_sccs, descriptor_table_Game_2eproto_deps, 21, 0,
+  false, false, descriptor_table_protodef_Game_2eproto, "Game.proto", 2230,
+  &descriptor_table_Game_2eproto_once, descriptor_table_Game_2eproto_sccs, descriptor_table_Game_2eproto_deps, 22, 0,
   schemas, file_default_instances, TableStruct_Game_2eproto::offsets,
-  file_level_metadata_Game_2eproto, 21, file_level_enum_descriptors_Game_2eproto, file_level_service_descriptors_Game_2eproto,
+  file_level_metadata_Game_2eproto, 22, file_level_enum_descriptors_Game_2eproto, file_level_service_descriptors_Game_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -6783,6 +6813,256 @@ void MsgPvpKickUserResp::InternalSwap(MsgPvpKickUserResp* other) {
 }
 
 
+// ===================================================================
+
+class MsgPvpTableChangeOwnerResp::_Internal {
+ public:
+};
+
+MsgPvpTableChangeOwnerResp::MsgPvpTableChangeOwnerResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:MsgPvpTableChangeOwnerResp)
+}
+MsgPvpTableChangeOwnerResp::MsgPvpTableChangeOwnerResp(const MsgPvpTableChangeOwnerResp& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&table_id_, &from.table_id_,
+    static_cast<size_t>(reinterpret_cast<char*>(&is_activate_) -
+    reinterpret_cast<char*>(&table_id_)) + sizeof(is_activate_));
+  // @@protoc_insertion_point(copy_constructor:MsgPvpTableChangeOwnerResp)
+}
+
+void MsgPvpTableChangeOwnerResp::SharedCtor() {
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&table_id_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&is_activate_) -
+      reinterpret_cast<char*>(&table_id_)) + sizeof(is_activate_));
+}
+
+MsgPvpTableChangeOwnerResp::~MsgPvpTableChangeOwnerResp() {
+  // @@protoc_insertion_point(destructor:MsgPvpTableChangeOwnerResp)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void MsgPvpTableChangeOwnerResp::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void MsgPvpTableChangeOwnerResp::ArenaDtor(void* object) {
+  MsgPvpTableChangeOwnerResp* _this = reinterpret_cast< MsgPvpTableChangeOwnerResp* >(object);
+  (void)_this;
+}
+void MsgPvpTableChangeOwnerResp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void MsgPvpTableChangeOwnerResp::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const MsgPvpTableChangeOwnerResp& MsgPvpTableChangeOwnerResp::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgPvpTableChangeOwnerResp_Game_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void MsgPvpTableChangeOwnerResp::Clear() {
+// @@protoc_insertion_point(message_clear_start:MsgPvpTableChangeOwnerResp)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&table_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&is_activate_) -
+      reinterpret_cast<char*>(&table_id_)) + sizeof(is_activate_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* MsgPvpTableChangeOwnerResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 table_id = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          table_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 owner_id = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          owner_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // bool is_activate = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          is_activate_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* MsgPvpTableChangeOwnerResp::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:MsgPvpTableChangeOwnerResp)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 table_id = 1;
+  if (this->table_id() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_table_id(), target);
+  }
+
+  // int32 owner_id = 2;
+  if (this->owner_id() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_owner_id(), target);
+  }
+
+  // bool is_activate = 3;
+  if (this->is_activate() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_is_activate(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:MsgPvpTableChangeOwnerResp)
+  return target;
+}
+
+size_t MsgPvpTableChangeOwnerResp::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:MsgPvpTableChangeOwnerResp)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // int32 table_id = 1;
+  if (this->table_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_table_id());
+  }
+
+  // int32 owner_id = 2;
+  if (this->owner_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_owner_id());
+  }
+
+  // bool is_activate = 3;
+  if (this->is_activate() != 0) {
+    total_size += 1 + 1;
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void MsgPvpTableChangeOwnerResp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:MsgPvpTableChangeOwnerResp)
+  GOOGLE_DCHECK_NE(&from, this);
+  const MsgPvpTableChangeOwnerResp* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgPvpTableChangeOwnerResp>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgPvpTableChangeOwnerResp)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgPvpTableChangeOwnerResp)
+    MergeFrom(*source);
+  }
+}
+
+void MsgPvpTableChangeOwnerResp::MergeFrom(const MsgPvpTableChangeOwnerResp& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:MsgPvpTableChangeOwnerResp)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.table_id() != 0) {
+    _internal_set_table_id(from._internal_table_id());
+  }
+  if (from.owner_id() != 0) {
+    _internal_set_owner_id(from._internal_owner_id());
+  }
+  if (from.is_activate() != 0) {
+    _internal_set_is_activate(from._internal_is_activate());
+  }
+}
+
+void MsgPvpTableChangeOwnerResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:MsgPvpTableChangeOwnerResp)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void MsgPvpTableChangeOwnerResp::CopyFrom(const MsgPvpTableChangeOwnerResp& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:MsgPvpTableChangeOwnerResp)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool MsgPvpTableChangeOwnerResp::IsInitialized() const {
+  return true;
+}
+
+void MsgPvpTableChangeOwnerResp::InternalSwap(MsgPvpTableChangeOwnerResp* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(MsgPvpTableChangeOwnerResp, is_activate_)
+      + sizeof(MsgPvpTableChangeOwnerResp::is_activate_)
+      - PROTOBUF_FIELD_OFFSET(MsgPvpTableChangeOwnerResp, table_id_)>(
+          reinterpret_cast<char*>(&table_id_),
+          reinterpret_cast<char*>(&other->table_id_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata MsgPvpTableChangeOwnerResp::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::MsgGamePlayerLogin* Arena::CreateMaybeMessage< ::MsgGamePlayerLogin >(Arena* arena) {
@@ -6847,6 +7127,9 @@ template<> PROTOBUF_NOINLINE ::MsgPvpDestroyTableResp* Arena::CreateMaybeMessage
 }
 template<> PROTOBUF_NOINLINE ::MsgPvpKickUserResp* Arena::CreateMaybeMessage< ::MsgPvpKickUserResp >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MsgPvpKickUserResp >(arena);
+}
+template<> PROTOBUF_NOINLINE ::MsgPvpTableChangeOwnerResp* Arena::CreateMaybeMessage< ::MsgPvpTableChangeOwnerResp >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::MsgPvpTableChangeOwnerResp >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

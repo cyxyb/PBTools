@@ -112,7 +112,7 @@ public static partial class CommonCmdReflection {
           "EiIKHk1zZ0lETG9naW5fUGVyc29uYWxEZXRhaWxzUmVzcBBzEiYKIk1zZ0lE",
           "TG9naW5fTm90aWZ5U2VydmVyT2ZmbGluZVJlc3AQdBIlCiFNc2dJRFNoYXJl",
           "X05vdGlmeVVwZGF0ZVZpcEV4cFJlc3AQdRIiCh5Nc2dJRFNoYXJlX05vdGlm",
-          "eUFkZE5ld1N1YlJlc3AQdir2CAoKRU1zZ0lER2FtZRISCg5Nc2dJREdhbWVf",
+          "eUFkZE5ld1N1YlJlc3AQdiqfCQoKRU1zZ0lER2FtZRISCg5Nc2dJREdhbWVf",
           "TnVsbBAAEhQKD01zZ0lER2FtZV9Mb2dpbhDpBxIYChNNc2dJREdhbWVfTG9n",
           "aW5SZXNwEOoHEh4KGU1zZ0lER2FtZV9TcXVlZXplU2VhdFJlc3AQ6wcSFQoQ",
           "TXNnSURHYW1lX0xvZ291dBDsBxIaChVNc2dJREdhbWVfQXV0b1NpdERvd24Q",
@@ -137,16 +137,17 @@ public static partial class CommonCmdReflection {
           "pggSIwoeTXNnSURHYW1lX1B2cF9EZXN0cm95VGFibGVSZXNwEKcIEiAKG01z",
           "Z0lER2FtZV9QdnBfRmFzdEpvaW5UYWJsZRCoCBIkCh9Nc2dJREdhbWVfUHZw",
           "X0Zhc3RKb2luVGFibGVSZXNwEKkIEhoKFU1zZ0lER2FtZV9QdnBfU3RhbmRV",
-          "cBCqCBIeChlNc2dJREdhbWVfUHZwX1N0YW5kVXBSZXNwEKsIKv0CCgpFTXNn",
-          "SURDaGF0EhIKDk1zZ0lEQ2hhdF9OdWxsEAASFAoPTXNnSURDaGF0X0xvZ2lu",
-          "ENEPEhgKE01zZ0lEQ2hhdF9Mb2dpblJlc3AQ0g8SGQoUTXNnSURDaGF0X0xv",
-          "Z291dFJlc3AQ0w8SHAoXTXNnSURDaGF0X1NlbmROb3JtYWxNc2cQ1A8SJgoh",
-          "TXNnSURDaGF0X05vdGlmeUNoYXROb3JtYWxNc2dSZXNwENUPEh0KGE1zZ0lE",
-          "Q2hhdF9TZW5kVHJ1bXBldE1zZxDWDxInCiJNc2dJRENoYXRfTm90aWZ5Q2hh",
-          "dFRydW1wZXRNc2dSZXNwENcPEh8KGk1zZ0lEQ2hhdF9TeW5jVXNlckluZm9S",
-          "ZXNwENgPEh8KGk1zZ0lEQ2hhdF9TZXRMaWxpdENoYXRSZXNwENkPEh0KGE1z",
-          "Z0lEQ2hhdF9HZXRDaGF0SGlzdG9yeRDaDxIhChxNc2dJRENoYXRfR2V0Q2hh",
-          "dEhpc3RvcnlSZXNwENsPYgZwcm90bzM="));
+          "cBCqCBIeChlNc2dJREdhbWVfUHZwX1N0YW5kVXBSZXNwEKsIEicKIk1zZ0lE",
+          "R2FtZV9QdnBfVGFibGVDaGFuZ2VPd3VuclJlc3AQrAgq/QIKCkVNc2dJRENo",
+          "YXQSEgoOTXNnSURDaGF0X051bGwQABIUCg9Nc2dJRENoYXRfTG9naW4Q0Q8S",
+          "GAoTTXNnSURDaGF0X0xvZ2luUmVzcBDSDxIZChRNc2dJRENoYXRfTG9nb3V0",
+          "UmVzcBDTDxIcChdNc2dJRENoYXRfU2VuZE5vcm1hbE1zZxDUDxImCiFNc2dJ",
+          "RENoYXRfTm90aWZ5Q2hhdE5vcm1hbE1zZ1Jlc3AQ1Q8SHQoYTXNnSURDaGF0",
+          "X1NlbmRUcnVtcGV0TXNnENYPEicKIk1zZ0lEQ2hhdF9Ob3RpZnlDaGF0VHJ1",
+          "bXBldE1zZ1Jlc3AQ1w8SHwoaTXNnSURDaGF0X1N5bmNVc2VySW5mb1Jlc3AQ",
+          "2A8SHwoaTXNnSURDaGF0X1NldExpbGl0Q2hhdFJlc3AQ2Q8SHQoYTXNnSURD",
+          "aGF0X0dldENoYXRIaXN0b3J5ENoPEiEKHE1zZ0lEQ2hhdF9HZXRDaGF0SGlz",
+          "dG9yeVJlc3AQ2w9iBnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::EMsgIDMain), typeof(global::EMsgIDLogin), typeof(global::EMsgIDGame), typeof(global::EMsgIDChat), }, null, null));
@@ -734,11 +735,11 @@ public enum EMsgIDGame {
   /// </summary>
   [pbr::OriginalName("MsgIDGame_Pvp_SendTableListResp")] MsgIdgamePvpSendTableListResp = 1053,
   /// <summary>
-  ///创建房间(MsgPvpCreateTable)
+  ///创建房间(MsgPvpCreateTable)	
   /// </summary>
   [pbr::OriginalName("MsgIDGame_Pvp_CreateTable")] MsgIdgamePvpCreateTable = 1054,
   /// <summary>
-  ///创建房间(MsgPvpTableInfo)
+  ///创建房间(MsgPvpTableInfo)				添加到桌子列表中
   /// </summary>
   [pbr::OriginalName("MsgIDGame_Pvp_CreateTableResp")] MsgIdgamePvpCreateTableResp = 1055,
   /// <summary>
@@ -746,7 +747,7 @@ public enum EMsgIDGame {
   /// </summary>
   [pbr::OriginalName("MsgIDGame_Pvp_JoinTable")] MsgIdgamePvpJoinTable = 1056,
   /// <summary>
-  ///加入房间(MsgPvpJoinTableResp)
+  ///加入房间(MsgPvpJoinTableResp)   		添加桌子的人数
   /// </summary>
   [pbr::OriginalName("MsgIDGame_Pvp_JoinTableResp")] MsgIdgamePvpJoinTableResp = 1057,
   /// <summary>
@@ -770,7 +771,7 @@ public enum EMsgIDGame {
   /// </summary>
   [pbr::OriginalName("MsgIDGame_Pvp_DestroyTable")] MsgIdgamePvpDestroyTable = 1062,
   /// <summary>
-  ///房主踢人(MsgPvpDestroyTableResp)
+  ///房主解散房间(MsgPvpDestroyTableResp)   删除桌子列表
   /// </summary>
   [pbr::OriginalName("MsgIDGame_Pvp_DestroyTableResp")] MsgIdgamePvpDestroyTableResp = 1063,
   /// <summary>
@@ -782,13 +783,17 @@ public enum EMsgIDGame {
   /// </summary>
   [pbr::OriginalName("MsgIDGame_Pvp_FastJoinTableResp")] MsgIdgamePvpFastJoinTableResp = 1065,
   /// <summary>
-  ///玩家起立(MsgCommonN32)
+  ///玩家起立(MsgCommonN32)				退游戏发送
   /// </summary>
   [pbr::OriginalName("MsgIDGame_Pvp_StandUp")] MsgIdgamePvpStandUp = 1066,
   /// <summary>
-  ///玩家起立通知(MsgCommonN32)
+  ///玩家起立通知(MsgCommonN32)    		删除桌子的人数
   /// </summary>
   [pbr::OriginalName("MsgIDGame_Pvp_StandUpResp")] MsgIdgamePvpStandUpResp = 1067,
+  /// <summary>
+  ///通知房主变化(MsgPvpTableChangeOwnerResp)
+  /// </summary>
+  [pbr::OriginalName("MsgIDGame_Pvp_TableChangeOwunrResp")] MsgIdgamePvpTableChangeOwunrResp = 1068,
 }
 
 public enum EMsgIDChat {

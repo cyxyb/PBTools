@@ -187,7 +187,7 @@ message MsgPvpDestroyTableResp
 	int32	table_no		= 3;	//桌子编号
 }
 
-//pvp房间列表
+//pvp桌子踢人
 message MsgPvpKickUserResp
 {
 	int32	ret_code		= 1;	//返回码	非零失败
@@ -197,5 +197,12 @@ message MsgPvpKickUserResp
 	string	kick_nick		= 5;	//被踢昵称
 }
 
+//pvp房主变更
+message MsgPvpTableChangeOwnerResp
+{
+	int32	table_id		= 1;	//桌子ID
+	int32	owner_id		= 2;	//房主ID
+	bool	is_activate		= 3;	//是否激活
+}
 
 //////////////////////////////////////////////////PVP//////////////////////////////////////////////
