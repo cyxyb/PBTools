@@ -160,7 +160,7 @@ enum EMsgIDGame
 	////////////////////////////////////////////pvp/////////////////////////////////////////
 	MsgIDGame_Pvp_GetRoomConfigResp		= 1021;		//房间配置(MsgPvpRoomConfig) 
 	//MsgIDGame_Pvp_GetTableList		= 1022;		//获取PVP桌子列表(MsgCommonN32)
-	MsgIDGame_Pvp_SendTableListResp		= 1023;		//发送PVP桌子列表(MsgPvpRoomList)
+	MsgIDGame_Pvp_SendTableListResp		= 1023;		//发送PVP桌子列表(MsgPvpTableList)
 	//MsgIDGame_Pvp_CreateRoomResp		= 1024;		//创建房间(MsgIDGame_SitDownResp)
 	//MsgIDGame_Pvp_JoinRoomResp		= 1025;		//加入房间(MsgIDGame_SitDownResp)
 	MsgIDGame_Pvp_ActivateTable			= 1026;		//房主激活桌子(MsgCommonBool)
@@ -171,6 +171,9 @@ enum EMsgIDGame
 	MsgIDGame_Pvp_DestroyTableResp		= 1031;		//房主踢人(MsgCommonBool)
 	MsgIDGame_Pvp_FastJoinTable			= 1032;		//快速加入(MsgCommonN32)
 	MsgIDGame_Pvp_FastJoinTableResp		= 1033;		//快速加入(MsgCommonN32)
+	MsgIDGame_Pvp_SitDownResp			= 1034;		//玩家坐下通知(MsgCommonN32)
+	MsgIDGame_Pvp_SitUpResp				= 1035;		//玩家起立通知(MsgCommonN32)
+
 
 
 	////////////////////////////////////////////////////////////////////////////////////////
