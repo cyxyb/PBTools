@@ -98,14 +98,14 @@ message MsgPvpRoomInfo
 	string	table_name		= 2;	//桌子名称						//创建桌子传
 	int32	chair_num		= 3;	//人数限制						//创建桌子传
 	int32	enter_num		= 4;	//已经进入数量
-	int64	join_limit_min	= 5;	//进入房间金币下限				 //创建桌子传
-	int64	join_limit_max	= 6;	//进入房间金币上限				 //创建桌子传
+	//int64	join_limit_min	= 5;	//进入房间金币下限				 //创建桌子传
+	//int64	join_limit_max	= 6;	//进入房间金币上限				 //创建桌子传
 	bool	is_private		= 7;	//私人桌						//创建桌子传
 	string 	password		= 8;	//密码							//创建桌子传
 	int32 	owner_id		= 9;	//房主id
 	int32	table_no		= 10;	//桌子编号
 
-	int64	value1			= 11;	//桌子特性
+	int64	value1			= 11;	//桌子特性						//进入房间金币下限				放在para_lsit的第一位
 	int64	value2			= 12;	//桌子特性
 	int64	value3			= 13;	//桌子特性
 	int64	value4			= 14;	//桌子特性
@@ -115,29 +115,32 @@ message MsgPvpRoomInfo
 	int64	value8			= 18;	//桌子特性
 }
 
-//pvp桌子配置
+message MsgPvpRoomCfgItem
+{
+	int32	lag_key				= 1;	//前端查找多语言key
+	repeated int32 value_list	= 2;	//特性区间 数组
+}
+
+//pvp房间配置
 message MsgPvpRoomConfig
 {
-	int32	create_vip_limit= 1;	//创建桌子vip限制
-	int32	chair_limit_min	= 2;	//创建桌子最小人数				//创建桌子根据游戏需要传 玩家选择的值
-	int32	chair_limit_max	= 3;	//创建桌子最大人数
+	int32	create_vip_limit					= 1;	//创建桌子vip限制
+	int32	chair_limit_min						= 2;	//创建桌子最小人数				
+	int32	chair_limit_max						= 3;	//创建桌子最大人数
 
-	int64	value1_min		= 11;	//桌子特性						//创建桌子根据游戏需要传 玩家选择的值
-	int64	value1_max		= 12;	//桌子特性
-	int64	value2_min		= 13;	//桌子特性						//创建桌子根据游戏需要传 玩家选择的值
-	int64	value2_max		= 14;	//桌子特性
-	int64	value3_min		= 15;	//桌子特性						//创建桌子根据游戏需要传 玩家选择的值
-	int64	value3_max		= 16;	//桌子特性
-	int64	value4_min		= 17;	//桌子特性						//创建桌子根据游戏需要传 玩家选择的值
-	int64	value4_max		= 18;	//桌子特性
-	int64	value5_min		= 19;	//桌子特性						//创建桌子根据游戏需要传 玩家选择的值
-	int64	value5_max		= 20;	//桌子特性
-	int64	value6_min		= 21;	//桌子特性						//创建桌子根据游戏需要传 玩家选择的值
-	int64	value6_max		= 22;	//桌子特性
-	int64	value7_min		= 23;	//桌子特性						//创建桌子根据游戏需要传 玩家选择的值
-	int64	value7_max		= 24;	//桌子特性
-	int64	value8_min		= 25;	//桌子特性						//创建桌子根据游戏需要传 玩家选择的值
-	int64	value8_max		= 26;	//桌子特性	
+	repeated MsgPvpRoomCfgItem	para_lsit		= 11;	//桌子特性列表  		//进入房间金币下限				放在para_lsit的第一位
+}
+
+//pvp创建桌子配置
+message MsgPvpCreateTable
+{
+	bool	is_private							= 1;	//是否私人桌
+	string	table_name							= 2;	//桌子名称						
+	int32	chair_num							= 3;	//人数限制						
+	//int64	join_limit_min						= 4;	//进入房间金币下限				放在para_lsit的第一位
+	//int64	join_limit_max						= 5;	//进入房间金币上限				
+	string 	password							= 6;	//密码							
+	repeated int32			para_lsit			= 7;	//选定桌子特性列表
 }
 
 //pvp桌子列表

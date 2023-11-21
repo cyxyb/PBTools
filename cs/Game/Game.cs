@@ -51,25 +51,23 @@ public static partial class GameReflection {
           "IAEoBRIQCgh0YWJsZV9ubxgKIAEoBRIOCgZ2YWx1ZTEYCyABKAMSDgoGdmFs",
           "dWUyGAwgASgDEg4KBnZhbHVlMxgNIAEoAxIOCgZ2YWx1ZTQYDiABKAMSDgoG",
           "dmFsdWU1GA8gASgDEg4KBnZhbHVlNhgQIAEoAxIOCgZ2YWx1ZTcYESABKAMS",
-          "DgoGdmFsdWU4GBIgASgDIp4DChBNc2dQdnBSb29tQ29uZmlnEhgKEGNyZWF0",
-          "ZV92aXBfbGltaXQYASABKAUSFwoPY2hhaXJfbGltaXRfbWluGAIgASgFEhcK",
-          "D2NoYWlyX2xpbWl0X21heBgDIAEoBRISCgp2YWx1ZTFfbWluGAsgASgDEhIK",
-          "CnZhbHVlMV9tYXgYDCABKAMSEgoKdmFsdWUyX21pbhgNIAEoAxISCgp2YWx1",
-          "ZTJfbWF4GA4gASgDEhIKCnZhbHVlM19taW4YDyABKAMSEgoKdmFsdWUzX21h",
-          "eBgQIAEoAxISCgp2YWx1ZTRfbWluGBEgASgDEhIKCnZhbHVlNF9tYXgYEiAB",
-          "KAMSEgoKdmFsdWU1X21pbhgTIAEoAxISCgp2YWx1ZTVfbWF4GBQgASgDEhIK",
-          "CnZhbHVlNl9taW4YFSABKAMSEgoKdmFsdWU2X21heBgWIAEoAxISCgp2YWx1",
-          "ZTdfbWluGBcgASgDEhIKCnZhbHVlN19tYXgYGCABKAMSEgoKdmFsdWU4X21p",
-          "bhgZIAEoAxISCgp2YWx1ZThfbWF4GBogASgDIjQKDk1zZ1B2cFJvb21MaXN0",
-          "EiIKCXJvb21fbGlzdBgBIAMoCzIPLk1zZ1B2cFJvb21JbmZvIjAKEE1zZ1B2",
-          "cENyZWF0ZVJvb20SHAoDY2ZnGAEgASgLMg8uTXNnUHZwUm9vbUluZm8iTAoU",
-          "TXNnUHZwQ3JlYXRlUm9vbVJlc3ASEAoIcmV0X2NvZGUYASABKAUSEAoIdGFi",
-          "bGVfaWQYAiABKAUSEAoIdGFibGVfbm8YAyABKAUiRgoOTXNnUHZwSm9pblJv",
-          "b20SEAoIdGFibGVfaWQYASABKAUSEAoIdGFibGVfbm8YAiABKAUSEAoIcGFz",
-          "c3dvcmQYAyABKAkiJgoSTXNnUHZwSm9pblJvb21SZXNwEhAKCHJldF9jb2Rl",
-          "GAEgASgFIl4KEk1zZ1B2cEtpY2tVc2VyUmVzcBIQCghvd25lcl9pZBgBIAEo",
-          "BRISCgpvd25lcl9uaWNrGAIgASgJEg8KB2tpY2tfaWQYAyABKAUSEQoJa2lj",
-          "a19uaWNrGAQgASgJYgZwcm90bzM="));
+          "DgoGdmFsdWU4GBIgASgDIjgKEU1zZ1B2cFJvb21DZmdJdGVtEg8KB2xhZ19r",
+          "ZXkYASABKAUSEgoKdmFsdWVfbGlzdBgCIAMoBSKFAQoQTXNnUHZwUm9vbUNv",
+          "bmZpZxIYChBjcmVhdGVfdmlwX2xpbWl0GAEgASgFEhcKD2NoYWlyX2xpbWl0",
+          "X21pbhgCIAEoBRIXCg9jaGFpcl9saW1pdF9tYXgYAyABKAUSJQoJcGFyYV9s",
+          "c2l0GAsgAygLMhIuTXNnUHZwUm9vbUNmZ0l0ZW0icwoRTXNnUHZwQ3JlYXRl",
+          "VGFibGUSEgoKaXNfcHJpdmF0ZRgBIAEoCBISCgp0YWJsZV9uYW1lGAIgASgJ",
+          "EhEKCWNoYWlyX251bRgDIAEoBRIQCghwYXNzd29yZBgGIAEoCRIRCglwYXJh",
+          "X2xzaXQYByADKAUiNAoOTXNnUHZwUm9vbUxpc3QSIgoJcm9vbV9saXN0GAEg",
+          "AygLMg8uTXNnUHZwUm9vbUluZm8iMAoQTXNnUHZwQ3JlYXRlUm9vbRIcCgNj",
+          "ZmcYASABKAsyDy5Nc2dQdnBSb29tSW5mbyJMChRNc2dQdnBDcmVhdGVSb29t",
+          "UmVzcBIQCghyZXRfY29kZRgBIAEoBRIQCgh0YWJsZV9pZBgCIAEoBRIQCgh0",
+          "YWJsZV9ubxgDIAEoBSJGCg5Nc2dQdnBKb2luUm9vbRIQCgh0YWJsZV9pZBgB",
+          "IAEoBRIQCgh0YWJsZV9ubxgCIAEoBRIQCghwYXNzd29yZBgDIAEoCSImChJN",
+          "c2dQdnBKb2luUm9vbVJlc3ASEAoIcmV0X2NvZGUYASABKAUiXgoSTXNnUHZw",
+          "S2lja1VzZXJSZXNwEhAKCG93bmVyX2lkGAEgASgFEhIKCm93bmVyX25pY2sY",
+          "AiABKAkSDwoHa2lja19pZBgDIAEoBRIRCglraWNrX25pY2sYBCABKAliBnBy",
+          "b3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -84,7 +82,9 @@ public static partial class GameReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgQueryRecord), global::MsgQueryRecord.Parser, new[]{ "Page", "Num", "Type" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgJackpotInfo), global::MsgJackpotInfo.Parser, new[]{ "Jackpot", "FakeJackpot" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpRoomInfo), global::MsgPvpRoomInfo.Parser, new[]{ "TableId", "TableName", "ChairNum", "EnterNum", "JoinLimitMin", "JoinLimitMax", "IsPrivate", "Password", "OwnerId", "TableNo", "Value1", "Value2", "Value3", "Value4", "Value5", "Value6", "Value7", "Value8" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpRoomConfig), global::MsgPvpRoomConfig.Parser, new[]{ "CreateVipLimit", "ChairLimitMin", "ChairLimitMax", "Value1Min", "Value1Max", "Value2Min", "Value2Max", "Value3Min", "Value3Max", "Value4Min", "Value4Max", "Value5Min", "Value5Max", "Value6Min", "Value6Max", "Value7Min", "Value7Max", "Value8Min", "Value8Max" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpRoomCfgItem), global::MsgPvpRoomCfgItem.Parser, new[]{ "LagKey", "ValueList" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpRoomConfig), global::MsgPvpRoomConfig.Parser, new[]{ "CreateVipLimit", "ChairLimitMin", "ChairLimitMax", "ParaLsit" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpCreateTable), global::MsgPvpCreateTable.Parser, new[]{ "IsPrivate", "TableName", "ChairNum", "Password", "ParaLsit" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpRoomList), global::MsgPvpRoomList.Parser, new[]{ "RoomList" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpCreateRoom), global::MsgPvpCreateRoom.Parser, new[]{ "Cfg" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpCreateRoomResp), global::MsgPvpCreateRoomResp.Parser, new[]{ "RetCode", "TableId", "TableNo" }, null, null, null, null),
@@ -3867,8 +3867,213 @@ public sealed partial class MsgPvpRoomInfo : pb::IMessage<MsgPvpRoomInfo>
 
 }
 
+public sealed partial class MsgPvpRoomCfgItem : pb::IMessage<MsgPvpRoomCfgItem>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgPvpRoomCfgItem> _parser = new pb::MessageParser<MsgPvpRoomCfgItem>(() => new MsgPvpRoomCfgItem());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgPvpRoomCfgItem> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::GameReflection.Descriptor.MessageTypes[11]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgPvpRoomCfgItem() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgPvpRoomCfgItem(MsgPvpRoomCfgItem other) : this() {
+    lagKey_ = other.lagKey_;
+    valueList_ = other.valueList_.Clone();
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgPvpRoomCfgItem Clone() {
+    return new MsgPvpRoomCfgItem(this);
+  }
+
+  /// <summary>Field number for the "lag_key" field.</summary>
+  public const int LagKeyFieldNumber = 1;
+  private int lagKey_;
+  /// <summary>
+  ///前端查找多语言key
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int LagKey {
+    get { return lagKey_; }
+    set {
+      lagKey_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "value_list" field.</summary>
+  public const int ValueListFieldNumber = 2;
+  private static readonly pb::FieldCodec<int> _repeated_valueList_codec
+      = pb::FieldCodec.ForInt32(18);
+  private readonly pbc::RepeatedField<int> valueList_ = new pbc::RepeatedField<int>();
+  /// <summary>
+  ///特性区间 数组
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<int> ValueList {
+    get { return valueList_; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgPvpRoomCfgItem);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgPvpRoomCfgItem other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (LagKey != other.LagKey) return false;
+    if(!valueList_.Equals(other.valueList_)) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (LagKey != 0) hash ^= LagKey.GetHashCode();
+    hash ^= valueList_.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (LagKey != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(LagKey);
+    }
+    valueList_.WriteTo(output, _repeated_valueList_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (LagKey != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(LagKey);
+    }
+    valueList_.WriteTo(ref output, _repeated_valueList_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (LagKey != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(LagKey);
+    }
+    size += valueList_.CalculateSize(_repeated_valueList_codec);
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgPvpRoomCfgItem other) {
+    if (other == null) {
+      return;
+    }
+    if (other.LagKey != 0) {
+      LagKey = other.LagKey;
+    }
+    valueList_.Add(other.valueList_);
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          LagKey = input.ReadInt32();
+          break;
+        }
+        case 18:
+        case 16: {
+          valueList_.AddEntriesFrom(input, _repeated_valueList_codec);
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          LagKey = input.ReadInt32();
+          break;
+        }
+        case 18:
+        case 16: {
+          valueList_.AddEntriesFrom(ref input, _repeated_valueList_codec);
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
 /// <summary>
-///pvp桌子配置
+///pvp房间配置
 /// </summary>
 public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -3882,7 +4087,7 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::GameReflection.Descriptor.MessageTypes[11]; }
+    get { return global::GameReflection.Descriptor.MessageTypes[12]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3902,22 +4107,7 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
     createVipLimit_ = other.createVipLimit_;
     chairLimitMin_ = other.chairLimitMin_;
     chairLimitMax_ = other.chairLimitMax_;
-    value1Min_ = other.value1Min_;
-    value1Max_ = other.value1Max_;
-    value2Min_ = other.value2Min_;
-    value2Max_ = other.value2Max_;
-    value3Min_ = other.value3Min_;
-    value3Max_ = other.value3Max_;
-    value4Min_ = other.value4Min_;
-    value4Max_ = other.value4Max_;
-    value5Min_ = other.value5Min_;
-    value5Max_ = other.value5Max_;
-    value6Min_ = other.value6Min_;
-    value6Max_ = other.value6Max_;
-    value7Min_ = other.value7Min_;
-    value7Max_ = other.value7Max_;
-    value8Min_ = other.value8Min_;
-    value8Max_ = other.value8Max_;
+    paraLsit_ = other.paraLsit_.Clone();
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -3944,7 +4134,7 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
   public const int ChairLimitMinFieldNumber = 2;
   private int chairLimitMin_;
   /// <summary>
-  ///创建桌子最小人数				//创建桌子根据游戏需要传 玩家选择的值
+  ///创建桌子最小人数				
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int ChairLimitMin {
@@ -3968,228 +4158,17 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
     }
   }
 
-  /// <summary>Field number for the "value1_min" field.</summary>
-  public const int Value1MinFieldNumber = 11;
-  private long value1Min_;
+  /// <summary>Field number for the "para_lsit" field.</summary>
+  public const int ParaLsitFieldNumber = 11;
+  private static readonly pb::FieldCodec<global::MsgPvpRoomCfgItem> _repeated_paraLsit_codec
+      = pb::FieldCodec.ForMessage(90, global::MsgPvpRoomCfgItem.Parser);
+  private readonly pbc::RepeatedField<global::MsgPvpRoomCfgItem> paraLsit_ = new pbc::RepeatedField<global::MsgPvpRoomCfgItem>();
   /// <summary>
-  ///桌子特性						//创建桌子根据游戏需要传 玩家选择的值
+  ///桌子特性列表  		//进入房间金币下限				放在para_lsit的第一位
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public long Value1Min {
-    get { return value1Min_; }
-    set {
-      value1Min_ = value;
-    }
-  }
-
-  /// <summary>Field number for the "value1_max" field.</summary>
-  public const int Value1MaxFieldNumber = 12;
-  private long value1Max_;
-  /// <summary>
-  ///桌子特性
-  /// </summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public long Value1Max {
-    get { return value1Max_; }
-    set {
-      value1Max_ = value;
-    }
-  }
-
-  /// <summary>Field number for the "value2_min" field.</summary>
-  public const int Value2MinFieldNumber = 13;
-  private long value2Min_;
-  /// <summary>
-  ///桌子特性						//创建桌子根据游戏需要传 玩家选择的值
-  /// </summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public long Value2Min {
-    get { return value2Min_; }
-    set {
-      value2Min_ = value;
-    }
-  }
-
-  /// <summary>Field number for the "value2_max" field.</summary>
-  public const int Value2MaxFieldNumber = 14;
-  private long value2Max_;
-  /// <summary>
-  ///桌子特性
-  /// </summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public long Value2Max {
-    get { return value2Max_; }
-    set {
-      value2Max_ = value;
-    }
-  }
-
-  /// <summary>Field number for the "value3_min" field.</summary>
-  public const int Value3MinFieldNumber = 15;
-  private long value3Min_;
-  /// <summary>
-  ///桌子特性						//创建桌子根据游戏需要传 玩家选择的值
-  /// </summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public long Value3Min {
-    get { return value3Min_; }
-    set {
-      value3Min_ = value;
-    }
-  }
-
-  /// <summary>Field number for the "value3_max" field.</summary>
-  public const int Value3MaxFieldNumber = 16;
-  private long value3Max_;
-  /// <summary>
-  ///桌子特性
-  /// </summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public long Value3Max {
-    get { return value3Max_; }
-    set {
-      value3Max_ = value;
-    }
-  }
-
-  /// <summary>Field number for the "value4_min" field.</summary>
-  public const int Value4MinFieldNumber = 17;
-  private long value4Min_;
-  /// <summary>
-  ///桌子特性						//创建桌子根据游戏需要传 玩家选择的值
-  /// </summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public long Value4Min {
-    get { return value4Min_; }
-    set {
-      value4Min_ = value;
-    }
-  }
-
-  /// <summary>Field number for the "value4_max" field.</summary>
-  public const int Value4MaxFieldNumber = 18;
-  private long value4Max_;
-  /// <summary>
-  ///桌子特性
-  /// </summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public long Value4Max {
-    get { return value4Max_; }
-    set {
-      value4Max_ = value;
-    }
-  }
-
-  /// <summary>Field number for the "value5_min" field.</summary>
-  public const int Value5MinFieldNumber = 19;
-  private long value5Min_;
-  /// <summary>
-  ///桌子特性						//创建桌子根据游戏需要传 玩家选择的值
-  /// </summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public long Value5Min {
-    get { return value5Min_; }
-    set {
-      value5Min_ = value;
-    }
-  }
-
-  /// <summary>Field number for the "value5_max" field.</summary>
-  public const int Value5MaxFieldNumber = 20;
-  private long value5Max_;
-  /// <summary>
-  ///桌子特性
-  /// </summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public long Value5Max {
-    get { return value5Max_; }
-    set {
-      value5Max_ = value;
-    }
-  }
-
-  /// <summary>Field number for the "value6_min" field.</summary>
-  public const int Value6MinFieldNumber = 21;
-  private long value6Min_;
-  /// <summary>
-  ///桌子特性						//创建桌子根据游戏需要传 玩家选择的值
-  /// </summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public long Value6Min {
-    get { return value6Min_; }
-    set {
-      value6Min_ = value;
-    }
-  }
-
-  /// <summary>Field number for the "value6_max" field.</summary>
-  public const int Value6MaxFieldNumber = 22;
-  private long value6Max_;
-  /// <summary>
-  ///桌子特性
-  /// </summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public long Value6Max {
-    get { return value6Max_; }
-    set {
-      value6Max_ = value;
-    }
-  }
-
-  /// <summary>Field number for the "value7_min" field.</summary>
-  public const int Value7MinFieldNumber = 23;
-  private long value7Min_;
-  /// <summary>
-  ///桌子特性						//创建桌子根据游戏需要传 玩家选择的值
-  /// </summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public long Value7Min {
-    get { return value7Min_; }
-    set {
-      value7Min_ = value;
-    }
-  }
-
-  /// <summary>Field number for the "value7_max" field.</summary>
-  public const int Value7MaxFieldNumber = 24;
-  private long value7Max_;
-  /// <summary>
-  ///桌子特性
-  /// </summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public long Value7Max {
-    get { return value7Max_; }
-    set {
-      value7Max_ = value;
-    }
-  }
-
-  /// <summary>Field number for the "value8_min" field.</summary>
-  public const int Value8MinFieldNumber = 25;
-  private long value8Min_;
-  /// <summary>
-  ///桌子特性						//创建桌子根据游戏需要传 玩家选择的值
-  /// </summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public long Value8Min {
-    get { return value8Min_; }
-    set {
-      value8Min_ = value;
-    }
-  }
-
-  /// <summary>Field number for the "value8_max" field.</summary>
-  public const int Value8MaxFieldNumber = 26;
-  private long value8Max_;
-  /// <summary>
-  ///桌子特性	
-  /// </summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public long Value8Max {
-    get { return value8Max_; }
-    set {
-      value8Max_ = value;
-    }
+  public pbc::RepeatedField<global::MsgPvpRoomCfgItem> ParaLsit {
+    get { return paraLsit_; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4208,22 +4187,7 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
     if (CreateVipLimit != other.CreateVipLimit) return false;
     if (ChairLimitMin != other.ChairLimitMin) return false;
     if (ChairLimitMax != other.ChairLimitMax) return false;
-    if (Value1Min != other.Value1Min) return false;
-    if (Value1Max != other.Value1Max) return false;
-    if (Value2Min != other.Value2Min) return false;
-    if (Value2Max != other.Value2Max) return false;
-    if (Value3Min != other.Value3Min) return false;
-    if (Value3Max != other.Value3Max) return false;
-    if (Value4Min != other.Value4Min) return false;
-    if (Value4Max != other.Value4Max) return false;
-    if (Value5Min != other.Value5Min) return false;
-    if (Value5Max != other.Value5Max) return false;
-    if (Value6Min != other.Value6Min) return false;
-    if (Value6Max != other.Value6Max) return false;
-    if (Value7Min != other.Value7Min) return false;
-    if (Value7Max != other.Value7Max) return false;
-    if (Value8Min != other.Value8Min) return false;
-    if (Value8Max != other.Value8Max) return false;
+    if(!paraLsit_.Equals(other.paraLsit_)) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -4233,22 +4197,7 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
     if (CreateVipLimit != 0) hash ^= CreateVipLimit.GetHashCode();
     if (ChairLimitMin != 0) hash ^= ChairLimitMin.GetHashCode();
     if (ChairLimitMax != 0) hash ^= ChairLimitMax.GetHashCode();
-    if (Value1Min != 0L) hash ^= Value1Min.GetHashCode();
-    if (Value1Max != 0L) hash ^= Value1Max.GetHashCode();
-    if (Value2Min != 0L) hash ^= Value2Min.GetHashCode();
-    if (Value2Max != 0L) hash ^= Value2Max.GetHashCode();
-    if (Value3Min != 0L) hash ^= Value3Min.GetHashCode();
-    if (Value3Max != 0L) hash ^= Value3Max.GetHashCode();
-    if (Value4Min != 0L) hash ^= Value4Min.GetHashCode();
-    if (Value4Max != 0L) hash ^= Value4Max.GetHashCode();
-    if (Value5Min != 0L) hash ^= Value5Min.GetHashCode();
-    if (Value5Max != 0L) hash ^= Value5Max.GetHashCode();
-    if (Value6Min != 0L) hash ^= Value6Min.GetHashCode();
-    if (Value6Max != 0L) hash ^= Value6Max.GetHashCode();
-    if (Value7Min != 0L) hash ^= Value7Min.GetHashCode();
-    if (Value7Max != 0L) hash ^= Value7Max.GetHashCode();
-    if (Value8Min != 0L) hash ^= Value8Min.GetHashCode();
-    if (Value8Max != 0L) hash ^= Value8Max.GetHashCode();
+    hash ^= paraLsit_.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -4277,70 +4226,7 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
       output.WriteRawTag(24);
       output.WriteInt32(ChairLimitMax);
     }
-    if (Value1Min != 0L) {
-      output.WriteRawTag(88);
-      output.WriteInt64(Value1Min);
-    }
-    if (Value1Max != 0L) {
-      output.WriteRawTag(96);
-      output.WriteInt64(Value1Max);
-    }
-    if (Value2Min != 0L) {
-      output.WriteRawTag(104);
-      output.WriteInt64(Value2Min);
-    }
-    if (Value2Max != 0L) {
-      output.WriteRawTag(112);
-      output.WriteInt64(Value2Max);
-    }
-    if (Value3Min != 0L) {
-      output.WriteRawTag(120);
-      output.WriteInt64(Value3Min);
-    }
-    if (Value3Max != 0L) {
-      output.WriteRawTag(128, 1);
-      output.WriteInt64(Value3Max);
-    }
-    if (Value4Min != 0L) {
-      output.WriteRawTag(136, 1);
-      output.WriteInt64(Value4Min);
-    }
-    if (Value4Max != 0L) {
-      output.WriteRawTag(144, 1);
-      output.WriteInt64(Value4Max);
-    }
-    if (Value5Min != 0L) {
-      output.WriteRawTag(152, 1);
-      output.WriteInt64(Value5Min);
-    }
-    if (Value5Max != 0L) {
-      output.WriteRawTag(160, 1);
-      output.WriteInt64(Value5Max);
-    }
-    if (Value6Min != 0L) {
-      output.WriteRawTag(168, 1);
-      output.WriteInt64(Value6Min);
-    }
-    if (Value6Max != 0L) {
-      output.WriteRawTag(176, 1);
-      output.WriteInt64(Value6Max);
-    }
-    if (Value7Min != 0L) {
-      output.WriteRawTag(184, 1);
-      output.WriteInt64(Value7Min);
-    }
-    if (Value7Max != 0L) {
-      output.WriteRawTag(192, 1);
-      output.WriteInt64(Value7Max);
-    }
-    if (Value8Min != 0L) {
-      output.WriteRawTag(200, 1);
-      output.WriteInt64(Value8Min);
-    }
-    if (Value8Max != 0L) {
-      output.WriteRawTag(208, 1);
-      output.WriteInt64(Value8Max);
-    }
+    paraLsit_.WriteTo(output, _repeated_paraLsit_codec);
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -4362,70 +4248,7 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
       output.WriteRawTag(24);
       output.WriteInt32(ChairLimitMax);
     }
-    if (Value1Min != 0L) {
-      output.WriteRawTag(88);
-      output.WriteInt64(Value1Min);
-    }
-    if (Value1Max != 0L) {
-      output.WriteRawTag(96);
-      output.WriteInt64(Value1Max);
-    }
-    if (Value2Min != 0L) {
-      output.WriteRawTag(104);
-      output.WriteInt64(Value2Min);
-    }
-    if (Value2Max != 0L) {
-      output.WriteRawTag(112);
-      output.WriteInt64(Value2Max);
-    }
-    if (Value3Min != 0L) {
-      output.WriteRawTag(120);
-      output.WriteInt64(Value3Min);
-    }
-    if (Value3Max != 0L) {
-      output.WriteRawTag(128, 1);
-      output.WriteInt64(Value3Max);
-    }
-    if (Value4Min != 0L) {
-      output.WriteRawTag(136, 1);
-      output.WriteInt64(Value4Min);
-    }
-    if (Value4Max != 0L) {
-      output.WriteRawTag(144, 1);
-      output.WriteInt64(Value4Max);
-    }
-    if (Value5Min != 0L) {
-      output.WriteRawTag(152, 1);
-      output.WriteInt64(Value5Min);
-    }
-    if (Value5Max != 0L) {
-      output.WriteRawTag(160, 1);
-      output.WriteInt64(Value5Max);
-    }
-    if (Value6Min != 0L) {
-      output.WriteRawTag(168, 1);
-      output.WriteInt64(Value6Min);
-    }
-    if (Value6Max != 0L) {
-      output.WriteRawTag(176, 1);
-      output.WriteInt64(Value6Max);
-    }
-    if (Value7Min != 0L) {
-      output.WriteRawTag(184, 1);
-      output.WriteInt64(Value7Min);
-    }
-    if (Value7Max != 0L) {
-      output.WriteRawTag(192, 1);
-      output.WriteInt64(Value7Max);
-    }
-    if (Value8Min != 0L) {
-      output.WriteRawTag(200, 1);
-      output.WriteInt64(Value8Min);
-    }
-    if (Value8Max != 0L) {
-      output.WriteRawTag(208, 1);
-      output.WriteInt64(Value8Max);
-    }
+    paraLsit_.WriteTo(ref output, _repeated_paraLsit_codec);
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -4444,54 +4267,7 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
     if (ChairLimitMax != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChairLimitMax);
     }
-    if (Value1Min != 0L) {
-      size += 1 + pb::CodedOutputStream.ComputeInt64Size(Value1Min);
-    }
-    if (Value1Max != 0L) {
-      size += 1 + pb::CodedOutputStream.ComputeInt64Size(Value1Max);
-    }
-    if (Value2Min != 0L) {
-      size += 1 + pb::CodedOutputStream.ComputeInt64Size(Value2Min);
-    }
-    if (Value2Max != 0L) {
-      size += 1 + pb::CodedOutputStream.ComputeInt64Size(Value2Max);
-    }
-    if (Value3Min != 0L) {
-      size += 1 + pb::CodedOutputStream.ComputeInt64Size(Value3Min);
-    }
-    if (Value3Max != 0L) {
-      size += 2 + pb::CodedOutputStream.ComputeInt64Size(Value3Max);
-    }
-    if (Value4Min != 0L) {
-      size += 2 + pb::CodedOutputStream.ComputeInt64Size(Value4Min);
-    }
-    if (Value4Max != 0L) {
-      size += 2 + pb::CodedOutputStream.ComputeInt64Size(Value4Max);
-    }
-    if (Value5Min != 0L) {
-      size += 2 + pb::CodedOutputStream.ComputeInt64Size(Value5Min);
-    }
-    if (Value5Max != 0L) {
-      size += 2 + pb::CodedOutputStream.ComputeInt64Size(Value5Max);
-    }
-    if (Value6Min != 0L) {
-      size += 2 + pb::CodedOutputStream.ComputeInt64Size(Value6Min);
-    }
-    if (Value6Max != 0L) {
-      size += 2 + pb::CodedOutputStream.ComputeInt64Size(Value6Max);
-    }
-    if (Value7Min != 0L) {
-      size += 2 + pb::CodedOutputStream.ComputeInt64Size(Value7Min);
-    }
-    if (Value7Max != 0L) {
-      size += 2 + pb::CodedOutputStream.ComputeInt64Size(Value7Max);
-    }
-    if (Value8Min != 0L) {
-      size += 2 + pb::CodedOutputStream.ComputeInt64Size(Value8Min);
-    }
-    if (Value8Max != 0L) {
-      size += 2 + pb::CodedOutputStream.ComputeInt64Size(Value8Max);
-    }
+    size += paraLsit_.CalculateSize(_repeated_paraLsit_codec);
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
     }
@@ -4512,54 +4288,7 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
     if (other.ChairLimitMax != 0) {
       ChairLimitMax = other.ChairLimitMax;
     }
-    if (other.Value1Min != 0L) {
-      Value1Min = other.Value1Min;
-    }
-    if (other.Value1Max != 0L) {
-      Value1Max = other.Value1Max;
-    }
-    if (other.Value2Min != 0L) {
-      Value2Min = other.Value2Min;
-    }
-    if (other.Value2Max != 0L) {
-      Value2Max = other.Value2Max;
-    }
-    if (other.Value3Min != 0L) {
-      Value3Min = other.Value3Min;
-    }
-    if (other.Value3Max != 0L) {
-      Value3Max = other.Value3Max;
-    }
-    if (other.Value4Min != 0L) {
-      Value4Min = other.Value4Min;
-    }
-    if (other.Value4Max != 0L) {
-      Value4Max = other.Value4Max;
-    }
-    if (other.Value5Min != 0L) {
-      Value5Min = other.Value5Min;
-    }
-    if (other.Value5Max != 0L) {
-      Value5Max = other.Value5Max;
-    }
-    if (other.Value6Min != 0L) {
-      Value6Min = other.Value6Min;
-    }
-    if (other.Value6Max != 0L) {
-      Value6Max = other.Value6Max;
-    }
-    if (other.Value7Min != 0L) {
-      Value7Min = other.Value7Min;
-    }
-    if (other.Value7Max != 0L) {
-      Value7Max = other.Value7Max;
-    }
-    if (other.Value8Min != 0L) {
-      Value8Min = other.Value8Min;
-    }
-    if (other.Value8Max != 0L) {
-      Value8Max = other.Value8Max;
-    }
+    paraLsit_.Add(other.paraLsit_);
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
 
@@ -4586,68 +4315,8 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
           ChairLimitMax = input.ReadInt32();
           break;
         }
-        case 88: {
-          Value1Min = input.ReadInt64();
-          break;
-        }
-        case 96: {
-          Value1Max = input.ReadInt64();
-          break;
-        }
-        case 104: {
-          Value2Min = input.ReadInt64();
-          break;
-        }
-        case 112: {
-          Value2Max = input.ReadInt64();
-          break;
-        }
-        case 120: {
-          Value3Min = input.ReadInt64();
-          break;
-        }
-        case 128: {
-          Value3Max = input.ReadInt64();
-          break;
-        }
-        case 136: {
-          Value4Min = input.ReadInt64();
-          break;
-        }
-        case 144: {
-          Value4Max = input.ReadInt64();
-          break;
-        }
-        case 152: {
-          Value5Min = input.ReadInt64();
-          break;
-        }
-        case 160: {
-          Value5Max = input.ReadInt64();
-          break;
-        }
-        case 168: {
-          Value6Min = input.ReadInt64();
-          break;
-        }
-        case 176: {
-          Value6Max = input.ReadInt64();
-          break;
-        }
-        case 184: {
-          Value7Min = input.ReadInt64();
-          break;
-        }
-        case 192: {
-          Value7Max = input.ReadInt64();
-          break;
-        }
-        case 200: {
-          Value8Min = input.ReadInt64();
-          break;
-        }
-        case 208: {
-          Value8Max = input.ReadInt64();
+        case 90: {
+          paraLsit_.AddEntriesFrom(input, _repeated_paraLsit_codec);
           break;
         }
       }
@@ -4676,68 +4345,334 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
           ChairLimitMax = input.ReadInt32();
           break;
         }
-        case 88: {
-          Value1Min = input.ReadInt64();
+        case 90: {
+          paraLsit_.AddEntriesFrom(ref input, _repeated_paraLsit_codec);
           break;
         }
-        case 96: {
-          Value1Max = input.ReadInt64();
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///pvp创建桌子配置
+/// </summary>
+public sealed partial class MsgPvpCreateTable : pb::IMessage<MsgPvpCreateTable>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgPvpCreateTable> _parser = new pb::MessageParser<MsgPvpCreateTable>(() => new MsgPvpCreateTable());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgPvpCreateTable> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::GameReflection.Descriptor.MessageTypes[13]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgPvpCreateTable() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgPvpCreateTable(MsgPvpCreateTable other) : this() {
+    isPrivate_ = other.isPrivate_;
+    tableName_ = other.tableName_;
+    chairNum_ = other.chairNum_;
+    password_ = other.password_;
+    paraLsit_ = other.paraLsit_.Clone();
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgPvpCreateTable Clone() {
+    return new MsgPvpCreateTable(this);
+  }
+
+  /// <summary>Field number for the "is_private" field.</summary>
+  public const int IsPrivateFieldNumber = 1;
+  private bool isPrivate_;
+  /// <summary>
+  ///是否私人桌
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool IsPrivate {
+    get { return isPrivate_; }
+    set {
+      isPrivate_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "table_name" field.</summary>
+  public const int TableNameFieldNumber = 2;
+  private string tableName_ = "";
+  /// <summary>
+  ///桌子名称						
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string TableName {
+    get { return tableName_; }
+    set {
+      tableName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "chair_num" field.</summary>
+  public const int ChairNumFieldNumber = 3;
+  private int chairNum_;
+  /// <summary>
+  ///人数限制						
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int ChairNum {
+    get { return chairNum_; }
+    set {
+      chairNum_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "password" field.</summary>
+  public const int PasswordFieldNumber = 6;
+  private string password_ = "";
+  /// <summary>
+  ///int64	join_limit_min						= 4;	//进入房间金币下限				放在para_lsit的第一位
+  ///int64	join_limit_max						= 5;	//进入房间金币上限				
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string Password {
+    get { return password_; }
+    set {
+      password_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "para_lsit" field.</summary>
+  public const int ParaLsitFieldNumber = 7;
+  private static readonly pb::FieldCodec<int> _repeated_paraLsit_codec
+      = pb::FieldCodec.ForInt32(58);
+  private readonly pbc::RepeatedField<int> paraLsit_ = new pbc::RepeatedField<int>();
+  /// <summary>
+  ///选定桌子特性列表
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<int> ParaLsit {
+    get { return paraLsit_; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgPvpCreateTable);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgPvpCreateTable other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (IsPrivate != other.IsPrivate) return false;
+    if (TableName != other.TableName) return false;
+    if (ChairNum != other.ChairNum) return false;
+    if (Password != other.Password) return false;
+    if(!paraLsit_.Equals(other.paraLsit_)) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (IsPrivate != false) hash ^= IsPrivate.GetHashCode();
+    if (TableName.Length != 0) hash ^= TableName.GetHashCode();
+    if (ChairNum != 0) hash ^= ChairNum.GetHashCode();
+    if (Password.Length != 0) hash ^= Password.GetHashCode();
+    hash ^= paraLsit_.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (IsPrivate != false) {
+      output.WriteRawTag(8);
+      output.WriteBool(IsPrivate);
+    }
+    if (TableName.Length != 0) {
+      output.WriteRawTag(18);
+      output.WriteString(TableName);
+    }
+    if (ChairNum != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(ChairNum);
+    }
+    if (Password.Length != 0) {
+      output.WriteRawTag(50);
+      output.WriteString(Password);
+    }
+    paraLsit_.WriteTo(output, _repeated_paraLsit_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (IsPrivate != false) {
+      output.WriteRawTag(8);
+      output.WriteBool(IsPrivate);
+    }
+    if (TableName.Length != 0) {
+      output.WriteRawTag(18);
+      output.WriteString(TableName);
+    }
+    if (ChairNum != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(ChairNum);
+    }
+    if (Password.Length != 0) {
+      output.WriteRawTag(50);
+      output.WriteString(Password);
+    }
+    paraLsit_.WriteTo(ref output, _repeated_paraLsit_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (IsPrivate != false) {
+      size += 1 + 1;
+    }
+    if (TableName.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(TableName);
+    }
+    if (ChairNum != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChairNum);
+    }
+    if (Password.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Password);
+    }
+    size += paraLsit_.CalculateSize(_repeated_paraLsit_codec);
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgPvpCreateTable other) {
+    if (other == null) {
+      return;
+    }
+    if (other.IsPrivate != false) {
+      IsPrivate = other.IsPrivate;
+    }
+    if (other.TableName.Length != 0) {
+      TableName = other.TableName;
+    }
+    if (other.ChairNum != 0) {
+      ChairNum = other.ChairNum;
+    }
+    if (other.Password.Length != 0) {
+      Password = other.Password;
+    }
+    paraLsit_.Add(other.paraLsit_);
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          IsPrivate = input.ReadBool();
           break;
         }
-        case 104: {
-          Value2Min = input.ReadInt64();
+        case 18: {
+          TableName = input.ReadString();
           break;
         }
-        case 112: {
-          Value2Max = input.ReadInt64();
+        case 24: {
+          ChairNum = input.ReadInt32();
           break;
         }
-        case 120: {
-          Value3Min = input.ReadInt64();
+        case 50: {
+          Password = input.ReadString();
           break;
         }
-        case 128: {
-          Value3Max = input.ReadInt64();
+        case 58:
+        case 56: {
+          paraLsit_.AddEntriesFrom(input, _repeated_paraLsit_codec);
           break;
         }
-        case 136: {
-          Value4Min = input.ReadInt64();
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          IsPrivate = input.ReadBool();
           break;
         }
-        case 144: {
-          Value4Max = input.ReadInt64();
+        case 18: {
+          TableName = input.ReadString();
           break;
         }
-        case 152: {
-          Value5Min = input.ReadInt64();
+        case 24: {
+          ChairNum = input.ReadInt32();
           break;
         }
-        case 160: {
-          Value5Max = input.ReadInt64();
+        case 50: {
+          Password = input.ReadString();
           break;
         }
-        case 168: {
-          Value6Min = input.ReadInt64();
-          break;
-        }
-        case 176: {
-          Value6Max = input.ReadInt64();
-          break;
-        }
-        case 184: {
-          Value7Min = input.ReadInt64();
-          break;
-        }
-        case 192: {
-          Value7Max = input.ReadInt64();
-          break;
-        }
-        case 200: {
-          Value8Min = input.ReadInt64();
-          break;
-        }
-        case 208: {
-          Value8Max = input.ReadInt64();
+        case 58:
+        case 56: {
+          paraLsit_.AddEntriesFrom(ref input, _repeated_paraLsit_codec);
           break;
         }
       }
@@ -4762,7 +4697,7 @@ public sealed partial class MsgPvpRoomList : pb::IMessage<MsgPvpRoomList>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::GameReflection.Descriptor.MessageTypes[12]; }
+    get { return global::GameReflection.Descriptor.MessageTypes[14]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4926,7 +4861,7 @@ public sealed partial class MsgPvpCreateRoom : pb::IMessage<MsgPvpCreateRoom>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::GameReflection.Descriptor.MessageTypes[13]; }
+    get { return global::GameReflection.Descriptor.MessageTypes[15]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5110,7 +5045,7 @@ public sealed partial class MsgPvpCreateRoomResp : pb::IMessage<MsgPvpCreateRoom
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::GameReflection.Descriptor.MessageTypes[14]; }
+    get { return global::GameReflection.Descriptor.MessageTypes[16]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5366,7 +5301,7 @@ public sealed partial class MsgPvpJoinRoom : pb::IMessage<MsgPvpJoinRoom>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::GameReflection.Descriptor.MessageTypes[15]; }
+    get { return global::GameReflection.Descriptor.MessageTypes[17]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5622,7 +5557,7 @@ public sealed partial class MsgPvpJoinRoomResp : pb::IMessage<MsgPvpJoinRoomResp
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::GameReflection.Descriptor.MessageTypes[16]; }
+    get { return global::GameReflection.Descriptor.MessageTypes[18]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5800,7 +5735,7 @@ public sealed partial class MsgPvpKickUserResp : pb::IMessage<MsgPvpKickUserResp
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::GameReflection.Descriptor.MessageTypes[17]; }
+    get { return global::GameReflection.Descriptor.MessageTypes[19]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
