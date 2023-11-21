@@ -766,11 +766,11 @@ public enum EMsgIDGame {
   /// </summary>
   [pbr::OriginalName("MsgIDGame_Pvp_KickUserResp")] MsgIdgamePvpKickUserResp = 1061,
   /// <summary>
-  ///房主解散房间(MsgCommonBool)
+  ///房主解散房间(MsgCommonN32)
   /// </summary>
   [pbr::OriginalName("MsgIDGame_Pvp_DestroyTable")] MsgIdgamePvpDestroyTable = 1062,
   /// <summary>
-  ///房主踢人(MsgCommonBool)
+  ///房主踢人(MsgPvpDestroyTableResp)
   /// </summary>
   [pbr::OriginalName("MsgIDGame_Pvp_DestroyTableResp")] MsgIdgamePvpDestroyTableResp = 1063,
   /// <summary>

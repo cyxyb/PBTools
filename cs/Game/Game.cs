@@ -63,9 +63,11 @@ public static partial class GameReflection {
           "ZV9ubxgDIAEoBSJHCg9Nc2dQdnBKb2luVGFibGUSEAoIdGFibGVfaWQYASAB",
           "KAUSEAoIdGFibGVfbm8YAiABKAUSEAoIcGFzc3dvcmQYAyABKAkiSwoTTXNn",
           "UHZwSm9pblRhYmxlUmVzcBIQCghyZXRfY29kZRgBIAEoBRIQCgh0YWJsZV9p",
-          "ZBgCIAEoBRIQCgh0YWJsZV9ubxgDIAEoBSJeChJNc2dQdnBLaWNrVXNlclJl",
-          "c3ASEAoIb3duZXJfaWQYASABKAUSEgoKb3duZXJfbmljaxgCIAEoCRIPCgdr",
-          "aWNrX2lkGAMgASgFEhEKCWtpY2tfbmljaxgEIAEoCWIGcHJvdG8z"));
+          "ZBgCIAEoBRIQCgh0YWJsZV9ubxgDIAEoBSJOChZNc2dQdnBEZXN0cm95VGFi",
+          "bGVSZXNwEhAKCHJldF9jb2RlGAEgASgFEhAKCHRhYmxlX2lkGAIgASgFEhAK",
+          "CHRhYmxlX25vGAMgASgFIl4KEk1zZ1B2cEtpY2tVc2VyUmVzcBIQCghvd25l",
+          "cl9pZBgBIAEoBRISCgpvd25lcl9uaWNrGAIgASgJEg8KB2tpY2tfaWQYAyAB",
+          "KAUSEQoJa2lja19uaWNrGAQgASgJYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -87,6 +89,7 @@ public static partial class GameReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpCreateTableResp), global::MsgPvpCreateTableResp.Parser, new[]{ "RetCode", "TableId", "TableNo" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpJoinTable), global::MsgPvpJoinTable.Parser, new[]{ "TableId", "TableNo", "Password" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpJoinTableResp), global::MsgPvpJoinTableResp.Parser, new[]{ "RetCode", "TableId", "TableNo" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpDestroyTableResp), global::MsgPvpDestroyTableResp.Parser, new[]{ "RetCode", "TableId", "TableNo" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpKickUserResp), global::MsgPvpKickUserResp.Parser, new[]{ "OwnerId", "OwnerNick", "KickId", "KickNick" }, null, null, null, null)
         }));
   }
@@ -4767,7 +4770,7 @@ public sealed partial class MsgPvpCreateTable : pb::IMessage<MsgPvpCreateTable>
 }
 
 /// <summary>
-///pvp房间列表
+///pvp桌子列表
 /// </summary>
 public sealed partial class MsgPvpCreateTableResp : pb::IMessage<MsgPvpCreateTableResp>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -5023,7 +5026,7 @@ public sealed partial class MsgPvpCreateTableResp : pb::IMessage<MsgPvpCreateTab
 }
 
 /// <summary>
-///pvp加入房间
+///pvp加入桌子
 /// </summary>
 public sealed partial class MsgPvpJoinTable : pb::IMessage<MsgPvpJoinTable>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -5279,7 +5282,7 @@ public sealed partial class MsgPvpJoinTable : pb::IMessage<MsgPvpJoinTable>
 }
 
 /// <summary>
-///pvp加入房间
+///pvp加入桌子
 /// </summary>
 public sealed partial class MsgPvpJoinTableResp : pb::IMessage<MsgPvpJoinTableResp>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -5535,6 +5538,262 @@ public sealed partial class MsgPvpJoinTableResp : pb::IMessage<MsgPvpJoinTableRe
 }
 
 /// <summary>
+///pvp解放桌子
+/// </summary>
+public sealed partial class MsgPvpDestroyTableResp : pb::IMessage<MsgPvpDestroyTableResp>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgPvpDestroyTableResp> _parser = new pb::MessageParser<MsgPvpDestroyTableResp>(() => new MsgPvpDestroyTableResp());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgPvpDestroyTableResp> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::GameReflection.Descriptor.MessageTypes[18]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgPvpDestroyTableResp() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgPvpDestroyTableResp(MsgPvpDestroyTableResp other) : this() {
+    retCode_ = other.retCode_;
+    tableId_ = other.tableId_;
+    tableNo_ = other.tableNo_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgPvpDestroyTableResp Clone() {
+    return new MsgPvpDestroyTableResp(this);
+  }
+
+  /// <summary>Field number for the "ret_code" field.</summary>
+  public const int RetCodeFieldNumber = 1;
+  private int retCode_;
+  /// <summary>
+  ///返回码	非零失败
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int RetCode {
+    get { return retCode_; }
+    set {
+      retCode_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "table_id" field.</summary>
+  public const int TableIdFieldNumber = 2;
+  private int tableId_;
+  /// <summary>
+  ///桌子id
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int TableId {
+    get { return tableId_; }
+    set {
+      tableId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "table_no" field.</summary>
+  public const int TableNoFieldNumber = 3;
+  private int tableNo_;
+  /// <summary>
+  ///桌子编号
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int TableNo {
+    get { return tableNo_; }
+    set {
+      tableNo_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgPvpDestroyTableResp);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgPvpDestroyTableResp other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (RetCode != other.RetCode) return false;
+    if (TableId != other.TableId) return false;
+    if (TableNo != other.TableNo) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (RetCode != 0) hash ^= RetCode.GetHashCode();
+    if (TableId != 0) hash ^= TableId.GetHashCode();
+    if (TableNo != 0) hash ^= TableNo.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (RetCode != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(RetCode);
+    }
+    if (TableId != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(TableId);
+    }
+    if (TableNo != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(TableNo);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (RetCode != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(RetCode);
+    }
+    if (TableId != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(TableId);
+    }
+    if (TableNo != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(TableNo);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (RetCode != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(RetCode);
+    }
+    if (TableId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(TableId);
+    }
+    if (TableNo != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(TableNo);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgPvpDestroyTableResp other) {
+    if (other == null) {
+      return;
+    }
+    if (other.RetCode != 0) {
+      RetCode = other.RetCode;
+    }
+    if (other.TableId != 0) {
+      TableId = other.TableId;
+    }
+    if (other.TableNo != 0) {
+      TableNo = other.TableNo;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          RetCode = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          TableId = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          TableNo = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          RetCode = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          TableId = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          TableNo = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
 ///pvp房间列表
 /// </summary>
 public sealed partial class MsgPvpKickUserResp : pb::IMessage<MsgPvpKickUserResp>
@@ -5549,7 +5808,7 @@ public sealed partial class MsgPvpKickUserResp : pb::IMessage<MsgPvpKickUserResp
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::GameReflection.Descriptor.MessageTypes[18]; }
+    get { return global::GameReflection.Descriptor.MessageTypes[19]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

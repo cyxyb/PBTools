@@ -149,7 +149,7 @@ message MsgPvpCreateTable
 	repeated int32			para_lsit			= 7;	//选定桌子特性列表
 }
 
-//pvp房间列表
+//pvp桌子列表
 message MsgPvpCreateTableResp
 {
 	int32	ret_code		= 1;	//返回码	非零失败
@@ -157,7 +157,7 @@ message MsgPvpCreateTableResp
 	int32	table_no		= 3;	//桌子编号
 }
 
-//pvp加入房间
+//pvp加入桌子
 message MsgPvpJoinTable
 {
 	int32	table_id		= 1;	//桌子id
@@ -165,8 +165,16 @@ message MsgPvpJoinTable
 	string 	password		= 3;	//密码
 }
 
-//pvp加入房间
+//pvp加入桌子
 message MsgPvpJoinTableResp
+{
+	int32	ret_code		= 1;	//返回码	非零失败
+	int32	table_id		= 2;	//桌子id
+	int32	table_no		= 3;	//桌子编号
+}
+
+//pvp解放桌子
+message MsgPvpDestroyTableResp
 {
 	int32	ret_code		= 1;	//返回码	非零失败
 	int32	table_id		= 2;	//桌子id
