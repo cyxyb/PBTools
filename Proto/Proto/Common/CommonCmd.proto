@@ -172,8 +172,8 @@ enum EMsgIDGame
 	MsgIDGame_Pvp_FastJoinTable			= 1032;		//快速加入(MsgCommonN32)
 	MsgIDGame_Pvp_FastJoinTableResp		= 1033;		//快速加入(MsgCommonN32)
 	MsgIDGame_Pvp_SitDownResp			= 1034;		//玩家坐下通知(MsgCommonN32)
-	MsgIDGame_Pvp_SitUp					= 1035;		//玩家起立(MsgCommonN32)
-	MsgIDGame_Pvp_SitUpResp				= 1036;		//玩家起立通知(MsgCommonN32)
+	MsgIDGame_Pvp_StandUp				= 1035;		//玩家起立(MsgCommonN32)
+	MsgIDGame_Pvp_StandResp				= 1036;		//玩家起立通知(MsgCommonN32)
 
 	////////////////////////////////////////////////////////////////////////////////////////
 }

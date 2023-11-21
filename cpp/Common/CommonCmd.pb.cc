@@ -123,7 +123,7 @@ const char descriptor_table_protodef_CommonCmd_2eproto[] PROTOBUF_SECTION_VARIAB
   "sonalDetailsResp\020s\022&\n\"MsgIDLogin_NotifyS"
   "erverOfflineResp\020t\022%\n!MsgIDShare_NotifyU"
   "pdateVipExpResp\020u\022\"\n\036MsgIDShare_NotifyAd"
-  "dNewSubResp\020v*\304\010\n\nEMsgIDGame\022\022\n\016MsgIDGam"
+  "dNewSubResp\020v*\306\010\n\nEMsgIDGame\022\022\n\016MsgIDGam"
   "e_Null\020\000\022\024\n\017MsgIDGame_Login\020\351\007\022\030\n\023MsgIDG"
   "ame_LoginResp\020\352\007\022\036\n\031MsgIDGame_SqueezeSea"
   "tResp\020\353\007\022\025\n\020MsgIDGame_Logout\020\354\007\022\032\n\025MsgID"
@@ -149,18 +149,18 @@ const char descriptor_table_protodef_CommonCmd_2eproto[] PROTOBUF_SECTION_VARIAB
   "Game_Pvp_DestroyTableResp\020\207\010\022 \n\033MsgIDGam"
   "e_Pvp_FastJoinTable\020\210\010\022$\n\037MsgIDGame_Pvp_"
   "FastJoinTableResp\020\211\010\022\036\n\031MsgIDGame_Pvp_Si"
-  "tDownResp\020\212\010\022\030\n\023MsgIDGame_Pvp_SitUp\020\213\010\022\034"
-  "\n\027MsgIDGame_Pvp_SitUpResp\020\214\010*\375\002\n\nEMsgIDC"
-  "hat\022\022\n\016MsgIDChat_Null\020\000\022\024\n\017MsgIDChat_Log"
-  "in\020\321\017\022\030\n\023MsgIDChat_LoginResp\020\322\017\022\031\n\024MsgID"
-  "Chat_LogoutResp\020\323\017\022\034\n\027MsgIDChat_SendNorm"
-  "alMsg\020\324\017\022&\n!MsgIDChat_NotifyChatNormalMs"
-  "gResp\020\325\017\022\035\n\030MsgIDChat_SendTrumpetMsg\020\326\017\022"
-  "\'\n\"MsgIDChat_NotifyChatTrumpetMsgResp\020\327\017"
-  "\022\037\n\032MsgIDChat_SyncUserInfoResp\020\330\017\022\037\n\032Msg"
-  "IDChat_SetLilitChatResp\020\331\017\022\035\n\030MsgIDChat_"
-  "GetChatHistory\020\332\017\022!\n\034MsgIDChat_GetChatHi"
-  "storyResp\020\333\017b\006proto3"
+  "tDownResp\020\212\010\022\032\n\025MsgIDGame_Pvp_StandUp\020\213\010"
+  "\022\034\n\027MsgIDGame_Pvp_StandResp\020\214\010*\375\002\n\nEMsgI"
+  "DChat\022\022\n\016MsgIDChat_Null\020\000\022\024\n\017MsgIDChat_L"
+  "ogin\020\321\017\022\030\n\023MsgIDChat_LoginResp\020\322\017\022\031\n\024Msg"
+  "IDChat_LogoutResp\020\323\017\022\034\n\027MsgIDChat_SendNo"
+  "rmalMsg\020\324\017\022&\n!MsgIDChat_NotifyChatNormal"
+  "MsgResp\020\325\017\022\035\n\030MsgIDChat_SendTrumpetMsg\020\326"
+  "\017\022\'\n\"MsgIDChat_NotifyChatTrumpetMsgResp\020"
+  "\327\017\022\037\n\032MsgIDChat_SyncUserInfoResp\020\330\017\022\037\n\032M"
+  "sgIDChat_SetLilitChatResp\020\331\017\022\035\n\030MsgIDCha"
+  "t_GetChatHistory\020\332\017\022!\n\034MsgIDChat_GetChat"
+  "HistoryResp\020\333\017b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_CommonCmd_2eproto_deps[1] = {
 };
@@ -168,7 +168,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Com
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_CommonCmd_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_CommonCmd_2eproto = {
-  false, false, descriptor_table_protodef_CommonCmd_2eproto, "CommonCmd.proto", 5540,
+  false, false, descriptor_table_protodef_CommonCmd_2eproto, "CommonCmd.proto", 5542,
   &descriptor_table_CommonCmd_2eproto_once, descriptor_table_CommonCmd_2eproto_sccs, descriptor_table_CommonCmd_2eproto_deps, 0, 0,
   schemas, file_default_instances, TableStruct_CommonCmd_2eproto::offsets,
   file_level_metadata_CommonCmd_2eproto, 0, file_level_enum_descriptors_CommonCmd_2eproto, file_level_service_descriptors_CommonCmd_2eproto,
