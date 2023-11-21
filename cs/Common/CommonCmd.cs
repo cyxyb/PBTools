@@ -738,7 +738,7 @@ public enum EMsgIDGame {
   /// </summary>
   [pbr::OriginalName("MsgIDGame_Pvp_CreateTable")] MsgIdgamePvpCreateTable = 1054,
   /// <summary>
-  ///创建房间(MsgPvpCreateTableResp)
+  ///创建房间(MsgPvpTableInfo)
   /// </summary>
   [pbr::OriginalName("MsgIDGame_Pvp_CreateTableResp")] MsgIdgamePvpCreateTableResp = 1055,
   /// <summary>

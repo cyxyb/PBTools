@@ -162,7 +162,7 @@ enum EMsgIDGame
 	//MsgIDGame_Pvp_GetTableList		= 1052;		//获取PVP桌子列表(MsgCommonN32)
 	MsgIDGame_Pvp_SendTableListResp		= 1053;		//发送PVP桌子列表(MsgPvpTableList)
 	MsgIDGame_Pvp_CreateTable			= 1054;		//创建房间(MsgPvpCreateTable)
-	MsgIDGame_Pvp_CreateTableResp		= 1055;		//创建房间(MsgPvpCreateTableResp)
+	MsgIDGame_Pvp_CreateTableResp		= 1055;		//创建房间(MsgPvpTableInfo)
 	MsgIDGame_Pvp_JoinTable				= 1056;		//加入房间(MsgPvpJoinTable)
 	MsgIDGame_Pvp_JoinTableResp			= 1057;		//加入房间(MsgPvpJoinTableResp)
 	MsgIDGame_Pvp_ActivateTable			= 1058;		//房主激活桌子(MsgCommonBool)

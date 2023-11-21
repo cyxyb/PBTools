@@ -149,12 +149,11 @@ message MsgPvpCreateTable
 	repeated int32			para_lsit			= 7;	//选定桌子特性列表
 }
 
-//pvp桌子列表
+//pvp创建桌子
 message MsgPvpCreateTableResp
 {
-	int32	ret_code		= 1;	//返回码	非零失败
-	int32	table_id		= 2;	//桌子id
-	int32	table_no		= 3;	//桌子编号
+	int32	ret_code				= 1;	//返回码	非零失败
+	MsgPvpTableInfo	table_info		= 2;	//桌子信息
 }
 
 //pvp加入桌子
@@ -172,6 +171,13 @@ message MsgPvpJoinTableResp
 	int32	table_id		= 2;	//桌子id
 	int32	table_no		= 3;	//桌子编号
 }
+//pvp离开桌子
+message MsgPvpStandUpTableResp
+{
+	int32	ret_code		= 1;	//返回码	非零失败
+	int32	table_id		= 2;	//桌子id
+	int32	table_no		= 3;	//桌子编号
+}
 
 //pvp解放桌子
 message MsgPvpDestroyTableResp
@@ -184,10 +190,11 @@ message MsgPvpDestroyTableResp
 //pvp房间列表
 message MsgPvpKickUserResp
 {
-	int32	owner_id		= 1;	//房主ID
-	string	owner_nick		= 2;	//房主昵称
-	int32	kick_id			= 3;	//被踢ID
-	string	kick_nick		= 4;	//被踢昵称
+	int32	ret_code		= 1;	//返回码	非零失败
+	int32	owner_id		= 2;	//房主ID
+	string	owner_nick		= 3;	//房主昵称
+	int32	kick_id			= 4;	//被踢ID
+	string	kick_nick		= 5;	//被踢昵称
 }
 
 
