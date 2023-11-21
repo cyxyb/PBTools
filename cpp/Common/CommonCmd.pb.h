@@ -239,8 +239,8 @@ enum EMsgIDGame : int {
   MsgIDGame_SendGameSence = 1010,
   MsgIDGame_SendGameSenceResp = 1011,
   MsgIDGame_NotifyMessageResp = 1012,
-  MsgIDGame_CreateRoom = 1013,
-  MsgIDGame_JoinRoom = 1014,
+  MsgIDGame_CreateTable = 1013,
+  MsgIDGame_JoinTable = 1014,
   MsgIDGame_QueryRecord = 1015,
   MsgIDGame_QueryRoundRecordResp = 1016,
   MsgIDGame_QueryDayRecordResp = 1017,
@@ -258,7 +258,8 @@ enum EMsgIDGame : int {
   MsgIDGame_Pvp_FastJoinTable = 1032,
   MsgIDGame_Pvp_FastJoinTableResp = 1033,
   MsgIDGame_Pvp_SitDownResp = 1034,
-  MsgIDGame_Pvp_SitUpResp = 1035,
+  MsgIDGame_Pvp_SitUp = 1035,
+  MsgIDGame_Pvp_SitUpResp = 1036,
   EMsgIDGame_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDGame_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
