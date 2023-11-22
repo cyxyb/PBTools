@@ -6,7 +6,7 @@ package LudoQuick;
 enum EMsgIDLudoQuick
 {
 	MsgID_FirstPublish 		= 0;		//场景（流程需要前端不管）
-	SUB_SC_FirstPublish 	= 1;		//随机首发(MsgCommonN32)0红1黄2蓝3绿
+	SUB_SC_FirstPublish 	= 1;		//随机首发(MsgCommonN32)0红1绿2黄3蓝
 	SUB_SC_StartDice		= 2;		//开始投掷(MsgStartDiceResp)
 	SUB_CS_DiceInfo			= 3;		//投掷骰子(MsgCommonBool)
 	SUB_SC_ThrowDice		= 4;		//投掷结果(MsgThrowDiceResp)
@@ -48,8 +48,7 @@ message	MsgSceneInfoResp
 {
 	int32 game_state 					= 1;//游戏状态 0：选场 非零：对应椅子操作中
 	int32 time_remaining 				= 2;//剩余时间
-	repeated ChessGrid chess_grid_info 	= 3;//棋格信息
-	repeated UserInfo user_info	 		= 4;//用户信息
+	repeated UserInfo user_info	 		= 3;//用户信息
 	
 }
 //开始投掷
@@ -77,6 +76,7 @@ message MsgDiceInfoResp
 	int32 chess_id	 	= 2;	//棋子ID 0123
 	int32 route_num	 	= 3;	//走了多少格
 	int32 prop_id 		= 4;	//道具类型 0：未触发 1：前进一格 2：前进三格 3：前进五格 4：前进七格 5：移动到最近棋子 6：移动到最近得安全屋 7 ：获得骰子 8：获得指定骰子 9：解除开关 10：解锁棋子
+	int32 code			= 5;	//对语言id
 }
 //结算信息
 message GameResult
