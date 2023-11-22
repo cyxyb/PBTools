@@ -568,6 +568,8 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Game_2eproto::offsets[] PROTOB
   PROTOBUF_FIELD_OFFSET(::MsgPvpJoinTableResp, ret_code_),
   PROTOBUF_FIELD_OFFSET(::MsgPvpJoinTableResp, table_id_),
   PROTOBUF_FIELD_OFFSET(::MsgPvpJoinTableResp, table_no_),
+  PROTOBUF_FIELD_OFFSET(::MsgPvpJoinTableResp, user_id_),
+  PROTOBUF_FIELD_OFFSET(::MsgPvpJoinTableResp, player_num_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgPvpStandUpTableResp, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -576,6 +578,8 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Game_2eproto::offsets[] PROTOB
   PROTOBUF_FIELD_OFFSET(::MsgPvpStandUpTableResp, ret_code_),
   PROTOBUF_FIELD_OFFSET(::MsgPvpStandUpTableResp, table_id_),
   PROTOBUF_FIELD_OFFSET(::MsgPvpStandUpTableResp, table_no_),
+  PROTOBUF_FIELD_OFFSET(::MsgPvpStandUpTableResp, user_id_),
+  PROTOBUF_FIELD_OFFSET(::MsgPvpStandUpTableResp, player_num_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgPvpDestroyTableResp, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -622,10 +626,10 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 143, -1, sizeof(::MsgPvpCreateTableResp)},
   { 150, -1, sizeof(::MsgPvpJoinTable)},
   { 158, -1, sizeof(::MsgPvpJoinTableResp)},
-  { 166, -1, sizeof(::MsgPvpStandUpTableResp)},
-  { 174, -1, sizeof(::MsgPvpDestroyTableResp)},
-  { 182, -1, sizeof(::MsgPvpKickUserResp)},
-  { 192, -1, sizeof(::MsgPvpTableChangeOwnerResp)},
+  { 168, -1, sizeof(::MsgPvpStandUpTableResp)},
+  { 178, -1, sizeof(::MsgPvpDestroyTableResp)},
+  { 186, -1, sizeof(::MsgPvpKickUserResp)},
+  { 196, -1, sizeof(::MsgPvpTableChangeOwnerResp)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -698,18 +702,20 @@ const char descriptor_table_protodef_Game_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "CreateTableResp\022\020\n\010ret_code\030\001 \001(\005\022$\n\ntab"
   "le_info\030\002 \001(\0132\020.MsgPvpTableInfo\"G\n\017MsgPv"
   "pJoinTable\022\020\n\010table_id\030\001 \001(\005\022\020\n\010table_no"
-  "\030\002 \001(\005\022\020\n\010password\030\003 \001(\t\"K\n\023MsgPvpJoinTa"
+  "\030\002 \001(\005\022\020\n\010password\030\003 \001(\t\"p\n\023MsgPvpJoinTa"
   "bleResp\022\020\n\010ret_code\030\001 \001(\005\022\020\n\010table_id\030\002 "
-  "\001(\005\022\020\n\010table_no\030\003 \001(\005\"N\n\026MsgPvpStandUpTa"
-  "bleResp\022\020\n\010ret_code\030\001 \001(\005\022\020\n\010table_id\030\002 "
-  "\001(\005\022\020\n\010table_no\030\003 \001(\005\"N\n\026MsgPvpDestroyTa"
-  "bleResp\022\020\n\010ret_code\030\001 \001(\005\022\020\n\010table_id\030\002 "
-  "\001(\005\022\020\n\010table_no\030\003 \001(\005\"p\n\022MsgPvpKickUserR"
-  "esp\022\020\n\010ret_code\030\001 \001(\005\022\020\n\010owner_id\030\002 \001(\005\022"
-  "\022\n\nowner_nick\030\003 \001(\t\022\017\n\007kick_id\030\004 \001(\005\022\021\n\t"
-  "kick_nick\030\005 \001(\t\"U\n\032MsgPvpTableChangeOwne"
-  "rResp\022\020\n\010table_id\030\001 \001(\005\022\020\n\010owner_id\030\002 \001("
-  "\005\022\023\n\013is_activate\030\003 \001(\010b\006proto3"
+  "\001(\005\022\020\n\010table_no\030\003 \001(\005\022\017\n\007user_id\030\004 \001(\005\022\022"
+  "\n\nplayer_num\030\005 \001(\005\"s\n\026MsgPvpStandUpTable"
+  "Resp\022\020\n\010ret_code\030\001 \001(\005\022\020\n\010table_id\030\002 \001(\005"
+  "\022\020\n\010table_no\030\003 \001(\005\022\017\n\007user_id\030\004 \001(\005\022\022\n\np"
+  "layer_num\030\005 \001(\005\"N\n\026MsgPvpDestroyTableRes"
+  "p\022\020\n\010ret_code\030\001 \001(\005\022\020\n\010table_id\030\002 \001(\005\022\020\n"
+  "\010table_no\030\003 \001(\005\"p\n\022MsgPvpKickUserResp\022\020\n"
+  "\010ret_code\030\001 \001(\005\022\020\n\010owner_id\030\002 \001(\005\022\022\n\nown"
+  "er_nick\030\003 \001(\t\022\017\n\007kick_id\030\004 \001(\005\022\021\n\tkick_n"
+  "ick\030\005 \001(\t\"U\n\032MsgPvpTableChangeOwnerResp\022"
+  "\020\n\010table_id\030\001 \001(\005\022\020\n\010owner_id\030\002 \001(\005\022\023\n\013i"
+  "s_activate\030\003 \001(\010b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Game_2eproto_deps[1] = {
 };
@@ -739,7 +745,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Gam
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Game_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Game_2eproto = {
-  false, false, descriptor_table_protodef_Game_2eproto, "Game.proto", 2230,
+  false, false, descriptor_table_protodef_Game_2eproto, "Game.proto", 2304,
   &descriptor_table_Game_2eproto_once, descriptor_table_Game_2eproto_sccs, descriptor_table_Game_2eproto_deps, 22, 0,
   schemas, file_default_instances, TableStruct_Game_2eproto::offsets,
   file_level_metadata_Game_2eproto, 22, file_level_enum_descriptors_Game_2eproto, file_level_service_descriptors_Game_2eproto,
@@ -5744,16 +5750,16 @@ MsgPvpJoinTableResp::MsgPvpJoinTableResp(const MsgPvpJoinTableResp& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&ret_code_, &from.ret_code_,
-    static_cast<size_t>(reinterpret_cast<char*>(&table_no_) -
-    reinterpret_cast<char*>(&ret_code_)) + sizeof(table_no_));
+    static_cast<size_t>(reinterpret_cast<char*>(&player_num_) -
+    reinterpret_cast<char*>(&ret_code_)) + sizeof(player_num_));
   // @@protoc_insertion_point(copy_constructor:MsgPvpJoinTableResp)
 }
 
 void MsgPvpJoinTableResp::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&ret_code_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&table_no_) -
-      reinterpret_cast<char*>(&ret_code_)) + sizeof(table_no_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&player_num_) -
+      reinterpret_cast<char*>(&ret_code_)) + sizeof(player_num_));
 }
 
 MsgPvpJoinTableResp::~MsgPvpJoinTableResp() {
@@ -5788,8 +5794,8 @@ void MsgPvpJoinTableResp::Clear() {
   (void) cached_has_bits;
 
   ::memset(&ret_code_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&table_no_) -
-      reinterpret_cast<char*>(&ret_code_)) + sizeof(table_no_));
+      reinterpret_cast<char*>(&player_num_) -
+      reinterpret_cast<char*>(&ret_code_)) + sizeof(player_num_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -5818,6 +5824,20 @@ const char* MsgPvpJoinTableResp::_InternalParse(const char* ptr, ::PROTOBUF_NAME
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           table_no_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 user_id = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 player_num = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          player_num_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -5867,6 +5887,18 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_table_no(), target);
   }
 
+  // int32 user_id = 4;
+  if (this->user_id() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_user_id(), target);
+  }
+
+  // int32 player_num = 5;
+  if (this->player_num() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_player_num(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -5902,6 +5934,20 @@ size_t MsgPvpJoinTableResp::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_table_no());
+  }
+
+  // int32 user_id = 4;
+  if (this->user_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_user_id());
+  }
+
+  // int32 player_num = 5;
+  if (this->player_num() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_player_num());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -5944,6 +5990,12 @@ void MsgPvpJoinTableResp::MergeFrom(const MsgPvpJoinTableResp& from) {
   if (from.table_no() != 0) {
     _internal_set_table_no(from._internal_table_no());
   }
+  if (from.user_id() != 0) {
+    _internal_set_user_id(from._internal_user_id());
+  }
+  if (from.player_num() != 0) {
+    _internal_set_player_num(from._internal_player_num());
+  }
 }
 
 void MsgPvpJoinTableResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -5968,8 +6020,8 @@ void MsgPvpJoinTableResp::InternalSwap(MsgPvpJoinTableResp* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgPvpJoinTableResp, table_no_)
-      + sizeof(MsgPvpJoinTableResp::table_no_)
+      PROTOBUF_FIELD_OFFSET(MsgPvpJoinTableResp, player_num_)
+      + sizeof(MsgPvpJoinTableResp::player_num_)
       - PROTOBUF_FIELD_OFFSET(MsgPvpJoinTableResp, ret_code_)>(
           reinterpret_cast<char*>(&ret_code_),
           reinterpret_cast<char*>(&other->ret_code_));
@@ -5996,16 +6048,16 @@ MsgPvpStandUpTableResp::MsgPvpStandUpTableResp(const MsgPvpStandUpTableResp& fro
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&ret_code_, &from.ret_code_,
-    static_cast<size_t>(reinterpret_cast<char*>(&table_no_) -
-    reinterpret_cast<char*>(&ret_code_)) + sizeof(table_no_));
+    static_cast<size_t>(reinterpret_cast<char*>(&player_num_) -
+    reinterpret_cast<char*>(&ret_code_)) + sizeof(player_num_));
   // @@protoc_insertion_point(copy_constructor:MsgPvpStandUpTableResp)
 }
 
 void MsgPvpStandUpTableResp::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&ret_code_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&table_no_) -
-      reinterpret_cast<char*>(&ret_code_)) + sizeof(table_no_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&player_num_) -
+      reinterpret_cast<char*>(&ret_code_)) + sizeof(player_num_));
 }
 
 MsgPvpStandUpTableResp::~MsgPvpStandUpTableResp() {
@@ -6040,8 +6092,8 @@ void MsgPvpStandUpTableResp::Clear() {
   (void) cached_has_bits;
 
   ::memset(&ret_code_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&table_no_) -
-      reinterpret_cast<char*>(&ret_code_)) + sizeof(table_no_));
+      reinterpret_cast<char*>(&player_num_) -
+      reinterpret_cast<char*>(&ret_code_)) + sizeof(player_num_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -6070,6 +6122,20 @@ const char* MsgPvpStandUpTableResp::_InternalParse(const char* ptr, ::PROTOBUF_N
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           table_no_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 user_id = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 player_num = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          player_num_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -6119,6 +6185,18 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_table_no(), target);
   }
 
+  // int32 user_id = 4;
+  if (this->user_id() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_user_id(), target);
+  }
+
+  // int32 player_num = 5;
+  if (this->player_num() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_player_num(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -6154,6 +6232,20 @@ size_t MsgPvpStandUpTableResp::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_table_no());
+  }
+
+  // int32 user_id = 4;
+  if (this->user_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_user_id());
+  }
+
+  // int32 player_num = 5;
+  if (this->player_num() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_player_num());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -6196,6 +6288,12 @@ void MsgPvpStandUpTableResp::MergeFrom(const MsgPvpStandUpTableResp& from) {
   if (from.table_no() != 0) {
     _internal_set_table_no(from._internal_table_no());
   }
+  if (from.user_id() != 0) {
+    _internal_set_user_id(from._internal_user_id());
+  }
+  if (from.player_num() != 0) {
+    _internal_set_player_num(from._internal_player_num());
+  }
 }
 
 void MsgPvpStandUpTableResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -6220,8 +6318,8 @@ void MsgPvpStandUpTableResp::InternalSwap(MsgPvpStandUpTableResp* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgPvpStandUpTableResp, table_no_)
-      + sizeof(MsgPvpStandUpTableResp::table_no_)
+      PROTOBUF_FIELD_OFFSET(MsgPvpStandUpTableResp, player_num_)
+      + sizeof(MsgPvpStandUpTableResp::player_num_)
       - PROTOBUF_FIELD_OFFSET(MsgPvpStandUpTableResp, ret_code_)>(
           reinterpret_cast<char*>(&ret_code_),
           reinterpret_cast<char*>(&other->ret_code_));

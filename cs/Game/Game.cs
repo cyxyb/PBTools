@@ -61,17 +61,19 @@ public static partial class GameReflection {
           "KAkSEQoJcGFyYV9sc2l0GAcgAygFIk8KFU1zZ1B2cENyZWF0ZVRhYmxlUmVz",
           "cBIQCghyZXRfY29kZRgBIAEoBRIkCgp0YWJsZV9pbmZvGAIgASgLMhAuTXNn",
           "UHZwVGFibGVJbmZvIkcKD01zZ1B2cEpvaW5UYWJsZRIQCgh0YWJsZV9pZBgB",
-          "IAEoBRIQCgh0YWJsZV9ubxgCIAEoBRIQCghwYXNzd29yZBgDIAEoCSJLChNN",
+          "IAEoBRIQCgh0YWJsZV9ubxgCIAEoBRIQCghwYXNzd29yZBgDIAEoCSJwChNN",
           "c2dQdnBKb2luVGFibGVSZXNwEhAKCHJldF9jb2RlGAEgASgFEhAKCHRhYmxl",
-          "X2lkGAIgASgFEhAKCHRhYmxlX25vGAMgASgFIk4KFk1zZ1B2cFN0YW5kVXBU",
-          "YWJsZVJlc3ASEAoIcmV0X2NvZGUYASABKAUSEAoIdGFibGVfaWQYAiABKAUS",
-          "EAoIdGFibGVfbm8YAyABKAUiTgoWTXNnUHZwRGVzdHJveVRhYmxlUmVzcBIQ",
-          "CghyZXRfY29kZRgBIAEoBRIQCgh0YWJsZV9pZBgCIAEoBRIQCgh0YWJsZV9u",
-          "bxgDIAEoBSJwChJNc2dQdnBLaWNrVXNlclJlc3ASEAoIcmV0X2NvZGUYASAB",
-          "KAUSEAoIb3duZXJfaWQYAiABKAUSEgoKb3duZXJfbmljaxgDIAEoCRIPCgdr",
-          "aWNrX2lkGAQgASgFEhEKCWtpY2tfbmljaxgFIAEoCSJVChpNc2dQdnBUYWJs",
-          "ZUNoYW5nZU93bmVyUmVzcBIQCgh0YWJsZV9pZBgBIAEoBRIQCghvd25lcl9p",
-          "ZBgCIAEoBRITCgtpc19hY3RpdmF0ZRgDIAEoCGIGcHJvdG8z"));
+          "X2lkGAIgASgFEhAKCHRhYmxlX25vGAMgASgFEg8KB3VzZXJfaWQYBCABKAUS",
+          "EgoKcGxheWVyX251bRgFIAEoBSJzChZNc2dQdnBTdGFuZFVwVGFibGVSZXNw",
+          "EhAKCHJldF9jb2RlGAEgASgFEhAKCHRhYmxlX2lkGAIgASgFEhAKCHRhYmxl",
+          "X25vGAMgASgFEg8KB3VzZXJfaWQYBCABKAUSEgoKcGxheWVyX251bRgFIAEo",
+          "BSJOChZNc2dQdnBEZXN0cm95VGFibGVSZXNwEhAKCHJldF9jb2RlGAEgASgF",
+          "EhAKCHRhYmxlX2lkGAIgASgFEhAKCHRhYmxlX25vGAMgASgFInAKEk1zZ1B2",
+          "cEtpY2tVc2VyUmVzcBIQCghyZXRfY29kZRgBIAEoBRIQCghvd25lcl9pZBgC",
+          "IAEoBRISCgpvd25lcl9uaWNrGAMgASgJEg8KB2tpY2tfaWQYBCABKAUSEQoJ",
+          "a2lja19uaWNrGAUgASgJIlUKGk1zZ1B2cFRhYmxlQ2hhbmdlT3duZXJSZXNw",
+          "EhAKCHRhYmxlX2lkGAEgASgFEhAKCG93bmVyX2lkGAIgASgFEhMKC2lzX2Fj",
+          "dGl2YXRlGAMgASgIYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -92,8 +94,8 @@ public static partial class GameReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpCreateTable), global::MsgPvpCreateTable.Parser, new[]{ "IsPrivate", "TableName", "ChairNum", "Password", "ParaLsit" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpCreateTableResp), global::MsgPvpCreateTableResp.Parser, new[]{ "RetCode", "TableInfo" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpJoinTable), global::MsgPvpJoinTable.Parser, new[]{ "TableId", "TableNo", "Password" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpJoinTableResp), global::MsgPvpJoinTableResp.Parser, new[]{ "RetCode", "TableId", "TableNo" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpStandUpTableResp), global::MsgPvpStandUpTableResp.Parser, new[]{ "RetCode", "TableId", "TableNo" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpJoinTableResp), global::MsgPvpJoinTableResp.Parser, new[]{ "RetCode", "TableId", "TableNo", "UserId", "PlayerNum" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpStandUpTableResp), global::MsgPvpStandUpTableResp.Parser, new[]{ "RetCode", "TableId", "TableNo", "UserId", "PlayerNum" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpDestroyTableResp), global::MsgPvpDestroyTableResp.Parser, new[]{ "RetCode", "TableId", "TableNo" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpKickUserResp), global::MsgPvpKickUserResp.Parser, new[]{ "RetCode", "OwnerId", "OwnerNick", "KickId", "KickNick" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpTableChangeOwnerResp), global::MsgPvpTableChangeOwnerResp.Parser, new[]{ "TableId", "OwnerId", "IsActivate" }, null, null, null, null)
@@ -5292,6 +5294,8 @@ public sealed partial class MsgPvpJoinTableResp : pb::IMessage<MsgPvpJoinTableRe
     retCode_ = other.retCode_;
     tableId_ = other.tableId_;
     tableNo_ = other.tableNo_;
+    userId_ = other.userId_;
+    playerNum_ = other.playerNum_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -5342,6 +5346,34 @@ public sealed partial class MsgPvpJoinTableResp : pb::IMessage<MsgPvpJoinTableRe
     }
   }
 
+  /// <summary>Field number for the "user_id" field.</summary>
+  public const int UserIdFieldNumber = 4;
+  private int userId_;
+  /// <summary>
+  ///用户ID
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int UserId {
+    get { return userId_; }
+    set {
+      userId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "player_num" field.</summary>
+  public const int PlayerNumFieldNumber = 5;
+  private int playerNum_;
+  /// <summary>
+  ///剩余数量
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int PlayerNum {
+    get { return playerNum_; }
+    set {
+      playerNum_ = value;
+    }
+  }
+
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as MsgPvpJoinTableResp);
@@ -5358,6 +5390,8 @@ public sealed partial class MsgPvpJoinTableResp : pb::IMessage<MsgPvpJoinTableRe
     if (RetCode != other.RetCode) return false;
     if (TableId != other.TableId) return false;
     if (TableNo != other.TableNo) return false;
+    if (UserId != other.UserId) return false;
+    if (PlayerNum != other.PlayerNum) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -5367,6 +5401,8 @@ public sealed partial class MsgPvpJoinTableResp : pb::IMessage<MsgPvpJoinTableRe
     if (RetCode != 0) hash ^= RetCode.GetHashCode();
     if (TableId != 0) hash ^= TableId.GetHashCode();
     if (TableNo != 0) hash ^= TableNo.GetHashCode();
+    if (UserId != 0) hash ^= UserId.GetHashCode();
+    if (PlayerNum != 0) hash ^= PlayerNum.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -5395,6 +5431,14 @@ public sealed partial class MsgPvpJoinTableResp : pb::IMessage<MsgPvpJoinTableRe
       output.WriteRawTag(24);
       output.WriteInt32(TableNo);
     }
+    if (UserId != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(UserId);
+    }
+    if (PlayerNum != 0) {
+      output.WriteRawTag(40);
+      output.WriteInt32(PlayerNum);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -5416,6 +5460,14 @@ public sealed partial class MsgPvpJoinTableResp : pb::IMessage<MsgPvpJoinTableRe
       output.WriteRawTag(24);
       output.WriteInt32(TableNo);
     }
+    if (UserId != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(UserId);
+    }
+    if (PlayerNum != 0) {
+      output.WriteRawTag(40);
+      output.WriteInt32(PlayerNum);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -5433,6 +5485,12 @@ public sealed partial class MsgPvpJoinTableResp : pb::IMessage<MsgPvpJoinTableRe
     }
     if (TableNo != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(TableNo);
+    }
+    if (UserId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserId);
+    }
+    if (PlayerNum != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(PlayerNum);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -5453,6 +5511,12 @@ public sealed partial class MsgPvpJoinTableResp : pb::IMessage<MsgPvpJoinTableRe
     }
     if (other.TableNo != 0) {
       TableNo = other.TableNo;
+    }
+    if (other.UserId != 0) {
+      UserId = other.UserId;
+    }
+    if (other.PlayerNum != 0) {
+      PlayerNum = other.PlayerNum;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -5480,6 +5544,14 @@ public sealed partial class MsgPvpJoinTableResp : pb::IMessage<MsgPvpJoinTableRe
           TableNo = input.ReadInt32();
           break;
         }
+        case 32: {
+          UserId = input.ReadInt32();
+          break;
+        }
+        case 40: {
+          PlayerNum = input.ReadInt32();
+          break;
+        }
       }
     }
   #endif
@@ -5504,6 +5576,14 @@ public sealed partial class MsgPvpJoinTableResp : pb::IMessage<MsgPvpJoinTableRe
         }
         case 24: {
           TableNo = input.ReadInt32();
+          break;
+        }
+        case 32: {
+          UserId = input.ReadInt32();
+          break;
+        }
+        case 40: {
+          PlayerNum = input.ReadInt32();
           break;
         }
       }
@@ -5548,6 +5628,8 @@ public sealed partial class MsgPvpStandUpTableResp : pb::IMessage<MsgPvpStandUpT
     retCode_ = other.retCode_;
     tableId_ = other.tableId_;
     tableNo_ = other.tableNo_;
+    userId_ = other.userId_;
+    playerNum_ = other.playerNum_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -5598,6 +5680,34 @@ public sealed partial class MsgPvpStandUpTableResp : pb::IMessage<MsgPvpStandUpT
     }
   }
 
+  /// <summary>Field number for the "user_id" field.</summary>
+  public const int UserIdFieldNumber = 4;
+  private int userId_;
+  /// <summary>
+  ///用户ID
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int UserId {
+    get { return userId_; }
+    set {
+      userId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "player_num" field.</summary>
+  public const int PlayerNumFieldNumber = 5;
+  private int playerNum_;
+  /// <summary>
+  ///剩余数量
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int PlayerNum {
+    get { return playerNum_; }
+    set {
+      playerNum_ = value;
+    }
+  }
+
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as MsgPvpStandUpTableResp);
@@ -5614,6 +5724,8 @@ public sealed partial class MsgPvpStandUpTableResp : pb::IMessage<MsgPvpStandUpT
     if (RetCode != other.RetCode) return false;
     if (TableId != other.TableId) return false;
     if (TableNo != other.TableNo) return false;
+    if (UserId != other.UserId) return false;
+    if (PlayerNum != other.PlayerNum) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -5623,6 +5735,8 @@ public sealed partial class MsgPvpStandUpTableResp : pb::IMessage<MsgPvpStandUpT
     if (RetCode != 0) hash ^= RetCode.GetHashCode();
     if (TableId != 0) hash ^= TableId.GetHashCode();
     if (TableNo != 0) hash ^= TableNo.GetHashCode();
+    if (UserId != 0) hash ^= UserId.GetHashCode();
+    if (PlayerNum != 0) hash ^= PlayerNum.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -5651,6 +5765,14 @@ public sealed partial class MsgPvpStandUpTableResp : pb::IMessage<MsgPvpStandUpT
       output.WriteRawTag(24);
       output.WriteInt32(TableNo);
     }
+    if (UserId != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(UserId);
+    }
+    if (PlayerNum != 0) {
+      output.WriteRawTag(40);
+      output.WriteInt32(PlayerNum);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -5672,6 +5794,14 @@ public sealed partial class MsgPvpStandUpTableResp : pb::IMessage<MsgPvpStandUpT
       output.WriteRawTag(24);
       output.WriteInt32(TableNo);
     }
+    if (UserId != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(UserId);
+    }
+    if (PlayerNum != 0) {
+      output.WriteRawTag(40);
+      output.WriteInt32(PlayerNum);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -5689,6 +5819,12 @@ public sealed partial class MsgPvpStandUpTableResp : pb::IMessage<MsgPvpStandUpT
     }
     if (TableNo != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(TableNo);
+    }
+    if (UserId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserId);
+    }
+    if (PlayerNum != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(PlayerNum);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -5709,6 +5845,12 @@ public sealed partial class MsgPvpStandUpTableResp : pb::IMessage<MsgPvpStandUpT
     }
     if (other.TableNo != 0) {
       TableNo = other.TableNo;
+    }
+    if (other.UserId != 0) {
+      UserId = other.UserId;
+    }
+    if (other.PlayerNum != 0) {
+      PlayerNum = other.PlayerNum;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -5736,6 +5878,14 @@ public sealed partial class MsgPvpStandUpTableResp : pb::IMessage<MsgPvpStandUpT
           TableNo = input.ReadInt32();
           break;
         }
+        case 32: {
+          UserId = input.ReadInt32();
+          break;
+        }
+        case 40: {
+          PlayerNum = input.ReadInt32();
+          break;
+        }
       }
     }
   #endif
@@ -5760,6 +5910,14 @@ public sealed partial class MsgPvpStandUpTableResp : pb::IMessage<MsgPvpStandUpT
         }
         case 24: {
           TableNo = input.ReadInt32();
+          break;
+        }
+        case 32: {
+          UserId = input.ReadInt32();
+          break;
+        }
+        case 40: {
+          PlayerNum = input.ReadInt32();
           break;
         }
       }

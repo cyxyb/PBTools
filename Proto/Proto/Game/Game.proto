@@ -170,6 +170,8 @@ message MsgPvpJoinTableResp
 	int32	ret_code		= 1;	//返回码	非零失败
 	int32	table_id		= 2;	//桌子id
 	int32	table_no		= 3;	//桌子编号
+	int32	user_id			= 4;	//用户ID
+	int32	player_num		= 5;	//剩余数量
 }
 //pvp离开桌子
 message MsgPvpStandUpTableResp
@@ -177,6 +179,8 @@ message MsgPvpStandUpTableResp
 	int32	ret_code		= 1;	//返回码	非零失败
 	int32	table_id		= 2;	//桌子id
 	int32	table_no		= 3;	//桌子编号
+	int32	user_id			= 4;	//用户ID
+	int32	player_num		= 5;	//剩余数量
 }
 
 //pvp解放桌子

@@ -3339,6 +3339,8 @@ class MsgPvpJoinTableResp PROTOBUF_FINAL :
     kRetCodeFieldNumber = 1,
     kTableIdFieldNumber = 2,
     kTableNoFieldNumber = 3,
+    kUserIdFieldNumber = 4,
+    kPlayerNumFieldNumber = 5,
   };
   // int32 ret_code = 1;
   void clear_ret_code();
@@ -3367,6 +3369,24 @@ class MsgPvpJoinTableResp PROTOBUF_FINAL :
   void _internal_set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 user_id = 4;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 player_num = 5;
+  void clear_player_num();
+  ::PROTOBUF_NAMESPACE_ID::int32 player_num() const;
+  void set_player_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_player_num() const;
+  void _internal_set_player_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgPvpJoinTableResp)
  private:
   class _Internal;
@@ -3377,6 +3397,8 @@ class MsgPvpJoinTableResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 ret_code_;
   ::PROTOBUF_NAMESPACE_ID::int32 table_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 table_no_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 player_num_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Game_2eproto;
 };
@@ -3497,6 +3519,8 @@ class MsgPvpStandUpTableResp PROTOBUF_FINAL :
     kRetCodeFieldNumber = 1,
     kTableIdFieldNumber = 2,
     kTableNoFieldNumber = 3,
+    kUserIdFieldNumber = 4,
+    kPlayerNumFieldNumber = 5,
   };
   // int32 ret_code = 1;
   void clear_ret_code();
@@ -3525,6 +3549,24 @@ class MsgPvpStandUpTableResp PROTOBUF_FINAL :
   void _internal_set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 user_id = 4;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 player_num = 5;
+  void clear_player_num();
+  ::PROTOBUF_NAMESPACE_ID::int32 player_num() const;
+  void set_player_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_player_num() const;
+  void _internal_set_player_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgPvpStandUpTableResp)
  private:
   class _Internal;
@@ -3535,6 +3577,8 @@ class MsgPvpStandUpTableResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 ret_code_;
   ::PROTOBUF_NAMESPACE_ID::int32 table_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 table_no_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 player_num_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Game_2eproto;
 };
@@ -6291,6 +6335,46 @@ inline void MsgPvpJoinTableResp::set_table_no(::PROTOBUF_NAMESPACE_ID::int32 val
   // @@protoc_insertion_point(field_set:MsgPvpJoinTableResp.table_no)
 }
 
+// int32 user_id = 4;
+inline void MsgPvpJoinTableResp::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpJoinTableResp::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpJoinTableResp::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgPvpJoinTableResp.user_id)
+  return _internal_user_id();
+}
+inline void MsgPvpJoinTableResp::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgPvpJoinTableResp::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgPvpJoinTableResp.user_id)
+}
+
+// int32 player_num = 5;
+inline void MsgPvpJoinTableResp::clear_player_num() {
+  player_num_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpJoinTableResp::_internal_player_num() const {
+  return player_num_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpJoinTableResp::player_num() const {
+  // @@protoc_insertion_point(field_get:MsgPvpJoinTableResp.player_num)
+  return _internal_player_num();
+}
+inline void MsgPvpJoinTableResp::_internal_set_player_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  player_num_ = value;
+}
+inline void MsgPvpJoinTableResp::set_player_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_player_num(value);
+  // @@protoc_insertion_point(field_set:MsgPvpJoinTableResp.player_num)
+}
+
 // -------------------------------------------------------------------
 
 // MsgPvpStandUpTableResp
@@ -6353,6 +6437,46 @@ inline void MsgPvpStandUpTableResp::_internal_set_table_no(::PROTOBUF_NAMESPACE_
 inline void MsgPvpStandUpTableResp::set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_table_no(value);
   // @@protoc_insertion_point(field_set:MsgPvpStandUpTableResp.table_no)
+}
+
+// int32 user_id = 4;
+inline void MsgPvpStandUpTableResp::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpStandUpTableResp::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpStandUpTableResp::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgPvpStandUpTableResp.user_id)
+  return _internal_user_id();
+}
+inline void MsgPvpStandUpTableResp::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgPvpStandUpTableResp::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgPvpStandUpTableResp.user_id)
+}
+
+// int32 player_num = 5;
+inline void MsgPvpStandUpTableResp::clear_player_num() {
+  player_num_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpStandUpTableResp::_internal_player_num() const {
+  return player_num_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpStandUpTableResp::player_num() const {
+  // @@protoc_insertion_point(field_get:MsgPvpStandUpTableResp.player_num)
+  return _internal_player_num();
+}
+inline void MsgPvpStandUpTableResp::_internal_set_player_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  player_num_ = value;
+}
+inline void MsgPvpStandUpTableResp::set_player_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_player_num(value);
+  // @@protoc_insertion_point(field_set:MsgPvpStandUpTableResp.player_num)
 }
 
 // -------------------------------------------------------------------
