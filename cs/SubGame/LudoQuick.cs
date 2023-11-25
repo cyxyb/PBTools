@@ -45,11 +45,12 @@ namespace LudoQuick {
             "dXNlcl9pbmZvGAIgASgLMhMuTHVkb1F1aWNrLlVzZXJJbmZvEhEKCXVzZXJf",
             "Z29sZBgDIAEoAxILCgN3aW4YBCABKAMSCwoDYmV0GAUgASgDIjYKDU1zZ1Jl",
             "c3VsdFJlc3ASJQoGcmVzdWx0GAEgAygLMhUuTHVkb1F1aWNrLkdhbWVSZXN1",
-            "bHQqyAEKD0VNc2dJREx1ZG9RdWljaxIWChJNc2dJRF9GaXJzdFB1Ymxpc2gQ",
+            "bHQq3QEKD0VNc2dJREx1ZG9RdWljaxIWChJNc2dJRF9GaXJzdFB1Ymxpc2gQ",
             "ABIXChNTVUJfU0NfRmlyc3RQdWJsaXNoEAESFAoQU1VCX1NDX1N0YXJ0RGlj",
             "ZRACEhMKD1NVQl9DU19EaWNlSW5mbxADEhQKEFNVQl9TQ19UaHJvd0RpY2UQ",
             "BBIXChNTVUJfQ1NfT3BlcmF0ZVJvdXRlEAUSEwoPU1VCX1NDX0RpY2VJbmZv",
-            "EAYSFQoRU1VCX1NDX0dhbWVSZXN1bHQQB2IGcHJvdG8z"));
+            "EAYSFQoRU1VCX1NDX0dhbWVSZXN1bHQQBxITCg9TVUJfQ1NfT3B0aW9uYWwQ",
+            "CGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::LudoQuick.EMsgIDLudoQuick), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -105,6 +106,10 @@ namespace LudoQuick {
     ///游戏结果(MsgResultResp)
     /// </summary>
     [pbr::OriginalName("SUB_SC_GameResult")] SubScGameResult = 7,
+    /// <summary>
+    ///自选骰子(MsgCommonN32)
+    /// </summary>
+    [pbr::OriginalName("SUB_CS_Optional")] SubCsOptional = 8,
   }
 
   #endregion

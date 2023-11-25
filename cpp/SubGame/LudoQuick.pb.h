@@ -109,12 +109,13 @@ enum EMsgIDLudoQuick : int {
   SUB_CS_OperateRoute = 5,
   SUB_SC_DiceInfo = 6,
   SUB_SC_GameResult = 7,
+  SUB_CS_Optional = 8,
   EMsgIDLudoQuick_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDLudoQuick_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDLudoQuick_IsValid(int value);
 constexpr EMsgIDLudoQuick EMsgIDLudoQuick_MIN = MsgID_FirstPublish;
-constexpr EMsgIDLudoQuick EMsgIDLudoQuick_MAX = SUB_SC_GameResult;
+constexpr EMsgIDLudoQuick EMsgIDLudoQuick_MAX = SUB_CS_Optional;
 constexpr int EMsgIDLudoQuick_ARRAYSIZE = EMsgIDLudoQuick_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDLudoQuick_descriptor();
