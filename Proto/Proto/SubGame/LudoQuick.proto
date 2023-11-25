@@ -13,6 +13,7 @@ enum EMsgIDLudoQuick
 	SUB_CS_OperateRoute		= 5;		//操作棋子(MsgOperateRoute)
 	SUB_SC_DiceInfo			= 6;		//骰子结果(MsgDiceInfoResp)
 	SUB_SC_GameResult		= 7;		//游戏结果(MsgResultResp)
+	SUB_CS_Optional			= 8;		//自选骰子(MsgCommonN32)
 }
 //棋子信息
 message RouteInfo
