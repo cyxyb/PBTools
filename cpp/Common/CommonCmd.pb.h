@@ -239,20 +239,35 @@ enum EMsgIDGame : int {
   MsgIDGame_SendGameSence = 1010,
   MsgIDGame_SendGameSenceResp = 1011,
   MsgIDGame_NotifyMessageResp = 1012,
-  MsgIDGame_CreateRoom = 1013,
-  MsgIDGame_JoinRoom = 1014,
   MsgIDGame_QueryRecord = 1015,
   MsgIDGame_QueryRoundRecordResp = 1016,
   MsgIDGame_QueryDayRecordResp = 1017,
   MsgIDGame_AddOneRecord = 1018,
   MsgIDGame_NotifyPlayerOfflineResp = 1019,
   MsgIDGame_ChangeTable = 1020,
+  MsgIDGame_Pvp_GetRoomConfigResp = 1051,
+  MsgIDGame_Pvp_SendTableListResp = 1053,
+  MsgIDGame_Pvp_CreateTable = 1054,
+  MsgIDGame_Pvp_CreateTableResp = 1055,
+  MsgIDGame_Pvp_JoinTable = 1056,
+  MsgIDGame_Pvp_JoinTableResp = 1057,
+  MsgIDGame_Pvp_ActivateTable = 1058,
+  MsgIDGame_Pvp_ActivateTableResp = 1059,
+  MsgIDGame_Pvp_KickUser = 1060,
+  MsgIDGame_Pvp_KickUserResp = 1061,
+  MsgIDGame_Pvp_DestroyTable = 1062,
+  MsgIDGame_Pvp_DestroyTableResp = 1063,
+  MsgIDGame_Pvp_FastJoinTable = 1064,
+  MsgIDGame_Pvp_FastJoinTableResp = 1065,
+  MsgIDGame_Pvp_StandUp = 1066,
+  MsgIDGame_Pvp_StandUpResp = 1067,
+  MsgIDGame_Pvp_TableChangeOwunrResp = 1068,
   EMsgIDGame_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDGame_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDGame_IsValid(int value);
 constexpr EMsgIDGame EMsgIDGame_MIN = MsgIDGame_Null;
-constexpr EMsgIDGame EMsgIDGame_MAX = MsgIDGame_ChangeTable;
+constexpr EMsgIDGame EMsgIDGame_MAX = MsgIDGame_Pvp_TableChangeOwunrResp;
 constexpr int EMsgIDGame_ARRAYSIZE = EMsgIDGame_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDGame_descriptor();

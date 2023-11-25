@@ -89,3 +89,124 @@ message MsgJackpotInfo
 	int64	jackpot			= 1;	//奖池分数
 	int64	fake_jackpot	= 2;	//假奖池分数
 }
+
+//////////////////////////////////////////////////PVP//////////////////////////////////////////////
+//pvp桌子信息
+message MsgPvpTableInfo
+{
+	int32	table_id		= 1;	//桌子id
+	string	table_name		= 2;	//桌子名称						
+	int32	chair_num		= 3;	//人数限制						
+	int32	enter_num		= 4;	//已经进入数量
+	//int64	join_limit_min	= 5;	//进入房间金币下限				
+	//int64	join_limit_max	= 6;	//进入房间金币上限				
+	bool	is_private		= 7;	//私人桌						
+	string 	password		= 8;	//密码							
+	int32 	owner_id		= 9;	//房主id
+	int32	table_no		= 10;	//桌子编号
+
+	int64	value1			= 11;	//桌子特性						//进入房间金币下限				放在para_lsit的第一位
+	int64	value2			= 12;	//桌子特性
+	int64	value3			= 13;	//桌子特性
+	int64	value4			= 14;	//桌子特性
+	int64	value5			= 15;	//桌子特性
+	int64	value6			= 16;	//桌子特性
+	int64	value7			= 17;	//桌子特性
+	int64	value8			= 18;	//桌子特性
+}
+
+message MsgPvpRoomCfgItem
+{
+	int32	lag_key				= 1;	//前端查找多语言key
+	repeated int32 value_list	= 2;	//特性区间 数组
+}
+
+//pvp房间配置
+message MsgPvpRoomConfig
+{
+	int32	create_vip_limit					= 1;	//创建桌子vip限制
+	int32	chair_limit_min						= 2;	//创建桌子最小人数				
+	int32	chair_limit_max						= 3;	//创建桌子最大人数
+
+	repeated MsgPvpRoomCfgItem	para_lsit		= 11;	//桌子特性列表  		//进入房间金币下限				放在para_lsit的第一位
+}
+
+//pvp桌子列表
+message MsgPvpTableList
+{
+	repeated MsgPvpTableInfo table_list = 1;	
+}
+
+//pvp创建桌子配置
+message MsgPvpCreateTable
+{
+	bool	is_private							= 1;	//是否私人桌
+	string	table_name							= 2;	//桌子名称						
+	int32	chair_num							= 3;	//人数限制						
+	//int64	join_limit_min						= 4;	//进入房间金币下限				放在para_lsit的第一位
+	//int64	join_limit_max						= 5;	//进入房间金币上限				
+	string 	password							= 6;	//密码							
+	repeated int32			para_lsit			= 7;	//选定桌子特性列表
+}
+
+//pvp创建桌子
+message MsgPvpCreateTableResp
+{
+	int32	ret_code				= 1;	//返回码	非零失败
+	MsgPvpTableInfo	table_info		= 2;	//桌子信息
+}
+
+//pvp加入桌子
+message MsgPvpJoinTable
+{
+	int32	table_id		= 1;	//桌子id
+	int32	table_no		= 2;	//桌子编号
+	string 	password		= 3;	//密码
+}
+
+//pvp加入桌子
+message MsgPvpJoinTableResp
+{
+	int32	ret_code		= 1;	//返回码	非零失败
+	int32	table_id		= 2;	//桌子id
+	int32	table_no		= 3;	//桌子编号
+	int32	user_id			= 4;	//用户ID
+	int32	player_num		= 5;	//剩余数量
+}
+//pvp离开桌子
+message MsgPvpStandUpTableResp
+{
+	int32	ret_code		= 1;	//返回码	非零失败
+	int32	table_id		= 2;	//桌子id
+	int32	table_no		= 3;	//桌子编号
+	int32	user_id			= 4;	//用户ID
+	int32	player_num		= 5;	//剩余数量
+}
+
+//pvp解放桌子
+message MsgPvpDestroyTableResp
+{
+	int32	ret_code		= 1;	//返回码	非零失败
+	int32	table_id		= 2;	//桌子id
+	int32	table_no		= 3;	//桌子编号
+}
+
+//pvp桌子踢人
+message MsgPvpKickUserResp
+{
+	int32	ret_code		= 1;	//返回码	非零失败
+	int32	owner_id		= 2;	//房主ID
+	string	owner_nick		= 3;	//房主昵称
+	int32	kick_id			= 4;	//被踢ID
+	string	kick_nick		= 5;	//被踢昵称
+}
+
+//pvp房主变更
+message MsgPvpTableChangeOwnerResp
+{
+	int32	table_id		= 1;	//桌子ID
+	int32	owner_id		= 2;	//房主ID
+	bool	is_activate		= 3;	//是否激活
+}
+
+//////////////////////////////////////////////////PVP//////////////////////////////////////////////

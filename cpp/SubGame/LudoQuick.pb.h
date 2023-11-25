@@ -805,30 +805,11 @@ class MsgSceneInfoResp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kChessGridInfoFieldNumber = 3,
-    kUserInfoFieldNumber = 4,
+    kUserInfoFieldNumber = 3,
     kGameStateFieldNumber = 1,
     kTimeRemainingFieldNumber = 2,
   };
-  // repeated .LudoQuick.ChessGrid chess_grid_info = 3;
-  int chess_grid_info_size() const;
-  private:
-  int _internal_chess_grid_info_size() const;
-  public:
-  void clear_chess_grid_info();
-  ::LudoQuick::ChessGrid* mutable_chess_grid_info(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LudoQuick::ChessGrid >*
-      mutable_chess_grid_info();
-  private:
-  const ::LudoQuick::ChessGrid& _internal_chess_grid_info(int index) const;
-  ::LudoQuick::ChessGrid* _internal_add_chess_grid_info();
-  public:
-  const ::LudoQuick::ChessGrid& chess_grid_info(int index) const;
-  ::LudoQuick::ChessGrid* add_chess_grid_info();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LudoQuick::ChessGrid >&
-      chess_grid_info() const;
-
-  // repeated .LudoQuick.UserInfo user_info = 4;
+  // repeated .LudoQuick.UserInfo user_info = 3;
   int user_info_size() const;
   private:
   int _internal_user_info_size() const;
@@ -871,7 +852,6 @@ class MsgSceneInfoResp PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LudoQuick::ChessGrid > chess_grid_info_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LudoQuick::UserInfo > user_info_;
   ::PROTOBUF_NAMESPACE_ID::int32 game_state_;
   ::PROTOBUF_NAMESPACE_ID::int32 time_remaining_;
@@ -1437,6 +1417,7 @@ class MsgDiceInfoResp PROTOBUF_FINAL :
     kChessIdFieldNumber = 2,
     kRouteNumFieldNumber = 3,
     kPropIdFieldNumber = 4,
+    kCodeFieldNumber = 5,
   };
   // int32 chair_id = 1;
   void clear_chair_id();
@@ -1474,6 +1455,15 @@ class MsgDiceInfoResp PROTOBUF_FINAL :
   void _internal_set_prop_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 code = 5;
+  void clear_code();
+  ::PROTOBUF_NAMESPACE_ID::int32 code() const;
+  void set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_code() const;
+  void _internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:LudoQuick.MsgDiceInfoResp)
  private:
   class _Internal;
@@ -1485,6 +1475,7 @@ class MsgDiceInfoResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 chess_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 route_num_;
   ::PROTOBUF_NAMESPACE_ID::int32 prop_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 code_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_LudoQuick_2eproto;
 };
@@ -2224,46 +2215,7 @@ inline void MsgSceneInfoResp::set_time_remaining(::PROTOBUF_NAMESPACE_ID::int32 
   // @@protoc_insertion_point(field_set:LudoQuick.MsgSceneInfoResp.time_remaining)
 }
 
-// repeated .LudoQuick.ChessGrid chess_grid_info = 3;
-inline int MsgSceneInfoResp::_internal_chess_grid_info_size() const {
-  return chess_grid_info_.size();
-}
-inline int MsgSceneInfoResp::chess_grid_info_size() const {
-  return _internal_chess_grid_info_size();
-}
-inline void MsgSceneInfoResp::clear_chess_grid_info() {
-  chess_grid_info_.Clear();
-}
-inline ::LudoQuick::ChessGrid* MsgSceneInfoResp::mutable_chess_grid_info(int index) {
-  // @@protoc_insertion_point(field_mutable:LudoQuick.MsgSceneInfoResp.chess_grid_info)
-  return chess_grid_info_.Mutable(index);
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LudoQuick::ChessGrid >*
-MsgSceneInfoResp::mutable_chess_grid_info() {
-  // @@protoc_insertion_point(field_mutable_list:LudoQuick.MsgSceneInfoResp.chess_grid_info)
-  return &chess_grid_info_;
-}
-inline const ::LudoQuick::ChessGrid& MsgSceneInfoResp::_internal_chess_grid_info(int index) const {
-  return chess_grid_info_.Get(index);
-}
-inline const ::LudoQuick::ChessGrid& MsgSceneInfoResp::chess_grid_info(int index) const {
-  // @@protoc_insertion_point(field_get:LudoQuick.MsgSceneInfoResp.chess_grid_info)
-  return _internal_chess_grid_info(index);
-}
-inline ::LudoQuick::ChessGrid* MsgSceneInfoResp::_internal_add_chess_grid_info() {
-  return chess_grid_info_.Add();
-}
-inline ::LudoQuick::ChessGrid* MsgSceneInfoResp::add_chess_grid_info() {
-  // @@protoc_insertion_point(field_add:LudoQuick.MsgSceneInfoResp.chess_grid_info)
-  return _internal_add_chess_grid_info();
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LudoQuick::ChessGrid >&
-MsgSceneInfoResp::chess_grid_info() const {
-  // @@protoc_insertion_point(field_list:LudoQuick.MsgSceneInfoResp.chess_grid_info)
-  return chess_grid_info_;
-}
-
-// repeated .LudoQuick.UserInfo user_info = 4;
+// repeated .LudoQuick.UserInfo user_info = 3;
 inline int MsgSceneInfoResp::_internal_user_info_size() const {
   return user_info_.size();
 }
@@ -2516,6 +2468,26 @@ inline void MsgDiceInfoResp::_internal_set_prop_id(::PROTOBUF_NAMESPACE_ID::int3
 inline void MsgDiceInfoResp::set_prop_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_prop_id(value);
   // @@protoc_insertion_point(field_set:LudoQuick.MsgDiceInfoResp.prop_id)
+}
+
+// int32 code = 5;
+inline void MsgDiceInfoResp::clear_code() {
+  code_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDiceInfoResp::_internal_code() const {
+  return code_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDiceInfoResp::code() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.MsgDiceInfoResp.code)
+  return _internal_code();
+}
+inline void MsgDiceInfoResp::_internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  code_ = value;
+}
+inline void MsgDiceInfoResp::set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_code(value);
+  // @@protoc_insertion_point(field_set:LudoQuick.MsgDiceInfoResp.code)
 }
 
 // -------------------------------------------------------------------
