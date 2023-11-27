@@ -118,7 +118,8 @@ message MsgPvpTableInfo
 message MsgPvpRoomCfgItem
 {
 	int32	lag_key				= 1;	//前端查找多语言key
-	repeated int32 value_list	= 2;	//特性区间 数组
+	int32	clinet_open			= 2;	//前端是否启用
+	repeated int32 value_list	= 3;	//特性区间 数组
 }
 
 //pvp房间配置

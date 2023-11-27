@@ -50,30 +50,30 @@ public static partial class GameReflection {
           "KAUSEAoIdGFibGVfbm8YCiABKAUSDgoGdmFsdWUxGAsgASgDEg4KBnZhbHVl",
           "MhgMIAEoAxIOCgZ2YWx1ZTMYDSABKAMSDgoGdmFsdWU0GA4gASgDEg4KBnZh",
           "bHVlNRgPIAEoAxIOCgZ2YWx1ZTYYECABKAMSDgoGdmFsdWU3GBEgASgDEg4K",
-          "BnZhbHVlOBgSIAEoAyI4ChFNc2dQdnBSb29tQ2ZnSXRlbRIPCgdsYWdfa2V5",
-          "GAEgASgFEhIKCnZhbHVlX2xpc3QYAiADKAUihQEKEE1zZ1B2cFJvb21Db25m",
-          "aWcSGAoQY3JlYXRlX3ZpcF9saW1pdBgBIAEoBRIXCg9jaGFpcl9saW1pdF9t",
-          "aW4YAiABKAUSFwoPY2hhaXJfbGltaXRfbWF4GAMgASgFEiUKCXBhcmFfbHNp",
-          "dBgLIAMoCzISLk1zZ1B2cFJvb21DZmdJdGVtIjcKD01zZ1B2cFRhYmxlTGlz",
-          "dBIkCgp0YWJsZV9saXN0GAEgAygLMhAuTXNnUHZwVGFibGVJbmZvInMKEU1z",
-          "Z1B2cENyZWF0ZVRhYmxlEhIKCmlzX3ByaXZhdGUYASABKAgSEgoKdGFibGVf",
-          "bmFtZRgCIAEoCRIRCgljaGFpcl9udW0YAyABKAUSEAoIcGFzc3dvcmQYBiAB",
-          "KAkSEQoJcGFyYV9sc2l0GAcgAygFIk8KFU1zZ1B2cENyZWF0ZVRhYmxlUmVz",
-          "cBIQCghyZXRfY29kZRgBIAEoBRIkCgp0YWJsZV9pbmZvGAIgASgLMhAuTXNn",
-          "UHZwVGFibGVJbmZvIkcKD01zZ1B2cEpvaW5UYWJsZRIQCgh0YWJsZV9pZBgB",
-          "IAEoBRIQCgh0YWJsZV9ubxgCIAEoBRIQCghwYXNzd29yZBgDIAEoCSJwChNN",
-          "c2dQdnBKb2luVGFibGVSZXNwEhAKCHJldF9jb2RlGAEgASgFEhAKCHRhYmxl",
-          "X2lkGAIgASgFEhAKCHRhYmxlX25vGAMgASgFEg8KB3VzZXJfaWQYBCABKAUS",
-          "EgoKcGxheWVyX251bRgFIAEoBSJzChZNc2dQdnBTdGFuZFVwVGFibGVSZXNw",
-          "EhAKCHJldF9jb2RlGAEgASgFEhAKCHRhYmxlX2lkGAIgASgFEhAKCHRhYmxl",
-          "X25vGAMgASgFEg8KB3VzZXJfaWQYBCABKAUSEgoKcGxheWVyX251bRgFIAEo",
-          "BSJOChZNc2dQdnBEZXN0cm95VGFibGVSZXNwEhAKCHJldF9jb2RlGAEgASgF",
-          "EhAKCHRhYmxlX2lkGAIgASgFEhAKCHRhYmxlX25vGAMgASgFInAKEk1zZ1B2",
-          "cEtpY2tVc2VyUmVzcBIQCghyZXRfY29kZRgBIAEoBRIQCghvd25lcl9pZBgC",
-          "IAEoBRISCgpvd25lcl9uaWNrGAMgASgJEg8KB2tpY2tfaWQYBCABKAUSEQoJ",
-          "a2lja19uaWNrGAUgASgJIlUKGk1zZ1B2cFRhYmxlQ2hhbmdlT3duZXJSZXNw",
-          "EhAKCHRhYmxlX2lkGAEgASgFEhAKCG93bmVyX2lkGAIgASgFEhMKC2lzX2Fj",
-          "dGl2YXRlGAMgASgIYgZwcm90bzM="));
+          "BnZhbHVlOBgSIAEoAyJNChFNc2dQdnBSb29tQ2ZnSXRlbRIPCgdsYWdfa2V5",
+          "GAEgASgFEhMKC2NsaW5ldF9vcGVuGAIgASgFEhIKCnZhbHVlX2xpc3QYAyAD",
+          "KAUihQEKEE1zZ1B2cFJvb21Db25maWcSGAoQY3JlYXRlX3ZpcF9saW1pdBgB",
+          "IAEoBRIXCg9jaGFpcl9saW1pdF9taW4YAiABKAUSFwoPY2hhaXJfbGltaXRf",
+          "bWF4GAMgASgFEiUKCXBhcmFfbHNpdBgLIAMoCzISLk1zZ1B2cFJvb21DZmdJ",
+          "dGVtIjcKD01zZ1B2cFRhYmxlTGlzdBIkCgp0YWJsZV9saXN0GAEgAygLMhAu",
+          "TXNnUHZwVGFibGVJbmZvInMKEU1zZ1B2cENyZWF0ZVRhYmxlEhIKCmlzX3By",
+          "aXZhdGUYASABKAgSEgoKdGFibGVfbmFtZRgCIAEoCRIRCgljaGFpcl9udW0Y",
+          "AyABKAUSEAoIcGFzc3dvcmQYBiABKAkSEQoJcGFyYV9sc2l0GAcgAygFIk8K",
+          "FU1zZ1B2cENyZWF0ZVRhYmxlUmVzcBIQCghyZXRfY29kZRgBIAEoBRIkCgp0",
+          "YWJsZV9pbmZvGAIgASgLMhAuTXNnUHZwVGFibGVJbmZvIkcKD01zZ1B2cEpv",
+          "aW5UYWJsZRIQCgh0YWJsZV9pZBgBIAEoBRIQCgh0YWJsZV9ubxgCIAEoBRIQ",
+          "CghwYXNzd29yZBgDIAEoCSJwChNNc2dQdnBKb2luVGFibGVSZXNwEhAKCHJl",
+          "dF9jb2RlGAEgASgFEhAKCHRhYmxlX2lkGAIgASgFEhAKCHRhYmxlX25vGAMg",
+          "ASgFEg8KB3VzZXJfaWQYBCABKAUSEgoKcGxheWVyX251bRgFIAEoBSJzChZN",
+          "c2dQdnBTdGFuZFVwVGFibGVSZXNwEhAKCHJldF9jb2RlGAEgASgFEhAKCHRh",
+          "YmxlX2lkGAIgASgFEhAKCHRhYmxlX25vGAMgASgFEg8KB3VzZXJfaWQYBCAB",
+          "KAUSEgoKcGxheWVyX251bRgFIAEoBSJOChZNc2dQdnBEZXN0cm95VGFibGVS",
+          "ZXNwEhAKCHJldF9jb2RlGAEgASgFEhAKCHRhYmxlX2lkGAIgASgFEhAKCHRh",
+          "YmxlX25vGAMgASgFInAKEk1zZ1B2cEtpY2tVc2VyUmVzcBIQCghyZXRfY29k",
+          "ZRgBIAEoBRIQCghvd25lcl9pZBgCIAEoBRISCgpvd25lcl9uaWNrGAMgASgJ",
+          "Eg8KB2tpY2tfaWQYBCABKAUSEQoJa2lja19uaWNrGAUgASgJIlUKGk1zZ1B2",
+          "cFRhYmxlQ2hhbmdlT3duZXJSZXNwEhAKCHRhYmxlX2lkGAEgASgFEhAKCG93",
+          "bmVyX2lkGAIgASgFEhMKC2lzX2FjdGl2YXRlGAMgASgIYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -88,7 +88,7 @@ public static partial class GameReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgQueryRecord), global::MsgQueryRecord.Parser, new[]{ "Page", "Num", "Type" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgJackpotInfo), global::MsgJackpotInfo.Parser, new[]{ "Jackpot", "FakeJackpot" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpTableInfo), global::MsgPvpTableInfo.Parser, new[]{ "TableId", "TableName", "ChairNum", "EnterNum", "IsPrivate", "Password", "OwnerId", "TableNo", "Value1", "Value2", "Value3", "Value4", "Value5", "Value6", "Value7", "Value8" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpRoomCfgItem), global::MsgPvpRoomCfgItem.Parser, new[]{ "LagKey", "ValueList" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpRoomCfgItem), global::MsgPvpRoomCfgItem.Parser, new[]{ "LagKey", "ClinetOpen", "ValueList" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpRoomConfig), global::MsgPvpRoomConfig.Parser, new[]{ "CreateVipLimit", "ChairLimitMin", "ChairLimitMax", "ParaLsit" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpTableList), global::MsgPvpTableList.Parser, new[]{ "TableList" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpCreateTable), global::MsgPvpCreateTable.Parser, new[]{ "IsPrivate", "TableName", "ChairNum", "Password", "ParaLsit" }, null, null, null, null),
@@ -3828,6 +3828,7 @@ public sealed partial class MsgPvpRoomCfgItem : pb::IMessage<MsgPvpRoomCfgItem>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public MsgPvpRoomCfgItem(MsgPvpRoomCfgItem other) : this() {
     lagKey_ = other.lagKey_;
+    clinetOpen_ = other.clinetOpen_;
     valueList_ = other.valueList_.Clone();
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
@@ -3851,10 +3852,24 @@ public sealed partial class MsgPvpRoomCfgItem : pb::IMessage<MsgPvpRoomCfgItem>
     }
   }
 
+  /// <summary>Field number for the "clinet_open" field.</summary>
+  public const int ClinetOpenFieldNumber = 2;
+  private int clinetOpen_;
+  /// <summary>
+  ///前端是否启用
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int ClinetOpen {
+    get { return clinetOpen_; }
+    set {
+      clinetOpen_ = value;
+    }
+  }
+
   /// <summary>Field number for the "value_list" field.</summary>
-  public const int ValueListFieldNumber = 2;
+  public const int ValueListFieldNumber = 3;
   private static readonly pb::FieldCodec<int> _repeated_valueList_codec
-      = pb::FieldCodec.ForInt32(18);
+      = pb::FieldCodec.ForInt32(26);
   private readonly pbc::RepeatedField<int> valueList_ = new pbc::RepeatedField<int>();
   /// <summary>
   ///特性区间 数组
@@ -3878,6 +3893,7 @@ public sealed partial class MsgPvpRoomCfgItem : pb::IMessage<MsgPvpRoomCfgItem>
       return true;
     }
     if (LagKey != other.LagKey) return false;
+    if (ClinetOpen != other.ClinetOpen) return false;
     if(!valueList_.Equals(other.valueList_)) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
@@ -3886,6 +3902,7 @@ public sealed partial class MsgPvpRoomCfgItem : pb::IMessage<MsgPvpRoomCfgItem>
   public override int GetHashCode() {
     int hash = 1;
     if (LagKey != 0) hash ^= LagKey.GetHashCode();
+    if (ClinetOpen != 0) hash ^= ClinetOpen.GetHashCode();
     hash ^= valueList_.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
@@ -3907,6 +3924,10 @@ public sealed partial class MsgPvpRoomCfgItem : pb::IMessage<MsgPvpRoomCfgItem>
       output.WriteRawTag(8);
       output.WriteInt32(LagKey);
     }
+    if (ClinetOpen != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(ClinetOpen);
+    }
     valueList_.WriteTo(output, _repeated_valueList_codec);
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -3921,6 +3942,10 @@ public sealed partial class MsgPvpRoomCfgItem : pb::IMessage<MsgPvpRoomCfgItem>
       output.WriteRawTag(8);
       output.WriteInt32(LagKey);
     }
+    if (ClinetOpen != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(ClinetOpen);
+    }
     valueList_.WriteTo(ref output, _repeated_valueList_codec);
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
@@ -3933,6 +3958,9 @@ public sealed partial class MsgPvpRoomCfgItem : pb::IMessage<MsgPvpRoomCfgItem>
     int size = 0;
     if (LagKey != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(LagKey);
+    }
+    if (ClinetOpen != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(ClinetOpen);
     }
     size += valueList_.CalculateSize(_repeated_valueList_codec);
     if (_unknownFields != null) {
@@ -3948,6 +3976,9 @@ public sealed partial class MsgPvpRoomCfgItem : pb::IMessage<MsgPvpRoomCfgItem>
     }
     if (other.LagKey != 0) {
       LagKey = other.LagKey;
+    }
+    if (other.ClinetOpen != 0) {
+      ClinetOpen = other.ClinetOpen;
     }
     valueList_.Add(other.valueList_);
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -3968,8 +3999,12 @@ public sealed partial class MsgPvpRoomCfgItem : pb::IMessage<MsgPvpRoomCfgItem>
           LagKey = input.ReadInt32();
           break;
         }
-        case 18:
         case 16: {
+          ClinetOpen = input.ReadInt32();
+          break;
+        }
+        case 26:
+        case 24: {
           valueList_.AddEntriesFrom(input, _repeated_valueList_codec);
           break;
         }
@@ -3991,8 +4026,12 @@ public sealed partial class MsgPvpRoomCfgItem : pb::IMessage<MsgPvpRoomCfgItem>
           LagKey = input.ReadInt32();
           break;
         }
-        case 18:
         case 16: {
+          ClinetOpen = input.ReadInt32();
+          break;
+        }
+        case 26:
+        case 24: {
           valueList_.AddEntriesFrom(ref input, _repeated_valueList_codec);
           break;
         }
