@@ -335,12 +335,13 @@ const char descriptor_table_protodef_LudoQuick_2eproto[] PROTOBUF_SECTION_VARIAB
   "_info\030\002 \001(\0132\023.LudoQuick.UserInfo\022\021\n\tuser"
   "_gold\030\003 \001(\003\022\013\n\003win\030\004 \001(\003\022\013\n\003bet\030\005 \001(\003\"6\n"
   "\rMsgResultResp\022%\n\006result\030\001 \003(\0132\025.LudoQui"
-  "ck.GameResult*\310\001\n\017EMsgIDLudoQuick\022\026\n\022Msg"
+  "ck.GameResult*\335\001\n\017EMsgIDLudoQuick\022\026\n\022Msg"
   "ID_FirstPublish\020\000\022\027\n\023SUB_SC_FirstPublish"
   "\020\001\022\024\n\020SUB_SC_StartDice\020\002\022\023\n\017SUB_CS_DiceI"
   "nfo\020\003\022\024\n\020SUB_SC_ThrowDice\020\004\022\027\n\023SUB_CS_Op"
   "erateRoute\020\005\022\023\n\017SUB_SC_DiceInfo\020\006\022\025\n\021SUB"
-  "_SC_GameResult\020\007b\006proto3"
+  "_SC_GameResult\020\007\022\023\n\017SUB_CS_Optional\020\010b\006p"
+  "roto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_LudoQuick_2eproto_deps[1] = {
 };
@@ -358,7 +359,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Lud
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_LudoQuick_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_LudoQuick_2eproto = {
-  false, false, descriptor_table_protodef_LudoQuick_2eproto, "LudoQuick.proto", 1144,
+  false, false, descriptor_table_protodef_LudoQuick_2eproto, "LudoQuick.proto", 1165,
   &descriptor_table_LudoQuick_2eproto_once, descriptor_table_LudoQuick_2eproto_sccs, descriptor_table_LudoQuick_2eproto_deps, 10, 0,
   schemas, file_default_instances, TableStruct_LudoQuick_2eproto::offsets,
   file_level_metadata_LudoQuick_2eproto, 10, file_level_enum_descriptors_LudoQuick_2eproto, file_level_service_descriptors_LudoQuick_2eproto,
@@ -381,6 +382,7 @@ bool EMsgIDLudoQuick_IsValid(int value) {
     case 5:
     case 6:
     case 7:
+    case 8:
       return true;
     default:
       return false;
