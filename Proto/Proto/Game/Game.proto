@@ -99,7 +99,7 @@ message MsgPvpTableInfo
 	int32	chair_num		= 3;	//人数限制						
 	int32	enter_num		= 4;	//已经进入数量
 	//int64	join_limit_min	= 5;	//进入房间金币下限				
-	//int64	join_limit_max	= 6;	//进入房间金币上限				
+	bool	is_activate		= 6;	//是否激活				
 	bool	is_private		= 7;	//私人桌						
 	string 	password		= 8;	//密码							
 	int32 	owner_id		= 9;	//房主id

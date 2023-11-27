@@ -147,7 +147,8 @@ enum EMsgIDGame
 	MsgIDGame_SyncPlayersScoreResp		= 1009;		//同步桌子所有玩家分数(MsgSyncPlayersScore)
 	MsgIDGame_SendGameSence				= 1010;		//请求场景消息(MsgCommonBool)
 	MsgIDGame_SendGameSenceResp			= 1011;		//请求场景消息返回
-	MsgIDGame_NotifyMessageResp			= 1012;		//通用消息通知(MsgCommonN32)
+	MsgIDGame_NotifyMessageResp	
+			= 1012;		//通用消息通知(MsgCommonN32)
 	MsgIDGame_QueryRecord				= 1015;		//猜拳查询数据记录(MsgQueryRecord 1:每局数据 2:每日数据)
 	MsgIDGame_QueryRoundRecordResp		= 1016;		//猜拳每局数据数据记录(MsgTotalRoundData)
 	MsgIDGame_QueryDayRecordResp		= 1017;		//猜拳每日数据数据记录(MsgTotalDayData)

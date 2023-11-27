@@ -43,37 +43,38 @@ public static partial class GameReflection {
           "CXRvdGFsX251bRgBIAEoBRIfCgpkYWlseV9kYXRhGAIgAygLMgsuTXNnRGF5",
           "RGF0YSI5Cg5Nc2dRdWVyeVJlY29yZBIMCgRwYWdlGAEgASgFEgsKA251bRgC",
           "IAEoBRIMCgR0eXBlGAMgASgFIjcKDk1zZ0phY2twb3RJbmZvEg8KB2phY2tw",
-          "b3QYASABKAMSFAoMZmFrZV9qYWNrcG90GAIgASgDIqcCCg9Nc2dQdnBUYWJs",
+          "b3QYASABKAMSFAoMZmFrZV9qYWNrcG90GAIgASgDIrwCCg9Nc2dQdnBUYWJs",
           "ZUluZm8SEAoIdGFibGVfaWQYASABKAUSEgoKdGFibGVfbmFtZRgCIAEoCRIR",
-          "CgljaGFpcl9udW0YAyABKAUSEQoJZW50ZXJfbnVtGAQgASgFEhIKCmlzX3By",
-          "aXZhdGUYByABKAgSEAoIcGFzc3dvcmQYCCABKAkSEAoIb3duZXJfaWQYCSAB",
-          "KAUSEAoIdGFibGVfbm8YCiABKAUSDgoGdmFsdWUxGAsgASgDEg4KBnZhbHVl",
-          "MhgMIAEoAxIOCgZ2YWx1ZTMYDSABKAMSDgoGdmFsdWU0GA4gASgDEg4KBnZh",
-          "bHVlNRgPIAEoAxIOCgZ2YWx1ZTYYECABKAMSDgoGdmFsdWU3GBEgASgDEg4K",
-          "BnZhbHVlOBgSIAEoAyJNChFNc2dQdnBSb29tQ2ZnSXRlbRIPCgdsYWdfa2V5",
-          "GAEgASgFEhMKC2NsaW5ldF9vcGVuGAIgASgFEhIKCnZhbHVlX2xpc3QYAyAD",
-          "KAUihQEKEE1zZ1B2cFJvb21Db25maWcSGAoQY3JlYXRlX3ZpcF9saW1pdBgB",
-          "IAEoBRIXCg9jaGFpcl9saW1pdF9taW4YAiABKAUSFwoPY2hhaXJfbGltaXRf",
-          "bWF4GAMgASgFEiUKCXBhcmFfbHNpdBgLIAMoCzISLk1zZ1B2cFJvb21DZmdJ",
-          "dGVtIjcKD01zZ1B2cFRhYmxlTGlzdBIkCgp0YWJsZV9saXN0GAEgAygLMhAu",
-          "TXNnUHZwVGFibGVJbmZvInMKEU1zZ1B2cENyZWF0ZVRhYmxlEhIKCmlzX3By",
-          "aXZhdGUYASABKAgSEgoKdGFibGVfbmFtZRgCIAEoCRIRCgljaGFpcl9udW0Y",
-          "AyABKAUSEAoIcGFzc3dvcmQYBiABKAkSEQoJcGFyYV9sc2l0GAcgAygFIk8K",
-          "FU1zZ1B2cENyZWF0ZVRhYmxlUmVzcBIQCghyZXRfY29kZRgBIAEoBRIkCgp0",
-          "YWJsZV9pbmZvGAIgASgLMhAuTXNnUHZwVGFibGVJbmZvIkcKD01zZ1B2cEpv",
-          "aW5UYWJsZRIQCgh0YWJsZV9pZBgBIAEoBRIQCgh0YWJsZV9ubxgCIAEoBRIQ",
-          "CghwYXNzd29yZBgDIAEoCSJwChNNc2dQdnBKb2luVGFibGVSZXNwEhAKCHJl",
-          "dF9jb2RlGAEgASgFEhAKCHRhYmxlX2lkGAIgASgFEhAKCHRhYmxlX25vGAMg",
-          "ASgFEg8KB3VzZXJfaWQYBCABKAUSEgoKcGxheWVyX251bRgFIAEoBSJzChZN",
-          "c2dQdnBTdGFuZFVwVGFibGVSZXNwEhAKCHJldF9jb2RlGAEgASgFEhAKCHRh",
-          "YmxlX2lkGAIgASgFEhAKCHRhYmxlX25vGAMgASgFEg8KB3VzZXJfaWQYBCAB",
-          "KAUSEgoKcGxheWVyX251bRgFIAEoBSJOChZNc2dQdnBEZXN0cm95VGFibGVS",
-          "ZXNwEhAKCHJldF9jb2RlGAEgASgFEhAKCHRhYmxlX2lkGAIgASgFEhAKCHRh",
-          "YmxlX25vGAMgASgFInAKEk1zZ1B2cEtpY2tVc2VyUmVzcBIQCghyZXRfY29k",
-          "ZRgBIAEoBRIQCghvd25lcl9pZBgCIAEoBRISCgpvd25lcl9uaWNrGAMgASgJ",
-          "Eg8KB2tpY2tfaWQYBCABKAUSEQoJa2lja19uaWNrGAUgASgJIlUKGk1zZ1B2",
-          "cFRhYmxlQ2hhbmdlT3duZXJSZXNwEhAKCHRhYmxlX2lkGAEgASgFEhAKCG93",
-          "bmVyX2lkGAIgASgFEhMKC2lzX2FjdGl2YXRlGAMgASgIYgZwcm90bzM="));
+          "CgljaGFpcl9udW0YAyABKAUSEQoJZW50ZXJfbnVtGAQgASgFEhMKC2lzX2Fj",
+          "dGl2YXRlGAYgASgIEhIKCmlzX3ByaXZhdGUYByABKAgSEAoIcGFzc3dvcmQY",
+          "CCABKAkSEAoIb3duZXJfaWQYCSABKAUSEAoIdGFibGVfbm8YCiABKAUSDgoG",
+          "dmFsdWUxGAsgASgDEg4KBnZhbHVlMhgMIAEoAxIOCgZ2YWx1ZTMYDSABKAMS",
+          "DgoGdmFsdWU0GA4gASgDEg4KBnZhbHVlNRgPIAEoAxIOCgZ2YWx1ZTYYECAB",
+          "KAMSDgoGdmFsdWU3GBEgASgDEg4KBnZhbHVlOBgSIAEoAyJNChFNc2dQdnBS",
+          "b29tQ2ZnSXRlbRIPCgdsYWdfa2V5GAEgASgFEhMKC2NsaW5ldF9vcGVuGAIg",
+          "ASgFEhIKCnZhbHVlX2xpc3QYAyADKAUihQEKEE1zZ1B2cFJvb21Db25maWcS",
+          "GAoQY3JlYXRlX3ZpcF9saW1pdBgBIAEoBRIXCg9jaGFpcl9saW1pdF9taW4Y",
+          "AiABKAUSFwoPY2hhaXJfbGltaXRfbWF4GAMgASgFEiUKCXBhcmFfbHNpdBgL",
+          "IAMoCzISLk1zZ1B2cFJvb21DZmdJdGVtIjcKD01zZ1B2cFRhYmxlTGlzdBIk",
+          "Cgp0YWJsZV9saXN0GAEgAygLMhAuTXNnUHZwVGFibGVJbmZvInMKEU1zZ1B2",
+          "cENyZWF0ZVRhYmxlEhIKCmlzX3ByaXZhdGUYASABKAgSEgoKdGFibGVfbmFt",
+          "ZRgCIAEoCRIRCgljaGFpcl9udW0YAyABKAUSEAoIcGFzc3dvcmQYBiABKAkS",
+          "EQoJcGFyYV9sc2l0GAcgAygFIk8KFU1zZ1B2cENyZWF0ZVRhYmxlUmVzcBIQ",
+          "CghyZXRfY29kZRgBIAEoBRIkCgp0YWJsZV9pbmZvGAIgASgLMhAuTXNnUHZw",
+          "VGFibGVJbmZvIkcKD01zZ1B2cEpvaW5UYWJsZRIQCgh0YWJsZV9pZBgBIAEo",
+          "BRIQCgh0YWJsZV9ubxgCIAEoBRIQCghwYXNzd29yZBgDIAEoCSJwChNNc2dQ",
+          "dnBKb2luVGFibGVSZXNwEhAKCHJldF9jb2RlGAEgASgFEhAKCHRhYmxlX2lk",
+          "GAIgASgFEhAKCHRhYmxlX25vGAMgASgFEg8KB3VzZXJfaWQYBCABKAUSEgoK",
+          "cGxheWVyX251bRgFIAEoBSJzChZNc2dQdnBTdGFuZFVwVGFibGVSZXNwEhAK",
+          "CHJldF9jb2RlGAEgASgFEhAKCHRhYmxlX2lkGAIgASgFEhAKCHRhYmxlX25v",
+          "GAMgASgFEg8KB3VzZXJfaWQYBCABKAUSEgoKcGxheWVyX251bRgFIAEoBSJO",
+          "ChZNc2dQdnBEZXN0cm95VGFibGVSZXNwEhAKCHJldF9jb2RlGAEgASgFEhAK",
+          "CHRhYmxlX2lkGAIgASgFEhAKCHRhYmxlX25vGAMgASgFInAKEk1zZ1B2cEtp",
+          "Y2tVc2VyUmVzcBIQCghyZXRfY29kZRgBIAEoBRIQCghvd25lcl9pZBgCIAEo",
+          "BRISCgpvd25lcl9uaWNrGAMgASgJEg8KB2tpY2tfaWQYBCABKAUSEQoJa2lj",
+          "a19uaWNrGAUgASgJIlUKGk1zZ1B2cFRhYmxlQ2hhbmdlT3duZXJSZXNwEhAK",
+          "CHRhYmxlX2lkGAEgASgFEhAKCG93bmVyX2lkGAIgASgFEhMKC2lzX2FjdGl2",
+          "YXRlGAMgASgIYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -87,7 +88,7 @@ public static partial class GameReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTotalDayData), global::MsgTotalDayData.Parser, new[]{ "TotalNum", "DailyData" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgQueryRecord), global::MsgQueryRecord.Parser, new[]{ "Page", "Num", "Type" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgJackpotInfo), global::MsgJackpotInfo.Parser, new[]{ "Jackpot", "FakeJackpot" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpTableInfo), global::MsgPvpTableInfo.Parser, new[]{ "TableId", "TableName", "ChairNum", "EnterNum", "IsPrivate", "Password", "OwnerId", "TableNo", "Value1", "Value2", "Value3", "Value4", "Value5", "Value6", "Value7", "Value8" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpTableInfo), global::MsgPvpTableInfo.Parser, new[]{ "TableId", "TableName", "ChairNum", "EnterNum", "IsActivate", "IsPrivate", "Password", "OwnerId", "TableNo", "Value1", "Value2", "Value3", "Value4", "Value5", "Value6", "Value7", "Value8" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpRoomCfgItem), global::MsgPvpRoomCfgItem.Parser, new[]{ "LagKey", "ClinetOpen", "ValueList" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpRoomConfig), global::MsgPvpRoomConfig.Parser, new[]{ "CreateVipLimit", "ChairLimitMin", "ChairLimitMax", "ParaLsit" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpTableList), global::MsgPvpTableList.Parser, new[]{ "TableList" }, null, null, null, null),
@@ -3070,6 +3071,7 @@ public sealed partial class MsgPvpTableInfo : pb::IMessage<MsgPvpTableInfo>
     tableName_ = other.tableName_;
     chairNum_ = other.chairNum_;
     enterNum_ = other.enterNum_;
+    isActivate_ = other.isActivate_;
     isPrivate_ = other.isPrivate_;
     password_ = other.password_;
     ownerId_ = other.ownerId_;
@@ -3146,12 +3148,25 @@ public sealed partial class MsgPvpTableInfo : pb::IMessage<MsgPvpTableInfo>
     }
   }
 
+  /// <summary>Field number for the "is_activate" field.</summary>
+  public const int IsActivateFieldNumber = 6;
+  private bool isActivate_;
+  /// <summary>
+  ///int64	join_limit_min	= 5;	//进入房间金币下限				
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool IsActivate {
+    get { return isActivate_; }
+    set {
+      isActivate_ = value;
+    }
+  }
+
   /// <summary>Field number for the "is_private" field.</summary>
   public const int IsPrivateFieldNumber = 7;
   private bool isPrivate_;
   /// <summary>
-  ///int64	join_limit_min	= 5;	//进入房间金币下限				
-  ///int64	join_limit_max	= 6;	//进入房间金币上限				
+  ///私人桌						
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public bool IsPrivate {
@@ -3332,6 +3347,7 @@ public sealed partial class MsgPvpTableInfo : pb::IMessage<MsgPvpTableInfo>
     if (TableName != other.TableName) return false;
     if (ChairNum != other.ChairNum) return false;
     if (EnterNum != other.EnterNum) return false;
+    if (IsActivate != other.IsActivate) return false;
     if (IsPrivate != other.IsPrivate) return false;
     if (Password != other.Password) return false;
     if (OwnerId != other.OwnerId) return false;
@@ -3354,6 +3370,7 @@ public sealed partial class MsgPvpTableInfo : pb::IMessage<MsgPvpTableInfo>
     if (TableName.Length != 0) hash ^= TableName.GetHashCode();
     if (ChairNum != 0) hash ^= ChairNum.GetHashCode();
     if (EnterNum != 0) hash ^= EnterNum.GetHashCode();
+    if (IsActivate != false) hash ^= IsActivate.GetHashCode();
     if (IsPrivate != false) hash ^= IsPrivate.GetHashCode();
     if (Password.Length != 0) hash ^= Password.GetHashCode();
     if (OwnerId != 0) hash ^= OwnerId.GetHashCode();
@@ -3397,6 +3414,10 @@ public sealed partial class MsgPvpTableInfo : pb::IMessage<MsgPvpTableInfo>
     if (EnterNum != 0) {
       output.WriteRawTag(32);
       output.WriteInt32(EnterNum);
+    }
+    if (IsActivate != false) {
+      output.WriteRawTag(48);
+      output.WriteBool(IsActivate);
     }
     if (IsPrivate != false) {
       output.WriteRawTag(56);
@@ -3471,6 +3492,10 @@ public sealed partial class MsgPvpTableInfo : pb::IMessage<MsgPvpTableInfo>
       output.WriteRawTag(32);
       output.WriteInt32(EnterNum);
     }
+    if (IsActivate != false) {
+      output.WriteRawTag(48);
+      output.WriteBool(IsActivate);
+    }
     if (IsPrivate != false) {
       output.WriteRawTag(56);
       output.WriteBool(IsPrivate);
@@ -3540,6 +3565,9 @@ public sealed partial class MsgPvpTableInfo : pb::IMessage<MsgPvpTableInfo>
     if (EnterNum != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(EnterNum);
     }
+    if (IsActivate != false) {
+      size += 1 + 1;
+    }
     if (IsPrivate != false) {
       size += 1 + 1;
     }
@@ -3598,6 +3626,9 @@ public sealed partial class MsgPvpTableInfo : pb::IMessage<MsgPvpTableInfo>
     }
     if (other.EnterNum != 0) {
       EnterNum = other.EnterNum;
+    }
+    if (other.IsActivate != false) {
+      IsActivate = other.IsActivate;
     }
     if (other.IsPrivate != false) {
       IsPrivate = other.IsPrivate;
@@ -3663,6 +3694,10 @@ public sealed partial class MsgPvpTableInfo : pb::IMessage<MsgPvpTableInfo>
         }
         case 32: {
           EnterNum = input.ReadInt32();
+          break;
+        }
+        case 48: {
+          IsActivate = input.ReadBool();
           break;
         }
         case 56: {
@@ -3741,6 +3776,10 @@ public sealed partial class MsgPvpTableInfo : pb::IMessage<MsgPvpTableInfo>
         }
         case 32: {
           EnterNum = input.ReadInt32();
+          break;
+        }
+        case 48: {
+          IsActivate = input.ReadBool();
           break;
         }
         case 56: {

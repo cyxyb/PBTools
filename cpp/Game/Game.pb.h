@@ -2013,6 +2013,7 @@ class MsgPvpTableInfo PROTOBUF_FINAL :
     kTableIdFieldNumber = 1,
     kChairNumFieldNumber = 3,
     kEnterNumFieldNumber = 4,
+    kIsActivateFieldNumber = 6,
     kIsPrivateFieldNumber = 7,
     kOwnerIdFieldNumber = 9,
     kTableNoFieldNumber = 10,
@@ -2082,6 +2083,15 @@ class MsgPvpTableInfo PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::int32 _internal_enter_num() const;
   void _internal_set_enter_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // bool is_activate = 6;
+  void clear_is_activate();
+  bool is_activate() const;
+  void set_is_activate(bool value);
+  private:
+  bool _internal_is_activate() const;
+  void _internal_set_is_activate(bool value);
   public:
 
   // bool is_private = 7;
@@ -2195,6 +2205,7 @@ class MsgPvpTableInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 table_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_num_;
   ::PROTOBUF_NAMESPACE_ID::int32 enter_num_;
+  bool is_activate_;
   bool is_private_;
   ::PROTOBUF_NAMESPACE_ID::int32 owner_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 table_no_;
@@ -5357,6 +5368,26 @@ inline void MsgPvpTableInfo::_internal_set_enter_num(::PROTOBUF_NAMESPACE_ID::in
 inline void MsgPvpTableInfo::set_enter_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_enter_num(value);
   // @@protoc_insertion_point(field_set:MsgPvpTableInfo.enter_num)
+}
+
+// bool is_activate = 6;
+inline void MsgPvpTableInfo::clear_is_activate() {
+  is_activate_ = false;
+}
+inline bool MsgPvpTableInfo::_internal_is_activate() const {
+  return is_activate_;
+}
+inline bool MsgPvpTableInfo::is_activate() const {
+  // @@protoc_insertion_point(field_get:MsgPvpTableInfo.is_activate)
+  return _internal_is_activate();
+}
+inline void MsgPvpTableInfo::_internal_set_is_activate(bool value) {
+  
+  is_activate_ = value;
+}
+inline void MsgPvpTableInfo::set_is_activate(bool value) {
+  _internal_set_is_activate(value);
+  // @@protoc_insertion_point(field_set:MsgPvpTableInfo.is_activate)
 }
 
 // bool is_private = 7;
