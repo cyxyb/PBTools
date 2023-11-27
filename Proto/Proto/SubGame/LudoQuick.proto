@@ -68,7 +68,8 @@ message MsgThrowDiceResp
 message MsgOperateRoute
 {
 	int32 chair_id 	= 1; 	//椅子号 对应颜色
-	int32 chess_id = 2;		//棋子ID 0123
+	int32 chess_id 	= 2;	//棋子ID 0123
+	bool  is_unlock	= 3；	//解锁 1是
 }
 //骰子数据
 message MsgDiceInfoResp
