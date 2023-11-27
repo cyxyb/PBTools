@@ -2323,10 +2323,11 @@ class MsgPvpRoomCfgItem PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kValueListFieldNumber = 2,
+    kValueListFieldNumber = 3,
     kLagKeyFieldNumber = 1,
+    kClinetOpenFieldNumber = 2,
   };
-  // repeated int32 value_list = 2;
+  // repeated int32 value_list = 3;
   int value_list_size() const;
   private:
   int _internal_value_list_size() const;
@@ -2357,6 +2358,15 @@ class MsgPvpRoomCfgItem PROTOBUF_FINAL :
   void _internal_set_lag_key(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 clinet_open = 2;
+  void clear_clinet_open();
+  ::PROTOBUF_NAMESPACE_ID::int32 clinet_open() const;
+  void set_clinet_open(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_clinet_open() const;
+  void _internal_set_clinet_open(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgPvpRoomCfgItem)
  private:
   class _Internal;
@@ -2367,6 +2377,7 @@ class MsgPvpRoomCfgItem PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > value_list_;
   mutable std::atomic<int> _value_list_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::int32 lag_key_;
+  ::PROTOBUF_NAMESPACE_ID::int32 clinet_open_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Game_2eproto;
 };
@@ -5653,7 +5664,27 @@ inline void MsgPvpRoomCfgItem::set_lag_key(::PROTOBUF_NAMESPACE_ID::int32 value)
   // @@protoc_insertion_point(field_set:MsgPvpRoomCfgItem.lag_key)
 }
 
-// repeated int32 value_list = 2;
+// int32 clinet_open = 2;
+inline void MsgPvpRoomCfgItem::clear_clinet_open() {
+  clinet_open_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpRoomCfgItem::_internal_clinet_open() const {
+  return clinet_open_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpRoomCfgItem::clinet_open() const {
+  // @@protoc_insertion_point(field_get:MsgPvpRoomCfgItem.clinet_open)
+  return _internal_clinet_open();
+}
+inline void MsgPvpRoomCfgItem::_internal_set_clinet_open(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  clinet_open_ = value;
+}
+inline void MsgPvpRoomCfgItem::set_clinet_open(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_clinet_open(value);
+  // @@protoc_insertion_point(field_set:MsgPvpRoomCfgItem.clinet_open)
+}
+
+// repeated int32 value_list = 3;
 inline int MsgPvpRoomCfgItem::_internal_value_list_size() const {
   return value_list_.size();
 }
