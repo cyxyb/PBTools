@@ -4232,11 +4232,21 @@ class MsgPvpActivateTableResp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kTableIdFieldNumber = 1,
-    kOwnerIdFieldNumber = 2,
-    kIsActivateFieldNumber = 3,
+    kRetCodeFieldNumber = 1,
+    kTableIdFieldNumber = 2,
+    kOwnerIdFieldNumber = 3,
+    kIsActivateFieldNumber = 4,
   };
-  // int32 table_id = 1;
+  // int32 ret_code = 1;
+  void clear_ret_code();
+  ::PROTOBUF_NAMESPACE_ID::int32 ret_code() const;
+  void set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_ret_code() const;
+  void _internal_set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 table_id = 2;
   void clear_table_id();
   ::PROTOBUF_NAMESPACE_ID::int32 table_id() const;
   void set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -4245,7 +4255,7 @@ class MsgPvpActivateTableResp PROTOBUF_FINAL :
   void _internal_set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 owner_id = 2;
+  // int32 owner_id = 3;
   void clear_owner_id();
   ::PROTOBUF_NAMESPACE_ID::int32 owner_id() const;
   void set_owner_id(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -4254,7 +4264,7 @@ class MsgPvpActivateTableResp PROTOBUF_FINAL :
   void _internal_set_owner_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // bool is_activate = 3;
+  // bool is_activate = 4;
   void clear_is_activate();
   bool is_activate() const;
   void set_is_activate(bool value);
@@ -4270,6 +4280,7 @@ class MsgPvpActivateTableResp PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 ret_code_;
   ::PROTOBUF_NAMESPACE_ID::int32 table_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 owner_id_;
   bool is_activate_;
@@ -7021,7 +7032,27 @@ inline void MsgPvpTableChangeOwnerResp::set_is_activate(bool value) {
 
 // MsgPvpActivateTableResp
 
-// int32 table_id = 1;
+// int32 ret_code = 1;
+inline void MsgPvpActivateTableResp::clear_ret_code() {
+  ret_code_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpActivateTableResp::_internal_ret_code() const {
+  return ret_code_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpActivateTableResp::ret_code() const {
+  // @@protoc_insertion_point(field_get:MsgPvpActivateTableResp.ret_code)
+  return _internal_ret_code();
+}
+inline void MsgPvpActivateTableResp::_internal_set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  ret_code_ = value;
+}
+inline void MsgPvpActivateTableResp::set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_ret_code(value);
+  // @@protoc_insertion_point(field_set:MsgPvpActivateTableResp.ret_code)
+}
+
+// int32 table_id = 2;
 inline void MsgPvpActivateTableResp::clear_table_id() {
   table_id_ = 0;
 }
@@ -7041,7 +7072,7 @@ inline void MsgPvpActivateTableResp::set_table_id(::PROTOBUF_NAMESPACE_ID::int32
   // @@protoc_insertion_point(field_set:MsgPvpActivateTableResp.table_id)
 }
 
-// int32 owner_id = 2;
+// int32 owner_id = 3;
 inline void MsgPvpActivateTableResp::clear_owner_id() {
   owner_id_ = 0;
 }
@@ -7061,7 +7092,7 @@ inline void MsgPvpActivateTableResp::set_owner_id(::PROTOBUF_NAMESPACE_ID::int32
   // @@protoc_insertion_point(field_set:MsgPvpActivateTableResp.owner_id)
 }
 
-// bool is_activate = 3;
+// bool is_activate = 4;
 inline void MsgPvpActivateTableResp::clear_is_activate() {
   is_activate_ = false;
 }
