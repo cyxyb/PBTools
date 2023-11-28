@@ -210,4 +210,13 @@ message MsgPvpTableChangeOwnerResp
 	bool	is_activate		= 3;	//是否激活
 }
 
+
+//pvp房主变更
+message MsgPvpActivateTableResp
+{
+	int32	table_id		= 1;	//桌子ID
+	int32	owner_id		= 2;	//房主ID
+	bool	is_activate		= 3;	//是否激活
+}
+
 //////////////////////////////////////////////////PVP//////////////////////////////////////////////

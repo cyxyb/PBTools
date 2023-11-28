@@ -755,7 +755,7 @@ public enum EMsgIDGame {
   /// </summary>
   [pbr::OriginalName("MsgIDGame_Pvp_ActivateTable")] MsgIdgamePvpActivateTable = 1058,
   /// <summary>
-  ///房主激活桌子(MsgCommonBool)
+  ///房主激活桌子(MsgPvpActivateTableResp)
   /// </summary>
   [pbr::OriginalName("MsgIDGame_Pvp_ActivateTableResp")] MsgIdgamePvpActivateTableResp = 1059,
   /// <summary>

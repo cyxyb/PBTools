@@ -74,7 +74,9 @@ public static partial class GameReflection {
           "BRISCgpvd25lcl9uaWNrGAMgASgJEg8KB2tpY2tfaWQYBCABKAUSEQoJa2lj",
           "a19uaWNrGAUgASgJIlUKGk1zZ1B2cFRhYmxlQ2hhbmdlT3duZXJSZXNwEhAK",
           "CHRhYmxlX2lkGAEgASgFEhAKCG93bmVyX2lkGAIgASgFEhMKC2lzX2FjdGl2",
-          "YXRlGAMgASgIYgZwcm90bzM="));
+          "YXRlGAMgASgIIlIKF01zZ1B2cEFjdGl2YXRlVGFibGVSZXNwEhAKCHRhYmxl",
+          "X2lkGAEgASgFEhAKCG93bmVyX2lkGAIgASgFEhMKC2lzX2FjdGl2YXRlGAMg",
+          "ASgIYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -99,7 +101,8 @@ public static partial class GameReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpStandUpTableResp), global::MsgPvpStandUpTableResp.Parser, new[]{ "RetCode", "TableId", "TableNo", "UserId", "PlayerNum" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpDestroyTableResp), global::MsgPvpDestroyTableResp.Parser, new[]{ "RetCode", "TableId", "TableNo" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpKickUserResp), global::MsgPvpKickUserResp.Parser, new[]{ "RetCode", "OwnerId", "OwnerNick", "KickId", "KickNick" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpTableChangeOwnerResp), global::MsgPvpTableChangeOwnerResp.Parser, new[]{ "TableId", "OwnerId", "IsActivate" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpTableChangeOwnerResp), global::MsgPvpTableChangeOwnerResp.Parser, new[]{ "TableId", "OwnerId", "IsActivate" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpActivateTableResp), global::MsgPvpActivateTableResp.Parser, new[]{ "TableId", "OwnerId", "IsActivate" }, null, null, null, null)
         }));
   }
   #endregion
@@ -6780,6 +6783,262 @@ public sealed partial class MsgPvpTableChangeOwnerResp : pb::IMessage<MsgPvpTabl
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public void MergeFrom(MsgPvpTableChangeOwnerResp other) {
+    if (other == null) {
+      return;
+    }
+    if (other.TableId != 0) {
+      TableId = other.TableId;
+    }
+    if (other.OwnerId != 0) {
+      OwnerId = other.OwnerId;
+    }
+    if (other.IsActivate != false) {
+      IsActivate = other.IsActivate;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          TableId = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          OwnerId = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          IsActivate = input.ReadBool();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          TableId = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          OwnerId = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          IsActivate = input.ReadBool();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///pvp房主变更
+/// </summary>
+public sealed partial class MsgPvpActivateTableResp : pb::IMessage<MsgPvpActivateTableResp>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgPvpActivateTableResp> _parser = new pb::MessageParser<MsgPvpActivateTableResp>(() => new MsgPvpActivateTableResp());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgPvpActivateTableResp> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::GameReflection.Descriptor.MessageTypes[22]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgPvpActivateTableResp() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgPvpActivateTableResp(MsgPvpActivateTableResp other) : this() {
+    tableId_ = other.tableId_;
+    ownerId_ = other.ownerId_;
+    isActivate_ = other.isActivate_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgPvpActivateTableResp Clone() {
+    return new MsgPvpActivateTableResp(this);
+  }
+
+  /// <summary>Field number for the "table_id" field.</summary>
+  public const int TableIdFieldNumber = 1;
+  private int tableId_;
+  /// <summary>
+  ///桌子ID
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int TableId {
+    get { return tableId_; }
+    set {
+      tableId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "owner_id" field.</summary>
+  public const int OwnerIdFieldNumber = 2;
+  private int ownerId_;
+  /// <summary>
+  ///房主ID
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int OwnerId {
+    get { return ownerId_; }
+    set {
+      ownerId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "is_activate" field.</summary>
+  public const int IsActivateFieldNumber = 3;
+  private bool isActivate_;
+  /// <summary>
+  ///是否激活
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool IsActivate {
+    get { return isActivate_; }
+    set {
+      isActivate_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgPvpActivateTableResp);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgPvpActivateTableResp other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (TableId != other.TableId) return false;
+    if (OwnerId != other.OwnerId) return false;
+    if (IsActivate != other.IsActivate) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (TableId != 0) hash ^= TableId.GetHashCode();
+    if (OwnerId != 0) hash ^= OwnerId.GetHashCode();
+    if (IsActivate != false) hash ^= IsActivate.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (TableId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(TableId);
+    }
+    if (OwnerId != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(OwnerId);
+    }
+    if (IsActivate != false) {
+      output.WriteRawTag(24);
+      output.WriteBool(IsActivate);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (TableId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(TableId);
+    }
+    if (OwnerId != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(OwnerId);
+    }
+    if (IsActivate != false) {
+      output.WriteRawTag(24);
+      output.WriteBool(IsActivate);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (TableId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(TableId);
+    }
+    if (OwnerId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(OwnerId);
+    }
+    if (IsActivate != false) {
+      size += 1 + 1;
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgPvpActivateTableResp other) {
     if (other == null) {
       return;
     }

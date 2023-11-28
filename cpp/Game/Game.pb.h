@@ -46,7 +46,7 @@ struct TableStruct_Game_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[22]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[23]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -68,6 +68,9 @@ extern MsgGamePlayerLoginRespDefaultTypeInternal _MsgGamePlayerLoginResp_default
 class MsgJackpotInfo;
 class MsgJackpotInfoDefaultTypeInternal;
 extern MsgJackpotInfoDefaultTypeInternal _MsgJackpotInfo_default_instance_;
+class MsgPvpActivateTableResp;
+class MsgPvpActivateTableRespDefaultTypeInternal;
+extern MsgPvpActivateTableRespDefaultTypeInternal _MsgPvpActivateTableResp_default_instance_;
 class MsgPvpCreateTable;
 class MsgPvpCreateTableDefaultTypeInternal;
 extern MsgPvpCreateTableDefaultTypeInternal _MsgPvpCreateTable_default_instance_;
@@ -125,6 +128,7 @@ template<> ::MsgGamePlayerInfo* Arena::CreateMaybeMessage<::MsgGamePlayerInfo>(A
 template<> ::MsgGamePlayerLogin* Arena::CreateMaybeMessage<::MsgGamePlayerLogin>(Arena*);
 template<> ::MsgGamePlayerLoginResp* Arena::CreateMaybeMessage<::MsgGamePlayerLoginResp>(Arena*);
 template<> ::MsgJackpotInfo* Arena::CreateMaybeMessage<::MsgJackpotInfo>(Arena*);
+template<> ::MsgPvpActivateTableResp* Arena::CreateMaybeMessage<::MsgPvpActivateTableResp>(Arena*);
 template<> ::MsgPvpCreateTable* Arena::CreateMaybeMessage<::MsgPvpCreateTable>(Arena*);
 template<> ::MsgPvpCreateTableResp* Arena::CreateMaybeMessage<::MsgPvpCreateTableResp>(Arena*);
 template<> ::MsgPvpDestroyTableResp* Arena::CreateMaybeMessage<::MsgPvpDestroyTableResp>(Arena*);
@@ -4114,6 +4118,164 @@ class MsgPvpTableChangeOwnerResp PROTOBUF_FINAL :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Game_2eproto;
 };
+// -------------------------------------------------------------------
+
+class MsgPvpActivateTableResp PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgPvpActivateTableResp) */ {
+ public:
+  inline MsgPvpActivateTableResp() : MsgPvpActivateTableResp(nullptr) {}
+  virtual ~MsgPvpActivateTableResp();
+
+  MsgPvpActivateTableResp(const MsgPvpActivateTableResp& from);
+  MsgPvpActivateTableResp(MsgPvpActivateTableResp&& from) noexcept
+    : MsgPvpActivateTableResp() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgPvpActivateTableResp& operator=(const MsgPvpActivateTableResp& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgPvpActivateTableResp& operator=(MsgPvpActivateTableResp&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgPvpActivateTableResp& default_instance();
+
+  static inline const MsgPvpActivateTableResp* internal_default_instance() {
+    return reinterpret_cast<const MsgPvpActivateTableResp*>(
+               &_MsgPvpActivateTableResp_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    22;
+
+  friend void swap(MsgPvpActivateTableResp& a, MsgPvpActivateTableResp& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgPvpActivateTableResp* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgPvpActivateTableResp* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgPvpActivateTableResp* New() const final {
+    return CreateMaybeMessage<MsgPvpActivateTableResp>(nullptr);
+  }
+
+  MsgPvpActivateTableResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgPvpActivateTableResp>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgPvpActivateTableResp& from);
+  void MergeFrom(const MsgPvpActivateTableResp& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgPvpActivateTableResp* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgPvpActivateTableResp";
+  }
+  protected:
+  explicit MsgPvpActivateTableResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Game_2eproto);
+    return ::descriptor_table_Game_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kTableIdFieldNumber = 1,
+    kOwnerIdFieldNumber = 2,
+    kIsActivateFieldNumber = 3,
+  };
+  // int32 table_id = 1;
+  void clear_table_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 table_id() const;
+  void set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_table_id() const;
+  void _internal_set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 owner_id = 2;
+  void clear_owner_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 owner_id() const;
+  void set_owner_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_owner_id() const;
+  void _internal_set_owner_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // bool is_activate = 3;
+  void clear_is_activate();
+  bool is_activate() const;
+  void set_is_activate(bool value);
+  private:
+  bool _internal_is_activate() const;
+  void _internal_set_is_activate(bool value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgPvpActivateTableResp)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 table_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 owner_id_;
+  bool is_activate_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Game_2eproto;
+};
 // ===================================================================
 
 
@@ -6855,9 +7017,75 @@ inline void MsgPvpTableChangeOwnerResp::set_is_activate(bool value) {
   // @@protoc_insertion_point(field_set:MsgPvpTableChangeOwnerResp.is_activate)
 }
 
+// -------------------------------------------------------------------
+
+// MsgPvpActivateTableResp
+
+// int32 table_id = 1;
+inline void MsgPvpActivateTableResp::clear_table_id() {
+  table_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpActivateTableResp::_internal_table_id() const {
+  return table_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpActivateTableResp::table_id() const {
+  // @@protoc_insertion_point(field_get:MsgPvpActivateTableResp.table_id)
+  return _internal_table_id();
+}
+inline void MsgPvpActivateTableResp::_internal_set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  table_id_ = value;
+}
+inline void MsgPvpActivateTableResp::set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_table_id(value);
+  // @@protoc_insertion_point(field_set:MsgPvpActivateTableResp.table_id)
+}
+
+// int32 owner_id = 2;
+inline void MsgPvpActivateTableResp::clear_owner_id() {
+  owner_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpActivateTableResp::_internal_owner_id() const {
+  return owner_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpActivateTableResp::owner_id() const {
+  // @@protoc_insertion_point(field_get:MsgPvpActivateTableResp.owner_id)
+  return _internal_owner_id();
+}
+inline void MsgPvpActivateTableResp::_internal_set_owner_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  owner_id_ = value;
+}
+inline void MsgPvpActivateTableResp::set_owner_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_owner_id(value);
+  // @@protoc_insertion_point(field_set:MsgPvpActivateTableResp.owner_id)
+}
+
+// bool is_activate = 3;
+inline void MsgPvpActivateTableResp::clear_is_activate() {
+  is_activate_ = false;
+}
+inline bool MsgPvpActivateTableResp::_internal_is_activate() const {
+  return is_activate_;
+}
+inline bool MsgPvpActivateTableResp::is_activate() const {
+  // @@protoc_insertion_point(field_get:MsgPvpActivateTableResp.is_activate)
+  return _internal_is_activate();
+}
+inline void MsgPvpActivateTableResp::_internal_set_is_activate(bool value) {
+  
+  is_activate_ = value;
+}
+inline void MsgPvpActivateTableResp::set_is_activate(bool value) {
+  _internal_set_is_activate(value);
+  // @@protoc_insertion_point(field_set:MsgPvpActivateTableResp.is_activate)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
