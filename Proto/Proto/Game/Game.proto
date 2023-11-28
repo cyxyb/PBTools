@@ -154,7 +154,8 @@ message MsgPvpCreateTable
 message MsgPvpCreateTableResp
 {
 	int32	ret_code				= 1;	//返回码	非零失败
-	MsgPvpTableInfo	table_info		= 2;	//桌子信息
+	int32	value					= 2;	//
+	MsgPvpTableInfo	table_info		= 3;	//桌子信息
 }
 
 //pvp加入桌子

@@ -59,24 +59,24 @@ public static partial class GameReflection {
           "Cgp0YWJsZV9saXN0GAEgAygLMhAuTXNnUHZwVGFibGVJbmZvInMKEU1zZ1B2",
           "cENyZWF0ZVRhYmxlEhIKCmlzX3ByaXZhdGUYASABKAgSEgoKdGFibGVfbmFt",
           "ZRgCIAEoCRIRCgljaGFpcl9udW0YAyABKAUSEAoIcGFzc3dvcmQYBiABKAkS",
-          "EQoJcGFyYV9sc2l0GAcgAygFIk8KFU1zZ1B2cENyZWF0ZVRhYmxlUmVzcBIQ",
-          "CghyZXRfY29kZRgBIAEoBRIkCgp0YWJsZV9pbmZvGAIgASgLMhAuTXNnUHZw",
-          "VGFibGVJbmZvIkcKD01zZ1B2cEpvaW5UYWJsZRIQCgh0YWJsZV9pZBgBIAEo",
-          "BRIQCgh0YWJsZV9ubxgCIAEoBRIQCghwYXNzd29yZBgDIAEoCSJwChNNc2dQ",
-          "dnBKb2luVGFibGVSZXNwEhAKCHJldF9jb2RlGAEgASgFEhAKCHRhYmxlX2lk",
-          "GAIgASgFEhAKCHRhYmxlX25vGAMgASgFEg8KB3VzZXJfaWQYBCABKAUSEgoK",
-          "cGxheWVyX251bRgFIAEoBSJzChZNc2dQdnBTdGFuZFVwVGFibGVSZXNwEhAK",
-          "CHJldF9jb2RlGAEgASgFEhAKCHRhYmxlX2lkGAIgASgFEhAKCHRhYmxlX25v",
-          "GAMgASgFEg8KB3VzZXJfaWQYBCABKAUSEgoKcGxheWVyX251bRgFIAEoBSJO",
-          "ChZNc2dQdnBEZXN0cm95VGFibGVSZXNwEhAKCHJldF9jb2RlGAEgASgFEhAK",
-          "CHRhYmxlX2lkGAIgASgFEhAKCHRhYmxlX25vGAMgASgFInAKEk1zZ1B2cEtp",
-          "Y2tVc2VyUmVzcBIQCghyZXRfY29kZRgBIAEoBRIQCghvd25lcl9pZBgCIAEo",
-          "BRISCgpvd25lcl9uaWNrGAMgASgJEg8KB2tpY2tfaWQYBCABKAUSEQoJa2lj",
-          "a19uaWNrGAUgASgJIlUKGk1zZ1B2cFRhYmxlQ2hhbmdlT3duZXJSZXNwEhAK",
-          "CHRhYmxlX2lkGAEgASgFEhAKCG93bmVyX2lkGAIgASgFEhMKC2lzX2FjdGl2",
-          "YXRlGAMgASgIImQKF01zZ1B2cEFjdGl2YXRlVGFibGVSZXNwEhAKCHJldF9j",
-          "b2RlGAEgASgFEhAKCHRhYmxlX2lkGAIgASgFEhAKCG93bmVyX2lkGAMgASgF",
-          "EhMKC2lzX2FjdGl2YXRlGAQgASgIYgZwcm90bzM="));
+          "EQoJcGFyYV9sc2l0GAcgAygFIl4KFU1zZ1B2cENyZWF0ZVRhYmxlUmVzcBIQ",
+          "CghyZXRfY29kZRgBIAEoBRINCgV2YWx1ZRgCIAEoBRIkCgp0YWJsZV9pbmZv",
+          "GAMgASgLMhAuTXNnUHZwVGFibGVJbmZvIkcKD01zZ1B2cEpvaW5UYWJsZRIQ",
+          "Cgh0YWJsZV9pZBgBIAEoBRIQCgh0YWJsZV9ubxgCIAEoBRIQCghwYXNzd29y",
+          "ZBgDIAEoCSJwChNNc2dQdnBKb2luVGFibGVSZXNwEhAKCHJldF9jb2RlGAEg",
+          "ASgFEhAKCHRhYmxlX2lkGAIgASgFEhAKCHRhYmxlX25vGAMgASgFEg8KB3Vz",
+          "ZXJfaWQYBCABKAUSEgoKcGxheWVyX251bRgFIAEoBSJzChZNc2dQdnBTdGFu",
+          "ZFVwVGFibGVSZXNwEhAKCHJldF9jb2RlGAEgASgFEhAKCHRhYmxlX2lkGAIg",
+          "ASgFEhAKCHRhYmxlX25vGAMgASgFEg8KB3VzZXJfaWQYBCABKAUSEgoKcGxh",
+          "eWVyX251bRgFIAEoBSJOChZNc2dQdnBEZXN0cm95VGFibGVSZXNwEhAKCHJl",
+          "dF9jb2RlGAEgASgFEhAKCHRhYmxlX2lkGAIgASgFEhAKCHRhYmxlX25vGAMg",
+          "ASgFInAKEk1zZ1B2cEtpY2tVc2VyUmVzcBIQCghyZXRfY29kZRgBIAEoBRIQ",
+          "Cghvd25lcl9pZBgCIAEoBRISCgpvd25lcl9uaWNrGAMgASgJEg8KB2tpY2tf",
+          "aWQYBCABKAUSEQoJa2lja19uaWNrGAUgASgJIlUKGk1zZ1B2cFRhYmxlQ2hh",
+          "bmdlT3duZXJSZXNwEhAKCHRhYmxlX2lkGAEgASgFEhAKCG93bmVyX2lkGAIg",
+          "ASgFEhMKC2lzX2FjdGl2YXRlGAMgASgIImQKF01zZ1B2cEFjdGl2YXRlVGFi",
+          "bGVSZXNwEhAKCHJldF9jb2RlGAEgASgFEhAKCHRhYmxlX2lkGAIgASgFEhAK",
+          "CG93bmVyX2lkGAMgASgFEhMKC2lzX2FjdGl2YXRlGAQgASgIYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -95,7 +95,7 @@ public static partial class GameReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpRoomConfig), global::MsgPvpRoomConfig.Parser, new[]{ "CreateVipLimit", "ChairLimitMin", "ChairLimitMax", "ParaLsit" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpTableList), global::MsgPvpTableList.Parser, new[]{ "TableList" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpCreateTable), global::MsgPvpCreateTable.Parser, new[]{ "IsPrivate", "TableName", "ChairNum", "Password", "ParaLsit" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpCreateTableResp), global::MsgPvpCreateTableResp.Parser, new[]{ "RetCode", "TableInfo" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpCreateTableResp), global::MsgPvpCreateTableResp.Parser, new[]{ "RetCode", "Value", "TableInfo" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpJoinTable), global::MsgPvpJoinTable.Parser, new[]{ "TableId", "TableNo", "Password" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpJoinTableResp), global::MsgPvpJoinTableResp.Parser, new[]{ "RetCode", "TableId", "TableNo", "UserId", "PlayerNum" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpStandUpTableResp), global::MsgPvpStandUpTableResp.Parser, new[]{ "RetCode", "TableId", "TableNo", "UserId", "PlayerNum" }, null, null, null, null),
@@ -4891,6 +4891,7 @@ public sealed partial class MsgPvpCreateTableResp : pb::IMessage<MsgPvpCreateTab
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public MsgPvpCreateTableResp(MsgPvpCreateTableResp other) : this() {
     retCode_ = other.retCode_;
+    value_ = other.value_;
     tableInfo_ = other.tableInfo_ != null ? other.tableInfo_.Clone() : null;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
@@ -4914,8 +4915,21 @@ public sealed partial class MsgPvpCreateTableResp : pb::IMessage<MsgPvpCreateTab
     }
   }
 
+  /// <summary>Field number for the "value" field.</summary>
+  public const int ValueFieldNumber = 2;
+  private int value_;
+  /// <summary>
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Value {
+    get { return value_; }
+    set {
+      value_ = value;
+    }
+  }
+
   /// <summary>Field number for the "table_info" field.</summary>
-  public const int TableInfoFieldNumber = 2;
+  public const int TableInfoFieldNumber = 3;
   private global::MsgPvpTableInfo tableInfo_;
   /// <summary>
   ///桌子信息
@@ -4942,6 +4956,7 @@ public sealed partial class MsgPvpCreateTableResp : pb::IMessage<MsgPvpCreateTab
       return true;
     }
     if (RetCode != other.RetCode) return false;
+    if (Value != other.Value) return false;
     if (!object.Equals(TableInfo, other.TableInfo)) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
@@ -4950,6 +4965,7 @@ public sealed partial class MsgPvpCreateTableResp : pb::IMessage<MsgPvpCreateTab
   public override int GetHashCode() {
     int hash = 1;
     if (RetCode != 0) hash ^= RetCode.GetHashCode();
+    if (Value != 0) hash ^= Value.GetHashCode();
     if (tableInfo_ != null) hash ^= TableInfo.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
@@ -4971,8 +4987,12 @@ public sealed partial class MsgPvpCreateTableResp : pb::IMessage<MsgPvpCreateTab
       output.WriteRawTag(8);
       output.WriteInt32(RetCode);
     }
+    if (Value != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(Value);
+    }
     if (tableInfo_ != null) {
-      output.WriteRawTag(18);
+      output.WriteRawTag(26);
       output.WriteMessage(TableInfo);
     }
     if (_unknownFields != null) {
@@ -4988,8 +5008,12 @@ public sealed partial class MsgPvpCreateTableResp : pb::IMessage<MsgPvpCreateTab
       output.WriteRawTag(8);
       output.WriteInt32(RetCode);
     }
+    if (Value != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(Value);
+    }
     if (tableInfo_ != null) {
-      output.WriteRawTag(18);
+      output.WriteRawTag(26);
       output.WriteMessage(TableInfo);
     }
     if (_unknownFields != null) {
@@ -5003,6 +5027,9 @@ public sealed partial class MsgPvpCreateTableResp : pb::IMessage<MsgPvpCreateTab
     int size = 0;
     if (RetCode != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(RetCode);
+    }
+    if (Value != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Value);
     }
     if (tableInfo_ != null) {
       size += 1 + pb::CodedOutputStream.ComputeMessageSize(TableInfo);
@@ -5020,6 +5047,9 @@ public sealed partial class MsgPvpCreateTableResp : pb::IMessage<MsgPvpCreateTab
     }
     if (other.RetCode != 0) {
       RetCode = other.RetCode;
+    }
+    if (other.Value != 0) {
+      Value = other.Value;
     }
     if (other.tableInfo_ != null) {
       if (tableInfo_ == null) {
@@ -5045,7 +5075,11 @@ public sealed partial class MsgPvpCreateTableResp : pb::IMessage<MsgPvpCreateTab
           RetCode = input.ReadInt32();
           break;
         }
-        case 18: {
+        case 16: {
+          Value = input.ReadInt32();
+          break;
+        }
+        case 26: {
           if (tableInfo_ == null) {
             TableInfo = new global::MsgPvpTableInfo();
           }
@@ -5070,7 +5104,11 @@ public sealed partial class MsgPvpCreateTableResp : pb::IMessage<MsgPvpCreateTab
           RetCode = input.ReadInt32();
           break;
         }
-        case 18: {
+        case 16: {
+          Value = input.ReadInt32();
+          break;
+        }
+        case 26: {
           if (tableInfo_ == null) {
             TableInfo = new global::MsgPvpTableInfo();
           }

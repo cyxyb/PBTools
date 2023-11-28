@@ -3041,10 +3041,11 @@ class MsgPvpCreateTableResp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kTableInfoFieldNumber = 2,
+    kTableInfoFieldNumber = 3,
     kRetCodeFieldNumber = 1,
+    kValueFieldNumber = 2,
   };
-  // .MsgPvpTableInfo table_info = 2;
+  // .MsgPvpTableInfo table_info = 3;
   bool has_table_info() const;
   private:
   bool _internal_has_table_info() const;
@@ -3071,6 +3072,15 @@ class MsgPvpCreateTableResp PROTOBUF_FINAL :
   void _internal_set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 value = 2;
+  void clear_value();
+  ::PROTOBUF_NAMESPACE_ID::int32 value() const;
+  void set_value(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_value() const;
+  void _internal_set_value(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgPvpCreateTableResp)
  private:
   class _Internal;
@@ -3080,6 +3090,7 @@ class MsgPvpCreateTableResp PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::MsgPvpTableInfo* table_info_;
   ::PROTOBUF_NAMESPACE_ID::int32 ret_code_;
+  ::PROTOBUF_NAMESPACE_ID::int32 value_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Game_2eproto;
 };
@@ -6318,7 +6329,27 @@ inline void MsgPvpCreateTableResp::set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 v
   // @@protoc_insertion_point(field_set:MsgPvpCreateTableResp.ret_code)
 }
 
-// .MsgPvpTableInfo table_info = 2;
+// int32 value = 2;
+inline void MsgPvpCreateTableResp::clear_value() {
+  value_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpCreateTableResp::_internal_value() const {
+  return value_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpCreateTableResp::value() const {
+  // @@protoc_insertion_point(field_get:MsgPvpCreateTableResp.value)
+  return _internal_value();
+}
+inline void MsgPvpCreateTableResp::_internal_set_value(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  value_ = value;
+}
+inline void MsgPvpCreateTableResp::set_value(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_value(value);
+  // @@protoc_insertion_point(field_set:MsgPvpCreateTableResp.value)
+}
+
+// .MsgPvpTableInfo table_info = 3;
 inline bool MsgPvpCreateTableResp::_internal_has_table_info() const {
   return this != internal_default_instance() && table_info_ != nullptr;
 }
