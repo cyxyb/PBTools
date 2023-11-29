@@ -64,6 +64,12 @@ enum EMsgIDServerInternalProto
 	GAME2CENTER_UpdateOnlineNum		= 2005;	//更新游戏服务器在线人数
 	GAME2CENTER_BroadcastTip		= 2006;	//游戏请求跑马灯广播
 	CENTER2GAME_KickUserResp		= 2007;	//踢玩家
+	///////////////////////////////////PVP///////////////////////////////////
+	GAME2CENTER_PvpAddTable			= 2050;	//通知桌子增加
+	GAME2CENTER_PvpDelTable			= 2051;	//通知桌子删除
+
+	///////////////////////////////////PVP///////////////////////////////////
+
 	
 	//2001-3000
 	ROBOT2GAME_RobotLogin			= 3001;	//机器人登录

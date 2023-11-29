@@ -134,6 +134,8 @@ enum EMsgIDServerInternalProto : int {
   GAME2CENTER_UpdateOnlineNum = 2005,
   GAME2CENTER_BroadcastTip = 2006,
   CENTER2GAME_KickUserResp = 2007,
+  GAME2CENTER_PvpAddTable = 2050,
+  GAME2CENTER_PvpDelTable = 2051,
   ROBOT2GAME_RobotLogin = 3001,
   CENTER2APPRECHARGE_SendPhoneCode = 4001,
   APPRECHARGE2CENTER_HeartBeat = 4002,
