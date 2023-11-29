@@ -106,7 +106,7 @@ message MsgPvpTableInfo
 	int32	table_no		= 10;	//桌子编号
 
 	int64	value1			= 11;	//桌子特性						//进入房间金币下限				放在para_lsit的第一位
-	int64	value2			= 12;	//桌子特性
+	int64	value2			= 12;	//桌子特性						//房间底注					   放在para_lsit的第二位
 	int64	value3			= 13;	//桌子特性
 	int64	value4			= 14;	//桌子特性
 	int64	value5			= 15;	//桌子特性

@@ -3239,7 +3239,7 @@ public sealed partial class MsgPvpTableInfo : pb::IMessage<MsgPvpTableInfo>
   public const int Value2FieldNumber = 12;
   private long value2_;
   /// <summary>
-  ///桌子特性
+  ///桌子特性						//房间底注					   放在para_lsit的第二位
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public long Value2 {
