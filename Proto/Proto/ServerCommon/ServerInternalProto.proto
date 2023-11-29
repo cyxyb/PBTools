@@ -521,7 +521,7 @@ message MsgDBUpgradeVIP
 /////////////////////////////////////////////PVP//////////////////////////////////////////////
 message MsgPvpSerTableInfo
 {
-	int	table_id							= 1;	//桌子id
+	int32	table_id						= 1;	//桌子id
 	string	table_name						= 2;	//桌子名称						
 	int32	chair_num						= 3;	//人数限制						
 	int32	enter_num						= 4;	//已经进入数量
@@ -535,14 +535,14 @@ message MsgPvpSerTableInfo
 //增加桌子
 message MsgPvpAddTable
 {
-	int	game_type							= 1;	//游戏id
+	int32	game_type							= 1;	//游戏id
 	repeated MsgPvpSerTableInfo	table_list	= 2;	//桌子列表
 }
 
 //删除桌子
 message MsgPvpDelTable
 {
-	int	game_type							= 1;	//游戏id
-	int	table_id							= 2;	//桌子id
+	int32	game_type							= 1;	//游戏id
+	int32	table_id							= 2;	//桌子id
 }
 /////////////////////////////////////////////PVP//////////////////////////////////////////////

@@ -46,7 +46,7 @@ struct TableStruct_ServerInternalProto_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[58]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[61]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -188,6 +188,15 @@ extern MsgLoginPlayerInfoDefaultTypeInternal _MsgLoginPlayerInfo_default_instanc
 class MsgPlayerAttribute;
 class MsgPlayerAttributeDefaultTypeInternal;
 extern MsgPlayerAttributeDefaultTypeInternal _MsgPlayerAttribute_default_instance_;
+class MsgPvpAddTable;
+class MsgPvpAddTableDefaultTypeInternal;
+extern MsgPvpAddTableDefaultTypeInternal _MsgPvpAddTable_default_instance_;
+class MsgPvpDelTable;
+class MsgPvpDelTableDefaultTypeInternal;
+extern MsgPvpDelTableDefaultTypeInternal _MsgPvpDelTable_default_instance_;
+class MsgPvpSerTableInfo;
+class MsgPvpSerTableInfoDefaultTypeInternal;
+extern MsgPvpSerTableInfoDefaultTypeInternal _MsgPvpSerTableInfo_default_instance_;
 class MsgRegisterChatServer;
 class MsgRegisterChatServerDefaultTypeInternal;
 extern MsgRegisterChatServerDefaultTypeInternal _MsgRegisterChatServer_default_instance_;
@@ -273,6 +282,9 @@ template<> ::MsgGameServerUnRegister* Arena::CreateMaybeMessage<::MsgGameServerU
 template<> ::MsgLoadCheatRate* Arena::CreateMaybeMessage<::MsgLoadCheatRate>(Arena*);
 template<> ::MsgLoginPlayerInfo* Arena::CreateMaybeMessage<::MsgLoginPlayerInfo>(Arena*);
 template<> ::MsgPlayerAttribute* Arena::CreateMaybeMessage<::MsgPlayerAttribute>(Arena*);
+template<> ::MsgPvpAddTable* Arena::CreateMaybeMessage<::MsgPvpAddTable>(Arena*);
+template<> ::MsgPvpDelTable* Arena::CreateMaybeMessage<::MsgPvpDelTable>(Arena*);
+template<> ::MsgPvpSerTableInfo* Arena::CreateMaybeMessage<::MsgPvpSerTableInfo>(Arena*);
 template<> ::MsgRegisterChatServer* Arena::CreateMaybeMessage<::MsgRegisterChatServer>(Arena*);
 template<> ::MsgRegisterGameServer* Arena::CreateMaybeMessage<::MsgRegisterGameServer>(Arena*);
 template<> ::MsgRegisterServer* Arena::CreateMaybeMessage<::MsgRegisterServer>(Arena*);
@@ -10506,6 +10518,547 @@ class MsgDBUpgradeVIP PROTOBUF_FINAL :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
+// -------------------------------------------------------------------
+
+class MsgPvpSerTableInfo PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgPvpSerTableInfo) */ {
+ public:
+  inline MsgPvpSerTableInfo() : MsgPvpSerTableInfo(nullptr) {}
+  virtual ~MsgPvpSerTableInfo();
+
+  MsgPvpSerTableInfo(const MsgPvpSerTableInfo& from);
+  MsgPvpSerTableInfo(MsgPvpSerTableInfo&& from) noexcept
+    : MsgPvpSerTableInfo() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgPvpSerTableInfo& operator=(const MsgPvpSerTableInfo& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgPvpSerTableInfo& operator=(MsgPvpSerTableInfo&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgPvpSerTableInfo& default_instance();
+
+  static inline const MsgPvpSerTableInfo* internal_default_instance() {
+    return reinterpret_cast<const MsgPvpSerTableInfo*>(
+               &_MsgPvpSerTableInfo_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    58;
+
+  friend void swap(MsgPvpSerTableInfo& a, MsgPvpSerTableInfo& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgPvpSerTableInfo* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgPvpSerTableInfo* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgPvpSerTableInfo* New() const final {
+    return CreateMaybeMessage<MsgPvpSerTableInfo>(nullptr);
+  }
+
+  MsgPvpSerTableInfo* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgPvpSerTableInfo>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgPvpSerTableInfo& from);
+  void MergeFrom(const MsgPvpSerTableInfo& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgPvpSerTableInfo* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgPvpSerTableInfo";
+  }
+  protected:
+  explicit MsgPvpSerTableInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kTableNameFieldNumber = 2,
+    kOwnerNickFieldNumber = 9,
+    kTableIdFieldNumber = 1,
+    kChairNumFieldNumber = 3,
+    kEnterNumFieldNumber = 4,
+    kBaseScoreFieldNumber = 5,
+    kIsActivateFieldNumber = 6,
+    kIsPrivateFieldNumber = 7,
+    kTableNoFieldNumber = 10,
+  };
+  // string table_name = 2;
+  void clear_table_name();
+  const std::string& table_name() const;
+  void set_table_name(const std::string& value);
+  void set_table_name(std::string&& value);
+  void set_table_name(const char* value);
+  void set_table_name(const char* value, size_t size);
+  std::string* mutable_table_name();
+  std::string* release_table_name();
+  void set_allocated_table_name(std::string* table_name);
+  private:
+  const std::string& _internal_table_name() const;
+  void _internal_set_table_name(const std::string& value);
+  std::string* _internal_mutable_table_name();
+  public:
+
+  // string owner_nick = 9;
+  void clear_owner_nick();
+  const std::string& owner_nick() const;
+  void set_owner_nick(const std::string& value);
+  void set_owner_nick(std::string&& value);
+  void set_owner_nick(const char* value);
+  void set_owner_nick(const char* value, size_t size);
+  std::string* mutable_owner_nick();
+  std::string* release_owner_nick();
+  void set_allocated_owner_nick(std::string* owner_nick);
+  private:
+  const std::string& _internal_owner_nick() const;
+  void _internal_set_owner_nick(const std::string& value);
+  std::string* _internal_mutable_owner_nick();
+  public:
+
+  // int32 table_id = 1;
+  void clear_table_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 table_id() const;
+  void set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_table_id() const;
+  void _internal_set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 chair_num = 3;
+  void clear_chair_num();
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_num() const;
+  void set_chair_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_chair_num() const;
+  void _internal_set_chair_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 enter_num = 4;
+  void clear_enter_num();
+  ::PROTOBUF_NAMESPACE_ID::int32 enter_num() const;
+  void set_enter_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_enter_num() const;
+  void _internal_set_enter_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 base_score = 5;
+  void clear_base_score();
+  ::PROTOBUF_NAMESPACE_ID::int32 base_score() const;
+  void set_base_score(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_base_score() const;
+  void _internal_set_base_score(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // bool is_activate = 6;
+  void clear_is_activate();
+  bool is_activate() const;
+  void set_is_activate(bool value);
+  private:
+  bool _internal_is_activate() const;
+  void _internal_set_is_activate(bool value);
+  public:
+
+  // bool is_private = 7;
+  void clear_is_private();
+  bool is_private() const;
+  void set_is_private(bool value);
+  private:
+  bool _internal_is_private() const;
+  void _internal_set_is_private(bool value);
+  public:
+
+  // int32 table_no = 10;
+  void clear_table_no();
+  ::PROTOBUF_NAMESPACE_ID::int32 table_no() const;
+  void set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_table_no() const;
+  void _internal_set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgPvpSerTableInfo)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr table_name_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr owner_nick_;
+  ::PROTOBUF_NAMESPACE_ID::int32 table_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_num_;
+  ::PROTOBUF_NAMESPACE_ID::int32 enter_num_;
+  ::PROTOBUF_NAMESPACE_ID::int32 base_score_;
+  bool is_activate_;
+  bool is_private_;
+  ::PROTOBUF_NAMESPACE_ID::int32 table_no_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgPvpAddTable PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgPvpAddTable) */ {
+ public:
+  inline MsgPvpAddTable() : MsgPvpAddTable(nullptr) {}
+  virtual ~MsgPvpAddTable();
+
+  MsgPvpAddTable(const MsgPvpAddTable& from);
+  MsgPvpAddTable(MsgPvpAddTable&& from) noexcept
+    : MsgPvpAddTable() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgPvpAddTable& operator=(const MsgPvpAddTable& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgPvpAddTable& operator=(MsgPvpAddTable&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgPvpAddTable& default_instance();
+
+  static inline const MsgPvpAddTable* internal_default_instance() {
+    return reinterpret_cast<const MsgPvpAddTable*>(
+               &_MsgPvpAddTable_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    59;
+
+  friend void swap(MsgPvpAddTable& a, MsgPvpAddTable& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgPvpAddTable* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgPvpAddTable* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgPvpAddTable* New() const final {
+    return CreateMaybeMessage<MsgPvpAddTable>(nullptr);
+  }
+
+  MsgPvpAddTable* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgPvpAddTable>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgPvpAddTable& from);
+  void MergeFrom(const MsgPvpAddTable& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgPvpAddTable* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgPvpAddTable";
+  }
+  protected:
+  explicit MsgPvpAddTable(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kTableListFieldNumber = 2,
+    kGameTypeFieldNumber = 1,
+  };
+  // repeated .MsgPvpSerTableInfo table_list = 2;
+  int table_list_size() const;
+  private:
+  int _internal_table_list_size() const;
+  public:
+  void clear_table_list();
+  ::MsgPvpSerTableInfo* mutable_table_list(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgPvpSerTableInfo >*
+      mutable_table_list();
+  private:
+  const ::MsgPvpSerTableInfo& _internal_table_list(int index) const;
+  ::MsgPvpSerTableInfo* _internal_add_table_list();
+  public:
+  const ::MsgPvpSerTableInfo& table_list(int index) const;
+  ::MsgPvpSerTableInfo* add_table_list();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgPvpSerTableInfo >&
+      table_list() const;
+
+  // int32 game_type = 1;
+  void clear_game_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 game_type() const;
+  void set_game_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_game_type() const;
+  void _internal_set_game_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgPvpAddTable)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgPvpSerTableInfo > table_list_;
+  ::PROTOBUF_NAMESPACE_ID::int32 game_type_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgPvpDelTable PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgPvpDelTable) */ {
+ public:
+  inline MsgPvpDelTable() : MsgPvpDelTable(nullptr) {}
+  virtual ~MsgPvpDelTable();
+
+  MsgPvpDelTable(const MsgPvpDelTable& from);
+  MsgPvpDelTable(MsgPvpDelTable&& from) noexcept
+    : MsgPvpDelTable() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgPvpDelTable& operator=(const MsgPvpDelTable& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgPvpDelTable& operator=(MsgPvpDelTable&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgPvpDelTable& default_instance();
+
+  static inline const MsgPvpDelTable* internal_default_instance() {
+    return reinterpret_cast<const MsgPvpDelTable*>(
+               &_MsgPvpDelTable_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    60;
+
+  friend void swap(MsgPvpDelTable& a, MsgPvpDelTable& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgPvpDelTable* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgPvpDelTable* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgPvpDelTable* New() const final {
+    return CreateMaybeMessage<MsgPvpDelTable>(nullptr);
+  }
+
+  MsgPvpDelTable* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgPvpDelTable>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgPvpDelTable& from);
+  void MergeFrom(const MsgPvpDelTable& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgPvpDelTable* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgPvpDelTable";
+  }
+  protected:
+  explicit MsgPvpDelTable(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kGameTypeFieldNumber = 1,
+    kTableIdFieldNumber = 2,
+  };
+  // int32 game_type = 1;
+  void clear_game_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 game_type() const;
+  void set_game_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_game_type() const;
+  void _internal_set_game_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 table_id = 2;
+  void clear_table_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 table_id() const;
+  void set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_table_id() const;
+  void _internal_set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgPvpDelTable)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 game_type_;
+  ::PROTOBUF_NAMESPACE_ID::int32 table_id_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
 // ===================================================================
 
 
@@ -17356,9 +17909,388 @@ inline void MsgDBUpgradeVIP::set_add_vip_exp(::PROTOBUF_NAMESPACE_ID::int32 valu
   // @@protoc_insertion_point(field_set:MsgDBUpgradeVIP.add_vip_exp)
 }
 
+// -------------------------------------------------------------------
+
+// MsgPvpSerTableInfo
+
+// int32 table_id = 1;
+inline void MsgPvpSerTableInfo::clear_table_id() {
+  table_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpSerTableInfo::_internal_table_id() const {
+  return table_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpSerTableInfo::table_id() const {
+  // @@protoc_insertion_point(field_get:MsgPvpSerTableInfo.table_id)
+  return _internal_table_id();
+}
+inline void MsgPvpSerTableInfo::_internal_set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  table_id_ = value;
+}
+inline void MsgPvpSerTableInfo::set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_table_id(value);
+  // @@protoc_insertion_point(field_set:MsgPvpSerTableInfo.table_id)
+}
+
+// string table_name = 2;
+inline void MsgPvpSerTableInfo::clear_table_name() {
+  table_name_.ClearToEmpty();
+}
+inline const std::string& MsgPvpSerTableInfo::table_name() const {
+  // @@protoc_insertion_point(field_get:MsgPvpSerTableInfo.table_name)
+  return _internal_table_name();
+}
+inline void MsgPvpSerTableInfo::set_table_name(const std::string& value) {
+  _internal_set_table_name(value);
+  // @@protoc_insertion_point(field_set:MsgPvpSerTableInfo.table_name)
+}
+inline std::string* MsgPvpSerTableInfo::mutable_table_name() {
+  // @@protoc_insertion_point(field_mutable:MsgPvpSerTableInfo.table_name)
+  return _internal_mutable_table_name();
+}
+inline const std::string& MsgPvpSerTableInfo::_internal_table_name() const {
+  return table_name_.Get();
+}
+inline void MsgPvpSerTableInfo::_internal_set_table_name(const std::string& value) {
+  
+  table_name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgPvpSerTableInfo::set_table_name(std::string&& value) {
+  
+  table_name_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgPvpSerTableInfo.table_name)
+}
+inline void MsgPvpSerTableInfo::set_table_name(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  table_name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgPvpSerTableInfo.table_name)
+}
+inline void MsgPvpSerTableInfo::set_table_name(const char* value,
+    size_t size) {
+  
+  table_name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgPvpSerTableInfo.table_name)
+}
+inline std::string* MsgPvpSerTableInfo::_internal_mutable_table_name() {
+  
+  return table_name_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgPvpSerTableInfo::release_table_name() {
+  // @@protoc_insertion_point(field_release:MsgPvpSerTableInfo.table_name)
+  return table_name_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgPvpSerTableInfo::set_allocated_table_name(std::string* table_name) {
+  if (table_name != nullptr) {
+    
+  } else {
+    
+  }
+  table_name_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), table_name,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgPvpSerTableInfo.table_name)
+}
+
+// int32 chair_num = 3;
+inline void MsgPvpSerTableInfo::clear_chair_num() {
+  chair_num_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpSerTableInfo::_internal_chair_num() const {
+  return chair_num_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpSerTableInfo::chair_num() const {
+  // @@protoc_insertion_point(field_get:MsgPvpSerTableInfo.chair_num)
+  return _internal_chair_num();
+}
+inline void MsgPvpSerTableInfo::_internal_set_chair_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  chair_num_ = value;
+}
+inline void MsgPvpSerTableInfo::set_chair_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_chair_num(value);
+  // @@protoc_insertion_point(field_set:MsgPvpSerTableInfo.chair_num)
+}
+
+// int32 enter_num = 4;
+inline void MsgPvpSerTableInfo::clear_enter_num() {
+  enter_num_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpSerTableInfo::_internal_enter_num() const {
+  return enter_num_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpSerTableInfo::enter_num() const {
+  // @@protoc_insertion_point(field_get:MsgPvpSerTableInfo.enter_num)
+  return _internal_enter_num();
+}
+inline void MsgPvpSerTableInfo::_internal_set_enter_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  enter_num_ = value;
+}
+inline void MsgPvpSerTableInfo::set_enter_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_enter_num(value);
+  // @@protoc_insertion_point(field_set:MsgPvpSerTableInfo.enter_num)
+}
+
+// int32 base_score = 5;
+inline void MsgPvpSerTableInfo::clear_base_score() {
+  base_score_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpSerTableInfo::_internal_base_score() const {
+  return base_score_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpSerTableInfo::base_score() const {
+  // @@protoc_insertion_point(field_get:MsgPvpSerTableInfo.base_score)
+  return _internal_base_score();
+}
+inline void MsgPvpSerTableInfo::_internal_set_base_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  base_score_ = value;
+}
+inline void MsgPvpSerTableInfo::set_base_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_base_score(value);
+  // @@protoc_insertion_point(field_set:MsgPvpSerTableInfo.base_score)
+}
+
+// bool is_activate = 6;
+inline void MsgPvpSerTableInfo::clear_is_activate() {
+  is_activate_ = false;
+}
+inline bool MsgPvpSerTableInfo::_internal_is_activate() const {
+  return is_activate_;
+}
+inline bool MsgPvpSerTableInfo::is_activate() const {
+  // @@protoc_insertion_point(field_get:MsgPvpSerTableInfo.is_activate)
+  return _internal_is_activate();
+}
+inline void MsgPvpSerTableInfo::_internal_set_is_activate(bool value) {
+  
+  is_activate_ = value;
+}
+inline void MsgPvpSerTableInfo::set_is_activate(bool value) {
+  _internal_set_is_activate(value);
+  // @@protoc_insertion_point(field_set:MsgPvpSerTableInfo.is_activate)
+}
+
+// bool is_private = 7;
+inline void MsgPvpSerTableInfo::clear_is_private() {
+  is_private_ = false;
+}
+inline bool MsgPvpSerTableInfo::_internal_is_private() const {
+  return is_private_;
+}
+inline bool MsgPvpSerTableInfo::is_private() const {
+  // @@protoc_insertion_point(field_get:MsgPvpSerTableInfo.is_private)
+  return _internal_is_private();
+}
+inline void MsgPvpSerTableInfo::_internal_set_is_private(bool value) {
+  
+  is_private_ = value;
+}
+inline void MsgPvpSerTableInfo::set_is_private(bool value) {
+  _internal_set_is_private(value);
+  // @@protoc_insertion_point(field_set:MsgPvpSerTableInfo.is_private)
+}
+
+// string owner_nick = 9;
+inline void MsgPvpSerTableInfo::clear_owner_nick() {
+  owner_nick_.ClearToEmpty();
+}
+inline const std::string& MsgPvpSerTableInfo::owner_nick() const {
+  // @@protoc_insertion_point(field_get:MsgPvpSerTableInfo.owner_nick)
+  return _internal_owner_nick();
+}
+inline void MsgPvpSerTableInfo::set_owner_nick(const std::string& value) {
+  _internal_set_owner_nick(value);
+  // @@protoc_insertion_point(field_set:MsgPvpSerTableInfo.owner_nick)
+}
+inline std::string* MsgPvpSerTableInfo::mutable_owner_nick() {
+  // @@protoc_insertion_point(field_mutable:MsgPvpSerTableInfo.owner_nick)
+  return _internal_mutable_owner_nick();
+}
+inline const std::string& MsgPvpSerTableInfo::_internal_owner_nick() const {
+  return owner_nick_.Get();
+}
+inline void MsgPvpSerTableInfo::_internal_set_owner_nick(const std::string& value) {
+  
+  owner_nick_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgPvpSerTableInfo::set_owner_nick(std::string&& value) {
+  
+  owner_nick_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgPvpSerTableInfo.owner_nick)
+}
+inline void MsgPvpSerTableInfo::set_owner_nick(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  owner_nick_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgPvpSerTableInfo.owner_nick)
+}
+inline void MsgPvpSerTableInfo::set_owner_nick(const char* value,
+    size_t size) {
+  
+  owner_nick_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgPvpSerTableInfo.owner_nick)
+}
+inline std::string* MsgPvpSerTableInfo::_internal_mutable_owner_nick() {
+  
+  return owner_nick_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgPvpSerTableInfo::release_owner_nick() {
+  // @@protoc_insertion_point(field_release:MsgPvpSerTableInfo.owner_nick)
+  return owner_nick_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgPvpSerTableInfo::set_allocated_owner_nick(std::string* owner_nick) {
+  if (owner_nick != nullptr) {
+    
+  } else {
+    
+  }
+  owner_nick_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), owner_nick,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgPvpSerTableInfo.owner_nick)
+}
+
+// int32 table_no = 10;
+inline void MsgPvpSerTableInfo::clear_table_no() {
+  table_no_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpSerTableInfo::_internal_table_no() const {
+  return table_no_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpSerTableInfo::table_no() const {
+  // @@protoc_insertion_point(field_get:MsgPvpSerTableInfo.table_no)
+  return _internal_table_no();
+}
+inline void MsgPvpSerTableInfo::_internal_set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  table_no_ = value;
+}
+inline void MsgPvpSerTableInfo::set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_table_no(value);
+  // @@protoc_insertion_point(field_set:MsgPvpSerTableInfo.table_no)
+}
+
+// -------------------------------------------------------------------
+
+// MsgPvpAddTable
+
+// int32 game_type = 1;
+inline void MsgPvpAddTable::clear_game_type() {
+  game_type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpAddTable::_internal_game_type() const {
+  return game_type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpAddTable::game_type() const {
+  // @@protoc_insertion_point(field_get:MsgPvpAddTable.game_type)
+  return _internal_game_type();
+}
+inline void MsgPvpAddTable::_internal_set_game_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  game_type_ = value;
+}
+inline void MsgPvpAddTable::set_game_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_game_type(value);
+  // @@protoc_insertion_point(field_set:MsgPvpAddTable.game_type)
+}
+
+// repeated .MsgPvpSerTableInfo table_list = 2;
+inline int MsgPvpAddTable::_internal_table_list_size() const {
+  return table_list_.size();
+}
+inline int MsgPvpAddTable::table_list_size() const {
+  return _internal_table_list_size();
+}
+inline void MsgPvpAddTable::clear_table_list() {
+  table_list_.Clear();
+}
+inline ::MsgPvpSerTableInfo* MsgPvpAddTable::mutable_table_list(int index) {
+  // @@protoc_insertion_point(field_mutable:MsgPvpAddTable.table_list)
+  return table_list_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgPvpSerTableInfo >*
+MsgPvpAddTable::mutable_table_list() {
+  // @@protoc_insertion_point(field_mutable_list:MsgPvpAddTable.table_list)
+  return &table_list_;
+}
+inline const ::MsgPvpSerTableInfo& MsgPvpAddTable::_internal_table_list(int index) const {
+  return table_list_.Get(index);
+}
+inline const ::MsgPvpSerTableInfo& MsgPvpAddTable::table_list(int index) const {
+  // @@protoc_insertion_point(field_get:MsgPvpAddTable.table_list)
+  return _internal_table_list(index);
+}
+inline ::MsgPvpSerTableInfo* MsgPvpAddTable::_internal_add_table_list() {
+  return table_list_.Add();
+}
+inline ::MsgPvpSerTableInfo* MsgPvpAddTable::add_table_list() {
+  // @@protoc_insertion_point(field_add:MsgPvpAddTable.table_list)
+  return _internal_add_table_list();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgPvpSerTableInfo >&
+MsgPvpAddTable::table_list() const {
+  // @@protoc_insertion_point(field_list:MsgPvpAddTable.table_list)
+  return table_list_;
+}
+
+// -------------------------------------------------------------------
+
+// MsgPvpDelTable
+
+// int32 game_type = 1;
+inline void MsgPvpDelTable::clear_game_type() {
+  game_type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpDelTable::_internal_game_type() const {
+  return game_type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpDelTable::game_type() const {
+  // @@protoc_insertion_point(field_get:MsgPvpDelTable.game_type)
+  return _internal_game_type();
+}
+inline void MsgPvpDelTable::_internal_set_game_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  game_type_ = value;
+}
+inline void MsgPvpDelTable::set_game_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_game_type(value);
+  // @@protoc_insertion_point(field_set:MsgPvpDelTable.game_type)
+}
+
+// int32 table_id = 2;
+inline void MsgPvpDelTable::clear_table_id() {
+  table_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpDelTable::_internal_table_id() const {
+  return table_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpDelTable::table_id() const {
+  // @@protoc_insertion_point(field_get:MsgPvpDelTable.table_id)
+  return _internal_table_id();
+}
+inline void MsgPvpDelTable::_internal_set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  table_id_ = value;
+}
+inline void MsgPvpDelTable::set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_table_id(value);
+  // @@protoc_insertion_point(field_set:MsgPvpDelTable.table_id)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
