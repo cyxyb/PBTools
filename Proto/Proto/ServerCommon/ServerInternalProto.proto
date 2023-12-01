@@ -319,6 +319,8 @@ message MsgDBWriteScore
 	int64		score			= 3;	//分数
 	int32		is_up_rank		= 4;	//是否更新排行榜
 	string		game_details	= 5;	//游戏详情
+	int32		table_id		= 6;	//桌子id
+	int32		table_no		= 7;	//局号
 }
 
 //写分返回

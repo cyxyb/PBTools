@@ -6401,6 +6401,8 @@ class MsgDBWriteScore PROTOBUF_FINAL :
     kBetFieldNumber = 2,
     kScoreFieldNumber = 3,
     kIsUpRankFieldNumber = 4,
+    kTableIdFieldNumber = 6,
+    kTableNoFieldNumber = 7,
   };
   // string game_details = 5;
   void clear_game_details();
@@ -6454,6 +6456,24 @@ class MsgDBWriteScore PROTOBUF_FINAL :
   void _internal_set_is_up_rank(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 table_id = 6;
+  void clear_table_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 table_id() const;
+  void set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_table_id() const;
+  void _internal_set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 table_no = 7;
+  void clear_table_no();
+  ::PROTOBUF_NAMESPACE_ID::int32 table_no() const;
+  void set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_table_no() const;
+  void _internal_set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgDBWriteScore)
  private:
   class _Internal;
@@ -6466,6 +6486,8 @@ class MsgDBWriteScore PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 bet_;
   ::PROTOBUF_NAMESPACE_ID::int64 score_;
   ::PROTOBUF_NAMESPACE_ID::int32 is_up_rank_;
+  ::PROTOBUF_NAMESPACE_ID::int32 table_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 table_no_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -15005,6 +15027,46 @@ inline void MsgDBWriteScore::set_allocated_game_details(std::string* game_detail
   game_details_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), game_details,
       GetArena());
   // @@protoc_insertion_point(field_set_allocated:MsgDBWriteScore.game_details)
+}
+
+// int32 table_id = 6;
+inline void MsgDBWriteScore::clear_table_id() {
+  table_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScore::_internal_table_id() const {
+  return table_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScore::table_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBWriteScore.table_id)
+  return _internal_table_id();
+}
+inline void MsgDBWriteScore::_internal_set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  table_id_ = value;
+}
+inline void MsgDBWriteScore::set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_table_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBWriteScore.table_id)
+}
+
+// int32 table_no = 7;
+inline void MsgDBWriteScore::clear_table_no() {
+  table_no_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScore::_internal_table_no() const {
+  return table_no_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScore::table_no() const {
+  // @@protoc_insertion_point(field_get:MsgDBWriteScore.table_no)
+  return _internal_table_no();
+}
+inline void MsgDBWriteScore::_internal_set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  table_no_ = value;
+}
+inline void MsgDBWriteScore::set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_table_no(value);
+  // @@protoc_insertion_point(field_set:MsgDBWriteScore.table_no)
 }
 
 // -------------------------------------------------------------------
