@@ -28,6 +28,7 @@ message UserInfo
 	int32 chair_id 					= 1;		//椅子号
 	repeated RouteInfo route_info 	= 2;		//棋子信息
 	bool finish_line_switch 		= 3;		//终点线开关
+	bool 
 }
 //棋格信息
 message ChessGrid
@@ -50,7 +51,6 @@ message	MsgSceneInfoResp
 	int32 game_state 					= 1;//游戏状态 0：选场 非零：对应椅子操作中
 	int32 time_remaining 				= 2;//剩余时间
 	repeated UserInfo user_info	 		= 3;//用户信息
-	
 }
 //开始投掷
 message MsgStartDiceResp
