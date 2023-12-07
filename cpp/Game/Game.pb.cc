@@ -440,6 +440,8 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Game_2eproto::offsets[] PROTOB
   PROTOBUF_FIELD_OFFSET(::MsgGamePlayerInfo, chair_id_),
   PROTOBUF_FIELD_OFFSET(::MsgGamePlayerInfo, vip_level_),
   PROTOBUF_FIELD_OFFSET(::MsgGamePlayerInfo, avatar_frame_),
+  PROTOBUF_FIELD_OFFSET(::MsgGamePlayerInfo, ip_info_),
+  PROTOBUF_FIELD_OFFSET(::MsgGamePlayerInfo, longitude_latitude_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgGamePlayerLoginResp, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -639,27 +641,27 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Game_2eproto::offsets[] PROTOB
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::MsgGamePlayerLogin)},
   { 7, -1, sizeof(::MsgGamePlayerInfo)},
-  { 21, -1, sizeof(::MsgGamePlayerLoginResp)},
-  { 32, -1, sizeof(::MsgSyncPlayersScore)},
-  { 39, -1, sizeof(::MsgRoundData)},
-  { 48, -1, sizeof(::MsgTotalRoundData)},
-  { 55, -1, sizeof(::MsgDayData)},
-  { 68, -1, sizeof(::MsgTotalDayData)},
-  { 75, -1, sizeof(::MsgQueryRecord)},
-  { 83, -1, sizeof(::MsgJackpotInfo)},
-  { 90, -1, sizeof(::MsgPvpTableInfo)},
-  { 112, -1, sizeof(::MsgPvpRoomCfgItem)},
-  { 120, -1, sizeof(::MsgPvpRoomConfig)},
-  { 129, -1, sizeof(::MsgPvpTableList)},
-  { 135, -1, sizeof(::MsgPvpCreateTable)},
-  { 145, -1, sizeof(::MsgPvpCreateTableResp)},
-  { 153, -1, sizeof(::MsgPvpJoinTable)},
-  { 161, -1, sizeof(::MsgPvpJoinTableResp)},
-  { 171, -1, sizeof(::MsgPvpStandUpTableResp)},
-  { 181, -1, sizeof(::MsgPvpDestroyTableResp)},
-  { 189, -1, sizeof(::MsgPvpKickUserResp)},
-  { 199, -1, sizeof(::MsgPvpTableChangeOwnerResp)},
-  { 207, -1, sizeof(::MsgPvpActivateTableResp)},
+  { 23, -1, sizeof(::MsgGamePlayerLoginResp)},
+  { 34, -1, sizeof(::MsgSyncPlayersScore)},
+  { 41, -1, sizeof(::MsgRoundData)},
+  { 50, -1, sizeof(::MsgTotalRoundData)},
+  { 57, -1, sizeof(::MsgDayData)},
+  { 70, -1, sizeof(::MsgTotalDayData)},
+  { 77, -1, sizeof(::MsgQueryRecord)},
+  { 85, -1, sizeof(::MsgJackpotInfo)},
+  { 92, -1, sizeof(::MsgPvpTableInfo)},
+  { 114, -1, sizeof(::MsgPvpRoomCfgItem)},
+  { 122, -1, sizeof(::MsgPvpRoomConfig)},
+  { 131, -1, sizeof(::MsgPvpTableList)},
+  { 137, -1, sizeof(::MsgPvpCreateTable)},
+  { 147, -1, sizeof(::MsgPvpCreateTableResp)},
+  { 155, -1, sizeof(::MsgPvpJoinTable)},
+  { 163, -1, sizeof(::MsgPvpJoinTableResp)},
+  { 173, -1, sizeof(::MsgPvpStandUpTableResp)},
+  { 183, -1, sizeof(::MsgPvpDestroyTableResp)},
+  { 191, -1, sizeof(::MsgPvpKickUserResp)},
+  { 201, -1, sizeof(::MsgPvpTableChangeOwnerResp)},
+  { 209, -1, sizeof(::MsgPvpActivateTableResp)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -690,67 +692,68 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
 
 const char descriptor_table_protodef_Game_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n\nGame.proto\"7\n\022MsgGamePlayerLogin\022\017\n\007us"
-  "er_id\030\001 \001(\005\022\020\n\010password\030\002 \001(\t\"\267\001\n\021MsgGam"
+  "er_id\030\001 \001(\005\022\020\n\010password\030\002 \001(\t\"\344\001\n\021MsgGam"
   "ePlayerInfo\022\017\n\007user_id\030\001 \001(\005\022\024\n\014beautifu"
   "l_id\030\002 \001(\005\022\020\n\010nickname\030\003 \001(\t\022\016\n\006avatar\030\004"
   " \001(\t\022\014\n\004coin\030\005 \001(\004\022\020\n\010table_id\030\006 \001(\005\022\020\n\010"
   "chair_id\030\007 \001(\005\022\021\n\tvip_level\030\010 \001(\005\022\024\n\014ava"
-  "tar_frame\030\t \001(\005\"\201\001\n\026MsgGamePlayerLoginRe"
-  "sp\022\020\n\010res_code\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\024\n"
-  "\014beautiful_id\030\003 \001(\005\022\020\n\010nickname\030\004 \001(\t\022\016\n"
-  "\006avatar\030\005 \001(\t\022\014\n\004coin\030\006 \001(\004\"5\n\023MsgSyncPl"
-  "ayersScore\022\020\n\010chair_id\030\001 \001(\005\022\014\n\004coin\030\002 \001"
-  "(\004\"U\n\014MsgRoundData\022\014\n\004time\030\001 \001(\005\022\023\n\013win_"
-  "user_id\030\002 \001(\005\022\024\n\014lose_user_id\030\003 \001(\005\022\014\n\004g"
-  "old\030\004 \001(\003\"I\n\021MsgTotalRoundData\022\021\n\ttotal_"
-  "num\030\001 \001(\005\022!\n\nround_data\030\002 \003(\0132\r.MsgRound"
-  "Data\"\252\001\n\nMsgDayData\022\014\n\004time\030\001 \001(\t\022\030\n\020tot"
-  "al_play_count\030\002 \001(\005\022\022\n\nlose_count\030\003 \001(\005\022"
-  "\021\n\tlose_gold\030\004 \001(\003\022\021\n\twin_count\030\005 \001(\005\022\020\n"
-  "\010win_gold\030\006 \001(\003\022\022\n\ntotal_gold\030\007 \001(\003\022\024\n\014s"
-  "urplus_gold\030\010 \001(\003\"E\n\017MsgTotalDayData\022\021\n\t"
-  "total_num\030\001 \001(\005\022\037\n\ndaily_data\030\002 \003(\0132\013.Ms"
-  "gDayData\"9\n\016MsgQueryRecord\022\014\n\004page\030\001 \001(\005"
-  "\022\013\n\003num\030\002 \001(\005\022\014\n\004type\030\003 \001(\005\"7\n\016MsgJackpo"
-  "tInfo\022\017\n\007jackpot\030\001 \001(\003\022\024\n\014fake_jackpot\030\002"
-  " \001(\003\"\274\002\n\017MsgPvpTableInfo\022\020\n\010table_id\030\001 \001"
-  "(\005\022\022\n\ntable_name\030\002 \001(\t\022\021\n\tchair_num\030\003 \001("
-  "\005\022\021\n\tenter_num\030\004 \001(\005\022\023\n\013is_activate\030\006 \001("
-  "\010\022\022\n\nis_private\030\007 \001(\010\022\020\n\010password\030\010 \001(\t\022"
-  "\020\n\010owner_id\030\t \001(\005\022\020\n\010table_no\030\n \001(\005\022\016\n\006v"
-  "alue1\030\013 \001(\003\022\016\n\006value2\030\014 \001(\003\022\016\n\006value3\030\r "
-  "\001(\003\022\016\n\006value4\030\016 \001(\003\022\016\n\006value5\030\017 \001(\003\022\016\n\006v"
-  "alue6\030\020 \001(\003\022\016\n\006value7\030\021 \001(\003\022\016\n\006value8\030\022 "
-  "\001(\003\"M\n\021MsgPvpRoomCfgItem\022\017\n\007lag_key\030\001 \001("
-  "\005\022\023\n\013clinet_open\030\002 \001(\005\022\022\n\nvalue_list\030\003 \003"
-  "(\005\"\205\001\n\020MsgPvpRoomConfig\022\030\n\020create_vip_li"
-  "mit\030\001 \001(\005\022\027\n\017chair_limit_min\030\002 \001(\005\022\027\n\017ch"
-  "air_limit_max\030\003 \001(\005\022%\n\tpara_lsit\030\013 \003(\0132\022"
-  ".MsgPvpRoomCfgItem\"7\n\017MsgPvpTableList\022$\n"
-  "\ntable_list\030\001 \003(\0132\020.MsgPvpTableInfo\"s\n\021M"
-  "sgPvpCreateTable\022\022\n\nis_private\030\001 \001(\010\022\022\n\n"
-  "table_name\030\002 \001(\t\022\021\n\tchair_num\030\003 \001(\005\022\020\n\010p"
-  "assword\030\006 \001(\t\022\021\n\tpara_lsit\030\007 \003(\005\"^\n\025MsgP"
-  "vpCreateTableResp\022\020\n\010ret_code\030\001 \001(\005\022\r\n\005v"
-  "alue\030\002 \001(\005\022$\n\ntable_info\030\003 \001(\0132\020.MsgPvpT"
-  "ableInfo\"G\n\017MsgPvpJoinTable\022\020\n\010table_id\030"
-  "\001 \001(\005\022\020\n\010table_no\030\002 \001(\005\022\020\n\010password\030\003 \001("
-  "\t\"p\n\023MsgPvpJoinTableResp\022\020\n\010ret_code\030\001 \001"
-  "(\005\022\020\n\010table_id\030\002 \001(\005\022\020\n\010table_no\030\003 \001(\005\022\017"
-  "\n\007user_id\030\004 \001(\005\022\022\n\nplayer_num\030\005 \001(\005\"s\n\026M"
-  "sgPvpStandUpTableResp\022\020\n\010ret_code\030\001 \001(\005\022"
-  "\020\n\010table_id\030\002 \001(\005\022\020\n\010table_no\030\003 \001(\005\022\017\n\007u"
-  "ser_id\030\004 \001(\005\022\022\n\nplayer_num\030\005 \001(\005\"N\n\026MsgP"
-  "vpDestroyTableResp\022\020\n\010ret_code\030\001 \001(\005\022\020\n\010"
-  "table_id\030\002 \001(\005\022\020\n\010table_no\030\003 \001(\005\"p\n\022MsgP"
-  "vpKickUserResp\022\020\n\010ret_code\030\001 \001(\005\022\020\n\010owne"
-  "r_id\030\002 \001(\005\022\022\n\nowner_nick\030\003 \001(\t\022\017\n\007kick_i"
-  "d\030\004 \001(\005\022\021\n\tkick_nick\030\005 \001(\t\"U\n\032MsgPvpTabl"
-  "eChangeOwnerResp\022\020\n\010table_id\030\001 \001(\005\022\020\n\010ow"
-  "ner_id\030\002 \001(\005\022\023\n\013is_activate\030\003 \001(\010\"d\n\027Msg"
-  "PvpActivateTableResp\022\020\n\010ret_code\030\001 \001(\005\022\020"
-  "\n\010table_id\030\002 \001(\005\022\020\n\010owner_id\030\003 \001(\005\022\023\n\013is"
-  "_activate\030\004 \001(\010b\006proto3"
+  "tar_frame\030\t \001(\005\022\017\n\007ip_info\030\n \001(\t\022\032\n\022long"
+  "itude_latitude\030\013 \001(\t\"\201\001\n\026MsgGamePlayerLo"
+  "ginResp\022\020\n\010res_code\030\001 \001(\005\022\017\n\007user_id\030\002 \001"
+  "(\005\022\024\n\014beautiful_id\030\003 \001(\005\022\020\n\010nickname\030\004 \001"
+  "(\t\022\016\n\006avatar\030\005 \001(\t\022\014\n\004coin\030\006 \001(\004\"5\n\023MsgS"
+  "yncPlayersScore\022\020\n\010chair_id\030\001 \001(\005\022\014\n\004coi"
+  "n\030\002 \001(\004\"U\n\014MsgRoundData\022\014\n\004time\030\001 \001(\005\022\023\n"
+  "\013win_user_id\030\002 \001(\005\022\024\n\014lose_user_id\030\003 \001(\005"
+  "\022\014\n\004gold\030\004 \001(\003\"I\n\021MsgTotalRoundData\022\021\n\tt"
+  "otal_num\030\001 \001(\005\022!\n\nround_data\030\002 \003(\0132\r.Msg"
+  "RoundData\"\252\001\n\nMsgDayData\022\014\n\004time\030\001 \001(\t\022\030"
+  "\n\020total_play_count\030\002 \001(\005\022\022\n\nlose_count\030\003"
+  " \001(\005\022\021\n\tlose_gold\030\004 \001(\003\022\021\n\twin_count\030\005 \001"
+  "(\005\022\020\n\010win_gold\030\006 \001(\003\022\022\n\ntotal_gold\030\007 \001(\003"
+  "\022\024\n\014surplus_gold\030\010 \001(\003\"E\n\017MsgTotalDayDat"
+  "a\022\021\n\ttotal_num\030\001 \001(\005\022\037\n\ndaily_data\030\002 \003(\013"
+  "2\013.MsgDayData\"9\n\016MsgQueryRecord\022\014\n\004page\030"
+  "\001 \001(\005\022\013\n\003num\030\002 \001(\005\022\014\n\004type\030\003 \001(\005\"7\n\016MsgJ"
+  "ackpotInfo\022\017\n\007jackpot\030\001 \001(\003\022\024\n\014fake_jack"
+  "pot\030\002 \001(\003\"\274\002\n\017MsgPvpTableInfo\022\020\n\010table_i"
+  "d\030\001 \001(\005\022\022\n\ntable_name\030\002 \001(\t\022\021\n\tchair_num"
+  "\030\003 \001(\005\022\021\n\tenter_num\030\004 \001(\005\022\023\n\013is_activate"
+  "\030\006 \001(\010\022\022\n\nis_private\030\007 \001(\010\022\020\n\010password\030\010"
+  " \001(\t\022\020\n\010owner_id\030\t \001(\005\022\020\n\010table_no\030\n \001(\005"
+  "\022\016\n\006value1\030\013 \001(\003\022\016\n\006value2\030\014 \001(\003\022\016\n\006valu"
+  "e3\030\r \001(\003\022\016\n\006value4\030\016 \001(\003\022\016\n\006value5\030\017 \001(\003"
+  "\022\016\n\006value6\030\020 \001(\003\022\016\n\006value7\030\021 \001(\003\022\016\n\006valu"
+  "e8\030\022 \001(\003\"M\n\021MsgPvpRoomCfgItem\022\017\n\007lag_key"
+  "\030\001 \001(\005\022\023\n\013clinet_open\030\002 \001(\005\022\022\n\nvalue_lis"
+  "t\030\003 \003(\005\"\205\001\n\020MsgPvpRoomConfig\022\030\n\020create_v"
+  "ip_limit\030\001 \001(\005\022\027\n\017chair_limit_min\030\002 \001(\005\022"
+  "\027\n\017chair_limit_max\030\003 \001(\005\022%\n\tpara_lsit\030\013 "
+  "\003(\0132\022.MsgPvpRoomCfgItem\"7\n\017MsgPvpTableLi"
+  "st\022$\n\ntable_list\030\001 \003(\0132\020.MsgPvpTableInfo"
+  "\"s\n\021MsgPvpCreateTable\022\022\n\nis_private\030\001 \001("
+  "\010\022\022\n\ntable_name\030\002 \001(\t\022\021\n\tchair_num\030\003 \001(\005"
+  "\022\020\n\010password\030\006 \001(\t\022\021\n\tpara_lsit\030\007 \003(\005\"^\n"
+  "\025MsgPvpCreateTableResp\022\020\n\010ret_code\030\001 \001(\005"
+  "\022\r\n\005value\030\002 \001(\005\022$\n\ntable_info\030\003 \001(\0132\020.Ms"
+  "gPvpTableInfo\"G\n\017MsgPvpJoinTable\022\020\n\010tabl"
+  "e_id\030\001 \001(\005\022\020\n\010table_no\030\002 \001(\005\022\020\n\010password"
+  "\030\003 \001(\t\"p\n\023MsgPvpJoinTableResp\022\020\n\010ret_cod"
+  "e\030\001 \001(\005\022\020\n\010table_id\030\002 \001(\005\022\020\n\010table_no\030\003 "
+  "\001(\005\022\017\n\007user_id\030\004 \001(\005\022\022\n\nplayer_num\030\005 \001(\005"
+  "\"s\n\026MsgPvpStandUpTableResp\022\020\n\010ret_code\030\001"
+  " \001(\005\022\020\n\010table_id\030\002 \001(\005\022\020\n\010table_no\030\003 \001(\005"
+  "\022\017\n\007user_id\030\004 \001(\005\022\022\n\nplayer_num\030\005 \001(\005\"N\n"
+  "\026MsgPvpDestroyTableResp\022\020\n\010ret_code\030\001 \001("
+  "\005\022\020\n\010table_id\030\002 \001(\005\022\020\n\010table_no\030\003 \001(\005\"p\n"
+  "\022MsgPvpKickUserResp\022\020\n\010ret_code\030\001 \001(\005\022\020\n"
+  "\010owner_id\030\002 \001(\005\022\022\n\nowner_nick\030\003 \001(\t\022\017\n\007k"
+  "ick_id\030\004 \001(\005\022\021\n\tkick_nick\030\005 \001(\t\"U\n\032MsgPv"
+  "pTableChangeOwnerResp\022\020\n\010table_id\030\001 \001(\005\022"
+  "\020\n\010owner_id\030\002 \001(\005\022\023\n\013is_activate\030\003 \001(\010\"d"
+  "\n\027MsgPvpActivateTableResp\022\020\n\010ret_code\030\001 "
+  "\001(\005\022\020\n\010table_id\030\002 \001(\005\022\020\n\010owner_id\030\003 \001(\005\022"
+  "\023\n\013is_activate\030\004 \001(\010b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Game_2eproto_deps[1] = {
 };
@@ -781,7 +784,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Gam
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Game_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Game_2eproto = {
-  false, false, descriptor_table_protodef_Game_2eproto, "Game.proto", 2463,
+  false, false, descriptor_table_protodef_Game_2eproto, "Game.proto", 2508,
   &descriptor_table_Game_2eproto_once, descriptor_table_Game_2eproto_sccs, descriptor_table_Game_2eproto_deps, 23, 0,
   schemas, file_default_instances, TableStruct_Game_2eproto::offsets,
   file_level_metadata_Game_2eproto, 23, file_level_enum_descriptors_Game_2eproto, file_level_service_descriptors_Game_2eproto,
@@ -1048,6 +1051,16 @@ MsgGamePlayerInfo::MsgGamePlayerInfo(const MsgGamePlayerInfo& from)
     avatar_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_avatar(), 
       GetArena());
   }
+  ip_info_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from._internal_ip_info().empty()) {
+    ip_info_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_ip_info(), 
+      GetArena());
+  }
+  longitude_latitude_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from._internal_longitude_latitude().empty()) {
+    longitude_latitude_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_longitude_latitude(), 
+      GetArena());
+  }
   ::memcpy(&user_id_, &from.user_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&avatar_frame_) -
     reinterpret_cast<char*>(&user_id_)) + sizeof(avatar_frame_));
@@ -1058,6 +1071,8 @@ void MsgGamePlayerInfo::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgGamePlayerInfo_Game_2eproto.base);
   nickname_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   avatar_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  ip_info_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  longitude_latitude_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&user_id_) - reinterpret_cast<char*>(this)),
       0, static_cast<size_t>(reinterpret_cast<char*>(&avatar_frame_) -
@@ -1074,6 +1089,8 @@ void MsgGamePlayerInfo::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
   nickname_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   avatar_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  ip_info_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  longitude_latitude_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
 void MsgGamePlayerInfo::ArenaDtor(void* object) {
@@ -1099,6 +1116,8 @@ void MsgGamePlayerInfo::Clear() {
 
   nickname_.ClearToEmpty();
   avatar_.ClearToEmpty();
+  ip_info_.ClearToEmpty();
+  longitude_latitude_.ClearToEmpty();
   ::memset(&user_id_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&avatar_frame_) -
       reinterpret_cast<char*>(&user_id_)) + sizeof(avatar_frame_));
@@ -1176,6 +1195,24 @@ const char* MsgGamePlayerInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
       case 9:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
           avatar_frame_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string ip_info = 10;
+      case 10:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 82)) {
+          auto str = _internal_mutable_ip_info();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgGamePlayerInfo.ip_info"));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string longitude_latitude = 11;
+      case 11:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 90)) {
+          auto str = _internal_mutable_longitude_latitude();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgGamePlayerInfo.longitude_latitude"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1269,6 +1306,26 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(9, this->_internal_avatar_frame(), target);
   }
 
+  // string ip_info = 10;
+  if (this->ip_info().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_ip_info().data(), static_cast<int>(this->_internal_ip_info().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "MsgGamePlayerInfo.ip_info");
+    target = stream->WriteStringMaybeAliased(
+        10, this->_internal_ip_info(), target);
+  }
+
+  // string longitude_latitude = 11;
+  if (this->longitude_latitude().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_longitude_latitude().data(), static_cast<int>(this->_internal_longitude_latitude().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "MsgGamePlayerInfo.longitude_latitude");
+    target = stream->WriteStringMaybeAliased(
+        11, this->_internal_longitude_latitude(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -1297,6 +1354,20 @@ size_t MsgGamePlayerInfo::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_avatar());
+  }
+
+  // string ip_info = 10;
+  if (this->ip_info().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_ip_info());
+  }
+
+  // string longitude_latitude = 11;
+  if (this->longitude_latitude().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_longitude_latitude());
   }
 
   // int32 user_id = 1;
@@ -1385,6 +1456,12 @@ void MsgGamePlayerInfo::MergeFrom(const MsgGamePlayerInfo& from) {
   if (from.avatar().size() > 0) {
     _internal_set_avatar(from._internal_avatar());
   }
+  if (from.ip_info().size() > 0) {
+    _internal_set_ip_info(from._internal_ip_info());
+  }
+  if (from.longitude_latitude().size() > 0) {
+    _internal_set_longitude_latitude(from._internal_longitude_latitude());
+  }
   if (from.user_id() != 0) {
     _internal_set_user_id(from._internal_user_id());
   }
@@ -1431,6 +1508,8 @@ void MsgGamePlayerInfo::InternalSwap(MsgGamePlayerInfo* other) {
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   nickname_.Swap(&other->nickname_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   avatar_.Swap(&other->avatar_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ip_info_.Swap(&other->ip_info_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  longitude_latitude_.Swap(&other->longitude_latitude_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(MsgGamePlayerInfo, avatar_frame_)
       + sizeof(MsgGamePlayerInfo::avatar_frame_)

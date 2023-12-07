@@ -2,21 +2,22 @@ syntax = "proto3";
 
 //玩家登录
 message MsgPlayerLogin
-{
-	string		account			= 1;	//玩家账号
-	string		password		= 2;	//玩家密码
-	int32		platform_id		= 3;	//平台id
-	int32		channel_id		= 4;	//渠道id
-	int32		client_type		= 5;	//包id
-	int32		login_type		= 6;	//1:游客登录 2:账号登录 3:第三方登录 4:注册账号
-	string		machine_num		= 7;	//机器码
-	string		user_ip			= 8;	//玩家IP
-	int32		is_drain		= 9;	//0:谷歌商店来源 1:推广渠道(facebook等) 2:自定义连接并且初始玩家类型为线下
-	string		avatar			= 10;	//头像(第三方登录时需要)
-	string		nickname		= 11;	//昵称(第三方登录时需要)
-	string		phone			= 12;	//手机号
-	int32		code			= 13;	//验证码
-	string		invite_code		= 14;	//邀请码
+{	
+	string		account				= 1;		//玩家账号
+	string		password			= 2;		//玩家密码
+	int32		platform_id			= 3;		//平台id
+	int32		channel_id			= 4;		//渠道id
+	int32		client_type			= 5;		//包id
+	int32		login_type			= 6;		//1:游客登录 2:账号登录 3:第三方登录 4:注册账号
+	string		machine_num			= 7;		//机器码
+	string		user_ip				= 8;		//玩家IP
+	int32		is_drain			= 9;		//0:谷歌商店来源 1:推广渠道(facebook等) 2:自定义连接并且初始玩家类型为线下
+	string		avatar				= 10;		//头像(第三方登录时需要)
+	string		nickname			= 11;		//昵称(第三方登录时需要)
+	string		phone				= 12;		//手机号
+	int32		code				= 13;		//验证码
+	string		invite_code			= 14;		//邀请码
+	string		longitude_latitude 	= 15;		//径度和维度
 }
 
 //玩家登录返回

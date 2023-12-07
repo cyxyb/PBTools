@@ -418,6 +418,8 @@ class MsgGamePlayerInfo PROTOBUF_FINAL :
   enum : int {
     kNicknameFieldNumber = 3,
     kAvatarFieldNumber = 4,
+    kIpInfoFieldNumber = 10,
+    kLongitudeLatitudeFieldNumber = 11,
     kUserIdFieldNumber = 1,
     kBeautifulIdFieldNumber = 2,
     kCoinFieldNumber = 5,
@@ -456,6 +458,38 @@ class MsgGamePlayerInfo PROTOBUF_FINAL :
   const std::string& _internal_avatar() const;
   void _internal_set_avatar(const std::string& value);
   std::string* _internal_mutable_avatar();
+  public:
+
+  // string ip_info = 10;
+  void clear_ip_info();
+  const std::string& ip_info() const;
+  void set_ip_info(const std::string& value);
+  void set_ip_info(std::string&& value);
+  void set_ip_info(const char* value);
+  void set_ip_info(const char* value, size_t size);
+  std::string* mutable_ip_info();
+  std::string* release_ip_info();
+  void set_allocated_ip_info(std::string* ip_info);
+  private:
+  const std::string& _internal_ip_info() const;
+  void _internal_set_ip_info(const std::string& value);
+  std::string* _internal_mutable_ip_info();
+  public:
+
+  // string longitude_latitude = 11;
+  void clear_longitude_latitude();
+  const std::string& longitude_latitude() const;
+  void set_longitude_latitude(const std::string& value);
+  void set_longitude_latitude(std::string&& value);
+  void set_longitude_latitude(const char* value);
+  void set_longitude_latitude(const char* value, size_t size);
+  std::string* mutable_longitude_latitude();
+  std::string* release_longitude_latitude();
+  void set_allocated_longitude_latitude(std::string* longitude_latitude);
+  private:
+  const std::string& _internal_longitude_latitude() const;
+  void _internal_set_longitude_latitude(const std::string& value);
+  std::string* _internal_mutable_longitude_latitude();
   public:
 
   // int32 user_id = 1;
@@ -530,6 +564,8 @@ class MsgGamePlayerInfo PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr nickname_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr avatar_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr ip_info_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr longitude_latitude_;
   ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 beautiful_id_;
   ::PROTOBUF_NAMESPACE_ID::uint64 coin_;
@@ -4654,6 +4690,128 @@ inline void MsgGamePlayerInfo::_internal_set_avatar_frame(::PROTOBUF_NAMESPACE_I
 inline void MsgGamePlayerInfo::set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_avatar_frame(value);
   // @@protoc_insertion_point(field_set:MsgGamePlayerInfo.avatar_frame)
+}
+
+// string ip_info = 10;
+inline void MsgGamePlayerInfo::clear_ip_info() {
+  ip_info_.ClearToEmpty();
+}
+inline const std::string& MsgGamePlayerInfo::ip_info() const {
+  // @@protoc_insertion_point(field_get:MsgGamePlayerInfo.ip_info)
+  return _internal_ip_info();
+}
+inline void MsgGamePlayerInfo::set_ip_info(const std::string& value) {
+  _internal_set_ip_info(value);
+  // @@protoc_insertion_point(field_set:MsgGamePlayerInfo.ip_info)
+}
+inline std::string* MsgGamePlayerInfo::mutable_ip_info() {
+  // @@protoc_insertion_point(field_mutable:MsgGamePlayerInfo.ip_info)
+  return _internal_mutable_ip_info();
+}
+inline const std::string& MsgGamePlayerInfo::_internal_ip_info() const {
+  return ip_info_.Get();
+}
+inline void MsgGamePlayerInfo::_internal_set_ip_info(const std::string& value) {
+  
+  ip_info_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgGamePlayerInfo::set_ip_info(std::string&& value) {
+  
+  ip_info_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgGamePlayerInfo.ip_info)
+}
+inline void MsgGamePlayerInfo::set_ip_info(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  ip_info_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgGamePlayerInfo.ip_info)
+}
+inline void MsgGamePlayerInfo::set_ip_info(const char* value,
+    size_t size) {
+  
+  ip_info_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgGamePlayerInfo.ip_info)
+}
+inline std::string* MsgGamePlayerInfo::_internal_mutable_ip_info() {
+  
+  return ip_info_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgGamePlayerInfo::release_ip_info() {
+  // @@protoc_insertion_point(field_release:MsgGamePlayerInfo.ip_info)
+  return ip_info_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgGamePlayerInfo::set_allocated_ip_info(std::string* ip_info) {
+  if (ip_info != nullptr) {
+    
+  } else {
+    
+  }
+  ip_info_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ip_info,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgGamePlayerInfo.ip_info)
+}
+
+// string longitude_latitude = 11;
+inline void MsgGamePlayerInfo::clear_longitude_latitude() {
+  longitude_latitude_.ClearToEmpty();
+}
+inline const std::string& MsgGamePlayerInfo::longitude_latitude() const {
+  // @@protoc_insertion_point(field_get:MsgGamePlayerInfo.longitude_latitude)
+  return _internal_longitude_latitude();
+}
+inline void MsgGamePlayerInfo::set_longitude_latitude(const std::string& value) {
+  _internal_set_longitude_latitude(value);
+  // @@protoc_insertion_point(field_set:MsgGamePlayerInfo.longitude_latitude)
+}
+inline std::string* MsgGamePlayerInfo::mutable_longitude_latitude() {
+  // @@protoc_insertion_point(field_mutable:MsgGamePlayerInfo.longitude_latitude)
+  return _internal_mutable_longitude_latitude();
+}
+inline const std::string& MsgGamePlayerInfo::_internal_longitude_latitude() const {
+  return longitude_latitude_.Get();
+}
+inline void MsgGamePlayerInfo::_internal_set_longitude_latitude(const std::string& value) {
+  
+  longitude_latitude_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgGamePlayerInfo::set_longitude_latitude(std::string&& value) {
+  
+  longitude_latitude_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgGamePlayerInfo.longitude_latitude)
+}
+inline void MsgGamePlayerInfo::set_longitude_latitude(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  longitude_latitude_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgGamePlayerInfo.longitude_latitude)
+}
+inline void MsgGamePlayerInfo::set_longitude_latitude(const char* value,
+    size_t size) {
+  
+  longitude_latitude_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgGamePlayerInfo.longitude_latitude)
+}
+inline std::string* MsgGamePlayerInfo::_internal_mutable_longitude_latitude() {
+  
+  return longitude_latitude_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgGamePlayerInfo::release_longitude_latitude() {
+  // @@protoc_insertion_point(field_release:MsgGamePlayerInfo.longitude_latitude)
+  return longitude_latitude_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgGamePlayerInfo::set_allocated_longitude_latitude(std::string* longitude_latitude) {
+  if (longitude_latitude != nullptr) {
+    
+  } else {
+    
+  }
+  longitude_latitude_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), longitude_latitude,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgGamePlayerInfo.longitude_latitude)
 }
 
 // -------------------------------------------------------------------

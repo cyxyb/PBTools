@@ -23,11 +23,12 @@ public static partial class GameReflection {
     byte[] descriptorData = global::System.Convert.FromBase64String(
         string.Concat(
           "ChVQcm90by9HYW1lL0dhbWUucHJvdG8iNwoSTXNnR2FtZVBsYXllckxvZ2lu",
-          "Eg8KB3VzZXJfaWQYASABKAUSEAoIcGFzc3dvcmQYAiABKAkitwEKEU1zZ0dh",
+          "Eg8KB3VzZXJfaWQYASABKAUSEAoIcGFzc3dvcmQYAiABKAki5AEKEU1zZ0dh",
           "bWVQbGF5ZXJJbmZvEg8KB3VzZXJfaWQYASABKAUSFAoMYmVhdXRpZnVsX2lk",
           "GAIgASgFEhAKCG5pY2tuYW1lGAMgASgJEg4KBmF2YXRhchgEIAEoCRIMCgRj",
           "b2luGAUgASgEEhAKCHRhYmxlX2lkGAYgASgFEhAKCGNoYWlyX2lkGAcgASgF",
-          "EhEKCXZpcF9sZXZlbBgIIAEoBRIUCgxhdmF0YXJfZnJhbWUYCSABKAUigQEK",
+          "EhEKCXZpcF9sZXZlbBgIIAEoBRIUCgxhdmF0YXJfZnJhbWUYCSABKAUSDwoH",
+          "aXBfaW5mbxgKIAEoCRIaChJsb25naXR1ZGVfbGF0aXR1ZGUYCyABKAkigQEK",
           "Fk1zZ0dhbWVQbGF5ZXJMb2dpblJlc3ASEAoIcmVzX2NvZGUYASABKAUSDwoH",
           "dXNlcl9pZBgCIAEoBRIUCgxiZWF1dGlmdWxfaWQYAyABKAUSEAoIbmlja25h",
           "bWUYBCABKAkSDgoGYXZhdGFyGAUgASgJEgwKBGNvaW4YBiABKAQiNQoTTXNn",
@@ -81,7 +82,7 @@ public static partial class GameReflection {
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgGamePlayerLogin), global::MsgGamePlayerLogin.Parser, new[]{ "UserId", "Password" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgGamePlayerInfo), global::MsgGamePlayerInfo.Parser, new[]{ "UserId", "BeautifulId", "Nickname", "Avatar", "Coin", "TableId", "ChairId", "VipLevel", "AvatarFrame" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgGamePlayerInfo), global::MsgGamePlayerInfo.Parser, new[]{ "UserId", "BeautifulId", "Nickname", "Avatar", "Coin", "TableId", "ChairId", "VipLevel", "AvatarFrame", "IpInfo", "LongitudeLatitude" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgGamePlayerLoginResp), global::MsgGamePlayerLoginResp.Parser, new[]{ "ResCode", "UserId", "BeautifulId", "Nickname", "Avatar", "Coin" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgSyncPlayersScore), global::MsgSyncPlayersScore.Parser, new[]{ "ChairId", "Coin" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgRoundData), global::MsgRoundData.Parser, new[]{ "Time", "WinUserId", "LoseUserId", "Gold" }, null, null, null, null),
@@ -367,6 +368,8 @@ public sealed partial class MsgGamePlayerInfo : pb::IMessage<MsgGamePlayerInfo>
     chairId_ = other.chairId_;
     vipLevel_ = other.vipLevel_;
     avatarFrame_ = other.avatarFrame_;
+    ipInfo_ = other.ipInfo_;
+    longitudeLatitude_ = other.longitudeLatitude_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -501,6 +504,34 @@ public sealed partial class MsgGamePlayerInfo : pb::IMessage<MsgGamePlayerInfo>
     }
   }
 
+  /// <summary>Field number for the "ip_info" field.</summary>
+  public const int IpInfoFieldNumber = 10;
+  private string ipInfo_ = "";
+  /// <summary>
+  ///ip
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string IpInfo {
+    get { return ipInfo_; }
+    set {
+      ipInfo_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "longitude_latitude" field.</summary>
+  public const int LongitudeLatitudeFieldNumber = 11;
+  private string longitudeLatitude_ = "";
+  /// <summary>
+  ///径度和维度
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string LongitudeLatitude {
+    get { return longitudeLatitude_; }
+    set {
+      longitudeLatitude_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as MsgGamePlayerInfo);
@@ -523,6 +554,8 @@ public sealed partial class MsgGamePlayerInfo : pb::IMessage<MsgGamePlayerInfo>
     if (ChairId != other.ChairId) return false;
     if (VipLevel != other.VipLevel) return false;
     if (AvatarFrame != other.AvatarFrame) return false;
+    if (IpInfo != other.IpInfo) return false;
+    if (LongitudeLatitude != other.LongitudeLatitude) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -538,6 +571,8 @@ public sealed partial class MsgGamePlayerInfo : pb::IMessage<MsgGamePlayerInfo>
     if (ChairId != 0) hash ^= ChairId.GetHashCode();
     if (VipLevel != 0) hash ^= VipLevel.GetHashCode();
     if (AvatarFrame != 0) hash ^= AvatarFrame.GetHashCode();
+    if (IpInfo.Length != 0) hash ^= IpInfo.GetHashCode();
+    if (LongitudeLatitude.Length != 0) hash ^= LongitudeLatitude.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -590,6 +625,14 @@ public sealed partial class MsgGamePlayerInfo : pb::IMessage<MsgGamePlayerInfo>
       output.WriteRawTag(72);
       output.WriteInt32(AvatarFrame);
     }
+    if (IpInfo.Length != 0) {
+      output.WriteRawTag(82);
+      output.WriteString(IpInfo);
+    }
+    if (LongitudeLatitude.Length != 0) {
+      output.WriteRawTag(90);
+      output.WriteString(LongitudeLatitude);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -635,6 +678,14 @@ public sealed partial class MsgGamePlayerInfo : pb::IMessage<MsgGamePlayerInfo>
       output.WriteRawTag(72);
       output.WriteInt32(AvatarFrame);
     }
+    if (IpInfo.Length != 0) {
+      output.WriteRawTag(82);
+      output.WriteString(IpInfo);
+    }
+    if (LongitudeLatitude.Length != 0) {
+      output.WriteRawTag(90);
+      output.WriteString(LongitudeLatitude);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -670,6 +721,12 @@ public sealed partial class MsgGamePlayerInfo : pb::IMessage<MsgGamePlayerInfo>
     }
     if (AvatarFrame != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(AvatarFrame);
+    }
+    if (IpInfo.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(IpInfo);
+    }
+    if (LongitudeLatitude.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(LongitudeLatitude);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -708,6 +765,12 @@ public sealed partial class MsgGamePlayerInfo : pb::IMessage<MsgGamePlayerInfo>
     }
     if (other.AvatarFrame != 0) {
       AvatarFrame = other.AvatarFrame;
+    }
+    if (other.IpInfo.Length != 0) {
+      IpInfo = other.IpInfo;
+    }
+    if (other.LongitudeLatitude.Length != 0) {
+      LongitudeLatitude = other.LongitudeLatitude;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -759,6 +822,14 @@ public sealed partial class MsgGamePlayerInfo : pb::IMessage<MsgGamePlayerInfo>
           AvatarFrame = input.ReadInt32();
           break;
         }
+        case 82: {
+          IpInfo = input.ReadString();
+          break;
+        }
+        case 90: {
+          LongitudeLatitude = input.ReadString();
+          break;
+        }
       }
     }
   #endif
@@ -807,6 +878,14 @@ public sealed partial class MsgGamePlayerInfo : pb::IMessage<MsgGamePlayerInfo>
         }
         case 72: {
           AvatarFrame = input.ReadInt32();
+          break;
+        }
+        case 82: {
+          IpInfo = input.ReadString();
+          break;
+        }
+        case 90: {
+          LongitudeLatitude = input.ReadString();
           break;
         }
       }
