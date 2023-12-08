@@ -17,7 +17,6 @@ message MsgPlayerLogin
 	string		phone				= 12;		//手机号
 	int32		code				= 13;		//验证码
 	string		invite_code			= 14;		//邀请码
-	string		longitude_latitude 	= 15;		//径度和维度
 }
 
 //玩家登录返回

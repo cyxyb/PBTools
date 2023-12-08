@@ -22,67 +22,69 @@ public static partial class GameReflection {
   static GameReflection() {
     byte[] descriptorData = global::System.Convert.FromBase64String(
         string.Concat(
-          "ChVQcm90by9HYW1lL0dhbWUucHJvdG8iNwoSTXNnR2FtZVBsYXllckxvZ2lu",
-          "Eg8KB3VzZXJfaWQYASABKAUSEAoIcGFzc3dvcmQYAiABKAki5AEKEU1zZ0dh",
-          "bWVQbGF5ZXJJbmZvEg8KB3VzZXJfaWQYASABKAUSFAoMYmVhdXRpZnVsX2lk",
-          "GAIgASgFEhAKCG5pY2tuYW1lGAMgASgJEg4KBmF2YXRhchgEIAEoCRIMCgRj",
-          "b2luGAUgASgEEhAKCHRhYmxlX2lkGAYgASgFEhAKCGNoYWlyX2lkGAcgASgF",
-          "EhEKCXZpcF9sZXZlbBgIIAEoBRIUCgxhdmF0YXJfZnJhbWUYCSABKAUSDwoH",
-          "aXBfaW5mbxgKIAEoCRIaChJsb25naXR1ZGVfbGF0aXR1ZGUYCyABKAkigQEK",
-          "Fk1zZ0dhbWVQbGF5ZXJMb2dpblJlc3ASEAoIcmVzX2NvZGUYASABKAUSDwoH",
-          "dXNlcl9pZBgCIAEoBRIUCgxiZWF1dGlmdWxfaWQYAyABKAUSEAoIbmlja25h",
-          "bWUYBCABKAkSDgoGYXZhdGFyGAUgASgJEgwKBGNvaW4YBiABKAQiNQoTTXNn",
-          "U3luY1BsYXllcnNTY29yZRIQCghjaGFpcl9pZBgBIAEoBRIMCgRjb2luGAIg",
-          "ASgEIlUKDE1zZ1JvdW5kRGF0YRIMCgR0aW1lGAEgASgFEhMKC3dpbl91c2Vy",
-          "X2lkGAIgASgFEhQKDGxvc2VfdXNlcl9pZBgDIAEoBRIMCgRnb2xkGAQgASgD",
-          "IkkKEU1zZ1RvdGFsUm91bmREYXRhEhEKCXRvdGFsX251bRgBIAEoBRIhCgpy",
-          "b3VuZF9kYXRhGAIgAygLMg0uTXNnUm91bmREYXRhIqoBCgpNc2dEYXlEYXRh",
-          "EgwKBHRpbWUYASABKAkSGAoQdG90YWxfcGxheV9jb3VudBgCIAEoBRISCgps",
-          "b3NlX2NvdW50GAMgASgFEhEKCWxvc2VfZ29sZBgEIAEoAxIRCgl3aW5fY291",
-          "bnQYBSABKAUSEAoId2luX2dvbGQYBiABKAMSEgoKdG90YWxfZ29sZBgHIAEo",
-          "AxIUCgxzdXJwbHVzX2dvbGQYCCABKAMiRQoPTXNnVG90YWxEYXlEYXRhEhEK",
-          "CXRvdGFsX251bRgBIAEoBRIfCgpkYWlseV9kYXRhGAIgAygLMgsuTXNnRGF5",
-          "RGF0YSI5Cg5Nc2dRdWVyeVJlY29yZBIMCgRwYWdlGAEgASgFEgsKA251bRgC",
-          "IAEoBRIMCgR0eXBlGAMgASgFIjcKDk1zZ0phY2twb3RJbmZvEg8KB2phY2tw",
-          "b3QYASABKAMSFAoMZmFrZV9qYWNrcG90GAIgASgDIrwCCg9Nc2dQdnBUYWJs",
-          "ZUluZm8SEAoIdGFibGVfaWQYASABKAUSEgoKdGFibGVfbmFtZRgCIAEoCRIR",
-          "CgljaGFpcl9udW0YAyABKAUSEQoJZW50ZXJfbnVtGAQgASgFEhMKC2lzX2Fj",
-          "dGl2YXRlGAYgASgIEhIKCmlzX3ByaXZhdGUYByABKAgSEAoIcGFzc3dvcmQY",
-          "CCABKAkSEAoIb3duZXJfaWQYCSABKAUSEAoIdGFibGVfbm8YCiABKAUSDgoG",
-          "dmFsdWUxGAsgASgDEg4KBnZhbHVlMhgMIAEoAxIOCgZ2YWx1ZTMYDSABKAMS",
-          "DgoGdmFsdWU0GA4gASgDEg4KBnZhbHVlNRgPIAEoAxIOCgZ2YWx1ZTYYECAB",
-          "KAMSDgoGdmFsdWU3GBEgASgDEg4KBnZhbHVlOBgSIAEoAyJNChFNc2dQdnBS",
-          "b29tQ2ZnSXRlbRIPCgdsYWdfa2V5GAEgASgFEhMKC2NsaW5ldF9vcGVuGAIg",
-          "ASgFEhIKCnZhbHVlX2xpc3QYAyADKAUihQEKEE1zZ1B2cFJvb21Db25maWcS",
-          "GAoQY3JlYXRlX3ZpcF9saW1pdBgBIAEoBRIXCg9jaGFpcl9saW1pdF9taW4Y",
-          "AiABKAUSFwoPY2hhaXJfbGltaXRfbWF4GAMgASgFEiUKCXBhcmFfbHNpdBgL",
-          "IAMoCzISLk1zZ1B2cFJvb21DZmdJdGVtIjcKD01zZ1B2cFRhYmxlTGlzdBIk",
-          "Cgp0YWJsZV9saXN0GAEgAygLMhAuTXNnUHZwVGFibGVJbmZvInMKEU1zZ1B2",
-          "cENyZWF0ZVRhYmxlEhIKCmlzX3ByaXZhdGUYASABKAgSEgoKdGFibGVfbmFt",
-          "ZRgCIAEoCRIRCgljaGFpcl9udW0YAyABKAUSEAoIcGFzc3dvcmQYBiABKAkS",
-          "EQoJcGFyYV9sc2l0GAcgAygFIl4KFU1zZ1B2cENyZWF0ZVRhYmxlUmVzcBIQ",
-          "CghyZXRfY29kZRgBIAEoBRINCgV2YWx1ZRgCIAEoBRIkCgp0YWJsZV9pbmZv",
-          "GAMgASgLMhAuTXNnUHZwVGFibGVJbmZvIkcKD01zZ1B2cEpvaW5UYWJsZRIQ",
-          "Cgh0YWJsZV9pZBgBIAEoBRIQCgh0YWJsZV9ubxgCIAEoBRIQCghwYXNzd29y",
-          "ZBgDIAEoCSJwChNNc2dQdnBKb2luVGFibGVSZXNwEhAKCHJldF9jb2RlGAEg",
+          "ChVQcm90by9HYW1lL0dhbWUucHJvdG8ibQoSTXNnR2FtZVBsYXllckxvZ2lu",
+          "Eg8KB3VzZXJfaWQYASABKAUSEAoIcGFzc3dvcmQYAiABKAkSDwoHaXBfaW5m",
+          "bxgDIAEoCRIRCglsb25naXR1ZGUYBCABKAkSEAoIbGF0aXR1ZGUYBSABKAki",
+          "7QEKEU1zZ0dhbWVQbGF5ZXJJbmZvEg8KB3VzZXJfaWQYASABKAUSFAoMYmVh",
+          "dXRpZnVsX2lkGAIgASgFEhAKCG5pY2tuYW1lGAMgASgJEg4KBmF2YXRhchgE",
+          "IAEoCRIMCgRjb2luGAUgASgEEhAKCHRhYmxlX2lkGAYgASgFEhAKCGNoYWly",
+          "X2lkGAcgASgFEhEKCXZpcF9sZXZlbBgIIAEoBRIUCgxhdmF0YXJfZnJhbWUY",
+          "CSABKAUSDwoHaXBfaW5mbxgKIAEoCRIRCglsb25naXR1ZGUYCyABKAkSEAoI",
+          "bGF0aXR1ZGUYDCABKAkigQEKFk1zZ0dhbWVQbGF5ZXJMb2dpblJlc3ASEAoI",
+          "cmVzX2NvZGUYASABKAUSDwoHdXNlcl9pZBgCIAEoBRIUCgxiZWF1dGlmdWxf",
+          "aWQYAyABKAUSEAoIbmlja25hbWUYBCABKAkSDgoGYXZhdGFyGAUgASgJEgwK",
+          "BGNvaW4YBiABKAQiNQoTTXNnU3luY1BsYXllcnNTY29yZRIQCghjaGFpcl9p",
+          "ZBgBIAEoBRIMCgRjb2luGAIgASgEIlUKDE1zZ1JvdW5kRGF0YRIMCgR0aW1l",
+          "GAEgASgFEhMKC3dpbl91c2VyX2lkGAIgASgFEhQKDGxvc2VfdXNlcl9pZBgD",
+          "IAEoBRIMCgRnb2xkGAQgASgDIkkKEU1zZ1RvdGFsUm91bmREYXRhEhEKCXRv",
+          "dGFsX251bRgBIAEoBRIhCgpyb3VuZF9kYXRhGAIgAygLMg0uTXNnUm91bmRE",
+          "YXRhIqoBCgpNc2dEYXlEYXRhEgwKBHRpbWUYASABKAkSGAoQdG90YWxfcGxh",
+          "eV9jb3VudBgCIAEoBRISCgpsb3NlX2NvdW50GAMgASgFEhEKCWxvc2VfZ29s",
+          "ZBgEIAEoAxIRCgl3aW5fY291bnQYBSABKAUSEAoId2luX2dvbGQYBiABKAMS",
+          "EgoKdG90YWxfZ29sZBgHIAEoAxIUCgxzdXJwbHVzX2dvbGQYCCABKAMiRQoP",
+          "TXNnVG90YWxEYXlEYXRhEhEKCXRvdGFsX251bRgBIAEoBRIfCgpkYWlseV9k",
+          "YXRhGAIgAygLMgsuTXNnRGF5RGF0YSI5Cg5Nc2dRdWVyeVJlY29yZBIMCgRw",
+          "YWdlGAEgASgFEgsKA251bRgCIAEoBRIMCgR0eXBlGAMgASgFIjcKDk1zZ0ph",
+          "Y2twb3RJbmZvEg8KB2phY2twb3QYASABKAMSFAoMZmFrZV9qYWNrcG90GAIg",
+          "ASgDIrwCCg9Nc2dQdnBUYWJsZUluZm8SEAoIdGFibGVfaWQYASABKAUSEgoK",
+          "dGFibGVfbmFtZRgCIAEoCRIRCgljaGFpcl9udW0YAyABKAUSEQoJZW50ZXJf",
+          "bnVtGAQgASgFEhMKC2lzX2FjdGl2YXRlGAYgASgIEhIKCmlzX3ByaXZhdGUY",
+          "ByABKAgSEAoIcGFzc3dvcmQYCCABKAkSEAoIb3duZXJfaWQYCSABKAUSEAoI",
+          "dGFibGVfbm8YCiABKAUSDgoGdmFsdWUxGAsgASgDEg4KBnZhbHVlMhgMIAEo",
+          "AxIOCgZ2YWx1ZTMYDSABKAMSDgoGdmFsdWU0GA4gASgDEg4KBnZhbHVlNRgP",
+          "IAEoAxIOCgZ2YWx1ZTYYECABKAMSDgoGdmFsdWU3GBEgASgDEg4KBnZhbHVl",
+          "OBgSIAEoAyJNChFNc2dQdnBSb29tQ2ZnSXRlbRIPCgdsYWdfa2V5GAEgASgF",
+          "EhMKC2NsaW5ldF9vcGVuGAIgASgFEhIKCnZhbHVlX2xpc3QYAyADKAUihQEK",
+          "EE1zZ1B2cFJvb21Db25maWcSGAoQY3JlYXRlX3ZpcF9saW1pdBgBIAEoBRIX",
+          "Cg9jaGFpcl9saW1pdF9taW4YAiABKAUSFwoPY2hhaXJfbGltaXRfbWF4GAMg",
+          "ASgFEiUKCXBhcmFfbHNpdBgLIAMoCzISLk1zZ1B2cFJvb21DZmdJdGVtIjcK",
+          "D01zZ1B2cFRhYmxlTGlzdBIkCgp0YWJsZV9saXN0GAEgAygLMhAuTXNnUHZw",
+          "VGFibGVJbmZvInMKEU1zZ1B2cENyZWF0ZVRhYmxlEhIKCmlzX3ByaXZhdGUY",
+          "ASABKAgSEgoKdGFibGVfbmFtZRgCIAEoCRIRCgljaGFpcl9udW0YAyABKAUS",
+          "EAoIcGFzc3dvcmQYBiABKAkSEQoJcGFyYV9sc2l0GAcgAygFIl4KFU1zZ1B2",
+          "cENyZWF0ZVRhYmxlUmVzcBIQCghyZXRfY29kZRgBIAEoBRINCgV2YWx1ZRgC",
+          "IAEoBRIkCgp0YWJsZV9pbmZvGAMgASgLMhAuTXNnUHZwVGFibGVJbmZvIkcK",
+          "D01zZ1B2cEpvaW5UYWJsZRIQCgh0YWJsZV9pZBgBIAEoBRIQCgh0YWJsZV9u",
+          "bxgCIAEoBRIQCghwYXNzd29yZBgDIAEoCSJwChNNc2dQdnBKb2luVGFibGVS",
+          "ZXNwEhAKCHJldF9jb2RlGAEgASgFEhAKCHRhYmxlX2lkGAIgASgFEhAKCHRh",
+          "YmxlX25vGAMgASgFEg8KB3VzZXJfaWQYBCABKAUSEgoKcGxheWVyX251bRgF",
+          "IAEoBSJzChZNc2dQdnBTdGFuZFVwVGFibGVSZXNwEhAKCHJldF9jb2RlGAEg",
           "ASgFEhAKCHRhYmxlX2lkGAIgASgFEhAKCHRhYmxlX25vGAMgASgFEg8KB3Vz",
-          "ZXJfaWQYBCABKAUSEgoKcGxheWVyX251bRgFIAEoBSJzChZNc2dQdnBTdGFu",
-          "ZFVwVGFibGVSZXNwEhAKCHJldF9jb2RlGAEgASgFEhAKCHRhYmxlX2lkGAIg",
-          "ASgFEhAKCHRhYmxlX25vGAMgASgFEg8KB3VzZXJfaWQYBCABKAUSEgoKcGxh",
-          "eWVyX251bRgFIAEoBSJOChZNc2dQdnBEZXN0cm95VGFibGVSZXNwEhAKCHJl",
-          "dF9jb2RlGAEgASgFEhAKCHRhYmxlX2lkGAIgASgFEhAKCHRhYmxlX25vGAMg",
-          "ASgFInAKEk1zZ1B2cEtpY2tVc2VyUmVzcBIQCghyZXRfY29kZRgBIAEoBRIQ",
-          "Cghvd25lcl9pZBgCIAEoBRISCgpvd25lcl9uaWNrGAMgASgJEg8KB2tpY2tf",
-          "aWQYBCABKAUSEQoJa2lja19uaWNrGAUgASgJIlUKGk1zZ1B2cFRhYmxlQ2hh",
-          "bmdlT3duZXJSZXNwEhAKCHRhYmxlX2lkGAEgASgFEhAKCG93bmVyX2lkGAIg",
-          "ASgFEhMKC2lzX2FjdGl2YXRlGAMgASgIImQKF01zZ1B2cEFjdGl2YXRlVGFi",
-          "bGVSZXNwEhAKCHJldF9jb2RlGAEgASgFEhAKCHRhYmxlX2lkGAIgASgFEhAK",
-          "CG93bmVyX2lkGAMgASgFEhMKC2lzX2FjdGl2YXRlGAQgASgIYgZwcm90bzM="));
+          "ZXJfaWQYBCABKAUSEgoKcGxheWVyX251bRgFIAEoBSJOChZNc2dQdnBEZXN0",
+          "cm95VGFibGVSZXNwEhAKCHJldF9jb2RlGAEgASgFEhAKCHRhYmxlX2lkGAIg",
+          "ASgFEhAKCHRhYmxlX25vGAMgASgFInAKEk1zZ1B2cEtpY2tVc2VyUmVzcBIQ",
+          "CghyZXRfY29kZRgBIAEoBRIQCghvd25lcl9pZBgCIAEoBRISCgpvd25lcl9u",
+          "aWNrGAMgASgJEg8KB2tpY2tfaWQYBCABKAUSEQoJa2lja19uaWNrGAUgASgJ",
+          "IlUKGk1zZ1B2cFRhYmxlQ2hhbmdlT3duZXJSZXNwEhAKCHRhYmxlX2lkGAEg",
+          "ASgFEhAKCG93bmVyX2lkGAIgASgFEhMKC2lzX2FjdGl2YXRlGAMgASgIImQK",
+          "F01zZ1B2cEFjdGl2YXRlVGFibGVSZXNwEhAKCHJldF9jb2RlGAEgASgFEhAK",
+          "CHRhYmxlX2lkGAIgASgFEhAKCG93bmVyX2lkGAMgASgFEhMKC2lzX2FjdGl2",
+          "YXRlGAQgASgIYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgGamePlayerLogin), global::MsgGamePlayerLogin.Parser, new[]{ "UserId", "Password" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgGamePlayerInfo), global::MsgGamePlayerInfo.Parser, new[]{ "UserId", "BeautifulId", "Nickname", "Avatar", "Coin", "TableId", "ChairId", "VipLevel", "AvatarFrame", "IpInfo", "LongitudeLatitude" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgGamePlayerLogin), global::MsgGamePlayerLogin.Parser, new[]{ "UserId", "Password", "IpInfo", "Longitude", "Latitude" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgGamePlayerInfo), global::MsgGamePlayerInfo.Parser, new[]{ "UserId", "BeautifulId", "Nickname", "Avatar", "Coin", "TableId", "ChairId", "VipLevel", "AvatarFrame", "IpInfo", "Longitude", "Latitude" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgGamePlayerLoginResp), global::MsgGamePlayerLoginResp.Parser, new[]{ "ResCode", "UserId", "BeautifulId", "Nickname", "Avatar", "Coin" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgSyncPlayersScore), global::MsgSyncPlayersScore.Parser, new[]{ "ChairId", "Coin" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgRoundData), global::MsgRoundData.Parser, new[]{ "Time", "WinUserId", "LoseUserId", "Gold" }, null, null, null, null),
@@ -144,6 +146,9 @@ public sealed partial class MsgGamePlayerLogin : pb::IMessage<MsgGamePlayerLogin
   public MsgGamePlayerLogin(MsgGamePlayerLogin other) : this() {
     userId_ = other.userId_;
     password_ = other.password_;
+    ipInfo_ = other.ipInfo_;
+    longitude_ = other.longitude_;
+    latitude_ = other.latitude_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -180,6 +185,48 @@ public sealed partial class MsgGamePlayerLogin : pb::IMessage<MsgGamePlayerLogin
     }
   }
 
+  /// <summary>Field number for the "ip_info" field.</summary>
+  public const int IpInfoFieldNumber = 3;
+  private string ipInfo_ = "";
+  /// <summary>
+  ///ip
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string IpInfo {
+    get { return ipInfo_; }
+    set {
+      ipInfo_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "longitude" field.</summary>
+  public const int LongitudeFieldNumber = 4;
+  private string longitude_ = "";
+  /// <summary>
+  ///径度
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string Longitude {
+    get { return longitude_; }
+    set {
+      longitude_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "latitude" field.</summary>
+  public const int LatitudeFieldNumber = 5;
+  private string latitude_ = "";
+  /// <summary>
+  ///维度
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string Latitude {
+    get { return latitude_; }
+    set {
+      latitude_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as MsgGamePlayerLogin);
@@ -195,6 +242,9 @@ public sealed partial class MsgGamePlayerLogin : pb::IMessage<MsgGamePlayerLogin
     }
     if (UserId != other.UserId) return false;
     if (Password != other.Password) return false;
+    if (IpInfo != other.IpInfo) return false;
+    if (Longitude != other.Longitude) return false;
+    if (Latitude != other.Latitude) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -203,6 +253,9 @@ public sealed partial class MsgGamePlayerLogin : pb::IMessage<MsgGamePlayerLogin
     int hash = 1;
     if (UserId != 0) hash ^= UserId.GetHashCode();
     if (Password.Length != 0) hash ^= Password.GetHashCode();
+    if (IpInfo.Length != 0) hash ^= IpInfo.GetHashCode();
+    if (Longitude.Length != 0) hash ^= Longitude.GetHashCode();
+    if (Latitude.Length != 0) hash ^= Latitude.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -227,6 +280,18 @@ public sealed partial class MsgGamePlayerLogin : pb::IMessage<MsgGamePlayerLogin
       output.WriteRawTag(18);
       output.WriteString(Password);
     }
+    if (IpInfo.Length != 0) {
+      output.WriteRawTag(26);
+      output.WriteString(IpInfo);
+    }
+    if (Longitude.Length != 0) {
+      output.WriteRawTag(34);
+      output.WriteString(Longitude);
+    }
+    if (Latitude.Length != 0) {
+      output.WriteRawTag(42);
+      output.WriteString(Latitude);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -244,6 +309,18 @@ public sealed partial class MsgGamePlayerLogin : pb::IMessage<MsgGamePlayerLogin
       output.WriteRawTag(18);
       output.WriteString(Password);
     }
+    if (IpInfo.Length != 0) {
+      output.WriteRawTag(26);
+      output.WriteString(IpInfo);
+    }
+    if (Longitude.Length != 0) {
+      output.WriteRawTag(34);
+      output.WriteString(Longitude);
+    }
+    if (Latitude.Length != 0) {
+      output.WriteRawTag(42);
+      output.WriteString(Latitude);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -258,6 +335,15 @@ public sealed partial class MsgGamePlayerLogin : pb::IMessage<MsgGamePlayerLogin
     }
     if (Password.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(Password);
+    }
+    if (IpInfo.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(IpInfo);
+    }
+    if (Longitude.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Longitude);
+    }
+    if (Latitude.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Latitude);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -275,6 +361,15 @@ public sealed partial class MsgGamePlayerLogin : pb::IMessage<MsgGamePlayerLogin
     }
     if (other.Password.Length != 0) {
       Password = other.Password;
+    }
+    if (other.IpInfo.Length != 0) {
+      IpInfo = other.IpInfo;
+    }
+    if (other.Longitude.Length != 0) {
+      Longitude = other.Longitude;
+    }
+    if (other.Latitude.Length != 0) {
+      Latitude = other.Latitude;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -298,6 +393,18 @@ public sealed partial class MsgGamePlayerLogin : pb::IMessage<MsgGamePlayerLogin
           Password = input.ReadString();
           break;
         }
+        case 26: {
+          IpInfo = input.ReadString();
+          break;
+        }
+        case 34: {
+          Longitude = input.ReadString();
+          break;
+        }
+        case 42: {
+          Latitude = input.ReadString();
+          break;
+        }
       }
     }
   #endif
@@ -318,6 +425,18 @@ public sealed partial class MsgGamePlayerLogin : pb::IMessage<MsgGamePlayerLogin
         }
         case 18: {
           Password = input.ReadString();
+          break;
+        }
+        case 26: {
+          IpInfo = input.ReadString();
+          break;
+        }
+        case 34: {
+          Longitude = input.ReadString();
+          break;
+        }
+        case 42: {
+          Latitude = input.ReadString();
           break;
         }
       }
@@ -369,7 +488,8 @@ public sealed partial class MsgGamePlayerInfo : pb::IMessage<MsgGamePlayerInfo>
     vipLevel_ = other.vipLevel_;
     avatarFrame_ = other.avatarFrame_;
     ipInfo_ = other.ipInfo_;
-    longitudeLatitude_ = other.longitudeLatitude_;
+    longitude_ = other.longitude_;
+    latitude_ = other.latitude_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -518,17 +638,31 @@ public sealed partial class MsgGamePlayerInfo : pb::IMessage<MsgGamePlayerInfo>
     }
   }
 
-  /// <summary>Field number for the "longitude_latitude" field.</summary>
-  public const int LongitudeLatitudeFieldNumber = 11;
-  private string longitudeLatitude_ = "";
+  /// <summary>Field number for the "longitude" field.</summary>
+  public const int LongitudeFieldNumber = 11;
+  private string longitude_ = "";
   /// <summary>
-  ///径度和维度
+  ///径度
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public string LongitudeLatitude {
-    get { return longitudeLatitude_; }
+  public string Longitude {
+    get { return longitude_; }
     set {
-      longitudeLatitude_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      longitude_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "latitude" field.</summary>
+  public const int LatitudeFieldNumber = 12;
+  private string latitude_ = "";
+  /// <summary>
+  ///维度
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string Latitude {
+    get { return latitude_; }
+    set {
+      latitude_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
     }
   }
 
@@ -555,7 +689,8 @@ public sealed partial class MsgGamePlayerInfo : pb::IMessage<MsgGamePlayerInfo>
     if (VipLevel != other.VipLevel) return false;
     if (AvatarFrame != other.AvatarFrame) return false;
     if (IpInfo != other.IpInfo) return false;
-    if (LongitudeLatitude != other.LongitudeLatitude) return false;
+    if (Longitude != other.Longitude) return false;
+    if (Latitude != other.Latitude) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -572,7 +707,8 @@ public sealed partial class MsgGamePlayerInfo : pb::IMessage<MsgGamePlayerInfo>
     if (VipLevel != 0) hash ^= VipLevel.GetHashCode();
     if (AvatarFrame != 0) hash ^= AvatarFrame.GetHashCode();
     if (IpInfo.Length != 0) hash ^= IpInfo.GetHashCode();
-    if (LongitudeLatitude.Length != 0) hash ^= LongitudeLatitude.GetHashCode();
+    if (Longitude.Length != 0) hash ^= Longitude.GetHashCode();
+    if (Latitude.Length != 0) hash ^= Latitude.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -629,9 +765,13 @@ public sealed partial class MsgGamePlayerInfo : pb::IMessage<MsgGamePlayerInfo>
       output.WriteRawTag(82);
       output.WriteString(IpInfo);
     }
-    if (LongitudeLatitude.Length != 0) {
+    if (Longitude.Length != 0) {
       output.WriteRawTag(90);
-      output.WriteString(LongitudeLatitude);
+      output.WriteString(Longitude);
+    }
+    if (Latitude.Length != 0) {
+      output.WriteRawTag(98);
+      output.WriteString(Latitude);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -682,9 +822,13 @@ public sealed partial class MsgGamePlayerInfo : pb::IMessage<MsgGamePlayerInfo>
       output.WriteRawTag(82);
       output.WriteString(IpInfo);
     }
-    if (LongitudeLatitude.Length != 0) {
+    if (Longitude.Length != 0) {
       output.WriteRawTag(90);
-      output.WriteString(LongitudeLatitude);
+      output.WriteString(Longitude);
+    }
+    if (Latitude.Length != 0) {
+      output.WriteRawTag(98);
+      output.WriteString(Latitude);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
@@ -725,8 +869,11 @@ public sealed partial class MsgGamePlayerInfo : pb::IMessage<MsgGamePlayerInfo>
     if (IpInfo.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeStringSize(IpInfo);
     }
-    if (LongitudeLatitude.Length != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeStringSize(LongitudeLatitude);
+    if (Longitude.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Longitude);
+    }
+    if (Latitude.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Latitude);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -769,8 +916,11 @@ public sealed partial class MsgGamePlayerInfo : pb::IMessage<MsgGamePlayerInfo>
     if (other.IpInfo.Length != 0) {
       IpInfo = other.IpInfo;
     }
-    if (other.LongitudeLatitude.Length != 0) {
-      LongitudeLatitude = other.LongitudeLatitude;
+    if (other.Longitude.Length != 0) {
+      Longitude = other.Longitude;
+    }
+    if (other.Latitude.Length != 0) {
+      Latitude = other.Latitude;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -827,7 +977,11 @@ public sealed partial class MsgGamePlayerInfo : pb::IMessage<MsgGamePlayerInfo>
           break;
         }
         case 90: {
-          LongitudeLatitude = input.ReadString();
+          Longitude = input.ReadString();
+          break;
+        }
+        case 98: {
+          Latitude = input.ReadString();
           break;
         }
       }
@@ -885,7 +1039,11 @@ public sealed partial class MsgGamePlayerInfo : pb::IMessage<MsgGamePlayerInfo>
           break;
         }
         case 90: {
-          LongitudeLatitude = input.ReadString();
+          Longitude = input.ReadString();
+          break;
+        }
+        case 98: {
+          Latitude = input.ReadString();
           break;
         }
       }

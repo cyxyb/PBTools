@@ -5,6 +5,9 @@ message MsgGamePlayerLogin
 {
 	int32		user_id			= 1;	//玩家id
 	string		password		= 2;	//玩家密码
+	string		ip_info			= 3;	//ip
+	string		longitude		= 4;	//径度
+	string		latitude 		= 5;	//维度
 }
 
 //游戏玩家信息
@@ -20,7 +23,8 @@ message MsgGamePlayerInfo
 	int32		vip_level			= 8;	//VIP等级
 	int32		avatar_frame		= 9;	//头像框
 	string		ip_info				= 10;	//ip
-	string		longitude_latitude 	= 11;	//径度和维度
+	string		longitude			= 11;	//径度
+	string		latitude 			= 12;	//维度
 }
 
 //游戏登录返回

@@ -410,7 +410,6 @@ class MsgPlayerLogin PROTOBUF_FINAL :
     kNicknameFieldNumber = 11,
     kPhoneFieldNumber = 12,
     kInviteCodeFieldNumber = 14,
-    kLongitudeLatitudeFieldNumber = 15,
     kPlatformIdFieldNumber = 3,
     kChannelIdFieldNumber = 4,
     kClientTypeFieldNumber = 5,
@@ -546,22 +545,6 @@ class MsgPlayerLogin PROTOBUF_FINAL :
   std::string* _internal_mutable_invite_code();
   public:
 
-  // string longitude_latitude = 15;
-  void clear_longitude_latitude();
-  const std::string& longitude_latitude() const;
-  void set_longitude_latitude(const std::string& value);
-  void set_longitude_latitude(std::string&& value);
-  void set_longitude_latitude(const char* value);
-  void set_longitude_latitude(const char* value, size_t size);
-  std::string* mutable_longitude_latitude();
-  std::string* release_longitude_latitude();
-  void set_allocated_longitude_latitude(std::string* longitude_latitude);
-  private:
-  const std::string& _internal_longitude_latitude() const;
-  void _internal_set_longitude_latitude(const std::string& value);
-  std::string* _internal_mutable_longitude_latitude();
-  public:
-
   // int32 platform_id = 3;
   void clear_platform_id();
   ::PROTOBUF_NAMESPACE_ID::int32 platform_id() const;
@@ -631,7 +614,6 @@ class MsgPlayerLogin PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr nickname_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr phone_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr invite_code_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr longitude_latitude_;
   ::PROTOBUF_NAMESPACE_ID::int32 platform_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 channel_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 client_type_;
@@ -11541,67 +11523,6 @@ inline void MsgPlayerLogin::set_allocated_invite_code(std::string* invite_code) 
   invite_code_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), invite_code,
       GetArena());
   // @@protoc_insertion_point(field_set_allocated:MsgPlayerLogin.invite_code)
-}
-
-// string longitude_latitude = 15;
-inline void MsgPlayerLogin::clear_longitude_latitude() {
-  longitude_latitude_.ClearToEmpty();
-}
-inline const std::string& MsgPlayerLogin::longitude_latitude() const {
-  // @@protoc_insertion_point(field_get:MsgPlayerLogin.longitude_latitude)
-  return _internal_longitude_latitude();
-}
-inline void MsgPlayerLogin::set_longitude_latitude(const std::string& value) {
-  _internal_set_longitude_latitude(value);
-  // @@protoc_insertion_point(field_set:MsgPlayerLogin.longitude_latitude)
-}
-inline std::string* MsgPlayerLogin::mutable_longitude_latitude() {
-  // @@protoc_insertion_point(field_mutable:MsgPlayerLogin.longitude_latitude)
-  return _internal_mutable_longitude_latitude();
-}
-inline const std::string& MsgPlayerLogin::_internal_longitude_latitude() const {
-  return longitude_latitude_.Get();
-}
-inline void MsgPlayerLogin::_internal_set_longitude_latitude(const std::string& value) {
-  
-  longitude_latitude_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
-}
-inline void MsgPlayerLogin::set_longitude_latitude(std::string&& value) {
-  
-  longitude_latitude_.Set(
-    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
-  // @@protoc_insertion_point(field_set_rvalue:MsgPlayerLogin.longitude_latitude)
-}
-inline void MsgPlayerLogin::set_longitude_latitude(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  
-  longitude_latitude_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
-  // @@protoc_insertion_point(field_set_char:MsgPlayerLogin.longitude_latitude)
-}
-inline void MsgPlayerLogin::set_longitude_latitude(const char* value,
-    size_t size) {
-  
-  longitude_latitude_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
-      reinterpret_cast<const char*>(value), size), GetArena());
-  // @@protoc_insertion_point(field_set_pointer:MsgPlayerLogin.longitude_latitude)
-}
-inline std::string* MsgPlayerLogin::_internal_mutable_longitude_latitude() {
-  
-  return longitude_latitude_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
-}
-inline std::string* MsgPlayerLogin::release_longitude_latitude() {
-  // @@protoc_insertion_point(field_release:MsgPlayerLogin.longitude_latitude)
-  return longitude_latitude_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-}
-inline void MsgPlayerLogin::set_allocated_longitude_latitude(std::string* longitude_latitude) {
-  if (longitude_latitude != nullptr) {
-    
-  } else {
-    
-  }
-  longitude_latitude_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), longitude_latitude,
-      GetArena());
-  // @@protoc_insertion_point(field_set_allocated:MsgPlayerLogin.longitude_latitude)
 }
 
 // -------------------------------------------------------------------
