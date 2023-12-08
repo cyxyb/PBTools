@@ -407,6 +407,7 @@ class UserInfo PROTOBUF_FINAL :
     kRouteInfoFieldNumber = 2,
     kChairIdFieldNumber = 1,
     kFinishLineSwitchFieldNumber = 3,
+    kEndFieldNumber = 4,
   };
   // repeated .LudoQuick.RouteInfo route_info = 2;
   int route_info_size() const;
@@ -444,6 +445,15 @@ class UserInfo PROTOBUF_FINAL :
   void _internal_set_finish_line_switch(bool value);
   public:
 
+  // bool end = 4;
+  void clear_end();
+  bool end() const;
+  void set_end(bool value);
+  private:
+  bool _internal_end() const;
+  void _internal_set_end(bool value);
+  public:
+
   // @@protoc_insertion_point(class_scope:LudoQuick.UserInfo)
  private:
   class _Internal;
@@ -454,6 +464,7 @@ class UserInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LudoQuick::RouteInfo > route_info_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   bool finish_line_switch_;
+  bool end_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_LudoQuick_2eproto;
 };
@@ -1269,6 +1280,7 @@ class MsgOperateRoute PROTOBUF_FINAL :
   enum : int {
     kChairIdFieldNumber = 1,
     kChessIdFieldNumber = 2,
+    kIsUnlockFieldNumber = 3,
   };
   // int32 chair_id = 1;
   void clear_chair_id();
@@ -1288,6 +1300,15 @@ class MsgOperateRoute PROTOBUF_FINAL :
   void _internal_set_chess_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // bool is_unlock = 3;
+  void clear_is_unlock();
+  bool is_unlock() const;
+  void set_is_unlock(bool value);
+  private:
+  bool _internal_is_unlock() const;
+  void _internal_set_is_unlock(bool value);
+  public:
+
   // @@protoc_insertion_point(class_scope:LudoQuick.MsgOperateRoute)
  private:
   class _Internal;
@@ -1297,6 +1318,7 @@ class MsgOperateRoute PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 chess_id_;
+  bool is_unlock_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_LudoQuick_2eproto;
 };
@@ -1968,6 +1990,26 @@ inline void UserInfo::set_finish_line_switch(bool value) {
   // @@protoc_insertion_point(field_set:LudoQuick.UserInfo.finish_line_switch)
 }
 
+// bool end = 4;
+inline void UserInfo::clear_end() {
+  end_ = false;
+}
+inline bool UserInfo::_internal_end() const {
+  return end_;
+}
+inline bool UserInfo::end() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.UserInfo.end)
+  return _internal_end();
+}
+inline void UserInfo::_internal_set_end(bool value) {
+  
+  end_ = value;
+}
+inline void UserInfo::set_end(bool value) {
+  _internal_set_end(value);
+  // @@protoc_insertion_point(field_set:LudoQuick.UserInfo.end)
+}
+
 // -------------------------------------------------------------------
 
 // ChessGrid
@@ -2385,6 +2427,26 @@ inline void MsgOperateRoute::_internal_set_chess_id(::PROTOBUF_NAMESPACE_ID::int
 inline void MsgOperateRoute::set_chess_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chess_id(value);
   // @@protoc_insertion_point(field_set:LudoQuick.MsgOperateRoute.chess_id)
+}
+
+// bool is_unlock = 3;
+inline void MsgOperateRoute::clear_is_unlock() {
+  is_unlock_ = false;
+}
+inline bool MsgOperateRoute::_internal_is_unlock() const {
+  return is_unlock_;
+}
+inline bool MsgOperateRoute::is_unlock() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.MsgOperateRoute.is_unlock)
+  return _internal_is_unlock();
+}
+inline void MsgOperateRoute::_internal_set_is_unlock(bool value) {
+  
+  is_unlock_ = value;
+}
+inline void MsgOperateRoute::set_is_unlock(bool value) {
+  _internal_set_is_unlock(value);
+  // @@protoc_insertion_point(field_set:LudoQuick.MsgOperateRoute.is_unlock)
 }
 
 // -------------------------------------------------------------------
