@@ -184,29 +184,32 @@ message MsgPlayerAttribute
 //登录服务器玩家信息
 message MsgLoginPlayerInfo
 {
-	int32		res_code		= 1;	//登录返回码(0:成功 非0:失败)
-	int32		user_id			= 2;	//玩家ID
-	int32		beautiful_id	= 3;	//玩家靓号
-	string		account			= 4;	//玩家账号
-	string		nickname		= 5;	//玩家昵称
-	string		avatar			= 6;	//头像
-	bool		first_recharge	= 7;	//是否首充
-	int32		user_type		= 8;	//玩家类型(0:普通玩家 1:VIP)
-	bool		is_drain		= 9;	//是否引流量 0:不是 1:是
-	uint64		coin			= 10;	//玩家金币
-	string		phone_num		= 11;	//手机号
-	string		password		= 12;	//密码
-	int32		vip_level		= 13;	//vip等级
-	int32		avatar_frame	= 14;	//头像框
-	int32		channel_id		= 15;	//渠道ID
-	string		invite_code		= 18;	//邀请码
-	string      signature		= 19;	//个性签名
-	int32		agent_level		= 20;	//代理等级
-	string      whatsup_msg		= 21;	//个性whats
-	string      telegram_msg	= 22;	//个性telegram
-	string      facebook_msg	= 23;	//个性facebook
-	int32		new_inviter		= 24;	//新邀请玩家
-	int32		bind_id			= 25;	//绑定id
+	int32		res_code			= 1;	//登录返回码(0:成功 非0:失败)
+	int32		user_id				= 2;	//玩家ID
+	int32		beautiful_id		= 3;	//玩家靓号
+	string		account				= 4;	//玩家账号
+	string		nickname			= 5;	//玩家昵称
+	string		avatar				= 6;	//头像
+	bool		first_recharge		= 7;	//是否首充
+	int32		user_type			= 8;	//玩家类型(0:普通玩家 1:VIP)
+	bool		is_drain			= 9;	//是否引流量 0:不是 1:是
+	uint64		coin				= 10;	//玩家金币
+	string		phone_num			= 11;	//手机号
+	string		password			= 12;	//密码
+	int32		vip_level			= 13;	//vip等级
+	int32		avatar_frame		= 14;	//头像框
+	int32		channel_id			= 15;	//渠道ID
+	string		invite_code			= 18;	//邀请码
+	string      signature			= 19;	//个性签名
+	int32		agent_level			= 20;	//代理等级
+	string      whatsup_msg			= 21;	//个性whats
+	string      telegram_msg		= 22;	//个性telegram
+	string      facebook_msg		= 23;	//个性facebook
+	int32		new_inviter			= 24;	//新邀请玩家
+	int32		bind_id				= 25;	//绑定id
+	string		ip_info				= 26;	//ip
+	string		longitude			= 27;	//径度
+	string		latitude 			= 28;	//维度
 }
 
 //游戏服务器玩家信息
@@ -275,9 +278,11 @@ message MsgDBLoadRobot
 //游戏登录
 message MsgDBGamePlayerLogin
 {
-	int32		user_id			= 1;	//玩家id
-	string		password		= 2;	//玩家密码
-	int32		ip				= 3;	//玩家ip
+	int32		user_id				= 1;		//玩家id
+	string		password			= 2;		//玩家密码
+	string		ip					= 3;		//玩家ip
+	string		longitude			= 4;		//径度
+	string		latitude 			= 5;		//维度
 }
 
 //游戏重连数据
@@ -309,6 +314,9 @@ message MsgDBGamePlayerLoginResp
 	int32		avatar_frame	= 10;	//头像框
 	MsgDBPlayerReconnectData reconnect_data = 11;	//重连数据
 	int32		login_server_id = 12;	//登录服ID
+	string		user_ip			= 13;		//玩家IP
+	string		longitude		= 14;	//径度
+	string		latitude 		= 15;	//维度
 }
 
 //写分
