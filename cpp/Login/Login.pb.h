@@ -750,12 +750,13 @@ class MsgPlayerLoginResp PROTOBUF_FINAL :
     kResCodeFieldNumber = 1,
     kUserIdFieldNumber = 2,
     kBeautifulIdFieldNumber = 3,
-    kFirstRechargeFieldNumber = 7,
     kUserTypeFieldNumber = 8,
-    kIsDrainFieldNumber = 9,
     kCoinFieldNumber = 10,
+    kIsDrainFieldNumber = 9,
     kVipLevelFieldNumber = 12,
     kAvatarFrameFieldNumber = 13,
+    kFirstRechargeFieldNumber = 7,
+    kFristLoginFieldNumber = 22,
     kAgentLevelFieldNumber = 17,
   };
   // string account = 4;
@@ -945,15 +946,6 @@ class MsgPlayerLoginResp PROTOBUF_FINAL :
   void _internal_set_beautiful_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // bool first_recharge = 7;
-  void clear_first_recharge();
-  bool first_recharge() const;
-  void set_first_recharge(bool value);
-  private:
-  bool _internal_first_recharge() const;
-  void _internal_set_first_recharge(bool value);
-  public:
-
   // int32 user_type = 8;
   void clear_user_type();
   ::PROTOBUF_NAMESPACE_ID::int32 user_type() const;
@@ -963,15 +955,6 @@ class MsgPlayerLoginResp PROTOBUF_FINAL :
   void _internal_set_user_type(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 is_drain = 9;
-  void clear_is_drain();
-  ::PROTOBUF_NAMESPACE_ID::int32 is_drain() const;
-  void set_is_drain(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_is_drain() const;
-  void _internal_set_is_drain(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
   // uint64 coin = 10;
   void clear_coin();
   ::PROTOBUF_NAMESPACE_ID::uint64 coin() const;
@@ -979,6 +962,15 @@ class MsgPlayerLoginResp PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::uint64 _internal_coin() const;
   void _internal_set_coin(::PROTOBUF_NAMESPACE_ID::uint64 value);
+  public:
+
+  // int32 is_drain = 9;
+  void clear_is_drain();
+  ::PROTOBUF_NAMESPACE_ID::int32 is_drain() const;
+  void set_is_drain(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_is_drain() const;
+  void _internal_set_is_drain(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 vip_level = 12;
@@ -997,6 +989,24 @@ class MsgPlayerLoginResp PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::int32 _internal_avatar_frame() const;
   void _internal_set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // bool first_recharge = 7;
+  void clear_first_recharge();
+  bool first_recharge() const;
+  void set_first_recharge(bool value);
+  private:
+  bool _internal_first_recharge() const;
+  void _internal_set_first_recharge(bool value);
+  public:
+
+  // bool frist_login = 22;
+  void clear_frist_login();
+  bool frist_login() const;
+  void set_frist_login(bool value);
+  private:
+  bool _internal_frist_login() const;
+  void _internal_set_frist_login(bool value);
   public:
 
   // int32 agent_level = 17;
@@ -1028,12 +1038,13 @@ class MsgPlayerLoginResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 res_code_;
   ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 beautiful_id_;
-  bool first_recharge_;
   ::PROTOBUF_NAMESPACE_ID::int32 user_type_;
-  ::PROTOBUF_NAMESPACE_ID::int32 is_drain_;
   ::PROTOBUF_NAMESPACE_ID::uint64 coin_;
+  ::PROTOBUF_NAMESPACE_ID::int32 is_drain_;
   ::PROTOBUF_NAMESPACE_ID::int32 vip_level_;
   ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame_;
+  bool first_recharge_;
+  bool frist_login_;
   ::PROTOBUF_NAMESPACE_ID::int32 agent_level_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
@@ -12337,6 +12348,26 @@ inline void MsgPlayerLoginResp::set_allocated_facebook_msg(std::string* facebook
   facebook_msg_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), facebook_msg,
       GetArena());
   // @@protoc_insertion_point(field_set_allocated:MsgPlayerLoginResp.facebook_msg)
+}
+
+// bool frist_login = 22;
+inline void MsgPlayerLoginResp::clear_frist_login() {
+  frist_login_ = false;
+}
+inline bool MsgPlayerLoginResp::_internal_frist_login() const {
+  return frist_login_;
+}
+inline bool MsgPlayerLoginResp::frist_login() const {
+  // @@protoc_insertion_point(field_get:MsgPlayerLoginResp.frist_login)
+  return _internal_frist_login();
+}
+inline void MsgPlayerLoginResp::_internal_set_frist_login(bool value) {
+  
+  frist_login_ = value;
+}
+inline void MsgPlayerLoginResp::set_frist_login(bool value) {
+  _internal_set_frist_login(value);
+  // @@protoc_insertion_point(field_set:MsgPlayerLoginResp.frist_login)
 }
 
 // -------------------------------------------------------------------

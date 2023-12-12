@@ -42,6 +42,7 @@ message MsgPlayerLoginResp
 	string      whatsup_msg		= 19;	//个性whats
 	string      telegram_msg	= 20;	//个性telegram
 	string      facebook_msg	= 21;	//个性facebook
+	bool		frist_login		= 22;	//是否第一次登陆
 }
 
 //修改密码
