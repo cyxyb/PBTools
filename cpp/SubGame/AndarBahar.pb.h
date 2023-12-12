@@ -113,8 +113,8 @@ enum EGameState : int {
   GS_Start = 1,
   GS_Bet1 = 2,
   GS_Bet2 = 3,
-  GS_SendCard = 5,
-  GS_Result = 6,
+  GS_SendCard = 4,
+  GS_Result = 5,
   EGameState_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EGameState_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };

@@ -8,8 +8,8 @@ enum EGameState
 	GS_Start	 = 1;	//开始游戏
 	GS_Bet1		 = 2;	//下注1
 	GS_Bet2		 = 3;	//下注2
-	GS_SendCard  = 5;	//发牌2
-	GS_Result	 = 6;	//结算
+	GS_SendCard  = 4;	//发牌2
+	GS_Result	 = 5;	//结算
 }
 
 enum EMsgIDSubGame

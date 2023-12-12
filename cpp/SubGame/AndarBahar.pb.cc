@@ -399,8 +399,8 @@ const char descriptor_table_protodef_AndarBahar_2eproto[] PROTOBUF_SECTION_VARIA
   "sult\022\021\n\twin_index\030\001 \001(\005\022&\n\007win_msg\030\002 \003(\013"
   "2\025.AndarBahar.MsgWinMsg*b\n\nEGameState\022\014\n"
   "\010GS_Ready\020\000\022\014\n\010GS_Start\020\001\022\013\n\007GS_Bet1\020\002\022\013"
-  "\n\007GS_Bet2\020\003\022\017\n\013GS_SendCard\020\005\022\r\n\tGS_Resul"
-  "t\020\006*\222\002\n\rEMsgIDSubGame\022\025\n\021MsgIDSubGame_Nu"
+  "\n\007GS_Bet2\020\003\022\017\n\013GS_SendCard\020\004\022\r\n\tGS_Resul"
+  "t\020\005*\222\002\n\rEMsgIDSubGame\022\025\n\021MsgIDSubGame_Nu"
   "ll\020\000\022\024\n\020MsgIDSubGame_Bet\020\001\022\030\n\024MsgIDSubGa"
   "me_BetResp\020\002\022\031\n\025MsgIDSubGame_OpBanker\020\003\022"
   "\035\n\031MsgIDSubGame_OpBankerResp\020\004\022\036\n\032MsgIDS"
@@ -446,8 +446,8 @@ bool EGameState_IsValid(int value) {
     case 1:
     case 2:
     case 3:
+    case 4:
     case 5:
-    case 6:
       return true;
     default:
       return false;

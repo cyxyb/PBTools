@@ -50,8 +50,8 @@ namespace AndarBahar {
             "A3dpbhgCIAEoAyJGCglNc2dSZXN1bHQSEQoJd2luX2luZGV4GAEgASgFEiYK",
             "B3dpbl9tc2cYAiADKAsyFS5BbmRhckJhaGFyLk1zZ1dpbk1zZypiCgpFR2Ft",
             "ZVN0YXRlEgwKCEdTX1JlYWR5EAASDAoIR1NfU3RhcnQQARILCgdHU19CZXQx",
-            "EAISCwoHR1NfQmV0MhADEg8KC0dTX1NlbmRDYXJkEAUSDQoJR1NfUmVzdWx0",
-            "EAYqkgIKDUVNc2dJRFN1YkdhbWUSFQoRTXNnSURTdWJHYW1lX051bGwQABIU",
+            "EAISCwoHR1NfQmV0MhADEg8KC0dTX1NlbmRDYXJkEAQSDQoJR1NfUmVzdWx0",
+            "EAUqkgIKDUVNc2dJRFN1YkdhbWUSFQoRTXNnSURTdWJHYW1lX051bGwQABIU",
             "ChBNc2dJRFN1YkdhbWVfQmV0EAESGAoUTXNnSURTdWJHYW1lX0JldFJlc3AQ",
             "AhIZChVNc2dJRFN1YkdhbWVfT3BCYW5rZXIQAxIdChlNc2dJRFN1YkdhbWVf",
             "T3BCYW5rZXJSZXNwEAQSHgoaTXNnSURTdWJHYW1lX0dhbWVTdGFydFJlc3AQ",
@@ -99,11 +99,11 @@ namespace AndarBahar {
     /// <summary>
     ///发牌2
     /// </summary>
-    [pbr::OriginalName("GS_SendCard")] GsSendCard = 5,
+    [pbr::OriginalName("GS_SendCard")] GsSendCard = 4,
     /// <summary>
     ///结算
     /// </summary>
-    [pbr::OriginalName("GS_Result")] GsResult = 6,
+    [pbr::OriginalName("GS_Result")] GsResult = 5,
   }
 
   public enum EMsgIDSubGame {
