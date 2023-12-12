@@ -4090,6 +4090,9 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
     kWhatsupMsgFieldNumber = 21,
     kTelegramMsgFieldNumber = 22,
     kFacebookMsgFieldNumber = 23,
+    kIpInfoFieldNumber = 26,
+    kLongitudeFieldNumber = 27,
+    kLatitudeFieldNumber = 28,
     kResCodeFieldNumber = 1,
     kUserIdFieldNumber = 2,
     kBeautifulIdFieldNumber = 3,
@@ -4264,6 +4267,54 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
   std::string* _internal_mutable_facebook_msg();
   public:
 
+  // string ip_info = 26;
+  void clear_ip_info();
+  const std::string& ip_info() const;
+  void set_ip_info(const std::string& value);
+  void set_ip_info(std::string&& value);
+  void set_ip_info(const char* value);
+  void set_ip_info(const char* value, size_t size);
+  std::string* mutable_ip_info();
+  std::string* release_ip_info();
+  void set_allocated_ip_info(std::string* ip_info);
+  private:
+  const std::string& _internal_ip_info() const;
+  void _internal_set_ip_info(const std::string& value);
+  std::string* _internal_mutable_ip_info();
+  public:
+
+  // string longitude = 27;
+  void clear_longitude();
+  const std::string& longitude() const;
+  void set_longitude(const std::string& value);
+  void set_longitude(std::string&& value);
+  void set_longitude(const char* value);
+  void set_longitude(const char* value, size_t size);
+  std::string* mutable_longitude();
+  std::string* release_longitude();
+  void set_allocated_longitude(std::string* longitude);
+  private:
+  const std::string& _internal_longitude() const;
+  void _internal_set_longitude(const std::string& value);
+  std::string* _internal_mutable_longitude();
+  public:
+
+  // string latitude = 28;
+  void clear_latitude();
+  const std::string& latitude() const;
+  void set_latitude(const std::string& value);
+  void set_latitude(std::string&& value);
+  void set_latitude(const char* value);
+  void set_latitude(const char* value, size_t size);
+  std::string* mutable_latitude();
+  std::string* release_latitude();
+  void set_allocated_latitude(std::string* latitude);
+  private:
+  const std::string& _internal_latitude() const;
+  void _internal_set_latitude(const std::string& value);
+  std::string* _internal_mutable_latitude();
+  public:
+
   // int32 res_code = 1;
   void clear_res_code();
   ::PROTOBUF_NAMESPACE_ID::int32 res_code() const;
@@ -4398,6 +4449,9 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr whatsup_msg_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr telegram_msg_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr facebook_msg_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr ip_info_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr longitude_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr latitude_;
   ::PROTOBUF_NAMESPACE_ID::int32 res_code_;
   ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 beautiful_id_;
@@ -5719,8 +5773,10 @@ class MsgDBGamePlayerLogin PROTOBUF_FINAL :
 
   enum : int {
     kPasswordFieldNumber = 2,
-    kUserIdFieldNumber = 1,
     kIpFieldNumber = 3,
+    kLongitudeFieldNumber = 4,
+    kLatitudeFieldNumber = 5,
+    kUserIdFieldNumber = 1,
   };
   // string password = 2;
   void clear_password();
@@ -5738,6 +5794,54 @@ class MsgDBGamePlayerLogin PROTOBUF_FINAL :
   std::string* _internal_mutable_password();
   public:
 
+  // string ip = 3;
+  void clear_ip();
+  const std::string& ip() const;
+  void set_ip(const std::string& value);
+  void set_ip(std::string&& value);
+  void set_ip(const char* value);
+  void set_ip(const char* value, size_t size);
+  std::string* mutable_ip();
+  std::string* release_ip();
+  void set_allocated_ip(std::string* ip);
+  private:
+  const std::string& _internal_ip() const;
+  void _internal_set_ip(const std::string& value);
+  std::string* _internal_mutable_ip();
+  public:
+
+  // string longitude = 4;
+  void clear_longitude();
+  const std::string& longitude() const;
+  void set_longitude(const std::string& value);
+  void set_longitude(std::string&& value);
+  void set_longitude(const char* value);
+  void set_longitude(const char* value, size_t size);
+  std::string* mutable_longitude();
+  std::string* release_longitude();
+  void set_allocated_longitude(std::string* longitude);
+  private:
+  const std::string& _internal_longitude() const;
+  void _internal_set_longitude(const std::string& value);
+  std::string* _internal_mutable_longitude();
+  public:
+
+  // string latitude = 5;
+  void clear_latitude();
+  const std::string& latitude() const;
+  void set_latitude(const std::string& value);
+  void set_latitude(std::string&& value);
+  void set_latitude(const char* value);
+  void set_latitude(const char* value, size_t size);
+  std::string* mutable_latitude();
+  std::string* release_latitude();
+  void set_allocated_latitude(std::string* latitude);
+  private:
+  const std::string& _internal_latitude() const;
+  void _internal_set_latitude(const std::string& value);
+  std::string* _internal_mutable_latitude();
+  public:
+
   // int32 user_id = 1;
   void clear_user_id();
   ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
@@ -5745,15 +5849,6 @@ class MsgDBGamePlayerLogin PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
   void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 ip = 3;
-  void clear_ip();
-  ::PROTOBUF_NAMESPACE_ID::int32 ip() const;
-  void set_ip(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_ip() const;
-  void _internal_set_ip(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:MsgDBGamePlayerLogin)
@@ -5764,8 +5859,10 @@ class MsgDBGamePlayerLogin PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr password_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr ip_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr longitude_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr latitude_;
   ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 ip_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -6124,6 +6221,9 @@ class MsgDBGamePlayerLoginResp PROTOBUF_FINAL :
     kNicknameFieldNumber = 4,
     kAvatarFieldNumber = 5,
     kPasswordFieldNumber = 7,
+    kUserIpFieldNumber = 13,
+    kLongitudeFieldNumber = 14,
+    kLatitudeFieldNumber = 15,
     kReconnectDataFieldNumber = 11,
     kResCodeFieldNumber = 1,
     kUserIdFieldNumber = 2,
@@ -6180,6 +6280,54 @@ class MsgDBGamePlayerLoginResp PROTOBUF_FINAL :
   const std::string& _internal_password() const;
   void _internal_set_password(const std::string& value);
   std::string* _internal_mutable_password();
+  public:
+
+  // string user_ip = 13;
+  void clear_user_ip();
+  const std::string& user_ip() const;
+  void set_user_ip(const std::string& value);
+  void set_user_ip(std::string&& value);
+  void set_user_ip(const char* value);
+  void set_user_ip(const char* value, size_t size);
+  std::string* mutable_user_ip();
+  std::string* release_user_ip();
+  void set_allocated_user_ip(std::string* user_ip);
+  private:
+  const std::string& _internal_user_ip() const;
+  void _internal_set_user_ip(const std::string& value);
+  std::string* _internal_mutable_user_ip();
+  public:
+
+  // string longitude = 14;
+  void clear_longitude();
+  const std::string& longitude() const;
+  void set_longitude(const std::string& value);
+  void set_longitude(std::string&& value);
+  void set_longitude(const char* value);
+  void set_longitude(const char* value, size_t size);
+  std::string* mutable_longitude();
+  std::string* release_longitude();
+  void set_allocated_longitude(std::string* longitude);
+  private:
+  const std::string& _internal_longitude() const;
+  void _internal_set_longitude(const std::string& value);
+  std::string* _internal_mutable_longitude();
+  public:
+
+  // string latitude = 15;
+  void clear_latitude();
+  const std::string& latitude() const;
+  void set_latitude(const std::string& value);
+  void set_latitude(std::string&& value);
+  void set_latitude(const char* value);
+  void set_latitude(const char* value, size_t size);
+  std::string* mutable_latitude();
+  std::string* release_latitude();
+  void set_allocated_latitude(std::string* latitude);
+  private:
+  const std::string& _internal_latitude() const;
+  void _internal_set_latitude(const std::string& value);
+  std::string* _internal_mutable_latitude();
   public:
 
   // .MsgDBPlayerReconnectData reconnect_data = 11;
@@ -6282,6 +6430,9 @@ class MsgDBGamePlayerLoginResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr nickname_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr avatar_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr password_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr user_ip_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr longitude_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr latitude_;
   ::MsgDBPlayerReconnectData* reconnect_data_;
   ::PROTOBUF_NAMESPACE_ID::int32 res_code_;
   ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
@@ -13918,6 +14069,189 @@ inline void MsgLoginPlayerInfo::set_bind_id(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:MsgLoginPlayerInfo.bind_id)
 }
 
+// string ip_info = 26;
+inline void MsgLoginPlayerInfo::clear_ip_info() {
+  ip_info_.ClearToEmpty();
+}
+inline const std::string& MsgLoginPlayerInfo::ip_info() const {
+  // @@protoc_insertion_point(field_get:MsgLoginPlayerInfo.ip_info)
+  return _internal_ip_info();
+}
+inline void MsgLoginPlayerInfo::set_ip_info(const std::string& value) {
+  _internal_set_ip_info(value);
+  // @@protoc_insertion_point(field_set:MsgLoginPlayerInfo.ip_info)
+}
+inline std::string* MsgLoginPlayerInfo::mutable_ip_info() {
+  // @@protoc_insertion_point(field_mutable:MsgLoginPlayerInfo.ip_info)
+  return _internal_mutable_ip_info();
+}
+inline const std::string& MsgLoginPlayerInfo::_internal_ip_info() const {
+  return ip_info_.Get();
+}
+inline void MsgLoginPlayerInfo::_internal_set_ip_info(const std::string& value) {
+  
+  ip_info_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgLoginPlayerInfo::set_ip_info(std::string&& value) {
+  
+  ip_info_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgLoginPlayerInfo.ip_info)
+}
+inline void MsgLoginPlayerInfo::set_ip_info(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  ip_info_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgLoginPlayerInfo.ip_info)
+}
+inline void MsgLoginPlayerInfo::set_ip_info(const char* value,
+    size_t size) {
+  
+  ip_info_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgLoginPlayerInfo.ip_info)
+}
+inline std::string* MsgLoginPlayerInfo::_internal_mutable_ip_info() {
+  
+  return ip_info_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgLoginPlayerInfo::release_ip_info() {
+  // @@protoc_insertion_point(field_release:MsgLoginPlayerInfo.ip_info)
+  return ip_info_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgLoginPlayerInfo::set_allocated_ip_info(std::string* ip_info) {
+  if (ip_info != nullptr) {
+    
+  } else {
+    
+  }
+  ip_info_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ip_info,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgLoginPlayerInfo.ip_info)
+}
+
+// string longitude = 27;
+inline void MsgLoginPlayerInfo::clear_longitude() {
+  longitude_.ClearToEmpty();
+}
+inline const std::string& MsgLoginPlayerInfo::longitude() const {
+  // @@protoc_insertion_point(field_get:MsgLoginPlayerInfo.longitude)
+  return _internal_longitude();
+}
+inline void MsgLoginPlayerInfo::set_longitude(const std::string& value) {
+  _internal_set_longitude(value);
+  // @@protoc_insertion_point(field_set:MsgLoginPlayerInfo.longitude)
+}
+inline std::string* MsgLoginPlayerInfo::mutable_longitude() {
+  // @@protoc_insertion_point(field_mutable:MsgLoginPlayerInfo.longitude)
+  return _internal_mutable_longitude();
+}
+inline const std::string& MsgLoginPlayerInfo::_internal_longitude() const {
+  return longitude_.Get();
+}
+inline void MsgLoginPlayerInfo::_internal_set_longitude(const std::string& value) {
+  
+  longitude_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgLoginPlayerInfo::set_longitude(std::string&& value) {
+  
+  longitude_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgLoginPlayerInfo.longitude)
+}
+inline void MsgLoginPlayerInfo::set_longitude(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  longitude_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgLoginPlayerInfo.longitude)
+}
+inline void MsgLoginPlayerInfo::set_longitude(const char* value,
+    size_t size) {
+  
+  longitude_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgLoginPlayerInfo.longitude)
+}
+inline std::string* MsgLoginPlayerInfo::_internal_mutable_longitude() {
+  
+  return longitude_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgLoginPlayerInfo::release_longitude() {
+  // @@protoc_insertion_point(field_release:MsgLoginPlayerInfo.longitude)
+  return longitude_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgLoginPlayerInfo::set_allocated_longitude(std::string* longitude) {
+  if (longitude != nullptr) {
+    
+  } else {
+    
+  }
+  longitude_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), longitude,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgLoginPlayerInfo.longitude)
+}
+
+// string latitude = 28;
+inline void MsgLoginPlayerInfo::clear_latitude() {
+  latitude_.ClearToEmpty();
+}
+inline const std::string& MsgLoginPlayerInfo::latitude() const {
+  // @@protoc_insertion_point(field_get:MsgLoginPlayerInfo.latitude)
+  return _internal_latitude();
+}
+inline void MsgLoginPlayerInfo::set_latitude(const std::string& value) {
+  _internal_set_latitude(value);
+  // @@protoc_insertion_point(field_set:MsgLoginPlayerInfo.latitude)
+}
+inline std::string* MsgLoginPlayerInfo::mutable_latitude() {
+  // @@protoc_insertion_point(field_mutable:MsgLoginPlayerInfo.latitude)
+  return _internal_mutable_latitude();
+}
+inline const std::string& MsgLoginPlayerInfo::_internal_latitude() const {
+  return latitude_.Get();
+}
+inline void MsgLoginPlayerInfo::_internal_set_latitude(const std::string& value) {
+  
+  latitude_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgLoginPlayerInfo::set_latitude(std::string&& value) {
+  
+  latitude_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgLoginPlayerInfo.latitude)
+}
+inline void MsgLoginPlayerInfo::set_latitude(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  latitude_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgLoginPlayerInfo.latitude)
+}
+inline void MsgLoginPlayerInfo::set_latitude(const char* value,
+    size_t size) {
+  
+  latitude_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgLoginPlayerInfo.latitude)
+}
+inline std::string* MsgLoginPlayerInfo::_internal_mutable_latitude() {
+  
+  return latitude_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgLoginPlayerInfo::release_latitude() {
+  // @@protoc_insertion_point(field_release:MsgLoginPlayerInfo.latitude)
+  return latitude_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgLoginPlayerInfo::set_allocated_latitude(std::string* latitude) {
+  if (latitude != nullptr) {
+    
+  } else {
+    
+  }
+  latitude_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), latitude,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgLoginPlayerInfo.latitude)
+}
+
 // -------------------------------------------------------------------
 
 // MsgDBLoginOut
@@ -14776,24 +15110,187 @@ inline void MsgDBGamePlayerLogin::set_allocated_password(std::string* password) 
   // @@protoc_insertion_point(field_set_allocated:MsgDBGamePlayerLogin.password)
 }
 
-// int32 ip = 3;
+// string ip = 3;
 inline void MsgDBGamePlayerLogin::clear_ip() {
-  ip_ = 0;
+  ip_.ClearToEmpty();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBGamePlayerLogin::_internal_ip() const {
-  return ip_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBGamePlayerLogin::ip() const {
+inline const std::string& MsgDBGamePlayerLogin::ip() const {
   // @@protoc_insertion_point(field_get:MsgDBGamePlayerLogin.ip)
   return _internal_ip();
 }
-inline void MsgDBGamePlayerLogin::_internal_set_ip(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  ip_ = value;
-}
-inline void MsgDBGamePlayerLogin::set_ip(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgDBGamePlayerLogin::set_ip(const std::string& value) {
   _internal_set_ip(value);
   // @@protoc_insertion_point(field_set:MsgDBGamePlayerLogin.ip)
+}
+inline std::string* MsgDBGamePlayerLogin::mutable_ip() {
+  // @@protoc_insertion_point(field_mutable:MsgDBGamePlayerLogin.ip)
+  return _internal_mutable_ip();
+}
+inline const std::string& MsgDBGamePlayerLogin::_internal_ip() const {
+  return ip_.Get();
+}
+inline void MsgDBGamePlayerLogin::_internal_set_ip(const std::string& value) {
+  
+  ip_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgDBGamePlayerLogin::set_ip(std::string&& value) {
+  
+  ip_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgDBGamePlayerLogin.ip)
+}
+inline void MsgDBGamePlayerLogin::set_ip(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  ip_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgDBGamePlayerLogin.ip)
+}
+inline void MsgDBGamePlayerLogin::set_ip(const char* value,
+    size_t size) {
+  
+  ip_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgDBGamePlayerLogin.ip)
+}
+inline std::string* MsgDBGamePlayerLogin::_internal_mutable_ip() {
+  
+  return ip_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgDBGamePlayerLogin::release_ip() {
+  // @@protoc_insertion_point(field_release:MsgDBGamePlayerLogin.ip)
+  return ip_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgDBGamePlayerLogin::set_allocated_ip(std::string* ip) {
+  if (ip != nullptr) {
+    
+  } else {
+    
+  }
+  ip_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ip,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgDBGamePlayerLogin.ip)
+}
+
+// string longitude = 4;
+inline void MsgDBGamePlayerLogin::clear_longitude() {
+  longitude_.ClearToEmpty();
+}
+inline const std::string& MsgDBGamePlayerLogin::longitude() const {
+  // @@protoc_insertion_point(field_get:MsgDBGamePlayerLogin.longitude)
+  return _internal_longitude();
+}
+inline void MsgDBGamePlayerLogin::set_longitude(const std::string& value) {
+  _internal_set_longitude(value);
+  // @@protoc_insertion_point(field_set:MsgDBGamePlayerLogin.longitude)
+}
+inline std::string* MsgDBGamePlayerLogin::mutable_longitude() {
+  // @@protoc_insertion_point(field_mutable:MsgDBGamePlayerLogin.longitude)
+  return _internal_mutable_longitude();
+}
+inline const std::string& MsgDBGamePlayerLogin::_internal_longitude() const {
+  return longitude_.Get();
+}
+inline void MsgDBGamePlayerLogin::_internal_set_longitude(const std::string& value) {
+  
+  longitude_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgDBGamePlayerLogin::set_longitude(std::string&& value) {
+  
+  longitude_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgDBGamePlayerLogin.longitude)
+}
+inline void MsgDBGamePlayerLogin::set_longitude(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  longitude_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgDBGamePlayerLogin.longitude)
+}
+inline void MsgDBGamePlayerLogin::set_longitude(const char* value,
+    size_t size) {
+  
+  longitude_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgDBGamePlayerLogin.longitude)
+}
+inline std::string* MsgDBGamePlayerLogin::_internal_mutable_longitude() {
+  
+  return longitude_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgDBGamePlayerLogin::release_longitude() {
+  // @@protoc_insertion_point(field_release:MsgDBGamePlayerLogin.longitude)
+  return longitude_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgDBGamePlayerLogin::set_allocated_longitude(std::string* longitude) {
+  if (longitude != nullptr) {
+    
+  } else {
+    
+  }
+  longitude_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), longitude,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgDBGamePlayerLogin.longitude)
+}
+
+// string latitude = 5;
+inline void MsgDBGamePlayerLogin::clear_latitude() {
+  latitude_.ClearToEmpty();
+}
+inline const std::string& MsgDBGamePlayerLogin::latitude() const {
+  // @@protoc_insertion_point(field_get:MsgDBGamePlayerLogin.latitude)
+  return _internal_latitude();
+}
+inline void MsgDBGamePlayerLogin::set_latitude(const std::string& value) {
+  _internal_set_latitude(value);
+  // @@protoc_insertion_point(field_set:MsgDBGamePlayerLogin.latitude)
+}
+inline std::string* MsgDBGamePlayerLogin::mutable_latitude() {
+  // @@protoc_insertion_point(field_mutable:MsgDBGamePlayerLogin.latitude)
+  return _internal_mutable_latitude();
+}
+inline const std::string& MsgDBGamePlayerLogin::_internal_latitude() const {
+  return latitude_.Get();
+}
+inline void MsgDBGamePlayerLogin::_internal_set_latitude(const std::string& value) {
+  
+  latitude_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgDBGamePlayerLogin::set_latitude(std::string&& value) {
+  
+  latitude_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgDBGamePlayerLogin.latitude)
+}
+inline void MsgDBGamePlayerLogin::set_latitude(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  latitude_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgDBGamePlayerLogin.latitude)
+}
+inline void MsgDBGamePlayerLogin::set_latitude(const char* value,
+    size_t size) {
+  
+  latitude_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgDBGamePlayerLogin.latitude)
+}
+inline std::string* MsgDBGamePlayerLogin::_internal_mutable_latitude() {
+  
+  return latitude_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgDBGamePlayerLogin::release_latitude() {
+  // @@protoc_insertion_point(field_release:MsgDBGamePlayerLogin.latitude)
+  return latitude_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgDBGamePlayerLogin::set_allocated_latitude(std::string* latitude) {
+  if (latitude != nullptr) {
+    
+  } else {
+    
+  }
+  latitude_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), latitude,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgDBGamePlayerLogin.latitude)
 }
 
 // -------------------------------------------------------------------
@@ -15435,6 +15932,189 @@ inline void MsgDBGamePlayerLoginResp::_internal_set_login_server_id(::PROTOBUF_N
 inline void MsgDBGamePlayerLoginResp::set_login_server_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_login_server_id(value);
   // @@protoc_insertion_point(field_set:MsgDBGamePlayerLoginResp.login_server_id)
+}
+
+// string user_ip = 13;
+inline void MsgDBGamePlayerLoginResp::clear_user_ip() {
+  user_ip_.ClearToEmpty();
+}
+inline const std::string& MsgDBGamePlayerLoginResp::user_ip() const {
+  // @@protoc_insertion_point(field_get:MsgDBGamePlayerLoginResp.user_ip)
+  return _internal_user_ip();
+}
+inline void MsgDBGamePlayerLoginResp::set_user_ip(const std::string& value) {
+  _internal_set_user_ip(value);
+  // @@protoc_insertion_point(field_set:MsgDBGamePlayerLoginResp.user_ip)
+}
+inline std::string* MsgDBGamePlayerLoginResp::mutable_user_ip() {
+  // @@protoc_insertion_point(field_mutable:MsgDBGamePlayerLoginResp.user_ip)
+  return _internal_mutable_user_ip();
+}
+inline const std::string& MsgDBGamePlayerLoginResp::_internal_user_ip() const {
+  return user_ip_.Get();
+}
+inline void MsgDBGamePlayerLoginResp::_internal_set_user_ip(const std::string& value) {
+  
+  user_ip_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgDBGamePlayerLoginResp::set_user_ip(std::string&& value) {
+  
+  user_ip_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgDBGamePlayerLoginResp.user_ip)
+}
+inline void MsgDBGamePlayerLoginResp::set_user_ip(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  user_ip_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgDBGamePlayerLoginResp.user_ip)
+}
+inline void MsgDBGamePlayerLoginResp::set_user_ip(const char* value,
+    size_t size) {
+  
+  user_ip_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgDBGamePlayerLoginResp.user_ip)
+}
+inline std::string* MsgDBGamePlayerLoginResp::_internal_mutable_user_ip() {
+  
+  return user_ip_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgDBGamePlayerLoginResp::release_user_ip() {
+  // @@protoc_insertion_point(field_release:MsgDBGamePlayerLoginResp.user_ip)
+  return user_ip_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgDBGamePlayerLoginResp::set_allocated_user_ip(std::string* user_ip) {
+  if (user_ip != nullptr) {
+    
+  } else {
+    
+  }
+  user_ip_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), user_ip,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgDBGamePlayerLoginResp.user_ip)
+}
+
+// string longitude = 14;
+inline void MsgDBGamePlayerLoginResp::clear_longitude() {
+  longitude_.ClearToEmpty();
+}
+inline const std::string& MsgDBGamePlayerLoginResp::longitude() const {
+  // @@protoc_insertion_point(field_get:MsgDBGamePlayerLoginResp.longitude)
+  return _internal_longitude();
+}
+inline void MsgDBGamePlayerLoginResp::set_longitude(const std::string& value) {
+  _internal_set_longitude(value);
+  // @@protoc_insertion_point(field_set:MsgDBGamePlayerLoginResp.longitude)
+}
+inline std::string* MsgDBGamePlayerLoginResp::mutable_longitude() {
+  // @@protoc_insertion_point(field_mutable:MsgDBGamePlayerLoginResp.longitude)
+  return _internal_mutable_longitude();
+}
+inline const std::string& MsgDBGamePlayerLoginResp::_internal_longitude() const {
+  return longitude_.Get();
+}
+inline void MsgDBGamePlayerLoginResp::_internal_set_longitude(const std::string& value) {
+  
+  longitude_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgDBGamePlayerLoginResp::set_longitude(std::string&& value) {
+  
+  longitude_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgDBGamePlayerLoginResp.longitude)
+}
+inline void MsgDBGamePlayerLoginResp::set_longitude(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  longitude_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgDBGamePlayerLoginResp.longitude)
+}
+inline void MsgDBGamePlayerLoginResp::set_longitude(const char* value,
+    size_t size) {
+  
+  longitude_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgDBGamePlayerLoginResp.longitude)
+}
+inline std::string* MsgDBGamePlayerLoginResp::_internal_mutable_longitude() {
+  
+  return longitude_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgDBGamePlayerLoginResp::release_longitude() {
+  // @@protoc_insertion_point(field_release:MsgDBGamePlayerLoginResp.longitude)
+  return longitude_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgDBGamePlayerLoginResp::set_allocated_longitude(std::string* longitude) {
+  if (longitude != nullptr) {
+    
+  } else {
+    
+  }
+  longitude_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), longitude,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgDBGamePlayerLoginResp.longitude)
+}
+
+// string latitude = 15;
+inline void MsgDBGamePlayerLoginResp::clear_latitude() {
+  latitude_.ClearToEmpty();
+}
+inline const std::string& MsgDBGamePlayerLoginResp::latitude() const {
+  // @@protoc_insertion_point(field_get:MsgDBGamePlayerLoginResp.latitude)
+  return _internal_latitude();
+}
+inline void MsgDBGamePlayerLoginResp::set_latitude(const std::string& value) {
+  _internal_set_latitude(value);
+  // @@protoc_insertion_point(field_set:MsgDBGamePlayerLoginResp.latitude)
+}
+inline std::string* MsgDBGamePlayerLoginResp::mutable_latitude() {
+  // @@protoc_insertion_point(field_mutable:MsgDBGamePlayerLoginResp.latitude)
+  return _internal_mutable_latitude();
+}
+inline const std::string& MsgDBGamePlayerLoginResp::_internal_latitude() const {
+  return latitude_.Get();
+}
+inline void MsgDBGamePlayerLoginResp::_internal_set_latitude(const std::string& value) {
+  
+  latitude_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgDBGamePlayerLoginResp::set_latitude(std::string&& value) {
+  
+  latitude_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgDBGamePlayerLoginResp.latitude)
+}
+inline void MsgDBGamePlayerLoginResp::set_latitude(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  latitude_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgDBGamePlayerLoginResp.latitude)
+}
+inline void MsgDBGamePlayerLoginResp::set_latitude(const char* value,
+    size_t size) {
+  
+  latitude_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgDBGamePlayerLoginResp.latitude)
+}
+inline std::string* MsgDBGamePlayerLoginResp::_internal_mutable_latitude() {
+  
+  return latitude_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgDBGamePlayerLoginResp::release_latitude() {
+  // @@protoc_insertion_point(field_release:MsgDBGamePlayerLoginResp.latitude)
+  return latitude_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgDBGamePlayerLoginResp::set_allocated_latitude(std::string* latitude) {
+  if (latitude != nullptr) {
+    
+  } else {
+    
+  }
+  latitude_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), latitude,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgDBGamePlayerLoginResp.latitude)
 }
 
 // -------------------------------------------------------------------

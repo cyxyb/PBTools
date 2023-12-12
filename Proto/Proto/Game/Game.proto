@@ -5,20 +5,26 @@ message MsgGamePlayerLogin
 {
 	int32		user_id			= 1;	//玩家id
 	string		password		= 2;	//玩家密码
+	string		ip_info			= 3;	//ip
+	string		longitude		= 4;	//径度
+	string		latitude 		= 5;	//维度
 }
 
 //游戏玩家信息
 message MsgGamePlayerInfo
-{
-	int32		user_id			= 1;	//玩家ID
-	int32		beautiful_id	= 2;	//玩家靓号
-	string		nickname		= 3;	//玩家昵称
-	string		avatar			= 4;	//头像
-	uint64		coin			= 5;	//玩家金币
-	int32		table_id		= 6;	//玩家座位号
-	int32		chair_id		= 7;	//玩家椅子号
-	int32		vip_level		= 8;	//VIP等级
-	int32		avatar_frame	= 9;	//头像框
+{	
+	int32		user_id				= 1;	//玩家ID
+	int32		beautiful_id		= 2;	//玩家靓号
+	string		nickname			= 3;	//玩家昵称
+	string		avatar				= 4;	//头像
+	uint64		coin				= 5;	//玩家金币
+	int32		table_id			= 6;	//玩家座位号
+	int32		chair_id			= 7;	//玩家椅子号
+	int32		vip_level			= 8;	//VIP等级
+	int32		avatar_frame		= 9;	//头像框
+	string		ip_info				= 10;	//ip
+	string		longitude			= 11;	//径度
+	string		latitude 			= 12;	//维度
 }
 
 //游戏登录返回
