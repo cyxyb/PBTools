@@ -210,6 +210,7 @@ message MsgLoginPlayerInfo
 	string		ip_info				= 26;	//ip
 	string		longitude			= 27;	//径度
 	string		latitude 			= 28;	//维度
+	bool		frist_login			= 29;	//是否第一次登陆
 }
 
 //游戏服务器玩家信息

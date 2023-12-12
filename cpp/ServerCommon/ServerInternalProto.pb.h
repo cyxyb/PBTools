@@ -4085,12 +4085,13 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
     kUserIdFieldNumber = 2,
     kBeautifulIdFieldNumber = 3,
     kUserTypeFieldNumber = 8,
-    kFirstRechargeFieldNumber = 7,
-    kIsDrainFieldNumber = 9,
-    kVipLevelFieldNumber = 13,
     kCoinFieldNumber = 10,
+    kVipLevelFieldNumber = 13,
     kAvatarFrameFieldNumber = 14,
     kChannelIdFieldNumber = 15,
+    kFirstRechargeFieldNumber = 7,
+    kIsDrainFieldNumber = 9,
+    kFristLoginFieldNumber = 29,
     kAgentLevelFieldNumber = 20,
     kNewInviterFieldNumber = 24,
     kBindIdFieldNumber = 25,
@@ -4339,22 +4340,13 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
   void _internal_set_user_type(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // bool first_recharge = 7;
-  void clear_first_recharge();
-  bool first_recharge() const;
-  void set_first_recharge(bool value);
+  // uint64 coin = 10;
+  void clear_coin();
+  ::PROTOBUF_NAMESPACE_ID::uint64 coin() const;
+  void set_coin(::PROTOBUF_NAMESPACE_ID::uint64 value);
   private:
-  bool _internal_first_recharge() const;
-  void _internal_set_first_recharge(bool value);
-  public:
-
-  // bool is_drain = 9;
-  void clear_is_drain();
-  bool is_drain() const;
-  void set_is_drain(bool value);
-  private:
-  bool _internal_is_drain() const;
-  void _internal_set_is_drain(bool value);
+  ::PROTOBUF_NAMESPACE_ID::uint64 _internal_coin() const;
+  void _internal_set_coin(::PROTOBUF_NAMESPACE_ID::uint64 value);
   public:
 
   // int32 vip_level = 13;
@@ -4364,15 +4356,6 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::int32 _internal_vip_level() const;
   void _internal_set_vip_level(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // uint64 coin = 10;
-  void clear_coin();
-  ::PROTOBUF_NAMESPACE_ID::uint64 coin() const;
-  void set_coin(::PROTOBUF_NAMESPACE_ID::uint64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::uint64 _internal_coin() const;
-  void _internal_set_coin(::PROTOBUF_NAMESPACE_ID::uint64 value);
   public:
 
   // int32 avatar_frame = 14;
@@ -4391,6 +4374,33 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::int32 _internal_channel_id() const;
   void _internal_set_channel_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // bool first_recharge = 7;
+  void clear_first_recharge();
+  bool first_recharge() const;
+  void set_first_recharge(bool value);
+  private:
+  bool _internal_first_recharge() const;
+  void _internal_set_first_recharge(bool value);
+  public:
+
+  // bool is_drain = 9;
+  void clear_is_drain();
+  bool is_drain() const;
+  void set_is_drain(bool value);
+  private:
+  bool _internal_is_drain() const;
+  void _internal_set_is_drain(bool value);
+  public:
+
+  // bool frist_login = 29;
+  void clear_frist_login();
+  bool frist_login() const;
+  void set_frist_login(bool value);
+  private:
+  bool _internal_frist_login() const;
+  void _internal_set_frist_login(bool value);
   public:
 
   // int32 agent_level = 20;
@@ -4444,12 +4454,13 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 beautiful_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 user_type_;
-  bool first_recharge_;
-  bool is_drain_;
-  ::PROTOBUF_NAMESPACE_ID::int32 vip_level_;
   ::PROTOBUF_NAMESPACE_ID::uint64 coin_;
+  ::PROTOBUF_NAMESPACE_ID::int32 vip_level_;
   ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame_;
   ::PROTOBUF_NAMESPACE_ID::int32 channel_id_;
+  bool first_recharge_;
+  bool is_drain_;
+  bool frist_login_;
   ::PROTOBUF_NAMESPACE_ID::int32 agent_level_;
   ::PROTOBUF_NAMESPACE_ID::int32 new_inviter_;
   ::PROTOBUF_NAMESPACE_ID::int32 bind_id_;
@@ -13697,6 +13708,26 @@ inline void MsgLoginPlayerInfo::set_allocated_latitude(std::string* latitude) {
   latitude_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), latitude,
       GetArena());
   // @@protoc_insertion_point(field_set_allocated:MsgLoginPlayerInfo.latitude)
+}
+
+// bool frist_login = 29;
+inline void MsgLoginPlayerInfo::clear_frist_login() {
+  frist_login_ = false;
+}
+inline bool MsgLoginPlayerInfo::_internal_frist_login() const {
+  return frist_login_;
+}
+inline bool MsgLoginPlayerInfo::frist_login() const {
+  // @@protoc_insertion_point(field_get:MsgLoginPlayerInfo.frist_login)
+  return _internal_frist_login();
+}
+inline void MsgLoginPlayerInfo::_internal_set_frist_login(bool value) {
+  
+  frist_login_ = value;
+}
+inline void MsgLoginPlayerInfo::set_frist_login(bool value) {
+  _internal_set_frist_login(value);
+  // @@protoc_insertion_point(field_set:MsgLoginPlayerInfo.frist_login)
 }
 
 // -------------------------------------------------------------------
