@@ -25,13 +25,6 @@ enum EMsgIDSubGame
 	MsgIDSubGame_NotifyStateResp		= 8;	//游戏状态(MsgCommonN32)
 }
 
-//开牌记录
-message MsgRecord
-{
-	int32	result			= 1;	//开牌结果(0:红 1:黑 2:红和幸运一击 3:黑和幸运一击)
-	int32	card_type		= 2;	//赢牌类型
-}
-
 message ABBetInfo
 {
 	int64				bet				= 1;	//下注金额  
@@ -51,7 +44,7 @@ message ABPlayerData
 message MsgSceneInfo
 {
 	repeated int32  	bet     		= 1;	//固定押注配置
-	repeated MsgRecord	record			= 2;	//开牌记录
+	repeated int32		records			= 2;	//开牌结果(1:红 2:黑)
 	repeated int32		bet_limit		= 3;	//个人区域限制
 	repeated int32		up_banker_list	= 4;	//上庄申列表
 	int32				player_limit	= 5;	//个人下注限制
@@ -64,8 +57,8 @@ message MsgSceneInfo
 	int32				banker_num		= 12;	//已经上庄轮数 包涵本局
 	int32				base_card		= 13;	//底牌
 
-	repeated uint32		red_cards		= 20;	//红方牌列表
-	repeated uint32		blue_cards		= 21;	//蓝方牌列表
+	repeated int32		red_cards		= 20;	//红方牌列表
+	repeated int32		blue_cards		= 21;	//蓝方牌列表
 	repeated ABPlayerData player_list	= 22;	//玩家状态	
 }
 
@@ -80,7 +73,7 @@ message MsgStartGameResp
 //玩家下注
 message MsgBet
 {
-	int32				index			= 1;	//押注下标
+	int32				bet				= 1;	//押注金币
 	int32				area			= 2;	//押注区域(0:跳过 1:红 2:黑 )
 }
 

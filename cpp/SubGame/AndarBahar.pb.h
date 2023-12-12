@@ -47,7 +47,7 @@ struct TableStruct_AndarBahar_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[12]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[11]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -73,9 +73,6 @@ extern MsgOpBankerDefaultTypeInternal _MsgOpBanker_default_instance_;
 class MsgOpBankerResp;
 class MsgOpBankerRespDefaultTypeInternal;
 extern MsgOpBankerRespDefaultTypeInternal _MsgOpBankerResp_default_instance_;
-class MsgRecord;
-class MsgRecordDefaultTypeInternal;
-extern MsgRecordDefaultTypeInternal _MsgRecord_default_instance_;
 class MsgResult;
 class MsgResultDefaultTypeInternal;
 extern MsgResultDefaultTypeInternal _MsgResult_default_instance_;
@@ -99,7 +96,6 @@ template<> ::AndarBahar::MsgBet* Arena::CreateMaybeMessage<::AndarBahar::MsgBet>
 template<> ::AndarBahar::MsgBetResp* Arena::CreateMaybeMessage<::AndarBahar::MsgBetResp>(Arena*);
 template<> ::AndarBahar::MsgOpBanker* Arena::CreateMaybeMessage<::AndarBahar::MsgOpBanker>(Arena*);
 template<> ::AndarBahar::MsgOpBankerResp* Arena::CreateMaybeMessage<::AndarBahar::MsgOpBankerResp>(Arena*);
-template<> ::AndarBahar::MsgRecord* Arena::CreateMaybeMessage<::AndarBahar::MsgRecord>(Arena*);
 template<> ::AndarBahar::MsgResult* Arena::CreateMaybeMessage<::AndarBahar::MsgResult>(Arena*);
 template<> ::AndarBahar::MsgSceneInfo* Arena::CreateMaybeMessage<::AndarBahar::MsgSceneInfo>(Arena*);
 template<> ::AndarBahar::MsgSendCardResp* Arena::CreateMaybeMessage<::AndarBahar::MsgSendCardResp>(Arena*);
@@ -171,153 +167,6 @@ inline bool EMsgIDSubGame_Parse(
 }
 // ===================================================================
 
-class MsgRecord PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:AndarBahar.MsgRecord) */ {
- public:
-  inline MsgRecord() : MsgRecord(nullptr) {}
-  virtual ~MsgRecord();
-
-  MsgRecord(const MsgRecord& from);
-  MsgRecord(MsgRecord&& from) noexcept
-    : MsgRecord() {
-    *this = ::std::move(from);
-  }
-
-  inline MsgRecord& operator=(const MsgRecord& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline MsgRecord& operator=(MsgRecord&& from) noexcept {
-    if (GetArena() == from.GetArena()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return GetMetadataStatic().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return GetMetadataStatic().reflection;
-  }
-  static const MsgRecord& default_instance();
-
-  static inline const MsgRecord* internal_default_instance() {
-    return reinterpret_cast<const MsgRecord*>(
-               &_MsgRecord_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    0;
-
-  friend void swap(MsgRecord& a, MsgRecord& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(MsgRecord* other) {
-    if (other == this) return;
-    if (GetArena() == other->GetArena()) {
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(MsgRecord* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetArena() == other->GetArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline MsgRecord* New() const final {
-    return CreateMaybeMessage<MsgRecord>(nullptr);
-  }
-
-  MsgRecord* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<MsgRecord>(arena);
-  }
-  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const MsgRecord& from);
-  void MergeFrom(const MsgRecord& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
-      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  inline void SharedCtor();
-  inline void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(MsgRecord* other);
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "AndarBahar.MsgRecord";
-  }
-  protected:
-  explicit MsgRecord(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  private:
-  static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  public:
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-  private:
-  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
-    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_AndarBahar_2eproto);
-    return ::descriptor_table_AndarBahar_2eproto.file_level_metadata[kIndexInFileMessages];
-  }
-
-  public:
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kResultFieldNumber = 1,
-    kCardTypeFieldNumber = 2,
-  };
-  // int32 result = 1;
-  void clear_result();
-  ::PROTOBUF_NAMESPACE_ID::int32 result() const;
-  void set_result(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_result() const;
-  void _internal_set_result(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 card_type = 2;
-  void clear_card_type();
-  ::PROTOBUF_NAMESPACE_ID::int32 card_type() const;
-  void set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_card_type() const;
-  void _internal_set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:AndarBahar.MsgRecord)
- private:
-  class _Internal;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int32 result_;
-  ::PROTOBUF_NAMESPACE_ID::int32 card_type_;
-  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  friend struct ::TableStruct_AndarBahar_2eproto;
-};
-// -------------------------------------------------------------------
-
 class ABBetInfo PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:AndarBahar.ABBetInfo) */ {
  public:
@@ -359,7 +208,7 @@ class ABBetInfo PROTOBUF_FINAL :
                &_ABBetInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    1;
+    0;
 
   friend void swap(ABBetInfo& a, ABBetInfo& b) {
     a.Swap(&b);
@@ -506,7 +355,7 @@ class ABPlayerData PROTOBUF_FINAL :
                &_ABPlayerData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    2;
+    1;
 
   friend void swap(ABPlayerData& a, ABPlayerData& b) {
     a.Swap(&b);
@@ -695,7 +544,7 @@ class MsgSceneInfo PROTOBUF_FINAL :
                &_MsgSceneInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    3;
+    2;
 
   friend void swap(MsgSceneInfo& a, MsgSceneInfo& b) {
     a.Swap(&b);
@@ -767,7 +616,7 @@ class MsgSceneInfo PROTOBUF_FINAL :
 
   enum : int {
     kBetFieldNumber = 1,
-    kRecordFieldNumber = 2,
+    kRecordsFieldNumber = 2,
     kBetLimitFieldNumber = 3,
     kUpBankerListFieldNumber = 4,
     kMulFieldNumber = 9,
@@ -805,23 +654,27 @@ class MsgSceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_bet();
 
-  // repeated .AndarBahar.MsgRecord record = 2;
-  int record_size() const;
+  // repeated int32 records = 2;
+  int records_size() const;
   private:
-  int _internal_record_size() const;
+  int _internal_records_size() const;
   public:
-  void clear_record();
-  ::AndarBahar::MsgRecord* mutable_record(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::AndarBahar::MsgRecord >*
-      mutable_record();
+  void clear_records();
   private:
-  const ::AndarBahar::MsgRecord& _internal_record(int index) const;
-  ::AndarBahar::MsgRecord* _internal_add_record();
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_records(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_records() const;
+  void _internal_add_records(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_records();
   public:
-  const ::AndarBahar::MsgRecord& record(int index) const;
-  ::AndarBahar::MsgRecord* add_record();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::AndarBahar::MsgRecord >&
-      record() const;
+  ::PROTOBUF_NAMESPACE_ID::int32 records(int index) const;
+  void set_records(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_records(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      records() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_records();
 
   // repeated int32 bet_limit = 3;
   int bet_limit_size() const;
@@ -889,48 +742,48 @@ class MsgSceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_mul();
 
-  // repeated uint32 red_cards = 20;
+  // repeated int32 red_cards = 20;
   int red_cards_size() const;
   private:
   int _internal_red_cards_size() const;
   public:
   void clear_red_cards();
   private:
-  ::PROTOBUF_NAMESPACE_ID::uint32 _internal_red_cards(int index) const;
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::uint32 >&
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_red_cards(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
       _internal_red_cards() const;
-  void _internal_add_red_cards(::PROTOBUF_NAMESPACE_ID::uint32 value);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::uint32 >*
+  void _internal_add_red_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       _internal_mutable_red_cards();
   public:
-  ::PROTOBUF_NAMESPACE_ID::uint32 red_cards(int index) const;
-  void set_red_cards(int index, ::PROTOBUF_NAMESPACE_ID::uint32 value);
-  void add_red_cards(::PROTOBUF_NAMESPACE_ID::uint32 value);
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::uint32 >&
+  ::PROTOBUF_NAMESPACE_ID::int32 red_cards(int index) const;
+  void set_red_cards(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_red_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
       red_cards() const;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::uint32 >*
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_red_cards();
 
-  // repeated uint32 blue_cards = 21;
+  // repeated int32 blue_cards = 21;
   int blue_cards_size() const;
   private:
   int _internal_blue_cards_size() const;
   public:
   void clear_blue_cards();
   private:
-  ::PROTOBUF_NAMESPACE_ID::uint32 _internal_blue_cards(int index) const;
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::uint32 >&
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_blue_cards(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
       _internal_blue_cards() const;
-  void _internal_add_blue_cards(::PROTOBUF_NAMESPACE_ID::uint32 value);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::uint32 >*
+  void _internal_add_blue_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       _internal_mutable_blue_cards();
   public:
-  ::PROTOBUF_NAMESPACE_ID::uint32 blue_cards(int index) const;
-  void set_blue_cards(int index, ::PROTOBUF_NAMESPACE_ID::uint32 value);
-  void add_blue_cards(::PROTOBUF_NAMESPACE_ID::uint32 value);
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::uint32 >&
+  ::PROTOBUF_NAMESPACE_ID::int32 blue_cards(int index) const;
+  void set_blue_cards(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_blue_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
       blue_cards() const;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::uint32 >*
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_blue_cards();
 
   // repeated .AndarBahar.ABPlayerData player_list = 22;
@@ -1032,16 +885,17 @@ class MsgSceneInfo PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > bet_;
   mutable std::atomic<int> _bet_cached_byte_size_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::AndarBahar::MsgRecord > record_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > records_;
+  mutable std::atomic<int> _records_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > bet_limit_;
   mutable std::atomic<int> _bet_limit_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > up_banker_list_;
   mutable std::atomic<int> _up_banker_list_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > mul_;
   mutable std::atomic<int> _mul_cached_byte_size_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::uint32 > red_cards_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > red_cards_;
   mutable std::atomic<int> _red_cards_cached_byte_size_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::uint32 > blue_cards_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > blue_cards_;
   mutable std::atomic<int> _blue_cards_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::AndarBahar::ABPlayerData > player_list_;
   ::PROTOBUF_NAMESPACE_ID::int32 player_limit_;
@@ -1098,7 +952,7 @@ class MsgStartGameResp PROTOBUF_FINAL :
                &_MsgStartGameResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    4;
+    3;
 
   friend void swap(MsgStartGameResp& a, MsgStartGameResp& b) {
     a.Swap(&b);
@@ -1256,7 +1110,7 @@ class MsgBet PROTOBUF_FINAL :
                &_MsgBet_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    5;
+    4;
 
   friend void swap(MsgBet& a, MsgBet& b) {
     a.Swap(&b);
@@ -1327,16 +1181,16 @@ class MsgBet PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kIndexFieldNumber = 1,
+    kBetFieldNumber = 1,
     kAreaFieldNumber = 2,
   };
-  // int32 index = 1;
-  void clear_index();
-  ::PROTOBUF_NAMESPACE_ID::int32 index() const;
-  void set_index(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // int32 bet = 1;
+  void clear_bet();
+  ::PROTOBUF_NAMESPACE_ID::int32 bet() const;
+  void set_bet(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_index() const;
-  void _internal_set_index(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_bet() const;
+  void _internal_set_bet(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 area = 2;
@@ -1355,7 +1209,7 @@ class MsgBet PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int32 index_;
+  ::PROTOBUF_NAMESPACE_ID::int32 bet_;
   ::PROTOBUF_NAMESPACE_ID::int32 area_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_AndarBahar_2eproto;
@@ -1403,7 +1257,7 @@ class MsgBetResp PROTOBUF_FINAL :
                &_MsgBetResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    6;
+    5;
 
   friend void swap(MsgBetResp& a, MsgBetResp& b) {
     a.Swap(&b);
@@ -1570,7 +1424,7 @@ class MsgSendCardResp PROTOBUF_FINAL :
                &_MsgSendCardResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    7;
+    6;
 
   friend void swap(MsgSendCardResp& a, MsgSendCardResp& b) {
     a.Swap(&b);
@@ -1728,7 +1582,7 @@ class MsgOpBanker PROTOBUF_FINAL :
                &_MsgOpBanker_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    7;
 
   friend void swap(MsgOpBanker& a, MsgOpBanker& b) {
     a.Swap(&b);
@@ -1864,7 +1718,7 @@ class MsgOpBankerResp PROTOBUF_FINAL :
                &_MsgOpBankerResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    8;
 
   friend void swap(MsgOpBankerResp& a, MsgOpBankerResp& b) {
     a.Swap(&b);
@@ -2022,7 +1876,7 @@ class MsgWinMsg PROTOBUF_FINAL :
                &_MsgWinMsg_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    9;
 
   friend void swap(MsgWinMsg& a, MsgWinMsg& b) {
     a.Swap(&b);
@@ -2169,7 +2023,7 @@ class MsgResult PROTOBUF_FINAL :
                &_MsgResult_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    10;
 
   friend void swap(MsgResult& a, MsgResult& b) {
     a.Swap(&b);
@@ -2291,50 +2145,6 @@ class MsgResult PROTOBUF_FINAL :
   #pragma GCC diagnostic push
   #pragma GCC diagnostic ignored "-Wstrict-aliasing"
 #endif  // __GNUC__
-// MsgRecord
-
-// int32 result = 1;
-inline void MsgRecord::clear_result() {
-  result_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgRecord::_internal_result() const {
-  return result_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgRecord::result() const {
-  // @@protoc_insertion_point(field_get:AndarBahar.MsgRecord.result)
-  return _internal_result();
-}
-inline void MsgRecord::_internal_set_result(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  result_ = value;
-}
-inline void MsgRecord::set_result(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_result(value);
-  // @@protoc_insertion_point(field_set:AndarBahar.MsgRecord.result)
-}
-
-// int32 card_type = 2;
-inline void MsgRecord::clear_card_type() {
-  card_type_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgRecord::_internal_card_type() const {
-  return card_type_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgRecord::card_type() const {
-  // @@protoc_insertion_point(field_get:AndarBahar.MsgRecord.card_type)
-  return _internal_card_type();
-}
-inline void MsgRecord::_internal_set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  card_type_ = value;
-}
-inline void MsgRecord::set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_card_type(value);
-  // @@protoc_insertion_point(field_set:AndarBahar.MsgRecord.card_type)
-}
-
-// -------------------------------------------------------------------
-
 // ABBetInfo
 
 // int64 bet = 1;
@@ -2551,43 +2361,51 @@ MsgSceneInfo::mutable_bet() {
   return _internal_mutable_bet();
 }
 
-// repeated .AndarBahar.MsgRecord record = 2;
-inline int MsgSceneInfo::_internal_record_size() const {
-  return record_.size();
+// repeated int32 records = 2;
+inline int MsgSceneInfo::_internal_records_size() const {
+  return records_.size();
 }
-inline int MsgSceneInfo::record_size() const {
-  return _internal_record_size();
+inline int MsgSceneInfo::records_size() const {
+  return _internal_records_size();
 }
-inline void MsgSceneInfo::clear_record() {
-  record_.Clear();
+inline void MsgSceneInfo::clear_records() {
+  records_.Clear();
 }
-inline ::AndarBahar::MsgRecord* MsgSceneInfo::mutable_record(int index) {
-  // @@protoc_insertion_point(field_mutable:AndarBahar.MsgSceneInfo.record)
-  return record_.Mutable(index);
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::_internal_records(int index) const {
+  return records_.Get(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::AndarBahar::MsgRecord >*
-MsgSceneInfo::mutable_record() {
-  // @@protoc_insertion_point(field_mutable_list:AndarBahar.MsgSceneInfo.record)
-  return &record_;
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::records(int index) const {
+  // @@protoc_insertion_point(field_get:AndarBahar.MsgSceneInfo.records)
+  return _internal_records(index);
 }
-inline const ::AndarBahar::MsgRecord& MsgSceneInfo::_internal_record(int index) const {
-  return record_.Get(index);
+inline void MsgSceneInfo::set_records(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  records_.Set(index, value);
+  // @@protoc_insertion_point(field_set:AndarBahar.MsgSceneInfo.records)
 }
-inline const ::AndarBahar::MsgRecord& MsgSceneInfo::record(int index) const {
-  // @@protoc_insertion_point(field_get:AndarBahar.MsgSceneInfo.record)
-  return _internal_record(index);
+inline void MsgSceneInfo::_internal_add_records(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  records_.Add(value);
 }
-inline ::AndarBahar::MsgRecord* MsgSceneInfo::_internal_add_record() {
-  return record_.Add();
+inline void MsgSceneInfo::add_records(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_records(value);
+  // @@protoc_insertion_point(field_add:AndarBahar.MsgSceneInfo.records)
 }
-inline ::AndarBahar::MsgRecord* MsgSceneInfo::add_record() {
-  // @@protoc_insertion_point(field_add:AndarBahar.MsgSceneInfo.record)
-  return _internal_add_record();
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+MsgSceneInfo::_internal_records() const {
+  return records_;
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::AndarBahar::MsgRecord >&
-MsgSceneInfo::record() const {
-  // @@protoc_insertion_point(field_list:AndarBahar.MsgSceneInfo.record)
-  return record_;
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+MsgSceneInfo::records() const {
+  // @@protoc_insertion_point(field_list:AndarBahar.MsgSceneInfo.records)
+  return _internal_records();
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+MsgSceneInfo::_internal_mutable_records() {
+  return &records_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+MsgSceneInfo::mutable_records() {
+  // @@protoc_insertion_point(field_mutable_list:AndarBahar.MsgSceneInfo.records)
+  return _internal_mutable_records();
 }
 
 // repeated int32 bet_limit = 3;
@@ -2891,7 +2709,7 @@ inline void MsgSceneInfo::set_base_card(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:AndarBahar.MsgSceneInfo.base_card)
 }
 
-// repeated uint32 red_cards = 20;
+// repeated int32 red_cards = 20;
 inline int MsgSceneInfo::_internal_red_cards_size() const {
   return red_cards_.size();
 }
@@ -2901,44 +2719,44 @@ inline int MsgSceneInfo::red_cards_size() const {
 inline void MsgSceneInfo::clear_red_cards() {
   red_cards_.Clear();
 }
-inline ::PROTOBUF_NAMESPACE_ID::uint32 MsgSceneInfo::_internal_red_cards(int index) const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::_internal_red_cards(int index) const {
   return red_cards_.Get(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::uint32 MsgSceneInfo::red_cards(int index) const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::red_cards(int index) const {
   // @@protoc_insertion_point(field_get:AndarBahar.MsgSceneInfo.red_cards)
   return _internal_red_cards(index);
 }
-inline void MsgSceneInfo::set_red_cards(int index, ::PROTOBUF_NAMESPACE_ID::uint32 value) {
+inline void MsgSceneInfo::set_red_cards(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   red_cards_.Set(index, value);
   // @@protoc_insertion_point(field_set:AndarBahar.MsgSceneInfo.red_cards)
 }
-inline void MsgSceneInfo::_internal_add_red_cards(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+inline void MsgSceneInfo::_internal_add_red_cards(::PROTOBUF_NAMESPACE_ID::int32 value) {
   red_cards_.Add(value);
 }
-inline void MsgSceneInfo::add_red_cards(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+inline void MsgSceneInfo::add_red_cards(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_red_cards(value);
   // @@protoc_insertion_point(field_add:AndarBahar.MsgSceneInfo.red_cards)
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::uint32 >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 MsgSceneInfo::_internal_red_cards() const {
   return red_cards_;
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::uint32 >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 MsgSceneInfo::red_cards() const {
   // @@protoc_insertion_point(field_list:AndarBahar.MsgSceneInfo.red_cards)
   return _internal_red_cards();
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::uint32 >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 MsgSceneInfo::_internal_mutable_red_cards() {
   return &red_cards_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::uint32 >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 MsgSceneInfo::mutable_red_cards() {
   // @@protoc_insertion_point(field_mutable_list:AndarBahar.MsgSceneInfo.red_cards)
   return _internal_mutable_red_cards();
 }
 
-// repeated uint32 blue_cards = 21;
+// repeated int32 blue_cards = 21;
 inline int MsgSceneInfo::_internal_blue_cards_size() const {
   return blue_cards_.size();
 }
@@ -2948,38 +2766,38 @@ inline int MsgSceneInfo::blue_cards_size() const {
 inline void MsgSceneInfo::clear_blue_cards() {
   blue_cards_.Clear();
 }
-inline ::PROTOBUF_NAMESPACE_ID::uint32 MsgSceneInfo::_internal_blue_cards(int index) const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::_internal_blue_cards(int index) const {
   return blue_cards_.Get(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::uint32 MsgSceneInfo::blue_cards(int index) const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::blue_cards(int index) const {
   // @@protoc_insertion_point(field_get:AndarBahar.MsgSceneInfo.blue_cards)
   return _internal_blue_cards(index);
 }
-inline void MsgSceneInfo::set_blue_cards(int index, ::PROTOBUF_NAMESPACE_ID::uint32 value) {
+inline void MsgSceneInfo::set_blue_cards(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   blue_cards_.Set(index, value);
   // @@protoc_insertion_point(field_set:AndarBahar.MsgSceneInfo.blue_cards)
 }
-inline void MsgSceneInfo::_internal_add_blue_cards(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+inline void MsgSceneInfo::_internal_add_blue_cards(::PROTOBUF_NAMESPACE_ID::int32 value) {
   blue_cards_.Add(value);
 }
-inline void MsgSceneInfo::add_blue_cards(::PROTOBUF_NAMESPACE_ID::uint32 value) {
+inline void MsgSceneInfo::add_blue_cards(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_blue_cards(value);
   // @@protoc_insertion_point(field_add:AndarBahar.MsgSceneInfo.blue_cards)
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::uint32 >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 MsgSceneInfo::_internal_blue_cards() const {
   return blue_cards_;
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::uint32 >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 MsgSceneInfo::blue_cards() const {
   // @@protoc_insertion_point(field_list:AndarBahar.MsgSceneInfo.blue_cards)
   return _internal_blue_cards();
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::uint32 >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 MsgSceneInfo::_internal_mutable_blue_cards() {
   return &blue_cards_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::uint32 >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 MsgSceneInfo::mutable_blue_cards() {
   // @@protoc_insertion_point(field_mutable_list:AndarBahar.MsgSceneInfo.blue_cards)
   return _internal_mutable_blue_cards();
@@ -3092,24 +2910,24 @@ inline void MsgStartGameResp::set_base_card(::PROTOBUF_NAMESPACE_ID::int32 value
 
 // MsgBet
 
-// int32 index = 1;
-inline void MsgBet::clear_index() {
-  index_ = 0;
+// int32 bet = 1;
+inline void MsgBet::clear_bet() {
+  bet_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBet::_internal_index() const {
-  return index_;
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBet::_internal_bet() const {
+  return bet_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBet::index() const {
-  // @@protoc_insertion_point(field_get:AndarBahar.MsgBet.index)
-  return _internal_index();
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBet::bet() const {
+  // @@protoc_insertion_point(field_get:AndarBahar.MsgBet.bet)
+  return _internal_bet();
 }
-inline void MsgBet::_internal_set_index(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgBet::_internal_set_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
-  index_ = value;
+  bet_ = value;
 }
-inline void MsgBet::set_index(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_index(value);
-  // @@protoc_insertion_point(field_set:AndarBahar.MsgBet.index)
+inline void MsgBet::set_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_bet(value);
+  // @@protoc_insertion_point(field_set:AndarBahar.MsgBet.bet)
 }
 
 // int32 area = 2;
@@ -3521,8 +3339,6 @@ MsgResult::win_msg() const {
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
-// -------------------------------------------------------------------
-
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

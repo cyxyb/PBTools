@@ -25,48 +25,45 @@ namespace AndarBahar {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch5Qcm90by9TdWJHYW1lL0FuZGFyQmFoYXIucHJvdG8SCkFuZGFyQmFoYXIi",
-            "LgoJTXNnUmVjb3JkEg4KBnJlc3VsdBgBIAEoBRIRCgljYXJkX3R5cGUYAiAB",
-            "KAUiKAoJQUJCZXRJbmZvEgsKA2JldBgBIAEoAxIOCgZzdGF0dXMYAiABKAUi",
-            "gQEKDEFCUGxheWVyRGF0YRIPCgd1c2VyX2lkGAEgASgFEhAKCHdpbl9nb2xk",
-            "GAIgASgDEhIKCnRvdGFsX3BsYXkYAyABKAUSEAoId2luX3BsYXkYBCABKAUS",
-            "KAoJYmV0X2luZm9zGAUgAygLMhUuQW5kYXJCYWhhci5BQkJldEluZm8i5wIK",
-            "DE1zZ1NjZW5lSW5mbxILCgNiZXQYASADKAUSJQoGcmVjb3JkGAIgAygLMhUu",
-            "QW5kYXJCYWhhci5Nc2dSZWNvcmQSEQoJYmV0X2xpbWl0GAMgAygFEhYKDnVw",
-            "X2Jhbmtlcl9saXN0GAQgAygFEhQKDHBsYXllcl9saW1pdBgFIAEoBRIQCghi",
-            "ZXRfdGltZRgGIAEoBRIQCghvdXRfdGltZRgHIAEoBRINCgVzdGF0ZRgIIAEo",
-            "BRILCgNtdWwYCSADKAUSEQoJYmFua2VyX2lkGAogASgFEhIKCmJhbmtlcl9t",
-            "YXgYCyABKAUSEgoKYmFua2VyX251bRgMIAEoBRIRCgliYXNlX2NhcmQYDSAB",
-            "KAUSEQoJcmVkX2NhcmRzGBQgAygNEhIKCmJsdWVfY2FyZHMYFSADKA0SLQoL",
-            "cGxheWVyX2xpc3QYFiADKAsyGC5BbmRhckJhaGFyLkFCUGxheWVyRGF0YSJM",
-            "ChBNc2dTdGFydEdhbWVSZXNwEhEKCWJhbmtlcl9pZBgBIAEoBRISCgpiYW5r",
-            "ZXJfbnVtGAIgASgFEhEKCWJhc2VfY2FyZBgDIAEoBSIlCgZNc2dCZXQSDQoF",
-            "aW5kZXgYASABKAUSDAoEYXJlYRgCIAEoBSJYCgpNc2dCZXRSZXNwEg8KB3Vz",
-            "ZXJfaWQYASABKAUSEAoIY2hhaXJfaWQYAiABKAUSJwoIYmV0X2luZm8YAyAB",
-            "KAsyFS5BbmRhckJhaGFyLkFCQmV0SW5mbyI9Cg9Nc2dTZW5kQ2FyZFJlc3AS",
-            "DAoEY2FyZBgBIAEoBRIMCgRhcmVhGAIgASgFEg4KBmlzX2VuZBgDIAEoCCIe",
-            "CgtNc2dPcEJhbmtlchIPCgdvcF90eXBlGAEgASgFIkUKD01zZ09wQmFua2Vy",
-            "UmVzcBIPCgd1c2VyX2lkGAEgASgFEhAKCGNoYWlyX2lkGAIgASgFEg8KB29w",
-            "X3R5cGUYAyABKAUiKgoJTXNnV2luTXNnEhAKCGNoYWlyX2lkGAEgASgFEgsK",
-            "A3dpbhgCIAEoAyJGCglNc2dSZXN1bHQSEQoJd2luX2luZGV4GAEgASgFEiYK",
-            "B3dpbl9tc2cYAiADKAsyFS5BbmRhckJhaGFyLk1zZ1dpbk1zZypiCgpFR2Ft",
-            "ZVN0YXRlEgwKCEdTX1JlYWR5EAASDAoIR1NfU3RhcnQQARILCgdHU19CZXQx",
-            "EAISCwoHR1NfQmV0MhADEg8KC0dTX1NlbmRDYXJkEAQSDQoJR1NfUmVzdWx0",
-            "EAUqkgIKDUVNc2dJRFN1YkdhbWUSFQoRTXNnSURTdWJHYW1lX051bGwQABIU",
-            "ChBNc2dJRFN1YkdhbWVfQmV0EAESGAoUTXNnSURTdWJHYW1lX0JldFJlc3AQ",
-            "AhIZChVNc2dJRFN1YkdhbWVfT3BCYW5rZXIQAxIdChlNc2dJRFN1YkdhbWVf",
-            "T3BCYW5rZXJSZXNwEAQSHgoaTXNnSURTdWJHYW1lX0dhbWVTdGFydFJlc3AQ",
-            "BRIdChlNc2dJRFN1YkdhbWVfU2VuZENhcmRSZXNwEAYSHwobTXNnSURTdWJH",
-            "YW1lX0dhbWVSZXN1bHRSZXNwEAcSIAocTXNnSURTdWJHYW1lX05vdGlmeVN0",
-            "YXRlUmVzcBAIYgZwcm90bzM="));
+            "KAoJQUJCZXRJbmZvEgsKA2JldBgBIAEoAxIOCgZzdGF0dXMYAiABKAUigQEK",
+            "DEFCUGxheWVyRGF0YRIPCgd1c2VyX2lkGAEgASgFEhAKCHdpbl9nb2xkGAIg",
+            "ASgDEhIKCnRvdGFsX3BsYXkYAyABKAUSEAoId2luX3BsYXkYBCABKAUSKAoJ",
+            "YmV0X2luZm9zGAUgAygLMhUuQW5kYXJCYWhhci5BQkJldEluZm8i0QIKDE1z",
+            "Z1NjZW5lSW5mbxILCgNiZXQYASADKAUSDwoHcmVjb3JkcxgCIAMoBRIRCgli",
+            "ZXRfbGltaXQYAyADKAUSFgoOdXBfYmFua2VyX2xpc3QYBCADKAUSFAoMcGxh",
+            "eWVyX2xpbWl0GAUgASgFEhAKCGJldF90aW1lGAYgASgFEhAKCG91dF90aW1l",
+            "GAcgASgFEg0KBXN0YXRlGAggASgFEgsKA211bBgJIAMoBRIRCgliYW5rZXJf",
+            "aWQYCiABKAUSEgoKYmFua2VyX21heBgLIAEoBRISCgpiYW5rZXJfbnVtGAwg",
+            "ASgFEhEKCWJhc2VfY2FyZBgNIAEoBRIRCglyZWRfY2FyZHMYFCADKAUSEgoK",
+            "Ymx1ZV9jYXJkcxgVIAMoBRItCgtwbGF5ZXJfbGlzdBgWIAMoCzIYLkFuZGFy",
+            "QmFoYXIuQUJQbGF5ZXJEYXRhIkwKEE1zZ1N0YXJ0R2FtZVJlc3ASEQoJYmFu",
+            "a2VyX2lkGAEgASgFEhIKCmJhbmtlcl9udW0YAiABKAUSEQoJYmFzZV9jYXJk",
+            "GAMgASgFIiMKBk1zZ0JldBILCgNiZXQYASABKAUSDAoEYXJlYRgCIAEoBSJY",
+            "CgpNc2dCZXRSZXNwEg8KB3VzZXJfaWQYASABKAUSEAoIY2hhaXJfaWQYAiAB",
+            "KAUSJwoIYmV0X2luZm8YAyABKAsyFS5BbmRhckJhaGFyLkFCQmV0SW5mbyI9",
+            "Cg9Nc2dTZW5kQ2FyZFJlc3ASDAoEY2FyZBgBIAEoBRIMCgRhcmVhGAIgASgF",
+            "Eg4KBmlzX2VuZBgDIAEoCCIeCgtNc2dPcEJhbmtlchIPCgdvcF90eXBlGAEg",
+            "ASgFIkUKD01zZ09wQmFua2VyUmVzcBIPCgd1c2VyX2lkGAEgASgFEhAKCGNo",
+            "YWlyX2lkGAIgASgFEg8KB29wX3R5cGUYAyABKAUiKgoJTXNnV2luTXNnEhAK",
+            "CGNoYWlyX2lkGAEgASgFEgsKA3dpbhgCIAEoAyJGCglNc2dSZXN1bHQSEQoJ",
+            "d2luX2luZGV4GAEgASgFEiYKB3dpbl9tc2cYAiADKAsyFS5BbmRhckJhaGFy",
+            "Lk1zZ1dpbk1zZypiCgpFR2FtZVN0YXRlEgwKCEdTX1JlYWR5EAASDAoIR1Nf",
+            "U3RhcnQQARILCgdHU19CZXQxEAISCwoHR1NfQmV0MhADEg8KC0dTX1NlbmRD",
+            "YXJkEAQSDQoJR1NfUmVzdWx0EAUqkgIKDUVNc2dJRFN1YkdhbWUSFQoRTXNn",
+            "SURTdWJHYW1lX051bGwQABIUChBNc2dJRFN1YkdhbWVfQmV0EAESGAoUTXNn",
+            "SURTdWJHYW1lX0JldFJlc3AQAhIZChVNc2dJRFN1YkdhbWVfT3BCYW5rZXIQ",
+            "AxIdChlNc2dJRFN1YkdhbWVfT3BCYW5rZXJSZXNwEAQSHgoaTXNnSURTdWJH",
+            "YW1lX0dhbWVTdGFydFJlc3AQBRIdChlNc2dJRFN1YkdhbWVfU2VuZENhcmRS",
+            "ZXNwEAYSHwobTXNnSURTdWJHYW1lX0dhbWVSZXN1bHRSZXNwEAcSIAocTXNn",
+            "SURTdWJHYW1lX05vdGlmeVN0YXRlUmVzcBAIYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::AndarBahar.EGameState), typeof(global::AndarBahar.EMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgRecord), global::AndarBahar.MsgRecord.Parser, new[]{ "Result", "CardType" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.ABBetInfo), global::AndarBahar.ABBetInfo.Parser, new[]{ "Bet", "Status" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.ABPlayerData), global::AndarBahar.ABPlayerData.Parser, new[]{ "UserId", "WinGold", "TotalPlay", "WinPlay", "BetInfos" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgSceneInfo), global::AndarBahar.MsgSceneInfo.Parser, new[]{ "Bet", "Record", "BetLimit", "UpBankerList", "PlayerLimit", "BetTime", "OutTime", "State", "Mul", "BankerId", "BankerMax", "BankerNum", "BaseCard", "RedCards", "BlueCards", "PlayerList" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgSceneInfo), global::AndarBahar.MsgSceneInfo.Parser, new[]{ "Bet", "Records", "BetLimit", "UpBankerList", "PlayerLimit", "BetTime", "OutTime", "State", "Mul", "BankerId", "BankerMax", "BankerNum", "BaseCard", "RedCards", "BlueCards", "PlayerList" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgStartGameResp), global::AndarBahar.MsgStartGameResp.Parser, new[]{ "BankerId", "BankerNum", "BaseCard" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgBet), global::AndarBahar.MsgBet.Parser, new[]{ "Index", "Area" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgBet), global::AndarBahar.MsgBet.Parser, new[]{ "Bet", "Area" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgBetResp), global::AndarBahar.MsgBetResp.Parser, new[]{ "UserId", "ChairId", "BetInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgSendCardResp), global::AndarBahar.MsgSendCardResp.Parser, new[]{ "Card", "Area", "IsEnd" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgOpBanker), global::AndarBahar.MsgOpBanker.Parser, new[]{ "OpType" }, null, null, null, null),
@@ -145,223 +142,6 @@ namespace AndarBahar {
   #endregion
 
   #region Messages
-  /// <summary>
-  ///开牌记录
-  /// </summary>
-  public sealed partial class MsgRecord : pb::IMessage<MsgRecord>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<MsgRecord> _parser = new pb::MessageParser<MsgRecord>(() => new MsgRecord());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<MsgRecord> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[0]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgRecord() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgRecord(MsgRecord other) : this() {
-      result_ = other.result_;
-      cardType_ = other.cardType_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgRecord Clone() {
-      return new MsgRecord(this);
-    }
-
-    /// <summary>Field number for the "result" field.</summary>
-    public const int ResultFieldNumber = 1;
-    private int result_;
-    /// <summary>
-    ///开牌结果(0:红 1:黑 2:红和幸运一击 3:黑和幸运一击)
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Result {
-      get { return result_; }
-      set {
-        result_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "card_type" field.</summary>
-    public const int CardTypeFieldNumber = 2;
-    private int cardType_;
-    /// <summary>
-    ///赢牌类型
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CardType {
-      get { return cardType_; }
-      set {
-        cardType_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as MsgRecord);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(MsgRecord other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Result != other.Result) return false;
-      if (CardType != other.CardType) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Result != 0) hash ^= Result.GetHashCode();
-      if (CardType != 0) hash ^= CardType.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (Result != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Result);
-      }
-      if (CardType != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(CardType);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Result != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Result);
-      }
-      if (CardType != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(CardType);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (Result != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Result);
-      }
-      if (CardType != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CardType);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(MsgRecord other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Result != 0) {
-        Result = other.Result;
-      }
-      if (other.CardType != 0) {
-        CardType = other.CardType;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            Result = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            CardType = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            Result = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            CardType = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
   public sealed partial class ABBetInfo : pb::IMessage<ABBetInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -374,7 +154,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[1]; }
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -588,7 +368,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[2]; }
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -908,7 +688,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[3]; }
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -926,7 +706,7 @@ namespace AndarBahar {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public MsgSceneInfo(MsgSceneInfo other) : this() {
       bet_ = other.bet_.Clone();
-      record_ = other.record_.Clone();
+      records_ = other.records_.Clone();
       betLimit_ = other.betLimit_.Clone();
       upBankerList_ = other.upBankerList_.Clone();
       playerLimit_ = other.playerLimit_;
@@ -962,17 +742,17 @@ namespace AndarBahar {
       get { return bet_; }
     }
 
-    /// <summary>Field number for the "record" field.</summary>
-    public const int RecordFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::AndarBahar.MsgRecord> _repeated_record_codec
-        = pb::FieldCodec.ForMessage(18, global::AndarBahar.MsgRecord.Parser);
-    private readonly pbc::RepeatedField<global::AndarBahar.MsgRecord> record_ = new pbc::RepeatedField<global::AndarBahar.MsgRecord>();
+    /// <summary>Field number for the "records" field.</summary>
+    public const int RecordsFieldNumber = 2;
+    private static readonly pb::FieldCodec<int> _repeated_records_codec
+        = pb::FieldCodec.ForInt32(18);
+    private readonly pbc::RepeatedField<int> records_ = new pbc::RepeatedField<int>();
     /// <summary>
-    ///开牌记录
+    ///开牌结果(1:红 2:黑)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::AndarBahar.MsgRecord> Record {
-      get { return record_; }
+    public pbc::RepeatedField<int> Records {
+      get { return records_; }
     }
 
     /// <summary>Field number for the "bet_limit" field.</summary>
@@ -1128,27 +908,27 @@ namespace AndarBahar {
 
     /// <summary>Field number for the "red_cards" field.</summary>
     public const int RedCardsFieldNumber = 20;
-    private static readonly pb::FieldCodec<uint> _repeated_redCards_codec
-        = pb::FieldCodec.ForUInt32(162);
-    private readonly pbc::RepeatedField<uint> redCards_ = new pbc::RepeatedField<uint>();
+    private static readonly pb::FieldCodec<int> _repeated_redCards_codec
+        = pb::FieldCodec.ForInt32(162);
+    private readonly pbc::RepeatedField<int> redCards_ = new pbc::RepeatedField<int>();
     /// <summary>
     ///红方牌列表
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<uint> RedCards {
+    public pbc::RepeatedField<int> RedCards {
       get { return redCards_; }
     }
 
     /// <summary>Field number for the "blue_cards" field.</summary>
     public const int BlueCardsFieldNumber = 21;
-    private static readonly pb::FieldCodec<uint> _repeated_blueCards_codec
-        = pb::FieldCodec.ForUInt32(170);
-    private readonly pbc::RepeatedField<uint> blueCards_ = new pbc::RepeatedField<uint>();
+    private static readonly pb::FieldCodec<int> _repeated_blueCards_codec
+        = pb::FieldCodec.ForInt32(170);
+    private readonly pbc::RepeatedField<int> blueCards_ = new pbc::RepeatedField<int>();
     /// <summary>
     ///蓝方牌列表
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<uint> BlueCards {
+    public pbc::RepeatedField<int> BlueCards {
       get { return blueCards_; }
     }
 
@@ -1179,7 +959,7 @@ namespace AndarBahar {
         return true;
       }
       if(!bet_.Equals(other.bet_)) return false;
-      if(!record_.Equals(other.record_)) return false;
+      if(!records_.Equals(other.records_)) return false;
       if(!betLimit_.Equals(other.betLimit_)) return false;
       if(!upBankerList_.Equals(other.upBankerList_)) return false;
       if (PlayerLimit != other.PlayerLimit) return false;
@@ -1201,7 +981,7 @@ namespace AndarBahar {
     public override int GetHashCode() {
       int hash = 1;
       hash ^= bet_.GetHashCode();
-      hash ^= record_.GetHashCode();
+      hash ^= records_.GetHashCode();
       hash ^= betLimit_.GetHashCode();
       hash ^= upBankerList_.GetHashCode();
       if (PlayerLimit != 0) hash ^= PlayerLimit.GetHashCode();
@@ -1233,7 +1013,7 @@ namespace AndarBahar {
       output.WriteRawMessage(this);
     #else
       bet_.WriteTo(output, _repeated_bet_codec);
-      record_.WriteTo(output, _repeated_record_codec);
+      records_.WriteTo(output, _repeated_records_codec);
       betLimit_.WriteTo(output, _repeated_betLimit_codec);
       upBankerList_.WriteTo(output, _repeated_upBankerList_codec);
       if (PlayerLimit != 0) {
@@ -1282,7 +1062,7 @@ namespace AndarBahar {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       bet_.WriteTo(ref output, _repeated_bet_codec);
-      record_.WriteTo(ref output, _repeated_record_codec);
+      records_.WriteTo(ref output, _repeated_records_codec);
       betLimit_.WriteTo(ref output, _repeated_betLimit_codec);
       upBankerList_.WriteTo(ref output, _repeated_upBankerList_codec);
       if (PlayerLimit != 0) {
@@ -1331,7 +1111,7 @@ namespace AndarBahar {
     public int CalculateSize() {
       int size = 0;
       size += bet_.CalculateSize(_repeated_bet_codec);
-      size += record_.CalculateSize(_repeated_record_codec);
+      size += records_.CalculateSize(_repeated_records_codec);
       size += betLimit_.CalculateSize(_repeated_betLimit_codec);
       size += upBankerList_.CalculateSize(_repeated_upBankerList_codec);
       if (PlayerLimit != 0) {
@@ -1374,7 +1154,7 @@ namespace AndarBahar {
         return;
       }
       bet_.Add(other.bet_);
-      record_.Add(other.record_);
+      records_.Add(other.records_);
       betLimit_.Add(other.betLimit_);
       upBankerList_.Add(other.upBankerList_);
       if (other.PlayerLimit != 0) {
@@ -1424,8 +1204,9 @@ namespace AndarBahar {
             bet_.AddEntriesFrom(input, _repeated_bet_codec);
             break;
           }
-          case 18: {
-            record_.AddEntriesFrom(input, _repeated_record_codec);
+          case 18:
+          case 16: {
+            records_.AddEntriesFrom(input, _repeated_records_codec);
             break;
           }
           case 26:
@@ -1508,8 +1289,9 @@ namespace AndarBahar {
             bet_.AddEntriesFrom(ref input, _repeated_bet_codec);
             break;
           }
-          case 18: {
-            record_.AddEntriesFrom(ref input, _repeated_record_codec);
+          case 18:
+          case 16: {
+            records_.AddEntriesFrom(ref input, _repeated_records_codec);
             break;
           }
           case 26:
@@ -1595,7 +1377,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[4]; }
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1851,7 +1633,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[5]; }
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1868,7 +1650,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public MsgBet(MsgBet other) : this() {
-      index_ = other.index_;
+      bet_ = other.bet_;
       area_ = other.area_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -1878,17 +1660,17 @@ namespace AndarBahar {
       return new MsgBet(this);
     }
 
-    /// <summary>Field number for the "index" field.</summary>
-    public const int IndexFieldNumber = 1;
-    private int index_;
+    /// <summary>Field number for the "bet" field.</summary>
+    public const int BetFieldNumber = 1;
+    private int bet_;
     /// <summary>
-    ///押注下标
+    ///押注金币
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Index {
-      get { return index_; }
+    public int Bet {
+      get { return bet_; }
       set {
-        index_ = value;
+        bet_ = value;
       }
     }
 
@@ -1919,7 +1701,7 @@ namespace AndarBahar {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (Index != other.Index) return false;
+      if (Bet != other.Bet) return false;
       if (Area != other.Area) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1927,7 +1709,7 @@ namespace AndarBahar {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Index != 0) hash ^= Index.GetHashCode();
+      if (Bet != 0) hash ^= Bet.GetHashCode();
       if (Area != 0) hash ^= Area.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1945,9 +1727,9 @@ namespace AndarBahar {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Index != 0) {
+      if (Bet != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Index);
+        output.WriteInt32(Bet);
       }
       if (Area != 0) {
         output.WriteRawTag(16);
@@ -1962,9 +1744,9 @@ namespace AndarBahar {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Index != 0) {
+      if (Bet != 0) {
         output.WriteRawTag(8);
-        output.WriteInt32(Index);
+        output.WriteInt32(Bet);
       }
       if (Area != 0) {
         output.WriteRawTag(16);
@@ -1979,8 +1761,8 @@ namespace AndarBahar {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Index != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Index);
+      if (Bet != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Bet);
       }
       if (Area != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Area);
@@ -1996,8 +1778,8 @@ namespace AndarBahar {
       if (other == null) {
         return;
       }
-      if (other.Index != 0) {
-        Index = other.Index;
+      if (other.Bet != 0) {
+        Bet = other.Bet;
       }
       if (other.Area != 0) {
         Area = other.Area;
@@ -2017,7 +1799,7 @@ namespace AndarBahar {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Index = input.ReadInt32();
+            Bet = input.ReadInt32();
             break;
           }
           case 16: {
@@ -2039,7 +1821,7 @@ namespace AndarBahar {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Index = input.ReadInt32();
+            Bet = input.ReadInt32();
             break;
           }
           case 16: {
@@ -2068,7 +1850,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[6]; }
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2330,7 +2112,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[7]; }
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2586,7 +2368,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[8]; }
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2764,7 +2546,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[9]; }
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3020,7 +2802,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[10]; }
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3237,7 +3019,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[11]; }
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
