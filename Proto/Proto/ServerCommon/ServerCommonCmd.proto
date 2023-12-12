@@ -244,4 +244,5 @@ enum EGameBattleTypeID
 	GAME_HUNDRED						= 1;	//百人类型
 	GAME_CREATE							= 2;	//创建房间
 	GAME_BATTLE							= 3;	//对战型
+	GAME_BANKER_HUNDERD					= 4;	//上庄百人类型
 }

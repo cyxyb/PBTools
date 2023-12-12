@@ -1,0 +1,130 @@
+syntax = "proto3";
+
+package AndarBahar;
+
+enum EGameState
+{
+	GS_Ready	 = 0;	//准备
+	GS_Start	 = 1;	//开始游戏
+	GS_Bet1		 = 2;	//下注1
+	GS_Bet2		 = 3;	//下注2
+	GS_SendCard  = 5;	//发牌2
+	GS_Result	 = 6;	//结算
+}
+
+enum EMsgIDSubGame
+{
+	MsgIDSubGame_Null					= 0;
+	MsgIDSubGame_Bet					= 1;	//玩家下注(MsgBet)
+	MsgIDSubGame_BetResp				= 2;	//玩家下注返回(MsgBetResp)
+	MsgIDSubGame_OpBanker				= 3;	//玩家操作上下庄(MsgOpBanker)
+	MsgIDSubGame_OpBankerResp			= 4;	//玩家操作上下庄(MsgOpBankerResp)
+	MsgIDSubGame_GameStartResp			= 5;	//游戏结果(MsgStartGameResp)
+	MsgIDSubGame_SendCardResp			= 6;	//游戏结果(MsgSendCardResp)
+	MsgIDSubGame_GameResultResp			= 7;	//游戏结果(MsgResult)
+	MsgIDSubGame_NotifyStateResp		= 8;	//游戏状态(MsgCommonN32)
+}
+
+//开牌记录
+message MsgRecord
+{
+	int32	result			= 1;	//开牌结果(0:红 1:黑 2:红和幸运一击 3:黑和幸运一击)
+	int32	card_type		= 2;	//赢牌类型
+}
+
+message ABBetInfo
+{
+	int64				bet				= 1;	//下注金额  
+	int32				status			= 2;	//下注状态 0未操作 1跳过 2 红 3 蓝	
+}
+
+message ABPlayerData
+{
+	int32				user_id			= 1;
+	int64				win_gold		= 2;	// 总赢
+	int32				total_play		= 3;	// 总玩次数
+	int32				win_play		= 4;	// 赢次数
+	repeated ABBetInfo	bet_infos		= 5;	// 下注状态
+}
+
+//场景消息
+message MsgSceneInfo
+{
+	repeated int32  	bet     		= 1;	//固定押注配置
+	repeated MsgRecord	record			= 2;	//开牌记录
+	repeated int32		bet_limit		= 3;	//个人区域限制
+	repeated int32		up_banker_list	= 4;	//上庄申列表
+	int32				player_limit	= 5;	//个人下注限制
+	int32				bet_time		= 6;	//下注总时间
+	int32				out_time		= 7;	//剩余时间
+	int32				state			= 8;	//当前状态
+	repeated int32		mul				= 9;	//倍数(红、黑、)
+	int32				banker_id		= 10;	//庄ID  -1=系统庄
+	int32				banker_max		= 11;	//当庄最大轮数 
+	int32				banker_num		= 12;	//已经上庄轮数 包涵本局
+	int32				base_card		= 13;	//底牌
+
+	repeated uint32		red_cards		= 20;	//红方牌列表
+	repeated uint32		blue_cards		= 21;	//蓝方牌列表
+	repeated ABPlayerData player_list	= 22;	//玩家状态	
+}
+
+//开始游戏
+message MsgStartGameResp
+{
+	int32				banker_id		= 1;	//庄ID  -1=系统庄
+	int32				banker_num		= 2;	//已经上庄轮数 包涵本局
+	int32				base_card		= 3;	//底牌
+}
+
+//玩家下注
+message MsgBet
+{
+	int32				index			= 1;	//押注下标
+	int32				area			= 2;	//押注区域(0:跳过 1:红 2:黑 )
+}
+
+//玩家下注返回
+message MsgBetResp
+{
+	int32				user_id			= 1;	//玩家id
+	int32				chair_id		= 2;	//玩家椅子号
+	ABBetInfo			bet_info		= 3;	//玩家下注信息
+}         
+
+message MsgSendCardResp
+{
+	int32				card			= 1;	//牌
+	int32				area			= 2;	//发牌区域
+	bool				is_end			= 3;	//是否结束 
+
+}
+
+//操作庄
+message MsgOpBanker
+{
+	int32				op_type			= 1;	// 1 = 上庄 2 = 下庄
+}
+
+//操作庄
+message MsgOpBankerResp
+{
+	int32				user_id			= 1;	//玩家id
+	int32				chair_id		= 2;	//玩家椅子号
+	int32				op_type			= 3;	// 1 = 上庄 2 = 下庄
+}
+
+
+//玩家输赢信息                              
+message MsgWinMsg                           
+{                                           
+	int32				chair_id		= 1;	//玩家椅子号
+	int64				win				= 2;	//玩家输赢信息
+}                                           
+
+//游戏结果                                  
+message MsgResult                           
+{                                           
+	int32				win_index		= 1;	//开牌结果(1:红 2:蓝)赢
+	repeated MsgWinMsg 	win_msg			= 2;	//玩家输赢信息
+}                                           

@@ -185,9 +185,10 @@ const char descriptor_table_protodef_ServerCommonCmd_2eproto[] PROTOBUF_SECTION_
   "\017\022\022\n\rCHAT2DB_Login\020\271\027\022\026\n\021DB2CHAT_LoginRe"
   "sp\020\272\027\022\033\n\026CHAT2DB_SendTrumpetMsg\020\273\027\022\037\n\032DB"
   "2CHAT_SendTrumpetMsgResp\020\274\027\022 \n\033App2DB_Up"
-  "datePhoneCodeState\020\241\037*X\n\021EGameBattleType"
+  "datePhoneCodeState\020\241\037*q\n\021EGameBattleType"
   "ID\022\017\n\013GAME_NORMAL\020\000\022\020\n\014GAME_HUNDRED\020\001\022\017\n"
-  "\013GAME_CREATE\020\002\022\017\n\013GAME_BATTLE\020\003b\006proto3"
+  "\013GAME_CREATE\020\002\022\017\n\013GAME_BATTLE\020\003\022\027\n\023GAME_"
+  "BANKER_HUNDERD\020\004b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_ServerCommonCmd_2eproto_deps[1] = {
 };
@@ -195,7 +196,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Ser
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ServerCommonCmd_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ServerCommonCmd_2eproto = {
-  false, false, descriptor_table_protodef_ServerCommonCmd_2eproto, "ServerCommonCmd.proto", 6639,
+  false, false, descriptor_table_protodef_ServerCommonCmd_2eproto, "ServerCommonCmd.proto", 6664,
   &descriptor_table_ServerCommonCmd_2eproto_once, descriptor_table_ServerCommonCmd_2eproto_sccs, descriptor_table_ServerCommonCmd_2eproto_deps, 0, 0,
   schemas, file_default_instances, TableStruct_ServerCommonCmd_2eproto::offsets,
   file_level_metadata_ServerCommonCmd_2eproto, 0, file_level_enum_descriptors_ServerCommonCmd_2eproto, file_level_service_descriptors_ServerCommonCmd_2eproto,
@@ -453,6 +454,7 @@ bool EGameBattleTypeID_IsValid(int value) {
     case 1:
     case 2:
     case 3:
+    case 4:
       return true;
     default:
       return false;

@@ -333,12 +333,13 @@ enum EGameBattleTypeID : int {
   GAME_HUNDRED = 1,
   GAME_CREATE = 2,
   GAME_BATTLE = 3,
+  GAME_BANKER_HUNDERD = 4,
   EGameBattleTypeID_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EGameBattleTypeID_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EGameBattleTypeID_IsValid(int value);
 constexpr EGameBattleTypeID EGameBattleTypeID_MIN = GAME_NORMAL;
-constexpr EGameBattleTypeID EGameBattleTypeID_MAX = GAME_BATTLE;
+constexpr EGameBattleTypeID EGameBattleTypeID_MAX = GAME_BANKER_HUNDERD;
 constexpr int EGameBattleTypeID_ARRAYSIZE = EGameBattleTypeID_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EGameBattleTypeID_descriptor();
