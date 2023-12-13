@@ -109,8 +109,9 @@ enum EGameState : int {
   GS_Start = 1,
   GS_Bet1 = 2,
   GS_Bet2 = 3,
-  GS_SendCard = 4,
-  GS_Result = 5,
+  GS_SendCard1 = 4,
+  GS_SendCard2 = 5,
+  GS_Result = 6,
   EGameState_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EGameState_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
@@ -633,26 +634,26 @@ class MsgSceneInfo PROTOBUF_FINAL :
     kBankerNumFieldNumber = 12,
     kBaseCardFieldNumber = 14,
   };
-  // repeated int32 bet = 1;
+  // repeated int64 bet = 1;
   int bet_size() const;
   private:
   int _internal_bet_size() const;
   public:
   void clear_bet();
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_bet(int index) const;
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_bet(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
       _internal_bet() const;
-  void _internal_add_bet(::PROTOBUF_NAMESPACE_ID::int32 value);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+  void _internal_add_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
       _internal_mutable_bet();
   public:
-  ::PROTOBUF_NAMESPACE_ID::int32 bet(int index) const;
-  void set_bet(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
-  void add_bet(::PROTOBUF_NAMESPACE_ID::int32 value);
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+  ::PROTOBUF_NAMESPACE_ID::int64 bet(int index) const;
+  void set_bet(int index, ::PROTOBUF_NAMESPACE_ID::int64 value);
+  void add_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
       bet() const;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
       mutable_bet();
 
   // repeated int32 records = 2;
@@ -893,7 +894,7 @@ class MsgSceneInfo PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > bet_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 > bet_;
   mutable std::atomic<int> _bet_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > records_;
   mutable std::atomic<int> _records_cached_byte_size_;
@@ -2325,7 +2326,7 @@ ABPlayerData::bet_infos() const {
 
 // MsgSceneInfo
 
-// repeated int32 bet = 1;
+// repeated int64 bet = 1;
 inline int MsgSceneInfo::_internal_bet_size() const {
   return bet_.size();
 }
@@ -2335,38 +2336,38 @@ inline int MsgSceneInfo::bet_size() const {
 inline void MsgSceneInfo::clear_bet() {
   bet_.Clear();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::_internal_bet(int index) const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSceneInfo::_internal_bet(int index) const {
   return bet_.Get(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::bet(int index) const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSceneInfo::bet(int index) const {
   // @@protoc_insertion_point(field_get:AndarBahar.MsgSceneInfo.bet)
   return _internal_bet(index);
 }
-inline void MsgSceneInfo::set_bet(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgSceneInfo::set_bet(int index, ::PROTOBUF_NAMESPACE_ID::int64 value) {
   bet_.Set(index, value);
   // @@protoc_insertion_point(field_set:AndarBahar.MsgSceneInfo.bet)
 }
-inline void MsgSceneInfo::_internal_add_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgSceneInfo::_internal_add_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
   bet_.Add(value);
 }
-inline void MsgSceneInfo::add_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgSceneInfo::add_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_add_bet(value);
   // @@protoc_insertion_point(field_add:AndarBahar.MsgSceneInfo.bet)
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
 MsgSceneInfo::_internal_bet() const {
   return bet_;
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
 MsgSceneInfo::bet() const {
   // @@protoc_insertion_point(field_list:AndarBahar.MsgSceneInfo.bet)
   return _internal_bet();
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
 MsgSceneInfo::_internal_mutable_bet() {
   return &bet_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
 MsgSceneInfo::mutable_bet() {
   // @@protoc_insertion_point(field_mutable_list:AndarBahar.MsgSceneInfo.bet)
   return _internal_mutable_bet();

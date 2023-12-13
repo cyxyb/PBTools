@@ -8,8 +8,9 @@ enum EGameState
 	GS_Start	 = 1;	//开始游戏
 	GS_Bet1		 = 2;	//下注1
 	GS_Bet2		 = 3;	//下注2
-	GS_SendCard  = 4;	//发牌2
-	GS_Result	 = 5;	//结算
+	GS_SendCard1 = 4;	//发牌1
+	GS_SendCard2 = 5;	//发牌2
+	GS_Result	 = 6;	//结算
 }
 
 enum EMsgIDSubGame
@@ -28,7 +29,7 @@ enum EMsgIDSubGame
 message ABBetInfo
 {
 	int64				bet				= 1;	//下注金额  
-	int32				status			= 2;	//下注状态 0未操作 1跳过 2 红 3 蓝	
+	int32				status			= 2;	//下注状态 0未操作 1 红 2 蓝 3跳过	
 }
 
 message ABPlayerData
@@ -43,7 +44,7 @@ message ABPlayerData
 //场景消息
 message MsgSceneInfo
 {
-	repeated int32  	bet     		= 1;	//固定押注配置
+	repeated int64  	bet     		= 1;	//固定押注配置
 	repeated int32		records			= 2;	//开牌结果(1:红 2:黑)
 	repeated int32		bet_limit		= 3;	//个人区域限制
 	repeated int32		up_banker_list	= 4;	//上庄申列表

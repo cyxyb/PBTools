@@ -29,7 +29,7 @@ namespace AndarBahar {
             "DEFCUGxheWVyRGF0YRIPCgd1c2VyX2lkGAEgASgFEhAKCHdpbl9nb2xkGAIg",
             "ASgDEhIKCnRvdGFsX3BsYXkYAyABKAUSEAoId2luX3BsYXkYBCABKAUSKAoJ",
             "YmV0X2luZm9zGAUgAygLMhUuQW5kYXJCYWhhci5BQkJldEluZm8i5wIKDE1z",
-            "Z1NjZW5lSW5mbxILCgNiZXQYASADKAUSDwoHcmVjb3JkcxgCIAMoBRIRCgli",
+            "Z1NjZW5lSW5mbxILCgNiZXQYASADKAMSDwoHcmVjb3JkcxgCIAMoBRIRCgli",
             "ZXRfbGltaXQYAyADKAUSFgoOdXBfYmFua2VyX2xpc3QYBCADKAUSFAoMcGxh",
             "eWVyX2xpbWl0GAUgASgFEhAKCGJldF90aW1lGAYgASgFEhAKCG91dF90aW1l",
             "GAcgASgFEg0KBXN0YXRlGAggASgFEgsKA211bBgJIAMoBRIRCgliYW5rZXJf",
@@ -47,16 +47,16 @@ namespace AndarBahar {
             "DwoHdXNlcl9pZBgBIAEoBRIQCghjaGFpcl9pZBgCIAEoBRIPCgdvcF90eXBl",
             "GAMgASgFIioKCU1zZ1dpbk1zZxIQCghjaGFpcl9pZBgBIAEoBRILCgN3aW4Y",
             "AiABKAMiRgoJTXNnUmVzdWx0EhEKCXdpbl9pbmRleBgBIAEoBRImCgd3aW5f",
-            "bXNnGAIgAygLMhUuQW5kYXJCYWhhci5Nc2dXaW5Nc2cqYgoKRUdhbWVTdGF0",
+            "bXNnGAIgAygLMhUuQW5kYXJCYWhhci5Nc2dXaW5Nc2cqdQoKRUdhbWVTdGF0",
             "ZRIMCghHU19SZWFkeRAAEgwKCEdTX1N0YXJ0EAESCwoHR1NfQmV0MRACEgsK",
-            "B0dTX0JldDIQAxIPCgtHU19TZW5kQ2FyZBAEEg0KCUdTX1Jlc3VsdBAFKpIC",
-            "Cg1FTXNnSURTdWJHYW1lEhUKEU1zZ0lEU3ViR2FtZV9OdWxsEAASFAoQTXNn",
-            "SURTdWJHYW1lX0JldBABEhgKFE1zZ0lEU3ViR2FtZV9CZXRSZXNwEAISGQoV",
-            "TXNnSURTdWJHYW1lX09wQmFua2VyEAMSHQoZTXNnSURTdWJHYW1lX09wQmFu",
-            "a2VyUmVzcBAEEh4KGk1zZ0lEU3ViR2FtZV9HYW1lU3RhcnRSZXNwEAUSHQoZ",
-            "TXNnSURTdWJHYW1lX1NlbmRDYXJkUmVzcBAGEh8KG01zZ0lEU3ViR2FtZV9H",
-            "YW1lUmVzdWx0UmVzcBAHEiAKHE1zZ0lEU3ViR2FtZV9Ob3RpZnlTdGF0ZVJl",
-            "c3AQCGIGcHJvdG8z"));
+            "B0dTX0JldDIQAxIQCgxHU19TZW5kQ2FyZDEQBBIQCgxHU19TZW5kQ2FyZDIQ",
+            "BRINCglHU19SZXN1bHQQBiqSAgoNRU1zZ0lEU3ViR2FtZRIVChFNc2dJRFN1",
+            "YkdhbWVfTnVsbBAAEhQKEE1zZ0lEU3ViR2FtZV9CZXQQARIYChRNc2dJRFN1",
+            "YkdhbWVfQmV0UmVzcBACEhkKFU1zZ0lEU3ViR2FtZV9PcEJhbmtlchADEh0K",
+            "GU1zZ0lEU3ViR2FtZV9PcEJhbmtlclJlc3AQBBIeChpNc2dJRFN1YkdhbWVf",
+            "R2FtZVN0YXJ0UmVzcBAFEh0KGU1zZ0lEU3ViR2FtZV9TZW5kQ2FyZFJlc3AQ",
+            "BhIfChtNc2dJRFN1YkdhbWVfR2FtZVJlc3VsdFJlc3AQBxIgChxNc2dJRFN1",
+            "YkdhbWVfTm90aWZ5U3RhdGVSZXNwEAhiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::AndarBahar.EGameState), typeof(global::AndarBahar.EMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -95,13 +95,17 @@ namespace AndarBahar {
     /// </summary>
     [pbr::OriginalName("GS_Bet2")] GsBet2 = 3,
     /// <summary>
+    ///发牌1
+    /// </summary>
+    [pbr::OriginalName("GS_SendCard1")] GsSendCard1 = 4,
+    /// <summary>
     ///发牌2
     /// </summary>
-    [pbr::OriginalName("GS_SendCard")] GsSendCard = 4,
+    [pbr::OriginalName("GS_SendCard2")] GsSendCard2 = 5,
     /// <summary>
     ///结算
     /// </summary>
-    [pbr::OriginalName("GS_Result")] GsResult = 5,
+    [pbr::OriginalName("GS_Result")] GsResult = 6,
   }
 
   public enum EMsgIDSubGame {
@@ -200,7 +204,7 @@ namespace AndarBahar {
     public const int StatusFieldNumber = 2;
     private int status_;
     /// <summary>
-    ///下注状态 0未操作 1跳过 2 红 3 蓝	
+    ///下注状态 0未操作 1 红 2 蓝 3跳过	
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int Status {
@@ -733,14 +737,14 @@ namespace AndarBahar {
 
     /// <summary>Field number for the "bet" field.</summary>
     public const int BetFieldNumber = 1;
-    private static readonly pb::FieldCodec<int> _repeated_bet_codec
-        = pb::FieldCodec.ForInt32(10);
-    private readonly pbc::RepeatedField<int> bet_ = new pbc::RepeatedField<int>();
+    private static readonly pb::FieldCodec<long> _repeated_bet_codec
+        = pb::FieldCodec.ForInt64(10);
+    private readonly pbc::RepeatedField<long> bet_ = new pbc::RepeatedField<long>();
     /// <summary>
     ///固定押注配置
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<int> Bet {
+    public pbc::RepeatedField<long> Bet {
       get { return bet_; }
     }
 

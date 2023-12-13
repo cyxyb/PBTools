@@ -348,7 +348,7 @@ const char descriptor_table_protodef_AndarBahar_2eproto[] PROTOBUF_SECTION_VARIA
   "layerData\022\017\n\007user_id\030\001 \001(\005\022\020\n\010win_gold\030\002"
   " \001(\003\022\022\n\ntotal_play\030\003 \001(\005\022\020\n\010win_play\030\004 \001"
   "(\005\022(\n\tbet_infos\030\005 \003(\0132\025.AndarBahar.ABBet"
-  "Info\"\347\002\n\014MsgSceneInfo\022\013\n\003bet\030\001 \003(\005\022\017\n\007re"
+  "Info\"\347\002\n\014MsgSceneInfo\022\013\n\003bet\030\001 \003(\003\022\017\n\007re"
   "cords\030\002 \003(\005\022\021\n\tbet_limit\030\003 \003(\005\022\026\n\016up_ban"
   "ker_list\030\004 \003(\005\022\024\n\014player_limit\030\005 \001(\005\022\020\n\010"
   "bet_time\030\006 \001(\005\022\020\n\010out_time\030\007 \001(\005\022\r\n\005stat"
@@ -369,16 +369,17 @@ const char descriptor_table_protodef_AndarBahar_2eproto[] PROTOBUF_SECTION_VARIA
   "\022\017\n\007op_type\030\003 \001(\005\"*\n\tMsgWinMsg\022\020\n\010chair_"
   "id\030\001 \001(\005\022\013\n\003win\030\002 \001(\003\"F\n\tMsgResult\022\021\n\twi"
   "n_index\030\001 \001(\005\022&\n\007win_msg\030\002 \003(\0132\025.AndarBa"
-  "har.MsgWinMsg*b\n\nEGameState\022\014\n\010GS_Ready\020"
+  "har.MsgWinMsg*u\n\nEGameState\022\014\n\010GS_Ready\020"
   "\000\022\014\n\010GS_Start\020\001\022\013\n\007GS_Bet1\020\002\022\013\n\007GS_Bet2\020"
-  "\003\022\017\n\013GS_SendCard\020\004\022\r\n\tGS_Result\020\005*\222\002\n\rEM"
-  "sgIDSubGame\022\025\n\021MsgIDSubGame_Null\020\000\022\024\n\020Ms"
-  "gIDSubGame_Bet\020\001\022\030\n\024MsgIDSubGame_BetResp"
-  "\020\002\022\031\n\025MsgIDSubGame_OpBanker\020\003\022\035\n\031MsgIDSu"
-  "bGame_OpBankerResp\020\004\022\036\n\032MsgIDSubGame_Gam"
-  "eStartResp\020\005\022\035\n\031MsgIDSubGame_SendCardRes"
-  "p\020\006\022\037\n\033MsgIDSubGame_GameResultResp\020\007\022 \n\034"
-  "MsgIDSubGame_NotifyStateResp\020\010b\006proto3"
+  "\003\022\020\n\014GS_SendCard1\020\004\022\020\n\014GS_SendCard2\020\005\022\r\n"
+  "\tGS_Result\020\006*\222\002\n\rEMsgIDSubGame\022\025\n\021MsgIDS"
+  "ubGame_Null\020\000\022\024\n\020MsgIDSubGame_Bet\020\001\022\030\n\024M"
+  "sgIDSubGame_BetResp\020\002\022\031\n\025MsgIDSubGame_Op"
+  "Banker\020\003\022\035\n\031MsgIDSubGame_OpBankerResp\020\004\022"
+  "\036\n\032MsgIDSubGame_GameStartResp\020\005\022\035\n\031MsgID"
+  "SubGame_SendCardResp\020\006\022\037\n\033MsgIDSubGame_G"
+  "ameResultResp\020\007\022 \n\034MsgIDSubGame_NotifySt"
+  "ateResp\020\010b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_AndarBahar_2eproto_deps[1] = {
 };
@@ -397,7 +398,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_And
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_AndarBahar_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_AndarBahar_2eproto = {
-  false, false, descriptor_table_protodef_AndarBahar_2eproto, "AndarBahar.proto", 1438,
+  false, false, descriptor_table_protodef_AndarBahar_2eproto, "AndarBahar.proto", 1457,
   &descriptor_table_AndarBahar_2eproto_once, descriptor_table_AndarBahar_2eproto_sccs, descriptor_table_AndarBahar_2eproto_deps, 11, 0,
   schemas, file_default_instances, TableStruct_AndarBahar_2eproto::offsets,
   file_level_metadata_AndarBahar_2eproto, 11, file_level_enum_descriptors_AndarBahar_2eproto, file_level_service_descriptors_AndarBahar_2eproto,
@@ -418,6 +419,7 @@ bool EGameState_IsValid(int value) {
     case 3:
     case 4:
     case 5:
+    case 6:
       return true;
     default:
       return false;
@@ -1080,10 +1082,10 @@ const char* MsgSceneInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // repeated int32 bet = 1;
+      // repeated int64 bet = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_bet(), ptr, ctx);
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt64Parser(_internal_mutable_bet(), ptr, ctx);
           CHK_(ptr);
         } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8) {
           _internal_add_bet(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
@@ -1253,11 +1255,11 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated int32 bet = 1;
+  // repeated int64 bet = 1;
   {
     int byte_size = _bet_cached_byte_size_.load(std::memory_order_relaxed);
     if (byte_size > 0) {
-      target = stream->WriteInt32Packed(
+      target = stream->WriteInt64Packed(
           1, _internal_bet(), byte_size, target);
     }
   }
@@ -1394,10 +1396,10 @@ size_t MsgSceneInfo::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated int32 bet = 1;
+  // repeated int64 bet = 1;
   {
     size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      Int32Size(this->bet_);
+      Int64Size(this->bet_);
     if (data_size > 0) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
