@@ -200,6 +200,8 @@ enum EMsgIDDB
 	DB2LOGIN_PersonalDetailsResp		= 1084; //修改玩家个人展示信息返回
 	LOGIN2DB_QueryInviteUser			= 1085; //获取邀请玩家信息
 	DB2LOGIN_QueryInviteUserResp		= 1086; //获取邀请玩家信息返回
+	LOGIN2DB_DeleteAccount				= 1087; //删除用户账号
+	DB2LOGIN_DeleteAccountResp			= 1088; //删除用户返回
 	//2001-3000 GameServer2DB	
 	GAME2DB_Login						= 2001;	//玩家登录游戏
 	DB2GAME_LoginResp					= 2002;	//玩家登录游戏返回

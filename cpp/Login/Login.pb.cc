@@ -263,10 +263,6 @@ class MsgInviteUserRespDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgInviteUserResp> _instance;
 } _MsgInviteUserResp_default_instance_;
-class MsgDeleteAccountRespDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgDeleteAccountResp> _instance;
-} _MsgDeleteAccountResp_default_instance_;
 static void InitDefaultsscc_info_ActiveInfoRet_Login_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -426,19 +422,6 @@ static void InitDefaultsscc_info_MsgCommonKV_Login_2eproto() {
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgCommonKV_Login_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgCommonKV_Login_2eproto}, {}};
-
-static void InitDefaultsscc_info_MsgDeleteAccountResp_Login_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_MsgDeleteAccountResp_default_instance_;
-    new (ptr) ::MsgDeleteAccountResp();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgDeleteAccountResp_Login_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgDeleteAccountResp_Login_2eproto}, {}};
 
 static void InitDefaultsscc_info_MsgDotRechargeResp_Login_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -1051,7 +1034,7 @@ static void InitDefaultsscc_info_MsgVIPInfo_Login_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgVIPInfo_Login_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgVIPInfo_Login_2eproto}, {}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Login_2eproto[59];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Login_2eproto[58];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_Login_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_Login_2eproto = nullptr;
 
@@ -1598,12 +1581,6 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::MsgInviteUserResp, info_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::MsgDeleteAccountResp, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::MsgDeleteAccountResp, code_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::MsgPlayerLogin)},
@@ -1664,7 +1641,6 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 520, -1, sizeof(::MsgPersonalDetailsRespAdd)},
   { 527, -1, sizeof(::MsgInviteUserInfo)},
   { 536, -1, sizeof(::MsgInviteUserResp)},
-  { 542, -1, sizeof(::MsgDeleteAccountResp)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -1726,7 +1702,6 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgPersonalDetailsRespAdd_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgInviteUserInfo_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgInviteUserResp_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgDeleteAccountResp_default_instance_),
 };
 
 const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -1887,12 +1862,11 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "nviteUserInfo\022\021\n\tvip_level\030\001 \001(\005\022\023\n\013invi"
   "te_time\030\002 \001(\t\022\024\n\014beautiful_id\030\003 \001(\005\022\020\n\010n"
   "ickname\030\004 \001(\t\"5\n\021MsgInviteUserResp\022 \n\004in"
-  "fo\030\001 \003(\0132\022.MsgInviteUserInfo\"$\n\024MsgDelet"
-  "eAccountResp\022\014\n\004code\030\001 \001(\005b\006proto3"
+  "fo\030\001 \003(\0132\022.MsgInviteUserInfob\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Login_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Login_2eproto_sccs[59] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Login_2eproto_sccs[58] = {
   &scc_info_ActiveInfoRet_Login_2eproto.base,
   &scc_info_MsgActiveInfoCSPick_Login_2eproto.base,
   &scc_info_MsgActiveInfoSCPick_Login_2eproto.base,
@@ -1905,7 +1879,6 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
   &scc_info_MsgCDKExchangeResp_Login_2eproto.base,
   &scc_info_MsgCheckInInfo_Login_2eproto.base,
   &scc_info_MsgCommonKV_Login_2eproto.base,
-  &scc_info_MsgDeleteAccountResp_Login_2eproto.base,
   &scc_info_MsgDotRechargeResp_Login_2eproto.base,
   &scc_info_MsgForgetPassword_Login_2eproto.base,
   &scc_info_MsgGetAvatarInfo_Login_2eproto.base,
@@ -1955,10 +1928,10 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Login_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Login_2eproto = {
-  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 6354,
-  &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 59, 0,
+  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 6316,
+  &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 58, 0,
   schemas, file_default_instances, TableStruct_Login_2eproto::offsets,
-  file_level_metadata_Login_2eproto, 59, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
+  file_level_metadata_Login_2eproto, 58, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -19180,200 +19153,6 @@ void MsgInviteUserResp::InternalSwap(MsgInviteUserResp* other) {
 }
 
 
-// ===================================================================
-
-class MsgDeleteAccountResp::_Internal {
- public:
-};
-
-MsgDeleteAccountResp::MsgDeleteAccountResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:MsgDeleteAccountResp)
-}
-MsgDeleteAccountResp::MsgDeleteAccountResp(const MsgDeleteAccountResp& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  code_ = from.code_;
-  // @@protoc_insertion_point(copy_constructor:MsgDeleteAccountResp)
-}
-
-void MsgDeleteAccountResp::SharedCtor() {
-  code_ = 0;
-}
-
-MsgDeleteAccountResp::~MsgDeleteAccountResp() {
-  // @@protoc_insertion_point(destructor:MsgDeleteAccountResp)
-  SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-void MsgDeleteAccountResp::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-}
-
-void MsgDeleteAccountResp::ArenaDtor(void* object) {
-  MsgDeleteAccountResp* _this = reinterpret_cast< MsgDeleteAccountResp* >(object);
-  (void)_this;
-}
-void MsgDeleteAccountResp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
-void MsgDeleteAccountResp::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
-}
-const MsgDeleteAccountResp& MsgDeleteAccountResp::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgDeleteAccountResp_Login_2eproto.base);
-  return *internal_default_instance();
-}
-
-
-void MsgDeleteAccountResp::Clear() {
-// @@protoc_insertion_point(message_clear_start:MsgDeleteAccountResp)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  code_ = 0;
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-const char* MsgDeleteAccountResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
-    switch (tag >> 3) {
-      // int32 code = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          code_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
-    }  // switch
-  }  // while
-success:
-  return ptr;
-failure:
-  ptr = nullptr;
-  goto success;
-#undef CHK_
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* MsgDeleteAccountResp::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:MsgDeleteAccountResp)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // int32 code = 1;
-  if (this->code() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_code(), target);
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:MsgDeleteAccountResp)
-  return target;
-}
-
-size_t MsgDeleteAccountResp::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:MsgDeleteAccountResp)
-  size_t total_size = 0;
-
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  // int32 code = 1;
-  if (this->code() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_code());
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
-}
-
-void MsgDeleteAccountResp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:MsgDeleteAccountResp)
-  GOOGLE_DCHECK_NE(&from, this);
-  const MsgDeleteAccountResp* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgDeleteAccountResp>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgDeleteAccountResp)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgDeleteAccountResp)
-    MergeFrom(*source);
-  }
-}
-
-void MsgDeleteAccountResp::MergeFrom(const MsgDeleteAccountResp& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:MsgDeleteAccountResp)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from.code() != 0) {
-    _internal_set_code(from._internal_code());
-  }
-}
-
-void MsgDeleteAccountResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:MsgDeleteAccountResp)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void MsgDeleteAccountResp::CopyFrom(const MsgDeleteAccountResp& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:MsgDeleteAccountResp)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool MsgDeleteAccountResp::IsInitialized() const {
-  return true;
-}
-
-void MsgDeleteAccountResp::InternalSwap(MsgDeleteAccountResp* other) {
-  using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  swap(code_, other->code_);
-}
-
-::PROTOBUF_NAMESPACE_ID::Metadata MsgDeleteAccountResp::GetMetadata() const {
-  return GetMetadataStatic();
-}
-
-
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::MsgPlayerLogin* Arena::CreateMaybeMessage< ::MsgPlayerLogin >(Arena* arena) {
@@ -19549,9 +19328,6 @@ template<> PROTOBUF_NOINLINE ::MsgInviteUserInfo* Arena::CreateMaybeMessage< ::M
 }
 template<> PROTOBUF_NOINLINE ::MsgInviteUserResp* Arena::CreateMaybeMessage< ::MsgInviteUserResp >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MsgInviteUserResp >(arena);
-}
-template<> PROTOBUF_NOINLINE ::MsgDeleteAccountResp* Arena::CreateMaybeMessage< ::MsgDeleteAccountResp >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::MsgDeleteAccountResp >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

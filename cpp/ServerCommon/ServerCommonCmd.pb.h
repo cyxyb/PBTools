@@ -279,6 +279,8 @@ enum EMsgIDDB : int {
   DB2LOGIN_PersonalDetailsResp = 1084,
   LOGIN2DB_QueryInviteUser = 1085,
   DB2LOGIN_QueryInviteUserResp = 1086,
+  LOGIN2DB_DeleteAccount = 1087,
+  DB2LOGIN_DeleteAccountResp = 1088,
   GAME2DB_Login = 2001,
   DB2GAME_LoginResp = 2002,
   GAME2DB_LoadCheatRate = 2003,

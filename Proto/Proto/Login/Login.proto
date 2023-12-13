@@ -523,9 +523,3 @@ message MsgInviteUserResp
 {
 	repeated MsgInviteUserInfo info = 1;	//邀请玩家列表
 }
-
-//删除账号返回
-message MsgDeleteAccountResp
-{
-	int32 code = 1;						//删除账号返回
-}
