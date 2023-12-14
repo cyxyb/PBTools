@@ -58,6 +58,8 @@ message MsgSceneInfo
 	int32				banker_num		= 12;	//已经上庄轮数 包涵本局
 	int64				banker_limit	= 13;	//上庄金币限制
 	int32				base_card		= 14;	//底牌
+	int64				red_total_bet	= 15;	//红方总下注
+	int64				bluo_total_bet	= 16;	//蓝方总下注
 
 	repeated int32		red_cards		= 20;	//红方牌列表
 	repeated int32		blue_cards		= 21;	//蓝方牌列表
@@ -118,6 +120,8 @@ message MsgWinMsg
 	int32				user_id			= 1;	//玩家id
 	int32				chair_id		= 2;	//玩家椅子号
 	int64				win_gold		= 3;	//玩家输赢信息
+	int64				new_gold		= 4;	//最新金币
+	bool				is_win			= 5;	//是否压中
 }                                           
 
 //游戏结果                                  

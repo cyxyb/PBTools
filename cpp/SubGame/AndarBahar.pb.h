@@ -633,6 +633,8 @@ class MsgSceneInfo PROTOBUF_FINAL :
     kBankerLimitFieldNumber = 13,
     kBankerNumFieldNumber = 12,
     kBaseCardFieldNumber = 14,
+    kRedTotalBetFieldNumber = 15,
+    kBluoTotalBetFieldNumber = 16,
   };
   // repeated int64 bet = 1;
   int bet_size() const;
@@ -887,6 +889,24 @@ class MsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_base_card(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int64 red_total_bet = 15;
+  void clear_red_total_bet();
+  ::PROTOBUF_NAMESPACE_ID::int64 red_total_bet() const;
+  void set_red_total_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_red_total_bet() const;
+  void _internal_set_red_total_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int64 bluo_total_bet = 16;
+  void clear_bluo_total_bet();
+  ::PROTOBUF_NAMESPACE_ID::int64 bluo_total_bet() const;
+  void set_bluo_total_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_bluo_total_bet() const;
+  void _internal_set_bluo_total_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:AndarBahar.MsgSceneInfo)
  private:
   class _Internal;
@@ -918,6 +938,8 @@ class MsgSceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int64 banker_limit_;
   ::PROTOBUF_NAMESPACE_ID::int32 banker_num_;
   ::PROTOBUF_NAMESPACE_ID::int32 base_card_;
+  ::PROTOBUF_NAMESPACE_ID::int64 red_total_bet_;
+  ::PROTOBUF_NAMESPACE_ID::int64 bluo_total_bet_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_AndarBahar_2eproto;
 };
@@ -1984,6 +2006,8 @@ class MsgWinMsg PROTOBUF_FINAL :
     kUserIdFieldNumber = 1,
     kChairIdFieldNumber = 2,
     kWinGoldFieldNumber = 3,
+    kNewGoldFieldNumber = 4,
+    kIsWinFieldNumber = 5,
   };
   // int32 user_id = 1;
   void clear_user_id();
@@ -2012,6 +2036,24 @@ class MsgWinMsg PROTOBUF_FINAL :
   void _internal_set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
+  // int64 new_gold = 4;
+  void clear_new_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 new_gold() const;
+  void set_new_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_new_gold() const;
+  void _internal_set_new_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // bool is_win = 5;
+  void clear_is_win();
+  bool is_win() const;
+  void set_is_win(bool value);
+  private:
+  bool _internal_is_win() const;
+  void _internal_set_is_win(bool value);
+  public:
+
   // @@protoc_insertion_point(class_scope:AndarBahar.MsgWinMsg)
  private:
   class _Internal;
@@ -2022,6 +2064,8 @@ class MsgWinMsg PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int64 win_gold_;
+  ::PROTOBUF_NAMESPACE_ID::int64 new_gold_;
+  bool is_win_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_AndarBahar_2eproto;
 };
@@ -2774,6 +2818,46 @@ inline void MsgSceneInfo::set_base_card(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:AndarBahar.MsgSceneInfo.base_card)
 }
 
+// int64 red_total_bet = 15;
+inline void MsgSceneInfo::clear_red_total_bet() {
+  red_total_bet_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSceneInfo::_internal_red_total_bet() const {
+  return red_total_bet_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSceneInfo::red_total_bet() const {
+  // @@protoc_insertion_point(field_get:AndarBahar.MsgSceneInfo.red_total_bet)
+  return _internal_red_total_bet();
+}
+inline void MsgSceneInfo::_internal_set_red_total_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  red_total_bet_ = value;
+}
+inline void MsgSceneInfo::set_red_total_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_red_total_bet(value);
+  // @@protoc_insertion_point(field_set:AndarBahar.MsgSceneInfo.red_total_bet)
+}
+
+// int64 bluo_total_bet = 16;
+inline void MsgSceneInfo::clear_bluo_total_bet() {
+  bluo_total_bet_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSceneInfo::_internal_bluo_total_bet() const {
+  return bluo_total_bet_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSceneInfo::bluo_total_bet() const {
+  // @@protoc_insertion_point(field_get:AndarBahar.MsgSceneInfo.bluo_total_bet)
+  return _internal_bluo_total_bet();
+}
+inline void MsgSceneInfo::_internal_set_bluo_total_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  bluo_total_bet_ = value;
+}
+inline void MsgSceneInfo::set_bluo_total_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_bluo_total_bet(value);
+  // @@protoc_insertion_point(field_set:AndarBahar.MsgSceneInfo.bluo_total_bet)
+}
+
 // repeated int32 red_cards = 20;
 inline int MsgSceneInfo::_internal_red_cards_size() const {
   return red_cards_.size();
@@ -3396,6 +3480,46 @@ inline void MsgWinMsg::_internal_set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 val
 inline void MsgWinMsg::set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_win_gold(value);
   // @@protoc_insertion_point(field_set:AndarBahar.MsgWinMsg.win_gold)
+}
+
+// int64 new_gold = 4;
+inline void MsgWinMsg::clear_new_gold() {
+  new_gold_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgWinMsg::_internal_new_gold() const {
+  return new_gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgWinMsg::new_gold() const {
+  // @@protoc_insertion_point(field_get:AndarBahar.MsgWinMsg.new_gold)
+  return _internal_new_gold();
+}
+inline void MsgWinMsg::_internal_set_new_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  new_gold_ = value;
+}
+inline void MsgWinMsg::set_new_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_new_gold(value);
+  // @@protoc_insertion_point(field_set:AndarBahar.MsgWinMsg.new_gold)
+}
+
+// bool is_win = 5;
+inline void MsgWinMsg::clear_is_win() {
+  is_win_ = false;
+}
+inline bool MsgWinMsg::_internal_is_win() const {
+  return is_win_;
+}
+inline bool MsgWinMsg::is_win() const {
+  // @@protoc_insertion_point(field_get:AndarBahar.MsgWinMsg.is_win)
+  return _internal_is_win();
+}
+inline void MsgWinMsg::_internal_set_is_win(bool value) {
+  
+  is_win_ = value;
+}
+inline void MsgWinMsg::set_is_win(bool value) {
+  _internal_set_is_win(value);
+  // @@protoc_insertion_point(field_set:AndarBahar.MsgWinMsg.is_win)
 }
 
 // -------------------------------------------------------------------
