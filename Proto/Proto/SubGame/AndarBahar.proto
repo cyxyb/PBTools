@@ -102,6 +102,7 @@ message MsgSendCardResp
 message MsgOpBanker
 {
 	int32				op_type			= 1;	// 1 = 上庄 2 = 下庄
+	int64				up_gold			= 2;	// 携带金币
 }
 
 //操作庄

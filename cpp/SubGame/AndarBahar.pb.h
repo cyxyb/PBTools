@@ -1698,8 +1698,18 @@ class MsgOpBanker PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
+    kUpGoldFieldNumber = 2,
     kOpTypeFieldNumber = 1,
   };
+  // int64 up_gold = 2;
+  void clear_up_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 up_gold() const;
+  void set_up_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_up_gold() const;
+  void _internal_set_up_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
   // int32 op_type = 1;
   void clear_op_type();
   ::PROTOBUF_NAMESPACE_ID::int32 op_type() const;
@@ -1716,6 +1726,7 @@ class MsgOpBanker PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int64 up_gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 op_type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_AndarBahar_2eproto;
@@ -3332,6 +3343,26 @@ inline void MsgOpBanker::_internal_set_op_type(::PROTOBUF_NAMESPACE_ID::int32 va
 inline void MsgOpBanker::set_op_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_op_type(value);
   // @@protoc_insertion_point(field_set:AndarBahar.MsgOpBanker.op_type)
+}
+
+// int64 up_gold = 2;
+inline void MsgOpBanker::clear_up_gold() {
+  up_gold_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgOpBanker::_internal_up_gold() const {
+  return up_gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgOpBanker::up_gold() const {
+  // @@protoc_insertion_point(field_get:AndarBahar.MsgOpBanker.up_gold)
+  return _internal_up_gold();
+}
+inline void MsgOpBanker::_internal_set_up_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  up_gold_ = value;
+}
+inline void MsgOpBanker::set_up_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_up_gold(value);
+  // @@protoc_insertion_point(field_set:AndarBahar.MsgOpBanker.up_gold)
 }
 
 // -------------------------------------------------------------------
