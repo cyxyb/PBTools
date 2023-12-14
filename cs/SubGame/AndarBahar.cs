@@ -39,24 +39,25 @@ namespace AndarBahar {
             "eWVyX2xpc3QYFiADKAsyGC5BbmRhckJhaGFyLkFCUGxheWVyRGF0YSJMChBN",
             "c2dTdGFydEdhbWVSZXNwEhEKCWJhbmtlcl9pZBgBIAEoBRISCgpiYW5rZXJf",
             "bnVtGAIgASgFEhEKCWJhc2VfY2FyZBgDIAEoBSIjCgZNc2dCZXQSCwoDYmV0",
-            "GAEgASgDEgwKBGFyZWEYAiABKAUiWAoKTXNnQmV0UmVzcBIPCgd1c2VyX2lk",
-            "GAEgASgFEhAKCGNoYWlyX2lkGAIgASgFEicKCGJldF9pbmZvGAMgASgLMhUu",
-            "QW5kYXJCYWhhci5BQkJldEluZm8iPQoPTXNnU2VuZENhcmRSZXNwEgwKBGNh",
-            "cmQYASABKAUSDAoEYXJlYRgCIAEoBRIOCgZpc19lbmQYAyABKAgiHgoLTXNn",
-            "T3BCYW5rZXISDwoHb3BfdHlwZRgBIAEoBSJFCg9Nc2dPcEJhbmtlclJlc3AS",
-            "DwoHdXNlcl9pZBgBIAEoBRIQCghjaGFpcl9pZBgCIAEoBRIPCgdvcF90eXBl",
-            "GAMgASgFIioKCU1zZ1dpbk1zZxIQCghjaGFpcl9pZBgBIAEoBRILCgN3aW4Y",
-            "AiABKAMiRgoJTXNnUmVzdWx0EhEKCXdpbl9pbmRleBgBIAEoBRImCgd3aW5f",
-            "bXNnGAIgAygLMhUuQW5kYXJCYWhhci5Nc2dXaW5Nc2cqdQoKRUdhbWVTdGF0",
-            "ZRIMCghHU19SZWFkeRAAEgwKCEdTX1N0YXJ0EAESCwoHR1NfQmV0MRACEgsK",
-            "B0dTX0JldDIQAxIQCgxHU19TZW5kQ2FyZDEQBBIQCgxHU19TZW5kQ2FyZDIQ",
-            "BRINCglHU19SZXN1bHQQBiqSAgoNRU1zZ0lEU3ViR2FtZRIVChFNc2dJRFN1",
-            "YkdhbWVfTnVsbBAAEhQKEE1zZ0lEU3ViR2FtZV9CZXQQARIYChRNc2dJRFN1",
-            "YkdhbWVfQmV0UmVzcBACEhkKFU1zZ0lEU3ViR2FtZV9PcEJhbmtlchADEh0K",
-            "GU1zZ0lEU3ViR2FtZV9PcEJhbmtlclJlc3AQBBIeChpNc2dJRFN1YkdhbWVf",
-            "R2FtZVN0YXJ0UmVzcBAFEh0KGU1zZ0lEU3ViR2FtZV9TZW5kQ2FyZFJlc3AQ",
-            "BhIfChtNc2dJRFN1YkdhbWVfR2FtZVJlc3VsdFJlc3AQBxIgChxNc2dJRFN1",
-            "YkdhbWVfTm90aWZ5U3RhdGVSZXNwEAhiBnByb3RvMw=="));
+            "GAEgASgDEgwKBGFyZWEYAiABKAUiagoKTXNnQmV0UmVzcBIQCghyZXRfY29k",
+            "ZRgBIAEoBRIPCgd1c2VyX2lkGAIgASgFEhAKCGNoYWlyX2lkGAMgASgFEicK",
+            "CGJldF9pbmZvGAQgASgLMhUuQW5kYXJCYWhhci5BQkJldEluZm8iPQoPTXNn",
+            "U2VuZENhcmRSZXNwEgwKBGNhcmQYASABKAUSDAoEYXJlYRgCIAEoBRIOCgZp",
+            "c19lbmQYAyABKAgiHgoLTXNnT3BCYW5rZXISDwoHb3BfdHlwZRgBIAEoBSJX",
+            "Cg9Nc2dPcEJhbmtlclJlc3ASEAoIcmV0X2NvZGUYASABKAUSDwoHdXNlcl9p",
+            "ZBgCIAEoBRIQCghjaGFpcl9pZBgDIAEoBRIPCgdvcF90eXBlGAQgASgFIkAK",
+            "CU1zZ1dpbk1zZxIPCgd1c2VyX2lkGAEgASgFEhAKCGNoYWlyX2lkGAIgASgF",
+            "EhAKCHdpbl9nb2xkGAMgASgDIkYKCU1zZ1Jlc3VsdBIRCgl3aW5faW5kZXgY",
+            "ASABKAUSJgoHd2luX21zZxgCIAMoCzIVLkFuZGFyQmFoYXIuTXNnV2luTXNn",
+            "KnUKCkVHYW1lU3RhdGUSDAoIR1NfUmVhZHkQABIMCghHU19TdGFydBABEgsK",
+            "B0dTX0JldDEQAhILCgdHU19CZXQyEAMSEAoMR1NfU2VuZENhcmQxEAQSEAoM",
+            "R1NfU2VuZENhcmQyEAUSDQoJR1NfUmVzdWx0EAYqkgIKDUVNc2dJRFN1Ykdh",
+            "bWUSFQoRTXNnSURTdWJHYW1lX051bGwQABIUChBNc2dJRFN1YkdhbWVfQmV0",
+            "EAESGAoUTXNnSURTdWJHYW1lX0JldFJlc3AQAhIZChVNc2dJRFN1YkdhbWVf",
+            "T3BCYW5rZXIQAxIdChlNc2dJRFN1YkdhbWVfT3BCYW5rZXJSZXNwEAQSHgoa",
+            "TXNnSURTdWJHYW1lX0dhbWVTdGFydFJlc3AQBRIdChlNc2dJRFN1YkdhbWVf",
+            "U2VuZENhcmRSZXNwEAYSHwobTXNnSURTdWJHYW1lX0dhbWVSZXN1bHRSZXNw",
+            "EAcSIAocTXNnSURTdWJHYW1lX05vdGlmeVN0YXRlUmVzcBAIYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::AndarBahar.EGameState), typeof(global::AndarBahar.EMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -65,11 +66,11 @@ namespace AndarBahar {
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgSceneInfo), global::AndarBahar.MsgSceneInfo.Parser, new[]{ "Bet", "Records", "BetLimit", "UpBankerList", "PlayerLimit", "BetTime", "OutTime", "State", "Mul", "BankerId", "BankerMax", "BankerNum", "BankerLimit", "BaseCard", "RedCards", "BlueCards", "PlayerList" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgStartGameResp), global::AndarBahar.MsgStartGameResp.Parser, new[]{ "BankerId", "BankerNum", "BaseCard" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgBet), global::AndarBahar.MsgBet.Parser, new[]{ "Bet", "Area" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgBetResp), global::AndarBahar.MsgBetResp.Parser, new[]{ "UserId", "ChairId", "BetInfo" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgBetResp), global::AndarBahar.MsgBetResp.Parser, new[]{ "RetCode", "UserId", "ChairId", "BetInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgSendCardResp), global::AndarBahar.MsgSendCardResp.Parser, new[]{ "Card", "Area", "IsEnd" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgOpBanker), global::AndarBahar.MsgOpBanker.Parser, new[]{ "OpType" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgOpBankerResp), global::AndarBahar.MsgOpBankerResp.Parser, new[]{ "UserId", "ChairId", "OpType" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgWinMsg), global::AndarBahar.MsgWinMsg.Parser, new[]{ "ChairId", "Win" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgOpBankerResp), global::AndarBahar.MsgOpBankerResp.Parser, new[]{ "RetCode", "UserId", "ChairId", "OpType" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgWinMsg), global::AndarBahar.MsgWinMsg.Parser, new[]{ "UserId", "ChairId", "WinGold" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgResult), global::AndarBahar.MsgResult.Parser, new[]{ "WinIndex", "WinMsg" }, null, null, null, null)
           }));
     }
@@ -1722,7 +1723,7 @@ namespace AndarBahar {
     public const int AreaFieldNumber = 2;
     private int area_;
     /// <summary>
-    ///押注区域(0:跳过 1:红 2:黑 )
+    ///押注区域(0:跳过 1:红 2:蓝 )
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int Area {
@@ -1911,6 +1912,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public MsgBetResp(MsgBetResp other) : this() {
+      retCode_ = other.retCode_;
       userId_ = other.userId_;
       chairId_ = other.chairId_;
       betInfo_ = other.betInfo_ != null ? other.betInfo_.Clone() : null;
@@ -1922,8 +1924,22 @@ namespace AndarBahar {
       return new MsgBetResp(this);
     }
 
+    /// <summary>Field number for the "ret_code" field.</summary>
+    public const int RetCodeFieldNumber = 1;
+    private int retCode_;
+    /// <summary>
+    ///返回码
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int RetCode {
+      get { return retCode_; }
+      set {
+        retCode_ = value;
+      }
+    }
+
     /// <summary>Field number for the "user_id" field.</summary>
-    public const int UserIdFieldNumber = 1;
+    public const int UserIdFieldNumber = 2;
     private int userId_;
     /// <summary>
     ///玩家id
@@ -1937,7 +1953,7 @@ namespace AndarBahar {
     }
 
     /// <summary>Field number for the "chair_id" field.</summary>
-    public const int ChairIdFieldNumber = 2;
+    public const int ChairIdFieldNumber = 3;
     private int chairId_;
     /// <summary>
     ///玩家椅子号
@@ -1951,7 +1967,7 @@ namespace AndarBahar {
     }
 
     /// <summary>Field number for the "bet_info" field.</summary>
-    public const int BetInfoFieldNumber = 3;
+    public const int BetInfoFieldNumber = 4;
     private global::AndarBahar.ABBetInfo betInfo_;
     /// <summary>
     ///玩家下注信息
@@ -1977,6 +1993,7 @@ namespace AndarBahar {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (RetCode != other.RetCode) return false;
       if (UserId != other.UserId) return false;
       if (ChairId != other.ChairId) return false;
       if (!object.Equals(BetInfo, other.BetInfo)) return false;
@@ -1986,6 +2003,7 @@ namespace AndarBahar {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
+      if (RetCode != 0) hash ^= RetCode.GetHashCode();
       if (UserId != 0) hash ^= UserId.GetHashCode();
       if (ChairId != 0) hash ^= ChairId.GetHashCode();
       if (betInfo_ != null) hash ^= BetInfo.GetHashCode();
@@ -2005,16 +2023,20 @@ namespace AndarBahar {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (UserId != 0) {
+      if (RetCode != 0) {
         output.WriteRawTag(8);
+        output.WriteInt32(RetCode);
+      }
+      if (UserId != 0) {
+        output.WriteRawTag(16);
         output.WriteInt32(UserId);
       }
       if (ChairId != 0) {
-        output.WriteRawTag(16);
+        output.WriteRawTag(24);
         output.WriteInt32(ChairId);
       }
       if (betInfo_ != null) {
-        output.WriteRawTag(26);
+        output.WriteRawTag(34);
         output.WriteMessage(BetInfo);
       }
       if (_unknownFields != null) {
@@ -2026,16 +2048,20 @@ namespace AndarBahar {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (UserId != 0) {
+      if (RetCode != 0) {
         output.WriteRawTag(8);
+        output.WriteInt32(RetCode);
+      }
+      if (UserId != 0) {
+        output.WriteRawTag(16);
         output.WriteInt32(UserId);
       }
       if (ChairId != 0) {
-        output.WriteRawTag(16);
+        output.WriteRawTag(24);
         output.WriteInt32(ChairId);
       }
       if (betInfo_ != null) {
-        output.WriteRawTag(26);
+        output.WriteRawTag(34);
         output.WriteMessage(BetInfo);
       }
       if (_unknownFields != null) {
@@ -2047,6 +2073,9 @@ namespace AndarBahar {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      if (RetCode != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(RetCode);
+      }
       if (UserId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserId);
       }
@@ -2066,6 +2095,9 @@ namespace AndarBahar {
     public void MergeFrom(MsgBetResp other) {
       if (other == null) {
         return;
+      }
+      if (other.RetCode != 0) {
+        RetCode = other.RetCode;
       }
       if (other.UserId != 0) {
         UserId = other.UserId;
@@ -2094,14 +2126,18 @@ namespace AndarBahar {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            UserId = input.ReadInt32();
+            RetCode = input.ReadInt32();
             break;
           }
           case 16: {
+            UserId = input.ReadInt32();
+            break;
+          }
+          case 24: {
             ChairId = input.ReadInt32();
             break;
           }
-          case 26: {
+          case 34: {
             if (betInfo_ == null) {
               BetInfo = new global::AndarBahar.ABBetInfo();
             }
@@ -2123,14 +2159,18 @@ namespace AndarBahar {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            UserId = input.ReadInt32();
+            RetCode = input.ReadInt32();
             break;
           }
           case 16: {
+            UserId = input.ReadInt32();
+            break;
+          }
+          case 24: {
             ChairId = input.ReadInt32();
             break;
           }
-          case 26: {
+          case 34: {
             if (betInfo_ == null) {
               BetInfo = new global::AndarBahar.ABBetInfo();
             }
@@ -2607,6 +2647,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public MsgOpBankerResp(MsgOpBankerResp other) : this() {
+      retCode_ = other.retCode_;
       userId_ = other.userId_;
       chairId_ = other.chairId_;
       opType_ = other.opType_;
@@ -2618,8 +2659,22 @@ namespace AndarBahar {
       return new MsgOpBankerResp(this);
     }
 
+    /// <summary>Field number for the "ret_code" field.</summary>
+    public const int RetCodeFieldNumber = 1;
+    private int retCode_;
+    /// <summary>
+    ///返回码
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int RetCode {
+      get { return retCode_; }
+      set {
+        retCode_ = value;
+      }
+    }
+
     /// <summary>Field number for the "user_id" field.</summary>
-    public const int UserIdFieldNumber = 1;
+    public const int UserIdFieldNumber = 2;
     private int userId_;
     /// <summary>
     ///玩家id
@@ -2633,7 +2688,7 @@ namespace AndarBahar {
     }
 
     /// <summary>Field number for the "chair_id" field.</summary>
-    public const int ChairIdFieldNumber = 2;
+    public const int ChairIdFieldNumber = 3;
     private int chairId_;
     /// <summary>
     ///玩家椅子号
@@ -2647,7 +2702,7 @@ namespace AndarBahar {
     }
 
     /// <summary>Field number for the "op_type" field.</summary>
-    public const int OpTypeFieldNumber = 3;
+    public const int OpTypeFieldNumber = 4;
     private int opType_;
     /// <summary>
     /// 1 = 上庄 2 = 下庄
@@ -2673,6 +2728,7 @@ namespace AndarBahar {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (RetCode != other.RetCode) return false;
       if (UserId != other.UserId) return false;
       if (ChairId != other.ChairId) return false;
       if (OpType != other.OpType) return false;
@@ -2682,6 +2738,7 @@ namespace AndarBahar {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
+      if (RetCode != 0) hash ^= RetCode.GetHashCode();
       if (UserId != 0) hash ^= UserId.GetHashCode();
       if (ChairId != 0) hash ^= ChairId.GetHashCode();
       if (OpType != 0) hash ^= OpType.GetHashCode();
@@ -2701,16 +2758,20 @@ namespace AndarBahar {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (UserId != 0) {
+      if (RetCode != 0) {
         output.WriteRawTag(8);
+        output.WriteInt32(RetCode);
+      }
+      if (UserId != 0) {
+        output.WriteRawTag(16);
         output.WriteInt32(UserId);
       }
       if (ChairId != 0) {
-        output.WriteRawTag(16);
+        output.WriteRawTag(24);
         output.WriteInt32(ChairId);
       }
       if (OpType != 0) {
-        output.WriteRawTag(24);
+        output.WriteRawTag(32);
         output.WriteInt32(OpType);
       }
       if (_unknownFields != null) {
@@ -2722,16 +2783,20 @@ namespace AndarBahar {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (UserId != 0) {
+      if (RetCode != 0) {
         output.WriteRawTag(8);
+        output.WriteInt32(RetCode);
+      }
+      if (UserId != 0) {
+        output.WriteRawTag(16);
         output.WriteInt32(UserId);
       }
       if (ChairId != 0) {
-        output.WriteRawTag(16);
+        output.WriteRawTag(24);
         output.WriteInt32(ChairId);
       }
       if (OpType != 0) {
-        output.WriteRawTag(24);
+        output.WriteRawTag(32);
         output.WriteInt32(OpType);
       }
       if (_unknownFields != null) {
@@ -2743,6 +2808,9 @@ namespace AndarBahar {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      if (RetCode != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(RetCode);
+      }
       if (UserId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserId);
       }
@@ -2762,6 +2830,9 @@ namespace AndarBahar {
     public void MergeFrom(MsgOpBankerResp other) {
       if (other == null) {
         return;
+      }
+      if (other.RetCode != 0) {
+        RetCode = other.RetCode;
       }
       if (other.UserId != 0) {
         UserId = other.UserId;
@@ -2787,14 +2858,18 @@ namespace AndarBahar {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            UserId = input.ReadInt32();
+            RetCode = input.ReadInt32();
             break;
           }
           case 16: {
-            ChairId = input.ReadInt32();
+            UserId = input.ReadInt32();
             break;
           }
           case 24: {
+            ChairId = input.ReadInt32();
+            break;
+          }
+          case 32: {
             OpType = input.ReadInt32();
             break;
           }
@@ -2813,14 +2888,18 @@ namespace AndarBahar {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            UserId = input.ReadInt32();
+            RetCode = input.ReadInt32();
             break;
           }
           case 16: {
-            ChairId = input.ReadInt32();
+            UserId = input.ReadInt32();
             break;
           }
           case 24: {
+            ChairId = input.ReadInt32();
+            break;
+          }
+          case 32: {
             OpType = input.ReadInt32();
             break;
           }
@@ -2863,8 +2942,9 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public MsgWinMsg(MsgWinMsg other) : this() {
+      userId_ = other.userId_;
       chairId_ = other.chairId_;
-      win_ = other.win_;
+      winGold_ = other.winGold_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2873,8 +2953,22 @@ namespace AndarBahar {
       return new MsgWinMsg(this);
     }
 
+    /// <summary>Field number for the "user_id" field.</summary>
+    public const int UserIdFieldNumber = 1;
+    private int userId_;
+    /// <summary>
+    ///玩家id
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int UserId {
+      get { return userId_; }
+      set {
+        userId_ = value;
+      }
+    }
+
     /// <summary>Field number for the "chair_id" field.</summary>
-    public const int ChairIdFieldNumber = 1;
+    public const int ChairIdFieldNumber = 2;
     private int chairId_;
     /// <summary>
     ///玩家椅子号
@@ -2887,17 +2981,17 @@ namespace AndarBahar {
       }
     }
 
-    /// <summary>Field number for the "win" field.</summary>
-    public const int WinFieldNumber = 2;
-    private long win_;
+    /// <summary>Field number for the "win_gold" field.</summary>
+    public const int WinGoldFieldNumber = 3;
+    private long winGold_;
     /// <summary>
     ///玩家输赢信息
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long Win {
-      get { return win_; }
+    public long WinGold {
+      get { return winGold_; }
       set {
-        win_ = value;
+        winGold_ = value;
       }
     }
 
@@ -2914,16 +3008,18 @@ namespace AndarBahar {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (UserId != other.UserId) return false;
       if (ChairId != other.ChairId) return false;
-      if (Win != other.Win) return false;
+      if (WinGold != other.WinGold) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
+      if (UserId != 0) hash ^= UserId.GetHashCode();
       if (ChairId != 0) hash ^= ChairId.GetHashCode();
-      if (Win != 0L) hash ^= Win.GetHashCode();
+      if (WinGold != 0L) hash ^= WinGold.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2940,13 +3036,17 @@ namespace AndarBahar {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (ChairId != 0) {
+      if (UserId != 0) {
         output.WriteRawTag(8);
+        output.WriteInt32(UserId);
+      }
+      if (ChairId != 0) {
+        output.WriteRawTag(16);
         output.WriteInt32(ChairId);
       }
-      if (Win != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(Win);
+      if (WinGold != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(WinGold);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -2957,13 +3057,17 @@ namespace AndarBahar {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (ChairId != 0) {
+      if (UserId != 0) {
         output.WriteRawTag(8);
+        output.WriteInt32(UserId);
+      }
+      if (ChairId != 0) {
+        output.WriteRawTag(16);
         output.WriteInt32(ChairId);
       }
-      if (Win != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(Win);
+      if (WinGold != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(WinGold);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -2974,11 +3078,14 @@ namespace AndarBahar {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      if (UserId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserId);
+      }
       if (ChairId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChairId);
       }
-      if (Win != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Win);
+      if (WinGold != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(WinGold);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2991,11 +3098,14 @@ namespace AndarBahar {
       if (other == null) {
         return;
       }
+      if (other.UserId != 0) {
+        UserId = other.UserId;
+      }
       if (other.ChairId != 0) {
         ChairId = other.ChairId;
       }
-      if (other.Win != 0L) {
-        Win = other.Win;
+      if (other.WinGold != 0L) {
+        WinGold = other.WinGold;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3012,11 +3122,15 @@ namespace AndarBahar {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            ChairId = input.ReadInt32();
+            UserId = input.ReadInt32();
             break;
           }
           case 16: {
-            Win = input.ReadInt64();
+            ChairId = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            WinGold = input.ReadInt64();
             break;
           }
         }
@@ -3034,11 +3148,15 @@ namespace AndarBahar {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            ChairId = input.ReadInt32();
+            UserId = input.ReadInt32();
             break;
           }
           case 16: {
-            Win = input.ReadInt64();
+            ChairId = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            WinGold = input.ReadInt64();
             break;
           }
         }

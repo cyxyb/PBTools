@@ -1340,11 +1340,12 @@ class MsgBetResp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kBetInfoFieldNumber = 3,
-    kUserIdFieldNumber = 1,
-    kChairIdFieldNumber = 2,
+    kBetInfoFieldNumber = 4,
+    kRetCodeFieldNumber = 1,
+    kUserIdFieldNumber = 2,
+    kChairIdFieldNumber = 3,
   };
-  // .AndarBahar.ABBetInfo bet_info = 3;
+  // .AndarBahar.ABBetInfo bet_info = 4;
   bool has_bet_info() const;
   private:
   bool _internal_has_bet_info() const;
@@ -1362,7 +1363,16 @@ class MsgBetResp PROTOBUF_FINAL :
       ::AndarBahar::ABBetInfo* bet_info);
   ::AndarBahar::ABBetInfo* unsafe_arena_release_bet_info();
 
-  // int32 user_id = 1;
+  // int32 ret_code = 1;
+  void clear_ret_code();
+  ::PROTOBUF_NAMESPACE_ID::int32 ret_code() const;
+  void set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_ret_code() const;
+  void _internal_set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 user_id = 2;
   void clear_user_id();
   ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
   void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -1371,7 +1381,7 @@ class MsgBetResp PROTOBUF_FINAL :
   void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 chair_id = 2;
+  // int32 chair_id = 3;
   void clear_chair_id();
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id() const;
   void set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -1388,6 +1398,7 @@ class MsgBetResp PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::AndarBahar::ABBetInfo* bet_info_;
+  ::PROTOBUF_NAMESPACE_ID::int32 ret_code_;
   ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
@@ -1801,11 +1812,21 @@ class MsgOpBankerResp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kUserIdFieldNumber = 1,
-    kChairIdFieldNumber = 2,
-    kOpTypeFieldNumber = 3,
+    kRetCodeFieldNumber = 1,
+    kUserIdFieldNumber = 2,
+    kChairIdFieldNumber = 3,
+    kOpTypeFieldNumber = 4,
   };
-  // int32 user_id = 1;
+  // int32 ret_code = 1;
+  void clear_ret_code();
+  ::PROTOBUF_NAMESPACE_ID::int32 ret_code() const;
+  void set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_ret_code() const;
+  void _internal_set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 user_id = 2;
   void clear_user_id();
   ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
   void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -1814,7 +1835,7 @@ class MsgOpBankerResp PROTOBUF_FINAL :
   void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 chair_id = 2;
+  // int32 chair_id = 3;
   void clear_chair_id();
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id() const;
   void set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -1823,7 +1844,7 @@ class MsgOpBankerResp PROTOBUF_FINAL :
   void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 op_type = 3;
+  // int32 op_type = 4;
   void clear_op_type();
   ::PROTOBUF_NAMESPACE_ID::int32 op_type() const;
   void set_op_type(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -1839,6 +1860,7 @@ class MsgOpBankerResp PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 ret_code_;
   ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 op_type_;
@@ -1959,25 +1981,35 @@ class MsgWinMsg PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kWinFieldNumber = 2,
-    kChairIdFieldNumber = 1,
+    kUserIdFieldNumber = 1,
+    kChairIdFieldNumber = 2,
+    kWinGoldFieldNumber = 3,
   };
-  // int64 win = 2;
-  void clear_win();
-  ::PROTOBUF_NAMESPACE_ID::int64 win() const;
-  void set_win(::PROTOBUF_NAMESPACE_ID::int64 value);
+  // int32 user_id = 1;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_win() const;
-  void _internal_set_win(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 chair_id = 1;
+  // int32 chair_id = 2;
   void clear_chair_id();
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id() const;
   void set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
   ::PROTOBUF_NAMESPACE_ID::int32 _internal_chair_id() const;
   void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int64 win_gold = 3;
+  void clear_win_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 win_gold() const;
+  void set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_win_gold() const;
+  void _internal_set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
   // @@protoc_insertion_point(class_scope:AndarBahar.MsgWinMsg)
@@ -1987,8 +2019,9 @@ class MsgWinMsg PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int64 win_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
+  ::PROTOBUF_NAMESPACE_ID::int64 win_gold_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_AndarBahar_2eproto;
 };
@@ -2986,7 +3019,27 @@ inline void MsgBet::set_area(::PROTOBUF_NAMESPACE_ID::int32 value) {
 
 // MsgBetResp
 
-// int32 user_id = 1;
+// int32 ret_code = 1;
+inline void MsgBetResp::clear_ret_code() {
+  ret_code_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBetResp::_internal_ret_code() const {
+  return ret_code_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBetResp::ret_code() const {
+  // @@protoc_insertion_point(field_get:AndarBahar.MsgBetResp.ret_code)
+  return _internal_ret_code();
+}
+inline void MsgBetResp::_internal_set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  ret_code_ = value;
+}
+inline void MsgBetResp::set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_ret_code(value);
+  // @@protoc_insertion_point(field_set:AndarBahar.MsgBetResp.ret_code)
+}
+
+// int32 user_id = 2;
 inline void MsgBetResp::clear_user_id() {
   user_id_ = 0;
 }
@@ -3006,7 +3059,7 @@ inline void MsgBetResp::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:AndarBahar.MsgBetResp.user_id)
 }
 
-// int32 chair_id = 2;
+// int32 chair_id = 3;
 inline void MsgBetResp::clear_chair_id() {
   chair_id_ = 0;
 }
@@ -3026,7 +3079,7 @@ inline void MsgBetResp::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:AndarBahar.MsgBetResp.chair_id)
 }
 
-// .AndarBahar.ABBetInfo bet_info = 3;
+// .AndarBahar.ABBetInfo bet_info = 4;
 inline bool MsgBetResp::_internal_has_bet_info() const {
   return this != internal_default_instance() && bet_info_ != nullptr;
 }
@@ -3201,7 +3254,27 @@ inline void MsgOpBanker::set_op_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
 
 // MsgOpBankerResp
 
-// int32 user_id = 1;
+// int32 ret_code = 1;
+inline void MsgOpBankerResp::clear_ret_code() {
+  ret_code_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOpBankerResp::_internal_ret_code() const {
+  return ret_code_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOpBankerResp::ret_code() const {
+  // @@protoc_insertion_point(field_get:AndarBahar.MsgOpBankerResp.ret_code)
+  return _internal_ret_code();
+}
+inline void MsgOpBankerResp::_internal_set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  ret_code_ = value;
+}
+inline void MsgOpBankerResp::set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_ret_code(value);
+  // @@protoc_insertion_point(field_set:AndarBahar.MsgOpBankerResp.ret_code)
+}
+
+// int32 user_id = 2;
 inline void MsgOpBankerResp::clear_user_id() {
   user_id_ = 0;
 }
@@ -3221,7 +3294,7 @@ inline void MsgOpBankerResp::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:AndarBahar.MsgOpBankerResp.user_id)
 }
 
-// int32 chair_id = 2;
+// int32 chair_id = 3;
 inline void MsgOpBankerResp::clear_chair_id() {
   chair_id_ = 0;
 }
@@ -3241,7 +3314,7 @@ inline void MsgOpBankerResp::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) 
   // @@protoc_insertion_point(field_set:AndarBahar.MsgOpBankerResp.chair_id)
 }
 
-// int32 op_type = 3;
+// int32 op_type = 4;
 inline void MsgOpBankerResp::clear_op_type() {
   op_type_ = 0;
 }
@@ -3265,7 +3338,27 @@ inline void MsgOpBankerResp::set_op_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
 
 // MsgWinMsg
 
-// int32 chair_id = 1;
+// int32 user_id = 1;
+inline void MsgWinMsg::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgWinMsg::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgWinMsg::user_id() const {
+  // @@protoc_insertion_point(field_get:AndarBahar.MsgWinMsg.user_id)
+  return _internal_user_id();
+}
+inline void MsgWinMsg::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgWinMsg::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:AndarBahar.MsgWinMsg.user_id)
+}
+
+// int32 chair_id = 2;
 inline void MsgWinMsg::clear_chair_id() {
   chair_id_ = 0;
 }
@@ -3285,24 +3378,24 @@ inline void MsgWinMsg::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:AndarBahar.MsgWinMsg.chair_id)
 }
 
-// int64 win = 2;
-inline void MsgWinMsg::clear_win() {
-  win_ = PROTOBUF_LONGLONG(0);
+// int64 win_gold = 3;
+inline void MsgWinMsg::clear_win_gold() {
+  win_gold_ = PROTOBUF_LONGLONG(0);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgWinMsg::_internal_win() const {
-  return win_;
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgWinMsg::_internal_win_gold() const {
+  return win_gold_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgWinMsg::win() const {
-  // @@protoc_insertion_point(field_get:AndarBahar.MsgWinMsg.win)
-  return _internal_win();
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgWinMsg::win_gold() const {
+  // @@protoc_insertion_point(field_get:AndarBahar.MsgWinMsg.win_gold)
+  return _internal_win_gold();
 }
-inline void MsgWinMsg::_internal_set_win(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void MsgWinMsg::_internal_set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
   
-  win_ = value;
+  win_gold_ = value;
 }
-inline void MsgWinMsg::set_win(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_win(value);
-  // @@protoc_insertion_point(field_set:AndarBahar.MsgWinMsg.win)
+inline void MsgWinMsg::set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_win_gold(value);
+  // @@protoc_insertion_point(field_set:AndarBahar.MsgWinMsg.win_gold)
 }
 
 // -------------------------------------------------------------------
