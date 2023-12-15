@@ -16,6 +16,7 @@
 #include <google/protobuf/port_def.inc>
 extern PROTOBUF_INTERNAL_EXPORT_AndarBahar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ABBetInfo_AndarBahar_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_AndarBahar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ABPlayerData_AndarBahar_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_AndarBahar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ABUpWaitBankerInfo_AndarBahar_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_AndarBahar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgWinMsg_AndarBahar_2eproto;
 namespace AndarBahar {
 class ABBetInfoDefaultTypeInternal {
@@ -26,6 +27,10 @@ class ABPlayerDataDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<ABPlayerData> _instance;
 } _ABPlayerData_default_instance_;
+class ABUpWaitBankerInfoDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<ABUpWaitBankerInfo> _instance;
+} _ABUpWaitBankerInfo_default_instance_;
 class MsgSceneInfoDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgSceneInfo> _instance;
@@ -89,6 +94,19 @@ static void InitDefaultsscc_info_ABPlayerData_AndarBahar_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ABPlayerData_AndarBahar_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_ABPlayerData_AndarBahar_2eproto}, {
       &scc_info_ABBetInfo_AndarBahar_2eproto.base,}};
+
+static void InitDefaultsscc_info_ABUpWaitBankerInfo_AndarBahar_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::AndarBahar::_ABUpWaitBankerInfo_default_instance_;
+    new (ptr) ::AndarBahar::ABUpWaitBankerInfo();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ABUpWaitBankerInfo_AndarBahar_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ABUpWaitBankerInfo_AndarBahar_2eproto}, {}};
 
 static void InitDefaultsscc_info_MsgBet_AndarBahar_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -167,8 +185,9 @@ static void InitDefaultsscc_info_MsgSceneInfo_AndarBahar_2eproto() {
   }
 }
 
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_MsgSceneInfo_AndarBahar_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MsgSceneInfo_AndarBahar_2eproto}, {
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_MsgSceneInfo_AndarBahar_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_MsgSceneInfo_AndarBahar_2eproto}, {
+      &scc_info_ABUpWaitBankerInfo_AndarBahar_2eproto.base,
       &scc_info_ABPlayerData_AndarBahar_2eproto.base,}};
 
 static void InitDefaultsscc_info_MsgSendCardResp_AndarBahar_2eproto() {
@@ -210,7 +229,7 @@ static void InitDefaultsscc_info_MsgWinMsg_AndarBahar_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgWinMsg_AndarBahar_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgWinMsg_AndarBahar_2eproto}, {}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_AndarBahar_2eproto[11];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_AndarBahar_2eproto[12];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_AndarBahar_2eproto[2];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_AndarBahar_2eproto = nullptr;
 
@@ -232,6 +251,13 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_AndarBahar_2eproto::offsets[] 
   PROTOBUF_FIELD_OFFSET(::AndarBahar::ABPlayerData, total_play_),
   PROTOBUF_FIELD_OFFSET(::AndarBahar::ABPlayerData, win_play_),
   PROTOBUF_FIELD_OFFSET(::AndarBahar::ABPlayerData, bet_infos_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::AndarBahar::ABUpWaitBankerInfo, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::AndarBahar::ABUpWaitBankerInfo, id_),
+  PROTOBUF_FIELD_OFFSET(::AndarBahar::ABUpWaitBankerInfo, opbankergold_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::AndarBahar::MsgSceneInfo, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -297,7 +323,6 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_AndarBahar_2eproto::offsets[] 
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::AndarBahar::MsgOpBanker, op_type_),
   PROTOBUF_FIELD_OFFSET(::AndarBahar::MsgOpBanker, up_gold_),
-  PROTOBUF_FIELD_OFFSET(::AndarBahar::MsgOpBanker, op_gold_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::AndarBahar::MsgOpBankerResp, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -325,25 +350,28 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_AndarBahar_2eproto::offsets[] 
   PROTOBUF_FIELD_OFFSET(::AndarBahar::MsgResult, win_index_),
   PROTOBUF_FIELD_OFFSET(::AndarBahar::MsgResult, banker_win_),
   PROTOBUF_FIELD_OFFSET(::AndarBahar::MsgResult, banker_op_gold_),
+  PROTOBUF_FIELD_OFFSET(::AndarBahar::MsgResult, banker_total_win_),
   PROTOBUF_FIELD_OFFSET(::AndarBahar::MsgResult, win_msg_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::AndarBahar::ABBetInfo)},
   { 7, -1, sizeof(::AndarBahar::ABPlayerData)},
-  { 17, -1, sizeof(::AndarBahar::MsgSceneInfo)},
-  { 42, -1, sizeof(::AndarBahar::MsgStartGameResp)},
-  { 51, -1, sizeof(::AndarBahar::MsgBet)},
-  { 58, -1, sizeof(::AndarBahar::MsgBetResp)},
-  { 67, -1, sizeof(::AndarBahar::MsgSendCardResp)},
-  { 75, -1, sizeof(::AndarBahar::MsgOpBanker)},
-  { 83, -1, sizeof(::AndarBahar::MsgOpBankerResp)},
-  { 92, -1, sizeof(::AndarBahar::MsgWinMsg)},
-  { 102, -1, sizeof(::AndarBahar::MsgResult)},
+  { 17, -1, sizeof(::AndarBahar::ABUpWaitBankerInfo)},
+  { 24, -1, sizeof(::AndarBahar::MsgSceneInfo)},
+  { 49, -1, sizeof(::AndarBahar::MsgStartGameResp)},
+  { 58, -1, sizeof(::AndarBahar::MsgBet)},
+  { 65, -1, sizeof(::AndarBahar::MsgBetResp)},
+  { 74, -1, sizeof(::AndarBahar::MsgSendCardResp)},
+  { 82, -1, sizeof(::AndarBahar::MsgOpBanker)},
+  { 89, -1, sizeof(::AndarBahar::MsgOpBankerResp)},
+  { 98, -1, sizeof(::AndarBahar::MsgWinMsg)},
+  { 108, -1, sizeof(::AndarBahar::MsgResult)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::AndarBahar::_ABBetInfo_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::AndarBahar::_ABPlayerData_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::AndarBahar::_ABUpWaitBankerInfo_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::AndarBahar::_MsgSceneInfo_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::AndarBahar::_MsgStartGameResp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::AndarBahar::_MsgBet_default_instance_),
@@ -361,51 +389,54 @@ const char descriptor_table_protodef_AndarBahar_2eproto[] PROTOBUF_SECTION_VARIA
   "layerData\022\017\n\007user_id\030\001 \001(\005\022\020\n\010win_gold\030\002"
   " \001(\003\022\022\n\ntotal_play\030\003 \001(\005\022\020\n\010win_play\030\004 \001"
   "(\005\022(\n\tbet_infos\030\005 \003(\0132\025.AndarBahar.ABBet"
-  "Info\"\256\003\n\014MsgSceneInfo\022\013\n\003bet\030\001 \003(\003\022\017\n\007re"
-  "cords\030\002 \003(\005\022\021\n\tbet_limit\030\003 \003(\005\022\026\n\016up_ban"
-  "ker_list\030\004 \003(\005\022\024\n\014player_limit\030\005 \001(\005\022\020\n\010"
-  "bet_time\030\006 \001(\005\022\020\n\010out_time\030\007 \001(\005\022\r\n\005stat"
-  "e\030\010 \001(\005\022\013\n\003mul\030\t \003(\005\022\021\n\tbanker_id\030\n \001(\005\022"
-  "\022\n\nbanker_max\030\013 \001(\005\022\022\n\nbanker_num\030\014 \001(\005\022"
-  "\024\n\014banker_limit\030\r \001(\003\022\021\n\tbase_card\030\016 \001(\005"
-  "\022\025\n\rred_total_bet\030\017 \001(\003\022\026\n\016bluo_total_be"
-  "t\030\020 \001(\003\022\026\n\016banker_op_gold\030\021 \001(\003\022\021\n\tred_c"
-  "ards\030\024 \003(\005\022\022\n\nblue_cards\030\025 \003(\005\022-\n\013player"
-  "_list\030\026 \003(\0132\030.AndarBahar.ABPlayerData\"d\n"
-  "\020MsgStartGameResp\022\021\n\tbanker_id\030\001 \001(\005\022\022\n\n"
-  "banker_num\030\002 \001(\005\022\021\n\tbase_card\030\003 \001(\005\022\026\n\016b"
-  "anker_op_gold\030\004 \001(\003\"#\n\006MsgBet\022\013\n\003bet\030\001 \001"
-  "(\003\022\014\n\004area\030\002 \001(\005\"j\n\nMsgBetResp\022\020\n\010ret_co"
-  "de\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\020\n\010chair_id\030\003 "
-  "\001(\005\022\'\n\010bet_info\030\004 \001(\0132\025.AndarBahar.ABBet"
-  "Info\"=\n\017MsgSendCardResp\022\014\n\004card\030\001 \001(\005\022\014\n"
-  "\004area\030\002 \001(\005\022\016\n\006is_end\030\003 \001(\010\"@\n\013MsgOpBank"
-  "er\022\017\n\007op_type\030\001 \001(\005\022\017\n\007up_gold\030\002 \001(\003\022\017\n\007"
-  "op_gold\030\003 \001(\003\"W\n\017MsgOpBankerResp\022\020\n\010ret_"
-  "code\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\020\n\010chair_id\030"
-  "\003 \001(\005\022\017\n\007op_type\030\004 \001(\005\"b\n\tMsgWinMsg\022\017\n\007u"
-  "ser_id\030\001 \001(\005\022\020\n\010chair_id\030\002 \001(\005\022\020\n\010win_go"
-  "ld\030\003 \001(\003\022\020\n\010new_gold\030\004 \001(\003\022\016\n\006is_win\030\005 \001"
-  "(\010\"r\n\tMsgResult\022\021\n\twin_index\030\001 \001(\005\022\022\n\nba"
-  "nker_win\030\002 \001(\003\022\026\n\016banker_op_gold\030\003 \001(\003\022&"
-  "\n\007win_msg\030\004 \003(\0132\025.AndarBahar.MsgWinMsg*u"
-  "\n\nEGameState\022\014\n\010GS_Ready\020\000\022\014\n\010GS_Start\020\001"
-  "\022\013\n\007GS_Bet1\020\002\022\013\n\007GS_Bet2\020\003\022\020\n\014GS_SendCar"
-  "d1\020\004\022\020\n\014GS_SendCard2\020\005\022\r\n\tGS_Result\020\006*\222\002"
-  "\n\rEMsgIDSubGame\022\025\n\021MsgIDSubGame_Null\020\000\022\024"
-  "\n\020MsgIDSubGame_Bet\020\001\022\030\n\024MsgIDSubGame_Bet"
-  "Resp\020\002\022\031\n\025MsgIDSubGame_OpBanker\020\003\022\035\n\031Msg"
-  "IDSubGame_OpBankerResp\020\004\022\036\n\032MsgIDSubGame"
-  "_GameStartResp\020\005\022\035\n\031MsgIDSubGame_SendCar"
-  "dResp\020\006\022\037\n\033MsgIDSubGame_GameResultResp\020\007"
-  "\022 \n\034MsgIDSubGame_NotifyStateResp\020\010b\006prot"
-  "o3"
+  "Info\"6\n\022ABUpWaitBankerInfo\022\n\n\002Id\030\001 \001(\005\022\024"
+  "\n\014OpBankerGold\030\002 \001(\003\"\316\003\n\014MsgSceneInfo\022\013\n"
+  "\003bet\030\001 \003(\003\022\017\n\007records\030\002 \003(\005\022\021\n\tbet_limit"
+  "\030\003 \003(\005\0226\n\016up_banker_list\030\004 \003(\0132\036.AndarBa"
+  "har.ABUpWaitBankerInfo\022\024\n\014player_limit\030\005"
+  " \001(\005\022\020\n\010bet_time\030\006 \001(\005\022\020\n\010out_time\030\007 \001(\005"
+  "\022\r\n\005state\030\010 \001(\005\022\013\n\003mul\030\t \003(\005\022\021\n\tbanker_i"
+  "d\030\n \001(\005\022\022\n\nbanker_max\030\013 \001(\005\022\022\n\nbanker_nu"
+  "m\030\014 \001(\005\022\024\n\014banker_limit\030\r \001(\003\022\021\n\tbase_ca"
+  "rd\030\016 \001(\005\022\025\n\rred_total_bet\030\017 \001(\003\022\026\n\016bluo_"
+  "total_bet\030\020 \001(\003\022\026\n\016banker_op_gold\030\021 \001(\003\022"
+  "\021\n\tred_cards\030\024 \003(\005\022\022\n\nblue_cards\030\025 \003(\005\022-"
+  "\n\013player_list\030\026 \003(\0132\030.AndarBahar.ABPlaye"
+  "rData\"d\n\020MsgStartGameResp\022\021\n\tbanker_id\030\001"
+  " \001(\005\022\022\n\nbanker_num\030\002 \001(\005\022\021\n\tbase_card\030\003 "
+  "\001(\005\022\026\n\016banker_op_gold\030\004 \001(\003\"#\n\006MsgBet\022\013\n"
+  "\003bet\030\001 \001(\003\022\014\n\004area\030\002 \001(\005\"j\n\nMsgBetResp\022\020"
+  "\n\010ret_code\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\020\n\010cha"
+  "ir_id\030\003 \001(\005\022\'\n\010bet_info\030\004 \001(\0132\025.AndarBah"
+  "ar.ABBetInfo\"=\n\017MsgSendCardResp\022\014\n\004card\030"
+  "\001 \001(\005\022\014\n\004area\030\002 \001(\005\022\016\n\006is_end\030\003 \001(\010\"/\n\013M"
+  "sgOpBanker\022\017\n\007op_type\030\001 \001(\005\022\017\n\007up_gold\030\002"
+  " \001(\003\"W\n\017MsgOpBankerResp\022\020\n\010ret_code\030\001 \001("
+  "\005\022\017\n\007user_id\030\002 \001(\005\022\020\n\010chair_id\030\003 \001(\005\022\017\n\007"
+  "op_type\030\004 \001(\005\"b\n\tMsgWinMsg\022\017\n\007user_id\030\001 "
+  "\001(\005\022\020\n\010chair_id\030\002 \001(\005\022\020\n\010win_gold\030\003 \001(\003\022"
+  "\020\n\010new_gold\030\004 \001(\003\022\016\n\006is_win\030\005 \001(\010\"\214\001\n\tMs"
+  "gResult\022\021\n\twin_index\030\001 \001(\005\022\022\n\nbanker_win"
+  "\030\002 \001(\003\022\026\n\016banker_op_gold\030\003 \001(\003\022\030\n\020banker"
+  "_total_win\030\004 \001(\003\022&\n\007win_msg\030\005 \003(\0132\025.Anda"
+  "rBahar.MsgWinMsg*u\n\nEGameState\022\014\n\010GS_Rea"
+  "dy\020\000\022\014\n\010GS_Start\020\001\022\013\n\007GS_Bet1\020\002\022\013\n\007GS_Be"
+  "t2\020\003\022\020\n\014GS_SendCard1\020\004\022\020\n\014GS_SendCard2\020\005"
+  "\022\r\n\tGS_Result\020\006*\222\002\n\rEMsgIDSubGame\022\025\n\021Msg"
+  "IDSubGame_Null\020\000\022\024\n\020MsgIDSubGame_Bet\020\001\022\030"
+  "\n\024MsgIDSubGame_BetResp\020\002\022\031\n\025MsgIDSubGame"
+  "_OpBanker\020\003\022\035\n\031MsgIDSubGame_OpBankerResp"
+  "\020\004\022\036\n\032MsgIDSubGame_GameStartResp\020\005\022\035\n\031Ms"
+  "gIDSubGame_SendCardResp\020\006\022\037\n\033MsgIDSubGam"
+  "e_GameResultResp\020\007\022 \n\034MsgIDSubGame_Notif"
+  "yStateResp\020\010b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_AndarBahar_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_AndarBahar_2eproto_sccs[11] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_AndarBahar_2eproto_sccs[12] = {
   &scc_info_ABBetInfo_AndarBahar_2eproto.base,
   &scc_info_ABPlayerData_AndarBahar_2eproto.base,
+  &scc_info_ABUpWaitBankerInfo_AndarBahar_2eproto.base,
   &scc_info_MsgBet_AndarBahar_2eproto.base,
   &scc_info_MsgBetResp_AndarBahar_2eproto.base,
   &scc_info_MsgOpBanker_AndarBahar_2eproto.base,
@@ -418,10 +449,10 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_And
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_AndarBahar_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_AndarBahar_2eproto = {
-  false, false, descriptor_table_protodef_AndarBahar_2eproto, "AndarBahar.proto", 1722,
-  &descriptor_table_AndarBahar_2eproto_once, descriptor_table_AndarBahar_2eproto_sccs, descriptor_table_AndarBahar_2eproto_deps, 11, 0,
+  false, false, descriptor_table_protodef_AndarBahar_2eproto, "AndarBahar.proto", 1820,
+  &descriptor_table_AndarBahar_2eproto_once, descriptor_table_AndarBahar_2eproto_sccs, descriptor_table_AndarBahar_2eproto_deps, 12, 0,
   schemas, file_default_instances, TableStruct_AndarBahar_2eproto::offsets,
-  file_level_metadata_AndarBahar_2eproto, 11, file_level_enum_descriptors_AndarBahar_2eproto, file_level_service_descriptors_AndarBahar_2eproto,
+  file_level_metadata_AndarBahar_2eproto, 12, file_level_enum_descriptors_AndarBahar_2eproto, file_level_service_descriptors_AndarBahar_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -1007,6 +1038,235 @@ void ABPlayerData::InternalSwap(ABPlayerData* other) {
 
 // ===================================================================
 
+class ABUpWaitBankerInfo::_Internal {
+ public:
+};
+
+ABUpWaitBankerInfo::ABUpWaitBankerInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:AndarBahar.ABUpWaitBankerInfo)
+}
+ABUpWaitBankerInfo::ABUpWaitBankerInfo(const ABUpWaitBankerInfo& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&opbankergold_, &from.opbankergold_,
+    static_cast<size_t>(reinterpret_cast<char*>(&id_) -
+    reinterpret_cast<char*>(&opbankergold_)) + sizeof(id_));
+  // @@protoc_insertion_point(copy_constructor:AndarBahar.ABUpWaitBankerInfo)
+}
+
+void ABUpWaitBankerInfo::SharedCtor() {
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&opbankergold_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&id_) -
+      reinterpret_cast<char*>(&opbankergold_)) + sizeof(id_));
+}
+
+ABUpWaitBankerInfo::~ABUpWaitBankerInfo() {
+  // @@protoc_insertion_point(destructor:AndarBahar.ABUpWaitBankerInfo)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void ABUpWaitBankerInfo::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void ABUpWaitBankerInfo::ArenaDtor(void* object) {
+  ABUpWaitBankerInfo* _this = reinterpret_cast< ABUpWaitBankerInfo* >(object);
+  (void)_this;
+}
+void ABUpWaitBankerInfo::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void ABUpWaitBankerInfo::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const ABUpWaitBankerInfo& ABUpWaitBankerInfo::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_ABUpWaitBankerInfo_AndarBahar_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void ABUpWaitBankerInfo::Clear() {
+// @@protoc_insertion_point(message_clear_start:AndarBahar.ABUpWaitBankerInfo)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&opbankergold_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&id_) -
+      reinterpret_cast<char*>(&opbankergold_)) + sizeof(id_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* ABUpWaitBankerInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 Id = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 OpBankerGold = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          opbankergold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* ABUpWaitBankerInfo::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:AndarBahar.ABUpWaitBankerInfo)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 Id = 1;
+  if (this->id() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_id(), target);
+  }
+
+  // int64 OpBankerGold = 2;
+  if (this->opbankergold() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_opbankergold(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:AndarBahar.ABUpWaitBankerInfo)
+  return target;
+}
+
+size_t ABUpWaitBankerInfo::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:AndarBahar.ABUpWaitBankerInfo)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // int64 OpBankerGold = 2;
+  if (this->opbankergold() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_opbankergold());
+  }
+
+  // int32 Id = 1;
+  if (this->id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_id());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void ABUpWaitBankerInfo::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:AndarBahar.ABUpWaitBankerInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  const ABUpWaitBankerInfo* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<ABUpWaitBankerInfo>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:AndarBahar.ABUpWaitBankerInfo)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:AndarBahar.ABUpWaitBankerInfo)
+    MergeFrom(*source);
+  }
+}
+
+void ABUpWaitBankerInfo::MergeFrom(const ABUpWaitBankerInfo& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:AndarBahar.ABUpWaitBankerInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.opbankergold() != 0) {
+    _internal_set_opbankergold(from._internal_opbankergold());
+  }
+  if (from.id() != 0) {
+    _internal_set_id(from._internal_id());
+  }
+}
+
+void ABUpWaitBankerInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:AndarBahar.ABUpWaitBankerInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void ABUpWaitBankerInfo::CopyFrom(const ABUpWaitBankerInfo& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:AndarBahar.ABUpWaitBankerInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ABUpWaitBankerInfo::IsInitialized() const {
+  return true;
+}
+
+void ABUpWaitBankerInfo::InternalSwap(ABUpWaitBankerInfo* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(ABUpWaitBankerInfo, id_)
+      + sizeof(ABUpWaitBankerInfo::id_)
+      - PROTOBUF_FIELD_OFFSET(ABUpWaitBankerInfo, opbankergold_)>(
+          reinterpret_cast<char*>(&opbankergold_),
+          reinterpret_cast<char*>(&other->opbankergold_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata ABUpWaitBankerInfo::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
 class MsgSceneInfo::_Internal {
  public:
 };
@@ -1132,14 +1392,16 @@ const char* MsgSceneInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated int32 up_banker_list = 4;
+      // repeated .AndarBahar.ABUpWaitBankerInfo up_banker_list = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_up_banker_list(), ptr, ctx);
-          CHK_(ptr);
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32) {
-          _internal_add_up_banker_list(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
-          CHK_(ptr);
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_up_banker_list(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<34>(ptr));
         } else goto handle_unusual;
         continue;
       // int32 player_limit = 5;
@@ -1323,13 +1585,12 @@ failure:
     }
   }
 
-  // repeated int32 up_banker_list = 4;
-  {
-    int byte_size = _up_banker_list_cached_byte_size_.load(std::memory_order_relaxed);
-    if (byte_size > 0) {
-      target = stream->WriteInt32Packed(
-          4, _internal_up_banker_list(), byte_size, target);
-    }
+  // repeated .AndarBahar.ABUpWaitBankerInfo up_banker_list = 4;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_up_banker_list_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(4, this->_internal_up_banker_list(i), target, stream);
   }
 
   // int32 player_limit = 5;
@@ -1500,19 +1761,11 @@ size_t MsgSceneInfo::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  // repeated int32 up_banker_list = 4;
-  {
-    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      Int32Size(this->up_banker_list_);
-    if (data_size > 0) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
-    }
-    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
-    _up_banker_list_cached_byte_size_.store(cached_size,
-                                    std::memory_order_relaxed);
-    total_size += data_size;
+  // repeated .AndarBahar.ABUpWaitBankerInfo up_banker_list = 4;
+  total_size += 1UL * this->_internal_up_banker_list_size();
+  for (const auto& msg : this->up_banker_list_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // repeated int32 mul = 9;
@@ -2903,13 +3156,6 @@ const char* MsgOpBanker::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int64 op_gold = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          op_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
@@ -2950,12 +3196,6 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_up_gold(), target);
   }
 
-  // int64 op_gold = 3;
-  if (this->op_gold() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_op_gold(), target);
-  }
-
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -2977,13 +3217,6 @@ size_t MsgOpBanker::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_up_gold());
-  }
-
-  // int64 op_gold = 3;
-  if (this->op_gold() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_op_gold());
   }
 
   // int32 op_type = 1;
@@ -3026,9 +3259,6 @@ void MsgOpBanker::MergeFrom(const MsgOpBanker& from) {
 
   if (from.up_gold() != 0) {
     _internal_set_up_gold(from._internal_up_gold());
-  }
-  if (from.op_gold() != 0) {
-    _internal_set_op_gold(from._internal_op_gold());
   }
   if (from.op_type() != 0) {
     _internal_set_op_type(from._internal_op_type());
@@ -3737,16 +3967,23 @@ const char* MsgResult::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated .AndarBahar.MsgWinMsg win_msg = 4;
+      // int64 banker_total_win = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          banker_total_win_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated .AndarBahar.MsgWinMsg win_msg = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
           ptr -= 1;
           do {
             ptr += 1;
             ptr = ctx->ParseMessage(_internal_add_win_msg(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<34>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<42>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -3795,12 +4032,18 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_banker_op_gold(), target);
   }
 
-  // repeated .AndarBahar.MsgWinMsg win_msg = 4;
+  // int64 banker_total_win = 4;
+  if (this->banker_total_win() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_banker_total_win(), target);
+  }
+
+  // repeated .AndarBahar.MsgWinMsg win_msg = 5;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_win_msg_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(4, this->_internal_win_msg(i), target, stream);
+      InternalWriteMessage(5, this->_internal_win_msg(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -3819,7 +4062,7 @@ size_t MsgResult::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .AndarBahar.MsgWinMsg win_msg = 4;
+  // repeated .AndarBahar.MsgWinMsg win_msg = 5;
   total_size += 1UL * this->_internal_win_msg_size();
   for (const auto& msg : this->win_msg_) {
     total_size +=
@@ -3838,6 +4081,13 @@ size_t MsgResult::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_banker_op_gold());
+  }
+
+  // int64 banker_total_win = 4;
+  if (this->banker_total_win() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_banker_total_win());
   }
 
   // int32 win_index = 1;
@@ -3884,6 +4134,9 @@ void MsgResult::MergeFrom(const MsgResult& from) {
   }
   if (from.banker_op_gold() != 0) {
     _internal_set_banker_op_gold(from._internal_banker_op_gold());
+  }
+  if (from.banker_total_win() != 0) {
+    _internal_set_banker_total_win(from._internal_banker_total_win());
   }
   if (from.win_index() != 0) {
     _internal_set_win_index(from._internal_win_index());
@@ -3933,6 +4186,9 @@ template<> PROTOBUF_NOINLINE ::AndarBahar::ABBetInfo* Arena::CreateMaybeMessage<
 }
 template<> PROTOBUF_NOINLINE ::AndarBahar::ABPlayerData* Arena::CreateMaybeMessage< ::AndarBahar::ABPlayerData >(Arena* arena) {
   return Arena::CreateMessageInternal< ::AndarBahar::ABPlayerData >(arena);
+}
+template<> PROTOBUF_NOINLINE ::AndarBahar::ABUpWaitBankerInfo* Arena::CreateMaybeMessage< ::AndarBahar::ABUpWaitBankerInfo >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::AndarBahar::ABUpWaitBankerInfo >(arena);
 }
 template<> PROTOBUF_NOINLINE ::AndarBahar::MsgSceneInfo* Arena::CreateMaybeMessage< ::AndarBahar::MsgSceneInfo >(Arena* arena) {
   return Arena::CreateMessageInternal< ::AndarBahar::MsgSceneInfo >(arena);

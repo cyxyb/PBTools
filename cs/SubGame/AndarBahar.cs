@@ -28,55 +28,58 @@ namespace AndarBahar {
             "KAoJQUJCZXRJbmZvEgsKA2JldBgBIAEoAxIOCgZzdGF0dXMYAiABKAUigQEK",
             "DEFCUGxheWVyRGF0YRIPCgd1c2VyX2lkGAEgASgFEhAKCHdpbl9nb2xkGAIg",
             "ASgDEhIKCnRvdGFsX3BsYXkYAyABKAUSEAoId2luX3BsYXkYBCABKAUSKAoJ",
-            "YmV0X2luZm9zGAUgAygLMhUuQW5kYXJCYWhhci5BQkJldEluZm8irgMKDE1z",
-            "Z1NjZW5lSW5mbxILCgNiZXQYASADKAMSDwoHcmVjb3JkcxgCIAMoBRIRCgli",
-            "ZXRfbGltaXQYAyADKAUSFgoOdXBfYmFua2VyX2xpc3QYBCADKAUSFAoMcGxh",
-            "eWVyX2xpbWl0GAUgASgFEhAKCGJldF90aW1lGAYgASgFEhAKCG91dF90aW1l",
-            "GAcgASgFEg0KBXN0YXRlGAggASgFEgsKA211bBgJIAMoBRIRCgliYW5rZXJf",
-            "aWQYCiABKAUSEgoKYmFua2VyX21heBgLIAEoBRISCgpiYW5rZXJfbnVtGAwg",
-            "ASgFEhQKDGJhbmtlcl9saW1pdBgNIAEoAxIRCgliYXNlX2NhcmQYDiABKAUS",
-            "FQoNcmVkX3RvdGFsX2JldBgPIAEoAxIWCg5ibHVvX3RvdGFsX2JldBgQIAEo",
-            "AxIWCg5iYW5rZXJfb3BfZ29sZBgRIAEoAxIRCglyZWRfY2FyZHMYFCADKAUS",
-            "EgoKYmx1ZV9jYXJkcxgVIAMoBRItCgtwbGF5ZXJfbGlzdBgWIAMoCzIYLkFu",
-            "ZGFyQmFoYXIuQUJQbGF5ZXJEYXRhImQKEE1zZ1N0YXJ0R2FtZVJlc3ASEQoJ",
-            "YmFua2VyX2lkGAEgASgFEhIKCmJhbmtlcl9udW0YAiABKAUSEQoJYmFzZV9j",
-            "YXJkGAMgASgFEhYKDmJhbmtlcl9vcF9nb2xkGAQgASgDIiMKBk1zZ0JldBIL",
-            "CgNiZXQYASABKAMSDAoEYXJlYRgCIAEoBSJqCgpNc2dCZXRSZXNwEhAKCHJl",
-            "dF9jb2RlGAEgASgFEg8KB3VzZXJfaWQYAiABKAUSEAoIY2hhaXJfaWQYAyAB",
-            "KAUSJwoIYmV0X2luZm8YBCABKAsyFS5BbmRhckJhaGFyLkFCQmV0SW5mbyI9",
-            "Cg9Nc2dTZW5kQ2FyZFJlc3ASDAoEY2FyZBgBIAEoBRIMCgRhcmVhGAIgASgF",
-            "Eg4KBmlzX2VuZBgDIAEoCCJACgtNc2dPcEJhbmtlchIPCgdvcF90eXBlGAEg",
-            "ASgFEg8KB3VwX2dvbGQYAiABKAMSDwoHb3BfZ29sZBgDIAEoAyJXCg9Nc2dP",
-            "cEJhbmtlclJlc3ASEAoIcmV0X2NvZGUYASABKAUSDwoHdXNlcl9pZBgCIAEo",
-            "BRIQCghjaGFpcl9pZBgDIAEoBRIPCgdvcF90eXBlGAQgASgFImIKCU1zZ1dp",
-            "bk1zZxIPCgd1c2VyX2lkGAEgASgFEhAKCGNoYWlyX2lkGAIgASgFEhAKCHdp",
-            "bl9nb2xkGAMgASgDEhAKCG5ld19nb2xkGAQgASgDEg4KBmlzX3dpbhgFIAEo",
-            "CCJyCglNc2dSZXN1bHQSEQoJd2luX2luZGV4GAEgASgFEhIKCmJhbmtlcl93",
-            "aW4YAiABKAMSFgoOYmFua2VyX29wX2dvbGQYAyABKAMSJgoHd2luX21zZxgE",
-            "IAMoCzIVLkFuZGFyQmFoYXIuTXNnV2luTXNnKnUKCkVHYW1lU3RhdGUSDAoI",
-            "R1NfUmVhZHkQABIMCghHU19TdGFydBABEgsKB0dTX0JldDEQAhILCgdHU19C",
-            "ZXQyEAMSEAoMR1NfU2VuZENhcmQxEAQSEAoMR1NfU2VuZENhcmQyEAUSDQoJ",
-            "R1NfUmVzdWx0EAYqkgIKDUVNc2dJRFN1YkdhbWUSFQoRTXNnSURTdWJHYW1l",
-            "X051bGwQABIUChBNc2dJRFN1YkdhbWVfQmV0EAESGAoUTXNnSURTdWJHYW1l",
-            "X0JldFJlc3AQAhIZChVNc2dJRFN1YkdhbWVfT3BCYW5rZXIQAxIdChlNc2dJ",
-            "RFN1YkdhbWVfT3BCYW5rZXJSZXNwEAQSHgoaTXNnSURTdWJHYW1lX0dhbWVT",
-            "dGFydFJlc3AQBRIdChlNc2dJRFN1YkdhbWVfU2VuZENhcmRSZXNwEAYSHwob",
-            "TXNnSURTdWJHYW1lX0dhbWVSZXN1bHRSZXNwEAcSIAocTXNnSURTdWJHYW1l",
-            "X05vdGlmeVN0YXRlUmVzcBAIYgZwcm90bzM="));
+            "YmV0X2luZm9zGAUgAygLMhUuQW5kYXJCYWhhci5BQkJldEluZm8iNgoSQUJV",
+            "cFdhaXRCYW5rZXJJbmZvEgoKAklkGAEgASgFEhQKDE9wQmFua2VyR29sZBgC",
+            "IAEoAyLOAwoMTXNnU2NlbmVJbmZvEgsKA2JldBgBIAMoAxIPCgdyZWNvcmRz",
+            "GAIgAygFEhEKCWJldF9saW1pdBgDIAMoBRI2Cg51cF9iYW5rZXJfbGlzdBgE",
+            "IAMoCzIeLkFuZGFyQmFoYXIuQUJVcFdhaXRCYW5rZXJJbmZvEhQKDHBsYXll",
+            "cl9saW1pdBgFIAEoBRIQCghiZXRfdGltZRgGIAEoBRIQCghvdXRfdGltZRgH",
+            "IAEoBRINCgVzdGF0ZRgIIAEoBRILCgNtdWwYCSADKAUSEQoJYmFua2VyX2lk",
+            "GAogASgFEhIKCmJhbmtlcl9tYXgYCyABKAUSEgoKYmFua2VyX251bRgMIAEo",
+            "BRIUCgxiYW5rZXJfbGltaXQYDSABKAMSEQoJYmFzZV9jYXJkGA4gASgFEhUK",
+            "DXJlZF90b3RhbF9iZXQYDyABKAMSFgoOYmx1b190b3RhbF9iZXQYECABKAMS",
+            "FgoOYmFua2VyX29wX2dvbGQYESABKAMSEQoJcmVkX2NhcmRzGBQgAygFEhIK",
+            "CmJsdWVfY2FyZHMYFSADKAUSLQoLcGxheWVyX2xpc3QYFiADKAsyGC5BbmRh",
+            "ckJhaGFyLkFCUGxheWVyRGF0YSJkChBNc2dTdGFydEdhbWVSZXNwEhEKCWJh",
+            "bmtlcl9pZBgBIAEoBRISCgpiYW5rZXJfbnVtGAIgASgFEhEKCWJhc2VfY2Fy",
+            "ZBgDIAEoBRIWCg5iYW5rZXJfb3BfZ29sZBgEIAEoAyIjCgZNc2dCZXQSCwoD",
+            "YmV0GAEgASgDEgwKBGFyZWEYAiABKAUiagoKTXNnQmV0UmVzcBIQCghyZXRf",
+            "Y29kZRgBIAEoBRIPCgd1c2VyX2lkGAIgASgFEhAKCGNoYWlyX2lkGAMgASgF",
+            "EicKCGJldF9pbmZvGAQgASgLMhUuQW5kYXJCYWhhci5BQkJldEluZm8iPQoP",
+            "TXNnU2VuZENhcmRSZXNwEgwKBGNhcmQYASABKAUSDAoEYXJlYRgCIAEoBRIO",
+            "CgZpc19lbmQYAyABKAgiLwoLTXNnT3BCYW5rZXISDwoHb3BfdHlwZRgBIAEo",
+            "BRIPCgd1cF9nb2xkGAIgASgDIlcKD01zZ09wQmFua2VyUmVzcBIQCghyZXRf",
+            "Y29kZRgBIAEoBRIPCgd1c2VyX2lkGAIgASgFEhAKCGNoYWlyX2lkGAMgASgF",
+            "Eg8KB29wX3R5cGUYBCABKAUiYgoJTXNnV2luTXNnEg8KB3VzZXJfaWQYASAB",
+            "KAUSEAoIY2hhaXJfaWQYAiABKAUSEAoId2luX2dvbGQYAyABKAMSEAoIbmV3",
+            "X2dvbGQYBCABKAMSDgoGaXNfd2luGAUgASgIIowBCglNc2dSZXN1bHQSEQoJ",
+            "d2luX2luZGV4GAEgASgFEhIKCmJhbmtlcl93aW4YAiABKAMSFgoOYmFua2Vy",
+            "X29wX2dvbGQYAyABKAMSGAoQYmFua2VyX3RvdGFsX3dpbhgEIAEoAxImCgd3",
+            "aW5fbXNnGAUgAygLMhUuQW5kYXJCYWhhci5Nc2dXaW5Nc2cqdQoKRUdhbWVT",
+            "dGF0ZRIMCghHU19SZWFkeRAAEgwKCEdTX1N0YXJ0EAESCwoHR1NfQmV0MRAC",
+            "EgsKB0dTX0JldDIQAxIQCgxHU19TZW5kQ2FyZDEQBBIQCgxHU19TZW5kQ2Fy",
+            "ZDIQBRINCglHU19SZXN1bHQQBiqSAgoNRU1zZ0lEU3ViR2FtZRIVChFNc2dJ",
+            "RFN1YkdhbWVfTnVsbBAAEhQKEE1zZ0lEU3ViR2FtZV9CZXQQARIYChRNc2dJ",
+            "RFN1YkdhbWVfQmV0UmVzcBACEhkKFU1zZ0lEU3ViR2FtZV9PcEJhbmtlchAD",
+            "Eh0KGU1zZ0lEU3ViR2FtZV9PcEJhbmtlclJlc3AQBBIeChpNc2dJRFN1Ykdh",
+            "bWVfR2FtZVN0YXJ0UmVzcBAFEh0KGU1zZ0lEU3ViR2FtZV9TZW5kQ2FyZFJl",
+            "c3AQBhIfChtNc2dJRFN1YkdhbWVfR2FtZVJlc3VsdFJlc3AQBxIgChxNc2dJ",
+            "RFN1YkdhbWVfTm90aWZ5U3RhdGVSZXNwEAhiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::AndarBahar.EGameState), typeof(global::AndarBahar.EMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.ABBetInfo), global::AndarBahar.ABBetInfo.Parser, new[]{ "Bet", "Status" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.ABPlayerData), global::AndarBahar.ABPlayerData.Parser, new[]{ "UserId", "WinGold", "TotalPlay", "WinPlay", "BetInfos" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.ABUpWaitBankerInfo), global::AndarBahar.ABUpWaitBankerInfo.Parser, new[]{ "Id", "OpBankerGold" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgSceneInfo), global::AndarBahar.MsgSceneInfo.Parser, new[]{ "Bet", "Records", "BetLimit", "UpBankerList", "PlayerLimit", "BetTime", "OutTime", "State", "Mul", "BankerId", "BankerMax", "BankerNum", "BankerLimit", "BaseCard", "RedTotalBet", "BluoTotalBet", "BankerOpGold", "RedCards", "BlueCards", "PlayerList" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgStartGameResp), global::AndarBahar.MsgStartGameResp.Parser, new[]{ "BankerId", "BankerNum", "BaseCard", "BankerOpGold" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgBet), global::AndarBahar.MsgBet.Parser, new[]{ "Bet", "Area" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgBetResp), global::AndarBahar.MsgBetResp.Parser, new[]{ "RetCode", "UserId", "ChairId", "BetInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgSendCardResp), global::AndarBahar.MsgSendCardResp.Parser, new[]{ "Card", "Area", "IsEnd" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgOpBanker), global::AndarBahar.MsgOpBanker.Parser, new[]{ "OpType", "UpGold", "OpGold" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgOpBanker), global::AndarBahar.MsgOpBanker.Parser, new[]{ "OpType", "UpGold" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgOpBankerResp), global::AndarBahar.MsgOpBankerResp.Parser, new[]{ "RetCode", "UserId", "ChairId", "OpType" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgWinMsg), global::AndarBahar.MsgWinMsg.Parser, new[]{ "UserId", "ChairId", "WinGold", "NewGold", "IsWin" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgResult), global::AndarBahar.MsgResult.Parser, new[]{ "WinIndex", "BankerWin", "BankerOpGold", "WinMsg" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgResult), global::AndarBahar.MsgResult.Parser, new[]{ "WinIndex", "BankerWin", "BankerOpGold", "BankerTotalWin", "WinMsg" }, null, null, null, null)
           }));
     }
     #endregion
@@ -684,6 +687,220 @@ namespace AndarBahar {
 
   }
 
+  public sealed partial class ABUpWaitBankerInfo : pb::IMessage<ABUpWaitBankerInfo>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ABUpWaitBankerInfo> _parser = new pb::MessageParser<ABUpWaitBankerInfo>(() => new ABUpWaitBankerInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ABUpWaitBankerInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ABUpWaitBankerInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ABUpWaitBankerInfo(ABUpWaitBankerInfo other) : this() {
+      id_ = other.id_;
+      opBankerGold_ = other.opBankerGold_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ABUpWaitBankerInfo Clone() {
+      return new ABUpWaitBankerInfo(this);
+    }
+
+    /// <summary>Field number for the "Id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private int id_;
+    /// <summary>
+    /// 庄家ID
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "OpBankerGold" field.</summary>
+    public const int OpBankerGoldFieldNumber = 2;
+    private long opBankerGold_;
+    /// <summary>
+    /// 用户可输赢金币是否要下庄
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long OpBankerGold {
+      get { return opBankerGold_; }
+      set {
+        opBankerGold_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ABUpWaitBankerInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ABUpWaitBankerInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (OpBankerGold != other.OpBankerGold) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Id != 0) hash ^= Id.GetHashCode();
+      if (OpBankerGold != 0L) hash ^= OpBankerGold.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Id != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Id);
+      }
+      if (OpBankerGold != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(OpBankerGold);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Id);
+      }
+      if (OpBankerGold != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(OpBankerGold);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Id != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+      }
+      if (OpBankerGold != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(OpBankerGold);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ABUpWaitBankerInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id != 0) {
+        Id = other.Id;
+      }
+      if (other.OpBankerGold != 0L) {
+        OpBankerGold = other.OpBankerGold;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Id = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            OpBankerGold = input.ReadInt64();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Id = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            OpBankerGold = input.ReadInt64();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   /// <summary>
   ///场景消息
   /// </summary>
@@ -699,7 +916,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[2]; }
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -785,14 +1002,14 @@ namespace AndarBahar {
 
     /// <summary>Field number for the "up_banker_list" field.</summary>
     public const int UpBankerListFieldNumber = 4;
-    private static readonly pb::FieldCodec<int> _repeated_upBankerList_codec
-        = pb::FieldCodec.ForInt32(34);
-    private readonly pbc::RepeatedField<int> upBankerList_ = new pbc::RepeatedField<int>();
+    private static readonly pb::FieldCodec<global::AndarBahar.ABUpWaitBankerInfo> _repeated_upBankerList_codec
+        = pb::FieldCodec.ForMessage(34, global::AndarBahar.ABUpWaitBankerInfo.Parser);
+    private readonly pbc::RepeatedField<global::AndarBahar.ABUpWaitBankerInfo> upBankerList_ = new pbc::RepeatedField<global::AndarBahar.ABUpWaitBankerInfo>();
     /// <summary>
     ///上庄申列表
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<int> UpBankerList {
+    public pbc::RepeatedField<global::AndarBahar.ABUpWaitBankerInfo> UpBankerList {
       get { return upBankerList_; }
     }
 
@@ -1349,8 +1566,7 @@ namespace AndarBahar {
             betLimit_.AddEntriesFrom(input, _repeated_betLimit_codec);
             break;
           }
-          case 34:
-          case 32: {
+          case 34: {
             upBankerList_.AddEntriesFrom(input, _repeated_upBankerList_codec);
             break;
           }
@@ -1450,8 +1666,7 @@ namespace AndarBahar {
             betLimit_.AddEntriesFrom(ref input, _repeated_betLimit_codec);
             break;
           }
-          case 34:
-          case 32: {
+          case 34: {
             upBankerList_.AddEntriesFrom(ref input, _repeated_upBankerList_codec);
             break;
           }
@@ -1544,7 +1759,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[3]; }
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1839,7 +2054,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[4]; }
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2056,7 +2271,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[5]; }
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2357,7 +2572,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[6]; }
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2613,7 +2828,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[7]; }
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2632,7 +2847,6 @@ namespace AndarBahar {
     public MsgOpBanker(MsgOpBanker other) : this() {
       opType_ = other.opType_;
       upGold_ = other.upGold_;
-      opGold_ = other.opGold_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2669,20 +2883,6 @@ namespace AndarBahar {
       }
     }
 
-    /// <summary>Field number for the "op_gold" field.</summary>
-    public const int OpGoldFieldNumber = 3;
-    private long opGold_;
-    /// <summary>
-    /// 庄家能输赢的金币
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long OpGold {
-      get { return opGold_; }
-      set {
-        opGold_ = value;
-      }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as MsgOpBanker);
@@ -2698,7 +2898,6 @@ namespace AndarBahar {
       }
       if (OpType != other.OpType) return false;
       if (UpGold != other.UpGold) return false;
-      if (OpGold != other.OpGold) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2707,7 +2906,6 @@ namespace AndarBahar {
       int hash = 1;
       if (OpType != 0) hash ^= OpType.GetHashCode();
       if (UpGold != 0L) hash ^= UpGold.GetHashCode();
-      if (OpGold != 0L) hash ^= OpGold.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2732,10 +2930,6 @@ namespace AndarBahar {
         output.WriteRawTag(16);
         output.WriteInt64(UpGold);
       }
-      if (OpGold != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(OpGold);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2753,10 +2947,6 @@ namespace AndarBahar {
         output.WriteRawTag(16);
         output.WriteInt64(UpGold);
       }
-      if (OpGold != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(OpGold);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2771,9 +2961,6 @@ namespace AndarBahar {
       }
       if (UpGold != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(UpGold);
-      }
-      if (OpGold != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(OpGold);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2791,9 +2978,6 @@ namespace AndarBahar {
       }
       if (other.UpGold != 0L) {
         UpGold = other.UpGold;
-      }
-      if (other.OpGold != 0L) {
-        OpGold = other.OpGold;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2815,10 +2999,6 @@ namespace AndarBahar {
           }
           case 16: {
             UpGold = input.ReadInt64();
-            break;
-          }
-          case 24: {
-            OpGold = input.ReadInt64();
             break;
           }
         }
@@ -2843,10 +3023,6 @@ namespace AndarBahar {
             UpGold = input.ReadInt64();
             break;
           }
-          case 24: {
-            OpGold = input.ReadInt64();
-            break;
-          }
         }
       }
     }
@@ -2869,7 +3045,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[8]; }
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3164,7 +3340,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[9]; }
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3498,7 +3674,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[10]; }
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3518,6 +3694,7 @@ namespace AndarBahar {
       winIndex_ = other.winIndex_;
       bankerWin_ = other.bankerWin_;
       bankerOpGold_ = other.bankerOpGold_;
+      bankerTotalWin_ = other.bankerTotalWin_;
       winMsg_ = other.winMsg_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -3569,10 +3746,24 @@ namespace AndarBahar {
       }
     }
 
+    /// <summary>Field number for the "banker_total_win" field.</summary>
+    public const int BankerTotalWinFieldNumber = 4;
+    private long bankerTotalWin_;
+    /// <summary>
+    ///庄家总输赢金币
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long BankerTotalWin {
+      get { return bankerTotalWin_; }
+      set {
+        bankerTotalWin_ = value;
+      }
+    }
+
     /// <summary>Field number for the "win_msg" field.</summary>
-    public const int WinMsgFieldNumber = 4;
+    public const int WinMsgFieldNumber = 5;
     private static readonly pb::FieldCodec<global::AndarBahar.MsgWinMsg> _repeated_winMsg_codec
-        = pb::FieldCodec.ForMessage(34, global::AndarBahar.MsgWinMsg.Parser);
+        = pb::FieldCodec.ForMessage(42, global::AndarBahar.MsgWinMsg.Parser);
     private readonly pbc::RepeatedField<global::AndarBahar.MsgWinMsg> winMsg_ = new pbc::RepeatedField<global::AndarBahar.MsgWinMsg>();
     /// <summary>
     ///玩家输赢信息
@@ -3598,6 +3789,7 @@ namespace AndarBahar {
       if (WinIndex != other.WinIndex) return false;
       if (BankerWin != other.BankerWin) return false;
       if (BankerOpGold != other.BankerOpGold) return false;
+      if (BankerTotalWin != other.BankerTotalWin) return false;
       if(!winMsg_.Equals(other.winMsg_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -3608,6 +3800,7 @@ namespace AndarBahar {
       if (WinIndex != 0) hash ^= WinIndex.GetHashCode();
       if (BankerWin != 0L) hash ^= BankerWin.GetHashCode();
       if (BankerOpGold != 0L) hash ^= BankerOpGold.GetHashCode();
+      if (BankerTotalWin != 0L) hash ^= BankerTotalWin.GetHashCode();
       hash ^= winMsg_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -3637,6 +3830,10 @@ namespace AndarBahar {
         output.WriteRawTag(24);
         output.WriteInt64(BankerOpGold);
       }
+      if (BankerTotalWin != 0L) {
+        output.WriteRawTag(32);
+        output.WriteInt64(BankerTotalWin);
+      }
       winMsg_.WriteTo(output, _repeated_winMsg_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -3659,6 +3856,10 @@ namespace AndarBahar {
         output.WriteRawTag(24);
         output.WriteInt64(BankerOpGold);
       }
+      if (BankerTotalWin != 0L) {
+        output.WriteRawTag(32);
+        output.WriteInt64(BankerTotalWin);
+      }
       winMsg_.WriteTo(ref output, _repeated_winMsg_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -3677,6 +3878,9 @@ namespace AndarBahar {
       }
       if (BankerOpGold != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(BankerOpGold);
+      }
+      if (BankerTotalWin != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(BankerTotalWin);
       }
       size += winMsg_.CalculateSize(_repeated_winMsg_codec);
       if (_unknownFields != null) {
@@ -3698,6 +3902,9 @@ namespace AndarBahar {
       }
       if (other.BankerOpGold != 0L) {
         BankerOpGold = other.BankerOpGold;
+      }
+      if (other.BankerTotalWin != 0L) {
+        BankerTotalWin = other.BankerTotalWin;
       }
       winMsg_.Add(other.winMsg_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -3726,7 +3933,11 @@ namespace AndarBahar {
             BankerOpGold = input.ReadInt64();
             break;
           }
-          case 34: {
+          case 32: {
+            BankerTotalWin = input.ReadInt64();
+            break;
+          }
+          case 42: {
             winMsg_.AddEntriesFrom(input, _repeated_winMsg_codec);
             break;
           }
@@ -3756,7 +3967,11 @@ namespace AndarBahar {
             BankerOpGold = input.ReadInt64();
             break;
           }
-          case 34: {
+          case 32: {
+            BankerTotalWin = input.ReadInt64();
+            break;
+          }
+          case 42: {
             winMsg_.AddEntriesFrom(ref input, _repeated_winMsg_codec);
             break;
           }
