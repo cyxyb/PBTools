@@ -1721,6 +1721,7 @@ class MsgOpBanker PROTOBUF_FINAL :
 
   enum : int {
     kUpGoldFieldNumber = 2,
+    kOpGoldFieldNumber = 3,
     kOpTypeFieldNumber = 1,
   };
   // int64 up_gold = 2;
@@ -1730,6 +1731,15 @@ class MsgOpBanker PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::int64 _internal_up_gold() const;
   void _internal_set_up_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int64 op_gold = 3;
+  void clear_op_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 op_gold() const;
+  void set_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_op_gold() const;
+  void _internal_set_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
   // int32 op_type = 1;
@@ -1749,6 +1759,7 @@ class MsgOpBanker PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int64 up_gold_;
+  ::PROTOBUF_NAMESPACE_ID::int64 op_gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 op_type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_AndarBahar_2eproto;
@@ -3447,6 +3458,26 @@ inline void MsgOpBanker::_internal_set_up_gold(::PROTOBUF_NAMESPACE_ID::int64 va
 inline void MsgOpBanker::set_up_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_up_gold(value);
   // @@protoc_insertion_point(field_set:AndarBahar.MsgOpBanker.up_gold)
+}
+
+// int64 op_gold = 3;
+inline void MsgOpBanker::clear_op_gold() {
+  op_gold_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgOpBanker::_internal_op_gold() const {
+  return op_gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgOpBanker::op_gold() const {
+  // @@protoc_insertion_point(field_get:AndarBahar.MsgOpBanker.op_gold)
+  return _internal_op_gold();
+}
+inline void MsgOpBanker::_internal_set_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  op_gold_ = value;
+}
+inline void MsgOpBanker::set_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_op_gold(value);
+  // @@protoc_insertion_point(field_set:AndarBahar.MsgOpBanker.op_gold)
 }
 
 // -------------------------------------------------------------------

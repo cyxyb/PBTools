@@ -297,6 +297,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_AndarBahar_2eproto::offsets[] 
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::AndarBahar::MsgOpBanker, op_type_),
   PROTOBUF_FIELD_OFFSET(::AndarBahar::MsgOpBanker, up_gold_),
+  PROTOBUF_FIELD_OFFSET(::AndarBahar::MsgOpBanker, op_gold_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::AndarBahar::MsgOpBankerResp, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -335,9 +336,9 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 58, -1, sizeof(::AndarBahar::MsgBetResp)},
   { 67, -1, sizeof(::AndarBahar::MsgSendCardResp)},
   { 75, -1, sizeof(::AndarBahar::MsgOpBanker)},
-  { 82, -1, sizeof(::AndarBahar::MsgOpBankerResp)},
-  { 91, -1, sizeof(::AndarBahar::MsgWinMsg)},
-  { 101, -1, sizeof(::AndarBahar::MsgResult)},
+  { 83, -1, sizeof(::AndarBahar::MsgOpBankerResp)},
+  { 92, -1, sizeof(::AndarBahar::MsgWinMsg)},
+  { 102, -1, sizeof(::AndarBahar::MsgResult)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -378,26 +379,27 @@ const char descriptor_table_protodef_AndarBahar_2eproto[] PROTOBUF_SECTION_VARIA
   "de\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\020\n\010chair_id\030\003 "
   "\001(\005\022\'\n\010bet_info\030\004 \001(\0132\025.AndarBahar.ABBet"
   "Info\"=\n\017MsgSendCardResp\022\014\n\004card\030\001 \001(\005\022\014\n"
-  "\004area\030\002 \001(\005\022\016\n\006is_end\030\003 \001(\010\"/\n\013MsgOpBank"
-  "er\022\017\n\007op_type\030\001 \001(\005\022\017\n\007up_gold\030\002 \001(\003\"W\n\017"
-  "MsgOpBankerResp\022\020\n\010ret_code\030\001 \001(\005\022\017\n\007use"
-  "r_id\030\002 \001(\005\022\020\n\010chair_id\030\003 \001(\005\022\017\n\007op_type\030"
-  "\004 \001(\005\"b\n\tMsgWinMsg\022\017\n\007user_id\030\001 \001(\005\022\020\n\010c"
-  "hair_id\030\002 \001(\005\022\020\n\010win_gold\030\003 \001(\003\022\020\n\010new_g"
-  "old\030\004 \001(\003\022\016\n\006is_win\030\005 \001(\010\"r\n\tMsgResult\022\021"
-  "\n\twin_index\030\001 \001(\005\022\022\n\nbanker_win\030\002 \001(\003\022\026\n"
-  "\016banker_op_gold\030\003 \001(\003\022&\n\007win_msg\030\004 \003(\0132\025"
-  ".AndarBahar.MsgWinMsg*u\n\nEGameState\022\014\n\010G"
-  "S_Ready\020\000\022\014\n\010GS_Start\020\001\022\013\n\007GS_Bet1\020\002\022\013\n\007"
-  "GS_Bet2\020\003\022\020\n\014GS_SendCard1\020\004\022\020\n\014GS_SendCa"
-  "rd2\020\005\022\r\n\tGS_Result\020\006*\222\002\n\rEMsgIDSubGame\022\025"
-  "\n\021MsgIDSubGame_Null\020\000\022\024\n\020MsgIDSubGame_Be"
-  "t\020\001\022\030\n\024MsgIDSubGame_BetResp\020\002\022\031\n\025MsgIDSu"
-  "bGame_OpBanker\020\003\022\035\n\031MsgIDSubGame_OpBanke"
-  "rResp\020\004\022\036\n\032MsgIDSubGame_GameStartResp\020\005\022"
-  "\035\n\031MsgIDSubGame_SendCardResp\020\006\022\037\n\033MsgIDS"
-  "ubGame_GameResultResp\020\007\022 \n\034MsgIDSubGame_"
-  "NotifyStateResp\020\010b\006proto3"
+  "\004area\030\002 \001(\005\022\016\n\006is_end\030\003 \001(\010\"@\n\013MsgOpBank"
+  "er\022\017\n\007op_type\030\001 \001(\005\022\017\n\007up_gold\030\002 \001(\003\022\017\n\007"
+  "op_gold\030\003 \001(\003\"W\n\017MsgOpBankerResp\022\020\n\010ret_"
+  "code\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\020\n\010chair_id\030"
+  "\003 \001(\005\022\017\n\007op_type\030\004 \001(\005\"b\n\tMsgWinMsg\022\017\n\007u"
+  "ser_id\030\001 \001(\005\022\020\n\010chair_id\030\002 \001(\005\022\020\n\010win_go"
+  "ld\030\003 \001(\003\022\020\n\010new_gold\030\004 \001(\003\022\016\n\006is_win\030\005 \001"
+  "(\010\"r\n\tMsgResult\022\021\n\twin_index\030\001 \001(\005\022\022\n\nba"
+  "nker_win\030\002 \001(\003\022\026\n\016banker_op_gold\030\003 \001(\003\022&"
+  "\n\007win_msg\030\004 \003(\0132\025.AndarBahar.MsgWinMsg*u"
+  "\n\nEGameState\022\014\n\010GS_Ready\020\000\022\014\n\010GS_Start\020\001"
+  "\022\013\n\007GS_Bet1\020\002\022\013\n\007GS_Bet2\020\003\022\020\n\014GS_SendCar"
+  "d1\020\004\022\020\n\014GS_SendCard2\020\005\022\r\n\tGS_Result\020\006*\222\002"
+  "\n\rEMsgIDSubGame\022\025\n\021MsgIDSubGame_Null\020\000\022\024"
+  "\n\020MsgIDSubGame_Bet\020\001\022\030\n\024MsgIDSubGame_Bet"
+  "Resp\020\002\022\031\n\025MsgIDSubGame_OpBanker\020\003\022\035\n\031Msg"
+  "IDSubGame_OpBankerResp\020\004\022\036\n\032MsgIDSubGame"
+  "_GameStartResp\020\005\022\035\n\031MsgIDSubGame_SendCar"
+  "dResp\020\006\022\037\n\033MsgIDSubGame_GameResultResp\020\007"
+  "\022 \n\034MsgIDSubGame_NotifyStateResp\020\010b\006prot"
+  "o3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_AndarBahar_2eproto_deps[1] = {
 };
@@ -416,7 +418,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_And
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_AndarBahar_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_AndarBahar_2eproto = {
-  false, false, descriptor_table_protodef_AndarBahar_2eproto, "AndarBahar.proto", 1705,
+  false, false, descriptor_table_protodef_AndarBahar_2eproto, "AndarBahar.proto", 1722,
   &descriptor_table_AndarBahar_2eproto_once, descriptor_table_AndarBahar_2eproto_sccs, descriptor_table_AndarBahar_2eproto_deps, 11, 0,
   schemas, file_default_instances, TableStruct_AndarBahar_2eproto::offsets,
   file_level_metadata_AndarBahar_2eproto, 11, file_level_enum_descriptors_AndarBahar_2eproto, file_level_service_descriptors_AndarBahar_2eproto,
@@ -2901,6 +2903,13 @@ const char* MsgOpBanker::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
+      // int64 op_gold = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          op_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
@@ -2941,6 +2950,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_up_gold(), target);
   }
 
+  // int64 op_gold = 3;
+  if (this->op_gold() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_op_gold(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -2962,6 +2977,13 @@ size_t MsgOpBanker::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_up_gold());
+  }
+
+  // int64 op_gold = 3;
+  if (this->op_gold() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_op_gold());
   }
 
   // int32 op_type = 1;
@@ -3004,6 +3026,9 @@ void MsgOpBanker::MergeFrom(const MsgOpBanker& from) {
 
   if (from.up_gold() != 0) {
     _internal_set_up_gold(from._internal_up_gold());
+  }
+  if (from.op_gold() != 0) {
+    _internal_set_op_gold(from._internal_op_gold());
   }
   if (from.op_type() != 0) {
     _internal_set_op_type(from._internal_op_type());
