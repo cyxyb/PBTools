@@ -775,6 +775,7 @@ class ABBankerInfo PROTOBUF_FINAL :
     kIdFieldNumber = 1,
     kRoundFieldNumber = 3,
     kTotalWinFieldNumber = 4,
+    kIsDownFieldNumber = 5,
   };
   // int64 op_gold = 2;
   void clear_op_gold();
@@ -812,6 +813,15 @@ class ABBankerInfo PROTOBUF_FINAL :
   void _internal_set_total_win(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
+  // bool is_down = 5;
+  void clear_is_down();
+  bool is_down() const;
+  void set_is_down(bool value);
+  private:
+  bool _internal_is_down() const;
+  void _internal_set_is_down(bool value);
+  public:
+
   // @@protoc_insertion_point(class_scope:AndarBahar.ABBankerInfo)
  private:
   class _Internal;
@@ -823,6 +833,7 @@ class ABBankerInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 id_;
   ::PROTOBUF_NAMESPACE_ID::int32 round_;
   ::PROTOBUF_NAMESPACE_ID::int64 total_win_;
+  bool is_down_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_AndarBahar_2eproto;
 };
@@ -2164,6 +2175,7 @@ class MsgOpBankerResp PROTOBUF_FINAL :
     kUserIdFieldNumber = 2,
     kChairIdFieldNumber = 3,
     kOpTypeFieldNumber = 4,
+    kUpGoldFieldNumber = 5,
   };
   // int32 ret_code = 1;
   void clear_ret_code();
@@ -2201,6 +2213,15 @@ class MsgOpBankerResp PROTOBUF_FINAL :
   void _internal_set_op_type(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int64 up_gold = 5;
+  void clear_up_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 up_gold() const;
+  void set_up_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_up_gold() const;
+  void _internal_set_up_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:AndarBahar.MsgOpBankerResp)
  private:
   class _Internal;
@@ -2212,6 +2233,7 @@ class MsgOpBankerResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 op_type_;
+  ::PROTOBUF_NAMESPACE_ID::int64 up_gold_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_AndarBahar_2eproto;
 };
@@ -2871,6 +2893,26 @@ inline void ABBankerInfo::_internal_set_total_win(::PROTOBUF_NAMESPACE_ID::int64
 inline void ABBankerInfo::set_total_win(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_total_win(value);
   // @@protoc_insertion_point(field_set:AndarBahar.ABBankerInfo.total_win)
+}
+
+// bool is_down = 5;
+inline void ABBankerInfo::clear_is_down() {
+  is_down_ = false;
+}
+inline bool ABBankerInfo::_internal_is_down() const {
+  return is_down_;
+}
+inline bool ABBankerInfo::is_down() const {
+  // @@protoc_insertion_point(field_get:AndarBahar.ABBankerInfo.is_down)
+  return _internal_is_down();
+}
+inline void ABBankerInfo::_internal_set_is_down(bool value) {
+  
+  is_down_ = value;
+}
+inline void ABBankerInfo::set_is_down(bool value) {
+  _internal_set_is_down(value);
+  // @@protoc_insertion_point(field_set:AndarBahar.ABBankerInfo.is_down)
 }
 
 // -------------------------------------------------------------------
@@ -3988,6 +4030,26 @@ inline void MsgOpBankerResp::_internal_set_op_type(::PROTOBUF_NAMESPACE_ID::int3
 inline void MsgOpBankerResp::set_op_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_op_type(value);
   // @@protoc_insertion_point(field_set:AndarBahar.MsgOpBankerResp.op_type)
+}
+
+// int64 up_gold = 5;
+inline void MsgOpBankerResp::clear_up_gold() {
+  up_gold_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgOpBankerResp::_internal_up_gold() const {
+  return up_gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgOpBankerResp::up_gold() const {
+  // @@protoc_insertion_point(field_get:AndarBahar.MsgOpBankerResp.up_gold)
+  return _internal_up_gold();
+}
+inline void MsgOpBankerResp::_internal_set_up_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  up_gold_ = value;
+}
+inline void MsgOpBankerResp::set_up_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_up_gold(value);
+  // @@protoc_insertion_point(field_set:AndarBahar.MsgOpBankerResp.up_gold)
 }
 
 // -------------------------------------------------------------------

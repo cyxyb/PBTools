@@ -51,8 +51,9 @@ message ABBankerInfo
 {
 	int32				id				= 1;	// 庄家ID
 	int64				op_gold			= 2;	// 用户可输赢金币是否要下庄
-	int32				round			= 3;	//已经上庄轮数 包涵本局	
-	int64				total_win		= 4;	//庄家总输赢金币
+	int32				round			= 3;	// 已经上庄轮数 包涵本局	
+	int64				total_win		= 4;	// 庄家总输赢金币
+	bool				is_down			= 5;	// 是否要下庄 服务器用的
 };
 
 //场景消息
@@ -124,6 +125,8 @@ message MsgOpBankerResp
 	int32				user_id			= 2;	//玩家id
 	int32				chair_id		= 3;	//玩家椅子号
 	int32				op_type			= 4;	// 1 = 上庄 2 = 下庄
+	int64				up_gold			= 5;	// 携带金币
+
 }
 
 
