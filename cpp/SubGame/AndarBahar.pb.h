@@ -635,6 +635,7 @@ class MsgSceneInfo PROTOBUF_FINAL :
     kBaseCardFieldNumber = 14,
     kRedTotalBetFieldNumber = 15,
     kBluoTotalBetFieldNumber = 16,
+    kBankerOpGoldFieldNumber = 17,
   };
   // repeated int64 bet = 1;
   int bet_size() const;
@@ -907,6 +908,15 @@ class MsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_bluo_total_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
+  // int64 banker_op_gold = 17;
+  void clear_banker_op_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 banker_op_gold() const;
+  void set_banker_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_banker_op_gold() const;
+  void _internal_set_banker_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:AndarBahar.MsgSceneInfo)
  private:
   class _Internal;
@@ -940,6 +950,7 @@ class MsgSceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 base_card_;
   ::PROTOBUF_NAMESPACE_ID::int64 red_total_bet_;
   ::PROTOBUF_NAMESPACE_ID::int64 bluo_total_bet_;
+  ::PROTOBUF_NAMESPACE_ID::int64 banker_op_gold_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_AndarBahar_2eproto;
 };
@@ -1059,6 +1070,7 @@ class MsgStartGameResp PROTOBUF_FINAL :
   enum : int {
     kBankerIdFieldNumber = 1,
     kBankerNumFieldNumber = 2,
+    kBankerOpGoldFieldNumber = 4,
     kBaseCardFieldNumber = 3,
   };
   // int32 banker_id = 1;
@@ -1079,6 +1091,15 @@ class MsgStartGameResp PROTOBUF_FINAL :
   void _internal_set_banker_num(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int64 banker_op_gold = 4;
+  void clear_banker_op_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 banker_op_gold() const;
+  void set_banker_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_banker_op_gold() const;
+  void _internal_set_banker_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
   // int32 base_card = 3;
   void clear_base_card();
   ::PROTOBUF_NAMESPACE_ID::int32 base_card() const;
@@ -1097,6 +1118,7 @@ class MsgStartGameResp PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int32 banker_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 banker_num_;
+  ::PROTOBUF_NAMESPACE_ID::int64 banker_op_gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 base_card_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_AndarBahar_2eproto;
@@ -2194,10 +2216,12 @@ class MsgResult PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kWinMsgFieldNumber = 2,
+    kWinMsgFieldNumber = 4,
+    kBankerWinFieldNumber = 2,
+    kBankerOpGoldFieldNumber = 3,
     kWinIndexFieldNumber = 1,
   };
-  // repeated .AndarBahar.MsgWinMsg win_msg = 2;
+  // repeated .AndarBahar.MsgWinMsg win_msg = 4;
   int win_msg_size() const;
   private:
   int _internal_win_msg_size() const;
@@ -2214,6 +2238,24 @@ class MsgResult PROTOBUF_FINAL :
   ::AndarBahar::MsgWinMsg* add_win_msg();
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::AndarBahar::MsgWinMsg >&
       win_msg() const;
+
+  // int64 banker_win = 2;
+  void clear_banker_win();
+  ::PROTOBUF_NAMESPACE_ID::int64 banker_win() const;
+  void set_banker_win(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_banker_win() const;
+  void _internal_set_banker_win(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int64 banker_op_gold = 3;
+  void clear_banker_op_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 banker_op_gold() const;
+  void set_banker_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_banker_op_gold() const;
+  void _internal_set_banker_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
 
   // int32 win_index = 1;
   void clear_win_index();
@@ -2232,6 +2274,8 @@ class MsgResult PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::AndarBahar::MsgWinMsg > win_msg_;
+  ::PROTOBUF_NAMESPACE_ID::int64 banker_win_;
+  ::PROTOBUF_NAMESPACE_ID::int64 banker_op_gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 win_index_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_AndarBahar_2eproto;
@@ -2869,6 +2913,26 @@ inline void MsgSceneInfo::set_bluo_total_bet(::PROTOBUF_NAMESPACE_ID::int64 valu
   // @@protoc_insertion_point(field_set:AndarBahar.MsgSceneInfo.bluo_total_bet)
 }
 
+// int64 banker_op_gold = 17;
+inline void MsgSceneInfo::clear_banker_op_gold() {
+  banker_op_gold_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSceneInfo::_internal_banker_op_gold() const {
+  return banker_op_gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSceneInfo::banker_op_gold() const {
+  // @@protoc_insertion_point(field_get:AndarBahar.MsgSceneInfo.banker_op_gold)
+  return _internal_banker_op_gold();
+}
+inline void MsgSceneInfo::_internal_set_banker_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  banker_op_gold_ = value;
+}
+inline void MsgSceneInfo::set_banker_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_banker_op_gold(value);
+  // @@protoc_insertion_point(field_set:AndarBahar.MsgSceneInfo.banker_op_gold)
+}
+
 // repeated int32 red_cards = 20;
 inline int MsgSceneInfo::_internal_red_cards_size() const {
   return red_cards_.size();
@@ -3064,6 +3128,26 @@ inline void MsgStartGameResp::_internal_set_base_card(::PROTOBUF_NAMESPACE_ID::i
 inline void MsgStartGameResp::set_base_card(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_base_card(value);
   // @@protoc_insertion_point(field_set:AndarBahar.MsgStartGameResp.base_card)
+}
+
+// int64 banker_op_gold = 4;
+inline void MsgStartGameResp::clear_banker_op_gold() {
+  banker_op_gold_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgStartGameResp::_internal_banker_op_gold() const {
+  return banker_op_gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgStartGameResp::banker_op_gold() const {
+  // @@protoc_insertion_point(field_get:AndarBahar.MsgStartGameResp.banker_op_gold)
+  return _internal_banker_op_gold();
+}
+inline void MsgStartGameResp::_internal_set_banker_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  banker_op_gold_ = value;
+}
+inline void MsgStartGameResp::set_banker_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_banker_op_gold(value);
+  // @@protoc_insertion_point(field_set:AndarBahar.MsgStartGameResp.banker_op_gold)
 }
 
 // -------------------------------------------------------------------
@@ -3577,7 +3661,47 @@ inline void MsgResult::set_win_index(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:AndarBahar.MsgResult.win_index)
 }
 
-// repeated .AndarBahar.MsgWinMsg win_msg = 2;
+// int64 banker_win = 2;
+inline void MsgResult::clear_banker_win() {
+  banker_win_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgResult::_internal_banker_win() const {
+  return banker_win_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgResult::banker_win() const {
+  // @@protoc_insertion_point(field_get:AndarBahar.MsgResult.banker_win)
+  return _internal_banker_win();
+}
+inline void MsgResult::_internal_set_banker_win(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  banker_win_ = value;
+}
+inline void MsgResult::set_banker_win(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_banker_win(value);
+  // @@protoc_insertion_point(field_set:AndarBahar.MsgResult.banker_win)
+}
+
+// int64 banker_op_gold = 3;
+inline void MsgResult::clear_banker_op_gold() {
+  banker_op_gold_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgResult::_internal_banker_op_gold() const {
+  return banker_op_gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgResult::banker_op_gold() const {
+  // @@protoc_insertion_point(field_get:AndarBahar.MsgResult.banker_op_gold)
+  return _internal_banker_op_gold();
+}
+inline void MsgResult::_internal_set_banker_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  banker_op_gold_ = value;
+}
+inline void MsgResult::set_banker_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_banker_op_gold(value);
+  // @@protoc_insertion_point(field_set:AndarBahar.MsgResult.banker_op_gold)
+}
+
+// repeated .AndarBahar.MsgWinMsg win_msg = 4;
 inline int MsgResult::_internal_win_msg_size() const {
   return win_msg_.size();
 }

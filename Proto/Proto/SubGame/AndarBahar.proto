@@ -60,6 +60,7 @@ message MsgSceneInfo
 	int32				base_card		= 14;	//底牌
 	int64				red_total_bet	= 15;	//红方总下注
 	int64				bluo_total_bet	= 16;	//蓝方总下注
+	int64				banker_op_gold	= 17;	//庄家可输赢的金币
 
 	repeated int32		red_cards		= 20;	//红方牌列表
 	repeated int32		blue_cards		= 21;	//蓝方牌列表
@@ -72,6 +73,7 @@ message MsgStartGameResp
 	int32				banker_id		= 1;	//庄ID  -1=系统庄
 	int32				banker_num		= 2;	//已经上庄轮数 包涵本局
 	int32				base_card		= 3;	//底牌
+	int64				banker_op_gold	= 4;	//庄家可输赢的金币
 }
 
 //玩家下注
@@ -129,5 +131,7 @@ message MsgWinMsg
 message MsgResult                           
 {                                           
 	int32				win_index		= 1;	//开牌结果(1:红 2:蓝)赢
-	repeated MsgWinMsg 	win_msg			= 2;	//玩家输赢信息
+	int64				banker_win		= 2;	//庄家输赢的金币
+	int64				banker_op_gold	= 3;	//庄家最新输赢金币
+	repeated MsgWinMsg 	win_msg			= 4;	//玩家输赢信息
 }                                           
