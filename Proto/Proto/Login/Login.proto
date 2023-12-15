@@ -11,12 +11,13 @@ message MsgPlayerLogin
 	int32		login_type			= 6;		//1:游客登录 2:账号登录 3:第三方登录 4:注册账号
 	string		machine_num			= 7;		//机器码
 	string		user_ip				= 8;		//玩家IP
-	int32		is_drain			= 9;		//0:谷歌商店来源 1:推广渠道(facebook等) 2:自定义连接并且初始玩家类型为线下
+	int32		is_drain			= 9;		//0:谷歌商店来源 1:推广渠道(facebook等) 2:自定义连接 3：网红用户
 	string		avatar				= 10;		//头像(第三方登录时需要)
 	string		nickname			= 11;		//昵称(第三方登录时需要)
 	string		phone				= 12;		//手机号
 	int32		code				= 13;		//验证码
 	string		invite_code			= 14;		//邀请码
+	int32		usertype			= 15;		//用户类型  8:线上用户 9:线下用户
 }
 
 //玩家登录返回
@@ -30,7 +31,7 @@ message MsgPlayerLoginResp
 	string		avatar			= 6;	//头像
 	bool		first_recharge	= 7;	//是否首充
 	int32		user_type		= 8;	//玩家类型(0:普通玩家 1:VIP)
-	int32		is_drain		= 9;	//0:谷歌商店来源 1:推广渠道(facebook等) 2:自定义连接并且初始玩家类型为线下
+	int32		is_drain		= 9;	//0:谷歌商店来源 1:推广渠道(facebook等) 2:自定义连接并且初始玩家类型为线下 3：自定义连接并且初始玩家类型为线上 4：网红用户
 	uint64		coin			= 10;	//玩家金币
 	string		phone_num		= 11;	//手机号
 	int32		vip_level		= 12;	//VIP等级
