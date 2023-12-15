@@ -43,8 +43,16 @@ message ABPlayerData
 
 message ABUpWaitBankerInfo
 {
-	int32				Id				= 1;	// 庄家ID
-	int64				OpBankerGold	= 2;	// 用户可输赢金币是否要下庄
+	int32				id				= 1;	// 庄家ID
+	int64				op_banker_gold	= 2;	// 用户可输赢金币是否要下庄
+};
+
+message ABBankerInfo
+{
+	int32				id				= 1;	// 庄家ID
+	int64				op_gold			= 2;	// 用户可输赢金币是否要下庄
+	int32				round			= 3;	//已经上庄轮数 包涵本局	
+	int64				total_win		= 4;	//庄家总输赢金币
 };
 
 //场景消息
@@ -59,14 +67,12 @@ message MsgSceneInfo
 	int32				out_time		= 7;	//剩余时间
 	int32				state			= 8;	//当前状态
 	repeated int32		mul				= 9;	//倍数(红、黑、)
-	int32				banker_id		= 10;	//庄ID  -1=系统庄
-	int32				banker_max		= 11;	//当庄最大轮数 
-	int32				banker_num		= 12;	//已经上庄轮数 包涵本局
-	int64				banker_limit	= 13;	//上庄金币限制
-	int32				base_card		= 14;	//底牌
-	int64				red_total_bet	= 15;	//红方总下注
-	int64				bluo_total_bet	= 16;	//蓝方总下注
-	int64				banker_op_gold	= 17;	//庄家可输赢的金币
+	int32				banker_max		= 10;	//当庄最大轮数 
+	int64				banker_limit	= 11;	//上庄金币限制
+	ABBankerInfo		banker_info		= 12;	//庄信息
+	int32				base_card		= 13;	//底牌
+	int64				red_total_bet	= 14;	//红方总下注
+	int64				bluo_total_bet	= 15;	//蓝方总下注
 
 	repeated int32		red_cards		= 20;	//红方牌列表
 	repeated int32		blue_cards		= 21;	//蓝方牌列表
@@ -76,10 +82,8 @@ message MsgSceneInfo
 //开始游戏
 message MsgStartGameResp
 {
-	int32				banker_id		= 1;	//庄ID  -1=系统庄
-	int32				banker_num		= 2;	//已经上庄轮数 包涵本局
+	ABBankerInfo		banker_info		= 1;	//庄信息
 	int32				base_card		= 3;	//底牌
-	int64				banker_op_gold	= 4;	//庄家可输赢的金币
 }
 
 //玩家下注
@@ -137,8 +141,6 @@ message MsgWinMsg
 message MsgResult                           
 {                                           
 	int32				win_index		= 1;	//开牌结果(1:红 2:蓝)赢
-	int64				banker_win		= 2;	//庄家输赢的金币
-	int64				banker_op_gold	= 3;	//庄家最新输赢金币
-	int64				banker_total_win= 4;	//庄家总输赢金币
-	repeated MsgWinMsg 	win_msg			= 5;	//玩家输赢信息
+	ABBankerInfo		banker_info		= 2;	//庄家输赢的金币
+	repeated MsgWinMsg 	win_msg			= 3;	//玩家输赢信息
 }                                           

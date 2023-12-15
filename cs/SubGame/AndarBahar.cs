@@ -28,58 +28,60 @@ namespace AndarBahar {
             "KAoJQUJCZXRJbmZvEgsKA2JldBgBIAEoAxIOCgZzdGF0dXMYAiABKAUigQEK",
             "DEFCUGxheWVyRGF0YRIPCgd1c2VyX2lkGAEgASgFEhAKCHdpbl9nb2xkGAIg",
             "ASgDEhIKCnRvdGFsX3BsYXkYAyABKAUSEAoId2luX3BsYXkYBCABKAUSKAoJ",
-            "YmV0X2luZm9zGAUgAygLMhUuQW5kYXJCYWhhci5BQkJldEluZm8iNgoSQUJV",
-            "cFdhaXRCYW5rZXJJbmZvEgoKAklkGAEgASgFEhQKDE9wQmFua2VyR29sZBgC",
-            "IAEoAyLOAwoMTXNnU2NlbmVJbmZvEgsKA2JldBgBIAMoAxIPCgdyZWNvcmRz",
-            "GAIgAygFEhEKCWJldF9saW1pdBgDIAMoBRI2Cg51cF9iYW5rZXJfbGlzdBgE",
-            "IAMoCzIeLkFuZGFyQmFoYXIuQUJVcFdhaXRCYW5rZXJJbmZvEhQKDHBsYXll",
-            "cl9saW1pdBgFIAEoBRIQCghiZXRfdGltZRgGIAEoBRIQCghvdXRfdGltZRgH",
-            "IAEoBRINCgVzdGF0ZRgIIAEoBRILCgNtdWwYCSADKAUSEQoJYmFua2VyX2lk",
-            "GAogASgFEhIKCmJhbmtlcl9tYXgYCyABKAUSEgoKYmFua2VyX251bRgMIAEo",
-            "BRIUCgxiYW5rZXJfbGltaXQYDSABKAMSEQoJYmFzZV9jYXJkGA4gASgFEhUK",
-            "DXJlZF90b3RhbF9iZXQYDyABKAMSFgoOYmx1b190b3RhbF9iZXQYECABKAMS",
-            "FgoOYmFua2VyX29wX2dvbGQYESABKAMSEQoJcmVkX2NhcmRzGBQgAygFEhIK",
-            "CmJsdWVfY2FyZHMYFSADKAUSLQoLcGxheWVyX2xpc3QYFiADKAsyGC5BbmRh",
-            "ckJhaGFyLkFCUGxheWVyRGF0YSJkChBNc2dTdGFydEdhbWVSZXNwEhEKCWJh",
-            "bmtlcl9pZBgBIAEoBRISCgpiYW5rZXJfbnVtGAIgASgFEhEKCWJhc2VfY2Fy",
-            "ZBgDIAEoBRIWCg5iYW5rZXJfb3BfZ29sZBgEIAEoAyIjCgZNc2dCZXQSCwoD",
-            "YmV0GAEgASgDEgwKBGFyZWEYAiABKAUiagoKTXNnQmV0UmVzcBIQCghyZXRf",
-            "Y29kZRgBIAEoBRIPCgd1c2VyX2lkGAIgASgFEhAKCGNoYWlyX2lkGAMgASgF",
-            "EicKCGJldF9pbmZvGAQgASgLMhUuQW5kYXJCYWhhci5BQkJldEluZm8iPQoP",
-            "TXNnU2VuZENhcmRSZXNwEgwKBGNhcmQYASABKAUSDAoEYXJlYRgCIAEoBRIO",
-            "CgZpc19lbmQYAyABKAgiLwoLTXNnT3BCYW5rZXISDwoHb3BfdHlwZRgBIAEo",
-            "BRIPCgd1cF9nb2xkGAIgASgDIlcKD01zZ09wQmFua2VyUmVzcBIQCghyZXRf",
-            "Y29kZRgBIAEoBRIPCgd1c2VyX2lkGAIgASgFEhAKCGNoYWlyX2lkGAMgASgF",
-            "Eg8KB29wX3R5cGUYBCABKAUiYgoJTXNnV2luTXNnEg8KB3VzZXJfaWQYASAB",
-            "KAUSEAoIY2hhaXJfaWQYAiABKAUSEAoId2luX2dvbGQYAyABKAMSEAoIbmV3",
-            "X2dvbGQYBCABKAMSDgoGaXNfd2luGAUgASgIIowBCglNc2dSZXN1bHQSEQoJ",
-            "d2luX2luZGV4GAEgASgFEhIKCmJhbmtlcl93aW4YAiABKAMSFgoOYmFua2Vy",
-            "X29wX2dvbGQYAyABKAMSGAoQYmFua2VyX3RvdGFsX3dpbhgEIAEoAxImCgd3",
-            "aW5fbXNnGAUgAygLMhUuQW5kYXJCYWhhci5Nc2dXaW5Nc2cqdQoKRUdhbWVT",
-            "dGF0ZRIMCghHU19SZWFkeRAAEgwKCEdTX1N0YXJ0EAESCwoHR1NfQmV0MRAC",
-            "EgsKB0dTX0JldDIQAxIQCgxHU19TZW5kQ2FyZDEQBBIQCgxHU19TZW5kQ2Fy",
-            "ZDIQBRINCglHU19SZXN1bHQQBiqSAgoNRU1zZ0lEU3ViR2FtZRIVChFNc2dJ",
-            "RFN1YkdhbWVfTnVsbBAAEhQKEE1zZ0lEU3ViR2FtZV9CZXQQARIYChRNc2dJ",
-            "RFN1YkdhbWVfQmV0UmVzcBACEhkKFU1zZ0lEU3ViR2FtZV9PcEJhbmtlchAD",
-            "Eh0KGU1zZ0lEU3ViR2FtZV9PcEJhbmtlclJlc3AQBBIeChpNc2dJRFN1Ykdh",
-            "bWVfR2FtZVN0YXJ0UmVzcBAFEh0KGU1zZ0lEU3ViR2FtZV9TZW5kQ2FyZFJl",
-            "c3AQBhIfChtNc2dJRFN1YkdhbWVfR2FtZVJlc3VsdFJlc3AQBxIgChxNc2dJ",
-            "RFN1YkdhbWVfTm90aWZ5U3RhdGVSZXNwEAhiBnByb3RvMw=="));
+            "YmV0X2luZm9zGAUgAygLMhUuQW5kYXJCYWhhci5BQkJldEluZm8iOAoSQUJV",
+            "cFdhaXRCYW5rZXJJbmZvEgoKAmlkGAEgASgFEhYKDm9wX2Jhbmtlcl9nb2xk",
+            "GAIgASgDIk0KDEFCQmFua2VySW5mbxIKCgJpZBgBIAEoBRIPCgdvcF9nb2xk",
+            "GAIgASgDEg0KBXJvdW5kGAMgASgFEhEKCXRvdGFsX3dpbhgEIAEoAyK+AwoM",
+            "TXNnU2NlbmVJbmZvEgsKA2JldBgBIAMoAxIPCgdyZWNvcmRzGAIgAygFEhEK",
+            "CWJldF9saW1pdBgDIAMoBRI2Cg51cF9iYW5rZXJfbGlzdBgEIAMoCzIeLkFu",
+            "ZGFyQmFoYXIuQUJVcFdhaXRCYW5rZXJJbmZvEhQKDHBsYXllcl9saW1pdBgF",
+            "IAEoBRIQCghiZXRfdGltZRgGIAEoBRIQCghvdXRfdGltZRgHIAEoBRINCgVz",
+            "dGF0ZRgIIAEoBRILCgNtdWwYCSADKAUSEgoKYmFua2VyX21heBgKIAEoBRIU",
+            "CgxiYW5rZXJfbGltaXQYCyABKAMSLQoLYmFua2VyX2luZm8YDCABKAsyGC5B",
+            "bmRhckJhaGFyLkFCQmFua2VySW5mbxIRCgliYXNlX2NhcmQYDSABKAUSFQoN",
+            "cmVkX3RvdGFsX2JldBgOIAEoAxIWCg5ibHVvX3RvdGFsX2JldBgPIAEoAxIR",
+            "CglyZWRfY2FyZHMYFCADKAUSEgoKYmx1ZV9jYXJkcxgVIAMoBRItCgtwbGF5",
+            "ZXJfbGlzdBgWIAMoCzIYLkFuZGFyQmFoYXIuQUJQbGF5ZXJEYXRhIlQKEE1z",
+            "Z1N0YXJ0R2FtZVJlc3ASLQoLYmFua2VyX2luZm8YASABKAsyGC5BbmRhckJh",
+            "aGFyLkFCQmFua2VySW5mbxIRCgliYXNlX2NhcmQYAyABKAUiIwoGTXNnQmV0",
+            "EgsKA2JldBgBIAEoAxIMCgRhcmVhGAIgASgFImoKCk1zZ0JldFJlc3ASEAoI",
+            "cmV0X2NvZGUYASABKAUSDwoHdXNlcl9pZBgCIAEoBRIQCghjaGFpcl9pZBgD",
+            "IAEoBRInCghiZXRfaW5mbxgEIAEoCzIVLkFuZGFyQmFoYXIuQUJCZXRJbmZv",
+            "Ij0KD01zZ1NlbmRDYXJkUmVzcBIMCgRjYXJkGAEgASgFEgwKBGFyZWEYAiAB",
+            "KAUSDgoGaXNfZW5kGAMgASgIIi8KC01zZ09wQmFua2VyEg8KB29wX3R5cGUY",
+            "ASABKAUSDwoHdXBfZ29sZBgCIAEoAyJXCg9Nc2dPcEJhbmtlclJlc3ASEAoI",
+            "cmV0X2NvZGUYASABKAUSDwoHdXNlcl9pZBgCIAEoBRIQCghjaGFpcl9pZBgD",
+            "IAEoBRIPCgdvcF90eXBlGAQgASgFImIKCU1zZ1dpbk1zZxIPCgd1c2VyX2lk",
+            "GAEgASgFEhAKCGNoYWlyX2lkGAIgASgFEhAKCHdpbl9nb2xkGAMgASgDEhAK",
+            "CG5ld19nb2xkGAQgASgDEg4KBmlzX3dpbhgFIAEoCCJ1CglNc2dSZXN1bHQS",
+            "EQoJd2luX2luZGV4GAEgASgFEi0KC2Jhbmtlcl9pbmZvGAIgASgLMhguQW5k",
+            "YXJCYWhhci5BQkJhbmtlckluZm8SJgoHd2luX21zZxgDIAMoCzIVLkFuZGFy",
+            "QmFoYXIuTXNnV2luTXNnKnUKCkVHYW1lU3RhdGUSDAoIR1NfUmVhZHkQABIM",
+            "CghHU19TdGFydBABEgsKB0dTX0JldDEQAhILCgdHU19CZXQyEAMSEAoMR1Nf",
+            "U2VuZENhcmQxEAQSEAoMR1NfU2VuZENhcmQyEAUSDQoJR1NfUmVzdWx0EAYq",
+            "kgIKDUVNc2dJRFN1YkdhbWUSFQoRTXNnSURTdWJHYW1lX051bGwQABIUChBN",
+            "c2dJRFN1YkdhbWVfQmV0EAESGAoUTXNnSURTdWJHYW1lX0JldFJlc3AQAhIZ",
+            "ChVNc2dJRFN1YkdhbWVfT3BCYW5rZXIQAxIdChlNc2dJRFN1YkdhbWVfT3BC",
+            "YW5rZXJSZXNwEAQSHgoaTXNnSURTdWJHYW1lX0dhbWVTdGFydFJlc3AQBRId",
+            "ChlNc2dJRFN1YkdhbWVfU2VuZENhcmRSZXNwEAYSHwobTXNnSURTdWJHYW1l",
+            "X0dhbWVSZXN1bHRSZXNwEAcSIAocTXNnSURTdWJHYW1lX05vdGlmeVN0YXRl",
+            "UmVzcBAIYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::AndarBahar.EGameState), typeof(global::AndarBahar.EMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.ABBetInfo), global::AndarBahar.ABBetInfo.Parser, new[]{ "Bet", "Status" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.ABPlayerData), global::AndarBahar.ABPlayerData.Parser, new[]{ "UserId", "WinGold", "TotalPlay", "WinPlay", "BetInfos" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.ABUpWaitBankerInfo), global::AndarBahar.ABUpWaitBankerInfo.Parser, new[]{ "Id", "OpBankerGold" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgSceneInfo), global::AndarBahar.MsgSceneInfo.Parser, new[]{ "Bet", "Records", "BetLimit", "UpBankerList", "PlayerLimit", "BetTime", "OutTime", "State", "Mul", "BankerId", "BankerMax", "BankerNum", "BankerLimit", "BaseCard", "RedTotalBet", "BluoTotalBet", "BankerOpGold", "RedCards", "BlueCards", "PlayerList" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgStartGameResp), global::AndarBahar.MsgStartGameResp.Parser, new[]{ "BankerId", "BankerNum", "BaseCard", "BankerOpGold" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.ABBankerInfo), global::AndarBahar.ABBankerInfo.Parser, new[]{ "Id", "OpGold", "Round", "TotalWin" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgSceneInfo), global::AndarBahar.MsgSceneInfo.Parser, new[]{ "Bet", "Records", "BetLimit", "UpBankerList", "PlayerLimit", "BetTime", "OutTime", "State", "Mul", "BankerMax", "BankerLimit", "BankerInfo", "BaseCard", "RedTotalBet", "BluoTotalBet", "RedCards", "BlueCards", "PlayerList" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgStartGameResp), global::AndarBahar.MsgStartGameResp.Parser, new[]{ "BankerInfo", "BaseCard" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgBet), global::AndarBahar.MsgBet.Parser, new[]{ "Bet", "Area" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgBetResp), global::AndarBahar.MsgBetResp.Parser, new[]{ "RetCode", "UserId", "ChairId", "BetInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgSendCardResp), global::AndarBahar.MsgSendCardResp.Parser, new[]{ "Card", "Area", "IsEnd" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgOpBanker), global::AndarBahar.MsgOpBanker.Parser, new[]{ "OpType", "UpGold" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgOpBankerResp), global::AndarBahar.MsgOpBankerResp.Parser, new[]{ "RetCode", "UserId", "ChairId", "OpType" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgWinMsg), global::AndarBahar.MsgWinMsg.Parser, new[]{ "UserId", "ChairId", "WinGold", "NewGold", "IsWin" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgResult), global::AndarBahar.MsgResult.Parser, new[]{ "WinIndex", "BankerWin", "BankerOpGold", "BankerTotalWin", "WinMsg" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgResult), global::AndarBahar.MsgResult.Parser, new[]{ "WinIndex", "BankerInfo", "WinMsg" }, null, null, null, null)
           }));
     }
     #endregion
@@ -726,7 +728,7 @@ namespace AndarBahar {
       return new ABUpWaitBankerInfo(this);
     }
 
-    /// <summary>Field number for the "Id" field.</summary>
+    /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
     private int id_;
     /// <summary>
@@ -740,7 +742,7 @@ namespace AndarBahar {
       }
     }
 
-    /// <summary>Field number for the "OpBankerGold" field.</summary>
+    /// <summary>Field number for the "op_banker_gold" field.</summary>
     public const int OpBankerGoldFieldNumber = 2;
     private long opBankerGold_;
     /// <summary>
@@ -901,6 +903,298 @@ namespace AndarBahar {
 
   }
 
+  public sealed partial class ABBankerInfo : pb::IMessage<ABBankerInfo>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ABBankerInfo> _parser = new pb::MessageParser<ABBankerInfo>(() => new ABBankerInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<ABBankerInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ABBankerInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ABBankerInfo(ABBankerInfo other) : this() {
+      id_ = other.id_;
+      opGold_ = other.opGold_;
+      round_ = other.round_;
+      totalWin_ = other.totalWin_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ABBankerInfo Clone() {
+      return new ABBankerInfo(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private int id_;
+    /// <summary>
+    /// 庄家ID
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "op_gold" field.</summary>
+    public const int OpGoldFieldNumber = 2;
+    private long opGold_;
+    /// <summary>
+    /// 用户可输赢金币是否要下庄
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long OpGold {
+      get { return opGold_; }
+      set {
+        opGold_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "round" field.</summary>
+    public const int RoundFieldNumber = 3;
+    private int round_;
+    /// <summary>
+    ///已经上庄轮数 包涵本局	
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Round {
+      get { return round_; }
+      set {
+        round_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "total_win" field.</summary>
+    public const int TotalWinFieldNumber = 4;
+    private long totalWin_;
+    /// <summary>
+    ///庄家总输赢金币
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long TotalWin {
+      get { return totalWin_; }
+      set {
+        totalWin_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as ABBankerInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(ABBankerInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Id != other.Id) return false;
+      if (OpGold != other.OpGold) return false;
+      if (Round != other.Round) return false;
+      if (TotalWin != other.TotalWin) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Id != 0) hash ^= Id.GetHashCode();
+      if (OpGold != 0L) hash ^= OpGold.GetHashCode();
+      if (Round != 0) hash ^= Round.GetHashCode();
+      if (TotalWin != 0L) hash ^= TotalWin.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Id != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Id);
+      }
+      if (OpGold != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(OpGold);
+      }
+      if (Round != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(Round);
+      }
+      if (TotalWin != 0L) {
+        output.WriteRawTag(32);
+        output.WriteInt64(TotalWin);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Id);
+      }
+      if (OpGold != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(OpGold);
+      }
+      if (Round != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(Round);
+      }
+      if (TotalWin != 0L) {
+        output.WriteRawTag(32);
+        output.WriteInt64(TotalWin);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Id != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
+      }
+      if (OpGold != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(OpGold);
+      }
+      if (Round != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Round);
+      }
+      if (TotalWin != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(TotalWin);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(ABBankerInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Id != 0) {
+        Id = other.Id;
+      }
+      if (other.OpGold != 0L) {
+        OpGold = other.OpGold;
+      }
+      if (other.Round != 0) {
+        Round = other.Round;
+      }
+      if (other.TotalWin != 0L) {
+        TotalWin = other.TotalWin;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Id = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            OpGold = input.ReadInt64();
+            break;
+          }
+          case 24: {
+            Round = input.ReadInt32();
+            break;
+          }
+          case 32: {
+            TotalWin = input.ReadInt64();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Id = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            OpGold = input.ReadInt64();
+            break;
+          }
+          case 24: {
+            Round = input.ReadInt32();
+            break;
+          }
+          case 32: {
+            TotalWin = input.ReadInt64();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   /// <summary>
   ///场景消息
   /// </summary>
@@ -916,7 +1210,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[3]; }
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -942,14 +1236,12 @@ namespace AndarBahar {
       outTime_ = other.outTime_;
       state_ = other.state_;
       mul_ = other.mul_.Clone();
-      bankerId_ = other.bankerId_;
       bankerMax_ = other.bankerMax_;
-      bankerNum_ = other.bankerNum_;
       bankerLimit_ = other.bankerLimit_;
+      bankerInfo_ = other.bankerInfo_ != null ? other.bankerInfo_.Clone() : null;
       baseCard_ = other.baseCard_;
       redTotalBet_ = other.redTotalBet_;
       bluoTotalBet_ = other.bluoTotalBet_;
-      bankerOpGold_ = other.bankerOpGold_;
       redCards_ = other.redCards_.Clone();
       blueCards_ = other.blueCards_.Clone();
       playerList_ = other.playerList_.Clone();
@@ -1082,22 +1374,8 @@ namespace AndarBahar {
       get { return mul_; }
     }
 
-    /// <summary>Field number for the "banker_id" field.</summary>
-    public const int BankerIdFieldNumber = 10;
-    private int bankerId_;
-    /// <summary>
-    ///庄ID  -1=系统庄
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int BankerId {
-      get { return bankerId_; }
-      set {
-        bankerId_ = value;
-      }
-    }
-
     /// <summary>Field number for the "banker_max" field.</summary>
-    public const int BankerMaxFieldNumber = 11;
+    public const int BankerMaxFieldNumber = 10;
     private int bankerMax_;
     /// <summary>
     ///当庄最大轮数 
@@ -1110,22 +1388,8 @@ namespace AndarBahar {
       }
     }
 
-    /// <summary>Field number for the "banker_num" field.</summary>
-    public const int BankerNumFieldNumber = 12;
-    private int bankerNum_;
-    /// <summary>
-    ///已经上庄轮数 包涵本局
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int BankerNum {
-      get { return bankerNum_; }
-      set {
-        bankerNum_ = value;
-      }
-    }
-
     /// <summary>Field number for the "banker_limit" field.</summary>
-    public const int BankerLimitFieldNumber = 13;
+    public const int BankerLimitFieldNumber = 11;
     private long bankerLimit_;
     /// <summary>
     ///上庄金币限制
@@ -1138,8 +1402,22 @@ namespace AndarBahar {
       }
     }
 
+    /// <summary>Field number for the "banker_info" field.</summary>
+    public const int BankerInfoFieldNumber = 12;
+    private global::AndarBahar.ABBankerInfo bankerInfo_;
+    /// <summary>
+    ///庄信息
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::AndarBahar.ABBankerInfo BankerInfo {
+      get { return bankerInfo_; }
+      set {
+        bankerInfo_ = value;
+      }
+    }
+
     /// <summary>Field number for the "base_card" field.</summary>
-    public const int BaseCardFieldNumber = 14;
+    public const int BaseCardFieldNumber = 13;
     private int baseCard_;
     /// <summary>
     ///底牌
@@ -1153,7 +1431,7 @@ namespace AndarBahar {
     }
 
     /// <summary>Field number for the "red_total_bet" field.</summary>
-    public const int RedTotalBetFieldNumber = 15;
+    public const int RedTotalBetFieldNumber = 14;
     private long redTotalBet_;
     /// <summary>
     ///红方总下注
@@ -1167,7 +1445,7 @@ namespace AndarBahar {
     }
 
     /// <summary>Field number for the "bluo_total_bet" field.</summary>
-    public const int BluoTotalBetFieldNumber = 16;
+    public const int BluoTotalBetFieldNumber = 15;
     private long bluoTotalBet_;
     /// <summary>
     ///蓝方总下注
@@ -1177,20 +1455,6 @@ namespace AndarBahar {
       get { return bluoTotalBet_; }
       set {
         bluoTotalBet_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "banker_op_gold" field.</summary>
-    public const int BankerOpGoldFieldNumber = 17;
-    private long bankerOpGold_;
-    /// <summary>
-    ///庄家可输赢的金币
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long BankerOpGold {
-      get { return bankerOpGold_; }
-      set {
-        bankerOpGold_ = value;
       }
     }
 
@@ -1255,14 +1519,12 @@ namespace AndarBahar {
       if (OutTime != other.OutTime) return false;
       if (State != other.State) return false;
       if(!mul_.Equals(other.mul_)) return false;
-      if (BankerId != other.BankerId) return false;
       if (BankerMax != other.BankerMax) return false;
-      if (BankerNum != other.BankerNum) return false;
       if (BankerLimit != other.BankerLimit) return false;
+      if (!object.Equals(BankerInfo, other.BankerInfo)) return false;
       if (BaseCard != other.BaseCard) return false;
       if (RedTotalBet != other.RedTotalBet) return false;
       if (BluoTotalBet != other.BluoTotalBet) return false;
-      if (BankerOpGold != other.BankerOpGold) return false;
       if(!redCards_.Equals(other.redCards_)) return false;
       if(!blueCards_.Equals(other.blueCards_)) return false;
       if(!playerList_.Equals(other.playerList_)) return false;
@@ -1281,14 +1543,12 @@ namespace AndarBahar {
       if (OutTime != 0) hash ^= OutTime.GetHashCode();
       if (State != 0) hash ^= State.GetHashCode();
       hash ^= mul_.GetHashCode();
-      if (BankerId != 0) hash ^= BankerId.GetHashCode();
       if (BankerMax != 0) hash ^= BankerMax.GetHashCode();
-      if (BankerNum != 0) hash ^= BankerNum.GetHashCode();
       if (BankerLimit != 0L) hash ^= BankerLimit.GetHashCode();
+      if (bankerInfo_ != null) hash ^= BankerInfo.GetHashCode();
       if (BaseCard != 0) hash ^= BaseCard.GetHashCode();
       if (RedTotalBet != 0L) hash ^= RedTotalBet.GetHashCode();
       if (BluoTotalBet != 0L) hash ^= BluoTotalBet.GetHashCode();
-      if (BankerOpGold != 0L) hash ^= BankerOpGold.GetHashCode();
       hash ^= redCards_.GetHashCode();
       hash ^= blueCards_.GetHashCode();
       hash ^= playerList_.GetHashCode();
@@ -1329,37 +1589,29 @@ namespace AndarBahar {
         output.WriteInt32(State);
       }
       mul_.WriteTo(output, _repeated_mul_codec);
-      if (BankerId != 0) {
-        output.WriteRawTag(80);
-        output.WriteInt32(BankerId);
-      }
       if (BankerMax != 0) {
-        output.WriteRawTag(88);
+        output.WriteRawTag(80);
         output.WriteInt32(BankerMax);
       }
-      if (BankerNum != 0) {
-        output.WriteRawTag(96);
-        output.WriteInt32(BankerNum);
-      }
       if (BankerLimit != 0L) {
-        output.WriteRawTag(104);
+        output.WriteRawTag(88);
         output.WriteInt64(BankerLimit);
       }
+      if (bankerInfo_ != null) {
+        output.WriteRawTag(98);
+        output.WriteMessage(BankerInfo);
+      }
       if (BaseCard != 0) {
-        output.WriteRawTag(112);
+        output.WriteRawTag(104);
         output.WriteInt32(BaseCard);
       }
       if (RedTotalBet != 0L) {
-        output.WriteRawTag(120);
+        output.WriteRawTag(112);
         output.WriteInt64(RedTotalBet);
       }
       if (BluoTotalBet != 0L) {
-        output.WriteRawTag(128, 1);
+        output.WriteRawTag(120);
         output.WriteInt64(BluoTotalBet);
-      }
-      if (BankerOpGold != 0L) {
-        output.WriteRawTag(136, 1);
-        output.WriteInt64(BankerOpGold);
       }
       redCards_.WriteTo(output, _repeated_redCards_codec);
       blueCards_.WriteTo(output, _repeated_blueCards_codec);
@@ -1394,37 +1646,29 @@ namespace AndarBahar {
         output.WriteInt32(State);
       }
       mul_.WriteTo(ref output, _repeated_mul_codec);
-      if (BankerId != 0) {
-        output.WriteRawTag(80);
-        output.WriteInt32(BankerId);
-      }
       if (BankerMax != 0) {
-        output.WriteRawTag(88);
+        output.WriteRawTag(80);
         output.WriteInt32(BankerMax);
       }
-      if (BankerNum != 0) {
-        output.WriteRawTag(96);
-        output.WriteInt32(BankerNum);
-      }
       if (BankerLimit != 0L) {
-        output.WriteRawTag(104);
+        output.WriteRawTag(88);
         output.WriteInt64(BankerLimit);
       }
+      if (bankerInfo_ != null) {
+        output.WriteRawTag(98);
+        output.WriteMessage(BankerInfo);
+      }
       if (BaseCard != 0) {
-        output.WriteRawTag(112);
+        output.WriteRawTag(104);
         output.WriteInt32(BaseCard);
       }
       if (RedTotalBet != 0L) {
-        output.WriteRawTag(120);
+        output.WriteRawTag(112);
         output.WriteInt64(RedTotalBet);
       }
       if (BluoTotalBet != 0L) {
-        output.WriteRawTag(128, 1);
+        output.WriteRawTag(120);
         output.WriteInt64(BluoTotalBet);
-      }
-      if (BankerOpGold != 0L) {
-        output.WriteRawTag(136, 1);
-        output.WriteInt64(BankerOpGold);
       }
       redCards_.WriteTo(ref output, _repeated_redCards_codec);
       blueCards_.WriteTo(ref output, _repeated_blueCards_codec);
@@ -1455,17 +1699,14 @@ namespace AndarBahar {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(State);
       }
       size += mul_.CalculateSize(_repeated_mul_codec);
-      if (BankerId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(BankerId);
-      }
       if (BankerMax != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(BankerMax);
       }
-      if (BankerNum != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(BankerNum);
-      }
       if (BankerLimit != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(BankerLimit);
+      }
+      if (bankerInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(BankerInfo);
       }
       if (BaseCard != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(BaseCard);
@@ -1474,10 +1715,7 @@ namespace AndarBahar {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(RedTotalBet);
       }
       if (BluoTotalBet != 0L) {
-        size += 2 + pb::CodedOutputStream.ComputeInt64Size(BluoTotalBet);
-      }
-      if (BankerOpGold != 0L) {
-        size += 2 + pb::CodedOutputStream.ComputeInt64Size(BankerOpGold);
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(BluoTotalBet);
       }
       size += redCards_.CalculateSize(_repeated_redCards_codec);
       size += blueCards_.CalculateSize(_repeated_blueCards_codec);
@@ -1510,17 +1748,17 @@ namespace AndarBahar {
         State = other.State;
       }
       mul_.Add(other.mul_);
-      if (other.BankerId != 0) {
-        BankerId = other.BankerId;
-      }
       if (other.BankerMax != 0) {
         BankerMax = other.BankerMax;
       }
-      if (other.BankerNum != 0) {
-        BankerNum = other.BankerNum;
-      }
       if (other.BankerLimit != 0L) {
         BankerLimit = other.BankerLimit;
+      }
+      if (other.bankerInfo_ != null) {
+        if (bankerInfo_ == null) {
+          BankerInfo = new global::AndarBahar.ABBankerInfo();
+        }
+        BankerInfo.MergeFrom(other.BankerInfo);
       }
       if (other.BaseCard != 0) {
         BaseCard = other.BaseCard;
@@ -1530,9 +1768,6 @@ namespace AndarBahar {
       }
       if (other.BluoTotalBet != 0L) {
         BluoTotalBet = other.BluoTotalBet;
-      }
-      if (other.BankerOpGold != 0L) {
-        BankerOpGold = other.BankerOpGold;
       }
       redCards_.Add(other.redCards_);
       blueCards_.Add(other.blueCards_);
@@ -1592,35 +1827,30 @@ namespace AndarBahar {
             break;
           }
           case 80: {
-            BankerId = input.ReadInt32();
-            break;
-          }
-          case 88: {
             BankerMax = input.ReadInt32();
             break;
           }
-          case 96: {
-            BankerNum = input.ReadInt32();
-            break;
-          }
-          case 104: {
+          case 88: {
             BankerLimit = input.ReadInt64();
             break;
           }
-          case 112: {
+          case 98: {
+            if (bankerInfo_ == null) {
+              BankerInfo = new global::AndarBahar.ABBankerInfo();
+            }
+            input.ReadMessage(BankerInfo);
+            break;
+          }
+          case 104: {
             BaseCard = input.ReadInt32();
             break;
           }
-          case 120: {
+          case 112: {
             RedTotalBet = input.ReadInt64();
             break;
           }
-          case 128: {
+          case 120: {
             BluoTotalBet = input.ReadInt64();
-            break;
-          }
-          case 136: {
-            BankerOpGold = input.ReadInt64();
             break;
           }
           case 162:
@@ -1692,35 +1922,30 @@ namespace AndarBahar {
             break;
           }
           case 80: {
-            BankerId = input.ReadInt32();
-            break;
-          }
-          case 88: {
             BankerMax = input.ReadInt32();
             break;
           }
-          case 96: {
-            BankerNum = input.ReadInt32();
-            break;
-          }
-          case 104: {
+          case 88: {
             BankerLimit = input.ReadInt64();
             break;
           }
-          case 112: {
+          case 98: {
+            if (bankerInfo_ == null) {
+              BankerInfo = new global::AndarBahar.ABBankerInfo();
+            }
+            input.ReadMessage(BankerInfo);
+            break;
+          }
+          case 104: {
             BaseCard = input.ReadInt32();
             break;
           }
-          case 120: {
+          case 112: {
             RedTotalBet = input.ReadInt64();
             break;
           }
-          case 128: {
+          case 120: {
             BluoTotalBet = input.ReadInt64();
-            break;
-          }
-          case 136: {
-            BankerOpGold = input.ReadInt64();
             break;
           }
           case 162:
@@ -1759,7 +1984,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[4]; }
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1776,10 +2001,8 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public MsgStartGameResp(MsgStartGameResp other) : this() {
-      bankerId_ = other.bankerId_;
-      bankerNum_ = other.bankerNum_;
+      bankerInfo_ = other.bankerInfo_ != null ? other.bankerInfo_.Clone() : null;
       baseCard_ = other.baseCard_;
-      bankerOpGold_ = other.bankerOpGold_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1788,31 +2011,17 @@ namespace AndarBahar {
       return new MsgStartGameResp(this);
     }
 
-    /// <summary>Field number for the "banker_id" field.</summary>
-    public const int BankerIdFieldNumber = 1;
-    private int bankerId_;
+    /// <summary>Field number for the "banker_info" field.</summary>
+    public const int BankerInfoFieldNumber = 1;
+    private global::AndarBahar.ABBankerInfo bankerInfo_;
     /// <summary>
-    ///庄ID  -1=系统庄
+    ///庄信息
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int BankerId {
-      get { return bankerId_; }
+    public global::AndarBahar.ABBankerInfo BankerInfo {
+      get { return bankerInfo_; }
       set {
-        bankerId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "banker_num" field.</summary>
-    public const int BankerNumFieldNumber = 2;
-    private int bankerNum_;
-    /// <summary>
-    ///已经上庄轮数 包涵本局
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int BankerNum {
-      get { return bankerNum_; }
-      set {
-        bankerNum_ = value;
+        bankerInfo_ = value;
       }
     }
 
@@ -1830,20 +2039,6 @@ namespace AndarBahar {
       }
     }
 
-    /// <summary>Field number for the "banker_op_gold" field.</summary>
-    public const int BankerOpGoldFieldNumber = 4;
-    private long bankerOpGold_;
-    /// <summary>
-    ///庄家可输赢的金币
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long BankerOpGold {
-      get { return bankerOpGold_; }
-      set {
-        bankerOpGold_ = value;
-      }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as MsgStartGameResp);
@@ -1857,20 +2052,16 @@ namespace AndarBahar {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (BankerId != other.BankerId) return false;
-      if (BankerNum != other.BankerNum) return false;
+      if (!object.Equals(BankerInfo, other.BankerInfo)) return false;
       if (BaseCard != other.BaseCard) return false;
-      if (BankerOpGold != other.BankerOpGold) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (BankerId != 0) hash ^= BankerId.GetHashCode();
-      if (BankerNum != 0) hash ^= BankerNum.GetHashCode();
+      if (bankerInfo_ != null) hash ^= BankerInfo.GetHashCode();
       if (BaseCard != 0) hash ^= BaseCard.GetHashCode();
-      if (BankerOpGold != 0L) hash ^= BankerOpGold.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1887,21 +2078,13 @@ namespace AndarBahar {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (BankerId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(BankerId);
-      }
-      if (BankerNum != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(BankerNum);
+      if (bankerInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(BankerInfo);
       }
       if (BaseCard != 0) {
         output.WriteRawTag(24);
         output.WriteInt32(BaseCard);
-      }
-      if (BankerOpGold != 0L) {
-        output.WriteRawTag(32);
-        output.WriteInt64(BankerOpGold);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1912,21 +2095,13 @@ namespace AndarBahar {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (BankerId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(BankerId);
-      }
-      if (BankerNum != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(BankerNum);
+      if (bankerInfo_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(BankerInfo);
       }
       if (BaseCard != 0) {
         output.WriteRawTag(24);
         output.WriteInt32(BaseCard);
-      }
-      if (BankerOpGold != 0L) {
-        output.WriteRawTag(32);
-        output.WriteInt64(BankerOpGold);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1937,17 +2112,11 @@ namespace AndarBahar {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (BankerId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(BankerId);
-      }
-      if (BankerNum != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(BankerNum);
+      if (bankerInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(BankerInfo);
       }
       if (BaseCard != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(BaseCard);
-      }
-      if (BankerOpGold != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(BankerOpGold);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1960,17 +2129,14 @@ namespace AndarBahar {
       if (other == null) {
         return;
       }
-      if (other.BankerId != 0) {
-        BankerId = other.BankerId;
-      }
-      if (other.BankerNum != 0) {
-        BankerNum = other.BankerNum;
+      if (other.bankerInfo_ != null) {
+        if (bankerInfo_ == null) {
+          BankerInfo = new global::AndarBahar.ABBankerInfo();
+        }
+        BankerInfo.MergeFrom(other.BankerInfo);
       }
       if (other.BaseCard != 0) {
         BaseCard = other.BaseCard;
-      }
-      if (other.BankerOpGold != 0L) {
-        BankerOpGold = other.BankerOpGold;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1986,20 +2152,15 @@ namespace AndarBahar {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            BankerId = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            BankerNum = input.ReadInt32();
+          case 10: {
+            if (bankerInfo_ == null) {
+              BankerInfo = new global::AndarBahar.ABBankerInfo();
+            }
+            input.ReadMessage(BankerInfo);
             break;
           }
           case 24: {
             BaseCard = input.ReadInt32();
-            break;
-          }
-          case 32: {
-            BankerOpGold = input.ReadInt64();
             break;
           }
         }
@@ -2016,20 +2177,15 @@ namespace AndarBahar {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            BankerId = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            BankerNum = input.ReadInt32();
+          case 10: {
+            if (bankerInfo_ == null) {
+              BankerInfo = new global::AndarBahar.ABBankerInfo();
+            }
+            input.ReadMessage(BankerInfo);
             break;
           }
           case 24: {
             BaseCard = input.ReadInt32();
-            break;
-          }
-          case 32: {
-            BankerOpGold = input.ReadInt64();
             break;
           }
         }
@@ -2054,7 +2210,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[5]; }
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2271,7 +2427,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[6]; }
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2572,7 +2728,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[7]; }
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2828,7 +2984,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[8]; }
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3045,7 +3201,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[9]; }
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3340,7 +3496,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[10]; }
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3674,7 +3830,7 @@ namespace AndarBahar {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[11]; }
+      get { return global::AndarBahar.AndarBaharReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3692,9 +3848,7 @@ namespace AndarBahar {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public MsgResult(MsgResult other) : this() {
       winIndex_ = other.winIndex_;
-      bankerWin_ = other.bankerWin_;
-      bankerOpGold_ = other.bankerOpGold_;
-      bankerTotalWin_ = other.bankerTotalWin_;
+      bankerInfo_ = other.bankerInfo_ != null ? other.bankerInfo_.Clone() : null;
       winMsg_ = other.winMsg_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -3718,52 +3872,24 @@ namespace AndarBahar {
       }
     }
 
-    /// <summary>Field number for the "banker_win" field.</summary>
-    public const int BankerWinFieldNumber = 2;
-    private long bankerWin_;
+    /// <summary>Field number for the "banker_info" field.</summary>
+    public const int BankerInfoFieldNumber = 2;
+    private global::AndarBahar.ABBankerInfo bankerInfo_;
     /// <summary>
     ///庄家输赢的金币
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long BankerWin {
-      get { return bankerWin_; }
+    public global::AndarBahar.ABBankerInfo BankerInfo {
+      get { return bankerInfo_; }
       set {
-        bankerWin_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "banker_op_gold" field.</summary>
-    public const int BankerOpGoldFieldNumber = 3;
-    private long bankerOpGold_;
-    /// <summary>
-    ///庄家最新输赢金币
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long BankerOpGold {
-      get { return bankerOpGold_; }
-      set {
-        bankerOpGold_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "banker_total_win" field.</summary>
-    public const int BankerTotalWinFieldNumber = 4;
-    private long bankerTotalWin_;
-    /// <summary>
-    ///庄家总输赢金币
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long BankerTotalWin {
-      get { return bankerTotalWin_; }
-      set {
-        bankerTotalWin_ = value;
+        bankerInfo_ = value;
       }
     }
 
     /// <summary>Field number for the "win_msg" field.</summary>
-    public const int WinMsgFieldNumber = 5;
+    public const int WinMsgFieldNumber = 3;
     private static readonly pb::FieldCodec<global::AndarBahar.MsgWinMsg> _repeated_winMsg_codec
-        = pb::FieldCodec.ForMessage(42, global::AndarBahar.MsgWinMsg.Parser);
+        = pb::FieldCodec.ForMessage(26, global::AndarBahar.MsgWinMsg.Parser);
     private readonly pbc::RepeatedField<global::AndarBahar.MsgWinMsg> winMsg_ = new pbc::RepeatedField<global::AndarBahar.MsgWinMsg>();
     /// <summary>
     ///玩家输赢信息
@@ -3787,9 +3913,7 @@ namespace AndarBahar {
         return true;
       }
       if (WinIndex != other.WinIndex) return false;
-      if (BankerWin != other.BankerWin) return false;
-      if (BankerOpGold != other.BankerOpGold) return false;
-      if (BankerTotalWin != other.BankerTotalWin) return false;
+      if (!object.Equals(BankerInfo, other.BankerInfo)) return false;
       if(!winMsg_.Equals(other.winMsg_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -3798,9 +3922,7 @@ namespace AndarBahar {
     public override int GetHashCode() {
       int hash = 1;
       if (WinIndex != 0) hash ^= WinIndex.GetHashCode();
-      if (BankerWin != 0L) hash ^= BankerWin.GetHashCode();
-      if (BankerOpGold != 0L) hash ^= BankerOpGold.GetHashCode();
-      if (BankerTotalWin != 0L) hash ^= BankerTotalWin.GetHashCode();
+      if (bankerInfo_ != null) hash ^= BankerInfo.GetHashCode();
       hash ^= winMsg_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -3822,17 +3944,9 @@ namespace AndarBahar {
         output.WriteRawTag(8);
         output.WriteInt32(WinIndex);
       }
-      if (BankerWin != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(BankerWin);
-      }
-      if (BankerOpGold != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(BankerOpGold);
-      }
-      if (BankerTotalWin != 0L) {
-        output.WriteRawTag(32);
-        output.WriteInt64(BankerTotalWin);
+      if (bankerInfo_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(BankerInfo);
       }
       winMsg_.WriteTo(output, _repeated_winMsg_codec);
       if (_unknownFields != null) {
@@ -3848,17 +3962,9 @@ namespace AndarBahar {
         output.WriteRawTag(8);
         output.WriteInt32(WinIndex);
       }
-      if (BankerWin != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(BankerWin);
-      }
-      if (BankerOpGold != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(BankerOpGold);
-      }
-      if (BankerTotalWin != 0L) {
-        output.WriteRawTag(32);
-        output.WriteInt64(BankerTotalWin);
+      if (bankerInfo_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(BankerInfo);
       }
       winMsg_.WriteTo(ref output, _repeated_winMsg_codec);
       if (_unknownFields != null) {
@@ -3873,14 +3979,8 @@ namespace AndarBahar {
       if (WinIndex != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(WinIndex);
       }
-      if (BankerWin != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(BankerWin);
-      }
-      if (BankerOpGold != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(BankerOpGold);
-      }
-      if (BankerTotalWin != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(BankerTotalWin);
+      if (bankerInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(BankerInfo);
       }
       size += winMsg_.CalculateSize(_repeated_winMsg_codec);
       if (_unknownFields != null) {
@@ -3897,14 +3997,11 @@ namespace AndarBahar {
       if (other.WinIndex != 0) {
         WinIndex = other.WinIndex;
       }
-      if (other.BankerWin != 0L) {
-        BankerWin = other.BankerWin;
-      }
-      if (other.BankerOpGold != 0L) {
-        BankerOpGold = other.BankerOpGold;
-      }
-      if (other.BankerTotalWin != 0L) {
-        BankerTotalWin = other.BankerTotalWin;
+      if (other.bankerInfo_ != null) {
+        if (bankerInfo_ == null) {
+          BankerInfo = new global::AndarBahar.ABBankerInfo();
+        }
+        BankerInfo.MergeFrom(other.BankerInfo);
       }
       winMsg_.Add(other.winMsg_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -3925,19 +4022,14 @@ namespace AndarBahar {
             WinIndex = input.ReadInt32();
             break;
           }
-          case 16: {
-            BankerWin = input.ReadInt64();
+          case 18: {
+            if (bankerInfo_ == null) {
+              BankerInfo = new global::AndarBahar.ABBankerInfo();
+            }
+            input.ReadMessage(BankerInfo);
             break;
           }
-          case 24: {
-            BankerOpGold = input.ReadInt64();
-            break;
-          }
-          case 32: {
-            BankerTotalWin = input.ReadInt64();
-            break;
-          }
-          case 42: {
+          case 26: {
             winMsg_.AddEntriesFrom(input, _repeated_winMsg_codec);
             break;
           }
@@ -3959,19 +4051,14 @@ namespace AndarBahar {
             WinIndex = input.ReadInt32();
             break;
           }
-          case 16: {
-            BankerWin = input.ReadInt64();
+          case 18: {
+            if (bankerInfo_ == null) {
+              BankerInfo = new global::AndarBahar.ABBankerInfo();
+            }
+            input.ReadMessage(BankerInfo);
             break;
           }
-          case 24: {
-            BankerOpGold = input.ReadInt64();
-            break;
-          }
-          case 32: {
-            BankerTotalWin = input.ReadInt64();
-            break;
-          }
-          case 42: {
+          case 26: {
             winMsg_.AddEntriesFrom(ref input, _repeated_winMsg_codec);
             break;
           }

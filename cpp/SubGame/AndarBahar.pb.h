@@ -47,7 +47,7 @@ struct TableStruct_AndarBahar_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[12]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[13]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -55,6 +55,9 @@ struct TableStruct_AndarBahar_2eproto {
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_AndarBahar_2eproto;
 namespace AndarBahar {
+class ABBankerInfo;
+class ABBankerInfoDefaultTypeInternal;
+extern ABBankerInfoDefaultTypeInternal _ABBankerInfo_default_instance_;
 class ABBetInfo;
 class ABBetInfoDefaultTypeInternal;
 extern ABBetInfoDefaultTypeInternal _ABBetInfo_default_instance_;
@@ -93,6 +96,7 @@ class MsgWinMsgDefaultTypeInternal;
 extern MsgWinMsgDefaultTypeInternal _MsgWinMsg_default_instance_;
 }  // namespace AndarBahar
 PROTOBUF_NAMESPACE_OPEN
+template<> ::AndarBahar::ABBankerInfo* Arena::CreateMaybeMessage<::AndarBahar::ABBankerInfo>(Arena*);
 template<> ::AndarBahar::ABBetInfo* Arena::CreateMaybeMessage<::AndarBahar::ABBetInfo>(Arena*);
 template<> ::AndarBahar::ABPlayerData* Arena::CreateMaybeMessage<::AndarBahar::ABPlayerData>(Arena*);
 template<> ::AndarBahar::ABUpWaitBankerInfo* Arena::CreateMaybeMessage<::AndarBahar::ABUpWaitBankerInfo>(Arena*);
@@ -623,16 +627,16 @@ class ABUpWaitBankerInfo PROTOBUF_FINAL :
     kOpBankerGoldFieldNumber = 2,
     kIdFieldNumber = 1,
   };
-  // int64 OpBankerGold = 2;
-  void clear_opbankergold();
-  ::PROTOBUF_NAMESPACE_ID::int64 opbankergold() const;
-  void set_opbankergold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  // int64 op_banker_gold = 2;
+  void clear_op_banker_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 op_banker_gold() const;
+  void set_op_banker_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_opbankergold() const;
-  void _internal_set_opbankergold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_op_banker_gold() const;
+  void _internal_set_op_banker_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int32 Id = 1;
+  // int32 id = 1;
   void clear_id();
   ::PROTOBUF_NAMESPACE_ID::int32 id() const;
   void set_id(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -648,8 +652,177 @@ class ABUpWaitBankerInfo PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int64 opbankergold_;
+  ::PROTOBUF_NAMESPACE_ID::int64 op_banker_gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 id_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_AndarBahar_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ABBankerInfo PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:AndarBahar.ABBankerInfo) */ {
+ public:
+  inline ABBankerInfo() : ABBankerInfo(nullptr) {}
+  virtual ~ABBankerInfo();
+
+  ABBankerInfo(const ABBankerInfo& from);
+  ABBankerInfo(ABBankerInfo&& from) noexcept
+    : ABBankerInfo() {
+    *this = ::std::move(from);
+  }
+
+  inline ABBankerInfo& operator=(const ABBankerInfo& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ABBankerInfo& operator=(ABBankerInfo&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const ABBankerInfo& default_instance();
+
+  static inline const ABBankerInfo* internal_default_instance() {
+    return reinterpret_cast<const ABBankerInfo*>(
+               &_ABBankerInfo_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    3;
+
+  friend void swap(ABBankerInfo& a, ABBankerInfo& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(ABBankerInfo* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ABBankerInfo* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline ABBankerInfo* New() const final {
+    return CreateMaybeMessage<ABBankerInfo>(nullptr);
+  }
+
+  ABBankerInfo* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<ABBankerInfo>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const ABBankerInfo& from);
+  void MergeFrom(const ABBankerInfo& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(ABBankerInfo* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "AndarBahar.ABBankerInfo";
+  }
+  protected:
+  explicit ABBankerInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_AndarBahar_2eproto);
+    return ::descriptor_table_AndarBahar_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kOpGoldFieldNumber = 2,
+    kIdFieldNumber = 1,
+    kRoundFieldNumber = 3,
+    kTotalWinFieldNumber = 4,
+  };
+  // int64 op_gold = 2;
+  void clear_op_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 op_gold() const;
+  void set_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_op_gold() const;
+  void _internal_set_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int32 id = 1;
+  void clear_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 id() const;
+  void set_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_id() const;
+  void _internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 round = 3;
+  void clear_round();
+  ::PROTOBUF_NAMESPACE_ID::int32 round() const;
+  void set_round(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_round() const;
+  void _internal_set_round(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int64 total_win = 4;
+  void clear_total_win();
+  ::PROTOBUF_NAMESPACE_ID::int64 total_win() const;
+  void set_total_win(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_total_win() const;
+  void _internal_set_total_win(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:AndarBahar.ABBankerInfo)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int64 op_gold_;
+  ::PROTOBUF_NAMESPACE_ID::int32 id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 round_;
+  ::PROTOBUF_NAMESPACE_ID::int64 total_win_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_AndarBahar_2eproto;
 };
@@ -696,7 +869,7 @@ class MsgSceneInfo PROTOBUF_FINAL :
                &_MsgSceneInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    3;
+    4;
 
   friend void swap(MsgSceneInfo& a, MsgSceneInfo& b) {
     a.Swap(&b);
@@ -775,18 +948,16 @@ class MsgSceneInfo PROTOBUF_FINAL :
     kRedCardsFieldNumber = 20,
     kBlueCardsFieldNumber = 21,
     kPlayerListFieldNumber = 22,
+    kBankerInfoFieldNumber = 12,
     kPlayerLimitFieldNumber = 5,
     kBetTimeFieldNumber = 6,
     kOutTimeFieldNumber = 7,
     kStateFieldNumber = 8,
-    kBankerIdFieldNumber = 10,
-    kBankerMaxFieldNumber = 11,
-    kBankerLimitFieldNumber = 13,
-    kBankerNumFieldNumber = 12,
-    kBaseCardFieldNumber = 14,
-    kRedTotalBetFieldNumber = 15,
-    kBluoTotalBetFieldNumber = 16,
-    kBankerOpGoldFieldNumber = 17,
+    kBankerLimitFieldNumber = 11,
+    kBankerMaxFieldNumber = 10,
+    kBaseCardFieldNumber = 13,
+    kRedTotalBetFieldNumber = 14,
+    kBluoTotalBetFieldNumber = 15,
   };
   // repeated int64 bet = 1;
   int bet_size() const;
@@ -956,6 +1127,24 @@ class MsgSceneInfo PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::AndarBahar::ABPlayerData >&
       player_list() const;
 
+  // .AndarBahar.ABBankerInfo banker_info = 12;
+  bool has_banker_info() const;
+  private:
+  bool _internal_has_banker_info() const;
+  public:
+  void clear_banker_info();
+  const ::AndarBahar::ABBankerInfo& banker_info() const;
+  ::AndarBahar::ABBankerInfo* release_banker_info();
+  ::AndarBahar::ABBankerInfo* mutable_banker_info();
+  void set_allocated_banker_info(::AndarBahar::ABBankerInfo* banker_info);
+  private:
+  const ::AndarBahar::ABBankerInfo& _internal_banker_info() const;
+  ::AndarBahar::ABBankerInfo* _internal_mutable_banker_info();
+  public:
+  void unsafe_arena_set_allocated_banker_info(
+      ::AndarBahar::ABBankerInfo* banker_info);
+  ::AndarBahar::ABBankerInfo* unsafe_arena_release_banker_info();
+
   // int32 player_limit = 5;
   void clear_player_limit();
   ::PROTOBUF_NAMESPACE_ID::int32 player_limit() const;
@@ -992,25 +1181,7 @@ class MsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_state(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 banker_id = 10;
-  void clear_banker_id();
-  ::PROTOBUF_NAMESPACE_ID::int32 banker_id() const;
-  void set_banker_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_banker_id() const;
-  void _internal_set_banker_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 banker_max = 11;
-  void clear_banker_max();
-  ::PROTOBUF_NAMESPACE_ID::int32 banker_max() const;
-  void set_banker_max(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_banker_max() const;
-  void _internal_set_banker_max(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int64 banker_limit = 13;
+  // int64 banker_limit = 11;
   void clear_banker_limit();
   ::PROTOBUF_NAMESPACE_ID::int64 banker_limit() const;
   void set_banker_limit(::PROTOBUF_NAMESPACE_ID::int64 value);
@@ -1019,16 +1190,16 @@ class MsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_banker_limit(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int32 banker_num = 12;
-  void clear_banker_num();
-  ::PROTOBUF_NAMESPACE_ID::int32 banker_num() const;
-  void set_banker_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // int32 banker_max = 10;
+  void clear_banker_max();
+  ::PROTOBUF_NAMESPACE_ID::int32 banker_max() const;
+  void set_banker_max(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_banker_num() const;
-  void _internal_set_banker_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_banker_max() const;
+  void _internal_set_banker_max(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 base_card = 14;
+  // int32 base_card = 13;
   void clear_base_card();
   ::PROTOBUF_NAMESPACE_ID::int32 base_card() const;
   void set_base_card(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -1037,7 +1208,7 @@ class MsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_base_card(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int64 red_total_bet = 15;
+  // int64 red_total_bet = 14;
   void clear_red_total_bet();
   ::PROTOBUF_NAMESPACE_ID::int64 red_total_bet() const;
   void set_red_total_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
@@ -1046,22 +1217,13 @@ class MsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_red_total_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int64 bluo_total_bet = 16;
+  // int64 bluo_total_bet = 15;
   void clear_bluo_total_bet();
   ::PROTOBUF_NAMESPACE_ID::int64 bluo_total_bet() const;
   void set_bluo_total_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
   private:
   ::PROTOBUF_NAMESPACE_ID::int64 _internal_bluo_total_bet() const;
   void _internal_set_bluo_total_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
-  // int64 banker_op_gold = 17;
-  void clear_banker_op_gold();
-  ::PROTOBUF_NAMESPACE_ID::int64 banker_op_gold() const;
-  void set_banker_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_banker_op_gold() const;
-  void _internal_set_banker_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
   // @@protoc_insertion_point(class_scope:AndarBahar.MsgSceneInfo)
@@ -1085,18 +1247,16 @@ class MsgSceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > blue_cards_;
   mutable std::atomic<int> _blue_cards_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::AndarBahar::ABPlayerData > player_list_;
+  ::AndarBahar::ABBankerInfo* banker_info_;
   ::PROTOBUF_NAMESPACE_ID::int32 player_limit_;
   ::PROTOBUF_NAMESPACE_ID::int32 bet_time_;
   ::PROTOBUF_NAMESPACE_ID::int32 out_time_;
   ::PROTOBUF_NAMESPACE_ID::int32 state_;
-  ::PROTOBUF_NAMESPACE_ID::int32 banker_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 banker_max_;
   ::PROTOBUF_NAMESPACE_ID::int64 banker_limit_;
-  ::PROTOBUF_NAMESPACE_ID::int32 banker_num_;
+  ::PROTOBUF_NAMESPACE_ID::int32 banker_max_;
   ::PROTOBUF_NAMESPACE_ID::int32 base_card_;
   ::PROTOBUF_NAMESPACE_ID::int64 red_total_bet_;
   ::PROTOBUF_NAMESPACE_ID::int64 bluo_total_bet_;
-  ::PROTOBUF_NAMESPACE_ID::int64 banker_op_gold_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_AndarBahar_2eproto;
 };
@@ -1143,7 +1303,7 @@ class MsgStartGameResp PROTOBUF_FINAL :
                &_MsgStartGameResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    4;
+    5;
 
   friend void swap(MsgStartGameResp& a, MsgStartGameResp& b) {
     a.Swap(&b);
@@ -1214,37 +1374,26 @@ class MsgStartGameResp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kBankerIdFieldNumber = 1,
-    kBankerNumFieldNumber = 2,
-    kBankerOpGoldFieldNumber = 4,
+    kBankerInfoFieldNumber = 1,
     kBaseCardFieldNumber = 3,
   };
-  // int32 banker_id = 1;
-  void clear_banker_id();
-  ::PROTOBUF_NAMESPACE_ID::int32 banker_id() const;
-  void set_banker_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // .AndarBahar.ABBankerInfo banker_info = 1;
+  bool has_banker_info() const;
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_banker_id() const;
-  void _internal_set_banker_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  bool _internal_has_banker_info() const;
   public:
-
-  // int32 banker_num = 2;
-  void clear_banker_num();
-  ::PROTOBUF_NAMESPACE_ID::int32 banker_num() const;
-  void set_banker_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  void clear_banker_info();
+  const ::AndarBahar::ABBankerInfo& banker_info() const;
+  ::AndarBahar::ABBankerInfo* release_banker_info();
+  ::AndarBahar::ABBankerInfo* mutable_banker_info();
+  void set_allocated_banker_info(::AndarBahar::ABBankerInfo* banker_info);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_banker_num() const;
-  void _internal_set_banker_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::AndarBahar::ABBankerInfo& _internal_banker_info() const;
+  ::AndarBahar::ABBankerInfo* _internal_mutable_banker_info();
   public:
-
-  // int64 banker_op_gold = 4;
-  void clear_banker_op_gold();
-  ::PROTOBUF_NAMESPACE_ID::int64 banker_op_gold() const;
-  void set_banker_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_banker_op_gold() const;
-  void _internal_set_banker_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
+  void unsafe_arena_set_allocated_banker_info(
+      ::AndarBahar::ABBankerInfo* banker_info);
+  ::AndarBahar::ABBankerInfo* unsafe_arena_release_banker_info();
 
   // int32 base_card = 3;
   void clear_base_card();
@@ -1262,9 +1411,7 @@ class MsgStartGameResp PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int32 banker_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 banker_num_;
-  ::PROTOBUF_NAMESPACE_ID::int64 banker_op_gold_;
+  ::AndarBahar::ABBankerInfo* banker_info_;
   ::PROTOBUF_NAMESPACE_ID::int32 base_card_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_AndarBahar_2eproto;
@@ -1312,7 +1459,7 @@ class MsgBet PROTOBUF_FINAL :
                &_MsgBet_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    5;
+    6;
 
   friend void swap(MsgBet& a, MsgBet& b) {
     a.Swap(&b);
@@ -1459,7 +1606,7 @@ class MsgBetResp PROTOBUF_FINAL :
                &_MsgBetResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    6;
+    7;
 
   friend void swap(MsgBetResp& a, MsgBetResp& b) {
     a.Swap(&b);
@@ -1637,7 +1784,7 @@ class MsgSendCardResp PROTOBUF_FINAL :
                &_MsgSendCardResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    7;
+    8;
 
   friend void swap(MsgSendCardResp& a, MsgSendCardResp& b) {
     a.Swap(&b);
@@ -1795,7 +1942,7 @@ class MsgOpBanker PROTOBUF_FINAL :
                &_MsgOpBanker_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    9;
 
   friend void swap(MsgOpBanker& a, MsgOpBanker& b) {
     a.Swap(&b);
@@ -1942,7 +2089,7 @@ class MsgOpBankerResp PROTOBUF_FINAL :
                &_MsgOpBankerResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    10;
 
   friend void swap(MsgOpBankerResp& a, MsgOpBankerResp& b) {
     a.Swap(&b);
@@ -2111,7 +2258,7 @@ class MsgWinMsg PROTOBUF_FINAL :
                &_MsgWinMsg_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    11;
 
   friend void swap(MsgWinMsg& a, MsgWinMsg& b) {
     a.Swap(&b);
@@ -2291,7 +2438,7 @@ class MsgResult PROTOBUF_FINAL :
                &_MsgResult_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    12;
 
   friend void swap(MsgResult& a, MsgResult& b) {
     a.Swap(&b);
@@ -2362,13 +2509,11 @@ class MsgResult PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kWinMsgFieldNumber = 5,
-    kBankerWinFieldNumber = 2,
-    kBankerOpGoldFieldNumber = 3,
-    kBankerTotalWinFieldNumber = 4,
+    kWinMsgFieldNumber = 3,
+    kBankerInfoFieldNumber = 2,
     kWinIndexFieldNumber = 1,
   };
-  // repeated .AndarBahar.MsgWinMsg win_msg = 5;
+  // repeated .AndarBahar.MsgWinMsg win_msg = 3;
   int win_msg_size() const;
   private:
   int _internal_win_msg_size() const;
@@ -2386,32 +2531,23 @@ class MsgResult PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::AndarBahar::MsgWinMsg >&
       win_msg() const;
 
-  // int64 banker_win = 2;
-  void clear_banker_win();
-  ::PROTOBUF_NAMESPACE_ID::int64 banker_win() const;
-  void set_banker_win(::PROTOBUF_NAMESPACE_ID::int64 value);
+  // .AndarBahar.ABBankerInfo banker_info = 2;
+  bool has_banker_info() const;
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_banker_win() const;
-  void _internal_set_banker_win(::PROTOBUF_NAMESPACE_ID::int64 value);
+  bool _internal_has_banker_info() const;
   public:
-
-  // int64 banker_op_gold = 3;
-  void clear_banker_op_gold();
-  ::PROTOBUF_NAMESPACE_ID::int64 banker_op_gold() const;
-  void set_banker_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  void clear_banker_info();
+  const ::AndarBahar::ABBankerInfo& banker_info() const;
+  ::AndarBahar::ABBankerInfo* release_banker_info();
+  ::AndarBahar::ABBankerInfo* mutable_banker_info();
+  void set_allocated_banker_info(::AndarBahar::ABBankerInfo* banker_info);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_banker_op_gold() const;
-  void _internal_set_banker_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  const ::AndarBahar::ABBankerInfo& _internal_banker_info() const;
+  ::AndarBahar::ABBankerInfo* _internal_mutable_banker_info();
   public:
-
-  // int64 banker_total_win = 4;
-  void clear_banker_total_win();
-  ::PROTOBUF_NAMESPACE_ID::int64 banker_total_win() const;
-  void set_banker_total_win(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_banker_total_win() const;
-  void _internal_set_banker_total_win(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
+  void unsafe_arena_set_allocated_banker_info(
+      ::AndarBahar::ABBankerInfo* banker_info);
+  ::AndarBahar::ABBankerInfo* unsafe_arena_release_banker_info();
 
   // int32 win_index = 1;
   void clear_win_index();
@@ -2430,9 +2566,7 @@ class MsgResult PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::AndarBahar::MsgWinMsg > win_msg_;
-  ::PROTOBUF_NAMESPACE_ID::int64 banker_win_;
-  ::PROTOBUF_NAMESPACE_ID::int64 banker_op_gold_;
-  ::PROTOBUF_NAMESPACE_ID::int64 banker_total_win_;
+  ::AndarBahar::ABBankerInfo* banker_info_;
   ::PROTOBUF_NAMESPACE_ID::int32 win_index_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_AndarBahar_2eproto;
@@ -2615,7 +2749,7 @@ ABPlayerData::bet_infos() const {
 
 // ABUpWaitBankerInfo
 
-// int32 Id = 1;
+// int32 id = 1;
 inline void ABUpWaitBankerInfo::clear_id() {
   id_ = 0;
 }
@@ -2623,7 +2757,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int32 ABUpWaitBankerInfo::_internal_id() const {
   return id_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int32 ABUpWaitBankerInfo::id() const {
-  // @@protoc_insertion_point(field_get:AndarBahar.ABUpWaitBankerInfo.Id)
+  // @@protoc_insertion_point(field_get:AndarBahar.ABUpWaitBankerInfo.id)
   return _internal_id();
 }
 inline void ABUpWaitBankerInfo::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
@@ -2632,27 +2766,111 @@ inline void ABUpWaitBankerInfo::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 
 }
 inline void ABUpWaitBankerInfo::set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_id(value);
-  // @@protoc_insertion_point(field_set:AndarBahar.ABUpWaitBankerInfo.Id)
+  // @@protoc_insertion_point(field_set:AndarBahar.ABUpWaitBankerInfo.id)
 }
 
-// int64 OpBankerGold = 2;
-inline void ABUpWaitBankerInfo::clear_opbankergold() {
-  opbankergold_ = PROTOBUF_LONGLONG(0);
+// int64 op_banker_gold = 2;
+inline void ABUpWaitBankerInfo::clear_op_banker_gold() {
+  op_banker_gold_ = PROTOBUF_LONGLONG(0);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 ABUpWaitBankerInfo::_internal_opbankergold() const {
-  return opbankergold_;
+inline ::PROTOBUF_NAMESPACE_ID::int64 ABUpWaitBankerInfo::_internal_op_banker_gold() const {
+  return op_banker_gold_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 ABUpWaitBankerInfo::opbankergold() const {
-  // @@protoc_insertion_point(field_get:AndarBahar.ABUpWaitBankerInfo.OpBankerGold)
-  return _internal_opbankergold();
+inline ::PROTOBUF_NAMESPACE_ID::int64 ABUpWaitBankerInfo::op_banker_gold() const {
+  // @@protoc_insertion_point(field_get:AndarBahar.ABUpWaitBankerInfo.op_banker_gold)
+  return _internal_op_banker_gold();
 }
-inline void ABUpWaitBankerInfo::_internal_set_opbankergold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void ABUpWaitBankerInfo::_internal_set_op_banker_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
   
-  opbankergold_ = value;
+  op_banker_gold_ = value;
 }
-inline void ABUpWaitBankerInfo::set_opbankergold(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_opbankergold(value);
-  // @@protoc_insertion_point(field_set:AndarBahar.ABUpWaitBankerInfo.OpBankerGold)
+inline void ABUpWaitBankerInfo::set_op_banker_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_op_banker_gold(value);
+  // @@protoc_insertion_point(field_set:AndarBahar.ABUpWaitBankerInfo.op_banker_gold)
+}
+
+// -------------------------------------------------------------------
+
+// ABBankerInfo
+
+// int32 id = 1;
+inline void ABBankerInfo::clear_id() {
+  id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 ABBankerInfo::_internal_id() const {
+  return id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 ABBankerInfo::id() const {
+  // @@protoc_insertion_point(field_get:AndarBahar.ABBankerInfo.id)
+  return _internal_id();
+}
+inline void ABBankerInfo::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  id_ = value;
+}
+inline void ABBankerInfo::set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_id(value);
+  // @@protoc_insertion_point(field_set:AndarBahar.ABBankerInfo.id)
+}
+
+// int64 op_gold = 2;
+inline void ABBankerInfo::clear_op_gold() {
+  op_gold_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 ABBankerInfo::_internal_op_gold() const {
+  return op_gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 ABBankerInfo::op_gold() const {
+  // @@protoc_insertion_point(field_get:AndarBahar.ABBankerInfo.op_gold)
+  return _internal_op_gold();
+}
+inline void ABBankerInfo::_internal_set_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  op_gold_ = value;
+}
+inline void ABBankerInfo::set_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_op_gold(value);
+  // @@protoc_insertion_point(field_set:AndarBahar.ABBankerInfo.op_gold)
+}
+
+// int32 round = 3;
+inline void ABBankerInfo::clear_round() {
+  round_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 ABBankerInfo::_internal_round() const {
+  return round_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 ABBankerInfo::round() const {
+  // @@protoc_insertion_point(field_get:AndarBahar.ABBankerInfo.round)
+  return _internal_round();
+}
+inline void ABBankerInfo::_internal_set_round(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  round_ = value;
+}
+inline void ABBankerInfo::set_round(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_round(value);
+  // @@protoc_insertion_point(field_set:AndarBahar.ABBankerInfo.round)
+}
+
+// int64 total_win = 4;
+inline void ABBankerInfo::clear_total_win() {
+  total_win_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 ABBankerInfo::_internal_total_win() const {
+  return total_win_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 ABBankerInfo::total_win() const {
+  // @@protoc_insertion_point(field_get:AndarBahar.ABBankerInfo.total_win)
+  return _internal_total_win();
+}
+inline void ABBankerInfo::_internal_set_total_win(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  total_win_ = value;
+}
+inline void ABBankerInfo::set_total_win(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_total_win(value);
+  // @@protoc_insertion_point(field_set:AndarBahar.ABBankerInfo.total_win)
 }
 
 // -------------------------------------------------------------------
@@ -2966,27 +3184,7 @@ MsgSceneInfo::mutable_mul() {
   return _internal_mutable_mul();
 }
 
-// int32 banker_id = 10;
-inline void MsgSceneInfo::clear_banker_id() {
-  banker_id_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::_internal_banker_id() const {
-  return banker_id_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::banker_id() const {
-  // @@protoc_insertion_point(field_get:AndarBahar.MsgSceneInfo.banker_id)
-  return _internal_banker_id();
-}
-inline void MsgSceneInfo::_internal_set_banker_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  banker_id_ = value;
-}
-inline void MsgSceneInfo::set_banker_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_banker_id(value);
-  // @@protoc_insertion_point(field_set:AndarBahar.MsgSceneInfo.banker_id)
-}
-
-// int32 banker_max = 11;
+// int32 banker_max = 10;
 inline void MsgSceneInfo::clear_banker_max() {
   banker_max_ = 0;
 }
@@ -3006,27 +3204,7 @@ inline void MsgSceneInfo::set_banker_max(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:AndarBahar.MsgSceneInfo.banker_max)
 }
 
-// int32 banker_num = 12;
-inline void MsgSceneInfo::clear_banker_num() {
-  banker_num_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::_internal_banker_num() const {
-  return banker_num_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::banker_num() const {
-  // @@protoc_insertion_point(field_get:AndarBahar.MsgSceneInfo.banker_num)
-  return _internal_banker_num();
-}
-inline void MsgSceneInfo::_internal_set_banker_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  banker_num_ = value;
-}
-inline void MsgSceneInfo::set_banker_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_banker_num(value);
-  // @@protoc_insertion_point(field_set:AndarBahar.MsgSceneInfo.banker_num)
-}
-
-// int64 banker_limit = 13;
+// int64 banker_limit = 11;
 inline void MsgSceneInfo::clear_banker_limit() {
   banker_limit_ = PROTOBUF_LONGLONG(0);
 }
@@ -3046,7 +3224,90 @@ inline void MsgSceneInfo::set_banker_limit(::PROTOBUF_NAMESPACE_ID::int64 value)
   // @@protoc_insertion_point(field_set:AndarBahar.MsgSceneInfo.banker_limit)
 }
 
-// int32 base_card = 14;
+// .AndarBahar.ABBankerInfo banker_info = 12;
+inline bool MsgSceneInfo::_internal_has_banker_info() const {
+  return this != internal_default_instance() && banker_info_ != nullptr;
+}
+inline bool MsgSceneInfo::has_banker_info() const {
+  return _internal_has_banker_info();
+}
+inline void MsgSceneInfo::clear_banker_info() {
+  if (GetArena() == nullptr && banker_info_ != nullptr) {
+    delete banker_info_;
+  }
+  banker_info_ = nullptr;
+}
+inline const ::AndarBahar::ABBankerInfo& MsgSceneInfo::_internal_banker_info() const {
+  const ::AndarBahar::ABBankerInfo* p = banker_info_;
+  return p != nullptr ? *p : reinterpret_cast<const ::AndarBahar::ABBankerInfo&>(
+      ::AndarBahar::_ABBankerInfo_default_instance_);
+}
+inline const ::AndarBahar::ABBankerInfo& MsgSceneInfo::banker_info() const {
+  // @@protoc_insertion_point(field_get:AndarBahar.MsgSceneInfo.banker_info)
+  return _internal_banker_info();
+}
+inline void MsgSceneInfo::unsafe_arena_set_allocated_banker_info(
+    ::AndarBahar::ABBankerInfo* banker_info) {
+  if (GetArena() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(banker_info_);
+  }
+  banker_info_ = banker_info;
+  if (banker_info) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:AndarBahar.MsgSceneInfo.banker_info)
+}
+inline ::AndarBahar::ABBankerInfo* MsgSceneInfo::release_banker_info() {
+  
+  ::AndarBahar::ABBankerInfo* temp = banker_info_;
+  banker_info_ = nullptr;
+  if (GetArena() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+  return temp;
+}
+inline ::AndarBahar::ABBankerInfo* MsgSceneInfo::unsafe_arena_release_banker_info() {
+  // @@protoc_insertion_point(field_release:AndarBahar.MsgSceneInfo.banker_info)
+  
+  ::AndarBahar::ABBankerInfo* temp = banker_info_;
+  banker_info_ = nullptr;
+  return temp;
+}
+inline ::AndarBahar::ABBankerInfo* MsgSceneInfo::_internal_mutable_banker_info() {
+  
+  if (banker_info_ == nullptr) {
+    auto* p = CreateMaybeMessage<::AndarBahar::ABBankerInfo>(GetArena());
+    banker_info_ = p;
+  }
+  return banker_info_;
+}
+inline ::AndarBahar::ABBankerInfo* MsgSceneInfo::mutable_banker_info() {
+  // @@protoc_insertion_point(field_mutable:AndarBahar.MsgSceneInfo.banker_info)
+  return _internal_mutable_banker_info();
+}
+inline void MsgSceneInfo::set_allocated_banker_info(::AndarBahar::ABBankerInfo* banker_info) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  if (message_arena == nullptr) {
+    delete banker_info_;
+  }
+  if (banker_info) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(banker_info);
+    if (message_arena != submessage_arena) {
+      banker_info = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, banker_info, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  banker_info_ = banker_info;
+  // @@protoc_insertion_point(field_set_allocated:AndarBahar.MsgSceneInfo.banker_info)
+}
+
+// int32 base_card = 13;
 inline void MsgSceneInfo::clear_base_card() {
   base_card_ = 0;
 }
@@ -3066,7 +3327,7 @@ inline void MsgSceneInfo::set_base_card(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:AndarBahar.MsgSceneInfo.base_card)
 }
 
-// int64 red_total_bet = 15;
+// int64 red_total_bet = 14;
 inline void MsgSceneInfo::clear_red_total_bet() {
   red_total_bet_ = PROTOBUF_LONGLONG(0);
 }
@@ -3086,7 +3347,7 @@ inline void MsgSceneInfo::set_red_total_bet(::PROTOBUF_NAMESPACE_ID::int64 value
   // @@protoc_insertion_point(field_set:AndarBahar.MsgSceneInfo.red_total_bet)
 }
 
-// int64 bluo_total_bet = 16;
+// int64 bluo_total_bet = 15;
 inline void MsgSceneInfo::clear_bluo_total_bet() {
   bluo_total_bet_ = PROTOBUF_LONGLONG(0);
 }
@@ -3104,26 +3365,6 @@ inline void MsgSceneInfo::_internal_set_bluo_total_bet(::PROTOBUF_NAMESPACE_ID::
 inline void MsgSceneInfo::set_bluo_total_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_bluo_total_bet(value);
   // @@protoc_insertion_point(field_set:AndarBahar.MsgSceneInfo.bluo_total_bet)
-}
-
-// int64 banker_op_gold = 17;
-inline void MsgSceneInfo::clear_banker_op_gold() {
-  banker_op_gold_ = PROTOBUF_LONGLONG(0);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSceneInfo::_internal_banker_op_gold() const {
-  return banker_op_gold_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSceneInfo::banker_op_gold() const {
-  // @@protoc_insertion_point(field_get:AndarBahar.MsgSceneInfo.banker_op_gold)
-  return _internal_banker_op_gold();
-}
-inline void MsgSceneInfo::_internal_set_banker_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  
-  banker_op_gold_ = value;
-}
-inline void MsgSceneInfo::set_banker_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_banker_op_gold(value);
-  // @@protoc_insertion_point(field_set:AndarBahar.MsgSceneInfo.banker_op_gold)
 }
 
 // repeated int32 red_cards = 20;
@@ -3263,44 +3504,87 @@ MsgSceneInfo::player_list() const {
 
 // MsgStartGameResp
 
-// int32 banker_id = 1;
-inline void MsgStartGameResp::clear_banker_id() {
-  banker_id_ = 0;
+// .AndarBahar.ABBankerInfo banker_info = 1;
+inline bool MsgStartGameResp::_internal_has_banker_info() const {
+  return this != internal_default_instance() && banker_info_ != nullptr;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgStartGameResp::_internal_banker_id() const {
-  return banker_id_;
+inline bool MsgStartGameResp::has_banker_info() const {
+  return _internal_has_banker_info();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgStartGameResp::banker_id() const {
-  // @@protoc_insertion_point(field_get:AndarBahar.MsgStartGameResp.banker_id)
-  return _internal_banker_id();
+inline void MsgStartGameResp::clear_banker_info() {
+  if (GetArena() == nullptr && banker_info_ != nullptr) {
+    delete banker_info_;
+  }
+  banker_info_ = nullptr;
 }
-inline void MsgStartGameResp::_internal_set_banker_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline const ::AndarBahar::ABBankerInfo& MsgStartGameResp::_internal_banker_info() const {
+  const ::AndarBahar::ABBankerInfo* p = banker_info_;
+  return p != nullptr ? *p : reinterpret_cast<const ::AndarBahar::ABBankerInfo&>(
+      ::AndarBahar::_ABBankerInfo_default_instance_);
+}
+inline const ::AndarBahar::ABBankerInfo& MsgStartGameResp::banker_info() const {
+  // @@protoc_insertion_point(field_get:AndarBahar.MsgStartGameResp.banker_info)
+  return _internal_banker_info();
+}
+inline void MsgStartGameResp::unsafe_arena_set_allocated_banker_info(
+    ::AndarBahar::ABBankerInfo* banker_info) {
+  if (GetArena() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(banker_info_);
+  }
+  banker_info_ = banker_info;
+  if (banker_info) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:AndarBahar.MsgStartGameResp.banker_info)
+}
+inline ::AndarBahar::ABBankerInfo* MsgStartGameResp::release_banker_info() {
   
-  banker_id_ = value;
+  ::AndarBahar::ABBankerInfo* temp = banker_info_;
+  banker_info_ = nullptr;
+  if (GetArena() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+  return temp;
 }
-inline void MsgStartGameResp::set_banker_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_banker_id(value);
-  // @@protoc_insertion_point(field_set:AndarBahar.MsgStartGameResp.banker_id)
-}
-
-// int32 banker_num = 2;
-inline void MsgStartGameResp::clear_banker_num() {
-  banker_num_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgStartGameResp::_internal_banker_num() const {
-  return banker_num_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgStartGameResp::banker_num() const {
-  // @@protoc_insertion_point(field_get:AndarBahar.MsgStartGameResp.banker_num)
-  return _internal_banker_num();
-}
-inline void MsgStartGameResp::_internal_set_banker_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline ::AndarBahar::ABBankerInfo* MsgStartGameResp::unsafe_arena_release_banker_info() {
+  // @@protoc_insertion_point(field_release:AndarBahar.MsgStartGameResp.banker_info)
   
-  banker_num_ = value;
+  ::AndarBahar::ABBankerInfo* temp = banker_info_;
+  banker_info_ = nullptr;
+  return temp;
 }
-inline void MsgStartGameResp::set_banker_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_banker_num(value);
-  // @@protoc_insertion_point(field_set:AndarBahar.MsgStartGameResp.banker_num)
+inline ::AndarBahar::ABBankerInfo* MsgStartGameResp::_internal_mutable_banker_info() {
+  
+  if (banker_info_ == nullptr) {
+    auto* p = CreateMaybeMessage<::AndarBahar::ABBankerInfo>(GetArena());
+    banker_info_ = p;
+  }
+  return banker_info_;
+}
+inline ::AndarBahar::ABBankerInfo* MsgStartGameResp::mutable_banker_info() {
+  // @@protoc_insertion_point(field_mutable:AndarBahar.MsgStartGameResp.banker_info)
+  return _internal_mutable_banker_info();
+}
+inline void MsgStartGameResp::set_allocated_banker_info(::AndarBahar::ABBankerInfo* banker_info) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  if (message_arena == nullptr) {
+    delete banker_info_;
+  }
+  if (banker_info) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(banker_info);
+    if (message_arena != submessage_arena) {
+      banker_info = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, banker_info, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  banker_info_ = banker_info;
+  // @@protoc_insertion_point(field_set_allocated:AndarBahar.MsgStartGameResp.banker_info)
 }
 
 // int32 base_card = 3;
@@ -3321,26 +3605,6 @@ inline void MsgStartGameResp::_internal_set_base_card(::PROTOBUF_NAMESPACE_ID::i
 inline void MsgStartGameResp::set_base_card(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_base_card(value);
   // @@protoc_insertion_point(field_set:AndarBahar.MsgStartGameResp.base_card)
-}
-
-// int64 banker_op_gold = 4;
-inline void MsgStartGameResp::clear_banker_op_gold() {
-  banker_op_gold_ = PROTOBUF_LONGLONG(0);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgStartGameResp::_internal_banker_op_gold() const {
-  return banker_op_gold_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgStartGameResp::banker_op_gold() const {
-  // @@protoc_insertion_point(field_get:AndarBahar.MsgStartGameResp.banker_op_gold)
-  return _internal_banker_op_gold();
-}
-inline void MsgStartGameResp::_internal_set_banker_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  
-  banker_op_gold_ = value;
-}
-inline void MsgStartGameResp::set_banker_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_banker_op_gold(value);
-  // @@protoc_insertion_point(field_set:AndarBahar.MsgStartGameResp.banker_op_gold)
 }
 
 // -------------------------------------------------------------------
@@ -3854,67 +4118,90 @@ inline void MsgResult::set_win_index(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:AndarBahar.MsgResult.win_index)
 }
 
-// int64 banker_win = 2;
-inline void MsgResult::clear_banker_win() {
-  banker_win_ = PROTOBUF_LONGLONG(0);
+// .AndarBahar.ABBankerInfo banker_info = 2;
+inline bool MsgResult::_internal_has_banker_info() const {
+  return this != internal_default_instance() && banker_info_ != nullptr;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgResult::_internal_banker_win() const {
-  return banker_win_;
+inline bool MsgResult::has_banker_info() const {
+  return _internal_has_banker_info();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgResult::banker_win() const {
-  // @@protoc_insertion_point(field_get:AndarBahar.MsgResult.banker_win)
-  return _internal_banker_win();
+inline void MsgResult::clear_banker_info() {
+  if (GetArena() == nullptr && banker_info_ != nullptr) {
+    delete banker_info_;
+  }
+  banker_info_ = nullptr;
 }
-inline void MsgResult::_internal_set_banker_win(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline const ::AndarBahar::ABBankerInfo& MsgResult::_internal_banker_info() const {
+  const ::AndarBahar::ABBankerInfo* p = banker_info_;
+  return p != nullptr ? *p : reinterpret_cast<const ::AndarBahar::ABBankerInfo&>(
+      ::AndarBahar::_ABBankerInfo_default_instance_);
+}
+inline const ::AndarBahar::ABBankerInfo& MsgResult::banker_info() const {
+  // @@protoc_insertion_point(field_get:AndarBahar.MsgResult.banker_info)
+  return _internal_banker_info();
+}
+inline void MsgResult::unsafe_arena_set_allocated_banker_info(
+    ::AndarBahar::ABBankerInfo* banker_info) {
+  if (GetArena() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(banker_info_);
+  }
+  banker_info_ = banker_info;
+  if (banker_info) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:AndarBahar.MsgResult.banker_info)
+}
+inline ::AndarBahar::ABBankerInfo* MsgResult::release_banker_info() {
   
-  banker_win_ = value;
+  ::AndarBahar::ABBankerInfo* temp = banker_info_;
+  banker_info_ = nullptr;
+  if (GetArena() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+  return temp;
 }
-inline void MsgResult::set_banker_win(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_banker_win(value);
-  // @@protoc_insertion_point(field_set:AndarBahar.MsgResult.banker_win)
+inline ::AndarBahar::ABBankerInfo* MsgResult::unsafe_arena_release_banker_info() {
+  // @@protoc_insertion_point(field_release:AndarBahar.MsgResult.banker_info)
+  
+  ::AndarBahar::ABBankerInfo* temp = banker_info_;
+  banker_info_ = nullptr;
+  return temp;
+}
+inline ::AndarBahar::ABBankerInfo* MsgResult::_internal_mutable_banker_info() {
+  
+  if (banker_info_ == nullptr) {
+    auto* p = CreateMaybeMessage<::AndarBahar::ABBankerInfo>(GetArena());
+    banker_info_ = p;
+  }
+  return banker_info_;
+}
+inline ::AndarBahar::ABBankerInfo* MsgResult::mutable_banker_info() {
+  // @@protoc_insertion_point(field_mutable:AndarBahar.MsgResult.banker_info)
+  return _internal_mutable_banker_info();
+}
+inline void MsgResult::set_allocated_banker_info(::AndarBahar::ABBankerInfo* banker_info) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  if (message_arena == nullptr) {
+    delete banker_info_;
+  }
+  if (banker_info) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(banker_info);
+    if (message_arena != submessage_arena) {
+      banker_info = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, banker_info, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  banker_info_ = banker_info;
+  // @@protoc_insertion_point(field_set_allocated:AndarBahar.MsgResult.banker_info)
 }
 
-// int64 banker_op_gold = 3;
-inline void MsgResult::clear_banker_op_gold() {
-  banker_op_gold_ = PROTOBUF_LONGLONG(0);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgResult::_internal_banker_op_gold() const {
-  return banker_op_gold_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgResult::banker_op_gold() const {
-  // @@protoc_insertion_point(field_get:AndarBahar.MsgResult.banker_op_gold)
-  return _internal_banker_op_gold();
-}
-inline void MsgResult::_internal_set_banker_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  
-  banker_op_gold_ = value;
-}
-inline void MsgResult::set_banker_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_banker_op_gold(value);
-  // @@protoc_insertion_point(field_set:AndarBahar.MsgResult.banker_op_gold)
-}
-
-// int64 banker_total_win = 4;
-inline void MsgResult::clear_banker_total_win() {
-  banker_total_win_ = PROTOBUF_LONGLONG(0);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgResult::_internal_banker_total_win() const {
-  return banker_total_win_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgResult::banker_total_win() const {
-  // @@protoc_insertion_point(field_get:AndarBahar.MsgResult.banker_total_win)
-  return _internal_banker_total_win();
-}
-inline void MsgResult::_internal_set_banker_total_win(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  
-  banker_total_win_ = value;
-}
-inline void MsgResult::set_banker_total_win(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_banker_total_win(value);
-  // @@protoc_insertion_point(field_set:AndarBahar.MsgResult.banker_total_win)
-}
-
-// repeated .AndarBahar.MsgWinMsg win_msg = 5;
+// repeated .AndarBahar.MsgWinMsg win_msg = 3;
 inline int MsgResult::_internal_win_msg_size() const {
   return win_msg_.size();
 }
@@ -3956,6 +4243,8 @@ MsgResult::win_msg() const {
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
