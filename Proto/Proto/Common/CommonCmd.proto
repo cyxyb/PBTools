@@ -130,6 +130,8 @@ enum EMsgIDLogin
 	MsgIDLogin_NotifyServerOfflineResp			= 116;		//通知服务器(MsgCommonBool)
 	MsgIDShare_NotifyUpdateVipExpResp			= 117;		//通知更新Vip经验(MsgCommonBool)
 	MsgIDShare_NotifyAddNewSubResp				= 118;		//通知增加新的下级(MsgCommonBool)
+	MsgIDDelete_DeleteAccount					= 119;		//删除账号(MsgCommonBool)
+	MsgIDDelete_DeleteAccountResp				= 120;		//删除账号返回(MsgCommonN32)
 }
 
 enum EMsgIDGame

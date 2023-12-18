@@ -203,12 +203,14 @@ enum EMsgIDLogin : int {
   MsgIDLogin_NotifyServerOfflineResp = 116,
   MsgIDShare_NotifyUpdateVipExpResp = 117,
   MsgIDShare_NotifyAddNewSubResp = 118,
+  MsgIDDelete_DeleteAccount = 119,
+  MsgIDDelete_DeleteAccountResp = 120,
   EMsgIDLogin_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDLogin_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDLogin_IsValid(int value);
 constexpr EMsgIDLogin EMsgIDLogin_MIN = MsgIDLogin_Null;
-constexpr EMsgIDLogin EMsgIDLogin_MAX = MsgIDShare_NotifyAddNewSubResp;
+constexpr EMsgIDLogin EMsgIDLogin_MAX = MsgIDDelete_DeleteAccountResp;
 constexpr int EMsgIDLogin_ARRAYSIZE = EMsgIDLogin_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDLogin_descriptor();
