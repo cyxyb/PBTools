@@ -416,6 +416,7 @@ class MsgPlayerLogin PROTOBUF_FINAL :
     kLoginTypeFieldNumber = 6,
     kIsDrainFieldNumber = 9,
     kCodeFieldNumber = 13,
+    kAgentYpeFieldNumber = 15,
   };
   // string account = 1;
   void clear_account();
@@ -599,6 +600,15 @@ class MsgPlayerLogin PROTOBUF_FINAL :
   void _internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 agent_ype = 15;
+  void clear_agent_ype();
+  ::PROTOBUF_NAMESPACE_ID::int32 agent_ype() const;
+  void set_agent_ype(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_agent_ype() const;
+  void _internal_set_agent_ype(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgPlayerLogin)
  private:
   class _Internal;
@@ -620,6 +630,7 @@ class MsgPlayerLogin PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 login_type_;
   ::PROTOBUF_NAMESPACE_ID::int32 is_drain_;
   ::PROTOBUF_NAMESPACE_ID::int32 code_;
+  ::PROTOBUF_NAMESPACE_ID::int32 agent_ype_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -758,6 +769,7 @@ class MsgPlayerLoginResp PROTOBUF_FINAL :
     kFirstRechargeFieldNumber = 7,
     kFristLoginFieldNumber = 22,
     kAgentLevelFieldNumber = 17,
+    kAgentYpeFieldNumber = 23,
   };
   // string account = 4;
   void clear_account();
@@ -1018,6 +1030,15 @@ class MsgPlayerLoginResp PROTOBUF_FINAL :
   void _internal_set_agent_level(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 agent_ype = 23;
+  void clear_agent_ype();
+  ::PROTOBUF_NAMESPACE_ID::int32 agent_ype() const;
+  void set_agent_ype(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_agent_ype() const;
+  void _internal_set_agent_ype(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgPlayerLoginResp)
  private:
   class _Internal;
@@ -1046,6 +1067,7 @@ class MsgPlayerLoginResp PROTOBUF_FINAL :
   bool first_recharge_;
   bool frist_login_;
   ::PROTOBUF_NAMESPACE_ID::int32 agent_level_;
+  ::PROTOBUF_NAMESPACE_ID::int32 agent_ype_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -11536,6 +11558,26 @@ inline void MsgPlayerLogin::set_allocated_invite_code(std::string* invite_code) 
   // @@protoc_insertion_point(field_set_allocated:MsgPlayerLogin.invite_code)
 }
 
+// int32 agent_ype = 15;
+inline void MsgPlayerLogin::clear_agent_ype() {
+  agent_ype_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPlayerLogin::_internal_agent_ype() const {
+  return agent_ype_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPlayerLogin::agent_ype() const {
+  // @@protoc_insertion_point(field_get:MsgPlayerLogin.agent_ype)
+  return _internal_agent_ype();
+}
+inline void MsgPlayerLogin::_internal_set_agent_ype(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  agent_ype_ = value;
+}
+inline void MsgPlayerLogin::set_agent_ype(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_agent_ype(value);
+  // @@protoc_insertion_point(field_set:MsgPlayerLogin.agent_ype)
+}
+
 // -------------------------------------------------------------------
 
 // MsgPlayerLoginResp
@@ -12368,6 +12410,26 @@ inline void MsgPlayerLoginResp::_internal_set_frist_login(bool value) {
 inline void MsgPlayerLoginResp::set_frist_login(bool value) {
   _internal_set_frist_login(value);
   // @@protoc_insertion_point(field_set:MsgPlayerLoginResp.frist_login)
+}
+
+// int32 agent_ype = 23;
+inline void MsgPlayerLoginResp::clear_agent_ype() {
+  agent_ype_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPlayerLoginResp::_internal_agent_ype() const {
+  return agent_ype_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPlayerLoginResp::agent_ype() const {
+  // @@protoc_insertion_point(field_get:MsgPlayerLoginResp.agent_ype)
+  return _internal_agent_ype();
+}
+inline void MsgPlayerLoginResp::_internal_set_agent_ype(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  agent_ype_ = value;
+}
+inline void MsgPlayerLoginResp::set_agent_ype(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_agent_ype(value);
+  // @@protoc_insertion_point(field_set:MsgPlayerLoginResp.agent_ype)
 }
 
 // -------------------------------------------------------------------
