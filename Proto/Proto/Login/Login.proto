@@ -17,7 +17,7 @@ message MsgPlayerLogin
 	string		phone				= 12;		//手机号
 	int32		code				= 13;		//验证码
 	string		invite_code			= 14;		//邀请码
-	int32		agent_ype			= 15;		//用户类型  8:线上用户 9:线下用户
+	int32		agent_type			= 15;		//用户类型  8:线上用户 9:线下用户
 }
 
 //玩家登录返回
@@ -44,7 +44,7 @@ message MsgPlayerLoginResp
 	string      telegram_msg	= 20;	//个性telegram
 	string      facebook_msg	= 21;	//个性facebook
 	bool		frist_login		= 22;	//是否第一次登陆
-	int32		agent_ype		= 23;	//用户类型  8:线上用户 9:线下用户
+	int32		agent_type		= 23;	//用户类型  8:线上用户 9:线下用户
 }
 
 //修改密码

@@ -211,7 +211,7 @@ message MsgLoginPlayerInfo
 	string		longitude			= 27;	//径度
 	string		latitude 			= 28;	//维度
 	bool		frist_login			= 29;	//是否第一次登陆
-	int32		agent_ype			= 30;	//用户类型  8:线上用户 9:线下用户
+	int32		agent_type			= 30;	//用户类型  8:线上用户 9:线下用户
 }
 
 //游戏服务器玩家信息
