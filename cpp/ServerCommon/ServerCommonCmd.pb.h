@@ -127,6 +127,7 @@ enum EMsgIDServerInternalProto : int {
   LOGIN2CENTER_NotifyNewInviter = 33,
   CENTER2LOGIN_NotifyNewInviterResp = 34,
   CENTER2LOGIN_NotifyWebAddVipExp = 35,
+  LOGIN2CENTER_KickUser = 36,
   GAME2CENTER_Register = 2001,
   GAME2CENTER_UnRegister = 2002,
   GAME2CENTER_ApplyRobot = 2003,
