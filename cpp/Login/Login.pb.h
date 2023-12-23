@@ -46,7 +46,7 @@ struct TableStruct_Login_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[58]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[60]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -155,6 +155,9 @@ extern MsgPlayerLoginDefaultTypeInternal _MsgPlayerLogin_default_instance_;
 class MsgPlayerLoginResp;
 class MsgPlayerLoginRespDefaultTypeInternal;
 extern MsgPlayerLoginRespDefaultTypeInternal _MsgPlayerLoginResp_default_instance_;
+class MsgQueryCelebrityGoldCoinResp;
+class MsgQueryCelebrityGoldCoinRespDefaultTypeInternal;
+extern MsgQueryCelebrityGoldCoinRespDefaultTypeInternal _MsgQueryCelebrityGoldCoinResp_default_instance_;
 class MsgQueryRebateRecord;
 class MsgQueryRebateRecordDefaultTypeInternal;
 extern MsgQueryRebateRecordDefaultTypeInternal _MsgQueryRebateRecord_default_instance_;
@@ -227,6 +230,9 @@ extern MsgVIPConfigDefaultTypeInternal _MsgVIPConfig_default_instance_;
 class MsgVIPInfo;
 class MsgVIPInfoDefaultTypeInternal;
 extern MsgVIPInfoDefaultTypeInternal _MsgVIPInfo_default_instance_;
+class MsggGiveCelebrityGoldCoinResp;
+class MsggGiveCelebrityGoldCoinRespDefaultTypeInternal;
+extern MsggGiveCelebrityGoldCoinRespDefaultTypeInternal _MsggGiveCelebrityGoldCoinResp_default_instance_;
 PROTOBUF_NAMESPACE_OPEN
 template<> ::ActiveInfoRet* Arena::CreateMaybeMessage<::ActiveInfoRet>(Arena*);
 template<> ::MsgActiveInfoCSPick* Arena::CreateMaybeMessage<::MsgActiveInfoCSPick>(Arena*);
@@ -262,6 +268,7 @@ template<> ::MsgPlayerInfo* Arena::CreateMaybeMessage<::MsgPlayerInfo>(Arena*);
 template<> ::MsgPlayerItem* Arena::CreateMaybeMessage<::MsgPlayerItem>(Arena*);
 template<> ::MsgPlayerLogin* Arena::CreateMaybeMessage<::MsgPlayerLogin>(Arena*);
 template<> ::MsgPlayerLoginResp* Arena::CreateMaybeMessage<::MsgPlayerLoginResp>(Arena*);
+template<> ::MsgQueryCelebrityGoldCoinResp* Arena::CreateMaybeMessage<::MsgQueryCelebrityGoldCoinResp>(Arena*);
 template<> ::MsgQueryRebateRecord* Arena::CreateMaybeMessage<::MsgQueryRebateRecord>(Arena*);
 template<> ::MsgQueryRebateRecordInfo* Arena::CreateMaybeMessage<::MsgQueryRebateRecordInfo>(Arena*);
 template<> ::MsgRechargeInfo* Arena::CreateMaybeMessage<::MsgRechargeInfo>(Arena*);
@@ -286,6 +293,7 @@ template<> ::MsgTurntableResp* Arena::CreateMaybeMessage<::MsgTurntableResp>(Are
 template<> ::MsgUpgradeVIP* Arena::CreateMaybeMessage<::MsgUpgradeVIP>(Arena*);
 template<> ::MsgVIPConfig* Arena::CreateMaybeMessage<::MsgVIPConfig>(Arena*);
 template<> ::MsgVIPInfo* Arena::CreateMaybeMessage<::MsgVIPInfo>(Arena*);
+template<> ::MsggGiveCelebrityGoldCoinResp* Arena::CreateMaybeMessage<::MsggGiveCelebrityGoldCoinResp>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 
 // ===================================================================
@@ -10939,6 +10947,323 @@ class MsgInviteUserResp PROTOBUF_FINAL :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
+// -------------------------------------------------------------------
+
+class MsgQueryCelebrityGoldCoinResp PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgQueryCelebrityGoldCoinResp) */ {
+ public:
+  inline MsgQueryCelebrityGoldCoinResp() : MsgQueryCelebrityGoldCoinResp(nullptr) {}
+  virtual ~MsgQueryCelebrityGoldCoinResp();
+
+  MsgQueryCelebrityGoldCoinResp(const MsgQueryCelebrityGoldCoinResp& from);
+  MsgQueryCelebrityGoldCoinResp(MsgQueryCelebrityGoldCoinResp&& from) noexcept
+    : MsgQueryCelebrityGoldCoinResp() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgQueryCelebrityGoldCoinResp& operator=(const MsgQueryCelebrityGoldCoinResp& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgQueryCelebrityGoldCoinResp& operator=(MsgQueryCelebrityGoldCoinResp&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgQueryCelebrityGoldCoinResp& default_instance();
+
+  static inline const MsgQueryCelebrityGoldCoinResp* internal_default_instance() {
+    return reinterpret_cast<const MsgQueryCelebrityGoldCoinResp*>(
+               &_MsgQueryCelebrityGoldCoinResp_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    58;
+
+  friend void swap(MsgQueryCelebrityGoldCoinResp& a, MsgQueryCelebrityGoldCoinResp& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgQueryCelebrityGoldCoinResp* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgQueryCelebrityGoldCoinResp* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgQueryCelebrityGoldCoinResp* New() const final {
+    return CreateMaybeMessage<MsgQueryCelebrityGoldCoinResp>(nullptr);
+  }
+
+  MsgQueryCelebrityGoldCoinResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgQueryCelebrityGoldCoinResp>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgQueryCelebrityGoldCoinResp& from);
+  void MergeFrom(const MsgQueryCelebrityGoldCoinResp& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgQueryCelebrityGoldCoinResp* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgQueryCelebrityGoldCoinResp";
+  }
+  protected:
+  explicit MsgQueryCelebrityGoldCoinResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kAvatarFieldNumber = 1,
+    kNicknameFieldNumber = 3,
+    kAvatarFrameFieldNumber = 2,
+    kStateFieldNumber = 5,
+    kGoldCoinFieldNumber = 4,
+  };
+  // string avatar = 1;
+  void clear_avatar();
+  const std::string& avatar() const;
+  void set_avatar(const std::string& value);
+  void set_avatar(std::string&& value);
+  void set_avatar(const char* value);
+  void set_avatar(const char* value, size_t size);
+  std::string* mutable_avatar();
+  std::string* release_avatar();
+  void set_allocated_avatar(std::string* avatar);
+  private:
+  const std::string& _internal_avatar() const;
+  void _internal_set_avatar(const std::string& value);
+  std::string* _internal_mutable_avatar();
+  public:
+
+  // string nickname = 3;
+  void clear_nickname();
+  const std::string& nickname() const;
+  void set_nickname(const std::string& value);
+  void set_nickname(std::string&& value);
+  void set_nickname(const char* value);
+  void set_nickname(const char* value, size_t size);
+  std::string* mutable_nickname();
+  std::string* release_nickname();
+  void set_allocated_nickname(std::string* nickname);
+  private:
+  const std::string& _internal_nickname() const;
+  void _internal_set_nickname(const std::string& value);
+  std::string* _internal_mutable_nickname();
+  public:
+
+  // int32 avatar_frame = 2;
+  void clear_avatar_frame();
+  ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame() const;
+  void set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_avatar_frame() const;
+  void _internal_set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // bool state = 5;
+  void clear_state();
+  bool state() const;
+  void set_state(bool value);
+  private:
+  bool _internal_state() const;
+  void _internal_set_state(bool value);
+  public:
+
+  // int64 gold_coin = 4;
+  void clear_gold_coin();
+  ::PROTOBUF_NAMESPACE_ID::int64 gold_coin() const;
+  void set_gold_coin(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_gold_coin() const;
+  void _internal_set_gold_coin(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgQueryCelebrityGoldCoinResp)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr avatar_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr nickname_;
+  ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame_;
+  bool state_;
+  ::PROTOBUF_NAMESPACE_ID::int64 gold_coin_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsggGiveCelebrityGoldCoinResp PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsggGiveCelebrityGoldCoinResp) */ {
+ public:
+  inline MsggGiveCelebrityGoldCoinResp() : MsggGiveCelebrityGoldCoinResp(nullptr) {}
+  virtual ~MsggGiveCelebrityGoldCoinResp();
+
+  MsggGiveCelebrityGoldCoinResp(const MsggGiveCelebrityGoldCoinResp& from);
+  MsggGiveCelebrityGoldCoinResp(MsggGiveCelebrityGoldCoinResp&& from) noexcept
+    : MsggGiveCelebrityGoldCoinResp() {
+    *this = ::std::move(from);
+  }
+
+  inline MsggGiveCelebrityGoldCoinResp& operator=(const MsggGiveCelebrityGoldCoinResp& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsggGiveCelebrityGoldCoinResp& operator=(MsggGiveCelebrityGoldCoinResp&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsggGiveCelebrityGoldCoinResp& default_instance();
+
+  static inline const MsggGiveCelebrityGoldCoinResp* internal_default_instance() {
+    return reinterpret_cast<const MsggGiveCelebrityGoldCoinResp*>(
+               &_MsggGiveCelebrityGoldCoinResp_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    59;
+
+  friend void swap(MsggGiveCelebrityGoldCoinResp& a, MsggGiveCelebrityGoldCoinResp& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsggGiveCelebrityGoldCoinResp* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsggGiveCelebrityGoldCoinResp* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsggGiveCelebrityGoldCoinResp* New() const final {
+    return CreateMaybeMessage<MsggGiveCelebrityGoldCoinResp>(nullptr);
+  }
+
+  MsggGiveCelebrityGoldCoinResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsggGiveCelebrityGoldCoinResp>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsggGiveCelebrityGoldCoinResp& from);
+  void MergeFrom(const MsggGiveCelebrityGoldCoinResp& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsggGiveCelebrityGoldCoinResp* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsggGiveCelebrityGoldCoinResp";
+  }
+  protected:
+  explicit MsggGiveCelebrityGoldCoinResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // @@protoc_insertion_point(class_scope:MsggGiveCelebrityGoldCoinResp)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
 // ===================================================================
 
 
@@ -19051,9 +19376,203 @@ MsgInviteUserResp::info() const {
   return info_;
 }
 
+// -------------------------------------------------------------------
+
+// MsgQueryCelebrityGoldCoinResp
+
+// string avatar = 1;
+inline void MsgQueryCelebrityGoldCoinResp::clear_avatar() {
+  avatar_.ClearToEmpty();
+}
+inline const std::string& MsgQueryCelebrityGoldCoinResp::avatar() const {
+  // @@protoc_insertion_point(field_get:MsgQueryCelebrityGoldCoinResp.avatar)
+  return _internal_avatar();
+}
+inline void MsgQueryCelebrityGoldCoinResp::set_avatar(const std::string& value) {
+  _internal_set_avatar(value);
+  // @@protoc_insertion_point(field_set:MsgQueryCelebrityGoldCoinResp.avatar)
+}
+inline std::string* MsgQueryCelebrityGoldCoinResp::mutable_avatar() {
+  // @@protoc_insertion_point(field_mutable:MsgQueryCelebrityGoldCoinResp.avatar)
+  return _internal_mutable_avatar();
+}
+inline const std::string& MsgQueryCelebrityGoldCoinResp::_internal_avatar() const {
+  return avatar_.Get();
+}
+inline void MsgQueryCelebrityGoldCoinResp::_internal_set_avatar(const std::string& value) {
+  
+  avatar_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgQueryCelebrityGoldCoinResp::set_avatar(std::string&& value) {
+  
+  avatar_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgQueryCelebrityGoldCoinResp.avatar)
+}
+inline void MsgQueryCelebrityGoldCoinResp::set_avatar(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  avatar_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgQueryCelebrityGoldCoinResp.avatar)
+}
+inline void MsgQueryCelebrityGoldCoinResp::set_avatar(const char* value,
+    size_t size) {
+  
+  avatar_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgQueryCelebrityGoldCoinResp.avatar)
+}
+inline std::string* MsgQueryCelebrityGoldCoinResp::_internal_mutable_avatar() {
+  
+  return avatar_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgQueryCelebrityGoldCoinResp::release_avatar() {
+  // @@protoc_insertion_point(field_release:MsgQueryCelebrityGoldCoinResp.avatar)
+  return avatar_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgQueryCelebrityGoldCoinResp::set_allocated_avatar(std::string* avatar) {
+  if (avatar != nullptr) {
+    
+  } else {
+    
+  }
+  avatar_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), avatar,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgQueryCelebrityGoldCoinResp.avatar)
+}
+
+// int32 avatar_frame = 2;
+inline void MsgQueryCelebrityGoldCoinResp::clear_avatar_frame() {
+  avatar_frame_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgQueryCelebrityGoldCoinResp::_internal_avatar_frame() const {
+  return avatar_frame_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgQueryCelebrityGoldCoinResp::avatar_frame() const {
+  // @@protoc_insertion_point(field_get:MsgQueryCelebrityGoldCoinResp.avatar_frame)
+  return _internal_avatar_frame();
+}
+inline void MsgQueryCelebrityGoldCoinResp::_internal_set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  avatar_frame_ = value;
+}
+inline void MsgQueryCelebrityGoldCoinResp::set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_avatar_frame(value);
+  // @@protoc_insertion_point(field_set:MsgQueryCelebrityGoldCoinResp.avatar_frame)
+}
+
+// string nickname = 3;
+inline void MsgQueryCelebrityGoldCoinResp::clear_nickname() {
+  nickname_.ClearToEmpty();
+}
+inline const std::string& MsgQueryCelebrityGoldCoinResp::nickname() const {
+  // @@protoc_insertion_point(field_get:MsgQueryCelebrityGoldCoinResp.nickname)
+  return _internal_nickname();
+}
+inline void MsgQueryCelebrityGoldCoinResp::set_nickname(const std::string& value) {
+  _internal_set_nickname(value);
+  // @@protoc_insertion_point(field_set:MsgQueryCelebrityGoldCoinResp.nickname)
+}
+inline std::string* MsgQueryCelebrityGoldCoinResp::mutable_nickname() {
+  // @@protoc_insertion_point(field_mutable:MsgQueryCelebrityGoldCoinResp.nickname)
+  return _internal_mutable_nickname();
+}
+inline const std::string& MsgQueryCelebrityGoldCoinResp::_internal_nickname() const {
+  return nickname_.Get();
+}
+inline void MsgQueryCelebrityGoldCoinResp::_internal_set_nickname(const std::string& value) {
+  
+  nickname_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgQueryCelebrityGoldCoinResp::set_nickname(std::string&& value) {
+  
+  nickname_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgQueryCelebrityGoldCoinResp.nickname)
+}
+inline void MsgQueryCelebrityGoldCoinResp::set_nickname(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  nickname_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgQueryCelebrityGoldCoinResp.nickname)
+}
+inline void MsgQueryCelebrityGoldCoinResp::set_nickname(const char* value,
+    size_t size) {
+  
+  nickname_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgQueryCelebrityGoldCoinResp.nickname)
+}
+inline std::string* MsgQueryCelebrityGoldCoinResp::_internal_mutable_nickname() {
+  
+  return nickname_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgQueryCelebrityGoldCoinResp::release_nickname() {
+  // @@protoc_insertion_point(field_release:MsgQueryCelebrityGoldCoinResp.nickname)
+  return nickname_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgQueryCelebrityGoldCoinResp::set_allocated_nickname(std::string* nickname) {
+  if (nickname != nullptr) {
+    
+  } else {
+    
+  }
+  nickname_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), nickname,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgQueryCelebrityGoldCoinResp.nickname)
+}
+
+// int64 gold_coin = 4;
+inline void MsgQueryCelebrityGoldCoinResp::clear_gold_coin() {
+  gold_coin_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgQueryCelebrityGoldCoinResp::_internal_gold_coin() const {
+  return gold_coin_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgQueryCelebrityGoldCoinResp::gold_coin() const {
+  // @@protoc_insertion_point(field_get:MsgQueryCelebrityGoldCoinResp.gold_coin)
+  return _internal_gold_coin();
+}
+inline void MsgQueryCelebrityGoldCoinResp::_internal_set_gold_coin(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  gold_coin_ = value;
+}
+inline void MsgQueryCelebrityGoldCoinResp::set_gold_coin(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_gold_coin(value);
+  // @@protoc_insertion_point(field_set:MsgQueryCelebrityGoldCoinResp.gold_coin)
+}
+
+// bool state = 5;
+inline void MsgQueryCelebrityGoldCoinResp::clear_state() {
+  state_ = false;
+}
+inline bool MsgQueryCelebrityGoldCoinResp::_internal_state() const {
+  return state_;
+}
+inline bool MsgQueryCelebrityGoldCoinResp::state() const {
+  // @@protoc_insertion_point(field_get:MsgQueryCelebrityGoldCoinResp.state)
+  return _internal_state();
+}
+inline void MsgQueryCelebrityGoldCoinResp::_internal_set_state(bool value) {
+  
+  state_ = value;
+}
+inline void MsgQueryCelebrityGoldCoinResp::set_state(bool value) {
+  _internal_set_state(value);
+  // @@protoc_insertion_point(field_set:MsgQueryCelebrityGoldCoinResp.state)
+}
+
+// -------------------------------------------------------------------
+
+// MsggGiveCelebrityGoldCoinResp
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

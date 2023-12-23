@@ -163,7 +163,10 @@ public static partial class LoginReflection {
           "Z0ludml0ZVVzZXJJbmZvEhEKCXZpcF9sZXZlbBgBIAEoBRITCgtpbnZpdGVf",
           "dGltZRgCIAEoCRIUCgxiZWF1dGlmdWxfaWQYAyABKAUSEAoIbmlja25hbWUY",
           "BCABKAkiNQoRTXNnSW52aXRlVXNlclJlc3ASIAoEaW5mbxgBIAMoCzISLk1z",
-          "Z0ludml0ZVVzZXJJbmZvYgZwcm90bzM="));
+          "Z0ludml0ZVVzZXJJbmZvInkKHU1zZ1F1ZXJ5Q2VsZWJyaXR5R29sZENvaW5S",
+          "ZXNwEg4KBmF2YXRhchgBIAEoCRIUCgxhdmF0YXJfZnJhbWUYAiABKAUSEAoI",
+          "bmlja25hbWUYAyABKAkSEQoJZ29sZF9jb2luGAQgASgDEg0KBXN0YXRlGAUg",
+          "ASgIIh8KHU1zZ2dHaXZlQ2VsZWJyaXR5R29sZENvaW5SZXNwYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -224,7 +227,9 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgCDKExchangeResp), global::MsgCDKExchangeResp.Parser, new[]{ "RetCode", "Info" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPersonalDetailsRespAdd), global::MsgPersonalDetailsRespAdd.Parser, new[]{ "Type", "Msg" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgInviteUserInfo), global::MsgInviteUserInfo.Parser, new[]{ "VipLevel", "InviteTime", "BeautifulId", "Nickname" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgInviteUserResp), global::MsgInviteUserResp.Parser, new[]{ "Info" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgInviteUserResp), global::MsgInviteUserResp.Parser, new[]{ "Info" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgQueryCelebrityGoldCoinResp), global::MsgQueryCelebrityGoldCoinResp.Parser, new[]{ "Avatar", "AvatarFrame", "Nickname", "GoldCoin", "State" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsggGiveCelebrityGoldCoinResp), global::MsggGiveCelebrityGoldCoinResp.Parser, null, null, null, null, null)
         }));
   }
   #endregion
@@ -17928,6 +17933,479 @@ public sealed partial class MsgInviteUserResp : pb::IMessage<MsgInviteUserResp>
           info_.AddEntriesFrom(ref input, _repeated_info_codec);
           break;
         }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///网红金币
+/// </summary>
+public sealed partial class MsgQueryCelebrityGoldCoinResp : pb::IMessage<MsgQueryCelebrityGoldCoinResp>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgQueryCelebrityGoldCoinResp> _parser = new pb::MessageParser<MsgQueryCelebrityGoldCoinResp>(() => new MsgQueryCelebrityGoldCoinResp());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgQueryCelebrityGoldCoinResp> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[58]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgQueryCelebrityGoldCoinResp() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgQueryCelebrityGoldCoinResp(MsgQueryCelebrityGoldCoinResp other) : this() {
+    avatar_ = other.avatar_;
+    avatarFrame_ = other.avatarFrame_;
+    nickname_ = other.nickname_;
+    goldCoin_ = other.goldCoin_;
+    state_ = other.state_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgQueryCelebrityGoldCoinResp Clone() {
+    return new MsgQueryCelebrityGoldCoinResp(this);
+  }
+
+  /// <summary>Field number for the "avatar" field.</summary>
+  public const int AvatarFieldNumber = 1;
+  private string avatar_ = "";
+  /// <summary>
+  ///头像
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string Avatar {
+    get { return avatar_; }
+    set {
+      avatar_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "avatar_frame" field.</summary>
+  public const int AvatarFrameFieldNumber = 2;
+  private int avatarFrame_;
+  /// <summary>
+  ///头像框
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int AvatarFrame {
+    get { return avatarFrame_; }
+    set {
+      avatarFrame_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "nickname" field.</summary>
+  public const int NicknameFieldNumber = 3;
+  private string nickname_ = "";
+  /// <summary>
+  ///玩家昵称
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string Nickname {
+    get { return nickname_; }
+    set {
+      nickname_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "gold_coin" field.</summary>
+  public const int GoldCoinFieldNumber = 4;
+  private long goldCoin_;
+  /// <summary>
+  ///赠送金币
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public long GoldCoin {
+    get { return goldCoin_; }
+    set {
+      goldCoin_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "state" field.</summary>
+  public const int StateFieldNumber = 5;
+  private bool state_;
+  /// <summary>
+  ///领取状态0：未领取
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool State {
+    get { return state_; }
+    set {
+      state_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgQueryCelebrityGoldCoinResp);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgQueryCelebrityGoldCoinResp other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (Avatar != other.Avatar) return false;
+    if (AvatarFrame != other.AvatarFrame) return false;
+    if (Nickname != other.Nickname) return false;
+    if (GoldCoin != other.GoldCoin) return false;
+    if (State != other.State) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (Avatar.Length != 0) hash ^= Avatar.GetHashCode();
+    if (AvatarFrame != 0) hash ^= AvatarFrame.GetHashCode();
+    if (Nickname.Length != 0) hash ^= Nickname.GetHashCode();
+    if (GoldCoin != 0L) hash ^= GoldCoin.GetHashCode();
+    if (State != false) hash ^= State.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (Avatar.Length != 0) {
+      output.WriteRawTag(10);
+      output.WriteString(Avatar);
+    }
+    if (AvatarFrame != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(AvatarFrame);
+    }
+    if (Nickname.Length != 0) {
+      output.WriteRawTag(26);
+      output.WriteString(Nickname);
+    }
+    if (GoldCoin != 0L) {
+      output.WriteRawTag(32);
+      output.WriteInt64(GoldCoin);
+    }
+    if (State != false) {
+      output.WriteRawTag(40);
+      output.WriteBool(State);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (Avatar.Length != 0) {
+      output.WriteRawTag(10);
+      output.WriteString(Avatar);
+    }
+    if (AvatarFrame != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(AvatarFrame);
+    }
+    if (Nickname.Length != 0) {
+      output.WriteRawTag(26);
+      output.WriteString(Nickname);
+    }
+    if (GoldCoin != 0L) {
+      output.WriteRawTag(32);
+      output.WriteInt64(GoldCoin);
+    }
+    if (State != false) {
+      output.WriteRawTag(40);
+      output.WriteBool(State);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (Avatar.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Avatar);
+    }
+    if (AvatarFrame != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(AvatarFrame);
+    }
+    if (Nickname.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Nickname);
+    }
+    if (GoldCoin != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(GoldCoin);
+    }
+    if (State != false) {
+      size += 1 + 1;
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgQueryCelebrityGoldCoinResp other) {
+    if (other == null) {
+      return;
+    }
+    if (other.Avatar.Length != 0) {
+      Avatar = other.Avatar;
+    }
+    if (other.AvatarFrame != 0) {
+      AvatarFrame = other.AvatarFrame;
+    }
+    if (other.Nickname.Length != 0) {
+      Nickname = other.Nickname;
+    }
+    if (other.GoldCoin != 0L) {
+      GoldCoin = other.GoldCoin;
+    }
+    if (other.State != false) {
+      State = other.State;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 10: {
+          Avatar = input.ReadString();
+          break;
+        }
+        case 16: {
+          AvatarFrame = input.ReadInt32();
+          break;
+        }
+        case 26: {
+          Nickname = input.ReadString();
+          break;
+        }
+        case 32: {
+          GoldCoin = input.ReadInt64();
+          break;
+        }
+        case 40: {
+          State = input.ReadBool();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 10: {
+          Avatar = input.ReadString();
+          break;
+        }
+        case 16: {
+          AvatarFrame = input.ReadInt32();
+          break;
+        }
+        case 26: {
+          Nickname = input.ReadString();
+          break;
+        }
+        case 32: {
+          GoldCoin = input.ReadInt64();
+          break;
+        }
+        case 40: {
+          State = input.ReadBool();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///领取网红金币
+/// </summary>
+public sealed partial class MsggGiveCelebrityGoldCoinResp : pb::IMessage<MsggGiveCelebrityGoldCoinResp>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsggGiveCelebrityGoldCoinResp> _parser = new pb::MessageParser<MsggGiveCelebrityGoldCoinResp>(() => new MsggGiveCelebrityGoldCoinResp());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsggGiveCelebrityGoldCoinResp> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[59]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsggGiveCelebrityGoldCoinResp() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsggGiveCelebrityGoldCoinResp(MsggGiveCelebrityGoldCoinResp other) : this() {
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsggGiveCelebrityGoldCoinResp Clone() {
+    return new MsggGiveCelebrityGoldCoinResp(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsggGiveCelebrityGoldCoinResp);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsggGiveCelebrityGoldCoinResp other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsggGiveCelebrityGoldCoinResp other) {
+    if (other == null) {
+      return;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
       }
     }
   }

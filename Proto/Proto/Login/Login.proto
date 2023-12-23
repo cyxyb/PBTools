@@ -525,3 +525,18 @@ message MsgInviteUserResp
 {
 	repeated MsgInviteUserInfo info = 1;	//邀请玩家列表
 }
+
+//网红金币
+message MsgQueryCelebrityGoldCoinResp
+{
+	string		avatar			= 1;	//头像
+	int32		avatar_frame	= 2;	//头像框
+	string		nickname		= 3;	//玩家昵称
+	int64		gold_coin		= 4;	//赠送金币
+	bool		state			= 5;	//领取状态0：未领取
+}
+//领取网红金币
+message MsggGiveCelebrityGoldCoinResp
+{
+	
+}
