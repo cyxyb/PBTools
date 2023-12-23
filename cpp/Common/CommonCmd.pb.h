@@ -205,8 +205,10 @@ enum EMsgIDLogin : int {
   MsgIDShare_NotifyAddNewSubResp = 118,
   MsgIDDelete_DeleteAccount = 119,
   MsgIDDelete_DeleteAccountResp = 120,
-  MsgIDCelebrity_QueryCelebrityGoldCoinResp = 121,
-  MsgIDCelebrity_GiveCelebrityGoldCoinResp = 122,
+  MsgIDCelebrity_QueryCelebrityGoldCoin = 121,
+  MsgIDCelebrity_QueryCelebrityGoldCoinResp = 122,
+  MsgIDCelebrity_GiveCelebrityGoldCoin = 123,
+  MsgIDCelebrity_GiveCelebrityGoldCoinResp = 124,
   EMsgIDLogin_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDLogin_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };

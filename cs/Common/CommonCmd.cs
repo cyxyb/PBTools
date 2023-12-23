@@ -25,7 +25,7 @@ public static partial class CommonCmdReflection {
           "ChxQcm90by9Db21tb24vQ29tbW9uQ21kLnByb3RvKoYBCgpFTXNnSURNYWlu",
           "EhMKD0VNc2dJRE1haW5fTnVsbBAAEh4KGUVNc2dJRE1haW5fTG9naW5fVXNl",
           "ckluZm8Q6QcSFAoPRU1zZ0lETWFpbl9HYW1lENEPEhcKEkVNc2dJRE1haW5f",
-          "U3ViR2FtZRDSDxIUCg9FTXNnSURNYWluX0NoYXQQuRcq1x8KC0VNc2dJRExv",
+          "U3ViR2FtZRDSDxIUCg9FTXNnSURNYWluX0NoYXQQuRcqrCAKC0VNc2dJRExv",
           "Z2luEhMKD01zZ0lETG9naW5fTnVsbBAAEhQKEE1zZ0lETG9naW5fTG9naW4Q",
           "ARIYChRNc2dJRExvZ2luX0xvZ2luUmVzcBACEh0KGU1zZ0lETG9naW5fTW9k",
           "aWZ5Tmlja05hbWUQAxIhCh1Nc2dJRExvZ2luX01vZGlmeU5pY2tOYW1lUmVz",
@@ -113,44 +113,46 @@ public static partial class CommonCmdReflection {
           "TG9naW5fTm90aWZ5U2VydmVyT2ZmbGluZVJlc3AQdBIlCiFNc2dJRFNoYXJl",
           "X05vdGlmeVVwZGF0ZVZpcEV4cFJlc3AQdRIiCh5Nc2dJRFNoYXJlX05vdGlm",
           "eUFkZE5ld1N1YlJlc3AQdhIdChlNc2dJRERlbGV0ZV9EZWxldGVBY2NvdW50",
-          "EHcSIQodTXNnSUREZWxldGVfRGVsZXRlQWNjb3VudFJlc3AQeBItCilNc2dJ",
-          "RENlbGVicml0eV9RdWVyeUNlbGVicml0eUdvbGRDb2luUmVzcBB5EiwKKE1z",
-          "Z0lEQ2VsZWJyaXR5X0dpdmVDZWxlYnJpdHlHb2xkQ29pblJlc3AQeiqfCQoK",
-          "RU1zZ0lER2FtZRISCg5Nc2dJREdhbWVfTnVsbBAAEhQKD01zZ0lER2FtZV9M",
-          "b2dpbhDpBxIYChNNc2dJREdhbWVfTG9naW5SZXNwEOoHEh4KGU1zZ0lER2Ft",
-          "ZV9TcXVlZXplU2VhdFJlc3AQ6wcSFQoQTXNnSURHYW1lX0xvZ291dBDsBxIa",
-          "ChVNc2dJREdhbWVfQXV0b1NpdERvd24Q7QcSGgoVTXNnSURHYW1lX1NpdERv",
-          "d25SZXNwEO4HEiEKHE1zZ0lER2FtZV9TeW5jUGxheWVySW5mb1Jlc3AQ7wcS",
-          "JgohTXNnSURHYW1lX05vdGlmeVBsYXllclN0YW5kVXBSZXNwEPAHEiMKHk1z",
-          "Z0lER2FtZV9TeW5jUGxheWVyc1Njb3JlUmVzcBDxBxIcChdNc2dJREdhbWVf",
-          "U2VuZEdhbWVTZW5jZRDyBxIgChtNc2dJREdhbWVfU2VuZEdhbWVTZW5jZVJl",
-          "c3AQ8wcSIAobTXNnSURHYW1lX05vdGlmeU1lc3NhZ2VSZXNwEPQHEhoKFU1z",
-          "Z0lER2FtZV9RdWVyeVJlY29yZBD3BxIjCh5Nc2dJREdhbWVfUXVlcnlSb3Vu",
-          "ZFJlY29yZFJlc3AQ+AcSIQocTXNnSURHYW1lX1F1ZXJ5RGF5UmVjb3JkUmVz",
-          "cBD5BxIbChZNc2dJREdhbWVfQWRkT25lUmVjb3JkEPoHEiYKIU1zZ0lER2Ft",
-          "ZV9Ob3RpZnlQbGF5ZXJPZmZsaW5lUmVzcBD7BxIaChVNc2dJREdhbWVfQ2hh",
-          "bmdlVGFibGUQ/AcSJAofTXNnSURHYW1lX1B2cF9HZXRSb29tQ29uZmlnUmVz",
-          "cBCbCBIkCh9Nc2dJREdhbWVfUHZwX1NlbmRUYWJsZUxpc3RSZXNwEJ0IEh4K",
-          "GU1zZ0lER2FtZV9QdnBfQ3JlYXRlVGFibGUQnggSIgodTXNnSURHYW1lX1B2",
-          "cF9DcmVhdGVUYWJsZVJlc3AQnwgSHAoXTXNnSURHYW1lX1B2cF9Kb2luVGFi",
-          "bGUQoAgSIAobTXNnSURHYW1lX1B2cF9Kb2luVGFibGVSZXNwEKEIEiAKG01z",
-          "Z0lER2FtZV9QdnBfQWN0aXZhdGVUYWJsZRCiCBIkCh9Nc2dJREdhbWVfUHZw",
-          "X0FjdGl2YXRlVGFibGVSZXNwEKMIEhsKFk1zZ0lER2FtZV9QdnBfS2lja1Vz",
-          "ZXIQpAgSHwoaTXNnSURHYW1lX1B2cF9LaWNrVXNlclJlc3AQpQgSHwoaTXNn",
-          "SURHYW1lX1B2cF9EZXN0cm95VGFibGUQpggSIwoeTXNnSURHYW1lX1B2cF9E",
-          "ZXN0cm95VGFibGVSZXNwEKcIEiAKG01zZ0lER2FtZV9QdnBfRmFzdEpvaW5U",
-          "YWJsZRCoCBIkCh9Nc2dJREdhbWVfUHZwX0Zhc3RKb2luVGFibGVSZXNwEKkI",
-          "EhoKFU1zZ0lER2FtZV9QdnBfU3RhbmRVcBCqCBIeChlNc2dJREdhbWVfUHZw",
-          "X1N0YW5kVXBSZXNwEKsIEicKIk1zZ0lER2FtZV9QdnBfVGFibGVDaGFuZ2VP",
-          "d3VuclJlc3AQrAgq/QIKCkVNc2dJRENoYXQSEgoOTXNnSURDaGF0X051bGwQ",
-          "ABIUCg9Nc2dJRENoYXRfTG9naW4Q0Q8SGAoTTXNnSURDaGF0X0xvZ2luUmVz",
-          "cBDSDxIZChRNc2dJRENoYXRfTG9nb3V0UmVzcBDTDxIcChdNc2dJRENoYXRf",
-          "U2VuZE5vcm1hbE1zZxDUDxImCiFNc2dJRENoYXRfTm90aWZ5Q2hhdE5vcm1h",
-          "bE1zZ1Jlc3AQ1Q8SHQoYTXNnSURDaGF0X1NlbmRUcnVtcGV0TXNnENYPEicK",
-          "Ik1zZ0lEQ2hhdF9Ob3RpZnlDaGF0VHJ1bXBldE1zZ1Jlc3AQ1w8SHwoaTXNn",
-          "SURDaGF0X1N5bmNVc2VySW5mb1Jlc3AQ2A8SHwoaTXNnSURDaGF0X1NldExp",
-          "bGl0Q2hhdFJlc3AQ2Q8SHQoYTXNnSURDaGF0X0dldENoYXRIaXN0b3J5ENoP",
-          "EiEKHE1zZ0lEQ2hhdF9HZXRDaGF0SGlzdG9yeVJlc3AQ2w9iBnByb3RvMw=="));
+          "EHcSIQodTXNnSUREZWxldGVfRGVsZXRlQWNjb3VudFJlc3AQeBIpCiVNc2dJ",
+          "RENlbGVicml0eV9RdWVyeUNlbGVicml0eUdvbGRDb2luEHkSLQopTXNnSURD",
+          "ZWxlYnJpdHlfUXVlcnlDZWxlYnJpdHlHb2xkQ29pblJlc3AQehIoCiRNc2dJ",
+          "RENlbGVicml0eV9HaXZlQ2VsZWJyaXR5R29sZENvaW4QexIsCihNc2dJRENl",
+          "bGVicml0eV9HaXZlQ2VsZWJyaXR5R29sZENvaW5SZXNwEHwqnwkKCkVNc2dJ",
+          "REdhbWUSEgoOTXNnSURHYW1lX051bGwQABIUCg9Nc2dJREdhbWVfTG9naW4Q",
+          "6QcSGAoTTXNnSURHYW1lX0xvZ2luUmVzcBDqBxIeChlNc2dJREdhbWVfU3F1",
+          "ZWV6ZVNlYXRSZXNwEOsHEhUKEE1zZ0lER2FtZV9Mb2dvdXQQ7AcSGgoVTXNn",
+          "SURHYW1lX0F1dG9TaXREb3duEO0HEhoKFU1zZ0lER2FtZV9TaXREb3duUmVz",
+          "cBDuBxIhChxNc2dJREdhbWVfU3luY1BsYXllckluZm9SZXNwEO8HEiYKIU1z",
+          "Z0lER2FtZV9Ob3RpZnlQbGF5ZXJTdGFuZFVwUmVzcBDwBxIjCh5Nc2dJREdh",
+          "bWVfU3luY1BsYXllcnNTY29yZVJlc3AQ8QcSHAoXTXNnSURHYW1lX1NlbmRH",
+          "YW1lU2VuY2UQ8gcSIAobTXNnSURHYW1lX1NlbmRHYW1lU2VuY2VSZXNwEPMH",
+          "EiAKG01zZ0lER2FtZV9Ob3RpZnlNZXNzYWdlUmVzcBD0BxIaChVNc2dJREdh",
+          "bWVfUXVlcnlSZWNvcmQQ9wcSIwoeTXNnSURHYW1lX1F1ZXJ5Um91bmRSZWNv",
+          "cmRSZXNwEPgHEiEKHE1zZ0lER2FtZV9RdWVyeURheVJlY29yZFJlc3AQ+QcS",
+          "GwoWTXNnSURHYW1lX0FkZE9uZVJlY29yZBD6BxImCiFNc2dJREdhbWVfTm90",
+          "aWZ5UGxheWVyT2ZmbGluZVJlc3AQ+wcSGgoVTXNnSURHYW1lX0NoYW5nZVRh",
+          "YmxlEPwHEiQKH01zZ0lER2FtZV9QdnBfR2V0Um9vbUNvbmZpZ1Jlc3AQmwgS",
+          "JAofTXNnSURHYW1lX1B2cF9TZW5kVGFibGVMaXN0UmVzcBCdCBIeChlNc2dJ",
+          "REdhbWVfUHZwX0NyZWF0ZVRhYmxlEJ4IEiIKHU1zZ0lER2FtZV9QdnBfQ3Jl",
+          "YXRlVGFibGVSZXNwEJ8IEhwKF01zZ0lER2FtZV9QdnBfSm9pblRhYmxlEKAI",
+          "EiAKG01zZ0lER2FtZV9QdnBfSm9pblRhYmxlUmVzcBChCBIgChtNc2dJREdh",
+          "bWVfUHZwX0FjdGl2YXRlVGFibGUQoggSJAofTXNnSURHYW1lX1B2cF9BY3Rp",
+          "dmF0ZVRhYmxlUmVzcBCjCBIbChZNc2dJREdhbWVfUHZwX0tpY2tVc2VyEKQI",
+          "Eh8KGk1zZ0lER2FtZV9QdnBfS2lja1VzZXJSZXNwEKUIEh8KGk1zZ0lER2Ft",
+          "ZV9QdnBfRGVzdHJveVRhYmxlEKYIEiMKHk1zZ0lER2FtZV9QdnBfRGVzdHJv",
+          "eVRhYmxlUmVzcBCnCBIgChtNc2dJREdhbWVfUHZwX0Zhc3RKb2luVGFibGUQ",
+          "qAgSJAofTXNnSURHYW1lX1B2cF9GYXN0Sm9pblRhYmxlUmVzcBCpCBIaChVN",
+          "c2dJREdhbWVfUHZwX1N0YW5kVXAQqggSHgoZTXNnSURHYW1lX1B2cF9TdGFu",
+          "ZFVwUmVzcBCrCBInCiJNc2dJREdhbWVfUHZwX1RhYmxlQ2hhbmdlT3d1bnJS",
+          "ZXNwEKwIKv0CCgpFTXNnSURDaGF0EhIKDk1zZ0lEQ2hhdF9OdWxsEAASFAoP",
+          "TXNnSURDaGF0X0xvZ2luENEPEhgKE01zZ0lEQ2hhdF9Mb2dpblJlc3AQ0g8S",
+          "GQoUTXNnSURDaGF0X0xvZ291dFJlc3AQ0w8SHAoXTXNnSURDaGF0X1NlbmRO",
+          "b3JtYWxNc2cQ1A8SJgohTXNnSURDaGF0X05vdGlmeUNoYXROb3JtYWxNc2dS",
+          "ZXNwENUPEh0KGE1zZ0lEQ2hhdF9TZW5kVHJ1bXBldE1zZxDWDxInCiJNc2dJ",
+          "RENoYXRfTm90aWZ5Q2hhdFRydW1wZXRNc2dSZXNwENcPEh8KGk1zZ0lEQ2hh",
+          "dF9TeW5jVXNlckluZm9SZXNwENgPEh8KGk1zZ0lEQ2hhdF9TZXRMaWxpdENo",
+          "YXRSZXNwENkPEh0KGE1zZ0lEQ2hhdF9HZXRDaGF0SGlzdG9yeRDaDxIhChxN",
+          "c2dJRENoYXRfR2V0Q2hhdEhpc3RvcnlSZXNwENsPYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::EMsgIDMain), typeof(global::EMsgIDLogin), typeof(global::EMsgIDGame), typeof(global::EMsgIDChat), }, null, null));
@@ -662,13 +664,21 @@ public enum EMsgIDLogin {
   /// </summary>
   [pbr::OriginalName("MsgIDDelete_DeleteAccountResp")] MsgIddeleteDeleteAccountResp = 120,
   /// <summary>
-  ///查询网红赠送金币(MsgQueryCelebrityGoldCoinResp)
+  ///查询网红赠送金币(MsgCommonBool)
   /// </summary>
-  [pbr::OriginalName("MsgIDCelebrity_QueryCelebrityGoldCoinResp")] MsgIdcelebrityQueryCelebrityGoldCoinResp = 121,
+  [pbr::OriginalName("MsgIDCelebrity_QueryCelebrityGoldCoin")] MsgIdcelebrityQueryCelebrityGoldCoin = 121,
+  /// <summary>
+  ///查询网红赠送金币返回(MsgQueryCelebrityGoldCoinResp)
+  /// </summary>
+  [pbr::OriginalName("MsgIDCelebrity_QueryCelebrityGoldCoinResp")] MsgIdcelebrityQueryCelebrityGoldCoinResp = 122,
   /// <summary>
   ///领取网红金币(MsgCommonBool)
   /// </summary>
-  [pbr::OriginalName("MsgIDCelebrity_GiveCelebrityGoldCoinResp")] MsgIdcelebrityGiveCelebrityGoldCoinResp = 122,
+  [pbr::OriginalName("MsgIDCelebrity_GiveCelebrityGoldCoin")] MsgIdcelebrityGiveCelebrityGoldCoin = 123,
+  /// <summary>
+  ///领取网红金币返回(MsgCommonBool)
+  /// </summary>
+  [pbr::OriginalName("MsgIDCelebrity_GiveCelebrityGoldCoinResp")] MsgIdcelebrityGiveCelebrityGoldCoinResp = 124,
 }
 
 public enum EMsgIDGame {
