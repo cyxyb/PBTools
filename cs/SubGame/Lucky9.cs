@@ -44,37 +44,40 @@ namespace Lucky9 {
             "ZGV4GAggAygFEhgKEHBsYXllcl9uZXdfc2NvcmUYCSADKAMiPwoVTENNc2dO",
             "b3RpZnlBY3Rpb25SZXNwEhMKC2N1cnJlbnRfYWN0GAMgASgFEhEKCW9wZXJf",
             "dGltZRgEIAEoBSItCgtMQ01zZ0FjdGlvbhILCgNhY3QYASABKAUSEQoJYmV0",
-            "X3Njb3JlGAIgASgDIkYKEExDTXNnR2V0Q2FyZFJlc3ASEAoIY2hhaXJfaWQY",
-            "ASABKAUSEQoJY2FyZF90eXBlGAIgASgFEg0KBWNhcmRzGAMgAygFIjoKD0xD",
-            "TXNnQWRkQmV0UmVzcBIUCgxhZGRfY2hhaXJfaWQYASABKAUSEQoJYWRkX3Nj",
-            "b3JlGAIgASgDInoKEkxDTXNnRW5kUGxheWVySW5mbxISCgpnYW1lX3Njb3Jl",
-            "GAEgASgDEgsKA3RheBgCIAEoAxIMCgR0eXBlGAMgASgDEg4KBm51bWJlchgE",
-            "IAEoAxIlCgVjYXJkcxgFIAEoCzIWLkx1Y2t5OS5MQ01zZ0hhbmRDYXJkcyI+",
-            "Cg9MQ01zZ0dhbWVSZXN1bHQSKwoHcGxheWVycxgBIAMoCzIaLkx1Y2t5OS5M",
-            "Q01zZ0VuZFBsYXllckluZm8iNQoUTENNc2dOb3RpZnlQbGF5ZXJBY3QSEAoI",
-            "Y2hhaXJfaWQYASABKAUSCwoDYWN0GAIgASgFKpgBCg9FTENNc2dHYW1lU3Rh",
-            "dGUSDwoLR1NfVFBfUkVBRFkQABIPCgtHU19UUF9TVEFSVBABEg0KCUdTX1RQ",
-            "X0JFVBACEhMKD0dTX1RQX1NFTkRfQ0FSRBADEhIKDkdTX1RQX0dFVF9DQVJE",
-            "EAQSGQoVR1NfVFBfQkFOS0VSX0dFVF9DQVJEEAUSEAoMR1NfVFBfUkVTVUxU",
-            "EAYqNQoORUxDTXNnQ2FyZFR5cGUSDQoJQ1RfU0lOR0xFEAASCAoEQ1RfORAB",
-            "EgoKBkNUX01BWBACKkcKEEVMQ01zZ0dhbWVBY3Rpb24SDQoJSW52YWxkQWN0",
-            "EAASCgoGQWRkQmV0EAESCwoHR2V0Q2FyZBACEgsKB05vdENhcmQQBCqXBAoP",
-            "RUxDTXNnSURTdWJHYW1lEhUKEU1zZ0lEU3ViR2FtZV9OdWxsEAASHgoaTXNn",
-            "SURTdWJHYW1lX0dhbWVTdGFydFJlc3AQARIhCh1Nc2dJRFN1YkdhbWVfTm90",
-            "aWZ5QWN0aW9uUmVzcBACEhcKE01zZ0lEU3ViR2FtZV9BY3Rpb24QAxIbChdN",
-            "c2dJRFN1YkdhbWVfQWRkQmV0UmVzcBAEEhwKGE1zZ0lEU3ViR2FtZV9HZXRD",
-            "YXJkUmVzcBAFEh8KG01zZ0lEU3ViR2FtZV9HYW1lUmVzdWx0UmVzcBAJEiAK",
-            "HE1zZ0lEU3ViR2FtZV9Ob3RpZnlTdGF0ZVJlc3AQChIcChhNc2dJRFN1Ykdh",
-            "bWVfVGltZU91dFJlc3AQCxIdChlNc2dJRFN1YkdhbWVfVGltZU91dFJlYWR5",
-            "EAwSIQodTXNnSURTdWJHYW1lX1RpbWVPdXRSZWFkeVJlc3AQDRIgChxNc2dJ",
-            "RFN1YkdhbWVfVGltZU91dEtpY2tSZXNwEA4SJgoiTXNnSURTdWJHYW1lX05v",
-            "dGlmeVN5c3RlbUNoZWF0UmVzcBAUEiMKH01zZ0lEU3ViR2FtZV9Ob3RpZnlD",
-            "YXJkVHlwZVJlc3AQFRIgChxNc2dJRFN1YkdhbWVfTm90aWZ5SXNNYXhSZXNw",
-            "EBYSIgoeTXNnSURTdWJHYW1lX05vdGlmeUxhc3RBY3RSZXNwEBdiBnByb3Rv",
-            "Mw=="));
+            "X3Njb3JlGAIgASgDIkcKEUxDTXNnU2VuZENhcmRSZXNwEhAKCGNoYWlyX2lk",
+            "GAEgASgFEhEKCWNhcmRfdHlwZRgCIAEoBRINCgVjYXJkcxgFIAMoBSI0ChBM",
+            "Q01zZ0dldENhcmRSZXNwEhAKCGNoYWlyX2lkGAEgASgFEg4KBmlzX2dldBgC",
+            "IAEoBSI6Cg9MQ01zZ0FkZEJldFJlc3ASFAoMYWRkX2NoYWlyX2lkGAEgASgF",
+            "EhEKCWFkZF9zY29yZRgCIAEoAyJ6ChJMQ01zZ0VuZFBsYXllckluZm8SEgoK",
+            "Z2FtZV9zY29yZRgBIAEoAxILCgN0YXgYAiABKAMSDAoEdHlwZRgDIAEoAxIO",
+            "CgZudW1iZXIYBCABKAMSJQoFY2FyZHMYBSABKAsyFi5MdWNreTkuTENNc2dI",
+            "YW5kQ2FyZHMiPgoPTENNc2dHYW1lUmVzdWx0EisKB3BsYXllcnMYASADKAsy",
+            "Gi5MdWNreTkuTENNc2dFbmRQbGF5ZXJJbmZvIjUKFExDTXNnTm90aWZ5UGxh",
+            "eWVyQWN0EhAKCGNoYWlyX2lkGAEgASgFEgsKA2FjdBgCIAEoBSqWAQoPRUxD",
+            "TXNnR2FtZVN0YXRlEg8KC0dTX1RQX1JFQURZEAASDwoLR1NfVFBfU1RBUlQQ",
+            "ARINCglHU19UUF9CRVQQAhITCg9HU19UUF9TRU5EX0NBUkQQAxISCg5HU19U",
+            "UF9HRVRfQ0FSRBAEEhcKE0dTX1RQX1RXT19TRU5EX0NBUkQQBRIQCgxHU19U",
+            "UF9SRVNVTFQQBio+ChFFTENNc2dQbGF5ZXJTdGF0ZRIMCghQU19SRUFEWRAA",
+            "EgsKB1BTX1BMQVkQARIOCgpQU19USU1FT1VUEAIqNQoORUxDTXNnQ2FyZFR5",
+            "cGUSDQoJQ1RfU0lOR0xFEAASCAoEQ1RfORABEgoKBkNUX01BWBACKkcKEEVM",
+            "Q01zZ0dhbWVBY3Rpb24SDQoJSW52YWxkQWN0EAASCgoGQWRkQmV0EAESCwoH",
+            "R2V0Q2FyZBACEgsKB05vdENhcmQQBCq2BAoPRUxDTXNnSURTdWJHYW1lEhUK",
+            "EU1zZ0lEU3ViR2FtZV9OdWxsEAASHgoaTXNnSURTdWJHYW1lX0dhbWVTdGFy",
+            "dFJlc3AQARIhCh1Nc2dJRFN1YkdhbWVfTm90aWZ5QWN0aW9uUmVzcBACEhcK",
+            "E01zZ0lEU3ViR2FtZV9BY3Rpb24QAxIbChdNc2dJRFN1YkdhbWVfQWRkQmV0",
+            "UmVzcBAEEh0KGU1zZ0lEU3ViR2FtZV9TZW5kQ2FyZFJlc3AQBRIcChhNc2dJ",
+            "RFN1YkdhbWVfR2V0Q2FyZFJlc3AQBhIfChtNc2dJRFN1YkdhbWVfR2FtZVJl",
+            "c3VsdFJlc3AQCRIgChxNc2dJRFN1YkdhbWVfTm90aWZ5U3RhdGVSZXNwEAoS",
+            "HAoYTXNnSURTdWJHYW1lX1RpbWVPdXRSZXNwEAsSHQoZTXNnSURTdWJHYW1l",
+            "X1RpbWVPdXRSZWFkeRAMEiEKHU1zZ0lEU3ViR2FtZV9UaW1lT3V0UmVhZHlS",
+            "ZXNwEA0SIAocTXNnSURTdWJHYW1lX1RpbWVPdXRLaWNrUmVzcBAOEiYKIk1z",
+            "Z0lEU3ViR2FtZV9Ob3RpZnlTeXN0ZW1DaGVhdFJlc3AQFBIjCh9Nc2dJRFN1",
+            "YkdhbWVfTm90aWZ5Q2FyZFR5cGVSZXNwEBUSIAocTXNnSURTdWJHYW1lX05v",
+            "dGlmeUlzTWF4UmVzcBAWEiIKHk1zZ0lEU3ViR2FtZV9Ob3RpZnlMYXN0QWN0",
+            "UmVzcBAXYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Lucky9.ELCMsgGameState), typeof(global::Lucky9.ELCMsgCardType), typeof(global::Lucky9.ELCMsgGameAction), typeof(global::Lucky9.ELCMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Lucky9.ELCMsgGameState), typeof(global::Lucky9.ELCMsgPlayerState), typeof(global::Lucky9.ELCMsgCardType), typeof(global::Lucky9.ELCMsgGameAction), typeof(global::Lucky9.ELCMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgTableState), global::Lucky9.LCMsgTableState.Parser, new[]{ "State", "OutIme" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgHandCards), global::Lucky9.LCMsgHandCards.Parser, new[]{ "Type", "Number", "Cards" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgPlayerInfo), global::Lucky9.LCMsgPlayerInfo.Parser, new[]{ "ChairId", "PlayStatus", "PlayerBet", "CardType", "GetCard", "Gold", "WinGold", "WinConut", "Handls" }, null, null, null, null),
@@ -82,7 +85,8 @@ namespace Lucky9 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgGameStartResp), global::Lucky9.LCMsgGameStartResp.Parser, new[]{ "TableRonud", "TotalEnterGold", "CurEnterGold", "BankerChairId", "NoeCard", "PlayIndex", "PlayerNewScore" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgNotifyActionResp), global::Lucky9.LCMsgNotifyActionResp.Parser, new[]{ "CurrentAct", "OperTime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgAction), global::Lucky9.LCMsgAction.Parser, new[]{ "Act", "BetScore" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgGetCardResp), global::Lucky9.LCMsgGetCardResp.Parser, new[]{ "ChairId", "CardType", "Cards" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgSendCardResp), global::Lucky9.LCMsgSendCardResp.Parser, new[]{ "ChairId", "CardType", "Cards" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgGetCardResp), global::Lucky9.LCMsgGetCardResp.Parser, new[]{ "ChairId", "IsGet" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgAddBetResp), global::Lucky9.LCMsgAddBetResp.Parser, new[]{ "AddChairId", "AddScore" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgEndPlayerInfo), global::Lucky9.LCMsgEndPlayerInfo.Parser, new[]{ "GameScore", "Tax", "Type", "Number", "Cards" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgGameResult), global::Lucky9.LCMsgGameResult.Parser, new[]{ "Players" }, null, null, null, null),
@@ -102,7 +106,7 @@ namespace Lucky9 {
     /// </summary>
     [pbr::OriginalName("GS_TP_READY")] GsTpReady = 0,
     /// <summary>
-    ///开始游戏
+    ///开始游戏 
     /// </summary>
     [pbr::OriginalName("GS_TP_START")] GsTpStart = 1,
     /// <summary>
@@ -114,17 +118,35 @@ namespace Lucky9 {
     /// </summary>
     [pbr::OriginalName("GS_TP_SEND_CARD")] GsTpSendCard = 3,
     /// <summary>
-    ///闲家要牌
+    ///要牌
     /// </summary>
     [pbr::OriginalName("GS_TP_GET_CARD")] GsTpGetCard = 4,
     /// <summary>
-    ///庄家要牌
+    ///二次发牌
     /// </summary>
-    [pbr::OriginalName("GS_TP_BANKER_GET_CARD")] GsTpBankerGetCard = 5,
+    [pbr::OriginalName("GS_TP_TWO_SEND_CARD")] GsTpTwoSendCard = 5,
     /// <summary>
     ///结算
     /// </summary>
     [pbr::OriginalName("GS_TP_RESULT")] GsTpResult = 6,
+  }
+
+  /// <summary>
+  ///玩家状态
+  /// </summary>
+  public enum ELCMsgPlayerState {
+    /// <summary>
+    ///准备
+    /// </summary>
+    [pbr::OriginalName("PS_READY")] PsReady = 0,
+    /// <summary>
+    ///游戏
+    /// </summary>
+    [pbr::OriginalName("PS_PLAY")] PsPlay = 1,
+    /// <summary>
+    ///超时
+    /// </summary>
+    [pbr::OriginalName("PS_TIMEOUT")] PsTimeout = 2,
   }
 
   /// <summary>
@@ -186,9 +208,13 @@ namespace Lucky9 {
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_AddBetResp")] MsgIdsubGameAddBetResp = 4,
     /// <summary>
+    ///发牌(LCMsgSendCardResp)
+    /// </summary>
+    [pbr::OriginalName("MsgIDSubGame_SendCardResp")] MsgIdsubGameSendCardResp = 5,
+    /// <summary>
     ///玩家是否要牌返回(LCMsgGetCardResp)
     /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_GetCardResp")] MsgIdsubGameGetCardResp = 5,
+    [pbr::OriginalName("MsgIDSubGame_GetCardResp")] MsgIdsubGameGetCardResp = 6,
     /// <summary>
     ///结算(LCMsgGameResult)
     /// </summary>
@@ -2535,17 +2561,17 @@ namespace Lucky9 {
   }
 
   /// <summary>
-  ///玩家看牌
+  ///发玩家牌
   /// </summary>
-  public sealed partial class LCMsgGetCardResp : pb::IMessage<LCMsgGetCardResp>
+  public sealed partial class LCMsgSendCardResp : pb::IMessage<LCMsgSendCardResp>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<LCMsgGetCardResp> _parser = new pb::MessageParser<LCMsgGetCardResp>(() => new LCMsgGetCardResp());
+    private static readonly pb::MessageParser<LCMsgSendCardResp> _parser = new pb::MessageParser<LCMsgSendCardResp>(() => new LCMsgSendCardResp());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<LCMsgGetCardResp> Parser { get { return _parser; } }
+    public static pb::MessageParser<LCMsgSendCardResp> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -2558,14 +2584,14 @@ namespace Lucky9 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public LCMsgGetCardResp() {
+    public LCMsgSendCardResp() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public LCMsgGetCardResp(LCMsgGetCardResp other) : this() {
+    public LCMsgSendCardResp(LCMsgSendCardResp other) : this() {
       chairId_ = other.chairId_;
       cardType_ = other.cardType_;
       cards_ = other.cards_.Clone();
@@ -2573,8 +2599,8 @@ namespace Lucky9 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public LCMsgGetCardResp Clone() {
-      return new LCMsgGetCardResp(this);
+    public LCMsgSendCardResp Clone() {
+      return new LCMsgSendCardResp(this);
     }
 
     /// <summary>Field number for the "chair_id" field.</summary>
@@ -2606,9 +2632,9 @@ namespace Lucky9 {
     }
 
     /// <summary>Field number for the "cards" field.</summary>
-    public const int CardsFieldNumber = 3;
+    public const int CardsFieldNumber = 5;
     private static readonly pb::FieldCodec<int> _repeated_cards_codec
-        = pb::FieldCodec.ForInt32(26);
+        = pb::FieldCodec.ForInt32(42);
     private readonly pbc::RepeatedField<int> cards_ = new pbc::RepeatedField<int>();
     /// <summary>
     ///手牌
@@ -2620,11 +2646,11 @@ namespace Lucky9 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as LCMsgGetCardResp);
+      return Equals(other as LCMsgSendCardResp);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(LCMsgGetCardResp other) {
+    public bool Equals(LCMsgSendCardResp other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -2709,7 +2735,7 @@ namespace Lucky9 {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(LCMsgGetCardResp other) {
+    public void MergeFrom(LCMsgSendCardResp other) {
       if (other == null) {
         return;
       }
@@ -2742,8 +2768,8 @@ namespace Lucky9 {
             CardType = input.ReadInt32();
             break;
           }
-          case 26:
-          case 24: {
+          case 42:
+          case 40: {
             cards_.AddEntriesFrom(input, _repeated_cards_codec);
             break;
           }
@@ -2769,9 +2795,226 @@ namespace Lucky9 {
             CardType = input.ReadInt32();
             break;
           }
-          case 26:
-          case 24: {
+          case 42:
+          case 40: {
             cards_.AddEntriesFrom(ref input, _repeated_cards_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  ///玩家
+  /// </summary>
+  public sealed partial class LCMsgGetCardResp : pb::IMessage<LCMsgGetCardResp>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<LCMsgGetCardResp> _parser = new pb::MessageParser<LCMsgGetCardResp>(() => new LCMsgGetCardResp());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<LCMsgGetCardResp> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Lucky9.Lucky9Reflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LCMsgGetCardResp() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LCMsgGetCardResp(LCMsgGetCardResp other) : this() {
+      chairId_ = other.chairId_;
+      isGet_ = other.isGet_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LCMsgGetCardResp Clone() {
+      return new LCMsgGetCardResp(this);
+    }
+
+    /// <summary>Field number for the "chair_id" field.</summary>
+    public const int ChairIdFieldNumber = 1;
+    private int chairId_;
+    /// <summary>
+    ///玩家椅子号
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int ChairId {
+      get { return chairId_; }
+      set {
+        chairId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "is_get" field.</summary>
+    public const int IsGetFieldNumber = 2;
+    private int isGet_;
+    /// <summary>
+    ///1 不要， 2要
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int IsGet {
+      get { return isGet_; }
+      set {
+        isGet_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as LCMsgGetCardResp);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(LCMsgGetCardResp other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ChairId != other.ChairId) return false;
+      if (IsGet != other.IsGet) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ChairId != 0) hash ^= ChairId.GetHashCode();
+      if (IsGet != 0) hash ^= IsGet.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (ChairId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ChairId);
+      }
+      if (IsGet != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(IsGet);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ChairId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ChairId);
+      }
+      if (IsGet != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(IsGet);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (ChairId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChairId);
+      }
+      if (IsGet != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(IsGet);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(LCMsgGetCardResp other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ChairId != 0) {
+        ChairId = other.ChairId;
+      }
+      if (other.IsGet != 0) {
+        IsGet = other.IsGet;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            ChairId = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            IsGet = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ChairId = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            IsGet = input.ReadInt32();
             break;
           }
         }
@@ -2793,7 +3036,7 @@ namespace Lucky9 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Lucky9.Lucky9Reflection.Descriptor.MessageTypes[8]; }
+      get { return global::Lucky9.Lucky9Reflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3007,7 +3250,7 @@ namespace Lucky9 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Lucky9.Lucky9Reflection.Descriptor.MessageTypes[9]; }
+      get { return global::Lucky9.Lucky9Reflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3350,7 +3593,7 @@ namespace Lucky9 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Lucky9.Lucky9Reflection.Descriptor.MessageTypes[10]; }
+      get { return global::Lucky9.Lucky9Reflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3517,7 +3760,7 @@ namespace Lucky9 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Lucky9.Lucky9Reflection.Descriptor.MessageTypes[11]; }
+      get { return global::Lucky9.Lucky9Reflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

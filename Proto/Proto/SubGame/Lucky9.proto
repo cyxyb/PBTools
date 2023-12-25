@@ -6,12 +6,20 @@ package Lucky9;
 enum ELCMsgGameState
 {	
 	GS_TP_READY							= 0;	//准备
-	GS_TP_START							= 1;	//开始游戏
+	GS_TP_START							= 1;	//开始游戏 
 	GS_TP_BET							= 2;	//下注
 	GS_TP_SEND_CARD						= 3;	//发牌
-	GS_TP_GET_CARD						= 4;	//闲家要牌
-	GS_TP_BANKER_GET_CARD				= 5;	//庄家要牌
+	GS_TP_GET_CARD						= 4;	//要牌
+	GS_TP_TWO_SEND_CARD					= 5;	//二次发牌
 	GS_TP_RESULT						= 6;	//结算
+};
+
+//玩家状态
+enum ELCMsgPlayerState
+{	
+	PS_READY							= 0;	//准备
+	PS_PLAY								= 1;	//游戏
+	PS_TIMEOUT							= 2;	//超时
 };
 
 //牌型
@@ -39,7 +47,8 @@ enum ELCMsgIDSubGame
 	MsgIDSubGame_NotifyActionResp		= 2;	//玩家操作(LCMsgNotifyActionResp)
 	MsgIDSubGame_Action					= 3;	//玩家操作(LCMsgAction)
 	MsgIDSubGame_AddBetResp				= 4;	//玩家下注(LCMsgAddBetResp)
-	MsgIDSubGame_GetCardResp			= 5;	//玩家是否要牌返回(LCMsgGetCardResp)
+	MsgIDSubGame_SendCardResp			= 5;	//发牌(LCMsgSendCardResp)
+	MsgIDSubGame_GetCardResp			= 6;	//玩家是否要牌返回(LCMsgGetCardResp)
 	
 	MsgIDSubGame_GameResultResp			= 9;	//结算(LCMsgGameResult)
 	MsgIDSubGame_NotifyStateResp		= 10;	//桌子状态(LCMsgTableState)
@@ -127,12 +136,20 @@ message LCMsgAction
 	int64				bet_score		= 2;	//下注金额
 }
 
-//玩家看牌
-message LCMsgGetCardResp
+//发玩家牌
+message LCMsgSendCardResp
 {
 	int32				chair_id		= 1;	//玩家椅子号
 	int32				card_type		= 2;	//牌型
-	repeated int32		cards			= 3;	//手牌
+	repeated int32		cards			= 5;	//手牌
+}
+
+
+//玩家
+message LCMsgGetCardResp
+{
+	int32				chair_id		= 1;	//玩家椅子号
+	int32				is_get			= 2;	//1 不要， 2要
 }
 
 message LCMsgAddBetResp

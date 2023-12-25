@@ -47,7 +47,7 @@ struct TableStruct_Lucky9_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[12]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[13]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -88,6 +88,9 @@ extern LCMsgPlayerInfoDefaultTypeInternal _LCMsgPlayerInfo_default_instance_;
 class LCMsgSceneInfo;
 class LCMsgSceneInfoDefaultTypeInternal;
 extern LCMsgSceneInfoDefaultTypeInternal _LCMsgSceneInfo_default_instance_;
+class LCMsgSendCardResp;
+class LCMsgSendCardRespDefaultTypeInternal;
+extern LCMsgSendCardRespDefaultTypeInternal _LCMsgSendCardResp_default_instance_;
 class LCMsgTableState;
 class LCMsgTableStateDefaultTypeInternal;
 extern LCMsgTableStateDefaultTypeInternal _LCMsgTableState_default_instance_;
@@ -104,6 +107,7 @@ template<> ::Lucky9::LCMsgNotifyActionResp* Arena::CreateMaybeMessage<::Lucky9::
 template<> ::Lucky9::LCMsgNotifyPlayerAct* Arena::CreateMaybeMessage<::Lucky9::LCMsgNotifyPlayerAct>(Arena*);
 template<> ::Lucky9::LCMsgPlayerInfo* Arena::CreateMaybeMessage<::Lucky9::LCMsgPlayerInfo>(Arena*);
 template<> ::Lucky9::LCMsgSceneInfo* Arena::CreateMaybeMessage<::Lucky9::LCMsgSceneInfo>(Arena*);
+template<> ::Lucky9::LCMsgSendCardResp* Arena::CreateMaybeMessage<::Lucky9::LCMsgSendCardResp>(Arena*);
 template<> ::Lucky9::LCMsgTableState* Arena::CreateMaybeMessage<::Lucky9::LCMsgTableState>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 namespace Lucky9 {
@@ -114,7 +118,7 @@ enum ELCMsgGameState : int {
   GS_TP_BET = 2,
   GS_TP_SEND_CARD = 3,
   GS_TP_GET_CARD = 4,
-  GS_TP_BANKER_GET_CARD = 5,
+  GS_TP_TWO_SEND_CARD = 5,
   GS_TP_RESULT = 6,
   ELCMsgGameState_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   ELCMsgGameState_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
@@ -137,6 +141,32 @@ inline bool ELCMsgGameState_Parse(
     ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, ELCMsgGameState* value) {
   return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<ELCMsgGameState>(
     ELCMsgGameState_descriptor(), name, value);
+}
+enum ELCMsgPlayerState : int {
+  PS_READY = 0,
+  PS_PLAY = 1,
+  PS_TIMEOUT = 2,
+  ELCMsgPlayerState_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
+  ELCMsgPlayerState_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
+};
+bool ELCMsgPlayerState_IsValid(int value);
+constexpr ELCMsgPlayerState ELCMsgPlayerState_MIN = PS_READY;
+constexpr ELCMsgPlayerState ELCMsgPlayerState_MAX = PS_TIMEOUT;
+constexpr int ELCMsgPlayerState_ARRAYSIZE = ELCMsgPlayerState_MAX + 1;
+
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ELCMsgPlayerState_descriptor();
+template<typename T>
+inline const std::string& ELCMsgPlayerState_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, ELCMsgPlayerState>::value ||
+    ::std::is_integral<T>::value,
+    "Incorrect type passed to function ELCMsgPlayerState_Name.");
+  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
+    ELCMsgPlayerState_descriptor(), enum_t_value);
+}
+inline bool ELCMsgPlayerState_Parse(
+    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, ELCMsgPlayerState* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<ELCMsgPlayerState>(
+    ELCMsgPlayerState_descriptor(), name, value);
 }
 enum ELCMsgCardType : int {
   CT_SINGLE = 0,
@@ -197,7 +227,8 @@ enum ELCMsgIDSubGame : int {
   MsgIDSubGame_NotifyActionResp = 2,
   MsgIDSubGame_Action = 3,
   MsgIDSubGame_AddBetResp = 4,
-  MsgIDSubGame_GetCardResp = 5,
+  MsgIDSubGame_SendCardResp = 5,
+  MsgIDSubGame_GetCardResp = 6,
   MsgIDSubGame_GameResultResp = 9,
   MsgIDSubGame_NotifyStateResp = 10,
   MsgIDSubGame_TimeOutResp = 11,
@@ -1552,6 +1583,178 @@ class LCMsgAction PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
+class LCMsgSendCardResp PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Lucky9.LCMsgSendCardResp) */ {
+ public:
+  inline LCMsgSendCardResp() : LCMsgSendCardResp(nullptr) {}
+  virtual ~LCMsgSendCardResp();
+
+  LCMsgSendCardResp(const LCMsgSendCardResp& from);
+  LCMsgSendCardResp(LCMsgSendCardResp&& from) noexcept
+    : LCMsgSendCardResp() {
+    *this = ::std::move(from);
+  }
+
+  inline LCMsgSendCardResp& operator=(const LCMsgSendCardResp& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline LCMsgSendCardResp& operator=(LCMsgSendCardResp&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const LCMsgSendCardResp& default_instance();
+
+  static inline const LCMsgSendCardResp* internal_default_instance() {
+    return reinterpret_cast<const LCMsgSendCardResp*>(
+               &_LCMsgSendCardResp_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    7;
+
+  friend void swap(LCMsgSendCardResp& a, LCMsgSendCardResp& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(LCMsgSendCardResp* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(LCMsgSendCardResp* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline LCMsgSendCardResp* New() const final {
+    return CreateMaybeMessage<LCMsgSendCardResp>(nullptr);
+  }
+
+  LCMsgSendCardResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<LCMsgSendCardResp>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const LCMsgSendCardResp& from);
+  void MergeFrom(const LCMsgSendCardResp& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(LCMsgSendCardResp* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "Lucky9.LCMsgSendCardResp";
+  }
+  protected:
+  explicit LCMsgSendCardResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Lucky9_2eproto);
+    return ::descriptor_table_Lucky9_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kCardsFieldNumber = 5,
+    kChairIdFieldNumber = 1,
+    kCardTypeFieldNumber = 2,
+  };
+  // repeated int32 cards = 5;
+  int cards_size() const;
+  private:
+  int _internal_cards_size() const;
+  public:
+  void clear_cards();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_cards(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_cards() const;
+  void _internal_add_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_cards();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 cards(int index) const;
+  void set_cards(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      cards() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_cards();
+
+  // int32 chair_id = 1;
+  void clear_chair_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_id() const;
+  void set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_chair_id() const;
+  void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 card_type = 2;
+  void clear_card_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 card_type() const;
+  void set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_card_type() const;
+  void _internal_set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:Lucky9.LCMsgSendCardResp)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > cards_;
+  mutable std::atomic<int> _cards_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 card_type_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Lucky9_2eproto;
+};
+// -------------------------------------------------------------------
+
 class LCMsgGetCardResp PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Lucky9.LCMsgGetCardResp) */ {
  public:
@@ -1593,7 +1796,7 @@ class LCMsgGetCardResp PROTOBUF_FINAL :
                &_LCMsgGetCardResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    7;
+    8;
 
   friend void swap(LCMsgGetCardResp& a, LCMsgGetCardResp& b) {
     a.Swap(&b);
@@ -1664,32 +1867,9 @@ class LCMsgGetCardResp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kCardsFieldNumber = 3,
     kChairIdFieldNumber = 1,
-    kCardTypeFieldNumber = 2,
+    kIsGetFieldNumber = 2,
   };
-  // repeated int32 cards = 3;
-  int cards_size() const;
-  private:
-  int _internal_cards_size() const;
-  public:
-  void clear_cards();
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_cards(int index) const;
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      _internal_cards() const;
-  void _internal_add_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      _internal_mutable_cards();
-  public:
-  ::PROTOBUF_NAMESPACE_ID::int32 cards(int index) const;
-  void set_cards(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
-  void add_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      cards() const;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      mutable_cards();
-
   // int32 chair_id = 1;
   void clear_chair_id();
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id() const;
@@ -1699,13 +1879,13 @@ class LCMsgGetCardResp PROTOBUF_FINAL :
   void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 card_type = 2;
-  void clear_card_type();
-  ::PROTOBUF_NAMESPACE_ID::int32 card_type() const;
-  void set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // int32 is_get = 2;
+  void clear_is_get();
+  ::PROTOBUF_NAMESPACE_ID::int32 is_get() const;
+  void set_is_get(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_card_type() const;
-  void _internal_set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_is_get() const;
+  void _internal_set_is_get(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:Lucky9.LCMsgGetCardResp)
@@ -1715,10 +1895,8 @@ class LCMsgGetCardResp PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > cards_;
-  mutable std::atomic<int> _cards_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 card_type_;
+  ::PROTOBUF_NAMESPACE_ID::int32 is_get_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Lucky9_2eproto;
 };
@@ -1765,7 +1943,7 @@ class LCMsgAddBetResp PROTOBUF_FINAL :
                &_LCMsgAddBetResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    9;
 
   friend void swap(LCMsgAddBetResp& a, LCMsgAddBetResp& b) {
     a.Swap(&b);
@@ -1912,7 +2090,7 @@ class LCMsgEndPlayerInfo PROTOBUF_FINAL :
                &_LCMsgEndPlayerInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    10;
 
   friend void swap(LCMsgEndPlayerInfo& a, LCMsgEndPlayerInfo& b) {
     a.Swap(&b);
@@ -2101,7 +2279,7 @@ class LCMsgGameResult PROTOBUF_FINAL :
                &_LCMsgGameResult_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    11;
 
   friend void swap(LCMsgGameResult& a, LCMsgGameResult& b) {
     a.Swap(&b);
@@ -2246,7 +2424,7 @@ class LCMsgNotifyPlayerAct PROTOBUF_FINAL :
                &_LCMsgNotifyPlayerAct_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    12;
 
   friend void swap(LCMsgNotifyPlayerAct& a, LCMsgNotifyPlayerAct& b) {
     a.Swap(&b);
@@ -3250,6 +3428,97 @@ inline void LCMsgAction::set_bet_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
 
 // -------------------------------------------------------------------
 
+// LCMsgSendCardResp
+
+// int32 chair_id = 1;
+inline void LCMsgSendCardResp::clear_chair_id() {
+  chair_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgSendCardResp::_internal_chair_id() const {
+  return chair_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgSendCardResp::chair_id() const {
+  // @@protoc_insertion_point(field_get:Lucky9.LCMsgSendCardResp.chair_id)
+  return _internal_chair_id();
+}
+inline void LCMsgSendCardResp::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  chair_id_ = value;
+}
+inline void LCMsgSendCardResp::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_chair_id(value);
+  // @@protoc_insertion_point(field_set:Lucky9.LCMsgSendCardResp.chair_id)
+}
+
+// int32 card_type = 2;
+inline void LCMsgSendCardResp::clear_card_type() {
+  card_type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgSendCardResp::_internal_card_type() const {
+  return card_type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgSendCardResp::card_type() const {
+  // @@protoc_insertion_point(field_get:Lucky9.LCMsgSendCardResp.card_type)
+  return _internal_card_type();
+}
+inline void LCMsgSendCardResp::_internal_set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  card_type_ = value;
+}
+inline void LCMsgSendCardResp::set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_card_type(value);
+  // @@protoc_insertion_point(field_set:Lucky9.LCMsgSendCardResp.card_type)
+}
+
+// repeated int32 cards = 5;
+inline int LCMsgSendCardResp::_internal_cards_size() const {
+  return cards_.size();
+}
+inline int LCMsgSendCardResp::cards_size() const {
+  return _internal_cards_size();
+}
+inline void LCMsgSendCardResp::clear_cards() {
+  cards_.Clear();
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgSendCardResp::_internal_cards(int index) const {
+  return cards_.Get(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgSendCardResp::cards(int index) const {
+  // @@protoc_insertion_point(field_get:Lucky9.LCMsgSendCardResp.cards)
+  return _internal_cards(index);
+}
+inline void LCMsgSendCardResp::set_cards(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  cards_.Set(index, value);
+  // @@protoc_insertion_point(field_set:Lucky9.LCMsgSendCardResp.cards)
+}
+inline void LCMsgSendCardResp::_internal_add_cards(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  cards_.Add(value);
+}
+inline void LCMsgSendCardResp::add_cards(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_cards(value);
+  // @@protoc_insertion_point(field_add:Lucky9.LCMsgSendCardResp.cards)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+LCMsgSendCardResp::_internal_cards() const {
+  return cards_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+LCMsgSendCardResp::cards() const {
+  // @@protoc_insertion_point(field_list:Lucky9.LCMsgSendCardResp.cards)
+  return _internal_cards();
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+LCMsgSendCardResp::_internal_mutable_cards() {
+  return &cards_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+LCMsgSendCardResp::mutable_cards() {
+  // @@protoc_insertion_point(field_mutable_list:Lucky9.LCMsgSendCardResp.cards)
+  return _internal_mutable_cards();
+}
+
+// -------------------------------------------------------------------
+
 // LCMsgGetCardResp
 
 // int32 chair_id = 1;
@@ -3272,71 +3541,24 @@ inline void LCMsgGetCardResp::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value)
   // @@protoc_insertion_point(field_set:Lucky9.LCMsgGetCardResp.chair_id)
 }
 
-// int32 card_type = 2;
-inline void LCMsgGetCardResp::clear_card_type() {
-  card_type_ = 0;
+// int32 is_get = 2;
+inline void LCMsgGetCardResp::clear_is_get() {
+  is_get_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgGetCardResp::_internal_card_type() const {
-  return card_type_;
+inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgGetCardResp::_internal_is_get() const {
+  return is_get_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgGetCardResp::card_type() const {
-  // @@protoc_insertion_point(field_get:Lucky9.LCMsgGetCardResp.card_type)
-  return _internal_card_type();
+inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgGetCardResp::is_get() const {
+  // @@protoc_insertion_point(field_get:Lucky9.LCMsgGetCardResp.is_get)
+  return _internal_is_get();
 }
-inline void LCMsgGetCardResp::_internal_set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void LCMsgGetCardResp::_internal_set_is_get(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
-  card_type_ = value;
+  is_get_ = value;
 }
-inline void LCMsgGetCardResp::set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_card_type(value);
-  // @@protoc_insertion_point(field_set:Lucky9.LCMsgGetCardResp.card_type)
-}
-
-// repeated int32 cards = 3;
-inline int LCMsgGetCardResp::_internal_cards_size() const {
-  return cards_.size();
-}
-inline int LCMsgGetCardResp::cards_size() const {
-  return _internal_cards_size();
-}
-inline void LCMsgGetCardResp::clear_cards() {
-  cards_.Clear();
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgGetCardResp::_internal_cards(int index) const {
-  return cards_.Get(index);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgGetCardResp::cards(int index) const {
-  // @@protoc_insertion_point(field_get:Lucky9.LCMsgGetCardResp.cards)
-  return _internal_cards(index);
-}
-inline void LCMsgGetCardResp::set_cards(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
-  cards_.Set(index, value);
-  // @@protoc_insertion_point(field_set:Lucky9.LCMsgGetCardResp.cards)
-}
-inline void LCMsgGetCardResp::_internal_add_cards(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  cards_.Add(value);
-}
-inline void LCMsgGetCardResp::add_cards(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_add_cards(value);
-  // @@protoc_insertion_point(field_add:Lucky9.LCMsgGetCardResp.cards)
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-LCMsgGetCardResp::_internal_cards() const {
-  return cards_;
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-LCMsgGetCardResp::cards() const {
-  // @@protoc_insertion_point(field_list:Lucky9.LCMsgGetCardResp.cards)
-  return _internal_cards();
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-LCMsgGetCardResp::_internal_mutable_cards() {
-  return &cards_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-LCMsgGetCardResp::mutable_cards() {
-  // @@protoc_insertion_point(field_mutable_list:Lucky9.LCMsgGetCardResp.cards)
-  return _internal_mutable_cards();
+inline void LCMsgGetCardResp::set_is_get(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_is_get(value);
+  // @@protoc_insertion_point(field_set:Lucky9.LCMsgGetCardResp.is_get)
 }
 
 // -------------------------------------------------------------------
@@ -3662,6 +3884,8 @@ inline void LCMsgNotifyPlayerAct::set_act(::PROTOBUF_NAMESPACE_ID::int32 value) 
 
 // -------------------------------------------------------------------
 
+// -------------------------------------------------------------------
+
 
 // @@protoc_insertion_point(namespace_scope)
 
@@ -3673,6 +3897,11 @@ template <> struct is_proto_enum< ::Lucky9::ELCMsgGameState> : ::std::true_type 
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::Lucky9::ELCMsgGameState>() {
   return ::Lucky9::ELCMsgGameState_descriptor();
+}
+template <> struct is_proto_enum< ::Lucky9::ELCMsgPlayerState> : ::std::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::Lucky9::ELCMsgPlayerState>() {
+  return ::Lucky9::ELCMsgPlayerState_descriptor();
 }
 template <> struct is_proto_enum< ::Lucky9::ELCMsgCardType> : ::std::true_type {};
 template <>
