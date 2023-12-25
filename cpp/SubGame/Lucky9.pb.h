@@ -689,7 +689,7 @@ class LCMsgPlayerInfo PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kHandlsFieldNumber = 8,
+    kHandlsFieldNumber = 9,
     kChairIdFieldNumber = 1,
     kPlayStatusFieldNumber = 2,
     kPlayerBetFieldNumber = 3,
@@ -697,8 +697,9 @@ class LCMsgPlayerInfo PROTOBUF_FINAL :
     kGetCardFieldNumber = 5,
     kGoldFieldNumber = 6,
     kWinGoldFieldNumber = 7,
+    kWinConutFieldNumber = 8,
   };
-  // .Lucky9.LCMsgHandCards handls = 8;
+  // .Lucky9.LCMsgHandCards handls = 9;
   bool has_handls() const;
   private:
   bool _internal_has_handls() const;
@@ -779,6 +780,15 @@ class LCMsgPlayerInfo PROTOBUF_FINAL :
   void _internal_set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
+  // int64 win_conut = 8;
+  void clear_win_conut();
+  ::PROTOBUF_NAMESPACE_ID::int64 win_conut() const;
+  void set_win_conut(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_win_conut() const;
+  void _internal_set_win_conut(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:Lucky9.LCMsgPlayerInfo)
  private:
   class _Internal;
@@ -794,6 +804,7 @@ class LCMsgPlayerInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 get_card_;
   ::PROTOBUF_NAMESPACE_ID::int64 gold_;
   ::PROTOBUF_NAMESPACE_ID::int64 win_gold_;
+  ::PROTOBUF_NAMESPACE_ID::int64 win_conut_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Lucky9_2eproto;
 };
@@ -2651,7 +2662,27 @@ inline void LCMsgPlayerInfo::set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value) 
   // @@protoc_insertion_point(field_set:Lucky9.LCMsgPlayerInfo.win_gold)
 }
 
-// .Lucky9.LCMsgHandCards handls = 8;
+// int64 win_conut = 8;
+inline void LCMsgPlayerInfo::clear_win_conut() {
+  win_conut_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 LCMsgPlayerInfo::_internal_win_conut() const {
+  return win_conut_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 LCMsgPlayerInfo::win_conut() const {
+  // @@protoc_insertion_point(field_get:Lucky9.LCMsgPlayerInfo.win_conut)
+  return _internal_win_conut();
+}
+inline void LCMsgPlayerInfo::_internal_set_win_conut(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  win_conut_ = value;
+}
+inline void LCMsgPlayerInfo::set_win_conut(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_win_conut(value);
+  // @@protoc_insertion_point(field_set:Lucky9.LCMsgPlayerInfo.win_conut)
+}
+
+// .Lucky9.LCMsgHandCards handls = 9;
 inline bool LCMsgPlayerInfo::_internal_has_handls() const {
   return this != internal_default_instance() && handls_ != nullptr;
 }

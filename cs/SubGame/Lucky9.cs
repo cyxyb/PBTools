@@ -27,57 +27,57 @@ namespace Lucky9 {
             "ChpQcm90by9TdWJHYW1lL0x1Y2t5OS5wcm90bxIGTHVja3k5IjEKD0xDTXNn",
             "VGFibGVTdGF0ZRINCgVzdGF0ZRgBIAEoBRIPCgdvdXRfaW1lGAIgASgFIj0K",
             "DkxDTXNnSGFuZENhcmRzEgwKBHR5cGUYASABKAUSDgoGbnVtYmVyGAIgASgF",
-            "Eg0KBWNhcmRzGAMgAygFIrkBCg9MQ01zZ1BsYXllckluZm8SEAoIY2hhaXJf",
+            "Eg0KBWNhcmRzGAMgAygFIswBCg9MQ01zZ1BsYXllckluZm8SEAoIY2hhaXJf",
             "aWQYASABKAUSEwoLcGxheV9zdGF0dXMYAiABKAUSEgoKcGxheWVyX2JldBgD",
             "IAEoAxIRCgljYXJkX3R5cGUYBCABKAUSEAoIZ2V0X2NhcmQYBSABKAUSDAoE",
-            "Z29sZBgGIAEoAxIQCgh3aW5fZ29sZBgHIAEoAxImCgZoYW5kbHMYCCABKAsy",
-            "Fi5MdWNreTkuTENNc2dIYW5kQ2FyZHMigQIKDkxDTXNnU2NlbmVJbmZvEhEK",
-            "CW1heF9zY29yZRgBIAEoAxIXCg90YWJsZV9tYXhfc2NvcmUYAiABKAMSEgoK",
-            "Y2VsbF9zY29yZRgDIAEoAxITCgt0YWJsZV9zdGF0ZRgEIAEoBRITCgt0YWJs",
-            "ZV9yb251ZBgFIAEoBRIXCg90b3RhbF9iZXRfc2NvcmUYBiABKAMSFwoPYmFu",
-            "a2VyX2NoYWlyX2lkGAggASgFEhAKCG91dF90aW1lGAsgASgFEhIKCnRvdGFs",
-            "X3RpbWUYDCABKAUSLQoMcGxheWVyX2luZm9zGA8gAygLMhcuTHVja3k5LkxD",
-            "TXNnUGxheWVySW5mbyK0AQoSTENNc2dHYW1lU3RhcnRSZXNwEhMKC3RhYmxl",
-            "X3JvbnVkGAEgASgFEhgKEHRvdGFsX2VudGVyX2dvbGQYAiABKAUSFgoOY3Vy",
-            "X2VudGVyX2dvbGQYAyABKAUSFwoPYmFua2VyX2NoYWlyX2lkGAQgASgFEhAK",
-            "CG5vZV9jYXJkGAUgASgFEhIKCnBsYXlfaW5kZXgYCCADKAUSGAoQcGxheWVy",
-            "X25ld19zY29yZRgJIAMoAyI/ChVMQ01zZ05vdGlmeUFjdGlvblJlc3ASEwoL",
-            "Y3VycmVudF9hY3QYAyABKAUSEQoJb3Blcl90aW1lGAQgASgFIi0KC0xDTXNn",
-            "QWN0aW9uEgsKA2FjdBgBIAEoBRIRCgliZXRfc2NvcmUYAiABKAMiRgoQTENN",
-            "c2dHZXRDYXJkUmVzcBIQCghjaGFpcl9pZBgBIAEoBRIRCgljYXJkX3R5cGUY",
-            "AiABKAUSDQoFY2FyZHMYAyADKAUiOgoPTENNc2dBZGRCZXRSZXNwEhQKDGFk",
-            "ZF9jaGFpcl9pZBgBIAEoBRIRCglhZGRfc2NvcmUYAiABKAMiegoSTENNc2dF",
-            "bmRQbGF5ZXJJbmZvEhIKCmdhbWVfc2NvcmUYASABKAMSCwoDdGF4GAIgASgD",
-            "EgwKBHR5cGUYAyABKAMSDgoGbnVtYmVyGAQgASgDEiUKBWNhcmRzGAUgASgL",
-            "MhYuTHVja3k5LkxDTXNnSGFuZENhcmRzIj4KD0xDTXNnR2FtZVJlc3VsdBIr",
-            "CgdwbGF5ZXJzGAEgAygLMhouTHVja3k5LkxDTXNnRW5kUGxheWVySW5mbyI1",
-            "ChRMQ01zZ05vdGlmeVBsYXllckFjdBIQCghjaGFpcl9pZBgBIAEoBRILCgNh",
-            "Y3QYAiABKAUqagoPRUxDTXNnR2FtZVN0YXRlEg8KC0dTX1RQX1JFQURZEAAS",
-            "DgoKR1NfVFBfREVBTBABEhEKDUdTX1RQX1BMQVlJTkcQAhIRCg1HU19UUF9D",
-            "T01QQVJFEAMSEAoMR1NfVFBfUkVTVUxUEAQqWAoRRUxDTXNnUGxheWVyU3Rh",
-            "dGUSDAoIUFNfUkVBRFkQABILCgdQU19QTEFZEAESCwoHUFNfR0lWRRACEgsK",
-            "B1BTX0ZBSUwQAxIOCgpQU19USU1FT1VUEAQqNQoORUxDTXNnQ2FyZFR5cGUS",
-            "DQoJQ1RfU0lOR0xFEAASCAoEQ1RfORABEgoKBkNUX01BWBACKkcKEEVMQ01z",
-            "Z0dhbWVBY3Rpb24SDQoJSW52YWxkQWN0EAASCgoGQWRkQmV0EAESCwoHR2V0",
-            "Q2FyZBACEgsKB05vdENhcmQQBCqXBAoPRUxDTXNnSURTdWJHYW1lEhUKEU1z",
-            "Z0lEU3ViR2FtZV9OdWxsEAASHgoaTXNnSURTdWJHYW1lX0dhbWVTdGFydFJl",
-            "c3AQARIhCh1Nc2dJRFN1YkdhbWVfTm90aWZ5QWN0aW9uUmVzcBACEhcKE01z",
-            "Z0lEU3ViR2FtZV9BY3Rpb24QAxIbChdNc2dJRFN1YkdhbWVfQWRkQmV0UmVz",
-            "cBAEEhwKGE1zZ0lEU3ViR2FtZV9HZXRDYXJkUmVzcBAFEh8KG01zZ0lEU3Vi",
-            "R2FtZV9HYW1lUmVzdWx0UmVzcBAJEiAKHE1zZ0lEU3ViR2FtZV9Ob3RpZnlT",
-            "dGF0ZVJlc3AQChIcChhNc2dJRFN1YkdhbWVfVGltZU91dFJlc3AQCxIdChlN",
-            "c2dJRFN1YkdhbWVfVGltZU91dFJlYWR5EAwSIQodTXNnSURTdWJHYW1lX1Rp",
-            "bWVPdXRSZWFkeVJlc3AQDRIgChxNc2dJRFN1YkdhbWVfVGltZU91dEtpY2tS",
-            "ZXNwEA4SJgoiTXNnSURTdWJHYW1lX05vdGlmeVN5c3RlbUNoZWF0UmVzcBAU",
-            "EiMKH01zZ0lEU3ViR2FtZV9Ob3RpZnlDYXJkVHlwZVJlc3AQFRIgChxNc2dJ",
-            "RFN1YkdhbWVfTm90aWZ5SXNNYXhSZXNwEBYSIgoeTXNnSURTdWJHYW1lX05v",
-            "dGlmeUxhc3RBY3RSZXNwEBdiBnByb3RvMw=="));
+            "Z29sZBgGIAEoAxIQCgh3aW5fZ29sZBgHIAEoAxIRCgl3aW5fY29udXQYCCAB",
+            "KAMSJgoGaGFuZGxzGAkgASgLMhYuTHVja3k5LkxDTXNnSGFuZENhcmRzIoEC",
+            "Cg5MQ01zZ1NjZW5lSW5mbxIRCgltYXhfc2NvcmUYASABKAMSFwoPdGFibGVf",
+            "bWF4X3Njb3JlGAIgASgDEhIKCmNlbGxfc2NvcmUYAyABKAMSEwoLdGFibGVf",
+            "c3RhdGUYBCABKAUSEwoLdGFibGVfcm9udWQYBSABKAUSFwoPdG90YWxfYmV0",
+            "X3Njb3JlGAYgASgDEhcKD2Jhbmtlcl9jaGFpcl9pZBgIIAEoBRIQCghvdXRf",
+            "dGltZRgLIAEoBRISCgp0b3RhbF90aW1lGAwgASgFEi0KDHBsYXllcl9pbmZv",
+            "cxgPIAMoCzIXLkx1Y2t5OS5MQ01zZ1BsYXllckluZm8itAEKEkxDTXNnR2Ft",
+            "ZVN0YXJ0UmVzcBITCgt0YWJsZV9yb251ZBgBIAEoBRIYChB0b3RhbF9lbnRl",
+            "cl9nb2xkGAIgASgFEhYKDmN1cl9lbnRlcl9nb2xkGAMgASgFEhcKD2Jhbmtl",
+            "cl9jaGFpcl9pZBgEIAEoBRIQCghub2VfY2FyZBgFIAEoBRISCgpwbGF5X2lu",
+            "ZGV4GAggAygFEhgKEHBsYXllcl9uZXdfc2NvcmUYCSADKAMiPwoVTENNc2dO",
+            "b3RpZnlBY3Rpb25SZXNwEhMKC2N1cnJlbnRfYWN0GAMgASgFEhEKCW9wZXJf",
+            "dGltZRgEIAEoBSItCgtMQ01zZ0FjdGlvbhILCgNhY3QYASABKAUSEQoJYmV0",
+            "X3Njb3JlGAIgASgDIkYKEExDTXNnR2V0Q2FyZFJlc3ASEAoIY2hhaXJfaWQY",
+            "ASABKAUSEQoJY2FyZF90eXBlGAIgASgFEg0KBWNhcmRzGAMgAygFIjoKD0xD",
+            "TXNnQWRkQmV0UmVzcBIUCgxhZGRfY2hhaXJfaWQYASABKAUSEQoJYWRkX3Nj",
+            "b3JlGAIgASgDInoKEkxDTXNnRW5kUGxheWVySW5mbxISCgpnYW1lX3Njb3Jl",
+            "GAEgASgDEgsKA3RheBgCIAEoAxIMCgR0eXBlGAMgASgDEg4KBm51bWJlchgE",
+            "IAEoAxIlCgVjYXJkcxgFIAEoCzIWLkx1Y2t5OS5MQ01zZ0hhbmRDYXJkcyI+",
+            "Cg9MQ01zZ0dhbWVSZXN1bHQSKwoHcGxheWVycxgBIAMoCzIaLkx1Y2t5OS5M",
+            "Q01zZ0VuZFBsYXllckluZm8iNQoUTENNc2dOb3RpZnlQbGF5ZXJBY3QSEAoI",
+            "Y2hhaXJfaWQYASABKAUSCwoDYWN0GAIgASgFKmoKD0VMQ01zZ0dhbWVTdGF0",
+            "ZRIPCgtHU19UUF9SRUFEWRAAEg4KCkdTX1RQX0RFQUwQARIRCg1HU19UUF9Q",
+            "TEFZSU5HEAISEQoNR1NfVFBfQ09NUEFSRRADEhAKDEdTX1RQX1JFU1VMVBAE",
+            "KlgKEUVMQ01zZ1BsYXllclN0YXRlEgwKCFBTX1JFQURZEAASCwoHUFNfUExB",
+            "WRABEgsKB1BTX0dJVkUQAhILCgdQU19GQUlMEAMSDgoKUFNfVElNRU9VVBAE",
+            "KjUKDkVMQ01zZ0NhcmRUeXBlEg0KCUNUX1NJTkdMRRAAEggKBENUXzkQARIK",
+            "CgZDVF9NQVgQAipHChBFTENNc2dHYW1lQWN0aW9uEg0KCUludmFsZEFjdBAA",
+            "EgoKBkFkZEJldBABEgsKB0dldENhcmQQAhILCgdOb3RDYXJkEAQqlwQKD0VM",
+            "Q01zZ0lEU3ViR2FtZRIVChFNc2dJRFN1YkdhbWVfTnVsbBAAEh4KGk1zZ0lE",
+            "U3ViR2FtZV9HYW1lU3RhcnRSZXNwEAESIQodTXNnSURTdWJHYW1lX05vdGlm",
+            "eUFjdGlvblJlc3AQAhIXChNNc2dJRFN1YkdhbWVfQWN0aW9uEAMSGwoXTXNn",
+            "SURTdWJHYW1lX0FkZEJldFJlc3AQBBIcChhNc2dJRFN1YkdhbWVfR2V0Q2Fy",
+            "ZFJlc3AQBRIfChtNc2dJRFN1YkdhbWVfR2FtZVJlc3VsdFJlc3AQCRIgChxN",
+            "c2dJRFN1YkdhbWVfTm90aWZ5U3RhdGVSZXNwEAoSHAoYTXNnSURTdWJHYW1l",
+            "X1RpbWVPdXRSZXNwEAsSHQoZTXNnSURTdWJHYW1lX1RpbWVPdXRSZWFkeRAM",
+            "EiEKHU1zZ0lEU3ViR2FtZV9UaW1lT3V0UmVhZHlSZXNwEA0SIAocTXNnSURT",
+            "dWJHYW1lX1RpbWVPdXRLaWNrUmVzcBAOEiYKIk1zZ0lEU3ViR2FtZV9Ob3Rp",
+            "ZnlTeXN0ZW1DaGVhdFJlc3AQFBIjCh9Nc2dJRFN1YkdhbWVfTm90aWZ5Q2Fy",
+            "ZFR5cGVSZXNwEBUSIAocTXNnSURTdWJHYW1lX05vdGlmeUlzTWF4UmVzcBAW",
+            "EiIKHk1zZ0lEU3ViR2FtZV9Ob3RpZnlMYXN0QWN0UmVzcBAXYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Lucky9.ELCMsgGameState), typeof(global::Lucky9.ELCMsgPlayerState), typeof(global::Lucky9.ELCMsgCardType), typeof(global::Lucky9.ELCMsgGameAction), typeof(global::Lucky9.ELCMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgTableState), global::Lucky9.LCMsgTableState.Parser, new[]{ "State", "OutIme" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgHandCards), global::Lucky9.LCMsgHandCards.Parser, new[]{ "Type", "Number", "Cards" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgPlayerInfo), global::Lucky9.LCMsgPlayerInfo.Parser, new[]{ "ChairId", "PlayStatus", "PlayerBet", "CardType", "GetCard", "Gold", "WinGold", "Handls" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgPlayerInfo), global::Lucky9.LCMsgPlayerInfo.Parser, new[]{ "ChairId", "PlayStatus", "PlayerBet", "CardType", "GetCard", "Gold", "WinGold", "WinConut", "Handls" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgSceneInfo), global::Lucky9.LCMsgSceneInfo.Parser, new[]{ "MaxScore", "TableMaxScore", "CellScore", "TableState", "TableRonud", "TotalBetScore", "BankerChairId", "OutTime", "TotalTime", "PlayerInfos" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgGameStartResp), global::Lucky9.LCMsgGameStartResp.Parser, new[]{ "TableRonud", "TotalEnterGold", "CurEnterGold", "BankerChairId", "NoeCard", "PlayIndex", "PlayerNewScore" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgNotifyActionResp), global::Lucky9.LCMsgNotifyActionResp.Parser, new[]{ "CurrentAct", "OperTime" }, null, null, null, null),
@@ -746,6 +746,7 @@ namespace Lucky9 {
       getCard_ = other.getCard_;
       gold_ = other.gold_;
       winGold_ = other.winGold_;
+      winConut_ = other.winConut_;
       handls_ = other.handls_ != null ? other.handls_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -853,8 +854,22 @@ namespace Lucky9 {
       }
     }
 
+    /// <summary>Field number for the "win_conut" field.</summary>
+    public const int WinConutFieldNumber = 8;
+    private long winConut_;
+    /// <summary>
+    ///赢的局数
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long WinConut {
+      get { return winConut_; }
+      set {
+        winConut_ = value;
+      }
+    }
+
     /// <summary>Field number for the "handls" field.</summary>
-    public const int HandlsFieldNumber = 8;
+    public const int HandlsFieldNumber = 9;
     private global::Lucky9.LCMsgHandCards handls_;
     /// <summary>
     ///手牌
@@ -887,6 +902,7 @@ namespace Lucky9 {
       if (GetCard != other.GetCard) return false;
       if (Gold != other.Gold) return false;
       if (WinGold != other.WinGold) return false;
+      if (WinConut != other.WinConut) return false;
       if (!object.Equals(Handls, other.Handls)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -901,6 +917,7 @@ namespace Lucky9 {
       if (GetCard != 0) hash ^= GetCard.GetHashCode();
       if (Gold != 0L) hash ^= Gold.GetHashCode();
       if (WinGold != 0L) hash ^= WinGold.GetHashCode();
+      if (WinConut != 0L) hash ^= WinConut.GetHashCode();
       if (handls_ != null) hash ^= Handls.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -946,8 +963,12 @@ namespace Lucky9 {
         output.WriteRawTag(56);
         output.WriteInt64(WinGold);
       }
+      if (WinConut != 0L) {
+        output.WriteRawTag(64);
+        output.WriteInt64(WinConut);
+      }
       if (handls_ != null) {
-        output.WriteRawTag(66);
+        output.WriteRawTag(74);
         output.WriteMessage(Handls);
       }
       if (_unknownFields != null) {
@@ -987,8 +1008,12 @@ namespace Lucky9 {
         output.WriteRawTag(56);
         output.WriteInt64(WinGold);
       }
+      if (WinConut != 0L) {
+        output.WriteRawTag(64);
+        output.WriteInt64(WinConut);
+      }
       if (handls_ != null) {
-        output.WriteRawTag(66);
+        output.WriteRawTag(74);
         output.WriteMessage(Handls);
       }
       if (_unknownFields != null) {
@@ -1020,6 +1045,9 @@ namespace Lucky9 {
       }
       if (WinGold != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(WinGold);
+      }
+      if (WinConut != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(WinConut);
       }
       if (handls_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Handls);
@@ -1055,6 +1083,9 @@ namespace Lucky9 {
       }
       if (other.WinGold != 0L) {
         WinGold = other.WinGold;
+      }
+      if (other.WinConut != 0L) {
+        WinConut = other.WinConut;
       }
       if (other.handls_ != null) {
         if (handls_ == null) {
@@ -1104,7 +1135,11 @@ namespace Lucky9 {
             WinGold = input.ReadInt64();
             break;
           }
-          case 66: {
+          case 64: {
+            WinConut = input.ReadInt64();
+            break;
+          }
+          case 74: {
             if (handls_ == null) {
               Handls = new global::Lucky9.LCMsgHandCards();
             }
@@ -1153,7 +1188,11 @@ namespace Lucky9 {
             WinGold = input.ReadInt64();
             break;
           }
-          case 66: {
+          case 64: {
+            WinConut = input.ReadInt64();
+            break;
+          }
+          case 74: {
             if (handls_ == null) {
               Handls = new global::Lucky9.LCMsgHandCards();
             }

@@ -86,7 +86,8 @@ message LCMsgPlayerInfo
 	int32				get_card		= 5;	//是否操作要牌
 	int64				gold			= 6;	//自己的金币，别人的是空
 	int64				win_gold		= 7;	//输赢分
-	LCMsgHandCards			handls			= 8;	//手牌
+	int64				win_conut		= 8;	//赢的局数
+	LCMsgHandCards		handls			= 9;	//手牌
 }
 
 
