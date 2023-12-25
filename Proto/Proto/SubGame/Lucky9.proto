@@ -25,10 +25,8 @@ enum ELCMsgPlayerState
 //牌型
 enum ELCMsgCardType
 {
-	//扑克类型
-	LC_SINGLE							= 0;	//单牌类型
-	LC_9								= 1;	//9类型
-	LC_MAX								= 2;	//最大牌型
+	LC_SINGLE							= 0;	//普通点数
+	LC_9								= 1;	//lucky9类型
 };
 
 //操作码
@@ -44,11 +42,10 @@ enum ELCMsgIDSubGame
 {
 	MsgIDSubGame_Null					= 0;
 	MsgIDSubGame_GameStartResp			= 1;	//游戏开始(LCMsgGameStartResp)
-	MsgIDSubGame_NotifyActionResp		= 2;	//玩家操作(LCMsgNotifyActionResp)
+	MsgIDSubGame_NotifyActionResp		= 2;	//通知玩家操作(LCMsgNotifyActionResp)
 	MsgIDSubGame_Action					= 3;	//玩家操作(LCMsgAction)
-	MsgIDSubGame_AddBetResp				= 4;	//玩家下注(LCMsgAddBetResp)
+	MsgIDSubGame_AddBetResp				= 4;	//玩家操作返回(LCMsgActionResp)
 	MsgIDSubGame_SendCardResp			= 5;	//发牌(LCMsgSendCardResp)
-	MsgIDSubGame_GetCardResp			= 6;	//玩家是否要牌返回(LCMsgGetCardResp)
 	
 	MsgIDSubGame_GameResultResp			= 9;	//结算(LCMsgGameResult)
 	MsgIDSubGame_NotifyStateResp		= 10;	//桌子状态(LCMsgTableState)
@@ -74,7 +71,7 @@ message LCMsgTableState
 message LCMsgHandCards
 {
 	int32				type			= 1;	//牌型
-	int32				number			= 2;	//点数
+	int32				card_sum		= 2;	//点数
 	repeated int32		cards			= 3;	//手牌
 }
 
@@ -91,18 +88,15 @@ message LCMsgPlayerInfo
 	LCMsgHandCards		handls			= 9;	//手牌
 }
 
-
 //场景消息
 message LCMsgSceneInfo
 {
-	int64			  	max_score		= 1;	//最大下注
-	int64			  	table_max_score	= 2;	//最大下注
-	int64			  	cell_score		= 3;	//底分
-	int32				table_state		= 4;	//桌子状态
-	int32				table_ronud		= 5;	//桌子轮数
-	int64				total_bet_score	= 6;	//桌内总下注
+	int64			  	cell_score		= 1;	//底分
+	int32				table_state		= 2;	//桌子状态
+	int32				table_ronud		= 3;	//桌子轮数
+	int64				total_enter_gold= 4;	//当前5轮内房费
 	
-	int32				banker_chair_id	= 8;	//庄家椅子号
+	int32				banker_chair_id	= 10;	//庄家椅子号
 	int32				out_time		= 11;	//当前状态剩余超时时间
 	int32				total_time		= 12;	//当前状态总时间
 
@@ -112,17 +106,15 @@ message LCMsgSceneInfo
 //游戏开始
 message LCMsgGameStartResp
 {
-	int32				table_ronud		= 1;	//桌子轮数
 	int32				total_enter_gold= 2;	//总的入场费
 	int32				cur_enter_gold	= 3;	//当前局入场费
 	int32				banker_chair_id	= 4;	//庄家椅子号
-	int32				noe_card		= 5;	//第一张牌
+	int32				one_card		= 5;	//第一张牌
 
 	repeated int32		play_index		= 8;	//在玩下标
-	repeated int64		player_new_score= 9;	//玩家最新金币
 }
 
-//游戏开始
+//通知玩家操作
 message LCMsgNotifyActionResp
 {
 	int32				current_act		= 3;	//当前操作码
@@ -134,43 +126,44 @@ message LCMsgAction
 {
 	int32				act				= 1;	//操作标示
 	int64				bet_score		= 2;	//下注金额
+	bool				is_get			= 3;	//是否要牌
+}
+
+//玩家操作返回
+message LCMsgActionResp
+{
+	int32				act				= 1;	//操作标示
+	int32				chair_id		= 2;	//椅子号
+	int64				bet_score		= 3;	//下注金额
+	bool				is_get			= 4;	//是否要牌
+}
+
+message LCMsgSendCardInfo
+{
+	int32				chair_id		= 1;	//玩家椅子号
+	LCMsgHandCards		hand_cards		= 2;	//手牌
 }
 
 //发玩家牌
 message LCMsgSendCardResp
 {
-	int32				chair_id		= 1;	//玩家椅子号
-	int32				card_type		= 2;	//牌型
-	repeated int32		cards			= 5;	//手牌
-}
-
-
-//玩家
-message LCMsgGetCardResp
-{
-	int32				chair_id		= 1;	//玩家椅子号
-	int32				is_get			= 2;	//1 不要， 2要
-}
-
-message LCMsgAddBetResp
-{
-	int32				add_chair_id	= 1;	//下注玩家椅子号
-	int64				add_score		= 2;	//下注金额
+	repeated LCMsgSendCardInfo infos 	= 1;	//所有人的牌
 }
 
 message LCMsgEndPlayerInfo
 {
-	int64				game_score		= 1;	//输赢分
-	int64				tax				= 2;	//税
-	int64				type			= 3;	//牌型
-	int64				number			= 4;	//点数
-	LCMsgHandCards		cards    		= 5;	//手牌
+	int32				chair_id		= 1;	//玩家椅子号
+	int64				game_score		= 2;	//输赢分
+	int64				tax				= 3;	//税
+	//LCMsgSendCardInfo	card_info		= 4;	//手牌信息    发牌时已经有信息了 重连在结算时不表现
 }
 
 //游戏结果                                  
 message LCMsgGameResult                           
 {                                           
-	repeated LCMsgEndPlayerInfo	players	= 1;	//输赢分
+	int64				bisect_gold		= 1;	//房费金币 大于0有平分
+	repeated int32		bisect_list		= 2;	//平分椅子列表
+	repeated LCMsgEndPlayerInfo	players	= 3;	//玩家结算信息
 }                                           
 
 

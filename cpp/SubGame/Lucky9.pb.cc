@@ -14,9 +14,10 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-extern PROTOBUF_INTERNAL_EXPORT_Lucky9_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_LCMsgEndPlayerInfo_Lucky9_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_Lucky9_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_LCMsgEndPlayerInfo_Lucky9_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_Lucky9_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_LCMsgHandCards_Lucky9_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_Lucky9_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_LCMsgPlayerInfo_Lucky9_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_Lucky9_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_LCMsgSendCardInfo_Lucky9_2eproto;
 namespace Lucky9 {
 class LCMsgTableStateDefaultTypeInternal {
  public:
@@ -46,18 +47,18 @@ class LCMsgActionDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<LCMsgAction> _instance;
 } _LCMsgAction_default_instance_;
+class LCMsgActionRespDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<LCMsgActionResp> _instance;
+} _LCMsgActionResp_default_instance_;
+class LCMsgSendCardInfoDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<LCMsgSendCardInfo> _instance;
+} _LCMsgSendCardInfo_default_instance_;
 class LCMsgSendCardRespDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<LCMsgSendCardResp> _instance;
 } _LCMsgSendCardResp_default_instance_;
-class LCMsgGetCardRespDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<LCMsgGetCardResp> _instance;
-} _LCMsgGetCardResp_default_instance_;
-class LCMsgAddBetRespDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<LCMsgAddBetResp> _instance;
-} _LCMsgAddBetResp_default_instance_;
 class LCMsgEndPlayerInfoDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<LCMsgEndPlayerInfo> _instance;
@@ -84,18 +85,18 @@ static void InitDefaultsscc_info_LCMsgAction_Lucky9_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_LCMsgAction_Lucky9_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_LCMsgAction_Lucky9_2eproto}, {}};
 
-static void InitDefaultsscc_info_LCMsgAddBetResp_Lucky9_2eproto() {
+static void InitDefaultsscc_info_LCMsgActionResp_Lucky9_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::Lucky9::_LCMsgAddBetResp_default_instance_;
-    new (ptr) ::Lucky9::LCMsgAddBetResp();
+    void* ptr = &::Lucky9::_LCMsgActionResp_default_instance_;
+    new (ptr) ::Lucky9::LCMsgActionResp();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
 }
 
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_LCMsgAddBetResp_Lucky9_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_LCMsgAddBetResp_Lucky9_2eproto}, {}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_LCMsgActionResp_Lucky9_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_LCMsgActionResp_Lucky9_2eproto}, {}};
 
 static void InitDefaultsscc_info_LCMsgEndPlayerInfo_Lucky9_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -107,9 +108,8 @@ static void InitDefaultsscc_info_LCMsgEndPlayerInfo_Lucky9_2eproto() {
   }
 }
 
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_LCMsgEndPlayerInfo_Lucky9_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_LCMsgEndPlayerInfo_Lucky9_2eproto}, {
-      &scc_info_LCMsgHandCards_Lucky9_2eproto.base,}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_LCMsgEndPlayerInfo_Lucky9_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_LCMsgEndPlayerInfo_Lucky9_2eproto}, {}};
 
 static void InitDefaultsscc_info_LCMsgGameResult_Lucky9_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -137,19 +137,6 @@ static void InitDefaultsscc_info_LCMsgGameStartResp_Lucky9_2eproto() {
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_LCMsgGameStartResp_Lucky9_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_LCMsgGameStartResp_Lucky9_2eproto}, {}};
-
-static void InitDefaultsscc_info_LCMsgGetCardResp_Lucky9_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::Lucky9::_LCMsgGetCardResp_default_instance_;
-    new (ptr) ::Lucky9::LCMsgGetCardResp();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_LCMsgGetCardResp_Lucky9_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_LCMsgGetCardResp_Lucky9_2eproto}, {}};
 
 static void InitDefaultsscc_info_LCMsgHandCards_Lucky9_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -218,6 +205,20 @@ static void InitDefaultsscc_info_LCMsgSceneInfo_Lucky9_2eproto() {
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_LCMsgSceneInfo_Lucky9_2eproto}, {
       &scc_info_LCMsgPlayerInfo_Lucky9_2eproto.base,}};
 
+static void InitDefaultsscc_info_LCMsgSendCardInfo_Lucky9_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::Lucky9::_LCMsgSendCardInfo_default_instance_;
+    new (ptr) ::Lucky9::LCMsgSendCardInfo();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_LCMsgSendCardInfo_Lucky9_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_LCMsgSendCardInfo_Lucky9_2eproto}, {
+      &scc_info_LCMsgHandCards_Lucky9_2eproto.base,}};
+
 static void InitDefaultsscc_info_LCMsgSendCardResp_Lucky9_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -228,8 +229,9 @@ static void InitDefaultsscc_info_LCMsgSendCardResp_Lucky9_2eproto() {
   }
 }
 
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_LCMsgSendCardResp_Lucky9_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_LCMsgSendCardResp_Lucky9_2eproto}, {}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_LCMsgSendCardResp_Lucky9_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_LCMsgSendCardResp_Lucky9_2eproto}, {
+      &scc_info_LCMsgSendCardInfo_Lucky9_2eproto.base,}};
 
 static void InitDefaultsscc_info_LCMsgTableState_Lucky9_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -262,7 +264,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Lucky9_2eproto::offsets[] PROT
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgHandCards, type_),
-  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgHandCards, number_),
+  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgHandCards, card_sum_),
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgHandCards, cards_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgPlayerInfo, _internal_metadata_),
@@ -283,12 +285,10 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Lucky9_2eproto::offsets[] PROT
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgSceneInfo, max_score_),
-  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgSceneInfo, table_max_score_),
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgSceneInfo, cell_score_),
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgSceneInfo, table_state_),
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgSceneInfo, table_ronud_),
-  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgSceneInfo, total_bet_score_),
+  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgSceneInfo, total_enter_gold_),
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgSceneInfo, banker_chair_id_),
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgSceneInfo, out_time_),
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgSceneInfo, total_time_),
@@ -298,13 +298,11 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Lucky9_2eproto::offsets[] PROT
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgGameStartResp, table_ronud_),
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgGameStartResp, total_enter_gold_),
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgGameStartResp, cur_enter_gold_),
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgGameStartResp, banker_chair_id_),
-  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgGameStartResp, noe_card_),
+  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgGameStartResp, one_card_),
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgGameStartResp, play_index_),
-  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgGameStartResp, player_new_score_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgNotifyActionResp, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -319,43 +317,44 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Lucky9_2eproto::offsets[] PROT
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgAction, act_),
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgAction, bet_score_),
+  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgAction, is_get_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgActionResp, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgActionResp, act_),
+  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgActionResp, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgActionResp, bet_score_),
+  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgActionResp, is_get_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgSendCardInfo, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgSendCardInfo, chair_id_),
+  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgSendCardInfo, hand_cards_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgSendCardResp, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgSendCardResp, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgSendCardResp, card_type_),
-  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgSendCardResp, cards_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgGetCardResp, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgGetCardResp, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgGetCardResp, is_get_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgAddBetResp, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgAddBetResp, add_chair_id_),
-  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgAddBetResp, add_score_),
+  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgSendCardResp, infos_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgEndPlayerInfo, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgEndPlayerInfo, chair_id_),
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgEndPlayerInfo, game_score_),
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgEndPlayerInfo, tax_),
-  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgEndPlayerInfo, type_),
-  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgEndPlayerInfo, number_),
-  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgEndPlayerInfo, cards_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgGameResult, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgGameResult, bisect_gold_),
+  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgGameResult, bisect_list_),
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgGameResult, players_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgNotifyPlayerAct, _internal_metadata_),
@@ -370,15 +369,15 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 7, -1, sizeof(::Lucky9::LCMsgHandCards)},
   { 15, -1, sizeof(::Lucky9::LCMsgPlayerInfo)},
   { 29, -1, sizeof(::Lucky9::LCMsgSceneInfo)},
-  { 44, -1, sizeof(::Lucky9::LCMsgGameStartResp)},
-  { 56, -1, sizeof(::Lucky9::LCMsgNotifyActionResp)},
-  { 63, -1, sizeof(::Lucky9::LCMsgAction)},
-  { 70, -1, sizeof(::Lucky9::LCMsgSendCardResp)},
-  { 78, -1, sizeof(::Lucky9::LCMsgGetCardResp)},
-  { 85, -1, sizeof(::Lucky9::LCMsgAddBetResp)},
-  { 92, -1, sizeof(::Lucky9::LCMsgEndPlayerInfo)},
-  { 102, -1, sizeof(::Lucky9::LCMsgGameResult)},
-  { 108, -1, sizeof(::Lucky9::LCMsgNotifyPlayerAct)},
+  { 42, -1, sizeof(::Lucky9::LCMsgGameStartResp)},
+  { 52, -1, sizeof(::Lucky9::LCMsgNotifyActionResp)},
+  { 59, -1, sizeof(::Lucky9::LCMsgAction)},
+  { 67, -1, sizeof(::Lucky9::LCMsgActionResp)},
+  { 76, -1, sizeof(::Lucky9::LCMsgSendCardInfo)},
+  { 83, -1, sizeof(::Lucky9::LCMsgSendCardResp)},
+  { 89, -1, sizeof(::Lucky9::LCMsgEndPlayerInfo)},
+  { 97, -1, sizeof(::Lucky9::LCMsgGameResult)},
+  { 105, -1, sizeof(::Lucky9::LCMsgNotifyPlayerAct)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -389,9 +388,9 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Lucky9::_LCMsgGameStartResp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Lucky9::_LCMsgNotifyActionResp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Lucky9::_LCMsgAction_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Lucky9::_LCMsgActionResp_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Lucky9::_LCMsgSendCardInfo_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Lucky9::_LCMsgSendCardResp_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Lucky9::_LCMsgGetCardResp_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Lucky9::_LCMsgAddBetResp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Lucky9::_LCMsgEndPlayerInfo_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Lucky9::_LCMsgGameResult_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::Lucky9::_LCMsgNotifyPlayerAct_default_instance_),
@@ -399,83 +398,81 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
 
 const char descriptor_table_protodef_Lucky9_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n\014Lucky9.proto\022\006Lucky9\"1\n\017LCMsgTableStat"
-  "e\022\r\n\005state\030\001 \001(\005\022\017\n\007out_ime\030\002 \001(\005\"=\n\016LCM"
-  "sgHandCards\022\014\n\004type\030\001 \001(\005\022\016\n\006number\030\002 \001("
-  "\005\022\r\n\005cards\030\003 \003(\005\"\314\001\n\017LCMsgPlayerInfo\022\020\n\010"
-  "chair_id\030\001 \001(\005\022\023\n\013play_status\030\002 \001(\005\022\022\n\np"
-  "layer_bet\030\003 \001(\003\022\021\n\tcard_type\030\004 \001(\005\022\020\n\010ge"
-  "t_card\030\005 \001(\005\022\014\n\004gold\030\006 \001(\003\022\020\n\010win_gold\030\007"
-  " \001(\003\022\021\n\twin_conut\030\010 \001(\003\022&\n\006handls\030\t \001(\0132"
-  "\026.Lucky9.LCMsgHandCards\"\201\002\n\016LCMsgSceneIn"
-  "fo\022\021\n\tmax_score\030\001 \001(\003\022\027\n\017table_max_score"
-  "\030\002 \001(\003\022\022\n\ncell_score\030\003 \001(\003\022\023\n\013table_stat"
-  "e\030\004 \001(\005\022\023\n\013table_ronud\030\005 \001(\005\022\027\n\017total_be"
-  "t_score\030\006 \001(\003\022\027\n\017banker_chair_id\030\010 \001(\005\022\020"
-  "\n\010out_time\030\013 \001(\005\022\022\n\ntotal_time\030\014 \001(\005\022-\n\014"
-  "player_infos\030\017 \003(\0132\027.Lucky9.LCMsgPlayerI"
-  "nfo\"\264\001\n\022LCMsgGameStartResp\022\023\n\013table_ronu"
-  "d\030\001 \001(\005\022\030\n\020total_enter_gold\030\002 \001(\005\022\026\n\016cur"
-  "_enter_gold\030\003 \001(\005\022\027\n\017banker_chair_id\030\004 \001"
-  "(\005\022\020\n\010noe_card\030\005 \001(\005\022\022\n\nplay_index\030\010 \003(\005"
-  "\022\030\n\020player_new_score\030\t \003(\003\"\?\n\025LCMsgNotif"
-  "yActionResp\022\023\n\013current_act\030\003 \001(\005\022\021\n\toper"
-  "_time\030\004 \001(\005\"-\n\013LCMsgAction\022\013\n\003act\030\001 \001(\005\022"
-  "\021\n\tbet_score\030\002 \001(\003\"G\n\021LCMsgSendCardResp\022"
-  "\020\n\010chair_id\030\001 \001(\005\022\021\n\tcard_type\030\002 \001(\005\022\r\n\005"
-  "cards\030\005 \003(\005\"4\n\020LCMsgGetCardResp\022\020\n\010chair"
-  "_id\030\001 \001(\005\022\016\n\006is_get\030\002 \001(\005\":\n\017LCMsgAddBet"
-  "Resp\022\024\n\014add_chair_id\030\001 \001(\005\022\021\n\tadd_score\030"
-  "\002 \001(\003\"z\n\022LCMsgEndPlayerInfo\022\022\n\ngame_scor"
-  "e\030\001 \001(\003\022\013\n\003tax\030\002 \001(\003\022\014\n\004type\030\003 \001(\003\022\016\n\006nu"
-  "mber\030\004 \001(\003\022%\n\005cards\030\005 \001(\0132\026.Lucky9.LCMsg"
-  "HandCards\">\n\017LCMsgGameResult\022+\n\007players\030"
-  "\001 \003(\0132\032.Lucky9.LCMsgEndPlayerInfo\"5\n\024LCM"
-  "sgNotifyPlayerAct\022\020\n\010chair_id\030\001 \001(\005\022\013\n\003a"
-  "ct\030\002 \001(\005*\235\001\n\017ELCMsgGameState\022\020\n\014GS_LC9_R"
-  "EADY\020\000\022\020\n\014GS_LC9_START\020\001\022\016\n\nGS_LC9_BET\020\002"
-  "\022\024\n\020GS_LC9_SEND_CARD\020\003\022\023\n\017GS_LC9_GET_CAR"
-  "D\020\004\022\030\n\024GS_LC9_TWO_SEND_CARD\020\005\022\021\n\rGS_LC9_"
-  "RESULT\020\006*>\n\021ELCMsgPlayerState\022\014\n\010PS_READ"
-  "Y\020\000\022\013\n\007PS_PLAY\020\001\022\016\n\nPS_TIMEOUT\020\002*5\n\016ELCM"
-  "sgCardType\022\r\n\tLC_SINGLE\020\000\022\010\n\004LC_9\020\001\022\n\n\006L"
-  "C_MAX\020\002*G\n\020ELCMsgGameAction\022\r\n\tInvaldAct"
-  "\020\000\022\n\n\006AddBet\020\001\022\013\n\007GetCard\020\002\022\013\n\007NotCard\020\004"
-  "*\266\004\n\017ELCMsgIDSubGame\022\025\n\021MsgIDSubGame_Nul"
-  "l\020\000\022\036\n\032MsgIDSubGame_GameStartResp\020\001\022!\n\035M"
-  "sgIDSubGame_NotifyActionResp\020\002\022\027\n\023MsgIDS"
-  "ubGame_Action\020\003\022\033\n\027MsgIDSubGame_AddBetRe"
-  "sp\020\004\022\035\n\031MsgIDSubGame_SendCardResp\020\005\022\034\n\030M"
-  "sgIDSubGame_GetCardResp\020\006\022\037\n\033MsgIDSubGam"
-  "e_GameResultResp\020\t\022 \n\034MsgIDSubGame_Notif"
-  "yStateResp\020\n\022\034\n\030MsgIDSubGame_TimeOutResp"
-  "\020\013\022\035\n\031MsgIDSubGame_TimeOutReady\020\014\022!\n\035Msg"
-  "IDSubGame_TimeOutReadyResp\020\r\022 \n\034MsgIDSub"
-  "Game_TimeOutKickResp\020\016\022&\n\"MsgIDSubGame_N"
-  "otifySystemCheatResp\020\024\022#\n\037MsgIDSubGame_N"
-  "otifyCardTypeResp\020\025\022 \n\034MsgIDSubGame_Noti"
-  "fyIsMaxResp\020\026\022\"\n\036MsgIDSubGame_NotifyLast"
-  "ActResp\020\027b\006proto3"
+  "e\022\r\n\005state\030\001 \001(\005\022\017\n\007out_ime\030\002 \001(\005\"\?\n\016LCM"
+  "sgHandCards\022\014\n\004type\030\001 \001(\005\022\020\n\010card_sum\030\002 "
+  "\001(\005\022\r\n\005cards\030\003 \003(\005\"\314\001\n\017LCMsgPlayerInfo\022\020"
+  "\n\010chair_id\030\001 \001(\005\022\023\n\013play_status\030\002 \001(\005\022\022\n"
+  "\nplayer_bet\030\003 \001(\003\022\021\n\tcard_type\030\004 \001(\005\022\020\n\010"
+  "get_card\030\005 \001(\005\022\014\n\004gold\030\006 \001(\003\022\020\n\010win_gold"
+  "\030\007 \001(\003\022\021\n\twin_conut\030\010 \001(\003\022&\n\006handls\030\t \001("
+  "\0132\026.Lucky9.LCMsgHandCards\"\326\001\n\016LCMsgScene"
+  "Info\022\022\n\ncell_score\030\001 \001(\003\022\023\n\013table_state\030"
+  "\002 \001(\005\022\023\n\013table_ronud\030\003 \001(\005\022\030\n\020total_ente"
+  "r_gold\030\004 \001(\003\022\027\n\017banker_chair_id\030\n \001(\005\022\020\n"
+  "\010out_time\030\013 \001(\005\022\022\n\ntotal_time\030\014 \001(\005\022-\n\014p"
+  "layer_infos\030\017 \003(\0132\027.Lucky9.LCMsgPlayerIn"
+  "fo\"\205\001\n\022LCMsgGameStartResp\022\030\n\020total_enter"
+  "_gold\030\002 \001(\005\022\026\n\016cur_enter_gold\030\003 \001(\005\022\027\n\017b"
+  "anker_chair_id\030\004 \001(\005\022\020\n\010one_card\030\005 \001(\005\022\022"
+  "\n\nplay_index\030\010 \003(\005\"\?\n\025LCMsgNotifyActionR"
+  "esp\022\023\n\013current_act\030\003 \001(\005\022\021\n\toper_time\030\004 "
+  "\001(\005\"=\n\013LCMsgAction\022\013\n\003act\030\001 \001(\005\022\021\n\tbet_s"
+  "core\030\002 \001(\003\022\016\n\006is_get\030\003 \001(\010\"S\n\017LCMsgActio"
+  "nResp\022\013\n\003act\030\001 \001(\005\022\020\n\010chair_id\030\002 \001(\005\022\021\n\t"
+  "bet_score\030\003 \001(\003\022\016\n\006is_get\030\004 \001(\010\"Q\n\021LCMsg"
+  "SendCardInfo\022\020\n\010chair_id\030\001 \001(\005\022*\n\nhand_c"
+  "ards\030\002 \001(\0132\026.Lucky9.LCMsgHandCards\"=\n\021LC"
+  "MsgSendCardResp\022(\n\005infos\030\001 \003(\0132\031.Lucky9."
+  "LCMsgSendCardInfo\"G\n\022LCMsgEndPlayerInfo\022"
+  "\020\n\010chair_id\030\001 \001(\005\022\022\n\ngame_score\030\002 \001(\003\022\013\n"
+  "\003tax\030\003 \001(\003\"h\n\017LCMsgGameResult\022\023\n\013bisect_"
+  "gold\030\001 \001(\003\022\023\n\013bisect_list\030\002 \003(\005\022+\n\007playe"
+  "rs\030\003 \003(\0132\032.Lucky9.LCMsgEndPlayerInfo\"5\n\024"
+  "LCMsgNotifyPlayerAct\022\020\n\010chair_id\030\001 \001(\005\022\013"
+  "\n\003act\030\002 \001(\005*\235\001\n\017ELCMsgGameState\022\020\n\014GS_LC"
+  "9_READY\020\000\022\020\n\014GS_LC9_START\020\001\022\016\n\nGS_LC9_BE"
+  "T\020\002\022\024\n\020GS_LC9_SEND_CARD\020\003\022\023\n\017GS_LC9_GET_"
+  "CARD\020\004\022\030\n\024GS_LC9_TWO_SEND_CARD\020\005\022\021\n\rGS_L"
+  "C9_RESULT\020\006*>\n\021ELCMsgPlayerState\022\014\n\010PS_R"
+  "EADY\020\000\022\013\n\007PS_PLAY\020\001\022\016\n\nPS_TIMEOUT\020\002*)\n\016E"
+  "LCMsgCardType\022\r\n\tLC_SINGLE\020\000\022\010\n\004LC_9\020\001*G"
+  "\n\020ELCMsgGameAction\022\r\n\tInvaldAct\020\000\022\n\n\006Add"
+  "Bet\020\001\022\013\n\007GetCard\020\002\022\013\n\007NotCard\020\004*\230\004\n\017ELCM"
+  "sgIDSubGame\022\025\n\021MsgIDSubGame_Null\020\000\022\036\n\032Ms"
+  "gIDSubGame_GameStartResp\020\001\022!\n\035MsgIDSubGa"
+  "me_NotifyActionResp\020\002\022\027\n\023MsgIDSubGame_Ac"
+  "tion\020\003\022\033\n\027MsgIDSubGame_AddBetResp\020\004\022\035\n\031M"
+  "sgIDSubGame_SendCardResp\020\005\022\037\n\033MsgIDSubGa"
+  "me_GameResultResp\020\t\022 \n\034MsgIDSubGame_Noti"
+  "fyStateResp\020\n\022\034\n\030MsgIDSubGame_TimeOutRes"
+  "p\020\013\022\035\n\031MsgIDSubGame_TimeOutReady\020\014\022!\n\035Ms"
+  "gIDSubGame_TimeOutReadyResp\020\r\022 \n\034MsgIDSu"
+  "bGame_TimeOutKickResp\020\016\022&\n\"MsgIDSubGame_"
+  "NotifySystemCheatResp\020\024\022#\n\037MsgIDSubGame_"
+  "NotifyCardTypeResp\020\025\022 \n\034MsgIDSubGame_Not"
+  "ifyIsMaxResp\020\026\022\"\n\036MsgIDSubGame_NotifyLas"
+  "tActResp\020\027b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Lucky9_2eproto_deps[1] = {
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Lucky9_2eproto_sccs[13] = {
   &scc_info_LCMsgAction_Lucky9_2eproto.base,
-  &scc_info_LCMsgAddBetResp_Lucky9_2eproto.base,
+  &scc_info_LCMsgActionResp_Lucky9_2eproto.base,
   &scc_info_LCMsgEndPlayerInfo_Lucky9_2eproto.base,
   &scc_info_LCMsgGameResult_Lucky9_2eproto.base,
   &scc_info_LCMsgGameStartResp_Lucky9_2eproto.base,
-  &scc_info_LCMsgGetCardResp_Lucky9_2eproto.base,
   &scc_info_LCMsgHandCards_Lucky9_2eproto.base,
   &scc_info_LCMsgNotifyActionResp_Lucky9_2eproto.base,
   &scc_info_LCMsgNotifyPlayerAct_Lucky9_2eproto.base,
   &scc_info_LCMsgPlayerInfo_Lucky9_2eproto.base,
   &scc_info_LCMsgSceneInfo_Lucky9_2eproto.base,
+  &scc_info_LCMsgSendCardInfo_Lucky9_2eproto.base,
   &scc_info_LCMsgSendCardResp_Lucky9_2eproto.base,
   &scc_info_LCMsgTableState_Lucky9_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Lucky9_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Lucky9_2eproto = {
-  false, false, descriptor_table_protodef_Lucky9_2eproto, "Lucky9.proto", 2257,
+  false, false, descriptor_table_protodef_Lucky9_2eproto, "Lucky9.proto", 2178,
   &descriptor_table_Lucky9_2eproto_once, descriptor_table_Lucky9_2eproto_sccs, descriptor_table_Lucky9_2eproto_deps, 13, 0,
   schemas, file_default_instances, TableStruct_Lucky9_2eproto::offsets,
   file_level_metadata_Lucky9_2eproto, 13, file_level_enum_descriptors_Lucky9_2eproto, file_level_service_descriptors_Lucky9_2eproto,
@@ -526,7 +523,6 @@ bool ELCMsgCardType_IsValid(int value) {
   switch (value) {
     case 0:
     case 1:
-    case 2:
       return true;
     default:
       return false;
@@ -561,7 +557,6 @@ bool ELCMsgIDSubGame_IsValid(int value) {
     case 3:
     case 4:
     case 5:
-    case 6:
     case 9:
     case 10:
     case 11:
@@ -826,16 +821,16 @@ LCMsgHandCards::LCMsgHandCards(const LCMsgHandCards& from)
       cards_(from.cards_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&type_, &from.type_,
-    static_cast<size_t>(reinterpret_cast<char*>(&number_) -
-    reinterpret_cast<char*>(&type_)) + sizeof(number_));
+    static_cast<size_t>(reinterpret_cast<char*>(&card_sum_) -
+    reinterpret_cast<char*>(&type_)) + sizeof(card_sum_));
   // @@protoc_insertion_point(copy_constructor:Lucky9.LCMsgHandCards)
 }
 
 void LCMsgHandCards::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&type_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&number_) -
-      reinterpret_cast<char*>(&type_)) + sizeof(number_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&card_sum_) -
+      reinterpret_cast<char*>(&type_)) + sizeof(card_sum_));
 }
 
 LCMsgHandCards::~LCMsgHandCards() {
@@ -871,8 +866,8 @@ void LCMsgHandCards::Clear() {
 
   cards_.Clear();
   ::memset(&type_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&number_) -
-      reinterpret_cast<char*>(&type_)) + sizeof(number_));
+      reinterpret_cast<char*>(&card_sum_) -
+      reinterpret_cast<char*>(&type_)) + sizeof(card_sum_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -890,10 +885,10 @@ const char* LCMsgHandCards::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 number = 2;
+      // int32 card_sum = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          number_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          card_sum_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -941,10 +936,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_type(), target);
   }
 
-  // int32 number = 2;
-  if (this->number() != 0) {
+  // int32 card_sum = 2;
+  if (this->card_sum() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_number(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_card_sum(), target);
   }
 
   // repeated int32 cards = 3;
@@ -994,11 +989,11 @@ size_t LCMsgHandCards::ByteSizeLong() const {
         this->_internal_type());
   }
 
-  // int32 number = 2;
-  if (this->number() != 0) {
+  // int32 card_sum = 2;
+  if (this->card_sum() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_number());
+        this->_internal_card_sum());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1036,8 +1031,8 @@ void LCMsgHandCards::MergeFrom(const LCMsgHandCards& from) {
   if (from.type() != 0) {
     _internal_set_type(from._internal_type());
   }
-  if (from.number() != 0) {
-    _internal_set_number(from._internal_number());
+  if (from.card_sum() != 0) {
+    _internal_set_card_sum(from._internal_card_sum());
   }
 }
 
@@ -1064,8 +1059,8 @@ void LCMsgHandCards::InternalSwap(LCMsgHandCards* other) {
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   cards_.InternalSwap(&other->cards_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(LCMsgHandCards, number_)
-      + sizeof(LCMsgHandCards::number_)
+      PROTOBUF_FIELD_OFFSET(LCMsgHandCards, card_sum_)
+      + sizeof(LCMsgHandCards::card_sum_)
       - PROTOBUF_FIELD_OFFSET(LCMsgHandCards, type_)>(
           reinterpret_cast<char*>(&type_),
           reinterpret_cast<char*>(&other->type_));
@@ -1501,18 +1496,18 @@ LCMsgSceneInfo::LCMsgSceneInfo(const LCMsgSceneInfo& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       player_infos_(from.player_infos_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&max_score_, &from.max_score_,
-    static_cast<size_t>(reinterpret_cast<char*>(&total_time_) -
-    reinterpret_cast<char*>(&max_score_)) + sizeof(total_time_));
+  ::memcpy(&cell_score_, &from.cell_score_,
+    static_cast<size_t>(reinterpret_cast<char*>(&out_time_) -
+    reinterpret_cast<char*>(&cell_score_)) + sizeof(out_time_));
   // @@protoc_insertion_point(copy_constructor:Lucky9.LCMsgSceneInfo)
 }
 
 void LCMsgSceneInfo::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_LCMsgSceneInfo_Lucky9_2eproto.base);
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&max_score_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&total_time_) -
-      reinterpret_cast<char*>(&max_score_)) + sizeof(total_time_));
+      reinterpret_cast<char*>(&cell_score_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&out_time_) -
+      reinterpret_cast<char*>(&cell_score_)) + sizeof(out_time_));
 }
 
 LCMsgSceneInfo::~LCMsgSceneInfo() {
@@ -1547,9 +1542,9 @@ void LCMsgSceneInfo::Clear() {
   (void) cached_has_bits;
 
   player_infos_.Clear();
-  ::memset(&max_score_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&total_time_) -
-      reinterpret_cast<char*>(&max_score_)) + sizeof(total_time_));
+  ::memset(&cell_score_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&out_time_) -
+      reinterpret_cast<char*>(&cell_score_)) + sizeof(out_time_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -1560,51 +1555,37 @@ const char* LCMsgSceneInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // int64 max_score = 1;
+      // int64 cell_score = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          max_score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int64 table_max_score = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          table_max_score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int64 cell_score = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           cell_score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 table_state = 4;
-      case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+      // int32 table_state = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           table_state_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 table_ronud = 5;
-      case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+      // int32 table_ronud = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           table_ronud_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int64 total_bet_score = 6;
-      case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
-          total_bet_score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+      // int64 total_enter_gold = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          total_enter_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 banker_chair_id = 8;
-      case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+      // int32 banker_chair_id = 10;
+      case 10:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
           banker_chair_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
@@ -1663,46 +1644,34 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int64 max_score = 1;
-  if (this->max_score() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_max_score(), target);
-  }
-
-  // int64 table_max_score = 2;
-  if (this->table_max_score() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_table_max_score(), target);
-  }
-
-  // int64 cell_score = 3;
+  // int64 cell_score = 1;
   if (this->cell_score() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_cell_score(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_cell_score(), target);
   }
 
-  // int32 table_state = 4;
+  // int32 table_state = 2;
   if (this->table_state() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_table_state(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_table_state(), target);
   }
 
-  // int32 table_ronud = 5;
+  // int32 table_ronud = 3;
   if (this->table_ronud() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_table_ronud(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_table_ronud(), target);
   }
 
-  // int64 total_bet_score = 6;
-  if (this->total_bet_score() != 0) {
+  // int64 total_enter_gold = 4;
+  if (this->total_enter_gold() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(6, this->_internal_total_bet_score(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_total_enter_gold(), target);
   }
 
-  // int32 banker_chair_id = 8;
+  // int32 banker_chair_id = 10;
   if (this->banker_chair_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(8, this->_internal_banker_chair_id(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(10, this->_internal_banker_chair_id(), target);
   }
 
   // int32 out_time = 11;
@@ -1748,49 +1717,42 @@ size_t LCMsgSceneInfo::ByteSizeLong() const {
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  // int64 max_score = 1;
-  if (this->max_score() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_max_score());
-  }
-
-  // int64 table_max_score = 2;
-  if (this->table_max_score() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_table_max_score());
-  }
-
-  // int64 cell_score = 3;
+  // int64 cell_score = 1;
   if (this->cell_score() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_cell_score());
   }
 
-  // int32 table_state = 4;
+  // int32 table_state = 2;
   if (this->table_state() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_table_state());
   }
 
-  // int32 table_ronud = 5;
+  // int32 table_ronud = 3;
   if (this->table_ronud() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_table_ronud());
   }
 
-  // int64 total_bet_score = 6;
-  if (this->total_bet_score() != 0) {
+  // int64 total_enter_gold = 4;
+  if (this->total_enter_gold() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_total_bet_score());
+        this->_internal_total_enter_gold());
   }
 
-  // int32 banker_chair_id = 8;
+  // int32 total_time = 12;
+  if (this->total_time() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_total_time());
+  }
+
+  // int32 banker_chair_id = 10;
   if (this->banker_chair_id() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
@@ -1802,13 +1764,6 @@ size_t LCMsgSceneInfo::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_out_time());
-  }
-
-  // int32 total_time = 12;
-  if (this->total_time() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_total_time());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1843,12 +1798,6 @@ void LCMsgSceneInfo::MergeFrom(const LCMsgSceneInfo& from) {
   (void) cached_has_bits;
 
   player_infos_.MergeFrom(from.player_infos_);
-  if (from.max_score() != 0) {
-    _internal_set_max_score(from._internal_max_score());
-  }
-  if (from.table_max_score() != 0) {
-    _internal_set_table_max_score(from._internal_table_max_score());
-  }
   if (from.cell_score() != 0) {
     _internal_set_cell_score(from._internal_cell_score());
   }
@@ -1858,17 +1807,17 @@ void LCMsgSceneInfo::MergeFrom(const LCMsgSceneInfo& from) {
   if (from.table_ronud() != 0) {
     _internal_set_table_ronud(from._internal_table_ronud());
   }
-  if (from.total_bet_score() != 0) {
-    _internal_set_total_bet_score(from._internal_total_bet_score());
+  if (from.total_enter_gold() != 0) {
+    _internal_set_total_enter_gold(from._internal_total_enter_gold());
+  }
+  if (from.total_time() != 0) {
+    _internal_set_total_time(from._internal_total_time());
   }
   if (from.banker_chair_id() != 0) {
     _internal_set_banker_chair_id(from._internal_banker_chair_id());
   }
   if (from.out_time() != 0) {
     _internal_set_out_time(from._internal_out_time());
-  }
-  if (from.total_time() != 0) {
-    _internal_set_total_time(from._internal_total_time());
   }
 }
 
@@ -1895,11 +1844,11 @@ void LCMsgSceneInfo::InternalSwap(LCMsgSceneInfo* other) {
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   player_infos_.InternalSwap(&other->player_infos_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(LCMsgSceneInfo, total_time_)
-      + sizeof(LCMsgSceneInfo::total_time_)
-      - PROTOBUF_FIELD_OFFSET(LCMsgSceneInfo, max_score_)>(
-          reinterpret_cast<char*>(&max_score_),
-          reinterpret_cast<char*>(&other->max_score_));
+      PROTOBUF_FIELD_OFFSET(LCMsgSceneInfo, out_time_)
+      + sizeof(LCMsgSceneInfo::out_time_)
+      - PROTOBUF_FIELD_OFFSET(LCMsgSceneInfo, cell_score_)>(
+          reinterpret_cast<char*>(&cell_score_),
+          reinterpret_cast<char*>(&other->cell_score_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata LCMsgSceneInfo::GetMetadata() const {
@@ -1915,28 +1864,26 @@ class LCMsgGameStartResp::_Internal {
 
 LCMsgGameStartResp::LCMsgGameStartResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  play_index_(arena),
-  player_new_score_(arena) {
+  play_index_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:Lucky9.LCMsgGameStartResp)
 }
 LCMsgGameStartResp::LCMsgGameStartResp(const LCMsgGameStartResp& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      play_index_(from.play_index_),
-      player_new_score_(from.player_new_score_) {
+      play_index_(from.play_index_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&table_ronud_, &from.table_ronud_,
-    static_cast<size_t>(reinterpret_cast<char*>(&noe_card_) -
-    reinterpret_cast<char*>(&table_ronud_)) + sizeof(noe_card_));
+  ::memcpy(&total_enter_gold_, &from.total_enter_gold_,
+    static_cast<size_t>(reinterpret_cast<char*>(&one_card_) -
+    reinterpret_cast<char*>(&total_enter_gold_)) + sizeof(one_card_));
   // @@protoc_insertion_point(copy_constructor:Lucky9.LCMsgGameStartResp)
 }
 
 void LCMsgGameStartResp::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&table_ronud_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&noe_card_) -
-      reinterpret_cast<char*>(&table_ronud_)) + sizeof(noe_card_));
+      reinterpret_cast<char*>(&total_enter_gold_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&one_card_) -
+      reinterpret_cast<char*>(&total_enter_gold_)) + sizeof(one_card_));
 }
 
 LCMsgGameStartResp::~LCMsgGameStartResp() {
@@ -1971,10 +1918,9 @@ void LCMsgGameStartResp::Clear() {
   (void) cached_has_bits;
 
   play_index_.Clear();
-  player_new_score_.Clear();
-  ::memset(&table_ronud_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&noe_card_) -
-      reinterpret_cast<char*>(&table_ronud_)) + sizeof(noe_card_));
+  ::memset(&total_enter_gold_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&one_card_) -
+      reinterpret_cast<char*>(&total_enter_gold_)) + sizeof(one_card_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -1985,13 +1931,6 @@ const char* LCMsgGameStartResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // int32 table_ronud = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          table_ronud_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
       // int32 total_enter_gold = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
@@ -2013,10 +1952,10 @@ const char* LCMsgGameStartResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 noe_card = 5;
+      // int32 one_card = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
-          noe_card_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          one_card_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2027,16 +1966,6 @@ const char* LCMsgGameStartResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
           CHK_(ptr);
         } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64) {
           _internal_add_play_index(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // repeated int64 player_new_score = 9;
-      case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt64Parser(_internal_mutable_player_new_score(), ptr, ctx);
-          CHK_(ptr);
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72) {
-          _internal_add_player_new_score(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2068,12 +1997,6 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 table_ronud = 1;
-  if (this->table_ronud() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_table_ronud(), target);
-  }
-
   // int32 total_enter_gold = 2;
   if (this->total_enter_gold() != 0) {
     target = stream->EnsureSpace(target);
@@ -2092,10 +2015,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_banker_chair_id(), target);
   }
 
-  // int32 noe_card = 5;
-  if (this->noe_card() != 0) {
+  // int32 one_card = 5;
+  if (this->one_card() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_noe_card(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_one_card(), target);
   }
 
   // repeated int32 play_index = 8;
@@ -2104,15 +2027,6 @@ failure:
     if (byte_size > 0) {
       target = stream->WriteInt32Packed(
           8, _internal_play_index(), byte_size, target);
-    }
-  }
-
-  // repeated int64 player_new_score = 9;
-  {
-    int byte_size = _player_new_score_cached_byte_size_.load(std::memory_order_relaxed);
-    if (byte_size > 0) {
-      target = stream->WriteInt64Packed(
-          9, _internal_player_new_score(), byte_size, target);
     }
   }
 
@@ -2147,28 +2061,6 @@ size_t LCMsgGameStartResp::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  // repeated int64 player_new_score = 9;
-  {
-    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      Int64Size(this->player_new_score_);
-    if (data_size > 0) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
-    }
-    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
-    _player_new_score_cached_byte_size_.store(cached_size,
-                                    std::memory_order_relaxed);
-    total_size += data_size;
-  }
-
-  // int32 table_ronud = 1;
-  if (this->table_ronud() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_table_ronud());
-  }
-
   // int32 total_enter_gold = 2;
   if (this->total_enter_gold() != 0) {
     total_size += 1 +
@@ -2190,11 +2082,11 @@ size_t LCMsgGameStartResp::ByteSizeLong() const {
         this->_internal_banker_chair_id());
   }
 
-  // int32 noe_card = 5;
-  if (this->noe_card() != 0) {
+  // int32 one_card = 5;
+  if (this->one_card() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_noe_card());
+        this->_internal_one_card());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -2229,10 +2121,6 @@ void LCMsgGameStartResp::MergeFrom(const LCMsgGameStartResp& from) {
   (void) cached_has_bits;
 
   play_index_.MergeFrom(from.play_index_);
-  player_new_score_.MergeFrom(from.player_new_score_);
-  if (from.table_ronud() != 0) {
-    _internal_set_table_ronud(from._internal_table_ronud());
-  }
   if (from.total_enter_gold() != 0) {
     _internal_set_total_enter_gold(from._internal_total_enter_gold());
   }
@@ -2242,8 +2130,8 @@ void LCMsgGameStartResp::MergeFrom(const LCMsgGameStartResp& from) {
   if (from.banker_chair_id() != 0) {
     _internal_set_banker_chair_id(from._internal_banker_chair_id());
   }
-  if (from.noe_card() != 0) {
-    _internal_set_noe_card(from._internal_noe_card());
+  if (from.one_card() != 0) {
+    _internal_set_one_card(from._internal_one_card());
   }
 }
 
@@ -2269,13 +2157,12 @@ void LCMsgGameStartResp::InternalSwap(LCMsgGameStartResp* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   play_index_.InternalSwap(&other->play_index_);
-  player_new_score_.InternalSwap(&other->player_new_score_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(LCMsgGameStartResp, noe_card_)
-      + sizeof(LCMsgGameStartResp::noe_card_)
-      - PROTOBUF_FIELD_OFFSET(LCMsgGameStartResp, table_ronud_)>(
-          reinterpret_cast<char*>(&table_ronud_),
-          reinterpret_cast<char*>(&other->table_ronud_));
+      PROTOBUF_FIELD_OFFSET(LCMsgGameStartResp, one_card_)
+      + sizeof(LCMsgGameStartResp::one_card_)
+      - PROTOBUF_FIELD_OFFSET(LCMsgGameStartResp, total_enter_gold_)>(
+          reinterpret_cast<char*>(&total_enter_gold_),
+          reinterpret_cast<char*>(&other->total_enter_gold_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata LCMsgGameStartResp::GetMetadata() const {
@@ -2528,16 +2415,16 @@ LCMsgAction::LCMsgAction(const LCMsgAction& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&bet_score_, &from.bet_score_,
-    static_cast<size_t>(reinterpret_cast<char*>(&act_) -
-    reinterpret_cast<char*>(&bet_score_)) + sizeof(act_));
+    static_cast<size_t>(reinterpret_cast<char*>(&is_get_) -
+    reinterpret_cast<char*>(&bet_score_)) + sizeof(is_get_));
   // @@protoc_insertion_point(copy_constructor:Lucky9.LCMsgAction)
 }
 
 void LCMsgAction::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&bet_score_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&act_) -
-      reinterpret_cast<char*>(&bet_score_)) + sizeof(act_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&is_get_) -
+      reinterpret_cast<char*>(&bet_score_)) + sizeof(is_get_));
 }
 
 LCMsgAction::~LCMsgAction() {
@@ -2572,8 +2459,8 @@ void LCMsgAction::Clear() {
   (void) cached_has_bits;
 
   ::memset(&bet_score_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&act_) -
-      reinterpret_cast<char*>(&bet_score_)) + sizeof(act_));
+      reinterpret_cast<char*>(&is_get_) -
+      reinterpret_cast<char*>(&bet_score_)) + sizeof(is_get_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -2595,6 +2482,13 @@ const char* LCMsgAction::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           bet_score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // bool is_get = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          is_get_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2638,6 +2532,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_bet_score(), target);
   }
 
+  // bool is_get = 3;
+  if (this->is_get() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_is_get(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -2666,6 +2566,11 @@ size_t LCMsgAction::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_act());
+  }
+
+  // bool is_get = 3;
+  if (this->is_get() != 0) {
+    total_size += 1 + 1;
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -2705,6 +2610,9 @@ void LCMsgAction::MergeFrom(const LCMsgAction& from) {
   if (from.act() != 0) {
     _internal_set_act(from._internal_act());
   }
+  if (from.is_get() != 0) {
+    _internal_set_is_get(from._internal_is_get());
+  }
 }
 
 void LCMsgAction::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -2729,8 +2637,8 @@ void LCMsgAction::InternalSwap(LCMsgAction* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(LCMsgAction, act_)
-      + sizeof(LCMsgAction::act_)
+      PROTOBUF_FIELD_OFFSET(LCMsgAction, is_get_)
+      + sizeof(LCMsgAction::is_get_)
       - PROTOBUF_FIELD_OFFSET(LCMsgAction, bet_score_)>(
           reinterpret_cast<char*>(&bet_score_),
           reinterpret_cast<char*>(&other->bet_score_));
@@ -2743,32 +2651,542 @@ void LCMsgAction::InternalSwap(LCMsgAction* other) {
 
 // ===================================================================
 
+class LCMsgActionResp::_Internal {
+ public:
+};
+
+LCMsgActionResp::LCMsgActionResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:Lucky9.LCMsgActionResp)
+}
+LCMsgActionResp::LCMsgActionResp(const LCMsgActionResp& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&act_, &from.act_,
+    static_cast<size_t>(reinterpret_cast<char*>(&is_get_) -
+    reinterpret_cast<char*>(&act_)) + sizeof(is_get_));
+  // @@protoc_insertion_point(copy_constructor:Lucky9.LCMsgActionResp)
+}
+
+void LCMsgActionResp::SharedCtor() {
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&act_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&is_get_) -
+      reinterpret_cast<char*>(&act_)) + sizeof(is_get_));
+}
+
+LCMsgActionResp::~LCMsgActionResp() {
+  // @@protoc_insertion_point(destructor:Lucky9.LCMsgActionResp)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void LCMsgActionResp::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void LCMsgActionResp::ArenaDtor(void* object) {
+  LCMsgActionResp* _this = reinterpret_cast< LCMsgActionResp* >(object);
+  (void)_this;
+}
+void LCMsgActionResp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void LCMsgActionResp::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const LCMsgActionResp& LCMsgActionResp::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_LCMsgActionResp_Lucky9_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void LCMsgActionResp::Clear() {
+// @@protoc_insertion_point(message_clear_start:Lucky9.LCMsgActionResp)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&act_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&is_get_) -
+      reinterpret_cast<char*>(&act_)) + sizeof(is_get_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* LCMsgActionResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 act = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          act_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 chair_id = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          chair_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 bet_score = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          bet_score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // bool is_get = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          is_get_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* LCMsgActionResp::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:Lucky9.LCMsgActionResp)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 act = 1;
+  if (this->act() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_act(), target);
+  }
+
+  // int32 chair_id = 2;
+  if (this->chair_id() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_chair_id(), target);
+  }
+
+  // int64 bet_score = 3;
+  if (this->bet_score() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_bet_score(), target);
+  }
+
+  // bool is_get = 4;
+  if (this->is_get() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(4, this->_internal_is_get(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:Lucky9.LCMsgActionResp)
+  return target;
+}
+
+size_t LCMsgActionResp::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Lucky9.LCMsgActionResp)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // int32 act = 1;
+  if (this->act() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_act());
+  }
+
+  // int32 chair_id = 2;
+  if (this->chair_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_chair_id());
+  }
+
+  // int64 bet_score = 3;
+  if (this->bet_score() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_bet_score());
+  }
+
+  // bool is_get = 4;
+  if (this->is_get() != 0) {
+    total_size += 1 + 1;
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void LCMsgActionResp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:Lucky9.LCMsgActionResp)
+  GOOGLE_DCHECK_NE(&from, this);
+  const LCMsgActionResp* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<LCMsgActionResp>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Lucky9.LCMsgActionResp)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:Lucky9.LCMsgActionResp)
+    MergeFrom(*source);
+  }
+}
+
+void LCMsgActionResp::MergeFrom(const LCMsgActionResp& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Lucky9.LCMsgActionResp)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.act() != 0) {
+    _internal_set_act(from._internal_act());
+  }
+  if (from.chair_id() != 0) {
+    _internal_set_chair_id(from._internal_chair_id());
+  }
+  if (from.bet_score() != 0) {
+    _internal_set_bet_score(from._internal_bet_score());
+  }
+  if (from.is_get() != 0) {
+    _internal_set_is_get(from._internal_is_get());
+  }
+}
+
+void LCMsgActionResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:Lucky9.LCMsgActionResp)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void LCMsgActionResp::CopyFrom(const LCMsgActionResp& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Lucky9.LCMsgActionResp)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool LCMsgActionResp::IsInitialized() const {
+  return true;
+}
+
+void LCMsgActionResp::InternalSwap(LCMsgActionResp* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(LCMsgActionResp, is_get_)
+      + sizeof(LCMsgActionResp::is_get_)
+      - PROTOBUF_FIELD_OFFSET(LCMsgActionResp, act_)>(
+          reinterpret_cast<char*>(&act_),
+          reinterpret_cast<char*>(&other->act_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata LCMsgActionResp::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class LCMsgSendCardInfo::_Internal {
+ public:
+  static const ::Lucky9::LCMsgHandCards& hand_cards(const LCMsgSendCardInfo* msg);
+};
+
+const ::Lucky9::LCMsgHandCards&
+LCMsgSendCardInfo::_Internal::hand_cards(const LCMsgSendCardInfo* msg) {
+  return *msg->hand_cards_;
+}
+LCMsgSendCardInfo::LCMsgSendCardInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:Lucky9.LCMsgSendCardInfo)
+}
+LCMsgSendCardInfo::LCMsgSendCardInfo(const LCMsgSendCardInfo& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_hand_cards()) {
+    hand_cards_ = new ::Lucky9::LCMsgHandCards(*from.hand_cards_);
+  } else {
+    hand_cards_ = nullptr;
+  }
+  chair_id_ = from.chair_id_;
+  // @@protoc_insertion_point(copy_constructor:Lucky9.LCMsgSendCardInfo)
+}
+
+void LCMsgSendCardInfo::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_LCMsgSendCardInfo_Lucky9_2eproto.base);
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&hand_cards_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&chair_id_) -
+      reinterpret_cast<char*>(&hand_cards_)) + sizeof(chair_id_));
+}
+
+LCMsgSendCardInfo::~LCMsgSendCardInfo() {
+  // @@protoc_insertion_point(destructor:Lucky9.LCMsgSendCardInfo)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void LCMsgSendCardInfo::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  if (this != internal_default_instance()) delete hand_cards_;
+}
+
+void LCMsgSendCardInfo::ArenaDtor(void* object) {
+  LCMsgSendCardInfo* _this = reinterpret_cast< LCMsgSendCardInfo* >(object);
+  (void)_this;
+}
+void LCMsgSendCardInfo::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void LCMsgSendCardInfo::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const LCMsgSendCardInfo& LCMsgSendCardInfo::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_LCMsgSendCardInfo_Lucky9_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void LCMsgSendCardInfo::Clear() {
+// @@protoc_insertion_point(message_clear_start:Lucky9.LCMsgSendCardInfo)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (GetArena() == nullptr && hand_cards_ != nullptr) {
+    delete hand_cards_;
+  }
+  hand_cards_ = nullptr;
+  chair_id_ = 0;
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* LCMsgSendCardInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 chair_id = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          chair_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // .Lucky9.LCMsgHandCards hand_cards = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          ptr = ctx->ParseMessage(_internal_mutable_hand_cards(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* LCMsgSendCardInfo::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:Lucky9.LCMsgSendCardInfo)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 chair_id = 1;
+  if (this->chair_id() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_chair_id(), target);
+  }
+
+  // .Lucky9.LCMsgHandCards hand_cards = 2;
+  if (this->has_hand_cards()) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        2, _Internal::hand_cards(this), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:Lucky9.LCMsgSendCardInfo)
+  return target;
+}
+
+size_t LCMsgSendCardInfo::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Lucky9.LCMsgSendCardInfo)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // .Lucky9.LCMsgHandCards hand_cards = 2;
+  if (this->has_hand_cards()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *hand_cards_);
+  }
+
+  // int32 chair_id = 1;
+  if (this->chair_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_chair_id());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void LCMsgSendCardInfo::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:Lucky9.LCMsgSendCardInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  const LCMsgSendCardInfo* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<LCMsgSendCardInfo>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Lucky9.LCMsgSendCardInfo)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:Lucky9.LCMsgSendCardInfo)
+    MergeFrom(*source);
+  }
+}
+
+void LCMsgSendCardInfo::MergeFrom(const LCMsgSendCardInfo& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:Lucky9.LCMsgSendCardInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.has_hand_cards()) {
+    _internal_mutable_hand_cards()->::Lucky9::LCMsgHandCards::MergeFrom(from._internal_hand_cards());
+  }
+  if (from.chair_id() != 0) {
+    _internal_set_chair_id(from._internal_chair_id());
+  }
+}
+
+void LCMsgSendCardInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:Lucky9.LCMsgSendCardInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void LCMsgSendCardInfo::CopyFrom(const LCMsgSendCardInfo& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Lucky9.LCMsgSendCardInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool LCMsgSendCardInfo::IsInitialized() const {
+  return true;
+}
+
+void LCMsgSendCardInfo::InternalSwap(LCMsgSendCardInfo* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(LCMsgSendCardInfo, chair_id_)
+      + sizeof(LCMsgSendCardInfo::chair_id_)
+      - PROTOBUF_FIELD_OFFSET(LCMsgSendCardInfo, hand_cards_)>(
+          reinterpret_cast<char*>(&hand_cards_),
+          reinterpret_cast<char*>(&other->hand_cards_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata LCMsgSendCardInfo::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
 class LCMsgSendCardResp::_Internal {
  public:
 };
 
 LCMsgSendCardResp::LCMsgSendCardResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  cards_(arena) {
+  infos_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:Lucky9.LCMsgSendCardResp)
 }
 LCMsgSendCardResp::LCMsgSendCardResp(const LCMsgSendCardResp& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      cards_(from.cards_) {
+      infos_(from.infos_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&chair_id_, &from.chair_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&card_type_) -
-    reinterpret_cast<char*>(&chair_id_)) + sizeof(card_type_));
   // @@protoc_insertion_point(copy_constructor:Lucky9.LCMsgSendCardResp)
 }
 
 void LCMsgSendCardResp::SharedCtor() {
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&chair_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&card_type_) -
-      reinterpret_cast<char*>(&chair_id_)) + sizeof(card_type_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_LCMsgSendCardResp_Lucky9_2eproto.base);
 }
 
 LCMsgSendCardResp::~LCMsgSendCardResp() {
@@ -2802,10 +3220,7 @@ void LCMsgSendCardResp::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cards_.Clear();
-  ::memset(&chair_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&card_type_) -
-      reinterpret_cast<char*>(&chair_id_)) + sizeof(card_type_));
+  infos_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -2816,28 +3231,16 @@ const char* LCMsgSendCardResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // int32 chair_id = 1;
+      // repeated .Lucky9.LCMsgSendCardInfo infos = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          chair_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 card_type = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          card_type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // repeated int32 cards = 5;
-      case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_cards(), ptr, ctx);
-          CHK_(ptr);
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40) {
-          _internal_add_cards(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
-          CHK_(ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_infos(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -2868,25 +3271,12 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 chair_id = 1;
-  if (this->chair_id() != 0) {
+  // repeated .Lucky9.LCMsgSendCardInfo infos = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_infos_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_chair_id(), target);
-  }
-
-  // int32 card_type = 2;
-  if (this->card_type() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_card_type(), target);
-  }
-
-  // repeated int32 cards = 5;
-  {
-    int byte_size = _cards_cached_byte_size_.load(std::memory_order_relaxed);
-    if (byte_size > 0) {
-      target = stream->WriteInt32Packed(
-          5, _internal_cards(), byte_size, target);
-    }
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(1, this->_internal_infos(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -2905,33 +3295,11 @@ size_t LCMsgSendCardResp::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated int32 cards = 5;
-  {
-    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      Int32Size(this->cards_);
-    if (data_size > 0) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
-    }
-    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
-    _cards_cached_byte_size_.store(cached_size,
-                                    std::memory_order_relaxed);
-    total_size += data_size;
-  }
-
-  // int32 chair_id = 1;
-  if (this->chair_id() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_chair_id());
-  }
-
-  // int32 card_type = 2;
-  if (this->card_type() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_card_type());
+  // repeated .Lucky9.LCMsgSendCardInfo infos = 1;
+  total_size += 1UL * this->_internal_infos_size();
+  for (const auto& msg : this->infos_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -2965,13 +3333,7 @@ void LCMsgSendCardResp::MergeFrom(const LCMsgSendCardResp& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cards_.MergeFrom(from.cards_);
-  if (from.chair_id() != 0) {
-    _internal_set_chair_id(from._internal_chair_id());
-  }
-  if (from.card_type() != 0) {
-    _internal_set_card_type(from._internal_card_type());
-  }
+  infos_.MergeFrom(from.infos_);
 }
 
 void LCMsgSendCardResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -2995,13 +3357,7 @@ bool LCMsgSendCardResp::IsInitialized() const {
 void LCMsgSendCardResp::InternalSwap(LCMsgSendCardResp* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  cards_.InternalSwap(&other->cards_);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(LCMsgSendCardResp, card_type_)
-      + sizeof(LCMsgSendCardResp::card_type_)
-      - PROTOBUF_FIELD_OFFSET(LCMsgSendCardResp, chair_id_)>(
-          reinterpret_cast<char*>(&chair_id_),
-          reinterpret_cast<char*>(&other->chair_id_));
+  infos_.InternalSwap(&other->infos_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata LCMsgSendCardResp::GetMetadata() const {
@@ -3011,473 +3367,10 @@ void LCMsgSendCardResp::InternalSwap(LCMsgSendCardResp* other) {
 
 // ===================================================================
 
-class LCMsgGetCardResp::_Internal {
- public:
-};
-
-LCMsgGetCardResp::LCMsgGetCardResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:Lucky9.LCMsgGetCardResp)
-}
-LCMsgGetCardResp::LCMsgGetCardResp(const LCMsgGetCardResp& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&chair_id_, &from.chair_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&is_get_) -
-    reinterpret_cast<char*>(&chair_id_)) + sizeof(is_get_));
-  // @@protoc_insertion_point(copy_constructor:Lucky9.LCMsgGetCardResp)
-}
-
-void LCMsgGetCardResp::SharedCtor() {
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&chair_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&is_get_) -
-      reinterpret_cast<char*>(&chair_id_)) + sizeof(is_get_));
-}
-
-LCMsgGetCardResp::~LCMsgGetCardResp() {
-  // @@protoc_insertion_point(destructor:Lucky9.LCMsgGetCardResp)
-  SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-void LCMsgGetCardResp::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-}
-
-void LCMsgGetCardResp::ArenaDtor(void* object) {
-  LCMsgGetCardResp* _this = reinterpret_cast< LCMsgGetCardResp* >(object);
-  (void)_this;
-}
-void LCMsgGetCardResp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
-void LCMsgGetCardResp::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
-}
-const LCMsgGetCardResp& LCMsgGetCardResp::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_LCMsgGetCardResp_Lucky9_2eproto.base);
-  return *internal_default_instance();
-}
-
-
-void LCMsgGetCardResp::Clear() {
-// @@protoc_insertion_point(message_clear_start:Lucky9.LCMsgGetCardResp)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  ::memset(&chair_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&is_get_) -
-      reinterpret_cast<char*>(&chair_id_)) + sizeof(is_get_));
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-const char* LCMsgGetCardResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
-    switch (tag >> 3) {
-      // int32 chair_id = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          chair_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 is_get = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          is_get_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
-    }  // switch
-  }  // while
-success:
-  return ptr;
-failure:
-  ptr = nullptr;
-  goto success;
-#undef CHK_
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* LCMsgGetCardResp::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:Lucky9.LCMsgGetCardResp)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // int32 chair_id = 1;
-  if (this->chair_id() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_chair_id(), target);
-  }
-
-  // int32 is_get = 2;
-  if (this->is_get() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_is_get(), target);
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:Lucky9.LCMsgGetCardResp)
-  return target;
-}
-
-size_t LCMsgGetCardResp::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:Lucky9.LCMsgGetCardResp)
-  size_t total_size = 0;
-
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  // int32 chair_id = 1;
-  if (this->chair_id() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_chair_id());
-  }
-
-  // int32 is_get = 2;
-  if (this->is_get() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_is_get());
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
-}
-
-void LCMsgGetCardResp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:Lucky9.LCMsgGetCardResp)
-  GOOGLE_DCHECK_NE(&from, this);
-  const LCMsgGetCardResp* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<LCMsgGetCardResp>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Lucky9.LCMsgGetCardResp)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:Lucky9.LCMsgGetCardResp)
-    MergeFrom(*source);
-  }
-}
-
-void LCMsgGetCardResp::MergeFrom(const LCMsgGetCardResp& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:Lucky9.LCMsgGetCardResp)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from.chair_id() != 0) {
-    _internal_set_chair_id(from._internal_chair_id());
-  }
-  if (from.is_get() != 0) {
-    _internal_set_is_get(from._internal_is_get());
-  }
-}
-
-void LCMsgGetCardResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:Lucky9.LCMsgGetCardResp)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void LCMsgGetCardResp::CopyFrom(const LCMsgGetCardResp& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:Lucky9.LCMsgGetCardResp)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool LCMsgGetCardResp::IsInitialized() const {
-  return true;
-}
-
-void LCMsgGetCardResp::InternalSwap(LCMsgGetCardResp* other) {
-  using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(LCMsgGetCardResp, is_get_)
-      + sizeof(LCMsgGetCardResp::is_get_)
-      - PROTOBUF_FIELD_OFFSET(LCMsgGetCardResp, chair_id_)>(
-          reinterpret_cast<char*>(&chair_id_),
-          reinterpret_cast<char*>(&other->chair_id_));
-}
-
-::PROTOBUF_NAMESPACE_ID::Metadata LCMsgGetCardResp::GetMetadata() const {
-  return GetMetadataStatic();
-}
-
-
-// ===================================================================
-
-class LCMsgAddBetResp::_Internal {
- public:
-};
-
-LCMsgAddBetResp::LCMsgAddBetResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:Lucky9.LCMsgAddBetResp)
-}
-LCMsgAddBetResp::LCMsgAddBetResp(const LCMsgAddBetResp& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&add_score_, &from.add_score_,
-    static_cast<size_t>(reinterpret_cast<char*>(&add_chair_id_) -
-    reinterpret_cast<char*>(&add_score_)) + sizeof(add_chair_id_));
-  // @@protoc_insertion_point(copy_constructor:Lucky9.LCMsgAddBetResp)
-}
-
-void LCMsgAddBetResp::SharedCtor() {
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&add_score_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&add_chair_id_) -
-      reinterpret_cast<char*>(&add_score_)) + sizeof(add_chair_id_));
-}
-
-LCMsgAddBetResp::~LCMsgAddBetResp() {
-  // @@protoc_insertion_point(destructor:Lucky9.LCMsgAddBetResp)
-  SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-void LCMsgAddBetResp::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-}
-
-void LCMsgAddBetResp::ArenaDtor(void* object) {
-  LCMsgAddBetResp* _this = reinterpret_cast< LCMsgAddBetResp* >(object);
-  (void)_this;
-}
-void LCMsgAddBetResp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
-void LCMsgAddBetResp::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
-}
-const LCMsgAddBetResp& LCMsgAddBetResp::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_LCMsgAddBetResp_Lucky9_2eproto.base);
-  return *internal_default_instance();
-}
-
-
-void LCMsgAddBetResp::Clear() {
-// @@protoc_insertion_point(message_clear_start:Lucky9.LCMsgAddBetResp)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  ::memset(&add_score_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&add_chair_id_) -
-      reinterpret_cast<char*>(&add_score_)) + sizeof(add_chair_id_));
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-const char* LCMsgAddBetResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
-    switch (tag >> 3) {
-      // int32 add_chair_id = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          add_chair_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int64 add_score = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          add_score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
-    }  // switch
-  }  // while
-success:
-  return ptr;
-failure:
-  ptr = nullptr;
-  goto success;
-#undef CHK_
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* LCMsgAddBetResp::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:Lucky9.LCMsgAddBetResp)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // int32 add_chair_id = 1;
-  if (this->add_chair_id() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_add_chair_id(), target);
-  }
-
-  // int64 add_score = 2;
-  if (this->add_score() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_add_score(), target);
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:Lucky9.LCMsgAddBetResp)
-  return target;
-}
-
-size_t LCMsgAddBetResp::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:Lucky9.LCMsgAddBetResp)
-  size_t total_size = 0;
-
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  // int64 add_score = 2;
-  if (this->add_score() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_add_score());
-  }
-
-  // int32 add_chair_id = 1;
-  if (this->add_chair_id() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_add_chair_id());
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
-}
-
-void LCMsgAddBetResp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:Lucky9.LCMsgAddBetResp)
-  GOOGLE_DCHECK_NE(&from, this);
-  const LCMsgAddBetResp* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<LCMsgAddBetResp>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Lucky9.LCMsgAddBetResp)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:Lucky9.LCMsgAddBetResp)
-    MergeFrom(*source);
-  }
-}
-
-void LCMsgAddBetResp::MergeFrom(const LCMsgAddBetResp& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:Lucky9.LCMsgAddBetResp)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from.add_score() != 0) {
-    _internal_set_add_score(from._internal_add_score());
-  }
-  if (from.add_chair_id() != 0) {
-    _internal_set_add_chair_id(from._internal_add_chair_id());
-  }
-}
-
-void LCMsgAddBetResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:Lucky9.LCMsgAddBetResp)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void LCMsgAddBetResp::CopyFrom(const LCMsgAddBetResp& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:Lucky9.LCMsgAddBetResp)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool LCMsgAddBetResp::IsInitialized() const {
-  return true;
-}
-
-void LCMsgAddBetResp::InternalSwap(LCMsgAddBetResp* other) {
-  using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(LCMsgAddBetResp, add_chair_id_)
-      + sizeof(LCMsgAddBetResp::add_chair_id_)
-      - PROTOBUF_FIELD_OFFSET(LCMsgAddBetResp, add_score_)>(
-          reinterpret_cast<char*>(&add_score_),
-          reinterpret_cast<char*>(&other->add_score_));
-}
-
-::PROTOBUF_NAMESPACE_ID::Metadata LCMsgAddBetResp::GetMetadata() const {
-  return GetMetadataStatic();
-}
-
-
-// ===================================================================
-
 class LCMsgEndPlayerInfo::_Internal {
  public:
-  static const ::Lucky9::LCMsgHandCards& cards(const LCMsgEndPlayerInfo* msg);
 };
 
-const ::Lucky9::LCMsgHandCards&
-LCMsgEndPlayerInfo::_Internal::cards(const LCMsgEndPlayerInfo* msg) {
-  return *msg->cards_;
-}
 LCMsgEndPlayerInfo::LCMsgEndPlayerInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
@@ -3487,23 +3380,17 @@ LCMsgEndPlayerInfo::LCMsgEndPlayerInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 LCMsgEndPlayerInfo::LCMsgEndPlayerInfo(const LCMsgEndPlayerInfo& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  if (from._internal_has_cards()) {
-    cards_ = new ::Lucky9::LCMsgHandCards(*from.cards_);
-  } else {
-    cards_ = nullptr;
-  }
   ::memcpy(&game_score_, &from.game_score_,
-    static_cast<size_t>(reinterpret_cast<char*>(&number_) -
-    reinterpret_cast<char*>(&game_score_)) + sizeof(number_));
+    static_cast<size_t>(reinterpret_cast<char*>(&chair_id_) -
+    reinterpret_cast<char*>(&game_score_)) + sizeof(chair_id_));
   // @@protoc_insertion_point(copy_constructor:Lucky9.LCMsgEndPlayerInfo)
 }
 
 void LCMsgEndPlayerInfo::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_LCMsgEndPlayerInfo_Lucky9_2eproto.base);
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&cards_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&number_) -
-      reinterpret_cast<char*>(&cards_)) + sizeof(number_));
+      reinterpret_cast<char*>(&game_score_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&chair_id_) -
+      reinterpret_cast<char*>(&game_score_)) + sizeof(chair_id_));
 }
 
 LCMsgEndPlayerInfo::~LCMsgEndPlayerInfo() {
@@ -3514,7 +3401,6 @@ LCMsgEndPlayerInfo::~LCMsgEndPlayerInfo() {
 
 void LCMsgEndPlayerInfo::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
-  if (this != internal_default_instance()) delete cards_;
 }
 
 void LCMsgEndPlayerInfo::ArenaDtor(void* object) {
@@ -3538,13 +3424,9 @@ void LCMsgEndPlayerInfo::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArena() == nullptr && cards_ != nullptr) {
-    delete cards_;
-  }
-  cards_ = nullptr;
   ::memset(&game_score_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&number_) -
-      reinterpret_cast<char*>(&game_score_)) + sizeof(number_));
+      reinterpret_cast<char*>(&chair_id_) -
+      reinterpret_cast<char*>(&game_score_)) + sizeof(chair_id_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -3555,38 +3437,24 @@ const char* LCMsgEndPlayerInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // int64 game_score = 1;
+      // int32 chair_id = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          chair_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 game_score = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           game_score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int64 tax = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          tax_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int64 type = 3;
+      // int64 tax = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int64 number = 4;
-      case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          number_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // .Lucky9.LCMsgHandCards cards = 5;
-      case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
-          ptr = ctx->ParseMessage(_internal_mutable_cards(), ptr);
+          tax_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -3618,36 +3486,22 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int64 game_score = 1;
+  // int32 chair_id = 1;
+  if (this->chair_id() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_chair_id(), target);
+  }
+
+  // int64 game_score = 2;
   if (this->game_score() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_game_score(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_game_score(), target);
   }
 
-  // int64 tax = 2;
+  // int64 tax = 3;
   if (this->tax() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_tax(), target);
-  }
-
-  // int64 type = 3;
-  if (this->type() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_type(), target);
-  }
-
-  // int64 number = 4;
-  if (this->number() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_number(), target);
-  }
-
-  // .Lucky9.LCMsgHandCards cards = 5;
-  if (this->has_cards()) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        5, _Internal::cards(this), target, stream);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_tax(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -3666,39 +3520,25 @@ size_t LCMsgEndPlayerInfo::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .Lucky9.LCMsgHandCards cards = 5;
-  if (this->has_cards()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *cards_);
-  }
-
-  // int64 game_score = 1;
+  // int64 game_score = 2;
   if (this->game_score() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_game_score());
   }
 
-  // int64 tax = 2;
+  // int64 tax = 3;
   if (this->tax() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_tax());
   }
 
-  // int64 type = 3;
-  if (this->type() != 0) {
+  // int32 chair_id = 1;
+  if (this->chair_id() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_type());
-  }
-
-  // int64 number = 4;
-  if (this->number() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_number());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_chair_id());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -3732,20 +3572,14 @@ void LCMsgEndPlayerInfo::MergeFrom(const LCMsgEndPlayerInfo& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.has_cards()) {
-    _internal_mutable_cards()->::Lucky9::LCMsgHandCards::MergeFrom(from._internal_cards());
-  }
   if (from.game_score() != 0) {
     _internal_set_game_score(from._internal_game_score());
   }
   if (from.tax() != 0) {
     _internal_set_tax(from._internal_tax());
   }
-  if (from.type() != 0) {
-    _internal_set_type(from._internal_type());
-  }
-  if (from.number() != 0) {
-    _internal_set_number(from._internal_number());
+  if (from.chair_id() != 0) {
+    _internal_set_chair_id(from._internal_chair_id());
   }
 }
 
@@ -3771,11 +3605,11 @@ void LCMsgEndPlayerInfo::InternalSwap(LCMsgEndPlayerInfo* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(LCMsgEndPlayerInfo, number_)
-      + sizeof(LCMsgEndPlayerInfo::number_)
-      - PROTOBUF_FIELD_OFFSET(LCMsgEndPlayerInfo, cards_)>(
-          reinterpret_cast<char*>(&cards_),
-          reinterpret_cast<char*>(&other->cards_));
+      PROTOBUF_FIELD_OFFSET(LCMsgEndPlayerInfo, chair_id_)
+      + sizeof(LCMsgEndPlayerInfo::chair_id_)
+      - PROTOBUF_FIELD_OFFSET(LCMsgEndPlayerInfo, game_score_)>(
+          reinterpret_cast<char*>(&game_score_),
+          reinterpret_cast<char*>(&other->game_score_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata LCMsgEndPlayerInfo::GetMetadata() const {
@@ -3791,6 +3625,7 @@ class LCMsgGameResult::_Internal {
 
 LCMsgGameResult::LCMsgGameResult(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  bisect_list_(arena),
   players_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
@@ -3798,13 +3633,16 @@ LCMsgGameResult::LCMsgGameResult(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 }
 LCMsgGameResult::LCMsgGameResult(const LCMsgGameResult& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      bisect_list_(from.bisect_list_),
       players_(from.players_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  bisect_gold_ = from.bisect_gold_;
   // @@protoc_insertion_point(copy_constructor:Lucky9.LCMsgGameResult)
 }
 
 void LCMsgGameResult::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_LCMsgGameResult_Lucky9_2eproto.base);
+  bisect_gold_ = PROTOBUF_LONGLONG(0);
 }
 
 LCMsgGameResult::~LCMsgGameResult() {
@@ -3838,7 +3676,9 @@ void LCMsgGameResult::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  bisect_list_.Clear();
   players_.Clear();
+  bisect_gold_ = PROTOBUF_LONGLONG(0);
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -3849,16 +3689,33 @@ const char* LCMsgGameResult::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // repeated .Lucky9.LCMsgEndPlayerInfo players = 1;
+      // int64 bisect_gold = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          bisect_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated int32 bisect_list = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_bisect_list(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16) {
+          _internal_add_bisect_list(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated .Lucky9.LCMsgEndPlayerInfo players = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
           ptr -= 1;
           do {
             ptr += 1;
             ptr = ctx->ParseMessage(_internal_add_players(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<26>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -3889,12 +3746,27 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated .Lucky9.LCMsgEndPlayerInfo players = 1;
+  // int64 bisect_gold = 1;
+  if (this->bisect_gold() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_bisect_gold(), target);
+  }
+
+  // repeated int32 bisect_list = 2;
+  {
+    int byte_size = _bisect_list_cached_byte_size_.load(std::memory_order_relaxed);
+    if (byte_size > 0) {
+      target = stream->WriteInt32Packed(
+          2, _internal_bisect_list(), byte_size, target);
+    }
+  }
+
+  // repeated .Lucky9.LCMsgEndPlayerInfo players = 3;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_players_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_players(i), target, stream);
+      InternalWriteMessage(3, this->_internal_players(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -3913,11 +3785,33 @@ size_t LCMsgGameResult::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .Lucky9.LCMsgEndPlayerInfo players = 1;
+  // repeated int32 bisect_list = 2;
+  {
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      Int32Size(this->bisect_list_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
+    }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _bisect_list_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
+  }
+
+  // repeated .Lucky9.LCMsgEndPlayerInfo players = 3;
   total_size += 1UL * this->_internal_players_size();
   for (const auto& msg : this->players_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  // int64 bisect_gold = 1;
+  if (this->bisect_gold() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_bisect_gold());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -3951,7 +3845,11 @@ void LCMsgGameResult::MergeFrom(const LCMsgGameResult& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  bisect_list_.MergeFrom(from.bisect_list_);
   players_.MergeFrom(from.players_);
+  if (from.bisect_gold() != 0) {
+    _internal_set_bisect_gold(from._internal_bisect_gold());
+  }
 }
 
 void LCMsgGameResult::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -3975,7 +3873,9 @@ bool LCMsgGameResult::IsInitialized() const {
 void LCMsgGameResult::InternalSwap(LCMsgGameResult* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  bisect_list_.InternalSwap(&other->bisect_list_);
   players_.InternalSwap(&other->players_);
+  swap(bisect_gold_, other->bisect_gold_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata LCMsgGameResult::GetMetadata() const {
@@ -4236,14 +4136,14 @@ template<> PROTOBUF_NOINLINE ::Lucky9::LCMsgNotifyActionResp* Arena::CreateMaybe
 template<> PROTOBUF_NOINLINE ::Lucky9::LCMsgAction* Arena::CreateMaybeMessage< ::Lucky9::LCMsgAction >(Arena* arena) {
   return Arena::CreateMessageInternal< ::Lucky9::LCMsgAction >(arena);
 }
+template<> PROTOBUF_NOINLINE ::Lucky9::LCMsgActionResp* Arena::CreateMaybeMessage< ::Lucky9::LCMsgActionResp >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::Lucky9::LCMsgActionResp >(arena);
+}
+template<> PROTOBUF_NOINLINE ::Lucky9::LCMsgSendCardInfo* Arena::CreateMaybeMessage< ::Lucky9::LCMsgSendCardInfo >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::Lucky9::LCMsgSendCardInfo >(arena);
+}
 template<> PROTOBUF_NOINLINE ::Lucky9::LCMsgSendCardResp* Arena::CreateMaybeMessage< ::Lucky9::LCMsgSendCardResp >(Arena* arena) {
   return Arena::CreateMessageInternal< ::Lucky9::LCMsgSendCardResp >(arena);
-}
-template<> PROTOBUF_NOINLINE ::Lucky9::LCMsgGetCardResp* Arena::CreateMaybeMessage< ::Lucky9::LCMsgGetCardResp >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::Lucky9::LCMsgGetCardResp >(arena);
-}
-template<> PROTOBUF_NOINLINE ::Lucky9::LCMsgAddBetResp* Arena::CreateMaybeMessage< ::Lucky9::LCMsgAddBetResp >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::Lucky9::LCMsgAddBetResp >(arena);
 }
 template<> PROTOBUF_NOINLINE ::Lucky9::LCMsgEndPlayerInfo* Arena::CreateMaybeMessage< ::Lucky9::LCMsgEndPlayerInfo >(Arena* arena) {
   return Arena::CreateMessageInternal< ::Lucky9::LCMsgEndPlayerInfo >(arena);

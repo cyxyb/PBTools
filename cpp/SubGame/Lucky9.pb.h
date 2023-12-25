@@ -58,9 +58,9 @@ namespace Lucky9 {
 class LCMsgAction;
 class LCMsgActionDefaultTypeInternal;
 extern LCMsgActionDefaultTypeInternal _LCMsgAction_default_instance_;
-class LCMsgAddBetResp;
-class LCMsgAddBetRespDefaultTypeInternal;
-extern LCMsgAddBetRespDefaultTypeInternal _LCMsgAddBetResp_default_instance_;
+class LCMsgActionResp;
+class LCMsgActionRespDefaultTypeInternal;
+extern LCMsgActionRespDefaultTypeInternal _LCMsgActionResp_default_instance_;
 class LCMsgEndPlayerInfo;
 class LCMsgEndPlayerInfoDefaultTypeInternal;
 extern LCMsgEndPlayerInfoDefaultTypeInternal _LCMsgEndPlayerInfo_default_instance_;
@@ -70,9 +70,6 @@ extern LCMsgGameResultDefaultTypeInternal _LCMsgGameResult_default_instance_;
 class LCMsgGameStartResp;
 class LCMsgGameStartRespDefaultTypeInternal;
 extern LCMsgGameStartRespDefaultTypeInternal _LCMsgGameStartResp_default_instance_;
-class LCMsgGetCardResp;
-class LCMsgGetCardRespDefaultTypeInternal;
-extern LCMsgGetCardRespDefaultTypeInternal _LCMsgGetCardResp_default_instance_;
 class LCMsgHandCards;
 class LCMsgHandCardsDefaultTypeInternal;
 extern LCMsgHandCardsDefaultTypeInternal _LCMsgHandCards_default_instance_;
@@ -88,6 +85,9 @@ extern LCMsgPlayerInfoDefaultTypeInternal _LCMsgPlayerInfo_default_instance_;
 class LCMsgSceneInfo;
 class LCMsgSceneInfoDefaultTypeInternal;
 extern LCMsgSceneInfoDefaultTypeInternal _LCMsgSceneInfo_default_instance_;
+class LCMsgSendCardInfo;
+class LCMsgSendCardInfoDefaultTypeInternal;
+extern LCMsgSendCardInfoDefaultTypeInternal _LCMsgSendCardInfo_default_instance_;
 class LCMsgSendCardResp;
 class LCMsgSendCardRespDefaultTypeInternal;
 extern LCMsgSendCardRespDefaultTypeInternal _LCMsgSendCardResp_default_instance_;
@@ -97,16 +97,16 @@ extern LCMsgTableStateDefaultTypeInternal _LCMsgTableState_default_instance_;
 }  // namespace Lucky9
 PROTOBUF_NAMESPACE_OPEN
 template<> ::Lucky9::LCMsgAction* Arena::CreateMaybeMessage<::Lucky9::LCMsgAction>(Arena*);
-template<> ::Lucky9::LCMsgAddBetResp* Arena::CreateMaybeMessage<::Lucky9::LCMsgAddBetResp>(Arena*);
+template<> ::Lucky9::LCMsgActionResp* Arena::CreateMaybeMessage<::Lucky9::LCMsgActionResp>(Arena*);
 template<> ::Lucky9::LCMsgEndPlayerInfo* Arena::CreateMaybeMessage<::Lucky9::LCMsgEndPlayerInfo>(Arena*);
 template<> ::Lucky9::LCMsgGameResult* Arena::CreateMaybeMessage<::Lucky9::LCMsgGameResult>(Arena*);
 template<> ::Lucky9::LCMsgGameStartResp* Arena::CreateMaybeMessage<::Lucky9::LCMsgGameStartResp>(Arena*);
-template<> ::Lucky9::LCMsgGetCardResp* Arena::CreateMaybeMessage<::Lucky9::LCMsgGetCardResp>(Arena*);
 template<> ::Lucky9::LCMsgHandCards* Arena::CreateMaybeMessage<::Lucky9::LCMsgHandCards>(Arena*);
 template<> ::Lucky9::LCMsgNotifyActionResp* Arena::CreateMaybeMessage<::Lucky9::LCMsgNotifyActionResp>(Arena*);
 template<> ::Lucky9::LCMsgNotifyPlayerAct* Arena::CreateMaybeMessage<::Lucky9::LCMsgNotifyPlayerAct>(Arena*);
 template<> ::Lucky9::LCMsgPlayerInfo* Arena::CreateMaybeMessage<::Lucky9::LCMsgPlayerInfo>(Arena*);
 template<> ::Lucky9::LCMsgSceneInfo* Arena::CreateMaybeMessage<::Lucky9::LCMsgSceneInfo>(Arena*);
+template<> ::Lucky9::LCMsgSendCardInfo* Arena::CreateMaybeMessage<::Lucky9::LCMsgSendCardInfo>(Arena*);
 template<> ::Lucky9::LCMsgSendCardResp* Arena::CreateMaybeMessage<::Lucky9::LCMsgSendCardResp>(Arena*);
 template<> ::Lucky9::LCMsgTableState* Arena::CreateMaybeMessage<::Lucky9::LCMsgTableState>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
@@ -171,13 +171,12 @@ inline bool ELCMsgPlayerState_Parse(
 enum ELCMsgCardType : int {
   LC_SINGLE = 0,
   LC_9 = 1,
-  LC_MAX = 2,
   ELCMsgCardType_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   ELCMsgCardType_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool ELCMsgCardType_IsValid(int value);
 constexpr ELCMsgCardType ELCMsgCardType_MIN = LC_SINGLE;
-constexpr ELCMsgCardType ELCMsgCardType_MAX = LC_MAX;
+constexpr ELCMsgCardType ELCMsgCardType_MAX = LC_9;
 constexpr int ELCMsgCardType_ARRAYSIZE = ELCMsgCardType_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ELCMsgCardType_descriptor();
@@ -228,7 +227,6 @@ enum ELCMsgIDSubGame : int {
   MsgIDSubGame_Action = 3,
   MsgIDSubGame_AddBetResp = 4,
   MsgIDSubGame_SendCardResp = 5,
-  MsgIDSubGame_GetCardResp = 6,
   MsgIDSubGame_GameResultResp = 9,
   MsgIDSubGame_NotifyStateResp = 10,
   MsgIDSubGame_TimeOutResp = 11,
@@ -524,7 +522,7 @@ class LCMsgHandCards PROTOBUF_FINAL :
   enum : int {
     kCardsFieldNumber = 3,
     kTypeFieldNumber = 1,
-    kNumberFieldNumber = 2,
+    kCardSumFieldNumber = 2,
   };
   // repeated int32 cards = 3;
   int cards_size() const;
@@ -557,13 +555,13 @@ class LCMsgHandCards PROTOBUF_FINAL :
   void _internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 number = 2;
-  void clear_number();
-  ::PROTOBUF_NAMESPACE_ID::int32 number() const;
-  void set_number(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // int32 card_sum = 2;
+  void clear_card_sum();
+  ::PROTOBUF_NAMESPACE_ID::int32 card_sum() const;
+  void set_card_sum(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_number() const;
-  void _internal_set_number(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_card_sum() const;
+  void _internal_set_card_sum(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:Lucky9.LCMsgHandCards)
@@ -576,7 +574,7 @@ class LCMsgHandCards PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > cards_;
   mutable std::atomic<int> _cards_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::int32 type_;
-  ::PROTOBUF_NAMESPACE_ID::int32 number_;
+  ::PROTOBUF_NAMESPACE_ID::int32 card_sum_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Lucky9_2eproto;
 };
@@ -928,15 +926,13 @@ class LCMsgSceneInfo PROTOBUF_FINAL :
 
   enum : int {
     kPlayerInfosFieldNumber = 15,
-    kMaxScoreFieldNumber = 1,
-    kTableMaxScoreFieldNumber = 2,
-    kCellScoreFieldNumber = 3,
-    kTableStateFieldNumber = 4,
-    kTableRonudFieldNumber = 5,
-    kTotalBetScoreFieldNumber = 6,
-    kBankerChairIdFieldNumber = 8,
-    kOutTimeFieldNumber = 11,
+    kCellScoreFieldNumber = 1,
+    kTableStateFieldNumber = 2,
+    kTableRonudFieldNumber = 3,
+    kTotalEnterGoldFieldNumber = 4,
     kTotalTimeFieldNumber = 12,
+    kBankerChairIdFieldNumber = 10,
+    kOutTimeFieldNumber = 11,
   };
   // repeated .Lucky9.LCMsgPlayerInfo player_infos = 15;
   int player_infos_size() const;
@@ -956,25 +952,7 @@ class LCMsgSceneInfo PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Lucky9::LCMsgPlayerInfo >&
       player_infos() const;
 
-  // int64 max_score = 1;
-  void clear_max_score();
-  ::PROTOBUF_NAMESPACE_ID::int64 max_score() const;
-  void set_max_score(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_max_score() const;
-  void _internal_set_max_score(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
-  // int64 table_max_score = 2;
-  void clear_table_max_score();
-  ::PROTOBUF_NAMESPACE_ID::int64 table_max_score() const;
-  void set_table_max_score(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_table_max_score() const;
-  void _internal_set_table_max_score(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
-  // int64 cell_score = 3;
+  // int64 cell_score = 1;
   void clear_cell_score();
   ::PROTOBUF_NAMESPACE_ID::int64 cell_score() const;
   void set_cell_score(::PROTOBUF_NAMESPACE_ID::int64 value);
@@ -983,7 +961,7 @@ class LCMsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_cell_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int32 table_state = 4;
+  // int32 table_state = 2;
   void clear_table_state();
   ::PROTOBUF_NAMESPACE_ID::int32 table_state() const;
   void set_table_state(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -992,7 +970,7 @@ class LCMsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_table_state(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 table_ronud = 5;
+  // int32 table_ronud = 3;
   void clear_table_ronud();
   ::PROTOBUF_NAMESPACE_ID::int32 table_ronud() const;
   void set_table_ronud(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -1001,16 +979,25 @@ class LCMsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_table_ronud(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int64 total_bet_score = 6;
-  void clear_total_bet_score();
-  ::PROTOBUF_NAMESPACE_ID::int64 total_bet_score() const;
-  void set_total_bet_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  // int64 total_enter_gold = 4;
+  void clear_total_enter_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 total_enter_gold() const;
+  void set_total_enter_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_total_bet_score() const;
-  void _internal_set_total_bet_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_total_enter_gold() const;
+  void _internal_set_total_enter_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int32 banker_chair_id = 8;
+  // int32 total_time = 12;
+  void clear_total_time();
+  ::PROTOBUF_NAMESPACE_ID::int32 total_time() const;
+  void set_total_time(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_total_time() const;
+  void _internal_set_total_time(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 banker_chair_id = 10;
   void clear_banker_chair_id();
   ::PROTOBUF_NAMESPACE_ID::int32 banker_chair_id() const;
   void set_banker_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -1028,15 +1015,6 @@ class LCMsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_out_time(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 total_time = 12;
-  void clear_total_time();
-  ::PROTOBUF_NAMESPACE_ID::int32 total_time() const;
-  void set_total_time(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_total_time() const;
-  void _internal_set_total_time(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
   // @@protoc_insertion_point(class_scope:Lucky9.LCMsgSceneInfo)
  private:
   class _Internal;
@@ -1045,15 +1023,13 @@ class LCMsgSceneInfo PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Lucky9::LCMsgPlayerInfo > player_infos_;
-  ::PROTOBUF_NAMESPACE_ID::int64 max_score_;
-  ::PROTOBUF_NAMESPACE_ID::int64 table_max_score_;
   ::PROTOBUF_NAMESPACE_ID::int64 cell_score_;
   ::PROTOBUF_NAMESPACE_ID::int32 table_state_;
   ::PROTOBUF_NAMESPACE_ID::int32 table_ronud_;
-  ::PROTOBUF_NAMESPACE_ID::int64 total_bet_score_;
+  ::PROTOBUF_NAMESPACE_ID::int64 total_enter_gold_;
+  ::PROTOBUF_NAMESPACE_ID::int32 total_time_;
   ::PROTOBUF_NAMESPACE_ID::int32 banker_chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 out_time_;
-  ::PROTOBUF_NAMESPACE_ID::int32 total_time_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Lucky9_2eproto;
 };
@@ -1172,12 +1148,10 @@ class LCMsgGameStartResp PROTOBUF_FINAL :
 
   enum : int {
     kPlayIndexFieldNumber = 8,
-    kPlayerNewScoreFieldNumber = 9,
-    kTableRonudFieldNumber = 1,
     kTotalEnterGoldFieldNumber = 2,
     kCurEnterGoldFieldNumber = 3,
     kBankerChairIdFieldNumber = 4,
-    kNoeCardFieldNumber = 5,
+    kOneCardFieldNumber = 5,
   };
   // repeated int32 play_index = 8;
   int play_index_size() const;
@@ -1200,37 +1174,6 @@ class LCMsgGameStartResp PROTOBUF_FINAL :
       play_index() const;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_play_index();
-
-  // repeated int64 player_new_score = 9;
-  int player_new_score_size() const;
-  private:
-  int _internal_player_new_score_size() const;
-  public:
-  void clear_player_new_score();
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_player_new_score(int index) const;
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
-      _internal_player_new_score() const;
-  void _internal_add_player_new_score(::PROTOBUF_NAMESPACE_ID::int64 value);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
-      _internal_mutable_player_new_score();
-  public:
-  ::PROTOBUF_NAMESPACE_ID::int64 player_new_score(int index) const;
-  void set_player_new_score(int index, ::PROTOBUF_NAMESPACE_ID::int64 value);
-  void add_player_new_score(::PROTOBUF_NAMESPACE_ID::int64 value);
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
-      player_new_score() const;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
-      mutable_player_new_score();
-
-  // int32 table_ronud = 1;
-  void clear_table_ronud();
-  ::PROTOBUF_NAMESPACE_ID::int32 table_ronud() const;
-  void set_table_ronud(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_table_ronud() const;
-  void _internal_set_table_ronud(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
 
   // int32 total_enter_gold = 2;
   void clear_total_enter_gold();
@@ -1259,13 +1202,13 @@ class LCMsgGameStartResp PROTOBUF_FINAL :
   void _internal_set_banker_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 noe_card = 5;
-  void clear_noe_card();
-  ::PROTOBUF_NAMESPACE_ID::int32 noe_card() const;
-  void set_noe_card(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // int32 one_card = 5;
+  void clear_one_card();
+  ::PROTOBUF_NAMESPACE_ID::int32 one_card() const;
+  void set_one_card(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_noe_card() const;
-  void _internal_set_noe_card(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_one_card() const;
+  void _internal_set_one_card(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:Lucky9.LCMsgGameStartResp)
@@ -1277,13 +1220,10 @@ class LCMsgGameStartResp PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > play_index_;
   mutable std::atomic<int> _play_index_cached_byte_size_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 > player_new_score_;
-  mutable std::atomic<int> _player_new_score_cached_byte_size_;
-  ::PROTOBUF_NAMESPACE_ID::int32 table_ronud_;
   ::PROTOBUF_NAMESPACE_ID::int32 total_enter_gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 cur_enter_gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 banker_chair_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 noe_card_;
+  ::PROTOBUF_NAMESPACE_ID::int32 one_card_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Lucky9_2eproto;
 };
@@ -1550,6 +1490,7 @@ class LCMsgAction PROTOBUF_FINAL :
   enum : int {
     kBetScoreFieldNumber = 2,
     kActFieldNumber = 1,
+    kIsGetFieldNumber = 3,
   };
   // int64 bet_score = 2;
   void clear_bet_score();
@@ -1569,6 +1510,15 @@ class LCMsgAction PROTOBUF_FINAL :
   void _internal_set_act(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // bool is_get = 3;
+  void clear_is_get();
+  bool is_get() const;
+  void set_is_get(bool value);
+  private:
+  bool _internal_is_get() const;
+  void _internal_set_is_get(bool value);
+  public:
+
   // @@protoc_insertion_point(class_scope:Lucky9.LCMsgAction)
  private:
   class _Internal;
@@ -1578,6 +1528,332 @@ class LCMsgAction PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int64 bet_score_;
   ::PROTOBUF_NAMESPACE_ID::int32 act_;
+  bool is_get_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Lucky9_2eproto;
+};
+// -------------------------------------------------------------------
+
+class LCMsgActionResp PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Lucky9.LCMsgActionResp) */ {
+ public:
+  inline LCMsgActionResp() : LCMsgActionResp(nullptr) {}
+  virtual ~LCMsgActionResp();
+
+  LCMsgActionResp(const LCMsgActionResp& from);
+  LCMsgActionResp(LCMsgActionResp&& from) noexcept
+    : LCMsgActionResp() {
+    *this = ::std::move(from);
+  }
+
+  inline LCMsgActionResp& operator=(const LCMsgActionResp& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline LCMsgActionResp& operator=(LCMsgActionResp&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const LCMsgActionResp& default_instance();
+
+  static inline const LCMsgActionResp* internal_default_instance() {
+    return reinterpret_cast<const LCMsgActionResp*>(
+               &_LCMsgActionResp_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    7;
+
+  friend void swap(LCMsgActionResp& a, LCMsgActionResp& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(LCMsgActionResp* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(LCMsgActionResp* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline LCMsgActionResp* New() const final {
+    return CreateMaybeMessage<LCMsgActionResp>(nullptr);
+  }
+
+  LCMsgActionResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<LCMsgActionResp>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const LCMsgActionResp& from);
+  void MergeFrom(const LCMsgActionResp& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(LCMsgActionResp* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "Lucky9.LCMsgActionResp";
+  }
+  protected:
+  explicit LCMsgActionResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Lucky9_2eproto);
+    return ::descriptor_table_Lucky9_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kActFieldNumber = 1,
+    kChairIdFieldNumber = 2,
+    kBetScoreFieldNumber = 3,
+    kIsGetFieldNumber = 4,
+  };
+  // int32 act = 1;
+  void clear_act();
+  ::PROTOBUF_NAMESPACE_ID::int32 act() const;
+  void set_act(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_act() const;
+  void _internal_set_act(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 chair_id = 2;
+  void clear_chair_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_id() const;
+  void set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_chair_id() const;
+  void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int64 bet_score = 3;
+  void clear_bet_score();
+  ::PROTOBUF_NAMESPACE_ID::int64 bet_score() const;
+  void set_bet_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_bet_score() const;
+  void _internal_set_bet_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // bool is_get = 4;
+  void clear_is_get();
+  bool is_get() const;
+  void set_is_get(bool value);
+  private:
+  bool _internal_is_get() const;
+  void _internal_set_is_get(bool value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:Lucky9.LCMsgActionResp)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 act_;
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
+  ::PROTOBUF_NAMESPACE_ID::int64 bet_score_;
+  bool is_get_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Lucky9_2eproto;
+};
+// -------------------------------------------------------------------
+
+class LCMsgSendCardInfo PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Lucky9.LCMsgSendCardInfo) */ {
+ public:
+  inline LCMsgSendCardInfo() : LCMsgSendCardInfo(nullptr) {}
+  virtual ~LCMsgSendCardInfo();
+
+  LCMsgSendCardInfo(const LCMsgSendCardInfo& from);
+  LCMsgSendCardInfo(LCMsgSendCardInfo&& from) noexcept
+    : LCMsgSendCardInfo() {
+    *this = ::std::move(from);
+  }
+
+  inline LCMsgSendCardInfo& operator=(const LCMsgSendCardInfo& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline LCMsgSendCardInfo& operator=(LCMsgSendCardInfo&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const LCMsgSendCardInfo& default_instance();
+
+  static inline const LCMsgSendCardInfo* internal_default_instance() {
+    return reinterpret_cast<const LCMsgSendCardInfo*>(
+               &_LCMsgSendCardInfo_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    8;
+
+  friend void swap(LCMsgSendCardInfo& a, LCMsgSendCardInfo& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(LCMsgSendCardInfo* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(LCMsgSendCardInfo* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline LCMsgSendCardInfo* New() const final {
+    return CreateMaybeMessage<LCMsgSendCardInfo>(nullptr);
+  }
+
+  LCMsgSendCardInfo* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<LCMsgSendCardInfo>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const LCMsgSendCardInfo& from);
+  void MergeFrom(const LCMsgSendCardInfo& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(LCMsgSendCardInfo* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "Lucky9.LCMsgSendCardInfo";
+  }
+  protected:
+  explicit LCMsgSendCardInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Lucky9_2eproto);
+    return ::descriptor_table_Lucky9_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kHandCardsFieldNumber = 2,
+    kChairIdFieldNumber = 1,
+  };
+  // .Lucky9.LCMsgHandCards hand_cards = 2;
+  bool has_hand_cards() const;
+  private:
+  bool _internal_has_hand_cards() const;
+  public:
+  void clear_hand_cards();
+  const ::Lucky9::LCMsgHandCards& hand_cards() const;
+  ::Lucky9::LCMsgHandCards* release_hand_cards();
+  ::Lucky9::LCMsgHandCards* mutable_hand_cards();
+  void set_allocated_hand_cards(::Lucky9::LCMsgHandCards* hand_cards);
+  private:
+  const ::Lucky9::LCMsgHandCards& _internal_hand_cards() const;
+  ::Lucky9::LCMsgHandCards* _internal_mutable_hand_cards();
+  public:
+  void unsafe_arena_set_allocated_hand_cards(
+      ::Lucky9::LCMsgHandCards* hand_cards);
+  ::Lucky9::LCMsgHandCards* unsafe_arena_release_hand_cards();
+
+  // int32 chair_id = 1;
+  void clear_chair_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_id() const;
+  void set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_chair_id() const;
+  void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:Lucky9.LCMsgSendCardInfo)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::Lucky9::LCMsgHandCards* hand_cards_;
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Lucky9_2eproto;
 };
@@ -1624,7 +1900,7 @@ class LCMsgSendCardResp PROTOBUF_FINAL :
                &_LCMsgSendCardResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    7;
+    9;
 
   friend void swap(LCMsgSendCardResp& a, LCMsgSendCardResp& b) {
     a.Swap(&b);
@@ -1695,49 +1971,25 @@ class LCMsgSendCardResp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kCardsFieldNumber = 5,
-    kChairIdFieldNumber = 1,
-    kCardTypeFieldNumber = 2,
+    kInfosFieldNumber = 1,
   };
-  // repeated int32 cards = 5;
-  int cards_size() const;
+  // repeated .Lucky9.LCMsgSendCardInfo infos = 1;
+  int infos_size() const;
   private:
-  int _internal_cards_size() const;
+  int _internal_infos_size() const;
   public:
-  void clear_cards();
+  void clear_infos();
+  ::Lucky9::LCMsgSendCardInfo* mutable_infos(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Lucky9::LCMsgSendCardInfo >*
+      mutable_infos();
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_cards(int index) const;
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      _internal_cards() const;
-  void _internal_add_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      _internal_mutable_cards();
+  const ::Lucky9::LCMsgSendCardInfo& _internal_infos(int index) const;
+  ::Lucky9::LCMsgSendCardInfo* _internal_add_infos();
   public:
-  ::PROTOBUF_NAMESPACE_ID::int32 cards(int index) const;
-  void set_cards(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
-  void add_cards(::PROTOBUF_NAMESPACE_ID::int32 value);
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-      cards() const;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-      mutable_cards();
-
-  // int32 chair_id = 1;
-  void clear_chair_id();
-  ::PROTOBUF_NAMESPACE_ID::int32 chair_id() const;
-  void set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_chair_id() const;
-  void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 card_type = 2;
-  void clear_card_type();
-  ::PROTOBUF_NAMESPACE_ID::int32 card_type() const;
-  void set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_card_type() const;
-  void _internal_set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
+  const ::Lucky9::LCMsgSendCardInfo& infos(int index) const;
+  ::Lucky9::LCMsgSendCardInfo* add_infos();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Lucky9::LCMsgSendCardInfo >&
+      infos() const;
 
   // @@protoc_insertion_point(class_scope:Lucky9.LCMsgSendCardResp)
  private:
@@ -1746,304 +1998,7 @@ class LCMsgSendCardResp PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > cards_;
-  mutable std::atomic<int> _cards_cached_byte_size_;
-  ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 card_type_;
-  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  friend struct ::TableStruct_Lucky9_2eproto;
-};
-// -------------------------------------------------------------------
-
-class LCMsgGetCardResp PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Lucky9.LCMsgGetCardResp) */ {
- public:
-  inline LCMsgGetCardResp() : LCMsgGetCardResp(nullptr) {}
-  virtual ~LCMsgGetCardResp();
-
-  LCMsgGetCardResp(const LCMsgGetCardResp& from);
-  LCMsgGetCardResp(LCMsgGetCardResp&& from) noexcept
-    : LCMsgGetCardResp() {
-    *this = ::std::move(from);
-  }
-
-  inline LCMsgGetCardResp& operator=(const LCMsgGetCardResp& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline LCMsgGetCardResp& operator=(LCMsgGetCardResp&& from) noexcept {
-    if (GetArena() == from.GetArena()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return GetMetadataStatic().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return GetMetadataStatic().reflection;
-  }
-  static const LCMsgGetCardResp& default_instance();
-
-  static inline const LCMsgGetCardResp* internal_default_instance() {
-    return reinterpret_cast<const LCMsgGetCardResp*>(
-               &_LCMsgGetCardResp_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    8;
-
-  friend void swap(LCMsgGetCardResp& a, LCMsgGetCardResp& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(LCMsgGetCardResp* other) {
-    if (other == this) return;
-    if (GetArena() == other->GetArena()) {
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(LCMsgGetCardResp* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetArena() == other->GetArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline LCMsgGetCardResp* New() const final {
-    return CreateMaybeMessage<LCMsgGetCardResp>(nullptr);
-  }
-
-  LCMsgGetCardResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<LCMsgGetCardResp>(arena);
-  }
-  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const LCMsgGetCardResp& from);
-  void MergeFrom(const LCMsgGetCardResp& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
-      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  inline void SharedCtor();
-  inline void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(LCMsgGetCardResp* other);
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "Lucky9.LCMsgGetCardResp";
-  }
-  protected:
-  explicit LCMsgGetCardResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  private:
-  static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  public:
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-  private:
-  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
-    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Lucky9_2eproto);
-    return ::descriptor_table_Lucky9_2eproto.file_level_metadata[kIndexInFileMessages];
-  }
-
-  public:
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kChairIdFieldNumber = 1,
-    kIsGetFieldNumber = 2,
-  };
-  // int32 chair_id = 1;
-  void clear_chair_id();
-  ::PROTOBUF_NAMESPACE_ID::int32 chair_id() const;
-  void set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_chair_id() const;
-  void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 is_get = 2;
-  void clear_is_get();
-  ::PROTOBUF_NAMESPACE_ID::int32 is_get() const;
-  void set_is_get(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_is_get() const;
-  void _internal_set_is_get(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:Lucky9.LCMsgGetCardResp)
- private:
-  class _Internal;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 is_get_;
-  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  friend struct ::TableStruct_Lucky9_2eproto;
-};
-// -------------------------------------------------------------------
-
-class LCMsgAddBetResp PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Lucky9.LCMsgAddBetResp) */ {
- public:
-  inline LCMsgAddBetResp() : LCMsgAddBetResp(nullptr) {}
-  virtual ~LCMsgAddBetResp();
-
-  LCMsgAddBetResp(const LCMsgAddBetResp& from);
-  LCMsgAddBetResp(LCMsgAddBetResp&& from) noexcept
-    : LCMsgAddBetResp() {
-    *this = ::std::move(from);
-  }
-
-  inline LCMsgAddBetResp& operator=(const LCMsgAddBetResp& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline LCMsgAddBetResp& operator=(LCMsgAddBetResp&& from) noexcept {
-    if (GetArena() == from.GetArena()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return GetMetadataStatic().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return GetMetadataStatic().reflection;
-  }
-  static const LCMsgAddBetResp& default_instance();
-
-  static inline const LCMsgAddBetResp* internal_default_instance() {
-    return reinterpret_cast<const LCMsgAddBetResp*>(
-               &_LCMsgAddBetResp_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    9;
-
-  friend void swap(LCMsgAddBetResp& a, LCMsgAddBetResp& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(LCMsgAddBetResp* other) {
-    if (other == this) return;
-    if (GetArena() == other->GetArena()) {
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(LCMsgAddBetResp* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetArena() == other->GetArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline LCMsgAddBetResp* New() const final {
-    return CreateMaybeMessage<LCMsgAddBetResp>(nullptr);
-  }
-
-  LCMsgAddBetResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<LCMsgAddBetResp>(arena);
-  }
-  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const LCMsgAddBetResp& from);
-  void MergeFrom(const LCMsgAddBetResp& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
-      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  inline void SharedCtor();
-  inline void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(LCMsgAddBetResp* other);
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "Lucky9.LCMsgAddBetResp";
-  }
-  protected:
-  explicit LCMsgAddBetResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  private:
-  static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  public:
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-  private:
-  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
-    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Lucky9_2eproto);
-    return ::descriptor_table_Lucky9_2eproto.file_level_metadata[kIndexInFileMessages];
-  }
-
-  public:
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kAddScoreFieldNumber = 2,
-    kAddChairIdFieldNumber = 1,
-  };
-  // int64 add_score = 2;
-  void clear_add_score();
-  ::PROTOBUF_NAMESPACE_ID::int64 add_score() const;
-  void set_add_score(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_add_score() const;
-  void _internal_set_add_score(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
-  // int32 add_chair_id = 1;
-  void clear_add_chair_id();
-  ::PROTOBUF_NAMESPACE_ID::int32 add_chair_id() const;
-  void set_add_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_add_chair_id() const;
-  void _internal_set_add_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:Lucky9.LCMsgAddBetResp)
- private:
-  class _Internal;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int64 add_score_;
-  ::PROTOBUF_NAMESPACE_ID::int32 add_chair_id_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Lucky9::LCMsgSendCardInfo > infos_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Lucky9_2eproto;
 };
@@ -2161,31 +2116,11 @@ class LCMsgEndPlayerInfo PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kCardsFieldNumber = 5,
-    kGameScoreFieldNumber = 1,
-    kTaxFieldNumber = 2,
-    kTypeFieldNumber = 3,
-    kNumberFieldNumber = 4,
+    kGameScoreFieldNumber = 2,
+    kTaxFieldNumber = 3,
+    kChairIdFieldNumber = 1,
   };
-  // .Lucky9.LCMsgHandCards cards = 5;
-  bool has_cards() const;
-  private:
-  bool _internal_has_cards() const;
-  public:
-  void clear_cards();
-  const ::Lucky9::LCMsgHandCards& cards() const;
-  ::Lucky9::LCMsgHandCards* release_cards();
-  ::Lucky9::LCMsgHandCards* mutable_cards();
-  void set_allocated_cards(::Lucky9::LCMsgHandCards* cards);
-  private:
-  const ::Lucky9::LCMsgHandCards& _internal_cards() const;
-  ::Lucky9::LCMsgHandCards* _internal_mutable_cards();
-  public:
-  void unsafe_arena_set_allocated_cards(
-      ::Lucky9::LCMsgHandCards* cards);
-  ::Lucky9::LCMsgHandCards* unsafe_arena_release_cards();
-
-  // int64 game_score = 1;
+  // int64 game_score = 2;
   void clear_game_score();
   ::PROTOBUF_NAMESPACE_ID::int64 game_score() const;
   void set_game_score(::PROTOBUF_NAMESPACE_ID::int64 value);
@@ -2194,7 +2129,7 @@ class LCMsgEndPlayerInfo PROTOBUF_FINAL :
   void _internal_set_game_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int64 tax = 2;
+  // int64 tax = 3;
   void clear_tax();
   ::PROTOBUF_NAMESPACE_ID::int64 tax() const;
   void set_tax(::PROTOBUF_NAMESPACE_ID::int64 value);
@@ -2203,22 +2138,13 @@ class LCMsgEndPlayerInfo PROTOBUF_FINAL :
   void _internal_set_tax(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int64 type = 3;
-  void clear_type();
-  ::PROTOBUF_NAMESPACE_ID::int64 type() const;
-  void set_type(::PROTOBUF_NAMESPACE_ID::int64 value);
+  // int32 chair_id = 1;
+  void clear_chair_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_id() const;
+  void set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_type() const;
-  void _internal_set_type(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
-  // int64 number = 4;
-  void clear_number();
-  ::PROTOBUF_NAMESPACE_ID::int64 number() const;
-  void set_number(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_number() const;
-  void _internal_set_number(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_chair_id() const;
+  void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:Lucky9.LCMsgEndPlayerInfo)
@@ -2228,11 +2154,9 @@ class LCMsgEndPlayerInfo PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::Lucky9::LCMsgHandCards* cards_;
   ::PROTOBUF_NAMESPACE_ID::int64 game_score_;
   ::PROTOBUF_NAMESPACE_ID::int64 tax_;
-  ::PROTOBUF_NAMESPACE_ID::int64 type_;
-  ::PROTOBUF_NAMESPACE_ID::int64 number_;
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Lucky9_2eproto;
 };
@@ -2350,9 +2274,33 @@ class LCMsgGameResult PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kPlayersFieldNumber = 1,
+    kBisectListFieldNumber = 2,
+    kPlayersFieldNumber = 3,
+    kBisectGoldFieldNumber = 1,
   };
-  // repeated .Lucky9.LCMsgEndPlayerInfo players = 1;
+  // repeated int32 bisect_list = 2;
+  int bisect_list_size() const;
+  private:
+  int _internal_bisect_list_size() const;
+  public:
+  void clear_bisect_list();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_bisect_list(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_bisect_list() const;
+  void _internal_add_bisect_list(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_bisect_list();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 bisect_list(int index) const;
+  void set_bisect_list(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_bisect_list(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      bisect_list() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_bisect_list();
+
+  // repeated .Lucky9.LCMsgEndPlayerInfo players = 3;
   int players_size() const;
   private:
   int _internal_players_size() const;
@@ -2370,6 +2318,15 @@ class LCMsgGameResult PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Lucky9::LCMsgEndPlayerInfo >&
       players() const;
 
+  // int64 bisect_gold = 1;
+  void clear_bisect_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 bisect_gold() const;
+  void set_bisect_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_bisect_gold() const;
+  void _internal_set_bisect_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:Lucky9.LCMsgGameResult)
  private:
   class _Internal;
@@ -2377,7 +2334,10 @@ class LCMsgGameResult PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > bisect_list_;
+  mutable std::atomic<int> _bisect_list_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Lucky9::LCMsgEndPlayerInfo > players_;
+  ::PROTOBUF_NAMESPACE_ID::int64 bisect_gold_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Lucky9_2eproto;
 };
@@ -2603,24 +2563,24 @@ inline void LCMsgHandCards::set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:Lucky9.LCMsgHandCards.type)
 }
 
-// int32 number = 2;
-inline void LCMsgHandCards::clear_number() {
-  number_ = 0;
+// int32 card_sum = 2;
+inline void LCMsgHandCards::clear_card_sum() {
+  card_sum_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgHandCards::_internal_number() const {
-  return number_;
+inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgHandCards::_internal_card_sum() const {
+  return card_sum_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgHandCards::number() const {
-  // @@protoc_insertion_point(field_get:Lucky9.LCMsgHandCards.number)
-  return _internal_number();
+inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgHandCards::card_sum() const {
+  // @@protoc_insertion_point(field_get:Lucky9.LCMsgHandCards.card_sum)
+  return _internal_card_sum();
 }
-inline void LCMsgHandCards::_internal_set_number(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void LCMsgHandCards::_internal_set_card_sum(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
-  number_ = value;
+  card_sum_ = value;
 }
-inline void LCMsgHandCards::set_number(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_number(value);
-  // @@protoc_insertion_point(field_set:Lucky9.LCMsgHandCards.number)
+inline void LCMsgHandCards::set_card_sum(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_card_sum(value);
+  // @@protoc_insertion_point(field_set:Lucky9.LCMsgHandCards.card_sum)
 }
 
 // repeated int32 cards = 3;
@@ -2921,47 +2881,7 @@ inline void LCMsgPlayerInfo::set_allocated_handls(::Lucky9::LCMsgHandCards* hand
 
 // LCMsgSceneInfo
 
-// int64 max_score = 1;
-inline void LCMsgSceneInfo::clear_max_score() {
-  max_score_ = PROTOBUF_LONGLONG(0);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 LCMsgSceneInfo::_internal_max_score() const {
-  return max_score_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 LCMsgSceneInfo::max_score() const {
-  // @@protoc_insertion_point(field_get:Lucky9.LCMsgSceneInfo.max_score)
-  return _internal_max_score();
-}
-inline void LCMsgSceneInfo::_internal_set_max_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  
-  max_score_ = value;
-}
-inline void LCMsgSceneInfo::set_max_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_max_score(value);
-  // @@protoc_insertion_point(field_set:Lucky9.LCMsgSceneInfo.max_score)
-}
-
-// int64 table_max_score = 2;
-inline void LCMsgSceneInfo::clear_table_max_score() {
-  table_max_score_ = PROTOBUF_LONGLONG(0);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 LCMsgSceneInfo::_internal_table_max_score() const {
-  return table_max_score_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 LCMsgSceneInfo::table_max_score() const {
-  // @@protoc_insertion_point(field_get:Lucky9.LCMsgSceneInfo.table_max_score)
-  return _internal_table_max_score();
-}
-inline void LCMsgSceneInfo::_internal_set_table_max_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  
-  table_max_score_ = value;
-}
-inline void LCMsgSceneInfo::set_table_max_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_table_max_score(value);
-  // @@protoc_insertion_point(field_set:Lucky9.LCMsgSceneInfo.table_max_score)
-}
-
-// int64 cell_score = 3;
+// int64 cell_score = 1;
 inline void LCMsgSceneInfo::clear_cell_score() {
   cell_score_ = PROTOBUF_LONGLONG(0);
 }
@@ -2981,7 +2901,7 @@ inline void LCMsgSceneInfo::set_cell_score(::PROTOBUF_NAMESPACE_ID::int64 value)
   // @@protoc_insertion_point(field_set:Lucky9.LCMsgSceneInfo.cell_score)
 }
 
-// int32 table_state = 4;
+// int32 table_state = 2;
 inline void LCMsgSceneInfo::clear_table_state() {
   table_state_ = 0;
 }
@@ -3001,7 +2921,7 @@ inline void LCMsgSceneInfo::set_table_state(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:Lucky9.LCMsgSceneInfo.table_state)
 }
 
-// int32 table_ronud = 5;
+// int32 table_ronud = 3;
 inline void LCMsgSceneInfo::clear_table_ronud() {
   table_ronud_ = 0;
 }
@@ -3021,27 +2941,27 @@ inline void LCMsgSceneInfo::set_table_ronud(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:Lucky9.LCMsgSceneInfo.table_ronud)
 }
 
-// int64 total_bet_score = 6;
-inline void LCMsgSceneInfo::clear_total_bet_score() {
-  total_bet_score_ = PROTOBUF_LONGLONG(0);
+// int64 total_enter_gold = 4;
+inline void LCMsgSceneInfo::clear_total_enter_gold() {
+  total_enter_gold_ = PROTOBUF_LONGLONG(0);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 LCMsgSceneInfo::_internal_total_bet_score() const {
-  return total_bet_score_;
+inline ::PROTOBUF_NAMESPACE_ID::int64 LCMsgSceneInfo::_internal_total_enter_gold() const {
+  return total_enter_gold_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 LCMsgSceneInfo::total_bet_score() const {
-  // @@protoc_insertion_point(field_get:Lucky9.LCMsgSceneInfo.total_bet_score)
-  return _internal_total_bet_score();
+inline ::PROTOBUF_NAMESPACE_ID::int64 LCMsgSceneInfo::total_enter_gold() const {
+  // @@protoc_insertion_point(field_get:Lucky9.LCMsgSceneInfo.total_enter_gold)
+  return _internal_total_enter_gold();
 }
-inline void LCMsgSceneInfo::_internal_set_total_bet_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void LCMsgSceneInfo::_internal_set_total_enter_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
   
-  total_bet_score_ = value;
+  total_enter_gold_ = value;
 }
-inline void LCMsgSceneInfo::set_total_bet_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_total_bet_score(value);
-  // @@protoc_insertion_point(field_set:Lucky9.LCMsgSceneInfo.total_bet_score)
+inline void LCMsgSceneInfo::set_total_enter_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_total_enter_gold(value);
+  // @@protoc_insertion_point(field_set:Lucky9.LCMsgSceneInfo.total_enter_gold)
 }
 
-// int32 banker_chair_id = 8;
+// int32 banker_chair_id = 10;
 inline void LCMsgSceneInfo::clear_banker_chair_id() {
   banker_chair_id_ = 0;
 }
@@ -3144,26 +3064,6 @@ LCMsgSceneInfo::player_infos() const {
 
 // LCMsgGameStartResp
 
-// int32 table_ronud = 1;
-inline void LCMsgGameStartResp::clear_table_ronud() {
-  table_ronud_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgGameStartResp::_internal_table_ronud() const {
-  return table_ronud_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgGameStartResp::table_ronud() const {
-  // @@protoc_insertion_point(field_get:Lucky9.LCMsgGameStartResp.table_ronud)
-  return _internal_table_ronud();
-}
-inline void LCMsgGameStartResp::_internal_set_table_ronud(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  table_ronud_ = value;
-}
-inline void LCMsgGameStartResp::set_table_ronud(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_table_ronud(value);
-  // @@protoc_insertion_point(field_set:Lucky9.LCMsgGameStartResp.table_ronud)
-}
-
 // int32 total_enter_gold = 2;
 inline void LCMsgGameStartResp::clear_total_enter_gold() {
   total_enter_gold_ = 0;
@@ -3224,24 +3124,24 @@ inline void LCMsgGameStartResp::set_banker_chair_id(::PROTOBUF_NAMESPACE_ID::int
   // @@protoc_insertion_point(field_set:Lucky9.LCMsgGameStartResp.banker_chair_id)
 }
 
-// int32 noe_card = 5;
-inline void LCMsgGameStartResp::clear_noe_card() {
-  noe_card_ = 0;
+// int32 one_card = 5;
+inline void LCMsgGameStartResp::clear_one_card() {
+  one_card_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgGameStartResp::_internal_noe_card() const {
-  return noe_card_;
+inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgGameStartResp::_internal_one_card() const {
+  return one_card_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgGameStartResp::noe_card() const {
-  // @@protoc_insertion_point(field_get:Lucky9.LCMsgGameStartResp.noe_card)
-  return _internal_noe_card();
+inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgGameStartResp::one_card() const {
+  // @@protoc_insertion_point(field_get:Lucky9.LCMsgGameStartResp.one_card)
+  return _internal_one_card();
 }
-inline void LCMsgGameStartResp::_internal_set_noe_card(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void LCMsgGameStartResp::_internal_set_one_card(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
-  noe_card_ = value;
+  one_card_ = value;
 }
-inline void LCMsgGameStartResp::set_noe_card(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_noe_card(value);
-  // @@protoc_insertion_point(field_set:Lucky9.LCMsgGameStartResp.noe_card)
+inline void LCMsgGameStartResp::set_one_card(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_one_card(value);
+  // @@protoc_insertion_point(field_set:Lucky9.LCMsgGameStartResp.one_card)
 }
 
 // repeated int32 play_index = 8;
@@ -3289,53 +3189,6 @@ inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 LCMsgGameStartResp::mutable_play_index() {
   // @@protoc_insertion_point(field_mutable_list:Lucky9.LCMsgGameStartResp.play_index)
   return _internal_mutable_play_index();
-}
-
-// repeated int64 player_new_score = 9;
-inline int LCMsgGameStartResp::_internal_player_new_score_size() const {
-  return player_new_score_.size();
-}
-inline int LCMsgGameStartResp::player_new_score_size() const {
-  return _internal_player_new_score_size();
-}
-inline void LCMsgGameStartResp::clear_player_new_score() {
-  player_new_score_.Clear();
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 LCMsgGameStartResp::_internal_player_new_score(int index) const {
-  return player_new_score_.Get(index);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 LCMsgGameStartResp::player_new_score(int index) const {
-  // @@protoc_insertion_point(field_get:Lucky9.LCMsgGameStartResp.player_new_score)
-  return _internal_player_new_score(index);
-}
-inline void LCMsgGameStartResp::set_player_new_score(int index, ::PROTOBUF_NAMESPACE_ID::int64 value) {
-  player_new_score_.Set(index, value);
-  // @@protoc_insertion_point(field_set:Lucky9.LCMsgGameStartResp.player_new_score)
-}
-inline void LCMsgGameStartResp::_internal_add_player_new_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  player_new_score_.Add(value);
-}
-inline void LCMsgGameStartResp::add_player_new_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_add_player_new_score(value);
-  // @@protoc_insertion_point(field_add:Lucky9.LCMsgGameStartResp.player_new_score)
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
-LCMsgGameStartResp::_internal_player_new_score() const {
-  return player_new_score_;
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
-LCMsgGameStartResp::player_new_score() const {
-  // @@protoc_insertion_point(field_list:Lucky9.LCMsgGameStartResp.player_new_score)
-  return _internal_player_new_score();
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
-LCMsgGameStartResp::_internal_mutable_player_new_score() {
-  return &player_new_score_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
-LCMsgGameStartResp::mutable_player_new_score() {
-  // @@protoc_insertion_point(field_mutable_list:Lucky9.LCMsgGameStartResp.player_new_score)
-  return _internal_mutable_player_new_score();
 }
 
 // -------------------------------------------------------------------
@@ -3426,190 +3279,285 @@ inline void LCMsgAction::set_bet_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   // @@protoc_insertion_point(field_set:Lucky9.LCMsgAction.bet_score)
 }
 
+// bool is_get = 3;
+inline void LCMsgAction::clear_is_get() {
+  is_get_ = false;
+}
+inline bool LCMsgAction::_internal_is_get() const {
+  return is_get_;
+}
+inline bool LCMsgAction::is_get() const {
+  // @@protoc_insertion_point(field_get:Lucky9.LCMsgAction.is_get)
+  return _internal_is_get();
+}
+inline void LCMsgAction::_internal_set_is_get(bool value) {
+  
+  is_get_ = value;
+}
+inline void LCMsgAction::set_is_get(bool value) {
+  _internal_set_is_get(value);
+  // @@protoc_insertion_point(field_set:Lucky9.LCMsgAction.is_get)
+}
+
+// -------------------------------------------------------------------
+
+// LCMsgActionResp
+
+// int32 act = 1;
+inline void LCMsgActionResp::clear_act() {
+  act_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgActionResp::_internal_act() const {
+  return act_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgActionResp::act() const {
+  // @@protoc_insertion_point(field_get:Lucky9.LCMsgActionResp.act)
+  return _internal_act();
+}
+inline void LCMsgActionResp::_internal_set_act(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  act_ = value;
+}
+inline void LCMsgActionResp::set_act(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_act(value);
+  // @@protoc_insertion_point(field_set:Lucky9.LCMsgActionResp.act)
+}
+
+// int32 chair_id = 2;
+inline void LCMsgActionResp::clear_chair_id() {
+  chair_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgActionResp::_internal_chair_id() const {
+  return chair_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgActionResp::chair_id() const {
+  // @@protoc_insertion_point(field_get:Lucky9.LCMsgActionResp.chair_id)
+  return _internal_chair_id();
+}
+inline void LCMsgActionResp::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  chair_id_ = value;
+}
+inline void LCMsgActionResp::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_chair_id(value);
+  // @@protoc_insertion_point(field_set:Lucky9.LCMsgActionResp.chair_id)
+}
+
+// int64 bet_score = 3;
+inline void LCMsgActionResp::clear_bet_score() {
+  bet_score_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 LCMsgActionResp::_internal_bet_score() const {
+  return bet_score_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 LCMsgActionResp::bet_score() const {
+  // @@protoc_insertion_point(field_get:Lucky9.LCMsgActionResp.bet_score)
+  return _internal_bet_score();
+}
+inline void LCMsgActionResp::_internal_set_bet_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  bet_score_ = value;
+}
+inline void LCMsgActionResp::set_bet_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_bet_score(value);
+  // @@protoc_insertion_point(field_set:Lucky9.LCMsgActionResp.bet_score)
+}
+
+// bool is_get = 4;
+inline void LCMsgActionResp::clear_is_get() {
+  is_get_ = false;
+}
+inline bool LCMsgActionResp::_internal_is_get() const {
+  return is_get_;
+}
+inline bool LCMsgActionResp::is_get() const {
+  // @@protoc_insertion_point(field_get:Lucky9.LCMsgActionResp.is_get)
+  return _internal_is_get();
+}
+inline void LCMsgActionResp::_internal_set_is_get(bool value) {
+  
+  is_get_ = value;
+}
+inline void LCMsgActionResp::set_is_get(bool value) {
+  _internal_set_is_get(value);
+  // @@protoc_insertion_point(field_set:Lucky9.LCMsgActionResp.is_get)
+}
+
+// -------------------------------------------------------------------
+
+// LCMsgSendCardInfo
+
+// int32 chair_id = 1;
+inline void LCMsgSendCardInfo::clear_chair_id() {
+  chair_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgSendCardInfo::_internal_chair_id() const {
+  return chair_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgSendCardInfo::chair_id() const {
+  // @@protoc_insertion_point(field_get:Lucky9.LCMsgSendCardInfo.chair_id)
+  return _internal_chair_id();
+}
+inline void LCMsgSendCardInfo::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  chair_id_ = value;
+}
+inline void LCMsgSendCardInfo::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_chair_id(value);
+  // @@protoc_insertion_point(field_set:Lucky9.LCMsgSendCardInfo.chair_id)
+}
+
+// .Lucky9.LCMsgHandCards hand_cards = 2;
+inline bool LCMsgSendCardInfo::_internal_has_hand_cards() const {
+  return this != internal_default_instance() && hand_cards_ != nullptr;
+}
+inline bool LCMsgSendCardInfo::has_hand_cards() const {
+  return _internal_has_hand_cards();
+}
+inline void LCMsgSendCardInfo::clear_hand_cards() {
+  if (GetArena() == nullptr && hand_cards_ != nullptr) {
+    delete hand_cards_;
+  }
+  hand_cards_ = nullptr;
+}
+inline const ::Lucky9::LCMsgHandCards& LCMsgSendCardInfo::_internal_hand_cards() const {
+  const ::Lucky9::LCMsgHandCards* p = hand_cards_;
+  return p != nullptr ? *p : reinterpret_cast<const ::Lucky9::LCMsgHandCards&>(
+      ::Lucky9::_LCMsgHandCards_default_instance_);
+}
+inline const ::Lucky9::LCMsgHandCards& LCMsgSendCardInfo::hand_cards() const {
+  // @@protoc_insertion_point(field_get:Lucky9.LCMsgSendCardInfo.hand_cards)
+  return _internal_hand_cards();
+}
+inline void LCMsgSendCardInfo::unsafe_arena_set_allocated_hand_cards(
+    ::Lucky9::LCMsgHandCards* hand_cards) {
+  if (GetArena() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(hand_cards_);
+  }
+  hand_cards_ = hand_cards;
+  if (hand_cards) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:Lucky9.LCMsgSendCardInfo.hand_cards)
+}
+inline ::Lucky9::LCMsgHandCards* LCMsgSendCardInfo::release_hand_cards() {
+  
+  ::Lucky9::LCMsgHandCards* temp = hand_cards_;
+  hand_cards_ = nullptr;
+  if (GetArena() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+  return temp;
+}
+inline ::Lucky9::LCMsgHandCards* LCMsgSendCardInfo::unsafe_arena_release_hand_cards() {
+  // @@protoc_insertion_point(field_release:Lucky9.LCMsgSendCardInfo.hand_cards)
+  
+  ::Lucky9::LCMsgHandCards* temp = hand_cards_;
+  hand_cards_ = nullptr;
+  return temp;
+}
+inline ::Lucky9::LCMsgHandCards* LCMsgSendCardInfo::_internal_mutable_hand_cards() {
+  
+  if (hand_cards_ == nullptr) {
+    auto* p = CreateMaybeMessage<::Lucky9::LCMsgHandCards>(GetArena());
+    hand_cards_ = p;
+  }
+  return hand_cards_;
+}
+inline ::Lucky9::LCMsgHandCards* LCMsgSendCardInfo::mutable_hand_cards() {
+  // @@protoc_insertion_point(field_mutable:Lucky9.LCMsgSendCardInfo.hand_cards)
+  return _internal_mutable_hand_cards();
+}
+inline void LCMsgSendCardInfo::set_allocated_hand_cards(::Lucky9::LCMsgHandCards* hand_cards) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  if (message_arena == nullptr) {
+    delete hand_cards_;
+  }
+  if (hand_cards) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(hand_cards);
+    if (message_arena != submessage_arena) {
+      hand_cards = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, hand_cards, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  hand_cards_ = hand_cards;
+  // @@protoc_insertion_point(field_set_allocated:Lucky9.LCMsgSendCardInfo.hand_cards)
+}
+
 // -------------------------------------------------------------------
 
 // LCMsgSendCardResp
 
-// int32 chair_id = 1;
-inline void LCMsgSendCardResp::clear_chair_id() {
-  chair_id_ = 0;
+// repeated .Lucky9.LCMsgSendCardInfo infos = 1;
+inline int LCMsgSendCardResp::_internal_infos_size() const {
+  return infos_.size();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgSendCardResp::_internal_chair_id() const {
-  return chair_id_;
+inline int LCMsgSendCardResp::infos_size() const {
+  return _internal_infos_size();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgSendCardResp::chair_id() const {
-  // @@protoc_insertion_point(field_get:Lucky9.LCMsgSendCardResp.chair_id)
-  return _internal_chair_id();
+inline void LCMsgSendCardResp::clear_infos() {
+  infos_.Clear();
 }
-inline void LCMsgSendCardResp::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  chair_id_ = value;
+inline ::Lucky9::LCMsgSendCardInfo* LCMsgSendCardResp::mutable_infos(int index) {
+  // @@protoc_insertion_point(field_mutable:Lucky9.LCMsgSendCardResp.infos)
+  return infos_.Mutable(index);
 }
-inline void LCMsgSendCardResp::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:Lucky9.LCMsgSendCardResp.chair_id)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Lucky9::LCMsgSendCardInfo >*
+LCMsgSendCardResp::mutable_infos() {
+  // @@protoc_insertion_point(field_mutable_list:Lucky9.LCMsgSendCardResp.infos)
+  return &infos_;
 }
-
-// int32 card_type = 2;
-inline void LCMsgSendCardResp::clear_card_type() {
-  card_type_ = 0;
+inline const ::Lucky9::LCMsgSendCardInfo& LCMsgSendCardResp::_internal_infos(int index) const {
+  return infos_.Get(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgSendCardResp::_internal_card_type() const {
-  return card_type_;
+inline const ::Lucky9::LCMsgSendCardInfo& LCMsgSendCardResp::infos(int index) const {
+  // @@protoc_insertion_point(field_get:Lucky9.LCMsgSendCardResp.infos)
+  return _internal_infos(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgSendCardResp::card_type() const {
-  // @@protoc_insertion_point(field_get:Lucky9.LCMsgSendCardResp.card_type)
-  return _internal_card_type();
+inline ::Lucky9::LCMsgSendCardInfo* LCMsgSendCardResp::_internal_add_infos() {
+  return infos_.Add();
 }
-inline void LCMsgSendCardResp::_internal_set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  card_type_ = value;
+inline ::Lucky9::LCMsgSendCardInfo* LCMsgSendCardResp::add_infos() {
+  // @@protoc_insertion_point(field_add:Lucky9.LCMsgSendCardResp.infos)
+  return _internal_add_infos();
 }
-inline void LCMsgSendCardResp::set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_card_type(value);
-  // @@protoc_insertion_point(field_set:Lucky9.LCMsgSendCardResp.card_type)
-}
-
-// repeated int32 cards = 5;
-inline int LCMsgSendCardResp::_internal_cards_size() const {
-  return cards_.size();
-}
-inline int LCMsgSendCardResp::cards_size() const {
-  return _internal_cards_size();
-}
-inline void LCMsgSendCardResp::clear_cards() {
-  cards_.Clear();
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgSendCardResp::_internal_cards(int index) const {
-  return cards_.Get(index);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgSendCardResp::cards(int index) const {
-  // @@protoc_insertion_point(field_get:Lucky9.LCMsgSendCardResp.cards)
-  return _internal_cards(index);
-}
-inline void LCMsgSendCardResp::set_cards(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
-  cards_.Set(index, value);
-  // @@protoc_insertion_point(field_set:Lucky9.LCMsgSendCardResp.cards)
-}
-inline void LCMsgSendCardResp::_internal_add_cards(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  cards_.Add(value);
-}
-inline void LCMsgSendCardResp::add_cards(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_add_cards(value);
-  // @@protoc_insertion_point(field_add:Lucky9.LCMsgSendCardResp.cards)
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-LCMsgSendCardResp::_internal_cards() const {
-  return cards_;
-}
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-LCMsgSendCardResp::cards() const {
-  // @@protoc_insertion_point(field_list:Lucky9.LCMsgSendCardResp.cards)
-  return _internal_cards();
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-LCMsgSendCardResp::_internal_mutable_cards() {
-  return &cards_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-LCMsgSendCardResp::mutable_cards() {
-  // @@protoc_insertion_point(field_mutable_list:Lucky9.LCMsgSendCardResp.cards)
-  return _internal_mutable_cards();
-}
-
-// -------------------------------------------------------------------
-
-// LCMsgGetCardResp
-
-// int32 chair_id = 1;
-inline void LCMsgGetCardResp::clear_chair_id() {
-  chair_id_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgGetCardResp::_internal_chair_id() const {
-  return chair_id_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgGetCardResp::chair_id() const {
-  // @@protoc_insertion_point(field_get:Lucky9.LCMsgGetCardResp.chair_id)
-  return _internal_chair_id();
-}
-inline void LCMsgGetCardResp::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  chair_id_ = value;
-}
-inline void LCMsgGetCardResp::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:Lucky9.LCMsgGetCardResp.chair_id)
-}
-
-// int32 is_get = 2;
-inline void LCMsgGetCardResp::clear_is_get() {
-  is_get_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgGetCardResp::_internal_is_get() const {
-  return is_get_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgGetCardResp::is_get() const {
-  // @@protoc_insertion_point(field_get:Lucky9.LCMsgGetCardResp.is_get)
-  return _internal_is_get();
-}
-inline void LCMsgGetCardResp::_internal_set_is_get(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  is_get_ = value;
-}
-inline void LCMsgGetCardResp::set_is_get(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_is_get(value);
-  // @@protoc_insertion_point(field_set:Lucky9.LCMsgGetCardResp.is_get)
-}
-
-// -------------------------------------------------------------------
-
-// LCMsgAddBetResp
-
-// int32 add_chair_id = 1;
-inline void LCMsgAddBetResp::clear_add_chair_id() {
-  add_chair_id_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgAddBetResp::_internal_add_chair_id() const {
-  return add_chair_id_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgAddBetResp::add_chair_id() const {
-  // @@protoc_insertion_point(field_get:Lucky9.LCMsgAddBetResp.add_chair_id)
-  return _internal_add_chair_id();
-}
-inline void LCMsgAddBetResp::_internal_set_add_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  add_chair_id_ = value;
-}
-inline void LCMsgAddBetResp::set_add_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_add_chair_id(value);
-  // @@protoc_insertion_point(field_set:Lucky9.LCMsgAddBetResp.add_chair_id)
-}
-
-// int64 add_score = 2;
-inline void LCMsgAddBetResp::clear_add_score() {
-  add_score_ = PROTOBUF_LONGLONG(0);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 LCMsgAddBetResp::_internal_add_score() const {
-  return add_score_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 LCMsgAddBetResp::add_score() const {
-  // @@protoc_insertion_point(field_get:Lucky9.LCMsgAddBetResp.add_score)
-  return _internal_add_score();
-}
-inline void LCMsgAddBetResp::_internal_set_add_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  
-  add_score_ = value;
-}
-inline void LCMsgAddBetResp::set_add_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_add_score(value);
-  // @@protoc_insertion_point(field_set:Lucky9.LCMsgAddBetResp.add_score)
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Lucky9::LCMsgSendCardInfo >&
+LCMsgSendCardResp::infos() const {
+  // @@protoc_insertion_point(field_list:Lucky9.LCMsgSendCardResp.infos)
+  return infos_;
 }
 
 // -------------------------------------------------------------------
 
 // LCMsgEndPlayerInfo
 
-// int64 game_score = 1;
+// int32 chair_id = 1;
+inline void LCMsgEndPlayerInfo::clear_chair_id() {
+  chair_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgEndPlayerInfo::_internal_chair_id() const {
+  return chair_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgEndPlayerInfo::chair_id() const {
+  // @@protoc_insertion_point(field_get:Lucky9.LCMsgEndPlayerInfo.chair_id)
+  return _internal_chair_id();
+}
+inline void LCMsgEndPlayerInfo::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  chair_id_ = value;
+}
+inline void LCMsgEndPlayerInfo::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_chair_id(value);
+  // @@protoc_insertion_point(field_set:Lucky9.LCMsgEndPlayerInfo.chair_id)
+}
+
+// int64 game_score = 2;
 inline void LCMsgEndPlayerInfo::clear_game_score() {
   game_score_ = PROTOBUF_LONGLONG(0);
 }
@@ -3629,7 +3577,7 @@ inline void LCMsgEndPlayerInfo::set_game_score(::PROTOBUF_NAMESPACE_ID::int64 va
   // @@protoc_insertion_point(field_set:Lucky9.LCMsgEndPlayerInfo.game_score)
 }
 
-// int64 tax = 2;
+// int64 tax = 3;
 inline void LCMsgEndPlayerInfo::clear_tax() {
   tax_ = PROTOBUF_LONGLONG(0);
 }
@@ -3649,134 +3597,78 @@ inline void LCMsgEndPlayerInfo::set_tax(::PROTOBUF_NAMESPACE_ID::int64 value) {
   // @@protoc_insertion_point(field_set:Lucky9.LCMsgEndPlayerInfo.tax)
 }
 
-// int64 type = 3;
-inline void LCMsgEndPlayerInfo::clear_type() {
-  type_ = PROTOBUF_LONGLONG(0);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 LCMsgEndPlayerInfo::_internal_type() const {
-  return type_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 LCMsgEndPlayerInfo::type() const {
-  // @@protoc_insertion_point(field_get:Lucky9.LCMsgEndPlayerInfo.type)
-  return _internal_type();
-}
-inline void LCMsgEndPlayerInfo::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  
-  type_ = value;
-}
-inline void LCMsgEndPlayerInfo::set_type(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_type(value);
-  // @@protoc_insertion_point(field_set:Lucky9.LCMsgEndPlayerInfo.type)
-}
-
-// int64 number = 4;
-inline void LCMsgEndPlayerInfo::clear_number() {
-  number_ = PROTOBUF_LONGLONG(0);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 LCMsgEndPlayerInfo::_internal_number() const {
-  return number_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 LCMsgEndPlayerInfo::number() const {
-  // @@protoc_insertion_point(field_get:Lucky9.LCMsgEndPlayerInfo.number)
-  return _internal_number();
-}
-inline void LCMsgEndPlayerInfo::_internal_set_number(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  
-  number_ = value;
-}
-inline void LCMsgEndPlayerInfo::set_number(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_number(value);
-  // @@protoc_insertion_point(field_set:Lucky9.LCMsgEndPlayerInfo.number)
-}
-
-// .Lucky9.LCMsgHandCards cards = 5;
-inline bool LCMsgEndPlayerInfo::_internal_has_cards() const {
-  return this != internal_default_instance() && cards_ != nullptr;
-}
-inline bool LCMsgEndPlayerInfo::has_cards() const {
-  return _internal_has_cards();
-}
-inline void LCMsgEndPlayerInfo::clear_cards() {
-  if (GetArena() == nullptr && cards_ != nullptr) {
-    delete cards_;
-  }
-  cards_ = nullptr;
-}
-inline const ::Lucky9::LCMsgHandCards& LCMsgEndPlayerInfo::_internal_cards() const {
-  const ::Lucky9::LCMsgHandCards* p = cards_;
-  return p != nullptr ? *p : reinterpret_cast<const ::Lucky9::LCMsgHandCards&>(
-      ::Lucky9::_LCMsgHandCards_default_instance_);
-}
-inline const ::Lucky9::LCMsgHandCards& LCMsgEndPlayerInfo::cards() const {
-  // @@protoc_insertion_point(field_get:Lucky9.LCMsgEndPlayerInfo.cards)
-  return _internal_cards();
-}
-inline void LCMsgEndPlayerInfo::unsafe_arena_set_allocated_cards(
-    ::Lucky9::LCMsgHandCards* cards) {
-  if (GetArena() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(cards_);
-  }
-  cards_ = cards;
-  if (cards) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:Lucky9.LCMsgEndPlayerInfo.cards)
-}
-inline ::Lucky9::LCMsgHandCards* LCMsgEndPlayerInfo::release_cards() {
-  
-  ::Lucky9::LCMsgHandCards* temp = cards_;
-  cards_ = nullptr;
-  if (GetArena() != nullptr) {
-    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
-  }
-  return temp;
-}
-inline ::Lucky9::LCMsgHandCards* LCMsgEndPlayerInfo::unsafe_arena_release_cards() {
-  // @@protoc_insertion_point(field_release:Lucky9.LCMsgEndPlayerInfo.cards)
-  
-  ::Lucky9::LCMsgHandCards* temp = cards_;
-  cards_ = nullptr;
-  return temp;
-}
-inline ::Lucky9::LCMsgHandCards* LCMsgEndPlayerInfo::_internal_mutable_cards() {
-  
-  if (cards_ == nullptr) {
-    auto* p = CreateMaybeMessage<::Lucky9::LCMsgHandCards>(GetArena());
-    cards_ = p;
-  }
-  return cards_;
-}
-inline ::Lucky9::LCMsgHandCards* LCMsgEndPlayerInfo::mutable_cards() {
-  // @@protoc_insertion_point(field_mutable:Lucky9.LCMsgEndPlayerInfo.cards)
-  return _internal_mutable_cards();
-}
-inline void LCMsgEndPlayerInfo::set_allocated_cards(::Lucky9::LCMsgHandCards* cards) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
-  if (message_arena == nullptr) {
-    delete cards_;
-  }
-  if (cards) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(cards);
-    if (message_arena != submessage_arena) {
-      cards = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, cards, submessage_arena);
-    }
-    
-  } else {
-    
-  }
-  cards_ = cards;
-  // @@protoc_insertion_point(field_set_allocated:Lucky9.LCMsgEndPlayerInfo.cards)
-}
-
 // -------------------------------------------------------------------
 
 // LCMsgGameResult
 
-// repeated .Lucky9.LCMsgEndPlayerInfo players = 1;
+// int64 bisect_gold = 1;
+inline void LCMsgGameResult::clear_bisect_gold() {
+  bisect_gold_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 LCMsgGameResult::_internal_bisect_gold() const {
+  return bisect_gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 LCMsgGameResult::bisect_gold() const {
+  // @@protoc_insertion_point(field_get:Lucky9.LCMsgGameResult.bisect_gold)
+  return _internal_bisect_gold();
+}
+inline void LCMsgGameResult::_internal_set_bisect_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  bisect_gold_ = value;
+}
+inline void LCMsgGameResult::set_bisect_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_bisect_gold(value);
+  // @@protoc_insertion_point(field_set:Lucky9.LCMsgGameResult.bisect_gold)
+}
+
+// repeated int32 bisect_list = 2;
+inline int LCMsgGameResult::_internal_bisect_list_size() const {
+  return bisect_list_.size();
+}
+inline int LCMsgGameResult::bisect_list_size() const {
+  return _internal_bisect_list_size();
+}
+inline void LCMsgGameResult::clear_bisect_list() {
+  bisect_list_.Clear();
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgGameResult::_internal_bisect_list(int index) const {
+  return bisect_list_.Get(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgGameResult::bisect_list(int index) const {
+  // @@protoc_insertion_point(field_get:Lucky9.LCMsgGameResult.bisect_list)
+  return _internal_bisect_list(index);
+}
+inline void LCMsgGameResult::set_bisect_list(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  bisect_list_.Set(index, value);
+  // @@protoc_insertion_point(field_set:Lucky9.LCMsgGameResult.bisect_list)
+}
+inline void LCMsgGameResult::_internal_add_bisect_list(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  bisect_list_.Add(value);
+}
+inline void LCMsgGameResult::add_bisect_list(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_bisect_list(value);
+  // @@protoc_insertion_point(field_add:Lucky9.LCMsgGameResult.bisect_list)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+LCMsgGameResult::_internal_bisect_list() const {
+  return bisect_list_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+LCMsgGameResult::bisect_list() const {
+  // @@protoc_insertion_point(field_list:Lucky9.LCMsgGameResult.bisect_list)
+  return _internal_bisect_list();
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+LCMsgGameResult::_internal_mutable_bisect_list() {
+  return &bisect_list_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+LCMsgGameResult::mutable_bisect_list() {
+  // @@protoc_insertion_point(field_mutable_list:Lucky9.LCMsgGameResult.bisect_list)
+  return _internal_mutable_bisect_list();
+}
+
+// repeated .Lucky9.LCMsgEndPlayerInfo players = 3;
 inline int LCMsgGameResult::_internal_players_size() const {
   return players_.size();
 }

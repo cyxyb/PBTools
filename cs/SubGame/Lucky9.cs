@@ -25,71 +25,69 @@ namespace Lucky9 {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChpQcm90by9TdWJHYW1lL0x1Y2t5OS5wcm90bxIGTHVja3k5IjEKD0xDTXNn",
-            "VGFibGVTdGF0ZRINCgVzdGF0ZRgBIAEoBRIPCgdvdXRfaW1lGAIgASgFIj0K",
-            "DkxDTXNnSGFuZENhcmRzEgwKBHR5cGUYASABKAUSDgoGbnVtYmVyGAIgASgF",
-            "Eg0KBWNhcmRzGAMgAygFIswBCg9MQ01zZ1BsYXllckluZm8SEAoIY2hhaXJf",
-            "aWQYASABKAUSEwoLcGxheV9zdGF0dXMYAiABKAUSEgoKcGxheWVyX2JldBgD",
-            "IAEoAxIRCgljYXJkX3R5cGUYBCABKAUSEAoIZ2V0X2NhcmQYBSABKAUSDAoE",
-            "Z29sZBgGIAEoAxIQCgh3aW5fZ29sZBgHIAEoAxIRCgl3aW5fY29udXQYCCAB",
-            "KAMSJgoGaGFuZGxzGAkgASgLMhYuTHVja3k5LkxDTXNnSGFuZENhcmRzIoEC",
-            "Cg5MQ01zZ1NjZW5lSW5mbxIRCgltYXhfc2NvcmUYASABKAMSFwoPdGFibGVf",
-            "bWF4X3Njb3JlGAIgASgDEhIKCmNlbGxfc2NvcmUYAyABKAMSEwoLdGFibGVf",
-            "c3RhdGUYBCABKAUSEwoLdGFibGVfcm9udWQYBSABKAUSFwoPdG90YWxfYmV0",
-            "X3Njb3JlGAYgASgDEhcKD2Jhbmtlcl9jaGFpcl9pZBgIIAEoBRIQCghvdXRf",
-            "dGltZRgLIAEoBRISCgp0b3RhbF90aW1lGAwgASgFEi0KDHBsYXllcl9pbmZv",
-            "cxgPIAMoCzIXLkx1Y2t5OS5MQ01zZ1BsYXllckluZm8itAEKEkxDTXNnR2Ft",
-            "ZVN0YXJ0UmVzcBITCgt0YWJsZV9yb251ZBgBIAEoBRIYChB0b3RhbF9lbnRl",
-            "cl9nb2xkGAIgASgFEhYKDmN1cl9lbnRlcl9nb2xkGAMgASgFEhcKD2Jhbmtl",
-            "cl9jaGFpcl9pZBgEIAEoBRIQCghub2VfY2FyZBgFIAEoBRISCgpwbGF5X2lu",
-            "ZGV4GAggAygFEhgKEHBsYXllcl9uZXdfc2NvcmUYCSADKAMiPwoVTENNc2dO",
-            "b3RpZnlBY3Rpb25SZXNwEhMKC2N1cnJlbnRfYWN0GAMgASgFEhEKCW9wZXJf",
-            "dGltZRgEIAEoBSItCgtMQ01zZ0FjdGlvbhILCgNhY3QYASABKAUSEQoJYmV0",
-            "X3Njb3JlGAIgASgDIkcKEUxDTXNnU2VuZENhcmRSZXNwEhAKCGNoYWlyX2lk",
-            "GAEgASgFEhEKCWNhcmRfdHlwZRgCIAEoBRINCgVjYXJkcxgFIAMoBSI0ChBM",
-            "Q01zZ0dldENhcmRSZXNwEhAKCGNoYWlyX2lkGAEgASgFEg4KBmlzX2dldBgC",
-            "IAEoBSI6Cg9MQ01zZ0FkZEJldFJlc3ASFAoMYWRkX2NoYWlyX2lkGAEgASgF",
-            "EhEKCWFkZF9zY29yZRgCIAEoAyJ6ChJMQ01zZ0VuZFBsYXllckluZm8SEgoK",
-            "Z2FtZV9zY29yZRgBIAEoAxILCgN0YXgYAiABKAMSDAoEdHlwZRgDIAEoAxIO",
-            "CgZudW1iZXIYBCABKAMSJQoFY2FyZHMYBSABKAsyFi5MdWNreTkuTENNc2dI",
-            "YW5kQ2FyZHMiPgoPTENNc2dHYW1lUmVzdWx0EisKB3BsYXllcnMYASADKAsy",
-            "Gi5MdWNreTkuTENNc2dFbmRQbGF5ZXJJbmZvIjUKFExDTXNnTm90aWZ5UGxh",
-            "eWVyQWN0EhAKCGNoYWlyX2lkGAEgASgFEgsKA2FjdBgCIAEoBSqdAQoPRUxD",
-            "TXNnR2FtZVN0YXRlEhAKDEdTX0xDOV9SRUFEWRAAEhAKDEdTX0xDOV9TVEFS",
-            "VBABEg4KCkdTX0xDOV9CRVQQAhIUChBHU19MQzlfU0VORF9DQVJEEAMSEwoP",
-            "R1NfTEM5X0dFVF9DQVJEEAQSGAoUR1NfTEM5X1RXT19TRU5EX0NBUkQQBRIR",
-            "Cg1HU19MQzlfUkVTVUxUEAYqPgoRRUxDTXNnUGxheWVyU3RhdGUSDAoIUFNf",
-            "UkVBRFkQABILCgdQU19QTEFZEAESDgoKUFNfVElNRU9VVBACKjUKDkVMQ01z",
-            "Z0NhcmRUeXBlEg0KCUxDX1NJTkdMRRAAEggKBExDXzkQARIKCgZMQ19NQVgQ",
-            "AipHChBFTENNc2dHYW1lQWN0aW9uEg0KCUludmFsZEFjdBAAEgoKBkFkZEJl",
-            "dBABEgsKB0dldENhcmQQAhILCgdOb3RDYXJkEAQqtgQKD0VMQ01zZ0lEU3Vi",
-            "R2FtZRIVChFNc2dJRFN1YkdhbWVfTnVsbBAAEh4KGk1zZ0lEU3ViR2FtZV9H",
-            "YW1lU3RhcnRSZXNwEAESIQodTXNnSURTdWJHYW1lX05vdGlmeUFjdGlvblJl",
-            "c3AQAhIXChNNc2dJRFN1YkdhbWVfQWN0aW9uEAMSGwoXTXNnSURTdWJHYW1l",
-            "X0FkZEJldFJlc3AQBBIdChlNc2dJRFN1YkdhbWVfU2VuZENhcmRSZXNwEAUS",
-            "HAoYTXNnSURTdWJHYW1lX0dldENhcmRSZXNwEAYSHwobTXNnSURTdWJHYW1l",
-            "X0dhbWVSZXN1bHRSZXNwEAkSIAocTXNnSURTdWJHYW1lX05vdGlmeVN0YXRl",
-            "UmVzcBAKEhwKGE1zZ0lEU3ViR2FtZV9UaW1lT3V0UmVzcBALEh0KGU1zZ0lE",
-            "U3ViR2FtZV9UaW1lT3V0UmVhZHkQDBIhCh1Nc2dJRFN1YkdhbWVfVGltZU91",
-            "dFJlYWR5UmVzcBANEiAKHE1zZ0lEU3ViR2FtZV9UaW1lT3V0S2lja1Jlc3AQ",
-            "DhImCiJNc2dJRFN1YkdhbWVfTm90aWZ5U3lzdGVtQ2hlYXRSZXNwEBQSIwof",
-            "TXNnSURTdWJHYW1lX05vdGlmeUNhcmRUeXBlUmVzcBAVEiAKHE1zZ0lEU3Vi",
-            "R2FtZV9Ob3RpZnlJc01heFJlc3AQFhIiCh5Nc2dJRFN1YkdhbWVfTm90aWZ5",
-            "TGFzdEFjdFJlc3AQF2IGcHJvdG8z"));
+            "VGFibGVTdGF0ZRINCgVzdGF0ZRgBIAEoBRIPCgdvdXRfaW1lGAIgASgFIj8K",
+            "DkxDTXNnSGFuZENhcmRzEgwKBHR5cGUYASABKAUSEAoIY2FyZF9zdW0YAiAB",
+            "KAUSDQoFY2FyZHMYAyADKAUizAEKD0xDTXNnUGxheWVySW5mbxIQCghjaGFp",
+            "cl9pZBgBIAEoBRITCgtwbGF5X3N0YXR1cxgCIAEoBRISCgpwbGF5ZXJfYmV0",
+            "GAMgASgDEhEKCWNhcmRfdHlwZRgEIAEoBRIQCghnZXRfY2FyZBgFIAEoBRIM",
+            "CgRnb2xkGAYgASgDEhAKCHdpbl9nb2xkGAcgASgDEhEKCXdpbl9jb251dBgI",
+            "IAEoAxImCgZoYW5kbHMYCSABKAsyFi5MdWNreTkuTENNc2dIYW5kQ2FyZHMi",
+            "1gEKDkxDTXNnU2NlbmVJbmZvEhIKCmNlbGxfc2NvcmUYASABKAMSEwoLdGFi",
+            "bGVfc3RhdGUYAiABKAUSEwoLdGFibGVfcm9udWQYAyABKAUSGAoQdG90YWxf",
+            "ZW50ZXJfZ29sZBgEIAEoAxIXCg9iYW5rZXJfY2hhaXJfaWQYCiABKAUSEAoI",
+            "b3V0X3RpbWUYCyABKAUSEgoKdG90YWxfdGltZRgMIAEoBRItCgxwbGF5ZXJf",
+            "aW5mb3MYDyADKAsyFy5MdWNreTkuTENNc2dQbGF5ZXJJbmZvIoUBChJMQ01z",
+            "Z0dhbWVTdGFydFJlc3ASGAoQdG90YWxfZW50ZXJfZ29sZBgCIAEoBRIWCg5j",
+            "dXJfZW50ZXJfZ29sZBgDIAEoBRIXCg9iYW5rZXJfY2hhaXJfaWQYBCABKAUS",
+            "EAoIb25lX2NhcmQYBSABKAUSEgoKcGxheV9pbmRleBgIIAMoBSI/ChVMQ01z",
+            "Z05vdGlmeUFjdGlvblJlc3ASEwoLY3VycmVudF9hY3QYAyABKAUSEQoJb3Bl",
+            "cl90aW1lGAQgASgFIj0KC0xDTXNnQWN0aW9uEgsKA2FjdBgBIAEoBRIRCgli",
+            "ZXRfc2NvcmUYAiABKAMSDgoGaXNfZ2V0GAMgASgIIlMKD0xDTXNnQWN0aW9u",
+            "UmVzcBILCgNhY3QYASABKAUSEAoIY2hhaXJfaWQYAiABKAUSEQoJYmV0X3Nj",
+            "b3JlGAMgASgDEg4KBmlzX2dldBgEIAEoCCJRChFMQ01zZ1NlbmRDYXJkSW5m",
+            "bxIQCghjaGFpcl9pZBgBIAEoBRIqCgpoYW5kX2NhcmRzGAIgASgLMhYuTHVj",
+            "a3k5LkxDTXNnSGFuZENhcmRzIj0KEUxDTXNnU2VuZENhcmRSZXNwEigKBWlu",
+            "Zm9zGAEgAygLMhkuTHVja3k5LkxDTXNnU2VuZENhcmRJbmZvIkcKEkxDTXNn",
+            "RW5kUGxheWVySW5mbxIQCghjaGFpcl9pZBgBIAEoBRISCgpnYW1lX3Njb3Jl",
+            "GAIgASgDEgsKA3RheBgDIAEoAyJoCg9MQ01zZ0dhbWVSZXN1bHQSEwoLYmlz",
+            "ZWN0X2dvbGQYASABKAMSEwoLYmlzZWN0X2xpc3QYAiADKAUSKwoHcGxheWVy",
+            "cxgDIAMoCzIaLkx1Y2t5OS5MQ01zZ0VuZFBsYXllckluZm8iNQoUTENNc2dO",
+            "b3RpZnlQbGF5ZXJBY3QSEAoIY2hhaXJfaWQYASABKAUSCwoDYWN0GAIgASgF",
+            "Kp0BCg9FTENNc2dHYW1lU3RhdGUSEAoMR1NfTEM5X1JFQURZEAASEAoMR1Nf",
+            "TEM5X1NUQVJUEAESDgoKR1NfTEM5X0JFVBACEhQKEEdTX0xDOV9TRU5EX0NB",
+            "UkQQAxITCg9HU19MQzlfR0VUX0NBUkQQBBIYChRHU19MQzlfVFdPX1NFTkRf",
+            "Q0FSRBAFEhEKDUdTX0xDOV9SRVNVTFQQBio+ChFFTENNc2dQbGF5ZXJTdGF0",
+            "ZRIMCghQU19SRUFEWRAAEgsKB1BTX1BMQVkQARIOCgpQU19USU1FT1VUEAIq",
+            "KQoORUxDTXNnQ2FyZFR5cGUSDQoJTENfU0lOR0xFEAASCAoETENfORABKkcK",
+            "EEVMQ01zZ0dhbWVBY3Rpb24SDQoJSW52YWxkQWN0EAASCgoGQWRkQmV0EAES",
+            "CwoHR2V0Q2FyZBACEgsKB05vdENhcmQQBCqYBAoPRUxDTXNnSURTdWJHYW1l",
+            "EhUKEU1zZ0lEU3ViR2FtZV9OdWxsEAASHgoaTXNnSURTdWJHYW1lX0dhbWVT",
+            "dGFydFJlc3AQARIhCh1Nc2dJRFN1YkdhbWVfTm90aWZ5QWN0aW9uUmVzcBAC",
+            "EhcKE01zZ0lEU3ViR2FtZV9BY3Rpb24QAxIbChdNc2dJRFN1YkdhbWVfQWRk",
+            "QmV0UmVzcBAEEh0KGU1zZ0lEU3ViR2FtZV9TZW5kQ2FyZFJlc3AQBRIfChtN",
+            "c2dJRFN1YkdhbWVfR2FtZVJlc3VsdFJlc3AQCRIgChxNc2dJRFN1YkdhbWVf",
+            "Tm90aWZ5U3RhdGVSZXNwEAoSHAoYTXNnSURTdWJHYW1lX1RpbWVPdXRSZXNw",
+            "EAsSHQoZTXNnSURTdWJHYW1lX1RpbWVPdXRSZWFkeRAMEiEKHU1zZ0lEU3Vi",
+            "R2FtZV9UaW1lT3V0UmVhZHlSZXNwEA0SIAocTXNnSURTdWJHYW1lX1RpbWVP",
+            "dXRLaWNrUmVzcBAOEiYKIk1zZ0lEU3ViR2FtZV9Ob3RpZnlTeXN0ZW1DaGVh",
+            "dFJlc3AQFBIjCh9Nc2dJRFN1YkdhbWVfTm90aWZ5Q2FyZFR5cGVSZXNwEBUS",
+            "IAocTXNnSURTdWJHYW1lX05vdGlmeUlzTWF4UmVzcBAWEiIKHk1zZ0lEU3Vi",
+            "R2FtZV9Ob3RpZnlMYXN0QWN0UmVzcBAXYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Lucky9.ELCMsgGameState), typeof(global::Lucky9.ELCMsgPlayerState), typeof(global::Lucky9.ELCMsgCardType), typeof(global::Lucky9.ELCMsgGameAction), typeof(global::Lucky9.ELCMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgTableState), global::Lucky9.LCMsgTableState.Parser, new[]{ "State", "OutIme" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgHandCards), global::Lucky9.LCMsgHandCards.Parser, new[]{ "Type", "Number", "Cards" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgHandCards), global::Lucky9.LCMsgHandCards.Parser, new[]{ "Type", "CardSum", "Cards" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgPlayerInfo), global::Lucky9.LCMsgPlayerInfo.Parser, new[]{ "ChairId", "PlayStatus", "PlayerBet", "CardType", "GetCard", "Gold", "WinGold", "WinConut", "Handls" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgSceneInfo), global::Lucky9.LCMsgSceneInfo.Parser, new[]{ "MaxScore", "TableMaxScore", "CellScore", "TableState", "TableRonud", "TotalBetScore", "BankerChairId", "OutTime", "TotalTime", "PlayerInfos" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgGameStartResp), global::Lucky9.LCMsgGameStartResp.Parser, new[]{ "TableRonud", "TotalEnterGold", "CurEnterGold", "BankerChairId", "NoeCard", "PlayIndex", "PlayerNewScore" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgSceneInfo), global::Lucky9.LCMsgSceneInfo.Parser, new[]{ "CellScore", "TableState", "TableRonud", "TotalEnterGold", "BankerChairId", "OutTime", "TotalTime", "PlayerInfos" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgGameStartResp), global::Lucky9.LCMsgGameStartResp.Parser, new[]{ "TotalEnterGold", "CurEnterGold", "BankerChairId", "OneCard", "PlayIndex" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgNotifyActionResp), global::Lucky9.LCMsgNotifyActionResp.Parser, new[]{ "CurrentAct", "OperTime" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgAction), global::Lucky9.LCMsgAction.Parser, new[]{ "Act", "BetScore" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgSendCardResp), global::Lucky9.LCMsgSendCardResp.Parser, new[]{ "ChairId", "CardType", "Cards" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgGetCardResp), global::Lucky9.LCMsgGetCardResp.Parser, new[]{ "ChairId", "IsGet" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgAddBetResp), global::Lucky9.LCMsgAddBetResp.Parser, new[]{ "AddChairId", "AddScore" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgEndPlayerInfo), global::Lucky9.LCMsgEndPlayerInfo.Parser, new[]{ "GameScore", "Tax", "Type", "Number", "Cards" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgGameResult), global::Lucky9.LCMsgGameResult.Parser, new[]{ "Players" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgAction), global::Lucky9.LCMsgAction.Parser, new[]{ "Act", "BetScore", "IsGet" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgActionResp), global::Lucky9.LCMsgActionResp.Parser, new[]{ "Act", "ChairId", "BetScore", "IsGet" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgSendCardInfo), global::Lucky9.LCMsgSendCardInfo.Parser, new[]{ "ChairId", "HandCards" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgSendCardResp), global::Lucky9.LCMsgSendCardResp.Parser, new[]{ "Infos" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgEndPlayerInfo), global::Lucky9.LCMsgEndPlayerInfo.Parser, new[]{ "ChairId", "GameScore", "Tax" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgGameResult), global::Lucky9.LCMsgGameResult.Parser, new[]{ "BisectGold", "BisectList", "Players" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgNotifyPlayerAct), global::Lucky9.LCMsgNotifyPlayerAct.Parser, new[]{ "ChairId", "Act" }, null, null, null, null)
           }));
     }
@@ -154,17 +152,13 @@ namespace Lucky9 {
   /// </summary>
   public enum ELCMsgCardType {
     /// <summary>
-    ///扑克类型
+    ///普通点数
     /// </summary>
     [pbr::OriginalName("LC_SINGLE")] LcSingle = 0,
     /// <summary>
-    ///9类型
+    ///lucky9类型
     /// </summary>
     [pbr::OriginalName("LC_9")] Lc9 = 1,
-    /// <summary>
-    ///最大牌型
-    /// </summary>
-    [pbr::OriginalName("LC_MAX")] LcMax = 2,
   }
 
   /// <summary>
@@ -196,7 +190,7 @@ namespace Lucky9 {
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_GameStartResp")] MsgIdsubGameGameStartResp = 1,
     /// <summary>
-    ///玩家操作(LCMsgNotifyActionResp)
+    ///通知玩家操作(LCMsgNotifyActionResp)
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_NotifyActionResp")] MsgIdsubGameNotifyActionResp = 2,
     /// <summary>
@@ -204,17 +198,13 @@ namespace Lucky9 {
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_Action")] MsgIdsubGameAction = 3,
     /// <summary>
-    ///玩家下注(LCMsgAddBetResp)
+    ///玩家操作返回(LCMsgActionResp)
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_AddBetResp")] MsgIdsubGameAddBetResp = 4,
     /// <summary>
     ///发牌(LCMsgSendCardResp)
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_SendCardResp")] MsgIdsubGameSendCardResp = 5,
-    /// <summary>
-    ///玩家是否要牌返回(LCMsgGetCardResp)
-    /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_GetCardResp")] MsgIdsubGameGetCardResp = 6,
     /// <summary>
     ///结算(LCMsgGameResult)
     /// </summary>
@@ -504,7 +494,7 @@ namespace Lucky9 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public LCMsgHandCards(LCMsgHandCards other) : this() {
       type_ = other.type_;
-      number_ = other.number_;
+      cardSum_ = other.cardSum_;
       cards_ = other.cards_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -528,17 +518,17 @@ namespace Lucky9 {
       }
     }
 
-    /// <summary>Field number for the "number" field.</summary>
-    public const int NumberFieldNumber = 2;
-    private int number_;
+    /// <summary>Field number for the "card_sum" field.</summary>
+    public const int CardSumFieldNumber = 2;
+    private int cardSum_;
     /// <summary>
     ///点数
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Number {
-      get { return number_; }
+    public int CardSum {
+      get { return cardSum_; }
       set {
-        number_ = value;
+        cardSum_ = value;
       }
     }
 
@@ -569,7 +559,7 @@ namespace Lucky9 {
         return true;
       }
       if (Type != other.Type) return false;
-      if (Number != other.Number) return false;
+      if (CardSum != other.CardSum) return false;
       if(!cards_.Equals(other.cards_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -578,7 +568,7 @@ namespace Lucky9 {
     public override int GetHashCode() {
       int hash = 1;
       if (Type != 0) hash ^= Type.GetHashCode();
-      if (Number != 0) hash ^= Number.GetHashCode();
+      if (CardSum != 0) hash ^= CardSum.GetHashCode();
       hash ^= cards_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -600,9 +590,9 @@ namespace Lucky9 {
         output.WriteRawTag(8);
         output.WriteInt32(Type);
       }
-      if (Number != 0) {
+      if (CardSum != 0) {
         output.WriteRawTag(16);
-        output.WriteInt32(Number);
+        output.WriteInt32(CardSum);
       }
       cards_.WriteTo(output, _repeated_cards_codec);
       if (_unknownFields != null) {
@@ -618,9 +608,9 @@ namespace Lucky9 {
         output.WriteRawTag(8);
         output.WriteInt32(Type);
       }
-      if (Number != 0) {
+      if (CardSum != 0) {
         output.WriteRawTag(16);
-        output.WriteInt32(Number);
+        output.WriteInt32(CardSum);
       }
       cards_.WriteTo(ref output, _repeated_cards_codec);
       if (_unknownFields != null) {
@@ -635,8 +625,8 @@ namespace Lucky9 {
       if (Type != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Type);
       }
-      if (Number != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Number);
+      if (CardSum != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CardSum);
       }
       size += cards_.CalculateSize(_repeated_cards_codec);
       if (_unknownFields != null) {
@@ -653,8 +643,8 @@ namespace Lucky9 {
       if (other.Type != 0) {
         Type = other.Type;
       }
-      if (other.Number != 0) {
-        Number = other.Number;
+      if (other.CardSum != 0) {
+        CardSum = other.CardSum;
       }
       cards_.Add(other.cards_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -676,7 +666,7 @@ namespace Lucky9 {
             break;
           }
           case 16: {
-            Number = input.ReadInt32();
+            CardSum = input.ReadInt32();
             break;
           }
           case 26:
@@ -703,7 +693,7 @@ namespace Lucky9 {
             break;
           }
           case 16: {
-            Number = input.ReadInt32();
+            CardSum = input.ReadInt32();
             break;
           }
           case 26:
@@ -1246,12 +1236,10 @@ namespace Lucky9 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public LCMsgSceneInfo(LCMsgSceneInfo other) : this() {
-      maxScore_ = other.maxScore_;
-      tableMaxScore_ = other.tableMaxScore_;
       cellScore_ = other.cellScore_;
       tableState_ = other.tableState_;
       tableRonud_ = other.tableRonud_;
-      totalBetScore_ = other.totalBetScore_;
+      totalEnterGold_ = other.totalEnterGold_;
       bankerChairId_ = other.bankerChairId_;
       outTime_ = other.outTime_;
       totalTime_ = other.totalTime_;
@@ -1264,36 +1252,8 @@ namespace Lucky9 {
       return new LCMsgSceneInfo(this);
     }
 
-    /// <summary>Field number for the "max_score" field.</summary>
-    public const int MaxScoreFieldNumber = 1;
-    private long maxScore_;
-    /// <summary>
-    ///最大下注
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long MaxScore {
-      get { return maxScore_; }
-      set {
-        maxScore_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "table_max_score" field.</summary>
-    public const int TableMaxScoreFieldNumber = 2;
-    private long tableMaxScore_;
-    /// <summary>
-    ///最大下注
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long TableMaxScore {
-      get { return tableMaxScore_; }
-      set {
-        tableMaxScore_ = value;
-      }
-    }
-
     /// <summary>Field number for the "cell_score" field.</summary>
-    public const int CellScoreFieldNumber = 3;
+    public const int CellScoreFieldNumber = 1;
     private long cellScore_;
     /// <summary>
     ///底分
@@ -1307,7 +1267,7 @@ namespace Lucky9 {
     }
 
     /// <summary>Field number for the "table_state" field.</summary>
-    public const int TableStateFieldNumber = 4;
+    public const int TableStateFieldNumber = 2;
     private int tableState_;
     /// <summary>
     ///桌子状态
@@ -1321,7 +1281,7 @@ namespace Lucky9 {
     }
 
     /// <summary>Field number for the "table_ronud" field.</summary>
-    public const int TableRonudFieldNumber = 5;
+    public const int TableRonudFieldNumber = 3;
     private int tableRonud_;
     /// <summary>
     ///桌子轮数
@@ -1334,22 +1294,22 @@ namespace Lucky9 {
       }
     }
 
-    /// <summary>Field number for the "total_bet_score" field.</summary>
-    public const int TotalBetScoreFieldNumber = 6;
-    private long totalBetScore_;
+    /// <summary>Field number for the "total_enter_gold" field.</summary>
+    public const int TotalEnterGoldFieldNumber = 4;
+    private long totalEnterGold_;
     /// <summary>
-    ///桌内总下注
+    ///当前5轮内房费
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long TotalBetScore {
-      get { return totalBetScore_; }
+    public long TotalEnterGold {
+      get { return totalEnterGold_; }
       set {
-        totalBetScore_ = value;
+        totalEnterGold_ = value;
       }
     }
 
     /// <summary>Field number for the "banker_chair_id" field.</summary>
-    public const int BankerChairIdFieldNumber = 8;
+    public const int BankerChairIdFieldNumber = 10;
     private int bankerChairId_;
     /// <summary>
     ///庄家椅子号
@@ -1416,12 +1376,10 @@ namespace Lucky9 {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (MaxScore != other.MaxScore) return false;
-      if (TableMaxScore != other.TableMaxScore) return false;
       if (CellScore != other.CellScore) return false;
       if (TableState != other.TableState) return false;
       if (TableRonud != other.TableRonud) return false;
-      if (TotalBetScore != other.TotalBetScore) return false;
+      if (TotalEnterGold != other.TotalEnterGold) return false;
       if (BankerChairId != other.BankerChairId) return false;
       if (OutTime != other.OutTime) return false;
       if (TotalTime != other.TotalTime) return false;
@@ -1432,12 +1390,10 @@ namespace Lucky9 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (MaxScore != 0L) hash ^= MaxScore.GetHashCode();
-      if (TableMaxScore != 0L) hash ^= TableMaxScore.GetHashCode();
       if (CellScore != 0L) hash ^= CellScore.GetHashCode();
       if (TableState != 0) hash ^= TableState.GetHashCode();
       if (TableRonud != 0) hash ^= TableRonud.GetHashCode();
-      if (TotalBetScore != 0L) hash ^= TotalBetScore.GetHashCode();
+      if (TotalEnterGold != 0L) hash ^= TotalEnterGold.GetHashCode();
       if (BankerChairId != 0) hash ^= BankerChairId.GetHashCode();
       if (OutTime != 0) hash ^= OutTime.GetHashCode();
       if (TotalTime != 0) hash ^= TotalTime.GetHashCode();
@@ -1458,32 +1414,24 @@ namespace Lucky9 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (MaxScore != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(MaxScore);
-      }
-      if (TableMaxScore != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(TableMaxScore);
-      }
       if (CellScore != 0L) {
-        output.WriteRawTag(24);
+        output.WriteRawTag(8);
         output.WriteInt64(CellScore);
       }
       if (TableState != 0) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(16);
         output.WriteInt32(TableState);
       }
       if (TableRonud != 0) {
-        output.WriteRawTag(40);
+        output.WriteRawTag(24);
         output.WriteInt32(TableRonud);
       }
-      if (TotalBetScore != 0L) {
-        output.WriteRawTag(48);
-        output.WriteInt64(TotalBetScore);
+      if (TotalEnterGold != 0L) {
+        output.WriteRawTag(32);
+        output.WriteInt64(TotalEnterGold);
       }
       if (BankerChairId != 0) {
-        output.WriteRawTag(64);
+        output.WriteRawTag(80);
         output.WriteInt32(BankerChairId);
       }
       if (OutTime != 0) {
@@ -1504,32 +1452,24 @@ namespace Lucky9 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (MaxScore != 0L) {
-        output.WriteRawTag(8);
-        output.WriteInt64(MaxScore);
-      }
-      if (TableMaxScore != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(TableMaxScore);
-      }
       if (CellScore != 0L) {
-        output.WriteRawTag(24);
+        output.WriteRawTag(8);
         output.WriteInt64(CellScore);
       }
       if (TableState != 0) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(16);
         output.WriteInt32(TableState);
       }
       if (TableRonud != 0) {
-        output.WriteRawTag(40);
+        output.WriteRawTag(24);
         output.WriteInt32(TableRonud);
       }
-      if (TotalBetScore != 0L) {
-        output.WriteRawTag(48);
-        output.WriteInt64(TotalBetScore);
+      if (TotalEnterGold != 0L) {
+        output.WriteRawTag(32);
+        output.WriteInt64(TotalEnterGold);
       }
       if (BankerChairId != 0) {
-        output.WriteRawTag(64);
+        output.WriteRawTag(80);
         output.WriteInt32(BankerChairId);
       }
       if (OutTime != 0) {
@@ -1550,12 +1490,6 @@ namespace Lucky9 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (MaxScore != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(MaxScore);
-      }
-      if (TableMaxScore != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(TableMaxScore);
-      }
       if (CellScore != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(CellScore);
       }
@@ -1565,8 +1499,8 @@ namespace Lucky9 {
       if (TableRonud != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(TableRonud);
       }
-      if (TotalBetScore != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(TotalBetScore);
+      if (TotalEnterGold != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(TotalEnterGold);
       }
       if (BankerChairId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(BankerChairId);
@@ -1589,12 +1523,6 @@ namespace Lucky9 {
       if (other == null) {
         return;
       }
-      if (other.MaxScore != 0L) {
-        MaxScore = other.MaxScore;
-      }
-      if (other.TableMaxScore != 0L) {
-        TableMaxScore = other.TableMaxScore;
-      }
       if (other.CellScore != 0L) {
         CellScore = other.CellScore;
       }
@@ -1604,8 +1532,8 @@ namespace Lucky9 {
       if (other.TableRonud != 0) {
         TableRonud = other.TableRonud;
       }
-      if (other.TotalBetScore != 0L) {
-        TotalBetScore = other.TotalBetScore;
+      if (other.TotalEnterGold != 0L) {
+        TotalEnterGold = other.TotalEnterGold;
       }
       if (other.BankerChairId != 0) {
         BankerChairId = other.BankerChairId;
@@ -1632,30 +1560,22 @@ namespace Lucky9 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            MaxScore = input.ReadInt64();
-            break;
-          }
-          case 16: {
-            TableMaxScore = input.ReadInt64();
-            break;
-          }
-          case 24: {
             CellScore = input.ReadInt64();
             break;
           }
-          case 32: {
+          case 16: {
             TableState = input.ReadInt32();
             break;
           }
-          case 40: {
+          case 24: {
             TableRonud = input.ReadInt32();
             break;
           }
-          case 48: {
-            TotalBetScore = input.ReadInt64();
+          case 32: {
+            TotalEnterGold = input.ReadInt64();
             break;
           }
-          case 64: {
+          case 80: {
             BankerChairId = input.ReadInt32();
             break;
           }
@@ -1686,30 +1606,22 @@ namespace Lucky9 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            MaxScore = input.ReadInt64();
-            break;
-          }
-          case 16: {
-            TableMaxScore = input.ReadInt64();
-            break;
-          }
-          case 24: {
             CellScore = input.ReadInt64();
             break;
           }
-          case 32: {
+          case 16: {
             TableState = input.ReadInt32();
             break;
           }
-          case 40: {
+          case 24: {
             TableRonud = input.ReadInt32();
             break;
           }
-          case 48: {
-            TotalBetScore = input.ReadInt64();
+          case 32: {
+            TotalEnterGold = input.ReadInt64();
             break;
           }
-          case 64: {
+          case 80: {
             BankerChairId = input.ReadInt32();
             break;
           }
@@ -1764,33 +1676,17 @@ namespace Lucky9 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public LCMsgGameStartResp(LCMsgGameStartResp other) : this() {
-      tableRonud_ = other.tableRonud_;
       totalEnterGold_ = other.totalEnterGold_;
       curEnterGold_ = other.curEnterGold_;
       bankerChairId_ = other.bankerChairId_;
-      noeCard_ = other.noeCard_;
+      oneCard_ = other.oneCard_;
       playIndex_ = other.playIndex_.Clone();
-      playerNewScore_ = other.playerNewScore_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public LCMsgGameStartResp Clone() {
       return new LCMsgGameStartResp(this);
-    }
-
-    /// <summary>Field number for the "table_ronud" field.</summary>
-    public const int TableRonudFieldNumber = 1;
-    private int tableRonud_;
-    /// <summary>
-    ///桌子轮数
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int TableRonud {
-      get { return tableRonud_; }
-      set {
-        tableRonud_ = value;
-      }
     }
 
     /// <summary>Field number for the "total_enter_gold" field.</summary>
@@ -1835,17 +1731,17 @@ namespace Lucky9 {
       }
     }
 
-    /// <summary>Field number for the "noe_card" field.</summary>
-    public const int NoeCardFieldNumber = 5;
-    private int noeCard_;
+    /// <summary>Field number for the "one_card" field.</summary>
+    public const int OneCardFieldNumber = 5;
+    private int oneCard_;
     /// <summary>
     ///第一张牌
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int NoeCard {
-      get { return noeCard_; }
+    public int OneCard {
+      get { return oneCard_; }
       set {
-        noeCard_ = value;
+        oneCard_ = value;
       }
     }
 
@@ -1862,19 +1758,6 @@ namespace Lucky9 {
       get { return playIndex_; }
     }
 
-    /// <summary>Field number for the "player_new_score" field.</summary>
-    public const int PlayerNewScoreFieldNumber = 9;
-    private static readonly pb::FieldCodec<long> _repeated_playerNewScore_codec
-        = pb::FieldCodec.ForInt64(74);
-    private readonly pbc::RepeatedField<long> playerNewScore_ = new pbc::RepeatedField<long>();
-    /// <summary>
-    ///玩家最新金币
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<long> PlayerNewScore {
-      get { return playerNewScore_; }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as LCMsgGameStartResp);
@@ -1888,26 +1771,22 @@ namespace Lucky9 {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (TableRonud != other.TableRonud) return false;
       if (TotalEnterGold != other.TotalEnterGold) return false;
       if (CurEnterGold != other.CurEnterGold) return false;
       if (BankerChairId != other.BankerChairId) return false;
-      if (NoeCard != other.NoeCard) return false;
+      if (OneCard != other.OneCard) return false;
       if(!playIndex_.Equals(other.playIndex_)) return false;
-      if(!playerNewScore_.Equals(other.playerNewScore_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (TableRonud != 0) hash ^= TableRonud.GetHashCode();
       if (TotalEnterGold != 0) hash ^= TotalEnterGold.GetHashCode();
       if (CurEnterGold != 0) hash ^= CurEnterGold.GetHashCode();
       if (BankerChairId != 0) hash ^= BankerChairId.GetHashCode();
-      if (NoeCard != 0) hash ^= NoeCard.GetHashCode();
+      if (OneCard != 0) hash ^= OneCard.GetHashCode();
       hash ^= playIndex_.GetHashCode();
-      hash ^= playerNewScore_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1924,10 +1803,6 @@ namespace Lucky9 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (TableRonud != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(TableRonud);
-      }
       if (TotalEnterGold != 0) {
         output.WriteRawTag(16);
         output.WriteInt32(TotalEnterGold);
@@ -1940,12 +1815,11 @@ namespace Lucky9 {
         output.WriteRawTag(32);
         output.WriteInt32(BankerChairId);
       }
-      if (NoeCard != 0) {
+      if (OneCard != 0) {
         output.WriteRawTag(40);
-        output.WriteInt32(NoeCard);
+        output.WriteInt32(OneCard);
       }
       playIndex_.WriteTo(output, _repeated_playIndex_codec);
-      playerNewScore_.WriteTo(output, _repeated_playerNewScore_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1955,10 +1829,6 @@ namespace Lucky9 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (TableRonud != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(TableRonud);
-      }
       if (TotalEnterGold != 0) {
         output.WriteRawTag(16);
         output.WriteInt32(TotalEnterGold);
@@ -1971,12 +1841,11 @@ namespace Lucky9 {
         output.WriteRawTag(32);
         output.WriteInt32(BankerChairId);
       }
-      if (NoeCard != 0) {
+      if (OneCard != 0) {
         output.WriteRawTag(40);
-        output.WriteInt32(NoeCard);
+        output.WriteInt32(OneCard);
       }
       playIndex_.WriteTo(ref output, _repeated_playIndex_codec);
-      playerNewScore_.WriteTo(ref output, _repeated_playerNewScore_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1986,9 +1855,6 @@ namespace Lucky9 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (TableRonud != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TableRonud);
-      }
       if (TotalEnterGold != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(TotalEnterGold);
       }
@@ -1998,11 +1864,10 @@ namespace Lucky9 {
       if (BankerChairId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(BankerChairId);
       }
-      if (NoeCard != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(NoeCard);
+      if (OneCard != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(OneCard);
       }
       size += playIndex_.CalculateSize(_repeated_playIndex_codec);
-      size += playerNewScore_.CalculateSize(_repeated_playerNewScore_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -2014,9 +1879,6 @@ namespace Lucky9 {
       if (other == null) {
         return;
       }
-      if (other.TableRonud != 0) {
-        TableRonud = other.TableRonud;
-      }
       if (other.TotalEnterGold != 0) {
         TotalEnterGold = other.TotalEnterGold;
       }
@@ -2026,11 +1888,10 @@ namespace Lucky9 {
       if (other.BankerChairId != 0) {
         BankerChairId = other.BankerChairId;
       }
-      if (other.NoeCard != 0) {
-        NoeCard = other.NoeCard;
+      if (other.OneCard != 0) {
+        OneCard = other.OneCard;
       }
       playIndex_.Add(other.playIndex_);
-      playerNewScore_.Add(other.playerNewScore_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -2045,10 +1906,6 @@ namespace Lucky9 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            TableRonud = input.ReadInt32();
-            break;
-          }
           case 16: {
             TotalEnterGold = input.ReadInt32();
             break;
@@ -2062,17 +1919,12 @@ namespace Lucky9 {
             break;
           }
           case 40: {
-            NoeCard = input.ReadInt32();
+            OneCard = input.ReadInt32();
             break;
           }
           case 66:
           case 64: {
             playIndex_.AddEntriesFrom(input, _repeated_playIndex_codec);
-            break;
-          }
-          case 74:
-          case 72: {
-            playerNewScore_.AddEntriesFrom(input, _repeated_playerNewScore_codec);
             break;
           }
         }
@@ -2089,10 +1941,6 @@ namespace Lucky9 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            TableRonud = input.ReadInt32();
-            break;
-          }
           case 16: {
             TotalEnterGold = input.ReadInt32();
             break;
@@ -2106,17 +1954,12 @@ namespace Lucky9 {
             break;
           }
           case 40: {
-            NoeCard = input.ReadInt32();
+            OneCard = input.ReadInt32();
             break;
           }
           case 66:
           case 64: {
             playIndex_.AddEntriesFrom(ref input, _repeated_playIndex_codec);
-            break;
-          }
-          case 74:
-          case 72: {
-            playerNewScore_.AddEntriesFrom(ref input, _repeated_playerNewScore_codec);
             break;
           }
         }
@@ -2127,7 +1970,7 @@ namespace Lucky9 {
   }
 
   /// <summary>
-  ///游戏开始
+  ///通知玩家操作
   /// </summary>
   public sealed partial class LCMsgNotifyActionResp : pb::IMessage<LCMsgNotifyActionResp>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -2377,6 +2220,7 @@ namespace Lucky9 {
     public LCMsgAction(LCMsgAction other) : this() {
       act_ = other.act_;
       betScore_ = other.betScore_;
+      isGet_ = other.isGet_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2413,6 +2257,20 @@ namespace Lucky9 {
       }
     }
 
+    /// <summary>Field number for the "is_get" field.</summary>
+    public const int IsGetFieldNumber = 3;
+    private bool isGet_;
+    /// <summary>
+    ///是否要牌
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsGet {
+      get { return isGet_; }
+      set {
+        isGet_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as LCMsgAction);
@@ -2428,6 +2286,7 @@ namespace Lucky9 {
       }
       if (Act != other.Act) return false;
       if (BetScore != other.BetScore) return false;
+      if (IsGet != other.IsGet) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2436,6 +2295,7 @@ namespace Lucky9 {
       int hash = 1;
       if (Act != 0) hash ^= Act.GetHashCode();
       if (BetScore != 0L) hash ^= BetScore.GetHashCode();
+      if (IsGet != false) hash ^= IsGet.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2460,6 +2320,10 @@ namespace Lucky9 {
         output.WriteRawTag(16);
         output.WriteInt64(BetScore);
       }
+      if (IsGet != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(IsGet);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2477,6 +2341,10 @@ namespace Lucky9 {
         output.WriteRawTag(16);
         output.WriteInt64(BetScore);
       }
+      if (IsGet != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(IsGet);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2491,6 +2359,9 @@ namespace Lucky9 {
       }
       if (BetScore != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(BetScore);
+      }
+      if (IsGet != false) {
+        size += 1 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2508,6 +2379,9 @@ namespace Lucky9 {
       }
       if (other.BetScore != 0L) {
         BetScore = other.BetScore;
+      }
+      if (other.IsGet != false) {
+        IsGet = other.IsGet;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2531,6 +2405,10 @@ namespace Lucky9 {
             BetScore = input.ReadInt64();
             break;
           }
+          case 24: {
+            IsGet = input.ReadBool();
+            break;
+          }
         }
       }
     #endif
@@ -2551,6 +2429,528 @@ namespace Lucky9 {
           }
           case 16: {
             BetScore = input.ReadInt64();
+            break;
+          }
+          case 24: {
+            IsGet = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  ///玩家操作返回
+  /// </summary>
+  public sealed partial class LCMsgActionResp : pb::IMessage<LCMsgActionResp>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<LCMsgActionResp> _parser = new pb::MessageParser<LCMsgActionResp>(() => new LCMsgActionResp());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<LCMsgActionResp> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Lucky9.Lucky9Reflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LCMsgActionResp() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LCMsgActionResp(LCMsgActionResp other) : this() {
+      act_ = other.act_;
+      chairId_ = other.chairId_;
+      betScore_ = other.betScore_;
+      isGet_ = other.isGet_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LCMsgActionResp Clone() {
+      return new LCMsgActionResp(this);
+    }
+
+    /// <summary>Field number for the "act" field.</summary>
+    public const int ActFieldNumber = 1;
+    private int act_;
+    /// <summary>
+    ///操作标示
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Act {
+      get { return act_; }
+      set {
+        act_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "chair_id" field.</summary>
+    public const int ChairIdFieldNumber = 2;
+    private int chairId_;
+    /// <summary>
+    ///椅子号
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int ChairId {
+      get { return chairId_; }
+      set {
+        chairId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "bet_score" field.</summary>
+    public const int BetScoreFieldNumber = 3;
+    private long betScore_;
+    /// <summary>
+    ///下注金额
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long BetScore {
+      get { return betScore_; }
+      set {
+        betScore_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "is_get" field.</summary>
+    public const int IsGetFieldNumber = 4;
+    private bool isGet_;
+    /// <summary>
+    ///是否要牌
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsGet {
+      get { return isGet_; }
+      set {
+        isGet_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as LCMsgActionResp);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(LCMsgActionResp other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Act != other.Act) return false;
+      if (ChairId != other.ChairId) return false;
+      if (BetScore != other.BetScore) return false;
+      if (IsGet != other.IsGet) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Act != 0) hash ^= Act.GetHashCode();
+      if (ChairId != 0) hash ^= ChairId.GetHashCode();
+      if (BetScore != 0L) hash ^= BetScore.GetHashCode();
+      if (IsGet != false) hash ^= IsGet.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Act != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Act);
+      }
+      if (ChairId != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(ChairId);
+      }
+      if (BetScore != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(BetScore);
+      }
+      if (IsGet != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(IsGet);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Act != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Act);
+      }
+      if (ChairId != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(ChairId);
+      }
+      if (BetScore != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(BetScore);
+      }
+      if (IsGet != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(IsGet);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Act != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Act);
+      }
+      if (ChairId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChairId);
+      }
+      if (BetScore != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(BetScore);
+      }
+      if (IsGet != false) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(LCMsgActionResp other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Act != 0) {
+        Act = other.Act;
+      }
+      if (other.ChairId != 0) {
+        ChairId = other.ChairId;
+      }
+      if (other.BetScore != 0L) {
+        BetScore = other.BetScore;
+      }
+      if (other.IsGet != false) {
+        IsGet = other.IsGet;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Act = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            ChairId = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            BetScore = input.ReadInt64();
+            break;
+          }
+          case 32: {
+            IsGet = input.ReadBool();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Act = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            ChairId = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            BetScore = input.ReadInt64();
+            break;
+          }
+          case 32: {
+            IsGet = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class LCMsgSendCardInfo : pb::IMessage<LCMsgSendCardInfo>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<LCMsgSendCardInfo> _parser = new pb::MessageParser<LCMsgSendCardInfo>(() => new LCMsgSendCardInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<LCMsgSendCardInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Lucky9.Lucky9Reflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LCMsgSendCardInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LCMsgSendCardInfo(LCMsgSendCardInfo other) : this() {
+      chairId_ = other.chairId_;
+      handCards_ = other.handCards_ != null ? other.handCards_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LCMsgSendCardInfo Clone() {
+      return new LCMsgSendCardInfo(this);
+    }
+
+    /// <summary>Field number for the "chair_id" field.</summary>
+    public const int ChairIdFieldNumber = 1;
+    private int chairId_;
+    /// <summary>
+    ///玩家椅子号
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int ChairId {
+      get { return chairId_; }
+      set {
+        chairId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "hand_cards" field.</summary>
+    public const int HandCardsFieldNumber = 2;
+    private global::Lucky9.LCMsgHandCards handCards_;
+    /// <summary>
+    ///手牌
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Lucky9.LCMsgHandCards HandCards {
+      get { return handCards_; }
+      set {
+        handCards_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as LCMsgSendCardInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(LCMsgSendCardInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ChairId != other.ChairId) return false;
+      if (!object.Equals(HandCards, other.HandCards)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ChairId != 0) hash ^= ChairId.GetHashCode();
+      if (handCards_ != null) hash ^= HandCards.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (ChairId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ChairId);
+      }
+      if (handCards_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(HandCards);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ChairId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ChairId);
+      }
+      if (handCards_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(HandCards);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (ChairId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChairId);
+      }
+      if (handCards_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(HandCards);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(LCMsgSendCardInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ChairId != 0) {
+        ChairId = other.ChairId;
+      }
+      if (other.handCards_ != null) {
+        if (handCards_ == null) {
+          HandCards = new global::Lucky9.LCMsgHandCards();
+        }
+        HandCards.MergeFrom(other.HandCards);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            ChairId = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            if (handCards_ == null) {
+              HandCards = new global::Lucky9.LCMsgHandCards();
+            }
+            input.ReadMessage(HandCards);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ChairId = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            if (handCards_ == null) {
+              HandCards = new global::Lucky9.LCMsgHandCards();
+            }
+            input.ReadMessage(HandCards);
             break;
           }
         }
@@ -2575,7 +2975,7 @@ namespace Lucky9 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Lucky9.Lucky9Reflection.Descriptor.MessageTypes[7]; }
+      get { return global::Lucky9.Lucky9Reflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2592,9 +2992,7 @@ namespace Lucky9 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public LCMsgSendCardResp(LCMsgSendCardResp other) : this() {
-      chairId_ = other.chairId_;
-      cardType_ = other.cardType_;
-      cards_ = other.cards_.Clone();
+      infos_ = other.infos_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2603,45 +3001,17 @@ namespace Lucky9 {
       return new LCMsgSendCardResp(this);
     }
 
-    /// <summary>Field number for the "chair_id" field.</summary>
-    public const int ChairIdFieldNumber = 1;
-    private int chairId_;
+    /// <summary>Field number for the "infos" field.</summary>
+    public const int InfosFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Lucky9.LCMsgSendCardInfo> _repeated_infos_codec
+        = pb::FieldCodec.ForMessage(10, global::Lucky9.LCMsgSendCardInfo.Parser);
+    private readonly pbc::RepeatedField<global::Lucky9.LCMsgSendCardInfo> infos_ = new pbc::RepeatedField<global::Lucky9.LCMsgSendCardInfo>();
     /// <summary>
-    ///玩家椅子号
+    ///所有人的牌
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int ChairId {
-      get { return chairId_; }
-      set {
-        chairId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "card_type" field.</summary>
-    public const int CardTypeFieldNumber = 2;
-    private int cardType_;
-    /// <summary>
-    ///牌型
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CardType {
-      get { return cardType_; }
-      set {
-        cardType_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "cards" field.</summary>
-    public const int CardsFieldNumber = 5;
-    private static readonly pb::FieldCodec<int> _repeated_cards_codec
-        = pb::FieldCodec.ForInt32(42);
-    private readonly pbc::RepeatedField<int> cards_ = new pbc::RepeatedField<int>();
-    /// <summary>
-    ///手牌
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<int> Cards {
-      get { return cards_; }
+    public pbc::RepeatedField<global::Lucky9.LCMsgSendCardInfo> Infos {
+      get { return infos_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2657,18 +3027,14 @@ namespace Lucky9 {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (ChairId != other.ChairId) return false;
-      if (CardType != other.CardType) return false;
-      if(!cards_.Equals(other.cards_)) return false;
+      if(!infos_.Equals(other.infos_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (ChairId != 0) hash ^= ChairId.GetHashCode();
-      if (CardType != 0) hash ^= CardType.GetHashCode();
-      hash ^= cards_.GetHashCode();
+      hash ^= infos_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2685,15 +3051,7 @@ namespace Lucky9 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (ChairId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(ChairId);
-      }
-      if (CardType != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(CardType);
-      }
-      cards_.WriteTo(output, _repeated_cards_codec);
+      infos_.WriteTo(output, _repeated_infos_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2703,15 +3061,7 @@ namespace Lucky9 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (ChairId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(ChairId);
-      }
-      if (CardType != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(CardType);
-      }
-      cards_.WriteTo(ref output, _repeated_cards_codec);
+      infos_.WriteTo(ref output, _repeated_infos_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2721,13 +3071,7 @@ namespace Lucky9 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (ChairId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChairId);
-      }
-      if (CardType != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CardType);
-      }
-      size += cards_.CalculateSize(_repeated_cards_codec);
+      size += infos_.CalculateSize(_repeated_infos_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -2739,13 +3083,7 @@ namespace Lucky9 {
       if (other == null) {
         return;
       }
-      if (other.ChairId != 0) {
-        ChairId = other.ChairId;
-      }
-      if (other.CardType != 0) {
-        CardType = other.CardType;
-      }
-      cards_.Add(other.cards_);
+      infos_.Add(other.infos_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -2760,17 +3098,8 @@ namespace Lucky9 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
-            ChairId = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            CardType = input.ReadInt32();
-            break;
-          }
-          case 42:
-          case 40: {
-            cards_.AddEntriesFrom(input, _repeated_cards_codec);
+          case 10: {
+            infos_.AddEntriesFrom(input, _repeated_infos_codec);
             break;
           }
         }
@@ -2787,448 +3116,8 @@ namespace Lucky9 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 8: {
-            ChairId = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            CardType = input.ReadInt32();
-            break;
-          }
-          case 42:
-          case 40: {
-            cards_.AddEntriesFrom(ref input, _repeated_cards_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  /// <summary>
-  ///玩家
-  /// </summary>
-  public sealed partial class LCMsgGetCardResp : pb::IMessage<LCMsgGetCardResp>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<LCMsgGetCardResp> _parser = new pb::MessageParser<LCMsgGetCardResp>(() => new LCMsgGetCardResp());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<LCMsgGetCardResp> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Lucky9.Lucky9Reflection.Descriptor.MessageTypes[8]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public LCMsgGetCardResp() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public LCMsgGetCardResp(LCMsgGetCardResp other) : this() {
-      chairId_ = other.chairId_;
-      isGet_ = other.isGet_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public LCMsgGetCardResp Clone() {
-      return new LCMsgGetCardResp(this);
-    }
-
-    /// <summary>Field number for the "chair_id" field.</summary>
-    public const int ChairIdFieldNumber = 1;
-    private int chairId_;
-    /// <summary>
-    ///玩家椅子号
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int ChairId {
-      get { return chairId_; }
-      set {
-        chairId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "is_get" field.</summary>
-    public const int IsGetFieldNumber = 2;
-    private int isGet_;
-    /// <summary>
-    ///1 不要， 2要
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int IsGet {
-      get { return isGet_; }
-      set {
-        isGet_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as LCMsgGetCardResp);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(LCMsgGetCardResp other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (ChairId != other.ChairId) return false;
-      if (IsGet != other.IsGet) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (ChairId != 0) hash ^= ChairId.GetHashCode();
-      if (IsGet != 0) hash ^= IsGet.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (ChairId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(ChairId);
-      }
-      if (IsGet != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(IsGet);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (ChairId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(ChairId);
-      }
-      if (IsGet != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(IsGet);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (ChairId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChairId);
-      }
-      if (IsGet != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(IsGet);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(LCMsgGetCardResp other) {
-      if (other == null) {
-        return;
-      }
-      if (other.ChairId != 0) {
-        ChairId = other.ChairId;
-      }
-      if (other.IsGet != 0) {
-        IsGet = other.IsGet;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            ChairId = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            IsGet = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            ChairId = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            IsGet = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  public sealed partial class LCMsgAddBetResp : pb::IMessage<LCMsgAddBetResp>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<LCMsgAddBetResp> _parser = new pb::MessageParser<LCMsgAddBetResp>(() => new LCMsgAddBetResp());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<LCMsgAddBetResp> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Lucky9.Lucky9Reflection.Descriptor.MessageTypes[9]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public LCMsgAddBetResp() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public LCMsgAddBetResp(LCMsgAddBetResp other) : this() {
-      addChairId_ = other.addChairId_;
-      addScore_ = other.addScore_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public LCMsgAddBetResp Clone() {
-      return new LCMsgAddBetResp(this);
-    }
-
-    /// <summary>Field number for the "add_chair_id" field.</summary>
-    public const int AddChairIdFieldNumber = 1;
-    private int addChairId_;
-    /// <summary>
-    ///下注玩家椅子号
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int AddChairId {
-      get { return addChairId_; }
-      set {
-        addChairId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "add_score" field.</summary>
-    public const int AddScoreFieldNumber = 2;
-    private long addScore_;
-    /// <summary>
-    ///下注金额
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long AddScore {
-      get { return addScore_; }
-      set {
-        addScore_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as LCMsgAddBetResp);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(LCMsgAddBetResp other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (AddChairId != other.AddChairId) return false;
-      if (AddScore != other.AddScore) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (AddChairId != 0) hash ^= AddChairId.GetHashCode();
-      if (AddScore != 0L) hash ^= AddScore.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (AddChairId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(AddChairId);
-      }
-      if (AddScore != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(AddScore);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (AddChairId != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(AddChairId);
-      }
-      if (AddScore != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(AddScore);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (AddChairId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(AddChairId);
-      }
-      if (AddScore != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(AddScore);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(LCMsgAddBetResp other) {
-      if (other == null) {
-        return;
-      }
-      if (other.AddChairId != 0) {
-        AddChairId = other.AddChairId;
-      }
-      if (other.AddScore != 0L) {
-        AddScore = other.AddScore;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            AddChairId = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            AddScore = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            AddChairId = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            AddScore = input.ReadInt64();
+          case 10: {
+            infos_.AddEntriesFrom(ref input, _repeated_infos_codec);
             break;
           }
         }
@@ -3267,11 +3156,9 @@ namespace Lucky9 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public LCMsgEndPlayerInfo(LCMsgEndPlayerInfo other) : this() {
+      chairId_ = other.chairId_;
       gameScore_ = other.gameScore_;
       tax_ = other.tax_;
-      type_ = other.type_;
-      number_ = other.number_;
-      cards_ = other.cards_ != null ? other.cards_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3280,8 +3167,22 @@ namespace Lucky9 {
       return new LCMsgEndPlayerInfo(this);
     }
 
+    /// <summary>Field number for the "chair_id" field.</summary>
+    public const int ChairIdFieldNumber = 1;
+    private int chairId_;
+    /// <summary>
+    ///玩家椅子号
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int ChairId {
+      get { return chairId_; }
+      set {
+        chairId_ = value;
+      }
+    }
+
     /// <summary>Field number for the "game_score" field.</summary>
-    public const int GameScoreFieldNumber = 1;
+    public const int GameScoreFieldNumber = 2;
     private long gameScore_;
     /// <summary>
     ///输赢分
@@ -3295,7 +3196,7 @@ namespace Lucky9 {
     }
 
     /// <summary>Field number for the "tax" field.</summary>
-    public const int TaxFieldNumber = 2;
+    public const int TaxFieldNumber = 3;
     private long tax_;
     /// <summary>
     ///税
@@ -3305,48 +3206,6 @@ namespace Lucky9 {
       get { return tax_; }
       set {
         tax_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "type" field.</summary>
-    public const int TypeFieldNumber = 3;
-    private long type_;
-    /// <summary>
-    ///牌型
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long Type {
-      get { return type_; }
-      set {
-        type_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "number" field.</summary>
-    public const int NumberFieldNumber = 4;
-    private long number_;
-    /// <summary>
-    ///点数
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long Number {
-      get { return number_; }
-      set {
-        number_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "cards" field.</summary>
-    public const int CardsFieldNumber = 5;
-    private global::Lucky9.LCMsgHandCards cards_;
-    /// <summary>
-    ///手牌
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::Lucky9.LCMsgHandCards Cards {
-      get { return cards_; }
-      set {
-        cards_ = value;
       }
     }
 
@@ -3363,22 +3222,18 @@ namespace Lucky9 {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (ChairId != other.ChairId) return false;
       if (GameScore != other.GameScore) return false;
       if (Tax != other.Tax) return false;
-      if (Type != other.Type) return false;
-      if (Number != other.Number) return false;
-      if (!object.Equals(Cards, other.Cards)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
+      if (ChairId != 0) hash ^= ChairId.GetHashCode();
       if (GameScore != 0L) hash ^= GameScore.GetHashCode();
       if (Tax != 0L) hash ^= Tax.GetHashCode();
-      if (Type != 0L) hash ^= Type.GetHashCode();
-      if (Number != 0L) hash ^= Number.GetHashCode();
-      if (cards_ != null) hash ^= Cards.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3395,25 +3250,17 @@ namespace Lucky9 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (GameScore != 0L) {
+      if (ChairId != 0) {
         output.WriteRawTag(8);
+        output.WriteInt32(ChairId);
+      }
+      if (GameScore != 0L) {
+        output.WriteRawTag(16);
         output.WriteInt64(GameScore);
       }
       if (Tax != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(Tax);
-      }
-      if (Type != 0L) {
         output.WriteRawTag(24);
-        output.WriteInt64(Type);
-      }
-      if (Number != 0L) {
-        output.WriteRawTag(32);
-        output.WriteInt64(Number);
-      }
-      if (cards_ != null) {
-        output.WriteRawTag(42);
-        output.WriteMessage(Cards);
+        output.WriteInt64(Tax);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -3424,25 +3271,17 @@ namespace Lucky9 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (GameScore != 0L) {
+      if (ChairId != 0) {
         output.WriteRawTag(8);
+        output.WriteInt32(ChairId);
+      }
+      if (GameScore != 0L) {
+        output.WriteRawTag(16);
         output.WriteInt64(GameScore);
       }
       if (Tax != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(Tax);
-      }
-      if (Type != 0L) {
         output.WriteRawTag(24);
-        output.WriteInt64(Type);
-      }
-      if (Number != 0L) {
-        output.WriteRawTag(32);
-        output.WriteInt64(Number);
-      }
-      if (cards_ != null) {
-        output.WriteRawTag(42);
-        output.WriteMessage(Cards);
+        output.WriteInt64(Tax);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -3453,20 +3292,14 @@ namespace Lucky9 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      if (ChairId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChairId);
+      }
       if (GameScore != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(GameScore);
       }
       if (Tax != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(Tax);
-      }
-      if (Type != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Type);
-      }
-      if (Number != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Number);
-      }
-      if (cards_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Cards);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3479,23 +3312,14 @@ namespace Lucky9 {
       if (other == null) {
         return;
       }
+      if (other.ChairId != 0) {
+        ChairId = other.ChairId;
+      }
       if (other.GameScore != 0L) {
         GameScore = other.GameScore;
       }
       if (other.Tax != 0L) {
         Tax = other.Tax;
-      }
-      if (other.Type != 0L) {
-        Type = other.Type;
-      }
-      if (other.Number != 0L) {
-        Number = other.Number;
-      }
-      if (other.cards_ != null) {
-        if (cards_ == null) {
-          Cards = new global::Lucky9.LCMsgHandCards();
-        }
-        Cards.MergeFrom(other.Cards);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3512,26 +3336,15 @@ namespace Lucky9 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            GameScore = input.ReadInt64();
+            ChairId = input.ReadInt32();
             break;
           }
           case 16: {
-            Tax = input.ReadInt64();
+            GameScore = input.ReadInt64();
             break;
           }
           case 24: {
-            Type = input.ReadInt64();
-            break;
-          }
-          case 32: {
-            Number = input.ReadInt64();
-            break;
-          }
-          case 42: {
-            if (cards_ == null) {
-              Cards = new global::Lucky9.LCMsgHandCards();
-            }
-            input.ReadMessage(Cards);
+            Tax = input.ReadInt64();
             break;
           }
         }
@@ -3549,26 +3362,15 @@ namespace Lucky9 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            GameScore = input.ReadInt64();
+            ChairId = input.ReadInt32();
             break;
           }
           case 16: {
-            Tax = input.ReadInt64();
+            GameScore = input.ReadInt64();
             break;
           }
           case 24: {
-            Type = input.ReadInt64();
-            break;
-          }
-          case 32: {
-            Number = input.ReadInt64();
-            break;
-          }
-          case 42: {
-            if (cards_ == null) {
-              Cards = new global::Lucky9.LCMsgHandCards();
-            }
-            input.ReadMessage(Cards);
+            Tax = input.ReadInt64();
             break;
           }
         }
@@ -3610,6 +3412,8 @@ namespace Lucky9 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public LCMsgGameResult(LCMsgGameResult other) : this() {
+      bisectGold_ = other.bisectGold_;
+      bisectList_ = other.bisectList_.Clone();
       players_ = other.players_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -3619,13 +3423,40 @@ namespace Lucky9 {
       return new LCMsgGameResult(this);
     }
 
+    /// <summary>Field number for the "bisect_gold" field.</summary>
+    public const int BisectGoldFieldNumber = 1;
+    private long bisectGold_;
+    /// <summary>
+    ///房费金币 大于0有平分
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long BisectGold {
+      get { return bisectGold_; }
+      set {
+        bisectGold_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "bisect_list" field.</summary>
+    public const int BisectListFieldNumber = 2;
+    private static readonly pb::FieldCodec<int> _repeated_bisectList_codec
+        = pb::FieldCodec.ForInt32(18);
+    private readonly pbc::RepeatedField<int> bisectList_ = new pbc::RepeatedField<int>();
+    /// <summary>
+    ///平分椅子列表
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<int> BisectList {
+      get { return bisectList_; }
+    }
+
     /// <summary>Field number for the "players" field.</summary>
-    public const int PlayersFieldNumber = 1;
+    public const int PlayersFieldNumber = 3;
     private static readonly pb::FieldCodec<global::Lucky9.LCMsgEndPlayerInfo> _repeated_players_codec
-        = pb::FieldCodec.ForMessage(10, global::Lucky9.LCMsgEndPlayerInfo.Parser);
+        = pb::FieldCodec.ForMessage(26, global::Lucky9.LCMsgEndPlayerInfo.Parser);
     private readonly pbc::RepeatedField<global::Lucky9.LCMsgEndPlayerInfo> players_ = new pbc::RepeatedField<global::Lucky9.LCMsgEndPlayerInfo>();
     /// <summary>
-    ///输赢分
+    ///玩家结算信息
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::Lucky9.LCMsgEndPlayerInfo> Players {
@@ -3645,6 +3476,8 @@ namespace Lucky9 {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (BisectGold != other.BisectGold) return false;
+      if(!bisectList_.Equals(other.bisectList_)) return false;
       if(!players_.Equals(other.players_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -3652,6 +3485,8 @@ namespace Lucky9 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
+      if (BisectGold != 0L) hash ^= BisectGold.GetHashCode();
+      hash ^= bisectList_.GetHashCode();
       hash ^= players_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -3669,6 +3504,11 @@ namespace Lucky9 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
+      if (BisectGold != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(BisectGold);
+      }
+      bisectList_.WriteTo(output, _repeated_bisectList_codec);
       players_.WriteTo(output, _repeated_players_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -3679,6 +3519,11 @@ namespace Lucky9 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (BisectGold != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(BisectGold);
+      }
+      bisectList_.WriteTo(ref output, _repeated_bisectList_codec);
       players_.WriteTo(ref output, _repeated_players_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -3689,6 +3534,10 @@ namespace Lucky9 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      if (BisectGold != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(BisectGold);
+      }
+      size += bisectList_.CalculateSize(_repeated_bisectList_codec);
       size += players_.CalculateSize(_repeated_players_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3701,6 +3550,10 @@ namespace Lucky9 {
       if (other == null) {
         return;
       }
+      if (other.BisectGold != 0L) {
+        BisectGold = other.BisectGold;
+      }
+      bisectList_.Add(other.bisectList_);
       players_.Add(other.players_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3716,7 +3569,16 @@ namespace Lucky9 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
+          case 8: {
+            BisectGold = input.ReadInt64();
+            break;
+          }
+          case 18:
+          case 16: {
+            bisectList_.AddEntriesFrom(input, _repeated_bisectList_codec);
+            break;
+          }
+          case 26: {
             players_.AddEntriesFrom(input, _repeated_players_codec);
             break;
           }
@@ -3734,7 +3596,16 @@ namespace Lucky9 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 10: {
+          case 8: {
+            BisectGold = input.ReadInt64();
+            break;
+          }
+          case 18:
+          case 16: {
+            bisectList_.AddEntriesFrom(ref input, _repeated_bisectList_codec);
+            break;
+          }
+          case 26: {
             players_.AddEntriesFrom(ref input, _repeated_players_codec);
             break;
           }
