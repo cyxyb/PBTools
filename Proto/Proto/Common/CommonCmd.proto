@@ -134,8 +134,8 @@ enum EMsgIDLogin
 	MsgIDDelete_DeleteAccountResp				= 120;		//删除账号返回(MsgCommonN32)
 	MsgIDCelebrity_QueryCelebrityGoldCoin		= 121;		//查询网红赠送金币(MsgCommonBool)
 	MsgIDCelebrity_QueryCelebrityGoldCoinResp	= 122;		//查询网红赠送金币返回(MsgQueryCelebrityGoldCoinResp)
-	MsgIDCelebrity_GiveCelebrityGoldCoin		= 123;		//领取网红金币(MsgCommonBool)
-	MsgIDCelebrity_GiveCelebrityGoldCoinResp	= 124;		//领取网红金币返回(MsgCommonBool)
+	MsgIDCelebrity_GetCelebrityGoldCoin			= 123;		//领取网红金币(MsgCommonBool)
+	MsgIDCelebrity_GetCelebrityGoldCoinResp		= 124;		//领取网红金币返回(MsgCommonBool)
 }
 
 enum EMsgIDGame

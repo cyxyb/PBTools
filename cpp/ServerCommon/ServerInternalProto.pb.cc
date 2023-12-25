@@ -1810,7 +1810,7 @@ const char descriptor_table_protodef_ServerInternalProto_2eproto[] PROTOBUF_SECT
   "\002 \001(\005\022\024\n\014beautiful_id\030\003 \001(\005\022\017\n\007account\030\004"
   " \001(\t\022\020\n\010nickname\030\005 \001(\t\022\016\n\006avatar\030\006 \001(\t\022\026"
   "\n\016first_recharge\030\007 \001(\010\022\021\n\tuser_type\030\010 \001("
-  "\005\022\020\n\010is_drain\030\t \001(\010\022\014\n\004coin\030\n \001(\004\022\021\n\tpho"
+  "\005\022\020\n\010is_drain\030\t \001(\005\022\014\n\004coin\030\n \001(\004\022\021\n\tpho"
   "ne_num\030\013 \001(\t\022\020\n\010password\030\014 \001(\t\022\021\n\tvip_le"
   "vel\030\r \001(\005\022\024\n\014avatar_frame\030\016 \001(\005\022\022\n\nchann"
   "el_id\030\017 \001(\005\022\023\n\013invite_code\030\022 \001(\t\022\021\n\tsign"
@@ -8117,7 +8117,7 @@ const char* MsgLoginPlayerInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // bool is_drain = 9;
+      // int32 is_drain = 9;
       case 9:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
           is_drain_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
@@ -8365,10 +8365,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(8, this->_internal_user_type(), target);
   }
 
-  // bool is_drain = 9;
+  // int32 is_drain = 9;
   if (this->is_drain() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(9, this->_internal_is_drain(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(9, this->_internal_is_drain(), target);
   }
 
   // uint64 coin = 10;
@@ -8667,6 +8667,13 @@ size_t MsgLoginPlayerInfo::ByteSizeLong() const {
         this->_internal_coin());
   }
 
+  // int32 is_drain = 9;
+  if (this->is_drain() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_is_drain());
+  }
+
   // int32 vip_level = 13;
   if (this->vip_level() != 0) {
     total_size += 1 +
@@ -8690,11 +8697,6 @@ size_t MsgLoginPlayerInfo::ByteSizeLong() const {
 
   // bool first_recharge = 7;
   if (this->first_recharge() != 0) {
-    total_size += 1 + 1;
-  }
-
-  // bool is_drain = 9;
-  if (this->is_drain() != 0) {
     total_size += 1 + 1;
   }
 
@@ -8816,6 +8818,9 @@ void MsgLoginPlayerInfo::MergeFrom(const MsgLoginPlayerInfo& from) {
   if (from.coin() != 0) {
     _internal_set_coin(from._internal_coin());
   }
+  if (from.is_drain() != 0) {
+    _internal_set_is_drain(from._internal_is_drain());
+  }
   if (from.vip_level() != 0) {
     _internal_set_vip_level(from._internal_vip_level());
   }
@@ -8827,9 +8832,6 @@ void MsgLoginPlayerInfo::MergeFrom(const MsgLoginPlayerInfo& from) {
   }
   if (from.first_recharge() != 0) {
     _internal_set_first_recharge(from._internal_first_recharge());
-  }
-  if (from.is_drain() != 0) {
-    _internal_set_is_drain(from._internal_is_drain());
   }
   if (from.frist_login() != 0) {
     _internal_set_frist_login(from._internal_frist_login());

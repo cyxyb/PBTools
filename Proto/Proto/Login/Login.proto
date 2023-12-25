@@ -535,8 +535,3 @@ message MsgQueryCelebrityGoldCoinResp
 	int64		gold_coin		= 4;	//赠送金币
 	bool		state			= 5;	//领取状态0：未领取
 }
-//领取网红金币
-message MsggGiveCelebrityGoldCoinResp
-{
-	
-}
