@@ -225,7 +225,7 @@ enum ELCMsgIDSubGame : int {
   MsgIDSubGame_GameStartResp = 1,
   MsgIDSubGame_NotifyActionResp = 2,
   MsgIDSubGame_Action = 3,
-  MsgIDSubGame_AddBetResp = 4,
+  MsgIDSubGame_ActionResp = 4,
   MsgIDSubGame_SendCardResp = 5,
   MsgIDSubGame_GameResultResp = 9,
   MsgIDSubGame_NotifyStateResp = 10,
@@ -1490,7 +1490,6 @@ class LCMsgAction PROTOBUF_FINAL :
   enum : int {
     kBetScoreFieldNumber = 2,
     kActFieldNumber = 1,
-    kIsGetFieldNumber = 3,
   };
   // int64 bet_score = 2;
   void clear_bet_score();
@@ -1510,15 +1509,6 @@ class LCMsgAction PROTOBUF_FINAL :
   void _internal_set_act(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // bool is_get = 3;
-  void clear_is_get();
-  bool is_get() const;
-  void set_is_get(bool value);
-  private:
-  bool _internal_is_get() const;
-  void _internal_set_is_get(bool value);
-  public:
-
   // @@protoc_insertion_point(class_scope:Lucky9.LCMsgAction)
  private:
   class _Internal;
@@ -1528,7 +1518,6 @@ class LCMsgAction PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int64 bet_score_;
   ::PROTOBUF_NAMESPACE_ID::int32 act_;
-  bool is_get_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Lucky9_2eproto;
 };
@@ -1649,7 +1638,6 @@ class LCMsgActionResp PROTOBUF_FINAL :
     kActFieldNumber = 1,
     kChairIdFieldNumber = 2,
     kBetScoreFieldNumber = 3,
-    kIsGetFieldNumber = 4,
   };
   // int32 act = 1;
   void clear_act();
@@ -1678,15 +1666,6 @@ class LCMsgActionResp PROTOBUF_FINAL :
   void _internal_set_bet_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // bool is_get = 4;
-  void clear_is_get();
-  bool is_get() const;
-  void set_is_get(bool value);
-  private:
-  bool _internal_is_get() const;
-  void _internal_set_is_get(bool value);
-  public:
-
   // @@protoc_insertion_point(class_scope:Lucky9.LCMsgActionResp)
  private:
   class _Internal;
@@ -1697,7 +1676,6 @@ class LCMsgActionResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 act_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int64 bet_score_;
-  bool is_get_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Lucky9_2eproto;
 };
@@ -3279,26 +3257,6 @@ inline void LCMsgAction::set_bet_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   // @@protoc_insertion_point(field_set:Lucky9.LCMsgAction.bet_score)
 }
 
-// bool is_get = 3;
-inline void LCMsgAction::clear_is_get() {
-  is_get_ = false;
-}
-inline bool LCMsgAction::_internal_is_get() const {
-  return is_get_;
-}
-inline bool LCMsgAction::is_get() const {
-  // @@protoc_insertion_point(field_get:Lucky9.LCMsgAction.is_get)
-  return _internal_is_get();
-}
-inline void LCMsgAction::_internal_set_is_get(bool value) {
-  
-  is_get_ = value;
-}
-inline void LCMsgAction::set_is_get(bool value) {
-  _internal_set_is_get(value);
-  // @@protoc_insertion_point(field_set:Lucky9.LCMsgAction.is_get)
-}
-
 // -------------------------------------------------------------------
 
 // LCMsgActionResp
@@ -3361,26 +3319,6 @@ inline void LCMsgActionResp::_internal_set_bet_score(::PROTOBUF_NAMESPACE_ID::in
 inline void LCMsgActionResp::set_bet_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_bet_score(value);
   // @@protoc_insertion_point(field_set:Lucky9.LCMsgActionResp.bet_score)
-}
-
-// bool is_get = 4;
-inline void LCMsgActionResp::clear_is_get() {
-  is_get_ = false;
-}
-inline bool LCMsgActionResp::_internal_is_get() const {
-  return is_get_;
-}
-inline bool LCMsgActionResp::is_get() const {
-  // @@protoc_insertion_point(field_get:Lucky9.LCMsgActionResp.is_get)
-  return _internal_is_get();
-}
-inline void LCMsgActionResp::_internal_set_is_get(bool value) {
-  
-  is_get_ = value;
-}
-inline void LCMsgActionResp::set_is_get(bool value) {
-  _internal_set_is_get(value);
-  // @@protoc_insertion_point(field_set:Lucky9.LCMsgActionResp.is_get)
 }
 
 // -------------------------------------------------------------------

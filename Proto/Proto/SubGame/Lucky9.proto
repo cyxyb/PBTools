@@ -44,7 +44,7 @@ enum ELCMsgIDSubGame
 	MsgIDSubGame_GameStartResp			= 1;	//游戏开始(LCMsgGameStartResp)
 	MsgIDSubGame_NotifyActionResp		= 2;	//通知玩家操作(LCMsgNotifyActionResp)
 	MsgIDSubGame_Action					= 3;	//玩家操作(LCMsgAction)
-	MsgIDSubGame_AddBetResp				= 4;	//玩家操作返回(LCMsgActionResp)
+	MsgIDSubGame_ActionResp				= 4;	//玩家操作返回(LCMsgActionResp)
 	MsgIDSubGame_SendCardResp			= 5;	//发牌(LCMsgSendCardResp)
 	
 	MsgIDSubGame_GameResultResp			= 9;	//结算(LCMsgGameResult)
@@ -126,7 +126,6 @@ message LCMsgAction
 {
 	int32				act				= 1;	//操作标示
 	int64				bet_score		= 2;	//下注金额
-	bool				is_get			= 3;	//是否要牌
 }
 
 //玩家操作返回
@@ -135,7 +134,6 @@ message LCMsgActionResp
 	int32				act				= 1;	//操作标示
 	int32				chair_id		= 2;	//椅子号
 	int64				bet_score		= 3;	//下注金额
-	bool				is_get			= 4;	//是否要牌
 }
 
 message LCMsgSendCardInfo
