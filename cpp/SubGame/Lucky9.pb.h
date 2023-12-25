@@ -113,19 +113,19 @@ PROTOBUF_NAMESPACE_CLOSE
 namespace Lucky9 {
 
 enum ELCMsgGameState : int {
-  GS_TP_READY = 0,
-  GS_TP_START = 1,
-  GS_TP_BET = 2,
-  GS_TP_SEND_CARD = 3,
-  GS_TP_GET_CARD = 4,
-  GS_TP_TWO_SEND_CARD = 5,
-  GS_TP_RESULT = 6,
+  GS_LC9_READY = 0,
+  GS_LC9_START = 1,
+  GS_LC9_BET = 2,
+  GS_LC9_SEND_CARD = 3,
+  GS_LC9_GET_CARD = 4,
+  GS_LC9_TWO_SEND_CARD = 5,
+  GS_LC9_RESULT = 6,
   ELCMsgGameState_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   ELCMsgGameState_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool ELCMsgGameState_IsValid(int value);
-constexpr ELCMsgGameState ELCMsgGameState_MIN = GS_TP_READY;
-constexpr ELCMsgGameState ELCMsgGameState_MAX = GS_TP_RESULT;
+constexpr ELCMsgGameState ELCMsgGameState_MIN = GS_LC9_READY;
+constexpr ELCMsgGameState ELCMsgGameState_MAX = GS_LC9_RESULT;
 constexpr int ELCMsgGameState_ARRAYSIZE = ELCMsgGameState_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ELCMsgGameState_descriptor();
@@ -169,15 +169,15 @@ inline bool ELCMsgPlayerState_Parse(
     ELCMsgPlayerState_descriptor(), name, value);
 }
 enum ELCMsgCardType : int {
-  CT_SINGLE = 0,
-  CT_9 = 1,
-  CT_MAX = 2,
+  LC_SINGLE = 0,
+  LC_9 = 1,
+  LC_MAX = 2,
   ELCMsgCardType_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   ELCMsgCardType_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool ELCMsgCardType_IsValid(int value);
-constexpr ELCMsgCardType ELCMsgCardType_MIN = CT_SINGLE;
-constexpr ELCMsgCardType ELCMsgCardType_MAX = CT_MAX;
+constexpr ELCMsgCardType ELCMsgCardType_MIN = LC_SINGLE;
+constexpr ELCMsgCardType ELCMsgCardType_MAX = LC_MAX;
 constexpr int ELCMsgCardType_ARRAYSIZE = ELCMsgCardType_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ELCMsgCardType_descriptor();

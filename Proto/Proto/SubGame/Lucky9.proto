@@ -5,13 +5,13 @@ package Lucky9;
 //桌子状态
 enum ELCMsgGameState
 {	
-	GS_TP_READY							= 0;	//准备
-	GS_TP_START							= 1;	//开始游戏 
-	GS_TP_BET							= 2;	//下注
-	GS_TP_SEND_CARD						= 3;	//发牌
-	GS_TP_GET_CARD						= 4;	//要牌
-	GS_TP_TWO_SEND_CARD					= 5;	//二次发牌
-	GS_TP_RESULT						= 6;	//结算
+	GS_LC9_READY						= 0;	//准备
+	GS_LC9_START						= 1;	//开始游戏 
+	GS_LC9_BET							= 2;	//下注
+	GS_LC9_SEND_CARD					= 3;	//发牌
+	GS_LC9_GET_CARD						= 4;	//要牌
+	GS_LC9_TWO_SEND_CARD				= 5;	//二次发牌
+	GS_LC9_RESULT						= 6;	//结算
 };
 
 //玩家状态
@@ -26,9 +26,9 @@ enum ELCMsgPlayerState
 enum ELCMsgCardType
 {
 	//扑克类型
-	CT_SINGLE							= 0;	//单牌类型
-	CT_9								= 1;	//9类型
-	CT_MAX								= 2;	//最大牌型
+	LC_SINGLE							= 0;	//单牌类型
+	LC_9								= 1;	//9类型
+	LC_MAX								= 2;	//最大牌型
 };
 
 //操作码

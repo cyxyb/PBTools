@@ -53,28 +53,28 @@ namespace Lucky9 {
             "CgZudW1iZXIYBCABKAMSJQoFY2FyZHMYBSABKAsyFi5MdWNreTkuTENNc2dI",
             "YW5kQ2FyZHMiPgoPTENNc2dHYW1lUmVzdWx0EisKB3BsYXllcnMYASADKAsy",
             "Gi5MdWNreTkuTENNc2dFbmRQbGF5ZXJJbmZvIjUKFExDTXNnTm90aWZ5UGxh",
-            "eWVyQWN0EhAKCGNoYWlyX2lkGAEgASgFEgsKA2FjdBgCIAEoBSqWAQoPRUxD",
-            "TXNnR2FtZVN0YXRlEg8KC0dTX1RQX1JFQURZEAASDwoLR1NfVFBfU1RBUlQQ",
-            "ARINCglHU19UUF9CRVQQAhITCg9HU19UUF9TRU5EX0NBUkQQAxISCg5HU19U",
-            "UF9HRVRfQ0FSRBAEEhcKE0dTX1RQX1RXT19TRU5EX0NBUkQQBRIQCgxHU19U",
-            "UF9SRVNVTFQQBio+ChFFTENNc2dQbGF5ZXJTdGF0ZRIMCghQU19SRUFEWRAA",
-            "EgsKB1BTX1BMQVkQARIOCgpQU19USU1FT1VUEAIqNQoORUxDTXNnQ2FyZFR5",
-            "cGUSDQoJQ1RfU0lOR0xFEAASCAoEQ1RfORABEgoKBkNUX01BWBACKkcKEEVM",
-            "Q01zZ0dhbWVBY3Rpb24SDQoJSW52YWxkQWN0EAASCgoGQWRkQmV0EAESCwoH",
-            "R2V0Q2FyZBACEgsKB05vdENhcmQQBCq2BAoPRUxDTXNnSURTdWJHYW1lEhUK",
-            "EU1zZ0lEU3ViR2FtZV9OdWxsEAASHgoaTXNnSURTdWJHYW1lX0dhbWVTdGFy",
-            "dFJlc3AQARIhCh1Nc2dJRFN1YkdhbWVfTm90aWZ5QWN0aW9uUmVzcBACEhcK",
-            "E01zZ0lEU3ViR2FtZV9BY3Rpb24QAxIbChdNc2dJRFN1YkdhbWVfQWRkQmV0",
-            "UmVzcBAEEh0KGU1zZ0lEU3ViR2FtZV9TZW5kQ2FyZFJlc3AQBRIcChhNc2dJ",
-            "RFN1YkdhbWVfR2V0Q2FyZFJlc3AQBhIfChtNc2dJRFN1YkdhbWVfR2FtZVJl",
-            "c3VsdFJlc3AQCRIgChxNc2dJRFN1YkdhbWVfTm90aWZ5U3RhdGVSZXNwEAoS",
-            "HAoYTXNnSURTdWJHYW1lX1RpbWVPdXRSZXNwEAsSHQoZTXNnSURTdWJHYW1l",
-            "X1RpbWVPdXRSZWFkeRAMEiEKHU1zZ0lEU3ViR2FtZV9UaW1lT3V0UmVhZHlS",
-            "ZXNwEA0SIAocTXNnSURTdWJHYW1lX1RpbWVPdXRLaWNrUmVzcBAOEiYKIk1z",
-            "Z0lEU3ViR2FtZV9Ob3RpZnlTeXN0ZW1DaGVhdFJlc3AQFBIjCh9Nc2dJRFN1",
-            "YkdhbWVfTm90aWZ5Q2FyZFR5cGVSZXNwEBUSIAocTXNnSURTdWJHYW1lX05v",
-            "dGlmeUlzTWF4UmVzcBAWEiIKHk1zZ0lEU3ViR2FtZV9Ob3RpZnlMYXN0QWN0",
-            "UmVzcBAXYgZwcm90bzM="));
+            "eWVyQWN0EhAKCGNoYWlyX2lkGAEgASgFEgsKA2FjdBgCIAEoBSqdAQoPRUxD",
+            "TXNnR2FtZVN0YXRlEhAKDEdTX0xDOV9SRUFEWRAAEhAKDEdTX0xDOV9TVEFS",
+            "VBABEg4KCkdTX0xDOV9CRVQQAhIUChBHU19MQzlfU0VORF9DQVJEEAMSEwoP",
+            "R1NfTEM5X0dFVF9DQVJEEAQSGAoUR1NfTEM5X1RXT19TRU5EX0NBUkQQBRIR",
+            "Cg1HU19MQzlfUkVTVUxUEAYqPgoRRUxDTXNnUGxheWVyU3RhdGUSDAoIUFNf",
+            "UkVBRFkQABILCgdQU19QTEFZEAESDgoKUFNfVElNRU9VVBACKjUKDkVMQ01z",
+            "Z0NhcmRUeXBlEg0KCUxDX1NJTkdMRRAAEggKBExDXzkQARIKCgZMQ19NQVgQ",
+            "AipHChBFTENNc2dHYW1lQWN0aW9uEg0KCUludmFsZEFjdBAAEgoKBkFkZEJl",
+            "dBABEgsKB0dldENhcmQQAhILCgdOb3RDYXJkEAQqtgQKD0VMQ01zZ0lEU3Vi",
+            "R2FtZRIVChFNc2dJRFN1YkdhbWVfTnVsbBAAEh4KGk1zZ0lEU3ViR2FtZV9H",
+            "YW1lU3RhcnRSZXNwEAESIQodTXNnSURTdWJHYW1lX05vdGlmeUFjdGlvblJl",
+            "c3AQAhIXChNNc2dJRFN1YkdhbWVfQWN0aW9uEAMSGwoXTXNnSURTdWJHYW1l",
+            "X0FkZEJldFJlc3AQBBIdChlNc2dJRFN1YkdhbWVfU2VuZENhcmRSZXNwEAUS",
+            "HAoYTXNnSURTdWJHYW1lX0dldENhcmRSZXNwEAYSHwobTXNnSURTdWJHYW1l",
+            "X0dhbWVSZXN1bHRSZXNwEAkSIAocTXNnSURTdWJHYW1lX05vdGlmeVN0YXRl",
+            "UmVzcBAKEhwKGE1zZ0lEU3ViR2FtZV9UaW1lT3V0UmVzcBALEh0KGU1zZ0lE",
+            "U3ViR2FtZV9UaW1lT3V0UmVhZHkQDBIhCh1Nc2dJRFN1YkdhbWVfVGltZU91",
+            "dFJlYWR5UmVzcBANEiAKHE1zZ0lEU3ViR2FtZV9UaW1lT3V0S2lja1Jlc3AQ",
+            "DhImCiJNc2dJRFN1YkdhbWVfTm90aWZ5U3lzdGVtQ2hlYXRSZXNwEBQSIwof",
+            "TXNnSURTdWJHYW1lX05vdGlmeUNhcmRUeXBlUmVzcBAVEiAKHE1zZ0lEU3Vi",
+            "R2FtZV9Ob3RpZnlJc01heFJlc3AQFhIiCh5Nc2dJRFN1YkdhbWVfTm90aWZ5",
+            "TGFzdEFjdFJlc3AQF2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Lucky9.ELCMsgGameState), typeof(global::Lucky9.ELCMsgPlayerState), typeof(global::Lucky9.ELCMsgCardType), typeof(global::Lucky9.ELCMsgGameAction), typeof(global::Lucky9.ELCMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -104,31 +104,31 @@ namespace Lucky9 {
     /// <summary>
     ///准备
     /// </summary>
-    [pbr::OriginalName("GS_TP_READY")] GsTpReady = 0,
+    [pbr::OriginalName("GS_LC9_READY")] GsLc9Ready = 0,
     /// <summary>
     ///开始游戏 
     /// </summary>
-    [pbr::OriginalName("GS_TP_START")] GsTpStart = 1,
+    [pbr::OriginalName("GS_LC9_START")] GsLc9Start = 1,
     /// <summary>
     ///下注
     /// </summary>
-    [pbr::OriginalName("GS_TP_BET")] GsTpBet = 2,
+    [pbr::OriginalName("GS_LC9_BET")] GsLc9Bet = 2,
     /// <summary>
     ///发牌
     /// </summary>
-    [pbr::OriginalName("GS_TP_SEND_CARD")] GsTpSendCard = 3,
+    [pbr::OriginalName("GS_LC9_SEND_CARD")] GsLc9SendCard = 3,
     /// <summary>
     ///要牌
     /// </summary>
-    [pbr::OriginalName("GS_TP_GET_CARD")] GsTpGetCard = 4,
+    [pbr::OriginalName("GS_LC9_GET_CARD")] GsLc9GetCard = 4,
     /// <summary>
     ///二次发牌
     /// </summary>
-    [pbr::OriginalName("GS_TP_TWO_SEND_CARD")] GsTpTwoSendCard = 5,
+    [pbr::OriginalName("GS_LC9_TWO_SEND_CARD")] GsLc9TwoSendCard = 5,
     /// <summary>
     ///结算
     /// </summary>
-    [pbr::OriginalName("GS_TP_RESULT")] GsTpResult = 6,
+    [pbr::OriginalName("GS_LC9_RESULT")] GsLc9Result = 6,
   }
 
   /// <summary>
@@ -156,15 +156,15 @@ namespace Lucky9 {
     /// <summary>
     ///扑克类型
     /// </summary>
-    [pbr::OriginalName("CT_SINGLE")] CtSingle = 0,
+    [pbr::OriginalName("LC_SINGLE")] LcSingle = 0,
     /// <summary>
     ///9类型
     /// </summary>
-    [pbr::OriginalName("CT_9")] Ct9 = 1,
+    [pbr::OriginalName("LC_9")] Lc9 = 1,
     /// <summary>
     ///最大牌型
     /// </summary>
-    [pbr::OriginalName("CT_MAX")] CtMax = 2,
+    [pbr::OriginalName("LC_MAX")] LcMax = 2,
   }
 
   /// <summary>

@@ -431,30 +431,30 @@ const char descriptor_table_protodef_Lucky9_2eproto[] PROTOBUF_SECTION_VARIABLE(
   "HandCards\">\n\017LCMsgGameResult\022+\n\007players\030"
   "\001 \003(\0132\032.Lucky9.LCMsgEndPlayerInfo\"5\n\024LCM"
   "sgNotifyPlayerAct\022\020\n\010chair_id\030\001 \001(\005\022\013\n\003a"
-  "ct\030\002 \001(\005*\226\001\n\017ELCMsgGameState\022\017\n\013GS_TP_RE"
-  "ADY\020\000\022\017\n\013GS_TP_START\020\001\022\r\n\tGS_TP_BET\020\002\022\023\n"
-  "\017GS_TP_SEND_CARD\020\003\022\022\n\016GS_TP_GET_CARD\020\004\022\027"
-  "\n\023GS_TP_TWO_SEND_CARD\020\005\022\020\n\014GS_TP_RESULT\020"
-  "\006*>\n\021ELCMsgPlayerState\022\014\n\010PS_READY\020\000\022\013\n\007"
-  "PS_PLAY\020\001\022\016\n\nPS_TIMEOUT\020\002*5\n\016ELCMsgCardT"
-  "ype\022\r\n\tCT_SINGLE\020\000\022\010\n\004CT_9\020\001\022\n\n\006CT_MAX\020\002"
-  "*G\n\020ELCMsgGameAction\022\r\n\tInvaldAct\020\000\022\n\n\006A"
-  "ddBet\020\001\022\013\n\007GetCard\020\002\022\013\n\007NotCard\020\004*\266\004\n\017EL"
-  "CMsgIDSubGame\022\025\n\021MsgIDSubGame_Null\020\000\022\036\n\032"
-  "MsgIDSubGame_GameStartResp\020\001\022!\n\035MsgIDSub"
-  "Game_NotifyActionResp\020\002\022\027\n\023MsgIDSubGame_"
-  "Action\020\003\022\033\n\027MsgIDSubGame_AddBetResp\020\004\022\035\n"
-  "\031MsgIDSubGame_SendCardResp\020\005\022\034\n\030MsgIDSub"
-  "Game_GetCardResp\020\006\022\037\n\033MsgIDSubGame_GameR"
-  "esultResp\020\t\022 \n\034MsgIDSubGame_NotifyStateR"
-  "esp\020\n\022\034\n\030MsgIDSubGame_TimeOutResp\020\013\022\035\n\031M"
-  "sgIDSubGame_TimeOutReady\020\014\022!\n\035MsgIDSubGa"
-  "me_TimeOutReadyResp\020\r\022 \n\034MsgIDSubGame_Ti"
-  "meOutKickResp\020\016\022&\n\"MsgIDSubGame_NotifySy"
-  "stemCheatResp\020\024\022#\n\037MsgIDSubGame_NotifyCa"
-  "rdTypeResp\020\025\022 \n\034MsgIDSubGame_NotifyIsMax"
-  "Resp\020\026\022\"\n\036MsgIDSubGame_NotifyLastActResp"
-  "\020\027b\006proto3"
+  "ct\030\002 \001(\005*\235\001\n\017ELCMsgGameState\022\020\n\014GS_LC9_R"
+  "EADY\020\000\022\020\n\014GS_LC9_START\020\001\022\016\n\nGS_LC9_BET\020\002"
+  "\022\024\n\020GS_LC9_SEND_CARD\020\003\022\023\n\017GS_LC9_GET_CAR"
+  "D\020\004\022\030\n\024GS_LC9_TWO_SEND_CARD\020\005\022\021\n\rGS_LC9_"
+  "RESULT\020\006*>\n\021ELCMsgPlayerState\022\014\n\010PS_READ"
+  "Y\020\000\022\013\n\007PS_PLAY\020\001\022\016\n\nPS_TIMEOUT\020\002*5\n\016ELCM"
+  "sgCardType\022\r\n\tLC_SINGLE\020\000\022\010\n\004LC_9\020\001\022\n\n\006L"
+  "C_MAX\020\002*G\n\020ELCMsgGameAction\022\r\n\tInvaldAct"
+  "\020\000\022\n\n\006AddBet\020\001\022\013\n\007GetCard\020\002\022\013\n\007NotCard\020\004"
+  "*\266\004\n\017ELCMsgIDSubGame\022\025\n\021MsgIDSubGame_Nul"
+  "l\020\000\022\036\n\032MsgIDSubGame_GameStartResp\020\001\022!\n\035M"
+  "sgIDSubGame_NotifyActionResp\020\002\022\027\n\023MsgIDS"
+  "ubGame_Action\020\003\022\033\n\027MsgIDSubGame_AddBetRe"
+  "sp\020\004\022\035\n\031MsgIDSubGame_SendCardResp\020\005\022\034\n\030M"
+  "sgIDSubGame_GetCardResp\020\006\022\037\n\033MsgIDSubGam"
+  "e_GameResultResp\020\t\022 \n\034MsgIDSubGame_Notif"
+  "yStateResp\020\n\022\034\n\030MsgIDSubGame_TimeOutResp"
+  "\020\013\022\035\n\031MsgIDSubGame_TimeOutReady\020\014\022!\n\035Msg"
+  "IDSubGame_TimeOutReadyResp\020\r\022 \n\034MsgIDSub"
+  "Game_TimeOutKickResp\020\016\022&\n\"MsgIDSubGame_N"
+  "otifySystemCheatResp\020\024\022#\n\037MsgIDSubGame_N"
+  "otifyCardTypeResp\020\025\022 \n\034MsgIDSubGame_Noti"
+  "fyIsMaxResp\020\026\022\"\n\036MsgIDSubGame_NotifyLast"
+  "ActResp\020\027b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Lucky9_2eproto_deps[1] = {
 };
@@ -475,7 +475,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Luc
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Lucky9_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Lucky9_2eproto = {
-  false, false, descriptor_table_protodef_Lucky9_2eproto, "Lucky9.proto", 2250,
+  false, false, descriptor_table_protodef_Lucky9_2eproto, "Lucky9.proto", 2257,
   &descriptor_table_Lucky9_2eproto_once, descriptor_table_Lucky9_2eproto_sccs, descriptor_table_Lucky9_2eproto_deps, 13, 0,
   schemas, file_default_instances, TableStruct_Lucky9_2eproto::offsets,
   file_level_metadata_Lucky9_2eproto, 13, file_level_enum_descriptors_Lucky9_2eproto, file_level_service_descriptors_Lucky9_2eproto,
