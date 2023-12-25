@@ -3055,7 +3055,7 @@ namespace AndarBahar {
     public const int OpTypeFieldNumber = 1;
     private int opType_;
     /// <summary>
-    /// 1 = 上庄 2 = 下庄
+    /// 1 = 上庄 2 = 下庄 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int OpType {
@@ -3317,7 +3317,7 @@ namespace AndarBahar {
     public const int OpTypeFieldNumber = 4;
     private int opType_;
     /// <summary>
-    /// 1 = 上庄 2 = 下庄
+    /// 1 = 上庄 2 = 下庄 3 = 被动下庄
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int OpType {

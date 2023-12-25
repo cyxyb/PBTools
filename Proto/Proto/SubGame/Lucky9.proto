@@ -1,0 +1,180 @@
+syntax = "proto3";
+
+package Lucky9;
+
+//桌子状态
+enum ELCMsgGameState
+{	
+	GS_TP_READY							= 0;	//准备
+	GS_TP_DEAL							= 1;	//发牌
+	GS_TP_PLAYING						= 2;	//游戏
+	GS_TP_COMPARE						= 3;	//比牌阶段
+	GS_TP_RESULT						= 4;	//结算
+};
+
+//玩家状态
+enum ELCMsgPlayerState
+{	
+	PS_READY							= 0;	//准备
+	PS_PLAY								= 1;	//游戏
+	PS_GIVE								= 2;	//弃牌
+	PS_FAIL								= 3;	//淘汰
+	PS_TIMEOUT							= 4;	//超时
+};
+
+//牌型
+enum ELCMsgCardType
+{
+	//扑克类型
+	CT_SINGLE							= 0;	//单牌类型
+	CT_9								= 1;	//9类型
+	CT_MAX								= 2;	//最大牌型
+};
+
+//操作码
+enum ELCMsgGameAction
+{
+	InvaldAct							= 0;	//无效
+	AddBet								= 1;	//下注
+	GetCard								= 2;	//要牌
+	NotCard								= 4;	//不再要牌
+};
+
+enum ELCMsgIDSubGame
+{
+	MsgIDSubGame_Null					= 0;
+	MsgIDSubGame_GameStartResp			= 1;	//游戏开始(LCMsgGameStartResp)
+	MsgIDSubGame_NotifyActionResp		= 2;	//玩家操作(LCMsgNotifyActionResp)
+	MsgIDSubGame_Action					= 3;	//玩家操作(LCMsgAction)
+	MsgIDSubGame_AddBetResp				= 4;	//玩家下注(LCMsgAddBetResp)
+	MsgIDSubGame_GetCardResp			= 5;	//玩家是否要牌返回(LCMsgGetCardResp)
+	
+	MsgIDSubGame_GameResultResp			= 9;	//结算(LCMsgGameResult)
+	MsgIDSubGame_NotifyStateResp		= 10;	//桌子状态(LCMsgTableState)
+	MsgIDSubGame_TimeOutResp			= 11;	//通知超时(MsgCommonBool)
+	MsgIDSubGame_TimeOutReady			= 12;	//重新准备(MsgCommonBool)
+	MsgIDSubGame_TimeOutReadyResp		= 13;	//准备返回(MsgCommonBool)
+	MsgIDSubGame_TimeOutKickResp		= 14;	//超时踢了游戏(MsgCommonBool)
+
+	/////////////////////////机器人消息///////////////////////
+	MsgIDSubGame_NotifySystemCheatResp	= 20;	//通知系统作弊率
+	MsgIDSubGame_NotifyCardTypeResp		= 21;	//通知牌型
+	MsgIDSubGame_NotifyIsMaxResp		= 22;	//通知是否最大
+	MsgIDSubGame_NotifyLastActResp		= 23;	//通知玩家行为
+}
+
+message LCMsgTableState
+{
+	int32				state			= 1;	//桌子状态
+	int32				out_ime			= 2;	//剩余时间
+}
+
+
+message LCMsgHandCards
+{
+	int32				type			= 1;	//牌型
+	int32				number			= 2;	//点数
+	repeated int32		cards			= 3;	//手牌
+}
+
+message LCMsgPlayerInfo
+{
+	int32				chair_id		= 1;	//玩家椅子号
+	int32				play_status		= 2;	//玩家状态
+	int64				player_bet		= 3;	//玩家投注总和
+	int32				card_type		= 4;	//牌型
+	int32				get_card		= 5;	//是否操作要牌
+	int64				gold			= 6;	//自己的金币，别人的是空
+	int64				win_gold		= 7;	//输赢分
+	LCMsgHandCards			handls			= 8;	//手牌
+}
+
+
+//场景消息
+message LCMsgSceneInfo
+{
+	int64			  	max_score		= 1;	//最大下注
+	int64			  	table_max_score	= 2;	//最大下注
+	int64			  	cell_score		= 3;	//底分
+	int32				table_state		= 4;	//桌子状态
+	int32				table_ronud		= 5;	//桌子轮数
+	int64				total_bet_score	= 6;	//桌内总下注
+	
+	int32				banker_chair_id	= 8;	//庄家椅子号
+	int32				out_time		= 11;	//当前状态剩余超时时间
+	int32				total_time		= 12;	//当前状态总时间
+
+	repeated LCMsgPlayerInfo player_infos	= 15;	//玩家状态
+}
+
+//游戏开始
+message LCMsgGameStartResp
+{
+	int32				table_ronud		= 1;	//桌子轮数
+	int32				total_enter_gold= 2;	//总的入场费
+	int32				cur_enter_gold	= 3;	//当前局入场费
+	int32				banker_chair_id	= 4;	//庄家椅子号
+	int32				noe_card		= 5;	//第一张牌
+
+	repeated int32		play_index		= 8;	//在玩下标
+	repeated int64		player_new_score= 9;	//玩家最新金币
+}
+
+//游戏开始
+message LCMsgNotifyActionResp
+{
+	int32				current_act		= 3;	//当前操作码
+	int32				oper_time		= 4;	//操作时间
+}
+
+//玩家操作
+message LCMsgAction
+{
+	int32				act				= 1;	//操作标示
+	int64				bet_score		= 2;	//下注金额
+}
+
+//玩家看牌
+message LCMsgGetCardResp
+{
+	int32				chair_id		= 1;	//玩家椅子号
+	int32				card_type		= 2;	//牌型
+	repeated int32		cards			= 3;	//手牌
+}
+
+message LCMsgAddBetResp
+{
+	int32				add_chair_id	= 1;	//下注玩家椅子号
+	int64				add_score		= 2;	//下注金额
+}
+
+message LCMsgEndPlayerInfo
+{
+	int64				game_score		= 1;	//输赢分
+	int64				tax				= 2;	//税
+	int64				type			= 3;	//牌型
+	int64				number			= 4;	//点数
+	LCMsgHandCards		cards    		= 5;	//手牌
+}
+
+//游戏结果                                  
+message LCMsgGameResult                           
+{                                           
+	repeated LCMsgEndPlayerInfo	players	= 1;	//输赢分
+}                                           
+
+
+//////////////////////////////////////////////////////////////机器人消息///////////////////////////////////////
+message LCMsgNotifyPlayerAct
+{
+	int32				chair_id		= 1;	//玩家椅子号
+	int32				act				= 2;	//被比玩家椅子号
+}
+
+//////////////////////////////////////////////////////////PVP////////////////////////////////////////////////
+//桌子特性配置
+/*
+{
+	"CellScore":10,"MaxBetScore":1024,"TableBetLimit":1024,"MaxBlindNum":4
+}
+*/

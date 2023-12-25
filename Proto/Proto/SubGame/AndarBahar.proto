@@ -114,7 +114,7 @@ message MsgSendCardResp
 //操作庄
 message MsgOpBanker
 {
-	int32				op_type			= 1;	// 1 = 上庄 2 = 下庄
+	int32				op_type			= 1;	// 1 = 上庄 2 = 下庄 
 	int64				up_gold			= 2;	// 携带金币
 }
 
@@ -124,7 +124,7 @@ message MsgOpBankerResp
 	int32				ret_code		= 1;	//返回码
 	int32				user_id			= 2;	//玩家id
 	int32				chair_id		= 3;	//玩家椅子号
-	int32				op_type			= 4;	// 1 = 上庄 2 = 下庄
+	int32				op_type			= 4;	// 1 = 上庄 2 = 下庄 3 = 被动下庄
 	int64				up_gold			= 5;	// 携带金币
 
 }
