@@ -52,29 +52,29 @@ namespace Lucky9 {
             "IAEoAxIlCgVjYXJkcxgFIAEoCzIWLkx1Y2t5OS5MQ01zZ0hhbmRDYXJkcyI+",
             "Cg9MQ01zZ0dhbWVSZXN1bHQSKwoHcGxheWVycxgBIAMoCzIaLkx1Y2t5OS5M",
             "Q01zZ0VuZFBsYXllckluZm8iNQoUTENNc2dOb3RpZnlQbGF5ZXJBY3QSEAoI",
-            "Y2hhaXJfaWQYASABKAUSCwoDYWN0GAIgASgFKmoKD0VMQ01zZ0dhbWVTdGF0",
-            "ZRIPCgtHU19UUF9SRUFEWRAAEg4KCkdTX1RQX0RFQUwQARIRCg1HU19UUF9Q",
-            "TEFZSU5HEAISEQoNR1NfVFBfQ09NUEFSRRADEhAKDEdTX1RQX1JFU1VMVBAE",
-            "KlgKEUVMQ01zZ1BsYXllclN0YXRlEgwKCFBTX1JFQURZEAASCwoHUFNfUExB",
-            "WRABEgsKB1BTX0dJVkUQAhILCgdQU19GQUlMEAMSDgoKUFNfVElNRU9VVBAE",
-            "KjUKDkVMQ01zZ0NhcmRUeXBlEg0KCUNUX1NJTkdMRRAAEggKBENUXzkQARIK",
-            "CgZDVF9NQVgQAipHChBFTENNc2dHYW1lQWN0aW9uEg0KCUludmFsZEFjdBAA",
-            "EgoKBkFkZEJldBABEgsKB0dldENhcmQQAhILCgdOb3RDYXJkEAQqlwQKD0VM",
-            "Q01zZ0lEU3ViR2FtZRIVChFNc2dJRFN1YkdhbWVfTnVsbBAAEh4KGk1zZ0lE",
-            "U3ViR2FtZV9HYW1lU3RhcnRSZXNwEAESIQodTXNnSURTdWJHYW1lX05vdGlm",
-            "eUFjdGlvblJlc3AQAhIXChNNc2dJRFN1YkdhbWVfQWN0aW9uEAMSGwoXTXNn",
-            "SURTdWJHYW1lX0FkZEJldFJlc3AQBBIcChhNc2dJRFN1YkdhbWVfR2V0Q2Fy",
-            "ZFJlc3AQBRIfChtNc2dJRFN1YkdhbWVfR2FtZVJlc3VsdFJlc3AQCRIgChxN",
-            "c2dJRFN1YkdhbWVfTm90aWZ5U3RhdGVSZXNwEAoSHAoYTXNnSURTdWJHYW1l",
-            "X1RpbWVPdXRSZXNwEAsSHQoZTXNnSURTdWJHYW1lX1RpbWVPdXRSZWFkeRAM",
-            "EiEKHU1zZ0lEU3ViR2FtZV9UaW1lT3V0UmVhZHlSZXNwEA0SIAocTXNnSURT",
-            "dWJHYW1lX1RpbWVPdXRLaWNrUmVzcBAOEiYKIk1zZ0lEU3ViR2FtZV9Ob3Rp",
-            "ZnlTeXN0ZW1DaGVhdFJlc3AQFBIjCh9Nc2dJRFN1YkdhbWVfTm90aWZ5Q2Fy",
-            "ZFR5cGVSZXNwEBUSIAocTXNnSURTdWJHYW1lX05vdGlmeUlzTWF4UmVzcBAW",
-            "EiIKHk1zZ0lEU3ViR2FtZV9Ob3RpZnlMYXN0QWN0UmVzcBAXYgZwcm90bzM="));
+            "Y2hhaXJfaWQYASABKAUSCwoDYWN0GAIgASgFKpgBCg9FTENNc2dHYW1lU3Rh",
+            "dGUSDwoLR1NfVFBfUkVBRFkQABIPCgtHU19UUF9TVEFSVBABEg0KCUdTX1RQ",
+            "X0JFVBACEhMKD0dTX1RQX1NFTkRfQ0FSRBADEhIKDkdTX1RQX0dFVF9DQVJE",
+            "EAQSGQoVR1NfVFBfQkFOS0VSX0dFVF9DQVJEEAUSEAoMR1NfVFBfUkVTVUxU",
+            "EAYqNQoORUxDTXNnQ2FyZFR5cGUSDQoJQ1RfU0lOR0xFEAASCAoEQ1RfORAB",
+            "EgoKBkNUX01BWBACKkcKEEVMQ01zZ0dhbWVBY3Rpb24SDQoJSW52YWxkQWN0",
+            "EAASCgoGQWRkQmV0EAESCwoHR2V0Q2FyZBACEgsKB05vdENhcmQQBCqXBAoP",
+            "RUxDTXNnSURTdWJHYW1lEhUKEU1zZ0lEU3ViR2FtZV9OdWxsEAASHgoaTXNn",
+            "SURTdWJHYW1lX0dhbWVTdGFydFJlc3AQARIhCh1Nc2dJRFN1YkdhbWVfTm90",
+            "aWZ5QWN0aW9uUmVzcBACEhcKE01zZ0lEU3ViR2FtZV9BY3Rpb24QAxIbChdN",
+            "c2dJRFN1YkdhbWVfQWRkQmV0UmVzcBAEEhwKGE1zZ0lEU3ViR2FtZV9HZXRD",
+            "YXJkUmVzcBAFEh8KG01zZ0lEU3ViR2FtZV9HYW1lUmVzdWx0UmVzcBAJEiAK",
+            "HE1zZ0lEU3ViR2FtZV9Ob3RpZnlTdGF0ZVJlc3AQChIcChhNc2dJRFN1Ykdh",
+            "bWVfVGltZU91dFJlc3AQCxIdChlNc2dJRFN1YkdhbWVfVGltZU91dFJlYWR5",
+            "EAwSIQodTXNnSURTdWJHYW1lX1RpbWVPdXRSZWFkeVJlc3AQDRIgChxNc2dJ",
+            "RFN1YkdhbWVfVGltZU91dEtpY2tSZXNwEA4SJgoiTXNnSURTdWJHYW1lX05v",
+            "dGlmeVN5c3RlbUNoZWF0UmVzcBAUEiMKH01zZ0lEU3ViR2FtZV9Ob3RpZnlD",
+            "YXJkVHlwZVJlc3AQFRIgChxNc2dJRFN1YkdhbWVfTm90aWZ5SXNNYXhSZXNw",
+            "EBYSIgoeTXNnSURTdWJHYW1lX05vdGlmeUxhc3RBY3RSZXNwEBdiBnByb3Rv",
+            "Mw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Lucky9.ELCMsgGameState), typeof(global::Lucky9.ELCMsgPlayerState), typeof(global::Lucky9.ELCMsgCardType), typeof(global::Lucky9.ELCMsgGameAction), typeof(global::Lucky9.ELCMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Lucky9.ELCMsgGameState), typeof(global::Lucky9.ELCMsgCardType), typeof(global::Lucky9.ELCMsgGameAction), typeof(global::Lucky9.ELCMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgTableState), global::Lucky9.LCMsgTableState.Parser, new[]{ "State", "OutIme" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgHandCards), global::Lucky9.LCMsgHandCards.Parser, new[]{ "Type", "Number", "Cards" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgPlayerInfo), global::Lucky9.LCMsgPlayerInfo.Parser, new[]{ "ChairId", "PlayStatus", "PlayerBet", "CardType", "GetCard", "Gold", "WinGold", "WinConut", "Handls" }, null, null, null, null),
@@ -102,47 +102,29 @@ namespace Lucky9 {
     /// </summary>
     [pbr::OriginalName("GS_TP_READY")] GsTpReady = 0,
     /// <summary>
+    ///开始游戏
+    /// </summary>
+    [pbr::OriginalName("GS_TP_START")] GsTpStart = 1,
+    /// <summary>
+    ///下注
+    /// </summary>
+    [pbr::OriginalName("GS_TP_BET")] GsTpBet = 2,
+    /// <summary>
     ///发牌
     /// </summary>
-    [pbr::OriginalName("GS_TP_DEAL")] GsTpDeal = 1,
+    [pbr::OriginalName("GS_TP_SEND_CARD")] GsTpSendCard = 3,
     /// <summary>
-    ///游戏
+    ///闲家要牌
     /// </summary>
-    [pbr::OriginalName("GS_TP_PLAYING")] GsTpPlaying = 2,
+    [pbr::OriginalName("GS_TP_GET_CARD")] GsTpGetCard = 4,
     /// <summary>
-    ///比牌阶段
+    ///庄家要牌
     /// </summary>
-    [pbr::OriginalName("GS_TP_COMPARE")] GsTpCompare = 3,
+    [pbr::OriginalName("GS_TP_BANKER_GET_CARD")] GsTpBankerGetCard = 5,
     /// <summary>
     ///结算
     /// </summary>
-    [pbr::OriginalName("GS_TP_RESULT")] GsTpResult = 4,
-  }
-
-  /// <summary>
-  ///玩家状态
-  /// </summary>
-  public enum ELCMsgPlayerState {
-    /// <summary>
-    ///准备
-    /// </summary>
-    [pbr::OriginalName("PS_READY")] PsReady = 0,
-    /// <summary>
-    ///游戏
-    /// </summary>
-    [pbr::OriginalName("PS_PLAY")] PsPlay = 1,
-    /// <summary>
-    ///弃牌
-    /// </summary>
-    [pbr::OriginalName("PS_GIVE")] PsGive = 2,
-    /// <summary>
-    ///淘汰
-    /// </summary>
-    [pbr::OriginalName("PS_FAIL")] PsFail = 3,
-    /// <summary>
-    ///超时
-    /// </summary>
-    [pbr::OriginalName("PS_TIMEOUT")] PsTimeout = 4,
+    [pbr::OriginalName("GS_TP_RESULT")] GsTpResult = 6,
   }
 
   /// <summary>

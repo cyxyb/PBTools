@@ -6,20 +6,12 @@ package Lucky9;
 enum ELCMsgGameState
 {	
 	GS_TP_READY							= 0;	//准备
-	GS_TP_DEAL							= 1;	//发牌
-	GS_TP_PLAYING						= 2;	//游戏
-	GS_TP_COMPARE						= 3;	//比牌阶段
-	GS_TP_RESULT						= 4;	//结算
-};
-
-//玩家状态
-enum ELCMsgPlayerState
-{	
-	PS_READY							= 0;	//准备
-	PS_PLAY								= 1;	//游戏
-	PS_GIVE								= 2;	//弃牌
-	PS_FAIL								= 3;	//淘汰
-	PS_TIMEOUT							= 4;	//超时
+	GS_TP_START							= 1;	//开始游戏
+	GS_TP_BET							= 2;	//下注
+	GS_TP_SEND_CARD						= 3;	//发牌
+	GS_TP_GET_CARD						= 4;	//闲家要牌
+	GS_TP_BANKER_GET_CARD				= 5;	//庄家要牌
+	GS_TP_RESULT						= 6;	//结算
 };
 
 //牌型

@@ -110,10 +110,12 @@ namespace Lucky9 {
 
 enum ELCMsgGameState : int {
   GS_TP_READY = 0,
-  GS_TP_DEAL = 1,
-  GS_TP_PLAYING = 2,
-  GS_TP_COMPARE = 3,
-  GS_TP_RESULT = 4,
+  GS_TP_START = 1,
+  GS_TP_BET = 2,
+  GS_TP_SEND_CARD = 3,
+  GS_TP_GET_CARD = 4,
+  GS_TP_BANKER_GET_CARD = 5,
+  GS_TP_RESULT = 6,
   ELCMsgGameState_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   ELCMsgGameState_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
@@ -135,34 +137,6 @@ inline bool ELCMsgGameState_Parse(
     ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, ELCMsgGameState* value) {
   return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<ELCMsgGameState>(
     ELCMsgGameState_descriptor(), name, value);
-}
-enum ELCMsgPlayerState : int {
-  PS_READY = 0,
-  PS_PLAY = 1,
-  PS_GIVE = 2,
-  PS_FAIL = 3,
-  PS_TIMEOUT = 4,
-  ELCMsgPlayerState_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
-  ELCMsgPlayerState_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
-};
-bool ELCMsgPlayerState_IsValid(int value);
-constexpr ELCMsgPlayerState ELCMsgPlayerState_MIN = PS_READY;
-constexpr ELCMsgPlayerState ELCMsgPlayerState_MAX = PS_TIMEOUT;
-constexpr int ELCMsgPlayerState_ARRAYSIZE = ELCMsgPlayerState_MAX + 1;
-
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ELCMsgPlayerState_descriptor();
-template<typename T>
-inline const std::string& ELCMsgPlayerState_Name(T enum_t_value) {
-  static_assert(::std::is_same<T, ELCMsgPlayerState>::value ||
-    ::std::is_integral<T>::value,
-    "Incorrect type passed to function ELCMsgPlayerState_Name.");
-  return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
-    ELCMsgPlayerState_descriptor(), enum_t_value);
-}
-inline bool ELCMsgPlayerState_Parse(
-    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, ELCMsgPlayerState* value) {
-  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<ELCMsgPlayerState>(
-    ELCMsgPlayerState_descriptor(), name, value);
 }
 enum ELCMsgCardType : int {
   CT_SINGLE = 0,
@@ -3699,11 +3673,6 @@ template <> struct is_proto_enum< ::Lucky9::ELCMsgGameState> : ::std::true_type 
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::Lucky9::ELCMsgGameState>() {
   return ::Lucky9::ELCMsgGameState_descriptor();
-}
-template <> struct is_proto_enum< ::Lucky9::ELCMsgPlayerState> : ::std::true_type {};
-template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::Lucky9::ELCMsgPlayerState>() {
-  return ::Lucky9::ELCMsgPlayerState_descriptor();
 }
 template <> struct is_proto_enum< ::Lucky9::ELCMsgCardType> : ::std::true_type {};
 template <>

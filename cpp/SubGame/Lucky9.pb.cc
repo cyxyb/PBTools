@@ -228,7 +228,7 @@ static void InitDefaultsscc_info_LCMsgTableState_Lucky9_2eproto() {
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_LCMsgTableState_Lucky9_2eproto}, {}};
 
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Lucky9_2eproto[12];
-static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_Lucky9_2eproto[5];
+static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_Lucky9_2eproto[4];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_Lucky9_2eproto = nullptr;
 
 const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Lucky9_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
@@ -403,29 +403,28 @@ const char descriptor_table_protodef_Lucky9_2eproto[] PROTOBUF_SECTION_VARIABLE(
   "ards\030\005 \001(\0132\026.Lucky9.LCMsgHandCards\">\n\017LC"
   "MsgGameResult\022+\n\007players\030\001 \003(\0132\032.Lucky9."
   "LCMsgEndPlayerInfo\"5\n\024LCMsgNotifyPlayerA"
-  "ct\022\020\n\010chair_id\030\001 \001(\005\022\013\n\003act\030\002 \001(\005*j\n\017ELC"
-  "MsgGameState\022\017\n\013GS_TP_READY\020\000\022\016\n\nGS_TP_D"
-  "EAL\020\001\022\021\n\rGS_TP_PLAYING\020\002\022\021\n\rGS_TP_COMPAR"
-  "E\020\003\022\020\n\014GS_TP_RESULT\020\004*X\n\021ELCMsgPlayerSta"
-  "te\022\014\n\010PS_READY\020\000\022\013\n\007PS_PLAY\020\001\022\013\n\007PS_GIVE"
-  "\020\002\022\013\n\007PS_FAIL\020\003\022\016\n\nPS_TIMEOUT\020\004*5\n\016ELCMs"
-  "gCardType\022\r\n\tCT_SINGLE\020\000\022\010\n\004CT_9\020\001\022\n\n\006CT"
-  "_MAX\020\002*G\n\020ELCMsgGameAction\022\r\n\tInvaldAct\020"
-  "\000\022\n\n\006AddBet\020\001\022\013\n\007GetCard\020\002\022\013\n\007NotCard\020\004*"
-  "\227\004\n\017ELCMsgIDSubGame\022\025\n\021MsgIDSubGame_Null"
-  "\020\000\022\036\n\032MsgIDSubGame_GameStartResp\020\001\022!\n\035Ms"
-  "gIDSubGame_NotifyActionResp\020\002\022\027\n\023MsgIDSu"
-  "bGame_Action\020\003\022\033\n\027MsgIDSubGame_AddBetRes"
-  "p\020\004\022\034\n\030MsgIDSubGame_GetCardResp\020\005\022\037\n\033Msg"
-  "IDSubGame_GameResultResp\020\t\022 \n\034MsgIDSubGa"
-  "me_NotifyStateResp\020\n\022\034\n\030MsgIDSubGame_Tim"
-  "eOutResp\020\013\022\035\n\031MsgIDSubGame_TimeOutReady\020"
-  "\014\022!\n\035MsgIDSubGame_TimeOutReadyResp\020\r\022 \n\034"
-  "MsgIDSubGame_TimeOutKickResp\020\016\022&\n\"MsgIDS"
-  "ubGame_NotifySystemCheatResp\020\024\022#\n\037MsgIDS"
-  "ubGame_NotifyCardTypeResp\020\025\022 \n\034MsgIDSubG"
-  "ame_NotifyIsMaxResp\020\026\022\"\n\036MsgIDSubGame_No"
-  "tifyLastActResp\020\027b\006proto3"
+  "ct\022\020\n\010chair_id\030\001 \001(\005\022\013\n\003act\030\002 \001(\005*\230\001\n\017EL"
+  "CMsgGameState\022\017\n\013GS_TP_READY\020\000\022\017\n\013GS_TP_"
+  "START\020\001\022\r\n\tGS_TP_BET\020\002\022\023\n\017GS_TP_SEND_CAR"
+  "D\020\003\022\022\n\016GS_TP_GET_CARD\020\004\022\031\n\025GS_TP_BANKER_"
+  "GET_CARD\020\005\022\020\n\014GS_TP_RESULT\020\006*5\n\016ELCMsgCa"
+  "rdType\022\r\n\tCT_SINGLE\020\000\022\010\n\004CT_9\020\001\022\n\n\006CT_MA"
+  "X\020\002*G\n\020ELCMsgGameAction\022\r\n\tInvaldAct\020\000\022\n"
+  "\n\006AddBet\020\001\022\013\n\007GetCard\020\002\022\013\n\007NotCard\020\004*\227\004\n"
+  "\017ELCMsgIDSubGame\022\025\n\021MsgIDSubGame_Null\020\000\022"
+  "\036\n\032MsgIDSubGame_GameStartResp\020\001\022!\n\035MsgID"
+  "SubGame_NotifyActionResp\020\002\022\027\n\023MsgIDSubGa"
+  "me_Action\020\003\022\033\n\027MsgIDSubGame_AddBetResp\020\004"
+  "\022\034\n\030MsgIDSubGame_GetCardResp\020\005\022\037\n\033MsgIDS"
+  "ubGame_GameResultResp\020\t\022 \n\034MsgIDSubGame_"
+  "NotifyStateResp\020\n\022\034\n\030MsgIDSubGame_TimeOu"
+  "tResp\020\013\022\035\n\031MsgIDSubGame_TimeOutReady\020\014\022!"
+  "\n\035MsgIDSubGame_TimeOutReadyResp\020\r\022 \n\034Msg"
+  "IDSubGame_TimeOutKickResp\020\016\022&\n\"MsgIDSubG"
+  "ame_NotifySystemCheatResp\020\024\022#\n\037MsgIDSubG"
+  "ame_NotifyCardTypeResp\020\025\022 \n\034MsgIDSubGame"
+  "_NotifyIsMaxResp\020\026\022\"\n\036MsgIDSubGame_Notif"
+  "yLastActResp\020\027b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Lucky9_2eproto_deps[1] = {
 };
@@ -445,7 +444,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Luc
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Lucky9_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Lucky9_2eproto = {
-  false, false, descriptor_table_protodef_Lucky9_2eproto, "Lucky9.proto", 2145,
+  false, false, descriptor_table_protodef_Lucky9_2eproto, "Lucky9.proto", 2102,
   &descriptor_table_Lucky9_2eproto_once, descriptor_table_Lucky9_2eproto_sccs, descriptor_table_Lucky9_2eproto_deps, 12, 0,
   schemas, file_default_instances, TableStruct_Lucky9_2eproto::offsets,
   file_level_metadata_Lucky9_2eproto, 12, file_level_enum_descriptors_Lucky9_2eproto, file_level_service_descriptors_Lucky9_2eproto,
@@ -465,23 +464,8 @@ bool ELCMsgGameState_IsValid(int value) {
     case 2:
     case 3:
     case 4:
-      return true;
-    default:
-      return false;
-  }
-}
-
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ELCMsgPlayerState_descriptor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_Lucky9_2eproto);
-  return file_level_enum_descriptors_Lucky9_2eproto[1];
-}
-bool ELCMsgPlayerState_IsValid(int value) {
-  switch (value) {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-    case 4:
+    case 5:
+    case 6:
       return true;
     default:
       return false;
@@ -490,7 +474,7 @@ bool ELCMsgPlayerState_IsValid(int value) {
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ELCMsgCardType_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_Lucky9_2eproto);
-  return file_level_enum_descriptors_Lucky9_2eproto[2];
+  return file_level_enum_descriptors_Lucky9_2eproto[1];
 }
 bool ELCMsgCardType_IsValid(int value) {
   switch (value) {
@@ -505,7 +489,7 @@ bool ELCMsgCardType_IsValid(int value) {
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ELCMsgGameAction_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_Lucky9_2eproto);
-  return file_level_enum_descriptors_Lucky9_2eproto[3];
+  return file_level_enum_descriptors_Lucky9_2eproto[2];
 }
 bool ELCMsgGameAction_IsValid(int value) {
   switch (value) {
@@ -521,7 +505,7 @@ bool ELCMsgGameAction_IsValid(int value) {
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ELCMsgIDSubGame_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_Lucky9_2eproto);
-  return file_level_enum_descriptors_Lucky9_2eproto[4];
+  return file_level_enum_descriptors_Lucky9_2eproto[3];
 }
 bool ELCMsgIDSubGame_IsValid(int value) {
   switch (value) {
