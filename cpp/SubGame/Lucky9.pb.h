@@ -930,9 +930,10 @@ class LCMsgSceneInfo PROTOBUF_FINAL :
     kTableStateFieldNumber = 2,
     kTableRonudFieldNumber = 3,
     kTotalEnterGoldFieldNumber = 4,
-    kTotalTimeFieldNumber = 12,
+    kOneCardFieldNumber = 5,
     kBankerChairIdFieldNumber = 10,
     kOutTimeFieldNumber = 11,
+    kTotalTimeFieldNumber = 12,
   };
   // repeated .Lucky9.LCMsgPlayerInfo player_infos = 15;
   int player_infos_size() const;
@@ -988,13 +989,13 @@ class LCMsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_total_enter_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int32 total_time = 12;
-  void clear_total_time();
-  ::PROTOBUF_NAMESPACE_ID::int32 total_time() const;
-  void set_total_time(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // int32 one_card = 5;
+  void clear_one_card();
+  ::PROTOBUF_NAMESPACE_ID::int32 one_card() const;
+  void set_one_card(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_total_time() const;
-  void _internal_set_total_time(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_one_card() const;
+  void _internal_set_one_card(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 banker_chair_id = 10;
@@ -1015,6 +1016,15 @@ class LCMsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_out_time(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 total_time = 12;
+  void clear_total_time();
+  ::PROTOBUF_NAMESPACE_ID::int32 total_time() const;
+  void set_total_time(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_total_time() const;
+  void _internal_set_total_time(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:Lucky9.LCMsgSceneInfo)
  private:
   class _Internal;
@@ -1027,9 +1037,10 @@ class LCMsgSceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 table_state_;
   ::PROTOBUF_NAMESPACE_ID::int32 table_ronud_;
   ::PROTOBUF_NAMESPACE_ID::int64 total_enter_gold_;
-  ::PROTOBUF_NAMESPACE_ID::int32 total_time_;
+  ::PROTOBUF_NAMESPACE_ID::int32 one_card_;
   ::PROTOBUF_NAMESPACE_ID::int32 banker_chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 out_time_;
+  ::PROTOBUF_NAMESPACE_ID::int32 total_time_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Lucky9_2eproto;
 };
@@ -2937,6 +2948,26 @@ inline void LCMsgSceneInfo::_internal_set_total_enter_gold(::PROTOBUF_NAMESPACE_
 inline void LCMsgSceneInfo::set_total_enter_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_total_enter_gold(value);
   // @@protoc_insertion_point(field_set:Lucky9.LCMsgSceneInfo.total_enter_gold)
+}
+
+// int32 one_card = 5;
+inline void LCMsgSceneInfo::clear_one_card() {
+  one_card_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgSceneInfo::_internal_one_card() const {
+  return one_card_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 LCMsgSceneInfo::one_card() const {
+  // @@protoc_insertion_point(field_get:Lucky9.LCMsgSceneInfo.one_card)
+  return _internal_one_card();
+}
+inline void LCMsgSceneInfo::_internal_set_one_card(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  one_card_ = value;
+}
+inline void LCMsgSceneInfo::set_one_card(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_one_card(value);
+  // @@protoc_insertion_point(field_set:Lucky9.LCMsgSceneInfo.one_card)
 }
 
 // int32 banker_chair_id = 10;

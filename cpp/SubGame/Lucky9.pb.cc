@@ -289,6 +289,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Lucky9_2eproto::offsets[] PROT
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgSceneInfo, table_state_),
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgSceneInfo, table_ronud_),
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgSceneInfo, total_enter_gold_),
+  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgSceneInfo, one_card_),
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgSceneInfo, banker_chair_id_),
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgSceneInfo, out_time_),
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgSceneInfo, total_time_),
@@ -367,15 +368,15 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 7, -1, sizeof(::Lucky9::LCMsgHandCards)},
   { 15, -1, sizeof(::Lucky9::LCMsgPlayerInfo)},
   { 29, -1, sizeof(::Lucky9::LCMsgSceneInfo)},
-  { 42, -1, sizeof(::Lucky9::LCMsgGameStartResp)},
-  { 52, -1, sizeof(::Lucky9::LCMsgNotifyActionResp)},
-  { 59, -1, sizeof(::Lucky9::LCMsgAction)},
-  { 66, -1, sizeof(::Lucky9::LCMsgActionResp)},
-  { 74, -1, sizeof(::Lucky9::LCMsgSendCardInfo)},
-  { 81, -1, sizeof(::Lucky9::LCMsgSendCardResp)},
-  { 87, -1, sizeof(::Lucky9::LCMsgEndPlayerInfo)},
-  { 95, -1, sizeof(::Lucky9::LCMsgGameResult)},
-  { 103, -1, sizeof(::Lucky9::LCMsgNotifyPlayerAct)},
+  { 43, -1, sizeof(::Lucky9::LCMsgGameStartResp)},
+  { 53, -1, sizeof(::Lucky9::LCMsgNotifyActionResp)},
+  { 60, -1, sizeof(::Lucky9::LCMsgAction)},
+  { 67, -1, sizeof(::Lucky9::LCMsgActionResp)},
+  { 75, -1, sizeof(::Lucky9::LCMsgSendCardInfo)},
+  { 82, -1, sizeof(::Lucky9::LCMsgSendCardResp)},
+  { 88, -1, sizeof(::Lucky9::LCMsgEndPlayerInfo)},
+  { 96, -1, sizeof(::Lucky9::LCMsgGameResult)},
+  { 104, -1, sizeof(::Lucky9::LCMsgNotifyPlayerAct)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -403,52 +404,53 @@ const char descriptor_table_protodef_Lucky9_2eproto[] PROTOBUF_SECTION_VARIABLE(
   "\nplayer_bet\030\003 \001(\003\022\021\n\tcard_type\030\004 \001(\005\022\020\n\010"
   "get_card\030\005 \001(\005\022\014\n\004gold\030\006 \001(\003\022\020\n\010win_gold"
   "\030\007 \001(\003\022\021\n\twin_conut\030\010 \001(\003\022&\n\006handls\030\t \001("
-  "\0132\026.Lucky9.LCMsgHandCards\"\326\001\n\016LCMsgScene"
+  "\0132\026.Lucky9.LCMsgHandCards\"\350\001\n\016LCMsgScene"
   "Info\022\022\n\ncell_score\030\001 \001(\003\022\023\n\013table_state\030"
   "\002 \001(\005\022\023\n\013table_ronud\030\003 \001(\005\022\030\n\020total_ente"
-  "r_gold\030\004 \001(\003\022\027\n\017banker_chair_id\030\n \001(\005\022\020\n"
-  "\010out_time\030\013 \001(\005\022\022\n\ntotal_time\030\014 \001(\005\022-\n\014p"
-  "layer_infos\030\017 \003(\0132\027.Lucky9.LCMsgPlayerIn"
-  "fo\"\205\001\n\022LCMsgGameStartResp\022\030\n\020total_enter"
-  "_gold\030\002 \001(\005\022\026\n\016cur_enter_gold\030\003 \001(\005\022\027\n\017b"
-  "anker_chair_id\030\004 \001(\005\022\020\n\010one_card\030\005 \001(\005\022\022"
-  "\n\nplay_index\030\010 \003(\005\"\?\n\025LCMsgNotifyActionR"
-  "esp\022\023\n\013current_act\030\003 \001(\005\022\021\n\toper_time\030\004 "
-  "\001(\005\"-\n\013LCMsgAction\022\013\n\003act\030\001 \001(\005\022\021\n\tbet_s"
-  "core\030\002 \001(\003\"C\n\017LCMsgActionResp\022\013\n\003act\030\001 \001"
-  "(\005\022\020\n\010chair_id\030\002 \001(\005\022\021\n\tbet_score\030\003 \001(\003\""
-  "Q\n\021LCMsgSendCardInfo\022\020\n\010chair_id\030\001 \001(\005\022*"
-  "\n\nhand_cards\030\002 \001(\0132\026.Lucky9.LCMsgHandCar"
-  "ds\"=\n\021LCMsgSendCardResp\022(\n\005infos\030\001 \003(\0132\031"
-  ".Lucky9.LCMsgSendCardInfo\"G\n\022LCMsgEndPla"
-  "yerInfo\022\020\n\010chair_id\030\001 \001(\005\022\022\n\ngame_score\030"
-  "\002 \001(\003\022\013\n\003tax\030\003 \001(\003\"h\n\017LCMsgGameResult\022\023\n"
-  "\013bisect_gold\030\001 \001(\003\022\023\n\013bisect_list\030\002 \003(\005\022"
-  "+\n\007players\030\003 \003(\0132\032.Lucky9.LCMsgEndPlayer"
-  "Info\"5\n\024LCMsgNotifyPlayerAct\022\020\n\010chair_id"
-  "\030\001 \001(\005\022\013\n\003act\030\002 \001(\005*\235\001\n\017ELCMsgGameState\022"
-  "\020\n\014GS_LC9_READY\020\000\022\020\n\014GS_LC9_START\020\001\022\016\n\nG"
-  "S_LC9_BET\020\002\022\024\n\020GS_LC9_SEND_CARD\020\003\022\023\n\017GS_"
-  "LC9_GET_CARD\020\004\022\030\n\024GS_LC9_TWO_SEND_CARD\020\005"
-  "\022\021\n\rGS_LC9_RESULT\020\006*>\n\021ELCMsgPlayerState"
-  "\022\014\n\010PS_READY\020\000\022\013\n\007PS_PLAY\020\001\022\016\n\nPS_TIMEOU"
-  "T\020\002*)\n\016ELCMsgCardType\022\r\n\tLC_SINGLE\020\000\022\010\n\004"
-  "LC_9\020\001*G\n\020ELCMsgGameAction\022\r\n\tInvaldAct\020"
-  "\000\022\n\n\006AddBet\020\001\022\013\n\007GetCard\020\002\022\013\n\007NotCard\020\004*"
-  "\230\004\n\017ELCMsgIDSubGame\022\025\n\021MsgIDSubGame_Null"
-  "\020\000\022\036\n\032MsgIDSubGame_GameStartResp\020\001\022!\n\035Ms"
-  "gIDSubGame_NotifyActionResp\020\002\022\027\n\023MsgIDSu"
-  "bGame_Action\020\003\022\033\n\027MsgIDSubGame_ActionRes"
-  "p\020\004\022\035\n\031MsgIDSubGame_SendCardResp\020\005\022\037\n\033Ms"
-  "gIDSubGame_GameResultResp\020\t\022 \n\034MsgIDSubG"
-  "ame_NotifyStateResp\020\n\022\034\n\030MsgIDSubGame_Ti"
-  "meOutResp\020\013\022\035\n\031MsgIDSubGame_TimeOutReady"
-  "\020\014\022!\n\035MsgIDSubGame_TimeOutReadyResp\020\r\022 \n"
-  "\034MsgIDSubGame_TimeOutKickResp\020\016\022&\n\"MsgID"
-  "SubGame_NotifySystemCheatResp\020\024\022#\n\037MsgID"
-  "SubGame_NotifyCardTypeResp\020\025\022 \n\034MsgIDSub"
-  "Game_NotifyIsMaxResp\020\026\022\"\n\036MsgIDSubGame_N"
-  "otifyLastActResp\020\027b\006proto3"
+  "r_gold\030\004 \001(\003\022\020\n\010one_card\030\005 \001(\005\022\027\n\017banker"
+  "_chair_id\030\n \001(\005\022\020\n\010out_time\030\013 \001(\005\022\022\n\ntot"
+  "al_time\030\014 \001(\005\022-\n\014player_infos\030\017 \003(\0132\027.Lu"
+  "cky9.LCMsgPlayerInfo\"\205\001\n\022LCMsgGameStartR"
+  "esp\022\030\n\020total_enter_gold\030\002 \001(\005\022\026\n\016cur_ent"
+  "er_gold\030\003 \001(\005\022\027\n\017banker_chair_id\030\004 \001(\005\022\020"
+  "\n\010one_card\030\005 \001(\005\022\022\n\nplay_index\030\010 \003(\005\"\?\n\025"
+  "LCMsgNotifyActionResp\022\023\n\013current_act\030\003 \001"
+  "(\005\022\021\n\toper_time\030\004 \001(\005\"-\n\013LCMsgAction\022\013\n\003"
+  "act\030\001 \001(\005\022\021\n\tbet_score\030\002 \001(\003\"C\n\017LCMsgAct"
+  "ionResp\022\013\n\003act\030\001 \001(\005\022\020\n\010chair_id\030\002 \001(\005\022\021"
+  "\n\tbet_score\030\003 \001(\003\"Q\n\021LCMsgSendCardInfo\022\020"
+  "\n\010chair_id\030\001 \001(\005\022*\n\nhand_cards\030\002 \001(\0132\026.L"
+  "ucky9.LCMsgHandCards\"=\n\021LCMsgSendCardRes"
+  "p\022(\n\005infos\030\001 \003(\0132\031.Lucky9.LCMsgSendCardI"
+  "nfo\"G\n\022LCMsgEndPlayerInfo\022\020\n\010chair_id\030\001 "
+  "\001(\005\022\022\n\ngame_score\030\002 \001(\003\022\013\n\003tax\030\003 \001(\003\"h\n\017"
+  "LCMsgGameResult\022\023\n\013bisect_gold\030\001 \001(\003\022\023\n\013"
+  "bisect_list\030\002 \003(\005\022+\n\007players\030\003 \003(\0132\032.Luc"
+  "ky9.LCMsgEndPlayerInfo\"5\n\024LCMsgNotifyPla"
+  "yerAct\022\020\n\010chair_id\030\001 \001(\005\022\013\n\003act\030\002 \001(\005*\235\001"
+  "\n\017ELCMsgGameState\022\020\n\014GS_LC9_READY\020\000\022\020\n\014G"
+  "S_LC9_START\020\001\022\016\n\nGS_LC9_BET\020\002\022\024\n\020GS_LC9_"
+  "SEND_CARD\020\003\022\023\n\017GS_LC9_GET_CARD\020\004\022\030\n\024GS_L"
+  "C9_TWO_SEND_CARD\020\005\022\021\n\rGS_LC9_RESULT\020\006*>\n"
+  "\021ELCMsgPlayerState\022\014\n\010PS_READY\020\000\022\013\n\007PS_P"
+  "LAY\020\001\022\016\n\nPS_TIMEOUT\020\002*)\n\016ELCMsgCardType\022"
+  "\r\n\tLC_SINGLE\020\000\022\010\n\004LC_9\020\001*G\n\020ELCMsgGameAc"
+  "tion\022\r\n\tInvaldAct\020\000\022\n\n\006AddBet\020\001\022\013\n\007GetCa"
+  "rd\020\002\022\013\n\007NotCard\020\004*\230\004\n\017ELCMsgIDSubGame\022\025\n"
+  "\021MsgIDSubGame_Null\020\000\022\036\n\032MsgIDSubGame_Gam"
+  "eStartResp\020\001\022!\n\035MsgIDSubGame_NotifyActio"
+  "nResp\020\002\022\027\n\023MsgIDSubGame_Action\020\003\022\033\n\027MsgI"
+  "DSubGame_ActionResp\020\004\022\035\n\031MsgIDSubGame_Se"
+  "ndCardResp\020\005\022\037\n\033MsgIDSubGame_GameResultR"
+  "esp\020\t\022 \n\034MsgIDSubGame_NotifyStateResp\020\n\022"
+  "\034\n\030MsgIDSubGame_TimeOutResp\020\013\022\035\n\031MsgIDSu"
+  "bGame_TimeOutReady\020\014\022!\n\035MsgIDSubGame_Tim"
+  "eOutReadyResp\020\r\022 \n\034MsgIDSubGame_TimeOutK"
+  "ickResp\020\016\022&\n\"MsgIDSubGame_NotifySystemCh"
+  "eatResp\020\024\022#\n\037MsgIDSubGame_NotifyCardType"
+  "Resp\020\025\022 \n\034MsgIDSubGame_NotifyIsMaxResp\020\026"
+  "\022\"\n\036MsgIDSubGame_NotifyLastActResp\020\027b\006pr"
+  "oto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Lucky9_2eproto_deps[1] = {
 };
@@ -469,7 +471,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Luc
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Lucky9_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Lucky9_2eproto = {
-  false, false, descriptor_table_protodef_Lucky9_2eproto, "Lucky9.proto", 2146,
+  false, false, descriptor_table_protodef_Lucky9_2eproto, "Lucky9.proto", 2164,
   &descriptor_table_Lucky9_2eproto_once, descriptor_table_Lucky9_2eproto_sccs, descriptor_table_Lucky9_2eproto_deps, 13, 0,
   schemas, file_default_instances, TableStruct_Lucky9_2eproto::offsets,
   file_level_metadata_Lucky9_2eproto, 13, file_level_enum_descriptors_Lucky9_2eproto, file_level_service_descriptors_Lucky9_2eproto,
@@ -1494,8 +1496,8 @@ LCMsgSceneInfo::LCMsgSceneInfo(const LCMsgSceneInfo& from)
       player_infos_(from.player_infos_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&cell_score_, &from.cell_score_,
-    static_cast<size_t>(reinterpret_cast<char*>(&out_time_) -
-    reinterpret_cast<char*>(&cell_score_)) + sizeof(out_time_));
+    static_cast<size_t>(reinterpret_cast<char*>(&total_time_) -
+    reinterpret_cast<char*>(&cell_score_)) + sizeof(total_time_));
   // @@protoc_insertion_point(copy_constructor:Lucky9.LCMsgSceneInfo)
 }
 
@@ -1503,8 +1505,8 @@ void LCMsgSceneInfo::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_LCMsgSceneInfo_Lucky9_2eproto.base);
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&cell_score_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&out_time_) -
-      reinterpret_cast<char*>(&cell_score_)) + sizeof(out_time_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&total_time_) -
+      reinterpret_cast<char*>(&cell_score_)) + sizeof(total_time_));
 }
 
 LCMsgSceneInfo::~LCMsgSceneInfo() {
@@ -1540,8 +1542,8 @@ void LCMsgSceneInfo::Clear() {
 
   player_infos_.Clear();
   ::memset(&cell_score_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&out_time_) -
-      reinterpret_cast<char*>(&cell_score_)) + sizeof(out_time_));
+      reinterpret_cast<char*>(&total_time_) -
+      reinterpret_cast<char*>(&cell_score_)) + sizeof(total_time_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -1577,6 +1579,13 @@ const char* LCMsgSceneInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           total_enter_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 one_card = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          one_card_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1665,6 +1674,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_total_enter_gold(), target);
   }
 
+  // int32 one_card = 5;
+  if (this->one_card() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_one_card(), target);
+  }
+
   // int32 banker_chair_id = 10;
   if (this->banker_chair_id() != 0) {
     target = stream->EnsureSpace(target);
@@ -1742,11 +1757,11 @@ size_t LCMsgSceneInfo::ByteSizeLong() const {
         this->_internal_total_enter_gold());
   }
 
-  // int32 total_time = 12;
-  if (this->total_time() != 0) {
+  // int32 one_card = 5;
+  if (this->one_card() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_total_time());
+        this->_internal_one_card());
   }
 
   // int32 banker_chair_id = 10;
@@ -1761,6 +1776,13 @@ size_t LCMsgSceneInfo::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_out_time());
+  }
+
+  // int32 total_time = 12;
+  if (this->total_time() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_total_time());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1807,14 +1829,17 @@ void LCMsgSceneInfo::MergeFrom(const LCMsgSceneInfo& from) {
   if (from.total_enter_gold() != 0) {
     _internal_set_total_enter_gold(from._internal_total_enter_gold());
   }
-  if (from.total_time() != 0) {
-    _internal_set_total_time(from._internal_total_time());
+  if (from.one_card() != 0) {
+    _internal_set_one_card(from._internal_one_card());
   }
   if (from.banker_chair_id() != 0) {
     _internal_set_banker_chair_id(from._internal_banker_chair_id());
   }
   if (from.out_time() != 0) {
     _internal_set_out_time(from._internal_out_time());
+  }
+  if (from.total_time() != 0) {
+    _internal_set_total_time(from._internal_total_time());
   }
 }
 
@@ -1841,8 +1866,8 @@ void LCMsgSceneInfo::InternalSwap(LCMsgSceneInfo* other) {
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   player_infos_.InternalSwap(&other->player_infos_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(LCMsgSceneInfo, out_time_)
-      + sizeof(LCMsgSceneInfo::out_time_)
+      PROTOBUF_FIELD_OFFSET(LCMsgSceneInfo, total_time_)
+      + sizeof(LCMsgSceneInfo::total_time_)
       - PROTOBUF_FIELD_OFFSET(LCMsgSceneInfo, cell_score_)>(
           reinterpret_cast<char*>(&cell_score_),
           reinterpret_cast<char*>(&other->cell_score_));
