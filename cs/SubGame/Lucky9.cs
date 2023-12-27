@@ -41,38 +41,39 @@ namespace Lucky9 {
             "ZXJfZ29sZBgCIAEoBRIWCg5jdXJfZW50ZXJfZ29sZBgDIAEoBRIXCg9iYW5r",
             "ZXJfY2hhaXJfaWQYBCABKAUSEAoIb25lX2NhcmQYBSABKAUSEgoKcGxheV9p",
             "bmRleBgIIAMoBSI/ChVMQ01zZ05vdGlmeUFjdGlvblJlc3ASEwoLY3VycmVu",
-            "dF9hY3QYAyABKAUSEQoJb3Blcl90aW1lGAQgASgFIi0KC0xDTXNnQWN0aW9u",
-            "EgsKA2FjdBgBIAEoBRIRCgliZXRfc2NvcmUYAiABKAMiQwoPTENNc2dBY3Rp",
-            "b25SZXNwEgsKA2FjdBgBIAEoBRIQCghjaGFpcl9pZBgCIAEoBRIRCgliZXRf",
-            "c2NvcmUYAyABKAMiUQoRTENNc2dTZW5kQ2FyZEluZm8SEAoIY2hhaXJfaWQY",
-            "ASABKAUSKgoKaGFuZF9jYXJkcxgCIAEoCzIWLkx1Y2t5OS5MQ01zZ0hhbmRD",
-            "YXJkcyI9ChFMQ01zZ1NlbmRDYXJkUmVzcBIoCgVpbmZvcxgBIAMoCzIZLkx1",
-            "Y2t5OS5MQ01zZ1NlbmRDYXJkSW5mbyJHChJMQ01zZ0VuZFBsYXllckluZm8S",
-            "EAoIY2hhaXJfaWQYASABKAUSEgoKZ2FtZV9zY29yZRgCIAEoAxILCgN0YXgY",
-            "AyABKAMiaAoPTENNc2dHYW1lUmVzdWx0EhMKC2Jpc2VjdF9nb2xkGAEgASgD",
-            "EhMKC2Jpc2VjdF9saXN0GAIgAygFEisKB3BsYXllcnMYAyADKAsyGi5MdWNr",
-            "eTkuTENNc2dFbmRQbGF5ZXJJbmZvIjUKFExDTXNnTm90aWZ5UGxheWVyQWN0",
-            "EhAKCGNoYWlyX2lkGAEgASgFEgsKA2FjdBgCIAEoBSqdAQoPRUxDTXNnR2Ft",
-            "ZVN0YXRlEhAKDEdTX0xDOV9SRUFEWRAAEhAKDEdTX0xDOV9TVEFSVBABEg4K",
-            "CkdTX0xDOV9CRVQQAhIUChBHU19MQzlfU0VORF9DQVJEEAMSEwoPR1NfTEM5",
-            "X0dFVF9DQVJEEAQSGAoUR1NfTEM5X1RXT19TRU5EX0NBUkQQBRIRCg1HU19M",
-            "QzlfUkVTVUxUEAYqPgoRRUxDTXNnUGxheWVyU3RhdGUSDAoIUFNfUkVBRFkQ",
-            "ABILCgdQU19QTEFZEAESDgoKUFNfVElNRU9VVBACKikKDkVMQ01zZ0NhcmRU",
-            "eXBlEg0KCUxDX1NJTkdMRRAAEggKBExDXzkQASpHChBFTENNc2dHYW1lQWN0",
-            "aW9uEg0KCUludmFsZEFjdBAAEgoKBkFkZEJldBABEgsKB0dldENhcmQQAhIL",
-            "CgdOb3RDYXJkEAQqmAQKD0VMQ01zZ0lEU3ViR2FtZRIVChFNc2dJRFN1Ykdh",
-            "bWVfTnVsbBAAEh4KGk1zZ0lEU3ViR2FtZV9HYW1lU3RhcnRSZXNwEAESIQod",
-            "TXNnSURTdWJHYW1lX05vdGlmeUFjdGlvblJlc3AQAhIXChNNc2dJRFN1Ykdh",
-            "bWVfQWN0aW9uEAMSGwoXTXNnSURTdWJHYW1lX0FjdGlvblJlc3AQBBIdChlN",
-            "c2dJRFN1YkdhbWVfU2VuZENhcmRSZXNwEAUSHwobTXNnSURTdWJHYW1lX0dh",
-            "bWVSZXN1bHRSZXNwEAkSIAocTXNnSURTdWJHYW1lX05vdGlmeVN0YXRlUmVz",
-            "cBAKEhwKGE1zZ0lEU3ViR2FtZV9UaW1lT3V0UmVzcBALEh0KGU1zZ0lEU3Vi",
-            "R2FtZV9UaW1lT3V0UmVhZHkQDBIhCh1Nc2dJRFN1YkdhbWVfVGltZU91dFJl",
-            "YWR5UmVzcBANEiAKHE1zZ0lEU3ViR2FtZV9UaW1lT3V0S2lja1Jlc3AQDhIm",
-            "CiJNc2dJRFN1YkdhbWVfTm90aWZ5U3lzdGVtQ2hlYXRSZXNwEBQSIwofTXNn",
-            "SURTdWJHYW1lX05vdGlmeUNhcmRUeXBlUmVzcBAVEiAKHE1zZ0lEU3ViR2Ft",
-            "ZV9Ob3RpZnlJc01heFJlc3AQFhIiCh5Nc2dJRFN1YkdhbWVfTm90aWZ5TGFz",
-            "dEFjdFJlc3AQF2IGcHJvdG8z"));
+            "dF9hY3QYAyABKAUSEQoJb3Blcl90aW1lGAQgASgFIkAKC0xDTXNnQWN0aW9u",
+            "EgsKA2FjdBgBIAEoBRIRCgliZXRfc2NvcmUYAiABKAMSEQoJYmV0X2luZGV4",
+            "GAMgASgDIlYKD0xDTXNnQWN0aW9uUmVzcBILCgNhY3QYASABKAUSEAoIY2hh",
+            "aXJfaWQYAiABKAUSEQoJYmV0X3Njb3JlGAMgASgDEhEKCWJldF9pbmRleBgE",
+            "IAEoAyJRChFMQ01zZ1NlbmRDYXJkSW5mbxIQCghjaGFpcl9pZBgBIAEoBRIq",
+            "CgpoYW5kX2NhcmRzGAIgASgLMhYuTHVja3k5LkxDTXNnSGFuZENhcmRzIj0K",
+            "EUxDTXNnU2VuZENhcmRSZXNwEigKBWluZm9zGAEgAygLMhkuTHVja3k5LkxD",
+            "TXNnU2VuZENhcmRJbmZvIkcKEkxDTXNnRW5kUGxheWVySW5mbxIQCghjaGFp",
+            "cl9pZBgBIAEoBRISCgpnYW1lX3Njb3JlGAIgASgDEgsKA3RheBgDIAEoAyJo",
+            "Cg9MQ01zZ0dhbWVSZXN1bHQSEwoLYmlzZWN0X2dvbGQYASABKAMSEwoLYmlz",
+            "ZWN0X2xpc3QYAiADKAUSKwoHcGxheWVycxgDIAMoCzIaLkx1Y2t5OS5MQ01z",
+            "Z0VuZFBsYXllckluZm8iNQoUTENNc2dOb3RpZnlQbGF5ZXJBY3QSEAoIY2hh",
+            "aXJfaWQYASABKAUSCwoDYWN0GAIgASgFKp0BCg9FTENNc2dHYW1lU3RhdGUS",
+            "EAoMR1NfTEM5X1JFQURZEAASEAoMR1NfTEM5X1NUQVJUEAESDgoKR1NfTEM5",
+            "X0JFVBACEhQKEEdTX0xDOV9TRU5EX0NBUkQQAxITCg9HU19MQzlfR0VUX0NB",
+            "UkQQBBIYChRHU19MQzlfVFdPX1NFTkRfQ0FSRBAFEhEKDUdTX0xDOV9SRVNV",
+            "TFQQBio+ChFFTENNc2dQbGF5ZXJTdGF0ZRIMCghQU19SRUFEWRAAEgsKB1BT",
+            "X1BMQVkQARIOCgpQU19USU1FT1VUEAIqKQoORUxDTXNnQ2FyZFR5cGUSDQoJ",
+            "TENfU0lOR0xFEAASCAoETENfORABKkcKEEVMQ01zZ0dhbWVBY3Rpb24SDQoJ",
+            "SW52YWxkQWN0EAASCgoGQWRkQmV0EAESCwoHR2V0Q2FyZBACEgsKB05vdENh",
+            "cmQQBCqYBAoPRUxDTXNnSURTdWJHYW1lEhUKEU1zZ0lEU3ViR2FtZV9OdWxs",
+            "EAASHgoaTXNnSURTdWJHYW1lX0dhbWVTdGFydFJlc3AQARIhCh1Nc2dJRFN1",
+            "YkdhbWVfTm90aWZ5QWN0aW9uUmVzcBACEhcKE01zZ0lEU3ViR2FtZV9BY3Rp",
+            "b24QAxIbChdNc2dJRFN1YkdhbWVfQWN0aW9uUmVzcBAEEh0KGU1zZ0lEU3Vi",
+            "R2FtZV9TZW5kQ2FyZFJlc3AQBRIfChtNc2dJRFN1YkdhbWVfR2FtZVJlc3Vs",
+            "dFJlc3AQCRIgChxNc2dJRFN1YkdhbWVfTm90aWZ5U3RhdGVSZXNwEAoSHAoY",
+            "TXNnSURTdWJHYW1lX1RpbWVPdXRSZXNwEAsSHQoZTXNnSURTdWJHYW1lX1Rp",
+            "bWVPdXRSZWFkeRAMEiEKHU1zZ0lEU3ViR2FtZV9UaW1lT3V0UmVhZHlSZXNw",
+            "EA0SIAocTXNnSURTdWJHYW1lX1RpbWVPdXRLaWNrUmVzcBAOEiYKIk1zZ0lE",
+            "U3ViR2FtZV9Ob3RpZnlTeXN0ZW1DaGVhdFJlc3AQFBIjCh9Nc2dJRFN1Ykdh",
+            "bWVfTm90aWZ5Q2FyZFR5cGVSZXNwEBUSIAocTXNnSURTdWJHYW1lX05vdGlm",
+            "eUlzTWF4UmVzcBAWEiIKHk1zZ0lEU3ViR2FtZV9Ob3RpZnlMYXN0QWN0UmVz",
+            "cBAXYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Lucky9.ELCMsgGameState), typeof(global::Lucky9.ELCMsgPlayerState), typeof(global::Lucky9.ELCMsgCardType), typeof(global::Lucky9.ELCMsgGameAction), typeof(global::Lucky9.ELCMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -82,8 +83,8 @@ namespace Lucky9 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgSceneInfo), global::Lucky9.LCMsgSceneInfo.Parser, new[]{ "CellScore", "TableState", "TableRonud", "TotalEnterGold", "OneCard", "BankerChairId", "OutTime", "TotalTime", "PlayerInfos" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgGameStartResp), global::Lucky9.LCMsgGameStartResp.Parser, new[]{ "TotalEnterGold", "CurEnterGold", "BankerChairId", "OneCard", "PlayIndex" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgNotifyActionResp), global::Lucky9.LCMsgNotifyActionResp.Parser, new[]{ "CurrentAct", "OperTime" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgAction), global::Lucky9.LCMsgAction.Parser, new[]{ "Act", "BetScore" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgActionResp), global::Lucky9.LCMsgActionResp.Parser, new[]{ "Act", "ChairId", "BetScore" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgAction), global::Lucky9.LCMsgAction.Parser, new[]{ "Act", "BetScore", "BetIndex" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgActionResp), global::Lucky9.LCMsgActionResp.Parser, new[]{ "Act", "ChairId", "BetScore", "BetIndex" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgSendCardInfo), global::Lucky9.LCMsgSendCardInfo.Parser, new[]{ "ChairId", "HandCards" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgSendCardResp), global::Lucky9.LCMsgSendCardResp.Parser, new[]{ "Infos" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Lucky9.LCMsgEndPlayerInfo), global::Lucky9.LCMsgEndPlayerInfo.Parser, new[]{ "ChairId", "GameScore", "Tax" }, null, null, null, null),
@@ -2259,6 +2260,7 @@ namespace Lucky9 {
     public LCMsgAction(LCMsgAction other) : this() {
       act_ = other.act_;
       betScore_ = other.betScore_;
+      betIndex_ = other.betIndex_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2295,6 +2297,20 @@ namespace Lucky9 {
       }
     }
 
+    /// <summary>Field number for the "bet_index" field.</summary>
+    public const int BetIndexFieldNumber = 3;
+    private long betIndex_;
+    /// <summary>
+    ///下注档位， 前端自己用，服务器只做转发
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long BetIndex {
+      get { return betIndex_; }
+      set {
+        betIndex_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as LCMsgAction);
@@ -2310,6 +2326,7 @@ namespace Lucky9 {
       }
       if (Act != other.Act) return false;
       if (BetScore != other.BetScore) return false;
+      if (BetIndex != other.BetIndex) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2318,6 +2335,7 @@ namespace Lucky9 {
       int hash = 1;
       if (Act != 0) hash ^= Act.GetHashCode();
       if (BetScore != 0L) hash ^= BetScore.GetHashCode();
+      if (BetIndex != 0L) hash ^= BetIndex.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2342,6 +2360,10 @@ namespace Lucky9 {
         output.WriteRawTag(16);
         output.WriteInt64(BetScore);
       }
+      if (BetIndex != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(BetIndex);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2359,6 +2381,10 @@ namespace Lucky9 {
         output.WriteRawTag(16);
         output.WriteInt64(BetScore);
       }
+      if (BetIndex != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(BetIndex);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2373,6 +2399,9 @@ namespace Lucky9 {
       }
       if (BetScore != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(BetScore);
+      }
+      if (BetIndex != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(BetIndex);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2390,6 +2419,9 @@ namespace Lucky9 {
       }
       if (other.BetScore != 0L) {
         BetScore = other.BetScore;
+      }
+      if (other.BetIndex != 0L) {
+        BetIndex = other.BetIndex;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2413,6 +2445,10 @@ namespace Lucky9 {
             BetScore = input.ReadInt64();
             break;
           }
+          case 24: {
+            BetIndex = input.ReadInt64();
+            break;
+          }
         }
       }
     #endif
@@ -2433,6 +2469,10 @@ namespace Lucky9 {
           }
           case 16: {
             BetScore = input.ReadInt64();
+            break;
+          }
+          case 24: {
+            BetIndex = input.ReadInt64();
             break;
           }
         }
@@ -2477,6 +2517,7 @@ namespace Lucky9 {
       act_ = other.act_;
       chairId_ = other.chairId_;
       betScore_ = other.betScore_;
+      betIndex_ = other.betIndex_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2527,6 +2568,20 @@ namespace Lucky9 {
       }
     }
 
+    /// <summary>Field number for the "bet_index" field.</summary>
+    public const int BetIndexFieldNumber = 4;
+    private long betIndex_;
+    /// <summary>
+    ///下注档位， 前端自己用，服务器只做转发
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long BetIndex {
+      get { return betIndex_; }
+      set {
+        betIndex_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as LCMsgActionResp);
@@ -2543,6 +2598,7 @@ namespace Lucky9 {
       if (Act != other.Act) return false;
       if (ChairId != other.ChairId) return false;
       if (BetScore != other.BetScore) return false;
+      if (BetIndex != other.BetIndex) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2552,6 +2608,7 @@ namespace Lucky9 {
       if (Act != 0) hash ^= Act.GetHashCode();
       if (ChairId != 0) hash ^= ChairId.GetHashCode();
       if (BetScore != 0L) hash ^= BetScore.GetHashCode();
+      if (BetIndex != 0L) hash ^= BetIndex.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2580,6 +2637,10 @@ namespace Lucky9 {
         output.WriteRawTag(24);
         output.WriteInt64(BetScore);
       }
+      if (BetIndex != 0L) {
+        output.WriteRawTag(32);
+        output.WriteInt64(BetIndex);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2601,6 +2662,10 @@ namespace Lucky9 {
         output.WriteRawTag(24);
         output.WriteInt64(BetScore);
       }
+      if (BetIndex != 0L) {
+        output.WriteRawTag(32);
+        output.WriteInt64(BetIndex);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2618,6 +2683,9 @@ namespace Lucky9 {
       }
       if (BetScore != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(BetScore);
+      }
+      if (BetIndex != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(BetIndex);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2638,6 +2706,9 @@ namespace Lucky9 {
       }
       if (other.BetScore != 0L) {
         BetScore = other.BetScore;
+      }
+      if (other.BetIndex != 0L) {
+        BetIndex = other.BetIndex;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2665,6 +2736,10 @@ namespace Lucky9 {
             BetScore = input.ReadInt64();
             break;
           }
+          case 32: {
+            BetIndex = input.ReadInt64();
+            break;
+          }
         }
       }
     #endif
@@ -2689,6 +2764,10 @@ namespace Lucky9 {
           }
           case 24: {
             BetScore = input.ReadInt64();
+            break;
+          }
+          case 32: {
+            BetIndex = input.ReadInt64();
             break;
           }
         }

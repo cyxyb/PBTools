@@ -1500,6 +1500,7 @@ class LCMsgAction PROTOBUF_FINAL :
 
   enum : int {
     kBetScoreFieldNumber = 2,
+    kBetIndexFieldNumber = 3,
     kActFieldNumber = 1,
   };
   // int64 bet_score = 2;
@@ -1509,6 +1510,15 @@ class LCMsgAction PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::int64 _internal_bet_score() const;
   void _internal_set_bet_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int64 bet_index = 3;
+  void clear_bet_index();
+  ::PROTOBUF_NAMESPACE_ID::int64 bet_index() const;
+  void set_bet_index(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_bet_index() const;
+  void _internal_set_bet_index(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
   // int32 act = 1;
@@ -1528,6 +1538,7 @@ class LCMsgAction PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int64 bet_score_;
+  ::PROTOBUF_NAMESPACE_ID::int64 bet_index_;
   ::PROTOBUF_NAMESPACE_ID::int32 act_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Lucky9_2eproto;
@@ -1649,6 +1660,7 @@ class LCMsgActionResp PROTOBUF_FINAL :
     kActFieldNumber = 1,
     kChairIdFieldNumber = 2,
     kBetScoreFieldNumber = 3,
+    kBetIndexFieldNumber = 4,
   };
   // int32 act = 1;
   void clear_act();
@@ -1677,6 +1689,15 @@ class LCMsgActionResp PROTOBUF_FINAL :
   void _internal_set_bet_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
+  // int64 bet_index = 4;
+  void clear_bet_index();
+  ::PROTOBUF_NAMESPACE_ID::int64 bet_index() const;
+  void set_bet_index(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_bet_index() const;
+  void _internal_set_bet_index(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:Lucky9.LCMsgActionResp)
  private:
   class _Internal;
@@ -1687,6 +1708,7 @@ class LCMsgActionResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 act_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int64 bet_score_;
+  ::PROTOBUF_NAMESPACE_ID::int64 bet_index_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Lucky9_2eproto;
 };
@@ -3288,6 +3310,26 @@ inline void LCMsgAction::set_bet_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   // @@protoc_insertion_point(field_set:Lucky9.LCMsgAction.bet_score)
 }
 
+// int64 bet_index = 3;
+inline void LCMsgAction::clear_bet_index() {
+  bet_index_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 LCMsgAction::_internal_bet_index() const {
+  return bet_index_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 LCMsgAction::bet_index() const {
+  // @@protoc_insertion_point(field_get:Lucky9.LCMsgAction.bet_index)
+  return _internal_bet_index();
+}
+inline void LCMsgAction::_internal_set_bet_index(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  bet_index_ = value;
+}
+inline void LCMsgAction::set_bet_index(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_bet_index(value);
+  // @@protoc_insertion_point(field_set:Lucky9.LCMsgAction.bet_index)
+}
+
 // -------------------------------------------------------------------
 
 // LCMsgActionResp
@@ -3350,6 +3392,26 @@ inline void LCMsgActionResp::_internal_set_bet_score(::PROTOBUF_NAMESPACE_ID::in
 inline void LCMsgActionResp::set_bet_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_bet_score(value);
   // @@protoc_insertion_point(field_set:Lucky9.LCMsgActionResp.bet_score)
+}
+
+// int64 bet_index = 4;
+inline void LCMsgActionResp::clear_bet_index() {
+  bet_index_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 LCMsgActionResp::_internal_bet_index() const {
+  return bet_index_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 LCMsgActionResp::bet_index() const {
+  // @@protoc_insertion_point(field_get:Lucky9.LCMsgActionResp.bet_index)
+  return _internal_bet_index();
+}
+inline void LCMsgActionResp::_internal_set_bet_index(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  bet_index_ = value;
+}
+inline void LCMsgActionResp::set_bet_index(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_bet_index(value);
+  // @@protoc_insertion_point(field_set:Lucky9.LCMsgActionResp.bet_index)
 }
 
 // -------------------------------------------------------------------
