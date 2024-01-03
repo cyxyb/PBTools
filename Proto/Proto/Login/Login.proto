@@ -574,14 +574,10 @@ message MsgSetSubAgent
 	int32 user_id 		= 1;			//玩家id
 	int32 agent_ratio 	= 2;			//分成比例
 }
-//设置下级代理返回
-message MsgSetSubAgentResp
-{
-	int32 code	= 1;			//0：成功，非0 多语言码
-}
+
 //领取返利返回
-message MsgAgentRecviveResp
+message MsgRecviveAgentRebateResp
 {
-	int32 code = 1;		//0：成功，非0 多语言码	
+	int32 code = 1;			//0：成功，非0 多语言码	
 	int64 cur_rebate = 2;	//当前返利
 }

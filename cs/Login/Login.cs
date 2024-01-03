@@ -177,9 +177,9 @@ public static partial class LoginReflection {
           "c2dJbmZpbml0ZUFnZW50UXVlcnlTdWJJbmZvUmVzcBITCgthZ2VudF9jb3Vu",
           "dBgBIAEoBRIQCghlbmRfbGlzdBgCIAEoCBIoCgRpbmZvGAMgAygLMhouSW5m",
           "aW5pdGVBZ2VudFF1ZXJ5U3ViSW5mbyI2Cg5Nc2dTZXRTdWJBZ2VudBIPCgd1",
-          "c2VyX2lkGAEgASgFEhMKC2FnZW50X3JhdGlvGAIgASgFIiIKEk1zZ1NldFN1",
-          "YkFnZW50UmVzcBIMCgRjb2RlGAEgASgFIjcKE01zZ0FnZW50UmVjdml2ZVJl",
-          "c3ASDAoEY29kZRgBIAEoBRISCgpjdXJfcmViYXRlGAIgASgDYgZwcm90bzM="));
+          "c2VyX2lkGAEgASgFEhMKC2FnZW50X3JhdGlvGAIgASgFIj0KGU1zZ1JlY3Zp",
+          "dmVBZ2VudFJlYmF0ZVJlc3ASDAoEY29kZRgBIAEoBRISCgpjdXJfcmViYXRl",
+          "GAIgASgDYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -247,8 +247,7 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::InfiniteAgentQuerySubInfo), global::InfiniteAgentQuerySubInfo.Parser, new[]{ "UserId", "Subordinates", "TotalTax", "TodayTax", "AgentRatio" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgInfiniteAgentQuerySubInfoResp), global::MsgInfiniteAgentQuerySubInfoResp.Parser, new[]{ "AgentCount", "EndList", "Info" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgSetSubAgent), global::MsgSetSubAgent.Parser, new[]{ "UserId", "AgentRatio" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgSetSubAgentResp), global::MsgSetSubAgentResp.Parser, new[]{ "Code" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgAgentRecviveResp), global::MsgAgentRecviveResp.Parser, new[]{ "Code", "CurRebate" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgRecviveAgentRebateResp), global::MsgRecviveAgentRebateResp.Parser, new[]{ "Code", "CurRebate" }, null, null, null, null)
         }));
   }
   #endregion
@@ -19680,17 +19679,17 @@ public sealed partial class MsgSetSubAgent : pb::IMessage<MsgSetSubAgent>
 }
 
 /// <summary>
-///设置下级代理返回
+///领取返利返回
 /// </summary>
-public sealed partial class MsgSetSubAgentResp : pb::IMessage<MsgSetSubAgentResp>
+public sealed partial class MsgRecviveAgentRebateResp : pb::IMessage<MsgRecviveAgentRebateResp>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     , pb::IBufferMessage
 #endif
 {
-  private static readonly pb::MessageParser<MsgSetSubAgentResp> _parser = new pb::MessageParser<MsgSetSubAgentResp>(() => new MsgSetSubAgentResp());
+  private static readonly pb::MessageParser<MsgRecviveAgentRebateResp> _parser = new pb::MessageParser<MsgRecviveAgentRebateResp>(() => new MsgRecviveAgentRebateResp());
   private pb::UnknownFieldSet _unknownFields;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pb::MessageParser<MsgSetSubAgentResp> Parser { get { return _parser; } }
+  public static pb::MessageParser<MsgRecviveAgentRebateResp> Parser { get { return _parser; } }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
@@ -19703,200 +19702,22 @@ public sealed partial class MsgSetSubAgentResp : pb::IMessage<MsgSetSubAgentResp
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public MsgSetSubAgentResp() {
+  public MsgRecviveAgentRebateResp() {
     OnConstruction();
   }
 
   partial void OnConstruction();
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public MsgSetSubAgentResp(MsgSetSubAgentResp other) : this() {
-    code_ = other.code_;
-    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public MsgSetSubAgentResp Clone() {
-    return new MsgSetSubAgentResp(this);
-  }
-
-  /// <summary>Field number for the "code" field.</summary>
-  public const int CodeFieldNumber = 1;
-  private int code_;
-  /// <summary>
-  ///0：成功，非0 多语言码
-  /// </summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public int Code {
-    get { return code_; }
-    set {
-      code_ = value;
-    }
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public override bool Equals(object other) {
-    return Equals(other as MsgSetSubAgentResp);
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Equals(MsgSetSubAgentResp other) {
-    if (ReferenceEquals(other, null)) {
-      return false;
-    }
-    if (ReferenceEquals(other, this)) {
-      return true;
-    }
-    if (Code != other.Code) return false;
-    return Equals(_unknownFields, other._unknownFields);
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public override int GetHashCode() {
-    int hash = 1;
-    if (Code != 0) hash ^= Code.GetHashCode();
-    if (_unknownFields != null) {
-      hash ^= _unknownFields.GetHashCode();
-    }
-    return hash;
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public override string ToString() {
-    return pb::JsonFormatter.ToDiagnosticString(this);
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void WriteTo(pb::CodedOutputStream output) {
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    output.WriteRawMessage(this);
-  #else
-    if (Code != 0) {
-      output.WriteRawTag(8);
-      output.WriteInt32(Code);
-    }
-    if (_unknownFields != null) {
-      _unknownFields.WriteTo(output);
-    }
-  #endif
-  }
-
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-    if (Code != 0) {
-      output.WriteRawTag(8);
-      output.WriteInt32(Code);
-    }
-    if (_unknownFields != null) {
-      _unknownFields.WriteTo(ref output);
-    }
-  }
-  #endif
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public int CalculateSize() {
-    int size = 0;
-    if (Code != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Code);
-    }
-    if (_unknownFields != null) {
-      size += _unknownFields.CalculateSize();
-    }
-    return size;
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(MsgSetSubAgentResp other) {
-    if (other == null) {
-      return;
-    }
-    if (other.Code != 0) {
-      Code = other.Code;
-    }
-    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(pb::CodedInputStream input) {
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    input.ReadRawMessage(this);
-  #else
-    uint tag;
-    while ((tag = input.ReadTag()) != 0) {
-      switch(tag) {
-        default:
-          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-          break;
-        case 8: {
-          Code = input.ReadInt32();
-          break;
-        }
-      }
-    }
-  #endif
-  }
-
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-    uint tag;
-    while ((tag = input.ReadTag()) != 0) {
-      switch(tag) {
-        default:
-          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-          break;
-        case 8: {
-          Code = input.ReadInt32();
-          break;
-        }
-      }
-    }
-  }
-  #endif
-
-}
-
-/// <summary>
-///领取返利返回
-/// </summary>
-public sealed partial class MsgAgentRecviveResp : pb::IMessage<MsgAgentRecviveResp>
-#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    , pb::IBufferMessage
-#endif
-{
-  private static readonly pb::MessageParser<MsgAgentRecviveResp> _parser = new pb::MessageParser<MsgAgentRecviveResp>(() => new MsgAgentRecviveResp());
-  private pb::UnknownFieldSet _unknownFields;
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pb::MessageParser<MsgAgentRecviveResp> Parser { get { return _parser; } }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[65]; }
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  pbr::MessageDescriptor pb::IMessage.Descriptor {
-    get { return Descriptor; }
-  }
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public MsgAgentRecviveResp() {
-    OnConstruction();
-  }
-
-  partial void OnConstruction();
-
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public MsgAgentRecviveResp(MsgAgentRecviveResp other) : this() {
+  public MsgRecviveAgentRebateResp(MsgRecviveAgentRebateResp other) : this() {
     code_ = other.code_;
     curRebate_ = other.curRebate_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public MsgAgentRecviveResp Clone() {
-    return new MsgAgentRecviveResp(this);
+  public MsgRecviveAgentRebateResp Clone() {
+    return new MsgRecviveAgentRebateResp(this);
   }
 
   /// <summary>Field number for the "code" field.</summary>
@@ -19929,11 +19750,11 @@ public sealed partial class MsgAgentRecviveResp : pb::IMessage<MsgAgentRecviveRe
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
-    return Equals(other as MsgAgentRecviveResp);
+    return Equals(other as MsgRecviveAgentRebateResp);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Equals(MsgAgentRecviveResp other) {
+  public bool Equals(MsgRecviveAgentRebateResp other) {
     if (ReferenceEquals(other, null)) {
       return false;
     }
@@ -20013,7 +19834,7 @@ public sealed partial class MsgAgentRecviveResp : pb::IMessage<MsgAgentRecviveRe
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(MsgAgentRecviveResp other) {
+  public void MergeFrom(MsgRecviveAgentRebateResp other) {
     if (other == null) {
       return;
     }

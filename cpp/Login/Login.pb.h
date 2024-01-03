@@ -46,7 +46,7 @@ struct TableStruct_Login_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[66]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[65]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -68,9 +68,6 @@ extern MsgActiveInfoSCPickDefaultTypeInternal _MsgActiveInfoSCPick_default_insta
 class MsgActiveInfoSCRet;
 class MsgActiveInfoSCRetDefaultTypeInternal;
 extern MsgActiveInfoSCRetDefaultTypeInternal _MsgActiveInfoSCRet_default_instance_;
-class MsgAgentRecviveResp;
-class MsgAgentRecviveRespDefaultTypeInternal;
-extern MsgAgentRecviveRespDefaultTypeInternal _MsgAgentRecviveResp_default_instance_;
 class MsgBindInviteCodeResp;
 class MsgBindInviteCodeRespDefaultTypeInternal;
 extern MsgBindInviteCodeRespDefaultTypeInternal _MsgBindInviteCodeResp_default_instance_;
@@ -182,12 +179,12 @@ extern MsgQueryRebateRecordInfoDefaultTypeInternal _MsgQueryRebateRecordInfo_def
 class MsgRechargeInfo;
 class MsgRechargeInfoDefaultTypeInternal;
 extern MsgRechargeInfoDefaultTypeInternal _MsgRechargeInfo_default_instance_;
+class MsgRecviveAgentRebateResp;
+class MsgRecviveAgentRebateRespDefaultTypeInternal;
+extern MsgRecviveAgentRebateRespDefaultTypeInternal _MsgRecviveAgentRebateResp_default_instance_;
 class MsgSetSubAgent;
 class MsgSetSubAgentDefaultTypeInternal;
 extern MsgSetSubAgentDefaultTypeInternal _MsgSetSubAgent_default_instance_;
-class MsgSetSubAgentResp;
-class MsgSetSubAgentRespDefaultTypeInternal;
-extern MsgSetSubAgentRespDefaultTypeInternal _MsgSetSubAgentResp_default_instance_;
 class MsgShareData;
 class MsgShareDataDefaultTypeInternal;
 extern MsgShareDataDefaultTypeInternal _MsgShareData_default_instance_;
@@ -257,7 +254,6 @@ template<> ::InfiniteAgentQuerySubInfo* Arena::CreateMaybeMessage<::InfiniteAgen
 template<> ::MsgActiveInfoCSPick* Arena::CreateMaybeMessage<::MsgActiveInfoCSPick>(Arena*);
 template<> ::MsgActiveInfoSCPick* Arena::CreateMaybeMessage<::MsgActiveInfoSCPick>(Arena*);
 template<> ::MsgActiveInfoSCRet* Arena::CreateMaybeMessage<::MsgActiveInfoSCRet>(Arena*);
-template<> ::MsgAgentRecviveResp* Arena::CreateMaybeMessage<::MsgAgentRecviveResp>(Arena*);
 template<> ::MsgBindInviteCodeResp* Arena::CreateMaybeMessage<::MsgBindInviteCodeResp>(Arena*);
 template<> ::MsgBindParentData* Arena::CreateMaybeMessage<::MsgBindParentData>(Arena*);
 template<> ::MsgBindParentInfo* Arena::CreateMaybeMessage<::MsgBindParentInfo>(Arena*);
@@ -295,8 +291,8 @@ template<> ::MsgQueryCelebrityGoldCoinResp* Arena::CreateMaybeMessage<::MsgQuery
 template<> ::MsgQueryRebateRecord* Arena::CreateMaybeMessage<::MsgQueryRebateRecord>(Arena*);
 template<> ::MsgQueryRebateRecordInfo* Arena::CreateMaybeMessage<::MsgQueryRebateRecordInfo>(Arena*);
 template<> ::MsgRechargeInfo* Arena::CreateMaybeMessage<::MsgRechargeInfo>(Arena*);
+template<> ::MsgRecviveAgentRebateResp* Arena::CreateMaybeMessage<::MsgRecviveAgentRebateResp>(Arena*);
 template<> ::MsgSetSubAgent* Arena::CreateMaybeMessage<::MsgSetSubAgent>(Arena*);
-template<> ::MsgSetSubAgentResp* Arena::CreateMaybeMessage<::MsgSetSubAgentResp>(Arena*);
 template<> ::MsgShareData* Arena::CreateMaybeMessage<::MsgShareData>(Arena*);
 template<> ::MsgSubagentInformation* Arena::CreateMaybeMessage<::MsgSubagentInformation>(Arena*);
 template<> ::MsgTopInfo* Arena::CreateMaybeMessage<::MsgTopInfo>(Arena*);
@@ -11999,23 +11995,23 @@ class MsgSetSubAgent PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
-class MsgSetSubAgentResp PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgSetSubAgentResp) */ {
+class MsgRecviveAgentRebateResp PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgRecviveAgentRebateResp) */ {
  public:
-  inline MsgSetSubAgentResp() : MsgSetSubAgentResp(nullptr) {}
-  virtual ~MsgSetSubAgentResp();
+  inline MsgRecviveAgentRebateResp() : MsgRecviveAgentRebateResp(nullptr) {}
+  virtual ~MsgRecviveAgentRebateResp();
 
-  MsgSetSubAgentResp(const MsgSetSubAgentResp& from);
-  MsgSetSubAgentResp(MsgSetSubAgentResp&& from) noexcept
-    : MsgSetSubAgentResp() {
+  MsgRecviveAgentRebateResp(const MsgRecviveAgentRebateResp& from);
+  MsgRecviveAgentRebateResp(MsgRecviveAgentRebateResp&& from) noexcept
+    : MsgRecviveAgentRebateResp() {
     *this = ::std::move(from);
   }
 
-  inline MsgSetSubAgentResp& operator=(const MsgSetSubAgentResp& from) {
+  inline MsgRecviveAgentRebateResp& operator=(const MsgRecviveAgentRebateResp& from) {
     CopyFrom(from);
     return *this;
   }
-  inline MsgSetSubAgentResp& operator=(MsgSetSubAgentResp&& from) noexcept {
+  inline MsgRecviveAgentRebateResp& operator=(MsgRecviveAgentRebateResp&& from) noexcept {
     if (GetArena() == from.GetArena()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -12033,19 +12029,19 @@ class MsgSetSubAgentResp PROTOBUF_FINAL :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return GetMetadataStatic().reflection;
   }
-  static const MsgSetSubAgentResp& default_instance();
+  static const MsgRecviveAgentRebateResp& default_instance();
 
-  static inline const MsgSetSubAgentResp* internal_default_instance() {
-    return reinterpret_cast<const MsgSetSubAgentResp*>(
-               &_MsgSetSubAgentResp_default_instance_);
+  static inline const MsgRecviveAgentRebateResp* internal_default_instance() {
+    return reinterpret_cast<const MsgRecviveAgentRebateResp*>(
+               &_MsgRecviveAgentRebateResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     64;
 
-  friend void swap(MsgSetSubAgentResp& a, MsgSetSubAgentResp& b) {
+  friend void swap(MsgRecviveAgentRebateResp& a, MsgRecviveAgentRebateResp& b) {
     a.Swap(&b);
   }
-  inline void Swap(MsgSetSubAgentResp* other) {
+  inline void Swap(MsgRecviveAgentRebateResp* other) {
     if (other == this) return;
     if (GetArena() == other->GetArena()) {
       InternalSwap(other);
@@ -12053,7 +12049,7 @@ class MsgSetSubAgentResp PROTOBUF_FINAL :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(MsgSetSubAgentResp* other) {
+  void UnsafeArenaSwap(MsgRecviveAgentRebateResp* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetArena() == other->GetArena());
     InternalSwap(other);
@@ -12061,17 +12057,17 @@ class MsgSetSubAgentResp PROTOBUF_FINAL :
 
   // implements Message ----------------------------------------------
 
-  inline MsgSetSubAgentResp* New() const final {
-    return CreateMaybeMessage<MsgSetSubAgentResp>(nullptr);
+  inline MsgRecviveAgentRebateResp* New() const final {
+    return CreateMaybeMessage<MsgRecviveAgentRebateResp>(nullptr);
   }
 
-  MsgSetSubAgentResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<MsgSetSubAgentResp>(arena);
+  MsgRecviveAgentRebateResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgRecviveAgentRebateResp>(arena);
   }
   void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
   void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const MsgSetSubAgentResp& from);
-  void MergeFrom(const MsgSetSubAgentResp& from);
+  void CopyFrom(const MsgRecviveAgentRebateResp& from);
+  void MergeFrom(const MsgRecviveAgentRebateResp& from);
   PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
   bool IsInitialized() const final;
 
@@ -12085,149 +12081,13 @@ class MsgSetSubAgentResp PROTOBUF_FINAL :
   inline void SharedCtor();
   inline void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(MsgSetSubAgentResp* other);
+  void InternalSwap(MsgRecviveAgentRebateResp* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "MsgSetSubAgentResp";
+    return "MsgRecviveAgentRebateResp";
   }
   protected:
-  explicit MsgSetSubAgentResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  private:
-  static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  public:
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-  private:
-  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
-    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
-    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
-  }
-
-  public:
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kCodeFieldNumber = 1,
-  };
-  // int32 code = 1;
-  void clear_code();
-  ::PROTOBUF_NAMESPACE_ID::int32 code() const;
-  void set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_code() const;
-  void _internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:MsgSetSubAgentResp)
- private:
-  class _Internal;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int32 code_;
-  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  friend struct ::TableStruct_Login_2eproto;
-};
-// -------------------------------------------------------------------
-
-class MsgAgentRecviveResp PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgAgentRecviveResp) */ {
- public:
-  inline MsgAgentRecviveResp() : MsgAgentRecviveResp(nullptr) {}
-  virtual ~MsgAgentRecviveResp();
-
-  MsgAgentRecviveResp(const MsgAgentRecviveResp& from);
-  MsgAgentRecviveResp(MsgAgentRecviveResp&& from) noexcept
-    : MsgAgentRecviveResp() {
-    *this = ::std::move(from);
-  }
-
-  inline MsgAgentRecviveResp& operator=(const MsgAgentRecviveResp& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline MsgAgentRecviveResp& operator=(MsgAgentRecviveResp&& from) noexcept {
-    if (GetArena() == from.GetArena()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return GetMetadataStatic().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return GetMetadataStatic().reflection;
-  }
-  static const MsgAgentRecviveResp& default_instance();
-
-  static inline const MsgAgentRecviveResp* internal_default_instance() {
-    return reinterpret_cast<const MsgAgentRecviveResp*>(
-               &_MsgAgentRecviveResp_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    65;
-
-  friend void swap(MsgAgentRecviveResp& a, MsgAgentRecviveResp& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(MsgAgentRecviveResp* other) {
-    if (other == this) return;
-    if (GetArena() == other->GetArena()) {
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(MsgAgentRecviveResp* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetArena() == other->GetArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline MsgAgentRecviveResp* New() const final {
-    return CreateMaybeMessage<MsgAgentRecviveResp>(nullptr);
-  }
-
-  MsgAgentRecviveResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<MsgAgentRecviveResp>(arena);
-  }
-  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const MsgAgentRecviveResp& from);
-  void MergeFrom(const MsgAgentRecviveResp& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
-      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  inline void SharedCtor();
-  inline void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(MsgAgentRecviveResp* other);
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "MsgAgentRecviveResp";
-  }
-  protected:
-  explicit MsgAgentRecviveResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  explicit MsgRecviveAgentRebateResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
   private:
   static void ArenaDtor(void* object);
   inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -12268,7 +12128,7 @@ class MsgAgentRecviveResp PROTOBUF_FINAL :
   void _internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:MsgAgentRecviveResp)
+  // @@protoc_insertion_point(class_scope:MsgRecviveAgentRebateResp)
  private:
   class _Internal;
 
@@ -20979,77 +20839,51 @@ inline void MsgSetSubAgent::set_agent_ratio(::PROTOBUF_NAMESPACE_ID::int32 value
 
 // -------------------------------------------------------------------
 
-// MsgSetSubAgentResp
+// MsgRecviveAgentRebateResp
 
 // int32 code = 1;
-inline void MsgSetSubAgentResp::clear_code() {
+inline void MsgRecviveAgentRebateResp::clear_code() {
   code_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSetSubAgentResp::_internal_code() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgRecviveAgentRebateResp::_internal_code() const {
   return code_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSetSubAgentResp::code() const {
-  // @@protoc_insertion_point(field_get:MsgSetSubAgentResp.code)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgRecviveAgentRebateResp::code() const {
+  // @@protoc_insertion_point(field_get:MsgRecviveAgentRebateResp.code)
   return _internal_code();
 }
-inline void MsgSetSubAgentResp::_internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgRecviveAgentRebateResp::_internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   code_ = value;
 }
-inline void MsgSetSubAgentResp::set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgRecviveAgentRebateResp::set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_code(value);
-  // @@protoc_insertion_point(field_set:MsgSetSubAgentResp.code)
-}
-
-// -------------------------------------------------------------------
-
-// MsgAgentRecviveResp
-
-// int32 code = 1;
-inline void MsgAgentRecviveResp::clear_code() {
-  code_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgAgentRecviveResp::_internal_code() const {
-  return code_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgAgentRecviveResp::code() const {
-  // @@protoc_insertion_point(field_get:MsgAgentRecviveResp.code)
-  return _internal_code();
-}
-inline void MsgAgentRecviveResp::_internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  code_ = value;
-}
-inline void MsgAgentRecviveResp::set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_code(value);
-  // @@protoc_insertion_point(field_set:MsgAgentRecviveResp.code)
+  // @@protoc_insertion_point(field_set:MsgRecviveAgentRebateResp.code)
 }
 
 // int64 cur_rebate = 2;
-inline void MsgAgentRecviveResp::clear_cur_rebate() {
+inline void MsgRecviveAgentRebateResp::clear_cur_rebate() {
   cur_rebate_ = PROTOBUF_LONGLONG(0);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgAgentRecviveResp::_internal_cur_rebate() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgRecviveAgentRebateResp::_internal_cur_rebate() const {
   return cur_rebate_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgAgentRecviveResp::cur_rebate() const {
-  // @@protoc_insertion_point(field_get:MsgAgentRecviveResp.cur_rebate)
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgRecviveAgentRebateResp::cur_rebate() const {
+  // @@protoc_insertion_point(field_get:MsgRecviveAgentRebateResp.cur_rebate)
   return _internal_cur_rebate();
 }
-inline void MsgAgentRecviveResp::_internal_set_cur_rebate(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void MsgRecviveAgentRebateResp::_internal_set_cur_rebate(::PROTOBUF_NAMESPACE_ID::int64 value) {
   
   cur_rebate_ = value;
 }
-inline void MsgAgentRecviveResp::set_cur_rebate(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void MsgRecviveAgentRebateResp::set_cur_rebate(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_cur_rebate(value);
-  // @@protoc_insertion_point(field_set:MsgAgentRecviveResp.cur_rebate)
+  // @@protoc_insertion_point(field_set:MsgRecviveAgentRebateResp.cur_rebate)
 }
 
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
-// -------------------------------------------------------------------
-
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

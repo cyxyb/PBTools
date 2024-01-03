@@ -288,14 +288,10 @@ class MsgSetSubAgentDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgSetSubAgent> _instance;
 } _MsgSetSubAgent_default_instance_;
-class MsgSetSubAgentRespDefaultTypeInternal {
+class MsgRecviveAgentRebateRespDefaultTypeInternal {
  public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgSetSubAgentResp> _instance;
-} _MsgSetSubAgentResp_default_instance_;
-class MsgAgentRecviveRespDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgAgentRecviveResp> _instance;
-} _MsgAgentRecviveResp_default_instance_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgRecviveAgentRebateResp> _instance;
+} _MsgRecviveAgentRebateResp_default_instance_;
 static void InitDefaultsscc_info_ActiveInfoRet_Login_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -361,19 +357,6 @@ static void InitDefaultsscc_info_MsgActiveInfoSCRet_Login_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_MsgActiveInfoSCRet_Login_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MsgActiveInfoSCRet_Login_2eproto}, {
       &scc_info_ActiveInfoRet_Login_2eproto.base,}};
-
-static void InitDefaultsscc_info_MsgAgentRecviveResp_Login_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_MsgAgentRecviveResp_default_instance_;
-    new (ptr) ::MsgAgentRecviveResp();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgAgentRecviveResp_Login_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgAgentRecviveResp_Login_2eproto}, {}};
 
 static void InitDefaultsscc_info_MsgBindInviteCodeResp_Login_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -866,6 +849,19 @@ static void InitDefaultsscc_info_MsgRechargeInfo_Login_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgRechargeInfo_Login_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgRechargeInfo_Login_2eproto}, {}};
 
+static void InitDefaultsscc_info_MsgRecviveAgentRebateResp_Login_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_MsgRecviveAgentRebateResp_default_instance_;
+    new (ptr) ::MsgRecviveAgentRebateResp();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgRecviveAgentRebateResp_Login_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgRecviveAgentRebateResp_Login_2eproto}, {}};
+
 static void InitDefaultsscc_info_MsgSetSubAgent_Login_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -878,19 +874,6 @@ static void InitDefaultsscc_info_MsgSetSubAgent_Login_2eproto() {
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgSetSubAgent_Login_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgSetSubAgent_Login_2eproto}, {}};
-
-static void InitDefaultsscc_info_MsgSetSubAgentResp_Login_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_MsgSetSubAgentResp_default_instance_;
-    new (ptr) ::MsgSetSubAgentResp();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgSetSubAgentResp_Login_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgSetSubAgentResp_Login_2eproto}, {}};
 
 static void InitDefaultsscc_info_MsgShareData_Login_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -1172,7 +1155,7 @@ static void InitDefaultsscc_info_MsgVIPInfo_Login_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgVIPInfo_Login_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgVIPInfo_Login_2eproto}, {}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Login_2eproto[66];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Login_2eproto[65];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_Login_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_Login_2eproto = nullptr;
 
@@ -1775,18 +1758,12 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::MsgSetSubAgent, user_id_),
   PROTOBUF_FIELD_OFFSET(::MsgSetSubAgent, agent_ratio_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::MsgSetSubAgentResp, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::MsgRecviveAgentRebateResp, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::MsgSetSubAgentResp, code_),
-  ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::MsgAgentRecviveResp, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::MsgAgentRecviveResp, code_),
-  PROTOBUF_FIELD_OFFSET(::MsgAgentRecviveResp, cur_rebate_),
+  PROTOBUF_FIELD_OFFSET(::MsgRecviveAgentRebateResp, code_),
+  PROTOBUF_FIELD_OFFSET(::MsgRecviveAgentRebateResp, cur_rebate_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::MsgPlayerLogin)},
@@ -1853,8 +1830,7 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 572, -1, sizeof(::InfiniteAgentQuerySubInfo)},
   { 582, -1, sizeof(::MsgInfiniteAgentQuerySubInfoResp)},
   { 590, -1, sizeof(::MsgSetSubAgent)},
-  { 597, -1, sizeof(::MsgSetSubAgentResp)},
-  { 603, -1, sizeof(::MsgAgentRecviveResp)},
+  { 597, -1, sizeof(::MsgRecviveAgentRebateResp)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -1922,8 +1898,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_InfiniteAgentQuerySubInfo_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgInfiniteAgentQuerySubInfoResp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgSetSubAgent_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgSetSubAgentResp_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgAgentRecviveResp_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgRecviveAgentRebateResp_default_instance_),
 };
 
 const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -2101,20 +2076,18 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "entQuerySubInfoResp\022\023\n\013agent_count\030\001 \001(\005"
   "\022\020\n\010end_list\030\002 \001(\010\022(\n\004info\030\003 \003(\0132\032.Infin"
   "iteAgentQuerySubInfo\"6\n\016MsgSetSubAgent\022\017"
-  "\n\007user_id\030\001 \001(\005\022\023\n\013agent_ratio\030\002 \001(\005\"\"\n\022"
-  "MsgSetSubAgentResp\022\014\n\004code\030\001 \001(\005\"7\n\023MsgA"
-  "gentRecviveResp\022\014\n\004code\030\001 \001(\005\022\022\n\ncur_reb"
-  "ate\030\002 \001(\003b\006proto3"
+  "\n\007user_id\030\001 \001(\005\022\023\n\013agent_ratio\030\002 \001(\005\"=\n\031"
+  "MsgRecviveAgentRebateResp\022\014\n\004code\030\001 \001(\005\022"
+  "\022\n\ncur_rebate\030\002 \001(\003b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Login_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Login_2eproto_sccs[66] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Login_2eproto_sccs[65] = {
   &scc_info_ActiveInfoRet_Login_2eproto.base,
   &scc_info_InfiniteAgentQuerySubInfo_Login_2eproto.base,
   &scc_info_MsgActiveInfoCSPick_Login_2eproto.base,
   &scc_info_MsgActiveInfoSCPick_Login_2eproto.base,
   &scc_info_MsgActiveInfoSCRet_Login_2eproto.base,
-  &scc_info_MsgAgentRecviveResp_Login_2eproto.base,
   &scc_info_MsgBindInviteCodeResp_Login_2eproto.base,
   &scc_info_MsgBindParentData_Login_2eproto.base,
   &scc_info_MsgBindParentInfo_Login_2eproto.base,
@@ -2152,8 +2125,8 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
   &scc_info_MsgQueryRebateRecord_Login_2eproto.base,
   &scc_info_MsgQueryRebateRecordInfo_Login_2eproto.base,
   &scc_info_MsgRechargeInfo_Login_2eproto.base,
+  &scc_info_MsgRecviveAgentRebateResp_Login_2eproto.base,
   &scc_info_MsgSetSubAgent_Login_2eproto.base,
-  &scc_info_MsgSetSubAgentResp_Login_2eproto.base,
   &scc_info_MsgShareData_Login_2eproto.base,
   &scc_info_MsgSubagentInformation_Login_2eproto.base,
   &scc_info_MsgTopInfo_Login_2eproto.base,
@@ -2178,10 +2151,10 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Login_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Login_2eproto = {
-  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 7097,
-  &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 66, 0,
+  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 7067,
+  &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 65, 0,
   schemas, file_default_instances, TableStruct_Login_2eproto::offsets,
-  file_level_metadata_Login_2eproto, 66, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
+  file_level_metadata_Login_2eproto, 65, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -21115,253 +21088,59 @@ void MsgSetSubAgent::InternalSwap(MsgSetSubAgent* other) {
 
 // ===================================================================
 
-class MsgSetSubAgentResp::_Internal {
+class MsgRecviveAgentRebateResp::_Internal {
  public:
 };
 
-MsgSetSubAgentResp::MsgSetSubAgentResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+MsgRecviveAgentRebateResp::MsgRecviveAgentRebateResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:MsgSetSubAgentResp)
+  // @@protoc_insertion_point(arena_constructor:MsgRecviveAgentRebateResp)
 }
-MsgSetSubAgentResp::MsgSetSubAgentResp(const MsgSetSubAgentResp& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  code_ = from.code_;
-  // @@protoc_insertion_point(copy_constructor:MsgSetSubAgentResp)
-}
-
-void MsgSetSubAgentResp::SharedCtor() {
-  code_ = 0;
-}
-
-MsgSetSubAgentResp::~MsgSetSubAgentResp() {
-  // @@protoc_insertion_point(destructor:MsgSetSubAgentResp)
-  SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-void MsgSetSubAgentResp::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-}
-
-void MsgSetSubAgentResp::ArenaDtor(void* object) {
-  MsgSetSubAgentResp* _this = reinterpret_cast< MsgSetSubAgentResp* >(object);
-  (void)_this;
-}
-void MsgSetSubAgentResp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
-void MsgSetSubAgentResp::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
-}
-const MsgSetSubAgentResp& MsgSetSubAgentResp::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgSetSubAgentResp_Login_2eproto.base);
-  return *internal_default_instance();
-}
-
-
-void MsgSetSubAgentResp::Clear() {
-// @@protoc_insertion_point(message_clear_start:MsgSetSubAgentResp)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  code_ = 0;
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-const char* MsgSetSubAgentResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
-    switch (tag >> 3) {
-      // int32 code = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          code_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
-    }  // switch
-  }  // while
-success:
-  return ptr;
-failure:
-  ptr = nullptr;
-  goto success;
-#undef CHK_
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* MsgSetSubAgentResp::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:MsgSetSubAgentResp)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // int32 code = 1;
-  if (this->code() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_code(), target);
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:MsgSetSubAgentResp)
-  return target;
-}
-
-size_t MsgSetSubAgentResp::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:MsgSetSubAgentResp)
-  size_t total_size = 0;
-
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  // int32 code = 1;
-  if (this->code() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_code());
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
-}
-
-void MsgSetSubAgentResp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:MsgSetSubAgentResp)
-  GOOGLE_DCHECK_NE(&from, this);
-  const MsgSetSubAgentResp* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgSetSubAgentResp>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgSetSubAgentResp)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgSetSubAgentResp)
-    MergeFrom(*source);
-  }
-}
-
-void MsgSetSubAgentResp::MergeFrom(const MsgSetSubAgentResp& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:MsgSetSubAgentResp)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from.code() != 0) {
-    _internal_set_code(from._internal_code());
-  }
-}
-
-void MsgSetSubAgentResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:MsgSetSubAgentResp)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void MsgSetSubAgentResp::CopyFrom(const MsgSetSubAgentResp& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:MsgSetSubAgentResp)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool MsgSetSubAgentResp::IsInitialized() const {
-  return true;
-}
-
-void MsgSetSubAgentResp::InternalSwap(MsgSetSubAgentResp* other) {
-  using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  swap(code_, other->code_);
-}
-
-::PROTOBUF_NAMESPACE_ID::Metadata MsgSetSubAgentResp::GetMetadata() const {
-  return GetMetadataStatic();
-}
-
-
-// ===================================================================
-
-class MsgAgentRecviveResp::_Internal {
- public:
-};
-
-MsgAgentRecviveResp::MsgAgentRecviveResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:MsgAgentRecviveResp)
-}
-MsgAgentRecviveResp::MsgAgentRecviveResp(const MsgAgentRecviveResp& from)
+MsgRecviveAgentRebateResp::MsgRecviveAgentRebateResp(const MsgRecviveAgentRebateResp& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&cur_rebate_, &from.cur_rebate_,
     static_cast<size_t>(reinterpret_cast<char*>(&code_) -
     reinterpret_cast<char*>(&cur_rebate_)) + sizeof(code_));
-  // @@protoc_insertion_point(copy_constructor:MsgAgentRecviveResp)
+  // @@protoc_insertion_point(copy_constructor:MsgRecviveAgentRebateResp)
 }
 
-void MsgAgentRecviveResp::SharedCtor() {
+void MsgRecviveAgentRebateResp::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&cur_rebate_) - reinterpret_cast<char*>(this)),
       0, static_cast<size_t>(reinterpret_cast<char*>(&code_) -
       reinterpret_cast<char*>(&cur_rebate_)) + sizeof(code_));
 }
 
-MsgAgentRecviveResp::~MsgAgentRecviveResp() {
-  // @@protoc_insertion_point(destructor:MsgAgentRecviveResp)
+MsgRecviveAgentRebateResp::~MsgRecviveAgentRebateResp() {
+  // @@protoc_insertion_point(destructor:MsgRecviveAgentRebateResp)
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void MsgAgentRecviveResp::SharedDtor() {
+void MsgRecviveAgentRebateResp::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void MsgAgentRecviveResp::ArenaDtor(void* object) {
-  MsgAgentRecviveResp* _this = reinterpret_cast< MsgAgentRecviveResp* >(object);
+void MsgRecviveAgentRebateResp::ArenaDtor(void* object) {
+  MsgRecviveAgentRebateResp* _this = reinterpret_cast< MsgRecviveAgentRebateResp* >(object);
   (void)_this;
 }
-void MsgAgentRecviveResp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+void MsgRecviveAgentRebateResp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 }
-void MsgAgentRecviveResp::SetCachedSize(int size) const {
+void MsgRecviveAgentRebateResp::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const MsgAgentRecviveResp& MsgAgentRecviveResp::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgAgentRecviveResp_Login_2eproto.base);
+const MsgRecviveAgentRebateResp& MsgRecviveAgentRebateResp::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgRecviveAgentRebateResp_Login_2eproto.base);
   return *internal_default_instance();
 }
 
 
-void MsgAgentRecviveResp::Clear() {
-// @@protoc_insertion_point(message_clear_start:MsgAgentRecviveResp)
+void MsgRecviveAgentRebateResp::Clear() {
+// @@protoc_insertion_point(message_clear_start:MsgRecviveAgentRebateResp)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -21372,7 +21151,7 @@ void MsgAgentRecviveResp::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* MsgAgentRecviveResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* MsgRecviveAgentRebateResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
@@ -21415,9 +21194,9 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* MsgAgentRecviveResp::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* MsgRecviveAgentRebateResp::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:MsgAgentRecviveResp)
+  // @@protoc_insertion_point(serialize_to_array_start:MsgRecviveAgentRebateResp)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -21437,12 +21216,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:MsgAgentRecviveResp)
+  // @@protoc_insertion_point(serialize_to_array_end:MsgRecviveAgentRebateResp)
   return target;
 }
 
-size_t MsgAgentRecviveResp::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:MsgAgentRecviveResp)
+size_t MsgRecviveAgentRebateResp::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:MsgRecviveAgentRebateResp)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -21472,23 +21251,23 @@ size_t MsgAgentRecviveResp::ByteSizeLong() const {
   return total_size;
 }
 
-void MsgAgentRecviveResp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:MsgAgentRecviveResp)
+void MsgRecviveAgentRebateResp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:MsgRecviveAgentRebateResp)
   GOOGLE_DCHECK_NE(&from, this);
-  const MsgAgentRecviveResp* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgAgentRecviveResp>(
+  const MsgRecviveAgentRebateResp* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgRecviveAgentRebateResp>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgAgentRecviveResp)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgRecviveAgentRebateResp)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgAgentRecviveResp)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgRecviveAgentRebateResp)
     MergeFrom(*source);
   }
 }
 
-void MsgAgentRecviveResp::MergeFrom(const MsgAgentRecviveResp& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:MsgAgentRecviveResp)
+void MsgRecviveAgentRebateResp::MergeFrom(const MsgRecviveAgentRebateResp& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:MsgRecviveAgentRebateResp)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -21502,36 +21281,36 @@ void MsgAgentRecviveResp::MergeFrom(const MsgAgentRecviveResp& from) {
   }
 }
 
-void MsgAgentRecviveResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:MsgAgentRecviveResp)
+void MsgRecviveAgentRebateResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:MsgRecviveAgentRebateResp)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-void MsgAgentRecviveResp::CopyFrom(const MsgAgentRecviveResp& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:MsgAgentRecviveResp)
+void MsgRecviveAgentRebateResp::CopyFrom(const MsgRecviveAgentRebateResp& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:MsgRecviveAgentRebateResp)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool MsgAgentRecviveResp::IsInitialized() const {
+bool MsgRecviveAgentRebateResp::IsInitialized() const {
   return true;
 }
 
-void MsgAgentRecviveResp::InternalSwap(MsgAgentRecviveResp* other) {
+void MsgRecviveAgentRebateResp::InternalSwap(MsgRecviveAgentRebateResp* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgAgentRecviveResp, code_)
-      + sizeof(MsgAgentRecviveResp::code_)
-      - PROTOBUF_FIELD_OFFSET(MsgAgentRecviveResp, cur_rebate_)>(
+      PROTOBUF_FIELD_OFFSET(MsgRecviveAgentRebateResp, code_)
+      + sizeof(MsgRecviveAgentRebateResp::code_)
+      - PROTOBUF_FIELD_OFFSET(MsgRecviveAgentRebateResp, cur_rebate_)>(
           reinterpret_cast<char*>(&cur_rebate_),
           reinterpret_cast<char*>(&other->cur_rebate_));
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata MsgAgentRecviveResp::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata MsgRecviveAgentRebateResp::GetMetadata() const {
   return GetMetadataStatic();
 }
 
@@ -21730,11 +21509,8 @@ template<> PROTOBUF_NOINLINE ::MsgInfiniteAgentQuerySubInfoResp* Arena::CreateMa
 template<> PROTOBUF_NOINLINE ::MsgSetSubAgent* Arena::CreateMaybeMessage< ::MsgSetSubAgent >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MsgSetSubAgent >(arena);
 }
-template<> PROTOBUF_NOINLINE ::MsgSetSubAgentResp* Arena::CreateMaybeMessage< ::MsgSetSubAgentResp >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::MsgSetSubAgentResp >(arena);
-}
-template<> PROTOBUF_NOINLINE ::MsgAgentRecviveResp* Arena::CreateMaybeMessage< ::MsgAgentRecviveResp >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::MsgAgentRecviveResp >(arena);
+template<> PROTOBUF_NOINLINE ::MsgRecviveAgentRebateResp* Arena::CreateMaybeMessage< ::MsgRecviveAgentRebateResp >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::MsgRecviveAgentRebateResp >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

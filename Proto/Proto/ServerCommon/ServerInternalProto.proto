@@ -529,7 +529,13 @@ message MsgDBUpgradeVIP
 	int32		bind_id						= 3;	//绑定id
 	int32		add_vip_exp					= 4;	//增加经验
 }
-
+//设置玩家下级代理
+message MsgDBSetSubAgent
+{
+	int32 user_id 		= 1;			//玩家id
+	int32 sub_user		= 2;			//下架代理ID
+	int32 agent_ratio 	= 3;			//分成比例
+}
 /////////////////////////////////////////////PVP//////////////////////////////////////////////
 message MsgPvpSerTableInfo
 {
