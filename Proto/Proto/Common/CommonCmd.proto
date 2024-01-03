@@ -138,7 +138,7 @@ enum EMsgIDLogin
 	MsgIDCelebrity_GetCelebrityGoldCoinResp		= 124;		//领取网红金币返回(MsgCommonBool)
 	MsgIDAgent_InfiniteAgentQueryMyInfo			= 125;		//无限代理查询自己数据(MsgCommonBool)
 	MsgIDAgent_InfiniteAgentQueryMyInfoResp		= 126;		//无限代理查询自己数据返回(MsgInfiniteAgentQueryMyInfoResp)
-	MsgIDAgent_InfiniteAgentQuerySubInfo		= 127;		//无限代理查询下级数据(MsgCommonBool)
+	MsgIDAgent_InfiniteAgentQuerySubInfo		= 127;		//无限代理查询下级数据(MsgInfiniteAgentQuerySubInfo)
 	MsgIDAgent_InfiniteAgentQuerySubInfoResp	= 128;		//无限代理查询下级数据(MsgInfiniteAgentQuerySubInfoResp)
 	MsgIDAgent_InfiniteAgentSetSub				= 129;		//无限代理设置下级代理(MsgSetSubAgent)
 	MsgIDAgent_InfiniteAgentSetSubResp			= 130;		//无限代理设置下级代理返回(MsgCommonN32)

@@ -696,7 +696,7 @@ public enum EMsgIDLogin {
   /// </summary>
   [pbr::OriginalName("MsgIDAgent_InfiniteAgentQueryMyInfoResp")] MsgIdagentInfiniteAgentQueryMyInfoResp = 126,
   /// <summary>
-  ///无限代理查询下级数据(MsgCommonBool)
+  ///无限代理查询下级数据(MsgInfiniteAgentQuerySubInfo)
   /// </summary>
   [pbr::OriginalName("MsgIDAgent_InfiniteAgentQuerySubInfo")] MsgIdagentInfiniteAgentQuerySubInfo = 127,
   /// <summary>

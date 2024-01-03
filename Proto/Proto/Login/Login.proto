@@ -542,11 +542,18 @@ message MsgInfiniteAgentQueryMyInfoResp
 	int32		agent_level 	= 1;	//代理等级
 	int32 		agent_ratio 	= 2;	//分成比例
 	int32 		bind_id 		= 3;	//上级id
-	int32 		cur_rebate 		= 4;	//当前返利
-	int32 		total_rebate 	= 5;	//总返利
-}	                                
+	int64 		cur_rebate 		= 4;	//当前返利
+	int64 		total_rebate 	= 5;	//总返利
+}	       
+//请求下级数据
+message MsgInfiniteAgentQuerySubInfo
+{
+	int32 user_id 				= 1;		//userid
+	int32 current_page			= 2;		//当前页
+	int32 max_row				= 3;		//每页最大行数  最大50，超了改数据库
+}                         
 //请下级数据	                    
-message MsgInfiniteAgentQuerySubInfo	
+message InfiniteAgentQuerySubInfo	
 {	                                
 	int32 user_id 			= 1;		//下级userid
 	int32 subordinates 		= 2;		//当前id下级人数
@@ -559,7 +566,7 @@ message MsgInfiniteAgentQuerySubInfoResp
 {
 	int32 agent_count 	= 1;						//代理数量
 	bool end_list 		= 2;						//结束
-	repeated MsgInfiniteAgentQuerySubInfo info = 3;	//代理总数据
+	repeated InfiniteAgentQuerySubInfo info = 3;	//代理总数据
 }
 //设置下级代理
 message MsgSetSubAgent

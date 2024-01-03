@@ -168,17 +168,18 @@ public static partial class LoginReflection {
           "bmlja25hbWUYAyABKAkSEQoJZ29sZF9jb2luGAQgASgDEg0KBXN0YXRlGAUg",
           "ASgIIoYBCh9Nc2dJbmZpbml0ZUFnZW50UXVlcnlNeUluZm9SZXNwEhMKC2Fn",
           "ZW50X2xldmVsGAEgASgFEhMKC2FnZW50X3JhdGlvGAIgASgFEg8KB2JpbmRf",
-          "aWQYAyABKAUSEgoKY3VyX3JlYmF0ZRgEIAEoBRIUCgx0b3RhbF9yZWJhdGUY",
-          "BSABKAUigAEKHE1zZ0luZmluaXRlQWdlbnRRdWVyeVN1YkluZm8SDwoHdXNl",
-          "cl9pZBgBIAEoBRIUCgxzdWJvcmRpbmF0ZXMYAiABKAUSEQoJdG90YWxfdGF4",
-          "GAMgASgDEhEKCXRvZGF5X3RheBgEIAEoAxITCgthZ2VudF9yYXRpbxgFIAEo",
-          "BSJ2CiBNc2dJbmZpbml0ZUFnZW50UXVlcnlTdWJJbmZvUmVzcBITCgthZ2Vu",
-          "dF9jb3VudBgBIAEoBRIQCghlbmRfbGlzdBgCIAEoCBIrCgRpbmZvGAMgAygL",
-          "Mh0uTXNnSW5maW5pdGVBZ2VudFF1ZXJ5U3ViSW5mbyI2Cg5Nc2dTZXRTdWJB",
-          "Z2VudBIPCgd1c2VyX2lkGAEgASgFEhMKC2FnZW50X3JhdGlvGAIgASgFIiIK",
-          "Ek1zZ1NldFN1YkFnZW50UmVzcBIMCgRjb2RlGAEgASgFIjcKE01zZ0FnZW50",
-          "UmVjdml2ZVJlc3ASDAoEY29kZRgBIAEoBRISCgpjdXJfcmViYXRlGAIgASgD",
-          "YgZwcm90bzM="));
+          "aWQYAyABKAUSEgoKY3VyX3JlYmF0ZRgEIAEoAxIUCgx0b3RhbF9yZWJhdGUY",
+          "BSABKAMiVgocTXNnSW5maW5pdGVBZ2VudFF1ZXJ5U3ViSW5mbxIPCgd1c2Vy",
+          "X2lkGAEgASgFEhQKDGN1cnJlbnRfcGFnZRgCIAEoBRIPCgdtYXhfcm93GAMg",
+          "ASgFIn0KGUluZmluaXRlQWdlbnRRdWVyeVN1YkluZm8SDwoHdXNlcl9pZBgB",
+          "IAEoBRIUCgxzdWJvcmRpbmF0ZXMYAiABKAUSEQoJdG90YWxfdGF4GAMgASgD",
+          "EhEKCXRvZGF5X3RheBgEIAEoAxITCgthZ2VudF9yYXRpbxgFIAEoBSJzCiBN",
+          "c2dJbmZpbml0ZUFnZW50UXVlcnlTdWJJbmZvUmVzcBITCgthZ2VudF9jb3Vu",
+          "dBgBIAEoBRIQCghlbmRfbGlzdBgCIAEoCBIoCgRpbmZvGAMgAygLMhouSW5m",
+          "aW5pdGVBZ2VudFF1ZXJ5U3ViSW5mbyI2Cg5Nc2dTZXRTdWJBZ2VudBIPCgd1",
+          "c2VyX2lkGAEgASgFEhMKC2FnZW50X3JhdGlvGAIgASgFIiIKEk1zZ1NldFN1",
+          "YkFnZW50UmVzcBIMCgRjb2RlGAEgASgFIjcKE01zZ0FnZW50UmVjdml2ZVJl",
+          "c3ASDAoEY29kZRgBIAEoBRISCgpjdXJfcmViYXRlGAIgASgDYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -242,7 +243,8 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgInviteUserResp), global::MsgInviteUserResp.Parser, new[]{ "Info" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgQueryCelebrityGoldCoinResp), global::MsgQueryCelebrityGoldCoinResp.Parser, new[]{ "Avatar", "AvatarFrame", "Nickname", "GoldCoin", "State" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgInfiniteAgentQueryMyInfoResp), global::MsgInfiniteAgentQueryMyInfoResp.Parser, new[]{ "AgentLevel", "AgentRatio", "BindId", "CurRebate", "TotalRebate" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgInfiniteAgentQuerySubInfo), global::MsgInfiniteAgentQuerySubInfo.Parser, new[]{ "UserId", "Subordinates", "TotalTax", "TodayTax", "AgentRatio" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgInfiniteAgentQuerySubInfo), global::MsgInfiniteAgentQuerySubInfo.Parser, new[]{ "UserId", "CurrentPage", "MaxRow" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::InfiniteAgentQuerySubInfo), global::InfiniteAgentQuerySubInfo.Parser, new[]{ "UserId", "Subordinates", "TotalTax", "TodayTax", "AgentRatio" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgInfiniteAgentQuerySubInfoResp), global::MsgInfiniteAgentQuerySubInfoResp.Parser, new[]{ "AgentCount", "EndList", "Info" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgSetSubAgent), global::MsgSetSubAgent.Parser, new[]{ "UserId", "AgentRatio" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgSetSubAgentResp), global::MsgSetSubAgentResp.Parser, new[]{ "Code" }, null, null, null, null),
@@ -18380,12 +18382,12 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
 
   /// <summary>Field number for the "cur_rebate" field.</summary>
   public const int CurRebateFieldNumber = 4;
-  private int curRebate_;
+  private long curRebate_;
   /// <summary>
   ///当前返利
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public int CurRebate {
+  public long CurRebate {
     get { return curRebate_; }
     set {
       curRebate_ = value;
@@ -18394,12 +18396,12 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
 
   /// <summary>Field number for the "total_rebate" field.</summary>
   public const int TotalRebateFieldNumber = 5;
-  private int totalRebate_;
+  private long totalRebate_;
   /// <summary>
   ///总返利
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public int TotalRebate {
+  public long TotalRebate {
     get { return totalRebate_; }
     set {
       totalRebate_ = value;
@@ -18433,8 +18435,8 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
     if (AgentLevel != 0) hash ^= AgentLevel.GetHashCode();
     if (AgentRatio != 0) hash ^= AgentRatio.GetHashCode();
     if (BindId != 0) hash ^= BindId.GetHashCode();
-    if (CurRebate != 0) hash ^= CurRebate.GetHashCode();
-    if (TotalRebate != 0) hash ^= TotalRebate.GetHashCode();
+    if (CurRebate != 0L) hash ^= CurRebate.GetHashCode();
+    if (TotalRebate != 0L) hash ^= TotalRebate.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -18463,13 +18465,13 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
       output.WriteRawTag(24);
       output.WriteInt32(BindId);
     }
-    if (CurRebate != 0) {
+    if (CurRebate != 0L) {
       output.WriteRawTag(32);
-      output.WriteInt32(CurRebate);
+      output.WriteInt64(CurRebate);
     }
-    if (TotalRebate != 0) {
+    if (TotalRebate != 0L) {
       output.WriteRawTag(40);
-      output.WriteInt32(TotalRebate);
+      output.WriteInt64(TotalRebate);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -18492,13 +18494,13 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
       output.WriteRawTag(24);
       output.WriteInt32(BindId);
     }
-    if (CurRebate != 0) {
+    if (CurRebate != 0L) {
       output.WriteRawTag(32);
-      output.WriteInt32(CurRebate);
+      output.WriteInt64(CurRebate);
     }
-    if (TotalRebate != 0) {
+    if (TotalRebate != 0L) {
       output.WriteRawTag(40);
-      output.WriteInt32(TotalRebate);
+      output.WriteInt64(TotalRebate);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
@@ -18518,11 +18520,11 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
     if (BindId != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(BindId);
     }
-    if (CurRebate != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeInt32Size(CurRebate);
+    if (CurRebate != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(CurRebate);
     }
-    if (TotalRebate != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeInt32Size(TotalRebate);
+    if (TotalRebate != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(TotalRebate);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -18544,10 +18546,10 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
     if (other.BindId != 0) {
       BindId = other.BindId;
     }
-    if (other.CurRebate != 0) {
+    if (other.CurRebate != 0L) {
       CurRebate = other.CurRebate;
     }
-    if (other.TotalRebate != 0) {
+    if (other.TotalRebate != 0L) {
       TotalRebate = other.TotalRebate;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -18577,11 +18579,11 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
           break;
         }
         case 32: {
-          CurRebate = input.ReadInt32();
+          CurRebate = input.ReadInt64();
           break;
         }
         case 40: {
-          TotalRebate = input.ReadInt32();
+          TotalRebate = input.ReadInt64();
           break;
         }
       }
@@ -18611,11 +18613,11 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
           break;
         }
         case 32: {
-          CurRebate = input.ReadInt32();
+          CurRebate = input.ReadInt64();
           break;
         }
         case 40: {
-          TotalRebate = input.ReadInt32();
+          TotalRebate = input.ReadInt64();
           break;
         }
       }
@@ -18626,7 +18628,7 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
 }
 
 /// <summary>
-///请下级数据	                    
+///请求下级数据
 /// </summary>
 public sealed partial class MsgInfiniteAgentQuerySubInfo : pb::IMessage<MsgInfiniteAgentQuerySubInfo>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -18658,6 +18660,262 @@ public sealed partial class MsgInfiniteAgentQuerySubInfo : pb::IMessage<MsgInfin
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public MsgInfiniteAgentQuerySubInfo(MsgInfiniteAgentQuerySubInfo other) : this() {
     userId_ = other.userId_;
+    currentPage_ = other.currentPage_;
+    maxRow_ = other.maxRow_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgInfiniteAgentQuerySubInfo Clone() {
+    return new MsgInfiniteAgentQuerySubInfo(this);
+  }
+
+  /// <summary>Field number for the "user_id" field.</summary>
+  public const int UserIdFieldNumber = 1;
+  private int userId_;
+  /// <summary>
+  ///userid
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int UserId {
+    get { return userId_; }
+    set {
+      userId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "current_page" field.</summary>
+  public const int CurrentPageFieldNumber = 2;
+  private int currentPage_;
+  /// <summary>
+  ///当前页
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CurrentPage {
+    get { return currentPage_; }
+    set {
+      currentPage_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "max_row" field.</summary>
+  public const int MaxRowFieldNumber = 3;
+  private int maxRow_;
+  /// <summary>
+  ///每页最大行数  最大50，超了改数据库
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int MaxRow {
+    get { return maxRow_; }
+    set {
+      maxRow_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgInfiniteAgentQuerySubInfo);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgInfiniteAgentQuerySubInfo other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (UserId != other.UserId) return false;
+    if (CurrentPage != other.CurrentPage) return false;
+    if (MaxRow != other.MaxRow) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (UserId != 0) hash ^= UserId.GetHashCode();
+    if (CurrentPage != 0) hash ^= CurrentPage.GetHashCode();
+    if (MaxRow != 0) hash ^= MaxRow.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (UserId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(UserId);
+    }
+    if (CurrentPage != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(CurrentPage);
+    }
+    if (MaxRow != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(MaxRow);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (UserId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(UserId);
+    }
+    if (CurrentPage != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(CurrentPage);
+    }
+    if (MaxRow != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(MaxRow);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (UserId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserId);
+    }
+    if (CurrentPage != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(CurrentPage);
+    }
+    if (MaxRow != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(MaxRow);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgInfiniteAgentQuerySubInfo other) {
+    if (other == null) {
+      return;
+    }
+    if (other.UserId != 0) {
+      UserId = other.UserId;
+    }
+    if (other.CurrentPage != 0) {
+      CurrentPage = other.CurrentPage;
+    }
+    if (other.MaxRow != 0) {
+      MaxRow = other.MaxRow;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          UserId = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          CurrentPage = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          MaxRow = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          UserId = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          CurrentPage = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          MaxRow = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///请下级数据	                    
+/// </summary>
+public sealed partial class InfiniteAgentQuerySubInfo : pb::IMessage<InfiniteAgentQuerySubInfo>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<InfiniteAgentQuerySubInfo> _parser = new pb::MessageParser<InfiniteAgentQuerySubInfo>(() => new InfiniteAgentQuerySubInfo());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<InfiniteAgentQuerySubInfo> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[61]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public InfiniteAgentQuerySubInfo() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public InfiniteAgentQuerySubInfo(InfiniteAgentQuerySubInfo other) : this() {
+    userId_ = other.userId_;
     subordinates_ = other.subordinates_;
     totalTax_ = other.totalTax_;
     todayTax_ = other.todayTax_;
@@ -18666,8 +18924,8 @@ public sealed partial class MsgInfiniteAgentQuerySubInfo : pb::IMessage<MsgInfin
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public MsgInfiniteAgentQuerySubInfo Clone() {
-    return new MsgInfiniteAgentQuerySubInfo(this);
+  public InfiniteAgentQuerySubInfo Clone() {
+    return new InfiniteAgentQuerySubInfo(this);
   }
 
   /// <summary>Field number for the "user_id" field.</summary>
@@ -18742,11 +19000,11 @@ public sealed partial class MsgInfiniteAgentQuerySubInfo : pb::IMessage<MsgInfin
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
-    return Equals(other as MsgInfiniteAgentQuerySubInfo);
+    return Equals(other as InfiniteAgentQuerySubInfo);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Equals(MsgInfiniteAgentQuerySubInfo other) {
+  public bool Equals(InfiniteAgentQuerySubInfo other) {
     if (ReferenceEquals(other, null)) {
       return false;
     }
@@ -18865,7 +19123,7 @@ public sealed partial class MsgInfiniteAgentQuerySubInfo : pb::IMessage<MsgInfin
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(MsgInfiniteAgentQuerySubInfo other) {
+  public void MergeFrom(InfiniteAgentQuerySubInfo other) {
     if (other == null) {
       return;
     }
@@ -18974,7 +19232,7 @@ public sealed partial class MsgInfiniteAgentQuerySubInfoResp : pb::IMessage<MsgI
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[61]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[62]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -19032,14 +19290,14 @@ public sealed partial class MsgInfiniteAgentQuerySubInfoResp : pb::IMessage<MsgI
 
   /// <summary>Field number for the "info" field.</summary>
   public const int InfoFieldNumber = 3;
-  private static readonly pb::FieldCodec<global::MsgInfiniteAgentQuerySubInfo> _repeated_info_codec
-      = pb::FieldCodec.ForMessage(26, global::MsgInfiniteAgentQuerySubInfo.Parser);
-  private readonly pbc::RepeatedField<global::MsgInfiniteAgentQuerySubInfo> info_ = new pbc::RepeatedField<global::MsgInfiniteAgentQuerySubInfo>();
+  private static readonly pb::FieldCodec<global::InfiniteAgentQuerySubInfo> _repeated_info_codec
+      = pb::FieldCodec.ForMessage(26, global::InfiniteAgentQuerySubInfo.Parser);
+  private readonly pbc::RepeatedField<global::InfiniteAgentQuerySubInfo> info_ = new pbc::RepeatedField<global::InfiniteAgentQuerySubInfo>();
   /// <summary>
   ///代理总数据
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public pbc::RepeatedField<global::MsgInfiniteAgentQuerySubInfo> Info {
+  public pbc::RepeatedField<global::InfiniteAgentQuerySubInfo> Info {
     get { return info_; }
   }
 
@@ -19219,7 +19477,7 @@ public sealed partial class MsgSetSubAgent : pb::IMessage<MsgSetSubAgent>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[62]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[63]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -19436,7 +19694,7 @@ public sealed partial class MsgSetSubAgentResp : pb::IMessage<MsgSetSubAgentResp
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[63]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[64]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -19614,7 +19872,7 @@ public sealed partial class MsgAgentRecviveResp : pb::IMessage<MsgAgentRecviveRe
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[64]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[65]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
