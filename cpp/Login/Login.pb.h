@@ -11635,10 +11635,11 @@ class MsgInfiniteAgentQuerySubInfoResp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kInfoFieldNumber = 2,
+    kInfoFieldNumber = 3,
     kAgentCountFieldNumber = 1,
+    kEndListFieldNumber = 2,
   };
-  // repeated .MsgInfiniteAgentQuerySubInfo info = 2;
+  // repeated .MsgInfiniteAgentQuerySubInfo info = 3;
   int info_size() const;
   private:
   int _internal_info_size() const;
@@ -11665,6 +11666,15 @@ class MsgInfiniteAgentQuerySubInfoResp PROTOBUF_FINAL :
   void _internal_set_agent_count(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // bool end_list = 2;
+  void clear_end_list();
+  bool end_list() const;
+  void set_end_list(bool value);
+  private:
+  bool _internal_end_list() const;
+  void _internal_set_end_list(bool value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgInfiniteAgentQuerySubInfoResp)
  private:
   class _Internal;
@@ -11674,6 +11684,7 @@ class MsgInfiniteAgentQuerySubInfoResp PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgInfiniteAgentQuerySubInfo > info_;
   ::PROTOBUF_NAMESPACE_ID::int32 agent_count_;
+  bool end_list_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -20637,7 +20648,27 @@ inline void MsgInfiniteAgentQuerySubInfoResp::set_agent_count(::PROTOBUF_NAMESPA
   // @@protoc_insertion_point(field_set:MsgInfiniteAgentQuerySubInfoResp.agent_count)
 }
 
-// repeated .MsgInfiniteAgentQuerySubInfo info = 2;
+// bool end_list = 2;
+inline void MsgInfiniteAgentQuerySubInfoResp::clear_end_list() {
+  end_list_ = false;
+}
+inline bool MsgInfiniteAgentQuerySubInfoResp::_internal_end_list() const {
+  return end_list_;
+}
+inline bool MsgInfiniteAgentQuerySubInfoResp::end_list() const {
+  // @@protoc_insertion_point(field_get:MsgInfiniteAgentQuerySubInfoResp.end_list)
+  return _internal_end_list();
+}
+inline void MsgInfiniteAgentQuerySubInfoResp::_internal_set_end_list(bool value) {
+  
+  end_list_ = value;
+}
+inline void MsgInfiniteAgentQuerySubInfoResp::set_end_list(bool value) {
+  _internal_set_end_list(value);
+  // @@protoc_insertion_point(field_set:MsgInfiniteAgentQuerySubInfoResp.end_list)
+}
+
+// repeated .MsgInfiniteAgentQuerySubInfo info = 3;
 inline int MsgInfiniteAgentQuerySubInfoResp::_internal_info_size() const {
   return info_.size();
 }

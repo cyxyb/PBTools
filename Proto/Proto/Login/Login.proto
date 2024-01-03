@@ -557,8 +557,9 @@ message MsgInfiniteAgentQuerySubInfo
 //请求下级数据返回
 message MsgInfiniteAgentQuerySubInfoResp
 {
-	int32 agent_count = 1;							//代理数量
-	repeated MsgInfiniteAgentQuerySubInfo info = 2;	//代理总数据
+	int32 agent_count 	= 1;						//代理数量
+	bool end_list 		= 2;						//结束
+	repeated MsgInfiniteAgentQuerySubInfo info = 3;	//代理总数据
 }
 //设置下级代理
 message MsgSetSubAgent

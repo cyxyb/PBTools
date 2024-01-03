@@ -1740,6 +1740,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::MsgInfiniteAgentQuerySubInfoResp, agent_count_),
+  PROTOBUF_FIELD_OFFSET(::MsgInfiniteAgentQuerySubInfoResp, end_list_),
   PROTOBUF_FIELD_OFFSET(::MsgInfiniteAgentQuerySubInfoResp, info_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgSetSubAgent, _internal_metadata_),
@@ -1825,9 +1826,9 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 554, -1, sizeof(::MsgInfiniteAgentQueryMyInfoResp)},
   { 564, -1, sizeof(::MsgInfiniteAgentQuerySubInfo)},
   { 574, -1, sizeof(::MsgInfiniteAgentQuerySubInfoResp)},
-  { 581, -1, sizeof(::MsgSetSubAgent)},
-  { 588, -1, sizeof(::MsgSetSubAgentResp)},
-  { 594, -1, sizeof(::MsgAgentRecviveResp)},
+  { 582, -1, sizeof(::MsgSetSubAgent)},
+  { 589, -1, sizeof(::MsgSetSubAgentResp)},
+  { 595, -1, sizeof(::MsgAgentRecviveResp)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -2067,13 +2068,14 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "te\030\005 \001(\005\"\200\001\n\034MsgInfiniteAgentQuerySubInf"
   "o\022\017\n\007user_id\030\001 \001(\005\022\024\n\014subordinates\030\002 \001(\005"
   "\022\021\n\ttotal_tax\030\003 \001(\003\022\021\n\ttoday_tax\030\004 \001(\003\022\023"
-  "\n\013agent_ratio\030\005 \001(\005\"d\n MsgInfiniteAgentQ"
-  "uerySubInfoResp\022\023\n\013agent_count\030\001 \001(\005\022+\n\004"
-  "info\030\002 \003(\0132\035.MsgInfiniteAgentQuerySubInf"
-  "o\"6\n\016MsgSetSubAgent\022\017\n\007user_id\030\001 \001(\005\022\023\n\013"
-  "agent_ratio\030\002 \001(\005\"\"\n\022MsgSetSubAgentResp\022"
-  "\014\n\004code\030\001 \001(\005\"7\n\023MsgAgentRecviveResp\022\014\n\004"
-  "code\030\001 \001(\005\022\022\n\ncur_rebate\030\002 \001(\003b\006proto3"
+  "\n\013agent_ratio\030\005 \001(\005\"v\n MsgInfiniteAgentQ"
+  "uerySubInfoResp\022\023\n\013agent_count\030\001 \001(\005\022\020\n\010"
+  "end_list\030\002 \001(\010\022+\n\004info\030\003 \003(\0132\035.MsgInfini"
+  "teAgentQuerySubInfo\"6\n\016MsgSetSubAgent\022\017\n"
+  "\007user_id\030\001 \001(\005\022\023\n\013agent_ratio\030\002 \001(\005\"\"\n\022M"
+  "sgSetSubAgentResp\022\014\n\004code\030\001 \001(\005\"7\n\023MsgAg"
+  "entRecviveResp\022\014\n\004code\030\001 \001(\005\022\022\n\ncur_reba"
+  "te\030\002 \001(\003b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Login_2eproto_deps[1] = {
 };
@@ -2146,7 +2148,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Login_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Login_2eproto = {
-  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 6998,
+  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 7016,
   &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 65, 0,
   schemas, file_default_instances, TableStruct_Login_2eproto::offsets,
   file_level_metadata_Login_2eproto, 65, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
@@ -20357,13 +20359,18 @@ MsgInfiniteAgentQuerySubInfoResp::MsgInfiniteAgentQuerySubInfoResp(const MsgInfi
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       info_(from.info_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  agent_count_ = from.agent_count_;
+  ::memcpy(&agent_count_, &from.agent_count_,
+    static_cast<size_t>(reinterpret_cast<char*>(&end_list_) -
+    reinterpret_cast<char*>(&agent_count_)) + sizeof(end_list_));
   // @@protoc_insertion_point(copy_constructor:MsgInfiniteAgentQuerySubInfoResp)
 }
 
 void MsgInfiniteAgentQuerySubInfoResp::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgInfiniteAgentQuerySubInfoResp_Login_2eproto.base);
-  agent_count_ = 0;
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&agent_count_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&end_list_) -
+      reinterpret_cast<char*>(&agent_count_)) + sizeof(end_list_));
 }
 
 MsgInfiniteAgentQuerySubInfoResp::~MsgInfiniteAgentQuerySubInfoResp() {
@@ -20398,7 +20405,9 @@ void MsgInfiniteAgentQuerySubInfoResp::Clear() {
   (void) cached_has_bits;
 
   info_.Clear();
-  agent_count_ = 0;
+  ::memset(&agent_count_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&end_list_) -
+      reinterpret_cast<char*>(&agent_count_)) + sizeof(end_list_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -20416,16 +20425,23 @@ const char* MsgInfiniteAgentQuerySubInfoResp::_InternalParse(const char* ptr, ::
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated .MsgInfiniteAgentQuerySubInfo info = 2;
+      // bool end_list = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          end_list_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated .MsgInfiniteAgentQuerySubInfo info = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
           ptr -= 1;
           do {
             ptr += 1;
             ptr = ctx->ParseMessage(_internal_add_info(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<26>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -20462,12 +20478,18 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_agent_count(), target);
   }
 
-  // repeated .MsgInfiniteAgentQuerySubInfo info = 2;
+  // bool end_list = 2;
+  if (this->end_list() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(2, this->_internal_end_list(), target);
+  }
+
+  // repeated .MsgInfiniteAgentQuerySubInfo info = 3;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_info_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_info(i), target, stream);
+      InternalWriteMessage(3, this->_internal_info(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -20486,7 +20508,7 @@ size_t MsgInfiniteAgentQuerySubInfoResp::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .MsgInfiniteAgentQuerySubInfo info = 2;
+  // repeated .MsgInfiniteAgentQuerySubInfo info = 3;
   total_size += 1UL * this->_internal_info_size();
   for (const auto& msg : this->info_) {
     total_size +=
@@ -20498,6 +20520,11 @@ size_t MsgInfiniteAgentQuerySubInfoResp::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_agent_count());
+  }
+
+  // bool end_list = 2;
+  if (this->end_list() != 0) {
+    total_size += 1 + 1;
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -20535,6 +20562,9 @@ void MsgInfiniteAgentQuerySubInfoResp::MergeFrom(const MsgInfiniteAgentQuerySubI
   if (from.agent_count() != 0) {
     _internal_set_agent_count(from._internal_agent_count());
   }
+  if (from.end_list() != 0) {
+    _internal_set_end_list(from._internal_end_list());
+  }
 }
 
 void MsgInfiniteAgentQuerySubInfoResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -20559,7 +20589,12 @@ void MsgInfiniteAgentQuerySubInfoResp::InternalSwap(MsgInfiniteAgentQuerySubInfo
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   info_.InternalSwap(&other->info_);
-  swap(agent_count_, other->agent_count_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(MsgInfiniteAgentQuerySubInfoResp, end_list_)
+      + sizeof(MsgInfiniteAgentQuerySubInfoResp::end_list_)
+      - PROTOBUF_FIELD_OFFSET(MsgInfiniteAgentQuerySubInfoResp, agent_count_)>(
+          reinterpret_cast<char*>(&agent_count_),
+          reinterpret_cast<char*>(&other->agent_count_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MsgInfiniteAgentQuerySubInfoResp::GetMetadata() const {

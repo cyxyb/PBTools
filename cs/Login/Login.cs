@@ -172,12 +172,13 @@ public static partial class LoginReflection {
           "BSABKAUigAEKHE1zZ0luZmluaXRlQWdlbnRRdWVyeVN1YkluZm8SDwoHdXNl",
           "cl9pZBgBIAEoBRIUCgxzdWJvcmRpbmF0ZXMYAiABKAUSEQoJdG90YWxfdGF4",
           "GAMgASgDEhEKCXRvZGF5X3RheBgEIAEoAxITCgthZ2VudF9yYXRpbxgFIAEo",
-          "BSJkCiBNc2dJbmZpbml0ZUFnZW50UXVlcnlTdWJJbmZvUmVzcBITCgthZ2Vu",
-          "dF9jb3VudBgBIAEoBRIrCgRpbmZvGAIgAygLMh0uTXNnSW5maW5pdGVBZ2Vu",
-          "dFF1ZXJ5U3ViSW5mbyI2Cg5Nc2dTZXRTdWJBZ2VudBIPCgd1c2VyX2lkGAEg",
-          "ASgFEhMKC2FnZW50X3JhdGlvGAIgASgFIiIKEk1zZ1NldFN1YkFnZW50UmVz",
-          "cBIMCgRjb2RlGAEgASgFIjcKE01zZ0FnZW50UmVjdml2ZVJlc3ASDAoEY29k",
-          "ZRgBIAEoBRISCgpjdXJfcmViYXRlGAIgASgDYgZwcm90bzM="));
+          "BSJ2CiBNc2dJbmZpbml0ZUFnZW50UXVlcnlTdWJJbmZvUmVzcBITCgthZ2Vu",
+          "dF9jb3VudBgBIAEoBRIQCghlbmRfbGlzdBgCIAEoCBIrCgRpbmZvGAMgAygL",
+          "Mh0uTXNnSW5maW5pdGVBZ2VudFF1ZXJ5U3ViSW5mbyI2Cg5Nc2dTZXRTdWJB",
+          "Z2VudBIPCgd1c2VyX2lkGAEgASgFEhMKC2FnZW50X3JhdGlvGAIgASgFIiIK",
+          "Ek1zZ1NldFN1YkFnZW50UmVzcBIMCgRjb2RlGAEgASgFIjcKE01zZ0FnZW50",
+          "UmVjdml2ZVJlc3ASDAoEY29kZRgBIAEoBRISCgpjdXJfcmViYXRlGAIgASgD",
+          "YgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -242,7 +243,7 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgQueryCelebrityGoldCoinResp), global::MsgQueryCelebrityGoldCoinResp.Parser, new[]{ "Avatar", "AvatarFrame", "Nickname", "GoldCoin", "State" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgInfiniteAgentQueryMyInfoResp), global::MsgInfiniteAgentQueryMyInfoResp.Parser, new[]{ "AgentLevel", "AgentRatio", "BindId", "CurRebate", "TotalRebate" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgInfiniteAgentQuerySubInfo), global::MsgInfiniteAgentQuerySubInfo.Parser, new[]{ "UserId", "Subordinates", "TotalTax", "TodayTax", "AgentRatio" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgInfiniteAgentQuerySubInfoResp), global::MsgInfiniteAgentQuerySubInfoResp.Parser, new[]{ "AgentCount", "Info" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgInfiniteAgentQuerySubInfoResp), global::MsgInfiniteAgentQuerySubInfoResp.Parser, new[]{ "AgentCount", "EndList", "Info" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgSetSubAgent), global::MsgSetSubAgent.Parser, new[]{ "UserId", "AgentRatio" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgSetSubAgentResp), global::MsgSetSubAgentResp.Parser, new[]{ "Code" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgAgentRecviveResp), global::MsgAgentRecviveResp.Parser, new[]{ "Code", "CurRebate" }, null, null, null, null)
@@ -18991,6 +18992,7 @@ public sealed partial class MsgInfiniteAgentQuerySubInfoResp : pb::IMessage<MsgI
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public MsgInfiniteAgentQuerySubInfoResp(MsgInfiniteAgentQuerySubInfoResp other) : this() {
     agentCount_ = other.agentCount_;
+    endList_ = other.endList_;
     info_ = other.info_.Clone();
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
@@ -19014,10 +19016,24 @@ public sealed partial class MsgInfiniteAgentQuerySubInfoResp : pb::IMessage<MsgI
     }
   }
 
+  /// <summary>Field number for the "end_list" field.</summary>
+  public const int EndListFieldNumber = 2;
+  private bool endList_;
+  /// <summary>
+  ///结束
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool EndList {
+    get { return endList_; }
+    set {
+      endList_ = value;
+    }
+  }
+
   /// <summary>Field number for the "info" field.</summary>
-  public const int InfoFieldNumber = 2;
+  public const int InfoFieldNumber = 3;
   private static readonly pb::FieldCodec<global::MsgInfiniteAgentQuerySubInfo> _repeated_info_codec
-      = pb::FieldCodec.ForMessage(18, global::MsgInfiniteAgentQuerySubInfo.Parser);
+      = pb::FieldCodec.ForMessage(26, global::MsgInfiniteAgentQuerySubInfo.Parser);
   private readonly pbc::RepeatedField<global::MsgInfiniteAgentQuerySubInfo> info_ = new pbc::RepeatedField<global::MsgInfiniteAgentQuerySubInfo>();
   /// <summary>
   ///代理总数据
@@ -19041,6 +19057,7 @@ public sealed partial class MsgInfiniteAgentQuerySubInfoResp : pb::IMessage<MsgI
       return true;
     }
     if (AgentCount != other.AgentCount) return false;
+    if (EndList != other.EndList) return false;
     if(!info_.Equals(other.info_)) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
@@ -19049,6 +19066,7 @@ public sealed partial class MsgInfiniteAgentQuerySubInfoResp : pb::IMessage<MsgI
   public override int GetHashCode() {
     int hash = 1;
     if (AgentCount != 0) hash ^= AgentCount.GetHashCode();
+    if (EndList != false) hash ^= EndList.GetHashCode();
     hash ^= info_.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
@@ -19070,6 +19088,10 @@ public sealed partial class MsgInfiniteAgentQuerySubInfoResp : pb::IMessage<MsgI
       output.WriteRawTag(8);
       output.WriteInt32(AgentCount);
     }
+    if (EndList != false) {
+      output.WriteRawTag(16);
+      output.WriteBool(EndList);
+    }
     info_.WriteTo(output, _repeated_info_codec);
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -19084,6 +19106,10 @@ public sealed partial class MsgInfiniteAgentQuerySubInfoResp : pb::IMessage<MsgI
       output.WriteRawTag(8);
       output.WriteInt32(AgentCount);
     }
+    if (EndList != false) {
+      output.WriteRawTag(16);
+      output.WriteBool(EndList);
+    }
     info_.WriteTo(ref output, _repeated_info_codec);
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
@@ -19096,6 +19122,9 @@ public sealed partial class MsgInfiniteAgentQuerySubInfoResp : pb::IMessage<MsgI
     int size = 0;
     if (AgentCount != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(AgentCount);
+    }
+    if (EndList != false) {
+      size += 1 + 1;
     }
     size += info_.CalculateSize(_repeated_info_codec);
     if (_unknownFields != null) {
@@ -19111,6 +19140,9 @@ public sealed partial class MsgInfiniteAgentQuerySubInfoResp : pb::IMessage<MsgI
     }
     if (other.AgentCount != 0) {
       AgentCount = other.AgentCount;
+    }
+    if (other.EndList != false) {
+      EndList = other.EndList;
     }
     info_.Add(other.info_);
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -19131,7 +19163,11 @@ public sealed partial class MsgInfiniteAgentQuerySubInfoResp : pb::IMessage<MsgI
           AgentCount = input.ReadInt32();
           break;
         }
-        case 18: {
+        case 16: {
+          EndList = input.ReadBool();
+          break;
+        }
+        case 26: {
           info_.AddEntriesFrom(input, _repeated_info_codec);
           break;
         }
@@ -19153,7 +19189,11 @@ public sealed partial class MsgInfiniteAgentQuerySubInfoResp : pb::IMessage<MsgI
           AgentCount = input.ReadInt32();
           break;
         }
-        case 18: {
+        case 16: {
+          EndList = input.ReadBool();
+          break;
+        }
+        case 26: {
           info_.AddEntriesFrom(ref input, _repeated_info_codec);
           break;
         }
