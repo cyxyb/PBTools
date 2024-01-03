@@ -209,12 +209,20 @@ enum EMsgIDLogin : int {
   MsgIDCelebrity_QueryCelebrityGoldCoinResp = 122,
   MsgIDCelebrity_GetCelebrityGoldCoin = 123,
   MsgIDCelebrity_GetCelebrityGoldCoinResp = 124,
+  MsgIDAgent_InfiniteAgentQueryMyInfo = 125,
+  MsgIDAgent_InfiniteAgentQueryMyInfoResp = 126,
+  MsgIDAgent_InfiniteAgentQuerySubInfo = 127,
+  MsgIDAgent_InfiniteAgentQuerySubInfoResp = 128,
+  MsgIDAgent_InfiniteAgentSetSub = 129,
+  MsgIDAgent_InfiniteAgentSetSubResp = 130,
+  MsgIDAgemt_InfiniteAgentRecviveRebate = 131,
+  MsgIDAgemt_InfiniteAgentRecviveRebateResp = 132,
   EMsgIDLogin_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDLogin_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDLogin_IsValid(int value);
 constexpr EMsgIDLogin EMsgIDLogin_MIN = MsgIDLogin_Null;
-constexpr EMsgIDLogin EMsgIDLogin_MAX = MsgIDCelebrity_GetCelebrityGoldCoinResp;
+constexpr EMsgIDLogin EMsgIDLogin_MAX = MsgIDAgemt_InfiniteAgentRecviveRebateResp;
 constexpr int EMsgIDLogin_ARRAYSIZE = EMsgIDLogin_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDLogin_descriptor();
