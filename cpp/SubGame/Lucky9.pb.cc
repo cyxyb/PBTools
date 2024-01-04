@@ -286,6 +286,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Lucky9_2eproto::offsets[] PROT
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgSceneInfo, cell_score_),
+  PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgSceneInfo, room_score_),
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgSceneInfo, table_state_),
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgSceneInfo, table_ronud_),
   PROTOBUF_FIELD_OFFSET(::Lucky9::LCMsgSceneInfo, total_enter_gold_),
@@ -370,15 +371,15 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 7, -1, sizeof(::Lucky9::LCMsgHandCards)},
   { 15, -1, sizeof(::Lucky9::LCMsgPlayerInfo)},
   { 29, -1, sizeof(::Lucky9::LCMsgSceneInfo)},
-  { 43, -1, sizeof(::Lucky9::LCMsgGameStartResp)},
-  { 53, -1, sizeof(::Lucky9::LCMsgNotifyActionResp)},
-  { 60, -1, sizeof(::Lucky9::LCMsgAction)},
-  { 68, -1, sizeof(::Lucky9::LCMsgActionResp)},
-  { 77, -1, sizeof(::Lucky9::LCMsgSendCardInfo)},
-  { 84, -1, sizeof(::Lucky9::LCMsgSendCardResp)},
-  { 90, -1, sizeof(::Lucky9::LCMsgEndPlayerInfo)},
-  { 98, -1, sizeof(::Lucky9::LCMsgGameResult)},
-  { 106, -1, sizeof(::Lucky9::LCMsgNotifyPlayerAct)},
+  { 44, -1, sizeof(::Lucky9::LCMsgGameStartResp)},
+  { 54, -1, sizeof(::Lucky9::LCMsgNotifyActionResp)},
+  { 61, -1, sizeof(::Lucky9::LCMsgAction)},
+  { 69, -1, sizeof(::Lucky9::LCMsgActionResp)},
+  { 78, -1, sizeof(::Lucky9::LCMsgSendCardInfo)},
+  { 85, -1, sizeof(::Lucky9::LCMsgSendCardResp)},
+  { 91, -1, sizeof(::Lucky9::LCMsgEndPlayerInfo)},
+  { 99, -1, sizeof(::Lucky9::LCMsgGameResult)},
+  { 107, -1, sizeof(::Lucky9::LCMsgNotifyPlayerAct)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -406,52 +407,52 @@ const char descriptor_table_protodef_Lucky9_2eproto[] PROTOBUF_SECTION_VARIABLE(
   "\nplayer_bet\030\003 \001(\003\022\021\n\tcard_type\030\004 \001(\005\022\020\n\010"
   "get_card\030\005 \001(\005\022\014\n\004gold\030\006 \001(\003\022\020\n\010win_gold"
   "\030\007 \001(\003\022\021\n\twin_conut\030\010 \001(\003\022&\n\006handls\030\t \001("
-  "\0132\026.Lucky9.LCMsgHandCards\"\350\001\n\016LCMsgScene"
-  "Info\022\022\n\ncell_score\030\001 \001(\003\022\023\n\013table_state\030"
-  "\002 \001(\005\022\023\n\013table_ronud\030\003 \001(\005\022\030\n\020total_ente"
-  "r_gold\030\004 \001(\003\022\020\n\010one_card\030\005 \001(\005\022\027\n\017banker"
-  "_chair_id\030\n \001(\005\022\020\n\010out_time\030\013 \001(\005\022\022\n\ntot"
-  "al_time\030\014 \001(\005\022-\n\014player_infos\030\017 \003(\0132\027.Lu"
-  "cky9.LCMsgPlayerInfo\"\205\001\n\022LCMsgGameStartR"
-  "esp\022\030\n\020total_enter_gold\030\002 \001(\005\022\026\n\016cur_ent"
-  "er_gold\030\003 \001(\005\022\027\n\017banker_chair_id\030\004 \001(\005\022\020"
-  "\n\010one_card\030\005 \001(\005\022\022\n\nplay_index\030\010 \003(\005\"\?\n\025"
-  "LCMsgNotifyActionResp\022\023\n\013current_act\030\003 \001"
-  "(\005\022\021\n\toper_time\030\004 \001(\005\"@\n\013LCMsgAction\022\013\n\003"
-  "act\030\001 \001(\005\022\021\n\tbet_score\030\002 \001(\003\022\021\n\tbet_inde"
-  "x\030\003 \001(\003\"V\n\017LCMsgActionResp\022\013\n\003act\030\001 \001(\005\022"
-  "\020\n\010chair_id\030\002 \001(\005\022\021\n\tbet_score\030\003 \001(\003\022\021\n\t"
-  "bet_index\030\004 \001(\003\"Q\n\021LCMsgSendCardInfo\022\020\n\010"
-  "chair_id\030\001 \001(\005\022*\n\nhand_cards\030\002 \001(\0132\026.Luc"
-  "ky9.LCMsgHandCards\"=\n\021LCMsgSendCardResp\022"
-  "(\n\005infos\030\001 \003(\0132\031.Lucky9.LCMsgSendCardInf"
-  "o\"G\n\022LCMsgEndPlayerInfo\022\020\n\010chair_id\030\001 \001("
-  "\005\022\022\n\ngame_score\030\002 \001(\003\022\013\n\003tax\030\003 \001(\003\"h\n\017LC"
-  "MsgGameResult\022\023\n\013bisect_gold\030\001 \001(\003\022\023\n\013bi"
-  "sect_list\030\002 \003(\005\022+\n\007players\030\003 \003(\0132\032.Lucky"
-  "9.LCMsgEndPlayerInfo\"5\n\024LCMsgNotifyPlaye"
-  "rAct\022\020\n\010chair_id\030\001 \001(\005\022\013\n\003act\030\002 \001(\005*\235\001\n\017"
-  "ELCMsgGameState\022\020\n\014GS_LC9_READY\020\000\022\020\n\014GS_"
-  "LC9_START\020\001\022\016\n\nGS_LC9_BET\020\002\022\024\n\020GS_LC9_SE"
-  "ND_CARD\020\003\022\023\n\017GS_LC9_GET_CARD\020\004\022\030\n\024GS_LC9"
-  "_TWO_SEND_CARD\020\005\022\021\n\rGS_LC9_RESULT\020\006*>\n\021E"
-  "LCMsgPlayerState\022\014\n\010PS_READY\020\000\022\013\n\007PS_PLA"
-  "Y\020\001\022\016\n\nPS_TIMEOUT\020\002*)\n\016ELCMsgCardType\022\r\n"
-  "\tLC_SINGLE\020\000\022\010\n\004LC_9\020\001*G\n\020ELCMsgGameActi"
-  "on\022\r\n\tInvaldAct\020\000\022\n\n\006AddBet\020\001\022\013\n\007GetCard"
-  "\020\002\022\013\n\007NotCard\020\004*\323\003\n\017ELCMsgIDSubGame\022\025\n\021M"
-  "sgIDSubGame_Null\020\000\022\036\n\032MsgIDSubGame_GameS"
-  "tartResp\020\001\022!\n\035MsgIDSubGame_NotifyActionR"
-  "esp\020\002\022\027\n\023MsgIDSubGame_Action\020\003\022\033\n\027MsgIDS"
-  "ubGame_ActionResp\020\004\022\035\n\031MsgIDSubGame_Send"
-  "CardResp\020\005\022\037\n\033MsgIDSubGame_GameResultRes"
-  "p\020\t\022 \n\034MsgIDSubGame_NotifyStateResp\020\n\022\034\n"
-  "\030MsgIDSubGame_TimeOutResp\020\013\022\035\n\031MsgIDSubG"
-  "ame_TimeOutReady\020\014\022!\n\035MsgIDSubGame_TimeO"
-  "utReadyResp\020\r\022 \n\034MsgIDSubGame_TimeOutKic"
-  "kResp\020\016\022%\n!MsgIDSubGame_NotifyBankerGold"
-  "Resp\020\024\022%\n!MsgIDSubGame_NotifyBankerCardR"
-  "esp\020\025b\006proto3"
+  "\0132\026.Lucky9.LCMsgHandCards\"\374\001\n\016LCMsgScene"
+  "Info\022\022\n\ncell_score\030\001 \001(\003\022\022\n\nroom_score\030\002"
+  " \001(\003\022\023\n\013table_state\030\003 \001(\005\022\023\n\013table_ronud"
+  "\030\004 \001(\005\022\030\n\020total_enter_gold\030\005 \001(\003\022\020\n\010one_"
+  "card\030\006 \001(\005\022\027\n\017banker_chair_id\030\n \001(\005\022\020\n\010o"
+  "ut_time\030\013 \001(\005\022\022\n\ntotal_time\030\014 \001(\005\022-\n\014pla"
+  "yer_infos\030\017 \003(\0132\027.Lucky9.LCMsgPlayerInfo"
+  "\"\205\001\n\022LCMsgGameStartResp\022\030\n\020total_enter_g"
+  "old\030\002 \001(\005\022\026\n\016cur_enter_gold\030\003 \001(\005\022\027\n\017ban"
+  "ker_chair_id\030\004 \001(\005\022\020\n\010one_card\030\005 \001(\005\022\022\n\n"
+  "play_index\030\010 \003(\005\"\?\n\025LCMsgNotifyActionRes"
+  "p\022\023\n\013current_act\030\003 \001(\005\022\021\n\toper_time\030\004 \001("
+  "\005\"@\n\013LCMsgAction\022\013\n\003act\030\001 \001(\005\022\021\n\tbet_sco"
+  "re\030\002 \001(\003\022\021\n\tbet_index\030\003 \001(\003\"V\n\017LCMsgActi"
+  "onResp\022\013\n\003act\030\001 \001(\005\022\020\n\010chair_id\030\002 \001(\005\022\021\n"
+  "\tbet_score\030\003 \001(\003\022\021\n\tbet_index\030\004 \001(\003\"Q\n\021L"
+  "CMsgSendCardInfo\022\020\n\010chair_id\030\001 \001(\005\022*\n\nha"
+  "nd_cards\030\002 \001(\0132\026.Lucky9.LCMsgHandCards\"="
+  "\n\021LCMsgSendCardResp\022(\n\005infos\030\001 \003(\0132\031.Luc"
+  "ky9.LCMsgSendCardInfo\"G\n\022LCMsgEndPlayerI"
+  "nfo\022\020\n\010chair_id\030\001 \001(\005\022\022\n\ngame_score\030\002 \001("
+  "\003\022\013\n\003tax\030\003 \001(\003\"h\n\017LCMsgGameResult\022\023\n\013bis"
+  "ect_gold\030\001 \001(\003\022\023\n\013bisect_list\030\002 \003(\005\022+\n\007p"
+  "layers\030\003 \003(\0132\032.Lucky9.LCMsgEndPlayerInfo"
+  "\"5\n\024LCMsgNotifyPlayerAct\022\020\n\010chair_id\030\001 \001"
+  "(\005\022\013\n\003act\030\002 \001(\005*\235\001\n\017ELCMsgGameState\022\020\n\014G"
+  "S_LC9_READY\020\000\022\020\n\014GS_LC9_START\020\001\022\016\n\nGS_LC"
+  "9_BET\020\002\022\024\n\020GS_LC9_SEND_CARD\020\003\022\023\n\017GS_LC9_"
+  "GET_CARD\020\004\022\030\n\024GS_LC9_TWO_SEND_CARD\020\005\022\021\n\r"
+  "GS_LC9_RESULT\020\006*>\n\021ELCMsgPlayerState\022\014\n\010"
+  "PS_READY\020\000\022\013\n\007PS_PLAY\020\001\022\016\n\nPS_TIMEOUT\020\002*"
+  ")\n\016ELCMsgCardType\022\r\n\tLC_SINGLE\020\000\022\010\n\004LC_9"
+  "\020\001*G\n\020ELCMsgGameAction\022\r\n\tInvaldAct\020\000\022\n\n"
+  "\006AddBet\020\001\022\013\n\007GetCard\020\002\022\013\n\007NotCard\020\004*\323\003\n\017"
+  "ELCMsgIDSubGame\022\025\n\021MsgIDSubGame_Null\020\000\022\036"
+  "\n\032MsgIDSubGame_GameStartResp\020\001\022!\n\035MsgIDS"
+  "ubGame_NotifyActionResp\020\002\022\027\n\023MsgIDSubGam"
+  "e_Action\020\003\022\033\n\027MsgIDSubGame_ActionResp\020\004\022"
+  "\035\n\031MsgIDSubGame_SendCardResp\020\005\022\037\n\033MsgIDS"
+  "ubGame_GameResultResp\020\t\022 \n\034MsgIDSubGame_"
+  "NotifyStateResp\020\n\022\034\n\030MsgIDSubGame_TimeOu"
+  "tResp\020\013\022\035\n\031MsgIDSubGame_TimeOutReady\020\014\022!"
+  "\n\035MsgIDSubGame_TimeOutReadyResp\020\r\022 \n\034Msg"
+  "IDSubGame_TimeOutKickResp\020\016\022%\n!MsgIDSubG"
+  "ame_NotifyBankerGoldResp\020\024\022%\n!MsgIDSubGa"
+  "me_NotifyBankerCardResp\020\025b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Lucky9_2eproto_deps[1] = {
 };
@@ -472,7 +473,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Luc
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Lucky9_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Lucky9_2eproto = {
-  false, false, descriptor_table_protodef_Lucky9_2eproto, "Lucky9.proto", 2133,
+  false, false, descriptor_table_protodef_Lucky9_2eproto, "Lucky9.proto", 2153,
   &descriptor_table_Lucky9_2eproto_once, descriptor_table_Lucky9_2eproto_sccs, descriptor_table_Lucky9_2eproto_deps, 13, 0,
   schemas, file_default_instances, TableStruct_Lucky9_2eproto::offsets,
   file_level_metadata_Lucky9_2eproto, 13, file_level_enum_descriptors_Lucky9_2eproto, file_level_service_descriptors_Lucky9_2eproto,
@@ -1560,30 +1561,37 @@ const char* LCMsgSceneInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 table_state = 2;
+      // int64 room_score = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          room_score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 table_state = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           table_state_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 table_ronud = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+      // int32 table_ronud = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           table_ronud_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int64 total_enter_gold = 4;
-      case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+      // int64 total_enter_gold = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
           total_enter_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 one_card = 5;
-      case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+      // int32 one_card = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
           one_card_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
@@ -1655,28 +1663,34 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_cell_score(), target);
   }
 
-  // int32 table_state = 2;
+  // int64 room_score = 2;
+  if (this->room_score() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_room_score(), target);
+  }
+
+  // int32 table_state = 3;
   if (this->table_state() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_table_state(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_table_state(), target);
   }
 
-  // int32 table_ronud = 3;
+  // int32 table_ronud = 4;
   if (this->table_ronud() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_table_ronud(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_table_ronud(), target);
   }
 
-  // int64 total_enter_gold = 4;
+  // int64 total_enter_gold = 5;
   if (this->total_enter_gold() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_total_enter_gold(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_total_enter_gold(), target);
   }
 
-  // int32 one_card = 5;
+  // int32 one_card = 6;
   if (this->one_card() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_one_card(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_one_card(), target);
   }
 
   // int32 banker_chair_id = 10;
@@ -1735,28 +1749,35 @@ size_t LCMsgSceneInfo::ByteSizeLong() const {
         this->_internal_cell_score());
   }
 
-  // int32 table_state = 2;
+  // int64 room_score = 2;
+  if (this->room_score() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_room_score());
+  }
+
+  // int32 table_state = 3;
   if (this->table_state() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_table_state());
   }
 
-  // int32 table_ronud = 3;
+  // int32 table_ronud = 4;
   if (this->table_ronud() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_table_ronud());
   }
 
-  // int64 total_enter_gold = 4;
+  // int64 total_enter_gold = 5;
   if (this->total_enter_gold() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_total_enter_gold());
   }
 
-  // int32 one_card = 5;
+  // int32 one_card = 6;
   if (this->one_card() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
@@ -1818,6 +1839,9 @@ void LCMsgSceneInfo::MergeFrom(const LCMsgSceneInfo& from) {
   player_infos_.MergeFrom(from.player_infos_);
   if (from.cell_score() != 0) {
     _internal_set_cell_score(from._internal_cell_score());
+  }
+  if (from.room_score() != 0) {
+    _internal_set_room_score(from._internal_room_score());
   }
   if (from.table_state() != 0) {
     _internal_set_table_state(from._internal_table_state());

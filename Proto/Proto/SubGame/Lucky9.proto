@@ -90,10 +90,11 @@ message LCMsgPlayerInfo
 message LCMsgSceneInfo
 {
 	int64			  	cell_score		= 1;	//底分
-	int32				table_state		= 2;	//桌子状态
-	int32				table_ronud		= 3;	//桌子轮数
-	int64				total_enter_gold= 4;	//当前5轮内房费
-	int32				one_card		= 5;	//第一张牌
+	int64			  	room_score		= 2;	//房费
+	int32				table_state		= 3;	//桌子状态
+	int32				table_ronud		= 4;	//桌子轮数
+	int64				total_enter_gold= 5;	//当前5轮内房费
+	int32				one_card		= 6;	//第一张牌
 	
 	int32				banker_chair_id	= 10;	//庄家椅子号
 	int32				out_time		= 11;	//当前状态剩余超时时间

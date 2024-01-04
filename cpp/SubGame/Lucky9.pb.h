@@ -925,10 +925,11 @@ class LCMsgSceneInfo PROTOBUF_FINAL :
   enum : int {
     kPlayerInfosFieldNumber = 15,
     kCellScoreFieldNumber = 1,
-    kTableStateFieldNumber = 2,
-    kTableRonudFieldNumber = 3,
-    kTotalEnterGoldFieldNumber = 4,
-    kOneCardFieldNumber = 5,
+    kRoomScoreFieldNumber = 2,
+    kTableStateFieldNumber = 3,
+    kTableRonudFieldNumber = 4,
+    kTotalEnterGoldFieldNumber = 5,
+    kOneCardFieldNumber = 6,
     kBankerChairIdFieldNumber = 10,
     kOutTimeFieldNumber = 11,
     kTotalTimeFieldNumber = 12,
@@ -960,7 +961,16 @@ class LCMsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_cell_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int32 table_state = 2;
+  // int64 room_score = 2;
+  void clear_room_score();
+  ::PROTOBUF_NAMESPACE_ID::int64 room_score() const;
+  void set_room_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_room_score() const;
+  void _internal_set_room_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int32 table_state = 3;
   void clear_table_state();
   ::PROTOBUF_NAMESPACE_ID::int32 table_state() const;
   void set_table_state(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -969,7 +979,7 @@ class LCMsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_table_state(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 table_ronud = 3;
+  // int32 table_ronud = 4;
   void clear_table_ronud();
   ::PROTOBUF_NAMESPACE_ID::int32 table_ronud() const;
   void set_table_ronud(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -978,7 +988,7 @@ class LCMsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_table_ronud(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int64 total_enter_gold = 4;
+  // int64 total_enter_gold = 5;
   void clear_total_enter_gold();
   ::PROTOBUF_NAMESPACE_ID::int64 total_enter_gold() const;
   void set_total_enter_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
@@ -987,7 +997,7 @@ class LCMsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_total_enter_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int32 one_card = 5;
+  // int32 one_card = 6;
   void clear_one_card();
   ::PROTOBUF_NAMESPACE_ID::int32 one_card() const;
   void set_one_card(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -1032,6 +1042,7 @@ class LCMsgSceneInfo PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Lucky9::LCMsgPlayerInfo > player_infos_;
   ::PROTOBUF_NAMESPACE_ID::int64 cell_score_;
+  ::PROTOBUF_NAMESPACE_ID::int64 room_score_;
   ::PROTOBUF_NAMESPACE_ID::int32 table_state_;
   ::PROTOBUF_NAMESPACE_ID::int32 table_ronud_;
   ::PROTOBUF_NAMESPACE_ID::int64 total_enter_gold_;
@@ -2910,7 +2921,27 @@ inline void LCMsgSceneInfo::set_cell_score(::PROTOBUF_NAMESPACE_ID::int64 value)
   // @@protoc_insertion_point(field_set:Lucky9.LCMsgSceneInfo.cell_score)
 }
 
-// int32 table_state = 2;
+// int64 room_score = 2;
+inline void LCMsgSceneInfo::clear_room_score() {
+  room_score_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 LCMsgSceneInfo::_internal_room_score() const {
+  return room_score_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 LCMsgSceneInfo::room_score() const {
+  // @@protoc_insertion_point(field_get:Lucky9.LCMsgSceneInfo.room_score)
+  return _internal_room_score();
+}
+inline void LCMsgSceneInfo::_internal_set_room_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  room_score_ = value;
+}
+inline void LCMsgSceneInfo::set_room_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_room_score(value);
+  // @@protoc_insertion_point(field_set:Lucky9.LCMsgSceneInfo.room_score)
+}
+
+// int32 table_state = 3;
 inline void LCMsgSceneInfo::clear_table_state() {
   table_state_ = 0;
 }
@@ -2930,7 +2961,7 @@ inline void LCMsgSceneInfo::set_table_state(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:Lucky9.LCMsgSceneInfo.table_state)
 }
 
-// int32 table_ronud = 3;
+// int32 table_ronud = 4;
 inline void LCMsgSceneInfo::clear_table_ronud() {
   table_ronud_ = 0;
 }
@@ -2950,7 +2981,7 @@ inline void LCMsgSceneInfo::set_table_ronud(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:Lucky9.LCMsgSceneInfo.table_ronud)
 }
 
-// int64 total_enter_gold = 4;
+// int64 total_enter_gold = 5;
 inline void LCMsgSceneInfo::clear_total_enter_gold() {
   total_enter_gold_ = PROTOBUF_LONGLONG(0);
 }
@@ -2970,7 +3001,7 @@ inline void LCMsgSceneInfo::set_total_enter_gold(::PROTOBUF_NAMESPACE_ID::int64 
   // @@protoc_insertion_point(field_set:Lucky9.LCMsgSceneInfo.total_enter_gold)
 }
 
-// int32 one_card = 5;
+// int32 one_card = 6;
 inline void LCMsgSceneInfo::clear_one_card() {
   one_card_ = 0;
 }
