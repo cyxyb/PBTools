@@ -166,20 +166,21 @@ public static partial class LoginReflection {
           "Z0ludml0ZVVzZXJJbmZvInkKHU1zZ1F1ZXJ5Q2VsZWJyaXR5R29sZENvaW5S",
           "ZXNwEg4KBmF2YXRhchgBIAEoCRIUCgxhdmF0YXJfZnJhbWUYAiABKAUSEAoI",
           "bmlja25hbWUYAyABKAkSEQoJZ29sZF9jb2luGAQgASgDEg0KBXN0YXRlGAUg",
-          "ASgIIoYBCh9Nc2dJbmZpbml0ZUFnZW50UXVlcnlNeUluZm9SZXNwEhMKC2Fn",
+          "ASgIIpsBCh9Nc2dJbmZpbml0ZUFnZW50UXVlcnlNeUluZm9SZXNwEhMKC2Fn",
           "ZW50X2xldmVsGAEgASgFEhMKC2FnZW50X3JhdGlvGAIgASgFEg8KB2JpbmRf",
           "aWQYAyABKAUSEgoKY3VyX3JlYmF0ZRgEIAEoAxIUCgx0b3RhbF9yZWJhdGUY",
-          "BSABKAMiVgocTXNnSW5maW5pdGVBZ2VudFF1ZXJ5U3ViSW5mbxIPCgd1c2Vy",
-          "X2lkGAEgASgFEhQKDGN1cnJlbnRfcGFnZRgCIAEoBRIPCgdtYXhfcm93GAMg",
-          "ASgFIn0KGUluZmluaXRlQWdlbnRRdWVyeVN1YkluZm8SDwoHdXNlcl9pZBgB",
-          "IAEoBRIUCgxzdWJvcmRpbmF0ZXMYAiABKAUSEQoJdG90YWxfdGF4GAMgASgD",
-          "EhEKCXRvZGF5X3RheBgEIAEoAxITCgthZ2VudF9yYXRpbxgFIAEoBSJzCiBN",
-          "c2dJbmZpbml0ZUFnZW50UXVlcnlTdWJJbmZvUmVzcBITCgthZ2VudF9jb3Vu",
-          "dBgBIAEoBRIQCghlbmRfbGlzdBgCIAEoCBIoCgRpbmZvGAMgAygLMhouSW5m",
-          "aW5pdGVBZ2VudFF1ZXJ5U3ViSW5mbyI2Cg5Nc2dTZXRTdWJBZ2VudBIPCgd1",
-          "c2VyX2lkGAEgASgFEhMKC2FnZW50X3JhdGlvGAIgASgFIj0KGU1zZ1JlY3Zp",
-          "dmVBZ2VudFJlYmF0ZVJlc3ASDAoEY29kZRgBIAEoBRISCgpjdXJfcmViYXRl",
-          "GAIgASgDYgZwcm90bzM="));
+          "BSABKAMSEwoLZ2FtZV9yZWJhdGUYBiABKAMiVgocTXNnSW5maW5pdGVBZ2Vu",
+          "dFF1ZXJ5U3ViSW5mbxIPCgd1c2VyX2lkGAEgASgFEhQKDGN1cnJlbnRfcGFn",
+          "ZRgCIAEoBRIPCgdtYXhfcm93GAMgASgFIpIBChlJbmZpbml0ZUFnZW50UXVl",
+          "cnlTdWJJbmZvEg8KB3VzZXJfaWQYASABKAUSFAoMc3Vib3JkaW5hdGVzGAIg",
+          "ASgFEhEKCXRvdGFsX3RheBgDIAEoAxIRCgl0b2RheV90YXgYBCABKAMSEwoL",
+          "dG9kYXlfcmF0aW8YBSABKAMSEwoLYWdlbnRfcmF0aW8YBiABKAUicwogTXNn",
+          "SW5maW5pdGVBZ2VudFF1ZXJ5U3ViSW5mb1Jlc3ASEwoLYWdlbnRfY291bnQY",
+          "ASABKAUSEAoIZW5kX2xpc3QYAiABKAgSKAoEaW5mbxgDIAMoCzIaLkluZmlu",
+          "aXRlQWdlbnRRdWVyeVN1YkluZm8iNgoOTXNnU2V0U3ViQWdlbnQSDwoHdXNl",
+          "cl9pZBgBIAEoBRITCgthZ2VudF9yYXRpbxgCIAEoBSI9ChlNc2dSZWN2aXZl",
+          "QWdlbnRSZWJhdGVSZXNwEgwKBGNvZGUYASABKAUSEgoKY3VyX3JlYmF0ZRgC",
+          "IAEoA2IGcHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -242,9 +243,9 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgInviteUserInfo), global::MsgInviteUserInfo.Parser, new[]{ "VipLevel", "InviteTime", "BeautifulId", "Nickname" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgInviteUserResp), global::MsgInviteUserResp.Parser, new[]{ "Info" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgQueryCelebrityGoldCoinResp), global::MsgQueryCelebrityGoldCoinResp.Parser, new[]{ "Avatar", "AvatarFrame", "Nickname", "GoldCoin", "State" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgInfiniteAgentQueryMyInfoResp), global::MsgInfiniteAgentQueryMyInfoResp.Parser, new[]{ "AgentLevel", "AgentRatio", "BindId", "CurRebate", "TotalRebate" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgInfiniteAgentQueryMyInfoResp), global::MsgInfiniteAgentQueryMyInfoResp.Parser, new[]{ "AgentLevel", "AgentRatio", "BindId", "CurRebate", "TotalRebate", "GameRebate" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgInfiniteAgentQuerySubInfo), global::MsgInfiniteAgentQuerySubInfo.Parser, new[]{ "UserId", "CurrentPage", "MaxRow" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::InfiniteAgentQuerySubInfo), global::InfiniteAgentQuerySubInfo.Parser, new[]{ "UserId", "Subordinates", "TotalTax", "TodayTax", "AgentRatio" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::InfiniteAgentQuerySubInfo), global::InfiniteAgentQuerySubInfo.Parser, new[]{ "UserId", "Subordinates", "TotalTax", "TodayTax", "TodayRatio", "AgentRatio" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgInfiniteAgentQuerySubInfoResp), global::MsgInfiniteAgentQuerySubInfoResp.Parser, new[]{ "AgentCount", "EndList", "Info" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgSetSubAgent), global::MsgSetSubAgent.Parser, new[]{ "UserId", "AgentRatio" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgRecviveAgentRebateResp), global::MsgRecviveAgentRebateResp.Parser, new[]{ "Code", "CurRebate" }, null, null, null, null)
@@ -18329,6 +18330,7 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
     bindId_ = other.bindId_;
     curRebate_ = other.curRebate_;
     totalRebate_ = other.totalRebate_;
+    gameRebate_ = other.gameRebate_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -18407,6 +18409,20 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
     }
   }
 
+  /// <summary>Field number for the "game_rebate" field.</summary>
+  public const int GameRebateFieldNumber = 6;
+  private long gameRebate_;
+  /// <summary>
+  ///游戏返利
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public long GameRebate {
+    get { return gameRebate_; }
+    set {
+      gameRebate_ = value;
+    }
+  }
+
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as MsgInfiniteAgentQueryMyInfoResp);
@@ -18425,6 +18441,7 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
     if (BindId != other.BindId) return false;
     if (CurRebate != other.CurRebate) return false;
     if (TotalRebate != other.TotalRebate) return false;
+    if (GameRebate != other.GameRebate) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -18436,6 +18453,7 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
     if (BindId != 0) hash ^= BindId.GetHashCode();
     if (CurRebate != 0L) hash ^= CurRebate.GetHashCode();
     if (TotalRebate != 0L) hash ^= TotalRebate.GetHashCode();
+    if (GameRebate != 0L) hash ^= GameRebate.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -18472,6 +18490,10 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
       output.WriteRawTag(40);
       output.WriteInt64(TotalRebate);
     }
+    if (GameRebate != 0L) {
+      output.WriteRawTag(48);
+      output.WriteInt64(GameRebate);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -18501,6 +18523,10 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
       output.WriteRawTag(40);
       output.WriteInt64(TotalRebate);
     }
+    if (GameRebate != 0L) {
+      output.WriteRawTag(48);
+      output.WriteInt64(GameRebate);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -18524,6 +18550,9 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
     }
     if (TotalRebate != 0L) {
       size += 1 + pb::CodedOutputStream.ComputeInt64Size(TotalRebate);
+    }
+    if (GameRebate != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(GameRebate);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -18550,6 +18579,9 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
     }
     if (other.TotalRebate != 0L) {
       TotalRebate = other.TotalRebate;
+    }
+    if (other.GameRebate != 0L) {
+      GameRebate = other.GameRebate;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -18585,6 +18617,10 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
           TotalRebate = input.ReadInt64();
           break;
         }
+        case 48: {
+          GameRebate = input.ReadInt64();
+          break;
+        }
       }
     }
   #endif
@@ -18617,6 +18653,10 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
         }
         case 40: {
           TotalRebate = input.ReadInt64();
+          break;
+        }
+        case 48: {
+          GameRebate = input.ReadInt64();
           break;
         }
       }
@@ -18687,7 +18727,7 @@ public sealed partial class MsgInfiniteAgentQuerySubInfo : pb::IMessage<MsgInfin
   public const int CurrentPageFieldNumber = 2;
   private int currentPage_;
   /// <summary>
-  ///当前页
+  ///当前页1开始
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int CurrentPage {
@@ -18918,6 +18958,7 @@ public sealed partial class InfiniteAgentQuerySubInfo : pb::IMessage<InfiniteAge
     subordinates_ = other.subordinates_;
     totalTax_ = other.totalTax_;
     todayTax_ = other.todayTax_;
+    todayRatio_ = other.todayRatio_;
     agentRatio_ = other.agentRatio_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
@@ -18983,8 +19024,22 @@ public sealed partial class InfiniteAgentQuerySubInfo : pb::IMessage<InfiniteAge
     }
   }
 
+  /// <summary>Field number for the "today_ratio" field.</summary>
+  public const int TodayRatioFieldNumber = 5;
+  private long todayRatio_;
+  /// <summary>
+  ///今日返利
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public long TodayRatio {
+    get { return todayRatio_; }
+    set {
+      todayRatio_ = value;
+    }
+  }
+
   /// <summary>Field number for the "agent_ratio" field.</summary>
-  public const int AgentRatioFieldNumber = 5;
+  public const int AgentRatioFieldNumber = 6;
   private int agentRatio_;
   /// <summary>
   ///分成比例
@@ -19014,6 +19069,7 @@ public sealed partial class InfiniteAgentQuerySubInfo : pb::IMessage<InfiniteAge
     if (Subordinates != other.Subordinates) return false;
     if (TotalTax != other.TotalTax) return false;
     if (TodayTax != other.TodayTax) return false;
+    if (TodayRatio != other.TodayRatio) return false;
     if (AgentRatio != other.AgentRatio) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
@@ -19025,6 +19081,7 @@ public sealed partial class InfiniteAgentQuerySubInfo : pb::IMessage<InfiniteAge
     if (Subordinates != 0) hash ^= Subordinates.GetHashCode();
     if (TotalTax != 0L) hash ^= TotalTax.GetHashCode();
     if (TodayTax != 0L) hash ^= TodayTax.GetHashCode();
+    if (TodayRatio != 0L) hash ^= TodayRatio.GetHashCode();
     if (AgentRatio != 0) hash ^= AgentRatio.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
@@ -19058,8 +19115,12 @@ public sealed partial class InfiniteAgentQuerySubInfo : pb::IMessage<InfiniteAge
       output.WriteRawTag(32);
       output.WriteInt64(TodayTax);
     }
-    if (AgentRatio != 0) {
+    if (TodayRatio != 0L) {
       output.WriteRawTag(40);
+      output.WriteInt64(TodayRatio);
+    }
+    if (AgentRatio != 0) {
+      output.WriteRawTag(48);
       output.WriteInt32(AgentRatio);
     }
     if (_unknownFields != null) {
@@ -19087,8 +19148,12 @@ public sealed partial class InfiniteAgentQuerySubInfo : pb::IMessage<InfiniteAge
       output.WriteRawTag(32);
       output.WriteInt64(TodayTax);
     }
-    if (AgentRatio != 0) {
+    if (TodayRatio != 0L) {
       output.WriteRawTag(40);
+      output.WriteInt64(TodayRatio);
+    }
+    if (AgentRatio != 0) {
+      output.WriteRawTag(48);
       output.WriteInt32(AgentRatio);
     }
     if (_unknownFields != null) {
@@ -19111,6 +19176,9 @@ public sealed partial class InfiniteAgentQuerySubInfo : pb::IMessage<InfiniteAge
     }
     if (TodayTax != 0L) {
       size += 1 + pb::CodedOutputStream.ComputeInt64Size(TodayTax);
+    }
+    if (TodayRatio != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(TodayRatio);
     }
     if (AgentRatio != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(AgentRatio);
@@ -19137,6 +19205,9 @@ public sealed partial class InfiniteAgentQuerySubInfo : pb::IMessage<InfiniteAge
     }
     if (other.TodayTax != 0L) {
       TodayTax = other.TodayTax;
+    }
+    if (other.TodayRatio != 0L) {
+      TodayRatio = other.TodayRatio;
     }
     if (other.AgentRatio != 0) {
       AgentRatio = other.AgentRatio;
@@ -19172,6 +19243,10 @@ public sealed partial class InfiniteAgentQuerySubInfo : pb::IMessage<InfiniteAge
           break;
         }
         case 40: {
+          TodayRatio = input.ReadInt64();
+          break;
+        }
+        case 48: {
           AgentRatio = input.ReadInt32();
           break;
         }
@@ -19206,6 +19281,10 @@ public sealed partial class InfiniteAgentQuerySubInfo : pb::IMessage<InfiniteAge
           break;
         }
         case 40: {
+          TodayRatio = input.ReadInt64();
+          break;
+        }
+        case 48: {
           AgentRatio = input.ReadInt32();
           break;
         }

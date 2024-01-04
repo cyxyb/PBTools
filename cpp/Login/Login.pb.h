@@ -11279,6 +11279,7 @@ class MsgInfiniteAgentQueryMyInfoResp PROTOBUF_FINAL :
     kAgentRatioFieldNumber = 2,
     kCurRebateFieldNumber = 4,
     kTotalRebateFieldNumber = 5,
+    kGameRebateFieldNumber = 6,
     kBindIdFieldNumber = 3,
   };
   // int32 agent_level = 1;
@@ -11317,6 +11318,15 @@ class MsgInfiniteAgentQueryMyInfoResp PROTOBUF_FINAL :
   void _internal_set_total_rebate(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
+  // int64 game_rebate = 6;
+  void clear_game_rebate();
+  ::PROTOBUF_NAMESPACE_ID::int64 game_rebate() const;
+  void set_game_rebate(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_game_rebate() const;
+  void _internal_set_game_rebate(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
   // int32 bind_id = 3;
   void clear_bind_id();
   ::PROTOBUF_NAMESPACE_ID::int32 bind_id() const;
@@ -11337,6 +11347,7 @@ class MsgInfiniteAgentQueryMyInfoResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 agent_ratio_;
   ::PROTOBUF_NAMESPACE_ID::int64 cur_rebate_;
   ::PROTOBUF_NAMESPACE_ID::int64 total_rebate_;
+  ::PROTOBUF_NAMESPACE_ID::int64 game_rebate_;
   ::PROTOBUF_NAMESPACE_ID::int32 bind_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
@@ -11617,7 +11628,8 @@ class InfiniteAgentQuerySubInfo PROTOBUF_FINAL :
     kSubordinatesFieldNumber = 2,
     kTotalTaxFieldNumber = 3,
     kTodayTaxFieldNumber = 4,
-    kAgentRatioFieldNumber = 5,
+    kTodayRatioFieldNumber = 5,
+    kAgentRatioFieldNumber = 6,
   };
   // int32 user_id = 1;
   void clear_user_id();
@@ -11655,7 +11667,16 @@ class InfiniteAgentQuerySubInfo PROTOBUF_FINAL :
   void _internal_set_today_tax(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int32 agent_ratio = 5;
+  // int64 today_ratio = 5;
+  void clear_today_ratio();
+  ::PROTOBUF_NAMESPACE_ID::int64 today_ratio() const;
+  void set_today_ratio(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_today_ratio() const;
+  void _internal_set_today_ratio(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int32 agent_ratio = 6;
   void clear_agent_ratio();
   ::PROTOBUF_NAMESPACE_ID::int32 agent_ratio() const;
   void set_agent_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -11675,6 +11696,7 @@ class InfiniteAgentQuerySubInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 subordinates_;
   ::PROTOBUF_NAMESPACE_ID::int64 total_tax_;
   ::PROTOBUF_NAMESPACE_ID::int64 today_tax_;
+  ::PROTOBUF_NAMESPACE_ID::int64 today_ratio_;
   ::PROTOBUF_NAMESPACE_ID::int32 agent_ratio_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
@@ -20542,6 +20564,26 @@ inline void MsgInfiniteAgentQueryMyInfoResp::set_total_rebate(::PROTOBUF_NAMESPA
   // @@protoc_insertion_point(field_set:MsgInfiniteAgentQueryMyInfoResp.total_rebate)
 }
 
+// int64 game_rebate = 6;
+inline void MsgInfiniteAgentQueryMyInfoResp::clear_game_rebate() {
+  game_rebate_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgInfiniteAgentQueryMyInfoResp::_internal_game_rebate() const {
+  return game_rebate_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgInfiniteAgentQueryMyInfoResp::game_rebate() const {
+  // @@protoc_insertion_point(field_get:MsgInfiniteAgentQueryMyInfoResp.game_rebate)
+  return _internal_game_rebate();
+}
+inline void MsgInfiniteAgentQueryMyInfoResp::_internal_set_game_rebate(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  game_rebate_ = value;
+}
+inline void MsgInfiniteAgentQueryMyInfoResp::set_game_rebate(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_game_rebate(value);
+  // @@protoc_insertion_point(field_set:MsgInfiniteAgentQueryMyInfoResp.game_rebate)
+}
+
 // -------------------------------------------------------------------
 
 // MsgInfiniteAgentQuerySubInfo
@@ -20690,7 +20732,27 @@ inline void InfiniteAgentQuerySubInfo::set_today_tax(::PROTOBUF_NAMESPACE_ID::in
   // @@protoc_insertion_point(field_set:InfiniteAgentQuerySubInfo.today_tax)
 }
 
-// int32 agent_ratio = 5;
+// int64 today_ratio = 5;
+inline void InfiniteAgentQuerySubInfo::clear_today_ratio() {
+  today_ratio_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 InfiniteAgentQuerySubInfo::_internal_today_ratio() const {
+  return today_ratio_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 InfiniteAgentQuerySubInfo::today_ratio() const {
+  // @@protoc_insertion_point(field_get:InfiniteAgentQuerySubInfo.today_ratio)
+  return _internal_today_ratio();
+}
+inline void InfiniteAgentQuerySubInfo::_internal_set_today_ratio(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  today_ratio_ = value;
+}
+inline void InfiniteAgentQuerySubInfo::set_today_ratio(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_today_ratio(value);
+  // @@protoc_insertion_point(field_set:InfiniteAgentQuerySubInfo.today_ratio)
+}
+
+// int32 agent_ratio = 6;
 inline void InfiniteAgentQuerySubInfo::clear_agent_ratio() {
   agent_ratio_ = 0;
 }

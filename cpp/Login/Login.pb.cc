@@ -1724,6 +1724,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::MsgInfiniteAgentQueryMyInfoResp, bind_id_),
   PROTOBUF_FIELD_OFFSET(::MsgInfiniteAgentQueryMyInfoResp, cur_rebate_),
   PROTOBUF_FIELD_OFFSET(::MsgInfiniteAgentQueryMyInfoResp, total_rebate_),
+  PROTOBUF_FIELD_OFFSET(::MsgInfiniteAgentQueryMyInfoResp, game_rebate_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgInfiniteAgentQuerySubInfo, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1741,6 +1742,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::InfiniteAgentQuerySubInfo, subordinates_),
   PROTOBUF_FIELD_OFFSET(::InfiniteAgentQuerySubInfo, total_tax_),
   PROTOBUF_FIELD_OFFSET(::InfiniteAgentQuerySubInfo, today_tax_),
+  PROTOBUF_FIELD_OFFSET(::InfiniteAgentQuerySubInfo, today_ratio_),
   PROTOBUF_FIELD_OFFSET(::InfiniteAgentQuerySubInfo, agent_ratio_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgInfiniteAgentQuerySubInfoResp, _internal_metadata_),
@@ -1826,11 +1828,11 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 538, -1, sizeof(::MsgInviteUserResp)},
   { 544, -1, sizeof(::MsgQueryCelebrityGoldCoinResp)},
   { 554, -1, sizeof(::MsgInfiniteAgentQueryMyInfoResp)},
-  { 564, -1, sizeof(::MsgInfiniteAgentQuerySubInfo)},
-  { 572, -1, sizeof(::InfiniteAgentQuerySubInfo)},
-  { 582, -1, sizeof(::MsgInfiniteAgentQuerySubInfoResp)},
-  { 590, -1, sizeof(::MsgSetSubAgent)},
-  { 597, -1, sizeof(::MsgRecviveAgentRebateResp)},
+  { 565, -1, sizeof(::MsgInfiniteAgentQuerySubInfo)},
+  { 573, -1, sizeof(::InfiniteAgentQuerySubInfo)},
+  { 584, -1, sizeof(::MsgInfiniteAgentQuerySubInfoResp)},
+  { 592, -1, sizeof(::MsgSetSubAgent)},
+  { 599, -1, sizeof(::MsgRecviveAgentRebateResp)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -2063,22 +2065,23 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "fo\030\001 \003(\0132\022.MsgInviteUserInfo\"y\n\035MsgQuery"
   "CelebrityGoldCoinResp\022\016\n\006avatar\030\001 \001(\t\022\024\n"
   "\014avatar_frame\030\002 \001(\005\022\020\n\010nickname\030\003 \001(\t\022\021\n"
-  "\tgold_coin\030\004 \001(\003\022\r\n\005state\030\005 \001(\010\"\206\001\n\037MsgI"
+  "\tgold_coin\030\004 \001(\003\022\r\n\005state\030\005 \001(\010\"\233\001\n\037MsgI"
   "nfiniteAgentQueryMyInfoResp\022\023\n\013agent_lev"
   "el\030\001 \001(\005\022\023\n\013agent_ratio\030\002 \001(\005\022\017\n\007bind_id"
   "\030\003 \001(\005\022\022\n\ncur_rebate\030\004 \001(\003\022\024\n\014total_reba"
-  "te\030\005 \001(\003\"V\n\034MsgInfiniteAgentQuerySubInfo"
-  "\022\017\n\007user_id\030\001 \001(\005\022\024\n\014current_page\030\002 \001(\005\022"
-  "\017\n\007max_row\030\003 \001(\005\"}\n\031InfiniteAgentQuerySu"
-  "bInfo\022\017\n\007user_id\030\001 \001(\005\022\024\n\014subordinates\030\002"
-  " \001(\005\022\021\n\ttotal_tax\030\003 \001(\003\022\021\n\ttoday_tax\030\004 \001"
-  "(\003\022\023\n\013agent_ratio\030\005 \001(\005\"s\n MsgInfiniteAg"
-  "entQuerySubInfoResp\022\023\n\013agent_count\030\001 \001(\005"
-  "\022\020\n\010end_list\030\002 \001(\010\022(\n\004info\030\003 \003(\0132\032.Infin"
-  "iteAgentQuerySubInfo\"6\n\016MsgSetSubAgent\022\017"
-  "\n\007user_id\030\001 \001(\005\022\023\n\013agent_ratio\030\002 \001(\005\"=\n\031"
-  "MsgRecviveAgentRebateResp\022\014\n\004code\030\001 \001(\005\022"
-  "\022\n\ncur_rebate\030\002 \001(\003b\006proto3"
+  "te\030\005 \001(\003\022\023\n\013game_rebate\030\006 \001(\003\"V\n\034MsgInfi"
+  "niteAgentQuerySubInfo\022\017\n\007user_id\030\001 \001(\005\022\024"
+  "\n\014current_page\030\002 \001(\005\022\017\n\007max_row\030\003 \001(\005\"\222\001"
+  "\n\031InfiniteAgentQuerySubInfo\022\017\n\007user_id\030\001"
+  " \001(\005\022\024\n\014subordinates\030\002 \001(\005\022\021\n\ttotal_tax\030"
+  "\003 \001(\003\022\021\n\ttoday_tax\030\004 \001(\003\022\023\n\013today_ratio\030"
+  "\005 \001(\003\022\023\n\013agent_ratio\030\006 \001(\005\"s\n MsgInfinit"
+  "eAgentQuerySubInfoResp\022\023\n\013agent_count\030\001 "
+  "\001(\005\022\020\n\010end_list\030\002 \001(\010\022(\n\004info\030\003 \003(\0132\032.In"
+  "finiteAgentQuerySubInfo\"6\n\016MsgSetSubAgen"
+  "t\022\017\n\007user_id\030\001 \001(\005\022\023\n\013agent_ratio\030\002 \001(\005\""
+  "=\n\031MsgRecviveAgentRebateResp\022\014\n\004code\030\001 \001"
+  "(\005\022\022\n\ncur_rebate\030\002 \001(\003b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Login_2eproto_deps[1] = {
 };
@@ -2151,7 +2154,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Login_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Login_2eproto = {
-  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 7067,
+  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 7110,
   &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 65, 0,
   schemas, file_default_instances, TableStruct_Login_2eproto::offsets,
   file_level_metadata_Login_2eproto, 65, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
@@ -19856,6 +19859,13 @@ const char* MsgInfiniteAgentQueryMyInfoResp::_InternalParse(const char* ptr, ::P
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
+      // int64 game_rebate = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+          game_rebate_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
@@ -19914,6 +19924,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_total_rebate(), target);
   }
 
+  // int64 game_rebate = 6;
+  if (this->game_rebate() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(6, this->_internal_game_rebate(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -19956,6 +19972,13 @@ size_t MsgInfiniteAgentQueryMyInfoResp::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_total_rebate());
+  }
+
+  // int64 game_rebate = 6;
+  if (this->game_rebate() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_game_rebate());
   }
 
   // int32 bind_id = 3;
@@ -20007,6 +20030,9 @@ void MsgInfiniteAgentQueryMyInfoResp::MergeFrom(const MsgInfiniteAgentQueryMyInf
   }
   if (from.total_rebate() != 0) {
     _internal_set_total_rebate(from._internal_total_rebate());
+  }
+  if (from.game_rebate() != 0) {
+    _internal_set_game_rebate(from._internal_game_rebate());
   }
   if (from.bind_id() != 0) {
     _internal_set_bind_id(from._internal_bind_id());
@@ -20399,9 +20425,16 @@ const char* InfiniteAgentQuerySubInfo::_InternalParse(const char* ptr, ::PROTOBU
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 agent_ratio = 5;
+      // int64 today_ratio = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          today_ratio_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 agent_ratio = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
           agent_ratio_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
@@ -20458,10 +20491,16 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_today_tax(), target);
   }
 
-  // int32 agent_ratio = 5;
+  // int64 today_ratio = 5;
+  if (this->today_ratio() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_today_ratio(), target);
+  }
+
+  // int32 agent_ratio = 6;
   if (this->agent_ratio() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_agent_ratio(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_agent_ratio(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -20508,7 +20547,14 @@ size_t InfiniteAgentQuerySubInfo::ByteSizeLong() const {
         this->_internal_today_tax());
   }
 
-  // int32 agent_ratio = 5;
+  // int64 today_ratio = 5;
+  if (this->today_ratio() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_today_ratio());
+  }
+
+  // int32 agent_ratio = 6;
   if (this->agent_ratio() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
@@ -20557,6 +20603,9 @@ void InfiniteAgentQuerySubInfo::MergeFrom(const InfiniteAgentQuerySubInfo& from)
   }
   if (from.today_tax() != 0) {
     _internal_set_today_tax(from._internal_today_tax());
+  }
+  if (from.today_ratio() != 0) {
+    _internal_set_today_ratio(from._internal_today_ratio());
   }
   if (from.agent_ratio() != 0) {
     _internal_set_agent_ratio(from._internal_agent_ratio());
