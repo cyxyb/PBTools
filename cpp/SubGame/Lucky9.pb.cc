@@ -439,7 +439,7 @@ const char descriptor_table_protodef_Lucky9_2eproto[] PROTOBUF_SECTION_VARIABLE(
   "Y\020\001\022\016\n\nPS_TIMEOUT\020\002*)\n\016ELCMsgCardType\022\r\n"
   "\tLC_SINGLE\020\000\022\010\n\004LC_9\020\001*G\n\020ELCMsgGameActi"
   "on\022\r\n\tInvaldAct\020\000\022\n\n\006AddBet\020\001\022\013\n\007GetCard"
-  "\020\002\022\013\n\007NotCard\020\004*\230\004\n\017ELCMsgIDSubGame\022\025\n\021M"
+  "\020\002\022\013\n\007NotCard\020\004*\323\003\n\017ELCMsgIDSubGame\022\025\n\021M"
   "sgIDSubGame_Null\020\000\022\036\n\032MsgIDSubGame_GameS"
   "tartResp\020\001\022!\n\035MsgIDSubGame_NotifyActionR"
   "esp\020\002\022\027\n\023MsgIDSubGame_Action\020\003\022\033\n\027MsgIDS"
@@ -449,11 +449,9 @@ const char descriptor_table_protodef_Lucky9_2eproto[] PROTOBUF_SECTION_VARIABLE(
   "\030MsgIDSubGame_TimeOutResp\020\013\022\035\n\031MsgIDSubG"
   "ame_TimeOutReady\020\014\022!\n\035MsgIDSubGame_TimeO"
   "utReadyResp\020\r\022 \n\034MsgIDSubGame_TimeOutKic"
-  "kResp\020\016\022&\n\"MsgIDSubGame_NotifySystemChea"
-  "tResp\020\024\022#\n\037MsgIDSubGame_NotifyCardTypeRe"
-  "sp\020\025\022 \n\034MsgIDSubGame_NotifyIsMaxResp\020\026\022\""
-  "\n\036MsgIDSubGame_NotifyLastActResp\020\027b\006prot"
-  "o3"
+  "kResp\020\016\022%\n!MsgIDSubGame_NotifyBankerGold"
+  "Resp\020\024\022%\n!MsgIDSubGame_NotifyBankerCardR"
+  "esp\020\025b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Lucky9_2eproto_deps[1] = {
 };
@@ -474,7 +472,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Luc
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Lucky9_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Lucky9_2eproto = {
-  false, false, descriptor_table_protodef_Lucky9_2eproto, "Lucky9.proto", 2202,
+  false, false, descriptor_table_protodef_Lucky9_2eproto, "Lucky9.proto", 2133,
   &descriptor_table_Lucky9_2eproto_once, descriptor_table_Lucky9_2eproto_sccs, descriptor_table_Lucky9_2eproto_deps, 13, 0,
   schemas, file_default_instances, TableStruct_Lucky9_2eproto::offsets,
   file_level_metadata_Lucky9_2eproto, 13, file_level_enum_descriptors_Lucky9_2eproto, file_level_service_descriptors_Lucky9_2eproto,
@@ -567,8 +565,6 @@ bool ELCMsgIDSubGame_IsValid(int value) {
     case 14:
     case 20:
     case 21:
-    case 22:
-    case 23:
       return true;
     default:
       return false;

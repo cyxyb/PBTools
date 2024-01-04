@@ -55,10 +55,8 @@ enum ELCMsgIDSubGame
 	MsgIDSubGame_TimeOutKickResp		= 14;	//超时踢了游戏(MsgCommonBool)
 
 	/////////////////////////机器人消息///////////////////////
-	MsgIDSubGame_NotifySystemCheatResp	= 20;	//通知系统作弊率
-	MsgIDSubGame_NotifyCardTypeResp		= 21;	//通知牌型
-	MsgIDSubGame_NotifyIsMaxResp		= 22;	//通知是否最大
-	MsgIDSubGame_NotifyLastActResp		= 23;	//通知玩家行为
+	MsgIDSubGame_NotifyBankerGoldResp	= 20;	//通知庄家金币
+	MsgIDSubGame_NotifyBankerCardResp	= 21;	//通知庄家牌信息
 }
 
 message LCMsgTableState

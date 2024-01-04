@@ -233,16 +233,14 @@ enum ELCMsgIDSubGame : int {
   MsgIDSubGame_TimeOutReady = 12,
   MsgIDSubGame_TimeOutReadyResp = 13,
   MsgIDSubGame_TimeOutKickResp = 14,
-  MsgIDSubGame_NotifySystemCheatResp = 20,
-  MsgIDSubGame_NotifyCardTypeResp = 21,
-  MsgIDSubGame_NotifyIsMaxResp = 22,
-  MsgIDSubGame_NotifyLastActResp = 23,
+  MsgIDSubGame_NotifyBankerGoldResp = 20,
+  MsgIDSubGame_NotifyBankerCardResp = 21,
   ELCMsgIDSubGame_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   ELCMsgIDSubGame_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool ELCMsgIDSubGame_IsValid(int value);
 constexpr ELCMsgIDSubGame ELCMsgIDSubGame_MIN = MsgIDSubGame_Null;
-constexpr ELCMsgIDSubGame ELCMsgIDSubGame_MAX = MsgIDSubGame_NotifyLastActResp;
+constexpr ELCMsgIDSubGame ELCMsgIDSubGame_MAX = MsgIDSubGame_NotifyBankerCardResp;
 constexpr int ELCMsgIDSubGame_ARRAYSIZE = ELCMsgIDSubGame_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ELCMsgIDSubGame_descriptor();

@@ -61,7 +61,7 @@ namespace Lucky9 {
             "X1BMQVkQARIOCgpQU19USU1FT1VUEAIqKQoORUxDTXNnQ2FyZFR5cGUSDQoJ",
             "TENfU0lOR0xFEAASCAoETENfORABKkcKEEVMQ01zZ0dhbWVBY3Rpb24SDQoJ",
             "SW52YWxkQWN0EAASCgoGQWRkQmV0EAESCwoHR2V0Q2FyZBACEgsKB05vdENh",
-            "cmQQBCqYBAoPRUxDTXNnSURTdWJHYW1lEhUKEU1zZ0lEU3ViR2FtZV9OdWxs",
+            "cmQQBCrTAwoPRUxDTXNnSURTdWJHYW1lEhUKEU1zZ0lEU3ViR2FtZV9OdWxs",
             "EAASHgoaTXNnSURTdWJHYW1lX0dhbWVTdGFydFJlc3AQARIhCh1Nc2dJRFN1",
             "YkdhbWVfTm90aWZ5QWN0aW9uUmVzcBACEhcKE01zZ0lEU3ViR2FtZV9BY3Rp",
             "b24QAxIbChdNc2dJRFN1YkdhbWVfQWN0aW9uUmVzcBAEEh0KGU1zZ0lEU3Vi",
@@ -69,11 +69,9 @@ namespace Lucky9 {
             "dFJlc3AQCRIgChxNc2dJRFN1YkdhbWVfTm90aWZ5U3RhdGVSZXNwEAoSHAoY",
             "TXNnSURTdWJHYW1lX1RpbWVPdXRSZXNwEAsSHQoZTXNnSURTdWJHYW1lX1Rp",
             "bWVPdXRSZWFkeRAMEiEKHU1zZ0lEU3ViR2FtZV9UaW1lT3V0UmVhZHlSZXNw",
-            "EA0SIAocTXNnSURTdWJHYW1lX1RpbWVPdXRLaWNrUmVzcBAOEiYKIk1zZ0lE",
-            "U3ViR2FtZV9Ob3RpZnlTeXN0ZW1DaGVhdFJlc3AQFBIjCh9Nc2dJRFN1Ykdh",
-            "bWVfTm90aWZ5Q2FyZFR5cGVSZXNwEBUSIAocTXNnSURTdWJHYW1lX05vdGlm",
-            "eUlzTWF4UmVzcBAWEiIKHk1zZ0lEU3ViR2FtZV9Ob3RpZnlMYXN0QWN0UmVz",
-            "cBAXYgZwcm90bzM="));
+            "EA0SIAocTXNnSURTdWJHYW1lX1RpbWVPdXRLaWNrUmVzcBAOEiUKIU1zZ0lE",
+            "U3ViR2FtZV9Ob3RpZnlCYW5rZXJHb2xkUmVzcBAUEiUKIU1zZ0lEU3ViR2Ft",
+            "ZV9Ob3RpZnlCYW5rZXJDYXJkUmVzcBAVYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Lucky9.ELCMsgGameState), typeof(global::Lucky9.ELCMsgPlayerState), typeof(global::Lucky9.ELCMsgCardType), typeof(global::Lucky9.ELCMsgGameAction), typeof(global::Lucky9.ELCMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -233,19 +231,11 @@ namespace Lucky9 {
     /// <summary>
     //////////////////////////机器人消息///////////////////////
     /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_NotifySystemCheatResp")] MsgIdsubGameNotifySystemCheatResp = 20,
+    [pbr::OriginalName("MsgIDSubGame_NotifyBankerGoldResp")] MsgIdsubGameNotifyBankerGoldResp = 20,
     /// <summary>
-    ///通知牌型
+    ///通知庄家牌信息
     /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_NotifyCardTypeResp")] MsgIdsubGameNotifyCardTypeResp = 21,
-    /// <summary>
-    ///通知是否最大
-    /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_NotifyIsMaxResp")] MsgIdsubGameNotifyIsMaxResp = 22,
-    /// <summary>
-    ///通知玩家行为
-    /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_NotifyLastActResp")] MsgIdsubGameNotifyLastActResp = 23,
+    [pbr::OriginalName("MsgIDSubGame_NotifyBankerCardResp")] MsgIdsubGameNotifyBankerCardResp = 21,
   }
 
   #endregion
