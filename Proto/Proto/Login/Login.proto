@@ -579,12 +579,13 @@ message MsgSetSubAgent
 //设置代理返回
 message MsgSetSubAgentResp
 {
-	int32 user_id 			= 1;		//下级userid
-	int32 subordinates 		= 2;		//当前id下级人数
-	int64 total_tax 		= 3;		//总税收
-	int64 today_tax 		= 4;		//今日税收
-	int64 today_ratio 		= 5;		//今日返利
-	int32 agent_ratio 		= 6;		//分成比例
+	int32 code				= 1;		//0成功，非0多语言码
+	int32 user_id 			= 2;		//下级userid
+	int32 subordinates 		= 3;		//当前id下级人数
+	int64 total_tax 		= 4;		//总税收
+	int64 today_tax 		= 5;		//今日税收
+	int64 today_ratio 		= 6;		//今日返利
+	int32 agent_ratio 		= 7;		//分成比例
 }
 //领取返利返回
 message MsgRecviveAgentRebateResp

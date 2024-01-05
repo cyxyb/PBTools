@@ -1781,6 +1781,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::MsgSetSubAgentResp, code_),
   PROTOBUF_FIELD_OFFSET(::MsgSetSubAgentResp, user_id_),
   PROTOBUF_FIELD_OFFSET(::MsgSetSubAgentResp, subordinates_),
   PROTOBUF_FIELD_OFFSET(::MsgSetSubAgentResp, total_tax_),
@@ -1861,7 +1862,7 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 584, -1, sizeof(::MsgInfiniteAgentQuerySubInfoResp)},
   { 592, -1, sizeof(::MsgSetSubAgent)},
   { 599, -1, sizeof(::MsgSetSubAgentResp)},
-  { 610, -1, sizeof(::MsgRecviveAgentRebateResp)},
+  { 611, -1, sizeof(::MsgRecviveAgentRebateResp)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -2110,12 +2111,12 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "\001(\005\022\020\n\010end_list\030\002 \001(\010\022(\n\004info\030\003 \003(\0132\032.In"
   "finiteAgentQuerySubInfo\"6\n\016MsgSetSubAgen"
   "t\022\017\n\007user_id\030\001 \001(\005\022\023\n\013agent_ratio\030\002 \001(\005\""
-  "\213\001\n\022MsgSetSubAgentResp\022\017\n\007user_id\030\001 \001(\005\022"
-  "\024\n\014subordinates\030\002 \001(\005\022\021\n\ttotal_tax\030\003 \001(\003"
-  "\022\021\n\ttoday_tax\030\004 \001(\003\022\023\n\013today_ratio\030\005 \001(\003"
-  "\022\023\n\013agent_ratio\030\006 \001(\005\"=\n\031MsgRecviveAgent"
-  "RebateResp\022\014\n\004code\030\001 \001(\005\022\022\n\ncur_rebate\030\002"
-  " \001(\003b\006proto3"
+  "\231\001\n\022MsgSetSubAgentResp\022\014\n\004code\030\001 \001(\005\022\017\n\007"
+  "user_id\030\002 \001(\005\022\024\n\014subordinates\030\003 \001(\005\022\021\n\tt"
+  "otal_tax\030\004 \001(\003\022\021\n\ttoday_tax\030\005 \001(\003\022\023\n\013tod"
+  "ay_ratio\030\006 \001(\003\022\023\n\013agent_ratio\030\007 \001(\005\"=\n\031M"
+  "sgRecviveAgentRebateResp\022\014\n\004code\030\001 \001(\005\022\022"
+  "\n\ncur_rebate\030\002 \001(\003b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Login_2eproto_deps[1] = {
 };
@@ -2189,7 +2190,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Login_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Login_2eproto = {
-  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 7252,
+  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 7266,
   &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 66, 0,
   schemas, file_default_instances, TableStruct_Login_2eproto::offsets,
   file_level_metadata_Login_2eproto, 66, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
@@ -21185,17 +21186,17 @@ MsgSetSubAgentResp::MsgSetSubAgentResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 MsgSetSubAgentResp::MsgSetSubAgentResp(const MsgSetSubAgentResp& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&user_id_, &from.user_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&agent_ratio_) -
-    reinterpret_cast<char*>(&user_id_)) + sizeof(agent_ratio_));
+  ::memcpy(&code_, &from.code_,
+    static_cast<size_t>(reinterpret_cast<char*>(&today_ratio_) -
+    reinterpret_cast<char*>(&code_)) + sizeof(today_ratio_));
   // @@protoc_insertion_point(copy_constructor:MsgSetSubAgentResp)
 }
 
 void MsgSetSubAgentResp::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&user_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&agent_ratio_) -
-      reinterpret_cast<char*>(&user_id_)) + sizeof(agent_ratio_));
+      reinterpret_cast<char*>(&code_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&today_ratio_) -
+      reinterpret_cast<char*>(&code_)) + sizeof(today_ratio_));
 }
 
 MsgSetSubAgentResp::~MsgSetSubAgentResp() {
@@ -21229,9 +21230,9 @@ void MsgSetSubAgentResp::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&user_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&agent_ratio_) -
-      reinterpret_cast<char*>(&user_id_)) + sizeof(agent_ratio_));
+  ::memset(&code_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&today_ratio_) -
+      reinterpret_cast<char*>(&code_)) + sizeof(today_ratio_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -21242,44 +21243,51 @@ const char* MsgSetSubAgentResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // int32 user_id = 1;
+      // int32 code = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          code_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 user_id = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 subordinates = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+      // int32 subordinates = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           subordinates_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int64 total_tax = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+      // int64 total_tax = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           total_tax_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int64 today_tax = 4;
-      case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+      // int64 today_tax = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
           today_tax_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int64 today_ratio = 5;
-      case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+      // int64 today_ratio = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
           today_ratio_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 agent_ratio = 6;
-      case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+      // int32 agent_ratio = 7;
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
           agent_ratio_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
@@ -21312,40 +21320,46 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 user_id = 1;
+  // int32 code = 1;
+  if (this->code() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_code(), target);
+  }
+
+  // int32 user_id = 2;
   if (this->user_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_user_id(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_user_id(), target);
   }
 
-  // int32 subordinates = 2;
+  // int32 subordinates = 3;
   if (this->subordinates() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_subordinates(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_subordinates(), target);
   }
 
-  // int64 total_tax = 3;
+  // int64 total_tax = 4;
   if (this->total_tax() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_total_tax(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_total_tax(), target);
   }
 
-  // int64 today_tax = 4;
+  // int64 today_tax = 5;
   if (this->today_tax() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_today_tax(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_today_tax(), target);
   }
 
-  // int64 today_ratio = 5;
+  // int64 today_ratio = 6;
   if (this->today_ratio() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_today_ratio(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(6, this->_internal_today_ratio(), target);
   }
 
-  // int32 agent_ratio = 6;
+  // int32 agent_ratio = 7;
   if (this->agent_ratio() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_agent_ratio(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(7, this->_internal_agent_ratio(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -21364,46 +21378,53 @@ size_t MsgSetSubAgentResp::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // int32 user_id = 1;
+  // int32 code = 1;
+  if (this->code() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_code());
+  }
+
+  // int32 user_id = 2;
   if (this->user_id() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_user_id());
   }
 
-  // int32 subordinates = 2;
-  if (this->subordinates() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_subordinates());
-  }
-
-  // int64 total_tax = 3;
+  // int64 total_tax = 4;
   if (this->total_tax() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_total_tax());
   }
 
-  // int64 today_tax = 4;
+  // int64 today_tax = 5;
   if (this->today_tax() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_today_tax());
   }
 
-  // int64 today_ratio = 5;
-  if (this->today_ratio() != 0) {
+  // int32 subordinates = 3;
+  if (this->subordinates() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_today_ratio());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_subordinates());
   }
 
-  // int32 agent_ratio = 6;
+  // int32 agent_ratio = 7;
   if (this->agent_ratio() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_agent_ratio());
+  }
+
+  // int64 today_ratio = 6;
+  if (this->today_ratio() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_today_ratio());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -21437,11 +21458,11 @@ void MsgSetSubAgentResp::MergeFrom(const MsgSetSubAgentResp& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  if (from.code() != 0) {
+    _internal_set_code(from._internal_code());
+  }
   if (from.user_id() != 0) {
     _internal_set_user_id(from._internal_user_id());
-  }
-  if (from.subordinates() != 0) {
-    _internal_set_subordinates(from._internal_subordinates());
   }
   if (from.total_tax() != 0) {
     _internal_set_total_tax(from._internal_total_tax());
@@ -21449,11 +21470,14 @@ void MsgSetSubAgentResp::MergeFrom(const MsgSetSubAgentResp& from) {
   if (from.today_tax() != 0) {
     _internal_set_today_tax(from._internal_today_tax());
   }
-  if (from.today_ratio() != 0) {
-    _internal_set_today_ratio(from._internal_today_ratio());
+  if (from.subordinates() != 0) {
+    _internal_set_subordinates(from._internal_subordinates());
   }
   if (from.agent_ratio() != 0) {
     _internal_set_agent_ratio(from._internal_agent_ratio());
+  }
+  if (from.today_ratio() != 0) {
+    _internal_set_today_ratio(from._internal_today_ratio());
   }
 }
 
@@ -21479,11 +21503,11 @@ void MsgSetSubAgentResp::InternalSwap(MsgSetSubAgentResp* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgSetSubAgentResp, agent_ratio_)
-      + sizeof(MsgSetSubAgentResp::agent_ratio_)
-      - PROTOBUF_FIELD_OFFSET(MsgSetSubAgentResp, user_id_)>(
-          reinterpret_cast<char*>(&user_id_),
-          reinterpret_cast<char*>(&other->user_id_));
+      PROTOBUF_FIELD_OFFSET(MsgSetSubAgentResp, today_ratio_)
+      + sizeof(MsgSetSubAgentResp::today_ratio_)
+      - PROTOBUF_FIELD_OFFSET(MsgSetSubAgentResp, code_)>(
+          reinterpret_cast<char*>(&code_),
+          reinterpret_cast<char*>(&other->code_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MsgSetSubAgentResp::GetMetadata() const {

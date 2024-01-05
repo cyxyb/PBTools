@@ -12133,14 +12133,24 @@ class MsgSetSubAgentResp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kUserIdFieldNumber = 1,
-    kSubordinatesFieldNumber = 2,
-    kTotalTaxFieldNumber = 3,
-    kTodayTaxFieldNumber = 4,
-    kTodayRatioFieldNumber = 5,
-    kAgentRatioFieldNumber = 6,
+    kCodeFieldNumber = 1,
+    kUserIdFieldNumber = 2,
+    kTotalTaxFieldNumber = 4,
+    kTodayTaxFieldNumber = 5,
+    kSubordinatesFieldNumber = 3,
+    kAgentRatioFieldNumber = 7,
+    kTodayRatioFieldNumber = 6,
   };
-  // int32 user_id = 1;
+  // int32 code = 1;
+  void clear_code();
+  ::PROTOBUF_NAMESPACE_ID::int32 code() const;
+  void set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_code() const;
+  void _internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 user_id = 2;
   void clear_user_id();
   ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
   void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -12149,16 +12159,7 @@ class MsgSetSubAgentResp PROTOBUF_FINAL :
   void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 subordinates = 2;
-  void clear_subordinates();
-  ::PROTOBUF_NAMESPACE_ID::int32 subordinates() const;
-  void set_subordinates(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_subordinates() const;
-  void _internal_set_subordinates(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int64 total_tax = 3;
+  // int64 total_tax = 4;
   void clear_total_tax();
   ::PROTOBUF_NAMESPACE_ID::int64 total_tax() const;
   void set_total_tax(::PROTOBUF_NAMESPACE_ID::int64 value);
@@ -12167,7 +12168,7 @@ class MsgSetSubAgentResp PROTOBUF_FINAL :
   void _internal_set_total_tax(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int64 today_tax = 4;
+  // int64 today_tax = 5;
   void clear_today_tax();
   ::PROTOBUF_NAMESPACE_ID::int64 today_tax() const;
   void set_today_tax(::PROTOBUF_NAMESPACE_ID::int64 value);
@@ -12176,22 +12177,31 @@ class MsgSetSubAgentResp PROTOBUF_FINAL :
   void _internal_set_today_tax(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int64 today_ratio = 5;
-  void clear_today_ratio();
-  ::PROTOBUF_NAMESPACE_ID::int64 today_ratio() const;
-  void set_today_ratio(::PROTOBUF_NAMESPACE_ID::int64 value);
+  // int32 subordinates = 3;
+  void clear_subordinates();
+  ::PROTOBUF_NAMESPACE_ID::int32 subordinates() const;
+  void set_subordinates(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_today_ratio() const;
-  void _internal_set_today_ratio(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_subordinates() const;
+  void _internal_set_subordinates(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 agent_ratio = 6;
+  // int32 agent_ratio = 7;
   void clear_agent_ratio();
   ::PROTOBUF_NAMESPACE_ID::int32 agent_ratio() const;
   void set_agent_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
   ::PROTOBUF_NAMESPACE_ID::int32 _internal_agent_ratio() const;
   void _internal_set_agent_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int64 today_ratio = 6;
+  void clear_today_ratio();
+  ::PROTOBUF_NAMESPACE_ID::int64 today_ratio() const;
+  void set_today_ratio(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_today_ratio() const;
+  void _internal_set_today_ratio(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
   // @@protoc_insertion_point(class_scope:MsgSetSubAgentResp)
@@ -12201,12 +12211,13 @@ class MsgSetSubAgentResp PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 code_;
   ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 subordinates_;
   ::PROTOBUF_NAMESPACE_ID::int64 total_tax_;
   ::PROTOBUF_NAMESPACE_ID::int64 today_tax_;
-  ::PROTOBUF_NAMESPACE_ID::int64 today_ratio_;
+  ::PROTOBUF_NAMESPACE_ID::int32 subordinates_;
   ::PROTOBUF_NAMESPACE_ID::int32 agent_ratio_;
+  ::PROTOBUF_NAMESPACE_ID::int64 today_ratio_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -21098,7 +21109,27 @@ inline void MsgSetSubAgent::set_agent_ratio(::PROTOBUF_NAMESPACE_ID::int32 value
 
 // MsgSetSubAgentResp
 
-// int32 user_id = 1;
+// int32 code = 1;
+inline void MsgSetSubAgentResp::clear_code() {
+  code_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSetSubAgentResp::_internal_code() const {
+  return code_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSetSubAgentResp::code() const {
+  // @@protoc_insertion_point(field_get:MsgSetSubAgentResp.code)
+  return _internal_code();
+}
+inline void MsgSetSubAgentResp::_internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  code_ = value;
+}
+inline void MsgSetSubAgentResp::set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_code(value);
+  // @@protoc_insertion_point(field_set:MsgSetSubAgentResp.code)
+}
+
+// int32 user_id = 2;
 inline void MsgSetSubAgentResp::clear_user_id() {
   user_id_ = 0;
 }
@@ -21118,7 +21149,7 @@ inline void MsgSetSubAgentResp::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:MsgSetSubAgentResp.user_id)
 }
 
-// int32 subordinates = 2;
+// int32 subordinates = 3;
 inline void MsgSetSubAgentResp::clear_subordinates() {
   subordinates_ = 0;
 }
@@ -21138,7 +21169,7 @@ inline void MsgSetSubAgentResp::set_subordinates(::PROTOBUF_NAMESPACE_ID::int32 
   // @@protoc_insertion_point(field_set:MsgSetSubAgentResp.subordinates)
 }
 
-// int64 total_tax = 3;
+// int64 total_tax = 4;
 inline void MsgSetSubAgentResp::clear_total_tax() {
   total_tax_ = PROTOBUF_LONGLONG(0);
 }
@@ -21158,7 +21189,7 @@ inline void MsgSetSubAgentResp::set_total_tax(::PROTOBUF_NAMESPACE_ID::int64 val
   // @@protoc_insertion_point(field_set:MsgSetSubAgentResp.total_tax)
 }
 
-// int64 today_tax = 4;
+// int64 today_tax = 5;
 inline void MsgSetSubAgentResp::clear_today_tax() {
   today_tax_ = PROTOBUF_LONGLONG(0);
 }
@@ -21178,7 +21209,7 @@ inline void MsgSetSubAgentResp::set_today_tax(::PROTOBUF_NAMESPACE_ID::int64 val
   // @@protoc_insertion_point(field_set:MsgSetSubAgentResp.today_tax)
 }
 
-// int64 today_ratio = 5;
+// int64 today_ratio = 6;
 inline void MsgSetSubAgentResp::clear_today_ratio() {
   today_ratio_ = PROTOBUF_LONGLONG(0);
 }
@@ -21198,7 +21229,7 @@ inline void MsgSetSubAgentResp::set_today_ratio(::PROTOBUF_NAMESPACE_ID::int64 v
   // @@protoc_insertion_point(field_set:MsgSetSubAgentResp.today_ratio)
 }
 
-// int32 agent_ratio = 6;
+// int32 agent_ratio = 7;
 inline void MsgSetSubAgentResp::clear_agent_ratio() {
   agent_ratio_ = 0;
 }

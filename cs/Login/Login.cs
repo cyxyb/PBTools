@@ -178,12 +178,12 @@ public static partial class LoginReflection {
           "SW5maW5pdGVBZ2VudFF1ZXJ5U3ViSW5mb1Jlc3ASEwoLYWdlbnRfY291bnQY",
           "ASABKAUSEAoIZW5kX2xpc3QYAiABKAgSKAoEaW5mbxgDIAMoCzIaLkluZmlu",
           "aXRlQWdlbnRRdWVyeVN1YkluZm8iNgoOTXNnU2V0U3ViQWdlbnQSDwoHdXNl",
-          "cl9pZBgBIAEoBRITCgthZ2VudF9yYXRpbxgCIAEoBSKLAQoSTXNnU2V0U3Vi",
-          "QWdlbnRSZXNwEg8KB3VzZXJfaWQYASABKAUSFAoMc3Vib3JkaW5hdGVzGAIg",
-          "ASgFEhEKCXRvdGFsX3RheBgDIAEoAxIRCgl0b2RheV90YXgYBCABKAMSEwoL",
-          "dG9kYXlfcmF0aW8YBSABKAMSEwoLYWdlbnRfcmF0aW8YBiABKAUiPQoZTXNn",
-          "UmVjdml2ZUFnZW50UmViYXRlUmVzcBIMCgRjb2RlGAEgASgFEhIKCmN1cl9y",
-          "ZWJhdGUYAiABKANiBnByb3RvMw=="));
+          "cl9pZBgBIAEoBRITCgthZ2VudF9yYXRpbxgCIAEoBSKZAQoSTXNnU2V0U3Vi",
+          "QWdlbnRSZXNwEgwKBGNvZGUYASABKAUSDwoHdXNlcl9pZBgCIAEoBRIUCgxz",
+          "dWJvcmRpbmF0ZXMYAyABKAUSEQoJdG90YWxfdGF4GAQgASgDEhEKCXRvZGF5",
+          "X3RheBgFIAEoAxITCgt0b2RheV9yYXRpbxgGIAEoAxITCgthZ2VudF9yYXRp",
+          "bxgHIAEoBSI9ChlNc2dSZWN2aXZlQWdlbnRSZWJhdGVSZXNwEgwKBGNvZGUY",
+          "ASABKAUSEgoKY3VyX3JlYmF0ZRgCIAEoA2IGcHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -251,7 +251,7 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::InfiniteAgentQuerySubInfo), global::InfiniteAgentQuerySubInfo.Parser, new[]{ "UserId", "Subordinates", "TotalTax", "TodayTax", "TodayRatio", "AgentRatio" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgInfiniteAgentQuerySubInfoResp), global::MsgInfiniteAgentQuerySubInfoResp.Parser, new[]{ "AgentCount", "EndList", "Info" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgSetSubAgent), global::MsgSetSubAgent.Parser, new[]{ "UserId", "AgentRatio" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgSetSubAgentResp), global::MsgSetSubAgentResp.Parser, new[]{ "UserId", "Subordinates", "TotalTax", "TodayTax", "TodayRatio", "AgentRatio" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgSetSubAgentResp), global::MsgSetSubAgentResp.Parser, new[]{ "Code", "UserId", "Subordinates", "TotalTax", "TodayTax", "TodayRatio", "AgentRatio" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgRecviveAgentRebateResp), global::MsgRecviveAgentRebateResp.Parser, new[]{ "Code", "CurRebate" }, null, null, null, null)
         }));
   }
@@ -19793,6 +19793,7 @@ public sealed partial class MsgSetSubAgentResp : pb::IMessage<MsgSetSubAgentResp
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public MsgSetSubAgentResp(MsgSetSubAgentResp other) : this() {
+    code_ = other.code_;
     userId_ = other.userId_;
     subordinates_ = other.subordinates_;
     totalTax_ = other.totalTax_;
@@ -19807,8 +19808,22 @@ public sealed partial class MsgSetSubAgentResp : pb::IMessage<MsgSetSubAgentResp
     return new MsgSetSubAgentResp(this);
   }
 
+  /// <summary>Field number for the "code" field.</summary>
+  public const int CodeFieldNumber = 1;
+  private int code_;
+  /// <summary>
+  ///0成功，非0多语言码
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Code {
+    get { return code_; }
+    set {
+      code_ = value;
+    }
+  }
+
   /// <summary>Field number for the "user_id" field.</summary>
-  public const int UserIdFieldNumber = 1;
+  public const int UserIdFieldNumber = 2;
   private int userId_;
   /// <summary>
   ///下级userid
@@ -19822,7 +19837,7 @@ public sealed partial class MsgSetSubAgentResp : pb::IMessage<MsgSetSubAgentResp
   }
 
   /// <summary>Field number for the "subordinates" field.</summary>
-  public const int SubordinatesFieldNumber = 2;
+  public const int SubordinatesFieldNumber = 3;
   private int subordinates_;
   /// <summary>
   ///当前id下级人数
@@ -19836,7 +19851,7 @@ public sealed partial class MsgSetSubAgentResp : pb::IMessage<MsgSetSubAgentResp
   }
 
   /// <summary>Field number for the "total_tax" field.</summary>
-  public const int TotalTaxFieldNumber = 3;
+  public const int TotalTaxFieldNumber = 4;
   private long totalTax_;
   /// <summary>
   ///总税收
@@ -19850,7 +19865,7 @@ public sealed partial class MsgSetSubAgentResp : pb::IMessage<MsgSetSubAgentResp
   }
 
   /// <summary>Field number for the "today_tax" field.</summary>
-  public const int TodayTaxFieldNumber = 4;
+  public const int TodayTaxFieldNumber = 5;
   private long todayTax_;
   /// <summary>
   ///今日税收
@@ -19864,7 +19879,7 @@ public sealed partial class MsgSetSubAgentResp : pb::IMessage<MsgSetSubAgentResp
   }
 
   /// <summary>Field number for the "today_ratio" field.</summary>
-  public const int TodayRatioFieldNumber = 5;
+  public const int TodayRatioFieldNumber = 6;
   private long todayRatio_;
   /// <summary>
   ///今日返利
@@ -19878,7 +19893,7 @@ public sealed partial class MsgSetSubAgentResp : pb::IMessage<MsgSetSubAgentResp
   }
 
   /// <summary>Field number for the "agent_ratio" field.</summary>
-  public const int AgentRatioFieldNumber = 6;
+  public const int AgentRatioFieldNumber = 7;
   private int agentRatio_;
   /// <summary>
   ///分成比例
@@ -19904,6 +19919,7 @@ public sealed partial class MsgSetSubAgentResp : pb::IMessage<MsgSetSubAgentResp
     if (ReferenceEquals(other, this)) {
       return true;
     }
+    if (Code != other.Code) return false;
     if (UserId != other.UserId) return false;
     if (Subordinates != other.Subordinates) return false;
     if (TotalTax != other.TotalTax) return false;
@@ -19916,6 +19932,7 @@ public sealed partial class MsgSetSubAgentResp : pb::IMessage<MsgSetSubAgentResp
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override int GetHashCode() {
     int hash = 1;
+    if (Code != 0) hash ^= Code.GetHashCode();
     if (UserId != 0) hash ^= UserId.GetHashCode();
     if (Subordinates != 0) hash ^= Subordinates.GetHashCode();
     if (TotalTax != 0L) hash ^= TotalTax.GetHashCode();
@@ -19938,28 +19955,32 @@ public sealed partial class MsgSetSubAgentResp : pb::IMessage<MsgSetSubAgentResp
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     output.WriteRawMessage(this);
   #else
-    if (UserId != 0) {
+    if (Code != 0) {
       output.WriteRawTag(8);
+      output.WriteInt32(Code);
+    }
+    if (UserId != 0) {
+      output.WriteRawTag(16);
       output.WriteInt32(UserId);
     }
     if (Subordinates != 0) {
-      output.WriteRawTag(16);
+      output.WriteRawTag(24);
       output.WriteInt32(Subordinates);
     }
     if (TotalTax != 0L) {
-      output.WriteRawTag(24);
+      output.WriteRawTag(32);
       output.WriteInt64(TotalTax);
     }
     if (TodayTax != 0L) {
-      output.WriteRawTag(32);
+      output.WriteRawTag(40);
       output.WriteInt64(TodayTax);
     }
     if (TodayRatio != 0L) {
-      output.WriteRawTag(40);
+      output.WriteRawTag(48);
       output.WriteInt64(TodayRatio);
     }
     if (AgentRatio != 0) {
-      output.WriteRawTag(48);
+      output.WriteRawTag(56);
       output.WriteInt32(AgentRatio);
     }
     if (_unknownFields != null) {
@@ -19971,28 +19992,32 @@ public sealed partial class MsgSetSubAgentResp : pb::IMessage<MsgSetSubAgentResp
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-    if (UserId != 0) {
+    if (Code != 0) {
       output.WriteRawTag(8);
+      output.WriteInt32(Code);
+    }
+    if (UserId != 0) {
+      output.WriteRawTag(16);
       output.WriteInt32(UserId);
     }
     if (Subordinates != 0) {
-      output.WriteRawTag(16);
+      output.WriteRawTag(24);
       output.WriteInt32(Subordinates);
     }
     if (TotalTax != 0L) {
-      output.WriteRawTag(24);
+      output.WriteRawTag(32);
       output.WriteInt64(TotalTax);
     }
     if (TodayTax != 0L) {
-      output.WriteRawTag(32);
+      output.WriteRawTag(40);
       output.WriteInt64(TodayTax);
     }
     if (TodayRatio != 0L) {
-      output.WriteRawTag(40);
+      output.WriteRawTag(48);
       output.WriteInt64(TodayRatio);
     }
     if (AgentRatio != 0) {
-      output.WriteRawTag(48);
+      output.WriteRawTag(56);
       output.WriteInt32(AgentRatio);
     }
     if (_unknownFields != null) {
@@ -20004,6 +20029,9 @@ public sealed partial class MsgSetSubAgentResp : pb::IMessage<MsgSetSubAgentResp
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int CalculateSize() {
     int size = 0;
+    if (Code != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Code);
+    }
     if (UserId != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserId);
     }
@@ -20032,6 +20060,9 @@ public sealed partial class MsgSetSubAgentResp : pb::IMessage<MsgSetSubAgentResp
   public void MergeFrom(MsgSetSubAgentResp other) {
     if (other == null) {
       return;
+    }
+    if (other.Code != 0) {
+      Code = other.Code;
     }
     if (other.UserId != 0) {
       UserId = other.UserId;
@@ -20066,26 +20097,30 @@ public sealed partial class MsgSetSubAgentResp : pb::IMessage<MsgSetSubAgentResp
           _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
           break;
         case 8: {
-          UserId = input.ReadInt32();
+          Code = input.ReadInt32();
           break;
         }
         case 16: {
-          Subordinates = input.ReadInt32();
+          UserId = input.ReadInt32();
           break;
         }
         case 24: {
-          TotalTax = input.ReadInt64();
+          Subordinates = input.ReadInt32();
           break;
         }
         case 32: {
-          TodayTax = input.ReadInt64();
+          TotalTax = input.ReadInt64();
           break;
         }
         case 40: {
-          TodayRatio = input.ReadInt64();
+          TodayTax = input.ReadInt64();
           break;
         }
         case 48: {
+          TodayRatio = input.ReadInt64();
+          break;
+        }
+        case 56: {
           AgentRatio = input.ReadInt32();
           break;
         }
@@ -20104,26 +20139,30 @@ public sealed partial class MsgSetSubAgentResp : pb::IMessage<MsgSetSubAgentResp
           _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
           break;
         case 8: {
-          UserId = input.ReadInt32();
+          Code = input.ReadInt32();
           break;
         }
         case 16: {
-          Subordinates = input.ReadInt32();
+          UserId = input.ReadInt32();
           break;
         }
         case 24: {
-          TotalTax = input.ReadInt64();
+          Subordinates = input.ReadInt32();
           break;
         }
         case 32: {
-          TodayTax = input.ReadInt64();
+          TotalTax = input.ReadInt64();
           break;
         }
         case 40: {
-          TodayRatio = input.ReadInt64();
+          TodayTax = input.ReadInt64();
           break;
         }
         case 48: {
+          TodayRatio = input.ReadInt64();
+          break;
+        }
+        case 56: {
           AgentRatio = input.ReadInt32();
           break;
         }
