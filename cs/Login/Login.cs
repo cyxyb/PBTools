@@ -178,9 +178,12 @@ public static partial class LoginReflection {
           "SW5maW5pdGVBZ2VudFF1ZXJ5U3ViSW5mb1Jlc3ASEwoLYWdlbnRfY291bnQY",
           "ASABKAUSEAoIZW5kX2xpc3QYAiABKAgSKAoEaW5mbxgDIAMoCzIaLkluZmlu",
           "aXRlQWdlbnRRdWVyeVN1YkluZm8iNgoOTXNnU2V0U3ViQWdlbnQSDwoHdXNl",
-          "cl9pZBgBIAEoBRITCgthZ2VudF9yYXRpbxgCIAEoBSI9ChlNc2dSZWN2aXZl",
-          "QWdlbnRSZWJhdGVSZXNwEgwKBGNvZGUYASABKAUSEgoKY3VyX3JlYmF0ZRgC",
-          "IAEoA2IGcHJvdG8z"));
+          "cl9pZBgBIAEoBRITCgthZ2VudF9yYXRpbxgCIAEoBSKLAQoSTXNnU2V0U3Vi",
+          "QWdlbnRSZXNwEg8KB3VzZXJfaWQYASABKAUSFAoMc3Vib3JkaW5hdGVzGAIg",
+          "ASgFEhEKCXRvdGFsX3RheBgDIAEoAxIRCgl0b2RheV90YXgYBCABKAMSEwoL",
+          "dG9kYXlfcmF0aW8YBSABKAMSEwoLYWdlbnRfcmF0aW8YBiABKAUiPQoZTXNn",
+          "UmVjdml2ZUFnZW50UmViYXRlUmVzcBIMCgRjb2RlGAEgASgFEhIKCmN1cl9y",
+          "ZWJhdGUYAiABKANiBnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -248,6 +251,7 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::InfiniteAgentQuerySubInfo), global::InfiniteAgentQuerySubInfo.Parser, new[]{ "UserId", "Subordinates", "TotalTax", "TodayTax", "TodayRatio", "AgentRatio" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgInfiniteAgentQuerySubInfoResp), global::MsgInfiniteAgentQuerySubInfoResp.Parser, new[]{ "AgentCount", "EndList", "Info" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgSetSubAgent), global::MsgSetSubAgent.Parser, new[]{ "UserId", "AgentRatio" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgSetSubAgentResp), global::MsgSetSubAgentResp.Parser, new[]{ "UserId", "Subordinates", "TotalTax", "TodayTax", "TodayRatio", "AgentRatio" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgRecviveAgentRebateResp), global::MsgRecviveAgentRebateResp.Parser, new[]{ "Code", "CurRebate" }, null, null, null, null)
         }));
   }
@@ -19758,6 +19762,379 @@ public sealed partial class MsgSetSubAgent : pb::IMessage<MsgSetSubAgent>
 }
 
 /// <summary>
+///设置代理返回
+/// </summary>
+public sealed partial class MsgSetSubAgentResp : pb::IMessage<MsgSetSubAgentResp>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgSetSubAgentResp> _parser = new pb::MessageParser<MsgSetSubAgentResp>(() => new MsgSetSubAgentResp());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgSetSubAgentResp> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[64]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgSetSubAgentResp() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgSetSubAgentResp(MsgSetSubAgentResp other) : this() {
+    userId_ = other.userId_;
+    subordinates_ = other.subordinates_;
+    totalTax_ = other.totalTax_;
+    todayTax_ = other.todayTax_;
+    todayRatio_ = other.todayRatio_;
+    agentRatio_ = other.agentRatio_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgSetSubAgentResp Clone() {
+    return new MsgSetSubAgentResp(this);
+  }
+
+  /// <summary>Field number for the "user_id" field.</summary>
+  public const int UserIdFieldNumber = 1;
+  private int userId_;
+  /// <summary>
+  ///下级userid
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int UserId {
+    get { return userId_; }
+    set {
+      userId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "subordinates" field.</summary>
+  public const int SubordinatesFieldNumber = 2;
+  private int subordinates_;
+  /// <summary>
+  ///当前id下级人数
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Subordinates {
+    get { return subordinates_; }
+    set {
+      subordinates_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "total_tax" field.</summary>
+  public const int TotalTaxFieldNumber = 3;
+  private long totalTax_;
+  /// <summary>
+  ///总税收
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public long TotalTax {
+    get { return totalTax_; }
+    set {
+      totalTax_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "today_tax" field.</summary>
+  public const int TodayTaxFieldNumber = 4;
+  private long todayTax_;
+  /// <summary>
+  ///今日税收
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public long TodayTax {
+    get { return todayTax_; }
+    set {
+      todayTax_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "today_ratio" field.</summary>
+  public const int TodayRatioFieldNumber = 5;
+  private long todayRatio_;
+  /// <summary>
+  ///今日返利
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public long TodayRatio {
+    get { return todayRatio_; }
+    set {
+      todayRatio_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "agent_ratio" field.</summary>
+  public const int AgentRatioFieldNumber = 6;
+  private int agentRatio_;
+  /// <summary>
+  ///分成比例
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int AgentRatio {
+    get { return agentRatio_; }
+    set {
+      agentRatio_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgSetSubAgentResp);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgSetSubAgentResp other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (UserId != other.UserId) return false;
+    if (Subordinates != other.Subordinates) return false;
+    if (TotalTax != other.TotalTax) return false;
+    if (TodayTax != other.TodayTax) return false;
+    if (TodayRatio != other.TodayRatio) return false;
+    if (AgentRatio != other.AgentRatio) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (UserId != 0) hash ^= UserId.GetHashCode();
+    if (Subordinates != 0) hash ^= Subordinates.GetHashCode();
+    if (TotalTax != 0L) hash ^= TotalTax.GetHashCode();
+    if (TodayTax != 0L) hash ^= TodayTax.GetHashCode();
+    if (TodayRatio != 0L) hash ^= TodayRatio.GetHashCode();
+    if (AgentRatio != 0) hash ^= AgentRatio.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (UserId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(UserId);
+    }
+    if (Subordinates != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(Subordinates);
+    }
+    if (TotalTax != 0L) {
+      output.WriteRawTag(24);
+      output.WriteInt64(TotalTax);
+    }
+    if (TodayTax != 0L) {
+      output.WriteRawTag(32);
+      output.WriteInt64(TodayTax);
+    }
+    if (TodayRatio != 0L) {
+      output.WriteRawTag(40);
+      output.WriteInt64(TodayRatio);
+    }
+    if (AgentRatio != 0) {
+      output.WriteRawTag(48);
+      output.WriteInt32(AgentRatio);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (UserId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(UserId);
+    }
+    if (Subordinates != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(Subordinates);
+    }
+    if (TotalTax != 0L) {
+      output.WriteRawTag(24);
+      output.WriteInt64(TotalTax);
+    }
+    if (TodayTax != 0L) {
+      output.WriteRawTag(32);
+      output.WriteInt64(TodayTax);
+    }
+    if (TodayRatio != 0L) {
+      output.WriteRawTag(40);
+      output.WriteInt64(TodayRatio);
+    }
+    if (AgentRatio != 0) {
+      output.WriteRawTag(48);
+      output.WriteInt32(AgentRatio);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (UserId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserId);
+    }
+    if (Subordinates != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Subordinates);
+    }
+    if (TotalTax != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(TotalTax);
+    }
+    if (TodayTax != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(TodayTax);
+    }
+    if (TodayRatio != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(TodayRatio);
+    }
+    if (AgentRatio != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(AgentRatio);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgSetSubAgentResp other) {
+    if (other == null) {
+      return;
+    }
+    if (other.UserId != 0) {
+      UserId = other.UserId;
+    }
+    if (other.Subordinates != 0) {
+      Subordinates = other.Subordinates;
+    }
+    if (other.TotalTax != 0L) {
+      TotalTax = other.TotalTax;
+    }
+    if (other.TodayTax != 0L) {
+      TodayTax = other.TodayTax;
+    }
+    if (other.TodayRatio != 0L) {
+      TodayRatio = other.TodayRatio;
+    }
+    if (other.AgentRatio != 0) {
+      AgentRatio = other.AgentRatio;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          UserId = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          Subordinates = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          TotalTax = input.ReadInt64();
+          break;
+        }
+        case 32: {
+          TodayTax = input.ReadInt64();
+          break;
+        }
+        case 40: {
+          TodayRatio = input.ReadInt64();
+          break;
+        }
+        case 48: {
+          AgentRatio = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          UserId = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          Subordinates = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          TotalTax = input.ReadInt64();
+          break;
+        }
+        case 32: {
+          TodayTax = input.ReadInt64();
+          break;
+        }
+        case 40: {
+          TodayRatio = input.ReadInt64();
+          break;
+        }
+        case 48: {
+          AgentRatio = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
 ///领取返利返回
 /// </summary>
 public sealed partial class MsgRecviveAgentRebateResp : pb::IMessage<MsgRecviveAgentRebateResp>
@@ -19772,7 +20149,7 @@ public sealed partial class MsgRecviveAgentRebateResp : pb::IMessage<MsgRecviveA
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::LoginReflection.Descriptor.MessageTypes[64]; }
+    get { return global::LoginReflection.Descriptor.MessageTypes[65]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

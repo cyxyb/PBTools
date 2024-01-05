@@ -46,7 +46,7 @@ struct TableStruct_Login_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[65]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[66]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -185,6 +185,9 @@ extern MsgRecviveAgentRebateRespDefaultTypeInternal _MsgRecviveAgentRebateResp_d
 class MsgSetSubAgent;
 class MsgSetSubAgentDefaultTypeInternal;
 extern MsgSetSubAgentDefaultTypeInternal _MsgSetSubAgent_default_instance_;
+class MsgSetSubAgentResp;
+class MsgSetSubAgentRespDefaultTypeInternal;
+extern MsgSetSubAgentRespDefaultTypeInternal _MsgSetSubAgentResp_default_instance_;
 class MsgShareData;
 class MsgShareDataDefaultTypeInternal;
 extern MsgShareDataDefaultTypeInternal _MsgShareData_default_instance_;
@@ -293,6 +296,7 @@ template<> ::MsgQueryRebateRecordInfo* Arena::CreateMaybeMessage<::MsgQueryRebat
 template<> ::MsgRechargeInfo* Arena::CreateMaybeMessage<::MsgRechargeInfo>(Arena*);
 template<> ::MsgRecviveAgentRebateResp* Arena::CreateMaybeMessage<::MsgRecviveAgentRebateResp>(Arena*);
 template<> ::MsgSetSubAgent* Arena::CreateMaybeMessage<::MsgSetSubAgent>(Arena*);
+template<> ::MsgSetSubAgentResp* Arena::CreateMaybeMessage<::MsgSetSubAgentResp>(Arena*);
 template<> ::MsgShareData* Arena::CreateMaybeMessage<::MsgShareData>(Arena*);
 template<> ::MsgSubagentInformation* Arena::CreateMaybeMessage<::MsgSubagentInformation>(Arena*);
 template<> ::MsgTopInfo* Arena::CreateMaybeMessage<::MsgTopInfo>(Arena*);
@@ -12017,6 +12021,197 @@ class MsgSetSubAgent PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
+class MsgSetSubAgentResp PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgSetSubAgentResp) */ {
+ public:
+  inline MsgSetSubAgentResp() : MsgSetSubAgentResp(nullptr) {}
+  virtual ~MsgSetSubAgentResp();
+
+  MsgSetSubAgentResp(const MsgSetSubAgentResp& from);
+  MsgSetSubAgentResp(MsgSetSubAgentResp&& from) noexcept
+    : MsgSetSubAgentResp() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgSetSubAgentResp& operator=(const MsgSetSubAgentResp& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgSetSubAgentResp& operator=(MsgSetSubAgentResp&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgSetSubAgentResp& default_instance();
+
+  static inline const MsgSetSubAgentResp* internal_default_instance() {
+    return reinterpret_cast<const MsgSetSubAgentResp*>(
+               &_MsgSetSubAgentResp_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    64;
+
+  friend void swap(MsgSetSubAgentResp& a, MsgSetSubAgentResp& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgSetSubAgentResp* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgSetSubAgentResp* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgSetSubAgentResp* New() const final {
+    return CreateMaybeMessage<MsgSetSubAgentResp>(nullptr);
+  }
+
+  MsgSetSubAgentResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgSetSubAgentResp>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgSetSubAgentResp& from);
+  void MergeFrom(const MsgSetSubAgentResp& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgSetSubAgentResp* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgSetSubAgentResp";
+  }
+  protected:
+  explicit MsgSetSubAgentResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kUserIdFieldNumber = 1,
+    kSubordinatesFieldNumber = 2,
+    kTotalTaxFieldNumber = 3,
+    kTodayTaxFieldNumber = 4,
+    kTodayRatioFieldNumber = 5,
+    kAgentRatioFieldNumber = 6,
+  };
+  // int32 user_id = 1;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 subordinates = 2;
+  void clear_subordinates();
+  ::PROTOBUF_NAMESPACE_ID::int32 subordinates() const;
+  void set_subordinates(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_subordinates() const;
+  void _internal_set_subordinates(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int64 total_tax = 3;
+  void clear_total_tax();
+  ::PROTOBUF_NAMESPACE_ID::int64 total_tax() const;
+  void set_total_tax(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_total_tax() const;
+  void _internal_set_total_tax(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int64 today_tax = 4;
+  void clear_today_tax();
+  ::PROTOBUF_NAMESPACE_ID::int64 today_tax() const;
+  void set_today_tax(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_today_tax() const;
+  void _internal_set_today_tax(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int64 today_ratio = 5;
+  void clear_today_ratio();
+  ::PROTOBUF_NAMESPACE_ID::int64 today_ratio() const;
+  void set_today_ratio(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_today_ratio() const;
+  void _internal_set_today_ratio(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int32 agent_ratio = 6;
+  void clear_agent_ratio();
+  ::PROTOBUF_NAMESPACE_ID::int32 agent_ratio() const;
+  void set_agent_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_agent_ratio() const;
+  void _internal_set_agent_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgSetSubAgentResp)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 subordinates_;
+  ::PROTOBUF_NAMESPACE_ID::int64 total_tax_;
+  ::PROTOBUF_NAMESPACE_ID::int64 today_tax_;
+  ::PROTOBUF_NAMESPACE_ID::int64 today_ratio_;
+  ::PROTOBUF_NAMESPACE_ID::int32 agent_ratio_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
+// -------------------------------------------------------------------
+
 class MsgRecviveAgentRebateResp PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgRecviveAgentRebateResp) */ {
  public:
@@ -12058,7 +12253,7 @@ class MsgRecviveAgentRebateResp PROTOBUF_FINAL :
                &_MsgRecviveAgentRebateResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    64;
+    65;
 
   friend void swap(MsgRecviveAgentRebateResp& a, MsgRecviveAgentRebateResp& b) {
     a.Swap(&b);
@@ -20901,6 +21096,130 @@ inline void MsgSetSubAgent::set_agent_ratio(::PROTOBUF_NAMESPACE_ID::int32 value
 
 // -------------------------------------------------------------------
 
+// MsgSetSubAgentResp
+
+// int32 user_id = 1;
+inline void MsgSetSubAgentResp::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSetSubAgentResp::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSetSubAgentResp::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgSetSubAgentResp.user_id)
+  return _internal_user_id();
+}
+inline void MsgSetSubAgentResp::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgSetSubAgentResp::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgSetSubAgentResp.user_id)
+}
+
+// int32 subordinates = 2;
+inline void MsgSetSubAgentResp::clear_subordinates() {
+  subordinates_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSetSubAgentResp::_internal_subordinates() const {
+  return subordinates_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSetSubAgentResp::subordinates() const {
+  // @@protoc_insertion_point(field_get:MsgSetSubAgentResp.subordinates)
+  return _internal_subordinates();
+}
+inline void MsgSetSubAgentResp::_internal_set_subordinates(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  subordinates_ = value;
+}
+inline void MsgSetSubAgentResp::set_subordinates(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_subordinates(value);
+  // @@protoc_insertion_point(field_set:MsgSetSubAgentResp.subordinates)
+}
+
+// int64 total_tax = 3;
+inline void MsgSetSubAgentResp::clear_total_tax() {
+  total_tax_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSetSubAgentResp::_internal_total_tax() const {
+  return total_tax_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSetSubAgentResp::total_tax() const {
+  // @@protoc_insertion_point(field_get:MsgSetSubAgentResp.total_tax)
+  return _internal_total_tax();
+}
+inline void MsgSetSubAgentResp::_internal_set_total_tax(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  total_tax_ = value;
+}
+inline void MsgSetSubAgentResp::set_total_tax(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_total_tax(value);
+  // @@protoc_insertion_point(field_set:MsgSetSubAgentResp.total_tax)
+}
+
+// int64 today_tax = 4;
+inline void MsgSetSubAgentResp::clear_today_tax() {
+  today_tax_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSetSubAgentResp::_internal_today_tax() const {
+  return today_tax_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSetSubAgentResp::today_tax() const {
+  // @@protoc_insertion_point(field_get:MsgSetSubAgentResp.today_tax)
+  return _internal_today_tax();
+}
+inline void MsgSetSubAgentResp::_internal_set_today_tax(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  today_tax_ = value;
+}
+inline void MsgSetSubAgentResp::set_today_tax(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_today_tax(value);
+  // @@protoc_insertion_point(field_set:MsgSetSubAgentResp.today_tax)
+}
+
+// int64 today_ratio = 5;
+inline void MsgSetSubAgentResp::clear_today_ratio() {
+  today_ratio_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSetSubAgentResp::_internal_today_ratio() const {
+  return today_ratio_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSetSubAgentResp::today_ratio() const {
+  // @@protoc_insertion_point(field_get:MsgSetSubAgentResp.today_ratio)
+  return _internal_today_ratio();
+}
+inline void MsgSetSubAgentResp::_internal_set_today_ratio(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  today_ratio_ = value;
+}
+inline void MsgSetSubAgentResp::set_today_ratio(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_today_ratio(value);
+  // @@protoc_insertion_point(field_set:MsgSetSubAgentResp.today_ratio)
+}
+
+// int32 agent_ratio = 6;
+inline void MsgSetSubAgentResp::clear_agent_ratio() {
+  agent_ratio_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSetSubAgentResp::_internal_agent_ratio() const {
+  return agent_ratio_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSetSubAgentResp::agent_ratio() const {
+  // @@protoc_insertion_point(field_get:MsgSetSubAgentResp.agent_ratio)
+  return _internal_agent_ratio();
+}
+inline void MsgSetSubAgentResp::_internal_set_agent_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  agent_ratio_ = value;
+}
+inline void MsgSetSubAgentResp::set_agent_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_agent_ratio(value);
+  // @@protoc_insertion_point(field_set:MsgSetSubAgentResp.agent_ratio)
+}
+
+// -------------------------------------------------------------------
+
 // MsgRecviveAgentRebateResp
 
 // int32 code = 1;
@@ -20946,6 +21265,8 @@ inline void MsgRecviveAgentRebateResp::set_cur_rebate(::PROTOBUF_NAMESPACE_ID::i
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

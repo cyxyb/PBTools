@@ -576,7 +576,16 @@ message MsgSetSubAgent
 	int32 user_id 		= 1;			//玩家id
 	int32 agent_ratio 	= 2;			//分成比例
 }
-
+//设置代理返回
+message MsgSetSubAgentResp
+{
+	int32 user_id 			= 1;		//下级userid
+	int32 subordinates 		= 2;		//当前id下级人数
+	int64 total_tax 		= 3;		//总税收
+	int64 today_tax 		= 4;		//今日税收
+	int64 today_ratio 		= 5;		//今日返利
+	int32 agent_ratio 		= 6;		//分成比例
+}
 //领取返利返回
 message MsgRecviveAgentRebateResp
 {

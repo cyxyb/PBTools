@@ -708,7 +708,7 @@ public enum EMsgIDLogin {
   /// </summary>
   [pbr::OriginalName("MsgIDAgent_InfiniteAgentSetSub")] MsgIdagentInfiniteAgentSetSub = 129,
   /// <summary>
-  ///无限代理设置下级代理返回(MsgCommonN32)
+  ///无限代理设置下级代理返回(MsgSetSubAgentResp)
   /// </summary>
   [pbr::OriginalName("MsgIDAgent_InfiniteAgentSetSubResp")] MsgIdagentInfiniteAgentSetSubResp = 130,
   /// <summary>
