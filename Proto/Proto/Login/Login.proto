@@ -544,7 +544,7 @@ message MsgInfiniteAgentQueryMyInfoResp
 	int32 		bind_id 		= 3;	//上级id
 	int64 		cur_rebate 		= 4;	//当前返利
 	int64 		total_rebate 	= 5;	//总返利
-	int64		game_rebate		= 6;	//游戏返利
+	int64		game_rebate		= 6;	//游戏返利	
 }	       
 //请求下级数据
 message MsgInfiniteAgentQuerySubInfo
