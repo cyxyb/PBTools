@@ -163,7 +163,15 @@ public static partial class LoginReflection {
           "Z0ludml0ZVVzZXJJbmZvEhEKCXZpcF9sZXZlbBgBIAEoBRITCgtpbnZpdGVf",
           "dGltZRgCIAEoCRIUCgxiZWF1dGlmdWxfaWQYAyABKAUSEAoIbmlja25hbWUY",
           "BCABKAkiNQoRTXNnSW52aXRlVXNlclJlc3ASIAoEaW5mbxgBIAMoCzISLk1z",
-          "Z0ludml0ZVVzZXJJbmZvYgZwcm90bzM="));
+          "Z0ludml0ZVVzZXJJbmZvIn8KEE1zZ1dlZWtNb250aEluZm8SEQoJY2FyZF90",
+          "eXBlGAEgASgFEhAKCGJ1eV90aW1lGAIgASgFEg8KB2lzX3BpY2sYAyABKAUS",
+          "DQoFYXdhcmQYBCABKAUSEgoKY2FyZF9sZXZlbBgFIAEoBRISCgpyZW1haW5f",
+          "ZGF5GAYgASgFIm0KD01zZ1dlZWtNb250aENmZxIRCgljYXJkX3R5cGUYASAB",
+          "KAUSEQoJYnV5X21vbmV5GAIgASgFEg0KBWF3YXJkGAMgASgFEhIKCmNhcmRf",
+          "bGV2ZWwYBCABKAUSEQoJdG90YWxfZGF5GAUgASgFImUKF01zZ0dldFdlZWtN",
+          "b250aEluZm9SZXNwEiMKCWNhcmRzX2NmZxgBIAMoCzIQLk1zZ1dlZWtNb250",
+          "aENmZxIlCgpjYXJkc19pbmZvGAIgAygLMhEuTXNnV2Vla01vbnRoSW5mb2IG",
+          "cHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -224,7 +232,10 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgCDKExchangeResp), global::MsgCDKExchangeResp.Parser, new[]{ "RetCode", "Info" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPersonalDetailsRespAdd), global::MsgPersonalDetailsRespAdd.Parser, new[]{ "Type", "Msg" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgInviteUserInfo), global::MsgInviteUserInfo.Parser, new[]{ "VipLevel", "InviteTime", "BeautifulId", "Nickname" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgInviteUserResp), global::MsgInviteUserResp.Parser, new[]{ "Info" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgInviteUserResp), global::MsgInviteUserResp.Parser, new[]{ "Info" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgWeekMonthInfo), global::MsgWeekMonthInfo.Parser, new[]{ "CardType", "BuyTime", "IsPick", "Award", "CardLevel", "RemainDay" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgWeekMonthCfg), global::MsgWeekMonthCfg.Parser, new[]{ "CardType", "BuyMoney", "Award", "CardLevel", "TotalDay" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgGetWeekMonthInfoResp), global::MsgGetWeekMonthInfoResp.Parser, new[]{ "CardsCfg", "CardsInfo" }, null, null, null, null)
         }));
   }
   #endregion
@@ -17926,6 +17937,908 @@ public sealed partial class MsgInviteUserResp : pb::IMessage<MsgInviteUserResp>
           break;
         case 10: {
           info_.AddEntriesFrom(ref input, _repeated_info_codec);
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///查询玩家周卡月卡信息
+/// </summary>
+public sealed partial class MsgWeekMonthInfo : pb::IMessage<MsgWeekMonthInfo>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgWeekMonthInfo> _parser = new pb::MessageParser<MsgWeekMonthInfo>(() => new MsgWeekMonthInfo());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgWeekMonthInfo> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[58]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgWeekMonthInfo() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgWeekMonthInfo(MsgWeekMonthInfo other) : this() {
+    cardType_ = other.cardType_;
+    buyTime_ = other.buyTime_;
+    isPick_ = other.isPick_;
+    award_ = other.award_;
+    cardLevel_ = other.cardLevel_;
+    remainDay_ = other.remainDay_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgWeekMonthInfo Clone() {
+    return new MsgWeekMonthInfo(this);
+  }
+
+  /// <summary>Field number for the "card_type" field.</summary>
+  public const int CardTypeFieldNumber = 1;
+  private int cardType_;
+  /// <summary>
+  ///卡类型
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CardType {
+    get { return cardType_; }
+    set {
+      cardType_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "buy_time" field.</summary>
+  public const int BuyTimeFieldNumber = 2;
+  private int buyTime_;
+  /// <summary>
+  ///购买时间
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int BuyTime {
+    get { return buyTime_; }
+    set {
+      buyTime_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "is_pick" field.</summary>
+  public const int IsPickFieldNumber = 3;
+  private int isPick_;
+  /// <summary>
+  ///当天是否领
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int IsPick {
+    get { return isPick_; }
+    set {
+      isPick_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "award" field.</summary>
+  public const int AwardFieldNumber = 4;
+  private int award_;
+  /// <summary>
+  ///可领数量
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Award {
+    get { return award_; }
+    set {
+      award_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "card_level" field.</summary>
+  public const int CardLevelFieldNumber = 5;
+  private int cardLevel_;
+  /// <summary>
+  ///卡等级
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CardLevel {
+    get { return cardLevel_; }
+    set {
+      cardLevel_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "remain_day" field.</summary>
+  public const int RemainDayFieldNumber = 6;
+  private int remainDay_;
+  /// <summary>
+  ///剩余可领天数
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int RemainDay {
+    get { return remainDay_; }
+    set {
+      remainDay_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgWeekMonthInfo);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgWeekMonthInfo other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (CardType != other.CardType) return false;
+    if (BuyTime != other.BuyTime) return false;
+    if (IsPick != other.IsPick) return false;
+    if (Award != other.Award) return false;
+    if (CardLevel != other.CardLevel) return false;
+    if (RemainDay != other.RemainDay) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (CardType != 0) hash ^= CardType.GetHashCode();
+    if (BuyTime != 0) hash ^= BuyTime.GetHashCode();
+    if (IsPick != 0) hash ^= IsPick.GetHashCode();
+    if (Award != 0) hash ^= Award.GetHashCode();
+    if (CardLevel != 0) hash ^= CardLevel.GetHashCode();
+    if (RemainDay != 0) hash ^= RemainDay.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (CardType != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(CardType);
+    }
+    if (BuyTime != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(BuyTime);
+    }
+    if (IsPick != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(IsPick);
+    }
+    if (Award != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(Award);
+    }
+    if (CardLevel != 0) {
+      output.WriteRawTag(40);
+      output.WriteInt32(CardLevel);
+    }
+    if (RemainDay != 0) {
+      output.WriteRawTag(48);
+      output.WriteInt32(RemainDay);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (CardType != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(CardType);
+    }
+    if (BuyTime != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(BuyTime);
+    }
+    if (IsPick != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(IsPick);
+    }
+    if (Award != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(Award);
+    }
+    if (CardLevel != 0) {
+      output.WriteRawTag(40);
+      output.WriteInt32(CardLevel);
+    }
+    if (RemainDay != 0) {
+      output.WriteRawTag(48);
+      output.WriteInt32(RemainDay);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (CardType != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(CardType);
+    }
+    if (BuyTime != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(BuyTime);
+    }
+    if (IsPick != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(IsPick);
+    }
+    if (Award != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Award);
+    }
+    if (CardLevel != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(CardLevel);
+    }
+    if (RemainDay != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(RemainDay);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgWeekMonthInfo other) {
+    if (other == null) {
+      return;
+    }
+    if (other.CardType != 0) {
+      CardType = other.CardType;
+    }
+    if (other.BuyTime != 0) {
+      BuyTime = other.BuyTime;
+    }
+    if (other.IsPick != 0) {
+      IsPick = other.IsPick;
+    }
+    if (other.Award != 0) {
+      Award = other.Award;
+    }
+    if (other.CardLevel != 0) {
+      CardLevel = other.CardLevel;
+    }
+    if (other.RemainDay != 0) {
+      RemainDay = other.RemainDay;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          CardType = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          BuyTime = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          IsPick = input.ReadInt32();
+          break;
+        }
+        case 32: {
+          Award = input.ReadInt32();
+          break;
+        }
+        case 40: {
+          CardLevel = input.ReadInt32();
+          break;
+        }
+        case 48: {
+          RemainDay = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          CardType = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          BuyTime = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          IsPick = input.ReadInt32();
+          break;
+        }
+        case 32: {
+          Award = input.ReadInt32();
+          break;
+        }
+        case 40: {
+          CardLevel = input.ReadInt32();
+          break;
+        }
+        case 48: {
+          RemainDay = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///周卡月卡配置
+/// </summary>
+public sealed partial class MsgWeekMonthCfg : pb::IMessage<MsgWeekMonthCfg>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgWeekMonthCfg> _parser = new pb::MessageParser<MsgWeekMonthCfg>(() => new MsgWeekMonthCfg());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgWeekMonthCfg> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[59]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgWeekMonthCfg() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgWeekMonthCfg(MsgWeekMonthCfg other) : this() {
+    cardType_ = other.cardType_;
+    buyMoney_ = other.buyMoney_;
+    award_ = other.award_;
+    cardLevel_ = other.cardLevel_;
+    totalDay_ = other.totalDay_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgWeekMonthCfg Clone() {
+    return new MsgWeekMonthCfg(this);
+  }
+
+  /// <summary>Field number for the "card_type" field.</summary>
+  public const int CardTypeFieldNumber = 1;
+  private int cardType_;
+  /// <summary>
+  ///卡类型
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CardType {
+    get { return cardType_; }
+    set {
+      cardType_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "buy_money" field.</summary>
+  public const int BuyMoneyFieldNumber = 2;
+  private int buyMoney_;
+  /// <summary>
+  ///购买所需钱
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int BuyMoney {
+    get { return buyMoney_; }
+    set {
+      buyMoney_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "award" field.</summary>
+  public const int AwardFieldNumber = 3;
+  private int award_;
+  /// <summary>
+  ///可领数量
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Award {
+    get { return award_; }
+    set {
+      award_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "card_level" field.</summary>
+  public const int CardLevelFieldNumber = 4;
+  private int cardLevel_;
+  /// <summary>
+  ///卡等级
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CardLevel {
+    get { return cardLevel_; }
+    set {
+      cardLevel_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "total_day" field.</summary>
+  public const int TotalDayFieldNumber = 5;
+  private int totalDay_;
+  /// <summary>
+  ///总可领天数
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int TotalDay {
+    get { return totalDay_; }
+    set {
+      totalDay_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgWeekMonthCfg);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgWeekMonthCfg other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (CardType != other.CardType) return false;
+    if (BuyMoney != other.BuyMoney) return false;
+    if (Award != other.Award) return false;
+    if (CardLevel != other.CardLevel) return false;
+    if (TotalDay != other.TotalDay) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (CardType != 0) hash ^= CardType.GetHashCode();
+    if (BuyMoney != 0) hash ^= BuyMoney.GetHashCode();
+    if (Award != 0) hash ^= Award.GetHashCode();
+    if (CardLevel != 0) hash ^= CardLevel.GetHashCode();
+    if (TotalDay != 0) hash ^= TotalDay.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (CardType != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(CardType);
+    }
+    if (BuyMoney != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(BuyMoney);
+    }
+    if (Award != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(Award);
+    }
+    if (CardLevel != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(CardLevel);
+    }
+    if (TotalDay != 0) {
+      output.WriteRawTag(40);
+      output.WriteInt32(TotalDay);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (CardType != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(CardType);
+    }
+    if (BuyMoney != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(BuyMoney);
+    }
+    if (Award != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(Award);
+    }
+    if (CardLevel != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(CardLevel);
+    }
+    if (TotalDay != 0) {
+      output.WriteRawTag(40);
+      output.WriteInt32(TotalDay);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (CardType != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(CardType);
+    }
+    if (BuyMoney != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(BuyMoney);
+    }
+    if (Award != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Award);
+    }
+    if (CardLevel != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(CardLevel);
+    }
+    if (TotalDay != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(TotalDay);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgWeekMonthCfg other) {
+    if (other == null) {
+      return;
+    }
+    if (other.CardType != 0) {
+      CardType = other.CardType;
+    }
+    if (other.BuyMoney != 0) {
+      BuyMoney = other.BuyMoney;
+    }
+    if (other.Award != 0) {
+      Award = other.Award;
+    }
+    if (other.CardLevel != 0) {
+      CardLevel = other.CardLevel;
+    }
+    if (other.TotalDay != 0) {
+      TotalDay = other.TotalDay;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          CardType = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          BuyMoney = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          Award = input.ReadInt32();
+          break;
+        }
+        case 32: {
+          CardLevel = input.ReadInt32();
+          break;
+        }
+        case 40: {
+          TotalDay = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          CardType = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          BuyMoney = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          Award = input.ReadInt32();
+          break;
+        }
+        case 32: {
+          CardLevel = input.ReadInt32();
+          break;
+        }
+        case 40: {
+          TotalDay = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///查询玩家周卡月卡信息
+/// </summary>
+public sealed partial class MsgGetWeekMonthInfoResp : pb::IMessage<MsgGetWeekMonthInfoResp>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgGetWeekMonthInfoResp> _parser = new pb::MessageParser<MsgGetWeekMonthInfoResp>(() => new MsgGetWeekMonthInfoResp());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgGetWeekMonthInfoResp> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[60]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgGetWeekMonthInfoResp() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgGetWeekMonthInfoResp(MsgGetWeekMonthInfoResp other) : this() {
+    cardsCfg_ = other.cardsCfg_.Clone();
+    cardsInfo_ = other.cardsInfo_.Clone();
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgGetWeekMonthInfoResp Clone() {
+    return new MsgGetWeekMonthInfoResp(this);
+  }
+
+  /// <summary>Field number for the "cards_cfg" field.</summary>
+  public const int CardsCfgFieldNumber = 1;
+  private static readonly pb::FieldCodec<global::MsgWeekMonthCfg> _repeated_cardsCfg_codec
+      = pb::FieldCodec.ForMessage(10, global::MsgWeekMonthCfg.Parser);
+  private readonly pbc::RepeatedField<global::MsgWeekMonthCfg> cardsCfg_ = new pbc::RepeatedField<global::MsgWeekMonthCfg>();
+  /// <summary>
+  ///卡配置
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<global::MsgWeekMonthCfg> CardsCfg {
+    get { return cardsCfg_; }
+  }
+
+  /// <summary>Field number for the "cards_info" field.</summary>
+  public const int CardsInfoFieldNumber = 2;
+  private static readonly pb::FieldCodec<global::MsgWeekMonthInfo> _repeated_cardsInfo_codec
+      = pb::FieldCodec.ForMessage(18, global::MsgWeekMonthInfo.Parser);
+  private readonly pbc::RepeatedField<global::MsgWeekMonthInfo> cardsInfo_ = new pbc::RepeatedField<global::MsgWeekMonthInfo>();
+  /// <summary>
+  ///已购买卡信息
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<global::MsgWeekMonthInfo> CardsInfo {
+    get { return cardsInfo_; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgGetWeekMonthInfoResp);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgGetWeekMonthInfoResp other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if(!cardsCfg_.Equals(other.cardsCfg_)) return false;
+    if(!cardsInfo_.Equals(other.cardsInfo_)) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    hash ^= cardsCfg_.GetHashCode();
+    hash ^= cardsInfo_.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    cardsCfg_.WriteTo(output, _repeated_cardsCfg_codec);
+    cardsInfo_.WriteTo(output, _repeated_cardsInfo_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    cardsCfg_.WriteTo(ref output, _repeated_cardsCfg_codec);
+    cardsInfo_.WriteTo(ref output, _repeated_cardsInfo_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    size += cardsCfg_.CalculateSize(_repeated_cardsCfg_codec);
+    size += cardsInfo_.CalculateSize(_repeated_cardsInfo_codec);
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgGetWeekMonthInfoResp other) {
+    if (other == null) {
+      return;
+    }
+    cardsCfg_.Add(other.cardsCfg_);
+    cardsInfo_.Add(other.cardsInfo_);
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 10: {
+          cardsCfg_.AddEntriesFrom(input, _repeated_cardsCfg_codec);
+          break;
+        }
+        case 18: {
+          cardsInfo_.AddEntriesFrom(input, _repeated_cardsInfo_codec);
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 10: {
+          cardsCfg_.AddEntriesFrom(ref input, _repeated_cardsCfg_codec);
+          break;
+        }
+        case 18: {
+          cardsInfo_.AddEntriesFrom(ref input, _repeated_cardsInfo_codec);
           break;
         }
       }

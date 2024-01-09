@@ -31,6 +31,8 @@ extern PROTOBUF_INTERNAL_EXPORT_Login_2eproto ::PROTOBUF_NAMESPACE_ID::internal:
 extern PROTOBUF_INTERNAL_EXPORT_Login_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgTurnPlayInfo_Login_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_Login_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgTurntableHistoryData_Login_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_Login_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgVIPInfo_Login_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_Login_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgWeekMonthCfg_Login_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_Login_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgWeekMonthInfo_Login_2eproto;
 class MsgPlayerLoginDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgPlayerLogin> _instance;
@@ -263,6 +265,18 @@ class MsgInviteUserRespDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgInviteUserResp> _instance;
 } _MsgInviteUserResp_default_instance_;
+class MsgWeekMonthInfoDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgWeekMonthInfo> _instance;
+} _MsgWeekMonthInfo_default_instance_;
+class MsgWeekMonthCfgDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgWeekMonthCfg> _instance;
+} _MsgWeekMonthCfg_default_instance_;
+class MsgGetWeekMonthInfoRespDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgGetWeekMonthInfoResp> _instance;
+} _MsgGetWeekMonthInfoResp_default_instance_;
 static void InitDefaultsscc_info_ActiveInfoRet_Login_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -474,6 +488,21 @@ static void InitDefaultsscc_info_MsgGetRank_Login_2eproto() {
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgGetRank_Login_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgGetRank_Login_2eproto}, {}};
+
+static void InitDefaultsscc_info_MsgGetWeekMonthInfoResp_Login_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_MsgGetWeekMonthInfoResp_default_instance_;
+    new (ptr) ::MsgGetWeekMonthInfoResp();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_MsgGetWeekMonthInfoResp_Login_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_MsgGetWeekMonthInfoResp_Login_2eproto}, {
+      &scc_info_MsgWeekMonthCfg_Login_2eproto.base,
+      &scc_info_MsgWeekMonthInfo_Login_2eproto.base,}};
 
 static void InitDefaultsscc_info_MsgInviteAwardConfig_Login_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -1034,7 +1063,33 @@ static void InitDefaultsscc_info_MsgVIPInfo_Login_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgVIPInfo_Login_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgVIPInfo_Login_2eproto}, {}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Login_2eproto[58];
+static void InitDefaultsscc_info_MsgWeekMonthCfg_Login_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_MsgWeekMonthCfg_default_instance_;
+    new (ptr) ::MsgWeekMonthCfg();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgWeekMonthCfg_Login_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgWeekMonthCfg_Login_2eproto}, {}};
+
+static void InitDefaultsscc_info_MsgWeekMonthInfo_Login_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_MsgWeekMonthInfo_default_instance_;
+    new (ptr) ::MsgWeekMonthInfo();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgWeekMonthInfo_Login_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgWeekMonthInfo_Login_2eproto}, {}};
+
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Login_2eproto[61];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_Login_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_Login_2eproto = nullptr;
 
@@ -1583,6 +1638,34 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::MsgInviteUserResp, info_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::MsgWeekMonthInfo, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::MsgWeekMonthInfo, card_type_),
+  PROTOBUF_FIELD_OFFSET(::MsgWeekMonthInfo, buy_time_),
+  PROTOBUF_FIELD_OFFSET(::MsgWeekMonthInfo, is_pick_),
+  PROTOBUF_FIELD_OFFSET(::MsgWeekMonthInfo, award_),
+  PROTOBUF_FIELD_OFFSET(::MsgWeekMonthInfo, card_level_),
+  PROTOBUF_FIELD_OFFSET(::MsgWeekMonthInfo, remain_day_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::MsgWeekMonthCfg, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::MsgWeekMonthCfg, card_type_),
+  PROTOBUF_FIELD_OFFSET(::MsgWeekMonthCfg, buy_money_),
+  PROTOBUF_FIELD_OFFSET(::MsgWeekMonthCfg, award_),
+  PROTOBUF_FIELD_OFFSET(::MsgWeekMonthCfg, card_level_),
+  PROTOBUF_FIELD_OFFSET(::MsgWeekMonthCfg, total_day_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::MsgGetWeekMonthInfoResp, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::MsgGetWeekMonthInfoResp, cards_cfg_),
+  PROTOBUF_FIELD_OFFSET(::MsgGetWeekMonthInfoResp, cards_info_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::MsgPlayerLogin)},
@@ -1643,6 +1726,9 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 522, -1, sizeof(::MsgPersonalDetailsRespAdd)},
   { 529, -1, sizeof(::MsgInviteUserInfo)},
   { 538, -1, sizeof(::MsgInviteUserResp)},
+  { 544, -1, sizeof(::MsgWeekMonthInfo)},
+  { 555, -1, sizeof(::MsgWeekMonthCfg)},
+  { 565, -1, sizeof(::MsgGetWeekMonthInfoResp)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -1704,6 +1790,9 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgPersonalDetailsRespAdd_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgInviteUserInfo_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgInviteUserResp_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgWeekMonthInfo_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgWeekMonthCfg_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgGetWeekMonthInfoResp_default_instance_),
 };
 
 const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -1865,11 +1954,20 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "nviteUserInfo\022\021\n\tvip_level\030\001 \001(\005\022\023\n\013invi"
   "te_time\030\002 \001(\t\022\024\n\014beautiful_id\030\003 \001(\005\022\020\n\010n"
   "ickname\030\004 \001(\t\"5\n\021MsgInviteUserResp\022 \n\004in"
-  "fo\030\001 \003(\0132\022.MsgInviteUserInfob\006proto3"
+  "fo\030\001 \003(\0132\022.MsgInviteUserInfo\"\177\n\020MsgWeekM"
+  "onthInfo\022\021\n\tcard_type\030\001 \001(\005\022\020\n\010buy_time\030"
+  "\002 \001(\005\022\017\n\007is_pick\030\003 \001(\005\022\r\n\005award\030\004 \001(\005\022\022\n"
+  "\ncard_level\030\005 \001(\005\022\022\n\nremain_day\030\006 \001(\005\"m\n"
+  "\017MsgWeekMonthCfg\022\021\n\tcard_type\030\001 \001(\005\022\021\n\tb"
+  "uy_money\030\002 \001(\005\022\r\n\005award\030\003 \001(\005\022\022\n\ncard_le"
+  "vel\030\004 \001(\005\022\021\n\ttotal_day\030\005 \001(\005\"e\n\027MsgGetWe"
+  "ekMonthInfoResp\022#\n\tcards_cfg\030\001 \003(\0132\020.Msg"
+  "WeekMonthCfg\022%\n\ncards_info\030\002 \003(\0132\021.MsgWe"
+  "ekMonthInfob\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Login_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Login_2eproto_sccs[58] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Login_2eproto_sccs[61] = {
   &scc_info_ActiveInfoRet_Login_2eproto.base,
   &scc_info_MsgActiveInfoCSPick_Login_2eproto.base,
   &scc_info_MsgActiveInfoSCPick_Login_2eproto.base,
@@ -1886,6 +1984,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
   &scc_info_MsgForgetPassword_Login_2eproto.base,
   &scc_info_MsgGetAvatarInfo_Login_2eproto.base,
   &scc_info_MsgGetRank_Login_2eproto.base,
+  &scc_info_MsgGetWeekMonthInfoResp_Login_2eproto.base,
   &scc_info_MsgInviteAwardConfig_Login_2eproto.base,
   &scc_info_MsgInviteAwardInfo_Login_2eproto.base,
   &scc_info_MsgInviteUserInfo_Login_2eproto.base,
@@ -1928,13 +2027,15 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
   &scc_info_MsgUpgradeVIP_Login_2eproto.base,
   &scc_info_MsgVIPConfig_Login_2eproto.base,
   &scc_info_MsgVIPInfo_Login_2eproto.base,
+  &scc_info_MsgWeekMonthCfg_Login_2eproto.base,
+  &scc_info_MsgWeekMonthInfo_Login_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Login_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Login_2eproto = {
-  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 6356,
-  &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 58, 0,
+  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 6699,
+  &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 61, 0,
   schemas, file_default_instances, TableStruct_Login_2eproto::offsets,
-  file_level_metadata_Login_2eproto, 58, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
+  file_level_metadata_Login_2eproto, 61, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -19202,6 +19303,857 @@ void MsgInviteUserResp::InternalSwap(MsgInviteUserResp* other) {
 }
 
 
+// ===================================================================
+
+class MsgWeekMonthInfo::_Internal {
+ public:
+};
+
+MsgWeekMonthInfo::MsgWeekMonthInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:MsgWeekMonthInfo)
+}
+MsgWeekMonthInfo::MsgWeekMonthInfo(const MsgWeekMonthInfo& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&card_type_, &from.card_type_,
+    static_cast<size_t>(reinterpret_cast<char*>(&remain_day_) -
+    reinterpret_cast<char*>(&card_type_)) + sizeof(remain_day_));
+  // @@protoc_insertion_point(copy_constructor:MsgWeekMonthInfo)
+}
+
+void MsgWeekMonthInfo::SharedCtor() {
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&card_type_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&remain_day_) -
+      reinterpret_cast<char*>(&card_type_)) + sizeof(remain_day_));
+}
+
+MsgWeekMonthInfo::~MsgWeekMonthInfo() {
+  // @@protoc_insertion_point(destructor:MsgWeekMonthInfo)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void MsgWeekMonthInfo::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void MsgWeekMonthInfo::ArenaDtor(void* object) {
+  MsgWeekMonthInfo* _this = reinterpret_cast< MsgWeekMonthInfo* >(object);
+  (void)_this;
+}
+void MsgWeekMonthInfo::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void MsgWeekMonthInfo::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const MsgWeekMonthInfo& MsgWeekMonthInfo::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgWeekMonthInfo_Login_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void MsgWeekMonthInfo::Clear() {
+// @@protoc_insertion_point(message_clear_start:MsgWeekMonthInfo)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&card_type_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&remain_day_) -
+      reinterpret_cast<char*>(&card_type_)) + sizeof(remain_day_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* MsgWeekMonthInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 card_type = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          card_type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 buy_time = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          buy_time_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 is_pick = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          is_pick_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 award = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          award_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 card_level = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          card_level_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 remain_day = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+          remain_day_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* MsgWeekMonthInfo::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:MsgWeekMonthInfo)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 card_type = 1;
+  if (this->card_type() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_card_type(), target);
+  }
+
+  // int32 buy_time = 2;
+  if (this->buy_time() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_buy_time(), target);
+  }
+
+  // int32 is_pick = 3;
+  if (this->is_pick() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_is_pick(), target);
+  }
+
+  // int32 award = 4;
+  if (this->award() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_award(), target);
+  }
+
+  // int32 card_level = 5;
+  if (this->card_level() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_card_level(), target);
+  }
+
+  // int32 remain_day = 6;
+  if (this->remain_day() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_remain_day(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:MsgWeekMonthInfo)
+  return target;
+}
+
+size_t MsgWeekMonthInfo::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:MsgWeekMonthInfo)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // int32 card_type = 1;
+  if (this->card_type() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_card_type());
+  }
+
+  // int32 buy_time = 2;
+  if (this->buy_time() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_buy_time());
+  }
+
+  // int32 is_pick = 3;
+  if (this->is_pick() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_is_pick());
+  }
+
+  // int32 award = 4;
+  if (this->award() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_award());
+  }
+
+  // int32 card_level = 5;
+  if (this->card_level() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_card_level());
+  }
+
+  // int32 remain_day = 6;
+  if (this->remain_day() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_remain_day());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void MsgWeekMonthInfo::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:MsgWeekMonthInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  const MsgWeekMonthInfo* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgWeekMonthInfo>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgWeekMonthInfo)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgWeekMonthInfo)
+    MergeFrom(*source);
+  }
+}
+
+void MsgWeekMonthInfo::MergeFrom(const MsgWeekMonthInfo& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:MsgWeekMonthInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.card_type() != 0) {
+    _internal_set_card_type(from._internal_card_type());
+  }
+  if (from.buy_time() != 0) {
+    _internal_set_buy_time(from._internal_buy_time());
+  }
+  if (from.is_pick() != 0) {
+    _internal_set_is_pick(from._internal_is_pick());
+  }
+  if (from.award() != 0) {
+    _internal_set_award(from._internal_award());
+  }
+  if (from.card_level() != 0) {
+    _internal_set_card_level(from._internal_card_level());
+  }
+  if (from.remain_day() != 0) {
+    _internal_set_remain_day(from._internal_remain_day());
+  }
+}
+
+void MsgWeekMonthInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:MsgWeekMonthInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void MsgWeekMonthInfo::CopyFrom(const MsgWeekMonthInfo& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:MsgWeekMonthInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool MsgWeekMonthInfo::IsInitialized() const {
+  return true;
+}
+
+void MsgWeekMonthInfo::InternalSwap(MsgWeekMonthInfo* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(MsgWeekMonthInfo, remain_day_)
+      + sizeof(MsgWeekMonthInfo::remain_day_)
+      - PROTOBUF_FIELD_OFFSET(MsgWeekMonthInfo, card_type_)>(
+          reinterpret_cast<char*>(&card_type_),
+          reinterpret_cast<char*>(&other->card_type_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata MsgWeekMonthInfo::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class MsgWeekMonthCfg::_Internal {
+ public:
+};
+
+MsgWeekMonthCfg::MsgWeekMonthCfg(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:MsgWeekMonthCfg)
+}
+MsgWeekMonthCfg::MsgWeekMonthCfg(const MsgWeekMonthCfg& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&card_type_, &from.card_type_,
+    static_cast<size_t>(reinterpret_cast<char*>(&total_day_) -
+    reinterpret_cast<char*>(&card_type_)) + sizeof(total_day_));
+  // @@protoc_insertion_point(copy_constructor:MsgWeekMonthCfg)
+}
+
+void MsgWeekMonthCfg::SharedCtor() {
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&card_type_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&total_day_) -
+      reinterpret_cast<char*>(&card_type_)) + sizeof(total_day_));
+}
+
+MsgWeekMonthCfg::~MsgWeekMonthCfg() {
+  // @@protoc_insertion_point(destructor:MsgWeekMonthCfg)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void MsgWeekMonthCfg::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void MsgWeekMonthCfg::ArenaDtor(void* object) {
+  MsgWeekMonthCfg* _this = reinterpret_cast< MsgWeekMonthCfg* >(object);
+  (void)_this;
+}
+void MsgWeekMonthCfg::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void MsgWeekMonthCfg::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const MsgWeekMonthCfg& MsgWeekMonthCfg::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgWeekMonthCfg_Login_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void MsgWeekMonthCfg::Clear() {
+// @@protoc_insertion_point(message_clear_start:MsgWeekMonthCfg)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&card_type_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&total_day_) -
+      reinterpret_cast<char*>(&card_type_)) + sizeof(total_day_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* MsgWeekMonthCfg::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 card_type = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          card_type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 buy_money = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          buy_money_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 award = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          award_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 card_level = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          card_level_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 total_day = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          total_day_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* MsgWeekMonthCfg::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:MsgWeekMonthCfg)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 card_type = 1;
+  if (this->card_type() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_card_type(), target);
+  }
+
+  // int32 buy_money = 2;
+  if (this->buy_money() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_buy_money(), target);
+  }
+
+  // int32 award = 3;
+  if (this->award() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_award(), target);
+  }
+
+  // int32 card_level = 4;
+  if (this->card_level() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_card_level(), target);
+  }
+
+  // int32 total_day = 5;
+  if (this->total_day() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_total_day(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:MsgWeekMonthCfg)
+  return target;
+}
+
+size_t MsgWeekMonthCfg::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:MsgWeekMonthCfg)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // int32 card_type = 1;
+  if (this->card_type() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_card_type());
+  }
+
+  // int32 buy_money = 2;
+  if (this->buy_money() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_buy_money());
+  }
+
+  // int32 award = 3;
+  if (this->award() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_award());
+  }
+
+  // int32 card_level = 4;
+  if (this->card_level() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_card_level());
+  }
+
+  // int32 total_day = 5;
+  if (this->total_day() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_total_day());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void MsgWeekMonthCfg::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:MsgWeekMonthCfg)
+  GOOGLE_DCHECK_NE(&from, this);
+  const MsgWeekMonthCfg* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgWeekMonthCfg>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgWeekMonthCfg)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgWeekMonthCfg)
+    MergeFrom(*source);
+  }
+}
+
+void MsgWeekMonthCfg::MergeFrom(const MsgWeekMonthCfg& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:MsgWeekMonthCfg)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.card_type() != 0) {
+    _internal_set_card_type(from._internal_card_type());
+  }
+  if (from.buy_money() != 0) {
+    _internal_set_buy_money(from._internal_buy_money());
+  }
+  if (from.award() != 0) {
+    _internal_set_award(from._internal_award());
+  }
+  if (from.card_level() != 0) {
+    _internal_set_card_level(from._internal_card_level());
+  }
+  if (from.total_day() != 0) {
+    _internal_set_total_day(from._internal_total_day());
+  }
+}
+
+void MsgWeekMonthCfg::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:MsgWeekMonthCfg)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void MsgWeekMonthCfg::CopyFrom(const MsgWeekMonthCfg& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:MsgWeekMonthCfg)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool MsgWeekMonthCfg::IsInitialized() const {
+  return true;
+}
+
+void MsgWeekMonthCfg::InternalSwap(MsgWeekMonthCfg* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(MsgWeekMonthCfg, total_day_)
+      + sizeof(MsgWeekMonthCfg::total_day_)
+      - PROTOBUF_FIELD_OFFSET(MsgWeekMonthCfg, card_type_)>(
+          reinterpret_cast<char*>(&card_type_),
+          reinterpret_cast<char*>(&other->card_type_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata MsgWeekMonthCfg::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class MsgGetWeekMonthInfoResp::_Internal {
+ public:
+};
+
+MsgGetWeekMonthInfoResp::MsgGetWeekMonthInfoResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  cards_cfg_(arena),
+  cards_info_(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:MsgGetWeekMonthInfoResp)
+}
+MsgGetWeekMonthInfoResp::MsgGetWeekMonthInfoResp(const MsgGetWeekMonthInfoResp& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      cards_cfg_(from.cards_cfg_),
+      cards_info_(from.cards_info_) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:MsgGetWeekMonthInfoResp)
+}
+
+void MsgGetWeekMonthInfoResp::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgGetWeekMonthInfoResp_Login_2eproto.base);
+}
+
+MsgGetWeekMonthInfoResp::~MsgGetWeekMonthInfoResp() {
+  // @@protoc_insertion_point(destructor:MsgGetWeekMonthInfoResp)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void MsgGetWeekMonthInfoResp::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void MsgGetWeekMonthInfoResp::ArenaDtor(void* object) {
+  MsgGetWeekMonthInfoResp* _this = reinterpret_cast< MsgGetWeekMonthInfoResp* >(object);
+  (void)_this;
+}
+void MsgGetWeekMonthInfoResp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void MsgGetWeekMonthInfoResp::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const MsgGetWeekMonthInfoResp& MsgGetWeekMonthInfoResp::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgGetWeekMonthInfoResp_Login_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void MsgGetWeekMonthInfoResp::Clear() {
+// @@protoc_insertion_point(message_clear_start:MsgGetWeekMonthInfoResp)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cards_cfg_.Clear();
+  cards_info_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* MsgGetWeekMonthInfoResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // repeated .MsgWeekMonthCfg cards_cfg = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_cards_cfg(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
+        } else goto handle_unusual;
+        continue;
+      // repeated .MsgWeekMonthInfo cards_info = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_cards_info(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* MsgGetWeekMonthInfoResp::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:MsgGetWeekMonthInfoResp)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated .MsgWeekMonthCfg cards_cfg = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_cards_cfg_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(1, this->_internal_cards_cfg(i), target, stream);
+  }
+
+  // repeated .MsgWeekMonthInfo cards_info = 2;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_cards_info_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(2, this->_internal_cards_info(i), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:MsgGetWeekMonthInfoResp)
+  return target;
+}
+
+size_t MsgGetWeekMonthInfoResp::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:MsgGetWeekMonthInfoResp)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated .MsgWeekMonthCfg cards_cfg = 1;
+  total_size += 1UL * this->_internal_cards_cfg_size();
+  for (const auto& msg : this->cards_cfg_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  // repeated .MsgWeekMonthInfo cards_info = 2;
+  total_size += 1UL * this->_internal_cards_info_size();
+  for (const auto& msg : this->cards_info_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void MsgGetWeekMonthInfoResp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:MsgGetWeekMonthInfoResp)
+  GOOGLE_DCHECK_NE(&from, this);
+  const MsgGetWeekMonthInfoResp* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgGetWeekMonthInfoResp>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgGetWeekMonthInfoResp)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgGetWeekMonthInfoResp)
+    MergeFrom(*source);
+  }
+}
+
+void MsgGetWeekMonthInfoResp::MergeFrom(const MsgGetWeekMonthInfoResp& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:MsgGetWeekMonthInfoResp)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cards_cfg_.MergeFrom(from.cards_cfg_);
+  cards_info_.MergeFrom(from.cards_info_);
+}
+
+void MsgGetWeekMonthInfoResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:MsgGetWeekMonthInfoResp)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void MsgGetWeekMonthInfoResp::CopyFrom(const MsgGetWeekMonthInfoResp& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:MsgGetWeekMonthInfoResp)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool MsgGetWeekMonthInfoResp::IsInitialized() const {
+  return true;
+}
+
+void MsgGetWeekMonthInfoResp::InternalSwap(MsgGetWeekMonthInfoResp* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  cards_cfg_.InternalSwap(&other->cards_cfg_);
+  cards_info_.InternalSwap(&other->cards_info_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata MsgGetWeekMonthInfoResp::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::MsgPlayerLogin* Arena::CreateMaybeMessage< ::MsgPlayerLogin >(Arena* arena) {
@@ -19377,6 +20329,15 @@ template<> PROTOBUF_NOINLINE ::MsgInviteUserInfo* Arena::CreateMaybeMessage< ::M
 }
 template<> PROTOBUF_NOINLINE ::MsgInviteUserResp* Arena::CreateMaybeMessage< ::MsgInviteUserResp >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MsgInviteUserResp >(arena);
+}
+template<> PROTOBUF_NOINLINE ::MsgWeekMonthInfo* Arena::CreateMaybeMessage< ::MsgWeekMonthInfo >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::MsgWeekMonthInfo >(arena);
+}
+template<> PROTOBUF_NOINLINE ::MsgWeekMonthCfg* Arena::CreateMaybeMessage< ::MsgWeekMonthCfg >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::MsgWeekMonthCfg >(arena);
+}
+template<> PROTOBUF_NOINLINE ::MsgGetWeekMonthInfoResp* Arena::CreateMaybeMessage< ::MsgGetWeekMonthInfoResp >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::MsgGetWeekMonthInfoResp >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

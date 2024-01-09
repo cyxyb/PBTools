@@ -525,3 +525,33 @@ message MsgInviteUserResp
 {
 	repeated MsgInviteUserInfo info = 1;	//邀请玩家列表
 }
+
+
+//查询玩家周卡月卡信息
+message MsgWeekMonthInfo
+{
+	int32					card_type 	= 1;	//卡类型
+	int32					buy_time 	= 2;	//购买时间
+	int32					is_pick 	= 3;	//当天是否领
+	int32					award 		= 4;	//可领数量
+	int32					card_level 	= 5;	//卡等级
+	int32					remain_day 	= 6;	//剩余可领天数
+}
+
+//周卡月卡配置
+message MsgWeekMonthCfg
+{
+	int32					card_type 	= 1;	//卡类型
+	int32					buy_money 	= 2;	//购买所需钱
+	int32					award 		= 3;	//可领数量
+	int32					card_level 	= 4;	//卡等级
+	int32					total_day 	= 5;	//总可领天数
+}
+
+
+//查询玩家周卡月卡信息
+message MsgGetWeekMonthInfoResp
+{
+	repeated MsgWeekMonthCfg cards_cfg 		= 1;	//卡配置
+	repeated MsgWeekMonthInfo cards_info 	= 2;	//已购买卡信息
+}
