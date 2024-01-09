@@ -197,7 +197,7 @@ message MsgPvpDestroyTableResp
 	int32	ret_code		= 1;	//返回码	非零失败
 	int32	table_id		= 2;	//桌子id
 	int32	table_no		= 3;	//桌子编号
-}
+} 
 
 //pvp桌子踢人
 message MsgPvpKickUserResp

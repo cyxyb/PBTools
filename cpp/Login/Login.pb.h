@@ -46,7 +46,7 @@ struct TableStruct_Login_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[61]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[69]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -56,6 +56,9 @@ extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table
 class ActiveInfoRet;
 class ActiveInfoRetDefaultTypeInternal;
 extern ActiveInfoRetDefaultTypeInternal _ActiveInfoRet_default_instance_;
+class InfiniteAgentQuerySubInfo;
+class InfiniteAgentQuerySubInfoDefaultTypeInternal;
+extern InfiniteAgentQuerySubInfoDefaultTypeInternal _InfiniteAgentQuerySubInfo_default_instance_;
 class MsgActiveInfoCSPick;
 class MsgActiveInfoCSPickDefaultTypeInternal;
 extern MsgActiveInfoCSPickDefaultTypeInternal _MsgActiveInfoCSPick_default_instance_;
@@ -104,6 +107,15 @@ extern MsgGetRankDefaultTypeInternal _MsgGetRank_default_instance_;
 class MsgGetWeekMonthInfoResp;
 class MsgGetWeekMonthInfoRespDefaultTypeInternal;
 extern MsgGetWeekMonthInfoRespDefaultTypeInternal _MsgGetWeekMonthInfoResp_default_instance_;
+class MsgInfiniteAgentQueryMyInfoResp;
+class MsgInfiniteAgentQueryMyInfoRespDefaultTypeInternal;
+extern MsgInfiniteAgentQueryMyInfoRespDefaultTypeInternal _MsgInfiniteAgentQueryMyInfoResp_default_instance_;
+class MsgInfiniteAgentQuerySubInfo;
+class MsgInfiniteAgentQuerySubInfoDefaultTypeInternal;
+extern MsgInfiniteAgentQuerySubInfoDefaultTypeInternal _MsgInfiniteAgentQuerySubInfo_default_instance_;
+class MsgInfiniteAgentQuerySubInfoResp;
+class MsgInfiniteAgentQuerySubInfoRespDefaultTypeInternal;
+extern MsgInfiniteAgentQuerySubInfoRespDefaultTypeInternal _MsgInfiniteAgentQuerySubInfoResp_default_instance_;
 class MsgInviteAwardConfig;
 class MsgInviteAwardConfigDefaultTypeInternal;
 extern MsgInviteAwardConfigDefaultTypeInternal _MsgInviteAwardConfig_default_instance_;
@@ -158,6 +170,9 @@ extern MsgPlayerLoginDefaultTypeInternal _MsgPlayerLogin_default_instance_;
 class MsgPlayerLoginResp;
 class MsgPlayerLoginRespDefaultTypeInternal;
 extern MsgPlayerLoginRespDefaultTypeInternal _MsgPlayerLoginResp_default_instance_;
+class MsgQueryCelebrityGoldCoinResp;
+class MsgQueryCelebrityGoldCoinRespDefaultTypeInternal;
+extern MsgQueryCelebrityGoldCoinRespDefaultTypeInternal _MsgQueryCelebrityGoldCoinResp_default_instance_;
 class MsgQueryRebateRecord;
 class MsgQueryRebateRecordDefaultTypeInternal;
 extern MsgQueryRebateRecordDefaultTypeInternal _MsgQueryRebateRecord_default_instance_;
@@ -167,6 +182,15 @@ extern MsgQueryRebateRecordInfoDefaultTypeInternal _MsgQueryRebateRecordInfo_def
 class MsgRechargeInfo;
 class MsgRechargeInfoDefaultTypeInternal;
 extern MsgRechargeInfoDefaultTypeInternal _MsgRechargeInfo_default_instance_;
+class MsgRecviveAgentRebateResp;
+class MsgRecviveAgentRebateRespDefaultTypeInternal;
+extern MsgRecviveAgentRebateRespDefaultTypeInternal _MsgRecviveAgentRebateResp_default_instance_;
+class MsgSetSubAgent;
+class MsgSetSubAgentDefaultTypeInternal;
+extern MsgSetSubAgentDefaultTypeInternal _MsgSetSubAgent_default_instance_;
+class MsgSetSubAgentResp;
+class MsgSetSubAgentRespDefaultTypeInternal;
+extern MsgSetSubAgentRespDefaultTypeInternal _MsgSetSubAgentResp_default_instance_;
 class MsgShareData;
 class MsgShareDataDefaultTypeInternal;
 extern MsgShareDataDefaultTypeInternal _MsgShareData_default_instance_;
@@ -238,6 +262,7 @@ class MsgWeekMonthInfoDefaultTypeInternal;
 extern MsgWeekMonthInfoDefaultTypeInternal _MsgWeekMonthInfo_default_instance_;
 PROTOBUF_NAMESPACE_OPEN
 template<> ::ActiveInfoRet* Arena::CreateMaybeMessage<::ActiveInfoRet>(Arena*);
+template<> ::InfiniteAgentQuerySubInfo* Arena::CreateMaybeMessage<::InfiniteAgentQuerySubInfo>(Arena*);
 template<> ::MsgActiveInfoCSPick* Arena::CreateMaybeMessage<::MsgActiveInfoCSPick>(Arena*);
 template<> ::MsgActiveInfoSCPick* Arena::CreateMaybeMessage<::MsgActiveInfoSCPick>(Arena*);
 template<> ::MsgActiveInfoSCRet* Arena::CreateMaybeMessage<::MsgActiveInfoSCRet>(Arena*);
@@ -254,6 +279,9 @@ template<> ::MsgForgetPassword* Arena::CreateMaybeMessage<::MsgForgetPassword>(A
 template<> ::MsgGetAvatarInfo* Arena::CreateMaybeMessage<::MsgGetAvatarInfo>(Arena*);
 template<> ::MsgGetRank* Arena::CreateMaybeMessage<::MsgGetRank>(Arena*);
 template<> ::MsgGetWeekMonthInfoResp* Arena::CreateMaybeMessage<::MsgGetWeekMonthInfoResp>(Arena*);
+template<> ::MsgInfiniteAgentQueryMyInfoResp* Arena::CreateMaybeMessage<::MsgInfiniteAgentQueryMyInfoResp>(Arena*);
+template<> ::MsgInfiniteAgentQuerySubInfo* Arena::CreateMaybeMessage<::MsgInfiniteAgentQuerySubInfo>(Arena*);
+template<> ::MsgInfiniteAgentQuerySubInfoResp* Arena::CreateMaybeMessage<::MsgInfiniteAgentQuerySubInfoResp>(Arena*);
 template<> ::MsgInviteAwardConfig* Arena::CreateMaybeMessage<::MsgInviteAwardConfig>(Arena*);
 template<> ::MsgInviteAwardInfo* Arena::CreateMaybeMessage<::MsgInviteAwardInfo>(Arena*);
 template<> ::MsgInviteUserInfo* Arena::CreateMaybeMessage<::MsgInviteUserInfo>(Arena*);
@@ -272,9 +300,13 @@ template<> ::MsgPlayerInfo* Arena::CreateMaybeMessage<::MsgPlayerInfo>(Arena*);
 template<> ::MsgPlayerItem* Arena::CreateMaybeMessage<::MsgPlayerItem>(Arena*);
 template<> ::MsgPlayerLogin* Arena::CreateMaybeMessage<::MsgPlayerLogin>(Arena*);
 template<> ::MsgPlayerLoginResp* Arena::CreateMaybeMessage<::MsgPlayerLoginResp>(Arena*);
+template<> ::MsgQueryCelebrityGoldCoinResp* Arena::CreateMaybeMessage<::MsgQueryCelebrityGoldCoinResp>(Arena*);
 template<> ::MsgQueryRebateRecord* Arena::CreateMaybeMessage<::MsgQueryRebateRecord>(Arena*);
 template<> ::MsgQueryRebateRecordInfo* Arena::CreateMaybeMessage<::MsgQueryRebateRecordInfo>(Arena*);
 template<> ::MsgRechargeInfo* Arena::CreateMaybeMessage<::MsgRechargeInfo>(Arena*);
+template<> ::MsgRecviveAgentRebateResp* Arena::CreateMaybeMessage<::MsgRecviveAgentRebateResp>(Arena*);
+template<> ::MsgSetSubAgent* Arena::CreateMaybeMessage<::MsgSetSubAgent>(Arena*);
+template<> ::MsgSetSubAgentResp* Arena::CreateMaybeMessage<::MsgSetSubAgentResp>(Arena*);
 template<> ::MsgShareData* Arena::CreateMaybeMessage<::MsgShareData>(Arena*);
 template<> ::MsgSubagentInformation* Arena::CreateMaybeMessage<::MsgSubagentInformation>(Arena*);
 template<> ::MsgTopInfo* Arena::CreateMaybeMessage<::MsgTopInfo>(Arena*);
@@ -10953,6 +10985,1403 @@ class MsgInviteUserResp PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
+class MsgQueryCelebrityGoldCoinResp PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgQueryCelebrityGoldCoinResp) */ {
+ public:
+  inline MsgQueryCelebrityGoldCoinResp() : MsgQueryCelebrityGoldCoinResp(nullptr) {}
+  virtual ~MsgQueryCelebrityGoldCoinResp();
+
+  MsgQueryCelebrityGoldCoinResp(const MsgQueryCelebrityGoldCoinResp& from);
+  MsgQueryCelebrityGoldCoinResp(MsgQueryCelebrityGoldCoinResp&& from) noexcept
+    : MsgQueryCelebrityGoldCoinResp() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgQueryCelebrityGoldCoinResp& operator=(const MsgQueryCelebrityGoldCoinResp& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgQueryCelebrityGoldCoinResp& operator=(MsgQueryCelebrityGoldCoinResp&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgQueryCelebrityGoldCoinResp& default_instance();
+
+  static inline const MsgQueryCelebrityGoldCoinResp* internal_default_instance() {
+    return reinterpret_cast<const MsgQueryCelebrityGoldCoinResp*>(
+               &_MsgQueryCelebrityGoldCoinResp_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    58;
+
+  friend void swap(MsgQueryCelebrityGoldCoinResp& a, MsgQueryCelebrityGoldCoinResp& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgQueryCelebrityGoldCoinResp* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgQueryCelebrityGoldCoinResp* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgQueryCelebrityGoldCoinResp* New() const final {
+    return CreateMaybeMessage<MsgQueryCelebrityGoldCoinResp>(nullptr);
+  }
+
+  MsgQueryCelebrityGoldCoinResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgQueryCelebrityGoldCoinResp>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgQueryCelebrityGoldCoinResp& from);
+  void MergeFrom(const MsgQueryCelebrityGoldCoinResp& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgQueryCelebrityGoldCoinResp* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgQueryCelebrityGoldCoinResp";
+  }
+  protected:
+  explicit MsgQueryCelebrityGoldCoinResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kAvatarFieldNumber = 1,
+    kNicknameFieldNumber = 3,
+    kAvatarFrameFieldNumber = 2,
+    kStateFieldNumber = 5,
+    kGoldCoinFieldNumber = 4,
+  };
+  // string avatar = 1;
+  void clear_avatar();
+  const std::string& avatar() const;
+  void set_avatar(const std::string& value);
+  void set_avatar(std::string&& value);
+  void set_avatar(const char* value);
+  void set_avatar(const char* value, size_t size);
+  std::string* mutable_avatar();
+  std::string* release_avatar();
+  void set_allocated_avatar(std::string* avatar);
+  private:
+  const std::string& _internal_avatar() const;
+  void _internal_set_avatar(const std::string& value);
+  std::string* _internal_mutable_avatar();
+  public:
+
+  // string nickname = 3;
+  void clear_nickname();
+  const std::string& nickname() const;
+  void set_nickname(const std::string& value);
+  void set_nickname(std::string&& value);
+  void set_nickname(const char* value);
+  void set_nickname(const char* value, size_t size);
+  std::string* mutable_nickname();
+  std::string* release_nickname();
+  void set_allocated_nickname(std::string* nickname);
+  private:
+  const std::string& _internal_nickname() const;
+  void _internal_set_nickname(const std::string& value);
+  std::string* _internal_mutable_nickname();
+  public:
+
+  // int32 avatar_frame = 2;
+  void clear_avatar_frame();
+  ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame() const;
+  void set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_avatar_frame() const;
+  void _internal_set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // bool state = 5;
+  void clear_state();
+  bool state() const;
+  void set_state(bool value);
+  private:
+  bool _internal_state() const;
+  void _internal_set_state(bool value);
+  public:
+
+  // int64 gold_coin = 4;
+  void clear_gold_coin();
+  ::PROTOBUF_NAMESPACE_ID::int64 gold_coin() const;
+  void set_gold_coin(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_gold_coin() const;
+  void _internal_set_gold_coin(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgQueryCelebrityGoldCoinResp)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr avatar_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr nickname_;
+  ::PROTOBUF_NAMESPACE_ID::int32 avatar_frame_;
+  bool state_;
+  ::PROTOBUF_NAMESPACE_ID::int64 gold_coin_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgInfiniteAgentQueryMyInfoResp PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgInfiniteAgentQueryMyInfoResp) */ {
+ public:
+  inline MsgInfiniteAgentQueryMyInfoResp() : MsgInfiniteAgentQueryMyInfoResp(nullptr) {}
+  virtual ~MsgInfiniteAgentQueryMyInfoResp();
+
+  MsgInfiniteAgentQueryMyInfoResp(const MsgInfiniteAgentQueryMyInfoResp& from);
+  MsgInfiniteAgentQueryMyInfoResp(MsgInfiniteAgentQueryMyInfoResp&& from) noexcept
+    : MsgInfiniteAgentQueryMyInfoResp() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgInfiniteAgentQueryMyInfoResp& operator=(const MsgInfiniteAgentQueryMyInfoResp& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgInfiniteAgentQueryMyInfoResp& operator=(MsgInfiniteAgentQueryMyInfoResp&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgInfiniteAgentQueryMyInfoResp& default_instance();
+
+  static inline const MsgInfiniteAgentQueryMyInfoResp* internal_default_instance() {
+    return reinterpret_cast<const MsgInfiniteAgentQueryMyInfoResp*>(
+               &_MsgInfiniteAgentQueryMyInfoResp_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    59;
+
+  friend void swap(MsgInfiniteAgentQueryMyInfoResp& a, MsgInfiniteAgentQueryMyInfoResp& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgInfiniteAgentQueryMyInfoResp* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgInfiniteAgentQueryMyInfoResp* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgInfiniteAgentQueryMyInfoResp* New() const final {
+    return CreateMaybeMessage<MsgInfiniteAgentQueryMyInfoResp>(nullptr);
+  }
+
+  MsgInfiniteAgentQueryMyInfoResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgInfiniteAgentQueryMyInfoResp>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgInfiniteAgentQueryMyInfoResp& from);
+  void MergeFrom(const MsgInfiniteAgentQueryMyInfoResp& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgInfiniteAgentQueryMyInfoResp* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgInfiniteAgentQueryMyInfoResp";
+  }
+  protected:
+  explicit MsgInfiniteAgentQueryMyInfoResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kAgentLevelFieldNumber = 1,
+    kAgentRatioFieldNumber = 2,
+    kCurRebateFieldNumber = 4,
+    kTotalRebateFieldNumber = 5,
+    kGameRebateFieldNumber = 6,
+    kBindIdFieldNumber = 3,
+  };
+  // int32 agent_level = 1;
+  void clear_agent_level();
+  ::PROTOBUF_NAMESPACE_ID::int32 agent_level() const;
+  void set_agent_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_agent_level() const;
+  void _internal_set_agent_level(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 agent_ratio = 2;
+  void clear_agent_ratio();
+  ::PROTOBUF_NAMESPACE_ID::int32 agent_ratio() const;
+  void set_agent_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_agent_ratio() const;
+  void _internal_set_agent_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int64 cur_rebate = 4;
+  void clear_cur_rebate();
+  ::PROTOBUF_NAMESPACE_ID::int64 cur_rebate() const;
+  void set_cur_rebate(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_cur_rebate() const;
+  void _internal_set_cur_rebate(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int64 total_rebate = 5;
+  void clear_total_rebate();
+  ::PROTOBUF_NAMESPACE_ID::int64 total_rebate() const;
+  void set_total_rebate(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_total_rebate() const;
+  void _internal_set_total_rebate(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int64 game_rebate = 6;
+  void clear_game_rebate();
+  ::PROTOBUF_NAMESPACE_ID::int64 game_rebate() const;
+  void set_game_rebate(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_game_rebate() const;
+  void _internal_set_game_rebate(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int32 bind_id = 3;
+  void clear_bind_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 bind_id() const;
+  void set_bind_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_bind_id() const;
+  void _internal_set_bind_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgInfiniteAgentQueryMyInfoResp)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 agent_level_;
+  ::PROTOBUF_NAMESPACE_ID::int32 agent_ratio_;
+  ::PROTOBUF_NAMESPACE_ID::int64 cur_rebate_;
+  ::PROTOBUF_NAMESPACE_ID::int64 total_rebate_;
+  ::PROTOBUF_NAMESPACE_ID::int64 game_rebate_;
+  ::PROTOBUF_NAMESPACE_ID::int32 bind_id_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgInfiniteAgentQuerySubInfo PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgInfiniteAgentQuerySubInfo) */ {
+ public:
+  inline MsgInfiniteAgentQuerySubInfo() : MsgInfiniteAgentQuerySubInfo(nullptr) {}
+  virtual ~MsgInfiniteAgentQuerySubInfo();
+
+  MsgInfiniteAgentQuerySubInfo(const MsgInfiniteAgentQuerySubInfo& from);
+  MsgInfiniteAgentQuerySubInfo(MsgInfiniteAgentQuerySubInfo&& from) noexcept
+    : MsgInfiniteAgentQuerySubInfo() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgInfiniteAgentQuerySubInfo& operator=(const MsgInfiniteAgentQuerySubInfo& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgInfiniteAgentQuerySubInfo& operator=(MsgInfiniteAgentQuerySubInfo&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgInfiniteAgentQuerySubInfo& default_instance();
+
+  static inline const MsgInfiniteAgentQuerySubInfo* internal_default_instance() {
+    return reinterpret_cast<const MsgInfiniteAgentQuerySubInfo*>(
+               &_MsgInfiniteAgentQuerySubInfo_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    60;
+
+  friend void swap(MsgInfiniteAgentQuerySubInfo& a, MsgInfiniteAgentQuerySubInfo& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgInfiniteAgentQuerySubInfo* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgInfiniteAgentQuerySubInfo* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgInfiniteAgentQuerySubInfo* New() const final {
+    return CreateMaybeMessage<MsgInfiniteAgentQuerySubInfo>(nullptr);
+  }
+
+  MsgInfiniteAgentQuerySubInfo* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgInfiniteAgentQuerySubInfo>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgInfiniteAgentQuerySubInfo& from);
+  void MergeFrom(const MsgInfiniteAgentQuerySubInfo& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgInfiniteAgentQuerySubInfo* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgInfiniteAgentQuerySubInfo";
+  }
+  protected:
+  explicit MsgInfiniteAgentQuerySubInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kUserIdFieldNumber = 1,
+    kCurrentPageFieldNumber = 2,
+    kMaxRowFieldNumber = 3,
+  };
+  // int32 user_id = 1;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 current_page = 2;
+  void clear_current_page();
+  ::PROTOBUF_NAMESPACE_ID::int32 current_page() const;
+  void set_current_page(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_current_page() const;
+  void _internal_set_current_page(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 max_row = 3;
+  void clear_max_row();
+  ::PROTOBUF_NAMESPACE_ID::int32 max_row() const;
+  void set_max_row(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_max_row() const;
+  void _internal_set_max_row(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgInfiniteAgentQuerySubInfo)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 current_page_;
+  ::PROTOBUF_NAMESPACE_ID::int32 max_row_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
+// -------------------------------------------------------------------
+
+class InfiniteAgentQuerySubInfo PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:InfiniteAgentQuerySubInfo) */ {
+ public:
+  inline InfiniteAgentQuerySubInfo() : InfiniteAgentQuerySubInfo(nullptr) {}
+  virtual ~InfiniteAgentQuerySubInfo();
+
+  InfiniteAgentQuerySubInfo(const InfiniteAgentQuerySubInfo& from);
+  InfiniteAgentQuerySubInfo(InfiniteAgentQuerySubInfo&& from) noexcept
+    : InfiniteAgentQuerySubInfo() {
+    *this = ::std::move(from);
+  }
+
+  inline InfiniteAgentQuerySubInfo& operator=(const InfiniteAgentQuerySubInfo& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline InfiniteAgentQuerySubInfo& operator=(InfiniteAgentQuerySubInfo&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const InfiniteAgentQuerySubInfo& default_instance();
+
+  static inline const InfiniteAgentQuerySubInfo* internal_default_instance() {
+    return reinterpret_cast<const InfiniteAgentQuerySubInfo*>(
+               &_InfiniteAgentQuerySubInfo_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    61;
+
+  friend void swap(InfiniteAgentQuerySubInfo& a, InfiniteAgentQuerySubInfo& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(InfiniteAgentQuerySubInfo* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(InfiniteAgentQuerySubInfo* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline InfiniteAgentQuerySubInfo* New() const final {
+    return CreateMaybeMessage<InfiniteAgentQuerySubInfo>(nullptr);
+  }
+
+  InfiniteAgentQuerySubInfo* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<InfiniteAgentQuerySubInfo>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const InfiniteAgentQuerySubInfo& from);
+  void MergeFrom(const InfiniteAgentQuerySubInfo& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(InfiniteAgentQuerySubInfo* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "InfiniteAgentQuerySubInfo";
+  }
+  protected:
+  explicit InfiniteAgentQuerySubInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kUserIdFieldNumber = 1,
+    kSubordinatesFieldNumber = 2,
+    kTotalTaxFieldNumber = 3,
+    kTodayTaxFieldNumber = 4,
+    kTodayRatioFieldNumber = 5,
+    kAgentRatioFieldNumber = 6,
+  };
+  // int32 user_id = 1;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 subordinates = 2;
+  void clear_subordinates();
+  ::PROTOBUF_NAMESPACE_ID::int32 subordinates() const;
+  void set_subordinates(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_subordinates() const;
+  void _internal_set_subordinates(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int64 total_tax = 3;
+  void clear_total_tax();
+  ::PROTOBUF_NAMESPACE_ID::int64 total_tax() const;
+  void set_total_tax(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_total_tax() const;
+  void _internal_set_total_tax(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int64 today_tax = 4;
+  void clear_today_tax();
+  ::PROTOBUF_NAMESPACE_ID::int64 today_tax() const;
+  void set_today_tax(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_today_tax() const;
+  void _internal_set_today_tax(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int64 today_ratio = 5;
+  void clear_today_ratio();
+  ::PROTOBUF_NAMESPACE_ID::int64 today_ratio() const;
+  void set_today_ratio(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_today_ratio() const;
+  void _internal_set_today_ratio(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int32 agent_ratio = 6;
+  void clear_agent_ratio();
+  ::PROTOBUF_NAMESPACE_ID::int32 agent_ratio() const;
+  void set_agent_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_agent_ratio() const;
+  void _internal_set_agent_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:InfiniteAgentQuerySubInfo)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 subordinates_;
+  ::PROTOBUF_NAMESPACE_ID::int64 total_tax_;
+  ::PROTOBUF_NAMESPACE_ID::int64 today_tax_;
+  ::PROTOBUF_NAMESPACE_ID::int64 today_ratio_;
+  ::PROTOBUF_NAMESPACE_ID::int32 agent_ratio_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgInfiniteAgentQuerySubInfoResp PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgInfiniteAgentQuerySubInfoResp) */ {
+ public:
+  inline MsgInfiniteAgentQuerySubInfoResp() : MsgInfiniteAgentQuerySubInfoResp(nullptr) {}
+  virtual ~MsgInfiniteAgentQuerySubInfoResp();
+
+  MsgInfiniteAgentQuerySubInfoResp(const MsgInfiniteAgentQuerySubInfoResp& from);
+  MsgInfiniteAgentQuerySubInfoResp(MsgInfiniteAgentQuerySubInfoResp&& from) noexcept
+    : MsgInfiniteAgentQuerySubInfoResp() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgInfiniteAgentQuerySubInfoResp& operator=(const MsgInfiniteAgentQuerySubInfoResp& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgInfiniteAgentQuerySubInfoResp& operator=(MsgInfiniteAgentQuerySubInfoResp&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgInfiniteAgentQuerySubInfoResp& default_instance();
+
+  static inline const MsgInfiniteAgentQuerySubInfoResp* internal_default_instance() {
+    return reinterpret_cast<const MsgInfiniteAgentQuerySubInfoResp*>(
+               &_MsgInfiniteAgentQuerySubInfoResp_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    62;
+
+  friend void swap(MsgInfiniteAgentQuerySubInfoResp& a, MsgInfiniteAgentQuerySubInfoResp& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgInfiniteAgentQuerySubInfoResp* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgInfiniteAgentQuerySubInfoResp* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgInfiniteAgentQuerySubInfoResp* New() const final {
+    return CreateMaybeMessage<MsgInfiniteAgentQuerySubInfoResp>(nullptr);
+  }
+
+  MsgInfiniteAgentQuerySubInfoResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgInfiniteAgentQuerySubInfoResp>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgInfiniteAgentQuerySubInfoResp& from);
+  void MergeFrom(const MsgInfiniteAgentQuerySubInfoResp& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgInfiniteAgentQuerySubInfoResp* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgInfiniteAgentQuerySubInfoResp";
+  }
+  protected:
+  explicit MsgInfiniteAgentQuerySubInfoResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kInfoFieldNumber = 3,
+    kAgentCountFieldNumber = 1,
+    kEndListFieldNumber = 2,
+  };
+  // repeated .InfiniteAgentQuerySubInfo info = 3;
+  int info_size() const;
+  private:
+  int _internal_info_size() const;
+  public:
+  void clear_info();
+  ::InfiniteAgentQuerySubInfo* mutable_info(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::InfiniteAgentQuerySubInfo >*
+      mutable_info();
+  private:
+  const ::InfiniteAgentQuerySubInfo& _internal_info(int index) const;
+  ::InfiniteAgentQuerySubInfo* _internal_add_info();
+  public:
+  const ::InfiniteAgentQuerySubInfo& info(int index) const;
+  ::InfiniteAgentQuerySubInfo* add_info();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::InfiniteAgentQuerySubInfo >&
+      info() const;
+
+  // int32 agent_count = 1;
+  void clear_agent_count();
+  ::PROTOBUF_NAMESPACE_ID::int32 agent_count() const;
+  void set_agent_count(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_agent_count() const;
+  void _internal_set_agent_count(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // bool end_list = 2;
+  void clear_end_list();
+  bool end_list() const;
+  void set_end_list(bool value);
+  private:
+  bool _internal_end_list() const;
+  void _internal_set_end_list(bool value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgInfiniteAgentQuerySubInfoResp)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::InfiniteAgentQuerySubInfo > info_;
+  ::PROTOBUF_NAMESPACE_ID::int32 agent_count_;
+  bool end_list_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgSetSubAgent PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgSetSubAgent) */ {
+ public:
+  inline MsgSetSubAgent() : MsgSetSubAgent(nullptr) {}
+  virtual ~MsgSetSubAgent();
+
+  MsgSetSubAgent(const MsgSetSubAgent& from);
+  MsgSetSubAgent(MsgSetSubAgent&& from) noexcept
+    : MsgSetSubAgent() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgSetSubAgent& operator=(const MsgSetSubAgent& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgSetSubAgent& operator=(MsgSetSubAgent&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgSetSubAgent& default_instance();
+
+  static inline const MsgSetSubAgent* internal_default_instance() {
+    return reinterpret_cast<const MsgSetSubAgent*>(
+               &_MsgSetSubAgent_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    63;
+
+  friend void swap(MsgSetSubAgent& a, MsgSetSubAgent& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgSetSubAgent* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgSetSubAgent* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgSetSubAgent* New() const final {
+    return CreateMaybeMessage<MsgSetSubAgent>(nullptr);
+  }
+
+  MsgSetSubAgent* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgSetSubAgent>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgSetSubAgent& from);
+  void MergeFrom(const MsgSetSubAgent& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgSetSubAgent* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgSetSubAgent";
+  }
+  protected:
+  explicit MsgSetSubAgent(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kUserIdFieldNumber = 1,
+    kAgentRatioFieldNumber = 2,
+  };
+  // int32 user_id = 1;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 agent_ratio = 2;
+  void clear_agent_ratio();
+  ::PROTOBUF_NAMESPACE_ID::int32 agent_ratio() const;
+  void set_agent_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_agent_ratio() const;
+  void _internal_set_agent_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgSetSubAgent)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 agent_ratio_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgSetSubAgentResp PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgSetSubAgentResp) */ {
+ public:
+  inline MsgSetSubAgentResp() : MsgSetSubAgentResp(nullptr) {}
+  virtual ~MsgSetSubAgentResp();
+
+  MsgSetSubAgentResp(const MsgSetSubAgentResp& from);
+  MsgSetSubAgentResp(MsgSetSubAgentResp&& from) noexcept
+    : MsgSetSubAgentResp() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgSetSubAgentResp& operator=(const MsgSetSubAgentResp& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgSetSubAgentResp& operator=(MsgSetSubAgentResp&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgSetSubAgentResp& default_instance();
+
+  static inline const MsgSetSubAgentResp* internal_default_instance() {
+    return reinterpret_cast<const MsgSetSubAgentResp*>(
+               &_MsgSetSubAgentResp_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    64;
+
+  friend void swap(MsgSetSubAgentResp& a, MsgSetSubAgentResp& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgSetSubAgentResp* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgSetSubAgentResp* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgSetSubAgentResp* New() const final {
+    return CreateMaybeMessage<MsgSetSubAgentResp>(nullptr);
+  }
+
+  MsgSetSubAgentResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgSetSubAgentResp>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgSetSubAgentResp& from);
+  void MergeFrom(const MsgSetSubAgentResp& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgSetSubAgentResp* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgSetSubAgentResp";
+  }
+  protected:
+  explicit MsgSetSubAgentResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kCodeFieldNumber = 1,
+    kUserIdFieldNumber = 2,
+    kTotalTaxFieldNumber = 4,
+    kTodayTaxFieldNumber = 5,
+    kSubordinatesFieldNumber = 3,
+    kAgentRatioFieldNumber = 7,
+    kTodayRatioFieldNumber = 6,
+  };
+  // int32 code = 1;
+  void clear_code();
+  ::PROTOBUF_NAMESPACE_ID::int32 code() const;
+  void set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_code() const;
+  void _internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 user_id = 2;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int64 total_tax = 4;
+  void clear_total_tax();
+  ::PROTOBUF_NAMESPACE_ID::int64 total_tax() const;
+  void set_total_tax(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_total_tax() const;
+  void _internal_set_total_tax(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int64 today_tax = 5;
+  void clear_today_tax();
+  ::PROTOBUF_NAMESPACE_ID::int64 today_tax() const;
+  void set_today_tax(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_today_tax() const;
+  void _internal_set_today_tax(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int32 subordinates = 3;
+  void clear_subordinates();
+  ::PROTOBUF_NAMESPACE_ID::int32 subordinates() const;
+  void set_subordinates(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_subordinates() const;
+  void _internal_set_subordinates(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 agent_ratio = 7;
+  void clear_agent_ratio();
+  ::PROTOBUF_NAMESPACE_ID::int32 agent_ratio() const;
+  void set_agent_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_agent_ratio() const;
+  void _internal_set_agent_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int64 today_ratio = 6;
+  void clear_today_ratio();
+  ::PROTOBUF_NAMESPACE_ID::int64 today_ratio() const;
+  void set_today_ratio(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_today_ratio() const;
+  void _internal_set_today_ratio(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgSetSubAgentResp)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 code_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int64 total_tax_;
+  ::PROTOBUF_NAMESPACE_ID::int64 today_tax_;
+  ::PROTOBUF_NAMESPACE_ID::int32 subordinates_;
+  ::PROTOBUF_NAMESPACE_ID::int32 agent_ratio_;
+  ::PROTOBUF_NAMESPACE_ID::int64 today_ratio_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgRecviveAgentRebateResp PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgRecviveAgentRebateResp) */ {
+ public:
+  inline MsgRecviveAgentRebateResp() : MsgRecviveAgentRebateResp(nullptr) {}
+  virtual ~MsgRecviveAgentRebateResp();
+
+  MsgRecviveAgentRebateResp(const MsgRecviveAgentRebateResp& from);
+  MsgRecviveAgentRebateResp(MsgRecviveAgentRebateResp&& from) noexcept
+    : MsgRecviveAgentRebateResp() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgRecviveAgentRebateResp& operator=(const MsgRecviveAgentRebateResp& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgRecviveAgentRebateResp& operator=(MsgRecviveAgentRebateResp&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgRecviveAgentRebateResp& default_instance();
+
+  static inline const MsgRecviveAgentRebateResp* internal_default_instance() {
+    return reinterpret_cast<const MsgRecviveAgentRebateResp*>(
+               &_MsgRecviveAgentRebateResp_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    65;
+
+  friend void swap(MsgRecviveAgentRebateResp& a, MsgRecviveAgentRebateResp& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgRecviveAgentRebateResp* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgRecviveAgentRebateResp* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgRecviveAgentRebateResp* New() const final {
+    return CreateMaybeMessage<MsgRecviveAgentRebateResp>(nullptr);
+  }
+
+  MsgRecviveAgentRebateResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgRecviveAgentRebateResp>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgRecviveAgentRebateResp& from);
+  void MergeFrom(const MsgRecviveAgentRebateResp& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgRecviveAgentRebateResp* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgRecviveAgentRebateResp";
+  }
+  protected:
+  explicit MsgRecviveAgentRebateResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kCurRebateFieldNumber = 2,
+    kCodeFieldNumber = 1,
+  };
+  // int64 cur_rebate = 2;
+  void clear_cur_rebate();
+  ::PROTOBUF_NAMESPACE_ID::int64 cur_rebate() const;
+  void set_cur_rebate(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_cur_rebate() const;
+  void _internal_set_cur_rebate(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int32 code = 1;
+  void clear_code();
+  ::PROTOBUF_NAMESPACE_ID::int32 code() const;
+  void set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_code() const;
+  void _internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgRecviveAgentRebateResp)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int64 cur_rebate_;
+  ::PROTOBUF_NAMESPACE_ID::int32 code_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
+// -------------------------------------------------------------------
+
 class MsgWeekMonthInfo PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgWeekMonthInfo) */ {
  public:
@@ -10994,7 +12423,7 @@ class MsgWeekMonthInfo PROTOBUF_FINAL :
                &_MsgWeekMonthInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    58;
+    66;
 
   friend void swap(MsgWeekMonthInfo& a, MsgWeekMonthInfo& b) {
     a.Swap(&b);
@@ -11185,7 +12614,7 @@ class MsgWeekMonthCfg PROTOBUF_FINAL :
                &_MsgWeekMonthCfg_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    59;
+    67;
 
   friend void swap(MsgWeekMonthCfg& a, MsgWeekMonthCfg& b) {
     a.Swap(&b);
@@ -11365,7 +12794,7 @@ class MsgGetWeekMonthInfoResp PROTOBUF_FINAL :
                &_MsgGetWeekMonthInfoResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    60;
+    68;
 
   friend void swap(MsgGetWeekMonthInfoResp& a, MsgGetWeekMonthInfoResp& b) {
     a.Swap(&b);
@@ -19601,6 +21030,819 @@ MsgInviteUserResp::info() const {
 
 // -------------------------------------------------------------------
 
+// MsgQueryCelebrityGoldCoinResp
+
+// string avatar = 1;
+inline void MsgQueryCelebrityGoldCoinResp::clear_avatar() {
+  avatar_.ClearToEmpty();
+}
+inline const std::string& MsgQueryCelebrityGoldCoinResp::avatar() const {
+  // @@protoc_insertion_point(field_get:MsgQueryCelebrityGoldCoinResp.avatar)
+  return _internal_avatar();
+}
+inline void MsgQueryCelebrityGoldCoinResp::set_avatar(const std::string& value) {
+  _internal_set_avatar(value);
+  // @@protoc_insertion_point(field_set:MsgQueryCelebrityGoldCoinResp.avatar)
+}
+inline std::string* MsgQueryCelebrityGoldCoinResp::mutable_avatar() {
+  // @@protoc_insertion_point(field_mutable:MsgQueryCelebrityGoldCoinResp.avatar)
+  return _internal_mutable_avatar();
+}
+inline const std::string& MsgQueryCelebrityGoldCoinResp::_internal_avatar() const {
+  return avatar_.Get();
+}
+inline void MsgQueryCelebrityGoldCoinResp::_internal_set_avatar(const std::string& value) {
+  
+  avatar_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgQueryCelebrityGoldCoinResp::set_avatar(std::string&& value) {
+  
+  avatar_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgQueryCelebrityGoldCoinResp.avatar)
+}
+inline void MsgQueryCelebrityGoldCoinResp::set_avatar(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  avatar_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgQueryCelebrityGoldCoinResp.avatar)
+}
+inline void MsgQueryCelebrityGoldCoinResp::set_avatar(const char* value,
+    size_t size) {
+  
+  avatar_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgQueryCelebrityGoldCoinResp.avatar)
+}
+inline std::string* MsgQueryCelebrityGoldCoinResp::_internal_mutable_avatar() {
+  
+  return avatar_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgQueryCelebrityGoldCoinResp::release_avatar() {
+  // @@protoc_insertion_point(field_release:MsgQueryCelebrityGoldCoinResp.avatar)
+  return avatar_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgQueryCelebrityGoldCoinResp::set_allocated_avatar(std::string* avatar) {
+  if (avatar != nullptr) {
+    
+  } else {
+    
+  }
+  avatar_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), avatar,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgQueryCelebrityGoldCoinResp.avatar)
+}
+
+// int32 avatar_frame = 2;
+inline void MsgQueryCelebrityGoldCoinResp::clear_avatar_frame() {
+  avatar_frame_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgQueryCelebrityGoldCoinResp::_internal_avatar_frame() const {
+  return avatar_frame_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgQueryCelebrityGoldCoinResp::avatar_frame() const {
+  // @@protoc_insertion_point(field_get:MsgQueryCelebrityGoldCoinResp.avatar_frame)
+  return _internal_avatar_frame();
+}
+inline void MsgQueryCelebrityGoldCoinResp::_internal_set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  avatar_frame_ = value;
+}
+inline void MsgQueryCelebrityGoldCoinResp::set_avatar_frame(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_avatar_frame(value);
+  // @@protoc_insertion_point(field_set:MsgQueryCelebrityGoldCoinResp.avatar_frame)
+}
+
+// string nickname = 3;
+inline void MsgQueryCelebrityGoldCoinResp::clear_nickname() {
+  nickname_.ClearToEmpty();
+}
+inline const std::string& MsgQueryCelebrityGoldCoinResp::nickname() const {
+  // @@protoc_insertion_point(field_get:MsgQueryCelebrityGoldCoinResp.nickname)
+  return _internal_nickname();
+}
+inline void MsgQueryCelebrityGoldCoinResp::set_nickname(const std::string& value) {
+  _internal_set_nickname(value);
+  // @@protoc_insertion_point(field_set:MsgQueryCelebrityGoldCoinResp.nickname)
+}
+inline std::string* MsgQueryCelebrityGoldCoinResp::mutable_nickname() {
+  // @@protoc_insertion_point(field_mutable:MsgQueryCelebrityGoldCoinResp.nickname)
+  return _internal_mutable_nickname();
+}
+inline const std::string& MsgQueryCelebrityGoldCoinResp::_internal_nickname() const {
+  return nickname_.Get();
+}
+inline void MsgQueryCelebrityGoldCoinResp::_internal_set_nickname(const std::string& value) {
+  
+  nickname_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgQueryCelebrityGoldCoinResp::set_nickname(std::string&& value) {
+  
+  nickname_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgQueryCelebrityGoldCoinResp.nickname)
+}
+inline void MsgQueryCelebrityGoldCoinResp::set_nickname(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  nickname_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgQueryCelebrityGoldCoinResp.nickname)
+}
+inline void MsgQueryCelebrityGoldCoinResp::set_nickname(const char* value,
+    size_t size) {
+  
+  nickname_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgQueryCelebrityGoldCoinResp.nickname)
+}
+inline std::string* MsgQueryCelebrityGoldCoinResp::_internal_mutable_nickname() {
+  
+  return nickname_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgQueryCelebrityGoldCoinResp::release_nickname() {
+  // @@protoc_insertion_point(field_release:MsgQueryCelebrityGoldCoinResp.nickname)
+  return nickname_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgQueryCelebrityGoldCoinResp::set_allocated_nickname(std::string* nickname) {
+  if (nickname != nullptr) {
+    
+  } else {
+    
+  }
+  nickname_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), nickname,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgQueryCelebrityGoldCoinResp.nickname)
+}
+
+// int64 gold_coin = 4;
+inline void MsgQueryCelebrityGoldCoinResp::clear_gold_coin() {
+  gold_coin_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgQueryCelebrityGoldCoinResp::_internal_gold_coin() const {
+  return gold_coin_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgQueryCelebrityGoldCoinResp::gold_coin() const {
+  // @@protoc_insertion_point(field_get:MsgQueryCelebrityGoldCoinResp.gold_coin)
+  return _internal_gold_coin();
+}
+inline void MsgQueryCelebrityGoldCoinResp::_internal_set_gold_coin(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  gold_coin_ = value;
+}
+inline void MsgQueryCelebrityGoldCoinResp::set_gold_coin(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_gold_coin(value);
+  // @@protoc_insertion_point(field_set:MsgQueryCelebrityGoldCoinResp.gold_coin)
+}
+
+// bool state = 5;
+inline void MsgQueryCelebrityGoldCoinResp::clear_state() {
+  state_ = false;
+}
+inline bool MsgQueryCelebrityGoldCoinResp::_internal_state() const {
+  return state_;
+}
+inline bool MsgQueryCelebrityGoldCoinResp::state() const {
+  // @@protoc_insertion_point(field_get:MsgQueryCelebrityGoldCoinResp.state)
+  return _internal_state();
+}
+inline void MsgQueryCelebrityGoldCoinResp::_internal_set_state(bool value) {
+  
+  state_ = value;
+}
+inline void MsgQueryCelebrityGoldCoinResp::set_state(bool value) {
+  _internal_set_state(value);
+  // @@protoc_insertion_point(field_set:MsgQueryCelebrityGoldCoinResp.state)
+}
+
+// -------------------------------------------------------------------
+
+// MsgInfiniteAgentQueryMyInfoResp
+
+// int32 agent_level = 1;
+inline void MsgInfiniteAgentQueryMyInfoResp::clear_agent_level() {
+  agent_level_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgInfiniteAgentQueryMyInfoResp::_internal_agent_level() const {
+  return agent_level_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgInfiniteAgentQueryMyInfoResp::agent_level() const {
+  // @@protoc_insertion_point(field_get:MsgInfiniteAgentQueryMyInfoResp.agent_level)
+  return _internal_agent_level();
+}
+inline void MsgInfiniteAgentQueryMyInfoResp::_internal_set_agent_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  agent_level_ = value;
+}
+inline void MsgInfiniteAgentQueryMyInfoResp::set_agent_level(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_agent_level(value);
+  // @@protoc_insertion_point(field_set:MsgInfiniteAgentQueryMyInfoResp.agent_level)
+}
+
+// int32 agent_ratio = 2;
+inline void MsgInfiniteAgentQueryMyInfoResp::clear_agent_ratio() {
+  agent_ratio_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgInfiniteAgentQueryMyInfoResp::_internal_agent_ratio() const {
+  return agent_ratio_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgInfiniteAgentQueryMyInfoResp::agent_ratio() const {
+  // @@protoc_insertion_point(field_get:MsgInfiniteAgentQueryMyInfoResp.agent_ratio)
+  return _internal_agent_ratio();
+}
+inline void MsgInfiniteAgentQueryMyInfoResp::_internal_set_agent_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  agent_ratio_ = value;
+}
+inline void MsgInfiniteAgentQueryMyInfoResp::set_agent_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_agent_ratio(value);
+  // @@protoc_insertion_point(field_set:MsgInfiniteAgentQueryMyInfoResp.agent_ratio)
+}
+
+// int32 bind_id = 3;
+inline void MsgInfiniteAgentQueryMyInfoResp::clear_bind_id() {
+  bind_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgInfiniteAgentQueryMyInfoResp::_internal_bind_id() const {
+  return bind_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgInfiniteAgentQueryMyInfoResp::bind_id() const {
+  // @@protoc_insertion_point(field_get:MsgInfiniteAgentQueryMyInfoResp.bind_id)
+  return _internal_bind_id();
+}
+inline void MsgInfiniteAgentQueryMyInfoResp::_internal_set_bind_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  bind_id_ = value;
+}
+inline void MsgInfiniteAgentQueryMyInfoResp::set_bind_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_bind_id(value);
+  // @@protoc_insertion_point(field_set:MsgInfiniteAgentQueryMyInfoResp.bind_id)
+}
+
+// int64 cur_rebate = 4;
+inline void MsgInfiniteAgentQueryMyInfoResp::clear_cur_rebate() {
+  cur_rebate_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgInfiniteAgentQueryMyInfoResp::_internal_cur_rebate() const {
+  return cur_rebate_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgInfiniteAgentQueryMyInfoResp::cur_rebate() const {
+  // @@protoc_insertion_point(field_get:MsgInfiniteAgentQueryMyInfoResp.cur_rebate)
+  return _internal_cur_rebate();
+}
+inline void MsgInfiniteAgentQueryMyInfoResp::_internal_set_cur_rebate(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  cur_rebate_ = value;
+}
+inline void MsgInfiniteAgentQueryMyInfoResp::set_cur_rebate(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_cur_rebate(value);
+  // @@protoc_insertion_point(field_set:MsgInfiniteAgentQueryMyInfoResp.cur_rebate)
+}
+
+// int64 total_rebate = 5;
+inline void MsgInfiniteAgentQueryMyInfoResp::clear_total_rebate() {
+  total_rebate_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgInfiniteAgentQueryMyInfoResp::_internal_total_rebate() const {
+  return total_rebate_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgInfiniteAgentQueryMyInfoResp::total_rebate() const {
+  // @@protoc_insertion_point(field_get:MsgInfiniteAgentQueryMyInfoResp.total_rebate)
+  return _internal_total_rebate();
+}
+inline void MsgInfiniteAgentQueryMyInfoResp::_internal_set_total_rebate(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  total_rebate_ = value;
+}
+inline void MsgInfiniteAgentQueryMyInfoResp::set_total_rebate(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_total_rebate(value);
+  // @@protoc_insertion_point(field_set:MsgInfiniteAgentQueryMyInfoResp.total_rebate)
+}
+
+// int64 game_rebate = 6;
+inline void MsgInfiniteAgentQueryMyInfoResp::clear_game_rebate() {
+  game_rebate_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgInfiniteAgentQueryMyInfoResp::_internal_game_rebate() const {
+  return game_rebate_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgInfiniteAgentQueryMyInfoResp::game_rebate() const {
+  // @@protoc_insertion_point(field_get:MsgInfiniteAgentQueryMyInfoResp.game_rebate)
+  return _internal_game_rebate();
+}
+inline void MsgInfiniteAgentQueryMyInfoResp::_internal_set_game_rebate(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  game_rebate_ = value;
+}
+inline void MsgInfiniteAgentQueryMyInfoResp::set_game_rebate(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_game_rebate(value);
+  // @@protoc_insertion_point(field_set:MsgInfiniteAgentQueryMyInfoResp.game_rebate)
+}
+
+// -------------------------------------------------------------------
+
+// MsgInfiniteAgentQuerySubInfo
+
+// int32 user_id = 1;
+inline void MsgInfiniteAgentQuerySubInfo::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgInfiniteAgentQuerySubInfo::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgInfiniteAgentQuerySubInfo::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgInfiniteAgentQuerySubInfo.user_id)
+  return _internal_user_id();
+}
+inline void MsgInfiniteAgentQuerySubInfo::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgInfiniteAgentQuerySubInfo::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgInfiniteAgentQuerySubInfo.user_id)
+}
+
+// int32 current_page = 2;
+inline void MsgInfiniteAgentQuerySubInfo::clear_current_page() {
+  current_page_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgInfiniteAgentQuerySubInfo::_internal_current_page() const {
+  return current_page_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgInfiniteAgentQuerySubInfo::current_page() const {
+  // @@protoc_insertion_point(field_get:MsgInfiniteAgentQuerySubInfo.current_page)
+  return _internal_current_page();
+}
+inline void MsgInfiniteAgentQuerySubInfo::_internal_set_current_page(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  current_page_ = value;
+}
+inline void MsgInfiniteAgentQuerySubInfo::set_current_page(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_current_page(value);
+  // @@protoc_insertion_point(field_set:MsgInfiniteAgentQuerySubInfo.current_page)
+}
+
+// int32 max_row = 3;
+inline void MsgInfiniteAgentQuerySubInfo::clear_max_row() {
+  max_row_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgInfiniteAgentQuerySubInfo::_internal_max_row() const {
+  return max_row_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgInfiniteAgentQuerySubInfo::max_row() const {
+  // @@protoc_insertion_point(field_get:MsgInfiniteAgentQuerySubInfo.max_row)
+  return _internal_max_row();
+}
+inline void MsgInfiniteAgentQuerySubInfo::_internal_set_max_row(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  max_row_ = value;
+}
+inline void MsgInfiniteAgentQuerySubInfo::set_max_row(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_max_row(value);
+  // @@protoc_insertion_point(field_set:MsgInfiniteAgentQuerySubInfo.max_row)
+}
+
+// -------------------------------------------------------------------
+
+// InfiniteAgentQuerySubInfo
+
+// int32 user_id = 1;
+inline void InfiniteAgentQuerySubInfo::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 InfiniteAgentQuerySubInfo::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 InfiniteAgentQuerySubInfo::user_id() const {
+  // @@protoc_insertion_point(field_get:InfiniteAgentQuerySubInfo.user_id)
+  return _internal_user_id();
+}
+inline void InfiniteAgentQuerySubInfo::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void InfiniteAgentQuerySubInfo::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:InfiniteAgentQuerySubInfo.user_id)
+}
+
+// int32 subordinates = 2;
+inline void InfiniteAgentQuerySubInfo::clear_subordinates() {
+  subordinates_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 InfiniteAgentQuerySubInfo::_internal_subordinates() const {
+  return subordinates_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 InfiniteAgentQuerySubInfo::subordinates() const {
+  // @@protoc_insertion_point(field_get:InfiniteAgentQuerySubInfo.subordinates)
+  return _internal_subordinates();
+}
+inline void InfiniteAgentQuerySubInfo::_internal_set_subordinates(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  subordinates_ = value;
+}
+inline void InfiniteAgentQuerySubInfo::set_subordinates(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_subordinates(value);
+  // @@protoc_insertion_point(field_set:InfiniteAgentQuerySubInfo.subordinates)
+}
+
+// int64 total_tax = 3;
+inline void InfiniteAgentQuerySubInfo::clear_total_tax() {
+  total_tax_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 InfiniteAgentQuerySubInfo::_internal_total_tax() const {
+  return total_tax_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 InfiniteAgentQuerySubInfo::total_tax() const {
+  // @@protoc_insertion_point(field_get:InfiniteAgentQuerySubInfo.total_tax)
+  return _internal_total_tax();
+}
+inline void InfiniteAgentQuerySubInfo::_internal_set_total_tax(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  total_tax_ = value;
+}
+inline void InfiniteAgentQuerySubInfo::set_total_tax(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_total_tax(value);
+  // @@protoc_insertion_point(field_set:InfiniteAgentQuerySubInfo.total_tax)
+}
+
+// int64 today_tax = 4;
+inline void InfiniteAgentQuerySubInfo::clear_today_tax() {
+  today_tax_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 InfiniteAgentQuerySubInfo::_internal_today_tax() const {
+  return today_tax_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 InfiniteAgentQuerySubInfo::today_tax() const {
+  // @@protoc_insertion_point(field_get:InfiniteAgentQuerySubInfo.today_tax)
+  return _internal_today_tax();
+}
+inline void InfiniteAgentQuerySubInfo::_internal_set_today_tax(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  today_tax_ = value;
+}
+inline void InfiniteAgentQuerySubInfo::set_today_tax(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_today_tax(value);
+  // @@protoc_insertion_point(field_set:InfiniteAgentQuerySubInfo.today_tax)
+}
+
+// int64 today_ratio = 5;
+inline void InfiniteAgentQuerySubInfo::clear_today_ratio() {
+  today_ratio_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 InfiniteAgentQuerySubInfo::_internal_today_ratio() const {
+  return today_ratio_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 InfiniteAgentQuerySubInfo::today_ratio() const {
+  // @@protoc_insertion_point(field_get:InfiniteAgentQuerySubInfo.today_ratio)
+  return _internal_today_ratio();
+}
+inline void InfiniteAgentQuerySubInfo::_internal_set_today_ratio(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  today_ratio_ = value;
+}
+inline void InfiniteAgentQuerySubInfo::set_today_ratio(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_today_ratio(value);
+  // @@protoc_insertion_point(field_set:InfiniteAgentQuerySubInfo.today_ratio)
+}
+
+// int32 agent_ratio = 6;
+inline void InfiniteAgentQuerySubInfo::clear_agent_ratio() {
+  agent_ratio_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 InfiniteAgentQuerySubInfo::_internal_agent_ratio() const {
+  return agent_ratio_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 InfiniteAgentQuerySubInfo::agent_ratio() const {
+  // @@protoc_insertion_point(field_get:InfiniteAgentQuerySubInfo.agent_ratio)
+  return _internal_agent_ratio();
+}
+inline void InfiniteAgentQuerySubInfo::_internal_set_agent_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  agent_ratio_ = value;
+}
+inline void InfiniteAgentQuerySubInfo::set_agent_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_agent_ratio(value);
+  // @@protoc_insertion_point(field_set:InfiniteAgentQuerySubInfo.agent_ratio)
+}
+
+// -------------------------------------------------------------------
+
+// MsgInfiniteAgentQuerySubInfoResp
+
+// int32 agent_count = 1;
+inline void MsgInfiniteAgentQuerySubInfoResp::clear_agent_count() {
+  agent_count_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgInfiniteAgentQuerySubInfoResp::_internal_agent_count() const {
+  return agent_count_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgInfiniteAgentQuerySubInfoResp::agent_count() const {
+  // @@protoc_insertion_point(field_get:MsgInfiniteAgentQuerySubInfoResp.agent_count)
+  return _internal_agent_count();
+}
+inline void MsgInfiniteAgentQuerySubInfoResp::_internal_set_agent_count(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  agent_count_ = value;
+}
+inline void MsgInfiniteAgentQuerySubInfoResp::set_agent_count(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_agent_count(value);
+  // @@protoc_insertion_point(field_set:MsgInfiniteAgentQuerySubInfoResp.agent_count)
+}
+
+// bool end_list = 2;
+inline void MsgInfiniteAgentQuerySubInfoResp::clear_end_list() {
+  end_list_ = false;
+}
+inline bool MsgInfiniteAgentQuerySubInfoResp::_internal_end_list() const {
+  return end_list_;
+}
+inline bool MsgInfiniteAgentQuerySubInfoResp::end_list() const {
+  // @@protoc_insertion_point(field_get:MsgInfiniteAgentQuerySubInfoResp.end_list)
+  return _internal_end_list();
+}
+inline void MsgInfiniteAgentQuerySubInfoResp::_internal_set_end_list(bool value) {
+  
+  end_list_ = value;
+}
+inline void MsgInfiniteAgentQuerySubInfoResp::set_end_list(bool value) {
+  _internal_set_end_list(value);
+  // @@protoc_insertion_point(field_set:MsgInfiniteAgentQuerySubInfoResp.end_list)
+}
+
+// repeated .InfiniteAgentQuerySubInfo info = 3;
+inline int MsgInfiniteAgentQuerySubInfoResp::_internal_info_size() const {
+  return info_.size();
+}
+inline int MsgInfiniteAgentQuerySubInfoResp::info_size() const {
+  return _internal_info_size();
+}
+inline void MsgInfiniteAgentQuerySubInfoResp::clear_info() {
+  info_.Clear();
+}
+inline ::InfiniteAgentQuerySubInfo* MsgInfiniteAgentQuerySubInfoResp::mutable_info(int index) {
+  // @@protoc_insertion_point(field_mutable:MsgInfiniteAgentQuerySubInfoResp.info)
+  return info_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::InfiniteAgentQuerySubInfo >*
+MsgInfiniteAgentQuerySubInfoResp::mutable_info() {
+  // @@protoc_insertion_point(field_mutable_list:MsgInfiniteAgentQuerySubInfoResp.info)
+  return &info_;
+}
+inline const ::InfiniteAgentQuerySubInfo& MsgInfiniteAgentQuerySubInfoResp::_internal_info(int index) const {
+  return info_.Get(index);
+}
+inline const ::InfiniteAgentQuerySubInfo& MsgInfiniteAgentQuerySubInfoResp::info(int index) const {
+  // @@protoc_insertion_point(field_get:MsgInfiniteAgentQuerySubInfoResp.info)
+  return _internal_info(index);
+}
+inline ::InfiniteAgentQuerySubInfo* MsgInfiniteAgentQuerySubInfoResp::_internal_add_info() {
+  return info_.Add();
+}
+inline ::InfiniteAgentQuerySubInfo* MsgInfiniteAgentQuerySubInfoResp::add_info() {
+  // @@protoc_insertion_point(field_add:MsgInfiniteAgentQuerySubInfoResp.info)
+  return _internal_add_info();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::InfiniteAgentQuerySubInfo >&
+MsgInfiniteAgentQuerySubInfoResp::info() const {
+  // @@protoc_insertion_point(field_list:MsgInfiniteAgentQuerySubInfoResp.info)
+  return info_;
+}
+
+// -------------------------------------------------------------------
+
+// MsgSetSubAgent
+
+// int32 user_id = 1;
+inline void MsgSetSubAgent::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSetSubAgent::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSetSubAgent::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgSetSubAgent.user_id)
+  return _internal_user_id();
+}
+inline void MsgSetSubAgent::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgSetSubAgent::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgSetSubAgent.user_id)
+}
+
+// int32 agent_ratio = 2;
+inline void MsgSetSubAgent::clear_agent_ratio() {
+  agent_ratio_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSetSubAgent::_internal_agent_ratio() const {
+  return agent_ratio_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSetSubAgent::agent_ratio() const {
+  // @@protoc_insertion_point(field_get:MsgSetSubAgent.agent_ratio)
+  return _internal_agent_ratio();
+}
+inline void MsgSetSubAgent::_internal_set_agent_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  agent_ratio_ = value;
+}
+inline void MsgSetSubAgent::set_agent_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_agent_ratio(value);
+  // @@protoc_insertion_point(field_set:MsgSetSubAgent.agent_ratio)
+}
+
+// -------------------------------------------------------------------
+
+// MsgSetSubAgentResp
+
+// int32 code = 1;
+inline void MsgSetSubAgentResp::clear_code() {
+  code_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSetSubAgentResp::_internal_code() const {
+  return code_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSetSubAgentResp::code() const {
+  // @@protoc_insertion_point(field_get:MsgSetSubAgentResp.code)
+  return _internal_code();
+}
+inline void MsgSetSubAgentResp::_internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  code_ = value;
+}
+inline void MsgSetSubAgentResp::set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_code(value);
+  // @@protoc_insertion_point(field_set:MsgSetSubAgentResp.code)
+}
+
+// int32 user_id = 2;
+inline void MsgSetSubAgentResp::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSetSubAgentResp::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSetSubAgentResp::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgSetSubAgentResp.user_id)
+  return _internal_user_id();
+}
+inline void MsgSetSubAgentResp::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgSetSubAgentResp::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgSetSubAgentResp.user_id)
+}
+
+// int32 subordinates = 3;
+inline void MsgSetSubAgentResp::clear_subordinates() {
+  subordinates_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSetSubAgentResp::_internal_subordinates() const {
+  return subordinates_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSetSubAgentResp::subordinates() const {
+  // @@protoc_insertion_point(field_get:MsgSetSubAgentResp.subordinates)
+  return _internal_subordinates();
+}
+inline void MsgSetSubAgentResp::_internal_set_subordinates(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  subordinates_ = value;
+}
+inline void MsgSetSubAgentResp::set_subordinates(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_subordinates(value);
+  // @@protoc_insertion_point(field_set:MsgSetSubAgentResp.subordinates)
+}
+
+// int64 total_tax = 4;
+inline void MsgSetSubAgentResp::clear_total_tax() {
+  total_tax_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSetSubAgentResp::_internal_total_tax() const {
+  return total_tax_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSetSubAgentResp::total_tax() const {
+  // @@protoc_insertion_point(field_get:MsgSetSubAgentResp.total_tax)
+  return _internal_total_tax();
+}
+inline void MsgSetSubAgentResp::_internal_set_total_tax(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  total_tax_ = value;
+}
+inline void MsgSetSubAgentResp::set_total_tax(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_total_tax(value);
+  // @@protoc_insertion_point(field_set:MsgSetSubAgentResp.total_tax)
+}
+
+// int64 today_tax = 5;
+inline void MsgSetSubAgentResp::clear_today_tax() {
+  today_tax_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSetSubAgentResp::_internal_today_tax() const {
+  return today_tax_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSetSubAgentResp::today_tax() const {
+  // @@protoc_insertion_point(field_get:MsgSetSubAgentResp.today_tax)
+  return _internal_today_tax();
+}
+inline void MsgSetSubAgentResp::_internal_set_today_tax(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  today_tax_ = value;
+}
+inline void MsgSetSubAgentResp::set_today_tax(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_today_tax(value);
+  // @@protoc_insertion_point(field_set:MsgSetSubAgentResp.today_tax)
+}
+
+// int64 today_ratio = 6;
+inline void MsgSetSubAgentResp::clear_today_ratio() {
+  today_ratio_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSetSubAgentResp::_internal_today_ratio() const {
+  return today_ratio_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSetSubAgentResp::today_ratio() const {
+  // @@protoc_insertion_point(field_get:MsgSetSubAgentResp.today_ratio)
+  return _internal_today_ratio();
+}
+inline void MsgSetSubAgentResp::_internal_set_today_ratio(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  today_ratio_ = value;
+}
+inline void MsgSetSubAgentResp::set_today_ratio(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_today_ratio(value);
+  // @@protoc_insertion_point(field_set:MsgSetSubAgentResp.today_ratio)
+}
+
+// int32 agent_ratio = 7;
+inline void MsgSetSubAgentResp::clear_agent_ratio() {
+  agent_ratio_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSetSubAgentResp::_internal_agent_ratio() const {
+  return agent_ratio_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSetSubAgentResp::agent_ratio() const {
+  // @@protoc_insertion_point(field_get:MsgSetSubAgentResp.agent_ratio)
+  return _internal_agent_ratio();
+}
+inline void MsgSetSubAgentResp::_internal_set_agent_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  agent_ratio_ = value;
+}
+inline void MsgSetSubAgentResp::set_agent_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_agent_ratio(value);
+  // @@protoc_insertion_point(field_set:MsgSetSubAgentResp.agent_ratio)
+}
+
+// -------------------------------------------------------------------
+
+// MsgRecviveAgentRebateResp
+
+// int32 code = 1;
+inline void MsgRecviveAgentRebateResp::clear_code() {
+  code_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgRecviveAgentRebateResp::_internal_code() const {
+  return code_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgRecviveAgentRebateResp::code() const {
+  // @@protoc_insertion_point(field_get:MsgRecviveAgentRebateResp.code)
+  return _internal_code();
+}
+inline void MsgRecviveAgentRebateResp::_internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  code_ = value;
+}
+inline void MsgRecviveAgentRebateResp::set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_code(value);
+  // @@protoc_insertion_point(field_set:MsgRecviveAgentRebateResp.code)
+}
+
+// int64 cur_rebate = 2;
+inline void MsgRecviveAgentRebateResp::clear_cur_rebate() {
+  cur_rebate_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgRecviveAgentRebateResp::_internal_cur_rebate() const {
+  return cur_rebate_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgRecviveAgentRebateResp::cur_rebate() const {
+  // @@protoc_insertion_point(field_get:MsgRecviveAgentRebateResp.cur_rebate)
+  return _internal_cur_rebate();
+}
+inline void MsgRecviveAgentRebateResp::_internal_set_cur_rebate(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  cur_rebate_ = value;
+}
+inline void MsgRecviveAgentRebateResp::set_cur_rebate(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_cur_rebate(value);
+  // @@protoc_insertion_point(field_set:MsgRecviveAgentRebateResp.cur_rebate)
+}
+
+// -------------------------------------------------------------------
+
 // MsgWeekMonthInfo
 
 // int32 card_type = 1;
@@ -19912,6 +22154,22 @@ MsgGetWeekMonthInfoResp::cards_info() const {
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

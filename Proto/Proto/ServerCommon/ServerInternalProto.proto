@@ -192,7 +192,7 @@ message MsgLoginPlayerInfo
 	string		avatar				= 6;	//头像
 	bool		first_recharge		= 7;	//是否首充
 	int32		user_type			= 8;	//玩家类型(0:普通玩家 1:VIP)
-	bool		is_drain			= 9;	//是否引流量 0:不是 1:是
+	int32		is_drain			= 9;	//是否引流量 0:谷歌商店来源 1:推广渠道(facebook等) 2:自定义连接下 3：网红用户
 	uint64		coin				= 10;	//玩家金币
 	string		phone_num			= 11;	//手机号
 	string		password			= 12;	//密码
@@ -529,7 +529,13 @@ message MsgDBUpgradeVIP
 	int32		bind_id						= 3;	//绑定id
 	int32		add_vip_exp					= 4;	//增加经验
 }
-
+//设置玩家下级代理
+message MsgDBSetSubAgent
+{
+	int32 user_id 		= 1;			//玩家id
+	int32 sub_user		= 2;			//下架代理ID
+	int32 agent_ratio 	= 3;			//分成比例
+}
 /////////////////////////////////////////////PVP//////////////////////////////////////////////
 message MsgPvpSerTableInfo
 {

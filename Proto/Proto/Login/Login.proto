@@ -526,6 +526,73 @@ message MsgInviteUserResp
 	repeated MsgInviteUserInfo info = 1;	//邀请玩家列表
 }
 
+//网红金币
+message MsgQueryCelebrityGoldCoinResp
+{
+	string		avatar			= 1;	//头像
+	int32		avatar_frame	= 2;	//头像框
+	string		nickname		= 3;	//玩家昵称
+	int64		gold_coin		= 4;	//赠送金币
+	bool		state			= 5;	//领取状态0：未领取
+}
+
+// 请求代理数据返回
+message MsgInfiniteAgentQueryMyInfoResp
+{
+	int32		agent_level 	= 1;	//代理等级
+	int32 		agent_ratio 	= 2;	//分成比例
+	int32 		bind_id 		= 3;	//上级id
+	int64 		cur_rebate 		= 4;	//当前返利
+	int64 		total_rebate 	= 5;	//总返利
+	int64		game_rebate		= 6;	//游戏返利	
+}	       
+//请求下级数据
+message MsgInfiniteAgentQuerySubInfo
+{
+	int32 user_id 				= 1;		//userid
+	int32 current_page			= 2;		//当前页1开始
+	int32 max_row				= 3;		//每页最大行数  最大50，超了改数据库
+}
+//请下级数据	                    
+message InfiniteAgentQuerySubInfo	
+{	                                
+	int32 user_id 			= 1;		//下级userid
+	int32 subordinates 		= 2;		//当前id下级人数
+	int64 total_tax 		= 3;		//总税收
+	int64 today_tax 		= 4;		//今日税收
+	int64 today_ratio 		= 5;		//今日返利
+	int32 agent_ratio 		= 6;		//分成比例
+}
+//请求下级数据返回
+message MsgInfiniteAgentQuerySubInfoResp
+{
+	int32 agent_count 	= 1;						//代理数量
+	bool end_list 		= 2;						//结束
+	repeated InfiniteAgentQuerySubInfo info = 3;	//代理总数据
+}
+//设置下级代理
+message MsgSetSubAgent
+{
+	int32 user_id 		= 1;			//玩家id
+	int32 agent_ratio 	= 2;			//分成比例
+}
+//设置代理返回
+message MsgSetSubAgentResp
+{
+	int32 code				= 1;		//0成功，非0多语言码
+	int32 user_id 			= 2;		//下级userid
+	int32 subordinates 		= 3;		//当前id下级人数
+	int64 total_tax 		= 4;		//总税收
+	int64 today_tax 		= 5;		//今日税收
+	int64 today_ratio 		= 6;		//今日返利
+	int32 agent_ratio 		= 7;		//分成比例
+}
+//领取返利返回
+message MsgRecviveAgentRebateResp
+{
+	int32 code = 1;			//0：成功，非0 多语言码	
+	int64 cur_rebate = 2;	//当前返利
+}
 
 //查询玩家周卡月卡信息
 message MsgWeekMonthInfo
