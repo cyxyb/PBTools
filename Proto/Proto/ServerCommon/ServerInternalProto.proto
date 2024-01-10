@@ -331,6 +331,7 @@ message MsgDBWriteScore
 	string		game_details	= 5;	//游戏详情
 	int32		table_id		= 6;	//桌子id
 	int32		table_no		= 7;	//局号
+	int64		tax_score		= 8;	//本局税收		
 }
 
 //写分返回

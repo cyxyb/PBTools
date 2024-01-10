@@ -6591,6 +6591,7 @@ class MsgDBWriteScore PROTOBUF_FINAL :
     kScoreFieldNumber = 3,
     kIsUpRankFieldNumber = 4,
     kTableIdFieldNumber = 6,
+    kTaxScoreFieldNumber = 8,
     kTableNoFieldNumber = 7,
   };
   // string game_details = 5;
@@ -6654,6 +6655,15 @@ class MsgDBWriteScore PROTOBUF_FINAL :
   void _internal_set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int64 tax_score = 8;
+  void clear_tax_score();
+  ::PROTOBUF_NAMESPACE_ID::int64 tax_score() const;
+  void set_tax_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_tax_score() const;
+  void _internal_set_tax_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
   // int32 table_no = 7;
   void clear_table_no();
   ::PROTOBUF_NAMESPACE_ID::int32 table_no() const;
@@ -6676,6 +6686,7 @@ class MsgDBWriteScore PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int64 score_;
   ::PROTOBUF_NAMESPACE_ID::int32 is_up_rank_;
   ::PROTOBUF_NAMESPACE_ID::int32 table_id_;
+  ::PROTOBUF_NAMESPACE_ID::int64 tax_score_;
   ::PROTOBUF_NAMESPACE_ID::int32 table_no_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
@@ -16524,6 +16535,26 @@ inline void MsgDBWriteScore::_internal_set_table_no(::PROTOBUF_NAMESPACE_ID::int
 inline void MsgDBWriteScore::set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_table_no(value);
   // @@protoc_insertion_point(field_set:MsgDBWriteScore.table_no)
+}
+
+// int64 tax_score = 8;
+inline void MsgDBWriteScore::clear_tax_score() {
+  tax_score_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBWriteScore::_internal_tax_score() const {
+  return tax_score_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBWriteScore::tax_score() const {
+  // @@protoc_insertion_point(field_get:MsgDBWriteScore.tax_score)
+  return _internal_tax_score();
+}
+inline void MsgDBWriteScore::_internal_set_tax_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  tax_score_ = value;
+}
+inline void MsgDBWriteScore::set_tax_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_tax_score(value);
+  // @@protoc_insertion_point(field_set:MsgDBWriteScore.tax_score)
 }
 
 // -------------------------------------------------------------------
