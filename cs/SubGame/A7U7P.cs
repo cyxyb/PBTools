@@ -24,52 +24,43 @@ namespace A7U7P {
     static A7U7PReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChlQcm90by9TdWJHYW1lL0E3VTdQLnByb3RvEgVBN1U3UCImCglBN0JldElu",
-            "Zm8SCwoDYmV0GAEgASgDEgwKBGFyZWEYAiABKAUifAoMQTdQbGF5ZXJEYXRh",
-            "Eg8KB3VzZXJfaWQYASABKAUSEAoId2luX2dvbGQYAiABKAMSEgoKdG90YWxf",
-            "cGxheRgDIAEoBRIQCgh3aW5fcGxheRgEIAEoBRIjCgliZXRfaW5mb3MYBSAD",
-            "KAsyEC5BN1U3UC5BN0JldEluZm8iOAoSQTdVcFdhaXRCYW5rZXJJbmZvEgoK",
-            "AmlkGAEgASgFEhYKDm9wX2Jhbmtlcl9nb2xkGAIgASgDIl4KDEE3QmFua2Vy",
-            "SW5mbxIKCgJpZBgBIAEoBRIPCgdvcF9nb2xkGAIgASgDEg0KBXJvdW5kGAMg",
-            "ASgFEhEKCXRvdGFsX3dpbhgEIAEoAxIPCgdpc19kb3duGAUgASgIIhsKCU1z",
-            "Z1JlY29yZBIOCgZzaWV2ZXMYAiADKAUi6wEKDE1zZ1NjZW5lSW5mbxIQCghi",
-            "ZXRfbGlzdBgBIAMoAxIhCgdyZWNvcmRzGAIgAygLMhAuQTdVN1AuTXNnUmVj",
-            "b3JkEhEKCWJldF9saW1pdBgDIAMoBRIUCgxwbGF5ZXJfbGltaXQYBSABKAUS",
-            "EAoIYmV0X3RpbWUYBiABKAUSEAoIb3V0X3RpbWUYByABKAUSDQoFc3RhdGUY",
-            "CCABKAUSEAoIYXJlYV9iZXQYEyADKAUSDgoGc2lldmVzGBQgAygFEigKC3Bs",
-            "YXllcl9saXN0GBYgAygLMhMuQTdVN1AuQTdQbGF5ZXJEYXRhIhIKEE1zZ1N0",
-            "YXJ0R2FtZVJlc3AiIwoGTXNnQmV0EgsKA2JldBgBIAEoAxIMCgRhcmVhGAIg",
-            "ASgFImUKCk1zZ0JldFJlc3ASEAoIcmV0X2NvZGUYASABKAUSDwoHdXNlcl9p",
-            "ZBgCIAEoBRIQCghjaGFpcl9pZBgDIAEoBRIiCghiZXRfaW5mbxgEIAEoCzIQ",
-            "LkE3VTdQLkE3QmV0SW5mbyI9Cg9Nc2dTZW5kQ2FyZFJlc3ASDAoEY2FyZBgB",
-            "IAEoBRIMCgRhcmVhGAIgASgFEg4KBmlzX2VuZBgDIAEoCCJiCglNc2dXaW5N",
-            "c2cSDwoHdXNlcl9pZBgBIAEoBRIQCghjaGFpcl9pZBgCIAEoBRIQCgh3aW5f",
-            "Z29sZBgDIAEoAxIQCghuZXdfZ29sZBgEIAEoAxIOCgZpc193aW4YBSABKAgi",
-            "awoJTXNnUmVzdWx0EhEKCXdpbl9pbmRleBgBIAEoBRIoCgtiYW5rZXJfaW5m",
-            "bxgCIAEoCzITLkE3VTdQLkE3QmFua2VySW5mbxIhCgd3aW5fbXNnGAMgAygL",
-            "MhAuQTdVN1AuTXNnV2luTXNnKlEKCkVHYW1lU3RhdGUSDAoIR1NfUmVhZHkQ",
-            "ABIMCghHU19TdGFydBABEgoKBkdTX0JldBACEgwKCEdTX1NlbmRTEAMSDQoJ",
-            "R1NfUmVzdWx0EAQq2AEKDUVNc2dJRFN1YkdhbWUSFQoRTXNnSURTdWJHYW1l",
-            "X051bGwQABIUChBNc2dJRFN1YkdhbWVfQmV0EAESGAoUTXNnSURTdWJHYW1l",
-            "X0JldFJlc3AQAhIeChpNc2dJRFN1YkdhbWVfR2FtZVN0YXJ0UmVzcBAFEh0K",
-            "GU1zZ0lEU3ViR2FtZV9TZW5kQ2FyZFJlc3AQBhIfChtNc2dJRFN1YkdhbWVf",
-            "R2FtZVJlc3VsdFJlc3AQBxIgChxNc2dJRFN1YkdhbWVfTm90aWZ5U3RhdGVS",
-            "ZXNwEAhiBnByb3RvMw=="));
+            "ChlQcm90by9TdWJHYW1lL0E3VTdQLnByb3RvEgVBN1U3UCI0ChBNc2dBN05v",
+            "dGlmeVN0YXRlEhIKCmdhbWVfc3RhdGUYASABKAUSDAoEdGltZRgCIAEoBSIm",
+            "CglBN0JldEluZm8SCwoDYmV0GAEgASgDEgwKBGFyZWEYAiABKAUifAoMQTdQ",
+            "bGF5ZXJEYXRhEg8KB3VzZXJfaWQYASABKAUSEAoId2luX2dvbGQYAiABKAMS",
+            "EgoKdG90YWxfcGxheRgDIAEoBRIQCgh3aW5fcGxheRgEIAEoBRIjCgliZXRf",
+            "aW5mb3MYBSADKAsyEC5BN1U3UC5BN0JldEluZm8iHQoLTXNnQTdSZWNvcmQS",
+            "DgoGc2lldmVzGAIgAygFIoECCg5Nc2dBN1NjZW5lSW5mbxIQCghiZXRfbGlz",
+            "dBgBIAMoAxIjCgdyZWNvcmRzGAIgAygLMhIuQTdVN1AuTXNnQTdSZWNvcmQS",
+            "EQoJYmV0X2xpbWl0GAMgAygFEhQKDHBsYXllcl9saW1pdBgFIAEoBRIQCghi",
+            "ZXRfdGltZRgGIAEoBRIQCghvdXRfdGltZRgHIAEoBRINCgVzdGF0ZRgIIAEo",
+            "BRIQCghnYW1lX3RheBgJIAEoBRIQCghhcmVhX2JldBgTIAMoBRIOCgZzaWV2",
+            "ZXMYFCADKAUSKAoLcGxheWVyX2xpc3QYFiADKAsyEy5BN1U3UC5BN1BsYXll",
+            "ckRhdGEiJQoITXNnQTdCZXQSCwoDYmV0GAEgASgDEgwKBGFyZWEYAiABKAUi",
+            "ZwoMTXNnQTdCZXRSZXNwEhAKCHJldF9jb2RlGAEgASgFEg8KB3VzZXJfaWQY",
+            "AiABKAUSEAoIY2hhaXJfaWQYAyABKAUSIgoIYmV0X2luZm8YBCABKAsyEC5B",
+            "N1U3UC5BN0JldEluZm8iVAoLTXNnQTdXaW5Nc2cSDwoHdXNlcl9pZBgBIAEo",
+            "BRIQCghjaGFpcl9pZBgCIAEoBRIQCgh3aW5fZ29sZBgDIAEoAxIQCghuZXdf",
+            "Z29sZBgEIAEoAyJVCgtNc2dBN1Jlc3VsdBIOCgZzaWV2ZXMYAiADKAUSEQoJ",
+            "d2luX2luZGV4GAEgAygFEiMKB3dpbl9tc2cYAyADKAsyEi5BN1U3UC5Nc2dB",
+            "N1dpbk1zZypDCgpFR2FtZVN0YXRlEgwKCEdTX1JlYWR5EAASDAoIR1NfU3Rh",
+            "cnQQARIKCgZHU19CZXQQAhINCglHU19SZXN1bHQQAyqZAQoNRU1zZ0lEU3Vi",
+            "R2FtZRIVChFNc2dJRFN1YkdhbWVfTnVsbBAAEhQKEE1zZ0lEU3ViR2FtZV9C",
+            "ZXQQARIYChRNc2dJRFN1YkdhbWVfQmV0UmVzcBACEh8KG01zZ0lEU3ViR2Ft",
+            "ZV9HYW1lUmVzdWx0UmVzcBAHEiAKHE1zZ0lEU3ViR2FtZV9Ob3RpZnlTdGF0",
+            "ZVJlc3AQCGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::A7U7P.EGameState), typeof(global::A7U7P.EMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.MsgA7NotifyState), global::A7U7P.MsgA7NotifyState.Parser, new[]{ "GameState", "Time" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.A7BetInfo), global::A7U7P.A7BetInfo.Parser, new[]{ "Bet", "Area" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.A7PlayerData), global::A7U7P.A7PlayerData.Parser, new[]{ "UserId", "WinGold", "TotalPlay", "WinPlay", "BetInfos" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.A7UpWaitBankerInfo), global::A7U7P.A7UpWaitBankerInfo.Parser, new[]{ "Id", "OpBankerGold" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.A7BankerInfo), global::A7U7P.A7BankerInfo.Parser, new[]{ "Id", "OpGold", "Round", "TotalWin", "IsDown" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.MsgRecord), global::A7U7P.MsgRecord.Parser, new[]{ "Sieves" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.MsgSceneInfo), global::A7U7P.MsgSceneInfo.Parser, new[]{ "BetList", "Records", "BetLimit", "PlayerLimit", "BetTime", "OutTime", "State", "AreaBet", "Sieves", "PlayerList" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.MsgStartGameResp), global::A7U7P.MsgStartGameResp.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.MsgBet), global::A7U7P.MsgBet.Parser, new[]{ "Bet", "Area" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.MsgBetResp), global::A7U7P.MsgBetResp.Parser, new[]{ "RetCode", "UserId", "ChairId", "BetInfo" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.MsgSendCardResp), global::A7U7P.MsgSendCardResp.Parser, new[]{ "Card", "Area", "IsEnd" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.MsgWinMsg), global::A7U7P.MsgWinMsg.Parser, new[]{ "UserId", "ChairId", "WinGold", "NewGold", "IsWin" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.MsgResult), global::A7U7P.MsgResult.Parser, new[]{ "WinIndex", "BankerInfo", "WinMsg" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.MsgA7Record), global::A7U7P.MsgA7Record.Parser, new[]{ "Sieves" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.MsgA7SceneInfo), global::A7U7P.MsgA7SceneInfo.Parser, new[]{ "BetList", "Records", "BetLimit", "PlayerLimit", "BetTime", "OutTime", "State", "GameTax", "AreaBet", "Sieves", "PlayerList" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.MsgA7Bet), global::A7U7P.MsgA7Bet.Parser, new[]{ "Bet", "Area" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.MsgA7BetResp), global::A7U7P.MsgA7BetResp.Parser, new[]{ "RetCode", "UserId", "ChairId", "BetInfo" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.MsgA7WinMsg), global::A7U7P.MsgA7WinMsg.Parser, new[]{ "UserId", "ChairId", "WinGold", "NewGold" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.MsgA7Result), global::A7U7P.MsgA7Result.Parser, new[]{ "Sieves", "WinIndex", "WinMsg" }, null, null, null, null)
           }));
     }
     #endregion
@@ -90,13 +81,9 @@ namespace A7U7P {
     /// </summary>
     [pbr::OriginalName("GS_Bet")] GsBet = 2,
     /// <summary>
-    ///发牌
-    /// </summary>
-    [pbr::OriginalName("GS_SendS")] GsSendS = 3,
-    /// <summary>
     ///结算
     /// </summary>
-    [pbr::OriginalName("GS_Result")] GsResult = 4,
+    [pbr::OriginalName("GS_Result")] GsResult = 3,
   }
 
   public enum EMsgIDSubGame {
@@ -110,14 +97,6 @@ namespace A7U7P {
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_BetResp")] MsgIdsubGameBetResp = 2,
     /// <summary>
-    ///游戏结果(MsgStartGameResp)
-    /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_GameStartResp")] MsgIdsubGameGameStartResp = 5,
-    /// <summary>
-    ///游戏结果(MsgSendCardResp)
-    /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_SendCardResp")] MsgIdsubGameSendCardResp = 6,
-    /// <summary>
     ///游戏结果(MsgResult)
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_GameResultResp")] MsgIdsubGameGameResultResp = 7,
@@ -130,6 +109,223 @@ namespace A7U7P {
   #endregion
 
   #region Messages
+  /// <summary>
+  ///通知状态
+  /// </summary>
+  public sealed partial class MsgA7NotifyState : pb::IMessage<MsgA7NotifyState>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<MsgA7NotifyState> _parser = new pb::MessageParser<MsgA7NotifyState>(() => new MsgA7NotifyState());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<MsgA7NotifyState> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::A7U7P.A7U7PReflection.Descriptor.MessageTypes[0]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MsgA7NotifyState() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MsgA7NotifyState(MsgA7NotifyState other) : this() {
+      gameState_ = other.gameState_;
+      time_ = other.time_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MsgA7NotifyState Clone() {
+      return new MsgA7NotifyState(this);
+    }
+
+    /// <summary>Field number for the "game_state" field.</summary>
+    public const int GameStateFieldNumber = 1;
+    private int gameState_;
+    /// <summary>
+    ///当前状态
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int GameState {
+      get { return gameState_; }
+      set {
+        gameState_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "time" field.</summary>
+    public const int TimeFieldNumber = 2;
+    private int time_;
+    /// <summary>
+    ///当前阶段时间
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Time {
+      get { return time_; }
+      set {
+        time_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as MsgA7NotifyState);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(MsgA7NotifyState other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (GameState != other.GameState) return false;
+      if (Time != other.Time) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (GameState != 0) hash ^= GameState.GetHashCode();
+      if (Time != 0) hash ^= Time.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (GameState != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(GameState);
+      }
+      if (Time != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Time);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (GameState != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(GameState);
+      }
+      if (Time != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Time);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (GameState != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(GameState);
+      }
+      if (Time != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Time);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(MsgA7NotifyState other) {
+      if (other == null) {
+        return;
+      }
+      if (other.GameState != 0) {
+        GameState = other.GameState;
+      }
+      if (other.Time != 0) {
+        Time = other.Time;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            GameState = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            Time = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            GameState = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            Time = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class A7BetInfo : pb::IMessage<A7BetInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -142,7 +338,7 @@ namespace A7U7P {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::A7U7P.A7U7PReflection.Descriptor.MessageTypes[0]; }
+      get { return global::A7U7P.A7U7PReflection.Descriptor.MessageTypes[1]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -187,7 +383,7 @@ namespace A7U7P {
     public const int AreaFieldNumber = 2;
     private int area_;
     /// <summary>
-    ///0-17
+    ///0-16
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int Area {
@@ -356,7 +552,7 @@ namespace A7U7P {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::A7U7P.A7U7PReflection.Descriptor.MessageTypes[1]; }
+      get { return global::A7U7P.A7U7PReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -661,229 +857,15 @@ namespace A7U7P {
 
   }
 
-  public sealed partial class A7UpWaitBankerInfo : pb::IMessage<A7UpWaitBankerInfo>
+  public sealed partial class MsgA7Record : pb::IMessage<MsgA7Record>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<A7UpWaitBankerInfo> _parser = new pb::MessageParser<A7UpWaitBankerInfo>(() => new A7UpWaitBankerInfo());
+    private static readonly pb::MessageParser<MsgA7Record> _parser = new pb::MessageParser<MsgA7Record>(() => new MsgA7Record());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<A7UpWaitBankerInfo> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::A7U7P.A7U7PReflection.Descriptor.MessageTypes[2]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public A7UpWaitBankerInfo() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public A7UpWaitBankerInfo(A7UpWaitBankerInfo other) : this() {
-      id_ = other.id_;
-      opBankerGold_ = other.opBankerGold_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public A7UpWaitBankerInfo Clone() {
-      return new A7UpWaitBankerInfo(this);
-    }
-
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private int id_;
-    /// <summary>
-    /// 庄家ID
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Id {
-      get { return id_; }
-      set {
-        id_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "op_banker_gold" field.</summary>
-    public const int OpBankerGoldFieldNumber = 2;
-    private long opBankerGold_;
-    /// <summary>
-    /// 用户可输赢金币是否要下庄
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long OpBankerGold {
-      get { return opBankerGold_; }
-      set {
-        opBankerGold_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as A7UpWaitBankerInfo);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(A7UpWaitBankerInfo other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Id != other.Id) return false;
-      if (OpBankerGold != other.OpBankerGold) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
-      if (OpBankerGold != 0L) hash ^= OpBankerGold.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
-      }
-      if (OpBankerGold != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(OpBankerGold);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
-      }
-      if (OpBankerGold != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(OpBankerGold);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
-      }
-      if (OpBankerGold != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(OpBankerGold);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(A7UpWaitBankerInfo other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Id != 0) {
-        Id = other.Id;
-      }
-      if (other.OpBankerGold != 0L) {
-        OpBankerGold = other.OpBankerGold;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            Id = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            OpBankerGold = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            Id = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            OpBankerGold = input.ReadInt64();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  public sealed partial class A7BankerInfo : pb::IMessage<A7BankerInfo>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<A7BankerInfo> _parser = new pb::MessageParser<A7BankerInfo>(() => new A7BankerInfo());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<A7BankerInfo> Parser { get { return _parser; } }
+    public static pb::MessageParser<MsgA7Record> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -896,352 +878,21 @@ namespace A7U7P {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public A7BankerInfo() {
+    public MsgA7Record() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public A7BankerInfo(A7BankerInfo other) : this() {
-      id_ = other.id_;
-      opGold_ = other.opGold_;
-      round_ = other.round_;
-      totalWin_ = other.totalWin_;
-      isDown_ = other.isDown_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public A7BankerInfo Clone() {
-      return new A7BankerInfo(this);
-    }
-
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private int id_;
-    /// <summary>
-    /// 庄家ID
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Id {
-      get { return id_; }
-      set {
-        id_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "op_gold" field.</summary>
-    public const int OpGoldFieldNumber = 2;
-    private long opGold_;
-    /// <summary>
-    /// 用户可输赢金币是否要下庄
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long OpGold {
-      get { return opGold_; }
-      set {
-        opGold_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "round" field.</summary>
-    public const int RoundFieldNumber = 3;
-    private int round_;
-    /// <summary>
-    /// 已经上庄轮数 包涵本局	
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Round {
-      get { return round_; }
-      set {
-        round_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "total_win" field.</summary>
-    public const int TotalWinFieldNumber = 4;
-    private long totalWin_;
-    /// <summary>
-    /// 庄家总输赢金币
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long TotalWin {
-      get { return totalWin_; }
-      set {
-        totalWin_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "is_down" field.</summary>
-    public const int IsDownFieldNumber = 5;
-    private bool isDown_;
-    /// <summary>
-    /// 是否要下庄 服务器用的
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool IsDown {
-      get { return isDown_; }
-      set {
-        isDown_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as A7BankerInfo);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(A7BankerInfo other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Id != other.Id) return false;
-      if (OpGold != other.OpGold) return false;
-      if (Round != other.Round) return false;
-      if (TotalWin != other.TotalWin) return false;
-      if (IsDown != other.IsDown) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
-      if (OpGold != 0L) hash ^= OpGold.GetHashCode();
-      if (Round != 0) hash ^= Round.GetHashCode();
-      if (TotalWin != 0L) hash ^= TotalWin.GetHashCode();
-      if (IsDown != false) hash ^= IsDown.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
-      }
-      if (OpGold != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(OpGold);
-      }
-      if (Round != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(Round);
-      }
-      if (TotalWin != 0L) {
-        output.WriteRawTag(32);
-        output.WriteInt64(TotalWin);
-      }
-      if (IsDown != false) {
-        output.WriteRawTag(40);
-        output.WriteBool(IsDown);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
-      }
-      if (OpGold != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(OpGold);
-      }
-      if (Round != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(Round);
-      }
-      if (TotalWin != 0L) {
-        output.WriteRawTag(32);
-        output.WriteInt64(TotalWin);
-      }
-      if (IsDown != false) {
-        output.WriteRawTag(40);
-        output.WriteBool(IsDown);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
-      }
-      if (OpGold != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(OpGold);
-      }
-      if (Round != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Round);
-      }
-      if (TotalWin != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(TotalWin);
-      }
-      if (IsDown != false) {
-        size += 1 + 1;
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(A7BankerInfo other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Id != 0) {
-        Id = other.Id;
-      }
-      if (other.OpGold != 0L) {
-        OpGold = other.OpGold;
-      }
-      if (other.Round != 0) {
-        Round = other.Round;
-      }
-      if (other.TotalWin != 0L) {
-        TotalWin = other.TotalWin;
-      }
-      if (other.IsDown != false) {
-        IsDown = other.IsDown;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            Id = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            OpGold = input.ReadInt64();
-            break;
-          }
-          case 24: {
-            Round = input.ReadInt32();
-            break;
-          }
-          case 32: {
-            TotalWin = input.ReadInt64();
-            break;
-          }
-          case 40: {
-            IsDown = input.ReadBool();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            Id = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            OpGold = input.ReadInt64();
-            break;
-          }
-          case 24: {
-            Round = input.ReadInt32();
-            break;
-          }
-          case 32: {
-            TotalWin = input.ReadInt64();
-            break;
-          }
-          case 40: {
-            IsDown = input.ReadBool();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  public sealed partial class MsgRecord : pb::IMessage<MsgRecord>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<MsgRecord> _parser = new pb::MessageParser<MsgRecord>(() => new MsgRecord());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<MsgRecord> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::A7U7P.A7U7PReflection.Descriptor.MessageTypes[4]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgRecord() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgRecord(MsgRecord other) : this() {
+    public MsgA7Record(MsgA7Record other) : this() {
       sieves_ = other.sieves_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgRecord Clone() {
-      return new MsgRecord(this);
+    public MsgA7Record Clone() {
+      return new MsgA7Record(this);
     }
 
     /// <summary>Field number for the "sieves" field.</summary>
@@ -1259,11 +910,11 @@ namespace A7U7P {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as MsgRecord);
+      return Equals(other as MsgA7Record);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(MsgRecord other) {
+    public bool Equals(MsgA7Record other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -1322,7 +973,7 @@ namespace A7U7P {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(MsgRecord other) {
+    public void MergeFrom(MsgA7Record other) {
       if (other == null) {
         return;
       }
@@ -1375,19 +1026,19 @@ namespace A7U7P {
   /// <summary>
   ///场景消息
   /// </summary>
-  public sealed partial class MsgSceneInfo : pb::IMessage<MsgSceneInfo>
+  public sealed partial class MsgA7SceneInfo : pb::IMessage<MsgA7SceneInfo>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<MsgSceneInfo> _parser = new pb::MessageParser<MsgSceneInfo>(() => new MsgSceneInfo());
+    private static readonly pb::MessageParser<MsgA7SceneInfo> _parser = new pb::MessageParser<MsgA7SceneInfo>(() => new MsgA7SceneInfo());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<MsgSceneInfo> Parser { get { return _parser; } }
+    public static pb::MessageParser<MsgA7SceneInfo> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::A7U7P.A7U7PReflection.Descriptor.MessageTypes[5]; }
+      get { return global::A7U7P.A7U7PReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1396,14 +1047,14 @@ namespace A7U7P {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgSceneInfo() {
+    public MsgA7SceneInfo() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgSceneInfo(MsgSceneInfo other) : this() {
+    public MsgA7SceneInfo(MsgA7SceneInfo other) : this() {
       betList_ = other.betList_.Clone();
       records_ = other.records_.Clone();
       betLimit_ = other.betLimit_.Clone();
@@ -1411,6 +1062,7 @@ namespace A7U7P {
       betTime_ = other.betTime_;
       outTime_ = other.outTime_;
       state_ = other.state_;
+      gameTax_ = other.gameTax_;
       areaBet_ = other.areaBet_.Clone();
       sieves_ = other.sieves_.Clone();
       playerList_ = other.playerList_.Clone();
@@ -1418,8 +1070,8 @@ namespace A7U7P {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgSceneInfo Clone() {
-      return new MsgSceneInfo(this);
+    public MsgA7SceneInfo Clone() {
+      return new MsgA7SceneInfo(this);
     }
 
     /// <summary>Field number for the "bet_list" field.</summary>
@@ -1437,14 +1089,14 @@ namespace A7U7P {
 
     /// <summary>Field number for the "records" field.</summary>
     public const int RecordsFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::A7U7P.MsgRecord> _repeated_records_codec
-        = pb::FieldCodec.ForMessage(18, global::A7U7P.MsgRecord.Parser);
-    private readonly pbc::RepeatedField<global::A7U7P.MsgRecord> records_ = new pbc::RepeatedField<global::A7U7P.MsgRecord>();
+    private static readonly pb::FieldCodec<global::A7U7P.MsgA7Record> _repeated_records_codec
+        = pb::FieldCodec.ForMessage(18, global::A7U7P.MsgA7Record.Parser);
+    private readonly pbc::RepeatedField<global::A7U7P.MsgA7Record> records_ = new pbc::RepeatedField<global::A7U7P.MsgA7Record>();
     /// <summary>
-    ///开牌结果
+    ///开筛子结果历史记录 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::A7U7P.MsgRecord> Records {
+    public pbc::RepeatedField<global::A7U7P.MsgA7Record> Records {
       get { return records_; }
     }
 
@@ -1454,7 +1106,7 @@ namespace A7U7P {
         = pb::FieldCodec.ForInt32(26);
     private readonly pbc::RepeatedField<int> betLimit_ = new pbc::RepeatedField<int>();
     /// <summary>
-    ///区域下注限制 18个区域
+    ///区域下注限制 17个区域
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<int> BetLimit {
@@ -1517,6 +1169,20 @@ namespace A7U7P {
       }
     }
 
+    /// <summary>Field number for the "game_tax" field.</summary>
+    public const int GameTaxFieldNumber = 9;
+    private int gameTax_;
+    /// <summary>
+    ///税收配置
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int GameTax {
+      get { return gameTax_; }
+      set {
+        gameTax_ = value;
+      }
+    }
+
     /// <summary>Field number for the "area_bet" field.</summary>
     public const int AreaBetFieldNumber = 19;
     private static readonly pb::FieldCodec<int> _repeated_areaBet_codec
@@ -1558,11 +1224,11 @@ namespace A7U7P {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as MsgSceneInfo);
+      return Equals(other as MsgA7SceneInfo);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(MsgSceneInfo other) {
+    public bool Equals(MsgA7SceneInfo other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -1576,6 +1242,7 @@ namespace A7U7P {
       if (BetTime != other.BetTime) return false;
       if (OutTime != other.OutTime) return false;
       if (State != other.State) return false;
+      if (GameTax != other.GameTax) return false;
       if(!areaBet_.Equals(other.areaBet_)) return false;
       if(!sieves_.Equals(other.sieves_)) return false;
       if(!playerList_.Equals(other.playerList_)) return false;
@@ -1592,6 +1259,7 @@ namespace A7U7P {
       if (BetTime != 0) hash ^= BetTime.GetHashCode();
       if (OutTime != 0) hash ^= OutTime.GetHashCode();
       if (State != 0) hash ^= State.GetHashCode();
+      if (GameTax != 0) hash ^= GameTax.GetHashCode();
       hash ^= areaBet_.GetHashCode();
       hash ^= sieves_.GetHashCode();
       hash ^= playerList_.GetHashCode();
@@ -1630,6 +1298,10 @@ namespace A7U7P {
         output.WriteRawTag(64);
         output.WriteInt32(State);
       }
+      if (GameTax != 0) {
+        output.WriteRawTag(72);
+        output.WriteInt32(GameTax);
+      }
       areaBet_.WriteTo(output, _repeated_areaBet_codec);
       sieves_.WriteTo(output, _repeated_sieves_codec);
       playerList_.WriteTo(output, _repeated_playerList_codec);
@@ -1661,6 +1333,10 @@ namespace A7U7P {
         output.WriteRawTag(64);
         output.WriteInt32(State);
       }
+      if (GameTax != 0) {
+        output.WriteRawTag(72);
+        output.WriteInt32(GameTax);
+      }
       areaBet_.WriteTo(ref output, _repeated_areaBet_codec);
       sieves_.WriteTo(ref output, _repeated_sieves_codec);
       playerList_.WriteTo(ref output, _repeated_playerList_codec);
@@ -1688,6 +1364,9 @@ namespace A7U7P {
       if (State != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(State);
       }
+      if (GameTax != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(GameTax);
+      }
       size += areaBet_.CalculateSize(_repeated_areaBet_codec);
       size += sieves_.CalculateSize(_repeated_sieves_codec);
       size += playerList_.CalculateSize(_repeated_playerList_codec);
@@ -1698,7 +1377,7 @@ namespace A7U7P {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(MsgSceneInfo other) {
+    public void MergeFrom(MsgA7SceneInfo other) {
       if (other == null) {
         return;
       }
@@ -1716,6 +1395,9 @@ namespace A7U7P {
       }
       if (other.State != 0) {
         State = other.State;
+      }
+      if (other.GameTax != 0) {
+        GameTax = other.GameTax;
       }
       areaBet_.Add(other.areaBet_);
       sieves_.Add(other.sieves_);
@@ -1762,6 +1444,10 @@ namespace A7U7P {
           }
           case 64: {
             State = input.ReadInt32();
+            break;
+          }
+          case 72: {
+            GameTax = input.ReadInt32();
             break;
           }
           case 154:
@@ -1822,6 +1508,10 @@ namespace A7U7P {
             State = input.ReadInt32();
             break;
           }
+          case 72: {
+            GameTax = input.ReadInt32();
+            break;
+          }
           case 154:
           case 152: {
             areaBet_.AddEntriesFrom(ref input, _repeated_areaBet_codec);
@@ -1844,160 +1534,21 @@ namespace A7U7P {
   }
 
   /// <summary>
-  ///开始游戏
-  /// </summary>
-  public sealed partial class MsgStartGameResp : pb::IMessage<MsgStartGameResp>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<MsgStartGameResp> _parser = new pb::MessageParser<MsgStartGameResp>(() => new MsgStartGameResp());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<MsgStartGameResp> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::A7U7P.A7U7PReflection.Descriptor.MessageTypes[6]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgStartGameResp() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgStartGameResp(MsgStartGameResp other) : this() {
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgStartGameResp Clone() {
-      return new MsgStartGameResp(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as MsgStartGameResp);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(MsgStartGameResp other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(MsgStartGameResp other) {
-      if (other == null) {
-        return;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-        }
-      }
-    }
-    #endif
-
-  }
-
-  /// <summary>
   ///玩家下注
   /// </summary>
-  public sealed partial class MsgBet : pb::IMessage<MsgBet>
+  public sealed partial class MsgA7Bet : pb::IMessage<MsgA7Bet>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<MsgBet> _parser = new pb::MessageParser<MsgBet>(() => new MsgBet());
+    private static readonly pb::MessageParser<MsgA7Bet> _parser = new pb::MessageParser<MsgA7Bet>(() => new MsgA7Bet());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<MsgBet> Parser { get { return _parser; } }
+    public static pb::MessageParser<MsgA7Bet> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::A7U7P.A7U7PReflection.Descriptor.MessageTypes[7]; }
+      get { return global::A7U7P.A7U7PReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2006,22 +1557,22 @@ namespace A7U7P {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgBet() {
+    public MsgA7Bet() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgBet(MsgBet other) : this() {
+    public MsgA7Bet(MsgA7Bet other) : this() {
       bet_ = other.bet_;
       area_ = other.area_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgBet Clone() {
-      return new MsgBet(this);
+    public MsgA7Bet Clone() {
+      return new MsgA7Bet(this);
     }
 
     /// <summary>Field number for the "bet" field.</summary>
@@ -2054,11 +1605,11 @@ namespace A7U7P {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as MsgBet);
+      return Equals(other as MsgA7Bet);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(MsgBet other) {
+    public bool Equals(MsgA7Bet other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -2138,7 +1689,7 @@ namespace A7U7P {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(MsgBet other) {
+    public void MergeFrom(MsgA7Bet other) {
       if (other == null) {
         return;
       }
@@ -2202,19 +1753,19 @@ namespace A7U7P {
   /// <summary>
   ///玩家下注返回
   /// </summary>
-  public sealed partial class MsgBetResp : pb::IMessage<MsgBetResp>
+  public sealed partial class MsgA7BetResp : pb::IMessage<MsgA7BetResp>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<MsgBetResp> _parser = new pb::MessageParser<MsgBetResp>(() => new MsgBetResp());
+    private static readonly pb::MessageParser<MsgA7BetResp> _parser = new pb::MessageParser<MsgA7BetResp>(() => new MsgA7BetResp());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<MsgBetResp> Parser { get { return _parser; } }
+    public static pb::MessageParser<MsgA7BetResp> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::A7U7P.A7U7PReflection.Descriptor.MessageTypes[8]; }
+      get { return global::A7U7P.A7U7PReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2223,14 +1774,14 @@ namespace A7U7P {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgBetResp() {
+    public MsgA7BetResp() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgBetResp(MsgBetResp other) : this() {
+    public MsgA7BetResp(MsgA7BetResp other) : this() {
       retCode_ = other.retCode_;
       userId_ = other.userId_;
       chairId_ = other.chairId_;
@@ -2239,8 +1790,8 @@ namespace A7U7P {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgBetResp Clone() {
-      return new MsgBetResp(this);
+    public MsgA7BetResp Clone() {
+      return new MsgA7BetResp(this);
     }
 
     /// <summary>Field number for the "ret_code" field.</summary>
@@ -2301,11 +1852,11 @@ namespace A7U7P {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as MsgBetResp);
+      return Equals(other as MsgA7BetResp);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(MsgBetResp other) {
+    public bool Equals(MsgA7BetResp other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -2411,7 +1962,7 @@ namespace A7U7P {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(MsgBetResp other) {
+    public void MergeFrom(MsgA7BetResp other) {
       if (other == null) {
         return;
       }
@@ -2503,275 +2054,22 @@ namespace A7U7P {
 
   }
 
-  public sealed partial class MsgSendCardResp : pb::IMessage<MsgSendCardResp>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<MsgSendCardResp> _parser = new pb::MessageParser<MsgSendCardResp>(() => new MsgSendCardResp());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<MsgSendCardResp> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::A7U7P.A7U7PReflection.Descriptor.MessageTypes[9]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgSendCardResp() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgSendCardResp(MsgSendCardResp other) : this() {
-      card_ = other.card_;
-      area_ = other.area_;
-      isEnd_ = other.isEnd_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgSendCardResp Clone() {
-      return new MsgSendCardResp(this);
-    }
-
-    /// <summary>Field number for the "card" field.</summary>
-    public const int CardFieldNumber = 1;
-    private int card_;
-    /// <summary>
-    ///牌
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Card {
-      get { return card_; }
-      set {
-        card_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "area" field.</summary>
-    public const int AreaFieldNumber = 2;
-    private int area_;
-    /// <summary>
-    ///发牌区域
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Area {
-      get { return area_; }
-      set {
-        area_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "is_end" field.</summary>
-    public const int IsEndFieldNumber = 3;
-    private bool isEnd_;
-    /// <summary>
-    ///是否结束 
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool IsEnd {
-      get { return isEnd_; }
-      set {
-        isEnd_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as MsgSendCardResp);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(MsgSendCardResp other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Card != other.Card) return false;
-      if (Area != other.Area) return false;
-      if (IsEnd != other.IsEnd) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Card != 0) hash ^= Card.GetHashCode();
-      if (Area != 0) hash ^= Area.GetHashCode();
-      if (IsEnd != false) hash ^= IsEnd.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (Card != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Card);
-      }
-      if (Area != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(Area);
-      }
-      if (IsEnd != false) {
-        output.WriteRawTag(24);
-        output.WriteBool(IsEnd);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Card != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Card);
-      }
-      if (Area != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(Area);
-      }
-      if (IsEnd != false) {
-        output.WriteRawTag(24);
-        output.WriteBool(IsEnd);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (Card != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Card);
-      }
-      if (Area != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Area);
-      }
-      if (IsEnd != false) {
-        size += 1 + 1;
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(MsgSendCardResp other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Card != 0) {
-        Card = other.Card;
-      }
-      if (other.Area != 0) {
-        Area = other.Area;
-      }
-      if (other.IsEnd != false) {
-        IsEnd = other.IsEnd;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            Card = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            Area = input.ReadInt32();
-            break;
-          }
-          case 24: {
-            IsEnd = input.ReadBool();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            Card = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            Area = input.ReadInt32();
-            break;
-          }
-          case 24: {
-            IsEnd = input.ReadBool();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
   /// <summary>
   ///玩家输赢信息                              
   /// </summary>
-  public sealed partial class MsgWinMsg : pb::IMessage<MsgWinMsg>
+  public sealed partial class MsgA7WinMsg : pb::IMessage<MsgA7WinMsg>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<MsgWinMsg> _parser = new pb::MessageParser<MsgWinMsg>(() => new MsgWinMsg());
+    private static readonly pb::MessageParser<MsgA7WinMsg> _parser = new pb::MessageParser<MsgA7WinMsg>(() => new MsgA7WinMsg());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<MsgWinMsg> Parser { get { return _parser; } }
+    public static pb::MessageParser<MsgA7WinMsg> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::A7U7P.A7U7PReflection.Descriptor.MessageTypes[10]; }
+      get { return global::A7U7P.A7U7PReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2780,25 +2078,24 @@ namespace A7U7P {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgWinMsg() {
+    public MsgA7WinMsg() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgWinMsg(MsgWinMsg other) : this() {
+    public MsgA7WinMsg(MsgA7WinMsg other) : this() {
       userId_ = other.userId_;
       chairId_ = other.chairId_;
       winGold_ = other.winGold_;
       newGold_ = other.newGold_;
-      isWin_ = other.isWin_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgWinMsg Clone() {
-      return new MsgWinMsg(this);
+    public MsgA7WinMsg Clone() {
+      return new MsgA7WinMsg(this);
     }
 
     /// <summary>Field number for the "user_id" field.</summary>
@@ -2857,27 +2154,13 @@ namespace A7U7P {
       }
     }
 
-    /// <summary>Field number for the "is_win" field.</summary>
-    public const int IsWinFieldNumber = 5;
-    private bool isWin_;
-    /// <summary>
-    ///是否压中
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool IsWin {
-      get { return isWin_; }
-      set {
-        isWin_ = value;
-      }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as MsgWinMsg);
+      return Equals(other as MsgA7WinMsg);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(MsgWinMsg other) {
+    public bool Equals(MsgA7WinMsg other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -2888,7 +2171,6 @@ namespace A7U7P {
       if (ChairId != other.ChairId) return false;
       if (WinGold != other.WinGold) return false;
       if (NewGold != other.NewGold) return false;
-      if (IsWin != other.IsWin) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2899,7 +2181,6 @@ namespace A7U7P {
       if (ChairId != 0) hash ^= ChairId.GetHashCode();
       if (WinGold != 0L) hash ^= WinGold.GetHashCode();
       if (NewGold != 0L) hash ^= NewGold.GetHashCode();
-      if (IsWin != false) hash ^= IsWin.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2932,10 +2213,6 @@ namespace A7U7P {
         output.WriteRawTag(32);
         output.WriteInt64(NewGold);
       }
-      if (IsWin != false) {
-        output.WriteRawTag(40);
-        output.WriteBool(IsWin);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2960,10 +2237,6 @@ namespace A7U7P {
       if (NewGold != 0L) {
         output.WriteRawTag(32);
         output.WriteInt64(NewGold);
-      }
-      if (IsWin != false) {
-        output.WriteRawTag(40);
-        output.WriteBool(IsWin);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -2986,9 +2259,6 @@ namespace A7U7P {
       if (NewGold != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(NewGold);
       }
-      if (IsWin != false) {
-        size += 1 + 1;
-      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -2996,7 +2266,7 @@ namespace A7U7P {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(MsgWinMsg other) {
+    public void MergeFrom(MsgA7WinMsg other) {
       if (other == null) {
         return;
       }
@@ -3011,9 +2281,6 @@ namespace A7U7P {
       }
       if (other.NewGold != 0L) {
         NewGold = other.NewGold;
-      }
-      if (other.IsWin != false) {
-        IsWin = other.IsWin;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3043,10 +2310,6 @@ namespace A7U7P {
           }
           case 32: {
             NewGold = input.ReadInt64();
-            break;
-          }
-          case 40: {
-            IsWin = input.ReadBool();
             break;
           }
         }
@@ -3079,10 +2342,6 @@ namespace A7U7P {
             NewGold = input.ReadInt64();
             break;
           }
-          case 40: {
-            IsWin = input.ReadBool();
-            break;
-          }
         }
       }
     }
@@ -3093,19 +2352,19 @@ namespace A7U7P {
   /// <summary>
   ///游戏结果                                  
   /// </summary>
-  public sealed partial class MsgResult : pb::IMessage<MsgResult>
+  public sealed partial class MsgA7Result : pb::IMessage<MsgA7Result>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<MsgResult> _parser = new pb::MessageParser<MsgResult>(() => new MsgResult());
+    private static readonly pb::MessageParser<MsgA7Result> _parser = new pb::MessageParser<MsgA7Result>(() => new MsgA7Result());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<MsgResult> Parser { get { return _parser; } }
+    public static pb::MessageParser<MsgA7Result> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::A7U7P.A7U7PReflection.Descriptor.MessageTypes[11]; }
+      get { return global::A7U7P.A7U7PReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3114,81 +2373,79 @@ namespace A7U7P {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgResult() {
+    public MsgA7Result() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgResult(MsgResult other) : this() {
-      winIndex_ = other.winIndex_;
-      bankerInfo_ = other.bankerInfo_ != null ? other.bankerInfo_.Clone() : null;
+    public MsgA7Result(MsgA7Result other) : this() {
+      sieves_ = other.sieves_.Clone();
+      winIndex_ = other.winIndex_.Clone();
       winMsg_ = other.winMsg_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgResult Clone() {
-      return new MsgResult(this);
+    public MsgA7Result Clone() {
+      return new MsgA7Result(this);
+    }
+
+    /// <summary>Field number for the "sieves" field.</summary>
+    public const int SievesFieldNumber = 2;
+    private static readonly pb::FieldCodec<int> _repeated_sieves_codec
+        = pb::FieldCodec.ForInt32(18);
+    private readonly pbc::RepeatedField<int> sieves_ = new pbc::RepeatedField<int>();
+    /// <summary>
+    ///开奖两个筛子
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<int> Sieves {
+      get { return sieves_; }
     }
 
     /// <summary>Field number for the "win_index" field.</summary>
     public const int WinIndexFieldNumber = 1;
-    private int winIndex_;
+    private static readonly pb::FieldCodec<int> _repeated_winIndex_codec
+        = pb::FieldCodec.ForInt32(10);
+    private readonly pbc::RepeatedField<int> winIndex_ = new pbc::RepeatedField<int>();
     /// <summary>
     ///开牌结果
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int WinIndex {
+    public pbc::RepeatedField<int> WinIndex {
       get { return winIndex_; }
-      set {
-        winIndex_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "banker_info" field.</summary>
-    public const int BankerInfoFieldNumber = 2;
-    private global::A7U7P.A7BankerInfo bankerInfo_;
-    /// <summary>
-    ///庄家输赢的金币
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::A7U7P.A7BankerInfo BankerInfo {
-      get { return bankerInfo_; }
-      set {
-        bankerInfo_ = value;
-      }
     }
 
     /// <summary>Field number for the "win_msg" field.</summary>
     public const int WinMsgFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::A7U7P.MsgWinMsg> _repeated_winMsg_codec
-        = pb::FieldCodec.ForMessage(26, global::A7U7P.MsgWinMsg.Parser);
-    private readonly pbc::RepeatedField<global::A7U7P.MsgWinMsg> winMsg_ = new pbc::RepeatedField<global::A7U7P.MsgWinMsg>();
+    private static readonly pb::FieldCodec<global::A7U7P.MsgA7WinMsg> _repeated_winMsg_codec
+        = pb::FieldCodec.ForMessage(26, global::A7U7P.MsgA7WinMsg.Parser);
+    private readonly pbc::RepeatedField<global::A7U7P.MsgA7WinMsg> winMsg_ = new pbc::RepeatedField<global::A7U7P.MsgA7WinMsg>();
     /// <summary>
     ///玩家输赢信息
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::A7U7P.MsgWinMsg> WinMsg {
+    public pbc::RepeatedField<global::A7U7P.MsgA7WinMsg> WinMsg {
       get { return winMsg_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as MsgResult);
+      return Equals(other as MsgA7Result);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(MsgResult other) {
+    public bool Equals(MsgA7Result other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (WinIndex != other.WinIndex) return false;
-      if (!object.Equals(BankerInfo, other.BankerInfo)) return false;
+      if(!sieves_.Equals(other.sieves_)) return false;
+      if(!winIndex_.Equals(other.winIndex_)) return false;
       if(!winMsg_.Equals(other.winMsg_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -3196,8 +2453,8 @@ namespace A7U7P {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (WinIndex != 0) hash ^= WinIndex.GetHashCode();
-      if (bankerInfo_ != null) hash ^= BankerInfo.GetHashCode();
+      hash ^= sieves_.GetHashCode();
+      hash ^= winIndex_.GetHashCode();
       hash ^= winMsg_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -3215,14 +2472,8 @@ namespace A7U7P {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (WinIndex != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(WinIndex);
-      }
-      if (bankerInfo_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(BankerInfo);
-      }
+      winIndex_.WriteTo(output, _repeated_winIndex_codec);
+      sieves_.WriteTo(output, _repeated_sieves_codec);
       winMsg_.WriteTo(output, _repeated_winMsg_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -3233,14 +2484,8 @@ namespace A7U7P {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (WinIndex != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(WinIndex);
-      }
-      if (bankerInfo_ != null) {
-        output.WriteRawTag(18);
-        output.WriteMessage(BankerInfo);
-      }
+      winIndex_.WriteTo(ref output, _repeated_winIndex_codec);
+      sieves_.WriteTo(ref output, _repeated_sieves_codec);
       winMsg_.WriteTo(ref output, _repeated_winMsg_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -3251,12 +2496,8 @@ namespace A7U7P {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (WinIndex != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(WinIndex);
-      }
-      if (bankerInfo_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(BankerInfo);
-      }
+      size += sieves_.CalculateSize(_repeated_sieves_codec);
+      size += winIndex_.CalculateSize(_repeated_winIndex_codec);
       size += winMsg_.CalculateSize(_repeated_winMsg_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3265,19 +2506,12 @@ namespace A7U7P {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(MsgResult other) {
+    public void MergeFrom(MsgA7Result other) {
       if (other == null) {
         return;
       }
-      if (other.WinIndex != 0) {
-        WinIndex = other.WinIndex;
-      }
-      if (other.bankerInfo_ != null) {
-        if (bankerInfo_ == null) {
-          BankerInfo = new global::A7U7P.A7BankerInfo();
-        }
-        BankerInfo.MergeFrom(other.BankerInfo);
-      }
+      sieves_.Add(other.sieves_);
+      winIndex_.Add(other.winIndex_);
       winMsg_.Add(other.winMsg_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3293,15 +2527,14 @@ namespace A7U7P {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
+          case 10:
           case 8: {
-            WinIndex = input.ReadInt32();
+            winIndex_.AddEntriesFrom(input, _repeated_winIndex_codec);
             break;
           }
-          case 18: {
-            if (bankerInfo_ == null) {
-              BankerInfo = new global::A7U7P.A7BankerInfo();
-            }
-            input.ReadMessage(BankerInfo);
+          case 18:
+          case 16: {
+            sieves_.AddEntriesFrom(input, _repeated_sieves_codec);
             break;
           }
           case 26: {
@@ -3322,15 +2555,14 @@ namespace A7U7P {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
+          case 10:
           case 8: {
-            WinIndex = input.ReadInt32();
+            winIndex_.AddEntriesFrom(ref input, _repeated_winIndex_codec);
             break;
           }
-          case 18: {
-            if (bankerInfo_ == null) {
-              BankerInfo = new global::A7U7P.A7BankerInfo();
-            }
-            input.ReadMessage(BankerInfo);
+          case 18:
+          case 16: {
+            sieves_.AddEntriesFrom(ref input, _repeated_sieves_codec);
             break;
           }
           case 26: {

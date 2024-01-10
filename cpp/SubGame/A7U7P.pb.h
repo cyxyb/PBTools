@@ -47,7 +47,7 @@ struct TableStruct_A7U7P_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[12]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[9]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -55,56 +55,44 @@ struct TableStruct_A7U7P_2eproto {
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_A7U7P_2eproto;
 namespace A7U7P {
-class A7BankerInfo;
-class A7BankerInfoDefaultTypeInternal;
-extern A7BankerInfoDefaultTypeInternal _A7BankerInfo_default_instance_;
 class A7BetInfo;
 class A7BetInfoDefaultTypeInternal;
 extern A7BetInfoDefaultTypeInternal _A7BetInfo_default_instance_;
 class A7PlayerData;
 class A7PlayerDataDefaultTypeInternal;
 extern A7PlayerDataDefaultTypeInternal _A7PlayerData_default_instance_;
-class A7UpWaitBankerInfo;
-class A7UpWaitBankerInfoDefaultTypeInternal;
-extern A7UpWaitBankerInfoDefaultTypeInternal _A7UpWaitBankerInfo_default_instance_;
-class MsgBet;
-class MsgBetDefaultTypeInternal;
-extern MsgBetDefaultTypeInternal _MsgBet_default_instance_;
-class MsgBetResp;
-class MsgBetRespDefaultTypeInternal;
-extern MsgBetRespDefaultTypeInternal _MsgBetResp_default_instance_;
-class MsgRecord;
-class MsgRecordDefaultTypeInternal;
-extern MsgRecordDefaultTypeInternal _MsgRecord_default_instance_;
-class MsgResult;
-class MsgResultDefaultTypeInternal;
-extern MsgResultDefaultTypeInternal _MsgResult_default_instance_;
-class MsgSceneInfo;
-class MsgSceneInfoDefaultTypeInternal;
-extern MsgSceneInfoDefaultTypeInternal _MsgSceneInfo_default_instance_;
-class MsgSendCardResp;
-class MsgSendCardRespDefaultTypeInternal;
-extern MsgSendCardRespDefaultTypeInternal _MsgSendCardResp_default_instance_;
-class MsgStartGameResp;
-class MsgStartGameRespDefaultTypeInternal;
-extern MsgStartGameRespDefaultTypeInternal _MsgStartGameResp_default_instance_;
-class MsgWinMsg;
-class MsgWinMsgDefaultTypeInternal;
-extern MsgWinMsgDefaultTypeInternal _MsgWinMsg_default_instance_;
+class MsgA7Bet;
+class MsgA7BetDefaultTypeInternal;
+extern MsgA7BetDefaultTypeInternal _MsgA7Bet_default_instance_;
+class MsgA7BetResp;
+class MsgA7BetRespDefaultTypeInternal;
+extern MsgA7BetRespDefaultTypeInternal _MsgA7BetResp_default_instance_;
+class MsgA7NotifyState;
+class MsgA7NotifyStateDefaultTypeInternal;
+extern MsgA7NotifyStateDefaultTypeInternal _MsgA7NotifyState_default_instance_;
+class MsgA7Record;
+class MsgA7RecordDefaultTypeInternal;
+extern MsgA7RecordDefaultTypeInternal _MsgA7Record_default_instance_;
+class MsgA7Result;
+class MsgA7ResultDefaultTypeInternal;
+extern MsgA7ResultDefaultTypeInternal _MsgA7Result_default_instance_;
+class MsgA7SceneInfo;
+class MsgA7SceneInfoDefaultTypeInternal;
+extern MsgA7SceneInfoDefaultTypeInternal _MsgA7SceneInfo_default_instance_;
+class MsgA7WinMsg;
+class MsgA7WinMsgDefaultTypeInternal;
+extern MsgA7WinMsgDefaultTypeInternal _MsgA7WinMsg_default_instance_;
 }  // namespace A7U7P
 PROTOBUF_NAMESPACE_OPEN
-template<> ::A7U7P::A7BankerInfo* Arena::CreateMaybeMessage<::A7U7P::A7BankerInfo>(Arena*);
 template<> ::A7U7P::A7BetInfo* Arena::CreateMaybeMessage<::A7U7P::A7BetInfo>(Arena*);
 template<> ::A7U7P::A7PlayerData* Arena::CreateMaybeMessage<::A7U7P::A7PlayerData>(Arena*);
-template<> ::A7U7P::A7UpWaitBankerInfo* Arena::CreateMaybeMessage<::A7U7P::A7UpWaitBankerInfo>(Arena*);
-template<> ::A7U7P::MsgBet* Arena::CreateMaybeMessage<::A7U7P::MsgBet>(Arena*);
-template<> ::A7U7P::MsgBetResp* Arena::CreateMaybeMessage<::A7U7P::MsgBetResp>(Arena*);
-template<> ::A7U7P::MsgRecord* Arena::CreateMaybeMessage<::A7U7P::MsgRecord>(Arena*);
-template<> ::A7U7P::MsgResult* Arena::CreateMaybeMessage<::A7U7P::MsgResult>(Arena*);
-template<> ::A7U7P::MsgSceneInfo* Arena::CreateMaybeMessage<::A7U7P::MsgSceneInfo>(Arena*);
-template<> ::A7U7P::MsgSendCardResp* Arena::CreateMaybeMessage<::A7U7P::MsgSendCardResp>(Arena*);
-template<> ::A7U7P::MsgStartGameResp* Arena::CreateMaybeMessage<::A7U7P::MsgStartGameResp>(Arena*);
-template<> ::A7U7P::MsgWinMsg* Arena::CreateMaybeMessage<::A7U7P::MsgWinMsg>(Arena*);
+template<> ::A7U7P::MsgA7Bet* Arena::CreateMaybeMessage<::A7U7P::MsgA7Bet>(Arena*);
+template<> ::A7U7P::MsgA7BetResp* Arena::CreateMaybeMessage<::A7U7P::MsgA7BetResp>(Arena*);
+template<> ::A7U7P::MsgA7NotifyState* Arena::CreateMaybeMessage<::A7U7P::MsgA7NotifyState>(Arena*);
+template<> ::A7U7P::MsgA7Record* Arena::CreateMaybeMessage<::A7U7P::MsgA7Record>(Arena*);
+template<> ::A7U7P::MsgA7Result* Arena::CreateMaybeMessage<::A7U7P::MsgA7Result>(Arena*);
+template<> ::A7U7P::MsgA7SceneInfo* Arena::CreateMaybeMessage<::A7U7P::MsgA7SceneInfo>(Arena*);
+template<> ::A7U7P::MsgA7WinMsg* Arena::CreateMaybeMessage<::A7U7P::MsgA7WinMsg>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 namespace A7U7P {
 
@@ -112,8 +100,7 @@ enum EGameState : int {
   GS_Ready = 0,
   GS_Start = 1,
   GS_Bet = 2,
-  GS_SendS = 3,
-  GS_Result = 4,
+  GS_Result = 3,
   EGameState_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EGameState_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
@@ -140,8 +127,6 @@ enum EMsgIDSubGame : int {
   MsgIDSubGame_Null = 0,
   MsgIDSubGame_Bet = 1,
   MsgIDSubGame_BetResp = 2,
-  MsgIDSubGame_GameStartResp = 5,
-  MsgIDSubGame_SendCardResp = 6,
   MsgIDSubGame_GameResultResp = 7,
   MsgIDSubGame_NotifyStateResp = 8,
   EMsgIDSubGame_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
@@ -167,6 +152,153 @@ inline bool EMsgIDSubGame_Parse(
     EMsgIDSubGame_descriptor(), name, value);
 }
 // ===================================================================
+
+class MsgA7NotifyState PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:A7U7P.MsgA7NotifyState) */ {
+ public:
+  inline MsgA7NotifyState() : MsgA7NotifyState(nullptr) {}
+  virtual ~MsgA7NotifyState();
+
+  MsgA7NotifyState(const MsgA7NotifyState& from);
+  MsgA7NotifyState(MsgA7NotifyState&& from) noexcept
+    : MsgA7NotifyState() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgA7NotifyState& operator=(const MsgA7NotifyState& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgA7NotifyState& operator=(MsgA7NotifyState&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgA7NotifyState& default_instance();
+
+  static inline const MsgA7NotifyState* internal_default_instance() {
+    return reinterpret_cast<const MsgA7NotifyState*>(
+               &_MsgA7NotifyState_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    0;
+
+  friend void swap(MsgA7NotifyState& a, MsgA7NotifyState& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgA7NotifyState* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgA7NotifyState* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgA7NotifyState* New() const final {
+    return CreateMaybeMessage<MsgA7NotifyState>(nullptr);
+  }
+
+  MsgA7NotifyState* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgA7NotifyState>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgA7NotifyState& from);
+  void MergeFrom(const MsgA7NotifyState& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgA7NotifyState* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "A7U7P.MsgA7NotifyState";
+  }
+  protected:
+  explicit MsgA7NotifyState(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_A7U7P_2eproto);
+    return ::descriptor_table_A7U7P_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kGameStateFieldNumber = 1,
+    kTimeFieldNumber = 2,
+  };
+  // int32 game_state = 1;
+  void clear_game_state();
+  ::PROTOBUF_NAMESPACE_ID::int32 game_state() const;
+  void set_game_state(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_game_state() const;
+  void _internal_set_game_state(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 time = 2;
+  void clear_time();
+  ::PROTOBUF_NAMESPACE_ID::int32 time() const;
+  void set_time(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_time() const;
+  void _internal_set_time(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:A7U7P.MsgA7NotifyState)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 game_state_;
+  ::PROTOBUF_NAMESPACE_ID::int32 time_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_A7U7P_2eproto;
+};
+// -------------------------------------------------------------------
 
 class A7BetInfo PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:A7U7P.A7BetInfo) */ {
@@ -209,7 +341,7 @@ class A7BetInfo PROTOBUF_FINAL :
                &_A7BetInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    0;
+    1;
 
   friend void swap(A7BetInfo& a, A7BetInfo& b) {
     a.Swap(&b);
@@ -356,7 +488,7 @@ class A7PlayerData PROTOBUF_FINAL :
                &_A7PlayerData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    1;
+    2;
 
   friend void swap(A7PlayerData& a, A7PlayerData& b) {
     a.Swap(&b);
@@ -504,23 +636,23 @@ class A7PlayerData PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
-class A7UpWaitBankerInfo PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:A7U7P.A7UpWaitBankerInfo) */ {
+class MsgA7Record PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:A7U7P.MsgA7Record) */ {
  public:
-  inline A7UpWaitBankerInfo() : A7UpWaitBankerInfo(nullptr) {}
-  virtual ~A7UpWaitBankerInfo();
+  inline MsgA7Record() : MsgA7Record(nullptr) {}
+  virtual ~MsgA7Record();
 
-  A7UpWaitBankerInfo(const A7UpWaitBankerInfo& from);
-  A7UpWaitBankerInfo(A7UpWaitBankerInfo&& from) noexcept
-    : A7UpWaitBankerInfo() {
+  MsgA7Record(const MsgA7Record& from);
+  MsgA7Record(MsgA7Record&& from) noexcept
+    : MsgA7Record() {
     *this = ::std::move(from);
   }
 
-  inline A7UpWaitBankerInfo& operator=(const A7UpWaitBankerInfo& from) {
+  inline MsgA7Record& operator=(const MsgA7Record& from) {
     CopyFrom(from);
     return *this;
   }
-  inline A7UpWaitBankerInfo& operator=(A7UpWaitBankerInfo&& from) noexcept {
+  inline MsgA7Record& operator=(MsgA7Record&& from) noexcept {
     if (GetArena() == from.GetArena()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -538,166 +670,19 @@ class A7UpWaitBankerInfo PROTOBUF_FINAL :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return GetMetadataStatic().reflection;
   }
-  static const A7UpWaitBankerInfo& default_instance();
+  static const MsgA7Record& default_instance();
 
-  static inline const A7UpWaitBankerInfo* internal_default_instance() {
-    return reinterpret_cast<const A7UpWaitBankerInfo*>(
-               &_A7UpWaitBankerInfo_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    2;
-
-  friend void swap(A7UpWaitBankerInfo& a, A7UpWaitBankerInfo& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(A7UpWaitBankerInfo* other) {
-    if (other == this) return;
-    if (GetArena() == other->GetArena()) {
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(A7UpWaitBankerInfo* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetArena() == other->GetArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline A7UpWaitBankerInfo* New() const final {
-    return CreateMaybeMessage<A7UpWaitBankerInfo>(nullptr);
-  }
-
-  A7UpWaitBankerInfo* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<A7UpWaitBankerInfo>(arena);
-  }
-  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const A7UpWaitBankerInfo& from);
-  void MergeFrom(const A7UpWaitBankerInfo& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
-      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  inline void SharedCtor();
-  inline void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(A7UpWaitBankerInfo* other);
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "A7U7P.A7UpWaitBankerInfo";
-  }
-  protected:
-  explicit A7UpWaitBankerInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  private:
-  static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  public:
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-  private:
-  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
-    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_A7U7P_2eproto);
-    return ::descriptor_table_A7U7P_2eproto.file_level_metadata[kIndexInFileMessages];
-  }
-
-  public:
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kOpBankerGoldFieldNumber = 2,
-    kIdFieldNumber = 1,
-  };
-  // int64 op_banker_gold = 2;
-  void clear_op_banker_gold();
-  ::PROTOBUF_NAMESPACE_ID::int64 op_banker_gold() const;
-  void set_op_banker_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_op_banker_gold() const;
-  void _internal_set_op_banker_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
-  // int32 id = 1;
-  void clear_id();
-  ::PROTOBUF_NAMESPACE_ID::int32 id() const;
-  void set_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_id() const;
-  void _internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:A7U7P.A7UpWaitBankerInfo)
- private:
-  class _Internal;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int64 op_banker_gold_;
-  ::PROTOBUF_NAMESPACE_ID::int32 id_;
-  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  friend struct ::TableStruct_A7U7P_2eproto;
-};
-// -------------------------------------------------------------------
-
-class A7BankerInfo PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:A7U7P.A7BankerInfo) */ {
- public:
-  inline A7BankerInfo() : A7BankerInfo(nullptr) {}
-  virtual ~A7BankerInfo();
-
-  A7BankerInfo(const A7BankerInfo& from);
-  A7BankerInfo(A7BankerInfo&& from) noexcept
-    : A7BankerInfo() {
-    *this = ::std::move(from);
-  }
-
-  inline A7BankerInfo& operator=(const A7BankerInfo& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline A7BankerInfo& operator=(A7BankerInfo&& from) noexcept {
-    if (GetArena() == from.GetArena()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return GetMetadataStatic().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return GetMetadataStatic().reflection;
-  }
-  static const A7BankerInfo& default_instance();
-
-  static inline const A7BankerInfo* internal_default_instance() {
-    return reinterpret_cast<const A7BankerInfo*>(
-               &_A7BankerInfo_default_instance_);
+  static inline const MsgA7Record* internal_default_instance() {
+    return reinterpret_cast<const MsgA7Record*>(
+               &_MsgA7Record_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     3;
 
-  friend void swap(A7BankerInfo& a, A7BankerInfo& b) {
+  friend void swap(MsgA7Record& a, MsgA7Record& b) {
     a.Swap(&b);
   }
-  inline void Swap(A7BankerInfo* other) {
+  inline void Swap(MsgA7Record* other) {
     if (other == this) return;
     if (GetArena() == other->GetArena()) {
       InternalSwap(other);
@@ -705,7 +690,7 @@ class A7BankerInfo PROTOBUF_FINAL :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(A7BankerInfo* other) {
+  void UnsafeArenaSwap(MsgA7Record* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetArena() == other->GetArena());
     InternalSwap(other);
@@ -713,17 +698,17 @@ class A7BankerInfo PROTOBUF_FINAL :
 
   // implements Message ----------------------------------------------
 
-  inline A7BankerInfo* New() const final {
-    return CreateMaybeMessage<A7BankerInfo>(nullptr);
+  inline MsgA7Record* New() const final {
+    return CreateMaybeMessage<MsgA7Record>(nullptr);
   }
 
-  A7BankerInfo* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<A7BankerInfo>(arena);
+  MsgA7Record* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgA7Record>(arena);
   }
   void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
   void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const A7BankerInfo& from);
-  void MergeFrom(const A7BankerInfo& from);
+  void CopyFrom(const MsgA7Record& from);
+  void MergeFrom(const MsgA7Record& from);
   PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
   bool IsInitialized() const final;
 
@@ -737,193 +722,13 @@ class A7BankerInfo PROTOBUF_FINAL :
   inline void SharedCtor();
   inline void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(A7BankerInfo* other);
+  void InternalSwap(MsgA7Record* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "A7U7P.A7BankerInfo";
+    return "A7U7P.MsgA7Record";
   }
   protected:
-  explicit A7BankerInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  private:
-  static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  public:
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-  private:
-  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
-    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_A7U7P_2eproto);
-    return ::descriptor_table_A7U7P_2eproto.file_level_metadata[kIndexInFileMessages];
-  }
-
-  public:
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kOpGoldFieldNumber = 2,
-    kIdFieldNumber = 1,
-    kRoundFieldNumber = 3,
-    kTotalWinFieldNumber = 4,
-    kIsDownFieldNumber = 5,
-  };
-  // int64 op_gold = 2;
-  void clear_op_gold();
-  ::PROTOBUF_NAMESPACE_ID::int64 op_gold() const;
-  void set_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_op_gold() const;
-  void _internal_set_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
-  // int32 id = 1;
-  void clear_id();
-  ::PROTOBUF_NAMESPACE_ID::int32 id() const;
-  void set_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_id() const;
-  void _internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 round = 3;
-  void clear_round();
-  ::PROTOBUF_NAMESPACE_ID::int32 round() const;
-  void set_round(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_round() const;
-  void _internal_set_round(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int64 total_win = 4;
-  void clear_total_win();
-  ::PROTOBUF_NAMESPACE_ID::int64 total_win() const;
-  void set_total_win(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_total_win() const;
-  void _internal_set_total_win(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
-  // bool is_down = 5;
-  void clear_is_down();
-  bool is_down() const;
-  void set_is_down(bool value);
-  private:
-  bool _internal_is_down() const;
-  void _internal_set_is_down(bool value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:A7U7P.A7BankerInfo)
- private:
-  class _Internal;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int64 op_gold_;
-  ::PROTOBUF_NAMESPACE_ID::int32 id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 round_;
-  ::PROTOBUF_NAMESPACE_ID::int64 total_win_;
-  bool is_down_;
-  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  friend struct ::TableStruct_A7U7P_2eproto;
-};
-// -------------------------------------------------------------------
-
-class MsgRecord PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:A7U7P.MsgRecord) */ {
- public:
-  inline MsgRecord() : MsgRecord(nullptr) {}
-  virtual ~MsgRecord();
-
-  MsgRecord(const MsgRecord& from);
-  MsgRecord(MsgRecord&& from) noexcept
-    : MsgRecord() {
-    *this = ::std::move(from);
-  }
-
-  inline MsgRecord& operator=(const MsgRecord& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline MsgRecord& operator=(MsgRecord&& from) noexcept {
-    if (GetArena() == from.GetArena()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return GetMetadataStatic().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return GetMetadataStatic().reflection;
-  }
-  static const MsgRecord& default_instance();
-
-  static inline const MsgRecord* internal_default_instance() {
-    return reinterpret_cast<const MsgRecord*>(
-               &_MsgRecord_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    4;
-
-  friend void swap(MsgRecord& a, MsgRecord& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(MsgRecord* other) {
-    if (other == this) return;
-    if (GetArena() == other->GetArena()) {
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(MsgRecord* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetArena() == other->GetArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline MsgRecord* New() const final {
-    return CreateMaybeMessage<MsgRecord>(nullptr);
-  }
-
-  MsgRecord* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<MsgRecord>(arena);
-  }
-  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const MsgRecord& from);
-  void MergeFrom(const MsgRecord& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
-      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  inline void SharedCtor();
-  inline void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(MsgRecord* other);
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "A7U7P.MsgRecord";
-  }
-  protected:
-  explicit MsgRecord(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  explicit MsgA7Record(::PROTOBUF_NAMESPACE_ID::Arena* arena);
   private:
   static void ArenaDtor(void* object);
   inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -967,7 +772,7 @@ class MsgRecord PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_sieves();
 
-  // @@protoc_insertion_point(class_scope:A7U7P.MsgRecord)
+  // @@protoc_insertion_point(class_scope:A7U7P.MsgA7Record)
  private:
   class _Internal;
 
@@ -981,23 +786,23 @@ class MsgRecord PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
-class MsgSceneInfo PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:A7U7P.MsgSceneInfo) */ {
+class MsgA7SceneInfo PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:A7U7P.MsgA7SceneInfo) */ {
  public:
-  inline MsgSceneInfo() : MsgSceneInfo(nullptr) {}
-  virtual ~MsgSceneInfo();
+  inline MsgA7SceneInfo() : MsgA7SceneInfo(nullptr) {}
+  virtual ~MsgA7SceneInfo();
 
-  MsgSceneInfo(const MsgSceneInfo& from);
-  MsgSceneInfo(MsgSceneInfo&& from) noexcept
-    : MsgSceneInfo() {
+  MsgA7SceneInfo(const MsgA7SceneInfo& from);
+  MsgA7SceneInfo(MsgA7SceneInfo&& from) noexcept
+    : MsgA7SceneInfo() {
     *this = ::std::move(from);
   }
 
-  inline MsgSceneInfo& operator=(const MsgSceneInfo& from) {
+  inline MsgA7SceneInfo& operator=(const MsgA7SceneInfo& from) {
     CopyFrom(from);
     return *this;
   }
-  inline MsgSceneInfo& operator=(MsgSceneInfo&& from) noexcept {
+  inline MsgA7SceneInfo& operator=(MsgA7SceneInfo&& from) noexcept {
     if (GetArena() == from.GetArena()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -1015,19 +820,19 @@ class MsgSceneInfo PROTOBUF_FINAL :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return GetMetadataStatic().reflection;
   }
-  static const MsgSceneInfo& default_instance();
+  static const MsgA7SceneInfo& default_instance();
 
-  static inline const MsgSceneInfo* internal_default_instance() {
-    return reinterpret_cast<const MsgSceneInfo*>(
-               &_MsgSceneInfo_default_instance_);
+  static inline const MsgA7SceneInfo* internal_default_instance() {
+    return reinterpret_cast<const MsgA7SceneInfo*>(
+               &_MsgA7SceneInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    5;
+    4;
 
-  friend void swap(MsgSceneInfo& a, MsgSceneInfo& b) {
+  friend void swap(MsgA7SceneInfo& a, MsgA7SceneInfo& b) {
     a.Swap(&b);
   }
-  inline void Swap(MsgSceneInfo* other) {
+  inline void Swap(MsgA7SceneInfo* other) {
     if (other == this) return;
     if (GetArena() == other->GetArena()) {
       InternalSwap(other);
@@ -1035,7 +840,7 @@ class MsgSceneInfo PROTOBUF_FINAL :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(MsgSceneInfo* other) {
+  void UnsafeArenaSwap(MsgA7SceneInfo* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetArena() == other->GetArena());
     InternalSwap(other);
@@ -1043,17 +848,17 @@ class MsgSceneInfo PROTOBUF_FINAL :
 
   // implements Message ----------------------------------------------
 
-  inline MsgSceneInfo* New() const final {
-    return CreateMaybeMessage<MsgSceneInfo>(nullptr);
+  inline MsgA7SceneInfo* New() const final {
+    return CreateMaybeMessage<MsgA7SceneInfo>(nullptr);
   }
 
-  MsgSceneInfo* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<MsgSceneInfo>(arena);
+  MsgA7SceneInfo* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgA7SceneInfo>(arena);
   }
   void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
   void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const MsgSceneInfo& from);
-  void MergeFrom(const MsgSceneInfo& from);
+  void CopyFrom(const MsgA7SceneInfo& from);
+  void MergeFrom(const MsgA7SceneInfo& from);
   PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
   bool IsInitialized() const final;
 
@@ -1067,13 +872,13 @@ class MsgSceneInfo PROTOBUF_FINAL :
   inline void SharedCtor();
   inline void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(MsgSceneInfo* other);
+  void InternalSwap(MsgA7SceneInfo* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "A7U7P.MsgSceneInfo";
+    return "A7U7P.MsgA7SceneInfo";
   }
   protected:
-  explicit MsgSceneInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  explicit MsgA7SceneInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena);
   private:
   static void ArenaDtor(void* object);
   inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -1103,6 +908,7 @@ class MsgSceneInfo PROTOBUF_FINAL :
     kBetTimeFieldNumber = 6,
     kOutTimeFieldNumber = 7,
     kStateFieldNumber = 8,
+    kGameTaxFieldNumber = 9,
   };
   // repeated int64 bet_list = 1;
   int bet_list_size() const;
@@ -1126,22 +932,22 @@ class MsgSceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
       mutable_bet_list();
 
-  // repeated .A7U7P.MsgRecord records = 2;
+  // repeated .A7U7P.MsgA7Record records = 2;
   int records_size() const;
   private:
   int _internal_records_size() const;
   public:
   void clear_records();
-  ::A7U7P::MsgRecord* mutable_records(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::MsgRecord >*
+  ::A7U7P::MsgA7Record* mutable_records(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::MsgA7Record >*
       mutable_records();
   private:
-  const ::A7U7P::MsgRecord& _internal_records(int index) const;
-  ::A7U7P::MsgRecord* _internal_add_records();
+  const ::A7U7P::MsgA7Record& _internal_records(int index) const;
+  ::A7U7P::MsgA7Record* _internal_add_records();
   public:
-  const ::A7U7P::MsgRecord& records(int index) const;
-  ::A7U7P::MsgRecord* add_records();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::MsgRecord >&
+  const ::A7U7P::MsgA7Record& records(int index) const;
+  ::A7U7P::MsgA7Record* add_records();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::MsgA7Record >&
       records() const;
 
   // repeated int32 bet_limit = 3;
@@ -1264,7 +1070,16 @@ class MsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_state(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:A7U7P.MsgSceneInfo)
+  // int32 game_tax = 9;
+  void clear_game_tax();
+  ::PROTOBUF_NAMESPACE_ID::int32 game_tax() const;
+  void set_game_tax(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_game_tax() const;
+  void _internal_set_game_tax(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:A7U7P.MsgA7SceneInfo)
  private:
   class _Internal;
 
@@ -1273,7 +1088,7 @@ class MsgSceneInfo PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 > bet_list_;
   mutable std::atomic<int> _bet_list_cached_byte_size_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::MsgRecord > records_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::MsgA7Record > records_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > bet_limit_;
   mutable std::atomic<int> _bet_limit_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > area_bet_;
@@ -1285,28 +1100,29 @@ class MsgSceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 bet_time_;
   ::PROTOBUF_NAMESPACE_ID::int32 out_time_;
   ::PROTOBUF_NAMESPACE_ID::int32 state_;
+  ::PROTOBUF_NAMESPACE_ID::int32 game_tax_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_A7U7P_2eproto;
 };
 // -------------------------------------------------------------------
 
-class MsgStartGameResp PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:A7U7P.MsgStartGameResp) */ {
+class MsgA7Bet PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:A7U7P.MsgA7Bet) */ {
  public:
-  inline MsgStartGameResp() : MsgStartGameResp(nullptr) {}
-  virtual ~MsgStartGameResp();
+  inline MsgA7Bet() : MsgA7Bet(nullptr) {}
+  virtual ~MsgA7Bet();
 
-  MsgStartGameResp(const MsgStartGameResp& from);
-  MsgStartGameResp(MsgStartGameResp&& from) noexcept
-    : MsgStartGameResp() {
+  MsgA7Bet(const MsgA7Bet& from);
+  MsgA7Bet(MsgA7Bet&& from) noexcept
+    : MsgA7Bet() {
     *this = ::std::move(from);
   }
 
-  inline MsgStartGameResp& operator=(const MsgStartGameResp& from) {
+  inline MsgA7Bet& operator=(const MsgA7Bet& from) {
     CopyFrom(from);
     return *this;
   }
-  inline MsgStartGameResp& operator=(MsgStartGameResp&& from) noexcept {
+  inline MsgA7Bet& operator=(MsgA7Bet&& from) noexcept {
     if (GetArena() == from.GetArena()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -1324,19 +1140,19 @@ class MsgStartGameResp PROTOBUF_FINAL :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return GetMetadataStatic().reflection;
   }
-  static const MsgStartGameResp& default_instance();
+  static const MsgA7Bet& default_instance();
 
-  static inline const MsgStartGameResp* internal_default_instance() {
-    return reinterpret_cast<const MsgStartGameResp*>(
-               &_MsgStartGameResp_default_instance_);
+  static inline const MsgA7Bet* internal_default_instance() {
+    return reinterpret_cast<const MsgA7Bet*>(
+               &_MsgA7Bet_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    6;
+    5;
 
-  friend void swap(MsgStartGameResp& a, MsgStartGameResp& b) {
+  friend void swap(MsgA7Bet& a, MsgA7Bet& b) {
     a.Swap(&b);
   }
-  inline void Swap(MsgStartGameResp* other) {
+  inline void Swap(MsgA7Bet* other) {
     if (other == this) return;
     if (GetArena() == other->GetArena()) {
       InternalSwap(other);
@@ -1344,7 +1160,7 @@ class MsgStartGameResp PROTOBUF_FINAL :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(MsgStartGameResp* other) {
+  void UnsafeArenaSwap(MsgA7Bet* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetArena() == other->GetArena());
     InternalSwap(other);
@@ -1352,17 +1168,17 @@ class MsgStartGameResp PROTOBUF_FINAL :
 
   // implements Message ----------------------------------------------
 
-  inline MsgStartGameResp* New() const final {
-    return CreateMaybeMessage<MsgStartGameResp>(nullptr);
+  inline MsgA7Bet* New() const final {
+    return CreateMaybeMessage<MsgA7Bet>(nullptr);
   }
 
-  MsgStartGameResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<MsgStartGameResp>(arena);
+  MsgA7Bet* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgA7Bet>(arena);
   }
   void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
   void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const MsgStartGameResp& from);
-  void MergeFrom(const MsgStartGameResp& from);
+  void CopyFrom(const MsgA7Bet& from);
+  void MergeFrom(const MsgA7Bet& from);
   PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
   bool IsInitialized() const final;
 
@@ -1376,136 +1192,13 @@ class MsgStartGameResp PROTOBUF_FINAL :
   inline void SharedCtor();
   inline void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(MsgStartGameResp* other);
+  void InternalSwap(MsgA7Bet* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "A7U7P.MsgStartGameResp";
+    return "A7U7P.MsgA7Bet";
   }
   protected:
-  explicit MsgStartGameResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  private:
-  static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  public:
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-  private:
-  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
-    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_A7U7P_2eproto);
-    return ::descriptor_table_A7U7P_2eproto.file_level_metadata[kIndexInFileMessages];
-  }
-
-  public:
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  // @@protoc_insertion_point(class_scope:A7U7P.MsgStartGameResp)
- private:
-  class _Internal;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  friend struct ::TableStruct_A7U7P_2eproto;
-};
-// -------------------------------------------------------------------
-
-class MsgBet PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:A7U7P.MsgBet) */ {
- public:
-  inline MsgBet() : MsgBet(nullptr) {}
-  virtual ~MsgBet();
-
-  MsgBet(const MsgBet& from);
-  MsgBet(MsgBet&& from) noexcept
-    : MsgBet() {
-    *this = ::std::move(from);
-  }
-
-  inline MsgBet& operator=(const MsgBet& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline MsgBet& operator=(MsgBet&& from) noexcept {
-    if (GetArena() == from.GetArena()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return GetMetadataStatic().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return GetMetadataStatic().reflection;
-  }
-  static const MsgBet& default_instance();
-
-  static inline const MsgBet* internal_default_instance() {
-    return reinterpret_cast<const MsgBet*>(
-               &_MsgBet_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    7;
-
-  friend void swap(MsgBet& a, MsgBet& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(MsgBet* other) {
-    if (other == this) return;
-    if (GetArena() == other->GetArena()) {
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(MsgBet* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetArena() == other->GetArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline MsgBet* New() const final {
-    return CreateMaybeMessage<MsgBet>(nullptr);
-  }
-
-  MsgBet* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<MsgBet>(arena);
-  }
-  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const MsgBet& from);
-  void MergeFrom(const MsgBet& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
-      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  inline void SharedCtor();
-  inline void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(MsgBet* other);
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "A7U7P.MsgBet";
-  }
-  protected:
-  explicit MsgBet(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  explicit MsgA7Bet(::PROTOBUF_NAMESPACE_ID::Arena* arena);
   private:
   static void ArenaDtor(void* object);
   inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -1546,7 +1239,7 @@ class MsgBet PROTOBUF_FINAL :
   void _internal_set_area(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:A7U7P.MsgBet)
+  // @@protoc_insertion_point(class_scope:A7U7P.MsgA7Bet)
  private:
   class _Internal;
 
@@ -1560,23 +1253,23 @@ class MsgBet PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
-class MsgBetResp PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:A7U7P.MsgBetResp) */ {
+class MsgA7BetResp PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:A7U7P.MsgA7BetResp) */ {
  public:
-  inline MsgBetResp() : MsgBetResp(nullptr) {}
-  virtual ~MsgBetResp();
+  inline MsgA7BetResp() : MsgA7BetResp(nullptr) {}
+  virtual ~MsgA7BetResp();
 
-  MsgBetResp(const MsgBetResp& from);
-  MsgBetResp(MsgBetResp&& from) noexcept
-    : MsgBetResp() {
+  MsgA7BetResp(const MsgA7BetResp& from);
+  MsgA7BetResp(MsgA7BetResp&& from) noexcept
+    : MsgA7BetResp() {
     *this = ::std::move(from);
   }
 
-  inline MsgBetResp& operator=(const MsgBetResp& from) {
+  inline MsgA7BetResp& operator=(const MsgA7BetResp& from) {
     CopyFrom(from);
     return *this;
   }
-  inline MsgBetResp& operator=(MsgBetResp&& from) noexcept {
+  inline MsgA7BetResp& operator=(MsgA7BetResp&& from) noexcept {
     if (GetArena() == from.GetArena()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -1594,19 +1287,19 @@ class MsgBetResp PROTOBUF_FINAL :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return GetMetadataStatic().reflection;
   }
-  static const MsgBetResp& default_instance();
+  static const MsgA7BetResp& default_instance();
 
-  static inline const MsgBetResp* internal_default_instance() {
-    return reinterpret_cast<const MsgBetResp*>(
-               &_MsgBetResp_default_instance_);
+  static inline const MsgA7BetResp* internal_default_instance() {
+    return reinterpret_cast<const MsgA7BetResp*>(
+               &_MsgA7BetResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    6;
 
-  friend void swap(MsgBetResp& a, MsgBetResp& b) {
+  friend void swap(MsgA7BetResp& a, MsgA7BetResp& b) {
     a.Swap(&b);
   }
-  inline void Swap(MsgBetResp* other) {
+  inline void Swap(MsgA7BetResp* other) {
     if (other == this) return;
     if (GetArena() == other->GetArena()) {
       InternalSwap(other);
@@ -1614,7 +1307,7 @@ class MsgBetResp PROTOBUF_FINAL :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(MsgBetResp* other) {
+  void UnsafeArenaSwap(MsgA7BetResp* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetArena() == other->GetArena());
     InternalSwap(other);
@@ -1622,17 +1315,17 @@ class MsgBetResp PROTOBUF_FINAL :
 
   // implements Message ----------------------------------------------
 
-  inline MsgBetResp* New() const final {
-    return CreateMaybeMessage<MsgBetResp>(nullptr);
+  inline MsgA7BetResp* New() const final {
+    return CreateMaybeMessage<MsgA7BetResp>(nullptr);
   }
 
-  MsgBetResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<MsgBetResp>(arena);
+  MsgA7BetResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgA7BetResp>(arena);
   }
   void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
   void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const MsgBetResp& from);
-  void MergeFrom(const MsgBetResp& from);
+  void CopyFrom(const MsgA7BetResp& from);
+  void MergeFrom(const MsgA7BetResp& from);
   PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
   bool IsInitialized() const final;
 
@@ -1646,13 +1339,13 @@ class MsgBetResp PROTOBUF_FINAL :
   inline void SharedCtor();
   inline void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(MsgBetResp* other);
+  void InternalSwap(MsgA7BetResp* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "A7U7P.MsgBetResp";
+    return "A7U7P.MsgA7BetResp";
   }
   protected:
-  explicit MsgBetResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  explicit MsgA7BetResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
   private:
   static void ArenaDtor(void* object);
   inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -1722,7 +1415,7 @@ class MsgBetResp PROTOBUF_FINAL :
   void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:A7U7P.MsgBetResp)
+  // @@protoc_insertion_point(class_scope:A7U7P.MsgA7BetResp)
  private:
   class _Internal;
 
@@ -1738,23 +1431,23 @@ class MsgBetResp PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
-class MsgSendCardResp PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:A7U7P.MsgSendCardResp) */ {
+class MsgA7WinMsg PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:A7U7P.MsgA7WinMsg) */ {
  public:
-  inline MsgSendCardResp() : MsgSendCardResp(nullptr) {}
-  virtual ~MsgSendCardResp();
+  inline MsgA7WinMsg() : MsgA7WinMsg(nullptr) {}
+  virtual ~MsgA7WinMsg();
 
-  MsgSendCardResp(const MsgSendCardResp& from);
-  MsgSendCardResp(MsgSendCardResp&& from) noexcept
-    : MsgSendCardResp() {
+  MsgA7WinMsg(const MsgA7WinMsg& from);
+  MsgA7WinMsg(MsgA7WinMsg&& from) noexcept
+    : MsgA7WinMsg() {
     *this = ::std::move(from);
   }
 
-  inline MsgSendCardResp& operator=(const MsgSendCardResp& from) {
+  inline MsgA7WinMsg& operator=(const MsgA7WinMsg& from) {
     CopyFrom(from);
     return *this;
   }
-  inline MsgSendCardResp& operator=(MsgSendCardResp&& from) noexcept {
+  inline MsgA7WinMsg& operator=(MsgA7WinMsg&& from) noexcept {
     if (GetArena() == from.GetArena()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -1772,19 +1465,19 @@ class MsgSendCardResp PROTOBUF_FINAL :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return GetMetadataStatic().reflection;
   }
-  static const MsgSendCardResp& default_instance();
+  static const MsgA7WinMsg& default_instance();
 
-  static inline const MsgSendCardResp* internal_default_instance() {
-    return reinterpret_cast<const MsgSendCardResp*>(
-               &_MsgSendCardResp_default_instance_);
+  static inline const MsgA7WinMsg* internal_default_instance() {
+    return reinterpret_cast<const MsgA7WinMsg*>(
+               &_MsgA7WinMsg_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    7;
 
-  friend void swap(MsgSendCardResp& a, MsgSendCardResp& b) {
+  friend void swap(MsgA7WinMsg& a, MsgA7WinMsg& b) {
     a.Swap(&b);
   }
-  inline void Swap(MsgSendCardResp* other) {
+  inline void Swap(MsgA7WinMsg* other) {
     if (other == this) return;
     if (GetArena() == other->GetArena()) {
       InternalSwap(other);
@@ -1792,7 +1485,7 @@ class MsgSendCardResp PROTOBUF_FINAL :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(MsgSendCardResp* other) {
+  void UnsafeArenaSwap(MsgA7WinMsg* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetArena() == other->GetArena());
     InternalSwap(other);
@@ -1800,17 +1493,17 @@ class MsgSendCardResp PROTOBUF_FINAL :
 
   // implements Message ----------------------------------------------
 
-  inline MsgSendCardResp* New() const final {
-    return CreateMaybeMessage<MsgSendCardResp>(nullptr);
+  inline MsgA7WinMsg* New() const final {
+    return CreateMaybeMessage<MsgA7WinMsg>(nullptr);
   }
 
-  MsgSendCardResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<MsgSendCardResp>(arena);
+  MsgA7WinMsg* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgA7WinMsg>(arena);
   }
   void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
   void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const MsgSendCardResp& from);
-  void MergeFrom(const MsgSendCardResp& from);
+  void CopyFrom(const MsgA7WinMsg& from);
+  void MergeFrom(const MsgA7WinMsg& from);
   PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
   bool IsInitialized() const final;
 
@@ -1824,171 +1517,13 @@ class MsgSendCardResp PROTOBUF_FINAL :
   inline void SharedCtor();
   inline void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(MsgSendCardResp* other);
+  void InternalSwap(MsgA7WinMsg* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "A7U7P.MsgSendCardResp";
+    return "A7U7P.MsgA7WinMsg";
   }
   protected:
-  explicit MsgSendCardResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  private:
-  static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  public:
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-  private:
-  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
-    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_A7U7P_2eproto);
-    return ::descriptor_table_A7U7P_2eproto.file_level_metadata[kIndexInFileMessages];
-  }
-
-  public:
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kCardFieldNumber = 1,
-    kAreaFieldNumber = 2,
-    kIsEndFieldNumber = 3,
-  };
-  // int32 card = 1;
-  void clear_card();
-  ::PROTOBUF_NAMESPACE_ID::int32 card() const;
-  void set_card(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_card() const;
-  void _internal_set_card(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 area = 2;
-  void clear_area();
-  ::PROTOBUF_NAMESPACE_ID::int32 area() const;
-  void set_area(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_area() const;
-  void _internal_set_area(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // bool is_end = 3;
-  void clear_is_end();
-  bool is_end() const;
-  void set_is_end(bool value);
-  private:
-  bool _internal_is_end() const;
-  void _internal_set_is_end(bool value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:A7U7P.MsgSendCardResp)
- private:
-  class _Internal;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int32 card_;
-  ::PROTOBUF_NAMESPACE_ID::int32 area_;
-  bool is_end_;
-  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  friend struct ::TableStruct_A7U7P_2eproto;
-};
-// -------------------------------------------------------------------
-
-class MsgWinMsg PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:A7U7P.MsgWinMsg) */ {
- public:
-  inline MsgWinMsg() : MsgWinMsg(nullptr) {}
-  virtual ~MsgWinMsg();
-
-  MsgWinMsg(const MsgWinMsg& from);
-  MsgWinMsg(MsgWinMsg&& from) noexcept
-    : MsgWinMsg() {
-    *this = ::std::move(from);
-  }
-
-  inline MsgWinMsg& operator=(const MsgWinMsg& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline MsgWinMsg& operator=(MsgWinMsg&& from) noexcept {
-    if (GetArena() == from.GetArena()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return GetMetadataStatic().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return GetMetadataStatic().reflection;
-  }
-  static const MsgWinMsg& default_instance();
-
-  static inline const MsgWinMsg* internal_default_instance() {
-    return reinterpret_cast<const MsgWinMsg*>(
-               &_MsgWinMsg_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    10;
-
-  friend void swap(MsgWinMsg& a, MsgWinMsg& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(MsgWinMsg* other) {
-    if (other == this) return;
-    if (GetArena() == other->GetArena()) {
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(MsgWinMsg* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetArena() == other->GetArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline MsgWinMsg* New() const final {
-    return CreateMaybeMessage<MsgWinMsg>(nullptr);
-  }
-
-  MsgWinMsg* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<MsgWinMsg>(arena);
-  }
-  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const MsgWinMsg& from);
-  void MergeFrom(const MsgWinMsg& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
-      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  inline void SharedCtor();
-  inline void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(MsgWinMsg* other);
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "A7U7P.MsgWinMsg";
-  }
-  protected:
-  explicit MsgWinMsg(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  explicit MsgA7WinMsg(::PROTOBUF_NAMESPACE_ID::Arena* arena);
   private:
   static void ArenaDtor(void* object);
   inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -2012,7 +1547,6 @@ class MsgWinMsg PROTOBUF_FINAL :
     kChairIdFieldNumber = 2,
     kWinGoldFieldNumber = 3,
     kNewGoldFieldNumber = 4,
-    kIsWinFieldNumber = 5,
   };
   // int32 user_id = 1;
   void clear_user_id();
@@ -2050,16 +1584,7 @@ class MsgWinMsg PROTOBUF_FINAL :
   void _internal_set_new_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // bool is_win = 5;
-  void clear_is_win();
-  bool is_win() const;
-  void set_is_win(bool value);
-  private:
-  bool _internal_is_win() const;
-  void _internal_set_is_win(bool value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:A7U7P.MsgWinMsg)
+  // @@protoc_insertion_point(class_scope:A7U7P.MsgA7WinMsg)
  private:
   class _Internal;
 
@@ -2070,29 +1595,28 @@ class MsgWinMsg PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int64 win_gold_;
   ::PROTOBUF_NAMESPACE_ID::int64 new_gold_;
-  bool is_win_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_A7U7P_2eproto;
 };
 // -------------------------------------------------------------------
 
-class MsgResult PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:A7U7P.MsgResult) */ {
+class MsgA7Result PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:A7U7P.MsgA7Result) */ {
  public:
-  inline MsgResult() : MsgResult(nullptr) {}
-  virtual ~MsgResult();
+  inline MsgA7Result() : MsgA7Result(nullptr) {}
+  virtual ~MsgA7Result();
 
-  MsgResult(const MsgResult& from);
-  MsgResult(MsgResult&& from) noexcept
-    : MsgResult() {
+  MsgA7Result(const MsgA7Result& from);
+  MsgA7Result(MsgA7Result&& from) noexcept
+    : MsgA7Result() {
     *this = ::std::move(from);
   }
 
-  inline MsgResult& operator=(const MsgResult& from) {
+  inline MsgA7Result& operator=(const MsgA7Result& from) {
     CopyFrom(from);
     return *this;
   }
-  inline MsgResult& operator=(MsgResult&& from) noexcept {
+  inline MsgA7Result& operator=(MsgA7Result&& from) noexcept {
     if (GetArena() == from.GetArena()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -2110,19 +1634,19 @@ class MsgResult PROTOBUF_FINAL :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return GetMetadataStatic().reflection;
   }
-  static const MsgResult& default_instance();
+  static const MsgA7Result& default_instance();
 
-  static inline const MsgResult* internal_default_instance() {
-    return reinterpret_cast<const MsgResult*>(
-               &_MsgResult_default_instance_);
+  static inline const MsgA7Result* internal_default_instance() {
+    return reinterpret_cast<const MsgA7Result*>(
+               &_MsgA7Result_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    8;
 
-  friend void swap(MsgResult& a, MsgResult& b) {
+  friend void swap(MsgA7Result& a, MsgA7Result& b) {
     a.Swap(&b);
   }
-  inline void Swap(MsgResult* other) {
+  inline void Swap(MsgA7Result* other) {
     if (other == this) return;
     if (GetArena() == other->GetArena()) {
       InternalSwap(other);
@@ -2130,7 +1654,7 @@ class MsgResult PROTOBUF_FINAL :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(MsgResult* other) {
+  void UnsafeArenaSwap(MsgA7Result* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetArena() == other->GetArena());
     InternalSwap(other);
@@ -2138,17 +1662,17 @@ class MsgResult PROTOBUF_FINAL :
 
   // implements Message ----------------------------------------------
 
-  inline MsgResult* New() const final {
-    return CreateMaybeMessage<MsgResult>(nullptr);
+  inline MsgA7Result* New() const final {
+    return CreateMaybeMessage<MsgA7Result>(nullptr);
   }
 
-  MsgResult* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<MsgResult>(arena);
+  MsgA7Result* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgA7Result>(arena);
   }
   void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
   void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const MsgResult& from);
-  void MergeFrom(const MsgResult& from);
+  void CopyFrom(const MsgA7Result& from);
+  void MergeFrom(const MsgA7Result& from);
   PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
   bool IsInitialized() const final;
 
@@ -2162,13 +1686,13 @@ class MsgResult PROTOBUF_FINAL :
   inline void SharedCtor();
   inline void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(MsgResult* other);
+  void InternalSwap(MsgA7Result* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "A7U7P.MsgResult";
+    return "A7U7P.MsgA7Result";
   }
   protected:
-  explicit MsgResult(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  explicit MsgA7Result(::PROTOBUF_NAMESPACE_ID::Arena* arena);
   private:
   static void ArenaDtor(void* object);
   inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -2188,65 +1712,84 @@ class MsgResult PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kWinMsgFieldNumber = 3,
-    kBankerInfoFieldNumber = 2,
     kWinIndexFieldNumber = 1,
+    kSievesFieldNumber = 2,
+    kWinMsgFieldNumber = 3,
   };
-  // repeated .A7U7P.MsgWinMsg win_msg = 3;
+  // repeated int32 win_index = 1;
+  int win_index_size() const;
+  private:
+  int _internal_win_index_size() const;
+  public:
+  void clear_win_index();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_win_index(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_win_index() const;
+  void _internal_add_win_index(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_win_index();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 win_index(int index) const;
+  void set_win_index(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_win_index(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      win_index() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_win_index();
+
+  // repeated int32 sieves = 2;
+  int sieves_size() const;
+  private:
+  int _internal_sieves_size() const;
+  public:
+  void clear_sieves();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_sieves(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_sieves() const;
+  void _internal_add_sieves(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_sieves();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 sieves(int index) const;
+  void set_sieves(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_sieves(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      sieves() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_sieves();
+
+  // repeated .A7U7P.MsgA7WinMsg win_msg = 3;
   int win_msg_size() const;
   private:
   int _internal_win_msg_size() const;
   public:
   void clear_win_msg();
-  ::A7U7P::MsgWinMsg* mutable_win_msg(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::MsgWinMsg >*
+  ::A7U7P::MsgA7WinMsg* mutable_win_msg(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::MsgA7WinMsg >*
       mutable_win_msg();
   private:
-  const ::A7U7P::MsgWinMsg& _internal_win_msg(int index) const;
-  ::A7U7P::MsgWinMsg* _internal_add_win_msg();
+  const ::A7U7P::MsgA7WinMsg& _internal_win_msg(int index) const;
+  ::A7U7P::MsgA7WinMsg* _internal_add_win_msg();
   public:
-  const ::A7U7P::MsgWinMsg& win_msg(int index) const;
-  ::A7U7P::MsgWinMsg* add_win_msg();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::MsgWinMsg >&
+  const ::A7U7P::MsgA7WinMsg& win_msg(int index) const;
+  ::A7U7P::MsgA7WinMsg* add_win_msg();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::MsgA7WinMsg >&
       win_msg() const;
 
-  // .A7U7P.A7BankerInfo banker_info = 2;
-  bool has_banker_info() const;
-  private:
-  bool _internal_has_banker_info() const;
-  public:
-  void clear_banker_info();
-  const ::A7U7P::A7BankerInfo& banker_info() const;
-  ::A7U7P::A7BankerInfo* release_banker_info();
-  ::A7U7P::A7BankerInfo* mutable_banker_info();
-  void set_allocated_banker_info(::A7U7P::A7BankerInfo* banker_info);
-  private:
-  const ::A7U7P::A7BankerInfo& _internal_banker_info() const;
-  ::A7U7P::A7BankerInfo* _internal_mutable_banker_info();
-  public:
-  void unsafe_arena_set_allocated_banker_info(
-      ::A7U7P::A7BankerInfo* banker_info);
-  ::A7U7P::A7BankerInfo* unsafe_arena_release_banker_info();
-
-  // int32 win_index = 1;
-  void clear_win_index();
-  ::PROTOBUF_NAMESPACE_ID::int32 win_index() const;
-  void set_win_index(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_win_index() const;
-  void _internal_set_win_index(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:A7U7P.MsgResult)
+  // @@protoc_insertion_point(class_scope:A7U7P.MsgA7Result)
  private:
   class _Internal;
 
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::MsgWinMsg > win_msg_;
-  ::A7U7P::A7BankerInfo* banker_info_;
-  ::PROTOBUF_NAMESPACE_ID::int32 win_index_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > win_index_;
+  mutable std::atomic<int> _win_index_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > sieves_;
+  mutable std::atomic<int> _sieves_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::MsgA7WinMsg > win_msg_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_A7U7P_2eproto;
 };
@@ -2259,6 +1802,50 @@ class MsgResult PROTOBUF_FINAL :
   #pragma GCC diagnostic push
   #pragma GCC diagnostic ignored "-Wstrict-aliasing"
 #endif  // __GNUC__
+// MsgA7NotifyState
+
+// int32 game_state = 1;
+inline void MsgA7NotifyState::clear_game_state() {
+  game_state_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7NotifyState::_internal_game_state() const {
+  return game_state_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7NotifyState::game_state() const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgA7NotifyState.game_state)
+  return _internal_game_state();
+}
+inline void MsgA7NotifyState::_internal_set_game_state(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  game_state_ = value;
+}
+inline void MsgA7NotifyState::set_game_state(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_game_state(value);
+  // @@protoc_insertion_point(field_set:A7U7P.MsgA7NotifyState.game_state)
+}
+
+// int32 time = 2;
+inline void MsgA7NotifyState::clear_time() {
+  time_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7NotifyState::_internal_time() const {
+  return time_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7NotifyState::time() const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgA7NotifyState.time)
+  return _internal_time();
+}
+inline void MsgA7NotifyState::_internal_set_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  time_ = value;
+}
+inline void MsgA7NotifyState::set_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_time(value);
+  // @@protoc_insertion_point(field_set:A7U7P.MsgA7NotifyState.time)
+}
+
+// -------------------------------------------------------------------
+
 // A7BetInfo
 
 // int64 bet = 1;
@@ -2426,688 +2013,556 @@ A7PlayerData::bet_infos() const {
 
 // -------------------------------------------------------------------
 
-// A7UpWaitBankerInfo
-
-// int32 id = 1;
-inline void A7UpWaitBankerInfo::clear_id() {
-  id_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 A7UpWaitBankerInfo::_internal_id() const {
-  return id_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 A7UpWaitBankerInfo::id() const {
-  // @@protoc_insertion_point(field_get:A7U7P.A7UpWaitBankerInfo.id)
-  return _internal_id();
-}
-inline void A7UpWaitBankerInfo::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  id_ = value;
-}
-inline void A7UpWaitBankerInfo::set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_id(value);
-  // @@protoc_insertion_point(field_set:A7U7P.A7UpWaitBankerInfo.id)
-}
-
-// int64 op_banker_gold = 2;
-inline void A7UpWaitBankerInfo::clear_op_banker_gold() {
-  op_banker_gold_ = PROTOBUF_LONGLONG(0);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 A7UpWaitBankerInfo::_internal_op_banker_gold() const {
-  return op_banker_gold_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 A7UpWaitBankerInfo::op_banker_gold() const {
-  // @@protoc_insertion_point(field_get:A7U7P.A7UpWaitBankerInfo.op_banker_gold)
-  return _internal_op_banker_gold();
-}
-inline void A7UpWaitBankerInfo::_internal_set_op_banker_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  
-  op_banker_gold_ = value;
-}
-inline void A7UpWaitBankerInfo::set_op_banker_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_op_banker_gold(value);
-  // @@protoc_insertion_point(field_set:A7U7P.A7UpWaitBankerInfo.op_banker_gold)
-}
-
-// -------------------------------------------------------------------
-
-// A7BankerInfo
-
-// int32 id = 1;
-inline void A7BankerInfo::clear_id() {
-  id_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 A7BankerInfo::_internal_id() const {
-  return id_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 A7BankerInfo::id() const {
-  // @@protoc_insertion_point(field_get:A7U7P.A7BankerInfo.id)
-  return _internal_id();
-}
-inline void A7BankerInfo::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  id_ = value;
-}
-inline void A7BankerInfo::set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_id(value);
-  // @@protoc_insertion_point(field_set:A7U7P.A7BankerInfo.id)
-}
-
-// int64 op_gold = 2;
-inline void A7BankerInfo::clear_op_gold() {
-  op_gold_ = PROTOBUF_LONGLONG(0);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 A7BankerInfo::_internal_op_gold() const {
-  return op_gold_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 A7BankerInfo::op_gold() const {
-  // @@protoc_insertion_point(field_get:A7U7P.A7BankerInfo.op_gold)
-  return _internal_op_gold();
-}
-inline void A7BankerInfo::_internal_set_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  
-  op_gold_ = value;
-}
-inline void A7BankerInfo::set_op_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_op_gold(value);
-  // @@protoc_insertion_point(field_set:A7U7P.A7BankerInfo.op_gold)
-}
-
-// int32 round = 3;
-inline void A7BankerInfo::clear_round() {
-  round_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 A7BankerInfo::_internal_round() const {
-  return round_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 A7BankerInfo::round() const {
-  // @@protoc_insertion_point(field_get:A7U7P.A7BankerInfo.round)
-  return _internal_round();
-}
-inline void A7BankerInfo::_internal_set_round(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  round_ = value;
-}
-inline void A7BankerInfo::set_round(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_round(value);
-  // @@protoc_insertion_point(field_set:A7U7P.A7BankerInfo.round)
-}
-
-// int64 total_win = 4;
-inline void A7BankerInfo::clear_total_win() {
-  total_win_ = PROTOBUF_LONGLONG(0);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 A7BankerInfo::_internal_total_win() const {
-  return total_win_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 A7BankerInfo::total_win() const {
-  // @@protoc_insertion_point(field_get:A7U7P.A7BankerInfo.total_win)
-  return _internal_total_win();
-}
-inline void A7BankerInfo::_internal_set_total_win(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  
-  total_win_ = value;
-}
-inline void A7BankerInfo::set_total_win(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_total_win(value);
-  // @@protoc_insertion_point(field_set:A7U7P.A7BankerInfo.total_win)
-}
-
-// bool is_down = 5;
-inline void A7BankerInfo::clear_is_down() {
-  is_down_ = false;
-}
-inline bool A7BankerInfo::_internal_is_down() const {
-  return is_down_;
-}
-inline bool A7BankerInfo::is_down() const {
-  // @@protoc_insertion_point(field_get:A7U7P.A7BankerInfo.is_down)
-  return _internal_is_down();
-}
-inline void A7BankerInfo::_internal_set_is_down(bool value) {
-  
-  is_down_ = value;
-}
-inline void A7BankerInfo::set_is_down(bool value) {
-  _internal_set_is_down(value);
-  // @@protoc_insertion_point(field_set:A7U7P.A7BankerInfo.is_down)
-}
-
-// -------------------------------------------------------------------
-
-// MsgRecord
+// MsgA7Record
 
 // repeated int32 sieves = 2;
-inline int MsgRecord::_internal_sieves_size() const {
+inline int MsgA7Record::_internal_sieves_size() const {
   return sieves_.size();
 }
-inline int MsgRecord::sieves_size() const {
+inline int MsgA7Record::sieves_size() const {
   return _internal_sieves_size();
 }
-inline void MsgRecord::clear_sieves() {
+inline void MsgA7Record::clear_sieves() {
   sieves_.Clear();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgRecord::_internal_sieves(int index) const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7Record::_internal_sieves(int index) const {
   return sieves_.Get(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgRecord::sieves(int index) const {
-  // @@protoc_insertion_point(field_get:A7U7P.MsgRecord.sieves)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7Record::sieves(int index) const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgA7Record.sieves)
   return _internal_sieves(index);
 }
-inline void MsgRecord::set_sieves(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7Record::set_sieves(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   sieves_.Set(index, value);
-  // @@protoc_insertion_point(field_set:A7U7P.MsgRecord.sieves)
+  // @@protoc_insertion_point(field_set:A7U7P.MsgA7Record.sieves)
 }
-inline void MsgRecord::_internal_add_sieves(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7Record::_internal_add_sieves(::PROTOBUF_NAMESPACE_ID::int32 value) {
   sieves_.Add(value);
 }
-inline void MsgRecord::add_sieves(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7Record::add_sieves(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_sieves(value);
-  // @@protoc_insertion_point(field_add:A7U7P.MsgRecord.sieves)
+  // @@protoc_insertion_point(field_add:A7U7P.MsgA7Record.sieves)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-MsgRecord::_internal_sieves() const {
+MsgA7Record::_internal_sieves() const {
   return sieves_;
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-MsgRecord::sieves() const {
-  // @@protoc_insertion_point(field_list:A7U7P.MsgRecord.sieves)
+MsgA7Record::sieves() const {
+  // @@protoc_insertion_point(field_list:A7U7P.MsgA7Record.sieves)
   return _internal_sieves();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-MsgRecord::_internal_mutable_sieves() {
+MsgA7Record::_internal_mutable_sieves() {
   return &sieves_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-MsgRecord::mutable_sieves() {
-  // @@protoc_insertion_point(field_mutable_list:A7U7P.MsgRecord.sieves)
+MsgA7Record::mutable_sieves() {
+  // @@protoc_insertion_point(field_mutable_list:A7U7P.MsgA7Record.sieves)
   return _internal_mutable_sieves();
 }
 
 // -------------------------------------------------------------------
 
-// MsgSceneInfo
+// MsgA7SceneInfo
 
 // repeated int64 bet_list = 1;
-inline int MsgSceneInfo::_internal_bet_list_size() const {
+inline int MsgA7SceneInfo::_internal_bet_list_size() const {
   return bet_list_.size();
 }
-inline int MsgSceneInfo::bet_list_size() const {
+inline int MsgA7SceneInfo::bet_list_size() const {
   return _internal_bet_list_size();
 }
-inline void MsgSceneInfo::clear_bet_list() {
+inline void MsgA7SceneInfo::clear_bet_list() {
   bet_list_.Clear();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSceneInfo::_internal_bet_list(int index) const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgA7SceneInfo::_internal_bet_list(int index) const {
   return bet_list_.Get(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSceneInfo::bet_list(int index) const {
-  // @@protoc_insertion_point(field_get:A7U7P.MsgSceneInfo.bet_list)
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgA7SceneInfo::bet_list(int index) const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgA7SceneInfo.bet_list)
   return _internal_bet_list(index);
 }
-inline void MsgSceneInfo::set_bet_list(int index, ::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void MsgA7SceneInfo::set_bet_list(int index, ::PROTOBUF_NAMESPACE_ID::int64 value) {
   bet_list_.Set(index, value);
-  // @@protoc_insertion_point(field_set:A7U7P.MsgSceneInfo.bet_list)
+  // @@protoc_insertion_point(field_set:A7U7P.MsgA7SceneInfo.bet_list)
 }
-inline void MsgSceneInfo::_internal_add_bet_list(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void MsgA7SceneInfo::_internal_add_bet_list(::PROTOBUF_NAMESPACE_ID::int64 value) {
   bet_list_.Add(value);
 }
-inline void MsgSceneInfo::add_bet_list(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void MsgA7SceneInfo::add_bet_list(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_add_bet_list(value);
-  // @@protoc_insertion_point(field_add:A7U7P.MsgSceneInfo.bet_list)
+  // @@protoc_insertion_point(field_add:A7U7P.MsgA7SceneInfo.bet_list)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
-MsgSceneInfo::_internal_bet_list() const {
+MsgA7SceneInfo::_internal_bet_list() const {
   return bet_list_;
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
-MsgSceneInfo::bet_list() const {
-  // @@protoc_insertion_point(field_list:A7U7P.MsgSceneInfo.bet_list)
+MsgA7SceneInfo::bet_list() const {
+  // @@protoc_insertion_point(field_list:A7U7P.MsgA7SceneInfo.bet_list)
   return _internal_bet_list();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
-MsgSceneInfo::_internal_mutable_bet_list() {
+MsgA7SceneInfo::_internal_mutable_bet_list() {
   return &bet_list_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
-MsgSceneInfo::mutable_bet_list() {
-  // @@protoc_insertion_point(field_mutable_list:A7U7P.MsgSceneInfo.bet_list)
+MsgA7SceneInfo::mutable_bet_list() {
+  // @@protoc_insertion_point(field_mutable_list:A7U7P.MsgA7SceneInfo.bet_list)
   return _internal_mutable_bet_list();
 }
 
-// repeated .A7U7P.MsgRecord records = 2;
-inline int MsgSceneInfo::_internal_records_size() const {
+// repeated .A7U7P.MsgA7Record records = 2;
+inline int MsgA7SceneInfo::_internal_records_size() const {
   return records_.size();
 }
-inline int MsgSceneInfo::records_size() const {
+inline int MsgA7SceneInfo::records_size() const {
   return _internal_records_size();
 }
-inline void MsgSceneInfo::clear_records() {
+inline void MsgA7SceneInfo::clear_records() {
   records_.Clear();
 }
-inline ::A7U7P::MsgRecord* MsgSceneInfo::mutable_records(int index) {
-  // @@protoc_insertion_point(field_mutable:A7U7P.MsgSceneInfo.records)
+inline ::A7U7P::MsgA7Record* MsgA7SceneInfo::mutable_records(int index) {
+  // @@protoc_insertion_point(field_mutable:A7U7P.MsgA7SceneInfo.records)
   return records_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::MsgRecord >*
-MsgSceneInfo::mutable_records() {
-  // @@protoc_insertion_point(field_mutable_list:A7U7P.MsgSceneInfo.records)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::MsgA7Record >*
+MsgA7SceneInfo::mutable_records() {
+  // @@protoc_insertion_point(field_mutable_list:A7U7P.MsgA7SceneInfo.records)
   return &records_;
 }
-inline const ::A7U7P::MsgRecord& MsgSceneInfo::_internal_records(int index) const {
+inline const ::A7U7P::MsgA7Record& MsgA7SceneInfo::_internal_records(int index) const {
   return records_.Get(index);
 }
-inline const ::A7U7P::MsgRecord& MsgSceneInfo::records(int index) const {
-  // @@protoc_insertion_point(field_get:A7U7P.MsgSceneInfo.records)
+inline const ::A7U7P::MsgA7Record& MsgA7SceneInfo::records(int index) const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgA7SceneInfo.records)
   return _internal_records(index);
 }
-inline ::A7U7P::MsgRecord* MsgSceneInfo::_internal_add_records() {
+inline ::A7U7P::MsgA7Record* MsgA7SceneInfo::_internal_add_records() {
   return records_.Add();
 }
-inline ::A7U7P::MsgRecord* MsgSceneInfo::add_records() {
-  // @@protoc_insertion_point(field_add:A7U7P.MsgSceneInfo.records)
+inline ::A7U7P::MsgA7Record* MsgA7SceneInfo::add_records() {
+  // @@protoc_insertion_point(field_add:A7U7P.MsgA7SceneInfo.records)
   return _internal_add_records();
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::MsgRecord >&
-MsgSceneInfo::records() const {
-  // @@protoc_insertion_point(field_list:A7U7P.MsgSceneInfo.records)
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::MsgA7Record >&
+MsgA7SceneInfo::records() const {
+  // @@protoc_insertion_point(field_list:A7U7P.MsgA7SceneInfo.records)
   return records_;
 }
 
 // repeated int32 bet_limit = 3;
-inline int MsgSceneInfo::_internal_bet_limit_size() const {
+inline int MsgA7SceneInfo::_internal_bet_limit_size() const {
   return bet_limit_.size();
 }
-inline int MsgSceneInfo::bet_limit_size() const {
+inline int MsgA7SceneInfo::bet_limit_size() const {
   return _internal_bet_limit_size();
 }
-inline void MsgSceneInfo::clear_bet_limit() {
+inline void MsgA7SceneInfo::clear_bet_limit() {
   bet_limit_.Clear();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::_internal_bet_limit(int index) const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7SceneInfo::_internal_bet_limit(int index) const {
   return bet_limit_.Get(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::bet_limit(int index) const {
-  // @@protoc_insertion_point(field_get:A7U7P.MsgSceneInfo.bet_limit)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7SceneInfo::bet_limit(int index) const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgA7SceneInfo.bet_limit)
   return _internal_bet_limit(index);
 }
-inline void MsgSceneInfo::set_bet_limit(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7SceneInfo::set_bet_limit(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   bet_limit_.Set(index, value);
-  // @@protoc_insertion_point(field_set:A7U7P.MsgSceneInfo.bet_limit)
+  // @@protoc_insertion_point(field_set:A7U7P.MsgA7SceneInfo.bet_limit)
 }
-inline void MsgSceneInfo::_internal_add_bet_limit(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7SceneInfo::_internal_add_bet_limit(::PROTOBUF_NAMESPACE_ID::int32 value) {
   bet_limit_.Add(value);
 }
-inline void MsgSceneInfo::add_bet_limit(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7SceneInfo::add_bet_limit(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_bet_limit(value);
-  // @@protoc_insertion_point(field_add:A7U7P.MsgSceneInfo.bet_limit)
+  // @@protoc_insertion_point(field_add:A7U7P.MsgA7SceneInfo.bet_limit)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-MsgSceneInfo::_internal_bet_limit() const {
+MsgA7SceneInfo::_internal_bet_limit() const {
   return bet_limit_;
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-MsgSceneInfo::bet_limit() const {
-  // @@protoc_insertion_point(field_list:A7U7P.MsgSceneInfo.bet_limit)
+MsgA7SceneInfo::bet_limit() const {
+  // @@protoc_insertion_point(field_list:A7U7P.MsgA7SceneInfo.bet_limit)
   return _internal_bet_limit();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-MsgSceneInfo::_internal_mutable_bet_limit() {
+MsgA7SceneInfo::_internal_mutable_bet_limit() {
   return &bet_limit_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-MsgSceneInfo::mutable_bet_limit() {
-  // @@protoc_insertion_point(field_mutable_list:A7U7P.MsgSceneInfo.bet_limit)
+MsgA7SceneInfo::mutable_bet_limit() {
+  // @@protoc_insertion_point(field_mutable_list:A7U7P.MsgA7SceneInfo.bet_limit)
   return _internal_mutable_bet_limit();
 }
 
 // int32 player_limit = 5;
-inline void MsgSceneInfo::clear_player_limit() {
+inline void MsgA7SceneInfo::clear_player_limit() {
   player_limit_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::_internal_player_limit() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7SceneInfo::_internal_player_limit() const {
   return player_limit_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::player_limit() const {
-  // @@protoc_insertion_point(field_get:A7U7P.MsgSceneInfo.player_limit)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7SceneInfo::player_limit() const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgA7SceneInfo.player_limit)
   return _internal_player_limit();
 }
-inline void MsgSceneInfo::_internal_set_player_limit(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7SceneInfo::_internal_set_player_limit(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   player_limit_ = value;
 }
-inline void MsgSceneInfo::set_player_limit(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7SceneInfo::set_player_limit(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_player_limit(value);
-  // @@protoc_insertion_point(field_set:A7U7P.MsgSceneInfo.player_limit)
+  // @@protoc_insertion_point(field_set:A7U7P.MsgA7SceneInfo.player_limit)
 }
 
 // int32 bet_time = 6;
-inline void MsgSceneInfo::clear_bet_time() {
+inline void MsgA7SceneInfo::clear_bet_time() {
   bet_time_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::_internal_bet_time() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7SceneInfo::_internal_bet_time() const {
   return bet_time_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::bet_time() const {
-  // @@protoc_insertion_point(field_get:A7U7P.MsgSceneInfo.bet_time)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7SceneInfo::bet_time() const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgA7SceneInfo.bet_time)
   return _internal_bet_time();
 }
-inline void MsgSceneInfo::_internal_set_bet_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7SceneInfo::_internal_set_bet_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   bet_time_ = value;
 }
-inline void MsgSceneInfo::set_bet_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7SceneInfo::set_bet_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_bet_time(value);
-  // @@protoc_insertion_point(field_set:A7U7P.MsgSceneInfo.bet_time)
+  // @@protoc_insertion_point(field_set:A7U7P.MsgA7SceneInfo.bet_time)
 }
 
 // int32 out_time = 7;
-inline void MsgSceneInfo::clear_out_time() {
+inline void MsgA7SceneInfo::clear_out_time() {
   out_time_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::_internal_out_time() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7SceneInfo::_internal_out_time() const {
   return out_time_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::out_time() const {
-  // @@protoc_insertion_point(field_get:A7U7P.MsgSceneInfo.out_time)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7SceneInfo::out_time() const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgA7SceneInfo.out_time)
   return _internal_out_time();
 }
-inline void MsgSceneInfo::_internal_set_out_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7SceneInfo::_internal_set_out_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   out_time_ = value;
 }
-inline void MsgSceneInfo::set_out_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7SceneInfo::set_out_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_out_time(value);
-  // @@protoc_insertion_point(field_set:A7U7P.MsgSceneInfo.out_time)
+  // @@protoc_insertion_point(field_set:A7U7P.MsgA7SceneInfo.out_time)
 }
 
 // int32 state = 8;
-inline void MsgSceneInfo::clear_state() {
+inline void MsgA7SceneInfo::clear_state() {
   state_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::_internal_state() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7SceneInfo::_internal_state() const {
   return state_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::state() const {
-  // @@protoc_insertion_point(field_get:A7U7P.MsgSceneInfo.state)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7SceneInfo::state() const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgA7SceneInfo.state)
   return _internal_state();
 }
-inline void MsgSceneInfo::_internal_set_state(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7SceneInfo::_internal_set_state(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   state_ = value;
 }
-inline void MsgSceneInfo::set_state(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7SceneInfo::set_state(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_state(value);
-  // @@protoc_insertion_point(field_set:A7U7P.MsgSceneInfo.state)
+  // @@protoc_insertion_point(field_set:A7U7P.MsgA7SceneInfo.state)
+}
+
+// int32 game_tax = 9;
+inline void MsgA7SceneInfo::clear_game_tax() {
+  game_tax_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7SceneInfo::_internal_game_tax() const {
+  return game_tax_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7SceneInfo::game_tax() const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgA7SceneInfo.game_tax)
+  return _internal_game_tax();
+}
+inline void MsgA7SceneInfo::_internal_set_game_tax(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  game_tax_ = value;
+}
+inline void MsgA7SceneInfo::set_game_tax(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_game_tax(value);
+  // @@protoc_insertion_point(field_set:A7U7P.MsgA7SceneInfo.game_tax)
 }
 
 // repeated int32 area_bet = 19;
-inline int MsgSceneInfo::_internal_area_bet_size() const {
+inline int MsgA7SceneInfo::_internal_area_bet_size() const {
   return area_bet_.size();
 }
-inline int MsgSceneInfo::area_bet_size() const {
+inline int MsgA7SceneInfo::area_bet_size() const {
   return _internal_area_bet_size();
 }
-inline void MsgSceneInfo::clear_area_bet() {
+inline void MsgA7SceneInfo::clear_area_bet() {
   area_bet_.Clear();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::_internal_area_bet(int index) const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7SceneInfo::_internal_area_bet(int index) const {
   return area_bet_.Get(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::area_bet(int index) const {
-  // @@protoc_insertion_point(field_get:A7U7P.MsgSceneInfo.area_bet)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7SceneInfo::area_bet(int index) const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgA7SceneInfo.area_bet)
   return _internal_area_bet(index);
 }
-inline void MsgSceneInfo::set_area_bet(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7SceneInfo::set_area_bet(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   area_bet_.Set(index, value);
-  // @@protoc_insertion_point(field_set:A7U7P.MsgSceneInfo.area_bet)
+  // @@protoc_insertion_point(field_set:A7U7P.MsgA7SceneInfo.area_bet)
 }
-inline void MsgSceneInfo::_internal_add_area_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7SceneInfo::_internal_add_area_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
   area_bet_.Add(value);
 }
-inline void MsgSceneInfo::add_area_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7SceneInfo::add_area_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_area_bet(value);
-  // @@protoc_insertion_point(field_add:A7U7P.MsgSceneInfo.area_bet)
+  // @@protoc_insertion_point(field_add:A7U7P.MsgA7SceneInfo.area_bet)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-MsgSceneInfo::_internal_area_bet() const {
+MsgA7SceneInfo::_internal_area_bet() const {
   return area_bet_;
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-MsgSceneInfo::area_bet() const {
-  // @@protoc_insertion_point(field_list:A7U7P.MsgSceneInfo.area_bet)
+MsgA7SceneInfo::area_bet() const {
+  // @@protoc_insertion_point(field_list:A7U7P.MsgA7SceneInfo.area_bet)
   return _internal_area_bet();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-MsgSceneInfo::_internal_mutable_area_bet() {
+MsgA7SceneInfo::_internal_mutable_area_bet() {
   return &area_bet_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-MsgSceneInfo::mutable_area_bet() {
-  // @@protoc_insertion_point(field_mutable_list:A7U7P.MsgSceneInfo.area_bet)
+MsgA7SceneInfo::mutable_area_bet() {
+  // @@protoc_insertion_point(field_mutable_list:A7U7P.MsgA7SceneInfo.area_bet)
   return _internal_mutable_area_bet();
 }
 
 // repeated int32 sieves = 20;
-inline int MsgSceneInfo::_internal_sieves_size() const {
+inline int MsgA7SceneInfo::_internal_sieves_size() const {
   return sieves_.size();
 }
-inline int MsgSceneInfo::sieves_size() const {
+inline int MsgA7SceneInfo::sieves_size() const {
   return _internal_sieves_size();
 }
-inline void MsgSceneInfo::clear_sieves() {
+inline void MsgA7SceneInfo::clear_sieves() {
   sieves_.Clear();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::_internal_sieves(int index) const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7SceneInfo::_internal_sieves(int index) const {
   return sieves_.Get(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfo::sieves(int index) const {
-  // @@protoc_insertion_point(field_get:A7U7P.MsgSceneInfo.sieves)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7SceneInfo::sieves(int index) const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgA7SceneInfo.sieves)
   return _internal_sieves(index);
 }
-inline void MsgSceneInfo::set_sieves(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7SceneInfo::set_sieves(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   sieves_.Set(index, value);
-  // @@protoc_insertion_point(field_set:A7U7P.MsgSceneInfo.sieves)
+  // @@protoc_insertion_point(field_set:A7U7P.MsgA7SceneInfo.sieves)
 }
-inline void MsgSceneInfo::_internal_add_sieves(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7SceneInfo::_internal_add_sieves(::PROTOBUF_NAMESPACE_ID::int32 value) {
   sieves_.Add(value);
 }
-inline void MsgSceneInfo::add_sieves(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7SceneInfo::add_sieves(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_sieves(value);
-  // @@protoc_insertion_point(field_add:A7U7P.MsgSceneInfo.sieves)
+  // @@protoc_insertion_point(field_add:A7U7P.MsgA7SceneInfo.sieves)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-MsgSceneInfo::_internal_sieves() const {
+MsgA7SceneInfo::_internal_sieves() const {
   return sieves_;
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
-MsgSceneInfo::sieves() const {
-  // @@protoc_insertion_point(field_list:A7U7P.MsgSceneInfo.sieves)
+MsgA7SceneInfo::sieves() const {
+  // @@protoc_insertion_point(field_list:A7U7P.MsgA7SceneInfo.sieves)
   return _internal_sieves();
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-MsgSceneInfo::_internal_mutable_sieves() {
+MsgA7SceneInfo::_internal_mutable_sieves() {
   return &sieves_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
-MsgSceneInfo::mutable_sieves() {
-  // @@protoc_insertion_point(field_mutable_list:A7U7P.MsgSceneInfo.sieves)
+MsgA7SceneInfo::mutable_sieves() {
+  // @@protoc_insertion_point(field_mutable_list:A7U7P.MsgA7SceneInfo.sieves)
   return _internal_mutable_sieves();
 }
 
 // repeated .A7U7P.A7PlayerData player_list = 22;
-inline int MsgSceneInfo::_internal_player_list_size() const {
+inline int MsgA7SceneInfo::_internal_player_list_size() const {
   return player_list_.size();
 }
-inline int MsgSceneInfo::player_list_size() const {
+inline int MsgA7SceneInfo::player_list_size() const {
   return _internal_player_list_size();
 }
-inline void MsgSceneInfo::clear_player_list() {
+inline void MsgA7SceneInfo::clear_player_list() {
   player_list_.Clear();
 }
-inline ::A7U7P::A7PlayerData* MsgSceneInfo::mutable_player_list(int index) {
-  // @@protoc_insertion_point(field_mutable:A7U7P.MsgSceneInfo.player_list)
+inline ::A7U7P::A7PlayerData* MsgA7SceneInfo::mutable_player_list(int index) {
+  // @@protoc_insertion_point(field_mutable:A7U7P.MsgA7SceneInfo.player_list)
   return player_list_.Mutable(index);
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::A7PlayerData >*
-MsgSceneInfo::mutable_player_list() {
-  // @@protoc_insertion_point(field_mutable_list:A7U7P.MsgSceneInfo.player_list)
+MsgA7SceneInfo::mutable_player_list() {
+  // @@protoc_insertion_point(field_mutable_list:A7U7P.MsgA7SceneInfo.player_list)
   return &player_list_;
 }
-inline const ::A7U7P::A7PlayerData& MsgSceneInfo::_internal_player_list(int index) const {
+inline const ::A7U7P::A7PlayerData& MsgA7SceneInfo::_internal_player_list(int index) const {
   return player_list_.Get(index);
 }
-inline const ::A7U7P::A7PlayerData& MsgSceneInfo::player_list(int index) const {
-  // @@protoc_insertion_point(field_get:A7U7P.MsgSceneInfo.player_list)
+inline const ::A7U7P::A7PlayerData& MsgA7SceneInfo::player_list(int index) const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgA7SceneInfo.player_list)
   return _internal_player_list(index);
 }
-inline ::A7U7P::A7PlayerData* MsgSceneInfo::_internal_add_player_list() {
+inline ::A7U7P::A7PlayerData* MsgA7SceneInfo::_internal_add_player_list() {
   return player_list_.Add();
 }
-inline ::A7U7P::A7PlayerData* MsgSceneInfo::add_player_list() {
-  // @@protoc_insertion_point(field_add:A7U7P.MsgSceneInfo.player_list)
+inline ::A7U7P::A7PlayerData* MsgA7SceneInfo::add_player_list() {
+  // @@protoc_insertion_point(field_add:A7U7P.MsgA7SceneInfo.player_list)
   return _internal_add_player_list();
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::A7PlayerData >&
-MsgSceneInfo::player_list() const {
-  // @@protoc_insertion_point(field_list:A7U7P.MsgSceneInfo.player_list)
+MsgA7SceneInfo::player_list() const {
+  // @@protoc_insertion_point(field_list:A7U7P.MsgA7SceneInfo.player_list)
   return player_list_;
 }
 
 // -------------------------------------------------------------------
 
-// MsgStartGameResp
-
-// -------------------------------------------------------------------
-
-// MsgBet
+// MsgA7Bet
 
 // int64 bet = 1;
-inline void MsgBet::clear_bet() {
+inline void MsgA7Bet::clear_bet() {
   bet_ = PROTOBUF_LONGLONG(0);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgBet::_internal_bet() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgA7Bet::_internal_bet() const {
   return bet_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgBet::bet() const {
-  // @@protoc_insertion_point(field_get:A7U7P.MsgBet.bet)
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgA7Bet::bet() const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgA7Bet.bet)
   return _internal_bet();
 }
-inline void MsgBet::_internal_set_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void MsgA7Bet::_internal_set_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
   
   bet_ = value;
 }
-inline void MsgBet::set_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void MsgA7Bet::set_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_bet(value);
-  // @@protoc_insertion_point(field_set:A7U7P.MsgBet.bet)
+  // @@protoc_insertion_point(field_set:A7U7P.MsgA7Bet.bet)
 }
 
 // int32 area = 2;
-inline void MsgBet::clear_area() {
+inline void MsgA7Bet::clear_area() {
   area_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBet::_internal_area() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7Bet::_internal_area() const {
   return area_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBet::area() const {
-  // @@protoc_insertion_point(field_get:A7U7P.MsgBet.area)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7Bet::area() const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgA7Bet.area)
   return _internal_area();
 }
-inline void MsgBet::_internal_set_area(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7Bet::_internal_set_area(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   area_ = value;
 }
-inline void MsgBet::set_area(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7Bet::set_area(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_area(value);
-  // @@protoc_insertion_point(field_set:A7U7P.MsgBet.area)
+  // @@protoc_insertion_point(field_set:A7U7P.MsgA7Bet.area)
 }
 
 // -------------------------------------------------------------------
 
-// MsgBetResp
+// MsgA7BetResp
 
 // int32 ret_code = 1;
-inline void MsgBetResp::clear_ret_code() {
+inline void MsgA7BetResp::clear_ret_code() {
   ret_code_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBetResp::_internal_ret_code() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7BetResp::_internal_ret_code() const {
   return ret_code_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBetResp::ret_code() const {
-  // @@protoc_insertion_point(field_get:A7U7P.MsgBetResp.ret_code)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7BetResp::ret_code() const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgA7BetResp.ret_code)
   return _internal_ret_code();
 }
-inline void MsgBetResp::_internal_set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7BetResp::_internal_set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   ret_code_ = value;
 }
-inline void MsgBetResp::set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7BetResp::set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_ret_code(value);
-  // @@protoc_insertion_point(field_set:A7U7P.MsgBetResp.ret_code)
+  // @@protoc_insertion_point(field_set:A7U7P.MsgA7BetResp.ret_code)
 }
 
 // int32 user_id = 2;
-inline void MsgBetResp::clear_user_id() {
+inline void MsgA7BetResp::clear_user_id() {
   user_id_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBetResp::_internal_user_id() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7BetResp::_internal_user_id() const {
   return user_id_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBetResp::user_id() const {
-  // @@protoc_insertion_point(field_get:A7U7P.MsgBetResp.user_id)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7BetResp::user_id() const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgA7BetResp.user_id)
   return _internal_user_id();
 }
-inline void MsgBetResp::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7BetResp::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   user_id_ = value;
 }
-inline void MsgBetResp::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7BetResp::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_user_id(value);
-  // @@protoc_insertion_point(field_set:A7U7P.MsgBetResp.user_id)
+  // @@protoc_insertion_point(field_set:A7U7P.MsgA7BetResp.user_id)
 }
 
 // int32 chair_id = 3;
-inline void MsgBetResp::clear_chair_id() {
+inline void MsgA7BetResp::clear_chair_id() {
   chair_id_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBetResp::_internal_chair_id() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7BetResp::_internal_chair_id() const {
   return chair_id_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgBetResp::chair_id() const {
-  // @@protoc_insertion_point(field_get:A7U7P.MsgBetResp.chair_id)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7BetResp::chair_id() const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgA7BetResp.chair_id)
   return _internal_chair_id();
 }
-inline void MsgBetResp::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7BetResp::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   chair_id_ = value;
 }
-inline void MsgBetResp::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7BetResp::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:A7U7P.MsgBetResp.chair_id)
+  // @@protoc_insertion_point(field_set:A7U7P.MsgA7BetResp.chair_id)
 }
 
 // .A7U7P.A7BetInfo bet_info = 4;
-inline bool MsgBetResp::_internal_has_bet_info() const {
+inline bool MsgA7BetResp::_internal_has_bet_info() const {
   return this != internal_default_instance() && bet_info_ != nullptr;
 }
-inline bool MsgBetResp::has_bet_info() const {
+inline bool MsgA7BetResp::has_bet_info() const {
   return _internal_has_bet_info();
 }
-inline void MsgBetResp::clear_bet_info() {
+inline void MsgA7BetResp::clear_bet_info() {
   if (GetArena() == nullptr && bet_info_ != nullptr) {
     delete bet_info_;
   }
   bet_info_ = nullptr;
 }
-inline const ::A7U7P::A7BetInfo& MsgBetResp::_internal_bet_info() const {
+inline const ::A7U7P::A7BetInfo& MsgA7BetResp::_internal_bet_info() const {
   const ::A7U7P::A7BetInfo* p = bet_info_;
   return p != nullptr ? *p : reinterpret_cast<const ::A7U7P::A7BetInfo&>(
       ::A7U7P::_A7BetInfo_default_instance_);
 }
-inline const ::A7U7P::A7BetInfo& MsgBetResp::bet_info() const {
-  // @@protoc_insertion_point(field_get:A7U7P.MsgBetResp.bet_info)
+inline const ::A7U7P::A7BetInfo& MsgA7BetResp::bet_info() const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgA7BetResp.bet_info)
   return _internal_bet_info();
 }
-inline void MsgBetResp::unsafe_arena_set_allocated_bet_info(
+inline void MsgA7BetResp::unsafe_arena_set_allocated_bet_info(
     ::A7U7P::A7BetInfo* bet_info) {
   if (GetArena() == nullptr) {
     delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(bet_info_);
@@ -3118,9 +2573,9 @@ inline void MsgBetResp::unsafe_arena_set_allocated_bet_info(
   } else {
     
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:A7U7P.MsgBetResp.bet_info)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:A7U7P.MsgA7BetResp.bet_info)
 }
-inline ::A7U7P::A7BetInfo* MsgBetResp::release_bet_info() {
+inline ::A7U7P::A7BetInfo* MsgA7BetResp::release_bet_info() {
   
   ::A7U7P::A7BetInfo* temp = bet_info_;
   bet_info_ = nullptr;
@@ -3129,14 +2584,14 @@ inline ::A7U7P::A7BetInfo* MsgBetResp::release_bet_info() {
   }
   return temp;
 }
-inline ::A7U7P::A7BetInfo* MsgBetResp::unsafe_arena_release_bet_info() {
-  // @@protoc_insertion_point(field_release:A7U7P.MsgBetResp.bet_info)
+inline ::A7U7P::A7BetInfo* MsgA7BetResp::unsafe_arena_release_bet_info() {
+  // @@protoc_insertion_point(field_release:A7U7P.MsgA7BetResp.bet_info)
   
   ::A7U7P::A7BetInfo* temp = bet_info_;
   bet_info_ = nullptr;
   return temp;
 }
-inline ::A7U7P::A7BetInfo* MsgBetResp::_internal_mutable_bet_info() {
+inline ::A7U7P::A7BetInfo* MsgA7BetResp::_internal_mutable_bet_info() {
   
   if (bet_info_ == nullptr) {
     auto* p = CreateMaybeMessage<::A7U7P::A7BetInfo>(GetArena());
@@ -3144,11 +2599,11 @@ inline ::A7U7P::A7BetInfo* MsgBetResp::_internal_mutable_bet_info() {
   }
   return bet_info_;
 }
-inline ::A7U7P::A7BetInfo* MsgBetResp::mutable_bet_info() {
-  // @@protoc_insertion_point(field_mutable:A7U7P.MsgBetResp.bet_info)
+inline ::A7U7P::A7BetInfo* MsgA7BetResp::mutable_bet_info() {
+  // @@protoc_insertion_point(field_mutable:A7U7P.MsgA7BetResp.bet_info)
   return _internal_mutable_bet_info();
 }
-inline void MsgBetResp::set_allocated_bet_info(::A7U7P::A7BetInfo* bet_info) {
+inline void MsgA7BetResp::set_allocated_bet_info(::A7U7P::A7BetInfo* bet_info) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   if (message_arena == nullptr) {
     delete bet_info_;
@@ -3165,332 +2620,233 @@ inline void MsgBetResp::set_allocated_bet_info(::A7U7P::A7BetInfo* bet_info) {
     
   }
   bet_info_ = bet_info;
-  // @@protoc_insertion_point(field_set_allocated:A7U7P.MsgBetResp.bet_info)
+  // @@protoc_insertion_point(field_set_allocated:A7U7P.MsgA7BetResp.bet_info)
 }
 
 // -------------------------------------------------------------------
 
-// MsgSendCardResp
-
-// int32 card = 1;
-inline void MsgSendCardResp::clear_card() {
-  card_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSendCardResp::_internal_card() const {
-  return card_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSendCardResp::card() const {
-  // @@protoc_insertion_point(field_get:A7U7P.MsgSendCardResp.card)
-  return _internal_card();
-}
-inline void MsgSendCardResp::_internal_set_card(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  card_ = value;
-}
-inline void MsgSendCardResp::set_card(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_card(value);
-  // @@protoc_insertion_point(field_set:A7U7P.MsgSendCardResp.card)
-}
-
-// int32 area = 2;
-inline void MsgSendCardResp::clear_area() {
-  area_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSendCardResp::_internal_area() const {
-  return area_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSendCardResp::area() const {
-  // @@protoc_insertion_point(field_get:A7U7P.MsgSendCardResp.area)
-  return _internal_area();
-}
-inline void MsgSendCardResp::_internal_set_area(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  area_ = value;
-}
-inline void MsgSendCardResp::set_area(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_area(value);
-  // @@protoc_insertion_point(field_set:A7U7P.MsgSendCardResp.area)
-}
-
-// bool is_end = 3;
-inline void MsgSendCardResp::clear_is_end() {
-  is_end_ = false;
-}
-inline bool MsgSendCardResp::_internal_is_end() const {
-  return is_end_;
-}
-inline bool MsgSendCardResp::is_end() const {
-  // @@protoc_insertion_point(field_get:A7U7P.MsgSendCardResp.is_end)
-  return _internal_is_end();
-}
-inline void MsgSendCardResp::_internal_set_is_end(bool value) {
-  
-  is_end_ = value;
-}
-inline void MsgSendCardResp::set_is_end(bool value) {
-  _internal_set_is_end(value);
-  // @@protoc_insertion_point(field_set:A7U7P.MsgSendCardResp.is_end)
-}
-
-// -------------------------------------------------------------------
-
-// MsgWinMsg
+// MsgA7WinMsg
 
 // int32 user_id = 1;
-inline void MsgWinMsg::clear_user_id() {
+inline void MsgA7WinMsg::clear_user_id() {
   user_id_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgWinMsg::_internal_user_id() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7WinMsg::_internal_user_id() const {
   return user_id_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgWinMsg::user_id() const {
-  // @@protoc_insertion_point(field_get:A7U7P.MsgWinMsg.user_id)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7WinMsg::user_id() const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgA7WinMsg.user_id)
   return _internal_user_id();
 }
-inline void MsgWinMsg::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7WinMsg::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   user_id_ = value;
 }
-inline void MsgWinMsg::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7WinMsg::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_user_id(value);
-  // @@protoc_insertion_point(field_set:A7U7P.MsgWinMsg.user_id)
+  // @@protoc_insertion_point(field_set:A7U7P.MsgA7WinMsg.user_id)
 }
 
 // int32 chair_id = 2;
-inline void MsgWinMsg::clear_chair_id() {
+inline void MsgA7WinMsg::clear_chair_id() {
   chair_id_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgWinMsg::_internal_chair_id() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7WinMsg::_internal_chair_id() const {
   return chair_id_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgWinMsg::chair_id() const {
-  // @@protoc_insertion_point(field_get:A7U7P.MsgWinMsg.chair_id)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7WinMsg::chair_id() const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgA7WinMsg.chair_id)
   return _internal_chair_id();
 }
-inline void MsgWinMsg::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7WinMsg::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   chair_id_ = value;
 }
-inline void MsgWinMsg::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgA7WinMsg::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:A7U7P.MsgWinMsg.chair_id)
+  // @@protoc_insertion_point(field_set:A7U7P.MsgA7WinMsg.chair_id)
 }
 
 // int64 win_gold = 3;
-inline void MsgWinMsg::clear_win_gold() {
+inline void MsgA7WinMsg::clear_win_gold() {
   win_gold_ = PROTOBUF_LONGLONG(0);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgWinMsg::_internal_win_gold() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgA7WinMsg::_internal_win_gold() const {
   return win_gold_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgWinMsg::win_gold() const {
-  // @@protoc_insertion_point(field_get:A7U7P.MsgWinMsg.win_gold)
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgA7WinMsg::win_gold() const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgA7WinMsg.win_gold)
   return _internal_win_gold();
 }
-inline void MsgWinMsg::_internal_set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void MsgA7WinMsg::_internal_set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
   
   win_gold_ = value;
 }
-inline void MsgWinMsg::set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void MsgA7WinMsg::set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_win_gold(value);
-  // @@protoc_insertion_point(field_set:A7U7P.MsgWinMsg.win_gold)
+  // @@protoc_insertion_point(field_set:A7U7P.MsgA7WinMsg.win_gold)
 }
 
 // int64 new_gold = 4;
-inline void MsgWinMsg::clear_new_gold() {
+inline void MsgA7WinMsg::clear_new_gold() {
   new_gold_ = PROTOBUF_LONGLONG(0);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgWinMsg::_internal_new_gold() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgA7WinMsg::_internal_new_gold() const {
   return new_gold_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgWinMsg::new_gold() const {
-  // @@protoc_insertion_point(field_get:A7U7P.MsgWinMsg.new_gold)
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgA7WinMsg::new_gold() const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgA7WinMsg.new_gold)
   return _internal_new_gold();
 }
-inline void MsgWinMsg::_internal_set_new_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void MsgA7WinMsg::_internal_set_new_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
   
   new_gold_ = value;
 }
-inline void MsgWinMsg::set_new_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void MsgA7WinMsg::set_new_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_new_gold(value);
-  // @@protoc_insertion_point(field_set:A7U7P.MsgWinMsg.new_gold)
-}
-
-// bool is_win = 5;
-inline void MsgWinMsg::clear_is_win() {
-  is_win_ = false;
-}
-inline bool MsgWinMsg::_internal_is_win() const {
-  return is_win_;
-}
-inline bool MsgWinMsg::is_win() const {
-  // @@protoc_insertion_point(field_get:A7U7P.MsgWinMsg.is_win)
-  return _internal_is_win();
-}
-inline void MsgWinMsg::_internal_set_is_win(bool value) {
-  
-  is_win_ = value;
-}
-inline void MsgWinMsg::set_is_win(bool value) {
-  _internal_set_is_win(value);
-  // @@protoc_insertion_point(field_set:A7U7P.MsgWinMsg.is_win)
+  // @@protoc_insertion_point(field_set:A7U7P.MsgA7WinMsg.new_gold)
 }
 
 // -------------------------------------------------------------------
 
-// MsgResult
+// MsgA7Result
 
-// int32 win_index = 1;
-inline void MsgResult::clear_win_index() {
-  win_index_ = 0;
+// repeated int32 sieves = 2;
+inline int MsgA7Result::_internal_sieves_size() const {
+  return sieves_.size();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgResult::_internal_win_index() const {
+inline int MsgA7Result::sieves_size() const {
+  return _internal_sieves_size();
+}
+inline void MsgA7Result::clear_sieves() {
+  sieves_.Clear();
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7Result::_internal_sieves(int index) const {
+  return sieves_.Get(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7Result::sieves(int index) const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgA7Result.sieves)
+  return _internal_sieves(index);
+}
+inline void MsgA7Result::set_sieves(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  sieves_.Set(index, value);
+  // @@protoc_insertion_point(field_set:A7U7P.MsgA7Result.sieves)
+}
+inline void MsgA7Result::_internal_add_sieves(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  sieves_.Add(value);
+}
+inline void MsgA7Result::add_sieves(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_sieves(value);
+  // @@protoc_insertion_point(field_add:A7U7P.MsgA7Result.sieves)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+MsgA7Result::_internal_sieves() const {
+  return sieves_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+MsgA7Result::sieves() const {
+  // @@protoc_insertion_point(field_list:A7U7P.MsgA7Result.sieves)
+  return _internal_sieves();
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+MsgA7Result::_internal_mutable_sieves() {
+  return &sieves_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+MsgA7Result::mutable_sieves() {
+  // @@protoc_insertion_point(field_mutable_list:A7U7P.MsgA7Result.sieves)
+  return _internal_mutable_sieves();
+}
+
+// repeated int32 win_index = 1;
+inline int MsgA7Result::_internal_win_index_size() const {
+  return win_index_.size();
+}
+inline int MsgA7Result::win_index_size() const {
+  return _internal_win_index_size();
+}
+inline void MsgA7Result::clear_win_index() {
+  win_index_.Clear();
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7Result::_internal_win_index(int index) const {
+  return win_index_.Get(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7Result::win_index(int index) const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgA7Result.win_index)
+  return _internal_win_index(index);
+}
+inline void MsgA7Result::set_win_index(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  win_index_.Set(index, value);
+  // @@protoc_insertion_point(field_set:A7U7P.MsgA7Result.win_index)
+}
+inline void MsgA7Result::_internal_add_win_index(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  win_index_.Add(value);
+}
+inline void MsgA7Result::add_win_index(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_win_index(value);
+  // @@protoc_insertion_point(field_add:A7U7P.MsgA7Result.win_index)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+MsgA7Result::_internal_win_index() const {
   return win_index_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgResult::win_index() const {
-  // @@protoc_insertion_point(field_get:A7U7P.MsgResult.win_index)
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+MsgA7Result::win_index() const {
+  // @@protoc_insertion_point(field_list:A7U7P.MsgA7Result.win_index)
   return _internal_win_index();
 }
-inline void MsgResult::_internal_set_win_index(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  win_index_ = value;
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+MsgA7Result::_internal_mutable_win_index() {
+  return &win_index_;
 }
-inline void MsgResult::set_win_index(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_win_index(value);
-  // @@protoc_insertion_point(field_set:A7U7P.MsgResult.win_index)
-}
-
-// .A7U7P.A7BankerInfo banker_info = 2;
-inline bool MsgResult::_internal_has_banker_info() const {
-  return this != internal_default_instance() && banker_info_ != nullptr;
-}
-inline bool MsgResult::has_banker_info() const {
-  return _internal_has_banker_info();
-}
-inline void MsgResult::clear_banker_info() {
-  if (GetArena() == nullptr && banker_info_ != nullptr) {
-    delete banker_info_;
-  }
-  banker_info_ = nullptr;
-}
-inline const ::A7U7P::A7BankerInfo& MsgResult::_internal_banker_info() const {
-  const ::A7U7P::A7BankerInfo* p = banker_info_;
-  return p != nullptr ? *p : reinterpret_cast<const ::A7U7P::A7BankerInfo&>(
-      ::A7U7P::_A7BankerInfo_default_instance_);
-}
-inline const ::A7U7P::A7BankerInfo& MsgResult::banker_info() const {
-  // @@protoc_insertion_point(field_get:A7U7P.MsgResult.banker_info)
-  return _internal_banker_info();
-}
-inline void MsgResult::unsafe_arena_set_allocated_banker_info(
-    ::A7U7P::A7BankerInfo* banker_info) {
-  if (GetArena() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(banker_info_);
-  }
-  banker_info_ = banker_info;
-  if (banker_info) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:A7U7P.MsgResult.banker_info)
-}
-inline ::A7U7P::A7BankerInfo* MsgResult::release_banker_info() {
-  
-  ::A7U7P::A7BankerInfo* temp = banker_info_;
-  banker_info_ = nullptr;
-  if (GetArena() != nullptr) {
-    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
-  }
-  return temp;
-}
-inline ::A7U7P::A7BankerInfo* MsgResult::unsafe_arena_release_banker_info() {
-  // @@protoc_insertion_point(field_release:A7U7P.MsgResult.banker_info)
-  
-  ::A7U7P::A7BankerInfo* temp = banker_info_;
-  banker_info_ = nullptr;
-  return temp;
-}
-inline ::A7U7P::A7BankerInfo* MsgResult::_internal_mutable_banker_info() {
-  
-  if (banker_info_ == nullptr) {
-    auto* p = CreateMaybeMessage<::A7U7P::A7BankerInfo>(GetArena());
-    banker_info_ = p;
-  }
-  return banker_info_;
-}
-inline ::A7U7P::A7BankerInfo* MsgResult::mutable_banker_info() {
-  // @@protoc_insertion_point(field_mutable:A7U7P.MsgResult.banker_info)
-  return _internal_mutable_banker_info();
-}
-inline void MsgResult::set_allocated_banker_info(::A7U7P::A7BankerInfo* banker_info) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
-  if (message_arena == nullptr) {
-    delete banker_info_;
-  }
-  if (banker_info) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(banker_info);
-    if (message_arena != submessage_arena) {
-      banker_info = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, banker_info, submessage_arena);
-    }
-    
-  } else {
-    
-  }
-  banker_info_ = banker_info;
-  // @@protoc_insertion_point(field_set_allocated:A7U7P.MsgResult.banker_info)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+MsgA7Result::mutable_win_index() {
+  // @@protoc_insertion_point(field_mutable_list:A7U7P.MsgA7Result.win_index)
+  return _internal_mutable_win_index();
 }
 
-// repeated .A7U7P.MsgWinMsg win_msg = 3;
-inline int MsgResult::_internal_win_msg_size() const {
+// repeated .A7U7P.MsgA7WinMsg win_msg = 3;
+inline int MsgA7Result::_internal_win_msg_size() const {
   return win_msg_.size();
 }
-inline int MsgResult::win_msg_size() const {
+inline int MsgA7Result::win_msg_size() const {
   return _internal_win_msg_size();
 }
-inline void MsgResult::clear_win_msg() {
+inline void MsgA7Result::clear_win_msg() {
   win_msg_.Clear();
 }
-inline ::A7U7P::MsgWinMsg* MsgResult::mutable_win_msg(int index) {
-  // @@protoc_insertion_point(field_mutable:A7U7P.MsgResult.win_msg)
+inline ::A7U7P::MsgA7WinMsg* MsgA7Result::mutable_win_msg(int index) {
+  // @@protoc_insertion_point(field_mutable:A7U7P.MsgA7Result.win_msg)
   return win_msg_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::MsgWinMsg >*
-MsgResult::mutable_win_msg() {
-  // @@protoc_insertion_point(field_mutable_list:A7U7P.MsgResult.win_msg)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::MsgA7WinMsg >*
+MsgA7Result::mutable_win_msg() {
+  // @@protoc_insertion_point(field_mutable_list:A7U7P.MsgA7Result.win_msg)
   return &win_msg_;
 }
-inline const ::A7U7P::MsgWinMsg& MsgResult::_internal_win_msg(int index) const {
+inline const ::A7U7P::MsgA7WinMsg& MsgA7Result::_internal_win_msg(int index) const {
   return win_msg_.Get(index);
 }
-inline const ::A7U7P::MsgWinMsg& MsgResult::win_msg(int index) const {
-  // @@protoc_insertion_point(field_get:A7U7P.MsgResult.win_msg)
+inline const ::A7U7P::MsgA7WinMsg& MsgA7Result::win_msg(int index) const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgA7Result.win_msg)
   return _internal_win_msg(index);
 }
-inline ::A7U7P::MsgWinMsg* MsgResult::_internal_add_win_msg() {
+inline ::A7U7P::MsgA7WinMsg* MsgA7Result::_internal_add_win_msg() {
   return win_msg_.Add();
 }
-inline ::A7U7P::MsgWinMsg* MsgResult::add_win_msg() {
-  // @@protoc_insertion_point(field_add:A7U7P.MsgResult.win_msg)
+inline ::A7U7P::MsgA7WinMsg* MsgA7Result::add_win_msg() {
+  // @@protoc_insertion_point(field_add:A7U7P.MsgA7Result.win_msg)
   return _internal_add_win_msg();
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::MsgWinMsg >&
-MsgResult::win_msg() const {
-  // @@protoc_insertion_point(field_list:A7U7P.MsgResult.win_msg)
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::MsgA7WinMsg >&
+MsgA7Result::win_msg() const {
+  // @@protoc_insertion_point(field_list:A7U7P.MsgA7Result.win_msg)
   return win_msg_;
 }
 
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
-// -------------------------------------------------------------------
-
-// -------------------------------------------------------------------
-
-// -------------------------------------------------------------------
-
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
