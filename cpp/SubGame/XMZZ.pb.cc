@@ -23,7 +23,24 @@ class CMD_3D_SC_ResultDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CMD_3D_SC_Result> _instance;
 } _CMD_3D_SC_Result_default_instance_;
+class CMD_3D_SC_JackpotDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CMD_3D_SC_Jackpot> _instance;
+} _CMD_3D_SC_Jackpot_default_instance_;
 }  // namespace XMZZ
+static void InitDefaultsscc_info_CMD_3D_SC_Jackpot_XMZZ_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::XMZZ::_CMD_3D_SC_Jackpot_default_instance_;
+    new (ptr) ::XMZZ::CMD_3D_SC_Jackpot();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_CMD_3D_SC_Jackpot_XMZZ_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_CMD_3D_SC_Jackpot_XMZZ_2eproto}, {}};
+
 static void InitDefaultsscc_info_CMD_3D_SC_Result_XMZZ_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -50,7 +67,7 @@ static void InitDefaultsscc_info_SC_SceneInfo_XMZZ_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SC_SceneInfo_XMZZ_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SC_SceneInfo_XMZZ_2eproto}, {}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_XMZZ_2eproto[2];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_XMZZ_2eproto[3];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_XMZZ_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_XMZZ_2eproto = nullptr;
 
@@ -76,15 +93,23 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_XMZZ_2eproto::offsets[] PROTOB
   PROTOBUF_FIELD_OFFSET(::XMZZ::CMD_3D_SC_Result, win_gold_),
   PROTOBUF_FIELD_OFFSET(::XMZZ::CMD_3D_SC_Result, free_count_),
   PROTOBUF_FIELD_OFFSET(::XMZZ::CMD_3D_SC_Result, free_type_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::XMZZ::CMD_3D_SC_Jackpot, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::XMZZ::CMD_3D_SC_Jackpot, jack_pot_score_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::XMZZ::SC_SceneInfo)},
   { 11, -1, sizeof(::XMZZ::CMD_3D_SC_Result)},
+  { 21, -1, sizeof(::XMZZ::CMD_3D_SC_Jackpot)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::XMZZ::_SC_SceneInfo_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::XMZZ::_CMD_3D_SC_Result_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::XMZZ::_CMD_3D_SC_Jackpot_default_instance_),
 };
 
 const char descriptor_table_protodef_XMZZ_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -94,23 +119,25 @@ const char descriptor_table_protodef_XMZZ_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "\005 \003(\005\022\021\n\tfree_type\030\006 \001(\005\"k\n\020CMD_3D_SC_Re"
   "sult\022\014\n\004icon\030\001 \003(\005\022\020\n\010hit_icon\030\002 \003(\005\022\020\n\010"
   "win_gold\030\003 \001(\005\022\022\n\nfree_count\030\004 \001(\005\022\021\n\tfr"
-  "ee_type\030\005 \001(\005*e\n\nEMsgIDXMZZ\022\025\n\021SUB_CS_GA"
-  "ME_START\020\000\022\024\n\020SUB_SC_GAME_OVER\020\001\022\025\n\021SUB_"
-  "SC_SMALL_GAME\020\002\022\023\n\017SUB_SC_BET_FAIL\020\003b\006pr"
-  "oto3"
+  "ee_type\030\005 \001(\005\"+\n\021CMD_3D_SC_Jackpot\022\026\n\016ja"
+  "ck_pot_score\030\001 \001(\005*\200\001\n\nEMsgIDXMZZ\022\025\n\021SUB"
+  "_CS_GAME_START\020\000\022\024\n\020SUB_SC_GAME_OVER\020\001\022\025"
+  "\n\021SUB_SC_SMALL_GAME\020\002\022\023\n\017SUB_SC_BET_FAIL"
+  "\020\003\022\031\n\025SUB_SC_UPDATE_JACKPOT\020\004b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_XMZZ_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_XMZZ_2eproto_sccs[2] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_XMZZ_2eproto_sccs[3] = {
+  &scc_info_CMD_3D_SC_Jackpot_XMZZ_2eproto.base,
   &scc_info_CMD_3D_SC_Result_XMZZ_2eproto.base,
   &scc_info_SC_SceneInfo_XMZZ_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_XMZZ_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_XMZZ_2eproto = {
-  false, false, descriptor_table_protodef_XMZZ_2eproto, "XMZZ.proto", 364,
-  &descriptor_table_XMZZ_2eproto_once, descriptor_table_XMZZ_2eproto_sccs, descriptor_table_XMZZ_2eproto_deps, 2, 0,
+  false, false, descriptor_table_protodef_XMZZ_2eproto, "XMZZ.proto", 437,
+  &descriptor_table_XMZZ_2eproto_once, descriptor_table_XMZZ_2eproto_sccs, descriptor_table_XMZZ_2eproto_deps, 3, 0,
   schemas, file_default_instances, TableStruct_XMZZ_2eproto::offsets,
-  file_level_metadata_XMZZ_2eproto, 2, file_level_enum_descriptors_XMZZ_2eproto, file_level_service_descriptors_XMZZ_2eproto,
+  file_level_metadata_XMZZ_2eproto, 3, file_level_enum_descriptors_XMZZ_2eproto, file_level_service_descriptors_XMZZ_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -126,6 +153,7 @@ bool EMsgIDXMZZ_IsValid(int value) {
     case 1:
     case 2:
     case 3:
+    case 4:
       return true;
     default:
       return false;
@@ -816,6 +844,200 @@ void CMD_3D_SC_Result::InternalSwap(CMD_3D_SC_Result* other) {
 }
 
 
+// ===================================================================
+
+class CMD_3D_SC_Jackpot::_Internal {
+ public:
+};
+
+CMD_3D_SC_Jackpot::CMD_3D_SC_Jackpot(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:XMZZ.CMD_3D_SC_Jackpot)
+}
+CMD_3D_SC_Jackpot::CMD_3D_SC_Jackpot(const CMD_3D_SC_Jackpot& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  jack_pot_score_ = from.jack_pot_score_;
+  // @@protoc_insertion_point(copy_constructor:XMZZ.CMD_3D_SC_Jackpot)
+}
+
+void CMD_3D_SC_Jackpot::SharedCtor() {
+  jack_pot_score_ = 0;
+}
+
+CMD_3D_SC_Jackpot::~CMD_3D_SC_Jackpot() {
+  // @@protoc_insertion_point(destructor:XMZZ.CMD_3D_SC_Jackpot)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void CMD_3D_SC_Jackpot::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void CMD_3D_SC_Jackpot::ArenaDtor(void* object) {
+  CMD_3D_SC_Jackpot* _this = reinterpret_cast< CMD_3D_SC_Jackpot* >(object);
+  (void)_this;
+}
+void CMD_3D_SC_Jackpot::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void CMD_3D_SC_Jackpot::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const CMD_3D_SC_Jackpot& CMD_3D_SC_Jackpot::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_CMD_3D_SC_Jackpot_XMZZ_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void CMD_3D_SC_Jackpot::Clear() {
+// @@protoc_insertion_point(message_clear_start:XMZZ.CMD_3D_SC_Jackpot)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  jack_pot_score_ = 0;
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* CMD_3D_SC_Jackpot::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 jack_pot_score = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          jack_pot_score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* CMD_3D_SC_Jackpot::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:XMZZ.CMD_3D_SC_Jackpot)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 jack_pot_score = 1;
+  if (this->jack_pot_score() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_jack_pot_score(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:XMZZ.CMD_3D_SC_Jackpot)
+  return target;
+}
+
+size_t CMD_3D_SC_Jackpot::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:XMZZ.CMD_3D_SC_Jackpot)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // int32 jack_pot_score = 1;
+  if (this->jack_pot_score() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_jack_pot_score());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void CMD_3D_SC_Jackpot::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:XMZZ.CMD_3D_SC_Jackpot)
+  GOOGLE_DCHECK_NE(&from, this);
+  const CMD_3D_SC_Jackpot* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CMD_3D_SC_Jackpot>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:XMZZ.CMD_3D_SC_Jackpot)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:XMZZ.CMD_3D_SC_Jackpot)
+    MergeFrom(*source);
+  }
+}
+
+void CMD_3D_SC_Jackpot::MergeFrom(const CMD_3D_SC_Jackpot& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:XMZZ.CMD_3D_SC_Jackpot)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.jack_pot_score() != 0) {
+    _internal_set_jack_pot_score(from._internal_jack_pot_score());
+  }
+}
+
+void CMD_3D_SC_Jackpot::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:XMZZ.CMD_3D_SC_Jackpot)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void CMD_3D_SC_Jackpot::CopyFrom(const CMD_3D_SC_Jackpot& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:XMZZ.CMD_3D_SC_Jackpot)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool CMD_3D_SC_Jackpot::IsInitialized() const {
+  return true;
+}
+
+void CMD_3D_SC_Jackpot::InternalSwap(CMD_3D_SC_Jackpot* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  swap(jack_pot_score_, other->jack_pot_score_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata CMD_3D_SC_Jackpot::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace XMZZ
 PROTOBUF_NAMESPACE_OPEN
@@ -824,6 +1046,9 @@ template<> PROTOBUF_NOINLINE ::XMZZ::SC_SceneInfo* Arena::CreateMaybeMessage< ::
 }
 template<> PROTOBUF_NOINLINE ::XMZZ::CMD_3D_SC_Result* Arena::CreateMaybeMessage< ::XMZZ::CMD_3D_SC_Result >(Arena* arena) {
   return Arena::CreateMessageInternal< ::XMZZ::CMD_3D_SC_Result >(arena);
+}
+template<> PROTOBUF_NOINLINE ::XMZZ::CMD_3D_SC_Jackpot* Arena::CreateMaybeMessage< ::XMZZ::CMD_3D_SC_Jackpot >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::XMZZ::CMD_3D_SC_Jackpot >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

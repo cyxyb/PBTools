@@ -47,7 +47,7 @@ struct TableStruct_XMZZ_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[2]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[3]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -55,6 +55,9 @@ struct TableStruct_XMZZ_2eproto {
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_XMZZ_2eproto;
 namespace XMZZ {
+class CMD_3D_SC_Jackpot;
+class CMD_3D_SC_JackpotDefaultTypeInternal;
+extern CMD_3D_SC_JackpotDefaultTypeInternal _CMD_3D_SC_Jackpot_default_instance_;
 class CMD_3D_SC_Result;
 class CMD_3D_SC_ResultDefaultTypeInternal;
 extern CMD_3D_SC_ResultDefaultTypeInternal _CMD_3D_SC_Result_default_instance_;
@@ -63,6 +66,7 @@ class SC_SceneInfoDefaultTypeInternal;
 extern SC_SceneInfoDefaultTypeInternal _SC_SceneInfo_default_instance_;
 }  // namespace XMZZ
 PROTOBUF_NAMESPACE_OPEN
+template<> ::XMZZ::CMD_3D_SC_Jackpot* Arena::CreateMaybeMessage<::XMZZ::CMD_3D_SC_Jackpot>(Arena*);
 template<> ::XMZZ::CMD_3D_SC_Result* Arena::CreateMaybeMessage<::XMZZ::CMD_3D_SC_Result>(Arena*);
 template<> ::XMZZ::SC_SceneInfo* Arena::CreateMaybeMessage<::XMZZ::SC_SceneInfo>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
@@ -73,12 +77,13 @@ enum EMsgIDXMZZ : int {
   SUB_SC_GAME_OVER = 1,
   SUB_SC_SMALL_GAME = 2,
   SUB_SC_BET_FAIL = 3,
+  SUB_SC_UPDATE_JACKPOT = 4,
   EMsgIDXMZZ_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDXMZZ_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDXMZZ_IsValid(int value);
 constexpr EMsgIDXMZZ EMsgIDXMZZ_MIN = SUB_CS_GAME_START;
-constexpr EMsgIDXMZZ EMsgIDXMZZ_MAX = SUB_SC_BET_FAIL;
+constexpr EMsgIDXMZZ EMsgIDXMZZ_MAX = SUB_SC_UPDATE_JACKPOT;
 constexpr int EMsgIDXMZZ_ARRAYSIZE = EMsgIDXMZZ_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDXMZZ_descriptor();
@@ -522,6 +527,142 @@ class CMD_3D_SC_Result PROTOBUF_FINAL :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_XMZZ_2eproto;
 };
+// -------------------------------------------------------------------
+
+class CMD_3D_SC_Jackpot PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:XMZZ.CMD_3D_SC_Jackpot) */ {
+ public:
+  inline CMD_3D_SC_Jackpot() : CMD_3D_SC_Jackpot(nullptr) {}
+  virtual ~CMD_3D_SC_Jackpot();
+
+  CMD_3D_SC_Jackpot(const CMD_3D_SC_Jackpot& from);
+  CMD_3D_SC_Jackpot(CMD_3D_SC_Jackpot&& from) noexcept
+    : CMD_3D_SC_Jackpot() {
+    *this = ::std::move(from);
+  }
+
+  inline CMD_3D_SC_Jackpot& operator=(const CMD_3D_SC_Jackpot& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CMD_3D_SC_Jackpot& operator=(CMD_3D_SC_Jackpot&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const CMD_3D_SC_Jackpot& default_instance();
+
+  static inline const CMD_3D_SC_Jackpot* internal_default_instance() {
+    return reinterpret_cast<const CMD_3D_SC_Jackpot*>(
+               &_CMD_3D_SC_Jackpot_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    2;
+
+  friend void swap(CMD_3D_SC_Jackpot& a, CMD_3D_SC_Jackpot& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CMD_3D_SC_Jackpot* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CMD_3D_SC_Jackpot* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline CMD_3D_SC_Jackpot* New() const final {
+    return CreateMaybeMessage<CMD_3D_SC_Jackpot>(nullptr);
+  }
+
+  CMD_3D_SC_Jackpot* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<CMD_3D_SC_Jackpot>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const CMD_3D_SC_Jackpot& from);
+  void MergeFrom(const CMD_3D_SC_Jackpot& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CMD_3D_SC_Jackpot* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "XMZZ.CMD_3D_SC_Jackpot";
+  }
+  protected:
+  explicit CMD_3D_SC_Jackpot(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_XMZZ_2eproto);
+    return ::descriptor_table_XMZZ_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kJackPotScoreFieldNumber = 1,
+  };
+  // int32 jack_pot_score = 1;
+  void clear_jack_pot_score();
+  ::PROTOBUF_NAMESPACE_ID::int32 jack_pot_score() const;
+  void set_jack_pot_score(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_jack_pot_score() const;
+  void _internal_set_jack_pot_score(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:XMZZ.CMD_3D_SC_Jackpot)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 jack_pot_score_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_XMZZ_2eproto;
+};
 // ===================================================================
 
 
@@ -865,9 +1006,35 @@ inline void CMD_3D_SC_Result::set_free_type(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:XMZZ.CMD_3D_SC_Result.free_type)
 }
 
+// -------------------------------------------------------------------
+
+// CMD_3D_SC_Jackpot
+
+// int32 jack_pot_score = 1;
+inline void CMD_3D_SC_Jackpot::clear_jack_pot_score() {
+  jack_pot_score_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_3D_SC_Jackpot::_internal_jack_pot_score() const {
+  return jack_pot_score_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CMD_3D_SC_Jackpot::jack_pot_score() const {
+  // @@protoc_insertion_point(field_get:XMZZ.CMD_3D_SC_Jackpot.jack_pot_score)
+  return _internal_jack_pot_score();
+}
+inline void CMD_3D_SC_Jackpot::_internal_set_jack_pot_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  jack_pot_score_ = value;
+}
+inline void CMD_3D_SC_Jackpot::set_jack_pot_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_jack_pot_score(value);
+  // @@protoc_insertion_point(field_set:XMZZ.CMD_3D_SC_Jackpot.jack_pot_score)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 

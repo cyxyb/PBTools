@@ -5,9 +5,10 @@ package XMZZ;
 enum EMsgIDXMZZ
 {
 	SUB_CS_GAME_START					= 0; 		//开始游戏
-	SUB_SC_GAME_OVER					= 1;		//游戏结束
-	SUB_SC_SMALL_GAME					= 2;		//小游戏返回
+	SUB_SC_GAME_OVER					= 1;		//游戏结束	CMD_3D_SC_Result
+	SUB_SC_SMALL_GAME					= 2;		//小游戏返回 没看到用
 	SUB_SC_BET_FAIL						= 3;    	//下注失败
+	SUB_SC_UPDATE_JACKPOT				= 4;    	//奖池分数 CMD_3D_SC_Jackpot
 }		
 		
 //场景消息		
@@ -30,3 +31,9 @@ message CMD_3D_SC_Result
 	int32			free_count			= 4;		//免费次数
 	int32			free_type			= 5;		//赢得金币
 };
+
+//更新奖池
+message CMD_3D_SC_Jackpot
+{
+	int32			jack_pot_score		=1;			//奖池分数
+}
