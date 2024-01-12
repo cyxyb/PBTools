@@ -6585,16 +6585,16 @@ class MsgDBWriteScore PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kGameDetailsFieldNumber = 5,
+    kGameDetailsFieldNumber = 8,
     kUserIdFieldNumber = 1,
     kBetFieldNumber = 2,
     kScoreFieldNumber = 3,
     kIsUpRankFieldNumber = 4,
-    kTableIdFieldNumber = 6,
-    kTaxScoreFieldNumber = 8,
-    kTableNoFieldNumber = 7,
+    kTableIdFieldNumber = 5,
+    kTaxScoreFieldNumber = 7,
+    kTableNoFieldNumber = 6,
   };
-  // string game_details = 5;
+  // string game_details = 8;
   void clear_game_details();
   const std::string& game_details() const;
   void set_game_details(const std::string& value);
@@ -6646,7 +6646,7 @@ class MsgDBWriteScore PROTOBUF_FINAL :
   void _internal_set_is_up_rank(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 table_id = 6;
+  // int32 table_id = 5;
   void clear_table_id();
   ::PROTOBUF_NAMESPACE_ID::int32 table_id() const;
   void set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -6655,7 +6655,7 @@ class MsgDBWriteScore PROTOBUF_FINAL :
   void _internal_set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int64 tax_score = 8;
+  // int64 tax_score = 7;
   void clear_tax_score();
   ::PROTOBUF_NAMESPACE_ID::int64 tax_score() const;
   void set_tax_score(::PROTOBUF_NAMESPACE_ID::int64 value);
@@ -6664,7 +6664,7 @@ class MsgDBWriteScore PROTOBUF_FINAL :
   void _internal_set_tax_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int32 table_no = 7;
+  // int32 table_no = 6;
   void clear_table_no();
   ::PROTOBUF_NAMESPACE_ID::int32 table_no() const;
   void set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -16436,7 +16436,67 @@ inline void MsgDBWriteScore::set_is_up_rank(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:MsgDBWriteScore.is_up_rank)
 }
 
-// string game_details = 5;
+// int32 table_id = 5;
+inline void MsgDBWriteScore::clear_table_id() {
+  table_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScore::_internal_table_id() const {
+  return table_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScore::table_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBWriteScore.table_id)
+  return _internal_table_id();
+}
+inline void MsgDBWriteScore::_internal_set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  table_id_ = value;
+}
+inline void MsgDBWriteScore::set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_table_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBWriteScore.table_id)
+}
+
+// int32 table_no = 6;
+inline void MsgDBWriteScore::clear_table_no() {
+  table_no_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScore::_internal_table_no() const {
+  return table_no_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScore::table_no() const {
+  // @@protoc_insertion_point(field_get:MsgDBWriteScore.table_no)
+  return _internal_table_no();
+}
+inline void MsgDBWriteScore::_internal_set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  table_no_ = value;
+}
+inline void MsgDBWriteScore::set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_table_no(value);
+  // @@protoc_insertion_point(field_set:MsgDBWriteScore.table_no)
+}
+
+// int64 tax_score = 7;
+inline void MsgDBWriteScore::clear_tax_score() {
+  tax_score_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBWriteScore::_internal_tax_score() const {
+  return tax_score_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBWriteScore::tax_score() const {
+  // @@protoc_insertion_point(field_get:MsgDBWriteScore.tax_score)
+  return _internal_tax_score();
+}
+inline void MsgDBWriteScore::_internal_set_tax_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  tax_score_ = value;
+}
+inline void MsgDBWriteScore::set_tax_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_tax_score(value);
+  // @@protoc_insertion_point(field_set:MsgDBWriteScore.tax_score)
+}
+
+// string game_details = 8;
 inline void MsgDBWriteScore::clear_game_details() {
   game_details_.ClearToEmpty();
 }
@@ -16495,66 +16555,6 @@ inline void MsgDBWriteScore::set_allocated_game_details(std::string* game_detail
   game_details_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), game_details,
       GetArena());
   // @@protoc_insertion_point(field_set_allocated:MsgDBWriteScore.game_details)
-}
-
-// int32 table_id = 6;
-inline void MsgDBWriteScore::clear_table_id() {
-  table_id_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScore::_internal_table_id() const {
-  return table_id_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScore::table_id() const {
-  // @@protoc_insertion_point(field_get:MsgDBWriteScore.table_id)
-  return _internal_table_id();
-}
-inline void MsgDBWriteScore::_internal_set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  table_id_ = value;
-}
-inline void MsgDBWriteScore::set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_table_id(value);
-  // @@protoc_insertion_point(field_set:MsgDBWriteScore.table_id)
-}
-
-// int32 table_no = 7;
-inline void MsgDBWriteScore::clear_table_no() {
-  table_no_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScore::_internal_table_no() const {
-  return table_no_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScore::table_no() const {
-  // @@protoc_insertion_point(field_get:MsgDBWriteScore.table_no)
-  return _internal_table_no();
-}
-inline void MsgDBWriteScore::_internal_set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  table_no_ = value;
-}
-inline void MsgDBWriteScore::set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_table_no(value);
-  // @@protoc_insertion_point(field_set:MsgDBWriteScore.table_no)
-}
-
-// int64 tax_score = 8;
-inline void MsgDBWriteScore::clear_tax_score() {
-  tax_score_ = PROTOBUF_LONGLONG(0);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBWriteScore::_internal_tax_score() const {
-  return tax_score_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBWriteScore::tax_score() const {
-  // @@protoc_insertion_point(field_get:MsgDBWriteScore.tax_score)
-  return _internal_tax_score();
-}
-inline void MsgDBWriteScore::_internal_set_tax_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  
-  tax_score_ = value;
-}
-inline void MsgDBWriteScore::set_tax_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_tax_score(value);
-  // @@protoc_insertion_point(field_set:MsgDBWriteScore.tax_score)
 }
 
 // -------------------------------------------------------------------
