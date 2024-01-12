@@ -68,31 +68,31 @@ template<> ::WSZS::SC_SceneInfo* Arena::CreateMaybeMessage<::WSZS::SC_SceneInfo>
 PROTOBUF_NAMESPACE_CLOSE
 namespace WSZS {
 
-enum EMsgIDTGG : int {
+enum EMsgIDWSZS : int {
   SUB_CS_GAME_START = 0,
   SUB_SC_START_GAME = 1,
   SUB_SC_BET_ERR = 2,
-  EMsgIDTGG_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
-  EMsgIDTGG_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
+  EMsgIDWSZS_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
+  EMsgIDWSZS_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
-bool EMsgIDTGG_IsValid(int value);
-constexpr EMsgIDTGG EMsgIDTGG_MIN = SUB_CS_GAME_START;
-constexpr EMsgIDTGG EMsgIDTGG_MAX = SUB_SC_BET_ERR;
-constexpr int EMsgIDTGG_ARRAYSIZE = EMsgIDTGG_MAX + 1;
+bool EMsgIDWSZS_IsValid(int value);
+constexpr EMsgIDWSZS EMsgIDWSZS_MIN = SUB_CS_GAME_START;
+constexpr EMsgIDWSZS EMsgIDWSZS_MAX = SUB_SC_BET_ERR;
+constexpr int EMsgIDWSZS_ARRAYSIZE = EMsgIDWSZS_MAX + 1;
 
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDTGG_descriptor();
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDWSZS_descriptor();
 template<typename T>
-inline const std::string& EMsgIDTGG_Name(T enum_t_value) {
-  static_assert(::std::is_same<T, EMsgIDTGG>::value ||
+inline const std::string& EMsgIDWSZS_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, EMsgIDWSZS>::value ||
     ::std::is_integral<T>::value,
-    "Incorrect type passed to function EMsgIDTGG_Name.");
+    "Incorrect type passed to function EMsgIDWSZS_Name.");
   return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
-    EMsgIDTGG_descriptor(), enum_t_value);
+    EMsgIDWSZS_descriptor(), enum_t_value);
 }
-inline bool EMsgIDTGG_Parse(
-    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, EMsgIDTGG* value) {
-  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<EMsgIDTGG>(
-    EMsgIDTGG_descriptor(), name, value);
+inline bool EMsgIDWSZS_Parse(
+    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, EMsgIDWSZS* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<EMsgIDWSZS>(
+    EMsgIDWSZS_descriptor(), name, value);
 }
 // ===================================================================
 
@@ -917,10 +917,10 @@ CMD_3D_SC_Result::mutable_mian_ju_count() {
 
 PROTOBUF_NAMESPACE_OPEN
 
-template <> struct is_proto_enum< ::WSZS::EMsgIDTGG> : ::std::true_type {};
+template <> struct is_proto_enum< ::WSZS::EMsgIDWSZS> : ::std::true_type {};
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::WSZS::EMsgIDTGG>() {
-  return ::WSZS::EMsgIDTGG_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< ::WSZS::EMsgIDWSZS>() {
+  return ::WSZS::EMsgIDWSZS_descriptor();
 }
 
 PROTOBUF_NAMESPACE_CLOSE

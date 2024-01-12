@@ -30,12 +30,12 @@ namespace WSZS {
             "dW50GAUgAygFIoUBChBDTURfM0RfU0NfUmVzdWx0EgwKBGljb24YASADKAUS",
             "EAoIaGl0X2ljb24YAiADKAUSEAoId2luX2dvbGQYAyABKAUSFAoMbWlhbl9q",
             "dV9nb2xkGAQgASgFEhIKCmZyZWVfY291bnQYBSABKAUSFQoNbWlhbl9qdV9j",
-            "b3VudBgGIAMoBSpNCglFTXNnSURUR0cSFQoRU1VCX0NTX0dBTUVfU1RBUlQQ",
-            "ABIVChFTVUJfU0NfU1RBUlRfR0FNRRABEhIKDlNVQl9TQ19CRVRfRVJSEAJi",
-            "BnByb3RvMw=="));
+            "b3VudBgGIAMoBSpOCgpFTXNnSURXU1pTEhUKEVNVQl9DU19HQU1FX1NUQVJU",
+            "EAASFQoRU1VCX1NDX1NUQVJUX0dBTUUQARISCg5TVUJfU0NfQkVUX0VSUhAC",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::WSZS.EMsgIDTGG), }, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::WSZS.EMsgIDWSZS), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::WSZS.SC_SceneInfo), global::WSZS.SC_SceneInfo.Parser, new[]{ "FreeCount", "CurrentBet", "BetCount", "Bet", "MianJuCount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::WSZS.CMD_3D_SC_Result), global::WSZS.CMD_3D_SC_Result.Parser, new[]{ "Icon", "HitIcon", "WinGold", "MianJuGold", "FreeCount", "MianJuCount" }, null, null, null, null)
           }));
@@ -44,7 +44,7 @@ namespace WSZS {
 
   }
   #region Enums
-  public enum EMsgIDTGG {
+  public enum EMsgIDWSZS {
     /// <summary>
     ///开始游戏
     /// </summary>

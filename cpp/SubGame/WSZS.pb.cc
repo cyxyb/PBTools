@@ -94,9 +94,9 @@ const char descriptor_table_protodef_WSZS_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "ount\030\005 \003(\005\"\205\001\n\020CMD_3D_SC_Result\022\014\n\004icon\030"
   "\001 \003(\005\022\020\n\010hit_icon\030\002 \003(\005\022\020\n\010win_gold\030\003 \001("
   "\005\022\024\n\014mian_ju_gold\030\004 \001(\005\022\022\n\nfree_count\030\005 "
-  "\001(\005\022\025\n\rmian_ju_count\030\006 \003(\005*M\n\tEMsgIDTGG\022"
-  "\025\n\021SUB_CS_GAME_START\020\000\022\025\n\021SUB_SC_START_G"
-  "AME\020\001\022\022\n\016SUB_SC_BET_ERR\020\002b\006proto3"
+  "\001(\005\022\025\n\rmian_ju_count\030\006 \003(\005*N\n\nEMsgIDWSZS"
+  "\022\025\n\021SUB_CS_GAME_START\020\000\022\025\n\021SUB_SC_START_"
+  "GAME\020\001\022\022\n\016SUB_SC_BET_ERR\020\002b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_WSZS_2eproto_deps[1] = {
 };
@@ -106,7 +106,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_WSZ
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_WSZS_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_WSZS_2eproto = {
-  false, false, descriptor_table_protodef_WSZS_2eproto, "WSZS.proto", 353,
+  false, false, descriptor_table_protodef_WSZS_2eproto, "WSZS.proto", 354,
   &descriptor_table_WSZS_2eproto_once, descriptor_table_WSZS_2eproto_sccs, descriptor_table_WSZS_2eproto_deps, 2, 0,
   schemas, file_default_instances, TableStruct_WSZS_2eproto::offsets,
   file_level_metadata_WSZS_2eproto, 2, file_level_enum_descriptors_WSZS_2eproto, file_level_service_descriptors_WSZS_2eproto,
@@ -115,11 +115,11 @@ const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_WSZS_2
 // Force running AddDescriptors() at dynamic initialization time.
 static bool dynamic_init_dummy_WSZS_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_WSZS_2eproto)), true);
 namespace WSZS {
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDTGG_descriptor() {
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDWSZS_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_WSZS_2eproto);
   return file_level_enum_descriptors_WSZS_2eproto[0];
 }
-bool EMsgIDTGG_IsValid(int value) {
+bool EMsgIDWSZS_IsValid(int value) {
   switch (value) {
     case 0:
     case 1:

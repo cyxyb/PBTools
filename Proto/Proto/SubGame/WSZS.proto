@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package WSZS;
 
-enum EMsgIDTGG
+enum EMsgIDWSZS
 {
 	SUB_CS_GAME_START					= 0; 		//开始游戏
 	SUB_SC_START_GAME					= 1;		//游戏结束(CMD_3D_SC_Result)
