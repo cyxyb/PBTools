@@ -104,7 +104,7 @@ message MsgPvpTableInfo
 	string	table_name		= 2;	//桌子名称						
 	int32	chair_num		= 3;	//人数限制						
 	int32	enter_num		= 4;	//已经进入数量
-	//int64	join_limit_min	= 5;	//进入房间金币下限				
+	int32	play_num		= 5;	//已玩次数 50局结束				
 	bool	is_activate		= 6;	//是否激活				
 	bool	is_private		= 7;	//私人桌						
 	string 	password		= 8;	//密码							
@@ -134,6 +134,7 @@ message MsgPvpRoomConfig
 	int32	create_vip_limit					= 1;	//创建桌子vip限制
 	int32	chair_limit_min						= 2;	//创建桌子最小人数				
 	int32	chair_limit_max						= 3;	//创建桌子最大人数
+	int32	max_round							= 4;	//最大局数
 
 	repeated MsgPvpRoomCfgItem	para_lsit		= 11;	//桌子特性列表  		//进入房间金币下限				放在para_lsit的第一位
 }

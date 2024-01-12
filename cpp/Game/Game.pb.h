@@ -2125,10 +2125,10 @@ class MsgPvpTableInfo PROTOBUF_FINAL :
     kTableIdFieldNumber = 1,
     kChairNumFieldNumber = 3,
     kEnterNumFieldNumber = 4,
+    kPlayNumFieldNumber = 5,
     kIsActivateFieldNumber = 6,
     kIsPrivateFieldNumber = 7,
     kOwnerIdFieldNumber = 9,
-    kTableNoFieldNumber = 10,
     kValue1FieldNumber = 11,
     kValue2FieldNumber = 12,
     kValue3FieldNumber = 13,
@@ -2137,6 +2137,7 @@ class MsgPvpTableInfo PROTOBUF_FINAL :
     kValue6FieldNumber = 16,
     kValue7FieldNumber = 17,
     kValue8FieldNumber = 18,
+    kTableNoFieldNumber = 10,
   };
   // string table_name = 2;
   void clear_table_name();
@@ -2197,6 +2198,15 @@ class MsgPvpTableInfo PROTOBUF_FINAL :
   void _internal_set_enter_num(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 play_num = 5;
+  void clear_play_num();
+  ::PROTOBUF_NAMESPACE_ID::int32 play_num() const;
+  void set_play_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_play_num() const;
+  void _internal_set_play_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // bool is_activate = 6;
   void clear_is_activate();
   bool is_activate() const;
@@ -2222,15 +2232,6 @@ class MsgPvpTableInfo PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::int32 _internal_owner_id() const;
   void _internal_set_owner_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 table_no = 10;
-  void clear_table_no();
-  ::PROTOBUF_NAMESPACE_ID::int32 table_no() const;
-  void set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_table_no() const;
-  void _internal_set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int64 value1 = 11;
@@ -2305,6 +2306,15 @@ class MsgPvpTableInfo PROTOBUF_FINAL :
   void _internal_set_value8(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
+  // int32 table_no = 10;
+  void clear_table_no();
+  ::PROTOBUF_NAMESPACE_ID::int32 table_no() const;
+  void set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_table_no() const;
+  void _internal_set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgPvpTableInfo)
  private:
   class _Internal;
@@ -2317,10 +2327,10 @@ class MsgPvpTableInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 table_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_num_;
   ::PROTOBUF_NAMESPACE_ID::int32 enter_num_;
+  ::PROTOBUF_NAMESPACE_ID::int32 play_num_;
   bool is_activate_;
   bool is_private_;
   ::PROTOBUF_NAMESPACE_ID::int32 owner_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 table_no_;
   ::PROTOBUF_NAMESPACE_ID::int64 value1_;
   ::PROTOBUF_NAMESPACE_ID::int64 value2_;
   ::PROTOBUF_NAMESPACE_ID::int64 value3_;
@@ -2329,6 +2339,7 @@ class MsgPvpTableInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int64 value6_;
   ::PROTOBUF_NAMESPACE_ID::int64 value7_;
   ::PROTOBUF_NAMESPACE_ID::int64 value8_;
+  ::PROTOBUF_NAMESPACE_ID::int32 table_no_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Game_2eproto;
 };
@@ -2622,6 +2633,7 @@ class MsgPvpRoomConfig PROTOBUF_FINAL :
     kCreateVipLimitFieldNumber = 1,
     kChairLimitMinFieldNumber = 2,
     kChairLimitMaxFieldNumber = 3,
+    kMaxRoundFieldNumber = 4,
   };
   // repeated .MsgPvpRoomCfgItem para_lsit = 11;
   int para_lsit_size() const;
@@ -2668,6 +2680,15 @@ class MsgPvpRoomConfig PROTOBUF_FINAL :
   void _internal_set_chair_limit_max(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 max_round = 4;
+  void clear_max_round();
+  ::PROTOBUF_NAMESPACE_ID::int32 max_round() const;
+  void set_max_round(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_max_round() const;
+  void _internal_set_max_round(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgPvpRoomConfig)
  private:
   class _Internal;
@@ -2679,6 +2700,7 @@ class MsgPvpRoomConfig PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 create_vip_limit_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_limit_min_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_limit_max_;
+  ::PROTOBUF_NAMESPACE_ID::int32 max_round_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Game_2eproto;
 };
@@ -6028,6 +6050,26 @@ inline void MsgPvpTableInfo::set_enter_num(::PROTOBUF_NAMESPACE_ID::int32 value)
   // @@protoc_insertion_point(field_set:MsgPvpTableInfo.enter_num)
 }
 
+// int32 play_num = 5;
+inline void MsgPvpTableInfo::clear_play_num() {
+  play_num_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpTableInfo::_internal_play_num() const {
+  return play_num_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpTableInfo::play_num() const {
+  // @@protoc_insertion_point(field_get:MsgPvpTableInfo.play_num)
+  return _internal_play_num();
+}
+inline void MsgPvpTableInfo::_internal_set_play_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  play_num_ = value;
+}
+inline void MsgPvpTableInfo::set_play_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_play_num(value);
+  // @@protoc_insertion_point(field_set:MsgPvpTableInfo.play_num)
+}
+
 // bool is_activate = 6;
 inline void MsgPvpTableInfo::clear_is_activate() {
   is_activate_ = false;
@@ -6482,6 +6524,26 @@ inline void MsgPvpRoomConfig::_internal_set_chair_limit_max(::PROTOBUF_NAMESPACE
 inline void MsgPvpRoomConfig::set_chair_limit_max(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_limit_max(value);
   // @@protoc_insertion_point(field_set:MsgPvpRoomConfig.chair_limit_max)
+}
+
+// int32 max_round = 4;
+inline void MsgPvpRoomConfig::clear_max_round() {
+  max_round_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpRoomConfig::_internal_max_round() const {
+  return max_round_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpRoomConfig::max_round() const {
+  // @@protoc_insertion_point(field_get:MsgPvpRoomConfig.max_round)
+  return _internal_max_round();
+}
+inline void MsgPvpRoomConfig::_internal_set_max_round(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  max_round_ = value;
+}
+inline void MsgPvpRoomConfig::set_max_round(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_max_round(value);
+  // @@protoc_insertion_point(field_set:MsgPvpRoomConfig.max_round)
 }
 
 // repeated .MsgPvpRoomCfgItem para_lsit = 11;

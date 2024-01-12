@@ -46,40 +46,41 @@ public static partial class GameReflection {
           "YXRhGAIgAygLMgsuTXNnRGF5RGF0YSI5Cg5Nc2dRdWVyeVJlY29yZBIMCgRw",
           "YWdlGAEgASgFEgsKA251bRgCIAEoBRIMCgR0eXBlGAMgASgFIjcKDk1zZ0ph",
           "Y2twb3RJbmZvEg8KB2phY2twb3QYASABKAMSFAoMZmFrZV9qYWNrcG90GAIg",
-          "ASgDIrwCCg9Nc2dQdnBUYWJsZUluZm8SEAoIdGFibGVfaWQYASABKAUSEgoK",
+          "ASgDIs4CCg9Nc2dQdnBUYWJsZUluZm8SEAoIdGFibGVfaWQYASABKAUSEgoK",
           "dGFibGVfbmFtZRgCIAEoCRIRCgljaGFpcl9udW0YAyABKAUSEQoJZW50ZXJf",
-          "bnVtGAQgASgFEhMKC2lzX2FjdGl2YXRlGAYgASgIEhIKCmlzX3ByaXZhdGUY",
-          "ByABKAgSEAoIcGFzc3dvcmQYCCABKAkSEAoIb3duZXJfaWQYCSABKAUSEAoI",
-          "dGFibGVfbm8YCiABKAUSDgoGdmFsdWUxGAsgASgDEg4KBnZhbHVlMhgMIAEo",
-          "AxIOCgZ2YWx1ZTMYDSABKAMSDgoGdmFsdWU0GA4gASgDEg4KBnZhbHVlNRgP",
-          "IAEoAxIOCgZ2YWx1ZTYYECABKAMSDgoGdmFsdWU3GBEgASgDEg4KBnZhbHVl",
-          "OBgSIAEoAyJNChFNc2dQdnBSb29tQ2ZnSXRlbRIPCgdsYWdfa2V5GAEgASgF",
-          "EhMKC2NsaW5ldF9vcGVuGAIgASgFEhIKCnZhbHVlX2xpc3QYAyADKAUihQEK",
-          "EE1zZ1B2cFJvb21Db25maWcSGAoQY3JlYXRlX3ZpcF9saW1pdBgBIAEoBRIX",
-          "Cg9jaGFpcl9saW1pdF9taW4YAiABKAUSFwoPY2hhaXJfbGltaXRfbWF4GAMg",
-          "ASgFEiUKCXBhcmFfbHNpdBgLIAMoCzISLk1zZ1B2cFJvb21DZmdJdGVtIjcK",
-          "D01zZ1B2cFRhYmxlTGlzdBIkCgp0YWJsZV9saXN0GAEgAygLMhAuTXNnUHZw",
-          "VGFibGVJbmZvInMKEU1zZ1B2cENyZWF0ZVRhYmxlEhIKCmlzX3ByaXZhdGUY",
-          "ASABKAgSEgoKdGFibGVfbmFtZRgCIAEoCRIRCgljaGFpcl9udW0YAyABKAUS",
-          "EAoIcGFzc3dvcmQYBiABKAkSEQoJcGFyYV9sc2l0GAcgAygFIl4KFU1zZ1B2",
-          "cENyZWF0ZVRhYmxlUmVzcBIQCghyZXRfY29kZRgBIAEoBRINCgV2YWx1ZRgC",
-          "IAEoBRIkCgp0YWJsZV9pbmZvGAMgASgLMhAuTXNnUHZwVGFibGVJbmZvIkcK",
-          "D01zZ1B2cEpvaW5UYWJsZRIQCgh0YWJsZV9pZBgBIAEoBRIQCgh0YWJsZV9u",
-          "bxgCIAEoBRIQCghwYXNzd29yZBgDIAEoCSJwChNNc2dQdnBKb2luVGFibGVS",
-          "ZXNwEhAKCHJldF9jb2RlGAEgASgFEhAKCHRhYmxlX2lkGAIgASgFEhAKCHRh",
-          "YmxlX25vGAMgASgFEg8KB3VzZXJfaWQYBCABKAUSEgoKcGxheWVyX251bRgF",
-          "IAEoBSJzChZNc2dQdnBTdGFuZFVwVGFibGVSZXNwEhAKCHJldF9jb2RlGAEg",
-          "ASgFEhAKCHRhYmxlX2lkGAIgASgFEhAKCHRhYmxlX25vGAMgASgFEg8KB3Vz",
-          "ZXJfaWQYBCABKAUSEgoKcGxheWVyX251bRgFIAEoBSJOChZNc2dQdnBEZXN0",
-          "cm95VGFibGVSZXNwEhAKCHJldF9jb2RlGAEgASgFEhAKCHRhYmxlX2lkGAIg",
-          "ASgFEhAKCHRhYmxlX25vGAMgASgFInAKEk1zZ1B2cEtpY2tVc2VyUmVzcBIQ",
-          "CghyZXRfY29kZRgBIAEoBRIQCghvd25lcl9pZBgCIAEoBRISCgpvd25lcl9u",
-          "aWNrGAMgASgJEg8KB2tpY2tfaWQYBCABKAUSEQoJa2lja19uaWNrGAUgASgJ",
-          "IlUKGk1zZ1B2cFRhYmxlQ2hhbmdlT3duZXJSZXNwEhAKCHRhYmxlX2lkGAEg",
-          "ASgFEhAKCG93bmVyX2lkGAIgASgFEhMKC2lzX2FjdGl2YXRlGAMgASgIImQK",
-          "F01zZ1B2cEFjdGl2YXRlVGFibGVSZXNwEhAKCHJldF9jb2RlGAEgASgFEhAK",
-          "CHRhYmxlX2lkGAIgASgFEhAKCG93bmVyX2lkGAMgASgFEhMKC2lzX2FjdGl2",
-          "YXRlGAQgASgIYgZwcm90bzM="));
+          "bnVtGAQgASgFEhAKCHBsYXlfbnVtGAUgASgFEhMKC2lzX2FjdGl2YXRlGAYg",
+          "ASgIEhIKCmlzX3ByaXZhdGUYByABKAgSEAoIcGFzc3dvcmQYCCABKAkSEAoI",
+          "b3duZXJfaWQYCSABKAUSEAoIdGFibGVfbm8YCiABKAUSDgoGdmFsdWUxGAsg",
+          "ASgDEg4KBnZhbHVlMhgMIAEoAxIOCgZ2YWx1ZTMYDSABKAMSDgoGdmFsdWU0",
+          "GA4gASgDEg4KBnZhbHVlNRgPIAEoAxIOCgZ2YWx1ZTYYECABKAMSDgoGdmFs",
+          "dWU3GBEgASgDEg4KBnZhbHVlOBgSIAEoAyJNChFNc2dQdnBSb29tQ2ZnSXRl",
+          "bRIPCgdsYWdfa2V5GAEgASgFEhMKC2NsaW5ldF9vcGVuGAIgASgFEhIKCnZh",
+          "bHVlX2xpc3QYAyADKAUimAEKEE1zZ1B2cFJvb21Db25maWcSGAoQY3JlYXRl",
+          "X3ZpcF9saW1pdBgBIAEoBRIXCg9jaGFpcl9saW1pdF9taW4YAiABKAUSFwoP",
+          "Y2hhaXJfbGltaXRfbWF4GAMgASgFEhEKCW1heF9yb3VuZBgEIAEoBRIlCglw",
+          "YXJhX2xzaXQYCyADKAsyEi5Nc2dQdnBSb29tQ2ZnSXRlbSI3Cg9Nc2dQdnBU",
+          "YWJsZUxpc3QSJAoKdGFibGVfbGlzdBgBIAMoCzIQLk1zZ1B2cFRhYmxlSW5m",
+          "byJzChFNc2dQdnBDcmVhdGVUYWJsZRISCgppc19wcml2YXRlGAEgASgIEhIK",
+          "CnRhYmxlX25hbWUYAiABKAkSEQoJY2hhaXJfbnVtGAMgASgFEhAKCHBhc3N3",
+          "b3JkGAYgASgJEhEKCXBhcmFfbHNpdBgHIAMoBSJeChVNc2dQdnBDcmVhdGVU",
+          "YWJsZVJlc3ASEAoIcmV0X2NvZGUYASABKAUSDQoFdmFsdWUYAiABKAUSJAoK",
+          "dGFibGVfaW5mbxgDIAEoCzIQLk1zZ1B2cFRhYmxlSW5mbyJHCg9Nc2dQdnBK",
+          "b2luVGFibGUSEAoIdGFibGVfaWQYASABKAUSEAoIdGFibGVfbm8YAiABKAUS",
+          "EAoIcGFzc3dvcmQYAyABKAkicAoTTXNnUHZwSm9pblRhYmxlUmVzcBIQCghy",
+          "ZXRfY29kZRgBIAEoBRIQCgh0YWJsZV9pZBgCIAEoBRIQCgh0YWJsZV9ubxgD",
+          "IAEoBRIPCgd1c2VyX2lkGAQgASgFEhIKCnBsYXllcl9udW0YBSABKAUicwoW",
+          "TXNnUHZwU3RhbmRVcFRhYmxlUmVzcBIQCghyZXRfY29kZRgBIAEoBRIQCgh0",
+          "YWJsZV9pZBgCIAEoBRIQCgh0YWJsZV9ubxgDIAEoBRIPCgd1c2VyX2lkGAQg",
+          "ASgFEhIKCnBsYXllcl9udW0YBSABKAUiTgoWTXNnUHZwRGVzdHJveVRhYmxl",
+          "UmVzcBIQCghyZXRfY29kZRgBIAEoBRIQCgh0YWJsZV9pZBgCIAEoBRIQCgh0",
+          "YWJsZV9ubxgDIAEoBSJwChJNc2dQdnBLaWNrVXNlclJlc3ASEAoIcmV0X2Nv",
+          "ZGUYASABKAUSEAoIb3duZXJfaWQYAiABKAUSEgoKb3duZXJfbmljaxgDIAEo",
+          "CRIPCgdraWNrX2lkGAQgASgFEhEKCWtpY2tfbmljaxgFIAEoCSJVChpNc2dQ",
+          "dnBUYWJsZUNoYW5nZU93bmVyUmVzcBIQCgh0YWJsZV9pZBgBIAEoBRIQCghv",
+          "d25lcl9pZBgCIAEoBRITCgtpc19hY3RpdmF0ZRgDIAEoCCJkChdNc2dQdnBB",
+          "Y3RpdmF0ZVRhYmxlUmVzcBIQCghyZXRfY29kZRgBIAEoBRIQCgh0YWJsZV9p",
+          "ZBgCIAEoBRIQCghvd25lcl9pZBgDIAEoBRITCgtpc19hY3RpdmF0ZRgEIAEo",
+          "CGIGcHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -93,9 +94,9 @@ public static partial class GameReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTotalDayData), global::MsgTotalDayData.Parser, new[]{ "TotalNum", "DailyData" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgQueryRecord), global::MsgQueryRecord.Parser, new[]{ "Page", "Num", "Type" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgJackpotInfo), global::MsgJackpotInfo.Parser, new[]{ "Jackpot", "FakeJackpot" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpTableInfo), global::MsgPvpTableInfo.Parser, new[]{ "TableId", "TableName", "ChairNum", "EnterNum", "IsActivate", "IsPrivate", "Password", "OwnerId", "TableNo", "Value1", "Value2", "Value3", "Value4", "Value5", "Value6", "Value7", "Value8" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpTableInfo), global::MsgPvpTableInfo.Parser, new[]{ "TableId", "TableName", "ChairNum", "EnterNum", "PlayNum", "IsActivate", "IsPrivate", "Password", "OwnerId", "TableNo", "Value1", "Value2", "Value3", "Value4", "Value5", "Value6", "Value7", "Value8" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpRoomCfgItem), global::MsgPvpRoomCfgItem.Parser, new[]{ "LagKey", "ClinetOpen", "ValueList" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpRoomConfig), global::MsgPvpRoomConfig.Parser, new[]{ "CreateVipLimit", "ChairLimitMin", "ChairLimitMax", "ParaLsit" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpRoomConfig), global::MsgPvpRoomConfig.Parser, new[]{ "CreateVipLimit", "ChairLimitMin", "ChairLimitMax", "MaxRound", "ParaLsit" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpTableList), global::MsgPvpTableList.Parser, new[]{ "TableList" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpCreateTable), global::MsgPvpCreateTable.Parser, new[]{ "IsPrivate", "TableName", "ChairNum", "Password", "ParaLsit" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpCreateTableResp), global::MsgPvpCreateTableResp.Parser, new[]{ "RetCode", "Value", "TableInfo" }, null, null, null, null),
@@ -3311,6 +3312,7 @@ public sealed partial class MsgPvpTableInfo : pb::IMessage<MsgPvpTableInfo>
     tableName_ = other.tableName_;
     chairNum_ = other.chairNum_;
     enterNum_ = other.enterNum_;
+    playNum_ = other.playNum_;
     isActivate_ = other.isActivate_;
     isPrivate_ = other.isPrivate_;
     password_ = other.password_;
@@ -3388,11 +3390,25 @@ public sealed partial class MsgPvpTableInfo : pb::IMessage<MsgPvpTableInfo>
     }
   }
 
+  /// <summary>Field number for the "play_num" field.</summary>
+  public const int PlayNumFieldNumber = 5;
+  private int playNum_;
+  /// <summary>
+  ///已玩次数 50局结束				
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int PlayNum {
+    get { return playNum_; }
+    set {
+      playNum_ = value;
+    }
+  }
+
   /// <summary>Field number for the "is_activate" field.</summary>
   public const int IsActivateFieldNumber = 6;
   private bool isActivate_;
   /// <summary>
-  ///int64	join_limit_min	= 5;	//进入房间金币下限				
+  ///是否激活				
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public bool IsActivate {
@@ -3587,6 +3603,7 @@ public sealed partial class MsgPvpTableInfo : pb::IMessage<MsgPvpTableInfo>
     if (TableName != other.TableName) return false;
     if (ChairNum != other.ChairNum) return false;
     if (EnterNum != other.EnterNum) return false;
+    if (PlayNum != other.PlayNum) return false;
     if (IsActivate != other.IsActivate) return false;
     if (IsPrivate != other.IsPrivate) return false;
     if (Password != other.Password) return false;
@@ -3610,6 +3627,7 @@ public sealed partial class MsgPvpTableInfo : pb::IMessage<MsgPvpTableInfo>
     if (TableName.Length != 0) hash ^= TableName.GetHashCode();
     if (ChairNum != 0) hash ^= ChairNum.GetHashCode();
     if (EnterNum != 0) hash ^= EnterNum.GetHashCode();
+    if (PlayNum != 0) hash ^= PlayNum.GetHashCode();
     if (IsActivate != false) hash ^= IsActivate.GetHashCode();
     if (IsPrivate != false) hash ^= IsPrivate.GetHashCode();
     if (Password.Length != 0) hash ^= Password.GetHashCode();
@@ -3654,6 +3672,10 @@ public sealed partial class MsgPvpTableInfo : pb::IMessage<MsgPvpTableInfo>
     if (EnterNum != 0) {
       output.WriteRawTag(32);
       output.WriteInt32(EnterNum);
+    }
+    if (PlayNum != 0) {
+      output.WriteRawTag(40);
+      output.WriteInt32(PlayNum);
     }
     if (IsActivate != false) {
       output.WriteRawTag(48);
@@ -3732,6 +3754,10 @@ public sealed partial class MsgPvpTableInfo : pb::IMessage<MsgPvpTableInfo>
       output.WriteRawTag(32);
       output.WriteInt32(EnterNum);
     }
+    if (PlayNum != 0) {
+      output.WriteRawTag(40);
+      output.WriteInt32(PlayNum);
+    }
     if (IsActivate != false) {
       output.WriteRawTag(48);
       output.WriteBool(IsActivate);
@@ -3805,6 +3831,9 @@ public sealed partial class MsgPvpTableInfo : pb::IMessage<MsgPvpTableInfo>
     if (EnterNum != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(EnterNum);
     }
+    if (PlayNum != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(PlayNum);
+    }
     if (IsActivate != false) {
       size += 1 + 1;
     }
@@ -3866,6 +3895,9 @@ public sealed partial class MsgPvpTableInfo : pb::IMessage<MsgPvpTableInfo>
     }
     if (other.EnterNum != 0) {
       EnterNum = other.EnterNum;
+    }
+    if (other.PlayNum != 0) {
+      PlayNum = other.PlayNum;
     }
     if (other.IsActivate != false) {
       IsActivate = other.IsActivate;
@@ -3934,6 +3966,10 @@ public sealed partial class MsgPvpTableInfo : pb::IMessage<MsgPvpTableInfo>
         }
         case 32: {
           EnterNum = input.ReadInt32();
+          break;
+        }
+        case 40: {
+          PlayNum = input.ReadInt32();
           break;
         }
         case 48: {
@@ -4016,6 +4052,10 @@ public sealed partial class MsgPvpTableInfo : pb::IMessage<MsgPvpTableInfo>
         }
         case 32: {
           EnterNum = input.ReadInt32();
+          break;
+        }
+        case 40: {
+          PlayNum = input.ReadInt32();
           break;
         }
         case 48: {
@@ -4356,6 +4396,7 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
     createVipLimit_ = other.createVipLimit_;
     chairLimitMin_ = other.chairLimitMin_;
     chairLimitMax_ = other.chairLimitMax_;
+    maxRound_ = other.maxRound_;
     paraLsit_ = other.paraLsit_.Clone();
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
@@ -4407,6 +4448,20 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
     }
   }
 
+  /// <summary>Field number for the "max_round" field.</summary>
+  public const int MaxRoundFieldNumber = 4;
+  private int maxRound_;
+  /// <summary>
+  ///最大局数
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int MaxRound {
+    get { return maxRound_; }
+    set {
+      maxRound_ = value;
+    }
+  }
+
   /// <summary>Field number for the "para_lsit" field.</summary>
   public const int ParaLsitFieldNumber = 11;
   private static readonly pb::FieldCodec<global::MsgPvpRoomCfgItem> _repeated_paraLsit_codec
@@ -4436,6 +4491,7 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
     if (CreateVipLimit != other.CreateVipLimit) return false;
     if (ChairLimitMin != other.ChairLimitMin) return false;
     if (ChairLimitMax != other.ChairLimitMax) return false;
+    if (MaxRound != other.MaxRound) return false;
     if(!paraLsit_.Equals(other.paraLsit_)) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
@@ -4446,6 +4502,7 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
     if (CreateVipLimit != 0) hash ^= CreateVipLimit.GetHashCode();
     if (ChairLimitMin != 0) hash ^= ChairLimitMin.GetHashCode();
     if (ChairLimitMax != 0) hash ^= ChairLimitMax.GetHashCode();
+    if (MaxRound != 0) hash ^= MaxRound.GetHashCode();
     hash ^= paraLsit_.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
@@ -4475,6 +4532,10 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
       output.WriteRawTag(24);
       output.WriteInt32(ChairLimitMax);
     }
+    if (MaxRound != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(MaxRound);
+    }
     paraLsit_.WriteTo(output, _repeated_paraLsit_codec);
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -4497,6 +4558,10 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
       output.WriteRawTag(24);
       output.WriteInt32(ChairLimitMax);
     }
+    if (MaxRound != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(MaxRound);
+    }
     paraLsit_.WriteTo(ref output, _repeated_paraLsit_codec);
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
@@ -4515,6 +4580,9 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
     }
     if (ChairLimitMax != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChairLimitMax);
+    }
+    if (MaxRound != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(MaxRound);
     }
     size += paraLsit_.CalculateSize(_repeated_paraLsit_codec);
     if (_unknownFields != null) {
@@ -4536,6 +4604,9 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
     }
     if (other.ChairLimitMax != 0) {
       ChairLimitMax = other.ChairLimitMax;
+    }
+    if (other.MaxRound != 0) {
+      MaxRound = other.MaxRound;
     }
     paraLsit_.Add(other.paraLsit_);
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -4562,6 +4633,10 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
         }
         case 24: {
           ChairLimitMax = input.ReadInt32();
+          break;
+        }
+        case 32: {
+          MaxRound = input.ReadInt32();
           break;
         }
         case 90: {
@@ -4592,6 +4667,10 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
         }
         case 24: {
           ChairLimitMax = input.ReadInt32();
+          break;
+        }
+        case 32: {
+          MaxRound = input.ReadInt32();
           break;
         }
         case 90: {
