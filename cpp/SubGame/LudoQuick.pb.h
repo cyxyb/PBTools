@@ -47,7 +47,7 @@ struct TableStruct_LudoQuick_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[10]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[11]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -61,24 +61,27 @@ extern ChessGridDefaultTypeInternal _ChessGrid_default_instance_;
 class GameResult;
 class GameResultDefaultTypeInternal;
 extern GameResultDefaultTypeInternal _GameResult_default_instance_;
-class MsgDiceInfoResp;
-class MsgDiceInfoRespDefaultTypeInternal;
-extern MsgDiceInfoRespDefaultTypeInternal _MsgDiceInfoResp_default_instance_;
-class MsgOperateRoute;
-class MsgOperateRouteDefaultTypeInternal;
-extern MsgOperateRouteDefaultTypeInternal _MsgOperateRoute_default_instance_;
+class MsgChessInfoResp;
+class MsgChessInfoRespDefaultTypeInternal;
+extern MsgChessInfoRespDefaultTypeInternal _MsgChessInfoResp_default_instance_;
+class MsgNoticeOpResp;
+class MsgNoticeOpRespDefaultTypeInternal;
+extern MsgNoticeOpRespDefaultTypeInternal _MsgNoticeOpResp_default_instance_;
+class MsgOperateChess;
+class MsgOperateChessDefaultTypeInternal;
+extern MsgOperateChessDefaultTypeInternal _MsgOperateChess_default_instance_;
 class MsgResultResp;
 class MsgResultRespDefaultTypeInternal;
 extern MsgResultRespDefaultTypeInternal _MsgResultResp_default_instance_;
 class MsgSceneInfoResp;
 class MsgSceneInfoRespDefaultTypeInternal;
 extern MsgSceneInfoRespDefaultTypeInternal _MsgSceneInfoResp_default_instance_;
-class MsgStartDiceResp;
-class MsgStartDiceRespDefaultTypeInternal;
-extern MsgStartDiceRespDefaultTypeInternal _MsgStartDiceResp_default_instance_;
 class MsgThrowDiceResp;
 class MsgThrowDiceRespDefaultTypeInternal;
 extern MsgThrowDiceRespDefaultTypeInternal _MsgThrowDiceResp_default_instance_;
+class MsgTriggerEvent;
+class MsgTriggerEventDefaultTypeInternal;
+extern MsgTriggerEventDefaultTypeInternal _MsgTriggerEvent_default_instance_;
 class RouteInfo;
 class RouteInfoDefaultTypeInternal;
 extern RouteInfoDefaultTypeInternal _RouteInfo_default_instance_;
@@ -89,12 +92,13 @@ extern UserInfoDefaultTypeInternal _UserInfo_default_instance_;
 PROTOBUF_NAMESPACE_OPEN
 template<> ::LudoQuick::ChessGrid* Arena::CreateMaybeMessage<::LudoQuick::ChessGrid>(Arena*);
 template<> ::LudoQuick::GameResult* Arena::CreateMaybeMessage<::LudoQuick::GameResult>(Arena*);
-template<> ::LudoQuick::MsgDiceInfoResp* Arena::CreateMaybeMessage<::LudoQuick::MsgDiceInfoResp>(Arena*);
-template<> ::LudoQuick::MsgOperateRoute* Arena::CreateMaybeMessage<::LudoQuick::MsgOperateRoute>(Arena*);
+template<> ::LudoQuick::MsgChessInfoResp* Arena::CreateMaybeMessage<::LudoQuick::MsgChessInfoResp>(Arena*);
+template<> ::LudoQuick::MsgNoticeOpResp* Arena::CreateMaybeMessage<::LudoQuick::MsgNoticeOpResp>(Arena*);
+template<> ::LudoQuick::MsgOperateChess* Arena::CreateMaybeMessage<::LudoQuick::MsgOperateChess>(Arena*);
 template<> ::LudoQuick::MsgResultResp* Arena::CreateMaybeMessage<::LudoQuick::MsgResultResp>(Arena*);
 template<> ::LudoQuick::MsgSceneInfoResp* Arena::CreateMaybeMessage<::LudoQuick::MsgSceneInfoResp>(Arena*);
-template<> ::LudoQuick::MsgStartDiceResp* Arena::CreateMaybeMessage<::LudoQuick::MsgStartDiceResp>(Arena*);
 template<> ::LudoQuick::MsgThrowDiceResp* Arena::CreateMaybeMessage<::LudoQuick::MsgThrowDiceResp>(Arena*);
+template<> ::LudoQuick::MsgTriggerEvent* Arena::CreateMaybeMessage<::LudoQuick::MsgTriggerEvent>(Arena*);
 template<> ::LudoQuick::RouteInfo* Arena::CreateMaybeMessage<::LudoQuick::RouteInfo>(Arena*);
 template<> ::LudoQuick::UserInfo* Arena::CreateMaybeMessage<::LudoQuick::UserInfo>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
@@ -103,19 +107,21 @@ namespace LudoQuick {
 enum EMsgIDLudoQuick : int {
   MsgID_FirstPublish = 0,
   SUB_SC_FirstPublish = 1,
-  SUB_SC_StartDice = 2,
+  SUB_SC_NoticeOp = 2,
   SUB_CS_DiceInfo = 3,
   SUB_SC_ThrowDice = 4,
-  SUB_CS_OperateRoute = 5,
-  SUB_SC_DiceInfo = 6,
-  SUB_SC_GameResult = 7,
-  SUB_CS_Optional = 8,
+  SUB_CS_OperateChess = 5,
+  SUB_SC_ChessInfo = 6,
+  SUB_CS_TriggerEvent = 7,
+  SUB_SC_GameResult = 9,
+  SUB_CS_Optional = 10,
+  SUB_SC_ERR = 11,
   EMsgIDLudoQuick_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDLudoQuick_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDLudoQuick_IsValid(int value);
 constexpr EMsgIDLudoQuick EMsgIDLudoQuick_MIN = MsgID_FirstPublish;
-constexpr EMsgIDLudoQuick EMsgIDLudoQuick_MAX = SUB_CS_Optional;
+constexpr EMsgIDLudoQuick EMsgIDLudoQuick_MAX = SUB_SC_ERR;
 constexpr int EMsgIDLudoQuick_ARRAYSIZE = EMsgIDLudoQuick_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDLudoQuick_descriptor();
@@ -872,23 +878,23 @@ class MsgSceneInfoResp PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
-class MsgStartDiceResp PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LudoQuick.MsgStartDiceResp) */ {
+class MsgNoticeOpResp PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LudoQuick.MsgNoticeOpResp) */ {
  public:
-  inline MsgStartDiceResp() : MsgStartDiceResp(nullptr) {}
-  virtual ~MsgStartDiceResp();
+  inline MsgNoticeOpResp() : MsgNoticeOpResp(nullptr) {}
+  virtual ~MsgNoticeOpResp();
 
-  MsgStartDiceResp(const MsgStartDiceResp& from);
-  MsgStartDiceResp(MsgStartDiceResp&& from) noexcept
-    : MsgStartDiceResp() {
+  MsgNoticeOpResp(const MsgNoticeOpResp& from);
+  MsgNoticeOpResp(MsgNoticeOpResp&& from) noexcept
+    : MsgNoticeOpResp() {
     *this = ::std::move(from);
   }
 
-  inline MsgStartDiceResp& operator=(const MsgStartDiceResp& from) {
+  inline MsgNoticeOpResp& operator=(const MsgNoticeOpResp& from) {
     CopyFrom(from);
     return *this;
   }
-  inline MsgStartDiceResp& operator=(MsgStartDiceResp&& from) noexcept {
+  inline MsgNoticeOpResp& operator=(MsgNoticeOpResp&& from) noexcept {
     if (GetArena() == from.GetArena()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -906,19 +912,19 @@ class MsgStartDiceResp PROTOBUF_FINAL :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return GetMetadataStatic().reflection;
   }
-  static const MsgStartDiceResp& default_instance();
+  static const MsgNoticeOpResp& default_instance();
 
-  static inline const MsgStartDiceResp* internal_default_instance() {
-    return reinterpret_cast<const MsgStartDiceResp*>(
-               &_MsgStartDiceResp_default_instance_);
+  static inline const MsgNoticeOpResp* internal_default_instance() {
+    return reinterpret_cast<const MsgNoticeOpResp*>(
+               &_MsgNoticeOpResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     4;
 
-  friend void swap(MsgStartDiceResp& a, MsgStartDiceResp& b) {
+  friend void swap(MsgNoticeOpResp& a, MsgNoticeOpResp& b) {
     a.Swap(&b);
   }
-  inline void Swap(MsgStartDiceResp* other) {
+  inline void Swap(MsgNoticeOpResp* other) {
     if (other == this) return;
     if (GetArena() == other->GetArena()) {
       InternalSwap(other);
@@ -926,7 +932,7 @@ class MsgStartDiceResp PROTOBUF_FINAL :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(MsgStartDiceResp* other) {
+  void UnsafeArenaSwap(MsgNoticeOpResp* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetArena() == other->GetArena());
     InternalSwap(other);
@@ -934,17 +940,17 @@ class MsgStartDiceResp PROTOBUF_FINAL :
 
   // implements Message ----------------------------------------------
 
-  inline MsgStartDiceResp* New() const final {
-    return CreateMaybeMessage<MsgStartDiceResp>(nullptr);
+  inline MsgNoticeOpResp* New() const final {
+    return CreateMaybeMessage<MsgNoticeOpResp>(nullptr);
   }
 
-  MsgStartDiceResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<MsgStartDiceResp>(arena);
+  MsgNoticeOpResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgNoticeOpResp>(arena);
   }
   void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
   void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const MsgStartDiceResp& from);
-  void MergeFrom(const MsgStartDiceResp& from);
+  void CopyFrom(const MsgNoticeOpResp& from);
+  void MergeFrom(const MsgNoticeOpResp& from);
   PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
   bool IsInitialized() const final;
 
@@ -958,13 +964,13 @@ class MsgStartDiceResp PROTOBUF_FINAL :
   inline void SharedCtor();
   inline void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(MsgStartDiceResp* other);
+  void InternalSwap(MsgNoticeOpResp* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "LudoQuick.MsgStartDiceResp";
+    return "LudoQuick.MsgNoticeOpResp";
   }
   protected:
-  explicit MsgStartDiceResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  explicit MsgNoticeOpResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
   private:
   static void ArenaDtor(void* object);
   inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -1005,7 +1011,7 @@ class MsgStartDiceResp PROTOBUF_FINAL :
   void _internal_set_times(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:LudoQuick.MsgStartDiceResp)
+  // @@protoc_insertion_point(class_scope:LudoQuick.MsgNoticeOpResp)
  private:
   class _Internal;
 
@@ -1166,23 +1172,23 @@ class MsgThrowDiceResp PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
-class MsgOperateRoute PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LudoQuick.MsgOperateRoute) */ {
+class MsgOperateChess PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LudoQuick.MsgOperateChess) */ {
  public:
-  inline MsgOperateRoute() : MsgOperateRoute(nullptr) {}
-  virtual ~MsgOperateRoute();
+  inline MsgOperateChess() : MsgOperateChess(nullptr) {}
+  virtual ~MsgOperateChess();
 
-  MsgOperateRoute(const MsgOperateRoute& from);
-  MsgOperateRoute(MsgOperateRoute&& from) noexcept
-    : MsgOperateRoute() {
+  MsgOperateChess(const MsgOperateChess& from);
+  MsgOperateChess(MsgOperateChess&& from) noexcept
+    : MsgOperateChess() {
     *this = ::std::move(from);
   }
 
-  inline MsgOperateRoute& operator=(const MsgOperateRoute& from) {
+  inline MsgOperateChess& operator=(const MsgOperateChess& from) {
     CopyFrom(from);
     return *this;
   }
-  inline MsgOperateRoute& operator=(MsgOperateRoute&& from) noexcept {
+  inline MsgOperateChess& operator=(MsgOperateChess&& from) noexcept {
     if (GetArena() == from.GetArena()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -1200,19 +1206,19 @@ class MsgOperateRoute PROTOBUF_FINAL :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return GetMetadataStatic().reflection;
   }
-  static const MsgOperateRoute& default_instance();
+  static const MsgOperateChess& default_instance();
 
-  static inline const MsgOperateRoute* internal_default_instance() {
-    return reinterpret_cast<const MsgOperateRoute*>(
-               &_MsgOperateRoute_default_instance_);
+  static inline const MsgOperateChess* internal_default_instance() {
+    return reinterpret_cast<const MsgOperateChess*>(
+               &_MsgOperateChess_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     6;
 
-  friend void swap(MsgOperateRoute& a, MsgOperateRoute& b) {
+  friend void swap(MsgOperateChess& a, MsgOperateChess& b) {
     a.Swap(&b);
   }
-  inline void Swap(MsgOperateRoute* other) {
+  inline void Swap(MsgOperateChess* other) {
     if (other == this) return;
     if (GetArena() == other->GetArena()) {
       InternalSwap(other);
@@ -1220,7 +1226,7 @@ class MsgOperateRoute PROTOBUF_FINAL :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(MsgOperateRoute* other) {
+  void UnsafeArenaSwap(MsgOperateChess* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetArena() == other->GetArena());
     InternalSwap(other);
@@ -1228,17 +1234,17 @@ class MsgOperateRoute PROTOBUF_FINAL :
 
   // implements Message ----------------------------------------------
 
-  inline MsgOperateRoute* New() const final {
-    return CreateMaybeMessage<MsgOperateRoute>(nullptr);
+  inline MsgOperateChess* New() const final {
+    return CreateMaybeMessage<MsgOperateChess>(nullptr);
   }
 
-  MsgOperateRoute* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<MsgOperateRoute>(arena);
+  MsgOperateChess* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgOperateChess>(arena);
   }
   void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
   void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const MsgOperateRoute& from);
-  void MergeFrom(const MsgOperateRoute& from);
+  void CopyFrom(const MsgOperateChess& from);
+  void MergeFrom(const MsgOperateChess& from);
   PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
   bool IsInitialized() const final;
 
@@ -1252,13 +1258,13 @@ class MsgOperateRoute PROTOBUF_FINAL :
   inline void SharedCtor();
   inline void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(MsgOperateRoute* other);
+  void InternalSwap(MsgOperateChess* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "LudoQuick.MsgOperateRoute";
+    return "LudoQuick.MsgOperateChess";
   }
   protected:
-  explicit MsgOperateRoute(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  explicit MsgOperateChess(::PROTOBUF_NAMESPACE_ID::Arena* arena);
   private:
   static void ArenaDtor(void* object);
   inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -1309,7 +1315,7 @@ class MsgOperateRoute PROTOBUF_FINAL :
   void _internal_set_is_unlock(bool value);
   public:
 
-  // @@protoc_insertion_point(class_scope:LudoQuick.MsgOperateRoute)
+  // @@protoc_insertion_point(class_scope:LudoQuick.MsgOperateChess)
  private:
   class _Internal;
 
@@ -1324,23 +1330,23 @@ class MsgOperateRoute PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
-class MsgDiceInfoResp PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LudoQuick.MsgDiceInfoResp) */ {
+class MsgTriggerEvent PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LudoQuick.MsgTriggerEvent) */ {
  public:
-  inline MsgDiceInfoResp() : MsgDiceInfoResp(nullptr) {}
-  virtual ~MsgDiceInfoResp();
+  inline MsgTriggerEvent() : MsgTriggerEvent(nullptr) {}
+  virtual ~MsgTriggerEvent();
 
-  MsgDiceInfoResp(const MsgDiceInfoResp& from);
-  MsgDiceInfoResp(MsgDiceInfoResp&& from) noexcept
-    : MsgDiceInfoResp() {
+  MsgTriggerEvent(const MsgTriggerEvent& from);
+  MsgTriggerEvent(MsgTriggerEvent&& from) noexcept
+    : MsgTriggerEvent() {
     *this = ::std::move(from);
   }
 
-  inline MsgDiceInfoResp& operator=(const MsgDiceInfoResp& from) {
+  inline MsgTriggerEvent& operator=(const MsgTriggerEvent& from) {
     CopyFrom(from);
     return *this;
   }
-  inline MsgDiceInfoResp& operator=(MsgDiceInfoResp&& from) noexcept {
+  inline MsgTriggerEvent& operator=(MsgTriggerEvent&& from) noexcept {
     if (GetArena() == from.GetArena()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -1358,19 +1364,19 @@ class MsgDiceInfoResp PROTOBUF_FINAL :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return GetMetadataStatic().reflection;
   }
-  static const MsgDiceInfoResp& default_instance();
+  static const MsgTriggerEvent& default_instance();
 
-  static inline const MsgDiceInfoResp* internal_default_instance() {
-    return reinterpret_cast<const MsgDiceInfoResp*>(
-               &_MsgDiceInfoResp_default_instance_);
+  static inline const MsgTriggerEvent* internal_default_instance() {
+    return reinterpret_cast<const MsgTriggerEvent*>(
+               &_MsgTriggerEvent_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     7;
 
-  friend void swap(MsgDiceInfoResp& a, MsgDiceInfoResp& b) {
+  friend void swap(MsgTriggerEvent& a, MsgTriggerEvent& b) {
     a.Swap(&b);
   }
-  inline void Swap(MsgDiceInfoResp* other) {
+  inline void Swap(MsgTriggerEvent* other) {
     if (other == this) return;
     if (GetArena() == other->GetArena()) {
       InternalSwap(other);
@@ -1378,7 +1384,7 @@ class MsgDiceInfoResp PROTOBUF_FINAL :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(MsgDiceInfoResp* other) {
+  void UnsafeArenaSwap(MsgTriggerEvent* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetArena() == other->GetArena());
     InternalSwap(other);
@@ -1386,17 +1392,17 @@ class MsgDiceInfoResp PROTOBUF_FINAL :
 
   // implements Message ----------------------------------------------
 
-  inline MsgDiceInfoResp* New() const final {
-    return CreateMaybeMessage<MsgDiceInfoResp>(nullptr);
+  inline MsgTriggerEvent* New() const final {
+    return CreateMaybeMessage<MsgTriggerEvent>(nullptr);
   }
 
-  MsgDiceInfoResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<MsgDiceInfoResp>(arena);
+  MsgTriggerEvent* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgTriggerEvent>(arena);
   }
   void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
   void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const MsgDiceInfoResp& from);
-  void MergeFrom(const MsgDiceInfoResp& from);
+  void CopyFrom(const MsgTriggerEvent& from);
+  void MergeFrom(const MsgTriggerEvent& from);
   PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
   bool IsInitialized() const final;
 
@@ -1410,13 +1416,13 @@ class MsgDiceInfoResp PROTOBUF_FINAL :
   inline void SharedCtor();
   inline void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(MsgDiceInfoResp* other);
+  void InternalSwap(MsgTriggerEvent* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "LudoQuick.MsgDiceInfoResp";
+    return "LudoQuick.MsgTriggerEvent";
   }
   protected:
-  explicit MsgDiceInfoResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  explicit MsgTriggerEvent(::PROTOBUF_NAMESPACE_ID::Arena* arena);
   private:
   static void ArenaDtor(void* object);
   inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -1438,9 +1444,7 @@ class MsgDiceInfoResp PROTOBUF_FINAL :
   enum : int {
     kChairIdFieldNumber = 1,
     kChessIdFieldNumber = 2,
-    kRouteNumFieldNumber = 3,
-    kPropIdFieldNumber = 4,
-    kCodeFieldNumber = 5,
+    kEventIdFieldNumber = 3,
   };
   // int32 chair_id = 1;
   void clear_chair_id();
@@ -1460,34 +1464,16 @@ class MsgDiceInfoResp PROTOBUF_FINAL :
   void _internal_set_chess_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 route_num = 3;
-  void clear_route_num();
-  ::PROTOBUF_NAMESPACE_ID::int32 route_num() const;
-  void set_route_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // int32 event_id = 3;
+  void clear_event_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 event_id() const;
+  void set_event_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_route_num() const;
-  void _internal_set_route_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_event_id() const;
+  void _internal_set_event_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 prop_id = 4;
-  void clear_prop_id();
-  ::PROTOBUF_NAMESPACE_ID::int32 prop_id() const;
-  void set_prop_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_prop_id() const;
-  void _internal_set_prop_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 code = 5;
-  void clear_code();
-  ::PROTOBUF_NAMESPACE_ID::int32 code() const;
-  void set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_code() const;
-  void _internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:LudoQuick.MsgDiceInfoResp)
+  // @@protoc_insertion_point(class_scope:LudoQuick.MsgTriggerEvent)
  private:
   class _Internal;
 
@@ -1496,8 +1482,219 @@ class MsgDiceInfoResp PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 chess_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 event_id_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_LudoQuick_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgChessInfoResp PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LudoQuick.MsgChessInfoResp) */ {
+ public:
+  inline MsgChessInfoResp() : MsgChessInfoResp(nullptr) {}
+  virtual ~MsgChessInfoResp();
+
+  MsgChessInfoResp(const MsgChessInfoResp& from);
+  MsgChessInfoResp(MsgChessInfoResp&& from) noexcept
+    : MsgChessInfoResp() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgChessInfoResp& operator=(const MsgChessInfoResp& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgChessInfoResp& operator=(MsgChessInfoResp&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgChessInfoResp& default_instance();
+
+  static inline const MsgChessInfoResp* internal_default_instance() {
+    return reinterpret_cast<const MsgChessInfoResp*>(
+               &_MsgChessInfoResp_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    8;
+
+  friend void swap(MsgChessInfoResp& a, MsgChessInfoResp& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgChessInfoResp* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgChessInfoResp* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgChessInfoResp* New() const final {
+    return CreateMaybeMessage<MsgChessInfoResp>(nullptr);
+  }
+
+  MsgChessInfoResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgChessInfoResp>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgChessInfoResp& from);
+  void MergeFrom(const MsgChessInfoResp& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgChessInfoResp* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "LudoQuick.MsgChessInfoResp";
+  }
+  protected:
+  explicit MsgChessInfoResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_LudoQuick_2eproto);
+    return ::descriptor_table_LudoQuick_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kChairIdFieldNumber = 1,
+    kChessIdFieldNumber = 2,
+    kIsUnlockFieldNumber = 3,
+    kBagCountFieldNumber = 4,
+    kRetryFieldNumber = 5,
+    kRouteNumFieldNumber = 6,
+    kEventIdFieldNumber = 7,
+    kCodeFieldNumber = 8,
+  };
+  // int32 chair_id = 1;
+  void clear_chair_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_id() const;
+  void set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_chair_id() const;
+  void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 chess_id = 2;
+  void clear_chess_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 chess_id() const;
+  void set_chess_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_chess_id() const;
+  void _internal_set_chess_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // bool is_unlock = 3;
+  void clear_is_unlock();
+  bool is_unlock() const;
+  void set_is_unlock(bool value);
+  private:
+  bool _internal_is_unlock() const;
+  void _internal_set_is_unlock(bool value);
+  public:
+
+  // int32 bag_count = 4;
+  void clear_bag_count();
+  ::PROTOBUF_NAMESPACE_ID::int32 bag_count() const;
+  void set_bag_count(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_bag_count() const;
+  void _internal_set_bag_count(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 retry = 5;
+  void clear_retry();
+  ::PROTOBUF_NAMESPACE_ID::int32 retry() const;
+  void set_retry(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_retry() const;
+  void _internal_set_retry(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 route_num = 6;
+  void clear_route_num();
+  ::PROTOBUF_NAMESPACE_ID::int32 route_num() const;
+  void set_route_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_route_num() const;
+  void _internal_set_route_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 event_id = 7;
+  void clear_event_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 event_id() const;
+  void set_event_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_event_id() const;
+  void _internal_set_event_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 code = 8;
+  void clear_code();
+  ::PROTOBUF_NAMESPACE_ID::int32 code() const;
+  void set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_code() const;
+  void _internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:LudoQuick.MsgChessInfoResp)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 chess_id_;
+  bool is_unlock_;
+  ::PROTOBUF_NAMESPACE_ID::int32 bag_count_;
+  ::PROTOBUF_NAMESPACE_ID::int32 retry_;
   ::PROTOBUF_NAMESPACE_ID::int32 route_num_;
-  ::PROTOBUF_NAMESPACE_ID::int32 prop_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 event_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 code_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_LudoQuick_2eproto;
@@ -1545,7 +1742,7 @@ class GameResult PROTOBUF_FINAL :
                &_GameResult_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    9;
 
   friend void swap(GameResult& a, GameResult& b) {
     a.Swap(&b);
@@ -1734,7 +1931,7 @@ class MsgResultResp PROTOBUF_FINAL :
                &_MsgResultResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    10;
 
   friend void swap(MsgResultResp& a, MsgResultResp& b) {
     a.Swap(&b);
@@ -2299,46 +2496,46 @@ MsgSceneInfoResp::user_info() const {
 
 // -------------------------------------------------------------------
 
-// MsgStartDiceResp
+// MsgNoticeOpResp
 
 // int32 chair_id = 1;
-inline void MsgStartDiceResp::clear_chair_id() {
+inline void MsgNoticeOpResp::clear_chair_id() {
   chair_id_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgStartDiceResp::_internal_chair_id() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgNoticeOpResp::_internal_chair_id() const {
   return chair_id_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgStartDiceResp::chair_id() const {
-  // @@protoc_insertion_point(field_get:LudoQuick.MsgStartDiceResp.chair_id)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgNoticeOpResp::chair_id() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.MsgNoticeOpResp.chair_id)
   return _internal_chair_id();
 }
-inline void MsgStartDiceResp::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgNoticeOpResp::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   chair_id_ = value;
 }
-inline void MsgStartDiceResp::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgNoticeOpResp::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:LudoQuick.MsgStartDiceResp.chair_id)
+  // @@protoc_insertion_point(field_set:LudoQuick.MsgNoticeOpResp.chair_id)
 }
 
 // int32 times = 2;
-inline void MsgStartDiceResp::clear_times() {
+inline void MsgNoticeOpResp::clear_times() {
   times_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgStartDiceResp::_internal_times() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgNoticeOpResp::_internal_times() const {
   return times_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgStartDiceResp::times() const {
-  // @@protoc_insertion_point(field_get:LudoQuick.MsgStartDiceResp.times)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgNoticeOpResp::times() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.MsgNoticeOpResp.times)
   return _internal_times();
 }
-inline void MsgStartDiceResp::_internal_set_times(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgNoticeOpResp::_internal_set_times(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   times_ = value;
 }
-inline void MsgStartDiceResp::set_times(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgNoticeOpResp::set_times(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_times(value);
-  // @@protoc_insertion_point(field_set:LudoQuick.MsgStartDiceResp.times)
+  // @@protoc_insertion_point(field_set:LudoQuick.MsgNoticeOpResp.times)
 }
 
 // -------------------------------------------------------------------
@@ -2387,170 +2584,294 @@ inline void MsgThrowDiceResp::set_dice_roll(::PROTOBUF_NAMESPACE_ID::int32 value
 
 // -------------------------------------------------------------------
 
-// MsgOperateRoute
+// MsgOperateChess
 
 // int32 chair_id = 1;
-inline void MsgOperateRoute::clear_chair_id() {
+inline void MsgOperateChess::clear_chair_id() {
   chair_id_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOperateRoute::_internal_chair_id() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOperateChess::_internal_chair_id() const {
   return chair_id_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOperateRoute::chair_id() const {
-  // @@protoc_insertion_point(field_get:LudoQuick.MsgOperateRoute.chair_id)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOperateChess::chair_id() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.MsgOperateChess.chair_id)
   return _internal_chair_id();
 }
-inline void MsgOperateRoute::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgOperateChess::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   chair_id_ = value;
 }
-inline void MsgOperateRoute::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgOperateChess::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:LudoQuick.MsgOperateRoute.chair_id)
+  // @@protoc_insertion_point(field_set:LudoQuick.MsgOperateChess.chair_id)
 }
 
 // int32 chess_id = 2;
-inline void MsgOperateRoute::clear_chess_id() {
+inline void MsgOperateChess::clear_chess_id() {
   chess_id_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOperateRoute::_internal_chess_id() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOperateChess::_internal_chess_id() const {
   return chess_id_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOperateRoute::chess_id() const {
-  // @@protoc_insertion_point(field_get:LudoQuick.MsgOperateRoute.chess_id)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgOperateChess::chess_id() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.MsgOperateChess.chess_id)
   return _internal_chess_id();
 }
-inline void MsgOperateRoute::_internal_set_chess_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgOperateChess::_internal_set_chess_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   chess_id_ = value;
 }
-inline void MsgOperateRoute::set_chess_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgOperateChess::set_chess_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chess_id(value);
-  // @@protoc_insertion_point(field_set:LudoQuick.MsgOperateRoute.chess_id)
+  // @@protoc_insertion_point(field_set:LudoQuick.MsgOperateChess.chess_id)
 }
 
 // bool is_unlock = 3;
-inline void MsgOperateRoute::clear_is_unlock() {
+inline void MsgOperateChess::clear_is_unlock() {
   is_unlock_ = false;
 }
-inline bool MsgOperateRoute::_internal_is_unlock() const {
+inline bool MsgOperateChess::_internal_is_unlock() const {
   return is_unlock_;
 }
-inline bool MsgOperateRoute::is_unlock() const {
-  // @@protoc_insertion_point(field_get:LudoQuick.MsgOperateRoute.is_unlock)
+inline bool MsgOperateChess::is_unlock() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.MsgOperateChess.is_unlock)
   return _internal_is_unlock();
 }
-inline void MsgOperateRoute::_internal_set_is_unlock(bool value) {
+inline void MsgOperateChess::_internal_set_is_unlock(bool value) {
   
   is_unlock_ = value;
 }
-inline void MsgOperateRoute::set_is_unlock(bool value) {
+inline void MsgOperateChess::set_is_unlock(bool value) {
   _internal_set_is_unlock(value);
-  // @@protoc_insertion_point(field_set:LudoQuick.MsgOperateRoute.is_unlock)
+  // @@protoc_insertion_point(field_set:LudoQuick.MsgOperateChess.is_unlock)
 }
 
 // -------------------------------------------------------------------
 
-// MsgDiceInfoResp
+// MsgTriggerEvent
 
 // int32 chair_id = 1;
-inline void MsgDiceInfoResp::clear_chair_id() {
+inline void MsgTriggerEvent::clear_chair_id() {
   chair_id_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDiceInfoResp::_internal_chair_id() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTriggerEvent::_internal_chair_id() const {
   return chair_id_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDiceInfoResp::chair_id() const {
-  // @@protoc_insertion_point(field_get:LudoQuick.MsgDiceInfoResp.chair_id)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTriggerEvent::chair_id() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.MsgTriggerEvent.chair_id)
   return _internal_chair_id();
 }
-inline void MsgDiceInfoResp::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgTriggerEvent::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   chair_id_ = value;
 }
-inline void MsgDiceInfoResp::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgTriggerEvent::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair_id(value);
-  // @@protoc_insertion_point(field_set:LudoQuick.MsgDiceInfoResp.chair_id)
+  // @@protoc_insertion_point(field_set:LudoQuick.MsgTriggerEvent.chair_id)
 }
 
 // int32 chess_id = 2;
-inline void MsgDiceInfoResp::clear_chess_id() {
+inline void MsgTriggerEvent::clear_chess_id() {
   chess_id_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDiceInfoResp::_internal_chess_id() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTriggerEvent::_internal_chess_id() const {
   return chess_id_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDiceInfoResp::chess_id() const {
-  // @@protoc_insertion_point(field_get:LudoQuick.MsgDiceInfoResp.chess_id)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTriggerEvent::chess_id() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.MsgTriggerEvent.chess_id)
   return _internal_chess_id();
 }
-inline void MsgDiceInfoResp::_internal_set_chess_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgTriggerEvent::_internal_set_chess_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   chess_id_ = value;
 }
-inline void MsgDiceInfoResp::set_chess_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgTriggerEvent::set_chess_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chess_id(value);
-  // @@protoc_insertion_point(field_set:LudoQuick.MsgDiceInfoResp.chess_id)
+  // @@protoc_insertion_point(field_set:LudoQuick.MsgTriggerEvent.chess_id)
 }
 
-// int32 route_num = 3;
-inline void MsgDiceInfoResp::clear_route_num() {
+// int32 event_id = 3;
+inline void MsgTriggerEvent::clear_event_id() {
+  event_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTriggerEvent::_internal_event_id() const {
+  return event_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTriggerEvent::event_id() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.MsgTriggerEvent.event_id)
+  return _internal_event_id();
+}
+inline void MsgTriggerEvent::_internal_set_event_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  event_id_ = value;
+}
+inline void MsgTriggerEvent::set_event_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_event_id(value);
+  // @@protoc_insertion_point(field_set:LudoQuick.MsgTriggerEvent.event_id)
+}
+
+// -------------------------------------------------------------------
+
+// MsgChessInfoResp
+
+// int32 chair_id = 1;
+inline void MsgChessInfoResp::clear_chair_id() {
+  chair_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChessInfoResp::_internal_chair_id() const {
+  return chair_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChessInfoResp::chair_id() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.MsgChessInfoResp.chair_id)
+  return _internal_chair_id();
+}
+inline void MsgChessInfoResp::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  chair_id_ = value;
+}
+inline void MsgChessInfoResp::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_chair_id(value);
+  // @@protoc_insertion_point(field_set:LudoQuick.MsgChessInfoResp.chair_id)
+}
+
+// int32 chess_id = 2;
+inline void MsgChessInfoResp::clear_chess_id() {
+  chess_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChessInfoResp::_internal_chess_id() const {
+  return chess_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChessInfoResp::chess_id() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.MsgChessInfoResp.chess_id)
+  return _internal_chess_id();
+}
+inline void MsgChessInfoResp::_internal_set_chess_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  chess_id_ = value;
+}
+inline void MsgChessInfoResp::set_chess_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_chess_id(value);
+  // @@protoc_insertion_point(field_set:LudoQuick.MsgChessInfoResp.chess_id)
+}
+
+// bool is_unlock = 3;
+inline void MsgChessInfoResp::clear_is_unlock() {
+  is_unlock_ = false;
+}
+inline bool MsgChessInfoResp::_internal_is_unlock() const {
+  return is_unlock_;
+}
+inline bool MsgChessInfoResp::is_unlock() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.MsgChessInfoResp.is_unlock)
+  return _internal_is_unlock();
+}
+inline void MsgChessInfoResp::_internal_set_is_unlock(bool value) {
+  
+  is_unlock_ = value;
+}
+inline void MsgChessInfoResp::set_is_unlock(bool value) {
+  _internal_set_is_unlock(value);
+  // @@protoc_insertion_point(field_set:LudoQuick.MsgChessInfoResp.is_unlock)
+}
+
+// int32 bag_count = 4;
+inline void MsgChessInfoResp::clear_bag_count() {
+  bag_count_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChessInfoResp::_internal_bag_count() const {
+  return bag_count_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChessInfoResp::bag_count() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.MsgChessInfoResp.bag_count)
+  return _internal_bag_count();
+}
+inline void MsgChessInfoResp::_internal_set_bag_count(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  bag_count_ = value;
+}
+inline void MsgChessInfoResp::set_bag_count(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_bag_count(value);
+  // @@protoc_insertion_point(field_set:LudoQuick.MsgChessInfoResp.bag_count)
+}
+
+// int32 retry = 5;
+inline void MsgChessInfoResp::clear_retry() {
+  retry_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChessInfoResp::_internal_retry() const {
+  return retry_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChessInfoResp::retry() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.MsgChessInfoResp.retry)
+  return _internal_retry();
+}
+inline void MsgChessInfoResp::_internal_set_retry(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  retry_ = value;
+}
+inline void MsgChessInfoResp::set_retry(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_retry(value);
+  // @@protoc_insertion_point(field_set:LudoQuick.MsgChessInfoResp.retry)
+}
+
+// int32 route_num = 6;
+inline void MsgChessInfoResp::clear_route_num() {
   route_num_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDiceInfoResp::_internal_route_num() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChessInfoResp::_internal_route_num() const {
   return route_num_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDiceInfoResp::route_num() const {
-  // @@protoc_insertion_point(field_get:LudoQuick.MsgDiceInfoResp.route_num)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChessInfoResp::route_num() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.MsgChessInfoResp.route_num)
   return _internal_route_num();
 }
-inline void MsgDiceInfoResp::_internal_set_route_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgChessInfoResp::_internal_set_route_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   route_num_ = value;
 }
-inline void MsgDiceInfoResp::set_route_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgChessInfoResp::set_route_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_route_num(value);
-  // @@protoc_insertion_point(field_set:LudoQuick.MsgDiceInfoResp.route_num)
+  // @@protoc_insertion_point(field_set:LudoQuick.MsgChessInfoResp.route_num)
 }
 
-// int32 prop_id = 4;
-inline void MsgDiceInfoResp::clear_prop_id() {
-  prop_id_ = 0;
+// int32 event_id = 7;
+inline void MsgChessInfoResp::clear_event_id() {
+  event_id_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDiceInfoResp::_internal_prop_id() const {
-  return prop_id_;
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChessInfoResp::_internal_event_id() const {
+  return event_id_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDiceInfoResp::prop_id() const {
-  // @@protoc_insertion_point(field_get:LudoQuick.MsgDiceInfoResp.prop_id)
-  return _internal_prop_id();
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChessInfoResp::event_id() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.MsgChessInfoResp.event_id)
+  return _internal_event_id();
 }
-inline void MsgDiceInfoResp::_internal_set_prop_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgChessInfoResp::_internal_set_event_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
-  prop_id_ = value;
+  event_id_ = value;
 }
-inline void MsgDiceInfoResp::set_prop_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_prop_id(value);
-  // @@protoc_insertion_point(field_set:LudoQuick.MsgDiceInfoResp.prop_id)
+inline void MsgChessInfoResp::set_event_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_event_id(value);
+  // @@protoc_insertion_point(field_set:LudoQuick.MsgChessInfoResp.event_id)
 }
 
-// int32 code = 5;
-inline void MsgDiceInfoResp::clear_code() {
+// int32 code = 8;
+inline void MsgChessInfoResp::clear_code() {
   code_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDiceInfoResp::_internal_code() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChessInfoResp::_internal_code() const {
   return code_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDiceInfoResp::code() const {
-  // @@protoc_insertion_point(field_get:LudoQuick.MsgDiceInfoResp.code)
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChessInfoResp::code() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.MsgChessInfoResp.code)
   return _internal_code();
 }
-inline void MsgDiceInfoResp::_internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgChessInfoResp::_internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   code_ = value;
 }
-inline void MsgDiceInfoResp::set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgChessInfoResp::set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_code(value);
-  // @@protoc_insertion_point(field_set:LudoQuick.MsgDiceInfoResp.code)
+  // @@protoc_insertion_point(field_set:LudoQuick.MsgChessInfoResp.code)
 }
 
 // -------------------------------------------------------------------
@@ -2766,6 +3087,8 @@ MsgResultResp::result() const {
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

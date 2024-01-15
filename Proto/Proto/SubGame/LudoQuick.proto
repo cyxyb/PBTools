@@ -7,13 +7,15 @@ enum EMsgIDLudoQuick
 {
 	MsgID_FirstPublish 		= 0;		//场景（流程需要前端不管）
 	SUB_SC_FirstPublish 	= 1;		//随机首发(MsgCommonN32)0红1绿2黄3蓝
-	SUB_SC_StartDice		= 2;		//开始投掷(MsgStartDiceResp)
-	SUB_CS_DiceInfo			= 3;		//投掷骰子(MsgCommonBool)
+	SUB_SC_NoticeOp			= 2;		//通知操作(MsgNoticeOpResp)
+	SUB_CS_DiceInfo			= 3;		//投掷骰子(MsgCommonBool)       	ps：正常投掷和触发事件ID 7 和奖励重新摇骰子（优先级低于道具 有道具就触发道具不触发它）
 	SUB_SC_ThrowDice		= 4;		//投掷结果(MsgThrowDiceResp)
-	SUB_CS_OperateRoute		= 5;		//操作棋子(MsgOperateRoute)
-	SUB_SC_DiceInfo			= 6;		//骰子结果(MsgDiceInfoResp)
-	SUB_SC_GameResult		= 7;		//游戏结果(MsgResultResp)
-	SUB_CS_Optional			= 8;		//自选骰子(MsgCommonN32)
+	SUB_CS_OperateChess		= 5;		//操作棋子(MsgOperateChess)			ps：触发事件 9 直接处理解除开关动画就行 不用再发消息了 触发事件 10 发送解锁棋子的消息
+	SUB_SC_ChessInfo		= 6;		//棋子结果(MsgChessInfoResp)
+	SUB_CS_TriggerEvent		= 7;		//触发特殊事件(MsgTriggerEvent)  	ps：事件ID 1-6 发送这个消息
+	SUB_SC_GameResult		= 9;		//游戏结果(MsgResultResp)
+	SUB_CS_Optional			= 10;		//自选骰子(MsgCommonN32)			ps：事件ID 8 发送这个消息
+	SUB_SC_ERR				= 11;		//错误消息(MsgCommonN32)
 }
 //棋子信息
 message RouteInfo
@@ -52,33 +54,43 @@ message	MsgSceneInfoResp
 	int32 time_remaining 				= 2;//剩余时间
 	repeated UserInfo user_info	 		= 3;//用户信息
 }
-//开始投掷
-message MsgStartDiceResp
+//通知操作
+message MsgNoticeOpResp
 {
-	int32 chair_id = 1;//椅子号
-	int32 times = 2;//剩余时间
+	int32 chair_id = 1;			//椅子号
+	int32 times = 2;			//剩余时间
+}	
+//投掷结果	
+message MsgThrowDiceResp	
+{	
+	int32 chair_id 	= 1; 		//椅子号 对应颜色
+	int32 dice_roll = 2;		//骰子点数	
+}	
+//操作棋子	
+message MsgOperateChess	
+{	
+	int32 chair_id 	= 1; 		//椅子号 对应颜色
+	int32 chess_id 	= 2;		//棋子ID 0123
+	bool  is_unlock	= 3;		//解锁 1是
+}	
+//触发特殊事件	
+message MsgTriggerEvent	
+{	
+	int32 chair_id = 1;			//椅子号
+	int32 chess_id = 2;			//棋子ID 0123
+	int32 event_id = 3;			//事件ID
 }
-//投掷结果
-message MsgThrowDiceResp
-{
-	int32 chair_id 	= 1; 	//椅子号 对应颜色
-	int32 dice_roll = 2;	//骰子点数	
-}
-//操作棋子
-message MsgOperateRoute
-{
-	int32 chair_id 	= 1; 	//椅子号 对应颜色
-	int32 chess_id 	= 2;	//棋子ID 0123
-	bool  is_unlock	= 3;	//解锁 1是
-}
-//骰子数据
-message MsgDiceInfoResp
+//棋子结果
+message MsgChessInfoResp
 {
 	int32 chair_id 		= 1; 	//椅子号 对应颜色
 	int32 chess_id	 	= 2;	//棋子ID 0123
-	int32 route_num	 	= 3;	//走了多少格
-	int32 prop_id 		= 4;	//道具类型 0：未触发 1：前进一格 2：前进三格 3：前进五格 4：前进七格 5：移动到最近棋子 6：移动到最近得安全屋 7 ：获得骰子 8：获得指定骰子 9：解除开关 10：解锁棋子
-	int32 code			= 5;	//对语言id
+	bool  is_unlock		= 3;	//解锁 1是
+	int32 bag_count	 	= 4;	//钱袋个数
+	int32 retry	 		= 5;	//是否奖励重新摇骰子
+	int32 route_num	 	= 6;	//非解锁:走了多少格 解锁:对应的格子ID
+	int32 event_id 		= 7;	//事件类型 0：未触发 1：前进一格 2：前进三格 3：前进五格 4：前进七格 5：移动到最近棋子 6：移动到最近得安全屋 7 ：获得骰子 8：获得指定骰子 9：解除开关 10：解锁棋子
+	int32 code			= 8;	//对语言id
 }
 //结算信息
 message GameResult
