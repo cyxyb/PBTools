@@ -35,10 +35,11 @@ message A7BetInfo
 message A7PlayerData
 {
 	int32				user_id			= 1;
-	int64				win_gold		= 2;	// 总赢
-	int32				total_play		= 3;	// 总玩次数
-	int32				win_play		= 4;	// 赢次数
-	repeated A7BetInfo	bet_infos		= 5;	// 下注状态
+	int32				chair_id		= 2;	// 
+	int64				win_gold		= 3;	// 总赢
+	int32				total_play		= 4;	// 总玩次数
+	int32				win_play		= 5;	// 赢次数
+	repeated A7BetInfo	bet_infos		= 6;	// 下注状态
 }
 
 message MsgA7Record
@@ -50,8 +51,9 @@ message MsgA7Record
 message MsgA7SceneInfo
 {
 	repeated int64  	bet_list		= 1;	//固定押注配置
-	repeated MsgA7Record	records			= 2;	//开筛子结果历史记录 
-	repeated int32		bet_limit		= 3;	//区域下注限制 17个区域
+	repeated int32		area_mup		= 2;	//区域倍数
+	repeated MsgA7Record records		= 3;	//开筛子结果历史记录 
+	repeated int32		bet_limit		= 4;	//区域下注限制 17个区域
 	int32				player_limit	= 5;	//个人下注限制
 	int32				bet_time		= 6;	//下注总时间
 	int32				out_time		= 7;	//剩余时间
@@ -67,7 +69,7 @@ message MsgA7SceneInfo
 message MsgA7Bet
 {
 	int64				bet				= 1;	//押注金币
-	int32				area			= 2;	//押注区域(0-17)
+	int32				area			= 2;	//押注区域(0-16)
 }
 
 //玩家下注返回

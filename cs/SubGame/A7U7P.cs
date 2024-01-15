@@ -26,37 +26,38 @@ namespace A7U7P {
           string.Concat(
             "ChlQcm90by9TdWJHYW1lL0E3VTdQLnByb3RvEgVBN1U3UCI0ChBNc2dBN05v",
             "dGlmeVN0YXRlEhIKCmdhbWVfc3RhdGUYASABKAUSDAoEdGltZRgCIAEoBSIm",
-            "CglBN0JldEluZm8SCwoDYmV0GAEgASgDEgwKBGFyZWEYAiABKAUifAoMQTdQ",
-            "bGF5ZXJEYXRhEg8KB3VzZXJfaWQYASABKAUSEAoId2luX2dvbGQYAiABKAMS",
-            "EgoKdG90YWxfcGxheRgDIAEoBRIQCgh3aW5fcGxheRgEIAEoBRIjCgliZXRf",
-            "aW5mb3MYBSADKAsyEC5BN1U3UC5BN0JldEluZm8iHQoLTXNnQTdSZWNvcmQS",
-            "DgoGc2lldmVzGAIgAygFIoECCg5Nc2dBN1NjZW5lSW5mbxIQCghiZXRfbGlz",
-            "dBgBIAMoAxIjCgdyZWNvcmRzGAIgAygLMhIuQTdVN1AuTXNnQTdSZWNvcmQS",
-            "EQoJYmV0X2xpbWl0GAMgAygFEhQKDHBsYXllcl9saW1pdBgFIAEoBRIQCghi",
-            "ZXRfdGltZRgGIAEoBRIQCghvdXRfdGltZRgHIAEoBRINCgVzdGF0ZRgIIAEo",
-            "BRIQCghnYW1lX3RheBgJIAEoBRIQCghhcmVhX2JldBgTIAMoBRIOCgZzaWV2",
-            "ZXMYFCADKAUSKAoLcGxheWVyX2xpc3QYFiADKAsyEy5BN1U3UC5BN1BsYXll",
-            "ckRhdGEiJQoITXNnQTdCZXQSCwoDYmV0GAEgASgDEgwKBGFyZWEYAiABKAUi",
-            "ZwoMTXNnQTdCZXRSZXNwEhAKCHJldF9jb2RlGAEgASgFEg8KB3VzZXJfaWQY",
-            "AiABKAUSEAoIY2hhaXJfaWQYAyABKAUSIgoIYmV0X2luZm8YBCABKAsyEC5B",
-            "N1U3UC5BN0JldEluZm8iVAoLTXNnQTdXaW5Nc2cSDwoHdXNlcl9pZBgBIAEo",
-            "BRIQCghjaGFpcl9pZBgCIAEoBRIQCgh3aW5fZ29sZBgDIAEoAxIQCghuZXdf",
-            "Z29sZBgEIAEoAyJVCgtNc2dBN1Jlc3VsdBIOCgZzaWV2ZXMYAiADKAUSEQoJ",
-            "d2luX2luZGV4GAEgAygFEiMKB3dpbl9tc2cYAyADKAsyEi5BN1U3UC5Nc2dB",
-            "N1dpbk1zZypDCgpFR2FtZVN0YXRlEgwKCEdTX1JlYWR5EAASDAoIR1NfU3Rh",
-            "cnQQARIKCgZHU19CZXQQAhINCglHU19SZXN1bHQQAyqZAQoNRU1zZ0lEU3Vi",
-            "R2FtZRIVChFNc2dJRFN1YkdhbWVfTnVsbBAAEhQKEE1zZ0lEU3ViR2FtZV9C",
-            "ZXQQARIYChRNc2dJRFN1YkdhbWVfQmV0UmVzcBACEh8KG01zZ0lEU3ViR2Ft",
-            "ZV9HYW1lUmVzdWx0UmVzcBAHEiAKHE1zZ0lEU3ViR2FtZV9Ob3RpZnlTdGF0",
-            "ZVJlc3AQCGIGcHJvdG8z"));
+            "CglBN0JldEluZm8SCwoDYmV0GAEgASgDEgwKBGFyZWEYAiABKAUijgEKDEE3",
+            "UGxheWVyRGF0YRIPCgd1c2VyX2lkGAEgASgFEhAKCGNoYWlyX2lkGAIgASgF",
+            "EhAKCHdpbl9nb2xkGAMgASgDEhIKCnRvdGFsX3BsYXkYBCABKAUSEAoId2lu",
+            "X3BsYXkYBSABKAUSIwoJYmV0X2luZm9zGAYgAygLMhAuQTdVN1AuQTdCZXRJ",
+            "bmZvIh0KC01zZ0E3UmVjb3JkEg4KBnNpZXZlcxgCIAMoBSKTAgoOTXNnQTdT",
+            "Y2VuZUluZm8SEAoIYmV0X2xpc3QYASADKAMSEAoIYXJlYV9tdXAYAiADKAUS",
+            "IwoHcmVjb3JkcxgDIAMoCzISLkE3VTdQLk1zZ0E3UmVjb3JkEhEKCWJldF9s",
+            "aW1pdBgEIAMoBRIUCgxwbGF5ZXJfbGltaXQYBSABKAUSEAoIYmV0X3RpbWUY",
+            "BiABKAUSEAoIb3V0X3RpbWUYByABKAUSDQoFc3RhdGUYCCABKAUSEAoIZ2Ft",
+            "ZV90YXgYCSABKAUSEAoIYXJlYV9iZXQYEyADKAUSDgoGc2lldmVzGBQgAygF",
+            "EigKC3BsYXllcl9saXN0GBYgAygLMhMuQTdVN1AuQTdQbGF5ZXJEYXRhIiUK",
+            "CE1zZ0E3QmV0EgsKA2JldBgBIAEoAxIMCgRhcmVhGAIgASgFImcKDE1zZ0E3",
+            "QmV0UmVzcBIQCghyZXRfY29kZRgBIAEoBRIPCgd1c2VyX2lkGAIgASgFEhAK",
+            "CGNoYWlyX2lkGAMgASgFEiIKCGJldF9pbmZvGAQgASgLMhAuQTdVN1AuQTdC",
+            "ZXRJbmZvIlQKC01zZ0E3V2luTXNnEg8KB3VzZXJfaWQYASABKAUSEAoIY2hh",
+            "aXJfaWQYAiABKAUSEAoId2luX2dvbGQYAyABKAMSEAoIbmV3X2dvbGQYBCAB",
+            "KAMiVQoLTXNnQTdSZXN1bHQSDgoGc2lldmVzGAIgAygFEhEKCXdpbl9pbmRl",
+            "eBgBIAMoBRIjCgd3aW5fbXNnGAMgAygLMhIuQTdVN1AuTXNnQTdXaW5Nc2cq",
+            "QwoKRUdhbWVTdGF0ZRIMCghHU19SZWFkeRAAEgwKCEdTX1N0YXJ0EAESCgoG",
+            "R1NfQmV0EAISDQoJR1NfUmVzdWx0EAMqmQEKDUVNc2dJRFN1YkdhbWUSFQoR",
+            "TXNnSURTdWJHYW1lX051bGwQABIUChBNc2dJRFN1YkdhbWVfQmV0EAESGAoU",
+            "TXNnSURTdWJHYW1lX0JldFJlc3AQAhIfChtNc2dJRFN1YkdhbWVfR2FtZVJl",
+            "c3VsdFJlc3AQBxIgChxNc2dJRFN1YkdhbWVfTm90aWZ5U3RhdGVSZXNwEAhi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::A7U7P.EGameState), typeof(global::A7U7P.EMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.MsgA7NotifyState), global::A7U7P.MsgA7NotifyState.Parser, new[]{ "GameState", "Time" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.A7BetInfo), global::A7U7P.A7BetInfo.Parser, new[]{ "Bet", "Area" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.A7PlayerData), global::A7U7P.A7PlayerData.Parser, new[]{ "UserId", "WinGold", "TotalPlay", "WinPlay", "BetInfos" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.A7PlayerData), global::A7U7P.A7PlayerData.Parser, new[]{ "UserId", "ChairId", "WinGold", "TotalPlay", "WinPlay", "BetInfos" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.MsgA7Record), global::A7U7P.MsgA7Record.Parser, new[]{ "Sieves" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.MsgA7SceneInfo), global::A7U7P.MsgA7SceneInfo.Parser, new[]{ "BetList", "Records", "BetLimit", "PlayerLimit", "BetTime", "OutTime", "State", "GameTax", "AreaBet", "Sieves", "PlayerList" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.MsgA7SceneInfo), global::A7U7P.MsgA7SceneInfo.Parser, new[]{ "BetList", "AreaMup", "Records", "BetLimit", "PlayerLimit", "BetTime", "OutTime", "State", "GameTax", "AreaBet", "Sieves", "PlayerList" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.MsgA7Bet), global::A7U7P.MsgA7Bet.Parser, new[]{ "Bet", "Area" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.MsgA7BetResp), global::A7U7P.MsgA7BetResp.Parser, new[]{ "RetCode", "UserId", "ChairId", "BetInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.MsgA7WinMsg), global::A7U7P.MsgA7WinMsg.Parser, new[]{ "UserId", "ChairId", "WinGold", "NewGold" }, null, null, null, null),
@@ -570,6 +571,7 @@ namespace A7U7P {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public A7PlayerData(A7PlayerData other) : this() {
       userId_ = other.userId_;
+      chairId_ = other.chairId_;
       winGold_ = other.winGold_;
       totalPlay_ = other.totalPlay_;
       winPlay_ = other.winPlay_;
@@ -593,8 +595,22 @@ namespace A7U7P {
       }
     }
 
+    /// <summary>Field number for the "chair_id" field.</summary>
+    public const int ChairIdFieldNumber = 2;
+    private int chairId_;
+    /// <summary>
+    /// 
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int ChairId {
+      get { return chairId_; }
+      set {
+        chairId_ = value;
+      }
+    }
+
     /// <summary>Field number for the "win_gold" field.</summary>
-    public const int WinGoldFieldNumber = 2;
+    public const int WinGoldFieldNumber = 3;
     private long winGold_;
     /// <summary>
     /// 总赢
@@ -608,7 +624,7 @@ namespace A7U7P {
     }
 
     /// <summary>Field number for the "total_play" field.</summary>
-    public const int TotalPlayFieldNumber = 3;
+    public const int TotalPlayFieldNumber = 4;
     private int totalPlay_;
     /// <summary>
     /// 总玩次数
@@ -622,7 +638,7 @@ namespace A7U7P {
     }
 
     /// <summary>Field number for the "win_play" field.</summary>
-    public const int WinPlayFieldNumber = 4;
+    public const int WinPlayFieldNumber = 5;
     private int winPlay_;
     /// <summary>
     /// 赢次数
@@ -636,9 +652,9 @@ namespace A7U7P {
     }
 
     /// <summary>Field number for the "bet_infos" field.</summary>
-    public const int BetInfosFieldNumber = 5;
+    public const int BetInfosFieldNumber = 6;
     private static readonly pb::FieldCodec<global::A7U7P.A7BetInfo> _repeated_betInfos_codec
-        = pb::FieldCodec.ForMessage(42, global::A7U7P.A7BetInfo.Parser);
+        = pb::FieldCodec.ForMessage(50, global::A7U7P.A7BetInfo.Parser);
     private readonly pbc::RepeatedField<global::A7U7P.A7BetInfo> betInfos_ = new pbc::RepeatedField<global::A7U7P.A7BetInfo>();
     /// <summary>
     /// 下注状态
@@ -662,6 +678,7 @@ namespace A7U7P {
         return true;
       }
       if (UserId != other.UserId) return false;
+      if (ChairId != other.ChairId) return false;
       if (WinGold != other.WinGold) return false;
       if (TotalPlay != other.TotalPlay) return false;
       if (WinPlay != other.WinPlay) return false;
@@ -673,6 +690,7 @@ namespace A7U7P {
     public override int GetHashCode() {
       int hash = 1;
       if (UserId != 0) hash ^= UserId.GetHashCode();
+      if (ChairId != 0) hash ^= ChairId.GetHashCode();
       if (WinGold != 0L) hash ^= WinGold.GetHashCode();
       if (TotalPlay != 0) hash ^= TotalPlay.GetHashCode();
       if (WinPlay != 0) hash ^= WinPlay.GetHashCode();
@@ -697,16 +715,20 @@ namespace A7U7P {
         output.WriteRawTag(8);
         output.WriteInt32(UserId);
       }
-      if (WinGold != 0L) {
+      if (ChairId != 0) {
         output.WriteRawTag(16);
+        output.WriteInt32(ChairId);
+      }
+      if (WinGold != 0L) {
+        output.WriteRawTag(24);
         output.WriteInt64(WinGold);
       }
       if (TotalPlay != 0) {
-        output.WriteRawTag(24);
+        output.WriteRawTag(32);
         output.WriteInt32(TotalPlay);
       }
       if (WinPlay != 0) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(40);
         output.WriteInt32(WinPlay);
       }
       betInfos_.WriteTo(output, _repeated_betInfos_codec);
@@ -723,16 +745,20 @@ namespace A7U7P {
         output.WriteRawTag(8);
         output.WriteInt32(UserId);
       }
-      if (WinGold != 0L) {
+      if (ChairId != 0) {
         output.WriteRawTag(16);
+        output.WriteInt32(ChairId);
+      }
+      if (WinGold != 0L) {
+        output.WriteRawTag(24);
         output.WriteInt64(WinGold);
       }
       if (TotalPlay != 0) {
-        output.WriteRawTag(24);
+        output.WriteRawTag(32);
         output.WriteInt32(TotalPlay);
       }
       if (WinPlay != 0) {
-        output.WriteRawTag(32);
+        output.WriteRawTag(40);
         output.WriteInt32(WinPlay);
       }
       betInfos_.WriteTo(ref output, _repeated_betInfos_codec);
@@ -747,6 +773,9 @@ namespace A7U7P {
       int size = 0;
       if (UserId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserId);
+      }
+      if (ChairId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChairId);
       }
       if (WinGold != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(WinGold);
@@ -771,6 +800,9 @@ namespace A7U7P {
       }
       if (other.UserId != 0) {
         UserId = other.UserId;
+      }
+      if (other.ChairId != 0) {
+        ChairId = other.ChairId;
       }
       if (other.WinGold != 0L) {
         WinGold = other.WinGold;
@@ -801,18 +833,22 @@ namespace A7U7P {
             break;
           }
           case 16: {
-            WinGold = input.ReadInt64();
+            ChairId = input.ReadInt32();
             break;
           }
           case 24: {
-            TotalPlay = input.ReadInt32();
+            WinGold = input.ReadInt64();
             break;
           }
           case 32: {
+            TotalPlay = input.ReadInt32();
+            break;
+          }
+          case 40: {
             WinPlay = input.ReadInt32();
             break;
           }
-          case 42: {
+          case 50: {
             betInfos_.AddEntriesFrom(input, _repeated_betInfos_codec);
             break;
           }
@@ -835,18 +871,22 @@ namespace A7U7P {
             break;
           }
           case 16: {
-            WinGold = input.ReadInt64();
+            ChairId = input.ReadInt32();
             break;
           }
           case 24: {
-            TotalPlay = input.ReadInt32();
+            WinGold = input.ReadInt64();
             break;
           }
           case 32: {
+            TotalPlay = input.ReadInt32();
+            break;
+          }
+          case 40: {
             WinPlay = input.ReadInt32();
             break;
           }
-          case 42: {
+          case 50: {
             betInfos_.AddEntriesFrom(ref input, _repeated_betInfos_codec);
             break;
           }
@@ -1056,6 +1096,7 @@ namespace A7U7P {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public MsgA7SceneInfo(MsgA7SceneInfo other) : this() {
       betList_ = other.betList_.Clone();
+      areaMup_ = other.areaMup_.Clone();
       records_ = other.records_.Clone();
       betLimit_ = other.betLimit_.Clone();
       playerLimit_ = other.playerLimit_;
@@ -1087,10 +1128,23 @@ namespace A7U7P {
       get { return betList_; }
     }
 
+    /// <summary>Field number for the "area_mup" field.</summary>
+    public const int AreaMupFieldNumber = 2;
+    private static readonly pb::FieldCodec<int> _repeated_areaMup_codec
+        = pb::FieldCodec.ForInt32(18);
+    private readonly pbc::RepeatedField<int> areaMup_ = new pbc::RepeatedField<int>();
+    /// <summary>
+    ///区域倍数
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<int> AreaMup {
+      get { return areaMup_; }
+    }
+
     /// <summary>Field number for the "records" field.</summary>
-    public const int RecordsFieldNumber = 2;
+    public const int RecordsFieldNumber = 3;
     private static readonly pb::FieldCodec<global::A7U7P.MsgA7Record> _repeated_records_codec
-        = pb::FieldCodec.ForMessage(18, global::A7U7P.MsgA7Record.Parser);
+        = pb::FieldCodec.ForMessage(26, global::A7U7P.MsgA7Record.Parser);
     private readonly pbc::RepeatedField<global::A7U7P.MsgA7Record> records_ = new pbc::RepeatedField<global::A7U7P.MsgA7Record>();
     /// <summary>
     ///开筛子结果历史记录 
@@ -1101,9 +1155,9 @@ namespace A7U7P {
     }
 
     /// <summary>Field number for the "bet_limit" field.</summary>
-    public const int BetLimitFieldNumber = 3;
+    public const int BetLimitFieldNumber = 4;
     private static readonly pb::FieldCodec<int> _repeated_betLimit_codec
-        = pb::FieldCodec.ForInt32(26);
+        = pb::FieldCodec.ForInt32(34);
     private readonly pbc::RepeatedField<int> betLimit_ = new pbc::RepeatedField<int>();
     /// <summary>
     ///区域下注限制 17个区域
@@ -1236,6 +1290,7 @@ namespace A7U7P {
         return true;
       }
       if(!betList_.Equals(other.betList_)) return false;
+      if(!areaMup_.Equals(other.areaMup_)) return false;
       if(!records_.Equals(other.records_)) return false;
       if(!betLimit_.Equals(other.betLimit_)) return false;
       if (PlayerLimit != other.PlayerLimit) return false;
@@ -1253,6 +1308,7 @@ namespace A7U7P {
     public override int GetHashCode() {
       int hash = 1;
       hash ^= betList_.GetHashCode();
+      hash ^= areaMup_.GetHashCode();
       hash ^= records_.GetHashCode();
       hash ^= betLimit_.GetHashCode();
       if (PlayerLimit != 0) hash ^= PlayerLimit.GetHashCode();
@@ -1280,6 +1336,7 @@ namespace A7U7P {
       output.WriteRawMessage(this);
     #else
       betList_.WriteTo(output, _repeated_betList_codec);
+      areaMup_.WriteTo(output, _repeated_areaMup_codec);
       records_.WriteTo(output, _repeated_records_codec);
       betLimit_.WriteTo(output, _repeated_betLimit_codec);
       if (PlayerLimit != 0) {
@@ -1315,6 +1372,7 @@ namespace A7U7P {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       betList_.WriteTo(ref output, _repeated_betList_codec);
+      areaMup_.WriteTo(ref output, _repeated_areaMup_codec);
       records_.WriteTo(ref output, _repeated_records_codec);
       betLimit_.WriteTo(ref output, _repeated_betLimit_codec);
       if (PlayerLimit != 0) {
@@ -1350,6 +1408,7 @@ namespace A7U7P {
     public int CalculateSize() {
       int size = 0;
       size += betList_.CalculateSize(_repeated_betList_codec);
+      size += areaMup_.CalculateSize(_repeated_areaMup_codec);
       size += records_.CalculateSize(_repeated_records_codec);
       size += betLimit_.CalculateSize(_repeated_betLimit_codec);
       if (PlayerLimit != 0) {
@@ -1382,6 +1441,7 @@ namespace A7U7P {
         return;
       }
       betList_.Add(other.betList_);
+      areaMup_.Add(other.areaMup_);
       records_.Add(other.records_);
       betLimit_.Add(other.betLimit_);
       if (other.PlayerLimit != 0) {
@@ -1421,12 +1481,17 @@ namespace A7U7P {
             betList_.AddEntriesFrom(input, _repeated_betList_codec);
             break;
           }
-          case 18: {
+          case 18:
+          case 16: {
+            areaMup_.AddEntriesFrom(input, _repeated_areaMup_codec);
+            break;
+          }
+          case 26: {
             records_.AddEntriesFrom(input, _repeated_records_codec);
             break;
           }
-          case 26:
-          case 24: {
+          case 34:
+          case 32: {
             betLimit_.AddEntriesFrom(input, _repeated_betLimit_codec);
             break;
           }
@@ -1483,12 +1548,17 @@ namespace A7U7P {
             betList_.AddEntriesFrom(ref input, _repeated_betList_codec);
             break;
           }
-          case 18: {
+          case 18:
+          case 16: {
+            areaMup_.AddEntriesFrom(ref input, _repeated_areaMup_codec);
+            break;
+          }
+          case 26: {
             records_.AddEntriesFrom(ref input, _repeated_records_codec);
             break;
           }
-          case 26:
-          case 24: {
+          case 34:
+          case 32: {
             betLimit_.AddEntriesFrom(ref input, _repeated_betLimit_codec);
             break;
           }
@@ -1593,7 +1663,7 @@ namespace A7U7P {
     public const int AreaFieldNumber = 2;
     private int area_;
     /// <summary>
-    ///押注区域(0-17)
+    ///押注区域(0-16)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int Area {

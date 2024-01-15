@@ -1409,10 +1409,10 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ServerInternalProto_2eproto::o
   PROTOBUF_FIELD_OFFSET(::MsgDBWriteScore, bet_),
   PROTOBUF_FIELD_OFFSET(::MsgDBWriteScore, score_),
   PROTOBUF_FIELD_OFFSET(::MsgDBWriteScore, is_up_rank_),
-  PROTOBUF_FIELD_OFFSET(::MsgDBWriteScore, game_details_),
   PROTOBUF_FIELD_OFFSET(::MsgDBWriteScore, table_id_),
   PROTOBUF_FIELD_OFFSET(::MsgDBWriteScore, table_no_),
   PROTOBUF_FIELD_OFFSET(::MsgDBWriteScore, tax_score_),
+  PROTOBUF_FIELD_OFFSET(::MsgDBWriteScore, game_details_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgDBWriteScoreResp, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1881,9 +1881,9 @@ const char descriptor_table_protodef_ServerInternalProto_2eproto[] PROTOBUF_SECT
   "rver_id\030\014 \001(\005\022\017\n\007user_ip\030\r \001(\t\022\021\n\tlongit"
   "ude\030\016 \001(\t\022\020\n\010latitude\030\017 \001(\t\"\237\001\n\017MsgDBWri"
   "teScore\022\017\n\007user_id\030\001 \001(\005\022\013\n\003bet\030\002 \001(\005\022\r\n"
-  "\005score\030\003 \001(\003\022\022\n\nis_up_rank\030\004 \001(\005\022\024\n\014game"
-  "_details\030\005 \001(\t\022\020\n\010table_id\030\006 \001(\005\022\020\n\010tabl"
-  "e_no\030\007 \001(\005\022\021\n\ttax_score\030\010 \001(\003\"\350\001\n\023MsgDBW"
+  "\005score\030\003 \001(\003\022\022\n\nis_up_rank\030\004 \001(\005\022\020\n\010tabl"
+  "e_id\030\005 \001(\005\022\020\n\010table_no\030\006 \001(\005\022\021\n\ttax_scor"
+  "e\030\007 \001(\003\022\024\n\014game_details\030\010 \001(\t\"\350\001\n\023MsgDBW"
   "riteScoreResp\022\017\n\007user_id\030\001 \001(\005\022\031\n\021player"
   "_cheat_rate\030\002 \001(\005\022\032\n\022player_cheat_score\030"
   "\003 \001(\005\022\031\n\021system_cheat_rate\030\004 \001(\005\022\032\n\022syst"
@@ -12334,33 +12334,33 @@ const char* MsgDBWriteScore::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // string game_details = 5;
+      // int32 table_id = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
-          auto str = _internal_mutable_game_details();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgDBWriteScore.game_details"));
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 table_id = 6;
-      case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
           table_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 table_no = 7;
-      case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
+      // int32 table_no = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
           table_no_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int64 tax_score = 8;
-      case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+      // int64 tax_score = 7;
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
           tax_score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string game_details = 8;
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 66)) {
+          auto str = _internal_mutable_game_details();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgDBWriteScore.game_details"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -12416,32 +12416,32 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_is_up_rank(), target);
   }
 
-  // string game_details = 5;
+  // int32 table_id = 5;
+  if (this->table_id() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_table_id(), target);
+  }
+
+  // int32 table_no = 6;
+  if (this->table_no() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_table_no(), target);
+  }
+
+  // int64 tax_score = 7;
+  if (this->tax_score() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(7, this->_internal_tax_score(), target);
+  }
+
+  // string game_details = 8;
   if (this->game_details().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_game_details().data(), static_cast<int>(this->_internal_game_details().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "MsgDBWriteScore.game_details");
     target = stream->WriteStringMaybeAliased(
-        5, this->_internal_game_details(), target);
-  }
-
-  // int32 table_id = 6;
-  if (this->table_id() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_table_id(), target);
-  }
-
-  // int32 table_no = 7;
-  if (this->table_no() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(7, this->_internal_table_no(), target);
-  }
-
-  // int64 tax_score = 8;
-  if (this->tax_score() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(8, this->_internal_tax_score(), target);
+        8, this->_internal_game_details(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -12460,7 +12460,7 @@ size_t MsgDBWriteScore::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string game_details = 5;
+  // string game_details = 8;
   if (this->game_details().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
@@ -12495,21 +12495,21 @@ size_t MsgDBWriteScore::ByteSizeLong() const {
         this->_internal_is_up_rank());
   }
 
-  // int32 table_id = 6;
+  // int32 table_id = 5;
   if (this->table_id() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_table_id());
   }
 
-  // int64 tax_score = 8;
+  // int64 tax_score = 7;
   if (this->tax_score() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_tax_score());
   }
 
-  // int32 table_no = 7;
+  // int32 table_no = 6;
   if (this->table_no() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(

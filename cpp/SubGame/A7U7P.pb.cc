@@ -203,6 +203,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_A7U7P_2eproto::offsets[] PROTO
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::A7U7P::A7PlayerData, user_id_),
+  PROTOBUF_FIELD_OFFSET(::A7U7P::A7PlayerData, chair_id_),
   PROTOBUF_FIELD_OFFSET(::A7U7P::A7PlayerData, win_gold_),
   PROTOBUF_FIELD_OFFSET(::A7U7P::A7PlayerData, total_play_),
   PROTOBUF_FIELD_OFFSET(::A7U7P::A7PlayerData, win_play_),
@@ -219,6 +220,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_A7U7P_2eproto::offsets[] PROTO
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::A7U7P::MsgA7SceneInfo, bet_list_),
+  PROTOBUF_FIELD_OFFSET(::A7U7P::MsgA7SceneInfo, area_mup_),
   PROTOBUF_FIELD_OFFSET(::A7U7P::MsgA7SceneInfo, records_),
   PROTOBUF_FIELD_OFFSET(::A7U7P::MsgA7SceneInfo, bet_limit_),
   PROTOBUF_FIELD_OFFSET(::A7U7P::MsgA7SceneInfo, player_limit_),
@@ -267,12 +269,12 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 0, -1, sizeof(::A7U7P::MsgA7NotifyState)},
   { 7, -1, sizeof(::A7U7P::A7BetInfo)},
   { 14, -1, sizeof(::A7U7P::A7PlayerData)},
-  { 24, -1, sizeof(::A7U7P::MsgA7Record)},
-  { 30, -1, sizeof(::A7U7P::MsgA7SceneInfo)},
-  { 46, -1, sizeof(::A7U7P::MsgA7Bet)},
-  { 53, -1, sizeof(::A7U7P::MsgA7BetResp)},
-  { 62, -1, sizeof(::A7U7P::MsgA7WinMsg)},
-  { 71, -1, sizeof(::A7U7P::MsgA7Result)},
+  { 25, -1, sizeof(::A7U7P::MsgA7Record)},
+  { 31, -1, sizeof(::A7U7P::MsgA7SceneInfo)},
+  { 48, -1, sizeof(::A7U7P::MsgA7Bet)},
+  { 55, -1, sizeof(::A7U7P::MsgA7BetResp)},
+  { 64, -1, sizeof(::A7U7P::MsgA7WinMsg)},
+  { 73, -1, sizeof(::A7U7P::MsgA7Result)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -290,32 +292,32 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
 const char descriptor_table_protodef_A7U7P_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n\013A7U7P.proto\022\005A7U7P\"4\n\020MsgA7NotifyState"
   "\022\022\n\ngame_state\030\001 \001(\005\022\014\n\004time\030\002 \001(\005\"&\n\tA7"
-  "BetInfo\022\013\n\003bet\030\001 \001(\003\022\014\n\004area\030\002 \001(\005\"|\n\014A7"
-  "PlayerData\022\017\n\007user_id\030\001 \001(\005\022\020\n\010win_gold\030"
-  "\002 \001(\003\022\022\n\ntotal_play\030\003 \001(\005\022\020\n\010win_play\030\004 "
-  "\001(\005\022#\n\tbet_infos\030\005 \003(\0132\020.A7U7P.A7BetInfo"
-  "\"\035\n\013MsgA7Record\022\016\n\006sieves\030\002 \003(\005\"\201\002\n\016MsgA"
-  "7SceneInfo\022\020\n\010bet_list\030\001 \003(\003\022#\n\007records\030"
-  "\002 \003(\0132\022.A7U7P.MsgA7Record\022\021\n\tbet_limit\030\003"
-  " \003(\005\022\024\n\014player_limit\030\005 \001(\005\022\020\n\010bet_time\030\006"
-  " \001(\005\022\020\n\010out_time\030\007 \001(\005\022\r\n\005state\030\010 \001(\005\022\020\n"
-  "\010game_tax\030\t \001(\005\022\020\n\010area_bet\030\023 \003(\005\022\016\n\006sie"
-  "ves\030\024 \003(\005\022(\n\013player_list\030\026 \003(\0132\023.A7U7P.A"
-  "7PlayerData\"%\n\010MsgA7Bet\022\013\n\003bet\030\001 \001(\003\022\014\n\004"
-  "area\030\002 \001(\005\"g\n\014MsgA7BetResp\022\020\n\010ret_code\030\001"
-  " \001(\005\022\017\n\007user_id\030\002 \001(\005\022\020\n\010chair_id\030\003 \001(\005\022"
-  "\"\n\010bet_info\030\004 \001(\0132\020.A7U7P.A7BetInfo\"T\n\013M"
-  "sgA7WinMsg\022\017\n\007user_id\030\001 \001(\005\022\020\n\010chair_id\030"
-  "\002 \001(\005\022\020\n\010win_gold\030\003 \001(\003\022\020\n\010new_gold\030\004 \001("
-  "\003\"U\n\013MsgA7Result\022\016\n\006sieves\030\002 \003(\005\022\021\n\twin_"
-  "index\030\001 \003(\005\022#\n\007win_msg\030\003 \003(\0132\022.A7U7P.Msg"
-  "A7WinMsg*C\n\nEGameState\022\014\n\010GS_Ready\020\000\022\014\n\010"
-  "GS_Start\020\001\022\n\n\006GS_Bet\020\002\022\r\n\tGS_Result\020\003*\231\001"
-  "\n\rEMsgIDSubGame\022\025\n\021MsgIDSubGame_Null\020\000\022\024"
-  "\n\020MsgIDSubGame_Bet\020\001\022\030\n\024MsgIDSubGame_Bet"
-  "Resp\020\002\022\037\n\033MsgIDSubGame_GameResultResp\020\007\022"
-  " \n\034MsgIDSubGame_NotifyStateResp\020\010b\006proto"
-  "3"
+  "BetInfo\022\013\n\003bet\030\001 \001(\003\022\014\n\004area\030\002 \001(\005\"\216\001\n\014A"
+  "7PlayerData\022\017\n\007user_id\030\001 \001(\005\022\020\n\010chair_id"
+  "\030\002 \001(\005\022\020\n\010win_gold\030\003 \001(\003\022\022\n\ntotal_play\030\004"
+  " \001(\005\022\020\n\010win_play\030\005 \001(\005\022#\n\tbet_infos\030\006 \003("
+  "\0132\020.A7U7P.A7BetInfo\"\035\n\013MsgA7Record\022\016\n\006si"
+  "eves\030\002 \003(\005\"\223\002\n\016MsgA7SceneInfo\022\020\n\010bet_lis"
+  "t\030\001 \003(\003\022\020\n\010area_mup\030\002 \003(\005\022#\n\007records\030\003 \003"
+  "(\0132\022.A7U7P.MsgA7Record\022\021\n\tbet_limit\030\004 \003("
+  "\005\022\024\n\014player_limit\030\005 \001(\005\022\020\n\010bet_time\030\006 \001("
+  "\005\022\020\n\010out_time\030\007 \001(\005\022\r\n\005state\030\010 \001(\005\022\020\n\010ga"
+  "me_tax\030\t \001(\005\022\020\n\010area_bet\030\023 \003(\005\022\016\n\006sieves"
+  "\030\024 \003(\005\022(\n\013player_list\030\026 \003(\0132\023.A7U7P.A7Pl"
+  "ayerData\"%\n\010MsgA7Bet\022\013\n\003bet\030\001 \001(\003\022\014\n\004are"
+  "a\030\002 \001(\005\"g\n\014MsgA7BetResp\022\020\n\010ret_code\030\001 \001("
+  "\005\022\017\n\007user_id\030\002 \001(\005\022\020\n\010chair_id\030\003 \001(\005\022\"\n\010"
+  "bet_info\030\004 \001(\0132\020.A7U7P.A7BetInfo\"T\n\013MsgA"
+  "7WinMsg\022\017\n\007user_id\030\001 \001(\005\022\020\n\010chair_id\030\002 \001"
+  "(\005\022\020\n\010win_gold\030\003 \001(\003\022\020\n\010new_gold\030\004 \001(\003\"U"
+  "\n\013MsgA7Result\022\016\n\006sieves\030\002 \003(\005\022\021\n\twin_ind"
+  "ex\030\001 \003(\005\022#\n\007win_msg\030\003 \003(\0132\022.A7U7P.MsgA7W"
+  "inMsg*C\n\nEGameState\022\014\n\010GS_Ready\020\000\022\014\n\010GS_"
+  "Start\020\001\022\n\n\006GS_Bet\020\002\022\r\n\tGS_Result\020\003*\231\001\n\rE"
+  "MsgIDSubGame\022\025\n\021MsgIDSubGame_Null\020\000\022\024\n\020M"
+  "sgIDSubGame_Bet\020\001\022\030\n\024MsgIDSubGame_BetRes"
+  "p\020\002\022\037\n\033MsgIDSubGame_GameResultResp\020\007\022 \n\034"
+  "MsgIDSubGame_NotifyStateResp\020\010b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_A7U7P_2eproto_deps[1] = {
 };
@@ -332,7 +334,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_A7U
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_A7U7P_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_A7U7P_2eproto = {
-  false, false, descriptor_table_protodef_A7U7P_2eproto, "A7U7P.proto", 1081,
+  false, false, descriptor_table_protodef_A7U7P_2eproto, "A7U7P.proto", 1118,
   &descriptor_table_A7U7P_2eproto_once, descriptor_table_A7U7P_2eproto_sccs, descriptor_table_A7U7P_2eproto_deps, 9, 0,
   schemas, file_default_instances, TableStruct_A7U7P_2eproto::offsets,
   file_level_metadata_A7U7P_2eproto, 9, file_level_enum_descriptors_A7U7P_2eproto, file_level_service_descriptors_A7U7P_2eproto,
@@ -850,18 +852,18 @@ A7PlayerData::A7PlayerData(const A7PlayerData& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       bet_infos_(from.bet_infos_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&win_gold_, &from.win_gold_,
+  ::memcpy(&user_id_, &from.user_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&win_play_) -
-    reinterpret_cast<char*>(&win_gold_)) + sizeof(win_play_));
+    reinterpret_cast<char*>(&user_id_)) + sizeof(win_play_));
   // @@protoc_insertion_point(copy_constructor:A7U7P.A7PlayerData)
 }
 
 void A7PlayerData::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_A7PlayerData_A7U7P_2eproto.base);
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&win_gold_) - reinterpret_cast<char*>(this)),
+      reinterpret_cast<char*>(&user_id_) - reinterpret_cast<char*>(this)),
       0, static_cast<size_t>(reinterpret_cast<char*>(&win_play_) -
-      reinterpret_cast<char*>(&win_gold_)) + sizeof(win_play_));
+      reinterpret_cast<char*>(&user_id_)) + sizeof(win_play_));
 }
 
 A7PlayerData::~A7PlayerData() {
@@ -896,9 +898,9 @@ void A7PlayerData::Clear() {
   (void) cached_has_bits;
 
   bet_infos_.Clear();
-  ::memset(&win_gold_, 0, static_cast<size_t>(
+  ::memset(&user_id_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&win_play_) -
-      reinterpret_cast<char*>(&win_gold_)) + sizeof(win_play_));
+      reinterpret_cast<char*>(&user_id_)) + sizeof(win_play_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -916,37 +918,44 @@ const char* A7PlayerData::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int64 win_gold = 2;
+      // int32 chair_id = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          chair_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 win_gold = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           win_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 total_play = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+      // int32 total_play = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           total_play_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 win_play = 4;
-      case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+      // int32 win_play = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
           win_play_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated .A7U7P.A7BetInfo bet_infos = 5;
-      case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+      // repeated .A7U7P.A7BetInfo bet_infos = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
           ptr -= 1;
           do {
             ptr += 1;
             ptr = ctx->ParseMessage(_internal_add_bet_infos(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<42>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<50>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -983,30 +992,36 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_user_id(), target);
   }
 
-  // int64 win_gold = 2;
+  // int32 chair_id = 2;
+  if (this->chair_id() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_chair_id(), target);
+  }
+
+  // int64 win_gold = 3;
   if (this->win_gold() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_win_gold(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_win_gold(), target);
   }
 
-  // int32 total_play = 3;
+  // int32 total_play = 4;
   if (this->total_play() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_total_play(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_total_play(), target);
   }
 
-  // int32 win_play = 4;
+  // int32 win_play = 5;
   if (this->win_play() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_win_play(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_win_play(), target);
   }
 
-  // repeated .A7U7P.A7BetInfo bet_infos = 5;
+  // repeated .A7U7P.A7BetInfo bet_infos = 6;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_bet_infos_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(5, this->_internal_bet_infos(i), target, stream);
+      InternalWriteMessage(6, this->_internal_bet_infos(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1025,18 +1040,11 @@ size_t A7PlayerData::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .A7U7P.A7BetInfo bet_infos = 5;
+  // repeated .A7U7P.A7BetInfo bet_infos = 6;
   total_size += 1UL * this->_internal_bet_infos_size();
   for (const auto& msg : this->bet_infos_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
-  }
-
-  // int64 win_gold = 2;
-  if (this->win_gold() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_win_gold());
   }
 
   // int32 user_id = 1;
@@ -1046,14 +1054,28 @@ size_t A7PlayerData::ByteSizeLong() const {
         this->_internal_user_id());
   }
 
-  // int32 total_play = 3;
+  // int32 chair_id = 2;
+  if (this->chair_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_chair_id());
+  }
+
+  // int64 win_gold = 3;
+  if (this->win_gold() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_win_gold());
+  }
+
+  // int32 total_play = 4;
   if (this->total_play() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_total_play());
   }
 
-  // int32 win_play = 4;
+  // int32 win_play = 5;
   if (this->win_play() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
@@ -1092,11 +1114,14 @@ void A7PlayerData::MergeFrom(const A7PlayerData& from) {
   (void) cached_has_bits;
 
   bet_infos_.MergeFrom(from.bet_infos_);
-  if (from.win_gold() != 0) {
-    _internal_set_win_gold(from._internal_win_gold());
-  }
   if (from.user_id() != 0) {
     _internal_set_user_id(from._internal_user_id());
+  }
+  if (from.chair_id() != 0) {
+    _internal_set_chair_id(from._internal_chair_id());
+  }
+  if (from.win_gold() != 0) {
+    _internal_set_win_gold(from._internal_win_gold());
   }
   if (from.total_play() != 0) {
     _internal_set_total_play(from._internal_total_play());
@@ -1131,9 +1156,9 @@ void A7PlayerData::InternalSwap(A7PlayerData* other) {
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(A7PlayerData, win_play_)
       + sizeof(A7PlayerData::win_play_)
-      - PROTOBUF_FIELD_OFFSET(A7PlayerData, win_gold_)>(
-          reinterpret_cast<char*>(&win_gold_),
-          reinterpret_cast<char*>(&other->win_gold_));
+      - PROTOBUF_FIELD_OFFSET(A7PlayerData, user_id_)>(
+          reinterpret_cast<char*>(&user_id_),
+          reinterpret_cast<char*>(&other->user_id_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata A7PlayerData::GetMetadata() const {
@@ -1356,6 +1381,7 @@ class MsgA7SceneInfo::_Internal {
 MsgA7SceneInfo::MsgA7SceneInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena),
   bet_list_(arena),
+  area_mup_(arena),
   records_(arena),
   bet_limit_(arena),
   area_bet_(arena),
@@ -1368,6 +1394,7 @@ MsgA7SceneInfo::MsgA7SceneInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 MsgA7SceneInfo::MsgA7SceneInfo(const MsgA7SceneInfo& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       bet_list_(from.bet_list_),
+      area_mup_(from.area_mup_),
       records_(from.records_),
       bet_limit_(from.bet_limit_),
       area_bet_(from.area_bet_),
@@ -1420,6 +1447,7 @@ void MsgA7SceneInfo::Clear() {
   (void) cached_has_bits;
 
   bet_list_.Clear();
+  area_mup_.Clear();
   records_.Clear();
   bet_limit_.Clear();
   area_bet_.Clear();
@@ -1448,24 +1476,34 @@ const char* MsgA7SceneInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated .A7U7P.MsgA7Record records = 2;
+      // repeated int32 area_mup = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_area_mup(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16) {
+          _internal_add_area_mup(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated .A7U7P.MsgA7Record records = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
           ptr -= 1;
           do {
             ptr += 1;
             ptr = ctx->ParseMessage(_internal_add_records(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<26>(ptr));
         } else goto handle_unusual;
         continue;
-      // repeated int32 bet_limit = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+      // repeated int32 bet_limit = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_bet_limit(), ptr, ctx);
           CHK_(ptr);
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24) {
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32) {
           _internal_add_bet_limit(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
@@ -1574,20 +1612,29 @@ failure:
     }
   }
 
-  // repeated .A7U7P.MsgA7Record records = 2;
+  // repeated int32 area_mup = 2;
+  {
+    int byte_size = _area_mup_cached_byte_size_.load(std::memory_order_relaxed);
+    if (byte_size > 0) {
+      target = stream->WriteInt32Packed(
+          2, _internal_area_mup(), byte_size, target);
+    }
+  }
+
+  // repeated .A7U7P.MsgA7Record records = 3;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_records_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_records(i), target, stream);
+      InternalWriteMessage(3, this->_internal_records(i), target, stream);
   }
 
-  // repeated int32 bet_limit = 3;
+  // repeated int32 bet_limit = 4;
   {
     int byte_size = _bet_limit_cached_byte_size_.load(std::memory_order_relaxed);
     if (byte_size > 0) {
       target = stream->WriteInt32Packed(
-          3, _internal_bet_limit(), byte_size, target);
+          4, _internal_bet_limit(), byte_size, target);
     }
   }
 
@@ -1678,14 +1725,29 @@ size_t MsgA7SceneInfo::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  // repeated .A7U7P.MsgA7Record records = 2;
+  // repeated int32 area_mup = 2;
+  {
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      Int32Size(this->area_mup_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
+    }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _area_mup_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
+  }
+
+  // repeated .A7U7P.MsgA7Record records = 3;
   total_size += 1UL * this->_internal_records_size();
   for (const auto& msg : this->records_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  // repeated int32 bet_limit = 3;
+  // repeated int32 bet_limit = 4;
   {
     size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       Int32Size(this->bet_limit_);
@@ -1804,6 +1866,7 @@ void MsgA7SceneInfo::MergeFrom(const MsgA7SceneInfo& from) {
   (void) cached_has_bits;
 
   bet_list_.MergeFrom(from.bet_list_);
+  area_mup_.MergeFrom(from.area_mup_);
   records_.MergeFrom(from.records_);
   bet_limit_.MergeFrom(from.bet_limit_);
   area_bet_.MergeFrom(from.area_bet_);
@@ -1848,6 +1911,7 @@ void MsgA7SceneInfo::InternalSwap(MsgA7SceneInfo* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   bet_list_.InternalSwap(&other->bet_list_);
+  area_mup_.InternalSwap(&other->area_mup_);
   records_.InternalSwap(&other->records_);
   bet_limit_.InternalSwap(&other->bet_limit_);
   area_bet_.InternalSwap(&other->area_bet_);

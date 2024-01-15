@@ -559,13 +559,14 @@ class A7PlayerData PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kBetInfosFieldNumber = 5,
-    kWinGoldFieldNumber = 2,
+    kBetInfosFieldNumber = 6,
     kUserIdFieldNumber = 1,
-    kTotalPlayFieldNumber = 3,
-    kWinPlayFieldNumber = 4,
+    kChairIdFieldNumber = 2,
+    kWinGoldFieldNumber = 3,
+    kTotalPlayFieldNumber = 4,
+    kWinPlayFieldNumber = 5,
   };
-  // repeated .A7U7P.A7BetInfo bet_infos = 5;
+  // repeated .A7U7P.A7BetInfo bet_infos = 6;
   int bet_infos_size() const;
   private:
   int _internal_bet_infos_size() const;
@@ -583,15 +584,6 @@ class A7PlayerData PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::A7BetInfo >&
       bet_infos() const;
 
-  // int64 win_gold = 2;
-  void clear_win_gold();
-  ::PROTOBUF_NAMESPACE_ID::int64 win_gold() const;
-  void set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_win_gold() const;
-  void _internal_set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
   // int32 user_id = 1;
   void clear_user_id();
   ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
@@ -601,7 +593,25 @@ class A7PlayerData PROTOBUF_FINAL :
   void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 total_play = 3;
+  // int32 chair_id = 2;
+  void clear_chair_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_id() const;
+  void set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_chair_id() const;
+  void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int64 win_gold = 3;
+  void clear_win_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 win_gold() const;
+  void set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_win_gold() const;
+  void _internal_set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int32 total_play = 4;
   void clear_total_play();
   ::PROTOBUF_NAMESPACE_ID::int32 total_play() const;
   void set_total_play(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -610,7 +620,7 @@ class A7PlayerData PROTOBUF_FINAL :
   void _internal_set_total_play(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 win_play = 4;
+  // int32 win_play = 5;
   void clear_win_play();
   ::PROTOBUF_NAMESPACE_ID::int32 win_play() const;
   void set_win_play(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -627,8 +637,9 @@ class A7PlayerData PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::A7BetInfo > bet_infos_;
-  ::PROTOBUF_NAMESPACE_ID::int64 win_gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
+  ::PROTOBUF_NAMESPACE_ID::int64 win_gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 total_play_;
   ::PROTOBUF_NAMESPACE_ID::int32 win_play_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
@@ -899,8 +910,9 @@ class MsgA7SceneInfo PROTOBUF_FINAL :
 
   enum : int {
     kBetListFieldNumber = 1,
-    kRecordsFieldNumber = 2,
-    kBetLimitFieldNumber = 3,
+    kAreaMupFieldNumber = 2,
+    kRecordsFieldNumber = 3,
+    kBetLimitFieldNumber = 4,
     kAreaBetFieldNumber = 19,
     kSievesFieldNumber = 20,
     kPlayerListFieldNumber = 22,
@@ -932,7 +944,29 @@ class MsgA7SceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
       mutable_bet_list();
 
-  // repeated .A7U7P.MsgA7Record records = 2;
+  // repeated int32 area_mup = 2;
+  int area_mup_size() const;
+  private:
+  int _internal_area_mup_size() const;
+  public:
+  void clear_area_mup();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_area_mup(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_area_mup() const;
+  void _internal_add_area_mup(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_area_mup();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 area_mup(int index) const;
+  void set_area_mup(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_area_mup(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      area_mup() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_area_mup();
+
+  // repeated .A7U7P.MsgA7Record records = 3;
   int records_size() const;
   private:
   int _internal_records_size() const;
@@ -950,7 +984,7 @@ class MsgA7SceneInfo PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::MsgA7Record >&
       records() const;
 
-  // repeated int32 bet_limit = 3;
+  // repeated int32 bet_limit = 4;
   int bet_limit_size() const;
   private:
   int _internal_bet_limit_size() const;
@@ -1088,6 +1122,8 @@ class MsgA7SceneInfo PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 > bet_list_;
   mutable std::atomic<int> _bet_list_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > area_mup_;
+  mutable std::atomic<int> _area_mup_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::MsgA7Record > records_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > bet_limit_;
   mutable std::atomic<int> _bet_limit_cached_byte_size_;
@@ -1912,7 +1948,27 @@ inline void A7PlayerData::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:A7U7P.A7PlayerData.user_id)
 }
 
-// int64 win_gold = 2;
+// int32 chair_id = 2;
+inline void A7PlayerData::clear_chair_id() {
+  chair_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 A7PlayerData::_internal_chair_id() const {
+  return chair_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 A7PlayerData::chair_id() const {
+  // @@protoc_insertion_point(field_get:A7U7P.A7PlayerData.chair_id)
+  return _internal_chair_id();
+}
+inline void A7PlayerData::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  chair_id_ = value;
+}
+inline void A7PlayerData::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_chair_id(value);
+  // @@protoc_insertion_point(field_set:A7U7P.A7PlayerData.chair_id)
+}
+
+// int64 win_gold = 3;
 inline void A7PlayerData::clear_win_gold() {
   win_gold_ = PROTOBUF_LONGLONG(0);
 }
@@ -1932,7 +1988,7 @@ inline void A7PlayerData::set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
   // @@protoc_insertion_point(field_set:A7U7P.A7PlayerData.win_gold)
 }
 
-// int32 total_play = 3;
+// int32 total_play = 4;
 inline void A7PlayerData::clear_total_play() {
   total_play_ = 0;
 }
@@ -1952,7 +2008,7 @@ inline void A7PlayerData::set_total_play(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:A7U7P.A7PlayerData.total_play)
 }
 
-// int32 win_play = 4;
+// int32 win_play = 5;
 inline void A7PlayerData::clear_win_play() {
   win_play_ = 0;
 }
@@ -1972,7 +2028,7 @@ inline void A7PlayerData::set_win_play(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:A7U7P.A7PlayerData.win_play)
 }
 
-// repeated .A7U7P.A7BetInfo bet_infos = 5;
+// repeated .A7U7P.A7BetInfo bet_infos = 6;
 inline int A7PlayerData::_internal_bet_infos_size() const {
   return bet_infos_.size();
 }
@@ -2113,7 +2169,54 @@ MsgA7SceneInfo::mutable_bet_list() {
   return _internal_mutable_bet_list();
 }
 
-// repeated .A7U7P.MsgA7Record records = 2;
+// repeated int32 area_mup = 2;
+inline int MsgA7SceneInfo::_internal_area_mup_size() const {
+  return area_mup_.size();
+}
+inline int MsgA7SceneInfo::area_mup_size() const {
+  return _internal_area_mup_size();
+}
+inline void MsgA7SceneInfo::clear_area_mup() {
+  area_mup_.Clear();
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7SceneInfo::_internal_area_mup(int index) const {
+  return area_mup_.Get(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgA7SceneInfo::area_mup(int index) const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgA7SceneInfo.area_mup)
+  return _internal_area_mup(index);
+}
+inline void MsgA7SceneInfo::set_area_mup(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  area_mup_.Set(index, value);
+  // @@protoc_insertion_point(field_set:A7U7P.MsgA7SceneInfo.area_mup)
+}
+inline void MsgA7SceneInfo::_internal_add_area_mup(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  area_mup_.Add(value);
+}
+inline void MsgA7SceneInfo::add_area_mup(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_area_mup(value);
+  // @@protoc_insertion_point(field_add:A7U7P.MsgA7SceneInfo.area_mup)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+MsgA7SceneInfo::_internal_area_mup() const {
+  return area_mup_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+MsgA7SceneInfo::area_mup() const {
+  // @@protoc_insertion_point(field_list:A7U7P.MsgA7SceneInfo.area_mup)
+  return _internal_area_mup();
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+MsgA7SceneInfo::_internal_mutable_area_mup() {
+  return &area_mup_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+MsgA7SceneInfo::mutable_area_mup() {
+  // @@protoc_insertion_point(field_mutable_list:A7U7P.MsgA7SceneInfo.area_mup)
+  return _internal_mutable_area_mup();
+}
+
+// repeated .A7U7P.MsgA7Record records = 3;
 inline int MsgA7SceneInfo::_internal_records_size() const {
   return records_.size();
 }
@@ -2152,7 +2255,7 @@ MsgA7SceneInfo::records() const {
   return records_;
 }
 
-// repeated int32 bet_limit = 3;
+// repeated int32 bet_limit = 4;
 inline int MsgA7SceneInfo::_internal_bet_limit_size() const {
   return bet_limit_.size();
 }
