@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package WSZS;
+
+enum EMsgIDWSZS
+{
+	SUB_CS_GAME_START					= 0; 		//开始游戏
+	SUB_SC_START_GAME					= 1;		//游戏结束(CMD_3D_SC_Result)
+	SUB_SC_BET_ERR						= 2;    	//下注失败
+}		
+		
+//场景消息		
+message SC_SceneInfo		
+{		
+	int32			free_count			= 1;		//免费次数
+	int32			current_bet			= 2;		//当前下注
+	int32			bet_count			= 3;		//下注列表个数
+	repeated int32	bet					= 4;		//下注
+	repeated int32	mian_ju_count		= 5;		//面具个数（0-3:4个面具 4：scatter）
+};
+
+// 游戏结果返回
+message CMD_3D_SC_Result
+{
+	repeated int32		icon			= 1;	
+	repeated int32 		hit_icon		= 2;		//击中的图标
+	int32				win_gold		= 3;		//赢得金币
+	int32				mian_ju_gold	= 4;		//赢得金币
+	int32				free_count		= 5;		//免费次数
+	repeated int32		mian_ju_count	= 6;		//面具个数（0-3:4个面具 4：scatter）
+};

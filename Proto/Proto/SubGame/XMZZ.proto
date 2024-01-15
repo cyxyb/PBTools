@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package XMZZ;
+
+enum EMsgIDXMZZ
+{
+	SUB_CS_GAME_START					= 0; 		//开始游戏
+	SUB_SC_GAME_OVER					= 1;		//游戏结束	CMD_3D_SC_Result
+	SUB_SC_SMALL_GAME					= 2;		//小游戏返回 没看到用
+	SUB_SC_BET_FAIL						= 3;    	//下注失败
+	SUB_SC_UPDATE_JACKPOT				= 4;    	//奖池分数 CMD_3D_SC_Jackpot
+}		
+		
+//场景消息		
+message SC_SceneInfo		
+{		
+	int32			free_count			= 1;		//免费次数
+	int32			current_bet			= 2;		//当前下注
+	int32			bet_count			= 3;		//下注列表个数
+	repeated int32	bet					= 4;		//下注
+	repeated int32	col_wild			= 5;		//是否出现新的整列wild
+	int32			free_type			= 6;		//免费类型
+};
+
+// 游戏结果返回
+message CMD_3D_SC_Result
+{
+	repeated int32	icon				= 1;	
+	repeated int32 	hit_icon			= 2;		//击中的图标
+	int32			win_gold			= 3;		//赢得金币
+	int32			free_count			= 4;		//免费次数
+	int32			free_type			= 5;		//赢得金币
+};
+
+//更新奖池
+message CMD_3D_SC_Jackpot
+{
+	int32			jack_pot_score		=1;			//奖池分数
+}
