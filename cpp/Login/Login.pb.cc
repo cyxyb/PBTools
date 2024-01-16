@@ -310,6 +310,14 @@ class MsgGetWeekMonthInfoRespDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgGetWeekMonthInfoResp> _instance;
 } _MsgGetWeekMonthInfoResp_default_instance_;
+class MsgWeekMonthGetAwardDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgWeekMonthGetAward> _instance;
+} _MsgWeekMonthGetAward_default_instance_;
+class MsgWeekMonthGetAwardRespDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgWeekMonthGetAwardResp> _instance;
+} _MsgWeekMonthGetAwardResp_default_instance_;
 static void InitDefaultsscc_info_ActiveInfoRet_Login_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -1214,6 +1222,32 @@ static void InitDefaultsscc_info_MsgWeekMonthCfg_Login_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgWeekMonthCfg_Login_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgWeekMonthCfg_Login_2eproto}, {}};
 
+static void InitDefaultsscc_info_MsgWeekMonthGetAward_Login_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_MsgWeekMonthGetAward_default_instance_;
+    new (ptr) ::MsgWeekMonthGetAward();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgWeekMonthGetAward_Login_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgWeekMonthGetAward_Login_2eproto}, {}};
+
+static void InitDefaultsscc_info_MsgWeekMonthGetAwardResp_Login_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_MsgWeekMonthGetAwardResp_default_instance_;
+    new (ptr) ::MsgWeekMonthGetAwardResp();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgWeekMonthGetAwardResp_Login_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgWeekMonthGetAwardResp_Login_2eproto}, {}};
+
 static void InitDefaultsscc_info_MsgWeekMonthInfo_Login_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -1227,7 +1261,7 @@ static void InitDefaultsscc_info_MsgWeekMonthInfo_Login_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgWeekMonthInfo_Login_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgWeekMonthInfo_Login_2eproto}, {}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Login_2eproto[69];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Login_2eproto[71];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_Login_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_Login_2eproto = nullptr;
 
@@ -1878,6 +1912,20 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::MsgGetWeekMonthInfoResp, cards_cfg_),
   PROTOBUF_FIELD_OFFSET(::MsgGetWeekMonthInfoResp, cards_info_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::MsgWeekMonthGetAward, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::MsgWeekMonthGetAward, card_type_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::MsgWeekMonthGetAwardResp, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::MsgWeekMonthGetAwardResp, ret_code_),
+  PROTOBUF_FIELD_OFFSET(::MsgWeekMonthGetAwardResp, award_),
+  PROTOBUF_FIELD_OFFSET(::MsgWeekMonthGetAwardResp, new_gold_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::MsgPlayerLogin)},
@@ -1949,6 +1997,8 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 618, -1, sizeof(::MsgWeekMonthInfo)},
   { 629, -1, sizeof(::MsgWeekMonthCfg)},
   { 639, -1, sizeof(::MsgGetWeekMonthInfoResp)},
+  { 646, -1, sizeof(::MsgWeekMonthGetAward)},
+  { 652, -1, sizeof(::MsgWeekMonthGetAwardResp)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -2021,6 +2071,8 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgWeekMonthInfo_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgWeekMonthCfg_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgGetWeekMonthInfoResp_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgWeekMonthGetAward_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgWeekMonthGetAwardResp_default_instance_),
 };
 
 const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -2214,11 +2266,14 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "\021\n\ttotal_day\030\005 \001(\005\"e\n\027MsgGetWeekMonthInf"
   "oResp\022#\n\tcards_cfg\030\001 \003(\0132\020.MsgWeekMonthC"
   "fg\022%\n\ncards_info\030\002 \003(\0132\021.MsgWeekMonthInf"
-  "ob\006proto3"
+  "o\")\n\024MsgWeekMonthGetAward\022\021\n\tcard_type\030\001"
+  " \001(\005\"M\n\030MsgWeekMonthGetAwardResp\022\020\n\010ret_"
+  "code\030\001 \001(\005\022\r\n\005award\030\002 \001(\003\022\020\n\010new_gold\030\003 "
+  "\001(\003b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Login_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Login_2eproto_sccs[69] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Login_2eproto_sccs[71] = {
   &scc_info_ActiveInfoRet_Login_2eproto.base,
   &scc_info_InfiniteAgentQuerySubInfo_Login_2eproto.base,
   &scc_info_MsgActiveInfoCSPick_Login_2eproto.base,
@@ -2287,14 +2342,16 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
   &scc_info_MsgVIPConfig_Login_2eproto.base,
   &scc_info_MsgVIPInfo_Login_2eproto.base,
   &scc_info_MsgWeekMonthCfg_Login_2eproto.base,
+  &scc_info_MsgWeekMonthGetAward_Login_2eproto.base,
+  &scc_info_MsgWeekMonthGetAwardResp_Login_2eproto.base,
   &scc_info_MsgWeekMonthInfo_Login_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Login_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Login_2eproto = {
-  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 7609,
-  &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 69, 0,
+  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 7731,
+  &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 71, 0,
   schemas, file_default_instances, TableStruct_Login_2eproto::offsets,
-  file_level_metadata_Login_2eproto, 69, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
+  file_level_metadata_Login_2eproto, 71, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -22696,6 +22753,452 @@ void MsgGetWeekMonthInfoResp::InternalSwap(MsgGetWeekMonthInfoResp* other) {
 }
 
 
+// ===================================================================
+
+class MsgWeekMonthGetAward::_Internal {
+ public:
+};
+
+MsgWeekMonthGetAward::MsgWeekMonthGetAward(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:MsgWeekMonthGetAward)
+}
+MsgWeekMonthGetAward::MsgWeekMonthGetAward(const MsgWeekMonthGetAward& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  card_type_ = from.card_type_;
+  // @@protoc_insertion_point(copy_constructor:MsgWeekMonthGetAward)
+}
+
+void MsgWeekMonthGetAward::SharedCtor() {
+  card_type_ = 0;
+}
+
+MsgWeekMonthGetAward::~MsgWeekMonthGetAward() {
+  // @@protoc_insertion_point(destructor:MsgWeekMonthGetAward)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void MsgWeekMonthGetAward::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void MsgWeekMonthGetAward::ArenaDtor(void* object) {
+  MsgWeekMonthGetAward* _this = reinterpret_cast< MsgWeekMonthGetAward* >(object);
+  (void)_this;
+}
+void MsgWeekMonthGetAward::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void MsgWeekMonthGetAward::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const MsgWeekMonthGetAward& MsgWeekMonthGetAward::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgWeekMonthGetAward_Login_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void MsgWeekMonthGetAward::Clear() {
+// @@protoc_insertion_point(message_clear_start:MsgWeekMonthGetAward)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  card_type_ = 0;
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* MsgWeekMonthGetAward::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 card_type = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          card_type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* MsgWeekMonthGetAward::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:MsgWeekMonthGetAward)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 card_type = 1;
+  if (this->card_type() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_card_type(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:MsgWeekMonthGetAward)
+  return target;
+}
+
+size_t MsgWeekMonthGetAward::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:MsgWeekMonthGetAward)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // int32 card_type = 1;
+  if (this->card_type() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_card_type());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void MsgWeekMonthGetAward::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:MsgWeekMonthGetAward)
+  GOOGLE_DCHECK_NE(&from, this);
+  const MsgWeekMonthGetAward* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgWeekMonthGetAward>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgWeekMonthGetAward)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgWeekMonthGetAward)
+    MergeFrom(*source);
+  }
+}
+
+void MsgWeekMonthGetAward::MergeFrom(const MsgWeekMonthGetAward& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:MsgWeekMonthGetAward)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.card_type() != 0) {
+    _internal_set_card_type(from._internal_card_type());
+  }
+}
+
+void MsgWeekMonthGetAward::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:MsgWeekMonthGetAward)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void MsgWeekMonthGetAward::CopyFrom(const MsgWeekMonthGetAward& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:MsgWeekMonthGetAward)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool MsgWeekMonthGetAward::IsInitialized() const {
+  return true;
+}
+
+void MsgWeekMonthGetAward::InternalSwap(MsgWeekMonthGetAward* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  swap(card_type_, other->card_type_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata MsgWeekMonthGetAward::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class MsgWeekMonthGetAwardResp::_Internal {
+ public:
+};
+
+MsgWeekMonthGetAwardResp::MsgWeekMonthGetAwardResp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:MsgWeekMonthGetAwardResp)
+}
+MsgWeekMonthGetAwardResp::MsgWeekMonthGetAwardResp(const MsgWeekMonthGetAwardResp& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&award_, &from.award_,
+    static_cast<size_t>(reinterpret_cast<char*>(&ret_code_) -
+    reinterpret_cast<char*>(&award_)) + sizeof(ret_code_));
+  // @@protoc_insertion_point(copy_constructor:MsgWeekMonthGetAwardResp)
+}
+
+void MsgWeekMonthGetAwardResp::SharedCtor() {
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&award_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&ret_code_) -
+      reinterpret_cast<char*>(&award_)) + sizeof(ret_code_));
+}
+
+MsgWeekMonthGetAwardResp::~MsgWeekMonthGetAwardResp() {
+  // @@protoc_insertion_point(destructor:MsgWeekMonthGetAwardResp)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void MsgWeekMonthGetAwardResp::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void MsgWeekMonthGetAwardResp::ArenaDtor(void* object) {
+  MsgWeekMonthGetAwardResp* _this = reinterpret_cast< MsgWeekMonthGetAwardResp* >(object);
+  (void)_this;
+}
+void MsgWeekMonthGetAwardResp::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void MsgWeekMonthGetAwardResp::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const MsgWeekMonthGetAwardResp& MsgWeekMonthGetAwardResp::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgWeekMonthGetAwardResp_Login_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void MsgWeekMonthGetAwardResp::Clear() {
+// @@protoc_insertion_point(message_clear_start:MsgWeekMonthGetAwardResp)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&award_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&ret_code_) -
+      reinterpret_cast<char*>(&award_)) + sizeof(ret_code_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* MsgWeekMonthGetAwardResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 ret_code = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          ret_code_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 award = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          award_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 new_gold = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          new_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* MsgWeekMonthGetAwardResp::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:MsgWeekMonthGetAwardResp)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 ret_code = 1;
+  if (this->ret_code() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_ret_code(), target);
+  }
+
+  // int64 award = 2;
+  if (this->award() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_award(), target);
+  }
+
+  // int64 new_gold = 3;
+  if (this->new_gold() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_new_gold(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:MsgWeekMonthGetAwardResp)
+  return target;
+}
+
+size_t MsgWeekMonthGetAwardResp::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:MsgWeekMonthGetAwardResp)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // int64 award = 2;
+  if (this->award() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_award());
+  }
+
+  // int64 new_gold = 3;
+  if (this->new_gold() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_new_gold());
+  }
+
+  // int32 ret_code = 1;
+  if (this->ret_code() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_ret_code());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void MsgWeekMonthGetAwardResp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:MsgWeekMonthGetAwardResp)
+  GOOGLE_DCHECK_NE(&from, this);
+  const MsgWeekMonthGetAwardResp* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgWeekMonthGetAwardResp>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgWeekMonthGetAwardResp)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgWeekMonthGetAwardResp)
+    MergeFrom(*source);
+  }
+}
+
+void MsgWeekMonthGetAwardResp::MergeFrom(const MsgWeekMonthGetAwardResp& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:MsgWeekMonthGetAwardResp)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.award() != 0) {
+    _internal_set_award(from._internal_award());
+  }
+  if (from.new_gold() != 0) {
+    _internal_set_new_gold(from._internal_new_gold());
+  }
+  if (from.ret_code() != 0) {
+    _internal_set_ret_code(from._internal_ret_code());
+  }
+}
+
+void MsgWeekMonthGetAwardResp::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:MsgWeekMonthGetAwardResp)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void MsgWeekMonthGetAwardResp::CopyFrom(const MsgWeekMonthGetAwardResp& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:MsgWeekMonthGetAwardResp)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool MsgWeekMonthGetAwardResp::IsInitialized() const {
+  return true;
+}
+
+void MsgWeekMonthGetAwardResp::InternalSwap(MsgWeekMonthGetAwardResp* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(MsgWeekMonthGetAwardResp, ret_code_)
+      + sizeof(MsgWeekMonthGetAwardResp::ret_code_)
+      - PROTOBUF_FIELD_OFFSET(MsgWeekMonthGetAwardResp, award_)>(
+          reinterpret_cast<char*>(&award_),
+          reinterpret_cast<char*>(&other->award_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata MsgWeekMonthGetAwardResp::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::MsgPlayerLogin* Arena::CreateMaybeMessage< ::MsgPlayerLogin >(Arena* arena) {
@@ -22904,6 +23407,12 @@ template<> PROTOBUF_NOINLINE ::MsgWeekMonthCfg* Arena::CreateMaybeMessage< ::Msg
 }
 template<> PROTOBUF_NOINLINE ::MsgGetWeekMonthInfoResp* Arena::CreateMaybeMessage< ::MsgGetWeekMonthInfoResp >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MsgGetWeekMonthInfoResp >(arena);
+}
+template<> PROTOBUF_NOINLINE ::MsgWeekMonthGetAward* Arena::CreateMaybeMessage< ::MsgWeekMonthGetAward >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::MsgWeekMonthGetAward >(arena);
+}
+template<> PROTOBUF_NOINLINE ::MsgWeekMonthGetAwardResp* Arena::CreateMaybeMessage< ::MsgWeekMonthGetAwardResp >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::MsgWeekMonthGetAwardResp >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

@@ -622,3 +622,17 @@ message MsgGetWeekMonthInfoResp
 	repeated MsgWeekMonthCfg cards_cfg 		= 1;	//卡配置
 	repeated MsgWeekMonthInfo cards_info 	= 2;	//已购买卡信息
 }
+
+//周卡月卡领奖
+message MsgWeekMonthGetAward
+{
+	int32					card_type 	= 1;	//领奖卡类型
+}
+
+//周卡月卡领奖
+message MsgWeekMonthGetAwardResp
+{
+	int32					ret_code 	= 1;	//错误Code  
+	int64					award 		= 2;	//奖励数量 
+	int64					new_gold	= 3;	//最新金币  
+}

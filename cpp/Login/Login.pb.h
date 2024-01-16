@@ -46,7 +46,7 @@ struct TableStruct_Login_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[69]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[71]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -257,6 +257,12 @@ extern MsgVIPInfoDefaultTypeInternal _MsgVIPInfo_default_instance_;
 class MsgWeekMonthCfg;
 class MsgWeekMonthCfgDefaultTypeInternal;
 extern MsgWeekMonthCfgDefaultTypeInternal _MsgWeekMonthCfg_default_instance_;
+class MsgWeekMonthGetAward;
+class MsgWeekMonthGetAwardDefaultTypeInternal;
+extern MsgWeekMonthGetAwardDefaultTypeInternal _MsgWeekMonthGetAward_default_instance_;
+class MsgWeekMonthGetAwardResp;
+class MsgWeekMonthGetAwardRespDefaultTypeInternal;
+extern MsgWeekMonthGetAwardRespDefaultTypeInternal _MsgWeekMonthGetAwardResp_default_instance_;
 class MsgWeekMonthInfo;
 class MsgWeekMonthInfoDefaultTypeInternal;
 extern MsgWeekMonthInfoDefaultTypeInternal _MsgWeekMonthInfo_default_instance_;
@@ -329,6 +335,8 @@ template<> ::MsgUpgradeVIP* Arena::CreateMaybeMessage<::MsgUpgradeVIP>(Arena*);
 template<> ::MsgVIPConfig* Arena::CreateMaybeMessage<::MsgVIPConfig>(Arena*);
 template<> ::MsgVIPInfo* Arena::CreateMaybeMessage<::MsgVIPInfo>(Arena*);
 template<> ::MsgWeekMonthCfg* Arena::CreateMaybeMessage<::MsgWeekMonthCfg>(Arena*);
+template<> ::MsgWeekMonthGetAward* Arena::CreateMaybeMessage<::MsgWeekMonthGetAward>(Arena*);
+template<> ::MsgWeekMonthGetAwardResp* Arena::CreateMaybeMessage<::MsgWeekMonthGetAwardResp>(Arena*);
 template<> ::MsgWeekMonthInfo* Arena::CreateMaybeMessage<::MsgWeekMonthInfo>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 
@@ -12916,6 +12924,300 @@ class MsgGetWeekMonthInfoResp PROTOBUF_FINAL :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
+// -------------------------------------------------------------------
+
+class MsgWeekMonthGetAward PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgWeekMonthGetAward) */ {
+ public:
+  inline MsgWeekMonthGetAward() : MsgWeekMonthGetAward(nullptr) {}
+  virtual ~MsgWeekMonthGetAward();
+
+  MsgWeekMonthGetAward(const MsgWeekMonthGetAward& from);
+  MsgWeekMonthGetAward(MsgWeekMonthGetAward&& from) noexcept
+    : MsgWeekMonthGetAward() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgWeekMonthGetAward& operator=(const MsgWeekMonthGetAward& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgWeekMonthGetAward& operator=(MsgWeekMonthGetAward&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgWeekMonthGetAward& default_instance();
+
+  static inline const MsgWeekMonthGetAward* internal_default_instance() {
+    return reinterpret_cast<const MsgWeekMonthGetAward*>(
+               &_MsgWeekMonthGetAward_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    69;
+
+  friend void swap(MsgWeekMonthGetAward& a, MsgWeekMonthGetAward& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgWeekMonthGetAward* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgWeekMonthGetAward* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgWeekMonthGetAward* New() const final {
+    return CreateMaybeMessage<MsgWeekMonthGetAward>(nullptr);
+  }
+
+  MsgWeekMonthGetAward* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgWeekMonthGetAward>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgWeekMonthGetAward& from);
+  void MergeFrom(const MsgWeekMonthGetAward& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgWeekMonthGetAward* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgWeekMonthGetAward";
+  }
+  protected:
+  explicit MsgWeekMonthGetAward(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kCardTypeFieldNumber = 1,
+  };
+  // int32 card_type = 1;
+  void clear_card_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 card_type() const;
+  void set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_card_type() const;
+  void _internal_set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgWeekMonthGetAward)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 card_type_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgWeekMonthGetAwardResp PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgWeekMonthGetAwardResp) */ {
+ public:
+  inline MsgWeekMonthGetAwardResp() : MsgWeekMonthGetAwardResp(nullptr) {}
+  virtual ~MsgWeekMonthGetAwardResp();
+
+  MsgWeekMonthGetAwardResp(const MsgWeekMonthGetAwardResp& from);
+  MsgWeekMonthGetAwardResp(MsgWeekMonthGetAwardResp&& from) noexcept
+    : MsgWeekMonthGetAwardResp() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgWeekMonthGetAwardResp& operator=(const MsgWeekMonthGetAwardResp& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgWeekMonthGetAwardResp& operator=(MsgWeekMonthGetAwardResp&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgWeekMonthGetAwardResp& default_instance();
+
+  static inline const MsgWeekMonthGetAwardResp* internal_default_instance() {
+    return reinterpret_cast<const MsgWeekMonthGetAwardResp*>(
+               &_MsgWeekMonthGetAwardResp_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    70;
+
+  friend void swap(MsgWeekMonthGetAwardResp& a, MsgWeekMonthGetAwardResp& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgWeekMonthGetAwardResp* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgWeekMonthGetAwardResp* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgWeekMonthGetAwardResp* New() const final {
+    return CreateMaybeMessage<MsgWeekMonthGetAwardResp>(nullptr);
+  }
+
+  MsgWeekMonthGetAwardResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgWeekMonthGetAwardResp>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgWeekMonthGetAwardResp& from);
+  void MergeFrom(const MsgWeekMonthGetAwardResp& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgWeekMonthGetAwardResp* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgWeekMonthGetAwardResp";
+  }
+  protected:
+  explicit MsgWeekMonthGetAwardResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kAwardFieldNumber = 2,
+    kNewGoldFieldNumber = 3,
+    kRetCodeFieldNumber = 1,
+  };
+  // int64 award = 2;
+  void clear_award();
+  ::PROTOBUF_NAMESPACE_ID::int64 award() const;
+  void set_award(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_award() const;
+  void _internal_set_award(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int64 new_gold = 3;
+  void clear_new_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 new_gold() const;
+  void set_new_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_new_gold() const;
+  void _internal_set_new_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int32 ret_code = 1;
+  void clear_ret_code();
+  ::PROTOBUF_NAMESPACE_ID::int32 ret_code() const;
+  void set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_ret_code() const;
+  void _internal_set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgWeekMonthGetAwardResp)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int64 award_;
+  ::PROTOBUF_NAMESPACE_ID::int64 new_gold_;
+  ::PROTOBUF_NAMESPACE_ID::int32 ret_code_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
 // ===================================================================
 
 
@@ -22151,9 +22453,101 @@ MsgGetWeekMonthInfoResp::cards_info() const {
   return cards_info_;
 }
 
+// -------------------------------------------------------------------
+
+// MsgWeekMonthGetAward
+
+// int32 card_type = 1;
+inline void MsgWeekMonthGetAward::clear_card_type() {
+  card_type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgWeekMonthGetAward::_internal_card_type() const {
+  return card_type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgWeekMonthGetAward::card_type() const {
+  // @@protoc_insertion_point(field_get:MsgWeekMonthGetAward.card_type)
+  return _internal_card_type();
+}
+inline void MsgWeekMonthGetAward::_internal_set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  card_type_ = value;
+}
+inline void MsgWeekMonthGetAward::set_card_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_card_type(value);
+  // @@protoc_insertion_point(field_set:MsgWeekMonthGetAward.card_type)
+}
+
+// -------------------------------------------------------------------
+
+// MsgWeekMonthGetAwardResp
+
+// int32 ret_code = 1;
+inline void MsgWeekMonthGetAwardResp::clear_ret_code() {
+  ret_code_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgWeekMonthGetAwardResp::_internal_ret_code() const {
+  return ret_code_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgWeekMonthGetAwardResp::ret_code() const {
+  // @@protoc_insertion_point(field_get:MsgWeekMonthGetAwardResp.ret_code)
+  return _internal_ret_code();
+}
+inline void MsgWeekMonthGetAwardResp::_internal_set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  ret_code_ = value;
+}
+inline void MsgWeekMonthGetAwardResp::set_ret_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_ret_code(value);
+  // @@protoc_insertion_point(field_set:MsgWeekMonthGetAwardResp.ret_code)
+}
+
+// int64 award = 2;
+inline void MsgWeekMonthGetAwardResp::clear_award() {
+  award_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgWeekMonthGetAwardResp::_internal_award() const {
+  return award_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgWeekMonthGetAwardResp::award() const {
+  // @@protoc_insertion_point(field_get:MsgWeekMonthGetAwardResp.award)
+  return _internal_award();
+}
+inline void MsgWeekMonthGetAwardResp::_internal_set_award(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  award_ = value;
+}
+inline void MsgWeekMonthGetAwardResp::set_award(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_award(value);
+  // @@protoc_insertion_point(field_set:MsgWeekMonthGetAwardResp.award)
+}
+
+// int64 new_gold = 3;
+inline void MsgWeekMonthGetAwardResp::clear_new_gold() {
+  new_gold_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgWeekMonthGetAwardResp::_internal_new_gold() const {
+  return new_gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgWeekMonthGetAwardResp::new_gold() const {
+  // @@protoc_insertion_point(field_get:MsgWeekMonthGetAwardResp.new_gold)
+  return _internal_new_gold();
+}
+inline void MsgWeekMonthGetAwardResp::_internal_set_new_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  new_gold_ = value;
+}
+inline void MsgWeekMonthGetAwardResp::set_new_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_new_gold(value);
+  // @@protoc_insertion_point(field_set:MsgWeekMonthGetAwardResp.new_gold)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

@@ -147,6 +147,8 @@ enum EMsgIDLogin
 	MsgIDCard_WeekMonthQuery					= 133;		//查询周卡月卡信息(MsgCommonBool)
 	MsgIDCard_WeekMonthQueryResp				= 134;		//查询周卡月卡信息返回(MsgGetWeekMonthInfoResp)
 	MsgIDCard_BuyWeekMonthResp					= 135;		//购买周卡月卡返回(MsgGetWeekMonthInfoResp)
+	MsgIDCard_WeekMonthGetAward					= 136;		//周卡月卡领取奖励(MsgWeekMonthGetAward)
+	MsgIDCard_WeekMonthGetAwardResp				= 137;		//周卡月卡领取奖励返回(MsgWeekMonthGetAwardResp)
 }
 
 enum EMsgIDGame
