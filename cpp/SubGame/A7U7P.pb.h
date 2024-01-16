@@ -559,14 +559,15 @@ class A7PlayerData PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kBetInfosFieldNumber = 6,
+    kBetInfosFieldNumber = 7,
     kUserIdFieldNumber = 1,
     kChairIdFieldNumber = 2,
     kWinGoldFieldNumber = 3,
     kTotalPlayFieldNumber = 4,
     kWinPlayFieldNumber = 5,
+    kGameBetFieldNumber = 6,
   };
-  // repeated .A7U7P.A7BetInfo bet_infos = 6;
+  // repeated .A7U7P.A7BetInfo bet_infos = 7;
   int bet_infos_size() const;
   private:
   int _internal_bet_infos_size() const;
@@ -629,6 +630,15 @@ class A7PlayerData PROTOBUF_FINAL :
   void _internal_set_win_play(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int64 game_bet = 6;
+  void clear_game_bet();
+  ::PROTOBUF_NAMESPACE_ID::int64 game_bet() const;
+  void set_game_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_game_bet() const;
+  void _internal_set_game_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:A7U7P.A7PlayerData)
  private:
   class _Internal;
@@ -642,6 +652,7 @@ class A7PlayerData PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int64 win_gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 total_play_;
   ::PROTOBUF_NAMESPACE_ID::int32 win_play_;
+  ::PROTOBUF_NAMESPACE_ID::int64 game_bet_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_A7U7P_2eproto;
 };
@@ -2028,7 +2039,27 @@ inline void A7PlayerData::set_win_play(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:A7U7P.A7PlayerData.win_play)
 }
 
-// repeated .A7U7P.A7BetInfo bet_infos = 6;
+// int64 game_bet = 6;
+inline void A7PlayerData::clear_game_bet() {
+  game_bet_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 A7PlayerData::_internal_game_bet() const {
+  return game_bet_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 A7PlayerData::game_bet() const {
+  // @@protoc_insertion_point(field_get:A7U7P.A7PlayerData.game_bet)
+  return _internal_game_bet();
+}
+inline void A7PlayerData::_internal_set_game_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  game_bet_ = value;
+}
+inline void A7PlayerData::set_game_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_game_bet(value);
+  // @@protoc_insertion_point(field_set:A7U7P.A7PlayerData.game_bet)
+}
+
+// repeated .A7U7P.A7BetInfo bet_infos = 7;
 inline int A7PlayerData::_internal_bet_infos_size() const {
   return bet_infos_.size();
 }

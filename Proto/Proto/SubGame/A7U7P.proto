@@ -39,7 +39,8 @@ message A7PlayerData
 	int64				win_gold		= 3;	// 总赢
 	int32				total_play		= 4;	// 总玩次数
 	int32				win_play		= 5;	// 赢次数
-	repeated A7BetInfo	bet_infos		= 6;	// 下注状态
+	int64				game_bet 		= 6;	// 玩家总下注
+	repeated A7BetInfo	bet_infos		= 7;	// 下注状态
 }
 
 message MsgA7Record

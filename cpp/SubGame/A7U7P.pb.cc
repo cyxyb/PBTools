@@ -207,6 +207,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_A7U7P_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::A7U7P::A7PlayerData, win_gold_),
   PROTOBUF_FIELD_OFFSET(::A7U7P::A7PlayerData, total_play_),
   PROTOBUF_FIELD_OFFSET(::A7U7P::A7PlayerData, win_play_),
+  PROTOBUF_FIELD_OFFSET(::A7U7P::A7PlayerData, game_bet_),
   PROTOBUF_FIELD_OFFSET(::A7U7P::A7PlayerData, bet_infos_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::A7U7P::MsgA7Record, _internal_metadata_),
@@ -269,12 +270,12 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 0, -1, sizeof(::A7U7P::MsgA7NotifyState)},
   { 7, -1, sizeof(::A7U7P::A7BetInfo)},
   { 14, -1, sizeof(::A7U7P::A7PlayerData)},
-  { 25, -1, sizeof(::A7U7P::MsgA7Record)},
-  { 31, -1, sizeof(::A7U7P::MsgA7SceneInfo)},
-  { 48, -1, sizeof(::A7U7P::MsgA7Bet)},
-  { 55, -1, sizeof(::A7U7P::MsgA7BetResp)},
-  { 64, -1, sizeof(::A7U7P::MsgA7WinMsg)},
-  { 73, -1, sizeof(::A7U7P::MsgA7Result)},
+  { 26, -1, sizeof(::A7U7P::MsgA7Record)},
+  { 32, -1, sizeof(::A7U7P::MsgA7SceneInfo)},
+  { 49, -1, sizeof(::A7U7P::MsgA7Bet)},
+  { 56, -1, sizeof(::A7U7P::MsgA7BetResp)},
+  { 65, -1, sizeof(::A7U7P::MsgA7WinMsg)},
+  { 74, -1, sizeof(::A7U7P::MsgA7Result)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -292,32 +293,33 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
 const char descriptor_table_protodef_A7U7P_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n\013A7U7P.proto\022\005A7U7P\"4\n\020MsgA7NotifyState"
   "\022\022\n\ngame_state\030\001 \001(\005\022\014\n\004time\030\002 \001(\005\"&\n\tA7"
-  "BetInfo\022\013\n\003bet\030\001 \001(\003\022\014\n\004area\030\002 \001(\005\"\216\001\n\014A"
+  "BetInfo\022\013\n\003bet\030\001 \001(\003\022\014\n\004area\030\002 \001(\005\"\240\001\n\014A"
   "7PlayerData\022\017\n\007user_id\030\001 \001(\005\022\020\n\010chair_id"
   "\030\002 \001(\005\022\020\n\010win_gold\030\003 \001(\003\022\022\n\ntotal_play\030\004"
-  " \001(\005\022\020\n\010win_play\030\005 \001(\005\022#\n\tbet_infos\030\006 \003("
-  "\0132\020.A7U7P.A7BetInfo\"\035\n\013MsgA7Record\022\016\n\006si"
-  "eves\030\002 \003(\005\"\223\002\n\016MsgA7SceneInfo\022\020\n\010bet_lis"
-  "t\030\001 \003(\003\022\020\n\010area_mup\030\002 \003(\005\022#\n\007records\030\003 \003"
-  "(\0132\022.A7U7P.MsgA7Record\022\021\n\tbet_limit\030\004 \003("
-  "\005\022\024\n\014player_limit\030\005 \001(\005\022\020\n\010bet_time\030\006 \001("
-  "\005\022\020\n\010out_time\030\007 \001(\005\022\r\n\005state\030\010 \001(\005\022\020\n\010ga"
-  "me_tax\030\t \001(\005\022\020\n\010area_bet\030\023 \003(\005\022\016\n\006sieves"
-  "\030\024 \003(\005\022(\n\013player_list\030\026 \003(\0132\023.A7U7P.A7Pl"
-  "ayerData\"%\n\010MsgA7Bet\022\013\n\003bet\030\001 \001(\003\022\014\n\004are"
-  "a\030\002 \001(\005\"g\n\014MsgA7BetResp\022\020\n\010ret_code\030\001 \001("
-  "\005\022\017\n\007user_id\030\002 \001(\005\022\020\n\010chair_id\030\003 \001(\005\022\"\n\010"
-  "bet_info\030\004 \001(\0132\020.A7U7P.A7BetInfo\"T\n\013MsgA"
-  "7WinMsg\022\017\n\007user_id\030\001 \001(\005\022\020\n\010chair_id\030\002 \001"
-  "(\005\022\020\n\010win_gold\030\003 \001(\003\022\020\n\010new_gold\030\004 \001(\003\"U"
-  "\n\013MsgA7Result\022\016\n\006sieves\030\002 \003(\005\022\021\n\twin_ind"
-  "ex\030\001 \003(\005\022#\n\007win_msg\030\003 \003(\0132\022.A7U7P.MsgA7W"
-  "inMsg*C\n\nEGameState\022\014\n\010GS_Ready\020\000\022\014\n\010GS_"
-  "Start\020\001\022\n\n\006GS_Bet\020\002\022\r\n\tGS_Result\020\003*\231\001\n\rE"
-  "MsgIDSubGame\022\025\n\021MsgIDSubGame_Null\020\000\022\024\n\020M"
-  "sgIDSubGame_Bet\020\001\022\030\n\024MsgIDSubGame_BetRes"
-  "p\020\002\022\037\n\033MsgIDSubGame_GameResultResp\020\007\022 \n\034"
-  "MsgIDSubGame_NotifyStateResp\020\010b\006proto3"
+  " \001(\005\022\020\n\010win_play\030\005 \001(\005\022\020\n\010game_bet\030\006 \001(\003"
+  "\022#\n\tbet_infos\030\007 \003(\0132\020.A7U7P.A7BetInfo\"\035\n"
+  "\013MsgA7Record\022\016\n\006sieves\030\002 \003(\005\"\223\002\n\016MsgA7Sc"
+  "eneInfo\022\020\n\010bet_list\030\001 \003(\003\022\020\n\010area_mup\030\002 "
+  "\003(\005\022#\n\007records\030\003 \003(\0132\022.A7U7P.MsgA7Record"
+  "\022\021\n\tbet_limit\030\004 \003(\005\022\024\n\014player_limit\030\005 \001("
+  "\005\022\020\n\010bet_time\030\006 \001(\005\022\020\n\010out_time\030\007 \001(\005\022\r\n"
+  "\005state\030\010 \001(\005\022\020\n\010game_tax\030\t \001(\005\022\020\n\010area_b"
+  "et\030\023 \003(\005\022\016\n\006sieves\030\024 \003(\005\022(\n\013player_list\030"
+  "\026 \003(\0132\023.A7U7P.A7PlayerData\"%\n\010MsgA7Bet\022\013"
+  "\n\003bet\030\001 \001(\003\022\014\n\004area\030\002 \001(\005\"g\n\014MsgA7BetRes"
+  "p\022\020\n\010ret_code\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\020\n\010"
+  "chair_id\030\003 \001(\005\022\"\n\010bet_info\030\004 \001(\0132\020.A7U7P"
+  ".A7BetInfo\"T\n\013MsgA7WinMsg\022\017\n\007user_id\030\001 \001"
+  "(\005\022\020\n\010chair_id\030\002 \001(\005\022\020\n\010win_gold\030\003 \001(\003\022\020"
+  "\n\010new_gold\030\004 \001(\003\"U\n\013MsgA7Result\022\016\n\006sieve"
+  "s\030\002 \003(\005\022\021\n\twin_index\030\001 \003(\005\022#\n\007win_msg\030\003 "
+  "\003(\0132\022.A7U7P.MsgA7WinMsg*C\n\nEGameState\022\014\n"
+  "\010GS_Ready\020\000\022\014\n\010GS_Start\020\001\022\n\n\006GS_Bet\020\002\022\r\n"
+  "\tGS_Result\020\003*\231\001\n\rEMsgIDSubGame\022\025\n\021MsgIDS"
+  "ubGame_Null\020\000\022\024\n\020MsgIDSubGame_Bet\020\001\022\030\n\024M"
+  "sgIDSubGame_BetResp\020\002\022\037\n\033MsgIDSubGame_Ga"
+  "meResultResp\020\007\022 \n\034MsgIDSubGame_NotifySta"
+  "teResp\020\010b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_A7U7P_2eproto_deps[1] = {
 };
@@ -334,7 +336,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_A7U
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_A7U7P_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_A7U7P_2eproto = {
-  false, false, descriptor_table_protodef_A7U7P_2eproto, "A7U7P.proto", 1118,
+  false, false, descriptor_table_protodef_A7U7P_2eproto, "A7U7P.proto", 1136,
   &descriptor_table_A7U7P_2eproto_once, descriptor_table_A7U7P_2eproto_sccs, descriptor_table_A7U7P_2eproto_deps, 9, 0,
   schemas, file_default_instances, TableStruct_A7U7P_2eproto::offsets,
   file_level_metadata_A7U7P_2eproto, 9, file_level_enum_descriptors_A7U7P_2eproto, file_level_service_descriptors_A7U7P_2eproto,
@@ -853,8 +855,8 @@ A7PlayerData::A7PlayerData(const A7PlayerData& from)
       bet_infos_(from.bet_infos_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&user_id_, &from.user_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&win_play_) -
-    reinterpret_cast<char*>(&user_id_)) + sizeof(win_play_));
+    static_cast<size_t>(reinterpret_cast<char*>(&game_bet_) -
+    reinterpret_cast<char*>(&user_id_)) + sizeof(game_bet_));
   // @@protoc_insertion_point(copy_constructor:A7U7P.A7PlayerData)
 }
 
@@ -862,8 +864,8 @@ void A7PlayerData::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_A7PlayerData_A7U7P_2eproto.base);
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&user_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&win_play_) -
-      reinterpret_cast<char*>(&user_id_)) + sizeof(win_play_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&game_bet_) -
+      reinterpret_cast<char*>(&user_id_)) + sizeof(game_bet_));
 }
 
 A7PlayerData::~A7PlayerData() {
@@ -899,8 +901,8 @@ void A7PlayerData::Clear() {
 
   bet_infos_.Clear();
   ::memset(&user_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&win_play_) -
-      reinterpret_cast<char*>(&user_id_)) + sizeof(win_play_));
+      reinterpret_cast<char*>(&game_bet_) -
+      reinterpret_cast<char*>(&user_id_)) + sizeof(game_bet_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -946,16 +948,23 @@ const char* A7PlayerData::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated .A7U7P.A7BetInfo bet_infos = 6;
+      // int64 game_bet = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+          game_bet_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated .A7U7P.A7BetInfo bet_infos = 7;
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
           ptr -= 1;
           do {
             ptr += 1;
             ptr = ctx->ParseMessage(_internal_add_bet_infos(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<50>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<58>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -1016,12 +1025,18 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_win_play(), target);
   }
 
-  // repeated .A7U7P.A7BetInfo bet_infos = 6;
+  // int64 game_bet = 6;
+  if (this->game_bet() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(6, this->_internal_game_bet(), target);
+  }
+
+  // repeated .A7U7P.A7BetInfo bet_infos = 7;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_bet_infos_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(6, this->_internal_bet_infos(i), target, stream);
+      InternalWriteMessage(7, this->_internal_bet_infos(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1040,7 +1055,7 @@ size_t A7PlayerData::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .A7U7P.A7BetInfo bet_infos = 6;
+  // repeated .A7U7P.A7BetInfo bet_infos = 7;
   total_size += 1UL * this->_internal_bet_infos_size();
   for (const auto& msg : this->bet_infos_) {
     total_size +=
@@ -1080,6 +1095,13 @@ size_t A7PlayerData::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_win_play());
+  }
+
+  // int64 game_bet = 6;
+  if (this->game_bet() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_game_bet());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1129,6 +1151,9 @@ void A7PlayerData::MergeFrom(const A7PlayerData& from) {
   if (from.win_play() != 0) {
     _internal_set_win_play(from._internal_win_play());
   }
+  if (from.game_bet() != 0) {
+    _internal_set_game_bet(from._internal_game_bet());
+  }
 }
 
 void A7PlayerData::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -1154,8 +1179,8 @@ void A7PlayerData::InternalSwap(A7PlayerData* other) {
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   bet_infos_.InternalSwap(&other->bet_infos_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(A7PlayerData, win_play_)
-      + sizeof(A7PlayerData::win_play_)
+      PROTOBUF_FIELD_OFFSET(A7PlayerData, game_bet_)
+      + sizeof(A7PlayerData::game_bet_)
       - PROTOBUF_FIELD_OFFSET(A7PlayerData, user_id_)>(
           reinterpret_cast<char*>(&user_id_),
           reinterpret_cast<char*>(&other->user_id_));
