@@ -44,15 +44,15 @@ namespace A7U7P {
             "aXJfaWQYAiABKAUSEAoId2luX2dvbGQYAyABKAMSEAoIbmV3X2dvbGQYBCAB",
             "KAMiVQoLTXNnQTdSZXN1bHQSDgoGc2lldmVzGAIgAygFEhEKCXdpbl9pbmRl",
             "eBgBIAMoBRIjCgd3aW5fbXNnGAMgAygLMhIuQTdVN1AuTXNnQTdXaW5Nc2ci",
-            "NwoQTXNnUGxheWVyVG9wSW5mbxIQCghnYW1lX2JldBgBIAEoAxIRCgl3aW5f",
-            "Y291bnQYAiABKAUiOgoSTXNnQTdQbGF5ZXJJbmZvVG9wEiQKA3RvcBgBIAMo",
-            "CzIXLkE3VTdQLk1zZ1BsYXllclRvcEluZm8qQwoKRUdhbWVTdGF0ZRIMCghH",
-            "U19SZWFkeRAAEgwKCEdTX1N0YXJ0EAESCgoGR1NfQmV0EAISDQoJR1NfUmVz",
-            "dWx0EAMqvQEKDUVNc2dJRFN1YkdhbWUSFQoRTXNnSURTdWJHYW1lX051bGwQ",
-            "ABIUChBNc2dJRFN1YkdhbWVfQmV0EAESGAoUTXNnSURTdWJHYW1lX0JldFJl",
-            "c3AQAhIfChtNc2dJRFN1YkdhbWVfR2FtZVJlc3VsdFJlc3AQBxIgChxNc2dJ",
-            "RFN1YkdhbWVfTm90aWZ5U3RhdGVSZXNwEAgSIgoeTXNnSURTdWJHYW1lX05v",
-            "dGlmeUdhbWVUb3BSZXNwEAliBnByb3RvMw=="));
+            "SQoQTXNnUGxheWVyVG9wSW5mbxIQCghjaGFpcl9pZBgBIAEoBRIQCghnYW1l",
+            "X2JldBgCIAEoAxIRCgl3aW5fY291bnQYAyABKAUiOgoSTXNnQTdQbGF5ZXJJ",
+            "bmZvVG9wEiQKA3RvcBgBIAMoCzIXLkE3VTdQLk1zZ1BsYXllclRvcEluZm8q",
+            "QwoKRUdhbWVTdGF0ZRIMCghHU19SZWFkeRAAEgwKCEdTX1N0YXJ0EAESCgoG",
+            "R1NfQmV0EAISDQoJR1NfUmVzdWx0EAMqvQEKDUVNc2dJRFN1YkdhbWUSFQoR",
+            "TXNnSURTdWJHYW1lX051bGwQABIUChBNc2dJRFN1YkdhbWVfQmV0EAESGAoU",
+            "TXNnSURTdWJHYW1lX0JldFJlc3AQAhIfChtNc2dJRFN1YkdhbWVfR2FtZVJl",
+            "c3VsdFJlc3AQBxIgChxNc2dJRFN1YkdhbWVfTm90aWZ5U3RhdGVSZXNwEAgS",
+            "IgoeTXNnSURTdWJHYW1lX05vdGlmeUdhbWVUb3BSZXNwEAliBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::A7U7P.EGameState), typeof(global::A7U7P.EMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -65,7 +65,7 @@ namespace A7U7P {
             new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.MsgA7BetResp), global::A7U7P.MsgA7BetResp.Parser, new[]{ "RetCode", "UserId", "ChairId", "BetInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.MsgA7WinMsg), global::A7U7P.MsgA7WinMsg.Parser, new[]{ "UserId", "ChairId", "WinGold", "NewGold" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.MsgA7Result), global::A7U7P.MsgA7Result.Parser, new[]{ "Sieves", "WinIndex", "WinMsg" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.MsgPlayerTopInfo), global::A7U7P.MsgPlayerTopInfo.Parser, new[]{ "GameBet", "WinCount" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.MsgPlayerTopInfo), global::A7U7P.MsgPlayerTopInfo.Parser, new[]{ "ChairId", "GameBet", "WinCount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::A7U7P.MsgA7PlayerInfoTop), global::A7U7P.MsgA7PlayerInfoTop.Parser, new[]{ "Top" }, null, null, null, null)
           }));
     }
@@ -2687,6 +2687,7 @@ namespace A7U7P {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public MsgPlayerTopInfo(MsgPlayerTopInfo other) : this() {
+      chairId_ = other.chairId_;
       gameBet_ = other.gameBet_;
       winCount_ = other.winCount_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -2697,8 +2698,22 @@ namespace A7U7P {
       return new MsgPlayerTopInfo(this);
     }
 
+    /// <summary>Field number for the "chair_id" field.</summary>
+    public const int ChairIdFieldNumber = 1;
+    private int chairId_;
+    /// <summary>
+    ///椅子号
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int ChairId {
+      get { return chairId_; }
+      set {
+        chairId_ = value;
+      }
+    }
+
     /// <summary>Field number for the "game_bet" field.</summary>
-    public const int GameBetFieldNumber = 1;
+    public const int GameBetFieldNumber = 2;
     private long gameBet_;
     /// <summary>
     ///玩家总下注
@@ -2712,7 +2727,7 @@ namespace A7U7P {
     }
 
     /// <summary>Field number for the "win_count" field.</summary>
-    public const int WinCountFieldNumber = 2;
+    public const int WinCountFieldNumber = 3;
     private int winCount_;
     /// <summary>
     ///赢次数
@@ -2738,6 +2753,7 @@ namespace A7U7P {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (ChairId != other.ChairId) return false;
       if (GameBet != other.GameBet) return false;
       if (WinCount != other.WinCount) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -2746,6 +2762,7 @@ namespace A7U7P {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
+      if (ChairId != 0) hash ^= ChairId.GetHashCode();
       if (GameBet != 0L) hash ^= GameBet.GetHashCode();
       if (WinCount != 0) hash ^= WinCount.GetHashCode();
       if (_unknownFields != null) {
@@ -2764,12 +2781,16 @@ namespace A7U7P {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (GameBet != 0L) {
+      if (ChairId != 0) {
         output.WriteRawTag(8);
+        output.WriteInt32(ChairId);
+      }
+      if (GameBet != 0L) {
+        output.WriteRawTag(16);
         output.WriteInt64(GameBet);
       }
       if (WinCount != 0) {
-        output.WriteRawTag(16);
+        output.WriteRawTag(24);
         output.WriteInt32(WinCount);
       }
       if (_unknownFields != null) {
@@ -2781,12 +2802,16 @@ namespace A7U7P {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (GameBet != 0L) {
+      if (ChairId != 0) {
         output.WriteRawTag(8);
+        output.WriteInt32(ChairId);
+      }
+      if (GameBet != 0L) {
+        output.WriteRawTag(16);
         output.WriteInt64(GameBet);
       }
       if (WinCount != 0) {
-        output.WriteRawTag(16);
+        output.WriteRawTag(24);
         output.WriteInt32(WinCount);
       }
       if (_unknownFields != null) {
@@ -2798,6 +2823,9 @@ namespace A7U7P {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      if (ChairId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChairId);
+      }
       if (GameBet != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(GameBet);
       }
@@ -2814,6 +2842,9 @@ namespace A7U7P {
     public void MergeFrom(MsgPlayerTopInfo other) {
       if (other == null) {
         return;
+      }
+      if (other.ChairId != 0) {
+        ChairId = other.ChairId;
       }
       if (other.GameBet != 0L) {
         GameBet = other.GameBet;
@@ -2836,10 +2867,14 @@ namespace A7U7P {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            GameBet = input.ReadInt64();
+            ChairId = input.ReadInt32();
             break;
           }
           case 16: {
+            GameBet = input.ReadInt64();
+            break;
+          }
+          case 24: {
             WinCount = input.ReadInt32();
             break;
           }
@@ -2858,10 +2893,14 @@ namespace A7U7P {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            GameBet = input.ReadInt64();
+            ChairId = input.ReadInt32();
             break;
           }
           case 16: {
+            GameBet = input.ReadInt64();
+            break;
+          }
+          case 24: {
             WinCount = input.ReadInt32();
             break;
           }

@@ -1952,10 +1952,11 @@ class MsgPlayerTopInfo PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kGameBetFieldNumber = 1,
-    kWinCountFieldNumber = 2,
+    kGameBetFieldNumber = 2,
+    kChairIdFieldNumber = 1,
+    kWinCountFieldNumber = 3,
   };
-  // int64 game_bet = 1;
+  // int64 game_bet = 2;
   void clear_game_bet();
   ::PROTOBUF_NAMESPACE_ID::int64 game_bet() const;
   void set_game_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
@@ -1964,7 +1965,16 @@ class MsgPlayerTopInfo PROTOBUF_FINAL :
   void _internal_set_game_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int32 win_count = 2;
+  // int32 chair_id = 1;
+  void clear_chair_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_id() const;
+  void set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_chair_id() const;
+  void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 win_count = 3;
   void clear_win_count();
   ::PROTOBUF_NAMESPACE_ID::int32 win_count() const;
   void set_win_count(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -1981,6 +1991,7 @@ class MsgPlayerTopInfo PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int64 game_bet_;
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 win_count_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_A7U7P_2eproto;
@@ -3252,7 +3263,27 @@ MsgA7Result::win_msg() const {
 
 // MsgPlayerTopInfo
 
-// int64 game_bet = 1;
+// int32 chair_id = 1;
+inline void MsgPlayerTopInfo::clear_chair_id() {
+  chair_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPlayerTopInfo::_internal_chair_id() const {
+  return chair_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPlayerTopInfo::chair_id() const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgPlayerTopInfo.chair_id)
+  return _internal_chair_id();
+}
+inline void MsgPlayerTopInfo::_internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  chair_id_ = value;
+}
+inline void MsgPlayerTopInfo::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_chair_id(value);
+  // @@protoc_insertion_point(field_set:A7U7P.MsgPlayerTopInfo.chair_id)
+}
+
+// int64 game_bet = 2;
 inline void MsgPlayerTopInfo::clear_game_bet() {
   game_bet_ = PROTOBUF_LONGLONG(0);
 }
@@ -3272,7 +3303,7 @@ inline void MsgPlayerTopInfo::set_game_bet(::PROTOBUF_NAMESPACE_ID::int64 value)
   // @@protoc_insertion_point(field_set:A7U7P.MsgPlayerTopInfo.game_bet)
 }
 
-// int32 win_count = 2;
+// int32 win_count = 3;
 inline void MsgPlayerTopInfo::clear_win_count() {
   win_count_ = 0;
 }

@@ -104,8 +104,9 @@ message MsgA7Result
 //玩家排行榜
 message MsgPlayerTopInfo
 {
-	int64 game_bet 		= 1;								//玩家总下注
-	int32 win_count 	= 2;								//赢次数
+	int32 chair_id 		= 1;								//椅子号
+	int64 game_bet 		= 2;								//玩家总下注
+	int32 win_count 	= 3;								//赢次数
 }
 message MsgA7PlayerInfoTop
 {

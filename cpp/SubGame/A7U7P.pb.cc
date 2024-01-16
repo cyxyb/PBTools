@@ -305,6 +305,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_A7U7P_2eproto::offsets[] PROTO
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::A7U7P::MsgPlayerTopInfo, chair_id_),
   PROTOBUF_FIELD_OFFSET(::A7U7P::MsgPlayerTopInfo, game_bet_),
   PROTOBUF_FIELD_OFFSET(::A7U7P::MsgPlayerTopInfo, win_count_),
   ~0u,  // no _has_bits_
@@ -325,7 +326,7 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 64, -1, sizeof(::A7U7P::MsgA7WinMsg)},
   { 73, -1, sizeof(::A7U7P::MsgA7Result)},
   { 81, -1, sizeof(::A7U7P::MsgPlayerTopInfo)},
-  { 88, -1, sizeof(::A7U7P::MsgA7PlayerInfoTop)},
+  { 89, -1, sizeof(::A7U7P::MsgA7PlayerInfoTop)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -365,16 +366,17 @@ const char descriptor_table_protodef_A7U7P_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "(\005\022\020\n\010win_gold\030\003 \001(\003\022\020\n\010new_gold\030\004 \001(\003\"U"
   "\n\013MsgA7Result\022\016\n\006sieves\030\002 \003(\005\022\021\n\twin_ind"
   "ex\030\001 \003(\005\022#\n\007win_msg\030\003 \003(\0132\022.A7U7P.MsgA7W"
-  "inMsg\"7\n\020MsgPlayerTopInfo\022\020\n\010game_bet\030\001 "
-  "\001(\003\022\021\n\twin_count\030\002 \001(\005\":\n\022MsgA7PlayerInf"
-  "oTop\022$\n\003top\030\001 \003(\0132\027.A7U7P.MsgPlayerTopIn"
-  "fo*C\n\nEGameState\022\014\n\010GS_Ready\020\000\022\014\n\010GS_Sta"
-  "rt\020\001\022\n\n\006GS_Bet\020\002\022\r\n\tGS_Result\020\003*\275\001\n\rEMsg"
-  "IDSubGame\022\025\n\021MsgIDSubGame_Null\020\000\022\024\n\020MsgI"
-  "DSubGame_Bet\020\001\022\030\n\024MsgIDSubGame_BetResp\020\002"
-  "\022\037\n\033MsgIDSubGame_GameResultResp\020\007\022 \n\034Msg"
-  "IDSubGame_NotifyStateResp\020\010\022\"\n\036MsgIDSubG"
-  "ame_NotifyGameTopResp\020\tb\006proto3"
+  "inMsg\"I\n\020MsgPlayerTopInfo\022\020\n\010chair_id\030\001 "
+  "\001(\005\022\020\n\010game_bet\030\002 \001(\003\022\021\n\twin_count\030\003 \001(\005"
+  "\":\n\022MsgA7PlayerInfoTop\022$\n\003top\030\001 \003(\0132\027.A7"
+  "U7P.MsgPlayerTopInfo*C\n\nEGameState\022\014\n\010GS"
+  "_Ready\020\000\022\014\n\010GS_Start\020\001\022\n\n\006GS_Bet\020\002\022\r\n\tGS"
+  "_Result\020\003*\275\001\n\rEMsgIDSubGame\022\025\n\021MsgIDSubG"
+  "ame_Null\020\000\022\024\n\020MsgIDSubGame_Bet\020\001\022\030\n\024MsgI"
+  "DSubGame_BetResp\020\002\022\037\n\033MsgIDSubGame_GameR"
+  "esultResp\020\007\022 \n\034MsgIDSubGame_NotifyStateR"
+  "esp\020\010\022\"\n\036MsgIDSubGame_NotifyGameTopResp\020"
+  "\tb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_A7U7P_2eproto_deps[1] = {
 };
@@ -393,7 +395,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_A7U
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_A7U7P_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_A7U7P_2eproto = {
-  false, false, descriptor_table_protodef_A7U7P_2eproto, "A7U7P.proto", 1271,
+  false, false, descriptor_table_protodef_A7U7P_2eproto, "A7U7P.proto", 1289,
   &descriptor_table_A7U7P_2eproto_once, descriptor_table_A7U7P_2eproto_sccs, descriptor_table_A7U7P_2eproto_deps, 11, 0,
   schemas, file_default_instances, TableStruct_A7U7P_2eproto::offsets,
   file_level_metadata_A7U7P_2eproto, 11, file_level_enum_descriptors_A7U7P_2eproto, file_level_service_descriptors_A7U7P_2eproto,
@@ -3137,16 +3139,23 @@ const char* MsgPlayerTopInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // int64 game_bet = 1;
+      // int32 chair_id = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          chair_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int64 game_bet = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           game_bet_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 win_count = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+      // int32 win_count = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           win_count_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
@@ -3179,16 +3188,22 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int64 game_bet = 1;
-  if (this->game_bet() != 0) {
+  // int32 chair_id = 1;
+  if (this->chair_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_game_bet(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_chair_id(), target);
   }
 
-  // int32 win_count = 2;
+  // int64 game_bet = 2;
+  if (this->game_bet() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_game_bet(), target);
+  }
+
+  // int32 win_count = 3;
   if (this->win_count() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_win_count(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_win_count(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -3207,14 +3222,21 @@ size_t MsgPlayerTopInfo::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // int64 game_bet = 1;
+  // int64 game_bet = 2;
   if (this->game_bet() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_game_bet());
   }
 
-  // int32 win_count = 2;
+  // int32 chair_id = 1;
+  if (this->chair_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_chair_id());
+  }
+
+  // int32 win_count = 3;
   if (this->win_count() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
@@ -3254,6 +3276,9 @@ void MsgPlayerTopInfo::MergeFrom(const MsgPlayerTopInfo& from) {
 
   if (from.game_bet() != 0) {
     _internal_set_game_bet(from._internal_game_bet());
+  }
+  if (from.chair_id() != 0) {
+    _internal_set_chair_id(from._internal_chair_id());
   }
   if (from.win_count() != 0) {
     _internal_set_win_count(from._internal_win_count());
