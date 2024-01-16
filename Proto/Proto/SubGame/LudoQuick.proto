@@ -15,7 +15,9 @@ enum EMsgIDLudoQuick
 	SUB_CS_TriggerEvent		= 7;		//触发特殊事件(MsgTriggerEvent)  	ps：事件ID 1-6 发送这个消息
 	SUB_SC_GameResult		= 9;		//游戏结果(MsgResultResp)
 	SUB_CS_Optional			= 10;		//自选骰子(MsgCommonN32)			ps：事件ID 8 发送这个消息
-	SUB_SC_ERR				= 11;		//错误消息(MsgCommonN32)
+	SUB_CS_GiveUp			= 11;		//投降(无)
+	SUB_SC_GiveUpResult		= 12;		//投降回复(MsgCommonN32) 1已收到处理可以执行离开动作
+	SUB_SC_ERR				= 13;		//错误消息(MsgCommonN32)
 }
 //棋子信息
 message RouteInfo
@@ -100,6 +102,8 @@ message GameResult
 	int64 user_gold		= 3;	//用户金币
 	int64 win 			= 4;	//本次获得
 	int64 bet			= 5;	//消耗金币
+	int64 bag			= 6;	//背包金币
+	int64 bag_back		= 7;	//背包返还
 }
 //游戏结算
 message MsgResultResp

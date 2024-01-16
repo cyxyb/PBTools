@@ -44,17 +44,19 @@ namespace LudoQuick {
             "aWQYAyABKAUingEKEE1zZ0NoZXNzSW5mb1Jlc3ASEAoIY2hhaXJfaWQYASAB",
             "KAUSEAoIY2hlc3NfaWQYAiABKAUSEQoJaXNfdW5sb2NrGAMgASgIEhEKCWJh",
             "Z19jb3VudBgEIAEoBRINCgVyZXRyeRgFIAEoBRIRCglyb3V0ZV9udW0YBiAB",
-            "KAUSEAoIZXZlbnRfaWQYByABKAUSDAoEY29kZRgIIAEoBSJzCgpHYW1lUmVz",
-            "dWx0EhAKCGNoYWlyX2lkGAEgASgFEiYKCXVzZXJfaW5mbxgCIAEoCzITLkx1",
-            "ZG9RdWljay5Vc2VySW5mbxIRCgl1c2VyX2dvbGQYAyABKAMSCwoDd2luGAQg",
-            "ASgDEgsKA2JldBgFIAEoAyI2Cg1Nc2dSZXN1bHRSZXNwEiUKBnJlc3VsdBgB",
-            "IAMoCzIVLkx1ZG9RdWljay5HYW1lUmVzdWx0KoYCCg9FTXNnSURMdWRvUXVp",
-            "Y2sSFgoSTXNnSURfRmlyc3RQdWJsaXNoEAASFwoTU1VCX1NDX0ZpcnN0UHVi",
-            "bGlzaBABEhMKD1NVQl9TQ19Ob3RpY2VPcBACEhMKD1NVQl9DU19EaWNlSW5m",
-            "bxADEhQKEFNVQl9TQ19UaHJvd0RpY2UQBBIXChNTVUJfQ1NfT3BlcmF0ZUNo",
-            "ZXNzEAUSFAoQU1VCX1NDX0NoZXNzSW5mbxAGEhcKE1NVQl9DU19UcmlnZ2Vy",
-            "RXZlbnQQBxIVChFTVUJfU0NfR2FtZVJlc3VsdBAJEhMKD1NVQl9DU19PcHRp",
-            "b25hbBAKEg4KClNVQl9TQ19FUlIQC2IGcHJvdG8z"));
+            "KAUSEAoIZXZlbnRfaWQYByABKAUSDAoEY29kZRgIIAEoBSKSAQoKR2FtZVJl",
+            "c3VsdBIQCghjaGFpcl9pZBgBIAEoBRImCgl1c2VyX2luZm8YAiABKAsyEy5M",
+            "dWRvUXVpY2suVXNlckluZm8SEQoJdXNlcl9nb2xkGAMgASgDEgsKA3dpbhgE",
+            "IAEoAxILCgNiZXQYBSABKAMSCwoDYmFnGAYgASgDEhAKCGJhZ19iYWNrGAcg",
+            "ASgDIjYKDU1zZ1Jlc3VsdFJlc3ASJQoGcmVzdWx0GAEgAygLMhUuTHVkb1F1",
+            "aWNrLkdhbWVSZXN1bHQqsgIKD0VNc2dJREx1ZG9RdWljaxIWChJNc2dJRF9G",
+            "aXJzdFB1Ymxpc2gQABIXChNTVUJfU0NfRmlyc3RQdWJsaXNoEAESEwoPU1VC",
+            "X1NDX05vdGljZU9wEAISEwoPU1VCX0NTX0RpY2VJbmZvEAMSFAoQU1VCX1ND",
+            "X1Rocm93RGljZRAEEhcKE1NVQl9DU19PcGVyYXRlQ2hlc3MQBRIUChBTVUJf",
+            "U0NfQ2hlc3NJbmZvEAYSFwoTU1VCX0NTX1RyaWdnZXJFdmVudBAHEhUKEVNV",
+            "Ql9TQ19HYW1lUmVzdWx0EAkSEwoPU1VCX0NTX09wdGlvbmFsEAoSEQoNU1VC",
+            "X0NTX0dpdmVVcBALEhcKE1NVQl9TQ19HaXZlVXBSZXN1bHQQDBIOCgpTVUJf",
+            "U0NfRVJSEA1iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::LudoQuick.EMsgIDLudoQuick), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -67,7 +69,7 @@ namespace LudoQuick {
             new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgOperateChess), global::LudoQuick.MsgOperateChess.Parser, new[]{ "ChairId", "ChessId", "IsUnlock" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgTriggerEvent), global::LudoQuick.MsgTriggerEvent.Parser, new[]{ "ChairId", "ChessId", "EventId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgChessInfoResp), global::LudoQuick.MsgChessInfoResp.Parser, new[]{ "ChairId", "ChessId", "IsUnlock", "BagCount", "Retry", "RouteNum", "EventId", "Code" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.GameResult), global::LudoQuick.GameResult.Parser, new[]{ "ChairId", "UserInfo", "UserGold", "Win", "Bet" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.GameResult), global::LudoQuick.GameResult.Parser, new[]{ "ChairId", "UserInfo", "UserGold", "Win", "Bet", "Bag", "BagBack" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgResultResp), global::LudoQuick.MsgResultResp.Parser, new[]{ "Result" }, null, null, null, null)
           }));
     }
@@ -120,9 +122,17 @@ namespace LudoQuick {
     /// </summary>
     [pbr::OriginalName("SUB_CS_Optional")] SubCsOptional = 10,
     /// <summary>
+    ///投降(无)
+    /// </summary>
+    [pbr::OriginalName("SUB_CS_GiveUp")] SubCsGiveUp = 11,
+    /// <summary>
+    ///投降回复(MsgCommonN32) 1已收到处理可以执行离开动作
+    /// </summary>
+    [pbr::OriginalName("SUB_SC_GiveUpResult")] SubScGiveUpResult = 12,
+    /// <summary>
     ///错误消息(MsgCommonN32)
     /// </summary>
-    [pbr::OriginalName("SUB_SC_ERR")] SubScErr = 11,
+    [pbr::OriginalName("SUB_SC_ERR")] SubScErr = 13,
   }
 
   #endregion
@@ -2876,6 +2886,8 @@ namespace LudoQuick {
       userGold_ = other.userGold_;
       win_ = other.win_;
       bet_ = other.bet_;
+      bag_ = other.bag_;
+      bagBack_ = other.bagBack_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2954,6 +2966,34 @@ namespace LudoQuick {
       }
     }
 
+    /// <summary>Field number for the "bag" field.</summary>
+    public const int BagFieldNumber = 6;
+    private long bag_;
+    /// <summary>
+    ///背包金币
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long Bag {
+      get { return bag_; }
+      set {
+        bag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "bag_back" field.</summary>
+    public const int BagBackFieldNumber = 7;
+    private long bagBack_;
+    /// <summary>
+    ///背包返还
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long BagBack {
+      get { return bagBack_; }
+      set {
+        bagBack_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GameResult);
@@ -2972,6 +3012,8 @@ namespace LudoQuick {
       if (UserGold != other.UserGold) return false;
       if (Win != other.Win) return false;
       if (Bet != other.Bet) return false;
+      if (Bag != other.Bag) return false;
+      if (BagBack != other.BagBack) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2983,6 +3025,8 @@ namespace LudoQuick {
       if (UserGold != 0L) hash ^= UserGold.GetHashCode();
       if (Win != 0L) hash ^= Win.GetHashCode();
       if (Bet != 0L) hash ^= Bet.GetHashCode();
+      if (Bag != 0L) hash ^= Bag.GetHashCode();
+      if (BagBack != 0L) hash ^= BagBack.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3019,6 +3063,14 @@ namespace LudoQuick {
         output.WriteRawTag(40);
         output.WriteInt64(Bet);
       }
+      if (Bag != 0L) {
+        output.WriteRawTag(48);
+        output.WriteInt64(Bag);
+      }
+      if (BagBack != 0L) {
+        output.WriteRawTag(56);
+        output.WriteInt64(BagBack);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3048,6 +3100,14 @@ namespace LudoQuick {
         output.WriteRawTag(40);
         output.WriteInt64(Bet);
       }
+      if (Bag != 0L) {
+        output.WriteRawTag(48);
+        output.WriteInt64(Bag);
+      }
+      if (BagBack != 0L) {
+        output.WriteRawTag(56);
+        output.WriteInt64(BagBack);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -3071,6 +3131,12 @@ namespace LudoQuick {
       }
       if (Bet != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(Bet);
+      }
+      if (Bag != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Bag);
+      }
+      if (BagBack != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(BagBack);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3100,6 +3166,12 @@ namespace LudoQuick {
       }
       if (other.Bet != 0L) {
         Bet = other.Bet;
+      }
+      if (other.Bag != 0L) {
+        Bag = other.Bag;
+      }
+      if (other.BagBack != 0L) {
+        BagBack = other.BagBack;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3138,6 +3210,14 @@ namespace LudoQuick {
             Bet = input.ReadInt64();
             break;
           }
+          case 48: {
+            Bag = input.ReadInt64();
+            break;
+          }
+          case 56: {
+            BagBack = input.ReadInt64();
+            break;
+          }
         }
       }
     #endif
@@ -3173,6 +3253,14 @@ namespace LudoQuick {
           }
           case 40: {
             Bet = input.ReadInt64();
+            break;
+          }
+          case 48: {
+            Bag = input.ReadInt64();
+            break;
+          }
+          case 56: {
+            BagBack = input.ReadInt64();
             break;
           }
         }

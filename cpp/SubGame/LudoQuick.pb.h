@@ -115,7 +115,9 @@ enum EMsgIDLudoQuick : int {
   SUB_CS_TriggerEvent = 7,
   SUB_SC_GameResult = 9,
   SUB_CS_Optional = 10,
-  SUB_SC_ERR = 11,
+  SUB_CS_GiveUp = 11,
+  SUB_SC_GiveUpResult = 12,
+  SUB_SC_ERR = 13,
   EMsgIDLudoQuick_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDLudoQuick_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
@@ -1817,6 +1819,8 @@ class GameResult PROTOBUF_FINAL :
     kUserGoldFieldNumber = 3,
     kWinFieldNumber = 4,
     kBetFieldNumber = 5,
+    kBagFieldNumber = 6,
+    kBagBackFieldNumber = 7,
     kChairIdFieldNumber = 1,
   };
   // .LudoQuick.UserInfo user_info = 2;
@@ -1864,6 +1868,24 @@ class GameResult PROTOBUF_FINAL :
   void _internal_set_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
+  // int64 bag = 6;
+  void clear_bag();
+  ::PROTOBUF_NAMESPACE_ID::int64 bag() const;
+  void set_bag(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_bag() const;
+  void _internal_set_bag(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int64 bag_back = 7;
+  void clear_bag_back();
+  ::PROTOBUF_NAMESPACE_ID::int64 bag_back() const;
+  void set_bag_back(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_bag_back() const;
+  void _internal_set_bag_back(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
   // int32 chair_id = 1;
   void clear_chair_id();
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id() const;
@@ -1884,6 +1906,8 @@ class GameResult PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int64 user_gold_;
   ::PROTOBUF_NAMESPACE_ID::int64 win_;
   ::PROTOBUF_NAMESPACE_ID::int64 bet_;
+  ::PROTOBUF_NAMESPACE_ID::int64 bag_;
+  ::PROTOBUF_NAMESPACE_ID::int64 bag_back_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_LudoQuick_2eproto;
@@ -3039,6 +3063,46 @@ inline void GameResult::_internal_set_bet(::PROTOBUF_NAMESPACE_ID::int64 value) 
 inline void GameResult::set_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_bet(value);
   // @@protoc_insertion_point(field_set:LudoQuick.GameResult.bet)
+}
+
+// int64 bag = 6;
+inline void GameResult::clear_bag() {
+  bag_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 GameResult::_internal_bag() const {
+  return bag_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 GameResult::bag() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.GameResult.bag)
+  return _internal_bag();
+}
+inline void GameResult::_internal_set_bag(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  bag_ = value;
+}
+inline void GameResult::set_bag(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_bag(value);
+  // @@protoc_insertion_point(field_set:LudoQuick.GameResult.bag)
+}
+
+// int64 bag_back = 7;
+inline void GameResult::clear_bag_back() {
+  bag_back_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 GameResult::_internal_bag_back() const {
+  return bag_back_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 GameResult::bag_back() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.GameResult.bag_back)
+  return _internal_bag_back();
+}
+inline void GameResult::_internal_set_bag_back(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  bag_back_ = value;
+}
+inline void GameResult::set_bag_back(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_bag_back(value);
+  // @@protoc_insertion_point(field_set:LudoQuick.GameResult.bag_back)
 }
 
 // -------------------------------------------------------------------
