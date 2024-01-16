@@ -17,6 +17,9 @@ enum EMsgIDSubGame
 	MsgIDSubGame_BetResp				= 2;	//玩家下注返回(MsgBetResp)
 	MsgIDSubGame_GameResultResp			= 7;	//游戏结果(MsgResult)
 	MsgIDSubGame_NotifyStateResp		= 8;	//游戏状态(MsgCommonN32)
+
+	MsgIDSubGame_NotifyGameTopResp		= 9;	//游戏状态(MsgCommonN32)
+
 }
 
 //通知状态
@@ -39,8 +42,7 @@ message A7PlayerData
 	int64				win_gold		= 3;	// 总赢
 	int32				total_play		= 4;	// 总玩次数
 	int32				win_play		= 5;	// 赢次数
-	int64				game_bet 		= 6;	// 玩家总下注
-	repeated A7BetInfo	bet_infos		= 7;	// 下注状态
+	repeated A7BetInfo	bet_infos		= 6;	// 下注状态
 }
 
 message MsgA7Record
@@ -98,3 +100,14 @@ message MsgA7Result
 	repeated int32		win_index		= 1;	//开牌结果
 	repeated MsgA7WinMsg 	win_msg			= 3;	//玩家输赢信息
 }                                           
+
+//玩家排行榜
+message MsgPlayerTopInfo
+{
+	int64 game_bet 		= 1;								//玩家总下注
+	int32 win_count 	= 2;								//赢次数
+}
+message MsgA7PlayerInfoTop
+{
+	repeated MsgPlayerTopInfo top =1;
+}

@@ -47,7 +47,7 @@ struct TableStruct_A7U7P_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[9]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[11]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -70,6 +70,9 @@ extern MsgA7BetRespDefaultTypeInternal _MsgA7BetResp_default_instance_;
 class MsgA7NotifyState;
 class MsgA7NotifyStateDefaultTypeInternal;
 extern MsgA7NotifyStateDefaultTypeInternal _MsgA7NotifyState_default_instance_;
+class MsgA7PlayerInfoTop;
+class MsgA7PlayerInfoTopDefaultTypeInternal;
+extern MsgA7PlayerInfoTopDefaultTypeInternal _MsgA7PlayerInfoTop_default_instance_;
 class MsgA7Record;
 class MsgA7RecordDefaultTypeInternal;
 extern MsgA7RecordDefaultTypeInternal _MsgA7Record_default_instance_;
@@ -82,6 +85,9 @@ extern MsgA7SceneInfoDefaultTypeInternal _MsgA7SceneInfo_default_instance_;
 class MsgA7WinMsg;
 class MsgA7WinMsgDefaultTypeInternal;
 extern MsgA7WinMsgDefaultTypeInternal _MsgA7WinMsg_default_instance_;
+class MsgPlayerTopInfo;
+class MsgPlayerTopInfoDefaultTypeInternal;
+extern MsgPlayerTopInfoDefaultTypeInternal _MsgPlayerTopInfo_default_instance_;
 }  // namespace A7U7P
 PROTOBUF_NAMESPACE_OPEN
 template<> ::A7U7P::A7BetInfo* Arena::CreateMaybeMessage<::A7U7P::A7BetInfo>(Arena*);
@@ -89,10 +95,12 @@ template<> ::A7U7P::A7PlayerData* Arena::CreateMaybeMessage<::A7U7P::A7PlayerDat
 template<> ::A7U7P::MsgA7Bet* Arena::CreateMaybeMessage<::A7U7P::MsgA7Bet>(Arena*);
 template<> ::A7U7P::MsgA7BetResp* Arena::CreateMaybeMessage<::A7U7P::MsgA7BetResp>(Arena*);
 template<> ::A7U7P::MsgA7NotifyState* Arena::CreateMaybeMessage<::A7U7P::MsgA7NotifyState>(Arena*);
+template<> ::A7U7P::MsgA7PlayerInfoTop* Arena::CreateMaybeMessage<::A7U7P::MsgA7PlayerInfoTop>(Arena*);
 template<> ::A7U7P::MsgA7Record* Arena::CreateMaybeMessage<::A7U7P::MsgA7Record>(Arena*);
 template<> ::A7U7P::MsgA7Result* Arena::CreateMaybeMessage<::A7U7P::MsgA7Result>(Arena*);
 template<> ::A7U7P::MsgA7SceneInfo* Arena::CreateMaybeMessage<::A7U7P::MsgA7SceneInfo>(Arena*);
 template<> ::A7U7P::MsgA7WinMsg* Arena::CreateMaybeMessage<::A7U7P::MsgA7WinMsg>(Arena*);
+template<> ::A7U7P::MsgPlayerTopInfo* Arena::CreateMaybeMessage<::A7U7P::MsgPlayerTopInfo>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 namespace A7U7P {
 
@@ -129,12 +137,13 @@ enum EMsgIDSubGame : int {
   MsgIDSubGame_BetResp = 2,
   MsgIDSubGame_GameResultResp = 7,
   MsgIDSubGame_NotifyStateResp = 8,
+  MsgIDSubGame_NotifyGameTopResp = 9,
   EMsgIDSubGame_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDSubGame_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDSubGame_IsValid(int value);
 constexpr EMsgIDSubGame EMsgIDSubGame_MIN = MsgIDSubGame_Null;
-constexpr EMsgIDSubGame EMsgIDSubGame_MAX = MsgIDSubGame_NotifyStateResp;
+constexpr EMsgIDSubGame EMsgIDSubGame_MAX = MsgIDSubGame_NotifyGameTopResp;
 constexpr int EMsgIDSubGame_ARRAYSIZE = EMsgIDSubGame_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDSubGame_descriptor();
@@ -559,15 +568,14 @@ class A7PlayerData PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kBetInfosFieldNumber = 7,
+    kBetInfosFieldNumber = 6,
     kUserIdFieldNumber = 1,
     kChairIdFieldNumber = 2,
     kWinGoldFieldNumber = 3,
     kTotalPlayFieldNumber = 4,
     kWinPlayFieldNumber = 5,
-    kGameBetFieldNumber = 6,
   };
-  // repeated .A7U7P.A7BetInfo bet_infos = 7;
+  // repeated .A7U7P.A7BetInfo bet_infos = 6;
   int bet_infos_size() const;
   private:
   int _internal_bet_infos_size() const;
@@ -630,15 +638,6 @@ class A7PlayerData PROTOBUF_FINAL :
   void _internal_set_win_play(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int64 game_bet = 6;
-  void clear_game_bet();
-  ::PROTOBUF_NAMESPACE_ID::int64 game_bet() const;
-  void set_game_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_game_bet() const;
-  void _internal_set_game_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
   // @@protoc_insertion_point(class_scope:A7U7P.A7PlayerData)
  private:
   class _Internal;
@@ -652,7 +651,6 @@ class A7PlayerData PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int64 win_gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 total_play_;
   ::PROTOBUF_NAMESPACE_ID::int32 win_play_;
-  ::PROTOBUF_NAMESPACE_ID::int64 game_bet_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_A7U7P_2eproto;
 };
@@ -1840,6 +1838,298 @@ class MsgA7Result PROTOBUF_FINAL :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_A7U7P_2eproto;
 };
+// -------------------------------------------------------------------
+
+class MsgPlayerTopInfo PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:A7U7P.MsgPlayerTopInfo) */ {
+ public:
+  inline MsgPlayerTopInfo() : MsgPlayerTopInfo(nullptr) {}
+  virtual ~MsgPlayerTopInfo();
+
+  MsgPlayerTopInfo(const MsgPlayerTopInfo& from);
+  MsgPlayerTopInfo(MsgPlayerTopInfo&& from) noexcept
+    : MsgPlayerTopInfo() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgPlayerTopInfo& operator=(const MsgPlayerTopInfo& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgPlayerTopInfo& operator=(MsgPlayerTopInfo&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgPlayerTopInfo& default_instance();
+
+  static inline const MsgPlayerTopInfo* internal_default_instance() {
+    return reinterpret_cast<const MsgPlayerTopInfo*>(
+               &_MsgPlayerTopInfo_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    9;
+
+  friend void swap(MsgPlayerTopInfo& a, MsgPlayerTopInfo& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgPlayerTopInfo* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgPlayerTopInfo* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgPlayerTopInfo* New() const final {
+    return CreateMaybeMessage<MsgPlayerTopInfo>(nullptr);
+  }
+
+  MsgPlayerTopInfo* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgPlayerTopInfo>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgPlayerTopInfo& from);
+  void MergeFrom(const MsgPlayerTopInfo& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgPlayerTopInfo* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "A7U7P.MsgPlayerTopInfo";
+  }
+  protected:
+  explicit MsgPlayerTopInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_A7U7P_2eproto);
+    return ::descriptor_table_A7U7P_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kGameBetFieldNumber = 1,
+    kWinCountFieldNumber = 2,
+  };
+  // int64 game_bet = 1;
+  void clear_game_bet();
+  ::PROTOBUF_NAMESPACE_ID::int64 game_bet() const;
+  void set_game_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_game_bet() const;
+  void _internal_set_game_bet(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int32 win_count = 2;
+  void clear_win_count();
+  ::PROTOBUF_NAMESPACE_ID::int32 win_count() const;
+  void set_win_count(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_win_count() const;
+  void _internal_set_win_count(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:A7U7P.MsgPlayerTopInfo)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int64 game_bet_;
+  ::PROTOBUF_NAMESPACE_ID::int32 win_count_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_A7U7P_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgA7PlayerInfoTop PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:A7U7P.MsgA7PlayerInfoTop) */ {
+ public:
+  inline MsgA7PlayerInfoTop() : MsgA7PlayerInfoTop(nullptr) {}
+  virtual ~MsgA7PlayerInfoTop();
+
+  MsgA7PlayerInfoTop(const MsgA7PlayerInfoTop& from);
+  MsgA7PlayerInfoTop(MsgA7PlayerInfoTop&& from) noexcept
+    : MsgA7PlayerInfoTop() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgA7PlayerInfoTop& operator=(const MsgA7PlayerInfoTop& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgA7PlayerInfoTop& operator=(MsgA7PlayerInfoTop&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgA7PlayerInfoTop& default_instance();
+
+  static inline const MsgA7PlayerInfoTop* internal_default_instance() {
+    return reinterpret_cast<const MsgA7PlayerInfoTop*>(
+               &_MsgA7PlayerInfoTop_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    10;
+
+  friend void swap(MsgA7PlayerInfoTop& a, MsgA7PlayerInfoTop& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgA7PlayerInfoTop* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgA7PlayerInfoTop* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgA7PlayerInfoTop* New() const final {
+    return CreateMaybeMessage<MsgA7PlayerInfoTop>(nullptr);
+  }
+
+  MsgA7PlayerInfoTop* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgA7PlayerInfoTop>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgA7PlayerInfoTop& from);
+  void MergeFrom(const MsgA7PlayerInfoTop& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgA7PlayerInfoTop* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "A7U7P.MsgA7PlayerInfoTop";
+  }
+  protected:
+  explicit MsgA7PlayerInfoTop(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_A7U7P_2eproto);
+    return ::descriptor_table_A7U7P_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kTopFieldNumber = 1,
+  };
+  // repeated .A7U7P.MsgPlayerTopInfo top = 1;
+  int top_size() const;
+  private:
+  int _internal_top_size() const;
+  public:
+  void clear_top();
+  ::A7U7P::MsgPlayerTopInfo* mutable_top(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::MsgPlayerTopInfo >*
+      mutable_top();
+  private:
+  const ::A7U7P::MsgPlayerTopInfo& _internal_top(int index) const;
+  ::A7U7P::MsgPlayerTopInfo* _internal_add_top();
+  public:
+  const ::A7U7P::MsgPlayerTopInfo& top(int index) const;
+  ::A7U7P::MsgPlayerTopInfo* add_top();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::MsgPlayerTopInfo >&
+      top() const;
+
+  // @@protoc_insertion_point(class_scope:A7U7P.MsgA7PlayerInfoTop)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::MsgPlayerTopInfo > top_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_A7U7P_2eproto;
+};
 // ===================================================================
 
 
@@ -2039,27 +2329,7 @@ inline void A7PlayerData::set_win_play(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:A7U7P.A7PlayerData.win_play)
 }
 
-// int64 game_bet = 6;
-inline void A7PlayerData::clear_game_bet() {
-  game_bet_ = PROTOBUF_LONGLONG(0);
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 A7PlayerData::_internal_game_bet() const {
-  return game_bet_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 A7PlayerData::game_bet() const {
-  // @@protoc_insertion_point(field_get:A7U7P.A7PlayerData.game_bet)
-  return _internal_game_bet();
-}
-inline void A7PlayerData::_internal_set_game_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  
-  game_bet_ = value;
-}
-inline void A7PlayerData::set_game_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_game_bet(value);
-  // @@protoc_insertion_point(field_set:A7U7P.A7PlayerData.game_bet)
-}
-
-// repeated .A7U7P.A7BetInfo bet_infos = 7;
+// repeated .A7U7P.A7BetInfo bet_infos = 6;
 inline int A7PlayerData::_internal_bet_infos_size() const {
   return bet_infos_.size();
 }
@@ -2978,9 +3248,100 @@ MsgA7Result::win_msg() const {
   return win_msg_;
 }
 
+// -------------------------------------------------------------------
+
+// MsgPlayerTopInfo
+
+// int64 game_bet = 1;
+inline void MsgPlayerTopInfo::clear_game_bet() {
+  game_bet_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgPlayerTopInfo::_internal_game_bet() const {
+  return game_bet_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgPlayerTopInfo::game_bet() const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgPlayerTopInfo.game_bet)
+  return _internal_game_bet();
+}
+inline void MsgPlayerTopInfo::_internal_set_game_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  game_bet_ = value;
+}
+inline void MsgPlayerTopInfo::set_game_bet(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_game_bet(value);
+  // @@protoc_insertion_point(field_set:A7U7P.MsgPlayerTopInfo.game_bet)
+}
+
+// int32 win_count = 2;
+inline void MsgPlayerTopInfo::clear_win_count() {
+  win_count_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPlayerTopInfo::_internal_win_count() const {
+  return win_count_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPlayerTopInfo::win_count() const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgPlayerTopInfo.win_count)
+  return _internal_win_count();
+}
+inline void MsgPlayerTopInfo::_internal_set_win_count(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  win_count_ = value;
+}
+inline void MsgPlayerTopInfo::set_win_count(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_win_count(value);
+  // @@protoc_insertion_point(field_set:A7U7P.MsgPlayerTopInfo.win_count)
+}
+
+// -------------------------------------------------------------------
+
+// MsgA7PlayerInfoTop
+
+// repeated .A7U7P.MsgPlayerTopInfo top = 1;
+inline int MsgA7PlayerInfoTop::_internal_top_size() const {
+  return top_.size();
+}
+inline int MsgA7PlayerInfoTop::top_size() const {
+  return _internal_top_size();
+}
+inline void MsgA7PlayerInfoTop::clear_top() {
+  top_.Clear();
+}
+inline ::A7U7P::MsgPlayerTopInfo* MsgA7PlayerInfoTop::mutable_top(int index) {
+  // @@protoc_insertion_point(field_mutable:A7U7P.MsgA7PlayerInfoTop.top)
+  return top_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::MsgPlayerTopInfo >*
+MsgA7PlayerInfoTop::mutable_top() {
+  // @@protoc_insertion_point(field_mutable_list:A7U7P.MsgA7PlayerInfoTop.top)
+  return &top_;
+}
+inline const ::A7U7P::MsgPlayerTopInfo& MsgA7PlayerInfoTop::_internal_top(int index) const {
+  return top_.Get(index);
+}
+inline const ::A7U7P::MsgPlayerTopInfo& MsgA7PlayerInfoTop::top(int index) const {
+  // @@protoc_insertion_point(field_get:A7U7P.MsgA7PlayerInfoTop.top)
+  return _internal_top(index);
+}
+inline ::A7U7P::MsgPlayerTopInfo* MsgA7PlayerInfoTop::_internal_add_top() {
+  return top_.Add();
+}
+inline ::A7U7P::MsgPlayerTopInfo* MsgA7PlayerInfoTop::add_top() {
+  // @@protoc_insertion_point(field_add:A7U7P.MsgA7PlayerInfoTop.top)
+  return _internal_add_top();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::A7U7P::MsgPlayerTopInfo >&
+MsgA7PlayerInfoTop::top() const {
+  // @@protoc_insertion_point(field_list:A7U7P.MsgA7PlayerInfoTop.top)
+  return top_;
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
