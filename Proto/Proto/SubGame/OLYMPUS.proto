@@ -35,5 +35,6 @@ message MsgResult
 	int32				table_all_mul	= 2;		//总倍数
 	int32				free_times		= 3;		//免费次数
 	int32				free_add_mul	= 4;		//免费累加倍数
+	uint64				revenue			= 5;		//税收
 }
 

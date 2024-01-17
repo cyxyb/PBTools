@@ -28,18 +28,19 @@ namespace OLYMPUS {
             "U2NlbmVJbmZvEgsKA2JldBgBIAMoBRIPCgdjdXJfYmV0GAIgASgFEg8KB2Fk",
             "ZF9tdWwYAyABKAUSEgoKZnJlZV90aW1lcxgEIAEoBSJHCghNc2dSb3VuZBIM",
             "CgRpY29uGAEgAygFEgsKA2hpdBgCIAMoCBITCgtzcGVjaWFsX211bBgDIAMo",
-            "BRILCgNvZGQYBCABKAUicwoJTXNnUmVzdWx0EiUKCnJvdW5kX2RhdGEYASAD",
-            "KAsyES5PTFlNUFVTLk1zZ1JvdW5kEhUKDXRhYmxlX2FsbF9tdWwYAiABKAUS",
-            "EgoKZnJlZV90aW1lcxgDIAEoBRIUCgxmcmVlX2FkZF9tdWwYBCABKAUqfQoN",
-            "RU1zZ0lEU3ViR2FtZRIVChFNc2dJRFN1YkdhbWVfTnVsbBAAEhoKFk1zZ0lE",
-            "U3ViR2FtZV9HYW1lU3RhcnQQARIYChRNc2dJRFN1YkdhbWVfQnV5RnJlZRAC",
-            "Eh8KG01zZ0lEU3ViR2FtZV9HYW1lUmVzdWx0UmVzcBADYgZwcm90bzM="));
+            "BRILCgNvZGQYBCABKAUihAEKCU1zZ1Jlc3VsdBIlCgpyb3VuZF9kYXRhGAEg",
+            "AygLMhEuT0xZTVBVUy5Nc2dSb3VuZBIVCg10YWJsZV9hbGxfbXVsGAIgASgF",
+            "EhIKCmZyZWVfdGltZXMYAyABKAUSFAoMZnJlZV9hZGRfbXVsGAQgASgFEg8K",
+            "B3JldmVudWUYBSABKAQqfQoNRU1zZ0lEU3ViR2FtZRIVChFNc2dJRFN1Ykdh",
+            "bWVfTnVsbBAAEhoKFk1zZ0lEU3ViR2FtZV9HYW1lU3RhcnQQARIYChRNc2dJ",
+            "RFN1YkdhbWVfQnV5RnJlZRACEh8KG01zZ0lEU3ViR2FtZV9HYW1lUmVzdWx0",
+            "UmVzcBADYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::OLYMPUS.EMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::OLYMPUS.MsgSceneInfo), global::OLYMPUS.MsgSceneInfo.Parser, new[]{ "Bet", "CurBet", "AddMul", "FreeTimes" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::OLYMPUS.MsgRound), global::OLYMPUS.MsgRound.Parser, new[]{ "Icon", "Hit", "SpecialMul", "Odd" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::OLYMPUS.MsgResult), global::OLYMPUS.MsgResult.Parser, new[]{ "RoundData", "TableAllMul", "FreeTimes", "FreeAddMul" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::OLYMPUS.MsgResult), global::OLYMPUS.MsgResult.Parser, new[]{ "RoundData", "TableAllMul", "FreeTimes", "FreeAddMul", "Revenue" }, null, null, null, null)
           }));
     }
     #endregion
@@ -655,6 +656,7 @@ namespace OLYMPUS {
       tableAllMul_ = other.tableAllMul_;
       freeTimes_ = other.freeTimes_;
       freeAddMul_ = other.freeAddMul_;
+      revenue_ = other.revenue_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -718,6 +720,20 @@ namespace OLYMPUS {
       }
     }
 
+    /// <summary>Field number for the "revenue" field.</summary>
+    public const int RevenueFieldNumber = 5;
+    private ulong revenue_;
+    /// <summary>
+    ///税收
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ulong Revenue {
+      get { return revenue_; }
+      set {
+        revenue_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as MsgResult);
@@ -735,6 +751,7 @@ namespace OLYMPUS {
       if (TableAllMul != other.TableAllMul) return false;
       if (FreeTimes != other.FreeTimes) return false;
       if (FreeAddMul != other.FreeAddMul) return false;
+      if (Revenue != other.Revenue) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -745,6 +762,7 @@ namespace OLYMPUS {
       if (TableAllMul != 0) hash ^= TableAllMul.GetHashCode();
       if (FreeTimes != 0) hash ^= FreeTimes.GetHashCode();
       if (FreeAddMul != 0) hash ^= FreeAddMul.GetHashCode();
+      if (Revenue != 0UL) hash ^= Revenue.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -774,6 +792,10 @@ namespace OLYMPUS {
         output.WriteRawTag(32);
         output.WriteInt32(FreeAddMul);
       }
+      if (Revenue != 0UL) {
+        output.WriteRawTag(40);
+        output.WriteUInt64(Revenue);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -796,6 +818,10 @@ namespace OLYMPUS {
         output.WriteRawTag(32);
         output.WriteInt32(FreeAddMul);
       }
+      if (Revenue != 0UL) {
+        output.WriteRawTag(40);
+        output.WriteUInt64(Revenue);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -814,6 +840,9 @@ namespace OLYMPUS {
       }
       if (FreeAddMul != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(FreeAddMul);
+      }
+      if (Revenue != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Revenue);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -835,6 +864,9 @@ namespace OLYMPUS {
       }
       if (other.FreeAddMul != 0) {
         FreeAddMul = other.FreeAddMul;
+      }
+      if (other.Revenue != 0UL) {
+        Revenue = other.Revenue;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -866,6 +898,10 @@ namespace OLYMPUS {
             FreeAddMul = input.ReadInt32();
             break;
           }
+          case 40: {
+            Revenue = input.ReadUInt64();
+            break;
+          }
         }
       }
     #endif
@@ -894,6 +930,10 @@ namespace OLYMPUS {
           }
           case 32: {
             FreeAddMul = input.ReadInt32();
+            break;
+          }
+          case 40: {
+            Revenue = input.ReadUInt64();
             break;
           }
         }
