@@ -35,22 +35,28 @@ namespace LudoQuick {
             "eHRfcG9zMhgIIAEoBRITCgtzdGFydF9wb2ludBgJIAEoBRIRCgllbmRfcG9p",
             "bnQYCiABKAUiZgoQTXNnU2NlbmVJbmZvUmVzcBISCgpnYW1lX3N0YXRlGAEg",
             "ASgFEhYKDnRpbWVfcmVtYWluaW5nGAIgASgFEiYKCXVzZXJfaW5mbxgDIAMo",
-            "CzITLkx1ZG9RdWljay5Vc2VySW5mbyIzChBNc2dTdGFydERpY2VSZXNwEhAK",
-            "CGNoYWlyX2lkGAEgASgFEg0KBXRpbWVzGAIgASgFIjcKEE1zZ1Rocm93RGlj",
-            "ZVJlc3ASEAoIY2hhaXJfaWQYASABKAUSEQoJZGljZV9yb2xsGAIgASgFIkgK",
-            "D01zZ09wZXJhdGVSb3V0ZRIQCghjaGFpcl9pZBgBIAEoBRIQCghjaGVzc19p",
-            "ZBgCIAEoBRIRCglpc191bmxvY2sYAyABKAgiZwoPTXNnRGljZUluZm9SZXNw",
-            "EhAKCGNoYWlyX2lkGAEgASgFEhAKCGNoZXNzX2lkGAIgASgFEhEKCXJvdXRl",
-            "X251bRgDIAEoBRIPCgdwcm9wX2lkGAQgASgFEgwKBGNvZGUYBSABKAUicwoK",
-            "R2FtZVJlc3VsdBIQCghjaGFpcl9pZBgBIAEoBRImCgl1c2VyX2luZm8YAiAB",
-            "KAsyEy5MdWRvUXVpY2suVXNlckluZm8SEQoJdXNlcl9nb2xkGAMgASgDEgsK",
-            "A3dpbhgEIAEoAxILCgNiZXQYBSABKAMiNgoNTXNnUmVzdWx0UmVzcBIlCgZy",
-            "ZXN1bHQYASADKAsyFS5MdWRvUXVpY2suR2FtZVJlc3VsdCrdAQoPRU1zZ0lE",
-            "THVkb1F1aWNrEhYKEk1zZ0lEX0ZpcnN0UHVibGlzaBAAEhcKE1NVQl9TQ19G",
-            "aXJzdFB1Ymxpc2gQARIUChBTVUJfU0NfU3RhcnREaWNlEAISEwoPU1VCX0NT",
-            "X0RpY2VJbmZvEAMSFAoQU1VCX1NDX1Rocm93RGljZRAEEhcKE1NVQl9DU19P",
-            "cGVyYXRlUm91dGUQBRITCg9TVUJfU0NfRGljZUluZm8QBhIVChFTVUJfU0Nf",
-            "R2FtZVJlc3VsdBAHEhMKD1NVQl9DU19PcHRpb25hbBAIYgZwcm90bzM="));
+            "CzITLkx1ZG9RdWljay5Vc2VySW5mbyIyCg9Nc2dOb3RpY2VPcFJlc3ASEAoI",
+            "Y2hhaXJfaWQYASABKAUSDQoFdGltZXMYAiABKAUiNwoQTXNnVGhyb3dEaWNl",
+            "UmVzcBIQCghjaGFpcl9pZBgBIAEoBRIRCglkaWNlX3JvbGwYAiABKAUiSAoP",
+            "TXNnT3BlcmF0ZUNoZXNzEhAKCGNoYWlyX2lkGAEgASgFEhAKCGNoZXNzX2lk",
+            "GAIgASgFEhEKCWlzX3VubG9jaxgDIAEoCCJHCg9Nc2dUcmlnZ2VyRXZlbnQS",
+            "EAoIY2hhaXJfaWQYASABKAUSEAoIY2hlc3NfaWQYAiABKAUSEAoIZXZlbnRf",
+            "aWQYAyABKAUingEKEE1zZ0NoZXNzSW5mb1Jlc3ASEAoIY2hhaXJfaWQYASAB",
+            "KAUSEAoIY2hlc3NfaWQYAiABKAUSEQoJaXNfdW5sb2NrGAMgASgIEhEKCWJh",
+            "Z19jb3VudBgEIAEoBRINCgVyZXRyeRgFIAEoBRIRCglyb3V0ZV9udW0YBiAB",
+            "KAUSEAoIZXZlbnRfaWQYByABKAUSDAoEY29kZRgIIAEoBSKSAQoKR2FtZVJl",
+            "c3VsdBIQCghjaGFpcl9pZBgBIAEoBRImCgl1c2VyX2luZm8YAiABKAsyEy5M",
+            "dWRvUXVpY2suVXNlckluZm8SEQoJdXNlcl9nb2xkGAMgASgDEgsKA3dpbhgE",
+            "IAEoAxILCgNiZXQYBSABKAMSCwoDYmFnGAYgASgDEhAKCGJhZ19iYWNrGAcg",
+            "ASgDIjYKDU1zZ1Jlc3VsdFJlc3ASJQoGcmVzdWx0GAEgAygLMhUuTHVkb1F1",
+            "aWNrLkdhbWVSZXN1bHQqsgIKD0VNc2dJREx1ZG9RdWljaxIWChJNc2dJRF9G",
+            "aXJzdFB1Ymxpc2gQABIXChNTVUJfU0NfRmlyc3RQdWJsaXNoEAESEwoPU1VC",
+            "X1NDX05vdGljZU9wEAISEwoPU1VCX0NTX0RpY2VJbmZvEAMSFAoQU1VCX1ND",
+            "X1Rocm93RGljZRAEEhcKE1NVQl9DU19PcGVyYXRlQ2hlc3MQBRIUChBTVUJf",
+            "U0NfQ2hlc3NJbmZvEAYSFwoTU1VCX0NTX1RyaWdnZXJFdmVudBAHEhUKEVNV",
+            "Ql9TQ19HYW1lUmVzdWx0EAkSEwoPU1VCX0NTX09wdGlvbmFsEAoSEQoNU1VC",
+            "X0NTX0dpdmVVcBALEhcKE1NVQl9TQ19HaXZlVXBSZXN1bHQQDBIOCgpTVUJf",
+            "U0NfRVJSEA1iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::LudoQuick.EMsgIDLudoQuick), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -58,11 +64,12 @@ namespace LudoQuick {
             new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.UserInfo), global::LudoQuick.UserInfo.Parser, new[]{ "ChairId", "RouteInfo", "FinishLineSwitch", "End" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.ChessGrid), global::LudoQuick.ChessGrid.Parser, new[]{ "PosId", "SafeHouse", "GoldBag", "Prop", "Switch", "Inflection", "NextPos1", "NextPos2", "StartPoint", "EndPoint" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgSceneInfoResp), global::LudoQuick.MsgSceneInfoResp.Parser, new[]{ "GameState", "TimeRemaining", "UserInfo" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgStartDiceResp), global::LudoQuick.MsgStartDiceResp.Parser, new[]{ "ChairId", "Times" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgNoticeOpResp), global::LudoQuick.MsgNoticeOpResp.Parser, new[]{ "ChairId", "Times" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgThrowDiceResp), global::LudoQuick.MsgThrowDiceResp.Parser, new[]{ "ChairId", "DiceRoll" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgOperateRoute), global::LudoQuick.MsgOperateRoute.Parser, new[]{ "ChairId", "ChessId", "IsUnlock" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgDiceInfoResp), global::LudoQuick.MsgDiceInfoResp.Parser, new[]{ "ChairId", "ChessId", "RouteNum", "PropId", "Code" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.GameResult), global::LudoQuick.GameResult.Parser, new[]{ "ChairId", "UserInfo", "UserGold", "Win", "Bet" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgOperateChess), global::LudoQuick.MsgOperateChess.Parser, new[]{ "ChairId", "ChessId", "IsUnlock" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgTriggerEvent), global::LudoQuick.MsgTriggerEvent.Parser, new[]{ "ChairId", "ChessId", "EventId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgChessInfoResp), global::LudoQuick.MsgChessInfoResp.Parser, new[]{ "ChairId", "ChessId", "IsUnlock", "BagCount", "Retry", "RouteNum", "EventId", "Code" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.GameResult), global::LudoQuick.GameResult.Parser, new[]{ "ChairId", "UserInfo", "UserGold", "Win", "Bet", "Bag", "BagBack" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgResultResp), global::LudoQuick.MsgResultResp.Parser, new[]{ "Result" }, null, null, null, null)
           }));
     }
@@ -83,11 +90,11 @@ namespace LudoQuick {
     /// </summary>
     [pbr::OriginalName("SUB_SC_FirstPublish")] SubScFirstPublish = 1,
     /// <summary>
-    ///开始投掷(MsgStartDiceResp)
+    ///通知操作(MsgNoticeOpResp)
     /// </summary>
-    [pbr::OriginalName("SUB_SC_StartDice")] SubScStartDice = 2,
+    [pbr::OriginalName("SUB_SC_NoticeOp")] SubScNoticeOp = 2,
     /// <summary>
-    ///投掷骰子(MsgCommonBool)
+    ///投掷骰子(MsgCommonBool)       	ps：正常投掷和触发事件ID 7 和奖励重新摇骰子（优先级低于道具 有道具就触发道具不触发它）
     /// </summary>
     [pbr::OriginalName("SUB_CS_DiceInfo")] SubCsDiceInfo = 3,
     /// <summary>
@@ -95,21 +102,37 @@ namespace LudoQuick {
     /// </summary>
     [pbr::OriginalName("SUB_SC_ThrowDice")] SubScThrowDice = 4,
     /// <summary>
-    ///操作棋子(MsgOperateRoute)
+    ///操作棋子(MsgOperateChess)			ps：触发事件 9 直接处理解除开关动画就行 不用再发消息了 触发事件 10 发送解锁棋子的消息
     /// </summary>
-    [pbr::OriginalName("SUB_CS_OperateRoute")] SubCsOperateRoute = 5,
+    [pbr::OriginalName("SUB_CS_OperateChess")] SubCsOperateChess = 5,
     /// <summary>
-    ///骰子结果(MsgDiceInfoResp)
+    ///棋子结果(MsgChessInfoResp)
     /// </summary>
-    [pbr::OriginalName("SUB_SC_DiceInfo")] SubScDiceInfo = 6,
+    [pbr::OriginalName("SUB_SC_ChessInfo")] SubScChessInfo = 6,
+    /// <summary>
+    ///触发特殊事件(MsgTriggerEvent)  	ps：事件ID 1-6 发送这个消息
+    /// </summary>
+    [pbr::OriginalName("SUB_CS_TriggerEvent")] SubCsTriggerEvent = 7,
     /// <summary>
     ///游戏结果(MsgResultResp)
     /// </summary>
-    [pbr::OriginalName("SUB_SC_GameResult")] SubScGameResult = 7,
+    [pbr::OriginalName("SUB_SC_GameResult")] SubScGameResult = 9,
     /// <summary>
-    ///自选骰子(MsgCommonN32)
+    ///自选骰子(MsgCommonN32)			ps：事件ID 8 发送这个消息
     /// </summary>
-    [pbr::OriginalName("SUB_CS_Optional")] SubCsOptional = 8,
+    [pbr::OriginalName("SUB_CS_Optional")] SubCsOptional = 10,
+    /// <summary>
+    ///投降(无)
+    /// </summary>
+    [pbr::OriginalName("SUB_CS_GiveUp")] SubCsGiveUp = 11,
+    /// <summary>
+    ///投降回复(MsgCommonN32) 1已收到处理可以执行离开动作
+    /// </summary>
+    [pbr::OriginalName("SUB_SC_GiveUpResult")] SubScGiveUpResult = 12,
+    /// <summary>
+    ///错误消息(MsgCommonN32)
+    /// </summary>
+    [pbr::OriginalName("SUB_SC_ERR")] SubScErr = 13,
   }
 
   #endregion
@@ -1430,17 +1453,17 @@ namespace LudoQuick {
   }
 
   /// <summary>
-  ///开始投掷
+  ///通知操作
   /// </summary>
-  public sealed partial class MsgStartDiceResp : pb::IMessage<MsgStartDiceResp>
+  public sealed partial class MsgNoticeOpResp : pb::IMessage<MsgNoticeOpResp>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<MsgStartDiceResp> _parser = new pb::MessageParser<MsgStartDiceResp>(() => new MsgStartDiceResp());
+    private static readonly pb::MessageParser<MsgNoticeOpResp> _parser = new pb::MessageParser<MsgNoticeOpResp>(() => new MsgNoticeOpResp());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<MsgStartDiceResp> Parser { get { return _parser; } }
+    public static pb::MessageParser<MsgNoticeOpResp> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -1453,22 +1476,22 @@ namespace LudoQuick {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgStartDiceResp() {
+    public MsgNoticeOpResp() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgStartDiceResp(MsgStartDiceResp other) : this() {
+    public MsgNoticeOpResp(MsgNoticeOpResp other) : this() {
       chairId_ = other.chairId_;
       times_ = other.times_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgStartDiceResp Clone() {
-      return new MsgStartDiceResp(this);
+    public MsgNoticeOpResp Clone() {
+      return new MsgNoticeOpResp(this);
     }
 
     /// <summary>Field number for the "chair_id" field.</summary>
@@ -1501,11 +1524,11 @@ namespace LudoQuick {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as MsgStartDiceResp);
+      return Equals(other as MsgNoticeOpResp);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(MsgStartDiceResp other) {
+    public bool Equals(MsgNoticeOpResp other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -1585,7 +1608,7 @@ namespace LudoQuick {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(MsgStartDiceResp other) {
+    public void MergeFrom(MsgNoticeOpResp other) {
       if (other == null) {
         return;
       }
@@ -1647,7 +1670,7 @@ namespace LudoQuick {
   }
 
   /// <summary>
-  ///投掷结果
+  ///投掷结果	
   /// </summary>
   public sealed partial class MsgThrowDiceResp : pb::IMessage<MsgThrowDiceResp>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -1864,17 +1887,17 @@ namespace LudoQuick {
   }
 
   /// <summary>
-  ///操作棋子
+  ///操作棋子	
   /// </summary>
-  public sealed partial class MsgOperateRoute : pb::IMessage<MsgOperateRoute>
+  public sealed partial class MsgOperateChess : pb::IMessage<MsgOperateChess>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<MsgOperateRoute> _parser = new pb::MessageParser<MsgOperateRoute>(() => new MsgOperateRoute());
+    private static readonly pb::MessageParser<MsgOperateChess> _parser = new pb::MessageParser<MsgOperateChess>(() => new MsgOperateChess());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<MsgOperateRoute> Parser { get { return _parser; } }
+    public static pb::MessageParser<MsgOperateChess> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -1887,14 +1910,14 @@ namespace LudoQuick {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgOperateRoute() {
+    public MsgOperateChess() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgOperateRoute(MsgOperateRoute other) : this() {
+    public MsgOperateChess(MsgOperateChess other) : this() {
       chairId_ = other.chairId_;
       chessId_ = other.chessId_;
       isUnlock_ = other.isUnlock_;
@@ -1902,8 +1925,8 @@ namespace LudoQuick {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgOperateRoute Clone() {
-      return new MsgOperateRoute(this);
+    public MsgOperateChess Clone() {
+      return new MsgOperateChess(this);
     }
 
     /// <summary>Field number for the "chair_id" field.</summary>
@@ -1950,11 +1973,11 @@ namespace LudoQuick {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as MsgOperateRoute);
+      return Equals(other as MsgOperateChess);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(MsgOperateRoute other) {
+    public bool Equals(MsgOperateChess other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -2047,7 +2070,7 @@ namespace LudoQuick {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(MsgOperateRoute other) {
+    public void MergeFrom(MsgOperateChess other) {
       if (other == null) {
         return;
       }
@@ -2120,17 +2143,17 @@ namespace LudoQuick {
   }
 
   /// <summary>
-  ///骰子数据
+  ///触发特殊事件	
   /// </summary>
-  public sealed partial class MsgDiceInfoResp : pb::IMessage<MsgDiceInfoResp>
+  public sealed partial class MsgTriggerEvent : pb::IMessage<MsgTriggerEvent>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<MsgDiceInfoResp> _parser = new pb::MessageParser<MsgDiceInfoResp>(() => new MsgDiceInfoResp());
+    private static readonly pb::MessageParser<MsgTriggerEvent> _parser = new pb::MessageParser<MsgTriggerEvent>(() => new MsgTriggerEvent());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<MsgDiceInfoResp> Parser { get { return _parser; } }
+    public static pb::MessageParser<MsgTriggerEvent> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -2143,25 +2166,284 @@ namespace LudoQuick {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgDiceInfoResp() {
+    public MsgTriggerEvent() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgDiceInfoResp(MsgDiceInfoResp other) : this() {
+    public MsgTriggerEvent(MsgTriggerEvent other) : this() {
       chairId_ = other.chairId_;
       chessId_ = other.chessId_;
+      eventId_ = other.eventId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MsgTriggerEvent Clone() {
+      return new MsgTriggerEvent(this);
+    }
+
+    /// <summary>Field number for the "chair_id" field.</summary>
+    public const int ChairIdFieldNumber = 1;
+    private int chairId_;
+    /// <summary>
+    ///椅子号
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int ChairId {
+      get { return chairId_; }
+      set {
+        chairId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "chess_id" field.</summary>
+    public const int ChessIdFieldNumber = 2;
+    private int chessId_;
+    /// <summary>
+    ///棋子ID 0123
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int ChessId {
+      get { return chessId_; }
+      set {
+        chessId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "event_id" field.</summary>
+    public const int EventIdFieldNumber = 3;
+    private int eventId_;
+    /// <summary>
+    ///事件ID
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int EventId {
+      get { return eventId_; }
+      set {
+        eventId_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as MsgTriggerEvent);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(MsgTriggerEvent other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ChairId != other.ChairId) return false;
+      if (ChessId != other.ChessId) return false;
+      if (EventId != other.EventId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ChairId != 0) hash ^= ChairId.GetHashCode();
+      if (ChessId != 0) hash ^= ChessId.GetHashCode();
+      if (EventId != 0) hash ^= EventId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (ChairId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ChairId);
+      }
+      if (ChessId != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(ChessId);
+      }
+      if (EventId != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(EventId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ChairId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ChairId);
+      }
+      if (ChessId != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(ChessId);
+      }
+      if (EventId != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(EventId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (ChairId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChairId);
+      }
+      if (ChessId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChessId);
+      }
+      if (EventId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(EventId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(MsgTriggerEvent other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ChairId != 0) {
+        ChairId = other.ChairId;
+      }
+      if (other.ChessId != 0) {
+        ChessId = other.ChessId;
+      }
+      if (other.EventId != 0) {
+        EventId = other.EventId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            ChairId = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            ChessId = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            EventId = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ChairId = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            ChessId = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            EventId = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  ///棋子结果
+  /// </summary>
+  public sealed partial class MsgChessInfoResp : pb::IMessage<MsgChessInfoResp>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<MsgChessInfoResp> _parser = new pb::MessageParser<MsgChessInfoResp>(() => new MsgChessInfoResp());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<MsgChessInfoResp> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::LudoQuick.LudoQuickReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MsgChessInfoResp() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MsgChessInfoResp(MsgChessInfoResp other) : this() {
+      chairId_ = other.chairId_;
+      chessId_ = other.chessId_;
+      isUnlock_ = other.isUnlock_;
+      bagCount_ = other.bagCount_;
+      retry_ = other.retry_;
       routeNum_ = other.routeNum_;
-      propId_ = other.propId_;
+      eventId_ = other.eventId_;
       code_ = other.code_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public MsgDiceInfoResp Clone() {
-      return new MsgDiceInfoResp(this);
+    public MsgChessInfoResp Clone() {
+      return new MsgChessInfoResp(this);
     }
 
     /// <summary>Field number for the "chair_id" field.</summary>
@@ -2192,11 +2474,53 @@ namespace LudoQuick {
       }
     }
 
+    /// <summary>Field number for the "is_unlock" field.</summary>
+    public const int IsUnlockFieldNumber = 3;
+    private bool isUnlock_;
+    /// <summary>
+    ///解锁 1是
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsUnlock {
+      get { return isUnlock_; }
+      set {
+        isUnlock_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "bag_count" field.</summary>
+    public const int BagCountFieldNumber = 4;
+    private int bagCount_;
+    /// <summary>
+    ///钱袋个数
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int BagCount {
+      get { return bagCount_; }
+      set {
+        bagCount_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "retry" field.</summary>
+    public const int RetryFieldNumber = 5;
+    private int retry_;
+    /// <summary>
+    ///是否奖励重新摇骰子
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Retry {
+      get { return retry_; }
+      set {
+        retry_ = value;
+      }
+    }
+
     /// <summary>Field number for the "route_num" field.</summary>
-    public const int RouteNumFieldNumber = 3;
+    public const int RouteNumFieldNumber = 6;
     private int routeNum_;
     /// <summary>
-    ///走了多少格
+    ///非解锁:走了多少格 解锁:对应的格子ID
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int RouteNum {
@@ -2206,22 +2530,22 @@ namespace LudoQuick {
       }
     }
 
-    /// <summary>Field number for the "prop_id" field.</summary>
-    public const int PropIdFieldNumber = 4;
-    private int propId_;
+    /// <summary>Field number for the "event_id" field.</summary>
+    public const int EventIdFieldNumber = 7;
+    private int eventId_;
     /// <summary>
-    ///道具类型 0：未触发 1：前进一格 2：前进三格 3：前进五格 4：前进七格 5：移动到最近棋子 6：移动到最近得安全屋 7 ：获得骰子 8：获得指定骰子 9：解除开关 10：解锁棋子
+    ///事件类型 0：未触发 1：前进一格 2：前进三格 3：前进五格 4：前进七格 5：移动到最近棋子 6：移动到最近得安全屋 7 ：获得骰子 8：获得指定骰子 9：解除开关 10：解锁棋子
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int PropId {
-      get { return propId_; }
+    public int EventId {
+      get { return eventId_; }
       set {
-        propId_ = value;
+        eventId_ = value;
       }
     }
 
     /// <summary>Field number for the "code" field.</summary>
-    public const int CodeFieldNumber = 5;
+    public const int CodeFieldNumber = 8;
     private int code_;
     /// <summary>
     ///对语言id
@@ -2236,11 +2560,11 @@ namespace LudoQuick {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as MsgDiceInfoResp);
+      return Equals(other as MsgChessInfoResp);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(MsgDiceInfoResp other) {
+    public bool Equals(MsgChessInfoResp other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -2249,8 +2573,11 @@ namespace LudoQuick {
       }
       if (ChairId != other.ChairId) return false;
       if (ChessId != other.ChessId) return false;
+      if (IsUnlock != other.IsUnlock) return false;
+      if (BagCount != other.BagCount) return false;
+      if (Retry != other.Retry) return false;
       if (RouteNum != other.RouteNum) return false;
-      if (PropId != other.PropId) return false;
+      if (EventId != other.EventId) return false;
       if (Code != other.Code) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -2260,8 +2587,11 @@ namespace LudoQuick {
       int hash = 1;
       if (ChairId != 0) hash ^= ChairId.GetHashCode();
       if (ChessId != 0) hash ^= ChessId.GetHashCode();
+      if (IsUnlock != false) hash ^= IsUnlock.GetHashCode();
+      if (BagCount != 0) hash ^= BagCount.GetHashCode();
+      if (Retry != 0) hash ^= Retry.GetHashCode();
       if (RouteNum != 0) hash ^= RouteNum.GetHashCode();
-      if (PropId != 0) hash ^= PropId.GetHashCode();
+      if (EventId != 0) hash ^= EventId.GetHashCode();
       if (Code != 0) hash ^= Code.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -2287,16 +2617,28 @@ namespace LudoQuick {
         output.WriteRawTag(16);
         output.WriteInt32(ChessId);
       }
-      if (RouteNum != 0) {
+      if (IsUnlock != false) {
         output.WriteRawTag(24);
+        output.WriteBool(IsUnlock);
+      }
+      if (BagCount != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(BagCount);
+      }
+      if (Retry != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(Retry);
+      }
+      if (RouteNum != 0) {
+        output.WriteRawTag(48);
         output.WriteInt32(RouteNum);
       }
-      if (PropId != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(PropId);
+      if (EventId != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(EventId);
       }
       if (Code != 0) {
-        output.WriteRawTag(40);
+        output.WriteRawTag(64);
         output.WriteInt32(Code);
       }
       if (_unknownFields != null) {
@@ -2316,16 +2658,28 @@ namespace LudoQuick {
         output.WriteRawTag(16);
         output.WriteInt32(ChessId);
       }
-      if (RouteNum != 0) {
+      if (IsUnlock != false) {
         output.WriteRawTag(24);
+        output.WriteBool(IsUnlock);
+      }
+      if (BagCount != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(BagCount);
+      }
+      if (Retry != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(Retry);
+      }
+      if (RouteNum != 0) {
+        output.WriteRawTag(48);
         output.WriteInt32(RouteNum);
       }
-      if (PropId != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(PropId);
+      if (EventId != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(EventId);
       }
       if (Code != 0) {
-        output.WriteRawTag(40);
+        output.WriteRawTag(64);
         output.WriteInt32(Code);
       }
       if (_unknownFields != null) {
@@ -2343,11 +2697,20 @@ namespace LudoQuick {
       if (ChessId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChessId);
       }
+      if (IsUnlock != false) {
+        size += 1 + 1;
+      }
+      if (BagCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(BagCount);
+      }
+      if (Retry != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Retry);
+      }
       if (RouteNum != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(RouteNum);
       }
-      if (PropId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PropId);
+      if (EventId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(EventId);
       }
       if (Code != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Code);
@@ -2359,7 +2722,7 @@ namespace LudoQuick {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(MsgDiceInfoResp other) {
+    public void MergeFrom(MsgChessInfoResp other) {
       if (other == null) {
         return;
       }
@@ -2369,11 +2732,20 @@ namespace LudoQuick {
       if (other.ChessId != 0) {
         ChessId = other.ChessId;
       }
+      if (other.IsUnlock != false) {
+        IsUnlock = other.IsUnlock;
+      }
+      if (other.BagCount != 0) {
+        BagCount = other.BagCount;
+      }
+      if (other.Retry != 0) {
+        Retry = other.Retry;
+      }
       if (other.RouteNum != 0) {
         RouteNum = other.RouteNum;
       }
-      if (other.PropId != 0) {
-        PropId = other.PropId;
+      if (other.EventId != 0) {
+        EventId = other.EventId;
       }
       if (other.Code != 0) {
         Code = other.Code;
@@ -2401,14 +2773,26 @@ namespace LudoQuick {
             break;
           }
           case 24: {
-            RouteNum = input.ReadInt32();
+            IsUnlock = input.ReadBool();
             break;
           }
           case 32: {
-            PropId = input.ReadInt32();
+            BagCount = input.ReadInt32();
             break;
           }
           case 40: {
+            Retry = input.ReadInt32();
+            break;
+          }
+          case 48: {
+            RouteNum = input.ReadInt32();
+            break;
+          }
+          case 56: {
+            EventId = input.ReadInt32();
+            break;
+          }
+          case 64: {
             Code = input.ReadInt32();
             break;
           }
@@ -2435,14 +2819,26 @@ namespace LudoQuick {
             break;
           }
           case 24: {
-            RouteNum = input.ReadInt32();
+            IsUnlock = input.ReadBool();
             break;
           }
           case 32: {
-            PropId = input.ReadInt32();
+            BagCount = input.ReadInt32();
             break;
           }
           case 40: {
+            Retry = input.ReadInt32();
+            break;
+          }
+          case 48: {
+            RouteNum = input.ReadInt32();
+            break;
+          }
+          case 56: {
+            EventId = input.ReadInt32();
+            break;
+          }
+          case 64: {
             Code = input.ReadInt32();
             break;
           }
@@ -2468,7 +2864,7 @@ namespace LudoQuick {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::LudoQuick.LudoQuickReflection.Descriptor.MessageTypes[8]; }
+      get { return global::LudoQuick.LudoQuickReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2490,6 +2886,8 @@ namespace LudoQuick {
       userGold_ = other.userGold_;
       win_ = other.win_;
       bet_ = other.bet_;
+      bag_ = other.bag_;
+      bagBack_ = other.bagBack_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2568,6 +2966,34 @@ namespace LudoQuick {
       }
     }
 
+    /// <summary>Field number for the "bag" field.</summary>
+    public const int BagFieldNumber = 6;
+    private long bag_;
+    /// <summary>
+    ///背包金币
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long Bag {
+      get { return bag_; }
+      set {
+        bag_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "bag_back" field.</summary>
+    public const int BagBackFieldNumber = 7;
+    private long bagBack_;
+    /// <summary>
+    ///背包返还
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long BagBack {
+      get { return bagBack_; }
+      set {
+        bagBack_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as GameResult);
@@ -2586,6 +3012,8 @@ namespace LudoQuick {
       if (UserGold != other.UserGold) return false;
       if (Win != other.Win) return false;
       if (Bet != other.Bet) return false;
+      if (Bag != other.Bag) return false;
+      if (BagBack != other.BagBack) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2597,6 +3025,8 @@ namespace LudoQuick {
       if (UserGold != 0L) hash ^= UserGold.GetHashCode();
       if (Win != 0L) hash ^= Win.GetHashCode();
       if (Bet != 0L) hash ^= Bet.GetHashCode();
+      if (Bag != 0L) hash ^= Bag.GetHashCode();
+      if (BagBack != 0L) hash ^= BagBack.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2633,6 +3063,14 @@ namespace LudoQuick {
         output.WriteRawTag(40);
         output.WriteInt64(Bet);
       }
+      if (Bag != 0L) {
+        output.WriteRawTag(48);
+        output.WriteInt64(Bag);
+      }
+      if (BagBack != 0L) {
+        output.WriteRawTag(56);
+        output.WriteInt64(BagBack);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2662,6 +3100,14 @@ namespace LudoQuick {
         output.WriteRawTag(40);
         output.WriteInt64(Bet);
       }
+      if (Bag != 0L) {
+        output.WriteRawTag(48);
+        output.WriteInt64(Bag);
+      }
+      if (BagBack != 0L) {
+        output.WriteRawTag(56);
+        output.WriteInt64(BagBack);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2685,6 +3131,12 @@ namespace LudoQuick {
       }
       if (Bet != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(Bet);
+      }
+      if (Bag != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Bag);
+      }
+      if (BagBack != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(BagBack);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2714,6 +3166,12 @@ namespace LudoQuick {
       }
       if (other.Bet != 0L) {
         Bet = other.Bet;
+      }
+      if (other.Bag != 0L) {
+        Bag = other.Bag;
+      }
+      if (other.BagBack != 0L) {
+        BagBack = other.BagBack;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2750,6 +3208,14 @@ namespace LudoQuick {
           }
           case 40: {
             Bet = input.ReadInt64();
+            break;
+          }
+          case 48: {
+            Bag = input.ReadInt64();
+            break;
+          }
+          case 56: {
+            BagBack = input.ReadInt64();
             break;
           }
         }
@@ -2789,6 +3255,14 @@ namespace LudoQuick {
             Bet = input.ReadInt64();
             break;
           }
+          case 48: {
+            Bag = input.ReadInt64();
+            break;
+          }
+          case 56: {
+            BagBack = input.ReadInt64();
+            break;
+          }
         }
       }
     }
@@ -2811,7 +3285,7 @@ namespace LudoQuick {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::LudoQuick.LudoQuickReflection.Descriptor.MessageTypes[9]; }
+      get { return global::LudoQuick.LudoQuickReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
