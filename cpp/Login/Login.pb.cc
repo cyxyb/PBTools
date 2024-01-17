@@ -1905,6 +1905,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::MsgWeekMonthCfg, award_),
   PROTOBUF_FIELD_OFFSET(::MsgWeekMonthCfg, card_level_),
   PROTOBUF_FIELD_OFFSET(::MsgWeekMonthCfg, total_day_),
+  PROTOBUF_FIELD_OFFSET(::MsgWeekMonthCfg, profit_ratio_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgGetWeekMonthInfoResp, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1996,9 +1997,9 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 611, -1, sizeof(::MsgRecviveAgentRebateResp)},
   { 618, -1, sizeof(::MsgWeekMonthInfo)},
   { 629, -1, sizeof(::MsgWeekMonthCfg)},
-  { 639, -1, sizeof(::MsgGetWeekMonthInfoResp)},
-  { 646, -1, sizeof(::MsgWeekMonthGetAward)},
-  { 652, -1, sizeof(::MsgWeekMonthGetAwardResp)},
+  { 640, -1, sizeof(::MsgGetWeekMonthInfoResp)},
+  { 647, -1, sizeof(::MsgWeekMonthGetAward)},
+  { 653, -1, sizeof(::MsgWeekMonthGetAwardResp)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -2260,16 +2261,16 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "\n\ncur_rebate\030\002 \001(\003\"\177\n\020MsgWeekMonthInfo\022\021"
   "\n\tcard_type\030\001 \001(\005\022\020\n\010buy_time\030\002 \001(\005\022\017\n\007i"
   "s_pick\030\003 \001(\005\022\r\n\005award\030\004 \001(\005\022\022\n\ncard_leve"
-  "l\030\005 \001(\005\022\022\n\nremain_day\030\006 \001(\005\"m\n\017MsgWeekMo"
-  "nthCfg\022\021\n\tcard_type\030\001 \001(\005\022\021\n\tbuy_money\030\002"
-  " \001(\005\022\r\n\005award\030\003 \001(\005\022\022\n\ncard_level\030\004 \001(\005\022"
-  "\021\n\ttotal_day\030\005 \001(\005\"e\n\027MsgGetWeekMonthInf"
-  "oResp\022#\n\tcards_cfg\030\001 \003(\0132\020.MsgWeekMonthC"
-  "fg\022%\n\ncards_info\030\002 \003(\0132\021.MsgWeekMonthInf"
-  "o\")\n\024MsgWeekMonthGetAward\022\021\n\tcard_type\030\001"
-  " \001(\005\"M\n\030MsgWeekMonthGetAwardResp\022\020\n\010ret_"
-  "code\030\001 \001(\005\022\r\n\005award\030\002 \001(\003\022\020\n\010new_gold\030\003 "
-  "\001(\003b\006proto3"
+  "l\030\005 \001(\005\022\022\n\nremain_day\030\006 \001(\005\"\203\001\n\017MsgWeekM"
+  "onthCfg\022\021\n\tcard_type\030\001 \001(\005\022\021\n\tbuy_money\030"
+  "\002 \001(\005\022\r\n\005award\030\003 \001(\005\022\022\n\ncard_level\030\004 \001(\005"
+  "\022\021\n\ttotal_day\030\005 \001(\005\022\024\n\014profit_ratio\030\006 \001("
+  "\005\"e\n\027MsgGetWeekMonthInfoResp\022#\n\tcards_cf"
+  "g\030\001 \003(\0132\020.MsgWeekMonthCfg\022%\n\ncards_info\030"
+  "\002 \003(\0132\021.MsgWeekMonthInfo\")\n\024MsgWeekMonth"
+  "GetAward\022\021\n\tcard_type\030\001 \001(\005\"M\n\030MsgWeekMo"
+  "nthGetAwardResp\022\020\n\010ret_code\030\001 \001(\005\022\r\n\005awa"
+  "rd\030\002 \001(\003\022\020\n\010new_gold\030\003 \001(\003b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Login_2eproto_deps[1] = {
 };
@@ -2348,7 +2349,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Login_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Login_2eproto = {
-  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 7731,
+  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 7754,
   &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 71, 0,
   schemas, file_default_instances, TableStruct_Login_2eproto::offsets,
   file_level_metadata_Login_2eproto, 71, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
@@ -22239,16 +22240,16 @@ MsgWeekMonthCfg::MsgWeekMonthCfg(const MsgWeekMonthCfg& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&card_type_, &from.card_type_,
-    static_cast<size_t>(reinterpret_cast<char*>(&total_day_) -
-    reinterpret_cast<char*>(&card_type_)) + sizeof(total_day_));
+    static_cast<size_t>(reinterpret_cast<char*>(&profit_ratio_) -
+    reinterpret_cast<char*>(&card_type_)) + sizeof(profit_ratio_));
   // @@protoc_insertion_point(copy_constructor:MsgWeekMonthCfg)
 }
 
 void MsgWeekMonthCfg::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&card_type_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&total_day_) -
-      reinterpret_cast<char*>(&card_type_)) + sizeof(total_day_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&profit_ratio_) -
+      reinterpret_cast<char*>(&card_type_)) + sizeof(profit_ratio_));
 }
 
 MsgWeekMonthCfg::~MsgWeekMonthCfg() {
@@ -22283,8 +22284,8 @@ void MsgWeekMonthCfg::Clear() {
   (void) cached_has_bits;
 
   ::memset(&card_type_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&total_day_) -
-      reinterpret_cast<char*>(&card_type_)) + sizeof(total_day_));
+      reinterpret_cast<char*>(&profit_ratio_) -
+      reinterpret_cast<char*>(&card_type_)) + sizeof(profit_ratio_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -22327,6 +22328,13 @@ const char* MsgWeekMonthCfg::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
           total_day_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 profit_ratio = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+          profit_ratio_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -22388,6 +22396,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_total_day(), target);
   }
 
+  // int32 profit_ratio = 6;
+  if (this->profit_ratio() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_profit_ratio(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -22439,6 +22453,13 @@ size_t MsgWeekMonthCfg::ByteSizeLong() const {
         this->_internal_total_day());
   }
 
+  // int32 profit_ratio = 6;
+  if (this->profit_ratio() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_profit_ratio());
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
         _internal_metadata_, total_size, &_cached_size_);
@@ -22485,6 +22506,9 @@ void MsgWeekMonthCfg::MergeFrom(const MsgWeekMonthCfg& from) {
   if (from.total_day() != 0) {
     _internal_set_total_day(from._internal_total_day());
   }
+  if (from.profit_ratio() != 0) {
+    _internal_set_profit_ratio(from._internal_profit_ratio());
+  }
 }
 
 void MsgWeekMonthCfg::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -22509,8 +22533,8 @@ void MsgWeekMonthCfg::InternalSwap(MsgWeekMonthCfg* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgWeekMonthCfg, total_day_)
-      + sizeof(MsgWeekMonthCfg::total_day_)
+      PROTOBUF_FIELD_OFFSET(MsgWeekMonthCfg, profit_ratio_)
+      + sizeof(MsgWeekMonthCfg::profit_ratio_)
       - PROTOBUF_FIELD_OFFSET(MsgWeekMonthCfg, card_type_)>(
           reinterpret_cast<char*>(&card_type_),
           reinterpret_cast<char*>(&other->card_type_));

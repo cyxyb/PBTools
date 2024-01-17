@@ -12698,6 +12698,7 @@ class MsgWeekMonthCfg PROTOBUF_FINAL :
     kAwardFieldNumber = 3,
     kCardLevelFieldNumber = 4,
     kTotalDayFieldNumber = 5,
+    kProfitRatioFieldNumber = 6,
   };
   // int32 card_type = 1;
   void clear_card_type();
@@ -12744,6 +12745,15 @@ class MsgWeekMonthCfg PROTOBUF_FINAL :
   void _internal_set_total_day(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 profit_ratio = 6;
+  void clear_profit_ratio();
+  ::PROTOBUF_NAMESPACE_ID::int32 profit_ratio() const;
+  void set_profit_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_profit_ratio() const;
+  void _internal_set_profit_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgWeekMonthCfg)
  private:
   class _Internal;
@@ -12756,6 +12766,7 @@ class MsgWeekMonthCfg PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 award_;
   ::PROTOBUF_NAMESPACE_ID::int32 card_level_;
   ::PROTOBUF_NAMESPACE_ID::int32 total_day_;
+  ::PROTOBUF_NAMESPACE_ID::int32 profit_ratio_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -22369,6 +22380,26 @@ inline void MsgWeekMonthCfg::_internal_set_total_day(::PROTOBUF_NAMESPACE_ID::in
 inline void MsgWeekMonthCfg::set_total_day(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_total_day(value);
   // @@protoc_insertion_point(field_set:MsgWeekMonthCfg.total_day)
+}
+
+// int32 profit_ratio = 6;
+inline void MsgWeekMonthCfg::clear_profit_ratio() {
+  profit_ratio_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgWeekMonthCfg::_internal_profit_ratio() const {
+  return profit_ratio_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgWeekMonthCfg::profit_ratio() const {
+  // @@protoc_insertion_point(field_get:MsgWeekMonthCfg.profit_ratio)
+  return _internal_profit_ratio();
+}
+inline void MsgWeekMonthCfg::_internal_set_profit_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  profit_ratio_ = value;
+}
+inline void MsgWeekMonthCfg::set_profit_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_profit_ratio(value);
+  // @@protoc_insertion_point(field_set:MsgWeekMonthCfg.profit_ratio)
 }
 
 // -------------------------------------------------------------------

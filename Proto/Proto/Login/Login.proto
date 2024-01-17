@@ -613,6 +613,7 @@ message MsgWeekMonthCfg
 	int32					award 		= 3;	//可领数量
 	int32					card_level 	= 4;	//卡等级
 	int32					total_day 	= 5;	//总可领天数
+	int32					profit_ratio= 6;	//利润比例
 }
 
 

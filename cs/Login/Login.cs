@@ -186,15 +186,15 @@ public static partial class LoginReflection {
           "ASABKAUSEgoKY3VyX3JlYmF0ZRgCIAEoAyJ/ChBNc2dXZWVrTW9udGhJbmZv",
           "EhEKCWNhcmRfdHlwZRgBIAEoBRIQCghidXlfdGltZRgCIAEoBRIPCgdpc19w",
           "aWNrGAMgASgFEg0KBWF3YXJkGAQgASgFEhIKCmNhcmRfbGV2ZWwYBSABKAUS",
-          "EgoKcmVtYWluX2RheRgGIAEoBSJtCg9Nc2dXZWVrTW9udGhDZmcSEQoJY2Fy",
-          "ZF90eXBlGAEgASgFEhEKCWJ1eV9tb25leRgCIAEoBRINCgVhd2FyZBgDIAEo",
-          "BRISCgpjYXJkX2xldmVsGAQgASgFEhEKCXRvdGFsX2RheRgFIAEoBSJlChdN",
-          "c2dHZXRXZWVrTW9udGhJbmZvUmVzcBIjCgljYXJkc19jZmcYASADKAsyEC5N",
-          "c2dXZWVrTW9udGhDZmcSJQoKY2FyZHNfaW5mbxgCIAMoCzIRLk1zZ1dlZWtN",
-          "b250aEluZm8iKQoUTXNnV2Vla01vbnRoR2V0QXdhcmQSEQoJY2FyZF90eXBl",
-          "GAEgASgFIk0KGE1zZ1dlZWtNb250aEdldEF3YXJkUmVzcBIQCghyZXRfY29k",
-          "ZRgBIAEoBRINCgVhd2FyZBgCIAEoAxIQCghuZXdfZ29sZBgDIAEoA2IGcHJv",
-          "dG8z"));
+          "EgoKcmVtYWluX2RheRgGIAEoBSKDAQoPTXNnV2Vla01vbnRoQ2ZnEhEKCWNh",
+          "cmRfdHlwZRgBIAEoBRIRCglidXlfbW9uZXkYAiABKAUSDQoFYXdhcmQYAyAB",
+          "KAUSEgoKY2FyZF9sZXZlbBgEIAEoBRIRCgl0b3RhbF9kYXkYBSABKAUSFAoM",
+          "cHJvZml0X3JhdGlvGAYgASgFImUKF01zZ0dldFdlZWtNb250aEluZm9SZXNw",
+          "EiMKCWNhcmRzX2NmZxgBIAMoCzIQLk1zZ1dlZWtNb250aENmZxIlCgpjYXJk",
+          "c19pbmZvGAIgAygLMhEuTXNnV2Vla01vbnRoSW5mbyIpChRNc2dXZWVrTW9u",
+          "dGhHZXRBd2FyZBIRCgljYXJkX3R5cGUYASABKAUiTQoYTXNnV2Vla01vbnRo",
+          "R2V0QXdhcmRSZXNwEhAKCHJldF9jb2RlGAEgASgFEg0KBWF3YXJkGAIgASgD",
+          "EhAKCG5ld19nb2xkGAMgASgDYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -265,7 +265,7 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgSetSubAgentResp), global::MsgSetSubAgentResp.Parser, new[]{ "Code", "UserId", "Subordinates", "TotalTax", "TodayTax", "TodayRatio", "AgentRatio" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgRecviveAgentRebateResp), global::MsgRecviveAgentRebateResp.Parser, new[]{ "Code", "CurRebate" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgWeekMonthInfo), global::MsgWeekMonthInfo.Parser, new[]{ "CardType", "BuyTime", "IsPick", "Award", "CardLevel", "RemainDay" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgWeekMonthCfg), global::MsgWeekMonthCfg.Parser, new[]{ "CardType", "BuyMoney", "Award", "CardLevel", "TotalDay" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgWeekMonthCfg), global::MsgWeekMonthCfg.Parser, new[]{ "CardType", "BuyMoney", "Award", "CardLevel", "TotalDay", "ProfitRatio" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgGetWeekMonthInfoResp), global::MsgGetWeekMonthInfoResp.Parser, new[]{ "CardsCfg", "CardsInfo" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgWeekMonthGetAward), global::MsgWeekMonthGetAward.Parser, new[]{ "CardType" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgWeekMonthGetAwardResp), global::MsgWeekMonthGetAwardResp.Parser, new[]{ "RetCode", "Award", "NewGold" }, null, null, null, null)
@@ -20816,6 +20816,7 @@ public sealed partial class MsgWeekMonthCfg : pb::IMessage<MsgWeekMonthCfg>
     award_ = other.award_;
     cardLevel_ = other.cardLevel_;
     totalDay_ = other.totalDay_;
+    profitRatio_ = other.profitRatio_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -20894,6 +20895,20 @@ public sealed partial class MsgWeekMonthCfg : pb::IMessage<MsgWeekMonthCfg>
     }
   }
 
+  /// <summary>Field number for the "profit_ratio" field.</summary>
+  public const int ProfitRatioFieldNumber = 6;
+  private int profitRatio_;
+  /// <summary>
+  ///利润比例
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int ProfitRatio {
+    get { return profitRatio_; }
+    set {
+      profitRatio_ = value;
+    }
+  }
+
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as MsgWeekMonthCfg);
@@ -20912,6 +20927,7 @@ public sealed partial class MsgWeekMonthCfg : pb::IMessage<MsgWeekMonthCfg>
     if (Award != other.Award) return false;
     if (CardLevel != other.CardLevel) return false;
     if (TotalDay != other.TotalDay) return false;
+    if (ProfitRatio != other.ProfitRatio) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -20923,6 +20939,7 @@ public sealed partial class MsgWeekMonthCfg : pb::IMessage<MsgWeekMonthCfg>
     if (Award != 0) hash ^= Award.GetHashCode();
     if (CardLevel != 0) hash ^= CardLevel.GetHashCode();
     if (TotalDay != 0) hash ^= TotalDay.GetHashCode();
+    if (ProfitRatio != 0) hash ^= ProfitRatio.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -20959,6 +20976,10 @@ public sealed partial class MsgWeekMonthCfg : pb::IMessage<MsgWeekMonthCfg>
       output.WriteRawTag(40);
       output.WriteInt32(TotalDay);
     }
+    if (ProfitRatio != 0) {
+      output.WriteRawTag(48);
+      output.WriteInt32(ProfitRatio);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -20988,6 +21009,10 @@ public sealed partial class MsgWeekMonthCfg : pb::IMessage<MsgWeekMonthCfg>
       output.WriteRawTag(40);
       output.WriteInt32(TotalDay);
     }
+    if (ProfitRatio != 0) {
+      output.WriteRawTag(48);
+      output.WriteInt32(ProfitRatio);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -21011,6 +21036,9 @@ public sealed partial class MsgWeekMonthCfg : pb::IMessage<MsgWeekMonthCfg>
     }
     if (TotalDay != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(TotalDay);
+    }
+    if (ProfitRatio != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(ProfitRatio);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -21037,6 +21065,9 @@ public sealed partial class MsgWeekMonthCfg : pb::IMessage<MsgWeekMonthCfg>
     }
     if (other.TotalDay != 0) {
       TotalDay = other.TotalDay;
+    }
+    if (other.ProfitRatio != 0) {
+      ProfitRatio = other.ProfitRatio;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -21072,6 +21103,10 @@ public sealed partial class MsgWeekMonthCfg : pb::IMessage<MsgWeekMonthCfg>
           TotalDay = input.ReadInt32();
           break;
         }
+        case 48: {
+          ProfitRatio = input.ReadInt32();
+          break;
+        }
       }
     }
   #endif
@@ -21104,6 +21139,10 @@ public sealed partial class MsgWeekMonthCfg : pb::IMessage<MsgWeekMonthCfg>
         }
         case 40: {
           TotalDay = input.ReadInt32();
+          break;
+        }
+        case 48: {
+          ProfitRatio = input.ReadInt32();
           break;
         }
       }
