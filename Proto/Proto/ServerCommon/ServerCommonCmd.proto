@@ -56,6 +56,7 @@ enum EMsgIDServerInternalProto
 	CENTER2LOGIN_NotifyNewInviterResp			= 34;	//通知有新的邀请玩家绑定返回
 	CENTER2LOGIN_NotifyWebAddVipExp				= 35;	//通知后台更新Vip经验
 	LOGIN2CENTER_KickUser						= 36;	//踢人
+	CENTER2LOGIN_NotifyWebBuyWeekMonthCard		= 37;	//通知后台购买周卡月卡成功
 	
 	//1001-2000 game <-> center
 	GAME2CENTER_Register			= 2001;	//游戏服务器注册
