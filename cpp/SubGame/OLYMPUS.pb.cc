@@ -101,6 +101,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_OLYMPUS_2eproto::offsets[] PRO
   PROTOBUF_FIELD_OFFSET(::OLYMPUS::MsgResult, table_all_mul_),
   PROTOBUF_FIELD_OFFSET(::OLYMPUS::MsgResult, free_times_),
   PROTOBUF_FIELD_OFFSET(::OLYMPUS::MsgResult, free_add_mul_),
+  PROTOBUF_FIELD_OFFSET(::OLYMPUS::MsgResult, revenue_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::OLYMPUS::MsgSceneInfo)},
@@ -119,13 +120,14 @@ const char descriptor_table_protodef_OLYMPUS_2eproto[] PROTOBUF_SECTION_VARIABLE
   "\022\013\n\003bet\030\001 \003(\005\022\017\n\007cur_bet\030\002 \001(\005\022\017\n\007add_mu"
   "l\030\003 \001(\005\022\022\n\nfree_times\030\004 \001(\005\"G\n\010MsgRound\022"
   "\014\n\004icon\030\001 \003(\005\022\013\n\003hit\030\002 \003(\010\022\023\n\013special_mu"
-  "l\030\003 \003(\005\022\013\n\003odd\030\004 \001(\005\"s\n\tMsgResult\022%\n\nrou"
-  "nd_data\030\001 \003(\0132\021.OLYMPUS.MsgRound\022\025\n\rtabl"
-  "e_all_mul\030\002 \001(\005\022\022\n\nfree_times\030\003 \001(\005\022\024\n\014f"
-  "ree_add_mul\030\004 \001(\005*}\n\rEMsgIDSubGame\022\025\n\021Ms"
-  "gIDSubGame_Null\020\000\022\032\n\026MsgIDSubGame_GameSt"
-  "art\020\001\022\030\n\024MsgIDSubGame_BuyFree\020\002\022\037\n\033MsgID"
-  "SubGame_GameResultResp\020\003b\006proto3"
+  "l\030\003 \003(\005\022\013\n\003odd\030\004 \001(\005\"\204\001\n\tMsgResult\022%\n\nro"
+  "und_data\030\001 \003(\0132\021.OLYMPUS.MsgRound\022\025\n\rtab"
+  "le_all_mul\030\002 \001(\005\022\022\n\nfree_times\030\003 \001(\005\022\024\n\014"
+  "free_add_mul\030\004 \001(\005\022\017\n\007revenue\030\005 \001(\004*}\n\rE"
+  "MsgIDSubGame\022\025\n\021MsgIDSubGame_Null\020\000\022\032\n\026M"
+  "sgIDSubGame_GameStart\020\001\022\030\n\024MsgIDSubGame_"
+  "BuyFree\020\002\022\037\n\033MsgIDSubGame_GameResultResp"
+  "\020\003b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_OLYMPUS_2eproto_deps[1] = {
 };
@@ -136,7 +138,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_OLY
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_OLYMPUS_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_OLYMPUS_2eproto = {
-  false, false, descriptor_table_protodef_OLYMPUS_2eproto, "OLYMPUS.proto", 432,
+  false, false, descriptor_table_protodef_OLYMPUS_2eproto, "OLYMPUS.proto", 450,
   &descriptor_table_OLYMPUS_2eproto_once, descriptor_table_OLYMPUS_2eproto_sccs, descriptor_table_OLYMPUS_2eproto_deps, 3, 0,
   schemas, file_default_instances, TableStruct_OLYMPUS_2eproto::offsets,
   file_level_metadata_OLYMPUS_2eproto, 3, file_level_enum_descriptors_OLYMPUS_2eproto, file_level_service_descriptors_OLYMPUS_2eproto,
@@ -869,6 +871,13 @@ const char* MsgResult::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
+      // uint64 revenue = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          revenue_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
@@ -923,6 +932,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_free_add_mul(), target);
   }
 
+  // uint64 revenue = 5;
+  if (this->revenue() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(5, this->_internal_revenue(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -958,6 +973,13 @@ size_t MsgResult::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_free_times());
+  }
+
+  // uint64 revenue = 5;
+  if (this->revenue() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
+        this->_internal_revenue());
   }
 
   // int32 free_add_mul = 4;
@@ -1004,6 +1026,9 @@ void MsgResult::MergeFrom(const MsgResult& from) {
   }
   if (from.free_times() != 0) {
     _internal_set_free_times(from._internal_free_times());
+  }
+  if (from.revenue() != 0) {
+    _internal_set_revenue(from._internal_revenue());
   }
   if (from.free_add_mul() != 0) {
     _internal_set_free_add_mul(from._internal_free_add_mul());

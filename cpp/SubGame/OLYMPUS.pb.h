@@ -610,6 +610,7 @@ class MsgResult PROTOBUF_FINAL :
     kRoundDataFieldNumber = 1,
     kTableAllMulFieldNumber = 2,
     kFreeTimesFieldNumber = 3,
+    kRevenueFieldNumber = 5,
     kFreeAddMulFieldNumber = 4,
   };
   // repeated .OLYMPUS.MsgRound round_data = 1;
@@ -648,6 +649,15 @@ class MsgResult PROTOBUF_FINAL :
   void _internal_set_free_times(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // uint64 revenue = 5;
+  void clear_revenue();
+  ::PROTOBUF_NAMESPACE_ID::uint64 revenue() const;
+  void set_revenue(::PROTOBUF_NAMESPACE_ID::uint64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::uint64 _internal_revenue() const;
+  void _internal_set_revenue(::PROTOBUF_NAMESPACE_ID::uint64 value);
+  public:
+
   // int32 free_add_mul = 4;
   void clear_free_add_mul();
   ::PROTOBUF_NAMESPACE_ID::int32 free_add_mul() const;
@@ -667,6 +677,7 @@ class MsgResult PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::OLYMPUS::MsgRound > round_data_;
   ::PROTOBUF_NAMESPACE_ID::int32 table_all_mul_;
   ::PROTOBUF_NAMESPACE_ID::int32 free_times_;
+  ::PROTOBUF_NAMESPACE_ID::uint64 revenue_;
   ::PROTOBUF_NAMESPACE_ID::int32 free_add_mul_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_OLYMPUS_2eproto;
@@ -1055,6 +1066,26 @@ inline void MsgResult::_internal_set_free_add_mul(::PROTOBUF_NAMESPACE_ID::int32
 inline void MsgResult::set_free_add_mul(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_free_add_mul(value);
   // @@protoc_insertion_point(field_set:OLYMPUS.MsgResult.free_add_mul)
+}
+
+// uint64 revenue = 5;
+inline void MsgResult::clear_revenue() {
+  revenue_ = PROTOBUF_ULONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint64 MsgResult::_internal_revenue() const {
+  return revenue_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint64 MsgResult::revenue() const {
+  // @@protoc_insertion_point(field_get:OLYMPUS.MsgResult.revenue)
+  return _internal_revenue();
+}
+inline void MsgResult::_internal_set_revenue(::PROTOBUF_NAMESPACE_ID::uint64 value) {
+  
+  revenue_ = value;
+}
+inline void MsgResult::set_revenue(::PROTOBUF_NAMESPACE_ID::uint64 value) {
+  _internal_set_revenue(value);
+  // @@protoc_insertion_point(field_set:OLYMPUS.MsgResult.revenue)
 }
 
 #ifdef __GNUC__
