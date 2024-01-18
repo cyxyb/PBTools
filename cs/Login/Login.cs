@@ -1275,7 +1275,7 @@ public sealed partial class MsgPlayerLoginResp : pb::IMessage<MsgPlayerLoginResp
   public const int AgentLevelFieldNumber = 17;
   private int agentLevel_;
   /// <summary>
-  ///代理等级
+  ///代理等级(休闲银商代理等级)
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int AgentLevel {
@@ -18363,7 +18363,7 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
   public const int AgentLevelFieldNumber = 1;
   private int agentLevel_;
   /// <summary>
-  ///代理等级
+  ///代理等级(真金代理等级)
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int AgentLevel {
@@ -19048,7 +19048,7 @@ public sealed partial class InfiniteAgentQuerySubInfo : pb::IMessage<InfiniteAge
   public const int TodayRatioFieldNumber = 5;
   private long todayRatio_;
   /// <summary>
-  ///今日返利
+  ///返利
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public long TodayRatio {

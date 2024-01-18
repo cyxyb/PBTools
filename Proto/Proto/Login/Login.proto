@@ -38,7 +38,7 @@ message MsgPlayerLoginResp
 	int32		avatar_frame	= 13;	//头像框
 	string		invite_code		= 14;	//邀请码
 	string      signature		= 16;	//个性签名
-	int32		agent_level		= 17;	//代理等级
+	int32		agent_level		= 17;	//代理等级(休闲银商代理等级)
 	string		password		= 18;	//玩家密码
 	string      whatsup_msg		= 19;	//个性whats
 	string      telegram_msg	= 20;	//个性telegram
@@ -539,7 +539,7 @@ message MsgQueryCelebrityGoldCoinResp
 // 请求代理数据返回
 message MsgInfiniteAgentQueryMyInfoResp
 {
-	int32		agent_level 	= 1;	//代理等级
+	int32		agent_level 	= 1;	//代理等级(真金代理等级)
 	int32 		agent_ratio 	= 2;	//分成比例
 	int32 		bind_id 		= 3;	//上级id
 	int64 		cur_rebate 		= 4;	//当前返利
@@ -560,7 +560,7 @@ message InfiniteAgentQuerySubInfo
 	int32 subordinates 		= 2;		//当前id下级人数
 	int64 total_tax 		= 3;		//总税收
 	int64 today_tax 		= 4;		//今日税收
-	int64 today_ratio 		= 5;		//今日返利
+	int64 today_ratio 		= 5;		//返利
 	int32 agent_ratio 		= 6;		//分成比例
 }
 //请求下级数据返回
