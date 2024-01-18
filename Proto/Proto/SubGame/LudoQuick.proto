@@ -90,9 +90,10 @@ message MsgChessInfoResp
 	bool  is_unlock		= 3;	//解锁 1是
 	int32 bag_count	 	= 4;	//钱袋个数
 	int32 retry	 		= 5;	//是否奖励重新摇骰子
-	int32 route_num	 	= 6;	//非解锁:走了多少格 解锁:对应的格子ID
-	int32 event_id 		= 7;	//事件类型 0：未触发 1：前进一格 2：前进三格 3：前进五格 4：前进七格 5：移动到最近棋子 6：移动到最近得安全屋 7 ：获得骰子 8：获得指定骰子 9：解除开关 10：解锁棋子
-	int32 code			= 8;	//对语言id
+	int32 map_id	 	= 6;	//正常应该到达的格子ID
+	int32 route_num	 	= 7;	//非解锁:走了多少格 解锁:对应的格子ID
+	int32 event_id 		= 8;	//事件类型 0：未触发 1：前进一格 2：前进三格 3：前进五格 4：前进七格 5：移动到最近棋子 6：移动到最近得安全屋 7 ：获得骰子 8：获得指定骰子 9：解除开关 10：解锁棋子
+	int32 code			= 9;	//对语言id
 }
 //结算信息
 message GameResult

@@ -1607,9 +1607,10 @@ class MsgChessInfoResp PROTOBUF_FINAL :
     kIsUnlockFieldNumber = 3,
     kBagCountFieldNumber = 4,
     kRetryFieldNumber = 5,
-    kRouteNumFieldNumber = 6,
-    kEventIdFieldNumber = 7,
-    kCodeFieldNumber = 8,
+    kMapIdFieldNumber = 6,
+    kRouteNumFieldNumber = 7,
+    kEventIdFieldNumber = 8,
+    kCodeFieldNumber = 9,
   };
   // int32 chair_id = 1;
   void clear_chair_id();
@@ -1656,7 +1657,16 @@ class MsgChessInfoResp PROTOBUF_FINAL :
   void _internal_set_retry(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 route_num = 6;
+  // int32 map_id = 6;
+  void clear_map_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 map_id() const;
+  void set_map_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_map_id() const;
+  void _internal_set_map_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 route_num = 7;
   void clear_route_num();
   ::PROTOBUF_NAMESPACE_ID::int32 route_num() const;
   void set_route_num(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -1665,7 +1675,7 @@ class MsgChessInfoResp PROTOBUF_FINAL :
   void _internal_set_route_num(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 event_id = 7;
+  // int32 event_id = 8;
   void clear_event_id();
   ::PROTOBUF_NAMESPACE_ID::int32 event_id() const;
   void set_event_id(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -1674,7 +1684,7 @@ class MsgChessInfoResp PROTOBUF_FINAL :
   void _internal_set_event_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 code = 8;
+  // int32 code = 9;
   void clear_code();
   ::PROTOBUF_NAMESPACE_ID::int32 code() const;
   void set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -1695,6 +1705,7 @@ class MsgChessInfoResp PROTOBUF_FINAL :
   bool is_unlock_;
   ::PROTOBUF_NAMESPACE_ID::int32 bag_count_;
   ::PROTOBUF_NAMESPACE_ID::int32 retry_;
+  ::PROTOBUF_NAMESPACE_ID::int32 map_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 route_num_;
   ::PROTOBUF_NAMESPACE_ID::int32 event_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 code_;
@@ -2838,7 +2849,27 @@ inline void MsgChessInfoResp::set_retry(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:LudoQuick.MsgChessInfoResp.retry)
 }
 
-// int32 route_num = 6;
+// int32 map_id = 6;
+inline void MsgChessInfoResp::clear_map_id() {
+  map_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChessInfoResp::_internal_map_id() const {
+  return map_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChessInfoResp::map_id() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.MsgChessInfoResp.map_id)
+  return _internal_map_id();
+}
+inline void MsgChessInfoResp::_internal_set_map_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  map_id_ = value;
+}
+inline void MsgChessInfoResp::set_map_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_map_id(value);
+  // @@protoc_insertion_point(field_set:LudoQuick.MsgChessInfoResp.map_id)
+}
+
+// int32 route_num = 7;
 inline void MsgChessInfoResp::clear_route_num() {
   route_num_ = 0;
 }
@@ -2858,7 +2889,7 @@ inline void MsgChessInfoResp::set_route_num(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:LudoQuick.MsgChessInfoResp.route_num)
 }
 
-// int32 event_id = 7;
+// int32 event_id = 8;
 inline void MsgChessInfoResp::clear_event_id() {
   event_id_ = 0;
 }
@@ -2878,7 +2909,7 @@ inline void MsgChessInfoResp::set_event_id(::PROTOBUF_NAMESPACE_ID::int32 value)
   // @@protoc_insertion_point(field_set:LudoQuick.MsgChessInfoResp.event_id)
 }
 
-// int32 code = 8;
+// int32 code = 9;
 inline void MsgChessInfoResp::clear_code() {
   code_ = 0;
 }
