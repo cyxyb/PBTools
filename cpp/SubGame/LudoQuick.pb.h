@@ -825,11 +825,12 @@ class MsgSceneInfoResp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kUserInfoFieldNumber = 3,
+    kUserInfoFieldNumber = 4,
     kGameStateFieldNumber = 1,
-    kTimeRemainingFieldNumber = 2,
+    kCurrentUserFieldNumber = 2,
+    kTimeRemainingFieldNumber = 3,
   };
-  // repeated .LudoQuick.UserInfo user_info = 3;
+  // repeated .LudoQuick.UserInfo user_info = 4;
   int user_info_size() const;
   private:
   int _internal_user_info_size() const;
@@ -856,7 +857,16 @@ class MsgSceneInfoResp PROTOBUF_FINAL :
   void _internal_set_game_state(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 time_remaining = 2;
+  // int32 current_user = 2;
+  void clear_current_user();
+  ::PROTOBUF_NAMESPACE_ID::int32 current_user() const;
+  void set_current_user(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_current_user() const;
+  void _internal_set_current_user(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 time_remaining = 3;
   void clear_time_remaining();
   ::PROTOBUF_NAMESPACE_ID::int32 time_remaining() const;
   void set_time_remaining(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -874,6 +884,7 @@ class MsgSceneInfoResp PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LudoQuick::UserInfo > user_info_;
   ::PROTOBUF_NAMESPACE_ID::int32 game_state_;
+  ::PROTOBUF_NAMESPACE_ID::int32 current_user_;
   ::PROTOBUF_NAMESPACE_ID::int32 time_remaining_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_LudoQuick_2eproto;
@@ -2470,7 +2481,27 @@ inline void MsgSceneInfoResp::set_game_state(::PROTOBUF_NAMESPACE_ID::int32 valu
   // @@protoc_insertion_point(field_set:LudoQuick.MsgSceneInfoResp.game_state)
 }
 
-// int32 time_remaining = 2;
+// int32 current_user = 2;
+inline void MsgSceneInfoResp::clear_current_user() {
+  current_user_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfoResp::_internal_current_user() const {
+  return current_user_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfoResp::current_user() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.MsgSceneInfoResp.current_user)
+  return _internal_current_user();
+}
+inline void MsgSceneInfoResp::_internal_set_current_user(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  current_user_ = value;
+}
+inline void MsgSceneInfoResp::set_current_user(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_current_user(value);
+  // @@protoc_insertion_point(field_set:LudoQuick.MsgSceneInfoResp.current_user)
+}
+
+// int32 time_remaining = 3;
 inline void MsgSceneInfoResp::clear_time_remaining() {
   time_remaining_ = 0;
 }
@@ -2490,7 +2521,7 @@ inline void MsgSceneInfoResp::set_time_remaining(::PROTOBUF_NAMESPACE_ID::int32 
   // @@protoc_insertion_point(field_set:LudoQuick.MsgSceneInfoResp.time_remaining)
 }
 
-// repeated .LudoQuick.UserInfo user_info = 3;
+// repeated .LudoQuick.UserInfo user_info = 4;
 inline int MsgSceneInfoResp::_internal_user_info_size() const {
   return user_info_.size();
 }
