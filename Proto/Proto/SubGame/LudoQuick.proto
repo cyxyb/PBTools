@@ -95,7 +95,8 @@ message MsgChessInfoResp
 	int32 end_map_id	= 7;	//最终到达的格子ID
 	int32 route_num	 	= 8;	//非解锁:走了多少格 解锁:对应的格子ID
 	int32 event_id 		= 9;	//事件类型 0：未触发 1：前进一格 2：前进三格 3：前进五格 4：前进七格 5：移动到最近棋子 6：移动到最近得安全屋 7 ：获得骰子 8：获得指定骰子 9：解除开关 10：解锁棋子
-	int32 code			= 10;	//对语言id
+	int32 swith_id 		= 10;	//何种棋子结果 0骰子的棋子操作 其它同事件类型 是不同事件的棋子操作
+	int32 code			= 11;	//对语言id
 }
 //结算信息
 message GameResult

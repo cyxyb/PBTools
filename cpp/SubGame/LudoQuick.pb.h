@@ -1622,7 +1622,8 @@ class MsgChessInfoResp PROTOBUF_FINAL :
     kEndMapIdFieldNumber = 7,
     kRouteNumFieldNumber = 8,
     kEventIdFieldNumber = 9,
-    kCodeFieldNumber = 10,
+    kSwithIdFieldNumber = 10,
+    kCodeFieldNumber = 11,
   };
   // int32 chair_id = 1;
   void clear_chair_id();
@@ -1705,7 +1706,16 @@ class MsgChessInfoResp PROTOBUF_FINAL :
   void _internal_set_event_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 code = 10;
+  // int32 swith_id = 10;
+  void clear_swith_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 swith_id() const;
+  void set_swith_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_swith_id() const;
+  void _internal_set_swith_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 code = 11;
   void clear_code();
   ::PROTOBUF_NAMESPACE_ID::int32 code() const;
   void set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -1730,6 +1740,7 @@ class MsgChessInfoResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 end_map_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 route_num_;
   ::PROTOBUF_NAMESPACE_ID::int32 event_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 swith_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 code_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_LudoQuick_2eproto;
@@ -2971,7 +2982,27 @@ inline void MsgChessInfoResp::set_event_id(::PROTOBUF_NAMESPACE_ID::int32 value)
   // @@protoc_insertion_point(field_set:LudoQuick.MsgChessInfoResp.event_id)
 }
 
-// int32 code = 10;
+// int32 swith_id = 10;
+inline void MsgChessInfoResp::clear_swith_id() {
+  swith_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChessInfoResp::_internal_swith_id() const {
+  return swith_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChessInfoResp::swith_id() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.MsgChessInfoResp.swith_id)
+  return _internal_swith_id();
+}
+inline void MsgChessInfoResp::_internal_set_swith_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  swith_id_ = value;
+}
+inline void MsgChessInfoResp::set_swith_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_swith_id(value);
+  // @@protoc_insertion_point(field_set:LudoQuick.MsgChessInfoResp.swith_id)
+}
+
+// int32 code = 11;
 inline void MsgChessInfoResp::clear_code() {
   code_ = 0;
 }
