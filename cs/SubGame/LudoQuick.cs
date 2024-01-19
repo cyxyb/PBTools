@@ -41,23 +41,23 @@ namespace LudoQuick {
             "EQoJZGljZV9yb2xsGAIgASgFIkgKD01zZ09wZXJhdGVDaGVzcxIQCghjaGFp",
             "cl9pZBgBIAEoBRIQCghjaGVzc19pZBgCIAEoBRIRCglpc191bmxvY2sYAyAB",
             "KAgiRwoPTXNnVHJpZ2dlckV2ZW50EhAKCGNoYWlyX2lkGAEgASgFEhAKCGNo",
-            "ZXNzX2lkGAIgASgFEhAKCGV2ZW50X2lkGAMgASgFIq4BChBNc2dDaGVzc0lu",
+            "ZXNzX2lkGAIgASgFEhAKCGV2ZW50X2lkGAMgASgFIsIBChBNc2dDaGVzc0lu",
             "Zm9SZXNwEhAKCGNoYWlyX2lkGAEgASgFEhAKCGNoZXNzX2lkGAIgASgFEhEK",
             "CWlzX3VubG9jaxgDIAEoCBIRCgliYWdfY291bnQYBCABKAUSDQoFcmV0cnkY",
-            "BSABKAUSDgoGbWFwX2lkGAYgASgFEhEKCXJvdXRlX251bRgHIAEoBRIQCghl",
-            "dmVudF9pZBgIIAEoBRIMCgRjb2RlGAkgASgFIpIBCgpHYW1lUmVzdWx0EhAK",
-            "CGNoYWlyX2lkGAEgASgFEiYKCXVzZXJfaW5mbxgCIAEoCzITLkx1ZG9RdWlj",
-            "ay5Vc2VySW5mbxIRCgl1c2VyX2dvbGQYAyABKAMSCwoDd2luGAQgASgDEgsK",
-            "A2JldBgFIAEoAxILCgNiYWcYBiABKAMSEAoIYmFnX2JhY2sYByABKAMiNgoN",
-            "TXNnUmVzdWx0UmVzcBIlCgZyZXN1bHQYASADKAsyFS5MdWRvUXVpY2suR2Ft",
-            "ZVJlc3VsdCqyAgoPRU1zZ0lETHVkb1F1aWNrEhYKEk1zZ0lEX0ZpcnN0UHVi",
-            "bGlzaBAAEhcKE1NVQl9TQ19GaXJzdFB1Ymxpc2gQARITCg9TVUJfU0NfTm90",
-            "aWNlT3AQAhITCg9TVUJfQ1NfRGljZUluZm8QAxIUChBTVUJfU0NfVGhyb3dE",
-            "aWNlEAQSFwoTU1VCX0NTX09wZXJhdGVDaGVzcxAFEhQKEFNVQl9TQ19DaGVz",
-            "c0luZm8QBhIXChNTVUJfQ1NfVHJpZ2dlckV2ZW50EAcSFQoRU1VCX1NDX0dh",
-            "bWVSZXN1bHQQCRITCg9TVUJfQ1NfT3B0aW9uYWwQChIRCg1TVUJfQ1NfR2l2",
-            "ZVVwEAsSFwoTU1VCX1NDX0dpdmVVcFJlc3VsdBAMEg4KClNVQl9TQ19FUlIQ",
-            "DWIGcHJvdG8z"));
+            "BSABKAUSDgoGbWFwX2lkGAYgASgFEhIKCmVuZF9tYXBfaWQYByABKAUSEQoJ",
+            "cm91dGVfbnVtGAggASgFEhAKCGV2ZW50X2lkGAkgASgFEgwKBGNvZGUYCiAB",
+            "KAUikgEKCkdhbWVSZXN1bHQSEAoIY2hhaXJfaWQYASABKAUSJgoJdXNlcl9p",
+            "bmZvGAIgASgLMhMuTHVkb1F1aWNrLlVzZXJJbmZvEhEKCXVzZXJfZ29sZBgD",
+            "IAEoAxILCgN3aW4YBCABKAMSCwoDYmV0GAUgASgDEgsKA2JhZxgGIAEoAxIQ",
+            "CghiYWdfYmFjaxgHIAEoAyI2Cg1Nc2dSZXN1bHRSZXNwEiUKBnJlc3VsdBgB",
+            "IAMoCzIVLkx1ZG9RdWljay5HYW1lUmVzdWx0KrICCg9FTXNnSURMdWRvUXVp",
+            "Y2sSFgoSTXNnSURfRmlyc3RQdWJsaXNoEAASFwoTU1VCX1NDX0ZpcnN0UHVi",
+            "bGlzaBABEhMKD1NVQl9TQ19Ob3RpY2VPcBACEhMKD1NVQl9DU19EaWNlSW5m",
+            "bxADEhQKEFNVQl9TQ19UaHJvd0RpY2UQBBIXChNTVUJfQ1NfT3BlcmF0ZUNo",
+            "ZXNzEAUSFAoQU1VCX1NDX0NoZXNzSW5mbxAGEhcKE1NVQl9DU19UcmlnZ2Vy",
+            "RXZlbnQQBxIVChFTVUJfU0NfR2FtZVJlc3VsdBAJEhMKD1NVQl9DU19PcHRp",
+            "b25hbBAKEhEKDVNVQl9DU19HaXZlVXAQCxIXChNTVUJfU0NfR2l2ZVVwUmVz",
+            "dWx0EAwSDgoKU1VCX1NDX0VSUhANYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::LudoQuick.EMsgIDLudoQuick), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -69,7 +69,7 @@ namespace LudoQuick {
             new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgThrowDiceResp), global::LudoQuick.MsgThrowDiceResp.Parser, new[]{ "ChairId", "DiceRoll" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgOperateChess), global::LudoQuick.MsgOperateChess.Parser, new[]{ "ChairId", "ChessId", "IsUnlock" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgTriggerEvent), global::LudoQuick.MsgTriggerEvent.Parser, new[]{ "ChairId", "ChessId", "EventId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgChessInfoResp), global::LudoQuick.MsgChessInfoResp.Parser, new[]{ "ChairId", "ChessId", "IsUnlock", "BagCount", "Retry", "MapId", "RouteNum", "EventId", "Code" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgChessInfoResp), global::LudoQuick.MsgChessInfoResp.Parser, new[]{ "ChairId", "ChessId", "IsUnlock", "BagCount", "Retry", "MapId", "EndMapId", "RouteNum", "EventId", "Code" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.GameResult), global::LudoQuick.GameResult.Parser, new[]{ "ChairId", "UserInfo", "UserGold", "Win", "Bet", "Bag", "BagBack" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgResultResp), global::LudoQuick.MsgResultResp.Parser, new[]{ "Result" }, null, null, null, null)
           }));
@@ -2476,6 +2476,7 @@ namespace LudoQuick {
       bagCount_ = other.bagCount_;
       retry_ = other.retry_;
       mapId_ = other.mapId_;
+      endMapId_ = other.endMapId_;
       routeNum_ = other.routeNum_;
       eventId_ = other.eventId_;
       code_ = other.code_;
@@ -2571,8 +2572,22 @@ namespace LudoQuick {
       }
     }
 
+    /// <summary>Field number for the "end_map_id" field.</summary>
+    public const int EndMapIdFieldNumber = 7;
+    private int endMapId_;
+    /// <summary>
+    ///最终到达的格子ID
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int EndMapId {
+      get { return endMapId_; }
+      set {
+        endMapId_ = value;
+      }
+    }
+
     /// <summary>Field number for the "route_num" field.</summary>
-    public const int RouteNumFieldNumber = 7;
+    public const int RouteNumFieldNumber = 8;
     private int routeNum_;
     /// <summary>
     ///非解锁:走了多少格 解锁:对应的格子ID
@@ -2586,7 +2601,7 @@ namespace LudoQuick {
     }
 
     /// <summary>Field number for the "event_id" field.</summary>
-    public const int EventIdFieldNumber = 8;
+    public const int EventIdFieldNumber = 9;
     private int eventId_;
     /// <summary>
     ///事件类型 0：未触发 1：前进一格 2：前进三格 3：前进五格 4：前进七格 5：移动到最近棋子 6：移动到最近得安全屋 7 ：获得骰子 8：获得指定骰子 9：解除开关 10：解锁棋子
@@ -2600,7 +2615,7 @@ namespace LudoQuick {
     }
 
     /// <summary>Field number for the "code" field.</summary>
-    public const int CodeFieldNumber = 9;
+    public const int CodeFieldNumber = 10;
     private int code_;
     /// <summary>
     ///对语言id
@@ -2632,6 +2647,7 @@ namespace LudoQuick {
       if (BagCount != other.BagCount) return false;
       if (Retry != other.Retry) return false;
       if (MapId != other.MapId) return false;
+      if (EndMapId != other.EndMapId) return false;
       if (RouteNum != other.RouteNum) return false;
       if (EventId != other.EventId) return false;
       if (Code != other.Code) return false;
@@ -2647,6 +2663,7 @@ namespace LudoQuick {
       if (BagCount != 0) hash ^= BagCount.GetHashCode();
       if (Retry != 0) hash ^= Retry.GetHashCode();
       if (MapId != 0) hash ^= MapId.GetHashCode();
+      if (EndMapId != 0) hash ^= EndMapId.GetHashCode();
       if (RouteNum != 0) hash ^= RouteNum.GetHashCode();
       if (EventId != 0) hash ^= EventId.GetHashCode();
       if (Code != 0) hash ^= Code.GetHashCode();
@@ -2690,16 +2707,20 @@ namespace LudoQuick {
         output.WriteRawTag(48);
         output.WriteInt32(MapId);
       }
-      if (RouteNum != 0) {
+      if (EndMapId != 0) {
         output.WriteRawTag(56);
+        output.WriteInt32(EndMapId);
+      }
+      if (RouteNum != 0) {
+        output.WriteRawTag(64);
         output.WriteInt32(RouteNum);
       }
       if (EventId != 0) {
-        output.WriteRawTag(64);
+        output.WriteRawTag(72);
         output.WriteInt32(EventId);
       }
       if (Code != 0) {
-        output.WriteRawTag(72);
+        output.WriteRawTag(80);
         output.WriteInt32(Code);
       }
       if (_unknownFields != null) {
@@ -2735,16 +2756,20 @@ namespace LudoQuick {
         output.WriteRawTag(48);
         output.WriteInt32(MapId);
       }
-      if (RouteNum != 0) {
+      if (EndMapId != 0) {
         output.WriteRawTag(56);
+        output.WriteInt32(EndMapId);
+      }
+      if (RouteNum != 0) {
+        output.WriteRawTag(64);
         output.WriteInt32(RouteNum);
       }
       if (EventId != 0) {
-        output.WriteRawTag(64);
+        output.WriteRawTag(72);
         output.WriteInt32(EventId);
       }
       if (Code != 0) {
-        output.WriteRawTag(72);
+        output.WriteRawTag(80);
         output.WriteInt32(Code);
       }
       if (_unknownFields != null) {
@@ -2773,6 +2798,9 @@ namespace LudoQuick {
       }
       if (MapId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(MapId);
+      }
+      if (EndMapId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(EndMapId);
       }
       if (RouteNum != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(RouteNum);
@@ -2811,6 +2839,9 @@ namespace LudoQuick {
       }
       if (other.MapId != 0) {
         MapId = other.MapId;
+      }
+      if (other.EndMapId != 0) {
+        EndMapId = other.EndMapId;
       }
       if (other.RouteNum != 0) {
         RouteNum = other.RouteNum;
@@ -2860,14 +2891,18 @@ namespace LudoQuick {
             break;
           }
           case 56: {
-            RouteNum = input.ReadInt32();
+            EndMapId = input.ReadInt32();
             break;
           }
           case 64: {
-            EventId = input.ReadInt32();
+            RouteNum = input.ReadInt32();
             break;
           }
           case 72: {
+            EventId = input.ReadInt32();
+            break;
+          }
+          case 80: {
             Code = input.ReadInt32();
             break;
           }
@@ -2910,14 +2945,18 @@ namespace LudoQuick {
             break;
           }
           case 56: {
-            RouteNum = input.ReadInt32();
+            EndMapId = input.ReadInt32();
             break;
           }
           case 64: {
-            EventId = input.ReadInt32();
+            RouteNum = input.ReadInt32();
             break;
           }
           case 72: {
+            EventId = input.ReadInt32();
+            break;
+          }
+          case 80: {
             Code = input.ReadInt32();
             break;
           }
