@@ -825,11 +825,12 @@ class MsgSceneInfoResp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kUserInfoFieldNumber = 3,
+    kUserInfoFieldNumber = 4,
     kGameStateFieldNumber = 1,
-    kTimeRemainingFieldNumber = 2,
+    kCurrentUserFieldNumber = 2,
+    kTimeRemainingFieldNumber = 3,
   };
-  // repeated .LudoQuick.UserInfo user_info = 3;
+  // repeated .LudoQuick.UserInfo user_info = 4;
   int user_info_size() const;
   private:
   int _internal_user_info_size() const;
@@ -856,7 +857,16 @@ class MsgSceneInfoResp PROTOBUF_FINAL :
   void _internal_set_game_state(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 time_remaining = 2;
+  // int32 current_user = 2;
+  void clear_current_user();
+  ::PROTOBUF_NAMESPACE_ID::int32 current_user() const;
+  void set_current_user(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_current_user() const;
+  void _internal_set_current_user(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 time_remaining = 3;
   void clear_time_remaining();
   ::PROTOBUF_NAMESPACE_ID::int32 time_remaining() const;
   void set_time_remaining(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -874,6 +884,7 @@ class MsgSceneInfoResp PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LudoQuick::UserInfo > user_info_;
   ::PROTOBUF_NAMESPACE_ID::int32 game_state_;
+  ::PROTOBUF_NAMESPACE_ID::int32 current_user_;
   ::PROTOBUF_NAMESPACE_ID::int32 time_remaining_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_LudoQuick_2eproto;
@@ -1607,9 +1618,12 @@ class MsgChessInfoResp PROTOBUF_FINAL :
     kIsUnlockFieldNumber = 3,
     kBagCountFieldNumber = 4,
     kRetryFieldNumber = 5,
-    kRouteNumFieldNumber = 6,
-    kEventIdFieldNumber = 7,
-    kCodeFieldNumber = 8,
+    kMapIdFieldNumber = 6,
+    kEndMapIdFieldNumber = 7,
+    kRouteNumFieldNumber = 8,
+    kEventIdFieldNumber = 9,
+    kSwithIdFieldNumber = 10,
+    kCodeFieldNumber = 11,
   };
   // int32 chair_id = 1;
   void clear_chair_id();
@@ -1656,7 +1670,25 @@ class MsgChessInfoResp PROTOBUF_FINAL :
   void _internal_set_retry(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 route_num = 6;
+  // int32 map_id = 6;
+  void clear_map_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 map_id() const;
+  void set_map_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_map_id() const;
+  void _internal_set_map_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 end_map_id = 7;
+  void clear_end_map_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 end_map_id() const;
+  void set_end_map_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_end_map_id() const;
+  void _internal_set_end_map_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 route_num = 8;
   void clear_route_num();
   ::PROTOBUF_NAMESPACE_ID::int32 route_num() const;
   void set_route_num(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -1665,7 +1697,7 @@ class MsgChessInfoResp PROTOBUF_FINAL :
   void _internal_set_route_num(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 event_id = 7;
+  // int32 event_id = 9;
   void clear_event_id();
   ::PROTOBUF_NAMESPACE_ID::int32 event_id() const;
   void set_event_id(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -1674,7 +1706,16 @@ class MsgChessInfoResp PROTOBUF_FINAL :
   void _internal_set_event_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 code = 8;
+  // int32 swith_id = 10;
+  void clear_swith_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 swith_id() const;
+  void set_swith_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_swith_id() const;
+  void _internal_set_swith_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 code = 11;
   void clear_code();
   ::PROTOBUF_NAMESPACE_ID::int32 code() const;
   void set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -1695,8 +1736,11 @@ class MsgChessInfoResp PROTOBUF_FINAL :
   bool is_unlock_;
   ::PROTOBUF_NAMESPACE_ID::int32 bag_count_;
   ::PROTOBUF_NAMESPACE_ID::int32 retry_;
+  ::PROTOBUF_NAMESPACE_ID::int32 map_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 end_map_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 route_num_;
   ::PROTOBUF_NAMESPACE_ID::int32 event_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 swith_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 code_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_LudoQuick_2eproto;
@@ -2459,7 +2503,27 @@ inline void MsgSceneInfoResp::set_game_state(::PROTOBUF_NAMESPACE_ID::int32 valu
   // @@protoc_insertion_point(field_set:LudoQuick.MsgSceneInfoResp.game_state)
 }
 
-// int32 time_remaining = 2;
+// int32 current_user = 2;
+inline void MsgSceneInfoResp::clear_current_user() {
+  current_user_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfoResp::_internal_current_user() const {
+  return current_user_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfoResp::current_user() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.MsgSceneInfoResp.current_user)
+  return _internal_current_user();
+}
+inline void MsgSceneInfoResp::_internal_set_current_user(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  current_user_ = value;
+}
+inline void MsgSceneInfoResp::set_current_user(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_current_user(value);
+  // @@protoc_insertion_point(field_set:LudoQuick.MsgSceneInfoResp.current_user)
+}
+
+// int32 time_remaining = 3;
 inline void MsgSceneInfoResp::clear_time_remaining() {
   time_remaining_ = 0;
 }
@@ -2479,7 +2543,7 @@ inline void MsgSceneInfoResp::set_time_remaining(::PROTOBUF_NAMESPACE_ID::int32 
   // @@protoc_insertion_point(field_set:LudoQuick.MsgSceneInfoResp.time_remaining)
 }
 
-// repeated .LudoQuick.UserInfo user_info = 3;
+// repeated .LudoQuick.UserInfo user_info = 4;
 inline int MsgSceneInfoResp::_internal_user_info_size() const {
   return user_info_.size();
 }
@@ -2838,7 +2902,47 @@ inline void MsgChessInfoResp::set_retry(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:LudoQuick.MsgChessInfoResp.retry)
 }
 
-// int32 route_num = 6;
+// int32 map_id = 6;
+inline void MsgChessInfoResp::clear_map_id() {
+  map_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChessInfoResp::_internal_map_id() const {
+  return map_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChessInfoResp::map_id() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.MsgChessInfoResp.map_id)
+  return _internal_map_id();
+}
+inline void MsgChessInfoResp::_internal_set_map_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  map_id_ = value;
+}
+inline void MsgChessInfoResp::set_map_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_map_id(value);
+  // @@protoc_insertion_point(field_set:LudoQuick.MsgChessInfoResp.map_id)
+}
+
+// int32 end_map_id = 7;
+inline void MsgChessInfoResp::clear_end_map_id() {
+  end_map_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChessInfoResp::_internal_end_map_id() const {
+  return end_map_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChessInfoResp::end_map_id() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.MsgChessInfoResp.end_map_id)
+  return _internal_end_map_id();
+}
+inline void MsgChessInfoResp::_internal_set_end_map_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  end_map_id_ = value;
+}
+inline void MsgChessInfoResp::set_end_map_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_end_map_id(value);
+  // @@protoc_insertion_point(field_set:LudoQuick.MsgChessInfoResp.end_map_id)
+}
+
+// int32 route_num = 8;
 inline void MsgChessInfoResp::clear_route_num() {
   route_num_ = 0;
 }
@@ -2858,7 +2962,7 @@ inline void MsgChessInfoResp::set_route_num(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:LudoQuick.MsgChessInfoResp.route_num)
 }
 
-// int32 event_id = 7;
+// int32 event_id = 9;
 inline void MsgChessInfoResp::clear_event_id() {
   event_id_ = 0;
 }
@@ -2878,7 +2982,27 @@ inline void MsgChessInfoResp::set_event_id(::PROTOBUF_NAMESPACE_ID::int32 value)
   // @@protoc_insertion_point(field_set:LudoQuick.MsgChessInfoResp.event_id)
 }
 
-// int32 code = 8;
+// int32 swith_id = 10;
+inline void MsgChessInfoResp::clear_swith_id() {
+  swith_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChessInfoResp::_internal_swith_id() const {
+  return swith_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgChessInfoResp::swith_id() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.MsgChessInfoResp.swith_id)
+  return _internal_swith_id();
+}
+inline void MsgChessInfoResp::_internal_set_swith_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  swith_id_ = value;
+}
+inline void MsgChessInfoResp::set_swith_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_swith_id(value);
+  // @@protoc_insertion_point(field_set:LudoQuick.MsgChessInfoResp.swith_id)
+}
+
+// int32 code = 11;
 inline void MsgChessInfoResp::clear_code() {
   code_ = 0;
 }

@@ -169,6 +169,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Crash_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::CRASH::sS2CPlayerDot, area_index_),
   PROTOBUF_FIELD_OFFSET(::CRASH::sS2CPlayerDot, odd_),
   PROTOBUF_FIELD_OFFSET(::CRASH::sS2CPlayerDot, win_gold_),
+  PROTOBUF_FIELD_OFFSET(::CRASH::sS2CPlayerDot, revenue_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::CRASH::sS2CNotifyProgress, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -183,7 +184,7 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 22, -1, sizeof(::CRASH::sS2CPlayerBet)},
   { 30, -1, sizeof(::CRASH::sS2CCancelBet)},
   { 37, -1, sizeof(::CRASH::sS2CPlayerDot)},
-  { 46, -1, sizeof(::CRASH::sS2CNotifyProgress)},
+  { 47, -1, sizeof(::CRASH::sS2CNotifyProgress)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -207,16 +208,16 @@ const char descriptor_table_protodef_Crash_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "result\030\t \003(\005\"A\n\rsS2CPlayerBet\022\017\n\007chairid"
   "\030\001 \001(\005\022\022\n\narea_index\030\002 \001(\005\022\013\n\003bet\030\003 \001(\005\""
   "-\n\rsS2CCancelBet\022\017\n\007chairid\030\001 \001(\005\022\013\n\003bet"
-  "\030\002 \001(\005\"S\n\rsS2CPlayerDot\022\017\n\007chairid\030\001 \001(\005"
+  "\030\002 \001(\005\"d\n\rsS2CPlayerDot\022\017\n\007chairid\030\001 \001(\005"
   "\022\022\n\narea_index\030\002 \001(\005\022\013\n\003odd\030\003 \001(\005\022\020\n\010win"
-  "_gold\030\004 \001(\003\"6\n\022sS2CNotifyProgress\022\017\n\007is_"
-  "boom\030\001 \001(\010\022\017\n\007cur_odd\030\002 \001(\005*\325\001\n\013EMsgIDCR"
-  "ASH\022\016\n\nSUB_CS_Bet\020\000\022\024\n\020SUB_CS_CancelBet\020"
-  "\001\022\024\n\020SUB_CS_PlayerDot\020\002\022\016\n\nSUB_SC_Bet\020\003\022"
-  "\024\n\020SUB_SC_CancelBet\020\004\022\024\n\020SUB_SC_PlayerDo"
-  "t\020\005\022\031\n\025SUB_SC_NotifyProgress\020\006\022\026\n\022SUB_SC"
-  "_ChangeState\020\007\022\033\n\027SUB_S_CHECK_ROBOT_LEAV"
-  "E\020\010b\006proto3"
+  "_gold\030\004 \001(\003\022\017\n\007revenue\030\005 \001(\004\"6\n\022sS2CNoti"
+  "fyProgress\022\017\n\007is_boom\030\001 \001(\010\022\017\n\007cur_odd\030\002"
+  " \001(\005*\325\001\n\013EMsgIDCRASH\022\016\n\nSUB_CS_Bet\020\000\022\024\n\020"
+  "SUB_CS_CancelBet\020\001\022\024\n\020SUB_CS_PlayerDot\020\002"
+  "\022\016\n\nSUB_SC_Bet\020\003\022\024\n\020SUB_SC_CancelBet\020\004\022\024"
+  "\n\020SUB_SC_PlayerDot\020\005\022\031\n\025SUB_SC_NotifyPro"
+  "gress\020\006\022\026\n\022SUB_SC_ChangeState\020\007\022\033\n\027SUB_S"
+  "_CHECK_ROBOT_LEAVE\020\010b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Crash_2eproto_deps[1] = {
 };
@@ -230,7 +231,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Cra
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Crash_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Crash_2eproto = {
-  false, false, descriptor_table_protodef_Crash_2eproto, "Crash.proto", 811,
+  false, false, descriptor_table_protodef_Crash_2eproto, "Crash.proto", 828,
   &descriptor_table_Crash_2eproto_once, descriptor_table_Crash_2eproto_sccs, descriptor_table_Crash_2eproto_deps, 6, 0,
   schemas, file_default_instances, TableStruct_Crash_2eproto::offsets,
   file_level_metadata_Crash_2eproto, 6, file_level_enum_descriptors_Crash_2eproto, file_level_service_descriptors_Crash_2eproto,
@@ -1580,6 +1581,13 @@ const char* sS2CPlayerDot::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
+      // uint64 revenue = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          revenue_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
       default: {
       handle_unusual:
         if ((tag & 7) == 4 || tag == 0) {
@@ -1632,6 +1640,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_win_gold(), target);
   }
 
+  // uint64 revenue = 5;
+  if (this->revenue() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(5, this->_internal_revenue(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -1667,6 +1681,13 @@ size_t sS2CPlayerDot::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_win_gold());
+  }
+
+  // uint64 revenue = 5;
+  if (this->revenue() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
+        this->_internal_revenue());
   }
 
   // int32 odd = 3;
@@ -1715,6 +1736,9 @@ void sS2CPlayerDot::MergeFrom(const sS2CPlayerDot& from) {
   }
   if (from.win_gold() != 0) {
     _internal_set_win_gold(from._internal_win_gold());
+  }
+  if (from.revenue() != 0) {
+    _internal_set_revenue(from._internal_revenue());
   }
   if (from.odd() != 0) {
     _internal_set_odd(from._internal_odd());

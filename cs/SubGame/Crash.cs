@@ -34,15 +34,15 @@ namespace CRASH {
             "bRgIIAEoBRIWCg5oaXN0b3J5X3Jlc3VsdBgJIAMoBSJBCg1zUzJDUGxheWVy",
             "QmV0Eg8KB2NoYWlyaWQYASABKAUSEgoKYXJlYV9pbmRleBgCIAEoBRILCgNi",
             "ZXQYAyABKAUiLQoNc1MyQ0NhbmNlbEJldBIPCgdjaGFpcmlkGAEgASgFEgsK",
-            "A2JldBgCIAEoBSJTCg1zUzJDUGxheWVyRG90Eg8KB2NoYWlyaWQYASABKAUS",
+            "A2JldBgCIAEoBSJkCg1zUzJDUGxheWVyRG90Eg8KB2NoYWlyaWQYASABKAUS",
             "EgoKYXJlYV9pbmRleBgCIAEoBRILCgNvZGQYAyABKAUSEAoId2luX2dvbGQY",
-            "BCABKAMiNgoSc1MyQ05vdGlmeVByb2dyZXNzEg8KB2lzX2Jvb20YASABKAgS",
-            "DwoHY3VyX29kZBgCIAEoBSrVAQoLRU1zZ0lEQ1JBU0gSDgoKU1VCX0NTX0Jl",
-            "dBAAEhQKEFNVQl9DU19DYW5jZWxCZXQQARIUChBTVUJfQ1NfUGxheWVyRG90",
-            "EAISDgoKU1VCX1NDX0JldBADEhQKEFNVQl9TQ19DYW5jZWxCZXQQBBIUChBT",
-            "VUJfU0NfUGxheWVyRG90EAUSGQoVU1VCX1NDX05vdGlmeVByb2dyZXNzEAYS",
-            "FgoSU1VCX1NDX0NoYW5nZVN0YXRlEAcSGwoXU1VCX1NfQ0hFQ0tfUk9CT1Rf",
-            "TEVBVkUQCGIGcHJvdG8z"));
+            "BCABKAMSDwoHcmV2ZW51ZRgFIAEoBCI2ChJzUzJDTm90aWZ5UHJvZ3Jlc3MS",
+            "DwoHaXNfYm9vbRgBIAEoCBIPCgdjdXJfb2RkGAIgASgFKtUBCgtFTXNnSURD",
+            "UkFTSBIOCgpTVUJfQ1NfQmV0EAASFAoQU1VCX0NTX0NhbmNlbEJldBABEhQK",
+            "EFNVQl9DU19QbGF5ZXJEb3QQAhIOCgpTVUJfU0NfQmV0EAMSFAoQU1VCX1ND",
+            "X0NhbmNlbEJldBAEEhQKEFNVQl9TQ19QbGF5ZXJEb3QQBRIZChVTVUJfU0Nf",
+            "Tm90aWZ5UHJvZ3Jlc3MQBhIWChJTVUJfU0NfQ2hhbmdlU3RhdGUQBxIbChdT",
+            "VUJfU19DSEVDS19ST0JPVF9MRUFWRRAIYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::CRASH.EMsgIDCRASH), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -50,7 +50,7 @@ namespace CRASH {
             new pbr::GeneratedClrTypeInfo(typeof(global::CRASH.SC_SceneInfo), global::CRASH.SC_SceneInfo.Parser, new[]{ "CurState", "RemainTime", "PlayerBet", "PlayerWinGold", "PlayerWinDotOdd", "PlayerTotalWinSocre", "PlayerMaxScore", "HistoryNum", "HistoryResult" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::CRASH.sS2CPlayerBet), global::CRASH.sS2CPlayerBet.Parser, new[]{ "Chairid", "AreaIndex", "Bet" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::CRASH.sS2CCancelBet), global::CRASH.sS2CCancelBet.Parser, new[]{ "Chairid", "Bet" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::CRASH.sS2CPlayerDot), global::CRASH.sS2CPlayerDot.Parser, new[]{ "Chairid", "AreaIndex", "Odd", "WinGold" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::CRASH.sS2CPlayerDot), global::CRASH.sS2CPlayerDot.Parser, new[]{ "Chairid", "AreaIndex", "Odd", "WinGold", "Revenue" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::CRASH.sS2CNotifyProgress), global::CRASH.sS2CNotifyProgress.Parser, new[]{ "IsBoom", "CurOdd" }, null, null, null, null)
           }));
     }
@@ -1301,6 +1301,7 @@ namespace CRASH {
       areaIndex_ = other.areaIndex_;
       odd_ = other.odd_;
       winGold_ = other.winGold_;
+      revenue_ = other.revenue_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1365,6 +1366,20 @@ namespace CRASH {
       }
     }
 
+    /// <summary>Field number for the "revenue" field.</summary>
+    public const int RevenueFieldNumber = 5;
+    private ulong revenue_;
+    /// <summary>
+    ///税收
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ulong Revenue {
+      get { return revenue_; }
+      set {
+        revenue_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as sS2CPlayerDot);
@@ -1382,6 +1397,7 @@ namespace CRASH {
       if (AreaIndex != other.AreaIndex) return false;
       if (Odd != other.Odd) return false;
       if (WinGold != other.WinGold) return false;
+      if (Revenue != other.Revenue) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1392,6 +1408,7 @@ namespace CRASH {
       if (AreaIndex != 0) hash ^= AreaIndex.GetHashCode();
       if (Odd != 0) hash ^= Odd.GetHashCode();
       if (WinGold != 0L) hash ^= WinGold.GetHashCode();
+      if (Revenue != 0UL) hash ^= Revenue.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1424,6 +1441,10 @@ namespace CRASH {
         output.WriteRawTag(32);
         output.WriteInt64(WinGold);
       }
+      if (Revenue != 0UL) {
+        output.WriteRawTag(40);
+        output.WriteUInt64(Revenue);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1449,6 +1470,10 @@ namespace CRASH {
         output.WriteRawTag(32);
         output.WriteInt64(WinGold);
       }
+      if (Revenue != 0UL) {
+        output.WriteRawTag(40);
+        output.WriteUInt64(Revenue);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1469,6 +1494,9 @@ namespace CRASH {
       }
       if (WinGold != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(WinGold);
+      }
+      if (Revenue != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(Revenue);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1492,6 +1520,9 @@ namespace CRASH {
       }
       if (other.WinGold != 0L) {
         WinGold = other.WinGold;
+      }
+      if (other.Revenue != 0UL) {
+        Revenue = other.Revenue;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1523,6 +1554,10 @@ namespace CRASH {
             WinGold = input.ReadInt64();
             break;
           }
+          case 40: {
+            Revenue = input.ReadUInt64();
+            break;
+          }
         }
       }
     #endif
@@ -1551,6 +1586,10 @@ namespace CRASH {
           }
           case 32: {
             WinGold = input.ReadInt64();
+            break;
+          }
+          case 40: {
+            Revenue = input.ReadUInt64();
             break;
           }
         }

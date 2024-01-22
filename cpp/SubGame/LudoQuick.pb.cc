@@ -253,6 +253,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_LudoQuick_2eproto::offsets[] P
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::LudoQuick::MsgSceneInfoResp, game_state_),
+  PROTOBUF_FIELD_OFFSET(::LudoQuick::MsgSceneInfoResp, current_user_),
   PROTOBUF_FIELD_OFFSET(::LudoQuick::MsgSceneInfoResp, time_remaining_),
   PROTOBUF_FIELD_OFFSET(::LudoQuick::MsgSceneInfoResp, user_info_),
   ~0u,  // no _has_bits_
@@ -295,8 +296,11 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_LudoQuick_2eproto::offsets[] P
   PROTOBUF_FIELD_OFFSET(::LudoQuick::MsgChessInfoResp, is_unlock_),
   PROTOBUF_FIELD_OFFSET(::LudoQuick::MsgChessInfoResp, bag_count_),
   PROTOBUF_FIELD_OFFSET(::LudoQuick::MsgChessInfoResp, retry_),
+  PROTOBUF_FIELD_OFFSET(::LudoQuick::MsgChessInfoResp, map_id_),
+  PROTOBUF_FIELD_OFFSET(::LudoQuick::MsgChessInfoResp, end_map_id_),
   PROTOBUF_FIELD_OFFSET(::LudoQuick::MsgChessInfoResp, route_num_),
   PROTOBUF_FIELD_OFFSET(::LudoQuick::MsgChessInfoResp, event_id_),
+  PROTOBUF_FIELD_OFFSET(::LudoQuick::MsgChessInfoResp, swith_id_),
   PROTOBUF_FIELD_OFFSET(::LudoQuick::MsgChessInfoResp, code_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::LudoQuick::GameResult, _internal_metadata_),
@@ -322,13 +326,13 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 8, -1, sizeof(::LudoQuick::UserInfo)},
   { 17, -1, sizeof(::LudoQuick::ChessGrid)},
   { 32, -1, sizeof(::LudoQuick::MsgSceneInfoResp)},
-  { 40, -1, sizeof(::LudoQuick::MsgNoticeOpResp)},
-  { 47, -1, sizeof(::LudoQuick::MsgThrowDiceResp)},
-  { 54, -1, sizeof(::LudoQuick::MsgOperateChess)},
-  { 62, -1, sizeof(::LudoQuick::MsgTriggerEvent)},
-  { 70, -1, sizeof(::LudoQuick::MsgChessInfoResp)},
-  { 83, -1, sizeof(::LudoQuick::GameResult)},
-  { 95, -1, sizeof(::LudoQuick::MsgResultResp)},
+  { 41, -1, sizeof(::LudoQuick::MsgNoticeOpResp)},
+  { 48, -1, sizeof(::LudoQuick::MsgThrowDiceResp)},
+  { 55, -1, sizeof(::LudoQuick::MsgOperateChess)},
+  { 63, -1, sizeof(::LudoQuick::MsgTriggerEvent)},
+  { 71, -1, sizeof(::LudoQuick::MsgChessInfoResp)},
+  { 87, -1, sizeof(::LudoQuick::GameResult)},
+  { 99, -1, sizeof(::LudoQuick::MsgResultResp)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -356,33 +360,34 @@ const char descriptor_table_protodef_LudoQuick_2eproto[] PROTOBUF_SECTION_VARIAB
   "\004 \001(\005\022\016\n\006switch\030\005 \001(\005\022\022\n\ninflection\030\006 \001("
   "\005\022\021\n\tnext_pos1\030\007 \001(\005\022\021\n\tnext_pos2\030\010 \001(\005\022"
   "\023\n\013start_point\030\t \001(\005\022\021\n\tend_point\030\n \001(\005\""
-  "f\n\020MsgSceneInfoResp\022\022\n\ngame_state\030\001 \001(\005\022"
-  "\026\n\016time_remaining\030\002 \001(\005\022&\n\tuser_info\030\003 \003"
-  "(\0132\023.LudoQuick.UserInfo\"2\n\017MsgNoticeOpRe"
-  "sp\022\020\n\010chair_id\030\001 \001(\005\022\r\n\005times\030\002 \001(\005\"7\n\020M"
-  "sgThrowDiceResp\022\020\n\010chair_id\030\001 \001(\005\022\021\n\tdic"
-  "e_roll\030\002 \001(\005\"H\n\017MsgOperateChess\022\020\n\010chair"
-  "_id\030\001 \001(\005\022\020\n\010chess_id\030\002 \001(\005\022\021\n\tis_unlock"
-  "\030\003 \001(\010\"G\n\017MsgTriggerEvent\022\020\n\010chair_id\030\001 "
-  "\001(\005\022\020\n\010chess_id\030\002 \001(\005\022\020\n\010event_id\030\003 \001(\005\""
-  "\236\001\n\020MsgChessInfoResp\022\020\n\010chair_id\030\001 \001(\005\022\020"
-  "\n\010chess_id\030\002 \001(\005\022\021\n\tis_unlock\030\003 \001(\010\022\021\n\tb"
-  "ag_count\030\004 \001(\005\022\r\n\005retry\030\005 \001(\005\022\021\n\troute_n"
-  "um\030\006 \001(\005\022\020\n\010event_id\030\007 \001(\005\022\014\n\004code\030\010 \001(\005"
-  "\"\222\001\n\nGameResult\022\020\n\010chair_id\030\001 \001(\005\022&\n\tuse"
-  "r_info\030\002 \001(\0132\023.LudoQuick.UserInfo\022\021\n\tuse"
-  "r_gold\030\003 \001(\003\022\013\n\003win\030\004 \001(\003\022\013\n\003bet\030\005 \001(\003\022\013"
-  "\n\003bag\030\006 \001(\003\022\020\n\010bag_back\030\007 \001(\003\"6\n\rMsgResu"
-  "ltResp\022%\n\006result\030\001 \003(\0132\025.LudoQuick.GameR"
-  "esult*\262\002\n\017EMsgIDLudoQuick\022\026\n\022MsgID_First"
-  "Publish\020\000\022\027\n\023SUB_SC_FirstPublish\020\001\022\023\n\017SU"
-  "B_SC_NoticeOp\020\002\022\023\n\017SUB_CS_DiceInfo\020\003\022\024\n\020"
-  "SUB_SC_ThrowDice\020\004\022\027\n\023SUB_CS_OperateChes"
-  "s\020\005\022\024\n\020SUB_SC_ChessInfo\020\006\022\027\n\023SUB_CS_Trig"
-  "gerEvent\020\007\022\025\n\021SUB_SC_GameResult\020\t\022\023\n\017SUB"
-  "_CS_Optional\020\n\022\021\n\rSUB_CS_GiveUp\020\013\022\027\n\023SUB"
-  "_SC_GiveUpResult\020\014\022\016\n\nSUB_SC_ERR\020\rb\006prot"
-  "o3"
+  "|\n\020MsgSceneInfoResp\022\022\n\ngame_state\030\001 \001(\005\022"
+  "\024\n\014current_user\030\002 \001(\005\022\026\n\016time_remaining\030"
+  "\003 \001(\005\022&\n\tuser_info\030\004 \003(\0132\023.LudoQuick.Use"
+  "rInfo\"2\n\017MsgNoticeOpResp\022\020\n\010chair_id\030\001 \001"
+  "(\005\022\r\n\005times\030\002 \001(\005\"7\n\020MsgThrowDiceResp\022\020\n"
+  "\010chair_id\030\001 \001(\005\022\021\n\tdice_roll\030\002 \001(\005\"H\n\017Ms"
+  "gOperateChess\022\020\n\010chair_id\030\001 \001(\005\022\020\n\010chess"
+  "_id\030\002 \001(\005\022\021\n\tis_unlock\030\003 \001(\010\"G\n\017MsgTrigg"
+  "erEvent\022\020\n\010chair_id\030\001 \001(\005\022\020\n\010chess_id\030\002 "
+  "\001(\005\022\020\n\010event_id\030\003 \001(\005\"\324\001\n\020MsgChessInfoRe"
+  "sp\022\020\n\010chair_id\030\001 \001(\005\022\020\n\010chess_id\030\002 \001(\005\022\021"
+  "\n\tis_unlock\030\003 \001(\010\022\021\n\tbag_count\030\004 \001(\005\022\r\n\005"
+  "retry\030\005 \001(\005\022\016\n\006map_id\030\006 \001(\005\022\022\n\nend_map_i"
+  "d\030\007 \001(\005\022\021\n\troute_num\030\010 \001(\005\022\020\n\010event_id\030\t"
+  " \001(\005\022\020\n\010swith_id\030\n \001(\005\022\014\n\004code\030\013 \001(\005\"\222\001\n"
+  "\nGameResult\022\020\n\010chair_id\030\001 \001(\005\022&\n\tuser_in"
+  "fo\030\002 \001(\0132\023.LudoQuick.UserInfo\022\021\n\tuser_go"
+  "ld\030\003 \001(\003\022\013\n\003win\030\004 \001(\003\022\013\n\003bet\030\005 \001(\003\022\013\n\003ba"
+  "g\030\006 \001(\003\022\020\n\010bag_back\030\007 \001(\003\"6\n\rMsgResultRe"
+  "sp\022%\n\006result\030\001 \003(\0132\025.LudoQuick.GameResul"
+  "t*\262\002\n\017EMsgIDLudoQuick\022\026\n\022MsgID_FirstPubl"
+  "ish\020\000\022\027\n\023SUB_SC_FirstPublish\020\001\022\023\n\017SUB_SC"
+  "_NoticeOp\020\002\022\023\n\017SUB_CS_DiceInfo\020\003\022\024\n\020SUB_"
+  "SC_ThrowDice\020\004\022\027\n\023SUB_CS_OperateChess\020\005\022"
+  "\024\n\020SUB_SC_ChessInfo\020\006\022\027\n\023SUB_CS_TriggerE"
+  "vent\020\007\022\025\n\021SUB_SC_GameResult\020\t\022\023\n\017SUB_CS_"
+  "Optional\020\n\022\021\n\rSUB_CS_GiveUp\020\013\022\027\n\023SUB_SC_"
+  "GiveUpResult\020\014\022\016\n\nSUB_SC_ERR\020\rb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_LudoQuick_2eproto_deps[1] = {
 };
@@ -401,7 +406,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Lud
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_LudoQuick_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_LudoQuick_2eproto = {
-  false, false, descriptor_table_protodef_LudoQuick_2eproto, "LudoQuick.proto", 1442,
+  false, false, descriptor_table_protodef_LudoQuick_2eproto, "LudoQuick.proto", 1518,
   &descriptor_table_LudoQuick_2eproto_once, descriptor_table_LudoQuick_2eproto_sccs, descriptor_table_LudoQuick_2eproto_deps, 11, 0,
   schemas, file_default_instances, TableStruct_LudoQuick_2eproto::offsets,
   file_level_metadata_LudoQuick_2eproto, 11, file_level_enum_descriptors_LudoQuick_2eproto, file_level_service_descriptors_LudoQuick_2eproto,
@@ -1465,23 +1470,30 @@ const char* MsgSceneInfoResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 time_remaining = 2;
+      // int32 current_user = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          current_user_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 time_remaining = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           time_remaining_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated .LudoQuick.UserInfo user_info = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+      // repeated .LudoQuick.UserInfo user_info = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
           ptr -= 1;
           do {
             ptr += 1;
             ptr = ctx->ParseMessage(_internal_add_user_info(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<26>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<34>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -1518,18 +1530,24 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_game_state(), target);
   }
 
-  // int32 time_remaining = 2;
-  if (this->time_remaining() != 0) {
+  // int32 current_user = 2;
+  if (this->current_user() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_time_remaining(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_current_user(), target);
   }
 
-  // repeated .LudoQuick.UserInfo user_info = 3;
+  // int32 time_remaining = 3;
+  if (this->time_remaining() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_time_remaining(), target);
+  }
+
+  // repeated .LudoQuick.UserInfo user_info = 4;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_user_info_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(3, this->_internal_user_info(i), target, stream);
+      InternalWriteMessage(4, this->_internal_user_info(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1548,7 +1566,7 @@ size_t MsgSceneInfoResp::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .LudoQuick.UserInfo user_info = 3;
+  // repeated .LudoQuick.UserInfo user_info = 4;
   total_size += 1UL * this->_internal_user_info_size();
   for (const auto& msg : this->user_info_) {
     total_size +=
@@ -1562,7 +1580,14 @@ size_t MsgSceneInfoResp::ByteSizeLong() const {
         this->_internal_game_state());
   }
 
-  // int32 time_remaining = 2;
+  // int32 current_user = 2;
+  if (this->current_user() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_current_user());
+  }
+
+  // int32 time_remaining = 3;
   if (this->time_remaining() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
@@ -1603,6 +1628,9 @@ void MsgSceneInfoResp::MergeFrom(const MsgSceneInfoResp& from) {
   user_info_.MergeFrom(from.user_info_);
   if (from.game_state() != 0) {
     _internal_set_game_state(from._internal_game_state());
+  }
+  if (from.current_user() != 0) {
+    _internal_set_current_user(from._internal_current_user());
   }
   if (from.time_remaining() != 0) {
     _internal_set_time_remaining(from._internal_time_remaining());
@@ -2711,23 +2739,44 @@ const char* MsgChessInfoResp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 route_num = 6;
+      // int32 map_id = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+          map_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 end_map_id = 7;
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
+          end_map_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 route_num = 8;
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
           route_num_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 event_id = 7;
-      case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
+      // int32 event_id = 9;
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
           event_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 code = 8;
-      case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+      // int32 swith_id = 10;
+      case 10:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
+          swith_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 code = 11;
+      case 11:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 88)) {
           code_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
@@ -2790,22 +2839,40 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_retry(), target);
   }
 
-  // int32 route_num = 6;
+  // int32 map_id = 6;
+  if (this->map_id() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_map_id(), target);
+  }
+
+  // int32 end_map_id = 7;
+  if (this->end_map_id() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(7, this->_internal_end_map_id(), target);
+  }
+
+  // int32 route_num = 8;
   if (this->route_num() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_route_num(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(8, this->_internal_route_num(), target);
   }
 
-  // int32 event_id = 7;
+  // int32 event_id = 9;
   if (this->event_id() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(7, this->_internal_event_id(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(9, this->_internal_event_id(), target);
   }
 
-  // int32 code = 8;
+  // int32 swith_id = 10;
+  if (this->swith_id() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(10, this->_internal_swith_id(), target);
+  }
+
+  // int32 code = 11;
   if (this->code() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(8, this->_internal_code(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(11, this->_internal_code(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -2857,21 +2924,42 @@ size_t MsgChessInfoResp::ByteSizeLong() const {
         this->_internal_retry());
   }
 
-  // int32 route_num = 6;
+  // int32 map_id = 6;
+  if (this->map_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_map_id());
+  }
+
+  // int32 end_map_id = 7;
+  if (this->end_map_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_end_map_id());
+  }
+
+  // int32 route_num = 8;
   if (this->route_num() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_route_num());
   }
 
-  // int32 event_id = 7;
+  // int32 event_id = 9;
   if (this->event_id() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_event_id());
   }
 
-  // int32 code = 8;
+  // int32 swith_id = 10;
+  if (this->swith_id() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_swith_id());
+  }
+
+  // int32 code = 11;
   if (this->code() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
@@ -2924,11 +3012,20 @@ void MsgChessInfoResp::MergeFrom(const MsgChessInfoResp& from) {
   if (from.retry() != 0) {
     _internal_set_retry(from._internal_retry());
   }
+  if (from.map_id() != 0) {
+    _internal_set_map_id(from._internal_map_id());
+  }
+  if (from.end_map_id() != 0) {
+    _internal_set_end_map_id(from._internal_end_map_id());
+  }
   if (from.route_num() != 0) {
     _internal_set_route_num(from._internal_route_num());
   }
   if (from.event_id() != 0) {
     _internal_set_event_id(from._internal_event_id());
+  }
+  if (from.swith_id() != 0) {
+    _internal_set_swith_id(from._internal_swith_id());
   }
   if (from.code() != 0) {
     _internal_set_code(from._internal_code());

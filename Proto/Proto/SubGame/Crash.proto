@@ -59,6 +59,7 @@ message sS2CPlayerDot
 	int32	area_index 	= 2;						//区域
 	int32	odd 		= 3;						//倍数
 	int64	win_gold 	= 4;						//赢得金币
+	uint64	revenue		= 5;						//扣了税之后的金币
 }
 
 //跑马灯
