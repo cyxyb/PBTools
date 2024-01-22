@@ -1004,6 +1004,7 @@ class sS2CPlayerDot PROTOBUF_FINAL :
     kChairidFieldNumber = 1,
     kAreaIndexFieldNumber = 2,
     kWinGoldFieldNumber = 4,
+    kRevenueFieldNumber = 5,
     kOddFieldNumber = 3,
   };
   // int32 chairid = 1;
@@ -1033,6 +1034,15 @@ class sS2CPlayerDot PROTOBUF_FINAL :
   void _internal_set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
+  // uint64 revenue = 5;
+  void clear_revenue();
+  ::PROTOBUF_NAMESPACE_ID::uint64 revenue() const;
+  void set_revenue(::PROTOBUF_NAMESPACE_ID::uint64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::uint64 _internal_revenue() const;
+  void _internal_set_revenue(::PROTOBUF_NAMESPACE_ID::uint64 value);
+  public:
+
   // int32 odd = 3;
   void clear_odd();
   ::PROTOBUF_NAMESPACE_ID::int32 odd() const;
@@ -1052,6 +1062,7 @@ class sS2CPlayerDot PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 chairid_;
   ::PROTOBUF_NAMESPACE_ID::int32 area_index_;
   ::PROTOBUF_NAMESPACE_ID::int64 win_gold_;
+  ::PROTOBUF_NAMESPACE_ID::uint64 revenue_;
   ::PROTOBUF_NAMESPACE_ID::int32 odd_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Crash_2eproto;
@@ -1810,6 +1821,26 @@ inline void sS2CPlayerDot::_internal_set_win_gold(::PROTOBUF_NAMESPACE_ID::int64
 inline void sS2CPlayerDot::set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_win_gold(value);
   // @@protoc_insertion_point(field_set:CRASH.sS2CPlayerDot.win_gold)
+}
+
+// uint64 revenue = 5;
+inline void sS2CPlayerDot::clear_revenue() {
+  revenue_ = PROTOBUF_ULONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint64 sS2CPlayerDot::_internal_revenue() const {
+  return revenue_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::uint64 sS2CPlayerDot::revenue() const {
+  // @@protoc_insertion_point(field_get:CRASH.sS2CPlayerDot.revenue)
+  return _internal_revenue();
+}
+inline void sS2CPlayerDot::_internal_set_revenue(::PROTOBUF_NAMESPACE_ID::uint64 value) {
+  
+  revenue_ = value;
+}
+inline void sS2CPlayerDot::set_revenue(::PROTOBUF_NAMESPACE_ID::uint64 value) {
+  _internal_set_revenue(value);
+  // @@protoc_insertion_point(field_set:CRASH.sS2CPlayerDot.revenue)
 }
 
 // -------------------------------------------------------------------
