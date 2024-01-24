@@ -1370,7 +1370,7 @@ namespace CRASH {
     public const int RevenueFieldNumber = 5;
     private ulong revenue_;
     /// <summary>
-    ///税收
+    ///扣了税之后的金币
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public ulong Revenue {
