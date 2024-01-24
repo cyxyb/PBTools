@@ -1615,15 +1615,16 @@ class MsgChessInfoResp PROTOBUF_FINAL :
   enum : int {
     kChairIdFieldNumber = 1,
     kChessIdFieldNumber = 2,
-    kIsUnlockFieldNumber = 3,
     kBagCountFieldNumber = 4,
     kRetryFieldNumber = 5,
     kMapIdFieldNumber = 6,
     kEndMapIdFieldNumber = 7,
+    kIsUnlockFieldNumber = 3,
+    kFinishLineFieldNumber = 11,
     kRouteNumFieldNumber = 8,
     kEventIdFieldNumber = 9,
     kSwithIdFieldNumber = 10,
-    kCodeFieldNumber = 11,
+    kCodeFieldNumber = 12,
   };
   // int32 chair_id = 1;
   void clear_chair_id();
@@ -1641,15 +1642,6 @@ class MsgChessInfoResp PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::int32 _internal_chess_id() const;
   void _internal_set_chess_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // bool is_unlock = 3;
-  void clear_is_unlock();
-  bool is_unlock() const;
-  void set_is_unlock(bool value);
-  private:
-  bool _internal_is_unlock() const;
-  void _internal_set_is_unlock(bool value);
   public:
 
   // int32 bag_count = 4;
@@ -1688,6 +1680,24 @@ class MsgChessInfoResp PROTOBUF_FINAL :
   void _internal_set_end_map_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // bool is_unlock = 3;
+  void clear_is_unlock();
+  bool is_unlock() const;
+  void set_is_unlock(bool value);
+  private:
+  bool _internal_is_unlock() const;
+  void _internal_set_is_unlock(bool value);
+  public:
+
+  // bool finish_line = 11;
+  void clear_finish_line();
+  bool finish_line() const;
+  void set_finish_line(bool value);
+  private:
+  bool _internal_finish_line() const;
+  void _internal_set_finish_line(bool value);
+  public:
+
   // int32 route_num = 8;
   void clear_route_num();
   ::PROTOBUF_NAMESPACE_ID::int32 route_num() const;
@@ -1715,7 +1725,7 @@ class MsgChessInfoResp PROTOBUF_FINAL :
   void _internal_set_swith_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 code = 11;
+  // int32 code = 12;
   void clear_code();
   ::PROTOBUF_NAMESPACE_ID::int32 code() const;
   void set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -1733,11 +1743,12 @@ class MsgChessInfoResp PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 chess_id_;
-  bool is_unlock_;
   ::PROTOBUF_NAMESPACE_ID::int32 bag_count_;
   ::PROTOBUF_NAMESPACE_ID::int32 retry_;
   ::PROTOBUF_NAMESPACE_ID::int32 map_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 end_map_id_;
+  bool is_unlock_;
+  bool finish_line_;
   ::PROTOBUF_NAMESPACE_ID::int32 route_num_;
   ::PROTOBUF_NAMESPACE_ID::int32 event_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 swith_id_;
@@ -3002,7 +3013,27 @@ inline void MsgChessInfoResp::set_swith_id(::PROTOBUF_NAMESPACE_ID::int32 value)
   // @@protoc_insertion_point(field_set:LudoQuick.MsgChessInfoResp.swith_id)
 }
 
-// int32 code = 11;
+// bool finish_line = 11;
+inline void MsgChessInfoResp::clear_finish_line() {
+  finish_line_ = false;
+}
+inline bool MsgChessInfoResp::_internal_finish_line() const {
+  return finish_line_;
+}
+inline bool MsgChessInfoResp::finish_line() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.MsgChessInfoResp.finish_line)
+  return _internal_finish_line();
+}
+inline void MsgChessInfoResp::_internal_set_finish_line(bool value) {
+  
+  finish_line_ = value;
+}
+inline void MsgChessInfoResp::set_finish_line(bool value) {
+  _internal_set_finish_line(value);
+  // @@protoc_insertion_point(field_set:LudoQuick.MsgChessInfoResp.finish_line)
+}
+
+// int32 code = 12;
 inline void MsgChessInfoResp::clear_code() {
   code_ = 0;
 }

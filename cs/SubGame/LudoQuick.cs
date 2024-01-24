@@ -41,24 +41,24 @@ namespace LudoQuick {
             "EQoJZGljZV9yb2xsGAIgASgFIkgKD01zZ09wZXJhdGVDaGVzcxIQCghjaGFp",
             "cl9pZBgBIAEoBRIQCghjaGVzc19pZBgCIAEoBRIRCglpc191bmxvY2sYAyAB",
             "KAgiRwoPTXNnVHJpZ2dlckV2ZW50EhAKCGNoYWlyX2lkGAEgASgFEhAKCGNo",
-            "ZXNzX2lkGAIgASgFEhAKCGV2ZW50X2lkGAMgASgFItQBChBNc2dDaGVzc0lu",
+            "ZXNzX2lkGAIgASgFEhAKCGV2ZW50X2lkGAMgASgFIukBChBNc2dDaGVzc0lu",
             "Zm9SZXNwEhAKCGNoYWlyX2lkGAEgASgFEhAKCGNoZXNzX2lkGAIgASgFEhEK",
             "CWlzX3VubG9jaxgDIAEoCBIRCgliYWdfY291bnQYBCABKAUSDQoFcmV0cnkY",
             "BSABKAUSDgoGbWFwX2lkGAYgASgFEhIKCmVuZF9tYXBfaWQYByABKAUSEQoJ",
             "cm91dGVfbnVtGAggASgFEhAKCGV2ZW50X2lkGAkgASgFEhAKCHN3aXRoX2lk",
-            "GAogASgFEgwKBGNvZGUYCyABKAUikgEKCkdhbWVSZXN1bHQSEAoIY2hhaXJf",
-            "aWQYASABKAUSJgoJdXNlcl9pbmZvGAIgASgLMhMuTHVkb1F1aWNrLlVzZXJJ",
-            "bmZvEhEKCXVzZXJfZ29sZBgDIAEoAxILCgN3aW4YBCABKAMSCwoDYmV0GAUg",
-            "ASgDEgsKA2JhZxgGIAEoAxIQCghiYWdfYmFjaxgHIAEoAyI2Cg1Nc2dSZXN1",
-            "bHRSZXNwEiUKBnJlc3VsdBgBIAMoCzIVLkx1ZG9RdWljay5HYW1lUmVzdWx0",
-            "KrICCg9FTXNnSURMdWRvUXVpY2sSFgoSTXNnSURfRmlyc3RQdWJsaXNoEAAS",
-            "FwoTU1VCX1NDX0ZpcnN0UHVibGlzaBABEhMKD1NVQl9TQ19Ob3RpY2VPcBAC",
-            "EhMKD1NVQl9DU19EaWNlSW5mbxADEhQKEFNVQl9TQ19UaHJvd0RpY2UQBBIX",
-            "ChNTVUJfQ1NfT3BlcmF0ZUNoZXNzEAUSFAoQU1VCX1NDX0NoZXNzSW5mbxAG",
-            "EhcKE1NVQl9DU19UcmlnZ2VyRXZlbnQQBxIVChFTVUJfU0NfR2FtZVJlc3Vs",
-            "dBAJEhMKD1NVQl9DU19PcHRpb25hbBAKEhEKDVNVQl9DU19HaXZlVXAQCxIX",
-            "ChNTVUJfU0NfR2l2ZVVwUmVzdWx0EAwSDgoKU1VCX1NDX0VSUhANYgZwcm90",
-            "bzM="));
+            "GAogASgFEhMKC2ZpbmlzaF9saW5lGAsgASgIEgwKBGNvZGUYDCABKAUikgEK",
+            "CkdhbWVSZXN1bHQSEAoIY2hhaXJfaWQYASABKAUSJgoJdXNlcl9pbmZvGAIg",
+            "ASgLMhMuTHVkb1F1aWNrLlVzZXJJbmZvEhEKCXVzZXJfZ29sZBgDIAEoAxIL",
+            "CgN3aW4YBCABKAMSCwoDYmV0GAUgASgDEgsKA2JhZxgGIAEoAxIQCghiYWdf",
+            "YmFjaxgHIAEoAyI2Cg1Nc2dSZXN1bHRSZXNwEiUKBnJlc3VsdBgBIAMoCzIV",
+            "Lkx1ZG9RdWljay5HYW1lUmVzdWx0KrICCg9FTXNnSURMdWRvUXVpY2sSFgoS",
+            "TXNnSURfRmlyc3RQdWJsaXNoEAASFwoTU1VCX1NDX0ZpcnN0UHVibGlzaBAB",
+            "EhMKD1NVQl9TQ19Ob3RpY2VPcBACEhMKD1NVQl9DU19EaWNlSW5mbxADEhQK",
+            "EFNVQl9TQ19UaHJvd0RpY2UQBBIXChNTVUJfQ1NfT3BlcmF0ZUNoZXNzEAUS",
+            "FAoQU1VCX1NDX0NoZXNzSW5mbxAGEhcKE1NVQl9DU19UcmlnZ2VyRXZlbnQQ",
+            "BxIVChFTVUJfU0NfR2FtZVJlc3VsdBAJEhMKD1NVQl9DU19PcHRpb25hbBAK",
+            "EhEKDVNVQl9DU19HaXZlVXAQCxIXChNTVUJfU0NfR2l2ZVVwUmVzdWx0EAwS",
+            "DgoKU1VCX1NDX0VSUhANYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::LudoQuick.EMsgIDLudoQuick), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -70,7 +70,7 @@ namespace LudoQuick {
             new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgThrowDiceResp), global::LudoQuick.MsgThrowDiceResp.Parser, new[]{ "ChairId", "DiceRoll" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgOperateChess), global::LudoQuick.MsgOperateChess.Parser, new[]{ "ChairId", "ChessId", "IsUnlock" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgTriggerEvent), global::LudoQuick.MsgTriggerEvent.Parser, new[]{ "ChairId", "ChessId", "EventId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgChessInfoResp), global::LudoQuick.MsgChessInfoResp.Parser, new[]{ "ChairId", "ChessId", "IsUnlock", "BagCount", "Retry", "MapId", "EndMapId", "RouteNum", "EventId", "SwithId", "Code" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgChessInfoResp), global::LudoQuick.MsgChessInfoResp.Parser, new[]{ "ChairId", "ChessId", "IsUnlock", "BagCount", "Retry", "MapId", "EndMapId", "RouteNum", "EventId", "SwithId", "FinishLine", "Code" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.GameResult), global::LudoQuick.GameResult.Parser, new[]{ "ChairId", "UserInfo", "UserGold", "Win", "Bet", "Bag", "BagBack" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgResultResp), global::LudoQuick.MsgResultResp.Parser, new[]{ "Result" }, null, null, null, null)
           }));
@@ -2481,6 +2481,7 @@ namespace LudoQuick {
       routeNum_ = other.routeNum_;
       eventId_ = other.eventId_;
       swithId_ = other.swithId_;
+      finishLine_ = other.finishLine_;
       code_ = other.code_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -2630,8 +2631,22 @@ namespace LudoQuick {
       }
     }
 
+    /// <summary>Field number for the "finish_line" field.</summary>
+    public const int FinishLineFieldNumber = 11;
+    private bool finishLine_;
+    /// <summary>
+    ///终点线开关
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool FinishLine {
+      get { return finishLine_; }
+      set {
+        finishLine_ = value;
+      }
+    }
+
     /// <summary>Field number for the "code" field.</summary>
-    public const int CodeFieldNumber = 11;
+    public const int CodeFieldNumber = 12;
     private int code_;
     /// <summary>
     ///对语言id
@@ -2667,6 +2682,7 @@ namespace LudoQuick {
       if (RouteNum != other.RouteNum) return false;
       if (EventId != other.EventId) return false;
       if (SwithId != other.SwithId) return false;
+      if (FinishLine != other.FinishLine) return false;
       if (Code != other.Code) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -2684,6 +2700,7 @@ namespace LudoQuick {
       if (RouteNum != 0) hash ^= RouteNum.GetHashCode();
       if (EventId != 0) hash ^= EventId.GetHashCode();
       if (SwithId != 0) hash ^= SwithId.GetHashCode();
+      if (FinishLine != false) hash ^= FinishLine.GetHashCode();
       if (Code != 0) hash ^= Code.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -2741,8 +2758,12 @@ namespace LudoQuick {
         output.WriteRawTag(80);
         output.WriteInt32(SwithId);
       }
-      if (Code != 0) {
+      if (FinishLine != false) {
         output.WriteRawTag(88);
+        output.WriteBool(FinishLine);
+      }
+      if (Code != 0) {
+        output.WriteRawTag(96);
         output.WriteInt32(Code);
       }
       if (_unknownFields != null) {
@@ -2794,8 +2815,12 @@ namespace LudoQuick {
         output.WriteRawTag(80);
         output.WriteInt32(SwithId);
       }
-      if (Code != 0) {
+      if (FinishLine != false) {
         output.WriteRawTag(88);
+        output.WriteBool(FinishLine);
+      }
+      if (Code != 0) {
+        output.WriteRawTag(96);
         output.WriteInt32(Code);
       }
       if (_unknownFields != null) {
@@ -2836,6 +2861,9 @@ namespace LudoQuick {
       }
       if (SwithId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(SwithId);
+      }
+      if (FinishLine != false) {
+        size += 1 + 1;
       }
       if (Code != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Code);
@@ -2880,6 +2908,9 @@ namespace LudoQuick {
       }
       if (other.SwithId != 0) {
         SwithId = other.SwithId;
+      }
+      if (other.FinishLine != false) {
+        FinishLine = other.FinishLine;
       }
       if (other.Code != 0) {
         Code = other.Code;
@@ -2939,6 +2970,10 @@ namespace LudoQuick {
             break;
           }
           case 88: {
+            FinishLine = input.ReadBool();
+            break;
+          }
+          case 96: {
             Code = input.ReadInt32();
             break;
           }
@@ -2997,6 +3032,10 @@ namespace LudoQuick {
             break;
           }
           case 88: {
+            FinishLine = input.ReadBool();
+            break;
+          }
+          case 96: {
             Code = input.ReadInt32();
             break;
           }
