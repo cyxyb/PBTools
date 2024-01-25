@@ -149,6 +149,8 @@ enum EMsgIDLogin
 	MsgIDCard_BuyWeekMonthResp					= 135;		//购买周卡月卡返回(MsgGetWeekMonthInfoResp)
 	MsgIDCard_WeekMonthGetAward					= 136;		//周卡月卡领取奖励(MsgWeekMonthGetAward)
 	MsgIDCard_WeekMonthGetAwardResp				= 137;		//周卡月卡领取奖励返回(MsgWeekMonthGetAwardResp)
+	MsgIDShare_BindInviteCode					= 138;		//绑定邀请码
+	MsgIDShare_BindInviteCodeResp				= 139;		//绑定邀请码返回
 }
 
 enum EMsgIDGame

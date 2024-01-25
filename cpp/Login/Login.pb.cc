@@ -1831,6 +1831,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::MsgInfiniteAgentQueryMyInfoResp, cur_rebate_),
   PROTOBUF_FIELD_OFFSET(::MsgInfiniteAgentQueryMyInfoResp, total_rebate_),
   PROTOBUF_FIELD_OFFSET(::MsgInfiniteAgentQueryMyInfoResp, game_rebate_),
+  PROTOBUF_FIELD_OFFSET(::MsgInfiniteAgentQueryMyInfoResp, bind_invite_code_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgInfiniteAgentQuerySubInfo, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1989,17 +1990,17 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 538, -1, sizeof(::MsgInviteUserResp)},
   { 544, -1, sizeof(::MsgQueryCelebrityGoldCoinResp)},
   { 554, -1, sizeof(::MsgInfiniteAgentQueryMyInfoResp)},
-  { 565, -1, sizeof(::MsgInfiniteAgentQuerySubInfo)},
-  { 573, -1, sizeof(::InfiniteAgentQuerySubInfo)},
-  { 584, -1, sizeof(::MsgInfiniteAgentQuerySubInfoResp)},
-  { 592, -1, sizeof(::MsgSetSubAgent)},
-  { 599, -1, sizeof(::MsgSetSubAgentResp)},
-  { 611, -1, sizeof(::MsgRecviveAgentRebateResp)},
-  { 618, -1, sizeof(::MsgWeekMonthInfo)},
-  { 629, -1, sizeof(::MsgWeekMonthCfg)},
-  { 640, -1, sizeof(::MsgGetWeekMonthInfoResp)},
-  { 647, -1, sizeof(::MsgWeekMonthGetAward)},
-  { 653, -1, sizeof(::MsgWeekMonthGetAwardResp)},
+  { 566, -1, sizeof(::MsgInfiniteAgentQuerySubInfo)},
+  { 574, -1, sizeof(::InfiniteAgentQuerySubInfo)},
+  { 585, -1, sizeof(::MsgInfiniteAgentQuerySubInfoResp)},
+  { 593, -1, sizeof(::MsgSetSubAgent)},
+  { 600, -1, sizeof(::MsgSetSubAgentResp)},
+  { 612, -1, sizeof(::MsgRecviveAgentRebateResp)},
+  { 619, -1, sizeof(::MsgWeekMonthInfo)},
+  { 630, -1, sizeof(::MsgWeekMonthCfg)},
+  { 641, -1, sizeof(::MsgGetWeekMonthInfoResp)},
+  { 648, -1, sizeof(::MsgWeekMonthGetAward)},
+  { 654, -1, sizeof(::MsgWeekMonthGetAwardResp)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -2238,39 +2239,40 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "fo\030\001 \003(\0132\022.MsgInviteUserInfo\"y\n\035MsgQuery"
   "CelebrityGoldCoinResp\022\016\n\006avatar\030\001 \001(\t\022\024\n"
   "\014avatar_frame\030\002 \001(\005\022\020\n\010nickname\030\003 \001(\t\022\021\n"
-  "\tgold_coin\030\004 \001(\003\022\r\n\005state\030\005 \001(\010\"\233\001\n\037MsgI"
+  "\tgold_coin\030\004 \001(\003\022\r\n\005state\030\005 \001(\010\"\265\001\n\037MsgI"
   "nfiniteAgentQueryMyInfoResp\022\023\n\013agent_lev"
   "el\030\001 \001(\005\022\023\n\013agent_ratio\030\002 \001(\005\022\017\n\007bind_id"
   "\030\003 \001(\005\022\022\n\ncur_rebate\030\004 \001(\003\022\024\n\014total_reba"
-  "te\030\005 \001(\003\022\023\n\013game_rebate\030\006 \001(\003\"V\n\034MsgInfi"
-  "niteAgentQuerySubInfo\022\017\n\007user_id\030\001 \001(\005\022\024"
-  "\n\014current_page\030\002 \001(\005\022\017\n\007max_row\030\003 \001(\005\"\222\001"
-  "\n\031InfiniteAgentQuerySubInfo\022\017\n\007user_id\030\001"
-  " \001(\005\022\024\n\014subordinates\030\002 \001(\005\022\021\n\ttotal_tax\030"
-  "\003 \001(\003\022\021\n\ttoday_tax\030\004 \001(\003\022\023\n\013today_ratio\030"
-  "\005 \001(\003\022\023\n\013agent_ratio\030\006 \001(\005\"s\n MsgInfinit"
-  "eAgentQuerySubInfoResp\022\023\n\013agent_count\030\001 "
-  "\001(\005\022\020\n\010end_list\030\002 \001(\010\022(\n\004info\030\003 \003(\0132\032.In"
-  "finiteAgentQuerySubInfo\"6\n\016MsgSetSubAgen"
-  "t\022\017\n\007user_id\030\001 \001(\005\022\023\n\013agent_ratio\030\002 \001(\005\""
-  "\231\001\n\022MsgSetSubAgentResp\022\014\n\004code\030\001 \001(\005\022\017\n\007"
-  "user_id\030\002 \001(\005\022\024\n\014subordinates\030\003 \001(\005\022\021\n\tt"
-  "otal_tax\030\004 \001(\003\022\021\n\ttoday_tax\030\005 \001(\003\022\023\n\013tod"
-  "ay_ratio\030\006 \001(\003\022\023\n\013agent_ratio\030\007 \001(\005\"=\n\031M"
-  "sgRecviveAgentRebateResp\022\014\n\004code\030\001 \001(\005\022\022"
-  "\n\ncur_rebate\030\002 \001(\003\"\177\n\020MsgWeekMonthInfo\022\021"
-  "\n\tcard_type\030\001 \001(\005\022\020\n\010buy_time\030\002 \001(\005\022\017\n\007i"
-  "s_pick\030\003 \001(\005\022\r\n\005award\030\004 \001(\005\022\022\n\ncard_leve"
-  "l\030\005 \001(\005\022\022\n\nremain_day\030\006 \001(\005\"\203\001\n\017MsgWeekM"
-  "onthCfg\022\021\n\tcard_type\030\001 \001(\005\022\021\n\tbuy_money\030"
-  "\002 \001(\005\022\r\n\005award\030\003 \001(\005\022\022\n\ncard_level\030\004 \001(\005"
-  "\022\021\n\ttotal_day\030\005 \001(\005\022\024\n\014profit_ratio\030\006 \001("
-  "\005\"e\n\027MsgGetWeekMonthInfoResp\022#\n\tcards_cf"
-  "g\030\001 \003(\0132\020.MsgWeekMonthCfg\022%\n\ncards_info\030"
-  "\002 \003(\0132\021.MsgWeekMonthInfo\")\n\024MsgWeekMonth"
-  "GetAward\022\021\n\tcard_type\030\001 \001(\005\"M\n\030MsgWeekMo"
-  "nthGetAwardResp\022\020\n\010ret_code\030\001 \001(\005\022\r\n\005awa"
-  "rd\030\002 \001(\003\022\020\n\010new_gold\030\003 \001(\003b\006proto3"
+  "te\030\005 \001(\003\022\023\n\013game_rebate\030\006 \001(\003\022\030\n\020bind_in"
+  "vite_code\030\007 \001(\t\"V\n\034MsgInfiniteAgentQuery"
+  "SubInfo\022\017\n\007user_id\030\001 \001(\005\022\024\n\014current_page"
+  "\030\002 \001(\005\022\017\n\007max_row\030\003 \001(\005\"\222\001\n\031InfiniteAgen"
+  "tQuerySubInfo\022\017\n\007user_id\030\001 \001(\005\022\024\n\014subord"
+  "inates\030\002 \001(\005\022\021\n\ttotal_tax\030\003 \001(\003\022\021\n\ttoday"
+  "_tax\030\004 \001(\003\022\023\n\013today_ratio\030\005 \001(\003\022\023\n\013agent"
+  "_ratio\030\006 \001(\005\"s\n MsgInfiniteAgentQuerySub"
+  "InfoResp\022\023\n\013agent_count\030\001 \001(\005\022\020\n\010end_lis"
+  "t\030\002 \001(\010\022(\n\004info\030\003 \003(\0132\032.InfiniteAgentQue"
+  "rySubInfo\"6\n\016MsgSetSubAgent\022\017\n\007user_id\030\001"
+  " \001(\005\022\023\n\013agent_ratio\030\002 \001(\005\"\231\001\n\022MsgSetSubA"
+  "gentResp\022\014\n\004code\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022"
+  "\024\n\014subordinates\030\003 \001(\005\022\021\n\ttotal_tax\030\004 \001(\003"
+  "\022\021\n\ttoday_tax\030\005 \001(\003\022\023\n\013today_ratio\030\006 \001(\003"
+  "\022\023\n\013agent_ratio\030\007 \001(\005\"=\n\031MsgRecviveAgent"
+  "RebateResp\022\014\n\004code\030\001 \001(\005\022\022\n\ncur_rebate\030\002"
+  " \001(\003\"\177\n\020MsgWeekMonthInfo\022\021\n\tcard_type\030\001 "
+  "\001(\005\022\020\n\010buy_time\030\002 \001(\005\022\017\n\007is_pick\030\003 \001(\005\022\r"
+  "\n\005award\030\004 \001(\005\022\022\n\ncard_level\030\005 \001(\005\022\022\n\nrem"
+  "ain_day\030\006 \001(\005\"\203\001\n\017MsgWeekMonthCfg\022\021\n\tcar"
+  "d_type\030\001 \001(\005\022\021\n\tbuy_money\030\002 \001(\005\022\r\n\005award"
+  "\030\003 \001(\005\022\022\n\ncard_level\030\004 \001(\005\022\021\n\ttotal_day\030"
+  "\005 \001(\005\022\024\n\014profit_ratio\030\006 \001(\005\"e\n\027MsgGetWee"
+  "kMonthInfoResp\022#\n\tcards_cfg\030\001 \003(\0132\020.MsgW"
+  "eekMonthCfg\022%\n\ncards_info\030\002 \003(\0132\021.MsgWee"
+  "kMonthInfo\")\n\024MsgWeekMonthGetAward\022\021\n\tca"
+  "rd_type\030\001 \001(\005\"M\n\030MsgWeekMonthGetAwardRes"
+  "p\022\020\n\010ret_code\030\001 \001(\005\022\r\n\005award\030\002 \001(\003\022\020\n\010ne"
+  "w_gold\030\003 \001(\003b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Login_2eproto_deps[1] = {
 };
@@ -2349,7 +2351,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Login_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Login_2eproto = {
-  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 7754,
+  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 7780,
   &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 71, 0,
   schemas, file_default_instances, TableStruct_Login_2eproto::offsets,
   file_level_metadata_Login_2eproto, 71, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
@@ -19962,6 +19964,11 @@ MsgInfiniteAgentQueryMyInfoResp::MsgInfiniteAgentQueryMyInfoResp(::PROTOBUF_NAME
 MsgInfiniteAgentQueryMyInfoResp::MsgInfiniteAgentQueryMyInfoResp(const MsgInfiniteAgentQueryMyInfoResp& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  bind_invite_code_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from._internal_bind_invite_code().empty()) {
+    bind_invite_code_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_bind_invite_code(), 
+      GetArena());
+  }
   ::memcpy(&agent_level_, &from.agent_level_,
     static_cast<size_t>(reinterpret_cast<char*>(&bind_id_) -
     reinterpret_cast<char*>(&agent_level_)) + sizeof(bind_id_));
@@ -19969,6 +19976,8 @@ MsgInfiniteAgentQueryMyInfoResp::MsgInfiniteAgentQueryMyInfoResp(const MsgInfini
 }
 
 void MsgInfiniteAgentQueryMyInfoResp::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgInfiniteAgentQueryMyInfoResp_Login_2eproto.base);
+  bind_invite_code_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&agent_level_) - reinterpret_cast<char*>(this)),
       0, static_cast<size_t>(reinterpret_cast<char*>(&bind_id_) -
@@ -19983,6 +19992,7 @@ MsgInfiniteAgentQueryMyInfoResp::~MsgInfiniteAgentQueryMyInfoResp() {
 
 void MsgInfiniteAgentQueryMyInfoResp::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
+  bind_invite_code_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
 void MsgInfiniteAgentQueryMyInfoResp::ArenaDtor(void* object) {
@@ -20006,6 +20016,7 @@ void MsgInfiniteAgentQueryMyInfoResp::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  bind_invite_code_.ClearToEmpty();
   ::memset(&agent_level_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&bind_id_) -
       reinterpret_cast<char*>(&agent_level_)) + sizeof(bind_id_));
@@ -20058,6 +20069,15 @@ const char* MsgInfiniteAgentQueryMyInfoResp::_InternalParse(const char* ptr, ::P
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
           game_rebate_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string bind_invite_code = 7;
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+          auto str = _internal_mutable_bind_invite_code();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgInfiniteAgentQueryMyInfoResp.bind_invite_code"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -20125,6 +20145,16 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(6, this->_internal_game_rebate(), target);
   }
 
+  // string bind_invite_code = 7;
+  if (this->bind_invite_code().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_bind_invite_code().data(), static_cast<int>(this->_internal_bind_invite_code().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "MsgInfiniteAgentQueryMyInfoResp.bind_invite_code");
+    target = stream->WriteStringMaybeAliased(
+        7, this->_internal_bind_invite_code(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -20140,6 +20170,13 @@ size_t MsgInfiniteAgentQueryMyInfoResp::ByteSizeLong() const {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
+
+  // string bind_invite_code = 7;
+  if (this->bind_invite_code().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_bind_invite_code());
+  }
 
   // int32 agent_level = 1;
   if (this->agent_level() != 0) {
@@ -20214,6 +20251,9 @@ void MsgInfiniteAgentQueryMyInfoResp::MergeFrom(const MsgInfiniteAgentQueryMyInf
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  if (from.bind_invite_code().size() > 0) {
+    _internal_set_bind_invite_code(from._internal_bind_invite_code());
+  }
   if (from.agent_level() != 0) {
     _internal_set_agent_level(from._internal_agent_level());
   }
@@ -20255,6 +20295,7 @@ bool MsgInfiniteAgentQueryMyInfoResp::IsInitialized() const {
 void MsgInfiniteAgentQueryMyInfoResp::InternalSwap(MsgInfiniteAgentQueryMyInfoResp* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  bind_invite_code_.Swap(&other->bind_invite_code_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(MsgInfiniteAgentQueryMyInfoResp, bind_id_)
       + sizeof(MsgInfiniteAgentQueryMyInfoResp::bind_id_)

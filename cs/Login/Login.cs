@@ -166,35 +166,36 @@ public static partial class LoginReflection {
           "Z0ludml0ZVVzZXJJbmZvInkKHU1zZ1F1ZXJ5Q2VsZWJyaXR5R29sZENvaW5S",
           "ZXNwEg4KBmF2YXRhchgBIAEoCRIUCgxhdmF0YXJfZnJhbWUYAiABKAUSEAoI",
           "bmlja25hbWUYAyABKAkSEQoJZ29sZF9jb2luGAQgASgDEg0KBXN0YXRlGAUg",
-          "ASgIIpsBCh9Nc2dJbmZpbml0ZUFnZW50UXVlcnlNeUluZm9SZXNwEhMKC2Fn",
+          "ASgIIrUBCh9Nc2dJbmZpbml0ZUFnZW50UXVlcnlNeUluZm9SZXNwEhMKC2Fn",
           "ZW50X2xldmVsGAEgASgFEhMKC2FnZW50X3JhdGlvGAIgASgFEg8KB2JpbmRf",
           "aWQYAyABKAUSEgoKY3VyX3JlYmF0ZRgEIAEoAxIUCgx0b3RhbF9yZWJhdGUY",
-          "BSABKAMSEwoLZ2FtZV9yZWJhdGUYBiABKAMiVgocTXNnSW5maW5pdGVBZ2Vu",
-          "dFF1ZXJ5U3ViSW5mbxIPCgd1c2VyX2lkGAEgASgFEhQKDGN1cnJlbnRfcGFn",
-          "ZRgCIAEoBRIPCgdtYXhfcm93GAMgASgFIpIBChlJbmZpbml0ZUFnZW50UXVl",
-          "cnlTdWJJbmZvEg8KB3VzZXJfaWQYASABKAUSFAoMc3Vib3JkaW5hdGVzGAIg",
-          "ASgFEhEKCXRvdGFsX3RheBgDIAEoAxIRCgl0b2RheV90YXgYBCABKAMSEwoL",
-          "dG9kYXlfcmF0aW8YBSABKAMSEwoLYWdlbnRfcmF0aW8YBiABKAUicwogTXNn",
-          "SW5maW5pdGVBZ2VudFF1ZXJ5U3ViSW5mb1Jlc3ASEwoLYWdlbnRfY291bnQY",
-          "ASABKAUSEAoIZW5kX2xpc3QYAiABKAgSKAoEaW5mbxgDIAMoCzIaLkluZmlu",
-          "aXRlQWdlbnRRdWVyeVN1YkluZm8iNgoOTXNnU2V0U3ViQWdlbnQSDwoHdXNl",
-          "cl9pZBgBIAEoBRITCgthZ2VudF9yYXRpbxgCIAEoBSKZAQoSTXNnU2V0U3Vi",
-          "QWdlbnRSZXNwEgwKBGNvZGUYASABKAUSDwoHdXNlcl9pZBgCIAEoBRIUCgxz",
-          "dWJvcmRpbmF0ZXMYAyABKAUSEQoJdG90YWxfdGF4GAQgASgDEhEKCXRvZGF5",
-          "X3RheBgFIAEoAxITCgt0b2RheV9yYXRpbxgGIAEoAxITCgthZ2VudF9yYXRp",
-          "bxgHIAEoBSI9ChlNc2dSZWN2aXZlQWdlbnRSZWJhdGVSZXNwEgwKBGNvZGUY",
-          "ASABKAUSEgoKY3VyX3JlYmF0ZRgCIAEoAyJ/ChBNc2dXZWVrTW9udGhJbmZv",
-          "EhEKCWNhcmRfdHlwZRgBIAEoBRIQCghidXlfdGltZRgCIAEoBRIPCgdpc19w",
-          "aWNrGAMgASgFEg0KBWF3YXJkGAQgASgFEhIKCmNhcmRfbGV2ZWwYBSABKAUS",
-          "EgoKcmVtYWluX2RheRgGIAEoBSKDAQoPTXNnV2Vla01vbnRoQ2ZnEhEKCWNh",
-          "cmRfdHlwZRgBIAEoBRIRCglidXlfbW9uZXkYAiABKAUSDQoFYXdhcmQYAyAB",
-          "KAUSEgoKY2FyZF9sZXZlbBgEIAEoBRIRCgl0b3RhbF9kYXkYBSABKAUSFAoM",
-          "cHJvZml0X3JhdGlvGAYgASgFImUKF01zZ0dldFdlZWtNb250aEluZm9SZXNw",
-          "EiMKCWNhcmRzX2NmZxgBIAMoCzIQLk1zZ1dlZWtNb250aENmZxIlCgpjYXJk",
-          "c19pbmZvGAIgAygLMhEuTXNnV2Vla01vbnRoSW5mbyIpChRNc2dXZWVrTW9u",
-          "dGhHZXRBd2FyZBIRCgljYXJkX3R5cGUYASABKAUiTQoYTXNnV2Vla01vbnRo",
-          "R2V0QXdhcmRSZXNwEhAKCHJldF9jb2RlGAEgASgFEg0KBWF3YXJkGAIgASgD",
-          "EhAKCG5ld19nb2xkGAMgASgDYgZwcm90bzM="));
+          "BSABKAMSEwoLZ2FtZV9yZWJhdGUYBiABKAMSGAoQYmluZF9pbnZpdGVfY29k",
+          "ZRgHIAEoCSJWChxNc2dJbmZpbml0ZUFnZW50UXVlcnlTdWJJbmZvEg8KB3Vz",
+          "ZXJfaWQYASABKAUSFAoMY3VycmVudF9wYWdlGAIgASgFEg8KB21heF9yb3cY",
+          "AyABKAUikgEKGUluZmluaXRlQWdlbnRRdWVyeVN1YkluZm8SDwoHdXNlcl9p",
+          "ZBgBIAEoBRIUCgxzdWJvcmRpbmF0ZXMYAiABKAUSEQoJdG90YWxfdGF4GAMg",
+          "ASgDEhEKCXRvZGF5X3RheBgEIAEoAxITCgt0b2RheV9yYXRpbxgFIAEoAxIT",
+          "CgthZ2VudF9yYXRpbxgGIAEoBSJzCiBNc2dJbmZpbml0ZUFnZW50UXVlcnlT",
+          "dWJJbmZvUmVzcBITCgthZ2VudF9jb3VudBgBIAEoBRIQCghlbmRfbGlzdBgC",
+          "IAEoCBIoCgRpbmZvGAMgAygLMhouSW5maW5pdGVBZ2VudFF1ZXJ5U3ViSW5m",
+          "byI2Cg5Nc2dTZXRTdWJBZ2VudBIPCgd1c2VyX2lkGAEgASgFEhMKC2FnZW50",
+          "X3JhdGlvGAIgASgFIpkBChJNc2dTZXRTdWJBZ2VudFJlc3ASDAoEY29kZRgB",
+          "IAEoBRIPCgd1c2VyX2lkGAIgASgFEhQKDHN1Ym9yZGluYXRlcxgDIAEoBRIR",
+          "Cgl0b3RhbF90YXgYBCABKAMSEQoJdG9kYXlfdGF4GAUgASgDEhMKC3RvZGF5",
+          "X3JhdGlvGAYgASgDEhMKC2FnZW50X3JhdGlvGAcgASgFIj0KGU1zZ1JlY3Zp",
+          "dmVBZ2VudFJlYmF0ZVJlc3ASDAoEY29kZRgBIAEoBRISCgpjdXJfcmViYXRl",
+          "GAIgASgDIn8KEE1zZ1dlZWtNb250aEluZm8SEQoJY2FyZF90eXBlGAEgASgF",
+          "EhAKCGJ1eV90aW1lGAIgASgFEg8KB2lzX3BpY2sYAyABKAUSDQoFYXdhcmQY",
+          "BCABKAUSEgoKY2FyZF9sZXZlbBgFIAEoBRISCgpyZW1haW5fZGF5GAYgASgF",
+          "IoMBCg9Nc2dXZWVrTW9udGhDZmcSEQoJY2FyZF90eXBlGAEgASgFEhEKCWJ1",
+          "eV9tb25leRgCIAEoBRINCgVhd2FyZBgDIAEoBRISCgpjYXJkX2xldmVsGAQg",
+          "ASgFEhEKCXRvdGFsX2RheRgFIAEoBRIUCgxwcm9maXRfcmF0aW8YBiABKAUi",
+          "ZQoXTXNnR2V0V2Vla01vbnRoSW5mb1Jlc3ASIwoJY2FyZHNfY2ZnGAEgAygL",
+          "MhAuTXNnV2Vla01vbnRoQ2ZnEiUKCmNhcmRzX2luZm8YAiADKAsyES5Nc2dX",
+          "ZWVrTW9udGhJbmZvIikKFE1zZ1dlZWtNb250aEdldEF3YXJkEhEKCWNhcmRf",
+          "dHlwZRgBIAEoBSJNChhNc2dXZWVrTW9udGhHZXRBd2FyZFJlc3ASEAoIcmV0",
+          "X2NvZGUYASABKAUSDQoFYXdhcmQYAiABKAMSEAoIbmV3X2dvbGQYAyABKANi",
+          "BnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -257,7 +258,7 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgInviteUserInfo), global::MsgInviteUserInfo.Parser, new[]{ "VipLevel", "InviteTime", "BeautifulId", "Nickname" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgInviteUserResp), global::MsgInviteUserResp.Parser, new[]{ "Info" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgQueryCelebrityGoldCoinResp), global::MsgQueryCelebrityGoldCoinResp.Parser, new[]{ "Avatar", "AvatarFrame", "Nickname", "GoldCoin", "State" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgInfiniteAgentQueryMyInfoResp), global::MsgInfiniteAgentQueryMyInfoResp.Parser, new[]{ "AgentLevel", "AgentRatio", "BindId", "CurRebate", "TotalRebate", "GameRebate" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgInfiniteAgentQueryMyInfoResp), global::MsgInfiniteAgentQueryMyInfoResp.Parser, new[]{ "AgentLevel", "AgentRatio", "BindId", "CurRebate", "TotalRebate", "GameRebate", "BindInviteCode" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgInfiniteAgentQuerySubInfo), global::MsgInfiniteAgentQuerySubInfo.Parser, new[]{ "UserId", "CurrentPage", "MaxRow" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::InfiniteAgentQuerySubInfo), global::InfiniteAgentQuerySubInfo.Parser, new[]{ "UserId", "Subordinates", "TotalTax", "TodayTax", "TodayRatio", "AgentRatio" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgInfiniteAgentQuerySubInfoResp), global::MsgInfiniteAgentQuerySubInfoResp.Parser, new[]{ "AgentCount", "EndList", "Info" }, null, null, null, null),
@@ -18351,6 +18352,7 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
     curRebate_ = other.curRebate_;
     totalRebate_ = other.totalRebate_;
     gameRebate_ = other.gameRebate_;
+    bindInviteCode_ = other.bindInviteCode_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
@@ -18433,13 +18435,27 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
   public const int GameRebateFieldNumber = 6;
   private long gameRebate_;
   /// <summary>
-  ///游戏返利	
+  ///游戏返利
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public long GameRebate {
     get { return gameRebate_; }
     set {
       gameRebate_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "bind_invite_code" field.</summary>
+  public const int BindInviteCodeFieldNumber = 7;
+  private string bindInviteCode_ = "";
+  /// <summary>
+  ///上级邀请码
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string BindInviteCode {
+    get { return bindInviteCode_; }
+    set {
+      bindInviteCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
     }
   }
 
@@ -18462,6 +18478,7 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
     if (CurRebate != other.CurRebate) return false;
     if (TotalRebate != other.TotalRebate) return false;
     if (GameRebate != other.GameRebate) return false;
+    if (BindInviteCode != other.BindInviteCode) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
 
@@ -18474,6 +18491,7 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
     if (CurRebate != 0L) hash ^= CurRebate.GetHashCode();
     if (TotalRebate != 0L) hash ^= TotalRebate.GetHashCode();
     if (GameRebate != 0L) hash ^= GameRebate.GetHashCode();
+    if (BindInviteCode.Length != 0) hash ^= BindInviteCode.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -18514,6 +18532,10 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
       output.WriteRawTag(48);
       output.WriteInt64(GameRebate);
     }
+    if (BindInviteCode.Length != 0) {
+      output.WriteRawTag(58);
+      output.WriteString(BindInviteCode);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
     }
@@ -18547,6 +18569,10 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
       output.WriteRawTag(48);
       output.WriteInt64(GameRebate);
     }
+    if (BindInviteCode.Length != 0) {
+      output.WriteRawTag(58);
+      output.WriteString(BindInviteCode);
+    }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
     }
@@ -18573,6 +18599,9 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
     }
     if (GameRebate != 0L) {
       size += 1 + pb::CodedOutputStream.ComputeInt64Size(GameRebate);
+    }
+    if (BindInviteCode.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(BindInviteCode);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -18602,6 +18631,9 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
     }
     if (other.GameRebate != 0L) {
       GameRebate = other.GameRebate;
+    }
+    if (other.BindInviteCode.Length != 0) {
+      BindInviteCode = other.BindInviteCode;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
   }
@@ -18641,6 +18673,10 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
           GameRebate = input.ReadInt64();
           break;
         }
+        case 58: {
+          BindInviteCode = input.ReadString();
+          break;
+        }
       }
     }
   #endif
@@ -18677,6 +18713,10 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
         }
         case 48: {
           GameRebate = input.ReadInt64();
+          break;
+        }
+        case 58: {
+          BindInviteCode = input.ReadString();
           break;
         }
       }

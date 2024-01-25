@@ -11299,6 +11299,7 @@ class MsgInfiniteAgentQueryMyInfoResp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
+    kBindInviteCodeFieldNumber = 7,
     kAgentLevelFieldNumber = 1,
     kAgentRatioFieldNumber = 2,
     kCurRebateFieldNumber = 4,
@@ -11306,6 +11307,22 @@ class MsgInfiniteAgentQueryMyInfoResp PROTOBUF_FINAL :
     kGameRebateFieldNumber = 6,
     kBindIdFieldNumber = 3,
   };
+  // string bind_invite_code = 7;
+  void clear_bind_invite_code();
+  const std::string& bind_invite_code() const;
+  void set_bind_invite_code(const std::string& value);
+  void set_bind_invite_code(std::string&& value);
+  void set_bind_invite_code(const char* value);
+  void set_bind_invite_code(const char* value, size_t size);
+  std::string* mutable_bind_invite_code();
+  std::string* release_bind_invite_code();
+  void set_allocated_bind_invite_code(std::string* bind_invite_code);
+  private:
+  const std::string& _internal_bind_invite_code() const;
+  void _internal_set_bind_invite_code(const std::string& value);
+  std::string* _internal_mutable_bind_invite_code();
+  public:
+
   // int32 agent_level = 1;
   void clear_agent_level();
   ::PROTOBUF_NAMESPACE_ID::int32 agent_level() const;
@@ -11367,6 +11384,7 @@ class MsgInfiniteAgentQueryMyInfoResp PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr bind_invite_code_;
   ::PROTOBUF_NAMESPACE_ID::int32 agent_level_;
   ::PROTOBUF_NAMESPACE_ID::int32 agent_ratio_;
   ::PROTOBUF_NAMESPACE_ID::int64 cur_rebate_;
@@ -21649,6 +21667,67 @@ inline void MsgInfiniteAgentQueryMyInfoResp::_internal_set_game_rebate(::PROTOBU
 inline void MsgInfiniteAgentQueryMyInfoResp::set_game_rebate(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_game_rebate(value);
   // @@protoc_insertion_point(field_set:MsgInfiniteAgentQueryMyInfoResp.game_rebate)
+}
+
+// string bind_invite_code = 7;
+inline void MsgInfiniteAgentQueryMyInfoResp::clear_bind_invite_code() {
+  bind_invite_code_.ClearToEmpty();
+}
+inline const std::string& MsgInfiniteAgentQueryMyInfoResp::bind_invite_code() const {
+  // @@protoc_insertion_point(field_get:MsgInfiniteAgentQueryMyInfoResp.bind_invite_code)
+  return _internal_bind_invite_code();
+}
+inline void MsgInfiniteAgentQueryMyInfoResp::set_bind_invite_code(const std::string& value) {
+  _internal_set_bind_invite_code(value);
+  // @@protoc_insertion_point(field_set:MsgInfiniteAgentQueryMyInfoResp.bind_invite_code)
+}
+inline std::string* MsgInfiniteAgentQueryMyInfoResp::mutable_bind_invite_code() {
+  // @@protoc_insertion_point(field_mutable:MsgInfiniteAgentQueryMyInfoResp.bind_invite_code)
+  return _internal_mutable_bind_invite_code();
+}
+inline const std::string& MsgInfiniteAgentQueryMyInfoResp::_internal_bind_invite_code() const {
+  return bind_invite_code_.Get();
+}
+inline void MsgInfiniteAgentQueryMyInfoResp::_internal_set_bind_invite_code(const std::string& value) {
+  
+  bind_invite_code_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgInfiniteAgentQueryMyInfoResp::set_bind_invite_code(std::string&& value) {
+  
+  bind_invite_code_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgInfiniteAgentQueryMyInfoResp.bind_invite_code)
+}
+inline void MsgInfiniteAgentQueryMyInfoResp::set_bind_invite_code(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  bind_invite_code_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgInfiniteAgentQueryMyInfoResp.bind_invite_code)
+}
+inline void MsgInfiniteAgentQueryMyInfoResp::set_bind_invite_code(const char* value,
+    size_t size) {
+  
+  bind_invite_code_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgInfiniteAgentQueryMyInfoResp.bind_invite_code)
+}
+inline std::string* MsgInfiniteAgentQueryMyInfoResp::_internal_mutable_bind_invite_code() {
+  
+  return bind_invite_code_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgInfiniteAgentQueryMyInfoResp::release_bind_invite_code() {
+  // @@protoc_insertion_point(field_release:MsgInfiniteAgentQueryMyInfoResp.bind_invite_code)
+  return bind_invite_code_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgInfiniteAgentQueryMyInfoResp::set_allocated_bind_invite_code(std::string* bind_invite_code) {
+  if (bind_invite_code != nullptr) {
+    
+  } else {
+    
+  }
+  bind_invite_code_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), bind_invite_code,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgInfiniteAgentQueryMyInfoResp.bind_invite_code)
 }
 
 // -------------------------------------------------------------------

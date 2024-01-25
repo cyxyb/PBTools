@@ -222,12 +222,14 @@ enum EMsgIDLogin : int {
   MsgIDCard_BuyWeekMonthResp = 135,
   MsgIDCard_WeekMonthGetAward = 136,
   MsgIDCard_WeekMonthGetAwardResp = 137,
+  MsgIDShare_BindInviteCode = 138,
+  MsgIDShare_BindInviteCodeResp = 139,
   EMsgIDLogin_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDLogin_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDLogin_IsValid(int value);
 constexpr EMsgIDLogin EMsgIDLogin_MIN = MsgIDLogin_Null;
-constexpr EMsgIDLogin EMsgIDLogin_MAX = MsgIDCard_WeekMonthGetAwardResp;
+constexpr EMsgIDLogin EMsgIDLogin_MAX = MsgIDShare_BindInviteCodeResp;
 constexpr int EMsgIDLogin_ARRAYSIZE = EMsgIDLogin_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDLogin_descriptor();
