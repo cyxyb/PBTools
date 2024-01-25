@@ -956,6 +956,7 @@ class MsgSceneInfo PROTOBUF_FINAL :
     kBetLimitFieldNumber = 3,
     kUpBankerListFieldNumber = 4,
     kMulFieldNumber = 9,
+    kUpbankerGoldsFieldNumber = 11,
     kRedCardsFieldNumber = 20,
     kBlueCardsFieldNumber = 21,
     kPlayerListFieldNumber = 22,
@@ -964,7 +965,6 @@ class MsgSceneInfo PROTOBUF_FINAL :
     kBetTimeFieldNumber = 6,
     kOutTimeFieldNumber = 7,
     kStateFieldNumber = 8,
-    kBankerMinLimitFieldNumber = 11,
     kBankerMaxFieldNumber = 10,
     kBaseCardFieldNumber = 13,
     kRedTotalBetFieldNumber = 14,
@@ -1075,6 +1075,28 @@ class MsgSceneInfo PROTOBUF_FINAL :
       mul() const;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_mul();
+
+  // repeated int64 UpbankerGolds = 11;
+  int upbankergolds_size() const;
+  private:
+  int _internal_upbankergolds_size() const;
+  public:
+  void clear_upbankergolds();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_upbankergolds(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
+      _internal_upbankergolds() const;
+  void _internal_add_upbankergolds(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
+      _internal_mutable_upbankergolds();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int64 upbankergolds(int index) const;
+  void set_upbankergolds(int index, ::PROTOBUF_NAMESPACE_ID::int64 value);
+  void add_upbankergolds(::PROTOBUF_NAMESPACE_ID::int64 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
+      upbankergolds() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
+      mutable_upbankergolds();
 
   // repeated int32 red_cards = 20;
   int red_cards_size() const;
@@ -1192,15 +1214,6 @@ class MsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_state(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int64 banker_min_limit = 11;
-  void clear_banker_min_limit();
-  ::PROTOBUF_NAMESPACE_ID::int64 banker_min_limit() const;
-  void set_banker_min_limit(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_banker_min_limit() const;
-  void _internal_set_banker_min_limit(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
   // int32 banker_max = 10;
   void clear_banker_max();
   ::PROTOBUF_NAMESPACE_ID::int32 banker_max() const;
@@ -1253,6 +1266,8 @@ class MsgSceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::AndarBahar::ABUpWaitBankerInfo > up_banker_list_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > mul_;
   mutable std::atomic<int> _mul_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 > upbankergolds_;
+  mutable std::atomic<int> _upbankergolds_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > red_cards_;
   mutable std::atomic<int> _red_cards_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > blue_cards_;
@@ -1263,7 +1278,6 @@ class MsgSceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 bet_time_;
   ::PROTOBUF_NAMESPACE_ID::int32 out_time_;
   ::PROTOBUF_NAMESPACE_ID::int32 state_;
-  ::PROTOBUF_NAMESPACE_ID::int64 banker_min_limit_;
   ::PROTOBUF_NAMESPACE_ID::int32 banker_max_;
   ::PROTOBUF_NAMESPACE_ID::int32 base_card_;
   ::PROTOBUF_NAMESPACE_ID::int64 red_total_bet_;
@@ -3246,24 +3260,51 @@ inline void MsgSceneInfo::set_banker_max(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:AndarBahar.MsgSceneInfo.banker_max)
 }
 
-// int64 banker_min_limit = 11;
-inline void MsgSceneInfo::clear_banker_min_limit() {
-  banker_min_limit_ = PROTOBUF_LONGLONG(0);
+// repeated int64 UpbankerGolds = 11;
+inline int MsgSceneInfo::_internal_upbankergolds_size() const {
+  return upbankergolds_.size();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSceneInfo::_internal_banker_min_limit() const {
-  return banker_min_limit_;
+inline int MsgSceneInfo::upbankergolds_size() const {
+  return _internal_upbankergolds_size();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSceneInfo::banker_min_limit() const {
-  // @@protoc_insertion_point(field_get:AndarBahar.MsgSceneInfo.banker_min_limit)
-  return _internal_banker_min_limit();
+inline void MsgSceneInfo::clear_upbankergolds() {
+  upbankergolds_.Clear();
 }
-inline void MsgSceneInfo::_internal_set_banker_min_limit(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  
-  banker_min_limit_ = value;
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSceneInfo::_internal_upbankergolds(int index) const {
+  return upbankergolds_.Get(index);
 }
-inline void MsgSceneInfo::set_banker_min_limit(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_banker_min_limit(value);
-  // @@protoc_insertion_point(field_set:AndarBahar.MsgSceneInfo.banker_min_limit)
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgSceneInfo::upbankergolds(int index) const {
+  // @@protoc_insertion_point(field_get:AndarBahar.MsgSceneInfo.UpbankerGolds)
+  return _internal_upbankergolds(index);
+}
+inline void MsgSceneInfo::set_upbankergolds(int index, ::PROTOBUF_NAMESPACE_ID::int64 value) {
+  upbankergolds_.Set(index, value);
+  // @@protoc_insertion_point(field_set:AndarBahar.MsgSceneInfo.UpbankerGolds)
+}
+inline void MsgSceneInfo::_internal_add_upbankergolds(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  upbankergolds_.Add(value);
+}
+inline void MsgSceneInfo::add_upbankergolds(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_add_upbankergolds(value);
+  // @@protoc_insertion_point(field_add:AndarBahar.MsgSceneInfo.UpbankerGolds)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
+MsgSceneInfo::_internal_upbankergolds() const {
+  return upbankergolds_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
+MsgSceneInfo::upbankergolds() const {
+  // @@protoc_insertion_point(field_list:AndarBahar.MsgSceneInfo.UpbankerGolds)
+  return _internal_upbankergolds();
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
+MsgSceneInfo::_internal_mutable_upbankergolds() {
+  return &upbankergolds_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
+MsgSceneInfo::mutable_upbankergolds() {
+  // @@protoc_insertion_point(field_mutable_list:AndarBahar.MsgSceneInfo.UpbankerGolds)
+  return _internal_mutable_upbankergolds();
 }
 
 // .AndarBahar.ABBankerInfo banker_info = 12;
