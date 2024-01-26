@@ -33,39 +33,42 @@ namespace LudoQuick {
             "CGdvbGRfYmFnGAMgASgFEgwKBHByb3AYBCABKAUSDgoGc3dpdGNoGAUgASgF",
             "EhIKCmluZmxlY3Rpb24YBiABKAUSEQoJbmV4dF9wb3MxGAcgASgFEhEKCW5l",
             "eHRfcG9zMhgIIAEoBRITCgtzdGFydF9wb2ludBgJIAEoBRIRCgllbmRfcG9p",
-            "bnQYCiABKAUifAoQTXNnU2NlbmVJbmZvUmVzcBISCgpnYW1lX3N0YXRlGAEg",
-            "ASgFEhQKDGN1cnJlbnRfdXNlchgCIAEoBRIWCg50aW1lX3JlbWFpbmluZxgD",
-            "IAEoBRImCgl1c2VyX2luZm8YBCADKAsyEy5MdWRvUXVpY2suVXNlckluZm8i",
-            "MgoPTXNnTm90aWNlT3BSZXNwEhAKCGNoYWlyX2lkGAEgASgFEg0KBXRpbWVz",
-            "GAIgASgFIjcKEE1zZ1Rocm93RGljZVJlc3ASEAoIY2hhaXJfaWQYASABKAUS",
-            "EQoJZGljZV9yb2xsGAIgASgFIkgKD01zZ09wZXJhdGVDaGVzcxIQCghjaGFp",
-            "cl9pZBgBIAEoBRIQCghjaGVzc19pZBgCIAEoBRIRCglpc191bmxvY2sYAyAB",
-            "KAgiRwoPTXNnVHJpZ2dlckV2ZW50EhAKCGNoYWlyX2lkGAEgASgFEhAKCGNo",
-            "ZXNzX2lkGAIgASgFEhAKCGV2ZW50X2lkGAMgASgFIukBChBNc2dDaGVzc0lu",
-            "Zm9SZXNwEhAKCGNoYWlyX2lkGAEgASgFEhAKCGNoZXNzX2lkGAIgASgFEhEK",
-            "CWlzX3VubG9jaxgDIAEoCBIRCgliYWdfY291bnQYBCABKAUSDQoFcmV0cnkY",
-            "BSABKAUSDgoGbWFwX2lkGAYgASgFEhIKCmVuZF9tYXBfaWQYByABKAUSEQoJ",
-            "cm91dGVfbnVtGAggASgFEhAKCGV2ZW50X2lkGAkgASgFEhAKCHN3aXRoX2lk",
-            "GAogASgFEhMKC2ZpbmlzaF9saW5lGAsgASgIEgwKBGNvZGUYDCABKAUikgEK",
-            "CkdhbWVSZXN1bHQSEAoIY2hhaXJfaWQYASABKAUSJgoJdXNlcl9pbmZvGAIg",
-            "ASgLMhMuTHVkb1F1aWNrLlVzZXJJbmZvEhEKCXVzZXJfZ29sZBgDIAEoAxIL",
-            "CgN3aW4YBCABKAMSCwoDYmV0GAUgASgDEgsKA2JhZxgGIAEoAxIQCghiYWdf",
-            "YmFjaxgHIAEoAyI2Cg1Nc2dSZXN1bHRSZXNwEiUKBnJlc3VsdBgBIAMoCzIV",
-            "Lkx1ZG9RdWljay5HYW1lUmVzdWx0KrICCg9FTXNnSURMdWRvUXVpY2sSFgoS",
-            "TXNnSURfRmlyc3RQdWJsaXNoEAASFwoTU1VCX1NDX0ZpcnN0UHVibGlzaBAB",
-            "EhMKD1NVQl9TQ19Ob3RpY2VPcBACEhMKD1NVQl9DU19EaWNlSW5mbxADEhQK",
-            "EFNVQl9TQ19UaHJvd0RpY2UQBBIXChNTVUJfQ1NfT3BlcmF0ZUNoZXNzEAUS",
-            "FAoQU1VCX1NDX0NoZXNzSW5mbxAGEhcKE1NVQl9DU19UcmlnZ2VyRXZlbnQQ",
-            "BxIVChFTVUJfU0NfR2FtZVJlc3VsdBAJEhMKD1NVQl9DU19PcHRpb25hbBAK",
-            "EhEKDVNVQl9DU19HaXZlVXAQCxIXChNTVUJfU0NfR2l2ZVVwUmVzdWx0EAwS",
-            "DgoKU1VCX1NDX0VSUhANYgZwcm90bzM="));
+            "bnQYCiABKAUiKAoKTWFwQmFnSW5mbxILCgNwb3MYASABKAUSDQoFY291bnQY",
+            "AiABKAUiugEKEE1zZ1NjZW5lSW5mb1Jlc3ASEgoKZ2FtZV9zdGF0ZRgBIAEo",
+            "BRIUCgxjdXJyZW50X3VzZXIYAiABKAUSFAoMY3VycmVudF9kaWNlGAMgASgF",
+            "EhYKDnRpbWVfcmVtYWluaW5nGAQgASgFEiYKB21hcF9iYWcYBSADKAsyFS5M",
+            "dWRvUXVpY2suTWFwQmFnSW5mbxImCgl1c2VyX2luZm8YBiADKAsyEy5MdWRv",
+            "UXVpY2suVXNlckluZm8iMgoPTXNnTm90aWNlT3BSZXNwEhAKCGNoYWlyX2lk",
+            "GAEgASgFEg0KBXRpbWVzGAIgASgFIjcKEE1zZ1Rocm93RGljZVJlc3ASEAoI",
+            "Y2hhaXJfaWQYASABKAUSEQoJZGljZV9yb2xsGAIgASgFIkgKD01zZ09wZXJh",
+            "dGVDaGVzcxIQCghjaGFpcl9pZBgBIAEoBRIQCghjaGVzc19pZBgCIAEoBRIR",
+            "Cglpc191bmxvY2sYAyABKAgiRwoPTXNnVHJpZ2dlckV2ZW50EhAKCGNoYWly",
+            "X2lkGAEgASgFEhAKCGNoZXNzX2lkGAIgASgFEhAKCGV2ZW50X2lkGAMgASgF",
+            "IukBChBNc2dDaGVzc0luZm9SZXNwEhAKCGNoYWlyX2lkGAEgASgFEhAKCGNo",
+            "ZXNzX2lkGAIgASgFEhEKCWlzX3VubG9jaxgDIAEoCBIRCgliYWdfY291bnQY",
+            "BCABKAUSDQoFcmV0cnkYBSABKAUSDgoGbWFwX2lkGAYgASgFEhIKCmVuZF9t",
+            "YXBfaWQYByABKAUSEQoJcm91dGVfbnVtGAggASgFEhAKCGV2ZW50X2lkGAkg",
+            "ASgFEhAKCHN3aXRoX2lkGAogASgFEhMKC2ZpbmlzaF9saW5lGAsgASgIEgwK",
+            "BGNvZGUYDCABKAUikgEKCkdhbWVSZXN1bHQSEAoIY2hhaXJfaWQYASABKAUS",
+            "JgoJdXNlcl9pbmZvGAIgASgLMhMuTHVkb1F1aWNrLlVzZXJJbmZvEhEKCXVz",
+            "ZXJfZ29sZBgDIAEoAxILCgN3aW4YBCABKAMSCwoDYmV0GAUgASgDEgsKA2Jh",
+            "ZxgGIAEoAxIQCghiYWdfYmFjaxgHIAEoAyI2Cg1Nc2dSZXN1bHRSZXNwEiUK",
+            "BnJlc3VsdBgBIAMoCzIVLkx1ZG9RdWljay5HYW1lUmVzdWx0KrICCg9FTXNn",
+            "SURMdWRvUXVpY2sSFgoSTXNnSURfRmlyc3RQdWJsaXNoEAASFwoTU1VCX1ND",
+            "X0ZpcnN0UHVibGlzaBABEhMKD1NVQl9TQ19Ob3RpY2VPcBACEhMKD1NVQl9D",
+            "U19EaWNlSW5mbxADEhQKEFNVQl9TQ19UaHJvd0RpY2UQBBIXChNTVUJfQ1Nf",
+            "T3BlcmF0ZUNoZXNzEAUSFAoQU1VCX1NDX0NoZXNzSW5mbxAGEhcKE1NVQl9D",
+            "U19UcmlnZ2VyRXZlbnQQBxIVChFTVUJfU0NfR2FtZVJlc3VsdBAJEhMKD1NV",
+            "Ql9DU19PcHRpb25hbBAKEhEKDVNVQl9DU19HaXZlVXAQCxIXChNTVUJfU0Nf",
+            "R2l2ZVVwUmVzdWx0EAwSDgoKU1VCX1NDX0VSUhANYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::LudoQuick.EMsgIDLudoQuick), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.RouteInfo), global::LudoQuick.RouteInfo.Parser, new[]{ "ChessId", "GoldBag", "Pos" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.UserInfo), global::LudoQuick.UserInfo.Parser, new[]{ "ChairId", "RouteInfo", "FinishLineSwitch", "End" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.ChessGrid), global::LudoQuick.ChessGrid.Parser, new[]{ "PosId", "SafeHouse", "GoldBag", "Prop", "Switch", "Inflection", "NextPos1", "NextPos2", "StartPoint", "EndPoint" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgSceneInfoResp), global::LudoQuick.MsgSceneInfoResp.Parser, new[]{ "GameState", "CurrentUser", "TimeRemaining", "UserInfo" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MapBagInfo), global::LudoQuick.MapBagInfo.Parser, new[]{ "Pos", "Count" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgSceneInfoResp), global::LudoQuick.MsgSceneInfoResp.Parser, new[]{ "GameState", "CurrentUser", "CurrentDice", "TimeRemaining", "MapBag", "UserInfo" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgNoticeOpResp), global::LudoQuick.MsgNoticeOpResp.Parser, new[]{ "ChairId", "Times" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgThrowDiceResp), global::LudoQuick.MsgThrowDiceResp.Parser, new[]{ "ChairId", "DiceRoll" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgOperateChess), global::LudoQuick.MsgOperateChess.Parser, new[]{ "ChairId", "ChessId", "IsUnlock" }, null, null, null, null),
@@ -1210,6 +1213,223 @@ namespace LudoQuick {
   }
 
   /// <summary>
+  ///地图钱袋信息
+  /// </summary>
+  public sealed partial class MapBagInfo : pb::IMessage<MapBagInfo>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<MapBagInfo> _parser = new pb::MessageParser<MapBagInfo>(() => new MapBagInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<MapBagInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::LudoQuick.LudoQuickReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MapBagInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MapBagInfo(MapBagInfo other) : this() {
+      pos_ = other.pos_;
+      count_ = other.count_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public MapBagInfo Clone() {
+      return new MapBagInfo(this);
+    }
+
+    /// <summary>Field number for the "pos" field.</summary>
+    public const int PosFieldNumber = 1;
+    private int pos_;
+    /// <summary>
+    ///位置
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Pos {
+      get { return pos_; }
+      set {
+        pos_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "count" field.</summary>
+    public const int CountFieldNumber = 2;
+    private int count_;
+    /// <summary>
+    ///个数
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Count {
+      get { return count_; }
+      set {
+        count_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as MapBagInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(MapBagInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Pos != other.Pos) return false;
+      if (Count != other.Count) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Pos != 0) hash ^= Pos.GetHashCode();
+      if (Count != 0) hash ^= Count.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Pos != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Pos);
+      }
+      if (Count != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Count);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Pos != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(Pos);
+      }
+      if (Count != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Count);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Pos != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Pos);
+      }
+      if (Count != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Count);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(MapBagInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Pos != 0) {
+        Pos = other.Pos;
+      }
+      if (other.Count != 0) {
+        Count = other.Count;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Pos = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            Count = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Pos = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            Count = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
   ///场景消息
   /// </summary>
   public sealed partial class MsgSceneInfoResp : pb::IMessage<MsgSceneInfoResp>
@@ -1224,7 +1444,7 @@ namespace LudoQuick {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::LudoQuick.LudoQuickReflection.Descriptor.MessageTypes[3]; }
+      get { return global::LudoQuick.LudoQuickReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1243,7 +1463,9 @@ namespace LudoQuick {
     public MsgSceneInfoResp(MsgSceneInfoResp other) : this() {
       gameState_ = other.gameState_;
       currentUser_ = other.currentUser_;
+      currentDice_ = other.currentDice_;
       timeRemaining_ = other.timeRemaining_;
+      mapBag_ = other.mapBag_.Clone();
       userInfo_ = other.userInfo_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -1281,8 +1503,22 @@ namespace LudoQuick {
       }
     }
 
+    /// <summary>Field number for the "current_dice" field.</summary>
+    public const int CurrentDiceFieldNumber = 3;
+    private int currentDice_;
+    /// <summary>
+    ///当前骰子点数
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CurrentDice {
+      get { return currentDice_; }
+      set {
+        currentDice_ = value;
+      }
+    }
+
     /// <summary>Field number for the "time_remaining" field.</summary>
-    public const int TimeRemainingFieldNumber = 3;
+    public const int TimeRemainingFieldNumber = 4;
     private int timeRemaining_;
     /// <summary>
     ///剩余时间
@@ -1295,10 +1531,23 @@ namespace LudoQuick {
       }
     }
 
+    /// <summary>Field number for the "map_bag" field.</summary>
+    public const int MapBagFieldNumber = 5;
+    private static readonly pb::FieldCodec<global::LudoQuick.MapBagInfo> _repeated_mapBag_codec
+        = pb::FieldCodec.ForMessage(42, global::LudoQuick.MapBagInfo.Parser);
+    private readonly pbc::RepeatedField<global::LudoQuick.MapBagInfo> mapBag_ = new pbc::RepeatedField<global::LudoQuick.MapBagInfo>();
+    /// <summary>
+    ///地图钱袋信息
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::LudoQuick.MapBagInfo> MapBag {
+      get { return mapBag_; }
+    }
+
     /// <summary>Field number for the "user_info" field.</summary>
-    public const int UserInfoFieldNumber = 4;
+    public const int UserInfoFieldNumber = 6;
     private static readonly pb::FieldCodec<global::LudoQuick.UserInfo> _repeated_userInfo_codec
-        = pb::FieldCodec.ForMessage(34, global::LudoQuick.UserInfo.Parser);
+        = pb::FieldCodec.ForMessage(50, global::LudoQuick.UserInfo.Parser);
     private readonly pbc::RepeatedField<global::LudoQuick.UserInfo> userInfo_ = new pbc::RepeatedField<global::LudoQuick.UserInfo>();
     /// <summary>
     ///用户信息
@@ -1323,7 +1572,9 @@ namespace LudoQuick {
       }
       if (GameState != other.GameState) return false;
       if (CurrentUser != other.CurrentUser) return false;
+      if (CurrentDice != other.CurrentDice) return false;
       if (TimeRemaining != other.TimeRemaining) return false;
+      if(!mapBag_.Equals(other.mapBag_)) return false;
       if(!userInfo_.Equals(other.userInfo_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1333,7 +1584,9 @@ namespace LudoQuick {
       int hash = 1;
       if (GameState != 0) hash ^= GameState.GetHashCode();
       if (CurrentUser != 0) hash ^= CurrentUser.GetHashCode();
+      if (CurrentDice != 0) hash ^= CurrentDice.GetHashCode();
       if (TimeRemaining != 0) hash ^= TimeRemaining.GetHashCode();
+      hash ^= mapBag_.GetHashCode();
       hash ^= userInfo_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1359,10 +1612,15 @@ namespace LudoQuick {
         output.WriteRawTag(16);
         output.WriteInt32(CurrentUser);
       }
-      if (TimeRemaining != 0) {
+      if (CurrentDice != 0) {
         output.WriteRawTag(24);
+        output.WriteInt32(CurrentDice);
+      }
+      if (TimeRemaining != 0) {
+        output.WriteRawTag(32);
         output.WriteInt32(TimeRemaining);
       }
+      mapBag_.WriteTo(output, _repeated_mapBag_codec);
       userInfo_.WriteTo(output, _repeated_userInfo_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1381,10 +1639,15 @@ namespace LudoQuick {
         output.WriteRawTag(16);
         output.WriteInt32(CurrentUser);
       }
-      if (TimeRemaining != 0) {
+      if (CurrentDice != 0) {
         output.WriteRawTag(24);
+        output.WriteInt32(CurrentDice);
+      }
+      if (TimeRemaining != 0) {
+        output.WriteRawTag(32);
         output.WriteInt32(TimeRemaining);
       }
+      mapBag_.WriteTo(ref output, _repeated_mapBag_codec);
       userInfo_.WriteTo(ref output, _repeated_userInfo_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1401,9 +1664,13 @@ namespace LudoQuick {
       if (CurrentUser != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(CurrentUser);
       }
+      if (CurrentDice != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CurrentDice);
+      }
       if (TimeRemaining != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(TimeRemaining);
       }
+      size += mapBag_.CalculateSize(_repeated_mapBag_codec);
       size += userInfo_.CalculateSize(_repeated_userInfo_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1422,9 +1689,13 @@ namespace LudoQuick {
       if (other.CurrentUser != 0) {
         CurrentUser = other.CurrentUser;
       }
+      if (other.CurrentDice != 0) {
+        CurrentDice = other.CurrentDice;
+      }
       if (other.TimeRemaining != 0) {
         TimeRemaining = other.TimeRemaining;
       }
+      mapBag_.Add(other.mapBag_);
       userInfo_.Add(other.userInfo_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1449,10 +1720,18 @@ namespace LudoQuick {
             break;
           }
           case 24: {
+            CurrentDice = input.ReadInt32();
+            break;
+          }
+          case 32: {
             TimeRemaining = input.ReadInt32();
             break;
           }
-          case 34: {
+          case 42: {
+            mapBag_.AddEntriesFrom(input, _repeated_mapBag_codec);
+            break;
+          }
+          case 50: {
             userInfo_.AddEntriesFrom(input, _repeated_userInfo_codec);
             break;
           }
@@ -1479,10 +1758,18 @@ namespace LudoQuick {
             break;
           }
           case 24: {
+            CurrentDice = input.ReadInt32();
+            break;
+          }
+          case 32: {
             TimeRemaining = input.ReadInt32();
             break;
           }
-          case 34: {
+          case 42: {
+            mapBag_.AddEntriesFrom(ref input, _repeated_mapBag_codec);
+            break;
+          }
+          case 50: {
             userInfo_.AddEntriesFrom(ref input, _repeated_userInfo_codec);
             break;
           }
@@ -1508,7 +1795,7 @@ namespace LudoQuick {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::LudoQuick.LudoQuickReflection.Descriptor.MessageTypes[4]; }
+      get { return global::LudoQuick.LudoQuickReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1725,7 +2012,7 @@ namespace LudoQuick {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::LudoQuick.LudoQuickReflection.Descriptor.MessageTypes[5]; }
+      get { return global::LudoQuick.LudoQuickReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1942,7 +2229,7 @@ namespace LudoQuick {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::LudoQuick.LudoQuickReflection.Descriptor.MessageTypes[6]; }
+      get { return global::LudoQuick.LudoQuickReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2198,7 +2485,7 @@ namespace LudoQuick {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::LudoQuick.LudoQuickReflection.Descriptor.MessageTypes[7]; }
+      get { return global::LudoQuick.LudoQuickReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2454,7 +2741,7 @@ namespace LudoQuick {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::LudoQuick.LudoQuickReflection.Descriptor.MessageTypes[8]; }
+      get { return global::LudoQuick.LudoQuickReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3061,7 +3348,7 @@ namespace LudoQuick {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::LudoQuick.LudoQuickReflection.Descriptor.MessageTypes[9]; }
+      get { return global::LudoQuick.LudoQuickReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3482,7 +3769,7 @@ namespace LudoQuick {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::LudoQuick.LudoQuickReflection.Descriptor.MessageTypes[10]; }
+      get { return global::LudoQuick.LudoQuickReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

@@ -49,13 +49,22 @@ message ChessGrid
 	int32 end_point 	= 10;	//终点
 }
 
+//地图钱袋信息
+message MapBagInfo
+{
+	int32 pos			= 1;			//位置
+	int32 count			= 2;			//个数
+}
+
 //场景消息
 message	MsgSceneInfoResp
 {
 	int32 game_state 					= 1;//游戏状态 0：选场 1：操作骰子 2：操作棋子 3：结算
 	int32 current_user 					= 2;//当前操作玩家
-	int32 time_remaining 				= 3;//剩余时间
-	repeated UserInfo user_info	 		= 4;//用户信息
+	int32 current_dice 					= 3;//当前骰子点数
+	int32 time_remaining 				= 4;//剩余时间
+	repeated MapBagInfo map_bag 		= 5;//地图钱袋信息
+	repeated UserInfo user_info	 		= 6;//用户信息
 }
 //通知操作
 message MsgNoticeOpResp

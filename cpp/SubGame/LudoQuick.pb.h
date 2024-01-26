@@ -47,7 +47,7 @@ struct TableStruct_LudoQuick_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[11]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[12]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -61,6 +61,9 @@ extern ChessGridDefaultTypeInternal _ChessGrid_default_instance_;
 class GameResult;
 class GameResultDefaultTypeInternal;
 extern GameResultDefaultTypeInternal _GameResult_default_instance_;
+class MapBagInfo;
+class MapBagInfoDefaultTypeInternal;
+extern MapBagInfoDefaultTypeInternal _MapBagInfo_default_instance_;
 class MsgChessInfoResp;
 class MsgChessInfoRespDefaultTypeInternal;
 extern MsgChessInfoRespDefaultTypeInternal _MsgChessInfoResp_default_instance_;
@@ -92,6 +95,7 @@ extern UserInfoDefaultTypeInternal _UserInfo_default_instance_;
 PROTOBUF_NAMESPACE_OPEN
 template<> ::LudoQuick::ChessGrid* Arena::CreateMaybeMessage<::LudoQuick::ChessGrid>(Arena*);
 template<> ::LudoQuick::GameResult* Arena::CreateMaybeMessage<::LudoQuick::GameResult>(Arena*);
+template<> ::LudoQuick::MapBagInfo* Arena::CreateMaybeMessage<::LudoQuick::MapBagInfo>(Arena*);
 template<> ::LudoQuick::MsgChessInfoResp* Arena::CreateMaybeMessage<::LudoQuick::MsgChessInfoResp>(Arena*);
 template<> ::LudoQuick::MsgNoticeOpResp* Arena::CreateMaybeMessage<::LudoQuick::MsgNoticeOpResp>(Arena*);
 template<> ::LudoQuick::MsgOperateChess* Arena::CreateMaybeMessage<::LudoQuick::MsgOperateChess>(Arena*);
@@ -713,6 +717,153 @@ class ChessGrid PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
+class MapBagInfo PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LudoQuick.MapBagInfo) */ {
+ public:
+  inline MapBagInfo() : MapBagInfo(nullptr) {}
+  virtual ~MapBagInfo();
+
+  MapBagInfo(const MapBagInfo& from);
+  MapBagInfo(MapBagInfo&& from) noexcept
+    : MapBagInfo() {
+    *this = ::std::move(from);
+  }
+
+  inline MapBagInfo& operator=(const MapBagInfo& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MapBagInfo& operator=(MapBagInfo&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MapBagInfo& default_instance();
+
+  static inline const MapBagInfo* internal_default_instance() {
+    return reinterpret_cast<const MapBagInfo*>(
+               &_MapBagInfo_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    3;
+
+  friend void swap(MapBagInfo& a, MapBagInfo& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MapBagInfo* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MapBagInfo* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MapBagInfo* New() const final {
+    return CreateMaybeMessage<MapBagInfo>(nullptr);
+  }
+
+  MapBagInfo* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MapBagInfo>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MapBagInfo& from);
+  void MergeFrom(const MapBagInfo& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MapBagInfo* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "LudoQuick.MapBagInfo";
+  }
+  protected:
+  explicit MapBagInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_LudoQuick_2eproto);
+    return ::descriptor_table_LudoQuick_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kPosFieldNumber = 1,
+    kCountFieldNumber = 2,
+  };
+  // int32 pos = 1;
+  void clear_pos();
+  ::PROTOBUF_NAMESPACE_ID::int32 pos() const;
+  void set_pos(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_pos() const;
+  void _internal_set_pos(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 count = 2;
+  void clear_count();
+  ::PROTOBUF_NAMESPACE_ID::int32 count() const;
+  void set_count(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_count() const;
+  void _internal_set_count(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:LudoQuick.MapBagInfo)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 pos_;
+  ::PROTOBUF_NAMESPACE_ID::int32 count_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_LudoQuick_2eproto;
+};
+// -------------------------------------------------------------------
+
 class MsgSceneInfoResp PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LudoQuick.MsgSceneInfoResp) */ {
  public:
@@ -754,7 +905,7 @@ class MsgSceneInfoResp PROTOBUF_FINAL :
                &_MsgSceneInfoResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    3;
+    4;
 
   friend void swap(MsgSceneInfoResp& a, MsgSceneInfoResp& b) {
     a.Swap(&b);
@@ -825,12 +976,32 @@ class MsgSceneInfoResp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kUserInfoFieldNumber = 4,
+    kMapBagFieldNumber = 5,
+    kUserInfoFieldNumber = 6,
     kGameStateFieldNumber = 1,
     kCurrentUserFieldNumber = 2,
-    kTimeRemainingFieldNumber = 3,
+    kCurrentDiceFieldNumber = 3,
+    kTimeRemainingFieldNumber = 4,
   };
-  // repeated .LudoQuick.UserInfo user_info = 4;
+  // repeated .LudoQuick.MapBagInfo map_bag = 5;
+  int map_bag_size() const;
+  private:
+  int _internal_map_bag_size() const;
+  public:
+  void clear_map_bag();
+  ::LudoQuick::MapBagInfo* mutable_map_bag(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LudoQuick::MapBagInfo >*
+      mutable_map_bag();
+  private:
+  const ::LudoQuick::MapBagInfo& _internal_map_bag(int index) const;
+  ::LudoQuick::MapBagInfo* _internal_add_map_bag();
+  public:
+  const ::LudoQuick::MapBagInfo& map_bag(int index) const;
+  ::LudoQuick::MapBagInfo* add_map_bag();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LudoQuick::MapBagInfo >&
+      map_bag() const;
+
+  // repeated .LudoQuick.UserInfo user_info = 6;
   int user_info_size() const;
   private:
   int _internal_user_info_size() const;
@@ -866,7 +1037,16 @@ class MsgSceneInfoResp PROTOBUF_FINAL :
   void _internal_set_current_user(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 time_remaining = 3;
+  // int32 current_dice = 3;
+  void clear_current_dice();
+  ::PROTOBUF_NAMESPACE_ID::int32 current_dice() const;
+  void set_current_dice(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_current_dice() const;
+  void _internal_set_current_dice(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 time_remaining = 4;
   void clear_time_remaining();
   ::PROTOBUF_NAMESPACE_ID::int32 time_remaining() const;
   void set_time_remaining(::PROTOBUF_NAMESPACE_ID::int32 value);
@@ -882,9 +1062,11 @@ class MsgSceneInfoResp PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LudoQuick::MapBagInfo > map_bag_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LudoQuick::UserInfo > user_info_;
   ::PROTOBUF_NAMESPACE_ID::int32 game_state_;
   ::PROTOBUF_NAMESPACE_ID::int32 current_user_;
+  ::PROTOBUF_NAMESPACE_ID::int32 current_dice_;
   ::PROTOBUF_NAMESPACE_ID::int32 time_remaining_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_LudoQuick_2eproto;
@@ -932,7 +1114,7 @@ class MsgNoticeOpResp PROTOBUF_FINAL :
                &_MsgNoticeOpResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    4;
+    5;
 
   friend void swap(MsgNoticeOpResp& a, MsgNoticeOpResp& b) {
     a.Swap(&b);
@@ -1079,7 +1261,7 @@ class MsgThrowDiceResp PROTOBUF_FINAL :
                &_MsgThrowDiceResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    5;
+    6;
 
   friend void swap(MsgThrowDiceResp& a, MsgThrowDiceResp& b) {
     a.Swap(&b);
@@ -1226,7 +1408,7 @@ class MsgOperateChess PROTOBUF_FINAL :
                &_MsgOperateChess_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    6;
+    7;
 
   friend void swap(MsgOperateChess& a, MsgOperateChess& b) {
     a.Swap(&b);
@@ -1384,7 +1566,7 @@ class MsgTriggerEvent PROTOBUF_FINAL :
                &_MsgTriggerEvent_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    7;
+    8;
 
   friend void swap(MsgTriggerEvent& a, MsgTriggerEvent& b) {
     a.Swap(&b);
@@ -1542,7 +1724,7 @@ class MsgChessInfoResp PROTOBUF_FINAL :
                &_MsgChessInfoResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    9;
 
   friend void swap(MsgChessInfoResp& a, MsgChessInfoResp& b) {
     a.Swap(&b);
@@ -1799,7 +1981,7 @@ class GameResult PROTOBUF_FINAL :
                &_GameResult_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    10;
 
   friend void swap(GameResult& a, GameResult& b) {
     a.Swap(&b);
@@ -2010,7 +2192,7 @@ class MsgResultResp PROTOBUF_FINAL :
                &_MsgResultResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    11;
 
   friend void swap(MsgResultResp& a, MsgResultResp& b) {
     a.Swap(&b);
@@ -2492,6 +2674,50 @@ inline void ChessGrid::set_end_point(::PROTOBUF_NAMESPACE_ID::int32 value) {
 
 // -------------------------------------------------------------------
 
+// MapBagInfo
+
+// int32 pos = 1;
+inline void MapBagInfo::clear_pos() {
+  pos_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MapBagInfo::_internal_pos() const {
+  return pos_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MapBagInfo::pos() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.MapBagInfo.pos)
+  return _internal_pos();
+}
+inline void MapBagInfo::_internal_set_pos(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  pos_ = value;
+}
+inline void MapBagInfo::set_pos(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_pos(value);
+  // @@protoc_insertion_point(field_set:LudoQuick.MapBagInfo.pos)
+}
+
+// int32 count = 2;
+inline void MapBagInfo::clear_count() {
+  count_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MapBagInfo::_internal_count() const {
+  return count_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MapBagInfo::count() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.MapBagInfo.count)
+  return _internal_count();
+}
+inline void MapBagInfo::_internal_set_count(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  count_ = value;
+}
+inline void MapBagInfo::set_count(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_count(value);
+  // @@protoc_insertion_point(field_set:LudoQuick.MapBagInfo.count)
+}
+
+// -------------------------------------------------------------------
+
 // MsgSceneInfoResp
 
 // int32 game_state = 1;
@@ -2534,7 +2760,27 @@ inline void MsgSceneInfoResp::set_current_user(::PROTOBUF_NAMESPACE_ID::int32 va
   // @@protoc_insertion_point(field_set:LudoQuick.MsgSceneInfoResp.current_user)
 }
 
-// int32 time_remaining = 3;
+// int32 current_dice = 3;
+inline void MsgSceneInfoResp::clear_current_dice() {
+  current_dice_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfoResp::_internal_current_dice() const {
+  return current_dice_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgSceneInfoResp::current_dice() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.MsgSceneInfoResp.current_dice)
+  return _internal_current_dice();
+}
+inline void MsgSceneInfoResp::_internal_set_current_dice(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  current_dice_ = value;
+}
+inline void MsgSceneInfoResp::set_current_dice(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_current_dice(value);
+  // @@protoc_insertion_point(field_set:LudoQuick.MsgSceneInfoResp.current_dice)
+}
+
+// int32 time_remaining = 4;
 inline void MsgSceneInfoResp::clear_time_remaining() {
   time_remaining_ = 0;
 }
@@ -2554,7 +2800,46 @@ inline void MsgSceneInfoResp::set_time_remaining(::PROTOBUF_NAMESPACE_ID::int32 
   // @@protoc_insertion_point(field_set:LudoQuick.MsgSceneInfoResp.time_remaining)
 }
 
-// repeated .LudoQuick.UserInfo user_info = 4;
+// repeated .LudoQuick.MapBagInfo map_bag = 5;
+inline int MsgSceneInfoResp::_internal_map_bag_size() const {
+  return map_bag_.size();
+}
+inline int MsgSceneInfoResp::map_bag_size() const {
+  return _internal_map_bag_size();
+}
+inline void MsgSceneInfoResp::clear_map_bag() {
+  map_bag_.Clear();
+}
+inline ::LudoQuick::MapBagInfo* MsgSceneInfoResp::mutable_map_bag(int index) {
+  // @@protoc_insertion_point(field_mutable:LudoQuick.MsgSceneInfoResp.map_bag)
+  return map_bag_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LudoQuick::MapBagInfo >*
+MsgSceneInfoResp::mutable_map_bag() {
+  // @@protoc_insertion_point(field_mutable_list:LudoQuick.MsgSceneInfoResp.map_bag)
+  return &map_bag_;
+}
+inline const ::LudoQuick::MapBagInfo& MsgSceneInfoResp::_internal_map_bag(int index) const {
+  return map_bag_.Get(index);
+}
+inline const ::LudoQuick::MapBagInfo& MsgSceneInfoResp::map_bag(int index) const {
+  // @@protoc_insertion_point(field_get:LudoQuick.MsgSceneInfoResp.map_bag)
+  return _internal_map_bag(index);
+}
+inline ::LudoQuick::MapBagInfo* MsgSceneInfoResp::_internal_add_map_bag() {
+  return map_bag_.Add();
+}
+inline ::LudoQuick::MapBagInfo* MsgSceneInfoResp::add_map_bag() {
+  // @@protoc_insertion_point(field_add:LudoQuick.MsgSceneInfoResp.map_bag)
+  return _internal_add_map_bag();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LudoQuick::MapBagInfo >&
+MsgSceneInfoResp::map_bag() const {
+  // @@protoc_insertion_point(field_list:LudoQuick.MsgSceneInfoResp.map_bag)
+  return map_bag_;
+}
+
+// repeated .LudoQuick.UserInfo user_info = 6;
 inline int MsgSceneInfoResp::_internal_user_info_size() const {
   return user_info_.size();
 }
@@ -3306,6 +3591,8 @@ MsgResultResp::result() const {
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
