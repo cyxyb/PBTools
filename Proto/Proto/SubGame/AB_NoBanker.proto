@@ -1,16 +1,14 @@
 syntax = "proto3";
 
-package AndarBahar;
+package AB_NoBanker;
 
 enum EGameState
 {
 	GS_Ready	 = 0;	//准备
 	GS_Start	 = 1;	//开始游戏
-	GS_Bet1		 = 2;	//下注1
-	GS_Bet2		 = 3;	//下注2
-	GS_SendCard1 = 4;	//发牌1
-	GS_SendCard2 = 5;	//发牌2
-	GS_Result	 = 6;	//结算
+	GS_Bet		 = 2;	//下注
+	GS_SendCard = 3;	//发牌
+	GS_Result	 = 4;	//结算
 }
 
 enum EMsgIDSubGame
@@ -18,9 +16,7 @@ enum EMsgIDSubGame
 	MsgIDSubGame_Null					= 0;
 	MsgIDSubGame_Bet					= 1;	//玩家下注(MsgBet)
 	MsgIDSubGame_BetResp				= 2;	//玩家下注返回(MsgBetResp)
-	MsgIDSubGame_OpBanker				= 3;	//玩家操作上下庄(MsgOpBanker)
-	MsgIDSubGame_OpBankerResp			= 4;	//玩家操作上下庄(MsgOpBankerResp)
-	MsgIDSubGame_GameStartResp			= 5;	//游戏结果(MsgStartGameResp)
+	MsgIDSubGame_GameStartResp			= 5;	//开始游戏(MsgStartGameResp)
 	MsgIDSubGame_SendCardResp			= 6;	//游戏结果(MsgSendCardResp)
 	MsgIDSubGame_GameResultResp			= 7;	//游戏结果(MsgResult)
 	MsgIDSubGame_NotifyStateResp		= 8;	//游戏状态(MsgCommonN32)
@@ -29,7 +25,7 @@ enum EMsgIDSubGame
 message ABBetInfo
 {
 	int64				bet				= 1;	//下注金额  
-	int32				status			= 2;	//下注状态 0未操作 1 红 2 蓝 3跳过	
+	int32				status			= 2;	//下注状态 0蓝 1红 2-9牌数量区域	
 }
 
 message ABPlayerData
@@ -40,12 +36,6 @@ message ABPlayerData
 	int32				win_play		= 4;	// 赢次数
 	repeated ABBetInfo	bet_infos		= 5;	// 下注状态
 }
-
-message ABUpWaitBankerInfo
-{
-	int32				id				= 1;	// 庄家ID
-	int64				op_banker_gold	= 2;	// 用户可输赢金币是否要下庄
-};
 
 message ABBankerInfo
 {
@@ -62,18 +52,12 @@ message MsgSceneInfo
 	repeated int64  	bet     		= 1;	//固定押注配置
 	repeated int32		records			= 2;	//开牌结果(1:红 2:黑)
 	repeated int32		bet_limit		= 3;	//个人区域限制
-	repeated ABUpWaitBankerInfo up_banker_list	= 4;	//上庄申列表
 	int32				player_limit	= 5;	//个人下注限制
 	int32				bet_time		= 6;	//下注总时间
 	int32				out_time		= 7;	//剩余时间
 	int32				state			= 8;	//当前状态
-	repeated int32		mul				= 9;	//倍数(红、黑、)
-	int32				banker_max		= 10;	//当庄最大轮数 
-	repeated int64		UpbankerGolds	= 11;	//选择上庄金币列表
-	ABBankerInfo		banker_info		= 12;	//庄信息
 	int32				base_card		= 13;	//底牌
-	int64				red_total_bet	= 14;	//红方总下注
-	int64				bluo_total_bet	= 15;	//蓝方总下注
+	repeated int64		area_total_bet	= 14;	//每个区域总下注	0蓝 1红 2-9牌数量区域	
 
 	repeated int32		red_cards		= 20;	//红方牌列表
 	repeated int32		blue_cards		= 21;	//蓝方牌列表
@@ -83,7 +67,6 @@ message MsgSceneInfo
 //开始游戏
 message MsgStartGameResp
 {
-	ABBankerInfo		banker_info		= 1;	//庄信息
 	int32				base_card		= 3;	//底牌
 }
 
@@ -91,7 +74,7 @@ message MsgStartGameResp
 message MsgBet
 {
 	int64				bet				= 1;	//押注金币
-	int32				area			= 2;	//押注区域(0:跳过 1:红 2:蓝 )
+	int32				area			= 2;	//押注区域(0蓝 1红 2-9牌数量区域)
 }
 
 //玩家下注返回
@@ -111,25 +94,6 @@ message MsgSendCardResp
 
 }
 
-//操作庄
-message MsgOpBanker
-{
-	int32				op_type			= 1;	// 1 = 上庄 2 = 下庄 
-	int64				up_gold			= 2;	// 携带金币
-}
-
-//操作庄
-message MsgOpBankerResp
-{
-	int32				ret_code		= 1;	//返回码
-	int32				user_id			= 2;	//玩家id
-	int32				chair_id		= 3;	//玩家椅子号
-	int32				op_type			= 4;	// 1 = 上庄 2 = 下庄 3 = 被动下庄
-	int64				up_gold			= 5;	// 携带金币
-
-}
-
-
 //玩家输赢信息                              
 message MsgWinMsg                           
 {                                           
@@ -143,7 +107,6 @@ message MsgWinMsg
 //游戏结果                                  
 message MsgResult                           
 {                                           
-	int32				win_index		= 1;	//开牌结果(1:红 2:蓝)赢
-	ABBankerInfo		banker_info		= 2;	//庄家输赢的金币
-	repeated MsgWinMsg 	win_msg			= 3;	//玩家输赢信息
+	repeated int32		win_index		= 1;	//开牌结果(0蓝 1红 2-9牌数量区域)赢
+	repeated MsgWinMsg 	win_msg			= 2;	//玩家输赢信息
 }                                           
