@@ -321,6 +321,8 @@ enum EMsgIDDB : int {
   GAME2DB_UserReConnect = 2018,
   GAME2DB_ApplyRobot = 2019,
   DB2GAME_ApplyRobotResp = 2020,
+  GAME2DB_QueryPlayerGold = 2021,
+  DB2GAME_QueryPlayerGoldResp = 2022,
   CHAT2DB_Login = 3001,
   DB2CHAT_LoginResp = 3002,
   CHAT2DB_SendTrumpetMsg = 3003,

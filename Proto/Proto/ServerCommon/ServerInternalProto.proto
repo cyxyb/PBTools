@@ -537,6 +537,13 @@ message MsgDBSetSubAgent
 	int32 sub_user		= 2;			//下架代理ID
 	int32 agent_ratio 	= 3;			//分成比例
 }
+
+//刷新玩家金币
+message MsgDBGetPlayerGold
+{
+	int32 user_id 		= 1;			//玩家id
+	int64 coin			= 2;			//玩家金币
+}
 /////////////////////////////////////////////PVP//////////////////////////////////////////////
 message MsgPvpSerTableInfo
 {

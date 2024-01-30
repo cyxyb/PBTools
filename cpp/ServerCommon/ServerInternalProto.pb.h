@@ -46,7 +46,7 @@ struct TableStruct_ServerInternalProto_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[62]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[63]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -107,6 +107,9 @@ extern MsgDBGamePlayerLoginDefaultTypeInternal _MsgDBGamePlayerLogin_default_ins
 class MsgDBGamePlayerLoginResp;
 class MsgDBGamePlayerLoginRespDefaultTypeInternal;
 extern MsgDBGamePlayerLoginRespDefaultTypeInternal _MsgDBGamePlayerLoginResp_default_instance_;
+class MsgDBGetPlayerGold;
+class MsgDBGetPlayerGoldDefaultTypeInternal;
+extern MsgDBGetPlayerGoldDefaultTypeInternal _MsgDBGetPlayerGold_default_instance_;
 class MsgDBLoadRobot;
 class MsgDBLoadRobotDefaultTypeInternal;
 extern MsgDBLoadRobotDefaultTypeInternal _MsgDBLoadRobot_default_instance_;
@@ -258,6 +261,7 @@ template<> ::MsgDBFingerGuessWriteScoreResp* Arena::CreateMaybeMessage<::MsgDBFi
 template<> ::MsgDBGameLoginOut* Arena::CreateMaybeMessage<::MsgDBGameLoginOut>(Arena*);
 template<> ::MsgDBGamePlayerLogin* Arena::CreateMaybeMessage<::MsgDBGamePlayerLogin>(Arena*);
 template<> ::MsgDBGamePlayerLoginResp* Arena::CreateMaybeMessage<::MsgDBGamePlayerLoginResp>(Arena*);
+template<> ::MsgDBGetPlayerGold* Arena::CreateMaybeMessage<::MsgDBGetPlayerGold>(Arena*);
 template<> ::MsgDBLoadRobot* Arena::CreateMaybeMessage<::MsgDBLoadRobot>(Arena*);
 template<> ::MsgDBLoadRobotInfo* Arena::CreateMaybeMessage<::MsgDBLoadRobotInfo>(Arena*);
 template<> ::MsgDBLoginOut* Arena::CreateMaybeMessage<::MsgDBLoginOut>(Arena*);
@@ -10888,6 +10892,153 @@ class MsgDBSetSubAgent PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
+class MsgDBGetPlayerGold PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgDBGetPlayerGold) */ {
+ public:
+  inline MsgDBGetPlayerGold() : MsgDBGetPlayerGold(nullptr) {}
+  virtual ~MsgDBGetPlayerGold();
+
+  MsgDBGetPlayerGold(const MsgDBGetPlayerGold& from);
+  MsgDBGetPlayerGold(MsgDBGetPlayerGold&& from) noexcept
+    : MsgDBGetPlayerGold() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgDBGetPlayerGold& operator=(const MsgDBGetPlayerGold& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgDBGetPlayerGold& operator=(MsgDBGetPlayerGold&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgDBGetPlayerGold& default_instance();
+
+  static inline const MsgDBGetPlayerGold* internal_default_instance() {
+    return reinterpret_cast<const MsgDBGetPlayerGold*>(
+               &_MsgDBGetPlayerGold_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    59;
+
+  friend void swap(MsgDBGetPlayerGold& a, MsgDBGetPlayerGold& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgDBGetPlayerGold* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgDBGetPlayerGold* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgDBGetPlayerGold* New() const final {
+    return CreateMaybeMessage<MsgDBGetPlayerGold>(nullptr);
+  }
+
+  MsgDBGetPlayerGold* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgDBGetPlayerGold>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgDBGetPlayerGold& from);
+  void MergeFrom(const MsgDBGetPlayerGold& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgDBGetPlayerGold* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgDBGetPlayerGold";
+  }
+  protected:
+  explicit MsgDBGetPlayerGold(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kCoinFieldNumber = 2,
+    kUserIdFieldNumber = 1,
+  };
+  // int64 coin = 2;
+  void clear_coin();
+  ::PROTOBUF_NAMESPACE_ID::int64 coin() const;
+  void set_coin(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_coin() const;
+  void _internal_set_coin(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int32 user_id = 1;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgDBGetPlayerGold)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int64 coin_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
+// -------------------------------------------------------------------
+
 class MsgPvpSerTableInfo PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgPvpSerTableInfo) */ {
  public:
@@ -10929,7 +11080,7 @@ class MsgPvpSerTableInfo PROTOBUF_FINAL :
                &_MsgPvpSerTableInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    59;
+    60;
 
   friend void swap(MsgPvpSerTableInfo& a, MsgPvpSerTableInfo& b) {
     a.Swap(&b);
@@ -11167,7 +11318,7 @@ class MsgPvpAddTable PROTOBUF_FINAL :
                &_MsgPvpAddTable_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    60;
+    61;
 
   friend void swap(MsgPvpAddTable& a, MsgPvpAddTable& b) {
     a.Swap(&b);
@@ -11323,7 +11474,7 @@ class MsgPvpDelTable PROTOBUF_FINAL :
                &_MsgPvpDelTable_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    61;
+    62;
 
   friend void swap(MsgPvpDelTable& a, MsgPvpDelTable& b) {
     a.Swap(&b);
@@ -18972,6 +19123,50 @@ inline void MsgDBSetSubAgent::set_agent_ratio(::PROTOBUF_NAMESPACE_ID::int32 val
 
 // -------------------------------------------------------------------
 
+// MsgDBGetPlayerGold
+
+// int32 user_id = 1;
+inline void MsgDBGetPlayerGold::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBGetPlayerGold::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBGetPlayerGold::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBGetPlayerGold.user_id)
+  return _internal_user_id();
+}
+inline void MsgDBGetPlayerGold::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgDBGetPlayerGold::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBGetPlayerGold.user_id)
+}
+
+// int64 coin = 2;
+inline void MsgDBGetPlayerGold::clear_coin() {
+  coin_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBGetPlayerGold::_internal_coin() const {
+  return coin_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgDBGetPlayerGold::coin() const {
+  // @@protoc_insertion_point(field_get:MsgDBGetPlayerGold.coin)
+  return _internal_coin();
+}
+inline void MsgDBGetPlayerGold::_internal_set_coin(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  coin_ = value;
+}
+inline void MsgDBGetPlayerGold::set_coin(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_coin(value);
+  // @@protoc_insertion_point(field_set:MsgDBGetPlayerGold.coin)
+}
+
+// -------------------------------------------------------------------
+
 // MsgPvpSerTableInfo
 
 // int32 table_id = 1;
@@ -19346,6 +19541,8 @@ inline void MsgPvpDelTable::set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
