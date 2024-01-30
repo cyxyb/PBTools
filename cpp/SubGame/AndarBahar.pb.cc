@@ -304,7 +304,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_AndarBahar_2eproto::offsets[] 
   PROTOBUF_FIELD_OFFSET(::AndarBahar::MsgSceneInfo, state_),
   PROTOBUF_FIELD_OFFSET(::AndarBahar::MsgSceneInfo, mul_),
   PROTOBUF_FIELD_OFFSET(::AndarBahar::MsgSceneInfo, banker_max_),
-  PROTOBUF_FIELD_OFFSET(::AndarBahar::MsgSceneInfo, upbankergolds_),
+  PROTOBUF_FIELD_OFFSET(::AndarBahar::MsgSceneInfo, banker_min_limit_),
   PROTOBUF_FIELD_OFFSET(::AndarBahar::MsgSceneInfo, banker_info_),
   PROTOBUF_FIELD_OFFSET(::AndarBahar::MsgSceneInfo, base_card_),
   PROTOBUF_FIELD_OFFSET(::AndarBahar::MsgSceneInfo, red_total_bet_),
@@ -420,45 +420,46 @@ const char descriptor_table_protodef_AndarBahar_2eproto[] PROTOBUF_SECTION_VARIA
   "Info\"8\n\022ABUpWaitBankerInfo\022\n\n\002id\030\001 \001(\005\022\026"
   "\n\016op_banker_gold\030\002 \001(\003\"^\n\014ABBankerInfo\022\n"
   "\n\002id\030\001 \001(\005\022\017\n\007op_gold\030\002 \001(\003\022\r\n\005round\030\003 \001"
-  "(\005\022\021\n\ttotal_win\030\004 \001(\003\022\017\n\007is_down\030\005 \001(\010\"\277"
+  "(\005\022\021\n\ttotal_win\030\004 \001(\003\022\017\n\007is_down\030\005 \001(\010\"\302"
   "\003\n\014MsgSceneInfo\022\013\n\003bet\030\001 \003(\003\022\017\n\007records\030"
   "\002 \003(\005\022\021\n\tbet_limit\030\003 \003(\005\0226\n\016up_banker_li"
   "st\030\004 \003(\0132\036.AndarBahar.ABUpWaitBankerInfo"
   "\022\024\n\014player_limit\030\005 \001(\005\022\020\n\010bet_time\030\006 \001(\005"
   "\022\020\n\010out_time\030\007 \001(\005\022\r\n\005state\030\010 \001(\005\022\013\n\003mul"
-  "\030\t \003(\005\022\022\n\nbanker_max\030\n \001(\005\022\025\n\rUpbankerGo"
-  "lds\030\013 \003(\003\022-\n\013banker_info\030\014 \001(\0132\030.AndarBa"
-  "har.ABBankerInfo\022\021\n\tbase_card\030\r \001(\005\022\025\n\rr"
-  "ed_total_bet\030\016 \001(\003\022\026\n\016bluo_total_bet\030\017 \001"
-  "(\003\022\021\n\tred_cards\030\024 \003(\005\022\022\n\nblue_cards\030\025 \003("
-  "\005\022-\n\013player_list\030\026 \003(\0132\030.AndarBahar.ABPl"
-  "ayerData\"T\n\020MsgStartGameResp\022-\n\013banker_i"
-  "nfo\030\001 \001(\0132\030.AndarBahar.ABBankerInfo\022\021\n\tb"
-  "ase_card\030\003 \001(\005\"#\n\006MsgBet\022\013\n\003bet\030\001 \001(\003\022\014\n"
-  "\004area\030\002 \001(\005\"j\n\nMsgBetResp\022\020\n\010ret_code\030\001 "
-  "\001(\005\022\017\n\007user_id\030\002 \001(\005\022\020\n\010chair_id\030\003 \001(\005\022\'"
-  "\n\010bet_info\030\004 \001(\0132\025.AndarBahar.ABBetInfo\""
-  "=\n\017MsgSendCardResp\022\014\n\004card\030\001 \001(\005\022\014\n\004area"
-  "\030\002 \001(\005\022\016\n\006is_end\030\003 \001(\010\"/\n\013MsgOpBanker\022\017\n"
-  "\007op_type\030\001 \001(\005\022\017\n\007up_gold\030\002 \001(\003\"h\n\017MsgOp"
-  "BankerResp\022\020\n\010ret_code\030\001 \001(\005\022\017\n\007user_id\030"
-  "\002 \001(\005\022\020\n\010chair_id\030\003 \001(\005\022\017\n\007op_type\030\004 \001(\005"
-  "\022\017\n\007up_gold\030\005 \001(\003\"b\n\tMsgWinMsg\022\017\n\007user_i"
-  "d\030\001 \001(\005\022\020\n\010chair_id\030\002 \001(\005\022\020\n\010win_gold\030\003 "
-  "\001(\003\022\020\n\010new_gold\030\004 \001(\003\022\016\n\006is_win\030\005 \001(\010\"u\n"
-  "\tMsgResult\022\021\n\twin_index\030\001 \001(\005\022-\n\013banker_"
-  "info\030\002 \001(\0132\030.AndarBahar.ABBankerInfo\022&\n\007"
-  "win_msg\030\003 \003(\0132\025.AndarBahar.MsgWinMsg*u\n\n"
-  "EGameState\022\014\n\010GS_Ready\020\000\022\014\n\010GS_Start\020\001\022\013"
-  "\n\007GS_Bet1\020\002\022\013\n\007GS_Bet2\020\003\022\020\n\014GS_SendCard1"
-  "\020\004\022\020\n\014GS_SendCard2\020\005\022\r\n\tGS_Result\020\006*\222\002\n\r"
-  "EMsgIDSubGame\022\025\n\021MsgIDSubGame_Null\020\000\022\024\n\020"
-  "MsgIDSubGame_Bet\020\001\022\030\n\024MsgIDSubGame_BetRe"
-  "sp\020\002\022\031\n\025MsgIDSubGame_OpBanker\020\003\022\035\n\031MsgID"
-  "SubGame_OpBankerResp\020\004\022\036\n\032MsgIDSubGame_G"
-  "ameStartResp\020\005\022\035\n\031MsgIDSubGame_SendCardR"
-  "esp\020\006\022\037\n\033MsgIDSubGame_GameResultResp\020\007\022 "
-  "\n\034MsgIDSubGame_NotifyStateResp\020\010b\006proto3"
+  "\030\t \003(\005\022\022\n\nbanker_max\030\n \001(\005\022\030\n\020banker_min"
+  "_limit\030\013 \001(\003\022-\n\013banker_info\030\014 \001(\0132\030.Anda"
+  "rBahar.ABBankerInfo\022\021\n\tbase_card\030\r \001(\005\022\025"
+  "\n\rred_total_bet\030\016 \001(\003\022\026\n\016bluo_total_bet\030"
+  "\017 \001(\003\022\021\n\tred_cards\030\024 \003(\005\022\022\n\nblue_cards\030\025"
+  " \003(\005\022-\n\013player_list\030\026 \003(\0132\030.AndarBahar.A"
+  "BPlayerData\"T\n\020MsgStartGameResp\022-\n\013banke"
+  "r_info\030\001 \001(\0132\030.AndarBahar.ABBankerInfo\022\021"
+  "\n\tbase_card\030\003 \001(\005\"#\n\006MsgBet\022\013\n\003bet\030\001 \001(\003"
+  "\022\014\n\004area\030\002 \001(\005\"j\n\nMsgBetResp\022\020\n\010ret_code"
+  "\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\020\n\010chair_id\030\003 \001("
+  "\005\022\'\n\010bet_info\030\004 \001(\0132\025.AndarBahar.ABBetIn"
+  "fo\"=\n\017MsgSendCardResp\022\014\n\004card\030\001 \001(\005\022\014\n\004a"
+  "rea\030\002 \001(\005\022\016\n\006is_end\030\003 \001(\010\"/\n\013MsgOpBanker"
+  "\022\017\n\007op_type\030\001 \001(\005\022\017\n\007up_gold\030\002 \001(\003\"h\n\017Ms"
+  "gOpBankerResp\022\020\n\010ret_code\030\001 \001(\005\022\017\n\007user_"
+  "id\030\002 \001(\005\022\020\n\010chair_id\030\003 \001(\005\022\017\n\007op_type\030\004 "
+  "\001(\005\022\017\n\007up_gold\030\005 \001(\003\"b\n\tMsgWinMsg\022\017\n\007use"
+  "r_id\030\001 \001(\005\022\020\n\010chair_id\030\002 \001(\005\022\020\n\010win_gold"
+  "\030\003 \001(\003\022\020\n\010new_gold\030\004 \001(\003\022\016\n\006is_win\030\005 \001(\010"
+  "\"u\n\tMsgResult\022\021\n\twin_index\030\001 \001(\005\022-\n\013bank"
+  "er_info\030\002 \001(\0132\030.AndarBahar.ABBankerInfo\022"
+  "&\n\007win_msg\030\003 \003(\0132\025.AndarBahar.MsgWinMsg*"
+  "u\n\nEGameState\022\014\n\010GS_Ready\020\000\022\014\n\010GS_Start\020"
+  "\001\022\013\n\007GS_Bet1\020\002\022\013\n\007GS_Bet2\020\003\022\020\n\014GS_SendCa"
+  "rd1\020\004\022\020\n\014GS_SendCard2\020\005\022\r\n\tGS_Result\020\006*\222"
+  "\002\n\rEMsgIDSubGame\022\025\n\021MsgIDSubGame_Null\020\000\022"
+  "\024\n\020MsgIDSubGame_Bet\020\001\022\030\n\024MsgIDSubGame_Be"
+  "tResp\020\002\022\031\n\025MsgIDSubGame_OpBanker\020\003\022\035\n\031Ms"
+  "gIDSubGame_OpBankerResp\020\004\022\036\n\032MsgIDSubGam"
+  "e_GameStartResp\020\005\022\035\n\031MsgIDSubGame_SendCa"
+  "rdResp\020\006\022\037\n\033MsgIDSubGame_GameResultResp\020"
+  "\007\022 \n\034MsgIDSubGame_NotifyStateResp\020\010b\006pro"
+  "to3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_AndarBahar_2eproto_deps[1] = {
 };
@@ -479,7 +480,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_And
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_AndarBahar_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_AndarBahar_2eproto = {
-  false, false, descriptor_table_protodef_AndarBahar_2eproto, "AndarBahar.proto", 1880,
+  false, false, descriptor_table_protodef_AndarBahar_2eproto, "AndarBahar.proto", 1883,
   &descriptor_table_AndarBahar_2eproto_once, descriptor_table_AndarBahar_2eproto_sccs, descriptor_table_AndarBahar_2eproto_deps, 13, 0,
   schemas, file_default_instances, TableStruct_AndarBahar_2eproto::offsets,
   file_level_metadata_AndarBahar_2eproto, 13, file_level_enum_descriptors_AndarBahar_2eproto, file_level_service_descriptors_AndarBahar_2eproto,
@@ -1609,7 +1610,6 @@ MsgSceneInfo::MsgSceneInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   bet_limit_(arena),
   up_banker_list_(arena),
   mul_(arena),
-  upbankergolds_(arena),
   red_cards_(arena),
   blue_cards_(arena),
   player_list_(arena) {
@@ -1624,7 +1624,6 @@ MsgSceneInfo::MsgSceneInfo(const MsgSceneInfo& from)
       bet_limit_(from.bet_limit_),
       up_banker_list_(from.up_banker_list_),
       mul_(from.mul_),
-      upbankergolds_(from.upbankergolds_),
       red_cards_(from.red_cards_),
       blue_cards_(from.blue_cards_),
       player_list_(from.player_list_) {
@@ -1685,7 +1684,6 @@ void MsgSceneInfo::Clear() {
   bet_limit_.Clear();
   up_banker_list_.Clear();
   mul_.Clear();
-  upbankergolds_.Clear();
   red_cards_.Clear();
   blue_cards_.Clear();
   player_list_.Clear();
@@ -1793,13 +1791,10 @@ const char* MsgSceneInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated int64 UpbankerGolds = 11;
+      // int64 banker_min_limit = 11;
       case 11:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 90)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt64Parser(_internal_mutable_upbankergolds(), ptr, ctx);
-          CHK_(ptr);
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 88) {
-          _internal_add_upbankergolds(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 88)) {
+          banker_min_limit_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1965,13 +1960,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(10, this->_internal_banker_max(), target);
   }
 
-  // repeated int64 UpbankerGolds = 11;
-  {
-    int byte_size = _upbankergolds_cached_byte_size_.load(std::memory_order_relaxed);
-    if (byte_size > 0) {
-      target = stream->WriteInt64Packed(
-          11, _internal_upbankergolds(), byte_size, target);
-    }
+  // int64 banker_min_limit = 11;
+  if (this->banker_min_limit() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(11, this->_internal_banker_min_limit(), target);
   }
 
   // .AndarBahar.ABBankerInfo banker_info = 12;
@@ -2109,21 +2101,6 @@ size_t MsgSceneInfo::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  // repeated int64 UpbankerGolds = 11;
-  {
-    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      Int64Size(this->upbankergolds_);
-    if (data_size > 0) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
-    }
-    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
-    _upbankergolds_cached_byte_size_.store(cached_size,
-                                    std::memory_order_relaxed);
-    total_size += data_size;
-  }
-
   // repeated int32 red_cards = 20;
   {
     size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
@@ -2196,6 +2173,13 @@ size_t MsgSceneInfo::ByteSizeLong() const {
         this->_internal_state());
   }
 
+  // int64 banker_min_limit = 11;
+  if (this->banker_min_limit() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_banker_min_limit());
+  }
+
   // int32 banker_max = 10;
   if (this->banker_max() != 0) {
     total_size += 1 +
@@ -2260,7 +2244,6 @@ void MsgSceneInfo::MergeFrom(const MsgSceneInfo& from) {
   bet_limit_.MergeFrom(from.bet_limit_);
   up_banker_list_.MergeFrom(from.up_banker_list_);
   mul_.MergeFrom(from.mul_);
-  upbankergolds_.MergeFrom(from.upbankergolds_);
   red_cards_.MergeFrom(from.red_cards_);
   blue_cards_.MergeFrom(from.blue_cards_);
   player_list_.MergeFrom(from.player_list_);
@@ -2278,6 +2261,9 @@ void MsgSceneInfo::MergeFrom(const MsgSceneInfo& from) {
   }
   if (from.state() != 0) {
     _internal_set_state(from._internal_state());
+  }
+  if (from.banker_min_limit() != 0) {
+    _internal_set_banker_min_limit(from._internal_banker_min_limit());
   }
   if (from.banker_max() != 0) {
     _internal_set_banker_max(from._internal_banker_max());
@@ -2319,7 +2305,6 @@ void MsgSceneInfo::InternalSwap(MsgSceneInfo* other) {
   bet_limit_.InternalSwap(&other->bet_limit_);
   up_banker_list_.InternalSwap(&other->up_banker_list_);
   mul_.InternalSwap(&other->mul_);
-  upbankergolds_.InternalSwap(&other->upbankergolds_);
   red_cards_.InternalSwap(&other->red_cards_);
   blue_cards_.InternalSwap(&other->blue_cards_);
   player_list_.InternalSwap(&other->player_list_);

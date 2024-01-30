@@ -69,7 +69,7 @@ message MsgSceneInfo
 	int32				state			= 8;	//当前状态
 	repeated int32		mul				= 9;	//倍数(红、黑、)
 	int32				banker_max		= 10;	//当庄最大轮数 
-	repeated int64		UpbankerGolds	= 11;	//选择上庄金币列表
+	int64				banker_min_limit= 11;	//选择上庄金币列表
 	ABBankerInfo		banker_info		= 12;	//庄信息
 	int32				base_card		= 13;	//底牌
 	int64				red_total_bet	= 14;	//红方总下注

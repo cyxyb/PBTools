@@ -32,41 +32,41 @@ namespace AndarBahar {
             "cFdhaXRCYW5rZXJJbmZvEgoKAmlkGAEgASgFEhYKDm9wX2Jhbmtlcl9nb2xk",
             "GAIgASgDIl4KDEFCQmFua2VySW5mbxIKCgJpZBgBIAEoBRIPCgdvcF9nb2xk",
             "GAIgASgDEg0KBXJvdW5kGAMgASgFEhEKCXRvdGFsX3dpbhgEIAEoAxIPCgdp",
-            "c19kb3duGAUgASgIIr8DCgxNc2dTY2VuZUluZm8SCwoDYmV0GAEgAygDEg8K",
+            "c19kb3duGAUgASgIIsIDCgxNc2dTY2VuZUluZm8SCwoDYmV0GAEgAygDEg8K",
             "B3JlY29yZHMYAiADKAUSEQoJYmV0X2xpbWl0GAMgAygFEjYKDnVwX2Jhbmtl",
             "cl9saXN0GAQgAygLMh4uQW5kYXJCYWhhci5BQlVwV2FpdEJhbmtlckluZm8S",
             "FAoMcGxheWVyX2xpbWl0GAUgASgFEhAKCGJldF90aW1lGAYgASgFEhAKCG91",
             "dF90aW1lGAcgASgFEg0KBXN0YXRlGAggASgFEgsKA211bBgJIAMoBRISCgpi",
-            "YW5rZXJfbWF4GAogASgFEhUKDVVwYmFua2VyR29sZHMYCyADKAMSLQoLYmFu",
-            "a2VyX2luZm8YDCABKAsyGC5BbmRhckJhaGFyLkFCQmFua2VySW5mbxIRCgli",
-            "YXNlX2NhcmQYDSABKAUSFQoNcmVkX3RvdGFsX2JldBgOIAEoAxIWCg5ibHVv",
-            "X3RvdGFsX2JldBgPIAEoAxIRCglyZWRfY2FyZHMYFCADKAUSEgoKYmx1ZV9j",
-            "YXJkcxgVIAMoBRItCgtwbGF5ZXJfbGlzdBgWIAMoCzIYLkFuZGFyQmFoYXIu",
-            "QUJQbGF5ZXJEYXRhIlQKEE1zZ1N0YXJ0R2FtZVJlc3ASLQoLYmFua2VyX2lu",
-            "Zm8YASABKAsyGC5BbmRhckJhaGFyLkFCQmFua2VySW5mbxIRCgliYXNlX2Nh",
-            "cmQYAyABKAUiIwoGTXNnQmV0EgsKA2JldBgBIAEoAxIMCgRhcmVhGAIgASgF",
-            "ImoKCk1zZ0JldFJlc3ASEAoIcmV0X2NvZGUYASABKAUSDwoHdXNlcl9pZBgC",
-            "IAEoBRIQCghjaGFpcl9pZBgDIAEoBRInCghiZXRfaW5mbxgEIAEoCzIVLkFu",
-            "ZGFyQmFoYXIuQUJCZXRJbmZvIj0KD01zZ1NlbmRDYXJkUmVzcBIMCgRjYXJk",
-            "GAEgASgFEgwKBGFyZWEYAiABKAUSDgoGaXNfZW5kGAMgASgIIi8KC01zZ09w",
-            "QmFua2VyEg8KB29wX3R5cGUYASABKAUSDwoHdXBfZ29sZBgCIAEoAyJoCg9N",
-            "c2dPcEJhbmtlclJlc3ASEAoIcmV0X2NvZGUYASABKAUSDwoHdXNlcl9pZBgC",
-            "IAEoBRIQCghjaGFpcl9pZBgDIAEoBRIPCgdvcF90eXBlGAQgASgFEg8KB3Vw",
-            "X2dvbGQYBSABKAMiYgoJTXNnV2luTXNnEg8KB3VzZXJfaWQYASABKAUSEAoI",
-            "Y2hhaXJfaWQYAiABKAUSEAoId2luX2dvbGQYAyABKAMSEAoIbmV3X2dvbGQY",
-            "BCABKAMSDgoGaXNfd2luGAUgASgIInUKCU1zZ1Jlc3VsdBIRCgl3aW5faW5k",
-            "ZXgYASABKAUSLQoLYmFua2VyX2luZm8YAiABKAsyGC5BbmRhckJhaGFyLkFC",
-            "QmFua2VySW5mbxImCgd3aW5fbXNnGAMgAygLMhUuQW5kYXJCYWhhci5Nc2dX",
-            "aW5Nc2cqdQoKRUdhbWVTdGF0ZRIMCghHU19SZWFkeRAAEgwKCEdTX1N0YXJ0",
-            "EAESCwoHR1NfQmV0MRACEgsKB0dTX0JldDIQAxIQCgxHU19TZW5kQ2FyZDEQ",
-            "BBIQCgxHU19TZW5kQ2FyZDIQBRINCglHU19SZXN1bHQQBiqSAgoNRU1zZ0lE",
-            "U3ViR2FtZRIVChFNc2dJRFN1YkdhbWVfTnVsbBAAEhQKEE1zZ0lEU3ViR2Ft",
-            "ZV9CZXQQARIYChRNc2dJRFN1YkdhbWVfQmV0UmVzcBACEhkKFU1zZ0lEU3Vi",
-            "R2FtZV9PcEJhbmtlchADEh0KGU1zZ0lEU3ViR2FtZV9PcEJhbmtlclJlc3AQ",
-            "BBIeChpNc2dJRFN1YkdhbWVfR2FtZVN0YXJ0UmVzcBAFEh0KGU1zZ0lEU3Vi",
-            "R2FtZV9TZW5kQ2FyZFJlc3AQBhIfChtNc2dJRFN1YkdhbWVfR2FtZVJlc3Vs",
-            "dFJlc3AQBxIgChxNc2dJRFN1YkdhbWVfTm90aWZ5U3RhdGVSZXNwEAhiBnBy",
-            "b3RvMw=="));
+            "YW5rZXJfbWF4GAogASgFEhgKEGJhbmtlcl9taW5fbGltaXQYCyABKAMSLQoL",
+            "YmFua2VyX2luZm8YDCABKAsyGC5BbmRhckJhaGFyLkFCQmFua2VySW5mbxIR",
+            "CgliYXNlX2NhcmQYDSABKAUSFQoNcmVkX3RvdGFsX2JldBgOIAEoAxIWCg5i",
+            "bHVvX3RvdGFsX2JldBgPIAEoAxIRCglyZWRfY2FyZHMYFCADKAUSEgoKYmx1",
+            "ZV9jYXJkcxgVIAMoBRItCgtwbGF5ZXJfbGlzdBgWIAMoCzIYLkFuZGFyQmFo",
+            "YXIuQUJQbGF5ZXJEYXRhIlQKEE1zZ1N0YXJ0R2FtZVJlc3ASLQoLYmFua2Vy",
+            "X2luZm8YASABKAsyGC5BbmRhckJhaGFyLkFCQmFua2VySW5mbxIRCgliYXNl",
+            "X2NhcmQYAyABKAUiIwoGTXNnQmV0EgsKA2JldBgBIAEoAxIMCgRhcmVhGAIg",
+            "ASgFImoKCk1zZ0JldFJlc3ASEAoIcmV0X2NvZGUYASABKAUSDwoHdXNlcl9p",
+            "ZBgCIAEoBRIQCghjaGFpcl9pZBgDIAEoBRInCghiZXRfaW5mbxgEIAEoCzIV",
+            "LkFuZGFyQmFoYXIuQUJCZXRJbmZvIj0KD01zZ1NlbmRDYXJkUmVzcBIMCgRj",
+            "YXJkGAEgASgFEgwKBGFyZWEYAiABKAUSDgoGaXNfZW5kGAMgASgIIi8KC01z",
+            "Z09wQmFua2VyEg8KB29wX3R5cGUYASABKAUSDwoHdXBfZ29sZBgCIAEoAyJo",
+            "Cg9Nc2dPcEJhbmtlclJlc3ASEAoIcmV0X2NvZGUYASABKAUSDwoHdXNlcl9p",
+            "ZBgCIAEoBRIQCghjaGFpcl9pZBgDIAEoBRIPCgdvcF90eXBlGAQgASgFEg8K",
+            "B3VwX2dvbGQYBSABKAMiYgoJTXNnV2luTXNnEg8KB3VzZXJfaWQYASABKAUS",
+            "EAoIY2hhaXJfaWQYAiABKAUSEAoId2luX2dvbGQYAyABKAMSEAoIbmV3X2dv",
+            "bGQYBCABKAMSDgoGaXNfd2luGAUgASgIInUKCU1zZ1Jlc3VsdBIRCgl3aW5f",
+            "aW5kZXgYASABKAUSLQoLYmFua2VyX2luZm8YAiABKAsyGC5BbmRhckJhaGFy",
+            "LkFCQmFua2VySW5mbxImCgd3aW5fbXNnGAMgAygLMhUuQW5kYXJCYWhhci5N",
+            "c2dXaW5Nc2cqdQoKRUdhbWVTdGF0ZRIMCghHU19SZWFkeRAAEgwKCEdTX1N0",
+            "YXJ0EAESCwoHR1NfQmV0MRACEgsKB0dTX0JldDIQAxIQCgxHU19TZW5kQ2Fy",
+            "ZDEQBBIQCgxHU19TZW5kQ2FyZDIQBRINCglHU19SZXN1bHQQBiqSAgoNRU1z",
+            "Z0lEU3ViR2FtZRIVChFNc2dJRFN1YkdhbWVfTnVsbBAAEhQKEE1zZ0lEU3Vi",
+            "R2FtZV9CZXQQARIYChRNc2dJRFN1YkdhbWVfQmV0UmVzcBACEhkKFU1zZ0lE",
+            "U3ViR2FtZV9PcEJhbmtlchADEh0KGU1zZ0lEU3ViR2FtZV9PcEJhbmtlclJl",
+            "c3AQBBIeChpNc2dJRFN1YkdhbWVfR2FtZVN0YXJ0UmVzcBAFEh0KGU1zZ0lE",
+            "U3ViR2FtZV9TZW5kQ2FyZFJlc3AQBhIfChtNc2dJRFN1YkdhbWVfR2FtZVJl",
+            "c3VsdFJlc3AQBxIgChxNc2dJRFN1YkdhbWVfTm90aWZ5U3RhdGVSZXNwEAhi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::AndarBahar.EGameState), typeof(global::AndarBahar.EMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -74,7 +74,7 @@ namespace AndarBahar {
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.ABPlayerData), global::AndarBahar.ABPlayerData.Parser, new[]{ "UserId", "WinGold", "TotalPlay", "WinPlay", "BetInfos" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.ABUpWaitBankerInfo), global::AndarBahar.ABUpWaitBankerInfo.Parser, new[]{ "Id", "OpBankerGold" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.ABBankerInfo), global::AndarBahar.ABBankerInfo.Parser, new[]{ "Id", "OpGold", "Round", "TotalWin", "IsDown" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgSceneInfo), global::AndarBahar.MsgSceneInfo.Parser, new[]{ "Bet", "Records", "BetLimit", "UpBankerList", "PlayerLimit", "BetTime", "OutTime", "State", "Mul", "BankerMax", "UpbankerGolds", "BankerInfo", "BaseCard", "RedTotalBet", "BluoTotalBet", "RedCards", "BlueCards", "PlayerList" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgSceneInfo), global::AndarBahar.MsgSceneInfo.Parser, new[]{ "Bet", "Records", "BetLimit", "UpBankerList", "PlayerLimit", "BetTime", "OutTime", "State", "Mul", "BankerMax", "BankerMinLimit", "BankerInfo", "BaseCard", "RedTotalBet", "BluoTotalBet", "RedCards", "BlueCards", "PlayerList" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgStartGameResp), global::AndarBahar.MsgStartGameResp.Parser, new[]{ "BankerInfo", "BaseCard" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgBet), global::AndarBahar.MsgBet.Parser, new[]{ "Bet", "Area" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::AndarBahar.MsgBetResp), global::AndarBahar.MsgBetResp.Parser, new[]{ "RetCode", "UserId", "ChairId", "BetInfo" }, null, null, null, null),
@@ -1277,7 +1277,7 @@ namespace AndarBahar {
       state_ = other.state_;
       mul_ = other.mul_.Clone();
       bankerMax_ = other.bankerMax_;
-      upbankerGolds_ = other.upbankerGolds_.Clone();
+      bankerMinLimit_ = other.bankerMinLimit_;
       bankerInfo_ = other.bankerInfo_ != null ? other.bankerInfo_.Clone() : null;
       baseCard_ = other.baseCard_;
       redTotalBet_ = other.redTotalBet_;
@@ -1428,17 +1428,18 @@ namespace AndarBahar {
       }
     }
 
-    /// <summary>Field number for the "UpbankerGolds" field.</summary>
-    public const int UpbankerGoldsFieldNumber = 11;
-    private static readonly pb::FieldCodec<long> _repeated_upbankerGolds_codec
-        = pb::FieldCodec.ForInt64(90);
-    private readonly pbc::RepeatedField<long> upbankerGolds_ = new pbc::RepeatedField<long>();
+    /// <summary>Field number for the "banker_min_limit" field.</summary>
+    public const int BankerMinLimitFieldNumber = 11;
+    private long bankerMinLimit_;
     /// <summary>
     ///选择上庄金币列表
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<long> UpbankerGolds {
-      get { return upbankerGolds_; }
+    public long BankerMinLimit {
+      get { return bankerMinLimit_; }
+      set {
+        bankerMinLimit_ = value;
+      }
     }
 
     /// <summary>Field number for the "banker_info" field.</summary>
@@ -1559,7 +1560,7 @@ namespace AndarBahar {
       if (State != other.State) return false;
       if(!mul_.Equals(other.mul_)) return false;
       if (BankerMax != other.BankerMax) return false;
-      if(!upbankerGolds_.Equals(other.upbankerGolds_)) return false;
+      if (BankerMinLimit != other.BankerMinLimit) return false;
       if (!object.Equals(BankerInfo, other.BankerInfo)) return false;
       if (BaseCard != other.BaseCard) return false;
       if (RedTotalBet != other.RedTotalBet) return false;
@@ -1583,7 +1584,7 @@ namespace AndarBahar {
       if (State != 0) hash ^= State.GetHashCode();
       hash ^= mul_.GetHashCode();
       if (BankerMax != 0) hash ^= BankerMax.GetHashCode();
-      hash ^= upbankerGolds_.GetHashCode();
+      if (BankerMinLimit != 0L) hash ^= BankerMinLimit.GetHashCode();
       if (bankerInfo_ != null) hash ^= BankerInfo.GetHashCode();
       if (BaseCard != 0) hash ^= BaseCard.GetHashCode();
       if (RedTotalBet != 0L) hash ^= RedTotalBet.GetHashCode();
@@ -1632,7 +1633,10 @@ namespace AndarBahar {
         output.WriteRawTag(80);
         output.WriteInt32(BankerMax);
       }
-      upbankerGolds_.WriteTo(output, _repeated_upbankerGolds_codec);
+      if (BankerMinLimit != 0L) {
+        output.WriteRawTag(88);
+        output.WriteInt64(BankerMinLimit);
+      }
       if (bankerInfo_ != null) {
         output.WriteRawTag(98);
         output.WriteMessage(BankerInfo);
@@ -1686,7 +1690,10 @@ namespace AndarBahar {
         output.WriteRawTag(80);
         output.WriteInt32(BankerMax);
       }
-      upbankerGolds_.WriteTo(ref output, _repeated_upbankerGolds_codec);
+      if (BankerMinLimit != 0L) {
+        output.WriteRawTag(88);
+        output.WriteInt64(BankerMinLimit);
+      }
       if (bankerInfo_ != null) {
         output.WriteRawTag(98);
         output.WriteMessage(BankerInfo);
@@ -1735,7 +1742,9 @@ namespace AndarBahar {
       if (BankerMax != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(BankerMax);
       }
-      size += upbankerGolds_.CalculateSize(_repeated_upbankerGolds_codec);
+      if (BankerMinLimit != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(BankerMinLimit);
+      }
       if (bankerInfo_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(BankerInfo);
       }
@@ -1782,7 +1791,9 @@ namespace AndarBahar {
       if (other.BankerMax != 0) {
         BankerMax = other.BankerMax;
       }
-      upbankerGolds_.Add(other.upbankerGolds_);
+      if (other.BankerMinLimit != 0L) {
+        BankerMinLimit = other.BankerMinLimit;
+      }
       if (other.bankerInfo_ != null) {
         if (bankerInfo_ == null) {
           BankerInfo = new global::AndarBahar.ABBankerInfo();
@@ -1859,9 +1870,8 @@ namespace AndarBahar {
             BankerMax = input.ReadInt32();
             break;
           }
-          case 90:
           case 88: {
-            upbankerGolds_.AddEntriesFrom(input, _repeated_upbankerGolds_codec);
+            BankerMinLimit = input.ReadInt64();
             break;
           }
           case 98: {
@@ -1955,9 +1965,8 @@ namespace AndarBahar {
             BankerMax = input.ReadInt32();
             break;
           }
-          case 90:
           case 88: {
-            upbankerGolds_.AddEntriesFrom(ref input, _repeated_upbankerGolds_codec);
+            BankerMinLimit = input.ReadInt64();
             break;
           }
           case 98: {
