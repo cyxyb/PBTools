@@ -228,4 +228,12 @@ message MsgPvpActivateTableResp
 	bool	is_activate		= 4;	//是否激活
 }
 
+//pvp局数变化
+message MsgPvpTableRoundChangeResp
+{
+	int32	table_id		= 1;	//桌子ID
+	int32	table_no		= 2;	//桌子编号
+	int32	round			= 3;	//当前局数
+}
+
 //////////////////////////////////////////////////PVP//////////////////////////////////////////////

@@ -197,7 +197,7 @@ enum EMsgIDGame
 	MsgIDGame_Pvp_StandUp				= 1066;		//玩家起立(MsgCommonN32)				退游戏发送
 	MsgIDGame_Pvp_StandUpResp			= 1067;		//玩家起立通知(MsgPvpStandUpTableResp)	删除桌子的人数
 	MsgIDGame_Pvp_TableChangeOwunrResp	= 1068;		//通知房主变化(MsgPvpTableChangeOwnerResp)
-
+	MsgIDGame_Pvp_TableRoundChangeResp	= 1069;		//通知房主变化(MsgPvpTableRoundChangeResp)
 	////////////////////////////////////////////////////////////////////////////////////////
 }
 

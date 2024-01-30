@@ -80,7 +80,8 @@ public static partial class GameReflection {
           "d25lcl9pZBgCIAEoBRITCgtpc19hY3RpdmF0ZRgDIAEoCCJkChdNc2dQdnBB",
           "Y3RpdmF0ZVRhYmxlUmVzcBIQCghyZXRfY29kZRgBIAEoBRIQCgh0YWJsZV9p",
           "ZBgCIAEoBRIQCghvd25lcl9pZBgDIAEoBRITCgtpc19hY3RpdmF0ZRgEIAEo",
-          "CGIGcHJvdG8z"));
+          "CCJPChpNc2dQdnBUYWJsZVJvdW5kQ2hhbmdlUmVzcBIQCgh0YWJsZV9pZBgB",
+          "IAEoBRIQCgh0YWJsZV9ubxgCIAEoBRINCgVyb3VuZBgDIAEoBWIGcHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -106,7 +107,8 @@ public static partial class GameReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpDestroyTableResp), global::MsgPvpDestroyTableResp.Parser, new[]{ "RetCode", "TableId", "TableNo" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpKickUserResp), global::MsgPvpKickUserResp.Parser, new[]{ "RetCode", "OwnerId", "OwnerNick", "KickId", "KickNick" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpTableChangeOwnerResp), global::MsgPvpTableChangeOwnerResp.Parser, new[]{ "TableId", "OwnerId", "IsActivate" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpActivateTableResp), global::MsgPvpActivateTableResp.Parser, new[]{ "RetCode", "TableId", "OwnerId", "IsActivate" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpActivateTableResp), global::MsgPvpActivateTableResp.Parser, new[]{ "RetCode", "TableId", "OwnerId", "IsActivate" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpTableRoundChangeResp), global::MsgPvpTableRoundChangeResp.Parser, new[]{ "TableId", "TableNo", "Round" }, null, null, null, null)
         }));
   }
   #endregion
@@ -7494,6 +7496,262 @@ public sealed partial class MsgPvpActivateTableResp : pb::IMessage<MsgPvpActivat
         }
         case 32: {
           IsActivate = input.ReadBool();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///pvp局数变化
+/// </summary>
+public sealed partial class MsgPvpTableRoundChangeResp : pb::IMessage<MsgPvpTableRoundChangeResp>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgPvpTableRoundChangeResp> _parser = new pb::MessageParser<MsgPvpTableRoundChangeResp>(() => new MsgPvpTableRoundChangeResp());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgPvpTableRoundChangeResp> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::GameReflection.Descriptor.MessageTypes[23]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgPvpTableRoundChangeResp() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgPvpTableRoundChangeResp(MsgPvpTableRoundChangeResp other) : this() {
+    tableId_ = other.tableId_;
+    tableNo_ = other.tableNo_;
+    round_ = other.round_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgPvpTableRoundChangeResp Clone() {
+    return new MsgPvpTableRoundChangeResp(this);
+  }
+
+  /// <summary>Field number for the "table_id" field.</summary>
+  public const int TableIdFieldNumber = 1;
+  private int tableId_;
+  /// <summary>
+  ///桌子ID
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int TableId {
+    get { return tableId_; }
+    set {
+      tableId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "table_no" field.</summary>
+  public const int TableNoFieldNumber = 2;
+  private int tableNo_;
+  /// <summary>
+  ///桌子编号
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int TableNo {
+    get { return tableNo_; }
+    set {
+      tableNo_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "round" field.</summary>
+  public const int RoundFieldNumber = 3;
+  private int round_;
+  /// <summary>
+  ///当前局数
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Round {
+    get { return round_; }
+    set {
+      round_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgPvpTableRoundChangeResp);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgPvpTableRoundChangeResp other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (TableId != other.TableId) return false;
+    if (TableNo != other.TableNo) return false;
+    if (Round != other.Round) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (TableId != 0) hash ^= TableId.GetHashCode();
+    if (TableNo != 0) hash ^= TableNo.GetHashCode();
+    if (Round != 0) hash ^= Round.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (TableId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(TableId);
+    }
+    if (TableNo != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(TableNo);
+    }
+    if (Round != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(Round);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (TableId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(TableId);
+    }
+    if (TableNo != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(TableNo);
+    }
+    if (Round != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(Round);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (TableId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(TableId);
+    }
+    if (TableNo != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(TableNo);
+    }
+    if (Round != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Round);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgPvpTableRoundChangeResp other) {
+    if (other == null) {
+      return;
+    }
+    if (other.TableId != 0) {
+      TableId = other.TableId;
+    }
+    if (other.TableNo != 0) {
+      TableNo = other.TableNo;
+    }
+    if (other.Round != 0) {
+      Round = other.Round;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          TableId = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          TableNo = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          Round = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          TableId = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          TableNo = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          Round = input.ReadInt32();
           break;
         }
       }
