@@ -251,6 +251,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_LudoQuick_2eproto::offsets[] P
   PROTOBUF_FIELD_OFFSET(::LudoQuick::UserInfo, route_info_),
   PROTOBUF_FIELD_OFFSET(::LudoQuick::UserInfo, finish_line_switch_),
   PROTOBUF_FIELD_OFFSET(::LudoQuick::UserInfo, end_),
+  PROTOBUF_FIELD_OFFSET(::LudoQuick::UserInfo, is_exit_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::LudoQuick::ChessGrid, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -353,16 +354,16 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_LudoQuick_2eproto::offsets[] P
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::LudoQuick::RouteInfo)},
   { 8, -1, sizeof(::LudoQuick::UserInfo)},
-  { 17, -1, sizeof(::LudoQuick::ChessGrid)},
-  { 32, -1, sizeof(::LudoQuick::MapBagInfo)},
-  { 39, -1, sizeof(::LudoQuick::MsgSceneInfoResp)},
-  { 50, -1, sizeof(::LudoQuick::MsgNoticeOpResp)},
-  { 57, -1, sizeof(::LudoQuick::MsgThrowDiceResp)},
-  { 64, -1, sizeof(::LudoQuick::MsgOperateChess)},
-  { 72, -1, sizeof(::LudoQuick::MsgTriggerEvent)},
-  { 80, -1, sizeof(::LudoQuick::MsgChessInfoResp)},
-  { 97, -1, sizeof(::LudoQuick::GameResult)},
-  { 109, -1, sizeof(::LudoQuick::MsgResultResp)},
+  { 18, -1, sizeof(::LudoQuick::ChessGrid)},
+  { 33, -1, sizeof(::LudoQuick::MapBagInfo)},
+  { 40, -1, sizeof(::LudoQuick::MsgSceneInfoResp)},
+  { 51, -1, sizeof(::LudoQuick::MsgNoticeOpResp)},
+  { 58, -1, sizeof(::LudoQuick::MsgThrowDiceResp)},
+  { 65, -1, sizeof(::LudoQuick::MsgOperateChess)},
+  { 73, -1, sizeof(::LudoQuick::MsgTriggerEvent)},
+  { 81, -1, sizeof(::LudoQuick::MsgChessInfoResp)},
+  { 98, -1, sizeof(::LudoQuick::GameResult)},
+  { 110, -1, sizeof(::LudoQuick::MsgResultResp)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -383,46 +384,46 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
 const char descriptor_table_protodef_LudoQuick_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n\017LudoQuick.proto\022\tLudoQuick\"<\n\tRouteInf"
   "o\022\020\n\010chess_id\030\001 \001(\005\022\020\n\010gold_bag\030\002 \001(\005\022\013\n"
-  "\003pos\030\003 \001(\005\"o\n\010UserInfo\022\020\n\010chair_id\030\001 \001(\005"
-  "\022(\n\nroute_info\030\002 \003(\0132\024.LudoQuick.RouteIn"
-  "fo\022\032\n\022finish_line_switch\030\003 \001(\010\022\013\n\003end\030\004 "
-  "\001(\010\"\301\001\n\tChessGrid\022\016\n\006pos_id\030\001 \001(\005\022\022\n\nsaf"
-  "e_house\030\002 \001(\005\022\020\n\010gold_bag\030\003 \001(\005\022\014\n\004prop\030"
-  "\004 \001(\005\022\016\n\006switch\030\005 \001(\005\022\022\n\ninflection\030\006 \001("
-  "\005\022\021\n\tnext_pos1\030\007 \001(\005\022\021\n\tnext_pos2\030\010 \001(\005\022"
-  "\023\n\013start_point\030\t \001(\005\022\021\n\tend_point\030\n \001(\005\""
-  "(\n\nMapBagInfo\022\013\n\003pos\030\001 \001(\005\022\r\n\005count\030\002 \001("
-  "\005\"\272\001\n\020MsgSceneInfoResp\022\022\n\ngame_state\030\001 \001"
-  "(\005\022\024\n\014current_user\030\002 \001(\005\022\024\n\014current_dice"
-  "\030\003 \001(\005\022\026\n\016time_remaining\030\004 \001(\005\022&\n\007map_ba"
-  "g\030\005 \003(\0132\025.LudoQuick.MapBagInfo\022&\n\tuser_i"
-  "nfo\030\006 \003(\0132\023.LudoQuick.UserInfo\"2\n\017MsgNot"
-  "iceOpResp\022\020\n\010chair_id\030\001 \001(\005\022\r\n\005times\030\002 \001"
-  "(\005\"7\n\020MsgThrowDiceResp\022\020\n\010chair_id\030\001 \001(\005"
-  "\022\021\n\tdice_roll\030\002 \001(\005\"H\n\017MsgOperateChess\022\020"
-  "\n\010chair_id\030\001 \001(\005\022\020\n\010chess_id\030\002 \001(\005\022\021\n\tis"
-  "_unlock\030\003 \001(\010\"G\n\017MsgTriggerEvent\022\020\n\010chai"
-  "r_id\030\001 \001(\005\022\020\n\010chess_id\030\002 \001(\005\022\020\n\010event_id"
-  "\030\003 \001(\005\"\351\001\n\020MsgChessInfoResp\022\020\n\010chair_id\030"
-  "\001 \001(\005\022\020\n\010chess_id\030\002 \001(\005\022\021\n\tis_unlock\030\003 \001"
-  "(\010\022\021\n\tbag_count\030\004 \001(\005\022\r\n\005retry\030\005 \001(\005\022\016\n\006"
-  "map_id\030\006 \001(\005\022\022\n\nend_map_id\030\007 \001(\005\022\021\n\trout"
-  "e_num\030\010 \001(\005\022\020\n\010event_id\030\t \001(\005\022\020\n\010swith_i"
-  "d\030\n \001(\005\022\023\n\013finish_line\030\013 \001(\010\022\014\n\004code\030\014 \001"
-  "(\005\"\222\001\n\nGameResult\022\020\n\010chair_id\030\001 \001(\005\022&\n\tu"
-  "ser_info\030\002 \001(\0132\023.LudoQuick.UserInfo\022\021\n\tu"
-  "ser_gold\030\003 \001(\003\022\013\n\003win\030\004 \001(\003\022\013\n\003bet\030\005 \001(\003"
-  "\022\013\n\003bag\030\006 \001(\003\022\020\n\010bag_back\030\007 \001(\003\"6\n\rMsgRe"
-  "sultResp\022%\n\006result\030\001 \003(\0132\025.LudoQuick.Gam"
-  "eResult*\262\002\n\017EMsgIDLudoQuick\022\026\n\022MsgID_Fir"
-  "stPublish\020\000\022\027\n\023SUB_SC_FirstPublish\020\001\022\023\n\017"
-  "SUB_SC_NoticeOp\020\002\022\023\n\017SUB_CS_DiceInfo\020\003\022\024"
-  "\n\020SUB_SC_ThrowDice\020\004\022\027\n\023SUB_CS_OperateCh"
-  "ess\020\005\022\024\n\020SUB_SC_ChessInfo\020\006\022\027\n\023SUB_CS_Tr"
-  "iggerEvent\020\007\022\025\n\021SUB_SC_GameResult\020\t\022\023\n\017S"
-  "UB_CS_Optional\020\n\022\021\n\rSUB_CS_GiveUp\020\013\022\027\n\023S"
-  "UB_SC_GiveUpResult\020\014\022\016\n\nSUB_SC_ERR\020\rb\006pr"
-  "oto3"
+  "\003pos\030\003 \001(\005\"\200\001\n\010UserInfo\022\020\n\010chair_id\030\001 \001("
+  "\005\022(\n\nroute_info\030\002 \003(\0132\024.LudoQuick.RouteI"
+  "nfo\022\032\n\022finish_line_switch\030\003 \001(\010\022\013\n\003end\030\004"
+  " \001(\010\022\017\n\007is_exit\030\005 \001(\010\"\301\001\n\tChessGrid\022\016\n\006p"
+  "os_id\030\001 \001(\005\022\022\n\nsafe_house\030\002 \001(\005\022\020\n\010gold_"
+  "bag\030\003 \001(\005\022\014\n\004prop\030\004 \001(\005\022\016\n\006switch\030\005 \001(\005\022"
+  "\022\n\ninflection\030\006 \001(\005\022\021\n\tnext_pos1\030\007 \001(\005\022\021"
+  "\n\tnext_pos2\030\010 \001(\005\022\023\n\013start_point\030\t \001(\005\022\021"
+  "\n\tend_point\030\n \001(\005\"(\n\nMapBagInfo\022\013\n\003pos\030\001"
+  " \001(\005\022\r\n\005count\030\002 \001(\005\"\272\001\n\020MsgSceneInfoResp"
+  "\022\022\n\ngame_state\030\001 \001(\005\022\024\n\014current_user\030\002 \001"
+  "(\005\022\024\n\014current_dice\030\003 \001(\005\022\026\n\016time_remaini"
+  "ng\030\004 \001(\005\022&\n\007map_bag\030\005 \003(\0132\025.LudoQuick.Ma"
+  "pBagInfo\022&\n\tuser_info\030\006 \003(\0132\023.LudoQuick."
+  "UserInfo\"2\n\017MsgNoticeOpResp\022\020\n\010chair_id\030"
+  "\001 \001(\005\022\r\n\005times\030\002 \001(\005\"7\n\020MsgThrowDiceResp"
+  "\022\020\n\010chair_id\030\001 \001(\005\022\021\n\tdice_roll\030\002 \001(\005\"H\n"
+  "\017MsgOperateChess\022\020\n\010chair_id\030\001 \001(\005\022\020\n\010ch"
+  "ess_id\030\002 \001(\005\022\021\n\tis_unlock\030\003 \001(\010\"G\n\017MsgTr"
+  "iggerEvent\022\020\n\010chair_id\030\001 \001(\005\022\020\n\010chess_id"
+  "\030\002 \001(\005\022\020\n\010event_id\030\003 \001(\005\"\351\001\n\020MsgChessInf"
+  "oResp\022\020\n\010chair_id\030\001 \001(\005\022\020\n\010chess_id\030\002 \001("
+  "\005\022\021\n\tis_unlock\030\003 \001(\010\022\021\n\tbag_count\030\004 \001(\005\022"
+  "\r\n\005retry\030\005 \001(\005\022\016\n\006map_id\030\006 \001(\005\022\022\n\nend_ma"
+  "p_id\030\007 \001(\005\022\021\n\troute_num\030\010 \001(\005\022\020\n\010event_i"
+  "d\030\t \001(\005\022\020\n\010swith_id\030\n \001(\005\022\023\n\013finish_line"
+  "\030\013 \001(\010\022\014\n\004code\030\014 \001(\005\"\222\001\n\nGameResult\022\020\n\010c"
+  "hair_id\030\001 \001(\005\022&\n\tuser_info\030\002 \001(\0132\023.LudoQ"
+  "uick.UserInfo\022\021\n\tuser_gold\030\003 \001(\003\022\013\n\003win\030"
+  "\004 \001(\003\022\013\n\003bet\030\005 \001(\003\022\013\n\003bag\030\006 \001(\003\022\020\n\010bag_b"
+  "ack\030\007 \001(\003\"6\n\rMsgResultResp\022%\n\006result\030\001 \003"
+  "(\0132\025.LudoQuick.GameResult*\262\002\n\017EMsgIDLudo"
+  "Quick\022\026\n\022MsgID_FirstPublish\020\000\022\027\n\023SUB_SC_"
+  "FirstPublish\020\001\022\023\n\017SUB_SC_NoticeOp\020\002\022\023\n\017S"
+  "UB_CS_DiceInfo\020\003\022\024\n\020SUB_SC_ThrowDice\020\004\022\027"
+  "\n\023SUB_CS_OperateChess\020\005\022\024\n\020SUB_SC_ChessI"
+  "nfo\020\006\022\027\n\023SUB_CS_TriggerEvent\020\007\022\025\n\021SUB_SC"
+  "_GameResult\020\t\022\023\n\017SUB_CS_Optional\020\n\022\021\n\rSU"
+  "B_CS_GiveUp\020\013\022\027\n\023SUB_SC_GiveUpResult\020\014\022\016"
+  "\n\nSUB_SC_ERR\020\rb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_LudoQuick_2eproto_deps[1] = {
 };
@@ -442,7 +443,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Lud
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_LudoQuick_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_LudoQuick_2eproto = {
-  false, false, descriptor_table_protodef_LudoQuick_2eproto, "LudoQuick.proto", 1644,
+  false, false, descriptor_table_protodef_LudoQuick_2eproto, "LudoQuick.proto", 1662,
   &descriptor_table_LudoQuick_2eproto_once, descriptor_table_LudoQuick_2eproto_sccs, descriptor_table_LudoQuick_2eproto_deps, 12, 0,
   schemas, file_default_instances, TableStruct_LudoQuick_2eproto::offsets,
   file_level_metadata_LudoQuick_2eproto, 12, file_level_enum_descriptors_LudoQuick_2eproto, file_level_service_descriptors_LudoQuick_2eproto,
@@ -747,8 +748,8 @@ UserInfo::UserInfo(const UserInfo& from)
       route_info_(from.route_info_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&chair_id_, &from.chair_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&end_) -
-    reinterpret_cast<char*>(&chair_id_)) + sizeof(end_));
+    static_cast<size_t>(reinterpret_cast<char*>(&is_exit_) -
+    reinterpret_cast<char*>(&chair_id_)) + sizeof(is_exit_));
   // @@protoc_insertion_point(copy_constructor:LudoQuick.UserInfo)
 }
 
@@ -756,8 +757,8 @@ void UserInfo::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_UserInfo_LudoQuick_2eproto.base);
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&chair_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&end_) -
-      reinterpret_cast<char*>(&chair_id_)) + sizeof(end_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&is_exit_) -
+      reinterpret_cast<char*>(&chair_id_)) + sizeof(is_exit_));
 }
 
 UserInfo::~UserInfo() {
@@ -793,8 +794,8 @@ void UserInfo::Clear() {
 
   route_info_.Clear();
   ::memset(&chair_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&end_) -
-      reinterpret_cast<char*>(&chair_id_)) + sizeof(end_));
+      reinterpret_cast<char*>(&is_exit_) -
+      reinterpret_cast<char*>(&chair_id_)) + sizeof(is_exit_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -835,6 +836,13 @@ const char* UserInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::i
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           end_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // bool is_exit = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+          is_exit_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -892,6 +900,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(4, this->_internal_end(), target);
   }
 
+  // bool is_exit = 5;
+  if (this->is_exit() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(5, this->_internal_is_exit(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -929,6 +943,11 @@ size_t UserInfo::ByteSizeLong() const {
 
   // bool end = 4;
   if (this->end() != 0) {
+    total_size += 1 + 1;
+  }
+
+  // bool is_exit = 5;
+  if (this->is_exit() != 0) {
     total_size += 1 + 1;
   }
 
@@ -973,6 +992,9 @@ void UserInfo::MergeFrom(const UserInfo& from) {
   if (from.end() != 0) {
     _internal_set_end(from._internal_end());
   }
+  if (from.is_exit() != 0) {
+    _internal_set_is_exit(from._internal_is_exit());
+  }
 }
 
 void UserInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -998,8 +1020,8 @@ void UserInfo::InternalSwap(UserInfo* other) {
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   route_info_.InternalSwap(&other->route_info_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(UserInfo, end_)
-      + sizeof(UserInfo::end_)
+      PROTOBUF_FIELD_OFFSET(UserInfo, is_exit_)
+      + sizeof(UserInfo::is_exit_)
       - PROTOBUF_FIELD_OFFSET(UserInfo, chair_id_)>(
           reinterpret_cast<char*>(&chair_id_),
           reinterpret_cast<char*>(&other->chair_id_));

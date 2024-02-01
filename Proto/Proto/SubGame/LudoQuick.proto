@@ -33,6 +33,7 @@ message UserInfo
 	repeated RouteInfo route_info 	= 2;		//棋子信息
 	bool finish_line_switch 		= 3;		//终点线开关
 	bool end						= 4;		//是否到达终点1是
+	bool is_exit					= 5;		// 是否提前退出 1 表示是提前退出
 }
 //棋格信息
 message ChessGrid

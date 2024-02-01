@@ -420,6 +420,7 @@ class UserInfo PROTOBUF_FINAL :
     kChairIdFieldNumber = 1,
     kFinishLineSwitchFieldNumber = 3,
     kEndFieldNumber = 4,
+    kIsExitFieldNumber = 5,
   };
   // repeated .LudoQuick.RouteInfo route_info = 2;
   int route_info_size() const;
@@ -466,6 +467,15 @@ class UserInfo PROTOBUF_FINAL :
   void _internal_set_end(bool value);
   public:
 
+  // bool is_exit = 5;
+  void clear_is_exit();
+  bool is_exit() const;
+  void set_is_exit(bool value);
+  private:
+  bool _internal_is_exit() const;
+  void _internal_set_is_exit(bool value);
+  public:
+
   // @@protoc_insertion_point(class_scope:LudoQuick.UserInfo)
  private:
   class _Internal;
@@ -477,6 +487,7 @@ class UserInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
   bool finish_line_switch_;
   bool end_;
+  bool is_exit_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_LudoQuick_2eproto;
 };
@@ -2466,6 +2477,26 @@ inline void UserInfo::_internal_set_end(bool value) {
 inline void UserInfo::set_end(bool value) {
   _internal_set_end(value);
   // @@protoc_insertion_point(field_set:LudoQuick.UserInfo.end)
+}
+
+// bool is_exit = 5;
+inline void UserInfo::clear_is_exit() {
+  is_exit_ = false;
+}
+inline bool UserInfo::_internal_is_exit() const {
+  return is_exit_;
+}
+inline bool UserInfo::is_exit() const {
+  // @@protoc_insertion_point(field_get:LudoQuick.UserInfo.is_exit)
+  return _internal_is_exit();
+}
+inline void UserInfo::_internal_set_is_exit(bool value) {
+  
+  is_exit_ = value;
+}
+inline void UserInfo::set_is_exit(bool value) {
+  _internal_set_is_exit(value);
+  // @@protoc_insertion_point(field_set:LudoQuick.UserInfo.is_exit)
 }
 
 // -------------------------------------------------------------------

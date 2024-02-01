@@ -26,46 +26,47 @@ namespace LudoQuick {
           string.Concat(
             "Ch1Qcm90by9TdWJHYW1lL0x1ZG9RdWljay5wcm90bxIJTHVkb1F1aWNrIjwK",
             "CVJvdXRlSW5mbxIQCghjaGVzc19pZBgBIAEoBRIQCghnb2xkX2JhZxgCIAEo",
-            "BRILCgNwb3MYAyABKAUibwoIVXNlckluZm8SEAoIY2hhaXJfaWQYASABKAUS",
-            "KAoKcm91dGVfaW5mbxgCIAMoCzIULkx1ZG9RdWljay5Sb3V0ZUluZm8SGgoS",
-            "ZmluaXNoX2xpbmVfc3dpdGNoGAMgASgIEgsKA2VuZBgEIAEoCCLBAQoJQ2hl",
-            "c3NHcmlkEg4KBnBvc19pZBgBIAEoBRISCgpzYWZlX2hvdXNlGAIgASgFEhAK",
-            "CGdvbGRfYmFnGAMgASgFEgwKBHByb3AYBCABKAUSDgoGc3dpdGNoGAUgASgF",
-            "EhIKCmluZmxlY3Rpb24YBiABKAUSEQoJbmV4dF9wb3MxGAcgASgFEhEKCW5l",
-            "eHRfcG9zMhgIIAEoBRITCgtzdGFydF9wb2ludBgJIAEoBRIRCgllbmRfcG9p",
-            "bnQYCiABKAUiKAoKTWFwQmFnSW5mbxILCgNwb3MYASABKAUSDQoFY291bnQY",
-            "AiABKAUiugEKEE1zZ1NjZW5lSW5mb1Jlc3ASEgoKZ2FtZV9zdGF0ZRgBIAEo",
-            "BRIUCgxjdXJyZW50X3VzZXIYAiABKAUSFAoMY3VycmVudF9kaWNlGAMgASgF",
-            "EhYKDnRpbWVfcmVtYWluaW5nGAQgASgFEiYKB21hcF9iYWcYBSADKAsyFS5M",
-            "dWRvUXVpY2suTWFwQmFnSW5mbxImCgl1c2VyX2luZm8YBiADKAsyEy5MdWRv",
-            "UXVpY2suVXNlckluZm8iMgoPTXNnTm90aWNlT3BSZXNwEhAKCGNoYWlyX2lk",
-            "GAEgASgFEg0KBXRpbWVzGAIgASgFIjcKEE1zZ1Rocm93RGljZVJlc3ASEAoI",
-            "Y2hhaXJfaWQYASABKAUSEQoJZGljZV9yb2xsGAIgASgFIkgKD01zZ09wZXJh",
-            "dGVDaGVzcxIQCghjaGFpcl9pZBgBIAEoBRIQCghjaGVzc19pZBgCIAEoBRIR",
-            "Cglpc191bmxvY2sYAyABKAgiRwoPTXNnVHJpZ2dlckV2ZW50EhAKCGNoYWly",
-            "X2lkGAEgASgFEhAKCGNoZXNzX2lkGAIgASgFEhAKCGV2ZW50X2lkGAMgASgF",
-            "IukBChBNc2dDaGVzc0luZm9SZXNwEhAKCGNoYWlyX2lkGAEgASgFEhAKCGNo",
-            "ZXNzX2lkGAIgASgFEhEKCWlzX3VubG9jaxgDIAEoCBIRCgliYWdfY291bnQY",
-            "BCABKAUSDQoFcmV0cnkYBSABKAUSDgoGbWFwX2lkGAYgASgFEhIKCmVuZF9t",
-            "YXBfaWQYByABKAUSEQoJcm91dGVfbnVtGAggASgFEhAKCGV2ZW50X2lkGAkg",
-            "ASgFEhAKCHN3aXRoX2lkGAogASgFEhMKC2ZpbmlzaF9saW5lGAsgASgIEgwK",
-            "BGNvZGUYDCABKAUikgEKCkdhbWVSZXN1bHQSEAoIY2hhaXJfaWQYASABKAUS",
-            "JgoJdXNlcl9pbmZvGAIgASgLMhMuTHVkb1F1aWNrLlVzZXJJbmZvEhEKCXVz",
-            "ZXJfZ29sZBgDIAEoAxILCgN3aW4YBCABKAMSCwoDYmV0GAUgASgDEgsKA2Jh",
-            "ZxgGIAEoAxIQCghiYWdfYmFjaxgHIAEoAyI2Cg1Nc2dSZXN1bHRSZXNwEiUK",
-            "BnJlc3VsdBgBIAMoCzIVLkx1ZG9RdWljay5HYW1lUmVzdWx0KrICCg9FTXNn",
-            "SURMdWRvUXVpY2sSFgoSTXNnSURfRmlyc3RQdWJsaXNoEAASFwoTU1VCX1ND",
-            "X0ZpcnN0UHVibGlzaBABEhMKD1NVQl9TQ19Ob3RpY2VPcBACEhMKD1NVQl9D",
-            "U19EaWNlSW5mbxADEhQKEFNVQl9TQ19UaHJvd0RpY2UQBBIXChNTVUJfQ1Nf",
-            "T3BlcmF0ZUNoZXNzEAUSFAoQU1VCX1NDX0NoZXNzSW5mbxAGEhcKE1NVQl9D",
-            "U19UcmlnZ2VyRXZlbnQQBxIVChFTVUJfU0NfR2FtZVJlc3VsdBAJEhMKD1NV",
-            "Ql9DU19PcHRpb25hbBAKEhEKDVNVQl9DU19HaXZlVXAQCxIXChNTVUJfU0Nf",
-            "R2l2ZVVwUmVzdWx0EAwSDgoKU1VCX1NDX0VSUhANYgZwcm90bzM="));
+            "BRILCgNwb3MYAyABKAUigAEKCFVzZXJJbmZvEhAKCGNoYWlyX2lkGAEgASgF",
+            "EigKCnJvdXRlX2luZm8YAiADKAsyFC5MdWRvUXVpY2suUm91dGVJbmZvEhoK",
+            "EmZpbmlzaF9saW5lX3N3aXRjaBgDIAEoCBILCgNlbmQYBCABKAgSDwoHaXNf",
+            "ZXhpdBgFIAEoCCLBAQoJQ2hlc3NHcmlkEg4KBnBvc19pZBgBIAEoBRISCgpz",
+            "YWZlX2hvdXNlGAIgASgFEhAKCGdvbGRfYmFnGAMgASgFEgwKBHByb3AYBCAB",
+            "KAUSDgoGc3dpdGNoGAUgASgFEhIKCmluZmxlY3Rpb24YBiABKAUSEQoJbmV4",
+            "dF9wb3MxGAcgASgFEhEKCW5leHRfcG9zMhgIIAEoBRITCgtzdGFydF9wb2lu",
+            "dBgJIAEoBRIRCgllbmRfcG9pbnQYCiABKAUiKAoKTWFwQmFnSW5mbxILCgNw",
+            "b3MYASABKAUSDQoFY291bnQYAiABKAUiugEKEE1zZ1NjZW5lSW5mb1Jlc3AS",
+            "EgoKZ2FtZV9zdGF0ZRgBIAEoBRIUCgxjdXJyZW50X3VzZXIYAiABKAUSFAoM",
+            "Y3VycmVudF9kaWNlGAMgASgFEhYKDnRpbWVfcmVtYWluaW5nGAQgASgFEiYK",
+            "B21hcF9iYWcYBSADKAsyFS5MdWRvUXVpY2suTWFwQmFnSW5mbxImCgl1c2Vy",
+            "X2luZm8YBiADKAsyEy5MdWRvUXVpY2suVXNlckluZm8iMgoPTXNnTm90aWNl",
+            "T3BSZXNwEhAKCGNoYWlyX2lkGAEgASgFEg0KBXRpbWVzGAIgASgFIjcKEE1z",
+            "Z1Rocm93RGljZVJlc3ASEAoIY2hhaXJfaWQYASABKAUSEQoJZGljZV9yb2xs",
+            "GAIgASgFIkgKD01zZ09wZXJhdGVDaGVzcxIQCghjaGFpcl9pZBgBIAEoBRIQ",
+            "CghjaGVzc19pZBgCIAEoBRIRCglpc191bmxvY2sYAyABKAgiRwoPTXNnVHJp",
+            "Z2dlckV2ZW50EhAKCGNoYWlyX2lkGAEgASgFEhAKCGNoZXNzX2lkGAIgASgF",
+            "EhAKCGV2ZW50X2lkGAMgASgFIukBChBNc2dDaGVzc0luZm9SZXNwEhAKCGNo",
+            "YWlyX2lkGAEgASgFEhAKCGNoZXNzX2lkGAIgASgFEhEKCWlzX3VubG9jaxgD",
+            "IAEoCBIRCgliYWdfY291bnQYBCABKAUSDQoFcmV0cnkYBSABKAUSDgoGbWFw",
+            "X2lkGAYgASgFEhIKCmVuZF9tYXBfaWQYByABKAUSEQoJcm91dGVfbnVtGAgg",
+            "ASgFEhAKCGV2ZW50X2lkGAkgASgFEhAKCHN3aXRoX2lkGAogASgFEhMKC2Zp",
+            "bmlzaF9saW5lGAsgASgIEgwKBGNvZGUYDCABKAUikgEKCkdhbWVSZXN1bHQS",
+            "EAoIY2hhaXJfaWQYASABKAUSJgoJdXNlcl9pbmZvGAIgASgLMhMuTHVkb1F1",
+            "aWNrLlVzZXJJbmZvEhEKCXVzZXJfZ29sZBgDIAEoAxILCgN3aW4YBCABKAMS",
+            "CwoDYmV0GAUgASgDEgsKA2JhZxgGIAEoAxIQCghiYWdfYmFjaxgHIAEoAyI2",
+            "Cg1Nc2dSZXN1bHRSZXNwEiUKBnJlc3VsdBgBIAMoCzIVLkx1ZG9RdWljay5H",
+            "YW1lUmVzdWx0KrICCg9FTXNnSURMdWRvUXVpY2sSFgoSTXNnSURfRmlyc3RQ",
+            "dWJsaXNoEAASFwoTU1VCX1NDX0ZpcnN0UHVibGlzaBABEhMKD1NVQl9TQ19O",
+            "b3RpY2VPcBACEhMKD1NVQl9DU19EaWNlSW5mbxADEhQKEFNVQl9TQ19UaHJv",
+            "d0RpY2UQBBIXChNTVUJfQ1NfT3BlcmF0ZUNoZXNzEAUSFAoQU1VCX1NDX0No",
+            "ZXNzSW5mbxAGEhcKE1NVQl9DU19UcmlnZ2VyRXZlbnQQBxIVChFTVUJfU0Nf",
+            "R2FtZVJlc3VsdBAJEhMKD1NVQl9DU19PcHRpb25hbBAKEhEKDVNVQl9DU19H",
+            "aXZlVXAQCxIXChNTVUJfU0NfR2l2ZVVwUmVzdWx0EAwSDgoKU1VCX1NDX0VS",
+            "UhANYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::LudoQuick.EMsgIDLudoQuick), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.RouteInfo), global::LudoQuick.RouteInfo.Parser, new[]{ "ChessId", "GoldBag", "Pos" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.UserInfo), global::LudoQuick.UserInfo.Parser, new[]{ "ChairId", "RouteInfo", "FinishLineSwitch", "End" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.UserInfo), global::LudoQuick.UserInfo.Parser, new[]{ "ChairId", "RouteInfo", "FinishLineSwitch", "End", "IsExit" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.ChessGrid), global::LudoQuick.ChessGrid.Parser, new[]{ "PosId", "SafeHouse", "GoldBag", "Prop", "Switch", "Inflection", "NextPos1", "NextPos2", "StartPoint", "EndPoint" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MapBagInfo), global::LudoQuick.MapBagInfo.Parser, new[]{ "Pos", "Count" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::LudoQuick.MsgSceneInfoResp), global::LudoQuick.MsgSceneInfoResp.Parser, new[]{ "GameState", "CurrentUser", "CurrentDice", "TimeRemaining", "MapBag", "UserInfo" }, null, null, null, null),
@@ -435,6 +436,7 @@ namespace LudoQuick {
       routeInfo_ = other.routeInfo_.Clone();
       finishLineSwitch_ = other.finishLineSwitch_;
       end_ = other.end_;
+      isExit_ = other.isExit_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -498,6 +500,20 @@ namespace LudoQuick {
       }
     }
 
+    /// <summary>Field number for the "is_exit" field.</summary>
+    public const int IsExitFieldNumber = 5;
+    private bool isExit_;
+    /// <summary>
+    /// 是否提前退出 1 表示是提前退出
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsExit {
+      get { return isExit_; }
+      set {
+        isExit_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as UserInfo);
@@ -515,6 +531,7 @@ namespace LudoQuick {
       if(!routeInfo_.Equals(other.routeInfo_)) return false;
       if (FinishLineSwitch != other.FinishLineSwitch) return false;
       if (End != other.End) return false;
+      if (IsExit != other.IsExit) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -525,6 +542,7 @@ namespace LudoQuick {
       hash ^= routeInfo_.GetHashCode();
       if (FinishLineSwitch != false) hash ^= FinishLineSwitch.GetHashCode();
       if (End != false) hash ^= End.GetHashCode();
+      if (IsExit != false) hash ^= IsExit.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -554,6 +572,10 @@ namespace LudoQuick {
         output.WriteRawTag(32);
         output.WriteBool(End);
       }
+      if (IsExit != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(IsExit);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -576,6 +598,10 @@ namespace LudoQuick {
         output.WriteRawTag(32);
         output.WriteBool(End);
       }
+      if (IsExit != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(IsExit);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -593,6 +619,9 @@ namespace LudoQuick {
         size += 1 + 1;
       }
       if (End != false) {
+        size += 1 + 1;
+      }
+      if (IsExit != false) {
         size += 1 + 1;
       }
       if (_unknownFields != null) {
@@ -615,6 +644,9 @@ namespace LudoQuick {
       }
       if (other.End != false) {
         End = other.End;
+      }
+      if (other.IsExit != false) {
+        IsExit = other.IsExit;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -646,6 +678,10 @@ namespace LudoQuick {
             End = input.ReadBool();
             break;
           }
+          case 40: {
+            IsExit = input.ReadBool();
+            break;
+          }
         }
       }
     #endif
@@ -674,6 +710,10 @@ namespace LudoQuick {
           }
           case 32: {
             End = input.ReadBool();
+            break;
+          }
+          case 40: {
+            IsExit = input.ReadBool();
             break;
           }
         }
