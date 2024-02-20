@@ -408,6 +408,7 @@ message MsgStorageCode
 	int32		user_id				= 1;	//玩家ID
 	string		phone				= 2;	//手机号
 	int32		code				= 3;	//验证码
+	int32		type		 		= 4;	//类型
 };
 
 //绑定手机

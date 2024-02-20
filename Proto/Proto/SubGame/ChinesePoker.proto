@@ -1,0 +1,159 @@
+syntax = "proto3";
+
+package ChinesePoker;
+
+//桌子状态
+enum ECPGameState
+{	
+	GS_TP_READY							= 0;	//准备
+	GS_TP_DEAL							= 1;	//发牌
+	GS_TP_PLAYING						= 2;	//游戏
+	GS_TP_CONFIRM 						= 3;	//理牌完成
+	GS_TP_RESULT						= 4;	//结算
+};
+
+//玩家状态
+enum ECPPlayerState
+{	
+	PS_READY							= 0;	//准备
+	PS_PLAY								= 1;	//游戏
+	PS_TIMEOUT							= 2;	//超时
+};
+
+//牌型
+enum ECPCardType
+{
+	//扑克类型
+	CT_SINGLE							= 0;	//单牌类型 高牌 5张杂牌
+	CT_DOUBLE							= 1;	//对子类型 2张相同点数的牌+1张杂牌（第一敦） 2张相同点数的牌+3张杂牌（二、三敦）
+	CT_DOUBLES							= 2;	//两对类型 2副对子+1张杂牌
+	CT_THREE							= 3;	//三条类型 3张点数相同的牌+2张杂牌
+	CT_SZ								= 4;	//顺子类型 5张数字连续的牌
+	CT_TH								= 5;	//同花类型 5张花色一样的牌
+	CT_HU_LU							= 6;	//葫芦类型 3张一样的牌+1对子
+	CT_FOUR								= 7;	//四条类型 4张相同点数的牌+1张杂牌
+	CT_THS								= 8;	//同花顺类型 5张相同花色且数字连续的牌
+	CT_HJTHS							= 9;	//皇家同花顺类型 10 J Q K A 的同花顺
+	CT_SPECIAL_STH						= 10;	//特殊牌型 三同花
+	CT_SPECIAL_SSZ						= 11;	//特殊牌型 三顺子
+	CT_SPECIAL_LDB						= 12;	//特殊牌型 六对半	6副对子+1张杂牌
+	CT_SPECIAL_YTL						= 13;	//特殊牌型 一条龙	手牌2345678910JQKA各一张
+	CT_SPECIAL_ZZQL						= 14;	//特殊牌型 至尊青龙 同花的一条龙
+	CT_MAX								= 15;	//最大牌型
+};
+
+enum ECPMsgIDSubGame
+{
+	MsgIDSubGame_Null					= 0;
+	MsgIDSubGame_GameStartResp			= 1;	//游戏开始发牌(CPMsgGameStartResp)
+	MsgIDSubGame_Action					= 2;	//玩家操作(CPMsgAction)
+	MsgIDSubGame_NotifyActionResp		= 3;	//玩家操作返回(CPMsgNotifyActionResp)
+	MsgIDSubGame_Confirm				= 4;	//玩家确定 无
+	MsgIDSubGame_ConfirmResp			= 5;	//玩家确定返回 MsgCommonN32 里面是椅子号 谁确定了已经
+	MsgIDSubGame_NotifyStateResp		= 6;	//桌子状态(CPMsgTableState)
+	MsgIDSubGame_GameResultResp			= 7;	//游戏结束(CPMsgGameResult)
+	MsgIDSubGame_TimeOutResp			= 8;	//通知超时(MsgCommonBool)
+	MsgIDSubGame_TimeOutReady			= 9;	//重新准备(MsgCommonBool)
+	MsgIDSubGame_TimeOutReadyResp		= 10;	//准备返回(MsgCommonBool)
+	MsgIDSubGame_TimeOutKickResp		= 11;	//超时踢了游戏(MsgCommonBool)
+}
+
+message CPMsgTableState
+{
+	int32				state			= 1;	//桌子状态
+	int32				out_ime			= 2;	//剩余时间
+}
+
+
+message CPMsgHandCards
+{
+	int32				chair_id		= 1;	//玩家椅子号
+	repeated int32		cards			= 2;	//手牌
+}
+
+//三墩的状态
+message CPCardStatus
+{
+	int32 chair_id 					= 1;		//椅子号
+	int32 type_first 				= 2;		//第一墩类型
+	int32 type_sencond 				= 3;		//第二墩类型
+	int32 type_third				= 4;		//第三墩类型
+	int32 status_first 				= 5;		//第一墩状态
+	int32 status_sencond 			= 6;		//第二墩状态
+	int32 status_third				= 7;		//第三墩状态
+	int32 add_first 				= 8;		//第一墩加成
+	int32 add_sencond 				= 9;		//第二墩加成
+	int32 add_third					= 10;		//第三墩加成
+}
+
+message CPMsgPlayerInfo
+{
+	int32				chair_id		= 1;	//玩家椅子号
+	int32				play_status		= 2;	//玩家状态
+	CPCardStatus		card_status		= 3;	//牌的状态
+	int64				gold			= 4;	//自己的金币，别人的是空
+	int64				win_gold		= 5;	//输赢分
+	CPMsgHandCards		handls			= 6;	//手牌
+}
+
+
+//场景消息
+message CPMsgSceneInfo
+{
+	int64			  	cell_score		= 1;	//底分
+	int32				table_state		= 2;	//桌子状态
+	int32				out_time		= 3;	//当前状态剩余超时时间
+	int32				total_time		= 4;	//当前状态总时间
+
+	repeated CPMsgPlayerInfo player_infos	= 6;	//玩家状态
+}
+
+//游戏开始
+message CPMsgGameStartResp
+{
+	CPMsgHandCards		handls			= 1;	//手牌
+	CPCardStatus		card_status		= 2;	//牌的状态
+	int32				special_type	= 3;	//特殊牌型 0非特殊 其它参照牌型列表
+}
+
+//玩家操作
+message CPMsgAction
+{
+	int32				type			= 1;	//0 单牌交换 1 整列交换
+	int64				pos1			= 2;	//交换位置1
+	int64				pos2			= 3;	//交换位置2
+}
+
+//玩家操作返回
+message CPMsgNotifyActionResp
+{
+	CPCardStatus		card_status		= 1;	//牌的状态
+	int32				special_type	= 2;	//特殊牌型 0非特殊 其它参照牌型列表
+}
+
+//比牌的结果
+message CPCardResult
+{
+	int32 chair_id 					= 1;		//椅子号
+	int64 score_first 				= 2;		//第一墩结果
+	int64 score_sencond 			= 3;		//第二墩结果
+	int64 score_third				= 4;		//第三墩结果
+	bool  win_first 				= 5;		//第一墩输赢
+	bool  win_sencond 				= 6;		//第二墩输赢
+	bool  win_third					= 7;		//第三墩输赢
+	bool  boom	 					= 8;		//是不是炸了
+	int64 score_total				= 9;		//总倍数
+	repeated int32	gunk_chair		=10;		//打枪了哪家
+}
+
+//游戏结果                                  
+message CPMsgGameResult                           
+{                                           
+	int32					game_tax		= 1;	//自己的税收
+	repeated int64			game_score		= 2;	//所有玩家的总输赢分
+	repeated CPCardStatus	card_status		= 3;	//牌的状态
+	repeated int32			special_type	= 4;	//特殊牌型 0非特殊 其它参照牌型列表
+	repeated CPCardResult	card_result		= 5;	//比牌的结果
+	repeated CPMsgHandCards	player_hands	= 6;	//手牌
+	int32					all_gunk_chair	= 7;	//全垒打的座位号 0xFF 无效代表没有全垒打
+}                                           

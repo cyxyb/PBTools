@@ -638,3 +638,10 @@ message MsgWeekMonthGetAwardResp
 	int64					award 		= 2;	//奖励数量 
 	int64					new_gold	= 3;	//最新金币  
 }
+
+//获取手机验证码
+message MsgGetPhoneCode
+{
+	string					phone_number = 1;	//手机号
+	int32					type		 = 2;	//类型
+}
