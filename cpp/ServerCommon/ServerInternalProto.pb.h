@@ -8046,6 +8046,7 @@ class MsgStorageCode PROTOBUF_FINAL :
     kPhoneFieldNumber = 2,
     kUserIdFieldNumber = 1,
     kCodeFieldNumber = 3,
+    kTypeFieldNumber = 4,
   };
   // string phone = 2;
   void clear_phone();
@@ -8081,6 +8082,15 @@ class MsgStorageCode PROTOBUF_FINAL :
   void _internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 type = 4;
+  void clear_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 type() const;
+  void set_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_type() const;
+  void _internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgStorageCode)
  private:
   class _Internal;
@@ -8091,6 +8101,7 @@ class MsgStorageCode PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr phone_;
   ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 code_;
+  ::PROTOBUF_NAMESPACE_ID::int32 type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -17520,6 +17531,26 @@ inline void MsgStorageCode::_internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 va
 inline void MsgStorageCode::set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_code(value);
   // @@protoc_insertion_point(field_set:MsgStorageCode.code)
+}
+
+// int32 type = 4;
+inline void MsgStorageCode::clear_type() {
+  type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgStorageCode::_internal_type() const {
+  return type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgStorageCode::type() const {
+  // @@protoc_insertion_point(field_get:MsgStorageCode.type)
+  return _internal_type();
+}
+inline void MsgStorageCode::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  type_ = value;
+}
+inline void MsgStorageCode::set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_type(value);
+  // @@protoc_insertion_point(field_set:MsgStorageCode.type)
 }
 
 // -------------------------------------------------------------------
