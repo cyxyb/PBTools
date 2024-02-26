@@ -27,67 +27,62 @@ namespace ChinesePoker {
             "CiBQcm90by9TdWJHYW1lL0NoaW5lc2VQb2tlci5wcm90bxIMQ2hpbmVzZVBv",
             "a2VyIjEKD0NQTXNnVGFibGVTdGF0ZRINCgVzdGF0ZRgBIAEoBRIPCgdvdXRf",
             "aW1lGAIgASgFIjEKDkNQTXNnSGFuZENhcmRzEhAKCGNoYWlyX2lkGAEgASgF",
-            "Eg0KBWNhcmRzGAIgAygFIt0BCgxDUENhcmRTdGF0dXMSEAoIY2hhaXJfaWQY",
-            "ASABKAUSEgoKdHlwZV9maXJzdBgCIAEoBRIUCgx0eXBlX3NlbmNvbmQYAyAB",
-            "KAUSEgoKdHlwZV90aGlyZBgEIAEoBRIUCgxzdGF0dXNfZmlyc3QYBSABKAUS",
-            "FgoOc3RhdHVzX3NlbmNvbmQYBiABKAUSFAoMc3RhdHVzX3RoaXJkGAcgASgF",
-            "EhEKCWFkZF9maXJzdBgIIAEoBRITCgthZGRfc2VuY29uZBgJIAEoBRIRCglh",
-            "ZGRfdGhpcmQYCiABKAUitwEKD0NQTXNnUGxheWVySW5mbxIQCghjaGFpcl9p",
-            "ZBgBIAEoBRITCgtwbGF5X3N0YXR1cxgCIAEoBRIvCgtjYXJkX3N0YXR1cxgD",
-            "IAEoCzIaLkNoaW5lc2VQb2tlci5DUENhcmRTdGF0dXMSDAoEZ29sZBgEIAEo",
-            "AxIQCgh3aW5fZ29sZBgFIAEoAxIsCgZoYW5kbHMYBiABKAsyHC5DaGluZXNl",
-            "UG9rZXIuQ1BNc2dIYW5kQ2FyZHMipwEKDkNQTXNnU2NlbmVJbmZvEhIKCmNl",
-            "bGxfc2NvcmUYASABKAMSEwoLdGFibGVfc3RhdGUYAiABKAUSEAoIb3V0X3Rp",
-            "bWUYAyABKAUSEgoKdG90YWxfdGltZRgEIAEoBRIRCglzZXJ2ZXJfaWQYBSAB",
-            "KAUSMwoMcGxheWVyX2luZm9zGAYgAygLMh0uQ2hpbmVzZVBva2VyLkNQTXNn",
-            "UGxheWVySW5mbyKJAQoSQ1BNc2dHYW1lU3RhcnRSZXNwEiwKBmhhbmRscxgB",
-            "IAEoCzIcLkNoaW5lc2VQb2tlci5DUE1zZ0hhbmRDYXJkcxIvCgtjYXJkX3N0",
-            "YXR1cxgCIAEoCzIaLkNoaW5lc2VQb2tlci5DUENhcmRTdGF0dXMSFAoMc3Bl",
-            "Y2lhbF90eXBlGAMgASgFIjcKC0NQTXNnQWN0aW9uEgwKBHR5cGUYASABKAUS",
-            "DAoEcG9zMRgCIAEoAxIMCgRwb3MyGAMgASgDIl4KFUNQTXNnTm90aWZ5QWN0",
-            "aW9uUmVzcBIvCgtjYXJkX3N0YXR1cxgBIAEoCzIaLkNoaW5lc2VQb2tlci5D",
-            "UENhcmRTdGF0dXMSFAoMc3BlY2lhbF90eXBlGAIgASgFItMBCgxDUENhcmRS",
-            "ZXN1bHQSEAoIY2hhaXJfaWQYASABKAUSEwoLc2NvcmVfZmlyc3QYAiABKAMS",
-            "FQoNc2NvcmVfc2VuY29uZBgDIAEoAxITCgtzY29yZV90aGlyZBgEIAEoAxIR",
-            "Cgl3aW5fZmlyc3QYBSABKAgSEwoLd2luX3NlbmNvbmQYBiABKAgSEQoJd2lu",
-            "X3RoaXJkGAcgASgIEgwKBGJvb20YCCABKAgSEwoLc2NvcmVfdG90YWwYCSAB",
-            "KAMSEgoKZ3Vua19jaGFpchgKIAMoBSL7AQoPQ1BNc2dHYW1lUmVzdWx0EhAK",
-            "CGdhbWVfdGF4GAEgASgFEhIKCmdhbWVfc2NvcmUYAiADKAMSLwoLY2FyZF9z",
-            "dGF0dXMYAyADKAsyGi5DaGluZXNlUG9rZXIuQ1BDYXJkU3RhdHVzEhQKDHNw",
-            "ZWNpYWxfdHlwZRgEIAMoBRIvCgtjYXJkX3Jlc3VsdBgFIAMoCzIaLkNoaW5l",
-            "c2VQb2tlci5DUENhcmRSZXN1bHQSMgoMcGxheWVyX2hhbmRzGAYgAygLMhwu",
-            "Q2hpbmVzZVBva2VyLkNQTXNnSGFuZENhcmRzEhYKDmFsbF9ndW5rX2NoYWly",
-            "GAcgASgFKlQKDEVDUEdhbWVTdGF0ZRIPCgtHU19UUF9SRUFEWRAAEg4KCkdT",
-            "X1RQX0RFQUwQARIRCg1HU19UUF9QTEFZSU5HEAISEAoMR1NfVFBfUkVTVUxU",
-            "EAMqSwoORUNQUGxheWVyU3RhdGUSDAoIUFNfUkVBRFkQABILCgdQU19QTEFZ",
-            "EAESDgoKUFNfQ09ORklSTRACEg4KClBTX1RJTUVPVVQQAyqFAgoLRUNQQ2Fy",
-            "ZFR5cGUSDQoJQ1RfU0lOR0xFEAASDQoJQ1RfRE9VQkxFEAESDgoKQ1RfRE9V",
-            "QkxFUxACEgwKCENUX1RIUkVFEAMSCQoFQ1RfU1oQBBIJCgVDVF9USBAFEgwK",
-            "CENUX0hVX0xVEAYSCwoHQ1RfRk9VUhAHEgoKBkNUX1RIUxAIEgwKCENUX0hK",
-            "VEhTEAkSEgoOQ1RfU1BFQ0lBTF9TVEgQChISCg5DVF9TUEVDSUFMX1NTWhAL",
-            "EhIKDkNUX1NQRUNJQUxfTERCEAwSEgoOQ1RfU1BFQ0lBTF9ZVEwQDRITCg9D",
-            "VF9TUEVDSUFMX1paUUwQDhIKCgZDVF9NQVgQDyqDAwoPRUNQTXNnSURTdWJH",
-            "YW1lEhUKEU1zZ0lEU3ViR2FtZV9OdWxsEAASHgoaTXNnSURTdWJHYW1lX0dh",
-            "bWVTdGFydFJlc3AQARIXChNNc2dJRFN1YkdhbWVfQWN0aW9uEAISIQodTXNn",
-            "SURTdWJHYW1lX05vdGlmeUFjdGlvblJlc3AQAxIYChRNc2dJRFN1YkdhbWVf",
-            "Q29uZmlybRAEEhwKGE1zZ0lEU3ViR2FtZV9Db25maXJtUmVzcBAFEiAKHE1z",
-            "Z0lEU3ViR2FtZV9Ob3RpZnlTdGF0ZVJlc3AQBhIfChtNc2dJRFN1YkdhbWVf",
-            "R2FtZVJlc3VsdFJlc3AQBxIeChpNc2dJRFN1YkdhbWVfU3RhcnRUaW1lUmVz",
-            "cBAIEh0KGU1zZ0lEU3ViR2FtZV9UaW1lT3V0UmVhZHkQCRIhCh1Nc2dJRFN1",
-            "YkdhbWVfVGltZU91dFJlYWR5UmVzcBAKEiAKHE1zZ0lEU3ViR2FtZV9UaW1l",
-            "T3V0S2lja1Jlc3AQC2IGcHJvdG8z"));
+            "Eg0KBWNhcmRzGAIgAygFIksKDENQQ2FyZFN0YXR1cxIQCghjaGFpcl9pZBgB",
+            "IAEoBRIMCgR0eXBlGAIgAygFEg4KBnN0YXR1cxgDIAMoBRILCgNhZGQYBCAD",
+            "KAUitwEKD0NQTXNnUGxheWVySW5mbxIQCghjaGFpcl9pZBgBIAEoBRITCgtw",
+            "bGF5X3N0YXR1cxgCIAEoBRIvCgtjYXJkX3N0YXR1cxgDIAEoCzIaLkNoaW5l",
+            "c2VQb2tlci5DUENhcmRTdGF0dXMSDAoEZ29sZBgEIAEoAxIQCgh3aW5fZ29s",
+            "ZBgFIAEoAxIsCgZoYW5kbHMYBiABKAsyHC5DaGluZXNlUG9rZXIuQ1BNc2dI",
+            "YW5kQ2FyZHMipwEKDkNQTXNnU2NlbmVJbmZvEhIKCmNlbGxfc2NvcmUYASAB",
+            "KAMSEwoLdGFibGVfc3RhdGUYAiABKAUSEAoIb3V0X3RpbWUYAyABKAUSEgoK",
+            "dG90YWxfdGltZRgEIAEoBRIRCglzZXJ2ZXJfaWQYBSABKAUSMwoMcGxheWVy",
+            "X2luZm9zGAYgAygLMh0uQ2hpbmVzZVBva2VyLkNQTXNnUGxheWVySW5mbyKJ",
+            "AQoSQ1BNc2dHYW1lU3RhcnRSZXNwEiwKBmhhbmRscxgBIAEoCzIcLkNoaW5l",
+            "c2VQb2tlci5DUE1zZ0hhbmRDYXJkcxIvCgtjYXJkX3N0YXR1cxgCIAEoCzIa",
+            "LkNoaW5lc2VQb2tlci5DUENhcmRTdGF0dXMSFAoMc3BlY2lhbF90eXBlGAMg",
+            "ASgFIjcKC0NQTXNnQWN0aW9uEgwKBHR5cGUYASABKAUSDAoEcG9zMRgCIAEo",
+            "AxIMCgRwb3MyGAMgASgDIl4KFUNQTXNnTm90aWZ5QWN0aW9uUmVzcBIvCgtj",
+            "YXJkX3N0YXR1cxgBIAEoCzIaLkNoaW5lc2VQb2tlci5DUENhcmRTdGF0dXMS",
+            "FAoMc3BlY2lhbF90eXBlGAIgASgFInMKDENQQ2FyZFJlc3VsdBIQCghjaGFp",
+            "cl9pZBgBIAEoBRINCgVzY29yZRgCIAMoAxILCgN3aW4YAyADKAgSDAoEYm9v",
+            "bRgEIAEoCBITCgtzY29yZV90b3RhbBgFIAEoAxISCgpndW5rX2NoYWlyGAYg",
+            "AygFIvsBCg9DUE1zZ0dhbWVSZXN1bHQSEAoIZ2FtZV90YXgYASABKAUSEgoK",
+            "Z2FtZV9zY29yZRgCIAMoAxIvCgtjYXJkX3N0YXR1cxgDIAMoCzIaLkNoaW5l",
+            "c2VQb2tlci5DUENhcmRTdGF0dXMSFAoMc3BlY2lhbF90eXBlGAQgAygFEi8K",
+            "C2NhcmRfcmVzdWx0GAUgAygLMhouQ2hpbmVzZVBva2VyLkNQQ2FyZFJlc3Vs",
+            "dBIyCgxwbGF5ZXJfaGFuZHMYBiADKAsyHC5DaGluZXNlUG9rZXIuQ1BNc2dI",
+            "YW5kQ2FyZHMSFgoOYWxsX2d1bmtfY2hhaXIYByABKAUqVAoMRUNQR2FtZVN0",
+            "YXRlEg8KC0dTX1RQX1JFQURZEAASDgoKR1NfVFBfREVBTBABEhEKDUdTX1RQ",
+            "X1BMQVlJTkcQAhIQCgxHU19UUF9SRVNVTFQQAypLCg5FQ1BQbGF5ZXJTdGF0",
+            "ZRIMCghQU19SRUFEWRAAEgsKB1BTX1BMQVkQARIOCgpQU19DT05GSVJNEAIS",
+            "DgoKUFNfVElNRU9VVBADKoUCCgtFQ1BDYXJkVHlwZRINCglDVF9TSU5HTEUQ",
+            "ABINCglDVF9ET1VCTEUQARIOCgpDVF9ET1VCTEVTEAISDAoIQ1RfVEhSRUUQ",
+            "AxIJCgVDVF9TWhAEEgkKBUNUX1RIEAUSDAoIQ1RfSFVfTFUQBhILCgdDVF9G",
+            "T1VSEAcSCgoGQ1RfVEhTEAgSDAoIQ1RfSEpUSFMQCRISCg5DVF9TUEVDSUFM",
+            "X1NUSBAKEhIKDkNUX1NQRUNJQUxfU1NaEAsSEgoOQ1RfU1BFQ0lBTF9MREIQ",
+            "DBISCg5DVF9TUEVDSUFMX1lUTBANEhMKD0NUX1NQRUNJQUxfWlpRTBAOEgoK",
+            "BkNUX01BWBAPKoMDCg9FQ1BNc2dJRFN1YkdhbWUSFQoRTXNnSURTdWJHYW1l",
+            "X051bGwQABIeChpNc2dJRFN1YkdhbWVfR2FtZVN0YXJ0UmVzcBABEhcKE01z",
+            "Z0lEU3ViR2FtZV9BY3Rpb24QAhIhCh1Nc2dJRFN1YkdhbWVfTm90aWZ5QWN0",
+            "aW9uUmVzcBADEhgKFE1zZ0lEU3ViR2FtZV9Db25maXJtEAQSHAoYTXNnSURT",
+            "dWJHYW1lX0NvbmZpcm1SZXNwEAUSIAocTXNnSURTdWJHYW1lX05vdGlmeVN0",
+            "YXRlUmVzcBAGEh8KG01zZ0lEU3ViR2FtZV9HYW1lUmVzdWx0UmVzcBAHEh4K",
+            "Gk1zZ0lEU3ViR2FtZV9TdGFydFRpbWVSZXNwEAgSHQoZTXNnSURTdWJHYW1l",
+            "X1RpbWVPdXRSZWFkeRAJEiEKHU1zZ0lEU3ViR2FtZV9UaW1lT3V0UmVhZHlS",
+            "ZXNwEAoSIAocTXNnSURTdWJHYW1lX1RpbWVPdXRLaWNrUmVzcBALYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::ChinesePoker.ECPGameState), typeof(global::ChinesePoker.ECPPlayerState), typeof(global::ChinesePoker.ECPCardType), typeof(global::ChinesePoker.ECPMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::ChinesePoker.CPMsgTableState), global::ChinesePoker.CPMsgTableState.Parser, new[]{ "State", "OutIme" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ChinesePoker.CPMsgHandCards), global::ChinesePoker.CPMsgHandCards.Parser, new[]{ "ChairId", "Cards" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ChinesePoker.CPCardStatus), global::ChinesePoker.CPCardStatus.Parser, new[]{ "ChairId", "TypeFirst", "TypeSencond", "TypeThird", "StatusFirst", "StatusSencond", "StatusThird", "AddFirst", "AddSencond", "AddThird" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ChinesePoker.CPCardStatus), global::ChinesePoker.CPCardStatus.Parser, new[]{ "ChairId", "Type", "Status", "Add" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ChinesePoker.CPMsgPlayerInfo), global::ChinesePoker.CPMsgPlayerInfo.Parser, new[]{ "ChairId", "PlayStatus", "CardStatus", "Gold", "WinGold", "Handls" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ChinesePoker.CPMsgSceneInfo), global::ChinesePoker.CPMsgSceneInfo.Parser, new[]{ "CellScore", "TableState", "OutTime", "TotalTime", "ServerId", "PlayerInfos" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ChinesePoker.CPMsgGameStartResp), global::ChinesePoker.CPMsgGameStartResp.Parser, new[]{ "Handls", "CardStatus", "SpecialType" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ChinesePoker.CPMsgAction), global::ChinesePoker.CPMsgAction.Parser, new[]{ "Type", "Pos1", "Pos2" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ChinesePoker.CPMsgNotifyActionResp), global::ChinesePoker.CPMsgNotifyActionResp.Parser, new[]{ "CardStatus", "SpecialType" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ChinesePoker.CPCardResult), global::ChinesePoker.CPCardResult.Parser, new[]{ "ChairId", "ScoreFirst", "ScoreSencond", "ScoreThird", "WinFirst", "WinSencond", "WinThird", "Boom", "ScoreTotal", "GunkChair" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ChinesePoker.CPCardResult), global::ChinesePoker.CPCardResult.Parser, new[]{ "ChairId", "Score", "Win", "Boom", "ScoreTotal", "GunkChair" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ChinesePoker.CPMsgGameResult), global::ChinesePoker.CPMsgGameResult.Parser, new[]{ "GameTax", "GameScore", "CardStatus", "SpecialType", "CardResult", "PlayerHands", "AllGunkChair" }, null, null, null, null)
           }));
     }
@@ -712,15 +707,9 @@ namespace ChinesePoker {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CPCardStatus(CPCardStatus other) : this() {
       chairId_ = other.chairId_;
-      typeFirst_ = other.typeFirst_;
-      typeSencond_ = other.typeSencond_;
-      typeThird_ = other.typeThird_;
-      statusFirst_ = other.statusFirst_;
-      statusSencond_ = other.statusSencond_;
-      statusThird_ = other.statusThird_;
-      addFirst_ = other.addFirst_;
-      addSencond_ = other.addSencond_;
-      addThird_ = other.addThird_;
+      type_ = other.type_.Clone();
+      status_ = other.status_.Clone();
+      add_ = other.add_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -743,130 +732,43 @@ namespace ChinesePoker {
       }
     }
 
-    /// <summary>Field number for the "type_first" field.</summary>
-    public const int TypeFirstFieldNumber = 2;
-    private int typeFirst_;
+    /// <summary>Field number for the "type" field.</summary>
+    public const int TypeFieldNumber = 2;
+    private static readonly pb::FieldCodec<int> _repeated_type_codec
+        = pb::FieldCodec.ForInt32(18);
+    private readonly pbc::RepeatedField<int> type_ = new pbc::RepeatedField<int>();
     /// <summary>
-    ///第一墩类型
+    ///三墩类型
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int TypeFirst {
-      get { return typeFirst_; }
-      set {
-        typeFirst_ = value;
-      }
+    public pbc::RepeatedField<int> Type {
+      get { return type_; }
     }
 
-    /// <summary>Field number for the "type_sencond" field.</summary>
-    public const int TypeSencondFieldNumber = 3;
-    private int typeSencond_;
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 3;
+    private static readonly pb::FieldCodec<int> _repeated_status_codec
+        = pb::FieldCodec.ForInt32(26);
+    private readonly pbc::RepeatedField<int> status_ = new pbc::RepeatedField<int>();
     /// <summary>
-    ///第二墩类型
+    ///三墩状态
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int TypeSencond {
-      get { return typeSencond_; }
-      set {
-        typeSencond_ = value;
-      }
+    public pbc::RepeatedField<int> Status {
+      get { return status_; }
     }
 
-    /// <summary>Field number for the "type_third" field.</summary>
-    public const int TypeThirdFieldNumber = 4;
-    private int typeThird_;
+    /// <summary>Field number for the "add" field.</summary>
+    public const int AddFieldNumber = 4;
+    private static readonly pb::FieldCodec<int> _repeated_add_codec
+        = pb::FieldCodec.ForInt32(34);
+    private readonly pbc::RepeatedField<int> add_ = new pbc::RepeatedField<int>();
     /// <summary>
-    ///第三墩类型
+    ///三墩加成
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int TypeThird {
-      get { return typeThird_; }
-      set {
-        typeThird_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "status_first" field.</summary>
-    public const int StatusFirstFieldNumber = 5;
-    private int statusFirst_;
-    /// <summary>
-    ///第一墩状态
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int StatusFirst {
-      get { return statusFirst_; }
-      set {
-        statusFirst_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "status_sencond" field.</summary>
-    public const int StatusSencondFieldNumber = 6;
-    private int statusSencond_;
-    /// <summary>
-    ///第二墩状态
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int StatusSencond {
-      get { return statusSencond_; }
-      set {
-        statusSencond_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "status_third" field.</summary>
-    public const int StatusThirdFieldNumber = 7;
-    private int statusThird_;
-    /// <summary>
-    ///第三墩状态
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int StatusThird {
-      get { return statusThird_; }
-      set {
-        statusThird_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "add_first" field.</summary>
-    public const int AddFirstFieldNumber = 8;
-    private int addFirst_;
-    /// <summary>
-    ///第一墩加成
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int AddFirst {
-      get { return addFirst_; }
-      set {
-        addFirst_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "add_sencond" field.</summary>
-    public const int AddSencondFieldNumber = 9;
-    private int addSencond_;
-    /// <summary>
-    ///第二墩加成
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int AddSencond {
-      get { return addSencond_; }
-      set {
-        addSencond_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "add_third" field.</summary>
-    public const int AddThirdFieldNumber = 10;
-    private int addThird_;
-    /// <summary>
-    ///第三墩加成
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int AddThird {
-      get { return addThird_; }
-      set {
-        addThird_ = value;
-      }
+    public pbc::RepeatedField<int> Add {
+      get { return add_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -883,15 +785,9 @@ namespace ChinesePoker {
         return true;
       }
       if (ChairId != other.ChairId) return false;
-      if (TypeFirst != other.TypeFirst) return false;
-      if (TypeSencond != other.TypeSencond) return false;
-      if (TypeThird != other.TypeThird) return false;
-      if (StatusFirst != other.StatusFirst) return false;
-      if (StatusSencond != other.StatusSencond) return false;
-      if (StatusThird != other.StatusThird) return false;
-      if (AddFirst != other.AddFirst) return false;
-      if (AddSencond != other.AddSencond) return false;
-      if (AddThird != other.AddThird) return false;
+      if(!type_.Equals(other.type_)) return false;
+      if(!status_.Equals(other.status_)) return false;
+      if(!add_.Equals(other.add_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -899,15 +795,9 @@ namespace ChinesePoker {
     public override int GetHashCode() {
       int hash = 1;
       if (ChairId != 0) hash ^= ChairId.GetHashCode();
-      if (TypeFirst != 0) hash ^= TypeFirst.GetHashCode();
-      if (TypeSencond != 0) hash ^= TypeSencond.GetHashCode();
-      if (TypeThird != 0) hash ^= TypeThird.GetHashCode();
-      if (StatusFirst != 0) hash ^= StatusFirst.GetHashCode();
-      if (StatusSencond != 0) hash ^= StatusSencond.GetHashCode();
-      if (StatusThird != 0) hash ^= StatusThird.GetHashCode();
-      if (AddFirst != 0) hash ^= AddFirst.GetHashCode();
-      if (AddSencond != 0) hash ^= AddSencond.GetHashCode();
-      if (AddThird != 0) hash ^= AddThird.GetHashCode();
+      hash ^= type_.GetHashCode();
+      hash ^= status_.GetHashCode();
+      hash ^= add_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -928,42 +818,9 @@ namespace ChinesePoker {
         output.WriteRawTag(8);
         output.WriteInt32(ChairId);
       }
-      if (TypeFirst != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(TypeFirst);
-      }
-      if (TypeSencond != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(TypeSencond);
-      }
-      if (TypeThird != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(TypeThird);
-      }
-      if (StatusFirst != 0) {
-        output.WriteRawTag(40);
-        output.WriteInt32(StatusFirst);
-      }
-      if (StatusSencond != 0) {
-        output.WriteRawTag(48);
-        output.WriteInt32(StatusSencond);
-      }
-      if (StatusThird != 0) {
-        output.WriteRawTag(56);
-        output.WriteInt32(StatusThird);
-      }
-      if (AddFirst != 0) {
-        output.WriteRawTag(64);
-        output.WriteInt32(AddFirst);
-      }
-      if (AddSencond != 0) {
-        output.WriteRawTag(72);
-        output.WriteInt32(AddSencond);
-      }
-      if (AddThird != 0) {
-        output.WriteRawTag(80);
-        output.WriteInt32(AddThird);
-      }
+      type_.WriteTo(output, _repeated_type_codec);
+      status_.WriteTo(output, _repeated_status_codec);
+      add_.WriteTo(output, _repeated_add_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -977,42 +834,9 @@ namespace ChinesePoker {
         output.WriteRawTag(8);
         output.WriteInt32(ChairId);
       }
-      if (TypeFirst != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(TypeFirst);
-      }
-      if (TypeSencond != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(TypeSencond);
-      }
-      if (TypeThird != 0) {
-        output.WriteRawTag(32);
-        output.WriteInt32(TypeThird);
-      }
-      if (StatusFirst != 0) {
-        output.WriteRawTag(40);
-        output.WriteInt32(StatusFirst);
-      }
-      if (StatusSencond != 0) {
-        output.WriteRawTag(48);
-        output.WriteInt32(StatusSencond);
-      }
-      if (StatusThird != 0) {
-        output.WriteRawTag(56);
-        output.WriteInt32(StatusThird);
-      }
-      if (AddFirst != 0) {
-        output.WriteRawTag(64);
-        output.WriteInt32(AddFirst);
-      }
-      if (AddSencond != 0) {
-        output.WriteRawTag(72);
-        output.WriteInt32(AddSencond);
-      }
-      if (AddThird != 0) {
-        output.WriteRawTag(80);
-        output.WriteInt32(AddThird);
-      }
+      type_.WriteTo(ref output, _repeated_type_codec);
+      status_.WriteTo(ref output, _repeated_status_codec);
+      add_.WriteTo(ref output, _repeated_add_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1025,33 +849,9 @@ namespace ChinesePoker {
       if (ChairId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChairId);
       }
-      if (TypeFirst != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TypeFirst);
-      }
-      if (TypeSencond != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TypeSencond);
-      }
-      if (TypeThird != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TypeThird);
-      }
-      if (StatusFirst != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(StatusFirst);
-      }
-      if (StatusSencond != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(StatusSencond);
-      }
-      if (StatusThird != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(StatusThird);
-      }
-      if (AddFirst != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(AddFirst);
-      }
-      if (AddSencond != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(AddSencond);
-      }
-      if (AddThird != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(AddThird);
-      }
+      size += type_.CalculateSize(_repeated_type_codec);
+      size += status_.CalculateSize(_repeated_status_codec);
+      size += add_.CalculateSize(_repeated_add_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1066,33 +866,9 @@ namespace ChinesePoker {
       if (other.ChairId != 0) {
         ChairId = other.ChairId;
       }
-      if (other.TypeFirst != 0) {
-        TypeFirst = other.TypeFirst;
-      }
-      if (other.TypeSencond != 0) {
-        TypeSencond = other.TypeSencond;
-      }
-      if (other.TypeThird != 0) {
-        TypeThird = other.TypeThird;
-      }
-      if (other.StatusFirst != 0) {
-        StatusFirst = other.StatusFirst;
-      }
-      if (other.StatusSencond != 0) {
-        StatusSencond = other.StatusSencond;
-      }
-      if (other.StatusThird != 0) {
-        StatusThird = other.StatusThird;
-      }
-      if (other.AddFirst != 0) {
-        AddFirst = other.AddFirst;
-      }
-      if (other.AddSencond != 0) {
-        AddSencond = other.AddSencond;
-      }
-      if (other.AddThird != 0) {
-        AddThird = other.AddThird;
-      }
+      type_.Add(other.type_);
+      status_.Add(other.status_);
+      add_.Add(other.add_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1111,40 +887,19 @@ namespace ChinesePoker {
             ChairId = input.ReadInt32();
             break;
           }
+          case 18:
           case 16: {
-            TypeFirst = input.ReadInt32();
+            type_.AddEntriesFrom(input, _repeated_type_codec);
             break;
           }
+          case 26:
           case 24: {
-            TypeSencond = input.ReadInt32();
+            status_.AddEntriesFrom(input, _repeated_status_codec);
             break;
           }
+          case 34:
           case 32: {
-            TypeThird = input.ReadInt32();
-            break;
-          }
-          case 40: {
-            StatusFirst = input.ReadInt32();
-            break;
-          }
-          case 48: {
-            StatusSencond = input.ReadInt32();
-            break;
-          }
-          case 56: {
-            StatusThird = input.ReadInt32();
-            break;
-          }
-          case 64: {
-            AddFirst = input.ReadInt32();
-            break;
-          }
-          case 72: {
-            AddSencond = input.ReadInt32();
-            break;
-          }
-          case 80: {
-            AddThird = input.ReadInt32();
+            add_.AddEntriesFrom(input, _repeated_add_codec);
             break;
           }
         }
@@ -1165,40 +920,19 @@ namespace ChinesePoker {
             ChairId = input.ReadInt32();
             break;
           }
+          case 18:
           case 16: {
-            TypeFirst = input.ReadInt32();
+            type_.AddEntriesFrom(ref input, _repeated_type_codec);
             break;
           }
+          case 26:
           case 24: {
-            TypeSencond = input.ReadInt32();
+            status_.AddEntriesFrom(ref input, _repeated_status_codec);
             break;
           }
+          case 34:
           case 32: {
-            TypeThird = input.ReadInt32();
-            break;
-          }
-          case 40: {
-            StatusFirst = input.ReadInt32();
-            break;
-          }
-          case 48: {
-            StatusSencond = input.ReadInt32();
-            break;
-          }
-          case 56: {
-            StatusThird = input.ReadInt32();
-            break;
-          }
-          case 64: {
-            AddFirst = input.ReadInt32();
-            break;
-          }
-          case 72: {
-            AddSencond = input.ReadInt32();
-            break;
-          }
-          case 80: {
-            AddThird = input.ReadInt32();
+            add_.AddEntriesFrom(ref input, _repeated_add_codec);
             break;
           }
         }
@@ -2747,12 +2481,8 @@ namespace ChinesePoker {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CPCardResult(CPCardResult other) : this() {
       chairId_ = other.chairId_;
-      scoreFirst_ = other.scoreFirst_;
-      scoreSencond_ = other.scoreSencond_;
-      scoreThird_ = other.scoreThird_;
-      winFirst_ = other.winFirst_;
-      winSencond_ = other.winSencond_;
-      winThird_ = other.winThird_;
+      score_ = other.score_.Clone();
+      win_ = other.win_.Clone();
       boom_ = other.boom_;
       scoreTotal_ = other.scoreTotal_;
       gunkChair_ = other.gunkChair_.Clone();
@@ -2778,92 +2508,34 @@ namespace ChinesePoker {
       }
     }
 
-    /// <summary>Field number for the "score_first" field.</summary>
-    public const int ScoreFirstFieldNumber = 2;
-    private long scoreFirst_;
+    /// <summary>Field number for the "score" field.</summary>
+    public const int ScoreFieldNumber = 2;
+    private static readonly pb::FieldCodec<long> _repeated_score_codec
+        = pb::FieldCodec.ForInt64(18);
+    private readonly pbc::RepeatedField<long> score_ = new pbc::RepeatedField<long>();
     /// <summary>
-    ///第一墩结果
+    ///三墩结果
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long ScoreFirst {
-      get { return scoreFirst_; }
-      set {
-        scoreFirst_ = value;
-      }
+    public pbc::RepeatedField<long> Score {
+      get { return score_; }
     }
 
-    /// <summary>Field number for the "score_sencond" field.</summary>
-    public const int ScoreSencondFieldNumber = 3;
-    private long scoreSencond_;
+    /// <summary>Field number for the "win" field.</summary>
+    public const int WinFieldNumber = 3;
+    private static readonly pb::FieldCodec<bool> _repeated_win_codec
+        = pb::FieldCodec.ForBool(26);
+    private readonly pbc::RepeatedField<bool> win_ = new pbc::RepeatedField<bool>();
     /// <summary>
-    ///第二墩结果
+    ///三墩输赢
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long ScoreSencond {
-      get { return scoreSencond_; }
-      set {
-        scoreSencond_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "score_third" field.</summary>
-    public const int ScoreThirdFieldNumber = 4;
-    private long scoreThird_;
-    /// <summary>
-    ///第三墩结果
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long ScoreThird {
-      get { return scoreThird_; }
-      set {
-        scoreThird_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "win_first" field.</summary>
-    public const int WinFirstFieldNumber = 5;
-    private bool winFirst_;
-    /// <summary>
-    ///第一墩输赢
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool WinFirst {
-      get { return winFirst_; }
-      set {
-        winFirst_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "win_sencond" field.</summary>
-    public const int WinSencondFieldNumber = 6;
-    private bool winSencond_;
-    /// <summary>
-    ///第二墩输赢
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool WinSencond {
-      get { return winSencond_; }
-      set {
-        winSencond_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "win_third" field.</summary>
-    public const int WinThirdFieldNumber = 7;
-    private bool winThird_;
-    /// <summary>
-    ///第三墩输赢
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool WinThird {
-      get { return winThird_; }
-      set {
-        winThird_ = value;
-      }
+    public pbc::RepeatedField<bool> Win {
+      get { return win_; }
     }
 
     /// <summary>Field number for the "boom" field.</summary>
-    public const int BoomFieldNumber = 8;
+    public const int BoomFieldNumber = 4;
     private bool boom_;
     /// <summary>
     ///是不是炸了
@@ -2877,7 +2549,7 @@ namespace ChinesePoker {
     }
 
     /// <summary>Field number for the "score_total" field.</summary>
-    public const int ScoreTotalFieldNumber = 9;
+    public const int ScoreTotalFieldNumber = 5;
     private long scoreTotal_;
     /// <summary>
     ///总倍数
@@ -2891,9 +2563,9 @@ namespace ChinesePoker {
     }
 
     /// <summary>Field number for the "gunk_chair" field.</summary>
-    public const int GunkChairFieldNumber = 10;
+    public const int GunkChairFieldNumber = 6;
     private static readonly pb::FieldCodec<int> _repeated_gunkChair_codec
-        = pb::FieldCodec.ForInt32(82);
+        = pb::FieldCodec.ForInt32(50);
     private readonly pbc::RepeatedField<int> gunkChair_ = new pbc::RepeatedField<int>();
     /// <summary>
     ///打枪了哪家
@@ -2917,12 +2589,8 @@ namespace ChinesePoker {
         return true;
       }
       if (ChairId != other.ChairId) return false;
-      if (ScoreFirst != other.ScoreFirst) return false;
-      if (ScoreSencond != other.ScoreSencond) return false;
-      if (ScoreThird != other.ScoreThird) return false;
-      if (WinFirst != other.WinFirst) return false;
-      if (WinSencond != other.WinSencond) return false;
-      if (WinThird != other.WinThird) return false;
+      if(!score_.Equals(other.score_)) return false;
+      if(!win_.Equals(other.win_)) return false;
       if (Boom != other.Boom) return false;
       if (ScoreTotal != other.ScoreTotal) return false;
       if(!gunkChair_.Equals(other.gunkChair_)) return false;
@@ -2933,12 +2601,8 @@ namespace ChinesePoker {
     public override int GetHashCode() {
       int hash = 1;
       if (ChairId != 0) hash ^= ChairId.GetHashCode();
-      if (ScoreFirst != 0L) hash ^= ScoreFirst.GetHashCode();
-      if (ScoreSencond != 0L) hash ^= ScoreSencond.GetHashCode();
-      if (ScoreThird != 0L) hash ^= ScoreThird.GetHashCode();
-      if (WinFirst != false) hash ^= WinFirst.GetHashCode();
-      if (WinSencond != false) hash ^= WinSencond.GetHashCode();
-      if (WinThird != false) hash ^= WinThird.GetHashCode();
+      hash ^= score_.GetHashCode();
+      hash ^= win_.GetHashCode();
       if (Boom != false) hash ^= Boom.GetHashCode();
       if (ScoreTotal != 0L) hash ^= ScoreTotal.GetHashCode();
       hash ^= gunkChair_.GetHashCode();
@@ -2962,36 +2626,14 @@ namespace ChinesePoker {
         output.WriteRawTag(8);
         output.WriteInt32(ChairId);
       }
-      if (ScoreFirst != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(ScoreFirst);
-      }
-      if (ScoreSencond != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(ScoreSencond);
-      }
-      if (ScoreThird != 0L) {
-        output.WriteRawTag(32);
-        output.WriteInt64(ScoreThird);
-      }
-      if (WinFirst != false) {
-        output.WriteRawTag(40);
-        output.WriteBool(WinFirst);
-      }
-      if (WinSencond != false) {
-        output.WriteRawTag(48);
-        output.WriteBool(WinSencond);
-      }
-      if (WinThird != false) {
-        output.WriteRawTag(56);
-        output.WriteBool(WinThird);
-      }
+      score_.WriteTo(output, _repeated_score_codec);
+      win_.WriteTo(output, _repeated_win_codec);
       if (Boom != false) {
-        output.WriteRawTag(64);
+        output.WriteRawTag(32);
         output.WriteBool(Boom);
       }
       if (ScoreTotal != 0L) {
-        output.WriteRawTag(72);
+        output.WriteRawTag(40);
         output.WriteInt64(ScoreTotal);
       }
       gunkChair_.WriteTo(output, _repeated_gunkChair_codec);
@@ -3008,36 +2650,14 @@ namespace ChinesePoker {
         output.WriteRawTag(8);
         output.WriteInt32(ChairId);
       }
-      if (ScoreFirst != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(ScoreFirst);
-      }
-      if (ScoreSencond != 0L) {
-        output.WriteRawTag(24);
-        output.WriteInt64(ScoreSencond);
-      }
-      if (ScoreThird != 0L) {
-        output.WriteRawTag(32);
-        output.WriteInt64(ScoreThird);
-      }
-      if (WinFirst != false) {
-        output.WriteRawTag(40);
-        output.WriteBool(WinFirst);
-      }
-      if (WinSencond != false) {
-        output.WriteRawTag(48);
-        output.WriteBool(WinSencond);
-      }
-      if (WinThird != false) {
-        output.WriteRawTag(56);
-        output.WriteBool(WinThird);
-      }
+      score_.WriteTo(ref output, _repeated_score_codec);
+      win_.WriteTo(ref output, _repeated_win_codec);
       if (Boom != false) {
-        output.WriteRawTag(64);
+        output.WriteRawTag(32);
         output.WriteBool(Boom);
       }
       if (ScoreTotal != 0L) {
-        output.WriteRawTag(72);
+        output.WriteRawTag(40);
         output.WriteInt64(ScoreTotal);
       }
       gunkChair_.WriteTo(ref output, _repeated_gunkChair_codec);
@@ -3053,24 +2673,8 @@ namespace ChinesePoker {
       if (ChairId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChairId);
       }
-      if (ScoreFirst != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(ScoreFirst);
-      }
-      if (ScoreSencond != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(ScoreSencond);
-      }
-      if (ScoreThird != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(ScoreThird);
-      }
-      if (WinFirst != false) {
-        size += 1 + 1;
-      }
-      if (WinSencond != false) {
-        size += 1 + 1;
-      }
-      if (WinThird != false) {
-        size += 1 + 1;
-      }
+      size += score_.CalculateSize(_repeated_score_codec);
+      size += win_.CalculateSize(_repeated_win_codec);
       if (Boom != false) {
         size += 1 + 1;
       }
@@ -3092,24 +2696,8 @@ namespace ChinesePoker {
       if (other.ChairId != 0) {
         ChairId = other.ChairId;
       }
-      if (other.ScoreFirst != 0L) {
-        ScoreFirst = other.ScoreFirst;
-      }
-      if (other.ScoreSencond != 0L) {
-        ScoreSencond = other.ScoreSencond;
-      }
-      if (other.ScoreThird != 0L) {
-        ScoreThird = other.ScoreThird;
-      }
-      if (other.WinFirst != false) {
-        WinFirst = other.WinFirst;
-      }
-      if (other.WinSencond != false) {
-        WinSencond = other.WinSencond;
-      }
-      if (other.WinThird != false) {
-        WinThird = other.WinThird;
-      }
+      score_.Add(other.score_);
+      win_.Add(other.win_);
       if (other.Boom != false) {
         Boom = other.Boom;
       }
@@ -3135,40 +2723,26 @@ namespace ChinesePoker {
             ChairId = input.ReadInt32();
             break;
           }
+          case 18:
           case 16: {
-            ScoreFirst = input.ReadInt64();
+            score_.AddEntriesFrom(input, _repeated_score_codec);
             break;
           }
+          case 26:
           case 24: {
-            ScoreSencond = input.ReadInt64();
+            win_.AddEntriesFrom(input, _repeated_win_codec);
             break;
           }
           case 32: {
-            ScoreThird = input.ReadInt64();
-            break;
-          }
-          case 40: {
-            WinFirst = input.ReadBool();
-            break;
-          }
-          case 48: {
-            WinSencond = input.ReadBool();
-            break;
-          }
-          case 56: {
-            WinThird = input.ReadBool();
-            break;
-          }
-          case 64: {
             Boom = input.ReadBool();
             break;
           }
-          case 72: {
+          case 40: {
             ScoreTotal = input.ReadInt64();
             break;
           }
-          case 82:
-          case 80: {
+          case 50:
+          case 48: {
             gunkChair_.AddEntriesFrom(input, _repeated_gunkChair_codec);
             break;
           }
@@ -3190,40 +2764,26 @@ namespace ChinesePoker {
             ChairId = input.ReadInt32();
             break;
           }
+          case 18:
           case 16: {
-            ScoreFirst = input.ReadInt64();
+            score_.AddEntriesFrom(ref input, _repeated_score_codec);
             break;
           }
+          case 26:
           case 24: {
-            ScoreSencond = input.ReadInt64();
+            win_.AddEntriesFrom(ref input, _repeated_win_codec);
             break;
           }
           case 32: {
-            ScoreThird = input.ReadInt64();
-            break;
-          }
-          case 40: {
-            WinFirst = input.ReadBool();
-            break;
-          }
-          case 48: {
-            WinSencond = input.ReadBool();
-            break;
-          }
-          case 56: {
-            WinThird = input.ReadBool();
-            break;
-          }
-          case 64: {
             Boom = input.ReadBool();
             break;
           }
-          case 72: {
+          case 40: {
             ScoreTotal = input.ReadInt64();
             break;
           }
-          case 82:
-          case 80: {
+          case 50:
+          case 48: {
             gunkChair_.AddEntriesFrom(ref input, _repeated_gunkChair_codec);
             break;
           }

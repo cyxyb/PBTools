@@ -224,15 +224,9 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ChinesePoker_2eproto::offsets[
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPCardStatus, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPCardStatus, type_first_),
-  PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPCardStatus, type_sencond_),
-  PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPCardStatus, type_third_),
-  PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPCardStatus, status_first_),
-  PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPCardStatus, status_sencond_),
-  PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPCardStatus, status_third_),
-  PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPCardStatus, add_first_),
-  PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPCardStatus, add_sencond_),
-  PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPCardStatus, add_third_),
+  PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPCardStatus, type_),
+  PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPCardStatus, status_),
+  PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPCardStatus, add_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPMsgPlayerInfo, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -284,12 +278,8 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ChinesePoker_2eproto::offsets[
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPCardResult, chair_id_),
-  PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPCardResult, score_first_),
-  PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPCardResult, score_sencond_),
-  PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPCardResult, score_third_),
-  PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPCardResult, win_first_),
-  PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPCardResult, win_sencond_),
-  PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPCardResult, win_third_),
+  PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPCardResult, score_),
+  PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPCardResult, win_),
   PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPCardResult, boom_),
   PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPCardResult, score_total_),
   PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPCardResult, gunk_chair_),
@@ -310,13 +300,13 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 0, -1, sizeof(::ChinesePoker::CPMsgTableState)},
   { 7, -1, sizeof(::ChinesePoker::CPMsgHandCards)},
   { 14, -1, sizeof(::ChinesePoker::CPCardStatus)},
-  { 29, -1, sizeof(::ChinesePoker::CPMsgPlayerInfo)},
-  { 40, -1, sizeof(::ChinesePoker::CPMsgSceneInfo)},
-  { 51, -1, sizeof(::ChinesePoker::CPMsgGameStartResp)},
-  { 59, -1, sizeof(::ChinesePoker::CPMsgAction)},
-  { 67, -1, sizeof(::ChinesePoker::CPMsgNotifyActionResp)},
-  { 74, -1, sizeof(::ChinesePoker::CPCardResult)},
-  { 89, -1, sizeof(::ChinesePoker::CPMsgGameResult)},
+  { 23, -1, sizeof(::ChinesePoker::CPMsgPlayerInfo)},
+  { 34, -1, sizeof(::ChinesePoker::CPMsgSceneInfo)},
+  { 45, -1, sizeof(::ChinesePoker::CPMsgGameStartResp)},
+  { 53, -1, sizeof(::ChinesePoker::CPMsgAction)},
+  { 61, -1, sizeof(::ChinesePoker::CPMsgNotifyActionResp)},
+  { 68, -1, sizeof(::ChinesePoker::CPCardResult)},
+  { 79, -1, sizeof(::ChinesePoker::CPMsgGameResult)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -336,61 +326,55 @@ const char descriptor_table_protodef_ChinesePoker_2eproto[] PROTOBUF_SECTION_VAR
   "\n\022ChinesePoker.proto\022\014ChinesePoker\"1\n\017CP"
   "MsgTableState\022\r\n\005state\030\001 \001(\005\022\017\n\007out_ime\030"
   "\002 \001(\005\"1\n\016CPMsgHandCards\022\020\n\010chair_id\030\001 \001("
-  "\005\022\r\n\005cards\030\002 \003(\005\"\335\001\n\014CPCardStatus\022\020\n\010cha"
-  "ir_id\030\001 \001(\005\022\022\n\ntype_first\030\002 \001(\005\022\024\n\014type_"
-  "sencond\030\003 \001(\005\022\022\n\ntype_third\030\004 \001(\005\022\024\n\014sta"
-  "tus_first\030\005 \001(\005\022\026\n\016status_sencond\030\006 \001(\005\022"
-  "\024\n\014status_third\030\007 \001(\005\022\021\n\tadd_first\030\010 \001(\005"
-  "\022\023\n\013add_sencond\030\t \001(\005\022\021\n\tadd_third\030\n \001(\005"
-  "\"\267\001\n\017CPMsgPlayerInfo\022\020\n\010chair_id\030\001 \001(\005\022\023"
-  "\n\013play_status\030\002 \001(\005\022/\n\013card_status\030\003 \001(\013"
-  "2\032.ChinesePoker.CPCardStatus\022\014\n\004gold\030\004 \001"
-  "(\003\022\020\n\010win_gold\030\005 \001(\003\022,\n\006handls\030\006 \001(\0132\034.C"
-  "hinesePoker.CPMsgHandCards\"\247\001\n\016CPMsgScen"
-  "eInfo\022\022\n\ncell_score\030\001 \001(\003\022\023\n\013table_state"
-  "\030\002 \001(\005\022\020\n\010out_time\030\003 \001(\005\022\022\n\ntotal_time\030\004"
-  " \001(\005\022\021\n\tserver_id\030\005 \001(\005\0223\n\014player_infos\030"
-  "\006 \003(\0132\035.ChinesePoker.CPMsgPlayerInfo\"\211\001\n"
-  "\022CPMsgGameStartResp\022,\n\006handls\030\001 \001(\0132\034.Ch"
-  "inesePoker.CPMsgHandCards\022/\n\013card_status"
-  "\030\002 \001(\0132\032.ChinesePoker.CPCardStatus\022\024\n\014sp"
-  "ecial_type\030\003 \001(\005\"7\n\013CPMsgAction\022\014\n\004type\030"
-  "\001 \001(\005\022\014\n\004pos1\030\002 \001(\003\022\014\n\004pos2\030\003 \001(\003\"^\n\025CPM"
-  "sgNotifyActionResp\022/\n\013card_status\030\001 \001(\0132"
-  "\032.ChinesePoker.CPCardStatus\022\024\n\014special_t"
-  "ype\030\002 \001(\005\"\323\001\n\014CPCardResult\022\020\n\010chair_id\030\001"
-  " \001(\005\022\023\n\013score_first\030\002 \001(\003\022\025\n\rscore_senco"
-  "nd\030\003 \001(\003\022\023\n\013score_third\030\004 \001(\003\022\021\n\twin_fir"
-  "st\030\005 \001(\010\022\023\n\013win_sencond\030\006 \001(\010\022\021\n\twin_thi"
-  "rd\030\007 \001(\010\022\014\n\004boom\030\010 \001(\010\022\023\n\013score_total\030\t "
-  "\001(\003\022\022\n\ngunk_chair\030\n \003(\005\"\373\001\n\017CPMsgGameRes"
-  "ult\022\020\n\010game_tax\030\001 \001(\005\022\022\n\ngame_score\030\002 \003("
-  "\003\022/\n\013card_status\030\003 \003(\0132\032.ChinesePoker.CP"
-  "CardStatus\022\024\n\014special_type\030\004 \003(\005\022/\n\013card"
-  "_result\030\005 \003(\0132\032.ChinesePoker.CPCardResul"
-  "t\0222\n\014player_hands\030\006 \003(\0132\034.ChinesePoker.C"
-  "PMsgHandCards\022\026\n\016all_gunk_chair\030\007 \001(\005*T\n"
-  "\014ECPGameState\022\017\n\013GS_TP_READY\020\000\022\016\n\nGS_TP_"
-  "DEAL\020\001\022\021\n\rGS_TP_PLAYING\020\002\022\020\n\014GS_TP_RESUL"
-  "T\020\003*K\n\016ECPPlayerState\022\014\n\010PS_READY\020\000\022\013\n\007P"
-  "S_PLAY\020\001\022\016\n\nPS_CONFIRM\020\002\022\016\n\nPS_TIMEOUT\020\003"
-  "*\205\002\n\013ECPCardType\022\r\n\tCT_SINGLE\020\000\022\r\n\tCT_DO"
-  "UBLE\020\001\022\016\n\nCT_DOUBLES\020\002\022\014\n\010CT_THREE\020\003\022\t\n\005"
-  "CT_SZ\020\004\022\t\n\005CT_TH\020\005\022\014\n\010CT_HU_LU\020\006\022\013\n\007CT_F"
-  "OUR\020\007\022\n\n\006CT_THS\020\010\022\014\n\010CT_HJTHS\020\t\022\022\n\016CT_SP"
-  "ECIAL_STH\020\n\022\022\n\016CT_SPECIAL_SSZ\020\013\022\022\n\016CT_SP"
-  "ECIAL_LDB\020\014\022\022\n\016CT_SPECIAL_YTL\020\r\022\023\n\017CT_SP"
-  "ECIAL_ZZQL\020\016\022\n\n\006CT_MAX\020\017*\203\003\n\017ECPMsgIDSub"
-  "Game\022\025\n\021MsgIDSubGame_Null\020\000\022\036\n\032MsgIDSubG"
-  "ame_GameStartResp\020\001\022\027\n\023MsgIDSubGame_Acti"
-  "on\020\002\022!\n\035MsgIDSubGame_NotifyActionResp\020\003\022"
-  "\030\n\024MsgIDSubGame_Confirm\020\004\022\034\n\030MsgIDSubGam"
-  "e_ConfirmResp\020\005\022 \n\034MsgIDSubGame_NotifySt"
-  "ateResp\020\006\022\037\n\033MsgIDSubGame_GameResultResp"
-  "\020\007\022\036\n\032MsgIDSubGame_StartTimeResp\020\010\022\035\n\031Ms"
-  "gIDSubGame_TimeOutReady\020\t\022!\n\035MsgIDSubGam"
-  "e_TimeOutReadyResp\020\n\022 \n\034MsgIDSubGame_Tim"
-  "eOutKickResp\020\013b\006proto3"
+  "\005\022\r\n\005cards\030\002 \003(\005\"K\n\014CPCardStatus\022\020\n\010chai"
+  "r_id\030\001 \001(\005\022\014\n\004type\030\002 \003(\005\022\016\n\006status\030\003 \003(\005"
+  "\022\013\n\003add\030\004 \003(\005\"\267\001\n\017CPMsgPlayerInfo\022\020\n\010cha"
+  "ir_id\030\001 \001(\005\022\023\n\013play_status\030\002 \001(\005\022/\n\013card"
+  "_status\030\003 \001(\0132\032.ChinesePoker.CPCardStatu"
+  "s\022\014\n\004gold\030\004 \001(\003\022\020\n\010win_gold\030\005 \001(\003\022,\n\006han"
+  "dls\030\006 \001(\0132\034.ChinesePoker.CPMsgHandCards\""
+  "\247\001\n\016CPMsgSceneInfo\022\022\n\ncell_score\030\001 \001(\003\022\023"
+  "\n\013table_state\030\002 \001(\005\022\020\n\010out_time\030\003 \001(\005\022\022\n"
+  "\ntotal_time\030\004 \001(\005\022\021\n\tserver_id\030\005 \001(\005\0223\n\014"
+  "player_infos\030\006 \003(\0132\035.ChinesePoker.CPMsgP"
+  "layerInfo\"\211\001\n\022CPMsgGameStartResp\022,\n\006hand"
+  "ls\030\001 \001(\0132\034.ChinesePoker.CPMsgHandCards\022/"
+  "\n\013card_status\030\002 \001(\0132\032.ChinesePoker.CPCar"
+  "dStatus\022\024\n\014special_type\030\003 \001(\005\"7\n\013CPMsgAc"
+  "tion\022\014\n\004type\030\001 \001(\005\022\014\n\004pos1\030\002 \001(\003\022\014\n\004pos2"
+  "\030\003 \001(\003\"^\n\025CPMsgNotifyActionResp\022/\n\013card_"
+  "status\030\001 \001(\0132\032.ChinesePoker.CPCardStatus"
+  "\022\024\n\014special_type\030\002 \001(\005\"s\n\014CPCardResult\022\020"
+  "\n\010chair_id\030\001 \001(\005\022\r\n\005score\030\002 \003(\003\022\013\n\003win\030\003"
+  " \003(\010\022\014\n\004boom\030\004 \001(\010\022\023\n\013score_total\030\005 \001(\003\022"
+  "\022\n\ngunk_chair\030\006 \003(\005\"\373\001\n\017CPMsgGameResult\022"
+  "\020\n\010game_tax\030\001 \001(\005\022\022\n\ngame_score\030\002 \003(\003\022/\n"
+  "\013card_status\030\003 \003(\0132\032.ChinesePoker.CPCard"
+  "Status\022\024\n\014special_type\030\004 \003(\005\022/\n\013card_res"
+  "ult\030\005 \003(\0132\032.ChinesePoker.CPCardResult\0222\n"
+  "\014player_hands\030\006 \003(\0132\034.ChinesePoker.CPMsg"
+  "HandCards\022\026\n\016all_gunk_chair\030\007 \001(\005*T\n\014ECP"
+  "GameState\022\017\n\013GS_TP_READY\020\000\022\016\n\nGS_TP_DEAL"
+  "\020\001\022\021\n\rGS_TP_PLAYING\020\002\022\020\n\014GS_TP_RESULT\020\003*"
+  "K\n\016ECPPlayerState\022\014\n\010PS_READY\020\000\022\013\n\007PS_PL"
+  "AY\020\001\022\016\n\nPS_CONFIRM\020\002\022\016\n\nPS_TIMEOUT\020\003*\205\002\n"
+  "\013ECPCardType\022\r\n\tCT_SINGLE\020\000\022\r\n\tCT_DOUBLE"
+  "\020\001\022\016\n\nCT_DOUBLES\020\002\022\014\n\010CT_THREE\020\003\022\t\n\005CT_S"
+  "Z\020\004\022\t\n\005CT_TH\020\005\022\014\n\010CT_HU_LU\020\006\022\013\n\007CT_FOUR\020"
+  "\007\022\n\n\006CT_THS\020\010\022\014\n\010CT_HJTHS\020\t\022\022\n\016CT_SPECIA"
+  "L_STH\020\n\022\022\n\016CT_SPECIAL_SSZ\020\013\022\022\n\016CT_SPECIA"
+  "L_LDB\020\014\022\022\n\016CT_SPECIAL_YTL\020\r\022\023\n\017CT_SPECIA"
+  "L_ZZQL\020\016\022\n\n\006CT_MAX\020\017*\203\003\n\017ECPMsgIDSubGame"
+  "\022\025\n\021MsgIDSubGame_Null\020\000\022\036\n\032MsgIDSubGame_"
+  "GameStartResp\020\001\022\027\n\023MsgIDSubGame_Action\020\002"
+  "\022!\n\035MsgIDSubGame_NotifyActionResp\020\003\022\030\n\024M"
+  "sgIDSubGame_Confirm\020\004\022\034\n\030MsgIDSubGame_Co"
+  "nfirmResp\020\005\022 \n\034MsgIDSubGame_NotifyStateR"
+  "esp\020\006\022\037\n\033MsgIDSubGame_GameResultResp\020\007\022\036"
+  "\n\032MsgIDSubGame_StartTimeResp\020\010\022\035\n\031MsgIDS"
+  "ubGame_TimeOutReady\020\t\022!\n\035MsgIDSubGame_Ti"
+  "meOutReadyResp\020\n\022 \n\034MsgIDSubGame_TimeOut"
+  "KickResp\020\013b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_ChinesePoker_2eproto_deps[1] = {
 };
@@ -408,7 +392,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Chi
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ChinesePoker_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ChinesePoker_2eproto = {
-  false, false, descriptor_table_protodef_ChinesePoker_2eproto, "ChinesePoker.proto", 2302,
+  false, false, descriptor_table_protodef_ChinesePoker_2eproto, "ChinesePoker.proto", 2058,
   &descriptor_table_ChinesePoker_2eproto_once, descriptor_table_ChinesePoker_2eproto_sccs, descriptor_table_ChinesePoker_2eproto_deps, 10, 0,
   schemas, file_default_instances, TableStruct_ChinesePoker_2eproto::offsets,
   file_level_metadata_ChinesePoker_2eproto, 10, file_level_enum_descriptors_ChinesePoker_2eproto, file_level_service_descriptors_ChinesePoker_2eproto,
@@ -971,25 +955,26 @@ class CPCardStatus::_Internal {
 };
 
 CPCardStatus::CPCardStatus(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  type_(arena),
+  status_(arena),
+  add_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:ChinesePoker.CPCardStatus)
 }
 CPCardStatus::CPCardStatus(const CPCardStatus& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      type_(from.type_),
+      status_(from.status_),
+      add_(from.add_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&chair_id_, &from.chair_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&add_third_) -
-    reinterpret_cast<char*>(&chair_id_)) + sizeof(add_third_));
+  chair_id_ = from.chair_id_;
   // @@protoc_insertion_point(copy_constructor:ChinesePoker.CPCardStatus)
 }
 
 void CPCardStatus::SharedCtor() {
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&chair_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&add_third_) -
-      reinterpret_cast<char*>(&chair_id_)) + sizeof(add_third_));
+  chair_id_ = 0;
 }
 
 CPCardStatus::~CPCardStatus() {
@@ -1023,9 +1008,10 @@ void CPCardStatus::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&chair_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&add_third_) -
-      reinterpret_cast<char*>(&chair_id_)) + sizeof(add_third_));
+  type_.Clear();
+  status_.Clear();
+  add_.Clear();
+  chair_id_ = 0;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -1043,66 +1029,33 @@ const char* CPCardStatus::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 type_first = 2;
+      // repeated int32 type = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          type_first_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_type(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16) {
+          _internal_add_type(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 type_sencond = 3;
+      // repeated int32 status = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          type_sencond_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_status(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24) {
+          _internal_add_status(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 type_third = 4;
+      // repeated int32 add = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          type_third_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_add(), ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 status_first = 5;
-      case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
-          status_first_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 status_sencond = 6;
-      case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
-          status_sencond_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 status_third = 7;
-      case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
-          status_third_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 add_first = 8;
-      case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
-          add_first_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 add_sencond = 9;
-      case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
-          add_sencond_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 add_third = 10;
-      case 10:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
-          add_third_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32) {
+          _internal_add_add(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1140,58 +1093,31 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_chair_id(), target);
   }
 
-  // int32 type_first = 2;
-  if (this->type_first() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_type_first(), target);
+  // repeated int32 type = 2;
+  {
+    int byte_size = _type_cached_byte_size_.load(std::memory_order_relaxed);
+    if (byte_size > 0) {
+      target = stream->WriteInt32Packed(
+          2, _internal_type(), byte_size, target);
+    }
   }
 
-  // int32 type_sencond = 3;
-  if (this->type_sencond() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_type_sencond(), target);
+  // repeated int32 status = 3;
+  {
+    int byte_size = _status_cached_byte_size_.load(std::memory_order_relaxed);
+    if (byte_size > 0) {
+      target = stream->WriteInt32Packed(
+          3, _internal_status(), byte_size, target);
+    }
   }
 
-  // int32 type_third = 4;
-  if (this->type_third() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_type_third(), target);
-  }
-
-  // int32 status_first = 5;
-  if (this->status_first() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_status_first(), target);
-  }
-
-  // int32 status_sencond = 6;
-  if (this->status_sencond() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_status_sencond(), target);
-  }
-
-  // int32 status_third = 7;
-  if (this->status_third() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(7, this->_internal_status_third(), target);
-  }
-
-  // int32 add_first = 8;
-  if (this->add_first() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(8, this->_internal_add_first(), target);
-  }
-
-  // int32 add_sencond = 9;
-  if (this->add_sencond() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(9, this->_internal_add_sencond(), target);
-  }
-
-  // int32 add_third = 10;
-  if (this->add_third() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(10, this->_internal_add_third(), target);
+  // repeated int32 add = 4;
+  {
+    int byte_size = _add_cached_byte_size_.load(std::memory_order_relaxed);
+    if (byte_size > 0) {
+      target = stream->WriteInt32Packed(
+          4, _internal_add(), byte_size, target);
+    }
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1210,74 +1136,56 @@ size_t CPCardStatus::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  // repeated int32 type = 2;
+  {
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      Int32Size(this->type_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
+    }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _type_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
+  }
+
+  // repeated int32 status = 3;
+  {
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      Int32Size(this->status_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
+    }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _status_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
+  }
+
+  // repeated int32 add = 4;
+  {
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      Int32Size(this->add_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
+    }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _add_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
+  }
+
   // int32 chair_id = 1;
   if (this->chair_id() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_chair_id());
-  }
-
-  // int32 type_first = 2;
-  if (this->type_first() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_type_first());
-  }
-
-  // int32 type_sencond = 3;
-  if (this->type_sencond() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_type_sencond());
-  }
-
-  // int32 type_third = 4;
-  if (this->type_third() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_type_third());
-  }
-
-  // int32 status_first = 5;
-  if (this->status_first() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_status_first());
-  }
-
-  // int32 status_sencond = 6;
-  if (this->status_sencond() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_status_sencond());
-  }
-
-  // int32 status_third = 7;
-  if (this->status_third() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_status_third());
-  }
-
-  // int32 add_first = 8;
-  if (this->add_first() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_add_first());
-  }
-
-  // int32 add_sencond = 9;
-  if (this->add_sencond() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_add_sencond());
-  }
-
-  // int32 add_third = 10;
-  if (this->add_third() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_add_third());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1311,35 +1219,11 @@ void CPCardStatus::MergeFrom(const CPCardStatus& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  type_.MergeFrom(from.type_);
+  status_.MergeFrom(from.status_);
+  add_.MergeFrom(from.add_);
   if (from.chair_id() != 0) {
     _internal_set_chair_id(from._internal_chair_id());
-  }
-  if (from.type_first() != 0) {
-    _internal_set_type_first(from._internal_type_first());
-  }
-  if (from.type_sencond() != 0) {
-    _internal_set_type_sencond(from._internal_type_sencond());
-  }
-  if (from.type_third() != 0) {
-    _internal_set_type_third(from._internal_type_third());
-  }
-  if (from.status_first() != 0) {
-    _internal_set_status_first(from._internal_status_first());
-  }
-  if (from.status_sencond() != 0) {
-    _internal_set_status_sencond(from._internal_status_sencond());
-  }
-  if (from.status_third() != 0) {
-    _internal_set_status_third(from._internal_status_third());
-  }
-  if (from.add_first() != 0) {
-    _internal_set_add_first(from._internal_add_first());
-  }
-  if (from.add_sencond() != 0) {
-    _internal_set_add_sencond(from._internal_add_sencond());
-  }
-  if (from.add_third() != 0) {
-    _internal_set_add_third(from._internal_add_third());
   }
 }
 
@@ -1364,12 +1248,10 @@ bool CPCardStatus::IsInitialized() const {
 void CPCardStatus::InternalSwap(CPCardStatus* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(CPCardStatus, add_third_)
-      + sizeof(CPCardStatus::add_third_)
-      - PROTOBUF_FIELD_OFFSET(CPCardStatus, chair_id_)>(
-          reinterpret_cast<char*>(&chair_id_),
-          reinterpret_cast<char*>(&other->chair_id_));
+  type_.InternalSwap(&other->type_);
+  status_.InternalSwap(&other->status_);
+  add_.InternalSwap(&other->add_);
+  swap(chair_id_, other->chair_id_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata CPCardStatus::GetMetadata() const {
@@ -2850,6 +2732,8 @@ class CPCardResult::_Internal {
 
 CPCardResult::CPCardResult(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  score_(arena),
+  win_(arena),
   gunk_chair_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
@@ -2857,19 +2741,21 @@ CPCardResult::CPCardResult(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 }
 CPCardResult::CPCardResult(const CPCardResult& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      score_(from.score_),
+      win_(from.win_),
       gunk_chair_(from.gunk_chair_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&score_first_, &from.score_first_,
+  ::memcpy(&chair_id_, &from.chair_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&score_total_) -
-    reinterpret_cast<char*>(&score_first_)) + sizeof(score_total_));
+    reinterpret_cast<char*>(&chair_id_)) + sizeof(score_total_));
   // @@protoc_insertion_point(copy_constructor:ChinesePoker.CPCardResult)
 }
 
 void CPCardResult::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&score_first_) - reinterpret_cast<char*>(this)),
+      reinterpret_cast<char*>(&chair_id_) - reinterpret_cast<char*>(this)),
       0, static_cast<size_t>(reinterpret_cast<char*>(&score_total_) -
-      reinterpret_cast<char*>(&score_first_)) + sizeof(score_total_));
+      reinterpret_cast<char*>(&chair_id_)) + sizeof(score_total_));
 }
 
 CPCardResult::~CPCardResult() {
@@ -2903,10 +2789,12 @@ void CPCardResult::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  score_.Clear();
+  win_.Clear();
   gunk_chair_.Clear();
-  ::memset(&score_first_, 0, static_cast<size_t>(
+  ::memset(&chair_id_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&score_total_) -
-      reinterpret_cast<char*>(&score_first_)) + sizeof(score_total_));
+      reinterpret_cast<char*>(&chair_id_)) + sizeof(score_total_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -2924,68 +2812,46 @@ const char* CPCardResult::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int64 score_first = 2;
+      // repeated int64 score = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          score_first_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt64Parser(_internal_mutable_score(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16) {
+          _internal_add_score(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int64 score_sencond = 3;
+      // repeated bool win = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          score_sencond_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedBoolParser(_internal_mutable_win(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24) {
+          _internal_add_win(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int64 score_third = 4;
+      // bool boom = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          score_third_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // bool win_first = 5;
-      case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
-          win_first_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // bool win_sencond = 6;
-      case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
-          win_sencond_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // bool win_third = 7;
-      case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
-          win_third_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // bool boom = 8;
-      case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
           boom_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int64 score_total = 9;
-      case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+      // int64 score_total = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
           score_total_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated int32 gunk_chair = 10;
-      case 10:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 82)) {
+      // repeated int32 gunk_chair = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_gunk_chair(), ptr, ctx);
           CHK_(ptr);
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80) {
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48) {
           _internal_add_gunk_chair(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
@@ -3024,60 +2890,38 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_chair_id(), target);
   }
 
-  // int64 score_first = 2;
-  if (this->score_first() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_score_first(), target);
+  // repeated int64 score = 2;
+  {
+    int byte_size = _score_cached_byte_size_.load(std::memory_order_relaxed);
+    if (byte_size > 0) {
+      target = stream->WriteInt64Packed(
+          2, _internal_score(), byte_size, target);
+    }
   }
 
-  // int64 score_sencond = 3;
-  if (this->score_sencond() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_score_sencond(), target);
+  // repeated bool win = 3;
+  if (this->_internal_win_size() > 0) {
+    target = stream->WriteFixedPacked(3, _internal_win(), target);
   }
 
-  // int64 score_third = 4;
-  if (this->score_third() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_score_third(), target);
-  }
-
-  // bool win_first = 5;
-  if (this->win_first() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(5, this->_internal_win_first(), target);
-  }
-
-  // bool win_sencond = 6;
-  if (this->win_sencond() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(6, this->_internal_win_sencond(), target);
-  }
-
-  // bool win_third = 7;
-  if (this->win_third() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(7, this->_internal_win_third(), target);
-  }
-
-  // bool boom = 8;
+  // bool boom = 4;
   if (this->boom() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(8, this->_internal_boom(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(4, this->_internal_boom(), target);
   }
 
-  // int64 score_total = 9;
+  // int64 score_total = 5;
   if (this->score_total() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(9, this->_internal_score_total(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_score_total(), target);
   }
 
-  // repeated int32 gunk_chair = 10;
+  // repeated int32 gunk_chair = 6;
   {
     int byte_size = _gunk_chair_cached_byte_size_.load(std::memory_order_relaxed);
     if (byte_size > 0) {
       target = stream->WriteInt32Packed(
-          10, _internal_gunk_chair(), byte_size, target);
+          6, _internal_gunk_chair(), byte_size, target);
     }
   }
 
@@ -3097,7 +2941,37 @@ size_t CPCardResult::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated int32 gunk_chair = 10;
+  // repeated int64 score = 2;
+  {
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      Int64Size(this->score_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
+    }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _score_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
+  }
+
+  // repeated bool win = 3;
+  {
+    unsigned int count = static_cast<unsigned int>(this->_internal_win_size());
+    size_t data_size = 1UL * count;
+    if (data_size > 0) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
+    }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _win_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
+  }
+
+  // repeated int32 gunk_chair = 6;
   {
     size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       Int32Size(this->gunk_chair_);
@@ -3112,27 +2986,6 @@ size_t CPCardResult::ByteSizeLong() const {
     total_size += data_size;
   }
 
-  // int64 score_first = 2;
-  if (this->score_first() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_score_first());
-  }
-
-  // int64 score_sencond = 3;
-  if (this->score_sencond() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_score_sencond());
-  }
-
-  // int64 score_third = 4;
-  if (this->score_third() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->_internal_score_third());
-  }
-
   // int32 chair_id = 1;
   if (this->chair_id() != 0) {
     total_size += 1 +
@@ -3140,27 +2993,12 @@ size_t CPCardResult::ByteSizeLong() const {
         this->_internal_chair_id());
   }
 
-  // bool win_first = 5;
-  if (this->win_first() != 0) {
-    total_size += 1 + 1;
-  }
-
-  // bool win_sencond = 6;
-  if (this->win_sencond() != 0) {
-    total_size += 1 + 1;
-  }
-
-  // bool win_third = 7;
-  if (this->win_third() != 0) {
-    total_size += 1 + 1;
-  }
-
-  // bool boom = 8;
+  // bool boom = 4;
   if (this->boom() != 0) {
     total_size += 1 + 1;
   }
 
-  // int64 score_total = 9;
+  // int64 score_total = 5;
   if (this->score_total() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
@@ -3198,27 +3036,11 @@ void CPCardResult::MergeFrom(const CPCardResult& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  score_.MergeFrom(from.score_);
+  win_.MergeFrom(from.win_);
   gunk_chair_.MergeFrom(from.gunk_chair_);
-  if (from.score_first() != 0) {
-    _internal_set_score_first(from._internal_score_first());
-  }
-  if (from.score_sencond() != 0) {
-    _internal_set_score_sencond(from._internal_score_sencond());
-  }
-  if (from.score_third() != 0) {
-    _internal_set_score_third(from._internal_score_third());
-  }
   if (from.chair_id() != 0) {
     _internal_set_chair_id(from._internal_chair_id());
-  }
-  if (from.win_first() != 0) {
-    _internal_set_win_first(from._internal_win_first());
-  }
-  if (from.win_sencond() != 0) {
-    _internal_set_win_sencond(from._internal_win_sencond());
-  }
-  if (from.win_third() != 0) {
-    _internal_set_win_third(from._internal_win_third());
   }
   if (from.boom() != 0) {
     _internal_set_boom(from._internal_boom());
@@ -3249,13 +3071,15 @@ bool CPCardResult::IsInitialized() const {
 void CPCardResult::InternalSwap(CPCardResult* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  score_.InternalSwap(&other->score_);
+  win_.InternalSwap(&other->win_);
   gunk_chair_.InternalSwap(&other->gunk_chair_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(CPCardResult, score_total_)
       + sizeof(CPCardResult::score_total_)
-      - PROTOBUF_FIELD_OFFSET(CPCardResult, score_first_)>(
-          reinterpret_cast<char*>(&score_first_),
-          reinterpret_cast<char*>(&other->score_first_));
+      - PROTOBUF_FIELD_OFFSET(CPCardResult, chair_id_)>(
+          reinterpret_cast<char*>(&chair_id_),
+          reinterpret_cast<char*>(&other->chair_id_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata CPCardResult::GetMetadata() const {

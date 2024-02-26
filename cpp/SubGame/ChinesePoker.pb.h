@@ -650,17 +650,77 @@ class CPCardStatus PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
+    kTypeFieldNumber = 2,
+    kStatusFieldNumber = 3,
+    kAddFieldNumber = 4,
     kChairIdFieldNumber = 1,
-    kTypeFirstFieldNumber = 2,
-    kTypeSencondFieldNumber = 3,
-    kTypeThirdFieldNumber = 4,
-    kStatusFirstFieldNumber = 5,
-    kStatusSencondFieldNumber = 6,
-    kStatusThirdFieldNumber = 7,
-    kAddFirstFieldNumber = 8,
-    kAddSencondFieldNumber = 9,
-    kAddThirdFieldNumber = 10,
   };
+  // repeated int32 type = 2;
+  int type_size() const;
+  private:
+  int _internal_type_size() const;
+  public:
+  void clear_type();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_type(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_type() const;
+  void _internal_add_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_type();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 type(int index) const;
+  void set_type(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      type() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_type();
+
+  // repeated int32 status = 3;
+  int status_size() const;
+  private:
+  int _internal_status_size() const;
+  public:
+  void clear_status();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_status(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_status() const;
+  void _internal_add_status(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_status();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 status(int index) const;
+  void set_status(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_status(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      status() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_status();
+
+  // repeated int32 add = 4;
+  int add_size() const;
+  private:
+  int _internal_add_size() const;
+  public:
+  void clear_add();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_add(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_add() const;
+  void _internal_add_add(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_add();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 add(int index) const;
+  void set_add(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_add(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      add() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_add();
+
   // int32 chair_id = 1;
   void clear_chair_id();
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id() const;
@@ -670,87 +730,6 @@ class CPCardStatus PROTOBUF_FINAL :
   void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 type_first = 2;
-  void clear_type_first();
-  ::PROTOBUF_NAMESPACE_ID::int32 type_first() const;
-  void set_type_first(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_type_first() const;
-  void _internal_set_type_first(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 type_sencond = 3;
-  void clear_type_sencond();
-  ::PROTOBUF_NAMESPACE_ID::int32 type_sencond() const;
-  void set_type_sencond(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_type_sencond() const;
-  void _internal_set_type_sencond(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 type_third = 4;
-  void clear_type_third();
-  ::PROTOBUF_NAMESPACE_ID::int32 type_third() const;
-  void set_type_third(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_type_third() const;
-  void _internal_set_type_third(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 status_first = 5;
-  void clear_status_first();
-  ::PROTOBUF_NAMESPACE_ID::int32 status_first() const;
-  void set_status_first(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_status_first() const;
-  void _internal_set_status_first(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 status_sencond = 6;
-  void clear_status_sencond();
-  ::PROTOBUF_NAMESPACE_ID::int32 status_sencond() const;
-  void set_status_sencond(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_status_sencond() const;
-  void _internal_set_status_sencond(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 status_third = 7;
-  void clear_status_third();
-  ::PROTOBUF_NAMESPACE_ID::int32 status_third() const;
-  void set_status_third(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_status_third() const;
-  void _internal_set_status_third(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 add_first = 8;
-  void clear_add_first();
-  ::PROTOBUF_NAMESPACE_ID::int32 add_first() const;
-  void set_add_first(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_add_first() const;
-  void _internal_set_add_first(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 add_sencond = 9;
-  void clear_add_sencond();
-  ::PROTOBUF_NAMESPACE_ID::int32 add_sencond() const;
-  void set_add_sencond(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_add_sencond() const;
-  void _internal_set_add_sencond(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 add_third = 10;
-  void clear_add_third();
-  ::PROTOBUF_NAMESPACE_ID::int32 add_third() const;
-  void set_add_third(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_add_third() const;
-  void _internal_set_add_third(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
   // @@protoc_insertion_point(class_scope:ChinesePoker.CPCardStatus)
  private:
   class _Internal;
@@ -758,16 +737,13 @@ class CPCardStatus PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > type_;
+  mutable std::atomic<int> _type_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > status_;
+  mutable std::atomic<int> _status_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > add_;
+  mutable std::atomic<int> _add_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 type_first_;
-  ::PROTOBUF_NAMESPACE_ID::int32 type_sencond_;
-  ::PROTOBUF_NAMESPACE_ID::int32 type_third_;
-  ::PROTOBUF_NAMESPACE_ID::int32 status_first_;
-  ::PROTOBUF_NAMESPACE_ID::int32 status_sencond_;
-  ::PROTOBUF_NAMESPACE_ID::int32 status_third_;
-  ::PROTOBUF_NAMESPACE_ID::int32 add_first_;
-  ::PROTOBUF_NAMESPACE_ID::int32 add_sencond_;
-  ::PROTOBUF_NAMESPACE_ID::int32 add_third_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ChinesePoker_2eproto;
 };
@@ -1784,18 +1760,58 @@ class CPCardResult PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kGunkChairFieldNumber = 10,
-    kScoreFirstFieldNumber = 2,
-    kScoreSencondFieldNumber = 3,
-    kScoreThirdFieldNumber = 4,
+    kScoreFieldNumber = 2,
+    kWinFieldNumber = 3,
+    kGunkChairFieldNumber = 6,
     kChairIdFieldNumber = 1,
-    kWinFirstFieldNumber = 5,
-    kWinSencondFieldNumber = 6,
-    kWinThirdFieldNumber = 7,
-    kBoomFieldNumber = 8,
-    kScoreTotalFieldNumber = 9,
+    kBoomFieldNumber = 4,
+    kScoreTotalFieldNumber = 5,
   };
-  // repeated int32 gunk_chair = 10;
+  // repeated int64 score = 2;
+  int score_size() const;
+  private:
+  int _internal_score_size() const;
+  public:
+  void clear_score();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_score(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
+      _internal_score() const;
+  void _internal_add_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
+      _internal_mutable_score();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int64 score(int index) const;
+  void set_score(int index, ::PROTOBUF_NAMESPACE_ID::int64 value);
+  void add_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
+      score() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
+      mutable_score();
+
+  // repeated bool win = 3;
+  int win_size() const;
+  private:
+  int _internal_win_size() const;
+  public:
+  void clear_win();
+  private:
+  bool _internal_win(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< bool >&
+      _internal_win() const;
+  void _internal_add_win(bool value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< bool >*
+      _internal_mutable_win();
+  public:
+  bool win(int index) const;
+  void set_win(int index, bool value);
+  void add_win(bool value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< bool >&
+      win() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< bool >*
+      mutable_win();
+
+  // repeated int32 gunk_chair = 6;
   int gunk_chair_size() const;
   private:
   int _internal_gunk_chair_size() const;
@@ -1817,33 +1833,6 @@ class CPCardResult PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_gunk_chair();
 
-  // int64 score_first = 2;
-  void clear_score_first();
-  ::PROTOBUF_NAMESPACE_ID::int64 score_first() const;
-  void set_score_first(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_score_first() const;
-  void _internal_set_score_first(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
-  // int64 score_sencond = 3;
-  void clear_score_sencond();
-  ::PROTOBUF_NAMESPACE_ID::int64 score_sencond() const;
-  void set_score_sencond(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_score_sencond() const;
-  void _internal_set_score_sencond(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
-  // int64 score_third = 4;
-  void clear_score_third();
-  ::PROTOBUF_NAMESPACE_ID::int64 score_third() const;
-  void set_score_third(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_score_third() const;
-  void _internal_set_score_third(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
   // int32 chair_id = 1;
   void clear_chair_id();
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id() const;
@@ -1853,34 +1842,7 @@ class CPCardResult PROTOBUF_FINAL :
   void _internal_set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // bool win_first = 5;
-  void clear_win_first();
-  bool win_first() const;
-  void set_win_first(bool value);
-  private:
-  bool _internal_win_first() const;
-  void _internal_set_win_first(bool value);
-  public:
-
-  // bool win_sencond = 6;
-  void clear_win_sencond();
-  bool win_sencond() const;
-  void set_win_sencond(bool value);
-  private:
-  bool _internal_win_sencond() const;
-  void _internal_set_win_sencond(bool value);
-  public:
-
-  // bool win_third = 7;
-  void clear_win_third();
-  bool win_third() const;
-  void set_win_third(bool value);
-  private:
-  bool _internal_win_third() const;
-  void _internal_set_win_third(bool value);
-  public:
-
-  // bool boom = 8;
+  // bool boom = 4;
   void clear_boom();
   bool boom() const;
   void set_boom(bool value);
@@ -1889,7 +1851,7 @@ class CPCardResult PROTOBUF_FINAL :
   void _internal_set_boom(bool value);
   public:
 
-  // int64 score_total = 9;
+  // int64 score_total = 5;
   void clear_score_total();
   ::PROTOBUF_NAMESPACE_ID::int64 score_total() const;
   void set_score_total(::PROTOBUF_NAMESPACE_ID::int64 value);
@@ -1905,15 +1867,13 @@ class CPCardResult PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 > score_;
+  mutable std::atomic<int> _score_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< bool > win_;
+  mutable std::atomic<int> _win_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > gunk_chair_;
   mutable std::atomic<int> _gunk_chair_cached_byte_size_;
-  ::PROTOBUF_NAMESPACE_ID::int64 score_first_;
-  ::PROTOBUF_NAMESPACE_ID::int64 score_sencond_;
-  ::PROTOBUF_NAMESPACE_ID::int64 score_third_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_id_;
-  bool win_first_;
-  bool win_sencond_;
-  bool win_third_;
   bool boom_;
   ::PROTOBUF_NAMESPACE_ID::int64 score_total_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
@@ -2322,184 +2282,145 @@ inline void CPCardStatus::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:ChinesePoker.CPCardStatus.chair_id)
 }
 
-// int32 type_first = 2;
-inline void CPCardStatus::clear_type_first() {
-  type_first_ = 0;
+// repeated int32 type = 2;
+inline int CPCardStatus::_internal_type_size() const {
+  return type_.size();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CPCardStatus::_internal_type_first() const {
-  return type_first_;
+inline int CPCardStatus::type_size() const {
+  return _internal_type_size();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CPCardStatus::type_first() const {
-  // @@protoc_insertion_point(field_get:ChinesePoker.CPCardStatus.type_first)
-  return _internal_type_first();
+inline void CPCardStatus::clear_type() {
+  type_.Clear();
 }
-inline void CPCardStatus::_internal_set_type_first(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  type_first_ = value;
+inline ::PROTOBUF_NAMESPACE_ID::int32 CPCardStatus::_internal_type(int index) const {
+  return type_.Get(index);
 }
-inline void CPCardStatus::set_type_first(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_type_first(value);
-  // @@protoc_insertion_point(field_set:ChinesePoker.CPCardStatus.type_first)
+inline ::PROTOBUF_NAMESPACE_ID::int32 CPCardStatus::type(int index) const {
+  // @@protoc_insertion_point(field_get:ChinesePoker.CPCardStatus.type)
+  return _internal_type(index);
 }
-
-// int32 type_sencond = 3;
-inline void CPCardStatus::clear_type_sencond() {
-  type_sencond_ = 0;
+inline void CPCardStatus::set_type(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  type_.Set(index, value);
+  // @@protoc_insertion_point(field_set:ChinesePoker.CPCardStatus.type)
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CPCardStatus::_internal_type_sencond() const {
-  return type_sencond_;
+inline void CPCardStatus::_internal_add_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  type_.Add(value);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CPCardStatus::type_sencond() const {
-  // @@protoc_insertion_point(field_get:ChinesePoker.CPCardStatus.type_sencond)
-  return _internal_type_sencond();
+inline void CPCardStatus::add_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_type(value);
+  // @@protoc_insertion_point(field_add:ChinesePoker.CPCardStatus.type)
 }
-inline void CPCardStatus::_internal_set_type_sencond(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  type_sencond_ = value;
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+CPCardStatus::_internal_type() const {
+  return type_;
 }
-inline void CPCardStatus::set_type_sencond(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_type_sencond(value);
-  // @@protoc_insertion_point(field_set:ChinesePoker.CPCardStatus.type_sencond)
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+CPCardStatus::type() const {
+  // @@protoc_insertion_point(field_list:ChinesePoker.CPCardStatus.type)
+  return _internal_type();
 }
-
-// int32 type_third = 4;
-inline void CPCardStatus::clear_type_third() {
-  type_third_ = 0;
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+CPCardStatus::_internal_mutable_type() {
+  return &type_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CPCardStatus::_internal_type_third() const {
-  return type_third_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 CPCardStatus::type_third() const {
-  // @@protoc_insertion_point(field_get:ChinesePoker.CPCardStatus.type_third)
-  return _internal_type_third();
-}
-inline void CPCardStatus::_internal_set_type_third(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  type_third_ = value;
-}
-inline void CPCardStatus::set_type_third(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_type_third(value);
-  // @@protoc_insertion_point(field_set:ChinesePoker.CPCardStatus.type_third)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+CPCardStatus::mutable_type() {
+  // @@protoc_insertion_point(field_mutable_list:ChinesePoker.CPCardStatus.type)
+  return _internal_mutable_type();
 }
 
-// int32 status_first = 5;
-inline void CPCardStatus::clear_status_first() {
-  status_first_ = 0;
+// repeated int32 status = 3;
+inline int CPCardStatus::_internal_status_size() const {
+  return status_.size();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CPCardStatus::_internal_status_first() const {
-  return status_first_;
+inline int CPCardStatus::status_size() const {
+  return _internal_status_size();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CPCardStatus::status_first() const {
-  // @@protoc_insertion_point(field_get:ChinesePoker.CPCardStatus.status_first)
-  return _internal_status_first();
+inline void CPCardStatus::clear_status() {
+  status_.Clear();
 }
-inline void CPCardStatus::_internal_set_status_first(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  status_first_ = value;
+inline ::PROTOBUF_NAMESPACE_ID::int32 CPCardStatus::_internal_status(int index) const {
+  return status_.Get(index);
 }
-inline void CPCardStatus::set_status_first(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_status_first(value);
-  // @@protoc_insertion_point(field_set:ChinesePoker.CPCardStatus.status_first)
+inline ::PROTOBUF_NAMESPACE_ID::int32 CPCardStatus::status(int index) const {
+  // @@protoc_insertion_point(field_get:ChinesePoker.CPCardStatus.status)
+  return _internal_status(index);
 }
-
-// int32 status_sencond = 6;
-inline void CPCardStatus::clear_status_sencond() {
-  status_sencond_ = 0;
+inline void CPCardStatus::set_status(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  status_.Set(index, value);
+  // @@protoc_insertion_point(field_set:ChinesePoker.CPCardStatus.status)
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CPCardStatus::_internal_status_sencond() const {
-  return status_sencond_;
+inline void CPCardStatus::_internal_add_status(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  status_.Add(value);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CPCardStatus::status_sencond() const {
-  // @@protoc_insertion_point(field_get:ChinesePoker.CPCardStatus.status_sencond)
-  return _internal_status_sencond();
+inline void CPCardStatus::add_status(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_status(value);
+  // @@protoc_insertion_point(field_add:ChinesePoker.CPCardStatus.status)
 }
-inline void CPCardStatus::_internal_set_status_sencond(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  status_sencond_ = value;
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+CPCardStatus::_internal_status() const {
+  return status_;
 }
-inline void CPCardStatus::set_status_sencond(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_status_sencond(value);
-  // @@protoc_insertion_point(field_set:ChinesePoker.CPCardStatus.status_sencond)
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+CPCardStatus::status() const {
+  // @@protoc_insertion_point(field_list:ChinesePoker.CPCardStatus.status)
+  return _internal_status();
 }
-
-// int32 status_third = 7;
-inline void CPCardStatus::clear_status_third() {
-  status_third_ = 0;
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+CPCardStatus::_internal_mutable_status() {
+  return &status_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CPCardStatus::_internal_status_third() const {
-  return status_third_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 CPCardStatus::status_third() const {
-  // @@protoc_insertion_point(field_get:ChinesePoker.CPCardStatus.status_third)
-  return _internal_status_third();
-}
-inline void CPCardStatus::_internal_set_status_third(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  status_third_ = value;
-}
-inline void CPCardStatus::set_status_third(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_status_third(value);
-  // @@protoc_insertion_point(field_set:ChinesePoker.CPCardStatus.status_third)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+CPCardStatus::mutable_status() {
+  // @@protoc_insertion_point(field_mutable_list:ChinesePoker.CPCardStatus.status)
+  return _internal_mutable_status();
 }
 
-// int32 add_first = 8;
-inline void CPCardStatus::clear_add_first() {
-  add_first_ = 0;
+// repeated int32 add = 4;
+inline int CPCardStatus::_internal_add_size() const {
+  return add_.size();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CPCardStatus::_internal_add_first() const {
-  return add_first_;
+inline int CPCardStatus::add_size() const {
+  return _internal_add_size();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CPCardStatus::add_first() const {
-  // @@protoc_insertion_point(field_get:ChinesePoker.CPCardStatus.add_first)
-  return _internal_add_first();
+inline void CPCardStatus::clear_add() {
+  add_.Clear();
 }
-inline void CPCardStatus::_internal_set_add_first(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  add_first_ = value;
+inline ::PROTOBUF_NAMESPACE_ID::int32 CPCardStatus::_internal_add(int index) const {
+  return add_.Get(index);
 }
-inline void CPCardStatus::set_add_first(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_add_first(value);
-  // @@protoc_insertion_point(field_set:ChinesePoker.CPCardStatus.add_first)
+inline ::PROTOBUF_NAMESPACE_ID::int32 CPCardStatus::add(int index) const {
+  // @@protoc_insertion_point(field_get:ChinesePoker.CPCardStatus.add)
+  return _internal_add(index);
 }
-
-// int32 add_sencond = 9;
-inline void CPCardStatus::clear_add_sencond() {
-  add_sencond_ = 0;
+inline void CPCardStatus::set_add(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  add_.Set(index, value);
+  // @@protoc_insertion_point(field_set:ChinesePoker.CPCardStatus.add)
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CPCardStatus::_internal_add_sencond() const {
-  return add_sencond_;
+inline void CPCardStatus::_internal_add_add(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  add_.Add(value);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CPCardStatus::add_sencond() const {
-  // @@protoc_insertion_point(field_get:ChinesePoker.CPCardStatus.add_sencond)
-  return _internal_add_sencond();
+inline void CPCardStatus::add_add(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_add(value);
+  // @@protoc_insertion_point(field_add:ChinesePoker.CPCardStatus.add)
 }
-inline void CPCardStatus::_internal_set_add_sencond(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  add_sencond_ = value;
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+CPCardStatus::_internal_add() const {
+  return add_;
 }
-inline void CPCardStatus::set_add_sencond(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_add_sencond(value);
-  // @@protoc_insertion_point(field_set:ChinesePoker.CPCardStatus.add_sencond)
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+CPCardStatus::add() const {
+  // @@protoc_insertion_point(field_list:ChinesePoker.CPCardStatus.add)
+  return _internal_add();
 }
-
-// int32 add_third = 10;
-inline void CPCardStatus::clear_add_third() {
-  add_third_ = 0;
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+CPCardStatus::_internal_mutable_add() {
+  return &add_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CPCardStatus::_internal_add_third() const {
-  return add_third_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 CPCardStatus::add_third() const {
-  // @@protoc_insertion_point(field_get:ChinesePoker.CPCardStatus.add_third)
-  return _internal_add_third();
-}
-inline void CPCardStatus::_internal_set_add_third(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  add_third_ = value;
-}
-inline void CPCardStatus::set_add_third(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_add_third(value);
-  // @@protoc_insertion_point(field_set:ChinesePoker.CPCardStatus.add_third)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+CPCardStatus::mutable_add() {
+  // @@protoc_insertion_point(field_mutable_list:ChinesePoker.CPCardStatus.add)
+  return _internal_mutable_add();
 }
 
 // -------------------------------------------------------------------
@@ -3280,127 +3201,101 @@ inline void CPCardResult::set_chair_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:ChinesePoker.CPCardResult.chair_id)
 }
 
-// int64 score_first = 2;
-inline void CPCardResult::clear_score_first() {
-  score_first_ = PROTOBUF_LONGLONG(0);
+// repeated int64 score = 2;
+inline int CPCardResult::_internal_score_size() const {
+  return score_.size();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 CPCardResult::_internal_score_first() const {
-  return score_first_;
+inline int CPCardResult::score_size() const {
+  return _internal_score_size();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 CPCardResult::score_first() const {
-  // @@protoc_insertion_point(field_get:ChinesePoker.CPCardResult.score_first)
-  return _internal_score_first();
+inline void CPCardResult::clear_score() {
+  score_.Clear();
 }
-inline void CPCardResult::_internal_set_score_first(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  
-  score_first_ = value;
+inline ::PROTOBUF_NAMESPACE_ID::int64 CPCardResult::_internal_score(int index) const {
+  return score_.Get(index);
 }
-inline void CPCardResult::set_score_first(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_score_first(value);
-  // @@protoc_insertion_point(field_set:ChinesePoker.CPCardResult.score_first)
+inline ::PROTOBUF_NAMESPACE_ID::int64 CPCardResult::score(int index) const {
+  // @@protoc_insertion_point(field_get:ChinesePoker.CPCardResult.score)
+  return _internal_score(index);
 }
-
-// int64 score_sencond = 3;
-inline void CPCardResult::clear_score_sencond() {
-  score_sencond_ = PROTOBUF_LONGLONG(0);
+inline void CPCardResult::set_score(int index, ::PROTOBUF_NAMESPACE_ID::int64 value) {
+  score_.Set(index, value);
+  // @@protoc_insertion_point(field_set:ChinesePoker.CPCardResult.score)
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 CPCardResult::_internal_score_sencond() const {
-  return score_sencond_;
+inline void CPCardResult::_internal_add_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  score_.Add(value);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 CPCardResult::score_sencond() const {
-  // @@protoc_insertion_point(field_get:ChinesePoker.CPCardResult.score_sencond)
-  return _internal_score_sencond();
+inline void CPCardResult::add_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_add_score(value);
+  // @@protoc_insertion_point(field_add:ChinesePoker.CPCardResult.score)
 }
-inline void CPCardResult::_internal_set_score_sencond(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  
-  score_sencond_ = value;
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
+CPCardResult::_internal_score() const {
+  return score_;
 }
-inline void CPCardResult::set_score_sencond(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_score_sencond(value);
-  // @@protoc_insertion_point(field_set:ChinesePoker.CPCardResult.score_sencond)
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
+CPCardResult::score() const {
+  // @@protoc_insertion_point(field_list:ChinesePoker.CPCardResult.score)
+  return _internal_score();
 }
-
-// int64 score_third = 4;
-inline void CPCardResult::clear_score_third() {
-  score_third_ = PROTOBUF_LONGLONG(0);
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
+CPCardResult::_internal_mutable_score() {
+  return &score_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 CPCardResult::_internal_score_third() const {
-  return score_third_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int64 CPCardResult::score_third() const {
-  // @@protoc_insertion_point(field_get:ChinesePoker.CPCardResult.score_third)
-  return _internal_score_third();
-}
-inline void CPCardResult::_internal_set_score_third(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  
-  score_third_ = value;
-}
-inline void CPCardResult::set_score_third(::PROTOBUF_NAMESPACE_ID::int64 value) {
-  _internal_set_score_third(value);
-  // @@protoc_insertion_point(field_set:ChinesePoker.CPCardResult.score_third)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
+CPCardResult::mutable_score() {
+  // @@protoc_insertion_point(field_mutable_list:ChinesePoker.CPCardResult.score)
+  return _internal_mutable_score();
 }
 
-// bool win_first = 5;
-inline void CPCardResult::clear_win_first() {
-  win_first_ = false;
+// repeated bool win = 3;
+inline int CPCardResult::_internal_win_size() const {
+  return win_.size();
 }
-inline bool CPCardResult::_internal_win_first() const {
-  return win_first_;
+inline int CPCardResult::win_size() const {
+  return _internal_win_size();
 }
-inline bool CPCardResult::win_first() const {
-  // @@protoc_insertion_point(field_get:ChinesePoker.CPCardResult.win_first)
-  return _internal_win_first();
+inline void CPCardResult::clear_win() {
+  win_.Clear();
 }
-inline void CPCardResult::_internal_set_win_first(bool value) {
-  
-  win_first_ = value;
+inline bool CPCardResult::_internal_win(int index) const {
+  return win_.Get(index);
 }
-inline void CPCardResult::set_win_first(bool value) {
-  _internal_set_win_first(value);
-  // @@protoc_insertion_point(field_set:ChinesePoker.CPCardResult.win_first)
+inline bool CPCardResult::win(int index) const {
+  // @@protoc_insertion_point(field_get:ChinesePoker.CPCardResult.win)
+  return _internal_win(index);
 }
-
-// bool win_sencond = 6;
-inline void CPCardResult::clear_win_sencond() {
-  win_sencond_ = false;
+inline void CPCardResult::set_win(int index, bool value) {
+  win_.Set(index, value);
+  // @@protoc_insertion_point(field_set:ChinesePoker.CPCardResult.win)
 }
-inline bool CPCardResult::_internal_win_sencond() const {
-  return win_sencond_;
+inline void CPCardResult::_internal_add_win(bool value) {
+  win_.Add(value);
 }
-inline bool CPCardResult::win_sencond() const {
-  // @@protoc_insertion_point(field_get:ChinesePoker.CPCardResult.win_sencond)
-  return _internal_win_sencond();
+inline void CPCardResult::add_win(bool value) {
+  _internal_add_win(value);
+  // @@protoc_insertion_point(field_add:ChinesePoker.CPCardResult.win)
 }
-inline void CPCardResult::_internal_set_win_sencond(bool value) {
-  
-  win_sencond_ = value;
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< bool >&
+CPCardResult::_internal_win() const {
+  return win_;
 }
-inline void CPCardResult::set_win_sencond(bool value) {
-  _internal_set_win_sencond(value);
-  // @@protoc_insertion_point(field_set:ChinesePoker.CPCardResult.win_sencond)
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< bool >&
+CPCardResult::win() const {
+  // @@protoc_insertion_point(field_list:ChinesePoker.CPCardResult.win)
+  return _internal_win();
 }
-
-// bool win_third = 7;
-inline void CPCardResult::clear_win_third() {
-  win_third_ = false;
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< bool >*
+CPCardResult::_internal_mutable_win() {
+  return &win_;
 }
-inline bool CPCardResult::_internal_win_third() const {
-  return win_third_;
-}
-inline bool CPCardResult::win_third() const {
-  // @@protoc_insertion_point(field_get:ChinesePoker.CPCardResult.win_third)
-  return _internal_win_third();
-}
-inline void CPCardResult::_internal_set_win_third(bool value) {
-  
-  win_third_ = value;
-}
-inline void CPCardResult::set_win_third(bool value) {
-  _internal_set_win_third(value);
-  // @@protoc_insertion_point(field_set:ChinesePoker.CPCardResult.win_third)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< bool >*
+CPCardResult::mutable_win() {
+  // @@protoc_insertion_point(field_mutable_list:ChinesePoker.CPCardResult.win)
+  return _internal_mutable_win();
 }
 
-// bool boom = 8;
+// bool boom = 4;
 inline void CPCardResult::clear_boom() {
   boom_ = false;
 }
@@ -3420,7 +3315,7 @@ inline void CPCardResult::set_boom(bool value) {
   // @@protoc_insertion_point(field_set:ChinesePoker.CPCardResult.boom)
 }
 
-// int64 score_total = 9;
+// int64 score_total = 5;
 inline void CPCardResult::clear_score_total() {
   score_total_ = PROTOBUF_LONGLONG(0);
 }
@@ -3440,7 +3335,7 @@ inline void CPCardResult::set_score_total(::PROTOBUF_NAMESPACE_ID::int64 value) 
   // @@protoc_insertion_point(field_set:ChinesePoker.CPCardResult.score_total)
 }
 
-// repeated int32 gunk_chair = 10;
+// repeated int32 gunk_chair = 6;
 inline int CPCardResult::_internal_gunk_chair_size() const {
   return gunk_chair_.size();
 }
