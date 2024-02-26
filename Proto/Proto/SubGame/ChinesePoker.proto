@@ -8,8 +8,7 @@ enum ECPGameState
 	GS_TP_READY							= 0;	//准备
 	GS_TP_DEAL							= 1;	//发牌
 	GS_TP_PLAYING						= 2;	//游戏
-	GS_TP_CONFIRM 						= 3;	//理牌完成
-	GS_TP_RESULT						= 4;	//结算
+	GS_TP_RESULT						= 3;	//结算
 };
 
 //玩家状态
@@ -17,7 +16,8 @@ enum ECPPlayerState
 {	
 	PS_READY							= 0;	//准备
 	PS_PLAY								= 1;	//游戏
-	PS_TIMEOUT							= 2;	//超时
+	PS_CONFIRM 							= 2;	//理牌完成
+	PS_TIMEOUT							= 3;	//超时
 };
 
 //牌型
@@ -52,7 +52,7 @@ enum ECPMsgIDSubGame
 	MsgIDSubGame_ConfirmResp			= 5;	//玩家确定返回 MsgCommonN32 里面是椅子号 谁确定了已经
 	MsgIDSubGame_NotifyStateResp		= 6;	//桌子状态(CPMsgTableState)
 	MsgIDSubGame_GameResultResp			= 7;	//游戏结束(CPMsgGameResult)
-	MsgIDSubGame_TimeOutResp			= 8;	//通知超时(MsgCommonBool)
+	MsgIDSubGame_StartTimeResp			= 8;	//有人进来刷新开始倒计时 MsgCommonN32 倒计时的时间
 	MsgIDSubGame_TimeOutReady			= 9;	//重新准备(MsgCommonBool)
 	MsgIDSubGame_TimeOutReadyResp		= 10;	//准备返回(MsgCommonBool)
 	MsgIDSubGame_TimeOutKickResp		= 11;	//超时踢了游戏(MsgCommonBool)

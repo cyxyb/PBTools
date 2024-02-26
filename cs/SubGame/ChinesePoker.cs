@@ -56,26 +56,26 @@ namespace ChinesePoker {
             "c2VQb2tlci5DUENhcmRTdGF0dXMSFAoMc3BlY2lhbF90eXBlGAQgAygFEi8K",
             "C2NhcmRfcmVzdWx0GAUgAygLMhouQ2hpbmVzZVBva2VyLkNQQ2FyZFJlc3Vs",
             "dBIyCgxwbGF5ZXJfaGFuZHMYBiADKAsyHC5DaGluZXNlUG9rZXIuQ1BNc2dI",
-            "YW5kQ2FyZHMSFgoOYWxsX2d1bmtfY2hhaXIYByABKAUqZwoMRUNQR2FtZVN0",
+            "YW5kQ2FyZHMSFgoOYWxsX2d1bmtfY2hhaXIYByABKAUqVAoMRUNQR2FtZVN0",
             "YXRlEg8KC0dTX1RQX1JFQURZEAASDgoKR1NfVFBfREVBTBABEhEKDUdTX1RQ",
-            "X1BMQVlJTkcQAhIRCg1HU19UUF9DT05GSVJNEAMSEAoMR1NfVFBfUkVTVUxU",
-            "EAQqOwoORUNQUGxheWVyU3RhdGUSDAoIUFNfUkVBRFkQABILCgdQU19QTEFZ",
-            "EAESDgoKUFNfVElNRU9VVBACKoUCCgtFQ1BDYXJkVHlwZRINCglDVF9TSU5H",
-            "TEUQABINCglDVF9ET1VCTEUQARIOCgpDVF9ET1VCTEVTEAISDAoIQ1RfVEhS",
-            "RUUQAxIJCgVDVF9TWhAEEgkKBUNUX1RIEAUSDAoIQ1RfSFVfTFUQBhILCgdD",
-            "VF9GT1VSEAcSCgoGQ1RfVEhTEAgSDAoIQ1RfSEpUSFMQCRISCg5DVF9TUEVD",
-            "SUFMX1NUSBAKEhIKDkNUX1NQRUNJQUxfU1NaEAsSEgoOQ1RfU1BFQ0lBTF9M",
-            "REIQDBISCg5DVF9TUEVDSUFMX1lUTBANEhMKD0NUX1NQRUNJQUxfWlpRTBAO",
-            "EgoKBkNUX01BWBAPKoEDCg9FQ1BNc2dJRFN1YkdhbWUSFQoRTXNnSURTdWJH",
-            "YW1lX051bGwQABIeChpNc2dJRFN1YkdhbWVfR2FtZVN0YXJ0UmVzcBABEhcK",
-            "E01zZ0lEU3ViR2FtZV9BY3Rpb24QAhIhCh1Nc2dJRFN1YkdhbWVfTm90aWZ5",
-            "QWN0aW9uUmVzcBADEhgKFE1zZ0lEU3ViR2FtZV9Db25maXJtEAQSHAoYTXNn",
-            "SURTdWJHYW1lX0NvbmZpcm1SZXNwEAUSIAocTXNnSURTdWJHYW1lX05vdGlm",
-            "eVN0YXRlUmVzcBAGEh8KG01zZ0lEU3ViR2FtZV9HYW1lUmVzdWx0UmVzcBAH",
-            "EhwKGE1zZ0lEU3ViR2FtZV9UaW1lT3V0UmVzcBAIEh0KGU1zZ0lEU3ViR2Ft",
-            "ZV9UaW1lT3V0UmVhZHkQCRIhCh1Nc2dJRFN1YkdhbWVfVGltZU91dFJlYWR5",
-            "UmVzcBAKEiAKHE1zZ0lEU3ViR2FtZV9UaW1lT3V0S2lja1Jlc3AQC2IGcHJv",
-            "dG8z"));
+            "X1BMQVlJTkcQAhIQCgxHU19UUF9SRVNVTFQQAypLCg5FQ1BQbGF5ZXJTdGF0",
+            "ZRIMCghQU19SRUFEWRAAEgsKB1BTX1BMQVkQARIOCgpQU19DT05GSVJNEAIS",
+            "DgoKUFNfVElNRU9VVBADKoUCCgtFQ1BDYXJkVHlwZRINCglDVF9TSU5HTEUQ",
+            "ABINCglDVF9ET1VCTEUQARIOCgpDVF9ET1VCTEVTEAISDAoIQ1RfVEhSRUUQ",
+            "AxIJCgVDVF9TWhAEEgkKBUNUX1RIEAUSDAoIQ1RfSFVfTFUQBhILCgdDVF9G",
+            "T1VSEAcSCgoGQ1RfVEhTEAgSDAoIQ1RfSEpUSFMQCRISCg5DVF9TUEVDSUFM",
+            "X1NUSBAKEhIKDkNUX1NQRUNJQUxfU1NaEAsSEgoOQ1RfU1BFQ0lBTF9MREIQ",
+            "DBISCg5DVF9TUEVDSUFMX1lUTBANEhMKD0NUX1NQRUNJQUxfWlpRTBAOEgoK",
+            "BkNUX01BWBAPKoMDCg9FQ1BNc2dJRFN1YkdhbWUSFQoRTXNnSURTdWJHYW1l",
+            "X051bGwQABIeChpNc2dJRFN1YkdhbWVfR2FtZVN0YXJ0UmVzcBABEhcKE01z",
+            "Z0lEU3ViR2FtZV9BY3Rpb24QAhIhCh1Nc2dJRFN1YkdhbWVfTm90aWZ5QWN0",
+            "aW9uUmVzcBADEhgKFE1zZ0lEU3ViR2FtZV9Db25maXJtEAQSHAoYTXNnSURT",
+            "dWJHYW1lX0NvbmZpcm1SZXNwEAUSIAocTXNnSURTdWJHYW1lX05vdGlmeVN0",
+            "YXRlUmVzcBAGEh8KG01zZ0lEU3ViR2FtZV9HYW1lUmVzdWx0UmVzcBAHEh4K",
+            "Gk1zZ0lEU3ViR2FtZV9TdGFydFRpbWVSZXNwEAgSHQoZTXNnSURTdWJHYW1l",
+            "X1RpbWVPdXRSZWFkeRAJEiEKHU1zZ0lEU3ViR2FtZV9UaW1lT3V0UmVhZHlS",
+            "ZXNwEAoSIAocTXNnSURTdWJHYW1lX1RpbWVPdXRLaWNrUmVzcBALYgZwcm90",
+            "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::ChinesePoker.ECPGameState), typeof(global::ChinesePoker.ECPPlayerState), typeof(global::ChinesePoker.ECPCardType), typeof(global::ChinesePoker.ECPMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -112,13 +112,9 @@ namespace ChinesePoker {
     /// </summary>
     [pbr::OriginalName("GS_TP_PLAYING")] GsTpPlaying = 2,
     /// <summary>
-    ///理牌完成
-    /// </summary>
-    [pbr::OriginalName("GS_TP_CONFIRM")] GsTpConfirm = 3,
-    /// <summary>
     ///结算
     /// </summary>
-    [pbr::OriginalName("GS_TP_RESULT")] GsTpResult = 4,
+    [pbr::OriginalName("GS_TP_RESULT")] GsTpResult = 3,
   }
 
   /// <summary>
@@ -134,9 +130,13 @@ namespace ChinesePoker {
     /// </summary>
     [pbr::OriginalName("PS_PLAY")] PsPlay = 1,
     /// <summary>
+    ///理牌完成
+    /// </summary>
+    [pbr::OriginalName("PS_CONFIRM")] PsConfirm = 2,
+    /// <summary>
     ///超时
     /// </summary>
-    [pbr::OriginalName("PS_TIMEOUT")] PsTimeout = 2,
+    [pbr::OriginalName("PS_TIMEOUT")] PsTimeout = 3,
   }
 
   /// <summary>
@@ -240,9 +240,9 @@ namespace ChinesePoker {
     /// </summary>
     [pbr::OriginalName("MsgIDSubGame_GameResultResp")] MsgIdsubGameGameResultResp = 7,
     /// <summary>
-    ///通知超时(MsgCommonBool)
+    ///有人进来刷新开始倒计时 MsgCommonN32 倒计时的时间
     /// </summary>
-    [pbr::OriginalName("MsgIDSubGame_TimeOutResp")] MsgIdsubGameTimeOutResp = 8,
+    [pbr::OriginalName("MsgIDSubGame_StartTimeResp")] MsgIdsubGameStartTimeResp = 8,
     /// <summary>
     ///重新准备(MsgCommonBool)
     /// </summary>

@@ -104,8 +104,7 @@ enum ECPGameState : int {
   GS_TP_READY = 0,
   GS_TP_DEAL = 1,
   GS_TP_PLAYING = 2,
-  GS_TP_CONFIRM = 3,
-  GS_TP_RESULT = 4,
+  GS_TP_RESULT = 3,
   ECPGameState_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   ECPGameState_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
@@ -131,7 +130,8 @@ inline bool ECPGameState_Parse(
 enum ECPPlayerState : int {
   PS_READY = 0,
   PS_PLAY = 1,
-  PS_TIMEOUT = 2,
+  PS_CONFIRM = 2,
+  PS_TIMEOUT = 3,
   ECPPlayerState_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   ECPPlayerState_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
@@ -202,7 +202,7 @@ enum ECPMsgIDSubGame : int {
   MsgIDSubGame_ConfirmResp = 5,
   MsgIDSubGame_NotifyStateResp = 6,
   MsgIDSubGame_GameResultResp = 7,
-  MsgIDSubGame_TimeOutResp = 8,
+  MsgIDSubGame_StartTimeResp = 8,
   MsgIDSubGame_TimeOutReady = 9,
   MsgIDSubGame_TimeOutReadyResp = 10,
   MsgIDSubGame_TimeOutKickResp = 11,
