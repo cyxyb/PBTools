@@ -36,46 +36,46 @@ namespace ChinesePoker {
             "ZBgBIAEoBRITCgtwbGF5X3N0YXR1cxgCIAEoBRIvCgtjYXJkX3N0YXR1cxgD",
             "IAEoCzIaLkNoaW5lc2VQb2tlci5DUENhcmRTdGF0dXMSDAoEZ29sZBgEIAEo",
             "AxIQCgh3aW5fZ29sZBgFIAEoAxIsCgZoYW5kbHMYBiABKAsyHC5DaGluZXNl",
-            "UG9rZXIuQ1BNc2dIYW5kQ2FyZHMilAEKDkNQTXNnU2NlbmVJbmZvEhIKCmNl",
+            "UG9rZXIuQ1BNc2dIYW5kQ2FyZHMipwEKDkNQTXNnU2NlbmVJbmZvEhIKCmNl",
             "bGxfc2NvcmUYASABKAMSEwoLdGFibGVfc3RhdGUYAiABKAUSEAoIb3V0X3Rp",
-            "bWUYAyABKAUSEgoKdG90YWxfdGltZRgEIAEoBRIzCgxwbGF5ZXJfaW5mb3MY",
-            "BiADKAsyHS5DaGluZXNlUG9rZXIuQ1BNc2dQbGF5ZXJJbmZvIokBChJDUE1z",
-            "Z0dhbWVTdGFydFJlc3ASLAoGaGFuZGxzGAEgASgLMhwuQ2hpbmVzZVBva2Vy",
-            "LkNQTXNnSGFuZENhcmRzEi8KC2NhcmRfc3RhdHVzGAIgASgLMhouQ2hpbmVz",
-            "ZVBva2VyLkNQQ2FyZFN0YXR1cxIUCgxzcGVjaWFsX3R5cGUYAyABKAUiNwoL",
-            "Q1BNc2dBY3Rpb24SDAoEdHlwZRgBIAEoBRIMCgRwb3MxGAIgASgDEgwKBHBv",
-            "czIYAyABKAMiXgoVQ1BNc2dOb3RpZnlBY3Rpb25SZXNwEi8KC2NhcmRfc3Rh",
-            "dHVzGAEgASgLMhouQ2hpbmVzZVBva2VyLkNQQ2FyZFN0YXR1cxIUCgxzcGVj",
-            "aWFsX3R5cGUYAiABKAUi0wEKDENQQ2FyZFJlc3VsdBIQCghjaGFpcl9pZBgB",
-            "IAEoBRITCgtzY29yZV9maXJzdBgCIAEoAxIVCg1zY29yZV9zZW5jb25kGAMg",
-            "ASgDEhMKC3Njb3JlX3RoaXJkGAQgASgDEhEKCXdpbl9maXJzdBgFIAEoCBIT",
-            "Cgt3aW5fc2VuY29uZBgGIAEoCBIRCgl3aW5fdGhpcmQYByABKAgSDAoEYm9v",
-            "bRgIIAEoCBITCgtzY29yZV90b3RhbBgJIAEoAxISCgpndW5rX2NoYWlyGAog",
-            "AygFIvsBCg9DUE1zZ0dhbWVSZXN1bHQSEAoIZ2FtZV90YXgYASABKAUSEgoK",
-            "Z2FtZV9zY29yZRgCIAMoAxIvCgtjYXJkX3N0YXR1cxgDIAMoCzIaLkNoaW5l",
-            "c2VQb2tlci5DUENhcmRTdGF0dXMSFAoMc3BlY2lhbF90eXBlGAQgAygFEi8K",
-            "C2NhcmRfcmVzdWx0GAUgAygLMhouQ2hpbmVzZVBva2VyLkNQQ2FyZFJlc3Vs",
-            "dBIyCgxwbGF5ZXJfaGFuZHMYBiADKAsyHC5DaGluZXNlUG9rZXIuQ1BNc2dI",
-            "YW5kQ2FyZHMSFgoOYWxsX2d1bmtfY2hhaXIYByABKAUqVAoMRUNQR2FtZVN0",
-            "YXRlEg8KC0dTX1RQX1JFQURZEAASDgoKR1NfVFBfREVBTBABEhEKDUdTX1RQ",
-            "X1BMQVlJTkcQAhIQCgxHU19UUF9SRVNVTFQQAypLCg5FQ1BQbGF5ZXJTdGF0",
-            "ZRIMCghQU19SRUFEWRAAEgsKB1BTX1BMQVkQARIOCgpQU19DT05GSVJNEAIS",
-            "DgoKUFNfVElNRU9VVBADKoUCCgtFQ1BDYXJkVHlwZRINCglDVF9TSU5HTEUQ",
-            "ABINCglDVF9ET1VCTEUQARIOCgpDVF9ET1VCTEVTEAISDAoIQ1RfVEhSRUUQ",
-            "AxIJCgVDVF9TWhAEEgkKBUNUX1RIEAUSDAoIQ1RfSFVfTFUQBhILCgdDVF9G",
-            "T1VSEAcSCgoGQ1RfVEhTEAgSDAoIQ1RfSEpUSFMQCRISCg5DVF9TUEVDSUFM",
-            "X1NUSBAKEhIKDkNUX1NQRUNJQUxfU1NaEAsSEgoOQ1RfU1BFQ0lBTF9MREIQ",
-            "DBISCg5DVF9TUEVDSUFMX1lUTBANEhMKD0NUX1NQRUNJQUxfWlpRTBAOEgoK",
-            "BkNUX01BWBAPKoMDCg9FQ1BNc2dJRFN1YkdhbWUSFQoRTXNnSURTdWJHYW1l",
-            "X051bGwQABIeChpNc2dJRFN1YkdhbWVfR2FtZVN0YXJ0UmVzcBABEhcKE01z",
-            "Z0lEU3ViR2FtZV9BY3Rpb24QAhIhCh1Nc2dJRFN1YkdhbWVfTm90aWZ5QWN0",
-            "aW9uUmVzcBADEhgKFE1zZ0lEU3ViR2FtZV9Db25maXJtEAQSHAoYTXNnSURT",
-            "dWJHYW1lX0NvbmZpcm1SZXNwEAUSIAocTXNnSURTdWJHYW1lX05vdGlmeVN0",
-            "YXRlUmVzcBAGEh8KG01zZ0lEU3ViR2FtZV9HYW1lUmVzdWx0UmVzcBAHEh4K",
-            "Gk1zZ0lEU3ViR2FtZV9TdGFydFRpbWVSZXNwEAgSHQoZTXNnSURTdWJHYW1l",
-            "X1RpbWVPdXRSZWFkeRAJEiEKHU1zZ0lEU3ViR2FtZV9UaW1lT3V0UmVhZHlS",
-            "ZXNwEAoSIAocTXNnSURTdWJHYW1lX1RpbWVPdXRLaWNrUmVzcBALYgZwcm90",
-            "bzM="));
+            "bWUYAyABKAUSEgoKdG90YWxfdGltZRgEIAEoBRIRCglzZXJ2ZXJfaWQYBSAB",
+            "KAUSMwoMcGxheWVyX2luZm9zGAYgAygLMh0uQ2hpbmVzZVBva2VyLkNQTXNn",
+            "UGxheWVySW5mbyKJAQoSQ1BNc2dHYW1lU3RhcnRSZXNwEiwKBmhhbmRscxgB",
+            "IAEoCzIcLkNoaW5lc2VQb2tlci5DUE1zZ0hhbmRDYXJkcxIvCgtjYXJkX3N0",
+            "YXR1cxgCIAEoCzIaLkNoaW5lc2VQb2tlci5DUENhcmRTdGF0dXMSFAoMc3Bl",
+            "Y2lhbF90eXBlGAMgASgFIjcKC0NQTXNnQWN0aW9uEgwKBHR5cGUYASABKAUS",
+            "DAoEcG9zMRgCIAEoAxIMCgRwb3MyGAMgASgDIl4KFUNQTXNnTm90aWZ5QWN0",
+            "aW9uUmVzcBIvCgtjYXJkX3N0YXR1cxgBIAEoCzIaLkNoaW5lc2VQb2tlci5D",
+            "UENhcmRTdGF0dXMSFAoMc3BlY2lhbF90eXBlGAIgASgFItMBCgxDUENhcmRS",
+            "ZXN1bHQSEAoIY2hhaXJfaWQYASABKAUSEwoLc2NvcmVfZmlyc3QYAiABKAMS",
+            "FQoNc2NvcmVfc2VuY29uZBgDIAEoAxITCgtzY29yZV90aGlyZBgEIAEoAxIR",
+            "Cgl3aW5fZmlyc3QYBSABKAgSEwoLd2luX3NlbmNvbmQYBiABKAgSEQoJd2lu",
+            "X3RoaXJkGAcgASgIEgwKBGJvb20YCCABKAgSEwoLc2NvcmVfdG90YWwYCSAB",
+            "KAMSEgoKZ3Vua19jaGFpchgKIAMoBSL7AQoPQ1BNc2dHYW1lUmVzdWx0EhAK",
+            "CGdhbWVfdGF4GAEgASgFEhIKCmdhbWVfc2NvcmUYAiADKAMSLwoLY2FyZF9z",
+            "dGF0dXMYAyADKAsyGi5DaGluZXNlUG9rZXIuQ1BDYXJkU3RhdHVzEhQKDHNw",
+            "ZWNpYWxfdHlwZRgEIAMoBRIvCgtjYXJkX3Jlc3VsdBgFIAMoCzIaLkNoaW5l",
+            "c2VQb2tlci5DUENhcmRSZXN1bHQSMgoMcGxheWVyX2hhbmRzGAYgAygLMhwu",
+            "Q2hpbmVzZVBva2VyLkNQTXNnSGFuZENhcmRzEhYKDmFsbF9ndW5rX2NoYWly",
+            "GAcgASgFKlQKDEVDUEdhbWVTdGF0ZRIPCgtHU19UUF9SRUFEWRAAEg4KCkdT",
+            "X1RQX0RFQUwQARIRCg1HU19UUF9QTEFZSU5HEAISEAoMR1NfVFBfUkVTVUxU",
+            "EAMqSwoORUNQUGxheWVyU3RhdGUSDAoIUFNfUkVBRFkQABILCgdQU19QTEFZ",
+            "EAESDgoKUFNfQ09ORklSTRACEg4KClBTX1RJTUVPVVQQAyqFAgoLRUNQQ2Fy",
+            "ZFR5cGUSDQoJQ1RfU0lOR0xFEAASDQoJQ1RfRE9VQkxFEAESDgoKQ1RfRE9V",
+            "QkxFUxACEgwKCENUX1RIUkVFEAMSCQoFQ1RfU1oQBBIJCgVDVF9USBAFEgwK",
+            "CENUX0hVX0xVEAYSCwoHQ1RfRk9VUhAHEgoKBkNUX1RIUxAIEgwKCENUX0hK",
+            "VEhTEAkSEgoOQ1RfU1BFQ0lBTF9TVEgQChISCg5DVF9TUEVDSUFMX1NTWhAL",
+            "EhIKDkNUX1NQRUNJQUxfTERCEAwSEgoOQ1RfU1BFQ0lBTF9ZVEwQDRITCg9D",
+            "VF9TUEVDSUFMX1paUUwQDhIKCgZDVF9NQVgQDyqDAwoPRUNQTXNnSURTdWJH",
+            "YW1lEhUKEU1zZ0lEU3ViR2FtZV9OdWxsEAASHgoaTXNnSURTdWJHYW1lX0dh",
+            "bWVTdGFydFJlc3AQARIXChNNc2dJRFN1YkdhbWVfQWN0aW9uEAISIQodTXNn",
+            "SURTdWJHYW1lX05vdGlmeUFjdGlvblJlc3AQAxIYChRNc2dJRFN1YkdhbWVf",
+            "Q29uZmlybRAEEhwKGE1zZ0lEU3ViR2FtZV9Db25maXJtUmVzcBAFEiAKHE1z",
+            "Z0lEU3ViR2FtZV9Ob3RpZnlTdGF0ZVJlc3AQBhIfChtNc2dJRFN1YkdhbWVf",
+            "R2FtZVJlc3VsdFJlc3AQBxIeChpNc2dJRFN1YkdhbWVfU3RhcnRUaW1lUmVz",
+            "cBAIEh0KGU1zZ0lEU3ViR2FtZV9UaW1lT3V0UmVhZHkQCRIhCh1Nc2dJRFN1",
+            "YkdhbWVfVGltZU91dFJlYWR5UmVzcBAKEiAKHE1zZ0lEU3ViR2FtZV9UaW1l",
+            "T3V0S2lja1Jlc3AQC2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::ChinesePoker.ECPGameState), typeof(global::ChinesePoker.ECPPlayerState), typeof(global::ChinesePoker.ECPCardType), typeof(global::ChinesePoker.ECPMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -83,7 +83,7 @@ namespace ChinesePoker {
             new pbr::GeneratedClrTypeInfo(typeof(global::ChinesePoker.CPMsgHandCards), global::ChinesePoker.CPMsgHandCards.Parser, new[]{ "ChairId", "Cards" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ChinesePoker.CPCardStatus), global::ChinesePoker.CPCardStatus.Parser, new[]{ "ChairId", "TypeFirst", "TypeSencond", "TypeThird", "StatusFirst", "StatusSencond", "StatusThird", "AddFirst", "AddSencond", "AddThird" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ChinesePoker.CPMsgPlayerInfo), global::ChinesePoker.CPMsgPlayerInfo.Parser, new[]{ "ChairId", "PlayStatus", "CardStatus", "Gold", "WinGold", "Handls" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ChinesePoker.CPMsgSceneInfo), global::ChinesePoker.CPMsgSceneInfo.Parser, new[]{ "CellScore", "TableState", "OutTime", "TotalTime", "PlayerInfos" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ChinesePoker.CPMsgSceneInfo), global::ChinesePoker.CPMsgSceneInfo.Parser, new[]{ "CellScore", "TableState", "OutTime", "TotalTime", "ServerId", "PlayerInfos" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ChinesePoker.CPMsgGameStartResp), global::ChinesePoker.CPMsgGameStartResp.Parser, new[]{ "Handls", "CardStatus", "SpecialType" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ChinesePoker.CPMsgAction), global::ChinesePoker.CPMsgAction.Parser, new[]{ "Type", "Pos1", "Pos2" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ChinesePoker.CPMsgNotifyActionResp), global::ChinesePoker.CPMsgNotifyActionResp.Parser, new[]{ "CardStatus", "SpecialType" }, null, null, null, null),
@@ -1632,6 +1632,7 @@ namespace ChinesePoker {
       tableState_ = other.tableState_;
       outTime_ = other.outTime_;
       totalTime_ = other.totalTime_;
+      serverId_ = other.serverId_;
       playerInfos_ = other.playerInfos_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -1697,6 +1698,20 @@ namespace ChinesePoker {
       }
     }
 
+    /// <summary>Field number for the "server_id" field.</summary>
+    public const int ServerIdFieldNumber = 5;
+    private int serverId_;
+    /// <summary>
+    ///房间ID 
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int ServerId {
+      get { return serverId_; }
+      set {
+        serverId_ = value;
+      }
+    }
+
     /// <summary>Field number for the "player_infos" field.</summary>
     public const int PlayerInfosFieldNumber = 6;
     private static readonly pb::FieldCodec<global::ChinesePoker.CPMsgPlayerInfo> _repeated_playerInfos_codec
@@ -1727,6 +1742,7 @@ namespace ChinesePoker {
       if (TableState != other.TableState) return false;
       if (OutTime != other.OutTime) return false;
       if (TotalTime != other.TotalTime) return false;
+      if (ServerId != other.ServerId) return false;
       if(!playerInfos_.Equals(other.playerInfos_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1738,6 +1754,7 @@ namespace ChinesePoker {
       if (TableState != 0) hash ^= TableState.GetHashCode();
       if (OutTime != 0) hash ^= OutTime.GetHashCode();
       if (TotalTime != 0) hash ^= TotalTime.GetHashCode();
+      if (ServerId != 0) hash ^= ServerId.GetHashCode();
       hash ^= playerInfos_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1771,6 +1788,10 @@ namespace ChinesePoker {
         output.WriteRawTag(32);
         output.WriteInt32(TotalTime);
       }
+      if (ServerId != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(ServerId);
+      }
       playerInfos_.WriteTo(output, _repeated_playerInfos_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1797,6 +1818,10 @@ namespace ChinesePoker {
         output.WriteRawTag(32);
         output.WriteInt32(TotalTime);
       }
+      if (ServerId != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(ServerId);
+      }
       playerInfos_.WriteTo(ref output, _repeated_playerInfos_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1818,6 +1843,9 @@ namespace ChinesePoker {
       }
       if (TotalTime != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(TotalTime);
+      }
+      if (ServerId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ServerId);
       }
       size += playerInfos_.CalculateSize(_repeated_playerInfos_codec);
       if (_unknownFields != null) {
@@ -1842,6 +1870,9 @@ namespace ChinesePoker {
       }
       if (other.TotalTime != 0) {
         TotalTime = other.TotalTime;
+      }
+      if (other.ServerId != 0) {
+        ServerId = other.ServerId;
       }
       playerInfos_.Add(other.playerInfos_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -1872,6 +1903,10 @@ namespace ChinesePoker {
           }
           case 32: {
             TotalTime = input.ReadInt32();
+            break;
+          }
+          case 40: {
+            ServerId = input.ReadInt32();
             break;
           }
           case 50: {
@@ -1906,6 +1941,10 @@ namespace ChinesePoker {
           }
           case 32: {
             TotalTime = input.ReadInt32();
+            break;
+          }
+          case 40: {
+            ServerId = input.ReadInt32();
             break;
           }
           case 50: {

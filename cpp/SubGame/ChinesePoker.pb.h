@@ -1099,6 +1099,7 @@ class CPMsgSceneInfo PROTOBUF_FINAL :
     kTableStateFieldNumber = 2,
     kOutTimeFieldNumber = 3,
     kTotalTimeFieldNumber = 4,
+    kServerIdFieldNumber = 5,
   };
   // repeated .ChinesePoker.CPMsgPlayerInfo player_infos = 6;
   int player_infos_size() const;
@@ -1154,6 +1155,15 @@ class CPMsgSceneInfo PROTOBUF_FINAL :
   void _internal_set_total_time(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 server_id = 5;
+  void clear_server_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 server_id() const;
+  void set_server_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_server_id() const;
+  void _internal_set_server_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:ChinesePoker.CPMsgSceneInfo)
  private:
   class _Internal;
@@ -1166,6 +1176,7 @@ class CPMsgSceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 table_state_;
   ::PROTOBUF_NAMESPACE_ID::int32 out_time_;
   ::PROTOBUF_NAMESPACE_ID::int32 total_time_;
+  ::PROTOBUF_NAMESPACE_ID::int32 server_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ChinesePoker_2eproto;
 };
@@ -2823,6 +2834,26 @@ inline void CPMsgSceneInfo::_internal_set_total_time(::PROTOBUF_NAMESPACE_ID::in
 inline void CPMsgSceneInfo::set_total_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_total_time(value);
   // @@protoc_insertion_point(field_set:ChinesePoker.CPMsgSceneInfo.total_time)
+}
+
+// int32 server_id = 5;
+inline void CPMsgSceneInfo::clear_server_id() {
+  server_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CPMsgSceneInfo::_internal_server_id() const {
+  return server_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CPMsgSceneInfo::server_id() const {
+  // @@protoc_insertion_point(field_get:ChinesePoker.CPMsgSceneInfo.server_id)
+  return _internal_server_id();
+}
+inline void CPMsgSceneInfo::_internal_set_server_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  server_id_ = value;
+}
+inline void CPMsgSceneInfo::set_server_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_server_id(value);
+  // @@protoc_insertion_point(field_set:ChinesePoker.CPMsgSceneInfo.server_id)
 }
 
 // repeated .ChinesePoker.CPMsgPlayerInfo player_infos = 6;

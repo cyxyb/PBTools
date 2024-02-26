@@ -104,6 +104,7 @@ message CPMsgSceneInfo
 	int32				table_state		= 2;	//桌子状态
 	int32				out_time		= 3;	//当前状态剩余超时时间
 	int32				total_time		= 4;	//当前状态总时间
+	int32				server_id		= 5;	//房间ID 
 
 	repeated CPMsgPlayerInfo player_infos	= 6;	//玩家状态
 }
