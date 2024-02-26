@@ -567,7 +567,7 @@ message InfiniteAgentQuerySubInfo
 //请求下级数据返回
 message MsgInfiniteAgentQuerySubInfoResp
 {
-	int32 agent_count 	= 1;						//代理数量
+	int32 agent_count 	= 1;						//代理数量1 0 
 	bool end_list 		= 2;						//结束
 	repeated InfiniteAgentQuerySubInfo info = 3;	//代理总数据
 }

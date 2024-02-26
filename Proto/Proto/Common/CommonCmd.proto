@@ -151,8 +151,8 @@ enum EMsgIDLogin
 	MsgIDCard_WeekMonthGetAwardResp				= 137;		//周卡月卡领取奖励返回(MsgWeekMonthGetAwardResp)
 	MsgIDShare_BindInviteCode					= 138;		//绑定邀请码
 	MsgIDShare_BindInviteCodeResp				= 139;		//绑定邀请码返回
-	MsgIDAgent_InfiniteQueryUserInfo			= 140;		//查询某个代理信息(InfiniteAgentQuerySubInfo)
-	MsgIDAgent_InfiniteQueryUserInfoResp		= 141;		//查询某个代理信息返回(InfiniteAgentQuerySubInfo)
+	MsgIDAgent_InfiniteQueryUserInfo			= 140;		//查询某个代理信息(MsgCommonN32)
+	MsgIDAgent_InfiniteQueryUserInfoResp		= 141;		//查询某个代理信息返回(MsgInfiniteAgentQuerySubInfoResp)
 }
 
 enum EMsgIDGame

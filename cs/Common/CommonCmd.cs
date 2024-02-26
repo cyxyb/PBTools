@@ -756,11 +756,11 @@ public enum EMsgIDLogin {
   /// </summary>
   [pbr::OriginalName("MsgIDShare_BindInviteCodeResp")] MsgIdshareBindInviteCodeResp = 139,
   /// <summary>
-  ///查询某个代理信息(InfiniteAgentQuerySubInfo)
+  ///查询某个代理信息(MsgCommonN32)
   /// </summary>
   [pbr::OriginalName("MsgIDAgent_InfiniteQueryUserInfo")] MsgIdagentInfiniteQueryUserInfo = 140,
   /// <summary>
-  ///查询某个代理信息返回(InfiniteAgentQuerySubInfo)
+  ///查询某个代理信息返回(MsgInfiniteAgentQuerySubInfoResp)
   /// </summary>
   [pbr::OriginalName("MsgIDAgent_InfiniteQueryUserInfoResp")] MsgIdagentInfiniteQueryUserInfoResp = 141,
 }
