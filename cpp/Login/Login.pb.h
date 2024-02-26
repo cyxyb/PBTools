@@ -826,6 +826,8 @@ class MsgPlayerLoginResp PROTOBUF_FINAL :
     kFristLoginFieldNumber = 22,
     kAgentLevelFieldNumber = 17,
     kAgentTypeFieldNumber = 23,
+    kServerIdFieldNumber = 24,
+    kKindIdFieldNumber = 25,
   };
   // string account = 4;
   void clear_account();
@@ -1095,6 +1097,24 @@ class MsgPlayerLoginResp PROTOBUF_FINAL :
   void _internal_set_agent_type(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 server_id = 24;
+  void clear_server_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 server_id() const;
+  void set_server_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_server_id() const;
+  void _internal_set_server_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 kind_id = 25;
+  void clear_kind_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 kind_id() const;
+  void set_kind_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_kind_id() const;
+  void _internal_set_kind_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgPlayerLoginResp)
  private:
   class _Internal;
@@ -1124,6 +1144,8 @@ class MsgPlayerLoginResp PROTOBUF_FINAL :
   bool frist_login_;
   ::PROTOBUF_NAMESPACE_ID::int32 agent_level_;
   ::PROTOBUF_NAMESPACE_ID::int32 agent_type_;
+  ::PROTOBUF_NAMESPACE_ID::int32 server_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 kind_id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -14896,6 +14918,46 @@ inline void MsgPlayerLoginResp::_internal_set_agent_type(::PROTOBUF_NAMESPACE_ID
 inline void MsgPlayerLoginResp::set_agent_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_agent_type(value);
   // @@protoc_insertion_point(field_set:MsgPlayerLoginResp.agent_type)
+}
+
+// int32 server_id = 24;
+inline void MsgPlayerLoginResp::clear_server_id() {
+  server_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPlayerLoginResp::_internal_server_id() const {
+  return server_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPlayerLoginResp::server_id() const {
+  // @@protoc_insertion_point(field_get:MsgPlayerLoginResp.server_id)
+  return _internal_server_id();
+}
+inline void MsgPlayerLoginResp::_internal_set_server_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  server_id_ = value;
+}
+inline void MsgPlayerLoginResp::set_server_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_server_id(value);
+  // @@protoc_insertion_point(field_set:MsgPlayerLoginResp.server_id)
+}
+
+// int32 kind_id = 25;
+inline void MsgPlayerLoginResp::clear_kind_id() {
+  kind_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPlayerLoginResp::_internal_kind_id() const {
+  return kind_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPlayerLoginResp::kind_id() const {
+  // @@protoc_insertion_point(field_get:MsgPlayerLoginResp.kind_id)
+  return _internal_kind_id();
+}
+inline void MsgPlayerLoginResp::_internal_set_kind_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  kind_id_ = value;
+}
+inline void MsgPlayerLoginResp::set_kind_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_kind_id(value);
+  // @@protoc_insertion_point(field_set:MsgPlayerLoginResp.kind_id)
 }
 
 // -------------------------------------------------------------------
