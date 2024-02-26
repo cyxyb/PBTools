@@ -303,7 +303,7 @@ enum EMsgIDDB : int {
   DB2LOGIN_WeekMonthGetAwardResp = 1104,
   DB2LOGIN_StorageCodeClientResp = 1105,
   LOGIN2DB_InfiniteQueryUserInfo = 1106,
-  DB2LOGIN_InfiniteQueryUserInfo = 1107,
+  DB2LOGIN_InfiniteQueryUserInfoResp = 1107,
   GAME2DB_Login = 2001,
   DB2GAME_LoginResp = 2002,
   GAME2DB_LoadCheatRate = 2003,

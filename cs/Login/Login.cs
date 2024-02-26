@@ -19483,7 +19483,7 @@ public sealed partial class MsgInfiniteAgentQuerySubInfoResp : pb::IMessage<MsgI
   public const int AgentCountFieldNumber = 1;
   private int agentCount_;
   /// <summary>
-  ///代理数量1 0 
+  ///代理数量
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int AgentCount {
