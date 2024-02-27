@@ -88,6 +88,7 @@ message CPMsgPlayerInfo
 	int64				gold			= 4;	//自己的金币，别人的是空
 	int64				win_gold		= 5;	//输赢分
 	CPMsgHandCards		handls			= 6;	//手牌
+	int32				special_type	= 7;	//特殊牌型 0非特殊 其它参照牌型列表
 }
 
 
@@ -140,7 +141,7 @@ message CPCardResult
 //游戏结果                                  
 message CPMsgGameResult                           
 {                                           
-	int32					game_tax		= 1;	//自己的税收
+	repeated int32			game_tax		= 1;	//自己的税收
 	repeated int64			game_score		= 2;	//所有玩家的总输赢分
 	repeated CPCardStatus	card_status		= 3;	//牌的状态
 	repeated int32			special_type	= 4;	//特殊牌型 0非特殊 其它参照牌型列表

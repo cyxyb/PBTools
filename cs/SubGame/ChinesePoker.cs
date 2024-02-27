@@ -29,55 +29,55 @@ namespace ChinesePoker {
             "aW1lGAIgASgFIjEKDkNQTXNnSGFuZENhcmRzEhAKCGNoYWlyX2lkGAEgASgF",
             "Eg0KBWNhcmRzGAIgAygFIksKDENQQ2FyZFN0YXR1cxIQCghjaGFpcl9pZBgB",
             "IAEoBRIMCgR0eXBlGAIgAygFEg4KBnN0YXR1cxgDIAMoBRILCgNhZGQYBCAD",
-            "KAUitwEKD0NQTXNnUGxheWVySW5mbxIQCghjaGFpcl9pZBgBIAEoBRITCgtw",
+            "KAUizQEKD0NQTXNnUGxheWVySW5mbxIQCghjaGFpcl9pZBgBIAEoBRITCgtw",
             "bGF5X3N0YXR1cxgCIAEoBRIvCgtjYXJkX3N0YXR1cxgDIAEoCzIaLkNoaW5l",
             "c2VQb2tlci5DUENhcmRTdGF0dXMSDAoEZ29sZBgEIAEoAxIQCgh3aW5fZ29s",
             "ZBgFIAEoAxIsCgZoYW5kbHMYBiABKAsyHC5DaGluZXNlUG9rZXIuQ1BNc2dI",
-            "YW5kQ2FyZHMipwEKDkNQTXNnU2NlbmVJbmZvEhIKCmNlbGxfc2NvcmUYASAB",
-            "KAMSEwoLdGFibGVfc3RhdGUYAiABKAUSEAoIb3V0X3RpbWUYAyABKAUSEgoK",
-            "dG90YWxfdGltZRgEIAEoBRIRCglzZXJ2ZXJfaWQYBSABKAUSMwoMcGxheWVy",
-            "X2luZm9zGAYgAygLMh0uQ2hpbmVzZVBva2VyLkNQTXNnUGxheWVySW5mbyKJ",
-            "AQoSQ1BNc2dHYW1lU3RhcnRSZXNwEiwKBmhhbmRscxgBIAEoCzIcLkNoaW5l",
-            "c2VQb2tlci5DUE1zZ0hhbmRDYXJkcxIvCgtjYXJkX3N0YXR1cxgCIAEoCzIa",
-            "LkNoaW5lc2VQb2tlci5DUENhcmRTdGF0dXMSFAoMc3BlY2lhbF90eXBlGAMg",
-            "ASgFIjcKC0NQTXNnQWN0aW9uEgwKBHR5cGUYASABKAUSDAoEcG9zMRgCIAEo",
-            "AxIMCgRwb3MyGAMgASgDIl4KFUNQTXNnTm90aWZ5QWN0aW9uUmVzcBIvCgtj",
-            "YXJkX3N0YXR1cxgBIAEoCzIaLkNoaW5lc2VQb2tlci5DUENhcmRTdGF0dXMS",
-            "FAoMc3BlY2lhbF90eXBlGAIgASgFInMKDENQQ2FyZFJlc3VsdBIQCghjaGFp",
-            "cl9pZBgBIAEoBRINCgVzY29yZRgCIAMoAxILCgN3aW4YAyADKAgSDAoEYm9v",
-            "bRgEIAEoCBITCgtzY29yZV90b3RhbBgFIAEoAxISCgpndW5rX2NoYWlyGAYg",
-            "AygFIvsBCg9DUE1zZ0dhbWVSZXN1bHQSEAoIZ2FtZV90YXgYASABKAUSEgoK",
-            "Z2FtZV9zY29yZRgCIAMoAxIvCgtjYXJkX3N0YXR1cxgDIAMoCzIaLkNoaW5l",
-            "c2VQb2tlci5DUENhcmRTdGF0dXMSFAoMc3BlY2lhbF90eXBlGAQgAygFEi8K",
-            "C2NhcmRfcmVzdWx0GAUgAygLMhouQ2hpbmVzZVBva2VyLkNQQ2FyZFJlc3Vs",
-            "dBIyCgxwbGF5ZXJfaGFuZHMYBiADKAsyHC5DaGluZXNlUG9rZXIuQ1BNc2dI",
-            "YW5kQ2FyZHMSFgoOYWxsX2d1bmtfY2hhaXIYByABKAUqVAoMRUNQR2FtZVN0",
-            "YXRlEg8KC0dTX1RQX1JFQURZEAASDgoKR1NfVFBfREVBTBABEhEKDUdTX1RQ",
-            "X1BMQVlJTkcQAhIQCgxHU19UUF9SRVNVTFQQAypLCg5FQ1BQbGF5ZXJTdGF0",
-            "ZRIMCghQU19SRUFEWRAAEgsKB1BTX1BMQVkQARIOCgpQU19DT05GSVJNEAIS",
-            "DgoKUFNfVElNRU9VVBADKoUCCgtFQ1BDYXJkVHlwZRINCglDVF9TSU5HTEUQ",
-            "ABINCglDVF9ET1VCTEUQARIOCgpDVF9ET1VCTEVTEAISDAoIQ1RfVEhSRUUQ",
-            "AxIJCgVDVF9TWhAEEgkKBUNUX1RIEAUSDAoIQ1RfSFVfTFUQBhILCgdDVF9G",
-            "T1VSEAcSCgoGQ1RfVEhTEAgSDAoIQ1RfSEpUSFMQCRISCg5DVF9TUEVDSUFM",
-            "X1NUSBAKEhIKDkNUX1NQRUNJQUxfU1NaEAsSEgoOQ1RfU1BFQ0lBTF9MREIQ",
-            "DBISCg5DVF9TUEVDSUFMX1lUTBANEhMKD0NUX1NQRUNJQUxfWlpRTBAOEgoK",
-            "BkNUX01BWBAPKoMDCg9FQ1BNc2dJRFN1YkdhbWUSFQoRTXNnSURTdWJHYW1l",
-            "X051bGwQABIeChpNc2dJRFN1YkdhbWVfR2FtZVN0YXJ0UmVzcBABEhcKE01z",
-            "Z0lEU3ViR2FtZV9BY3Rpb24QAhIhCh1Nc2dJRFN1YkdhbWVfTm90aWZ5QWN0",
-            "aW9uUmVzcBADEhgKFE1zZ0lEU3ViR2FtZV9Db25maXJtEAQSHAoYTXNnSURT",
-            "dWJHYW1lX0NvbmZpcm1SZXNwEAUSIAocTXNnSURTdWJHYW1lX05vdGlmeVN0",
-            "YXRlUmVzcBAGEh8KG01zZ0lEU3ViR2FtZV9HYW1lUmVzdWx0UmVzcBAHEh4K",
-            "Gk1zZ0lEU3ViR2FtZV9TdGFydFRpbWVSZXNwEAgSHQoZTXNnSURTdWJHYW1l",
-            "X1RpbWVPdXRSZWFkeRAJEiEKHU1zZ0lEU3ViR2FtZV9UaW1lT3V0UmVhZHlS",
-            "ZXNwEAoSIAocTXNnSURTdWJHYW1lX1RpbWVPdXRLaWNrUmVzcBALYgZwcm90",
-            "bzM="));
+            "YW5kQ2FyZHMSFAoMc3BlY2lhbF90eXBlGAcgASgFIqcBCg5DUE1zZ1NjZW5l",
+            "SW5mbxISCgpjZWxsX3Njb3JlGAEgASgDEhMKC3RhYmxlX3N0YXRlGAIgASgF",
+            "EhAKCG91dF90aW1lGAMgASgFEhIKCnRvdGFsX3RpbWUYBCABKAUSEQoJc2Vy",
+            "dmVyX2lkGAUgASgFEjMKDHBsYXllcl9pbmZvcxgGIAMoCzIdLkNoaW5lc2VQ",
+            "b2tlci5DUE1zZ1BsYXllckluZm8iiQEKEkNQTXNnR2FtZVN0YXJ0UmVzcBIs",
+            "CgZoYW5kbHMYASABKAsyHC5DaGluZXNlUG9rZXIuQ1BNc2dIYW5kQ2FyZHMS",
+            "LwoLY2FyZF9zdGF0dXMYAiABKAsyGi5DaGluZXNlUG9rZXIuQ1BDYXJkU3Rh",
+            "dHVzEhQKDHNwZWNpYWxfdHlwZRgDIAEoBSI3CgtDUE1zZ0FjdGlvbhIMCgR0",
+            "eXBlGAEgASgFEgwKBHBvczEYAiABKAMSDAoEcG9zMhgDIAEoAyJeChVDUE1z",
+            "Z05vdGlmeUFjdGlvblJlc3ASLwoLY2FyZF9zdGF0dXMYASABKAsyGi5DaGlu",
+            "ZXNlUG9rZXIuQ1BDYXJkU3RhdHVzEhQKDHNwZWNpYWxfdHlwZRgCIAEoBSJz",
+            "CgxDUENhcmRSZXN1bHQSEAoIY2hhaXJfaWQYASABKAUSDQoFc2NvcmUYAiAD",
+            "KAMSCwoDd2luGAMgAygIEgwKBGJvb20YBCABKAgSEwoLc2NvcmVfdG90YWwY",
+            "BSABKAMSEgoKZ3Vua19jaGFpchgGIAMoBSL7AQoPQ1BNc2dHYW1lUmVzdWx0",
+            "EhAKCGdhbWVfdGF4GAEgAygFEhIKCmdhbWVfc2NvcmUYAiADKAMSLwoLY2Fy",
+            "ZF9zdGF0dXMYAyADKAsyGi5DaGluZXNlUG9rZXIuQ1BDYXJkU3RhdHVzEhQK",
+            "DHNwZWNpYWxfdHlwZRgEIAMoBRIvCgtjYXJkX3Jlc3VsdBgFIAMoCzIaLkNo",
+            "aW5lc2VQb2tlci5DUENhcmRSZXN1bHQSMgoMcGxheWVyX2hhbmRzGAYgAygL",
+            "MhwuQ2hpbmVzZVBva2VyLkNQTXNnSGFuZENhcmRzEhYKDmFsbF9ndW5rX2No",
+            "YWlyGAcgASgFKlQKDEVDUEdhbWVTdGF0ZRIPCgtHU19UUF9SRUFEWRAAEg4K",
+            "CkdTX1RQX0RFQUwQARIRCg1HU19UUF9QTEFZSU5HEAISEAoMR1NfVFBfUkVT",
+            "VUxUEAMqSwoORUNQUGxheWVyU3RhdGUSDAoIUFNfUkVBRFkQABILCgdQU19Q",
+            "TEFZEAESDgoKUFNfQ09ORklSTRACEg4KClBTX1RJTUVPVVQQAyqFAgoLRUNQ",
+            "Q2FyZFR5cGUSDQoJQ1RfU0lOR0xFEAASDQoJQ1RfRE9VQkxFEAESDgoKQ1Rf",
+            "RE9VQkxFUxACEgwKCENUX1RIUkVFEAMSCQoFQ1RfU1oQBBIJCgVDVF9USBAF",
+            "EgwKCENUX0hVX0xVEAYSCwoHQ1RfRk9VUhAHEgoKBkNUX1RIUxAIEgwKCENU",
+            "X0hKVEhTEAkSEgoOQ1RfU1BFQ0lBTF9TVEgQChISCg5DVF9TUEVDSUFMX1NT",
+            "WhALEhIKDkNUX1NQRUNJQUxfTERCEAwSEgoOQ1RfU1BFQ0lBTF9ZVEwQDRIT",
+            "Cg9DVF9TUEVDSUFMX1paUUwQDhIKCgZDVF9NQVgQDyqDAwoPRUNQTXNnSURT",
+            "dWJHYW1lEhUKEU1zZ0lEU3ViR2FtZV9OdWxsEAASHgoaTXNnSURTdWJHYW1l",
+            "X0dhbWVTdGFydFJlc3AQARIXChNNc2dJRFN1YkdhbWVfQWN0aW9uEAISIQod",
+            "TXNnSURTdWJHYW1lX05vdGlmeUFjdGlvblJlc3AQAxIYChRNc2dJRFN1Ykdh",
+            "bWVfQ29uZmlybRAEEhwKGE1zZ0lEU3ViR2FtZV9Db25maXJtUmVzcBAFEiAK",
+            "HE1zZ0lEU3ViR2FtZV9Ob3RpZnlTdGF0ZVJlc3AQBhIfChtNc2dJRFN1Ykdh",
+            "bWVfR2FtZVJlc3VsdFJlc3AQBxIeChpNc2dJRFN1YkdhbWVfU3RhcnRUaW1l",
+            "UmVzcBAIEh0KGU1zZ0lEU3ViR2FtZV9UaW1lT3V0UmVhZHkQCRIhCh1Nc2dJ",
+            "RFN1YkdhbWVfVGltZU91dFJlYWR5UmVzcBAKEiAKHE1zZ0lEU3ViR2FtZV9U",
+            "aW1lT3V0S2lja1Jlc3AQC2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::ChinesePoker.ECPGameState), typeof(global::ChinesePoker.ECPPlayerState), typeof(global::ChinesePoker.ECPCardType), typeof(global::ChinesePoker.ECPMsgIDSubGame), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::ChinesePoker.CPMsgTableState), global::ChinesePoker.CPMsgTableState.Parser, new[]{ "State", "OutIme" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ChinesePoker.CPMsgHandCards), global::ChinesePoker.CPMsgHandCards.Parser, new[]{ "ChairId", "Cards" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ChinesePoker.CPCardStatus), global::ChinesePoker.CPCardStatus.Parser, new[]{ "ChairId", "Type", "Status", "Add" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ChinesePoker.CPMsgPlayerInfo), global::ChinesePoker.CPMsgPlayerInfo.Parser, new[]{ "ChairId", "PlayStatus", "CardStatus", "Gold", "WinGold", "Handls" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ChinesePoker.CPMsgPlayerInfo), global::ChinesePoker.CPMsgPlayerInfo.Parser, new[]{ "ChairId", "PlayStatus", "CardStatus", "Gold", "WinGold", "Handls", "SpecialType" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ChinesePoker.CPMsgSceneInfo), global::ChinesePoker.CPMsgSceneInfo.Parser, new[]{ "CellScore", "TableState", "OutTime", "TotalTime", "ServerId", "PlayerInfos" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ChinesePoker.CPMsgGameStartResp), global::ChinesePoker.CPMsgGameStartResp.Parser, new[]{ "Handls", "CardStatus", "SpecialType" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ChinesePoker.CPMsgAction), global::ChinesePoker.CPMsgAction.Parser, new[]{ "Type", "Pos1", "Pos2" }, null, null, null, null),
@@ -977,6 +977,7 @@ namespace ChinesePoker {
       gold_ = other.gold_;
       winGold_ = other.winGold_;
       handls_ = other.handls_ != null ? other.handls_.Clone() : null;
+      specialType_ = other.specialType_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1069,6 +1070,20 @@ namespace ChinesePoker {
       }
     }
 
+    /// <summary>Field number for the "special_type" field.</summary>
+    public const int SpecialTypeFieldNumber = 7;
+    private int specialType_;
+    /// <summary>
+    ///特殊牌型 0非特殊 其它参照牌型列表
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int SpecialType {
+      get { return specialType_; }
+      set {
+        specialType_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as CPMsgPlayerInfo);
@@ -1088,6 +1103,7 @@ namespace ChinesePoker {
       if (Gold != other.Gold) return false;
       if (WinGold != other.WinGold) return false;
       if (!object.Equals(Handls, other.Handls)) return false;
+      if (SpecialType != other.SpecialType) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1100,6 +1116,7 @@ namespace ChinesePoker {
       if (Gold != 0L) hash ^= Gold.GetHashCode();
       if (WinGold != 0L) hash ^= WinGold.GetHashCode();
       if (handls_ != null) hash ^= Handls.GetHashCode();
+      if (SpecialType != 0) hash ^= SpecialType.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1140,6 +1157,10 @@ namespace ChinesePoker {
         output.WriteRawTag(50);
         output.WriteMessage(Handls);
       }
+      if (SpecialType != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(SpecialType);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1173,6 +1194,10 @@ namespace ChinesePoker {
         output.WriteRawTag(50);
         output.WriteMessage(Handls);
       }
+      if (SpecialType != 0) {
+        output.WriteRawTag(56);
+        output.WriteInt32(SpecialType);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1199,6 +1224,9 @@ namespace ChinesePoker {
       }
       if (handls_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Handls);
+      }
+      if (SpecialType != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(SpecialType);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1234,6 +1262,9 @@ namespace ChinesePoker {
           Handls = new global::ChinesePoker.CPMsgHandCards();
         }
         Handls.MergeFrom(other.Handls);
+      }
+      if (other.SpecialType != 0) {
+        SpecialType = other.SpecialType;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1279,6 +1310,10 @@ namespace ChinesePoker {
             input.ReadMessage(Handls);
             break;
           }
+          case 56: {
+            SpecialType = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -1321,6 +1356,10 @@ namespace ChinesePoker {
               Handls = new global::ChinesePoker.CPMsgHandCards();
             }
             input.ReadMessage(Handls);
+            break;
+          }
+          case 56: {
+            SpecialType = input.ReadInt32();
             break;
           }
         }
@@ -2826,7 +2865,7 @@ namespace ChinesePoker {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public CPMsgGameResult(CPMsgGameResult other) : this() {
-      gameTax_ = other.gameTax_;
+      gameTax_ = other.gameTax_.Clone();
       gameScore_ = other.gameScore_.Clone();
       cardStatus_ = other.cardStatus_.Clone();
       specialType_ = other.specialType_.Clone();
@@ -2843,16 +2882,15 @@ namespace ChinesePoker {
 
     /// <summary>Field number for the "game_tax" field.</summary>
     public const int GameTaxFieldNumber = 1;
-    private int gameTax_;
+    private static readonly pb::FieldCodec<int> _repeated_gameTax_codec
+        = pb::FieldCodec.ForInt32(10);
+    private readonly pbc::RepeatedField<int> gameTax_ = new pbc::RepeatedField<int>();
     /// <summary>
     ///自己的税收
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int GameTax {
+    public pbc::RepeatedField<int> GameTax {
       get { return gameTax_; }
-      set {
-        gameTax_ = value;
-      }
     }
 
     /// <summary>Field number for the "game_score" field.</summary>
@@ -2947,7 +2985,7 @@ namespace ChinesePoker {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (GameTax != other.GameTax) return false;
+      if(!gameTax_.Equals(other.gameTax_)) return false;
       if(!gameScore_.Equals(other.gameScore_)) return false;
       if(!cardStatus_.Equals(other.cardStatus_)) return false;
       if(!specialType_.Equals(other.specialType_)) return false;
@@ -2960,7 +2998,7 @@ namespace ChinesePoker {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (GameTax != 0) hash ^= GameTax.GetHashCode();
+      hash ^= gameTax_.GetHashCode();
       hash ^= gameScore_.GetHashCode();
       hash ^= cardStatus_.GetHashCode();
       hash ^= specialType_.GetHashCode();
@@ -2983,10 +3021,7 @@ namespace ChinesePoker {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (GameTax != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(GameTax);
-      }
+      gameTax_.WriteTo(output, _repeated_gameTax_codec);
       gameScore_.WriteTo(output, _repeated_gameScore_codec);
       cardStatus_.WriteTo(output, _repeated_cardStatus_codec);
       specialType_.WriteTo(output, _repeated_specialType_codec);
@@ -3005,10 +3040,7 @@ namespace ChinesePoker {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (GameTax != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(GameTax);
-      }
+      gameTax_.WriteTo(ref output, _repeated_gameTax_codec);
       gameScore_.WriteTo(ref output, _repeated_gameScore_codec);
       cardStatus_.WriteTo(ref output, _repeated_cardStatus_codec);
       specialType_.WriteTo(ref output, _repeated_specialType_codec);
@@ -3027,9 +3059,7 @@ namespace ChinesePoker {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (GameTax != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(GameTax);
-      }
+      size += gameTax_.CalculateSize(_repeated_gameTax_codec);
       size += gameScore_.CalculateSize(_repeated_gameScore_codec);
       size += cardStatus_.CalculateSize(_repeated_cardStatus_codec);
       size += specialType_.CalculateSize(_repeated_specialType_codec);
@@ -3049,9 +3079,7 @@ namespace ChinesePoker {
       if (other == null) {
         return;
       }
-      if (other.GameTax != 0) {
-        GameTax = other.GameTax;
-      }
+      gameTax_.Add(other.gameTax_);
       gameScore_.Add(other.gameScore_);
       cardStatus_.Add(other.cardStatus_);
       specialType_.Add(other.specialType_);
@@ -3074,8 +3102,9 @@ namespace ChinesePoker {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
+          case 10:
           case 8: {
-            GameTax = input.ReadInt32();
+            gameTax_.AddEntriesFrom(input, _repeated_gameTax_codec);
             break;
           }
           case 18:
@@ -3118,8 +3147,9 @@ namespace ChinesePoker {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
+          case 10:
           case 8: {
-            GameTax = input.ReadInt32();
+            gameTax_.AddEntriesFrom(ref input, _repeated_gameTax_codec);
             break;
           }
           case 18:

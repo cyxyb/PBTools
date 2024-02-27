@@ -867,6 +867,7 @@ class CPMsgPlayerInfo PROTOBUF_FINAL :
     kPlayStatusFieldNumber = 2,
     kGoldFieldNumber = 4,
     kWinGoldFieldNumber = 5,
+    kSpecialTypeFieldNumber = 7,
   };
   // .ChinesePoker.CPCardStatus card_status = 3;
   bool has_card_status() const;
@@ -940,6 +941,15 @@ class CPMsgPlayerInfo PROTOBUF_FINAL :
   void _internal_set_win_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
+  // int32 special_type = 7;
+  void clear_special_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 special_type() const;
+  void set_special_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_special_type() const;
+  void _internal_set_special_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:ChinesePoker.CPMsgPlayerInfo)
  private:
   class _Internal;
@@ -953,6 +963,7 @@ class CPMsgPlayerInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 play_status_;
   ::PROTOBUF_NAMESPACE_ID::int64 gold_;
   ::PROTOBUF_NAMESPACE_ID::int64 win_gold_;
+  ::PROTOBUF_NAMESPACE_ID::int32 special_type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ChinesePoker_2eproto;
 };
@@ -1993,14 +2004,36 @@ class CPMsgGameResult PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
+    kGameTaxFieldNumber = 1,
     kGameScoreFieldNumber = 2,
     kCardStatusFieldNumber = 3,
     kSpecialTypeFieldNumber = 4,
     kCardResultFieldNumber = 5,
     kPlayerHandsFieldNumber = 6,
-    kGameTaxFieldNumber = 1,
     kAllGunkChairFieldNumber = 7,
   };
+  // repeated int32 game_tax = 1;
+  int game_tax_size() const;
+  private:
+  int _internal_game_tax_size() const;
+  public:
+  void clear_game_tax();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_game_tax(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_game_tax() const;
+  void _internal_add_game_tax(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_game_tax();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 game_tax(int index) const;
+  void set_game_tax(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_game_tax(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      game_tax() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_game_tax();
+
   // repeated int64 game_score = 2;
   int game_score_size() const;
   private:
@@ -2099,15 +2132,6 @@ class CPMsgGameResult PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ChinesePoker::CPMsgHandCards >&
       player_hands() const;
 
-  // int32 game_tax = 1;
-  void clear_game_tax();
-  ::PROTOBUF_NAMESPACE_ID::int32 game_tax() const;
-  void set_game_tax(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_game_tax() const;
-  void _internal_set_game_tax(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
   // int32 all_gunk_chair = 7;
   void clear_all_gunk_chair();
   ::PROTOBUF_NAMESPACE_ID::int32 all_gunk_chair() const;
@@ -2124,6 +2148,8 @@ class CPMsgGameResult PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > game_tax_;
+  mutable std::atomic<int> _game_tax_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 > game_score_;
   mutable std::atomic<int> _game_score_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ChinesePoker::CPCardStatus > card_status_;
@@ -2131,7 +2157,6 @@ class CPMsgGameResult PROTOBUF_FINAL :
   mutable std::atomic<int> _special_type_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ChinesePoker::CPCardResult > card_result_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::ChinesePoker::CPMsgHandCards > player_hands_;
-  ::PROTOBUF_NAMESPACE_ID::int32 game_tax_;
   ::PROTOBUF_NAMESPACE_ID::int32 all_gunk_chair_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ChinesePoker_2eproto;
@@ -2671,6 +2696,26 @@ inline void CPMsgPlayerInfo::set_allocated_handls(::ChinesePoker::CPMsgHandCards
   }
   handls_ = handls;
   // @@protoc_insertion_point(field_set_allocated:ChinesePoker.CPMsgPlayerInfo.handls)
+}
+
+// int32 special_type = 7;
+inline void CPMsgPlayerInfo::clear_special_type() {
+  special_type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CPMsgPlayerInfo::_internal_special_type() const {
+  return special_type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CPMsgPlayerInfo::special_type() const {
+  // @@protoc_insertion_point(field_get:ChinesePoker.CPMsgPlayerInfo.special_type)
+  return _internal_special_type();
+}
+inline void CPMsgPlayerInfo::_internal_set_special_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  special_type_ = value;
+}
+inline void CPMsgPlayerInfo::set_special_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_special_type(value);
+  // @@protoc_insertion_point(field_set:ChinesePoker.CPMsgPlayerInfo.special_type)
 }
 
 // -------------------------------------------------------------------
@@ -3386,24 +3431,51 @@ CPCardResult::mutable_gunk_chair() {
 
 // CPMsgGameResult
 
-// int32 game_tax = 1;
-inline void CPMsgGameResult::clear_game_tax() {
-  game_tax_ = 0;
+// repeated int32 game_tax = 1;
+inline int CPMsgGameResult::_internal_game_tax_size() const {
+  return game_tax_.size();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CPMsgGameResult::_internal_game_tax() const {
+inline int CPMsgGameResult::game_tax_size() const {
+  return _internal_game_tax_size();
+}
+inline void CPMsgGameResult::clear_game_tax() {
+  game_tax_.Clear();
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CPMsgGameResult::_internal_game_tax(int index) const {
+  return game_tax_.Get(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CPMsgGameResult::game_tax(int index) const {
+  // @@protoc_insertion_point(field_get:ChinesePoker.CPMsgGameResult.game_tax)
+  return _internal_game_tax(index);
+}
+inline void CPMsgGameResult::set_game_tax(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  game_tax_.Set(index, value);
+  // @@protoc_insertion_point(field_set:ChinesePoker.CPMsgGameResult.game_tax)
+}
+inline void CPMsgGameResult::_internal_add_game_tax(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  game_tax_.Add(value);
+}
+inline void CPMsgGameResult::add_game_tax(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_game_tax(value);
+  // @@protoc_insertion_point(field_add:ChinesePoker.CPMsgGameResult.game_tax)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+CPMsgGameResult::_internal_game_tax() const {
   return game_tax_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CPMsgGameResult::game_tax() const {
-  // @@protoc_insertion_point(field_get:ChinesePoker.CPMsgGameResult.game_tax)
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+CPMsgGameResult::game_tax() const {
+  // @@protoc_insertion_point(field_list:ChinesePoker.CPMsgGameResult.game_tax)
   return _internal_game_tax();
 }
-inline void CPMsgGameResult::_internal_set_game_tax(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  game_tax_ = value;
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+CPMsgGameResult::_internal_mutable_game_tax() {
+  return &game_tax_;
 }
-inline void CPMsgGameResult::set_game_tax(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_game_tax(value);
-  // @@protoc_insertion_point(field_set:ChinesePoker.CPMsgGameResult.game_tax)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+CPMsgGameResult::mutable_game_tax() {
+  // @@protoc_insertion_point(field_mutable_list:ChinesePoker.CPMsgGameResult.game_tax)
+  return _internal_mutable_game_tax();
 }
 
 // repeated int64 game_score = 2;
