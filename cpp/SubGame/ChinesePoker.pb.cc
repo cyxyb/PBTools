@@ -249,6 +249,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ChinesePoker_2eproto::offsets[
   PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPMsgSceneInfo, out_time_),
   PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPMsgSceneInfo, total_time_),
   PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPMsgSceneInfo, server_id_),
+  PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPMsgSceneInfo, special_bs_),
   PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPMsgSceneInfo, player_infos_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::ChinesePoker::CPMsgGameStartResp, _internal_metadata_),
@@ -303,11 +304,11 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 14, -1, sizeof(::ChinesePoker::CPCardStatus)},
   { 23, -1, sizeof(::ChinesePoker::CPMsgPlayerInfo)},
   { 35, -1, sizeof(::ChinesePoker::CPMsgSceneInfo)},
-  { 46, -1, sizeof(::ChinesePoker::CPMsgGameStartResp)},
-  { 54, -1, sizeof(::ChinesePoker::CPMsgAction)},
-  { 62, -1, sizeof(::ChinesePoker::CPMsgNotifyActionResp)},
-  { 69, -1, sizeof(::ChinesePoker::CPCardResult)},
-  { 80, -1, sizeof(::ChinesePoker::CPMsgGameResult)},
+  { 47, -1, sizeof(::ChinesePoker::CPMsgGameStartResp)},
+  { 55, -1, sizeof(::ChinesePoker::CPMsgAction)},
+  { 63, -1, sizeof(::ChinesePoker::CPMsgNotifyActionResp)},
+  { 70, -1, sizeof(::ChinesePoker::CPCardResult)},
+  { 81, -1, sizeof(::ChinesePoker::CPMsgGameResult)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -334,48 +335,49 @@ const char descriptor_table_protodef_ChinesePoker_2eproto[] PROTOBUF_SECTION_VAR
   "_status\030\003 \001(\0132\032.ChinesePoker.CPCardStatu"
   "s\022\014\n\004gold\030\004 \001(\003\022\020\n\010win_gold\030\005 \001(\003\022,\n\006han"
   "dls\030\006 \001(\0132\034.ChinesePoker.CPMsgHandCards\022"
-  "\024\n\014special_type\030\007 \001(\005\"\247\001\n\016CPMsgSceneInfo"
+  "\024\n\014special_type\030\007 \001(\005\"\273\001\n\016CPMsgSceneInfo"
   "\022\022\n\ncell_score\030\001 \001(\003\022\023\n\013table_state\030\002 \001("
   "\005\022\020\n\010out_time\030\003 \001(\005\022\022\n\ntotal_time\030\004 \001(\005\022"
-  "\021\n\tserver_id\030\005 \001(\005\0223\n\014player_infos\030\006 \003(\013"
-  "2\035.ChinesePoker.CPMsgPlayerInfo\"\211\001\n\022CPMs"
-  "gGameStartResp\022,\n\006handls\030\001 \001(\0132\034.Chinese"
-  "Poker.CPMsgHandCards\022/\n\013card_status\030\002 \001("
-  "\0132\032.ChinesePoker.CPCardStatus\022\024\n\014special"
-  "_type\030\003 \001(\005\"7\n\013CPMsgAction\022\014\n\004type\030\001 \001(\005"
-  "\022\014\n\004pos1\030\002 \001(\003\022\014\n\004pos2\030\003 \001(\003\"^\n\025CPMsgNot"
-  "ifyActionResp\022/\n\013card_status\030\001 \001(\0132\032.Chi"
-  "nesePoker.CPCardStatus\022\024\n\014special_type\030\002"
-  " \001(\005\"s\n\014CPCardResult\022\020\n\010chair_id\030\001 \001(\005\022\r"
-  "\n\005score\030\002 \003(\003\022\013\n\003win\030\003 \003(\010\022\014\n\004boom\030\004 \001(\010"
-  "\022\023\n\013score_total\030\005 \001(\003\022\022\n\ngunk_chair\030\006 \003("
-  "\005\"\373\001\n\017CPMsgGameResult\022\020\n\010game_tax\030\001 \003(\005\022"
-  "\022\n\ngame_score\030\002 \003(\003\022/\n\013card_status\030\003 \003(\013"
-  "2\032.ChinesePoker.CPCardStatus\022\024\n\014special_"
-  "type\030\004 \003(\005\022/\n\013card_result\030\005 \003(\0132\032.Chines"
-  "ePoker.CPCardResult\0222\n\014player_hands\030\006 \003("
-  "\0132\034.ChinesePoker.CPMsgHandCards\022\026\n\016all_g"
-  "unk_chair\030\007 \001(\005*T\n\014ECPGameState\022\017\n\013GS_TP"
-  "_READY\020\000\022\016\n\nGS_TP_DEAL\020\001\022\021\n\rGS_TP_PLAYIN"
-  "G\020\002\022\020\n\014GS_TP_RESULT\020\003*K\n\016ECPPlayerState\022"
-  "\014\n\010PS_READY\020\000\022\013\n\007PS_PLAY\020\001\022\016\n\nPS_CONFIRM"
-  "\020\002\022\016\n\nPS_TIMEOUT\020\003*\205\002\n\013ECPCardType\022\r\n\tCT"
-  "_SINGLE\020\000\022\r\n\tCT_DOUBLE\020\001\022\016\n\nCT_DOUBLES\020\002"
-  "\022\014\n\010CT_THREE\020\003\022\t\n\005CT_SZ\020\004\022\t\n\005CT_TH\020\005\022\014\n\010"
-  "CT_HU_LU\020\006\022\013\n\007CT_FOUR\020\007\022\n\n\006CT_THS\020\010\022\014\n\010C"
-  "T_HJTHS\020\t\022\022\n\016CT_SPECIAL_STH\020\n\022\022\n\016CT_SPEC"
-  "IAL_SSZ\020\013\022\022\n\016CT_SPECIAL_LDB\020\014\022\022\n\016CT_SPEC"
-  "IAL_YTL\020\r\022\023\n\017CT_SPECIAL_ZZQL\020\016\022\n\n\006CT_MAX"
-  "\020\017*\203\003\n\017ECPMsgIDSubGame\022\025\n\021MsgIDSubGame_N"
-  "ull\020\000\022\036\n\032MsgIDSubGame_GameStartResp\020\001\022\027\n"
-  "\023MsgIDSubGame_Action\020\002\022!\n\035MsgIDSubGame_N"
-  "otifyActionResp\020\003\022\030\n\024MsgIDSubGame_Confir"
-  "m\020\004\022\034\n\030MsgIDSubGame_ConfirmResp\020\005\022 \n\034Msg"
-  "IDSubGame_NotifyStateResp\020\006\022\037\n\033MsgIDSubG"
-  "ame_GameResultResp\020\007\022\036\n\032MsgIDSubGame_Sta"
-  "rtTimeResp\020\010\022\035\n\031MsgIDSubGame_TimeOutRead"
-  "y\020\t\022!\n\035MsgIDSubGame_TimeOutReadyResp\020\n\022 "
-  "\n\034MsgIDSubGame_TimeOutKickResp\020\013b\006proto3"
+  "\021\n\tserver_id\030\005 \001(\005\022\022\n\nspecial_bs\030\006 \003(\005\0223"
+  "\n\014player_infos\030\007 \003(\0132\035.ChinesePoker.CPMs"
+  "gPlayerInfo\"\211\001\n\022CPMsgGameStartResp\022,\n\006ha"
+  "ndls\030\001 \001(\0132\034.ChinesePoker.CPMsgHandCards"
+  "\022/\n\013card_status\030\002 \001(\0132\032.ChinesePoker.CPC"
+  "ardStatus\022\024\n\014special_type\030\003 \001(\005\"7\n\013CPMsg"
+  "Action\022\014\n\004type\030\001 \001(\005\022\014\n\004pos1\030\002 \001(\003\022\014\n\004po"
+  "s2\030\003 \001(\003\"^\n\025CPMsgNotifyActionResp\022/\n\013car"
+  "d_status\030\001 \001(\0132\032.ChinesePoker.CPCardStat"
+  "us\022\024\n\014special_type\030\002 \001(\005\"s\n\014CPCardResult"
+  "\022\020\n\010chair_id\030\001 \001(\005\022\r\n\005score\030\002 \003(\003\022\013\n\003win"
+  "\030\003 \003(\010\022\014\n\004boom\030\004 \001(\010\022\023\n\013score_total\030\005 \001("
+  "\003\022\022\n\ngunk_chair\030\006 \003(\005\"\373\001\n\017CPMsgGameResul"
+  "t\022\020\n\010game_tax\030\001 \003(\003\022\022\n\ngame_score\030\002 \003(\003\022"
+  "/\n\013card_status\030\003 \003(\0132\032.ChinesePoker.CPCa"
+  "rdStatus\022\024\n\014special_type\030\004 \003(\005\022/\n\013card_r"
+  "esult\030\005 \003(\0132\032.ChinesePoker.CPCardResult\022"
+  "2\n\014player_hands\030\006 \003(\0132\034.ChinesePoker.CPM"
+  "sgHandCards\022\026\n\016all_gunk_chair\030\007 \001(\005*T\n\014E"
+  "CPGameState\022\017\n\013GS_TP_READY\020\000\022\016\n\nGS_TP_DE"
+  "AL\020\001\022\021\n\rGS_TP_PLAYING\020\002\022\020\n\014GS_TP_RESULT\020"
+  "\003*K\n\016ECPPlayerState\022\014\n\010PS_READY\020\000\022\013\n\007PS_"
+  "PLAY\020\001\022\016\n\nPS_CONFIRM\020\002\022\016\n\nPS_TIMEOUT\020\003*\205"
+  "\002\n\013ECPCardType\022\r\n\tCT_SINGLE\020\000\022\r\n\tCT_DOUB"
+  "LE\020\001\022\016\n\nCT_DOUBLES\020\002\022\014\n\010CT_THREE\020\003\022\t\n\005CT"
+  "_SZ\020\004\022\t\n\005CT_TH\020\005\022\014\n\010CT_HU_LU\020\006\022\013\n\007CT_FOU"
+  "R\020\007\022\n\n\006CT_THS\020\010\022\014\n\010CT_HJTHS\020\t\022\022\n\016CT_SPEC"
+  "IAL_LDB\020\n\022\022\n\016CT_SPECIAL_STH\020\013\022\022\n\016CT_SPEC"
+  "IAL_SSZ\020\014\022\022\n\016CT_SPECIAL_YTL\020\r\022\023\n\017CT_SPEC"
+  "IAL_ZZQL\020\016\022\n\n\006CT_MAX\020\017*\203\003\n\017ECPMsgIDSubGa"
+  "me\022\025\n\021MsgIDSubGame_Null\020\000\022\036\n\032MsgIDSubGam"
+  "e_GameStartResp\020\001\022\027\n\023MsgIDSubGame_Action"
+  "\020\002\022!\n\035MsgIDSubGame_NotifyActionResp\020\003\022\030\n"
+  "\024MsgIDSubGame_Confirm\020\004\022\034\n\030MsgIDSubGame_"
+  "ConfirmResp\020\005\022 \n\034MsgIDSubGame_NotifyStat"
+  "eResp\020\006\022\037\n\033MsgIDSubGame_GameResultResp\020\007"
+  "\022\036\n\032MsgIDSubGame_StartTimeResp\020\010\022\035\n\031MsgI"
+  "DSubGame_TimeOutReady\020\t\022!\n\035MsgIDSubGame_"
+  "TimeOutReadyResp\020\n\022 \n\034MsgIDSubGame_TimeO"
+  "utKickResp\020\013b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_ChinesePoker_2eproto_deps[1] = {
 };
@@ -393,7 +395,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Chi
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ChinesePoker_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ChinesePoker_2eproto = {
-  false, false, descriptor_table_protodef_ChinesePoker_2eproto, "ChinesePoker.proto", 2080,
+  false, false, descriptor_table_protodef_ChinesePoker_2eproto, "ChinesePoker.proto", 2100,
   &descriptor_table_ChinesePoker_2eproto_once, descriptor_table_ChinesePoker_2eproto_sccs, descriptor_table_ChinesePoker_2eproto_deps, 10, 0,
   schemas, file_default_instances, TableStruct_ChinesePoker_2eproto::offsets,
   file_level_metadata_ChinesePoker_2eproto, 10, file_level_enum_descriptors_ChinesePoker_2eproto, file_level_service_descriptors_ChinesePoker_2eproto,
@@ -1647,6 +1649,7 @@ class CPMsgSceneInfo::_Internal {
 
 CPMsgSceneInfo::CPMsgSceneInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  special_bs_(arena),
   player_infos_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
@@ -1654,6 +1657,7 @@ CPMsgSceneInfo::CPMsgSceneInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 }
 CPMsgSceneInfo::CPMsgSceneInfo(const CPMsgSceneInfo& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      special_bs_(from.special_bs_),
       player_infos_(from.player_infos_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&cell_score_, &from.cell_score_,
@@ -1701,6 +1705,7 @@ void CPMsgSceneInfo::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  special_bs_.Clear();
   player_infos_.Clear();
   ::memset(&cell_score_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&server_id_) -
@@ -1750,16 +1755,26 @@ const char* CPMsgSceneInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated .ChinesePoker.CPMsgPlayerInfo player_infos = 6;
+      // repeated int32 special_bs = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_special_bs(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48) {
+          _internal_add_special_bs(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated .ChinesePoker.CPMsgPlayerInfo player_infos = 7;
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
           ptr -= 1;
           do {
             ptr += 1;
             ptr = ctx->ParseMessage(_internal_add_player_infos(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<50>(ptr));
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<58>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -1820,12 +1835,21 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_server_id(), target);
   }
 
-  // repeated .ChinesePoker.CPMsgPlayerInfo player_infos = 6;
+  // repeated int32 special_bs = 6;
+  {
+    int byte_size = _special_bs_cached_byte_size_.load(std::memory_order_relaxed);
+    if (byte_size > 0) {
+      target = stream->WriteInt32Packed(
+          6, _internal_special_bs(), byte_size, target);
+    }
+  }
+
+  // repeated .ChinesePoker.CPMsgPlayerInfo player_infos = 7;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_player_infos_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(6, this->_internal_player_infos(i), target, stream);
+      InternalWriteMessage(7, this->_internal_player_infos(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -1844,7 +1868,22 @@ size_t CPMsgSceneInfo::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .ChinesePoker.CPMsgPlayerInfo player_infos = 6;
+  // repeated int32 special_bs = 6;
+  {
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      Int32Size(this->special_bs_);
+    if (data_size > 0) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
+    }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _special_bs_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
+  }
+
+  // repeated .ChinesePoker.CPMsgPlayerInfo player_infos = 7;
   total_size += 1UL * this->_internal_player_infos_size();
   for (const auto& msg : this->player_infos_) {
     total_size +=
@@ -1917,6 +1956,7 @@ void CPMsgSceneInfo::MergeFrom(const CPMsgSceneInfo& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
+  special_bs_.MergeFrom(from.special_bs_);
   player_infos_.MergeFrom(from.player_infos_);
   if (from.cell_score() != 0) {
     _internal_set_cell_score(from._internal_cell_score());
@@ -1956,6 +1996,7 @@ bool CPMsgSceneInfo::IsInitialized() const {
 void CPMsgSceneInfo::InternalSwap(CPMsgSceneInfo* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  special_bs_.InternalSwap(&other->special_bs_);
   player_infos_.InternalSwap(&other->player_infos_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(CPMsgSceneInfo, server_id_)
@@ -3195,10 +3236,10 @@ const char* CPMsgGameResult::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // repeated int32 game_tax = 1;
+      // repeated int64 game_tax = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_game_tax(), ptr, ctx);
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt64Parser(_internal_mutable_game_tax(), ptr, ctx);
           CHK_(ptr);
         } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8) {
           _internal_add_game_tax(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
@@ -3296,11 +3337,11 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated int32 game_tax = 1;
+  // repeated int64 game_tax = 1;
   {
     int byte_size = _game_tax_cached_byte_size_.load(std::memory_order_relaxed);
     if (byte_size > 0) {
-      target = stream->WriteInt32Packed(
+      target = stream->WriteInt64Packed(
           1, _internal_game_tax(), byte_size, target);
     }
   }
@@ -3369,10 +3410,10 @@ size_t CPMsgGameResult::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated int32 game_tax = 1;
+  // repeated int64 game_tax = 1;
   {
     size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      Int32Size(this->game_tax_);
+      Int64Size(this->game_tax_);
     if (data_size > 0) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(

@@ -34,9 +34,9 @@ enum ECPCardType
 	CT_FOUR								= 7;	//四条类型 4张相同点数的牌+1张杂牌
 	CT_THS								= 8;	//同花顺类型 5张相同花色且数字连续的牌
 	CT_HJTHS							= 9;	//皇家同花顺类型 10 J Q K A 的同花顺
-	CT_SPECIAL_STH						= 10;	//特殊牌型 三同花
-	CT_SPECIAL_SSZ						= 11;	//特殊牌型 三顺子
-	CT_SPECIAL_LDB						= 12;	//特殊牌型 六对半	6副对子+1张杂牌
+	CT_SPECIAL_LDB						= 10;	//特殊牌型 六对半	6副对子+1张杂牌
+	CT_SPECIAL_STH						= 11;	//特殊牌型 三同花
+	CT_SPECIAL_SSZ						= 12;	//特殊牌型 三顺子
 	CT_SPECIAL_YTL						= 13;	//特殊牌型 一条龙	手牌2345678910JQKA各一张
 	CT_SPECIAL_ZZQL						= 14;	//特殊牌型 至尊青龙 同花的一条龙
 	CT_MAX								= 15;	//最大牌型
@@ -100,8 +100,9 @@ message CPMsgSceneInfo
 	int32				out_time		= 3;	//当前状态剩余超时时间
 	int32				total_time		= 4;	//当前状态总时间
 	int32				server_id		= 5;	//房间ID 
+	repeated int32		special_bs		= 6;	//特殊牌型倍数
 
-	repeated CPMsgPlayerInfo player_infos	= 6;	//玩家状态
+	repeated CPMsgPlayerInfo player_infos	= 7;	//玩家状态
 }
 
 //游戏开始
@@ -141,7 +142,7 @@ message CPCardResult
 //游戏结果                                  
 message CPMsgGameResult                           
 {                                           
-	repeated int32			game_tax		= 1;	//自己的税收
+	repeated int64			game_tax		= 1;	//自己的税收
 	repeated int64			game_score		= 2;	//所有玩家的总输赢分
 	repeated CPCardStatus	card_status		= 3;	//牌的状态
 	repeated int32			special_type	= 4;	//特殊牌型 0非特殊 其它参照牌型列表
