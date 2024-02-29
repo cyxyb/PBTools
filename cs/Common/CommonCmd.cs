@@ -280,7 +280,7 @@ public enum EMsgIDLogin {
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_PhoneCode")] MsgIdloginPhoneCode = 20,
   /// <summary>
-  ///验证码返回(MsgCommonN32)
+  ///验证码返回(MsgCommonKV)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_PhoneCodeResp")] MsgIdloginPhoneCodeResp = 21,
   /// <summary>
