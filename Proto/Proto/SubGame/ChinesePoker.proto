@@ -132,7 +132,7 @@ message CPMsgNotifyActionResp
 message CPCardResult
 {
 	int32 chair_id 					= 1;		//椅子号
-	repeated int64 score 			= 2;		//三墩结果
+	repeated int64 score 			= 2;		//三墩结果 倍数
 	repeated bool  win				= 3;		//三墩输赢
 	bool  boom	 					= 4;		//是不是炸了
 	int64 score_total				= 5;		//总倍数
