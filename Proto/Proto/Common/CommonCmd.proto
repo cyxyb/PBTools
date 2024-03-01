@@ -153,6 +153,8 @@ enum EMsgIDLogin
 	MsgIDShare_BindInviteCodeResp				= 139;		//绑定邀请码返回
 	MsgIDAgent_InfiniteQueryUserInfo			= 140;		//查询某个代理信息(MsgCommonN32)
 	MsgIDAgent_InfiniteQueryUserInfoResp		= 141;		//查询某个代理信息返回(MsgInfiniteAgentQuerySubInfoResp)
+	MsgIDRunGame_QueryRechargeGiveInfo			= 142;		//查询玩家充值/赠送金币详情(MsgCommonBool)
+	MsgIDRunGame_QueryRechargeGiveInfoResp		= 143;		//查询玩家充值/赠送金币详情返回(MsgQueryRechargeGiveInfo)
 }
 
 enum EMsgIDGame

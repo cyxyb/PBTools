@@ -197,7 +197,8 @@ public static partial class LoginReflection {
           "BSJNChhNc2dXZWVrTW9udGhHZXRBd2FyZFJlc3ASEAoIcmV0X2NvZGUYASAB",
           "KAUSDQoFYXdhcmQYAiABKAMSEAoIbmV3X2dvbGQYAyABKAMiNQoPTXNnR2V0",
           "UGhvbmVDb2RlEhQKDHBob25lX251bWJlchgBIAEoCRIMCgR0eXBlGAIgASgF",
-          "YgZwcm90bzM="));
+          "IjoKGE1zZ1F1ZXJ5UmVjaGFyZ2VHaXZlSW5mbxIeCghVc2VySW5mbxgBIAMo",
+          "CzIMLk1zZ0NvbW1vbktWYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -272,7 +273,8 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgGetWeekMonthInfoResp), global::MsgGetWeekMonthInfoResp.Parser, new[]{ "CardsCfg", "CardsInfo" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgWeekMonthGetAward), global::MsgWeekMonthGetAward.Parser, new[]{ "CardType" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgWeekMonthGetAwardResp), global::MsgWeekMonthGetAwardResp.Parser, new[]{ "RetCode", "Award", "NewGold" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgGetPhoneCode), global::MsgGetPhoneCode.Parser, new[]{ "PhoneNumber", "Type" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgGetPhoneCode), global::MsgGetPhoneCode.Parser, new[]{ "PhoneNumber", "Type" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgQueryRechargeGiveInfo), global::MsgQueryRechargeGiveInfo.Parser, new[]{ "UserInfo" }, null, null, null, null)
         }));
   }
   #endregion
@@ -22110,6 +22112,173 @@ public sealed partial class MsgGetPhoneCode : pb::IMessage<MsgGetPhoneCode>
         }
         case 16: {
           Type = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///充值和赠送数据
+/// </summary>
+public sealed partial class MsgQueryRechargeGiveInfo : pb::IMessage<MsgQueryRechargeGiveInfo>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgQueryRechargeGiveInfo> _parser = new pb::MessageParser<MsgQueryRechargeGiveInfo>(() => new MsgQueryRechargeGiveInfo());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgQueryRechargeGiveInfo> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[72]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgQueryRechargeGiveInfo() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgQueryRechargeGiveInfo(MsgQueryRechargeGiveInfo other) : this() {
+    userInfo_ = other.userInfo_.Clone();
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgQueryRechargeGiveInfo Clone() {
+    return new MsgQueryRechargeGiveInfo(this);
+  }
+
+  /// <summary>Field number for the "UserInfo" field.</summary>
+  public const int UserInfoFieldNumber = 1;
+  private static readonly pb::FieldCodec<global::MsgCommonKV> _repeated_userInfo_codec
+      = pb::FieldCodec.ForMessage(10, global::MsgCommonKV.Parser);
+  private readonly pbc::RepeatedField<global::MsgCommonKV> userInfo_ = new pbc::RepeatedField<global::MsgCommonKV>();
+  /// <summary>
+  ///K 1充值类型V充值金额数量 2代理赠送V赠送金币数量
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<global::MsgCommonKV> UserInfo {
+    get { return userInfo_; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgQueryRechargeGiveInfo);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgQueryRechargeGiveInfo other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if(!userInfo_.Equals(other.userInfo_)) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    hash ^= userInfo_.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    userInfo_.WriteTo(output, _repeated_userInfo_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    userInfo_.WriteTo(ref output, _repeated_userInfo_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    size += userInfo_.CalculateSize(_repeated_userInfo_codec);
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgQueryRechargeGiveInfo other) {
+    if (other == null) {
+      return;
+    }
+    userInfo_.Add(other.userInfo_);
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 10: {
+          userInfo_.AddEntriesFrom(input, _repeated_userInfo_codec);
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 10: {
+          userInfo_.AddEntriesFrom(ref input, _repeated_userInfo_codec);
           break;
         }
       }

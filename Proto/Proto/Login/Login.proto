@@ -647,3 +647,8 @@ message MsgGetPhoneCode
 	string					phone_number = 1;	//手机号
 	int32					type		 = 2;	//类型
 }
+//充值和赠送数据
+message MsgQueryRechargeGiveInfo
+{
+	repeated MsgCommonKV UserInfo =1;//K 1充值类型V充值金额数量 2代理赠送V赠送金币数量
+}

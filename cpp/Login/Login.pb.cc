@@ -322,6 +322,10 @@ class MsgGetPhoneCodeDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgGetPhoneCode> _instance;
 } _MsgGetPhoneCode_default_instance_;
+class MsgQueryRechargeGiveInfoDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgQueryRechargeGiveInfo> _instance;
+} _MsgQueryRechargeGiveInfo_default_instance_;
 static void InitDefaultsscc_info_ActiveInfoRet_Login_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -894,6 +898,20 @@ static void InitDefaultsscc_info_MsgQueryRebateRecordInfo_Login_2eproto() {
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MsgQueryRebateRecordInfo_Login_2eproto}, {
       &scc_info_MsgQueryRebateRecord_Login_2eproto.base,}};
 
+static void InitDefaultsscc_info_MsgQueryRechargeGiveInfo_Login_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_MsgQueryRechargeGiveInfo_default_instance_;
+    new (ptr) ::MsgQueryRechargeGiveInfo();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_MsgQueryRechargeGiveInfo_Login_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MsgQueryRechargeGiveInfo_Login_2eproto}, {
+      &scc_info_MsgCommonKV_Login_2eproto.base,}};
+
 static void InitDefaultsscc_info_MsgRechargeInfo_Login_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -1278,7 +1296,7 @@ static void InitDefaultsscc_info_MsgWeekMonthInfo_Login_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgWeekMonthInfo_Login_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgWeekMonthInfo_Login_2eproto}, {}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Login_2eproto[72];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Login_2eproto[73];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_Login_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_Login_2eproto = nullptr;
 
@@ -1954,6 +1972,12 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::MsgGetPhoneCode, phone_number_),
   PROTOBUF_FIELD_OFFSET(::MsgGetPhoneCode, type_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::MsgQueryRechargeGiveInfo, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::MsgQueryRechargeGiveInfo, userinfo_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::MsgPlayerLogin)},
@@ -2028,6 +2052,7 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 650, -1, sizeof(::MsgWeekMonthGetAward)},
   { 656, -1, sizeof(::MsgWeekMonthGetAwardResp)},
   { 664, -1, sizeof(::MsgGetPhoneCode)},
+  { 671, -1, sizeof(::MsgQueryRechargeGiveInfo)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -2103,6 +2128,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgWeekMonthGetAward_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgWeekMonthGetAwardResp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgGetPhoneCode_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgQueryRechargeGiveInfo_default_instance_),
 };
 
 const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -2302,11 +2328,13 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "ype\030\001 \001(\005\"M\n\030MsgWeekMonthGetAwardResp\022\020\n"
   "\010ret_code\030\001 \001(\005\022\r\n\005award\030\002 \001(\003\022\020\n\010new_go"
   "ld\030\003 \001(\003\"5\n\017MsgGetPhoneCode\022\024\n\014phone_num"
-  "ber\030\001 \001(\t\022\014\n\004type\030\002 \001(\005b\006proto3"
+  "ber\030\001 \001(\t\022\014\n\004type\030\002 \001(\005\":\n\030MsgQueryRecha"
+  "rgeGiveInfo\022\036\n\010UserInfo\030\001 \003(\0132\014.MsgCommo"
+  "nKVb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Login_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Login_2eproto_sccs[72] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Login_2eproto_sccs[73] = {
   &scc_info_ActiveInfoRet_Login_2eproto.base,
   &scc_info_InfiniteAgentQuerySubInfo_Login_2eproto.base,
   &scc_info_MsgActiveInfoCSPick_Login_2eproto.base,
@@ -2350,6 +2378,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
   &scc_info_MsgQueryCelebrityGoldCoinResp_Login_2eproto.base,
   &scc_info_MsgQueryRebateRecord_Login_2eproto.base,
   &scc_info_MsgQueryRebateRecordInfo_Login_2eproto.base,
+  &scc_info_MsgQueryRechargeGiveInfo_Login_2eproto.base,
   &scc_info_MsgRechargeInfo_Login_2eproto.base,
   &scc_info_MsgRecviveAgentRebateResp_Login_2eproto.base,
   &scc_info_MsgSetSubAgent_Login_2eproto.base,
@@ -2382,10 +2411,10 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Login_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Login_2eproto = {
-  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 7871,
-  &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 72, 0,
+  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 7931,
+  &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 73, 0,
   schemas, file_default_instances, TableStruct_Login_2eproto::offsets,
-  file_level_metadata_Login_2eproto, 72, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
+  file_level_metadata_Login_2eproto, 73, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -23574,6 +23603,206 @@ void MsgGetPhoneCode::InternalSwap(MsgGetPhoneCode* other) {
 }
 
 
+// ===================================================================
+
+class MsgQueryRechargeGiveInfo::_Internal {
+ public:
+};
+
+MsgQueryRechargeGiveInfo::MsgQueryRechargeGiveInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  userinfo_(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:MsgQueryRechargeGiveInfo)
+}
+MsgQueryRechargeGiveInfo::MsgQueryRechargeGiveInfo(const MsgQueryRechargeGiveInfo& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      userinfo_(from.userinfo_) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:MsgQueryRechargeGiveInfo)
+}
+
+void MsgQueryRechargeGiveInfo::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgQueryRechargeGiveInfo_Login_2eproto.base);
+}
+
+MsgQueryRechargeGiveInfo::~MsgQueryRechargeGiveInfo() {
+  // @@protoc_insertion_point(destructor:MsgQueryRechargeGiveInfo)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void MsgQueryRechargeGiveInfo::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void MsgQueryRechargeGiveInfo::ArenaDtor(void* object) {
+  MsgQueryRechargeGiveInfo* _this = reinterpret_cast< MsgQueryRechargeGiveInfo* >(object);
+  (void)_this;
+}
+void MsgQueryRechargeGiveInfo::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void MsgQueryRechargeGiveInfo::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const MsgQueryRechargeGiveInfo& MsgQueryRechargeGiveInfo::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgQueryRechargeGiveInfo_Login_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void MsgQueryRechargeGiveInfo::Clear() {
+// @@protoc_insertion_point(message_clear_start:MsgQueryRechargeGiveInfo)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  userinfo_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* MsgQueryRechargeGiveInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // repeated .MsgCommonKV UserInfo = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_userinfo(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* MsgQueryRechargeGiveInfo::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:MsgQueryRechargeGiveInfo)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated .MsgCommonKV UserInfo = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_userinfo_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(1, this->_internal_userinfo(i), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:MsgQueryRechargeGiveInfo)
+  return target;
+}
+
+size_t MsgQueryRechargeGiveInfo::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:MsgQueryRechargeGiveInfo)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated .MsgCommonKV UserInfo = 1;
+  total_size += 1UL * this->_internal_userinfo_size();
+  for (const auto& msg : this->userinfo_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void MsgQueryRechargeGiveInfo::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:MsgQueryRechargeGiveInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  const MsgQueryRechargeGiveInfo* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgQueryRechargeGiveInfo>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgQueryRechargeGiveInfo)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgQueryRechargeGiveInfo)
+    MergeFrom(*source);
+  }
+}
+
+void MsgQueryRechargeGiveInfo::MergeFrom(const MsgQueryRechargeGiveInfo& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:MsgQueryRechargeGiveInfo)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  userinfo_.MergeFrom(from.userinfo_);
+}
+
+void MsgQueryRechargeGiveInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:MsgQueryRechargeGiveInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void MsgQueryRechargeGiveInfo::CopyFrom(const MsgQueryRechargeGiveInfo& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:MsgQueryRechargeGiveInfo)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool MsgQueryRechargeGiveInfo::IsInitialized() const {
+  return true;
+}
+
+void MsgQueryRechargeGiveInfo::InternalSwap(MsgQueryRechargeGiveInfo* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  userinfo_.InternalSwap(&other->userinfo_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata MsgQueryRechargeGiveInfo::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::MsgPlayerLogin* Arena::CreateMaybeMessage< ::MsgPlayerLogin >(Arena* arena) {
@@ -23791,6 +24020,9 @@ template<> PROTOBUF_NOINLINE ::MsgWeekMonthGetAwardResp* Arena::CreateMaybeMessa
 }
 template<> PROTOBUF_NOINLINE ::MsgGetPhoneCode* Arena::CreateMaybeMessage< ::MsgGetPhoneCode >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MsgGetPhoneCode >(arena);
+}
+template<> PROTOBUF_NOINLINE ::MsgQueryRechargeGiveInfo* Arena::CreateMaybeMessage< ::MsgQueryRechargeGiveInfo >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::MsgQueryRechargeGiveInfo >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 
