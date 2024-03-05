@@ -304,6 +304,8 @@ enum EMsgIDDB : int {
   DB2LOGIN_StorageCodeClientResp = 1105,
   LOGIN2DB_InfiniteQueryUserInfo = 1106,
   DB2LOGIN_InfiniteQueryUserInfoResp = 1107,
+  LOGIN2DB_QueryRechargeGiveInfo = 1108,
+  DB2LOGIN_QueryRechargeGiveInfoResp = 1109,
   GAME2DB_Login = 2001,
   DB2GAME_LoginResp = 2002,
   GAME2DB_LoadCheatRate = 2003,

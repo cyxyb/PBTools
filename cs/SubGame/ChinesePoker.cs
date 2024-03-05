@@ -2583,7 +2583,7 @@ namespace ChinesePoker {
         = pb::FieldCodec.ForInt64(18);
     private readonly pbc::RepeatedField<long> score_ = new pbc::RepeatedField<long>();
     /// <summary>
-    ///三墩结果
+    ///三墩结果 倍数
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<long> Score {

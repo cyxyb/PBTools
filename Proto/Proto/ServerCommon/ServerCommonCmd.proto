@@ -229,6 +229,8 @@ enum EMsgIDDB
 	DB2LOGIN_StorageCodeClientResp			= 1105; //验证码返回错误码给客户端
 	LOGIN2DB_InfiniteQueryUserInfo			= 1106;	//查询某个代理信息
 	DB2LOGIN_InfiniteQueryUserInfoResp		= 1107;	//查询某个代理信息返回
+	LOGIN2DB_QueryRechargeGiveInfo			= 1108; //查询玩家充值/赠送金币详情
+	DB2LOGIN_QueryRechargeGiveInfoResp		= 1109; //查询玩家充值/赠送金币详情返回
 	//2001-3000 GameServer2DB		
 	GAME2DB_Login							= 2001;	//玩家登录游戏
 	DB2GAME_LoginResp						= 2002;	//玩家登录游戏返回

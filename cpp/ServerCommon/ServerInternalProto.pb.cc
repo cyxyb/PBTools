@@ -16,6 +16,7 @@
 #include <google/protobuf/port_def.inc>
 extern PROTOBUF_INTERNAL_EXPORT_ServerInternalProto_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgDBLoadRobotInfo_ServerInternalProto_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_ServerInternalProto_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgDBPlayerReconnectData_ServerInternalProto_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ServerInternalProto_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgErrorCode_ServerInternalProto_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_ServerInternalProto_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgPvpSerTableInfo_ServerInternalProto_2eproto;
 class MsgRegisterServerDefaultTypeInternal {
  public:
@@ -257,6 +258,14 @@ class MsgDBGetPlayerGoldDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgDBGetPlayerGold> _instance;
 } _MsgDBGetPlayerGold_default_instance_;
+class MsgErrorCodeDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgErrorCode> _instance;
+} _MsgErrorCode_default_instance_;
+class MsgDeleteFrequentlyPhoneDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgDeleteFrequentlyPhone> _instance;
+} _MsgDeleteFrequentlyPhone_default_instance_;
 class MsgPvpSerTableInfoDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgPvpSerTableInfo> _instance;
@@ -830,6 +839,33 @@ static void InitDefaultsscc_info_MsgDBWriteScoreResp_ServerInternalProto_2eproto
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgDBWriteScoreResp_ServerInternalProto_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgDBWriteScoreResp_ServerInternalProto_2eproto}, {}};
 
+static void InitDefaultsscc_info_MsgDeleteFrequentlyPhone_ServerInternalProto_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_MsgDeleteFrequentlyPhone_default_instance_;
+    new (ptr) ::MsgDeleteFrequentlyPhone();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_MsgDeleteFrequentlyPhone_ServerInternalProto_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MsgDeleteFrequentlyPhone_ServerInternalProto_2eproto}, {
+      &scc_info_MsgErrorCode_ServerInternalProto_2eproto.base,}};
+
+static void InitDefaultsscc_info_MsgErrorCode_ServerInternalProto_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_MsgErrorCode_default_instance_;
+    new (ptr) ::MsgErrorCode();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgErrorCode_ServerInternalProto_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgErrorCode_ServerInternalProto_2eproto}, {}};
+
 static void InitDefaultsscc_info_MsgGameServerUnRegister_ServerInternalProto_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -1091,7 +1127,7 @@ static void InitDefaultsscc_info_MsgWebCmd_ServerInternalProto_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgWebCmd_ServerInternalProto_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgWebCmd_ServerInternalProto_2eproto}, {}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_ServerInternalProto_2eproto[63];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_ServerInternalProto_2eproto[65];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_ServerInternalProto_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_ServerInternalProto_2eproto = nullptr;
 
@@ -1655,6 +1691,20 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ServerInternalProto_2eproto::o
   PROTOBUF_FIELD_OFFSET(::MsgDBGetPlayerGold, user_id_),
   PROTOBUF_FIELD_OFFSET(::MsgDBGetPlayerGold, coin_),
   ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::MsgErrorCode, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::MsgErrorCode, type_),
+  PROTOBUF_FIELD_OFFSET(::MsgErrorCode, value_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::MsgDeleteFrequentlyPhone, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::MsgDeleteFrequentlyPhone, error_code_),
+  PROTOBUF_FIELD_OFFSET(::MsgDeleteFrequentlyPhone, phone_),
+  ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgPvpSerTableInfo, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
@@ -1744,9 +1794,11 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 534, -1, sizeof(::MsgDBUpgradeVIP)},
   { 543, -1, sizeof(::MsgDBSetSubAgent)},
   { 551, -1, sizeof(::MsgDBGetPlayerGold)},
-  { 558, -1, sizeof(::MsgPvpSerTableInfo)},
-  { 572, -1, sizeof(::MsgPvpAddTable)},
-  { 579, -1, sizeof(::MsgPvpDelTable)},
+  { 558, -1, sizeof(::MsgErrorCode)},
+  { 565, -1, sizeof(::MsgDeleteFrequentlyPhone)},
+  { 572, -1, sizeof(::MsgPvpSerTableInfo)},
+  { 586, -1, sizeof(::MsgPvpAddTable)},
+  { 593, -1, sizeof(::MsgPvpDelTable)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -1810,6 +1862,8 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgDBUpgradeVIP_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgDBSetSubAgent_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgDBGetPlayerGold_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgErrorCode_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgDeleteFrequentlyPhone_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgPvpSerTableInfo_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgPvpAddTable_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgPvpDelTable_default_instance_),
@@ -1972,20 +2026,23 @@ const char descriptor_table_protodef_ServerInternalProto_2eproto[] PROTOBUF_SECT
   "\003 \001(\005\022\023\n\013add_vip_exp\030\004 \001(\005\"J\n\020MsgDBSetSu"
   "bAgent\022\017\n\007user_id\030\001 \001(\005\022\020\n\010sub_user\030\002 \001("
   "\005\022\023\n\013agent_ratio\030\003 \001(\005\"3\n\022MsgDBGetPlayer"
-  "Gold\022\017\n\007user_id\030\001 \001(\005\022\014\n\004coin\030\002 \001(\003\"\303\001\n\022"
-  "MsgPvpSerTableInfo\022\020\n\010table_id\030\001 \001(\005\022\022\n\n"
-  "table_name\030\002 \001(\t\022\021\n\tchair_num\030\003 \001(\005\022\021\n\te"
-  "nter_num\030\004 \001(\005\022\022\n\nbase_score\030\005 \001(\005\022\023\n\013is"
-  "_activate\030\006 \001(\010\022\022\n\nis_private\030\007 \001(\010\022\022\n\no"
-  "wner_nick\030\t \001(\t\022\020\n\010table_no\030\n \001(\005\"L\n\016Msg"
-  "PvpAddTable\022\021\n\tgame_type\030\001 \001(\005\022\'\n\ntable_"
-  "list\030\002 \003(\0132\023.MsgPvpSerTableInfo\"5\n\016MsgPv"
-  "pDelTable\022\021\n\tgame_type\030\001 \001(\005\022\020\n\010table_id"
-  "\030\002 \001(\005b\006proto3"
+  "Gold\022\017\n\007user_id\030\001 \001(\005\022\014\n\004coin\030\002 \001(\003\"+\n\014M"
+  "sgErrorCode\022\014\n\004type\030\001 \001(\005\022\r\n\005value\030\002 \001(\005"
+  "\"L\n\030MsgDeleteFrequentlyPhone\022!\n\nerror_co"
+  "de\030\001 \001(\0132\r.MsgErrorCode\022\r\n\005phone\030\002 \001(\t\"\303"
+  "\001\n\022MsgPvpSerTableInfo\022\020\n\010table_id\030\001 \001(\005\022"
+  "\022\n\ntable_name\030\002 \001(\t\022\021\n\tchair_num\030\003 \001(\005\022\021"
+  "\n\tenter_num\030\004 \001(\005\022\022\n\nbase_score\030\005 \001(\005\022\023\n"
+  "\013is_activate\030\006 \001(\010\022\022\n\nis_private\030\007 \001(\010\022\022"
+  "\n\nowner_nick\030\t \001(\t\022\020\n\010table_no\030\n \001(\005\"L\n\016"
+  "MsgPvpAddTable\022\021\n\tgame_type\030\001 \001(\005\022\'\n\ntab"
+  "le_list\030\002 \003(\0132\023.MsgPvpSerTableInfo\"5\n\016Ms"
+  "gPvpDelTable\022\021\n\tgame_type\030\001 \001(\005\022\020\n\010table"
+  "_id\030\002 \001(\005b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_ServerInternalProto_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_ServerInternalProto_2eproto_sccs[63] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_ServerInternalProto_2eproto_sccs[65] = {
   &scc_info_MsgApplyRobot_ServerInternalProto_2eproto.base,
   &scc_info_MsgApplyRobotResp_ServerInternalProto_2eproto.base,
   &scc_info_MsgCreateRobot_ServerInternalProto_2eproto.base,
@@ -2029,6 +2086,8 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Ser
   &scc_info_MsgDBUpgradeVIP_ServerInternalProto_2eproto.base,
   &scc_info_MsgDBWriteScore_ServerInternalProto_2eproto.base,
   &scc_info_MsgDBWriteScoreResp_ServerInternalProto_2eproto.base,
+  &scc_info_MsgDeleteFrequentlyPhone_ServerInternalProto_2eproto.base,
+  &scc_info_MsgErrorCode_ServerInternalProto_2eproto.base,
   &scc_info_MsgGameServerUnRegister_ServerInternalProto_2eproto.base,
   &scc_info_MsgLoadCheatRate_ServerInternalProto_2eproto.base,
   &scc_info_MsgLoginPlayerInfo_ServerInternalProto_2eproto.base,
@@ -2052,10 +2111,10 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Ser
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ServerInternalProto_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ServerInternalProto_2eproto = {
-  false, false, descriptor_table_protodef_ServerInternalProto_2eproto, "ServerInternalProto.proto", 6614,
-  &descriptor_table_ServerInternalProto_2eproto_once, descriptor_table_ServerInternalProto_2eproto_sccs, descriptor_table_ServerInternalProto_2eproto_deps, 63, 0,
+  false, false, descriptor_table_protodef_ServerInternalProto_2eproto, "ServerInternalProto.proto", 6737,
+  &descriptor_table_ServerInternalProto_2eproto_once, descriptor_table_ServerInternalProto_2eproto_sccs, descriptor_table_ServerInternalProto_2eproto_deps, 65, 0,
   schemas, file_default_instances, TableStruct_ServerInternalProto_2eproto::offsets,
-  file_level_metadata_ServerInternalProto_2eproto, 63, file_level_enum_descriptors_ServerInternalProto_2eproto, file_level_service_descriptors_ServerInternalProto_2eproto,
+  file_level_metadata_ServerInternalProto_2eproto, 65, file_level_enum_descriptors_ServerInternalProto_2eproto, file_level_service_descriptors_ServerInternalProto_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -19684,6 +19743,483 @@ void MsgDBGetPlayerGold::InternalSwap(MsgDBGetPlayerGold* other) {
 
 // ===================================================================
 
+class MsgErrorCode::_Internal {
+ public:
+};
+
+MsgErrorCode::MsgErrorCode(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:MsgErrorCode)
+}
+MsgErrorCode::MsgErrorCode(const MsgErrorCode& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&type_, &from.type_,
+    static_cast<size_t>(reinterpret_cast<char*>(&value_) -
+    reinterpret_cast<char*>(&type_)) + sizeof(value_));
+  // @@protoc_insertion_point(copy_constructor:MsgErrorCode)
+}
+
+void MsgErrorCode::SharedCtor() {
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&type_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&value_) -
+      reinterpret_cast<char*>(&type_)) + sizeof(value_));
+}
+
+MsgErrorCode::~MsgErrorCode() {
+  // @@protoc_insertion_point(destructor:MsgErrorCode)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void MsgErrorCode::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void MsgErrorCode::ArenaDtor(void* object) {
+  MsgErrorCode* _this = reinterpret_cast< MsgErrorCode* >(object);
+  (void)_this;
+}
+void MsgErrorCode::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void MsgErrorCode::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const MsgErrorCode& MsgErrorCode::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgErrorCode_ServerInternalProto_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void MsgErrorCode::Clear() {
+// @@protoc_insertion_point(message_clear_start:MsgErrorCode)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&type_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&value_) -
+      reinterpret_cast<char*>(&type_)) + sizeof(value_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* MsgErrorCode::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 type = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 value = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          value_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* MsgErrorCode::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:MsgErrorCode)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 type = 1;
+  if (this->type() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_type(), target);
+  }
+
+  // int32 value = 2;
+  if (this->value() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_value(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:MsgErrorCode)
+  return target;
+}
+
+size_t MsgErrorCode::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:MsgErrorCode)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // int32 type = 1;
+  if (this->type() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_type());
+  }
+
+  // int32 value = 2;
+  if (this->value() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_value());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void MsgErrorCode::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:MsgErrorCode)
+  GOOGLE_DCHECK_NE(&from, this);
+  const MsgErrorCode* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgErrorCode>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgErrorCode)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgErrorCode)
+    MergeFrom(*source);
+  }
+}
+
+void MsgErrorCode::MergeFrom(const MsgErrorCode& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:MsgErrorCode)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.type() != 0) {
+    _internal_set_type(from._internal_type());
+  }
+  if (from.value() != 0) {
+    _internal_set_value(from._internal_value());
+  }
+}
+
+void MsgErrorCode::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:MsgErrorCode)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void MsgErrorCode::CopyFrom(const MsgErrorCode& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:MsgErrorCode)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool MsgErrorCode::IsInitialized() const {
+  return true;
+}
+
+void MsgErrorCode::InternalSwap(MsgErrorCode* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(MsgErrorCode, value_)
+      + sizeof(MsgErrorCode::value_)
+      - PROTOBUF_FIELD_OFFSET(MsgErrorCode, type_)>(
+          reinterpret_cast<char*>(&type_),
+          reinterpret_cast<char*>(&other->type_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata MsgErrorCode::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class MsgDeleteFrequentlyPhone::_Internal {
+ public:
+  static const ::MsgErrorCode& error_code(const MsgDeleteFrequentlyPhone* msg);
+};
+
+const ::MsgErrorCode&
+MsgDeleteFrequentlyPhone::_Internal::error_code(const MsgDeleteFrequentlyPhone* msg) {
+  return *msg->error_code_;
+}
+MsgDeleteFrequentlyPhone::MsgDeleteFrequentlyPhone(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:MsgDeleteFrequentlyPhone)
+}
+MsgDeleteFrequentlyPhone::MsgDeleteFrequentlyPhone(const MsgDeleteFrequentlyPhone& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  phone_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (!from._internal_phone().empty()) {
+    phone_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_phone(), 
+      GetArena());
+  }
+  if (from._internal_has_error_code()) {
+    error_code_ = new ::MsgErrorCode(*from.error_code_);
+  } else {
+    error_code_ = nullptr;
+  }
+  // @@protoc_insertion_point(copy_constructor:MsgDeleteFrequentlyPhone)
+}
+
+void MsgDeleteFrequentlyPhone::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgDeleteFrequentlyPhone_ServerInternalProto_2eproto.base);
+  phone_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  error_code_ = nullptr;
+}
+
+MsgDeleteFrequentlyPhone::~MsgDeleteFrequentlyPhone() {
+  // @@protoc_insertion_point(destructor:MsgDeleteFrequentlyPhone)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void MsgDeleteFrequentlyPhone::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+  phone_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (this != internal_default_instance()) delete error_code_;
+}
+
+void MsgDeleteFrequentlyPhone::ArenaDtor(void* object) {
+  MsgDeleteFrequentlyPhone* _this = reinterpret_cast< MsgDeleteFrequentlyPhone* >(object);
+  (void)_this;
+}
+void MsgDeleteFrequentlyPhone::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void MsgDeleteFrequentlyPhone::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const MsgDeleteFrequentlyPhone& MsgDeleteFrequentlyPhone::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgDeleteFrequentlyPhone_ServerInternalProto_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void MsgDeleteFrequentlyPhone::Clear() {
+// @@protoc_insertion_point(message_clear_start:MsgDeleteFrequentlyPhone)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  phone_.ClearToEmpty();
+  if (GetArena() == nullptr && error_code_ != nullptr) {
+    delete error_code_;
+  }
+  error_code_ = nullptr;
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* MsgDeleteFrequentlyPhone::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // .MsgErrorCode error_code = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_error_code(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // string phone = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          auto str = _internal_mutable_phone();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "MsgDeleteFrequentlyPhone.phone"));
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* MsgDeleteFrequentlyPhone::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:MsgDeleteFrequentlyPhone)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // .MsgErrorCode error_code = 1;
+  if (this->has_error_code()) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        1, _Internal::error_code(this), target, stream);
+  }
+
+  // string phone = 2;
+  if (this->phone().size() > 0) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_phone().data(), static_cast<int>(this->_internal_phone().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "MsgDeleteFrequentlyPhone.phone");
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_phone(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:MsgDeleteFrequentlyPhone)
+  return target;
+}
+
+size_t MsgDeleteFrequentlyPhone::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:MsgDeleteFrequentlyPhone)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // string phone = 2;
+  if (this->phone().size() > 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_phone());
+  }
+
+  // .MsgErrorCode error_code = 1;
+  if (this->has_error_code()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *error_code_);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void MsgDeleteFrequentlyPhone::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:MsgDeleteFrequentlyPhone)
+  GOOGLE_DCHECK_NE(&from, this);
+  const MsgDeleteFrequentlyPhone* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgDeleteFrequentlyPhone>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgDeleteFrequentlyPhone)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgDeleteFrequentlyPhone)
+    MergeFrom(*source);
+  }
+}
+
+void MsgDeleteFrequentlyPhone::MergeFrom(const MsgDeleteFrequentlyPhone& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:MsgDeleteFrequentlyPhone)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.phone().size() > 0) {
+    _internal_set_phone(from._internal_phone());
+  }
+  if (from.has_error_code()) {
+    _internal_mutable_error_code()->::MsgErrorCode::MergeFrom(from._internal_error_code());
+  }
+}
+
+void MsgDeleteFrequentlyPhone::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:MsgDeleteFrequentlyPhone)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void MsgDeleteFrequentlyPhone::CopyFrom(const MsgDeleteFrequentlyPhone& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:MsgDeleteFrequentlyPhone)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool MsgDeleteFrequentlyPhone::IsInitialized() const {
+  return true;
+}
+
+void MsgDeleteFrequentlyPhone::InternalSwap(MsgDeleteFrequentlyPhone* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  phone_.Swap(&other->phone_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  swap(error_code_, other->error_code_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata MsgDeleteFrequentlyPhone::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
 class MsgPvpSerTableInfo::_Internal {
  public:
 };
@@ -20736,6 +21272,12 @@ template<> PROTOBUF_NOINLINE ::MsgDBSetSubAgent* Arena::CreateMaybeMessage< ::Ms
 }
 template<> PROTOBUF_NOINLINE ::MsgDBGetPlayerGold* Arena::CreateMaybeMessage< ::MsgDBGetPlayerGold >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MsgDBGetPlayerGold >(arena);
+}
+template<> PROTOBUF_NOINLINE ::MsgErrorCode* Arena::CreateMaybeMessage< ::MsgErrorCode >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::MsgErrorCode >(arena);
+}
+template<> PROTOBUF_NOINLINE ::MsgDeleteFrequentlyPhone* Arena::CreateMaybeMessage< ::MsgDeleteFrequentlyPhone >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::MsgDeleteFrequentlyPhone >(arena);
 }
 template<> PROTOBUF_NOINLINE ::MsgPvpSerTableInfo* Arena::CreateMaybeMessage< ::MsgPvpSerTableInfo >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MsgPvpSerTableInfo >(arena);

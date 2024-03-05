@@ -46,7 +46,7 @@ struct TableStruct_ServerInternalProto_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[63]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[65]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -182,6 +182,12 @@ extern MsgDBWriteScoreDefaultTypeInternal _MsgDBWriteScore_default_instance_;
 class MsgDBWriteScoreResp;
 class MsgDBWriteScoreRespDefaultTypeInternal;
 extern MsgDBWriteScoreRespDefaultTypeInternal _MsgDBWriteScoreResp_default_instance_;
+class MsgDeleteFrequentlyPhone;
+class MsgDeleteFrequentlyPhoneDefaultTypeInternal;
+extern MsgDeleteFrequentlyPhoneDefaultTypeInternal _MsgDeleteFrequentlyPhone_default_instance_;
+class MsgErrorCode;
+class MsgErrorCodeDefaultTypeInternal;
+extern MsgErrorCodeDefaultTypeInternal _MsgErrorCode_default_instance_;
 class MsgGameServerUnRegister;
 class MsgGameServerUnRegisterDefaultTypeInternal;
 extern MsgGameServerUnRegisterDefaultTypeInternal _MsgGameServerUnRegister_default_instance_;
@@ -286,6 +292,8 @@ template<> ::MsgDBUpdatePlayerInfo* Arena::CreateMaybeMessage<::MsgDBUpdatePlaye
 template<> ::MsgDBUpgradeVIP* Arena::CreateMaybeMessage<::MsgDBUpgradeVIP>(Arena*);
 template<> ::MsgDBWriteScore* Arena::CreateMaybeMessage<::MsgDBWriteScore>(Arena*);
 template<> ::MsgDBWriteScoreResp* Arena::CreateMaybeMessage<::MsgDBWriteScoreResp>(Arena*);
+template<> ::MsgDeleteFrequentlyPhone* Arena::CreateMaybeMessage<::MsgDeleteFrequentlyPhone>(Arena*);
+template<> ::MsgErrorCode* Arena::CreateMaybeMessage<::MsgErrorCode>(Arena*);
 template<> ::MsgGameServerUnRegister* Arena::CreateMaybeMessage<::MsgGameServerUnRegister>(Arena*);
 template<> ::MsgLoadCheatRate* Arena::CreateMaybeMessage<::MsgLoadCheatRate>(Arena*);
 template<> ::MsgLoginPlayerInfo* Arena::CreateMaybeMessage<::MsgLoginPlayerInfo>(Arena*);
@@ -11072,6 +11080,316 @@ class MsgDBGetPlayerGold PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
+class MsgErrorCode PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgErrorCode) */ {
+ public:
+  inline MsgErrorCode() : MsgErrorCode(nullptr) {}
+  virtual ~MsgErrorCode();
+
+  MsgErrorCode(const MsgErrorCode& from);
+  MsgErrorCode(MsgErrorCode&& from) noexcept
+    : MsgErrorCode() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgErrorCode& operator=(const MsgErrorCode& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgErrorCode& operator=(MsgErrorCode&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgErrorCode& default_instance();
+
+  static inline const MsgErrorCode* internal_default_instance() {
+    return reinterpret_cast<const MsgErrorCode*>(
+               &_MsgErrorCode_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    60;
+
+  friend void swap(MsgErrorCode& a, MsgErrorCode& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgErrorCode* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgErrorCode* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgErrorCode* New() const final {
+    return CreateMaybeMessage<MsgErrorCode>(nullptr);
+  }
+
+  MsgErrorCode* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgErrorCode>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgErrorCode& from);
+  void MergeFrom(const MsgErrorCode& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgErrorCode* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgErrorCode";
+  }
+  protected:
+  explicit MsgErrorCode(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kTypeFieldNumber = 1,
+    kValueFieldNumber = 2,
+  };
+  // int32 type = 1;
+  void clear_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 type() const;
+  void set_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_type() const;
+  void _internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 value = 2;
+  void clear_value();
+  ::PROTOBUF_NAMESPACE_ID::int32 value() const;
+  void set_value(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_value() const;
+  void _internal_set_value(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgErrorCode)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 type_;
+  ::PROTOBUF_NAMESPACE_ID::int32 value_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgDeleteFrequentlyPhone PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgDeleteFrequentlyPhone) */ {
+ public:
+  inline MsgDeleteFrequentlyPhone() : MsgDeleteFrequentlyPhone(nullptr) {}
+  virtual ~MsgDeleteFrequentlyPhone();
+
+  MsgDeleteFrequentlyPhone(const MsgDeleteFrequentlyPhone& from);
+  MsgDeleteFrequentlyPhone(MsgDeleteFrequentlyPhone&& from) noexcept
+    : MsgDeleteFrequentlyPhone() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgDeleteFrequentlyPhone& operator=(const MsgDeleteFrequentlyPhone& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgDeleteFrequentlyPhone& operator=(MsgDeleteFrequentlyPhone&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgDeleteFrequentlyPhone& default_instance();
+
+  static inline const MsgDeleteFrequentlyPhone* internal_default_instance() {
+    return reinterpret_cast<const MsgDeleteFrequentlyPhone*>(
+               &_MsgDeleteFrequentlyPhone_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    61;
+
+  friend void swap(MsgDeleteFrequentlyPhone& a, MsgDeleteFrequentlyPhone& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgDeleteFrequentlyPhone* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgDeleteFrequentlyPhone* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgDeleteFrequentlyPhone* New() const final {
+    return CreateMaybeMessage<MsgDeleteFrequentlyPhone>(nullptr);
+  }
+
+  MsgDeleteFrequentlyPhone* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgDeleteFrequentlyPhone>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgDeleteFrequentlyPhone& from);
+  void MergeFrom(const MsgDeleteFrequentlyPhone& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgDeleteFrequentlyPhone* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgDeleteFrequentlyPhone";
+  }
+  protected:
+  explicit MsgDeleteFrequentlyPhone(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kPhoneFieldNumber = 2,
+    kErrorCodeFieldNumber = 1,
+  };
+  // string phone = 2;
+  void clear_phone();
+  const std::string& phone() const;
+  void set_phone(const std::string& value);
+  void set_phone(std::string&& value);
+  void set_phone(const char* value);
+  void set_phone(const char* value, size_t size);
+  std::string* mutable_phone();
+  std::string* release_phone();
+  void set_allocated_phone(std::string* phone);
+  private:
+  const std::string& _internal_phone() const;
+  void _internal_set_phone(const std::string& value);
+  std::string* _internal_mutable_phone();
+  public:
+
+  // .MsgErrorCode error_code = 1;
+  bool has_error_code() const;
+  private:
+  bool _internal_has_error_code() const;
+  public:
+  void clear_error_code();
+  const ::MsgErrorCode& error_code() const;
+  ::MsgErrorCode* release_error_code();
+  ::MsgErrorCode* mutable_error_code();
+  void set_allocated_error_code(::MsgErrorCode* error_code);
+  private:
+  const ::MsgErrorCode& _internal_error_code() const;
+  ::MsgErrorCode* _internal_mutable_error_code();
+  public:
+  void unsafe_arena_set_allocated_error_code(
+      ::MsgErrorCode* error_code);
+  ::MsgErrorCode* unsafe_arena_release_error_code();
+
+  // @@protoc_insertion_point(class_scope:MsgDeleteFrequentlyPhone)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr phone_;
+  ::MsgErrorCode* error_code_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
+// -------------------------------------------------------------------
+
 class MsgPvpSerTableInfo PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgPvpSerTableInfo) */ {
  public:
@@ -11113,7 +11431,7 @@ class MsgPvpSerTableInfo PROTOBUF_FINAL :
                &_MsgPvpSerTableInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    60;
+    62;
 
   friend void swap(MsgPvpSerTableInfo& a, MsgPvpSerTableInfo& b) {
     a.Swap(&b);
@@ -11351,7 +11669,7 @@ class MsgPvpAddTable PROTOBUF_FINAL :
                &_MsgPvpAddTable_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    61;
+    63;
 
   friend void swap(MsgPvpAddTable& a, MsgPvpAddTable& b) {
     a.Swap(&b);
@@ -11507,7 +11825,7 @@ class MsgPvpDelTable PROTOBUF_FINAL :
                &_MsgPvpDelTable_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    62;
+    64;
 
   friend void swap(MsgPvpDelTable& a, MsgPvpDelTable& b) {
     a.Swap(&b);
@@ -19260,6 +19578,198 @@ inline void MsgDBGetPlayerGold::set_coin(::PROTOBUF_NAMESPACE_ID::int64 value) {
 
 // -------------------------------------------------------------------
 
+// MsgErrorCode
+
+// int32 type = 1;
+inline void MsgErrorCode::clear_type() {
+  type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgErrorCode::_internal_type() const {
+  return type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgErrorCode::type() const {
+  // @@protoc_insertion_point(field_get:MsgErrorCode.type)
+  return _internal_type();
+}
+inline void MsgErrorCode::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  type_ = value;
+}
+inline void MsgErrorCode::set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_type(value);
+  // @@protoc_insertion_point(field_set:MsgErrorCode.type)
+}
+
+// int32 value = 2;
+inline void MsgErrorCode::clear_value() {
+  value_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgErrorCode::_internal_value() const {
+  return value_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgErrorCode::value() const {
+  // @@protoc_insertion_point(field_get:MsgErrorCode.value)
+  return _internal_value();
+}
+inline void MsgErrorCode::_internal_set_value(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  value_ = value;
+}
+inline void MsgErrorCode::set_value(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_value(value);
+  // @@protoc_insertion_point(field_set:MsgErrorCode.value)
+}
+
+// -------------------------------------------------------------------
+
+// MsgDeleteFrequentlyPhone
+
+// .MsgErrorCode error_code = 1;
+inline bool MsgDeleteFrequentlyPhone::_internal_has_error_code() const {
+  return this != internal_default_instance() && error_code_ != nullptr;
+}
+inline bool MsgDeleteFrequentlyPhone::has_error_code() const {
+  return _internal_has_error_code();
+}
+inline void MsgDeleteFrequentlyPhone::clear_error_code() {
+  if (GetArena() == nullptr && error_code_ != nullptr) {
+    delete error_code_;
+  }
+  error_code_ = nullptr;
+}
+inline const ::MsgErrorCode& MsgDeleteFrequentlyPhone::_internal_error_code() const {
+  const ::MsgErrorCode* p = error_code_;
+  return p != nullptr ? *p : reinterpret_cast<const ::MsgErrorCode&>(
+      ::_MsgErrorCode_default_instance_);
+}
+inline const ::MsgErrorCode& MsgDeleteFrequentlyPhone::error_code() const {
+  // @@protoc_insertion_point(field_get:MsgDeleteFrequentlyPhone.error_code)
+  return _internal_error_code();
+}
+inline void MsgDeleteFrequentlyPhone::unsafe_arena_set_allocated_error_code(
+    ::MsgErrorCode* error_code) {
+  if (GetArena() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(error_code_);
+  }
+  error_code_ = error_code;
+  if (error_code) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:MsgDeleteFrequentlyPhone.error_code)
+}
+inline ::MsgErrorCode* MsgDeleteFrequentlyPhone::release_error_code() {
+  
+  ::MsgErrorCode* temp = error_code_;
+  error_code_ = nullptr;
+  if (GetArena() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+  return temp;
+}
+inline ::MsgErrorCode* MsgDeleteFrequentlyPhone::unsafe_arena_release_error_code() {
+  // @@protoc_insertion_point(field_release:MsgDeleteFrequentlyPhone.error_code)
+  
+  ::MsgErrorCode* temp = error_code_;
+  error_code_ = nullptr;
+  return temp;
+}
+inline ::MsgErrorCode* MsgDeleteFrequentlyPhone::_internal_mutable_error_code() {
+  
+  if (error_code_ == nullptr) {
+    auto* p = CreateMaybeMessage<::MsgErrorCode>(GetArena());
+    error_code_ = p;
+  }
+  return error_code_;
+}
+inline ::MsgErrorCode* MsgDeleteFrequentlyPhone::mutable_error_code() {
+  // @@protoc_insertion_point(field_mutable:MsgDeleteFrequentlyPhone.error_code)
+  return _internal_mutable_error_code();
+}
+inline void MsgDeleteFrequentlyPhone::set_allocated_error_code(::MsgErrorCode* error_code) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  if (message_arena == nullptr) {
+    delete error_code_;
+  }
+  if (error_code) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(error_code);
+    if (message_arena != submessage_arena) {
+      error_code = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, error_code, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  error_code_ = error_code;
+  // @@protoc_insertion_point(field_set_allocated:MsgDeleteFrequentlyPhone.error_code)
+}
+
+// string phone = 2;
+inline void MsgDeleteFrequentlyPhone::clear_phone() {
+  phone_.ClearToEmpty();
+}
+inline const std::string& MsgDeleteFrequentlyPhone::phone() const {
+  // @@protoc_insertion_point(field_get:MsgDeleteFrequentlyPhone.phone)
+  return _internal_phone();
+}
+inline void MsgDeleteFrequentlyPhone::set_phone(const std::string& value) {
+  _internal_set_phone(value);
+  // @@protoc_insertion_point(field_set:MsgDeleteFrequentlyPhone.phone)
+}
+inline std::string* MsgDeleteFrequentlyPhone::mutable_phone() {
+  // @@protoc_insertion_point(field_mutable:MsgDeleteFrequentlyPhone.phone)
+  return _internal_mutable_phone();
+}
+inline const std::string& MsgDeleteFrequentlyPhone::_internal_phone() const {
+  return phone_.Get();
+}
+inline void MsgDeleteFrequentlyPhone::_internal_set_phone(const std::string& value) {
+  
+  phone_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgDeleteFrequentlyPhone::set_phone(std::string&& value) {
+  
+  phone_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgDeleteFrequentlyPhone.phone)
+}
+inline void MsgDeleteFrequentlyPhone::set_phone(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  phone_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgDeleteFrequentlyPhone.phone)
+}
+inline void MsgDeleteFrequentlyPhone::set_phone(const char* value,
+    size_t size) {
+  
+  phone_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgDeleteFrequentlyPhone.phone)
+}
+inline std::string* MsgDeleteFrequentlyPhone::_internal_mutable_phone() {
+  
+  return phone_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgDeleteFrequentlyPhone::release_phone() {
+  // @@protoc_insertion_point(field_release:MsgDeleteFrequentlyPhone.phone)
+  return phone_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgDeleteFrequentlyPhone::set_allocated_phone(std::string* phone) {
+  if (phone != nullptr) {
+    
+  } else {
+    
+  }
+  phone_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), phone,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgDeleteFrequentlyPhone.phone)
+}
+
+// -------------------------------------------------------------------
+
 // MsgPvpSerTableInfo
 
 // int32 table_id = 1;
@@ -19634,6 +20144,10 @@ inline void MsgPvpDelTable::set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
