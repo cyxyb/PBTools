@@ -2461,11 +2461,12 @@ class MsgPvpRoomCfgItem PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kValueListFieldNumber = 3,
+    kValueListFieldNumber = 4,
     kLagKeyFieldNumber = 1,
     kClinetOpenFieldNumber = 2,
+    kCanSelectFieldNumber = 3,
   };
-  // repeated int32 value_list = 3;
+  // repeated int32 value_list = 4;
   int value_list_size() const;
   private:
   int _internal_value_list_size() const;
@@ -2505,6 +2506,15 @@ class MsgPvpRoomCfgItem PROTOBUF_FINAL :
   void _internal_set_clinet_open(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 can_select = 3;
+  void clear_can_select();
+  ::PROTOBUF_NAMESPACE_ID::int32 can_select() const;
+  void set_can_select(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_can_select() const;
+  void _internal_set_can_select(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgPvpRoomCfgItem)
  private:
   class _Internal;
@@ -2516,6 +2526,7 @@ class MsgPvpRoomCfgItem PROTOBUF_FINAL :
   mutable std::atomic<int> _value_list_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::int32 lag_key_;
   ::PROTOBUF_NAMESPACE_ID::int32 clinet_open_;
+  ::PROTOBUF_NAMESPACE_ID::int32 can_select_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Game_2eproto;
 };
@@ -2638,7 +2649,6 @@ class MsgPvpRoomConfig PROTOBUF_FINAL :
     kChairLimitMinFieldNumber = 2,
     kChairLimitMaxFieldNumber = 3,
     kMaxRoundFieldNumber = 4,
-    kCanSelectFieldNumber = 5,
   };
   // repeated .MsgPvpRoomCfgItem para_lsit = 11;
   int para_lsit_size() const;
@@ -2694,15 +2704,6 @@ class MsgPvpRoomConfig PROTOBUF_FINAL :
   void _internal_set_max_round(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 can_select = 5;
-  void clear_can_select();
-  ::PROTOBUF_NAMESPACE_ID::int32 can_select() const;
-  void set_can_select(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_can_select() const;
-  void _internal_set_can_select(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
   // @@protoc_insertion_point(class_scope:MsgPvpRoomConfig)
  private:
   class _Internal;
@@ -2715,7 +2716,6 @@ class MsgPvpRoomConfig PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 chair_limit_min_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_limit_max_;
   ::PROTOBUF_NAMESPACE_ID::int32 max_round_;
-  ::PROTOBUF_NAMESPACE_ID::int32 can_select_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Game_2eproto;
 };
@@ -6588,7 +6588,27 @@ inline void MsgPvpRoomCfgItem::set_clinet_open(::PROTOBUF_NAMESPACE_ID::int32 va
   // @@protoc_insertion_point(field_set:MsgPvpRoomCfgItem.clinet_open)
 }
 
-// repeated int32 value_list = 3;
+// int32 can_select = 3;
+inline void MsgPvpRoomCfgItem::clear_can_select() {
+  can_select_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpRoomCfgItem::_internal_can_select() const {
+  return can_select_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpRoomCfgItem::can_select() const {
+  // @@protoc_insertion_point(field_get:MsgPvpRoomCfgItem.can_select)
+  return _internal_can_select();
+}
+inline void MsgPvpRoomCfgItem::_internal_set_can_select(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  can_select_ = value;
+}
+inline void MsgPvpRoomCfgItem::set_can_select(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_can_select(value);
+  // @@protoc_insertion_point(field_set:MsgPvpRoomCfgItem.can_select)
+}
+
+// repeated int32 value_list = 4;
 inline int MsgPvpRoomCfgItem::_internal_value_list_size() const {
   return value_list_.size();
 }
@@ -6717,26 +6737,6 @@ inline void MsgPvpRoomConfig::_internal_set_max_round(::PROTOBUF_NAMESPACE_ID::i
 inline void MsgPvpRoomConfig::set_max_round(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_max_round(value);
   // @@protoc_insertion_point(field_set:MsgPvpRoomConfig.max_round)
-}
-
-// int32 can_select = 5;
-inline void MsgPvpRoomConfig::clear_can_select() {
-  can_select_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpRoomConfig::_internal_can_select() const {
-  return can_select_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPvpRoomConfig::can_select() const {
-  // @@protoc_insertion_point(field_get:MsgPvpRoomConfig.can_select)
-  return _internal_can_select();
-}
-inline void MsgPvpRoomConfig::_internal_set_can_select(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  can_select_ = value;
-}
-inline void MsgPvpRoomConfig::set_can_select(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_can_select(value);
-  // @@protoc_insertion_point(field_set:MsgPvpRoomConfig.can_select)
 }
 
 // repeated .MsgPvpRoomCfgItem para_lsit = 11;

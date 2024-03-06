@@ -53,12 +53,12 @@ public static partial class GameReflection {
           "b3duZXJfaWQYCSABKAUSEAoIdGFibGVfbm8YCiABKAUSDgoGdmFsdWUxGAsg",
           "ASgDEg4KBnZhbHVlMhgMIAEoAxIOCgZ2YWx1ZTMYDSABKAMSDgoGdmFsdWU0",
           "GA4gASgDEg4KBnZhbHVlNRgPIAEoAxIOCgZ2YWx1ZTYYECABKAMSDgoGdmFs",
-          "dWU3GBEgASgDEg4KBnZhbHVlOBgSIAEoAyJNChFNc2dQdnBSb29tQ2ZnSXRl",
-          "bRIPCgdsYWdfa2V5GAEgASgFEhMKC2NsaW5ldF9vcGVuGAIgASgFEhIKCnZh",
-          "bHVlX2xpc3QYAyADKAUirAEKEE1zZ1B2cFJvb21Db25maWcSGAoQY3JlYXRl",
-          "X3ZpcF9saW1pdBgBIAEoBRIXCg9jaGFpcl9saW1pdF9taW4YAiABKAUSFwoP",
-          "Y2hhaXJfbGltaXRfbWF4GAMgASgFEhEKCW1heF9yb3VuZBgEIAEoBRISCgpj",
-          "YW5fc2VsZWN0GAUgASgFEiUKCXBhcmFfbHNpdBgLIAMoCzISLk1zZ1B2cFJv",
+          "dWU3GBEgASgDEg4KBnZhbHVlOBgSIAEoAyJhChFNc2dQdnBSb29tQ2ZnSXRl",
+          "bRIPCgdsYWdfa2V5GAEgASgFEhMKC2NsaW5ldF9vcGVuGAIgASgFEhIKCmNh",
+          "bl9zZWxlY3QYAyABKAUSEgoKdmFsdWVfbGlzdBgEIAMoBSKYAQoQTXNnUHZw",
+          "Um9vbUNvbmZpZxIYChBjcmVhdGVfdmlwX2xpbWl0GAEgASgFEhcKD2NoYWly",
+          "X2xpbWl0X21pbhgCIAEoBRIXCg9jaGFpcl9saW1pdF9tYXgYAyABKAUSEQoJ",
+          "bWF4X3JvdW5kGAQgASgFEiUKCXBhcmFfbHNpdBgLIAMoCzISLk1zZ1B2cFJv",
           "b21DZmdJdGVtIjcKD01zZ1B2cFRhYmxlTGlzdBIkCgp0YWJsZV9saXN0GAEg",
           "AygLMhAuTXNnUHZwVGFibGVJbmZvInMKEU1zZ1B2cENyZWF0ZVRhYmxlEhIK",
           "CmlzX3ByaXZhdGUYASABKAgSEgoKdGFibGVfbmFtZRgCIAEoCRIRCgljaGFp",
@@ -97,8 +97,8 @@ public static partial class GameReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgQueryRecord), global::MsgQueryRecord.Parser, new[]{ "Page", "Num", "Type" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgJackpotInfo), global::MsgJackpotInfo.Parser, new[]{ "Jackpot", "FakeJackpot" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpTableInfo), global::MsgPvpTableInfo.Parser, new[]{ "TableId", "TableName", "ChairNum", "EnterNum", "PlayNum", "IsActivate", "IsPrivate", "Password", "OwnerId", "TableNo", "Value1", "Value2", "Value3", "Value4", "Value5", "Value6", "Value7", "Value8" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpRoomCfgItem), global::MsgPvpRoomCfgItem.Parser, new[]{ "LagKey", "ClinetOpen", "ValueList" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpRoomConfig), global::MsgPvpRoomConfig.Parser, new[]{ "CreateVipLimit", "ChairLimitMin", "ChairLimitMax", "MaxRound", "CanSelect", "ParaLsit" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpRoomCfgItem), global::MsgPvpRoomCfgItem.Parser, new[]{ "LagKey", "ClinetOpen", "CanSelect", "ValueList" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpRoomConfig), global::MsgPvpRoomConfig.Parser, new[]{ "CreateVipLimit", "ChairLimitMin", "ChairLimitMax", "MaxRound", "ParaLsit" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpTableList), global::MsgPvpTableList.Parser, new[]{ "TableList" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpCreateTable), global::MsgPvpCreateTable.Parser, new[]{ "IsPrivate", "TableName", "ChairNum", "Password", "ParaLsit" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpCreateTableResp), global::MsgPvpCreateTableResp.Parser, new[]{ "RetCode", "Value", "TableInfo" }, null, null, null, null),
@@ -4151,6 +4151,7 @@ public sealed partial class MsgPvpRoomCfgItem : pb::IMessage<MsgPvpRoomCfgItem>
   public MsgPvpRoomCfgItem(MsgPvpRoomCfgItem other) : this() {
     lagKey_ = other.lagKey_;
     clinetOpen_ = other.clinetOpen_;
+    canSelect_ = other.canSelect_;
     valueList_ = other.valueList_.Clone();
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
@@ -4188,10 +4189,24 @@ public sealed partial class MsgPvpRoomCfgItem : pb::IMessage<MsgPvpRoomCfgItem>
     }
   }
 
+  /// <summary>Field number for the "can_select" field.</summary>
+  public const int CanSelectFieldNumber = 3;
+  private int canSelect_;
+  /// <summary>
+  ///能否选择
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CanSelect {
+    get { return canSelect_; }
+    set {
+      canSelect_ = value;
+    }
+  }
+
   /// <summary>Field number for the "value_list" field.</summary>
-  public const int ValueListFieldNumber = 3;
+  public const int ValueListFieldNumber = 4;
   private static readonly pb::FieldCodec<int> _repeated_valueList_codec
-      = pb::FieldCodec.ForInt32(26);
+      = pb::FieldCodec.ForInt32(34);
   private readonly pbc::RepeatedField<int> valueList_ = new pbc::RepeatedField<int>();
   /// <summary>
   ///特性区间 数组
@@ -4216,6 +4231,7 @@ public sealed partial class MsgPvpRoomCfgItem : pb::IMessage<MsgPvpRoomCfgItem>
     }
     if (LagKey != other.LagKey) return false;
     if (ClinetOpen != other.ClinetOpen) return false;
+    if (CanSelect != other.CanSelect) return false;
     if(!valueList_.Equals(other.valueList_)) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
@@ -4225,6 +4241,7 @@ public sealed partial class MsgPvpRoomCfgItem : pb::IMessage<MsgPvpRoomCfgItem>
     int hash = 1;
     if (LagKey != 0) hash ^= LagKey.GetHashCode();
     if (ClinetOpen != 0) hash ^= ClinetOpen.GetHashCode();
+    if (CanSelect != 0) hash ^= CanSelect.GetHashCode();
     hash ^= valueList_.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
@@ -4250,6 +4267,10 @@ public sealed partial class MsgPvpRoomCfgItem : pb::IMessage<MsgPvpRoomCfgItem>
       output.WriteRawTag(16);
       output.WriteInt32(ClinetOpen);
     }
+    if (CanSelect != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(CanSelect);
+    }
     valueList_.WriteTo(output, _repeated_valueList_codec);
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -4268,6 +4289,10 @@ public sealed partial class MsgPvpRoomCfgItem : pb::IMessage<MsgPvpRoomCfgItem>
       output.WriteRawTag(16);
       output.WriteInt32(ClinetOpen);
     }
+    if (CanSelect != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(CanSelect);
+    }
     valueList_.WriteTo(ref output, _repeated_valueList_codec);
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
@@ -4283,6 +4308,9 @@ public sealed partial class MsgPvpRoomCfgItem : pb::IMessage<MsgPvpRoomCfgItem>
     }
     if (ClinetOpen != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(ClinetOpen);
+    }
+    if (CanSelect != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(CanSelect);
     }
     size += valueList_.CalculateSize(_repeated_valueList_codec);
     if (_unknownFields != null) {
@@ -4301,6 +4329,9 @@ public sealed partial class MsgPvpRoomCfgItem : pb::IMessage<MsgPvpRoomCfgItem>
     }
     if (other.ClinetOpen != 0) {
       ClinetOpen = other.ClinetOpen;
+    }
+    if (other.CanSelect != 0) {
+      CanSelect = other.CanSelect;
     }
     valueList_.Add(other.valueList_);
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -4325,8 +4356,12 @@ public sealed partial class MsgPvpRoomCfgItem : pb::IMessage<MsgPvpRoomCfgItem>
           ClinetOpen = input.ReadInt32();
           break;
         }
-        case 26:
         case 24: {
+          CanSelect = input.ReadInt32();
+          break;
+        }
+        case 34:
+        case 32: {
           valueList_.AddEntriesFrom(input, _repeated_valueList_codec);
           break;
         }
@@ -4352,8 +4387,12 @@ public sealed partial class MsgPvpRoomCfgItem : pb::IMessage<MsgPvpRoomCfgItem>
           ClinetOpen = input.ReadInt32();
           break;
         }
-        case 26:
         case 24: {
+          CanSelect = input.ReadInt32();
+          break;
+        }
+        case 34:
+        case 32: {
           valueList_.AddEntriesFrom(ref input, _repeated_valueList_codec);
           break;
         }
@@ -4400,7 +4439,6 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
     chairLimitMin_ = other.chairLimitMin_;
     chairLimitMax_ = other.chairLimitMax_;
     maxRound_ = other.maxRound_;
-    canSelect_ = other.canSelect_;
     paraLsit_ = other.paraLsit_.Clone();
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
@@ -4466,20 +4504,6 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
     }
   }
 
-  /// <summary>Field number for the "can_select" field.</summary>
-  public const int CanSelectFieldNumber = 5;
-  private int canSelect_;
-  /// <summary>
-  ///能否选择
-  /// </summary>
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public int CanSelect {
-    get { return canSelect_; }
-    set {
-      canSelect_ = value;
-    }
-  }
-
   /// <summary>Field number for the "para_lsit" field.</summary>
   public const int ParaLsitFieldNumber = 11;
   private static readonly pb::FieldCodec<global::MsgPvpRoomCfgItem> _repeated_paraLsit_codec
@@ -4510,7 +4534,6 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
     if (ChairLimitMin != other.ChairLimitMin) return false;
     if (ChairLimitMax != other.ChairLimitMax) return false;
     if (MaxRound != other.MaxRound) return false;
-    if (CanSelect != other.CanSelect) return false;
     if(!paraLsit_.Equals(other.paraLsit_)) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
@@ -4522,7 +4545,6 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
     if (ChairLimitMin != 0) hash ^= ChairLimitMin.GetHashCode();
     if (ChairLimitMax != 0) hash ^= ChairLimitMax.GetHashCode();
     if (MaxRound != 0) hash ^= MaxRound.GetHashCode();
-    if (CanSelect != 0) hash ^= CanSelect.GetHashCode();
     hash ^= paraLsit_.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
@@ -4556,10 +4578,6 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
       output.WriteRawTag(32);
       output.WriteInt32(MaxRound);
     }
-    if (CanSelect != 0) {
-      output.WriteRawTag(40);
-      output.WriteInt32(CanSelect);
-    }
     paraLsit_.WriteTo(output, _repeated_paraLsit_codec);
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -4586,10 +4604,6 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
       output.WriteRawTag(32);
       output.WriteInt32(MaxRound);
     }
-    if (CanSelect != 0) {
-      output.WriteRawTag(40);
-      output.WriteInt32(CanSelect);
-    }
     paraLsit_.WriteTo(ref output, _repeated_paraLsit_codec);
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
@@ -4611,9 +4625,6 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
     }
     if (MaxRound != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(MaxRound);
-    }
-    if (CanSelect != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeInt32Size(CanSelect);
     }
     size += paraLsit_.CalculateSize(_repeated_paraLsit_codec);
     if (_unknownFields != null) {
@@ -4638,9 +4649,6 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
     }
     if (other.MaxRound != 0) {
       MaxRound = other.MaxRound;
-    }
-    if (other.CanSelect != 0) {
-      CanSelect = other.CanSelect;
     }
     paraLsit_.Add(other.paraLsit_);
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -4671,10 +4679,6 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
         }
         case 32: {
           MaxRound = input.ReadInt32();
-          break;
-        }
-        case 40: {
-          CanSelect = input.ReadInt32();
           break;
         }
         case 90: {
@@ -4709,10 +4713,6 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
         }
         case 32: {
           MaxRound = input.ReadInt32();
-          break;
-        }
-        case 40: {
-          CanSelect = input.ReadInt32();
           break;
         }
         case 90: {

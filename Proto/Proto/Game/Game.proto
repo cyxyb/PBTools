@@ -125,7 +125,8 @@ message MsgPvpRoomCfgItem
 {
 	int32	lag_key				= 1;	//前端查找多语言key
 	int32	clinet_open			= 2;	//前端是否启用
-	repeated int32 value_list	= 3;	//特性区间 数组
+	int32	can_select			= 3;	//能否选择
+	repeated int32 value_list	= 4;	//特性区间 数组
 }
 
 //pvp房间配置
@@ -135,7 +136,6 @@ message MsgPvpRoomConfig
 	int32	chair_limit_min						= 2;	//创建桌子最小人数				
 	int32	chair_limit_max						= 3;	//创建桌子最大人数
 	int32	max_round							= 4;	//最大局数
-	int32	can_select							= 5;	//能否选择
 	
 	repeated MsgPvpRoomCfgItem	para_lsit		= 11;	//桌子特性列表  		//进入房间金币下限				放在para_lsit的第一位
 }

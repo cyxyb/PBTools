@@ -562,6 +562,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Game_2eproto::offsets[] PROTOB
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::MsgPvpRoomCfgItem, lag_key_),
   PROTOBUF_FIELD_OFFSET(::MsgPvpRoomCfgItem, clinet_open_),
+  PROTOBUF_FIELD_OFFSET(::MsgPvpRoomCfgItem, can_select_),
   PROTOBUF_FIELD_OFFSET(::MsgPvpRoomCfgItem, value_list_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgPvpRoomConfig, _internal_metadata_),
@@ -572,7 +573,6 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Game_2eproto::offsets[] PROTOB
   PROTOBUF_FIELD_OFFSET(::MsgPvpRoomConfig, chair_limit_min_),
   PROTOBUF_FIELD_OFFSET(::MsgPvpRoomConfig, chair_limit_max_),
   PROTOBUF_FIELD_OFFSET(::MsgPvpRoomConfig, max_round_),
-  PROTOBUF_FIELD_OFFSET(::MsgPvpRoomConfig, can_select_),
   PROTOBUF_FIELD_OFFSET(::MsgPvpRoomConfig, para_lsit_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgPvpTableList, _internal_metadata_),
@@ -683,7 +683,7 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 89, -1, sizeof(::MsgJackpotInfo)},
   { 96, -1, sizeof(::MsgPvpTableInfo)},
   { 119, -1, sizeof(::MsgPvpRoomCfgItem)},
-  { 127, -1, sizeof(::MsgPvpRoomConfig)},
+  { 128, -1, sizeof(::MsgPvpRoomConfig)},
   { 138, -1, sizeof(::MsgPvpTableList)},
   { 144, -1, sizeof(::MsgPvpCreateTable)},
   { 154, -1, sizeof(::MsgPvpCreateTableResp)},
@@ -760,12 +760,12 @@ const char descriptor_table_protodef_Game_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "\005\022\016\n\006value1\030\013 \001(\003\022\016\n\006value2\030\014 \001(\003\022\016\n\006val"
   "ue3\030\r \001(\003\022\016\n\006value4\030\016 \001(\003\022\016\n\006value5\030\017 \001("
   "\003\022\016\n\006value6\030\020 \001(\003\022\016\n\006value7\030\021 \001(\003\022\016\n\006val"
-  "ue8\030\022 \001(\003\"M\n\021MsgPvpRoomCfgItem\022\017\n\007lag_ke"
-  "y\030\001 \001(\005\022\023\n\013clinet_open\030\002 \001(\005\022\022\n\nvalue_li"
-  "st\030\003 \003(\005\"\254\001\n\020MsgPvpRoomConfig\022\030\n\020create_"
-  "vip_limit\030\001 \001(\005\022\027\n\017chair_limit_min\030\002 \001(\005"
-  "\022\027\n\017chair_limit_max\030\003 \001(\005\022\021\n\tmax_round\030\004"
-  " \001(\005\022\022\n\ncan_select\030\005 \001(\005\022%\n\tpara_lsit\030\013 "
+  "ue8\030\022 \001(\003\"a\n\021MsgPvpRoomCfgItem\022\017\n\007lag_ke"
+  "y\030\001 \001(\005\022\023\n\013clinet_open\030\002 \001(\005\022\022\n\ncan_sele"
+  "ct\030\003 \001(\005\022\022\n\nvalue_list\030\004 \003(\005\"\230\001\n\020MsgPvpR"
+  "oomConfig\022\030\n\020create_vip_limit\030\001 \001(\005\022\027\n\017c"
+  "hair_limit_min\030\002 \001(\005\022\027\n\017chair_limit_max\030"
+  "\003 \001(\005\022\021\n\tmax_round\030\004 \001(\005\022%\n\tpara_lsit\030\013 "
   "\003(\0132\022.MsgPvpRoomCfgItem\"7\n\017MsgPvpTableLi"
   "st\022$\n\ntable_list\030\001 \003(\0132\020.MsgPvpTableInfo"
   "\"s\n\021MsgPvpCreateTable\022\022\n\nis_private\030\001 \001("
@@ -4531,16 +4531,16 @@ MsgPvpRoomCfgItem::MsgPvpRoomCfgItem(const MsgPvpRoomCfgItem& from)
       value_list_(from.value_list_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&lag_key_, &from.lag_key_,
-    static_cast<size_t>(reinterpret_cast<char*>(&clinet_open_) -
-    reinterpret_cast<char*>(&lag_key_)) + sizeof(clinet_open_));
+    static_cast<size_t>(reinterpret_cast<char*>(&can_select_) -
+    reinterpret_cast<char*>(&lag_key_)) + sizeof(can_select_));
   // @@protoc_insertion_point(copy_constructor:MsgPvpRoomCfgItem)
 }
 
 void MsgPvpRoomCfgItem::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&lag_key_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&clinet_open_) -
-      reinterpret_cast<char*>(&lag_key_)) + sizeof(clinet_open_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&can_select_) -
+      reinterpret_cast<char*>(&lag_key_)) + sizeof(can_select_));
 }
 
 MsgPvpRoomCfgItem::~MsgPvpRoomCfgItem() {
@@ -4576,8 +4576,8 @@ void MsgPvpRoomCfgItem::Clear() {
 
   value_list_.Clear();
   ::memset(&lag_key_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&clinet_open_) -
-      reinterpret_cast<char*>(&lag_key_)) + sizeof(clinet_open_));
+      reinterpret_cast<char*>(&can_select_) -
+      reinterpret_cast<char*>(&lag_key_)) + sizeof(can_select_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -4602,12 +4602,19 @@ const char* MsgPvpRoomCfgItem::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // repeated int32 value_list = 3;
+      // int32 can_select = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          can_select_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated int32 value_list = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_value_list(), ptr, ctx);
           CHK_(ptr);
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24) {
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32) {
           _internal_add_value_list(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
@@ -4652,12 +4659,18 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_clinet_open(), target);
   }
 
-  // repeated int32 value_list = 3;
+  // int32 can_select = 3;
+  if (this->can_select() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_can_select(), target);
+  }
+
+  // repeated int32 value_list = 4;
   {
     int byte_size = _value_list_cached_byte_size_.load(std::memory_order_relaxed);
     if (byte_size > 0) {
       target = stream->WriteInt32Packed(
-          3, _internal_value_list(), byte_size, target);
+          4, _internal_value_list(), byte_size, target);
     }
   }
 
@@ -4677,7 +4690,7 @@ size_t MsgPvpRoomCfgItem::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated int32 value_list = 3;
+  // repeated int32 value_list = 4;
   {
     size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       Int32Size(this->value_list_);
@@ -4704,6 +4717,13 @@ size_t MsgPvpRoomCfgItem::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_clinet_open());
+  }
+
+  // int32 can_select = 3;
+  if (this->can_select() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_can_select());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -4744,6 +4764,9 @@ void MsgPvpRoomCfgItem::MergeFrom(const MsgPvpRoomCfgItem& from) {
   if (from.clinet_open() != 0) {
     _internal_set_clinet_open(from._internal_clinet_open());
   }
+  if (from.can_select() != 0) {
+    _internal_set_can_select(from._internal_can_select());
+  }
 }
 
 void MsgPvpRoomCfgItem::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -4769,8 +4792,8 @@ void MsgPvpRoomCfgItem::InternalSwap(MsgPvpRoomCfgItem* other) {
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   value_list_.InternalSwap(&other->value_list_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgPvpRoomCfgItem, clinet_open_)
-      + sizeof(MsgPvpRoomCfgItem::clinet_open_)
+      PROTOBUF_FIELD_OFFSET(MsgPvpRoomCfgItem, can_select_)
+      + sizeof(MsgPvpRoomCfgItem::can_select_)
       - PROTOBUF_FIELD_OFFSET(MsgPvpRoomCfgItem, lag_key_)>(
           reinterpret_cast<char*>(&lag_key_),
           reinterpret_cast<char*>(&other->lag_key_));
@@ -4799,8 +4822,8 @@ MsgPvpRoomConfig::MsgPvpRoomConfig(const MsgPvpRoomConfig& from)
       para_lsit_(from.para_lsit_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&create_vip_limit_, &from.create_vip_limit_,
-    static_cast<size_t>(reinterpret_cast<char*>(&can_select_) -
-    reinterpret_cast<char*>(&create_vip_limit_)) + sizeof(can_select_));
+    static_cast<size_t>(reinterpret_cast<char*>(&max_round_) -
+    reinterpret_cast<char*>(&create_vip_limit_)) + sizeof(max_round_));
   // @@protoc_insertion_point(copy_constructor:MsgPvpRoomConfig)
 }
 
@@ -4808,8 +4831,8 @@ void MsgPvpRoomConfig::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MsgPvpRoomConfig_Game_2eproto.base);
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&create_vip_limit_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&can_select_) -
-      reinterpret_cast<char*>(&create_vip_limit_)) + sizeof(can_select_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&max_round_) -
+      reinterpret_cast<char*>(&create_vip_limit_)) + sizeof(max_round_));
 }
 
 MsgPvpRoomConfig::~MsgPvpRoomConfig() {
@@ -4845,8 +4868,8 @@ void MsgPvpRoomConfig::Clear() {
 
   para_lsit_.Clear();
   ::memset(&create_vip_limit_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&can_select_) -
-      reinterpret_cast<char*>(&create_vip_limit_)) + sizeof(can_select_));
+      reinterpret_cast<char*>(&max_round_) -
+      reinterpret_cast<char*>(&create_vip_limit_)) + sizeof(max_round_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -4882,13 +4905,6 @@ const char* MsgPvpRoomConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           max_round_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 can_select = 5;
-      case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
-          can_select_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -4956,12 +4972,6 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_max_round(), target);
   }
 
-  // int32 can_select = 5;
-  if (this->can_select() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_can_select(), target);
-  }
-
   // repeated .MsgPvpRoomCfgItem para_lsit = 11;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_para_lsit_size()); i < n; i++) {
@@ -5021,13 +5031,6 @@ size_t MsgPvpRoomConfig::ByteSizeLong() const {
         this->_internal_max_round());
   }
 
-  // int32 can_select = 5;
-  if (this->can_select() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_can_select());
-  }
-
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
         _internal_metadata_, total_size, &_cached_size_);
@@ -5072,9 +5075,6 @@ void MsgPvpRoomConfig::MergeFrom(const MsgPvpRoomConfig& from) {
   if (from.max_round() != 0) {
     _internal_set_max_round(from._internal_max_round());
   }
-  if (from.can_select() != 0) {
-    _internal_set_can_select(from._internal_can_select());
-  }
 }
 
 void MsgPvpRoomConfig::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -5100,8 +5100,8 @@ void MsgPvpRoomConfig::InternalSwap(MsgPvpRoomConfig* other) {
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   para_lsit_.InternalSwap(&other->para_lsit_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgPvpRoomConfig, can_select_)
-      + sizeof(MsgPvpRoomConfig::can_select_)
+      PROTOBUF_FIELD_OFFSET(MsgPvpRoomConfig, max_round_)
+      + sizeof(MsgPvpRoomConfig::max_round_)
       - PROTOBUF_FIELD_OFFSET(MsgPvpRoomConfig, create_vip_limit_)>(
           reinterpret_cast<char*>(&create_vip_limit_),
           reinterpret_cast<char*>(&other->create_vip_limit_));
