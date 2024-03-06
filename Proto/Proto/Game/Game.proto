@@ -135,7 +135,8 @@ message MsgPvpRoomConfig
 	int32	chair_limit_min						= 2;	//创建桌子最小人数				
 	int32	chair_limit_max						= 3;	//创建桌子最大人数
 	int32	max_round							= 4;	//最大局数
-
+	int32	can_select							= 5;	//能否选择
+	
 	repeated MsgPvpRoomCfgItem	para_lsit		= 11;	//桌子特性列表  		//进入房间金币下限				放在para_lsit的第一位
 }
 
