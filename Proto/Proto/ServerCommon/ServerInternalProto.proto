@@ -332,8 +332,9 @@ message MsgDBWriteScore
 	int32		is_up_rank		= 4;	//是否更新排行榜
 	int32		table_id		= 5;	//桌子id
 	int32		table_no		= 6;	//局号
-	int64		tax_score		= 7;	//本局税收	
-	string		game_details	= 8;	//游戏详情
+	int64		tax_score		= 7;	//本局税收
+	int32		valid_bet		= 8;	//打码量
+	string		game_details	= 9;	//游戏详情
 }
 
 //写分返回
@@ -410,7 +411,7 @@ message MsgStorageCode
 	int32		user_id				= 1;	//玩家ID
 	string		phone				= 2;	//手机号
 	int32		code				= 3;	//验证码
-	int32		type		 		= 4;	//类型
+	int32		type		 		= 4;	//类型 0注册 1找回密码 2绑定手机
 };
 
 //绑定手机

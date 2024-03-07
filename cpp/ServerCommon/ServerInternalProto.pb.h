@@ -6619,7 +6619,7 @@ class MsgDBWriteScore PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kGameDetailsFieldNumber = 8,
+    kGameDetailsFieldNumber = 9,
     kUserIdFieldNumber = 1,
     kBetFieldNumber = 2,
     kScoreFieldNumber = 3,
@@ -6627,8 +6627,9 @@ class MsgDBWriteScore PROTOBUF_FINAL :
     kTableIdFieldNumber = 5,
     kTaxScoreFieldNumber = 7,
     kTableNoFieldNumber = 6,
+    kValidBetFieldNumber = 8,
   };
-  // string game_details = 8;
+  // string game_details = 9;
   void clear_game_details();
   const std::string& game_details() const;
   void set_game_details(const std::string& value);
@@ -6707,6 +6708,15 @@ class MsgDBWriteScore PROTOBUF_FINAL :
   void _internal_set_table_no(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 valid_bet = 8;
+  void clear_valid_bet();
+  ::PROTOBUF_NAMESPACE_ID::int32 valid_bet() const;
+  void set_valid_bet(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_valid_bet() const;
+  void _internal_set_valid_bet(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgDBWriteScore)
  private:
   class _Internal;
@@ -6722,6 +6732,7 @@ class MsgDBWriteScore PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 table_id_;
   ::PROTOBUF_NAMESPACE_ID::int64 tax_score_;
   ::PROTOBUF_NAMESPACE_ID::int32 table_no_;
+  ::PROTOBUF_NAMESPACE_ID::int32 valid_bet_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -17038,7 +17049,27 @@ inline void MsgDBWriteScore::set_tax_score(::PROTOBUF_NAMESPACE_ID::int64 value)
   // @@protoc_insertion_point(field_set:MsgDBWriteScore.tax_score)
 }
 
-// string game_details = 8;
+// int32 valid_bet = 8;
+inline void MsgDBWriteScore::clear_valid_bet() {
+  valid_bet_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScore::_internal_valid_bet() const {
+  return valid_bet_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBWriteScore::valid_bet() const {
+  // @@protoc_insertion_point(field_get:MsgDBWriteScore.valid_bet)
+  return _internal_valid_bet();
+}
+inline void MsgDBWriteScore::_internal_set_valid_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  valid_bet_ = value;
+}
+inline void MsgDBWriteScore::set_valid_bet(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_valid_bet(value);
+  // @@protoc_insertion_point(field_set:MsgDBWriteScore.valid_bet)
+}
+
+// string game_details = 9;
 inline void MsgDBWriteScore::clear_game_details() {
   game_details_.ClearToEmpty();
 }
