@@ -235,6 +235,8 @@ message MsgVIPInfo
 	int32		avatar_frame				= 8;	//头像框奖励
 	int32		award_gold					= 9;	//奖励金币
 	bool		one_to_one					= 10;	//一对一服务
+	int32		withdraw_total				= 11;	//每日总次数
+	int32		withdraw_free				= 12;	//每日免费提现
 }
 
 //vip配置信息

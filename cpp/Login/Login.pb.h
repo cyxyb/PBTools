@@ -4804,6 +4804,8 @@ class MsgVIPInfo PROTOBUF_FINAL :
     kWorldChatFieldNumber = 6,
     kOneToOneFieldNumber = 10,
     kAwardGoldFieldNumber = 9,
+    kWithdrawTotalFieldNumber = 11,
+    kWithdrawFreeFieldNumber = 12,
   };
   // int64 need_exp = 2;
   void clear_need_exp();
@@ -4895,6 +4897,24 @@ class MsgVIPInfo PROTOBUF_FINAL :
   void _internal_set_award_gold(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 withdraw_total = 11;
+  void clear_withdraw_total();
+  ::PROTOBUF_NAMESPACE_ID::int32 withdraw_total() const;
+  void set_withdraw_total(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_withdraw_total() const;
+  void _internal_set_withdraw_total(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 withdraw_free = 12;
+  void clear_withdraw_free();
+  ::PROTOBUF_NAMESPACE_ID::int32 withdraw_free() const;
+  void set_withdraw_free(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_withdraw_free() const;
+  void _internal_set_withdraw_free(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgVIPInfo)
  private:
   class _Internal;
@@ -4912,6 +4932,8 @@ class MsgVIPInfo PROTOBUF_FINAL :
   bool world_chat_;
   bool one_to_one_;
   ::PROTOBUF_NAMESPACE_ID::int32 award_gold_;
+  ::PROTOBUF_NAMESPACE_ID::int32 withdraw_total_;
+  ::PROTOBUF_NAMESPACE_ID::int32 withdraw_free_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -17770,6 +17792,46 @@ inline void MsgVIPInfo::_internal_set_one_to_one(bool value) {
 inline void MsgVIPInfo::set_one_to_one(bool value) {
   _internal_set_one_to_one(value);
   // @@protoc_insertion_point(field_set:MsgVIPInfo.one_to_one)
+}
+
+// int32 withdraw_total = 11;
+inline void MsgVIPInfo::clear_withdraw_total() {
+  withdraw_total_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgVIPInfo::_internal_withdraw_total() const {
+  return withdraw_total_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgVIPInfo::withdraw_total() const {
+  // @@protoc_insertion_point(field_get:MsgVIPInfo.withdraw_total)
+  return _internal_withdraw_total();
+}
+inline void MsgVIPInfo::_internal_set_withdraw_total(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  withdraw_total_ = value;
+}
+inline void MsgVIPInfo::set_withdraw_total(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_withdraw_total(value);
+  // @@protoc_insertion_point(field_set:MsgVIPInfo.withdraw_total)
+}
+
+// int32 withdraw_free = 12;
+inline void MsgVIPInfo::clear_withdraw_free() {
+  withdraw_free_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgVIPInfo::_internal_withdraw_free() const {
+  return withdraw_free_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgVIPInfo::withdraw_free() const {
+  // @@protoc_insertion_point(field_get:MsgVIPInfo.withdraw_free)
+  return _internal_withdraw_free();
+}
+inline void MsgVIPInfo::_internal_set_withdraw_free(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  withdraw_free_ = value;
+}
+inline void MsgVIPInfo::set_withdraw_free(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_withdraw_free(value);
+  // @@protoc_insertion_point(field_set:MsgVIPInfo.withdraw_free)
 }
 
 // -------------------------------------------------------------------
