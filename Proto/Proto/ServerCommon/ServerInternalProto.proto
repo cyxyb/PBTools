@@ -114,6 +114,7 @@ message MsgRelayServerAddMail
 	int64	num					= 4;		//附件数量
 	int32	type				= 5;		//附件类型
 	int32	from_user_id		= 6;		//发送者ID
+	int32	coding_type			= 7;		//打码量类型
 }
 
 //充值成功回调
