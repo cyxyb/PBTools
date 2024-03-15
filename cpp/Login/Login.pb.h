@@ -46,7 +46,7 @@ struct TableStruct_Login_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[73]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[78]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -89,6 +89,9 @@ extern MsgCDKExchangeRespDefaultTypeInternal _MsgCDKExchangeResp_default_instanc
 class MsgCheckInInfo;
 class MsgCheckInInfoDefaultTypeInternal;
 extern MsgCheckInInfoDefaultTypeInternal _MsgCheckInInfo_default_instance_;
+class MsgClaimRecord;
+class MsgClaimRecordDefaultTypeInternal;
+extern MsgClaimRecordDefaultTypeInternal _MsgClaimRecord_default_instance_;
 class MsgCommonKV;
 class MsgCommonKVDefaultTypeInternal;
 extern MsgCommonKVDefaultTypeInternal _MsgCommonKV_default_instance_;
@@ -101,6 +104,12 @@ extern MsgForgetPasswordDefaultTypeInternal _MsgForgetPassword_default_instance_
 class MsgGetAvatarInfo;
 class MsgGetAvatarInfoDefaultTypeInternal;
 extern MsgGetAvatarInfoDefaultTypeInternal _MsgGetAvatarInfo_default_instance_;
+class MsgGetClaimRecord;
+class MsgGetClaimRecordDefaultTypeInternal;
+extern MsgGetClaimRecordDefaultTypeInternal _MsgGetClaimRecord_default_instance_;
+class MsgGetClaimRecordResp;
+class MsgGetClaimRecordRespDefaultTypeInternal;
+extern MsgGetClaimRecordRespDefaultTypeInternal _MsgGetClaimRecordResp_default_instance_;
 class MsgGetPhoneCode;
 class MsgGetPhoneCodeDefaultTypeInternal;
 extern MsgGetPhoneCodeDefaultTypeInternal _MsgGetPhoneCode_default_instance_;
@@ -176,6 +185,12 @@ extern MsgPlayerLoginRespDefaultTypeInternal _MsgPlayerLoginResp_default_instanc
 class MsgQueryCelebrityGoldCoinResp;
 class MsgQueryCelebrityGoldCoinRespDefaultTypeInternal;
 extern MsgQueryCelebrityGoldCoinRespDefaultTypeInternal _MsgQueryCelebrityGoldCoinResp_default_instance_;
+class MsgQueryPerformance;
+class MsgQueryPerformanceDefaultTypeInternal;
+extern MsgQueryPerformanceDefaultTypeInternal _MsgQueryPerformance_default_instance_;
+class MsgQueryPerformanceResp;
+class MsgQueryPerformanceRespDefaultTypeInternal;
+extern MsgQueryPerformanceRespDefaultTypeInternal _MsgQueryPerformanceResp_default_instance_;
 class MsgQueryRebateRecord;
 class MsgQueryRebateRecordDefaultTypeInternal;
 extern MsgQueryRebateRecordDefaultTypeInternal _MsgQueryRebateRecord_default_instance_;
@@ -285,10 +300,13 @@ template<> ::MsgBindPhone* Arena::CreateMaybeMessage<::MsgBindPhone>(Arena*);
 template<> ::MsgCDKExchange* Arena::CreateMaybeMessage<::MsgCDKExchange>(Arena*);
 template<> ::MsgCDKExchangeResp* Arena::CreateMaybeMessage<::MsgCDKExchangeResp>(Arena*);
 template<> ::MsgCheckInInfo* Arena::CreateMaybeMessage<::MsgCheckInInfo>(Arena*);
+template<> ::MsgClaimRecord* Arena::CreateMaybeMessage<::MsgClaimRecord>(Arena*);
 template<> ::MsgCommonKV* Arena::CreateMaybeMessage<::MsgCommonKV>(Arena*);
 template<> ::MsgDotRechargeResp* Arena::CreateMaybeMessage<::MsgDotRechargeResp>(Arena*);
 template<> ::MsgForgetPassword* Arena::CreateMaybeMessage<::MsgForgetPassword>(Arena*);
 template<> ::MsgGetAvatarInfo* Arena::CreateMaybeMessage<::MsgGetAvatarInfo>(Arena*);
+template<> ::MsgGetClaimRecord* Arena::CreateMaybeMessage<::MsgGetClaimRecord>(Arena*);
+template<> ::MsgGetClaimRecordResp* Arena::CreateMaybeMessage<::MsgGetClaimRecordResp>(Arena*);
 template<> ::MsgGetPhoneCode* Arena::CreateMaybeMessage<::MsgGetPhoneCode>(Arena*);
 template<> ::MsgGetRank* Arena::CreateMaybeMessage<::MsgGetRank>(Arena*);
 template<> ::MsgGetWeekMonthInfoResp* Arena::CreateMaybeMessage<::MsgGetWeekMonthInfoResp>(Arena*);
@@ -314,6 +332,8 @@ template<> ::MsgPlayerItem* Arena::CreateMaybeMessage<::MsgPlayerItem>(Arena*);
 template<> ::MsgPlayerLogin* Arena::CreateMaybeMessage<::MsgPlayerLogin>(Arena*);
 template<> ::MsgPlayerLoginResp* Arena::CreateMaybeMessage<::MsgPlayerLoginResp>(Arena*);
 template<> ::MsgQueryCelebrityGoldCoinResp* Arena::CreateMaybeMessage<::MsgQueryCelebrityGoldCoinResp>(Arena*);
+template<> ::MsgQueryPerformance* Arena::CreateMaybeMessage<::MsgQueryPerformance>(Arena*);
+template<> ::MsgQueryPerformanceResp* Arena::CreateMaybeMessage<::MsgQueryPerformanceResp>(Arena*);
 template<> ::MsgQueryRebateRecord* Arena::CreateMaybeMessage<::MsgQueryRebateRecord>(Arena*);
 template<> ::MsgQueryRebateRecordInfo* Arena::CreateMaybeMessage<::MsgQueryRebateRecordInfo>(Arena*);
 template<> ::MsgQueryRechargeGiveInfo* Arena::CreateMaybeMessage<::MsgQueryRechargeGiveInfo>(Arena*);
@@ -11358,6 +11378,9 @@ class MsgInfiniteAgentQueryMyInfoResp PROTOBUF_FINAL :
     kTotalRebateFieldNumber = 5,
     kGameRebateFieldNumber = 6,
     kBindIdFieldNumber = 3,
+    kTodayAddNumFieldNumber = 10,
+    kTodayPerformanceRebateFieldNumber = 8,
+    kTodayGameRebateFieldNumber = 9,
   };
   // string bind_invite_code = 7;
   void clear_bind_invite_code();
@@ -11429,6 +11452,33 @@ class MsgInfiniteAgentQueryMyInfoResp PROTOBUF_FINAL :
   void _internal_set_bind_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 today_add_num = 10;
+  void clear_today_add_num();
+  ::PROTOBUF_NAMESPACE_ID::int32 today_add_num() const;
+  void set_today_add_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_today_add_num() const;
+  void _internal_set_today_add_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int64 today_performance_rebate = 8;
+  void clear_today_performance_rebate();
+  ::PROTOBUF_NAMESPACE_ID::int64 today_performance_rebate() const;
+  void set_today_performance_rebate(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_today_performance_rebate() const;
+  void _internal_set_today_performance_rebate(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int64 today_game_rebate = 9;
+  void clear_today_game_rebate();
+  ::PROTOBUF_NAMESPACE_ID::int64 today_game_rebate() const;
+  void set_today_game_rebate(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_today_game_rebate() const;
+  void _internal_set_today_game_rebate(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgInfiniteAgentQueryMyInfoResp)
  private:
   class _Internal;
@@ -11443,6 +11493,9 @@ class MsgInfiniteAgentQueryMyInfoResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int64 total_rebate_;
   ::PROTOBUF_NAMESPACE_ID::int64 game_rebate_;
   ::PROTOBUF_NAMESPACE_ID::int32 bind_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 today_add_num_;
+  ::PROTOBUF_NAMESPACE_ID::int64 today_performance_rebate_;
+  ::PROTOBUF_NAMESPACE_ID::int64 today_game_rebate_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -11723,7 +11776,9 @@ class InfiniteAgentQuerySubInfo PROTOBUF_FINAL :
     kTotalTaxFieldNumber = 3,
     kTodayTaxFieldNumber = 4,
     kTodayRatioFieldNumber = 5,
-    kAgentRatioFieldNumber = 6,
+    kTotalRatioFieldNumber = 6,
+    kAgentRatioFieldNumber = 7,
+    kRankFieldNumber = 8,
   };
   // int32 user_id = 1;
   void clear_user_id();
@@ -11770,13 +11825,31 @@ class InfiniteAgentQuerySubInfo PROTOBUF_FINAL :
   void _internal_set_today_ratio(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int32 agent_ratio = 6;
+  // int64 total_ratio = 6;
+  void clear_total_ratio();
+  ::PROTOBUF_NAMESPACE_ID::int64 total_ratio() const;
+  void set_total_ratio(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_total_ratio() const;
+  void _internal_set_total_ratio(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // int32 agent_ratio = 7;
   void clear_agent_ratio();
   ::PROTOBUF_NAMESPACE_ID::int32 agent_ratio() const;
   void set_agent_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
   ::PROTOBUF_NAMESPACE_ID::int32 _internal_agent_ratio() const;
   void _internal_set_agent_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 rank = 8;
+  void clear_rank();
+  ::PROTOBUF_NAMESPACE_ID::int32 rank() const;
+  void set_rank(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_rank() const;
+  void _internal_set_rank(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:InfiniteAgentQuerySubInfo)
@@ -11791,7 +11864,9 @@ class InfiniteAgentQuerySubInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int64 total_tax_;
   ::PROTOBUF_NAMESPACE_ID::int64 today_tax_;
   ::PROTOBUF_NAMESPACE_ID::int64 today_ratio_;
+  ::PROTOBUF_NAMESPACE_ID::int64 total_ratio_;
   ::PROTOBUF_NAMESPACE_ID::int32 agent_ratio_;
+  ::PROTOBUF_NAMESPACE_ID::int32 rank_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -12460,6 +12535,784 @@ class MsgRecviveAgentRebateResp PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
+class MsgGetClaimRecord PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgGetClaimRecord) */ {
+ public:
+  inline MsgGetClaimRecord() : MsgGetClaimRecord(nullptr) {}
+  virtual ~MsgGetClaimRecord();
+
+  MsgGetClaimRecord(const MsgGetClaimRecord& from);
+  MsgGetClaimRecord(MsgGetClaimRecord&& from) noexcept
+    : MsgGetClaimRecord() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgGetClaimRecord& operator=(const MsgGetClaimRecord& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgGetClaimRecord& operator=(MsgGetClaimRecord&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgGetClaimRecord& default_instance();
+
+  static inline const MsgGetClaimRecord* internal_default_instance() {
+    return reinterpret_cast<const MsgGetClaimRecord*>(
+               &_MsgGetClaimRecord_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    66;
+
+  friend void swap(MsgGetClaimRecord& a, MsgGetClaimRecord& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgGetClaimRecord* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgGetClaimRecord* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgGetClaimRecord* New() const final {
+    return CreateMaybeMessage<MsgGetClaimRecord>(nullptr);
+  }
+
+  MsgGetClaimRecord* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgGetClaimRecord>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgGetClaimRecord& from);
+  void MergeFrom(const MsgGetClaimRecord& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgGetClaimRecord* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgGetClaimRecord";
+  }
+  protected:
+  explicit MsgGetClaimRecord(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kUserIdFieldNumber = 1,
+    kCurrentPageFieldNumber = 2,
+    kMaxRowFieldNumber = 3,
+  };
+  // int32 user_id = 1;
+  void clear_user_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
+  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
+  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 current_page = 2;
+  void clear_current_page();
+  ::PROTOBUF_NAMESPACE_ID::int32 current_page() const;
+  void set_current_page(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_current_page() const;
+  void _internal_set_current_page(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 max_row = 3;
+  void clear_max_row();
+  ::PROTOBUF_NAMESPACE_ID::int32 max_row() const;
+  void set_max_row(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_max_row() const;
+  void _internal_set_max_row(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgGetClaimRecord)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 current_page_;
+  ::PROTOBUF_NAMESPACE_ID::int32 max_row_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgClaimRecord PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgClaimRecord) */ {
+ public:
+  inline MsgClaimRecord() : MsgClaimRecord(nullptr) {}
+  virtual ~MsgClaimRecord();
+
+  MsgClaimRecord(const MsgClaimRecord& from);
+  MsgClaimRecord(MsgClaimRecord&& from) noexcept
+    : MsgClaimRecord() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgClaimRecord& operator=(const MsgClaimRecord& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgClaimRecord& operator=(MsgClaimRecord&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgClaimRecord& default_instance();
+
+  static inline const MsgClaimRecord* internal_default_instance() {
+    return reinterpret_cast<const MsgClaimRecord*>(
+               &_MsgClaimRecord_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    67;
+
+  friend void swap(MsgClaimRecord& a, MsgClaimRecord& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgClaimRecord* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgClaimRecord* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgClaimRecord* New() const final {
+    return CreateMaybeMessage<MsgClaimRecord>(nullptr);
+  }
+
+  MsgClaimRecord* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgClaimRecord>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgClaimRecord& from);
+  void MergeFrom(const MsgClaimRecord& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgClaimRecord* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgClaimRecord";
+  }
+  protected:
+  explicit MsgClaimRecord(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kDateTimeFieldNumber = 1,
+    kGoldFieldNumber = 2,
+  };
+  // string date_time = 1;
+  void clear_date_time();
+  const std::string& date_time() const;
+  void set_date_time(const std::string& value);
+  void set_date_time(std::string&& value);
+  void set_date_time(const char* value);
+  void set_date_time(const char* value, size_t size);
+  std::string* mutable_date_time();
+  std::string* release_date_time();
+  void set_allocated_date_time(std::string* date_time);
+  private:
+  const std::string& _internal_date_time() const;
+  void _internal_set_date_time(const std::string& value);
+  std::string* _internal_mutable_date_time();
+  public:
+
+  // int32 gold = 2;
+  void clear_gold();
+  ::PROTOBUF_NAMESPACE_ID::int32 gold() const;
+  void set_gold(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_gold() const;
+  void _internal_set_gold(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgClaimRecord)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr date_time_;
+  ::PROTOBUF_NAMESPACE_ID::int32 gold_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgGetClaimRecordResp PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgGetClaimRecordResp) */ {
+ public:
+  inline MsgGetClaimRecordResp() : MsgGetClaimRecordResp(nullptr) {}
+  virtual ~MsgGetClaimRecordResp();
+
+  MsgGetClaimRecordResp(const MsgGetClaimRecordResp& from);
+  MsgGetClaimRecordResp(MsgGetClaimRecordResp&& from) noexcept
+    : MsgGetClaimRecordResp() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgGetClaimRecordResp& operator=(const MsgGetClaimRecordResp& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgGetClaimRecordResp& operator=(MsgGetClaimRecordResp&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgGetClaimRecordResp& default_instance();
+
+  static inline const MsgGetClaimRecordResp* internal_default_instance() {
+    return reinterpret_cast<const MsgGetClaimRecordResp*>(
+               &_MsgGetClaimRecordResp_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    68;
+
+  friend void swap(MsgGetClaimRecordResp& a, MsgGetClaimRecordResp& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgGetClaimRecordResp* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgGetClaimRecordResp* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgGetClaimRecordResp* New() const final {
+    return CreateMaybeMessage<MsgGetClaimRecordResp>(nullptr);
+  }
+
+  MsgGetClaimRecordResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgGetClaimRecordResp>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgGetClaimRecordResp& from);
+  void MergeFrom(const MsgGetClaimRecordResp& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgGetClaimRecordResp* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgGetClaimRecordResp";
+  }
+  protected:
+  explicit MsgGetClaimRecordResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kInfoFieldNumber = 1,
+  };
+  // repeated .MsgClaimRecord info = 1;
+  int info_size() const;
+  private:
+  int _internal_info_size() const;
+  public:
+  void clear_info();
+  ::MsgClaimRecord* mutable_info(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgClaimRecord >*
+      mutable_info();
+  private:
+  const ::MsgClaimRecord& _internal_info(int index) const;
+  ::MsgClaimRecord* _internal_add_info();
+  public:
+  const ::MsgClaimRecord& info(int index) const;
+  ::MsgClaimRecord* add_info();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgClaimRecord >&
+      info() const;
+
+  // @@protoc_insertion_point(class_scope:MsgGetClaimRecordResp)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgClaimRecord > info_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgQueryPerformance PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgQueryPerformance) */ {
+ public:
+  inline MsgQueryPerformance() : MsgQueryPerformance(nullptr) {}
+  virtual ~MsgQueryPerformance();
+
+  MsgQueryPerformance(const MsgQueryPerformance& from);
+  MsgQueryPerformance(MsgQueryPerformance&& from) noexcept
+    : MsgQueryPerformance() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgQueryPerformance& operator=(const MsgQueryPerformance& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgQueryPerformance& operator=(MsgQueryPerformance&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgQueryPerformance& default_instance();
+
+  static inline const MsgQueryPerformance* internal_default_instance() {
+    return reinterpret_cast<const MsgQueryPerformance*>(
+               &_MsgQueryPerformance_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    69;
+
+  friend void swap(MsgQueryPerformance& a, MsgQueryPerformance& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgQueryPerformance* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgQueryPerformance* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgQueryPerformance* New() const final {
+    return CreateMaybeMessage<MsgQueryPerformance>(nullptr);
+  }
+
+  MsgQueryPerformance* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgQueryPerformance>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgQueryPerformance& from);
+  void MergeFrom(const MsgQueryPerformance& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgQueryPerformance* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgQueryPerformance";
+  }
+  protected:
+  explicit MsgQueryPerformance(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kDateTimeFieldNumber = 1,
+    kTotalGoldFieldNumber = 2,
+    kGameRebateFieldNumber = 3,
+    kAgentRabeteFieldNumber = 4,
+  };
+  // string date_time = 1;
+  void clear_date_time();
+  const std::string& date_time() const;
+  void set_date_time(const std::string& value);
+  void set_date_time(std::string&& value);
+  void set_date_time(const char* value);
+  void set_date_time(const char* value, size_t size);
+  std::string* mutable_date_time();
+  std::string* release_date_time();
+  void set_allocated_date_time(std::string* date_time);
+  private:
+  const std::string& _internal_date_time() const;
+  void _internal_set_date_time(const std::string& value);
+  std::string* _internal_mutable_date_time();
+  public:
+
+  // int32 total_gold = 2;
+  void clear_total_gold();
+  ::PROTOBUF_NAMESPACE_ID::int32 total_gold() const;
+  void set_total_gold(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_total_gold() const;
+  void _internal_set_total_gold(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 game_rebate = 3;
+  void clear_game_rebate();
+  ::PROTOBUF_NAMESPACE_ID::int32 game_rebate() const;
+  void set_game_rebate(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_game_rebate() const;
+  void _internal_set_game_rebate(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 agent_rabete = 4;
+  void clear_agent_rabete();
+  ::PROTOBUF_NAMESPACE_ID::int32 agent_rabete() const;
+  void set_agent_rabete(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_agent_rabete() const;
+  void _internal_set_agent_rabete(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgQueryPerformance)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr date_time_;
+  ::PROTOBUF_NAMESPACE_ID::int32 total_gold_;
+  ::PROTOBUF_NAMESPACE_ID::int32 game_rebate_;
+  ::PROTOBUF_NAMESPACE_ID::int32 agent_rabete_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
+// -------------------------------------------------------------------
+
+class MsgQueryPerformanceResp PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgQueryPerformanceResp) */ {
+ public:
+  inline MsgQueryPerformanceResp() : MsgQueryPerformanceResp(nullptr) {}
+  virtual ~MsgQueryPerformanceResp();
+
+  MsgQueryPerformanceResp(const MsgQueryPerformanceResp& from);
+  MsgQueryPerformanceResp(MsgQueryPerformanceResp&& from) noexcept
+    : MsgQueryPerformanceResp() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgQueryPerformanceResp& operator=(const MsgQueryPerformanceResp& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgQueryPerformanceResp& operator=(MsgQueryPerformanceResp&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgQueryPerformanceResp& default_instance();
+
+  static inline const MsgQueryPerformanceResp* internal_default_instance() {
+    return reinterpret_cast<const MsgQueryPerformanceResp*>(
+               &_MsgQueryPerformanceResp_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    70;
+
+  friend void swap(MsgQueryPerformanceResp& a, MsgQueryPerformanceResp& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgQueryPerformanceResp* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgQueryPerformanceResp* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgQueryPerformanceResp* New() const final {
+    return CreateMaybeMessage<MsgQueryPerformanceResp>(nullptr);
+  }
+
+  MsgQueryPerformanceResp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgQueryPerformanceResp>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgQueryPerformanceResp& from);
+  void MergeFrom(const MsgQueryPerformanceResp& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgQueryPerformanceResp* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgQueryPerformanceResp";
+  }
+  protected:
+  explicit MsgQueryPerformanceResp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kInfoFieldNumber = 1,
+  };
+  // repeated .MsgQueryPerformance info = 1;
+  int info_size() const;
+  private:
+  int _internal_info_size() const;
+  public:
+  void clear_info();
+  ::MsgQueryPerformance* mutable_info(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgQueryPerformance >*
+      mutable_info();
+  private:
+  const ::MsgQueryPerformance& _internal_info(int index) const;
+  ::MsgQueryPerformance* _internal_add_info();
+  public:
+  const ::MsgQueryPerformance& info(int index) const;
+  ::MsgQueryPerformance* add_info();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgQueryPerformance >&
+      info() const;
+
+  // @@protoc_insertion_point(class_scope:MsgQueryPerformanceResp)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgQueryPerformance > info_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
+// -------------------------------------------------------------------
+
 class MsgWeekMonthInfo PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgWeekMonthInfo) */ {
  public:
@@ -12501,7 +13354,7 @@ class MsgWeekMonthInfo PROTOBUF_FINAL :
                &_MsgWeekMonthInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    66;
+    71;
 
   friend void swap(MsgWeekMonthInfo& a, MsgWeekMonthInfo& b) {
     a.Swap(&b);
@@ -12692,7 +13545,7 @@ class MsgWeekMonthCfg PROTOBUF_FINAL :
                &_MsgWeekMonthCfg_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    67;
+    72;
 
   friend void swap(MsgWeekMonthCfg& a, MsgWeekMonthCfg& b) {
     a.Swap(&b);
@@ -12883,7 +13736,7 @@ class MsgGetWeekMonthInfoResp PROTOBUF_FINAL :
                &_MsgGetWeekMonthInfoResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    68;
+    73;
 
   friend void swap(MsgGetWeekMonthInfoResp& a, MsgGetWeekMonthInfoResp& b) {
     a.Swap(&b);
@@ -13048,7 +13901,7 @@ class MsgWeekMonthGetAward PROTOBUF_FINAL :
                &_MsgWeekMonthGetAward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    69;
+    74;
 
   friend void swap(MsgWeekMonthGetAward& a, MsgWeekMonthGetAward& b) {
     a.Swap(&b);
@@ -13184,7 +14037,7 @@ class MsgWeekMonthGetAwardResp PROTOBUF_FINAL :
                &_MsgWeekMonthGetAwardResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    70;
+    75;
 
   friend void swap(MsgWeekMonthGetAwardResp& a, MsgWeekMonthGetAwardResp& b) {
     a.Swap(&b);
@@ -13342,7 +14195,7 @@ class MsgGetPhoneCode PROTOBUF_FINAL :
                &_MsgGetPhoneCode_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    71;
+    76;
 
   friend void swap(MsgGetPhoneCode& a, MsgGetPhoneCode& b) {
     a.Swap(&b);
@@ -13496,7 +14349,7 @@ class MsgQueryRechargeGiveInfo PROTOBUF_FINAL :
                &_MsgQueryRechargeGiveInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    72;
+    77;
 
   friend void swap(MsgQueryRechargeGiveInfo& a, MsgQueryRechargeGiveInfo& b) {
     a.Swap(&b);
@@ -22161,6 +23014,66 @@ inline void MsgInfiniteAgentQueryMyInfoResp::set_allocated_bind_invite_code(std:
   // @@protoc_insertion_point(field_set_allocated:MsgInfiniteAgentQueryMyInfoResp.bind_invite_code)
 }
 
+// int64 today_performance_rebate = 8;
+inline void MsgInfiniteAgentQueryMyInfoResp::clear_today_performance_rebate() {
+  today_performance_rebate_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgInfiniteAgentQueryMyInfoResp::_internal_today_performance_rebate() const {
+  return today_performance_rebate_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgInfiniteAgentQueryMyInfoResp::today_performance_rebate() const {
+  // @@protoc_insertion_point(field_get:MsgInfiniteAgentQueryMyInfoResp.today_performance_rebate)
+  return _internal_today_performance_rebate();
+}
+inline void MsgInfiniteAgentQueryMyInfoResp::_internal_set_today_performance_rebate(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  today_performance_rebate_ = value;
+}
+inline void MsgInfiniteAgentQueryMyInfoResp::set_today_performance_rebate(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_today_performance_rebate(value);
+  // @@protoc_insertion_point(field_set:MsgInfiniteAgentQueryMyInfoResp.today_performance_rebate)
+}
+
+// int64 today_game_rebate = 9;
+inline void MsgInfiniteAgentQueryMyInfoResp::clear_today_game_rebate() {
+  today_game_rebate_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgInfiniteAgentQueryMyInfoResp::_internal_today_game_rebate() const {
+  return today_game_rebate_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgInfiniteAgentQueryMyInfoResp::today_game_rebate() const {
+  // @@protoc_insertion_point(field_get:MsgInfiniteAgentQueryMyInfoResp.today_game_rebate)
+  return _internal_today_game_rebate();
+}
+inline void MsgInfiniteAgentQueryMyInfoResp::_internal_set_today_game_rebate(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  today_game_rebate_ = value;
+}
+inline void MsgInfiniteAgentQueryMyInfoResp::set_today_game_rebate(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_today_game_rebate(value);
+  // @@protoc_insertion_point(field_set:MsgInfiniteAgentQueryMyInfoResp.today_game_rebate)
+}
+
+// int32 today_add_num = 10;
+inline void MsgInfiniteAgentQueryMyInfoResp::clear_today_add_num() {
+  today_add_num_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgInfiniteAgentQueryMyInfoResp::_internal_today_add_num() const {
+  return today_add_num_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgInfiniteAgentQueryMyInfoResp::today_add_num() const {
+  // @@protoc_insertion_point(field_get:MsgInfiniteAgentQueryMyInfoResp.today_add_num)
+  return _internal_today_add_num();
+}
+inline void MsgInfiniteAgentQueryMyInfoResp::_internal_set_today_add_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  today_add_num_ = value;
+}
+inline void MsgInfiniteAgentQueryMyInfoResp::set_today_add_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_today_add_num(value);
+  // @@protoc_insertion_point(field_set:MsgInfiniteAgentQueryMyInfoResp.today_add_num)
+}
+
 // -------------------------------------------------------------------
 
 // MsgInfiniteAgentQuerySubInfo
@@ -22329,7 +23242,27 @@ inline void InfiniteAgentQuerySubInfo::set_today_ratio(::PROTOBUF_NAMESPACE_ID::
   // @@protoc_insertion_point(field_set:InfiniteAgentQuerySubInfo.today_ratio)
 }
 
-// int32 agent_ratio = 6;
+// int64 total_ratio = 6;
+inline void InfiniteAgentQuerySubInfo::clear_total_ratio() {
+  total_ratio_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 InfiniteAgentQuerySubInfo::_internal_total_ratio() const {
+  return total_ratio_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 InfiniteAgentQuerySubInfo::total_ratio() const {
+  // @@protoc_insertion_point(field_get:InfiniteAgentQuerySubInfo.total_ratio)
+  return _internal_total_ratio();
+}
+inline void InfiniteAgentQuerySubInfo::_internal_set_total_ratio(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  total_ratio_ = value;
+}
+inline void InfiniteAgentQuerySubInfo::set_total_ratio(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_total_ratio(value);
+  // @@protoc_insertion_point(field_set:InfiniteAgentQuerySubInfo.total_ratio)
+}
+
+// int32 agent_ratio = 7;
 inline void InfiniteAgentQuerySubInfo::clear_agent_ratio() {
   agent_ratio_ = 0;
 }
@@ -22347,6 +23280,26 @@ inline void InfiniteAgentQuerySubInfo::_internal_set_agent_ratio(::PROTOBUF_NAME
 inline void InfiniteAgentQuerySubInfo::set_agent_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_agent_ratio(value);
   // @@protoc_insertion_point(field_set:InfiniteAgentQuerySubInfo.agent_ratio)
+}
+
+// int32 rank = 8;
+inline void InfiniteAgentQuerySubInfo::clear_rank() {
+  rank_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 InfiniteAgentQuerySubInfo::_internal_rank() const {
+  return rank_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 InfiniteAgentQuerySubInfo::rank() const {
+  // @@protoc_insertion_point(field_get:InfiniteAgentQuerySubInfo.rank)
+  return _internal_rank();
+}
+inline void InfiniteAgentQuerySubInfo::_internal_set_rank(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  rank_ = value;
+}
+inline void InfiniteAgentQuerySubInfo::set_rank(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_rank(value);
+  // @@protoc_insertion_point(field_set:InfiniteAgentQuerySubInfo.rank)
 }
 
 // -------------------------------------------------------------------
@@ -22662,6 +23615,366 @@ inline void MsgRecviveAgentRebateResp::_internal_set_cur_rebate(::PROTOBUF_NAMES
 inline void MsgRecviveAgentRebateResp::set_cur_rebate(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_cur_rebate(value);
   // @@protoc_insertion_point(field_set:MsgRecviveAgentRebateResp.cur_rebate)
+}
+
+// -------------------------------------------------------------------
+
+// MsgGetClaimRecord
+
+// int32 user_id = 1;
+inline void MsgGetClaimRecord::clear_user_id() {
+  user_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgGetClaimRecord::_internal_user_id() const {
+  return user_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgGetClaimRecord::user_id() const {
+  // @@protoc_insertion_point(field_get:MsgGetClaimRecord.user_id)
+  return _internal_user_id();
+}
+inline void MsgGetClaimRecord::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  user_id_ = value;
+}
+inline void MsgGetClaimRecord::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_user_id(value);
+  // @@protoc_insertion_point(field_set:MsgGetClaimRecord.user_id)
+}
+
+// int32 current_page = 2;
+inline void MsgGetClaimRecord::clear_current_page() {
+  current_page_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgGetClaimRecord::_internal_current_page() const {
+  return current_page_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgGetClaimRecord::current_page() const {
+  // @@protoc_insertion_point(field_get:MsgGetClaimRecord.current_page)
+  return _internal_current_page();
+}
+inline void MsgGetClaimRecord::_internal_set_current_page(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  current_page_ = value;
+}
+inline void MsgGetClaimRecord::set_current_page(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_current_page(value);
+  // @@protoc_insertion_point(field_set:MsgGetClaimRecord.current_page)
+}
+
+// int32 max_row = 3;
+inline void MsgGetClaimRecord::clear_max_row() {
+  max_row_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgGetClaimRecord::_internal_max_row() const {
+  return max_row_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgGetClaimRecord::max_row() const {
+  // @@protoc_insertion_point(field_get:MsgGetClaimRecord.max_row)
+  return _internal_max_row();
+}
+inline void MsgGetClaimRecord::_internal_set_max_row(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  max_row_ = value;
+}
+inline void MsgGetClaimRecord::set_max_row(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_max_row(value);
+  // @@protoc_insertion_point(field_set:MsgGetClaimRecord.max_row)
+}
+
+// -------------------------------------------------------------------
+
+// MsgClaimRecord
+
+// string date_time = 1;
+inline void MsgClaimRecord::clear_date_time() {
+  date_time_.ClearToEmpty();
+}
+inline const std::string& MsgClaimRecord::date_time() const {
+  // @@protoc_insertion_point(field_get:MsgClaimRecord.date_time)
+  return _internal_date_time();
+}
+inline void MsgClaimRecord::set_date_time(const std::string& value) {
+  _internal_set_date_time(value);
+  // @@protoc_insertion_point(field_set:MsgClaimRecord.date_time)
+}
+inline std::string* MsgClaimRecord::mutable_date_time() {
+  // @@protoc_insertion_point(field_mutable:MsgClaimRecord.date_time)
+  return _internal_mutable_date_time();
+}
+inline const std::string& MsgClaimRecord::_internal_date_time() const {
+  return date_time_.Get();
+}
+inline void MsgClaimRecord::_internal_set_date_time(const std::string& value) {
+  
+  date_time_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgClaimRecord::set_date_time(std::string&& value) {
+  
+  date_time_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgClaimRecord.date_time)
+}
+inline void MsgClaimRecord::set_date_time(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  date_time_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgClaimRecord.date_time)
+}
+inline void MsgClaimRecord::set_date_time(const char* value,
+    size_t size) {
+  
+  date_time_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgClaimRecord.date_time)
+}
+inline std::string* MsgClaimRecord::_internal_mutable_date_time() {
+  
+  return date_time_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgClaimRecord::release_date_time() {
+  // @@protoc_insertion_point(field_release:MsgClaimRecord.date_time)
+  return date_time_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgClaimRecord::set_allocated_date_time(std::string* date_time) {
+  if (date_time != nullptr) {
+    
+  } else {
+    
+  }
+  date_time_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), date_time,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgClaimRecord.date_time)
+}
+
+// int32 gold = 2;
+inline void MsgClaimRecord::clear_gold() {
+  gold_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgClaimRecord::_internal_gold() const {
+  return gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgClaimRecord::gold() const {
+  // @@protoc_insertion_point(field_get:MsgClaimRecord.gold)
+  return _internal_gold();
+}
+inline void MsgClaimRecord::_internal_set_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  gold_ = value;
+}
+inline void MsgClaimRecord::set_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_gold(value);
+  // @@protoc_insertion_point(field_set:MsgClaimRecord.gold)
+}
+
+// -------------------------------------------------------------------
+
+// MsgGetClaimRecordResp
+
+// repeated .MsgClaimRecord info = 1;
+inline int MsgGetClaimRecordResp::_internal_info_size() const {
+  return info_.size();
+}
+inline int MsgGetClaimRecordResp::info_size() const {
+  return _internal_info_size();
+}
+inline void MsgGetClaimRecordResp::clear_info() {
+  info_.Clear();
+}
+inline ::MsgClaimRecord* MsgGetClaimRecordResp::mutable_info(int index) {
+  // @@protoc_insertion_point(field_mutable:MsgGetClaimRecordResp.info)
+  return info_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgClaimRecord >*
+MsgGetClaimRecordResp::mutable_info() {
+  // @@protoc_insertion_point(field_mutable_list:MsgGetClaimRecordResp.info)
+  return &info_;
+}
+inline const ::MsgClaimRecord& MsgGetClaimRecordResp::_internal_info(int index) const {
+  return info_.Get(index);
+}
+inline const ::MsgClaimRecord& MsgGetClaimRecordResp::info(int index) const {
+  // @@protoc_insertion_point(field_get:MsgGetClaimRecordResp.info)
+  return _internal_info(index);
+}
+inline ::MsgClaimRecord* MsgGetClaimRecordResp::_internal_add_info() {
+  return info_.Add();
+}
+inline ::MsgClaimRecord* MsgGetClaimRecordResp::add_info() {
+  // @@protoc_insertion_point(field_add:MsgGetClaimRecordResp.info)
+  return _internal_add_info();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgClaimRecord >&
+MsgGetClaimRecordResp::info() const {
+  // @@protoc_insertion_point(field_list:MsgGetClaimRecordResp.info)
+  return info_;
+}
+
+// -------------------------------------------------------------------
+
+// MsgQueryPerformance
+
+// string date_time = 1;
+inline void MsgQueryPerformance::clear_date_time() {
+  date_time_.ClearToEmpty();
+}
+inline const std::string& MsgQueryPerformance::date_time() const {
+  // @@protoc_insertion_point(field_get:MsgQueryPerformance.date_time)
+  return _internal_date_time();
+}
+inline void MsgQueryPerformance::set_date_time(const std::string& value) {
+  _internal_set_date_time(value);
+  // @@protoc_insertion_point(field_set:MsgQueryPerformance.date_time)
+}
+inline std::string* MsgQueryPerformance::mutable_date_time() {
+  // @@protoc_insertion_point(field_mutable:MsgQueryPerformance.date_time)
+  return _internal_mutable_date_time();
+}
+inline const std::string& MsgQueryPerformance::_internal_date_time() const {
+  return date_time_.Get();
+}
+inline void MsgQueryPerformance::_internal_set_date_time(const std::string& value) {
+  
+  date_time_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void MsgQueryPerformance::set_date_time(std::string&& value) {
+  
+  date_time_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:MsgQueryPerformance.date_time)
+}
+inline void MsgQueryPerformance::set_date_time(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  date_time_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:MsgQueryPerformance.date_time)
+}
+inline void MsgQueryPerformance::set_date_time(const char* value,
+    size_t size) {
+  
+  date_time_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:MsgQueryPerformance.date_time)
+}
+inline std::string* MsgQueryPerformance::_internal_mutable_date_time() {
+  
+  return date_time_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* MsgQueryPerformance::release_date_time() {
+  // @@protoc_insertion_point(field_release:MsgQueryPerformance.date_time)
+  return date_time_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void MsgQueryPerformance::set_allocated_date_time(std::string* date_time) {
+  if (date_time != nullptr) {
+    
+  } else {
+    
+  }
+  date_time_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), date_time,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:MsgQueryPerformance.date_time)
+}
+
+// int32 total_gold = 2;
+inline void MsgQueryPerformance::clear_total_gold() {
+  total_gold_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgQueryPerformance::_internal_total_gold() const {
+  return total_gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgQueryPerformance::total_gold() const {
+  // @@protoc_insertion_point(field_get:MsgQueryPerformance.total_gold)
+  return _internal_total_gold();
+}
+inline void MsgQueryPerformance::_internal_set_total_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  total_gold_ = value;
+}
+inline void MsgQueryPerformance::set_total_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_total_gold(value);
+  // @@protoc_insertion_point(field_set:MsgQueryPerformance.total_gold)
+}
+
+// int32 game_rebate = 3;
+inline void MsgQueryPerformance::clear_game_rebate() {
+  game_rebate_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgQueryPerformance::_internal_game_rebate() const {
+  return game_rebate_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgQueryPerformance::game_rebate() const {
+  // @@protoc_insertion_point(field_get:MsgQueryPerformance.game_rebate)
+  return _internal_game_rebate();
+}
+inline void MsgQueryPerformance::_internal_set_game_rebate(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  game_rebate_ = value;
+}
+inline void MsgQueryPerformance::set_game_rebate(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_game_rebate(value);
+  // @@protoc_insertion_point(field_set:MsgQueryPerformance.game_rebate)
+}
+
+// int32 agent_rabete = 4;
+inline void MsgQueryPerformance::clear_agent_rabete() {
+  agent_rabete_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgQueryPerformance::_internal_agent_rabete() const {
+  return agent_rabete_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgQueryPerformance::agent_rabete() const {
+  // @@protoc_insertion_point(field_get:MsgQueryPerformance.agent_rabete)
+  return _internal_agent_rabete();
+}
+inline void MsgQueryPerformance::_internal_set_agent_rabete(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  agent_rabete_ = value;
+}
+inline void MsgQueryPerformance::set_agent_rabete(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_agent_rabete(value);
+  // @@protoc_insertion_point(field_set:MsgQueryPerformance.agent_rabete)
+}
+
+// -------------------------------------------------------------------
+
+// MsgQueryPerformanceResp
+
+// repeated .MsgQueryPerformance info = 1;
+inline int MsgQueryPerformanceResp::_internal_info_size() const {
+  return info_.size();
+}
+inline int MsgQueryPerformanceResp::info_size() const {
+  return _internal_info_size();
+}
+inline void MsgQueryPerformanceResp::clear_info() {
+  info_.Clear();
+}
+inline ::MsgQueryPerformance* MsgQueryPerformanceResp::mutable_info(int index) {
+  // @@protoc_insertion_point(field_mutable:MsgQueryPerformanceResp.info)
+  return info_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgQueryPerformance >*
+MsgQueryPerformanceResp::mutable_info() {
+  // @@protoc_insertion_point(field_mutable_list:MsgQueryPerformanceResp.info)
+  return &info_;
+}
+inline const ::MsgQueryPerformance& MsgQueryPerformanceResp::_internal_info(int index) const {
+  return info_.Get(index);
+}
+inline const ::MsgQueryPerformance& MsgQueryPerformanceResp::info(int index) const {
+  // @@protoc_insertion_point(field_get:MsgQueryPerformanceResp.info)
+  return _internal_info(index);
+}
+inline ::MsgQueryPerformance* MsgQueryPerformanceResp::_internal_add_info() {
+  return info_.Add();
+}
+inline ::MsgQueryPerformance* MsgQueryPerformanceResp::add_info() {
+  // @@protoc_insertion_point(field_add:MsgQueryPerformanceResp.info)
+  return _internal_add_info();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgQueryPerformance >&
+MsgQueryPerformanceResp::info() const {
+  // @@protoc_insertion_point(field_list:MsgQueryPerformanceResp.info)
+  return info_;
 }
 
 // -------------------------------------------------------------------
@@ -23213,6 +24526,16 @@ MsgQueryRechargeGiveInfo::userinfo() const {
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

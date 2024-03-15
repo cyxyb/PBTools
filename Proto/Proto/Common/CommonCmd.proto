@@ -155,6 +155,8 @@ enum EMsgIDLogin
 	MsgIDAgent_InfiniteQueryUserInfoResp		= 141;		//查询某个代理信息返回(MsgInfiniteAgentQuerySubInfoResp)
 	MsgIDRunGame_QueryRechargeGiveInfo			= 142;		//查询玩家充值/赠送金币详情(MsgCommonBool)
 	MsgIDRunGame_QueryRechargeGiveInfoResp		= 143;		//查询玩家充值/赠送金币详情返回(MsgQueryRechargeGiveInfo)
+	MsgIDAgent_GetClaimRecord					= 144;		//查询返利领取记录(MsgGetClaimRecord)
+	MsgIDAgent_GetClaimRecordResp				= 145;		//查询查询返利领取记录(MsgGetClaimRecordResp)
 }
 
 enum EMsgIDGame

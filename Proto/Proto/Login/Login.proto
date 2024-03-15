@@ -543,13 +543,16 @@ message MsgQueryCelebrityGoldCoinResp
 // 请求代理数据返回
 message MsgInfiniteAgentQueryMyInfoResp
 {
-	int32		agent_level 	= 1;	//代理等级(真金代理等级)
-	int32 		agent_ratio 	= 2;	//分成比例
-	int32 		bind_id 		= 3;	//上级id
-	int64 		cur_rebate 		= 4;	//当前返利
-	int64 		total_rebate 	= 5;	//总返利
-	int64		game_rebate		= 6;	//游戏返利
-	string		bind_invite_code = 7;	//上级邀请码
+	int32		agent_level 				= 1;	//代理等级(真金代理等级)
+	int32 		agent_ratio 				= 2;	//分成比例
+	int32 		bind_id 					= 3;	//上级id
+	int64 		cur_rebate 					= 4;	//佣金返利
+	int64 		total_rebate 				= 5;	//总返利
+	int64		game_rebate					= 6;	//当前返利
+	string		bind_invite_code 			= 7;	//上级邀请码
+	int64 		today_performance_rebate 	= 8;	//今日佣金返利
+	int64		today_game_rebate 			= 9;	//今日游戏返利
+	int32		today_add_num				= 10;	//昨日新增人数
 }	       
 //请求下级数据
 message MsgInfiniteAgentQuerySubInfo
@@ -566,7 +569,9 @@ message InfiniteAgentQuerySubInfo
 	int64 total_tax 		= 3;		//总税收
 	int64 today_tax 		= 4;		//今日税收
 	int64 today_ratio 		= 5;		//返利
-	int32 agent_ratio 		= 6;		//分成比例
+	int64 total_ratio 		= 6;		//总返利
+	int32 agent_ratio 		= 7;		//分成比例
+	int32 rank 				= 8;		//排名
 }
 //请求下级数据返回
 message MsgInfiniteAgentQuerySubInfoResp
@@ -598,7 +603,35 @@ message MsgRecviveAgentRebateResp
 	int32 code = 1;			//0：成功，非0 多语言码	
 	int64 cur_rebate = 2;	//当前返利
 }
-
+//查询领取记录
+message MsgGetClaimRecord
+{
+	int32 user_id 				= 1;		//userid
+	int32 current_page			= 2;		//当前页1开始
+	int32 max_row				= 3;		//每页最大行数  最大50，超了改数据库
+}
+//查询代理领取返利记录
+message MsgClaimRecord
+{
+	string date_time =1;
+	int32 gold =2;
+}
+message MsgGetClaimRecordResp
+{
+	repeated MsgClaimRecord info =1;
+}
+//业绩查询
+message MsgQueryPerformance
+{
+	string date_time = 1;	//日期
+	int32 total_gold = 2;	//总业绩
+	int32 game_rebate = 3;	//游戏返利
+	int32 agent_rabete = 4;	//代理返利
+}
+message MsgQueryPerformanceResp
+{
+	repeated MsgQueryPerformance info =1;
+}
 //查询玩家周卡月卡信息
 message MsgWeekMonthInfo
 {
