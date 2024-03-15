@@ -25,7 +25,7 @@ const char descriptor_table_protodef_CommonCmd_2eproto[] PROTOBUF_SECTION_VARIAB
   "\n\017CommonCmd.proto*\206\001\n\nEMsgIDMain\022\023\n\017EMsg"
   "IDMain_Null\020\000\022\036\n\031EMsgIDMain_Login_UserIn"
   "fo\020\351\007\022\024\n\017EMsgIDMain_Game\020\321\017\022\027\n\022EMsgIDMai"
-  "n_SubGame\020\322\017\022\024\n\017EMsgIDMain_Chat\020\271\027*\336&\n\013E"
+  "n_SubGame\020\322\017\022\024\n\017EMsgIDMain_Chat\020\271\027*\256\'\n\013E"
   "MsgIDLogin\022\023\n\017MsgIDLogin_Null\020\000\022\024\n\020MsgID"
   "Login_Login\020\001\022\030\n\024MsgIDLogin_LoginResp\020\002\022"
   "\035\n\031MsgIDLogin_ModifyNickName\020\003\022!\n\035MsgIDL"
@@ -149,7 +149,9 @@ const char descriptor_table_protodef_CommonCmd_2eproto[] PROTOBUF_SECTION_VARIAB
   "\001\022\'\n\"MsgIDRunGame_QueryRechargeGiveInfo\020"
   "\216\001\022+\n&MsgIDRunGame_QueryRechargeGiveInfo"
   "Resp\020\217\001\022\036\n\031MsgIDAgent_GetClaimRecord\020\220\001\022"
-  "\"\n\035MsgIDAgent_GetClaimRecordResp\020\221\001*\310\t\n\n"
+  "\"\n\035MsgIDAgent_GetClaimRecordResp\020\221\001\022$\n\037M"
+  "sgIDAgent_GetPerformanceRecord\020\222\001\022(\n#Msg"
+  "IDAgent_GetPerformanceRecordResp\020\223\001*\310\t\n\n"
   "EMsgIDGame\022\022\n\016MsgIDGame_Null\020\000\022\024\n\017MsgIDG"
   "ame_Login\020\351\007\022\030\n\023MsgIDGame_LoginResp\020\352\007\022\036"
   "\n\031MsgIDGame_SqueezeSeatResp\020\353\007\022\025\n\020MsgIDG"
@@ -198,7 +200,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Com
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_CommonCmd_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_CommonCmd_2eproto = {
-  false, false, descriptor_table_protodef_CommonCmd_2eproto, "CommonCmd.proto", 6734,
+  false, false, descriptor_table_protodef_CommonCmd_2eproto, "CommonCmd.proto", 6814,
   &descriptor_table_CommonCmd_2eproto_once, descriptor_table_CommonCmd_2eproto_sccs, descriptor_table_CommonCmd_2eproto_deps, 0, 0,
   schemas, file_default_instances, TableStruct_CommonCmd_2eproto::offsets,
   file_level_metadata_CommonCmd_2eproto, 0, file_level_enum_descriptors_CommonCmd_2eproto, file_level_service_descriptors_CommonCmd_2eproto,
@@ -375,6 +377,8 @@ bool EMsgIDLogin_IsValid(int value) {
     case 143:
     case 144:
     case 145:
+    case 146:
+    case 147:
       return true;
     default:
       return false;

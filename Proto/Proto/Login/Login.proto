@@ -603,13 +603,7 @@ message MsgRecviveAgentRebateResp
 	int32 code = 1;			//0：成功，非0 多语言码	
 	int64 cur_rebate = 2;	//当前返利
 }
-//查询领取记录
-message MsgGetClaimRecord
-{
-	int32 user_id 				= 1;		//userid
-	int32 current_page			= 2;		//当前页1开始
-	int32 max_row				= 3;		//每页最大行数  最大50，超了改数据库
-}
+	
 //查询代理领取返利记录
 message MsgClaimRecord
 {
@@ -618,7 +612,7 @@ message MsgClaimRecord
 }
 message MsgGetClaimRecordResp
 {
-	repeated MsgClaimRecord info =1;
+	repeated MsgClaimRecord info =1; //最新二十条
 }
 //业绩查询
 message MsgQueryPerformance
@@ -630,7 +624,7 @@ message MsgQueryPerformance
 }
 message MsgQueryPerformanceResp
 {
-	repeated MsgQueryPerformance info =1;
+	repeated MsgQueryPerformance info =1; //最新三十条
 }
 //查询玩家周卡月卡信息
 message MsgWeekMonthInfo

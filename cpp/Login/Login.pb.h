@@ -46,7 +46,7 @@ struct TableStruct_Login_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[78]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[77]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -104,9 +104,6 @@ extern MsgForgetPasswordDefaultTypeInternal _MsgForgetPassword_default_instance_
 class MsgGetAvatarInfo;
 class MsgGetAvatarInfoDefaultTypeInternal;
 extern MsgGetAvatarInfoDefaultTypeInternal _MsgGetAvatarInfo_default_instance_;
-class MsgGetClaimRecord;
-class MsgGetClaimRecordDefaultTypeInternal;
-extern MsgGetClaimRecordDefaultTypeInternal _MsgGetClaimRecord_default_instance_;
 class MsgGetClaimRecordResp;
 class MsgGetClaimRecordRespDefaultTypeInternal;
 extern MsgGetClaimRecordRespDefaultTypeInternal _MsgGetClaimRecordResp_default_instance_;
@@ -305,7 +302,6 @@ template<> ::MsgCommonKV* Arena::CreateMaybeMessage<::MsgCommonKV>(Arena*);
 template<> ::MsgDotRechargeResp* Arena::CreateMaybeMessage<::MsgDotRechargeResp>(Arena*);
 template<> ::MsgForgetPassword* Arena::CreateMaybeMessage<::MsgForgetPassword>(Arena*);
 template<> ::MsgGetAvatarInfo* Arena::CreateMaybeMessage<::MsgGetAvatarInfo>(Arena*);
-template<> ::MsgGetClaimRecord* Arena::CreateMaybeMessage<::MsgGetClaimRecord>(Arena*);
 template<> ::MsgGetClaimRecordResp* Arena::CreateMaybeMessage<::MsgGetClaimRecordResp>(Arena*);
 template<> ::MsgGetPhoneCode* Arena::CreateMaybeMessage<::MsgGetPhoneCode>(Arena*);
 template<> ::MsgGetRank* Arena::CreateMaybeMessage<::MsgGetRank>(Arena*);
@@ -12535,164 +12531,6 @@ class MsgRecviveAgentRebateResp PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
-class MsgGetClaimRecord PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgGetClaimRecord) */ {
- public:
-  inline MsgGetClaimRecord() : MsgGetClaimRecord(nullptr) {}
-  virtual ~MsgGetClaimRecord();
-
-  MsgGetClaimRecord(const MsgGetClaimRecord& from);
-  MsgGetClaimRecord(MsgGetClaimRecord&& from) noexcept
-    : MsgGetClaimRecord() {
-    *this = ::std::move(from);
-  }
-
-  inline MsgGetClaimRecord& operator=(const MsgGetClaimRecord& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  inline MsgGetClaimRecord& operator=(MsgGetClaimRecord&& from) noexcept {
-    if (GetArena() == from.GetArena()) {
-      if (this != &from) InternalSwap(&from);
-    } else {
-      CopyFrom(from);
-    }
-    return *this;
-  }
-
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
-    return GetDescriptor();
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
-    return GetMetadataStatic().descriptor;
-  }
-  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
-    return GetMetadataStatic().reflection;
-  }
-  static const MsgGetClaimRecord& default_instance();
-
-  static inline const MsgGetClaimRecord* internal_default_instance() {
-    return reinterpret_cast<const MsgGetClaimRecord*>(
-               &_MsgGetClaimRecord_default_instance_);
-  }
-  static constexpr int kIndexInFileMessages =
-    66;
-
-  friend void swap(MsgGetClaimRecord& a, MsgGetClaimRecord& b) {
-    a.Swap(&b);
-  }
-  inline void Swap(MsgGetClaimRecord* other) {
-    if (other == this) return;
-    if (GetArena() == other->GetArena()) {
-      InternalSwap(other);
-    } else {
-      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
-    }
-  }
-  void UnsafeArenaSwap(MsgGetClaimRecord* other) {
-    if (other == this) return;
-    GOOGLE_DCHECK(GetArena() == other->GetArena());
-    InternalSwap(other);
-  }
-
-  // implements Message ----------------------------------------------
-
-  inline MsgGetClaimRecord* New() const final {
-    return CreateMaybeMessage<MsgGetClaimRecord>(nullptr);
-  }
-
-  MsgGetClaimRecord* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<MsgGetClaimRecord>(arena);
-  }
-  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const MsgGetClaimRecord& from);
-  void MergeFrom(const MsgGetClaimRecord& from);
-  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
-  bool IsInitialized() const final;
-
-  size_t ByteSizeLong() const final;
-  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
-  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
-      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
-  int GetCachedSize() const final { return _cached_size_.Get(); }
-
-  private:
-  inline void SharedCtor();
-  inline void SharedDtor();
-  void SetCachedSize(int size) const final;
-  void InternalSwap(MsgGetClaimRecord* other);
-  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
-  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "MsgGetClaimRecord";
-  }
-  protected:
-  explicit MsgGetClaimRecord(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  private:
-  static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
-  public:
-
-  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
-  private:
-  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
-    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
-    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
-  }
-
-  public:
-
-  // nested types ----------------------------------------------------
-
-  // accessors -------------------------------------------------------
-
-  enum : int {
-    kUserIdFieldNumber = 1,
-    kCurrentPageFieldNumber = 2,
-    kMaxRowFieldNumber = 3,
-  };
-  // int32 user_id = 1;
-  void clear_user_id();
-  ::PROTOBUF_NAMESPACE_ID::int32 user_id() const;
-  void set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_user_id() const;
-  void _internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 current_page = 2;
-  void clear_current_page();
-  ::PROTOBUF_NAMESPACE_ID::int32 current_page() const;
-  void set_current_page(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_current_page() const;
-  void _internal_set_current_page(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int32 max_row = 3;
-  void clear_max_row();
-  ::PROTOBUF_NAMESPACE_ID::int32 max_row() const;
-  void set_max_row(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_max_row() const;
-  void _internal_set_max_row(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // @@protoc_insertion_point(class_scope:MsgGetClaimRecord)
- private:
-  class _Internal;
-
-  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
-  typedef void InternalArenaConstructable_;
-  typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int32 user_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 current_page_;
-  ::PROTOBUF_NAMESPACE_ID::int32 max_row_;
-  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
-  friend struct ::TableStruct_Login_2eproto;
-};
-// -------------------------------------------------------------------
-
 class MsgClaimRecord PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgClaimRecord) */ {
  public:
@@ -12734,7 +12572,7 @@ class MsgClaimRecord PROTOBUF_FINAL :
                &_MsgClaimRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    67;
+    66;
 
   friend void swap(MsgClaimRecord& a, MsgClaimRecord& b) {
     a.Swap(&b);
@@ -12888,7 +12726,7 @@ class MsgGetClaimRecordResp PROTOBUF_FINAL :
                &_MsgGetClaimRecordResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    68;
+    67;
 
   friend void swap(MsgGetClaimRecordResp& a, MsgGetClaimRecordResp& b) {
     a.Swap(&b);
@@ -13033,7 +12871,7 @@ class MsgQueryPerformance PROTOBUF_FINAL :
                &_MsgQueryPerformance_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    69;
+    68;
 
   friend void swap(MsgQueryPerformance& a, MsgQueryPerformance& b) {
     a.Swap(&b);
@@ -13209,7 +13047,7 @@ class MsgQueryPerformanceResp PROTOBUF_FINAL :
                &_MsgQueryPerformanceResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    70;
+    69;
 
   friend void swap(MsgQueryPerformanceResp& a, MsgQueryPerformanceResp& b) {
     a.Swap(&b);
@@ -13354,7 +13192,7 @@ class MsgWeekMonthInfo PROTOBUF_FINAL :
                &_MsgWeekMonthInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    71;
+    70;
 
   friend void swap(MsgWeekMonthInfo& a, MsgWeekMonthInfo& b) {
     a.Swap(&b);
@@ -13545,7 +13383,7 @@ class MsgWeekMonthCfg PROTOBUF_FINAL :
                &_MsgWeekMonthCfg_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    72;
+    71;
 
   friend void swap(MsgWeekMonthCfg& a, MsgWeekMonthCfg& b) {
     a.Swap(&b);
@@ -13736,7 +13574,7 @@ class MsgGetWeekMonthInfoResp PROTOBUF_FINAL :
                &_MsgGetWeekMonthInfoResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    73;
+    72;
 
   friend void swap(MsgGetWeekMonthInfoResp& a, MsgGetWeekMonthInfoResp& b) {
     a.Swap(&b);
@@ -13901,7 +13739,7 @@ class MsgWeekMonthGetAward PROTOBUF_FINAL :
                &_MsgWeekMonthGetAward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    74;
+    73;
 
   friend void swap(MsgWeekMonthGetAward& a, MsgWeekMonthGetAward& b) {
     a.Swap(&b);
@@ -14037,7 +13875,7 @@ class MsgWeekMonthGetAwardResp PROTOBUF_FINAL :
                &_MsgWeekMonthGetAwardResp_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    75;
+    74;
 
   friend void swap(MsgWeekMonthGetAwardResp& a, MsgWeekMonthGetAwardResp& b) {
     a.Swap(&b);
@@ -14195,7 +14033,7 @@ class MsgGetPhoneCode PROTOBUF_FINAL :
                &_MsgGetPhoneCode_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    76;
+    75;
 
   friend void swap(MsgGetPhoneCode& a, MsgGetPhoneCode& b) {
     a.Swap(&b);
@@ -14349,7 +14187,7 @@ class MsgQueryRechargeGiveInfo PROTOBUF_FINAL :
                &_MsgQueryRechargeGiveInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    77;
+    76;
 
   friend void swap(MsgQueryRechargeGiveInfo& a, MsgQueryRechargeGiveInfo& b) {
     a.Swap(&b);
@@ -23619,70 +23457,6 @@ inline void MsgRecviveAgentRebateResp::set_cur_rebate(::PROTOBUF_NAMESPACE_ID::i
 
 // -------------------------------------------------------------------
 
-// MsgGetClaimRecord
-
-// int32 user_id = 1;
-inline void MsgGetClaimRecord::clear_user_id() {
-  user_id_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgGetClaimRecord::_internal_user_id() const {
-  return user_id_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgGetClaimRecord::user_id() const {
-  // @@protoc_insertion_point(field_get:MsgGetClaimRecord.user_id)
-  return _internal_user_id();
-}
-inline void MsgGetClaimRecord::_internal_set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  user_id_ = value;
-}
-inline void MsgGetClaimRecord::set_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_user_id(value);
-  // @@protoc_insertion_point(field_set:MsgGetClaimRecord.user_id)
-}
-
-// int32 current_page = 2;
-inline void MsgGetClaimRecord::clear_current_page() {
-  current_page_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgGetClaimRecord::_internal_current_page() const {
-  return current_page_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgGetClaimRecord::current_page() const {
-  // @@protoc_insertion_point(field_get:MsgGetClaimRecord.current_page)
-  return _internal_current_page();
-}
-inline void MsgGetClaimRecord::_internal_set_current_page(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  current_page_ = value;
-}
-inline void MsgGetClaimRecord::set_current_page(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_current_page(value);
-  // @@protoc_insertion_point(field_set:MsgGetClaimRecord.current_page)
-}
-
-// int32 max_row = 3;
-inline void MsgGetClaimRecord::clear_max_row() {
-  max_row_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgGetClaimRecord::_internal_max_row() const {
-  return max_row_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgGetClaimRecord::max_row() const {
-  // @@protoc_insertion_point(field_get:MsgGetClaimRecord.max_row)
-  return _internal_max_row();
-}
-inline void MsgGetClaimRecord::_internal_set_max_row(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  max_row_ = value;
-}
-inline void MsgGetClaimRecord::set_max_row(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_max_row(value);
-  // @@protoc_insertion_point(field_set:MsgGetClaimRecord.max_row)
-}
-
-// -------------------------------------------------------------------
-
 // MsgClaimRecord
 
 // string date_time = 1;
@@ -24526,8 +24300,6 @@ MsgQueryRechargeGiveInfo::userinfo() const {
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
-// -------------------------------------------------------------------
-
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

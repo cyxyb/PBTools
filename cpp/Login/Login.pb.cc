@@ -300,10 +300,6 @@ class MsgRecviveAgentRebateRespDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgRecviveAgentRebateResp> _instance;
 } _MsgRecviveAgentRebateResp_default_instance_;
-class MsgGetClaimRecordDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgGetClaimRecord> _instance;
-} _MsgGetClaimRecord_default_instance_;
 class MsgClaimRecordDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgClaimRecord> _instance;
@@ -572,19 +568,6 @@ static void InitDefaultsscc_info_MsgGetAvatarInfo_Login_2eproto() {
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgGetAvatarInfo_Login_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgGetAvatarInfo_Login_2eproto}, {}};
-
-static void InitDefaultsscc_info_MsgGetClaimRecord_Login_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::_MsgGetClaimRecord_default_instance_;
-    new (ptr) ::MsgGetClaimRecord();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgGetClaimRecord_Login_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgGetClaimRecord_Login_2eproto}, {}};
 
 static void InitDefaultsscc_info_MsgGetClaimRecordResp_Login_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -1385,7 +1368,7 @@ static void InitDefaultsscc_info_MsgWeekMonthInfo_Login_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgWeekMonthInfo_Login_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgWeekMonthInfo_Login_2eproto}, {}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Login_2eproto[78];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Login_2eproto[77];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_Login_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_Login_2eproto = nullptr;
 
@@ -2019,14 +2002,6 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::MsgRecviveAgentRebateResp, code_),
   PROTOBUF_FIELD_OFFSET(::MsgRecviveAgentRebateResp, cur_rebate_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::MsgGetClaimRecord, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::MsgGetClaimRecord, user_id_),
-  PROTOBUF_FIELD_OFFSET(::MsgGetClaimRecord, current_page_),
-  PROTOBUF_FIELD_OFFSET(::MsgGetClaimRecord, max_row_),
-  ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgClaimRecord, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
@@ -2178,18 +2153,17 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 602, -1, sizeof(::MsgSetSubAgent)},
   { 609, -1, sizeof(::MsgSetSubAgentResp)},
   { 621, -1, sizeof(::MsgRecviveAgentRebateResp)},
-  { 628, -1, sizeof(::MsgGetClaimRecord)},
-  { 636, -1, sizeof(::MsgClaimRecord)},
-  { 643, -1, sizeof(::MsgGetClaimRecordResp)},
-  { 649, -1, sizeof(::MsgQueryPerformance)},
-  { 658, -1, sizeof(::MsgQueryPerformanceResp)},
-  { 664, -1, sizeof(::MsgWeekMonthInfo)},
-  { 675, -1, sizeof(::MsgWeekMonthCfg)},
-  { 686, -1, sizeof(::MsgGetWeekMonthInfoResp)},
-  { 693, -1, sizeof(::MsgWeekMonthGetAward)},
-  { 699, -1, sizeof(::MsgWeekMonthGetAwardResp)},
-  { 707, -1, sizeof(::MsgGetPhoneCode)},
-  { 714, -1, sizeof(::MsgQueryRechargeGiveInfo)},
+  { 628, -1, sizeof(::MsgClaimRecord)},
+  { 635, -1, sizeof(::MsgGetClaimRecordResp)},
+  { 641, -1, sizeof(::MsgQueryPerformance)},
+  { 650, -1, sizeof(::MsgQueryPerformanceResp)},
+  { 656, -1, sizeof(::MsgWeekMonthInfo)},
+  { 667, -1, sizeof(::MsgWeekMonthCfg)},
+  { 678, -1, sizeof(::MsgGetWeekMonthInfoResp)},
+  { 685, -1, sizeof(::MsgWeekMonthGetAward)},
+  { 691, -1, sizeof(::MsgWeekMonthGetAwardResp)},
+  { 699, -1, sizeof(::MsgGetPhoneCode)},
+  { 706, -1, sizeof(::MsgQueryRechargeGiveInfo)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -2259,7 +2233,6 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgSetSubAgent_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgSetSubAgentResp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgRecviveAgentRebateResp_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgGetClaimRecord_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgClaimRecord_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgGetClaimRecordResp_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgQueryPerformance_default_instance_),
@@ -2461,35 +2434,33 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "(\003\022\021\n\ttoday_tax\030\005 \001(\003\022\023\n\013today_ratio\030\006 \001"
   "(\003\022\023\n\013agent_ratio\030\007 \001(\005\"=\n\031MsgRecviveAge"
   "ntRebateResp\022\014\n\004code\030\001 \001(\005\022\022\n\ncur_rebate"
-  "\030\002 \001(\003\"K\n\021MsgGetClaimRecord\022\017\n\007user_id\030\001"
-  " \001(\005\022\024\n\014current_page\030\002 \001(\005\022\017\n\007max_row\030\003 "
-  "\001(\005\"1\n\016MsgClaimRecord\022\021\n\tdate_time\030\001 \001(\t"
-  "\022\014\n\004gold\030\002 \001(\005\"6\n\025MsgGetClaimRecordResp\022"
-  "\035\n\004info\030\001 \003(\0132\017.MsgClaimRecord\"g\n\023MsgQue"
-  "ryPerformance\022\021\n\tdate_time\030\001 \001(\t\022\022\n\ntota"
-  "l_gold\030\002 \001(\005\022\023\n\013game_rebate\030\003 \001(\005\022\024\n\014age"
-  "nt_rabete\030\004 \001(\005\"=\n\027MsgQueryPerformanceRe"
-  "sp\022\"\n\004info\030\001 \003(\0132\024.MsgQueryPerformance\"\177"
-  "\n\020MsgWeekMonthInfo\022\021\n\tcard_type\030\001 \001(\005\022\020\n"
-  "\010buy_time\030\002 \001(\005\022\017\n\007is_pick\030\003 \001(\005\022\r\n\005awar"
-  "d\030\004 \001(\005\022\022\n\ncard_level\030\005 \001(\005\022\022\n\nremain_da"
-  "y\030\006 \001(\005\"\203\001\n\017MsgWeekMonthCfg\022\021\n\tcard_type"
-  "\030\001 \001(\005\022\021\n\tbuy_money\030\002 \001(\005\022\r\n\005award\030\003 \001(\005"
-  "\022\022\n\ncard_level\030\004 \001(\005\022\021\n\ttotal_day\030\005 \001(\005\022"
-  "\024\n\014profit_ratio\030\006 \001(\005\"e\n\027MsgGetWeekMonth"
-  "InfoResp\022#\n\tcards_cfg\030\001 \003(\0132\020.MsgWeekMon"
-  "thCfg\022%\n\ncards_info\030\002 \003(\0132\021.MsgWeekMonth"
-  "Info\")\n\024MsgWeekMonthGetAward\022\021\n\tcard_typ"
-  "e\030\001 \001(\005\"M\n\030MsgWeekMonthGetAwardResp\022\020\n\010r"
-  "et_code\030\001 \001(\005\022\r\n\005award\030\002 \001(\003\022\020\n\010new_gold"
-  "\030\003 \001(\003\"5\n\017MsgGetPhoneCode\022\024\n\014phone_numbe"
-  "r\030\001 \001(\t\022\014\n\004type\030\002 \001(\005\":\n\030MsgQueryRecharg"
-  "eGiveInfo\022\036\n\010UserInfo\030\001 \003(\0132\014.MsgCommonK"
-  "Vb\006proto3"
+  "\030\002 \001(\003\"1\n\016MsgClaimRecord\022\021\n\tdate_time\030\001 "
+  "\001(\t\022\014\n\004gold\030\002 \001(\005\"6\n\025MsgGetClaimRecordRe"
+  "sp\022\035\n\004info\030\001 \003(\0132\017.MsgClaimRecord\"g\n\023Msg"
+  "QueryPerformance\022\021\n\tdate_time\030\001 \001(\t\022\022\n\nt"
+  "otal_gold\030\002 \001(\005\022\023\n\013game_rebate\030\003 \001(\005\022\024\n\014"
+  "agent_rabete\030\004 \001(\005\"=\n\027MsgQueryPerformanc"
+  "eResp\022\"\n\004info\030\001 \003(\0132\024.MsgQueryPerformanc"
+  "e\"\177\n\020MsgWeekMonthInfo\022\021\n\tcard_type\030\001 \001(\005"
+  "\022\020\n\010buy_time\030\002 \001(\005\022\017\n\007is_pick\030\003 \001(\005\022\r\n\005a"
+  "ward\030\004 \001(\005\022\022\n\ncard_level\030\005 \001(\005\022\022\n\nremain"
+  "_day\030\006 \001(\005\"\203\001\n\017MsgWeekMonthCfg\022\021\n\tcard_t"
+  "ype\030\001 \001(\005\022\021\n\tbuy_money\030\002 \001(\005\022\r\n\005award\030\003 "
+  "\001(\005\022\022\n\ncard_level\030\004 \001(\005\022\021\n\ttotal_day\030\005 \001"
+  "(\005\022\024\n\014profit_ratio\030\006 \001(\005\"e\n\027MsgGetWeekMo"
+  "nthInfoResp\022#\n\tcards_cfg\030\001 \003(\0132\020.MsgWeek"
+  "MonthCfg\022%\n\ncards_info\030\002 \003(\0132\021.MsgWeekMo"
+  "nthInfo\")\n\024MsgWeekMonthGetAward\022\021\n\tcard_"
+  "type\030\001 \001(\005\"M\n\030MsgWeekMonthGetAwardResp\022\020"
+  "\n\010ret_code\030\001 \001(\005\022\r\n\005award\030\002 \001(\003\022\020\n\010new_g"
+  "old\030\003 \001(\003\"5\n\017MsgGetPhoneCode\022\024\n\014phone_nu"
+  "mber\030\001 \001(\t\022\014\n\004type\030\002 \001(\005\":\n\030MsgQueryRech"
+  "argeGiveInfo\022\036\n\010UserInfo\030\001 \003(\0132\014.MsgComm"
+  "onKVb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Login_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Login_2eproto_sccs[78] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Login_2eproto_sccs[77] = {
   &scc_info_ActiveInfoRet_Login_2eproto.base,
   &scc_info_InfiniteAgentQuerySubInfo_Login_2eproto.base,
   &scc_info_MsgActiveInfoCSPick_Login_2eproto.base,
@@ -2507,7 +2478,6 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
   &scc_info_MsgDotRechargeResp_Login_2eproto.base,
   &scc_info_MsgForgetPassword_Login_2eproto.base,
   &scc_info_MsgGetAvatarInfo_Login_2eproto.base,
-  &scc_info_MsgGetClaimRecord_Login_2eproto.base,
   &scc_info_MsgGetClaimRecordResp_Login_2eproto.base,
   &scc_info_MsgGetPhoneCode_Login_2eproto.base,
   &scc_info_MsgGetRank_Login_2eproto.base,
@@ -2571,10 +2541,10 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Login_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Login_2eproto = {
-  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 8449,
-  &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 78, 0,
+  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 8372,
+  &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 77, 0,
   schemas, file_default_instances, TableStruct_Login_2eproto::offsets,
-  file_level_metadata_Login_2eproto, 78, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
+  file_level_metadata_Login_2eproto, 77, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -22373,258 +22343,6 @@ void MsgRecviveAgentRebateResp::InternalSwap(MsgRecviveAgentRebateResp* other) {
 
 // ===================================================================
 
-class MsgGetClaimRecord::_Internal {
- public:
-};
-
-MsgGetClaimRecord::MsgGetClaimRecord(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:MsgGetClaimRecord)
-}
-MsgGetClaimRecord::MsgGetClaimRecord(const MsgGetClaimRecord& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&user_id_, &from.user_id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&max_row_) -
-    reinterpret_cast<char*>(&user_id_)) + sizeof(max_row_));
-  // @@protoc_insertion_point(copy_constructor:MsgGetClaimRecord)
-}
-
-void MsgGetClaimRecord::SharedCtor() {
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&user_id_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&max_row_) -
-      reinterpret_cast<char*>(&user_id_)) + sizeof(max_row_));
-}
-
-MsgGetClaimRecord::~MsgGetClaimRecord() {
-  // @@protoc_insertion_point(destructor:MsgGetClaimRecord)
-  SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-void MsgGetClaimRecord::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-}
-
-void MsgGetClaimRecord::ArenaDtor(void* object) {
-  MsgGetClaimRecord* _this = reinterpret_cast< MsgGetClaimRecord* >(object);
-  (void)_this;
-}
-void MsgGetClaimRecord::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
-void MsgGetClaimRecord::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
-}
-const MsgGetClaimRecord& MsgGetClaimRecord::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgGetClaimRecord_Login_2eproto.base);
-  return *internal_default_instance();
-}
-
-
-void MsgGetClaimRecord::Clear() {
-// @@protoc_insertion_point(message_clear_start:MsgGetClaimRecord)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  ::memset(&user_id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&max_row_) -
-      reinterpret_cast<char*>(&user_id_)) + sizeof(max_row_));
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-const char* MsgGetClaimRecord::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
-    switch (tag >> 3) {
-      // int32 user_id = 1;
-      case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          user_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 current_page = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          current_page_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      // int32 max_row = 3;
-      case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          max_row_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
-          CHK_(ptr);
-        } else goto handle_unusual;
-        continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
-    }  // switch
-  }  // while
-success:
-  return ptr;
-failure:
-  ptr = nullptr;
-  goto success;
-#undef CHK_
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* MsgGetClaimRecord::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:MsgGetClaimRecord)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // int32 user_id = 1;
-  if (this->user_id() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_user_id(), target);
-  }
-
-  // int32 current_page = 2;
-  if (this->current_page() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_current_page(), target);
-  }
-
-  // int32 max_row = 3;
-  if (this->max_row() != 0) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_max_row(), target);
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:MsgGetClaimRecord)
-  return target;
-}
-
-size_t MsgGetClaimRecord::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:MsgGetClaimRecord)
-  size_t total_size = 0;
-
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  // int32 user_id = 1;
-  if (this->user_id() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_user_id());
-  }
-
-  // int32 current_page = 2;
-  if (this->current_page() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_current_page());
-  }
-
-  // int32 max_row = 3;
-  if (this->max_row() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_max_row());
-  }
-
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
-}
-
-void MsgGetClaimRecord::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:MsgGetClaimRecord)
-  GOOGLE_DCHECK_NE(&from, this);
-  const MsgGetClaimRecord* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgGetClaimRecord>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgGetClaimRecord)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgGetClaimRecord)
-    MergeFrom(*source);
-  }
-}
-
-void MsgGetClaimRecord::MergeFrom(const MsgGetClaimRecord& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:MsgGetClaimRecord)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from.user_id() != 0) {
-    _internal_set_user_id(from._internal_user_id());
-  }
-  if (from.current_page() != 0) {
-    _internal_set_current_page(from._internal_current_page());
-  }
-  if (from.max_row() != 0) {
-    _internal_set_max_row(from._internal_max_row());
-  }
-}
-
-void MsgGetClaimRecord::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:MsgGetClaimRecord)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void MsgGetClaimRecord::CopyFrom(const MsgGetClaimRecord& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:MsgGetClaimRecord)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool MsgGetClaimRecord::IsInitialized() const {
-  return true;
-}
-
-void MsgGetClaimRecord::InternalSwap(MsgGetClaimRecord* other) {
-  using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgGetClaimRecord, max_row_)
-      + sizeof(MsgGetClaimRecord::max_row_)
-      - PROTOBUF_FIELD_OFFSET(MsgGetClaimRecord, user_id_)>(
-          reinterpret_cast<char*>(&user_id_),
-          reinterpret_cast<char*>(&other->user_id_));
-}
-
-::PROTOBUF_NAMESPACE_ID::Metadata MsgGetClaimRecord::GetMetadata() const {
-  return GetMetadataStatic();
-}
-
-
-// ===================================================================
-
 class MsgClaimRecord::_Internal {
  public:
 };
@@ -25499,9 +25217,6 @@ template<> PROTOBUF_NOINLINE ::MsgSetSubAgentResp* Arena::CreateMaybeMessage< ::
 }
 template<> PROTOBUF_NOINLINE ::MsgRecviveAgentRebateResp* Arena::CreateMaybeMessage< ::MsgRecviveAgentRebateResp >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MsgRecviveAgentRebateResp >(arena);
-}
-template<> PROTOBUF_NOINLINE ::MsgGetClaimRecord* Arena::CreateMaybeMessage< ::MsgGetClaimRecord >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::MsgGetClaimRecord >(arena);
 }
 template<> PROTOBUF_NOINLINE ::MsgClaimRecord* Arena::CreateMaybeMessage< ::MsgClaimRecord >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MsgClaimRecord >(arena);
