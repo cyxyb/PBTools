@@ -231,6 +231,10 @@ enum EMsgIDDB
 	DB2LOGIN_InfiniteQueryUserInfoResp		= 1107;	//查询某个代理信息返回
 	LOGIN2DB_QueryRechargeGiveInfo			= 1108; //查询玩家充值/赠送金币详情
 	DB2LOGIN_QueryRechargeGiveInfoResp		= 1109; //查询玩家充值/赠送金币详情返回
+	LOGIN2DB_GetClaimRecord					= 1110; //查询返利领取记录
+	DB2LOGIN_GetClaimRecordResp				= 1111; //查询返利领取记录返回
+	LOGIN2DB_GetPerformanceRecord			= 1112;	//查询个人业绩
+	DB2LOGIN_GetPerformanceRecordResp		= 1113;	//查询个人业绩返回
 	//2001-3000 GameServer2DB		
 	GAME2DB_Login							= 2001;	//玩家登录游戏
 	DB2GAME_LoginResp						= 2002;	//玩家登录游戏返回

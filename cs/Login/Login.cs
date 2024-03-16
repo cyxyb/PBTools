@@ -167,48 +167,48 @@ public static partial class LoginReflection {
           "ChFNc2dJbnZpdGVVc2VyUmVzcBIgCgRpbmZvGAEgAygLMhIuTXNnSW52aXRl",
           "VXNlckluZm8ieQodTXNnUXVlcnlDZWxlYnJpdHlHb2xkQ29pblJlc3ASDgoG",
           "YXZhdGFyGAEgASgJEhQKDGF2YXRhcl9mcmFtZRgCIAEoBRIQCghuaWNrbmFt",
-          "ZRgDIAEoCRIRCglnb2xkX2NvaW4YBCABKAMSDQoFc3RhdGUYBSABKAgiiQIK",
+          "ZRgDIAEoCRIRCglnb2xkX2NvaW4YBCABKAMSDQoFc3RhdGUYBSABKAgipAIK",
           "H01zZ0luZmluaXRlQWdlbnRRdWVyeU15SW5mb1Jlc3ASEwoLYWdlbnRfbGV2",
           "ZWwYASABKAUSEwoLYWdlbnRfcmF0aW8YAiABKAUSDwoHYmluZF9pZBgDIAEo",
           "BRISCgpjdXJfcmViYXRlGAQgASgDEhQKDHRvdGFsX3JlYmF0ZRgFIAEoAxIT",
           "CgtnYW1lX3JlYmF0ZRgGIAEoAxIYChBiaW5kX2ludml0ZV9jb2RlGAcgASgJ",
           "EiAKGHRvZGF5X3BlcmZvcm1hbmNlX3JlYmF0ZRgIIAEoAxIZChF0b2RheV9n",
-          "YW1lX3JlYmF0ZRgJIAEoAxIVCg10b2RheV9hZGRfbnVtGAogASgFIlYKHE1z",
-          "Z0luZmluaXRlQWdlbnRRdWVyeVN1YkluZm8SDwoHdXNlcl9pZBgBIAEoBRIU",
-          "CgxjdXJyZW50X3BhZ2UYAiABKAUSDwoHbWF4X3JvdxgDIAEoBSK1AQoZSW5m",
-          "aW5pdGVBZ2VudFF1ZXJ5U3ViSW5mbxIPCgd1c2VyX2lkGAEgASgFEhQKDHN1",
-          "Ym9yZGluYXRlcxgCIAEoBRIRCgl0b3RhbF90YXgYAyABKAMSEQoJdG9kYXlf",
-          "dGF4GAQgASgDEhMKC3RvZGF5X3JhdGlvGAUgASgDEhMKC3RvdGFsX3JhdGlv",
-          "GAYgASgDEhMKC2FnZW50X3JhdGlvGAcgASgFEgwKBHJhbmsYCCABKAUicwog",
-          "TXNnSW5maW5pdGVBZ2VudFF1ZXJ5U3ViSW5mb1Jlc3ASEwoLYWdlbnRfY291",
-          "bnQYASABKAUSEAoIZW5kX2xpc3QYAiABKAgSKAoEaW5mbxgDIAMoCzIaLklu",
-          "ZmluaXRlQWdlbnRRdWVyeVN1YkluZm8iNgoOTXNnU2V0U3ViQWdlbnQSDwoH",
-          "dXNlcl9pZBgBIAEoBRITCgthZ2VudF9yYXRpbxgCIAEoBSKZAQoSTXNnU2V0",
-          "U3ViQWdlbnRSZXNwEgwKBGNvZGUYASABKAUSDwoHdXNlcl9pZBgCIAEoBRIU",
-          "CgxzdWJvcmRpbmF0ZXMYAyABKAUSEQoJdG90YWxfdGF4GAQgASgDEhEKCXRv",
-          "ZGF5X3RheBgFIAEoAxITCgt0b2RheV9yYXRpbxgGIAEoAxITCgthZ2VudF9y",
-          "YXRpbxgHIAEoBSI9ChlNc2dSZWN2aXZlQWdlbnRSZWJhdGVSZXNwEgwKBGNv",
-          "ZGUYASABKAUSEgoKY3VyX3JlYmF0ZRgCIAEoAyIxCg5Nc2dDbGFpbVJlY29y",
-          "ZBIRCglkYXRlX3RpbWUYASABKAkSDAoEZ29sZBgCIAEoBSI2ChVNc2dHZXRD",
-          "bGFpbVJlY29yZFJlc3ASHQoEaW5mbxgBIAMoCzIPLk1zZ0NsYWltUmVjb3Jk",
-          "ImcKE01zZ1F1ZXJ5UGVyZm9ybWFuY2USEQoJZGF0ZV90aW1lGAEgASgJEhIK",
-          "CnRvdGFsX2dvbGQYAiABKAUSEwoLZ2FtZV9yZWJhdGUYAyABKAUSFAoMYWdl",
-          "bnRfcmFiZXRlGAQgASgFIj0KF01zZ1F1ZXJ5UGVyZm9ybWFuY2VSZXNwEiIK",
-          "BGluZm8YASADKAsyFC5Nc2dRdWVyeVBlcmZvcm1hbmNlIn8KEE1zZ1dlZWtN",
-          "b250aEluZm8SEQoJY2FyZF90eXBlGAEgASgFEhAKCGJ1eV90aW1lGAIgASgF",
-          "Eg8KB2lzX3BpY2sYAyABKAUSDQoFYXdhcmQYBCABKAUSEgoKY2FyZF9sZXZl",
-          "bBgFIAEoBRISCgpyZW1haW5fZGF5GAYgASgFIoMBCg9Nc2dXZWVrTW9udGhD",
-          "ZmcSEQoJY2FyZF90eXBlGAEgASgFEhEKCWJ1eV9tb25leRgCIAEoBRINCgVh",
-          "d2FyZBgDIAEoBRISCgpjYXJkX2xldmVsGAQgASgFEhEKCXRvdGFsX2RheRgF",
-          "IAEoBRIUCgxwcm9maXRfcmF0aW8YBiABKAUiZQoXTXNnR2V0V2Vla01vbnRo",
-          "SW5mb1Jlc3ASIwoJY2FyZHNfY2ZnGAEgAygLMhAuTXNnV2Vla01vbnRoQ2Zn",
-          "EiUKCmNhcmRzX2luZm8YAiADKAsyES5Nc2dXZWVrTW9udGhJbmZvIikKFE1z",
-          "Z1dlZWtNb250aEdldEF3YXJkEhEKCWNhcmRfdHlwZRgBIAEoBSJNChhNc2dX",
-          "ZWVrTW9udGhHZXRBd2FyZFJlc3ASEAoIcmV0X2NvZGUYASABKAUSDQoFYXdh",
-          "cmQYAiABKAMSEAoIbmV3X2dvbGQYAyABKAMiNQoPTXNnR2V0UGhvbmVDb2Rl",
-          "EhQKDHBob25lX251bWJlchgBIAEoCRIMCgR0eXBlGAIgASgFIjoKGE1zZ1F1",
-          "ZXJ5UmVjaGFyZ2VHaXZlSW5mbxIeCghVc2VySW5mbxgBIAMoCzIMLk1zZ0Nv",
-          "bW1vbktWYgZwcm90bzM="));
+          "YW1lX3JlYmF0ZRgJIAEoAxIZChF5ZXN0ZXJkYXlfYWRkX251bRgKIAEoBRIV",
+          "Cg10b2RheV9hZGRfbnVtGAsgASgFIlYKHE1zZ0luZmluaXRlQWdlbnRRdWVy",
+          "eVN1YkluZm8SDwoHdXNlcl9pZBgBIAEoBRIUCgxjdXJyZW50X3BhZ2UYAiAB",
+          "KAUSDwoHbWF4X3JvdxgDIAEoBSK1AQoZSW5maW5pdGVBZ2VudFF1ZXJ5U3Vi",
+          "SW5mbxIPCgd1c2VyX2lkGAEgASgFEhQKDHN1Ym9yZGluYXRlcxgCIAEoBRIR",
+          "Cgl0b3RhbF90YXgYAyABKAMSEQoJdG9kYXlfdGF4GAQgASgDEhMKC3RvZGF5",
+          "X3JhdGlvGAUgASgDEhMKC3RvdGFsX3JhdGlvGAYgASgDEhMKC2FnZW50X3Jh",
+          "dGlvGAcgASgFEgwKBHJhbmsYCCABKAUicwogTXNnSW5maW5pdGVBZ2VudFF1",
+          "ZXJ5U3ViSW5mb1Jlc3ASEwoLYWdlbnRfY291bnQYASABKAUSEAoIZW5kX2xp",
+          "c3QYAiABKAgSKAoEaW5mbxgDIAMoCzIaLkluZmluaXRlQWdlbnRRdWVyeVN1",
+          "YkluZm8iNgoOTXNnU2V0U3ViQWdlbnQSDwoHdXNlcl9pZBgBIAEoBRITCgth",
+          "Z2VudF9yYXRpbxgCIAEoBSKZAQoSTXNnU2V0U3ViQWdlbnRSZXNwEgwKBGNv",
+          "ZGUYASABKAUSDwoHdXNlcl9pZBgCIAEoBRIUCgxzdWJvcmRpbmF0ZXMYAyAB",
+          "KAUSEQoJdG90YWxfdGF4GAQgASgDEhEKCXRvZGF5X3RheBgFIAEoAxITCgt0",
+          "b2RheV9yYXRpbxgGIAEoAxITCgthZ2VudF9yYXRpbxgHIAEoBSI9ChlNc2dS",
+          "ZWN2aXZlQWdlbnRSZWJhdGVSZXNwEgwKBGNvZGUYASABKAUSEgoKY3VyX3Jl",
+          "YmF0ZRgCIAEoAyIxCg5Nc2dDbGFpbVJlY29yZBIRCglkYXRlX3RpbWUYASAB",
+          "KAkSDAoEZ29sZBgCIAEoBSI2ChVNc2dHZXRDbGFpbVJlY29yZFJlc3ASHQoE",
+          "aW5mbxgBIAMoCzIPLk1zZ0NsYWltUmVjb3JkImcKE01zZ1F1ZXJ5UGVyZm9y",
+          "bWFuY2USEQoJZGF0ZV90aW1lGAEgASgJEhIKCnRvdGFsX2dvbGQYAiABKAUS",
+          "EwoLZ2FtZV9yZWJhdGUYAyABKAUSFAoMYWdlbnRfcmFiZXRlGAQgASgFIj0K",
+          "F01zZ1F1ZXJ5UGVyZm9ybWFuY2VSZXNwEiIKBGluZm8YASADKAsyFC5Nc2dR",
+          "dWVyeVBlcmZvcm1hbmNlIn8KEE1zZ1dlZWtNb250aEluZm8SEQoJY2FyZF90",
+          "eXBlGAEgASgFEhAKCGJ1eV90aW1lGAIgASgFEg8KB2lzX3BpY2sYAyABKAUS",
+          "DQoFYXdhcmQYBCABKAUSEgoKY2FyZF9sZXZlbBgFIAEoBRISCgpyZW1haW5f",
+          "ZGF5GAYgASgFIoMBCg9Nc2dXZWVrTW9udGhDZmcSEQoJY2FyZF90eXBlGAEg",
+          "ASgFEhEKCWJ1eV9tb25leRgCIAEoBRINCgVhd2FyZBgDIAEoBRISCgpjYXJk",
+          "X2xldmVsGAQgASgFEhEKCXRvdGFsX2RheRgFIAEoBRIUCgxwcm9maXRfcmF0",
+          "aW8YBiABKAUiZQoXTXNnR2V0V2Vla01vbnRoSW5mb1Jlc3ASIwoJY2FyZHNf",
+          "Y2ZnGAEgAygLMhAuTXNnV2Vla01vbnRoQ2ZnEiUKCmNhcmRzX2luZm8YAiAD",
+          "KAsyES5Nc2dXZWVrTW9udGhJbmZvIikKFE1zZ1dlZWtNb250aEdldEF3YXJk",
+          "EhEKCWNhcmRfdHlwZRgBIAEoBSJNChhNc2dXZWVrTW9udGhHZXRBd2FyZFJl",
+          "c3ASEAoIcmV0X2NvZGUYASABKAUSDQoFYXdhcmQYAiABKAMSEAoIbmV3X2dv",
+          "bGQYAyABKAMiNQoPTXNnR2V0UGhvbmVDb2RlEhQKDHBob25lX251bWJlchgB",
+          "IAEoCRIMCgR0eXBlGAIgASgFIjoKGE1zZ1F1ZXJ5UmVjaGFyZ2VHaXZlSW5m",
+          "bxIeCghVc2VySW5mbxgBIAMoCzIMLk1zZ0NvbW1vbktWYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -271,7 +271,7 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgInviteUserInfo), global::MsgInviteUserInfo.Parser, new[]{ "VipLevel", "InviteTime", "BeautifulId", "Nickname" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgInviteUserResp), global::MsgInviteUserResp.Parser, new[]{ "Info" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgQueryCelebrityGoldCoinResp), global::MsgQueryCelebrityGoldCoinResp.Parser, new[]{ "Avatar", "AvatarFrame", "Nickname", "GoldCoin", "State" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgInfiniteAgentQueryMyInfoResp), global::MsgInfiniteAgentQueryMyInfoResp.Parser, new[]{ "AgentLevel", "AgentRatio", "BindId", "CurRebate", "TotalRebate", "GameRebate", "BindInviteCode", "TodayPerformanceRebate", "TodayGameRebate", "TodayAddNum" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgInfiniteAgentQueryMyInfoResp), global::MsgInfiniteAgentQueryMyInfoResp.Parser, new[]{ "AgentLevel", "AgentRatio", "BindId", "CurRebate", "TotalRebate", "GameRebate", "BindInviteCode", "TodayPerformanceRebate", "TodayGameRebate", "YesterdayAddNum", "TodayAddNum" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgInfiniteAgentQuerySubInfo), global::MsgInfiniteAgentQuerySubInfo.Parser, new[]{ "UserId", "CurrentPage", "MaxRow" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::InfiniteAgentQuerySubInfo), global::InfiniteAgentQuerySubInfo.Parser, new[]{ "UserId", "Subordinates", "TotalTax", "TodayTax", "TodayRatio", "TotalRatio", "AgentRatio", "Rank" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgInfiniteAgentQuerySubInfoResp), global::MsgInfiniteAgentQuerySubInfoResp.Parser, new[]{ "AgentCount", "EndList", "Info" }, null, null, null, null),
@@ -18530,6 +18530,7 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
     bindInviteCode_ = other.bindInviteCode_;
     todayPerformanceRebate_ = other.todayPerformanceRebate_;
     todayGameRebate_ = other.todayGameRebate_;
+    yesterdayAddNum_ = other.yesterdayAddNum_;
     todayAddNum_ = other.todayAddNum_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
@@ -18665,11 +18666,25 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
     }
   }
 
-  /// <summary>Field number for the "today_add_num" field.</summary>
-  public const int TodayAddNumFieldNumber = 10;
-  private int todayAddNum_;
+  /// <summary>Field number for the "yesterday_add_num" field.</summary>
+  public const int YesterdayAddNumFieldNumber = 10;
+  private int yesterdayAddNum_;
   /// <summary>
   ///昨日新增人数
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int YesterdayAddNum {
+    get { return yesterdayAddNum_; }
+    set {
+      yesterdayAddNum_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "today_add_num" field.</summary>
+  public const int TodayAddNumFieldNumber = 11;
+  private int todayAddNum_;
+  /// <summary>
+  ///今日新增
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int TodayAddNum {
@@ -18701,6 +18716,7 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
     if (BindInviteCode != other.BindInviteCode) return false;
     if (TodayPerformanceRebate != other.TodayPerformanceRebate) return false;
     if (TodayGameRebate != other.TodayGameRebate) return false;
+    if (YesterdayAddNum != other.YesterdayAddNum) return false;
     if (TodayAddNum != other.TodayAddNum) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
@@ -18717,6 +18733,7 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
     if (BindInviteCode.Length != 0) hash ^= BindInviteCode.GetHashCode();
     if (TodayPerformanceRebate != 0L) hash ^= TodayPerformanceRebate.GetHashCode();
     if (TodayGameRebate != 0L) hash ^= TodayGameRebate.GetHashCode();
+    if (YesterdayAddNum != 0) hash ^= YesterdayAddNum.GetHashCode();
     if (TodayAddNum != 0) hash ^= TodayAddNum.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
@@ -18770,8 +18787,12 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
       output.WriteRawTag(72);
       output.WriteInt64(TodayGameRebate);
     }
-    if (TodayAddNum != 0) {
+    if (YesterdayAddNum != 0) {
       output.WriteRawTag(80);
+      output.WriteInt32(YesterdayAddNum);
+    }
+    if (TodayAddNum != 0) {
+      output.WriteRawTag(88);
       output.WriteInt32(TodayAddNum);
     }
     if (_unknownFields != null) {
@@ -18819,8 +18840,12 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
       output.WriteRawTag(72);
       output.WriteInt64(TodayGameRebate);
     }
-    if (TodayAddNum != 0) {
+    if (YesterdayAddNum != 0) {
       output.WriteRawTag(80);
+      output.WriteInt32(YesterdayAddNum);
+    }
+    if (TodayAddNum != 0) {
+      output.WriteRawTag(88);
       output.WriteInt32(TodayAddNum);
     }
     if (_unknownFields != null) {
@@ -18858,6 +18883,9 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
     }
     if (TodayGameRebate != 0L) {
       size += 1 + pb::CodedOutputStream.ComputeInt64Size(TodayGameRebate);
+    }
+    if (YesterdayAddNum != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(YesterdayAddNum);
     }
     if (TodayAddNum != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(TodayAddNum);
@@ -18899,6 +18927,9 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
     }
     if (other.TodayGameRebate != 0L) {
       TodayGameRebate = other.TodayGameRebate;
+    }
+    if (other.YesterdayAddNum != 0) {
+      YesterdayAddNum = other.YesterdayAddNum;
     }
     if (other.TodayAddNum != 0) {
       TodayAddNum = other.TodayAddNum;
@@ -18954,6 +18985,10 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
           break;
         }
         case 80: {
+          YesterdayAddNum = input.ReadInt32();
+          break;
+        }
+        case 88: {
           TodayAddNum = input.ReadInt32();
           break;
         }
@@ -19008,6 +19043,10 @@ public sealed partial class MsgInfiniteAgentQueryMyInfoResp : pb::IMessage<MsgIn
           break;
         }
         case 80: {
+          YesterdayAddNum = input.ReadInt32();
+          break;
+        }
+        case 88: {
           TodayAddNum = input.ReadInt32();
           break;
         }

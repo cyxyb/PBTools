@@ -1945,6 +1945,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Login_2eproto::offsets[] PROTO
   PROTOBUF_FIELD_OFFSET(::MsgInfiniteAgentQueryMyInfoResp, bind_invite_code_),
   PROTOBUF_FIELD_OFFSET(::MsgInfiniteAgentQueryMyInfoResp, today_performance_rebate_),
   PROTOBUF_FIELD_OFFSET(::MsgInfiniteAgentQueryMyInfoResp, today_game_rebate_),
+  PROTOBUF_FIELD_OFFSET(::MsgInfiniteAgentQueryMyInfoResp, yesterday_add_num_),
   PROTOBUF_FIELD_OFFSET(::MsgInfiniteAgentQueryMyInfoResp, today_add_num_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgInfiniteAgentQuerySubInfo, _internal_metadata_),
@@ -2147,23 +2148,23 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 542, -1, sizeof(::MsgInviteUserResp)},
   { 548, -1, sizeof(::MsgQueryCelebrityGoldCoinResp)},
   { 558, -1, sizeof(::MsgInfiniteAgentQueryMyInfoResp)},
-  { 573, -1, sizeof(::MsgInfiniteAgentQuerySubInfo)},
-  { 581, -1, sizeof(::InfiniteAgentQuerySubInfo)},
-  { 594, -1, sizeof(::MsgInfiniteAgentQuerySubInfoResp)},
-  { 602, -1, sizeof(::MsgSetSubAgent)},
-  { 609, -1, sizeof(::MsgSetSubAgentResp)},
-  { 621, -1, sizeof(::MsgRecviveAgentRebateResp)},
-  { 628, -1, sizeof(::MsgClaimRecord)},
-  { 635, -1, sizeof(::MsgGetClaimRecordResp)},
-  { 641, -1, sizeof(::MsgQueryPerformance)},
-  { 650, -1, sizeof(::MsgQueryPerformanceResp)},
-  { 656, -1, sizeof(::MsgWeekMonthInfo)},
-  { 667, -1, sizeof(::MsgWeekMonthCfg)},
-  { 678, -1, sizeof(::MsgGetWeekMonthInfoResp)},
-  { 685, -1, sizeof(::MsgWeekMonthGetAward)},
-  { 691, -1, sizeof(::MsgWeekMonthGetAwardResp)},
-  { 699, -1, sizeof(::MsgGetPhoneCode)},
-  { 706, -1, sizeof(::MsgQueryRechargeGiveInfo)},
+  { 574, -1, sizeof(::MsgInfiniteAgentQuerySubInfo)},
+  { 582, -1, sizeof(::InfiniteAgentQuerySubInfo)},
+  { 595, -1, sizeof(::MsgInfiniteAgentQuerySubInfoResp)},
+  { 603, -1, sizeof(::MsgSetSubAgent)},
+  { 610, -1, sizeof(::MsgSetSubAgentResp)},
+  { 622, -1, sizeof(::MsgRecviveAgentRebateResp)},
+  { 629, -1, sizeof(::MsgClaimRecord)},
+  { 636, -1, sizeof(::MsgGetClaimRecordResp)},
+  { 642, -1, sizeof(::MsgQueryPerformance)},
+  { 651, -1, sizeof(::MsgQueryPerformanceResp)},
+  { 657, -1, sizeof(::MsgWeekMonthInfo)},
+  { 668, -1, sizeof(::MsgWeekMonthCfg)},
+  { 679, -1, sizeof(::MsgGetWeekMonthInfoResp)},
+  { 686, -1, sizeof(::MsgWeekMonthGetAward)},
+  { 692, -1, sizeof(::MsgWeekMonthGetAwardResp)},
+  { 700, -1, sizeof(::MsgGetPhoneCode)},
+  { 707, -1, sizeof(::MsgQueryRechargeGiveInfo)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -2410,53 +2411,53 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "\004info\030\001 \003(\0132\022.MsgInviteUserInfo\"y\n\035MsgQu"
   "eryCelebrityGoldCoinResp\022\016\n\006avatar\030\001 \001(\t"
   "\022\024\n\014avatar_frame\030\002 \001(\005\022\020\n\010nickname\030\003 \001(\t"
-  "\022\021\n\tgold_coin\030\004 \001(\003\022\r\n\005state\030\005 \001(\010\"\211\002\n\037M"
+  "\022\021\n\tgold_coin\030\004 \001(\003\022\r\n\005state\030\005 \001(\010\"\244\002\n\037M"
   "sgInfiniteAgentQueryMyInfoResp\022\023\n\013agent_"
   "level\030\001 \001(\005\022\023\n\013agent_ratio\030\002 \001(\005\022\017\n\007bind"
   "_id\030\003 \001(\005\022\022\n\ncur_rebate\030\004 \001(\003\022\024\n\014total_r"
   "ebate\030\005 \001(\003\022\023\n\013game_rebate\030\006 \001(\003\022\030\n\020bind"
   "_invite_code\030\007 \001(\t\022 \n\030today_performance_"
   "rebate\030\010 \001(\003\022\031\n\021today_game_rebate\030\t \001(\003\022"
-  "\025\n\rtoday_add_num\030\n \001(\005\"V\n\034MsgInfiniteAge"
-  "ntQuerySubInfo\022\017\n\007user_id\030\001 \001(\005\022\024\n\014curre"
-  "nt_page\030\002 \001(\005\022\017\n\007max_row\030\003 \001(\005\"\265\001\n\031Infin"
-  "iteAgentQuerySubInfo\022\017\n\007user_id\030\001 \001(\005\022\024\n"
-  "\014subordinates\030\002 \001(\005\022\021\n\ttotal_tax\030\003 \001(\003\022\021"
-  "\n\ttoday_tax\030\004 \001(\003\022\023\n\013today_ratio\030\005 \001(\003\022\023"
-  "\n\013total_ratio\030\006 \001(\003\022\023\n\013agent_ratio\030\007 \001(\005"
-  "\022\014\n\004rank\030\010 \001(\005\"s\n MsgInfiniteAgentQueryS"
-  "ubInfoResp\022\023\n\013agent_count\030\001 \001(\005\022\020\n\010end_l"
-  "ist\030\002 \001(\010\022(\n\004info\030\003 \003(\0132\032.InfiniteAgentQ"
-  "uerySubInfo\"6\n\016MsgSetSubAgent\022\017\n\007user_id"
-  "\030\001 \001(\005\022\023\n\013agent_ratio\030\002 \001(\005\"\231\001\n\022MsgSetSu"
-  "bAgentResp\022\014\n\004code\030\001 \001(\005\022\017\n\007user_id\030\002 \001("
-  "\005\022\024\n\014subordinates\030\003 \001(\005\022\021\n\ttotal_tax\030\004 \001"
-  "(\003\022\021\n\ttoday_tax\030\005 \001(\003\022\023\n\013today_ratio\030\006 \001"
-  "(\003\022\023\n\013agent_ratio\030\007 \001(\005\"=\n\031MsgRecviveAge"
-  "ntRebateResp\022\014\n\004code\030\001 \001(\005\022\022\n\ncur_rebate"
-  "\030\002 \001(\003\"1\n\016MsgClaimRecord\022\021\n\tdate_time\030\001 "
-  "\001(\t\022\014\n\004gold\030\002 \001(\005\"6\n\025MsgGetClaimRecordRe"
-  "sp\022\035\n\004info\030\001 \003(\0132\017.MsgClaimRecord\"g\n\023Msg"
-  "QueryPerformance\022\021\n\tdate_time\030\001 \001(\t\022\022\n\nt"
-  "otal_gold\030\002 \001(\005\022\023\n\013game_rebate\030\003 \001(\005\022\024\n\014"
-  "agent_rabete\030\004 \001(\005\"=\n\027MsgQueryPerformanc"
-  "eResp\022\"\n\004info\030\001 \003(\0132\024.MsgQueryPerformanc"
-  "e\"\177\n\020MsgWeekMonthInfo\022\021\n\tcard_type\030\001 \001(\005"
-  "\022\020\n\010buy_time\030\002 \001(\005\022\017\n\007is_pick\030\003 \001(\005\022\r\n\005a"
-  "ward\030\004 \001(\005\022\022\n\ncard_level\030\005 \001(\005\022\022\n\nremain"
-  "_day\030\006 \001(\005\"\203\001\n\017MsgWeekMonthCfg\022\021\n\tcard_t"
-  "ype\030\001 \001(\005\022\021\n\tbuy_money\030\002 \001(\005\022\r\n\005award\030\003 "
-  "\001(\005\022\022\n\ncard_level\030\004 \001(\005\022\021\n\ttotal_day\030\005 \001"
-  "(\005\022\024\n\014profit_ratio\030\006 \001(\005\"e\n\027MsgGetWeekMo"
-  "nthInfoResp\022#\n\tcards_cfg\030\001 \003(\0132\020.MsgWeek"
-  "MonthCfg\022%\n\ncards_info\030\002 \003(\0132\021.MsgWeekMo"
-  "nthInfo\")\n\024MsgWeekMonthGetAward\022\021\n\tcard_"
-  "type\030\001 \001(\005\"M\n\030MsgWeekMonthGetAwardResp\022\020"
-  "\n\010ret_code\030\001 \001(\005\022\r\n\005award\030\002 \001(\003\022\020\n\010new_g"
-  "old\030\003 \001(\003\"5\n\017MsgGetPhoneCode\022\024\n\014phone_nu"
-  "mber\030\001 \001(\t\022\014\n\004type\030\002 \001(\005\":\n\030MsgQueryRech"
-  "argeGiveInfo\022\036\n\010UserInfo\030\001 \003(\0132\014.MsgComm"
-  "onKVb\006proto3"
+  "\031\n\021yesterday_add_num\030\n \001(\005\022\025\n\rtoday_add_"
+  "num\030\013 \001(\005\"V\n\034MsgInfiniteAgentQuerySubInf"
+  "o\022\017\n\007user_id\030\001 \001(\005\022\024\n\014current_page\030\002 \001(\005"
+  "\022\017\n\007max_row\030\003 \001(\005\"\265\001\n\031InfiniteAgentQuery"
+  "SubInfo\022\017\n\007user_id\030\001 \001(\005\022\024\n\014subordinates"
+  "\030\002 \001(\005\022\021\n\ttotal_tax\030\003 \001(\003\022\021\n\ttoday_tax\030\004"
+  " \001(\003\022\023\n\013today_ratio\030\005 \001(\003\022\023\n\013total_ratio"
+  "\030\006 \001(\003\022\023\n\013agent_ratio\030\007 \001(\005\022\014\n\004rank\030\010 \001("
+  "\005\"s\n MsgInfiniteAgentQuerySubInfoResp\022\023\n"
+  "\013agent_count\030\001 \001(\005\022\020\n\010end_list\030\002 \001(\010\022(\n\004"
+  "info\030\003 \003(\0132\032.InfiniteAgentQuerySubInfo\"6"
+  "\n\016MsgSetSubAgent\022\017\n\007user_id\030\001 \001(\005\022\023\n\013age"
+  "nt_ratio\030\002 \001(\005\"\231\001\n\022MsgSetSubAgentResp\022\014\n"
+  "\004code\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\024\n\014subordin"
+  "ates\030\003 \001(\005\022\021\n\ttotal_tax\030\004 \001(\003\022\021\n\ttoday_t"
+  "ax\030\005 \001(\003\022\023\n\013today_ratio\030\006 \001(\003\022\023\n\013agent_r"
+  "atio\030\007 \001(\005\"=\n\031MsgRecviveAgentRebateResp\022"
+  "\014\n\004code\030\001 \001(\005\022\022\n\ncur_rebate\030\002 \001(\003\"1\n\016Msg"
+  "ClaimRecord\022\021\n\tdate_time\030\001 \001(\t\022\014\n\004gold\030\002"
+  " \001(\005\"6\n\025MsgGetClaimRecordResp\022\035\n\004info\030\001 "
+  "\003(\0132\017.MsgClaimRecord\"g\n\023MsgQueryPerforma"
+  "nce\022\021\n\tdate_time\030\001 \001(\t\022\022\n\ntotal_gold\030\002 \001"
+  "(\005\022\023\n\013game_rebate\030\003 \001(\005\022\024\n\014agent_rabete\030"
+  "\004 \001(\005\"=\n\027MsgQueryPerformanceResp\022\"\n\004info"
+  "\030\001 \003(\0132\024.MsgQueryPerformance\"\177\n\020MsgWeekM"
+  "onthInfo\022\021\n\tcard_type\030\001 \001(\005\022\020\n\010buy_time\030"
+  "\002 \001(\005\022\017\n\007is_pick\030\003 \001(\005\022\r\n\005award\030\004 \001(\005\022\022\n"
+  "\ncard_level\030\005 \001(\005\022\022\n\nremain_day\030\006 \001(\005\"\203\001"
+  "\n\017MsgWeekMonthCfg\022\021\n\tcard_type\030\001 \001(\005\022\021\n\t"
+  "buy_money\030\002 \001(\005\022\r\n\005award\030\003 \001(\005\022\022\n\ncard_l"
+  "evel\030\004 \001(\005\022\021\n\ttotal_day\030\005 \001(\005\022\024\n\014profit_"
+  "ratio\030\006 \001(\005\"e\n\027MsgGetWeekMonthInfoResp\022#"
+  "\n\tcards_cfg\030\001 \003(\0132\020.MsgWeekMonthCfg\022%\n\nc"
+  "ards_info\030\002 \003(\0132\021.MsgWeekMonthInfo\")\n\024Ms"
+  "gWeekMonthGetAward\022\021\n\tcard_type\030\001 \001(\005\"M\n"
+  "\030MsgWeekMonthGetAwardResp\022\020\n\010ret_code\030\001 "
+  "\001(\005\022\r\n\005award\030\002 \001(\003\022\020\n\010new_gold\030\003 \001(\003\"5\n\017"
+  "MsgGetPhoneCode\022\024\n\014phone_number\030\001 \001(\t\022\014\n"
+  "\004type\030\002 \001(\005\":\n\030MsgQueryRechargeGiveInfo\022"
+  "\036\n\010UserInfo\030\001 \003(\0132\014.MsgCommonKVb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Login_2eproto_deps[1] = {
 };
@@ -2541,7 +2542,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Log
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Login_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Login_2eproto = {
-  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 8372,
+  false, false, descriptor_table_protodef_Login_2eproto, "Login.proto", 8399,
   &descriptor_table_Login_2eproto_once, descriptor_table_Login_2eproto_sccs, descriptor_table_Login_2eproto_deps, 77, 0,
   schemas, file_default_instances, TableStruct_Login_2eproto::offsets,
   file_level_metadata_Login_2eproto, 77, file_level_enum_descriptors_Login_2eproto, file_level_service_descriptors_Login_2eproto,
@@ -20252,8 +20253,8 @@ MsgInfiniteAgentQueryMyInfoResp::MsgInfiniteAgentQueryMyInfoResp(const MsgInfini
       GetArena());
   }
   ::memcpy(&agent_level_, &from.agent_level_,
-    static_cast<size_t>(reinterpret_cast<char*>(&today_game_rebate_) -
-    reinterpret_cast<char*>(&agent_level_)) + sizeof(today_game_rebate_));
+    static_cast<size_t>(reinterpret_cast<char*>(&today_add_num_) -
+    reinterpret_cast<char*>(&agent_level_)) + sizeof(today_add_num_));
   // @@protoc_insertion_point(copy_constructor:MsgInfiniteAgentQueryMyInfoResp)
 }
 
@@ -20262,8 +20263,8 @@ void MsgInfiniteAgentQueryMyInfoResp::SharedCtor() {
   bind_invite_code_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&agent_level_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&today_game_rebate_) -
-      reinterpret_cast<char*>(&agent_level_)) + sizeof(today_game_rebate_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&today_add_num_) -
+      reinterpret_cast<char*>(&agent_level_)) + sizeof(today_add_num_));
 }
 
 MsgInfiniteAgentQueryMyInfoResp::~MsgInfiniteAgentQueryMyInfoResp() {
@@ -20300,8 +20301,8 @@ void MsgInfiniteAgentQueryMyInfoResp::Clear() {
 
   bind_invite_code_.ClearToEmpty();
   ::memset(&agent_level_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&today_game_rebate_) -
-      reinterpret_cast<char*>(&agent_level_)) + sizeof(today_game_rebate_));
+      reinterpret_cast<char*>(&today_add_num_) -
+      reinterpret_cast<char*>(&agent_level_)) + sizeof(today_add_num_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -20377,9 +20378,16 @@ const char* MsgInfiniteAgentQueryMyInfoResp::_InternalParse(const char* ptr, ::P
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 today_add_num = 10;
+      // int32 yesterday_add_num = 10;
       case 10:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
+          yesterday_add_num_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 today_add_num = 11;
+      case 11:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 88)) {
           today_add_num_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
@@ -20470,10 +20478,16 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(9, this->_internal_today_game_rebate(), target);
   }
 
-  // int32 today_add_num = 10;
+  // int32 yesterday_add_num = 10;
+  if (this->yesterday_add_num() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(10, this->_internal_yesterday_add_num(), target);
+  }
+
+  // int32 today_add_num = 11;
   if (this->today_add_num() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(10, this->_internal_today_add_num(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(11, this->_internal_today_add_num(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -20541,11 +20555,11 @@ size_t MsgInfiniteAgentQueryMyInfoResp::ByteSizeLong() const {
         this->_internal_bind_id());
   }
 
-  // int32 today_add_num = 10;
-  if (this->today_add_num() != 0) {
+  // int32 yesterday_add_num = 10;
+  if (this->yesterday_add_num() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_today_add_num());
+        this->_internal_yesterday_add_num());
   }
 
   // int64 today_performance_rebate = 8;
@@ -20560,6 +20574,13 @@ size_t MsgInfiniteAgentQueryMyInfoResp::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_today_game_rebate());
+  }
+
+  // int32 today_add_num = 11;
+  if (this->today_add_num() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_today_add_num());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -20614,14 +20635,17 @@ void MsgInfiniteAgentQueryMyInfoResp::MergeFrom(const MsgInfiniteAgentQueryMyInf
   if (from.bind_id() != 0) {
     _internal_set_bind_id(from._internal_bind_id());
   }
-  if (from.today_add_num() != 0) {
-    _internal_set_today_add_num(from._internal_today_add_num());
+  if (from.yesterday_add_num() != 0) {
+    _internal_set_yesterday_add_num(from._internal_yesterday_add_num());
   }
   if (from.today_performance_rebate() != 0) {
     _internal_set_today_performance_rebate(from._internal_today_performance_rebate());
   }
   if (from.today_game_rebate() != 0) {
     _internal_set_today_game_rebate(from._internal_today_game_rebate());
+  }
+  if (from.today_add_num() != 0) {
+    _internal_set_today_add_num(from._internal_today_add_num());
   }
 }
 
@@ -20648,8 +20672,8 @@ void MsgInfiniteAgentQueryMyInfoResp::InternalSwap(MsgInfiniteAgentQueryMyInfoRe
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   bind_invite_code_.Swap(&other->bind_invite_code_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgInfiniteAgentQueryMyInfoResp, today_game_rebate_)
-      + sizeof(MsgInfiniteAgentQueryMyInfoResp::today_game_rebate_)
+      PROTOBUF_FIELD_OFFSET(MsgInfiniteAgentQueryMyInfoResp, today_add_num_)
+      + sizeof(MsgInfiniteAgentQueryMyInfoResp::today_add_num_)
       - PROTOBUF_FIELD_OFFSET(MsgInfiniteAgentQueryMyInfoResp, agent_level_)>(
           reinterpret_cast<char*>(&agent_level_),
           reinterpret_cast<char*>(&other->agent_level_));

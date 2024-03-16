@@ -11374,9 +11374,10 @@ class MsgInfiniteAgentQueryMyInfoResp PROTOBUF_FINAL :
     kTotalRebateFieldNumber = 5,
     kGameRebateFieldNumber = 6,
     kBindIdFieldNumber = 3,
-    kTodayAddNumFieldNumber = 10,
+    kYesterdayAddNumFieldNumber = 10,
     kTodayPerformanceRebateFieldNumber = 8,
     kTodayGameRebateFieldNumber = 9,
+    kTodayAddNumFieldNumber = 11,
   };
   // string bind_invite_code = 7;
   void clear_bind_invite_code();
@@ -11448,13 +11449,13 @@ class MsgInfiniteAgentQueryMyInfoResp PROTOBUF_FINAL :
   void _internal_set_bind_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 today_add_num = 10;
-  void clear_today_add_num();
-  ::PROTOBUF_NAMESPACE_ID::int32 today_add_num() const;
-  void set_today_add_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // int32 yesterday_add_num = 10;
+  void clear_yesterday_add_num();
+  ::PROTOBUF_NAMESPACE_ID::int32 yesterday_add_num() const;
+  void set_yesterday_add_num(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_today_add_num() const;
-  void _internal_set_today_add_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_yesterday_add_num() const;
+  void _internal_set_yesterday_add_num(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int64 today_performance_rebate = 8;
@@ -11475,6 +11476,15 @@ class MsgInfiniteAgentQueryMyInfoResp PROTOBUF_FINAL :
   void _internal_set_today_game_rebate(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
+  // int32 today_add_num = 11;
+  void clear_today_add_num();
+  ::PROTOBUF_NAMESPACE_ID::int32 today_add_num() const;
+  void set_today_add_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_today_add_num() const;
+  void _internal_set_today_add_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgInfiniteAgentQueryMyInfoResp)
  private:
   class _Internal;
@@ -11489,9 +11499,10 @@ class MsgInfiniteAgentQueryMyInfoResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int64 total_rebate_;
   ::PROTOBUF_NAMESPACE_ID::int64 game_rebate_;
   ::PROTOBUF_NAMESPACE_ID::int32 bind_id_;
-  ::PROTOBUF_NAMESPACE_ID::int32 today_add_num_;
+  ::PROTOBUF_NAMESPACE_ID::int32 yesterday_add_num_;
   ::PROTOBUF_NAMESPACE_ID::int64 today_performance_rebate_;
   ::PROTOBUF_NAMESPACE_ID::int64 today_game_rebate_;
+  ::PROTOBUF_NAMESPACE_ID::int32 today_add_num_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -22892,7 +22903,27 @@ inline void MsgInfiniteAgentQueryMyInfoResp::set_today_game_rebate(::PROTOBUF_NA
   // @@protoc_insertion_point(field_set:MsgInfiniteAgentQueryMyInfoResp.today_game_rebate)
 }
 
-// int32 today_add_num = 10;
+// int32 yesterday_add_num = 10;
+inline void MsgInfiniteAgentQueryMyInfoResp::clear_yesterday_add_num() {
+  yesterday_add_num_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgInfiniteAgentQueryMyInfoResp::_internal_yesterday_add_num() const {
+  return yesterday_add_num_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgInfiniteAgentQueryMyInfoResp::yesterday_add_num() const {
+  // @@protoc_insertion_point(field_get:MsgInfiniteAgentQueryMyInfoResp.yesterday_add_num)
+  return _internal_yesterday_add_num();
+}
+inline void MsgInfiniteAgentQueryMyInfoResp::_internal_set_yesterday_add_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  yesterday_add_num_ = value;
+}
+inline void MsgInfiniteAgentQueryMyInfoResp::set_yesterday_add_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_yesterday_add_num(value);
+  // @@protoc_insertion_point(field_set:MsgInfiniteAgentQueryMyInfoResp.yesterday_add_num)
+}
+
+// int32 today_add_num = 11;
 inline void MsgInfiniteAgentQueryMyInfoResp::clear_today_add_num() {
   today_add_num_ = 0;
 }

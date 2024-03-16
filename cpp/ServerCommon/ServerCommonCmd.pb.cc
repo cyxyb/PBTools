@@ -90,7 +90,7 @@ const char descriptor_table_protodef_ServerCommonCmd_2eproto[] PROTOBUF_SECTION_
   "Chat2Center_SendTrumpetMsg\020\363.\022#\n\036Center2"
   "Chat_SendTrumpetMsgResp\020\364.\022\035\n\030Center2Cha"
   "t_KickUserResp\020\365.\022#\n\036Center2Chat_LimitCh"
-  "atLoginResp\020\366.*\246%\n\010EMsgIDDB\022\020\n\014MsgIDDB_N"
+  "atLoginResp\020\366.*\262&\n\010EMsgIDDB\022\020\n\014MsgIDDB_N"
   "ULL\020\000\022\035\n\031CENTER2DB_UpdateOnlineNum\020\001\022\034\n\030"
   "CENTER2DB_InitServerData\020\002\022\033\n\027CENTER2DB_"
   "RegisterLogin\020\003\022\035\n\031CENTER2DB_UnregisterL"
@@ -189,30 +189,34 @@ const char descriptor_table_protodef_ServerCommonCmd_2eproto[] PROTOBUF_SECTION_
   "OGIN2DB_InfiniteQueryUserInfo\020\322\010\022\'\n\"DB2L"
   "OGIN_InfiniteQueryUserInfoResp\020\323\010\022#\n\036LOG"
   "IN2DB_QueryRechargeGiveInfo\020\324\010\022\'\n\"DB2LOG"
-  "IN_QueryRechargeGiveInfoResp\020\325\010\022\022\n\rGAME2"
-  "DB_Login\020\321\017\022\026\n\021DB2GAME_LoginResp\020\322\017\022\032\n\025G"
-  "AME2DB_LoadCheatRate\020\323\017\022\032\n\025DB2GAME_LoadC"
-  "heatRate\020\324\017\022\027\n\022GAME2DB_WriteScore\020\325\017\022\027\n\022"
-  "DB2GAME_WriteScore\020\326\017\022\"\n\035GAME2DB_FingerG"
-  "uessWriteScore\020\327\017\022\"\n\035DB2GAME_FingerGuess"
-  "WriteScore\020\330\017\022#\n\036GAME2DB_FingerGuessQuer"
-  "yRecord\020\331\017\022#\n\036DB2GAME_FingerGuessRoundRe"
-  "cord\020\332\017\022!\n\034DB2GAME_FingerGuessDayRecord\020"
-  "\333\017\022 \n\033GAME2DB_WriteDisConnectData\020\334\017\022\034\n\027"
-  "GAME2DB_QueryJckpotInfo\020\335\017\022 \n\033DB2GAME_Qu"
-  "eryJckpotInfoResp\020\336\017\022\035\n\030GAME2DB_UpdateJc"
-  "kpotInfo\020\337\017\022\025\n\020GAME2DB_LoginOut\020\340\017\022\035\n\030GA"
-  "ME2DB_ClearOfflineUser\020\341\017\022\032\n\025GAME2DB_Use"
-  "rReConnect\020\342\017\022\027\n\022GAME2DB_ApplyRobot\020\343\017\022\033"
-  "\n\026DB2GAME_ApplyRobotResp\020\344\017\022\034\n\027GAME2DB_Q"
-  "ueryPlayerGold\020\345\017\022 \n\033DB2GAME_QueryPlayer"
-  "GoldResp\020\346\017\022\022\n\rCHAT2DB_Login\020\271\027\022\026\n\021DB2CH"
-  "AT_LoginResp\020\272\027\022\033\n\026CHAT2DB_SendTrumpetMs"
-  "g\020\273\027\022\037\n\032DB2CHAT_SendTrumpetMsgResp\020\274\027\022 \n"
-  "\033App2DB_UpdatePhoneCodeState\020\241\037*q\n\021EGame"
-  "BattleTypeID\022\017\n\013GAME_NORMAL\020\000\022\020\n\014GAME_HU"
-  "NDRED\020\001\022\017\n\013GAME_CREATE\020\002\022\017\n\013GAME_BATTLE\020"
-  "\003\022\027\n\023GAME_BANKER_HUNDERD\020\004b\006proto3"
+  "IN_QueryRechargeGiveInfoResp\020\325\010\022\034\n\027LOGIN"
+  "2DB_GetClaimRecord\020\326\010\022 \n\033DB2LOGIN_GetCla"
+  "imRecordResp\020\327\010\022\"\n\035LOGIN2DB_GetPerforman"
+  "ceRecord\020\330\010\022&\n!DB2LOGIN_GetPerformanceRe"
+  "cordResp\020\331\010\022\022\n\rGAME2DB_Login\020\321\017\022\026\n\021DB2GA"
+  "ME_LoginResp\020\322\017\022\032\n\025GAME2DB_LoadCheatRate"
+  "\020\323\017\022\032\n\025DB2GAME_LoadCheatRate\020\324\017\022\027\n\022GAME2"
+  "DB_WriteScore\020\325\017\022\027\n\022DB2GAME_WriteScore\020\326"
+  "\017\022\"\n\035GAME2DB_FingerGuessWriteScore\020\327\017\022\"\n"
+  "\035DB2GAME_FingerGuessWriteScore\020\330\017\022#\n\036GAM"
+  "E2DB_FingerGuessQueryRecord\020\331\017\022#\n\036DB2GAM"
+  "E_FingerGuessRoundRecord\020\332\017\022!\n\034DB2GAME_F"
+  "ingerGuessDayRecord\020\333\017\022 \n\033GAME2DB_WriteD"
+  "isConnectData\020\334\017\022\034\n\027GAME2DB_QueryJckpotI"
+  "nfo\020\335\017\022 \n\033DB2GAME_QueryJckpotInfoResp\020\336\017"
+  "\022\035\n\030GAME2DB_UpdateJckpotInfo\020\337\017\022\025\n\020GAME2"
+  "DB_LoginOut\020\340\017\022\035\n\030GAME2DB_ClearOfflineUs"
+  "er\020\341\017\022\032\n\025GAME2DB_UserReConnect\020\342\017\022\027\n\022GAM"
+  "E2DB_ApplyRobot\020\343\017\022\033\n\026DB2GAME_ApplyRobot"
+  "Resp\020\344\017\022\034\n\027GAME2DB_QueryPlayerGold\020\345\017\022 \n"
+  "\033DB2GAME_QueryPlayerGoldResp\020\346\017\022\022\n\rCHAT2"
+  "DB_Login\020\271\027\022\026\n\021DB2CHAT_LoginResp\020\272\027\022\033\n\026C"
+  "HAT2DB_SendTrumpetMsg\020\273\027\022\037\n\032DB2CHAT_Send"
+  "TrumpetMsgResp\020\274\027\022 \n\033App2DB_UpdatePhoneC"
+  "odeState\020\241\037*q\n\021EGameBattleTypeID\022\017\n\013GAME"
+  "_NORMAL\020\000\022\020\n\014GAME_HUNDRED\020\001\022\017\n\013GAME_CREA"
+  "TE\020\002\022\017\n\013GAME_BATTLE\020\003\022\027\n\023GAME_BANKER_HUN"
+  "DERD\020\004b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_ServerCommonCmd_2eproto_deps[1] = {
 };
@@ -220,7 +224,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Ser
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ServerCommonCmd_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ServerCommonCmd_2eproto = {
-  false, false, descriptor_table_protodef_ServerCommonCmd_2eproto, "ServerCommonCmd.proto", 7634,
+  false, false, descriptor_table_protodef_ServerCommonCmd_2eproto, "ServerCommonCmd.proto", 7774,
   &descriptor_table_ServerCommonCmd_2eproto_once, descriptor_table_ServerCommonCmd_2eproto_sccs, descriptor_table_ServerCommonCmd_2eproto_deps, 0, 0,
   schemas, file_default_instances, TableStruct_ServerCommonCmd_2eproto::offsets,
   file_level_metadata_ServerCommonCmd_2eproto, 0, file_level_enum_descriptors_ServerCommonCmd_2eproto, file_level_service_descriptors_ServerCommonCmd_2eproto,
@@ -462,6 +466,10 @@ bool EMsgIDDB_IsValid(int value) {
     case 1107:
     case 1108:
     case 1109:
+    case 1110:
+    case 1111:
+    case 1112:
+    case 1113:
     case 2001:
     case 2002:
     case 2003:
