@@ -57,7 +57,8 @@ enum EMsgIDServerInternalProto
 	CENTER2LOGIN_NotifyWebAddVipExp				= 35;	//通知后台更新Vip经验
 	LOGIN2CENTER_KickUser						= 36;	//踢人
 	CENTER2LOGIN_NotifyWebBuyWeekMonthCard		= 37;	//通知后台购买周卡月卡成功
-	
+	CENTER2LOGIN_NotifySysMaintain				= 38;	//通知服务器即将维护时间点
+
 	//1001-2000 game <-> center
 	GAME2CENTER_Register			= 2001;	//游戏服务器注册
 	GAME2CENTER_UnRegister			= 2002;	//游戏服务器注销
@@ -66,6 +67,7 @@ enum EMsgIDServerInternalProto
 	GAME2CENTER_UpdateOnlineNum		= 2005;	//更新游戏服务器在线人数
 	GAME2CENTER_BroadcastTip		= 2006;	//游戏请求跑马灯广播
 	CENTER2GAME_KickUserResp		= 2007;	//踢玩家
+
 	///////////////////////////////////PVP///////////////////////////////////
 	GAME2CENTER_PvpAddTable			= 2050;	//通知桌子增加
 	GAME2CENTER_PvpDelTable			= 2051;	//通知桌子删除
