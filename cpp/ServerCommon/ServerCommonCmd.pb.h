@@ -198,6 +198,8 @@ enum EMsgIDDB : int {
   CENTER2DB_UpdateRankRichMan = 14,
   CENTER2DB_InserRankBigWin = 15,
   CENTER2DB_GameServerUnRegister = 16,
+  CENTER2DB_GetServerState = 17,
+  DB2CENTER_GetServerStateResp = 18,
   LOGIN2DB_Login = 1001,
   DB2LOGIN_LoginResp = 1002,
   DB2LOGIN_LoadPlayerData = 1003,
