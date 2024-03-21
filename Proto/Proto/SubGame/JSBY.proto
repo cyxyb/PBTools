@@ -300,9 +300,9 @@ message CSRequestAttack
 	 int32 Mode = 2;					//模式()
 	 int32 MonsterId = 3;				//怪物kindID
 	 int32 PositionId = 4;				//位置ID
-	 int32 UsePositionId = 5;			//无用
-	 int32 UsePositionTimes = 6;		//无用
-	 int32 SpecialType = 7;				//
+	 int32 UsePositionId = 5;			//当前爆爆怪ID
+	 int32 UsePositionTimes = 6;		//位置ID
+	 int32 SpecialType = 7;				//特殊怪物攻击类型 1.巨龙2.毒爆3.尸鬼龙 5.气球怪
 	 repeated SpecialMonsterAttack SpecialInfo = 8;
 	 bool DragonEnd = 9;				//
 	 int32 HeroUniqueId = 10;			//英雄唯一ID
@@ -653,13 +653,13 @@ message SCPoisonBombLocation
 }
 message PoisonbombConvert
 {
-	 int32 MonsterId = 1;
-	 int32 PositionId = 2;
-	 int32 PoisonBombId = 3;
+	 int32 MonsterId = 1;	//死亡鱼的kindID
+	 int32 PositionId = 2;	//死亡鱼的ID
+	 int32 PoisonBombId = 3;//触发效果杀死鱼 触发效果鱼ID
 }
 message SCPoisonBombConvert
 {
-	 int32 PoisonBombId = 1;
+	 int32 PoisonBombId = 1;		//触发效果杀死鱼 触发效果鱼ID
 	 repeated PoisonbombConvert Info = 2;
 	 int32 KillPlayerID = 3;
 }
