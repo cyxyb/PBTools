@@ -315,6 +315,15 @@ message SpecialAttackInfo
 	 int32 KillID = 1;
 	 int32 SelfID = 2;
 }
+
+message SCQueenDieData
+{
+	int32	type = 1;		//龙母：1 狼主：2 艾瑞卡：3 维克多：4
+	int32	rand_mul = 2;	//龙母随机倍数
+	repeated int32	base_outside = 3;
+	repeated int32	base_inside = 4;
+}
+
 message SCSyncMoney
 {
 	 int32 Money = 1;
@@ -330,7 +339,7 @@ message SCSyncMoney
 	 int32 Eared = 11;
 	 int32 AddRatio = 12;
 	 int32 BalloonRatio = 13;
-	 string Others = 14;
+	 SCQueenDieData Others = 14;
 	 int32 GiantHitPower = 15;
 	 int32 MxlSealMoney = 16;
 	 int32 MxlSealAddAwardRatio = 17;

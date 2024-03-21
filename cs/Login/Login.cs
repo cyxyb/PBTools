@@ -382,7 +382,7 @@ public sealed partial class MsgPlayerLogin : pb::IMessage<MsgPlayerLogin>
   public const int PlatformIdFieldNumber = 3;
   private int platformId_;
   /// <summary>
-  ///平台id
+  ///平台id 0苹果 1安卓 2其他
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int PlatformId {
@@ -424,7 +424,7 @@ public sealed partial class MsgPlayerLogin : pb::IMessage<MsgPlayerLogin>
   public const int LoginTypeFieldNumber = 6;
   private int loginType_;
   /// <summary>
-  ///1:游客登录 2:账号登录 3:第三方登录 4:注册账号
+  ///1:游客登录 2:账号登录 3:第三方登录 4:注册账号 5:短信验证登陆
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int LoginType {
