@@ -228,12 +228,17 @@ enum EMsgIDLogin : int {
   MsgIDAgent_InfiniteQueryUserInfoResp = 141,
   MsgIDRunGame_QueryRechargeGiveInfo = 142,
   MsgIDRunGame_QueryRechargeGiveInfoResp = 143,
+  MsgIDAgent_GetClaimRecord = 144,
+  MsgIDAgent_GetClaimRecordResp = 145,
+  MsgIDAgent_GetPerformanceRecord = 146,
+  MsgIDAgent_GetPerformanceRecordResp = 147,
+  MsgIDLogin_NotifySysMaintainResp = 148,
   EMsgIDLogin_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDLogin_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDLogin_IsValid(int value);
 constexpr EMsgIDLogin EMsgIDLogin_MIN = MsgIDLogin_Null;
-constexpr EMsgIDLogin EMsgIDLogin_MAX = MsgIDRunGame_QueryRechargeGiveInfoResp;
+constexpr EMsgIDLogin EMsgIDLogin_MAX = MsgIDLogin_NotifySysMaintainResp;
 constexpr int EMsgIDLogin_ARRAYSIZE = EMsgIDLogin_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDLogin_descriptor();
@@ -270,6 +275,7 @@ enum EMsgIDGame : int {
   MsgIDGame_AddOneRecord = 1018,
   MsgIDGame_NotifyPlayerOfflineResp = 1019,
   MsgIDGame_ChangeTable = 1020,
+  MsgIDGame_NotifySysMaintainResp = 1021,
   MsgIDGame_Pvp_GetRoomConfigResp = 1051,
   MsgIDGame_Pvp_SendTableListResp = 1053,
   MsgIDGame_Pvp_CreateTable = 1054,

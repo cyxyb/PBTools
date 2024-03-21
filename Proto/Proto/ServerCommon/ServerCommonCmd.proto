@@ -57,7 +57,8 @@ enum EMsgIDServerInternalProto
 	CENTER2LOGIN_NotifyWebAddVipExp				= 35;	//通知后台更新Vip经验
 	LOGIN2CENTER_KickUser						= 36;	//踢人
 	CENTER2LOGIN_NotifyWebBuyWeekMonthCard		= 37;	//通知后台购买周卡月卡成功
-	
+	CENTER2LOGIN_NotifySysMaintain				= 38;	//通知服务器即将维护时间点
+
 	//1001-2000 game <-> center
 	GAME2CENTER_Register			= 2001;	//游戏服务器注册
 	GAME2CENTER_UnRegister			= 2002;	//游戏服务器注销
@@ -66,6 +67,7 @@ enum EMsgIDServerInternalProto
 	GAME2CENTER_UpdateOnlineNum		= 2005;	//更新游戏服务器在线人数
 	GAME2CENTER_BroadcastTip		= 2006;	//游戏请求跑马灯广播
 	CENTER2GAME_KickUserResp		= 2007;	//踢玩家
+
 	///////////////////////////////////PVP///////////////////////////////////
 	GAME2CENTER_PvpAddTable			= 2050;	//通知桌子增加
 	GAME2CENTER_PvpDelTable			= 2051;	//通知桌子删除
@@ -120,7 +122,9 @@ enum EMsgIDDB
 	CENTER2DB_UpdateRankRichMan				= 14;	//刷新大富豪排行榜
 	CENTER2DB_InserRankBigWin				= 15;	//添加今日赢家排行榜
 	CENTER2DB_GameServerUnRegister			= 16;	//游戏服务器关闭
-		
+	CENTER2DB_GetServerState				= 17;	//查询服务器状态
+	DB2CENTER_GetServerStateResp			= 18;	//查询服务器状态返回
+
 	//1001-2000 LoginServer2DB		
 	LOGIN2DB_Login							= 1001;	//玩家登录
 	DB2LOGIN_LoginResp						= 1002;	//玩家登录返回
@@ -231,6 +235,10 @@ enum EMsgIDDB
 	DB2LOGIN_InfiniteQueryUserInfoResp		= 1107;	//查询某个代理信息返回
 	LOGIN2DB_QueryRechargeGiveInfo			= 1108; //查询玩家充值/赠送金币详情
 	DB2LOGIN_QueryRechargeGiveInfoResp		= 1109; //查询玩家充值/赠送金币详情返回
+	LOGIN2DB_GetClaimRecord					= 1110; //查询返利领取记录
+	DB2LOGIN_GetClaimRecordResp				= 1111; //查询返利领取记录返回
+	LOGIN2DB_GetPerformanceRecord			= 1112;	//查询个人业绩
+	DB2LOGIN_GetPerformanceRecordResp		= 1113;	//查询个人业绩返回
 	//2001-3000 GameServer2DB		
 	GAME2DB_Login							= 2001;	//玩家登录游戏
 	DB2GAME_LoginResp						= 2002;	//玩家登录游戏返回

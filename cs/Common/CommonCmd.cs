@@ -25,7 +25,7 @@ public static partial class CommonCmdReflection {
           "ChxQcm90by9Db21tb24vQ29tbW9uQ21kLnByb3RvKoYBCgpFTXNnSURNYWlu",
           "EhMKD0VNc2dJRE1haW5fTnVsbBAAEh4KGUVNc2dJRE1haW5fTG9naW5fVXNl",
           "ckluZm8Q6QcSFAoPRU1zZ0lETWFpbl9HYW1lENEPEhcKEkVNc2dJRE1haW5f",
-          "U3ViR2FtZRDSDxIUCg9FTXNnSURNYWluX0NoYXQQuRcqmiYKC0VNc2dJRExv",
+          "U3ViR2FtZRDSDxIUCg9FTXNnSURNYWluX0NoYXQQuRcq1ScKC0VNc2dJRExv",
           "Z2luEhMKD01zZ0lETG9naW5fTnVsbBAAEhQKEE1zZ0lETG9naW5fTG9naW4Q",
           "ARIYChRNc2dJRExvZ2luX0xvZ2luUmVzcBACEh0KGU1zZ0lETG9naW5fTW9k",
           "aWZ5Tmlja05hbWUQAxIhCh1Nc2dJRExvZ2luX01vZGlmeU5pY2tOYW1lUmVz",
@@ -134,20 +134,25 @@ public static partial class CommonCmdReflection {
           "dF9JbmZpbml0ZVF1ZXJ5VXNlckluZm8QjAESKQokTXNnSURBZ2VudF9JbmZp",
           "bml0ZVF1ZXJ5VXNlckluZm9SZXNwEI0BEicKIk1zZ0lEUnVuR2FtZV9RdWVy",
           "eVJlY2hhcmdlR2l2ZUluZm8QjgESKwomTXNnSURSdW5HYW1lX1F1ZXJ5UmVj",
-          "aGFyZ2VHaXZlSW5mb1Jlc3AQjwEqyAkKCkVNc2dJREdhbWUSEgoOTXNnSURH",
-          "YW1lX051bGwQABIUCg9Nc2dJREdhbWVfTG9naW4Q6QcSGAoTTXNnSURHYW1l",
-          "X0xvZ2luUmVzcBDqBxIeChlNc2dJREdhbWVfU3F1ZWV6ZVNlYXRSZXNwEOsH",
-          "EhUKEE1zZ0lER2FtZV9Mb2dvdXQQ7AcSGgoVTXNnSURHYW1lX0F1dG9TaXRE",
-          "b3duEO0HEhoKFU1zZ0lER2FtZV9TaXREb3duUmVzcBDuBxIhChxNc2dJREdh",
-          "bWVfU3luY1BsYXllckluZm9SZXNwEO8HEiYKIU1zZ0lER2FtZV9Ob3RpZnlQ",
-          "bGF5ZXJTdGFuZFVwUmVzcBDwBxIjCh5Nc2dJREdhbWVfU3luY1BsYXllcnNT",
-          "Y29yZVJlc3AQ8QcSHAoXTXNnSURHYW1lX1NlbmRHYW1lU2VuY2UQ8gcSIAob",
-          "TXNnSURHYW1lX1NlbmRHYW1lU2VuY2VSZXNwEPMHEiAKG01zZ0lER2FtZV9O",
-          "b3RpZnlNZXNzYWdlUmVzcBD0BxIaChVNc2dJREdhbWVfUXVlcnlSZWNvcmQQ",
-          "9wcSIwoeTXNnSURHYW1lX1F1ZXJ5Um91bmRSZWNvcmRSZXNwEPgHEiEKHE1z",
-          "Z0lER2FtZV9RdWVyeURheVJlY29yZFJlc3AQ+QcSGwoWTXNnSURHYW1lX0Fk",
-          "ZE9uZVJlY29yZBD6BxImCiFNc2dJREdhbWVfTm90aWZ5UGxheWVyT2ZmbGlu",
-          "ZVJlc3AQ+wcSGgoVTXNnSURHYW1lX0NoYW5nZVRhYmxlEPwHEiQKH01zZ0lE",
+          "aGFyZ2VHaXZlSW5mb1Jlc3AQjwESHgoZTXNnSURBZ2VudF9HZXRDbGFpbVJl",
+          "Y29yZBCQARIiCh1Nc2dJREFnZW50X0dldENsYWltUmVjb3JkUmVzcBCRARIk",
+          "Ch9Nc2dJREFnZW50X0dldFBlcmZvcm1hbmNlUmVjb3JkEJIBEigKI01zZ0lE",
+          "QWdlbnRfR2V0UGVyZm9ybWFuY2VSZWNvcmRSZXNwEJMBEiUKIE1zZ0lETG9n",
+          "aW5fTm90aWZ5U3lzTWFpbnRhaW5SZXNwEJQBKu4JCgpFTXNnSURHYW1lEhIK",
+          "Dk1zZ0lER2FtZV9OdWxsEAASFAoPTXNnSURHYW1lX0xvZ2luEOkHEhgKE01z",
+          "Z0lER2FtZV9Mb2dpblJlc3AQ6gcSHgoZTXNnSURHYW1lX1NxdWVlemVTZWF0",
+          "UmVzcBDrBxIVChBNc2dJREdhbWVfTG9nb3V0EOwHEhoKFU1zZ0lER2FtZV9B",
+          "dXRvU2l0RG93bhDtBxIaChVNc2dJREdhbWVfU2l0RG93blJlc3AQ7gcSIQoc",
+          "TXNnSURHYW1lX1N5bmNQbGF5ZXJJbmZvUmVzcBDvBxImCiFNc2dJREdhbWVf",
+          "Tm90aWZ5UGxheWVyU3RhbmRVcFJlc3AQ8AcSIwoeTXNnSURHYW1lX1N5bmNQ",
+          "bGF5ZXJzU2NvcmVSZXNwEPEHEhwKF01zZ0lER2FtZV9TZW5kR2FtZVNlbmNl",
+          "EPIHEiAKG01zZ0lER2FtZV9TZW5kR2FtZVNlbmNlUmVzcBDzBxIgChtNc2dJ",
+          "REdhbWVfTm90aWZ5TWVzc2FnZVJlc3AQ9AcSGgoVTXNnSURHYW1lX1F1ZXJ5",
+          "UmVjb3JkEPcHEiMKHk1zZ0lER2FtZV9RdWVyeVJvdW5kUmVjb3JkUmVzcBD4",
+          "BxIhChxNc2dJREdhbWVfUXVlcnlEYXlSZWNvcmRSZXNwEPkHEhsKFk1zZ0lE",
+          "R2FtZV9BZGRPbmVSZWNvcmQQ+gcSJgohTXNnSURHYW1lX05vdGlmeVBsYXll",
+          "ck9mZmxpbmVSZXNwEPsHEhoKFU1zZ0lER2FtZV9DaGFuZ2VUYWJsZRD8BxIk",
+          "Ch9Nc2dJREdhbWVfTm90aWZ5U3lzTWFpbnRhaW5SZXNwEP0HEiQKH01zZ0lE",
           "R2FtZV9QdnBfR2V0Um9vbUNvbmZpZ1Jlc3AQmwgSJAofTXNnSURHYW1lX1B2",
           "cF9TZW5kVGFibGVMaXN0UmVzcBCdCBIeChlNc2dJREdhbWVfUHZwX0NyZWF0",
           "ZVRhYmxlEJ4IEiIKHU1zZ0lER2FtZV9QdnBfQ3JlYXRlVGFibGVSZXNwEJ8I",
@@ -773,6 +778,26 @@ public enum EMsgIDLogin {
   ///查询玩家充值/赠送金币详情返回(MsgQueryRechargeGiveInfo)
   /// </summary>
   [pbr::OriginalName("MsgIDRunGame_QueryRechargeGiveInfoResp")] MsgIdrunGameQueryRechargeGiveInfoResp = 143,
+  /// <summary>
+  ///查询返利领取记录(MsgCommonN32)
+  /// </summary>
+  [pbr::OriginalName("MsgIDAgent_GetClaimRecord")] MsgIdagentGetClaimRecord = 144,
+  /// <summary>
+  ///查询查询返利领取记录(MsgGetClaimRecordResp)
+  /// </summary>
+  [pbr::OriginalName("MsgIDAgent_GetClaimRecordResp")] MsgIdagentGetClaimRecordResp = 145,
+  /// <summary>
+  ///查询个人业绩(MsgCommonN32)
+  /// </summary>
+  [pbr::OriginalName("MsgIDAgent_GetPerformanceRecord")] MsgIdagentGetPerformanceRecord = 146,
+  /// <summary>
+  ///查询个人业绩返回(MsgQueryPerformanceResp)
+  /// </summary>
+  [pbr::OriginalName("MsgIDAgent_GetPerformanceRecordResp")] MsgIdagentGetPerformanceRecordResp = 147,
+  /// <summary>
+  ///通知服务器即将维护时间点(MsgCommonN32)
+  /// </summary>
+  [pbr::OriginalName("MsgIDLogin_NotifySysMaintainResp")] MsgIdloginNotifySysMaintainResp = 148,
 }
 
 public enum EMsgIDGame {
@@ -849,6 +874,10 @@ public enum EMsgIDGame {
   ///换桌(MsgCommonN32)
   /// </summary>
   [pbr::OriginalName("MsgIDGame_ChangeTable")] MsgIdgameChangeTable = 1020,
+  /// <summary>
+  ///通知服务器即将维护时间点(MsgCommonN32)
+  /// </summary>
+  [pbr::OriginalName("MsgIDGame_NotifySysMaintainResp")] MsgIdgameNotifySysMaintainResp = 1021,
   /// <summary>
   ///房间配置(MsgPvpRoomConfig) 
   /// </summary>

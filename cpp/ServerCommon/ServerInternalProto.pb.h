@@ -2597,6 +2597,7 @@ class MsgRelayServerAddMail PROTOBUF_FINAL :
     kTypeFieldNumber = 5,
     kNumFieldNumber = 4,
     kFromUserIdFieldNumber = 6,
+    kCodingTypeFieldNumber = 7,
   };
   // string title = 2;
   void clear_title();
@@ -2666,6 +2667,15 @@ class MsgRelayServerAddMail PROTOBUF_FINAL :
   void _internal_set_from_user_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 coding_type = 7;
+  void clear_coding_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 coding_type() const;
+  void set_coding_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_coding_type() const;
+  void _internal_set_coding_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgRelayServerAddMail)
  private:
   class _Internal;
@@ -2679,6 +2689,7 @@ class MsgRelayServerAddMail PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 type_;
   ::PROTOBUF_NAMESPACE_ID::int64 num_;
   ::PROTOBUF_NAMESPACE_ID::int32 from_user_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 coding_type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -13267,6 +13278,26 @@ inline void MsgRelayServerAddMail::_internal_set_from_user_id(::PROTOBUF_NAMESPA
 inline void MsgRelayServerAddMail::set_from_user_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_from_user_id(value);
   // @@protoc_insertion_point(field_set:MsgRelayServerAddMail.from_user_id)
+}
+
+// int32 coding_type = 7;
+inline void MsgRelayServerAddMail::clear_coding_type() {
+  coding_type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgRelayServerAddMail::_internal_coding_type() const {
+  return coding_type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgRelayServerAddMail::coding_type() const {
+  // @@protoc_insertion_point(field_get:MsgRelayServerAddMail.coding_type)
+  return _internal_coding_type();
+}
+inline void MsgRelayServerAddMail::_internal_set_coding_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  coding_type_ = value;
+}
+inline void MsgRelayServerAddMail::set_coding_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_coding_type(value);
+  // @@protoc_insertion_point(field_set:MsgRelayServerAddMail.coding_type)
 }
 
 // -------------------------------------------------------------------

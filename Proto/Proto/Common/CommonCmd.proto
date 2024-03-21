@@ -155,6 +155,11 @@ enum EMsgIDLogin
 	MsgIDAgent_InfiniteQueryUserInfoResp		= 141;		//查询某个代理信息返回(MsgInfiniteAgentQuerySubInfoResp)
 	MsgIDRunGame_QueryRechargeGiveInfo			= 142;		//查询玩家充值/赠送金币详情(MsgCommonBool)
 	MsgIDRunGame_QueryRechargeGiveInfoResp		= 143;		//查询玩家充值/赠送金币详情返回(MsgQueryRechargeGiveInfo)
+	MsgIDAgent_GetClaimRecord					= 144;		//查询返利领取记录(MsgCommonN32)
+	MsgIDAgent_GetClaimRecordResp				= 145;		//查询查询返利领取记录(MsgGetClaimRecordResp)
+	MsgIDAgent_GetPerformanceRecord				= 146;		//查询个人业绩(MsgCommonN32)
+	MsgIDAgent_GetPerformanceRecordResp			= 147;		//查询个人业绩返回(MsgQueryPerformanceResp)
+	MsgIDLogin_NotifySysMaintainResp			= 148;		//通知服务器即将维护时间点(MsgCommonN32)
 }
 
 enum EMsgIDGame
@@ -179,6 +184,7 @@ enum EMsgIDGame
 	MsgIDGame_AddOneRecord				= 1018;		//猜拳增加一条记录
 	MsgIDGame_NotifyPlayerOfflineResp	= 1019;		//通知玩家断线(MsgCommonN32)
 	MsgIDGame_ChangeTable				= 1020;		//换桌(MsgCommonN32)
+	MsgIDGame_NotifySysMaintainResp		= 1021;		//通知服务器即将维护时间点(MsgCommonN32)
 
 	////////////////////////////////////////////pvp/////////////////////////////////////////
 	//ID从1051开始

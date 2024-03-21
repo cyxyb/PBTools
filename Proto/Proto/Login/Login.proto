@@ -5,10 +5,10 @@ message MsgPlayerLogin
 {	
 	string		account				= 1;		//玩家账号
 	string		password			= 2;		//玩家密码
-	int32		platform_id			= 3;		//平台id
+	int32		platform_id			= 3;		//平台id 0苹果 1安卓 2其他
 	int32		channel_id			= 4;		//渠道id
 	int32		client_type			= 5;		//包id
-	int32		login_type			= 6;		//1:游客登录 2:账号登录 3:第三方登录 4:注册账号
+	int32		login_type			= 6;		//1:游客登录 2:账号登录 3:第三方登录 4:注册账号 5:短信验证登陆
 	string		machine_num			= 7;		//机器码
 	string		user_ip				= 8;		//玩家IP
 	int32		is_drain			= 9;		//0:谷歌商店来源 1:推广渠道(facebook等) 2:自定义连接 3：网红用户
@@ -235,6 +235,8 @@ message MsgVIPInfo
 	int32		avatar_frame				= 8;	//头像框奖励
 	int32		award_gold					= 9;	//奖励金币
 	bool		one_to_one					= 10;	//一对一服务
+	int32		withdraw_total				= 11;	//每日总次数
+	int32		withdraw_free				= 12;	//每日免费提现
 }
 
 //vip配置信息
@@ -541,14 +543,19 @@ message MsgQueryCelebrityGoldCoinResp
 // 请求代理数据返回
 message MsgInfiniteAgentQueryMyInfoResp
 {
-	int32		agent_level 	= 1;	//代理等级(真金代理等级)
-	int32 		agent_ratio 	= 2;	//分成比例
-	int32 		bind_id 		= 3;	//上级id
-	int64 		cur_rebate 		= 4;	//当前返利
-	int64 		total_rebate 	= 5;	//总返利
-	int64		game_rebate		= 6;	//游戏返利
-	string		bind_invite_code = 7;	//上级邀请码
-}	       
+	int32		agent_level 				= 1;	//代理等级(真金代理等级)
+	int32 		agent_ratio 				= 2;	//分成比例
+	int32 		bind_id 					= 3;	//上级id
+	int64 		cur_rebate 					= 4;	//佣金返利
+	int64 		total_rebate 				= 5;	//总返利
+	int64		game_rebate					= 6;	//当前返利
+	string		bind_invite_code 			= 7;	//上级邀请码
+	int64 		today_performance_rebate 	= 8;	//今日佣金返利
+	int64		today_game_rebate 			= 9;	//今日游戏返利
+	int32		yesterday_add_num			= 10;	//昨日新增人数
+	int32		today_add_num				= 11;	//今日新增
+}	      
+ 
 //请求下级数据
 message MsgInfiniteAgentQuerySubInfo
 {
@@ -556,6 +563,7 @@ message MsgInfiniteAgentQuerySubInfo
 	int32 current_page			= 2;		//当前页1开始
 	int32 max_row				= 3;		//每页最大行数  最大50，超了改数据库
 }
+
 //请下级数据	                    
 message InfiniteAgentQuerySubInfo	
 {	                                
@@ -564,8 +572,11 @@ message InfiniteAgentQuerySubInfo
 	int64 total_tax 		= 3;		//总税收
 	int64 today_tax 		= 4;		//今日税收
 	int64 today_ratio 		= 5;		//返利
-	int32 agent_ratio 		= 6;		//分成比例
+	int64 total_ratio 		= 6;		//总返利
+	int32 agent_ratio 		= 7;		//分成比例
+	int32 rank 				= 8;		//排名
 }
+
 //请求下级数据返回
 message MsgInfiniteAgentQuerySubInfoResp
 {
@@ -573,12 +584,14 @@ message MsgInfiniteAgentQuerySubInfoResp
 	bool end_list 		= 2;						//结束
 	repeated InfiniteAgentQuerySubInfo info = 3;	//代理总数据
 }
+
 //设置下级代理
 message MsgSetSubAgent
 {
 	int32 user_id 		= 1;			//玩家id
 	int32 agent_ratio 	= 2;			//分成比例
 }
+
 //设置代理返回
 message MsgSetSubAgentResp
 {
@@ -590,11 +603,36 @@ message MsgSetSubAgentResp
 	int64 today_ratio 		= 6;		//今日返利
 	int32 agent_ratio 		= 7;		//分成比例
 }
+
 //领取返利返回
 message MsgRecviveAgentRebateResp
 {
 	int32 code = 1;			//0：成功，非0 多语言码	
 	int64 cur_rebate = 2;	//当前返利
+}
+	
+//查询代理领取返利记录
+message MsgClaimRecord
+{
+	string date_time =1;
+	int32 gold =2;
+}
+message MsgGetClaimRecordResp
+{
+	repeated MsgClaimRecord info =1; //最新二十条
+}
+
+//业绩查询
+message MsgQueryPerformance
+{
+	string date_time = 1;	//日期
+	int32 total_gold = 2;	//总业绩
+	int32 game_rebate = 3;	//游戏返利
+	int32 agent_rabete = 4;	//代理返利
+}
+message MsgQueryPerformanceResp
+{
+	repeated MsgQueryPerformance info =1; //最新三十条
 }
 
 //查询玩家周卡月卡信息
