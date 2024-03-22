@@ -23,7 +23,7 @@ enum EMsgIDLogin
 	MsgIDLogin_BindPhone						= 9;		//绑定手机(MsgBindPhone)
 	MsgIDMail_GetMailList						= 10;		//获取邮件列表(MsgCommonBool)
 	MsgIDMail_GetMailListResp					= 11;		//获取邮件列表返回(MsgMailsInfo)
-	MsgIDLogin_BindPhoneResp					= 12;		//绑定手机返回(MsgCommonN32)
+	MsgIDLogin_BindPhoneResp					= 12;		//绑定手机返回(MsgBindPhoneAward)
 	MsgIDMail_ReadMail							= 13;		//读取邮件(MsgCommonN32)
 	MsgIDMail_PickMail							= 14;		//领取邮件(MsgCommonN32)
 	MsgIDMail_PickMailResp						= 15;		//领取邮件返回(MsgCommonN64)

@@ -690,3 +690,10 @@ message MsgQueryRechargeGiveInfo
 {
 	repeated MsgCommonKV UserInfo =1;//K 1充值类型V充值金额数量 2代理赠送V赠送金币数量
 }
+
+//绑定手机奖励金币
+message MsgBindPhoneAward
+{
+	int32 code = 1;			//多语言文字提示码 0成功，非0多语言码
+	int32 gold =3;			//金币
+}

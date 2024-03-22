@@ -8464,6 +8464,7 @@ class MsgDBBindPhoneRes PROTOBUF_FINAL :
     kPhoneFieldNumber = 2,
     kPasswordFieldNumber = 3,
     kResCodeFieldNumber = 1,
+    kAwardFieldNumber = 4,
   };
   // string phone = 2;
   void clear_phone();
@@ -8506,6 +8507,15 @@ class MsgDBBindPhoneRes PROTOBUF_FINAL :
   void _internal_set_res_code(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 award = 4;
+  void clear_award();
+  ::PROTOBUF_NAMESPACE_ID::int32 award() const;
+  void set_award(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_award() const;
+  void _internal_set_award(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgDBBindPhoneRes)
  private:
   class _Internal;
@@ -8516,6 +8526,7 @@ class MsgDBBindPhoneRes PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr phone_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr password_;
   ::PROTOBUF_NAMESPACE_ID::int32 res_code_;
+  ::PROTOBUF_NAMESPACE_ID::int32 award_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -18346,6 +18357,26 @@ inline void MsgDBBindPhoneRes::set_allocated_password(std::string* password) {
   password_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), password,
       GetArena());
   // @@protoc_insertion_point(field_set_allocated:MsgDBBindPhoneRes.password)
+}
+
+// int32 award = 4;
+inline void MsgDBBindPhoneRes::clear_award() {
+  award_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBBindPhoneRes::_internal_award() const {
+  return award_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBBindPhoneRes::award() const {
+  // @@protoc_insertion_point(field_get:MsgDBBindPhoneRes.award)
+  return _internal_award();
+}
+inline void MsgDBBindPhoneRes::_internal_set_award(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  award_ = value;
+}
+inline void MsgDBBindPhoneRes::set_award(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_award(value);
+  // @@protoc_insertion_point(field_set:MsgDBBindPhoneRes.award)
 }
 
 // -------------------------------------------------------------------
