@@ -209,7 +209,8 @@ public static partial class LoginReflection {
           "CgVhd2FyZBgCIAEoAxIQCghuZXdfZ29sZBgDIAEoAyI1Cg9Nc2dHZXRQaG9u",
           "ZUNvZGUSFAoMcGhvbmVfbnVtYmVyGAEgASgJEgwKBHR5cGUYAiABKAUiOgoY",
           "TXNnUXVlcnlSZWNoYXJnZUdpdmVJbmZvEh4KCFVzZXJJbmZvGAEgAygLMgwu",
-          "TXNnQ29tbW9uS1ZiBnByb3RvMw=="));
+          "TXNnQ29tbW9uS1YiLwoRTXNnQmluZFBob25lQXdhcmQSDAoEY29kZRgBIAEo",
+          "BRIMCgRnb2xkGAMgASgFYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -289,7 +290,8 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgWeekMonthGetAward), global::MsgWeekMonthGetAward.Parser, new[]{ "CardType" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgWeekMonthGetAwardResp), global::MsgWeekMonthGetAwardResp.Parser, new[]{ "RetCode", "Award", "NewGold" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgGetPhoneCode), global::MsgGetPhoneCode.Parser, new[]{ "PhoneNumber", "Type" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgQueryRechargeGiveInfo), global::MsgQueryRechargeGiveInfo.Parser, new[]{ "UserInfo" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgQueryRechargeGiveInfo), global::MsgQueryRechargeGiveInfo.Parser, new[]{ "UserInfo" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgBindPhoneAward), global::MsgBindPhoneAward.Parser, new[]{ "Code", "Gold" }, null, null, null, null)
         }));
   }
   #endregion
@@ -383,7 +385,7 @@ public sealed partial class MsgPlayerLogin : pb::IMessage<MsgPlayerLogin>
   public const int PlatformIdFieldNumber = 3;
   private int platformId_;
   /// <summary>
-  ///平台id
+  ///平台id 0苹果 1安卓 2其他
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int PlatformId {
@@ -425,7 +427,7 @@ public sealed partial class MsgPlayerLogin : pb::IMessage<MsgPlayerLogin>
   public const int LoginTypeFieldNumber = 6;
   private int loginType_;
   /// <summary>
-  ///1:游客登录 2:账号登录 3:第三方登录 4:注册账号
+  ///1:游客登录 2:账号登录 3:第三方登录 4:注册账号 5:短信验证登陆
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int LoginType {
@@ -23479,6 +23481,223 @@ public sealed partial class MsgQueryRechargeGiveInfo : pb::IMessage<MsgQueryRech
           break;
         case 10: {
           userInfo_.AddEntriesFrom(ref input, _repeated_userInfo_codec);
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///绑定手机奖励金币
+/// </summary>
+public sealed partial class MsgBindPhoneAward : pb::IMessage<MsgBindPhoneAward>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgBindPhoneAward> _parser = new pb::MessageParser<MsgBindPhoneAward>(() => new MsgBindPhoneAward());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgBindPhoneAward> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[77]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBindPhoneAward() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBindPhoneAward(MsgBindPhoneAward other) : this() {
+    code_ = other.code_;
+    gold_ = other.gold_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgBindPhoneAward Clone() {
+    return new MsgBindPhoneAward(this);
+  }
+
+  /// <summary>Field number for the "code" field.</summary>
+  public const int CodeFieldNumber = 1;
+  private int code_;
+  /// <summary>
+  ///多语言文字提示码 0成功，非0多语言码
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Code {
+    get { return code_; }
+    set {
+      code_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "gold" field.</summary>
+  public const int GoldFieldNumber = 3;
+  private int gold_;
+  /// <summary>
+  ///金币
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Gold {
+    get { return gold_; }
+    set {
+      gold_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgBindPhoneAward);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgBindPhoneAward other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (Code != other.Code) return false;
+    if (Gold != other.Gold) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (Code != 0) hash ^= Code.GetHashCode();
+    if (Gold != 0) hash ^= Gold.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (Code != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(Code);
+    }
+    if (Gold != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(Gold);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (Code != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(Code);
+    }
+    if (Gold != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(Gold);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (Code != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Code);
+    }
+    if (Gold != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Gold);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgBindPhoneAward other) {
+    if (other == null) {
+      return;
+    }
+    if (other.Code != 0) {
+      Code = other.Code;
+    }
+    if (other.Gold != 0) {
+      Gold = other.Gold;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          Code = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          Gold = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          Code = input.ReadInt32();
+          break;
+        }
+        case 24: {
+          Gold = input.ReadInt32();
           break;
         }
       }

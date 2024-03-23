@@ -251,7 +251,7 @@ public enum EMsgIDLogin {
   /// </summary>
   [pbr::OriginalName("MsgIDMail_GetMailListResp")] MsgIdmailGetMailListResp = 11,
   /// <summary>
-  ///绑定手机返回(MsgCommonN32)
+  ///绑定手机返回(MsgBindPhoneAward)
   /// </summary>
   [pbr::OriginalName("MsgIDLogin_BindPhoneResp")] MsgIdloginBindPhoneResp = 12,
   /// <summary>
