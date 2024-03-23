@@ -848,6 +848,7 @@ class MsgPlayerLoginResp PROTOBUF_FINAL :
     kAgentTypeFieldNumber = 23,
     kServerIdFieldNumber = 24,
     kKindIdFieldNumber = 25,
+    kRegisterGoldFieldNumber = 26,
   };
   // string account = 4;
   void clear_account();
@@ -1135,6 +1136,15 @@ class MsgPlayerLoginResp PROTOBUF_FINAL :
   void _internal_set_kind_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 register_gold = 26;
+  void clear_register_gold();
+  ::PROTOBUF_NAMESPACE_ID::int32 register_gold() const;
+  void set_register_gold(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_register_gold() const;
+  void _internal_set_register_gold(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgPlayerLoginResp)
  private:
   class _Internal;
@@ -1166,6 +1176,7 @@ class MsgPlayerLoginResp PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 agent_type_;
   ::PROTOBUF_NAMESPACE_ID::int32 server_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 kind_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 register_gold_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -15831,6 +15842,26 @@ inline void MsgPlayerLoginResp::_internal_set_kind_id(::PROTOBUF_NAMESPACE_ID::i
 inline void MsgPlayerLoginResp::set_kind_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_kind_id(value);
   // @@protoc_insertion_point(field_set:MsgPlayerLoginResp.kind_id)
+}
+
+// int32 register_gold = 26;
+inline void MsgPlayerLoginResp::clear_register_gold() {
+  register_gold_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPlayerLoginResp::_internal_register_gold() const {
+  return register_gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgPlayerLoginResp::register_gold() const {
+  // @@protoc_insertion_point(field_get:MsgPlayerLoginResp.register_gold)
+  return _internal_register_gold();
+}
+inline void MsgPlayerLoginResp::_internal_set_register_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  register_gold_ = value;
+}
+inline void MsgPlayerLoginResp::set_register_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_register_gold(value);
+  // @@protoc_insertion_point(field_set:MsgPlayerLoginResp.register_gold)
 }
 
 // -------------------------------------------------------------------
