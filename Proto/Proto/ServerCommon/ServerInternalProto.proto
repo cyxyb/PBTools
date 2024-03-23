@@ -430,6 +430,7 @@ message MsgDBBindPhoneRes
 	int32		res_code			= 1;	//返回码
 	string		phone				= 2;	//手机号码
 	string		password			= 3;	//玩家密码
+	int32 		award				= 4;	//奖励金币
 };
 
 //登录聊天服务器
