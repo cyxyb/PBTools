@@ -1353,6 +1353,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ServerInternalProto_2eproto::o
   PROTOBUF_FIELD_OFFSET(::MsgLoginPlayerInfo, agent_type_),
   PROTOBUF_FIELD_OFFSET(::MsgLoginPlayerInfo, server_id_),
   PROTOBUF_FIELD_OFFSET(::MsgLoginPlayerInfo, kind_id_),
+  PROTOBUF_FIELD_OFFSET(::MsgLoginPlayerInfo, register_gold_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgDBLoginOut, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -1760,48 +1761,48 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 167, -1, sizeof(::MsgDBRegisterLogin)},
   { 174, -1, sizeof(::MsgPlayerAttribute)},
   { 186, -1, sizeof(::MsgLoginPlayerInfo)},
-  { 221, -1, sizeof(::MsgDBLoginOut)},
-  { 228, -1, sizeof(::MsgDBUpdatePlayerInfo)},
-  { 239, -1, sizeof(::MsgDBMailData)},
-  { 246, -1, sizeof(::MsgDBMail)},
-  { 260, -1, sizeof(::MsgDBRegisterGame)},
-  { 267, -1, sizeof(::MsgDBLoadRobotInfo)},
-  { 274, -1, sizeof(::MsgDBLoadRobot)},
-  { 280, -1, sizeof(::MsgDBGamePlayerLogin)},
-  { 290, -1, sizeof(::MsgDBPlayerReconnectData)},
-  { 304, -1, sizeof(::MsgDBGamePlayerLoginResp)},
-  { 324, -1, sizeof(::MsgDBWriteScore)},
-  { 338, -1, sizeof(::MsgDBWriteScoreResp)},
-  { 351, -1, sizeof(::MsgDBFingerGuessWriteScore)},
-  { 360, -1, sizeof(::MsgDBFingerGuessWriteScoreResp)},
-  { 372, -1, sizeof(::MsgDBFingerGuessQueryRecord)},
-  { 381, -1, sizeof(::MsgDBModifyAvatar)},
-  { 388, -1, sizeof(::MsgDBUpdateJackpot)},
-  { 396, -1, sizeof(::MsgDBTransferOperate)},
-  { 405, -1, sizeof(::MsgStorageCode)},
-  { 414, -1, sizeof(::MsgDBBindPhone)},
-  { 423, -1, sizeof(::MsgDBBindPhoneRes)},
-  { 432, -1, sizeof(::MsgDBChatLogin)},
-  { 439, -1, sizeof(::MsgDBChatTrumpetMsg)},
-  { 446, -1, sizeof(::MsgDBBuyGoods)},
-  { 454, -1, sizeof(::MsgDBGameLoginOut)},
-  { 464, -1, sizeof(::MsgDBSubagentInformation)},
-  { 475, -1, sizeof(::MsgDBQueryTransferTax)},
-  { 482, -1, sizeof(::MsgDBTransferTakeOut)},
-  { 494, -1, sizeof(::MsgDBTransferReceive)},
-  { 501, -1, sizeof(::MsgDBBindInviteCode)},
-  { 508, -1, sizeof(::MsgDBSyncDotData)},
-  { 515, -1, sizeof(::MsgDBOnlineActivePick)},
-  { 522, -1, sizeof(::MsgDBCDKExchange)},
-  { 529, -1, sizeof(::MsgDBPersonalDetailsRespAdd)},
-  { 537, -1, sizeof(::MsgDBUpgradeVIP)},
-  { 546, -1, sizeof(::MsgDBSetSubAgent)},
-  { 554, -1, sizeof(::MsgDBGetPlayerGold)},
-  { 561, -1, sizeof(::MsgErrorCode)},
-  { 568, -1, sizeof(::MsgDeleteFrequentlyPhone)},
-  { 575, -1, sizeof(::MsgPvpSerTableInfo)},
-  { 589, -1, sizeof(::MsgPvpAddTable)},
-  { 596, -1, sizeof(::MsgPvpDelTable)},
+  { 222, -1, sizeof(::MsgDBLoginOut)},
+  { 229, -1, sizeof(::MsgDBUpdatePlayerInfo)},
+  { 240, -1, sizeof(::MsgDBMailData)},
+  { 247, -1, sizeof(::MsgDBMail)},
+  { 261, -1, sizeof(::MsgDBRegisterGame)},
+  { 268, -1, sizeof(::MsgDBLoadRobotInfo)},
+  { 275, -1, sizeof(::MsgDBLoadRobot)},
+  { 281, -1, sizeof(::MsgDBGamePlayerLogin)},
+  { 291, -1, sizeof(::MsgDBPlayerReconnectData)},
+  { 305, -1, sizeof(::MsgDBGamePlayerLoginResp)},
+  { 325, -1, sizeof(::MsgDBWriteScore)},
+  { 339, -1, sizeof(::MsgDBWriteScoreResp)},
+  { 352, -1, sizeof(::MsgDBFingerGuessWriteScore)},
+  { 361, -1, sizeof(::MsgDBFingerGuessWriteScoreResp)},
+  { 373, -1, sizeof(::MsgDBFingerGuessQueryRecord)},
+  { 382, -1, sizeof(::MsgDBModifyAvatar)},
+  { 389, -1, sizeof(::MsgDBUpdateJackpot)},
+  { 397, -1, sizeof(::MsgDBTransferOperate)},
+  { 406, -1, sizeof(::MsgStorageCode)},
+  { 415, -1, sizeof(::MsgDBBindPhone)},
+  { 424, -1, sizeof(::MsgDBBindPhoneRes)},
+  { 433, -1, sizeof(::MsgDBChatLogin)},
+  { 440, -1, sizeof(::MsgDBChatTrumpetMsg)},
+  { 447, -1, sizeof(::MsgDBBuyGoods)},
+  { 455, -1, sizeof(::MsgDBGameLoginOut)},
+  { 465, -1, sizeof(::MsgDBSubagentInformation)},
+  { 476, -1, sizeof(::MsgDBQueryTransferTax)},
+  { 483, -1, sizeof(::MsgDBTransferTakeOut)},
+  { 495, -1, sizeof(::MsgDBTransferReceive)},
+  { 502, -1, sizeof(::MsgDBBindInviteCode)},
+  { 509, -1, sizeof(::MsgDBSyncDotData)},
+  { 516, -1, sizeof(::MsgDBOnlineActivePick)},
+  { 523, -1, sizeof(::MsgDBCDKExchange)},
+  { 530, -1, sizeof(::MsgDBPersonalDetailsRespAdd)},
+  { 538, -1, sizeof(::MsgDBUpgradeVIP)},
+  { 547, -1, sizeof(::MsgDBSetSubAgent)},
+  { 555, -1, sizeof(::MsgDBGetPlayerGold)},
+  { 562, -1, sizeof(::MsgErrorCode)},
+  { 569, -1, sizeof(::MsgDeleteFrequentlyPhone)},
+  { 576, -1, sizeof(::MsgPvpSerTableInfo)},
+  { 590, -1, sizeof(::MsgPvpAddTable)},
+  { 597, -1, sizeof(::MsgPvpDelTable)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -1920,7 +1921,7 @@ const char descriptor_table_protodef_ServerInternalProto_2eproto[] PROTOBUF_SECT
   "tribute\022\017\n\007user_id\030\001 \001(\005\022\024\n\014beautiful_id"
   "\030\002 \001(\005\022\021\n\tuser_type\030\003 \001(\005\022\r\n\005phone\030\004 \001(\t"
   "\022\014\n\004coin\030\005 \001(\003\022\017\n\007head_id\030\007 \001(\005\022\020\n\010nickn"
-  "ame\030\010 \001(\t\"\324\004\n\022MsgLoginPlayerInfo\022\020\n\010res_"
+  "ame\030\010 \001(\t\"\353\004\n\022MsgLoginPlayerInfo\022\020\n\010res_"
   "code\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\024\n\014beautiful"
   "_id\030\003 \001(\005\022\017\n\007account\030\004 \001(\t\022\020\n\010nickname\030\005"
   " \001(\t\022\016\n\006avatar\030\006 \001(\t\022\026\n\016first_recharge\030\007"
@@ -1935,114 +1936,115 @@ const char descriptor_table_protodef_ServerInternalProto_2eproto[] PROTOBUF_SECT
   "\007ip_info\030\032 \001(\t\022\021\n\tlongitude\030\033 \001(\t\022\020\n\010lat"
   "itude\030\034 \001(\t\022\023\n\013frist_login\030\035 \001(\010\022\022\n\nagen"
   "t_type\030\036 \001(\005\022\021\n\tserver_id\030\037 \001(\005\022\017\n\007kind_"
-  "id\030  \001(\005\"5\n\rMsgDBLoginOut\022\017\n\007user_id\030\001 \001"
-  "(\005\022\023\n\013online_time\030\002 \001(\005\"\204\001\n\025MsgDBUpdateP"
-  "layerInfo\022\017\n\007user_id\030\001 \001(\005\022\024\n\014beautiful_"
-  "id\030\002 \001(\005\022\021\n\tuser_type\030\003 \001(\005\022\r\n\005phone\030\004 \001"
-  "(\t\022\020\n\010nickname\030\005 \001(\t\022\020\n\010password\030\006 \001(\t\"1"
-  "\n\rMsgDBMailData\022\017\n\007user_id\030\001 \001(\005\022\017\n\007mail"
-  "_id\030\002 \001(\005\"\275\001\n\tMsgDBMail\022\021\n\tmail_guid\030\001 \001"
-  "(\005\022\017\n\007mail_id\030\002 \001(\005\022\021\n\tsender_id\030\003 \001(\005\022\033"
-  "\n\023recver_beautiful_id\030\004 \001(\005\022\022\n\nmail_titl"
-  "e\030\005 \001(\t\022\024\n\014mail_content\030\006 \001(\t\022\014\n\004gold\030\007 "
-  "\001(\003\022\021\n\tsend_time\030\010 \001(\003\022\021\n\tis_custom\030\t \001("
-  "\005\";\n\021MsgDBRegisterGame\022\021\n\tserver_id\030\001 \001("
-  "\005\022\023\n\013server_name\030\002 \001(\t\"8\n\022MsgDBLoadRobot"
-  "Info\022\017\n\007user_id\030\001 \001(\005\022\021\n\tvip_level\030\002 \001(\005"
-  "\"3\n\016MsgDBLoadRobot\022!\n\004info\030\001 \003(\0132\023.MsgDB"
-  "LoadRobotInfo\"j\n\024MsgDBGamePlayerLogin\022\017\n"
-  "\007user_id\030\001 \001(\005\022\020\n\010password\030\002 \001(\t\022\n\n\002ip\030\003"
-  " \001(\t\022\021\n\tlongitude\030\004 \001(\t\022\020\n\010latitude\030\005 \001("
-  "\t\"\332\001\n\030MsgDBPlayerReconnectData\022\017\n\007user_i"
-  "d\030\001 \001(\005\022\021\n\tserver_id\030\002 \001(\005\022\020\n\010multiple\030\003"
-  " \001(\005\022\023\n\013score_bonus\030\004 \001(\005\022\032\n\022left_free_g"
-  "ame_cnt\030\005 \001(\005\022\027\n\017small_game_type\030\006 \001(\005\022\033"
-  "\n\023small_game_fail_cnt\030\007 \001(\005\022\022\n\ngame_leve"
-  "l\030\010 \001(\005\022\r\n\005param\030\t \003(\005\"\324\002\n\030MsgDBGamePlay"
-  "erLoginResp\022\020\n\010res_code\030\001 \001(\005\022\017\n\007user_id"
-  "\030\002 \001(\005\022\024\n\014beautiful_id\030\003 \001(\005\022\020\n\010nickname"
-  "\030\004 \001(\t\022\016\n\006avatar\030\005 \001(\t\022\014\n\004coin\030\006 \001(\004\022\020\n\010"
-  "password\030\007 \001(\t\022\022\n\ncheat_rate\030\010 \001(\005\022\021\n\tvi"
-  "p_level\030\t \001(\005\022\024\n\014avatar_frame\030\n \001(\005\0221\n\016r"
-  "econnect_data\030\013 \001(\0132\031.MsgDBPlayerReconne"
-  "ctData\022\027\n\017login_server_id\030\014 \001(\005\022\017\n\007user_"
-  "ip\030\r \001(\t\022\021\n\tlongitude\030\016 \001(\t\022\020\n\010latitude\030"
-  "\017 \001(\t\"\262\001\n\017MsgDBWriteScore\022\017\n\007user_id\030\001 \001"
-  "(\005\022\013\n\003bet\030\002 \001(\005\022\r\n\005score\030\003 \001(\003\022\022\n\nis_up_"
-  "rank\030\004 \001(\005\022\020\n\010table_id\030\005 \001(\005\022\020\n\010table_no"
-  "\030\006 \001(\005\022\021\n\ttax_score\030\007 \001(\003\022\021\n\tvalid_bet\030\010"
-  " \001(\005\022\024\n\014game_details\030\t \001(\t\"\350\001\n\023MsgDBWrit"
-  "eScoreResp\022\017\n\007user_id\030\001 \001(\005\022\031\n\021player_ch"
-  "eat_rate\030\002 \001(\005\022\032\n\022player_cheat_score\030\003 \001"
-  "(\005\022\031\n\021system_cheat_rate\030\004 \001(\005\022\032\n\022system_"
-  "cheat_score\030\005 \001(\003\022\035\n\025system_blood_min_li"
-  "ne\030\006 \001(\003\022\035\n\025system_blood_max_line\030\007 \001(\003\022"
-  "\024\n\014player_score\030\010 \001(\003\"i\n\032MsgDBFingerGues"
-  "sWriteScore\022\026\n\016banker_user_id\030\001 \001(\005\022\026\n\016p"
-  "layer_user_id\030\002 \001(\005\022\016\n\006result\030\003 \001(\005\022\013\n\003b"
-  "et\030\004 \001(\003\"\245\001\n\036MsgDBFingerGuessWriteScoreR"
-  "esp\022\023\n\013win_user_id\030\001 \001(\005\022\024\n\014lose_user_id"
-  "\030\002 \001(\005\022\025\n\rwin_user_gold\030\003 \001(\003\022\026\n\016lose_us"
-  "er_gold\030\004 \001(\003\022\014\n\004time\030\005 \001(\005\022\016\n\006result\030\006 "
-  "\001(\005\022\013\n\003bet\030\007 \001(\003\"W\n\033MsgDBFingerGuessQuer"
-  "yRecord\022\014\n\004page\030\001 \001(\005\022\013\n\003num\030\002 \001(\005\022\014\n\004ty"
-  "pe\030\003 \001(\005\022\017\n\007user_id\030\004 \001(\005\"4\n\021MsgDBModify"
-  "Avatar\022\017\n\007user_id\030\001 \001(\005\022\016\n\006avatar\030\002 \001(\t\""
-  "N\n\022MsgDBUpdateJackpot\022\021\n\tserver_id\030\001 \001(\005"
-  "\022\017\n\007jackpot\030\002 \001(\003\022\024\n\014fake_jackpot\030\003 \001(\003\""
-  "p\n\024MsgDBTransferOperate\022\024\n\014from_user_id\030"
-  "\001 \001(\005\022\024\n\014recv_user_id\030\002 \001(\005\022\025\n\rtransfer_"
-  "gold\030\003 \001(\003\022\025\n\rtransfer_type\030\004 \001(\005\"L\n\016Msg"
-  "StorageCode\022\017\n\007user_id\030\001 \001(\005\022\r\n\005phone\030\002 "
-  "\001(\t\022\014\n\004code\030\003 \001(\005\022\014\n\004type\030\004 \001(\005\"W\n\016MsgDB"
-  "BindPhone\022\017\n\007user_id\030\001 \001(\005\022\023\n\013invite_cod"
-  "e\030\002 \001(\t\022\r\n\005phone\030\003 \001(\t\022\020\n\010password\030\004 \001(\t"
-  "\"U\n\021MsgDBBindPhoneRes\022\020\n\010res_code\030\001 \001(\005\022"
-  "\r\n\005phone\030\002 \001(\t\022\020\n\010password\030\003 \001(\t\022\r\n\005awar"
-  "d\030\004 \001(\005\"3\n\016MsgDBChatLogin\022\017\n\007user_id\030\001 \001"
-  "(\005\022\020\n\010password\030\002 \001(\t\"7\n\023MsgDBChatTrumpet"
-  "Msg\022\017\n\007user_id\030\001 \001(\005\022\017\n\007message\030\002 \001(\t\"C\n"
-  "\rMsgDBBuyGoods\022\017\n\007user_id\030\001 \001(\005\022\017\n\007item_"
-  "id\030\002 \001(\005\022\020\n\010item_num\030\003 \001(\005\"u\n\021MsgDBGameL"
-  "oginOut\022\017\n\007user_id\030\001 \001(\005\022\022\n\nis_offline\030\002"
-  " \001(\005\022\021\n\tserver_id\030\003 \001(\005\022\017\n\007kind_id\030\004 \001(\005"
-  "\022\027\n\017login_server_id\030\005 \001(\005\"\240\001\n\030MsgDBSubag"
-  "entInformation\022\026\n\016agent_nickname\030\001 \001(\t\022\025"
-  "\n\ragent_user_id\030\002 \001(\005\022\022\n\nagent_type\030\003 \001("
-  "\005\022\026\n\016total_shift_to\030\004 \001(\003\022\026\n\016total_roll_"
-  "out\030\005 \001(\003\022\021\n\tvip_level\030\006 \001(\005\"C\n\025MsgDBQue"
-  "ryTransferTax\022\024\n\014from_user_id\030\001 \001(\005\022\024\n\014r"
-  "ecv_user_id\030\002 \001(\005\"\246\001\n\024MsgDBTransferTakeO"
-  "ut\022\021\n\tret_value\030\001 \001(\005\022\024\n\014recv_user_id\030\002 "
-  "\001(\005\022\024\n\014send_user_id\030\003 \001(\005\022\020\n\010add_gold\030\004 "
-  "\001(\003\022\021\n\tuser_gold\030\005 \001(\003\022\025\n\rreceive_state\030"
-  "\006 \001(\003\022\023\n\013transfer_id\030\007 \001(\003\"C\n\024MsgDBTrans"
-  "ferReceive\022\027\n\017receive_user_id\030\001 \001(\005\022\022\n\nr"
-  "eceive_id\030\002 \001(\003\";\n\023MsgDBBindInviteCode\022\017"
-  "\n\007user_id\030\001 \001(\005\022\023\n\013invite_code\030\002 \001(\t\"1\n\020"
-  "MsgDBSyncDotData\022\017\n\007user_id\030\001 \001(\005\022\014\n\004typ"
-  "e\030\002 \001(\005\"6\n\025MsgDBOnlineActivePick\022\017\n\007user"
-  "_id\030\001 \001(\005\022\014\n\004type\030\002 \001(\005\"5\n\020MsgDBCDKExcha"
-  "nge\022\017\n\007user_id\030\001 \001(\005\022\020\n\010cdk_code\030\002 \001(\t\"I"
-  "\n\033MsgDBPersonalDetailsRespAdd\022\017\n\007user_id"
-  "\030\001 \001(\005\022\014\n\004type\030\002 \001(\005\022\013\n\003msg\030\003 \001(\t\"W\n\017Msg"
-  "DBUpgradeVIP\022\020\n\010res_code\030\001 \001(\005\022\014\n\004gold\030\002"
-  " \001(\003\022\017\n\007bind_id\030\003 \001(\005\022\023\n\013add_vip_exp\030\004 \001"
-  "(\005\"J\n\020MsgDBSetSubAgent\022\017\n\007user_id\030\001 \001(\005\022"
-  "\020\n\010sub_user\030\002 \001(\005\022\023\n\013agent_ratio\030\003 \001(\005\"3"
-  "\n\022MsgDBGetPlayerGold\022\017\n\007user_id\030\001 \001(\005\022\014\n"
-  "\004coin\030\002 \001(\003\"+\n\014MsgErrorCode\022\014\n\004type\030\001 \001("
-  "\005\022\r\n\005value\030\002 \001(\005\"L\n\030MsgDeleteFrequentlyP"
-  "hone\022!\n\nerror_code\030\001 \001(\0132\r.MsgErrorCode\022"
-  "\r\n\005phone\030\002 \001(\t\"\303\001\n\022MsgPvpSerTableInfo\022\020\n"
-  "\010table_id\030\001 \001(\005\022\022\n\ntable_name\030\002 \001(\t\022\021\n\tc"
-  "hair_num\030\003 \001(\005\022\021\n\tenter_num\030\004 \001(\005\022\022\n\nbas"
-  "e_score\030\005 \001(\005\022\023\n\013is_activate\030\006 \001(\010\022\022\n\nis"
-  "_private\030\007 \001(\010\022\022\n\nowner_nick\030\t \001(\t\022\020\n\010ta"
-  "ble_no\030\n \001(\005\"L\n\016MsgPvpAddTable\022\021\n\tgame_t"
-  "ype\030\001 \001(\005\022\'\n\ntable_list\030\002 \003(\0132\023.MsgPvpSe"
-  "rTableInfo\"5\n\016MsgPvpDelTable\022\021\n\tgame_typ"
-  "e\030\001 \001(\005\022\020\n\010table_id\030\002 \001(\005b\006proto3"
+  "id\030  \001(\005\022\025\n\rregister_gold\030! \001(\005\"5\n\rMsgDB"
+  "LoginOut\022\017\n\007user_id\030\001 \001(\005\022\023\n\013online_time"
+  "\030\002 \001(\005\"\204\001\n\025MsgDBUpdatePlayerInfo\022\017\n\007user"
+  "_id\030\001 \001(\005\022\024\n\014beautiful_id\030\002 \001(\005\022\021\n\tuser_"
+  "type\030\003 \001(\005\022\r\n\005phone\030\004 \001(\t\022\020\n\010nickname\030\005 "
+  "\001(\t\022\020\n\010password\030\006 \001(\t\"1\n\rMsgDBMailData\022\017"
+  "\n\007user_id\030\001 \001(\005\022\017\n\007mail_id\030\002 \001(\005\"\275\001\n\tMsg"
+  "DBMail\022\021\n\tmail_guid\030\001 \001(\005\022\017\n\007mail_id\030\002 \001"
+  "(\005\022\021\n\tsender_id\030\003 \001(\005\022\033\n\023recver_beautifu"
+  "l_id\030\004 \001(\005\022\022\n\nmail_title\030\005 \001(\t\022\024\n\014mail_c"
+  "ontent\030\006 \001(\t\022\014\n\004gold\030\007 \001(\003\022\021\n\tsend_time\030"
+  "\010 \001(\003\022\021\n\tis_custom\030\t \001(\005\";\n\021MsgDBRegiste"
+  "rGame\022\021\n\tserver_id\030\001 \001(\005\022\023\n\013server_name\030"
+  "\002 \001(\t\"8\n\022MsgDBLoadRobotInfo\022\017\n\007user_id\030\001"
+  " \001(\005\022\021\n\tvip_level\030\002 \001(\005\"3\n\016MsgDBLoadRobo"
+  "t\022!\n\004info\030\001 \003(\0132\023.MsgDBLoadRobotInfo\"j\n\024"
+  "MsgDBGamePlayerLogin\022\017\n\007user_id\030\001 \001(\005\022\020\n"
+  "\010password\030\002 \001(\t\022\n\n\002ip\030\003 \001(\t\022\021\n\tlongitude"
+  "\030\004 \001(\t\022\020\n\010latitude\030\005 \001(\t\"\332\001\n\030MsgDBPlayer"
+  "ReconnectData\022\017\n\007user_id\030\001 \001(\005\022\021\n\tserver"
+  "_id\030\002 \001(\005\022\020\n\010multiple\030\003 \001(\005\022\023\n\013score_bon"
+  "us\030\004 \001(\005\022\032\n\022left_free_game_cnt\030\005 \001(\005\022\027\n\017"
+  "small_game_type\030\006 \001(\005\022\033\n\023small_game_fail"
+  "_cnt\030\007 \001(\005\022\022\n\ngame_level\030\010 \001(\005\022\r\n\005param\030"
+  "\t \003(\005\"\324\002\n\030MsgDBGamePlayerLoginResp\022\020\n\010re"
+  "s_code\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\024\n\014beautif"
+  "ul_id\030\003 \001(\005\022\020\n\010nickname\030\004 \001(\t\022\016\n\006avatar\030"
+  "\005 \001(\t\022\014\n\004coin\030\006 \001(\004\022\020\n\010password\030\007 \001(\t\022\022\n"
+  "\ncheat_rate\030\010 \001(\005\022\021\n\tvip_level\030\t \001(\005\022\024\n\014"
+  "avatar_frame\030\n \001(\005\0221\n\016reconnect_data\030\013 \001"
+  "(\0132\031.MsgDBPlayerReconnectData\022\027\n\017login_s"
+  "erver_id\030\014 \001(\005\022\017\n\007user_ip\030\r \001(\t\022\021\n\tlongi"
+  "tude\030\016 \001(\t\022\020\n\010latitude\030\017 \001(\t\"\262\001\n\017MsgDBWr"
+  "iteScore\022\017\n\007user_id\030\001 \001(\005\022\013\n\003bet\030\002 \001(\005\022\r"
+  "\n\005score\030\003 \001(\003\022\022\n\nis_up_rank\030\004 \001(\005\022\020\n\010tab"
+  "le_id\030\005 \001(\005\022\020\n\010table_no\030\006 \001(\005\022\021\n\ttax_sco"
+  "re\030\007 \001(\003\022\021\n\tvalid_bet\030\010 \001(\005\022\024\n\014game_deta"
+  "ils\030\t \001(\t\"\350\001\n\023MsgDBWriteScoreResp\022\017\n\007use"
+  "r_id\030\001 \001(\005\022\031\n\021player_cheat_rate\030\002 \001(\005\022\032\n"
+  "\022player_cheat_score\030\003 \001(\005\022\031\n\021system_chea"
+  "t_rate\030\004 \001(\005\022\032\n\022system_cheat_score\030\005 \001(\003"
+  "\022\035\n\025system_blood_min_line\030\006 \001(\003\022\035\n\025syste"
+  "m_blood_max_line\030\007 \001(\003\022\024\n\014player_score\030\010"
+  " \001(\003\"i\n\032MsgDBFingerGuessWriteScore\022\026\n\016ba"
+  "nker_user_id\030\001 \001(\005\022\026\n\016player_user_id\030\002 \001"
+  "(\005\022\016\n\006result\030\003 \001(\005\022\013\n\003bet\030\004 \001(\003\"\245\001\n\036MsgD"
+  "BFingerGuessWriteScoreResp\022\023\n\013win_user_i"
+  "d\030\001 \001(\005\022\024\n\014lose_user_id\030\002 \001(\005\022\025\n\rwin_use"
+  "r_gold\030\003 \001(\003\022\026\n\016lose_user_gold\030\004 \001(\003\022\014\n\004"
+  "time\030\005 \001(\005\022\016\n\006result\030\006 \001(\005\022\013\n\003bet\030\007 \001(\003\""
+  "W\n\033MsgDBFingerGuessQueryRecord\022\014\n\004page\030\001"
+  " \001(\005\022\013\n\003num\030\002 \001(\005\022\014\n\004type\030\003 \001(\005\022\017\n\007user_"
+  "id\030\004 \001(\005\"4\n\021MsgDBModifyAvatar\022\017\n\007user_id"
+  "\030\001 \001(\005\022\016\n\006avatar\030\002 \001(\t\"N\n\022MsgDBUpdateJac"
+  "kpot\022\021\n\tserver_id\030\001 \001(\005\022\017\n\007jackpot\030\002 \001(\003"
+  "\022\024\n\014fake_jackpot\030\003 \001(\003\"p\n\024MsgDBTransferO"
+  "perate\022\024\n\014from_user_id\030\001 \001(\005\022\024\n\014recv_use"
+  "r_id\030\002 \001(\005\022\025\n\rtransfer_gold\030\003 \001(\003\022\025\n\rtra"
+  "nsfer_type\030\004 \001(\005\"L\n\016MsgStorageCode\022\017\n\007us"
+  "er_id\030\001 \001(\005\022\r\n\005phone\030\002 \001(\t\022\014\n\004code\030\003 \001(\005"
+  "\022\014\n\004type\030\004 \001(\005\"W\n\016MsgDBBindPhone\022\017\n\007user"
+  "_id\030\001 \001(\005\022\023\n\013invite_code\030\002 \001(\t\022\r\n\005phone\030"
+  "\003 \001(\t\022\020\n\010password\030\004 \001(\t\"U\n\021MsgDBBindPhon"
+  "eRes\022\020\n\010res_code\030\001 \001(\005\022\r\n\005phone\030\002 \001(\t\022\020\n"
+  "\010password\030\003 \001(\t\022\r\n\005award\030\004 \001(\005\"3\n\016MsgDBC"
+  "hatLogin\022\017\n\007user_id\030\001 \001(\005\022\020\n\010password\030\002 "
+  "\001(\t\"7\n\023MsgDBChatTrumpetMsg\022\017\n\007user_id\030\001 "
+  "\001(\005\022\017\n\007message\030\002 \001(\t\"C\n\rMsgDBBuyGoods\022\017\n"
+  "\007user_id\030\001 \001(\005\022\017\n\007item_id\030\002 \001(\005\022\020\n\010item_"
+  "num\030\003 \001(\005\"u\n\021MsgDBGameLoginOut\022\017\n\007user_i"
+  "d\030\001 \001(\005\022\022\n\nis_offline\030\002 \001(\005\022\021\n\tserver_id"
+  "\030\003 \001(\005\022\017\n\007kind_id\030\004 \001(\005\022\027\n\017login_server_"
+  "id\030\005 \001(\005\"\240\001\n\030MsgDBSubagentInformation\022\026\n"
+  "\016agent_nickname\030\001 \001(\t\022\025\n\ragent_user_id\030\002"
+  " \001(\005\022\022\n\nagent_type\030\003 \001(\005\022\026\n\016total_shift_"
+  "to\030\004 \001(\003\022\026\n\016total_roll_out\030\005 \001(\003\022\021\n\tvip_"
+  "level\030\006 \001(\005\"C\n\025MsgDBQueryTransferTax\022\024\n\014"
+  "from_user_id\030\001 \001(\005\022\024\n\014recv_user_id\030\002 \001(\005"
+  "\"\246\001\n\024MsgDBTransferTakeOut\022\021\n\tret_value\030\001"
+  " \001(\005\022\024\n\014recv_user_id\030\002 \001(\005\022\024\n\014send_user_"
+  "id\030\003 \001(\005\022\020\n\010add_gold\030\004 \001(\003\022\021\n\tuser_gold\030"
+  "\005 \001(\003\022\025\n\rreceive_state\030\006 \001(\003\022\023\n\013transfer"
+  "_id\030\007 \001(\003\"C\n\024MsgDBTransferReceive\022\027\n\017rec"
+  "eive_user_id\030\001 \001(\005\022\022\n\nreceive_id\030\002 \001(\003\";"
+  "\n\023MsgDBBindInviteCode\022\017\n\007user_id\030\001 \001(\005\022\023"
+  "\n\013invite_code\030\002 \001(\t\"1\n\020MsgDBSyncDotData\022"
+  "\017\n\007user_id\030\001 \001(\005\022\014\n\004type\030\002 \001(\005\"6\n\025MsgDBO"
+  "nlineActivePick\022\017\n\007user_id\030\001 \001(\005\022\014\n\004type"
+  "\030\002 \001(\005\"5\n\020MsgDBCDKExchange\022\017\n\007user_id\030\001 "
+  "\001(\005\022\020\n\010cdk_code\030\002 \001(\t\"I\n\033MsgDBPersonalDe"
+  "tailsRespAdd\022\017\n\007user_id\030\001 \001(\005\022\014\n\004type\030\002 "
+  "\001(\005\022\013\n\003msg\030\003 \001(\t\"W\n\017MsgDBUpgradeVIP\022\020\n\010r"
+  "es_code\030\001 \001(\005\022\014\n\004gold\030\002 \001(\003\022\017\n\007bind_id\030\003"
+  " \001(\005\022\023\n\013add_vip_exp\030\004 \001(\005\"J\n\020MsgDBSetSub"
+  "Agent\022\017\n\007user_id\030\001 \001(\005\022\020\n\010sub_user\030\002 \001(\005"
+  "\022\023\n\013agent_ratio\030\003 \001(\005\"3\n\022MsgDBGetPlayerG"
+  "old\022\017\n\007user_id\030\001 \001(\005\022\014\n\004coin\030\002 \001(\003\"+\n\014Ms"
+  "gErrorCode\022\014\n\004type\030\001 \001(\005\022\r\n\005value\030\002 \001(\005\""
+  "L\n\030MsgDeleteFrequentlyPhone\022!\n\nerror_cod"
+  "e\030\001 \001(\0132\r.MsgErrorCode\022\r\n\005phone\030\002 \001(\t\"\303\001"
+  "\n\022MsgPvpSerTableInfo\022\020\n\010table_id\030\001 \001(\005\022\022"
+  "\n\ntable_name\030\002 \001(\t\022\021\n\tchair_num\030\003 \001(\005\022\021\n"
+  "\tenter_num\030\004 \001(\005\022\022\n\nbase_score\030\005 \001(\005\022\023\n\013"
+  "is_activate\030\006 \001(\010\022\022\n\nis_private\030\007 \001(\010\022\022\n"
+  "\nowner_nick\030\t \001(\t\022\020\n\010table_no\030\n \001(\005\"L\n\016M"
+  "sgPvpAddTable\022\021\n\tgame_type\030\001 \001(\005\022\'\n\ntabl"
+  "e_list\030\002 \003(\0132\023.MsgPvpSerTableInfo\"5\n\016Msg"
+  "PvpDelTable\022\021\n\tgame_type\030\001 \001(\005\022\020\n\010table_"
+  "id\030\002 \001(\005b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_ServerInternalProto_2eproto_deps[1] = {
 };
@@ -2115,7 +2117,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Ser
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ServerInternalProto_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ServerInternalProto_2eproto = {
-  false, false, descriptor_table_protodef_ServerInternalProto_2eproto, "ServerInternalProto.proto", 6793,
+  false, false, descriptor_table_protodef_ServerInternalProto_2eproto, "ServerInternalProto.proto", 6816,
   &descriptor_table_ServerInternalProto_2eproto_once, descriptor_table_ServerInternalProto_2eproto_sccs, descriptor_table_ServerInternalProto_2eproto_deps, 65, 0,
   schemas, file_default_instances, TableStruct_ServerInternalProto_2eproto::offsets,
   file_level_metadata_ServerInternalProto_2eproto, 65, file_level_enum_descriptors_ServerInternalProto_2eproto, file_level_service_descriptors_ServerInternalProto_2eproto,
@@ -8109,8 +8111,8 @@ MsgLoginPlayerInfo::MsgLoginPlayerInfo(const MsgLoginPlayerInfo& from)
       GetArena());
   }
   ::memcpy(&res_code_, &from.res_code_,
-    static_cast<size_t>(reinterpret_cast<char*>(&kind_id_) -
-    reinterpret_cast<char*>(&res_code_)) + sizeof(kind_id_));
+    static_cast<size_t>(reinterpret_cast<char*>(&register_gold_) -
+    reinterpret_cast<char*>(&res_code_)) + sizeof(register_gold_));
   // @@protoc_insertion_point(copy_constructor:MsgLoginPlayerInfo)
 }
 
@@ -8131,8 +8133,8 @@ void MsgLoginPlayerInfo::SharedCtor() {
   latitude_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&res_code_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&kind_id_) -
-      reinterpret_cast<char*>(&res_code_)) + sizeof(kind_id_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&register_gold_) -
+      reinterpret_cast<char*>(&res_code_)) + sizeof(register_gold_));
 }
 
 MsgLoginPlayerInfo::~MsgLoginPlayerInfo() {
@@ -8193,8 +8195,8 @@ void MsgLoginPlayerInfo::Clear() {
   longitude_.ClearToEmpty();
   latitude_.ClearToEmpty();
   ::memset(&res_code_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&kind_id_) -
-      reinterpret_cast<char*>(&res_code_)) + sizeof(kind_id_));
+      reinterpret_cast<char*>(&register_gold_) -
+      reinterpret_cast<char*>(&res_code_)) + sizeof(register_gold_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -8438,6 +8440,13 @@ const char* MsgLoginPlayerInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
       case 32:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 0)) {
           kind_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 register_gold = 33;
+      case 33:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          register_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -8701,6 +8710,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(32, this->_internal_kind_id(), target);
   }
 
+  // int32 register_gold = 33;
+  if (this->register_gold() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(33, this->_internal_register_gold(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -8923,6 +8938,13 @@ size_t MsgLoginPlayerInfo::ByteSizeLong() const {
         this->_internal_kind_id());
   }
 
+  // int32 register_gold = 33;
+  if (this->register_gold() != 0) {
+    total_size += 2 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_register_gold());
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
         _internal_metadata_, total_size, &_cached_size_);
@@ -9044,6 +9066,9 @@ void MsgLoginPlayerInfo::MergeFrom(const MsgLoginPlayerInfo& from) {
   if (from.kind_id() != 0) {
     _internal_set_kind_id(from._internal_kind_id());
   }
+  if (from.register_gold() != 0) {
+    _internal_set_register_gold(from._internal_register_gold());
+  }
 }
 
 void MsgLoginPlayerInfo::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -9081,8 +9106,8 @@ void MsgLoginPlayerInfo::InternalSwap(MsgLoginPlayerInfo* other) {
   longitude_.Swap(&other->longitude_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   latitude_.Swap(&other->latitude_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgLoginPlayerInfo, kind_id_)
-      + sizeof(MsgLoginPlayerInfo::kind_id_)
+      PROTOBUF_FIELD_OFFSET(MsgLoginPlayerInfo, register_gold_)
+      + sizeof(MsgLoginPlayerInfo::register_gold_)
       - PROTOBUF_FIELD_OFFSET(MsgLoginPlayerInfo, res_code_)>(
           reinterpret_cast<char*>(&res_code_),
           reinterpret_cast<char*>(&other->res_code_));

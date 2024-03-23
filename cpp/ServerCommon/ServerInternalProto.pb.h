@@ -4137,6 +4137,7 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
     kAgentTypeFieldNumber = 30,
     kServerIdFieldNumber = 31,
     kKindIdFieldNumber = 32,
+    kRegisterGoldFieldNumber = 33,
   };
   // string account = 4;
   void clear_account();
@@ -4499,6 +4500,15 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
   void _internal_set_kind_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 register_gold = 33;
+  void clear_register_gold();
+  ::PROTOBUF_NAMESPACE_ID::int32 register_gold() const;
+  void set_register_gold(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_register_gold() const;
+  void _internal_set_register_gold(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:MsgLoginPlayerInfo)
  private:
   class _Internal;
@@ -4536,6 +4546,7 @@ class MsgLoginPlayerInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 agent_type_;
   ::PROTOBUF_NAMESPACE_ID::int32 server_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 kind_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 register_gold_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_ServerInternalProto_2eproto;
 };
@@ -15080,6 +15091,26 @@ inline void MsgLoginPlayerInfo::_internal_set_kind_id(::PROTOBUF_NAMESPACE_ID::i
 inline void MsgLoginPlayerInfo::set_kind_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_kind_id(value);
   // @@protoc_insertion_point(field_set:MsgLoginPlayerInfo.kind_id)
+}
+
+// int32 register_gold = 33;
+inline void MsgLoginPlayerInfo::clear_register_gold() {
+  register_gold_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgLoginPlayerInfo::_internal_register_gold() const {
+  return register_gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgLoginPlayerInfo::register_gold() const {
+  // @@protoc_insertion_point(field_get:MsgLoginPlayerInfo.register_gold)
+  return _internal_register_gold();
+}
+inline void MsgLoginPlayerInfo::_internal_set_register_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  register_gold_ = value;
+}
+inline void MsgLoginPlayerInfo::set_register_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_register_gold(value);
+  // @@protoc_insertion_point(field_set:MsgLoginPlayerInfo.register_gold)
 }
 
 // -------------------------------------------------------------------

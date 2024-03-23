@@ -215,6 +215,7 @@ message MsgLoginPlayerInfo
 	int32		agent_type			= 30;	//用户类型  8:线上用户 9:线下用户
 	int32		server_id			= 31;	//断线服务器ID
 	int32		kind_id				= 32;	//断线游戏IDkind_id
+	int32		register_gold		= 33;	//注册奖励金币
 }
 
 //游戏服务器玩家信息
