@@ -53,7 +53,7 @@ namespace JSBY {
             "DSABKAUSJAoGT3RoZXJzGA4gASgLMhQuSlNCWS5TQ1F1ZWVuRGllRGF0YRIV",
             "Cg1HaWFudEhpdFBvd2VyGA8gASgFEhQKDE14bFNlYWxNb25leRgQIAEoBRIc",
             "ChRNeGxTZWFsQWRkQXdhcmRSYXRpbxgRIAEoBRIUCgxCZWFyTXVsdGlwbGUY",
-            "EiABKAkirwEKEFNDUG9pc29uQm9tVGltZXMSEgoKUG9zaXRpb25JZBgBIAEo",
+            "EiADKAUirwEKEFNDUG9pc29uQm9tVGltZXMSEgoKUG9zaXRpb25JZBgBIAEo",
             "BRINCgVUaW1lcxgCIAEoBRINCgVSYXRpbxgDIAEoBRIQCghBZGRUaW1lcxgE",
             "IAMoBRIUCgxLaWxsUGxheWVySWQYBSABKAUSFAoMSGVyb1VuaXF1ZUlkGAYg",
             "ASgFEisKCkF0dGFja0luZm8YByABKAsyFy5KU0JZLlNwZWNpYWxBdHRhY2tJ",
@@ -3251,7 +3251,7 @@ namespace JSBY {
       giantHitPower_ = other.giantHitPower_;
       mxlSealMoney_ = other.mxlSealMoney_;
       mxlSealAddAwardRatio_ = other.mxlSealAddAwardRatio_;
-      bearMultiple_ = other.bearMultiple_;
+      bearMultiple_ = other.bearMultiple_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3449,13 +3449,12 @@ namespace JSBY {
 
     /// <summary>Field number for the "BearMultiple" field.</summary>
     public const int BearMultipleFieldNumber = 18;
-    private string bearMultiple_ = "";
+    private static readonly pb::FieldCodec<int> _repeated_bearMultiple_codec
+        = pb::FieldCodec.ForInt32(146);
+    private readonly pbc::RepeatedField<int> bearMultiple_ = new pbc::RepeatedField<int>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string BearMultiple {
+    public pbc::RepeatedField<int> BearMultiple {
       get { return bearMultiple_; }
-      set {
-        bearMultiple_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3488,7 +3487,7 @@ namespace JSBY {
       if (GiantHitPower != other.GiantHitPower) return false;
       if (MxlSealMoney != other.MxlSealMoney) return false;
       if (MxlSealAddAwardRatio != other.MxlSealAddAwardRatio) return false;
-      if (BearMultiple != other.BearMultiple) return false;
+      if(!bearMultiple_.Equals(other.bearMultiple_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -3512,7 +3511,7 @@ namespace JSBY {
       if (GiantHitPower != 0) hash ^= GiantHitPower.GetHashCode();
       if (MxlSealMoney != 0) hash ^= MxlSealMoney.GetHashCode();
       if (MxlSealAddAwardRatio != 0) hash ^= MxlSealAddAwardRatio.GetHashCode();
-      if (BearMultiple.Length != 0) hash ^= BearMultiple.GetHashCode();
+      hash ^= bearMultiple_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3597,10 +3596,7 @@ namespace JSBY {
         output.WriteRawTag(136, 1);
         output.WriteInt32(MxlSealAddAwardRatio);
       }
-      if (BearMultiple.Length != 0) {
-        output.WriteRawTag(146, 1);
-        output.WriteString(BearMultiple);
-      }
+      bearMultiple_.WriteTo(output, _repeated_bearMultiple_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3678,10 +3674,7 @@ namespace JSBY {
         output.WriteRawTag(136, 1);
         output.WriteInt32(MxlSealAddAwardRatio);
       }
-      if (BearMultiple.Length != 0) {
-        output.WriteRawTag(146, 1);
-        output.WriteString(BearMultiple);
-      }
+      bearMultiple_.WriteTo(ref output, _repeated_bearMultiple_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -3742,9 +3735,7 @@ namespace JSBY {
       if (MxlSealAddAwardRatio != 0) {
         size += 2 + pb::CodedOutputStream.ComputeInt32Size(MxlSealAddAwardRatio);
       }
-      if (BearMultiple.Length != 0) {
-        size += 2 + pb::CodedOutputStream.ComputeStringSize(BearMultiple);
-      }
+      size += bearMultiple_.CalculateSize(_repeated_bearMultiple_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -3816,9 +3807,7 @@ namespace JSBY {
       if (other.MxlSealAddAwardRatio != 0) {
         MxlSealAddAwardRatio = other.MxlSealAddAwardRatio;
       }
-      if (other.BearMultiple.Length != 0) {
-        BearMultiple = other.BearMultiple;
-      }
+      bearMultiple_.Add(other.bearMultiple_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -3910,8 +3899,9 @@ namespace JSBY {
             MxlSealAddAwardRatio = input.ReadInt32();
             break;
           }
-          case 146: {
-            BearMultiple = input.ReadString();
+          case 146:
+          case 144: {
+            bearMultiple_.AddEntriesFrom(input, _repeated_bearMultiple_codec);
             break;
           }
         }
@@ -4005,8 +3995,9 @@ namespace JSBY {
             MxlSealAddAwardRatio = input.ReadInt32();
             break;
           }
-          case 146: {
-            BearMultiple = input.ReadString();
+          case 146:
+          case 144: {
+            bearMultiple_.AddEntriesFrom(ref input, _repeated_bearMultiple_codec);
             break;
           }
         }

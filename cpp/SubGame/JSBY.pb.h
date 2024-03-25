@@ -2652,21 +2652,27 @@ class SCSyncMoney PROTOBUF_FINAL :
     kMxlSealMoneyFieldNumber = 16,
     kMxlSealAddAwardRatioFieldNumber = 17,
   };
-  // string BearMultiple = 18;
-  void clear_bearmultiple();
-  const std::string& bearmultiple() const;
-  void set_bearmultiple(const std::string& value);
-  void set_bearmultiple(std::string&& value);
-  void set_bearmultiple(const char* value);
-  void set_bearmultiple(const char* value, size_t size);
-  std::string* mutable_bearmultiple();
-  std::string* release_bearmultiple();
-  void set_allocated_bearmultiple(std::string* bearmultiple);
+  // repeated int32 BearMultiple = 18;
+  int bearmultiple_size() const;
   private:
-  const std::string& _internal_bearmultiple() const;
-  void _internal_set_bearmultiple(const std::string& value);
-  std::string* _internal_mutable_bearmultiple();
+  int _internal_bearmultiple_size() const;
   public:
+  void clear_bearmultiple();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_bearmultiple(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_bearmultiple() const;
+  void _internal_add_bearmultiple(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_bearmultiple();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 bearmultiple(int index) const;
+  void set_bearmultiple(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_bearmultiple(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      bearmultiple() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_bearmultiple();
 
   // .JSBY.UserBomTimes Bom = 8;
   bool has_bom() const;
@@ -2855,7 +2861,8 @@ class SCSyncMoney PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr bearmultiple_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > bearmultiple_;
+  mutable std::atomic<int> _bearmultiple_cached_byte_size_;
   ::JSBY::UserBomTimes* bom_;
   ::JSBY::SpecialAttackInfo* attackinfo_;
   ::JSBY::SCQueenDieData* others_;
@@ -22654,65 +22661,51 @@ inline void SCSyncMoney::set_mxlsealaddawardratio(::PROTOBUF_NAMESPACE_ID::int32
   // @@protoc_insertion_point(field_set:JSBY.SCSyncMoney.MxlSealAddAwardRatio)
 }
 
-// string BearMultiple = 18;
+// repeated int32 BearMultiple = 18;
+inline int SCSyncMoney::_internal_bearmultiple_size() const {
+  return bearmultiple_.size();
+}
+inline int SCSyncMoney::bearmultiple_size() const {
+  return _internal_bearmultiple_size();
+}
 inline void SCSyncMoney::clear_bearmultiple() {
-  bearmultiple_.ClearToEmpty();
+  bearmultiple_.Clear();
 }
-inline const std::string& SCSyncMoney::bearmultiple() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCSyncMoney::_internal_bearmultiple(int index) const {
+  return bearmultiple_.Get(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCSyncMoney::bearmultiple(int index) const {
   // @@protoc_insertion_point(field_get:JSBY.SCSyncMoney.BearMultiple)
-  return _internal_bearmultiple();
+  return _internal_bearmultiple(index);
 }
-inline void SCSyncMoney::set_bearmultiple(const std::string& value) {
-  _internal_set_bearmultiple(value);
+inline void SCSyncMoney::set_bearmultiple(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  bearmultiple_.Set(index, value);
   // @@protoc_insertion_point(field_set:JSBY.SCSyncMoney.BearMultiple)
 }
-inline std::string* SCSyncMoney::mutable_bearmultiple() {
-  // @@protoc_insertion_point(field_mutable:JSBY.SCSyncMoney.BearMultiple)
+inline void SCSyncMoney::_internal_add_bearmultiple(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  bearmultiple_.Add(value);
+}
+inline void SCSyncMoney::add_bearmultiple(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_bearmultiple(value);
+  // @@protoc_insertion_point(field_add:JSBY.SCSyncMoney.BearMultiple)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+SCSyncMoney::_internal_bearmultiple() const {
+  return bearmultiple_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+SCSyncMoney::bearmultiple() const {
+  // @@protoc_insertion_point(field_list:JSBY.SCSyncMoney.BearMultiple)
+  return _internal_bearmultiple();
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+SCSyncMoney::_internal_mutable_bearmultiple() {
+  return &bearmultiple_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+SCSyncMoney::mutable_bearmultiple() {
+  // @@protoc_insertion_point(field_mutable_list:JSBY.SCSyncMoney.BearMultiple)
   return _internal_mutable_bearmultiple();
-}
-inline const std::string& SCSyncMoney::_internal_bearmultiple() const {
-  return bearmultiple_.Get();
-}
-inline void SCSyncMoney::_internal_set_bearmultiple(const std::string& value) {
-  
-  bearmultiple_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
-}
-inline void SCSyncMoney::set_bearmultiple(std::string&& value) {
-  
-  bearmultiple_.Set(
-    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
-  // @@protoc_insertion_point(field_set_rvalue:JSBY.SCSyncMoney.BearMultiple)
-}
-inline void SCSyncMoney::set_bearmultiple(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  
-  bearmultiple_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
-  // @@protoc_insertion_point(field_set_char:JSBY.SCSyncMoney.BearMultiple)
-}
-inline void SCSyncMoney::set_bearmultiple(const char* value,
-    size_t size) {
-  
-  bearmultiple_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
-      reinterpret_cast<const char*>(value), size), GetArena());
-  // @@protoc_insertion_point(field_set_pointer:JSBY.SCSyncMoney.BearMultiple)
-}
-inline std::string* SCSyncMoney::_internal_mutable_bearmultiple() {
-  
-  return bearmultiple_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
-}
-inline std::string* SCSyncMoney::release_bearmultiple() {
-  // @@protoc_insertion_point(field_release:JSBY.SCSyncMoney.BearMultiple)
-  return bearmultiple_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-}
-inline void SCSyncMoney::set_allocated_bearmultiple(std::string* bearmultiple) {
-  if (bearmultiple != nullptr) {
-    
-  } else {
-    
-  }
-  bearmultiple_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), bearmultiple,
-      GetArena());
-  // @@protoc_insertion_point(field_set_allocated:JSBY.SCSyncMoney.BearMultiple)
 }
 
 // -------------------------------------------------------------------

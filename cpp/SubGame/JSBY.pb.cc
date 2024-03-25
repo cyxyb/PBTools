@@ -3568,7 +3568,7 @@ const char descriptor_table_protodef_JSBY_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "\005\022$\n\006Others\030\016 \001(\0132\024.JSBY.SCQueenDieData\022"
   "\025\n\rGiantHitPower\030\017 \001(\005\022\024\n\014MxlSealMoney\030\020"
   " \001(\005\022\034\n\024MxlSealAddAwardRatio\030\021 \001(\005\022\024\n\014Be"
-  "arMultiple\030\022 \001(\t\"\257\001\n\020SCPoisonBomTimes\022\022\n"
+  "arMultiple\030\022 \003(\005\"\257\001\n\020SCPoisonBomTimes\022\022\n"
   "\nPositionId\030\001 \001(\005\022\r\n\005Times\030\002 \001(\005\022\r\n\005Rati"
   "o\030\003 \001(\005\022\020\n\010AddTimes\030\004 \003(\005\022\024\n\014KillPlayerI"
   "d\030\005 \001(\005\022\024\n\014HeroUniqueId\030\006 \001(\005\022+\n\nAttackI"
@@ -6860,19 +6860,16 @@ SCSyncMoney::_Internal::others(const SCSyncMoney* msg) {
   return *msg->others_;
 }
 SCSyncMoney::SCSyncMoney(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  bearmultiple_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:JSBY.SCSyncMoney)
 }
 SCSyncMoney::SCSyncMoney(const SCSyncMoney& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      bearmultiple_(from.bearmultiple_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  bearmultiple_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_bearmultiple().empty()) {
-    bearmultiple_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_bearmultiple(), 
-      GetArena());
-  }
   if (from._internal_has_bom()) {
     bom_ = new ::JSBY::UserBomTimes(*from.bom_);
   } else {
@@ -6896,7 +6893,6 @@ SCSyncMoney::SCSyncMoney(const SCSyncMoney& from)
 
 void SCSyncMoney::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SCSyncMoney_JSBY_2eproto.base);
-  bearmultiple_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&bom_) - reinterpret_cast<char*>(this)),
       0, static_cast<size_t>(reinterpret_cast<char*>(&mxlsealaddawardratio_) -
@@ -6911,7 +6907,6 @@ SCSyncMoney::~SCSyncMoney() {
 
 void SCSyncMoney::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
-  bearmultiple_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete bom_;
   if (this != internal_default_instance()) delete attackinfo_;
   if (this != internal_default_instance()) delete others_;
@@ -6938,7 +6933,7 @@ void SCSyncMoney::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  bearmultiple_.ClearToEmpty();
+  bearmultiple_.Clear();
   if (GetArena() == nullptr && bom_ != nullptr) {
     delete bom_;
   }
@@ -7083,12 +7078,13 @@ const char* SCSyncMoney::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // string BearMultiple = 18;
+      // repeated int32 BearMultiple = 18;
       case 18:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 146)) {
-          auto str = _internal_mutable_bearmultiple();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "JSBY.SCSyncMoney.BearMultiple"));
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt32Parser(_internal_mutable_bearmultiple(), ptr, ctx);
+          CHK_(ptr);
+        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 144) {
+          _internal_add_bearmultiple(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -7228,14 +7224,13 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(17, this->_internal_mxlsealaddawardratio(), target);
   }
 
-  // string BearMultiple = 18;
-  if (this->bearmultiple().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_bearmultiple().data(), static_cast<int>(this->_internal_bearmultiple().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "JSBY.SCSyncMoney.BearMultiple");
-    target = stream->WriteStringMaybeAliased(
-        18, this->_internal_bearmultiple(), target);
+  // repeated int32 BearMultiple = 18;
+  {
+    int byte_size = _bearmultiple_cached_byte_size_.load(std::memory_order_relaxed);
+    if (byte_size > 0) {
+      target = stream->WriteInt32Packed(
+          18, _internal_bearmultiple(), byte_size, target);
+    }
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -7254,11 +7249,19 @@ size_t SCSyncMoney::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string BearMultiple = 18;
-  if (this->bearmultiple().size() > 0) {
-    total_size += 2 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_bearmultiple());
+  // repeated int32 BearMultiple = 18;
+  {
+    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      Int32Size(this->bearmultiple_);
+    if (data_size > 0) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+            static_cast<::PROTOBUF_NAMESPACE_ID::int32>(data_size));
+    }
+    int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(data_size);
+    _bearmultiple_cached_byte_size_.store(cached_size,
+                                    std::memory_order_relaxed);
+    total_size += data_size;
   }
 
   // .JSBY.UserBomTimes Bom = 8;
@@ -7411,9 +7414,7 @@ void SCSyncMoney::MergeFrom(const SCSyncMoney& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.bearmultiple().size() > 0) {
-    _internal_set_bearmultiple(from._internal_bearmultiple());
-  }
+  bearmultiple_.MergeFrom(from.bearmultiple_);
   if (from.has_bom()) {
     _internal_mutable_bom()->::JSBY::UserBomTimes::MergeFrom(from._internal_bom());
   }
@@ -7488,7 +7489,7 @@ bool SCSyncMoney::IsInitialized() const {
 void SCSyncMoney::InternalSwap(SCSyncMoney* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  bearmultiple_.Swap(&other->bearmultiple_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  bearmultiple_.InternalSwap(&other->bearmultiple_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(SCSyncMoney, mxlsealaddawardratio_)
       + sizeof(SCSyncMoney::mxlsealaddawardratio_)
