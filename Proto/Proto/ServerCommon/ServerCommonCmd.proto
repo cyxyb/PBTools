@@ -239,6 +239,8 @@ enum EMsgIDDB
 	DB2LOGIN_GetClaimRecordResp				= 1111; //查询返利领取记录返回
 	LOGIN2DB_GetPerformanceRecord			= 1112;	//查询个人业绩
 	DB2LOGIN_GetPerformanceRecordResp		= 1113;	//查询个人业绩返回
+	LOGIN2DB_ControlUser					= 1114;	//控制玩家
+	DB2LOGIN_ControlUserResp				= 1115;	//控制玩家返回
 	//2001-3000 GameServer2DB		
 	GAME2DB_Login							= 2001;	//玩家登录游戏
 	DB2GAME_LoginResp						= 2002;	//玩家登录游戏返回

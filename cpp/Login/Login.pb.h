@@ -46,7 +46,7 @@ struct TableStruct_Login_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[78]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[79]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -98,6 +98,9 @@ extern MsgClaimRecordDefaultTypeInternal _MsgClaimRecord_default_instance_;
 class MsgCommonKV;
 class MsgCommonKVDefaultTypeInternal;
 extern MsgCommonKVDefaultTypeInternal _MsgCommonKV_default_instance_;
+class MsgControlUser;
+class MsgControlUserDefaultTypeInternal;
+extern MsgControlUserDefaultTypeInternal _MsgControlUser_default_instance_;
 class MsgDotRechargeResp;
 class MsgDotRechargeRespDefaultTypeInternal;
 extern MsgDotRechargeRespDefaultTypeInternal _MsgDotRechargeResp_default_instance_;
@@ -303,6 +306,7 @@ template<> ::MsgCDKExchangeResp* Arena::CreateMaybeMessage<::MsgCDKExchangeResp>
 template<> ::MsgCheckInInfo* Arena::CreateMaybeMessage<::MsgCheckInInfo>(Arena*);
 template<> ::MsgClaimRecord* Arena::CreateMaybeMessage<::MsgClaimRecord>(Arena*);
 template<> ::MsgCommonKV* Arena::CreateMaybeMessage<::MsgCommonKV>(Arena*);
+template<> ::MsgControlUser* Arena::CreateMaybeMessage<::MsgControlUser>(Arena*);
 template<> ::MsgDotRechargeResp* Arena::CreateMaybeMessage<::MsgDotRechargeResp>(Arena*);
 template<> ::MsgForgetPassword* Arena::CreateMaybeMessage<::MsgForgetPassword>(Arena*);
 template<> ::MsgGetAvatarInfo* Arena::CreateMaybeMessage<::MsgGetAvatarInfo>(Arena*);
@@ -14462,6 +14466,164 @@ class MsgBindPhoneAward PROTOBUF_FINAL :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
+// -------------------------------------------------------------------
+
+class MsgControlUser PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgControlUser) */ {
+ public:
+  inline MsgControlUser() : MsgControlUser(nullptr) {}
+  virtual ~MsgControlUser();
+
+  MsgControlUser(const MsgControlUser& from);
+  MsgControlUser(MsgControlUser&& from) noexcept
+    : MsgControlUser() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgControlUser& operator=(const MsgControlUser& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgControlUser& operator=(MsgControlUser&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgControlUser& default_instance();
+
+  static inline const MsgControlUser* internal_default_instance() {
+    return reinterpret_cast<const MsgControlUser*>(
+               &_MsgControlUser_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    78;
+
+  friend void swap(MsgControlUser& a, MsgControlUser& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgControlUser* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgControlUser* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgControlUser* New() const final {
+    return CreateMaybeMessage<MsgControlUser>(nullptr);
+  }
+
+  MsgControlUser* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgControlUser>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgControlUser& from);
+  void MergeFrom(const MsgControlUser& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgControlUser* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgControlUser";
+  }
+  protected:
+  explicit MsgControlUser(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Login_2eproto);
+    return ::descriptor_table_Login_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kControlUserFieldNumber = 1,
+    kTypeFieldNumber = 2,
+    kControlGoldFieldNumber = 3,
+  };
+  // int32 control_user = 1;
+  void clear_control_user();
+  ::PROTOBUF_NAMESPACE_ID::int32 control_user() const;
+  void set_control_user(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_control_user() const;
+  void _internal_set_control_user(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 type = 2;
+  void clear_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 type() const;
+  void set_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_type() const;
+  void _internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int64 control_gold = 3;
+  void clear_control_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 control_gold() const;
+  void set_control_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_control_gold() const;
+  void _internal_set_control_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgControlUser)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 control_user_;
+  ::PROTOBUF_NAMESPACE_ID::int32 type_;
+  ::PROTOBUF_NAMESPACE_ID::int64 control_gold_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Login_2eproto;
+};
 // ===================================================================
 
 
@@ -24554,9 +24716,75 @@ inline void MsgBindPhoneAward::set_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:MsgBindPhoneAward.gold)
 }
 
+// -------------------------------------------------------------------
+
+// MsgControlUser
+
+// int32 control_user = 1;
+inline void MsgControlUser::clear_control_user() {
+  control_user_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgControlUser::_internal_control_user() const {
+  return control_user_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgControlUser::control_user() const {
+  // @@protoc_insertion_point(field_get:MsgControlUser.control_user)
+  return _internal_control_user();
+}
+inline void MsgControlUser::_internal_set_control_user(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  control_user_ = value;
+}
+inline void MsgControlUser::set_control_user(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_control_user(value);
+  // @@protoc_insertion_point(field_set:MsgControlUser.control_user)
+}
+
+// int32 type = 2;
+inline void MsgControlUser::clear_type() {
+  type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgControlUser::_internal_type() const {
+  return type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgControlUser::type() const {
+  // @@protoc_insertion_point(field_get:MsgControlUser.type)
+  return _internal_type();
+}
+inline void MsgControlUser::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  type_ = value;
+}
+inline void MsgControlUser::set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_type(value);
+  // @@protoc_insertion_point(field_set:MsgControlUser.type)
+}
+
+// int64 control_gold = 3;
+inline void MsgControlUser::clear_control_gold() {
+  control_gold_ = PROTOBUF_LONGLONG(0);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgControlUser::_internal_control_gold() const {
+  return control_gold_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgControlUser::control_gold() const {
+  // @@protoc_insertion_point(field_get:MsgControlUser.control_gold)
+  return _internal_control_gold();
+}
+inline void MsgControlUser::_internal_set_control_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  
+  control_gold_ = value;
+}
+inline void MsgControlUser::set_control_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
+  _internal_set_control_gold(value);
+  // @@protoc_insertion_point(field_set:MsgControlUser.control_gold)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

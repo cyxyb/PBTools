@@ -552,6 +552,15 @@ message MsgDBGetPlayerGold
 	int64 coin			= 2;			//玩家金币
 }
 
+//控制玩家
+message MsgDBControlUser
+{
+	int32 userid			= 1;		//玩家id
+	int32 control_userid 	= 2;		//控制玩家ID
+	int32 type 				= 3;		//控制类型(1:大赢 2：小赢 3：大输 4：小输)
+	int64 control_gold		= 4;		//控制金币数量
+}
+
 //短信状态
 message MsgErrorCode
 {

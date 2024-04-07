@@ -160,6 +160,8 @@ enum EMsgIDLogin
 	MsgIDAgent_GetPerformanceRecord				= 146;		//查询个人业绩(MsgCommonN32)
 	MsgIDAgent_GetPerformanceRecordResp			= 147;		//查询个人业绩返回(MsgQueryPerformanceResp)
 	MsgIDLogin_NotifySysMaintainResp			= 148;		//通知服务器即将维护时间点(MsgCommonN32)
+	MsgIDAgent_ControlUser						= 149;		//控制玩家(MsgControlUser)
+	MsgIDAgent_ControlUserResp					= 150;		//控制玩家返回(MsgCommonN32)
 }
 
 enum EMsgIDGame
