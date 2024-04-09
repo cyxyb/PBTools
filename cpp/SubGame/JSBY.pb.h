@@ -7180,13 +7180,13 @@ class TablePlayerInfo PROTOBUF_FINAL :
   void _internal_set_playerid(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 Money = 3;
+  // int64 Money = 3;
   void clear_money();
-  ::PROTOBUF_NAMESPACE_ID::int32 money() const;
-  void set_money(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int64 money() const;
+  void set_money(::PROTOBUF_NAMESPACE_ID::int64 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_money() const;
-  void _internal_set_money(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_money() const;
+  void _internal_set_money(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
   // int32 Sex = 4;
@@ -7255,7 +7255,7 @@ class TablePlayerInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr head_;
   ::PROTOBUF_NAMESPACE_ID::int32 chairid_;
   ::PROTOBUF_NAMESPACE_ID::int32 playerid_;
-  ::PROTOBUF_NAMESPACE_ID::int32 money_;
+  ::PROTOBUF_NAMESPACE_ID::int64 money_;
   ::PROTOBUF_NAMESPACE_ID::int32 sex_;
   ::PROTOBUF_NAMESPACE_ID::int32 moneyvariation_;
   ::PROTOBUF_NAMESPACE_ID::int32 viplevel_;
@@ -24630,22 +24630,22 @@ inline void TablePlayerInfo::set_playerid(::PROTOBUF_NAMESPACE_ID::int32 value) 
   // @@protoc_insertion_point(field_set:JSBY.TablePlayerInfo.PlayerId)
 }
 
-// int32 Money = 3;
+// int64 Money = 3;
 inline void TablePlayerInfo::clear_money() {
-  money_ = 0;
+  money_ = PROTOBUF_LONGLONG(0);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 TablePlayerInfo::_internal_money() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 TablePlayerInfo::_internal_money() const {
   return money_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 TablePlayerInfo::money() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 TablePlayerInfo::money() const {
   // @@protoc_insertion_point(field_get:JSBY.TablePlayerInfo.Money)
   return _internal_money();
 }
-inline void TablePlayerInfo::_internal_set_money(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void TablePlayerInfo::_internal_set_money(::PROTOBUF_NAMESPACE_ID::int64 value) {
   
   money_ = value;
 }
-inline void TablePlayerInfo::set_money(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void TablePlayerInfo::set_money(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_money(value);
   // @@protoc_insertion_point(field_set:JSBY.TablePlayerInfo.Money)
 }

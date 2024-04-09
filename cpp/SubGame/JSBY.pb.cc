@@ -3612,7 +3612,7 @@ const char descriptor_table_protodef_JSBY_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "\n\010UniqueId\030\006 \001(\005\"9\n\020TowerHeroAtkInfo\022\026\n\016"
   "HeroPositionId\030\001 \001(\005\022\r\n\005IsAtk\030\002 \001(\010\"\354\001\n\017"
   "TablePlayerInfo\022\017\n\007ChairId\030\001 \001(\005\022\020\n\010Play"
-  "erId\030\002 \001(\005\022\r\n\005Money\030\003 \001(\005\022\013\n\003Sex\030\004 \001(\005\022\014"
+  "erId\030\002 \001(\005\022\r\n\005Money\030\003 \001(\003\022\013\n\003Sex\030\004 \001(\005\022\014"
   "\n\004Name\030\005 \001(\t\022\014\n\004Head\030\006 \001(\t\022!\n\004Info\030\007 \003(\013"
   "2\023.JSBY.TowerHeroInfo\022\026\n\016MoneyVariation\030"
   "\010 \001(\005\022\020\n\010VipLevel\030\t \001(\005\022\r\n\005IsVip\030\n \001(\010\022\022"
@@ -13836,7 +13836,7 @@ const char* TablePlayerInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 Money = 3;
+      // int64 Money = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           money_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
@@ -13955,10 +13955,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_playerid(), target);
   }
 
-  // int32 Money = 3;
+  // int64 Money = 3;
   if (this->money() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_money(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_money(), target);
   }
 
   // int32 Sex = 4;
@@ -14076,10 +14076,10 @@ size_t TablePlayerInfo::ByteSizeLong() const {
         this->_internal_playerid());
   }
 
-  // int32 Money = 3;
+  // int64 Money = 3;
   if (this->money() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_money());
   }
 

@@ -498,7 +498,7 @@ message TablePlayerInfo
 {
 	 int32 ChairId = 1;
 	 int32 PlayerId = 2;
-	 int32 Money = 3;
+	 int64 Money = 3;
 	 int32 Sex = 4;
 	 string Name = 5;
 	 string Head = 6;

@@ -92,7 +92,7 @@ namespace JSBY {
             "ZBgFIAEoBRIQCghVbmlxdWVJZBgGIAEoBSI5ChBUb3dlckhlcm9BdGtJbmZv",
             "EhYKDkhlcm9Qb3NpdGlvbklkGAEgASgFEg0KBUlzQXRrGAIgASgIIuwBCg9U",
             "YWJsZVBsYXllckluZm8SDwoHQ2hhaXJJZBgBIAEoBRIQCghQbGF5ZXJJZBgC",
-            "IAEoBRINCgVNb25leRgDIAEoBRILCgNTZXgYBCABKAUSDAoETmFtZRgFIAEo",
+            "IAEoBRINCgVNb25leRgDIAEoAxILCgNTZXgYBCABKAUSDAoETmFtZRgFIAEo",
             "CRIMCgRIZWFkGAYgASgJEiEKBEluZm8YByADKAsyEy5KU0JZLlRvd2VySGVy",
             "b0luZm8SFgoOTW9uZXlWYXJpYXRpb24YCCABKAUSEAoIVmlwTGV2ZWwYCSAB",
             "KAUSDQoFSXNWaXAYCiABKAgSEgoKQmFja2dyb3VuZBgLIAEoBRIOCgZFZmZl",
@@ -9903,9 +9903,9 @@ namespace JSBY {
 
     /// <summary>Field number for the "Money" field.</summary>
     public const int MoneyFieldNumber = 3;
-    private int money_;
+    private long money_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Money {
+    public long Money {
       get { return money_; }
       set {
         money_ = value;
@@ -10043,7 +10043,7 @@ namespace JSBY {
       int hash = 1;
       if (ChairId != 0) hash ^= ChairId.GetHashCode();
       if (PlayerId != 0) hash ^= PlayerId.GetHashCode();
-      if (Money != 0) hash ^= Money.GetHashCode();
+      if (Money != 0L) hash ^= Money.GetHashCode();
       if (Sex != 0) hash ^= Sex.GetHashCode();
       if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (Head.Length != 0) hash ^= Head.GetHashCode();
@@ -10077,9 +10077,9 @@ namespace JSBY {
         output.WriteRawTag(16);
         output.WriteInt32(PlayerId);
       }
-      if (Money != 0) {
+      if (Money != 0L) {
         output.WriteRawTag(24);
-        output.WriteInt32(Money);
+        output.WriteInt64(Money);
       }
       if (Sex != 0) {
         output.WriteRawTag(32);
@@ -10131,9 +10131,9 @@ namespace JSBY {
         output.WriteRawTag(16);
         output.WriteInt32(PlayerId);
       }
-      if (Money != 0) {
+      if (Money != 0L) {
         output.WriteRawTag(24);
-        output.WriteInt32(Money);
+        output.WriteInt64(Money);
       }
       if (Sex != 0) {
         output.WriteRawTag(32);
@@ -10183,8 +10183,8 @@ namespace JSBY {
       if (PlayerId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(PlayerId);
       }
-      if (Money != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Money);
+      if (Money != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Money);
       }
       if (Sex != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Sex);
@@ -10228,7 +10228,7 @@ namespace JSBY {
       if (other.PlayerId != 0) {
         PlayerId = other.PlayerId;
       }
-      if (other.Money != 0) {
+      if (other.Money != 0L) {
         Money = other.Money;
       }
       if (other.Sex != 0) {
@@ -10279,7 +10279,7 @@ namespace JSBY {
             break;
           }
           case 24: {
-            Money = input.ReadInt32();
+            Money = input.ReadInt64();
             break;
           }
           case 32: {
@@ -10341,7 +10341,7 @@ namespace JSBY {
             break;
           }
           case 24: {
-            Money = input.ReadInt32();
+            Money = input.ReadInt64();
             break;
           }
           case 32: {
