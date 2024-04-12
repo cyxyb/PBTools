@@ -259,6 +259,11 @@ enum HallMsgErrorCode
 	HMEC_SystemError=7;
 }
 
+message SC_SceneInfo
+{
+	repeated int32 bet_list = 1;	//押注
+}
+
 message HeroInfo
 {
 	int32 ID	= 1;
