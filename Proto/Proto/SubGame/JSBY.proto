@@ -737,7 +737,6 @@ message SCPushGhostDragonRelease
 	 int32 UseCount = 5;
 	 int32 Ratio = 6;
 	 SpecialAttackInfo AttackInfo = 7;
-	 int32 HeroUniqueId = 8;
 }
 message SCPushGhostDragonEnd
 {

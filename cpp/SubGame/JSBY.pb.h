@@ -14138,7 +14138,6 @@ class SCPushGhostDragonRelease PROTOBUF_FINAL :
     kAttackCountFieldNumber = 4,
     kUseCountFieldNumber = 5,
     kRatioFieldNumber = 6,
-    kHeroUniqueIdFieldNumber = 8,
   };
   // .JSBY.SpecialAttackInfo AttackInfo = 7;
   bool has_attackinfo() const;
@@ -14212,15 +14211,6 @@ class SCPushGhostDragonRelease PROTOBUF_FINAL :
   void _internal_set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 HeroUniqueId = 8;
-  void clear_herouniqueid();
-  ::PROTOBUF_NAMESPACE_ID::int32 herouniqueid() const;
-  void set_herouniqueid(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_herouniqueid() const;
-  void _internal_set_herouniqueid(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
   // @@protoc_insertion_point(class_scope:JSBY.SCPushGhostDragonRelease)
  private:
   class _Internal;
@@ -14235,7 +14225,6 @@ class SCPushGhostDragonRelease PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 attackcount_;
   ::PROTOBUF_NAMESPACE_ID::int32 usecount_;
   ::PROTOBUF_NAMESPACE_ID::int32 ratio_;
-  ::PROTOBUF_NAMESPACE_ID::int32 herouniqueid_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_JSBY_2eproto;
 };
@@ -27920,26 +27909,6 @@ inline void SCPushGhostDragonRelease::set_allocated_attackinfo(::JSBY::SpecialAt
   }
   attackinfo_ = attackinfo;
   // @@protoc_insertion_point(field_set_allocated:JSBY.SCPushGhostDragonRelease.AttackInfo)
-}
-
-// int32 HeroUniqueId = 8;
-inline void SCPushGhostDragonRelease::clear_herouniqueid() {
-  herouniqueid_ = 0;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 SCPushGhostDragonRelease::_internal_herouniqueid() const {
-  return herouniqueid_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 SCPushGhostDragonRelease::herouniqueid() const {
-  // @@protoc_insertion_point(field_get:JSBY.SCPushGhostDragonRelease.HeroUniqueId)
-  return _internal_herouniqueid();
-}
-inline void SCPushGhostDragonRelease::_internal_set_herouniqueid(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  herouniqueid_ = value;
-}
-inline void SCPushGhostDragonRelease::set_herouniqueid(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  _internal_set_herouniqueid(value);
-  // @@protoc_insertion_point(field_set:JSBY.SCPushGhostDragonRelease.HeroUniqueId)
 }
 
 // -------------------------------------------------------------------
