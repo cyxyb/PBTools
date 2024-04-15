@@ -910,6 +910,7 @@ message SCPushBalloonTimes
 	 int32 StartTime = 5;
 	 int32 AttackCount = 6;
 	 SpecialAttackInfo AttackInfo = 7;
+	 int32 HeroUniqueId = 8;
 }
 message SwitchInfo
 {

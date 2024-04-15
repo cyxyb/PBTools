@@ -19382,6 +19382,7 @@ class SCPushBalloonTimes PROTOBUF_FINAL :
     kRatioFieldNumber = 4,
     kStartTimeFieldNumber = 5,
     kAttackCountFieldNumber = 6,
+    kHeroUniqueIdFieldNumber = 8,
   };
   // .JSBY.SpecialAttackInfo AttackInfo = 7;
   bool has_attackinfo() const;
@@ -19455,6 +19456,15 @@ class SCPushBalloonTimes PROTOBUF_FINAL :
   void _internal_set_attackcount(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 HeroUniqueId = 8;
+  void clear_herouniqueid();
+  ::PROTOBUF_NAMESPACE_ID::int32 herouniqueid() const;
+  void set_herouniqueid(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_herouniqueid() const;
+  void _internal_set_herouniqueid(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:JSBY.SCPushBalloonTimes)
  private:
   class _Internal;
@@ -19469,6 +19479,7 @@ class SCPushBalloonTimes PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 ratio_;
   ::PROTOBUF_NAMESPACE_ID::int32 starttime_;
   ::PROTOBUF_NAMESPACE_ID::int32 attackcount_;
+  ::PROTOBUF_NAMESPACE_ID::int32 herouniqueid_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_JSBY_2eproto;
 };
@@ -30078,6 +30089,26 @@ inline void SCPushBalloonTimes::set_allocated_attackinfo(::JSBY::SpecialAttackIn
   }
   attackinfo_ = attackinfo;
   // @@protoc_insertion_point(field_set_allocated:JSBY.SCPushBalloonTimes.AttackInfo)
+}
+
+// int32 HeroUniqueId = 8;
+inline void SCPushBalloonTimes::clear_herouniqueid() {
+  herouniqueid_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCPushBalloonTimes::_internal_herouniqueid() const {
+  return herouniqueid_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCPushBalloonTimes::herouniqueid() const {
+  // @@protoc_insertion_point(field_get:JSBY.SCPushBalloonTimes.HeroUniqueId)
+  return _internal_herouniqueid();
+}
+inline void SCPushBalloonTimes::_internal_set_herouniqueid(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  herouniqueid_ = value;
+}
+inline void SCPushBalloonTimes::set_herouniqueid(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_herouniqueid(value);
+  // @@protoc_insertion_point(field_set:JSBY.SCPushBalloonTimes.HeroUniqueId)
 }
 
 // -------------------------------------------------------------------
