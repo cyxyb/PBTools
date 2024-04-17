@@ -706,3 +706,10 @@ message MsgControlUser
 	int32 type 			= 2;			//控制类型(1:大赢 2：小赢 3：大输 4：小输)
 	int64 control_gold	= 3;			//控制金币数量
 }
+
+//控制玩家
+message MsgTranferRecallResp
+{
+	int32 code 			= 1;			//0成功，非0多语言码
+	int32 cur_gold		= 2;			//玩家当前金币
+}

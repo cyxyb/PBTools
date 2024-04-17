@@ -1,0 +1,71 @@
+syntax = "proto3";
+
+package YGBH;
+
+enum EMsgID
+{
+	SUB_SC_BET_FAIL						= 0; 		//下注失败（CommonN32）
+	SUB_SC_SMALLGAME					= 1;		//小游戏数据（CMD_SC_SmallGame）
+	SUB_SC_SMALLGAMEEND					= 2;		//小游戏结束返回（CMD_SC_SmallGameEnd）
+	SUB_SC_START_GAME					= 3;    	//游戏结果返回（CMD_3D_SC_Result）
+	SUB_CS_GAME_START					= 4;    	//开始游戏 （CMD_3D_CS_StartGame）
+	SUB_CS_CHOSE_FREEGAME_TYPE			= 5;		//选择免费类型（CommonN32）
+	SUB_CS_LITTLE_GAME					= 6;		//开始小游戏(CommonN32)
+}		
+		
+//场景消息		
+message SC_SceneInfo		
+{		
+	int32			free_count			= 1;		//免费次数
+	int32			current_bet			= 2;		//当前下注
+	int32			gain_pei_lv			= 3;		//已获赔率
+	int32			bet_count			= 4;		//下注列表个数
+	repeated int32	bet					= 5;		//下注
+	repeated int32	free_icon_lie		= 6;		//整列 是紫霞为1
+	int32			free_type			= 7;		//免费类型
+	repeated int32	gold				= 8;		// 0: 至尊宝3 1:至尊宝4 2:至尊宝5 3:孙悟空3 4:孙悟空4 5:孙悟空5 6:至尊宝3 7:孙悟空3
+};
+
+message HitIcon
+{
+	repeated int32	value		= 1;
+}
+
+// 游戏结果返回
+message CMD_3D_SC_Result
+{
+	repeated int32	icon				= 1;	
+	repeated HitIcon 	hit_icon		= 2;		//击中的图标
+	int32			win_odd				= 3;		//赢得倍数
+	int64			cur_gold			= 4;		//玩家金币
+	int32			win_gold			= 5;		//赢得金币
+	int32			total_win_gold		= 6;		//总赢得金币
+	int32			is_small_game		= 7;		//是否有小游戏
+	int32			free_count			= 8;		//免费次数
+	int32			price_gold			= 9;		//奖金池金币
+	int32			multiple			= 10;		//追加单线倍率
+	int32			price_pool_percent_max = 11;	//最大奖励倍数
+	int32			small_num			= 12;		//小游戏次数
+	int32			total_free_times	= 13;		//免费游戏剩余次数
+	int32			prize_pool_wild_gold= 14;		//不知道
+	int32			free_type			= 15;		//免费类型/13/14
+	repeated int32	icon_line			= 16;		//整列百搭 1为百搭 0不是
+};
+
+
+message CMD_3D_CS_StartGame
+{
+	int32			line		= 1;			//线数
+	int32			bet			= 2;			//押注
+}
+
+message CMD_SC_SmallGame
+{
+	repeated int32	gold		= 1;			// 0: 至尊宝3 1:至尊宝4 2:至尊宝5 3:孙悟空3 4:孙悟空4 5:孙悟空5
+}
+
+message CMD_SC_SmallGameEnd
+{
+	int32			index		= 1;			//下标
+	int32			gold		= 2;			//金币
+}

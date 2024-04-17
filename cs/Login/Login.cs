@@ -212,7 +212,8 @@ public static partial class LoginReflection {
           "TXNnQ29tbW9uS1YiLwoRTXNnQmluZFBob25lQXdhcmQSDAoEY29kZRgBIAEo",
           "BRIMCgRnb2xkGAMgASgFIkoKDk1zZ0NvbnRyb2xVc2VyEhQKDGNvbnRyb2xf",
           "dXNlchgBIAEoBRIMCgR0eXBlGAIgASgFEhQKDGNvbnRyb2xfZ29sZBgDIAEo",
-          "A2IGcHJvdG8z"));
+          "AyI2ChRNc2dUcmFuZmVyUmVjYWxsUmVzcBIMCgRjb2RlGAEgASgFEhAKCGN1",
+          "cl9nb2xkGAIgASgFYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -294,7 +295,8 @@ public static partial class LoginReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgGetPhoneCode), global::MsgGetPhoneCode.Parser, new[]{ "PhoneNumber", "Type" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgQueryRechargeGiveInfo), global::MsgQueryRechargeGiveInfo.Parser, new[]{ "UserInfo" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgBindPhoneAward), global::MsgBindPhoneAward.Parser, new[]{ "Code", "Gold" }, null, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgControlUser), global::MsgControlUser.Parser, new[]{ "ControlUser", "Type", "ControlGold" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgControlUser), global::MsgControlUser.Parser, new[]{ "ControlUser", "Type", "ControlGold" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgTranferRecallResp), global::MsgTranferRecallResp.Parser, new[]{ "Code", "CurGold" }, null, null, null, null)
         }));
   }
   #endregion
@@ -23957,6 +23959,223 @@ public sealed partial class MsgControlUser : pb::IMessage<MsgControlUser>
         }
         case 24: {
           ControlGold = input.ReadInt64();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///控制玩家
+/// </summary>
+public sealed partial class MsgTranferRecallResp : pb::IMessage<MsgTranferRecallResp>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgTranferRecallResp> _parser = new pb::MessageParser<MsgTranferRecallResp>(() => new MsgTranferRecallResp());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgTranferRecallResp> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::LoginReflection.Descriptor.MessageTypes[79]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgTranferRecallResp() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgTranferRecallResp(MsgTranferRecallResp other) : this() {
+    code_ = other.code_;
+    curGold_ = other.curGold_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgTranferRecallResp Clone() {
+    return new MsgTranferRecallResp(this);
+  }
+
+  /// <summary>Field number for the "code" field.</summary>
+  public const int CodeFieldNumber = 1;
+  private int code_;
+  /// <summary>
+  ///0成功，非0多语言码
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Code {
+    get { return code_; }
+    set {
+      code_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "cur_gold" field.</summary>
+  public const int CurGoldFieldNumber = 2;
+  private int curGold_;
+  /// <summary>
+  ///玩家当前金币
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CurGold {
+    get { return curGold_; }
+    set {
+      curGold_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgTranferRecallResp);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgTranferRecallResp other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (Code != other.Code) return false;
+    if (CurGold != other.CurGold) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (Code != 0) hash ^= Code.GetHashCode();
+    if (CurGold != 0) hash ^= CurGold.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (Code != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(Code);
+    }
+    if (CurGold != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(CurGold);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (Code != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(Code);
+    }
+    if (CurGold != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(CurGold);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (Code != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Code);
+    }
+    if (CurGold != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(CurGold);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgTranferRecallResp other) {
+    if (other == null) {
+      return;
+    }
+    if (other.Code != 0) {
+      Code = other.Code;
+    }
+    if (other.CurGold != 0) {
+      CurGold = other.CurGold;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          Code = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          CurGold = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          Code = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          CurGold = input.ReadInt32();
           break;
         }
       }

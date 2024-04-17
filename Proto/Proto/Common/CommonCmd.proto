@@ -162,6 +162,8 @@ enum EMsgIDLogin
 	MsgIDLogin_NotifySysMaintainResp			= 148;		//通知服务器即将维护时间点(MsgCommonN32)
 	MsgIDAgent_ControlUser						= 149;		//控制玩家(MsgControlUser)
 	MsgIDAgent_ControlUserResp					= 150;		//控制玩家返回(MsgCommonN32)
+	MsgIDTransfer_TransferRecall				= 151;		//转账撤回(MsgCommonN32)
+	MsgIDTransfer_TransferRecallResp			= 152;		//转账撤回返回(MsgTranferRecallResp)
 }
 
 enum EMsgIDGame
