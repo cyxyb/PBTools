@@ -14742,9 +14742,18 @@ class MsgTranferRecallResp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kCodeFieldNumber = 1,
     kCurGoldFieldNumber = 2,
+    kCodeFieldNumber = 1,
   };
+  // int64 cur_gold = 2;
+  void clear_cur_gold();
+  ::PROTOBUF_NAMESPACE_ID::int64 cur_gold() const;
+  void set_cur_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_cur_gold() const;
+  void _internal_set_cur_gold(::PROTOBUF_NAMESPACE_ID::int64 value);
+  public:
+
   // int32 code = 1;
   void clear_code();
   ::PROTOBUF_NAMESPACE_ID::int32 code() const;
@@ -14754,15 +14763,6 @@ class MsgTranferRecallResp PROTOBUF_FINAL :
   void _internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 cur_gold = 2;
-  void clear_cur_gold();
-  ::PROTOBUF_NAMESPACE_ID::int32 cur_gold() const;
-  void set_cur_gold(::PROTOBUF_NAMESPACE_ID::int32 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_cur_gold() const;
-  void _internal_set_cur_gold(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
   // @@protoc_insertion_point(class_scope:MsgTranferRecallResp)
  private:
   class _Internal;
@@ -14770,8 +14770,8 @@ class MsgTranferRecallResp PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int64 cur_gold_;
   ::PROTOBUF_NAMESPACE_ID::int32 code_;
-  ::PROTOBUF_NAMESPACE_ID::int32 cur_gold_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_Login_2eproto;
 };
@@ -24955,22 +24955,22 @@ inline void MsgTranferRecallResp::set_code(::PROTOBUF_NAMESPACE_ID::int32 value)
   // @@protoc_insertion_point(field_set:MsgTranferRecallResp.code)
 }
 
-// int32 cur_gold = 2;
+// int64 cur_gold = 2;
 inline void MsgTranferRecallResp::clear_cur_gold() {
-  cur_gold_ = 0;
+  cur_gold_ = PROTOBUF_LONGLONG(0);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTranferRecallResp::_internal_cur_gold() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgTranferRecallResp::_internal_cur_gold() const {
   return cur_gold_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 MsgTranferRecallResp::cur_gold() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 MsgTranferRecallResp::cur_gold() const {
   // @@protoc_insertion_point(field_get:MsgTranferRecallResp.cur_gold)
   return _internal_cur_gold();
 }
-inline void MsgTranferRecallResp::_internal_set_cur_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgTranferRecallResp::_internal_set_cur_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
   
   cur_gold_ = value;
 }
-inline void MsgTranferRecallResp::set_cur_gold(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void MsgTranferRecallResp::set_cur_gold(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_cur_gold(value);
   // @@protoc_insertion_point(field_set:MsgTranferRecallResp.cur_gold)
 }

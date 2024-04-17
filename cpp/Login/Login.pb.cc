@@ -2542,7 +2542,7 @@ const char descriptor_table_protodef_Login_2eproto[] PROTOBUF_SECTION_VARIABLE(p
   "ode\030\001 \001(\005\022\014\n\004gold\030\003 \001(\005\"J\n\016MsgControlUse"
   "r\022\024\n\014control_user\030\001 \001(\005\022\014\n\004type\030\002 \001(\005\022\024\n"
   "\014control_gold\030\003 \001(\003\"6\n\024MsgTranferRecallR"
-  "esp\022\014\n\004code\030\001 \001(\005\022\020\n\010cur_gold\030\002 \001(\005b\006pro"
+  "esp\022\014\n\004code\030\001 \001(\005\022\020\n\010cur_gold\030\002 \001(\003b\006pro"
   "to3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Login_2eproto_deps[1] = {
@@ -25650,17 +25650,17 @@ MsgTranferRecallResp::MsgTranferRecallResp(::PROTOBUF_NAMESPACE_ID::Arena* arena
 MsgTranferRecallResp::MsgTranferRecallResp(const MsgTranferRecallResp& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&code_, &from.code_,
-    static_cast<size_t>(reinterpret_cast<char*>(&cur_gold_) -
-    reinterpret_cast<char*>(&code_)) + sizeof(cur_gold_));
+  ::memcpy(&cur_gold_, &from.cur_gold_,
+    static_cast<size_t>(reinterpret_cast<char*>(&code_) -
+    reinterpret_cast<char*>(&cur_gold_)) + sizeof(code_));
   // @@protoc_insertion_point(copy_constructor:MsgTranferRecallResp)
 }
 
 void MsgTranferRecallResp::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&code_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&cur_gold_) -
-      reinterpret_cast<char*>(&code_)) + sizeof(cur_gold_));
+      reinterpret_cast<char*>(&cur_gold_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&code_) -
+      reinterpret_cast<char*>(&cur_gold_)) + sizeof(code_));
 }
 
 MsgTranferRecallResp::~MsgTranferRecallResp() {
@@ -25694,9 +25694,9 @@ void MsgTranferRecallResp::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&code_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&cur_gold_) -
-      reinterpret_cast<char*>(&code_)) + sizeof(cur_gold_));
+  ::memset(&cur_gold_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&code_) -
+      reinterpret_cast<char*>(&cur_gold_)) + sizeof(code_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -25714,7 +25714,7 @@ const char* MsgTranferRecallResp::_InternalParse(const char* ptr, ::PROTOBUF_NAM
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 cur_gold = 2;
+      // int64 cur_gold = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           cur_gold_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
@@ -25755,10 +25755,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_code(), target);
   }
 
-  // int32 cur_gold = 2;
+  // int64 cur_gold = 2;
   if (this->cur_gold() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_cur_gold(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_cur_gold(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -25777,18 +25777,18 @@ size_t MsgTranferRecallResp::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  // int64 cur_gold = 2;
+  if (this->cur_gold() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
+        this->_internal_cur_gold());
+  }
+
   // int32 code = 1;
   if (this->code() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_code());
-  }
-
-  // int32 cur_gold = 2;
-  if (this->cur_gold() != 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_cur_gold());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -25822,11 +25822,11 @@ void MsgTranferRecallResp::MergeFrom(const MsgTranferRecallResp& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.code() != 0) {
-    _internal_set_code(from._internal_code());
-  }
   if (from.cur_gold() != 0) {
     _internal_set_cur_gold(from._internal_cur_gold());
+  }
+  if (from.code() != 0) {
+    _internal_set_code(from._internal_code());
   }
 }
 
@@ -25852,11 +25852,11 @@ void MsgTranferRecallResp::InternalSwap(MsgTranferRecallResp* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(MsgTranferRecallResp, cur_gold_)
-      + sizeof(MsgTranferRecallResp::cur_gold_)
-      - PROTOBUF_FIELD_OFFSET(MsgTranferRecallResp, code_)>(
-          reinterpret_cast<char*>(&code_),
-          reinterpret_cast<char*>(&other->code_));
+      PROTOBUF_FIELD_OFFSET(MsgTranferRecallResp, code_)
+      + sizeof(MsgTranferRecallResp::code_)
+      - PROTOBUF_FIELD_OFFSET(MsgTranferRecallResp, cur_gold_)>(
+          reinterpret_cast<char*>(&cur_gold_),
+          reinterpret_cast<char*>(&other->cur_gold_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MsgTranferRecallResp::GetMetadata() const {

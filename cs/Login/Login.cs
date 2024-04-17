@@ -213,7 +213,7 @@ public static partial class LoginReflection {
           "BRIMCgRnb2xkGAMgASgFIkoKDk1zZ0NvbnRyb2xVc2VyEhQKDGNvbnRyb2xf",
           "dXNlchgBIAEoBRIMCgR0eXBlGAIgASgFEhQKDGNvbnRyb2xfZ29sZBgDIAEo",
           "AyI2ChRNc2dUcmFuZmVyUmVjYWxsUmVzcBIMCgRjb2RlGAEgASgFEhAKCGN1",
-          "cl9nb2xkGAIgASgFYgZwcm90bzM="));
+          "cl9nb2xkGAIgASgDYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -23969,7 +23969,7 @@ public sealed partial class MsgControlUser : pb::IMessage<MsgControlUser>
 }
 
 /// <summary>
-///控制玩家
+///转账撤回返回
 /// </summary>
 public sealed partial class MsgTranferRecallResp : pb::IMessage<MsgTranferRecallResp>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -24026,12 +24026,12 @@ public sealed partial class MsgTranferRecallResp : pb::IMessage<MsgTranferRecall
 
   /// <summary>Field number for the "cur_gold" field.</summary>
   public const int CurGoldFieldNumber = 2;
-  private int curGold_;
+  private long curGold_;
   /// <summary>
   ///玩家当前金币
   /// </summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public int CurGold {
+  public long CurGold {
     get { return curGold_; }
     set {
       curGold_ = value;
@@ -24060,7 +24060,7 @@ public sealed partial class MsgTranferRecallResp : pb::IMessage<MsgTranferRecall
   public override int GetHashCode() {
     int hash = 1;
     if (Code != 0) hash ^= Code.GetHashCode();
-    if (CurGold != 0) hash ^= CurGold.GetHashCode();
+    if (CurGold != 0L) hash ^= CurGold.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
     }
@@ -24081,9 +24081,9 @@ public sealed partial class MsgTranferRecallResp : pb::IMessage<MsgTranferRecall
       output.WriteRawTag(8);
       output.WriteInt32(Code);
     }
-    if (CurGold != 0) {
+    if (CurGold != 0L) {
       output.WriteRawTag(16);
-      output.WriteInt32(CurGold);
+      output.WriteInt64(CurGold);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(output);
@@ -24098,9 +24098,9 @@ public sealed partial class MsgTranferRecallResp : pb::IMessage<MsgTranferRecall
       output.WriteRawTag(8);
       output.WriteInt32(Code);
     }
-    if (CurGold != 0) {
+    if (CurGold != 0L) {
       output.WriteRawTag(16);
-      output.WriteInt32(CurGold);
+      output.WriteInt64(CurGold);
     }
     if (_unknownFields != null) {
       _unknownFields.WriteTo(ref output);
@@ -24114,8 +24114,8 @@ public sealed partial class MsgTranferRecallResp : pb::IMessage<MsgTranferRecall
     if (Code != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(Code);
     }
-    if (CurGold != 0) {
-      size += 1 + pb::CodedOutputStream.ComputeInt32Size(CurGold);
+    if (CurGold != 0L) {
+      size += 1 + pb::CodedOutputStream.ComputeInt64Size(CurGold);
     }
     if (_unknownFields != null) {
       size += _unknownFields.CalculateSize();
@@ -24131,7 +24131,7 @@ public sealed partial class MsgTranferRecallResp : pb::IMessage<MsgTranferRecall
     if (other.Code != 0) {
       Code = other.Code;
     }
-    if (other.CurGold != 0) {
+    if (other.CurGold != 0L) {
       CurGold = other.CurGold;
     }
     _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -24153,7 +24153,7 @@ public sealed partial class MsgTranferRecallResp : pb::IMessage<MsgTranferRecall
           break;
         }
         case 16: {
-          CurGold = input.ReadInt32();
+          CurGold = input.ReadInt64();
           break;
         }
       }
@@ -24175,7 +24175,7 @@ public sealed partial class MsgTranferRecallResp : pb::IMessage<MsgTranferRecall
           break;
         }
         case 16: {
-          CurGold = input.ReadInt32();
+          CurGold = input.ReadInt64();
           break;
         }
       }

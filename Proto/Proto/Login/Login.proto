@@ -707,9 +707,9 @@ message MsgControlUser
 	int64 control_gold	= 3;			//控制金币数量
 }
 
-//控制玩家
+//转账撤回返回
 message MsgTranferRecallResp
 {
 	int32 code 			= 1;			//0成功，非0多语言码
-	int32 cur_gold		= 2;			//玩家当前金币
+	int64 cur_gold		= 2;			//玩家当前金币
 }

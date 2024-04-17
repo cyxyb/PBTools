@@ -315,6 +315,8 @@ enum EMsgIDDB : int {
   DB2LOGIN_GetPerformanceRecordResp = 1113,
   LOGIN2DB_ControlUser = 1114,
   DB2LOGIN_ControlUserResp = 1115,
+  LOGIN2DB_TranferRecall = 1116,
+  DB2LOGIN_TranferRecallResp = 1117,
   GAME2DB_Login = 2001,
   DB2GAME_LoginResp = 2002,
   GAME2DB_LoadCheatRate = 2003,
