@@ -1,0 +1,2321 @@
+syntax = "proto3";
+
+package PlaneWar;
+
+enum EMsgIDSubGame
+{
+	Login					 			= 0;
+	Logout					 			= 2;
+	Ready					 			= 3;
+	MonsterSpawn			 			= 4;
+	Shot					 			= 5;
+	Hit						 			= 6;
+	MonsterDestory			 			= 7;
+	Lock					 			= 8;
+	Transform				 			= 9;
+	PlanePosSync			 			= 10;
+	StateEnd				 			= 11;
+	ModRatio				 			= 12;
+	GainNotify				 			= 13;
+	GainSettle				 			= 14;
+	SetPlane				 			= 15;
+	UserEnterNotify			 			= 16;
+	SwitchBackGround                    = 17;
+	SyncMonsterInfo                     = 18;
+	ScratchCardList                     = 19;
+	UseScratchCard	                    = 20;
+	ExplodeSettle                       = 21;
+	FallIntoBlackHole                   = 22;
+	SyncBlackHolePos                    = 23;
+	Interaction                         = 24;
+	ActivityInfo                        = 25;
+	GetTaskReward                       = 26;
+	GetTaskInfo                         = 27;
+	NoticeInfoChange                    = 28;
+	NoticeHallProsChange                = 29;
+	NoticeTimingMonster                 = 30;
+	PiggyBankInfo                       = 31; 
+	OpenPiggyBank                       = 32;
+	PiggyBankOpenFinish                 = 33;
+	PiggyBankChangeNotify               = 34;
+	SetPersonalPoolEnable               = 35;
+	PersonalPoolInfo                    = 36;
+	DrawPersonalPool                    = 37;
+	PersonalPoolChangeNotify            = 38;
+	UseMissile                          = 39;
+	MonsterCall                         = 40;
+	ClickStatic                         = 41;
+	RankList                            = 42;
+	LastRankList                        = 43;
+	TitleList                           = 44;
+	SelectTitle                         = 45;
+	TitleActiveNotify                   = 46;
+	RoomInfoChangeNotify                = 47;
+	MatchBrief                          = 48;
+	MatchDetail                         = 49;
+	MatchReward                         = 50;
+	MatchRewardNotify                   = 51;
+	GiftList                            = 52;
+	GiftExpireNotify                    = 53;
+	GetMatchTaskReward                  = 54;
+	WeaponPieceInfo                     = 55;
+	BuyWeapon                           = 56;
+	WeaponEarnRecord                    = 57;
+	StateForceSettle                    = 58;
+	AddMissedBullet                     = 59;
+	UpdateBulletData                    = 60;
+	UseMissileBatch                     = 61;
+	SyncPropsToHall                     = 62;
+	ChangeTable                         = 63;
+	UpgradePoolReward                   = 64;
+	GetPoolLuckyReward                  = 65;
+	UseRoulette                         = 66;
+	RedEnvelopePoint                    = 67;
+	RedEnvelopeInfo                     = 68;
+	OpenRedEnvelope                     = 69;
+	UpgradeRedEnvelope                  = 70;
+	CommonRedEnvelopeInfo               = 71;
+	OpenCommonRedEnvelope               = 72;
+	GrantCommonRedEnvelopeRank          = 73;
+	OpenCommonRedEnvelopeRank           = 74;
+	GrantCommonRedEnvelopeRecord        = 75;
+	OpenCommonRedEnvelopeRecord         = 76;
+	RedEnvelopeOpStatusNotify           = 77;
+	SyncWeaponState                     = 78;
+	PreHit                              = 79;
+	SyncAnimation                       = 80;
+	GetAnimations                       = 81;
+	SyncConfigs                         = 82;
+	ConfirmWeaponExist                  = 83;
+	GetVideo                            = 84;
+	SelfVideoRecord                     = 85;
+	VideoRank                           = 86;
+	GetGradeRankInfo                    = 87;
+	ReceiveGradeReward                  = 88;
+	SyncTime                            = 89;
+	RankUpgrade                         = 90;
+	RankSeasonStatus                    = 91;
+	NoticePropsOverdue                  = 92;
+	QueryPackagePurchase                = 93;
+	SetWings                            = 94;
+	GetTableUserInfo                    = 95;
+	VerifySeasonChange                  = 96;
+	ExistUnReceiveRankReward            = 97;
+	GetGradeRewardInfo                  = 98;
+	GamePurchasePush                    = 99;
+	QueryPackageMarquee                 = 100;
+	GetGradeRankList                    = 101;
+	ReceiveExtraGradeReward             = 102;
+	BuyPlane                            = 103;
+	BuyWings                            = 104;
+	UpdateChestStatus                   = 105;
+	ChestConfig                         = 106;
+	OpenChest                           = 107;
+	SelectChestReward                   = 108;
+	ChestSetAutoSelect                  = 109;
+	ChestSetEnable                      = 110;
+	WaterDropInfo                       = 120;
+	SyncTextConfig	                    = 121;
+}
+
+enum ErrorCode
+{
+	Success                             = 0;
+	Fail                                = 1000;
+	EnterRoomFail                       = 1001;
+	LoadBaseInfoFail                    = 1002;
+	LoadVipInfoFail                     = 1003;
+	LoadExtraInfoFail                   = 1004;
+	CreatePlayerError                   = 1005;
+	PlayerNotExist                      = 1006;
+	TableNotExist                       = 1007;
+	MoneyNotEnough                      = 1008;
+	BulletError                         = 1009;
+	MonsterNotExist                     = 1010;
+	PlayerNotInTable                    = 1011;
+	ScratchCardNotEnough                = 1012;
+	InteractionTypeNotExist             = 1013;
+	InteractionNotCooldown              = 1014;
+	InteractionTargetError              = 1015;
+	TokenVerifyFailed                   = 1016;
+	TaskNotEnough                       = 1017;
+	DiamondNotEnough                    = 1018;
+	ConcurrentLogin                     = 1019;
+	AlreadyLogin                        = 1020;
+	ServerClosed                        = 1021;
+	MissileNotEnough                    = 1400;
+	PersonalPoolDisable                 = 1500;
+	PersonalPoolNotEnough               = 1501;
+	PersonalPoolSaveError               = 1502;
+	PersonalPoolGetRewardError          = 1503;
+	NoTmpPoolReward                     = 1504;
+	PoolUpgradeFail                     = 1505;
+	PoolLuckyValueNotEnough             = 1506;
+	PiggyBankNotEnable                  = 1900;
+	PiggyBankNoReward                   = 1901;
+	PiggyBankRewardError                = 1902;
+	PiggyBankPackageError               = 1903;
+	CallNotEnough                       = 2000;
+	CallSpecialMonsterFull              = 2001;
+	CallMonsterScreenLimit              = 2002;
+	CallCoolDown                        = 2003;
+	CallExceedMax                       = 2004;
+	RankTypeError                       = 2100;
+	RankIndexError                      = 2101;
+	TitleConfNotExist                   = 2200;
+	TitleNotActive                      = 2201;
+	NotInMatch                          = 2300;
+	NoSuchTask                          = 2301;
+	HaveGotTaskReward                   = 2302;
+	NotAchieveTask                      = 2303;
+	WeaponPieceNotEnough                = 2400;
+	GetWeaponRecordFail                 = 2401;
+	WeaponConfNotExist                  = 2402;
+	CantBuyWeapon                       = 2403;
+	OpenChestFail                       = 2404;
+	SelectChestRewardFail	            = 2405;
+	RouletteNotEnough                   = 2500;
+	RouletteConfNotExist                = 2501;
+	OpenRedEnvelopePointNotEnough       = 2600;
+	OpenRedEnvelopeIndexError           = 2601;
+	NoTmpRedEnvelopeReward              = 2602;
+	RedEnvelopeUpgradeNumNoEnough       = 2603;
+	GetCommonRedEnvelopeInfoFail        = 2604;
+	OpenCommonRedEnvelopeNumNotEnough   = 2605;
+	OpenCommonRedEnvelopeFail           = 2606;
+	CommonRedEnvelopeInvalid            = 2607;
+	GetRedEnvelopeGrantRankFail         = 2608;
+	GetRedEnvelopeOpenRankFail          = 2609;
+	GetRedEnvelopeGrantRecordFail       = 2610;
+	GetRedEnvelopeOpenRecordFail        = 2611;
+	VideoNotExist                       = 2700;
+	VideoListLimit                      = 2701;
+	GradeIsNotOpen                      = 2702;
+	GetGradeInfoError                   = 2703;
+	WingsNotObtained                    = 2704;
+	UniqueIdError                       = 2705;
+	AlreadyReceiveError                 = 2706;
+	NotEnoughGiftBag                    = 2707;
+	AlreadyHaveThisPropsErr             = 2708;
+	PropsIdErr                          = 2709;
+	CanNotBuyPropsErr                   = 2710;
+}
+
+enum RedOpenStatus                      
+{                                       
+	RedOpenLock                         = 0;
+	RedOpenUnLocked                     = 1;
+	RedOpenNotActive                    = 2;
+	RedOpenActive                       = 3;
+} 
+
+enum UpgradeRedResult
+{
+	UpgradeAbandon                      = 0;
+	UpgradeFail                         = 1;
+	UpgradeSuccess                      = 2;
+}
+
+enum GrantRedStatus
+{
+	RedOpened                           = 0;
+	RedNoOpened                         = 1;
+	RedNotShow                          = 2;
+	RedCountDown                        = 3;
+	RedExpired                          = 4;
+}
+
+enum RedOpStatus
+{
+	RedOpClose                          = 0;
+	RedOpOpen                           = 1;
+	RedOpUpgrade                        = 2;
+	RedOpGrantReward                    = 3;
+	RedOpOpenReward                     = 4;
+}
+
+enum ChestType
+{
+	ChestTypePorcelain                  = 0;
+	ChestTypeBronze                     = 1;
+	ChestTypeSilver                     = 2;
+	ChestTypeGold                       = 3;
+}
+
+enum ChestAutoSelectOption
+{
+	None                                = 0;
+	RedPacketTicket                     = 1;
+	Money                               = 2;
+}
+
+message Decimal
+{
+	int32 num = 1;
+	int32 denom = 2;
+}
+
+message CSLogin
+{
+	int32 playerId = 1;
+	string token = 2;
+}
+
+message SCLogin
+{
+	int32 sceneId = 1;
+	int32 arenaID = 2;
+}
+
+message CSLogout
+{
+}
+
+message SCLogout
+{
+	int32 logoutType = 1;
+	int32 chair = 2;
+}
+
+message CommonPropInfo
+{
+	int32 propID = 1;
+	int32 num = 2;
+}
+
+message Pos
+{
+	float x = 1;
+	float y = 2;
+	float z = 3;
+}
+
+message BuffInfo
+{
+	int32 buffUID = 1;
+	int32 num = 2;
+	int32 ratio = 3;
+	bool isCrit = 4;
+	repeated int32 compose = 5;
+	repeated int32 desc = 6;
+	int32 speedUpRatio = 7;
+	int32 originUID = 8;
+}
+
+message BlackHoleInfo
+{
+	int32 uid = 1;
+	int32 num = 2;
+	int32 ratio = 3;
+	Pos pos = 4;
+	bool isCrit = 5;
+	repeated int32 monsterList = 6;
+	int32 originUID = 7;
+}
+
+message FormInfo
+{
+	int32 form = 1;
+	Pos pos = 2;
+}
+
+message LockInfo
+{
+	int32 lockUID = 1;
+	int32 colliderIndex = 2;
+}
+
+message HitMode
+{
+	int32 hitType = 1;
+	int32 hitDirection = 2;
+}
+
+message WeaponState
+{
+	int32 step = 1;
+	Pos position = 2;
+	int32 duration = 3;
+	int32 moveMode = 4;
+}
+
+message SettleInfo
+{
+	int32 originUID = 1;
+	int32 bulletType = 2;
+	int32 reward = 3;
+	int32 weaponID = 4;
+}
+
+message GunInfo
+{
+	int32 sourceUID = 1;
+	int32 originUID = 2;
+	int32 ratio = 3;
+	int32 num = 4;
+}
+
+message FlameInfo
+{
+	int32 originUID = 1;
+	int32 ratio = 2;
+	repeated int32 sourceUIDList = 3;
+}
+
+message BeeInfo
+{
+	repeated int32 ratioList = 1;
+	int32 totalRatio = 2;
+}
+
+message WeaponInfo
+{
+	int32 weaponID = 1;
+	int32 sourceUID = 2;
+	int32 originUID = 3;
+	int32 ratio = 4;
+	int32 num = 5;
+	string weaponName = 6;
+	int32 weaponRatio = 7;
+	WeaponState weaponState = 8;
+}
+
+message SpecEffect
+{
+	int32 costMoney = 1;
+	int32 earnMoney = 2;
+	float violence = 3;
+	int32 duration = 4;
+	int32 maxDuration = 5;
+	int32 sourceType = 6;
+}
+
+message Dice
+{
+	int32 ratio = 1;
+	int32 tp = 2;
+	Pos pos = 3;
+}
+
+message DiceInfo
+{
+	int32 mode = 1;
+	int32 mul = 2;
+	repeated Dice diceList = 3;
+}
+
+message StateInfo
+{
+	bool isBack = 1;
+	repeated BuffInfo buffList = 2;
+	repeated BlackHoleInfo blackHoleList = 3;
+	FormInfo formInfo = 4;
+	LockInfo lockInfo = 5;
+	WeaponInfo weaponInfo = 6;
+	WeaponInfo propWeaponInfo = 7;
+	repeated SettleInfo settleList = 8;
+	GunInfo gunInfo = 9;
+	FlameInfo flameInfo = 10;
+	SpecEffect specEffect = 11;
+}
+
+message MissileInfo
+{
+	int32 id = 1;
+	int32 num = 2;
+}
+
+message PiggyInfo
+{
+	int32 status = 1;
+	int32 rewardValue = 2;
+	int32 accumulatingValue = 3;
+	string settleTime = 4;
+	int32 settleThreshold = 5;
+	int32 maxReward = 6;
+	int32 nextMaxReward = 7;
+}
+
+message ArenaPieceInfo
+{
+	int32 arenaID = 1;
+	int32 havePiece = 2;
+	int32 needPiece = 3;
+	int32 ratio = 4;
+}
+
+message PieceInfo
+{
+	repeated ArenaPieceInfo arenaInfo = 1;
+	int32 haveDiamond = 2;
+	int32 needDiamond = 3;
+	int32 pieceStackLimit = 4;
+	int32 exchangePiece = 5;
+}
+
+message RouletteInfo
+{
+	int32 id = 1;
+	int32 num = 2;
+}
+
+message EffectInfo
+{
+	int32 effectID = 1;
+	bool isGlobal = 2;
+}
+
+message PlayerInfo
+{
+	int32 ratio = 1;
+	int32 planeID = 2;
+	int32 score = 3;
+	int32 chair = 4;
+	string playerName = 5;
+	int32 playerID = 6;
+	int32 vip = 7;
+	StateInfo stateInfo = 8;
+	int32 memberDays = 9;
+	int32 lastVipLevel = 10;
+	int32 scratchCardNum = 11;
+	int32 ticket = 12;
+	bool ratioUnLock = 13;
+	PiggyInfo piggyInfo = 14;
+	repeated MissileInfo missileList = 15;
+	int32 callNum = 16;
+	int32 selectedTitle = 17;
+	PieceInfo weaponPieceInfo = 18;
+	int32 effectID = 19;
+	string icon = 20;
+	repeated RouletteInfo rouletteList = 21;
+	int32 wingsId = 22;
+	EffectInfo effectInfo = 23;
+	int32 currentRank = 24;
+	int32 star = 25;
+	bool isLastRank = 26;
+	Decimal redPacket = 27;
+}
+
+message PlaneSpecEffect
+{
+	int32 ratioLimit = 1;
+	float hitChangeRate = 2;
+	float moneyChangeRate = 3;
+	float violenceRate = 4;
+	float speedRate = 5;
+	int32 type = 6;
+}
+
+message WingsSpecEffect
+{
+	float speedRate = 1;
+	int32 ratioLimit = 2;
+	float hitChangeRate = 3;
+	float moneyChangeRate = 4;
+	int32 type = 5;
+}
+
+message PlaneInfo
+{
+	int32 planeID = 1;
+	bool isVip = 2;
+	int32 vipLevel = 3;
+	bool isMember = 4;
+	bool isTaskLock = 5;
+	int32 requireAct = 6;
+	bool enable = 7;
+	PlaneSpecEffect planeSpecEffect = 8;
+	int32 timestamp = 9;
+	int32 rankFlag = 10;
+	int32 price = 11;
+	PlaneSpecEffect buff = 12;
+}
+
+message InteractionItem
+{
+	int32 id = 1;
+	int32 cost = 2;
+}
+
+message RankStatusInfo
+{
+	bool rankEnable = 1;
+	repeated int32 allowTypeList = 2;
+}
+
+message WingsInfo
+{
+	int32 wingsId = 1;
+	bool enable = 2;
+	int32 timestamp = 3;
+	WingsSpecEffect wingsSpecEffect = 4;
+	int32 rankFlag = 5;
+	int32 price = 6;
+	WingsSpecEffect buff = 7;
+}
+
+message RoomInfo
+{
+	repeated PlaneInfo planeList = 1;
+	bool scratchCardEnable = 2;
+	repeated InteractionItem interactionList = 3;
+	bool piggyBankEnable = 4;
+	bool personalPoolEnable = 5;
+	repeated int32 rewardMonsterList = 6;
+	RankStatusInfo rankStatus = 7;
+	repeated WingsInfo wingsList = 8;
+	repeated int32 ratioList = 9;
+}
+
+message CSReady
+{
+	
+}
+
+message SCReady
+{
+	repeated PlayerInfo playerList = 1;
+	RoomInfo roomInfo = 2;
+}
+
+message SCUserEnterNotify
+{
+	PlayerInfo player = 1;
+}
+
+message MonsterInfo
+{
+	int32 monsterType = 1;
+	int32 monsterUID = 2;
+	bool isConnect = 3;
+}
+
+message SCMonsterSpawn
+{
+	string configID = 1;
+	repeated MonsterInfo monsterList = 2;
+	bool isCall = 3;
+}
+
+message CSShot
+{
+	int32 angle = 1;
+	int32 ratio = 2;
+	int32 bulletType = 3;
+	int32 scatter = 4;
+	int32 sourceUID = 5;
+}
+
+message SCShot
+{
+	int32 chair = 1;
+	int32 angle = 2;
+	int32 score = 3;
+	int32 bulletType = 4;
+	int32 scatter = 5;
+}
+
+message CSLock
+{
+	int32 monsterUID = 1;
+	int32 colliderIndex = 2;
+}
+
+message SCLock
+{
+	int32 chair = 1;
+	int32 monsterUID = 2;
+	int32 colliderIndex = 3;
+}
+
+message Poker
+{
+	int32 value = 1;
+	int32 multiple = 2;
+}
+
+message DropPoker
+{
+	repeated Poker pokerList = 1;
+	int32 dice = 2;
+	int32 kind = 3;
+	int32 kindMultiple = 4;
+}
+
+message TriggerBullet
+{
+	int32 bulletType = 1;
+	int32 subType = 2;
+	int32 num = 3;
+	repeated int32 params = 4;
+	repeated int32 params2 = 5;
+	int32 sourceUID = 6;
+	int32 generation = 7;
+	Pos pos = 8;
+	float delay = 9;
+	int32 range = 10;
+	float speed = 11;
+	string monetary = 12;
+	float destroyDelay = 13;
+	int32 hitRatio = 14;
+}
+
+message Roulette
+{
+	int32 outerIndex = 1;
+	int32 innerIndex = 2;
+	repeated int32 outerRound = 3;
+	repeated int32 innerRound = 4;
+}
+
+message DropBuff
+{
+	int32 buffUID = 1;
+	int32 num = 2;
+	repeated int32 compose = 3;
+	repeated int32 desc = 4;
+	int32 speedUpRatio = 5;
+}
+
+message FakeTresureInfo
+{
+	int32 type = 1;
+	int32 propID = 2;
+	int32 num = 3;
+}
+
+message TreasureInfo
+{
+	int32 showType = 1;
+	int32 type = 2;
+	int32 propID = 3;
+	int32 num = 4;
+	int32 fakeType = 5;
+	FakeTresureInfo fakeInfo = 6;
+}
+
+message FortuneWheelInfo
+{
+	int32 stage = 1;
+	int32 ratio = 2;
+	bool next = 3;
+	int32 color = 4;
+}
+
+message ToadInfo
+{
+	repeated int32 ratioList = 1;
+	int32 critical = 2;
+}
+
+message FortuneConfig
+{
+	repeated FortuneWheelInfo fortuneWheelInfo = 1;
+}
+
+message BeeConfig
+{
+	repeated int32 aList = 1;
+	repeated int32 bList = 2;
+	repeated int32 cList = 3;
+}
+
+message CommonReplayConfig
+{
+	int32 maxLen = 1;
+	int32 limitReward = 2;
+	int32 limitMul = 3;
+}
+
+message GlobalReplayConfig
+{
+	CommonReplayConfig commonReplayConfig = 1;
+	int32 refreshTime = 2;
+}
+
+message PersonalReplayConfig
+{
+	CommonReplayConfig commonReplayConfig = 1;
+}
+
+message ReplayConfig
+{
+	GlobalReplayConfig globalReplayConfig = 1;
+	PersonalReplayConfig personalReplayConfig = 2;
+	bool open = 3;
+}
+
+message ConnMonsterInfo
+{
+	int32 sourceUID = 1;
+	int32 originUID = 2;
+	int32 ratio = 3;
+	repeated int32 connMonsterList = 4;
+}
+
+message CSHit
+{
+	int32 monsterUID = 1;
+	int32 ratio = 2;
+	int32 bulletType = 3;
+	int32 sourceUID = 4;
+	int32 generation = 5;
+	int32 deductedMoney = 6;
+}
+
+message SCHit
+{
+	bool isCaptured = 1;
+	int32 chair = 2;
+	int32 monsterUID = 3;
+	int32 ratio = 4;
+	int32 bulletType = 5;
+	int32 earn = 6;
+	int64 score = 7;
+	int32 baseValue = 8;
+	repeated int32 multipleList = 9;
+	repeated BuffInfo dropBuffList = 10;
+	repeated TriggerBullet triggerBullet = 11;
+	DropPoker dropPoker = 12;
+	Roulette roulette = 13;
+	int32 stage = 14;
+	int32 dropCard = 15;
+	int32 originUID = 16;
+	int32 dropCall = 17;
+	int32 dropWeaponPiece = 18;
+	repeated TreasureInfo treasureList = 19;
+	int32 weaponID = 20;
+	WeaponInfo weaponInfo = 21;
+	GunInfo gunInfo = 22;
+	repeated FortuneWheelInfo fortuneWheelList = 23;
+	ToadInfo toadInfo = 24;
+	FlameInfo flameInfo = 25;
+	BeeInfo beeInfo = 26;
+	ConnMonsterInfo connMonsterInfo = 27;
+	repeated SpecEffect specEffect = 28;
+	DiceInfo diceInfo = 29;
+	bool isProp = 30;
+}
+
+message CSMonsterDestory
+{
+	int32 monsterUID = 1;
+}
+
+message SCMonsterDestory
+{
+	
+}
+
+message CSTransform
+{
+	int32 form = 1;
+}
+
+message SCTransform
+{
+	int32 chair = 1;
+	int32 form = 2;
+}
+
+message CSPlanePosSync
+{
+	Pos pos = 1;
+}
+
+message SCPlanePosSync
+{
+	int32 chair = 1;
+	Pos pos = 2;
+}
+
+message SCStateEnd
+{
+	int32 chair = 1;
+	int32 type = 2;
+	int32 sourceUID = 3;
+}
+
+message CSModRatio
+{
+	int32 modLevel = 1;
+}
+
+message SCModRatio
+{
+	int32 chair = 1;
+	int32 ratio = 2;
+	bool isUnlock = 3;
+}
+
+message SCGainNotify
+{
+	int32 source = 1;
+	int32 curMoney = 2;
+	int32 gain = 3;
+	int32 curTicket = 4;
+	int32 changeTicket = 5;
+	int32 changeDiamond = 6;
+	int32 curDiamond = 7;
+	Decimal curRedPacket = 8;
+}
+
+message SCGainSettle
+{
+	int32 chair = 1;
+	int32 originUID = 2;
+	int32 ratio = 3;
+}
+
+message CSSetPlane
+{
+	int32 planeID = 1;
+}
+
+message SCSetPlane
+{
+	int32 chair = 1;
+	int32 planeID = 2;
+}
+
+message CSSwitchBackGround
+{
+	
+}
+
+message SCSwitchBackGround
+{
+	int32 chair = 1;
+}
+
+message MonsterPath
+{
+	MonsterInfo monster = 1;
+	string configID = 2;
+	int32 stepIndex = 3;
+	int32 roadIndex = 4;
+	float moveT = 5;
+	int32 dotIndex = 6;
+	float delay = 7;
+	int32 stage = 8;
+}
+
+message SCSyncMonsterInfo
+{
+	repeated MonsterPath createdPathList = 1;
+}
+
+message ScratchInfo
+{
+	int32 base = 1;
+	int32 multiple = 2;
+}
+
+message CSScratchCardList
+{
+	
+}
+
+message SCScratchCardList
+{
+	int32 num = 1;
+	ScratchInfo firstCard = 2;
+}
+
+message CSUseScratchCard
+{
+	int32 num = 1;
+}
+
+message SCUseScratchCard
+{
+	int32 chair = 1;
+	repeated ScratchInfo cardList = 2;
+	int32 total = 3;
+	int32 remain = 4;
+	int32 curMoney = 5;
+}
+
+message CSExplodeSettle
+{
+	int32 sourceUID = 1;
+}
+
+message SCExplodeSettle
+{
+	int32 chair = 1;
+	int32 sourceUID = 2;
+	int32 originUID = 3;
+	int32 remain = 4;
+}
+
+message CSFallIntoBlackHole
+{
+	int32 monsterUID = 1;
+	int32 sourceUID = 2;
+}
+
+message SCFallIntoBlackHole
+{
+	int32 chair = 1;
+	int32 monsterUID = 2;
+	int32 sourceUID = 3;
+}
+
+message CSSyncBlackHolePos
+{
+	int32 sourceUID = 1;
+	Pos pos = 2;
+}
+
+message SCSyncBlackHolePos
+{
+	int32 chair = 1;
+	int32 sourceUID = 2;
+	Pos pos = 3;
+}
+
+message CSInteraction
+{
+	int32 targetChair = 1;
+	int32 type = 2;
+}
+
+message SCInteraction
+{
+	int32 sourceChair = 1;
+	int32 targetChair = 2;
+	int32 type = 3;
+	int32 cooldown = 4;
+	int64 curMoney = 5;
+}
+
+message JumpHighArena
+{
+	bool isOpen = 1;
+	int32 vip = 2;
+	int32 coin = 3;
+	int32 gameTime = 4;
+	string tips = 5;
+	repeated int32 monsterId = 6;
+}
+
+message PoolArenaLimit
+{
+	int32 level = 1;
+	int32 arena = 2;
+}
+
+message SCActivityInfo
+{
+	JumpHighArena jump = 1;
+	int32 limit = 2;
+	repeated PoolArenaLimit poolLimit = 3;
+}
+
+message CSGetTaskReward
+{
+
+}
+
+message SCGetTaskReward
+{
+	int32 gunRatio = 1;
+	int32 award = 2;
+	int32 ticket = 3;
+}
+
+message CSGetTaskInfo
+{
+	
+}
+
+message SCGetTaskInfo
+{
+	int32 gunRatio = 1;
+	int32 curNum = 2;
+	int32 totalNum = 3;
+	int32 vipLevel = 4;
+	int32 isUnlock = 5;
+	int32 award = 6;
+	bool isVipUnlock = 7;
+	int32 ticket = 8;
+}
+
+message SCNoticeInfoChange
+{
+	bool isCompleteTask = 1;
+	repeated MissileInfo missileList = 2;
+	int32 callNum = 3;
+}
+
+message ProsInfo
+{
+	int32 id = 1;
+	int32 change = 2;
+	int32 value = 3;
+}
+
+message SCNoticeHallProsChange
+{
+	int32 chair = 1;
+	repeated ProsInfo prosList = 2;
+}
+
+message TimingMonster
+{
+	int32 sec = 1;
+	int32 id = 2;
+}
+
+message SCNoticeTimingMonster
+{
+	repeated TimingMonster monster_list = 1;
+}
+
+message CSPiggyBankInfo
+{
+	bool isOpen = 1;
+}
+
+message SCPiggyBankInfo
+{
+	int32 chair = 1;
+	bool isOpen = 2;
+	PiggyInfo piggyInfo = 3;
+}
+
+message PiggyReward
+{
+	int32 id = 1;
+	int32 reward = 2;
+}
+
+message CSOpenPiggyBank
+{
+	
+}
+
+message SCOpenPiggyBank
+{
+	int32 chair = 1;
+	repeated PiggyReward rewardList = 2;
+	int32 curMoney = 3;
+}
+
+message CSPiggyBankOpenFinish
+{
+}
+
+message SCPiggyBankOpenFinish
+{
+	int32 chair = 1;
+}
+
+message SCPiggyBankChangeNotify
+{
+	PiggyInfo piggyInfo = 1;
+}
+
+message CSSetPersonalPoolEnable
+{
+	bool enable = 1;
+}
+
+message SCSetPersonalPoolEnable
+{
+	bool enable = 1;
+}
+
+message CSPersonalPoolInfo
+{
+	bool isOpen = 1;
+}
+
+message PersonalPoolReward
+{
+	int32 type = 1;
+	int32 id = 2;
+	int32 num = 3;
+	string clientID = 4;
+	string name = 5;
+}
+
+message PersonalPoolLevelInfo
+{
+	int32 level = 1;
+	int32 targetValue = 2;
+	repeated PersonalPoolReward rewardList = 3;
+	bool reward = 4;
+}
+
+message PersonalPoolLuckyInfo
+{
+	int32 total = 1;
+	int32 cost = 2;
+}
+
+message SCPersonalPoolInfo
+{
+	int32 chair = 1;
+	bool isOpen = 2;
+	bool enable = 3;
+	int32 poolValue = 4;
+	int32 maxValue = 5;
+	int32 curLevel = 6;
+	repeated PersonalPoolLevelInfo levelList = 7;
+	PersonalPoolLuckyInfo luckyInfo = 8;
+}
+
+message CSDrawPersonalPool
+{
+	int32 chair = 1;
+	PersonalPoolReward reward = 2;
+	PersonalPoolReward missReward = 3;
+	int64 curMoney = 4;
+	int32 upgradeCost = 5;
+}
+
+message CSUpgradePoolReward
+{
+	bool isUpgrade = 1;
+}
+
+message SCUpgradePoolReward
+{
+	int32 chair = 1;
+	int32 result = 2;
+	int64 curMoney = 3;
+	PersonalPoolReward baseReward = 4;
+	PersonalPoolReward extraReward = 5;
+	int32 addLuckyValue = 6;
+}
+
+message CSGetPoolLuckyReward
+{
+	
+}
+
+message SCGetPoolLuckyReward
+{
+	int32 chair = 1;
+	int64 curMoney = 2;
+	int32 cost = 3;
+	repeated CommonPropInfo rewardList = 4;
+}
+
+message SCPersonalPoolChangeNotify
+{
+	bool enable = 1;
+	int32 curValue = 2;
+	int32 curLevel = 3;
+	int32 maxValue = 4;
+	int32 targetValue = 5;
+}
+
+message CSUseMissile
+{
+	int32 id = 1;
+}
+
+message SCUseMissile
+{
+	int32 chair = 1;
+	int32 id = 2;
+	int32 reward = 3;
+	int32 remainNum = 4;
+	int64 curMoney = 5;
+}
+
+message CSMonsterCall
+{
+	int32 chair = 1;
+	int32 count = 2;
+	int32 code = 3;
+}
+
+message CSClickStatic
+{
+	int32 type = 1;
+}
+
+message SCClickStatic
+{
+	
+}
+
+message RankInfo
+{
+	int32 playerId = 1;
+	int32 point = 2;
+	string nick = 3;
+	string icon = 4;
+}
+
+message MyRankInfo
+{
+	int32 rank = 1;
+	int32 point = 2;
+	string nick = 3;
+	string icon = 4;
+}
+
+message CSRankList
+{
+	int32 type = 1;
+}
+
+message SCRankList
+{
+	int32 type = 1;
+	RankInfo rank = 2;
+	MyRankInfo myRank = 3;
+	RankInfo lastTop = 4;
+}
+
+message TitleInfo
+{
+	int32 id = 1;
+	int32 status = 2;
+	string name = 3;
+	int32 endTime = 4;
+}
+
+message SCTitleList
+{
+	repeated TitleInfo titleList = 1;
+	int32 selectedTitleId = 2;
+}
+
+message CSSelectTitle
+{
+	int32 id = 1;
+}
+
+message SCSelectTitle
+{
+	int32 id = 1;
+	int32 chair = 2;
+}
+
+message SCTitleActiveNotify
+{
+	int32 id = 1;
+}
+
+message SCRoomInfoChangeNotify
+{
+	RoomInfo roomInfo = 1;
+}
+
+message CSMatchBrief
+{
+}
+
+message SCMatchBrief
+{
+	int32 status = 1;
+	int32 matchType = 2;
+	string matchName = 3;
+	int32 countDown = 4;
+	int32 totalNum = 5;
+	int32 rewardNum = 6;
+	int32 myRank = 7;
+	int32 myPoint = 8;
+	int32 nextRankPoint = 9;	
+}
+
+message CSMatchDetail
+{
+
+}
+
+message MatchSubInfo
+{
+	bool inMatch = 1;
+	string subMatchName = 2;
+	int32 jackpot = 3;
+	int32 totalNum = 4;	
+}
+
+message MatchRewardItem
+{
+	int32 id = 1;
+	int32 num = 2;
+}
+
+message MatchRankInfo
+{
+	int32 playerId = 1;
+	int32 point = 2;
+	string nick = 3;
+	string icon = 4;
+	int32 rank = 5;
+	int32 pointBonus = 6;
+	int32 moneyBonus = 7;
+	MatchRewardItem rewardList = 8;
+}
+
+message MatchTask
+{
+	int32 status = 1;
+	int32 target = 2;
+	int32 reward = 3;
+}
+
+message SCMatchDetail
+{
+	repeated MatchSubInfo subInfoList = 1; 
+	repeated MatchRankInfo rankList = 2;
+	MatchRankInfo myRank = 3;
+	repeated int32 tipList = 4;
+	repeated int32 luckyStage = 5;
+	repeated MatchTask taskList = 6;
+}
+
+message CSMatchReward
+{
+	
+}
+
+message RankReward
+{
+	int32 from = 1;
+	int32 to = 2;
+	MatchRewardItem rewardList = 3;
+}
+
+message SCMatchReward
+{
+	repeated RankReward rankRewardList = 1;
+	repeated int32 luckyReward = 2;
+}
+
+message MyMatchReward
+{
+	int32 rank = 1;
+	repeated MatchRewardItem myReward = 2;
+	int32 bonus = 3;
+	int32 luckyReward = 4;
+}
+
+message SCMatchRewardNotify
+{
+	MatchRankInfo rewardList = 1;
+	MyMatchReward myReward = 2;
+}
+
+message CSGiftList
+{
+	
+}
+
+message GiftInfo
+{
+	int32 id = 1;
+	int32 pointBonus = 2;
+	int32 moneyBonus = 3;
+	bool canBuy = 4;
+	int32 buyCountDown = 5;
+}
+
+message SCGiftList
+{
+	repeated GiftInfo giftList = 1;
+}
+
+message SCGiftExpireNotify
+{
+	int32 giftID = 1;
+	string msg = 2;
+}
+
+message CSGetMatchTaskReward
+{
+	int32 index = 1;
+}
+
+message SCGetMatchTaskReward
+{
+	int32 index = 1;
+	int32 reward = 2;
+}
+
+message WeaponUseCondition
+{
+	int32 vipLevel = 1;
+}
+
+message WeaponConfig
+{
+	int32 weaponID = 1;
+	string name = 2;
+	WeaponUseCondition condition = 3;
+}
+
+message CSWeaponPieceInfo
+{
+	bool isBrowsing = 1;
+}
+
+message PiecesStackLimitInfo
+{
+	int32 fromVipLevel = 1;
+	int32 toVipLevel = 2;
+	int32 stackNum = 3;
+}
+
+message SCWeaponPieceInfo
+{
+	bool isBrowsing = 1;
+	int32 chair = 2;
+	PieceInfo pieceInfo = 3;
+	repeated WeaponConfig configList = 4;
+	repeated PiecesStackLimitInfo stackLimitList = 5;
+}
+
+message CSBuyWeapon
+{
+}
+
+message SCBuyWeapon
+{
+	int32 chair = 1;
+	int32 weaponID = 2;
+	WeaponInfo weaponInfo = 3;
+	PieceInfo pieceInfo = 4;
+	WeaponUseCondition condition = 5;
+}
+
+message EarnRecord
+{
+	int32 playerID = 1;
+	string nick = 2;
+	string icon = 3;
+	int32 vipLevel = 4;
+	string weaponName = 5;
+	int32 time = 6;
+	int32 earn = 7;
+}
+
+message CSWeaponEarnRecord
+{
+	int32 page = 1;
+}
+
+message SCWeaponEarnRecord
+{
+	repeated EarnRecord recordList = 1;
+	int32 page = 2;
+}
+
+message CSStateForceSettle
+{
+	int32 sourceUID = 1;
+}
+
+message SCStateForceSettle
+{
+	int32 chair = 1;
+	int32 sourceUID = 2;
+	int32 originUID = 3;
+	int32 remain = 4;
+}
+
+message SCAddMissedBullet
+{
+	int32 chair = 1;
+	int32 bulletType = 2;
+	int32 sourceUID = 3;
+	int32 addNum = 4;
+}
+
+message CSUpdateBulletData
+{
+	float angle = 1;
+	int32 bulletType = 2;
+	int32 sourceUID = 3;
+	int32 confID = 4;
+	bool isShooting = 5;
+}
+
+message SCUpdateBulletData
+{
+	int32 chair = 1;
+	float angle = 2;
+	int32 bulletType = 3;
+	int32 sourceUID = 4;
+	int32 confID = 5;
+	bool isShooting = 6;
+}
+
+message CSUseMissileBatch
+{
+}
+
+message SCUseMissileBatch
+{
+	int32 chair = 1;
+	int32 totalReward = 2;
+	int64 curMoney = 3;
+	repeated MissileInfo remainMissile = 4;
+}
+
+message CSSyncPropsToHall
+{
+	
+}
+
+message SCSyncPropsToHall
+{
+	
+}
+
+message CSChangeTable
+{
+	
+}
+
+message CSUseRoulette
+{
+	int32 iD = 1;
+}
+
+message SCUseRoulette
+{
+	int32 chair = 1;
+	int32 id = 2;
+	int32 costNum = 3;
+	int32 ratio = 4;
+	Roulette roulette = 5;
+	int32 reward = 6;
+	int64 curMoney = 7;
+}
+
+message CSRedEnvelopePoint
+{
+	
+}
+
+message RedOpenInfo
+{
+	RedOpenStatus status = 1;
+	int32 unLockVipLevel = 2;
+}
+
+message SCRedEnvelopePoint
+{
+	int32 curPoint = 1;
+	int32 maxPoint = 2;
+	int32 costPoint = 3;
+	repeated RedOpenInfo redOpenList = 4;
+}
+
+message CSRedEnvelopeInfo
+{
+	bool isOpen = 1;
+}
+
+message RedInfo
+{
+	int32 cost = 1;
+}
+
+message SCRedEnvelopeInfo
+{
+	repeated RedInfo redList = 1;
+}
+
+message CSOpenRedEnvelope
+{
+	int32 index = 1;
+}
+
+message RedUpgradeInfo
+{
+	int32 leastReward = 1;
+	int32 mayAddReward = 2;
+	int32 maxUpgradeNum = 3;
+	int32 remainUpgradeNum = 4;
+}
+
+message SCOpenRedEnvelope
+{
+	int32 rawReward = 1;
+	int32 grantThreshold = 2;
+	RedUpgradeInfo upgradeInfo = 3;
+}
+
+message CSUpgradeRedEnvelope
+{
+	bool isUpgrade = 1;
+}
+
+message SCUpgradeRedEnvelope
+{
+	UpgradeRedResult result = 1;
+	int32 curReward = 2;
+	int32 grantThreshold = 3;
+	int32 addReward = 4;
+	RedUpgradeInfo upgradeInfo = 5;
+}
+
+message CSCommonRedEnvelopeInfo
+{
+	bool isOpen = 1;
+}
+
+message CommonRedInfo
+{
+	string id = 1;
+	int32 reward = 2;
+	int32 expire = 3;
+	string sourcePlayerNick = 4;
+	int32 tryOpenNum = 5;
+	int32 cost = 6;
+	bool isSelfGrant = 7;
+}
+
+message SCCommonRedEnvelopeInfo
+{
+	repeated CommonRedInfo redList = 1;
+	int32 grantThreshold = 2;
+	int32 maxShowNum = 3;
+	int32 maxOpenNum = 4;
+	int32 remainOpenNum = 5;
+}
+
+message CSOpenCommonRedEnvelope
+{
+	string id = 1;
+}
+
+message SCOpenCommonRedEnvelope
+{
+	string id = 1;
+	bool result = 2;
+	int32 remainOpenNum = 3;
+	int32 reward = 4;
+}
+message RedRankPlayerInfo
+{
+	int32 playerID = 1;
+	string nick = 2;
+	string icon = 3;
+	int32 vipLevel = 4;
+}
+
+message CSGrantCommonRedEnvelopeRank
+{
+	int32 from = 1;
+	int32 to = 2;
+}
+
+message GrantRankItem
+{
+	int32 rank = 1;
+	RedRankPlayerInfo playerInfo = 2;
+	int32 upgradeNum = 3;
+	int32 reward = 4;
+}
+
+message SCGrantCommonRedEnvelopeRank
+{	
+	repeated GrantRankItem rankList = 1;
+	GrantRankItem selfRank = 2;
+}
+
+message CSOpenCommonRedEnvelopeRank
+{
+	int32 from = 1;
+	int32 to = 2;
+}
+
+message OpenRankItem
+{
+	int32 rank = 1;
+	RedRankPlayerInfo playerInfo = 2;
+	int32 totalReward = 3;
+	int32 openNum = 4;
+}
+
+message SCOpenCommonRedEnvelopeRank
+{
+	repeated OpenRankItem rankList = 1;
+	OpenRankItem selfRank = 2;
+}
+
+message CSGrantCommonRedEnvelopeRecord
+{
+}
+
+message GrantRecord
+{
+	int32 grantTime = 1;
+	int32 expireTime = 2;
+	int32 reward = 3;
+	GrantRedStatus status = 4;
+	string openPlayerNick = 5;
+}
+
+message SCGrantCommonRedEnvelopeRecord
+{
+	repeated GrantRecord recordList = 1;
+}
+
+message CSOpenCommonRedEnvelopeRecord
+{
+}
+
+message OpenRecord
+{
+	string sourcePlayerNick = 1;
+	int32 reward = 2;
+	int32 openTime = 3;
+}
+
+message SCOpenCommonRedEnvelopeRecord
+{
+	repeated OpenRecord recordList = 1;
+	int32 showRecordNum = 2;
+}
+
+message SCRedEnvelopeOpStatusNotify
+{
+	int32 chair = 1;
+	RedOpStatus status = 2;
+	int64 curMoney = 3;
+	RedUpgradeInfo upgradeInfo = 4;
+	int32 reward = 5;
+}
+
+message CSSyncWeaponState
+{
+	int32 weaponId = 1;
+	int32 chairId = 2;
+	int32 weaponUID = 3;
+	WeaponState weaponState = 4;
+}
+
+message SCSyncWeaponState
+{
+}
+
+message CSPreHit
+{
+	int32 ratio = 1;
+	int32 bulletType = 2;
+	int32 sourceUID = 3;
+}
+
+message SCPreHit
+{
+	int32 weaponUID = 1;
+	HitMode hitMode = 2;
+}
+
+message Animation
+{
+	int32 animationID = 1;
+	string animationMsg = 2;
+	int32 chair = 3;
+	int32 monsterUID = 4;
+	int32 bulletType = 5;
+	int32 earn = 6;
+	int32 originUID = 7;
+	repeated int32 multipleList = 8;
+	int32 ratio = 9;
+}
+
+message CSSyncAnimation
+{
+	Animation animation = 1;
+	bool isComplete = 2;
+}
+
+message SCSyncAnimation
+{
+	Animation animation = 1;
+	bool isComplete = 2;
+}
+
+message SCGetAnimations
+{
+	repeated Animation animations = 1;
+}
+
+message GradeRankDetail
+{
+	int32 rankIndex = 1;
+	string rankName = 2;
+}
+
+message GradeRankConfig
+{
+	repeated GradeRankDetail gradeRankDetail = 1;
+	int32 rankListLen = 2;
+}
+
+message WareGivingInfo
+{
+	int32 propId = 1;
+	string propName = 2;
+	float ratio = 3;
+	bool noRepeat = 4;
+}
+
+message WareInfo
+{
+	string wareId = 1;
+	repeated WareGivingInfo wareGivingInfoList = 2;
+	int32 minMoney = 3;
+	int32 maxMoney = 4;
+	int32 price = 5;
+	repeated WareGivingInfo wareGivingProInfoList = 6;
+}
+
+message ExtraGradeRewardInfo
+{
+	string title = 1;
+	string desc = 2;
+	float extraExp = 3;
+}
+
+message RankWareConfig
+{
+	WareInfo commWareInfo = 1;
+	WareInfo advanceWareInfo = 2;
+	ExtraGradeRewardInfo extraGradeRewardInfo = 3;
+	repeated int32 wareDescList = 4;
+	repeated int32 gradeDescList = 5;
+}
+
+message DiceConfig
+{
+	repeated int32 ratioList = 1;
+	int32 maxMul = 2;
+}
+
+message CSSyncConfigs
+{
+}
+
+message SCSyncConfigs
+{
+	repeated FortuneConfig fortuneConfig = 1;
+	BeeConfig beeConfig = 2;
+	ReplayConfig replayConfig = 3;
+	GradeRankConfig gradeRankConfig = 4;
+	RankWareConfig wareConfig = 5;
+	DiceConfig diceConfig = 6;
+}
+
+message CSConfirmWeaponExist
+{
+	int32 sourceUID = 1;
+}
+
+message SCConfirmWeaponExist
+{
+	bool exist = 1;
+}
+
+message CSGetVideo
+{
+	string videoId = 1;
+	int32 videoType = 2;
+}
+
+message SCGetVideo
+{
+	repeated MonsterPath createdPathList = 1;
+	int32 rewardType = 2;
+	int64 timestamp = 3;
+	int32 reward = 4;
+	int32 chair = 5;
+	int64 money = 6;
+	int32 ratio = 7;
+	int32 gunType = 8;
+	int32 arena = 9;
+	int32 weaponId = 10;
+}
+
+message VideoCommon
+{
+	int32 reward = 1;
+	int32 rewardType = 2;
+	int64 timestamp = 3;
+	string videoId = 4;
+	bool unread = 5;
+	int32 weaponId = 6;
+	int32 arenaId = 7;
+}
+
+message GlobalVideoInfo
+{
+	string niceName = 1;
+	bool self = 2;
+	VideoCommon common = 3;
+}
+
+message SelfVideoInfo
+{
+	int32 ratio = 1;
+	VideoCommon common = 2;
+}
+
+message CSSelfVideoRecord
+{
+	int32 from = 1;
+	int32 to = 2;
+}
+
+message SCSelfVideoRecord
+{
+	repeated SelfVideoInfo videoList = 1;
+	int32 refreshTime = 2;
+}
+
+message CSVideoRank
+{
+	int32 from = 1;
+	int32 to = 2;
+}
+
+message SCVideoRank
+{
+	repeated GlobalVideoInfo videoList = 1;
+	int32 refreshTime = 2;
+}
+
+message ReceiveReward
+{
+	int32 propId = 1;
+	int32 num = 2;
+	bool advance = 3;
+	int32 minNum = 4;
+	int32 maxNum = 5;
+	bool box = 6;
+	int32 uniqueId = 7;
+	string desc = 8;
+	int32 timeLimit = 9;
+	string title = 10;
+	int32 propType = 11;
+	int32 special = 12;
+}
+
+message CSReceiveGradeReward
+{
+}
+
+message SCReceiveGradeReward
+{
+	repeated ReceiveReward receiveRewardList = 1;
+	repeated ReceiveReward unReceiveRewardList = 2;
+	bool seasonEnd = 3;
+}
+
+message GradeRewardDetail
+{
+	ReceiveReward rewardInfo = 1;
+	bool reach = 2;
+	bool receive = 3;
+}
+
+message GradeRewardInfo
+{
+	string rankName = 1;
+	repeated GradeRewardDetail commRewardList = 2;
+	repeated GradeRewardDetail advanceRewardList = 3;
+	bool first = 4;
+}
+
+message GradeRankInfo
+{
+	int32 currentRank = 1;
+	int32 star = 2;
+	string rankName = 3;
+	int32 historyRank = 4;
+	string historyRankName = 5;
+	int32 kingTag = 6;
+	float currentExp = 7;
+	float nextExp = 8;
+	float extraExp = 9;
+	string playerName = 10;
+	int32 availableGift = 11;
+	bool isLast = 12;
+	bool isSelf = 13;
+}
+
+message CSGetTableUserInfo
+{
+	int32 chairId = 1;
+}
+
+message SCGetTableUserInfo
+{
+	PlayerInfo playerInfo = 1;
+	GradeRankInfo gradeRankInfo = 2;
+}
+
+message CSGetGradeRewardInfo
+{
+	int32 startIdx = 1;
+	int32 endIdx = 2;
+}
+
+message SCGetGradeRewardInfo
+{
+	repeated GradeRewardInfo gradeRewardInfoList = 1;
+}
+
+message CSGetGradeRankInfo
+{
+	
+}
+
+message SCGetGradeRankInfo
+{
+	GradeRankInfo gradeRankInfo = 1;
+}
+
+message SCRankUpgrade
+{
+	GradeRankInfo gradeRankInfo = 1;
+	bool advance = 2;
+	int32 chair = 3;
+}
+
+message CSRankSeasonStatus
+{
+	
+}
+
+message SCRankSeasonStatus
+{
+	bool enable = 1;
+	int32 startTime = 2;
+	int32 endTime = 3;
+	string seasonName = 4;
+	int32 season = 5;
+}
+
+message SCSyncTime
+{
+	int32 time = 1;
+}
+
+message SCNoticePropsOverdue
+{
+	int32 propId = 1;
+}
+
+message PurchaseResult
+{
+	string wareId = 1;
+	bool status = 2;
+}
+
+message CSQueryPackagePurchase
+{
+	repeated int32 wareIdList = 1;
+}
+
+message SCQueryPackagePurchase
+{
+	repeated PurchaseResult purchaseResList = 1;
+}
+
+message PropsInfo
+{
+	int32 propId = 1;
+	int32 num = 2;
+}
+
+message SCGamePurchasePush
+{
+	repeated PropsInfo propsList = 1;
+}
+
+message PackageMarquee
+{
+	string nickname = 1;
+	string wareId = 2;
+	PropsInfo props = 3;
+}
+
+message CSQueryPackageMarquee
+{
+}
+
+message SCQueryPackageMarquee
+{
+	string marqueeModel = 1;
+	repeated PackageMarquee packageMarqueeList = 2;
+}
+
+message CSSetWings
+{
+	int32 wingId = 1;
+}
+
+message SCSetWings
+{
+	int32 chair = 1;
+	int32 wingId = 2;
+}
+message CSVerifySeasonChange
+{
+}
+
+message SCVerifySeasonChange
+{
+	bool change = 1;
+	GradeRankInfo beforeGradeRankInfo = 2;
+	GradeRankInfo currentGradeRankInfo = 3;
+	int32 beforeSeason = 4;
+	int32 currentSeason = 5;
+}
+
+message CSExistUnReceiveRankReward
+{
+	
+}
+
+message SCExistUnReceiveRankReward
+{
+	bool exist = 1;
+}
+
+message CSReceiveExtraGradeReward
+{
+	int32 num = 1;
+}
+
+message SCReceiveExtraGradeReward
+{
+	repeated ReceiveReward receiveRewardList = 1;
+	int32 num = 2;
+}
+
+message CSGetGradeRankList
+{
+	int32 from = 1;
+	int32 to = 2;
+	int32 season = 3;
+}
+
+message SCGetGradeRankList
+{
+	repeated GradeRankInfo gradeRankList = 1;
+	GradeRankInfo selfRankInfo = 2;
+	int32 ord = 3;
+}
+
+message CSBuyPlane
+{
+	int32 plane_id = 1;
+}
+
+message SCBuyPlane
+{
+	int32 plane_id = 1;
+}
+
+message CSBuyWings
+{
+	int32 wings_id = 1;
+}
+message SCBuyWings
+{
+	int32 wings_id = 1;
+}
+
+message OpenChestReward
+{
+	int32 id = 1;
+	Decimal num = 2;
+}
+message SCUpdateChestStatus
+{
+	bool is_active = 1;
+	ChestType chest_type = 2;
+	int32 total_progress = 3;
+	int32 remain_progress = 4;
+	bool guide = 5;
+	int32 available_reward = 6;
+}
+
+message ChestBrief
+{
+	ChestType chest_type = 1;
+	repeated OpenChestReward reward = 2;
+}
+
+message SCChestConfig
+{
+	int32 end_time = 1;
+	repeated ChestBrief chest_brief_list = 2;
+	int32 min_ratio = 3;
+	bool auto_open = 4;
+	ChestAutoSelectOption auto_option = 5;
+	bool is_enable = 6;
+}
+
+message SCOpenChest
+{
+	repeated OpenChestReward reward_list = 1;
+	ChestAutoSelectOption auto_option = 2;
+}
+
+message CSSelectChestReward
+{
+	int32 select_index = 1;
+	OpenChestReward reward = 2;
+}
+
+message CSChestSetAutoSelect
+{
+	ChestAutoSelectOption auto_option = 1;
+	bool auto_open = 2;
+}
+
+message SCChestSetAutoSelect
+{
+	ChestAutoSelectOption auto_option = 1;
+	bool auto_open = 2;
+}
+
+message CSChestSetEnable
+{
+	bool is_enable = 1;
+}
+
+message SCChestSetEnable
+{
+	bool is_enable = 1;
+}
+
+message SCWaterDropInfo
+{
+	bool enable = 1;
+	int32 dropCount = 2;
+	int32 fragmentCount = 3;
+}
+
+message TextInfo
+{
+	int32 index = 1;
+	string text = 2;
+}
+
+message CSSyncTextConfig
+{
+	int32 startIdx = 1;
+	int32 endIdx = 2;
+}
+
+message SCSyncTextConfig
+{
+	repeated TextInfo textList = 1;
+}
