@@ -47,7 +47,7 @@ struct TableStruct_PlaneWar_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[293]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[299]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -349,6 +349,9 @@ extern DiceConfigDefaultTypeInternal _DiceConfig_default_instance_;
 class DiceInfo;
 class DiceInfoDefaultTypeInternal;
 extern DiceInfoDefaultTypeInternal _DiceInfo_default_instance_;
+class DiceJson;
+class DiceJsonDefaultTypeInternal;
+extern DiceJsonDefaultTypeInternal _DiceJson_default_instance_;
 class DropBuff;
 class DropBuffDefaultTypeInternal;
 extern DropBuffDefaultTypeInternal _DropBuff_default_instance_;
@@ -379,6 +382,9 @@ extern FortuneConfigDefaultTypeInternal _FortuneConfig_default_instance_;
 class FortuneWheelInfo;
 class FortuneWheelInfoDefaultTypeInternal;
 extern FortuneWheelInfoDefaultTypeInternal _FortuneWheelInfo_default_instance_;
+class FortuneWheelJson;
+class FortuneWheelJsonDefaultTypeInternal;
+extern FortuneWheelJsonDefaultTypeInternal _FortuneWheelJson_default_instance_;
 class GiftInfo;
 class GiftInfoDefaultTypeInternal;
 extern GiftInfoDefaultTypeInternal _GiftInfo_default_instance_;
@@ -388,6 +394,9 @@ extern GlobalReplayConfigDefaultTypeInternal _GlobalReplayConfig_default_instanc
 class GlobalVideoInfo;
 class GlobalVideoInfoDefaultTypeInternal;
 extern GlobalVideoInfoDefaultTypeInternal _GlobalVideoInfo_default_instance_;
+class GoldenToadJson;
+class GoldenToadJsonDefaultTypeInternal;
+extern GoldenToadJsonDefaultTypeInternal _GoldenToadJson_default_instance_;
 class GradeRankConfig;
 class GradeRankConfigDefaultTypeInternal;
 extern GradeRankConfigDefaultTypeInternal _GradeRankConfig_default_instance_;
@@ -460,6 +469,9 @@ extern OpenRankItemDefaultTypeInternal _OpenRankItem_default_instance_;
 class OpenRecord;
 class OpenRecordDefaultTypeInternal;
 extern OpenRecordDefaultTypeInternal _OpenRecord_default_instance_;
+class OrderData;
+class OrderDataDefaultTypeInternal;
+extern OrderDataDefaultTypeInternal _OrderData_default_instance_;
 class PackageMarquee;
 class PackageMarqueeDefaultTypeInternal;
 extern PackageMarqueeDefaultTypeInternal _PackageMarquee_default_instance_;
@@ -568,6 +580,9 @@ extern SCBuyWeaponDefaultTypeInternal _SCBuyWeapon_default_instance_;
 class SCBuyWings;
 class SCBuyWingsDefaultTypeInternal;
 extern SCBuyWingsDefaultTypeInternal _SCBuyWings_default_instance_;
+class SCChangeTable;
+class SCChangeTableDefaultTypeInternal;
+extern SCChangeTableDefaultTypeInternal _SCChangeTable_default_instance_;
 class SCChestConfig;
 class SCChestConfigDefaultTypeInternal;
 extern SCChestConfigDefaultTypeInternal _SCChestConfig_default_instance_;
@@ -676,6 +691,9 @@ extern SCMatchRewardNotifyDefaultTypeInternal _SCMatchRewardNotify_default_insta
 class SCModRatio;
 class SCModRatioDefaultTypeInternal;
 extern SCModRatioDefaultTypeInternal _SCModRatio_default_instance_;
+class SCMonsterCall;
+class SCMonsterCallDefaultTypeInternal;
+extern SCMonsterCallDefaultTypeInternal _SCMonsterCall_default_instance_;
 class SCMonsterDestory;
 class SCMonsterDestoryDefaultTypeInternal;
 extern SCMonsterDestoryDefaultTypeInternal _SCMonsterDestory_default_instance_;
@@ -1034,6 +1052,7 @@ template<> ::PlaneWar::Decimal* Arena::CreateMaybeMessage<::PlaneWar::Decimal>(A
 template<> ::PlaneWar::Dice* Arena::CreateMaybeMessage<::PlaneWar::Dice>(Arena*);
 template<> ::PlaneWar::DiceConfig* Arena::CreateMaybeMessage<::PlaneWar::DiceConfig>(Arena*);
 template<> ::PlaneWar::DiceInfo* Arena::CreateMaybeMessage<::PlaneWar::DiceInfo>(Arena*);
+template<> ::PlaneWar::DiceJson* Arena::CreateMaybeMessage<::PlaneWar::DiceJson>(Arena*);
 template<> ::PlaneWar::DropBuff* Arena::CreateMaybeMessage<::PlaneWar::DropBuff>(Arena*);
 template<> ::PlaneWar::DropPoker* Arena::CreateMaybeMessage<::PlaneWar::DropPoker>(Arena*);
 template<> ::PlaneWar::EarnRecord* Arena::CreateMaybeMessage<::PlaneWar::EarnRecord>(Arena*);
@@ -1044,9 +1063,11 @@ template<> ::PlaneWar::FlameInfo* Arena::CreateMaybeMessage<::PlaneWar::FlameInf
 template<> ::PlaneWar::FormInfo* Arena::CreateMaybeMessage<::PlaneWar::FormInfo>(Arena*);
 template<> ::PlaneWar::FortuneConfig* Arena::CreateMaybeMessage<::PlaneWar::FortuneConfig>(Arena*);
 template<> ::PlaneWar::FortuneWheelInfo* Arena::CreateMaybeMessage<::PlaneWar::FortuneWheelInfo>(Arena*);
+template<> ::PlaneWar::FortuneWheelJson* Arena::CreateMaybeMessage<::PlaneWar::FortuneWheelJson>(Arena*);
 template<> ::PlaneWar::GiftInfo* Arena::CreateMaybeMessage<::PlaneWar::GiftInfo>(Arena*);
 template<> ::PlaneWar::GlobalReplayConfig* Arena::CreateMaybeMessage<::PlaneWar::GlobalReplayConfig>(Arena*);
 template<> ::PlaneWar::GlobalVideoInfo* Arena::CreateMaybeMessage<::PlaneWar::GlobalVideoInfo>(Arena*);
+template<> ::PlaneWar::GoldenToadJson* Arena::CreateMaybeMessage<::PlaneWar::GoldenToadJson>(Arena*);
 template<> ::PlaneWar::GradeRankConfig* Arena::CreateMaybeMessage<::PlaneWar::GradeRankConfig>(Arena*);
 template<> ::PlaneWar::GradeRankDetail* Arena::CreateMaybeMessage<::PlaneWar::GradeRankDetail>(Arena*);
 template<> ::PlaneWar::GradeRankInfo* Arena::CreateMaybeMessage<::PlaneWar::GradeRankInfo>(Arena*);
@@ -1071,6 +1092,7 @@ template<> ::PlaneWar::MyRankInfo* Arena::CreateMaybeMessage<::PlaneWar::MyRankI
 template<> ::PlaneWar::OpenChestReward* Arena::CreateMaybeMessage<::PlaneWar::OpenChestReward>(Arena*);
 template<> ::PlaneWar::OpenRankItem* Arena::CreateMaybeMessage<::PlaneWar::OpenRankItem>(Arena*);
 template<> ::PlaneWar::OpenRecord* Arena::CreateMaybeMessage<::PlaneWar::OpenRecord>(Arena*);
+template<> ::PlaneWar::OrderData* Arena::CreateMaybeMessage<::PlaneWar::OrderData>(Arena*);
 template<> ::PlaneWar::PackageMarquee* Arena::CreateMaybeMessage<::PlaneWar::PackageMarquee>(Arena*);
 template<> ::PlaneWar::PersonalPoolLevelInfo* Arena::CreateMaybeMessage<::PlaneWar::PersonalPoolLevelInfo>(Arena*);
 template<> ::PlaneWar::PersonalPoolLuckyInfo* Arena::CreateMaybeMessage<::PlaneWar::PersonalPoolLuckyInfo>(Arena*);
@@ -1107,6 +1129,7 @@ template<> ::PlaneWar::SCAddMissedBullet* Arena::CreateMaybeMessage<::PlaneWar::
 template<> ::PlaneWar::SCBuyPlane* Arena::CreateMaybeMessage<::PlaneWar::SCBuyPlane>(Arena*);
 template<> ::PlaneWar::SCBuyWeapon* Arena::CreateMaybeMessage<::PlaneWar::SCBuyWeapon>(Arena*);
 template<> ::PlaneWar::SCBuyWings* Arena::CreateMaybeMessage<::PlaneWar::SCBuyWings>(Arena*);
+template<> ::PlaneWar::SCChangeTable* Arena::CreateMaybeMessage<::PlaneWar::SCChangeTable>(Arena*);
 template<> ::PlaneWar::SCChestConfig* Arena::CreateMaybeMessage<::PlaneWar::SCChestConfig>(Arena*);
 template<> ::PlaneWar::SCChestSetAutoSelect* Arena::CreateMaybeMessage<::PlaneWar::SCChestSetAutoSelect>(Arena*);
 template<> ::PlaneWar::SCChestSetEnable* Arena::CreateMaybeMessage<::PlaneWar::SCChestSetEnable>(Arena*);
@@ -1143,6 +1166,7 @@ template<> ::PlaneWar::SCMatchDetail* Arena::CreateMaybeMessage<::PlaneWar::SCMa
 template<> ::PlaneWar::SCMatchReward* Arena::CreateMaybeMessage<::PlaneWar::SCMatchReward>(Arena*);
 template<> ::PlaneWar::SCMatchRewardNotify* Arena::CreateMaybeMessage<::PlaneWar::SCMatchRewardNotify>(Arena*);
 template<> ::PlaneWar::SCModRatio* Arena::CreateMaybeMessage<::PlaneWar::SCModRatio>(Arena*);
+template<> ::PlaneWar::SCMonsterCall* Arena::CreateMaybeMessage<::PlaneWar::SCMonsterCall>(Arena*);
 template<> ::PlaneWar::SCMonsterDestory* Arena::CreateMaybeMessage<::PlaneWar::SCMonsterDestory>(Arena*);
 template<> ::PlaneWar::SCMonsterSpawn* Arena::CreateMaybeMessage<::PlaneWar::SCMonsterSpawn>(Arena*);
 template<> ::PlaneWar::SCNoticeHallProsChange* Arena::CreateMaybeMessage<::PlaneWar::SCNoticeHallProsChange>(Arena*);
@@ -23880,6 +23904,129 @@ class CSMonsterCall PROTOBUF_FINAL :
 
   // accessors -------------------------------------------------------
 
+  // @@protoc_insertion_point(class_scope:PlaneWar.CSMonsterCall)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_PlaneWar_2eproto;
+};
+// -------------------------------------------------------------------
+
+class SCMonsterCall PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:PlaneWar.SCMonsterCall) */ {
+ public:
+  inline SCMonsterCall() : SCMonsterCall(nullptr) {}
+  virtual ~SCMonsterCall();
+
+  SCMonsterCall(const SCMonsterCall& from);
+  SCMonsterCall(SCMonsterCall&& from) noexcept
+    : SCMonsterCall() {
+    *this = ::std::move(from);
+  }
+
+  inline SCMonsterCall& operator=(const SCMonsterCall& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline SCMonsterCall& operator=(SCMonsterCall&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const SCMonsterCall& default_instance();
+
+  static inline const SCMonsterCall* internal_default_instance() {
+    return reinterpret_cast<const SCMonsterCall*>(
+               &_SCMonsterCall_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    129;
+
+  friend void swap(SCMonsterCall& a, SCMonsterCall& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(SCMonsterCall* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(SCMonsterCall* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline SCMonsterCall* New() const final {
+    return CreateMaybeMessage<SCMonsterCall>(nullptr);
+  }
+
+  SCMonsterCall* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<SCMonsterCall>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const SCMonsterCall& from);
+  void MergeFrom(const SCMonsterCall& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(SCMonsterCall* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "PlaneWar.SCMonsterCall";
+  }
+  protected:
+  explicit SCMonsterCall(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_PlaneWar_2eproto);
+    return ::descriptor_table_PlaneWar_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
   enum : int {
     kChairFieldNumber = 1,
     kCountFieldNumber = 2,
@@ -23912,7 +24059,7 @@ class CSMonsterCall PROTOBUF_FINAL :
   void _internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:PlaneWar.CSMonsterCall)
+  // @@protoc_insertion_point(class_scope:PlaneWar.SCMonsterCall)
  private:
   class _Internal;
 
@@ -23968,7 +24115,7 @@ class CSClickStatic PROTOBUF_FINAL :
                &_CSClickStatic_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    129;
+    130;
 
   friend void swap(CSClickStatic& a, CSClickStatic& b) {
     a.Swap(&b);
@@ -24104,7 +24251,7 @@ class SCClickStatic PROTOBUF_FINAL :
                &_SCClickStatic_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    130;
+    131;
 
   friend void swap(SCClickStatic& a, SCClickStatic& b) {
     a.Swap(&b);
@@ -24227,7 +24374,7 @@ class RankInfo PROTOBUF_FINAL :
                &_RankInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    131;
+    132;
 
   friend void swap(RankInfo& a, RankInfo& b) {
     a.Swap(&b);
@@ -24410,7 +24557,7 @@ class MyRankInfo PROTOBUF_FINAL :
                &_MyRankInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    132;
+    133;
 
   friend void swap(MyRankInfo& a, MyRankInfo& b) {
     a.Swap(&b);
@@ -24593,7 +24740,7 @@ class CSRankList PROTOBUF_FINAL :
                &_CSRankList_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    133;
+    134;
 
   friend void swap(CSRankList& a, CSRankList& b) {
     a.Swap(&b);
@@ -24729,7 +24876,7 @@ class SCRankList PROTOBUF_FINAL :
                &_SCRankList_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    134;
+    135;
 
   friend void swap(SCRankList& a, SCRankList& b) {
     a.Swap(&b);
@@ -24925,7 +25072,7 @@ class TitleInfo PROTOBUF_FINAL :
                &_TitleInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    135;
+    136;
 
   friend void swap(TitleInfo& a, TitleInfo& b) {
     a.Swap(&b);
@@ -25101,7 +25248,7 @@ class SCTitleList PROTOBUF_FINAL :
                &_SCTitleList_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    136;
+    137;
 
   friend void swap(SCTitleList& a, SCTitleList& b) {
     a.Swap(&b);
@@ -25257,7 +25404,7 @@ class CSSelectTitle PROTOBUF_FINAL :
                &_CSSelectTitle_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    137;
+    138;
 
   friend void swap(CSSelectTitle& a, CSSelectTitle& b) {
     a.Swap(&b);
@@ -25393,7 +25540,7 @@ class SCSelectTitle PROTOBUF_FINAL :
                &_SCSelectTitle_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    138;
+    139;
 
   friend void swap(SCSelectTitle& a, SCSelectTitle& b) {
     a.Swap(&b);
@@ -25540,7 +25687,7 @@ class SCTitleActiveNotify PROTOBUF_FINAL :
                &_SCTitleActiveNotify_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    139;
+    140;
 
   friend void swap(SCTitleActiveNotify& a, SCTitleActiveNotify& b) {
     a.Swap(&b);
@@ -25676,7 +25823,7 @@ class SCRoomInfoChangeNotify PROTOBUF_FINAL :
                &_SCRoomInfoChangeNotify_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    140;
+    141;
 
   friend void swap(SCRoomInfoChangeNotify& a, SCRoomInfoChangeNotify& b) {
     a.Swap(&b);
@@ -25821,7 +25968,7 @@ class CSMatchBrief PROTOBUF_FINAL :
                &_CSMatchBrief_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    141;
+    142;
 
   friend void swap(CSMatchBrief& a, CSMatchBrief& b) {
     a.Swap(&b);
@@ -25944,7 +26091,7 @@ class SCMatchBrief PROTOBUF_FINAL :
                &_SCMatchBrief_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    142;
+    143;
 
   friend void swap(SCMatchBrief& a, SCMatchBrief& b) {
     a.Swap(&b);
@@ -26175,7 +26322,7 @@ class CSMatchDetail PROTOBUF_FINAL :
                &_CSMatchDetail_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    143;
+    144;
 
   friend void swap(CSMatchDetail& a, CSMatchDetail& b) {
     a.Swap(&b);
@@ -26298,7 +26445,7 @@ class MatchSubInfo PROTOBUF_FINAL :
                &_MatchSubInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    144;
+    145;
 
   friend void swap(MatchSubInfo& a, MatchSubInfo& b) {
     a.Swap(&b);
@@ -26474,7 +26621,7 @@ class MatchRewardItem PROTOBUF_FINAL :
                &_MatchRewardItem_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    145;
+    146;
 
   friend void swap(MatchRewardItem& a, MatchRewardItem& b) {
     a.Swap(&b);
@@ -26621,7 +26768,7 @@ class MatchRankInfo PROTOBUF_FINAL :
                &_MatchRankInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    146;
+    147;
 
   friend void swap(MatchRankInfo& a, MatchRankInfo& b) {
     a.Swap(&b);
@@ -26857,7 +27004,7 @@ class MatchTask PROTOBUF_FINAL :
                &_MatchTask_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    147;
+    148;
 
   friend void swap(MatchTask& a, MatchTask& b) {
     a.Swap(&b);
@@ -27015,7 +27162,7 @@ class SCMatchDetail PROTOBUF_FINAL :
                &_SCMatchDetail_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    148;
+    149;
 
   friend void swap(SCMatchDetail& a, SCMatchDetail& b) {
     a.Swap(&b);
@@ -27270,7 +27417,7 @@ class CSMatchReward PROTOBUF_FINAL :
                &_CSMatchReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    149;
+    150;
 
   friend void swap(CSMatchReward& a, CSMatchReward& b) {
     a.Swap(&b);
@@ -27393,7 +27540,7 @@ class RankReward PROTOBUF_FINAL :
                &_RankReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    150;
+    151;
 
   friend void swap(RankReward& a, RankReward& b) {
     a.Swap(&b);
@@ -27560,7 +27707,7 @@ class SCMatchReward PROTOBUF_FINAL :
                &_SCMatchReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    151;
+    152;
 
   friend void swap(SCMatchReward& a, SCMatchReward& b) {
     a.Swap(&b);
@@ -27730,7 +27877,7 @@ class MyMatchReward PROTOBUF_FINAL :
                &_MyMatchReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    152;
+    153;
 
   friend void swap(MyMatchReward& a, MyMatchReward& b) {
     a.Swap(&b);
@@ -27908,7 +28055,7 @@ class SCMatchRewardNotify PROTOBUF_FINAL :
                &_SCMatchRewardNotify_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    153;
+    154;
 
   friend void swap(SCMatchRewardNotify& a, SCMatchRewardNotify& b) {
     a.Swap(&b);
@@ -28073,7 +28220,7 @@ class CSGiftList PROTOBUF_FINAL :
                &_CSGiftList_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    154;
+    155;
 
   friend void swap(CSGiftList& a, CSGiftList& b) {
     a.Swap(&b);
@@ -28196,7 +28343,7 @@ class GiftInfo PROTOBUF_FINAL :
                &_GiftInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    155;
+    156;
 
   friend void swap(GiftInfo& a, GiftInfo& b) {
     a.Swap(&b);
@@ -28376,7 +28523,7 @@ class SCGiftList PROTOBUF_FINAL :
                &_SCGiftList_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    156;
+    157;
 
   friend void swap(SCGiftList& a, SCGiftList& b) {
     a.Swap(&b);
@@ -28521,7 +28668,7 @@ class SCGiftExpireNotify PROTOBUF_FINAL :
                &_SCGiftExpireNotify_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    157;
+    158;
 
   friend void swap(SCGiftExpireNotify& a, SCGiftExpireNotify& b) {
     a.Swap(&b);
@@ -28675,7 +28822,7 @@ class CSGetMatchTaskReward PROTOBUF_FINAL :
                &_CSGetMatchTaskReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    158;
+    159;
 
   friend void swap(CSGetMatchTaskReward& a, CSGetMatchTaskReward& b) {
     a.Swap(&b);
@@ -28811,7 +28958,7 @@ class SCGetMatchTaskReward PROTOBUF_FINAL :
                &_SCGetMatchTaskReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    159;
+    160;
 
   friend void swap(SCGetMatchTaskReward& a, SCGetMatchTaskReward& b) {
     a.Swap(&b);
@@ -28958,7 +29105,7 @@ class WeaponUseCondition PROTOBUF_FINAL :
                &_WeaponUseCondition_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    160;
+    161;
 
   friend void swap(WeaponUseCondition& a, WeaponUseCondition& b) {
     a.Swap(&b);
@@ -29094,7 +29241,7 @@ class WeaponConfig PROTOBUF_FINAL :
                &_WeaponConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    161;
+    162;
 
   friend void swap(WeaponConfig& a, WeaponConfig& b) {
     a.Swap(&b);
@@ -29268,7 +29415,7 @@ class CSWeaponPieceInfo PROTOBUF_FINAL :
                &_CSWeaponPieceInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    162;
+    163;
 
   friend void swap(CSWeaponPieceInfo& a, CSWeaponPieceInfo& b) {
     a.Swap(&b);
@@ -29404,7 +29551,7 @@ class PiecesStackLimitInfo PROTOBUF_FINAL :
                &_PiecesStackLimitInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    163;
+    164;
 
   friend void swap(PiecesStackLimitInfo& a, PiecesStackLimitInfo& b) {
     a.Swap(&b);
@@ -29562,7 +29709,7 @@ class SCWeaponPieceInfo PROTOBUF_FINAL :
                &_SCWeaponPieceInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    164;
+    165;
 
   friend void swap(SCWeaponPieceInfo& a, SCWeaponPieceInfo& b) {
     a.Swap(&b);
@@ -29769,7 +29916,7 @@ class CSBuyWeapon PROTOBUF_FINAL :
                &_CSBuyWeapon_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    165;
+    166;
 
   friend void swap(CSBuyWeapon& a, CSBuyWeapon& b) {
     a.Swap(&b);
@@ -29892,7 +30039,7 @@ class SCBuyWeapon PROTOBUF_FINAL :
                &_SCBuyWeapon_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    166;
+    167;
 
   friend void swap(SCBuyWeapon& a, SCBuyWeapon& b) {
     a.Swap(&b);
@@ -30099,7 +30246,7 @@ class EarnRecord PROTOBUF_FINAL :
                &_EarnRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    167;
+    168;
 
   friend void swap(EarnRecord& a, EarnRecord& b) {
     a.Swap(&b);
@@ -30322,7 +30469,7 @@ class CSWeaponEarnRecord PROTOBUF_FINAL :
                &_CSWeaponEarnRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    168;
+    169;
 
   friend void swap(CSWeaponEarnRecord& a, CSWeaponEarnRecord& b) {
     a.Swap(&b);
@@ -30458,7 +30605,7 @@ class SCWeaponEarnRecord PROTOBUF_FINAL :
                &_SCWeaponEarnRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    169;
+    170;
 
   friend void swap(SCWeaponEarnRecord& a, SCWeaponEarnRecord& b) {
     a.Swap(&b);
@@ -30614,7 +30761,7 @@ class CSStateForceSettle PROTOBUF_FINAL :
                &_CSStateForceSettle_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    170;
+    171;
 
   friend void swap(CSStateForceSettle& a, CSStateForceSettle& b) {
     a.Swap(&b);
@@ -30750,7 +30897,7 @@ class SCStateForceSettle PROTOBUF_FINAL :
                &_SCStateForceSettle_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    171;
+    172;
 
   friend void swap(SCStateForceSettle& a, SCStateForceSettle& b) {
     a.Swap(&b);
@@ -30919,7 +31066,7 @@ class SCAddMissedBullet PROTOBUF_FINAL :
                &_SCAddMissedBullet_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    172;
+    173;
 
   friend void swap(SCAddMissedBullet& a, SCAddMissedBullet& b) {
     a.Swap(&b);
@@ -31088,7 +31235,7 @@ class CSUpdateBulletData PROTOBUF_FINAL :
                &_CSUpdateBulletData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    173;
+    174;
 
   friend void swap(CSUpdateBulletData& a, CSUpdateBulletData& b) {
     a.Swap(&b);
@@ -31268,7 +31415,7 @@ class SCUpdateBulletData PROTOBUF_FINAL :
                &_SCUpdateBulletData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    174;
+    175;
 
   friend void swap(SCUpdateBulletData& a, SCUpdateBulletData& b) {
     a.Swap(&b);
@@ -31459,7 +31606,7 @@ class CSUseMissileBatch PROTOBUF_FINAL :
                &_CSUseMissileBatch_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    175;
+    176;
 
   friend void swap(CSUseMissileBatch& a, CSUseMissileBatch& b) {
     a.Swap(&b);
@@ -31582,7 +31729,7 @@ class SCUseMissileBatch PROTOBUF_FINAL :
                &_SCUseMissileBatch_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    176;
+    177;
 
   friend void swap(SCUseMissileBatch& a, SCUseMissileBatch& b) {
     a.Swap(&b);
@@ -31760,7 +31907,7 @@ class CSSyncPropsToHall PROTOBUF_FINAL :
                &_CSSyncPropsToHall_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    177;
+    178;
 
   friend void swap(CSSyncPropsToHall& a, CSSyncPropsToHall& b) {
     a.Swap(&b);
@@ -31883,7 +32030,7 @@ class SCSyncPropsToHall PROTOBUF_FINAL :
                &_SCSyncPropsToHall_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    178;
+    179;
 
   friend void swap(SCSyncPropsToHall& a, SCSyncPropsToHall& b) {
     a.Swap(&b);
@@ -32006,7 +32153,7 @@ class CSChangeTable PROTOBUF_FINAL :
                &_CSChangeTable_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    179;
+    180;
 
   friend void swap(CSChangeTable& a, CSChangeTable& b) {
     a.Swap(&b);
@@ -32088,6 +32235,129 @@ class CSChangeTable PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
+class SCChangeTable PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:PlaneWar.SCChangeTable) */ {
+ public:
+  inline SCChangeTable() : SCChangeTable(nullptr) {}
+  virtual ~SCChangeTable();
+
+  SCChangeTable(const SCChangeTable& from);
+  SCChangeTable(SCChangeTable&& from) noexcept
+    : SCChangeTable() {
+    *this = ::std::move(from);
+  }
+
+  inline SCChangeTable& operator=(const SCChangeTable& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline SCChangeTable& operator=(SCChangeTable&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const SCChangeTable& default_instance();
+
+  static inline const SCChangeTable* internal_default_instance() {
+    return reinterpret_cast<const SCChangeTable*>(
+               &_SCChangeTable_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    181;
+
+  friend void swap(SCChangeTable& a, SCChangeTable& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(SCChangeTable* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(SCChangeTable* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline SCChangeTable* New() const final {
+    return CreateMaybeMessage<SCChangeTable>(nullptr);
+  }
+
+  SCChangeTable* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<SCChangeTable>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const SCChangeTable& from);
+  void MergeFrom(const SCChangeTable& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(SCChangeTable* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "PlaneWar.SCChangeTable";
+  }
+  protected:
+  explicit SCChangeTable(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_PlaneWar_2eproto);
+    return ::descriptor_table_PlaneWar_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // @@protoc_insertion_point(class_scope:PlaneWar.SCChangeTable)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_PlaneWar_2eproto;
+};
+// -------------------------------------------------------------------
+
 class CSUseRoulette PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:PlaneWar.CSUseRoulette) */ {
  public:
@@ -32129,7 +32399,7 @@ class CSUseRoulette PROTOBUF_FINAL :
                &_CSUseRoulette_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    180;
+    182;
 
   friend void swap(CSUseRoulette& a, CSUseRoulette& b) {
     a.Swap(&b);
@@ -32265,7 +32535,7 @@ class SCUseRoulette PROTOBUF_FINAL :
                &_SCUseRoulette_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    181;
+    183;
 
   friend void swap(SCUseRoulette& a, SCUseRoulette& b) {
     a.Swap(&b);
@@ -32476,7 +32746,7 @@ class CSRedEnvelopePoint PROTOBUF_FINAL :
                &_CSRedEnvelopePoint_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    182;
+    184;
 
   friend void swap(CSRedEnvelopePoint& a, CSRedEnvelopePoint& b) {
     a.Swap(&b);
@@ -32599,7 +32869,7 @@ class RedOpenInfo PROTOBUF_FINAL :
                &_RedOpenInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    183;
+    185;
 
   friend void swap(RedOpenInfo& a, RedOpenInfo& b) {
     a.Swap(&b);
@@ -32746,7 +33016,7 @@ class SCRedEnvelopePoint PROTOBUF_FINAL :
                &_SCRedEnvelopePoint_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    184;
+    186;
 
   friend void swap(SCRedEnvelopePoint& a, SCRedEnvelopePoint& b) {
     a.Swap(&b);
@@ -32924,7 +33194,7 @@ class CSRedEnvelopeInfo PROTOBUF_FINAL :
                &_CSRedEnvelopeInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    185;
+    187;
 
   friend void swap(CSRedEnvelopeInfo& a, CSRedEnvelopeInfo& b) {
     a.Swap(&b);
@@ -33060,7 +33330,7 @@ class RedInfo PROTOBUF_FINAL :
                &_RedInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    186;
+    188;
 
   friend void swap(RedInfo& a, RedInfo& b) {
     a.Swap(&b);
@@ -33196,7 +33466,7 @@ class SCRedEnvelopeInfo PROTOBUF_FINAL :
                &_SCRedEnvelopeInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    187;
+    189;
 
   friend void swap(SCRedEnvelopeInfo& a, SCRedEnvelopeInfo& b) {
     a.Swap(&b);
@@ -33341,7 +33611,7 @@ class CSOpenRedEnvelope PROTOBUF_FINAL :
                &_CSOpenRedEnvelope_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    188;
+    190;
 
   friend void swap(CSOpenRedEnvelope& a, CSOpenRedEnvelope& b) {
     a.Swap(&b);
@@ -33477,7 +33747,7 @@ class RedUpgradeInfo PROTOBUF_FINAL :
                &_RedUpgradeInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    189;
+    191;
 
   friend void swap(RedUpgradeInfo& a, RedUpgradeInfo& b) {
     a.Swap(&b);
@@ -33646,7 +33916,7 @@ class SCOpenRedEnvelope PROTOBUF_FINAL :
                &_SCOpenRedEnvelope_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    190;
+    192;
 
   friend void swap(SCOpenRedEnvelope& a, SCOpenRedEnvelope& b) {
     a.Swap(&b);
@@ -33813,7 +34083,7 @@ class CSUpgradeRedEnvelope PROTOBUF_FINAL :
                &_CSUpgradeRedEnvelope_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    191;
+    193;
 
   friend void swap(CSUpgradeRedEnvelope& a, CSUpgradeRedEnvelope& b) {
     a.Swap(&b);
@@ -33949,7 +34219,7 @@ class SCUpgradeRedEnvelope PROTOBUF_FINAL :
                &_SCUpgradeRedEnvelope_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    192;
+    194;
 
   friend void swap(SCUpgradeRedEnvelope& a, SCUpgradeRedEnvelope& b) {
     a.Swap(&b);
@@ -34138,7 +34408,7 @@ class CSCommonRedEnvelopeInfo PROTOBUF_FINAL :
                &_CSCommonRedEnvelopeInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    193;
+    195;
 
   friend void swap(CSCommonRedEnvelopeInfo& a, CSCommonRedEnvelopeInfo& b) {
     a.Swap(&b);
@@ -34274,7 +34544,7 @@ class CommonRedInfo PROTOBUF_FINAL :
                &_CommonRedInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    194;
+    196;
 
   friend void swap(CommonRedInfo& a, CommonRedInfo& b) {
     a.Swap(&b);
@@ -34490,7 +34760,7 @@ class SCCommonRedEnvelopeInfo PROTOBUF_FINAL :
                &_SCCommonRedEnvelopeInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    195;
+    197;
 
   friend void swap(SCCommonRedEnvelopeInfo& a, SCCommonRedEnvelopeInfo& b) {
     a.Swap(&b);
@@ -34679,7 +34949,7 @@ class CSOpenCommonRedEnvelope PROTOBUF_FINAL :
                &_CSOpenCommonRedEnvelope_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    196;
+    198;
 
   friend void swap(CSOpenCommonRedEnvelope& a, CSOpenCommonRedEnvelope& b) {
     a.Swap(&b);
@@ -34822,7 +35092,7 @@ class SCOpenCommonRedEnvelope PROTOBUF_FINAL :
                &_SCOpenCommonRedEnvelope_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    197;
+    199;
 
   friend void swap(SCOpenCommonRedEnvelope& a, SCOpenCommonRedEnvelope& b) {
     a.Swap(&b);
@@ -34998,7 +35268,7 @@ class RedRankPlayerInfo PROTOBUF_FINAL :
                &_RedRankPlayerInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    198;
+    200;
 
   friend void swap(RedRankPlayerInfo& a, RedRankPlayerInfo& b) {
     a.Swap(&b);
@@ -35181,7 +35451,7 @@ class CSGrantCommonRedEnvelopeRank PROTOBUF_FINAL :
                &_CSGrantCommonRedEnvelopeRank_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    199;
+    201;
 
   friend void swap(CSGrantCommonRedEnvelopeRank& a, CSGrantCommonRedEnvelopeRank& b) {
     a.Swap(&b);
@@ -35328,7 +35598,7 @@ class GrantRankItem PROTOBUF_FINAL :
                &_GrantRankItem_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    200;
+    202;
 
   friend void swap(GrantRankItem& a, GrantRankItem& b) {
     a.Swap(&b);
@@ -35506,7 +35776,7 @@ class SCGrantCommonRedEnvelopeRank PROTOBUF_FINAL :
                &_SCGrantCommonRedEnvelopeRank_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    201;
+    203;
 
   friend void swap(SCGrantCommonRedEnvelopeRank& a, SCGrantCommonRedEnvelopeRank& b) {
     a.Swap(&b);
@@ -35671,7 +35941,7 @@ class CSOpenCommonRedEnvelopeRank PROTOBUF_FINAL :
                &_CSOpenCommonRedEnvelopeRank_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    202;
+    204;
 
   friend void swap(CSOpenCommonRedEnvelopeRank& a, CSOpenCommonRedEnvelopeRank& b) {
     a.Swap(&b);
@@ -35818,7 +36088,7 @@ class OpenRankItem PROTOBUF_FINAL :
                &_OpenRankItem_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    203;
+    205;
 
   friend void swap(OpenRankItem& a, OpenRankItem& b) {
     a.Swap(&b);
@@ -35996,7 +36266,7 @@ class SCOpenCommonRedEnvelopeRank PROTOBUF_FINAL :
                &_SCOpenCommonRedEnvelopeRank_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    204;
+    206;
 
   friend void swap(SCOpenCommonRedEnvelopeRank& a, SCOpenCommonRedEnvelopeRank& b) {
     a.Swap(&b);
@@ -36161,7 +36431,7 @@ class CSGrantCommonRedEnvelopeRecord PROTOBUF_FINAL :
                &_CSGrantCommonRedEnvelopeRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    205;
+    207;
 
   friend void swap(CSGrantCommonRedEnvelopeRecord& a, CSGrantCommonRedEnvelopeRecord& b) {
     a.Swap(&b);
@@ -36284,7 +36554,7 @@ class GrantRecord PROTOBUF_FINAL :
                &_GrantRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    206;
+    208;
 
   friend void swap(GrantRecord& a, GrantRecord& b) {
     a.Swap(&b);
@@ -36471,7 +36741,7 @@ class SCGrantCommonRedEnvelopeRecord PROTOBUF_FINAL :
                &_SCGrantCommonRedEnvelopeRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    207;
+    209;
 
   friend void swap(SCGrantCommonRedEnvelopeRecord& a, SCGrantCommonRedEnvelopeRecord& b) {
     a.Swap(&b);
@@ -36616,7 +36886,7 @@ class CSOpenCommonRedEnvelopeRecord PROTOBUF_FINAL :
                &_CSOpenCommonRedEnvelopeRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    208;
+    210;
 
   friend void swap(CSOpenCommonRedEnvelopeRecord& a, CSOpenCommonRedEnvelopeRecord& b) {
     a.Swap(&b);
@@ -36739,7 +37009,7 @@ class OpenRecord PROTOBUF_FINAL :
                &_OpenRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    209;
+    211;
 
   friend void swap(OpenRecord& a, OpenRecord& b) {
     a.Swap(&b);
@@ -36904,7 +37174,7 @@ class SCOpenCommonRedEnvelopeRecord PROTOBUF_FINAL :
                &_SCOpenCommonRedEnvelopeRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    210;
+    212;
 
   friend void swap(SCOpenCommonRedEnvelopeRecord& a, SCOpenCommonRedEnvelopeRecord& b) {
     a.Swap(&b);
@@ -37060,7 +37330,7 @@ class SCRedEnvelopeOpStatusNotify PROTOBUF_FINAL :
                &_SCRedEnvelopeOpStatusNotify_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    211;
+    213;
 
   friend void swap(SCRedEnvelopeOpStatusNotify& a, SCRedEnvelopeOpStatusNotify& b) {
     a.Swap(&b);
@@ -37249,7 +37519,7 @@ class CSSyncWeaponState PROTOBUF_FINAL :
                &_CSSyncWeaponState_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    212;
+    214;
 
   friend void swap(CSSyncWeaponState& a, CSSyncWeaponState& b) {
     a.Swap(&b);
@@ -37427,7 +37697,7 @@ class SCSyncWeaponState PROTOBUF_FINAL :
                &_SCSyncWeaponState_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    213;
+    215;
 
   friend void swap(SCSyncWeaponState& a, SCSyncWeaponState& b) {
     a.Swap(&b);
@@ -37550,7 +37820,7 @@ class CSPreHit PROTOBUF_FINAL :
                &_CSPreHit_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    214;
+    216;
 
   friend void swap(CSPreHit& a, CSPreHit& b) {
     a.Swap(&b);
@@ -37708,7 +37978,7 @@ class SCPreHit PROTOBUF_FINAL :
                &_SCPreHit_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    215;
+    217;
 
   friend void swap(SCPreHit& a, SCPreHit& b) {
     a.Swap(&b);
@@ -37864,7 +38134,7 @@ class Animation PROTOBUF_FINAL :
                &_Animation_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    216;
+    218;
 
   friend void swap(Animation& a, Animation& b) {
     a.Swap(&b);
@@ -37937,6 +38207,9 @@ class Animation PROTOBUF_FINAL :
   enum : int {
     kMultipleListFieldNumber = 8,
     kAnimationMsgFieldNumber = 2,
+    kFortuneJsonFieldNumber = 10,
+    kGoldenToadJsonFieldNumber = 11,
+    kDiceJsonFieldNumber = 12,
     kAnimationIDFieldNumber = 1,
     kChairFieldNumber = 3,
     kMonsterUIDFieldNumber = 4,
@@ -37982,6 +38255,60 @@ class Animation PROTOBUF_FINAL :
   void _internal_set_animationmsg(const std::string& value);
   std::string* _internal_mutable_animationmsg();
   public:
+
+  // .PlaneWar.FortuneWheelJson fortuneJson = 10;
+  bool has_fortunejson() const;
+  private:
+  bool _internal_has_fortunejson() const;
+  public:
+  void clear_fortunejson();
+  const ::PlaneWar::FortuneWheelJson& fortunejson() const;
+  ::PlaneWar::FortuneWheelJson* release_fortunejson();
+  ::PlaneWar::FortuneWheelJson* mutable_fortunejson();
+  void set_allocated_fortunejson(::PlaneWar::FortuneWheelJson* fortunejson);
+  private:
+  const ::PlaneWar::FortuneWheelJson& _internal_fortunejson() const;
+  ::PlaneWar::FortuneWheelJson* _internal_mutable_fortunejson();
+  public:
+  void unsafe_arena_set_allocated_fortunejson(
+      ::PlaneWar::FortuneWheelJson* fortunejson);
+  ::PlaneWar::FortuneWheelJson* unsafe_arena_release_fortunejson();
+
+  // .PlaneWar.GoldenToadJson goldenToadJson = 11;
+  bool has_goldentoadjson() const;
+  private:
+  bool _internal_has_goldentoadjson() const;
+  public:
+  void clear_goldentoadjson();
+  const ::PlaneWar::GoldenToadJson& goldentoadjson() const;
+  ::PlaneWar::GoldenToadJson* release_goldentoadjson();
+  ::PlaneWar::GoldenToadJson* mutable_goldentoadjson();
+  void set_allocated_goldentoadjson(::PlaneWar::GoldenToadJson* goldentoadjson);
+  private:
+  const ::PlaneWar::GoldenToadJson& _internal_goldentoadjson() const;
+  ::PlaneWar::GoldenToadJson* _internal_mutable_goldentoadjson();
+  public:
+  void unsafe_arena_set_allocated_goldentoadjson(
+      ::PlaneWar::GoldenToadJson* goldentoadjson);
+  ::PlaneWar::GoldenToadJson* unsafe_arena_release_goldentoadjson();
+
+  // .PlaneWar.DiceJson diceJson = 12;
+  bool has_dicejson() const;
+  private:
+  bool _internal_has_dicejson() const;
+  public:
+  void clear_dicejson();
+  const ::PlaneWar::DiceJson& dicejson() const;
+  ::PlaneWar::DiceJson* release_dicejson();
+  ::PlaneWar::DiceJson* mutable_dicejson();
+  void set_allocated_dicejson(::PlaneWar::DiceJson* dicejson);
+  private:
+  const ::PlaneWar::DiceJson& _internal_dicejson() const;
+  ::PlaneWar::DiceJson* _internal_mutable_dicejson();
+  public:
+  void unsafe_arena_set_allocated_dicejson(
+      ::PlaneWar::DiceJson* dicejson);
+  ::PlaneWar::DiceJson* unsafe_arena_release_dicejson();
 
   // int32 animationID = 1;
   void clear_animationid();
@@ -38056,12 +38383,692 @@ class Animation PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > multiplelist_;
   mutable std::atomic<int> _multiplelist_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr animationmsg_;
+  ::PlaneWar::FortuneWheelJson* fortunejson_;
+  ::PlaneWar::GoldenToadJson* goldentoadjson_;
+  ::PlaneWar::DiceJson* dicejson_;
   ::PROTOBUF_NAMESPACE_ID::int32 animationid_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_;
   ::PROTOBUF_NAMESPACE_ID::int32 monsteruid_;
   ::PROTOBUF_NAMESPACE_ID::int32 bullettype_;
   ::PROTOBUF_NAMESPACE_ID::int32 earn_;
   ::PROTOBUF_NAMESPACE_ID::int32 originuid_;
+  ::PROTOBUF_NAMESPACE_ID::int32 ratio_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_PlaneWar_2eproto;
+};
+// -------------------------------------------------------------------
+
+class DiceJson PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:PlaneWar.DiceJson) */ {
+ public:
+  inline DiceJson() : DiceJson(nullptr) {}
+  virtual ~DiceJson();
+
+  DiceJson(const DiceJson& from);
+  DiceJson(DiceJson&& from) noexcept
+    : DiceJson() {
+    *this = ::std::move(from);
+  }
+
+  inline DiceJson& operator=(const DiceJson& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline DiceJson& operator=(DiceJson&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const DiceJson& default_instance();
+
+  static inline const DiceJson* internal_default_instance() {
+    return reinterpret_cast<const DiceJson*>(
+               &_DiceJson_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    219;
+
+  friend void swap(DiceJson& a, DiceJson& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(DiceJson* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(DiceJson* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline DiceJson* New() const final {
+    return CreateMaybeMessage<DiceJson>(nullptr);
+  }
+
+  DiceJson* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<DiceJson>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const DiceJson& from);
+  void MergeFrom(const DiceJson& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(DiceJson* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "PlaneWar.DiceJson";
+  }
+  protected:
+  explicit DiceJson(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_PlaneWar_2eproto);
+    return ::descriptor_table_PlaneWar_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kDiceFieldNumber = 2,
+    kMulListFieldNumber = 3,
+    kMulPosListFieldNumber = 4,
+    kStepFieldNumber = 1,
+  };
+  // repeated .PlaneWar.Dice dice = 2;
+  int dice_size() const;
+  private:
+  int _internal_dice_size() const;
+  public:
+  void clear_dice();
+  ::PlaneWar::Dice* mutable_dice(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::Dice >*
+      mutable_dice();
+  private:
+  const ::PlaneWar::Dice& _internal_dice(int index) const;
+  ::PlaneWar::Dice* _internal_add_dice();
+  public:
+  const ::PlaneWar::Dice& dice(int index) const;
+  ::PlaneWar::Dice* add_dice();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::Dice >&
+      dice() const;
+
+  // repeated .PlaneWar.Dice mulList = 3;
+  int mullist_size() const;
+  private:
+  int _internal_mullist_size() const;
+  public:
+  void clear_mullist();
+  ::PlaneWar::Dice* mutable_mullist(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::Dice >*
+      mutable_mullist();
+  private:
+  const ::PlaneWar::Dice& _internal_mullist(int index) const;
+  ::PlaneWar::Dice* _internal_add_mullist();
+  public:
+  const ::PlaneWar::Dice& mullist(int index) const;
+  ::PlaneWar::Dice* add_mullist();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::Dice >&
+      mullist() const;
+
+  // repeated .PlaneWar.Pos mulPosList = 4;
+  int mulposlist_size() const;
+  private:
+  int _internal_mulposlist_size() const;
+  public:
+  void clear_mulposlist();
+  ::PlaneWar::Pos* mutable_mulposlist(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::Pos >*
+      mutable_mulposlist();
+  private:
+  const ::PlaneWar::Pos& _internal_mulposlist(int index) const;
+  ::PlaneWar::Pos* _internal_add_mulposlist();
+  public:
+  const ::PlaneWar::Pos& mulposlist(int index) const;
+  ::PlaneWar::Pos* add_mulposlist();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::Pos >&
+      mulposlist() const;
+
+  // int32 step = 1;
+  void clear_step();
+  ::PROTOBUF_NAMESPACE_ID::int32 step() const;
+  void set_step(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_step() const;
+  void _internal_set_step(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:PlaneWar.DiceJson)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::Dice > dice_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::Dice > mullist_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::Pos > mulposlist_;
+  ::PROTOBUF_NAMESPACE_ID::int32 step_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_PlaneWar_2eproto;
+};
+// -------------------------------------------------------------------
+
+class FortuneWheelJson PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:PlaneWar.FortuneWheelJson) */ {
+ public:
+  inline FortuneWheelJson() : FortuneWheelJson(nullptr) {}
+  virtual ~FortuneWheelJson();
+
+  FortuneWheelJson(const FortuneWheelJson& from);
+  FortuneWheelJson(FortuneWheelJson&& from) noexcept
+    : FortuneWheelJson() {
+    *this = ::std::move(from);
+  }
+
+  inline FortuneWheelJson& operator=(const FortuneWheelJson& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline FortuneWheelJson& operator=(FortuneWheelJson&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const FortuneWheelJson& default_instance();
+
+  static inline const FortuneWheelJson* internal_default_instance() {
+    return reinterpret_cast<const FortuneWheelJson*>(
+               &_FortuneWheelJson_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    220;
+
+  friend void swap(FortuneWheelJson& a, FortuneWheelJson& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(FortuneWheelJson* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(FortuneWheelJson* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline FortuneWheelJson* New() const final {
+    return CreateMaybeMessage<FortuneWheelJson>(nullptr);
+  }
+
+  FortuneWheelJson* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<FortuneWheelJson>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const FortuneWheelJson& from);
+  void MergeFrom(const FortuneWheelJson& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(FortuneWheelJson* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "PlaneWar.FortuneWheelJson";
+  }
+  protected:
+  explicit FortuneWheelJson(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_PlaneWar_2eproto);
+    return ::descriptor_table_PlaneWar_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kResultFieldNumber = 1,
+    kSiteFieldNumber = 2,
+  };
+  // repeated .PlaneWar.FortuneWheelInfo result = 1;
+  int result_size() const;
+  private:
+  int _internal_result_size() const;
+  public:
+  void clear_result();
+  ::PlaneWar::FortuneWheelInfo* mutable_result(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::FortuneWheelInfo >*
+      mutable_result();
+  private:
+  const ::PlaneWar::FortuneWheelInfo& _internal_result(int index) const;
+  ::PlaneWar::FortuneWheelInfo* _internal_add_result();
+  public:
+  const ::PlaneWar::FortuneWheelInfo& result(int index) const;
+  ::PlaneWar::FortuneWheelInfo* add_result();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::FortuneWheelInfo >&
+      result() const;
+
+  // int32 site = 2;
+  void clear_site();
+  ::PROTOBUF_NAMESPACE_ID::int32 site() const;
+  void set_site(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_site() const;
+  void _internal_set_site(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:PlaneWar.FortuneWheelJson)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::FortuneWheelInfo > result_;
+  ::PROTOBUF_NAMESPACE_ID::int32 site_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_PlaneWar_2eproto;
+};
+// -------------------------------------------------------------------
+
+class GoldenToadJson PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:PlaneWar.GoldenToadJson) */ {
+ public:
+  inline GoldenToadJson() : GoldenToadJson(nullptr) {}
+  virtual ~GoldenToadJson();
+
+  GoldenToadJson(const GoldenToadJson& from);
+  GoldenToadJson(GoldenToadJson&& from) noexcept
+    : GoldenToadJson() {
+    *this = ::std::move(from);
+  }
+
+  inline GoldenToadJson& operator=(const GoldenToadJson& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline GoldenToadJson& operator=(GoldenToadJson&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const GoldenToadJson& default_instance();
+
+  static inline const GoldenToadJson* internal_default_instance() {
+    return reinterpret_cast<const GoldenToadJson*>(
+               &_GoldenToadJson_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    221;
+
+  friend void swap(GoldenToadJson& a, GoldenToadJson& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(GoldenToadJson* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(GoldenToadJson* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline GoldenToadJson* New() const final {
+    return CreateMaybeMessage<GoldenToadJson>(nullptr);
+  }
+
+  GoldenToadJson* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<GoldenToadJson>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const GoldenToadJson& from);
+  void MergeFrom(const GoldenToadJson& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(GoldenToadJson* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "PlaneWar.GoldenToadJson";
+  }
+  protected:
+  explicit GoldenToadJson(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_PlaneWar_2eproto);
+    return ::descriptor_table_PlaneWar_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kOrderListFieldNumber = 1,
+    kTotalRatioFieldNumber = 2,
+    kRatioFieldNumber = 3,
+    kStepFieldNumber = 4,
+  };
+  // repeated .PlaneWar.OrderData orderList = 1;
+  int orderlist_size() const;
+  private:
+  int _internal_orderlist_size() const;
+  public:
+  void clear_orderlist();
+  ::PlaneWar::OrderData* mutable_orderlist(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::OrderData >*
+      mutable_orderlist();
+  private:
+  const ::PlaneWar::OrderData& _internal_orderlist(int index) const;
+  ::PlaneWar::OrderData* _internal_add_orderlist();
+  public:
+  const ::PlaneWar::OrderData& orderlist(int index) const;
+  ::PlaneWar::OrderData* add_orderlist();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::OrderData >&
+      orderlist() const;
+
+  // int32 totalRatio = 2;
+  void clear_totalratio();
+  ::PROTOBUF_NAMESPACE_ID::int32 totalratio() const;
+  void set_totalratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_totalratio() const;
+  void _internal_set_totalratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 ratio = 3;
+  void clear_ratio();
+  ::PROTOBUF_NAMESPACE_ID::int32 ratio() const;
+  void set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_ratio() const;
+  void _internal_set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 step = 4;
+  void clear_step();
+  ::PROTOBUF_NAMESPACE_ID::int32 step() const;
+  void set_step(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_step() const;
+  void _internal_set_step(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:PlaneWar.GoldenToadJson)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::OrderData > orderlist_;
+  ::PROTOBUF_NAMESPACE_ID::int32 totalratio_;
+  ::PROTOBUF_NAMESPACE_ID::int32 ratio_;
+  ::PROTOBUF_NAMESPACE_ID::int32 step_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_PlaneWar_2eproto;
+};
+// -------------------------------------------------------------------
+
+class OrderData PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:PlaneWar.OrderData) */ {
+ public:
+  inline OrderData() : OrderData(nullptr) {}
+  virtual ~OrderData();
+
+  OrderData(const OrderData& from);
+  OrderData(OrderData&& from) noexcept
+    : OrderData() {
+    *this = ::std::move(from);
+  }
+
+  inline OrderData& operator=(const OrderData& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline OrderData& operator=(OrderData&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const OrderData& default_instance();
+
+  static inline const OrderData* internal_default_instance() {
+    return reinterpret_cast<const OrderData*>(
+               &_OrderData_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    222;
+
+  friend void swap(OrderData& a, OrderData& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(OrderData* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(OrderData* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline OrderData* New() const final {
+    return CreateMaybeMessage<OrderData>(nullptr);
+  }
+
+  OrderData* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<OrderData>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const OrderData& from);
+  void MergeFrom(const OrderData& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(OrderData* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "PlaneWar.OrderData";
+  }
+  protected:
+  explicit OrderData(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_PlaneWar_2eproto);
+    return ::descriptor_table_PlaneWar_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kTypeFieldNumber = 1,
+    kRatioFieldNumber = 2,
+  };
+  // int32 type = 1;
+  void clear_type();
+  ::PROTOBUF_NAMESPACE_ID::int32 type() const;
+  void set_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_type() const;
+  void _internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 ratio = 2;
+  void clear_ratio();
+  ::PROTOBUF_NAMESPACE_ID::int32 ratio() const;
+  void set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_ratio() const;
+  void _internal_set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:PlaneWar.OrderData)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 type_;
   ::PROTOBUF_NAMESPACE_ID::int32 ratio_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_PlaneWar_2eproto;
@@ -38109,7 +39116,7 @@ class CSSyncAnimation PROTOBUF_FINAL :
                &_CSSyncAnimation_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    217;
+    223;
 
   friend void swap(CSSyncAnimation& a, CSSyncAnimation& b) {
     a.Swap(&b);
@@ -38265,7 +39272,7 @@ class SCSyncAnimation PROTOBUF_FINAL :
                &_SCSyncAnimation_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    218;
+    224;
 
   friend void swap(SCSyncAnimation& a, SCSyncAnimation& b) {
     a.Swap(&b);
@@ -38421,7 +39428,7 @@ class SCGetAnimations PROTOBUF_FINAL :
                &_SCGetAnimations_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    219;
+    225;
 
   friend void swap(SCGetAnimations& a, SCGetAnimations& b) {
     a.Swap(&b);
@@ -38566,7 +39573,7 @@ class GradeRankDetail PROTOBUF_FINAL :
                &_GradeRankDetail_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    220;
+    226;
 
   friend void swap(GradeRankDetail& a, GradeRankDetail& b) {
     a.Swap(&b);
@@ -38720,7 +39727,7 @@ class GradeRankConfig PROTOBUF_FINAL :
                &_GradeRankConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    221;
+    227;
 
   friend void swap(GradeRankConfig& a, GradeRankConfig& b) {
     a.Swap(&b);
@@ -38876,7 +39883,7 @@ class WareGivingInfo PROTOBUF_FINAL :
                &_WareGivingInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    222;
+    228;
 
   friend void swap(WareGivingInfo& a, WareGivingInfo& b) {
     a.Swap(&b);
@@ -39052,7 +40059,7 @@ class WareInfo PROTOBUF_FINAL :
                &_WareInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    223;
+    229;
 
   friend void swap(WareInfo& a, WareInfo& b) {
     a.Swap(&b);
@@ -39268,7 +40275,7 @@ class ExtraGradeRewardInfo PROTOBUF_FINAL :
                &_ExtraGradeRewardInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    224;
+    230;
 
   friend void swap(ExtraGradeRewardInfo& a, ExtraGradeRewardInfo& b) {
     a.Swap(&b);
@@ -39440,7 +40447,7 @@ class RankWareConfig PROTOBUF_FINAL :
                &_RankWareConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    225;
+    231;
 
   friend void swap(RankWareConfig& a, RankWareConfig& b) {
     a.Swap(&b);
@@ -39675,7 +40682,7 @@ class DiceConfig PROTOBUF_FINAL :
                &_DiceConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    226;
+    232;
 
   friend void swap(DiceConfig& a, DiceConfig& b) {
     a.Swap(&b);
@@ -39836,7 +40843,7 @@ class CSSyncConfigs PROTOBUF_FINAL :
                &_CSSyncConfigs_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    227;
+    233;
 
   friend void swap(CSSyncConfigs& a, CSSyncConfigs& b) {
     a.Swap(&b);
@@ -39959,7 +40966,7 @@ class SCSyncConfigs PROTOBUF_FINAL :
                &_SCSyncConfigs_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    228;
+    234;
 
   friend void swap(SCSyncConfigs& a, SCSyncConfigs& b) {
     a.Swap(&b);
@@ -40204,7 +41211,7 @@ class CSConfirmWeaponExist PROTOBUF_FINAL :
                &_CSConfirmWeaponExist_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    229;
+    235;
 
   friend void swap(CSConfirmWeaponExist& a, CSConfirmWeaponExist& b) {
     a.Swap(&b);
@@ -40340,7 +41347,7 @@ class SCConfirmWeaponExist PROTOBUF_FINAL :
                &_SCConfirmWeaponExist_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    230;
+    236;
 
   friend void swap(SCConfirmWeaponExist& a, SCConfirmWeaponExist& b) {
     a.Swap(&b);
@@ -40476,7 +41483,7 @@ class CSGetVideo PROTOBUF_FINAL :
                &_CSGetVideo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    231;
+    237;
 
   friend void swap(CSGetVideo& a, CSGetVideo& b) {
     a.Swap(&b);
@@ -40630,7 +41637,7 @@ class SCGetVideo PROTOBUF_FINAL :
                &_SCGetVideo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    232;
+    238;
 
   friend void swap(SCGetVideo& a, SCGetVideo& b) {
     a.Swap(&b);
@@ -40874,7 +41881,7 @@ class VideoCommon PROTOBUF_FINAL :
                &_VideoCommon_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    233;
+    239;
 
   friend void swap(VideoCommon& a, VideoCommon& b) {
     a.Swap(&b);
@@ -41083,7 +42090,7 @@ class GlobalVideoInfo PROTOBUF_FINAL :
                &_GlobalVideoInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    234;
+    240;
 
   friend void swap(GlobalVideoInfo& a, GlobalVideoInfo& b) {
     a.Swap(&b);
@@ -41257,7 +42264,7 @@ class SelfVideoInfo PROTOBUF_FINAL :
                &_SelfVideoInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    235;
+    241;
 
   friend void swap(SelfVideoInfo& a, SelfVideoInfo& b) {
     a.Swap(&b);
@@ -41413,7 +42420,7 @@ class CSSelfVideoRecord PROTOBUF_FINAL :
                &_CSSelfVideoRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    236;
+    242;
 
   friend void swap(CSSelfVideoRecord& a, CSSelfVideoRecord& b) {
     a.Swap(&b);
@@ -41560,7 +42567,7 @@ class SCSelfVideoRecord PROTOBUF_FINAL :
                &_SCSelfVideoRecord_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    237;
+    243;
 
   friend void swap(SCSelfVideoRecord& a, SCSelfVideoRecord& b) {
     a.Swap(&b);
@@ -41716,7 +42723,7 @@ class CSVideoRank PROTOBUF_FINAL :
                &_CSVideoRank_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    238;
+    244;
 
   friend void swap(CSVideoRank& a, CSVideoRank& b) {
     a.Swap(&b);
@@ -41863,7 +42870,7 @@ class SCVideoRank PROTOBUF_FINAL :
                &_SCVideoRank_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    239;
+    245;
 
   friend void swap(SCVideoRank& a, SCVideoRank& b) {
     a.Swap(&b);
@@ -42019,7 +43026,7 @@ class ReceiveReward PROTOBUF_FINAL :
                &_ReceiveReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    240;
+    246;
 
   friend void swap(ReceiveReward& a, ReceiveReward& b) {
     a.Swap(&b);
@@ -42290,7 +43297,7 @@ class CSReceiveGradeReward PROTOBUF_FINAL :
                &_CSReceiveGradeReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    241;
+    247;
 
   friend void swap(CSReceiveGradeReward& a, CSReceiveGradeReward& b) {
     a.Swap(&b);
@@ -42413,7 +43420,7 @@ class SCReceiveGradeReward PROTOBUF_FINAL :
                &_SCReceiveGradeReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    242;
+    248;
 
   friend void swap(SCReceiveGradeReward& a, SCReceiveGradeReward& b) {
     a.Swap(&b);
@@ -42589,7 +43596,7 @@ class GradeRewardDetail PROTOBUF_FINAL :
                &_GradeRewardDetail_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    243;
+    249;
 
   friend void swap(GradeRewardDetail& a, GradeRewardDetail& b) {
     a.Swap(&b);
@@ -42756,7 +43763,7 @@ class GradeRewardInfo PROTOBUF_FINAL :
                &_GradeRewardInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    244;
+    250;
 
   friend void swap(GradeRewardInfo& a, GradeRewardInfo& b) {
     a.Swap(&b);
@@ -42950,7 +43957,7 @@ class GradeRankInfo PROTOBUF_FINAL :
                &_GradeRankInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    245;
+    251;
 
   friend void swap(GradeRankInfo& a, GradeRankInfo& b) {
     a.Swap(&b);
@@ -43239,7 +44246,7 @@ class CSGetTableUserInfo PROTOBUF_FINAL :
                &_CSGetTableUserInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    246;
+    252;
 
   friend void swap(CSGetTableUserInfo& a, CSGetTableUserInfo& b) {
     a.Swap(&b);
@@ -43375,7 +44382,7 @@ class SCGetTableUserInfo PROTOBUF_FINAL :
                &_SCGetTableUserInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    247;
+    253;
 
   friend void swap(SCGetTableUserInfo& a, SCGetTableUserInfo& b) {
     a.Swap(&b);
@@ -43540,7 +44547,7 @@ class CSGetGradeRewardInfo PROTOBUF_FINAL :
                &_CSGetGradeRewardInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    248;
+    254;
 
   friend void swap(CSGetGradeRewardInfo& a, CSGetGradeRewardInfo& b) {
     a.Swap(&b);
@@ -43687,7 +44694,7 @@ class SCGetGradeRewardInfo PROTOBUF_FINAL :
                &_SCGetGradeRewardInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    249;
+    255;
 
   friend void swap(SCGetGradeRewardInfo& a, SCGetGradeRewardInfo& b) {
     a.Swap(&b);
@@ -43832,7 +44839,7 @@ class CSGetGradeRankInfo PROTOBUF_FINAL :
                &_CSGetGradeRankInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    250;
+    256;
 
   friend void swap(CSGetGradeRankInfo& a, CSGetGradeRankInfo& b) {
     a.Swap(&b);
@@ -43955,7 +44962,7 @@ class SCGetGradeRankInfo PROTOBUF_FINAL :
                &_SCGetGradeRankInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    251;
+    257;
 
   friend void swap(SCGetGradeRankInfo& a, SCGetGradeRankInfo& b) {
     a.Swap(&b);
@@ -44100,7 +45107,7 @@ class SCRankUpgrade PROTOBUF_FINAL :
                &_SCRankUpgrade_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    252;
+    258;
 
   friend void swap(SCRankUpgrade& a, SCRankUpgrade& b) {
     a.Swap(&b);
@@ -44267,7 +45274,7 @@ class CSRankSeasonStatus PROTOBUF_FINAL :
                &_CSRankSeasonStatus_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    253;
+    259;
 
   friend void swap(CSRankSeasonStatus& a, CSRankSeasonStatus& b) {
     a.Swap(&b);
@@ -44390,7 +45397,7 @@ class SCRankSeasonStatus PROTOBUF_FINAL :
                &_SCRankSeasonStatus_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    254;
+    260;
 
   friend void swap(SCRankSeasonStatus& a, SCRankSeasonStatus& b) {
     a.Swap(&b);
@@ -44577,7 +45584,7 @@ class SCSyncTime PROTOBUF_FINAL :
                &_SCSyncTime_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    255;
+    261;
 
   friend void swap(SCSyncTime& a, SCSyncTime& b) {
     a.Swap(&b);
@@ -44713,7 +45720,7 @@ class SCNoticePropsOverdue PROTOBUF_FINAL :
                &_SCNoticePropsOverdue_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    256;
+    262;
 
   friend void swap(SCNoticePropsOverdue& a, SCNoticePropsOverdue& b) {
     a.Swap(&b);
@@ -44849,7 +45856,7 @@ class PurchaseResult PROTOBUF_FINAL :
                &_PurchaseResult_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    257;
+    263;
 
   friend void swap(PurchaseResult& a, PurchaseResult& b) {
     a.Swap(&b);
@@ -45003,7 +46010,7 @@ class CSQueryPackagePurchase PROTOBUF_FINAL :
                &_CSQueryPackagePurchase_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    258;
+    264;
 
   friend void swap(CSQueryPackagePurchase& a, CSQueryPackagePurchase& b) {
     a.Swap(&b);
@@ -45153,7 +46160,7 @@ class SCQueryPackagePurchase PROTOBUF_FINAL :
                &_SCQueryPackagePurchase_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    259;
+    265;
 
   friend void swap(SCQueryPackagePurchase& a, SCQueryPackagePurchase& b) {
     a.Swap(&b);
@@ -45298,7 +46305,7 @@ class PropsInfo PROTOBUF_FINAL :
                &_PropsInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    260;
+    266;
 
   friend void swap(PropsInfo& a, PropsInfo& b) {
     a.Swap(&b);
@@ -45445,7 +46452,7 @@ class SCGamePurchasePush PROTOBUF_FINAL :
                &_SCGamePurchasePush_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    261;
+    267;
 
   friend void swap(SCGamePurchasePush& a, SCGamePurchasePush& b) {
     a.Swap(&b);
@@ -45590,7 +46597,7 @@ class PackageMarquee PROTOBUF_FINAL :
                &_PackageMarquee_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    262;
+    268;
 
   friend void swap(PackageMarquee& a, PackageMarquee& b) {
     a.Swap(&b);
@@ -45771,7 +46778,7 @@ class CSQueryPackageMarquee PROTOBUF_FINAL :
                &_CSQueryPackageMarquee_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    263;
+    269;
 
   friend void swap(CSQueryPackageMarquee& a, CSQueryPackageMarquee& b) {
     a.Swap(&b);
@@ -45894,7 +46901,7 @@ class SCQueryPackageMarquee PROTOBUF_FINAL :
                &_SCQueryPackageMarquee_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    264;
+    270;
 
   friend void swap(SCQueryPackageMarquee& a, SCQueryPackageMarquee& b) {
     a.Swap(&b);
@@ -46057,7 +47064,7 @@ class CSSetWings PROTOBUF_FINAL :
                &_CSSetWings_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    265;
+    271;
 
   friend void swap(CSSetWings& a, CSSetWings& b) {
     a.Swap(&b);
@@ -46193,7 +47200,7 @@ class SCSetWings PROTOBUF_FINAL :
                &_SCSetWings_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    266;
+    272;
 
   friend void swap(SCSetWings& a, SCSetWings& b) {
     a.Swap(&b);
@@ -46340,7 +47347,7 @@ class CSVerifySeasonChange PROTOBUF_FINAL :
                &_CSVerifySeasonChange_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    267;
+    273;
 
   friend void swap(CSVerifySeasonChange& a, CSVerifySeasonChange& b) {
     a.Swap(&b);
@@ -46463,7 +47470,7 @@ class SCVerifySeasonChange PROTOBUF_FINAL :
                &_SCVerifySeasonChange_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    268;
+    274;
 
   friend void swap(SCVerifySeasonChange& a, SCVerifySeasonChange& b) {
     a.Swap(&b);
@@ -46661,7 +47668,7 @@ class CSExistUnReceiveRankReward PROTOBUF_FINAL :
                &_CSExistUnReceiveRankReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    269;
+    275;
 
   friend void swap(CSExistUnReceiveRankReward& a, CSExistUnReceiveRankReward& b) {
     a.Swap(&b);
@@ -46784,7 +47791,7 @@ class SCExistUnReceiveRankReward PROTOBUF_FINAL :
                &_SCExistUnReceiveRankReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    270;
+    276;
 
   friend void swap(SCExistUnReceiveRankReward& a, SCExistUnReceiveRankReward& b) {
     a.Swap(&b);
@@ -46920,7 +47927,7 @@ class CSReceiveExtraGradeReward PROTOBUF_FINAL :
                &_CSReceiveExtraGradeReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    271;
+    277;
 
   friend void swap(CSReceiveExtraGradeReward& a, CSReceiveExtraGradeReward& b) {
     a.Swap(&b);
@@ -47056,7 +48063,7 @@ class SCReceiveExtraGradeReward PROTOBUF_FINAL :
                &_SCReceiveExtraGradeReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    272;
+    278;
 
   friend void swap(SCReceiveExtraGradeReward& a, SCReceiveExtraGradeReward& b) {
     a.Swap(&b);
@@ -47212,7 +48219,7 @@ class CSGetGradeRankList PROTOBUF_FINAL :
                &_CSGetGradeRankList_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    273;
+    279;
 
   friend void swap(CSGetGradeRankList& a, CSGetGradeRankList& b) {
     a.Swap(&b);
@@ -47370,7 +48377,7 @@ class SCGetGradeRankList PROTOBUF_FINAL :
                &_SCGetGradeRankList_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    274;
+    280;
 
   friend void swap(SCGetGradeRankList& a, SCGetGradeRankList& b) {
     a.Swap(&b);
@@ -47546,7 +48553,7 @@ class CSBuyPlane PROTOBUF_FINAL :
                &_CSBuyPlane_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    275;
+    281;
 
   friend void swap(CSBuyPlane& a, CSBuyPlane& b) {
     a.Swap(&b);
@@ -47682,7 +48689,7 @@ class SCBuyPlane PROTOBUF_FINAL :
                &_SCBuyPlane_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    276;
+    282;
 
   friend void swap(SCBuyPlane& a, SCBuyPlane& b) {
     a.Swap(&b);
@@ -47818,7 +48825,7 @@ class CSBuyWings PROTOBUF_FINAL :
                &_CSBuyWings_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    277;
+    283;
 
   friend void swap(CSBuyWings& a, CSBuyWings& b) {
     a.Swap(&b);
@@ -47954,7 +48961,7 @@ class SCBuyWings PROTOBUF_FINAL :
                &_SCBuyWings_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    278;
+    284;
 
   friend void swap(SCBuyWings& a, SCBuyWings& b) {
     a.Swap(&b);
@@ -48090,7 +49097,7 @@ class OpenChestReward PROTOBUF_FINAL :
                &_OpenChestReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    279;
+    285;
 
   friend void swap(OpenChestReward& a, OpenChestReward& b) {
     a.Swap(&b);
@@ -48246,7 +49253,7 @@ class SCUpdateChestStatus PROTOBUF_FINAL :
                &_SCUpdateChestStatus_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    280;
+    286;
 
   friend void swap(SCUpdateChestStatus& a, SCUpdateChestStatus& b) {
     a.Swap(&b);
@@ -48437,7 +49444,7 @@ class ChestBrief PROTOBUF_FINAL :
                &_ChestBrief_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    281;
+    287;
 
   friend void swap(ChestBrief& a, ChestBrief& b) {
     a.Swap(&b);
@@ -48593,7 +49600,7 @@ class SCChestConfig PROTOBUF_FINAL :
                &_SCChestConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    282;
+    288;
 
   friend void swap(SCChestConfig& a, SCChestConfig& b) {
     a.Swap(&b);
@@ -48793,7 +49800,7 @@ class SCOpenChest PROTOBUF_FINAL :
                &_SCOpenChest_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    283;
+    289;
 
   friend void swap(SCOpenChest& a, SCOpenChest& b) {
     a.Swap(&b);
@@ -48949,7 +49956,7 @@ class CSSelectChestReward PROTOBUF_FINAL :
                &_CSSelectChestReward_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    284;
+    290;
 
   friend void swap(CSSelectChestReward& a, CSSelectChestReward& b) {
     a.Swap(&b);
@@ -49105,7 +50112,7 @@ class CSChestSetAutoSelect PROTOBUF_FINAL :
                &_CSChestSetAutoSelect_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    285;
+    291;
 
   friend void swap(CSChestSetAutoSelect& a, CSChestSetAutoSelect& b) {
     a.Swap(&b);
@@ -49252,7 +50259,7 @@ class SCChestSetAutoSelect PROTOBUF_FINAL :
                &_SCChestSetAutoSelect_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    286;
+    292;
 
   friend void swap(SCChestSetAutoSelect& a, SCChestSetAutoSelect& b) {
     a.Swap(&b);
@@ -49399,7 +50406,7 @@ class CSChestSetEnable PROTOBUF_FINAL :
                &_CSChestSetEnable_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    287;
+    293;
 
   friend void swap(CSChestSetEnable& a, CSChestSetEnable& b) {
     a.Swap(&b);
@@ -49535,7 +50542,7 @@ class SCChestSetEnable PROTOBUF_FINAL :
                &_SCChestSetEnable_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    288;
+    294;
 
   friend void swap(SCChestSetEnable& a, SCChestSetEnable& b) {
     a.Swap(&b);
@@ -49671,7 +50678,7 @@ class SCWaterDropInfo PROTOBUF_FINAL :
                &_SCWaterDropInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    289;
+    295;
 
   friend void swap(SCWaterDropInfo& a, SCWaterDropInfo& b) {
     a.Swap(&b);
@@ -49829,7 +50836,7 @@ class TextInfo PROTOBUF_FINAL :
                &_TextInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    290;
+    296;
 
   friend void swap(TextInfo& a, TextInfo& b) {
     a.Swap(&b);
@@ -49983,7 +50990,7 @@ class CSSyncTextConfig PROTOBUF_FINAL :
                &_CSSyncTextConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    291;
+    297;
 
   friend void swap(CSSyncTextConfig& a, CSSyncTextConfig& b) {
     a.Swap(&b);
@@ -50130,7 +51137,7 @@ class SCSyncTextConfig PROTOBUF_FINAL :
                &_SCSyncTextConfig_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    292;
+    298;
 
   friend void swap(SCSyncTextConfig& a, SCSyncTextConfig& b) {
     a.Swap(&b);
@@ -64886,64 +65893,68 @@ inline void SCUseMissile::set_curmoney(::PROTOBUF_NAMESPACE_ID::int64 value) {
 
 // CSMonsterCall
 
+// -------------------------------------------------------------------
+
+// SCMonsterCall
+
 // int32 chair = 1;
-inline void CSMonsterCall::clear_chair() {
+inline void SCMonsterCall::clear_chair() {
   chair_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CSMonsterCall::_internal_chair() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCMonsterCall::_internal_chair() const {
   return chair_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CSMonsterCall::chair() const {
-  // @@protoc_insertion_point(field_get:PlaneWar.CSMonsterCall.chair)
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCMonsterCall::chair() const {
+  // @@protoc_insertion_point(field_get:PlaneWar.SCMonsterCall.chair)
   return _internal_chair();
 }
-inline void CSMonsterCall::_internal_set_chair(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void SCMonsterCall::_internal_set_chair(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   chair_ = value;
 }
-inline void CSMonsterCall::set_chair(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void SCMonsterCall::set_chair(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_chair(value);
-  // @@protoc_insertion_point(field_set:PlaneWar.CSMonsterCall.chair)
+  // @@protoc_insertion_point(field_set:PlaneWar.SCMonsterCall.chair)
 }
 
 // int32 count = 2;
-inline void CSMonsterCall::clear_count() {
+inline void SCMonsterCall::clear_count() {
   count_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CSMonsterCall::_internal_count() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCMonsterCall::_internal_count() const {
   return count_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CSMonsterCall::count() const {
-  // @@protoc_insertion_point(field_get:PlaneWar.CSMonsterCall.count)
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCMonsterCall::count() const {
+  // @@protoc_insertion_point(field_get:PlaneWar.SCMonsterCall.count)
   return _internal_count();
 }
-inline void CSMonsterCall::_internal_set_count(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void SCMonsterCall::_internal_set_count(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   count_ = value;
 }
-inline void CSMonsterCall::set_count(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void SCMonsterCall::set_count(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_count(value);
-  // @@protoc_insertion_point(field_set:PlaneWar.CSMonsterCall.count)
+  // @@protoc_insertion_point(field_set:PlaneWar.SCMonsterCall.count)
 }
 
 // int32 code = 3;
-inline void CSMonsterCall::clear_code() {
+inline void SCMonsterCall::clear_code() {
   code_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CSMonsterCall::_internal_code() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCMonsterCall::_internal_code() const {
   return code_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 CSMonsterCall::code() const {
-  // @@protoc_insertion_point(field_get:PlaneWar.CSMonsterCall.code)
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCMonsterCall::code() const {
+  // @@protoc_insertion_point(field_get:PlaneWar.SCMonsterCall.code)
   return _internal_code();
 }
-inline void CSMonsterCall::_internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void SCMonsterCall::_internal_set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   code_ = value;
 }
-inline void CSMonsterCall::set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void SCMonsterCall::set_code(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_code(value);
-  // @@protoc_insertion_point(field_set:PlaneWar.CSMonsterCall.code)
+  // @@protoc_insertion_point(field_set:PlaneWar.SCMonsterCall.code)
 }
 
 // -------------------------------------------------------------------
@@ -69518,6 +70529,10 @@ SCUseMissileBatch::remainmissile() const {
 
 // -------------------------------------------------------------------
 
+// SCChangeTable
+
+// -------------------------------------------------------------------
+
 // CSUseRoulette
 
 // int32 iD = 1;
@@ -72881,6 +73896,606 @@ inline void Animation::_internal_set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value)
 inline void Animation::set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_ratio(value);
   // @@protoc_insertion_point(field_set:PlaneWar.Animation.ratio)
+}
+
+// .PlaneWar.FortuneWheelJson fortuneJson = 10;
+inline bool Animation::_internal_has_fortunejson() const {
+  return this != internal_default_instance() && fortunejson_ != nullptr;
+}
+inline bool Animation::has_fortunejson() const {
+  return _internal_has_fortunejson();
+}
+inline void Animation::clear_fortunejson() {
+  if (GetArena() == nullptr && fortunejson_ != nullptr) {
+    delete fortunejson_;
+  }
+  fortunejson_ = nullptr;
+}
+inline const ::PlaneWar::FortuneWheelJson& Animation::_internal_fortunejson() const {
+  const ::PlaneWar::FortuneWheelJson* p = fortunejson_;
+  return p != nullptr ? *p : reinterpret_cast<const ::PlaneWar::FortuneWheelJson&>(
+      ::PlaneWar::_FortuneWheelJson_default_instance_);
+}
+inline const ::PlaneWar::FortuneWheelJson& Animation::fortunejson() const {
+  // @@protoc_insertion_point(field_get:PlaneWar.Animation.fortuneJson)
+  return _internal_fortunejson();
+}
+inline void Animation::unsafe_arena_set_allocated_fortunejson(
+    ::PlaneWar::FortuneWheelJson* fortunejson) {
+  if (GetArena() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(fortunejson_);
+  }
+  fortunejson_ = fortunejson;
+  if (fortunejson) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:PlaneWar.Animation.fortuneJson)
+}
+inline ::PlaneWar::FortuneWheelJson* Animation::release_fortunejson() {
+  
+  ::PlaneWar::FortuneWheelJson* temp = fortunejson_;
+  fortunejson_ = nullptr;
+  if (GetArena() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+  return temp;
+}
+inline ::PlaneWar::FortuneWheelJson* Animation::unsafe_arena_release_fortunejson() {
+  // @@protoc_insertion_point(field_release:PlaneWar.Animation.fortuneJson)
+  
+  ::PlaneWar::FortuneWheelJson* temp = fortunejson_;
+  fortunejson_ = nullptr;
+  return temp;
+}
+inline ::PlaneWar::FortuneWheelJson* Animation::_internal_mutable_fortunejson() {
+  
+  if (fortunejson_ == nullptr) {
+    auto* p = CreateMaybeMessage<::PlaneWar::FortuneWheelJson>(GetArena());
+    fortunejson_ = p;
+  }
+  return fortunejson_;
+}
+inline ::PlaneWar::FortuneWheelJson* Animation::mutable_fortunejson() {
+  // @@protoc_insertion_point(field_mutable:PlaneWar.Animation.fortuneJson)
+  return _internal_mutable_fortunejson();
+}
+inline void Animation::set_allocated_fortunejson(::PlaneWar::FortuneWheelJson* fortunejson) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  if (message_arena == nullptr) {
+    delete fortunejson_;
+  }
+  if (fortunejson) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(fortunejson);
+    if (message_arena != submessage_arena) {
+      fortunejson = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, fortunejson, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  fortunejson_ = fortunejson;
+  // @@protoc_insertion_point(field_set_allocated:PlaneWar.Animation.fortuneJson)
+}
+
+// .PlaneWar.GoldenToadJson goldenToadJson = 11;
+inline bool Animation::_internal_has_goldentoadjson() const {
+  return this != internal_default_instance() && goldentoadjson_ != nullptr;
+}
+inline bool Animation::has_goldentoadjson() const {
+  return _internal_has_goldentoadjson();
+}
+inline void Animation::clear_goldentoadjson() {
+  if (GetArena() == nullptr && goldentoadjson_ != nullptr) {
+    delete goldentoadjson_;
+  }
+  goldentoadjson_ = nullptr;
+}
+inline const ::PlaneWar::GoldenToadJson& Animation::_internal_goldentoadjson() const {
+  const ::PlaneWar::GoldenToadJson* p = goldentoadjson_;
+  return p != nullptr ? *p : reinterpret_cast<const ::PlaneWar::GoldenToadJson&>(
+      ::PlaneWar::_GoldenToadJson_default_instance_);
+}
+inline const ::PlaneWar::GoldenToadJson& Animation::goldentoadjson() const {
+  // @@protoc_insertion_point(field_get:PlaneWar.Animation.goldenToadJson)
+  return _internal_goldentoadjson();
+}
+inline void Animation::unsafe_arena_set_allocated_goldentoadjson(
+    ::PlaneWar::GoldenToadJson* goldentoadjson) {
+  if (GetArena() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(goldentoadjson_);
+  }
+  goldentoadjson_ = goldentoadjson;
+  if (goldentoadjson) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:PlaneWar.Animation.goldenToadJson)
+}
+inline ::PlaneWar::GoldenToadJson* Animation::release_goldentoadjson() {
+  
+  ::PlaneWar::GoldenToadJson* temp = goldentoadjson_;
+  goldentoadjson_ = nullptr;
+  if (GetArena() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+  return temp;
+}
+inline ::PlaneWar::GoldenToadJson* Animation::unsafe_arena_release_goldentoadjson() {
+  // @@protoc_insertion_point(field_release:PlaneWar.Animation.goldenToadJson)
+  
+  ::PlaneWar::GoldenToadJson* temp = goldentoadjson_;
+  goldentoadjson_ = nullptr;
+  return temp;
+}
+inline ::PlaneWar::GoldenToadJson* Animation::_internal_mutable_goldentoadjson() {
+  
+  if (goldentoadjson_ == nullptr) {
+    auto* p = CreateMaybeMessage<::PlaneWar::GoldenToadJson>(GetArena());
+    goldentoadjson_ = p;
+  }
+  return goldentoadjson_;
+}
+inline ::PlaneWar::GoldenToadJson* Animation::mutable_goldentoadjson() {
+  // @@protoc_insertion_point(field_mutable:PlaneWar.Animation.goldenToadJson)
+  return _internal_mutable_goldentoadjson();
+}
+inline void Animation::set_allocated_goldentoadjson(::PlaneWar::GoldenToadJson* goldentoadjson) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  if (message_arena == nullptr) {
+    delete goldentoadjson_;
+  }
+  if (goldentoadjson) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(goldentoadjson);
+    if (message_arena != submessage_arena) {
+      goldentoadjson = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, goldentoadjson, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  goldentoadjson_ = goldentoadjson;
+  // @@protoc_insertion_point(field_set_allocated:PlaneWar.Animation.goldenToadJson)
+}
+
+// .PlaneWar.DiceJson diceJson = 12;
+inline bool Animation::_internal_has_dicejson() const {
+  return this != internal_default_instance() && dicejson_ != nullptr;
+}
+inline bool Animation::has_dicejson() const {
+  return _internal_has_dicejson();
+}
+inline void Animation::clear_dicejson() {
+  if (GetArena() == nullptr && dicejson_ != nullptr) {
+    delete dicejson_;
+  }
+  dicejson_ = nullptr;
+}
+inline const ::PlaneWar::DiceJson& Animation::_internal_dicejson() const {
+  const ::PlaneWar::DiceJson* p = dicejson_;
+  return p != nullptr ? *p : reinterpret_cast<const ::PlaneWar::DiceJson&>(
+      ::PlaneWar::_DiceJson_default_instance_);
+}
+inline const ::PlaneWar::DiceJson& Animation::dicejson() const {
+  // @@protoc_insertion_point(field_get:PlaneWar.Animation.diceJson)
+  return _internal_dicejson();
+}
+inline void Animation::unsafe_arena_set_allocated_dicejson(
+    ::PlaneWar::DiceJson* dicejson) {
+  if (GetArena() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(dicejson_);
+  }
+  dicejson_ = dicejson;
+  if (dicejson) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:PlaneWar.Animation.diceJson)
+}
+inline ::PlaneWar::DiceJson* Animation::release_dicejson() {
+  
+  ::PlaneWar::DiceJson* temp = dicejson_;
+  dicejson_ = nullptr;
+  if (GetArena() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+  return temp;
+}
+inline ::PlaneWar::DiceJson* Animation::unsafe_arena_release_dicejson() {
+  // @@protoc_insertion_point(field_release:PlaneWar.Animation.diceJson)
+  
+  ::PlaneWar::DiceJson* temp = dicejson_;
+  dicejson_ = nullptr;
+  return temp;
+}
+inline ::PlaneWar::DiceJson* Animation::_internal_mutable_dicejson() {
+  
+  if (dicejson_ == nullptr) {
+    auto* p = CreateMaybeMessage<::PlaneWar::DiceJson>(GetArena());
+    dicejson_ = p;
+  }
+  return dicejson_;
+}
+inline ::PlaneWar::DiceJson* Animation::mutable_dicejson() {
+  // @@protoc_insertion_point(field_mutable:PlaneWar.Animation.diceJson)
+  return _internal_mutable_dicejson();
+}
+inline void Animation::set_allocated_dicejson(::PlaneWar::DiceJson* dicejson) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  if (message_arena == nullptr) {
+    delete dicejson_;
+  }
+  if (dicejson) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(dicejson);
+    if (message_arena != submessage_arena) {
+      dicejson = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, dicejson, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  dicejson_ = dicejson;
+  // @@protoc_insertion_point(field_set_allocated:PlaneWar.Animation.diceJson)
+}
+
+// -------------------------------------------------------------------
+
+// DiceJson
+
+// int32 step = 1;
+inline void DiceJson::clear_step() {
+  step_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 DiceJson::_internal_step() const {
+  return step_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 DiceJson::step() const {
+  // @@protoc_insertion_point(field_get:PlaneWar.DiceJson.step)
+  return _internal_step();
+}
+inline void DiceJson::_internal_set_step(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  step_ = value;
+}
+inline void DiceJson::set_step(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_step(value);
+  // @@protoc_insertion_point(field_set:PlaneWar.DiceJson.step)
+}
+
+// repeated .PlaneWar.Dice dice = 2;
+inline int DiceJson::_internal_dice_size() const {
+  return dice_.size();
+}
+inline int DiceJson::dice_size() const {
+  return _internal_dice_size();
+}
+inline void DiceJson::clear_dice() {
+  dice_.Clear();
+}
+inline ::PlaneWar::Dice* DiceJson::mutable_dice(int index) {
+  // @@protoc_insertion_point(field_mutable:PlaneWar.DiceJson.dice)
+  return dice_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::Dice >*
+DiceJson::mutable_dice() {
+  // @@protoc_insertion_point(field_mutable_list:PlaneWar.DiceJson.dice)
+  return &dice_;
+}
+inline const ::PlaneWar::Dice& DiceJson::_internal_dice(int index) const {
+  return dice_.Get(index);
+}
+inline const ::PlaneWar::Dice& DiceJson::dice(int index) const {
+  // @@protoc_insertion_point(field_get:PlaneWar.DiceJson.dice)
+  return _internal_dice(index);
+}
+inline ::PlaneWar::Dice* DiceJson::_internal_add_dice() {
+  return dice_.Add();
+}
+inline ::PlaneWar::Dice* DiceJson::add_dice() {
+  // @@protoc_insertion_point(field_add:PlaneWar.DiceJson.dice)
+  return _internal_add_dice();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::Dice >&
+DiceJson::dice() const {
+  // @@protoc_insertion_point(field_list:PlaneWar.DiceJson.dice)
+  return dice_;
+}
+
+// repeated .PlaneWar.Dice mulList = 3;
+inline int DiceJson::_internal_mullist_size() const {
+  return mullist_.size();
+}
+inline int DiceJson::mullist_size() const {
+  return _internal_mullist_size();
+}
+inline void DiceJson::clear_mullist() {
+  mullist_.Clear();
+}
+inline ::PlaneWar::Dice* DiceJson::mutable_mullist(int index) {
+  // @@protoc_insertion_point(field_mutable:PlaneWar.DiceJson.mulList)
+  return mullist_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::Dice >*
+DiceJson::mutable_mullist() {
+  // @@protoc_insertion_point(field_mutable_list:PlaneWar.DiceJson.mulList)
+  return &mullist_;
+}
+inline const ::PlaneWar::Dice& DiceJson::_internal_mullist(int index) const {
+  return mullist_.Get(index);
+}
+inline const ::PlaneWar::Dice& DiceJson::mullist(int index) const {
+  // @@protoc_insertion_point(field_get:PlaneWar.DiceJson.mulList)
+  return _internal_mullist(index);
+}
+inline ::PlaneWar::Dice* DiceJson::_internal_add_mullist() {
+  return mullist_.Add();
+}
+inline ::PlaneWar::Dice* DiceJson::add_mullist() {
+  // @@protoc_insertion_point(field_add:PlaneWar.DiceJson.mulList)
+  return _internal_add_mullist();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::Dice >&
+DiceJson::mullist() const {
+  // @@protoc_insertion_point(field_list:PlaneWar.DiceJson.mulList)
+  return mullist_;
+}
+
+// repeated .PlaneWar.Pos mulPosList = 4;
+inline int DiceJson::_internal_mulposlist_size() const {
+  return mulposlist_.size();
+}
+inline int DiceJson::mulposlist_size() const {
+  return _internal_mulposlist_size();
+}
+inline void DiceJson::clear_mulposlist() {
+  mulposlist_.Clear();
+}
+inline ::PlaneWar::Pos* DiceJson::mutable_mulposlist(int index) {
+  // @@protoc_insertion_point(field_mutable:PlaneWar.DiceJson.mulPosList)
+  return mulposlist_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::Pos >*
+DiceJson::mutable_mulposlist() {
+  // @@protoc_insertion_point(field_mutable_list:PlaneWar.DiceJson.mulPosList)
+  return &mulposlist_;
+}
+inline const ::PlaneWar::Pos& DiceJson::_internal_mulposlist(int index) const {
+  return mulposlist_.Get(index);
+}
+inline const ::PlaneWar::Pos& DiceJson::mulposlist(int index) const {
+  // @@protoc_insertion_point(field_get:PlaneWar.DiceJson.mulPosList)
+  return _internal_mulposlist(index);
+}
+inline ::PlaneWar::Pos* DiceJson::_internal_add_mulposlist() {
+  return mulposlist_.Add();
+}
+inline ::PlaneWar::Pos* DiceJson::add_mulposlist() {
+  // @@protoc_insertion_point(field_add:PlaneWar.DiceJson.mulPosList)
+  return _internal_add_mulposlist();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::Pos >&
+DiceJson::mulposlist() const {
+  // @@protoc_insertion_point(field_list:PlaneWar.DiceJson.mulPosList)
+  return mulposlist_;
+}
+
+// -------------------------------------------------------------------
+
+// FortuneWheelJson
+
+// repeated .PlaneWar.FortuneWheelInfo result = 1;
+inline int FortuneWheelJson::_internal_result_size() const {
+  return result_.size();
+}
+inline int FortuneWheelJson::result_size() const {
+  return _internal_result_size();
+}
+inline void FortuneWheelJson::clear_result() {
+  result_.Clear();
+}
+inline ::PlaneWar::FortuneWheelInfo* FortuneWheelJson::mutable_result(int index) {
+  // @@protoc_insertion_point(field_mutable:PlaneWar.FortuneWheelJson.result)
+  return result_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::FortuneWheelInfo >*
+FortuneWheelJson::mutable_result() {
+  // @@protoc_insertion_point(field_mutable_list:PlaneWar.FortuneWheelJson.result)
+  return &result_;
+}
+inline const ::PlaneWar::FortuneWheelInfo& FortuneWheelJson::_internal_result(int index) const {
+  return result_.Get(index);
+}
+inline const ::PlaneWar::FortuneWheelInfo& FortuneWheelJson::result(int index) const {
+  // @@protoc_insertion_point(field_get:PlaneWar.FortuneWheelJson.result)
+  return _internal_result(index);
+}
+inline ::PlaneWar::FortuneWheelInfo* FortuneWheelJson::_internal_add_result() {
+  return result_.Add();
+}
+inline ::PlaneWar::FortuneWheelInfo* FortuneWheelJson::add_result() {
+  // @@protoc_insertion_point(field_add:PlaneWar.FortuneWheelJson.result)
+  return _internal_add_result();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::FortuneWheelInfo >&
+FortuneWheelJson::result() const {
+  // @@protoc_insertion_point(field_list:PlaneWar.FortuneWheelJson.result)
+  return result_;
+}
+
+// int32 site = 2;
+inline void FortuneWheelJson::clear_site() {
+  site_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FortuneWheelJson::_internal_site() const {
+  return site_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 FortuneWheelJson::site() const {
+  // @@protoc_insertion_point(field_get:PlaneWar.FortuneWheelJson.site)
+  return _internal_site();
+}
+inline void FortuneWheelJson::_internal_set_site(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  site_ = value;
+}
+inline void FortuneWheelJson::set_site(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_site(value);
+  // @@protoc_insertion_point(field_set:PlaneWar.FortuneWheelJson.site)
+}
+
+// -------------------------------------------------------------------
+
+// GoldenToadJson
+
+// repeated .PlaneWar.OrderData orderList = 1;
+inline int GoldenToadJson::_internal_orderlist_size() const {
+  return orderlist_.size();
+}
+inline int GoldenToadJson::orderlist_size() const {
+  return _internal_orderlist_size();
+}
+inline void GoldenToadJson::clear_orderlist() {
+  orderlist_.Clear();
+}
+inline ::PlaneWar::OrderData* GoldenToadJson::mutable_orderlist(int index) {
+  // @@protoc_insertion_point(field_mutable:PlaneWar.GoldenToadJson.orderList)
+  return orderlist_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::OrderData >*
+GoldenToadJson::mutable_orderlist() {
+  // @@protoc_insertion_point(field_mutable_list:PlaneWar.GoldenToadJson.orderList)
+  return &orderlist_;
+}
+inline const ::PlaneWar::OrderData& GoldenToadJson::_internal_orderlist(int index) const {
+  return orderlist_.Get(index);
+}
+inline const ::PlaneWar::OrderData& GoldenToadJson::orderlist(int index) const {
+  // @@protoc_insertion_point(field_get:PlaneWar.GoldenToadJson.orderList)
+  return _internal_orderlist(index);
+}
+inline ::PlaneWar::OrderData* GoldenToadJson::_internal_add_orderlist() {
+  return orderlist_.Add();
+}
+inline ::PlaneWar::OrderData* GoldenToadJson::add_orderlist() {
+  // @@protoc_insertion_point(field_add:PlaneWar.GoldenToadJson.orderList)
+  return _internal_add_orderlist();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::OrderData >&
+GoldenToadJson::orderlist() const {
+  // @@protoc_insertion_point(field_list:PlaneWar.GoldenToadJson.orderList)
+  return orderlist_;
+}
+
+// int32 totalRatio = 2;
+inline void GoldenToadJson::clear_totalratio() {
+  totalratio_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 GoldenToadJson::_internal_totalratio() const {
+  return totalratio_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 GoldenToadJson::totalratio() const {
+  // @@protoc_insertion_point(field_get:PlaneWar.GoldenToadJson.totalRatio)
+  return _internal_totalratio();
+}
+inline void GoldenToadJson::_internal_set_totalratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  totalratio_ = value;
+}
+inline void GoldenToadJson::set_totalratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_totalratio(value);
+  // @@protoc_insertion_point(field_set:PlaneWar.GoldenToadJson.totalRatio)
+}
+
+// int32 ratio = 3;
+inline void GoldenToadJson::clear_ratio() {
+  ratio_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 GoldenToadJson::_internal_ratio() const {
+  return ratio_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 GoldenToadJson::ratio() const {
+  // @@protoc_insertion_point(field_get:PlaneWar.GoldenToadJson.ratio)
+  return _internal_ratio();
+}
+inline void GoldenToadJson::_internal_set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  ratio_ = value;
+}
+inline void GoldenToadJson::set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_ratio(value);
+  // @@protoc_insertion_point(field_set:PlaneWar.GoldenToadJson.ratio)
+}
+
+// int32 step = 4;
+inline void GoldenToadJson::clear_step() {
+  step_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 GoldenToadJson::_internal_step() const {
+  return step_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 GoldenToadJson::step() const {
+  // @@protoc_insertion_point(field_get:PlaneWar.GoldenToadJson.step)
+  return _internal_step();
+}
+inline void GoldenToadJson::_internal_set_step(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  step_ = value;
+}
+inline void GoldenToadJson::set_step(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_step(value);
+  // @@protoc_insertion_point(field_set:PlaneWar.GoldenToadJson.step)
+}
+
+// -------------------------------------------------------------------
+
+// OrderData
+
+// int32 type = 1;
+inline void OrderData::clear_type() {
+  type_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 OrderData::_internal_type() const {
+  return type_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 OrderData::type() const {
+  // @@protoc_insertion_point(field_get:PlaneWar.OrderData.type)
+  return _internal_type();
+}
+inline void OrderData::_internal_set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  type_ = value;
+}
+inline void OrderData::set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_type(value);
+  // @@protoc_insertion_point(field_set:PlaneWar.OrderData.type)
+}
+
+// int32 ratio = 2;
+inline void OrderData::clear_ratio() {
+  ratio_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 OrderData::_internal_ratio() const {
+  return ratio_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 OrderData::ratio() const {
+  // @@protoc_insertion_point(field_get:PlaneWar.OrderData.ratio)
+  return _internal_ratio();
+}
+inline void OrderData::_internal_set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  ratio_ = value;
+}
+inline void OrderData::set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_ratio(value);
+  // @@protoc_insertion_point(field_set:PlaneWar.OrderData.ratio)
 }
 
 // -------------------------------------------------------------------
@@ -79765,6 +81380,18 @@ SCSyncTextConfig::textlist() const {
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

@@ -1226,8 +1226,11 @@ message SCUseMissile
 	int32 remainNum = 4;
 	int64 curMoney = 5;
 }
-
 message CSMonsterCall
+{
+}
+
+message SCMonsterCall
 {
 	int32 chair = 1;
 	int32 count = 2;
@@ -1575,6 +1578,10 @@ message CSChangeTable
 {
 	
 }
+message SCChangeTable
+{
+	
+}
 
 message CSUseRoulette
 {
@@ -1825,6 +1832,37 @@ message Animation
 	int32 originUID = 7;
 	repeated int32 multipleList = 8;
 	int32 ratio = 9;
+	FortuneWheelJson fortuneJson = 10;
+	GoldenToadJson goldenToadJson = 11;
+	DiceJson diceJson = 12;
+}
+
+message DiceJson
+{
+	int32 step = 1;
+	repeated Dice dice = 2;
+	repeated Dice mulList = 3;
+	repeated Pos mulPosList = 4;
+}
+
+message FortuneWheelJson
+{
+	repeated FortuneWheelInfo result = 1;
+	int32 site = 2;
+}
+
+message GoldenToadJson
+{
+	repeated OrderData orderList = 1;
+	int32 totalRatio = 2;
+	int32 ratio = 3;
+	int32 step = 4;
+}
+
+message OrderData
+{
+	int32 type = 1;
+	int32 ratio = 2;
 }
 
 message CSSyncAnimation

@@ -14,7 +14,7 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Animation_PlaneWar_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<3> scc_info_Animation_PlaneWar_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ArenaPieceInfo_PlaneWar_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_BeeConfig_PlaneWar_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_BeeInfo_PlaneWar_2eproto;
@@ -29,6 +29,7 @@ extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::intern
 extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Dice_PlaneWar_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_DiceConfig_PlaneWar_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_DiceInfo_PlaneWar_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_DiceJson_PlaneWar_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_DropPoker_PlaneWar_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_EarnRecord_PlaneWar_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_EffectInfo_PlaneWar_2eproto;
@@ -38,9 +39,11 @@ extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::intern
 extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_FormInfo_PlaneWar_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_FortuneConfig_PlaneWar_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_FortuneWheelInfo_PlaneWar_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_FortuneWheelJson_PlaneWar_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GiftInfo_PlaneWar_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GlobalReplayConfig_PlaneWar_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GlobalVideoInfo_PlaneWar_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GoldenToadJson_PlaneWar_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GradeRankConfig_PlaneWar_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GradeRankDetail_PlaneWar_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GradeRankInfo_PlaneWar_2eproto;
@@ -65,6 +68,7 @@ extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::intern
 extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_OpenChestReward_PlaneWar_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_OpenRankItem_PlaneWar_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_OpenRecord_PlaneWar_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_OrderData_PlaneWar_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_PackageMarquee_PlaneWar_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_PersonalPoolLevelInfo_PlaneWar_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_PlaneWar_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_PersonalPoolLuckyInfo_PlaneWar_2eproto;
@@ -633,6 +637,10 @@ class CSMonsterCallDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CSMonsterCall> _instance;
 } _CSMonsterCall_default_instance_;
+class SCMonsterCallDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SCMonsterCall> _instance;
+} _SCMonsterCall_default_instance_;
 class CSClickStaticDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CSClickStatic> _instance;
@@ -837,6 +845,10 @@ class CSChangeTableDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CSChangeTable> _instance;
 } _CSChangeTable_default_instance_;
+class SCChangeTableDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SCChangeTable> _instance;
+} _SCChangeTable_default_instance_;
 class CSUseRouletteDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CSUseRoulette> _instance;
@@ -985,6 +997,22 @@ class AnimationDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Animation> _instance;
 } _Animation_default_instance_;
+class DiceJsonDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<DiceJson> _instance;
+} _DiceJson_default_instance_;
+class FortuneWheelJsonDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<FortuneWheelJson> _instance;
+} _FortuneWheelJson_default_instance_;
+class GoldenToadJsonDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GoldenToadJson> _instance;
+} _GoldenToadJson_default_instance_;
+class OrderDataDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<OrderData> _instance;
+} _OrderData_default_instance_;
 class CSSyncAnimationDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<CSSyncAnimation> _instance;
@@ -1300,8 +1328,11 @@ static void InitDefaultsscc_info_Animation_PlaneWar_2eproto() {
   }
 }
 
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Animation_PlaneWar_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_Animation_PlaneWar_2eproto}, {}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<3> scc_info_Animation_PlaneWar_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 3, 0, InitDefaultsscc_info_Animation_PlaneWar_2eproto}, {
+      &scc_info_FortuneWheelJson_PlaneWar_2eproto.base,
+      &scc_info_GoldenToadJson_PlaneWar_2eproto.base,
+      &scc_info_DiceJson_PlaneWar_2eproto.base,}};
 
 static void InitDefaultsscc_info_ArenaPieceInfo_PlaneWar_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -2574,6 +2605,21 @@ static void InitDefaultsscc_info_DiceInfo_PlaneWar_2eproto() {
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_DiceInfo_PlaneWar_2eproto}, {
       &scc_info_Dice_PlaneWar_2eproto.base,}};
 
+static void InitDefaultsscc_info_DiceJson_PlaneWar_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::PlaneWar::_DiceJson_default_instance_;
+    new (ptr) ::PlaneWar::DiceJson();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_DiceJson_PlaneWar_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_DiceJson_PlaneWar_2eproto}, {
+      &scc_info_Dice_PlaneWar_2eproto.base,
+      &scc_info_Pos_PlaneWar_2eproto.base,}};
+
 static void InitDefaultsscc_info_DropBuff_PlaneWar_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -2707,6 +2753,20 @@ static void InitDefaultsscc_info_FortuneWheelInfo_PlaneWar_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_FortuneWheelInfo_PlaneWar_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_FortuneWheelInfo_PlaneWar_2eproto}, {}};
 
+static void InitDefaultsscc_info_FortuneWheelJson_PlaneWar_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::PlaneWar::_FortuneWheelJson_default_instance_;
+    new (ptr) ::PlaneWar::FortuneWheelJson();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_FortuneWheelJson_PlaneWar_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_FortuneWheelJson_PlaneWar_2eproto}, {
+      &scc_info_FortuneWheelInfo_PlaneWar_2eproto.base,}};
+
 static void InitDefaultsscc_info_GiftInfo_PlaneWar_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -2747,6 +2807,20 @@ static void InitDefaultsscc_info_GlobalVideoInfo_PlaneWar_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GlobalVideoInfo_PlaneWar_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_GlobalVideoInfo_PlaneWar_2eproto}, {
       &scc_info_VideoCommon_PlaneWar_2eproto.base,}};
+
+static void InitDefaultsscc_info_GoldenToadJson_PlaneWar_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::PlaneWar::_GoldenToadJson_default_instance_;
+    new (ptr) ::PlaneWar::GoldenToadJson();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GoldenToadJson_PlaneWar_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_GoldenToadJson_PlaneWar_2eproto}, {
+      &scc_info_OrderData_PlaneWar_2eproto.base,}};
 
 static void InitDefaultsscc_info_GradeRankConfig_PlaneWar_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -3068,6 +3142,19 @@ static void InitDefaultsscc_info_OpenRecord_PlaneWar_2eproto() {
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_OpenRecord_PlaneWar_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_OpenRecord_PlaneWar_2eproto}, {}};
+
+static void InitDefaultsscc_info_OrderData_PlaneWar_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::PlaneWar::_OrderData_default_instance_;
+    new (ptr) ::PlaneWar::OrderData();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_OrderData_PlaneWar_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_OrderData_PlaneWar_2eproto}, {}};
 
 static void InitDefaultsscc_info_PackageMarquee_PlaneWar_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -3562,6 +3649,19 @@ static void InitDefaultsscc_info_SCBuyWings_PlaneWar_2eproto() {
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SCBuyWings_PlaneWar_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SCBuyWings_PlaneWar_2eproto}, {}};
+
+static void InitDefaultsscc_info_SCChangeTable_PlaneWar_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::PlaneWar::_SCChangeTable_default_instance_;
+    new (ptr) ::PlaneWar::SCChangeTable();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SCChangeTable_PlaneWar_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SCChangeTable_PlaneWar_2eproto}, {}};
 
 static void InitDefaultsscc_info_SCChestConfig_PlaneWar_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -4065,6 +4165,19 @@ static void InitDefaultsscc_info_SCModRatio_PlaneWar_2eproto() {
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SCModRatio_PlaneWar_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SCModRatio_PlaneWar_2eproto}, {}};
+
+static void InitDefaultsscc_info_SCMonsterCall_PlaneWar_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::PlaneWar::_SCMonsterCall_default_instance_;
+    new (ptr) ::PlaneWar::SCMonsterCall();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SCMonsterCall_PlaneWar_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SCMonsterCall_PlaneWar_2eproto}, {}};
 
 static void InitDefaultsscc_info_SCMonsterDestory_PlaneWar_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -5254,7 +5367,7 @@ static void InitDefaultsscc_info_WingsSpecEffect_PlaneWar_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_WingsSpecEffect_PlaneWar_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_WingsSpecEffect_PlaneWar_2eproto}, {}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_PlaneWar_2eproto[293];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_PlaneWar_2eproto[299];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_PlaneWar_2eproto[8];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_PlaneWar_2eproto = nullptr;
 
@@ -6362,9 +6475,14 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_PlaneWar_2eproto::offsets[] PR
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::PlaneWar::CSMonsterCall, chair_),
-  PROTOBUF_FIELD_OFFSET(::PlaneWar::CSMonsterCall, count_),
-  PROTOBUF_FIELD_OFFSET(::PlaneWar::CSMonsterCall, code_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::PlaneWar::SCMonsterCall, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::PlaneWar::SCMonsterCall, chair_),
+  PROTOBUF_FIELD_OFFSET(::PlaneWar::SCMonsterCall, count_),
+  PROTOBUF_FIELD_OFFSET(::PlaneWar::SCMonsterCall, code_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::PlaneWar::CSClickStatic, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -6752,6 +6870,11 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_PlaneWar_2eproto::offsets[] PR
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::PlaneWar::SCChangeTable, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::PlaneWar::CSUseRoulette, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
@@ -7039,6 +7162,41 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_PlaneWar_2eproto::offsets[] PR
   PROTOBUF_FIELD_OFFSET(::PlaneWar::Animation, originuid_),
   PROTOBUF_FIELD_OFFSET(::PlaneWar::Animation, multiplelist_),
   PROTOBUF_FIELD_OFFSET(::PlaneWar::Animation, ratio_),
+  PROTOBUF_FIELD_OFFSET(::PlaneWar::Animation, fortunejson_),
+  PROTOBUF_FIELD_OFFSET(::PlaneWar::Animation, goldentoadjson_),
+  PROTOBUF_FIELD_OFFSET(::PlaneWar::Animation, dicejson_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::PlaneWar::DiceJson, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::PlaneWar::DiceJson, step_),
+  PROTOBUF_FIELD_OFFSET(::PlaneWar::DiceJson, dice_),
+  PROTOBUF_FIELD_OFFSET(::PlaneWar::DiceJson, mullist_),
+  PROTOBUF_FIELD_OFFSET(::PlaneWar::DiceJson, mulposlist_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::PlaneWar::FortuneWheelJson, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::PlaneWar::FortuneWheelJson, result_),
+  PROTOBUF_FIELD_OFFSET(::PlaneWar::FortuneWheelJson, site_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::PlaneWar::GoldenToadJson, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::PlaneWar::GoldenToadJson, orderlist_),
+  PROTOBUF_FIELD_OFFSET(::PlaneWar::GoldenToadJson, totalratio_),
+  PROTOBUF_FIELD_OFFSET(::PlaneWar::GoldenToadJson, ratio_),
+  PROTOBUF_FIELD_OFFSET(::PlaneWar::GoldenToadJson, step_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::PlaneWar::OrderData, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  PROTOBUF_FIELD_OFFSET(::PlaneWar::OrderData, type_),
+  PROTOBUF_FIELD_OFFSET(::PlaneWar::OrderData, ratio_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::PlaneWar::CSSyncAnimation, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -7739,170 +7897,176 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 1082, -1, sizeof(::PlaneWar::CSUseMissile)},
   { 1088, -1, sizeof(::PlaneWar::SCUseMissile)},
   { 1098, -1, sizeof(::PlaneWar::CSMonsterCall)},
-  { 1106, -1, sizeof(::PlaneWar::CSClickStatic)},
-  { 1112, -1, sizeof(::PlaneWar::SCClickStatic)},
-  { 1117, -1, sizeof(::PlaneWar::RankInfo)},
-  { 1126, -1, sizeof(::PlaneWar::MyRankInfo)},
-  { 1135, -1, sizeof(::PlaneWar::CSRankList)},
-  { 1141, -1, sizeof(::PlaneWar::SCRankList)},
-  { 1150, -1, sizeof(::PlaneWar::TitleInfo)},
-  { 1159, -1, sizeof(::PlaneWar::SCTitleList)},
-  { 1166, -1, sizeof(::PlaneWar::CSSelectTitle)},
-  { 1172, -1, sizeof(::PlaneWar::SCSelectTitle)},
-  { 1179, -1, sizeof(::PlaneWar::SCTitleActiveNotify)},
-  { 1185, -1, sizeof(::PlaneWar::SCRoomInfoChangeNotify)},
-  { 1191, -1, sizeof(::PlaneWar::CSMatchBrief)},
-  { 1196, -1, sizeof(::PlaneWar::SCMatchBrief)},
-  { 1210, -1, sizeof(::PlaneWar::CSMatchDetail)},
-  { 1215, -1, sizeof(::PlaneWar::MatchSubInfo)},
-  { 1224, -1, sizeof(::PlaneWar::MatchRewardItem)},
-  { 1231, -1, sizeof(::PlaneWar::MatchRankInfo)},
-  { 1244, -1, sizeof(::PlaneWar::MatchTask)},
-  { 1252, -1, sizeof(::PlaneWar::SCMatchDetail)},
-  { 1263, -1, sizeof(::PlaneWar::CSMatchReward)},
-  { 1268, -1, sizeof(::PlaneWar::RankReward)},
-  { 1276, -1, sizeof(::PlaneWar::SCMatchReward)},
-  { 1283, -1, sizeof(::PlaneWar::MyMatchReward)},
-  { 1292, -1, sizeof(::PlaneWar::SCMatchRewardNotify)},
-  { 1299, -1, sizeof(::PlaneWar::CSGiftList)},
-  { 1304, -1, sizeof(::PlaneWar::GiftInfo)},
-  { 1314, -1, sizeof(::PlaneWar::SCGiftList)},
-  { 1320, -1, sizeof(::PlaneWar::SCGiftExpireNotify)},
-  { 1327, -1, sizeof(::PlaneWar::CSGetMatchTaskReward)},
-  { 1333, -1, sizeof(::PlaneWar::SCGetMatchTaskReward)},
-  { 1340, -1, sizeof(::PlaneWar::WeaponUseCondition)},
-  { 1346, -1, sizeof(::PlaneWar::WeaponConfig)},
-  { 1354, -1, sizeof(::PlaneWar::CSWeaponPieceInfo)},
-  { 1360, -1, sizeof(::PlaneWar::PiecesStackLimitInfo)},
-  { 1368, -1, sizeof(::PlaneWar::SCWeaponPieceInfo)},
-  { 1378, -1, sizeof(::PlaneWar::CSBuyWeapon)},
-  { 1383, -1, sizeof(::PlaneWar::SCBuyWeapon)},
-  { 1393, -1, sizeof(::PlaneWar::EarnRecord)},
-  { 1405, -1, sizeof(::PlaneWar::CSWeaponEarnRecord)},
-  { 1411, -1, sizeof(::PlaneWar::SCWeaponEarnRecord)},
-  { 1418, -1, sizeof(::PlaneWar::CSStateForceSettle)},
-  { 1424, -1, sizeof(::PlaneWar::SCStateForceSettle)},
-  { 1433, -1, sizeof(::PlaneWar::SCAddMissedBullet)},
-  { 1442, -1, sizeof(::PlaneWar::CSUpdateBulletData)},
-  { 1452, -1, sizeof(::PlaneWar::SCUpdateBulletData)},
-  { 1463, -1, sizeof(::PlaneWar::CSUseMissileBatch)},
-  { 1468, -1, sizeof(::PlaneWar::SCUseMissileBatch)},
-  { 1477, -1, sizeof(::PlaneWar::CSSyncPropsToHall)},
-  { 1482, -1, sizeof(::PlaneWar::SCSyncPropsToHall)},
-  { 1487, -1, sizeof(::PlaneWar::CSChangeTable)},
-  { 1492, -1, sizeof(::PlaneWar::CSUseRoulette)},
-  { 1498, -1, sizeof(::PlaneWar::SCUseRoulette)},
-  { 1510, -1, sizeof(::PlaneWar::CSRedEnvelopePoint)},
-  { 1515, -1, sizeof(::PlaneWar::RedOpenInfo)},
-  { 1522, -1, sizeof(::PlaneWar::SCRedEnvelopePoint)},
-  { 1531, -1, sizeof(::PlaneWar::CSRedEnvelopeInfo)},
-  { 1537, -1, sizeof(::PlaneWar::RedInfo)},
-  { 1543, -1, sizeof(::PlaneWar::SCRedEnvelopeInfo)},
-  { 1549, -1, sizeof(::PlaneWar::CSOpenRedEnvelope)},
-  { 1555, -1, sizeof(::PlaneWar::RedUpgradeInfo)},
-  { 1564, -1, sizeof(::PlaneWar::SCOpenRedEnvelope)},
-  { 1572, -1, sizeof(::PlaneWar::CSUpgradeRedEnvelope)},
-  { 1578, -1, sizeof(::PlaneWar::SCUpgradeRedEnvelope)},
-  { 1588, -1, sizeof(::PlaneWar::CSCommonRedEnvelopeInfo)},
-  { 1594, -1, sizeof(::PlaneWar::CommonRedInfo)},
-  { 1606, -1, sizeof(::PlaneWar::SCCommonRedEnvelopeInfo)},
-  { 1616, -1, sizeof(::PlaneWar::CSOpenCommonRedEnvelope)},
-  { 1622, -1, sizeof(::PlaneWar::SCOpenCommonRedEnvelope)},
-  { 1631, -1, sizeof(::PlaneWar::RedRankPlayerInfo)},
-  { 1640, -1, sizeof(::PlaneWar::CSGrantCommonRedEnvelopeRank)},
-  { 1647, -1, sizeof(::PlaneWar::GrantRankItem)},
-  { 1656, -1, sizeof(::PlaneWar::SCGrantCommonRedEnvelopeRank)},
-  { 1663, -1, sizeof(::PlaneWar::CSOpenCommonRedEnvelopeRank)},
-  { 1670, -1, sizeof(::PlaneWar::OpenRankItem)},
-  { 1679, -1, sizeof(::PlaneWar::SCOpenCommonRedEnvelopeRank)},
-  { 1686, -1, sizeof(::PlaneWar::CSGrantCommonRedEnvelopeRecord)},
-  { 1691, -1, sizeof(::PlaneWar::GrantRecord)},
-  { 1701, -1, sizeof(::PlaneWar::SCGrantCommonRedEnvelopeRecord)},
-  { 1707, -1, sizeof(::PlaneWar::CSOpenCommonRedEnvelopeRecord)},
-  { 1712, -1, sizeof(::PlaneWar::OpenRecord)},
-  { 1720, -1, sizeof(::PlaneWar::SCOpenCommonRedEnvelopeRecord)},
-  { 1727, -1, sizeof(::PlaneWar::SCRedEnvelopeOpStatusNotify)},
-  { 1737, -1, sizeof(::PlaneWar::CSSyncWeaponState)},
-  { 1746, -1, sizeof(::PlaneWar::SCSyncWeaponState)},
-  { 1751, -1, sizeof(::PlaneWar::CSPreHit)},
-  { 1759, -1, sizeof(::PlaneWar::SCPreHit)},
-  { 1766, -1, sizeof(::PlaneWar::Animation)},
-  { 1780, -1, sizeof(::PlaneWar::CSSyncAnimation)},
-  { 1787, -1, sizeof(::PlaneWar::SCSyncAnimation)},
-  { 1794, -1, sizeof(::PlaneWar::SCGetAnimations)},
-  { 1800, -1, sizeof(::PlaneWar::GradeRankDetail)},
-  { 1807, -1, sizeof(::PlaneWar::GradeRankConfig)},
-  { 1814, -1, sizeof(::PlaneWar::WareGivingInfo)},
-  { 1823, -1, sizeof(::PlaneWar::WareInfo)},
-  { 1834, -1, sizeof(::PlaneWar::ExtraGradeRewardInfo)},
-  { 1842, -1, sizeof(::PlaneWar::RankWareConfig)},
-  { 1852, -1, sizeof(::PlaneWar::DiceConfig)},
-  { 1859, -1, sizeof(::PlaneWar::CSSyncConfigs)},
-  { 1864, -1, sizeof(::PlaneWar::SCSyncConfigs)},
-  { 1875, -1, sizeof(::PlaneWar::CSConfirmWeaponExist)},
-  { 1881, -1, sizeof(::PlaneWar::SCConfirmWeaponExist)},
-  { 1887, -1, sizeof(::PlaneWar::CSGetVideo)},
-  { 1894, -1, sizeof(::PlaneWar::SCGetVideo)},
-  { 1909, -1, sizeof(::PlaneWar::VideoCommon)},
-  { 1921, -1, sizeof(::PlaneWar::GlobalVideoInfo)},
-  { 1929, -1, sizeof(::PlaneWar::SelfVideoInfo)},
-  { 1936, -1, sizeof(::PlaneWar::CSSelfVideoRecord)},
-  { 1943, -1, sizeof(::PlaneWar::SCSelfVideoRecord)},
-  { 1950, -1, sizeof(::PlaneWar::CSVideoRank)},
-  { 1957, -1, sizeof(::PlaneWar::SCVideoRank)},
-  { 1964, -1, sizeof(::PlaneWar::ReceiveReward)},
-  { 1981, -1, sizeof(::PlaneWar::CSReceiveGradeReward)},
-  { 1986, -1, sizeof(::PlaneWar::SCReceiveGradeReward)},
-  { 1994, -1, sizeof(::PlaneWar::GradeRewardDetail)},
-  { 2002, -1, sizeof(::PlaneWar::GradeRewardInfo)},
-  { 2011, -1, sizeof(::PlaneWar::GradeRankInfo)},
-  { 2029, -1, sizeof(::PlaneWar::CSGetTableUserInfo)},
-  { 2035, -1, sizeof(::PlaneWar::SCGetTableUserInfo)},
-  { 2042, -1, sizeof(::PlaneWar::CSGetGradeRewardInfo)},
-  { 2049, -1, sizeof(::PlaneWar::SCGetGradeRewardInfo)},
-  { 2055, -1, sizeof(::PlaneWar::CSGetGradeRankInfo)},
-  { 2060, -1, sizeof(::PlaneWar::SCGetGradeRankInfo)},
-  { 2066, -1, sizeof(::PlaneWar::SCRankUpgrade)},
-  { 2074, -1, sizeof(::PlaneWar::CSRankSeasonStatus)},
-  { 2079, -1, sizeof(::PlaneWar::SCRankSeasonStatus)},
-  { 2089, -1, sizeof(::PlaneWar::SCSyncTime)},
-  { 2095, -1, sizeof(::PlaneWar::SCNoticePropsOverdue)},
-  { 2101, -1, sizeof(::PlaneWar::PurchaseResult)},
-  { 2108, -1, sizeof(::PlaneWar::CSQueryPackagePurchase)},
-  { 2114, -1, sizeof(::PlaneWar::SCQueryPackagePurchase)},
-  { 2120, -1, sizeof(::PlaneWar::PropsInfo)},
-  { 2127, -1, sizeof(::PlaneWar::SCGamePurchasePush)},
-  { 2133, -1, sizeof(::PlaneWar::PackageMarquee)},
-  { 2141, -1, sizeof(::PlaneWar::CSQueryPackageMarquee)},
-  { 2146, -1, sizeof(::PlaneWar::SCQueryPackageMarquee)},
-  { 2153, -1, sizeof(::PlaneWar::CSSetWings)},
-  { 2159, -1, sizeof(::PlaneWar::SCSetWings)},
-  { 2166, -1, sizeof(::PlaneWar::CSVerifySeasonChange)},
-  { 2171, -1, sizeof(::PlaneWar::SCVerifySeasonChange)},
-  { 2181, -1, sizeof(::PlaneWar::CSExistUnReceiveRankReward)},
-  { 2186, -1, sizeof(::PlaneWar::SCExistUnReceiveRankReward)},
-  { 2192, -1, sizeof(::PlaneWar::CSReceiveExtraGradeReward)},
-  { 2198, -1, sizeof(::PlaneWar::SCReceiveExtraGradeReward)},
-  { 2205, -1, sizeof(::PlaneWar::CSGetGradeRankList)},
-  { 2213, -1, sizeof(::PlaneWar::SCGetGradeRankList)},
-  { 2221, -1, sizeof(::PlaneWar::CSBuyPlane)},
-  { 2227, -1, sizeof(::PlaneWar::SCBuyPlane)},
-  { 2233, -1, sizeof(::PlaneWar::CSBuyWings)},
-  { 2239, -1, sizeof(::PlaneWar::SCBuyWings)},
-  { 2245, -1, sizeof(::PlaneWar::OpenChestReward)},
-  { 2252, -1, sizeof(::PlaneWar::SCUpdateChestStatus)},
-  { 2263, -1, sizeof(::PlaneWar::ChestBrief)},
-  { 2270, -1, sizeof(::PlaneWar::SCChestConfig)},
-  { 2281, -1, sizeof(::PlaneWar::SCOpenChest)},
-  { 2288, -1, sizeof(::PlaneWar::CSSelectChestReward)},
-  { 2295, -1, sizeof(::PlaneWar::CSChestSetAutoSelect)},
-  { 2302, -1, sizeof(::PlaneWar::SCChestSetAutoSelect)},
-  { 2309, -1, sizeof(::PlaneWar::CSChestSetEnable)},
-  { 2315, -1, sizeof(::PlaneWar::SCChestSetEnable)},
-  { 2321, -1, sizeof(::PlaneWar::SCWaterDropInfo)},
-  { 2329, -1, sizeof(::PlaneWar::TextInfo)},
-  { 2336, -1, sizeof(::PlaneWar::CSSyncTextConfig)},
-  { 2343, -1, sizeof(::PlaneWar::SCSyncTextConfig)},
+  { 1103, -1, sizeof(::PlaneWar::SCMonsterCall)},
+  { 1111, -1, sizeof(::PlaneWar::CSClickStatic)},
+  { 1117, -1, sizeof(::PlaneWar::SCClickStatic)},
+  { 1122, -1, sizeof(::PlaneWar::RankInfo)},
+  { 1131, -1, sizeof(::PlaneWar::MyRankInfo)},
+  { 1140, -1, sizeof(::PlaneWar::CSRankList)},
+  { 1146, -1, sizeof(::PlaneWar::SCRankList)},
+  { 1155, -1, sizeof(::PlaneWar::TitleInfo)},
+  { 1164, -1, sizeof(::PlaneWar::SCTitleList)},
+  { 1171, -1, sizeof(::PlaneWar::CSSelectTitle)},
+  { 1177, -1, sizeof(::PlaneWar::SCSelectTitle)},
+  { 1184, -1, sizeof(::PlaneWar::SCTitleActiveNotify)},
+  { 1190, -1, sizeof(::PlaneWar::SCRoomInfoChangeNotify)},
+  { 1196, -1, sizeof(::PlaneWar::CSMatchBrief)},
+  { 1201, -1, sizeof(::PlaneWar::SCMatchBrief)},
+  { 1215, -1, sizeof(::PlaneWar::CSMatchDetail)},
+  { 1220, -1, sizeof(::PlaneWar::MatchSubInfo)},
+  { 1229, -1, sizeof(::PlaneWar::MatchRewardItem)},
+  { 1236, -1, sizeof(::PlaneWar::MatchRankInfo)},
+  { 1249, -1, sizeof(::PlaneWar::MatchTask)},
+  { 1257, -1, sizeof(::PlaneWar::SCMatchDetail)},
+  { 1268, -1, sizeof(::PlaneWar::CSMatchReward)},
+  { 1273, -1, sizeof(::PlaneWar::RankReward)},
+  { 1281, -1, sizeof(::PlaneWar::SCMatchReward)},
+  { 1288, -1, sizeof(::PlaneWar::MyMatchReward)},
+  { 1297, -1, sizeof(::PlaneWar::SCMatchRewardNotify)},
+  { 1304, -1, sizeof(::PlaneWar::CSGiftList)},
+  { 1309, -1, sizeof(::PlaneWar::GiftInfo)},
+  { 1319, -1, sizeof(::PlaneWar::SCGiftList)},
+  { 1325, -1, sizeof(::PlaneWar::SCGiftExpireNotify)},
+  { 1332, -1, sizeof(::PlaneWar::CSGetMatchTaskReward)},
+  { 1338, -1, sizeof(::PlaneWar::SCGetMatchTaskReward)},
+  { 1345, -1, sizeof(::PlaneWar::WeaponUseCondition)},
+  { 1351, -1, sizeof(::PlaneWar::WeaponConfig)},
+  { 1359, -1, sizeof(::PlaneWar::CSWeaponPieceInfo)},
+  { 1365, -1, sizeof(::PlaneWar::PiecesStackLimitInfo)},
+  { 1373, -1, sizeof(::PlaneWar::SCWeaponPieceInfo)},
+  { 1383, -1, sizeof(::PlaneWar::CSBuyWeapon)},
+  { 1388, -1, sizeof(::PlaneWar::SCBuyWeapon)},
+  { 1398, -1, sizeof(::PlaneWar::EarnRecord)},
+  { 1410, -1, sizeof(::PlaneWar::CSWeaponEarnRecord)},
+  { 1416, -1, sizeof(::PlaneWar::SCWeaponEarnRecord)},
+  { 1423, -1, sizeof(::PlaneWar::CSStateForceSettle)},
+  { 1429, -1, sizeof(::PlaneWar::SCStateForceSettle)},
+  { 1438, -1, sizeof(::PlaneWar::SCAddMissedBullet)},
+  { 1447, -1, sizeof(::PlaneWar::CSUpdateBulletData)},
+  { 1457, -1, sizeof(::PlaneWar::SCUpdateBulletData)},
+  { 1468, -1, sizeof(::PlaneWar::CSUseMissileBatch)},
+  { 1473, -1, sizeof(::PlaneWar::SCUseMissileBatch)},
+  { 1482, -1, sizeof(::PlaneWar::CSSyncPropsToHall)},
+  { 1487, -1, sizeof(::PlaneWar::SCSyncPropsToHall)},
+  { 1492, -1, sizeof(::PlaneWar::CSChangeTable)},
+  { 1497, -1, sizeof(::PlaneWar::SCChangeTable)},
+  { 1502, -1, sizeof(::PlaneWar::CSUseRoulette)},
+  { 1508, -1, sizeof(::PlaneWar::SCUseRoulette)},
+  { 1520, -1, sizeof(::PlaneWar::CSRedEnvelopePoint)},
+  { 1525, -1, sizeof(::PlaneWar::RedOpenInfo)},
+  { 1532, -1, sizeof(::PlaneWar::SCRedEnvelopePoint)},
+  { 1541, -1, sizeof(::PlaneWar::CSRedEnvelopeInfo)},
+  { 1547, -1, sizeof(::PlaneWar::RedInfo)},
+  { 1553, -1, sizeof(::PlaneWar::SCRedEnvelopeInfo)},
+  { 1559, -1, sizeof(::PlaneWar::CSOpenRedEnvelope)},
+  { 1565, -1, sizeof(::PlaneWar::RedUpgradeInfo)},
+  { 1574, -1, sizeof(::PlaneWar::SCOpenRedEnvelope)},
+  { 1582, -1, sizeof(::PlaneWar::CSUpgradeRedEnvelope)},
+  { 1588, -1, sizeof(::PlaneWar::SCUpgradeRedEnvelope)},
+  { 1598, -1, sizeof(::PlaneWar::CSCommonRedEnvelopeInfo)},
+  { 1604, -1, sizeof(::PlaneWar::CommonRedInfo)},
+  { 1616, -1, sizeof(::PlaneWar::SCCommonRedEnvelopeInfo)},
+  { 1626, -1, sizeof(::PlaneWar::CSOpenCommonRedEnvelope)},
+  { 1632, -1, sizeof(::PlaneWar::SCOpenCommonRedEnvelope)},
+  { 1641, -1, sizeof(::PlaneWar::RedRankPlayerInfo)},
+  { 1650, -1, sizeof(::PlaneWar::CSGrantCommonRedEnvelopeRank)},
+  { 1657, -1, sizeof(::PlaneWar::GrantRankItem)},
+  { 1666, -1, sizeof(::PlaneWar::SCGrantCommonRedEnvelopeRank)},
+  { 1673, -1, sizeof(::PlaneWar::CSOpenCommonRedEnvelopeRank)},
+  { 1680, -1, sizeof(::PlaneWar::OpenRankItem)},
+  { 1689, -1, sizeof(::PlaneWar::SCOpenCommonRedEnvelopeRank)},
+  { 1696, -1, sizeof(::PlaneWar::CSGrantCommonRedEnvelopeRecord)},
+  { 1701, -1, sizeof(::PlaneWar::GrantRecord)},
+  { 1711, -1, sizeof(::PlaneWar::SCGrantCommonRedEnvelopeRecord)},
+  { 1717, -1, sizeof(::PlaneWar::CSOpenCommonRedEnvelopeRecord)},
+  { 1722, -1, sizeof(::PlaneWar::OpenRecord)},
+  { 1730, -1, sizeof(::PlaneWar::SCOpenCommonRedEnvelopeRecord)},
+  { 1737, -1, sizeof(::PlaneWar::SCRedEnvelopeOpStatusNotify)},
+  { 1747, -1, sizeof(::PlaneWar::CSSyncWeaponState)},
+  { 1756, -1, sizeof(::PlaneWar::SCSyncWeaponState)},
+  { 1761, -1, sizeof(::PlaneWar::CSPreHit)},
+  { 1769, -1, sizeof(::PlaneWar::SCPreHit)},
+  { 1776, -1, sizeof(::PlaneWar::Animation)},
+  { 1793, -1, sizeof(::PlaneWar::DiceJson)},
+  { 1802, -1, sizeof(::PlaneWar::FortuneWheelJson)},
+  { 1809, -1, sizeof(::PlaneWar::GoldenToadJson)},
+  { 1818, -1, sizeof(::PlaneWar::OrderData)},
+  { 1825, -1, sizeof(::PlaneWar::CSSyncAnimation)},
+  { 1832, -1, sizeof(::PlaneWar::SCSyncAnimation)},
+  { 1839, -1, sizeof(::PlaneWar::SCGetAnimations)},
+  { 1845, -1, sizeof(::PlaneWar::GradeRankDetail)},
+  { 1852, -1, sizeof(::PlaneWar::GradeRankConfig)},
+  { 1859, -1, sizeof(::PlaneWar::WareGivingInfo)},
+  { 1868, -1, sizeof(::PlaneWar::WareInfo)},
+  { 1879, -1, sizeof(::PlaneWar::ExtraGradeRewardInfo)},
+  { 1887, -1, sizeof(::PlaneWar::RankWareConfig)},
+  { 1897, -1, sizeof(::PlaneWar::DiceConfig)},
+  { 1904, -1, sizeof(::PlaneWar::CSSyncConfigs)},
+  { 1909, -1, sizeof(::PlaneWar::SCSyncConfigs)},
+  { 1920, -1, sizeof(::PlaneWar::CSConfirmWeaponExist)},
+  { 1926, -1, sizeof(::PlaneWar::SCConfirmWeaponExist)},
+  { 1932, -1, sizeof(::PlaneWar::CSGetVideo)},
+  { 1939, -1, sizeof(::PlaneWar::SCGetVideo)},
+  { 1954, -1, sizeof(::PlaneWar::VideoCommon)},
+  { 1966, -1, sizeof(::PlaneWar::GlobalVideoInfo)},
+  { 1974, -1, sizeof(::PlaneWar::SelfVideoInfo)},
+  { 1981, -1, sizeof(::PlaneWar::CSSelfVideoRecord)},
+  { 1988, -1, sizeof(::PlaneWar::SCSelfVideoRecord)},
+  { 1995, -1, sizeof(::PlaneWar::CSVideoRank)},
+  { 2002, -1, sizeof(::PlaneWar::SCVideoRank)},
+  { 2009, -1, sizeof(::PlaneWar::ReceiveReward)},
+  { 2026, -1, sizeof(::PlaneWar::CSReceiveGradeReward)},
+  { 2031, -1, sizeof(::PlaneWar::SCReceiveGradeReward)},
+  { 2039, -1, sizeof(::PlaneWar::GradeRewardDetail)},
+  { 2047, -1, sizeof(::PlaneWar::GradeRewardInfo)},
+  { 2056, -1, sizeof(::PlaneWar::GradeRankInfo)},
+  { 2074, -1, sizeof(::PlaneWar::CSGetTableUserInfo)},
+  { 2080, -1, sizeof(::PlaneWar::SCGetTableUserInfo)},
+  { 2087, -1, sizeof(::PlaneWar::CSGetGradeRewardInfo)},
+  { 2094, -1, sizeof(::PlaneWar::SCGetGradeRewardInfo)},
+  { 2100, -1, sizeof(::PlaneWar::CSGetGradeRankInfo)},
+  { 2105, -1, sizeof(::PlaneWar::SCGetGradeRankInfo)},
+  { 2111, -1, sizeof(::PlaneWar::SCRankUpgrade)},
+  { 2119, -1, sizeof(::PlaneWar::CSRankSeasonStatus)},
+  { 2124, -1, sizeof(::PlaneWar::SCRankSeasonStatus)},
+  { 2134, -1, sizeof(::PlaneWar::SCSyncTime)},
+  { 2140, -1, sizeof(::PlaneWar::SCNoticePropsOverdue)},
+  { 2146, -1, sizeof(::PlaneWar::PurchaseResult)},
+  { 2153, -1, sizeof(::PlaneWar::CSQueryPackagePurchase)},
+  { 2159, -1, sizeof(::PlaneWar::SCQueryPackagePurchase)},
+  { 2165, -1, sizeof(::PlaneWar::PropsInfo)},
+  { 2172, -1, sizeof(::PlaneWar::SCGamePurchasePush)},
+  { 2178, -1, sizeof(::PlaneWar::PackageMarquee)},
+  { 2186, -1, sizeof(::PlaneWar::CSQueryPackageMarquee)},
+  { 2191, -1, sizeof(::PlaneWar::SCQueryPackageMarquee)},
+  { 2198, -1, sizeof(::PlaneWar::CSSetWings)},
+  { 2204, -1, sizeof(::PlaneWar::SCSetWings)},
+  { 2211, -1, sizeof(::PlaneWar::CSVerifySeasonChange)},
+  { 2216, -1, sizeof(::PlaneWar::SCVerifySeasonChange)},
+  { 2226, -1, sizeof(::PlaneWar::CSExistUnReceiveRankReward)},
+  { 2231, -1, sizeof(::PlaneWar::SCExistUnReceiveRankReward)},
+  { 2237, -1, sizeof(::PlaneWar::CSReceiveExtraGradeReward)},
+  { 2243, -1, sizeof(::PlaneWar::SCReceiveExtraGradeReward)},
+  { 2250, -1, sizeof(::PlaneWar::CSGetGradeRankList)},
+  { 2258, -1, sizeof(::PlaneWar::SCGetGradeRankList)},
+  { 2266, -1, sizeof(::PlaneWar::CSBuyPlane)},
+  { 2272, -1, sizeof(::PlaneWar::SCBuyPlane)},
+  { 2278, -1, sizeof(::PlaneWar::CSBuyWings)},
+  { 2284, -1, sizeof(::PlaneWar::SCBuyWings)},
+  { 2290, -1, sizeof(::PlaneWar::OpenChestReward)},
+  { 2297, -1, sizeof(::PlaneWar::SCUpdateChestStatus)},
+  { 2308, -1, sizeof(::PlaneWar::ChestBrief)},
+  { 2315, -1, sizeof(::PlaneWar::SCChestConfig)},
+  { 2326, -1, sizeof(::PlaneWar::SCOpenChest)},
+  { 2333, -1, sizeof(::PlaneWar::CSSelectChestReward)},
+  { 2340, -1, sizeof(::PlaneWar::CSChestSetAutoSelect)},
+  { 2347, -1, sizeof(::PlaneWar::SCChestSetAutoSelect)},
+  { 2354, -1, sizeof(::PlaneWar::CSChestSetEnable)},
+  { 2360, -1, sizeof(::PlaneWar::SCChestSetEnable)},
+  { 2366, -1, sizeof(::PlaneWar::SCWaterDropInfo)},
+  { 2374, -1, sizeof(::PlaneWar::TextInfo)},
+  { 2381, -1, sizeof(::PlaneWar::CSSyncTextConfig)},
+  { 2388, -1, sizeof(::PlaneWar::SCSyncTextConfig)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -8035,6 +8199,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::PlaneWar::_CSUseMissile_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::PlaneWar::_SCUseMissile_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::PlaneWar::_CSMonsterCall_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::PlaneWar::_SCMonsterCall_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::PlaneWar::_CSClickStatic_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::PlaneWar::_SCClickStatic_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::PlaneWar::_RankInfo_default_instance_),
@@ -8086,6 +8251,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::PlaneWar::_CSSyncPropsToHall_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::PlaneWar::_SCSyncPropsToHall_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::PlaneWar::_CSChangeTable_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::PlaneWar::_SCChangeTable_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::PlaneWar::_CSUseRoulette_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::PlaneWar::_SCUseRoulette_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::PlaneWar::_CSRedEnvelopePoint_default_instance_),
@@ -8123,6 +8289,10 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::PlaneWar::_CSPreHit_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::PlaneWar::_SCPreHit_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::PlaneWar::_Animation_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::PlaneWar::_DiceJson_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::PlaneWar::_FortuneWheelJson_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::PlaneWar::_GoldenToadJson_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::PlaneWar::_OrderData_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::PlaneWar::_CSSyncAnimation_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::PlaneWar::_SCSyncAnimation_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::PlaneWar::_SCGetAnimations_default_instance_),
@@ -8508,466 +8678,479 @@ const char descriptor_table_protodef_PlaneWar_2eproto[] PROTOBUF_SECTION_VARIABL
   "\030\005 \001(\005\"\032\n\014CSUseMissile\022\n\n\002id\030\001 \001(\005\"^\n\014SC"
   "UseMissile\022\r\n\005chair\030\001 \001(\005\022\n\n\002id\030\002 \001(\005\022\016\n"
   "\006reward\030\003 \001(\005\022\021\n\tremainNum\030\004 \001(\005\022\020\n\010curM"
-  "oney\030\005 \001(\003\";\n\rCSMonsterCall\022\r\n\005chair\030\001 \001"
-  "(\005\022\r\n\005count\030\002 \001(\005\022\014\n\004code\030\003 \001(\005\"\035\n\rCSCli"
-  "ckStatic\022\014\n\004type\030\001 \001(\005\"\017\n\rSCClickStatic\""
-  "G\n\010RankInfo\022\020\n\010playerId\030\001 \001(\005\022\r\n\005point\030\002"
-  " \001(\005\022\014\n\004nick\030\003 \001(\t\022\014\n\004icon\030\004 \001(\t\"E\n\nMyRa"
-  "nkInfo\022\014\n\004rank\030\001 \001(\005\022\r\n\005point\030\002 \001(\005\022\014\n\004n"
-  "ick\030\003 \001(\t\022\014\n\004icon\030\004 \001(\t\"\032\n\nCSRankList\022\014\n"
-  "\004type\030\001 \001(\005\"\207\001\n\nSCRankList\022\014\n\004type\030\001 \001(\005"
-  "\022 \n\004rank\030\002 \001(\0132\022.PlaneWar.RankInfo\022$\n\006my"
-  "Rank\030\003 \001(\0132\024.PlaneWar.MyRankInfo\022#\n\007last"
-  "Top\030\004 \001(\0132\022.PlaneWar.RankInfo\"F\n\tTitleIn"
-  "fo\022\n\n\002id\030\001 \001(\005\022\016\n\006status\030\002 \001(\005\022\014\n\004name\030\003"
-  " \001(\t\022\017\n\007endTime\030\004 \001(\005\"N\n\013SCTitleList\022&\n\t"
-  "titleList\030\001 \003(\0132\023.PlaneWar.TitleInfo\022\027\n\017"
-  "selectedTitleId\030\002 \001(\005\"\033\n\rCSSelectTitle\022\n"
-  "\n\002id\030\001 \001(\005\"*\n\rSCSelectTitle\022\n\n\002id\030\001 \001(\005\022"
-  "\r\n\005chair\030\002 \001(\005\"!\n\023SCTitleActiveNotify\022\n\n"
-  "\002id\030\001 \001(\005\">\n\026SCRoomInfoChangeNotify\022$\n\010r"
-  "oomInfo\030\001 \001(\0132\022.PlaneWar.RoomInfo\"\016\n\014CSM"
-  "atchBrief\"\264\001\n\014SCMatchBrief\022\016\n\006status\030\001 \001"
-  "(\005\022\021\n\tmatchType\030\002 \001(\005\022\021\n\tmatchName\030\003 \001(\t"
-  "\022\021\n\tcountDown\030\004 \001(\005\022\020\n\010totalNum\030\005 \001(\005\022\021\n"
-  "\trewardNum\030\006 \001(\005\022\016\n\006myRank\030\007 \001(\005\022\017\n\007myPo"
-  "int\030\010 \001(\005\022\025\n\rnextRankPoint\030\t \001(\005\"\017\n\rCSMa"
-  "tchDetail\"X\n\014MatchSubInfo\022\017\n\007inMatch\030\001 \001"
-  "(\010\022\024\n\014subMatchName\030\002 \001(\t\022\017\n\007jackpot\030\003 \001("
-  "\005\022\020\n\010totalNum\030\004 \001(\005\"*\n\017MatchRewardItem\022\n"
-  "\n\002id\030\001 \001(\005\022\013\n\003num\030\002 \001(\005\"\261\001\n\rMatchRankInf"
-  "o\022\020\n\010playerId\030\001 \001(\005\022\r\n\005point\030\002 \001(\005\022\014\n\004ni"
-  "ck\030\003 \001(\t\022\014\n\004icon\030\004 \001(\t\022\014\n\004rank\030\005 \001(\005\022\022\n\n"
-  "pointBonus\030\006 \001(\005\022\022\n\nmoneyBonus\030\007 \001(\005\022-\n\n"
-  "rewardList\030\010 \001(\0132\031.PlaneWar.MatchRewardI"
-  "tem\";\n\tMatchTask\022\016\n\006status\030\001 \001(\005\022\016\n\006targ"
-  "et\030\002 \001(\005\022\016\n\006reward\030\003 \001(\005\"\334\001\n\rSCMatchDeta"
-  "il\022+\n\013subInfoList\030\001 \003(\0132\026.PlaneWar.Match"
-  "SubInfo\022)\n\010rankList\030\002 \003(\0132\027.PlaneWar.Mat"
-  "chRankInfo\022\'\n\006myRank\030\003 \001(\0132\027.PlaneWar.Ma"
-  "tchRankInfo\022\017\n\007tipList\030\004 \003(\005\022\022\n\nluckySta"
-  "ge\030\005 \003(\005\022%\n\010taskList\030\006 \003(\0132\023.PlaneWar.Ma"
-  "tchTask\"\017\n\rCSMatchReward\"U\n\nRankReward\022\014"
-  "\n\004from\030\001 \001(\005\022\n\n\002to\030\002 \001(\005\022-\n\nrewardList\030\003"
-  " \001(\0132\031.PlaneWar.MatchRewardItem\"R\n\rSCMat"
-  "chReward\022,\n\016rankRewardList\030\001 \003(\0132\024.Plane"
-  "War.RankReward\022\023\n\013luckyReward\030\002 \003(\005\"n\n\rM"
-  "yMatchReward\022\014\n\004rank\030\001 \001(\005\022+\n\010myReward\030\002"
-  " \003(\0132\031.PlaneWar.MatchRewardItem\022\r\n\005bonus"
-  "\030\003 \001(\005\022\023\n\013luckyReward\030\004 \001(\005\"m\n\023SCMatchRe"
-  "wardNotify\022+\n\nrewardList\030\001 \001(\0132\027.PlaneWa"
-  "r.MatchRankInfo\022)\n\010myReward\030\002 \001(\0132\027.Plan"
-  "eWar.MyMatchReward\"\014\n\nCSGiftList\"d\n\010Gift"
-  "Info\022\n\n\002id\030\001 \001(\005\022\022\n\npointBonus\030\002 \001(\005\022\022\n\n"
-  "moneyBonus\030\003 \001(\005\022\016\n\006canBuy\030\004 \001(\010\022\024\n\014buyC"
-  "ountDown\030\005 \001(\005\"2\n\nSCGiftList\022$\n\010giftList"
-  "\030\001 \003(\0132\022.PlaneWar.GiftInfo\"1\n\022SCGiftExpi"
-  "reNotify\022\016\n\006giftID\030\001 \001(\005\022\013\n\003msg\030\002 \001(\t\"%\n"
-  "\024CSGetMatchTaskReward\022\r\n\005index\030\001 \001(\005\"5\n\024"
-  "SCGetMatchTaskReward\022\r\n\005index\030\001 \001(\005\022\016\n\006r"
-  "eward\030\002 \001(\005\"&\n\022WeaponUseCondition\022\020\n\010vip"
-  "Level\030\001 \001(\005\"_\n\014WeaponConfig\022\020\n\010weaponID\030"
-  "\001 \001(\005\022\014\n\004name\030\002 \001(\t\022/\n\tcondition\030\003 \001(\0132\034"
-  ".PlaneWar.WeaponUseCondition\"\'\n\021CSWeapon"
-  "PieceInfo\022\022\n\nisBrowsing\030\001 \001(\010\"R\n\024PiecesS"
-  "tackLimitInfo\022\024\n\014fromVipLevel\030\001 \001(\005\022\022\n\nt"
-  "oVipLevel\030\002 \001(\005\022\020\n\010stackNum\030\003 \001(\005\"\302\001\n\021SC"
-  "WeaponPieceInfo\022\022\n\nisBrowsing\030\001 \001(\010\022\r\n\005c"
-  "hair\030\002 \001(\005\022&\n\tpieceInfo\030\003 \001(\0132\023.PlaneWar"
-  ".PieceInfo\022*\n\nconfigList\030\004 \003(\0132\026.PlaneWa"
-  "r.WeaponConfig\0226\n\016stackLimitList\030\005 \003(\0132\036"
-  ".PlaneWar.PiecesStackLimitInfo\"\r\n\013CSBuyW"
-  "eapon\"\261\001\n\013SCBuyWeapon\022\r\n\005chair\030\001 \001(\005\022\020\n\010"
-  "weaponID\030\002 \001(\005\022(\n\nweaponInfo\030\003 \001(\0132\024.Pla"
-  "neWar.WeaponInfo\022&\n\tpieceInfo\030\004 \001(\0132\023.Pl"
-  "aneWar.PieceInfo\022/\n\tcondition\030\005 \001(\0132\034.Pl"
-  "aneWar.WeaponUseCondition\"|\n\nEarnRecord\022"
-  "\020\n\010playerID\030\001 \001(\005\022\014\n\004nick\030\002 \001(\t\022\014\n\004icon\030"
-  "\003 \001(\t\022\020\n\010vipLevel\030\004 \001(\005\022\022\n\nweaponName\030\005 "
-  "\001(\t\022\014\n\004time\030\006 \001(\005\022\014\n\004earn\030\007 \001(\005\"\"\n\022CSWea"
-  "ponEarnRecord\022\014\n\004page\030\001 \001(\005\"L\n\022SCWeaponE"
-  "arnRecord\022(\n\nrecordList\030\001 \003(\0132\024.PlaneWar"
-  ".EarnRecord\022\014\n\004page\030\002 \001(\005\"\'\n\022CSStateForc"
-  "eSettle\022\021\n\tsourceUID\030\001 \001(\005\"Y\n\022SCStateFor"
-  "ceSettle\022\r\n\005chair\030\001 \001(\005\022\021\n\tsourceUID\030\002 \001"
-  "(\005\022\021\n\toriginUID\030\003 \001(\005\022\016\n\006remain\030\004 \001(\005\"Y\n"
-  "\021SCAddMissedBullet\022\r\n\005chair\030\001 \001(\005\022\022\n\nbul"
-  "letType\030\002 \001(\005\022\021\n\tsourceUID\030\003 \001(\005\022\016\n\006addN"
-  "um\030\004 \001(\005\"n\n\022CSUpdateBulletData\022\r\n\005angle\030"
-  "\001 \001(\002\022\022\n\nbulletType\030\002 \001(\005\022\021\n\tsourceUID\030\003"
-  " \001(\005\022\016\n\006confID\030\004 \001(\005\022\022\n\nisShooting\030\005 \001(\010"
-  "\"}\n\022SCUpdateBulletData\022\r\n\005chair\030\001 \001(\005\022\r\n"
-  "\005angle\030\002 \001(\002\022\022\n\nbulletType\030\003 \001(\005\022\021\n\tsour"
-  "ceUID\030\004 \001(\005\022\016\n\006confID\030\005 \001(\005\022\022\n\nisShootin"
-  "g\030\006 \001(\010\"\023\n\021CSUseMissileBatch\"w\n\021SCUseMis"
-  "sileBatch\022\r\n\005chair\030\001 \001(\005\022\023\n\013totalReward\030"
-  "\002 \001(\005\022\020\n\010curMoney\030\003 \001(\003\022,\n\rremainMissile"
-  "\030\004 \003(\0132\025.PlaneWar.MissileInfo\"\023\n\021CSSyncP"
-  "ropsToHall\"\023\n\021SCSyncPropsToHall\"\017\n\rCSCha"
-  "ngeTable\"\033\n\rCSUseRoulette\022\n\n\002iD\030\001 \001(\005\"\222\001"
-  "\n\rSCUseRoulette\022\r\n\005chair\030\001 \001(\005\022\n\n\002id\030\002 \001"
-  "(\005\022\017\n\007costNum\030\003 \001(\005\022\r\n\005ratio\030\004 \001(\005\022$\n\010ro"
-  "ulette\030\005 \001(\0132\022.PlaneWar.Roulette\022\016\n\006rewa"
-  "rd\030\006 \001(\005\022\020\n\010curMoney\030\007 \001(\003\"\024\n\022CSRedEnvel"
-  "opePoint\"N\n\013RedOpenInfo\022\'\n\006status\030\001 \001(\0162"
-  "\027.PlaneWar.RedOpenStatus\022\026\n\016unLockVipLev"
-  "el\030\002 \001(\005\"w\n\022SCRedEnvelopePoint\022\020\n\010curPoi"
-  "nt\030\001 \001(\005\022\020\n\010maxPoint\030\002 \001(\005\022\021\n\tcostPoint\030"
-  "\003 \001(\005\022*\n\013redOpenList\030\004 \003(\0132\025.PlaneWar.Re"
-  "dOpenInfo\"#\n\021CSRedEnvelopeInfo\022\016\n\006isOpen"
-  "\030\001 \001(\010\"\027\n\007RedInfo\022\014\n\004cost\030\001 \001(\005\"7\n\021SCRed"
-  "EnvelopeInfo\022\"\n\007redList\030\001 \003(\0132\021.PlaneWar"
-  ".RedInfo\"\"\n\021CSOpenRedEnvelope\022\r\n\005index\030\001"
-  " \001(\005\"l\n\016RedUpgradeInfo\022\023\n\013leastReward\030\001 "
-  "\001(\005\022\024\n\014mayAddReward\030\002 \001(\005\022\025\n\rmaxUpgradeN"
-  "um\030\003 \001(\005\022\030\n\020remainUpgradeNum\030\004 \001(\005\"m\n\021SC"
-  "OpenRedEnvelope\022\021\n\trawReward\030\001 \001(\005\022\026\n\016gr"
-  "antThreshold\030\002 \001(\005\022-\n\013upgradeInfo\030\003 \001(\0132"
-  "\030.PlaneWar.RedUpgradeInfo\")\n\024CSUpgradeRe"
-  "dEnvelope\022\021\n\tisUpgrade\030\001 \001(\010\"\257\001\n\024SCUpgra"
-  "deRedEnvelope\022*\n\006result\030\001 \001(\0162\032.PlaneWar"
-  ".UpgradeRedResult\022\021\n\tcurReward\030\002 \001(\005\022\026\n\016"
-  "grantThreshold\030\003 \001(\005\022\021\n\taddReward\030\004 \001(\005\022"
-  "-\n\013upgradeInfo\030\005 \001(\0132\030.PlaneWar.RedUpgra"
-  "deInfo\")\n\027CSCommonRedEnvelopeInfo\022\016\n\006isO"
-  "pen\030\001 \001(\010\"\214\001\n\rCommonRedInfo\022\n\n\002id\030\001 \001(\t\022"
-  "\016\n\006reward\030\002 \001(\005\022\016\n\006expire\030\003 \001(\005\022\030\n\020sourc"
-  "ePlayerNick\030\004 \001(\t\022\022\n\ntryOpenNum\030\005 \001(\005\022\014\n"
-  "\004cost\030\006 \001(\005\022\023\n\013isSelfGrant\030\007 \001(\010\"\232\001\n\027SCC"
-  "ommonRedEnvelopeInfo\022(\n\007redList\030\001 \003(\0132\027."
-  "PlaneWar.CommonRedInfo\022\026\n\016grantThreshold"
-  "\030\002 \001(\005\022\022\n\nmaxShowNum\030\003 \001(\005\022\022\n\nmaxOpenNum"
-  "\030\004 \001(\005\022\025\n\rremainOpenNum\030\005 \001(\005\"%\n\027CSOpenC"
-  "ommonRedEnvelope\022\n\n\002id\030\001 \001(\t\"\\\n\027SCOpenCo"
-  "mmonRedEnvelope\022\n\n\002id\030\001 \001(\t\022\016\n\006result\030\002 "
-  "\001(\010\022\025\n\rremainOpenNum\030\003 \001(\005\022\016\n\006reward\030\004 \001"
-  "(\005\"S\n\021RedRankPlayerInfo\022\020\n\010playerID\030\001 \001("
-  "\005\022\014\n\004nick\030\002 \001(\t\022\014\n\004icon\030\003 \001(\t\022\020\n\010vipLeve"
-  "l\030\004 \001(\005\"8\n\034CSGrantCommonRedEnvelopeRank\022"
-  "\014\n\004from\030\001 \001(\005\022\n\n\002to\030\002 \001(\005\"r\n\rGrantRankIt"
-  "em\022\014\n\004rank\030\001 \001(\005\022/\n\nplayerInfo\030\002 \001(\0132\033.P"
-  "laneWar.RedRankPlayerInfo\022\022\n\nupgradeNum\030"
-  "\003 \001(\005\022\016\n\006reward\030\004 \001(\005\"t\n\034SCGrantCommonRe"
-  "dEnvelopeRank\022)\n\010rankList\030\001 \003(\0132\027.PlaneW"
-  "ar.GrantRankItem\022)\n\010selfRank\030\002 \001(\0132\027.Pla"
-  "neWar.GrantRankItem\"7\n\033CSOpenCommonRedEn"
-  "velopeRank\022\014\n\004from\030\001 \001(\005\022\n\n\002to\030\002 \001(\005\"s\n\014"
-  "OpenRankItem\022\014\n\004rank\030\001 \001(\005\022/\n\nplayerInfo"
-  "\030\002 \001(\0132\033.PlaneWar.RedRankPlayerInfo\022\023\n\013t"
-  "otalReward\030\003 \001(\005\022\017\n\007openNum\030\004 \001(\005\"q\n\033SCO"
-  "penCommonRedEnvelopeRank\022(\n\010rankList\030\001 \003"
-  "(\0132\026.PlaneWar.OpenRankItem\022(\n\010selfRank\030\002"
-  " \001(\0132\026.PlaneWar.OpenRankItem\" \n\036CSGrantC"
-  "ommonRedEnvelopeRecord\"\206\001\n\013GrantRecord\022\021"
-  "\n\tgrantTime\030\001 \001(\005\022\022\n\nexpireTime\030\002 \001(\005\022\016\n"
-  "\006reward\030\003 \001(\005\022(\n\006status\030\004 \001(\0162\030.PlaneWar"
-  ".GrantRedStatus\022\026\n\016openPlayerNick\030\005 \001(\t\""
-  "K\n\036SCGrantCommonRedEnvelopeRecord\022)\n\nrec"
-  "ordList\030\001 \003(\0132\025.PlaneWar.GrantRecord\"\037\n\035"
-  "CSOpenCommonRedEnvelopeRecord\"H\n\nOpenRec"
-  "ord\022\030\n\020sourcePlayerNick\030\001 \001(\t\022\016\n\006reward\030"
-  "\002 \001(\005\022\020\n\010openTime\030\003 \001(\005\"`\n\035SCOpenCommonR"
-  "edEnvelopeRecord\022(\n\nrecordList\030\001 \003(\0132\024.P"
-  "laneWar.OpenRecord\022\025\n\rshowRecordNum\030\002 \001("
-  "\005\"\244\001\n\033SCRedEnvelopeOpStatusNotify\022\r\n\005cha"
-  "ir\030\001 \001(\005\022%\n\006status\030\002 \001(\0162\025.PlaneWar.RedO"
-  "pStatus\022\020\n\010curMoney\030\003 \001(\003\022-\n\013upgradeInfo"
-  "\030\004 \001(\0132\030.PlaneWar.RedUpgradeInfo\022\016\n\006rewa"
-  "rd\030\005 \001(\005\"u\n\021CSSyncWeaponState\022\020\n\010weaponI"
-  "d\030\001 \001(\005\022\017\n\007chairId\030\002 \001(\005\022\021\n\tweaponUID\030\003 "
-  "\001(\005\022*\n\013weaponState\030\004 \001(\0132\025.PlaneWar.Weap"
-  "onState\"\023\n\021SCSyncWeaponState\"@\n\010CSPreHit"
-  "\022\r\n\005ratio\030\001 \001(\005\022\022\n\nbulletType\030\002 \001(\005\022\021\n\ts"
-  "ourceUID\030\003 \001(\005\"A\n\010SCPreHit\022\021\n\tweaponUID\030"
-  "\001 \001(\005\022\"\n\007hitMode\030\002 \001(\0132\021.PlaneWar.HitMod"
-  "e\"\263\001\n\tAnimation\022\023\n\013animationID\030\001 \001(\005\022\024\n\014"
-  "animationMsg\030\002 \001(\t\022\r\n\005chair\030\003 \001(\005\022\022\n\nmon"
-  "sterUID\030\004 \001(\005\022\022\n\nbulletType\030\005 \001(\005\022\014\n\004ear"
-  "n\030\006 \001(\005\022\021\n\toriginUID\030\007 \001(\005\022\024\n\014multipleLi"
-  "st\030\010 \003(\005\022\r\n\005ratio\030\t \001(\005\"M\n\017CSSyncAnimati"
-  "on\022&\n\tanimation\030\001 \001(\0132\023.PlaneWar.Animati"
-  "on\022\022\n\nisComplete\030\002 \001(\010\"M\n\017SCSyncAnimatio"
-  "n\022&\n\tanimation\030\001 \001(\0132\023.PlaneWar.Animatio"
-  "n\022\022\n\nisComplete\030\002 \001(\010\":\n\017SCGetAnimations"
-  "\022\'\n\nanimations\030\001 \003(\0132\023.PlaneWar.Animatio"
-  "n\"6\n\017GradeRankDetail\022\021\n\trankIndex\030\001 \001(\005\022"
-  "\020\n\010rankName\030\002 \001(\t\"Z\n\017GradeRankConfig\0222\n\017"
-  "gradeRankDetail\030\001 \003(\0132\031.PlaneWar.GradeRa"
-  "nkDetail\022\023\n\013rankListLen\030\002 \001(\005\"S\n\016WareGiv"
-  "ingInfo\022\016\n\006propId\030\001 \001(\005\022\020\n\010propName\030\002 \001("
-  "\t\022\r\n\005ratio\030\003 \001(\002\022\020\n\010noRepeat\030\004 \001(\010\"\274\001\n\010W"
-  "areInfo\022\016\n\006wareId\030\001 \001(\t\0224\n\022wareGivingInf"
-  "oList\030\002 \003(\0132\030.PlaneWar.WareGivingInfo\022\020\n"
-  "\010minMoney\030\003 \001(\005\022\020\n\010maxMoney\030\004 \001(\005\022\r\n\005pri"
-  "ce\030\005 \001(\005\0227\n\025wareGivingProInfoList\030\006 \003(\0132"
-  "\030.PlaneWar.WareGivingInfo\"E\n\024ExtraGradeR"
-  "ewardInfo\022\r\n\005title\030\001 \001(\t\022\014\n\004desc\030\002 \001(\t\022\020"
-  "\n\010extraExp\030\003 \001(\002\"\322\001\n\016RankWareConfig\022(\n\014c"
-  "ommWareInfo\030\001 \001(\0132\022.PlaneWar.WareInfo\022+\n"
-  "\017advanceWareInfo\030\002 \001(\0132\022.PlaneWar.WareIn"
-  "fo\022<\n\024extraGradeRewardInfo\030\003 \001(\0132\036.Plane"
-  "War.ExtraGradeRewardInfo\022\024\n\014wareDescList"
-  "\030\004 \003(\005\022\025\n\rgradeDescList\030\005 \003(\005\"/\n\nDiceCon"
-  "fig\022\021\n\tratioList\030\001 \003(\005\022\016\n\006maxMul\030\002 \001(\005\"\017"
-  "\n\rCSSyncConfigs\"\241\002\n\rSCSyncConfigs\022.\n\rfor"
-  "tuneConfig\030\001 \003(\0132\027.PlaneWar.FortuneConfi"
-  "g\022&\n\tbeeConfig\030\002 \001(\0132\023.PlaneWar.BeeConfi"
-  "g\022,\n\014replayConfig\030\003 \001(\0132\026.PlaneWar.Repla"
-  "yConfig\0222\n\017gradeRankConfig\030\004 \001(\0132\031.Plane"
-  "War.GradeRankConfig\022,\n\nwareConfig\030\005 \001(\0132"
-  "\030.PlaneWar.RankWareConfig\022(\n\ndiceConfig\030"
-  "\006 \001(\0132\024.PlaneWar.DiceConfig\")\n\024CSConfirm"
-  "WeaponExist\022\021\n\tsourceUID\030\001 \001(\005\"%\n\024SCConf"
-  "irmWeaponExist\022\r\n\005exist\030\001 \001(\010\"0\n\nCSGetVi"
-  "deo\022\017\n\007videoId\030\001 \001(\t\022\021\n\tvideoType\030\002 \001(\005\""
-  "\322\001\n\nSCGetVideo\022.\n\017createdPathList\030\001 \003(\0132"
-  "\025.PlaneWar.MonsterPath\022\022\n\nrewardType\030\002 \001"
-  "(\005\022\021\n\ttimestamp\030\003 \001(\003\022\016\n\006reward\030\004 \001(\005\022\r\n"
-  "\005chair\030\005 \001(\005\022\r\n\005money\030\006 \001(\003\022\r\n\005ratio\030\007 \001"
-  "(\005\022\017\n\007gunType\030\010 \001(\005\022\r\n\005arena\030\t \001(\005\022\020\n\010we"
-  "aponId\030\n \001(\005\"\210\001\n\013VideoCommon\022\016\n\006reward\030\001"
-  " \001(\005\022\022\n\nrewardType\030\002 \001(\005\022\021\n\ttimestamp\030\003 "
-  "\001(\003\022\017\n\007videoId\030\004 \001(\t\022\016\n\006unread\030\005 \001(\010\022\020\n\010"
-  "weaponId\030\006 \001(\005\022\017\n\007arenaId\030\007 \001(\005\"X\n\017Globa"
-  "lVideoInfo\022\020\n\010niceName\030\001 \001(\t\022\014\n\004self\030\002 \001"
-  "(\010\022%\n\006common\030\003 \001(\0132\025.PlaneWar.VideoCommo"
-  "n\"E\n\rSelfVideoInfo\022\r\n\005ratio\030\001 \001(\005\022%\n\006com"
-  "mon\030\002 \001(\0132\025.PlaneWar.VideoCommon\"-\n\021CSSe"
-  "lfVideoRecord\022\014\n\004from\030\001 \001(\005\022\n\n\002to\030\002 \001(\005\""
-  "T\n\021SCSelfVideoRecord\022*\n\tvideoList\030\001 \003(\0132"
-  "\027.PlaneWar.SelfVideoInfo\022\023\n\013refreshTime\030"
-  "\002 \001(\005\"\'\n\013CSVideoRank\022\014\n\004from\030\001 \001(\005\022\n\n\002to"
-  "\030\002 \001(\005\"P\n\013SCVideoRank\022,\n\tvideoList\030\001 \003(\013"
-  "2\031.PlaneWar.GlobalVideoInfo\022\023\n\013refreshTi"
-  "me\030\002 \001(\005\"\317\001\n\rReceiveReward\022\016\n\006propId\030\001 \001"
-  "(\005\022\013\n\003num\030\002 \001(\005\022\017\n\007advance\030\003 \001(\010\022\016\n\006minN"
-  "um\030\004 \001(\005\022\016\n\006maxNum\030\005 \001(\005\022\013\n\003box\030\006 \001(\010\022\020\n"
-  "\010uniqueId\030\007 \001(\005\022\014\n\004desc\030\010 \001(\t\022\021\n\ttimeLim"
-  "it\030\t \001(\005\022\r\n\005title\030\n \001(\t\022\020\n\010propType\030\013 \001("
-  "\005\022\017\n\007special\030\014 \001(\005\"\026\n\024CSReceiveGradeRewa"
-  "rd\"\223\001\n\024SCReceiveGradeReward\0222\n\021receiveRe"
-  "wardList\030\001 \003(\0132\027.PlaneWar.ReceiveReward\022"
-  "4\n\023unReceiveRewardList\030\002 \003(\0132\027.PlaneWar."
-  "ReceiveReward\022\021\n\tseasonEnd\030\003 \001(\010\"`\n\021Grad"
-  "eRewardDetail\022+\n\nrewardInfo\030\001 \001(\0132\027.Plan"
-  "eWar.ReceiveReward\022\r\n\005reach\030\002 \001(\010\022\017\n\007rec"
-  "eive\030\003 \001(\010\"\237\001\n\017GradeRewardInfo\022\020\n\010rankNa"
-  "me\030\001 \001(\t\0223\n\016commRewardList\030\002 \003(\0132\033.Plane"
-  "War.GradeRewardDetail\0226\n\021advanceRewardLi"
-  "st\030\003 \003(\0132\033.PlaneWar.GradeRewardDetail\022\r\n"
-  "\005first\030\004 \001(\010\"\205\002\n\rGradeRankInfo\022\023\n\013curren"
-  "tRank\030\001 \001(\005\022\014\n\004star\030\002 \001(\005\022\020\n\010rankName\030\003 "
-  "\001(\t\022\023\n\013historyRank\030\004 \001(\005\022\027\n\017historyRankN"
-  "ame\030\005 \001(\t\022\017\n\007kingTag\030\006 \001(\005\022\022\n\ncurrentExp"
-  "\030\007 \001(\002\022\017\n\007nextExp\030\010 \001(\002\022\020\n\010extraExp\030\t \001("
-  "\002\022\022\n\nplayerName\030\n \001(\t\022\025\n\ravailableGift\030\013"
-  " \001(\005\022\016\n\006isLast\030\014 \001(\010\022\016\n\006isSelf\030\r \001(\010\"%\n\022"
-  "CSGetTableUserInfo\022\017\n\007chairId\030\001 \001(\005\"n\n\022S"
-  "CGetTableUserInfo\022(\n\nplayerInfo\030\001 \001(\0132\024."
-  "PlaneWar.PlayerInfo\022.\n\rgradeRankInfo\030\002 \001"
-  "(\0132\027.PlaneWar.GradeRankInfo\"8\n\024CSGetGrad"
-  "eRewardInfo\022\020\n\010startIdx\030\001 \001(\005\022\016\n\006endIdx\030"
-  "\002 \001(\005\"N\n\024SCGetGradeRewardInfo\0226\n\023gradeRe"
-  "wardInfoList\030\001 \003(\0132\031.PlaneWar.GradeRewar"
-  "dInfo\"\024\n\022CSGetGradeRankInfo\"D\n\022SCGetGrad"
-  "eRankInfo\022.\n\rgradeRankInfo\030\001 \001(\0132\027.Plane"
-  "War.GradeRankInfo\"_\n\rSCRankUpgrade\022.\n\rgr"
-  "adeRankInfo\030\001 \001(\0132\027.PlaneWar.GradeRankIn"
-  "fo\022\017\n\007advance\030\002 \001(\010\022\r\n\005chair\030\003 \001(\005\"\024\n\022CS"
-  "RankSeasonStatus\"l\n\022SCRankSeasonStatus\022\016"
-  "\n\006enable\030\001 \001(\010\022\021\n\tstartTime\030\002 \001(\005\022\017\n\007end"
-  "Time\030\003 \001(\005\022\022\n\nseasonName\030\004 \001(\t\022\016\n\006season"
-  "\030\005 \001(\005\"\032\n\nSCSyncTime\022\014\n\004time\030\001 \001(\005\"&\n\024SC"
-  "NoticePropsOverdue\022\016\n\006propId\030\001 \001(\005\"0\n\016Pu"
-  "rchaseResult\022\016\n\006wareId\030\001 \001(\t\022\016\n\006status\030\002"
-  " \001(\010\",\n\026CSQueryPackagePurchase\022\022\n\nwareId"
-  "List\030\001 \003(\005\"K\n\026SCQueryPackagePurchase\0221\n\017"
-  "purchaseResList\030\001 \003(\0132\030.PlaneWar.Purchas"
-  "eResult\"(\n\tPropsInfo\022\016\n\006propId\030\001 \001(\005\022\013\n\003"
-  "num\030\002 \001(\005\"<\n\022SCGamePurchasePush\022&\n\tprops"
-  "List\030\001 \003(\0132\023.PlaneWar.PropsInfo\"V\n\016Packa"
-  "geMarquee\022\020\n\010nickname\030\001 \001(\t\022\016\n\006wareId\030\002 "
-  "\001(\t\022\"\n\005props\030\003 \001(\0132\023.PlaneWar.PropsInfo\""
-  "\027\n\025CSQueryPackageMarquee\"c\n\025SCQueryPacka"
-  "geMarquee\022\024\n\014marqueeModel\030\001 \001(\t\0224\n\022packa"
-  "geMarqueeList\030\002 \003(\0132\030.PlaneWar.PackageMa"
-  "rquee\"\034\n\nCSSetWings\022\016\n\006wingId\030\001 \001(\005\"+\n\nS"
-  "CSetWings\022\r\n\005chair\030\001 \001(\005\022\016\n\006wingId\030\002 \001(\005"
-  "\"\026\n\024CSVerifySeasonChange\"\300\001\n\024SCVerifySea"
-  "sonChange\022\016\n\006change\030\001 \001(\010\0224\n\023beforeGrade"
-  "RankInfo\030\002 \001(\0132\027.PlaneWar.GradeRankInfo\022"
-  "5\n\024currentGradeRankInfo\030\003 \001(\0132\027.PlaneWar"
-  ".GradeRankInfo\022\024\n\014beforeSeason\030\004 \001(\005\022\025\n\r"
-  "currentSeason\030\005 \001(\005\"\034\n\032CSExistUnReceiveR"
-  "ankReward\"+\n\032SCExistUnReceiveRankReward\022"
-  "\r\n\005exist\030\001 \001(\010\"(\n\031CSReceiveExtraGradeRew"
-  "ard\022\013\n\003num\030\001 \001(\005\"\\\n\031SCReceiveExtraGradeR"
-  "eward\0222\n\021receiveRewardList\030\001 \003(\0132\027.Plane"
-  "War.ReceiveReward\022\013\n\003num\030\002 \001(\005\">\n\022CSGetG"
-  "radeRankList\022\014\n\004from\030\001 \001(\005\022\n\n\002to\030\002 \001(\005\022\016"
-  "\n\006season\030\003 \001(\005\"\200\001\n\022SCGetGradeRankList\022.\n"
-  "\rgradeRankList\030\001 \003(\0132\027.PlaneWar.GradeRan"
-  "kInfo\022-\n\014selfRankInfo\030\002 \001(\0132\027.PlaneWar.G"
-  "radeRankInfo\022\013\n\003ord\030\003 \001(\005\"\036\n\nCSBuyPlane\022"
-  "\020\n\010plane_id\030\001 \001(\005\"\036\n\nSCBuyPlane\022\020\n\010plane"
-  "_id\030\001 \001(\005\"\036\n\nCSBuyWings\022\020\n\010wings_id\030\001 \001("
-  "\005\"\036\n\nSCBuyWings\022\020\n\010wings_id\030\001 \001(\005\"=\n\017Ope"
-  "nChestReward\022\n\n\002id\030\001 \001(\005\022\036\n\003num\030\002 \001(\0132\021."
-  "PlaneWar.Decimal\"\253\001\n\023SCUpdateChestStatus"
-  "\022\021\n\tis_active\030\001 \001(\010\022\'\n\nchest_type\030\002 \001(\0162"
-  "\023.PlaneWar.ChestType\022\026\n\016total_progress\030\003"
-  " \001(\005\022\027\n\017remain_progress\030\004 \001(\005\022\r\n\005guide\030\005"
-  " \001(\010\022\030\n\020available_reward\030\006 \001(\005\"`\n\nChestB"
-  "rief\022\'\n\nchest_type\030\001 \001(\0162\023.PlaneWar.Ches"
-  "tType\022)\n\006reward\030\002 \003(\0132\031.PlaneWar.OpenChe"
-  "stReward\"\300\001\n\rSCChestConfig\022\020\n\010end_time\030\001"
-  " \001(\005\022.\n\020chest_brief_list\030\002 \003(\0132\024.PlaneWa"
-  "r.ChestBrief\022\021\n\tmin_ratio\030\003 \001(\005\022\021\n\tauto_"
-  "open\030\004 \001(\010\0224\n\013auto_option\030\005 \001(\0162\037.PlaneW"
-  "ar.ChestAutoSelectOption\022\021\n\tis_enable\030\006 "
-  "\001(\010\"s\n\013SCOpenChest\022.\n\013reward_list\030\001 \003(\0132"
-  "\031.PlaneWar.OpenChestReward\0224\n\013auto_optio"
-  "n\030\002 \001(\0162\037.PlaneWar.ChestAutoSelectOption"
-  "\"V\n\023CSSelectChestReward\022\024\n\014select_index\030"
-  "\001 \001(\005\022)\n\006reward\030\002 \001(\0132\031.PlaneWar.OpenChe"
-  "stReward\"_\n\024CSChestSetAutoSelect\0224\n\013auto"
-  "_option\030\001 \001(\0162\037.PlaneWar.ChestAutoSelect"
-  "Option\022\021\n\tauto_open\030\002 \001(\010\"_\n\024SCChestSetA"
-  "utoSelect\0224\n\013auto_option\030\001 \001(\0162\037.PlaneWa"
-  "r.ChestAutoSelectOption\022\021\n\tauto_open\030\002 \001"
-  "(\010\"%\n\020CSChestSetEnable\022\021\n\tis_enable\030\001 \001("
-  "\010\"%\n\020SCChestSetEnable\022\021\n\tis_enable\030\001 \001(\010"
-  "\"K\n\017SCWaterDropInfo\022\016\n\006enable\030\001 \001(\010\022\021\n\td"
-  "ropCount\030\002 \001(\005\022\025\n\rfragmentCount\030\003 \001(\005\"\'\n"
-  "\010TextInfo\022\r\n\005index\030\001 \001(\005\022\014\n\004text\030\002 \001(\t\"4"
-  "\n\020CSSyncTextConfig\022\020\n\010startIdx\030\001 \001(\005\022\016\n\006"
-  "endIdx\030\002 \001(\005\"8\n\020SCSyncTextConfig\022$\n\010text"
-  "List\030\001 \003(\0132\022.PlaneWar.TextInfo*\354\021\n\rEMsgI"
-  "DSubGame\022\t\n\005Login\020\000\022\n\n\006Logout\020\002\022\t\n\005Ready"
-  "\020\003\022\020\n\014MonsterSpawn\020\004\022\010\n\004Shot\020\005\022\007\n\003Hit\020\006\022"
-  "\022\n\016MonsterDestory\020\007\022\010\n\004Lock\020\010\022\r\n\tTransfo"
-  "rm\020\t\022\020\n\014PlanePosSync\020\n\022\014\n\010StateEnd\020\013\022\014\n\010"
-  "ModRatio\020\014\022\016\n\nGainNotify\020\r\022\016\n\nGainSettle"
-  "\020\016\022\014\n\010SetPlane\020\017\022\023\n\017UserEnterNotify\020\020\022\024\n"
-  "\020SwitchBackGround\020\021\022\023\n\017SyncMonsterInfo\020\022"
-  "\022\023\n\017ScratchCardList\020\023\022\022\n\016UseScratchCard\020"
-  "\024\022\021\n\rExplodeSettle\020\025\022\025\n\021FallIntoBlackHol"
-  "e\020\026\022\024\n\020SyncBlackHolePos\020\027\022\017\n\013Interaction"
-  "\020\030\022\020\n\014ActivityInfo\020\031\022\021\n\rGetTaskReward\020\032\022"
-  "\017\n\013GetTaskInfo\020\033\022\024\n\020NoticeInfoChange\020\034\022\030"
-  "\n\024NoticeHallProsChange\020\035\022\027\n\023NoticeTiming"
-  "Monster\020\036\022\021\n\rPiggyBankInfo\020\037\022\021\n\rOpenPigg"
-  "yBank\020 \022\027\n\023PiggyBankOpenFinish\020!\022\031\n\025Pigg"
-  "yBankChangeNotify\020\"\022\031\n\025SetPersonalPoolEn"
-  "able\020#\022\024\n\020PersonalPoolInfo\020$\022\024\n\020DrawPers"
-  "onalPool\020%\022\034\n\030PersonalPoolChangeNotify\020&"
-  "\022\016\n\nUseMissile\020\'\022\017\n\013MonsterCall\020(\022\017\n\013Cli"
-  "ckStatic\020)\022\014\n\010RankList\020*\022\020\n\014LastRankList"
-  "\020+\022\r\n\tTitleList\020,\022\017\n\013SelectTitle\020-\022\025\n\021Ti"
-  "tleActiveNotify\020.\022\030\n\024RoomInfoChangeNotif"
-  "y\020/\022\016\n\nMatchBrief\0200\022\017\n\013MatchDetail\0201\022\017\n\013"
-  "MatchReward\0202\022\025\n\021MatchRewardNotify\0203\022\014\n\010"
-  "GiftList\0204\022\024\n\020GiftExpireNotify\0205\022\026\n\022GetM"
-  "atchTaskReward\0206\022\023\n\017WeaponPieceInfo\0207\022\r\n"
-  "\tBuyWeapon\0208\022\024\n\020WeaponEarnRecord\0209\022\024\n\020St"
-  "ateForceSettle\020:\022\023\n\017AddMissedBullet\020;\022\024\n"
-  "\020UpdateBulletData\020<\022\023\n\017UseMissileBatch\020="
-  "\022\023\n\017SyncPropsToHall\020>\022\017\n\013ChangeTable\020\?\022\025"
-  "\n\021UpgradePoolReward\020@\022\026\n\022GetPoolLuckyRew"
-  "ard\020A\022\017\n\013UseRoulette\020B\022\024\n\020RedEnvelopePoi"
-  "nt\020C\022\023\n\017RedEnvelopeInfo\020D\022\023\n\017OpenRedEnve"
-  "lope\020E\022\026\n\022UpgradeRedEnvelope\020F\022\031\n\025Common"
-  "RedEnvelopeInfo\020G\022\031\n\025OpenCommonRedEnvelo"
-  "pe\020H\022\036\n\032GrantCommonRedEnvelopeRank\020I\022\035\n\031"
-  "OpenCommonRedEnvelopeRank\020J\022 \n\034GrantComm"
-  "onRedEnvelopeRecord\020K\022\037\n\033OpenCommonRedEn"
-  "velopeRecord\020L\022\035\n\031RedEnvelopeOpStatusNot"
-  "ify\020M\022\023\n\017SyncWeaponState\020N\022\n\n\006PreHit\020O\022\021"
-  "\n\rSyncAnimation\020P\022\021\n\rGetAnimations\020Q\022\017\n\013"
-  "SyncConfigs\020R\022\026\n\022ConfirmWeaponExist\020S\022\014\n"
-  "\010GetVideo\020T\022\023\n\017SelfVideoRecord\020U\022\r\n\tVide"
-  "oRank\020V\022\024\n\020GetGradeRankInfo\020W\022\026\n\022Receive"
-  "GradeReward\020X\022\014\n\010SyncTime\020Y\022\017\n\013RankUpgra"
-  "de\020Z\022\024\n\020RankSeasonStatus\020[\022\026\n\022NoticeProp"
-  "sOverdue\020\\\022\030\n\024QueryPackagePurchase\020]\022\014\n\010"
-  "SetWings\020^\022\024\n\020GetTableUserInfo\020_\022\026\n\022Veri"
-  "fySeasonChange\020`\022\034\n\030ExistUnReceiveRankRe"
-  "ward\020a\022\026\n\022GetGradeRewardInfo\020b\022\024\n\020GamePu"
-  "rchasePush\020c\022\027\n\023QueryPackageMarquee\020d\022\024\n"
-  "\020GetGradeRankList\020e\022\033\n\027ReceiveExtraGrade"
-  "Reward\020f\022\014\n\010BuyPlane\020g\022\014\n\010BuyWings\020h\022\025\n\021"
-  "UpdateChestStatus\020i\022\017\n\013ChestConfig\020j\022\r\n\t"
-  "OpenChest\020k\022\025\n\021SelectChestReward\020l\022\026\n\022Ch"
-  "estSetAutoSelect\020m\022\022\n\016ChestSetEnable\020n\022\021"
-  "\n\rWaterDropInfo\020x\022\022\n\016SyncTextConfig\020y*\260\017"
-  "\n\tErrorCode\022\013\n\007Success\020\000\022\t\n\004Fail\020\350\007\022\022\n\rE"
-  "nterRoomFail\020\351\007\022\025\n\020LoadBaseInfoFail\020\352\007\022\024"
-  "\n\017LoadVipInfoFail\020\353\007\022\026\n\021LoadExtraInfoFai"
-  "l\020\354\007\022\026\n\021CreatePlayerError\020\355\007\022\023\n\016PlayerNo"
-  "tExist\020\356\007\022\022\n\rTableNotExist\020\357\007\022\023\n\016MoneyNo"
-  "tEnough\020\360\007\022\020\n\013BulletError\020\361\007\022\024\n\017MonsterN"
-  "otExist\020\362\007\022\025\n\020PlayerNotInTable\020\363\007\022\031\n\024Scr"
-  "atchCardNotEnough\020\364\007\022\034\n\027InteractionTypeN"
-  "otExist\020\365\007\022\033\n\026InteractionNotCooldown\020\366\007\022"
-  "\033\n\026InteractionTargetError\020\367\007\022\026\n\021TokenVer"
-  "ifyFailed\020\370\007\022\022\n\rTaskNotEnough\020\371\007\022\025\n\020Diam"
-  "ondNotEnough\020\372\007\022\024\n\017ConcurrentLogin\020\373\007\022\021\n"
-  "\014AlreadyLogin\020\374\007\022\021\n\014ServerClosed\020\375\007\022\025\n\020M"
-  "issileNotEnough\020\370\n\022\030\n\023PersonalPoolDisabl"
-  "e\020\334\013\022\032\n\025PersonalPoolNotEnough\020\335\013\022\032\n\025Pers"
-  "onalPoolSaveError\020\336\013\022\037\n\032PersonalPoolGetR"
-  "ewardError\020\337\013\022\024\n\017NoTmpPoolReward\020\340\013\022\024\n\017P"
-  "oolUpgradeFail\020\341\013\022\034\n\027PoolLuckyValueNotEn"
-  "ough\020\342\013\022\027\n\022PiggyBankNotEnable\020\354\016\022\026\n\021Pigg"
-  "yBankNoReward\020\355\016\022\031\n\024PiggyBankRewardError"
-  "\020\356\016\022\032\n\025PiggyBankPackageError\020\357\016\022\022\n\rCallN"
-  "otEnough\020\320\017\022\033\n\026CallSpecialMonsterFull\020\321\017"
-  "\022\033\n\026CallMonsterScreenLimit\020\322\017\022\021\n\014CallCoo"
-  "lDown\020\323\017\022\022\n\rCallExceedMax\020\324\017\022\022\n\rRankType"
-  "Error\020\264\020\022\023\n\016RankIndexError\020\265\020\022\026\n\021TitleCo"
-  "nfNotExist\020\230\021\022\023\n\016TitleNotActive\020\231\021\022\017\n\nNo"
-  "tInMatch\020\374\021\022\017\n\nNoSuchTask\020\375\021\022\026\n\021HaveGotT"
-  "askReward\020\376\021\022\023\n\016NotAchieveTask\020\377\021\022\031\n\024Wea"
-  "ponPieceNotEnough\020\340\022\022\030\n\023GetWeaponRecordF"
-  "ail\020\341\022\022\027\n\022WeaponConfNotExist\020\342\022\022\022\n\rCantB"
-  "uyWeapon\020\343\022\022\022\n\rOpenChestFail\020\344\022\022\032\n\025Selec"
-  "tChestRewardFail\020\345\022\022\026\n\021RouletteNotEnough"
-  "\020\304\023\022\031\n\024RouletteConfNotExist\020\305\023\022\"\n\035OpenRe"
-  "dEnvelopePointNotEnough\020\250\024\022\036\n\031OpenRedEnv"
-  "elopeIndexError\020\251\024\022\033\n\026NoTmpRedEnvelopeRe"
-  "ward\020\252\024\022\"\n\035RedEnvelopeUpgradeNumNoEnough"
-  "\020\253\024\022!\n\034GetCommonRedEnvelopeInfoFail\020\254\024\022&"
-  "\n!OpenCommonRedEnvelopeNumNotEnough\020\255\024\022\036"
-  "\n\031OpenCommonRedEnvelopeFail\020\256\024\022\035\n\030Common"
-  "RedEnvelopeInvalid\020\257\024\022 \n\033GetRedEnvelopeG"
-  "rantRankFail\020\260\024\022\037\n\032GetRedEnvelopeOpenRan"
-  "kFail\020\261\024\022\"\n\035GetRedEnvelopeGrantRecordFai"
-  "l\020\262\024\022!\n\034GetRedEnvelopeOpenRecordFail\020\263\024\022"
-  "\022\n\rVideoNotExist\020\214\025\022\023\n\016VideoListLimit\020\215\025"
-  "\022\023\n\016GradeIsNotOpen\020\216\025\022\026\n\021GetGradeInfoErr"
-  "or\020\217\025\022\025\n\020WingsNotObtained\020\220\025\022\022\n\rUniqueId"
-  "Error\020\221\025\022\030\n\023AlreadyReceiveError\020\222\025\022\025\n\020No"
-  "tEnoughGiftBag\020\223\025\022\034\n\027AlreadyHaveThisProp"
-  "sErr\020\224\025\022\017\n\nPropsIdErr\020\225\025\022\026\n\021CanNotBuyPro"
-  "psErr\020\226\025*^\n\rRedOpenStatus\022\017\n\013RedOpenLock"
-  "\020\000\022\023\n\017RedOpenUnLocked\020\001\022\024\n\020RedOpenNotAct"
-  "ive\020\002\022\021\n\rRedOpenActive\020\003*K\n\020UpgradeRedRe"
-  "sult\022\022\n\016UpgradeAbandon\020\000\022\017\n\013UpgradeFail\020"
-  "\001\022\022\n\016UpgradeSuccess\020\002*b\n\016GrantRedStatus\022"
-  "\r\n\tRedOpened\020\000\022\017\n\013RedNoOpened\020\001\022\016\n\nRedNo"
-  "tShow\020\002\022\020\n\014RedCountDown\020\003\022\016\n\nRedExpired\020"
-  "\004*i\n\013RedOpStatus\022\016\n\nRedOpClose\020\000\022\r\n\tRedO"
-  "pOpen\020\001\022\020\n\014RedOpUpgrade\020\002\022\024\n\020RedOpGrantR"
-  "eward\020\003\022\023\n\017RedOpOpenReward\020\004*`\n\tChestTyp"
-  "e\022\026\n\022ChestTypePorcelain\020\000\022\023\n\017ChestTypeBr"
-  "onze\020\001\022\023\n\017ChestTypeSilver\020\002\022\021\n\rChestType"
-  "Gold\020\003*A\n\025ChestAutoSelectOption\022\010\n\004None\020"
-  "\000\022\023\n\017RedPacketTicket\020\001\022\t\n\005Money\020\002b\006proto"
-  "3"
+  "oney\030\005 \001(\003\"\017\n\rCSMonsterCall\";\n\rSCMonster"
+  "Call\022\r\n\005chair\030\001 \001(\005\022\r\n\005count\030\002 \001(\005\022\014\n\004co"
+  "de\030\003 \001(\005\"\035\n\rCSClickStatic\022\014\n\004type\030\001 \001(\005\""
+  "\017\n\rSCClickStatic\"G\n\010RankInfo\022\020\n\010playerId"
+  "\030\001 \001(\005\022\r\n\005point\030\002 \001(\005\022\014\n\004nick\030\003 \001(\t\022\014\n\004i"
+  "con\030\004 \001(\t\"E\n\nMyRankInfo\022\014\n\004rank\030\001 \001(\005\022\r\n"
+  "\005point\030\002 \001(\005\022\014\n\004nick\030\003 \001(\t\022\014\n\004icon\030\004 \001(\t"
+  "\"\032\n\nCSRankList\022\014\n\004type\030\001 \001(\005\"\207\001\n\nSCRankL"
+  "ist\022\014\n\004type\030\001 \001(\005\022 \n\004rank\030\002 \001(\0132\022.PlaneW"
+  "ar.RankInfo\022$\n\006myRank\030\003 \001(\0132\024.PlaneWar.M"
+  "yRankInfo\022#\n\007lastTop\030\004 \001(\0132\022.PlaneWar.Ra"
+  "nkInfo\"F\n\tTitleInfo\022\n\n\002id\030\001 \001(\005\022\016\n\006statu"
+  "s\030\002 \001(\005\022\014\n\004name\030\003 \001(\t\022\017\n\007endTime\030\004 \001(\005\"N"
+  "\n\013SCTitleList\022&\n\ttitleList\030\001 \003(\0132\023.Plane"
+  "War.TitleInfo\022\027\n\017selectedTitleId\030\002 \001(\005\"\033"
+  "\n\rCSSelectTitle\022\n\n\002id\030\001 \001(\005\"*\n\rSCSelectT"
+  "itle\022\n\n\002id\030\001 \001(\005\022\r\n\005chair\030\002 \001(\005\"!\n\023SCTit"
+  "leActiveNotify\022\n\n\002id\030\001 \001(\005\">\n\026SCRoomInfo"
+  "ChangeNotify\022$\n\010roomInfo\030\001 \001(\0132\022.PlaneWa"
+  "r.RoomInfo\"\016\n\014CSMatchBrief\"\264\001\n\014SCMatchBr"
+  "ief\022\016\n\006status\030\001 \001(\005\022\021\n\tmatchType\030\002 \001(\005\022\021"
+  "\n\tmatchName\030\003 \001(\t\022\021\n\tcountDown\030\004 \001(\005\022\020\n\010"
+  "totalNum\030\005 \001(\005\022\021\n\trewardNum\030\006 \001(\005\022\016\n\006myR"
+  "ank\030\007 \001(\005\022\017\n\007myPoint\030\010 \001(\005\022\025\n\rnextRankPo"
+  "int\030\t \001(\005\"\017\n\rCSMatchDetail\"X\n\014MatchSubIn"
+  "fo\022\017\n\007inMatch\030\001 \001(\010\022\024\n\014subMatchName\030\002 \001("
+  "\t\022\017\n\007jackpot\030\003 \001(\005\022\020\n\010totalNum\030\004 \001(\005\"*\n\017"
+  "MatchRewardItem\022\n\n\002id\030\001 \001(\005\022\013\n\003num\030\002 \001(\005"
+  "\"\261\001\n\rMatchRankInfo\022\020\n\010playerId\030\001 \001(\005\022\r\n\005"
+  "point\030\002 \001(\005\022\014\n\004nick\030\003 \001(\t\022\014\n\004icon\030\004 \001(\t\022"
+  "\014\n\004rank\030\005 \001(\005\022\022\n\npointBonus\030\006 \001(\005\022\022\n\nmon"
+  "eyBonus\030\007 \001(\005\022-\n\nrewardList\030\010 \001(\0132\031.Plan"
+  "eWar.MatchRewardItem\";\n\tMatchTask\022\016\n\006sta"
+  "tus\030\001 \001(\005\022\016\n\006target\030\002 \001(\005\022\016\n\006reward\030\003 \001("
+  "\005\"\334\001\n\rSCMatchDetail\022+\n\013subInfoList\030\001 \003(\013"
+  "2\026.PlaneWar.MatchSubInfo\022)\n\010rankList\030\002 \003"
+  "(\0132\027.PlaneWar.MatchRankInfo\022\'\n\006myRank\030\003 "
+  "\001(\0132\027.PlaneWar.MatchRankInfo\022\017\n\007tipList\030"
+  "\004 \003(\005\022\022\n\nluckyStage\030\005 \003(\005\022%\n\010taskList\030\006 "
+  "\003(\0132\023.PlaneWar.MatchTask\"\017\n\rCSMatchRewar"
+  "d\"U\n\nRankReward\022\014\n\004from\030\001 \001(\005\022\n\n\002to\030\002 \001("
+  "\005\022-\n\nrewardList\030\003 \001(\0132\031.PlaneWar.MatchRe"
+  "wardItem\"R\n\rSCMatchReward\022,\n\016rankRewardL"
+  "ist\030\001 \003(\0132\024.PlaneWar.RankReward\022\023\n\013lucky"
+  "Reward\030\002 \003(\005\"n\n\rMyMatchReward\022\014\n\004rank\030\001 "
+  "\001(\005\022+\n\010myReward\030\002 \003(\0132\031.PlaneWar.MatchRe"
+  "wardItem\022\r\n\005bonus\030\003 \001(\005\022\023\n\013luckyReward\030\004"
+  " \001(\005\"m\n\023SCMatchRewardNotify\022+\n\nrewardLis"
+  "t\030\001 \001(\0132\027.PlaneWar.MatchRankInfo\022)\n\010myRe"
+  "ward\030\002 \001(\0132\027.PlaneWar.MyMatchReward\"\014\n\nC"
+  "SGiftList\"d\n\010GiftInfo\022\n\n\002id\030\001 \001(\005\022\022\n\npoi"
+  "ntBonus\030\002 \001(\005\022\022\n\nmoneyBonus\030\003 \001(\005\022\016\n\006can"
+  "Buy\030\004 \001(\010\022\024\n\014buyCountDown\030\005 \001(\005\"2\n\nSCGif"
+  "tList\022$\n\010giftList\030\001 \003(\0132\022.PlaneWar.GiftI"
+  "nfo\"1\n\022SCGiftExpireNotify\022\016\n\006giftID\030\001 \001("
+  "\005\022\013\n\003msg\030\002 \001(\t\"%\n\024CSGetMatchTaskReward\022\r"
+  "\n\005index\030\001 \001(\005\"5\n\024SCGetMatchTaskReward\022\r\n"
+  "\005index\030\001 \001(\005\022\016\n\006reward\030\002 \001(\005\"&\n\022WeaponUs"
+  "eCondition\022\020\n\010vipLevel\030\001 \001(\005\"_\n\014WeaponCo"
+  "nfig\022\020\n\010weaponID\030\001 \001(\005\022\014\n\004name\030\002 \001(\t\022/\n\t"
+  "condition\030\003 \001(\0132\034.PlaneWar.WeaponUseCond"
+  "ition\"\'\n\021CSWeaponPieceInfo\022\022\n\nisBrowsing"
+  "\030\001 \001(\010\"R\n\024PiecesStackLimitInfo\022\024\n\014fromVi"
+  "pLevel\030\001 \001(\005\022\022\n\ntoVipLevel\030\002 \001(\005\022\020\n\010stac"
+  "kNum\030\003 \001(\005\"\302\001\n\021SCWeaponPieceInfo\022\022\n\nisBr"
+  "owsing\030\001 \001(\010\022\r\n\005chair\030\002 \001(\005\022&\n\tpieceInfo"
+  "\030\003 \001(\0132\023.PlaneWar.PieceInfo\022*\n\nconfigLis"
+  "t\030\004 \003(\0132\026.PlaneWar.WeaponConfig\0226\n\016stack"
+  "LimitList\030\005 \003(\0132\036.PlaneWar.PiecesStackLi"
+  "mitInfo\"\r\n\013CSBuyWeapon\"\261\001\n\013SCBuyWeapon\022\r"
+  "\n\005chair\030\001 \001(\005\022\020\n\010weaponID\030\002 \001(\005\022(\n\nweapo"
+  "nInfo\030\003 \001(\0132\024.PlaneWar.WeaponInfo\022&\n\tpie"
+  "ceInfo\030\004 \001(\0132\023.PlaneWar.PieceInfo\022/\n\tcon"
+  "dition\030\005 \001(\0132\034.PlaneWar.WeaponUseConditi"
+  "on\"|\n\nEarnRecord\022\020\n\010playerID\030\001 \001(\005\022\014\n\004ni"
+  "ck\030\002 \001(\t\022\014\n\004icon\030\003 \001(\t\022\020\n\010vipLevel\030\004 \001(\005"
+  "\022\022\n\nweaponName\030\005 \001(\t\022\014\n\004time\030\006 \001(\005\022\014\n\004ea"
+  "rn\030\007 \001(\005\"\"\n\022CSWeaponEarnRecord\022\014\n\004page\030\001"
+  " \001(\005\"L\n\022SCWeaponEarnRecord\022(\n\nrecordList"
+  "\030\001 \003(\0132\024.PlaneWar.EarnRecord\022\014\n\004page\030\002 \001"
+  "(\005\"\'\n\022CSStateForceSettle\022\021\n\tsourceUID\030\001 "
+  "\001(\005\"Y\n\022SCStateForceSettle\022\r\n\005chair\030\001 \001(\005"
+  "\022\021\n\tsourceUID\030\002 \001(\005\022\021\n\toriginUID\030\003 \001(\005\022\016"
+  "\n\006remain\030\004 \001(\005\"Y\n\021SCAddMissedBullet\022\r\n\005c"
+  "hair\030\001 \001(\005\022\022\n\nbulletType\030\002 \001(\005\022\021\n\tsource"
+  "UID\030\003 \001(\005\022\016\n\006addNum\030\004 \001(\005\"n\n\022CSUpdateBul"
+  "letData\022\r\n\005angle\030\001 \001(\002\022\022\n\nbulletType\030\002 \001"
+  "(\005\022\021\n\tsourceUID\030\003 \001(\005\022\016\n\006confID\030\004 \001(\005\022\022\n"
+  "\nisShooting\030\005 \001(\010\"}\n\022SCUpdateBulletData\022"
+  "\r\n\005chair\030\001 \001(\005\022\r\n\005angle\030\002 \001(\002\022\022\n\nbulletT"
+  "ype\030\003 \001(\005\022\021\n\tsourceUID\030\004 \001(\005\022\016\n\006confID\030\005"
+  " \001(\005\022\022\n\nisShooting\030\006 \001(\010\"\023\n\021CSUseMissile"
+  "Batch\"w\n\021SCUseMissileBatch\022\r\n\005chair\030\001 \001("
+  "\005\022\023\n\013totalReward\030\002 \001(\005\022\020\n\010curMoney\030\003 \001(\003"
+  "\022,\n\rremainMissile\030\004 \003(\0132\025.PlaneWar.Missi"
+  "leInfo\"\023\n\021CSSyncPropsToHall\"\023\n\021SCSyncPro"
+  "psToHall\"\017\n\rCSChangeTable\"\017\n\rSCChangeTab"
+  "le\"\033\n\rCSUseRoulette\022\n\n\002iD\030\001 \001(\005\"\222\001\n\rSCUs"
+  "eRoulette\022\r\n\005chair\030\001 \001(\005\022\n\n\002id\030\002 \001(\005\022\017\n\007"
+  "costNum\030\003 \001(\005\022\r\n\005ratio\030\004 \001(\005\022$\n\010roulette"
+  "\030\005 \001(\0132\022.PlaneWar.Roulette\022\016\n\006reward\030\006 \001"
+  "(\005\022\020\n\010curMoney\030\007 \001(\003\"\024\n\022CSRedEnvelopePoi"
+  "nt\"N\n\013RedOpenInfo\022\'\n\006status\030\001 \001(\0162\027.Plan"
+  "eWar.RedOpenStatus\022\026\n\016unLockVipLevel\030\002 \001"
+  "(\005\"w\n\022SCRedEnvelopePoint\022\020\n\010curPoint\030\001 \001"
+  "(\005\022\020\n\010maxPoint\030\002 \001(\005\022\021\n\tcostPoint\030\003 \001(\005\022"
+  "*\n\013redOpenList\030\004 \003(\0132\025.PlaneWar.RedOpenI"
+  "nfo\"#\n\021CSRedEnvelopeInfo\022\016\n\006isOpen\030\001 \001(\010"
+  "\"\027\n\007RedInfo\022\014\n\004cost\030\001 \001(\005\"7\n\021SCRedEnvelo"
+  "peInfo\022\"\n\007redList\030\001 \003(\0132\021.PlaneWar.RedIn"
+  "fo\"\"\n\021CSOpenRedEnvelope\022\r\n\005index\030\001 \001(\005\"l"
+  "\n\016RedUpgradeInfo\022\023\n\013leastReward\030\001 \001(\005\022\024\n"
+  "\014mayAddReward\030\002 \001(\005\022\025\n\rmaxUpgradeNum\030\003 \001"
+  "(\005\022\030\n\020remainUpgradeNum\030\004 \001(\005\"m\n\021SCOpenRe"
+  "dEnvelope\022\021\n\trawReward\030\001 \001(\005\022\026\n\016grantThr"
+  "eshold\030\002 \001(\005\022-\n\013upgradeInfo\030\003 \001(\0132\030.Plan"
+  "eWar.RedUpgradeInfo\")\n\024CSUpgradeRedEnvel"
+  "ope\022\021\n\tisUpgrade\030\001 \001(\010\"\257\001\n\024SCUpgradeRedE"
+  "nvelope\022*\n\006result\030\001 \001(\0162\032.PlaneWar.Upgra"
+  "deRedResult\022\021\n\tcurReward\030\002 \001(\005\022\026\n\016grantT"
+  "hreshold\030\003 \001(\005\022\021\n\taddReward\030\004 \001(\005\022-\n\013upg"
+  "radeInfo\030\005 \001(\0132\030.PlaneWar.RedUpgradeInfo"
+  "\")\n\027CSCommonRedEnvelopeInfo\022\016\n\006isOpen\030\001 "
+  "\001(\010\"\214\001\n\rCommonRedInfo\022\n\n\002id\030\001 \001(\t\022\016\n\006rew"
+  "ard\030\002 \001(\005\022\016\n\006expire\030\003 \001(\005\022\030\n\020sourcePlaye"
+  "rNick\030\004 \001(\t\022\022\n\ntryOpenNum\030\005 \001(\005\022\014\n\004cost\030"
+  "\006 \001(\005\022\023\n\013isSelfGrant\030\007 \001(\010\"\232\001\n\027SCCommonR"
+  "edEnvelopeInfo\022(\n\007redList\030\001 \003(\0132\027.PlaneW"
+  "ar.CommonRedInfo\022\026\n\016grantThreshold\030\002 \001(\005"
+  "\022\022\n\nmaxShowNum\030\003 \001(\005\022\022\n\nmaxOpenNum\030\004 \001(\005"
+  "\022\025\n\rremainOpenNum\030\005 \001(\005\"%\n\027CSOpenCommonR"
+  "edEnvelope\022\n\n\002id\030\001 \001(\t\"\\\n\027SCOpenCommonRe"
+  "dEnvelope\022\n\n\002id\030\001 \001(\t\022\016\n\006result\030\002 \001(\010\022\025\n"
+  "\rremainOpenNum\030\003 \001(\005\022\016\n\006reward\030\004 \001(\005\"S\n\021"
+  "RedRankPlayerInfo\022\020\n\010playerID\030\001 \001(\005\022\014\n\004n"
+  "ick\030\002 \001(\t\022\014\n\004icon\030\003 \001(\t\022\020\n\010vipLevel\030\004 \001("
+  "\005\"8\n\034CSGrantCommonRedEnvelopeRank\022\014\n\004fro"
+  "m\030\001 \001(\005\022\n\n\002to\030\002 \001(\005\"r\n\rGrantRankItem\022\014\n\004"
+  "rank\030\001 \001(\005\022/\n\nplayerInfo\030\002 \001(\0132\033.PlaneWa"
+  "r.RedRankPlayerInfo\022\022\n\nupgradeNum\030\003 \001(\005\022"
+  "\016\n\006reward\030\004 \001(\005\"t\n\034SCGrantCommonRedEnvel"
+  "opeRank\022)\n\010rankList\030\001 \003(\0132\027.PlaneWar.Gra"
+  "ntRankItem\022)\n\010selfRank\030\002 \001(\0132\027.PlaneWar."
+  "GrantRankItem\"7\n\033CSOpenCommonRedEnvelope"
+  "Rank\022\014\n\004from\030\001 \001(\005\022\n\n\002to\030\002 \001(\005\"s\n\014OpenRa"
+  "nkItem\022\014\n\004rank\030\001 \001(\005\022/\n\nplayerInfo\030\002 \001(\013"
+  "2\033.PlaneWar.RedRankPlayerInfo\022\023\n\013totalRe"
+  "ward\030\003 \001(\005\022\017\n\007openNum\030\004 \001(\005\"q\n\033SCOpenCom"
+  "monRedEnvelopeRank\022(\n\010rankList\030\001 \003(\0132\026.P"
+  "laneWar.OpenRankItem\022(\n\010selfRank\030\002 \001(\0132\026"
+  ".PlaneWar.OpenRankItem\" \n\036CSGrantCommonR"
+  "edEnvelopeRecord\"\206\001\n\013GrantRecord\022\021\n\tgran"
+  "tTime\030\001 \001(\005\022\022\n\nexpireTime\030\002 \001(\005\022\016\n\006rewar"
+  "d\030\003 \001(\005\022(\n\006status\030\004 \001(\0162\030.PlaneWar.Grant"
+  "RedStatus\022\026\n\016openPlayerNick\030\005 \001(\t\"K\n\036SCG"
+  "rantCommonRedEnvelopeRecord\022)\n\nrecordLis"
+  "t\030\001 \003(\0132\025.PlaneWar.GrantRecord\"\037\n\035CSOpen"
+  "CommonRedEnvelopeRecord\"H\n\nOpenRecord\022\030\n"
+  "\020sourcePlayerNick\030\001 \001(\t\022\016\n\006reward\030\002 \001(\005\022"
+  "\020\n\010openTime\030\003 \001(\005\"`\n\035SCOpenCommonRedEnve"
+  "lopeRecord\022(\n\nrecordList\030\001 \003(\0132\024.PlaneWa"
+  "r.OpenRecord\022\025\n\rshowRecordNum\030\002 \001(\005\"\244\001\n\033"
+  "SCRedEnvelopeOpStatusNotify\022\r\n\005chair\030\001 \001"
+  "(\005\022%\n\006status\030\002 \001(\0162\025.PlaneWar.RedOpStatu"
+  "s\022\020\n\010curMoney\030\003 \001(\003\022-\n\013upgradeInfo\030\004 \001(\013"
+  "2\030.PlaneWar.RedUpgradeInfo\022\016\n\006reward\030\005 \001"
+  "(\005\"u\n\021CSSyncWeaponState\022\020\n\010weaponId\030\001 \001("
+  "\005\022\017\n\007chairId\030\002 \001(\005\022\021\n\tweaponUID\030\003 \001(\005\022*\n"
+  "\013weaponState\030\004 \001(\0132\025.PlaneWar.WeaponStat"
+  "e\"\023\n\021SCSyncWeaponState\"@\n\010CSPreHit\022\r\n\005ra"
+  "tio\030\001 \001(\005\022\022\n\nbulletType\030\002 \001(\005\022\021\n\tsourceU"
+  "ID\030\003 \001(\005\"A\n\010SCPreHit\022\021\n\tweaponUID\030\001 \001(\005\022"
+  "\"\n\007hitMode\030\002 \001(\0132\021.PlaneWar.HitMode\"\274\002\n\t"
+  "Animation\022\023\n\013animationID\030\001 \001(\005\022\024\n\014animat"
+  "ionMsg\030\002 \001(\t\022\r\n\005chair\030\003 \001(\005\022\022\n\nmonsterUI"
+  "D\030\004 \001(\005\022\022\n\nbulletType\030\005 \001(\005\022\014\n\004earn\030\006 \001("
+  "\005\022\021\n\toriginUID\030\007 \001(\005\022\024\n\014multipleList\030\010 \003"
+  "(\005\022\r\n\005ratio\030\t \001(\005\022/\n\013fortuneJson\030\n \001(\0132\032"
+  ".PlaneWar.FortuneWheelJson\0220\n\016goldenToad"
+  "Json\030\013 \001(\0132\030.PlaneWar.GoldenToadJson\022$\n\010"
+  "diceJson\030\014 \001(\0132\022.PlaneWar.DiceJson\"z\n\010Di"
+  "ceJson\022\014\n\004step\030\001 \001(\005\022\034\n\004dice\030\002 \003(\0132\016.Pla"
+  "neWar.Dice\022\037\n\007mulList\030\003 \003(\0132\016.PlaneWar.D"
+  "ice\022!\n\nmulPosList\030\004 \003(\0132\r.PlaneWar.Pos\"L"
+  "\n\020FortuneWheelJson\022*\n\006result\030\001 \003(\0132\032.Pla"
+  "neWar.FortuneWheelInfo\022\014\n\004site\030\002 \001(\005\"i\n\016"
+  "GoldenToadJson\022&\n\torderList\030\001 \003(\0132\023.Plan"
+  "eWar.OrderData\022\022\n\ntotalRatio\030\002 \001(\005\022\r\n\005ra"
+  "tio\030\003 \001(\005\022\014\n\004step\030\004 \001(\005\"(\n\tOrderData\022\014\n\004"
+  "type\030\001 \001(\005\022\r\n\005ratio\030\002 \001(\005\"M\n\017CSSyncAnima"
+  "tion\022&\n\tanimation\030\001 \001(\0132\023.PlaneWar.Anima"
+  "tion\022\022\n\nisComplete\030\002 \001(\010\"M\n\017SCSyncAnimat"
+  "ion\022&\n\tanimation\030\001 \001(\0132\023.PlaneWar.Animat"
+  "ion\022\022\n\nisComplete\030\002 \001(\010\":\n\017SCGetAnimatio"
+  "ns\022\'\n\nanimations\030\001 \003(\0132\023.PlaneWar.Animat"
+  "ion\"6\n\017GradeRankDetail\022\021\n\trankIndex\030\001 \001("
+  "\005\022\020\n\010rankName\030\002 \001(\t\"Z\n\017GradeRankConfig\0222"
+  "\n\017gradeRankDetail\030\001 \003(\0132\031.PlaneWar.Grade"
+  "RankDetail\022\023\n\013rankListLen\030\002 \001(\005\"S\n\016WareG"
+  "ivingInfo\022\016\n\006propId\030\001 \001(\005\022\020\n\010propName\030\002 "
+  "\001(\t\022\r\n\005ratio\030\003 \001(\002\022\020\n\010noRepeat\030\004 \001(\010\"\274\001\n"
+  "\010WareInfo\022\016\n\006wareId\030\001 \001(\t\0224\n\022wareGivingI"
+  "nfoList\030\002 \003(\0132\030.PlaneWar.WareGivingInfo\022"
+  "\020\n\010minMoney\030\003 \001(\005\022\020\n\010maxMoney\030\004 \001(\005\022\r\n\005p"
+  "rice\030\005 \001(\005\0227\n\025wareGivingProInfoList\030\006 \003("
+  "\0132\030.PlaneWar.WareGivingInfo\"E\n\024ExtraGrad"
+  "eRewardInfo\022\r\n\005title\030\001 \001(\t\022\014\n\004desc\030\002 \001(\t"
+  "\022\020\n\010extraExp\030\003 \001(\002\"\322\001\n\016RankWareConfig\022(\n"
+  "\014commWareInfo\030\001 \001(\0132\022.PlaneWar.WareInfo\022"
+  "+\n\017advanceWareInfo\030\002 \001(\0132\022.PlaneWar.Ware"
+  "Info\022<\n\024extraGradeRewardInfo\030\003 \001(\0132\036.Pla"
+  "neWar.ExtraGradeRewardInfo\022\024\n\014wareDescLi"
+  "st\030\004 \003(\005\022\025\n\rgradeDescList\030\005 \003(\005\"/\n\nDiceC"
+  "onfig\022\021\n\tratioList\030\001 \003(\005\022\016\n\006maxMul\030\002 \001(\005"
+  "\"\017\n\rCSSyncConfigs\"\241\002\n\rSCSyncConfigs\022.\n\rf"
+  "ortuneConfig\030\001 \003(\0132\027.PlaneWar.FortuneCon"
+  "fig\022&\n\tbeeConfig\030\002 \001(\0132\023.PlaneWar.BeeCon"
+  "fig\022,\n\014replayConfig\030\003 \001(\0132\026.PlaneWar.Rep"
+  "layConfig\0222\n\017gradeRankConfig\030\004 \001(\0132\031.Pla"
+  "neWar.GradeRankConfig\022,\n\nwareConfig\030\005 \001("
+  "\0132\030.PlaneWar.RankWareConfig\022(\n\ndiceConfi"
+  "g\030\006 \001(\0132\024.PlaneWar.DiceConfig\")\n\024CSConfi"
+  "rmWeaponExist\022\021\n\tsourceUID\030\001 \001(\005\"%\n\024SCCo"
+  "nfirmWeaponExist\022\r\n\005exist\030\001 \001(\010\"0\n\nCSGet"
+  "Video\022\017\n\007videoId\030\001 \001(\t\022\021\n\tvideoType\030\002 \001("
+  "\005\"\322\001\n\nSCGetVideo\022.\n\017createdPathList\030\001 \003("
+  "\0132\025.PlaneWar.MonsterPath\022\022\n\nrewardType\030\002"
+  " \001(\005\022\021\n\ttimestamp\030\003 \001(\003\022\016\n\006reward\030\004 \001(\005\022"
+  "\r\n\005chair\030\005 \001(\005\022\r\n\005money\030\006 \001(\003\022\r\n\005ratio\030\007"
+  " \001(\005\022\017\n\007gunType\030\010 \001(\005\022\r\n\005arena\030\t \001(\005\022\020\n\010"
+  "weaponId\030\n \001(\005\"\210\001\n\013VideoCommon\022\016\n\006reward"
+  "\030\001 \001(\005\022\022\n\nrewardType\030\002 \001(\005\022\021\n\ttimestamp\030"
+  "\003 \001(\003\022\017\n\007videoId\030\004 \001(\t\022\016\n\006unread\030\005 \001(\010\022\020"
+  "\n\010weaponId\030\006 \001(\005\022\017\n\007arenaId\030\007 \001(\005\"X\n\017Glo"
+  "balVideoInfo\022\020\n\010niceName\030\001 \001(\t\022\014\n\004self\030\002"
+  " \001(\010\022%\n\006common\030\003 \001(\0132\025.PlaneWar.VideoCom"
+  "mon\"E\n\rSelfVideoInfo\022\r\n\005ratio\030\001 \001(\005\022%\n\006c"
+  "ommon\030\002 \001(\0132\025.PlaneWar.VideoCommon\"-\n\021CS"
+  "SelfVideoRecord\022\014\n\004from\030\001 \001(\005\022\n\n\002to\030\002 \001("
+  "\005\"T\n\021SCSelfVideoRecord\022*\n\tvideoList\030\001 \003("
+  "\0132\027.PlaneWar.SelfVideoInfo\022\023\n\013refreshTim"
+  "e\030\002 \001(\005\"\'\n\013CSVideoRank\022\014\n\004from\030\001 \001(\005\022\n\n\002"
+  "to\030\002 \001(\005\"P\n\013SCVideoRank\022,\n\tvideoList\030\001 \003"
+  "(\0132\031.PlaneWar.GlobalVideoInfo\022\023\n\013refresh"
+  "Time\030\002 \001(\005\"\317\001\n\rReceiveReward\022\016\n\006propId\030\001"
+  " \001(\005\022\013\n\003num\030\002 \001(\005\022\017\n\007advance\030\003 \001(\010\022\016\n\006mi"
+  "nNum\030\004 \001(\005\022\016\n\006maxNum\030\005 \001(\005\022\013\n\003box\030\006 \001(\010\022"
+  "\020\n\010uniqueId\030\007 \001(\005\022\014\n\004desc\030\010 \001(\t\022\021\n\ttimeL"
+  "imit\030\t \001(\005\022\r\n\005title\030\n \001(\t\022\020\n\010propType\030\013 "
+  "\001(\005\022\017\n\007special\030\014 \001(\005\"\026\n\024CSReceiveGradeRe"
+  "ward\"\223\001\n\024SCReceiveGradeReward\0222\n\021receive"
+  "RewardList\030\001 \003(\0132\027.PlaneWar.ReceiveRewar"
+  "d\0224\n\023unReceiveRewardList\030\002 \003(\0132\027.PlaneWa"
+  "r.ReceiveReward\022\021\n\tseasonEnd\030\003 \001(\010\"`\n\021Gr"
+  "adeRewardDetail\022+\n\nrewardInfo\030\001 \001(\0132\027.Pl"
+  "aneWar.ReceiveReward\022\r\n\005reach\030\002 \001(\010\022\017\n\007r"
+  "eceive\030\003 \001(\010\"\237\001\n\017GradeRewardInfo\022\020\n\010rank"
+  "Name\030\001 \001(\t\0223\n\016commRewardList\030\002 \003(\0132\033.Pla"
+  "neWar.GradeRewardDetail\0226\n\021advanceReward"
+  "List\030\003 \003(\0132\033.PlaneWar.GradeRewardDetail\022"
+  "\r\n\005first\030\004 \001(\010\"\205\002\n\rGradeRankInfo\022\023\n\013curr"
+  "entRank\030\001 \001(\005\022\014\n\004star\030\002 \001(\005\022\020\n\010rankName\030"
+  "\003 \001(\t\022\023\n\013historyRank\030\004 \001(\005\022\027\n\017historyRan"
+  "kName\030\005 \001(\t\022\017\n\007kingTag\030\006 \001(\005\022\022\n\ncurrentE"
+  "xp\030\007 \001(\002\022\017\n\007nextExp\030\010 \001(\002\022\020\n\010extraExp\030\t "
+  "\001(\002\022\022\n\nplayerName\030\n \001(\t\022\025\n\ravailableGift"
+  "\030\013 \001(\005\022\016\n\006isLast\030\014 \001(\010\022\016\n\006isSelf\030\r \001(\010\"%"
+  "\n\022CSGetTableUserInfo\022\017\n\007chairId\030\001 \001(\005\"n\n"
+  "\022SCGetTableUserInfo\022(\n\nplayerInfo\030\001 \001(\0132"
+  "\024.PlaneWar.PlayerInfo\022.\n\rgradeRankInfo\030\002"
+  " \001(\0132\027.PlaneWar.GradeRankInfo\"8\n\024CSGetGr"
+  "adeRewardInfo\022\020\n\010startIdx\030\001 \001(\005\022\016\n\006endId"
+  "x\030\002 \001(\005\"N\n\024SCGetGradeRewardInfo\0226\n\023grade"
+  "RewardInfoList\030\001 \003(\0132\031.PlaneWar.GradeRew"
+  "ardInfo\"\024\n\022CSGetGradeRankInfo\"D\n\022SCGetGr"
+  "adeRankInfo\022.\n\rgradeRankInfo\030\001 \001(\0132\027.Pla"
+  "neWar.GradeRankInfo\"_\n\rSCRankUpgrade\022.\n\r"
+  "gradeRankInfo\030\001 \001(\0132\027.PlaneWar.GradeRank"
+  "Info\022\017\n\007advance\030\002 \001(\010\022\r\n\005chair\030\003 \001(\005\"\024\n\022"
+  "CSRankSeasonStatus\"l\n\022SCRankSeasonStatus"
+  "\022\016\n\006enable\030\001 \001(\010\022\021\n\tstartTime\030\002 \001(\005\022\017\n\007e"
+  "ndTime\030\003 \001(\005\022\022\n\nseasonName\030\004 \001(\t\022\016\n\006seas"
+  "on\030\005 \001(\005\"\032\n\nSCSyncTime\022\014\n\004time\030\001 \001(\005\"&\n\024"
+  "SCNoticePropsOverdue\022\016\n\006propId\030\001 \001(\005\"0\n\016"
+  "PurchaseResult\022\016\n\006wareId\030\001 \001(\t\022\016\n\006status"
+  "\030\002 \001(\010\",\n\026CSQueryPackagePurchase\022\022\n\nware"
+  "IdList\030\001 \003(\005\"K\n\026SCQueryPackagePurchase\0221"
+  "\n\017purchaseResList\030\001 \003(\0132\030.PlaneWar.Purch"
+  "aseResult\"(\n\tPropsInfo\022\016\n\006propId\030\001 \001(\005\022\013"
+  "\n\003num\030\002 \001(\005\"<\n\022SCGamePurchasePush\022&\n\tpro"
+  "psList\030\001 \003(\0132\023.PlaneWar.PropsInfo\"V\n\016Pac"
+  "kageMarquee\022\020\n\010nickname\030\001 \001(\t\022\016\n\006wareId\030"
+  "\002 \001(\t\022\"\n\005props\030\003 \001(\0132\023.PlaneWar.PropsInf"
+  "o\"\027\n\025CSQueryPackageMarquee\"c\n\025SCQueryPac"
+  "kageMarquee\022\024\n\014marqueeModel\030\001 \001(\t\0224\n\022pac"
+  "kageMarqueeList\030\002 \003(\0132\030.PlaneWar.Package"
+  "Marquee\"\034\n\nCSSetWings\022\016\n\006wingId\030\001 \001(\005\"+\n"
+  "\nSCSetWings\022\r\n\005chair\030\001 \001(\005\022\016\n\006wingId\030\002 \001"
+  "(\005\"\026\n\024CSVerifySeasonChange\"\300\001\n\024SCVerifyS"
+  "easonChange\022\016\n\006change\030\001 \001(\010\0224\n\023beforeGra"
+  "deRankInfo\030\002 \001(\0132\027.PlaneWar.GradeRankInf"
+  "o\0225\n\024currentGradeRankInfo\030\003 \001(\0132\027.PlaneW"
+  "ar.GradeRankInfo\022\024\n\014beforeSeason\030\004 \001(\005\022\025"
+  "\n\rcurrentSeason\030\005 \001(\005\"\034\n\032CSExistUnReceiv"
+  "eRankReward\"+\n\032SCExistUnReceiveRankRewar"
+  "d\022\r\n\005exist\030\001 \001(\010\"(\n\031CSReceiveExtraGradeR"
+  "eward\022\013\n\003num\030\001 \001(\005\"\\\n\031SCReceiveExtraGrad"
+  "eReward\0222\n\021receiveRewardList\030\001 \003(\0132\027.Pla"
+  "neWar.ReceiveReward\022\013\n\003num\030\002 \001(\005\">\n\022CSGe"
+  "tGradeRankList\022\014\n\004from\030\001 \001(\005\022\n\n\002to\030\002 \001(\005"
+  "\022\016\n\006season\030\003 \001(\005\"\200\001\n\022SCGetGradeRankList\022"
+  ".\n\rgradeRankList\030\001 \003(\0132\027.PlaneWar.GradeR"
+  "ankInfo\022-\n\014selfRankInfo\030\002 \001(\0132\027.PlaneWar"
+  ".GradeRankInfo\022\013\n\003ord\030\003 \001(\005\"\036\n\nCSBuyPlan"
+  "e\022\020\n\010plane_id\030\001 \001(\005\"\036\n\nSCBuyPlane\022\020\n\010pla"
+  "ne_id\030\001 \001(\005\"\036\n\nCSBuyWings\022\020\n\010wings_id\030\001 "
+  "\001(\005\"\036\n\nSCBuyWings\022\020\n\010wings_id\030\001 \001(\005\"=\n\017O"
+  "penChestReward\022\n\n\002id\030\001 \001(\005\022\036\n\003num\030\002 \001(\0132"
+  "\021.PlaneWar.Decimal\"\253\001\n\023SCUpdateChestStat"
+  "us\022\021\n\tis_active\030\001 \001(\010\022\'\n\nchest_type\030\002 \001("
+  "\0162\023.PlaneWar.ChestType\022\026\n\016total_progress"
+  "\030\003 \001(\005\022\027\n\017remain_progress\030\004 \001(\005\022\r\n\005guide"
+  "\030\005 \001(\010\022\030\n\020available_reward\030\006 \001(\005\"`\n\nChes"
+  "tBrief\022\'\n\nchest_type\030\001 \001(\0162\023.PlaneWar.Ch"
+  "estType\022)\n\006reward\030\002 \003(\0132\031.PlaneWar.OpenC"
+  "hestReward\"\300\001\n\rSCChestConfig\022\020\n\010end_time"
+  "\030\001 \001(\005\022.\n\020chest_brief_list\030\002 \003(\0132\024.Plane"
+  "War.ChestBrief\022\021\n\tmin_ratio\030\003 \001(\005\022\021\n\taut"
+  "o_open\030\004 \001(\010\0224\n\013auto_option\030\005 \001(\0162\037.Plan"
+  "eWar.ChestAutoSelectOption\022\021\n\tis_enable\030"
+  "\006 \001(\010\"s\n\013SCOpenChest\022.\n\013reward_list\030\001 \003("
+  "\0132\031.PlaneWar.OpenChestReward\0224\n\013auto_opt"
+  "ion\030\002 \001(\0162\037.PlaneWar.ChestAutoSelectOpti"
+  "on\"V\n\023CSSelectChestReward\022\024\n\014select_inde"
+  "x\030\001 \001(\005\022)\n\006reward\030\002 \001(\0132\031.PlaneWar.OpenC"
+  "hestReward\"_\n\024CSChestSetAutoSelect\0224\n\013au"
+  "to_option\030\001 \001(\0162\037.PlaneWar.ChestAutoSele"
+  "ctOption\022\021\n\tauto_open\030\002 \001(\010\"_\n\024SCChestSe"
+  "tAutoSelect\0224\n\013auto_option\030\001 \001(\0162\037.Plane"
+  "War.ChestAutoSelectOption\022\021\n\tauto_open\030\002"
+  " \001(\010\"%\n\020CSChestSetEnable\022\021\n\tis_enable\030\001 "
+  "\001(\010\"%\n\020SCChestSetEnable\022\021\n\tis_enable\030\001 \001"
+  "(\010\"K\n\017SCWaterDropInfo\022\016\n\006enable\030\001 \001(\010\022\021\n"
+  "\tdropCount\030\002 \001(\005\022\025\n\rfragmentCount\030\003 \001(\005\""
+  "\'\n\010TextInfo\022\r\n\005index\030\001 \001(\005\022\014\n\004text\030\002 \001(\t"
+  "\"4\n\020CSSyncTextConfig\022\020\n\010startIdx\030\001 \001(\005\022\016"
+  "\n\006endIdx\030\002 \001(\005\"8\n\020SCSyncTextConfig\022$\n\010te"
+  "xtList\030\001 \003(\0132\022.PlaneWar.TextInfo*\354\021\n\rEMs"
+  "gIDSubGame\022\t\n\005Login\020\000\022\n\n\006Logout\020\002\022\t\n\005Rea"
+  "dy\020\003\022\020\n\014MonsterSpawn\020\004\022\010\n\004Shot\020\005\022\007\n\003Hit\020"
+  "\006\022\022\n\016MonsterDestory\020\007\022\010\n\004Lock\020\010\022\r\n\tTrans"
+  "form\020\t\022\020\n\014PlanePosSync\020\n\022\014\n\010StateEnd\020\013\022\014"
+  "\n\010ModRatio\020\014\022\016\n\nGainNotify\020\r\022\016\n\nGainSett"
+  "le\020\016\022\014\n\010SetPlane\020\017\022\023\n\017UserEnterNotify\020\020\022"
+  "\024\n\020SwitchBackGround\020\021\022\023\n\017SyncMonsterInfo"
+  "\020\022\022\023\n\017ScratchCardList\020\023\022\022\n\016UseScratchCar"
+  "d\020\024\022\021\n\rExplodeSettle\020\025\022\025\n\021FallIntoBlackH"
+  "ole\020\026\022\024\n\020SyncBlackHolePos\020\027\022\017\n\013Interacti"
+  "on\020\030\022\020\n\014ActivityInfo\020\031\022\021\n\rGetTaskReward\020"
+  "\032\022\017\n\013GetTaskInfo\020\033\022\024\n\020NoticeInfoChange\020\034"
+  "\022\030\n\024NoticeHallProsChange\020\035\022\027\n\023NoticeTimi"
+  "ngMonster\020\036\022\021\n\rPiggyBankInfo\020\037\022\021\n\rOpenPi"
+  "ggyBank\020 \022\027\n\023PiggyBankOpenFinish\020!\022\031\n\025Pi"
+  "ggyBankChangeNotify\020\"\022\031\n\025SetPersonalPool"
+  "Enable\020#\022\024\n\020PersonalPoolInfo\020$\022\024\n\020DrawPe"
+  "rsonalPool\020%\022\034\n\030PersonalPoolChangeNotify"
+  "\020&\022\016\n\nUseMissile\020\'\022\017\n\013MonsterCall\020(\022\017\n\013C"
+  "lickStatic\020)\022\014\n\010RankList\020*\022\020\n\014LastRankLi"
+  "st\020+\022\r\n\tTitleList\020,\022\017\n\013SelectTitle\020-\022\025\n\021"
+  "TitleActiveNotify\020.\022\030\n\024RoomInfoChangeNot"
+  "ify\020/\022\016\n\nMatchBrief\0200\022\017\n\013MatchDetail\0201\022\017"
+  "\n\013MatchReward\0202\022\025\n\021MatchRewardNotify\0203\022\014"
+  "\n\010GiftList\0204\022\024\n\020GiftExpireNotify\0205\022\026\n\022Ge"
+  "tMatchTaskReward\0206\022\023\n\017WeaponPieceInfo\0207\022"
+  "\r\n\tBuyWeapon\0208\022\024\n\020WeaponEarnRecord\0209\022\024\n\020"
+  "StateForceSettle\020:\022\023\n\017AddMissedBullet\020;\022"
+  "\024\n\020UpdateBulletData\020<\022\023\n\017UseMissileBatch"
+  "\020=\022\023\n\017SyncPropsToHall\020>\022\017\n\013ChangeTable\020\?"
+  "\022\025\n\021UpgradePoolReward\020@\022\026\n\022GetPoolLuckyR"
+  "eward\020A\022\017\n\013UseRoulette\020B\022\024\n\020RedEnvelopeP"
+  "oint\020C\022\023\n\017RedEnvelopeInfo\020D\022\023\n\017OpenRedEn"
+  "velope\020E\022\026\n\022UpgradeRedEnvelope\020F\022\031\n\025Comm"
+  "onRedEnvelopeInfo\020G\022\031\n\025OpenCommonRedEnve"
+  "lope\020H\022\036\n\032GrantCommonRedEnvelopeRank\020I\022\035"
+  "\n\031OpenCommonRedEnvelopeRank\020J\022 \n\034GrantCo"
+  "mmonRedEnvelopeRecord\020K\022\037\n\033OpenCommonRed"
+  "EnvelopeRecord\020L\022\035\n\031RedEnvelopeOpStatusN"
+  "otify\020M\022\023\n\017SyncWeaponState\020N\022\n\n\006PreHit\020O"
+  "\022\021\n\rSyncAnimation\020P\022\021\n\rGetAnimations\020Q\022\017"
+  "\n\013SyncConfigs\020R\022\026\n\022ConfirmWeaponExist\020S\022"
+  "\014\n\010GetVideo\020T\022\023\n\017SelfVideoRecord\020U\022\r\n\tVi"
+  "deoRank\020V\022\024\n\020GetGradeRankInfo\020W\022\026\n\022Recei"
+  "veGradeReward\020X\022\014\n\010SyncTime\020Y\022\017\n\013RankUpg"
+  "rade\020Z\022\024\n\020RankSeasonStatus\020[\022\026\n\022NoticePr"
+  "opsOverdue\020\\\022\030\n\024QueryPackagePurchase\020]\022\014"
+  "\n\010SetWings\020^\022\024\n\020GetTableUserInfo\020_\022\026\n\022Ve"
+  "rifySeasonChange\020`\022\034\n\030ExistUnReceiveRank"
+  "Reward\020a\022\026\n\022GetGradeRewardInfo\020b\022\024\n\020Game"
+  "PurchasePush\020c\022\027\n\023QueryPackageMarquee\020d\022"
+  "\024\n\020GetGradeRankList\020e\022\033\n\027ReceiveExtraGra"
+  "deReward\020f\022\014\n\010BuyPlane\020g\022\014\n\010BuyWings\020h\022\025"
+  "\n\021UpdateChestStatus\020i\022\017\n\013ChestConfig\020j\022\r"
+  "\n\tOpenChest\020k\022\025\n\021SelectChestReward\020l\022\026\n\022"
+  "ChestSetAutoSelect\020m\022\022\n\016ChestSetEnable\020n"
+  "\022\021\n\rWaterDropInfo\020x\022\022\n\016SyncTextConfig\020y*"
+  "\260\017\n\tErrorCode\022\013\n\007Success\020\000\022\t\n\004Fail\020\350\007\022\022\n"
+  "\rEnterRoomFail\020\351\007\022\025\n\020LoadBaseInfoFail\020\352\007"
+  "\022\024\n\017LoadVipInfoFail\020\353\007\022\026\n\021LoadExtraInfoF"
+  "ail\020\354\007\022\026\n\021CreatePlayerError\020\355\007\022\023\n\016Player"
+  "NotExist\020\356\007\022\022\n\rTableNotExist\020\357\007\022\023\n\016Money"
+  "NotEnough\020\360\007\022\020\n\013BulletError\020\361\007\022\024\n\017Monste"
+  "rNotExist\020\362\007\022\025\n\020PlayerNotInTable\020\363\007\022\031\n\024S"
+  "cratchCardNotEnough\020\364\007\022\034\n\027InteractionTyp"
+  "eNotExist\020\365\007\022\033\n\026InteractionNotCooldown\020\366"
+  "\007\022\033\n\026InteractionTargetError\020\367\007\022\026\n\021TokenV"
+  "erifyFailed\020\370\007\022\022\n\rTaskNotEnough\020\371\007\022\025\n\020Di"
+  "amondNotEnough\020\372\007\022\024\n\017ConcurrentLogin\020\373\007\022"
+  "\021\n\014AlreadyLogin\020\374\007\022\021\n\014ServerClosed\020\375\007\022\025\n"
+  "\020MissileNotEnough\020\370\n\022\030\n\023PersonalPoolDisa"
+  "ble\020\334\013\022\032\n\025PersonalPoolNotEnough\020\335\013\022\032\n\025Pe"
+  "rsonalPoolSaveError\020\336\013\022\037\n\032PersonalPoolGe"
+  "tRewardError\020\337\013\022\024\n\017NoTmpPoolReward\020\340\013\022\024\n"
+  "\017PoolUpgradeFail\020\341\013\022\034\n\027PoolLuckyValueNot"
+  "Enough\020\342\013\022\027\n\022PiggyBankNotEnable\020\354\016\022\026\n\021Pi"
+  "ggyBankNoReward\020\355\016\022\031\n\024PiggyBankRewardErr"
+  "or\020\356\016\022\032\n\025PiggyBankPackageError\020\357\016\022\022\n\rCal"
+  "lNotEnough\020\320\017\022\033\n\026CallSpecialMonsterFull\020"
+  "\321\017\022\033\n\026CallMonsterScreenLimit\020\322\017\022\021\n\014CallC"
+  "oolDown\020\323\017\022\022\n\rCallExceedMax\020\324\017\022\022\n\rRankTy"
+  "peError\020\264\020\022\023\n\016RankIndexError\020\265\020\022\026\n\021Title"
+  "ConfNotExist\020\230\021\022\023\n\016TitleNotActive\020\231\021\022\017\n\n"
+  "NotInMatch\020\374\021\022\017\n\nNoSuchTask\020\375\021\022\026\n\021HaveGo"
+  "tTaskReward\020\376\021\022\023\n\016NotAchieveTask\020\377\021\022\031\n\024W"
+  "eaponPieceNotEnough\020\340\022\022\030\n\023GetWeaponRecor"
+  "dFail\020\341\022\022\027\n\022WeaponConfNotExist\020\342\022\022\022\n\rCan"
+  "tBuyWeapon\020\343\022\022\022\n\rOpenChestFail\020\344\022\022\032\n\025Sel"
+  "ectChestRewardFail\020\345\022\022\026\n\021RouletteNotEnou"
+  "gh\020\304\023\022\031\n\024RouletteConfNotExist\020\305\023\022\"\n\035Open"
+  "RedEnvelopePointNotEnough\020\250\024\022\036\n\031OpenRedE"
+  "nvelopeIndexError\020\251\024\022\033\n\026NoTmpRedEnvelope"
+  "Reward\020\252\024\022\"\n\035RedEnvelopeUpgradeNumNoEnou"
+  "gh\020\253\024\022!\n\034GetCommonRedEnvelopeInfoFail\020\254\024"
+  "\022&\n!OpenCommonRedEnvelopeNumNotEnough\020\255\024"
+  "\022\036\n\031OpenCommonRedEnvelopeFail\020\256\024\022\035\n\030Comm"
+  "onRedEnvelopeInvalid\020\257\024\022 \n\033GetRedEnvelop"
+  "eGrantRankFail\020\260\024\022\037\n\032GetRedEnvelopeOpenR"
+  "ankFail\020\261\024\022\"\n\035GetRedEnvelopeGrantRecordF"
+  "ail\020\262\024\022!\n\034GetRedEnvelopeOpenRecordFail\020\263"
+  "\024\022\022\n\rVideoNotExist\020\214\025\022\023\n\016VideoListLimit\020"
+  "\215\025\022\023\n\016GradeIsNotOpen\020\216\025\022\026\n\021GetGradeInfoE"
+  "rror\020\217\025\022\025\n\020WingsNotObtained\020\220\025\022\022\n\rUnique"
+  "IdError\020\221\025\022\030\n\023AlreadyReceiveError\020\222\025\022\025\n\020"
+  "NotEnoughGiftBag\020\223\025\022\034\n\027AlreadyHaveThisPr"
+  "opsErr\020\224\025\022\017\n\nPropsIdErr\020\225\025\022\026\n\021CanNotBuyP"
+  "ropsErr\020\226\025*^\n\rRedOpenStatus\022\017\n\013RedOpenLo"
+  "ck\020\000\022\023\n\017RedOpenUnLocked\020\001\022\024\n\020RedOpenNotA"
+  "ctive\020\002\022\021\n\rRedOpenActive\020\003*K\n\020UpgradeRed"
+  "Result\022\022\n\016UpgradeAbandon\020\000\022\017\n\013UpgradeFai"
+  "l\020\001\022\022\n\016UpgradeSuccess\020\002*b\n\016GrantRedStatu"
+  "s\022\r\n\tRedOpened\020\000\022\017\n\013RedNoOpened\020\001\022\016\n\nRed"
+  "NotShow\020\002\022\020\n\014RedCountDown\020\003\022\016\n\nRedExpire"
+  "d\020\004*i\n\013RedOpStatus\022\016\n\nRedOpClose\020\000\022\r\n\tRe"
+  "dOpOpen\020\001\022\020\n\014RedOpUpgrade\020\002\022\024\n\020RedOpGran"
+  "tReward\020\003\022\023\n\017RedOpOpenReward\020\004*`\n\tChestT"
+  "ype\022\026\n\022ChestTypePorcelain\020\000\022\023\n\017ChestType"
+  "Bronze\020\001\022\023\n\017ChestTypeSilver\020\002\022\021\n\rChestTy"
+  "peGold\020\003*A\n\025ChestAutoSelectOption\022\010\n\004Non"
+  "e\020\000\022\023\n\017RedPacketTicket\020\001\022\t\n\005Money\020\002b\006pro"
+  "to3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_PlaneWar_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_PlaneWar_2eproto_sccs[293] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_PlaneWar_2eproto_sccs[299] = {
   &scc_info_Animation_PlaneWar_2eproto.base,
   &scc_info_ArenaPieceInfo_PlaneWar_2eproto.base,
   &scc_info_BeeConfig_PlaneWar_2eproto.base,
@@ -9066,6 +9249,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Pla
   &scc_info_Dice_PlaneWar_2eproto.base,
   &scc_info_DiceConfig_PlaneWar_2eproto.base,
   &scc_info_DiceInfo_PlaneWar_2eproto.base,
+  &scc_info_DiceJson_PlaneWar_2eproto.base,
   &scc_info_DropBuff_PlaneWar_2eproto.base,
   &scc_info_DropPoker_PlaneWar_2eproto.base,
   &scc_info_EarnRecord_PlaneWar_2eproto.base,
@@ -9076,9 +9260,11 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Pla
   &scc_info_FormInfo_PlaneWar_2eproto.base,
   &scc_info_FortuneConfig_PlaneWar_2eproto.base,
   &scc_info_FortuneWheelInfo_PlaneWar_2eproto.base,
+  &scc_info_FortuneWheelJson_PlaneWar_2eproto.base,
   &scc_info_GiftInfo_PlaneWar_2eproto.base,
   &scc_info_GlobalReplayConfig_PlaneWar_2eproto.base,
   &scc_info_GlobalVideoInfo_PlaneWar_2eproto.base,
+  &scc_info_GoldenToadJson_PlaneWar_2eproto.base,
   &scc_info_GradeRankConfig_PlaneWar_2eproto.base,
   &scc_info_GradeRankDetail_PlaneWar_2eproto.base,
   &scc_info_GradeRankInfo_PlaneWar_2eproto.base,
@@ -9103,6 +9289,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Pla
   &scc_info_OpenChestReward_PlaneWar_2eproto.base,
   &scc_info_OpenRankItem_PlaneWar_2eproto.base,
   &scc_info_OpenRecord_PlaneWar_2eproto.base,
+  &scc_info_OrderData_PlaneWar_2eproto.base,
   &scc_info_PackageMarquee_PlaneWar_2eproto.base,
   &scc_info_PersonalPoolLevelInfo_PlaneWar_2eproto.base,
   &scc_info_PersonalPoolLuckyInfo_PlaneWar_2eproto.base,
@@ -9139,6 +9326,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Pla
   &scc_info_SCBuyPlane_PlaneWar_2eproto.base,
   &scc_info_SCBuyWeapon_PlaneWar_2eproto.base,
   &scc_info_SCBuyWings_PlaneWar_2eproto.base,
+  &scc_info_SCChangeTable_PlaneWar_2eproto.base,
   &scc_info_SCChestConfig_PlaneWar_2eproto.base,
   &scc_info_SCChestSetAutoSelect_PlaneWar_2eproto.base,
   &scc_info_SCChestSetEnable_PlaneWar_2eproto.base,
@@ -9175,6 +9363,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Pla
   &scc_info_SCMatchReward_PlaneWar_2eproto.base,
   &scc_info_SCMatchRewardNotify_PlaneWar_2eproto.base,
   &scc_info_SCModRatio_PlaneWar_2eproto.base,
+  &scc_info_SCMonsterCall_PlaneWar_2eproto.base,
   &scc_info_SCMonsterDestory_PlaneWar_2eproto.base,
   &scc_info_SCMonsterSpawn_PlaneWar_2eproto.base,
   &scc_info_SCNoticeHallProsChange_PlaneWar_2eproto.base,
@@ -9264,10 +9453,10 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Pla
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_PlaneWar_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_PlaneWar_2eproto = {
-  false, false, descriptor_table_protodef_PlaneWar_2eproto, "PlaneWar.proto", 30441,
-  &descriptor_table_PlaneWar_2eproto_once, descriptor_table_PlaneWar_2eproto_sccs, descriptor_table_PlaneWar_2eproto_deps, 293, 0,
+  false, false, descriptor_table_protodef_PlaneWar_2eproto, "PlaneWar.proto", 30963,
+  &descriptor_table_PlaneWar_2eproto_once, descriptor_table_PlaneWar_2eproto_sccs, descriptor_table_PlaneWar_2eproto_deps, 299, 0,
   schemas, file_default_instances, TableStruct_PlaneWar_2eproto::offsets,
-  file_level_metadata_PlaneWar_2eproto, 293, file_level_enum_descriptors_PlaneWar_2eproto, file_level_service_descriptors_PlaneWar_2eproto,
+  file_level_metadata_PlaneWar_2eproto, 299, file_level_enum_descriptors_PlaneWar_2eproto, file_level_service_descriptors_PlaneWar_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
@@ -44568,17 +44757,10 @@ CSMonsterCall::CSMonsterCall(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 CSMonsterCall::CSMonsterCall(const CSMonsterCall& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&chair_, &from.chair_,
-    static_cast<size_t>(reinterpret_cast<char*>(&code_) -
-    reinterpret_cast<char*>(&chair_)) + sizeof(code_));
   // @@protoc_insertion_point(copy_constructor:PlaneWar.CSMonsterCall)
 }
 
 void CSMonsterCall::SharedCtor() {
-  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&chair_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&code_) -
-      reinterpret_cast<char*>(&chair_)) + sizeof(code_));
 }
 
 CSMonsterCall::~CSMonsterCall() {
@@ -44612,13 +44794,182 @@ void CSMonsterCall::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* CSMonsterCall::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* CSMonsterCall::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:PlaneWar.CSMonsterCall)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:PlaneWar.CSMonsterCall)
+  return target;
+}
+
+size_t CSMonsterCall::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:PlaneWar.CSMonsterCall)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void CSMonsterCall::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:PlaneWar.CSMonsterCall)
+  GOOGLE_DCHECK_NE(&from, this);
+  const CSMonsterCall* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CSMonsterCall>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:PlaneWar.CSMonsterCall)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:PlaneWar.CSMonsterCall)
+    MergeFrom(*source);
+  }
+}
+
+void CSMonsterCall::MergeFrom(const CSMonsterCall& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:PlaneWar.CSMonsterCall)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+}
+
+void CSMonsterCall::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:PlaneWar.CSMonsterCall)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void CSMonsterCall::CopyFrom(const CSMonsterCall& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:PlaneWar.CSMonsterCall)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool CSMonsterCall::IsInitialized() const {
+  return true;
+}
+
+void CSMonsterCall::InternalSwap(CSMonsterCall* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata CSMonsterCall::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class SCMonsterCall::_Internal {
+ public:
+};
+
+SCMonsterCall::SCMonsterCall(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:PlaneWar.SCMonsterCall)
+}
+SCMonsterCall::SCMonsterCall(const SCMonsterCall& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&chair_, &from.chair_,
+    static_cast<size_t>(reinterpret_cast<char*>(&code_) -
+    reinterpret_cast<char*>(&chair_)) + sizeof(code_));
+  // @@protoc_insertion_point(copy_constructor:PlaneWar.SCMonsterCall)
+}
+
+void SCMonsterCall::SharedCtor() {
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&chair_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&code_) -
+      reinterpret_cast<char*>(&chair_)) + sizeof(code_));
+}
+
+SCMonsterCall::~SCMonsterCall() {
+  // @@protoc_insertion_point(destructor:PlaneWar.SCMonsterCall)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void SCMonsterCall::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void SCMonsterCall::ArenaDtor(void* object) {
+  SCMonsterCall* _this = reinterpret_cast< SCMonsterCall* >(object);
+  (void)_this;
+}
+void SCMonsterCall::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void SCMonsterCall::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const SCMonsterCall& SCMonsterCall::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SCMonsterCall_PlaneWar_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void SCMonsterCall::Clear() {
+// @@protoc_insertion_point(message_clear_start:PlaneWar.SCMonsterCall)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   ::memset(&chair_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&code_) -
       reinterpret_cast<char*>(&chair_)) + sizeof(code_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* CSMonsterCall::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SCMonsterCall::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
@@ -44668,9 +45019,9 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* CSMonsterCall::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* SCMonsterCall::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:PlaneWar.CSMonsterCall)
+  // @@protoc_insertion_point(serialize_to_array_start:PlaneWar.SCMonsterCall)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -44696,12 +45047,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:PlaneWar.CSMonsterCall)
+  // @@protoc_insertion_point(serialize_to_array_end:PlaneWar.SCMonsterCall)
   return target;
 }
 
-size_t CSMonsterCall::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:PlaneWar.CSMonsterCall)
+size_t SCMonsterCall::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:PlaneWar.SCMonsterCall)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -44738,23 +45089,23 @@ size_t CSMonsterCall::ByteSizeLong() const {
   return total_size;
 }
 
-void CSMonsterCall::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:PlaneWar.CSMonsterCall)
+void SCMonsterCall::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:PlaneWar.SCMonsterCall)
   GOOGLE_DCHECK_NE(&from, this);
-  const CSMonsterCall* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CSMonsterCall>(
+  const SCMonsterCall* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SCMonsterCall>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:PlaneWar.CSMonsterCall)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:PlaneWar.SCMonsterCall)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:PlaneWar.CSMonsterCall)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:PlaneWar.SCMonsterCall)
     MergeFrom(*source);
   }
 }
 
-void CSMonsterCall::MergeFrom(const CSMonsterCall& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:PlaneWar.CSMonsterCall)
+void SCMonsterCall::MergeFrom(const SCMonsterCall& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:PlaneWar.SCMonsterCall)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -44771,36 +45122,36 @@ void CSMonsterCall::MergeFrom(const CSMonsterCall& from) {
   }
 }
 
-void CSMonsterCall::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:PlaneWar.CSMonsterCall)
+void SCMonsterCall::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:PlaneWar.SCMonsterCall)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-void CSMonsterCall::CopyFrom(const CSMonsterCall& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:PlaneWar.CSMonsterCall)
+void SCMonsterCall::CopyFrom(const SCMonsterCall& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:PlaneWar.SCMonsterCall)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool CSMonsterCall::IsInitialized() const {
+bool SCMonsterCall::IsInitialized() const {
   return true;
 }
 
-void CSMonsterCall::InternalSwap(CSMonsterCall* other) {
+void SCMonsterCall::InternalSwap(SCMonsterCall* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(CSMonsterCall, code_)
-      + sizeof(CSMonsterCall::code_)
-      - PROTOBUF_FIELD_OFFSET(CSMonsterCall, chair_)>(
+      PROTOBUF_FIELD_OFFSET(SCMonsterCall, code_)
+      + sizeof(SCMonsterCall::code_)
+      - PROTOBUF_FIELD_OFFSET(SCMonsterCall, chair_)>(
           reinterpret_cast<char*>(&chair_),
           reinterpret_cast<char*>(&other->chair_));
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata CSMonsterCall::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata SCMonsterCall::GetMetadata() const {
   return GetMetadataStatic();
 }
 
@@ -57326,6 +57677,168 @@ void CSChangeTable::InternalSwap(CSChangeTable* other) {
 
 // ===================================================================
 
+class SCChangeTable::_Internal {
+ public:
+};
+
+SCChangeTable::SCChangeTable(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:PlaneWar.SCChangeTable)
+}
+SCChangeTable::SCChangeTable(const SCChangeTable& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:PlaneWar.SCChangeTable)
+}
+
+void SCChangeTable::SharedCtor() {
+}
+
+SCChangeTable::~SCChangeTable() {
+  // @@protoc_insertion_point(destructor:PlaneWar.SCChangeTable)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void SCChangeTable::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void SCChangeTable::ArenaDtor(void* object) {
+  SCChangeTable* _this = reinterpret_cast< SCChangeTable* >(object);
+  (void)_this;
+}
+void SCChangeTable::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void SCChangeTable::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const SCChangeTable& SCChangeTable::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SCChangeTable_PlaneWar_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void SCChangeTable::Clear() {
+// @@protoc_insertion_point(message_clear_start:PlaneWar.SCChangeTable)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* SCChangeTable::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* SCChangeTable::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:PlaneWar.SCChangeTable)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:PlaneWar.SCChangeTable)
+  return target;
+}
+
+size_t SCChangeTable::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:PlaneWar.SCChangeTable)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void SCChangeTable::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:PlaneWar.SCChangeTable)
+  GOOGLE_DCHECK_NE(&from, this);
+  const SCChangeTable* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SCChangeTable>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:PlaneWar.SCChangeTable)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:PlaneWar.SCChangeTable)
+    MergeFrom(*source);
+  }
+}
+
+void SCChangeTable::MergeFrom(const SCChangeTable& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:PlaneWar.SCChangeTable)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+}
+
+void SCChangeTable::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:PlaneWar.SCChangeTable)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void SCChangeTable::CopyFrom(const SCChangeTable& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:PlaneWar.SCChangeTable)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool SCChangeTable::IsInitialized() const {
+  return true;
+}
+
+void SCChangeTable::InternalSwap(SCChangeTable* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata SCChangeTable::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
 class CSUseRoulette::_Internal {
  public:
 };
@@ -66198,8 +66711,23 @@ void SCPreHit::InternalSwap(SCPreHit* other) {
 
 class Animation::_Internal {
  public:
+  static const ::PlaneWar::FortuneWheelJson& fortunejson(const Animation* msg);
+  static const ::PlaneWar::GoldenToadJson& goldentoadjson(const Animation* msg);
+  static const ::PlaneWar::DiceJson& dicejson(const Animation* msg);
 };
 
+const ::PlaneWar::FortuneWheelJson&
+Animation::_Internal::fortunejson(const Animation* msg) {
+  return *msg->fortunejson_;
+}
+const ::PlaneWar::GoldenToadJson&
+Animation::_Internal::goldentoadjson(const Animation* msg) {
+  return *msg->goldentoadjson_;
+}
+const ::PlaneWar::DiceJson&
+Animation::_Internal::dicejson(const Animation* msg) {
+  return *msg->dicejson_;
+}
 Animation::Animation(::PROTOBUF_NAMESPACE_ID::Arena* arena)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena),
   multiplelist_(arena) {
@@ -66216,6 +66744,21 @@ Animation::Animation(const Animation& from)
     animationmsg_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_animationmsg(), 
       GetArena());
   }
+  if (from._internal_has_fortunejson()) {
+    fortunejson_ = new ::PlaneWar::FortuneWheelJson(*from.fortunejson_);
+  } else {
+    fortunejson_ = nullptr;
+  }
+  if (from._internal_has_goldentoadjson()) {
+    goldentoadjson_ = new ::PlaneWar::GoldenToadJson(*from.goldentoadjson_);
+  } else {
+    goldentoadjson_ = nullptr;
+  }
+  if (from._internal_has_dicejson()) {
+    dicejson_ = new ::PlaneWar::DiceJson(*from.dicejson_);
+  } else {
+    dicejson_ = nullptr;
+  }
   ::memcpy(&animationid_, &from.animationid_,
     static_cast<size_t>(reinterpret_cast<char*>(&ratio_) -
     reinterpret_cast<char*>(&animationid_)) + sizeof(ratio_));
@@ -66226,9 +66769,9 @@ void Animation::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Animation_PlaneWar_2eproto.base);
   animationmsg_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-      reinterpret_cast<char*>(&animationid_) - reinterpret_cast<char*>(this)),
+      reinterpret_cast<char*>(&fortunejson_) - reinterpret_cast<char*>(this)),
       0, static_cast<size_t>(reinterpret_cast<char*>(&ratio_) -
-      reinterpret_cast<char*>(&animationid_)) + sizeof(ratio_));
+      reinterpret_cast<char*>(&fortunejson_)) + sizeof(ratio_));
 }
 
 Animation::~Animation() {
@@ -66240,6 +66783,9 @@ Animation::~Animation() {
 void Animation::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
   animationmsg_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  if (this != internal_default_instance()) delete fortunejson_;
+  if (this != internal_default_instance()) delete goldentoadjson_;
+  if (this != internal_default_instance()) delete dicejson_;
 }
 
 void Animation::ArenaDtor(void* object) {
@@ -66265,6 +66811,18 @@ void Animation::Clear() {
 
   multiplelist_.Clear();
   animationmsg_.ClearToEmpty();
+  if (GetArena() == nullptr && fortunejson_ != nullptr) {
+    delete fortunejson_;
+  }
+  fortunejson_ = nullptr;
+  if (GetArena() == nullptr && goldentoadjson_ != nullptr) {
+    delete goldentoadjson_;
+  }
+  goldentoadjson_ = nullptr;
+  if (GetArena() == nullptr && dicejson_ != nullptr) {
+    delete dicejson_;
+  }
+  dicejson_ = nullptr;
   ::memset(&animationid_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&ratio_) -
       reinterpret_cast<char*>(&animationid_)) + sizeof(ratio_));
@@ -66343,6 +66901,27 @@ const char* Animation::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
       case 9:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
           ratio_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // .PlaneWar.FortuneWheelJson fortuneJson = 10;
+      case 10:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 82)) {
+          ptr = ctx->ParseMessage(_internal_mutable_fortunejson(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // .PlaneWar.GoldenToadJson goldenToadJson = 11;
+      case 11:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 90)) {
+          ptr = ctx->ParseMessage(_internal_mutable_goldentoadjson(), ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // .PlaneWar.DiceJson diceJson = 12;
+      case 12:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 98)) {
+          ptr = ctx->ParseMessage(_internal_mutable_dicejson(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -66435,6 +67014,30 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(9, this->_internal_ratio(), target);
   }
 
+  // .PlaneWar.FortuneWheelJson fortuneJson = 10;
+  if (this->has_fortunejson()) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        10, _Internal::fortunejson(this), target, stream);
+  }
+
+  // .PlaneWar.GoldenToadJson goldenToadJson = 11;
+  if (this->has_goldentoadjson()) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        11, _Internal::goldentoadjson(this), target, stream);
+  }
+
+  // .PlaneWar.DiceJson diceJson = 12;
+  if (this->has_dicejson()) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(
+        12, _Internal::dicejson(this), target, stream);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -66471,6 +67074,27 @@ size_t Animation::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_animationmsg());
+  }
+
+  // .PlaneWar.FortuneWheelJson fortuneJson = 10;
+  if (this->has_fortunejson()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *fortunejson_);
+  }
+
+  // .PlaneWar.GoldenToadJson goldenToadJson = 11;
+  if (this->has_goldentoadjson()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *goldentoadjson_);
+  }
+
+  // .PlaneWar.DiceJson diceJson = 12;
+  if (this->has_dicejson()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *dicejson_);
   }
 
   // int32 animationID = 1;
@@ -66557,6 +67181,15 @@ void Animation::MergeFrom(const Animation& from) {
   if (from.animationmsg().size() > 0) {
     _internal_set_animationmsg(from._internal_animationmsg());
   }
+  if (from.has_fortunejson()) {
+    _internal_mutable_fortunejson()->::PlaneWar::FortuneWheelJson::MergeFrom(from._internal_fortunejson());
+  }
+  if (from.has_goldentoadjson()) {
+    _internal_mutable_goldentoadjson()->::PlaneWar::GoldenToadJson::MergeFrom(from._internal_goldentoadjson());
+  }
+  if (from.has_dicejson()) {
+    _internal_mutable_dicejson()->::PlaneWar::DiceJson::MergeFrom(from._internal_dicejson());
+  }
   if (from.animationid() != 0) {
     _internal_set_animationid(from._internal_animationid());
   }
@@ -66606,12 +67239,1044 @@ void Animation::InternalSwap(Animation* other) {
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(Animation, ratio_)
       + sizeof(Animation::ratio_)
-      - PROTOBUF_FIELD_OFFSET(Animation, animationid_)>(
-          reinterpret_cast<char*>(&animationid_),
-          reinterpret_cast<char*>(&other->animationid_));
+      - PROTOBUF_FIELD_OFFSET(Animation, fortunejson_)>(
+          reinterpret_cast<char*>(&fortunejson_),
+          reinterpret_cast<char*>(&other->fortunejson_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Animation::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class DiceJson::_Internal {
+ public:
+};
+
+DiceJson::DiceJson(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  dice_(arena),
+  mullist_(arena),
+  mulposlist_(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:PlaneWar.DiceJson)
+}
+DiceJson::DiceJson(const DiceJson& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      dice_(from.dice_),
+      mullist_(from.mullist_),
+      mulposlist_(from.mulposlist_) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  step_ = from.step_;
+  // @@protoc_insertion_point(copy_constructor:PlaneWar.DiceJson)
+}
+
+void DiceJson::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_DiceJson_PlaneWar_2eproto.base);
+  step_ = 0;
+}
+
+DiceJson::~DiceJson() {
+  // @@protoc_insertion_point(destructor:PlaneWar.DiceJson)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void DiceJson::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void DiceJson::ArenaDtor(void* object) {
+  DiceJson* _this = reinterpret_cast< DiceJson* >(object);
+  (void)_this;
+}
+void DiceJson::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void DiceJson::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const DiceJson& DiceJson::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_DiceJson_PlaneWar_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void DiceJson::Clear() {
+// @@protoc_insertion_point(message_clear_start:PlaneWar.DiceJson)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  dice_.Clear();
+  mullist_.Clear();
+  mulposlist_.Clear();
+  step_ = 0;
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* DiceJson::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 step = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          step_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // repeated .PlaneWar.Dice dice = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_dice(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
+        } else goto handle_unusual;
+        continue;
+      // repeated .PlaneWar.Dice mulList = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_mullist(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<26>(ptr));
+        } else goto handle_unusual;
+        continue;
+      // repeated .PlaneWar.Pos mulPosList = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_mulposlist(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<34>(ptr));
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* DiceJson::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:PlaneWar.DiceJson)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 step = 1;
+  if (this->step() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_step(), target);
+  }
+
+  // repeated .PlaneWar.Dice dice = 2;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_dice_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(2, this->_internal_dice(i), target, stream);
+  }
+
+  // repeated .PlaneWar.Dice mulList = 3;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_mullist_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(3, this->_internal_mullist(i), target, stream);
+  }
+
+  // repeated .PlaneWar.Pos mulPosList = 4;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_mulposlist_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(4, this->_internal_mulposlist(i), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:PlaneWar.DiceJson)
+  return target;
+}
+
+size_t DiceJson::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:PlaneWar.DiceJson)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated .PlaneWar.Dice dice = 2;
+  total_size += 1UL * this->_internal_dice_size();
+  for (const auto& msg : this->dice_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  // repeated .PlaneWar.Dice mulList = 3;
+  total_size += 1UL * this->_internal_mullist_size();
+  for (const auto& msg : this->mullist_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  // repeated .PlaneWar.Pos mulPosList = 4;
+  total_size += 1UL * this->_internal_mulposlist_size();
+  for (const auto& msg : this->mulposlist_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  // int32 step = 1;
+  if (this->step() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_step());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void DiceJson::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:PlaneWar.DiceJson)
+  GOOGLE_DCHECK_NE(&from, this);
+  const DiceJson* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<DiceJson>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:PlaneWar.DiceJson)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:PlaneWar.DiceJson)
+    MergeFrom(*source);
+  }
+}
+
+void DiceJson::MergeFrom(const DiceJson& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:PlaneWar.DiceJson)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  dice_.MergeFrom(from.dice_);
+  mullist_.MergeFrom(from.mullist_);
+  mulposlist_.MergeFrom(from.mulposlist_);
+  if (from.step() != 0) {
+    _internal_set_step(from._internal_step());
+  }
+}
+
+void DiceJson::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:PlaneWar.DiceJson)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void DiceJson::CopyFrom(const DiceJson& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:PlaneWar.DiceJson)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool DiceJson::IsInitialized() const {
+  return true;
+}
+
+void DiceJson::InternalSwap(DiceJson* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  dice_.InternalSwap(&other->dice_);
+  mullist_.InternalSwap(&other->mullist_);
+  mulposlist_.InternalSwap(&other->mulposlist_);
+  swap(step_, other->step_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata DiceJson::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class FortuneWheelJson::_Internal {
+ public:
+};
+
+FortuneWheelJson::FortuneWheelJson(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  result_(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:PlaneWar.FortuneWheelJson)
+}
+FortuneWheelJson::FortuneWheelJson(const FortuneWheelJson& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      result_(from.result_) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  site_ = from.site_;
+  // @@protoc_insertion_point(copy_constructor:PlaneWar.FortuneWheelJson)
+}
+
+void FortuneWheelJson::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_FortuneWheelJson_PlaneWar_2eproto.base);
+  site_ = 0;
+}
+
+FortuneWheelJson::~FortuneWheelJson() {
+  // @@protoc_insertion_point(destructor:PlaneWar.FortuneWheelJson)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void FortuneWheelJson::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void FortuneWheelJson::ArenaDtor(void* object) {
+  FortuneWheelJson* _this = reinterpret_cast< FortuneWheelJson* >(object);
+  (void)_this;
+}
+void FortuneWheelJson::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void FortuneWheelJson::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const FortuneWheelJson& FortuneWheelJson::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_FortuneWheelJson_PlaneWar_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void FortuneWheelJson::Clear() {
+// @@protoc_insertion_point(message_clear_start:PlaneWar.FortuneWheelJson)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  result_.Clear();
+  site_ = 0;
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* FortuneWheelJson::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // repeated .PlaneWar.FortuneWheelInfo result = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_result(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
+        } else goto handle_unusual;
+        continue;
+      // int32 site = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          site_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* FortuneWheelJson::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:PlaneWar.FortuneWheelJson)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated .PlaneWar.FortuneWheelInfo result = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_result_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(1, this->_internal_result(i), target, stream);
+  }
+
+  // int32 site = 2;
+  if (this->site() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_site(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:PlaneWar.FortuneWheelJson)
+  return target;
+}
+
+size_t FortuneWheelJson::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:PlaneWar.FortuneWheelJson)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated .PlaneWar.FortuneWheelInfo result = 1;
+  total_size += 1UL * this->_internal_result_size();
+  for (const auto& msg : this->result_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  // int32 site = 2;
+  if (this->site() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_site());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void FortuneWheelJson::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:PlaneWar.FortuneWheelJson)
+  GOOGLE_DCHECK_NE(&from, this);
+  const FortuneWheelJson* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<FortuneWheelJson>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:PlaneWar.FortuneWheelJson)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:PlaneWar.FortuneWheelJson)
+    MergeFrom(*source);
+  }
+}
+
+void FortuneWheelJson::MergeFrom(const FortuneWheelJson& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:PlaneWar.FortuneWheelJson)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  result_.MergeFrom(from.result_);
+  if (from.site() != 0) {
+    _internal_set_site(from._internal_site());
+  }
+}
+
+void FortuneWheelJson::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:PlaneWar.FortuneWheelJson)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void FortuneWheelJson::CopyFrom(const FortuneWheelJson& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:PlaneWar.FortuneWheelJson)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool FortuneWheelJson::IsInitialized() const {
+  return true;
+}
+
+void FortuneWheelJson::InternalSwap(FortuneWheelJson* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  result_.InternalSwap(&other->result_);
+  swap(site_, other->site_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata FortuneWheelJson::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class GoldenToadJson::_Internal {
+ public:
+};
+
+GoldenToadJson::GoldenToadJson(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  orderlist_(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:PlaneWar.GoldenToadJson)
+}
+GoldenToadJson::GoldenToadJson(const GoldenToadJson& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      orderlist_(from.orderlist_) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&totalratio_, &from.totalratio_,
+    static_cast<size_t>(reinterpret_cast<char*>(&step_) -
+    reinterpret_cast<char*>(&totalratio_)) + sizeof(step_));
+  // @@protoc_insertion_point(copy_constructor:PlaneWar.GoldenToadJson)
+}
+
+void GoldenToadJson::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GoldenToadJson_PlaneWar_2eproto.base);
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&totalratio_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&step_) -
+      reinterpret_cast<char*>(&totalratio_)) + sizeof(step_));
+}
+
+GoldenToadJson::~GoldenToadJson() {
+  // @@protoc_insertion_point(destructor:PlaneWar.GoldenToadJson)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void GoldenToadJson::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void GoldenToadJson::ArenaDtor(void* object) {
+  GoldenToadJson* _this = reinterpret_cast< GoldenToadJson* >(object);
+  (void)_this;
+}
+void GoldenToadJson::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void GoldenToadJson::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const GoldenToadJson& GoldenToadJson::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GoldenToadJson_PlaneWar_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void GoldenToadJson::Clear() {
+// @@protoc_insertion_point(message_clear_start:PlaneWar.GoldenToadJson)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  orderlist_.Clear();
+  ::memset(&totalratio_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&step_) -
+      reinterpret_cast<char*>(&totalratio_)) + sizeof(step_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* GoldenToadJson::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // repeated .PlaneWar.OrderData orderList = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_orderlist(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
+        } else goto handle_unusual;
+        continue;
+      // int32 totalRatio = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          totalratio_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 ratio = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+          ratio_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 step = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          step_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* GoldenToadJson::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:PlaneWar.GoldenToadJson)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated .PlaneWar.OrderData orderList = 1;
+  for (unsigned int i = 0,
+      n = static_cast<unsigned int>(this->_internal_orderlist_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(1, this->_internal_orderlist(i), target, stream);
+  }
+
+  // int32 totalRatio = 2;
+  if (this->totalratio() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_totalratio(), target);
+  }
+
+  // int32 ratio = 3;
+  if (this->ratio() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_ratio(), target);
+  }
+
+  // int32 step = 4;
+  if (this->step() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_step(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:PlaneWar.GoldenToadJson)
+  return target;
+}
+
+size_t GoldenToadJson::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:PlaneWar.GoldenToadJson)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated .PlaneWar.OrderData orderList = 1;
+  total_size += 1UL * this->_internal_orderlist_size();
+  for (const auto& msg : this->orderlist_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  // int32 totalRatio = 2;
+  if (this->totalratio() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_totalratio());
+  }
+
+  // int32 ratio = 3;
+  if (this->ratio() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_ratio());
+  }
+
+  // int32 step = 4;
+  if (this->step() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_step());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void GoldenToadJson::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:PlaneWar.GoldenToadJson)
+  GOOGLE_DCHECK_NE(&from, this);
+  const GoldenToadJson* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<GoldenToadJson>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:PlaneWar.GoldenToadJson)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:PlaneWar.GoldenToadJson)
+    MergeFrom(*source);
+  }
+}
+
+void GoldenToadJson::MergeFrom(const GoldenToadJson& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:PlaneWar.GoldenToadJson)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  orderlist_.MergeFrom(from.orderlist_);
+  if (from.totalratio() != 0) {
+    _internal_set_totalratio(from._internal_totalratio());
+  }
+  if (from.ratio() != 0) {
+    _internal_set_ratio(from._internal_ratio());
+  }
+  if (from.step() != 0) {
+    _internal_set_step(from._internal_step());
+  }
+}
+
+void GoldenToadJson::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:PlaneWar.GoldenToadJson)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void GoldenToadJson::CopyFrom(const GoldenToadJson& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:PlaneWar.GoldenToadJson)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool GoldenToadJson::IsInitialized() const {
+  return true;
+}
+
+void GoldenToadJson::InternalSwap(GoldenToadJson* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  orderlist_.InternalSwap(&other->orderlist_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(GoldenToadJson, step_)
+      + sizeof(GoldenToadJson::step_)
+      - PROTOBUF_FIELD_OFFSET(GoldenToadJson, totalratio_)>(
+          reinterpret_cast<char*>(&totalratio_),
+          reinterpret_cast<char*>(&other->totalratio_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata GoldenToadJson::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
+
+// ===================================================================
+
+class OrderData::_Internal {
+ public:
+};
+
+OrderData::OrderData(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:PlaneWar.OrderData)
+}
+OrderData::OrderData(const OrderData& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::memcpy(&type_, &from.type_,
+    static_cast<size_t>(reinterpret_cast<char*>(&ratio_) -
+    reinterpret_cast<char*>(&type_)) + sizeof(ratio_));
+  // @@protoc_insertion_point(copy_constructor:PlaneWar.OrderData)
+}
+
+void OrderData::SharedCtor() {
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&type_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&ratio_) -
+      reinterpret_cast<char*>(&type_)) + sizeof(ratio_));
+}
+
+OrderData::~OrderData() {
+  // @@protoc_insertion_point(destructor:PlaneWar.OrderData)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void OrderData::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void OrderData::ArenaDtor(void* object) {
+  OrderData* _this = reinterpret_cast< OrderData* >(object);
+  (void)_this;
+}
+void OrderData::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void OrderData::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const OrderData& OrderData::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_OrderData_PlaneWar_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void OrderData::Clear() {
+// @@protoc_insertion_point(message_clear_start:PlaneWar.OrderData)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  ::memset(&type_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&ratio_) -
+      reinterpret_cast<char*>(&type_)) + sizeof(ratio_));
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* OrderData::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+    switch (tag >> 3) {
+      // int32 type = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // int32 ratio = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          ratio_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+      }
+    }  // switch
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* OrderData::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:PlaneWar.OrderData)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int32 type = 1;
+  if (this->type() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_type(), target);
+  }
+
+  // int32 ratio = 2;
+  if (this->ratio() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_ratio(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:PlaneWar.OrderData)
+  return target;
+}
+
+size_t OrderData::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:PlaneWar.OrderData)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // int32 type = 1;
+  if (this->type() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_type());
+  }
+
+  // int32 ratio = 2;
+  if (this->ratio() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_ratio());
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void OrderData::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:PlaneWar.OrderData)
+  GOOGLE_DCHECK_NE(&from, this);
+  const OrderData* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<OrderData>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:PlaneWar.OrderData)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:PlaneWar.OrderData)
+    MergeFrom(*source);
+  }
+}
+
+void OrderData::MergeFrom(const OrderData& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:PlaneWar.OrderData)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from.type() != 0) {
+    _internal_set_type(from._internal_type());
+  }
+  if (from.ratio() != 0) {
+    _internal_set_ratio(from._internal_ratio());
+  }
+}
+
+void OrderData::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:PlaneWar.OrderData)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void OrderData::CopyFrom(const OrderData& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:PlaneWar.OrderData)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool OrderData::IsInitialized() const {
+  return true;
+}
+
+void OrderData::InternalSwap(OrderData* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(OrderData, ratio_)
+      + sizeof(OrderData::ratio_)
+      - PROTOBUF_FIELD_OFFSET(OrderData, type_)>(
+          reinterpret_cast<char*>(&type_),
+          reinterpret_cast<char*>(&other->type_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata OrderData::GetMetadata() const {
   return GetMetadataStatic();
 }
 
@@ -85527,6 +87192,9 @@ template<> PROTOBUF_NOINLINE ::PlaneWar::SCUseMissile* Arena::CreateMaybeMessage
 template<> PROTOBUF_NOINLINE ::PlaneWar::CSMonsterCall* Arena::CreateMaybeMessage< ::PlaneWar::CSMonsterCall >(Arena* arena) {
   return Arena::CreateMessageInternal< ::PlaneWar::CSMonsterCall >(arena);
 }
+template<> PROTOBUF_NOINLINE ::PlaneWar::SCMonsterCall* Arena::CreateMaybeMessage< ::PlaneWar::SCMonsterCall >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::PlaneWar::SCMonsterCall >(arena);
+}
 template<> PROTOBUF_NOINLINE ::PlaneWar::CSClickStatic* Arena::CreateMaybeMessage< ::PlaneWar::CSClickStatic >(Arena* arena) {
   return Arena::CreateMessageInternal< ::PlaneWar::CSClickStatic >(arena);
 }
@@ -85680,6 +87348,9 @@ template<> PROTOBUF_NOINLINE ::PlaneWar::SCSyncPropsToHall* Arena::CreateMaybeMe
 template<> PROTOBUF_NOINLINE ::PlaneWar::CSChangeTable* Arena::CreateMaybeMessage< ::PlaneWar::CSChangeTable >(Arena* arena) {
   return Arena::CreateMessageInternal< ::PlaneWar::CSChangeTable >(arena);
 }
+template<> PROTOBUF_NOINLINE ::PlaneWar::SCChangeTable* Arena::CreateMaybeMessage< ::PlaneWar::SCChangeTable >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::PlaneWar::SCChangeTable >(arena);
+}
 template<> PROTOBUF_NOINLINE ::PlaneWar::CSUseRoulette* Arena::CreateMaybeMessage< ::PlaneWar::CSUseRoulette >(Arena* arena) {
   return Arena::CreateMessageInternal< ::PlaneWar::CSUseRoulette >(arena);
 }
@@ -85790,6 +87461,18 @@ template<> PROTOBUF_NOINLINE ::PlaneWar::SCPreHit* Arena::CreateMaybeMessage< ::
 }
 template<> PROTOBUF_NOINLINE ::PlaneWar::Animation* Arena::CreateMaybeMessage< ::PlaneWar::Animation >(Arena* arena) {
   return Arena::CreateMessageInternal< ::PlaneWar::Animation >(arena);
+}
+template<> PROTOBUF_NOINLINE ::PlaneWar::DiceJson* Arena::CreateMaybeMessage< ::PlaneWar::DiceJson >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::PlaneWar::DiceJson >(arena);
+}
+template<> PROTOBUF_NOINLINE ::PlaneWar::FortuneWheelJson* Arena::CreateMaybeMessage< ::PlaneWar::FortuneWheelJson >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::PlaneWar::FortuneWheelJson >(arena);
+}
+template<> PROTOBUF_NOINLINE ::PlaneWar::GoldenToadJson* Arena::CreateMaybeMessage< ::PlaneWar::GoldenToadJson >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::PlaneWar::GoldenToadJson >(arena);
+}
+template<> PROTOBUF_NOINLINE ::PlaneWar::OrderData* Arena::CreateMaybeMessage< ::PlaneWar::OrderData >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::PlaneWar::OrderData >(arena);
 }
 template<> PROTOBUF_NOINLINE ::PlaneWar::CSSyncAnimation* Arena::CreateMaybeMessage< ::PlaneWar::CSSyncAnimation >(Arena* arena) {
   return Arena::CreateMessageInternal< ::PlaneWar::CSSyncAnimation >(arena);
