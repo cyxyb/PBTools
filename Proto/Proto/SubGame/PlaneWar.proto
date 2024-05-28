@@ -255,6 +255,11 @@ message Decimal
 	int32 denom = 2;
 }
 
+message SC_SceneInfo
+{
+	repeated int32 bet_list = 1;	//押注
+}
+
 message CSLogin
 {
 	int32 playerId = 1;
