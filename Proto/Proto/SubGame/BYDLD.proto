@@ -1,0 +1,2024 @@
+syntax = "proto3";
+
+package BYDLD;
+
+enum GameCommand
+{
+	Req_Invalid 					= 0;
+	Req_HeartBeat					= 1000;
+	Req_LoginGameWithToken			= 1001;            
+	Req_UserReady 					= 1002;
+	Req_SetProbability				= 1003;
+	Req_FishTracesList				= 1004;
+	Req_ChangeScen					= 1005;
+	Req_FishOutsideScreen			= 1006; 
+	Req_LockFish					= 1007;
+	Req_UserShootMulti				= 1008;
+	Req_HitMultiFish				= 1009;
+	Req_SetSkill					= 1010;
+	Req_SyncMoney					= 1011;
+	Req_NotifyLogout				= 1012;			
+	Req_SyncFishReq 				= 1013;
+	Req_SyncFishRsp 				= 1014;
+	Req_UserTimeoutKick				= 1015;
+	Req_UserRunBackground 			= 1016;
+	Req_UpdateHallProp 				= 1017;
+	Req_PropsTrident 				= 1018;
+	Req_PropsTorpedo 				= 1019;
+	Req_PropsAwardPool 				= 1020;
+	Req_TridentInfo 				= 1021;
+	Req_TridentBet 					= 1022;
+	Req_BigSmallChoose				= 1023;
+	Req_BigSmallBet					= 1024;
+	Req_ShootTorpedo				= 1025;
+	Req_VipInfo						= 1026;
+	Req_PurchaseCheck				= 1027;
+	Req_ComTask						= 1028;
+	Req_TaskInfo					= 1029;
+	Req_UserScoreRecord				= 1030;
+	Req_FreeTimeEnd					= 1031;
+	Req_SyncFreeTimes				= 1032;
+	Req_ClickStatistic				= 1033;
+	Req_ActivityInfo				= 1034;
+	Req_PropDropNotify				= 1035;
+	Req_PropEndNotify				= 1036;
+	Req_UsersProp					= 1037;
+	Req_ScratchNewYearCard			= 1038;
+	Req_BuyNewYearCard				= 1039;
+	Req_NewYearCardExchange			= 1040;
+	Req_NewYearCardAwardRecord		= 1041;
+	Req_SaveSkillTime				= 1042;
+	Req_SuperTridentShoot			= 1043;
+	Req_SuperTridentAttack			= 1044;
+	Req_MatchResult					= 1045;
+	Req_MatchPackAddition			= 1046;
+	Req_MatchPackInvalid			= 1047;
+	Req_AwardPoolRecord				= 1048;
+	Req_FortuneShoot				= 1049;
+	Req_SyncFortune					= 1050;
+	Req_UserPoolInfo 				= 1051;
+	Req_UserPoolStatus				= 1052;
+	Req_UserPoolPreDraw				= 1053;
+	Req_UserPoolDraw				= 1054;
+	Req_UserPoolAdd					= 1055;
+	Req_LuckyDrawInfo				= 1056;
+	Req_GetLuckyTaskAward			= 1057;
+	Req_LuckyRedDot					= 1058;
+	Req_GetLuckyNum					= 1059;
+	Req_LuckyRecord					= 1060;
+	Req_OwnRecord					= 1061;
+	Req_DragonWheel					= 1062;
+	Req_SyncHallProp				= 1063;
+	Req_CheckDragonWheelProp  		= 1064;
+	Req_UserPoolDoubleInfo  		= 1100;
+	Req_UserPoolDouble  			= 1101;
+	Req_LuckyPoolInfo  				= 1102;
+	Req_LuckyPoolDraw  				= 1103;
+	Req_BigSmallWinInfo  			= 1120;
+	Req_TridentRankResult  			= 1121;
+	Req_BigSmallRecord  			= 1122;
+	Req_RewardTaskRecord  			= 1130;
+	Req_RewardAddTask  				= 1131;
+	Req_RewardChangeAuto  			= 1132;
+	Req_RewardAddTaskRep  			= 1133;
+	Req_RewardRecordRep  			= 1134;
+	Req_RewardAutoRep  				= 1135;
+	Req_RewardFishGet  				= 1136;
+	Req_SendItemsSwitch  			= 1137;
+	Req_DealSyncSeaCrabCreate  		= 1138;
+	Req_DealSyncCrabHitStatus  		= 1139;
+	DealDragonBallEnd  				= 1140;
+	Req_DevourHit  					= 1141;
+	Req_UpdateChestStatus  			= 1145;
+	Req_ChestConfig					= 1146;
+	Req_OpenChest					= 1147;
+	Req_SelectChestReward			= 1148;
+	Req_ChestSetAutoSelect			= 1149;
+	Req_ChestSetEnable				= 1150;
+	Req_SyncAnimation				= 1151;
+	Req_MagicCardList				= 1152;
+	Req_BuyGun						= 1153;
+	Req_GunInfo						= 1154;
+	Req_BuyWings					= 1155;
+	Req_WingsInfo					= 1156;
+	Req_GemConfigList				= 1157;
+	Req_JadeAwardInfo				= 1158;
+	Req_AztecGemConfig				= 1159;
+	Req_SetWings					= 1211;
+	Req_TortoiseExplode				= 1200;
+	Req_WaterDropInfo				= 1210;
+	Req_BeKicked					= 1220;
+	Req_ClientTimeValidate			= 1221;
+	Req_ChangeTable					= 1222;
+	Req_AwardNotify					= 20001;
+}
+
+enum ErrCode
+{
+		Success 							= 0;
+		LoadPropsDataFailed 				= 10001;
+		CanNotFindPlayerPoint 				= 10002;
+		ParameterIsWrong 					= 10003;
+		LackOfMoney 						= 10004;
+		FreeTimesChangeRatio 				= 10005;
+		IsNotSup 							= 10006;
+		DeserializeFailed 					= 10007;
+		PlayerNotExist 						= 10008;
+		PlayerAlreadyLogin 					= 10009;
+		LoadPlayerDataFailed 				= 10010;
+		AllocTableFailed 					= 10011;
+		DefendPlugIn 						= 10012;
+		QPEnterRoomFailed 					= 10013;
+		QPBaseUserInfoGetFailed 			= 10014;
+		QPReadGoldFailed 					= 10015;
+		LackMoneyInServer 					= 10016;
+		AlreadyInOtherGame 					= 10017;
+		ThisRoomIsFull 						= 10018;
+		UserPoolNoMeet 						= 10019;
+		UserPoolToHigher 					= 10020;
+		ThisTableIsFull 					= 10021;
+		ServerClosed 						= 10022;
+		PlayerNotInTable 					= 10023;
+		PropNoEnough 						= 10030;
+		PropRoomLimit 						= 10031;
+		PropUsing 							= 10032;
+		PropNotExist 						= 10033;
+		PropUsingSetGun 					= 10034;
+		ReqAddTaskSettlement 				= 10040;
+		ReqAddTaskMoneyLess 				= 10041;
+		ReqAddTaskAlready 					= 10042;
+		ReqAddTaskIDInvalid 				= 10043;
+		OpenChestFail 						= 10050;
+		SelectChestRewardFail 				= 10051;
+		
+}
+
+enum ItemName
+{
+		RewardTaskEnable					= 0;
+}
+
+enum AztecGemType
+{
+		AztecGemType_Null					= 0;
+		AztecGemType_Orange					= 1;
+		AztecGemType_Red					= 2;
+		AztecGemType_Pink					= 3;
+		AztecGemType_Purple					= 4;
+		AztecGemType_Blue					= 5;
+		AztecGemType_Green					= 6;
+		AztecGemType_A						= 7;
+		AztecGemType_K						= 8;
+		AztecGemType_Q						= 9;
+		AztecGemType_J						= 10;
+		AztecGemType_10						= 11;
+		AztecGemType_Critical				= 12;
+}
+
+enum ChestType
+{
+		
+		ChestTypePorcelain					= 0;
+		ChestTypeBronze						= 1;
+		ChestTypeSilver						= 2;
+		ChestTypeGold						= 3;
+}
+
+enum ChestAutoSelectOption
+{
+		None								= 0;
+		RedPacketTicket						= 1;
+		Money								= 2;
+}
+
+enum BeKickedReason
+{
+		NoReason							= 0;
+		ServerIsClosed						= 1;
+		HallCommand							= 2;
+		NoOperationTimeout					= 3;
+		Cheat								= 4;
+}
+
+message GunSpecEffect
+{
+		int32 	ratioLimit  				= 1 ;
+		float	hitChangeRate 				= 2;
+		float 	moneyChangeRate			 	= 3;
+		float 	speedRate 					= 4;
+		bool 	is_senior 					= 5;
+		bool 	double_tag 					= 6;
+}
+
+message WingsSpecEffect
+{
+		int32 	ratioLimit  = 1 ;
+		float	hitChangeRate = 2;
+		float 	moneyChangeRate = 3;
+		float 	speedRate = 4;
+		bool 	is_senior = 5;
+		bool 	double_tag = 6;
+}
+
+message WingsInfo
+{
+		int32 	wings_id  = 1 ;
+		bool	enable = 2;
+		WingsSpecEffect  wings_spec_effect = 3;
+		int32 	receive_type = 4;
+		int32 	activity_id = 5;
+		int32 	price = 6;
+		int32 	time_stamp = 7;
+		int32 	discount_price = 8;
+		int32 	start_time = 9;
+		int32 	end_time = 10;
+}
+
+message PurchaseGun
+{
+		int32 	money  = 1 ;
+		int32	level = 2;
+}
+
+message SCVipInfo
+{
+		int32 	chair_idx  = 1 ;
+		int32	cur_vip = 2;
+		int32	trident1_vip = 3;
+		int32	trident2_vip = 4;
+		int32	trident3_vip = 5;
+		int32	trident4_vip = 6;
+		int32	trident5_vip = 7;
+		int32	double_shoot_vip = 8;
+		int32	lock_shoot_vip = 9;
+		int32	golden_gun_vip = 10;
+		int32	paladin_gun_vip = 11;
+		int32	panda_gun_vip = 12;
+}
+
+message GunDetail
+{
+		int32 	gun_level  = 1 ;
+		bool	enable = 2;
+		int32	ratio_min = 3;
+		int32	ratio_max = 4;
+		int32	vip_limit = 5;
+		int32	price = 6;
+		float	attack_speed = 7;
+		int32	prop_id = 8;
+		GunSpecEffect	gunSpecEffect = 9;
+		int32	discount_price = 10;
+		int32	start_time = 11;
+		int32	end_time = 12;
+}
+message SCWingsInfo
+{	
+		repeated WingsInfo wings_list = 1;
+}
+
+message SCGunInfo
+{	
+		repeated GunDetail gun_list = 1;
+}
+
+message SCPurchaseCheck
+{	
+		int32 is_purchase = 1;
+}
+
+message ObjectData
+{	
+		string key = 1;
+		int32 	value = 2;
+}
+
+message Object2
+{	
+		string key = 1;
+		string value = 2;
+}
+
+message Object3
+{	
+		int32 key = 1;
+		int32 value = 2;
+}
+
+message Object4
+{	
+		int32 key = 1;
+		repeated int32 value = 2;
+}
+
+message Decimal
+{	
+		int32 num = 1;
+		int32 denom = 2;
+}
+
+message CSTridentInfo
+{	
+		int32 chair_idx = 1;
+}
+
+message SCTridentInfo
+{	
+		repeated int32 bets = 1;
+		bool is_full = 2;
+		int32 cur_point = 3;
+}
+
+message CSTridentBet
+{	
+		int32 bet = 1;
+}
+
+message SCTridentBet
+{	
+		int32 chair_idx = 1;
+		int32 award = 2;
+		int32 score = 3;
+		int32 bet = 4;
+		bool is_big_small = 5;
+}
+
+message SCPropsTrident
+{	
+		bool enable = 1;
+		int32 single_score = 2;
+		int32 cur_score = 3;
+		bool rank_enable = 4;
+}
+
+message CSBigSmallChoose
+{	
+		int32 chair_idx = 1;
+		int32 enter_or_exit = 2;
+}
+
+message SCBigSmallChoose
+{	
+		int32 chair_idx = 1;
+		int32 enter_or_exit = 2;
+		int32 award = 3;
+		int32 score = 4;
+}
+
+message CSBigSmallBet
+{	
+		bool is_bet_big = 1;
+		int32 times = 2;
+}
+
+message SCBigSmallBet
+{	
+		int32 chair_idx = 1;
+		repeated int32 dices = 2;
+		bool is_bet_big = 3;
+		int32 award = 4;
+		int32 score = 5;
+		bool is_end = 6;
+}
+
+message CSShootTorpedo
+{	
+		int32 chair_idx = 1;
+		string torpedo_id = 2;
+		bool shoot_all = 3;
+}
+
+message SCShootTorpedo
+{	
+		int32 chair_idx = 1;
+		string torpedo_id = 2;
+		int32 award = 3;
+		int32 score = 4;
+		repeated ObjectData objects = 5;
+}
+
+message SCPropsTorpedo
+{	
+		bool enable = 1;
+		repeated ObjectData objects = 2;
+}
+
+message AwardPoolData
+{	
+		string key = 1;
+		int32 value = 2;
+}
+
+message SCPropsAwardPool
+{	
+		bool enable = 1;
+		repeated AwardPoolData objects = 2;
+}
+
+message CSLoginGameWithToken
+{	
+		int32 playerId = 1;
+		string Token = 2;
+		int32 OSType = 3;
+		int32 table_id = 4;
+		int32 last_table_id = 5;
+}
+
+message SCLoginGameWithToken
+{	
+		int32 scene_index = 1;
+		int32 table_id = 2;
+}
+
+message CSUserReady
+{	
+		int32 playerId = 1;
+}
+
+message EffectInfo
+{	
+		int32 effect_id = 1;
+		bool is_global = 2;
+}
+
+message SpecEffect
+{	
+		int32 costMoney = 1;
+		int32 earnMoney = 2;
+}
+
+message StationBase
+{	
+		int32 gun_ratio = 1;
+		int32 gun_level = 2;
+		bool is_online = 3;
+		int32 user_socre = 4;
+		int32 chair_idx = 5;
+		string player_name = 6;
+		bool through_flag = 7;
+		bool double_flag = 8;
+		int32 player_id = 9;
+		int32 vip = 10;
+		int32 ticket = 11;
+		int32 effect_id = 12;
+		int32 title_id = 13;
+		Decimal red_packet_ticket = 14;
+		EffectInfo effect_info = 15;
+		int32 wings_props_id = 16;
+}
+
+message SCUserReady
+{	
+		repeated StationBase station_base_list = 1;
+		int32 timestamp = 2;
+}
+
+message JadeAwardInfo
+{	
+		int32 award_num = 1;
+		int32 award_ratio = 2;
+		int32 award_level = 3;
+		int32 award_type = 4;
+}
+
+message CSJadeAwardInfo
+{
+}
+
+message SCJadeAwardInfo
+{
+	repeated JadeAwardInfo jade_award_info = 1;
+	repeated int32 crit_list = 2;
+}
+
+message CSNotifyLogout
+{
+	int32 chair_idx = 1;
+}
+
+message SCNotifyLogout
+{
+	int32 chair_idx = 1;
+}
+
+message CSSetProbability
+{
+	int32 add_or_del = 1;
+	int32 gun_level = 2;
+	bool is_use_auto = 3;
+}
+
+message SCSetProbability
+{
+	int32 chair_idx = 1;
+	int32 gun_ratio = 2;
+	int32 gun_level = 3;
+	bool is_unlock = 4;
+}
+
+message UserShoot
+{
+	int32 angle = 1;
+	int32 bullet_id = 2;
+	int32 ratio = 3;
+	bool is_double = 4;
+	bool is_through = 5;
+	bool is_free_time = 6;
+	int32 bullet_type = 7;
+	float x = 8;
+	float y = 9;
+}
+
+message CSUserShootMulti
+{
+	repeated UserShoot shoot_bullet = 1;
+}
+
+message UserShootRsp
+{
+	int32 angle = 1;
+	int32 bullet_type = 2;
+	float x = 3;
+	float y = 4;
+}
+
+message SCUserShootMulti
+{
+	int32 chair_idx = 1;
+	repeated UserShootRsp bullet_info = 2;
+	int32 score = 3;
+}
+
+message HitFish
+{
+	int32 fish_uid = 1;
+	int32 bullet_id = 2;
+	int32 through_idx = 3;
+	int32 fish_id = 4;
+	repeated int32 effect_fish_uid = 5;
+	int32 round = 6;
+}
+
+message CSHitMultiFish
+{
+	repeated HitFish hit_info = 1;
+}
+
+message EffectFish
+{
+	int32 fish_uid = 1;
+	int32 score = 2;
+}
+
+message DragonBallWheelInfo
+{
+	repeated int32 ratio = 1;
+	repeated int32 next = 2;
+}
+
+message DragonBallInfo
+{
+	int32 base_ratio = 1;
+	int32 wheel = 2;
+	repeated int32 awardRatio = 3;
+	repeated DragonBallWheelInfo wheelInfo = 4;
+}
+
+message OctopusKingItem
+{
+	int32 selectedMultiple = 1;
+	repeated int32 selectList = 2;
+}
+
+message OctopusKingInfo
+{
+	repeated OctopusKingItem multiples = 1;
+}
+
+message MagicCardInfo
+{
+	int32 cardId = 1;
+	int32 value = 2;
+	int32 label = 3;
+}
+
+message MagicInfo
+{
+	int32 ratioCard = 1;
+	repeated MagicCardInfo magicCardList = 2;
+}
+
+message roulette_result
+{
+	int32 type = 1;
+	int32 location = 2;
+	int32 multiple = 3;
+	int32 crit = 4;
+}
+
+message zeus_result
+{
+	int32 type = 1;
+	repeated int32 layout = 2;
+	repeated roulette_result result = 3;
+	int32 pool_id = 4;
+}
+
+message Zeus
+{
+	repeated zeus_result result = 1;
+	int32 total_multiple = 2;
+}
+
+message GemConfig
+{
+	int32 id = 1;
+	int32 multiple = 2;
+}
+
+message SCGemConfigList
+{
+	repeated GemConfig gem_config_list = 1;
+	repeated int32 critical_config_list = 2;
+}
+
+message ItemWheel
+{
+	int32 wheel_id = 1;
+	int32 wheel_level = 2;
+	repeated int32 item_list = 3;
+	repeated int32 result_list = 4;
+	int32 wheel_multi = 5;
+	int32 award_num = 6;
+	int32 award_type = 7;
+}
+
+message CritWheel
+{
+	repeated int32 crit_list = 1;
+	int32 crit_result = 2;
+}
+
+message GoldenJadeInfo
+{
+	repeated ItemWheel item_wheels = 1;
+	repeated CritWheel crit_wheel = 2;
+	int32 total_multi = 3;
+}
+
+message AztecGemConfigItem
+{
+	int32 num = 1;
+	int32 ratio = 2;
+}
+
+message AztecGemConfig
+{
+	repeated AztecGemConfigItem items = 1;
+	AztecGemType type = 2;
+}
+
+message CSAztecGemConfig
+{
+}
+
+message SCAztecGemConfig
+{
+	repeated AztecGemConfig configs = 1;
+}
+
+message AztecClearReward
+{
+	repeated AztecGemType type = 1;
+	int32 value = 2;
+}
+
+message AztecTable
+{
+	repeated AztecGemType gems = 1;
+	repeated AztecClearReward rewards = 2;
+}
+
+message AztecStep
+{
+	repeated AztecTable tables = 1;
+}
+
+message AztecDataInfo
+{
+	repeated AztecStep steps = 1;
+	int32 total_win = 2;
+}
+
+message Capturefish
+{
+	int32 fish_uid = 1;
+	int32 get_score = 2;
+	int32 fish_id = 3;
+	repeated ObjectData torpedoes = 4;
+	int32 lucky_ratio = 5;
+	int32 trident_score = 6;
+	repeated EffectFish effect_fish = 7;
+	int32 award_time = 8;
+	int32 bulletType = 9;
+	int32 multiple = 10;
+	int32 get_peilv = 11;
+	int32 death = 12;
+	int32 stage = 13;
+	int32 sub_stage = 14;
+	int32 award_index = 15;
+	int32 crit_multiple = 16;
+	int32 ingot_multi = 17;
+	int32 ratio = 18;
+	int32 frozen_time = 19;
+	int32 trident_multi = 20;
+	int32 scratch_card = 21;
+	DragonBallInfo ball_info = 22;
+	OctopusKingInfo octopus_king = 23;
+	bool is_reward = 24;
+	MagicInfo magic_info = 25;
+	Zeus zeus_info = 26;
+	GoldenJadeInfo golden_jade_info = 27;
+	AztecDataInfo aztec_data_info = 28;
+}
+
+message SCHitMultiFish
+{
+	int32 chair_idx = 1;
+	int32 invalid = 2;
+	repeated Capturefish capture_info = 3;
+	int32 score = 4;
+	int32 earn = 5;
+	SpecEffect specEffect = 6;
+}
+
+message CSSyncMoney
+{
+	int32 chair_idx = 1;
+	int32 type = 2;
+}
+
+message SCSyncMoney
+{
+	int32 chair_idx = 1;
+	int32 score = 2;
+	int32 type = 3;
+	int32 delta = 4;
+	int32 invalid_score = 5;
+	int32 freetime_score = 6;
+	int32 ticket = 7;
+	int32 ingot_score = 8;
+}
+
+message FishTrace
+{
+	float x = 1;
+	float y = 2;
+	float z = 3;
+	float wait_time = 4;
+}
+
+message SmallFish
+{
+	int32 fish_uid = 1;
+	int32 fish_id = 2;
+	float x = 3;
+	float y = 4;
+	float time = 5;
+}
+
+message FishTraces
+{
+	int32 fish_uid = 1;
+	int32 fish_id = 2;
+	int32 live_time = 3;
+	float speed = 4;
+	repeated FishTrace fish_trace = 5;
+	repeated SmallFish small_fish_list = 6;
+	int32 route_type = 7;
+	int32 fish_gender = 8;
+}
+
+message SCFishTracesList
+{
+	repeated FishTraces fish_traces = 1;
+	bool accelerate_flag = 2;
+}
+
+message SyncFishTraces
+{
+	int32 fish_uid = 1;
+	int32 fish_id = 2;
+	int32 live_time = 3;
+	float speed = 4;
+	int32 route_type = 5;
+	repeated FishTrace fish_trace = 6;
+	int32 fish_cur_point = 7;
+	bool already_move = 8;
+	float x = 9;
+	float y = 10;
+	float time = 11;
+	int32 stage = 12;
+	int32 sub_stage = 13;
+	int32 lifespan = 14;
+	int32 frozen_time = 15;
+	int32 fish_gender = 16;
+}
+
+message CSSyncFishReq
+{
+	int32 chair_idx = 1;
+}
+
+message SCSyncFishReq
+{
+	int32 chair_idx = 1;
+}
+
+message CSSyncFishRsp
+{
+	repeated SyncFishTraces fish_traces = 1;
+	bool accelerate_flag = 2;
+}
+
+message SCSyncFishRsp
+{
+	repeated SyncFishTraces fish_traces = 1;
+	bool accelerate_flag = 2;
+}
+
+message SCChangeScene
+{
+	int32 scene_index = 1;
+}
+
+message CSFishOutsideScreen
+{
+	int32 fish_uid = 1;
+}
+
+message CSLockFish
+{
+	int32 chair_idx = 1;
+	int32 fish_uid = 2;
+	bool is_open = 3;
+}
+
+message SCLockFish
+{
+	int32 chair_idx = 1;
+	int32 fish_uid = 2;
+	bool is_open = 3;
+}
+
+message CSSetSkill
+{
+	int32 chair_idx = 1;
+	int32 double_flag = 2;
+	int32 through_flag = 3;
+	bool auto_flag = 4;
+}
+
+message SCSetSkill
+{
+	int32 chair_idx = 1;
+	int32 double_flag = 2;
+	int32 through_flag = 3;
+}
+
+message SCUserTimeoutKick
+{
+	int32 count_sec = 1;
+}
+
+message CSUserRunBackground
+{
+	int32 chair_idx = 1;
+	bool background = 2;
+}
+
+message SCUserRunBackground
+{
+	repeated StationBase station_base_list = 1;
+}
+
+message CSUpdateHallProp
+{
+	int32 chair_idx = 1;
+	int32 configId = 2;
+}
+
+message CSHeartBeat
+{
+	int32 chair_idx = 1;
+}
+
+message SCHeartBeat
+{
+	int32 chair_idx = 1;
+}
+
+message SCComTask
+{
+	int32 gun_ratio = 1;
+	int32 gun_level = 2;
+	int32 award = 3;
+	int32 ticket = 4;
+}
+
+message CSTaskInfo
+{
+}
+
+message SCTaskInfo
+{
+	int32 gun_ratio = 1;
+	int32 gun_level = 2;
+	int32 cur_num = 3;
+	int32 total_num = 4;
+	int32 vip_level = 5;
+	int32 is_unlock = 6;
+	int32 award = 7;
+	bool is_vip_unlock = 8;
+	int32 ticket = 9;
+}
+
+message UserScoreRecord
+{
+	int32 type = 1;
+	string content = 2;
+	string score = 3;
+}
+
+message SCSyncFreeTimes
+{
+	int32 times = 1;
+	int32 level = 2;
+	int32 chair_idx = 3;
+	int32 type = 4;
+	int32 exchange = 5;
+}
+
+message CSClickStatistic
+{
+	string num = 1;
+}
+
+message JumpHighArena
+{
+	bool is_open = 1;
+	int32 vip = 2;
+	int32 coin = 3;
+	int32 game_time = 4;
+	repeated int32 fish_id = 5;
+}
+
+message GiftBag
+{
+	bool is_open = 1;
+	repeated int32 fish_id = 2;
+}
+
+message NewYearCardActivityInfo
+{
+	bool card_enable = 1;
+	int32 card_count = 2;
+	int32 card_vip = 3;
+}
+
+message UserPoolActivityInfo
+{
+	bool user_pool_show = 1;
+	repeated int32 award_fish = 2;
+	repeated Object3 user_pool_limit = 3;
+}
+
+message DragonBallConfig
+{
+	int32 ratio = 1;
+	bool next = 2;
+}
+
+message SCActivityInfo
+{
+	JumpHighArena jump = 1;
+	GiftBag config = 2;
+	NewYearCardActivityInfo card = 3;
+	bool award_pool_rank = 4;
+	UserPoolActivityInfo user_pool = 5;
+	bool lucky_draw = 6;
+	Object4 dragon_wheel = 7;
+	Object3 trident_wheel = 8;
+	DragonBallConfig dragon_ball = 9;
+	repeated int32 toad_multi = 10;
+}
+
+message SCPropEndNotify
+{
+	int32 chair_idx = 1;
+	int32 prop_id = 2;
+	int32 status = 3;
+	int32 free_level = 4;
+	int32 free_times = 5;
+}
+
+message SCPropDropNotify
+{
+	int32 chair_idx = 1;
+	int32 fish_uid = 2;
+	int32 prop_id = 3;
+	int32 count = 4;
+	int32 lock_ratio = 5;
+}
+
+message Prop
+{
+	int32 id = 1;
+	int32 count = 2;
+	int32 ratio = 3;
+	float x = 4;
+	float y = 5;
+	float angle = 6;
+	int32 status = 7;
+	int32 multiple = 8;
+	int32 crit_multi = 9;
+	int32 ingot_id = 10;
+	int32 remain_times = 11;
+	int32 total_times = 12;
+	int32 bullet_id = 13;
+	int32 ingot_multi = 14;
+	int32 trident_multi = 15;
+}
+
+message UserProp
+{
+	int32 chair_idx = 1;
+	repeated Prop props = 2;
+}
+
+message UsersProp
+{
+	repeated UserProp user_prop = 1;
+}
+
+message SSAwardPoolMsg
+{
+	int32 uniqueID = 1;
+	int32 arenaID = 2;
+	int32 poolID = 3;
+	int32 delta = 4;
+}
+
+message CSScratchNewYearCard
+{
+	int32 chair_idx = 1;
+}
+
+message CSBuyNewYearCard
+{
+	int32 buy_count = 1;
+}
+
+message NewYearCardMultiple
+{
+	string award_no = 1;
+	int32 multiple = 2;
+}
+
+message SCScratchNewYearCard
+{
+	int32 result = 1;
+	int32 chair_idx = 2;
+	int32 cur_score = 3;
+	int32 base = 4;
+	int32 count = 5;
+	repeated NewYearCardMultiple multiples = 6;
+}
+
+message CSNewYearCardExchange
+{
+	int32 times = 1;
+	bool exchange_all = 2;
+}
+
+message NewYearCardAward
+{
+	int32 card_idx = 1;
+	int32 award = 2;
+	int32 bless_award = 3;
+	int32 base = 4;
+	repeated NewYearCardMultiple multiples = 5;
+}
+
+message SCNewYearCardExchange
+{
+	int32 chair_idx = 1;
+	int32 result = 2;
+	repeated NewYearCardAward awards = 3;
+	int32 score = 4;
+	int32 count = 5;
+	bool exchange_all = 6;
+	int32 req_id = 7;
+}
+
+message CSNewYearCardAwardRecord
+{
+}
+message NewYearCardAwardRecord
+{
+	int32 time = 1;
+	int32 normal_award = 2;
+	int32 bless_award = 3;
+}
+
+message SCNewYearCardAwardRecord
+{
+	int32 result = 1;
+	repeated NewYearCardAwardRecord records = 2;
+}
+
+message SkillTime
+{
+	int32 type = 1;
+	int32 time = 2;
+}
+
+message CSSaveSkillTime
+{
+	repeated SkillTime skil_time = 1;
+}
+
+message CSSuperTridentShoot
+{
+}
+
+message SCSuperTridentShoot
+{
+	int32 chair_idx = 1;
+}
+
+message CSSuperTridentAttack
+{
+	repeated int32 screen_fishes = 1;
+}
+
+message CommonResp
+{
+	int32 code = 1;
+	string message = 2;
+}
+
+message CSAwardPoolRecord
+{
+}
+
+message AwardPoolRecord
+{
+	string time = 1;
+	string name = 2;
+	int32 poolId = 3;
+	int32 award = 4;
+	int32 playerId = 5;
+}
+
+message SCAwardPoolRecord
+{
+	repeated AwardPoolRecord  records = 1;
+}
+
+message CSFortuneShoot
+{
+}
+
+message SCFortuneShoot
+{
+	int32 chair_idx = 1;
+	bool can_shoot = 2;
+}
+
+message IngotInfo
+{
+	int32 ingot_id = 1;
+	int32 remain = 2;
+	int32 total = 3;
+}
+
+message SCSyncFortune
+{
+	repeated IngotInfo ingot_info = 1;
+}
+
+message CSUserPoolInfo
+{
+	bool open_page = 1;
+}
+
+message UserAwardItem
+{
+	int32 index = 1;
+	int32 item_max = 2;
+	string name = 3;
+	repeated Object2 goods = 4;
+}
+
+message SCUserPoolInfo
+{
+	int32 chair_idx = 1;
+	bool open_page = 2;
+	bool status = 3;
+	int32 count = 4;
+	int32 pool_max = 5;
+	repeated UserAwardItem items = 6;
+}
+
+message CSUserPoolStatus
+{
+	bool open = 1;
+}
+
+message SCUserPoolStatus
+{
+	bool open = 1;
+}
+
+message CSUserPoolPreDraw
+{
+	int32 level = 1;
+}
+
+message SCUserPoolPreDraw
+{
+	int32 code = 1;
+	int32 level = 2;
+	string msg = 3;
+}
+
+message SCUserPoolDraw
+{
+	int32 chair_idx = 1;
+	repeated Object2 goods = 2;
+	Object2 award = 3;
+	Object3 award_cnt = 4;
+}
+
+message SCUserPoolAdd
+{
+	int32 add = 1;
+	int32 count = 2;
+	int32 first_max = 3;
+	int32 pool_max = 4;
+	bool status = 5;
+	string level_name = 6;
+}
+
+message ResultRank
+{
+	int32 idx = 1;
+	string icon = 2;
+	string name = 3;
+}
+
+message SCMatchResult
+{
+	int32 matchId = 1;
+	repeated ResultRank rank_list = 2;
+	bool isPack = 3;
+	int32 oneself_rank = 4;
+	int32 addition_source = 5;
+	int32 reaward_addition = 6;
+	repeated Object3 match_goods = 7;
+	repeated Object3 pack_goods = 8;
+	repeated Object3 lucky_goods = 9;
+}
+
+message MatchPackAddition
+{
+	string id = 1;
+	bool is_buy = 2;
+	float score_addition = 3;
+	float reaward_addition = 4;
+	int32 card = 5;
+	int32 sec = 6;
+}
+
+message CSMatchPackAddition
+{
+}
+
+message SCMatchPackAddition
+{
+	repeated MatchPackAddition addition = 1;
+}
+
+message SCMatchPackInvail
+{
+	string packId = 1;
+}
+
+message HttpResult
+{
+	int32 En = 1;
+	string Data = 2;
+}
+
+message CSHBonusPool
+{
+	int32 mathcId = 1;
+	int32 timeId = 2;
+	int32 playerId = 3;
+}
+
+message HBonusPool
+{
+	string name = 1;
+	int32 value = 2;
+	int32 count = 3;
+}
+
+message SCHBonusPool
+{
+	repeated HBonusPool pool = 1;
+}
+
+message CSHRankBar
+{
+	int32 mathcId = 1;
+	int32 timeId = 2;
+	int32 playerId = 3;
+}
+
+message SCHRankBar
+{
+	int32 idx = 1;
+	int32 total = 2;
+	int32 reaward = 3;
+}
+
+message RealRank
+{
+	int32 idx = 1;
+	string icon = 2;
+	string name = 3;
+	int32 score = 4;
+	repeated Object3 goods = 5;
+}
+
+message CSHRealRank
+{
+	int32 playerId = 1;
+	int32 mathcId = 2;
+	int32 timeId = 3;
+}
+
+message SCHRealRank
+{
+	repeated RealRank real_rank = 1;
+	RealRank onself_rank = 2;
+	int32 total_num = 3;
+	int32 score_addition = 4;
+	int32 reward_addition = 5;
+	int32 card_addition = 6;
+	int32 vip_addition = 7;
+}
+
+message Reward
+{
+	int32 idxl = 1;
+	int32 idxr = 2;
+	repeated Object3 goods = 3;
+	string lucky = 4;
+}
+
+message CSHReward
+{
+	int32 mathcId = 1;
+	int32 timeId = 2;
+}
+
+message SCHReward
+{
+	int32 rewards = 1;
+}
+
+message CSHMatchInfoTip
+{
+}
+
+message MatchInfoTip
+{
+	string name = 1;
+	int32 mathcId = 2;
+	string time = 3;
+	repeated Object3 goods = 4;
+}
+
+message SCHMatchInfoTip
+{
+	repeated MatchInfoTip matchTips = 1;
+}
+
+message CSHMatchInfo
+{
+	int32 playerId = 1;
+}
+
+message SCHMatchInfo
+{
+	string name = 1;
+	int32 mathcId = 2;
+	int32 timeId = 3;
+	int32 status = 4;
+	int32 down = 5;
+	string time = 6;
+}
+
+message HistoryRank
+{
+	int32 idx = 1;
+	string icon = 2;
+	string name = 3;
+	int32 addition_source = 4;
+	int32 addition = 5;
+	repeated Object3 match_goods = 6;
+	repeated Object3 pack_goods = 7;
+	repeated Object3 lucky_goods = 8;
+}
+
+message CSHHistoryRank
+{
+	int32 playerId = 1;
+	int32 matchId = 2;
+}
+
+message SCHHistoryRank
+{
+	int32 matchId = 1;
+	repeated HistoryRank rank_list = 2;
+	HistoryRank oneself_rank = 3;
+}
+
+message CSHLuckyInfo
+{
+	int32 matchId = 1;
+}
+
+message LuckyInfo
+{
+	int32 lRange = 1;
+	int32 rRange = 2;
+}
+
+message SCHLuckyInfo
+{
+	int32 matchId = 1;
+	repeated LuckyInfo data = 2;
+}
+
+message AwardDetail
+{
+	int32 player_id = 1;
+	int32 nums = 2;
+	int32 period = 3;
+	int32 vip = 4;
+	string nick_name = 5;
+	string photo = 6;
+}
+
+message SCLuckyAwardNotify
+{
+	int32 award_type = 1;
+	repeated AwardDetail detail = 2;
+}
+
+message AwardProp
+{
+	int32 prop_id = 1;
+	int32 num = 2;
+}
+
+message LuckyTaskInfo
+{
+	int32 id = 1;
+	int32 status = 2;
+	int32 score = 3;
+	string text = 4;
+	int32 cur = 5;
+	int32 total = 6;
+	bool show = 7;
+}
+
+message CSLuckyDrawInfo
+{
+}
+
+message SCLuckyDrawInfo
+{
+	int32 hour_remain_sec = 1;
+	int32 day_remain_sec = 2;
+	repeated AwardProp hour_reward = 3;
+	repeated AwardProp day_reward =	4;
+	repeated int32 day_lucky_nums = 5;
+	int32 score = 6;
+	int32 hour_total = 7;
+	int32 day_total = 8;
+	int32 hour_award_num = 9;
+	int32 day_award_num = 10;
+	int32 next_start_tick = 11;
+	repeated LuckyTaskInfo task_info = 12;
+	int32 exchange_score = 13;
+	int32 next_remain_sec = 14;
+	repeated int32 hour_lucky_nums = 15;
+}
+
+message CSGetLuckyTaskAward
+{
+	int32 task_id = 1;
+}
+
+message SCLuckyTaskInfo
+{
+	LuckyTaskInfo task = 1;
+	int32 score = 2;
+	int32 code = 3;
+}
+
+message CSGetLuckyNum
+{
+	int32 times = 1;
+}
+message SCGetLuckyNum
+{
+	int32 score = 1;
+	int32 error_code = 2;
+	repeated int32 lucky_nums = 3;
+}
+
+message CSLuckyRedDot
+{
+}
+
+message SCLuckyRedDot
+{
+	bool show = 1;
+}
+
+message LuckyRecord
+{
+	int32 vip = 1;
+	int32 times = 2;
+	int32 lucky_num = 3;
+	int32 tick = 4;
+	string nick_name = 5;
+}
+
+message OwnRecord
+{
+	repeated AwardProp reward = 1;
+	int32 status = 2;
+	int32 tick = 3;
+	int32 lucky_num = 4;
+}
+
+message CSLuckyRecord
+{
+	int32 type = 1;
+}
+
+message SCLuckyRecord
+{
+	int32 type = 1;
+	repeated LuckyRecord record = 2;
+}
+
+message SCOwnRecord
+{
+	repeated OwnRecord record = 1;
+}
+
+message CSDragonWheelStart
+{
+	int32 stage = 1;
+}
+
+message SCDragonWheelStop
+{
+	int32 stage = 1;
+	int32 ratio = 2;
+	int32 score = 3;
+	int32 atomic_ratio = 4;
+	int32 fortune_ratio = 5;
+	int32 poseidon_ratio = 6;
+	int32 error = 7;
+	int32 chair_id = 8;
+	int32 fish_value = 9;
+	bool is_prop = 10;
+	int32 bullet_ratio = 11;
+}
+
+message SCSyncHallProp
+{
+	repeated Object3 hall_prop = 1;
+}
+
+message CSCheckDragonWheelProp
+{
+	int32 prop_id = 1;
+}
+
+message SCCheckDragonWheelProp
+{
+	bool can_use = 1;
+	int32 prop_id = 2;
+	int32 chair_id = 3;
+	int32 ratio = 4;
+}
+
+message CSUserPoolDoubleInfo
+{
+}
+
+message SCUserPoolDoubleInfo
+{
+	int32 cost = 1;
+	repeated Object2 item_before = 2;
+	repeated Object2 item_double = 3;
+}
+
+message CSUserPoolDouble
+{
+	bool is_double = 1;
+}
+
+message SCUserPoolDouble
+{
+	int32 code = 1;
+	int32 result = 2;
+	int32 chair_idx = 3;
+	repeated Object3 item = 4;
+	repeated Object3 extra_item = 5;
+}
+
+message CSLuckyPoolInfo
+{
+}
+
+message SCLuckyPoolInfo
+{
+	int32 count = 1;
+	int32 max = 2;
+}
+
+message CSLuckyPoolDraw
+{
+}
+
+message SCLuckyPoolDraw
+{
+	repeated Object3 item = 1;
+}
+
+message TridentRankList
+{
+	int32 user_dbid = 1;
+	string nick_name = 2;
+	int32 continue_times = 3;
+	string date_time = 4;
+	int32 rank = 5;
+}
+
+message SCTridentRankResult
+{
+	repeated TridentRankList cur_ranks = 1;
+	repeated TridentRankList his_ranks = 2;
+}
+
+message CSBigSmallWinInfo
+{
+	int32 chair_idx = 1;
+}
+
+message SCBigSmallWinInfo
+{
+	int32 cur_win_times = 1;
+	int32 today_win_times = 2;
+	string date_time = 3;
+}
+
+message CSBigSmallRecord
+{
+	int32 max_get = 1;
+}
+
+message BigSmallRecord
+{
+	repeated int32 dices = 1;
+}
+
+message SCBigSmallRecord
+{
+	repeated BigSmallRecord records = 1;
+}
+
+message ItemEnableInfo
+{
+	int32 name = 1;
+	bool enable = 2;
+}
+
+message ItemEnableNotice
+{
+	repeated ItemEnableInfo items = 1;
+}
+
+message RewardTask
+{
+	int32 taskId = 1;
+	int32 status = 2;
+}
+
+message RewardConf
+{
+	int32 taskID = 1;
+	int32 nAward = 2;
+}
+
+message CSReqRewardAddTask
+{
+	int32 ID = 1;
+	int32 taskID = 2;
+}
+
+message SCRepRewardTaskList
+{
+	int32 ID = 1;
+	repeated RewardTask tList = 2;
+}
+
+message SCRewardTaskFinish
+{
+	int32 result = 1;
+	int32 money = 2;
+	repeated RewardTask tList = 3;
+}
+
+message SCSyncRewardTaskResult
+{
+	int32 chair_id = 1;
+	SCRewardTaskFinish result = 2;
+	int32 earn = 3;
+	int32 fish_id = 4;
+	int32 get_peilv = 5;
+	int32 multiple = 6;
+	int32 crit_multiple = 7;
+	int32 ingot_multi = 8;
+	int32 trident_multi = 9;
+}
+
+message CSReqRewardRecord
+{
+	int32 ID = 1;
+}
+
+message SCRepRewardTaskRecord
+{
+	int32 ID = 1;
+	int32 nRecord = 2;
+	int32 cost = 3;
+	int32 record = 4;
+	repeated RewardConf confList = 5;
+}
+
+message CSRewardChangeAuto
+{
+	int32 autoTimes = 1;
+}
+
+message SCRewardAutoRep
+{
+	int32 status = 1;
+	bool accept = 2;
+}
+
+message SCSeaCrabCreate
+{
+	int32 chair_id = 1;
+	bool status = 2;
+}
+
+message CSSyncCrabStatus
+{
+}
+
+message SCSyncCrabStatus
+{
+	int32 status = 1;
+	int32 chair_id = 2;
+	int32 multiple_1 = 3;
+	int32 multiple_2 = 4;
+}
+
+message CSDragonBallEnd
+{
+}
+
+message SCDragonBallRes
+{
+	int32 chair_id = 1;
+	int32 lock_ratio = 2;
+	int32 base_ratio = 3;
+	int32 total_award = 4;
+}
+
+message DevouredFish
+{
+	int32 fish_uid = 1;
+	int32 earn = 2;
+}
+
+message CSDevourHit
+{
+	repeated int32 screen_fishes = 1;
+}
+
+message SCDevourHit
+{
+	repeated DevouredFish devour_fishes = 1;
+	int32 crit = 2;
+	int32 multiple = 3;
+	int32 ingot_multi = 4;
+}
+
+message OpenChestReward
+{
+	int32 id = 1;
+	Decimal num = 2;
+}
+
+message SCUpdateChestStatus
+{
+	bool is_active = 1;
+	ChestType chest_type = 2;
+	int32 total_progress = 3;
+	int32 remain_progress = 4;
+	bool guide = 5;
+	int32 available_reward = 6;
+}
+
+message CSChestConfig
+{
+}
+
+message ChestBrief
+{
+	ChestType chest_type = 1;
+	repeated OpenChestReward reward = 2;
+}
+
+message SCChestConfig
+{
+	int32 end_time = 1;
+	repeated ChestBrief chest_brief_list = 2;
+	int32 min_ratio = 3;
+	bool auto_open = 4;
+	ChestAutoSelectOption auto_option = 5;
+	bool is_enable = 6;
+}
+
+message CSOpenChest
+{
+}
+
+message SCOpenChest
+{
+	repeated OpenChestReward reward_list = 1;
+	repeated ChestAutoSelectOption auto_option = 2;
+}
+
+message CSSelectChestReward
+{
+	int32 select_index = 1;
+}
+
+message SCSelectChestReward
+{
+	OpenChestReward reward = 1;
+}
+
+message CSChestSetAutoSelect
+{
+	ChestAutoSelectOption auto_option = 1;
+	bool auto_open = 2;
+}
+
+message SCChestSetAutoSelect
+{
+	ChestAutoSelectOption auto_option = 1;
+	bool auto_open = 2;
+}
+
+message CSChestSetEnable
+{
+	bool is_enable = 1;
+}
+
+message SCChestSetEnable
+{
+	bool is_enable = 1;
+}
+
+message CSSyncAnimation
+{
+	int32 animationId = 1;
+	int32 step = 2;
+	bool complete = 3;
+	string content = 4;
+}
+
+message SCSyncAnimation
+{
+	int32 animationId = 1;
+	int32 step = 2;
+	bool complete = 3;
+	string content = 4;
+}
+
+message CSMagicCardList
+{
+}
+
+message SCMagicCardList
+{
+	repeated MagicCardInfo magicCardList = 1; 
+}
+
+message SCTortoiseExplode
+{
+	int32 chair_idx = 1; 
+	int32 fish_uid = 2; 
+	int32 bullet_id = 3; 
+	int32 ratio = 4; 
+	int32 max_effect = 5; 
+	bool is_double = 6; 
+}
+
+message CSBuyGun
+{
+	int32 gun_level = 1;
+}
+
+message SCBuyGun
+{
+	bool is_buy = 1;
+	int32 gun_level = 2;
+}
+
+message SCWaterDropInfo
+{
+	bool enable = 1;
+	int32 drop_count = 2;
+	int32 fragment_count = 3;
+}
+
+message CSBuyWings
+{
+	int32 wings_id = 1;
+}
+
+message SCBuyWings
+{
+	int32 wings_id = 1;
+	bool is_buy = 2;
+}
+
+message CSSetWings
+{
+	int32 wings_prop_id = 1;
+}
+
+message SCSetWings
+{
+	int32 chair_idx = 1;
+	int32 wings_prop_id = 2;
+	int32 code = 3;
+}
+
+message SCBeKicked
+{
+	BeKickedReason reason = 1;
+}
+
+message CSClientTimeValidate
+{
+	int32 timestamp = 1;
+}
+
+message SCClientTimeValidate
+{
+}
+
+message CSChangeTable
+{
+}
+
+message SCChangeTable
+{
+}
