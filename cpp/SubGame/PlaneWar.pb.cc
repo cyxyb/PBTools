@@ -8514,7 +8514,7 @@ const char descriptor_table_protodef_PlaneWar_2eproto[] PROTOBUF_SECTION_VARIABL
   "neWar.PlayerInfo\"I\n\013MonsterInfo\022\023\n\013monst"
   "erType\030\001 \001(\005\022\022\n\nmonsterUID\030\002 \001(\005\022\021\n\tisCo"
   "nnect\030\003 \001(\010\"^\n\016SCMonsterSpawn\022\020\n\010configI"
-  "D\030\001 \001(\t\022*\n\013monsterList\030\002 \003(\0132\025.PlaneWar."
+  "D\030\001 \001(\005\022*\n\013monsterList\030\002 \003(\0132\025.PlaneWar."
   "MonsterInfo\022\016\n\006isCall\030\003 \001(\010\"^\n\006CSShot\022\r\n"
   "\005angle\030\001 \001(\005\022\r\n\005ratio\030\002 \001(\005\022\022\n\nbulletTyp"
   "e\030\003 \001(\005\022\017\n\007scatter\030\004 \001(\005\022\021\n\tsourceUID\030\005 "
@@ -8609,7 +8609,7 @@ const char descriptor_table_protodef_PlaneWar_2eproto[] PROTOBUF_SECTION_VARIABL
   "ID\030\002 \001(\005\"\024\n\022CSSwitchBackGround\"#\n\022SCSwit"
   "chBackGround\022\r\n\005chair\030\001 \001(\005\"\254\001\n\013MonsterP"
   "ath\022&\n\007monster\030\001 \001(\0132\025.PlaneWar.MonsterI"
-  "nfo\022\020\n\010configID\030\002 \001(\t\022\021\n\tstepIndex\030\003 \001(\005"
+  "nfo\022\020\n\010configID\030\002 \001(\005\022\021\n\tstepIndex\030\003 \001(\005"
   "\022\021\n\troadIndex\030\004 \001(\005\022\r\n\005moveT\030\005 \001(\002\022\020\n\010do"
   "tIndex\030\006 \001(\005\022\r\n\005delay\030\007 \001(\002\022\r\n\005stage\030\010 \001"
   "(\005\"C\n\021SCSyncMonsterInfo\022.\n\017createdPathLi"
@@ -22041,19 +22041,18 @@ SCMonsterSpawn::SCMonsterSpawn(const SCMonsterSpawn& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       monsterlist_(from.monsterlist_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  configid_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_configid().empty()) {
-    configid_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_configid(), 
-      GetArena());
-  }
-  iscall_ = from.iscall_;
+  ::memcpy(&configid_, &from.configid_,
+    static_cast<size_t>(reinterpret_cast<char*>(&iscall_) -
+    reinterpret_cast<char*>(&configid_)) + sizeof(iscall_));
   // @@protoc_insertion_point(copy_constructor:PlaneWar.SCMonsterSpawn)
 }
 
 void SCMonsterSpawn::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SCMonsterSpawn_PlaneWar_2eproto.base);
-  configid_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  iscall_ = false;
+  ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+      reinterpret_cast<char*>(&configid_) - reinterpret_cast<char*>(this)),
+      0, static_cast<size_t>(reinterpret_cast<char*>(&iscall_) -
+      reinterpret_cast<char*>(&configid_)) + sizeof(iscall_));
 }
 
 SCMonsterSpawn::~SCMonsterSpawn() {
@@ -22064,7 +22063,6 @@ SCMonsterSpawn::~SCMonsterSpawn() {
 
 void SCMonsterSpawn::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
-  configid_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
 void SCMonsterSpawn::ArenaDtor(void* object) {
@@ -22089,8 +22087,9 @@ void SCMonsterSpawn::Clear() {
   (void) cached_has_bits;
 
   monsterlist_.Clear();
-  configid_.ClearToEmpty();
-  iscall_ = false;
+  ::memset(&configid_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&iscall_) -
+      reinterpret_cast<char*>(&configid_)) + sizeof(iscall_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -22101,12 +22100,10 @@ const char* SCMonsterSpawn::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // string configID = 1;
+      // int32 configID = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_configid();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "PlaneWar.SCMonsterSpawn.configID"));
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+          configid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -22157,14 +22154,10 @@ failure:
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // string configID = 1;
-  if (this->configid().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_configid().data(), static_cast<int>(this->_internal_configid().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "PlaneWar.SCMonsterSpawn.configID");
-    target = stream->WriteStringMaybeAliased(
-        1, this->_internal_configid(), target);
+  // int32 configID = 1;
+  if (this->configid() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_configid(), target);
   }
 
   // repeated .PlaneWar.MonsterInfo monsterList = 2;
@@ -22204,10 +22197,10 @@ size_t SCMonsterSpawn::ByteSizeLong() const {
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  // string configID = 1;
-  if (this->configid().size() > 0) {
+  // int32 configID = 1;
+  if (this->configid() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_configid());
   }
 
@@ -22248,7 +22241,7 @@ void SCMonsterSpawn::MergeFrom(const SCMonsterSpawn& from) {
   (void) cached_has_bits;
 
   monsterlist_.MergeFrom(from.monsterlist_);
-  if (from.configid().size() > 0) {
+  if (from.configid() != 0) {
     _internal_set_configid(from._internal_configid());
   }
   if (from.iscall() != 0) {
@@ -22278,8 +22271,12 @@ void SCMonsterSpawn::InternalSwap(SCMonsterSpawn* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   monsterlist_.InternalSwap(&other->monsterlist_);
-  configid_.Swap(&other->configid_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  swap(iscall_, other->iscall_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(SCMonsterSpawn, iscall_)
+      + sizeof(SCMonsterSpawn::iscall_)
+      - PROTOBUF_FIELD_OFFSET(SCMonsterSpawn, configid_)>(
+          reinterpret_cast<char*>(&configid_),
+          reinterpret_cast<char*>(&other->configid_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SCMonsterSpawn::GetMetadata() const {
@@ -32706,25 +32703,19 @@ MonsterPath::MonsterPath(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 MonsterPath::MonsterPath(const MonsterPath& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  configid_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_configid().empty()) {
-    configid_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_configid(), 
-      GetArena());
-  }
   if (from._internal_has_monster()) {
     monster_ = new ::PlaneWar::MonsterInfo(*from.monster_);
   } else {
     monster_ = nullptr;
   }
-  ::memcpy(&stepindex_, &from.stepindex_,
+  ::memcpy(&configid_, &from.configid_,
     static_cast<size_t>(reinterpret_cast<char*>(&stage_) -
-    reinterpret_cast<char*>(&stepindex_)) + sizeof(stage_));
+    reinterpret_cast<char*>(&configid_)) + sizeof(stage_));
   // @@protoc_insertion_point(copy_constructor:PlaneWar.MonsterPath)
 }
 
 void MonsterPath::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_MonsterPath_PlaneWar_2eproto.base);
-  configid_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&monster_) - reinterpret_cast<char*>(this)),
       0, static_cast<size_t>(reinterpret_cast<char*>(&stage_) -
@@ -32739,7 +32730,6 @@ MonsterPath::~MonsterPath() {
 
 void MonsterPath::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
-  configid_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete monster_;
 }
 
@@ -32764,14 +32754,13 @@ void MonsterPath::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  configid_.ClearToEmpty();
   if (GetArena() == nullptr && monster_ != nullptr) {
     delete monster_;
   }
   monster_ = nullptr;
-  ::memset(&stepindex_, 0, static_cast<size_t>(
+  ::memset(&configid_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&stage_) -
-      reinterpret_cast<char*>(&stepindex_)) + sizeof(stage_));
+      reinterpret_cast<char*>(&configid_)) + sizeof(stage_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -32789,12 +32778,10 @@ const char* MonsterPath::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // string configID = 2;
+      // int32 configID = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_configid();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "PlaneWar.MonsterPath.configID"));
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+          configid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -32876,14 +32863,10 @@ failure:
         1, _Internal::monster(this), target, stream);
   }
 
-  // string configID = 2;
-  if (this->configid().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_configid().data(), static_cast<int>(this->_internal_configid().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "PlaneWar.MonsterPath.configID");
-    target = stream->WriteStringMaybeAliased(
-        2, this->_internal_configid(), target);
+  // int32 configID = 2;
+  if (this->configid() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_configid(), target);
   }
 
   // int32 stepIndex = 3;
@@ -32938,18 +32921,18 @@ size_t MonsterPath::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string configID = 2;
-  if (this->configid().size() > 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_configid());
-  }
-
   // .PlaneWar.MonsterInfo monster = 1;
   if (this->has_monster()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *monster_);
+  }
+
+  // int32 configID = 2;
+  if (this->configid() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_configid());
   }
 
   // int32 stepIndex = 3;
@@ -33021,11 +33004,11 @@ void MonsterPath::MergeFrom(const MonsterPath& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.configid().size() > 0) {
-    _internal_set_configid(from._internal_configid());
-  }
   if (from.has_monster()) {
     _internal_mutable_monster()->::PlaneWar::MonsterInfo::MergeFrom(from._internal_monster());
+  }
+  if (from.configid() != 0) {
+    _internal_set_configid(from._internal_configid());
   }
   if (from.stepindex() != 0) {
     _internal_set_stepindex(from._internal_stepindex());
@@ -33068,7 +33051,6 @@ bool MonsterPath::IsInitialized() const {
 void MonsterPath::InternalSwap(MonsterPath* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  configid_.Swap(&other->configid_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(MonsterPath, stage_)
       + sizeof(MonsterPath::stage_)

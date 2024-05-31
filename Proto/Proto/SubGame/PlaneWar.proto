@@ -597,7 +597,7 @@ message MonsterInfo
 
 message SCMonsterSpawn
 {
-	string configID = 1;
+	int32 configID = 1;
 	repeated MonsterInfo monsterList = 2;
 	bool isCall = 3;
 }
@@ -896,7 +896,7 @@ message SCSwitchBackGround
 message MonsterPath
 {
 	MonsterInfo monster = 1;
-	string configID = 2;
+	int32 configID = 2;
 	int32 stepIndex = 3;
 	int32 roadIndex = 4;
 	float moveT = 5;

@@ -128,7 +128,7 @@ namespace PlaneWar {
             "ck5vdGlmeRIkCgZwbGF5ZXIYASABKAsyFC5QbGFuZVdhci5QbGF5ZXJJbmZv",
             "IkkKC01vbnN0ZXJJbmZvEhMKC21vbnN0ZXJUeXBlGAEgASgFEhIKCm1vbnN0",
             "ZXJVSUQYAiABKAUSEQoJaXNDb25uZWN0GAMgASgIIl4KDlNDTW9uc3RlclNw",
-            "YXduEhAKCGNvbmZpZ0lEGAEgASgJEioKC21vbnN0ZXJMaXN0GAIgAygLMhUu",
+            "YXduEhAKCGNvbmZpZ0lEGAEgASgFEioKC21vbnN0ZXJMaXN0GAIgAygLMhUu",
             "UGxhbmVXYXIuTW9uc3RlckluZm8SDgoGaXNDYWxsGAMgASgIIl4KBkNTU2hv",
             "dBINCgVhbmdsZRgBIAEoBRINCgVyYXRpbxgCIAEoBRISCgpidWxsZXRUeXBl",
             "GAMgASgFEg8KB3NjYXR0ZXIYBCABKAUSEQoJc291cmNlVUlEGAUgASgFIloK",
@@ -213,7 +213,7 @@ namespace PlaneWar {
             "bGFuZUlEGAIgASgFIhQKEkNTU3dpdGNoQmFja0dyb3VuZCIjChJTQ1N3aXRj",
             "aEJhY2tHcm91bmQSDQoFY2hhaXIYASABKAUirAEKC01vbnN0ZXJQYXRoEiYK",
             "B21vbnN0ZXIYASABKAsyFS5QbGFuZVdhci5Nb25zdGVySW5mbxIQCghjb25m",
-            "aWdJRBgCIAEoCRIRCglzdGVwSW5kZXgYAyABKAUSEQoJcm9hZEluZGV4GAQg",
+            "aWdJRBgCIAEoBRIRCglzdGVwSW5kZXgYAyABKAUSEQoJcm9hZEluZGV4GAQg",
             "ASgFEg0KBW1vdmVUGAUgASgCEhAKCGRvdEluZGV4GAYgASgFEg0KBWRlbGF5",
             "GAcgASgCEg0KBXN0YWdlGAggASgFIkMKEVNDU3luY01vbnN0ZXJJbmZvEi4K",
             "D2NyZWF0ZWRQYXRoTGlzdBgBIAMoCzIVLlBsYW5lV2FyLk1vbnN0ZXJQYXRo",
@@ -13416,12 +13416,12 @@ namespace PlaneWar {
 
     /// <summary>Field number for the "configID" field.</summary>
     public const int ConfigIDFieldNumber = 1;
-    private string configID_ = "";
+    private int configID_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string ConfigID {
+    public int ConfigID {
       get { return configID_; }
       set {
-        configID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        configID_ = value;
       }
     }
 
@@ -13468,7 +13468,7 @@ namespace PlaneWar {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (ConfigID.Length != 0) hash ^= ConfigID.GetHashCode();
+      if (ConfigID != 0) hash ^= ConfigID.GetHashCode();
       hash ^= monsterList_.GetHashCode();
       if (IsCall != false) hash ^= IsCall.GetHashCode();
       if (_unknownFields != null) {
@@ -13487,9 +13487,9 @@ namespace PlaneWar {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (ConfigID.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(ConfigID);
+      if (ConfigID != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ConfigID);
       }
       monsterList_.WriteTo(output, _repeated_monsterList_codec);
       if (IsCall != false) {
@@ -13505,9 +13505,9 @@ namespace PlaneWar {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (ConfigID.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(ConfigID);
+      if (ConfigID != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ConfigID);
       }
       monsterList_.WriteTo(ref output, _repeated_monsterList_codec);
       if (IsCall != false) {
@@ -13523,8 +13523,8 @@ namespace PlaneWar {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (ConfigID.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ConfigID);
+      if (ConfigID != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ConfigID);
       }
       size += monsterList_.CalculateSize(_repeated_monsterList_codec);
       if (IsCall != false) {
@@ -13541,7 +13541,7 @@ namespace PlaneWar {
       if (other == null) {
         return;
       }
-      if (other.ConfigID.Length != 0) {
+      if (other.ConfigID != 0) {
         ConfigID = other.ConfigID;
       }
       monsterList_.Add(other.monsterList_);
@@ -13562,8 +13562,8 @@ namespace PlaneWar {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
-            ConfigID = input.ReadString();
+          case 8: {
+            ConfigID = input.ReadInt32();
             break;
           }
           case 18: {
@@ -13588,8 +13588,8 @@ namespace PlaneWar {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 10: {
-            ConfigID = input.ReadString();
+          case 8: {
+            ConfigID = input.ReadInt32();
             break;
           }
           case 18: {
@@ -23750,12 +23750,12 @@ namespace PlaneWar {
 
     /// <summary>Field number for the "configID" field.</summary>
     public const int ConfigIDFieldNumber = 2;
-    private string configID_ = "";
+    private int configID_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string ConfigID {
+    public int ConfigID {
       get { return configID_; }
       set {
-        configID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        configID_ = value;
       }
     }
 
@@ -23853,7 +23853,7 @@ namespace PlaneWar {
     public override int GetHashCode() {
       int hash = 1;
       if (monster_ != null) hash ^= Monster.GetHashCode();
-      if (ConfigID.Length != 0) hash ^= ConfigID.GetHashCode();
+      if (ConfigID != 0) hash ^= ConfigID.GetHashCode();
       if (StepIndex != 0) hash ^= StepIndex.GetHashCode();
       if (RoadIndex != 0) hash ^= RoadIndex.GetHashCode();
       if (MoveT != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(MoveT);
@@ -23880,9 +23880,9 @@ namespace PlaneWar {
         output.WriteRawTag(10);
         output.WriteMessage(Monster);
       }
-      if (ConfigID.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(ConfigID);
+      if (ConfigID != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(ConfigID);
       }
       if (StepIndex != 0) {
         output.WriteRawTag(24);
@@ -23921,9 +23921,9 @@ namespace PlaneWar {
         output.WriteRawTag(10);
         output.WriteMessage(Monster);
       }
-      if (ConfigID.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(ConfigID);
+      if (ConfigID != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(ConfigID);
       }
       if (StepIndex != 0) {
         output.WriteRawTag(24);
@@ -23961,8 +23961,8 @@ namespace PlaneWar {
       if (monster_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Monster);
       }
-      if (ConfigID.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ConfigID);
+      if (ConfigID != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ConfigID);
       }
       if (StepIndex != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(StepIndex);
@@ -23999,7 +23999,7 @@ namespace PlaneWar {
         }
         Monster.MergeFrom(other.Monster);
       }
-      if (other.ConfigID.Length != 0) {
+      if (other.ConfigID != 0) {
         ConfigID = other.ConfigID;
       }
       if (other.StepIndex != 0) {
@@ -24041,8 +24041,8 @@ namespace PlaneWar {
             input.ReadMessage(Monster);
             break;
           }
-          case 18: {
-            ConfigID = input.ReadString();
+          case 16: {
+            ConfigID = input.ReadInt32();
             break;
           }
           case 24: {
@@ -24090,8 +24090,8 @@ namespace PlaneWar {
             input.ReadMessage(Monster);
             break;
           }
-          case 18: {
-            ConfigID = input.ReadString();
+          case 16: {
+            ConfigID = input.ReadInt32();
             break;
           }
           case 24: {
