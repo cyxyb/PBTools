@@ -1,0 +1,1789 @@
+syntax = "proto3";
+
+package F4BY;
+enum GameCommand
+{
+    None                    = 0;
+    HeartBeat               = 1000;
+    LoginGameWithToken      = 1001;
+    UserReady               = 1002;
+    SetProbability          = 1003;
+    FishTracesList          = 1004;
+    ChangeScene             = 1005;
+    FishOutsideScreen       = 1006;
+    LockFish                = 1007;
+    UserShoot               = 1008;
+    HitFish                 = 1009;
+    CrazySkill              = 1010;
+    SyncMoney               = 1011;
+    NotifyLogout            = 1012;
+    SyncFishReq             = 1013;
+    SyncFishRsp             = 1014;
+    UserRunBackground       = 1015;
+    HitSpecialFish          = 1016;
+    SyncPropInfo            = 1017;
+    NotifyLogin             = 1018;
+    TrebleSkill             = 1019;
+    UserLog                 = 1020;
+    UserEvent               = 1021;
+    UserInfoNotify          = 1025;
+    GameInfoNotify          = 1026;
+    Chat                    = 1027;
+    GainAward               = 1028;
+    PropStatus              = 1029;
+    PropDropNotify          = 1030;
+    UseProp                 = 1031;
+    FrozenTime              = 1032;
+    UserPoolInfo            = 1042;
+    UserPoolStatus          = 1043;
+    UserPoolPreDraw         = 1044;
+    UserPoolDraw            = 1045;
+    UserPoolAdd             = 1046;
+    TorpedoPreShoot         = 1047;
+    TorpedoCancelShoot      = 1048;
+    TorpedoShoot            = 1049;
+    TorpedoHit              = 1050;
+    CallFish                = 1051;
+    ComTask                 = 1052;
+    TaskInfo                = 1053;
+    SaveSkillTime           = 1054;
+    SevenDayInfo            = 1055;
+    SevenDayAward           = 1056;
+    VipChargeAward          = 1057;
+    InfoRedDot              = 1058;
+    ActivityInfo            = 1059;
+    ClickStatistic          = 1060;
+    AwardPool               = 1061;
+    NewClickStatistic       = 1062;
+    GetAwardPoolRecord      = 1063;
+    TreasureFishInfo        = 1064;
+    TreasureFishCatched     = 1065;
+    MatchPackAdditionX      = 1066;
+    MatchPackInvail         = 1067;
+    MatchPackBuying         = 1068;
+    GameItemSwitch          = 1069;
+    LuckyDrawInfo           = 1070;
+    GetLuckyTaskAward       = 1071;
+    LuckyRedDot             = 1072;
+    GetLuckyNum             = 1073;
+    GetLuckyRecord          = 1074;
+    GetOwnRecord            = 1075;
+    UserPoolDoubleInfo      = 1100;
+    UserPoolDouble          = 1101;
+    LuckyPoolInfo           = 1102;
+    LuckyPoolDraw           = 1103;
+    BombInfo                = 1110;
+    BombHitFishInfo         = 1111;
+    SyncBomb                = 1112;
+    SyncBombFinish          = 1113;
+    GetMagicCube            = 1114;
+    SyncMagicCubeBtInfo     = 1115;
+    PreHit                  = 1116;
+    PreShoot                = 1117;
+    SyncValentineDayFish    = 1118;
+    BombGlobeFishInfo       = 1119;
+    BombGlobeFishHit        = 1120;
+    AnniversaryShowSelect   = 1133;
+    AnniversarySelectReq    = 1134;
+    AnniversarySelectResult = 1135;
+    AnniversaryHit          = 1136;
+    SyncAnniversaryHitStage = 1137;
+    SyncKiRinHitStage       = 1138;
+    NvWaFishCapture         = 1139;
+    CaptureScallop          = 1141;
+    SettleScallopLottery    = 1142;
+    SyncScallopLottery      = 1143;
+    OpenScallop             = 1144;
+    UpdateChestStatus       = 1145;
+    ChestConfig             = 1146;
+    OpenChest               = 1147;
+    SelectChestReward       = 1148;
+    ChestSetAutoSelect      = 1149;
+    SpecEffect              = 1150;
+    ChestSetEnable          = 1151;
+    FrozenFishRep           = 1200;
+    TortoiseExplode         = 1210;
+    SetWings                = 1211;
+    SyncConfigs             = 1212;
+    DrawReward              = 1213;
+    TreasureHuntMission     = 1214;
+    ReceiveMissionReward    = 1215;
+    DrawTimes               = 1217;
+    VerifyActivity          = 1218;
+    ExchangeShop            = 1219;
+    TreasureHuntPackage     = 1220;
+    PurchasePackage         = 1221;
+    VerifyTermChange        = 1222;
+    BuyGun                  = 1223;
+    BuyWings                = 1224;
+    WaterDropInfo           = 1230;
+    NotifyActStatus         = 1231;
+    LotteryResult3002       = 20001;
+    LotteryResult3005       = 20002;
+}
+enum ErrCode
+{
+    Succ                    = 0;
+    AlreadyInOtherGame      = 241;
+    Fail                    = 1000;
+    LoadPropsDataFailed     = 10001;
+    CanNotFindPlayerPoint   = 10002;
+    ParameterIsWrong        = 10003;
+    LackOfMoney             = 10004;
+    FreeTimesChangeRatio    = 10005;
+    IsNotSup                = 10006;
+    DeserializeFailed       = 10007;
+    PlayerNotExist          = 10008;
+    PlayerAlreadyLogin      = 10009;
+    LoadPlayerDataFailed    = 10010;
+    AllocTableFailed        = 10011;
+    DefendPlugIn            = 10012;
+    QPEnterRoomFailed       = 10013;
+    QPBaseUserInfoGetFailed = 10014;
+    QPReadGoldFailed        = 10015;
+    ThisTableIsFull         = 10016;
+    PropNoEnough            = 10017;
+    PropRoomLimit           = 10018;
+    PropUsing               = 10019;
+    PropNotExist            = 10020;
+    PropUsingSetGun         = 10021;
+    ThisRoomIsFull          = 10022;
+    ServerClosed            = 10023;
+    PropHave                = 10024;
+    PropCanNotBuy           = 10025;
+    UserPoolNoMeet          = 10030;
+    UserPoolToHigher        = 10031;
+    CallFishTideComing      = 10032;
+    CallFishFull            = 10033;
+    UserPoolLoadFail        = 10034;
+    FrozenFishTideComing    = 10035;
+    FrozenNotEnough         = 10036;
+    FrozenWaitCD            = 10037;
+    FrozenFishTide          = 10038;
+    IllegalParam            = 10040;
+    ConfigError             = 10041;
+    PreventCheatWarning     = 10042;
+    OpenChestFail           = 10050;
+    SelectChestRewardFail   = 10051;
+    NotMetTaskConditionError= 10052;
+    DrawNumError            = 10053;
+    PurchaseLimitError      = 10054;
+    TreasureHuntNotStartError= 10055;
+}
+enum UserEventType
+{
+    UserEventTypeHideIcon       = 0;
+    UserEventTypeCrazySkill     = 1;
+    UserEventTypeUserPool       = 2;
+    UserEventTypeMultiShoot     = 3;
+    UserEventTypeStore          = 4;
+    UserEventTypeCustomTable    = 5;
+    UserEventTypeChangeTable    = 6;
+    UserLogTypeMax              = 7;
+}
+
+enum CallFishType
+{
+    CallTypeNormal              = 0;
+    CallTypeSpecial             = 1;
+}
+
+enum ChestType
+{
+    ChestTypeNone                   = 0;
+    ChestTypePorcelain              = 1;
+    ChestTypeBronze                 = 2;
+    ChestTypeSilver                 = 3;
+    ChestTypeGold                   = 4;
+}
+
+enum ChestAutoSelectOption
+{
+    ChestAutoSelectOptionNone       = 0;
+    RedPacketTicket                 = 1;
+    Money                           = 2;
+}
+
+message CommonResp
+{
+    int32 code  = 1;
+    string message = 2;
+}
+
+message Object
+{
+    int32 id = 1;
+    int32 count = 2;
+    int32 ratio = 3;
+    float time = 4;
+    int32 multiple = 5;
+    int32 uid = 6;
+    int32 originId = 7;
+    repeated MultiInfo multi_list = 8;
+	int32 origin_uid  = 9;
+}
+
+message Obj
+{
+	int32 id = 1;
+	int32 value = 2;
+}
+
+message Object1
+{
+	string key = 1;
+	int32 value = 2;
+}
+
+message Object2
+{
+	string key = 1;
+	int32 value = 2;
+}
+
+message Object3
+{
+	string key = 1;
+	int32 value = 2;
+}
+
+message WheelObject
+{
+	repeated Object3 wheels = 1;
+	int32 ratio = 2;
+}
+
+message Decimal
+{
+	int32 num = 1;
+	int32 denom = 2;
+}
+
+message CSLoginGameWithToken
+{
+	int32 playerId = 1;
+	string token = 2;
+	int32 oSType = 3;
+	int32 tableId = 4;
+	int32 last_tableId = 5;
+}
+
+message SCLoginGameWithToken
+{
+	int32 scene_index = 1;
+	int32 tableId = 2;
+}
+
+message CSUserReady
+{
+	int32 playerId = 1;
+}
+
+message EffectInfo
+{
+	int32 effect_id = 1;
+	bool is_global = 2;
+}
+
+message StationBase
+{
+	int32 gun_ratio = 1;
+	int32 gun_level = 2;
+	int64 user_score = 3;
+	int32 chair_idx = 4;
+	string player_name = 5;
+	int32 player_id = 6;
+	int32 vip = 7;
+	int32 status = 8;
+	bool crazy_skill_open = 9;
+	int32 user_ticket = 10;
+	int32 effect = 11;
+	int32 extra_data = 12;
+	Decimal red_packet_ticket = 13;
+	EffectInfo effect_info = 14;
+	int32 wings_props_id = 15;
+}
+
+message SCUserReady
+{
+	repeated StationBase station_base_list = 1;
+}
+
+message SCNotifyLogin
+{
+	StationBase station_base_list = 1;
+}
+
+message CSNotifyLogout
+{
+	
+}
+
+message SCNotifyLogout
+{
+	int32 chair_idx = 1;
+}
+
+message CSSetProbability
+{
+	int32 add_or_del = 1;
+	int32 gun_level = 2;
+	bool is_use_auto = 3;
+}
+
+message SCSetProbability
+{
+	int32 code = 1;
+	int32 chair_idx = 2;
+	int32 gun_ratio = 3;
+	int32 gun_level = 4;
+	string msg = 5;
+	bool is_unlock = 6;
+	int32 extra_data = 7;
+}
+
+message CSSetWings
+{
+	int32 wings_prop_id = 1;
+}
+
+message SCSetWings
+{
+	int32 chair_idx = 1;
+	int32 wings_prop_id = 2;
+	int32 code = 3;
+}
+
+message CSUserShoot
+{
+	int32 angle = 1;
+	repeated int32 bullet_id = 2;
+	int32 ratio = 3;
+	int32 bullet_type = 4;
+	bool is_offset = 5;
+}
+
+message SCUserShoot
+{
+	int32 chair_idx = 1;
+	int32 angle = 2;
+	int32 score = 3;
+	int32 bullet_type = 4;
+	bool bullet_offset = 5;
+}
+
+message CSHitFish
+{
+	int32 fish_uid = 1;
+	int32 bullet_id = 2;
+	repeated int32 screen_fishes = 3;
+}
+
+message MultiInfo
+{
+	int32 bt_type = 1;
+	int32 bt_multi = 2;
+	int32 bt_base = 3;
+}
+
+message SCHitFish
+{
+	int32 chair_idx = 1;
+	int32 fish_uid = 2;
+	int64 earn = 3;
+	int64 user_score = 4;
+	int64 fish_value = 5;
+	int32 multiple = 6;
+	int32 hit_bullet_type = 7;
+	int32 magic_cube_multi = 8;
+	repeated MultiInfo multi_list = 9;
+	int32 origin_uid = 10;
+}
+
+message SCHitSpecialFish
+{
+	int32 chair_idx = 1;
+	int32 fish_uid = 2;
+	int64 earn = 3;
+	int64 fish_value = 4;
+	int64 user_score = 5;
+	bool death = 6;
+	int32 grow_stage = 7;
+	int32 multiple = 8;
+	repeated Object shock_fishes = 9;
+	repeated Object drop_props = 10;
+	WheelObject wheel = 11;
+	int32 hit_bullet_type = 12;
+	int32 prop_no = 13;
+	int32 magic_cube_multi = 14;
+	repeated MultiInfo multi_list = 15;
+	int32 origin_uid = 16;
+}
+
+message SyncPropInfoX
+{
+	Object prop = 1;
+	float x = 2;
+	float y = 3;
+	float angle = 4;
+	int32 status = 5;
+}
+
+message UserSyncPropInfo
+{
+	int32 chair_idx = 1;
+	repeated SyncPropInfoX props = 2;
+}
+
+message CSSyncPropInfo
+{
+	SyncPropInfoX info = 1;
+}
+
+message SCSyncPropInfo
+{
+	repeated UserSyncPropInfo users = 1;
+}
+
+message CSSyncMoney
+{
+	int32 type = 1;
+}
+
+message SCSyncMoney
+{
+	int32 chair_idx = 1;
+	int64 score = 2;
+	int32 type = 3;
+	int32 delta = 4;
+	int32 ticket = 5;
+	int32 vip = 6;
+}
+
+message FishTrace
+{
+	int32 fish_uid = 1;
+	int32 fish_type = 2;
+	int32 fish_layer = 3;
+	int32 fish_stage = 4;
+	bool is_aced = 5;
+	int64 alive_time = 6;
+	repeated int32 beads_list = 7;
+}
+
+message SCFishTracesList
+{
+	repeated FishTrace fish_traces = 1;
+	string fish_road = 2;
+	string fish_array = 3;
+	float create_interval = 4;
+	bool is_called = 5;
+	bool after_tide_first = 6;
+	CallFishType call_type = 7;
+}
+
+message CSSyncFishReq
+{
+	
+}
+
+message SCSyncFishReq
+{
+	int32 req_player_id = 1;
+}
+
+message CSSyncFishRsp
+{
+	repeated FishTrace fish_traces = 1;
+	string fish_road = 2;
+	string fish_array = 3;
+	float move_delay = 4;
+	int32 road_idx = 5;
+	float move_t = 6;
+	bool finish = 7;
+	int32 req_player_id = 8;
+}
+
+message SCSyncFishRsp
+{
+	repeated FishTrace fish_traces = 1;
+	string fish_road = 2;
+	string fish_array = 3;
+	float move_delay = 4;
+	int32 road_idx = 5;
+	float move_t = 6;
+}
+
+message SCChangeScene
+{
+	int32 scene_index = 1;
+}
+
+message CSFishOutsideScreen
+{
+	int32 fish_uid = 1;
+}
+
+message CSLockFish
+{
+	int32 fish_uid = 1;
+	bool is_open = 2;
+}
+
+message SCLockFish
+{
+	int32 chair_idx = 1;
+	int32 fish_uid = 2;
+	bool is_open = 3;
+}
+
+message CSCrazySkill
+{
+	bool is_open = 1;
+}
+
+message SCCrazySkill
+{
+	int32 chair_idx = 1;
+	bool is_open = 2;
+}
+
+message CSTrebleSkill
+{
+	bool is_open = 1;
+}
+
+message SCTrebleSkill
+{
+	int32 chair_idx = 1;
+	bool is_open = 2;
+}
+
+message CSUserRunBackground
+{
+	bool background = 1;
+}
+
+message SCUserRunBackground
+{
+	int32 chair_idx = 1;
+	bool background = 2;
+}
+
+message CSHeartBeat
+{
+}
+
+message SCHeartBeat
+{
+}
+
+message GunSpecEffect
+{
+	int32 ratioLimit = 1;
+	float hitChangeRate = 2;
+	float moneyChangeRate = 3;
+	float violenceRate = 4;
+	float speedRate = 5;
+	bool advanced = 6;
+	bool double_tag = 7;
+}
+
+message WingsSpecEffect
+{
+	float speedRate = 1;
+	int32 ratioLimit = 2;
+	float hitChangeRate = 3;
+	float moneyChangeRate = 4;
+	bool advanced = 5;
+	bool double_tag = 6;
+}
+
+message WingsInfo
+{
+	int32 wings_id = 1;
+	bool enable = 2;
+	WingsSpecEffect wings_spec_effect = 3;
+	int32 receive_type = 4;
+	int32 activity_id = 5;
+	int32 price = 6;
+	bool new_enable = 7;
+}
+
+message GunInfo
+{
+	int32 gun_level = 1;
+	int32 ratio_min = 2;
+	int32 ratio_max = 3;
+	bool enable = 4;
+	bool new_enable = 5;
+	bool is_vip = 6;
+	int32 vip_limit = 7;
+	bool is_member = 8;
+	int32 member_sec = 9;
+	int32 extra_data = 10;
+	GunSpecEffect gunSpecEffect = 11;
+	int32 price = 12;
+	float attack_speed = 13;
+	float rage = 14;
+	int32 activity_id = 15;
+}
+
+message VipInfo
+{
+	int32 old_vip = 1;
+	int32 cur_vip = 2;
+}
+
+message PropInfo
+{
+	bool enable = 1;
+	Object prop = 2;
+}
+
+message CSUserInfoNotify
+{
+	bool broadcast = 1;
+}
+
+message SCUserInfoNotify
+{
+	int32 chair_idx = 1;
+	GunInfo gun_info = 2;
+	WingsInfo wings_info = 3;
+	VipInfo vip_info = 4;
+	PropInfo prop_info = 5;
+	int32 last_gun_level = 6;
+	int32 last_ratio = 7;
+	int32 last_wings_propId = 8;
+}
+
+message SCGameInfoNotify
+{
+	bool user_pool = 1;
+	repeated int32 award_fish = 2;
+	repeated Object3 user_pool_limit = 3;
+}
+
+message SCInfoRedDot
+{
+	bool seven_day =1;
+	bool red_dot = 2;
+}
+
+message JumpHighArena
+{
+	bool is_open = 1;
+	int32 vip = 2;
+	int32 coin = 3;
+	int64 game_time = 4;
+	string tips = 5;
+}
+
+message SCActivityInfo
+{
+	JumpHighArena jump = 1;
+	int32 limit = 2;
+	bool pool_is_open = 3;
+}
+
+message CSChat
+{
+	int32 msg_type = 1;
+	int32 msg_idx = 2;
+}
+
+message SCChat
+{
+	int32 chair_idx = 1;
+	int32 msg_type = 2;
+	int32 msg_idx = 3;
+}
+
+message SCGainAward
+{
+	int32 chair_idx = 1;
+	int64 score = 2;
+	Object award = 3;
+}
+
+message CSAwardPool
+{
+	
+}
+
+message SCAwardPool
+{
+	repeated Object3 pool = 1;
+}
+
+message CSPropStatus
+{
+	int32 prop_id = 1;
+	int32 status = 2;
+}
+
+message SCPropStatus
+{
+	int32 chair_idx = 1;
+	int32 prop_id = 2;
+	int32 status = 3;
+	int32 bt_id = 4;
+}
+
+message GivenCardAward
+{
+	int32 card_idx = 1;
+	int32 base = 2;
+	int32 multiple = 3;
+}
+
+message UserAwardItem
+{
+	int32 index = 1;
+	int32 item_max = 2;
+	string name = 3;
+	repeated Object2 goods = 4;
+}
+
+message CSUserPoolInfo
+{
+	bool open_page = 1;
+}
+
+message SCUserPoolInfo
+{
+	int32 chair_idx = 1;
+	bool open_page = 2;
+	bool status = 3;
+	int32 count = 4;
+	int32 pool_max = 5;
+	repeated UserAwardItem items = 6;
+}
+
+message CSUserPoolStatus
+{
+	bool open = 1;
+}
+
+message SCUserPoolStatus
+{
+	bool open = 1;
+}
+
+message CSUserPoolPreDraw
+{
+	int32 level = 1;
+}
+
+message SCUserPoolPreDraw
+{
+	int32 code = 1;
+	int32 level = 2;
+	string msg = 3;
+}
+
+message CSUserPoolDraw
+{
+	
+}
+
+message SCUserPoolDraw
+{
+	int32 chair_idx = 1;
+	repeated Object2 goods = 2;
+	Object2 award = 3;
+	Object award_cnt = 4;
+}
+
+message SCUserPoolAdd
+{
+	int32 add = 1;
+	int32 count = 2;
+	int32 first_max = 3;
+	int32 pool_max = 4;
+	bool status = 5;
+	string level_name = 6;
+}
+
+message CSUserPoolDoubleInfo
+{
+	
+}
+
+message SCUserPoolDoubleInfo
+{
+	int32 cost = 1;
+	Object2 item_before = 2;
+	Object2 item_double = 3;
+}
+
+message CSUserPoolDouble
+{
+	bool is_double = 1;
+}
+
+message SCUserPoolDouble
+{
+	int32 code = 1;
+	int32 result = 2;
+	int32 chair_idx = 3;
+	Object3 item = 4;
+	Object3 extra_item = 5;
+}
+
+message CSLuckyPoolInfo
+{
+}
+
+message SCLuckyPoolInfo
+{
+	int32 count = 1;
+	int32 max = 2;
+}
+
+message CSLuckyPoolDraw
+{
+}
+
+message SCLuckyPoolDraw
+{
+	Object3 item = 1;
+}
+
+message CSTorpedoPreShoot
+{
+	int32 propId = 1;
+}
+
+message SCTorpedoPreShoot
+{
+	int32 chair_idx = 1;
+	int32 propId = 2;
+	int32 code = 3;
+	string msg = 4;
+}
+
+message CSTorpedoCancelShoot
+{
+}
+
+message SCTorpedoCancelShoot
+{
+	int32 chair_idx = 1;
+}
+
+message CSTorpedoShoot
+{
+	int32 fish_uid = 1;
+	float x = 2;
+	float y = 3;
+}
+
+message SCTorpedoShoot
+{
+	int32 chair_idx = 1;
+	int32 fish_uid = 2;
+	float x = 3;
+	float y = 4;
+}
+
+message CSTorpedoHit
+{
+	
+}
+
+message SCTorpedoHit
+{
+	int32 chair_idx = 1;
+	int64 earn = 2;
+	int64 score = 3;
+	int32 propId = 4;
+	int32 remain = 5;
+	int32 fish_uid = 6;
+	float x = 7;
+	float y = 8;
+}
+
+message CSCallFish
+{
+	CallFishType call_type = 1;
+}
+
+message SCCallFish
+{
+	int32 chair_idx = 1;
+	int32 propId = 2;
+	int32 remain = 3;
+	int32 code = 4;
+	string msg = 5;
+}
+
+message SCComTask
+{
+	int32 gun_ratio = 1;
+	int32 gun_level = 2;
+	int32 award = 3;
+	int32 ticket = 4;
+}
+
+message SCTaskInfo
+{
+	int32 gun_ratio = 1;
+	int32 gun_level = 2;
+	int32 cur_num = 3;
+	int32 total_num = 4;
+	int32 vip_level = 5;
+	bool is_unlock = 6;
+	int32 award = 7;
+	bool is_vip_unlock = 8;
+	int32 ticket = 9;
+}
+
+message CSSaveSkillTime
+{
+	int32 auto = 1;
+	int32 lock = 2;
+	int32 angry = 3;
+	int32 treble = 4;
+}
+
+message SevenDayTask
+{
+	int32 index = 1;
+	int32 fish_id = 2;
+	int32 total_num = 3;
+	int32 cur_num = 4;
+	int32 status = 5;
+	int32 award = 6;
+}
+
+message SevenDayDetail
+{
+	int32 day = 1;
+	int32 box_status = 2;
+	SevenDayTask task = 3;
+}
+
+message CSSevenDayInfo
+{
+}
+
+message SCSevenDayInfo
+{
+	string start_date = 1;
+	string end_date = 2;
+	int32 cur_day = 3;
+	int32 get_remain = 4;
+	int64 remain_score = 5;
+	int32 ticket = 6;
+	SevenDayDetail detail = 7;
+	int32 gun_enable = 8;
+}
+
+message CSSevenDayAward
+{
+	int32 day = 1;
+	int32 index = 2;
+	int32 get_award_type = 3;
+}
+
+message SCSevenDayAward
+{
+	int64 score = 1;
+	int32 ticket = 2;
+	SevenDayDetail task = 3;
+}
+
+message SCVipChargeAward
+{
+	int64 score = 1;
+	int32 ticket = 2;
+}
+
+message CSClickStatistic
+{
+	string num = 1;
+	bool not_repeat = 2;
+}
+
+message CSNewClickStatistic
+{
+	string num = 1;
+}
+
+message CSUserLog
+{
+	int32 type = 1;
+	string score = 2;
+	string content = 3;
+}
+
+message CSUserEvent
+{
+	int32 id = 1;
+	int32 status = 2;
+}
+
+message CSGetAwardPoolRecord
+{
+	
+}
+
+message AwardPoolRecord
+{
+	string time = 1;
+	string name = 2;
+	int32 poolId = 3;
+	int32 award = 4;
+	int32 playerId = 5;
+}
+
+message SCGetAwardPoolRecord
+{
+	repeated AwardPoolRecord records = 1;
+}
+
+message SCPropDropNotify
+{
+	int32 chair_idx = 1;
+	int32 fish_uid = 2;
+	repeated Object drop_props = 3;
+}
+
+message CSUseProp
+{
+	int32 prop_id = 1;
+}
+
+message SCUseProp
+{
+	int32 chair_idx = 1;
+	int32 prop_id = 2;
+	int32 remain = 3;
+	int32 code = 4;
+	string msg = 5;
+}
+
+message SCFrozenTime
+{
+	int32 chair_idx = 1;
+	int32 is_frozen = 2;
+	float frozen_cd = 3;
+}
+
+message SCTreasureFishInfo
+{
+	int32 fish_uid = 1;
+	int32 cur_stage = 2;
+	int32 accum_money = 3;
+	int32 fish_value = 4;
+}
+
+message SCTreasureFishCatched
+{
+	int32 chair_idx = 1;
+	int32 ratio = 2;
+	int32 fish_uid = 3;
+	int64 fish_value = 4;
+	int64 accum_money = 5;
+	int32 multiple = 6;
+	bool death = 7;
+	int64 earn = 8;
+	int64 user_score = 9;
+	bool display_multiple = 10;
+	int32 cur_stage = 11;
+	int32 magic_cube_multi = 12;
+	repeated MultiInfo multi_list = 13;
+	int32 origin_uid = 14;
+}
+
+message	MatchPackAddition
+{
+	string id = 1;
+	bool is_buy = 2;
+	float score_addition = 3;
+	float reaward_addition = 4;
+	int32 card = 5;
+	int32 sec = 6;
+}
+
+message CSMatchPackAddition
+{
+	
+}
+
+message SCMatchPackAddition
+{
+	repeated MatchPackAddition addition = 1;
+}
+
+message SCMatchPackInvail
+{
+	string packId = 1;
+}
+
+message CSMatchPackBuying
+{
+	string packId = 1;
+}
+
+message AwardDetail
+{
+	int32 playerId = 1;
+	int32 nums = 2;
+	int32 period = 3;
+	int32 vip = 4;
+	string nick = 5;
+	string photo = 6;
+}
+
+message LuckyAwardNotify
+{
+	int32 awardType = 1;
+	repeated AwardDetail detail = 2;
+}
+
+message CSGameItemSwitch
+{
+}
+
+message SCGameItemSwitch
+{
+	bool lucky_task = 1;
+}
+
+message AwardProp
+{
+	int32 prop_id = 1;
+	int32 num = 2;
+}
+
+message LuckyTaskInfo
+{
+	int32 id = 1;
+	int32 status = 2;
+	int64 score = 3;
+	string text = 4;
+	int32 amount = 5;
+	int32 target = 6;
+}
+
+message CSLuckyDrawInfo
+{
+	
+}
+
+message SCLuckyDrawInfo
+{
+	int32 hour_remain_sec = 1;
+	int32 day_remain_sec = 2;
+	repeated AwardProp hour_reward = 3;
+	repeated AwardProp day_reward = 4;
+	repeated int32 day_lucky_nums = 5;
+	int64 score = 6;
+	int32 hour_total = 7;
+	int32 day_total = 8;
+	int32 hour_award_num = 9;
+	int32 day_award_num = 10;
+	int32 next_start_tick = 11;
+	repeated LuckyTaskInfo task_info = 12;
+	int32 exchange_score = 13;
+	int32 next_remain_sec = 14;
+	repeated int32 hour_lucky_nums = 15;
+}
+
+message CSGetLuckyTaskAward
+{
+	int32 task_id = 1;
+}
+
+message SCGetLuckyTaskAward
+{
+	LuckyTaskInfo task = 1;
+	int64 score = 2;
+	int32 code = 3;
+}
+
+message CSGetLuckyNum
+{
+	int32 times = 1;
+}
+
+message SCGetLuckyNum
+{
+	int64 score = 1;
+	int32 error_code = 2;
+	repeated int32 lucky_nums = 3;
+}
+
+message CSLuckyRedDot
+{
+	
+}
+
+message SCLuckyRedDot
+{
+	bool show = 1;
+}
+
+message LuckyRecord
+{
+	int32 vip = 1;
+	int32 times = 2;
+	int32 lucky_num = 3;
+	int32 tick = 4;
+	string nick_name = 5;
+}
+
+message OwnRecord
+{
+	repeated AwardProp reward = 1;
+	int32 status = 2;
+	int32 tick = 3;
+	int32 lucky_num = 4;
+}
+
+message CSLuckyRecord
+{
+	int32 type = 1;
+}
+
+message SCLuckyRecord
+{
+	int32 type = 1;
+	repeated LuckyRecord record = 2;
+}
+
+message SCOwnRecord
+{
+	repeated OwnRecord record = 1;
+}
+
+message CSBombInfo
+{
+	float x = 1;
+	float y = 2;
+}
+
+message SCSyncBomb
+{
+	int32 chair_idx = 1;
+	int32 bombId = 2;
+	int32 curStatus = 3;
+	float x = 4;
+	float y = 5;
+	float nextX = 6;
+	float nextY = 7;
+	int64 score = 8;
+	bool isFinish = 9;
+}
+
+message SCSyncBombFinish
+{
+	int32 chair_idx = 1;
+	int32 bombId = 2;
+	int64 returnMoney = 3;
+}
+
+message CSBombHitFishInfo
+{
+	int32 bombId = 1;
+	int32 fishId = 2;
+}
+
+message SCGetMagicCube
+{
+	int32 chair_idx = 1;
+	int32 bulletType = 2;
+	bool createWeapon = 3;
+	bool isSyncInfo = 4;
+	bool isFinish = 5;
+	int32 gunRatio = 6;
+	int32 magic_cube_multi = 7;
+}
+
+message SCMagicCubeBulletInfo
+{
+	int32 chair_idx = 1;
+	int32 totalNum = 2;
+	int32 curNum = 3;
+}
+
+message CSPreHit
+{
+	repeated int32 screen_fish = 1;
+}
+
+message SCPreHit
+{
+	int32 err = 1;
+	int32 fish_uid = 2;
+	int32 chair_id = 3;
+}
+
+message CSPreShoot
+{
+	int32 chair_idx = 1;
+	int32 angle = 2;
+	int32 shoot_type = 3;
+}
+
+message SCPreShoot
+{
+	int32 chair_idx = 1;
+	int32 angle = 2;
+	int32 shoot_type = 3;
+}
+
+message FrozenFish
+{
+	int32 fish_id = 1;
+	int64 frozen_time = 2;
+}
+
+message SCFrozenFish
+{
+	repeated FrozenFish frozenFish = 1;
+}
+
+message SCValentineDayFish
+{
+	SCHitFish fish_info = 1;
+	int32 bt_ratio = 2;
+	int32 rand_multi = 3;
+	int32 ball_multi = 4;
+	repeated int32 uid_list = 5;
+}
+
+message SCKiRinFish
+{	
+	SCHitFish fish_info = 1;
+	int32 bt_ratio = 2;
+	int32 multi = 3;
+	bool is_senior = 4;
+	int32 level = 5;
+}
+
+message SCNvWaFishCapture
+{
+	int32 chair_idx = 1;
+	int32 fish_uid = 2;
+	int32 ratio = 3;
+	int32 nvwa_multiple = 4;
+	int32 bt_kind = 5;
+	repeated MultiInfo multi_list = 6;
+}
+
+message SCBombGlobeFishInfo
+{
+	int32 chair_idx = 1;
+	int32 ratio = 2;
+	int32 fish_uid = 3;
+	int32 stage = 4;
+	int32 bombId = 5;
+	int64 total_earn = 6;
+	int32 self_bombId = 7;
+	int32 originId = 8;
+}
+
+message CSBombGlobeFishHit
+{
+	int32 bombId = 1;
+	int32 bt_type = 2;
+	repeated int32 screen_fishes = 3;
+}
+
+message SCAnniversaryShowSelect
+{
+	int32 chair_idx = 1;
+	bool show_select = 2;
+	int64 remain_time = 3;
+	int32 stage = 4;
+}
+
+message CSAnniversarySelectReq
+{
+	int32 stage = 1;
+}
+
+message AnniversaryStage1Result
+{
+	int64 score = 1;
+	int32 fish_uid = 2;
+}
+
+message AnniversaryStage2Result
+{
+	repeated int64 score_list = 1;
+	int32 drop_times = 2;
+	int32 multiple = 3;
+}
+
+message AnniversaryStage3Result
+{
+	int32 origin_id = 1;
+	int32 self_id = 2;
+}
+
+message SCAnniversarySelectResult
+{
+	int32 chair_idx = 1;
+	int32 stage = 2;
+	int32 bt_ratio = 3;
+	repeated MultiInfo multi_list = 4;
+	int64 total_earn = 5;
+	bool death = 6;
+	AnniversaryStage1Result result1 = 7;
+	AnniversaryStage2Result result2 = 8;
+	AnniversaryStage3Result result3 = 9;
+}
+
+message CSAnniversaryHit
+{
+	int32 bombId = 1;
+	int32 bt_type = 2;
+	repeated int32 screen_fishes = 3;
+}
+
+message SCSyncAnniversaryHitStage
+{
+	int32 chair_idx = 1;
+	int32 origin_id = 2;
+	int32 self_id = 3;
+	int32 stage = 4;
+	int64 total_earn = 5;
+	int64 invalid_earn = 6;
+}
+
+message ScallopLottery
+{
+	int32 id = 1;
+	int32 type = 2;
+	int32 status = 3;
+	Obj reward = 4;
+}
+
+message SCCaptureScallop
+{
+	int32 chair_idx = 1;
+	int32 fish_uid = 2;
+	int32 ratio = 3;
+	int64 time = 4;
+	repeated ScallopLottery lottery_list = 5;
+	repeated Obj reward_config = 6;
+}
+
+message CSOpenScallop
+{
+	int32 id = 1;
+}
+
+message SCOpenScallop
+{
+	int32 chair_idx = 1;
+	ScallopLottery scallop = 2;
+}
+
+message SCSettleScallopLottery
+{
+	int32 chair_idx = 1;
+	int64 earn = 2;
+	repeated ScallopLottery lottery_list = 3;
+	repeated MultiInfo multi_list = 4;
+}
+
+message SCSyncScallopLottery
+{
+	int32 chair_idx = 1;
+	int32 ratio = 2;
+	int64 time = 3;
+	repeated ScallopLottery lottery_list = 4;
+	repeated Obj reward_config = 5;
+}
+
+message OpenChestReward
+{
+	int32 id = 1;
+	Decimal num = 2;
+}
+
+message SCUpdateChestStatus
+{
+	bool is_active = 1;
+	ChestType chest_type = 2;
+	int32 total_progress = 3;
+	int32 remain_progress = 4;
+	bool guide = 5;
+	int32 available_reward = 6;
+}
+
+message CSChestConfig
+{
+	
+}
+
+message ChestBrief
+{
+	ChestType chest_type = 1;
+	repeated OpenChestReward reward = 2;
+}
+
+message SCChestConfig
+{
+	int64 end_time = 1;
+	repeated ChestBrief chest_brief_list = 2;
+	int32 min_ratio = 3;
+	bool auto_open = 4;
+	ChestAutoSelectOption auto_option = 5;
+	bool is_enable = 6;
+}
+
+message SCOpenChest
+{
+	repeated OpenChestReward reward_list = 1;
+	ChestAutoSelectOption auto_option = 2;
+}
+
+message CSSelectChestReward
+{
+	int32 select_index = 1;
+}
+
+message SCSelectChestReward
+{
+	OpenChestReward reward = 1;
+}
+
+message CSChestSetAutoSelect
+{
+	ChestAutoSelectOption auto_option = 1;
+	bool auto_open = 2;
+}
+
+message SCChestSetAutoSelect
+{
+	ChestAutoSelectOption auto_option = 1;
+	bool auto_open = 2;
+}
+
+message CSChestSetEnable
+{
+	bool is_enable = 1;
+}
+
+message SCChestSetEnable
+{
+	bool is_enable = 1;
+}
+
+message SCSpecEffect
+{
+	int32 costMoney = 1;
+	int64 earnMoney = 2;
+}
+
+message SCTortoiseExplode
+{
+	int32 chair_idx = 1;
+	int32 fish_uid = 2;
+	int32 bullet_id = 3;
+	int32 ratio = 4;
+	int32 max_effect = 5;
+}
+
+message RewardInfo
+{
+	int32 prop_id = 1;
+	int32 prop_num = 2;
+	int32 quality = 3;
+	bool spec_show = 4;
+}
+
+message MissionInfo
+{
+	int32 draw_times = 1;
+	repeated RewardInfo reward_list = 2;
+	bool complete = 3;
+	bool receive = 4;
+	int32 mission_id = 5;
+}
+
+message BigRewardInfo
+{
+	int32 big_reward_times = 1;
+	repeated RewardInfo draw_rewardList = 2;
+}
+
+message TreasureHuntConfig
+{
+	int32 term = 1;
+	int32 start_time = 2;
+	int64 end_time = 3;
+	bool enable = 4;
+	BigRewardInfo big_reward_info = 5;
+	repeated RewardInfo reward_list = 6;
+	int32 min_draw = 7;
+	int32 max_draw = 8;
+	int32 topic = 9;
+}
+
+message CSSyncConfigs
+{
+	int32 config_type = 1;
+}
+
+message SCSyncConfigs
+{
+	TreasureHuntConfig treasure_config = 1;
+}
+
+message CSDrawReward
+{
+	int32 num = 1;
+	int32 draw_type = 2;
+}
+
+message SCDrawReward
+{
+	repeated RewardInfo reward_list = 1;
+}
+
+message CSTreasureHuntMission
+{
+}
+
+message SCTreasureHuntMission
+{
+	repeated MissionInfo mission_list = 1;
+	int32 draw_times = 2;
+}
+
+message CSReceiveMissionReward
+{
+	int32 mission_id = 1;
+}
+
+message SCReceiveMissionReward
+{
+	repeated RewardInfo reward_list = 1;
+}
+
+message CSDrawTimes
+{
+	
+}
+
+message SCDrawTimes
+{
+	int32 total_draw_times = 1;
+	int32 big_reward_process = 2;
+	int32 free_draw_times = 3;
+	int32 draw_tickers_num = 4;
+}
+
+message CSVerifyActivity
+{
+	int32 activity_id = 1;
+}
+
+message SCVerifyActivity
+{
+	bool open = 1;
+	int32 activity_id = 2;
+}
+
+message Package
+{
+	int32 package_id = 1;
+	int32 limit = 2;
+	int32 consume_price = 3;
+	int32 limit_type = 4;
+	int32 consume_props = 5;
+	int32 purchase_times = 6;
+	repeated RewardInfo reward_list = 7;
+	bool lock = 8;
+	int32 vip_limit = 9;
+}
+
+message CSTreasureHuntPackage
+{
+	int32 package_type = 1;
+}
+
+message SCTreasureHuntPackage
+{
+	repeated Package package_list = 1;
+	int32 package_type = 2;
+}
+
+message ExchangeShopInfo
+{
+	int32 level = 1;
+	repeated Package package_list = 2;
+	bool unlock = 3;
+}
+
+message CSExchangeShop
+{
+}
+
+message SCExchangeShop
+{
+	repeated ExchangeShopInfo exchangeShopList = 1;
+}
+
+message CSPurchasePackage
+{
+	int32 package_id = 1;
+}
+
+message SCPurchasePackage
+{
+	Package package = 1;
+}
+
+message CSVerifyTermChange
+{
+}
+
+message SCVerifyTermChange
+{
+	bool change = 1;
+	repeated RewardInfo reward_list = 2;
+}
+
+message SCWaterDropInfo
+{
+	bool enable = 1;
+	int32 drop_count = 2;
+	int32 fragment_count = 3;
+}
+
+message CSBuyGun
+{
+	int32 gun_level = 1;
+}
+
+message SCBuyGun
+{
+	int32 gun_level = 1;
+	int32 price = 2;
+}
+
+message CSBuyWings
+{
+	int32 wings_id = 1;
+}
+
+message SCBuyWings
+{
+	int32 wings_id = 1;
+	int32 price = 2;
+}
+
+message SCNotifyActStatus
+{
+	int32 act_type = 1;
+	int32 act_status = 2;
+}
