@@ -1921,6 +1921,8 @@ class SC_SceneInfo PROTOBUF_FINAL :
 
   enum : int {
     kBetListFieldNumber = 1,
+    kPlayerInfoFieldNumber = 2,
+    kRoomInfoFieldNumber = 3,
   };
   // repeated int32 bet_list = 1;
   int bet_list_size() const;
@@ -1944,6 +1946,42 @@ class SC_SceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_bet_list();
 
+  // repeated .PlaneWar.PlayerInfo player_info = 2;
+  int player_info_size() const;
+  private:
+  int _internal_player_info_size() const;
+  public:
+  void clear_player_info();
+  ::PlaneWar::PlayerInfo* mutable_player_info(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::PlayerInfo >*
+      mutable_player_info();
+  private:
+  const ::PlaneWar::PlayerInfo& _internal_player_info(int index) const;
+  ::PlaneWar::PlayerInfo* _internal_add_player_info();
+  public:
+  const ::PlaneWar::PlayerInfo& player_info(int index) const;
+  ::PlaneWar::PlayerInfo* add_player_info();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::PlayerInfo >&
+      player_info() const;
+
+  // .PlaneWar.RoomInfo roomInfo = 3;
+  bool has_roominfo() const;
+  private:
+  bool _internal_has_roominfo() const;
+  public:
+  void clear_roominfo();
+  const ::PlaneWar::RoomInfo& roominfo() const;
+  ::PlaneWar::RoomInfo* release_roominfo();
+  ::PlaneWar::RoomInfo* mutable_roominfo();
+  void set_allocated_roominfo(::PlaneWar::RoomInfo* roominfo);
+  private:
+  const ::PlaneWar::RoomInfo& _internal_roominfo() const;
+  ::PlaneWar::RoomInfo* _internal_mutable_roominfo();
+  public:
+  void unsafe_arena_set_allocated_roominfo(
+      ::PlaneWar::RoomInfo* roominfo);
+  ::PlaneWar::RoomInfo* unsafe_arena_release_roominfo();
+
   // @@protoc_insertion_point(class_scope:PlaneWar.SC_SceneInfo)
  private:
   class _Internal;
@@ -1953,6 +1991,8 @@ class SC_SceneInfo PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > bet_list_;
   mutable std::atomic<int> _bet_list_cached_byte_size_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::PlayerInfo > player_info_;
+  ::PlaneWar::RoomInfo* roominfo_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_PlaneWar_2eproto;
 };
@@ -51479,6 +51519,128 @@ inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 SC_SceneInfo::mutable_bet_list() {
   // @@protoc_insertion_point(field_mutable_list:PlaneWar.SC_SceneInfo.bet_list)
   return _internal_mutable_bet_list();
+}
+
+// repeated .PlaneWar.PlayerInfo player_info = 2;
+inline int SC_SceneInfo::_internal_player_info_size() const {
+  return player_info_.size();
+}
+inline int SC_SceneInfo::player_info_size() const {
+  return _internal_player_info_size();
+}
+inline void SC_SceneInfo::clear_player_info() {
+  player_info_.Clear();
+}
+inline ::PlaneWar::PlayerInfo* SC_SceneInfo::mutable_player_info(int index) {
+  // @@protoc_insertion_point(field_mutable:PlaneWar.SC_SceneInfo.player_info)
+  return player_info_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::PlayerInfo >*
+SC_SceneInfo::mutable_player_info() {
+  // @@protoc_insertion_point(field_mutable_list:PlaneWar.SC_SceneInfo.player_info)
+  return &player_info_;
+}
+inline const ::PlaneWar::PlayerInfo& SC_SceneInfo::_internal_player_info(int index) const {
+  return player_info_.Get(index);
+}
+inline const ::PlaneWar::PlayerInfo& SC_SceneInfo::player_info(int index) const {
+  // @@protoc_insertion_point(field_get:PlaneWar.SC_SceneInfo.player_info)
+  return _internal_player_info(index);
+}
+inline ::PlaneWar::PlayerInfo* SC_SceneInfo::_internal_add_player_info() {
+  return player_info_.Add();
+}
+inline ::PlaneWar::PlayerInfo* SC_SceneInfo::add_player_info() {
+  // @@protoc_insertion_point(field_add:PlaneWar.SC_SceneInfo.player_info)
+  return _internal_add_player_info();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::PlayerInfo >&
+SC_SceneInfo::player_info() const {
+  // @@protoc_insertion_point(field_list:PlaneWar.SC_SceneInfo.player_info)
+  return player_info_;
+}
+
+// .PlaneWar.RoomInfo roomInfo = 3;
+inline bool SC_SceneInfo::_internal_has_roominfo() const {
+  return this != internal_default_instance() && roominfo_ != nullptr;
+}
+inline bool SC_SceneInfo::has_roominfo() const {
+  return _internal_has_roominfo();
+}
+inline void SC_SceneInfo::clear_roominfo() {
+  if (GetArena() == nullptr && roominfo_ != nullptr) {
+    delete roominfo_;
+  }
+  roominfo_ = nullptr;
+}
+inline const ::PlaneWar::RoomInfo& SC_SceneInfo::_internal_roominfo() const {
+  const ::PlaneWar::RoomInfo* p = roominfo_;
+  return p != nullptr ? *p : reinterpret_cast<const ::PlaneWar::RoomInfo&>(
+      ::PlaneWar::_RoomInfo_default_instance_);
+}
+inline const ::PlaneWar::RoomInfo& SC_SceneInfo::roominfo() const {
+  // @@protoc_insertion_point(field_get:PlaneWar.SC_SceneInfo.roomInfo)
+  return _internal_roominfo();
+}
+inline void SC_SceneInfo::unsafe_arena_set_allocated_roominfo(
+    ::PlaneWar::RoomInfo* roominfo) {
+  if (GetArena() == nullptr) {
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(roominfo_);
+  }
+  roominfo_ = roominfo;
+  if (roominfo) {
+    
+  } else {
+    
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:PlaneWar.SC_SceneInfo.roomInfo)
+}
+inline ::PlaneWar::RoomInfo* SC_SceneInfo::release_roominfo() {
+  
+  ::PlaneWar::RoomInfo* temp = roominfo_;
+  roominfo_ = nullptr;
+  if (GetArena() != nullptr) {
+    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+  }
+  return temp;
+}
+inline ::PlaneWar::RoomInfo* SC_SceneInfo::unsafe_arena_release_roominfo() {
+  // @@protoc_insertion_point(field_release:PlaneWar.SC_SceneInfo.roomInfo)
+  
+  ::PlaneWar::RoomInfo* temp = roominfo_;
+  roominfo_ = nullptr;
+  return temp;
+}
+inline ::PlaneWar::RoomInfo* SC_SceneInfo::_internal_mutable_roominfo() {
+  
+  if (roominfo_ == nullptr) {
+    auto* p = CreateMaybeMessage<::PlaneWar::RoomInfo>(GetArena());
+    roominfo_ = p;
+  }
+  return roominfo_;
+}
+inline ::PlaneWar::RoomInfo* SC_SceneInfo::mutable_roominfo() {
+  // @@protoc_insertion_point(field_mutable:PlaneWar.SC_SceneInfo.roomInfo)
+  return _internal_mutable_roominfo();
+}
+inline void SC_SceneInfo::set_allocated_roominfo(::PlaneWar::RoomInfo* roominfo) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  if (message_arena == nullptr) {
+    delete roominfo_;
+  }
+  if (roominfo) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(roominfo);
+    if (message_arena != submessage_arena) {
+      roominfo = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, roominfo, submessage_arena);
+    }
+    
+  } else {
+    
+  }
+  roominfo_ = roominfo;
+  // @@protoc_insertion_point(field_set_allocated:PlaneWar.SC_SceneInfo.roomInfo)
 }
 
 // -------------------------------------------------------------------

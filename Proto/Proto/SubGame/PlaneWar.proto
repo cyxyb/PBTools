@@ -258,6 +258,8 @@ message Decimal
 message SC_SceneInfo
 {
 	repeated int32 bet_list = 1;	//押注
+	repeated PlayerInfo player_info = 2;	//玩家信息
+	RoomInfo roomInfo = 3;
 }
 
 message CSLogin
@@ -472,14 +474,14 @@ message EffectInfo
 
 message PlayerInfo
 {
-	int32 ratio = 1;
-	int32 planeID = 2;
+	int32 ratio = 1;					// 押注
+	int32 planeID = 2;					// 炮台类型
 	int64 score = 3;
 	int32 chair = 4;
 	string playerName = 5;
 	int32 playerID = 6;
 	int32 vip = 7;
-	StateInfo stateInfo = 8;
+	StateInfo stateInfo = 8;			//
 	int32 memberDays = 9;
 	int32 lastVipLevel = 10;
 	int32 scratchCardNum = 11;
@@ -493,7 +495,7 @@ message PlayerInfo
 	int32 effectID = 19;
 	string icon = 20;
 	repeated RouletteInfo rouletteList = 21;
-	int32 wingsId = 22;
+	int32 wingsId = 22;					// 翅膀ID
 	EffectInfo effectInfo = 23;
 	int32 currentRank = 24;
 	int32 star = 25;
