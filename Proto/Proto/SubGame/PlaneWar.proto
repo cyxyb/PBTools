@@ -474,7 +474,7 @@ message PlayerInfo
 {
 	int32 ratio = 1;
 	int32 planeID = 2;
-	int32 score = 3;
+	int64 score = 3;
 	int32 chair = 4;
 	string playerName = 5;
 	int32 playerID = 6;

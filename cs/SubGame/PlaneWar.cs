@@ -83,7 +83,7 @@ namespace PlaneWar {
             "Zm8SCgoCaWQYASABKAUSCwoDbnVtGAIgASgFIjAKCkVmZmVjdEluZm8SEAoI",
             "ZWZmZWN0SUQYASABKAUSEAoIaXNHbG9iYWwYAiABKAginAUKClBsYXllcklu",
             "Zm8SDQoFcmF0aW8YASABKAUSDwoHcGxhbmVJRBgCIAEoBRINCgVzY29yZRgD",
-            "IAEoBRINCgVjaGFpchgEIAEoBRISCgpwbGF5ZXJOYW1lGAUgASgJEhAKCHBs",
+            "IAEoAxINCgVjaGFpchgEIAEoBRISCgpwbGF5ZXJOYW1lGAUgASgJEhAKCHBs",
             "YXllcklEGAYgASgFEgsKA3ZpcBgHIAEoBRImCglzdGF0ZUluZm8YCCABKAsy",
             "Ey5QbGFuZVdhci5TdGF0ZUluZm8SEgoKbWVtYmVyRGF5cxgJIAEoBRIUCgxs",
             "YXN0VmlwTGV2ZWwYCiABKAUSFgoOc2NyYXRjaENhcmROdW0YCyABKAUSDgoG",
@@ -9079,9 +9079,9 @@ namespace PlaneWar {
 
     /// <summary>Field number for the "score" field.</summary>
     public const int ScoreFieldNumber = 3;
-    private int score_;
+    private long score_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int Score {
+    public long Score {
       get { return score_; }
       set {
         score_ = value;
@@ -9398,7 +9398,7 @@ namespace PlaneWar {
       int hash = 1;
       if (Ratio != 0) hash ^= Ratio.GetHashCode();
       if (PlaneID != 0) hash ^= PlaneID.GetHashCode();
-      if (Score != 0) hash ^= Score.GetHashCode();
+      if (Score != 0L) hash ^= Score.GetHashCode();
       if (Chair != 0) hash ^= Chair.GetHashCode();
       if (PlayerName.Length != 0) hash ^= PlayerName.GetHashCode();
       if (PlayerID != 0) hash ^= PlayerID.GetHashCode();
@@ -9447,9 +9447,9 @@ namespace PlaneWar {
         output.WriteRawTag(16);
         output.WriteInt32(PlaneID);
       }
-      if (Score != 0) {
+      if (Score != 0L) {
         output.WriteRawTag(24);
-        output.WriteInt32(Score);
+        output.WriteInt64(Score);
       }
       if (Chair != 0) {
         output.WriteRawTag(32);
@@ -9558,9 +9558,9 @@ namespace PlaneWar {
         output.WriteRawTag(16);
         output.WriteInt32(PlaneID);
       }
-      if (Score != 0) {
+      if (Score != 0L) {
         output.WriteRawTag(24);
-        output.WriteInt32(Score);
+        output.WriteInt64(Score);
       }
       if (Chair != 0) {
         output.WriteRawTag(32);
@@ -9667,8 +9667,8 @@ namespace PlaneWar {
       if (PlaneID != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(PlaneID);
       }
-      if (Score != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Score);
+      if (Score != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Score);
       }
       if (Chair != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Chair);
@@ -9755,7 +9755,7 @@ namespace PlaneWar {
       if (other.PlaneID != 0) {
         PlaneID = other.PlaneID;
       }
-      if (other.Score != 0) {
+      if (other.Score != 0L) {
         Score = other.Score;
       }
       if (other.Chair != 0) {
@@ -9864,7 +9864,7 @@ namespace PlaneWar {
             break;
           }
           case 24: {
-            Score = input.ReadInt32();
+            Score = input.ReadInt64();
             break;
           }
           case 32: {
@@ -10001,7 +10001,7 @@ namespace PlaneWar {
             break;
           }
           case 24: {
-            Score = input.ReadInt32();
+            Score = input.ReadInt64();
             break;
           }
           case 32: {

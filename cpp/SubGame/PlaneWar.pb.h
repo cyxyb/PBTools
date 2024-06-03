@@ -7013,13 +7013,13 @@ class PlayerInfo PROTOBUF_FINAL :
   void _internal_set_planeid(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 score = 3;
+  // int64 score = 3;
   void clear_score();
-  ::PROTOBUF_NAMESPACE_ID::int32 score() const;
-  void set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int64 score() const;
+  void set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_score() const;
-  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_score() const;
+  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
   // int32 chair = 4;
@@ -7175,7 +7175,7 @@ class PlayerInfo PROTOBUF_FINAL :
   ::PlaneWar::Decimal* redpacket_;
   ::PROTOBUF_NAMESPACE_ID::int32 ratio_;
   ::PROTOBUF_NAMESPACE_ID::int32 planeid_;
-  ::PROTOBUF_NAMESPACE_ID::int32 score_;
+  ::PROTOBUF_NAMESPACE_ID::int64 score_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_;
   ::PROTOBUF_NAMESPACE_ID::int32 playerid_;
   ::PROTOBUF_NAMESPACE_ID::int32 vip_;
@@ -54782,22 +54782,22 @@ inline void PlayerInfo::set_planeid(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:PlaneWar.PlayerInfo.planeID)
 }
 
-// int32 score = 3;
+// int64 score = 3;
 inline void PlayerInfo::clear_score() {
-  score_ = 0;
+  score_ = PROTOBUF_LONGLONG(0);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 PlayerInfo::_internal_score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 PlayerInfo::_internal_score() const {
   return score_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 PlayerInfo::score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int64 PlayerInfo::score() const {
   // @@protoc_insertion_point(field_get:PlaneWar.PlayerInfo.score)
   return _internal_score();
 }
-inline void PlayerInfo::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void PlayerInfo::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   
   score_ = value;
 }
-inline void PlayerInfo::set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void PlayerInfo::set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_score(value);
   // @@protoc_insertion_point(field_set:PlaneWar.PlayerInfo.score)
 }

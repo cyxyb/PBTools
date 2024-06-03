@@ -8463,7 +8463,7 @@ const char descriptor_table_protodef_PlaneWar_2eproto[] PROTOBUF_SECTION_VARIABL
   "\022\013\n\003num\030\002 \001(\005\"0\n\nEffectInfo\022\020\n\010effectID\030"
   "\001 \001(\005\022\020\n\010isGlobal\030\002 \001(\010\"\234\005\n\nPlayerInfo\022\r"
   "\n\005ratio\030\001 \001(\005\022\017\n\007planeID\030\002 \001(\005\022\r\n\005score\030"
-  "\003 \001(\005\022\r\n\005chair\030\004 \001(\005\022\022\n\nplayerName\030\005 \001(\t"
+  "\003 \001(\003\022\r\n\005chair\030\004 \001(\005\022\022\n\nplayerName\030\005 \001(\t"
   "\022\020\n\010playerID\030\006 \001(\005\022\013\n\003vip\030\007 \001(\005\022&\n\tstate"
   "Info\030\010 \001(\0132\023.PlaneWar.StateInfo\022\022\n\nmembe"
   "rDays\030\t \001(\005\022\024\n\014lastVipLevel\030\n \001(\005\022\026\n\016scr"
@@ -18021,7 +18021,7 @@ const char* PlayerInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 score = 3;
+      // int64 score = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
@@ -18250,10 +18250,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_planeid(), target);
   }
 
-  // int32 score = 3;
+  // int64 score = 3;
   if (this->score() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_score(), target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_score(), target);
   }
 
   // int32 chair = 4;
@@ -18515,10 +18515,10 @@ size_t PlayerInfo::ByteSizeLong() const {
         this->_internal_planeid());
   }
 
-  // int32 score = 3;
+  // int64 score = 3;
   if (this->score() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
         this->_internal_score());
   }
 
