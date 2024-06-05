@@ -116,6 +116,7 @@ enum EMsgIDSubGame
 	ChestSetEnable                      = 110;
 	WaterDropInfo                       = 120;
 	SyncTextConfig	                    = 121;
+	FinishSpecial						= 122;
 }
 
 enum ErrorCode
@@ -772,24 +773,24 @@ message CSHit
 
 message SCHit
 {
-	bool isCaptured = 1;
-	int32 chair = 2;
-	int32 monsterUID = 3;
-	int32 ratio = 4;
-	int32 bulletType = 5;
-	int32 earn = 6;
-	int64 score = 7;
-	int32 baseValue = 8;
-	repeated int32 multipleList = 9;
-	repeated BuffInfo dropBuffList = 10;
-	repeated TriggerBullet triggerBullet = 11;
-	DropPoker dropPoker = 12;
-	Roulette roulette = 13;
-	int32 stage = 14;
-	int32 dropCard = 15;
-	int32 originUID = 16;
-	int32 dropCall = 17;
-	int32 dropWeaponPiece = 18;
+	bool isCaptured = 1;						//是否捕获
+	int32 chair = 2;							//椅子号
+	int32 monsterUID = 3;						//怪物ID
+	int32 ratio = 4;							//分数
+	int32 bulletType = 5;						//子弹类型
+	int32 earn = 6;								//得分
+	int64 score = 7;							//玩家金币
+	int32 baseValue = 8;						//怪物倍数
+	repeated int32 multipleList = 9;			//转轮 蜜蜂等怪物
+	repeated BuffInfo dropBuffList = 10;		//todo弹药箱buff
+	repeated TriggerBullet triggerBullet = 11;	//todo弹药箱buff
+	DropPoker dropPoker = 12;					//小丑
+	Roulette roulette = 13;						//todo 飞碟
+	int32 stage = 14;							//鲨鱼阶段(0,1,2)
+	int32 dropCard = 15;						//召唤卡 无用
+	int32 originUID = 16;						//谁杀死的来源ID
+	int32 dropCall = 17;						//召唤卡 无用
+	int32 dropWeaponPiece = 18;					//无用
 	repeated TreasureInfo treasureList = 19;
 	int32 weaponID = 20;
 	WeaponInfo weaponInfo = 21;

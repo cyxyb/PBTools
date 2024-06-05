@@ -1373,12 +1373,13 @@ enum EMsgIDSubGame : int {
   ChestSetEnable = 110,
   WaterDropInfo = 120,
   SyncTextConfig = 121,
+  FinishSpecial = 122,
   EMsgIDSubGame_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDSubGame_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDSubGame_IsValid(int value);
 constexpr EMsgIDSubGame EMsgIDSubGame_MIN = Login;
-constexpr EMsgIDSubGame EMsgIDSubGame_MAX = SyncTextConfig;
+constexpr EMsgIDSubGame EMsgIDSubGame_MAX = FinishSpecial;
 constexpr int EMsgIDSubGame_ARRAYSIZE = EMsgIDSubGame_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDSubGame_descriptor();
