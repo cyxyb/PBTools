@@ -873,6 +873,7 @@ message SCGainSettle
 	int32 chair = 1;
 	int32 originUID = 2;
 	int32 ratio = 3;
+	int32 sourceUID = 4;
 }
 
 message CSSetPlane

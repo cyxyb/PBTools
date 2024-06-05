@@ -15444,6 +15444,7 @@ class SCGainSettle PROTOBUF_FINAL :
     kChairFieldNumber = 1,
     kOriginUIDFieldNumber = 2,
     kRatioFieldNumber = 3,
+    kSourceUIDFieldNumber = 4,
   };
   // int32 chair = 1;
   void clear_chair();
@@ -15472,6 +15473,15 @@ class SCGainSettle PROTOBUF_FINAL :
   void _internal_set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 sourceUID = 4;
+  void clear_sourceuid();
+  ::PROTOBUF_NAMESPACE_ID::int32 sourceuid() const;
+  void set_sourceuid(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_sourceuid() const;
+  void _internal_set_sourceuid(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:PlaneWar.SCGainSettle)
  private:
   class _Internal;
@@ -15482,6 +15492,7 @@ class SCGainSettle PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 chair_;
   ::PROTOBUF_NAMESPACE_ID::int32 originuid_;
   ::PROTOBUF_NAMESPACE_ID::int32 ratio_;
+  ::PROTOBUF_NAMESPACE_ID::int32 sourceuid_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_PlaneWar_2eproto;
 };
@@ -62087,6 +62098,26 @@ inline void SCGainSettle::_internal_set_ratio(::PROTOBUF_NAMESPACE_ID::int32 val
 inline void SCGainSettle::set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_ratio(value);
   // @@protoc_insertion_point(field_set:PlaneWar.SCGainSettle.ratio)
+}
+
+// int32 sourceUID = 4;
+inline void SCGainSettle::clear_sourceuid() {
+  sourceuid_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCGainSettle::_internal_sourceuid() const {
+  return sourceuid_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCGainSettle::sourceuid() const {
+  // @@protoc_insertion_point(field_get:PlaneWar.SCGainSettle.sourceUID)
+  return _internal_sourceuid();
+}
+inline void SCGainSettle::_internal_set_sourceuid(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  sourceuid_ = value;
+}
+inline void SCGainSettle::set_sourceuid(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_sourceuid(value);
+  // @@protoc_insertion_point(field_set:PlaneWar.SCGainSettle.sourceUID)
 }
 
 // -------------------------------------------------------------------
