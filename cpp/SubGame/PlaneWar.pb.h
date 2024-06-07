@@ -13144,6 +13144,7 @@ class CSHit PROTOBUF_FINAL :
     kSourceUIDFieldNumber = 4,
     kGenerationFieldNumber = 5,
     kDeductedMoneyFieldNumber = 6,
+    kOriginUIDFieldNumber = 7,
   };
   // int32 monsterUID = 1;
   void clear_monsteruid();
@@ -13199,6 +13200,15 @@ class CSHit PROTOBUF_FINAL :
   void _internal_set_deductedmoney(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 originUID = 7;
+  void clear_originuid();
+  ::PROTOBUF_NAMESPACE_ID::int32 originuid() const;
+  void set_originuid(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_originuid() const;
+  void _internal_set_originuid(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:PlaneWar.CSHit)
  private:
   class _Internal;
@@ -13212,6 +13222,7 @@ class CSHit PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 sourceuid_;
   ::PROTOBUF_NAMESPACE_ID::int32 generation_;
   ::PROTOBUF_NAMESPACE_ID::int32 deductedmoney_;
+  ::PROTOBUF_NAMESPACE_ID::int32 originuid_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_PlaneWar_2eproto;
 };
@@ -60072,6 +60083,26 @@ inline void CSHit::_internal_set_deductedmoney(::PROTOBUF_NAMESPACE_ID::int32 va
 inline void CSHit::set_deductedmoney(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_deductedmoney(value);
   // @@protoc_insertion_point(field_set:PlaneWar.CSHit.deductedMoney)
+}
+
+// int32 originUID = 7;
+inline void CSHit::clear_originuid() {
+  originuid_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CSHit::_internal_originuid() const {
+  return originuid_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CSHit::originuid() const {
+  // @@protoc_insertion_point(field_get:PlaneWar.CSHit.originUID)
+  return _internal_originuid();
+}
+inline void CSHit::_internal_set_originuid(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  originuid_ = value;
+}
+inline void CSHit::set_originuid(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_originuid(value);
+  // @@protoc_insertion_point(field_set:PlaneWar.CSHit.originUID)
 }
 
 // -------------------------------------------------------------------

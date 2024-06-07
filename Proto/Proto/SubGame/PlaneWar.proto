@@ -769,6 +769,7 @@ message CSHit
 	int32 sourceUID = 4;
 	int32 generation = 5;
 	int32 deductedMoney = 6;
+	int32 originUID = 7;
 }
 
 message SCHit
