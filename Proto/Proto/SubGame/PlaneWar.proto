@@ -117,6 +117,7 @@ enum EMsgIDSubGame
 	WaterDropInfo                       = 120;
 	SyncTextConfig	                    = 121;
 	FinishSpecial						= 122;
+	FinishRecoverScore					= 123;
 }
 
 enum ErrorCode
@@ -300,14 +301,14 @@ message Pos
 
 message BuffInfo
 {
-	int32 buffUID = 1;
-	int32 num = 2;
-	int32 ratio = 3;
-	bool isCrit = 4;
-	repeated int32 compose = 5;
-	repeated int32 desc = 6;
-	int32 speedUpRatio = 7;
-	int32 originUID = 8;
+	int32 buffUID = 1; //打死鱼ID
+	int32 num = 2;		//子弹个数
+	int32 ratio = 3;	//子弹倍数
+	bool isCrit = 4;	//是否暴击
+	repeated int32 compose = 5; //1:分裂 2:连电 3:暴击 4:加速
+	repeated int32 desc = 6;	//
+	int32 speedUpRatio = 7;		//加速
+	int32 originUID = 8;	//打死鱼ID
 }
 
 message BlackHoleInfo
