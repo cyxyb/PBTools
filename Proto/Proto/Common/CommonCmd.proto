@@ -189,6 +189,10 @@ enum EMsgIDGame
 	MsgIDGame_NotifyPlayerOfflineResp	= 1019;		//通知玩家断线(MsgCommonN32)
 	MsgIDGame_ChangeTable				= 1020;		//换桌(MsgCommonN32)
 	MsgIDGame_NotifySysMaintainResp		= 1021;		//通知服务器即将维护时间点(MsgCommonN32)
+	MsgIDGame_ModifyPropResp			= 1022;		//道具修改返回(MsgPropInfo)
+	MsgIDGame_GetPropInfo				= 1023;		//获取道具信息(MsgCommonBool)
+	MsgIDGame_GetPropInfoResp			= 1024;		//获取道具信息返回(MsgGetPropInfo)
+	
 
 	////////////////////////////////////////////pvp/////////////////////////////////////////
 	//ID从1051开始

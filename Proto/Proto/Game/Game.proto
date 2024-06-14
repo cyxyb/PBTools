@@ -96,6 +96,18 @@ message MsgJackpotInfo
 	int64	fake_jackpot	= 2;	//假奖池分数
 }
 
+//道具信息
+message MsgPropInfo
+{
+	int32	prop_id			= 1;
+	int32	prop_num		= 2;
+}
+
+//道具信息
+message MsgGetPropInfo
+{
+	repeated MsgPropInfo	prop_info	= 1;
+}
 //////////////////////////////////////////////////PVP//////////////////////////////////////////////
 //pvp桌子信息
 message MsgPvpTableInfo

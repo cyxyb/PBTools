@@ -323,6 +323,7 @@ message MsgDBGamePlayerLoginResp
 	string		user_ip			= 13;		//玩家IP
 	string		longitude		= 14;	//径度
 	string		latitude 		= 15;	//维度
+	repeated MsgDBCommonKV prop_info = 16;	//道具信息
 }
 
 //写分
@@ -559,6 +560,14 @@ message MsgDBControlUser
 	int32 control_userid 	= 2;		//控制玩家ID
 	int32 type 				= 3;		//控制类型(1:大赢 2：小赢 3：大输 4：小输)
 	int64 control_gold		= 4;		//控制金币数量
+}
+
+//控制玩家
+message MsgDBModifyProp
+{
+	int32 userid		= 1;		//玩家id
+	int32 prop_id 		= 2;		//道具ID
+	int32 prop_num 		= 3;		//道具数量
 }
 
 //短信状态

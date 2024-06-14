@@ -156,7 +156,7 @@ const char descriptor_table_protodef_CommonCmd_2eproto[] PROTOBUF_SECTION_VARIAB
   "gIDAgent_ControlUser\020\225\001\022\037\n\032MsgIDAgent_Co"
   "ntrolUserResp\020\226\001\022!\n\034MsgIDTransfer_Transf"
   "erRecall\020\227\001\022%\n MsgIDTransfer_TransferRec"
-  "allResp\020\230\001*\356\t\n\nEMsgIDGame\022\022\n\016MsgIDGame_N"
+  "allResp\020\230\001*\311\n\n\nEMsgIDGame\022\022\n\016MsgIDGame_N"
   "ull\020\000\022\024\n\017MsgIDGame_Login\020\351\007\022\030\n\023MsgIDGame"
   "_LoginResp\020\352\007\022\036\n\031MsgIDGame_SqueezeSeatRe"
   "sp\020\353\007\022\025\n\020MsgIDGame_Logout\020\354\007\022\032\n\025MsgIDGam"
@@ -172,32 +172,34 @@ const char descriptor_table_protodef_CommonCmd_2eproto[] PROTOBUF_SECTION_VARIAB
   "gIDGame_AddOneRecord\020\372\007\022&\n!MsgIDGame_Not"
   "ifyPlayerOfflineResp\020\373\007\022\032\n\025MsgIDGame_Cha"
   "ngeTable\020\374\007\022$\n\037MsgIDGame_NotifySysMainta"
-  "inResp\020\375\007\022$\n\037MsgIDGame_Pvp_GetRoomConfig"
-  "Resp\020\233\010\022$\n\037MsgIDGame_Pvp_SendTableListRe"
-  "sp\020\235\010\022\036\n\031MsgIDGame_Pvp_CreateTable\020\236\010\022\"\n"
-  "\035MsgIDGame_Pvp_CreateTableResp\020\237\010\022\034\n\027Msg"
-  "IDGame_Pvp_JoinTable\020\240\010\022 \n\033MsgIDGame_Pvp"
-  "_JoinTableResp\020\241\010\022 \n\033MsgIDGame_Pvp_Activ"
-  "ateTable\020\242\010\022$\n\037MsgIDGame_Pvp_ActivateTab"
-  "leResp\020\243\010\022\033\n\026MsgIDGame_Pvp_KickUser\020\244\010\022\037"
-  "\n\032MsgIDGame_Pvp_KickUserResp\020\245\010\022\037\n\032MsgID"
-  "Game_Pvp_DestroyTable\020\246\010\022#\n\036MsgIDGame_Pv"
-  "p_DestroyTableResp\020\247\010\022 \n\033MsgIDGame_Pvp_F"
-  "astJoinTable\020\250\010\022$\n\037MsgIDGame_Pvp_FastJoi"
-  "nTableResp\020\251\010\022\032\n\025MsgIDGame_Pvp_StandUp\020\252"
-  "\010\022\036\n\031MsgIDGame_Pvp_StandUpResp\020\253\010\022\'\n\"Msg"
-  "IDGame_Pvp_TableChangeOwunrResp\020\254\010\022\'\n\"Ms"
-  "gIDGame_Pvp_TableRoundChangeResp\020\255\010*\375\002\n\n"
-  "EMsgIDChat\022\022\n\016MsgIDChat_Null\020\000\022\024\n\017MsgIDC"
-  "hat_Login\020\321\017\022\030\n\023MsgIDChat_LoginResp\020\322\017\022\031"
-  "\n\024MsgIDChat_LogoutResp\020\323\017\022\034\n\027MsgIDChat_S"
-  "endNormalMsg\020\324\017\022&\n!MsgIDChat_NotifyChatN"
-  "ormalMsgResp\020\325\017\022\035\n\030MsgIDChat_SendTrumpet"
-  "Msg\020\326\017\022\'\n\"MsgIDChat_NotifyChatTrumpetMsg"
-  "Resp\020\327\017\022\037\n\032MsgIDChat_SyncUserInfoResp\020\330\017"
-  "\022\037\n\032MsgIDChat_SetLilitChatResp\020\331\017\022\035\n\030Msg"
-  "IDChat_GetChatHistory\020\332\017\022!\n\034MsgIDChat_Ge"
-  "tChatHistoryResp\020\333\017b\006proto3"
+  "inResp\020\375\007\022\035\n\030MsgIDGame_ModifyPropResp\020\376\007"
+  "\022\032\n\025MsgIDGame_GetPropInfo\020\377\007\022\036\n\031MsgIDGam"
+  "e_GetPropInfoResp\020\200\010\022$\n\037MsgIDGame_Pvp_Ge"
+  "tRoomConfigResp\020\233\010\022$\n\037MsgIDGame_Pvp_Send"
+  "TableListResp\020\235\010\022\036\n\031MsgIDGame_Pvp_Create"
+  "Table\020\236\010\022\"\n\035MsgIDGame_Pvp_CreateTableRes"
+  "p\020\237\010\022\034\n\027MsgIDGame_Pvp_JoinTable\020\240\010\022 \n\033Ms"
+  "gIDGame_Pvp_JoinTableResp\020\241\010\022 \n\033MsgIDGam"
+  "e_Pvp_ActivateTable\020\242\010\022$\n\037MsgIDGame_Pvp_"
+  "ActivateTableResp\020\243\010\022\033\n\026MsgIDGame_Pvp_Ki"
+  "ckUser\020\244\010\022\037\n\032MsgIDGame_Pvp_KickUserResp\020"
+  "\245\010\022\037\n\032MsgIDGame_Pvp_DestroyTable\020\246\010\022#\n\036M"
+  "sgIDGame_Pvp_DestroyTableResp\020\247\010\022 \n\033MsgI"
+  "DGame_Pvp_FastJoinTable\020\250\010\022$\n\037MsgIDGame_"
+  "Pvp_FastJoinTableResp\020\251\010\022\032\n\025MsgIDGame_Pv"
+  "p_StandUp\020\252\010\022\036\n\031MsgIDGame_Pvp_StandUpRes"
+  "p\020\253\010\022\'\n\"MsgIDGame_Pvp_TableChangeOwunrRe"
+  "sp\020\254\010\022\'\n\"MsgIDGame_Pvp_TableRoundChangeR"
+  "esp\020\255\010*\375\002\n\nEMsgIDChat\022\022\n\016MsgIDChat_Null\020"
+  "\000\022\024\n\017MsgIDChat_Login\020\321\017\022\030\n\023MsgIDChat_Log"
+  "inResp\020\322\017\022\031\n\024MsgIDChat_LogoutResp\020\323\017\022\034\n\027"
+  "MsgIDChat_SendNormalMsg\020\324\017\022&\n!MsgIDChat_"
+  "NotifyChatNormalMsgResp\020\325\017\022\035\n\030MsgIDChat_"
+  "SendTrumpetMsg\020\326\017\022\'\n\"MsgIDChat_NotifyCha"
+  "tTrumpetMsgResp\020\327\017\022\037\n\032MsgIDChat_SyncUser"
+  "InfoResp\020\330\017\022\037\n\032MsgIDChat_SetLilitChatRes"
+  "p\020\331\017\022\035\n\030MsgIDChat_GetChatHistory\020\332\017\022!\n\034M"
+  "sgIDChat_GetChatHistoryResp\020\333\017b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_CommonCmd_2eproto_deps[1] = {
 };
@@ -205,7 +207,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Com
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_CommonCmd_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_CommonCmd_2eproto = {
-  false, false, descriptor_table_protodef_CommonCmd_2eproto, "CommonCmd.proto", 7027,
+  false, false, descriptor_table_protodef_CommonCmd_2eproto, "CommonCmd.proto", 7118,
   &descriptor_table_CommonCmd_2eproto_once, descriptor_table_CommonCmd_2eproto_sccs, descriptor_table_CommonCmd_2eproto_deps, 0, 0,
   schemas, file_default_instances, TableStruct_CommonCmd_2eproto::offsets,
   file_level_metadata_CommonCmd_2eproto, 0, file_level_enum_descriptors_CommonCmd_2eproto, file_level_service_descriptors_CommonCmd_2eproto,
@@ -421,6 +423,9 @@ bool EMsgIDGame_IsValid(int value) {
     case 1019:
     case 1020:
     case 1021:
+    case 1022:
+    case 1023:
+    case 1024:
     case 1051:
     case 1053:
     case 1054:

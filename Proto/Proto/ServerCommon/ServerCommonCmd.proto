@@ -266,7 +266,9 @@ enum EMsgIDDB
 	DB2GAME_ApplyRobotResp					= 2020;	//申请机器人返回
 	GAME2DB_QueryPlayerGold					= 2021;	//查询玩家金币
 	DB2GAME_QueryPlayerGoldResp				= 2022;	//查询玩家金币返回
-		
+	GAME2DB_ModifyProp						= 2023;	//修改道具
+	DB2GAME_ModifyPropResp					= 2024;	//修改道具返回
+	
 	//3001-4000 ChatServer2DB		
 	CHAT2DB_Login							= 3001;	//登录
 	DB2CHAT_LoginResp						= 3002;	//登录返回

@@ -46,43 +46,45 @@ public static partial class GameReflection {
           "YXRhGAIgAygLMgsuTXNnRGF5RGF0YSI5Cg5Nc2dRdWVyeVJlY29yZBIMCgRw",
           "YWdlGAEgASgFEgsKA251bRgCIAEoBRIMCgR0eXBlGAMgASgFIjcKDk1zZ0ph",
           "Y2twb3RJbmZvEg8KB2phY2twb3QYASABKAMSFAoMZmFrZV9qYWNrcG90GAIg",
-          "ASgDIs4CCg9Nc2dQdnBUYWJsZUluZm8SEAoIdGFibGVfaWQYASABKAUSEgoK",
-          "dGFibGVfbmFtZRgCIAEoCRIRCgljaGFpcl9udW0YAyABKAUSEQoJZW50ZXJf",
-          "bnVtGAQgASgFEhAKCHBsYXlfbnVtGAUgASgFEhMKC2lzX2FjdGl2YXRlGAYg",
-          "ASgIEhIKCmlzX3ByaXZhdGUYByABKAgSEAoIcGFzc3dvcmQYCCABKAkSEAoI",
-          "b3duZXJfaWQYCSABKAUSEAoIdGFibGVfbm8YCiABKAUSDgoGdmFsdWUxGAsg",
-          "ASgDEg4KBnZhbHVlMhgMIAEoAxIOCgZ2YWx1ZTMYDSABKAMSDgoGdmFsdWU0",
-          "GA4gASgDEg4KBnZhbHVlNRgPIAEoAxIOCgZ2YWx1ZTYYECABKAMSDgoGdmFs",
-          "dWU3GBEgASgDEg4KBnZhbHVlOBgSIAEoAyJhChFNc2dQdnBSb29tQ2ZnSXRl",
-          "bRIPCgdsYWdfa2V5GAEgASgFEhMKC2NsaW5ldF9vcGVuGAIgASgFEhIKCmNh",
-          "bl9zZWxlY3QYAyABKAUSEgoKdmFsdWVfbGlzdBgEIAMoBSKYAQoQTXNnUHZw",
-          "Um9vbUNvbmZpZxIYChBjcmVhdGVfdmlwX2xpbWl0GAEgASgFEhcKD2NoYWly",
-          "X2xpbWl0X21pbhgCIAEoBRIXCg9jaGFpcl9saW1pdF9tYXgYAyABKAUSEQoJ",
-          "bWF4X3JvdW5kGAQgASgFEiUKCXBhcmFfbHNpdBgLIAMoCzISLk1zZ1B2cFJv",
-          "b21DZmdJdGVtIjcKD01zZ1B2cFRhYmxlTGlzdBIkCgp0YWJsZV9saXN0GAEg",
-          "AygLMhAuTXNnUHZwVGFibGVJbmZvInMKEU1zZ1B2cENyZWF0ZVRhYmxlEhIK",
-          "CmlzX3ByaXZhdGUYASABKAgSEgoKdGFibGVfbmFtZRgCIAEoCRIRCgljaGFp",
-          "cl9udW0YAyABKAUSEAoIcGFzc3dvcmQYBiABKAkSEQoJcGFyYV9sc2l0GAcg",
-          "AygFIl4KFU1zZ1B2cENyZWF0ZVRhYmxlUmVzcBIQCghyZXRfY29kZRgBIAEo",
-          "BRINCgV2YWx1ZRgCIAEoBRIkCgp0YWJsZV9pbmZvGAMgASgLMhAuTXNnUHZw",
-          "VGFibGVJbmZvIkcKD01zZ1B2cEpvaW5UYWJsZRIQCgh0YWJsZV9pZBgBIAEo",
-          "BRIQCgh0YWJsZV9ubxgCIAEoBRIQCghwYXNzd29yZBgDIAEoCSJwChNNc2dQ",
-          "dnBKb2luVGFibGVSZXNwEhAKCHJldF9jb2RlGAEgASgFEhAKCHRhYmxlX2lk",
-          "GAIgASgFEhAKCHRhYmxlX25vGAMgASgFEg8KB3VzZXJfaWQYBCABKAUSEgoK",
-          "cGxheWVyX251bRgFIAEoBSJzChZNc2dQdnBTdGFuZFVwVGFibGVSZXNwEhAK",
-          "CHJldF9jb2RlGAEgASgFEhAKCHRhYmxlX2lkGAIgASgFEhAKCHRhYmxlX25v",
-          "GAMgASgFEg8KB3VzZXJfaWQYBCABKAUSEgoKcGxheWVyX251bRgFIAEoBSJO",
-          "ChZNc2dQdnBEZXN0cm95VGFibGVSZXNwEhAKCHJldF9jb2RlGAEgASgFEhAK",
-          "CHRhYmxlX2lkGAIgASgFEhAKCHRhYmxlX25vGAMgASgFInAKEk1zZ1B2cEtp",
-          "Y2tVc2VyUmVzcBIQCghyZXRfY29kZRgBIAEoBRIQCghvd25lcl9pZBgCIAEo",
-          "BRISCgpvd25lcl9uaWNrGAMgASgJEg8KB2tpY2tfaWQYBCABKAUSEQoJa2lj",
-          "a19uaWNrGAUgASgJIlUKGk1zZ1B2cFRhYmxlQ2hhbmdlT3duZXJSZXNwEhAK",
-          "CHRhYmxlX2lkGAEgASgFEhAKCG93bmVyX2lkGAIgASgFEhMKC2lzX2FjdGl2",
-          "YXRlGAMgASgIImQKF01zZ1B2cEFjdGl2YXRlVGFibGVSZXNwEhAKCHJldF9j",
-          "b2RlGAEgASgFEhAKCHRhYmxlX2lkGAIgASgFEhAKCG93bmVyX2lkGAMgASgF",
-          "EhMKC2lzX2FjdGl2YXRlGAQgASgIIk8KGk1zZ1B2cFRhYmxlUm91bmRDaGFu",
-          "Z2VSZXNwEhAKCHRhYmxlX2lkGAEgASgFEhAKCHRhYmxlX25vGAIgASgFEg0K",
-          "BXJvdW5kGAMgASgFYgZwcm90bzM="));
+          "ASgDIjAKC01zZ1Byb3BJbmZvEg8KB3Byb3BfaWQYASABKAUSEAoIcHJvcF9u",
+          "dW0YAiABKAUiMQoOTXNnR2V0UHJvcEluZm8SHwoJcHJvcF9pbmZvGAEgAygL",
+          "MgwuTXNnUHJvcEluZm8izgIKD01zZ1B2cFRhYmxlSW5mbxIQCgh0YWJsZV9p",
+          "ZBgBIAEoBRISCgp0YWJsZV9uYW1lGAIgASgJEhEKCWNoYWlyX251bRgDIAEo",
+          "BRIRCgllbnRlcl9udW0YBCABKAUSEAoIcGxheV9udW0YBSABKAUSEwoLaXNf",
+          "YWN0aXZhdGUYBiABKAgSEgoKaXNfcHJpdmF0ZRgHIAEoCBIQCghwYXNzd29y",
+          "ZBgIIAEoCRIQCghvd25lcl9pZBgJIAEoBRIQCgh0YWJsZV9ubxgKIAEoBRIO",
+          "CgZ2YWx1ZTEYCyABKAMSDgoGdmFsdWUyGAwgASgDEg4KBnZhbHVlMxgNIAEo",
+          "AxIOCgZ2YWx1ZTQYDiABKAMSDgoGdmFsdWU1GA8gASgDEg4KBnZhbHVlNhgQ",
+          "IAEoAxIOCgZ2YWx1ZTcYESABKAMSDgoGdmFsdWU4GBIgASgDImEKEU1zZ1B2",
+          "cFJvb21DZmdJdGVtEg8KB2xhZ19rZXkYASABKAUSEwoLY2xpbmV0X29wZW4Y",
+          "AiABKAUSEgoKY2FuX3NlbGVjdBgDIAEoBRISCgp2YWx1ZV9saXN0GAQgAygF",
+          "IpgBChBNc2dQdnBSb29tQ29uZmlnEhgKEGNyZWF0ZV92aXBfbGltaXQYASAB",
+          "KAUSFwoPY2hhaXJfbGltaXRfbWluGAIgASgFEhcKD2NoYWlyX2xpbWl0X21h",
+          "eBgDIAEoBRIRCgltYXhfcm91bmQYBCABKAUSJQoJcGFyYV9sc2l0GAsgAygL",
+          "MhIuTXNnUHZwUm9vbUNmZ0l0ZW0iNwoPTXNnUHZwVGFibGVMaXN0EiQKCnRh",
+          "YmxlX2xpc3QYASADKAsyEC5Nc2dQdnBUYWJsZUluZm8icwoRTXNnUHZwQ3Jl",
+          "YXRlVGFibGUSEgoKaXNfcHJpdmF0ZRgBIAEoCBISCgp0YWJsZV9uYW1lGAIg",
+          "ASgJEhEKCWNoYWlyX251bRgDIAEoBRIQCghwYXNzd29yZBgGIAEoCRIRCglw",
+          "YXJhX2xzaXQYByADKAUiXgoVTXNnUHZwQ3JlYXRlVGFibGVSZXNwEhAKCHJl",
+          "dF9jb2RlGAEgASgFEg0KBXZhbHVlGAIgASgFEiQKCnRhYmxlX2luZm8YAyAB",
+          "KAsyEC5Nc2dQdnBUYWJsZUluZm8iRwoPTXNnUHZwSm9pblRhYmxlEhAKCHRh",
+          "YmxlX2lkGAEgASgFEhAKCHRhYmxlX25vGAIgASgFEhAKCHBhc3N3b3JkGAMg",
+          "ASgJInAKE01zZ1B2cEpvaW5UYWJsZVJlc3ASEAoIcmV0X2NvZGUYASABKAUS",
+          "EAoIdGFibGVfaWQYAiABKAUSEAoIdGFibGVfbm8YAyABKAUSDwoHdXNlcl9p",
+          "ZBgEIAEoBRISCgpwbGF5ZXJfbnVtGAUgASgFInMKFk1zZ1B2cFN0YW5kVXBU",
+          "YWJsZVJlc3ASEAoIcmV0X2NvZGUYASABKAUSEAoIdGFibGVfaWQYAiABKAUS",
+          "EAoIdGFibGVfbm8YAyABKAUSDwoHdXNlcl9pZBgEIAEoBRISCgpwbGF5ZXJf",
+          "bnVtGAUgASgFIk4KFk1zZ1B2cERlc3Ryb3lUYWJsZVJlc3ASEAoIcmV0X2Nv",
+          "ZGUYASABKAUSEAoIdGFibGVfaWQYAiABKAUSEAoIdGFibGVfbm8YAyABKAUi",
+          "cAoSTXNnUHZwS2lja1VzZXJSZXNwEhAKCHJldF9jb2RlGAEgASgFEhAKCG93",
+          "bmVyX2lkGAIgASgFEhIKCm93bmVyX25pY2sYAyABKAkSDwoHa2lja19pZBgE",
+          "IAEoBRIRCglraWNrX25pY2sYBSABKAkiVQoaTXNnUHZwVGFibGVDaGFuZ2VP",
+          "d25lclJlc3ASEAoIdGFibGVfaWQYASABKAUSEAoIb3duZXJfaWQYAiABKAUS",
+          "EwoLaXNfYWN0aXZhdGUYAyABKAgiZAoXTXNnUHZwQWN0aXZhdGVUYWJsZVJl",
+          "c3ASEAoIcmV0X2NvZGUYASABKAUSEAoIdGFibGVfaWQYAiABKAUSEAoIb3du",
+          "ZXJfaWQYAyABKAUSEwoLaXNfYWN0aXZhdGUYBCABKAgiTwoaTXNnUHZwVGFi",
+          "bGVSb3VuZENoYW5nZVJlc3ASEAoIdGFibGVfaWQYASABKAUSEAoIdGFibGVf",
+          "bm8YAiABKAUSDQoFcm91bmQYAyABKAViBnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -96,6 +98,8 @@ public static partial class GameReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgTotalDayData), global::MsgTotalDayData.Parser, new[]{ "TotalNum", "DailyData" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgQueryRecord), global::MsgQueryRecord.Parser, new[]{ "Page", "Num", "Type" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgJackpotInfo), global::MsgJackpotInfo.Parser, new[]{ "Jackpot", "FakeJackpot" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgPropInfo), global::MsgPropInfo.Parser, new[]{ "PropId", "PropNum" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgGetPropInfo), global::MsgGetPropInfo.Parser, new[]{ "PropInfo" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpTableInfo), global::MsgPvpTableInfo.Parser, new[]{ "TableId", "TableName", "ChairNum", "EnterNum", "PlayNum", "IsActivate", "IsPrivate", "Password", "OwnerId", "TableNo", "Value1", "Value2", "Value3", "Value4", "Value5", "Value6", "Value7", "Value8" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpRoomCfgItem), global::MsgPvpRoomCfgItem.Parser, new[]{ "LagKey", "ClinetOpen", "CanSelect", "ValueList" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgPvpRoomConfig), global::MsgPvpRoomConfig.Parser, new[]{ "CreateVipLimit", "ChairLimitMin", "ChairLimitMax", "MaxRound", "ParaLsit" }, null, null, null, null),
@@ -3279,6 +3283,381 @@ public sealed partial class MsgJackpotInfo : pb::IMessage<MsgJackpotInfo>
 }
 
 /// <summary>
+///道具信息
+/// </summary>
+public sealed partial class MsgPropInfo : pb::IMessage<MsgPropInfo>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgPropInfo> _parser = new pb::MessageParser<MsgPropInfo>(() => new MsgPropInfo());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgPropInfo> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::GameReflection.Descriptor.MessageTypes[10]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgPropInfo() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgPropInfo(MsgPropInfo other) : this() {
+    propId_ = other.propId_;
+    propNum_ = other.propNum_;
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgPropInfo Clone() {
+    return new MsgPropInfo(this);
+  }
+
+  /// <summary>Field number for the "prop_id" field.</summary>
+  public const int PropIdFieldNumber = 1;
+  private int propId_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int PropId {
+    get { return propId_; }
+    set {
+      propId_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "prop_num" field.</summary>
+  public const int PropNumFieldNumber = 2;
+  private int propNum_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int PropNum {
+    get { return propNum_; }
+    set {
+      propNum_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgPropInfo);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgPropInfo other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (PropId != other.PropId) return false;
+    if (PropNum != other.PropNum) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (PropId != 0) hash ^= PropId.GetHashCode();
+    if (PropNum != 0) hash ^= PropNum.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    if (PropId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(PropId);
+    }
+    if (PropNum != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(PropNum);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    if (PropId != 0) {
+      output.WriteRawTag(8);
+      output.WriteInt32(PropId);
+    }
+    if (PropNum != 0) {
+      output.WriteRawTag(16);
+      output.WriteInt32(PropNum);
+    }
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (PropId != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(PropId);
+    }
+    if (PropNum != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(PropNum);
+    }
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgPropInfo other) {
+    if (other == null) {
+      return;
+    }
+    if (other.PropId != 0) {
+      PropId = other.PropId;
+    }
+    if (other.PropNum != 0) {
+      PropNum = other.PropNum;
+    }
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 8: {
+          PropId = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          PropNum = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 8: {
+          PropId = input.ReadInt32();
+          break;
+        }
+        case 16: {
+          PropNum = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
+///道具信息
+/// </summary>
+public sealed partial class MsgGetPropInfo : pb::IMessage<MsgGetPropInfo>
+#if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    , pb::IBufferMessage
+#endif
+{
+  private static readonly pb::MessageParser<MsgGetPropInfo> _parser = new pb::MessageParser<MsgGetPropInfo>(() => new MsgGetPropInfo());
+  private pb::UnknownFieldSet _unknownFields;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<MsgGetPropInfo> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::GameReflection.Descriptor.MessageTypes[11]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgGetPropInfo() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgGetPropInfo(MsgGetPropInfo other) : this() {
+    propInfo_ = other.propInfo_.Clone();
+    _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public MsgGetPropInfo Clone() {
+    return new MsgGetPropInfo(this);
+  }
+
+  /// <summary>Field number for the "prop_info" field.</summary>
+  public const int PropInfoFieldNumber = 1;
+  private static readonly pb::FieldCodec<global::MsgPropInfo> _repeated_propInfo_codec
+      = pb::FieldCodec.ForMessage(10, global::MsgPropInfo.Parser);
+  private readonly pbc::RepeatedField<global::MsgPropInfo> propInfo_ = new pbc::RepeatedField<global::MsgPropInfo>();
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<global::MsgPropInfo> PropInfo {
+    get { return propInfo_; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as MsgGetPropInfo);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(MsgGetPropInfo other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if(!propInfo_.Equals(other.propInfo_)) return false;
+    return Equals(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    hash ^= propInfo_.GetHashCode();
+    if (_unknownFields != null) {
+      hash ^= _unknownFields.GetHashCode();
+    }
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    output.WriteRawMessage(this);
+  #else
+    propInfo_.WriteTo(output, _repeated_propInfo_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(output);
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+    propInfo_.WriteTo(ref output, _repeated_propInfo_codec);
+    if (_unknownFields != null) {
+      _unknownFields.WriteTo(ref output);
+    }
+  }
+  #endif
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    size += propInfo_.CalculateSize(_repeated_propInfo_codec);
+    if (_unknownFields != null) {
+      size += _unknownFields.CalculateSize();
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(MsgGetPropInfo other) {
+    if (other == null) {
+      return;
+    }
+    propInfo_.Add(other.propInfo_);
+    _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    input.ReadRawMessage(this);
+  #else
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+          break;
+        case 10: {
+          propInfo_.AddEntriesFrom(input, _repeated_propInfo_codec);
+          break;
+        }
+      }
+    }
+  #endif
+  }
+
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+          break;
+        case 10: {
+          propInfo_.AddEntriesFrom(ref input, _repeated_propInfo_codec);
+          break;
+        }
+      }
+    }
+  }
+  #endif
+
+}
+
+/// <summary>
 ///////////////////////////////////////////////////PVP//////////////////////////////////////////////
 ///pvp桌子信息
 /// </summary>
@@ -3294,7 +3673,7 @@ public sealed partial class MsgPvpTableInfo : pb::IMessage<MsgPvpTableInfo>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::GameReflection.Descriptor.MessageTypes[10]; }
+    get { return global::GameReflection.Descriptor.MessageTypes[12]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4132,7 +4511,7 @@ public sealed partial class MsgPvpRoomCfgItem : pb::IMessage<MsgPvpRoomCfgItem>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::GameReflection.Descriptor.MessageTypes[11]; }
+    get { return global::GameReflection.Descriptor.MessageTypes[13]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4418,7 +4797,7 @@ public sealed partial class MsgPvpRoomConfig : pb::IMessage<MsgPvpRoomConfig>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::GameReflection.Descriptor.MessageTypes[12]; }
+    get { return global::GameReflection.Descriptor.MessageTypes[14]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4741,7 +5120,7 @@ public sealed partial class MsgPvpTableList : pb::IMessage<MsgPvpTableList>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::GameReflection.Descriptor.MessageTypes[13]; }
+    get { return global::GameReflection.Descriptor.MessageTypes[15]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4905,7 +5284,7 @@ public sealed partial class MsgPvpCreateTable : pb::IMessage<MsgPvpCreateTable>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::GameReflection.Descriptor.MessageTypes[14]; }
+    get { return global::GameReflection.Descriptor.MessageTypes[16]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5231,7 +5610,7 @@ public sealed partial class MsgPvpCreateTableResp : pb::IMessage<MsgPvpCreateTab
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::GameReflection.Descriptor.MessageTypes[15]; }
+    get { return global::GameReflection.Descriptor.MessageTypes[17]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5495,7 +5874,7 @@ public sealed partial class MsgPvpJoinTable : pb::IMessage<MsgPvpJoinTable>
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::GameReflection.Descriptor.MessageTypes[16]; }
+    get { return global::GameReflection.Descriptor.MessageTypes[18]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5751,7 +6130,7 @@ public sealed partial class MsgPvpJoinTableResp : pb::IMessage<MsgPvpJoinTableRe
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::GameReflection.Descriptor.MessageTypes[17]; }
+    get { return global::GameReflection.Descriptor.MessageTypes[19]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6085,7 +6464,7 @@ public sealed partial class MsgPvpStandUpTableResp : pb::IMessage<MsgPvpStandUpT
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::GameReflection.Descriptor.MessageTypes[18]; }
+    get { return global::GameReflection.Descriptor.MessageTypes[20]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6419,7 +6798,7 @@ public sealed partial class MsgPvpDestroyTableResp : pb::IMessage<MsgPvpDestroyT
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::GameReflection.Descriptor.MessageTypes[19]; }
+    get { return global::GameReflection.Descriptor.MessageTypes[21]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6675,7 +7054,7 @@ public sealed partial class MsgPvpKickUserResp : pb::IMessage<MsgPvpKickUserResp
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::GameReflection.Descriptor.MessageTypes[20]; }
+    get { return global::GameReflection.Descriptor.MessageTypes[22]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7009,7 +7388,7 @@ public sealed partial class MsgPvpTableChangeOwnerResp : pb::IMessage<MsgPvpTabl
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::GameReflection.Descriptor.MessageTypes[21]; }
+    get { return global::GameReflection.Descriptor.MessageTypes[23]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7265,7 +7644,7 @@ public sealed partial class MsgPvpActivateTableResp : pb::IMessage<MsgPvpActivat
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::GameReflection.Descriptor.MessageTypes[22]; }
+    get { return global::GameReflection.Descriptor.MessageTypes[24]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7560,7 +7939,7 @@ public sealed partial class MsgPvpTableRoundChangeResp : pb::IMessage<MsgPvpTabl
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
-    get { return global::GameReflection.Descriptor.MessageTypes[23]; }
+    get { return global::GameReflection.Descriptor.MessageTypes[25]; }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

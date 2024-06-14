@@ -46,7 +46,7 @@ struct TableStruct_ServerInternalProto_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[66]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[67]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -131,6 +131,9 @@ extern MsgDBMailDataDefaultTypeInternal _MsgDBMailData_default_instance_;
 class MsgDBModifyAvatar;
 class MsgDBModifyAvatarDefaultTypeInternal;
 extern MsgDBModifyAvatarDefaultTypeInternal _MsgDBModifyAvatar_default_instance_;
+class MsgDBModifyProp;
+class MsgDBModifyPropDefaultTypeInternal;
+extern MsgDBModifyPropDefaultTypeInternal _MsgDBModifyProp_default_instance_;
 class MsgDBOnlineActivePick;
 class MsgDBOnlineActivePickDefaultTypeInternal;
 extern MsgDBOnlineActivePickDefaultTypeInternal _MsgDBOnlineActivePick_default_instance_;
@@ -278,6 +281,7 @@ template<> ::MsgDBLoginOut* Arena::CreateMaybeMessage<::MsgDBLoginOut>(Arena*);
 template<> ::MsgDBMail* Arena::CreateMaybeMessage<::MsgDBMail>(Arena*);
 template<> ::MsgDBMailData* Arena::CreateMaybeMessage<::MsgDBMailData>(Arena*);
 template<> ::MsgDBModifyAvatar* Arena::CreateMaybeMessage<::MsgDBModifyAvatar>(Arena*);
+template<> ::MsgDBModifyProp* Arena::CreateMaybeMessage<::MsgDBModifyProp>(Arena*);
 template<> ::MsgDBOnlineActivePick* Arena::CreateMaybeMessage<::MsgDBOnlineActivePick>(Arena*);
 template<> ::MsgDBPersonalDetailsRespAdd* Arena::CreateMaybeMessage<::MsgDBPersonalDetailsRespAdd>(Arena*);
 template<> ::MsgDBPlayerReconnectData* Arena::CreateMaybeMessage<::MsgDBPlayerReconnectData>(Arena*);
@@ -6304,6 +6308,7 @@ class MsgDBGamePlayerLoginResp PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
+    kPropInfoFieldNumber = 16,
     kNicknameFieldNumber = 4,
     kAvatarFieldNumber = 5,
     kPasswordFieldNumber = 7,
@@ -6320,6 +6325,24 @@ class MsgDBGamePlayerLoginResp PROTOBUF_FINAL :
     kAvatarFrameFieldNumber = 10,
     kLoginServerIdFieldNumber = 12,
   };
+  // repeated .MsgDBCommonKV prop_info = 16;
+  int prop_info_size() const;
+  private:
+  int _internal_prop_info_size() const;
+  public:
+  void clear_prop_info();
+  ::MsgDBCommonKV* mutable_prop_info(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgDBCommonKV >*
+      mutable_prop_info();
+  private:
+  const ::MsgDBCommonKV& _internal_prop_info(int index) const;
+  ::MsgDBCommonKV* _internal_add_prop_info();
+  public:
+  const ::MsgDBCommonKV& prop_info(int index) const;
+  ::MsgDBCommonKV* add_prop_info();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgDBCommonKV >&
+      prop_info() const;
+
   // string nickname = 4;
   void clear_nickname();
   const std::string& nickname() const;
@@ -6513,6 +6536,7 @@ class MsgDBGamePlayerLoginResp PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgDBCommonKV > prop_info_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr nickname_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr avatar_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr password_;
@@ -11297,6 +11321,164 @@ class MsgDBControlUser PROTOBUF_FINAL :
 };
 // -------------------------------------------------------------------
 
+class MsgDBModifyProp PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgDBModifyProp) */ {
+ public:
+  inline MsgDBModifyProp() : MsgDBModifyProp(nullptr) {}
+  virtual ~MsgDBModifyProp();
+
+  MsgDBModifyProp(const MsgDBModifyProp& from);
+  MsgDBModifyProp(MsgDBModifyProp&& from) noexcept
+    : MsgDBModifyProp() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgDBModifyProp& operator=(const MsgDBModifyProp& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgDBModifyProp& operator=(MsgDBModifyProp&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgDBModifyProp& default_instance();
+
+  static inline const MsgDBModifyProp* internal_default_instance() {
+    return reinterpret_cast<const MsgDBModifyProp*>(
+               &_MsgDBModifyProp_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    61;
+
+  friend void swap(MsgDBModifyProp& a, MsgDBModifyProp& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgDBModifyProp* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgDBModifyProp* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgDBModifyProp* New() const final {
+    return CreateMaybeMessage<MsgDBModifyProp>(nullptr);
+  }
+
+  MsgDBModifyProp* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgDBModifyProp>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgDBModifyProp& from);
+  void MergeFrom(const MsgDBModifyProp& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgDBModifyProp* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgDBModifyProp";
+  }
+  protected:
+  explicit MsgDBModifyProp(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_ServerInternalProto_2eproto);
+    return ::descriptor_table_ServerInternalProto_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kUseridFieldNumber = 1,
+    kPropIdFieldNumber = 2,
+    kPropNumFieldNumber = 3,
+  };
+  // int32 userid = 1;
+  void clear_userid();
+  ::PROTOBUF_NAMESPACE_ID::int32 userid() const;
+  void set_userid(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_userid() const;
+  void _internal_set_userid(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 prop_id = 2;
+  void clear_prop_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 prop_id() const;
+  void set_prop_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_prop_id() const;
+  void _internal_set_prop_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 prop_num = 3;
+  void clear_prop_num();
+  ::PROTOBUF_NAMESPACE_ID::int32 prop_num() const;
+  void set_prop_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_prop_num() const;
+  void _internal_set_prop_num(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:MsgDBModifyProp)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 userid_;
+  ::PROTOBUF_NAMESPACE_ID::int32 prop_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 prop_num_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_ServerInternalProto_2eproto;
+};
+// -------------------------------------------------------------------
+
 class MsgErrorCode PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgErrorCode) */ {
  public:
@@ -11338,7 +11520,7 @@ class MsgErrorCode PROTOBUF_FINAL :
                &_MsgErrorCode_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    61;
+    62;
 
   friend void swap(MsgErrorCode& a, MsgErrorCode& b) {
     a.Swap(&b);
@@ -11485,7 +11667,7 @@ class MsgDeleteFrequentlyPhone PROTOBUF_FINAL :
                &_MsgDeleteFrequentlyPhone_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    62;
+    63;
 
   friend void swap(MsgDeleteFrequentlyPhone& a, MsgDeleteFrequentlyPhone& b) {
     a.Swap(&b);
@@ -11648,7 +11830,7 @@ class MsgPvpSerTableInfo PROTOBUF_FINAL :
                &_MsgPvpSerTableInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    63;
+    64;
 
   friend void swap(MsgPvpSerTableInfo& a, MsgPvpSerTableInfo& b) {
     a.Swap(&b);
@@ -11886,7 +12068,7 @@ class MsgPvpAddTable PROTOBUF_FINAL :
                &_MsgPvpAddTable_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    64;
+    65;
 
   friend void swap(MsgPvpAddTable& a, MsgPvpAddTable& b) {
     a.Swap(&b);
@@ -12042,7 +12224,7 @@ class MsgPvpDelTable PROTOBUF_FINAL :
                &_MsgPvpDelTable_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    65;
+    66;
 
   friend void swap(MsgPvpDelTable& a, MsgPvpDelTable& b) {
     a.Swap(&b);
@@ -17151,6 +17333,45 @@ inline void MsgDBGamePlayerLoginResp::set_allocated_latitude(std::string* latitu
   // @@protoc_insertion_point(field_set_allocated:MsgDBGamePlayerLoginResp.latitude)
 }
 
+// repeated .MsgDBCommonKV prop_info = 16;
+inline int MsgDBGamePlayerLoginResp::_internal_prop_info_size() const {
+  return prop_info_.size();
+}
+inline int MsgDBGamePlayerLoginResp::prop_info_size() const {
+  return _internal_prop_info_size();
+}
+inline void MsgDBGamePlayerLoginResp::clear_prop_info() {
+  prop_info_.Clear();
+}
+inline ::MsgDBCommonKV* MsgDBGamePlayerLoginResp::mutable_prop_info(int index) {
+  // @@protoc_insertion_point(field_mutable:MsgDBGamePlayerLoginResp.prop_info)
+  return prop_info_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgDBCommonKV >*
+MsgDBGamePlayerLoginResp::mutable_prop_info() {
+  // @@protoc_insertion_point(field_mutable_list:MsgDBGamePlayerLoginResp.prop_info)
+  return &prop_info_;
+}
+inline const ::MsgDBCommonKV& MsgDBGamePlayerLoginResp::_internal_prop_info(int index) const {
+  return prop_info_.Get(index);
+}
+inline const ::MsgDBCommonKV& MsgDBGamePlayerLoginResp::prop_info(int index) const {
+  // @@protoc_insertion_point(field_get:MsgDBGamePlayerLoginResp.prop_info)
+  return _internal_prop_info(index);
+}
+inline ::MsgDBCommonKV* MsgDBGamePlayerLoginResp::_internal_add_prop_info() {
+  return prop_info_.Add();
+}
+inline ::MsgDBCommonKV* MsgDBGamePlayerLoginResp::add_prop_info() {
+  // @@protoc_insertion_point(field_add:MsgDBGamePlayerLoginResp.prop_info)
+  return _internal_add_prop_info();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::MsgDBCommonKV >&
+MsgDBGamePlayerLoginResp::prop_info() const {
+  // @@protoc_insertion_point(field_list:MsgDBGamePlayerLoginResp.prop_info)
+  return prop_info_;
+}
+
 // -------------------------------------------------------------------
 
 // MsgDBWriteScore
@@ -19959,6 +20180,70 @@ inline void MsgDBControlUser::set_control_gold(::PROTOBUF_NAMESPACE_ID::int64 va
 
 // -------------------------------------------------------------------
 
+// MsgDBModifyProp
+
+// int32 userid = 1;
+inline void MsgDBModifyProp::clear_userid() {
+  userid_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBModifyProp::_internal_userid() const {
+  return userid_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBModifyProp::userid() const {
+  // @@protoc_insertion_point(field_get:MsgDBModifyProp.userid)
+  return _internal_userid();
+}
+inline void MsgDBModifyProp::_internal_set_userid(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  userid_ = value;
+}
+inline void MsgDBModifyProp::set_userid(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_userid(value);
+  // @@protoc_insertion_point(field_set:MsgDBModifyProp.userid)
+}
+
+// int32 prop_id = 2;
+inline void MsgDBModifyProp::clear_prop_id() {
+  prop_id_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBModifyProp::_internal_prop_id() const {
+  return prop_id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBModifyProp::prop_id() const {
+  // @@protoc_insertion_point(field_get:MsgDBModifyProp.prop_id)
+  return _internal_prop_id();
+}
+inline void MsgDBModifyProp::_internal_set_prop_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  prop_id_ = value;
+}
+inline void MsgDBModifyProp::set_prop_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_prop_id(value);
+  // @@protoc_insertion_point(field_set:MsgDBModifyProp.prop_id)
+}
+
+// int32 prop_num = 3;
+inline void MsgDBModifyProp::clear_prop_num() {
+  prop_num_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBModifyProp::_internal_prop_num() const {
+  return prop_num_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 MsgDBModifyProp::prop_num() const {
+  // @@protoc_insertion_point(field_get:MsgDBModifyProp.prop_num)
+  return _internal_prop_num();
+}
+inline void MsgDBModifyProp::_internal_set_prop_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  prop_num_ = value;
+}
+inline void MsgDBModifyProp::set_prop_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_prop_num(value);
+  // @@protoc_insertion_point(field_set:MsgDBModifyProp.prop_num)
+}
+
+// -------------------------------------------------------------------
+
 // MsgErrorCode
 
 // int32 type = 1;
@@ -20525,6 +20810,8 @@ inline void MsgPvpDelTable::set_table_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
