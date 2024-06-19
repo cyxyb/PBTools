@@ -16761,6 +16761,9 @@ namespace PlaneWar {
     /// <summary>Field number for the "showType" field.</summary>
     public const int ShowTypeFieldNumber = 1;
     private int showType_;
+    /// <summary>
+    ///2:10连抽
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int ShowType {
       get { return showType_; }
@@ -16772,6 +16775,9 @@ namespace PlaneWar {
     /// <summary>Field number for the "type" field.</summary>
     public const int TypeFieldNumber = 2;
     private int type_;
+    /// <summary>
+    ///品质1 2 3 4
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int Type {
       get { return type_; }

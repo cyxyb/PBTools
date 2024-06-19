@@ -695,8 +695,8 @@ message FakeTresureInfo
 
 message TreasureInfo
 {
-	int32 showType = 1;
-	int32 type = 2;
+	int32 showType = 1;		//2:10连抽
+	int32 type = 2;			//品质1 2 3 4
 	int32 propID = 3;
 	int32 num = 4;
 	int32 fakeType = 5;
