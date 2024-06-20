@@ -952,7 +952,7 @@ template<> ::F4BY::WingsSpecEffect* Arena::CreateMaybeMessage<::F4BY::WingsSpecE
 PROTOBUF_NAMESPACE_CLOSE
 namespace F4BY {
 
-enum GameCommand : int {
+enum EMsgIDSubGame : int {
   None = 0,
   HeartBeat = 1000,
   LoginGameWithToken = 1001,
@@ -1070,27 +1070,27 @@ enum GameCommand : int {
   NotifyActStatus = 1231,
   LotteryResult3002 = 20001,
   LotteryResult3005 = 20002,
-  GameCommand_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
-  GameCommand_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
+  EMsgIDSubGame_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
+  EMsgIDSubGame_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
-bool GameCommand_IsValid(int value);
-constexpr GameCommand GameCommand_MIN = None;
-constexpr GameCommand GameCommand_MAX = LotteryResult3005;
-constexpr int GameCommand_ARRAYSIZE = GameCommand_MAX + 1;
+bool EMsgIDSubGame_IsValid(int value);
+constexpr EMsgIDSubGame EMsgIDSubGame_MIN = None;
+constexpr EMsgIDSubGame EMsgIDSubGame_MAX = LotteryResult3005;
+constexpr int EMsgIDSubGame_ARRAYSIZE = EMsgIDSubGame_MAX + 1;
 
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* GameCommand_descriptor();
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDSubGame_descriptor();
 template<typename T>
-inline const std::string& GameCommand_Name(T enum_t_value) {
-  static_assert(::std::is_same<T, GameCommand>::value ||
+inline const std::string& EMsgIDSubGame_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, EMsgIDSubGame>::value ||
     ::std::is_integral<T>::value,
-    "Incorrect type passed to function GameCommand_Name.");
+    "Incorrect type passed to function EMsgIDSubGame_Name.");
   return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
-    GameCommand_descriptor(), enum_t_value);
+    EMsgIDSubGame_descriptor(), enum_t_value);
 }
-inline bool GameCommand_Parse(
-    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, GameCommand* value) {
-  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<GameCommand>(
-    GameCommand_descriptor(), name, value);
+inline bool EMsgIDSubGame_Parse(
+    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, EMsgIDSubGame* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<EMsgIDSubGame>(
+    EMsgIDSubGame_descriptor(), name, value);
 }
 enum ErrCode : int {
   Succ = 0,
@@ -57871,10 +57871,10 @@ inline void SCNotifyActStatus::set_act_status(::PROTOBUF_NAMESPACE_ID::int32 val
 
 PROTOBUF_NAMESPACE_OPEN
 
-template <> struct is_proto_enum< ::F4BY::GameCommand> : ::std::true_type {};
+template <> struct is_proto_enum< ::F4BY::EMsgIDSubGame> : ::std::true_type {};
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::F4BY::GameCommand>() {
-  return ::F4BY::GameCommand_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< ::F4BY::EMsgIDSubGame>() {
+  return ::F4BY::EMsgIDSubGame_descriptor();
 }
 template <> struct is_proto_enum< ::F4BY::ErrCode> : ::std::true_type {};
 template <>
