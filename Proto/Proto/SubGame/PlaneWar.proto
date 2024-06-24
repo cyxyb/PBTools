@@ -268,6 +268,7 @@ message SC_SceneInfo
 	repeated int32 bet_list = 1;	//押注
 	repeated PlayerInfo player_info = 2;	//玩家信息
 	RoomInfo roomInfo = 3;
+	repeated int32 piece_pay = 4;
 }
 
 message CSLogin

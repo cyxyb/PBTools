@@ -2079,6 +2079,7 @@ class SC_SceneInfo PROTOBUF_FINAL :
   enum : int {
     kBetListFieldNumber = 1,
     kPlayerInfoFieldNumber = 2,
+    kPiecePayFieldNumber = 4,
     kRoomInfoFieldNumber = 3,
   };
   // repeated int32 bet_list = 1;
@@ -2121,6 +2122,28 @@ class SC_SceneInfo PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::PlayerInfo >&
       player_info() const;
 
+  // repeated int32 piece_pay = 4;
+  int piece_pay_size() const;
+  private:
+  int _internal_piece_pay_size() const;
+  public:
+  void clear_piece_pay();
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_piece_pay(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      _internal_piece_pay() const;
+  void _internal_add_piece_pay(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      _internal_mutable_piece_pay();
+  public:
+  ::PROTOBUF_NAMESPACE_ID::int32 piece_pay(int index) const;
+  void set_piece_pay(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_piece_pay(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+      piece_pay() const;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+      mutable_piece_pay();
+
   // .PlaneWar.RoomInfo roomInfo = 3;
   bool has_roominfo() const;
   private:
@@ -2149,6 +2172,8 @@ class SC_SceneInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > bet_list_;
   mutable std::atomic<int> _bet_list_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::PlaneWar::PlayerInfo > player_info_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > piece_pay_;
+  mutable std::atomic<int> _piece_pay_cached_byte_size_;
   ::PlaneWar::RoomInfo* roominfo_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_PlaneWar_2eproto;
@@ -51882,6 +51907,53 @@ inline void SC_SceneInfo::set_allocated_roominfo(::PlaneWar::RoomInfo* roominfo)
   }
   roominfo_ = roominfo;
   // @@protoc_insertion_point(field_set_allocated:PlaneWar.SC_SceneInfo.roomInfo)
+}
+
+// repeated int32 piece_pay = 4;
+inline int SC_SceneInfo::_internal_piece_pay_size() const {
+  return piece_pay_.size();
+}
+inline int SC_SceneInfo::piece_pay_size() const {
+  return _internal_piece_pay_size();
+}
+inline void SC_SceneInfo::clear_piece_pay() {
+  piece_pay_.Clear();
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::_internal_piece_pay(int index) const {
+  return piece_pay_.Get(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SC_SceneInfo::piece_pay(int index) const {
+  // @@protoc_insertion_point(field_get:PlaneWar.SC_SceneInfo.piece_pay)
+  return _internal_piece_pay(index);
+}
+inline void SC_SceneInfo::set_piece_pay(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
+  piece_pay_.Set(index, value);
+  // @@protoc_insertion_point(field_set:PlaneWar.SC_SceneInfo.piece_pay)
+}
+inline void SC_SceneInfo::_internal_add_piece_pay(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  piece_pay_.Add(value);
+}
+inline void SC_SceneInfo::add_piece_pay(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_add_piece_pay(value);
+  // @@protoc_insertion_point(field_add:PlaneWar.SC_SceneInfo.piece_pay)
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+SC_SceneInfo::_internal_piece_pay() const {
+  return piece_pay_;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
+SC_SceneInfo::piece_pay() const {
+  // @@protoc_insertion_point(field_list:PlaneWar.SC_SceneInfo.piece_pay)
+  return _internal_piece_pay();
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+SC_SceneInfo::_internal_mutable_piece_pay() {
+  return &piece_pay_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
+SC_SceneInfo::mutable_piece_pay() {
+  // @@protoc_insertion_point(field_mutable_list:PlaneWar.SC_SceneInfo.piece_pay)
+  return _internal_mutable_piece_pay();
 }
 
 // -------------------------------------------------------------------
