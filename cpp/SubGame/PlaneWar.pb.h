@@ -1379,13 +1379,13 @@ enum EMsgIDSubGame : int {
   SyncTextConfig = 121,
   FinishSpecial = 122,
   FinishRecoverScore = 123,
-  MissileFishList = 124,
+  MissileScore = 124,
   EMsgIDSubGame_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDSubGame_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDSubGame_IsValid(int value);
 constexpr EMsgIDSubGame EMsgIDSubGame_MIN = Login;
-constexpr EMsgIDSubGame EMsgIDSubGame_MAX = MissileFishList;
+constexpr EMsgIDSubGame EMsgIDSubGame_MAX = MissileScore;
 constexpr int EMsgIDSubGame_ARRAYSIZE = EMsgIDSubGame_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDSubGame_descriptor();

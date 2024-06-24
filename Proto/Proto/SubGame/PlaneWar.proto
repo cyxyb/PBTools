@@ -118,7 +118,7 @@ enum EMsgIDSubGame
 	SyncTextConfig	                    = 121;
 	FinishSpecial						= 122;
 	FinishRecoverScore					= 123;
-	MissileFishList						= 124;
+	MissileScore						= 124;
 }
 
 enum ErrorCode
