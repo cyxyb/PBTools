@@ -22,36 +22,36 @@ public static partial class CommonReflection {
   static CommonReflection() {
     byte[] descriptorData = global::System.Convert.FromBase64String(
         string.Concat(
-          "ChlQcm90by9Db21tb24vQ29tbW9uLnByb3RvIgoKCE1zZ0VtcHR5Ih4KDU1z",
-          "Z0NvbW1vbkJvb2wSDQoFdmFsdWUYASABKAgiHQoMTXNnQ29tbW9uTjMyEg0K",
-          "BXZhbHVlGAEgASgFIh0KDE1zZ0NvbW1vbk42NBINCgV2YWx1ZRgBIAEoAyId",
-          "CgxNc2dDb21tb25TdHISDQoFdmFsdWUYASABKAkioQEKEU1zZ0dhbWVTZXJ2",
-          "ZXJJbmZvEgoKAmlwGAEgASgFEgwKBHBvcnQYAiABKAUSEQoJc2VydmVyX2lk",
-          "GAMgASgFEhIKCm9ubGluZV9udW0YBCABKAUSDwoHa2luZF9pZBgFIAEoBRIS",
-          "Cgpyb29tX2xldmVsGAYgASgFEhIKCmxpbWl0X2dvbGQYByABKAUSEgoKbWF4",
-          "X3BsYXllchgIIAEoBSJBChFNc2dHYW1lU2VydmVyTGlzdBIsChBnYW1lX3Nl",
-          "cnZlcl9saXN0GAEgAygLMhIuTXNnR2FtZVNlcnZlckluZm8i5QEKEk1zZ0Jy",
-          "b2FkY2FzdFptZFRpcBIPCgd1c2VyX2lkGAEgASgFEg8KB2dhbWVfaWQYAiAB",
-          "KAUSEgoKcm9vbV9sZXZlbBgDIAEoBRIQCgh3aW5fZ29sZBgEIAEoBBIRCglu",
-          "aWNrX25hbWUYBSABKAkSEAoIaGVhZF91cmwYBiABKAkSEwoLbGFuZ3VhZ2Vf",
-          "aWQYByABKAUSEwoLdGVtcGxhdGVfaWQYCCABKAUSEQoJdmlwX2xldmVsGAkg",
-          "ASgFEhQKDGF2YXRhcl9mcmFtZRgKIAEoBRIPCgdjb250ZW50GAsgAygJIkkK",
-          "Fk1zZ05vdGlmeUNoYXROb3JtYWxNc2cSDQoFaW5kZXgYASABKAUSDwoHdXNl",
-          "cl9pZBgCIAEoBRIPCgdtZXNzYWdlGAMgASgJImIKF01zZ05vdGlmeUNoYXRU",
-          "cnVtcGV0TXNnEg0KBWluZGV4GAEgASgFEicKC3BsYXllcl9pbmZvGAIgASgL",
-          "MhIuTXNnQ2hhdFBsYXllckluZm8SDwoHbWVzc2FnZRgDIAEoCSKaAQoRTXNn",
-          "Q2hhdFBsYXllckluZm8SDwoHdXNlcl9pZBgBIAEoBRIUCgxiZWF1dGlmdWxf",
-          "aWQYAiABKAUSEAoIbmlja25hbWUYAyABKAkSDgoGYXZhdGFyGAQgASgJEhEK",
-          "CXZpcF9sZXZlbBgFIAEoBRIUCgxhdmF0YXJfZnJhbWUYBiABKAUSEwoLY2xp",
-          "ZW50X3R5cGUYByABKAUiaAoRTXNnQ2hhdFNlcnZlckluZm8SCgoCaXAYASAB",
-          "KAUSDAoEcG9ydBgCIAEoBRIRCglzZXJ2ZXJfaWQYAyABKAUSEgoKb25saW5l",
-          "X251bRgEIAEoBRISCgptYXhfcGxheWVyGAUgASgFIkEKEU1zZ0NoYXRTZXJ2",
-          "ZXJMaXN0EiwKEGNoYXRfc2VydmVyX2xpc3QYASADKAsyEi5Nc2dDaGF0U2Vy",
-          "dmVySW5mb2IGcHJvdG8z"));
+          "ChlQcm90by9Db21tb24vQ29tbW9uLnByb3RvIhAKDk1zZ0NvbW1vbkVtcHR5",
+          "Ih4KDU1zZ0NvbW1vbkJvb2wSDQoFdmFsdWUYASABKAgiHQoMTXNnQ29tbW9u",
+          "TjMyEg0KBXZhbHVlGAEgASgFIh0KDE1zZ0NvbW1vbk42NBINCgV2YWx1ZRgB",
+          "IAEoAyIdCgxNc2dDb21tb25TdHISDQoFdmFsdWUYASABKAkioQEKEU1zZ0dh",
+          "bWVTZXJ2ZXJJbmZvEgoKAmlwGAEgASgFEgwKBHBvcnQYAiABKAUSEQoJc2Vy",
+          "dmVyX2lkGAMgASgFEhIKCm9ubGluZV9udW0YBCABKAUSDwoHa2luZF9pZBgF",
+          "IAEoBRISCgpyb29tX2xldmVsGAYgASgFEhIKCmxpbWl0X2dvbGQYByABKAUS",
+          "EgoKbWF4X3BsYXllchgIIAEoBSJBChFNc2dHYW1lU2VydmVyTGlzdBIsChBn",
+          "YW1lX3NlcnZlcl9saXN0GAEgAygLMhIuTXNnR2FtZVNlcnZlckluZm8i5QEK",
+          "Ek1zZ0Jyb2FkY2FzdFptZFRpcBIPCgd1c2VyX2lkGAEgASgFEg8KB2dhbWVf",
+          "aWQYAiABKAUSEgoKcm9vbV9sZXZlbBgDIAEoBRIQCgh3aW5fZ29sZBgEIAEo",
+          "BBIRCgluaWNrX25hbWUYBSABKAkSEAoIaGVhZF91cmwYBiABKAkSEwoLbGFu",
+          "Z3VhZ2VfaWQYByABKAUSEwoLdGVtcGxhdGVfaWQYCCABKAUSEQoJdmlwX2xl",
+          "dmVsGAkgASgFEhQKDGF2YXRhcl9mcmFtZRgKIAEoBRIPCgdjb250ZW50GAsg",
+          "AygJIkkKFk1zZ05vdGlmeUNoYXROb3JtYWxNc2cSDQoFaW5kZXgYASABKAUS",
+          "DwoHdXNlcl9pZBgCIAEoBRIPCgdtZXNzYWdlGAMgASgJImIKF01zZ05vdGlm",
+          "eUNoYXRUcnVtcGV0TXNnEg0KBWluZGV4GAEgASgFEicKC3BsYXllcl9pbmZv",
+          "GAIgASgLMhIuTXNnQ2hhdFBsYXllckluZm8SDwoHbWVzc2FnZRgDIAEoCSKa",
+          "AQoRTXNnQ2hhdFBsYXllckluZm8SDwoHdXNlcl9pZBgBIAEoBRIUCgxiZWF1",
+          "dGlmdWxfaWQYAiABKAUSEAoIbmlja25hbWUYAyABKAkSDgoGYXZhdGFyGAQg",
+          "ASgJEhEKCXZpcF9sZXZlbBgFIAEoBRIUCgxhdmF0YXJfZnJhbWUYBiABKAUS",
+          "EwoLY2xpZW50X3R5cGUYByABKAUiaAoRTXNnQ2hhdFNlcnZlckluZm8SCgoC",
+          "aXAYASABKAUSDAoEcG9ydBgCIAEoBRIRCglzZXJ2ZXJfaWQYAyABKAUSEgoK",
+          "b25saW5lX251bRgEIAEoBRISCgptYXhfcGxheWVyGAUgASgFIkEKEU1zZ0No",
+          "YXRTZXJ2ZXJMaXN0EiwKEGNoYXRfc2VydmVyX2xpc3QYASADKAsyEi5Nc2dD",
+          "aGF0U2VydmVySW5mb2IGcHJvdG8z"));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-          new pbr::GeneratedClrTypeInfo(typeof(global::MsgEmpty), global::MsgEmpty.Parser, null, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::MsgCommonEmpty), global::MsgCommonEmpty.Parser, null, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgCommonBool), global::MsgCommonBool.Parser, new[]{ "Value" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgCommonN32), global::MsgCommonN32.Parser, new[]{ "Value" }, null, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::MsgCommonN64), global::MsgCommonN64.Parser, new[]{ "Value" }, null, null, null, null),
@@ -70,15 +70,15 @@ public static partial class CommonReflection {
 
 }
 #region Messages
-public sealed partial class MsgEmpty : pb::IMessage<MsgEmpty>
+public sealed partial class MsgCommonEmpty : pb::IMessage<MsgCommonEmpty>
 #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     , pb::IBufferMessage
 #endif
 {
-  private static readonly pb::MessageParser<MsgEmpty> _parser = new pb::MessageParser<MsgEmpty>(() => new MsgEmpty());
+  private static readonly pb::MessageParser<MsgCommonEmpty> _parser = new pb::MessageParser<MsgCommonEmpty>(() => new MsgCommonEmpty());
   private pb::UnknownFieldSet _unknownFields;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public static pb::MessageParser<MsgEmpty> Parser { get { return _parser; } }
+  public static pb::MessageParser<MsgCommonEmpty> Parser { get { return _parser; } }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public static pbr::MessageDescriptor Descriptor {
@@ -91,29 +91,29 @@ public sealed partial class MsgEmpty : pb::IMessage<MsgEmpty>
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public MsgEmpty() {
+  public MsgCommonEmpty() {
     OnConstruction();
   }
 
   partial void OnConstruction();
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public MsgEmpty(MsgEmpty other) : this() {
+  public MsgCommonEmpty(MsgCommonEmpty other) : this() {
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public MsgEmpty Clone() {
-    return new MsgEmpty(this);
+  public MsgCommonEmpty Clone() {
+    return new MsgCommonEmpty(this);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
-    return Equals(other as MsgEmpty);
+    return Equals(other as MsgCommonEmpty);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public bool Equals(MsgEmpty other) {
+  public bool Equals(MsgCommonEmpty other) {
     if (ReferenceEquals(other, null)) {
       return false;
     }
@@ -167,7 +167,7 @@ public sealed partial class MsgEmpty : pb::IMessage<MsgEmpty>
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public void MergeFrom(MsgEmpty other) {
+  public void MergeFrom(MsgCommonEmpty other) {
     if (other == null) {
       return;
     }

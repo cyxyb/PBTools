@@ -13301,6 +13301,7 @@ class CSHit PROTOBUF_FINAL :
     kGenerationFieldNumber = 5,
     kDeductedMoneyFieldNumber = 6,
     kOriginUIDFieldNumber = 7,
+    kIsEndFieldNumber = 8,
   };
   // int32 monsterUID = 1;
   void clear_monsteruid();
@@ -13365,6 +13366,15 @@ class CSHit PROTOBUF_FINAL :
   void _internal_set_originuid(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // bool is_end = 8;
+  void clear_is_end();
+  bool is_end() const;
+  void set_is_end(bool value);
+  private:
+  bool _internal_is_end() const;
+  void _internal_set_is_end(bool value);
+  public:
+
   // @@protoc_insertion_point(class_scope:PlaneWar.CSHit)
  private:
   class _Internal;
@@ -13379,6 +13389,7 @@ class CSHit PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 generation_;
   ::PROTOBUF_NAMESPACE_ID::int32 deductedmoney_;
   ::PROTOBUF_NAMESPACE_ID::int32 originuid_;
+  bool is_end_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_PlaneWar_2eproto;
 };
@@ -60310,6 +60321,26 @@ inline void CSHit::_internal_set_originuid(::PROTOBUF_NAMESPACE_ID::int32 value)
 inline void CSHit::set_originuid(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_originuid(value);
   // @@protoc_insertion_point(field_set:PlaneWar.CSHit.originUID)
+}
+
+// bool is_end = 8;
+inline void CSHit::clear_is_end() {
+  is_end_ = false;
+}
+inline bool CSHit::_internal_is_end() const {
+  return is_end_;
+}
+inline bool CSHit::is_end() const {
+  // @@protoc_insertion_point(field_get:PlaneWar.CSHit.is_end)
+  return _internal_is_end();
+}
+inline void CSHit::_internal_set_is_end(bool value) {
+  
+  is_end_ = value;
+}
+inline void CSHit::set_is_end(bool value) {
+  _internal_set_is_end(value);
+  // @@protoc_insertion_point(field_set:PlaneWar.CSHit.is_end)
 }
 
 // -------------------------------------------------------------------

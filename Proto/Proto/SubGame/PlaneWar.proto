@@ -777,6 +777,7 @@ message CSHit
 	int32 generation = 5;
 	int32 deductedMoney = 6;
 	int32 originUID = 7;
+	bool is_end = 8;
 }
 
 message SCHit

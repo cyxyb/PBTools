@@ -5998,6 +5998,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_PlaneWar_2eproto::offsets[] PR
   PROTOBUF_FIELD_OFFSET(::PlaneWar::CSHit, generation_),
   PROTOBUF_FIELD_OFFSET(::PlaneWar::CSHit, deductedmoney_),
   PROTOBUF_FIELD_OFFSET(::PlaneWar::CSHit, originuid_),
+  PROTOBUF_FIELD_OFFSET(::PlaneWar::CSHit, is_end_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::PlaneWar::SCHit, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -7884,243 +7885,243 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 561, -1, sizeof(::PlaneWar::ReplayConfig)},
   { 569, -1, sizeof(::PlaneWar::ConnMonsterInfo)},
   { 578, -1, sizeof(::PlaneWar::CSHit)},
-  { 590, -1, sizeof(::PlaneWar::SCHit)},
-  { 625, -1, sizeof(::PlaneWar::CSMonsterDestory)},
-  { 631, -1, sizeof(::PlaneWar::SCMonsterDestory)},
-  { 636, -1, sizeof(::PlaneWar::CSTransform)},
-  { 642, -1, sizeof(::PlaneWar::SCTransform)},
-  { 649, -1, sizeof(::PlaneWar::CSPlanePosSync)},
-  { 655, -1, sizeof(::PlaneWar::SCPlanePosSync)},
-  { 662, -1, sizeof(::PlaneWar::SCStateEnd)},
-  { 670, -1, sizeof(::PlaneWar::CSModRatio)},
-  { 676, -1, sizeof(::PlaneWar::SCModRatio)},
-  { 684, -1, sizeof(::PlaneWar::SCGainNotify)},
-  { 697, -1, sizeof(::PlaneWar::SCGainSettle)},
-  { 706, -1, sizeof(::PlaneWar::CSSetPlane)},
-  { 712, -1, sizeof(::PlaneWar::SCSetPlane)},
-  { 719, -1, sizeof(::PlaneWar::CSSwitchBackGround)},
-  { 724, -1, sizeof(::PlaneWar::SCSwitchBackGround)},
-  { 730, -1, sizeof(::PlaneWar::MonsterPath)},
-  { 743, -1, sizeof(::PlaneWar::SCSyncMonsterInfo)},
-  { 749, -1, sizeof(::PlaneWar::ScratchInfo)},
-  { 756, -1, sizeof(::PlaneWar::CSScratchCardList)},
-  { 761, -1, sizeof(::PlaneWar::SCScratchCardList)},
-  { 768, -1, sizeof(::PlaneWar::CSUseScratchCard)},
-  { 774, -1, sizeof(::PlaneWar::SCUseScratchCard)},
-  { 784, -1, sizeof(::PlaneWar::CSExplodeSettle)},
-  { 790, -1, sizeof(::PlaneWar::SCExplodeSettle)},
-  { 799, -1, sizeof(::PlaneWar::CSFallIntoBlackHole)},
-  { 806, -1, sizeof(::PlaneWar::SCFallIntoBlackHole)},
-  { 814, -1, sizeof(::PlaneWar::CSSyncBlackHolePos)},
-  { 821, -1, sizeof(::PlaneWar::SCSyncBlackHolePos)},
-  { 829, -1, sizeof(::PlaneWar::CSInteraction)},
-  { 836, -1, sizeof(::PlaneWar::SCInteraction)},
-  { 846, -1, sizeof(::PlaneWar::JumpHighArena)},
-  { 857, -1, sizeof(::PlaneWar::PoolArenaLimit)},
-  { 864, -1, sizeof(::PlaneWar::SCActivityInfo)},
-  { 872, -1, sizeof(::PlaneWar::CSGetTaskReward)},
-  { 877, -1, sizeof(::PlaneWar::SCGetTaskReward)},
-  { 885, -1, sizeof(::PlaneWar::CSGetTaskInfo)},
-  { 890, -1, sizeof(::PlaneWar::SCGetTaskInfo)},
-  { 903, -1, sizeof(::PlaneWar::SCNoticeInfoChange)},
-  { 911, -1, sizeof(::PlaneWar::ProsInfo)},
-  { 919, -1, sizeof(::PlaneWar::SCNoticeHallProsChange)},
-  { 926, -1, sizeof(::PlaneWar::TimingMonster)},
-  { 933, -1, sizeof(::PlaneWar::SCNoticeTimingMonster)},
-  { 939, -1, sizeof(::PlaneWar::CSPiggyBankInfo)},
-  { 945, -1, sizeof(::PlaneWar::SCPiggyBankInfo)},
-  { 953, -1, sizeof(::PlaneWar::PiggyReward)},
-  { 960, -1, sizeof(::PlaneWar::CSOpenPiggyBank)},
-  { 965, -1, sizeof(::PlaneWar::SCOpenPiggyBank)},
-  { 973, -1, sizeof(::PlaneWar::CSPiggyBankOpenFinish)},
-  { 978, -1, sizeof(::PlaneWar::SCPiggyBankOpenFinish)},
-  { 984, -1, sizeof(::PlaneWar::SCPiggyBankChangeNotify)},
-  { 990, -1, sizeof(::PlaneWar::CSSetPersonalPoolEnable)},
-  { 996, -1, sizeof(::PlaneWar::SCSetPersonalPoolEnable)},
-  { 1002, -1, sizeof(::PlaneWar::CSPersonalPoolInfo)},
-  { 1008, -1, sizeof(::PlaneWar::PersonalPoolReward)},
-  { 1018, -1, sizeof(::PlaneWar::PersonalPoolLevelInfo)},
-  { 1027, -1, sizeof(::PlaneWar::PersonalPoolLuckyInfo)},
-  { 1034, -1, sizeof(::PlaneWar::SCPersonalPoolInfo)},
-  { 1047, -1, sizeof(::PlaneWar::CSDrawPersonalPool)},
-  { 1057, -1, sizeof(::PlaneWar::CSUpgradePoolReward)},
-  { 1063, -1, sizeof(::PlaneWar::SCUpgradePoolReward)},
-  { 1074, -1, sizeof(::PlaneWar::CSGetPoolLuckyReward)},
-  { 1079, -1, sizeof(::PlaneWar::SCGetPoolLuckyReward)},
-  { 1088, -1, sizeof(::PlaneWar::SCPersonalPoolChangeNotify)},
-  { 1098, -1, sizeof(::PlaneWar::CSUseMissile)},
-  { 1104, -1, sizeof(::PlaneWar::SCUseMissile)},
-  { 1114, -1, sizeof(::PlaneWar::CSMonsterCall)},
-  { 1119, -1, sizeof(::PlaneWar::SCMonsterCall)},
-  { 1127, -1, sizeof(::PlaneWar::CSClickStatic)},
-  { 1133, -1, sizeof(::PlaneWar::SCClickStatic)},
-  { 1138, -1, sizeof(::PlaneWar::RankInfo)},
-  { 1147, -1, sizeof(::PlaneWar::MyRankInfo)},
-  { 1156, -1, sizeof(::PlaneWar::CSRankList)},
-  { 1162, -1, sizeof(::PlaneWar::SCRankList)},
-  { 1171, -1, sizeof(::PlaneWar::TitleInfo)},
-  { 1180, -1, sizeof(::PlaneWar::SCTitleList)},
-  { 1187, -1, sizeof(::PlaneWar::CSSelectTitle)},
-  { 1193, -1, sizeof(::PlaneWar::SCSelectTitle)},
-  { 1200, -1, sizeof(::PlaneWar::SCTitleActiveNotify)},
-  { 1206, -1, sizeof(::PlaneWar::SCRoomInfoChangeNotify)},
-  { 1212, -1, sizeof(::PlaneWar::CSMatchBrief)},
-  { 1217, -1, sizeof(::PlaneWar::SCMatchBrief)},
-  { 1231, -1, sizeof(::PlaneWar::CSMatchDetail)},
-  { 1236, -1, sizeof(::PlaneWar::MatchSubInfo)},
-  { 1245, -1, sizeof(::PlaneWar::MatchRewardItem)},
-  { 1252, -1, sizeof(::PlaneWar::MatchRankInfo)},
-  { 1265, -1, sizeof(::PlaneWar::MatchTask)},
-  { 1273, -1, sizeof(::PlaneWar::SCMatchDetail)},
-  { 1284, -1, sizeof(::PlaneWar::CSMatchReward)},
-  { 1289, -1, sizeof(::PlaneWar::RankReward)},
-  { 1297, -1, sizeof(::PlaneWar::SCMatchReward)},
-  { 1304, -1, sizeof(::PlaneWar::MyMatchReward)},
-  { 1313, -1, sizeof(::PlaneWar::SCMatchRewardNotify)},
-  { 1320, -1, sizeof(::PlaneWar::CSGiftList)},
-  { 1325, -1, sizeof(::PlaneWar::GiftInfo)},
-  { 1335, -1, sizeof(::PlaneWar::SCGiftList)},
-  { 1341, -1, sizeof(::PlaneWar::SCGiftExpireNotify)},
-  { 1348, -1, sizeof(::PlaneWar::CSGetMatchTaskReward)},
-  { 1354, -1, sizeof(::PlaneWar::SCGetMatchTaskReward)},
-  { 1361, -1, sizeof(::PlaneWar::WeaponUseCondition)},
-  { 1367, -1, sizeof(::PlaneWar::WeaponConfig)},
-  { 1375, -1, sizeof(::PlaneWar::CSWeaponPieceInfo)},
-  { 1381, -1, sizeof(::PlaneWar::PiecesStackLimitInfo)},
-  { 1389, -1, sizeof(::PlaneWar::SCWeaponPieceInfo)},
-  { 1399, -1, sizeof(::PlaneWar::CSBuyWeapon)},
-  { 1404, -1, sizeof(::PlaneWar::SCBuyWeapon)},
-  { 1414, -1, sizeof(::PlaneWar::EarnRecord)},
-  { 1426, -1, sizeof(::PlaneWar::CSWeaponEarnRecord)},
-  { 1432, -1, sizeof(::PlaneWar::SCWeaponEarnRecord)},
-  { 1439, -1, sizeof(::PlaneWar::CSStateForceSettle)},
-  { 1445, -1, sizeof(::PlaneWar::SCStateForceSettle)},
-  { 1454, -1, sizeof(::PlaneWar::SCAddMissedBullet)},
-  { 1463, -1, sizeof(::PlaneWar::CSUpdateBulletData)},
-  { 1473, -1, sizeof(::PlaneWar::SCUpdateBulletData)},
-  { 1484, -1, sizeof(::PlaneWar::CSUseMissileBatch)},
-  { 1489, -1, sizeof(::PlaneWar::SCUseMissileBatch)},
-  { 1498, -1, sizeof(::PlaneWar::CSSyncPropsToHall)},
-  { 1503, -1, sizeof(::PlaneWar::SCSyncPropsToHall)},
-  { 1508, -1, sizeof(::PlaneWar::CSChangeTable)},
-  { 1513, -1, sizeof(::PlaneWar::SCChangeTable)},
-  { 1518, -1, sizeof(::PlaneWar::CSUseRoulette)},
-  { 1524, -1, sizeof(::PlaneWar::SCUseRoulette)},
-  { 1536, -1, sizeof(::PlaneWar::CSRedEnvelopePoint)},
-  { 1541, -1, sizeof(::PlaneWar::RedOpenInfo)},
-  { 1548, -1, sizeof(::PlaneWar::SCRedEnvelopePoint)},
-  { 1557, -1, sizeof(::PlaneWar::CSRedEnvelopeInfo)},
-  { 1563, -1, sizeof(::PlaneWar::RedInfo)},
-  { 1569, -1, sizeof(::PlaneWar::SCRedEnvelopeInfo)},
-  { 1575, -1, sizeof(::PlaneWar::CSOpenRedEnvelope)},
-  { 1581, -1, sizeof(::PlaneWar::RedUpgradeInfo)},
-  { 1590, -1, sizeof(::PlaneWar::SCOpenRedEnvelope)},
-  { 1598, -1, sizeof(::PlaneWar::CSUpgradeRedEnvelope)},
-  { 1604, -1, sizeof(::PlaneWar::SCUpgradeRedEnvelope)},
-  { 1614, -1, sizeof(::PlaneWar::CSCommonRedEnvelopeInfo)},
-  { 1620, -1, sizeof(::PlaneWar::CommonRedInfo)},
-  { 1632, -1, sizeof(::PlaneWar::SCCommonRedEnvelopeInfo)},
-  { 1642, -1, sizeof(::PlaneWar::CSOpenCommonRedEnvelope)},
-  { 1648, -1, sizeof(::PlaneWar::SCOpenCommonRedEnvelope)},
-  { 1657, -1, sizeof(::PlaneWar::RedRankPlayerInfo)},
-  { 1666, -1, sizeof(::PlaneWar::CSGrantCommonRedEnvelopeRank)},
-  { 1673, -1, sizeof(::PlaneWar::GrantRankItem)},
-  { 1682, -1, sizeof(::PlaneWar::SCGrantCommonRedEnvelopeRank)},
-  { 1689, -1, sizeof(::PlaneWar::CSOpenCommonRedEnvelopeRank)},
-  { 1696, -1, sizeof(::PlaneWar::OpenRankItem)},
-  { 1705, -1, sizeof(::PlaneWar::SCOpenCommonRedEnvelopeRank)},
-  { 1712, -1, sizeof(::PlaneWar::CSGrantCommonRedEnvelopeRecord)},
-  { 1717, -1, sizeof(::PlaneWar::GrantRecord)},
-  { 1727, -1, sizeof(::PlaneWar::SCGrantCommonRedEnvelopeRecord)},
-  { 1733, -1, sizeof(::PlaneWar::CSOpenCommonRedEnvelopeRecord)},
-  { 1738, -1, sizeof(::PlaneWar::OpenRecord)},
-  { 1746, -1, sizeof(::PlaneWar::SCOpenCommonRedEnvelopeRecord)},
-  { 1753, -1, sizeof(::PlaneWar::SCRedEnvelopeOpStatusNotify)},
-  { 1763, -1, sizeof(::PlaneWar::CSSyncWeaponState)},
-  { 1772, -1, sizeof(::PlaneWar::SCSyncWeaponState)},
-  { 1777, -1, sizeof(::PlaneWar::CSPreHit)},
-  { 1785, -1, sizeof(::PlaneWar::SCPreHit)},
-  { 1792, -1, sizeof(::PlaneWar::Animation)},
-  { 1809, -1, sizeof(::PlaneWar::DiceJson)},
-  { 1818, -1, sizeof(::PlaneWar::FortuneWheelJson)},
-  { 1825, -1, sizeof(::PlaneWar::GoldenToadJson)},
-  { 1834, -1, sizeof(::PlaneWar::OrderData)},
-  { 1841, -1, sizeof(::PlaneWar::CSSyncAnimation)},
-  { 1848, -1, sizeof(::PlaneWar::SCSyncAnimation)},
-  { 1855, -1, sizeof(::PlaneWar::SCGetAnimations)},
-  { 1861, -1, sizeof(::PlaneWar::GradeRankDetail)},
-  { 1868, -1, sizeof(::PlaneWar::GradeRankConfig)},
-  { 1875, -1, sizeof(::PlaneWar::WareGivingInfo)},
-  { 1884, -1, sizeof(::PlaneWar::WareInfo)},
-  { 1895, -1, sizeof(::PlaneWar::ExtraGradeRewardInfo)},
-  { 1903, -1, sizeof(::PlaneWar::RankWareConfig)},
-  { 1913, -1, sizeof(::PlaneWar::DiceConfig)},
-  { 1920, -1, sizeof(::PlaneWar::CSSyncConfigs)},
-  { 1925, -1, sizeof(::PlaneWar::SCSyncConfigs)},
-  { 1936, -1, sizeof(::PlaneWar::CSConfirmWeaponExist)},
-  { 1942, -1, sizeof(::PlaneWar::SCConfirmWeaponExist)},
-  { 1948, -1, sizeof(::PlaneWar::CSGetVideo)},
-  { 1955, -1, sizeof(::PlaneWar::SCGetVideo)},
-  { 1970, -1, sizeof(::PlaneWar::VideoCommon)},
-  { 1982, -1, sizeof(::PlaneWar::GlobalVideoInfo)},
-  { 1990, -1, sizeof(::PlaneWar::SelfVideoInfo)},
-  { 1997, -1, sizeof(::PlaneWar::CSSelfVideoRecord)},
-  { 2004, -1, sizeof(::PlaneWar::SCSelfVideoRecord)},
-  { 2011, -1, sizeof(::PlaneWar::CSVideoRank)},
-  { 2018, -1, sizeof(::PlaneWar::SCVideoRank)},
-  { 2025, -1, sizeof(::PlaneWar::ReceiveReward)},
-  { 2042, -1, sizeof(::PlaneWar::CSReceiveGradeReward)},
-  { 2047, -1, sizeof(::PlaneWar::SCReceiveGradeReward)},
-  { 2055, -1, sizeof(::PlaneWar::GradeRewardDetail)},
-  { 2063, -1, sizeof(::PlaneWar::GradeRewardInfo)},
-  { 2072, -1, sizeof(::PlaneWar::GradeRankInfo)},
-  { 2090, -1, sizeof(::PlaneWar::CSGetTableUserInfo)},
-  { 2096, -1, sizeof(::PlaneWar::SCGetTableUserInfo)},
-  { 2103, -1, sizeof(::PlaneWar::CSGetGradeRewardInfo)},
-  { 2110, -1, sizeof(::PlaneWar::SCGetGradeRewardInfo)},
-  { 2116, -1, sizeof(::PlaneWar::CSGetGradeRankInfo)},
-  { 2121, -1, sizeof(::PlaneWar::SCGetGradeRankInfo)},
-  { 2127, -1, sizeof(::PlaneWar::SCRankUpgrade)},
-  { 2135, -1, sizeof(::PlaneWar::CSRankSeasonStatus)},
-  { 2140, -1, sizeof(::PlaneWar::SCRankSeasonStatus)},
-  { 2150, -1, sizeof(::PlaneWar::SCSyncTime)},
-  { 2156, -1, sizeof(::PlaneWar::SCNoticePropsOverdue)},
-  { 2162, -1, sizeof(::PlaneWar::PurchaseResult)},
-  { 2169, -1, sizeof(::PlaneWar::CSQueryPackagePurchase)},
-  { 2175, -1, sizeof(::PlaneWar::SCQueryPackagePurchase)},
-  { 2181, -1, sizeof(::PlaneWar::PropsInfo)},
-  { 2188, -1, sizeof(::PlaneWar::SCGamePurchasePush)},
-  { 2194, -1, sizeof(::PlaneWar::PackageMarquee)},
-  { 2202, -1, sizeof(::PlaneWar::CSQueryPackageMarquee)},
-  { 2207, -1, sizeof(::PlaneWar::SCQueryPackageMarquee)},
-  { 2214, -1, sizeof(::PlaneWar::CSSetWings)},
-  { 2220, -1, sizeof(::PlaneWar::SCSetWings)},
-  { 2227, -1, sizeof(::PlaneWar::CSVerifySeasonChange)},
-  { 2232, -1, sizeof(::PlaneWar::SCVerifySeasonChange)},
-  { 2242, -1, sizeof(::PlaneWar::CSExistUnReceiveRankReward)},
-  { 2247, -1, sizeof(::PlaneWar::SCExistUnReceiveRankReward)},
-  { 2253, -1, sizeof(::PlaneWar::CSReceiveExtraGradeReward)},
-  { 2259, -1, sizeof(::PlaneWar::SCReceiveExtraGradeReward)},
-  { 2266, -1, sizeof(::PlaneWar::CSGetGradeRankList)},
-  { 2274, -1, sizeof(::PlaneWar::SCGetGradeRankList)},
-  { 2282, -1, sizeof(::PlaneWar::CSBuyPlane)},
-  { 2288, -1, sizeof(::PlaneWar::SCBuyPlane)},
-  { 2294, -1, sizeof(::PlaneWar::CSBuyWings)},
-  { 2300, -1, sizeof(::PlaneWar::SCBuyWings)},
-  { 2306, -1, sizeof(::PlaneWar::OpenChestReward)},
-  { 2313, -1, sizeof(::PlaneWar::SCUpdateChestStatus)},
-  { 2324, -1, sizeof(::PlaneWar::ChestBrief)},
-  { 2331, -1, sizeof(::PlaneWar::SCChestConfig)},
-  { 2342, -1, sizeof(::PlaneWar::SCOpenChest)},
-  { 2349, -1, sizeof(::PlaneWar::CSSelectChestReward)},
-  { 2356, -1, sizeof(::PlaneWar::CSChestSetAutoSelect)},
-  { 2363, -1, sizeof(::PlaneWar::SCChestSetAutoSelect)},
-  { 2370, -1, sizeof(::PlaneWar::CSChestSetEnable)},
-  { 2376, -1, sizeof(::PlaneWar::SCChestSetEnable)},
-  { 2382, -1, sizeof(::PlaneWar::SCWaterDropInfo)},
-  { 2390, -1, sizeof(::PlaneWar::TextInfo)},
-  { 2397, -1, sizeof(::PlaneWar::CSSyncTextConfig)},
-  { 2404, -1, sizeof(::PlaneWar::SCSyncTextConfig)},
+  { 591, -1, sizeof(::PlaneWar::SCHit)},
+  { 626, -1, sizeof(::PlaneWar::CSMonsterDestory)},
+  { 632, -1, sizeof(::PlaneWar::SCMonsterDestory)},
+  { 637, -1, sizeof(::PlaneWar::CSTransform)},
+  { 643, -1, sizeof(::PlaneWar::SCTransform)},
+  { 650, -1, sizeof(::PlaneWar::CSPlanePosSync)},
+  { 656, -1, sizeof(::PlaneWar::SCPlanePosSync)},
+  { 663, -1, sizeof(::PlaneWar::SCStateEnd)},
+  { 671, -1, sizeof(::PlaneWar::CSModRatio)},
+  { 677, -1, sizeof(::PlaneWar::SCModRatio)},
+  { 685, -1, sizeof(::PlaneWar::SCGainNotify)},
+  { 698, -1, sizeof(::PlaneWar::SCGainSettle)},
+  { 707, -1, sizeof(::PlaneWar::CSSetPlane)},
+  { 713, -1, sizeof(::PlaneWar::SCSetPlane)},
+  { 720, -1, sizeof(::PlaneWar::CSSwitchBackGround)},
+  { 725, -1, sizeof(::PlaneWar::SCSwitchBackGround)},
+  { 731, -1, sizeof(::PlaneWar::MonsterPath)},
+  { 744, -1, sizeof(::PlaneWar::SCSyncMonsterInfo)},
+  { 750, -1, sizeof(::PlaneWar::ScratchInfo)},
+  { 757, -1, sizeof(::PlaneWar::CSScratchCardList)},
+  { 762, -1, sizeof(::PlaneWar::SCScratchCardList)},
+  { 769, -1, sizeof(::PlaneWar::CSUseScratchCard)},
+  { 775, -1, sizeof(::PlaneWar::SCUseScratchCard)},
+  { 785, -1, sizeof(::PlaneWar::CSExplodeSettle)},
+  { 791, -1, sizeof(::PlaneWar::SCExplodeSettle)},
+  { 800, -1, sizeof(::PlaneWar::CSFallIntoBlackHole)},
+  { 807, -1, sizeof(::PlaneWar::SCFallIntoBlackHole)},
+  { 815, -1, sizeof(::PlaneWar::CSSyncBlackHolePos)},
+  { 822, -1, sizeof(::PlaneWar::SCSyncBlackHolePos)},
+  { 830, -1, sizeof(::PlaneWar::CSInteraction)},
+  { 837, -1, sizeof(::PlaneWar::SCInteraction)},
+  { 847, -1, sizeof(::PlaneWar::JumpHighArena)},
+  { 858, -1, sizeof(::PlaneWar::PoolArenaLimit)},
+  { 865, -1, sizeof(::PlaneWar::SCActivityInfo)},
+  { 873, -1, sizeof(::PlaneWar::CSGetTaskReward)},
+  { 878, -1, sizeof(::PlaneWar::SCGetTaskReward)},
+  { 886, -1, sizeof(::PlaneWar::CSGetTaskInfo)},
+  { 891, -1, sizeof(::PlaneWar::SCGetTaskInfo)},
+  { 904, -1, sizeof(::PlaneWar::SCNoticeInfoChange)},
+  { 912, -1, sizeof(::PlaneWar::ProsInfo)},
+  { 920, -1, sizeof(::PlaneWar::SCNoticeHallProsChange)},
+  { 927, -1, sizeof(::PlaneWar::TimingMonster)},
+  { 934, -1, sizeof(::PlaneWar::SCNoticeTimingMonster)},
+  { 940, -1, sizeof(::PlaneWar::CSPiggyBankInfo)},
+  { 946, -1, sizeof(::PlaneWar::SCPiggyBankInfo)},
+  { 954, -1, sizeof(::PlaneWar::PiggyReward)},
+  { 961, -1, sizeof(::PlaneWar::CSOpenPiggyBank)},
+  { 966, -1, sizeof(::PlaneWar::SCOpenPiggyBank)},
+  { 974, -1, sizeof(::PlaneWar::CSPiggyBankOpenFinish)},
+  { 979, -1, sizeof(::PlaneWar::SCPiggyBankOpenFinish)},
+  { 985, -1, sizeof(::PlaneWar::SCPiggyBankChangeNotify)},
+  { 991, -1, sizeof(::PlaneWar::CSSetPersonalPoolEnable)},
+  { 997, -1, sizeof(::PlaneWar::SCSetPersonalPoolEnable)},
+  { 1003, -1, sizeof(::PlaneWar::CSPersonalPoolInfo)},
+  { 1009, -1, sizeof(::PlaneWar::PersonalPoolReward)},
+  { 1019, -1, sizeof(::PlaneWar::PersonalPoolLevelInfo)},
+  { 1028, -1, sizeof(::PlaneWar::PersonalPoolLuckyInfo)},
+  { 1035, -1, sizeof(::PlaneWar::SCPersonalPoolInfo)},
+  { 1048, -1, sizeof(::PlaneWar::CSDrawPersonalPool)},
+  { 1058, -1, sizeof(::PlaneWar::CSUpgradePoolReward)},
+  { 1064, -1, sizeof(::PlaneWar::SCUpgradePoolReward)},
+  { 1075, -1, sizeof(::PlaneWar::CSGetPoolLuckyReward)},
+  { 1080, -1, sizeof(::PlaneWar::SCGetPoolLuckyReward)},
+  { 1089, -1, sizeof(::PlaneWar::SCPersonalPoolChangeNotify)},
+  { 1099, -1, sizeof(::PlaneWar::CSUseMissile)},
+  { 1105, -1, sizeof(::PlaneWar::SCUseMissile)},
+  { 1115, -1, sizeof(::PlaneWar::CSMonsterCall)},
+  { 1120, -1, sizeof(::PlaneWar::SCMonsterCall)},
+  { 1128, -1, sizeof(::PlaneWar::CSClickStatic)},
+  { 1134, -1, sizeof(::PlaneWar::SCClickStatic)},
+  { 1139, -1, sizeof(::PlaneWar::RankInfo)},
+  { 1148, -1, sizeof(::PlaneWar::MyRankInfo)},
+  { 1157, -1, sizeof(::PlaneWar::CSRankList)},
+  { 1163, -1, sizeof(::PlaneWar::SCRankList)},
+  { 1172, -1, sizeof(::PlaneWar::TitleInfo)},
+  { 1181, -1, sizeof(::PlaneWar::SCTitleList)},
+  { 1188, -1, sizeof(::PlaneWar::CSSelectTitle)},
+  { 1194, -1, sizeof(::PlaneWar::SCSelectTitle)},
+  { 1201, -1, sizeof(::PlaneWar::SCTitleActiveNotify)},
+  { 1207, -1, sizeof(::PlaneWar::SCRoomInfoChangeNotify)},
+  { 1213, -1, sizeof(::PlaneWar::CSMatchBrief)},
+  { 1218, -1, sizeof(::PlaneWar::SCMatchBrief)},
+  { 1232, -1, sizeof(::PlaneWar::CSMatchDetail)},
+  { 1237, -1, sizeof(::PlaneWar::MatchSubInfo)},
+  { 1246, -1, sizeof(::PlaneWar::MatchRewardItem)},
+  { 1253, -1, sizeof(::PlaneWar::MatchRankInfo)},
+  { 1266, -1, sizeof(::PlaneWar::MatchTask)},
+  { 1274, -1, sizeof(::PlaneWar::SCMatchDetail)},
+  { 1285, -1, sizeof(::PlaneWar::CSMatchReward)},
+  { 1290, -1, sizeof(::PlaneWar::RankReward)},
+  { 1298, -1, sizeof(::PlaneWar::SCMatchReward)},
+  { 1305, -1, sizeof(::PlaneWar::MyMatchReward)},
+  { 1314, -1, sizeof(::PlaneWar::SCMatchRewardNotify)},
+  { 1321, -1, sizeof(::PlaneWar::CSGiftList)},
+  { 1326, -1, sizeof(::PlaneWar::GiftInfo)},
+  { 1336, -1, sizeof(::PlaneWar::SCGiftList)},
+  { 1342, -1, sizeof(::PlaneWar::SCGiftExpireNotify)},
+  { 1349, -1, sizeof(::PlaneWar::CSGetMatchTaskReward)},
+  { 1355, -1, sizeof(::PlaneWar::SCGetMatchTaskReward)},
+  { 1362, -1, sizeof(::PlaneWar::WeaponUseCondition)},
+  { 1368, -1, sizeof(::PlaneWar::WeaponConfig)},
+  { 1376, -1, sizeof(::PlaneWar::CSWeaponPieceInfo)},
+  { 1382, -1, sizeof(::PlaneWar::PiecesStackLimitInfo)},
+  { 1390, -1, sizeof(::PlaneWar::SCWeaponPieceInfo)},
+  { 1400, -1, sizeof(::PlaneWar::CSBuyWeapon)},
+  { 1405, -1, sizeof(::PlaneWar::SCBuyWeapon)},
+  { 1415, -1, sizeof(::PlaneWar::EarnRecord)},
+  { 1427, -1, sizeof(::PlaneWar::CSWeaponEarnRecord)},
+  { 1433, -1, sizeof(::PlaneWar::SCWeaponEarnRecord)},
+  { 1440, -1, sizeof(::PlaneWar::CSStateForceSettle)},
+  { 1446, -1, sizeof(::PlaneWar::SCStateForceSettle)},
+  { 1455, -1, sizeof(::PlaneWar::SCAddMissedBullet)},
+  { 1464, -1, sizeof(::PlaneWar::CSUpdateBulletData)},
+  { 1474, -1, sizeof(::PlaneWar::SCUpdateBulletData)},
+  { 1485, -1, sizeof(::PlaneWar::CSUseMissileBatch)},
+  { 1490, -1, sizeof(::PlaneWar::SCUseMissileBatch)},
+  { 1499, -1, sizeof(::PlaneWar::CSSyncPropsToHall)},
+  { 1504, -1, sizeof(::PlaneWar::SCSyncPropsToHall)},
+  { 1509, -1, sizeof(::PlaneWar::CSChangeTable)},
+  { 1514, -1, sizeof(::PlaneWar::SCChangeTable)},
+  { 1519, -1, sizeof(::PlaneWar::CSUseRoulette)},
+  { 1525, -1, sizeof(::PlaneWar::SCUseRoulette)},
+  { 1537, -1, sizeof(::PlaneWar::CSRedEnvelopePoint)},
+  { 1542, -1, sizeof(::PlaneWar::RedOpenInfo)},
+  { 1549, -1, sizeof(::PlaneWar::SCRedEnvelopePoint)},
+  { 1558, -1, sizeof(::PlaneWar::CSRedEnvelopeInfo)},
+  { 1564, -1, sizeof(::PlaneWar::RedInfo)},
+  { 1570, -1, sizeof(::PlaneWar::SCRedEnvelopeInfo)},
+  { 1576, -1, sizeof(::PlaneWar::CSOpenRedEnvelope)},
+  { 1582, -1, sizeof(::PlaneWar::RedUpgradeInfo)},
+  { 1591, -1, sizeof(::PlaneWar::SCOpenRedEnvelope)},
+  { 1599, -1, sizeof(::PlaneWar::CSUpgradeRedEnvelope)},
+  { 1605, -1, sizeof(::PlaneWar::SCUpgradeRedEnvelope)},
+  { 1615, -1, sizeof(::PlaneWar::CSCommonRedEnvelopeInfo)},
+  { 1621, -1, sizeof(::PlaneWar::CommonRedInfo)},
+  { 1633, -1, sizeof(::PlaneWar::SCCommonRedEnvelopeInfo)},
+  { 1643, -1, sizeof(::PlaneWar::CSOpenCommonRedEnvelope)},
+  { 1649, -1, sizeof(::PlaneWar::SCOpenCommonRedEnvelope)},
+  { 1658, -1, sizeof(::PlaneWar::RedRankPlayerInfo)},
+  { 1667, -1, sizeof(::PlaneWar::CSGrantCommonRedEnvelopeRank)},
+  { 1674, -1, sizeof(::PlaneWar::GrantRankItem)},
+  { 1683, -1, sizeof(::PlaneWar::SCGrantCommonRedEnvelopeRank)},
+  { 1690, -1, sizeof(::PlaneWar::CSOpenCommonRedEnvelopeRank)},
+  { 1697, -1, sizeof(::PlaneWar::OpenRankItem)},
+  { 1706, -1, sizeof(::PlaneWar::SCOpenCommonRedEnvelopeRank)},
+  { 1713, -1, sizeof(::PlaneWar::CSGrantCommonRedEnvelopeRecord)},
+  { 1718, -1, sizeof(::PlaneWar::GrantRecord)},
+  { 1728, -1, sizeof(::PlaneWar::SCGrantCommonRedEnvelopeRecord)},
+  { 1734, -1, sizeof(::PlaneWar::CSOpenCommonRedEnvelopeRecord)},
+  { 1739, -1, sizeof(::PlaneWar::OpenRecord)},
+  { 1747, -1, sizeof(::PlaneWar::SCOpenCommonRedEnvelopeRecord)},
+  { 1754, -1, sizeof(::PlaneWar::SCRedEnvelopeOpStatusNotify)},
+  { 1764, -1, sizeof(::PlaneWar::CSSyncWeaponState)},
+  { 1773, -1, sizeof(::PlaneWar::SCSyncWeaponState)},
+  { 1778, -1, sizeof(::PlaneWar::CSPreHit)},
+  { 1786, -1, sizeof(::PlaneWar::SCPreHit)},
+  { 1793, -1, sizeof(::PlaneWar::Animation)},
+  { 1810, -1, sizeof(::PlaneWar::DiceJson)},
+  { 1819, -1, sizeof(::PlaneWar::FortuneWheelJson)},
+  { 1826, -1, sizeof(::PlaneWar::GoldenToadJson)},
+  { 1835, -1, sizeof(::PlaneWar::OrderData)},
+  { 1842, -1, sizeof(::PlaneWar::CSSyncAnimation)},
+  { 1849, -1, sizeof(::PlaneWar::SCSyncAnimation)},
+  { 1856, -1, sizeof(::PlaneWar::SCGetAnimations)},
+  { 1862, -1, sizeof(::PlaneWar::GradeRankDetail)},
+  { 1869, -1, sizeof(::PlaneWar::GradeRankConfig)},
+  { 1876, -1, sizeof(::PlaneWar::WareGivingInfo)},
+  { 1885, -1, sizeof(::PlaneWar::WareInfo)},
+  { 1896, -1, sizeof(::PlaneWar::ExtraGradeRewardInfo)},
+  { 1904, -1, sizeof(::PlaneWar::RankWareConfig)},
+  { 1914, -1, sizeof(::PlaneWar::DiceConfig)},
+  { 1921, -1, sizeof(::PlaneWar::CSSyncConfigs)},
+  { 1926, -1, sizeof(::PlaneWar::SCSyncConfigs)},
+  { 1937, -1, sizeof(::PlaneWar::CSConfirmWeaponExist)},
+  { 1943, -1, sizeof(::PlaneWar::SCConfirmWeaponExist)},
+  { 1949, -1, sizeof(::PlaneWar::CSGetVideo)},
+  { 1956, -1, sizeof(::PlaneWar::SCGetVideo)},
+  { 1971, -1, sizeof(::PlaneWar::VideoCommon)},
+  { 1983, -1, sizeof(::PlaneWar::GlobalVideoInfo)},
+  { 1991, -1, sizeof(::PlaneWar::SelfVideoInfo)},
+  { 1998, -1, sizeof(::PlaneWar::CSSelfVideoRecord)},
+  { 2005, -1, sizeof(::PlaneWar::SCSelfVideoRecord)},
+  { 2012, -1, sizeof(::PlaneWar::CSVideoRank)},
+  { 2019, -1, sizeof(::PlaneWar::SCVideoRank)},
+  { 2026, -1, sizeof(::PlaneWar::ReceiveReward)},
+  { 2043, -1, sizeof(::PlaneWar::CSReceiveGradeReward)},
+  { 2048, -1, sizeof(::PlaneWar::SCReceiveGradeReward)},
+  { 2056, -1, sizeof(::PlaneWar::GradeRewardDetail)},
+  { 2064, -1, sizeof(::PlaneWar::GradeRewardInfo)},
+  { 2073, -1, sizeof(::PlaneWar::GradeRankInfo)},
+  { 2091, -1, sizeof(::PlaneWar::CSGetTableUserInfo)},
+  { 2097, -1, sizeof(::PlaneWar::SCGetTableUserInfo)},
+  { 2104, -1, sizeof(::PlaneWar::CSGetGradeRewardInfo)},
+  { 2111, -1, sizeof(::PlaneWar::SCGetGradeRewardInfo)},
+  { 2117, -1, sizeof(::PlaneWar::CSGetGradeRankInfo)},
+  { 2122, -1, sizeof(::PlaneWar::SCGetGradeRankInfo)},
+  { 2128, -1, sizeof(::PlaneWar::SCRankUpgrade)},
+  { 2136, -1, sizeof(::PlaneWar::CSRankSeasonStatus)},
+  { 2141, -1, sizeof(::PlaneWar::SCRankSeasonStatus)},
+  { 2151, -1, sizeof(::PlaneWar::SCSyncTime)},
+  { 2157, -1, sizeof(::PlaneWar::SCNoticePropsOverdue)},
+  { 2163, -1, sizeof(::PlaneWar::PurchaseResult)},
+  { 2170, -1, sizeof(::PlaneWar::CSQueryPackagePurchase)},
+  { 2176, -1, sizeof(::PlaneWar::SCQueryPackagePurchase)},
+  { 2182, -1, sizeof(::PlaneWar::PropsInfo)},
+  { 2189, -1, sizeof(::PlaneWar::SCGamePurchasePush)},
+  { 2195, -1, sizeof(::PlaneWar::PackageMarquee)},
+  { 2203, -1, sizeof(::PlaneWar::CSQueryPackageMarquee)},
+  { 2208, -1, sizeof(::PlaneWar::SCQueryPackageMarquee)},
+  { 2215, -1, sizeof(::PlaneWar::CSSetWings)},
+  { 2221, -1, sizeof(::PlaneWar::SCSetWings)},
+  { 2228, -1, sizeof(::PlaneWar::CSVerifySeasonChange)},
+  { 2233, -1, sizeof(::PlaneWar::SCVerifySeasonChange)},
+  { 2243, -1, sizeof(::PlaneWar::CSExistUnReceiveRankReward)},
+  { 2248, -1, sizeof(::PlaneWar::SCExistUnReceiveRankReward)},
+  { 2254, -1, sizeof(::PlaneWar::CSReceiveExtraGradeReward)},
+  { 2260, -1, sizeof(::PlaneWar::SCReceiveExtraGradeReward)},
+  { 2267, -1, sizeof(::PlaneWar::CSGetGradeRankList)},
+  { 2275, -1, sizeof(::PlaneWar::SCGetGradeRankList)},
+  { 2283, -1, sizeof(::PlaneWar::CSBuyPlane)},
+  { 2289, -1, sizeof(::PlaneWar::SCBuyPlane)},
+  { 2295, -1, sizeof(::PlaneWar::CSBuyWings)},
+  { 2301, -1, sizeof(::PlaneWar::SCBuyWings)},
+  { 2307, -1, sizeof(::PlaneWar::OpenChestReward)},
+  { 2314, -1, sizeof(::PlaneWar::SCUpdateChestStatus)},
+  { 2325, -1, sizeof(::PlaneWar::ChestBrief)},
+  { 2332, -1, sizeof(::PlaneWar::SCChestConfig)},
+  { 2343, -1, sizeof(::PlaneWar::SCOpenChest)},
+  { 2350, -1, sizeof(::PlaneWar::CSSelectChestReward)},
+  { 2357, -1, sizeof(::PlaneWar::CSChestSetAutoSelect)},
+  { 2364, -1, sizeof(::PlaneWar::SCChestSetAutoSelect)},
+  { 2371, -1, sizeof(::PlaneWar::CSChestSetEnable)},
+  { 2377, -1, sizeof(::PlaneWar::SCChestSetEnable)},
+  { 2383, -1, sizeof(::PlaneWar::SCWaterDropInfo)},
+  { 2391, -1, sizeof(::PlaneWar::TextInfo)},
+  { 2398, -1, sizeof(::PlaneWar::CSSyncTextConfig)},
+  { 2405, -1, sizeof(::PlaneWar::SCSyncTextConfig)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -8596,619 +8597,619 @@ const char descriptor_table_protodef_PlaneWar_2eproto[] PROTOBUF_SECTION_VARIABL
   "\001(\0132\036.PlaneWar.PersonalReplayConfig\022\014\n\004o"
   "pen\030\003 \001(\010\"_\n\017ConnMonsterInfo\022\021\n\tsourceUI"
   "D\030\001 \001(\005\022\021\n\toriginUID\030\002 \001(\005\022\r\n\005ratio\030\003 \001("
-  "\005\022\027\n\017connMonsterList\030\004 \003(\005\"\217\001\n\005CSHit\022\022\n\n"
+  "\005\022\027\n\017connMonsterList\030\004 \003(\005\"\237\001\n\005CSHit\022\022\n\n"
   "monsterUID\030\001 \001(\005\022\r\n\005ratio\030\002 \001(\005\022\022\n\nbulle"
   "tType\030\003 \001(\005\022\021\n\tsourceUID\030\004 \001(\005\022\022\n\ngenera"
   "tion\030\005 \001(\005\022\025\n\rdeductedMoney\030\006 \001(\005\022\021\n\tori"
-  "ginUID\030\007 \001(\005\"\370\006\n\005SCHit\022\022\n\nisCaptured\030\001 \001"
-  "(\010\022\r\n\005chair\030\002 \001(\005\022\022\n\nmonsterUID\030\003 \001(\005\022\r\n"
-  "\005ratio\030\004 \001(\005\022\022\n\nbulletType\030\005 \001(\005\022\014\n\004earn"
-  "\030\006 \001(\005\022\r\n\005score\030\007 \001(\003\022\021\n\tbaseValue\030\010 \001(\005"
-  "\022\024\n\014multipleList\030\t \003(\005\022(\n\014dropBuffList\030\n"
-  " \003(\0132\022.PlaneWar.BuffInfo\022.\n\rtriggerBulle"
-  "t\030\013 \003(\0132\027.PlaneWar.TriggerBullet\022&\n\tdrop"
-  "Poker\030\014 \001(\0132\023.PlaneWar.DropPoker\022$\n\010roul"
-  "ette\030\r \001(\0132\022.PlaneWar.Roulette\022\r\n\005stage\030"
-  "\016 \001(\005\022\020\n\010dropCard\030\017 \001(\005\022\021\n\toriginUID\030\020 \001"
-  "(\005\022\020\n\010dropCall\030\021 \001(\005\022\027\n\017dropWeaponPiece\030"
-  "\022 \001(\005\022,\n\014treasureList\030\023 \003(\0132\026.PlaneWar.T"
-  "reasureInfo\022\020\n\010weaponID\030\024 \001(\005\022(\n\nweaponI"
-  "nfo\030\025 \001(\0132\024.PlaneWar.WeaponInfo\022\"\n\007gunIn"
-  "fo\030\026 \001(\0132\021.PlaneWar.GunInfo\0224\n\020fortuneWh"
-  "eelList\030\027 \003(\0132\032.PlaneWar.FortuneWheelInf"
-  "o\022$\n\010toadInfo\030\030 \001(\0132\022.PlaneWar.ToadInfo\022"
-  "&\n\tflameInfo\030\031 \001(\0132\023.PlaneWar.FlameInfo\022"
-  "\"\n\007beeInfo\030\032 \001(\0132\021.PlaneWar.BeeInfo\0222\n\017c"
-  "onnMonsterInfo\030\033 \001(\0132\031.PlaneWar.ConnMons"
-  "terInfo\022(\n\nspecEffect\030\034 \003(\0132\024.PlaneWar.S"
-  "pecEffect\022$\n\010diceInfo\030\035 \001(\0132\022.PlaneWar.D"
-  "iceInfo\022\016\n\006isProp\030\036 \001(\010\"&\n\020CSMonsterDest"
-  "ory\022\022\n\nmonsterUID\030\001 \001(\005\"\022\n\020SCMonsterDest"
-  "ory\"\033\n\013CSTransform\022\014\n\004form\030\001 \001(\005\"*\n\013SCTr"
-  "ansform\022\r\n\005chair\030\001 \001(\005\022\014\n\004form\030\002 \001(\005\",\n\016"
-  "CSPlanePosSync\022\032\n\003pos\030\001 \001(\0132\r.PlaneWar.P"
-  "os\";\n\016SCPlanePosSync\022\r\n\005chair\030\001 \001(\005\022\032\n\003p"
-  "os\030\002 \001(\0132\r.PlaneWar.Pos\"<\n\nSCStateEnd\022\r\n"
-  "\005chair\030\001 \001(\005\022\014\n\004type\030\002 \001(\005\022\021\n\tsourceUID\030"
-  "\003 \001(\005\"\036\n\nCSModRatio\022\020\n\010modLevel\030\001 \001(\005\"<\n"
-  "\nSCModRatio\022\r\n\005chair\030\001 \001(\005\022\r\n\005ratio\030\002 \001("
-  "\005\022\020\n\010isUnlock\030\003 \001(\010\"\273\001\n\014SCGainNotify\022\016\n\006"
-  "source\030\001 \001(\005\022\020\n\010curMoney\030\002 \001(\005\022\014\n\004gain\030\003"
-  " \001(\005\022\021\n\tcurTicket\030\004 \001(\005\022\024\n\014changeTicket\030"
-  "\005 \001(\005\022\025\n\rchangeDiamond\030\006 \001(\005\022\022\n\ncurDiamo"
-  "nd\030\007 \001(\005\022\'\n\014curRedPacket\030\010 \001(\0132\021.PlaneWa"
-  "r.Decimal\"R\n\014SCGainSettle\022\r\n\005chair\030\001 \001(\005"
-  "\022\021\n\toriginUID\030\002 \001(\005\022\r\n\005ratio\030\003 \001(\005\022\021\n\tso"
-  "urceUID\030\004 \001(\005\"\035\n\nCSSetPlane\022\017\n\007planeID\030\001"
-  " \001(\005\",\n\nSCSetPlane\022\r\n\005chair\030\001 \001(\005\022\017\n\007pla"
-  "neID\030\002 \001(\005\"\024\n\022CSSwitchBackGround\"#\n\022SCSw"
-  "itchBackGround\022\r\n\005chair\030\001 \001(\005\"\254\001\n\013Monste"
-  "rPath\022&\n\007monster\030\001 \001(\0132\025.PlaneWar.Monste"
-  "rInfo\022\020\n\010configID\030\002 \001(\005\022\021\n\tstepIndex\030\003 \001"
-  "(\005\022\021\n\troadIndex\030\004 \001(\005\022\r\n\005moveT\030\005 \001(\002\022\020\n\010"
-  "dotIndex\030\006 \001(\005\022\r\n\005delay\030\007 \001(\002\022\r\n\005stage\030\010"
-  " \001(\005\"C\n\021SCSyncMonsterInfo\022.\n\017createdPath"
-  "List\030\001 \003(\0132\025.PlaneWar.MonsterPath\"-\n\013Scr"
-  "atchInfo\022\014\n\004base\030\001 \001(\005\022\020\n\010multiple\030\002 \001(\005"
-  "\"\023\n\021CSScratchCardList\"J\n\021SCScratchCardLi"
-  "st\022\013\n\003num\030\001 \001(\005\022(\n\tfirstCard\030\002 \001(\0132\025.Pla"
-  "neWar.ScratchInfo\"\037\n\020CSUseScratchCard\022\013\n"
-  "\003num\030\001 \001(\005\"{\n\020SCUseScratchCard\022\r\n\005chair\030"
-  "\001 \001(\005\022\'\n\010cardList\030\002 \003(\0132\025.PlaneWar.Scrat"
-  "chInfo\022\r\n\005total\030\003 \001(\005\022\016\n\006remain\030\004 \001(\005\022\020\n"
-  "\010curMoney\030\005 \001(\005\"$\n\017CSExplodeSettle\022\021\n\tso"
-  "urceUID\030\001 \001(\005\"V\n\017SCExplodeSettle\022\r\n\005chai"
-  "r\030\001 \001(\005\022\021\n\tsourceUID\030\002 \001(\005\022\021\n\toriginUID\030"
-  "\003 \001(\005\022\016\n\006remain\030\004 \001(\005\"<\n\023CSFallIntoBlack"
-  "Hole\022\022\n\nmonsterUID\030\001 \001(\005\022\021\n\tsourceUID\030\002 "
-  "\001(\005\"K\n\023SCFallIntoBlackHole\022\r\n\005chair\030\001 \001("
-  "\005\022\022\n\nmonsterUID\030\002 \001(\005\022\021\n\tsourceUID\030\003 \001(\005"
-  "\"C\n\022CSSyncBlackHolePos\022\021\n\tsourceUID\030\001 \001("
-  "\005\022\032\n\003pos\030\002 \001(\0132\r.PlaneWar.Pos\"R\n\022SCSyncB"
-  "lackHolePos\022\r\n\005chair\030\001 \001(\005\022\021\n\tsourceUID\030"
-  "\002 \001(\005\022\032\n\003pos\030\003 \001(\0132\r.PlaneWar.Pos\"2\n\rCSI"
-  "nteraction\022\023\n\013targetChair\030\001 \001(\005\022\014\n\004type\030"
-  "\002 \001(\005\"k\n\rSCInteraction\022\023\n\013sourceChair\030\001 "
-  "\001(\005\022\023\n\013targetChair\030\002 \001(\005\022\014\n\004type\030\003 \001(\005\022\020"
-  "\n\010cooldown\030\004 \001(\005\022\020\n\010curMoney\030\005 \001(\003\"m\n\rJu"
-  "mpHighArena\022\016\n\006isOpen\030\001 \001(\010\022\013\n\003vip\030\002 \001(\005"
-  "\022\014\n\004coin\030\003 \001(\005\022\020\n\010gameTime\030\004 \001(\005\022\014\n\004tips"
-  "\030\005 \001(\t\022\021\n\tmonsterId\030\006 \003(\005\".\n\016PoolArenaLi"
-  "mit\022\r\n\005level\030\001 \001(\005\022\r\n\005arena\030\002 \001(\005\"s\n\016SCA"
-  "ctivityInfo\022%\n\004jump\030\001 \001(\0132\027.PlaneWar.Jum"
-  "pHighArena\022\r\n\005limit\030\002 \001(\005\022+\n\tpoolLimit\030\003"
-  " \003(\0132\030.PlaneWar.PoolArenaLimit\"\021\n\017CSGetT"
-  "askReward\"B\n\017SCGetTaskReward\022\020\n\010gunRatio"
-  "\030\001 \001(\005\022\r\n\005award\030\002 \001(\005\022\016\n\006ticket\030\003 \001(\005\"\017\n"
-  "\rCSGetTaskInfo\"\233\001\n\rSCGetTaskInfo\022\020\n\010gunR"
-  "atio\030\001 \001(\005\022\016\n\006curNum\030\002 \001(\005\022\020\n\010totalNum\030\003"
-  " \001(\005\022\020\n\010vipLevel\030\004 \001(\005\022\020\n\010isUnlock\030\005 \001(\005"
-  "\022\r\n\005award\030\006 \001(\005\022\023\n\013isVipUnlock\030\007 \001(\010\022\016\n\006"
-  "ticket\030\010 \001(\005\"i\n\022SCNoticeInfoChange\022\026\n\016is"
-  "CompleteTask\030\001 \001(\010\022*\n\013missileList\030\002 \003(\0132"
-  "\025.PlaneWar.MissileInfo\022\017\n\007callNum\030\003 \001(\005\""
-  "5\n\010ProsInfo\022\n\n\002id\030\001 \001(\005\022\016\n\006change\030\002 \001(\005\022"
-  "\r\n\005value\030\003 \001(\005\"M\n\026SCNoticeHallProsChange"
-  "\022\r\n\005chair\030\001 \001(\005\022$\n\010prosList\030\002 \003(\0132\022.Plan"
-  "eWar.ProsInfo\"(\n\rTimingMonster\022\013\n\003sec\030\001 "
-  "\001(\005\022\n\n\002id\030\002 \001(\005\"F\n\025SCNoticeTimingMonster"
-  "\022-\n\014monster_list\030\001 \003(\0132\027.PlaneWar.Timing"
-  "Monster\"!\n\017CSPiggyBankInfo\022\016\n\006isOpen\030\001 \001"
-  "(\010\"X\n\017SCPiggyBankInfo\022\r\n\005chair\030\001 \001(\005\022\016\n\006"
-  "isOpen\030\002 \001(\010\022&\n\tpiggyInfo\030\003 \001(\0132\023.PlaneW"
-  "ar.PiggyInfo\")\n\013PiggyReward\022\n\n\002id\030\001 \001(\005\022"
-  "\016\n\006reward\030\002 \001(\005\"\021\n\017CSOpenPiggyBank\"]\n\017SC"
-  "OpenPiggyBank\022\r\n\005chair\030\001 \001(\005\022)\n\nrewardLi"
-  "st\030\002 \003(\0132\025.PlaneWar.PiggyReward\022\020\n\010curMo"
-  "ney\030\003 \001(\005\"\027\n\025CSPiggyBankOpenFinish\"&\n\025SC"
-  "PiggyBankOpenFinish\022\r\n\005chair\030\001 \001(\005\"A\n\027SC"
-  "PiggyBankChangeNotify\022&\n\tpiggyInfo\030\001 \001(\013"
-  "2\023.PlaneWar.PiggyInfo\")\n\027CSSetPersonalPo"
-  "olEnable\022\016\n\006enable\030\001 \001(\010\")\n\027SCSetPersona"
-  "lPoolEnable\022\016\n\006enable\030\001 \001(\010\"$\n\022CSPersona"
-  "lPoolInfo\022\016\n\006isOpen\030\001 \001(\010\"[\n\022PersonalPoo"
-  "lReward\022\014\n\004type\030\001 \001(\005\022\n\n\002id\030\002 \001(\005\022\013\n\003num"
-  "\030\003 \001(\005\022\020\n\010clientID\030\004 \001(\t\022\014\n\004name\030\005 \001(\t\"}"
-  "\n\025PersonalPoolLevelInfo\022\r\n\005level\030\001 \001(\005\022\023"
-  "\n\013targetValue\030\002 \001(\005\0220\n\nrewardList\030\003 \003(\0132"
-  "\034.PlaneWar.PersonalPoolReward\022\016\n\006reward\030"
-  "\004 \001(\010\"4\n\025PersonalPoolLuckyInfo\022\r\n\005total\030"
-  "\001 \001(\005\022\014\n\004cost\030\002 \001(\005\"\342\001\n\022SCPersonalPoolIn"
-  "fo\022\r\n\005chair\030\001 \001(\005\022\016\n\006isOpen\030\002 \001(\010\022\016\n\006ena"
-  "ble\030\003 \001(\010\022\021\n\tpoolValue\030\004 \001(\005\022\020\n\010maxValue"
-  "\030\005 \001(\005\022\020\n\010curLevel\030\006 \001(\005\0222\n\tlevelList\030\007 "
-  "\003(\0132\037.PlaneWar.PersonalPoolLevelInfo\0222\n\t"
-  "luckyInfo\030\010 \001(\0132\037.PlaneWar.PersonalPoolL"
-  "uckyInfo\"\252\001\n\022CSDrawPersonalPool\022\r\n\005chair"
-  "\030\001 \001(\005\022,\n\006reward\030\002 \001(\0132\034.PlaneWar.Person"
-  "alPoolReward\0220\n\nmissReward\030\003 \001(\0132\034.Plane"
-  "War.PersonalPoolReward\022\020\n\010curMoney\030\004 \001(\003"
-  "\022\023\n\013upgradeCost\030\005 \001(\005\"(\n\023CSUpgradePoolRe"
-  "ward\022\021\n\tisUpgrade\030\001 \001(\010\"\302\001\n\023SCUpgradePoo"
-  "lReward\022\r\n\005chair\030\001 \001(\005\022\016\n\006result\030\002 \001(\005\022\020"
-  "\n\010curMoney\030\003 \001(\003\0220\n\nbaseReward\030\004 \001(\0132\034.P"
-  "laneWar.PersonalPoolReward\0221\n\013extraRewar"
-  "d\030\005 \001(\0132\034.PlaneWar.PersonalPoolReward\022\025\n"
-  "\raddLuckyValue\030\006 \001(\005\"\026\n\024CSGetPoolLuckyRe"
-  "ward\"s\n\024SCGetPoolLuckyReward\022\r\n\005chair\030\001 "
-  "\001(\005\022\020\n\010curMoney\030\002 \001(\003\022\014\n\004cost\030\003 \001(\005\022,\n\nr"
-  "ewardList\030\004 \003(\0132\030.PlaneWar.CommonPropInf"
-  "o\"w\n\032SCPersonalPoolChangeNotify\022\016\n\006enabl"
-  "e\030\001 \001(\010\022\020\n\010curValue\030\002 \001(\005\022\020\n\010curLevel\030\003 "
-  "\001(\005\022\020\n\010maxValue\030\004 \001(\005\022\023\n\013targetValue\030\005 \001"
-  "(\005\"\032\n\014CSUseMissile\022\n\n\002id\030\001 \001(\005\"^\n\014SCUseM"
-  "issile\022\r\n\005chair\030\001 \001(\005\022\n\n\002id\030\002 \001(\005\022\016\n\006rew"
-  "ard\030\003 \001(\005\022\021\n\tremainNum\030\004 \001(\005\022\020\n\010curMoney"
-  "\030\005 \001(\003\"\017\n\rCSMonsterCall\";\n\rSCMonsterCall"
-  "\022\r\n\005chair\030\001 \001(\005\022\r\n\005count\030\002 \001(\005\022\014\n\004code\030\003"
-  " \001(\005\"\035\n\rCSClickStatic\022\014\n\004type\030\001 \001(\005\"\017\n\rS"
-  "CClickStatic\"G\n\010RankInfo\022\020\n\010playerId\030\001 \001"
-  "(\005\022\r\n\005point\030\002 \001(\005\022\014\n\004nick\030\003 \001(\t\022\014\n\004icon\030"
-  "\004 \001(\t\"E\n\nMyRankInfo\022\014\n\004rank\030\001 \001(\005\022\r\n\005poi"
-  "nt\030\002 \001(\005\022\014\n\004nick\030\003 \001(\t\022\014\n\004icon\030\004 \001(\t\"\032\n\n"
-  "CSRankList\022\014\n\004type\030\001 \001(\005\"\207\001\n\nSCRankList\022"
-  "\014\n\004type\030\001 \001(\005\022 \n\004rank\030\002 \001(\0132\022.PlaneWar.R"
-  "ankInfo\022$\n\006myRank\030\003 \001(\0132\024.PlaneWar.MyRan"
-  "kInfo\022#\n\007lastTop\030\004 \001(\0132\022.PlaneWar.RankIn"
-  "fo\"F\n\tTitleInfo\022\n\n\002id\030\001 \001(\005\022\016\n\006status\030\002 "
-  "\001(\005\022\014\n\004name\030\003 \001(\t\022\017\n\007endTime\030\004 \001(\005\"N\n\013SC"
-  "TitleList\022&\n\ttitleList\030\001 \003(\0132\023.PlaneWar."
-  "TitleInfo\022\027\n\017selectedTitleId\030\002 \001(\005\"\033\n\rCS"
-  "SelectTitle\022\n\n\002id\030\001 \001(\005\"*\n\rSCSelectTitle"
-  "\022\n\n\002id\030\001 \001(\005\022\r\n\005chair\030\002 \001(\005\"!\n\023SCTitleAc"
-  "tiveNotify\022\n\n\002id\030\001 \001(\005\">\n\026SCRoomInfoChan"
-  "geNotify\022$\n\010roomInfo\030\001 \001(\0132\022.PlaneWar.Ro"
-  "omInfo\"\016\n\014CSMatchBrief\"\264\001\n\014SCMatchBrief\022"
-  "\016\n\006status\030\001 \001(\005\022\021\n\tmatchType\030\002 \001(\005\022\021\n\tma"
-  "tchName\030\003 \001(\t\022\021\n\tcountDown\030\004 \001(\005\022\020\n\010tota"
-  "lNum\030\005 \001(\005\022\021\n\trewardNum\030\006 \001(\005\022\016\n\006myRank\030"
-  "\007 \001(\005\022\017\n\007myPoint\030\010 \001(\005\022\025\n\rnextRankPoint\030"
-  "\t \001(\005\"\017\n\rCSMatchDetail\"X\n\014MatchSubInfo\022\017"
-  "\n\007inMatch\030\001 \001(\010\022\024\n\014subMatchName\030\002 \001(\t\022\017\n"
-  "\007jackpot\030\003 \001(\005\022\020\n\010totalNum\030\004 \001(\005\"*\n\017Matc"
-  "hRewardItem\022\n\n\002id\030\001 \001(\005\022\013\n\003num\030\002 \001(\005\"\261\001\n"
-  "\rMatchRankInfo\022\020\n\010playerId\030\001 \001(\005\022\r\n\005poin"
-  "t\030\002 \001(\005\022\014\n\004nick\030\003 \001(\t\022\014\n\004icon\030\004 \001(\t\022\014\n\004r"
-  "ank\030\005 \001(\005\022\022\n\npointBonus\030\006 \001(\005\022\022\n\nmoneyBo"
-  "nus\030\007 \001(\005\022-\n\nrewardList\030\010 \001(\0132\031.PlaneWar"
-  ".MatchRewardItem\";\n\tMatchTask\022\016\n\006status\030"
-  "\001 \001(\005\022\016\n\006target\030\002 \001(\005\022\016\n\006reward\030\003 \001(\005\"\334\001"
-  "\n\rSCMatchDetail\022+\n\013subInfoList\030\001 \003(\0132\026.P"
-  "laneWar.MatchSubInfo\022)\n\010rankList\030\002 \003(\0132\027"
-  ".PlaneWar.MatchRankInfo\022\'\n\006myRank\030\003 \001(\0132"
-  "\027.PlaneWar.MatchRankInfo\022\017\n\007tipList\030\004 \003("
-  "\005\022\022\n\nluckyStage\030\005 \003(\005\022%\n\010taskList\030\006 \003(\0132"
-  "\023.PlaneWar.MatchTask\"\017\n\rCSMatchReward\"U\n"
-  "\nRankReward\022\014\n\004from\030\001 \001(\005\022\n\n\002to\030\002 \001(\005\022-\n"
-  "\nrewardList\030\003 \001(\0132\031.PlaneWar.MatchReward"
-  "Item\"R\n\rSCMatchReward\022,\n\016rankRewardList\030"
-  "\001 \003(\0132\024.PlaneWar.RankReward\022\023\n\013luckyRewa"
-  "rd\030\002 \003(\005\"n\n\rMyMatchReward\022\014\n\004rank\030\001 \001(\005\022"
-  "+\n\010myReward\030\002 \003(\0132\031.PlaneWar.MatchReward"
-  "Item\022\r\n\005bonus\030\003 \001(\005\022\023\n\013luckyReward\030\004 \001(\005"
-  "\"m\n\023SCMatchRewardNotify\022+\n\nrewardList\030\001 "
-  "\001(\0132\027.PlaneWar.MatchRankInfo\022)\n\010myReward"
-  "\030\002 \001(\0132\027.PlaneWar.MyMatchReward\"\014\n\nCSGif"
-  "tList\"d\n\010GiftInfo\022\n\n\002id\030\001 \001(\005\022\022\n\npointBo"
-  "nus\030\002 \001(\005\022\022\n\nmoneyBonus\030\003 \001(\005\022\016\n\006canBuy\030"
-  "\004 \001(\010\022\024\n\014buyCountDown\030\005 \001(\005\"2\n\nSCGiftLis"
-  "t\022$\n\010giftList\030\001 \003(\0132\022.PlaneWar.GiftInfo\""
-  "1\n\022SCGiftExpireNotify\022\016\n\006giftID\030\001 \001(\005\022\013\n"
-  "\003msg\030\002 \001(\t\"%\n\024CSGetMatchTaskReward\022\r\n\005in"
-  "dex\030\001 \001(\005\"5\n\024SCGetMatchTaskReward\022\r\n\005ind"
-  "ex\030\001 \001(\005\022\016\n\006reward\030\002 \001(\005\"&\n\022WeaponUseCon"
-  "dition\022\020\n\010vipLevel\030\001 \001(\005\"_\n\014WeaponConfig"
-  "\022\020\n\010weaponID\030\001 \001(\005\022\014\n\004name\030\002 \001(\t\022/\n\tcond"
-  "ition\030\003 \001(\0132\034.PlaneWar.WeaponUseConditio"
-  "n\"\'\n\021CSWeaponPieceInfo\022\022\n\nisBrowsing\030\001 \001"
-  "(\010\"R\n\024PiecesStackLimitInfo\022\024\n\014fromVipLev"
-  "el\030\001 \001(\005\022\022\n\ntoVipLevel\030\002 \001(\005\022\020\n\010stackNum"
-  "\030\003 \001(\005\"\302\001\n\021SCWeaponPieceInfo\022\022\n\nisBrowsi"
-  "ng\030\001 \001(\010\022\r\n\005chair\030\002 \001(\005\022&\n\tpieceInfo\030\003 \001"
-  "(\0132\023.PlaneWar.PieceInfo\022*\n\nconfigList\030\004 "
-  "\003(\0132\026.PlaneWar.WeaponConfig\0226\n\016stackLimi"
-  "tList\030\005 \003(\0132\036.PlaneWar.PiecesStackLimitI"
-  "nfo\"\r\n\013CSBuyWeapon\"\261\001\n\013SCBuyWeapon\022\r\n\005ch"
-  "air\030\001 \001(\005\022\020\n\010weaponID\030\002 \001(\005\022(\n\nweaponInf"
-  "o\030\003 \001(\0132\024.PlaneWar.WeaponInfo\022&\n\tpieceIn"
-  "fo\030\004 \001(\0132\023.PlaneWar.PieceInfo\022/\n\tconditi"
-  "on\030\005 \001(\0132\034.PlaneWar.WeaponUseCondition\"|"
-  "\n\nEarnRecord\022\020\n\010playerID\030\001 \001(\005\022\014\n\004nick\030\002"
-  " \001(\t\022\014\n\004icon\030\003 \001(\t\022\020\n\010vipLevel\030\004 \001(\005\022\022\n\n"
-  "weaponName\030\005 \001(\t\022\014\n\004time\030\006 \001(\005\022\014\n\004earn\030\007"
-  " \001(\005\"\"\n\022CSWeaponEarnRecord\022\014\n\004page\030\001 \001(\005"
-  "\"L\n\022SCWeaponEarnRecord\022(\n\nrecordList\030\001 \003"
-  "(\0132\024.PlaneWar.EarnRecord\022\014\n\004page\030\002 \001(\005\"\'"
-  "\n\022CSStateForceSettle\022\021\n\tsourceUID\030\001 \001(\005\""
-  "Y\n\022SCStateForceSettle\022\r\n\005chair\030\001 \001(\005\022\021\n\t"
-  "sourceUID\030\002 \001(\005\022\021\n\toriginUID\030\003 \001(\005\022\016\n\006re"
-  "main\030\004 \001(\005\"Y\n\021SCAddMissedBullet\022\r\n\005chair"
-  "\030\001 \001(\005\022\022\n\nbulletType\030\002 \001(\005\022\021\n\tsourceUID\030"
-  "\003 \001(\005\022\016\n\006addNum\030\004 \001(\005\"n\n\022CSUpdateBulletD"
-  "ata\022\r\n\005angle\030\001 \001(\002\022\022\n\nbulletType\030\002 \001(\005\022\021"
-  "\n\tsourceUID\030\003 \001(\005\022\016\n\006confID\030\004 \001(\005\022\022\n\nisS"
-  "hooting\030\005 \001(\010\"}\n\022SCUpdateBulletData\022\r\n\005c"
-  "hair\030\001 \001(\005\022\r\n\005angle\030\002 \001(\002\022\022\n\nbulletType\030"
-  "\003 \001(\005\022\021\n\tsourceUID\030\004 \001(\005\022\016\n\006confID\030\005 \001(\005"
-  "\022\022\n\nisShooting\030\006 \001(\010\"\023\n\021CSUseMissileBatc"
-  "h\"w\n\021SCUseMissileBatch\022\r\n\005chair\030\001 \001(\005\022\023\n"
-  "\013totalReward\030\002 \001(\005\022\020\n\010curMoney\030\003 \001(\003\022,\n\r"
-  "remainMissile\030\004 \003(\0132\025.PlaneWar.MissileIn"
-  "fo\"\023\n\021CSSyncPropsToHall\"\023\n\021SCSyncPropsTo"
-  "Hall\"\017\n\rCSChangeTable\"\017\n\rSCChangeTable\"\033"
-  "\n\rCSUseRoulette\022\n\n\002iD\030\001 \001(\005\"\222\001\n\rSCUseRou"
-  "lette\022\r\n\005chair\030\001 \001(\005\022\n\n\002id\030\002 \001(\005\022\017\n\007cost"
-  "Num\030\003 \001(\005\022\r\n\005ratio\030\004 \001(\005\022$\n\010roulette\030\005 \001"
-  "(\0132\022.PlaneWar.Roulette\022\016\n\006reward\030\006 \001(\005\022\020"
-  "\n\010curMoney\030\007 \001(\003\"\024\n\022CSRedEnvelopePoint\"N"
-  "\n\013RedOpenInfo\022\'\n\006status\030\001 \001(\0162\027.PlaneWar"
-  ".RedOpenStatus\022\026\n\016unLockVipLevel\030\002 \001(\005\"w"
-  "\n\022SCRedEnvelopePoint\022\020\n\010curPoint\030\001 \001(\005\022\020"
-  "\n\010maxPoint\030\002 \001(\005\022\021\n\tcostPoint\030\003 \001(\005\022*\n\013r"
-  "edOpenList\030\004 \003(\0132\025.PlaneWar.RedOpenInfo\""
-  "#\n\021CSRedEnvelopeInfo\022\016\n\006isOpen\030\001 \001(\010\"\027\n\007"
-  "RedInfo\022\014\n\004cost\030\001 \001(\005\"7\n\021SCRedEnvelopeIn"
-  "fo\022\"\n\007redList\030\001 \003(\0132\021.PlaneWar.RedInfo\"\""
-  "\n\021CSOpenRedEnvelope\022\r\n\005index\030\001 \001(\005\"l\n\016Re"
-  "dUpgradeInfo\022\023\n\013leastReward\030\001 \001(\005\022\024\n\014may"
-  "AddReward\030\002 \001(\005\022\025\n\rmaxUpgradeNum\030\003 \001(\005\022\030"
-  "\n\020remainUpgradeNum\030\004 \001(\005\"m\n\021SCOpenRedEnv"
-  "elope\022\021\n\trawReward\030\001 \001(\005\022\026\n\016grantThresho"
-  "ld\030\002 \001(\005\022-\n\013upgradeInfo\030\003 \001(\0132\030.PlaneWar"
-  ".RedUpgradeInfo\")\n\024CSUpgradeRedEnvelope\022"
-  "\021\n\tisUpgrade\030\001 \001(\010\"\257\001\n\024SCUpgradeRedEnvel"
-  "ope\022*\n\006result\030\001 \001(\0162\032.PlaneWar.UpgradeRe"
-  "dResult\022\021\n\tcurReward\030\002 \001(\005\022\026\n\016grantThres"
-  "hold\030\003 \001(\005\022\021\n\taddReward\030\004 \001(\005\022-\n\013upgrade"
-  "Info\030\005 \001(\0132\030.PlaneWar.RedUpgradeInfo\")\n\027"
-  "CSCommonRedEnvelopeInfo\022\016\n\006isOpen\030\001 \001(\010\""
-  "\214\001\n\rCommonRedInfo\022\n\n\002id\030\001 \001(\t\022\016\n\006reward\030"
-  "\002 \001(\005\022\016\n\006expire\030\003 \001(\005\022\030\n\020sourcePlayerNic"
-  "k\030\004 \001(\t\022\022\n\ntryOpenNum\030\005 \001(\005\022\014\n\004cost\030\006 \001("
-  "\005\022\023\n\013isSelfGrant\030\007 \001(\010\"\232\001\n\027SCCommonRedEn"
-  "velopeInfo\022(\n\007redList\030\001 \003(\0132\027.PlaneWar.C"
-  "ommonRedInfo\022\026\n\016grantThreshold\030\002 \001(\005\022\022\n\n"
-  "maxShowNum\030\003 \001(\005\022\022\n\nmaxOpenNum\030\004 \001(\005\022\025\n\r"
-  "remainOpenNum\030\005 \001(\005\"%\n\027CSOpenCommonRedEn"
-  "velope\022\n\n\002id\030\001 \001(\t\"\\\n\027SCOpenCommonRedEnv"
-  "elope\022\n\n\002id\030\001 \001(\t\022\016\n\006result\030\002 \001(\010\022\025\n\rrem"
-  "ainOpenNum\030\003 \001(\005\022\016\n\006reward\030\004 \001(\005\"S\n\021RedR"
-  "ankPlayerInfo\022\020\n\010playerID\030\001 \001(\005\022\014\n\004nick\030"
-  "\002 \001(\t\022\014\n\004icon\030\003 \001(\t\022\020\n\010vipLevel\030\004 \001(\005\"8\n"
-  "\034CSGrantCommonRedEnvelopeRank\022\014\n\004from\030\001 "
-  "\001(\005\022\n\n\002to\030\002 \001(\005\"r\n\rGrantRankItem\022\014\n\004rank"
-  "\030\001 \001(\005\022/\n\nplayerInfo\030\002 \001(\0132\033.PlaneWar.Re"
-  "dRankPlayerInfo\022\022\n\nupgradeNum\030\003 \001(\005\022\016\n\006r"
-  "eward\030\004 \001(\005\"t\n\034SCGrantCommonRedEnvelopeR"
-  "ank\022)\n\010rankList\030\001 \003(\0132\027.PlaneWar.GrantRa"
-  "nkItem\022)\n\010selfRank\030\002 \001(\0132\027.PlaneWar.Gran"
-  "tRankItem\"7\n\033CSOpenCommonRedEnvelopeRank"
-  "\022\014\n\004from\030\001 \001(\005\022\n\n\002to\030\002 \001(\005\"s\n\014OpenRankIt"
-  "em\022\014\n\004rank\030\001 \001(\005\022/\n\nplayerInfo\030\002 \001(\0132\033.P"
-  "laneWar.RedRankPlayerInfo\022\023\n\013totalReward"
-  "\030\003 \001(\005\022\017\n\007openNum\030\004 \001(\005\"q\n\033SCOpenCommonR"
-  "edEnvelopeRank\022(\n\010rankList\030\001 \003(\0132\026.Plane"
-  "War.OpenRankItem\022(\n\010selfRank\030\002 \001(\0132\026.Pla"
-  "neWar.OpenRankItem\" \n\036CSGrantCommonRedEn"
-  "velopeRecord\"\206\001\n\013GrantRecord\022\021\n\tgrantTim"
-  "e\030\001 \001(\005\022\022\n\nexpireTime\030\002 \001(\005\022\016\n\006reward\030\003 "
-  "\001(\005\022(\n\006status\030\004 \001(\0162\030.PlaneWar.GrantRedS"
-  "tatus\022\026\n\016openPlayerNick\030\005 \001(\t\"K\n\036SCGrant"
-  "CommonRedEnvelopeRecord\022)\n\nrecordList\030\001 "
-  "\003(\0132\025.PlaneWar.GrantRecord\"\037\n\035CSOpenComm"
-  "onRedEnvelopeRecord\"H\n\nOpenRecord\022\030\n\020sou"
-  "rcePlayerNick\030\001 \001(\t\022\016\n\006reward\030\002 \001(\005\022\020\n\010o"
-  "penTime\030\003 \001(\005\"`\n\035SCOpenCommonRedEnvelope"
-  "Record\022(\n\nrecordList\030\001 \003(\0132\024.PlaneWar.Op"
-  "enRecord\022\025\n\rshowRecordNum\030\002 \001(\005\"\244\001\n\033SCRe"
-  "dEnvelopeOpStatusNotify\022\r\n\005chair\030\001 \001(\005\022%"
-  "\n\006status\030\002 \001(\0162\025.PlaneWar.RedOpStatus\022\020\n"
-  "\010curMoney\030\003 \001(\003\022-\n\013upgradeInfo\030\004 \001(\0132\030.P"
-  "laneWar.RedUpgradeInfo\022\016\n\006reward\030\005 \001(\005\"u"
-  "\n\021CSSyncWeaponState\022\020\n\010weaponId\030\001 \001(\005\022\017\n"
-  "\007chairId\030\002 \001(\005\022\021\n\tweaponUID\030\003 \001(\005\022*\n\013wea"
-  "ponState\030\004 \001(\0132\025.PlaneWar.WeaponState\"\023\n"
-  "\021SCSyncWeaponState\"@\n\010CSPreHit\022\r\n\005ratio\030"
-  "\001 \001(\005\022\022\n\nbulletType\030\002 \001(\005\022\021\n\tsourceUID\030\003"
-  " \001(\005\"A\n\010SCPreHit\022\021\n\tweaponUID\030\001 \001(\005\022\"\n\007h"
-  "itMode\030\002 \001(\0132\021.PlaneWar.HitMode\"\274\002\n\tAnim"
-  "ation\022\023\n\013animationID\030\001 \001(\005\022\024\n\014animationM"
-  "sg\030\002 \001(\t\022\r\n\005chair\030\003 \001(\005\022\022\n\nmonsterUID\030\004 "
-  "\001(\005\022\022\n\nbulletType\030\005 \001(\005\022\014\n\004earn\030\006 \001(\005\022\021\n"
-  "\toriginUID\030\007 \001(\005\022\024\n\014multipleList\030\010 \003(\005\022\r"
-  "\n\005ratio\030\t \001(\005\022/\n\013fortuneJson\030\n \001(\0132\032.Pla"
-  "neWar.FortuneWheelJson\0220\n\016goldenToadJson"
-  "\030\013 \001(\0132\030.PlaneWar.GoldenToadJson\022$\n\010dice"
-  "Json\030\014 \001(\0132\022.PlaneWar.DiceJson\"z\n\010DiceJs"
-  "on\022\014\n\004step\030\001 \001(\005\022\034\n\004dice\030\002 \003(\0132\016.PlaneWa"
-  "r.Dice\022\037\n\007mulList\030\003 \003(\0132\016.PlaneWar.Dice\022"
-  "!\n\nmulPosList\030\004 \003(\0132\r.PlaneWar.Pos\"L\n\020Fo"
-  "rtuneWheelJson\022*\n\006result\030\001 \003(\0132\032.PlaneWa"
-  "r.FortuneWheelInfo\022\014\n\004site\030\002 \001(\005\"i\n\016Gold"
-  "enToadJson\022&\n\torderList\030\001 \003(\0132\023.PlaneWar"
-  ".OrderData\022\022\n\ntotalRatio\030\002 \001(\005\022\r\n\005ratio\030"
-  "\003 \001(\005\022\014\n\004step\030\004 \001(\005\"(\n\tOrderData\022\014\n\004type"
-  "\030\001 \001(\005\022\r\n\005ratio\030\002 \001(\005\"M\n\017CSSyncAnimation"
-  "\022&\n\tanimation\030\001 \001(\0132\023.PlaneWar.Animation"
-  "\022\022\n\nisComplete\030\002 \001(\010\"M\n\017SCSyncAnimation\022"
-  "&\n\tanimation\030\001 \001(\0132\023.PlaneWar.Animation\022"
-  "\022\n\nisComplete\030\002 \001(\010\":\n\017SCGetAnimations\022\'"
-  "\n\nanimations\030\001 \003(\0132\023.PlaneWar.Animation\""
-  "6\n\017GradeRankDetail\022\021\n\trankIndex\030\001 \001(\005\022\020\n"
-  "\010rankName\030\002 \001(\t\"Z\n\017GradeRankConfig\0222\n\017gr"
-  "adeRankDetail\030\001 \003(\0132\031.PlaneWar.GradeRank"
-  "Detail\022\023\n\013rankListLen\030\002 \001(\005\"S\n\016WareGivin"
-  "gInfo\022\016\n\006propId\030\001 \001(\005\022\020\n\010propName\030\002 \001(\t\022"
-  "\r\n\005ratio\030\003 \001(\002\022\020\n\010noRepeat\030\004 \001(\010\"\274\001\n\010War"
-  "eInfo\022\016\n\006wareId\030\001 \001(\t\0224\n\022wareGivingInfoL"
-  "ist\030\002 \003(\0132\030.PlaneWar.WareGivingInfo\022\020\n\010m"
-  "inMoney\030\003 \001(\005\022\020\n\010maxMoney\030\004 \001(\005\022\r\n\005price"
-  "\030\005 \001(\005\0227\n\025wareGivingProInfoList\030\006 \003(\0132\030."
-  "PlaneWar.WareGivingInfo\"E\n\024ExtraGradeRew"
-  "ardInfo\022\r\n\005title\030\001 \001(\t\022\014\n\004desc\030\002 \001(\t\022\020\n\010"
-  "extraExp\030\003 \001(\002\"\322\001\n\016RankWareConfig\022(\n\014com"
-  "mWareInfo\030\001 \001(\0132\022.PlaneWar.WareInfo\022+\n\017a"
-  "dvanceWareInfo\030\002 \001(\0132\022.PlaneWar.WareInfo"
-  "\022<\n\024extraGradeRewardInfo\030\003 \001(\0132\036.PlaneWa"
-  "r.ExtraGradeRewardInfo\022\024\n\014wareDescList\030\004"
-  " \003(\005\022\025\n\rgradeDescList\030\005 \003(\005\"/\n\nDiceConfi"
-  "g\022\021\n\tratioList\030\001 \003(\005\022\016\n\006maxMul\030\002 \001(\005\"\017\n\r"
-  "CSSyncConfigs\"\241\002\n\rSCSyncConfigs\022.\n\rfortu"
-  "neConfig\030\001 \003(\0132\027.PlaneWar.FortuneConfig\022"
-  "&\n\tbeeConfig\030\002 \001(\0132\023.PlaneWar.BeeConfig\022"
-  ",\n\014replayConfig\030\003 \001(\0132\026.PlaneWar.ReplayC"
-  "onfig\0222\n\017gradeRankConfig\030\004 \001(\0132\031.PlaneWa"
-  "r.GradeRankConfig\022,\n\nwareConfig\030\005 \001(\0132\030."
-  "PlaneWar.RankWareConfig\022(\n\ndiceConfig\030\006 "
-  "\001(\0132\024.PlaneWar.DiceConfig\")\n\024CSConfirmWe"
-  "aponExist\022\021\n\tsourceUID\030\001 \001(\005\"%\n\024SCConfir"
-  "mWeaponExist\022\r\n\005exist\030\001 \001(\010\"0\n\nCSGetVide"
-  "o\022\017\n\007videoId\030\001 \001(\t\022\021\n\tvideoType\030\002 \001(\005\"\322\001"
-  "\n\nSCGetVideo\022.\n\017createdPathList\030\001 \003(\0132\025."
-  "PlaneWar.MonsterPath\022\022\n\nrewardType\030\002 \001(\005"
-  "\022\021\n\ttimestamp\030\003 \001(\003\022\016\n\006reward\030\004 \001(\005\022\r\n\005c"
-  "hair\030\005 \001(\005\022\r\n\005money\030\006 \001(\003\022\r\n\005ratio\030\007 \001(\005"
-  "\022\017\n\007gunType\030\010 \001(\005\022\r\n\005arena\030\t \001(\005\022\020\n\010weap"
-  "onId\030\n \001(\005\"\210\001\n\013VideoCommon\022\016\n\006reward\030\001 \001"
-  "(\005\022\022\n\nrewardType\030\002 \001(\005\022\021\n\ttimestamp\030\003 \001("
-  "\003\022\017\n\007videoId\030\004 \001(\t\022\016\n\006unread\030\005 \001(\010\022\020\n\010we"
-  "aponId\030\006 \001(\005\022\017\n\007arenaId\030\007 \001(\005\"X\n\017GlobalV"
-  "ideoInfo\022\020\n\010niceName\030\001 \001(\t\022\014\n\004self\030\002 \001(\010"
-  "\022%\n\006common\030\003 \001(\0132\025.PlaneWar.VideoCommon\""
-  "E\n\rSelfVideoInfo\022\r\n\005ratio\030\001 \001(\005\022%\n\006commo"
-  "n\030\002 \001(\0132\025.PlaneWar.VideoCommon\"-\n\021CSSelf"
-  "VideoRecord\022\014\n\004from\030\001 \001(\005\022\n\n\002to\030\002 \001(\005\"T\n"
-  "\021SCSelfVideoRecord\022*\n\tvideoList\030\001 \003(\0132\027."
-  "PlaneWar.SelfVideoInfo\022\023\n\013refreshTime\030\002 "
-  "\001(\005\"\'\n\013CSVideoRank\022\014\n\004from\030\001 \001(\005\022\n\n\002to\030\002"
-  " \001(\005\"P\n\013SCVideoRank\022,\n\tvideoList\030\001 \003(\0132\031"
-  ".PlaneWar.GlobalVideoInfo\022\023\n\013refreshTime"
-  "\030\002 \001(\005\"\317\001\n\rReceiveReward\022\016\n\006propId\030\001 \001(\005"
-  "\022\013\n\003num\030\002 \001(\005\022\017\n\007advance\030\003 \001(\010\022\016\n\006minNum"
-  "\030\004 \001(\005\022\016\n\006maxNum\030\005 \001(\005\022\013\n\003box\030\006 \001(\010\022\020\n\010u"
-  "niqueId\030\007 \001(\005\022\014\n\004desc\030\010 \001(\t\022\021\n\ttimeLimit"
-  "\030\t \001(\005\022\r\n\005title\030\n \001(\t\022\020\n\010propType\030\013 \001(\005\022"
-  "\017\n\007special\030\014 \001(\005\"\026\n\024CSReceiveGradeReward"
-  "\"\223\001\n\024SCReceiveGradeReward\0222\n\021receiveRewa"
-  "rdList\030\001 \003(\0132\027.PlaneWar.ReceiveReward\0224\n"
-  "\023unReceiveRewardList\030\002 \003(\0132\027.PlaneWar.Re"
-  "ceiveReward\022\021\n\tseasonEnd\030\003 \001(\010\"`\n\021GradeR"
-  "ewardDetail\022+\n\nrewardInfo\030\001 \001(\0132\027.PlaneW"
-  "ar.ReceiveReward\022\r\n\005reach\030\002 \001(\010\022\017\n\007recei"
-  "ve\030\003 \001(\010\"\237\001\n\017GradeRewardInfo\022\020\n\010rankName"
-  "\030\001 \001(\t\0223\n\016commRewardList\030\002 \003(\0132\033.PlaneWa"
-  "r.GradeRewardDetail\0226\n\021advanceRewardList"
-  "\030\003 \003(\0132\033.PlaneWar.GradeRewardDetail\022\r\n\005f"
-  "irst\030\004 \001(\010\"\205\002\n\rGradeRankInfo\022\023\n\013currentR"
-  "ank\030\001 \001(\005\022\014\n\004star\030\002 \001(\005\022\020\n\010rankName\030\003 \001("
-  "\t\022\023\n\013historyRank\030\004 \001(\005\022\027\n\017historyRankNam"
-  "e\030\005 \001(\t\022\017\n\007kingTag\030\006 \001(\005\022\022\n\ncurrentExp\030\007"
-  " \001(\002\022\017\n\007nextExp\030\010 \001(\002\022\020\n\010extraExp\030\t \001(\002\022"
-  "\022\n\nplayerName\030\n \001(\t\022\025\n\ravailableGift\030\013 \001"
-  "(\005\022\016\n\006isLast\030\014 \001(\010\022\016\n\006isSelf\030\r \001(\010\"%\n\022CS"
-  "GetTableUserInfo\022\017\n\007chairId\030\001 \001(\005\"n\n\022SCG"
-  "etTableUserInfo\022(\n\nplayerInfo\030\001 \001(\0132\024.Pl"
-  "aneWar.PlayerInfo\022.\n\rgradeRankInfo\030\002 \001(\013"
-  "2\027.PlaneWar.GradeRankInfo\"8\n\024CSGetGradeR"
-  "ewardInfo\022\020\n\010startIdx\030\001 \001(\005\022\016\n\006endIdx\030\002 "
-  "\001(\005\"N\n\024SCGetGradeRewardInfo\0226\n\023gradeRewa"
-  "rdInfoList\030\001 \003(\0132\031.PlaneWar.GradeRewardI"
-  "nfo\"\024\n\022CSGetGradeRankInfo\"D\n\022SCGetGradeR"
-  "ankInfo\022.\n\rgradeRankInfo\030\001 \001(\0132\027.PlaneWa"
-  "r.GradeRankInfo\"_\n\rSCRankUpgrade\022.\n\rgrad"
-  "eRankInfo\030\001 \001(\0132\027.PlaneWar.GradeRankInfo"
-  "\022\017\n\007advance\030\002 \001(\010\022\r\n\005chair\030\003 \001(\005\"\024\n\022CSRa"
-  "nkSeasonStatus\"l\n\022SCRankSeasonStatus\022\016\n\006"
-  "enable\030\001 \001(\010\022\021\n\tstartTime\030\002 \001(\005\022\017\n\007endTi"
-  "me\030\003 \001(\005\022\022\n\nseasonName\030\004 \001(\t\022\016\n\006season\030\005"
-  " \001(\005\"\032\n\nSCSyncTime\022\014\n\004time\030\001 \001(\005\"&\n\024SCNo"
-  "ticePropsOverdue\022\016\n\006propId\030\001 \001(\005\"0\n\016Purc"
-  "haseResult\022\016\n\006wareId\030\001 \001(\t\022\016\n\006status\030\002 \001"
-  "(\010\",\n\026CSQueryPackagePurchase\022\022\n\nwareIdLi"
-  "st\030\001 \003(\005\"K\n\026SCQueryPackagePurchase\0221\n\017pu"
-  "rchaseResList\030\001 \003(\0132\030.PlaneWar.PurchaseR"
-  "esult\"(\n\tPropsInfo\022\016\n\006propId\030\001 \001(\005\022\013\n\003nu"
-  "m\030\002 \001(\005\"<\n\022SCGamePurchasePush\022&\n\tpropsLi"
-  "st\030\001 \003(\0132\023.PlaneWar.PropsInfo\"V\n\016Package"
-  "Marquee\022\020\n\010nickname\030\001 \001(\t\022\016\n\006wareId\030\002 \001("
-  "\t\022\"\n\005props\030\003 \001(\0132\023.PlaneWar.PropsInfo\"\027\n"
-  "\025CSQueryPackageMarquee\"c\n\025SCQueryPackage"
-  "Marquee\022\024\n\014marqueeModel\030\001 \001(\t\0224\n\022package"
-  "MarqueeList\030\002 \003(\0132\030.PlaneWar.PackageMarq"
-  "uee\"\034\n\nCSSetWings\022\016\n\006wingId\030\001 \001(\005\"+\n\nSCS"
-  "etWings\022\r\n\005chair\030\001 \001(\005\022\016\n\006wingId\030\002 \001(\005\"\026"
-  "\n\024CSVerifySeasonChange\"\300\001\n\024SCVerifySeaso"
-  "nChange\022\016\n\006change\030\001 \001(\010\0224\n\023beforeGradeRa"
-  "nkInfo\030\002 \001(\0132\027.PlaneWar.GradeRankInfo\0225\n"
-  "\024currentGradeRankInfo\030\003 \001(\0132\027.PlaneWar.G"
-  "radeRankInfo\022\024\n\014beforeSeason\030\004 \001(\005\022\025\n\rcu"
-  "rrentSeason\030\005 \001(\005\"\034\n\032CSExistUnReceiveRan"
-  "kReward\"+\n\032SCExistUnReceiveRankReward\022\r\n"
-  "\005exist\030\001 \001(\010\"(\n\031CSReceiveExtraGradeRewar"
-  "d\022\013\n\003num\030\001 \001(\005\"\\\n\031SCReceiveExtraGradeRew"
-  "ard\0222\n\021receiveRewardList\030\001 \003(\0132\027.PlaneWa"
-  "r.ReceiveReward\022\013\n\003num\030\002 \001(\005\">\n\022CSGetGra"
-  "deRankList\022\014\n\004from\030\001 \001(\005\022\n\n\002to\030\002 \001(\005\022\016\n\006"
-  "season\030\003 \001(\005\"\200\001\n\022SCGetGradeRankList\022.\n\rg"
-  "radeRankList\030\001 \003(\0132\027.PlaneWar.GradeRankI"
-  "nfo\022-\n\014selfRankInfo\030\002 \001(\0132\027.PlaneWar.Gra"
-  "deRankInfo\022\013\n\003ord\030\003 \001(\005\"\036\n\nCSBuyPlane\022\020\n"
-  "\010plane_id\030\001 \001(\005\"\036\n\nSCBuyPlane\022\020\n\010plane_i"
-  "d\030\001 \001(\005\"\036\n\nCSBuyWings\022\020\n\010wings_id\030\001 \001(\005\""
-  "\036\n\nSCBuyWings\022\020\n\010wings_id\030\001 \001(\005\"=\n\017OpenC"
-  "hestReward\022\n\n\002id\030\001 \001(\005\022\036\n\003num\030\002 \001(\0132\021.Pl"
-  "aneWar.Decimal\"\253\001\n\023SCUpdateChestStatus\022\021"
-  "\n\tis_active\030\001 \001(\010\022\'\n\nchest_type\030\002 \001(\0162\023."
-  "PlaneWar.ChestType\022\026\n\016total_progress\030\003 \001"
-  "(\005\022\027\n\017remain_progress\030\004 \001(\005\022\r\n\005guide\030\005 \001"
-  "(\010\022\030\n\020available_reward\030\006 \001(\005\"`\n\nChestBri"
-  "ef\022\'\n\nchest_type\030\001 \001(\0162\023.PlaneWar.ChestT"
-  "ype\022)\n\006reward\030\002 \003(\0132\031.PlaneWar.OpenChest"
-  "Reward\"\300\001\n\rSCChestConfig\022\020\n\010end_time\030\001 \001"
-  "(\005\022.\n\020chest_brief_list\030\002 \003(\0132\024.PlaneWar."
-  "ChestBrief\022\021\n\tmin_ratio\030\003 \001(\005\022\021\n\tauto_op"
-  "en\030\004 \001(\010\0224\n\013auto_option\030\005 \001(\0162\037.PlaneWar"
-  ".ChestAutoSelectOption\022\021\n\tis_enable\030\006 \001("
-  "\010\"s\n\013SCOpenChest\022.\n\013reward_list\030\001 \003(\0132\031."
-  "PlaneWar.OpenChestReward\0224\n\013auto_option\030"
-  "\002 \001(\0162\037.PlaneWar.ChestAutoSelectOption\"V"
-  "\n\023CSSelectChestReward\022\024\n\014select_index\030\001 "
-  "\001(\005\022)\n\006reward\030\002 \001(\0132\031.PlaneWar.OpenChest"
-  "Reward\"_\n\024CSChestSetAutoSelect\0224\n\013auto_o"
-  "ption\030\001 \001(\0162\037.PlaneWar.ChestAutoSelectOp"
-  "tion\022\021\n\tauto_open\030\002 \001(\010\"_\n\024SCChestSetAut"
-  "oSelect\0224\n\013auto_option\030\001 \001(\0162\037.PlaneWar."
-  "ChestAutoSelectOption\022\021\n\tauto_open\030\002 \001(\010"
-  "\"%\n\020CSChestSetEnable\022\021\n\tis_enable\030\001 \001(\010\""
-  "%\n\020SCChestSetEnable\022\021\n\tis_enable\030\001 \001(\010\"K"
-  "\n\017SCWaterDropInfo\022\016\n\006enable\030\001 \001(\010\022\021\n\tdro"
-  "pCount\030\002 \001(\005\022\025\n\rfragmentCount\030\003 \001(\005\"\'\n\010T"
-  "extInfo\022\r\n\005index\030\001 \001(\005\022\014\n\004text\030\002 \001(\t\"4\n\020"
-  "CSSyncTextConfig\022\020\n\010startIdx\030\001 \001(\005\022\016\n\006en"
-  "dIdx\030\002 \001(\005\"8\n\020SCSyncTextConfig\022$\n\010textLi"
-  "st\030\001 \003(\0132\022.PlaneWar.TextInfo*\254\022\n\rEMsgIDS"
-  "ubGame\022\t\n\005Login\020\000\022\n\n\006Logout\020\002\022\t\n\005Ready\020\003"
-  "\022\020\n\014MonsterSpawn\020\004\022\010\n\004Shot\020\005\022\007\n\003Hit\020\006\022\022\n"
-  "\016MonsterDestory\020\007\022\010\n\004Lock\020\010\022\r\n\tTransform"
-  "\020\t\022\020\n\014PlanePosSync\020\n\022\014\n\010StateEnd\020\013\022\014\n\010Mo"
-  "dRatio\020\014\022\016\n\nGainNotify\020\r\022\016\n\nGainSettle\020\016"
-  "\022\014\n\010SetPlane\020\017\022\023\n\017UserEnterNotify\020\020\022\024\n\020S"
-  "witchBackGround\020\021\022\023\n\017SyncMonsterInfo\020\022\022\023"
-  "\n\017ScratchCardList\020\023\022\022\n\016UseScratchCard\020\024\022"
-  "\021\n\rExplodeSettle\020\025\022\025\n\021FallIntoBlackHole\020"
-  "\026\022\024\n\020SyncBlackHolePos\020\027\022\017\n\013Interaction\020\030"
-  "\022\020\n\014ActivityInfo\020\031\022\021\n\rGetTaskReward\020\032\022\017\n"
-  "\013GetTaskInfo\020\033\022\024\n\020NoticeInfoChange\020\034\022\030\n\024"
-  "NoticeHallProsChange\020\035\022\027\n\023NoticeTimingMo"
-  "nster\020\036\022\021\n\rPiggyBankInfo\020\037\022\021\n\rOpenPiggyB"
-  "ank\020 \022\027\n\023PiggyBankOpenFinish\020!\022\031\n\025PiggyB"
-  "ankChangeNotify\020\"\022\031\n\025SetPersonalPoolEnab"
-  "le\020#\022\024\n\020PersonalPoolInfo\020$\022\024\n\020DrawPerson"
-  "alPool\020%\022\034\n\030PersonalPoolChangeNotify\020&\022\016"
-  "\n\nUseMissile\020\'\022\017\n\013MonsterCall\020(\022\017\n\013Click"
-  "Static\020)\022\014\n\010RankList\020*\022\020\n\014LastRankList\020+"
-  "\022\r\n\tTitleList\020,\022\017\n\013SelectTitle\020-\022\025\n\021Titl"
-  "eActiveNotify\020.\022\030\n\024RoomInfoChangeNotify\020"
-  "/\022\016\n\nMatchBrief\0200\022\017\n\013MatchDetail\0201\022\017\n\013Ma"
-  "tchReward\0202\022\025\n\021MatchRewardNotify\0203\022\014\n\010Gi"
-  "ftList\0204\022\024\n\020GiftExpireNotify\0205\022\026\n\022GetMat"
-  "chTaskReward\0206\022\023\n\017WeaponPieceInfo\0207\022\r\n\tB"
-  "uyWeapon\0208\022\024\n\020WeaponEarnRecord\0209\022\024\n\020Stat"
-  "eForceSettle\020:\022\023\n\017AddMissedBullet\020;\022\024\n\020U"
-  "pdateBulletData\020<\022\023\n\017UseMissileBatch\020=\022\023"
-  "\n\017SyncPropsToHall\020>\022\017\n\013ChangeTable\020\?\022\025\n\021"
-  "UpgradePoolReward\020@\022\026\n\022GetPoolLuckyRewar"
-  "d\020A\022\017\n\013UseRoulette\020B\022\024\n\020RedEnvelopePoint"
-  "\020C\022\023\n\017RedEnvelopeInfo\020D\022\023\n\017OpenRedEnvelo"
-  "pe\020E\022\026\n\022UpgradeRedEnvelope\020F\022\031\n\025CommonRe"
-  "dEnvelopeInfo\020G\022\031\n\025OpenCommonRedEnvelope"
-  "\020H\022\036\n\032GrantCommonRedEnvelopeRank\020I\022\035\n\031Op"
-  "enCommonRedEnvelopeRank\020J\022 \n\034GrantCommon"
-  "RedEnvelopeRecord\020K\022\037\n\033OpenCommonRedEnve"
-  "lopeRecord\020L\022\035\n\031RedEnvelopeOpStatusNotif"
-  "y\020M\022\023\n\017SyncWeaponState\020N\022\n\n\006PreHit\020O\022\021\n\r"
-  "SyncAnimation\020P\022\021\n\rGetAnimations\020Q\022\017\n\013Sy"
-  "ncConfigs\020R\022\026\n\022ConfirmWeaponExist\020S\022\014\n\010G"
-  "etVideo\020T\022\023\n\017SelfVideoRecord\020U\022\r\n\tVideoR"
-  "ank\020V\022\024\n\020GetGradeRankInfo\020W\022\026\n\022ReceiveGr"
-  "adeReward\020X\022\014\n\010SyncTime\020Y\022\017\n\013RankUpgrade"
-  "\020Z\022\024\n\020RankSeasonStatus\020[\022\026\n\022NoticePropsO"
-  "verdue\020\\\022\030\n\024QueryPackagePurchase\020]\022\014\n\010Se"
-  "tWings\020^\022\024\n\020GetTableUserInfo\020_\022\026\n\022Verify"
-  "SeasonChange\020`\022\034\n\030ExistUnReceiveRankRewa"
-  "rd\020a\022\026\n\022GetGradeRewardInfo\020b\022\024\n\020GamePurc"
-  "hasePush\020c\022\027\n\023QueryPackageMarquee\020d\022\024\n\020G"
-  "etGradeRankList\020e\022\033\n\027ReceiveExtraGradeRe"
-  "ward\020f\022\014\n\010BuyPlane\020g\022\014\n\010BuyWings\020h\022\025\n\021Up"
-  "dateChestStatus\020i\022\017\n\013ChestConfig\020j\022\r\n\tOp"
-  "enChest\020k\022\025\n\021SelectChestReward\020l\022\026\n\022Ches"
-  "tSetAutoSelect\020m\022\022\n\016ChestSetEnable\020n\022\021\n\r"
-  "WaterDropInfo\020x\022\022\n\016SyncTextConfig\020y\022\021\n\rF"
-  "inishSpecial\020z\022\026\n\022FinishRecoverScore\020{\022\023"
-  "\n\017MissileFishList\020|*\260\017\n\tErrorCode\022\013\n\007Suc"
-  "cess\020\000\022\t\n\004Fail\020\350\007\022\022\n\rEnterRoomFail\020\351\007\022\025\n"
-  "\020LoadBaseInfoFail\020\352\007\022\024\n\017LoadVipInfoFail\020"
-  "\353\007\022\026\n\021LoadExtraInfoFail\020\354\007\022\026\n\021CreatePlay"
-  "erError\020\355\007\022\023\n\016PlayerNotExist\020\356\007\022\022\n\rTable"
-  "NotExist\020\357\007\022\023\n\016MoneyNotEnough\020\360\007\022\020\n\013Bull"
-  "etError\020\361\007\022\024\n\017MonsterNotExist\020\362\007\022\025\n\020Play"
-  "erNotInTable\020\363\007\022\031\n\024ScratchCardNotEnough\020"
-  "\364\007\022\034\n\027InteractionTypeNotExist\020\365\007\022\033\n\026Inte"
-  "ractionNotCooldown\020\366\007\022\033\n\026InteractionTarg"
-  "etError\020\367\007\022\026\n\021TokenVerifyFailed\020\370\007\022\022\n\rTa"
-  "skNotEnough\020\371\007\022\025\n\020DiamondNotEnough\020\372\007\022\024\n"
-  "\017ConcurrentLogin\020\373\007\022\021\n\014AlreadyLogin\020\374\007\022\021"
-  "\n\014ServerClosed\020\375\007\022\025\n\020MissileNotEnough\020\370\n"
-  "\022\030\n\023PersonalPoolDisable\020\334\013\022\032\n\025PersonalPo"
-  "olNotEnough\020\335\013\022\032\n\025PersonalPoolSaveError\020"
-  "\336\013\022\037\n\032PersonalPoolGetRewardError\020\337\013\022\024\n\017N"
-  "oTmpPoolReward\020\340\013\022\024\n\017PoolUpgradeFail\020\341\013\022"
-  "\034\n\027PoolLuckyValueNotEnough\020\342\013\022\027\n\022PiggyBa"
-  "nkNotEnable\020\354\016\022\026\n\021PiggyBankNoReward\020\355\016\022\031"
-  "\n\024PiggyBankRewardError\020\356\016\022\032\n\025PiggyBankPa"
-  "ckageError\020\357\016\022\022\n\rCallNotEnough\020\320\017\022\033\n\026Cal"
-  "lSpecialMonsterFull\020\321\017\022\033\n\026CallMonsterScr"
-  "eenLimit\020\322\017\022\021\n\014CallCoolDown\020\323\017\022\022\n\rCallEx"
-  "ceedMax\020\324\017\022\022\n\rRankTypeError\020\264\020\022\023\n\016RankIn"
-  "dexError\020\265\020\022\026\n\021TitleConfNotExist\020\230\021\022\023\n\016T"
-  "itleNotActive\020\231\021\022\017\n\nNotInMatch\020\374\021\022\017\n\nNoS"
-  "uchTask\020\375\021\022\026\n\021HaveGotTaskReward\020\376\021\022\023\n\016No"
-  "tAchieveTask\020\377\021\022\031\n\024WeaponPieceNotEnough\020"
-  "\340\022\022\030\n\023GetWeaponRecordFail\020\341\022\022\027\n\022WeaponCo"
-  "nfNotExist\020\342\022\022\022\n\rCantBuyWeapon\020\343\022\022\022\n\rOpe"
-  "nChestFail\020\344\022\022\032\n\025SelectChestRewardFail\020\345"
-  "\022\022\026\n\021RouletteNotEnough\020\304\023\022\031\n\024RouletteCon"
-  "fNotExist\020\305\023\022\"\n\035OpenRedEnvelopePointNotE"
-  "nough\020\250\024\022\036\n\031OpenRedEnvelopeIndexError\020\251\024"
-  "\022\033\n\026NoTmpRedEnvelopeReward\020\252\024\022\"\n\035RedEnve"
-  "lopeUpgradeNumNoEnough\020\253\024\022!\n\034GetCommonRe"
-  "dEnvelopeInfoFail\020\254\024\022&\n!OpenCommonRedEnv"
-  "elopeNumNotEnough\020\255\024\022\036\n\031OpenCommonRedEnv"
-  "elopeFail\020\256\024\022\035\n\030CommonRedEnvelopeInvalid"
-  "\020\257\024\022 \n\033GetRedEnvelopeGrantRankFail\020\260\024\022\037\n"
-  "\032GetRedEnvelopeOpenRankFail\020\261\024\022\"\n\035GetRed"
-  "EnvelopeGrantRecordFail\020\262\024\022!\n\034GetRedEnve"
-  "lopeOpenRecordFail\020\263\024\022\022\n\rVideoNotExist\020\214"
-  "\025\022\023\n\016VideoListLimit\020\215\025\022\023\n\016GradeIsNotOpen"
-  "\020\216\025\022\026\n\021GetGradeInfoError\020\217\025\022\025\n\020WingsNotO"
-  "btained\020\220\025\022\022\n\rUniqueIdError\020\221\025\022\030\n\023Alread"
-  "yReceiveError\020\222\025\022\025\n\020NotEnoughGiftBag\020\223\025\022"
-  "\034\n\027AlreadyHaveThisPropsErr\020\224\025\022\017\n\nPropsId"
-  "Err\020\225\025\022\026\n\021CanNotBuyPropsErr\020\226\025*^\n\rRedOpe"
-  "nStatus\022\017\n\013RedOpenLock\020\000\022\023\n\017RedOpenUnLoc"
-  "ked\020\001\022\024\n\020RedOpenNotActive\020\002\022\021\n\rRedOpenAc"
-  "tive\020\003*K\n\020UpgradeRedResult\022\022\n\016UpgradeAba"
-  "ndon\020\000\022\017\n\013UpgradeFail\020\001\022\022\n\016UpgradeSucces"
-  "s\020\002*b\n\016GrantRedStatus\022\r\n\tRedOpened\020\000\022\017\n\013"
-  "RedNoOpened\020\001\022\016\n\nRedNotShow\020\002\022\020\n\014RedCoun"
-  "tDown\020\003\022\016\n\nRedExpired\020\004*i\n\013RedOpStatus\022\016"
-  "\n\nRedOpClose\020\000\022\r\n\tRedOpOpen\020\001\022\020\n\014RedOpUp"
-  "grade\020\002\022\024\n\020RedOpGrantReward\020\003\022\023\n\017RedOpOp"
-  "enReward\020\004*`\n\tChestType\022\026\n\022ChestTypePorc"
-  "elain\020\000\022\023\n\017ChestTypeBronze\020\001\022\023\n\017ChestTyp"
-  "eSilver\020\002\022\021\n\rChestTypeGold\020\003*A\n\025ChestAut"
-  "oSelectOption\022\010\n\004None\020\000\022\023\n\017RedPacketTick"
-  "et\020\001\022\t\n\005Money\020\002b\006proto3"
+  "ginUID\030\007 \001(\005\022\016\n\006is_end\030\010 \001(\010\"\370\006\n\005SCHit\022\022"
+  "\n\nisCaptured\030\001 \001(\010\022\r\n\005chair\030\002 \001(\005\022\022\n\nmon"
+  "sterUID\030\003 \001(\005\022\r\n\005ratio\030\004 \001(\005\022\022\n\nbulletTy"
+  "pe\030\005 \001(\005\022\014\n\004earn\030\006 \001(\005\022\r\n\005score\030\007 \001(\003\022\021\n"
+  "\tbaseValue\030\010 \001(\005\022\024\n\014multipleList\030\t \003(\005\022("
+  "\n\014dropBuffList\030\n \003(\0132\022.PlaneWar.BuffInfo"
+  "\022.\n\rtriggerBullet\030\013 \003(\0132\027.PlaneWar.Trigg"
+  "erBullet\022&\n\tdropPoker\030\014 \001(\0132\023.PlaneWar.D"
+  "ropPoker\022$\n\010roulette\030\r \001(\0132\022.PlaneWar.Ro"
+  "ulette\022\r\n\005stage\030\016 \001(\005\022\020\n\010dropCard\030\017 \001(\005\022"
+  "\021\n\toriginUID\030\020 \001(\005\022\020\n\010dropCall\030\021 \001(\005\022\027\n\017"
+  "dropWeaponPiece\030\022 \001(\005\022,\n\014treasureList\030\023 "
+  "\003(\0132\026.PlaneWar.TreasureInfo\022\020\n\010weaponID\030"
+  "\024 \001(\005\022(\n\nweaponInfo\030\025 \001(\0132\024.PlaneWar.Wea"
+  "ponInfo\022\"\n\007gunInfo\030\026 \001(\0132\021.PlaneWar.GunI"
+  "nfo\0224\n\020fortuneWheelList\030\027 \003(\0132\032.PlaneWar"
+  ".FortuneWheelInfo\022$\n\010toadInfo\030\030 \001(\0132\022.Pl"
+  "aneWar.ToadInfo\022&\n\tflameInfo\030\031 \001(\0132\023.Pla"
+  "neWar.FlameInfo\022\"\n\007beeInfo\030\032 \001(\0132\021.Plane"
+  "War.BeeInfo\0222\n\017connMonsterInfo\030\033 \001(\0132\031.P"
+  "laneWar.ConnMonsterInfo\022(\n\nspecEffect\030\034 "
+  "\003(\0132\024.PlaneWar.SpecEffect\022$\n\010diceInfo\030\035 "
+  "\001(\0132\022.PlaneWar.DiceInfo\022\016\n\006isProp\030\036 \001(\010\""
+  "&\n\020CSMonsterDestory\022\022\n\nmonsterUID\030\001 \001(\005\""
+  "\022\n\020SCMonsterDestory\"\033\n\013CSTransform\022\014\n\004fo"
+  "rm\030\001 \001(\005\"*\n\013SCTransform\022\r\n\005chair\030\001 \001(\005\022\014"
+  "\n\004form\030\002 \001(\005\",\n\016CSPlanePosSync\022\032\n\003pos\030\001 "
+  "\001(\0132\r.PlaneWar.Pos\";\n\016SCPlanePosSync\022\r\n\005"
+  "chair\030\001 \001(\005\022\032\n\003pos\030\002 \001(\0132\r.PlaneWar.Pos\""
+  "<\n\nSCStateEnd\022\r\n\005chair\030\001 \001(\005\022\014\n\004type\030\002 \001"
+  "(\005\022\021\n\tsourceUID\030\003 \001(\005\"\036\n\nCSModRatio\022\020\n\010m"
+  "odLevel\030\001 \001(\005\"<\n\nSCModRatio\022\r\n\005chair\030\001 \001"
+  "(\005\022\r\n\005ratio\030\002 \001(\005\022\020\n\010isUnlock\030\003 \001(\010\"\273\001\n\014"
+  "SCGainNotify\022\016\n\006source\030\001 \001(\005\022\020\n\010curMoney"
+  "\030\002 \001(\005\022\014\n\004gain\030\003 \001(\005\022\021\n\tcurTicket\030\004 \001(\005\022"
+  "\024\n\014changeTicket\030\005 \001(\005\022\025\n\rchangeDiamond\030\006"
+  " \001(\005\022\022\n\ncurDiamond\030\007 \001(\005\022\'\n\014curRedPacket"
+  "\030\010 \001(\0132\021.PlaneWar.Decimal\"R\n\014SCGainSettl"
+  "e\022\r\n\005chair\030\001 \001(\005\022\021\n\toriginUID\030\002 \001(\005\022\r\n\005r"
+  "atio\030\003 \001(\005\022\021\n\tsourceUID\030\004 \001(\005\"\035\n\nCSSetPl"
+  "ane\022\017\n\007planeID\030\001 \001(\005\",\n\nSCSetPlane\022\r\n\005ch"
+  "air\030\001 \001(\005\022\017\n\007planeID\030\002 \001(\005\"\024\n\022CSSwitchBa"
+  "ckGround\"#\n\022SCSwitchBackGround\022\r\n\005chair\030"
+  "\001 \001(\005\"\254\001\n\013MonsterPath\022&\n\007monster\030\001 \001(\0132\025"
+  ".PlaneWar.MonsterInfo\022\020\n\010configID\030\002 \001(\005\022"
+  "\021\n\tstepIndex\030\003 \001(\005\022\021\n\troadIndex\030\004 \001(\005\022\r\n"
+  "\005moveT\030\005 \001(\002\022\020\n\010dotIndex\030\006 \001(\005\022\r\n\005delay\030"
+  "\007 \001(\002\022\r\n\005stage\030\010 \001(\005\"C\n\021SCSyncMonsterInf"
+  "o\022.\n\017createdPathList\030\001 \003(\0132\025.PlaneWar.Mo"
+  "nsterPath\"-\n\013ScratchInfo\022\014\n\004base\030\001 \001(\005\022\020"
+  "\n\010multiple\030\002 \001(\005\"\023\n\021CSScratchCardList\"J\n"
+  "\021SCScratchCardList\022\013\n\003num\030\001 \001(\005\022(\n\tfirst"
+  "Card\030\002 \001(\0132\025.PlaneWar.ScratchInfo\"\037\n\020CSU"
+  "seScratchCard\022\013\n\003num\030\001 \001(\005\"{\n\020SCUseScrat"
+  "chCard\022\r\n\005chair\030\001 \001(\005\022\'\n\010cardList\030\002 \003(\0132"
+  "\025.PlaneWar.ScratchInfo\022\r\n\005total\030\003 \001(\005\022\016\n"
+  "\006remain\030\004 \001(\005\022\020\n\010curMoney\030\005 \001(\005\"$\n\017CSExp"
+  "lodeSettle\022\021\n\tsourceUID\030\001 \001(\005\"V\n\017SCExplo"
+  "deSettle\022\r\n\005chair\030\001 \001(\005\022\021\n\tsourceUID\030\002 \001"
+  "(\005\022\021\n\toriginUID\030\003 \001(\005\022\016\n\006remain\030\004 \001(\005\"<\n"
+  "\023CSFallIntoBlackHole\022\022\n\nmonsterUID\030\001 \001(\005"
+  "\022\021\n\tsourceUID\030\002 \001(\005\"K\n\023SCFallIntoBlackHo"
+  "le\022\r\n\005chair\030\001 \001(\005\022\022\n\nmonsterUID\030\002 \001(\005\022\021\n"
+  "\tsourceUID\030\003 \001(\005\"C\n\022CSSyncBlackHolePos\022\021"
+  "\n\tsourceUID\030\001 \001(\005\022\032\n\003pos\030\002 \001(\0132\r.PlaneWa"
+  "r.Pos\"R\n\022SCSyncBlackHolePos\022\r\n\005chair\030\001 \001"
+  "(\005\022\021\n\tsourceUID\030\002 \001(\005\022\032\n\003pos\030\003 \001(\0132\r.Pla"
+  "neWar.Pos\"2\n\rCSInteraction\022\023\n\013targetChai"
+  "r\030\001 \001(\005\022\014\n\004type\030\002 \001(\005\"k\n\rSCInteraction\022\023"
+  "\n\013sourceChair\030\001 \001(\005\022\023\n\013targetChair\030\002 \001(\005"
+  "\022\014\n\004type\030\003 \001(\005\022\020\n\010cooldown\030\004 \001(\005\022\020\n\010curM"
+  "oney\030\005 \001(\003\"m\n\rJumpHighArena\022\016\n\006isOpen\030\001 "
+  "\001(\010\022\013\n\003vip\030\002 \001(\005\022\014\n\004coin\030\003 \001(\005\022\020\n\010gameTi"
+  "me\030\004 \001(\005\022\014\n\004tips\030\005 \001(\t\022\021\n\tmonsterId\030\006 \003("
+  "\005\".\n\016PoolArenaLimit\022\r\n\005level\030\001 \001(\005\022\r\n\005ar"
+  "ena\030\002 \001(\005\"s\n\016SCActivityInfo\022%\n\004jump\030\001 \001("
+  "\0132\027.PlaneWar.JumpHighArena\022\r\n\005limit\030\002 \001("
+  "\005\022+\n\tpoolLimit\030\003 \003(\0132\030.PlaneWar.PoolAren"
+  "aLimit\"\021\n\017CSGetTaskReward\"B\n\017SCGetTaskRe"
+  "ward\022\020\n\010gunRatio\030\001 \001(\005\022\r\n\005award\030\002 \001(\005\022\016\n"
+  "\006ticket\030\003 \001(\005\"\017\n\rCSGetTaskInfo\"\233\001\n\rSCGet"
+  "TaskInfo\022\020\n\010gunRatio\030\001 \001(\005\022\016\n\006curNum\030\002 \001"
+  "(\005\022\020\n\010totalNum\030\003 \001(\005\022\020\n\010vipLevel\030\004 \001(\005\022\020"
+  "\n\010isUnlock\030\005 \001(\005\022\r\n\005award\030\006 \001(\005\022\023\n\013isVip"
+  "Unlock\030\007 \001(\010\022\016\n\006ticket\030\010 \001(\005\"i\n\022SCNotice"
+  "InfoChange\022\026\n\016isCompleteTask\030\001 \001(\010\022*\n\013mi"
+  "ssileList\030\002 \003(\0132\025.PlaneWar.MissileInfo\022\017"
+  "\n\007callNum\030\003 \001(\005\"5\n\010ProsInfo\022\n\n\002id\030\001 \001(\005\022"
+  "\016\n\006change\030\002 \001(\005\022\r\n\005value\030\003 \001(\005\"M\n\026SCNoti"
+  "ceHallProsChange\022\r\n\005chair\030\001 \001(\005\022$\n\010prosL"
+  "ist\030\002 \003(\0132\022.PlaneWar.ProsInfo\"(\n\rTimingM"
+  "onster\022\013\n\003sec\030\001 \001(\005\022\n\n\002id\030\002 \001(\005\"F\n\025SCNot"
+  "iceTimingMonster\022-\n\014monster_list\030\001 \003(\0132\027"
+  ".PlaneWar.TimingMonster\"!\n\017CSPiggyBankIn"
+  "fo\022\016\n\006isOpen\030\001 \001(\010\"X\n\017SCPiggyBankInfo\022\r\n"
+  "\005chair\030\001 \001(\005\022\016\n\006isOpen\030\002 \001(\010\022&\n\tpiggyInf"
+  "o\030\003 \001(\0132\023.PlaneWar.PiggyInfo\")\n\013PiggyRew"
+  "ard\022\n\n\002id\030\001 \001(\005\022\016\n\006reward\030\002 \001(\005\"\021\n\017CSOpe"
+  "nPiggyBank\"]\n\017SCOpenPiggyBank\022\r\n\005chair\030\001"
+  " \001(\005\022)\n\nrewardList\030\002 \003(\0132\025.PlaneWar.Pigg"
+  "yReward\022\020\n\010curMoney\030\003 \001(\005\"\027\n\025CSPiggyBank"
+  "OpenFinish\"&\n\025SCPiggyBankOpenFinish\022\r\n\005c"
+  "hair\030\001 \001(\005\"A\n\027SCPiggyBankChangeNotify\022&\n"
+  "\tpiggyInfo\030\001 \001(\0132\023.PlaneWar.PiggyInfo\")\n"
+  "\027CSSetPersonalPoolEnable\022\016\n\006enable\030\001 \001(\010"
+  "\")\n\027SCSetPersonalPoolEnable\022\016\n\006enable\030\001 "
+  "\001(\010\"$\n\022CSPersonalPoolInfo\022\016\n\006isOpen\030\001 \001("
+  "\010\"[\n\022PersonalPoolReward\022\014\n\004type\030\001 \001(\005\022\n\n"
+  "\002id\030\002 \001(\005\022\013\n\003num\030\003 \001(\005\022\020\n\010clientID\030\004 \001(\t"
+  "\022\014\n\004name\030\005 \001(\t\"}\n\025PersonalPoolLevelInfo\022"
+  "\r\n\005level\030\001 \001(\005\022\023\n\013targetValue\030\002 \001(\005\0220\n\nr"
+  "ewardList\030\003 \003(\0132\034.PlaneWar.PersonalPoolR"
+  "eward\022\016\n\006reward\030\004 \001(\010\"4\n\025PersonalPoolLuc"
+  "kyInfo\022\r\n\005total\030\001 \001(\005\022\014\n\004cost\030\002 \001(\005\"\342\001\n\022"
+  "SCPersonalPoolInfo\022\r\n\005chair\030\001 \001(\005\022\016\n\006isO"
+  "pen\030\002 \001(\010\022\016\n\006enable\030\003 \001(\010\022\021\n\tpoolValue\030\004"
+  " \001(\005\022\020\n\010maxValue\030\005 \001(\005\022\020\n\010curLevel\030\006 \001(\005"
+  "\0222\n\tlevelList\030\007 \003(\0132\037.PlaneWar.PersonalP"
+  "oolLevelInfo\0222\n\tluckyInfo\030\010 \001(\0132\037.PlaneW"
+  "ar.PersonalPoolLuckyInfo\"\252\001\n\022CSDrawPerso"
+  "nalPool\022\r\n\005chair\030\001 \001(\005\022,\n\006reward\030\002 \001(\0132\034"
+  ".PlaneWar.PersonalPoolReward\0220\n\nmissRewa"
+  "rd\030\003 \001(\0132\034.PlaneWar.PersonalPoolReward\022\020"
+  "\n\010curMoney\030\004 \001(\003\022\023\n\013upgradeCost\030\005 \001(\005\"(\n"
+  "\023CSUpgradePoolReward\022\021\n\tisUpgrade\030\001 \001(\010\""
+  "\302\001\n\023SCUpgradePoolReward\022\r\n\005chair\030\001 \001(\005\022\016"
+  "\n\006result\030\002 \001(\005\022\020\n\010curMoney\030\003 \001(\003\0220\n\nbase"
+  "Reward\030\004 \001(\0132\034.PlaneWar.PersonalPoolRewa"
+  "rd\0221\n\013extraReward\030\005 \001(\0132\034.PlaneWar.Perso"
+  "nalPoolReward\022\025\n\raddLuckyValue\030\006 \001(\005\"\026\n\024"
+  "CSGetPoolLuckyReward\"s\n\024SCGetPoolLuckyRe"
+  "ward\022\r\n\005chair\030\001 \001(\005\022\020\n\010curMoney\030\002 \001(\003\022\014\n"
+  "\004cost\030\003 \001(\005\022,\n\nrewardList\030\004 \003(\0132\030.PlaneW"
+  "ar.CommonPropInfo\"w\n\032SCPersonalPoolChang"
+  "eNotify\022\016\n\006enable\030\001 \001(\010\022\020\n\010curValue\030\002 \001("
+  "\005\022\020\n\010curLevel\030\003 \001(\005\022\020\n\010maxValue\030\004 \001(\005\022\023\n"
+  "\013targetValue\030\005 \001(\005\"\032\n\014CSUseMissile\022\n\n\002id"
+  "\030\001 \001(\005\"^\n\014SCUseMissile\022\r\n\005chair\030\001 \001(\005\022\n\n"
+  "\002id\030\002 \001(\005\022\016\n\006reward\030\003 \001(\005\022\021\n\tremainNum\030\004"
+  " \001(\005\022\020\n\010curMoney\030\005 \001(\003\"\017\n\rCSMonsterCall\""
+  ";\n\rSCMonsterCall\022\r\n\005chair\030\001 \001(\005\022\r\n\005count"
+  "\030\002 \001(\005\022\014\n\004code\030\003 \001(\005\"\035\n\rCSClickStatic\022\014\n"
+  "\004type\030\001 \001(\005\"\017\n\rSCClickStatic\"G\n\010RankInfo"
+  "\022\020\n\010playerId\030\001 \001(\005\022\r\n\005point\030\002 \001(\005\022\014\n\004nic"
+  "k\030\003 \001(\t\022\014\n\004icon\030\004 \001(\t\"E\n\nMyRankInfo\022\014\n\004r"
+  "ank\030\001 \001(\005\022\r\n\005point\030\002 \001(\005\022\014\n\004nick\030\003 \001(\t\022\014"
+  "\n\004icon\030\004 \001(\t\"\032\n\nCSRankList\022\014\n\004type\030\001 \001(\005"
+  "\"\207\001\n\nSCRankList\022\014\n\004type\030\001 \001(\005\022 \n\004rank\030\002 "
+  "\001(\0132\022.PlaneWar.RankInfo\022$\n\006myRank\030\003 \001(\0132"
+  "\024.PlaneWar.MyRankInfo\022#\n\007lastTop\030\004 \001(\0132\022"
+  ".PlaneWar.RankInfo\"F\n\tTitleInfo\022\n\n\002id\030\001 "
+  "\001(\005\022\016\n\006status\030\002 \001(\005\022\014\n\004name\030\003 \001(\t\022\017\n\007end"
+  "Time\030\004 \001(\005\"N\n\013SCTitleList\022&\n\ttitleList\030\001"
+  " \003(\0132\023.PlaneWar.TitleInfo\022\027\n\017selectedTit"
+  "leId\030\002 \001(\005\"\033\n\rCSSelectTitle\022\n\n\002id\030\001 \001(\005\""
+  "*\n\rSCSelectTitle\022\n\n\002id\030\001 \001(\005\022\r\n\005chair\030\002 "
+  "\001(\005\"!\n\023SCTitleActiveNotify\022\n\n\002id\030\001 \001(\005\">"
+  "\n\026SCRoomInfoChangeNotify\022$\n\010roomInfo\030\001 \001"
+  "(\0132\022.PlaneWar.RoomInfo\"\016\n\014CSMatchBrief\"\264"
+  "\001\n\014SCMatchBrief\022\016\n\006status\030\001 \001(\005\022\021\n\tmatch"
+  "Type\030\002 \001(\005\022\021\n\tmatchName\030\003 \001(\t\022\021\n\tcountDo"
+  "wn\030\004 \001(\005\022\020\n\010totalNum\030\005 \001(\005\022\021\n\trewardNum\030"
+  "\006 \001(\005\022\016\n\006myRank\030\007 \001(\005\022\017\n\007myPoint\030\010 \001(\005\022\025"
+  "\n\rnextRankPoint\030\t \001(\005\"\017\n\rCSMatchDetail\"X"
+  "\n\014MatchSubInfo\022\017\n\007inMatch\030\001 \001(\010\022\024\n\014subMa"
+  "tchName\030\002 \001(\t\022\017\n\007jackpot\030\003 \001(\005\022\020\n\010totalN"
+  "um\030\004 \001(\005\"*\n\017MatchRewardItem\022\n\n\002id\030\001 \001(\005\022"
+  "\013\n\003num\030\002 \001(\005\"\261\001\n\rMatchRankInfo\022\020\n\010player"
+  "Id\030\001 \001(\005\022\r\n\005point\030\002 \001(\005\022\014\n\004nick\030\003 \001(\t\022\014\n"
+  "\004icon\030\004 \001(\t\022\014\n\004rank\030\005 \001(\005\022\022\n\npointBonus\030"
+  "\006 \001(\005\022\022\n\nmoneyBonus\030\007 \001(\005\022-\n\nrewardList\030"
+  "\010 \001(\0132\031.PlaneWar.MatchRewardItem\";\n\tMatc"
+  "hTask\022\016\n\006status\030\001 \001(\005\022\016\n\006target\030\002 \001(\005\022\016\n"
+  "\006reward\030\003 \001(\005\"\334\001\n\rSCMatchDetail\022+\n\013subIn"
+  "foList\030\001 \003(\0132\026.PlaneWar.MatchSubInfo\022)\n\010"
+  "rankList\030\002 \003(\0132\027.PlaneWar.MatchRankInfo\022"
+  "\'\n\006myRank\030\003 \001(\0132\027.PlaneWar.MatchRankInfo"
+  "\022\017\n\007tipList\030\004 \003(\005\022\022\n\nluckyStage\030\005 \003(\005\022%\n"
+  "\010taskList\030\006 \003(\0132\023.PlaneWar.MatchTask\"\017\n\r"
+  "CSMatchReward\"U\n\nRankReward\022\014\n\004from\030\001 \001("
+  "\005\022\n\n\002to\030\002 \001(\005\022-\n\nrewardList\030\003 \001(\0132\031.Plan"
+  "eWar.MatchRewardItem\"R\n\rSCMatchReward\022,\n"
+  "\016rankRewardList\030\001 \003(\0132\024.PlaneWar.RankRew"
+  "ard\022\023\n\013luckyReward\030\002 \003(\005\"n\n\rMyMatchRewar"
+  "d\022\014\n\004rank\030\001 \001(\005\022+\n\010myReward\030\002 \003(\0132\031.Plan"
+  "eWar.MatchRewardItem\022\r\n\005bonus\030\003 \001(\005\022\023\n\013l"
+  "uckyReward\030\004 \001(\005\"m\n\023SCMatchRewardNotify\022"
+  "+\n\nrewardList\030\001 \001(\0132\027.PlaneWar.MatchRank"
+  "Info\022)\n\010myReward\030\002 \001(\0132\027.PlaneWar.MyMatc"
+  "hReward\"\014\n\nCSGiftList\"d\n\010GiftInfo\022\n\n\002id\030"
+  "\001 \001(\005\022\022\n\npointBonus\030\002 \001(\005\022\022\n\nmoneyBonus\030"
+  "\003 \001(\005\022\016\n\006canBuy\030\004 \001(\010\022\024\n\014buyCountDown\030\005 "
+  "\001(\005\"2\n\nSCGiftList\022$\n\010giftList\030\001 \003(\0132\022.Pl"
+  "aneWar.GiftInfo\"1\n\022SCGiftExpireNotify\022\016\n"
+  "\006giftID\030\001 \001(\005\022\013\n\003msg\030\002 \001(\t\"%\n\024CSGetMatch"
+  "TaskReward\022\r\n\005index\030\001 \001(\005\"5\n\024SCGetMatchT"
+  "askReward\022\r\n\005index\030\001 \001(\005\022\016\n\006reward\030\002 \001(\005"
+  "\"&\n\022WeaponUseCondition\022\020\n\010vipLevel\030\001 \001(\005"
+  "\"_\n\014WeaponConfig\022\020\n\010weaponID\030\001 \001(\005\022\014\n\004na"
+  "me\030\002 \001(\t\022/\n\tcondition\030\003 \001(\0132\034.PlaneWar.W"
+  "eaponUseCondition\"\'\n\021CSWeaponPieceInfo\022\022"
+  "\n\nisBrowsing\030\001 \001(\010\"R\n\024PiecesStackLimitIn"
+  "fo\022\024\n\014fromVipLevel\030\001 \001(\005\022\022\n\ntoVipLevel\030\002"
+  " \001(\005\022\020\n\010stackNum\030\003 \001(\005\"\302\001\n\021SCWeaponPiece"
+  "Info\022\022\n\nisBrowsing\030\001 \001(\010\022\r\n\005chair\030\002 \001(\005\022"
+  "&\n\tpieceInfo\030\003 \001(\0132\023.PlaneWar.PieceInfo\022"
+  "*\n\nconfigList\030\004 \003(\0132\026.PlaneWar.WeaponCon"
+  "fig\0226\n\016stackLimitList\030\005 \003(\0132\036.PlaneWar.P"
+  "iecesStackLimitInfo\"\r\n\013CSBuyWeapon\"\261\001\n\013S"
+  "CBuyWeapon\022\r\n\005chair\030\001 \001(\005\022\020\n\010weaponID\030\002 "
+  "\001(\005\022(\n\nweaponInfo\030\003 \001(\0132\024.PlaneWar.Weapo"
+  "nInfo\022&\n\tpieceInfo\030\004 \001(\0132\023.PlaneWar.Piec"
+  "eInfo\022/\n\tcondition\030\005 \001(\0132\034.PlaneWar.Weap"
+  "onUseCondition\"|\n\nEarnRecord\022\020\n\010playerID"
+  "\030\001 \001(\005\022\014\n\004nick\030\002 \001(\t\022\014\n\004icon\030\003 \001(\t\022\020\n\010vi"
+  "pLevel\030\004 \001(\005\022\022\n\nweaponName\030\005 \001(\t\022\014\n\004time"
+  "\030\006 \001(\005\022\014\n\004earn\030\007 \001(\005\"\"\n\022CSWeaponEarnReco"
+  "rd\022\014\n\004page\030\001 \001(\005\"L\n\022SCWeaponEarnRecord\022("
+  "\n\nrecordList\030\001 \003(\0132\024.PlaneWar.EarnRecord"
+  "\022\014\n\004page\030\002 \001(\005\"\'\n\022CSStateForceSettle\022\021\n\t"
+  "sourceUID\030\001 \001(\005\"Y\n\022SCStateForceSettle\022\r\n"
+  "\005chair\030\001 \001(\005\022\021\n\tsourceUID\030\002 \001(\005\022\021\n\torigi"
+  "nUID\030\003 \001(\005\022\016\n\006remain\030\004 \001(\005\"Y\n\021SCAddMisse"
+  "dBullet\022\r\n\005chair\030\001 \001(\005\022\022\n\nbulletType\030\002 \001"
+  "(\005\022\021\n\tsourceUID\030\003 \001(\005\022\016\n\006addNum\030\004 \001(\005\"n\n"
+  "\022CSUpdateBulletData\022\r\n\005angle\030\001 \001(\002\022\022\n\nbu"
+  "lletType\030\002 \001(\005\022\021\n\tsourceUID\030\003 \001(\005\022\016\n\006con"
+  "fID\030\004 \001(\005\022\022\n\nisShooting\030\005 \001(\010\"}\n\022SCUpdat"
+  "eBulletData\022\r\n\005chair\030\001 \001(\005\022\r\n\005angle\030\002 \001("
+  "\002\022\022\n\nbulletType\030\003 \001(\005\022\021\n\tsourceUID\030\004 \001(\005"
+  "\022\016\n\006confID\030\005 \001(\005\022\022\n\nisShooting\030\006 \001(\010\"\023\n\021"
+  "CSUseMissileBatch\"w\n\021SCUseMissileBatch\022\r"
+  "\n\005chair\030\001 \001(\005\022\023\n\013totalReward\030\002 \001(\005\022\020\n\010cu"
+  "rMoney\030\003 \001(\003\022,\n\rremainMissile\030\004 \003(\0132\025.Pl"
+  "aneWar.MissileInfo\"\023\n\021CSSyncPropsToHall\""
+  "\023\n\021SCSyncPropsToHall\"\017\n\rCSChangeTable\"\017\n"
+  "\rSCChangeTable\"\033\n\rCSUseRoulette\022\n\n\002iD\030\001 "
+  "\001(\005\"\222\001\n\rSCUseRoulette\022\r\n\005chair\030\001 \001(\005\022\n\n\002"
+  "id\030\002 \001(\005\022\017\n\007costNum\030\003 \001(\005\022\r\n\005ratio\030\004 \001(\005"
+  "\022$\n\010roulette\030\005 \001(\0132\022.PlaneWar.Roulette\022\016"
+  "\n\006reward\030\006 \001(\005\022\020\n\010curMoney\030\007 \001(\003\"\024\n\022CSRe"
+  "dEnvelopePoint\"N\n\013RedOpenInfo\022\'\n\006status\030"
+  "\001 \001(\0162\027.PlaneWar.RedOpenStatus\022\026\n\016unLock"
+  "VipLevel\030\002 \001(\005\"w\n\022SCRedEnvelopePoint\022\020\n\010"
+  "curPoint\030\001 \001(\005\022\020\n\010maxPoint\030\002 \001(\005\022\021\n\tcost"
+  "Point\030\003 \001(\005\022*\n\013redOpenList\030\004 \003(\0132\025.Plane"
+  "War.RedOpenInfo\"#\n\021CSRedEnvelopeInfo\022\016\n\006"
+  "isOpen\030\001 \001(\010\"\027\n\007RedInfo\022\014\n\004cost\030\001 \001(\005\"7\n"
+  "\021SCRedEnvelopeInfo\022\"\n\007redList\030\001 \003(\0132\021.Pl"
+  "aneWar.RedInfo\"\"\n\021CSOpenRedEnvelope\022\r\n\005i"
+  "ndex\030\001 \001(\005\"l\n\016RedUpgradeInfo\022\023\n\013leastRew"
+  "ard\030\001 \001(\005\022\024\n\014mayAddReward\030\002 \001(\005\022\025\n\rmaxUp"
+  "gradeNum\030\003 \001(\005\022\030\n\020remainUpgradeNum\030\004 \001(\005"
+  "\"m\n\021SCOpenRedEnvelope\022\021\n\trawReward\030\001 \001(\005"
+  "\022\026\n\016grantThreshold\030\002 \001(\005\022-\n\013upgradeInfo\030"
+  "\003 \001(\0132\030.PlaneWar.RedUpgradeInfo\")\n\024CSUpg"
+  "radeRedEnvelope\022\021\n\tisUpgrade\030\001 \001(\010\"\257\001\n\024S"
+  "CUpgradeRedEnvelope\022*\n\006result\030\001 \001(\0162\032.Pl"
+  "aneWar.UpgradeRedResult\022\021\n\tcurReward\030\002 \001"
+  "(\005\022\026\n\016grantThreshold\030\003 \001(\005\022\021\n\taddReward\030"
+  "\004 \001(\005\022-\n\013upgradeInfo\030\005 \001(\0132\030.PlaneWar.Re"
+  "dUpgradeInfo\")\n\027CSCommonRedEnvelopeInfo\022"
+  "\016\n\006isOpen\030\001 \001(\010\"\214\001\n\rCommonRedInfo\022\n\n\002id\030"
+  "\001 \001(\t\022\016\n\006reward\030\002 \001(\005\022\016\n\006expire\030\003 \001(\005\022\030\n"
+  "\020sourcePlayerNick\030\004 \001(\t\022\022\n\ntryOpenNum\030\005 "
+  "\001(\005\022\014\n\004cost\030\006 \001(\005\022\023\n\013isSelfGrant\030\007 \001(\010\"\232"
+  "\001\n\027SCCommonRedEnvelopeInfo\022(\n\007redList\030\001 "
+  "\003(\0132\027.PlaneWar.CommonRedInfo\022\026\n\016grantThr"
+  "eshold\030\002 \001(\005\022\022\n\nmaxShowNum\030\003 \001(\005\022\022\n\nmaxO"
+  "penNum\030\004 \001(\005\022\025\n\rremainOpenNum\030\005 \001(\005\"%\n\027C"
+  "SOpenCommonRedEnvelope\022\n\n\002id\030\001 \001(\t\"\\\n\027SC"
+  "OpenCommonRedEnvelope\022\n\n\002id\030\001 \001(\t\022\016\n\006res"
+  "ult\030\002 \001(\010\022\025\n\rremainOpenNum\030\003 \001(\005\022\016\n\006rewa"
+  "rd\030\004 \001(\005\"S\n\021RedRankPlayerInfo\022\020\n\010playerI"
+  "D\030\001 \001(\005\022\014\n\004nick\030\002 \001(\t\022\014\n\004icon\030\003 \001(\t\022\020\n\010v"
+  "ipLevel\030\004 \001(\005\"8\n\034CSGrantCommonRedEnvelop"
+  "eRank\022\014\n\004from\030\001 \001(\005\022\n\n\002to\030\002 \001(\005\"r\n\rGrant"
+  "RankItem\022\014\n\004rank\030\001 \001(\005\022/\n\nplayerInfo\030\002 \001"
+  "(\0132\033.PlaneWar.RedRankPlayerInfo\022\022\n\nupgra"
+  "deNum\030\003 \001(\005\022\016\n\006reward\030\004 \001(\005\"t\n\034SCGrantCo"
+  "mmonRedEnvelopeRank\022)\n\010rankList\030\001 \003(\0132\027."
+  "PlaneWar.GrantRankItem\022)\n\010selfRank\030\002 \001(\013"
+  "2\027.PlaneWar.GrantRankItem\"7\n\033CSOpenCommo"
+  "nRedEnvelopeRank\022\014\n\004from\030\001 \001(\005\022\n\n\002to\030\002 \001"
+  "(\005\"s\n\014OpenRankItem\022\014\n\004rank\030\001 \001(\005\022/\n\nplay"
+  "erInfo\030\002 \001(\0132\033.PlaneWar.RedRankPlayerInf"
+  "o\022\023\n\013totalReward\030\003 \001(\005\022\017\n\007openNum\030\004 \001(\005\""
+  "q\n\033SCOpenCommonRedEnvelopeRank\022(\n\010rankLi"
+  "st\030\001 \003(\0132\026.PlaneWar.OpenRankItem\022(\n\010self"
+  "Rank\030\002 \001(\0132\026.PlaneWar.OpenRankItem\" \n\036CS"
+  "GrantCommonRedEnvelopeRecord\"\206\001\n\013GrantRe"
+  "cord\022\021\n\tgrantTime\030\001 \001(\005\022\022\n\nexpireTime\030\002 "
+  "\001(\005\022\016\n\006reward\030\003 \001(\005\022(\n\006status\030\004 \001(\0162\030.Pl"
+  "aneWar.GrantRedStatus\022\026\n\016openPlayerNick\030"
+  "\005 \001(\t\"K\n\036SCGrantCommonRedEnvelopeRecord\022"
+  ")\n\nrecordList\030\001 \003(\0132\025.PlaneWar.GrantReco"
+  "rd\"\037\n\035CSOpenCommonRedEnvelopeRecord\"H\n\nO"
+  "penRecord\022\030\n\020sourcePlayerNick\030\001 \001(\t\022\016\n\006r"
+  "eward\030\002 \001(\005\022\020\n\010openTime\030\003 \001(\005\"`\n\035SCOpenC"
+  "ommonRedEnvelopeRecord\022(\n\nrecordList\030\001 \003"
+  "(\0132\024.PlaneWar.OpenRecord\022\025\n\rshowRecordNu"
+  "m\030\002 \001(\005\"\244\001\n\033SCRedEnvelopeOpStatusNotify\022"
+  "\r\n\005chair\030\001 \001(\005\022%\n\006status\030\002 \001(\0162\025.PlaneWa"
+  "r.RedOpStatus\022\020\n\010curMoney\030\003 \001(\003\022-\n\013upgra"
+  "deInfo\030\004 \001(\0132\030.PlaneWar.RedUpgradeInfo\022\016"
+  "\n\006reward\030\005 \001(\005\"u\n\021CSSyncWeaponState\022\020\n\010w"
+  "eaponId\030\001 \001(\005\022\017\n\007chairId\030\002 \001(\005\022\021\n\tweapon"
+  "UID\030\003 \001(\005\022*\n\013weaponState\030\004 \001(\0132\025.PlaneWa"
+  "r.WeaponState\"\023\n\021SCSyncWeaponState\"@\n\010CS"
+  "PreHit\022\r\n\005ratio\030\001 \001(\005\022\022\n\nbulletType\030\002 \001("
+  "\005\022\021\n\tsourceUID\030\003 \001(\005\"A\n\010SCPreHit\022\021\n\tweap"
+  "onUID\030\001 \001(\005\022\"\n\007hitMode\030\002 \001(\0132\021.PlaneWar."
+  "HitMode\"\274\002\n\tAnimation\022\023\n\013animationID\030\001 \001"
+  "(\005\022\024\n\014animationMsg\030\002 \001(\t\022\r\n\005chair\030\003 \001(\005\022"
+  "\022\n\nmonsterUID\030\004 \001(\005\022\022\n\nbulletType\030\005 \001(\005\022"
+  "\014\n\004earn\030\006 \001(\005\022\021\n\toriginUID\030\007 \001(\005\022\024\n\014mult"
+  "ipleList\030\010 \003(\005\022\r\n\005ratio\030\t \001(\005\022/\n\013fortune"
+  "Json\030\n \001(\0132\032.PlaneWar.FortuneWheelJson\0220"
+  "\n\016goldenToadJson\030\013 \001(\0132\030.PlaneWar.Golden"
+  "ToadJson\022$\n\010diceJson\030\014 \001(\0132\022.PlaneWar.Di"
+  "ceJson\"z\n\010DiceJson\022\014\n\004step\030\001 \001(\005\022\034\n\004dice"
+  "\030\002 \003(\0132\016.PlaneWar.Dice\022\037\n\007mulList\030\003 \003(\0132"
+  "\016.PlaneWar.Dice\022!\n\nmulPosList\030\004 \003(\0132\r.Pl"
+  "aneWar.Pos\"L\n\020FortuneWheelJson\022*\n\006result"
+  "\030\001 \003(\0132\032.PlaneWar.FortuneWheelInfo\022\014\n\004si"
+  "te\030\002 \001(\005\"i\n\016GoldenToadJson\022&\n\torderList\030"
+  "\001 \003(\0132\023.PlaneWar.OrderData\022\022\n\ntotalRatio"
+  "\030\002 \001(\005\022\r\n\005ratio\030\003 \001(\005\022\014\n\004step\030\004 \001(\005\"(\n\tO"
+  "rderData\022\014\n\004type\030\001 \001(\005\022\r\n\005ratio\030\002 \001(\005\"M\n"
+  "\017CSSyncAnimation\022&\n\tanimation\030\001 \001(\0132\023.Pl"
+  "aneWar.Animation\022\022\n\nisComplete\030\002 \001(\010\"M\n\017"
+  "SCSyncAnimation\022&\n\tanimation\030\001 \001(\0132\023.Pla"
+  "neWar.Animation\022\022\n\nisComplete\030\002 \001(\010\":\n\017S"
+  "CGetAnimations\022\'\n\nanimations\030\001 \003(\0132\023.Pla"
+  "neWar.Animation\"6\n\017GradeRankDetail\022\021\n\tra"
+  "nkIndex\030\001 \001(\005\022\020\n\010rankName\030\002 \001(\t\"Z\n\017Grade"
+  "RankConfig\0222\n\017gradeRankDetail\030\001 \003(\0132\031.Pl"
+  "aneWar.GradeRankDetail\022\023\n\013rankListLen\030\002 "
+  "\001(\005\"S\n\016WareGivingInfo\022\016\n\006propId\030\001 \001(\005\022\020\n"
+  "\010propName\030\002 \001(\t\022\r\n\005ratio\030\003 \001(\002\022\020\n\010noRepe"
+  "at\030\004 \001(\010\"\274\001\n\010WareInfo\022\016\n\006wareId\030\001 \001(\t\0224\n"
+  "\022wareGivingInfoList\030\002 \003(\0132\030.PlaneWar.War"
+  "eGivingInfo\022\020\n\010minMoney\030\003 \001(\005\022\020\n\010maxMone"
+  "y\030\004 \001(\005\022\r\n\005price\030\005 \001(\005\0227\n\025wareGivingProI"
+  "nfoList\030\006 \003(\0132\030.PlaneWar.WareGivingInfo\""
+  "E\n\024ExtraGradeRewardInfo\022\r\n\005title\030\001 \001(\t\022\014"
+  "\n\004desc\030\002 \001(\t\022\020\n\010extraExp\030\003 \001(\002\"\322\001\n\016RankW"
+  "areConfig\022(\n\014commWareInfo\030\001 \001(\0132\022.PlaneW"
+  "ar.WareInfo\022+\n\017advanceWareInfo\030\002 \001(\0132\022.P"
+  "laneWar.WareInfo\022<\n\024extraGradeRewardInfo"
+  "\030\003 \001(\0132\036.PlaneWar.ExtraGradeRewardInfo\022\024"
+  "\n\014wareDescList\030\004 \003(\005\022\025\n\rgradeDescList\030\005 "
+  "\003(\005\"/\n\nDiceConfig\022\021\n\tratioList\030\001 \003(\005\022\016\n\006"
+  "maxMul\030\002 \001(\005\"\017\n\rCSSyncConfigs\"\241\002\n\rSCSync"
+  "Configs\022.\n\rfortuneConfig\030\001 \003(\0132\027.PlaneWa"
+  "r.FortuneConfig\022&\n\tbeeConfig\030\002 \001(\0132\023.Pla"
+  "neWar.BeeConfig\022,\n\014replayConfig\030\003 \001(\0132\026."
+  "PlaneWar.ReplayConfig\0222\n\017gradeRankConfig"
+  "\030\004 \001(\0132\031.PlaneWar.GradeRankConfig\022,\n\nwar"
+  "eConfig\030\005 \001(\0132\030.PlaneWar.RankWareConfig\022"
+  "(\n\ndiceConfig\030\006 \001(\0132\024.PlaneWar.DiceConfi"
+  "g\")\n\024CSConfirmWeaponExist\022\021\n\tsourceUID\030\001"
+  " \001(\005\"%\n\024SCConfirmWeaponExist\022\r\n\005exist\030\001 "
+  "\001(\010\"0\n\nCSGetVideo\022\017\n\007videoId\030\001 \001(\t\022\021\n\tvi"
+  "deoType\030\002 \001(\005\"\322\001\n\nSCGetVideo\022.\n\017createdP"
+  "athList\030\001 \003(\0132\025.PlaneWar.MonsterPath\022\022\n\n"
+  "rewardType\030\002 \001(\005\022\021\n\ttimestamp\030\003 \001(\003\022\016\n\006r"
+  "eward\030\004 \001(\005\022\r\n\005chair\030\005 \001(\005\022\r\n\005money\030\006 \001("
+  "\003\022\r\n\005ratio\030\007 \001(\005\022\017\n\007gunType\030\010 \001(\005\022\r\n\005are"
+  "na\030\t \001(\005\022\020\n\010weaponId\030\n \001(\005\"\210\001\n\013VideoComm"
+  "on\022\016\n\006reward\030\001 \001(\005\022\022\n\nrewardType\030\002 \001(\005\022\021"
+  "\n\ttimestamp\030\003 \001(\003\022\017\n\007videoId\030\004 \001(\t\022\016\n\006un"
+  "read\030\005 \001(\010\022\020\n\010weaponId\030\006 \001(\005\022\017\n\007arenaId\030"
+  "\007 \001(\005\"X\n\017GlobalVideoInfo\022\020\n\010niceName\030\001 \001"
+  "(\t\022\014\n\004self\030\002 \001(\010\022%\n\006common\030\003 \001(\0132\025.Plane"
+  "War.VideoCommon\"E\n\rSelfVideoInfo\022\r\n\005rati"
+  "o\030\001 \001(\005\022%\n\006common\030\002 \001(\0132\025.PlaneWar.Video"
+  "Common\"-\n\021CSSelfVideoRecord\022\014\n\004from\030\001 \001("
+  "\005\022\n\n\002to\030\002 \001(\005\"T\n\021SCSelfVideoRecord\022*\n\tvi"
+  "deoList\030\001 \003(\0132\027.PlaneWar.SelfVideoInfo\022\023"
+  "\n\013refreshTime\030\002 \001(\005\"\'\n\013CSVideoRank\022\014\n\004fr"
+  "om\030\001 \001(\005\022\n\n\002to\030\002 \001(\005\"P\n\013SCVideoRank\022,\n\tv"
+  "ideoList\030\001 \003(\0132\031.PlaneWar.GlobalVideoInf"
+  "o\022\023\n\013refreshTime\030\002 \001(\005\"\317\001\n\rReceiveReward"
+  "\022\016\n\006propId\030\001 \001(\005\022\013\n\003num\030\002 \001(\005\022\017\n\007advance"
+  "\030\003 \001(\010\022\016\n\006minNum\030\004 \001(\005\022\016\n\006maxNum\030\005 \001(\005\022\013"
+  "\n\003box\030\006 \001(\010\022\020\n\010uniqueId\030\007 \001(\005\022\014\n\004desc\030\010 "
+  "\001(\t\022\021\n\ttimeLimit\030\t \001(\005\022\r\n\005title\030\n \001(\t\022\020\n"
+  "\010propType\030\013 \001(\005\022\017\n\007special\030\014 \001(\005\"\026\n\024CSRe"
+  "ceiveGradeReward\"\223\001\n\024SCReceiveGradeRewar"
+  "d\0222\n\021receiveRewardList\030\001 \003(\0132\027.PlaneWar."
+  "ReceiveReward\0224\n\023unReceiveRewardList\030\002 \003"
+  "(\0132\027.PlaneWar.ReceiveReward\022\021\n\tseasonEnd"
+  "\030\003 \001(\010\"`\n\021GradeRewardDetail\022+\n\nrewardInf"
+  "o\030\001 \001(\0132\027.PlaneWar.ReceiveReward\022\r\n\005reac"
+  "h\030\002 \001(\010\022\017\n\007receive\030\003 \001(\010\"\237\001\n\017GradeReward"
+  "Info\022\020\n\010rankName\030\001 \001(\t\0223\n\016commRewardList"
+  "\030\002 \003(\0132\033.PlaneWar.GradeRewardDetail\0226\n\021a"
+  "dvanceRewardList\030\003 \003(\0132\033.PlaneWar.GradeR"
+  "ewardDetail\022\r\n\005first\030\004 \001(\010\"\205\002\n\rGradeRank"
+  "Info\022\023\n\013currentRank\030\001 \001(\005\022\014\n\004star\030\002 \001(\005\022"
+  "\020\n\010rankName\030\003 \001(\t\022\023\n\013historyRank\030\004 \001(\005\022\027"
+  "\n\017historyRankName\030\005 \001(\t\022\017\n\007kingTag\030\006 \001(\005"
+  "\022\022\n\ncurrentExp\030\007 \001(\002\022\017\n\007nextExp\030\010 \001(\002\022\020\n"
+  "\010extraExp\030\t \001(\002\022\022\n\nplayerName\030\n \001(\t\022\025\n\ra"
+  "vailableGift\030\013 \001(\005\022\016\n\006isLast\030\014 \001(\010\022\016\n\006is"
+  "Self\030\r \001(\010\"%\n\022CSGetTableUserInfo\022\017\n\007chai"
+  "rId\030\001 \001(\005\"n\n\022SCGetTableUserInfo\022(\n\nplaye"
+  "rInfo\030\001 \001(\0132\024.PlaneWar.PlayerInfo\022.\n\rgra"
+  "deRankInfo\030\002 \001(\0132\027.PlaneWar.GradeRankInf"
+  "o\"8\n\024CSGetGradeRewardInfo\022\020\n\010startIdx\030\001 "
+  "\001(\005\022\016\n\006endIdx\030\002 \001(\005\"N\n\024SCGetGradeRewardI"
+  "nfo\0226\n\023gradeRewardInfoList\030\001 \003(\0132\031.Plane"
+  "War.GradeRewardInfo\"\024\n\022CSGetGradeRankInf"
+  "o\"D\n\022SCGetGradeRankInfo\022.\n\rgradeRankInfo"
+  "\030\001 \001(\0132\027.PlaneWar.GradeRankInfo\"_\n\rSCRan"
+  "kUpgrade\022.\n\rgradeRankInfo\030\001 \001(\0132\027.PlaneW"
+  "ar.GradeRankInfo\022\017\n\007advance\030\002 \001(\010\022\r\n\005cha"
+  "ir\030\003 \001(\005\"\024\n\022CSRankSeasonStatus\"l\n\022SCRank"
+  "SeasonStatus\022\016\n\006enable\030\001 \001(\010\022\021\n\tstartTim"
+  "e\030\002 \001(\005\022\017\n\007endTime\030\003 \001(\005\022\022\n\nseasonName\030\004"
+  " \001(\t\022\016\n\006season\030\005 \001(\005\"\032\n\nSCSyncTime\022\014\n\004ti"
+  "me\030\001 \001(\005\"&\n\024SCNoticePropsOverdue\022\016\n\006prop"
+  "Id\030\001 \001(\005\"0\n\016PurchaseResult\022\016\n\006wareId\030\001 \001"
+  "(\t\022\016\n\006status\030\002 \001(\010\",\n\026CSQueryPackagePurc"
+  "hase\022\022\n\nwareIdList\030\001 \003(\005\"K\n\026SCQueryPacka"
+  "gePurchase\0221\n\017purchaseResList\030\001 \003(\0132\030.Pl"
+  "aneWar.PurchaseResult\"(\n\tPropsInfo\022\016\n\006pr"
+  "opId\030\001 \001(\005\022\013\n\003num\030\002 \001(\005\"<\n\022SCGamePurchas"
+  "ePush\022&\n\tpropsList\030\001 \003(\0132\023.PlaneWar.Prop"
+  "sInfo\"V\n\016PackageMarquee\022\020\n\010nickname\030\001 \001("
+  "\t\022\016\n\006wareId\030\002 \001(\t\022\"\n\005props\030\003 \001(\0132\023.Plane"
+  "War.PropsInfo\"\027\n\025CSQueryPackageMarquee\"c"
+  "\n\025SCQueryPackageMarquee\022\024\n\014marqueeModel\030"
+  "\001 \001(\t\0224\n\022packageMarqueeList\030\002 \003(\0132\030.Plan"
+  "eWar.PackageMarquee\"\034\n\nCSSetWings\022\016\n\006win"
+  "gId\030\001 \001(\005\"+\n\nSCSetWings\022\r\n\005chair\030\001 \001(\005\022\016"
+  "\n\006wingId\030\002 \001(\005\"\026\n\024CSVerifySeasonChange\"\300"
+  "\001\n\024SCVerifySeasonChange\022\016\n\006change\030\001 \001(\010\022"
+  "4\n\023beforeGradeRankInfo\030\002 \001(\0132\027.PlaneWar."
+  "GradeRankInfo\0225\n\024currentGradeRankInfo\030\003 "
+  "\001(\0132\027.PlaneWar.GradeRankInfo\022\024\n\014beforeSe"
+  "ason\030\004 \001(\005\022\025\n\rcurrentSeason\030\005 \001(\005\"\034\n\032CSE"
+  "xistUnReceiveRankReward\"+\n\032SCExistUnRece"
+  "iveRankReward\022\r\n\005exist\030\001 \001(\010\"(\n\031CSReceiv"
+  "eExtraGradeReward\022\013\n\003num\030\001 \001(\005\"\\\n\031SCRece"
+  "iveExtraGradeReward\0222\n\021receiveRewardList"
+  "\030\001 \003(\0132\027.PlaneWar.ReceiveReward\022\013\n\003num\030\002"
+  " \001(\005\">\n\022CSGetGradeRankList\022\014\n\004from\030\001 \001(\005"
+  "\022\n\n\002to\030\002 \001(\005\022\016\n\006season\030\003 \001(\005\"\200\001\n\022SCGetGr"
+  "adeRankList\022.\n\rgradeRankList\030\001 \003(\0132\027.Pla"
+  "neWar.GradeRankInfo\022-\n\014selfRankInfo\030\002 \001("
+  "\0132\027.PlaneWar.GradeRankInfo\022\013\n\003ord\030\003 \001(\005\""
+  "\036\n\nCSBuyPlane\022\020\n\010plane_id\030\001 \001(\005\"\036\n\nSCBuy"
+  "Plane\022\020\n\010plane_id\030\001 \001(\005\"\036\n\nCSBuyWings\022\020\n"
+  "\010wings_id\030\001 \001(\005\"\036\n\nSCBuyWings\022\020\n\010wings_i"
+  "d\030\001 \001(\005\"=\n\017OpenChestReward\022\n\n\002id\030\001 \001(\005\022\036"
+  "\n\003num\030\002 \001(\0132\021.PlaneWar.Decimal\"\253\001\n\023SCUpd"
+  "ateChestStatus\022\021\n\tis_active\030\001 \001(\010\022\'\n\nche"
+  "st_type\030\002 \001(\0162\023.PlaneWar.ChestType\022\026\n\016to"
+  "tal_progress\030\003 \001(\005\022\027\n\017remain_progress\030\004 "
+  "\001(\005\022\r\n\005guide\030\005 \001(\010\022\030\n\020available_reward\030\006"
+  " \001(\005\"`\n\nChestBrief\022\'\n\nchest_type\030\001 \001(\0162\023"
+  ".PlaneWar.ChestType\022)\n\006reward\030\002 \003(\0132\031.Pl"
+  "aneWar.OpenChestReward\"\300\001\n\rSCChestConfig"
+  "\022\020\n\010end_time\030\001 \001(\005\022.\n\020chest_brief_list\030\002"
+  " \003(\0132\024.PlaneWar.ChestBrief\022\021\n\tmin_ratio\030"
+  "\003 \001(\005\022\021\n\tauto_open\030\004 \001(\010\0224\n\013auto_option\030"
+  "\005 \001(\0162\037.PlaneWar.ChestAutoSelectOption\022\021"
+  "\n\tis_enable\030\006 \001(\010\"s\n\013SCOpenChest\022.\n\013rewa"
+  "rd_list\030\001 \003(\0132\031.PlaneWar.OpenChestReward"
+  "\0224\n\013auto_option\030\002 \001(\0162\037.PlaneWar.ChestAu"
+  "toSelectOption\"V\n\023CSSelectChestReward\022\024\n"
+  "\014select_index\030\001 \001(\005\022)\n\006reward\030\002 \001(\0132\031.Pl"
+  "aneWar.OpenChestReward\"_\n\024CSChestSetAuto"
+  "Select\0224\n\013auto_option\030\001 \001(\0162\037.PlaneWar.C"
+  "hestAutoSelectOption\022\021\n\tauto_open\030\002 \001(\010\""
+  "_\n\024SCChestSetAutoSelect\0224\n\013auto_option\030\001"
+  " \001(\0162\037.PlaneWar.ChestAutoSelectOption\022\021\n"
+  "\tauto_open\030\002 \001(\010\"%\n\020CSChestSetEnable\022\021\n\t"
+  "is_enable\030\001 \001(\010\"%\n\020SCChestSetEnable\022\021\n\ti"
+  "s_enable\030\001 \001(\010\"K\n\017SCWaterDropInfo\022\016\n\006ena"
+  "ble\030\001 \001(\010\022\021\n\tdropCount\030\002 \001(\005\022\025\n\rfragment"
+  "Count\030\003 \001(\005\"\'\n\010TextInfo\022\r\n\005index\030\001 \001(\005\022\014"
+  "\n\004text\030\002 \001(\t\"4\n\020CSSyncTextConfig\022\020\n\010star"
+  "tIdx\030\001 \001(\005\022\016\n\006endIdx\030\002 \001(\005\"8\n\020SCSyncText"
+  "Config\022$\n\010textList\030\001 \003(\0132\022.PlaneWar.Text"
+  "Info*\254\022\n\rEMsgIDSubGame\022\t\n\005Login\020\000\022\n\n\006Log"
+  "out\020\002\022\t\n\005Ready\020\003\022\020\n\014MonsterSpawn\020\004\022\010\n\004Sh"
+  "ot\020\005\022\007\n\003Hit\020\006\022\022\n\016MonsterDestory\020\007\022\010\n\004Loc"
+  "k\020\010\022\r\n\tTransform\020\t\022\020\n\014PlanePosSync\020\n\022\014\n\010"
+  "StateEnd\020\013\022\014\n\010ModRatio\020\014\022\016\n\nGainNotify\020\r"
+  "\022\016\n\nGainSettle\020\016\022\014\n\010SetPlane\020\017\022\023\n\017UserEn"
+  "terNotify\020\020\022\024\n\020SwitchBackGround\020\021\022\023\n\017Syn"
+  "cMonsterInfo\020\022\022\023\n\017ScratchCardList\020\023\022\022\n\016U"
+  "seScratchCard\020\024\022\021\n\rExplodeSettle\020\025\022\025\n\021Fa"
+  "llIntoBlackHole\020\026\022\024\n\020SyncBlackHolePos\020\027\022"
+  "\017\n\013Interaction\020\030\022\020\n\014ActivityInfo\020\031\022\021\n\rGe"
+  "tTaskReward\020\032\022\017\n\013GetTaskInfo\020\033\022\024\n\020Notice"
+  "InfoChange\020\034\022\030\n\024NoticeHallProsChange\020\035\022\027"
+  "\n\023NoticeTimingMonster\020\036\022\021\n\rPiggyBankInfo"
+  "\020\037\022\021\n\rOpenPiggyBank\020 \022\027\n\023PiggyBankOpenFi"
+  "nish\020!\022\031\n\025PiggyBankChangeNotify\020\"\022\031\n\025Set"
+  "PersonalPoolEnable\020#\022\024\n\020PersonalPoolInfo"
+  "\020$\022\024\n\020DrawPersonalPool\020%\022\034\n\030PersonalPool"
+  "ChangeNotify\020&\022\016\n\nUseMissile\020\'\022\017\n\013Monste"
+  "rCall\020(\022\017\n\013ClickStatic\020)\022\014\n\010RankList\020*\022\020"
+  "\n\014LastRankList\020+\022\r\n\tTitleList\020,\022\017\n\013Selec"
+  "tTitle\020-\022\025\n\021TitleActiveNotify\020.\022\030\n\024RoomI"
+  "nfoChangeNotify\020/\022\016\n\nMatchBrief\0200\022\017\n\013Mat"
+  "chDetail\0201\022\017\n\013MatchReward\0202\022\025\n\021MatchRewa"
+  "rdNotify\0203\022\014\n\010GiftList\0204\022\024\n\020GiftExpireNo"
+  "tify\0205\022\026\n\022GetMatchTaskReward\0206\022\023\n\017Weapon"
+  "PieceInfo\0207\022\r\n\tBuyWeapon\0208\022\024\n\020WeaponEarn"
+  "Record\0209\022\024\n\020StateForceSettle\020:\022\023\n\017AddMis"
+  "sedBullet\020;\022\024\n\020UpdateBulletData\020<\022\023\n\017Use"
+  "MissileBatch\020=\022\023\n\017SyncPropsToHall\020>\022\017\n\013C"
+  "hangeTable\020\?\022\025\n\021UpgradePoolReward\020@\022\026\n\022G"
+  "etPoolLuckyReward\020A\022\017\n\013UseRoulette\020B\022\024\n\020"
+  "RedEnvelopePoint\020C\022\023\n\017RedEnvelopeInfo\020D\022"
+  "\023\n\017OpenRedEnvelope\020E\022\026\n\022UpgradeRedEnvelo"
+  "pe\020F\022\031\n\025CommonRedEnvelopeInfo\020G\022\031\n\025OpenC"
+  "ommonRedEnvelope\020H\022\036\n\032GrantCommonRedEnve"
+  "lopeRank\020I\022\035\n\031OpenCommonRedEnvelopeRank\020"
+  "J\022 \n\034GrantCommonRedEnvelopeRecord\020K\022\037\n\033O"
+  "penCommonRedEnvelopeRecord\020L\022\035\n\031RedEnvel"
+  "opeOpStatusNotify\020M\022\023\n\017SyncWeaponState\020N"
+  "\022\n\n\006PreHit\020O\022\021\n\rSyncAnimation\020P\022\021\n\rGetAn"
+  "imations\020Q\022\017\n\013SyncConfigs\020R\022\026\n\022ConfirmWe"
+  "aponExist\020S\022\014\n\010GetVideo\020T\022\023\n\017SelfVideoRe"
+  "cord\020U\022\r\n\tVideoRank\020V\022\024\n\020GetGradeRankInf"
+  "o\020W\022\026\n\022ReceiveGradeReward\020X\022\014\n\010SyncTime\020"
+  "Y\022\017\n\013RankUpgrade\020Z\022\024\n\020RankSeasonStatus\020["
+  "\022\026\n\022NoticePropsOverdue\020\\\022\030\n\024QueryPackage"
+  "Purchase\020]\022\014\n\010SetWings\020^\022\024\n\020GetTableUser"
+  "Info\020_\022\026\n\022VerifySeasonChange\020`\022\034\n\030ExistU"
+  "nReceiveRankReward\020a\022\026\n\022GetGradeRewardIn"
+  "fo\020b\022\024\n\020GamePurchasePush\020c\022\027\n\023QueryPacka"
+  "geMarquee\020d\022\024\n\020GetGradeRankList\020e\022\033\n\027Rec"
+  "eiveExtraGradeReward\020f\022\014\n\010BuyPlane\020g\022\014\n\010"
+  "BuyWings\020h\022\025\n\021UpdateChestStatus\020i\022\017\n\013Che"
+  "stConfig\020j\022\r\n\tOpenChest\020k\022\025\n\021SelectChest"
+  "Reward\020l\022\026\n\022ChestSetAutoSelect\020m\022\022\n\016Ches"
+  "tSetEnable\020n\022\021\n\rWaterDropInfo\020x\022\022\n\016SyncT"
+  "extConfig\020y\022\021\n\rFinishSpecial\020z\022\026\n\022Finish"
+  "RecoverScore\020{\022\023\n\017MissileFishList\020|*\260\017\n\t"
+  "ErrorCode\022\013\n\007Success\020\000\022\t\n\004Fail\020\350\007\022\022\n\rEnt"
+  "erRoomFail\020\351\007\022\025\n\020LoadBaseInfoFail\020\352\007\022\024\n\017"
+  "LoadVipInfoFail\020\353\007\022\026\n\021LoadExtraInfoFail\020"
+  "\354\007\022\026\n\021CreatePlayerError\020\355\007\022\023\n\016PlayerNotE"
+  "xist\020\356\007\022\022\n\rTableNotExist\020\357\007\022\023\n\016MoneyNotE"
+  "nough\020\360\007\022\020\n\013BulletError\020\361\007\022\024\n\017MonsterNot"
+  "Exist\020\362\007\022\025\n\020PlayerNotInTable\020\363\007\022\031\n\024Scrat"
+  "chCardNotEnough\020\364\007\022\034\n\027InteractionTypeNot"
+  "Exist\020\365\007\022\033\n\026InteractionNotCooldown\020\366\007\022\033\n"
+  "\026InteractionTargetError\020\367\007\022\026\n\021TokenVerif"
+  "yFailed\020\370\007\022\022\n\rTaskNotEnough\020\371\007\022\025\n\020Diamon"
+  "dNotEnough\020\372\007\022\024\n\017ConcurrentLogin\020\373\007\022\021\n\014A"
+  "lreadyLogin\020\374\007\022\021\n\014ServerClosed\020\375\007\022\025\n\020Mis"
+  "sileNotEnough\020\370\n\022\030\n\023PersonalPoolDisable\020"
+  "\334\013\022\032\n\025PersonalPoolNotEnough\020\335\013\022\032\n\025Person"
+  "alPoolSaveError\020\336\013\022\037\n\032PersonalPoolGetRew"
+  "ardError\020\337\013\022\024\n\017NoTmpPoolReward\020\340\013\022\024\n\017Poo"
+  "lUpgradeFail\020\341\013\022\034\n\027PoolLuckyValueNotEnou"
+  "gh\020\342\013\022\027\n\022PiggyBankNotEnable\020\354\016\022\026\n\021PiggyB"
+  "ankNoReward\020\355\016\022\031\n\024PiggyBankRewardError\020\356"
+  "\016\022\032\n\025PiggyBankPackageError\020\357\016\022\022\n\rCallNot"
+  "Enough\020\320\017\022\033\n\026CallSpecialMonsterFull\020\321\017\022\033"
+  "\n\026CallMonsterScreenLimit\020\322\017\022\021\n\014CallCoolD"
+  "own\020\323\017\022\022\n\rCallExceedMax\020\324\017\022\022\n\rRankTypeEr"
+  "ror\020\264\020\022\023\n\016RankIndexError\020\265\020\022\026\n\021TitleConf"
+  "NotExist\020\230\021\022\023\n\016TitleNotActive\020\231\021\022\017\n\nNotI"
+  "nMatch\020\374\021\022\017\n\nNoSuchTask\020\375\021\022\026\n\021HaveGotTas"
+  "kReward\020\376\021\022\023\n\016NotAchieveTask\020\377\021\022\031\n\024Weapo"
+  "nPieceNotEnough\020\340\022\022\030\n\023GetWeaponRecordFai"
+  "l\020\341\022\022\027\n\022WeaponConfNotExist\020\342\022\022\022\n\rCantBuy"
+  "Weapon\020\343\022\022\022\n\rOpenChestFail\020\344\022\022\032\n\025SelectC"
+  "hestRewardFail\020\345\022\022\026\n\021RouletteNotEnough\020\304"
+  "\023\022\031\n\024RouletteConfNotExist\020\305\023\022\"\n\035OpenRedE"
+  "nvelopePointNotEnough\020\250\024\022\036\n\031OpenRedEnvel"
+  "opeIndexError\020\251\024\022\033\n\026NoTmpRedEnvelopeRewa"
+  "rd\020\252\024\022\"\n\035RedEnvelopeUpgradeNumNoEnough\020\253"
+  "\024\022!\n\034GetCommonRedEnvelopeInfoFail\020\254\024\022&\n!"
+  "OpenCommonRedEnvelopeNumNotEnough\020\255\024\022\036\n\031"
+  "OpenCommonRedEnvelopeFail\020\256\024\022\035\n\030CommonRe"
+  "dEnvelopeInvalid\020\257\024\022 \n\033GetRedEnvelopeGra"
+  "ntRankFail\020\260\024\022\037\n\032GetRedEnvelopeOpenRankF"
+  "ail\020\261\024\022\"\n\035GetRedEnvelopeGrantRecordFail\020"
+  "\262\024\022!\n\034GetRedEnvelopeOpenRecordFail\020\263\024\022\022\n"
+  "\rVideoNotExist\020\214\025\022\023\n\016VideoListLimit\020\215\025\022\023"
+  "\n\016GradeIsNotOpen\020\216\025\022\026\n\021GetGradeInfoError"
+  "\020\217\025\022\025\n\020WingsNotObtained\020\220\025\022\022\n\rUniqueIdEr"
+  "ror\020\221\025\022\030\n\023AlreadyReceiveError\020\222\025\022\025\n\020NotE"
+  "noughGiftBag\020\223\025\022\034\n\027AlreadyHaveThisPropsE"
+  "rr\020\224\025\022\017\n\nPropsIdErr\020\225\025\022\026\n\021CanNotBuyProps"
+  "Err\020\226\025*^\n\rRedOpenStatus\022\017\n\013RedOpenLock\020\000"
+  "\022\023\n\017RedOpenUnLocked\020\001\022\024\n\020RedOpenNotActiv"
+  "e\020\002\022\021\n\rRedOpenActive\020\003*K\n\020UpgradeRedResu"
+  "lt\022\022\n\016UpgradeAbandon\020\000\022\017\n\013UpgradeFail\020\001\022"
+  "\022\n\016UpgradeSuccess\020\002*b\n\016GrantRedStatus\022\r\n"
+  "\tRedOpened\020\000\022\017\n\013RedNoOpened\020\001\022\016\n\nRedNotS"
+  "how\020\002\022\020\n\014RedCountDown\020\003\022\016\n\nRedExpired\020\004*"
+  "i\n\013RedOpStatus\022\016\n\nRedOpClose\020\000\022\r\n\tRedOpO"
+  "pen\020\001\022\020\n\014RedOpUpgrade\020\002\022\024\n\020RedOpGrantRew"
+  "ard\020\003\022\023\n\017RedOpOpenReward\020\004*`\n\tChestType\022"
+  "\026\n\022ChestTypePorcelain\020\000\022\023\n\017ChestTypeBron"
+  "ze\020\001\022\023\n\017ChestTypeSilver\020\002\022\021\n\rChestTypeGo"
+  "ld\020\003*A\n\025ChestAutoSelectOption\022\010\n\004None\020\000\022"
+  "\023\n\017RedPacketTicket\020\001\022\t\n\005Money\020\002b\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_PlaneWar_2eproto_deps[1] = {
 };
@@ -9517,7 +9518,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Pla
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_PlaneWar_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_PlaneWar_2eproto = {
-  false, false, descriptor_table_protodef_PlaneWar_2eproto, "PlaneWar.proto", 31223,
+  false, false, descriptor_table_protodef_PlaneWar_2eproto, "PlaneWar.proto", 31239,
   &descriptor_table_PlaneWar_2eproto_once, descriptor_table_PlaneWar_2eproto_sccs, descriptor_table_PlaneWar_2eproto_deps, 301, 0,
   schemas, file_default_instances, TableStruct_PlaneWar_2eproto::offsets,
   file_level_metadata_PlaneWar_2eproto, 301, file_level_enum_descriptors_PlaneWar_2eproto, file_level_service_descriptors_PlaneWar_2eproto,
@@ -28272,16 +28273,16 @@ CSHit::CSHit(const CSHit& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&monsteruid_, &from.monsteruid_,
-    static_cast<size_t>(reinterpret_cast<char*>(&originuid_) -
-    reinterpret_cast<char*>(&monsteruid_)) + sizeof(originuid_));
+    static_cast<size_t>(reinterpret_cast<char*>(&is_end_) -
+    reinterpret_cast<char*>(&monsteruid_)) + sizeof(is_end_));
   // @@protoc_insertion_point(copy_constructor:PlaneWar.CSHit)
 }
 
 void CSHit::SharedCtor() {
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&monsteruid_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&originuid_) -
-      reinterpret_cast<char*>(&monsteruid_)) + sizeof(originuid_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&is_end_) -
+      reinterpret_cast<char*>(&monsteruid_)) + sizeof(is_end_));
 }
 
 CSHit::~CSHit() {
@@ -28316,8 +28317,8 @@ void CSHit::Clear() {
   (void) cached_has_bits;
 
   ::memset(&monsteruid_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&originuid_) -
-      reinterpret_cast<char*>(&monsteruid_)) + sizeof(originuid_));
+      reinterpret_cast<char*>(&is_end_) -
+      reinterpret_cast<char*>(&monsteruid_)) + sizeof(is_end_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -28374,6 +28375,13 @@ const char* CSHit::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::inte
       case 7:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
           originuid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else goto handle_unusual;
+        continue;
+      // bool is_end = 8;
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+          is_end_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -28447,6 +28455,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(7, this->_internal_originuid(), target);
   }
 
+  // bool is_end = 8;
+  if (this->is_end() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(8, this->_internal_is_end(), target);
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
@@ -28512,6 +28526,11 @@ size_t CSHit::ByteSizeLong() const {
         this->_internal_originuid());
   }
 
+  // bool is_end = 8;
+  if (this->is_end() != 0) {
+    total_size += 1 + 1;
+  }
+
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
         _internal_metadata_, total_size, &_cached_size_);
@@ -28564,6 +28583,9 @@ void CSHit::MergeFrom(const CSHit& from) {
   if (from.originuid() != 0) {
     _internal_set_originuid(from._internal_originuid());
   }
+  if (from.is_end() != 0) {
+    _internal_set_is_end(from._internal_is_end());
+  }
 }
 
 void CSHit::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
@@ -28588,8 +28610,8 @@ void CSHit::InternalSwap(CSHit* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(CSHit, originuid_)
-      + sizeof(CSHit::originuid_)
+      PROTOBUF_FIELD_OFFSET(CSHit, is_end_)
+      + sizeof(CSHit::is_end_)
       - PROTOBUF_FIELD_OFFSET(CSHit, monsteruid_)>(
           reinterpret_cast<char*>(&monsteruid_),
           reinterpret_cast<char*>(&other->monsteruid_));

@@ -68,6 +68,9 @@ extern MsgChatServerListDefaultTypeInternal _MsgChatServerList_default_instance_
 class MsgCommonBool;
 class MsgCommonBoolDefaultTypeInternal;
 extern MsgCommonBoolDefaultTypeInternal _MsgCommonBool_default_instance_;
+class MsgCommonEmpty;
+class MsgCommonEmptyDefaultTypeInternal;
+extern MsgCommonEmptyDefaultTypeInternal _MsgCommonEmpty_default_instance_;
 class MsgCommonN32;
 class MsgCommonN32DefaultTypeInternal;
 extern MsgCommonN32DefaultTypeInternal _MsgCommonN32_default_instance_;
@@ -77,9 +80,6 @@ extern MsgCommonN64DefaultTypeInternal _MsgCommonN64_default_instance_;
 class MsgCommonStr;
 class MsgCommonStrDefaultTypeInternal;
 extern MsgCommonStrDefaultTypeInternal _MsgCommonStr_default_instance_;
-class MsgEmpty;
-class MsgEmptyDefaultTypeInternal;
-extern MsgEmptyDefaultTypeInternal _MsgEmpty_default_instance_;
 class MsgGameServerInfo;
 class MsgGameServerInfoDefaultTypeInternal;
 extern MsgGameServerInfoDefaultTypeInternal _MsgGameServerInfo_default_instance_;
@@ -98,10 +98,10 @@ template<> ::MsgChatPlayerInfo* Arena::CreateMaybeMessage<::MsgChatPlayerInfo>(A
 template<> ::MsgChatServerInfo* Arena::CreateMaybeMessage<::MsgChatServerInfo>(Arena*);
 template<> ::MsgChatServerList* Arena::CreateMaybeMessage<::MsgChatServerList>(Arena*);
 template<> ::MsgCommonBool* Arena::CreateMaybeMessage<::MsgCommonBool>(Arena*);
+template<> ::MsgCommonEmpty* Arena::CreateMaybeMessage<::MsgCommonEmpty>(Arena*);
 template<> ::MsgCommonN32* Arena::CreateMaybeMessage<::MsgCommonN32>(Arena*);
 template<> ::MsgCommonN64* Arena::CreateMaybeMessage<::MsgCommonN64>(Arena*);
 template<> ::MsgCommonStr* Arena::CreateMaybeMessage<::MsgCommonStr>(Arena*);
-template<> ::MsgEmpty* Arena::CreateMaybeMessage<::MsgEmpty>(Arena*);
 template<> ::MsgGameServerInfo* Arena::CreateMaybeMessage<::MsgGameServerInfo>(Arena*);
 template<> ::MsgGameServerList* Arena::CreateMaybeMessage<::MsgGameServerList>(Arena*);
 template<> ::MsgNotifyChatNormalMsg* Arena::CreateMaybeMessage<::MsgNotifyChatNormalMsg>(Arena*);
@@ -110,23 +110,23 @@ PROTOBUF_NAMESPACE_CLOSE
 
 // ===================================================================
 
-class MsgEmpty PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgEmpty) */ {
+class MsgCommonEmpty PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgCommonEmpty) */ {
  public:
-  inline MsgEmpty() : MsgEmpty(nullptr) {}
-  virtual ~MsgEmpty();
+  inline MsgCommonEmpty() : MsgCommonEmpty(nullptr) {}
+  virtual ~MsgCommonEmpty();
 
-  MsgEmpty(const MsgEmpty& from);
-  MsgEmpty(MsgEmpty&& from) noexcept
-    : MsgEmpty() {
+  MsgCommonEmpty(const MsgCommonEmpty& from);
+  MsgCommonEmpty(MsgCommonEmpty&& from) noexcept
+    : MsgCommonEmpty() {
     *this = ::std::move(from);
   }
 
-  inline MsgEmpty& operator=(const MsgEmpty& from) {
+  inline MsgCommonEmpty& operator=(const MsgCommonEmpty& from) {
     CopyFrom(from);
     return *this;
   }
-  inline MsgEmpty& operator=(MsgEmpty&& from) noexcept {
+  inline MsgCommonEmpty& operator=(MsgCommonEmpty&& from) noexcept {
     if (GetArena() == from.GetArena()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -144,19 +144,19 @@ class MsgEmpty PROTOBUF_FINAL :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return GetMetadataStatic().reflection;
   }
-  static const MsgEmpty& default_instance();
+  static const MsgCommonEmpty& default_instance();
 
-  static inline const MsgEmpty* internal_default_instance() {
-    return reinterpret_cast<const MsgEmpty*>(
-               &_MsgEmpty_default_instance_);
+  static inline const MsgCommonEmpty* internal_default_instance() {
+    return reinterpret_cast<const MsgCommonEmpty*>(
+               &_MsgCommonEmpty_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     0;
 
-  friend void swap(MsgEmpty& a, MsgEmpty& b) {
+  friend void swap(MsgCommonEmpty& a, MsgCommonEmpty& b) {
     a.Swap(&b);
   }
-  inline void Swap(MsgEmpty* other) {
+  inline void Swap(MsgCommonEmpty* other) {
     if (other == this) return;
     if (GetArena() == other->GetArena()) {
       InternalSwap(other);
@@ -164,7 +164,7 @@ class MsgEmpty PROTOBUF_FINAL :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(MsgEmpty* other) {
+  void UnsafeArenaSwap(MsgCommonEmpty* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetArena() == other->GetArena());
     InternalSwap(other);
@@ -172,17 +172,17 @@ class MsgEmpty PROTOBUF_FINAL :
 
   // implements Message ----------------------------------------------
 
-  inline MsgEmpty* New() const final {
-    return CreateMaybeMessage<MsgEmpty>(nullptr);
+  inline MsgCommonEmpty* New() const final {
+    return CreateMaybeMessage<MsgCommonEmpty>(nullptr);
   }
 
-  MsgEmpty* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
-    return CreateMaybeMessage<MsgEmpty>(arena);
+  MsgCommonEmpty* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgCommonEmpty>(arena);
   }
   void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
   void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
-  void CopyFrom(const MsgEmpty& from);
-  void MergeFrom(const MsgEmpty& from);
+  void CopyFrom(const MsgCommonEmpty& from);
+  void MergeFrom(const MsgCommonEmpty& from);
   PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
   bool IsInitialized() const final;
 
@@ -196,13 +196,13 @@ class MsgEmpty PROTOBUF_FINAL :
   inline void SharedCtor();
   inline void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(MsgEmpty* other);
+  void InternalSwap(MsgCommonEmpty* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "MsgEmpty";
+    return "MsgCommonEmpty";
   }
   protected:
-  explicit MsgEmpty(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  explicit MsgCommonEmpty(::PROTOBUF_NAMESPACE_ID::Arena* arena);
   private:
   static void ArenaDtor(void* object);
   inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -221,7 +221,7 @@ class MsgEmpty PROTOBUF_FINAL :
 
   // accessors -------------------------------------------------------
 
-  // @@protoc_insertion_point(class_scope:MsgEmpty)
+  // @@protoc_insertion_point(class_scope:MsgCommonEmpty)
  private:
   class _Internal;
 
@@ -2304,7 +2304,7 @@ class MsgChatServerList PROTOBUF_FINAL :
   #pragma GCC diagnostic push
   #pragma GCC diagnostic ignored "-Wstrict-aliasing"
 #endif  // __GNUC__
-// MsgEmpty
+// MsgCommonEmpty
 
 // -------------------------------------------------------------------
 
