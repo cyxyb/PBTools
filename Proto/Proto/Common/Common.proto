@@ -1,5 +1,10 @@
 syntax = "proto3";
 
+message MsgEmpty
+{
+
+}
+
 message MsgCommonBool
 {
 	bool	value			= 1;

@@ -17,6 +17,10 @@
 extern PROTOBUF_INTERNAL_EXPORT_Common_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgChatPlayerInfo_Common_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_Common_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgChatServerInfo_Common_2eproto;
 extern PROTOBUF_INTERNAL_EXPORT_Common_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgGameServerInfo_Common_2eproto;
+class MsgEmptyDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgEmpty> _instance;
+} _MsgEmpty_default_instance_;
 class MsgCommonBoolDefaultTypeInternal {
  public:
   ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<MsgCommonBool> _instance;
@@ -170,6 +174,19 @@ static void InitDefaultsscc_info_MsgCommonStr_Common_2eproto() {
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgCommonStr_Common_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgCommonStr_Common_2eproto}, {}};
 
+static void InitDefaultsscc_info_MsgEmpty_Common_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_MsgEmpty_default_instance_;
+    new (ptr) ::MsgEmpty();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MsgEmpty_Common_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MsgEmpty_Common_2eproto}, {}};
+
 static void InitDefaultsscc_info_MsgGameServerInfo_Common_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -224,11 +241,16 @@ static void InitDefaultsscc_info_MsgNotifyChatTrumpetMsg_Common_2eproto() {
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MsgNotifyChatTrumpetMsg_Common_2eproto}, {
       &scc_info_MsgChatPlayerInfo_Common_2eproto.base,}};
 
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Common_2eproto[12];
+static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_Common_2eproto[13];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_Common_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_Common_2eproto = nullptr;
 
 const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Common_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::MsgEmpty, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::MsgCommonBool, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -334,21 +356,23 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_Common_2eproto::offsets[] PROT
   PROTOBUF_FIELD_OFFSET(::MsgChatServerList, chat_server_list_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::MsgCommonBool)},
-  { 6, -1, sizeof(::MsgCommonN32)},
-  { 12, -1, sizeof(::MsgCommonN64)},
-  { 18, -1, sizeof(::MsgCommonStr)},
-  { 24, -1, sizeof(::MsgGameServerInfo)},
-  { 37, -1, sizeof(::MsgGameServerList)},
-  { 43, -1, sizeof(::MsgBroadcastZmdTip)},
-  { 59, -1, sizeof(::MsgNotifyChatNormalMsg)},
-  { 67, -1, sizeof(::MsgNotifyChatTrumpetMsg)},
-  { 75, -1, sizeof(::MsgChatPlayerInfo)},
-  { 87, -1, sizeof(::MsgChatServerInfo)},
-  { 97, -1, sizeof(::MsgChatServerList)},
+  { 0, -1, sizeof(::MsgEmpty)},
+  { 5, -1, sizeof(::MsgCommonBool)},
+  { 11, -1, sizeof(::MsgCommonN32)},
+  { 17, -1, sizeof(::MsgCommonN64)},
+  { 23, -1, sizeof(::MsgCommonStr)},
+  { 29, -1, sizeof(::MsgGameServerInfo)},
+  { 42, -1, sizeof(::MsgGameServerList)},
+  { 48, -1, sizeof(::MsgBroadcastZmdTip)},
+  { 64, -1, sizeof(::MsgNotifyChatNormalMsg)},
+  { 72, -1, sizeof(::MsgNotifyChatTrumpetMsg)},
+  { 80, -1, sizeof(::MsgChatPlayerInfo)},
+  { 92, -1, sizeof(::MsgChatServerInfo)},
+  { 102, -1, sizeof(::MsgChatServerList)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgEmpty_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgCommonBool_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgCommonN32_default_instance_),
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_MsgCommonN64_default_instance_),
@@ -364,38 +388,39 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
 };
 
 const char descriptor_table_protodef_Common_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\014Common.proto\"\036\n\rMsgCommonBool\022\r\n\005value"
-  "\030\001 \001(\010\"\035\n\014MsgCommonN32\022\r\n\005value\030\001 \001(\005\"\035\n"
-  "\014MsgCommonN64\022\r\n\005value\030\001 \001(\003\"\035\n\014MsgCommo"
-  "nStr\022\r\n\005value\030\001 \001(\t\"\241\001\n\021MsgGameServerInf"
-  "o\022\n\n\002ip\030\001 \001(\005\022\014\n\004port\030\002 \001(\005\022\021\n\tserver_id"
-  "\030\003 \001(\005\022\022\n\nonline_num\030\004 \001(\005\022\017\n\007kind_id\030\005 "
-  "\001(\005\022\022\n\nroom_level\030\006 \001(\005\022\022\n\nlimit_gold\030\007 "
-  "\001(\005\022\022\n\nmax_player\030\010 \001(\005\"A\n\021MsgGameServer"
-  "List\022,\n\020game_server_list\030\001 \003(\0132\022.MsgGame"
-  "ServerInfo\"\345\001\n\022MsgBroadcastZmdTip\022\017\n\007use"
-  "r_id\030\001 \001(\005\022\017\n\007game_id\030\002 \001(\005\022\022\n\nroom_leve"
-  "l\030\003 \001(\005\022\020\n\010win_gold\030\004 \001(\004\022\021\n\tnick_name\030\005"
-  " \001(\t\022\020\n\010head_url\030\006 \001(\t\022\023\n\013language_id\030\007 "
-  "\001(\005\022\023\n\013template_id\030\010 \001(\005\022\021\n\tvip_level\030\t "
-  "\001(\005\022\024\n\014avatar_frame\030\n \001(\005\022\017\n\007content\030\013 \003"
-  "(\t\"I\n\026MsgNotifyChatNormalMsg\022\r\n\005index\030\001 "
-  "\001(\005\022\017\n\007user_id\030\002 \001(\005\022\017\n\007message\030\003 \001(\t\"b\n"
-  "\027MsgNotifyChatTrumpetMsg\022\r\n\005index\030\001 \001(\005\022"
-  "\'\n\013player_info\030\002 \001(\0132\022.MsgChatPlayerInfo"
-  "\022\017\n\007message\030\003 \001(\t\"\232\001\n\021MsgChatPlayerInfo\022"
-  "\017\n\007user_id\030\001 \001(\005\022\024\n\014beautiful_id\030\002 \001(\005\022\020"
-  "\n\010nickname\030\003 \001(\t\022\016\n\006avatar\030\004 \001(\t\022\021\n\tvip_"
-  "level\030\005 \001(\005\022\024\n\014avatar_frame\030\006 \001(\005\022\023\n\013cli"
-  "ent_type\030\007 \001(\005\"h\n\021MsgChatServerInfo\022\n\n\002i"
-  "p\030\001 \001(\005\022\014\n\004port\030\002 \001(\005\022\021\n\tserver_id\030\003 \001(\005"
-  "\022\022\n\nonline_num\030\004 \001(\005\022\022\n\nmax_player\030\005 \001(\005"
-  "\"A\n\021MsgChatServerList\022,\n\020chat_server_lis"
-  "t\030\001 \003(\0132\022.MsgChatServerInfob\006proto3"
+  "\n\014Common.proto\"\n\n\010MsgEmpty\"\036\n\rMsgCommonB"
+  "ool\022\r\n\005value\030\001 \001(\010\"\035\n\014MsgCommonN32\022\r\n\005va"
+  "lue\030\001 \001(\005\"\035\n\014MsgCommonN64\022\r\n\005value\030\001 \001(\003"
+  "\"\035\n\014MsgCommonStr\022\r\n\005value\030\001 \001(\t\"\241\001\n\021MsgG"
+  "ameServerInfo\022\n\n\002ip\030\001 \001(\005\022\014\n\004port\030\002 \001(\005\022"
+  "\021\n\tserver_id\030\003 \001(\005\022\022\n\nonline_num\030\004 \001(\005\022\017"
+  "\n\007kind_id\030\005 \001(\005\022\022\n\nroom_level\030\006 \001(\005\022\022\n\nl"
+  "imit_gold\030\007 \001(\005\022\022\n\nmax_player\030\010 \001(\005\"A\n\021M"
+  "sgGameServerList\022,\n\020game_server_list\030\001 \003"
+  "(\0132\022.MsgGameServerInfo\"\345\001\n\022MsgBroadcastZ"
+  "mdTip\022\017\n\007user_id\030\001 \001(\005\022\017\n\007game_id\030\002 \001(\005\022"
+  "\022\n\nroom_level\030\003 \001(\005\022\020\n\010win_gold\030\004 \001(\004\022\021\n"
+  "\tnick_name\030\005 \001(\t\022\020\n\010head_url\030\006 \001(\t\022\023\n\013la"
+  "nguage_id\030\007 \001(\005\022\023\n\013template_id\030\010 \001(\005\022\021\n\t"
+  "vip_level\030\t \001(\005\022\024\n\014avatar_frame\030\n \001(\005\022\017\n"
+  "\007content\030\013 \003(\t\"I\n\026MsgNotifyChatNormalMsg"
+  "\022\r\n\005index\030\001 \001(\005\022\017\n\007user_id\030\002 \001(\005\022\017\n\007mess"
+  "age\030\003 \001(\t\"b\n\027MsgNotifyChatTrumpetMsg\022\r\n\005"
+  "index\030\001 \001(\005\022\'\n\013player_info\030\002 \001(\0132\022.MsgCh"
+  "atPlayerInfo\022\017\n\007message\030\003 \001(\t\"\232\001\n\021MsgCha"
+  "tPlayerInfo\022\017\n\007user_id\030\001 \001(\005\022\024\n\014beautifu"
+  "l_id\030\002 \001(\005\022\020\n\010nickname\030\003 \001(\t\022\016\n\006avatar\030\004"
+  " \001(\t\022\021\n\tvip_level\030\005 \001(\005\022\024\n\014avatar_frame\030"
+  "\006 \001(\005\022\023\n\013client_type\030\007 \001(\005\"h\n\021MsgChatSer"
+  "verInfo\022\n\n\002ip\030\001 \001(\005\022\014\n\004port\030\002 \001(\005\022\021\n\tser"
+  "ver_id\030\003 \001(\005\022\022\n\nonline_num\030\004 \001(\005\022\022\n\nmax_"
+  "player\030\005 \001(\005\"A\n\021MsgChatServerList\022,\n\020cha"
+  "t_server_list\030\001 \003(\0132\022.MsgChatServerInfob"
+  "\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_Common_2eproto_deps[1] = {
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Common_2eproto_sccs[12] = {
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Common_2eproto_sccs[13] = {
   &scc_info_MsgBroadcastZmdTip_Common_2eproto.base,
   &scc_info_MsgChatPlayerInfo_Common_2eproto.base,
   &scc_info_MsgChatServerInfo_Common_2eproto.base,
@@ -404,6 +429,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Com
   &scc_info_MsgCommonN32_Common_2eproto.base,
   &scc_info_MsgCommonN64_Common_2eproto.base,
   &scc_info_MsgCommonStr_Common_2eproto.base,
+  &scc_info_MsgEmpty_Common_2eproto.base,
   &scc_info_MsgGameServerInfo_Common_2eproto.base,
   &scc_info_MsgGameServerList_Common_2eproto.base,
   &scc_info_MsgNotifyChatNormalMsg_Common_2eproto.base,
@@ -411,14 +437,176 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_Com
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_Common_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_Common_2eproto = {
-  false, false, descriptor_table_protodef_Common_2eproto, "Common.proto", 1115,
-  &descriptor_table_Common_2eproto_once, descriptor_table_Common_2eproto_sccs, descriptor_table_Common_2eproto_deps, 12, 0,
+  false, false, descriptor_table_protodef_Common_2eproto, "Common.proto", 1127,
+  &descriptor_table_Common_2eproto_once, descriptor_table_Common_2eproto_sccs, descriptor_table_Common_2eproto_deps, 13, 0,
   schemas, file_default_instances, TableStruct_Common_2eproto::offsets,
-  file_level_metadata_Common_2eproto, 12, file_level_enum_descriptors_Common_2eproto, file_level_service_descriptors_Common_2eproto,
+  file_level_metadata_Common_2eproto, 13, file_level_enum_descriptors_Common_2eproto, file_level_service_descriptors_Common_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
 static bool dynamic_init_dummy_Common_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_Common_2eproto)), true);
+
+// ===================================================================
+
+class MsgEmpty::_Internal {
+ public:
+};
+
+MsgEmpty::MsgEmpty(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+  SharedCtor();
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:MsgEmpty)
+}
+MsgEmpty::MsgEmpty(const MsgEmpty& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:MsgEmpty)
+}
+
+void MsgEmpty::SharedCtor() {
+}
+
+MsgEmpty::~MsgEmpty() {
+  // @@protoc_insertion_point(destructor:MsgEmpty)
+  SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+void MsgEmpty::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
+}
+
+void MsgEmpty::ArenaDtor(void* object) {
+  MsgEmpty* _this = reinterpret_cast< MsgEmpty* >(object);
+  (void)_this;
+}
+void MsgEmpty::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
+void MsgEmpty::SetCachedSize(int size) const {
+  _cached_size_.Set(size);
+}
+const MsgEmpty& MsgEmpty::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_MsgEmpty_Common_2eproto.base);
+  return *internal_default_instance();
+}
+
+
+void MsgEmpty::Clear() {
+// @@protoc_insertion_point(message_clear_start:MsgEmpty)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* MsgEmpty::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
+    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    CHK_(ptr);
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->SetLastTag(tag);
+          goto success;
+        }
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
+        CHK_(ptr != nullptr);
+        continue;
+  }  // while
+success:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto success;
+#undef CHK_
+}
+
+::PROTOBUF_NAMESPACE_ID::uint8* MsgEmpty::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:MsgEmpty)
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:MsgEmpty)
+  return target;
+}
+
+size_t MsgEmpty::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:MsgEmpty)
+  size_t total_size = 0;
+
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
+  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
+  SetCachedSize(cached_size);
+  return total_size;
+}
+
+void MsgEmpty::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:MsgEmpty)
+  GOOGLE_DCHECK_NE(&from, this);
+  const MsgEmpty* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MsgEmpty>(
+          &from);
+  if (source == nullptr) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:MsgEmpty)
+    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:MsgEmpty)
+    MergeFrom(*source);
+  }
+}
+
+void MsgEmpty::MergeFrom(const MsgEmpty& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:MsgEmpty)
+  GOOGLE_DCHECK_NE(&from, this);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  (void) cached_has_bits;
+
+}
+
+void MsgEmpty::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:MsgEmpty)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void MsgEmpty::CopyFrom(const MsgEmpty& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:MsgEmpty)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool MsgEmpty::IsInitialized() const {
+  return true;
+}
+
+void MsgEmpty::InternalSwap(MsgEmpty* other) {
+  using std::swap;
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata MsgEmpty::GetMetadata() const {
+  return GetMetadataStatic();
+}
+
 
 // ===================================================================
 
@@ -3678,6 +3866,9 @@ void MsgChatServerList::InternalSwap(MsgChatServerList* other) {
 
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN
+template<> PROTOBUF_NOINLINE ::MsgEmpty* Arena::CreateMaybeMessage< ::MsgEmpty >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::MsgEmpty >(arena);
+}
 template<> PROTOBUF_NOINLINE ::MsgCommonBool* Arena::CreateMaybeMessage< ::MsgCommonBool >(Arena* arena) {
   return Arena::CreateMessageInternal< ::MsgCommonBool >(arena);
 }

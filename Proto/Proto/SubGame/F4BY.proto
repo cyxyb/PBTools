@@ -118,8 +118,12 @@ enum EMsgIDSubGame
     BuyWings                = 1224;
     WaterDropInfo           = 1230;
     NotifyActStatus         = 1231;
+	SetDoubleShoot			= 1232;
     LotteryResult3002       = 20001;
     LotteryResult3005       = 20002;
+	FreePoolInfo			= 21001;
+	FreePoolLottery			= 21002;
+	FreePoolOpen			= 21003;
 }
 enum ErrCode
 {
@@ -361,6 +365,8 @@ message CSUserShoot
 	int32 ratio = 3;
 	int32 bullet_type = 4;
 	bool is_offset = 5;
+	int32 chair_id = 6;
+	int32 extra_mul = 7;
 }
 
 message SCUserShoot
@@ -377,6 +383,7 @@ message CSHitFish
 	int32 fish_uid = 1;
 	int32 bullet_id = 2;
 	repeated int32 screen_fishes = 3;
+	int32 chair_id = 4;
 }
 
 message MultiInfo
@@ -398,6 +405,7 @@ message SCHitFish
 	int32 magic_cube_multi = 8;
 	repeated MultiInfo multi_list = 9;
 	int32 origin_uid = 10;
+	repeated Object drop_props = 11;
 }
 
 message SCHitSpecialFish
@@ -418,6 +426,7 @@ message SCHitSpecialFish
 	int32 magic_cube_multi = 14;
 	repeated MultiInfo multi_list = 15;
 	int32 origin_uid = 16;
+	int64 dragon_score = 17;
 }
 
 message SyncPropInfoX
@@ -438,6 +447,7 @@ message UserSyncPropInfo
 message CSSyncPropInfo
 {
 	SyncPropInfoX info = 1;
+	int32 chair_idx = 2;
 }
 
 message SCSyncPropInfo
@@ -469,13 +479,15 @@ message FishTrace
 	bool is_aced = 5;
 	int64 alive_time = 6;
 	repeated int32 beads_list = 7;
+	int32 fish_torpedoId = 8;
+	int32 fish_road = 9;
 }
 
 message SCFishTracesList
 {
 	repeated FishTrace fish_traces = 1;
-	string fish_road = 2;
-	string fish_array = 3;
+	int32 fish_road = 2;
+	int32 fish_array = 3;
 	float create_interval = 4;
 	bool is_called = 5;
 	bool after_tide_first = 6;
@@ -484,7 +496,7 @@ message SCFishTracesList
 
 message CSSyncFishReq
 {
-	
+	int32 chair_id = 1;
 }
 
 message SCSyncFishReq
@@ -528,6 +540,7 @@ message CSLockFish
 {
 	int32 fish_uid = 1;
 	bool is_open = 2;
+	int32 chair_idx = 3;
 }
 
 message SCLockFish
@@ -1264,6 +1277,7 @@ message CSBombInfo
 {
 	float x = 1;
 	float y = 2;
+	int32 chair_idx = 3;
 }
 
 message SCSyncBomb
@@ -1289,7 +1303,8 @@ message SCSyncBombFinish
 message CSBombHitFishInfo
 {
 	int32 bombId = 1;
-	int32 fishId = 2;
+	repeated int32 fishId = 2;
+	int32 chair_idx = 3;
 }
 
 message SCGetMagicCube
@@ -1786,4 +1801,24 @@ message SCNotifyActStatus
 {
 	int32 act_type = 1;
 	int32 act_status = 2;
+}
+
+message CSSetDoubleShoot
+{
+	int32 extra_mul = 1;
+}
+
+message CSFreePoolInfo
+{
+	bool prepareLottery = 1;
+}
+
+message CSFreePoolLottery
+{
+	int32 level = 1;
+}
+
+message CSFreePoolOpen
+{
+	bool openFreePool = 1;
 }

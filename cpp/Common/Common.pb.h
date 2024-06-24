@@ -46,7 +46,7 @@ struct TableStruct_Common_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[12]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[13]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -77,6 +77,9 @@ extern MsgCommonN64DefaultTypeInternal _MsgCommonN64_default_instance_;
 class MsgCommonStr;
 class MsgCommonStrDefaultTypeInternal;
 extern MsgCommonStrDefaultTypeInternal _MsgCommonStr_default_instance_;
+class MsgEmpty;
+class MsgEmptyDefaultTypeInternal;
+extern MsgEmptyDefaultTypeInternal _MsgEmpty_default_instance_;
 class MsgGameServerInfo;
 class MsgGameServerInfoDefaultTypeInternal;
 extern MsgGameServerInfoDefaultTypeInternal _MsgGameServerInfo_default_instance_;
@@ -98,6 +101,7 @@ template<> ::MsgCommonBool* Arena::CreateMaybeMessage<::MsgCommonBool>(Arena*);
 template<> ::MsgCommonN32* Arena::CreateMaybeMessage<::MsgCommonN32>(Arena*);
 template<> ::MsgCommonN64* Arena::CreateMaybeMessage<::MsgCommonN64>(Arena*);
 template<> ::MsgCommonStr* Arena::CreateMaybeMessage<::MsgCommonStr>(Arena*);
+template<> ::MsgEmpty* Arena::CreateMaybeMessage<::MsgEmpty>(Arena*);
 template<> ::MsgGameServerInfo* Arena::CreateMaybeMessage<::MsgGameServerInfo>(Arena*);
 template<> ::MsgGameServerList* Arena::CreateMaybeMessage<::MsgGameServerList>(Arena*);
 template<> ::MsgNotifyChatNormalMsg* Arena::CreateMaybeMessage<::MsgNotifyChatNormalMsg>(Arena*);
@@ -105,6 +109,129 @@ template<> ::MsgNotifyChatTrumpetMsg* Arena::CreateMaybeMessage<::MsgNotifyChatT
 PROTOBUF_NAMESPACE_CLOSE
 
 // ===================================================================
+
+class MsgEmpty PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgEmpty) */ {
+ public:
+  inline MsgEmpty() : MsgEmpty(nullptr) {}
+  virtual ~MsgEmpty();
+
+  MsgEmpty(const MsgEmpty& from);
+  MsgEmpty(MsgEmpty&& from) noexcept
+    : MsgEmpty() {
+    *this = ::std::move(from);
+  }
+
+  inline MsgEmpty& operator=(const MsgEmpty& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline MsgEmpty& operator=(MsgEmpty&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const MsgEmpty& default_instance();
+
+  static inline const MsgEmpty* internal_default_instance() {
+    return reinterpret_cast<const MsgEmpty*>(
+               &_MsgEmpty_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    0;
+
+  friend void swap(MsgEmpty& a, MsgEmpty& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(MsgEmpty* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(MsgEmpty* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline MsgEmpty* New() const final {
+    return CreateMaybeMessage<MsgEmpty>(nullptr);
+  }
+
+  MsgEmpty* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<MsgEmpty>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const MsgEmpty& from);
+  void MergeFrom(const MsgEmpty& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(MsgEmpty* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "MsgEmpty";
+  }
+  protected:
+  explicit MsgEmpty(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_Common_2eproto);
+    return ::descriptor_table_Common_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // @@protoc_insertion_point(class_scope:MsgEmpty)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_Common_2eproto;
+};
+// -------------------------------------------------------------------
 
 class MsgCommonBool PROTOBUF_FINAL :
     public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:MsgCommonBool) */ {
@@ -147,7 +274,7 @@ class MsgCommonBool PROTOBUF_FINAL :
                &_MsgCommonBool_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    0;
+    1;
 
   friend void swap(MsgCommonBool& a, MsgCommonBool& b) {
     a.Swap(&b);
@@ -283,7 +410,7 @@ class MsgCommonN32 PROTOBUF_FINAL :
                &_MsgCommonN32_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    1;
+    2;
 
   friend void swap(MsgCommonN32& a, MsgCommonN32& b) {
     a.Swap(&b);
@@ -419,7 +546,7 @@ class MsgCommonN64 PROTOBUF_FINAL :
                &_MsgCommonN64_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    2;
+    3;
 
   friend void swap(MsgCommonN64& a, MsgCommonN64& b) {
     a.Swap(&b);
@@ -555,7 +682,7 @@ class MsgCommonStr PROTOBUF_FINAL :
                &_MsgCommonStr_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    3;
+    4;
 
   friend void swap(MsgCommonStr& a, MsgCommonStr& b) {
     a.Swap(&b);
@@ -698,7 +825,7 @@ class MsgGameServerInfo PROTOBUF_FINAL :
                &_MsgGameServerInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    4;
+    5;
 
   friend void swap(MsgGameServerInfo& a, MsgGameServerInfo& b) {
     a.Swap(&b);
@@ -911,7 +1038,7 @@ class MsgGameServerList PROTOBUF_FINAL :
                &_MsgGameServerList_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    5;
+    6;
 
   friend void swap(MsgGameServerList& a, MsgGameServerList& b) {
     a.Swap(&b);
@@ -1056,7 +1183,7 @@ class MsgBroadcastZmdTip PROTOBUF_FINAL :
                &_MsgBroadcastZmdTip_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    6;
+    7;
 
   friend void swap(MsgBroadcastZmdTip& a, MsgBroadcastZmdTip& b) {
     a.Swap(&b);
@@ -1331,7 +1458,7 @@ class MsgNotifyChatNormalMsg PROTOBUF_FINAL :
                &_MsgNotifyChatNormalMsg_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    7;
+    8;
 
   friend void swap(MsgNotifyChatNormalMsg& a, MsgNotifyChatNormalMsg& b) {
     a.Swap(&b);
@@ -1496,7 +1623,7 @@ class MsgNotifyChatTrumpetMsg PROTOBUF_FINAL :
                &_MsgNotifyChatTrumpetMsg_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    8;
+    9;
 
   friend void swap(MsgNotifyChatTrumpetMsg& a, MsgNotifyChatTrumpetMsg& b) {
     a.Swap(&b);
@@ -1670,7 +1797,7 @@ class MsgChatPlayerInfo PROTOBUF_FINAL :
                &_MsgChatPlayerInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    9;
+    10;
 
   friend void swap(MsgChatPlayerInfo& a, MsgChatPlayerInfo& b) {
     a.Swap(&b);
@@ -1886,7 +2013,7 @@ class MsgChatServerInfo PROTOBUF_FINAL :
                &_MsgChatServerInfo_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    10;
+    11;
 
   friend void swap(MsgChatServerInfo& a, MsgChatServerInfo& b) {
     a.Swap(&b);
@@ -2066,7 +2193,7 @@ class MsgChatServerList PROTOBUF_FINAL :
                &_MsgChatServerList_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
-    11;
+    12;
 
   friend void swap(MsgChatServerList& a, MsgChatServerList& b) {
     a.Swap(&b);
@@ -2177,6 +2304,10 @@ class MsgChatServerList PROTOBUF_FINAL :
   #pragma GCC diagnostic push
   #pragma GCC diagnostic ignored "-Wstrict-aliasing"
 #endif  // __GNUC__
+// MsgEmpty
+
+// -------------------------------------------------------------------
+
 // MsgCommonBool
 
 // bool value = 1;
@@ -3528,6 +3659,8 @@ MsgChatServerList::chat_server_list() const {
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
