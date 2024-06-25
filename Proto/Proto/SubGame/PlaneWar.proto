@@ -119,6 +119,7 @@ enum EMsgIDSubGame
 	FinishSpecial						= 122;
 	FinishRecoverScore					= 123;
 	MissileScore						= 124;
+	ExtraMul							= 125;
 }
 
 enum ErrorCode
@@ -433,6 +434,7 @@ message StateInfo
 	GunInfo gunInfo = 9;
 	FlameInfo flameInfo = 10;
 	SpecEffect specEffect = 11;
+	bool extra_mul = 12;
 }
 
 message MissileInfo
@@ -2375,4 +2377,15 @@ message CSSyncTextConfig
 message SCSyncTextConfig
 {
 	repeated TextInfo textList = 1;
+}
+
+message CSExtraMul
+{
+	bool extra_mul = 1;
+}
+
+message SCExtraMul
+{
+	int32 chairId = 1;
+	bool extra_mul = 2;
 }

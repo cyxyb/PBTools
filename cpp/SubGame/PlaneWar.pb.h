@@ -47,7 +47,7 @@ struct TableStruct_PlaneWar_2eproto {
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[301]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[303]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];
   static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];
@@ -109,6 +109,9 @@ extern CSExistUnReceiveRankRewardDefaultTypeInternal _CSExistUnReceiveRankReward
 class CSExplodeSettle;
 class CSExplodeSettleDefaultTypeInternal;
 extern CSExplodeSettleDefaultTypeInternal _CSExplodeSettle_default_instance_;
+class CSExtraMul;
+class CSExtraMulDefaultTypeInternal;
+extern CSExtraMulDefaultTypeInternal _CSExtraMul_default_instance_;
 class CSFallIntoBlackHole;
 class CSFallIntoBlackHoleDefaultTypeInternal;
 extern CSFallIntoBlackHoleDefaultTypeInternal _CSFallIntoBlackHole_default_instance_;
@@ -610,6 +613,9 @@ extern SCExistUnReceiveRankRewardDefaultTypeInternal _SCExistUnReceiveRankReward
 class SCExplodeSettle;
 class SCExplodeSettleDefaultTypeInternal;
 extern SCExplodeSettleDefaultTypeInternal _SCExplodeSettle_default_instance_;
+class SCExtraMul;
+class SCExtraMulDefaultTypeInternal;
+extern SCExtraMulDefaultTypeInternal _SCExtraMul_default_instance_;
 class SCFallIntoBlackHole;
 class SCFallIntoBlackHoleDefaultTypeInternal;
 extern SCFallIntoBlackHoleDefaultTypeInternal _SCFallIntoBlackHole_default_instance_;
@@ -978,6 +984,7 @@ template<> ::PlaneWar::CSConfirmWeaponExist* Arena::CreateMaybeMessage<::PlaneWa
 template<> ::PlaneWar::CSDrawPersonalPool* Arena::CreateMaybeMessage<::PlaneWar::CSDrawPersonalPool>(Arena*);
 template<> ::PlaneWar::CSExistUnReceiveRankReward* Arena::CreateMaybeMessage<::PlaneWar::CSExistUnReceiveRankReward>(Arena*);
 template<> ::PlaneWar::CSExplodeSettle* Arena::CreateMaybeMessage<::PlaneWar::CSExplodeSettle>(Arena*);
+template<> ::PlaneWar::CSExtraMul* Arena::CreateMaybeMessage<::PlaneWar::CSExtraMul>(Arena*);
 template<> ::PlaneWar::CSFallIntoBlackHole* Arena::CreateMaybeMessage<::PlaneWar::CSFallIntoBlackHole>(Arena*);
 template<> ::PlaneWar::CSGetGradeRankInfo* Arena::CreateMaybeMessage<::PlaneWar::CSGetGradeRankInfo>(Arena*);
 template<> ::PlaneWar::CSGetGradeRankList* Arena::CreateMaybeMessage<::PlaneWar::CSGetGradeRankList>(Arena*);
@@ -1145,6 +1152,7 @@ template<> ::PlaneWar::SCCommonRedEnvelopeInfo* Arena::CreateMaybeMessage<::Plan
 template<> ::PlaneWar::SCConfirmWeaponExist* Arena::CreateMaybeMessage<::PlaneWar::SCConfirmWeaponExist>(Arena*);
 template<> ::PlaneWar::SCExistUnReceiveRankReward* Arena::CreateMaybeMessage<::PlaneWar::SCExistUnReceiveRankReward>(Arena*);
 template<> ::PlaneWar::SCExplodeSettle* Arena::CreateMaybeMessage<::PlaneWar::SCExplodeSettle>(Arena*);
+template<> ::PlaneWar::SCExtraMul* Arena::CreateMaybeMessage<::PlaneWar::SCExtraMul>(Arena*);
 template<> ::PlaneWar::SCFallIntoBlackHole* Arena::CreateMaybeMessage<::PlaneWar::SCFallIntoBlackHole>(Arena*);
 template<> ::PlaneWar::SCGainNotify* Arena::CreateMaybeMessage<::PlaneWar::SCGainNotify>(Arena*);
 template<> ::PlaneWar::SCGainSettle* Arena::CreateMaybeMessage<::PlaneWar::SCGainSettle>(Arena*);
@@ -1380,12 +1388,13 @@ enum EMsgIDSubGame : int {
   FinishSpecial = 122,
   FinishRecoverScore = 123,
   MissileScore = 124,
+  ExtraMul = 125,
   EMsgIDSubGame_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
   EMsgIDSubGame_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
 bool EMsgIDSubGame_IsValid(int value);
 constexpr EMsgIDSubGame EMsgIDSubGame_MIN = Login;
-constexpr EMsgIDSubGame EMsgIDSubGame_MAX = MissileScore;
+constexpr EMsgIDSubGame EMsgIDSubGame_MAX = ExtraMul;
 constexpr int EMsgIDSubGame_ARRAYSIZE = EMsgIDSubGame_MAX + 1;
 
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* EMsgIDSubGame_descriptor();
@@ -5698,6 +5707,7 @@ class StateInfo PROTOBUF_FINAL :
     kFlameInfoFieldNumber = 10,
     kSpecEffectFieldNumber = 11,
     kIsBackFieldNumber = 1,
+    kExtraMulFieldNumber = 12,
   };
   // repeated .PlaneWar.BuffInfo buffList = 2;
   int bufflist_size() const;
@@ -5888,6 +5898,15 @@ class StateInfo PROTOBUF_FINAL :
   void _internal_set_isback(bool value);
   public:
 
+  // bool extra_mul = 12;
+  void clear_extra_mul();
+  bool extra_mul() const;
+  void set_extra_mul(bool value);
+  private:
+  bool _internal_extra_mul() const;
+  void _internal_set_extra_mul(bool value);
+  public:
+
   // @@protoc_insertion_point(class_scope:PlaneWar.StateInfo)
  private:
   class _Internal;
@@ -5906,6 +5925,7 @@ class StateInfo PROTOBUF_FINAL :
   ::PlaneWar::FlameInfo* flameinfo_;
   ::PlaneWar::SpecEffect* speceffect_;
   bool isback_;
+  bool extra_mul_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_PlaneWar_2eproto;
 };
@@ -51634,6 +51654,289 @@ class SCSyncTextConfig PROTOBUF_FINAL :
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_PlaneWar_2eproto;
 };
+// -------------------------------------------------------------------
+
+class CSExtraMul PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:PlaneWar.CSExtraMul) */ {
+ public:
+  inline CSExtraMul() : CSExtraMul(nullptr) {}
+  virtual ~CSExtraMul();
+
+  CSExtraMul(const CSExtraMul& from);
+  CSExtraMul(CSExtraMul&& from) noexcept
+    : CSExtraMul() {
+    *this = ::std::move(from);
+  }
+
+  inline CSExtraMul& operator=(const CSExtraMul& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CSExtraMul& operator=(CSExtraMul&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const CSExtraMul& default_instance();
+
+  static inline const CSExtraMul* internal_default_instance() {
+    return reinterpret_cast<const CSExtraMul*>(
+               &_CSExtraMul_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    301;
+
+  friend void swap(CSExtraMul& a, CSExtraMul& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(CSExtraMul* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CSExtraMul* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline CSExtraMul* New() const final {
+    return CreateMaybeMessage<CSExtraMul>(nullptr);
+  }
+
+  CSExtraMul* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<CSExtraMul>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const CSExtraMul& from);
+  void MergeFrom(const CSExtraMul& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(CSExtraMul* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "PlaneWar.CSExtraMul";
+  }
+  protected:
+  explicit CSExtraMul(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_PlaneWar_2eproto);
+    return ::descriptor_table_PlaneWar_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kExtraMulFieldNumber = 1,
+  };
+  // bool extra_mul = 1;
+  void clear_extra_mul();
+  bool extra_mul() const;
+  void set_extra_mul(bool value);
+  private:
+  bool _internal_extra_mul() const;
+  void _internal_set_extra_mul(bool value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:PlaneWar.CSExtraMul)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  bool extra_mul_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_PlaneWar_2eproto;
+};
+// -------------------------------------------------------------------
+
+class SCExtraMul PROTOBUF_FINAL :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:PlaneWar.SCExtraMul) */ {
+ public:
+  inline SCExtraMul() : SCExtraMul(nullptr) {}
+  virtual ~SCExtraMul();
+
+  SCExtraMul(const SCExtraMul& from);
+  SCExtraMul(SCExtraMul&& from) noexcept
+    : SCExtraMul() {
+    *this = ::std::move(from);
+  }
+
+  inline SCExtraMul& operator=(const SCExtraMul& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline SCExtraMul& operator=(SCExtraMul&& from) noexcept {
+    if (GetArena() == from.GetArena()) {
+      if (this != &from) InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return GetMetadataStatic().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return GetMetadataStatic().reflection;
+  }
+  static const SCExtraMul& default_instance();
+
+  static inline const SCExtraMul* internal_default_instance() {
+    return reinterpret_cast<const SCExtraMul*>(
+               &_SCExtraMul_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    302;
+
+  friend void swap(SCExtraMul& a, SCExtraMul& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(SCExtraMul* other) {
+    if (other == this) return;
+    if (GetArena() == other->GetArena()) {
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(SCExtraMul* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  inline SCExtraMul* New() const final {
+    return CreateMaybeMessage<SCExtraMul>(nullptr);
+  }
+
+  SCExtraMul* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {
+    return CreateMaybeMessage<SCExtraMul>(arena);
+  }
+  void CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) final;
+  void CopyFrom(const SCExtraMul& from);
+  void MergeFrom(const SCExtraMul& from);
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  ::PROTOBUF_NAMESPACE_ID::uint8* _InternalSerialize(
+      ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _cached_size_.Get(); }
+
+  private:
+  inline void SharedCtor();
+  inline void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(SCExtraMul* other);
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "PlaneWar.SCExtraMul";
+  }
+  protected:
+  explicit SCExtraMul(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  private:
+  static void ArenaDtor(void* object);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena* arena);
+  public:
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+  private:
+  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {
+    ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&::descriptor_table_PlaneWar_2eproto);
+    return ::descriptor_table_PlaneWar_2eproto.file_level_metadata[kIndexInFileMessages];
+  }
+
+  public:
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kChairIdFieldNumber = 1,
+    kExtraMulFieldNumber = 2,
+  };
+  // int32 chairId = 1;
+  void clear_chairid();
+  ::PROTOBUF_NAMESPACE_ID::int32 chairid() const;
+  void set_chairid(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_chairid() const;
+  void _internal_set_chairid(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // bool extra_mul = 2;
+  void clear_extra_mul();
+  bool extra_mul() const;
+  void set_extra_mul(bool value);
+  private:
+  bool _internal_extra_mul() const;
+  void _internal_set_extra_mul(bool value);
+  public:
+
+  // @@protoc_insertion_point(class_scope:PlaneWar.SCExtraMul)
+ private:
+  class _Internal;
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  ::PROTOBUF_NAMESPACE_ID::int32 chairid_;
+  bool extra_mul_;
+  mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+  friend struct ::TableStruct_PlaneWar_2eproto;
+};
 // ===================================================================
 
 
@@ -54687,6 +54990,26 @@ inline void StateInfo::set_allocated_speceffect(::PlaneWar::SpecEffect* speceffe
   }
   speceffect_ = speceffect;
   // @@protoc_insertion_point(field_set_allocated:PlaneWar.StateInfo.specEffect)
+}
+
+// bool extra_mul = 12;
+inline void StateInfo::clear_extra_mul() {
+  extra_mul_ = false;
+}
+inline bool StateInfo::_internal_extra_mul() const {
+  return extra_mul_;
+}
+inline bool StateInfo::extra_mul() const {
+  // @@protoc_insertion_point(field_get:PlaneWar.StateInfo.extra_mul)
+  return _internal_extra_mul();
+}
+inline void StateInfo::_internal_set_extra_mul(bool value) {
+  
+  extra_mul_ = value;
+}
+inline void StateInfo::set_extra_mul(bool value) {
+  _internal_set_extra_mul(value);
+  // @@protoc_insertion_point(field_set:PlaneWar.StateInfo.extra_mul)
 }
 
 // -------------------------------------------------------------------
@@ -82021,9 +82344,81 @@ SCSyncTextConfig::textlist() const {
   return textlist_;
 }
 
+// -------------------------------------------------------------------
+
+// CSExtraMul
+
+// bool extra_mul = 1;
+inline void CSExtraMul::clear_extra_mul() {
+  extra_mul_ = false;
+}
+inline bool CSExtraMul::_internal_extra_mul() const {
+  return extra_mul_;
+}
+inline bool CSExtraMul::extra_mul() const {
+  // @@protoc_insertion_point(field_get:PlaneWar.CSExtraMul.extra_mul)
+  return _internal_extra_mul();
+}
+inline void CSExtraMul::_internal_set_extra_mul(bool value) {
+  
+  extra_mul_ = value;
+}
+inline void CSExtraMul::set_extra_mul(bool value) {
+  _internal_set_extra_mul(value);
+  // @@protoc_insertion_point(field_set:PlaneWar.CSExtraMul.extra_mul)
+}
+
+// -------------------------------------------------------------------
+
+// SCExtraMul
+
+// int32 chairId = 1;
+inline void SCExtraMul::clear_chairid() {
+  chairid_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCExtraMul::_internal_chairid() const {
+  return chairid_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCExtraMul::chairid() const {
+  // @@protoc_insertion_point(field_get:PlaneWar.SCExtraMul.chairId)
+  return _internal_chairid();
+}
+inline void SCExtraMul::_internal_set_chairid(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  chairid_ = value;
+}
+inline void SCExtraMul::set_chairid(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_chairid(value);
+  // @@protoc_insertion_point(field_set:PlaneWar.SCExtraMul.chairId)
+}
+
+// bool extra_mul = 2;
+inline void SCExtraMul::clear_extra_mul() {
+  extra_mul_ = false;
+}
+inline bool SCExtraMul::_internal_extra_mul() const {
+  return extra_mul_;
+}
+inline bool SCExtraMul::extra_mul() const {
+  // @@protoc_insertion_point(field_get:PlaneWar.SCExtraMul.extra_mul)
+  return _internal_extra_mul();
+}
+inline void SCExtraMul::_internal_set_extra_mul(bool value) {
+  
+  extra_mul_ = value;
+}
+inline void SCExtraMul::set_extra_mul(bool value) {
+  _internal_set_extra_mul(value);
+  // @@protoc_insertion_point(field_set:PlaneWar.SCExtraMul.extra_mul)
+}
+
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------
