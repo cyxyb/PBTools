@@ -1215,6 +1215,7 @@ message SCUpgradePoolReward
 	PersonalPoolReward baseReward = 4;
 	PersonalPoolReward extraReward = 5;
 	int32 addLuckyValue = 6;
+	int32 index = 7;
 }
 
 message CSGetPoolLuckyReward

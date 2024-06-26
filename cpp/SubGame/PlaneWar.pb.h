@@ -23451,6 +23451,7 @@ class SCUpgradePoolReward PROTOBUF_FINAL :
     kResultFieldNumber = 2,
     kCurMoneyFieldNumber = 3,
     kAddLuckyValueFieldNumber = 6,
+    kIndexFieldNumber = 7,
   };
   // .PlaneWar.PersonalPoolReward baseReward = 4;
   bool has_basereward() const;
@@ -23524,6 +23525,15 @@ class SCUpgradePoolReward PROTOBUF_FINAL :
   void _internal_set_addluckyvalue(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 index = 7;
+  void clear_index();
+  ::PROTOBUF_NAMESPACE_ID::int32 index() const;
+  void set_index(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_index() const;
+  void _internal_set_index(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:PlaneWar.SCUpgradePoolReward)
  private:
   class _Internal;
@@ -23537,6 +23547,7 @@ class SCUpgradePoolReward PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 result_;
   ::PROTOBUF_NAMESPACE_ID::int64 curmoney_;
   ::PROTOBUF_NAMESPACE_ID::int32 addluckyvalue_;
+  ::PROTOBUF_NAMESPACE_ID::int32 index_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_PlaneWar_2eproto;
 };
@@ -66585,6 +66596,26 @@ inline void SCUpgradePoolReward::_internal_set_addluckyvalue(::PROTOBUF_NAMESPAC
 inline void SCUpgradePoolReward::set_addluckyvalue(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_addluckyvalue(value);
   // @@protoc_insertion_point(field_set:PlaneWar.SCUpgradePoolReward.addLuckyValue)
+}
+
+// int32 index = 7;
+inline void SCUpgradePoolReward::clear_index() {
+  index_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCUpgradePoolReward::_internal_index() const {
+  return index_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCUpgradePoolReward::index() const {
+  // @@protoc_insertion_point(field_get:PlaneWar.SCUpgradePoolReward.index)
+  return _internal_index();
+}
+inline void SCUpgradePoolReward::_internal_set_index(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  index_ = value;
+}
+inline void SCUpgradePoolReward::set_index(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_index(value);
+  // @@protoc_insertion_point(field_set:PlaneWar.SCUpgradePoolReward.index)
 }
 
 // -------------------------------------------------------------------
