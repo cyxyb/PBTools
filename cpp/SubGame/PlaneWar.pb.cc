@@ -8787,7 +8787,7 @@ const char descriptor_table_protodef_PlaneWar_2eproto[] PROTOBUF_SECTION_VARIABL
   ")\n\027SCSetPersonalPoolEnable\022\016\n\006enable\030\001 \001"
   "(\010\"$\n\022CSPersonalPoolInfo\022\016\n\006isOpen\030\001 \001(\010"
   "\"[\n\022PersonalPoolReward\022\014\n\004type\030\001 \001(\005\022\n\n\002"
-  "id\030\002 \001(\005\022\013\n\003num\030\003 \001(\005\022\020\n\010clientID\030\004 \001(\t\022"
+  "id\030\002 \001(\005\022\013\n\003num\030\003 \001(\005\022\020\n\010clientID\030\004 \001(\005\022"
   "\014\n\004name\030\005 \001(\t\"}\n\025PersonalPoolLevelInfo\022\r"
   "\n\005level\030\001 \001(\005\022\023\n\013targetValue\030\002 \001(\005\0220\n\nre"
   "wardList\030\003 \003(\0132\034.PlaneWar.PersonalPoolRe"
@@ -42163,30 +42163,24 @@ PersonalPoolReward::PersonalPoolReward(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 PersonalPoolReward::PersonalPoolReward(const PersonalPoolReward& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  clientid_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (!from._internal_clientid().empty()) {
-    clientid_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_clientid(), 
-      GetArena());
-  }
   name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (!from._internal_name().empty()) {
     name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_name(), 
       GetArena());
   }
   ::memcpy(&type_, &from.type_,
-    static_cast<size_t>(reinterpret_cast<char*>(&num_) -
-    reinterpret_cast<char*>(&type_)) + sizeof(num_));
+    static_cast<size_t>(reinterpret_cast<char*>(&clientid_) -
+    reinterpret_cast<char*>(&type_)) + sizeof(clientid_));
   // @@protoc_insertion_point(copy_constructor:PlaneWar.PersonalPoolReward)
 }
 
 void PersonalPoolReward::SharedCtor() {
   ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_PersonalPoolReward_PlaneWar_2eproto.base);
-  clientid_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
       reinterpret_cast<char*>(&type_) - reinterpret_cast<char*>(this)),
-      0, static_cast<size_t>(reinterpret_cast<char*>(&num_) -
-      reinterpret_cast<char*>(&type_)) + sizeof(num_));
+      0, static_cast<size_t>(reinterpret_cast<char*>(&clientid_) -
+      reinterpret_cast<char*>(&type_)) + sizeof(clientid_));
 }
 
 PersonalPoolReward::~PersonalPoolReward() {
@@ -42197,7 +42191,6 @@ PersonalPoolReward::~PersonalPoolReward() {
 
 void PersonalPoolReward::SharedDtor() {
   GOOGLE_DCHECK(GetArena() == nullptr);
-  clientid_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -42222,11 +42215,10 @@ void PersonalPoolReward::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  clientid_.ClearToEmpty();
   name_.ClearToEmpty();
   ::memset(&type_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&num_) -
-      reinterpret_cast<char*>(&type_)) + sizeof(num_));
+      reinterpret_cast<char*>(&clientid_) -
+      reinterpret_cast<char*>(&type_)) + sizeof(clientid_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -42258,12 +42250,10 @@ const char* PersonalPoolReward::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // string clientID = 4;
+      // int32 clientID = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
-          auto str = _internal_mutable_clientid();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "PlaneWar.PersonalPoolReward.clientID"));
+        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+          clientid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -42322,14 +42312,10 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_num(), target);
   }
 
-  // string clientID = 4;
-  if (this->clientid().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_clientid().data(), static_cast<int>(this->_internal_clientid().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "PlaneWar.PersonalPoolReward.clientID");
-    target = stream->WriteStringMaybeAliased(
-        4, this->_internal_clientid(), target);
+  // int32 clientID = 4;
+  if (this->clientid() != 0) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_clientid(), target);
   }
 
   // string name = 5;
@@ -42358,13 +42344,6 @@ size_t PersonalPoolReward::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string clientID = 4;
-  if (this->clientid().size() > 0) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_clientid());
-  }
-
   // string name = 5;
   if (this->name().size() > 0) {
     total_size += 1 +
@@ -42391,6 +42370,13 @@ size_t PersonalPoolReward::ByteSizeLong() const {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_num());
+  }
+
+  // int32 clientID = 4;
+  if (this->clientid() != 0) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        this->_internal_clientid());
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -42424,9 +42410,6 @@ void PersonalPoolReward::MergeFrom(const PersonalPoolReward& from) {
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from.clientid().size() > 0) {
-    _internal_set_clientid(from._internal_clientid());
-  }
   if (from.name().size() > 0) {
     _internal_set_name(from._internal_name());
   }
@@ -42438,6 +42421,9 @@ void PersonalPoolReward::MergeFrom(const PersonalPoolReward& from) {
   }
   if (from.num() != 0) {
     _internal_set_num(from._internal_num());
+  }
+  if (from.clientid() != 0) {
+    _internal_set_clientid(from._internal_clientid());
   }
 }
 
@@ -42462,11 +42448,10 @@ bool PersonalPoolReward::IsInitialized() const {
 void PersonalPoolReward::InternalSwap(PersonalPoolReward* other) {
   using std::swap;
   _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  clientid_.Swap(&other->clientid_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   name_.Swap(&other->name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(PersonalPoolReward, num_)
-      + sizeof(PersonalPoolReward::num_)
+      PROTOBUF_FIELD_OFFSET(PersonalPoolReward, clientid_)
+      + sizeof(PersonalPoolReward::clientid_)
       - PROTOBUF_FIELD_OFFSET(PersonalPoolReward, type_)>(
           reinterpret_cast<char*>(&type_),
           reinterpret_cast<char*>(&other->type_));

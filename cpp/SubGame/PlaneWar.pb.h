@@ -22234,28 +22234,12 @@ class PersonalPoolReward PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kClientIDFieldNumber = 4,
     kNameFieldNumber = 5,
     kTypeFieldNumber = 1,
     kIdFieldNumber = 2,
     kNumFieldNumber = 3,
+    kClientIDFieldNumber = 4,
   };
-  // string clientID = 4;
-  void clear_clientid();
-  const std::string& clientid() const;
-  void set_clientid(const std::string& value);
-  void set_clientid(std::string&& value);
-  void set_clientid(const char* value);
-  void set_clientid(const char* value, size_t size);
-  std::string* mutable_clientid();
-  std::string* release_clientid();
-  void set_allocated_clientid(std::string* clientid);
-  private:
-  const std::string& _internal_clientid() const;
-  void _internal_set_clientid(const std::string& value);
-  std::string* _internal_mutable_clientid();
-  public:
-
   // string name = 5;
   void clear_name();
   const std::string& name() const;
@@ -22299,6 +22283,15 @@ class PersonalPoolReward PROTOBUF_FINAL :
   void _internal_set_num(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 clientID = 4;
+  void clear_clientid();
+  ::PROTOBUF_NAMESPACE_ID::int32 clientid() const;
+  void set_clientid(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_clientid() const;
+  void _internal_set_clientid(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:PlaneWar.PersonalPoolReward)
  private:
   class _Internal;
@@ -22306,11 +22299,11 @@ class PersonalPoolReward PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr clientid_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr name_;
   ::PROTOBUF_NAMESPACE_ID::int32 type_;
   ::PROTOBUF_NAMESPACE_ID::int32 id_;
   ::PROTOBUF_NAMESPACE_ID::int32 num_;
+  ::PROTOBUF_NAMESPACE_ID::int32 clientid_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_PlaneWar_2eproto;
 };
@@ -65625,65 +65618,24 @@ inline void PersonalPoolReward::set_num(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:PlaneWar.PersonalPoolReward.num)
 }
 
-// string clientID = 4;
+// int32 clientID = 4;
 inline void PersonalPoolReward::clear_clientid() {
-  clientid_.ClearToEmpty();
+  clientid_ = 0;
 }
-inline const std::string& PersonalPoolReward::clientid() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 PersonalPoolReward::_internal_clientid() const {
+  return clientid_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 PersonalPoolReward::clientid() const {
   // @@protoc_insertion_point(field_get:PlaneWar.PersonalPoolReward.clientID)
   return _internal_clientid();
 }
-inline void PersonalPoolReward::set_clientid(const std::string& value) {
+inline void PersonalPoolReward::_internal_set_clientid(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  clientid_ = value;
+}
+inline void PersonalPoolReward::set_clientid(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_clientid(value);
   // @@protoc_insertion_point(field_set:PlaneWar.PersonalPoolReward.clientID)
-}
-inline std::string* PersonalPoolReward::mutable_clientid() {
-  // @@protoc_insertion_point(field_mutable:PlaneWar.PersonalPoolReward.clientID)
-  return _internal_mutable_clientid();
-}
-inline const std::string& PersonalPoolReward::_internal_clientid() const {
-  return clientid_.Get();
-}
-inline void PersonalPoolReward::_internal_set_clientid(const std::string& value) {
-  
-  clientid_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
-}
-inline void PersonalPoolReward::set_clientid(std::string&& value) {
-  
-  clientid_.Set(
-    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
-  // @@protoc_insertion_point(field_set_rvalue:PlaneWar.PersonalPoolReward.clientID)
-}
-inline void PersonalPoolReward::set_clientid(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  
-  clientid_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
-  // @@protoc_insertion_point(field_set_char:PlaneWar.PersonalPoolReward.clientID)
-}
-inline void PersonalPoolReward::set_clientid(const char* value,
-    size_t size) {
-  
-  clientid_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
-      reinterpret_cast<const char*>(value), size), GetArena());
-  // @@protoc_insertion_point(field_set_pointer:PlaneWar.PersonalPoolReward.clientID)
-}
-inline std::string* PersonalPoolReward::_internal_mutable_clientid() {
-  
-  return clientid_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
-}
-inline std::string* PersonalPoolReward::release_clientid() {
-  // @@protoc_insertion_point(field_release:PlaneWar.PersonalPoolReward.clientID)
-  return clientid_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-}
-inline void PersonalPoolReward::set_allocated_clientid(std::string* clientid) {
-  if (clientid != nullptr) {
-    
-  } else {
-    
-  }
-  clientid_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), clientid,
-      GetArena());
-  // @@protoc_insertion_point(field_set_allocated:PlaneWar.PersonalPoolReward.clientID)
 }
 
 // string name = 5;

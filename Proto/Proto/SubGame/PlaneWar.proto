@@ -1158,7 +1158,7 @@ message PersonalPoolReward
 	int32 type = 1;
 	int32 id = 2;
 	int32 num = 3;
-	string clientID = 4;
+	int32 clientID = 4;
 	string name = 5;
 }
 

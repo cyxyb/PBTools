@@ -274,7 +274,7 @@ namespace PlaneWar {
             "bGUSDgoGZW5hYmxlGAEgASgIIikKF1NDU2V0UGVyc29uYWxQb29sRW5hYmxl",
             "Eg4KBmVuYWJsZRgBIAEoCCIkChJDU1BlcnNvbmFsUG9vbEluZm8SDgoGaXNP",
             "cGVuGAEgASgIIlsKElBlcnNvbmFsUG9vbFJld2FyZBIMCgR0eXBlGAEgASgF",
-            "EgoKAmlkGAIgASgFEgsKA251bRgDIAEoBRIQCghjbGllbnRJRBgEIAEoCRIM",
+            "EgoKAmlkGAIgASgFEgsKA251bRgDIAEoBRIQCghjbGllbnRJRBgEIAEoBRIM",
             "CgRuYW1lGAUgASgJIn0KFVBlcnNvbmFsUG9vbExldmVsSW5mbxINCgVsZXZl",
             "bBgBIAEoBRITCgt0YXJnZXRWYWx1ZRgCIAEoBRIwCgpyZXdhcmRMaXN0GAMg",
             "AygLMhwuUGxhbmVXYXIuUGVyc29uYWxQb29sUmV3YXJkEg4KBnJld2FyZBgE",
@@ -32602,12 +32602,12 @@ namespace PlaneWar {
 
     /// <summary>Field number for the "clientID" field.</summary>
     public const int ClientIDFieldNumber = 4;
-    private string clientID_ = "";
+    private int clientID_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string ClientID {
+    public int ClientID {
       get { return clientID_; }
       set {
-        clientID_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        clientID_ = value;
       }
     }
 
@@ -32649,7 +32649,7 @@ namespace PlaneWar {
       if (Type != 0) hash ^= Type.GetHashCode();
       if (Id != 0) hash ^= Id.GetHashCode();
       if (Num != 0) hash ^= Num.GetHashCode();
-      if (ClientID.Length != 0) hash ^= ClientID.GetHashCode();
+      if (ClientID != 0) hash ^= ClientID.GetHashCode();
       if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -32679,9 +32679,9 @@ namespace PlaneWar {
         output.WriteRawTag(24);
         output.WriteInt32(Num);
       }
-      if (ClientID.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteString(ClientID);
+      if (ClientID != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(ClientID);
       }
       if (Name.Length != 0) {
         output.WriteRawTag(42);
@@ -32708,9 +32708,9 @@ namespace PlaneWar {
         output.WriteRawTag(24);
         output.WriteInt32(Num);
       }
-      if (ClientID.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteString(ClientID);
+      if (ClientID != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(ClientID);
       }
       if (Name.Length != 0) {
         output.WriteRawTag(42);
@@ -32734,8 +32734,8 @@ namespace PlaneWar {
       if (Num != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Num);
       }
-      if (ClientID.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ClientID);
+      if (ClientID != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ClientID);
       }
       if (Name.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
@@ -32760,7 +32760,7 @@ namespace PlaneWar {
       if (other.Num != 0) {
         Num = other.Num;
       }
-      if (other.ClientID.Length != 0) {
+      if (other.ClientID != 0) {
         ClientID = other.ClientID;
       }
       if (other.Name.Length != 0) {
@@ -32792,8 +32792,8 @@ namespace PlaneWar {
             Num = input.ReadInt32();
             break;
           }
-          case 34: {
-            ClientID = input.ReadString();
+          case 32: {
+            ClientID = input.ReadInt32();
             break;
           }
           case 42: {
@@ -32826,8 +32826,8 @@ namespace PlaneWar {
             Num = input.ReadInt32();
             break;
           }
-          case 34: {
-            ClientID = input.ReadString();
+          case 32: {
+            ClientID = input.ReadInt32();
             break;
           }
           case 42: {
