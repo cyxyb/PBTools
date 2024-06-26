@@ -1199,6 +1199,7 @@ message SCDrawPersonalPool
 	repeated PersonalPoolReward missReward = 3;
 	int64 curMoney = 4;
 	int32 upgradeCost = 5;
+	int32 index	= 6;
 }
 
 message CSUpgradePoolReward

@@ -23105,6 +23105,7 @@ class SCDrawPersonalPool PROTOBUF_FINAL :
     kChairFieldNumber = 1,
     kUpgradeCostFieldNumber = 5,
     kCurMoneyFieldNumber = 4,
+    kIndexFieldNumber = 6,
   };
   // repeated .PlaneWar.PersonalPoolReward missReward = 3;
   int missreward_size() const;
@@ -23169,6 +23170,15 @@ class SCDrawPersonalPool PROTOBUF_FINAL :
   void _internal_set_curmoney(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
+  // int32 index = 6;
+  void clear_index();
+  ::PROTOBUF_NAMESPACE_ID::int32 index() const;
+  void set_index(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_index() const;
+  void _internal_set_index(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:PlaneWar.SCDrawPersonalPool)
  private:
   class _Internal;
@@ -23181,6 +23191,7 @@ class SCDrawPersonalPool PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 chair_;
   ::PROTOBUF_NAMESPACE_ID::int32 upgradecost_;
   ::PROTOBUF_NAMESPACE_ID::int64 curmoney_;
+  ::PROTOBUF_NAMESPACE_ID::int32 index_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_PlaneWar_2eproto;
 };
@@ -66280,6 +66291,26 @@ inline void SCDrawPersonalPool::_internal_set_upgradecost(::PROTOBUF_NAMESPACE_I
 inline void SCDrawPersonalPool::set_upgradecost(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_upgradecost(value);
   // @@protoc_insertion_point(field_set:PlaneWar.SCDrawPersonalPool.upgradeCost)
+}
+
+// int32 index = 6;
+inline void SCDrawPersonalPool::clear_index() {
+  index_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCDrawPersonalPool::_internal_index() const {
+  return index_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCDrawPersonalPool::index() const {
+  // @@protoc_insertion_point(field_get:PlaneWar.SCDrawPersonalPool.index)
+  return _internal_index();
+}
+inline void SCDrawPersonalPool::_internal_set_index(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  index_ = value;
+}
+inline void SCDrawPersonalPool::set_index(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_index(value);
+  // @@protoc_insertion_point(field_set:PlaneWar.SCDrawPersonalPool.index)
 }
 
 // -------------------------------------------------------------------
