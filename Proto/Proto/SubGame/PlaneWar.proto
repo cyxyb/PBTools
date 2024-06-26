@@ -1190,9 +1190,13 @@ message SCPersonalPoolInfo
 
 message CSDrawPersonalPool
 {
+}
+
+message SCDrawPersonalPool
+{
 	int32 chair = 1;
 	PersonalPoolReward reward = 2;
-	PersonalPoolReward missReward = 3;
+	repeated PersonalPoolReward missReward = 3;
 	int64 curMoney = 4;
 	int32 upgradeCost = 5;
 }
