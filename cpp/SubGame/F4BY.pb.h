@@ -5587,8 +5587,8 @@ class SCHitFish PROTOBUF_FINAL :
     kDropPropsFieldNumber = 11,
     kChairIdxFieldNumber = 1,
     kFishUidFieldNumber = 2,
-    kEarnFieldNumber = 3,
     kUserScoreFieldNumber = 4,
+    kEarnFieldNumber = 3,
     kFishValueFieldNumber = 5,
     kMultipleFieldNumber = 6,
     kHitBulletTypeFieldNumber = 7,
@@ -5649,15 +5649,6 @@ class SCHitFish PROTOBUF_FINAL :
   void _internal_set_fish_uid(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int64 earn = 3;
-  void clear_earn();
-  ::PROTOBUF_NAMESPACE_ID::int64 earn() const;
-  void set_earn(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_earn() const;
-  void _internal_set_earn(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
   // int64 user_score = 4;
   void clear_user_score();
   ::PROTOBUF_NAMESPACE_ID::int64 user_score() const;
@@ -5667,13 +5658,22 @@ class SCHitFish PROTOBUF_FINAL :
   void _internal_set_user_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // int64 fish_value = 5;
-  void clear_fish_value();
-  ::PROTOBUF_NAMESPACE_ID::int64 fish_value() const;
-  void set_fish_value(::PROTOBUF_NAMESPACE_ID::int64 value);
+  // int32 earn = 3;
+  void clear_earn();
+  ::PROTOBUF_NAMESPACE_ID::int32 earn() const;
+  void set_earn(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_fish_value() const;
-  void _internal_set_fish_value(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_earn() const;
+  void _internal_set_earn(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 fish_value = 5;
+  void clear_fish_value();
+  ::PROTOBUF_NAMESPACE_ID::int32 fish_value() const;
+  void set_fish_value(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_fish_value() const;
+  void _internal_set_fish_value(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 multiple = 6;
@@ -5723,9 +5723,9 @@ class SCHitFish PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::Object > drop_props_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx_;
   ::PROTOBUF_NAMESPACE_ID::int32 fish_uid_;
-  ::PROTOBUF_NAMESPACE_ID::int64 earn_;
   ::PROTOBUF_NAMESPACE_ID::int64 user_score_;
-  ::PROTOBUF_NAMESPACE_ID::int64 fish_value_;
+  ::PROTOBUF_NAMESPACE_ID::int32 earn_;
+  ::PROTOBUF_NAMESPACE_ID::int32 fish_value_;
   ::PROTOBUF_NAMESPACE_ID::int32 multiple_;
   ::PROTOBUF_NAMESPACE_ID::int32 hit_bullet_type_;
   ::PROTOBUF_NAMESPACE_ID::int32 magic_cube_multi_;
@@ -5862,8 +5862,8 @@ class SCHitSpecialFish PROTOBUF_FINAL :
     kHitBulletTypeFieldNumber = 12,
     kPropNoFieldNumber = 13,
     kMagicCubeMultiFieldNumber = 14,
-    kDragonScoreFieldNumber = 17,
     kOriginUidFieldNumber = 16,
+    kDragonScoreFieldNumber = 17,
   };
   // repeated .F4BY.Object shock_fishes = 9;
   int shock_fishes_size() const;
@@ -5955,22 +5955,22 @@ class SCHitSpecialFish PROTOBUF_FINAL :
   void _internal_set_fish_uid(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int64 earn = 3;
+  // int32 earn = 3;
   void clear_earn();
-  ::PROTOBUF_NAMESPACE_ID::int64 earn() const;
-  void set_earn(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 earn() const;
+  void set_earn(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_earn() const;
-  void _internal_set_earn(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_earn() const;
+  void _internal_set_earn(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int64 fish_value = 4;
+  // int32 fish_value = 4;
   void clear_fish_value();
-  ::PROTOBUF_NAMESPACE_ID::int64 fish_value() const;
-  void set_fish_value(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 fish_value() const;
+  void set_fish_value(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_fish_value() const;
-  void _internal_set_fish_value(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_fish_value() const;
+  void _internal_set_fish_value(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int64 user_score = 5;
@@ -6036,15 +6036,6 @@ class SCHitSpecialFish PROTOBUF_FINAL :
   void _internal_set_magic_cube_multi(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int64 dragon_score = 17;
-  void clear_dragon_score();
-  ::PROTOBUF_NAMESPACE_ID::int64 dragon_score() const;
-  void set_dragon_score(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_dragon_score() const;
-  void _internal_set_dragon_score(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
   // int32 origin_uid = 16;
   void clear_origin_uid();
   ::PROTOBUF_NAMESPACE_ID::int32 origin_uid() const;
@@ -6052,6 +6043,15 @@ class SCHitSpecialFish PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::int32 _internal_origin_uid() const;
   void _internal_set_origin_uid(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 dragon_score = 17;
+  void clear_dragon_score();
+  ::PROTOBUF_NAMESPACE_ID::int32 dragon_score() const;
+  void set_dragon_score(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_dragon_score() const;
+  void _internal_set_dragon_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:F4BY.SCHitSpecialFish)
@@ -6067,8 +6067,8 @@ class SCHitSpecialFish PROTOBUF_FINAL :
   ::F4BY::WheelObject* wheel_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx_;
   ::PROTOBUF_NAMESPACE_ID::int32 fish_uid_;
-  ::PROTOBUF_NAMESPACE_ID::int64 earn_;
-  ::PROTOBUF_NAMESPACE_ID::int64 fish_value_;
+  ::PROTOBUF_NAMESPACE_ID::int32 earn_;
+  ::PROTOBUF_NAMESPACE_ID::int32 fish_value_;
   ::PROTOBUF_NAMESPACE_ID::int64 user_score_;
   bool death_;
   ::PROTOBUF_NAMESPACE_ID::int32 grow_stage_;
@@ -6076,8 +6076,8 @@ class SCHitSpecialFish PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 hit_bullet_type_;
   ::PROTOBUF_NAMESPACE_ID::int32 prop_no_;
   ::PROTOBUF_NAMESPACE_ID::int32 magic_cube_multi_;
-  ::PROTOBUF_NAMESPACE_ID::int64 dragon_score_;
   ::PROTOBUF_NAMESPACE_ID::int32 origin_uid_;
+  ::PROTOBUF_NAMESPACE_ID::int32 dragon_score_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
 };
@@ -6977,22 +6977,13 @@ class SCSyncMoney PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kScoreFieldNumber = 2,
     kChairIdxFieldNumber = 1,
+    kScoreFieldNumber = 2,
     kTypeFieldNumber = 3,
     kDeltaFieldNumber = 4,
     kTicketFieldNumber = 5,
     kVipFieldNumber = 6,
   };
-  // int64 score = 2;
-  void clear_score();
-  ::PROTOBUF_NAMESPACE_ID::int64 score() const;
-  void set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_score() const;
-  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
   // int32 chair_idx = 1;
   void clear_chair_idx();
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx() const;
@@ -7000,6 +6991,15 @@ class SCSyncMoney PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::int32 _internal_chair_idx() const;
   void _internal_set_chair_idx(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 score = 2;
+  void clear_score();
+  ::PROTOBUF_NAMESPACE_ID::int32 score() const;
+  void set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_score() const;
+  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 type = 3;
@@ -7045,8 +7045,8 @@ class SCSyncMoney PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int64 score_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx_;
+  ::PROTOBUF_NAMESPACE_ID::int32 score_;
   ::PROTOBUF_NAMESPACE_ID::int32 type_;
   ::PROTOBUF_NAMESPACE_ID::int32 delta_;
   ::PROTOBUF_NAMESPACE_ID::int32 ticket_;
@@ -7173,8 +7173,8 @@ class FishTrace PROTOBUF_FINAL :
     kFishTypeFieldNumber = 2,
     kFishLayerFieldNumber = 3,
     kFishStageFieldNumber = 4,
-    kAliveTimeFieldNumber = 6,
     kIsAcedFieldNumber = 5,
+    kAliveTimeFieldNumber = 6,
     kFishTorpedoIdFieldNumber = 8,
     kFishRoadFieldNumber = 9,
   };
@@ -7236,15 +7236,6 @@ class FishTrace PROTOBUF_FINAL :
   void _internal_set_fish_stage(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int64 alive_time = 6;
-  void clear_alive_time();
-  ::PROTOBUF_NAMESPACE_ID::int64 alive_time() const;
-  void set_alive_time(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_alive_time() const;
-  void _internal_set_alive_time(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
   // bool is_aced = 5;
   void clear_is_aced();
   bool is_aced() const;
@@ -7252,6 +7243,15 @@ class FishTrace PROTOBUF_FINAL :
   private:
   bool _internal_is_aced() const;
   void _internal_set_is_aced(bool value);
+  public:
+
+  // int32 alive_time = 6;
+  void clear_alive_time();
+  ::PROTOBUF_NAMESPACE_ID::int32 alive_time() const;
+  void set_alive_time(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_alive_time() const;
+  void _internal_set_alive_time(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 fish_torpedoId = 8;
@@ -7285,8 +7285,8 @@ class FishTrace PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 fish_type_;
   ::PROTOBUF_NAMESPACE_ID::int32 fish_layer_;
   ::PROTOBUF_NAMESPACE_ID::int32 fish_stage_;
-  ::PROTOBUF_NAMESPACE_ID::int64 alive_time_;
   bool is_aced_;
+  ::PROTOBUF_NAMESPACE_ID::int32 alive_time_;
   ::PROTOBUF_NAMESPACE_ID::int32 fish_torpedoid_;
   ::PROTOBUF_NAMESPACE_ID::int32 fish_road_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
@@ -11944,8 +11944,8 @@ class JumpHighArena PROTOBUF_FINAL :
     kTipsFieldNumber = 5,
     kIsOpenFieldNumber = 1,
     kVipFieldNumber = 2,
-    kGameTimeFieldNumber = 4,
     kCoinFieldNumber = 3,
+    kGameTimeFieldNumber = 4,
   };
   // string tips = 5;
   void clear_tips();
@@ -11981,15 +11981,6 @@ class JumpHighArena PROTOBUF_FINAL :
   void _internal_set_vip(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int64 game_time = 4;
-  void clear_game_time();
-  ::PROTOBUF_NAMESPACE_ID::int64 game_time() const;
-  void set_game_time(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_game_time() const;
-  void _internal_set_game_time(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
   // int32 coin = 3;
   void clear_coin();
   ::PROTOBUF_NAMESPACE_ID::int32 coin() const;
@@ -11997,6 +11988,15 @@ class JumpHighArena PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::int32 _internal_coin() const;
   void _internal_set_coin(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 game_time = 4;
+  void clear_game_time();
+  ::PROTOBUF_NAMESPACE_ID::int32 game_time() const;
+  void set_game_time(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_game_time() const;
+  void _internal_set_game_time(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:F4BY.JumpHighArena)
@@ -12009,8 +12009,8 @@ class JumpHighArena PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr tips_;
   bool is_open_;
   ::PROTOBUF_NAMESPACE_ID::int32 vip_;
-  ::PROTOBUF_NAMESPACE_ID::int64 game_time_;
   ::PROTOBUF_NAMESPACE_ID::int32 coin_;
+  ::PROTOBUF_NAMESPACE_ID::int32 game_time_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
 };
@@ -12601,8 +12601,8 @@ class SCGainAward PROTOBUF_FINAL :
 
   enum : int {
     kAwardFieldNumber = 3,
-    kScoreFieldNumber = 2,
     kChairIdxFieldNumber = 1,
+    kScoreFieldNumber = 2,
   };
   // .F4BY.Object award = 3;
   bool has_award() const;
@@ -12622,15 +12622,6 @@ class SCGainAward PROTOBUF_FINAL :
       ::F4BY::Object* award);
   ::F4BY::Object* unsafe_arena_release_award();
 
-  // int64 score = 2;
-  void clear_score();
-  ::PROTOBUF_NAMESPACE_ID::int64 score() const;
-  void set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_score() const;
-  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
   // int32 chair_idx = 1;
   void clear_chair_idx();
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx() const;
@@ -12638,6 +12629,15 @@ class SCGainAward PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::int32 _internal_chair_idx() const;
   void _internal_set_chair_idx(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 score = 2;
+  void clear_score();
+  ::PROTOBUF_NAMESPACE_ID::int32 score() const;
+  void set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_score() const;
+  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:F4BY.SCGainAward)
@@ -12648,8 +12648,8 @@ class SCGainAward PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::F4BY::Object* award_;
-  ::PROTOBUF_NAMESPACE_ID::int64 score_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx_;
+  ::PROTOBUF_NAMESPACE_ID::int32 score_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
 };
@@ -17312,24 +17312,15 @@ class SCTorpedoHit PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kEarnFieldNumber = 2,
     kChairIdxFieldNumber = 1,
-    kPropIdFieldNumber = 4,
+    kEarnFieldNumber = 2,
     kScoreFieldNumber = 3,
+    kPropIdFieldNumber = 4,
     kRemainFieldNumber = 5,
     kFishUidFieldNumber = 6,
     kXFieldNumber = 7,
     kYFieldNumber = 8,
   };
-  // int64 earn = 2;
-  void clear_earn();
-  ::PROTOBUF_NAMESPACE_ID::int64 earn() const;
-  void set_earn(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_earn() const;
-  void _internal_set_earn(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
   // int32 chair_idx = 1;
   void clear_chair_idx();
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx() const;
@@ -17339,6 +17330,24 @@ class SCTorpedoHit PROTOBUF_FINAL :
   void _internal_set_chair_idx(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 earn = 2;
+  void clear_earn();
+  ::PROTOBUF_NAMESPACE_ID::int32 earn() const;
+  void set_earn(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_earn() const;
+  void _internal_set_earn(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 score = 3;
+  void clear_score();
+  ::PROTOBUF_NAMESPACE_ID::int32 score() const;
+  void set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_score() const;
+  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // int32 propId = 4;
   void clear_propid();
   ::PROTOBUF_NAMESPACE_ID::int32 propid() const;
@@ -17346,15 +17355,6 @@ class SCTorpedoHit PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::int32 _internal_propid() const;
   void _internal_set_propid(::PROTOBUF_NAMESPACE_ID::int32 value);
-  public:
-
-  // int64 score = 3;
-  void clear_score();
-  ::PROTOBUF_NAMESPACE_ID::int64 score() const;
-  void set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_score() const;
-  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
   // int32 remain = 5;
@@ -17400,10 +17400,10 @@ class SCTorpedoHit PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int64 earn_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx_;
+  ::PROTOBUF_NAMESPACE_ID::int32 earn_;
+  ::PROTOBUF_NAMESPACE_ID::int32 score_;
   ::PROTOBUF_NAMESPACE_ID::int32 propid_;
-  ::PROTOBUF_NAMESPACE_ID::int64 score_;
   ::PROTOBUF_NAMESPACE_ID::int32 remain_;
   ::PROTOBUF_NAMESPACE_ID::int32 fish_uid_;
   float x_;
@@ -18968,13 +18968,13 @@ class SCSevenDayInfo PROTOBUF_FINAL :
   void _internal_set_get_remain(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int64 remain_score = 5;
+  // int32 remain_score = 5;
   void clear_remain_score();
-  ::PROTOBUF_NAMESPACE_ID::int64 remain_score() const;
-  void set_remain_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 remain_score() const;
+  void set_remain_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_remain_score() const;
-  void _internal_set_remain_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_remain_score() const;
+  void _internal_set_remain_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 ticket = 6;
@@ -19007,7 +19007,7 @@ class SCSevenDayInfo PROTOBUF_FINAL :
   ::F4BY::SevenDayDetail* detail_;
   ::PROTOBUF_NAMESPACE_ID::int32 cur_day_;
   ::PROTOBUF_NAMESPACE_ID::int32 get_remain_;
-  ::PROTOBUF_NAMESPACE_ID::int64 remain_score_;
+  ::PROTOBUF_NAMESPACE_ID::int32 remain_score_;
   ::PROTOBUF_NAMESPACE_ID::int32 ticket_;
   ::PROTOBUF_NAMESPACE_ID::int32 gun_enable_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
@@ -19307,13 +19307,13 @@ class SCSevenDayAward PROTOBUF_FINAL :
       ::F4BY::SevenDayDetail* task);
   ::F4BY::SevenDayDetail* unsafe_arena_release_task();
 
-  // int64 score = 1;
+  // int32 score = 1;
   void clear_score();
-  ::PROTOBUF_NAMESPACE_ID::int64 score() const;
-  void set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 score() const;
+  void set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_score() const;
-  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_score() const;
+  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 ticket = 2;
@@ -19333,7 +19333,7 @@ class SCSevenDayAward PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::F4BY::SevenDayDetail* task_;
-  ::PROTOBUF_NAMESPACE_ID::int64 score_;
+  ::PROTOBUF_NAMESPACE_ID::int32 score_;
   ::PROTOBUF_NAMESPACE_ID::int32 ticket_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
@@ -19455,13 +19455,13 @@ class SCVipChargeAward PROTOBUF_FINAL :
     kScoreFieldNumber = 1,
     kTicketFieldNumber = 2,
   };
-  // int64 score = 1;
+  // int32 score = 1;
   void clear_score();
-  ::PROTOBUF_NAMESPACE_ID::int64 score() const;
-  void set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 score() const;
+  void set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_score() const;
-  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_score() const;
+  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 ticket = 2;
@@ -19480,7 +19480,7 @@ class SCVipChargeAward PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int64 score_;
+  ::PROTOBUF_NAMESPACE_ID::int32 score_;
   ::PROTOBUF_NAMESPACE_ID::int32 ticket_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
@@ -21497,14 +21497,14 @@ class SCTreasureFishCatched PROTOBUF_FINAL :
     kMultiListFieldNumber = 13,
     kChairIdxFieldNumber = 1,
     kRatioFieldNumber = 2,
-    kFishValueFieldNumber = 4,
     kFishUidFieldNumber = 3,
-    kMultipleFieldNumber = 6,
+    kFishValueFieldNumber = 4,
     kAccumMoneyFieldNumber = 5,
+    kMultipleFieldNumber = 6,
     kEarnFieldNumber = 8,
-    kUserScoreFieldNumber = 9,
     kDeathFieldNumber = 7,
     kDisplayMultipleFieldNumber = 10,
+    kUserScoreFieldNumber = 9,
     kCurStageFieldNumber = 11,
     kMagicCubeMultiFieldNumber = 12,
     kOriginUidFieldNumber = 14,
@@ -21545,15 +21545,6 @@ class SCTreasureFishCatched PROTOBUF_FINAL :
   void _internal_set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int64 fish_value = 4;
-  void clear_fish_value();
-  ::PROTOBUF_NAMESPACE_ID::int64 fish_value() const;
-  void set_fish_value(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_fish_value() const;
-  void _internal_set_fish_value(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
   // int32 fish_uid = 3;
   void clear_fish_uid();
   ::PROTOBUF_NAMESPACE_ID::int32 fish_uid() const;
@@ -21561,6 +21552,24 @@ class SCTreasureFishCatched PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::int32 _internal_fish_uid() const;
   void _internal_set_fish_uid(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 fish_value = 4;
+  void clear_fish_value();
+  ::PROTOBUF_NAMESPACE_ID::int32 fish_value() const;
+  void set_fish_value(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_fish_value() const;
+  void _internal_set_fish_value(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 accum_money = 5;
+  void clear_accum_money();
+  ::PROTOBUF_NAMESPACE_ID::int32 accum_money() const;
+  void set_accum_money(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_accum_money() const;
+  void _internal_set_accum_money(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 multiple = 6;
@@ -21572,31 +21581,13 @@ class SCTreasureFishCatched PROTOBUF_FINAL :
   void _internal_set_multiple(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int64 accum_money = 5;
-  void clear_accum_money();
-  ::PROTOBUF_NAMESPACE_ID::int64 accum_money() const;
-  void set_accum_money(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_accum_money() const;
-  void _internal_set_accum_money(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
-  // int64 earn = 8;
+  // int32 earn = 8;
   void clear_earn();
-  ::PROTOBUF_NAMESPACE_ID::int64 earn() const;
-  void set_earn(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 earn() const;
+  void set_earn(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_earn() const;
-  void _internal_set_earn(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
-  // int64 user_score = 9;
-  void clear_user_score();
-  ::PROTOBUF_NAMESPACE_ID::int64 user_score() const;
-  void set_user_score(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_user_score() const;
-  void _internal_set_user_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_earn() const;
+  void _internal_set_earn(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // bool death = 7;
@@ -21615,6 +21606,15 @@ class SCTreasureFishCatched PROTOBUF_FINAL :
   private:
   bool _internal_display_multiple() const;
   void _internal_set_display_multiple(bool value);
+  public:
+
+  // int64 user_score = 9;
+  void clear_user_score();
+  ::PROTOBUF_NAMESPACE_ID::int64 user_score() const;
+  void set_user_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int64 _internal_user_score() const;
+  void _internal_set_user_score(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
   // int32 cur_stage = 11;
@@ -21654,14 +21654,14 @@ class SCTreasureFishCatched PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::MultiInfo > multi_list_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx_;
   ::PROTOBUF_NAMESPACE_ID::int32 ratio_;
-  ::PROTOBUF_NAMESPACE_ID::int64 fish_value_;
   ::PROTOBUF_NAMESPACE_ID::int32 fish_uid_;
+  ::PROTOBUF_NAMESPACE_ID::int32 fish_value_;
+  ::PROTOBUF_NAMESPACE_ID::int32 accum_money_;
   ::PROTOBUF_NAMESPACE_ID::int32 multiple_;
-  ::PROTOBUF_NAMESPACE_ID::int64 accum_money_;
-  ::PROTOBUF_NAMESPACE_ID::int64 earn_;
-  ::PROTOBUF_NAMESPACE_ID::int64 user_score_;
+  ::PROTOBUF_NAMESPACE_ID::int32 earn_;
   bool death_;
   bool display_multiple_;
+  ::PROTOBUF_NAMESPACE_ID::int64 user_score_;
   ::PROTOBUF_NAMESPACE_ID::int32 cur_stage_;
   ::PROTOBUF_NAMESPACE_ID::int32 magic_cube_multi_;
   ::PROTOBUF_NAMESPACE_ID::int32 origin_uid_;
@@ -23342,13 +23342,13 @@ class LuckyTaskInfo PROTOBUF_FINAL :
   void _internal_set_status(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int64 score = 3;
+  // int32 score = 3;
   void clear_score();
-  ::PROTOBUF_NAMESPACE_ID::int64 score() const;
-  void set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 score() const;
+  void set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_score() const;
-  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_score() const;
+  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 amount = 5;
@@ -23379,7 +23379,7 @@ class LuckyTaskInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr text_;
   ::PROTOBUF_NAMESPACE_ID::int32 id_;
   ::PROTOBUF_NAMESPACE_ID::int32 status_;
-  ::PROTOBUF_NAMESPACE_ID::int64 score_;
+  ::PROTOBUF_NAMESPACE_ID::int32 score_;
   ::PROTOBUF_NAMESPACE_ID::int32 amount_;
   ::PROTOBUF_NAMESPACE_ID::int32 target_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
@@ -23754,13 +23754,13 @@ class SCLuckyDrawInfo PROTOBUF_FINAL :
   void _internal_set_day_remain_sec(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int64 score = 6;
+  // int32 score = 6;
   void clear_score();
-  ::PROTOBUF_NAMESPACE_ID::int64 score() const;
-  void set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 score() const;
+  void set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_score() const;
-  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_score() const;
+  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 hour_total = 7;
@@ -23842,7 +23842,7 @@ class SCLuckyDrawInfo PROTOBUF_FINAL :
   mutable std::atomic<int> _hour_lucky_nums_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::int32 hour_remain_sec_;
   ::PROTOBUF_NAMESPACE_ID::int32 day_remain_sec_;
-  ::PROTOBUF_NAMESPACE_ID::int64 score_;
+  ::PROTOBUF_NAMESPACE_ID::int32 score_;
   ::PROTOBUF_NAMESPACE_ID::int32 hour_total_;
   ::PROTOBUF_NAMESPACE_ID::int32 day_total_;
   ::PROTOBUF_NAMESPACE_ID::int32 hour_award_num_;
@@ -24125,13 +24125,13 @@ class SCGetLuckyTaskAward PROTOBUF_FINAL :
       ::F4BY::LuckyTaskInfo* task);
   ::F4BY::LuckyTaskInfo* unsafe_arena_release_task();
 
-  // int64 score = 2;
+  // int32 score = 2;
   void clear_score();
-  ::PROTOBUF_NAMESPACE_ID::int64 score() const;
-  void set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 score() const;
+  void set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_score() const;
-  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_score() const;
+  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 code = 3;
@@ -24151,7 +24151,7 @@ class SCGetLuckyTaskAward PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::F4BY::LuckyTaskInfo* task_;
-  ::PROTOBUF_NAMESPACE_ID::int64 score_;
+  ::PROTOBUF_NAMESPACE_ID::int32 score_;
   ::PROTOBUF_NAMESPACE_ID::int32 code_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
@@ -24432,13 +24432,13 @@ class SCGetLuckyNum PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_lucky_nums();
 
-  // int64 score = 1;
+  // int32 score = 1;
   void clear_score();
-  ::PROTOBUF_NAMESPACE_ID::int64 score() const;
-  void set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 score() const;
+  void set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_score() const;
-  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_score() const;
+  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 error_code = 2;
@@ -24459,7 +24459,7 @@ class SCGetLuckyNum PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > lucky_nums_;
   mutable std::atomic<int> _lucky_nums_cached_byte_size_;
-  ::PROTOBUF_NAMESPACE_ID::int64 score_;
+  ::PROTOBUF_NAMESPACE_ID::int32 score_;
   ::PROTOBUF_NAMESPACE_ID::int32 error_code_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
@@ -25803,8 +25803,8 @@ class SCSyncBomb PROTOBUF_FINAL :
     kXFieldNumber = 4,
     kYFieldNumber = 5,
     kNextXFieldNumber = 6,
-    kScoreFieldNumber = 8,
     kNextYFieldNumber = 7,
+    kScoreFieldNumber = 8,
     kIsFinishFieldNumber = 9,
   };
   // int32 chair_idx = 1;
@@ -25861,15 +25861,6 @@ class SCSyncBomb PROTOBUF_FINAL :
   void _internal_set_nextx(float value);
   public:
 
-  // int64 score = 8;
-  void clear_score();
-  ::PROTOBUF_NAMESPACE_ID::int64 score() const;
-  void set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_score() const;
-  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
   // float nextY = 7;
   void clear_nexty();
   float nexty() const;
@@ -25877,6 +25868,15 @@ class SCSyncBomb PROTOBUF_FINAL :
   private:
   float _internal_nexty() const;
   void _internal_set_nexty(float value);
+  public:
+
+  // int32 score = 8;
+  void clear_score();
+  ::PROTOBUF_NAMESPACE_ID::int32 score() const;
+  void set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_score() const;
+  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // bool isFinish = 9;
@@ -25901,8 +25901,8 @@ class SCSyncBomb PROTOBUF_FINAL :
   float x_;
   float y_;
   float nextx_;
-  ::PROTOBUF_NAMESPACE_ID::int64 score_;
   float nexty_;
+  ::PROTOBUF_NAMESPACE_ID::int32 score_;
   bool isfinish_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
@@ -26043,13 +26043,13 @@ class SCSyncBombFinish PROTOBUF_FINAL :
   void _internal_set_bombid(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int64 returnMoney = 3;
+  // int32 returnMoney = 3;
   void clear_returnmoney();
-  ::PROTOBUF_NAMESPACE_ID::int64 returnmoney() const;
-  void set_returnmoney(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 returnmoney() const;
+  void set_returnmoney(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_returnmoney() const;
-  void _internal_set_returnmoney(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_returnmoney() const;
+  void _internal_set_returnmoney(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:F4BY.SCSyncBombFinish)
@@ -26061,7 +26061,7 @@ class SCSyncBombFinish PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx_;
   ::PROTOBUF_NAMESPACE_ID::int32 bombid_;
-  ::PROTOBUF_NAMESPACE_ID::int64 returnmoney_;
+  ::PROTOBUF_NAMESPACE_ID::int32 returnmoney_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
 };
@@ -27335,18 +27335,9 @@ class FrozenFish PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kFrozenTimeFieldNumber = 2,
     kFishIdFieldNumber = 1,
+    kFrozenTimeFieldNumber = 2,
   };
-  // int64 frozen_time = 2;
-  void clear_frozen_time();
-  ::PROTOBUF_NAMESPACE_ID::int64 frozen_time() const;
-  void set_frozen_time(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_frozen_time() const;
-  void _internal_set_frozen_time(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
   // int32 fish_id = 1;
   void clear_fish_id();
   ::PROTOBUF_NAMESPACE_ID::int32 fish_id() const;
@@ -27356,6 +27347,15 @@ class FrozenFish PROTOBUF_FINAL :
   void _internal_set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 frozen_time = 2;
+  void clear_frozen_time();
+  ::PROTOBUF_NAMESPACE_ID::int32 frozen_time() const;
+  void set_frozen_time(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_frozen_time() const;
+  void _internal_set_frozen_time(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:F4BY.FrozenFish)
  private:
   class _Internal;
@@ -27363,8 +27363,8 @@ class FrozenFish PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int64 frozen_time_;
   ::PROTOBUF_NAMESPACE_ID::int32 fish_id_;
+  ::PROTOBUF_NAMESPACE_ID::int32 frozen_time_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
 };
@@ -28223,8 +28223,8 @@ class SCBombGlobeFishInfo PROTOBUF_FINAL :
     kRatioFieldNumber = 2,
     kFishUidFieldNumber = 3,
     kStageFieldNumber = 4,
-    kTotalEarnFieldNumber = 6,
     kBombIdFieldNumber = 5,
+    kTotalEarnFieldNumber = 6,
     kSelfBombIdFieldNumber = 7,
     kOriginIdFieldNumber = 8,
   };
@@ -28264,15 +28264,6 @@ class SCBombGlobeFishInfo PROTOBUF_FINAL :
   void _internal_set_stage(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int64 total_earn = 6;
-  void clear_total_earn();
-  ::PROTOBUF_NAMESPACE_ID::int64 total_earn() const;
-  void set_total_earn(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_total_earn() const;
-  void _internal_set_total_earn(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
   // int32 bombId = 5;
   void clear_bombid();
   ::PROTOBUF_NAMESPACE_ID::int32 bombid() const;
@@ -28280,6 +28271,15 @@ class SCBombGlobeFishInfo PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::int32 _internal_bombid() const;
   void _internal_set_bombid(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 total_earn = 6;
+  void clear_total_earn();
+  ::PROTOBUF_NAMESPACE_ID::int32 total_earn() const;
+  void set_total_earn(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_total_earn() const;
+  void _internal_set_total_earn(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 self_bombId = 7;
@@ -28311,8 +28311,8 @@ class SCBombGlobeFishInfo PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 ratio_;
   ::PROTOBUF_NAMESPACE_ID::int32 fish_uid_;
   ::PROTOBUF_NAMESPACE_ID::int32 stage_;
-  ::PROTOBUF_NAMESPACE_ID::int64 total_earn_;
   ::PROTOBUF_NAMESPACE_ID::int32 bombid_;
+  ::PROTOBUF_NAMESPACE_ID::int32 total_earn_;
   ::PROTOBUF_NAMESPACE_ID::int32 self_bombid_;
   ::PROTOBUF_NAMESPACE_ID::int32 originid_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
@@ -28627,13 +28627,13 @@ class SCAnniversaryShowSelect PROTOBUF_FINAL :
   void _internal_set_show_select(bool value);
   public:
 
-  // int64 remain_time = 3;
+  // int32 remain_time = 3;
   void clear_remain_time();
-  ::PROTOBUF_NAMESPACE_ID::int64 remain_time() const;
-  void set_remain_time(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 remain_time() const;
+  void set_remain_time(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_remain_time() const;
-  void _internal_set_remain_time(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_remain_time() const;
+  void _internal_set_remain_time(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 stage = 4;
@@ -28654,7 +28654,7 @@ class SCAnniversaryShowSelect PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx_;
   bool show_select_;
-  ::PROTOBUF_NAMESPACE_ID::int64 remain_time_;
+  ::PROTOBUF_NAMESPACE_ID::int32 remain_time_;
   ::PROTOBUF_NAMESPACE_ID::int32 stage_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
@@ -28912,13 +28912,13 @@ class AnniversaryStage1Result PROTOBUF_FINAL :
     kScoreFieldNumber = 1,
     kFishUidFieldNumber = 2,
   };
-  // int64 score = 1;
+  // int32 score = 1;
   void clear_score();
-  ::PROTOBUF_NAMESPACE_ID::int64 score() const;
-  void set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 score() const;
+  void set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_score() const;
-  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_score() const;
+  void _internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 fish_uid = 2;
@@ -28937,7 +28937,7 @@ class AnniversaryStage1Result PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int64 score_;
+  ::PROTOBUF_NAMESPACE_ID::int32 score_;
   ::PROTOBUF_NAMESPACE_ID::int32 fish_uid_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
@@ -29060,26 +29060,26 @@ class AnniversaryStage2Result PROTOBUF_FINAL :
     kDropTimesFieldNumber = 2,
     kMultipleFieldNumber = 3,
   };
-  // repeated int64 score_list = 1;
+  // repeated int32 score_list = 1;
   int score_list_size() const;
   private:
   int _internal_score_list_size() const;
   public:
   void clear_score_list();
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_score_list(int index) const;
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_score_list(int index) const;
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
       _internal_score_list() const;
-  void _internal_add_score_list(::PROTOBUF_NAMESPACE_ID::int64 value);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
+  void _internal_add_score_list(::PROTOBUF_NAMESPACE_ID::int32 value);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       _internal_mutable_score_list();
   public:
-  ::PROTOBUF_NAMESPACE_ID::int64 score_list(int index) const;
-  void set_score_list(int index, ::PROTOBUF_NAMESPACE_ID::int64 value);
-  void add_score_list(::PROTOBUF_NAMESPACE_ID::int64 value);
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
+  ::PROTOBUF_NAMESPACE_ID::int32 score_list(int index) const;
+  void set_score_list(int index, ::PROTOBUF_NAMESPACE_ID::int32 value);
+  void add_score_list(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
       score_list() const;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
       mutable_score_list();
 
   // int32 drop_times = 2;
@@ -29107,7 +29107,7 @@ class AnniversaryStage2Result PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 > score_list_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 > score_list_;
   mutable std::atomic<int> _score_list_cached_byte_size_;
   ::PROTOBUF_NAMESPACE_ID::int32 drop_times_;
   ::PROTOBUF_NAMESPACE_ID::int32 multiple_;
@@ -29382,8 +29382,8 @@ class SCAnniversarySelectResult PROTOBUF_FINAL :
     kChairIdxFieldNumber = 1,
     kStageFieldNumber = 2,
     kBtRatioFieldNumber = 3,
-    kDeathFieldNumber = 6,
     kTotalEarnFieldNumber = 5,
+    kDeathFieldNumber = 6,
   };
   // repeated .F4BY.MultiInfo multi_list = 4;
   int multi_list_size() const;
@@ -29484,6 +29484,15 @@ class SCAnniversarySelectResult PROTOBUF_FINAL :
   void _internal_set_bt_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 total_earn = 5;
+  void clear_total_earn();
+  ::PROTOBUF_NAMESPACE_ID::int32 total_earn() const;
+  void set_total_earn(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_total_earn() const;
+  void _internal_set_total_earn(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // bool death = 6;
   void clear_death();
   bool death() const;
@@ -29491,15 +29500,6 @@ class SCAnniversarySelectResult PROTOBUF_FINAL :
   private:
   bool _internal_death() const;
   void _internal_set_death(bool value);
-  public:
-
-  // int64 total_earn = 5;
-  void clear_total_earn();
-  ::PROTOBUF_NAMESPACE_ID::int64 total_earn() const;
-  void set_total_earn(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_total_earn() const;
-  void _internal_set_total_earn(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
   // @@protoc_insertion_point(class_scope:F4BY.SCAnniversarySelectResult)
@@ -29516,8 +29516,8 @@ class SCAnniversarySelectResult PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx_;
   ::PROTOBUF_NAMESPACE_ID::int32 stage_;
   ::PROTOBUF_NAMESPACE_ID::int32 bt_ratio_;
+  ::PROTOBUF_NAMESPACE_ID::int32 total_earn_;
   bool death_;
-  ::PROTOBUF_NAMESPACE_ID::int64 total_earn_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
 };
@@ -29850,22 +29850,22 @@ class SCSyncAnniversaryHitStage PROTOBUF_FINAL :
   void _internal_set_stage(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int64 total_earn = 5;
+  // int32 total_earn = 5;
   void clear_total_earn();
-  ::PROTOBUF_NAMESPACE_ID::int64 total_earn() const;
-  void set_total_earn(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 total_earn() const;
+  void set_total_earn(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_total_earn() const;
-  void _internal_set_total_earn(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_total_earn() const;
+  void _internal_set_total_earn(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int64 invalid_earn = 6;
+  // int32 invalid_earn = 6;
   void clear_invalid_earn();
-  ::PROTOBUF_NAMESPACE_ID::int64 invalid_earn() const;
-  void set_invalid_earn(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 invalid_earn() const;
+  void set_invalid_earn(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_invalid_earn() const;
-  void _internal_set_invalid_earn(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_invalid_earn() const;
+  void _internal_set_invalid_earn(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:F4BY.SCSyncAnniversaryHitStage)
@@ -29879,8 +29879,8 @@ class SCSyncAnniversaryHitStage PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::int32 origin_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 self_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 stage_;
-  ::PROTOBUF_NAMESPACE_ID::int64 total_earn_;
-  ::PROTOBUF_NAMESPACE_ID::int64 invalid_earn_;
+  ::PROTOBUF_NAMESPACE_ID::int32 total_earn_;
+  ::PROTOBUF_NAMESPACE_ID::int32 invalid_earn_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
 };
@@ -30180,8 +30180,8 @@ class SCCaptureScallop PROTOBUF_FINAL :
     kRewardConfigFieldNumber = 6,
     kChairIdxFieldNumber = 1,
     kFishUidFieldNumber = 2,
-    kTimeFieldNumber = 4,
     kRatioFieldNumber = 3,
+    kTimeFieldNumber = 4,
   };
   // repeated .F4BY.ScallopLottery lottery_list = 5;
   int lottery_list_size() const;
@@ -30237,15 +30237,6 @@ class SCCaptureScallop PROTOBUF_FINAL :
   void _internal_set_fish_uid(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int64 time = 4;
-  void clear_time();
-  ::PROTOBUF_NAMESPACE_ID::int64 time() const;
-  void set_time(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_time() const;
-  void _internal_set_time(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
   // int32 ratio = 3;
   void clear_ratio();
   ::PROTOBUF_NAMESPACE_ID::int32 ratio() const;
@@ -30253,6 +30244,15 @@ class SCCaptureScallop PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::int32 _internal_ratio() const;
   void _internal_set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 time = 4;
+  void clear_time();
+  ::PROTOBUF_NAMESPACE_ID::int32 time() const;
+  void set_time(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_time() const;
+  void _internal_set_time(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:F4BY.SCCaptureScallop)
@@ -30266,8 +30266,8 @@ class SCCaptureScallop PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::Obj > reward_config_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx_;
   ::PROTOBUF_NAMESPACE_ID::int32 fish_uid_;
-  ::PROTOBUF_NAMESPACE_ID::int64 time_;
   ::PROTOBUF_NAMESPACE_ID::int32 ratio_;
+  ::PROTOBUF_NAMESPACE_ID::int32 time_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
 };
@@ -30679,8 +30679,8 @@ class SCSettleScallopLottery PROTOBUF_FINAL :
   enum : int {
     kLotteryListFieldNumber = 3,
     kMultiListFieldNumber = 4,
-    kEarnFieldNumber = 2,
     kChairIdxFieldNumber = 1,
+    kEarnFieldNumber = 2,
   };
   // repeated .F4BY.ScallopLottery lottery_list = 3;
   int lottery_list_size() const;
@@ -30718,15 +30718,6 @@ class SCSettleScallopLottery PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::MultiInfo >&
       multi_list() const;
 
-  // int64 earn = 2;
-  void clear_earn();
-  ::PROTOBUF_NAMESPACE_ID::int64 earn() const;
-  void set_earn(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_earn() const;
-  void _internal_set_earn(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
   // int32 chair_idx = 1;
   void clear_chair_idx();
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx() const;
@@ -30734,6 +30725,15 @@ class SCSettleScallopLottery PROTOBUF_FINAL :
   private:
   ::PROTOBUF_NAMESPACE_ID::int32 _internal_chair_idx() const;
   void _internal_set_chair_idx(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // int32 earn = 2;
+  void clear_earn();
+  ::PROTOBUF_NAMESPACE_ID::int32 earn() const;
+  void set_earn(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_earn() const;
+  void _internal_set_earn(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:F4BY.SCSettleScallopLottery)
@@ -30745,8 +30745,8 @@ class SCSettleScallopLottery PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::ScallopLottery > lottery_list_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::MultiInfo > multi_list_;
-  ::PROTOBUF_NAMESPACE_ID::int64 earn_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx_;
+  ::PROTOBUF_NAMESPACE_ID::int32 earn_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
 };
@@ -30924,13 +30924,13 @@ class SCSyncScallopLottery PROTOBUF_FINAL :
   void _internal_set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int64 time = 3;
+  // int32 time = 3;
   void clear_time();
-  ::PROTOBUF_NAMESPACE_ID::int64 time() const;
-  void set_time(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 time() const;
+  void set_time(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_time() const;
-  void _internal_set_time(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_time() const;
+  void _internal_set_time(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // @@protoc_insertion_point(class_scope:F4BY.SCSyncScallopLottery)
@@ -30944,7 +30944,7 @@ class SCSyncScallopLottery PROTOBUF_FINAL :
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::Obj > reward_config_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx_;
   ::PROTOBUF_NAMESPACE_ID::int32 ratio_;
-  ::PROTOBUF_NAMESPACE_ID::int64 time_;
+  ::PROTOBUF_NAMESPACE_ID::int32 time_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
 };
@@ -31713,13 +31713,13 @@ class SCChestConfig PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::ChestBrief >&
       chest_brief_list() const;
 
-  // int64 end_time = 1;
+  // int32 end_time = 1;
   void clear_end_time();
-  ::PROTOBUF_NAMESPACE_ID::int64 end_time() const;
-  void set_end_time(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 end_time() const;
+  void set_end_time(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_end_time() const;
-  void _internal_set_end_time(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_end_time() const;
+  void _internal_set_end_time(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 min_ratio = 3;
@@ -31766,7 +31766,7 @@ class SCChestConfig PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::ChestBrief > chest_brief_list_;
-  ::PROTOBUF_NAMESPACE_ID::int64 end_time_;
+  ::PROTOBUF_NAMESPACE_ID::int32 end_time_;
   ::PROTOBUF_NAMESPACE_ID::int32 min_ratio_;
   int auto_option_;
   bool auto_open_;
@@ -32891,18 +32891,9 @@ class SCSpecEffect PROTOBUF_FINAL :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kEarnMoneyFieldNumber = 2,
     kCostMoneyFieldNumber = 1,
+    kEarnMoneyFieldNumber = 2,
   };
-  // int64 earnMoney = 2;
-  void clear_earnmoney();
-  ::PROTOBUF_NAMESPACE_ID::int64 earnmoney() const;
-  void set_earnmoney(::PROTOBUF_NAMESPACE_ID::int64 value);
-  private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_earnmoney() const;
-  void _internal_set_earnmoney(::PROTOBUF_NAMESPACE_ID::int64 value);
-  public:
-
   // int32 costMoney = 1;
   void clear_costmoney();
   ::PROTOBUF_NAMESPACE_ID::int32 costmoney() const;
@@ -32912,6 +32903,15 @@ class SCSpecEffect PROTOBUF_FINAL :
   void _internal_set_costmoney(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 earnMoney = 2;
+  void clear_earnmoney();
+  ::PROTOBUF_NAMESPACE_ID::int32 earnmoney() const;
+  void set_earnmoney(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_earnmoney() const;
+  void _internal_set_earnmoney(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:F4BY.SCSpecEffect)
  private:
   class _Internal;
@@ -32919,8 +32919,8 @@ class SCSpecEffect PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::int64 earnmoney_;
   ::PROTOBUF_NAMESPACE_ID::int32 costmoney_;
+  ::PROTOBUF_NAMESPACE_ID::int32 earnmoney_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
 };
@@ -33796,13 +33796,13 @@ class TreasureHuntConfig PROTOBUF_FINAL :
   void _internal_set_start_time(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int64 end_time = 3;
+  // int32 end_time = 3;
   void clear_end_time();
-  ::PROTOBUF_NAMESPACE_ID::int64 end_time() const;
-  void set_end_time(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 end_time() const;
+  void set_end_time(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int64 _internal_end_time() const;
-  void _internal_set_end_time(::PROTOBUF_NAMESPACE_ID::int64 value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_end_time() const;
+  void _internal_set_end_time(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // bool enable = 4;
@@ -33852,7 +33852,7 @@ class TreasureHuntConfig PROTOBUF_FINAL :
   ::F4BY::BigRewardInfo* big_reward_info_;
   ::PROTOBUF_NAMESPACE_ID::int32 term_;
   ::PROTOBUF_NAMESPACE_ID::int32 start_time_;
-  ::PROTOBUF_NAMESPACE_ID::int64 end_time_;
+  ::PROTOBUF_NAMESPACE_ID::int32 end_time_;
   bool enable_;
   ::PROTOBUF_NAMESPACE_ID::int32 min_draw_;
   ::PROTOBUF_NAMESPACE_ID::int32 max_draw_;
@@ -40921,22 +40921,22 @@ inline void SCHitFish::set_fish_uid(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:F4BY.SCHitFish.fish_uid)
 }
 
-// int64 earn = 3;
+// int32 earn = 3;
 inline void SCHitFish::clear_earn() {
-  earn_ = PROTOBUF_LONGLONG(0);
+  earn_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCHitFish::_internal_earn() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCHitFish::_internal_earn() const {
   return earn_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCHitFish::earn() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCHitFish::earn() const {
   // @@protoc_insertion_point(field_get:F4BY.SCHitFish.earn)
   return _internal_earn();
 }
-inline void SCHitFish::_internal_set_earn(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCHitFish::_internal_set_earn(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   earn_ = value;
 }
-inline void SCHitFish::set_earn(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCHitFish::set_earn(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_earn(value);
   // @@protoc_insertion_point(field_set:F4BY.SCHitFish.earn)
 }
@@ -40961,22 +40961,22 @@ inline void SCHitFish::set_user_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
   // @@protoc_insertion_point(field_set:F4BY.SCHitFish.user_score)
 }
 
-// int64 fish_value = 5;
+// int32 fish_value = 5;
 inline void SCHitFish::clear_fish_value() {
-  fish_value_ = PROTOBUF_LONGLONG(0);
+  fish_value_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCHitFish::_internal_fish_value() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCHitFish::_internal_fish_value() const {
   return fish_value_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCHitFish::fish_value() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCHitFish::fish_value() const {
   // @@protoc_insertion_point(field_get:F4BY.SCHitFish.fish_value)
   return _internal_fish_value();
 }
-inline void SCHitFish::_internal_set_fish_value(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCHitFish::_internal_set_fish_value(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   fish_value_ = value;
 }
-inline void SCHitFish::set_fish_value(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCHitFish::set_fish_value(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_fish_value(value);
   // @@protoc_insertion_point(field_set:F4BY.SCHitFish.fish_value)
 }
@@ -41183,42 +41183,42 @@ inline void SCHitSpecialFish::set_fish_uid(::PROTOBUF_NAMESPACE_ID::int32 value)
   // @@protoc_insertion_point(field_set:F4BY.SCHitSpecialFish.fish_uid)
 }
 
-// int64 earn = 3;
+// int32 earn = 3;
 inline void SCHitSpecialFish::clear_earn() {
-  earn_ = PROTOBUF_LONGLONG(0);
+  earn_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCHitSpecialFish::_internal_earn() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCHitSpecialFish::_internal_earn() const {
   return earn_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCHitSpecialFish::earn() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCHitSpecialFish::earn() const {
   // @@protoc_insertion_point(field_get:F4BY.SCHitSpecialFish.earn)
   return _internal_earn();
 }
-inline void SCHitSpecialFish::_internal_set_earn(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCHitSpecialFish::_internal_set_earn(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   earn_ = value;
 }
-inline void SCHitSpecialFish::set_earn(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCHitSpecialFish::set_earn(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_earn(value);
   // @@protoc_insertion_point(field_set:F4BY.SCHitSpecialFish.earn)
 }
 
-// int64 fish_value = 4;
+// int32 fish_value = 4;
 inline void SCHitSpecialFish::clear_fish_value() {
-  fish_value_ = PROTOBUF_LONGLONG(0);
+  fish_value_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCHitSpecialFish::_internal_fish_value() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCHitSpecialFish::_internal_fish_value() const {
   return fish_value_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCHitSpecialFish::fish_value() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCHitSpecialFish::fish_value() const {
   // @@protoc_insertion_point(field_get:F4BY.SCHitSpecialFish.fish_value)
   return _internal_fish_value();
 }
-inline void SCHitSpecialFish::_internal_set_fish_value(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCHitSpecialFish::_internal_set_fish_value(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   fish_value_ = value;
 }
-inline void SCHitSpecialFish::set_fish_value(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCHitSpecialFish::set_fish_value(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_fish_value(value);
   // @@protoc_insertion_point(field_set:F4BY.SCHitSpecialFish.fish_value)
 }
@@ -41583,22 +41583,22 @@ inline void SCHitSpecialFish::set_origin_uid(::PROTOBUF_NAMESPACE_ID::int32 valu
   // @@protoc_insertion_point(field_set:F4BY.SCHitSpecialFish.origin_uid)
 }
 
-// int64 dragon_score = 17;
+// int32 dragon_score = 17;
 inline void SCHitSpecialFish::clear_dragon_score() {
-  dragon_score_ = PROTOBUF_LONGLONG(0);
+  dragon_score_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCHitSpecialFish::_internal_dragon_score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCHitSpecialFish::_internal_dragon_score() const {
   return dragon_score_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCHitSpecialFish::dragon_score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCHitSpecialFish::dragon_score() const {
   // @@protoc_insertion_point(field_get:F4BY.SCHitSpecialFish.dragon_score)
   return _internal_dragon_score();
 }
-inline void SCHitSpecialFish::_internal_set_dragon_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCHitSpecialFish::_internal_set_dragon_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   dragon_score_ = value;
 }
-inline void SCHitSpecialFish::set_dragon_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCHitSpecialFish::set_dragon_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_dragon_score(value);
   // @@protoc_insertion_point(field_set:F4BY.SCHitSpecialFish.dragon_score)
 }
@@ -42031,22 +42031,22 @@ inline void SCSyncMoney::set_chair_idx(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:F4BY.SCSyncMoney.chair_idx)
 }
 
-// int64 score = 2;
+// int32 score = 2;
 inline void SCSyncMoney::clear_score() {
-  score_ = PROTOBUF_LONGLONG(0);
+  score_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCSyncMoney::_internal_score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCSyncMoney::_internal_score() const {
   return score_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCSyncMoney::score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCSyncMoney::score() const {
   // @@protoc_insertion_point(field_get:F4BY.SCSyncMoney.score)
   return _internal_score();
 }
-inline void SCSyncMoney::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCSyncMoney::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   score_ = value;
 }
-inline void SCSyncMoney::set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCSyncMoney::set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_score(value);
   // @@protoc_insertion_point(field_set:F4BY.SCSyncMoney.score)
 }
@@ -42235,22 +42235,22 @@ inline void FishTrace::set_is_aced(bool value) {
   // @@protoc_insertion_point(field_set:F4BY.FishTrace.is_aced)
 }
 
-// int64 alive_time = 6;
+// int32 alive_time = 6;
 inline void FishTrace::clear_alive_time() {
-  alive_time_ = PROTOBUF_LONGLONG(0);
+  alive_time_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 FishTrace::_internal_alive_time() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishTrace::_internal_alive_time() const {
   return alive_time_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 FishTrace::alive_time() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 FishTrace::alive_time() const {
   // @@protoc_insertion_point(field_get:F4BY.FishTrace.alive_time)
   return _internal_alive_time();
 }
-inline void FishTrace::_internal_set_alive_time(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void FishTrace::_internal_set_alive_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   alive_time_ = value;
 }
-inline void FishTrace::set_alive_time(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void FishTrace::set_alive_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_alive_time(value);
   // @@protoc_insertion_point(field_set:F4BY.FishTrace.alive_time)
 }
@@ -45082,22 +45082,22 @@ inline void JumpHighArena::set_coin(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:F4BY.JumpHighArena.coin)
 }
 
-// int64 game_time = 4;
+// int32 game_time = 4;
 inline void JumpHighArena::clear_game_time() {
-  game_time_ = PROTOBUF_LONGLONG(0);
+  game_time_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 JumpHighArena::_internal_game_time() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 JumpHighArena::_internal_game_time() const {
   return game_time_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 JumpHighArena::game_time() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 JumpHighArena::game_time() const {
   // @@protoc_insertion_point(field_get:F4BY.JumpHighArena.game_time)
   return _internal_game_time();
 }
-inline void JumpHighArena::_internal_set_game_time(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void JumpHighArena::_internal_set_game_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   game_time_ = value;
 }
-inline void JumpHighArena::set_game_time(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void JumpHighArena::set_game_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_game_time(value);
   // @@protoc_insertion_point(field_set:F4BY.JumpHighArena.game_time)
 }
@@ -45422,22 +45422,22 @@ inline void SCGainAward::set_chair_idx(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:F4BY.SCGainAward.chair_idx)
 }
 
-// int64 score = 2;
+// int32 score = 2;
 inline void SCGainAward::clear_score() {
-  score_ = PROTOBUF_LONGLONG(0);
+  score_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCGainAward::_internal_score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCGainAward::_internal_score() const {
   return score_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCGainAward::score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCGainAward::score() const {
   // @@protoc_insertion_point(field_get:F4BY.SCGainAward.score)
   return _internal_score();
 }
-inline void SCGainAward::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCGainAward::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   score_ = value;
 }
-inline void SCGainAward::set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCGainAward::set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_score(value);
   // @@protoc_insertion_point(field_set:F4BY.SCGainAward.score)
 }
@@ -47590,42 +47590,42 @@ inline void SCTorpedoHit::set_chair_idx(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:F4BY.SCTorpedoHit.chair_idx)
 }
 
-// int64 earn = 2;
+// int32 earn = 2;
 inline void SCTorpedoHit::clear_earn() {
-  earn_ = PROTOBUF_LONGLONG(0);
+  earn_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCTorpedoHit::_internal_earn() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCTorpedoHit::_internal_earn() const {
   return earn_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCTorpedoHit::earn() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCTorpedoHit::earn() const {
   // @@protoc_insertion_point(field_get:F4BY.SCTorpedoHit.earn)
   return _internal_earn();
 }
-inline void SCTorpedoHit::_internal_set_earn(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCTorpedoHit::_internal_set_earn(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   earn_ = value;
 }
-inline void SCTorpedoHit::set_earn(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCTorpedoHit::set_earn(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_earn(value);
   // @@protoc_insertion_point(field_set:F4BY.SCTorpedoHit.earn)
 }
 
-// int64 score = 3;
+// int32 score = 3;
 inline void SCTorpedoHit::clear_score() {
-  score_ = PROTOBUF_LONGLONG(0);
+  score_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCTorpedoHit::_internal_score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCTorpedoHit::_internal_score() const {
   return score_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCTorpedoHit::score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCTorpedoHit::score() const {
   // @@protoc_insertion_point(field_get:F4BY.SCTorpedoHit.score)
   return _internal_score();
 }
-inline void SCTorpedoHit::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCTorpedoHit::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   score_ = value;
 }
-inline void SCTorpedoHit::set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCTorpedoHit::set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_score(value);
   // @@protoc_insertion_point(field_set:F4BY.SCTorpedoHit.score)
 }
@@ -48672,22 +48672,22 @@ inline void SCSevenDayInfo::set_get_remain(::PROTOBUF_NAMESPACE_ID::int32 value)
   // @@protoc_insertion_point(field_set:F4BY.SCSevenDayInfo.get_remain)
 }
 
-// int64 remain_score = 5;
+// int32 remain_score = 5;
 inline void SCSevenDayInfo::clear_remain_score() {
-  remain_score_ = PROTOBUF_LONGLONG(0);
+  remain_score_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCSevenDayInfo::_internal_remain_score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCSevenDayInfo::_internal_remain_score() const {
   return remain_score_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCSevenDayInfo::remain_score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCSevenDayInfo::remain_score() const {
   // @@protoc_insertion_point(field_get:F4BY.SCSevenDayInfo.remain_score)
   return _internal_remain_score();
 }
-inline void SCSevenDayInfo::_internal_set_remain_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCSevenDayInfo::_internal_set_remain_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   remain_score_ = value;
 }
-inline void SCSevenDayInfo::set_remain_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCSevenDayInfo::set_remain_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_remain_score(value);
   // @@protoc_insertion_point(field_set:F4BY.SCSevenDayInfo.remain_score)
 }
@@ -48883,22 +48883,22 @@ inline void CSSevenDayAward::set_get_award_type(::PROTOBUF_NAMESPACE_ID::int32 v
 
 // SCSevenDayAward
 
-// int64 score = 1;
+// int32 score = 1;
 inline void SCSevenDayAward::clear_score() {
-  score_ = PROTOBUF_LONGLONG(0);
+  score_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCSevenDayAward::_internal_score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCSevenDayAward::_internal_score() const {
   return score_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCSevenDayAward::score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCSevenDayAward::score() const {
   // @@protoc_insertion_point(field_get:F4BY.SCSevenDayAward.score)
   return _internal_score();
 }
-inline void SCSevenDayAward::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCSevenDayAward::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   score_ = value;
 }
-inline void SCSevenDayAward::set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCSevenDayAward::set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_score(value);
   // @@protoc_insertion_point(field_set:F4BY.SCSevenDayAward.score)
 }
@@ -49010,22 +49010,22 @@ inline void SCSevenDayAward::set_allocated_task(::F4BY::SevenDayDetail* task) {
 
 // SCVipChargeAward
 
-// int64 score = 1;
+// int32 score = 1;
 inline void SCVipChargeAward::clear_score() {
-  score_ = PROTOBUF_LONGLONG(0);
+  score_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCVipChargeAward::_internal_score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCVipChargeAward::_internal_score() const {
   return score_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCVipChargeAward::score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCVipChargeAward::score() const {
   // @@protoc_insertion_point(field_get:F4BY.SCVipChargeAward.score)
   return _internal_score();
 }
-inline void SCVipChargeAward::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCVipChargeAward::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   score_ = value;
 }
-inline void SCVipChargeAward::set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCVipChargeAward::set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_score(value);
   // @@protoc_insertion_point(field_set:F4BY.SCVipChargeAward.score)
 }
@@ -50087,42 +50087,42 @@ inline void SCTreasureFishCatched::set_fish_uid(::PROTOBUF_NAMESPACE_ID::int32 v
   // @@protoc_insertion_point(field_set:F4BY.SCTreasureFishCatched.fish_uid)
 }
 
-// int64 fish_value = 4;
+// int32 fish_value = 4;
 inline void SCTreasureFishCatched::clear_fish_value() {
-  fish_value_ = PROTOBUF_LONGLONG(0);
+  fish_value_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCTreasureFishCatched::_internal_fish_value() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCTreasureFishCatched::_internal_fish_value() const {
   return fish_value_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCTreasureFishCatched::fish_value() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCTreasureFishCatched::fish_value() const {
   // @@protoc_insertion_point(field_get:F4BY.SCTreasureFishCatched.fish_value)
   return _internal_fish_value();
 }
-inline void SCTreasureFishCatched::_internal_set_fish_value(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCTreasureFishCatched::_internal_set_fish_value(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   fish_value_ = value;
 }
-inline void SCTreasureFishCatched::set_fish_value(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCTreasureFishCatched::set_fish_value(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_fish_value(value);
   // @@protoc_insertion_point(field_set:F4BY.SCTreasureFishCatched.fish_value)
 }
 
-// int64 accum_money = 5;
+// int32 accum_money = 5;
 inline void SCTreasureFishCatched::clear_accum_money() {
-  accum_money_ = PROTOBUF_LONGLONG(0);
+  accum_money_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCTreasureFishCatched::_internal_accum_money() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCTreasureFishCatched::_internal_accum_money() const {
   return accum_money_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCTreasureFishCatched::accum_money() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCTreasureFishCatched::accum_money() const {
   // @@protoc_insertion_point(field_get:F4BY.SCTreasureFishCatched.accum_money)
   return _internal_accum_money();
 }
-inline void SCTreasureFishCatched::_internal_set_accum_money(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCTreasureFishCatched::_internal_set_accum_money(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   accum_money_ = value;
 }
-inline void SCTreasureFishCatched::set_accum_money(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCTreasureFishCatched::set_accum_money(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_accum_money(value);
   // @@protoc_insertion_point(field_set:F4BY.SCTreasureFishCatched.accum_money)
 }
@@ -50167,22 +50167,22 @@ inline void SCTreasureFishCatched::set_death(bool value) {
   // @@protoc_insertion_point(field_set:F4BY.SCTreasureFishCatched.death)
 }
 
-// int64 earn = 8;
+// int32 earn = 8;
 inline void SCTreasureFishCatched::clear_earn() {
-  earn_ = PROTOBUF_LONGLONG(0);
+  earn_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCTreasureFishCatched::_internal_earn() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCTreasureFishCatched::_internal_earn() const {
   return earn_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCTreasureFishCatched::earn() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCTreasureFishCatched::earn() const {
   // @@protoc_insertion_point(field_get:F4BY.SCTreasureFishCatched.earn)
   return _internal_earn();
 }
-inline void SCTreasureFishCatched::_internal_set_earn(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCTreasureFishCatched::_internal_set_earn(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   earn_ = value;
 }
-inline void SCTreasureFishCatched::set_earn(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCTreasureFishCatched::set_earn(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_earn(value);
   // @@protoc_insertion_point(field_set:F4BY.SCTreasureFishCatched.earn)
 }
@@ -51053,22 +51053,22 @@ inline void LuckyTaskInfo::set_status(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:F4BY.LuckyTaskInfo.status)
 }
 
-// int64 score = 3;
+// int32 score = 3;
 inline void LuckyTaskInfo::clear_score() {
-  score_ = PROTOBUF_LONGLONG(0);
+  score_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 LuckyTaskInfo::_internal_score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 LuckyTaskInfo::_internal_score() const {
   return score_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 LuckyTaskInfo::score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 LuckyTaskInfo::score() const {
   // @@protoc_insertion_point(field_get:F4BY.LuckyTaskInfo.score)
   return _internal_score();
 }
-inline void LuckyTaskInfo::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void LuckyTaskInfo::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   score_ = value;
 }
-inline void LuckyTaskInfo::set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void LuckyTaskInfo::set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_score(value);
   // @@protoc_insertion_point(field_set:F4BY.LuckyTaskInfo.score)
 }
@@ -51347,22 +51347,22 @@ SCLuckyDrawInfo::mutable_day_lucky_nums() {
   return _internal_mutable_day_lucky_nums();
 }
 
-// int64 score = 6;
+// int32 score = 6;
 inline void SCLuckyDrawInfo::clear_score() {
-  score_ = PROTOBUF_LONGLONG(0);
+  score_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCLuckyDrawInfo::_internal_score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCLuckyDrawInfo::_internal_score() const {
   return score_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCLuckyDrawInfo::score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCLuckyDrawInfo::score() const {
   // @@protoc_insertion_point(field_get:F4BY.SCLuckyDrawInfo.score)
   return _internal_score();
 }
-inline void SCLuckyDrawInfo::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCLuckyDrawInfo::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   score_ = value;
 }
-inline void SCLuckyDrawInfo::set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCLuckyDrawInfo::set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_score(value);
   // @@protoc_insertion_point(field_set:F4BY.SCLuckyDrawInfo.score)
 }
@@ -51704,22 +51704,22 @@ inline void SCGetLuckyTaskAward::set_allocated_task(::F4BY::LuckyTaskInfo* task)
   // @@protoc_insertion_point(field_set_allocated:F4BY.SCGetLuckyTaskAward.task)
 }
 
-// int64 score = 2;
+// int32 score = 2;
 inline void SCGetLuckyTaskAward::clear_score() {
-  score_ = PROTOBUF_LONGLONG(0);
+  score_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCGetLuckyTaskAward::_internal_score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCGetLuckyTaskAward::_internal_score() const {
   return score_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCGetLuckyTaskAward::score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCGetLuckyTaskAward::score() const {
   // @@protoc_insertion_point(field_get:F4BY.SCGetLuckyTaskAward.score)
   return _internal_score();
 }
-inline void SCGetLuckyTaskAward::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCGetLuckyTaskAward::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   score_ = value;
 }
-inline void SCGetLuckyTaskAward::set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCGetLuckyTaskAward::set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_score(value);
   // @@protoc_insertion_point(field_set:F4BY.SCGetLuckyTaskAward.score)
 }
@@ -51772,22 +51772,22 @@ inline void CSGetLuckyNum::set_times(::PROTOBUF_NAMESPACE_ID::int32 value) {
 
 // SCGetLuckyNum
 
-// int64 score = 1;
+// int32 score = 1;
 inline void SCGetLuckyNum::clear_score() {
-  score_ = PROTOBUF_LONGLONG(0);
+  score_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCGetLuckyNum::_internal_score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCGetLuckyNum::_internal_score() const {
   return score_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCGetLuckyNum::score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCGetLuckyNum::score() const {
   // @@protoc_insertion_point(field_get:F4BY.SCGetLuckyNum.score)
   return _internal_score();
 }
-inline void SCGetLuckyNum::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCGetLuckyNum::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   score_ = value;
 }
-inline void SCGetLuckyNum::set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCGetLuckyNum::set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_score(value);
   // @@protoc_insertion_point(field_set:F4BY.SCGetLuckyNum.score)
 }
@@ -52473,22 +52473,22 @@ inline void SCSyncBomb::set_nexty(float value) {
   // @@protoc_insertion_point(field_set:F4BY.SCSyncBomb.nextY)
 }
 
-// int64 score = 8;
+// int32 score = 8;
 inline void SCSyncBomb::clear_score() {
-  score_ = PROTOBUF_LONGLONG(0);
+  score_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCSyncBomb::_internal_score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCSyncBomb::_internal_score() const {
   return score_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCSyncBomb::score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCSyncBomb::score() const {
   // @@protoc_insertion_point(field_get:F4BY.SCSyncBomb.score)
   return _internal_score();
 }
-inline void SCSyncBomb::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCSyncBomb::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   score_ = value;
 }
-inline void SCSyncBomb::set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCSyncBomb::set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_score(value);
   // @@protoc_insertion_point(field_set:F4BY.SCSyncBomb.score)
 }
@@ -52557,22 +52557,22 @@ inline void SCSyncBombFinish::set_bombid(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:F4BY.SCSyncBombFinish.bombId)
 }
 
-// int64 returnMoney = 3;
+// int32 returnMoney = 3;
 inline void SCSyncBombFinish::clear_returnmoney() {
-  returnmoney_ = PROTOBUF_LONGLONG(0);
+  returnmoney_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCSyncBombFinish::_internal_returnmoney() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCSyncBombFinish::_internal_returnmoney() const {
   return returnmoney_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCSyncBombFinish::returnmoney() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCSyncBombFinish::returnmoney() const {
   // @@protoc_insertion_point(field_get:F4BY.SCSyncBombFinish.returnMoney)
   return _internal_returnmoney();
 }
-inline void SCSyncBombFinish::_internal_set_returnmoney(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCSyncBombFinish::_internal_set_returnmoney(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   returnmoney_ = value;
 }
-inline void SCSyncBombFinish::set_returnmoney(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCSyncBombFinish::set_returnmoney(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_returnmoney(value);
   // @@protoc_insertion_point(field_set:F4BY.SCSyncBombFinish.returnMoney)
 }
@@ -53143,22 +53143,22 @@ inline void FrozenFish::set_fish_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:F4BY.FrozenFish.fish_id)
 }
 
-// int64 frozen_time = 2;
+// int32 frozen_time = 2;
 inline void FrozenFish::clear_frozen_time() {
-  frozen_time_ = PROTOBUF_LONGLONG(0);
+  frozen_time_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 FrozenFish::_internal_frozen_time() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 FrozenFish::_internal_frozen_time() const {
   return frozen_time_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 FrozenFish::frozen_time() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 FrozenFish::frozen_time() const {
   // @@protoc_insertion_point(field_get:F4BY.FrozenFish.frozen_time)
   return _internal_frozen_time();
 }
-inline void FrozenFish::_internal_set_frozen_time(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void FrozenFish::_internal_set_frozen_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   frozen_time_ = value;
 }
-inline void FrozenFish::set_frozen_time(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void FrozenFish::set_frozen_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_frozen_time(value);
   // @@protoc_insertion_point(field_set:F4BY.FrozenFish.frozen_time)
 }
@@ -53814,22 +53814,22 @@ inline void SCBombGlobeFishInfo::set_bombid(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:F4BY.SCBombGlobeFishInfo.bombId)
 }
 
-// int64 total_earn = 6;
+// int32 total_earn = 6;
 inline void SCBombGlobeFishInfo::clear_total_earn() {
-  total_earn_ = PROTOBUF_LONGLONG(0);
+  total_earn_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCBombGlobeFishInfo::_internal_total_earn() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCBombGlobeFishInfo::_internal_total_earn() const {
   return total_earn_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCBombGlobeFishInfo::total_earn() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCBombGlobeFishInfo::total_earn() const {
   // @@protoc_insertion_point(field_get:F4BY.SCBombGlobeFishInfo.total_earn)
   return _internal_total_earn();
 }
-inline void SCBombGlobeFishInfo::_internal_set_total_earn(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCBombGlobeFishInfo::_internal_set_total_earn(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   total_earn_ = value;
 }
-inline void SCBombGlobeFishInfo::set_total_earn(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCBombGlobeFishInfo::set_total_earn(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_total_earn(value);
   // @@protoc_insertion_point(field_set:F4BY.SCBombGlobeFishInfo.total_earn)
 }
@@ -54009,22 +54009,22 @@ inline void SCAnniversaryShowSelect::set_show_select(bool value) {
   // @@protoc_insertion_point(field_set:F4BY.SCAnniversaryShowSelect.show_select)
 }
 
-// int64 remain_time = 3;
+// int32 remain_time = 3;
 inline void SCAnniversaryShowSelect::clear_remain_time() {
-  remain_time_ = PROTOBUF_LONGLONG(0);
+  remain_time_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCAnniversaryShowSelect::_internal_remain_time() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCAnniversaryShowSelect::_internal_remain_time() const {
   return remain_time_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCAnniversaryShowSelect::remain_time() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCAnniversaryShowSelect::remain_time() const {
   // @@protoc_insertion_point(field_get:F4BY.SCAnniversaryShowSelect.remain_time)
   return _internal_remain_time();
 }
-inline void SCAnniversaryShowSelect::_internal_set_remain_time(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCAnniversaryShowSelect::_internal_set_remain_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   remain_time_ = value;
 }
-inline void SCAnniversaryShowSelect::set_remain_time(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCAnniversaryShowSelect::set_remain_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_remain_time(value);
   // @@protoc_insertion_point(field_set:F4BY.SCAnniversaryShowSelect.remain_time)
 }
@@ -54077,22 +54077,22 @@ inline void CSAnniversarySelectReq::set_stage(::PROTOBUF_NAMESPACE_ID::int32 val
 
 // AnniversaryStage1Result
 
-// int64 score = 1;
+// int32 score = 1;
 inline void AnniversaryStage1Result::clear_score() {
-  score_ = PROTOBUF_LONGLONG(0);
+  score_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 AnniversaryStage1Result::_internal_score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 AnniversaryStage1Result::_internal_score() const {
   return score_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 AnniversaryStage1Result::score() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 AnniversaryStage1Result::score() const {
   // @@protoc_insertion_point(field_get:F4BY.AnniversaryStage1Result.score)
   return _internal_score();
 }
-inline void AnniversaryStage1Result::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void AnniversaryStage1Result::_internal_set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   score_ = value;
 }
-inline void AnniversaryStage1Result::set_score(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void AnniversaryStage1Result::set_score(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_score(value);
   // @@protoc_insertion_point(field_set:F4BY.AnniversaryStage1Result.score)
 }
@@ -54121,7 +54121,7 @@ inline void AnniversaryStage1Result::set_fish_uid(::PROTOBUF_NAMESPACE_ID::int32
 
 // AnniversaryStage2Result
 
-// repeated int64 score_list = 1;
+// repeated int32 score_list = 1;
 inline int AnniversaryStage2Result::_internal_score_list_size() const {
   return score_list_.size();
 }
@@ -54131,38 +54131,38 @@ inline int AnniversaryStage2Result::score_list_size() const {
 inline void AnniversaryStage2Result::clear_score_list() {
   score_list_.Clear();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 AnniversaryStage2Result::_internal_score_list(int index) const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 AnniversaryStage2Result::_internal_score_list(int index) const {
   return score_list_.Get(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 AnniversaryStage2Result::score_list(int index) const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 AnniversaryStage2Result::score_list(int index) const {
   // @@protoc_insertion_point(field_get:F4BY.AnniversaryStage2Result.score_list)
   return _internal_score_list(index);
 }
-inline void AnniversaryStage2Result::set_score_list(int index, ::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void AnniversaryStage2Result::set_score_list(int index, ::PROTOBUF_NAMESPACE_ID::int32 value) {
   score_list_.Set(index, value);
   // @@protoc_insertion_point(field_set:F4BY.AnniversaryStage2Result.score_list)
 }
-inline void AnniversaryStage2Result::_internal_add_score_list(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void AnniversaryStage2Result::_internal_add_score_list(::PROTOBUF_NAMESPACE_ID::int32 value) {
   score_list_.Add(value);
 }
-inline void AnniversaryStage2Result::add_score_list(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void AnniversaryStage2Result::add_score_list(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_add_score_list(value);
   // @@protoc_insertion_point(field_add:F4BY.AnniversaryStage2Result.score_list)
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 AnniversaryStage2Result::_internal_score_list() const {
   return score_list_;
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >&
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >&
 AnniversaryStage2Result::score_list() const {
   // @@protoc_insertion_point(field_list:F4BY.AnniversaryStage2Result.score_list)
   return _internal_score_list();
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 AnniversaryStage2Result::_internal_mutable_score_list() {
   return &score_list_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int64 >*
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedField< ::PROTOBUF_NAMESPACE_ID::int32 >*
 AnniversaryStage2Result::mutable_score_list() {
   // @@protoc_insertion_point(field_mutable_list:F4BY.AnniversaryStage2Result.score_list)
   return _internal_mutable_score_list();
@@ -54355,22 +54355,22 @@ SCAnniversarySelectResult::multi_list() const {
   return multi_list_;
 }
 
-// int64 total_earn = 5;
+// int32 total_earn = 5;
 inline void SCAnniversarySelectResult::clear_total_earn() {
-  total_earn_ = PROTOBUF_LONGLONG(0);
+  total_earn_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCAnniversarySelectResult::_internal_total_earn() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCAnniversarySelectResult::_internal_total_earn() const {
   return total_earn_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCAnniversarySelectResult::total_earn() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCAnniversarySelectResult::total_earn() const {
   // @@protoc_insertion_point(field_get:F4BY.SCAnniversarySelectResult.total_earn)
   return _internal_total_earn();
 }
-inline void SCAnniversarySelectResult::_internal_set_total_earn(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCAnniversarySelectResult::_internal_set_total_earn(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   total_earn_ = value;
 }
-inline void SCAnniversarySelectResult::set_total_earn(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCAnniversarySelectResult::set_total_earn(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_total_earn(value);
   // @@protoc_insertion_point(field_set:F4BY.SCAnniversarySelectResult.total_earn)
 }
@@ -54819,42 +54819,42 @@ inline void SCSyncAnniversaryHitStage::set_stage(::PROTOBUF_NAMESPACE_ID::int32 
   // @@protoc_insertion_point(field_set:F4BY.SCSyncAnniversaryHitStage.stage)
 }
 
-// int64 total_earn = 5;
+// int32 total_earn = 5;
 inline void SCSyncAnniversaryHitStage::clear_total_earn() {
-  total_earn_ = PROTOBUF_LONGLONG(0);
+  total_earn_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCSyncAnniversaryHitStage::_internal_total_earn() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCSyncAnniversaryHitStage::_internal_total_earn() const {
   return total_earn_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCSyncAnniversaryHitStage::total_earn() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCSyncAnniversaryHitStage::total_earn() const {
   // @@protoc_insertion_point(field_get:F4BY.SCSyncAnniversaryHitStage.total_earn)
   return _internal_total_earn();
 }
-inline void SCSyncAnniversaryHitStage::_internal_set_total_earn(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCSyncAnniversaryHitStage::_internal_set_total_earn(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   total_earn_ = value;
 }
-inline void SCSyncAnniversaryHitStage::set_total_earn(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCSyncAnniversaryHitStage::set_total_earn(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_total_earn(value);
   // @@protoc_insertion_point(field_set:F4BY.SCSyncAnniversaryHitStage.total_earn)
 }
 
-// int64 invalid_earn = 6;
+// int32 invalid_earn = 6;
 inline void SCSyncAnniversaryHitStage::clear_invalid_earn() {
-  invalid_earn_ = PROTOBUF_LONGLONG(0);
+  invalid_earn_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCSyncAnniversaryHitStage::_internal_invalid_earn() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCSyncAnniversaryHitStage::_internal_invalid_earn() const {
   return invalid_earn_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCSyncAnniversaryHitStage::invalid_earn() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCSyncAnniversaryHitStage::invalid_earn() const {
   // @@protoc_insertion_point(field_get:F4BY.SCSyncAnniversaryHitStage.invalid_earn)
   return _internal_invalid_earn();
 }
-inline void SCSyncAnniversaryHitStage::_internal_set_invalid_earn(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCSyncAnniversaryHitStage::_internal_set_invalid_earn(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   invalid_earn_ = value;
 }
-inline void SCSyncAnniversaryHitStage::set_invalid_earn(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCSyncAnniversaryHitStage::set_invalid_earn(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_invalid_earn(value);
   // @@protoc_insertion_point(field_set:F4BY.SCSyncAnniversaryHitStage.invalid_earn)
 }
@@ -55070,22 +55070,22 @@ inline void SCCaptureScallop::set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:F4BY.SCCaptureScallop.ratio)
 }
 
-// int64 time = 4;
+// int32 time = 4;
 inline void SCCaptureScallop::clear_time() {
-  time_ = PROTOBUF_LONGLONG(0);
+  time_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCCaptureScallop::_internal_time() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCCaptureScallop::_internal_time() const {
   return time_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCCaptureScallop::time() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCCaptureScallop::time() const {
   // @@protoc_insertion_point(field_get:F4BY.SCCaptureScallop.time)
   return _internal_time();
 }
-inline void SCCaptureScallop::_internal_set_time(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCCaptureScallop::_internal_set_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   time_ = value;
 }
-inline void SCCaptureScallop::set_time(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCCaptureScallop::set_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_time(value);
   // @@protoc_insertion_point(field_set:F4BY.SCCaptureScallop.time)
 }
@@ -55323,22 +55323,22 @@ inline void SCSettleScallopLottery::set_chair_idx(::PROTOBUF_NAMESPACE_ID::int32
   // @@protoc_insertion_point(field_set:F4BY.SCSettleScallopLottery.chair_idx)
 }
 
-// int64 earn = 2;
+// int32 earn = 2;
 inline void SCSettleScallopLottery::clear_earn() {
-  earn_ = PROTOBUF_LONGLONG(0);
+  earn_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCSettleScallopLottery::_internal_earn() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCSettleScallopLottery::_internal_earn() const {
   return earn_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCSettleScallopLottery::earn() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCSettleScallopLottery::earn() const {
   // @@protoc_insertion_point(field_get:F4BY.SCSettleScallopLottery.earn)
   return _internal_earn();
 }
-inline void SCSettleScallopLottery::_internal_set_earn(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCSettleScallopLottery::_internal_set_earn(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   earn_ = value;
 }
-inline void SCSettleScallopLottery::set_earn(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCSettleScallopLottery::set_earn(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_earn(value);
   // @@protoc_insertion_point(field_set:F4BY.SCSettleScallopLottery.earn)
 }
@@ -55465,22 +55465,22 @@ inline void SCSyncScallopLottery::set_ratio(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:F4BY.SCSyncScallopLottery.ratio)
 }
 
-// int64 time = 3;
+// int32 time = 3;
 inline void SCSyncScallopLottery::clear_time() {
-  time_ = PROTOBUF_LONGLONG(0);
+  time_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCSyncScallopLottery::_internal_time() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCSyncScallopLottery::_internal_time() const {
   return time_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCSyncScallopLottery::time() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCSyncScallopLottery::time() const {
   // @@protoc_insertion_point(field_get:F4BY.SCSyncScallopLottery.time)
   return _internal_time();
 }
-inline void SCSyncScallopLottery::_internal_set_time(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCSyncScallopLottery::_internal_set_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   time_ = value;
 }
-inline void SCSyncScallopLottery::set_time(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCSyncScallopLottery::set_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_time(value);
   // @@protoc_insertion_point(field_set:F4BY.SCSyncScallopLottery.time)
 }
@@ -55865,22 +55865,22 @@ ChestBrief::reward() const {
 
 // SCChestConfig
 
-// int64 end_time = 1;
+// int32 end_time = 1;
 inline void SCChestConfig::clear_end_time() {
-  end_time_ = PROTOBUF_LONGLONG(0);
+  end_time_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCChestConfig::_internal_end_time() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCChestConfig::_internal_end_time() const {
   return end_time_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCChestConfig::end_time() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCChestConfig::end_time() const {
   // @@protoc_insertion_point(field_get:F4BY.SCChestConfig.end_time)
   return _internal_end_time();
 }
-inline void SCChestConfig::_internal_set_end_time(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCChestConfig::_internal_set_end_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   end_time_ = value;
 }
-inline void SCChestConfig::set_end_time(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCChestConfig::set_end_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_end_time(value);
   // @@protoc_insertion_point(field_set:F4BY.SCChestConfig.end_time)
 }
@@ -56338,22 +56338,22 @@ inline void SCSpecEffect::set_costmoney(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:F4BY.SCSpecEffect.costMoney)
 }
 
-// int64 earnMoney = 2;
+// int32 earnMoney = 2;
 inline void SCSpecEffect::clear_earnmoney() {
-  earnmoney_ = PROTOBUF_LONGLONG(0);
+  earnmoney_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCSpecEffect::_internal_earnmoney() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCSpecEffect::_internal_earnmoney() const {
   return earnmoney_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 SCSpecEffect::earnmoney() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCSpecEffect::earnmoney() const {
   // @@protoc_insertion_point(field_get:F4BY.SCSpecEffect.earnMoney)
   return _internal_earnmoney();
 }
-inline void SCSpecEffect::_internal_set_earnmoney(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCSpecEffect::_internal_set_earnmoney(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   earnmoney_ = value;
 }
-inline void SCSpecEffect::set_earnmoney(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void SCSpecEffect::set_earnmoney(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_earnmoney(value);
   // @@protoc_insertion_point(field_set:F4BY.SCSpecEffect.earnMoney)
 }
@@ -56776,22 +56776,22 @@ inline void TreasureHuntConfig::set_start_time(::PROTOBUF_NAMESPACE_ID::int32 va
   // @@protoc_insertion_point(field_set:F4BY.TreasureHuntConfig.start_time)
 }
 
-// int64 end_time = 3;
+// int32 end_time = 3;
 inline void TreasureHuntConfig::clear_end_time() {
-  end_time_ = PROTOBUF_LONGLONG(0);
+  end_time_ = 0;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 TreasureHuntConfig::_internal_end_time() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 TreasureHuntConfig::_internal_end_time() const {
   return end_time_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int64 TreasureHuntConfig::end_time() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 TreasureHuntConfig::end_time() const {
   // @@protoc_insertion_point(field_get:F4BY.TreasureHuntConfig.end_time)
   return _internal_end_time();
 }
-inline void TreasureHuntConfig::_internal_set_end_time(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void TreasureHuntConfig::_internal_set_end_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   end_time_ = value;
 }
-inline void TreasureHuntConfig::set_end_time(::PROTOBUF_NAMESPACE_ID::int64 value) {
+inline void TreasureHuntConfig::set_end_time(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_end_time(value);
   // @@protoc_insertion_point(field_set:F4BY.TreasureHuntConfig.end_time)
 }

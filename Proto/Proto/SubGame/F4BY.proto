@@ -397,9 +397,9 @@ message SCHitFish
 {
 	int32 chair_idx = 1;
 	int32 fish_uid = 2;
-	int64 earn = 3;
+	int32 earn = 3;
 	int64 user_score = 4;
-	int64 fish_value = 5;
+	int32 fish_value = 5;
 	int32 multiple = 6;
 	int32 hit_bullet_type = 7;
 	int32 magic_cube_multi = 8;
@@ -412,8 +412,8 @@ message SCHitSpecialFish
 {
 	int32 chair_idx = 1;
 	int32 fish_uid = 2;
-	int64 earn = 3;
-	int64 fish_value = 4;
+	int32 earn = 3;
+	int32 fish_value = 4;
 	int64 user_score = 5;
 	bool death = 6;
 	int32 grow_stage = 7;
@@ -426,7 +426,7 @@ message SCHitSpecialFish
 	int32 magic_cube_multi = 14;
 	repeated MultiInfo multi_list = 15;
 	int32 origin_uid = 16;
-	int64 dragon_score = 17;
+	int32 dragon_score = 17;
 }
 
 message SyncPropInfoX
@@ -463,7 +463,7 @@ message CSSyncMoney
 message SCSyncMoney
 {
 	int32 chair_idx = 1;
-	int64 score = 2;
+	int32 score = 2;
 	int32 type = 3;
 	int32 delta = 4;
 	int32 ticket = 5;
@@ -477,7 +477,7 @@ message FishTrace
 	int32 fish_layer = 3;
 	int32 fish_stage = 4;
 	bool is_aced = 5;
-	int64 alive_time = 6;
+	int32 alive_time = 6;
 	repeated int32 beads_list = 7;
 	int32 fish_torpedoId = 8;
 	int32 fish_road = 9;
@@ -689,7 +689,7 @@ message JumpHighArena
 	bool is_open = 1;
 	int32 vip = 2;
 	int32 coin = 3;
-	int64 game_time = 4;
+	int32 game_time = 4;
 	string tips = 5;
 }
 
@@ -716,7 +716,7 @@ message SCChat
 message SCGainAward
 {
 	int32 chair_idx = 1;
-	int64 score = 2;
+	int32 score = 2;
 	Object award = 3;
 }
 
@@ -909,8 +909,8 @@ message CSTorpedoHit
 message SCTorpedoHit
 {
 	int32 chair_idx = 1;
-	int64 earn = 2;
-	int64 score = 3;
+	int32 earn = 2;
+	int32 score = 3;
 	int32 propId = 4;
 	int32 remain = 5;
 	int32 fish_uid = 6;
@@ -988,7 +988,7 @@ message SCSevenDayInfo
 	string end_date = 2;
 	int32 cur_day = 3;
 	int32 get_remain = 4;
-	int64 remain_score = 5;
+	int32 remain_score = 5;
 	int32 ticket = 6;
 	SevenDayDetail detail = 7;
 	int32 gun_enable = 8;
@@ -1003,14 +1003,14 @@ message CSSevenDayAward
 
 message SCSevenDayAward
 {
-	int64 score = 1;
+	int32 score = 1;
 	int32 ticket = 2;
 	SevenDayDetail task = 3;
 }
 
 message SCVipChargeAward
 {
-	int64 score = 1;
+	int32 score = 1;
 	int32 ticket = 2;
 }
 
@@ -1098,11 +1098,11 @@ message SCTreasureFishCatched
 	int32 chair_idx = 1;
 	int32 ratio = 2;
 	int32 fish_uid = 3;
-	int64 fish_value = 4;
-	int64 accum_money = 5;
+	int32 fish_value = 4;
+	int32 accum_money = 5;
 	int32 multiple = 6;
 	bool death = 7;
-	int64 earn = 8;
+	int32 earn = 8;
 	int64 user_score = 9;
 	bool display_multiple = 10;
 	int32 cur_stage = 11;
@@ -1176,7 +1176,7 @@ message LuckyTaskInfo
 {
 	int32 id = 1;
 	int32 status = 2;
-	int64 score = 3;
+	int32 score = 3;
 	string text = 4;
 	int32 amount = 5;
 	int32 target = 6;
@@ -1194,7 +1194,7 @@ message SCLuckyDrawInfo
 	repeated AwardProp hour_reward = 3;
 	repeated AwardProp day_reward = 4;
 	repeated int32 day_lucky_nums = 5;
-	int64 score = 6;
+	int32 score = 6;
 	int32 hour_total = 7;
 	int32 day_total = 8;
 	int32 hour_award_num = 9;
@@ -1214,7 +1214,7 @@ message CSGetLuckyTaskAward
 message SCGetLuckyTaskAward
 {
 	LuckyTaskInfo task = 1;
-	int64 score = 2;
+	int32 score = 2;
 	int32 code = 3;
 }
 
@@ -1225,7 +1225,7 @@ message CSGetLuckyNum
 
 message SCGetLuckyNum
 {
-	int64 score = 1;
+	int32 score = 1;
 	int32 error_code = 2;
 	repeated int32 lucky_nums = 3;
 }
@@ -1289,7 +1289,7 @@ message SCSyncBomb
 	float y = 5;
 	float nextX = 6;
 	float nextY = 7;
-	int64 score = 8;
+	int32 score = 8;
 	bool isFinish = 9;
 }
 
@@ -1297,7 +1297,7 @@ message SCSyncBombFinish
 {
 	int32 chair_idx = 1;
 	int32 bombId = 2;
-	int64 returnMoney = 3;
+	int32 returnMoney = 3;
 }
 
 message CSBombHitFishInfo
@@ -1354,7 +1354,7 @@ message SCPreShoot
 message FrozenFish
 {
 	int32 fish_id = 1;
-	int64 frozen_time = 2;
+	int32 frozen_time = 2;
 }
 
 message SCFrozenFish
@@ -1397,7 +1397,7 @@ message SCBombGlobeFishInfo
 	int32 fish_uid = 3;
 	int32 stage = 4;
 	int32 bombId = 5;
-	int64 total_earn = 6;
+	int32 total_earn = 6;
 	int32 self_bombId = 7;
 	int32 originId = 8;
 }
@@ -1413,7 +1413,7 @@ message SCAnniversaryShowSelect
 {
 	int32 chair_idx = 1;
 	bool show_select = 2;
-	int64 remain_time = 3;
+	int32 remain_time = 3;
 	int32 stage = 4;
 }
 
@@ -1424,13 +1424,13 @@ message CSAnniversarySelectReq
 
 message AnniversaryStage1Result
 {
-	int64 score = 1;
+	int32 score = 1;
 	int32 fish_uid = 2;
 }
 
 message AnniversaryStage2Result
 {
-	repeated int64 score_list = 1;
+	repeated int32 score_list = 1;
 	int32 drop_times = 2;
 	int32 multiple = 3;
 }
@@ -1447,7 +1447,7 @@ message SCAnniversarySelectResult
 	int32 stage = 2;
 	int32 bt_ratio = 3;
 	repeated MultiInfo multi_list = 4;
-	int64 total_earn = 5;
+	int32 total_earn = 5;
 	bool death = 6;
 	AnniversaryStage1Result result1 = 7;
 	AnniversaryStage2Result result2 = 8;
@@ -1467,8 +1467,8 @@ message SCSyncAnniversaryHitStage
 	int32 origin_id = 2;
 	int32 self_id = 3;
 	int32 stage = 4;
-	int64 total_earn = 5;
-	int64 invalid_earn = 6;
+	int32 total_earn = 5;
+	int32 invalid_earn = 6;
 }
 
 message ScallopLottery
@@ -1484,7 +1484,7 @@ message SCCaptureScallop
 	int32 chair_idx = 1;
 	int32 fish_uid = 2;
 	int32 ratio = 3;
-	int64 time = 4;
+	int32 time = 4;
 	repeated ScallopLottery lottery_list = 5;
 	repeated Obj reward_config = 6;
 }
@@ -1503,7 +1503,7 @@ message SCOpenScallop
 message SCSettleScallopLottery
 {
 	int32 chair_idx = 1;
-	int64 earn = 2;
+	int32 earn = 2;
 	repeated ScallopLottery lottery_list = 3;
 	repeated MultiInfo multi_list = 4;
 }
@@ -1512,7 +1512,7 @@ message SCSyncScallopLottery
 {
 	int32 chair_idx = 1;
 	int32 ratio = 2;
-	int64 time = 3;
+	int32 time = 3;
 	repeated ScallopLottery lottery_list = 4;
 	repeated Obj reward_config = 5;
 }
@@ -1546,7 +1546,7 @@ message ChestBrief
 
 message SCChestConfig
 {
-	int64 end_time = 1;
+	int32 end_time = 1;
 	repeated ChestBrief chest_brief_list = 2;
 	int32 min_ratio = 3;
 	bool auto_open = 4;
@@ -1595,7 +1595,7 @@ message SCChestSetEnable
 message SCSpecEffect
 {
 	int32 costMoney = 1;
-	int64 earnMoney = 2;
+	int32 earnMoney = 2;
 }
 
 message SCTortoiseExplode
@@ -1634,7 +1634,7 @@ message TreasureHuntConfig
 {
 	int32 term = 1;
 	int32 start_time = 2;
-	int64 end_time = 3;
+	int32 end_time = 3;
 	bool enable = 4;
 	BigRewardInfo big_reward_info = 5;
 	repeated RewardInfo reward_list = 6;

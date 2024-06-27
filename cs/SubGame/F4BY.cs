@@ -70,13 +70,13 @@ namespace F4BY {
             "ZXMYAyADKAUSEAoIY2hhaXJfaWQYBCABKAUiPwoJTXVsdGlJbmZvEg8KB2J0",
             "X3R5cGUYASABKAUSEAoIYnRfbXVsdGkYAiABKAUSDwoHYnRfYmFzZRgDIAEo",
             "BSKGAgoJU0NIaXRGaXNoEhEKCWNoYWlyX2lkeBgBIAEoBRIQCghmaXNoX3Vp",
-            "ZBgCIAEoBRIMCgRlYXJuGAMgASgDEhIKCnVzZXJfc2NvcmUYBCABKAMSEgoK",
-            "ZmlzaF92YWx1ZRgFIAEoAxIQCghtdWx0aXBsZRgGIAEoBRIXCg9oaXRfYnVs",
+            "ZBgCIAEoBRIMCgRlYXJuGAMgASgFEhIKCnVzZXJfc2NvcmUYBCABKAMSEgoK",
+            "ZmlzaF92YWx1ZRgFIAEoBRIQCghtdWx0aXBsZRgGIAEoBRIXCg9oaXRfYnVs",
             "bGV0X3R5cGUYByABKAUSGAoQbWFnaWNfY3ViZV9tdWx0aRgIIAEoBRIjCgpt",
             "dWx0aV9saXN0GAkgAygLMg8uRjRCWS5NdWx0aUluZm8SEgoKb3JpZ2luX3Vp",
             "ZBgKIAEoBRIgCgpkcm9wX3Byb3BzGAsgAygLMgwuRjRCWS5PYmplY3QinQMK",
             "EFNDSGl0U3BlY2lhbEZpc2gSEQoJY2hhaXJfaWR4GAEgASgFEhAKCGZpc2hf",
-            "dWlkGAIgASgFEgwKBGVhcm4YAyABKAMSEgoKZmlzaF92YWx1ZRgEIAEoAxIS",
+            "dWlkGAIgASgFEgwKBGVhcm4YAyABKAUSEgoKZmlzaF92YWx1ZRgEIAEoBRIS",
             "Cgp1c2VyX3Njb3JlGAUgASgDEg0KBWRlYXRoGAYgASgIEhIKCmdyb3dfc3Rh",
             "Z2UYByABKAUSEAoIbXVsdGlwbGUYCCABKAUSIgoMc2hvY2tfZmlzaGVzGAkg",
             "AygLMgwuRjRCWS5PYmplY3QSIAoKZHJvcF9wcm9wcxgKIAMoCzIMLkY0Qlku",
@@ -84,7 +84,7 @@ namespace F4BY {
             "aXRfYnVsbGV0X3R5cGUYDCABKAUSDwoHcHJvcF9ubxgNIAEoBRIYChBtYWdp",
             "Y19jdWJlX211bHRpGA4gASgFEiMKCm11bHRpX2xpc3QYDyADKAsyDy5GNEJZ",
             "Lk11bHRpSW5mbxISCgpvcmlnaW5fdWlkGBAgASgFEhQKDGRyYWdvbl9zY29y",
-            "ZRgRIAEoAyJgCg1TeW5jUHJvcEluZm9YEhoKBHByb3AYASABKAsyDC5GNEJZ",
+            "ZRgRIAEoBSJgCg1TeW5jUHJvcEluZm9YEhoKBHByb3AYASABKAsyDC5GNEJZ",
             "Lk9iamVjdBIJCgF4GAIgASgCEgkKAXkYAyABKAISDQoFYW5nbGUYBCABKAIS",
             "DgoGc3RhdHVzGAUgASgFIkkKEFVzZXJTeW5jUHJvcEluZm8SEQoJY2hhaXJf",
             "aWR4GAEgASgFEiIKBXByb3BzGAIgAygLMhMuRjRCWS5TeW5jUHJvcEluZm9Y",
@@ -92,11 +92,11 @@ namespace F4BY {
             "cm9wSW5mb1gSEQoJY2hhaXJfaWR4GAIgASgFIjcKDlNDU3luY1Byb3BJbmZv",
             "EiUKBXVzZXJzGAEgAygLMhYuRjRCWS5Vc2VyU3luY1Byb3BJbmZvIhsKC0NT",
             "U3luY01vbmV5EgwKBHR5cGUYASABKAUiaQoLU0NTeW5jTW9uZXkSEQoJY2hh",
-            "aXJfaWR4GAEgASgFEg0KBXNjb3JlGAIgASgDEgwKBHR5cGUYAyABKAUSDQoF",
+            "aXJfaWR4GAEgASgFEg0KBXNjb3JlGAIgASgFEgwKBHR5cGUYAyABKAUSDQoF",
             "ZGVsdGEYBCABKAUSDgoGdGlja2V0GAUgASgFEgsKA3ZpcBgGIAEoBSK8AQoJ",
             "RmlzaFRyYWNlEhAKCGZpc2hfdWlkGAEgASgFEhEKCWZpc2hfdHlwZRgCIAEo",
             "BRISCgpmaXNoX2xheWVyGAMgASgFEhIKCmZpc2hfc3RhZ2UYBCABKAUSDwoH",
-            "aXNfYWNlZBgFIAEoCBISCgphbGl2ZV90aW1lGAYgASgDEhIKCmJlYWRzX2xp",
+            "aXNfYWNlZBgFIAEoCBISCgphbGl2ZV90aW1lGAYgASgFEhIKCmJlYWRzX2xp",
             "c3QYByADKAUSFgoOZmlzaF90b3JwZWRvSWQYCCABKAUSEQoJZmlzaF9yb2Fk",
             "GAkgASgFIswBChBTQ0Zpc2hUcmFjZXNMaXN0EiQKC2Zpc2hfdHJhY2VzGAEg",
             "AygLMg8uRjRCWS5GaXNoVHJhY2USEQoJZmlzaF9yb2FkGAIgASgFEhIKCmZp",
@@ -155,12 +155,12 @@ namespace F4BY {
             "YmplY3QzIjIKDFNDSW5mb1JlZERvdBIRCglzZXZlbl9kYXkYASABKAgSDwoH",
             "cmVkX2RvdBgCIAEoCCJcCg1KdW1wSGlnaEFyZW5hEg8KB2lzX29wZW4YASAB",
             "KAgSCwoDdmlwGAIgASgFEgwKBGNvaW4YAyABKAUSEQoJZ2FtZV90aW1lGAQg",
-            "ASgDEgwKBHRpcHMYBSABKAkiWAoOU0NBY3Rpdml0eUluZm8SIQoEanVtcBgB",
+            "ASgFEgwKBHRpcHMYBSABKAkiWAoOU0NBY3Rpdml0eUluZm8SIQoEanVtcBgB",
             "IAEoCzITLkY0QlkuSnVtcEhpZ2hBcmVuYRINCgVsaW1pdBgCIAEoBRIUCgxw",
             "b29sX2lzX29wZW4YAyABKAgiKwoGQ1NDaGF0EhAKCG1zZ190eXBlGAEgASgF",
             "Eg8KB21zZ19pZHgYAiABKAUiPgoGU0NDaGF0EhEKCWNoYWlyX2lkeBgBIAEo",
             "BRIQCghtc2dfdHlwZRgCIAEoBRIPCgdtc2dfaWR4GAMgASgFIkwKC1NDR2Fp",
-            "bkF3YXJkEhEKCWNoYWlyX2lkeBgBIAEoBRINCgVzY29yZRgCIAEoAxIbCgVh",
+            "bkF3YXJkEhEKCWNoYWlyX2lkeBgBIAEoBRINCgVzY29yZRgCIAEoBRIbCgVh",
             "d2FyZBgDIAEoCzIMLkY0QlkuT2JqZWN0Ig0KC0NTQXdhcmRQb29sIioKC1ND",
             "QXdhcmRQb29sEhsKBHBvb2wYASADKAsyDS5GNEJZLk9iamVjdDMiLwoMQ1NQ",
             "cm9wU3RhdHVzEg8KB3Byb3BfaWQYASABKAUSDgoGc3RhdHVzGAIgASgFIlEK",
@@ -201,7 +201,7 @@ namespace F4BY {
             "CQoBeRgDIAEoAiJLCg5TQ1RvcnBlZG9TaG9vdBIRCgljaGFpcl9pZHgYASAB",
             "KAUSEAoIZmlzaF91aWQYAiABKAUSCQoBeBgDIAEoAhIJCgF5GAQgASgCIg4K",
             "DENTVG9ycGVkb0hpdCKGAQoMU0NUb3JwZWRvSGl0EhEKCWNoYWlyX2lkeBgB",
-            "IAEoBRIMCgRlYXJuGAIgASgDEg0KBXNjb3JlGAMgASgDEg4KBnByb3BJZBgE",
+            "IAEoBRIMCgRlYXJuGAIgASgFEg0KBXNjb3JlGAMgASgFEg4KBnByb3BJZBgE",
             "IAEoBRIOCgZyZW1haW4YBSABKAUSEAoIZmlzaF91aWQYBiABKAUSCQoBeBgH",
             "IAEoAhIJCgF5GAggASgCIjMKCkNTQ2FsbEZpc2gSJQoJY2FsbF90eXBlGAEg",
             "ASgOMhIuRjRCWS5DYWxsRmlzaFR5cGUiWgoKU0NDYWxsRmlzaBIRCgljaGFp",
@@ -221,13 +221,13 @@ namespace F4BY {
             "GAMgASgLMhIuRjRCWS5TZXZlbkRheVRhc2siEAoOQ1NTZXZlbkRheUluZm8i",
             "uwEKDlNDU2V2ZW5EYXlJbmZvEhIKCnN0YXJ0X2RhdGUYASABKAkSEAoIZW5k",
             "X2RhdGUYAiABKAkSDwoHY3VyX2RheRgDIAEoBRISCgpnZXRfcmVtYWluGAQg",
-            "ASgFEhQKDHJlbWFpbl9zY29yZRgFIAEoAxIOCgZ0aWNrZXQYBiABKAUSJAoG",
+            "ASgFEhQKDHJlbWFpbl9zY29yZRgFIAEoBRIOCgZ0aWNrZXQYBiABKAUSJAoG",
             "ZGV0YWlsGAcgASgLMhQuRjRCWS5TZXZlbkRheURldGFpbBISCgpndW5fZW5h",
             "YmxlGAggASgFIkUKD0NTU2V2ZW5EYXlBd2FyZBILCgNkYXkYASABKAUSDQoF",
             "aW5kZXgYAiABKAUSFgoOZ2V0X2F3YXJkX3R5cGUYAyABKAUiVAoPU0NTZXZl",
-            "bkRheUF3YXJkEg0KBXNjb3JlGAEgASgDEg4KBnRpY2tldBgCIAEoBRIiCgR0",
+            "bkRheUF3YXJkEg0KBXNjb3JlGAEgASgFEg4KBnRpY2tldBgCIAEoBRIiCgR0",
             "YXNrGAMgASgLMhQuRjRCWS5TZXZlbkRheURldGFpbCIxChBTQ1ZpcENoYXJn",
-            "ZUF3YXJkEg0KBXNjb3JlGAEgASgDEg4KBnRpY2tldBgCIAEoBSIzChBDU0Ns",
+            "ZUF3YXJkEg0KBXNjb3JlGAEgASgFEg4KBnRpY2tldBgCIAEoBSIzChBDU0Ns",
             "aWNrU3RhdGlzdGljEgsKA251bRgBIAEoCRISCgpub3RfcmVwZWF0GAIgASgI",
             "IiIKE0NTTmV3Q2xpY2tTdGF0aXN0aWMSCwoDbnVtGAEgASgJIjkKCUNTVXNl",
             "ckxvZxIMCgR0eXBlGAEgASgFEg0KBXNjb3JlGAIgASgJEg8KB2NvbnRlbnQY",
@@ -246,9 +246,9 @@ namespace F4BY {
             "EhAKCGZpc2hfdWlkGAEgASgFEhEKCWN1cl9zdGFnZRgCIAEoBRITCgthY2N1",
             "bV9tb25leRgDIAEoBRISCgpmaXNoX3ZhbHVlGAQgASgFIrcCChVTQ1RyZWFz",
             "dXJlRmlzaENhdGNoZWQSEQoJY2hhaXJfaWR4GAEgASgFEg0KBXJhdGlvGAIg",
-            "ASgFEhAKCGZpc2hfdWlkGAMgASgFEhIKCmZpc2hfdmFsdWUYBCABKAMSEwoL",
-            "YWNjdW1fbW9uZXkYBSABKAMSEAoIbXVsdGlwbGUYBiABKAUSDQoFZGVhdGgY",
-            "ByABKAgSDAoEZWFybhgIIAEoAxISCgp1c2VyX3Njb3JlGAkgASgDEhgKEGRp",
+            "ASgFEhAKCGZpc2hfdWlkGAMgASgFEhIKCmZpc2hfdmFsdWUYBCABKAUSEwoL",
+            "YWNjdW1fbW9uZXkYBSABKAUSEAoIbXVsdGlwbGUYBiABKAUSDQoFZGVhdGgY",
+            "ByABKAgSDAoEZWFybhgIIAEoBRISCgp1c2VyX3Njb3JlGAkgASgDEhgKEGRp",
             "c3BsYXlfbXVsdGlwbGUYCiABKAgSEQoJY3VyX3N0YWdlGAsgASgFEhgKEG1h",
             "Z2ljX2N1YmVfbXVsdGkYDCABKAUSIwoKbXVsdGlfbGlzdBgNIAMoCzIPLkY0",
             "QlkuTXVsdGlJbmZvEhIKCm9yaWdpbl91aWQYDiABKAUifAoRTWF0Y2hQYWNr",
@@ -265,22 +265,22 @@ namespace F4BY {
             "ZXRhaWwiEgoQQ1NHYW1lSXRlbVN3aXRjaCImChBTQ0dhbWVJdGVtU3dpdGNo",
             "EhIKCmx1Y2t5X3Rhc2sYASABKAgiKQoJQXdhcmRQcm9wEg8KB3Byb3BfaWQY",
             "ASABKAUSCwoDbnVtGAIgASgFImgKDUx1Y2t5VGFza0luZm8SCgoCaWQYASAB",
-            "KAUSDgoGc3RhdHVzGAIgASgFEg0KBXNjb3JlGAMgASgDEgwKBHRleHQYBCAB",
+            "KAUSDgoGc3RhdHVzGAIgASgFEg0KBXNjb3JlGAMgASgFEgwKBHRleHQYBCAB",
             "KAkSDgoGYW1vdW50GAUgASgFEg4KBnRhcmdldBgGIAEoBSIRCg9DU0x1Y2t5",
             "RHJhd0luZm8ilQMKD1NDTHVja3lEcmF3SW5mbxIXCg9ob3VyX3JlbWFpbl9z",
             "ZWMYASABKAUSFgoOZGF5X3JlbWFpbl9zZWMYAiABKAUSJAoLaG91cl9yZXdh",
             "cmQYAyADKAsyDy5GNEJZLkF3YXJkUHJvcBIjCgpkYXlfcmV3YXJkGAQgAygL",
             "Mg8uRjRCWS5Bd2FyZFByb3ASFgoOZGF5X2x1Y2t5X251bXMYBSADKAUSDQoF",
-            "c2NvcmUYBiABKAMSEgoKaG91cl90b3RhbBgHIAEoBRIRCglkYXlfdG90YWwY",
+            "c2NvcmUYBiABKAUSEgoKaG91cl90b3RhbBgHIAEoBRIRCglkYXlfdG90YWwY",
             "CCABKAUSFgoOaG91cl9hd2FyZF9udW0YCSABKAUSFQoNZGF5X2F3YXJkX251",
             "bRgKIAEoBRIXCg9uZXh0X3N0YXJ0X3RpY2sYCyABKAUSJgoJdGFza19pbmZv",
             "GAwgAygLMhMuRjRCWS5MdWNreVRhc2tJbmZvEhYKDmV4Y2hhbmdlX3Njb3Jl",
             "GA0gASgFEhcKD25leHRfcmVtYWluX3NlYxgOIAEoBRIXCg9ob3VyX2x1Y2t5",
             "X251bXMYDyADKAUiJgoTQ1NHZXRMdWNreVRhc2tBd2FyZBIPCgd0YXNrX2lk",
             "GAEgASgFIlUKE1NDR2V0THVja3lUYXNrQXdhcmQSIQoEdGFzaxgBIAEoCzIT",
-            "LkY0QlkuTHVja3lUYXNrSW5mbxINCgVzY29yZRgCIAEoAxIMCgRjb2RlGAMg",
+            "LkY0QlkuTHVja3lUYXNrSW5mbxINCgVzY29yZRgCIAEoBRIMCgRjb2RlGAMg",
             "ASgFIh4KDUNTR2V0THVja3lOdW0SDQoFdGltZXMYASABKAUiRgoNU0NHZXRM",
-            "dWNreU51bRINCgVzY29yZRgBIAEoAxISCgplcnJvcl9jb2RlGAIgASgFEhIK",
+            "dWNreU51bRINCgVzY29yZRgBIAEoBRISCgplcnJvcl9jb2RlGAIgASgFEhIK",
             "Cmx1Y2t5X251bXMYAyADKAUiDwoNQ1NMdWNreVJlZERvdCIdCg1TQ0x1Y2t5",
             "UmVkRG90EgwKBHNob3cYASABKAgiXQoLTHVja3lSZWNvcmQSCwoDdmlwGAEg",
             "ASgFEg0KBXRpbWVzGAIgASgFEhEKCWx1Y2t5X251bRgDIAEoBRIMCgR0aWNr",
@@ -294,9 +294,9 @@ namespace F4BY {
             "AyABKAUilwEKClNDU3luY0JvbWISEQoJY2hhaXJfaWR4GAEgASgFEg4KBmJv",
             "bWJJZBgCIAEoBRIRCgljdXJTdGF0dXMYAyABKAUSCQoBeBgEIAEoAhIJCgF5",
             "GAUgASgCEg0KBW5leHRYGAYgASgCEg0KBW5leHRZGAcgASgCEg0KBXNjb3Jl",
-            "GAggASgDEhAKCGlzRmluaXNoGAkgASgIIkoKEFNDU3luY0JvbWJGaW5pc2gS",
+            "GAggASgFEhAKCGlzRmluaXNoGAkgASgIIkoKEFNDU3luY0JvbWJGaW5pc2gS",
             "EQoJY2hhaXJfaWR4GAEgASgFEg4KBmJvbWJJZBgCIAEoBRITCgtyZXR1cm5N",
-            "b25leRgDIAEoAyJGChFDU0JvbWJIaXRGaXNoSW5mbxIOCgZib21iSWQYASAB",
+            "b25leRgDIAEoBSJGChFDU0JvbWJIaXRGaXNoSW5mbxIOCgZib21iSWQYASAB",
             "KAUSDgoGZmlzaElkGAIgAygFEhEKCWNoYWlyX2lkeBgDIAEoBSKfAQoOU0NH",
             "ZXRNYWdpY0N1YmUSEQoJY2hhaXJfaWR4GAEgASgFEhIKCmJ1bGxldFR5cGUY",
             "AiABKAUSFAoMY3JlYXRlV2VhcG9uGAMgASgIEhIKCmlzU3luY0luZm8YBCAB",
@@ -309,7 +309,7 @@ namespace F4BY {
             "DQoFYW5nbGUYAiABKAUSEgoKc2hvb3RfdHlwZRgDIAEoBSJCCgpTQ1ByZVNo",
             "b290EhEKCWNoYWlyX2lkeBgBIAEoBRINCgVhbmdsZRgCIAEoBRISCgpzaG9v",
             "dF90eXBlGAMgASgFIjIKCkZyb3plbkZpc2gSDwoHZmlzaF9pZBgBIAEoBRIT",
-            "Cgtmcm96ZW5fdGltZRgCIAEoAyI0CgxTQ0Zyb3plbkZpc2gSJAoKZnJvemVu",
+            "Cgtmcm96ZW5fdGltZRgCIAEoBSI0CgxTQ0Zyb3plbkZpc2gSJAoKZnJvemVu",
             "RmlzaBgBIAMoCzIQLkY0QlkuRnJvemVuRmlzaCKEAQoSU0NWYWxlbnRpbmVE",
             "YXlGaXNoEiIKCWZpc2hfaW5mbxgBIAEoCzIPLkY0QlkuU0NIaXRGaXNoEhAK",
             "CGJ0X3JhdGlvGAIgASgFEhIKCnJhbmRfbXVsdGkYAyABKAUSEgoKYmFsbF9t",
@@ -322,20 +322,20 @@ namespace F4BY {
             "bGlzdBgGIAMoCzIPLkY0QlkuTXVsdGlJbmZvIqMBChNTQ0JvbWJHbG9iZUZp",
             "c2hJbmZvEhEKCWNoYWlyX2lkeBgBIAEoBRINCgVyYXRpbxgCIAEoBRIQCghm",
             "aXNoX3VpZBgDIAEoBRINCgVzdGFnZRgEIAEoBRIOCgZib21iSWQYBSABKAUS",
-            "EgoKdG90YWxfZWFybhgGIAEoAxITCgtzZWxmX2JvbWJJZBgHIAEoBRIQCghv",
+            "EgoKdG90YWxfZWFybhgGIAEoBRITCgtzZWxmX2JvbWJJZBgHIAEoBRIQCghv",
             "cmlnaW5JZBgIIAEoBSJMChJDU0JvbWJHbG9iZUZpc2hIaXQSDgoGYm9tYklk",
             "GAEgASgFEg8KB2J0X3R5cGUYAiABKAUSFQoNc2NyZWVuX2Zpc2hlcxgDIAMo",
             "BSJlChdTQ0Fubml2ZXJzYXJ5U2hvd1NlbGVjdBIRCgljaGFpcl9pZHgYASAB",
-            "KAUSEwoLc2hvd19zZWxlY3QYAiABKAgSEwoLcmVtYWluX3RpbWUYAyABKAMS",
+            "KAUSEwoLc2hvd19zZWxlY3QYAiABKAgSEwoLcmVtYWluX3RpbWUYAyABKAUS",
             "DQoFc3RhZ2UYBCABKAUiJwoWQ1NBbm5pdmVyc2FyeVNlbGVjdFJlcRINCgVz",
             "dGFnZRgBIAEoBSI6ChdBbm5pdmVyc2FyeVN0YWdlMVJlc3VsdBINCgVzY29y",
-            "ZRgBIAEoAxIQCghmaXNoX3VpZBgCIAEoBSJTChdBbm5pdmVyc2FyeVN0YWdl",
-            "MlJlc3VsdBISCgpzY29yZV9saXN0GAEgAygDEhIKCmRyb3BfdGltZXMYAiAB",
+            "ZRgBIAEoBRIQCghmaXNoX3VpZBgCIAEoBSJTChdBbm5pdmVyc2FyeVN0YWdl",
+            "MlJlc3VsdBISCgpzY29yZV9saXN0GAEgAygFEhIKCmRyb3BfdGltZXMYAiAB",
             "KAUSEAoIbXVsdGlwbGUYAyABKAUiPQoXQW5uaXZlcnNhcnlTdGFnZTNSZXN1",
             "bHQSEQoJb3JpZ2luX2lkGAEgASgFEg8KB3NlbGZfaWQYAiABKAUipwIKGVND",
             "QW5uaXZlcnNhcnlTZWxlY3RSZXN1bHQSEQoJY2hhaXJfaWR4GAEgASgFEg0K",
             "BXN0YWdlGAIgASgFEhAKCGJ0X3JhdGlvGAMgASgFEiMKCm11bHRpX2xpc3QY",
-            "BCADKAsyDy5GNEJZLk11bHRpSW5mbxISCgp0b3RhbF9lYXJuGAUgASgDEg0K",
+            "BCADKAsyDy5GNEJZLk11bHRpSW5mbxISCgp0b3RhbF9lYXJuGAUgASgFEg0K",
             "BWRlYXRoGAYgASgIEi4KB3Jlc3VsdDEYByABKAsyHS5GNEJZLkFubml2ZXJz",
             "YXJ5U3RhZ2UxUmVzdWx0Ei4KB3Jlc3VsdDIYCCABKAsyHS5GNEJZLkFubml2",
             "ZXJzYXJ5U3RhZ2UyUmVzdWx0Ei4KB3Jlc3VsdDMYCSABKAsyHS5GNEJZLkFu",
@@ -343,20 +343,20 @@ namespace F4BY {
             "Ym9tYklkGAEgASgFEg8KB2J0X3R5cGUYAiABKAUSFQoNc2NyZWVuX2Zpc2hl",
             "cxgDIAMoBSKLAQoZU0NTeW5jQW5uaXZlcnNhcnlIaXRTdGFnZRIRCgljaGFp",
             "cl9pZHgYASABKAUSEQoJb3JpZ2luX2lkGAIgASgFEg8KB3NlbGZfaWQYAyAB",
-            "KAUSDQoFc3RhZ2UYBCABKAUSEgoKdG90YWxfZWFybhgFIAEoAxIUCgxpbnZh",
-            "bGlkX2Vhcm4YBiABKAMiVQoOU2NhbGxvcExvdHRlcnkSCgoCaWQYASABKAUS",
+            "KAUSDQoFc3RhZ2UYBCABKAUSEgoKdG90YWxfZWFybhgFIAEoBRIUCgxpbnZh",
+            "bGlkX2Vhcm4YBiABKAUiVQoOU2NhbGxvcExvdHRlcnkSCgoCaWQYASABKAUS",
             "DAoEdHlwZRgCIAEoBRIOCgZzdGF0dXMYAyABKAUSGQoGcmV3YXJkGAQgASgL",
             "MgkuRjRCWS5PYmoiogEKEFNDQ2FwdHVyZVNjYWxsb3ASEQoJY2hhaXJfaWR4",
             "GAEgASgFEhAKCGZpc2hfdWlkGAIgASgFEg0KBXJhdGlvGAMgASgFEgwKBHRp",
-            "bWUYBCABKAMSKgoMbG90dGVyeV9saXN0GAUgAygLMhQuRjRCWS5TY2FsbG9w",
+            "bWUYBCABKAUSKgoMbG90dGVyeV9saXN0GAUgAygLMhQuRjRCWS5TY2FsbG9w",
             "TG90dGVyeRIgCg1yZXdhcmRfY29uZmlnGAYgAygLMgkuRjRCWS5PYmoiGwoN",
             "Q1NPcGVuU2NhbGxvcBIKCgJpZBgBIAEoBSJJCg1TQ09wZW5TY2FsbG9wEhEK",
             "CWNoYWlyX2lkeBgBIAEoBRIlCgdzY2FsbG9wGAIgASgLMhQuRjRCWS5TY2Fs",
             "bG9wTG90dGVyeSKKAQoWU0NTZXR0bGVTY2FsbG9wTG90dGVyeRIRCgljaGFp",
-            "cl9pZHgYASABKAUSDAoEZWFybhgCIAEoAxIqCgxsb3R0ZXJ5X2xpc3QYAyAD",
+            "cl9pZHgYASABKAUSDAoEZWFybhgCIAEoBRIqCgxsb3R0ZXJ5X2xpc3QYAyAD",
             "KAsyFC5GNEJZLlNjYWxsb3BMb3R0ZXJ5EiMKCm11bHRpX2xpc3QYBCADKAsy",
             "Dy5GNEJZLk11bHRpSW5mbyKUAQoUU0NTeW5jU2NhbGxvcExvdHRlcnkSEQoJ",
-            "Y2hhaXJfaWR4GAEgASgFEg0KBXJhdGlvGAIgASgFEgwKBHRpbWUYAyABKAMS",
+            "Y2hhaXJfaWR4GAEgASgFEg0KBXJhdGlvGAIgASgFEgwKBHRpbWUYAyABKAUS",
             "KgoMbG90dGVyeV9saXN0GAQgAygLMhQuRjRCWS5TY2FsbG9wTG90dGVyeRIg",
             "Cg1yZXdhcmRfY29uZmlnGAUgAygLMgkuRjRCWS5PYmoiOQoPT3BlbkNoZXN0",
             "UmV3YXJkEgoKAmlkGAEgASgFEhoKA251bRgCIAEoCzINLkY0QlkuRGVjaW1h",
@@ -366,7 +366,7 @@ namespace F4BY {
             "dWlkZRgFIAEoCBIYChBhdmFpbGFibGVfcmV3YXJkGAYgASgFIg8KDUNTQ2hl",
             "c3RDb25maWciWAoKQ2hlc3RCcmllZhIjCgpjaGVzdF90eXBlGAEgASgOMg8u",
             "RjRCWS5DaGVzdFR5cGUSJQoGcmV3YXJkGAIgAygLMhUuRjRCWS5PcGVuQ2hl",
-            "c3RSZXdhcmQiuAEKDVNDQ2hlc3RDb25maWcSEAoIZW5kX3RpbWUYASABKAMS",
+            "c3RSZXdhcmQiuAEKDVNDQ2hlc3RDb25maWcSEAoIZW5kX3RpbWUYASABKAUS",
             "KgoQY2hlc3RfYnJpZWZfbGlzdBgCIAMoCzIQLkY0QlkuQ2hlc3RCcmllZhIR",
             "CgltaW5fcmF0aW8YAyABKAUSEQoJYXV0b19vcGVuGAQgASgIEjAKC2F1dG9f",
             "b3B0aW9uGAUgASgOMhsuRjRCWS5DaGVzdEF1dG9TZWxlY3RPcHRpb24SEQoJ",
@@ -382,7 +382,7 @@ namespace F4BY {
             "b19vcGVuGAIgASgIIiUKEENTQ2hlc3RTZXRFbmFibGUSEQoJaXNfZW5hYmxl",
             "GAEgASgIIiUKEFNDQ2hlc3RTZXRFbmFibGUSEQoJaXNfZW5hYmxlGAEgASgI",
             "IjQKDFNDU3BlY0VmZmVjdBIRCgljb3N0TW9uZXkYASABKAUSEQoJZWFybk1v",
-            "bmV5GAIgASgDIm4KEVNDVG9ydG9pc2VFeHBsb2RlEhEKCWNoYWlyX2lkeBgB",
+            "bmV5GAIgASgFIm4KEVNDVG9ydG9pc2VFeHBsb2RlEhEKCWNoYWlyX2lkeBgB",
             "IAEoBRIQCghmaXNoX3VpZBgCIAEoBRIRCglidWxsZXRfaWQYAyABKAUSDQoF",
             "cmF0aW8YBCABKAUSEgoKbWF4X2VmZmVjdBgFIAEoBSJTCgpSZXdhcmRJbmZv",
             "Eg8KB3Byb3BfaWQYASABKAUSEAoIcHJvcF9udW0YAiABKAUSDwoHcXVhbGl0",
@@ -393,7 +393,7 @@ namespace F4BY {
             "cmV3YXJkX3RpbWVzGAEgASgFEikKD2RyYXdfcmV3YXJkTGlzdBgCIAMoCzIQ",
             "LkY0QlkuUmV3YXJkSW5mbyLgAQoSVHJlYXN1cmVIdW50Q29uZmlnEgwKBHRl",
             "cm0YASABKAUSEgoKc3RhcnRfdGltZRgCIAEoBRIQCghlbmRfdGltZRgDIAEo",
-            "AxIOCgZlbmFibGUYBCABKAgSLAoPYmlnX3Jld2FyZF9pbmZvGAUgASgLMhMu",
+            "BRIOCgZlbmFibGUYBCABKAgSLAoPYmlnX3Jld2FyZF9pbmZvGAUgASgLMhMu",
             "RjRCWS5CaWdSZXdhcmRJbmZvEiUKC3Jld2FyZF9saXN0GAYgAygLMhAuRjRC",
             "WS5SZXdhcmRJbmZvEhAKCG1pbl9kcmF3GAcgASgFEhAKCG1heF9kcmF3GAgg",
             "ASgFEg0KBXRvcGljGAkgASgFIiQKDUNTU3luY0NvbmZpZ3MSEwoLY29uZmln",
@@ -7440,9 +7440,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "earn" field.</summary>
     public const int EarnFieldNumber = 3;
-    private long earn_;
+    private int earn_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long Earn {
+    public int Earn {
       get { return earn_; }
       set {
         earn_ = value;
@@ -7462,9 +7462,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "fish_value" field.</summary>
     public const int FishValueFieldNumber = 5;
-    private long fishValue_;
+    private int fishValue_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long FishValue {
+    public int FishValue {
       get { return fishValue_; }
       set {
         fishValue_ = value;
@@ -7567,9 +7567,9 @@ namespace F4BY {
       int hash = 1;
       if (ChairIdx != 0) hash ^= ChairIdx.GetHashCode();
       if (FishUid != 0) hash ^= FishUid.GetHashCode();
-      if (Earn != 0L) hash ^= Earn.GetHashCode();
+      if (Earn != 0) hash ^= Earn.GetHashCode();
       if (UserScore != 0L) hash ^= UserScore.GetHashCode();
-      if (FishValue != 0L) hash ^= FishValue.GetHashCode();
+      if (FishValue != 0) hash ^= FishValue.GetHashCode();
       if (Multiple != 0) hash ^= Multiple.GetHashCode();
       if (HitBulletType != 0) hash ^= HitBulletType.GetHashCode();
       if (MagicCubeMulti != 0) hash ^= MagicCubeMulti.GetHashCode();
@@ -7600,17 +7600,17 @@ namespace F4BY {
         output.WriteRawTag(16);
         output.WriteInt32(FishUid);
       }
-      if (Earn != 0L) {
+      if (Earn != 0) {
         output.WriteRawTag(24);
-        output.WriteInt64(Earn);
+        output.WriteInt32(Earn);
       }
       if (UserScore != 0L) {
         output.WriteRawTag(32);
         output.WriteInt64(UserScore);
       }
-      if (FishValue != 0L) {
+      if (FishValue != 0) {
         output.WriteRawTag(40);
-        output.WriteInt64(FishValue);
+        output.WriteInt32(FishValue);
       }
       if (Multiple != 0) {
         output.WriteRawTag(48);
@@ -7647,17 +7647,17 @@ namespace F4BY {
         output.WriteRawTag(16);
         output.WriteInt32(FishUid);
       }
-      if (Earn != 0L) {
+      if (Earn != 0) {
         output.WriteRawTag(24);
-        output.WriteInt64(Earn);
+        output.WriteInt32(Earn);
       }
       if (UserScore != 0L) {
         output.WriteRawTag(32);
         output.WriteInt64(UserScore);
       }
-      if (FishValue != 0L) {
+      if (FishValue != 0) {
         output.WriteRawTag(40);
-        output.WriteInt64(FishValue);
+        output.WriteInt32(FishValue);
       }
       if (Multiple != 0) {
         output.WriteRawTag(48);
@@ -7692,14 +7692,14 @@ namespace F4BY {
       if (FishUid != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(FishUid);
       }
-      if (Earn != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Earn);
+      if (Earn != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Earn);
       }
       if (UserScore != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(UserScore);
       }
-      if (FishValue != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(FishValue);
+      if (FishValue != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(FishValue);
       }
       if (Multiple != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Multiple);
@@ -7732,13 +7732,13 @@ namespace F4BY {
       if (other.FishUid != 0) {
         FishUid = other.FishUid;
       }
-      if (other.Earn != 0L) {
+      if (other.Earn != 0) {
         Earn = other.Earn;
       }
       if (other.UserScore != 0L) {
         UserScore = other.UserScore;
       }
-      if (other.FishValue != 0L) {
+      if (other.FishValue != 0) {
         FishValue = other.FishValue;
       }
       if (other.Multiple != 0) {
@@ -7778,7 +7778,7 @@ namespace F4BY {
             break;
           }
           case 24: {
-            Earn = input.ReadInt64();
+            Earn = input.ReadInt32();
             break;
           }
           case 32: {
@@ -7786,7 +7786,7 @@ namespace F4BY {
             break;
           }
           case 40: {
-            FishValue = input.ReadInt64();
+            FishValue = input.ReadInt32();
             break;
           }
           case 48: {
@@ -7836,7 +7836,7 @@ namespace F4BY {
             break;
           }
           case 24: {
-            Earn = input.ReadInt64();
+            Earn = input.ReadInt32();
             break;
           }
           case 32: {
@@ -7844,7 +7844,7 @@ namespace F4BY {
             break;
           }
           case 40: {
-            FishValue = input.ReadInt64();
+            FishValue = input.ReadInt32();
             break;
           }
           case 48: {
@@ -7956,9 +7956,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "earn" field.</summary>
     public const int EarnFieldNumber = 3;
-    private long earn_;
+    private int earn_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long Earn {
+    public int Earn {
       get { return earn_; }
       set {
         earn_ = value;
@@ -7967,9 +7967,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "fish_value" field.</summary>
     public const int FishValueFieldNumber = 4;
-    private long fishValue_;
+    private int fishValue_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long FishValue {
+    public int FishValue {
       get { return fishValue_; }
       set {
         fishValue_ = value;
@@ -8107,9 +8107,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "dragon_score" field.</summary>
     public const int DragonScoreFieldNumber = 17;
-    private long dragonScore_;
+    private int dragonScore_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long DragonScore {
+    public int DragonScore {
       get { return dragonScore_; }
       set {
         dragonScore_ = value;
@@ -8154,8 +8154,8 @@ namespace F4BY {
       int hash = 1;
       if (ChairIdx != 0) hash ^= ChairIdx.GetHashCode();
       if (FishUid != 0) hash ^= FishUid.GetHashCode();
-      if (Earn != 0L) hash ^= Earn.GetHashCode();
-      if (FishValue != 0L) hash ^= FishValue.GetHashCode();
+      if (Earn != 0) hash ^= Earn.GetHashCode();
+      if (FishValue != 0) hash ^= FishValue.GetHashCode();
       if (UserScore != 0L) hash ^= UserScore.GetHashCode();
       if (Death != false) hash ^= Death.GetHashCode();
       if (GrowStage != 0) hash ^= GrowStage.GetHashCode();
@@ -8168,7 +8168,7 @@ namespace F4BY {
       if (MagicCubeMulti != 0) hash ^= MagicCubeMulti.GetHashCode();
       hash ^= multiList_.GetHashCode();
       if (OriginUid != 0) hash ^= OriginUid.GetHashCode();
-      if (DragonScore != 0L) hash ^= DragonScore.GetHashCode();
+      if (DragonScore != 0) hash ^= DragonScore.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -8193,13 +8193,13 @@ namespace F4BY {
         output.WriteRawTag(16);
         output.WriteInt32(FishUid);
       }
-      if (Earn != 0L) {
+      if (Earn != 0) {
         output.WriteRawTag(24);
-        output.WriteInt64(Earn);
+        output.WriteInt32(Earn);
       }
-      if (FishValue != 0L) {
+      if (FishValue != 0) {
         output.WriteRawTag(32);
-        output.WriteInt64(FishValue);
+        output.WriteInt32(FishValue);
       }
       if (UserScore != 0L) {
         output.WriteRawTag(40);
@@ -8240,9 +8240,9 @@ namespace F4BY {
         output.WriteRawTag(128, 1);
         output.WriteInt32(OriginUid);
       }
-      if (DragonScore != 0L) {
+      if (DragonScore != 0) {
         output.WriteRawTag(136, 1);
-        output.WriteInt64(DragonScore);
+        output.WriteInt32(DragonScore);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -8261,13 +8261,13 @@ namespace F4BY {
         output.WriteRawTag(16);
         output.WriteInt32(FishUid);
       }
-      if (Earn != 0L) {
+      if (Earn != 0) {
         output.WriteRawTag(24);
-        output.WriteInt64(Earn);
+        output.WriteInt32(Earn);
       }
-      if (FishValue != 0L) {
+      if (FishValue != 0) {
         output.WriteRawTag(32);
-        output.WriteInt64(FishValue);
+        output.WriteInt32(FishValue);
       }
       if (UserScore != 0L) {
         output.WriteRawTag(40);
@@ -8308,9 +8308,9 @@ namespace F4BY {
         output.WriteRawTag(128, 1);
         output.WriteInt32(OriginUid);
       }
-      if (DragonScore != 0L) {
+      if (DragonScore != 0) {
         output.WriteRawTag(136, 1);
-        output.WriteInt64(DragonScore);
+        output.WriteInt32(DragonScore);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -8327,11 +8327,11 @@ namespace F4BY {
       if (FishUid != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(FishUid);
       }
-      if (Earn != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Earn);
+      if (Earn != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Earn);
       }
-      if (FishValue != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(FishValue);
+      if (FishValue != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(FishValue);
       }
       if (UserScore != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(UserScore);
@@ -8363,8 +8363,8 @@ namespace F4BY {
       if (OriginUid != 0) {
         size += 2 + pb::CodedOutputStream.ComputeInt32Size(OriginUid);
       }
-      if (DragonScore != 0L) {
-        size += 2 + pb::CodedOutputStream.ComputeInt64Size(DragonScore);
+      if (DragonScore != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeInt32Size(DragonScore);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -8383,10 +8383,10 @@ namespace F4BY {
       if (other.FishUid != 0) {
         FishUid = other.FishUid;
       }
-      if (other.Earn != 0L) {
+      if (other.Earn != 0) {
         Earn = other.Earn;
       }
-      if (other.FishValue != 0L) {
+      if (other.FishValue != 0) {
         FishValue = other.FishValue;
       }
       if (other.UserScore != 0L) {
@@ -8422,7 +8422,7 @@ namespace F4BY {
       if (other.OriginUid != 0) {
         OriginUid = other.OriginUid;
       }
-      if (other.DragonScore != 0L) {
+      if (other.DragonScore != 0) {
         DragonScore = other.DragonScore;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -8448,11 +8448,11 @@ namespace F4BY {
             break;
           }
           case 24: {
-            Earn = input.ReadInt64();
+            Earn = input.ReadInt32();
             break;
           }
           case 32: {
-            FishValue = input.ReadInt64();
+            FishValue = input.ReadInt32();
             break;
           }
           case 40: {
@@ -8507,7 +8507,7 @@ namespace F4BY {
             break;
           }
           case 136: {
-            DragonScore = input.ReadInt64();
+            DragonScore = input.ReadInt32();
             break;
           }
         }
@@ -8533,11 +8533,11 @@ namespace F4BY {
             break;
           }
           case 24: {
-            Earn = input.ReadInt64();
+            Earn = input.ReadInt32();
             break;
           }
           case 32: {
-            FishValue = input.ReadInt64();
+            FishValue = input.ReadInt32();
             break;
           }
           case 40: {
@@ -8592,7 +8592,7 @@ namespace F4BY {
             break;
           }
           case 136: {
-            DragonScore = input.ReadInt64();
+            DragonScore = input.ReadInt32();
             break;
           }
         }
@@ -9730,9 +9730,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "score" field.</summary>
     public const int ScoreFieldNumber = 2;
-    private long score_;
+    private int score_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long Score {
+    public int Score {
       get { return score_; }
       set {
         score_ = value;
@@ -9809,7 +9809,7 @@ namespace F4BY {
     public override int GetHashCode() {
       int hash = 1;
       if (ChairIdx != 0) hash ^= ChairIdx.GetHashCode();
-      if (Score != 0L) hash ^= Score.GetHashCode();
+      if (Score != 0) hash ^= Score.GetHashCode();
       if (Type != 0) hash ^= Type.GetHashCode();
       if (Delta != 0) hash ^= Delta.GetHashCode();
       if (Ticket != 0) hash ^= Ticket.GetHashCode();
@@ -9834,9 +9834,9 @@ namespace F4BY {
         output.WriteRawTag(8);
         output.WriteInt32(ChairIdx);
       }
-      if (Score != 0L) {
+      if (Score != 0) {
         output.WriteRawTag(16);
-        output.WriteInt64(Score);
+        output.WriteInt32(Score);
       }
       if (Type != 0) {
         output.WriteRawTag(24);
@@ -9867,9 +9867,9 @@ namespace F4BY {
         output.WriteRawTag(8);
         output.WriteInt32(ChairIdx);
       }
-      if (Score != 0L) {
+      if (Score != 0) {
         output.WriteRawTag(16);
-        output.WriteInt64(Score);
+        output.WriteInt32(Score);
       }
       if (Type != 0) {
         output.WriteRawTag(24);
@@ -9899,8 +9899,8 @@ namespace F4BY {
       if (ChairIdx != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChairIdx);
       }
-      if (Score != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Score);
+      if (Score != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Score);
       }
       if (Type != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Type);
@@ -9928,7 +9928,7 @@ namespace F4BY {
       if (other.ChairIdx != 0) {
         ChairIdx = other.ChairIdx;
       }
-      if (other.Score != 0L) {
+      if (other.Score != 0) {
         Score = other.Score;
       }
       if (other.Type != 0) {
@@ -9962,7 +9962,7 @@ namespace F4BY {
             break;
           }
           case 16: {
-            Score = input.ReadInt64();
+            Score = input.ReadInt32();
             break;
           }
           case 24: {
@@ -10000,7 +10000,7 @@ namespace F4BY {
             break;
           }
           case 16: {
-            Score = input.ReadInt64();
+            Score = input.ReadInt32();
             break;
           }
           case 24: {
@@ -10129,9 +10129,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "alive_time" field.</summary>
     public const int AliveTimeFieldNumber = 6;
-    private long aliveTime_;
+    private int aliveTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long AliveTime {
+    public int AliveTime {
       get { return aliveTime_; }
       set {
         aliveTime_ = value;
@@ -10203,7 +10203,7 @@ namespace F4BY {
       if (FishLayer != 0) hash ^= FishLayer.GetHashCode();
       if (FishStage != 0) hash ^= FishStage.GetHashCode();
       if (IsAced != false) hash ^= IsAced.GetHashCode();
-      if (AliveTime != 0L) hash ^= AliveTime.GetHashCode();
+      if (AliveTime != 0) hash ^= AliveTime.GetHashCode();
       hash ^= beadsList_.GetHashCode();
       if (FishTorpedoId != 0) hash ^= FishTorpedoId.GetHashCode();
       if (FishRoad != 0) hash ^= FishRoad.GetHashCode();
@@ -10243,9 +10243,9 @@ namespace F4BY {
         output.WriteRawTag(40);
         output.WriteBool(IsAced);
       }
-      if (AliveTime != 0L) {
+      if (AliveTime != 0) {
         output.WriteRawTag(48);
-        output.WriteInt64(AliveTime);
+        output.WriteInt32(AliveTime);
       }
       beadsList_.WriteTo(output, _repeated_beadsList_codec);
       if (FishTorpedoId != 0) {
@@ -10285,9 +10285,9 @@ namespace F4BY {
         output.WriteRawTag(40);
         output.WriteBool(IsAced);
       }
-      if (AliveTime != 0L) {
+      if (AliveTime != 0) {
         output.WriteRawTag(48);
-        output.WriteInt64(AliveTime);
+        output.WriteInt32(AliveTime);
       }
       beadsList_.WriteTo(ref output, _repeated_beadsList_codec);
       if (FishTorpedoId != 0) {
@@ -10322,8 +10322,8 @@ namespace F4BY {
       if (IsAced != false) {
         size += 1 + 1;
       }
-      if (AliveTime != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(AliveTime);
+      if (AliveTime != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(AliveTime);
       }
       size += beadsList_.CalculateSize(_repeated_beadsList_codec);
       if (FishTorpedoId != 0) {
@@ -10358,7 +10358,7 @@ namespace F4BY {
       if (other.IsAced != false) {
         IsAced = other.IsAced;
       }
-      if (other.AliveTime != 0L) {
+      if (other.AliveTime != 0) {
         AliveTime = other.AliveTime;
       }
       beadsList_.Add(other.beadsList_);
@@ -10403,7 +10403,7 @@ namespace F4BY {
             break;
           }
           case 48: {
-            AliveTime = input.ReadInt64();
+            AliveTime = input.ReadInt32();
             break;
           }
           case 58:
@@ -10454,7 +10454,7 @@ namespace F4BY {
             break;
           }
           case 48: {
-            AliveTime = input.ReadInt64();
+            AliveTime = input.ReadInt32();
             break;
           }
           case 58:
@@ -17584,9 +17584,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "game_time" field.</summary>
     public const int GameTimeFieldNumber = 4;
-    private long gameTime_;
+    private int gameTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long GameTime {
+    public int GameTime {
       get { return gameTime_; }
       set {
         gameTime_ = value;
@@ -17631,7 +17631,7 @@ namespace F4BY {
       if (IsOpen != false) hash ^= IsOpen.GetHashCode();
       if (Vip != 0) hash ^= Vip.GetHashCode();
       if (Coin != 0) hash ^= Coin.GetHashCode();
-      if (GameTime != 0L) hash ^= GameTime.GetHashCode();
+      if (GameTime != 0) hash ^= GameTime.GetHashCode();
       if (Tips.Length != 0) hash ^= Tips.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -17661,9 +17661,9 @@ namespace F4BY {
         output.WriteRawTag(24);
         output.WriteInt32(Coin);
       }
-      if (GameTime != 0L) {
+      if (GameTime != 0) {
         output.WriteRawTag(32);
-        output.WriteInt64(GameTime);
+        output.WriteInt32(GameTime);
       }
       if (Tips.Length != 0) {
         output.WriteRawTag(42);
@@ -17690,9 +17690,9 @@ namespace F4BY {
         output.WriteRawTag(24);
         output.WriteInt32(Coin);
       }
-      if (GameTime != 0L) {
+      if (GameTime != 0) {
         output.WriteRawTag(32);
-        output.WriteInt64(GameTime);
+        output.WriteInt32(GameTime);
       }
       if (Tips.Length != 0) {
         output.WriteRawTag(42);
@@ -17716,8 +17716,8 @@ namespace F4BY {
       if (Coin != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Coin);
       }
-      if (GameTime != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(GameTime);
+      if (GameTime != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(GameTime);
       }
       if (Tips.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Tips);
@@ -17742,7 +17742,7 @@ namespace F4BY {
       if (other.Coin != 0) {
         Coin = other.Coin;
       }
-      if (other.GameTime != 0L) {
+      if (other.GameTime != 0) {
         GameTime = other.GameTime;
       }
       if (other.Tips.Length != 0) {
@@ -17775,7 +17775,7 @@ namespace F4BY {
             break;
           }
           case 32: {
-            GameTime = input.ReadInt64();
+            GameTime = input.ReadInt32();
             break;
           }
           case 42: {
@@ -17809,7 +17809,7 @@ namespace F4BY {
             break;
           }
           case 32: {
-            GameTime = input.ReadInt64();
+            GameTime = input.ReadInt32();
             break;
           }
           case 42: {
@@ -18581,9 +18581,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "score" field.</summary>
     public const int ScoreFieldNumber = 2;
-    private long score_;
+    private int score_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long Score {
+    public int Score {
       get { return score_; }
       set {
         score_ = value;
@@ -18624,7 +18624,7 @@ namespace F4BY {
     public override int GetHashCode() {
       int hash = 1;
       if (ChairIdx != 0) hash ^= ChairIdx.GetHashCode();
-      if (Score != 0L) hash ^= Score.GetHashCode();
+      if (Score != 0) hash ^= Score.GetHashCode();
       if (award_ != null) hash ^= Award.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -18646,9 +18646,9 @@ namespace F4BY {
         output.WriteRawTag(8);
         output.WriteInt32(ChairIdx);
       }
-      if (Score != 0L) {
+      if (Score != 0) {
         output.WriteRawTag(16);
-        output.WriteInt64(Score);
+        output.WriteInt32(Score);
       }
       if (award_ != null) {
         output.WriteRawTag(26);
@@ -18667,9 +18667,9 @@ namespace F4BY {
         output.WriteRawTag(8);
         output.WriteInt32(ChairIdx);
       }
-      if (Score != 0L) {
+      if (Score != 0) {
         output.WriteRawTag(16);
-        output.WriteInt64(Score);
+        output.WriteInt32(Score);
       }
       if (award_ != null) {
         output.WriteRawTag(26);
@@ -18687,8 +18687,8 @@ namespace F4BY {
       if (ChairIdx != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChairIdx);
       }
-      if (Score != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Score);
+      if (Score != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Score);
       }
       if (award_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Award);
@@ -18707,7 +18707,7 @@ namespace F4BY {
       if (other.ChairIdx != 0) {
         ChairIdx = other.ChairIdx;
       }
-      if (other.Score != 0L) {
+      if (other.Score != 0) {
         Score = other.Score;
       }
       if (other.award_ != null) {
@@ -18735,7 +18735,7 @@ namespace F4BY {
             break;
           }
           case 16: {
-            Score = input.ReadInt64();
+            Score = input.ReadInt32();
             break;
           }
           case 26: {
@@ -18764,7 +18764,7 @@ namespace F4BY {
             break;
           }
           case 16: {
-            Score = input.ReadInt64();
+            Score = input.ReadInt32();
             break;
           }
           case 26: {
@@ -25170,9 +25170,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "earn" field.</summary>
     public const int EarnFieldNumber = 2;
-    private long earn_;
+    private int earn_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long Earn {
+    public int Earn {
       get { return earn_; }
       set {
         earn_ = value;
@@ -25181,9 +25181,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "score" field.</summary>
     public const int ScoreFieldNumber = 3;
-    private long score_;
+    private int score_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long Score {
+    public int Score {
       get { return score_; }
       set {
         score_ = value;
@@ -25273,8 +25273,8 @@ namespace F4BY {
     public override int GetHashCode() {
       int hash = 1;
       if (ChairIdx != 0) hash ^= ChairIdx.GetHashCode();
-      if (Earn != 0L) hash ^= Earn.GetHashCode();
-      if (Score != 0L) hash ^= Score.GetHashCode();
+      if (Earn != 0) hash ^= Earn.GetHashCode();
+      if (Score != 0) hash ^= Score.GetHashCode();
       if (PropId != 0) hash ^= PropId.GetHashCode();
       if (Remain != 0) hash ^= Remain.GetHashCode();
       if (FishUid != 0) hash ^= FishUid.GetHashCode();
@@ -25300,13 +25300,13 @@ namespace F4BY {
         output.WriteRawTag(8);
         output.WriteInt32(ChairIdx);
       }
-      if (Earn != 0L) {
+      if (Earn != 0) {
         output.WriteRawTag(16);
-        output.WriteInt64(Earn);
+        output.WriteInt32(Earn);
       }
-      if (Score != 0L) {
+      if (Score != 0) {
         output.WriteRawTag(24);
-        output.WriteInt64(Score);
+        output.WriteInt32(Score);
       }
       if (PropId != 0) {
         output.WriteRawTag(32);
@@ -25341,13 +25341,13 @@ namespace F4BY {
         output.WriteRawTag(8);
         output.WriteInt32(ChairIdx);
       }
-      if (Earn != 0L) {
+      if (Earn != 0) {
         output.WriteRawTag(16);
-        output.WriteInt64(Earn);
+        output.WriteInt32(Earn);
       }
-      if (Score != 0L) {
+      if (Score != 0) {
         output.WriteRawTag(24);
-        output.WriteInt64(Score);
+        output.WriteInt32(Score);
       }
       if (PropId != 0) {
         output.WriteRawTag(32);
@@ -25381,11 +25381,11 @@ namespace F4BY {
       if (ChairIdx != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChairIdx);
       }
-      if (Earn != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Earn);
+      if (Earn != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Earn);
       }
-      if (Score != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Score);
+      if (Score != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Score);
       }
       if (PropId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(PropId);
@@ -25416,10 +25416,10 @@ namespace F4BY {
       if (other.ChairIdx != 0) {
         ChairIdx = other.ChairIdx;
       }
-      if (other.Earn != 0L) {
+      if (other.Earn != 0) {
         Earn = other.Earn;
       }
-      if (other.Score != 0L) {
+      if (other.Score != 0) {
         Score = other.Score;
       }
       if (other.PropId != 0) {
@@ -25456,11 +25456,11 @@ namespace F4BY {
             break;
           }
           case 16: {
-            Earn = input.ReadInt64();
+            Earn = input.ReadInt32();
             break;
           }
           case 24: {
-            Score = input.ReadInt64();
+            Score = input.ReadInt32();
             break;
           }
           case 32: {
@@ -25502,11 +25502,11 @@ namespace F4BY {
             break;
           }
           case 16: {
-            Earn = input.ReadInt64();
+            Earn = input.ReadInt32();
             break;
           }
           case 24: {
-            Score = input.ReadInt64();
+            Score = input.ReadInt32();
             break;
           }
           case 32: {
@@ -27876,9 +27876,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "remain_score" field.</summary>
     public const int RemainScoreFieldNumber = 5;
-    private long remainScore_;
+    private int remainScore_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long RemainScore {
+    public int RemainScore {
       get { return remainScore_; }
       set {
         remainScore_ = value;
@@ -27949,7 +27949,7 @@ namespace F4BY {
       if (EndDate.Length != 0) hash ^= EndDate.GetHashCode();
       if (CurDay != 0) hash ^= CurDay.GetHashCode();
       if (GetRemain != 0) hash ^= GetRemain.GetHashCode();
-      if (RemainScore != 0L) hash ^= RemainScore.GetHashCode();
+      if (RemainScore != 0) hash ^= RemainScore.GetHashCode();
       if (Ticket != 0) hash ^= Ticket.GetHashCode();
       if (detail_ != null) hash ^= Detail.GetHashCode();
       if (GunEnable != 0) hash ^= GunEnable.GetHashCode();
@@ -27985,9 +27985,9 @@ namespace F4BY {
         output.WriteRawTag(32);
         output.WriteInt32(GetRemain);
       }
-      if (RemainScore != 0L) {
+      if (RemainScore != 0) {
         output.WriteRawTag(40);
-        output.WriteInt64(RemainScore);
+        output.WriteInt32(RemainScore);
       }
       if (Ticket != 0) {
         output.WriteRawTag(48);
@@ -28026,9 +28026,9 @@ namespace F4BY {
         output.WriteRawTag(32);
         output.WriteInt32(GetRemain);
       }
-      if (RemainScore != 0L) {
+      if (RemainScore != 0) {
         output.WriteRawTag(40);
-        output.WriteInt64(RemainScore);
+        output.WriteInt32(RemainScore);
       }
       if (Ticket != 0) {
         output.WriteRawTag(48);
@@ -28063,8 +28063,8 @@ namespace F4BY {
       if (GetRemain != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(GetRemain);
       }
-      if (RemainScore != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(RemainScore);
+      if (RemainScore != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(RemainScore);
       }
       if (Ticket != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Ticket);
@@ -28098,7 +28098,7 @@ namespace F4BY {
       if (other.GetRemain != 0) {
         GetRemain = other.GetRemain;
       }
-      if (other.RemainScore != 0L) {
+      if (other.RemainScore != 0) {
         RemainScore = other.RemainScore;
       }
       if (other.Ticket != 0) {
@@ -28144,7 +28144,7 @@ namespace F4BY {
             break;
           }
           case 40: {
-            RemainScore = input.ReadInt64();
+            RemainScore = input.ReadInt32();
             break;
           }
           case 48: {
@@ -28193,7 +28193,7 @@ namespace F4BY {
             break;
           }
           case 40: {
-            RemainScore = input.ReadInt64();
+            RemainScore = input.ReadInt32();
             break;
           }
           case 48: {
@@ -28504,9 +28504,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "score" field.</summary>
     public const int ScoreFieldNumber = 1;
-    private long score_;
+    private int score_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long Score {
+    public int Score {
       get { return score_; }
       set {
         score_ = value;
@@ -28557,7 +28557,7 @@ namespace F4BY {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Score != 0L) hash ^= Score.GetHashCode();
+      if (Score != 0) hash ^= Score.GetHashCode();
       if (Ticket != 0) hash ^= Ticket.GetHashCode();
       if (task_ != null) hash ^= Task.GetHashCode();
       if (_unknownFields != null) {
@@ -28576,9 +28576,9 @@ namespace F4BY {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Score != 0L) {
+      if (Score != 0) {
         output.WriteRawTag(8);
-        output.WriteInt64(Score);
+        output.WriteInt32(Score);
       }
       if (Ticket != 0) {
         output.WriteRawTag(16);
@@ -28597,9 +28597,9 @@ namespace F4BY {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Score != 0L) {
+      if (Score != 0) {
         output.WriteRawTag(8);
-        output.WriteInt64(Score);
+        output.WriteInt32(Score);
       }
       if (Ticket != 0) {
         output.WriteRawTag(16);
@@ -28618,8 +28618,8 @@ namespace F4BY {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Score != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Score);
+      if (Score != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Score);
       }
       if (Ticket != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Ticket);
@@ -28638,7 +28638,7 @@ namespace F4BY {
       if (other == null) {
         return;
       }
-      if (other.Score != 0L) {
+      if (other.Score != 0) {
         Score = other.Score;
       }
       if (other.Ticket != 0) {
@@ -28665,7 +28665,7 @@ namespace F4BY {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Score = input.ReadInt64();
+            Score = input.ReadInt32();
             break;
           }
           case 16: {
@@ -28694,7 +28694,7 @@ namespace F4BY {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Score = input.ReadInt64();
+            Score = input.ReadInt32();
             break;
           }
           case 16: {
@@ -28756,9 +28756,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "score" field.</summary>
     public const int ScoreFieldNumber = 1;
-    private long score_;
+    private int score_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long Score {
+    public int Score {
       get { return score_; }
       set {
         score_ = value;
@@ -28797,7 +28797,7 @@ namespace F4BY {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Score != 0L) hash ^= Score.GetHashCode();
+      if (Score != 0) hash ^= Score.GetHashCode();
       if (Ticket != 0) hash ^= Ticket.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -28815,9 +28815,9 @@ namespace F4BY {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Score != 0L) {
+      if (Score != 0) {
         output.WriteRawTag(8);
-        output.WriteInt64(Score);
+        output.WriteInt32(Score);
       }
       if (Ticket != 0) {
         output.WriteRawTag(16);
@@ -28832,9 +28832,9 @@ namespace F4BY {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Score != 0L) {
+      if (Score != 0) {
         output.WriteRawTag(8);
-        output.WriteInt64(Score);
+        output.WriteInt32(Score);
       }
       if (Ticket != 0) {
         output.WriteRawTag(16);
@@ -28849,8 +28849,8 @@ namespace F4BY {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Score != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Score);
+      if (Score != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Score);
       }
       if (Ticket != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Ticket);
@@ -28866,7 +28866,7 @@ namespace F4BY {
       if (other == null) {
         return;
       }
-      if (other.Score != 0L) {
+      if (other.Score != 0) {
         Score = other.Score;
       }
       if (other.Ticket != 0) {
@@ -28887,7 +28887,7 @@ namespace F4BY {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Score = input.ReadInt64();
+            Score = input.ReadInt32();
             break;
           }
           case 16: {
@@ -28909,7 +28909,7 @@ namespace F4BY {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Score = input.ReadInt64();
+            Score = input.ReadInt32();
             break;
           }
           case 16: {
@@ -31699,9 +31699,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "fish_value" field.</summary>
     public const int FishValueFieldNumber = 4;
-    private long fishValue_;
+    private int fishValue_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long FishValue {
+    public int FishValue {
       get { return fishValue_; }
       set {
         fishValue_ = value;
@@ -31710,9 +31710,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "accum_money" field.</summary>
     public const int AccumMoneyFieldNumber = 5;
-    private long accumMoney_;
+    private int accumMoney_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long AccumMoney {
+    public int AccumMoney {
       get { return accumMoney_; }
       set {
         accumMoney_ = value;
@@ -31743,9 +31743,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "earn" field.</summary>
     public const int EarnFieldNumber = 8;
-    private long earn_;
+    private int earn_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long Earn {
+    public int Earn {
       get { return earn_; }
       set {
         earn_ = value;
@@ -31853,11 +31853,11 @@ namespace F4BY {
       if (ChairIdx != 0) hash ^= ChairIdx.GetHashCode();
       if (Ratio != 0) hash ^= Ratio.GetHashCode();
       if (FishUid != 0) hash ^= FishUid.GetHashCode();
-      if (FishValue != 0L) hash ^= FishValue.GetHashCode();
-      if (AccumMoney != 0L) hash ^= AccumMoney.GetHashCode();
+      if (FishValue != 0) hash ^= FishValue.GetHashCode();
+      if (AccumMoney != 0) hash ^= AccumMoney.GetHashCode();
       if (Multiple != 0) hash ^= Multiple.GetHashCode();
       if (Death != false) hash ^= Death.GetHashCode();
-      if (Earn != 0L) hash ^= Earn.GetHashCode();
+      if (Earn != 0) hash ^= Earn.GetHashCode();
       if (UserScore != 0L) hash ^= UserScore.GetHashCode();
       if (DisplayMultiple != false) hash ^= DisplayMultiple.GetHashCode();
       if (CurStage != 0) hash ^= CurStage.GetHashCode();
@@ -31892,13 +31892,13 @@ namespace F4BY {
         output.WriteRawTag(24);
         output.WriteInt32(FishUid);
       }
-      if (FishValue != 0L) {
+      if (FishValue != 0) {
         output.WriteRawTag(32);
-        output.WriteInt64(FishValue);
+        output.WriteInt32(FishValue);
       }
-      if (AccumMoney != 0L) {
+      if (AccumMoney != 0) {
         output.WriteRawTag(40);
-        output.WriteInt64(AccumMoney);
+        output.WriteInt32(AccumMoney);
       }
       if (Multiple != 0) {
         output.WriteRawTag(48);
@@ -31908,9 +31908,9 @@ namespace F4BY {
         output.WriteRawTag(56);
         output.WriteBool(Death);
       }
-      if (Earn != 0L) {
+      if (Earn != 0) {
         output.WriteRawTag(64);
-        output.WriteInt64(Earn);
+        output.WriteInt32(Earn);
       }
       if (UserScore != 0L) {
         output.WriteRawTag(72);
@@ -31954,13 +31954,13 @@ namespace F4BY {
         output.WriteRawTag(24);
         output.WriteInt32(FishUid);
       }
-      if (FishValue != 0L) {
+      if (FishValue != 0) {
         output.WriteRawTag(32);
-        output.WriteInt64(FishValue);
+        output.WriteInt32(FishValue);
       }
-      if (AccumMoney != 0L) {
+      if (AccumMoney != 0) {
         output.WriteRawTag(40);
-        output.WriteInt64(AccumMoney);
+        output.WriteInt32(AccumMoney);
       }
       if (Multiple != 0) {
         output.WriteRawTag(48);
@@ -31970,9 +31970,9 @@ namespace F4BY {
         output.WriteRawTag(56);
         output.WriteBool(Death);
       }
-      if (Earn != 0L) {
+      if (Earn != 0) {
         output.WriteRawTag(64);
-        output.WriteInt64(Earn);
+        output.WriteInt32(Earn);
       }
       if (UserScore != 0L) {
         output.WriteRawTag(72);
@@ -32013,11 +32013,11 @@ namespace F4BY {
       if (FishUid != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(FishUid);
       }
-      if (FishValue != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(FishValue);
+      if (FishValue != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(FishValue);
       }
-      if (AccumMoney != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(AccumMoney);
+      if (AccumMoney != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(AccumMoney);
       }
       if (Multiple != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Multiple);
@@ -32025,8 +32025,8 @@ namespace F4BY {
       if (Death != false) {
         size += 1 + 1;
       }
-      if (Earn != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Earn);
+      if (Earn != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Earn);
       }
       if (UserScore != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(UserScore);
@@ -32064,10 +32064,10 @@ namespace F4BY {
       if (other.FishUid != 0) {
         FishUid = other.FishUid;
       }
-      if (other.FishValue != 0L) {
+      if (other.FishValue != 0) {
         FishValue = other.FishValue;
       }
-      if (other.AccumMoney != 0L) {
+      if (other.AccumMoney != 0) {
         AccumMoney = other.AccumMoney;
       }
       if (other.Multiple != 0) {
@@ -32076,7 +32076,7 @@ namespace F4BY {
       if (other.Death != false) {
         Death = other.Death;
       }
-      if (other.Earn != 0L) {
+      if (other.Earn != 0) {
         Earn = other.Earn;
       }
       if (other.UserScore != 0L) {
@@ -32122,11 +32122,11 @@ namespace F4BY {
             break;
           }
           case 32: {
-            FishValue = input.ReadInt64();
+            FishValue = input.ReadInt32();
             break;
           }
           case 40: {
-            AccumMoney = input.ReadInt64();
+            AccumMoney = input.ReadInt32();
             break;
           }
           case 48: {
@@ -32138,7 +32138,7 @@ namespace F4BY {
             break;
           }
           case 64: {
-            Earn = input.ReadInt64();
+            Earn = input.ReadInt32();
             break;
           }
           case 72: {
@@ -32192,11 +32192,11 @@ namespace F4BY {
             break;
           }
           case 32: {
-            FishValue = input.ReadInt64();
+            FishValue = input.ReadInt32();
             break;
           }
           case 40: {
-            AccumMoney = input.ReadInt64();
+            AccumMoney = input.ReadInt32();
             break;
           }
           case 48: {
@@ -32208,7 +32208,7 @@ namespace F4BY {
             break;
           }
           case 64: {
-            Earn = input.ReadInt64();
+            Earn = input.ReadInt32();
             break;
           }
           case 72: {
@@ -34367,9 +34367,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "score" field.</summary>
     public const int ScoreFieldNumber = 3;
-    private long score_;
+    private int score_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long Score {
+    public int Score {
       get { return score_; }
       set {
         score_ = value;
@@ -34436,7 +34436,7 @@ namespace F4BY {
       int hash = 1;
       if (Id != 0) hash ^= Id.GetHashCode();
       if (Status != 0) hash ^= Status.GetHashCode();
-      if (Score != 0L) hash ^= Score.GetHashCode();
+      if (Score != 0) hash ^= Score.GetHashCode();
       if (Text.Length != 0) hash ^= Text.GetHashCode();
       if (Amount != 0) hash ^= Amount.GetHashCode();
       if (Target != 0) hash ^= Target.GetHashCode();
@@ -34464,9 +34464,9 @@ namespace F4BY {
         output.WriteRawTag(16);
         output.WriteInt32(Status);
       }
-      if (Score != 0L) {
+      if (Score != 0) {
         output.WriteRawTag(24);
-        output.WriteInt64(Score);
+        output.WriteInt32(Score);
       }
       if (Text.Length != 0) {
         output.WriteRawTag(34);
@@ -34497,9 +34497,9 @@ namespace F4BY {
         output.WriteRawTag(16);
         output.WriteInt32(Status);
       }
-      if (Score != 0L) {
+      if (Score != 0) {
         output.WriteRawTag(24);
-        output.WriteInt64(Score);
+        output.WriteInt32(Score);
       }
       if (Text.Length != 0) {
         output.WriteRawTag(34);
@@ -34528,8 +34528,8 @@ namespace F4BY {
       if (Status != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Status);
       }
-      if (Score != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Score);
+      if (Score != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Score);
       }
       if (Text.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Text);
@@ -34557,7 +34557,7 @@ namespace F4BY {
       if (other.Status != 0) {
         Status = other.Status;
       }
-      if (other.Score != 0L) {
+      if (other.Score != 0) {
         Score = other.Score;
       }
       if (other.Text.Length != 0) {
@@ -34592,7 +34592,7 @@ namespace F4BY {
             break;
           }
           case 24: {
-            Score = input.ReadInt64();
+            Score = input.ReadInt32();
             break;
           }
           case 34: {
@@ -34630,7 +34630,7 @@ namespace F4BY {
             break;
           }
           case 24: {
-            Score = input.ReadInt64();
+            Score = input.ReadInt32();
             break;
           }
           case 34: {
@@ -34894,9 +34894,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "score" field.</summary>
     public const int ScoreFieldNumber = 6;
-    private long score_;
+    private int score_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long Score {
+    public int Score {
       get { return score_; }
       set {
         score_ = value;
@@ -35039,7 +35039,7 @@ namespace F4BY {
       hash ^= hourReward_.GetHashCode();
       hash ^= dayReward_.GetHashCode();
       hash ^= dayLuckyNums_.GetHashCode();
-      if (Score != 0L) hash ^= Score.GetHashCode();
+      if (Score != 0) hash ^= Score.GetHashCode();
       if (HourTotal != 0) hash ^= HourTotal.GetHashCode();
       if (DayTotal != 0) hash ^= DayTotal.GetHashCode();
       if (HourAwardNum != 0) hash ^= HourAwardNum.GetHashCode();
@@ -35076,9 +35076,9 @@ namespace F4BY {
       hourReward_.WriteTo(output, _repeated_hourReward_codec);
       dayReward_.WriteTo(output, _repeated_dayReward_codec);
       dayLuckyNums_.WriteTo(output, _repeated_dayLuckyNums_codec);
-      if (Score != 0L) {
+      if (Score != 0) {
         output.WriteRawTag(48);
-        output.WriteInt64(Score);
+        output.WriteInt32(Score);
       }
       if (HourTotal != 0) {
         output.WriteRawTag(56);
@@ -35130,9 +35130,9 @@ namespace F4BY {
       hourReward_.WriteTo(ref output, _repeated_hourReward_codec);
       dayReward_.WriteTo(ref output, _repeated_dayReward_codec);
       dayLuckyNums_.WriteTo(ref output, _repeated_dayLuckyNums_codec);
-      if (Score != 0L) {
+      if (Score != 0) {
         output.WriteRawTag(48);
-        output.WriteInt64(Score);
+        output.WriteInt32(Score);
       }
       if (HourTotal != 0) {
         output.WriteRawTag(56);
@@ -35182,8 +35182,8 @@ namespace F4BY {
       size += hourReward_.CalculateSize(_repeated_hourReward_codec);
       size += dayReward_.CalculateSize(_repeated_dayReward_codec);
       size += dayLuckyNums_.CalculateSize(_repeated_dayLuckyNums_codec);
-      if (Score != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Score);
+      if (Score != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Score);
       }
       if (HourTotal != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(HourTotal);
@@ -35228,7 +35228,7 @@ namespace F4BY {
       hourReward_.Add(other.hourReward_);
       dayReward_.Add(other.dayReward_);
       dayLuckyNums_.Add(other.dayLuckyNums_);
-      if (other.Score != 0L) {
+      if (other.Score != 0) {
         Score = other.Score;
       }
       if (other.HourTotal != 0) {
@@ -35290,7 +35290,7 @@ namespace F4BY {
             break;
           }
           case 48: {
-            Score = input.ReadInt64();
+            Score = input.ReadInt32();
             break;
           }
           case 56: {
@@ -35366,7 +35366,7 @@ namespace F4BY {
             break;
           }
           case 48: {
-            Score = input.ReadInt64();
+            Score = input.ReadInt32();
             break;
           }
           case 56: {
@@ -35638,9 +35638,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "score" field.</summary>
     public const int ScoreFieldNumber = 2;
-    private long score_;
+    private int score_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long Score {
+    public int Score {
       get { return score_; }
       set {
         score_ = value;
@@ -35681,7 +35681,7 @@ namespace F4BY {
     public override int GetHashCode() {
       int hash = 1;
       if (task_ != null) hash ^= Task.GetHashCode();
-      if (Score != 0L) hash ^= Score.GetHashCode();
+      if (Score != 0) hash ^= Score.GetHashCode();
       if (Code != 0) hash ^= Code.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -35703,9 +35703,9 @@ namespace F4BY {
         output.WriteRawTag(10);
         output.WriteMessage(Task);
       }
-      if (Score != 0L) {
+      if (Score != 0) {
         output.WriteRawTag(16);
-        output.WriteInt64(Score);
+        output.WriteInt32(Score);
       }
       if (Code != 0) {
         output.WriteRawTag(24);
@@ -35724,9 +35724,9 @@ namespace F4BY {
         output.WriteRawTag(10);
         output.WriteMessage(Task);
       }
-      if (Score != 0L) {
+      if (Score != 0) {
         output.WriteRawTag(16);
-        output.WriteInt64(Score);
+        output.WriteInt32(Score);
       }
       if (Code != 0) {
         output.WriteRawTag(24);
@@ -35744,8 +35744,8 @@ namespace F4BY {
       if (task_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Task);
       }
-      if (Score != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Score);
+      if (Score != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Score);
       }
       if (Code != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Code);
@@ -35767,7 +35767,7 @@ namespace F4BY {
         }
         Task.MergeFrom(other.Task);
       }
-      if (other.Score != 0L) {
+      if (other.Score != 0) {
         Score = other.Score;
       }
       if (other.Code != 0) {
@@ -35795,7 +35795,7 @@ namespace F4BY {
             break;
           }
           case 16: {
-            Score = input.ReadInt64();
+            Score = input.ReadInt32();
             break;
           }
           case 24: {
@@ -35824,7 +35824,7 @@ namespace F4BY {
             break;
           }
           case 16: {
-            Score = input.ReadInt64();
+            Score = input.ReadInt32();
             break;
           }
           case 24: {
@@ -36052,9 +36052,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "score" field.</summary>
     public const int ScoreFieldNumber = 1;
-    private long score_;
+    private int score_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long Score {
+    public int Score {
       get { return score_; }
       set {
         score_ = value;
@@ -36104,7 +36104,7 @@ namespace F4BY {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Score != 0L) hash ^= Score.GetHashCode();
+      if (Score != 0) hash ^= Score.GetHashCode();
       if (ErrorCode != 0) hash ^= ErrorCode.GetHashCode();
       hash ^= luckyNums_.GetHashCode();
       if (_unknownFields != null) {
@@ -36123,9 +36123,9 @@ namespace F4BY {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Score != 0L) {
+      if (Score != 0) {
         output.WriteRawTag(8);
-        output.WriteInt64(Score);
+        output.WriteInt32(Score);
       }
       if (ErrorCode != 0) {
         output.WriteRawTag(16);
@@ -36141,9 +36141,9 @@ namespace F4BY {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Score != 0L) {
+      if (Score != 0) {
         output.WriteRawTag(8);
-        output.WriteInt64(Score);
+        output.WriteInt32(Score);
       }
       if (ErrorCode != 0) {
         output.WriteRawTag(16);
@@ -36159,8 +36159,8 @@ namespace F4BY {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Score != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Score);
+      if (Score != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Score);
       }
       if (ErrorCode != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ErrorCode);
@@ -36177,7 +36177,7 @@ namespace F4BY {
       if (other == null) {
         return;
       }
-      if (other.Score != 0L) {
+      if (other.Score != 0) {
         Score = other.Score;
       }
       if (other.ErrorCode != 0) {
@@ -36199,7 +36199,7 @@ namespace F4BY {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Score = input.ReadInt64();
+            Score = input.ReadInt32();
             break;
           }
           case 16: {
@@ -36226,7 +36226,7 @@ namespace F4BY {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Score = input.ReadInt64();
+            Score = input.ReadInt32();
             break;
           }
           case 16: {
@@ -38037,9 +38037,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "score" field.</summary>
     public const int ScoreFieldNumber = 8;
-    private long score_;
+    private int score_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long Score {
+    public int Score {
       get { return score_; }
       set {
         score_ = value;
@@ -38092,7 +38092,7 @@ namespace F4BY {
       if (Y != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Y);
       if (NextX != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(NextX);
       if (NextY != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(NextY);
-      if (Score != 0L) hash ^= Score.GetHashCode();
+      if (Score != 0) hash ^= Score.GetHashCode();
       if (IsFinish != false) hash ^= IsFinish.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -38138,9 +38138,9 @@ namespace F4BY {
         output.WriteRawTag(61);
         output.WriteFloat(NextY);
       }
-      if (Score != 0L) {
+      if (Score != 0) {
         output.WriteRawTag(64);
-        output.WriteInt64(Score);
+        output.WriteInt32(Score);
       }
       if (IsFinish != false) {
         output.WriteRawTag(72);
@@ -38183,9 +38183,9 @@ namespace F4BY {
         output.WriteRawTag(61);
         output.WriteFloat(NextY);
       }
-      if (Score != 0L) {
+      if (Score != 0) {
         output.WriteRawTag(64);
-        output.WriteInt64(Score);
+        output.WriteInt32(Score);
       }
       if (IsFinish != false) {
         output.WriteRawTag(72);
@@ -38221,8 +38221,8 @@ namespace F4BY {
       if (NextY != 0F) {
         size += 1 + 4;
       }
-      if (Score != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Score);
+      if (Score != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Score);
       }
       if (IsFinish != false) {
         size += 1 + 1;
@@ -38259,7 +38259,7 @@ namespace F4BY {
       if (other.NextY != 0F) {
         NextY = other.NextY;
       }
-      if (other.Score != 0L) {
+      if (other.Score != 0) {
         Score = other.Score;
       }
       if (other.IsFinish != false) {
@@ -38308,7 +38308,7 @@ namespace F4BY {
             break;
           }
           case 64: {
-            Score = input.ReadInt64();
+            Score = input.ReadInt32();
             break;
           }
           case 72: {
@@ -38358,7 +38358,7 @@ namespace F4BY {
             break;
           }
           case 64: {
-            Score = input.ReadInt64();
+            Score = input.ReadInt32();
             break;
           }
           case 72: {
@@ -38436,9 +38436,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "returnMoney" field.</summary>
     public const int ReturnMoneyFieldNumber = 3;
-    private long returnMoney_;
+    private int returnMoney_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long ReturnMoney {
+    public int ReturnMoney {
       get { return returnMoney_; }
       set {
         returnMoney_ = value;
@@ -38469,7 +38469,7 @@ namespace F4BY {
       int hash = 1;
       if (ChairIdx != 0) hash ^= ChairIdx.GetHashCode();
       if (BombId != 0) hash ^= BombId.GetHashCode();
-      if (ReturnMoney != 0L) hash ^= ReturnMoney.GetHashCode();
+      if (ReturnMoney != 0) hash ^= ReturnMoney.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -38494,9 +38494,9 @@ namespace F4BY {
         output.WriteRawTag(16);
         output.WriteInt32(BombId);
       }
-      if (ReturnMoney != 0L) {
+      if (ReturnMoney != 0) {
         output.WriteRawTag(24);
-        output.WriteInt64(ReturnMoney);
+        output.WriteInt32(ReturnMoney);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -38515,9 +38515,9 @@ namespace F4BY {
         output.WriteRawTag(16);
         output.WriteInt32(BombId);
       }
-      if (ReturnMoney != 0L) {
+      if (ReturnMoney != 0) {
         output.WriteRawTag(24);
-        output.WriteInt64(ReturnMoney);
+        output.WriteInt32(ReturnMoney);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -38534,8 +38534,8 @@ namespace F4BY {
       if (BombId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(BombId);
       }
-      if (ReturnMoney != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(ReturnMoney);
+      if (ReturnMoney != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ReturnMoney);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -38554,7 +38554,7 @@ namespace F4BY {
       if (other.BombId != 0) {
         BombId = other.BombId;
       }
-      if (other.ReturnMoney != 0L) {
+      if (other.ReturnMoney != 0) {
         ReturnMoney = other.ReturnMoney;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -38580,7 +38580,7 @@ namespace F4BY {
             break;
           }
           case 24: {
-            ReturnMoney = input.ReadInt64();
+            ReturnMoney = input.ReadInt32();
             break;
           }
         }
@@ -38606,7 +38606,7 @@ namespace F4BY {
             break;
           }
           case 24: {
-            ReturnMoney = input.ReadInt64();
+            ReturnMoney = input.ReadInt32();
             break;
           }
         }
@@ -40430,9 +40430,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "frozen_time" field.</summary>
     public const int FrozenTimeFieldNumber = 2;
-    private long frozenTime_;
+    private int frozenTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long FrozenTime {
+    public int FrozenTime {
       get { return frozenTime_; }
       set {
         frozenTime_ = value;
@@ -40461,7 +40461,7 @@ namespace F4BY {
     public override int GetHashCode() {
       int hash = 1;
       if (FishId != 0) hash ^= FishId.GetHashCode();
-      if (FrozenTime != 0L) hash ^= FrozenTime.GetHashCode();
+      if (FrozenTime != 0) hash ^= FrozenTime.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -40482,9 +40482,9 @@ namespace F4BY {
         output.WriteRawTag(8);
         output.WriteInt32(FishId);
       }
-      if (FrozenTime != 0L) {
+      if (FrozenTime != 0) {
         output.WriteRawTag(16);
-        output.WriteInt64(FrozenTime);
+        output.WriteInt32(FrozenTime);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -40499,9 +40499,9 @@ namespace F4BY {
         output.WriteRawTag(8);
         output.WriteInt32(FishId);
       }
-      if (FrozenTime != 0L) {
+      if (FrozenTime != 0) {
         output.WriteRawTag(16);
-        output.WriteInt64(FrozenTime);
+        output.WriteInt32(FrozenTime);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -40515,8 +40515,8 @@ namespace F4BY {
       if (FishId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(FishId);
       }
-      if (FrozenTime != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(FrozenTime);
+      if (FrozenTime != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(FrozenTime);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -40532,7 +40532,7 @@ namespace F4BY {
       if (other.FishId != 0) {
         FishId = other.FishId;
       }
-      if (other.FrozenTime != 0L) {
+      if (other.FrozenTime != 0) {
         FrozenTime = other.FrozenTime;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -40554,7 +40554,7 @@ namespace F4BY {
             break;
           }
           case 16: {
-            FrozenTime = input.ReadInt64();
+            FrozenTime = input.ReadInt32();
             break;
           }
         }
@@ -40576,7 +40576,7 @@ namespace F4BY {
             break;
           }
           case 16: {
-            FrozenTime = input.ReadInt64();
+            FrozenTime = input.ReadInt32();
             break;
           }
         }
@@ -41831,9 +41831,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "total_earn" field.</summary>
     public const int TotalEarnFieldNumber = 6;
-    private long totalEarn_;
+    private int totalEarn_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long TotalEarn {
+    public int TotalEarn {
       get { return totalEarn_; }
       set {
         totalEarn_ = value;
@@ -41894,7 +41894,7 @@ namespace F4BY {
       if (FishUid != 0) hash ^= FishUid.GetHashCode();
       if (Stage != 0) hash ^= Stage.GetHashCode();
       if (BombId != 0) hash ^= BombId.GetHashCode();
-      if (TotalEarn != 0L) hash ^= TotalEarn.GetHashCode();
+      if (TotalEarn != 0) hash ^= TotalEarn.GetHashCode();
       if (SelfBombId != 0) hash ^= SelfBombId.GetHashCode();
       if (OriginId != 0) hash ^= OriginId.GetHashCode();
       if (_unknownFields != null) {
@@ -41933,9 +41933,9 @@ namespace F4BY {
         output.WriteRawTag(40);
         output.WriteInt32(BombId);
       }
-      if (TotalEarn != 0L) {
+      if (TotalEarn != 0) {
         output.WriteRawTag(48);
-        output.WriteInt64(TotalEarn);
+        output.WriteInt32(TotalEarn);
       }
       if (SelfBombId != 0) {
         output.WriteRawTag(56);
@@ -41974,9 +41974,9 @@ namespace F4BY {
         output.WriteRawTag(40);
         output.WriteInt32(BombId);
       }
-      if (TotalEarn != 0L) {
+      if (TotalEarn != 0) {
         output.WriteRawTag(48);
-        output.WriteInt64(TotalEarn);
+        output.WriteInt32(TotalEarn);
       }
       if (SelfBombId != 0) {
         output.WriteRawTag(56);
@@ -42010,8 +42010,8 @@ namespace F4BY {
       if (BombId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(BombId);
       }
-      if (TotalEarn != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(TotalEarn);
+      if (TotalEarn != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TotalEarn);
       }
       if (SelfBombId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(SelfBombId);
@@ -42045,7 +42045,7 @@ namespace F4BY {
       if (other.BombId != 0) {
         BombId = other.BombId;
       }
-      if (other.TotalEarn != 0L) {
+      if (other.TotalEarn != 0) {
         TotalEarn = other.TotalEarn;
       }
       if (other.SelfBombId != 0) {
@@ -42089,7 +42089,7 @@ namespace F4BY {
             break;
           }
           case 48: {
-            TotalEarn = input.ReadInt64();
+            TotalEarn = input.ReadInt32();
             break;
           }
           case 56: {
@@ -42135,7 +42135,7 @@ namespace F4BY {
             break;
           }
           case 48: {
-            TotalEarn = input.ReadInt64();
+            TotalEarn = input.ReadInt32();
             break;
           }
           case 56: {
@@ -42453,9 +42453,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "remain_time" field.</summary>
     public const int RemainTimeFieldNumber = 3;
-    private long remainTime_;
+    private int remainTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long RemainTime {
+    public int RemainTime {
       get { return remainTime_; }
       set {
         remainTime_ = value;
@@ -42498,7 +42498,7 @@ namespace F4BY {
       int hash = 1;
       if (ChairIdx != 0) hash ^= ChairIdx.GetHashCode();
       if (ShowSelect != false) hash ^= ShowSelect.GetHashCode();
-      if (RemainTime != 0L) hash ^= RemainTime.GetHashCode();
+      if (RemainTime != 0) hash ^= RemainTime.GetHashCode();
       if (Stage != 0) hash ^= Stage.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -42524,9 +42524,9 @@ namespace F4BY {
         output.WriteRawTag(16);
         output.WriteBool(ShowSelect);
       }
-      if (RemainTime != 0L) {
+      if (RemainTime != 0) {
         output.WriteRawTag(24);
-        output.WriteInt64(RemainTime);
+        output.WriteInt32(RemainTime);
       }
       if (Stage != 0) {
         output.WriteRawTag(32);
@@ -42549,9 +42549,9 @@ namespace F4BY {
         output.WriteRawTag(16);
         output.WriteBool(ShowSelect);
       }
-      if (RemainTime != 0L) {
+      if (RemainTime != 0) {
         output.WriteRawTag(24);
-        output.WriteInt64(RemainTime);
+        output.WriteInt32(RemainTime);
       }
       if (Stage != 0) {
         output.WriteRawTag(32);
@@ -42572,8 +42572,8 @@ namespace F4BY {
       if (ShowSelect != false) {
         size += 1 + 1;
       }
-      if (RemainTime != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(RemainTime);
+      if (RemainTime != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(RemainTime);
       }
       if (Stage != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Stage);
@@ -42595,7 +42595,7 @@ namespace F4BY {
       if (other.ShowSelect != false) {
         ShowSelect = other.ShowSelect;
       }
-      if (other.RemainTime != 0L) {
+      if (other.RemainTime != 0) {
         RemainTime = other.RemainTime;
       }
       if (other.Stage != 0) {
@@ -42624,7 +42624,7 @@ namespace F4BY {
             break;
           }
           case 24: {
-            RemainTime = input.ReadInt64();
+            RemainTime = input.ReadInt32();
             break;
           }
           case 32: {
@@ -42654,7 +42654,7 @@ namespace F4BY {
             break;
           }
           case 24: {
-            RemainTime = input.ReadInt64();
+            RemainTime = input.ReadInt32();
             break;
           }
           case 32: {
@@ -42881,9 +42881,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "score" field.</summary>
     public const int ScoreFieldNumber = 1;
-    private long score_;
+    private int score_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long Score {
+    public int Score {
       get { return score_; }
       set {
         score_ = value;
@@ -42922,7 +42922,7 @@ namespace F4BY {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Score != 0L) hash ^= Score.GetHashCode();
+      if (Score != 0) hash ^= Score.GetHashCode();
       if (FishUid != 0) hash ^= FishUid.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -42940,9 +42940,9 @@ namespace F4BY {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Score != 0L) {
+      if (Score != 0) {
         output.WriteRawTag(8);
-        output.WriteInt64(Score);
+        output.WriteInt32(Score);
       }
       if (FishUid != 0) {
         output.WriteRawTag(16);
@@ -42957,9 +42957,9 @@ namespace F4BY {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Score != 0L) {
+      if (Score != 0) {
         output.WriteRawTag(8);
-        output.WriteInt64(Score);
+        output.WriteInt32(Score);
       }
       if (FishUid != 0) {
         output.WriteRawTag(16);
@@ -42974,8 +42974,8 @@ namespace F4BY {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Score != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Score);
+      if (Score != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Score);
       }
       if (FishUid != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(FishUid);
@@ -42991,7 +42991,7 @@ namespace F4BY {
       if (other == null) {
         return;
       }
-      if (other.Score != 0L) {
+      if (other.Score != 0) {
         Score = other.Score;
       }
       if (other.FishUid != 0) {
@@ -43012,7 +43012,7 @@ namespace F4BY {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            Score = input.ReadInt64();
+            Score = input.ReadInt32();
             break;
           }
           case 16: {
@@ -43034,7 +43034,7 @@ namespace F4BY {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            Score = input.ReadInt64();
+            Score = input.ReadInt32();
             break;
           }
           case 16: {
@@ -43090,11 +43090,11 @@ namespace F4BY {
 
     /// <summary>Field number for the "score_list" field.</summary>
     public const int ScoreListFieldNumber = 1;
-    private static readonly pb::FieldCodec<long> _repeated_scoreList_codec
-        = pb::FieldCodec.ForInt64(10);
-    private readonly pbc::RepeatedField<long> scoreList_ = new pbc::RepeatedField<long>();
+    private static readonly pb::FieldCodec<int> _repeated_scoreList_codec
+        = pb::FieldCodec.ForInt32(10);
+    private readonly pbc::RepeatedField<int> scoreList_ = new pbc::RepeatedField<int>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<long> ScoreList {
+    public pbc::RepeatedField<int> ScoreList {
       get { return scoreList_; }
     }
 
@@ -43582,9 +43582,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "total_earn" field.</summary>
     public const int TotalEarnFieldNumber = 5;
-    private long totalEarn_;
+    private int totalEarn_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long TotalEarn {
+    public int TotalEarn {
       get { return totalEarn_; }
       set {
         totalEarn_ = value;
@@ -43667,7 +43667,7 @@ namespace F4BY {
       if (Stage != 0) hash ^= Stage.GetHashCode();
       if (BtRatio != 0) hash ^= BtRatio.GetHashCode();
       hash ^= multiList_.GetHashCode();
-      if (TotalEarn != 0L) hash ^= TotalEarn.GetHashCode();
+      if (TotalEarn != 0) hash ^= TotalEarn.GetHashCode();
       if (Death != false) hash ^= Death.GetHashCode();
       if (result1_ != null) hash ^= Result1.GetHashCode();
       if (result2_ != null) hash ^= Result2.GetHashCode();
@@ -43701,9 +43701,9 @@ namespace F4BY {
         output.WriteInt32(BtRatio);
       }
       multiList_.WriteTo(output, _repeated_multiList_codec);
-      if (TotalEarn != 0L) {
+      if (TotalEarn != 0) {
         output.WriteRawTag(40);
-        output.WriteInt64(TotalEarn);
+        output.WriteInt32(TotalEarn);
       }
       if (Death != false) {
         output.WriteRawTag(48);
@@ -43743,9 +43743,9 @@ namespace F4BY {
         output.WriteInt32(BtRatio);
       }
       multiList_.WriteTo(ref output, _repeated_multiList_codec);
-      if (TotalEarn != 0L) {
+      if (TotalEarn != 0) {
         output.WriteRawTag(40);
-        output.WriteInt64(TotalEarn);
+        output.WriteInt32(TotalEarn);
       }
       if (Death != false) {
         output.WriteRawTag(48);
@@ -43782,8 +43782,8 @@ namespace F4BY {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(BtRatio);
       }
       size += multiList_.CalculateSize(_repeated_multiList_codec);
-      if (TotalEarn != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(TotalEarn);
+      if (TotalEarn != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TotalEarn);
       }
       if (Death != false) {
         size += 1 + 1;
@@ -43818,7 +43818,7 @@ namespace F4BY {
         BtRatio = other.BtRatio;
       }
       multiList_.Add(other.multiList_);
-      if (other.TotalEarn != 0L) {
+      if (other.TotalEarn != 0) {
         TotalEarn = other.TotalEarn;
       }
       if (other.Death != false) {
@@ -43873,7 +43873,7 @@ namespace F4BY {
             break;
           }
           case 40: {
-            TotalEarn = input.ReadInt64();
+            TotalEarn = input.ReadInt32();
             break;
           }
           case 48: {
@@ -43932,7 +43932,7 @@ namespace F4BY {
             break;
           }
           case 40: {
-            TotalEarn = input.ReadInt64();
+            TotalEarn = input.ReadInt32();
             break;
           }
           case 48: {
@@ -44291,9 +44291,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "total_earn" field.</summary>
     public const int TotalEarnFieldNumber = 5;
-    private long totalEarn_;
+    private int totalEarn_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long TotalEarn {
+    public int TotalEarn {
       get { return totalEarn_; }
       set {
         totalEarn_ = value;
@@ -44302,9 +44302,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "invalid_earn" field.</summary>
     public const int InvalidEarnFieldNumber = 6;
-    private long invalidEarn_;
+    private int invalidEarn_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long InvalidEarn {
+    public int InvalidEarn {
       get { return invalidEarn_; }
       set {
         invalidEarn_ = value;
@@ -44340,8 +44340,8 @@ namespace F4BY {
       if (OriginId != 0) hash ^= OriginId.GetHashCode();
       if (SelfId != 0) hash ^= SelfId.GetHashCode();
       if (Stage != 0) hash ^= Stage.GetHashCode();
-      if (TotalEarn != 0L) hash ^= TotalEarn.GetHashCode();
-      if (InvalidEarn != 0L) hash ^= InvalidEarn.GetHashCode();
+      if (TotalEarn != 0) hash ^= TotalEarn.GetHashCode();
+      if (InvalidEarn != 0) hash ^= InvalidEarn.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -44374,13 +44374,13 @@ namespace F4BY {
         output.WriteRawTag(32);
         output.WriteInt32(Stage);
       }
-      if (TotalEarn != 0L) {
+      if (TotalEarn != 0) {
         output.WriteRawTag(40);
-        output.WriteInt64(TotalEarn);
+        output.WriteInt32(TotalEarn);
       }
-      if (InvalidEarn != 0L) {
+      if (InvalidEarn != 0) {
         output.WriteRawTag(48);
-        output.WriteInt64(InvalidEarn);
+        output.WriteInt32(InvalidEarn);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -44407,13 +44407,13 @@ namespace F4BY {
         output.WriteRawTag(32);
         output.WriteInt32(Stage);
       }
-      if (TotalEarn != 0L) {
+      if (TotalEarn != 0) {
         output.WriteRawTag(40);
-        output.WriteInt64(TotalEarn);
+        output.WriteInt32(TotalEarn);
       }
-      if (InvalidEarn != 0L) {
+      if (InvalidEarn != 0) {
         output.WriteRawTag(48);
-        output.WriteInt64(InvalidEarn);
+        output.WriteInt32(InvalidEarn);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -44436,11 +44436,11 @@ namespace F4BY {
       if (Stage != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Stage);
       }
-      if (TotalEarn != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(TotalEarn);
+      if (TotalEarn != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(TotalEarn);
       }
-      if (InvalidEarn != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(InvalidEarn);
+      if (InvalidEarn != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(InvalidEarn);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -44465,10 +44465,10 @@ namespace F4BY {
       if (other.Stage != 0) {
         Stage = other.Stage;
       }
-      if (other.TotalEarn != 0L) {
+      if (other.TotalEarn != 0) {
         TotalEarn = other.TotalEarn;
       }
-      if (other.InvalidEarn != 0L) {
+      if (other.InvalidEarn != 0) {
         InvalidEarn = other.InvalidEarn;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -44502,11 +44502,11 @@ namespace F4BY {
             break;
           }
           case 40: {
-            TotalEarn = input.ReadInt64();
+            TotalEarn = input.ReadInt32();
             break;
           }
           case 48: {
-            InvalidEarn = input.ReadInt64();
+            InvalidEarn = input.ReadInt32();
             break;
           }
         }
@@ -44540,11 +44540,11 @@ namespace F4BY {
             break;
           }
           case 40: {
-            TotalEarn = input.ReadInt64();
+            TotalEarn = input.ReadInt32();
             break;
           }
           case 48: {
-            InvalidEarn = input.ReadInt64();
+            InvalidEarn = input.ReadInt32();
             break;
           }
         }
@@ -44921,9 +44921,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "time" field.</summary>
     public const int TimeFieldNumber = 4;
-    private long time_;
+    private int time_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long Time {
+    public int Time {
       get { return time_; }
       set {
         time_ = value;
@@ -44978,7 +44978,7 @@ namespace F4BY {
       if (ChairIdx != 0) hash ^= ChairIdx.GetHashCode();
       if (FishUid != 0) hash ^= FishUid.GetHashCode();
       if (Ratio != 0) hash ^= Ratio.GetHashCode();
-      if (Time != 0L) hash ^= Time.GetHashCode();
+      if (Time != 0) hash ^= Time.GetHashCode();
       hash ^= lotteryList_.GetHashCode();
       hash ^= rewardConfig_.GetHashCode();
       if (_unknownFields != null) {
@@ -45009,9 +45009,9 @@ namespace F4BY {
         output.WriteRawTag(24);
         output.WriteInt32(Ratio);
       }
-      if (Time != 0L) {
+      if (Time != 0) {
         output.WriteRawTag(32);
-        output.WriteInt64(Time);
+        output.WriteInt32(Time);
       }
       lotteryList_.WriteTo(output, _repeated_lotteryList_codec);
       rewardConfig_.WriteTo(output, _repeated_rewardConfig_codec);
@@ -45036,9 +45036,9 @@ namespace F4BY {
         output.WriteRawTag(24);
         output.WriteInt32(Ratio);
       }
-      if (Time != 0L) {
+      if (Time != 0) {
         output.WriteRawTag(32);
-        output.WriteInt64(Time);
+        output.WriteInt32(Time);
       }
       lotteryList_.WriteTo(ref output, _repeated_lotteryList_codec);
       rewardConfig_.WriteTo(ref output, _repeated_rewardConfig_codec);
@@ -45060,8 +45060,8 @@ namespace F4BY {
       if (Ratio != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Ratio);
       }
-      if (Time != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Time);
+      if (Time != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Time);
       }
       size += lotteryList_.CalculateSize(_repeated_lotteryList_codec);
       size += rewardConfig_.CalculateSize(_repeated_rewardConfig_codec);
@@ -45085,7 +45085,7 @@ namespace F4BY {
       if (other.Ratio != 0) {
         Ratio = other.Ratio;
       }
-      if (other.Time != 0L) {
+      if (other.Time != 0) {
         Time = other.Time;
       }
       lotteryList_.Add(other.lotteryList_);
@@ -45117,7 +45117,7 @@ namespace F4BY {
             break;
           }
           case 32: {
-            Time = input.ReadInt64();
+            Time = input.ReadInt32();
             break;
           }
           case 42: {
@@ -45155,7 +45155,7 @@ namespace F4BY {
             break;
           }
           case 32: {
-            Time = input.ReadInt64();
+            Time = input.ReadInt32();
             break;
           }
           case 42: {
@@ -45616,9 +45616,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "earn" field.</summary>
     public const int EarnFieldNumber = 2;
-    private long earn_;
+    private int earn_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long Earn {
+    public int Earn {
       get { return earn_; }
       set {
         earn_ = value;
@@ -45669,7 +45669,7 @@ namespace F4BY {
     public override int GetHashCode() {
       int hash = 1;
       if (ChairIdx != 0) hash ^= ChairIdx.GetHashCode();
-      if (Earn != 0L) hash ^= Earn.GetHashCode();
+      if (Earn != 0) hash ^= Earn.GetHashCode();
       hash ^= lotteryList_.GetHashCode();
       hash ^= multiList_.GetHashCode();
       if (_unknownFields != null) {
@@ -45692,9 +45692,9 @@ namespace F4BY {
         output.WriteRawTag(8);
         output.WriteInt32(ChairIdx);
       }
-      if (Earn != 0L) {
+      if (Earn != 0) {
         output.WriteRawTag(16);
-        output.WriteInt64(Earn);
+        output.WriteInt32(Earn);
       }
       lotteryList_.WriteTo(output, _repeated_lotteryList_codec);
       multiList_.WriteTo(output, _repeated_multiList_codec);
@@ -45711,9 +45711,9 @@ namespace F4BY {
         output.WriteRawTag(8);
         output.WriteInt32(ChairIdx);
       }
-      if (Earn != 0L) {
+      if (Earn != 0) {
         output.WriteRawTag(16);
-        output.WriteInt64(Earn);
+        output.WriteInt32(Earn);
       }
       lotteryList_.WriteTo(ref output, _repeated_lotteryList_codec);
       multiList_.WriteTo(ref output, _repeated_multiList_codec);
@@ -45729,8 +45729,8 @@ namespace F4BY {
       if (ChairIdx != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ChairIdx);
       }
-      if (Earn != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Earn);
+      if (Earn != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Earn);
       }
       size += lotteryList_.CalculateSize(_repeated_lotteryList_codec);
       size += multiList_.CalculateSize(_repeated_multiList_codec);
@@ -45748,7 +45748,7 @@ namespace F4BY {
       if (other.ChairIdx != 0) {
         ChairIdx = other.ChairIdx;
       }
-      if (other.Earn != 0L) {
+      if (other.Earn != 0) {
         Earn = other.Earn;
       }
       lotteryList_.Add(other.lotteryList_);
@@ -45772,7 +45772,7 @@ namespace F4BY {
             break;
           }
           case 16: {
-            Earn = input.ReadInt64();
+            Earn = input.ReadInt32();
             break;
           }
           case 26: {
@@ -45802,7 +45802,7 @@ namespace F4BY {
             break;
           }
           case 16: {
-            Earn = input.ReadInt64();
+            Earn = input.ReadInt32();
             break;
           }
           case 26: {
@@ -45886,9 +45886,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "time" field.</summary>
     public const int TimeFieldNumber = 3;
-    private long time_;
+    private int time_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long Time {
+    public int Time {
       get { return time_; }
       set {
         time_ = value;
@@ -45941,7 +45941,7 @@ namespace F4BY {
       int hash = 1;
       if (ChairIdx != 0) hash ^= ChairIdx.GetHashCode();
       if (Ratio != 0) hash ^= Ratio.GetHashCode();
-      if (Time != 0L) hash ^= Time.GetHashCode();
+      if (Time != 0) hash ^= Time.GetHashCode();
       hash ^= lotteryList_.GetHashCode();
       hash ^= rewardConfig_.GetHashCode();
       if (_unknownFields != null) {
@@ -45968,9 +45968,9 @@ namespace F4BY {
         output.WriteRawTag(16);
         output.WriteInt32(Ratio);
       }
-      if (Time != 0L) {
+      if (Time != 0) {
         output.WriteRawTag(24);
-        output.WriteInt64(Time);
+        output.WriteInt32(Time);
       }
       lotteryList_.WriteTo(output, _repeated_lotteryList_codec);
       rewardConfig_.WriteTo(output, _repeated_rewardConfig_codec);
@@ -45991,9 +45991,9 @@ namespace F4BY {
         output.WriteRawTag(16);
         output.WriteInt32(Ratio);
       }
-      if (Time != 0L) {
+      if (Time != 0) {
         output.WriteRawTag(24);
-        output.WriteInt64(Time);
+        output.WriteInt32(Time);
       }
       lotteryList_.WriteTo(ref output, _repeated_lotteryList_codec);
       rewardConfig_.WriteTo(ref output, _repeated_rewardConfig_codec);
@@ -46012,8 +46012,8 @@ namespace F4BY {
       if (Ratio != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Ratio);
       }
-      if (Time != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Time);
+      if (Time != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Time);
       }
       size += lotteryList_.CalculateSize(_repeated_lotteryList_codec);
       size += rewardConfig_.CalculateSize(_repeated_rewardConfig_codec);
@@ -46034,7 +46034,7 @@ namespace F4BY {
       if (other.Ratio != 0) {
         Ratio = other.Ratio;
       }
-      if (other.Time != 0L) {
+      if (other.Time != 0) {
         Time = other.Time;
       }
       lotteryList_.Add(other.lotteryList_);
@@ -46062,7 +46062,7 @@ namespace F4BY {
             break;
           }
           case 24: {
-            Time = input.ReadInt64();
+            Time = input.ReadInt32();
             break;
           }
           case 34: {
@@ -46096,7 +46096,7 @@ namespace F4BY {
             break;
           }
           case 24: {
-            Time = input.ReadInt64();
+            Time = input.ReadInt32();
             break;
           }
           case 34: {
@@ -47061,9 +47061,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "end_time" field.</summary>
     public const int EndTimeFieldNumber = 1;
-    private long endTime_;
+    private int endTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long EndTime {
+    public int EndTime {
       get { return endTime_; }
       set {
         endTime_ = value;
@@ -47149,7 +47149,7 @@ namespace F4BY {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (EndTime != 0L) hash ^= EndTime.GetHashCode();
+      if (EndTime != 0) hash ^= EndTime.GetHashCode();
       hash ^= chestBriefList_.GetHashCode();
       if (MinRatio != 0) hash ^= MinRatio.GetHashCode();
       if (AutoOpen != false) hash ^= AutoOpen.GetHashCode();
@@ -47171,9 +47171,9 @@ namespace F4BY {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (EndTime != 0L) {
+      if (EndTime != 0) {
         output.WriteRawTag(8);
-        output.WriteInt64(EndTime);
+        output.WriteInt32(EndTime);
       }
       chestBriefList_.WriteTo(output, _repeated_chestBriefList_codec);
       if (MinRatio != 0) {
@@ -47201,9 +47201,9 @@ namespace F4BY {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (EndTime != 0L) {
+      if (EndTime != 0) {
         output.WriteRawTag(8);
-        output.WriteInt64(EndTime);
+        output.WriteInt32(EndTime);
       }
       chestBriefList_.WriteTo(ref output, _repeated_chestBriefList_codec);
       if (MinRatio != 0) {
@@ -47231,8 +47231,8 @@ namespace F4BY {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (EndTime != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(EndTime);
+      if (EndTime != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(EndTime);
       }
       size += chestBriefList_.CalculateSize(_repeated_chestBriefList_codec);
       if (MinRatio != 0) {
@@ -47258,7 +47258,7 @@ namespace F4BY {
       if (other == null) {
         return;
       }
-      if (other.EndTime != 0L) {
+      if (other.EndTime != 0) {
         EndTime = other.EndTime;
       }
       chestBriefList_.Add(other.chestBriefList_);
@@ -47289,7 +47289,7 @@ namespace F4BY {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            EndTime = input.ReadInt64();
+            EndTime = input.ReadInt32();
             break;
           }
           case 18: {
@@ -47327,7 +47327,7 @@ namespace F4BY {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            EndTime = input.ReadInt64();
+            EndTime = input.ReadInt32();
             break;
           }
           case 18: {
@@ -48719,9 +48719,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "earnMoney" field.</summary>
     public const int EarnMoneyFieldNumber = 2;
-    private long earnMoney_;
+    private int earnMoney_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long EarnMoney {
+    public int EarnMoney {
       get { return earnMoney_; }
       set {
         earnMoney_ = value;
@@ -48750,7 +48750,7 @@ namespace F4BY {
     public override int GetHashCode() {
       int hash = 1;
       if (CostMoney != 0) hash ^= CostMoney.GetHashCode();
-      if (EarnMoney != 0L) hash ^= EarnMoney.GetHashCode();
+      if (EarnMoney != 0) hash ^= EarnMoney.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -48771,9 +48771,9 @@ namespace F4BY {
         output.WriteRawTag(8);
         output.WriteInt32(CostMoney);
       }
-      if (EarnMoney != 0L) {
+      if (EarnMoney != 0) {
         output.WriteRawTag(16);
-        output.WriteInt64(EarnMoney);
+        output.WriteInt32(EarnMoney);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -48788,9 +48788,9 @@ namespace F4BY {
         output.WriteRawTag(8);
         output.WriteInt32(CostMoney);
       }
-      if (EarnMoney != 0L) {
+      if (EarnMoney != 0) {
         output.WriteRawTag(16);
-        output.WriteInt64(EarnMoney);
+        output.WriteInt32(EarnMoney);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -48804,8 +48804,8 @@ namespace F4BY {
       if (CostMoney != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(CostMoney);
       }
-      if (EarnMoney != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(EarnMoney);
+      if (EarnMoney != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(EarnMoney);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -48821,7 +48821,7 @@ namespace F4BY {
       if (other.CostMoney != 0) {
         CostMoney = other.CostMoney;
       }
-      if (other.EarnMoney != 0L) {
+      if (other.EarnMoney != 0) {
         EarnMoney = other.EarnMoney;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -48843,7 +48843,7 @@ namespace F4BY {
             break;
           }
           case 16: {
-            EarnMoney = input.ReadInt64();
+            EarnMoney = input.ReadInt32();
             break;
           }
         }
@@ -48865,7 +48865,7 @@ namespace F4BY {
             break;
           }
           case 16: {
-            EarnMoney = input.ReadInt64();
+            EarnMoney = input.ReadInt32();
             break;
           }
         }
@@ -50043,9 +50043,9 @@ namespace F4BY {
 
     /// <summary>Field number for the "end_time" field.</summary>
     public const int EndTimeFieldNumber = 3;
-    private long endTime_;
+    private int endTime_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long EndTime {
+    public int EndTime {
       get { return endTime_; }
       set {
         endTime_ = value;
@@ -50147,7 +50147,7 @@ namespace F4BY {
       int hash = 1;
       if (Term != 0) hash ^= Term.GetHashCode();
       if (StartTime != 0) hash ^= StartTime.GetHashCode();
-      if (EndTime != 0L) hash ^= EndTime.GetHashCode();
+      if (EndTime != 0) hash ^= EndTime.GetHashCode();
       if (Enable != false) hash ^= Enable.GetHashCode();
       if (bigRewardInfo_ != null) hash ^= BigRewardInfo.GetHashCode();
       hash ^= rewardList_.GetHashCode();
@@ -50178,9 +50178,9 @@ namespace F4BY {
         output.WriteRawTag(16);
         output.WriteInt32(StartTime);
       }
-      if (EndTime != 0L) {
+      if (EndTime != 0) {
         output.WriteRawTag(24);
-        output.WriteInt64(EndTime);
+        output.WriteInt32(EndTime);
       }
       if (Enable != false) {
         output.WriteRawTag(32);
@@ -50220,9 +50220,9 @@ namespace F4BY {
         output.WriteRawTag(16);
         output.WriteInt32(StartTime);
       }
-      if (EndTime != 0L) {
+      if (EndTime != 0) {
         output.WriteRawTag(24);
-        output.WriteInt64(EndTime);
+        output.WriteInt32(EndTime);
       }
       if (Enable != false) {
         output.WriteRawTag(32);
@@ -50260,8 +50260,8 @@ namespace F4BY {
       if (StartTime != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(StartTime);
       }
-      if (EndTime != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(EndTime);
+      if (EndTime != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(EndTime);
       }
       if (Enable != false) {
         size += 1 + 1;
@@ -50296,7 +50296,7 @@ namespace F4BY {
       if (other.StartTime != 0) {
         StartTime = other.StartTime;
       }
-      if (other.EndTime != 0L) {
+      if (other.EndTime != 0) {
         EndTime = other.EndTime;
       }
       if (other.Enable != false) {
@@ -50341,7 +50341,7 @@ namespace F4BY {
             break;
           }
           case 24: {
-            EndTime = input.ReadInt64();
+            EndTime = input.ReadInt32();
             break;
           }
           case 32: {
@@ -50394,7 +50394,7 @@ namespace F4BY {
             break;
           }
           case 24: {
-            EndTime = input.ReadInt64();
+            EndTime = input.ReadInt32();
             break;
           }
           case 32: {
