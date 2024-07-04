@@ -2112,13 +2112,20 @@ class Object2 PROTOBUF_FINAL :
   std::string* _internal_mutable_key();
   public:
 
-  // int32 value = 2;
+  // string value = 2;
   void clear_value();
-  ::PROTOBUF_NAMESPACE_ID::int32 value() const;
-  void set_value(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const std::string& value() const;
+  void set_value(const std::string& value);
+  void set_value(std::string&& value);
+  void set_value(const char* value);
+  void set_value(const char* value, size_t size);
+  std::string* mutable_value();
+  std::string* release_value();
+  void set_allocated_value(std::string* value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_value() const;
-  void _internal_set_value(::PROTOBUF_NAMESPACE_ID::int32 value);
+  const std::string& _internal_value() const;
+  void _internal_set_value(const std::string& value);
+  std::string* _internal_mutable_value();
   public:
 
   // @@protoc_insertion_point(class_scope:F4BY.Object2)
@@ -2129,7 +2136,7 @@ class Object2 PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr key_;
-  ::PROTOBUF_NAMESPACE_ID::int32 value_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr value_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
 };
@@ -2250,20 +2257,13 @@ class Object3 PROTOBUF_FINAL :
     kKeyFieldNumber = 1,
     kValueFieldNumber = 2,
   };
-  // string key = 1;
+  // int32 key = 1;
   void clear_key();
-  const std::string& key() const;
-  void set_key(const std::string& value);
-  void set_key(std::string&& value);
-  void set_key(const char* value);
-  void set_key(const char* value, size_t size);
-  std::string* mutable_key();
-  std::string* release_key();
-  void set_allocated_key(std::string* key);
+  ::PROTOBUF_NAMESPACE_ID::int32 key() const;
+  void set_key(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  const std::string& _internal_key() const;
-  void _internal_set_key(const std::string& value);
-  std::string* _internal_mutable_key();
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_key() const;
+  void _internal_set_key(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 value = 2;
@@ -2282,7 +2282,7 @@ class Object3 PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr key_;
+  ::PROTOBUF_NAMESPACE_ID::int32 key_;
   ::PROTOBUF_NAMESPACE_ID::int32 value_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
@@ -7413,6 +7413,9 @@ class SCFishTracesList PROTOBUF_FINAL :
     kIsCalledFieldNumber = 5,
     kAfterTideFirstFieldNumber = 6,
     kCallTypeFieldNumber = 7,
+    kMoveDelayFieldNumber = 8,
+    kRoadIdxFieldNumber = 9,
+    kMoveTFieldNumber = 10,
   };
   // repeated .F4BY.FishTrace fish_traces = 1;
   int fish_traces_size() const;
@@ -7486,6 +7489,33 @@ class SCFishTracesList PROTOBUF_FINAL :
   void _internal_set_call_type(::F4BY::CallFishType value);
   public:
 
+  // float move_delay = 8;
+  void clear_move_delay();
+  float move_delay() const;
+  void set_move_delay(float value);
+  private:
+  float _internal_move_delay() const;
+  void _internal_set_move_delay(float value);
+  public:
+
+  // int32 road_idx = 9;
+  void clear_road_idx();
+  ::PROTOBUF_NAMESPACE_ID::int32 road_idx() const;
+  void set_road_idx(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_road_idx() const;
+  void _internal_set_road_idx(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
+  // float move_t = 10;
+  void clear_move_t();
+  float move_t() const;
+  void set_move_t(float value);
+  private:
+  float _internal_move_t() const;
+  void _internal_set_move_t(float value);
+  public:
+
   // @@protoc_insertion_point(class_scope:F4BY.SCFishTracesList)
  private:
   class _Internal;
@@ -7500,6 +7530,9 @@ class SCFishTracesList PROTOBUF_FINAL :
   bool is_called_;
   bool after_tide_first_;
   int call_type_;
+  float move_delay_;
+  ::PROTOBUF_NAMESPACE_ID::int32 road_idx_;
+  float move_t_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
 };
@@ -7916,36 +7949,22 @@ class CSSyncFishRsp PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::FishTrace >&
       fish_traces() const;
 
-  // string fish_road = 2;
+  // int32 fish_road = 2;
   void clear_fish_road();
-  const std::string& fish_road() const;
-  void set_fish_road(const std::string& value);
-  void set_fish_road(std::string&& value);
-  void set_fish_road(const char* value);
-  void set_fish_road(const char* value, size_t size);
-  std::string* mutable_fish_road();
-  std::string* release_fish_road();
-  void set_allocated_fish_road(std::string* fish_road);
+  ::PROTOBUF_NAMESPACE_ID::int32 fish_road() const;
+  void set_fish_road(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  const std::string& _internal_fish_road() const;
-  void _internal_set_fish_road(const std::string& value);
-  std::string* _internal_mutable_fish_road();
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_fish_road() const;
+  void _internal_set_fish_road(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // string fish_array = 3;
+  // int32 fish_array = 3;
   void clear_fish_array();
-  const std::string& fish_array() const;
-  void set_fish_array(const std::string& value);
-  void set_fish_array(std::string&& value);
-  void set_fish_array(const char* value);
-  void set_fish_array(const char* value, size_t size);
-  std::string* mutable_fish_array();
-  std::string* release_fish_array();
-  void set_allocated_fish_array(std::string* fish_array);
+  ::PROTOBUF_NAMESPACE_ID::int32 fish_array() const;
+  void set_fish_array(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  const std::string& _internal_fish_array() const;
-  void _internal_set_fish_array(const std::string& value);
-  std::string* _internal_mutable_fish_array();
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_fish_array() const;
+  void _internal_set_fish_array(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // float move_delay = 4;
@@ -8001,8 +8020,8 @@ class CSSyncFishRsp PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::FishTrace > fish_traces_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr fish_road_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr fish_array_;
+  ::PROTOBUF_NAMESPACE_ID::int32 fish_road_;
+  ::PROTOBUF_NAMESPACE_ID::int32 fish_array_;
   float move_delay_;
   ::PROTOBUF_NAMESPACE_ID::int32 road_idx_;
   float move_t_;
@@ -8131,6 +8150,9 @@ class SCSyncFishRsp PROTOBUF_FINAL :
     kMoveDelayFieldNumber = 4,
     kRoadIdxFieldNumber = 5,
     kMoveTFieldNumber = 6,
+    kCreateIntervalFieldNumber = 7,
+    kIsCalledFieldNumber = 8,
+    kCallTypeFieldNumber = 9,
   };
   // repeated .F4BY.FishTrace fish_traces = 1;
   int fish_traces_size() const;
@@ -8150,36 +8172,22 @@ class SCSyncFishRsp PROTOBUF_FINAL :
   const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::FishTrace >&
       fish_traces() const;
 
-  // string fish_road = 2;
+  // int32 fish_road = 2;
   void clear_fish_road();
-  const std::string& fish_road() const;
-  void set_fish_road(const std::string& value);
-  void set_fish_road(std::string&& value);
-  void set_fish_road(const char* value);
-  void set_fish_road(const char* value, size_t size);
-  std::string* mutable_fish_road();
-  std::string* release_fish_road();
-  void set_allocated_fish_road(std::string* fish_road);
+  ::PROTOBUF_NAMESPACE_ID::int32 fish_road() const;
+  void set_fish_road(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  const std::string& _internal_fish_road() const;
-  void _internal_set_fish_road(const std::string& value);
-  std::string* _internal_mutable_fish_road();
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_fish_road() const;
+  void _internal_set_fish_road(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // string fish_array = 3;
+  // int32 fish_array = 3;
   void clear_fish_array();
-  const std::string& fish_array() const;
-  void set_fish_array(const std::string& value);
-  void set_fish_array(std::string&& value);
-  void set_fish_array(const char* value);
-  void set_fish_array(const char* value, size_t size);
-  std::string* mutable_fish_array();
-  std::string* release_fish_array();
-  void set_allocated_fish_array(std::string* fish_array);
+  ::PROTOBUF_NAMESPACE_ID::int32 fish_array() const;
+  void set_fish_array(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  const std::string& _internal_fish_array() const;
-  void _internal_set_fish_array(const std::string& value);
-  std::string* _internal_mutable_fish_array();
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_fish_array() const;
+  void _internal_set_fish_array(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // float move_delay = 4;
@@ -8209,6 +8217,33 @@ class SCSyncFishRsp PROTOBUF_FINAL :
   void _internal_set_move_t(float value);
   public:
 
+  // float create_interval = 7;
+  void clear_create_interval();
+  float create_interval() const;
+  void set_create_interval(float value);
+  private:
+  float _internal_create_interval() const;
+  void _internal_set_create_interval(float value);
+  public:
+
+  // bool is_called = 8;
+  void clear_is_called();
+  bool is_called() const;
+  void set_is_called(bool value);
+  private:
+  bool _internal_is_called() const;
+  void _internal_set_is_called(bool value);
+  public:
+
+  // .F4BY.CallFishType call_type = 9;
+  void clear_call_type();
+  ::F4BY::CallFishType call_type() const;
+  void set_call_type(::F4BY::CallFishType value);
+  private:
+  ::F4BY::CallFishType _internal_call_type() const;
+  void _internal_set_call_type(::F4BY::CallFishType value);
+  public:
+
   // @@protoc_insertion_point(class_scope:F4BY.SCSyncFishRsp)
  private:
   class _Internal;
@@ -8217,11 +8252,14 @@ class SCSyncFishRsp PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::FishTrace > fish_traces_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr fish_road_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr fish_array_;
+  ::PROTOBUF_NAMESPACE_ID::int32 fish_road_;
+  ::PROTOBUF_NAMESPACE_ID::int32 fish_array_;
   float move_delay_;
   ::PROTOBUF_NAMESPACE_ID::int32 road_idx_;
   float move_t_;
+  float create_interval_;
+  bool is_called_;
+  int call_type_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
 };
@@ -10418,9 +10456,10 @@ class WingsInfo PROTOBUF_FINAL :
     kWingsSpecEffectFieldNumber = 3,
     kWingsIdFieldNumber = 1,
     kReceiveTypeFieldNumber = 4,
+    kActivityIdFieldNumber = 5,
     kEnableFieldNumber = 2,
     kNewEnableFieldNumber = 7,
-    kActivityIdFieldNumber = 5,
+    kDoubleTagFieldNumber = 8,
     kPriceFieldNumber = 6,
   };
   // .F4BY.WingsSpecEffect wings_spec_effect = 3;
@@ -10459,6 +10498,15 @@ class WingsInfo PROTOBUF_FINAL :
   void _internal_set_receive_type(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 activity_id = 5;
+  void clear_activity_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 activity_id() const;
+  void set_activity_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_activity_id() const;
+  void _internal_set_activity_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // bool enable = 2;
   void clear_enable();
   bool enable() const;
@@ -10477,13 +10525,13 @@ class WingsInfo PROTOBUF_FINAL :
   void _internal_set_new_enable(bool value);
   public:
 
-  // int32 activity_id = 5;
-  void clear_activity_id();
-  ::PROTOBUF_NAMESPACE_ID::int32 activity_id() const;
-  void set_activity_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  // bool double_tag = 8;
+  void clear_double_tag();
+  bool double_tag() const;
+  void set_double_tag(bool value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_activity_id() const;
-  void _internal_set_activity_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  bool _internal_double_tag() const;
+  void _internal_set_double_tag(bool value);
   public:
 
   // int32 price = 6;
@@ -10505,9 +10553,10 @@ class WingsInfo PROTOBUF_FINAL :
   ::F4BY::WingsSpecEffect* wings_spec_effect_;
   ::PROTOBUF_NAMESPACE_ID::int32 wings_id_;
   ::PROTOBUF_NAMESPACE_ID::int32 receive_type_;
+  ::PROTOBUF_NAMESPACE_ID::int32 activity_id_;
   bool enable_;
   bool new_enable_;
-  ::PROTOBUF_NAMESPACE_ID::int32 activity_id_;
+  bool double_tag_;
   ::PROTOBUF_NAMESPACE_ID::int32 price_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
@@ -11373,41 +11422,41 @@ class SCUserInfoNotify PROTOBUF_FINAL :
     kLastRatioFieldNumber = 7,
     kLastWingsPropIdFieldNumber = 8,
   };
-  // .F4BY.GunInfo gun_info = 2;
-  bool has_gun_info() const;
+  // repeated .F4BY.GunInfo gun_info = 2;
+  int gun_info_size() const;
   private:
-  bool _internal_has_gun_info() const;
+  int _internal_gun_info_size() const;
   public:
   void clear_gun_info();
-  const ::F4BY::GunInfo& gun_info() const;
-  ::F4BY::GunInfo* release_gun_info();
-  ::F4BY::GunInfo* mutable_gun_info();
-  void set_allocated_gun_info(::F4BY::GunInfo* gun_info);
+  ::F4BY::GunInfo* mutable_gun_info(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::GunInfo >*
+      mutable_gun_info();
   private:
-  const ::F4BY::GunInfo& _internal_gun_info() const;
-  ::F4BY::GunInfo* _internal_mutable_gun_info();
+  const ::F4BY::GunInfo& _internal_gun_info(int index) const;
+  ::F4BY::GunInfo* _internal_add_gun_info();
   public:
-  void unsafe_arena_set_allocated_gun_info(
-      ::F4BY::GunInfo* gun_info);
-  ::F4BY::GunInfo* unsafe_arena_release_gun_info();
+  const ::F4BY::GunInfo& gun_info(int index) const;
+  ::F4BY::GunInfo* add_gun_info();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::GunInfo >&
+      gun_info() const;
 
-  // .F4BY.WingsInfo wings_info = 3;
-  bool has_wings_info() const;
+  // repeated .F4BY.WingsInfo wings_info = 3;
+  int wings_info_size() const;
   private:
-  bool _internal_has_wings_info() const;
+  int _internal_wings_info_size() const;
   public:
   void clear_wings_info();
-  const ::F4BY::WingsInfo& wings_info() const;
-  ::F4BY::WingsInfo* release_wings_info();
-  ::F4BY::WingsInfo* mutable_wings_info();
-  void set_allocated_wings_info(::F4BY::WingsInfo* wings_info);
+  ::F4BY::WingsInfo* mutable_wings_info(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::WingsInfo >*
+      mutable_wings_info();
   private:
-  const ::F4BY::WingsInfo& _internal_wings_info() const;
-  ::F4BY::WingsInfo* _internal_mutable_wings_info();
+  const ::F4BY::WingsInfo& _internal_wings_info(int index) const;
+  ::F4BY::WingsInfo* _internal_add_wings_info();
   public:
-  void unsafe_arena_set_allocated_wings_info(
-      ::F4BY::WingsInfo* wings_info);
-  ::F4BY::WingsInfo* unsafe_arena_release_wings_info();
+  const ::F4BY::WingsInfo& wings_info(int index) const;
+  ::F4BY::WingsInfo* add_wings_info();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::WingsInfo >&
+      wings_info() const;
 
   // .F4BY.VipInfo vip_info = 4;
   bool has_vip_info() const;
@@ -11488,8 +11537,8 @@ class SCUserInfoNotify PROTOBUF_FINAL :
   template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::F4BY::GunInfo* gun_info_;
-  ::F4BY::WingsInfo* wings_info_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::GunInfo > gun_info_;
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::WingsInfo > wings_info_;
   ::F4BY::VipInfo* vip_info_;
   ::F4BY::PropInfo* prop_info_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx_;
@@ -12297,6 +12346,7 @@ class CSChat PROTOBUF_FINAL :
   enum : int {
     kMsgTypeFieldNumber = 1,
     kMsgIdxFieldNumber = 2,
+    kChairIdxFieldNumber = 3,
   };
   // int32 msg_type = 1;
   void clear_msg_type();
@@ -12316,6 +12366,15 @@ class CSChat PROTOBUF_FINAL :
   void _internal_set_msg_idx(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
+  // int32 chair_idx = 3;
+  void clear_chair_idx();
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_idx() const;
+  void set_chair_idx(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_chair_idx() const;
+  void _internal_set_chair_idx(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:F4BY.CSChat)
  private:
   class _Internal;
@@ -12325,6 +12384,7 @@ class CSChat PROTOBUF_FINAL :
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int32 msg_type_;
   ::PROTOBUF_NAMESPACE_ID::int32 msg_idx_;
+  ::PROTOBUF_NAMESPACE_ID::int32 chair_idx_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
 };
@@ -21180,13 +21240,13 @@ class SCFrozenTime PROTOBUF_FINAL :
   void _internal_set_chair_idx(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 is_frozen = 2;
+  // bool is_frozen = 2;
   void clear_is_frozen();
-  ::PROTOBUF_NAMESPACE_ID::int32 is_frozen() const;
-  void set_is_frozen(::PROTOBUF_NAMESPACE_ID::int32 value);
+  bool is_frozen() const;
+  void set_is_frozen(bool value);
   private:
-  ::PROTOBUF_NAMESPACE_ID::int32 _internal_is_frozen() const;
-  void _internal_set_is_frozen(::PROTOBUF_NAMESPACE_ID::int32 value);
+  bool _internal_is_frozen() const;
+  void _internal_set_is_frozen(bool value);
   public:
 
   // float frozen_cd = 3;
@@ -21206,7 +21266,7 @@ class SCFrozenTime PROTOBUF_FINAL :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::int32 chair_idx_;
-  ::PROTOBUF_NAMESPACE_ID::int32 is_frozen_;
+  bool is_frozen_;
   float frozen_cd_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_F4BY_2eproto;
@@ -38992,89 +39052,89 @@ inline void Object2::set_allocated_key(std::string* key) {
   // @@protoc_insertion_point(field_set_allocated:F4BY.Object2.key)
 }
 
-// int32 value = 2;
+// string value = 2;
 inline void Object2::clear_value() {
-  value_ = 0;
+  value_.ClearToEmpty();
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 Object2::_internal_value() const {
-  return value_;
-}
-inline ::PROTOBUF_NAMESPACE_ID::int32 Object2::value() const {
+inline const std::string& Object2::value() const {
   // @@protoc_insertion_point(field_get:F4BY.Object2.value)
   return _internal_value();
 }
-inline void Object2::_internal_set_value(::PROTOBUF_NAMESPACE_ID::int32 value) {
-  
-  value_ = value;
-}
-inline void Object2::set_value(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void Object2::set_value(const std::string& value) {
   _internal_set_value(value);
   // @@protoc_insertion_point(field_set:F4BY.Object2.value)
+}
+inline std::string* Object2::mutable_value() {
+  // @@protoc_insertion_point(field_mutable:F4BY.Object2.value)
+  return _internal_mutable_value();
+}
+inline const std::string& Object2::_internal_value() const {
+  return value_.Get();
+}
+inline void Object2::_internal_set_value(const std::string& value) {
+  
+  value_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
+}
+inline void Object2::set_value(std::string&& value) {
+  
+  value_.Set(
+    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
+  // @@protoc_insertion_point(field_set_rvalue:F4BY.Object2.value)
+}
+inline void Object2::set_value(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  value_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
+  // @@protoc_insertion_point(field_set_char:F4BY.Object2.value)
+}
+inline void Object2::set_value(const char* value,
+    size_t size) {
+  
+  value_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
+      reinterpret_cast<const char*>(value), size), GetArena());
+  // @@protoc_insertion_point(field_set_pointer:F4BY.Object2.value)
+}
+inline std::string* Object2::_internal_mutable_value() {
+  
+  return value_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+}
+inline std::string* Object2::release_value() {
+  // @@protoc_insertion_point(field_release:F4BY.Object2.value)
+  return value_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+}
+inline void Object2::set_allocated_value(std::string* value) {
+  if (value != nullptr) {
+    
+  } else {
+    
+  }
+  value_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value,
+      GetArena());
+  // @@protoc_insertion_point(field_set_allocated:F4BY.Object2.value)
 }
 
 // -------------------------------------------------------------------
 
 // Object3
 
-// string key = 1;
+// int32 key = 1;
 inline void Object3::clear_key() {
-  key_.ClearToEmpty();
+  key_ = 0;
 }
-inline const std::string& Object3::key() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 Object3::_internal_key() const {
+  return key_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 Object3::key() const {
   // @@protoc_insertion_point(field_get:F4BY.Object3.key)
   return _internal_key();
 }
-inline void Object3::set_key(const std::string& value) {
+inline void Object3::_internal_set_key(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  key_ = value;
+}
+inline void Object3::set_key(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_key(value);
   // @@protoc_insertion_point(field_set:F4BY.Object3.key)
-}
-inline std::string* Object3::mutable_key() {
-  // @@protoc_insertion_point(field_mutable:F4BY.Object3.key)
-  return _internal_mutable_key();
-}
-inline const std::string& Object3::_internal_key() const {
-  return key_.Get();
-}
-inline void Object3::_internal_set_key(const std::string& value) {
-  
-  key_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
-}
-inline void Object3::set_key(std::string&& value) {
-  
-  key_.Set(
-    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
-  // @@protoc_insertion_point(field_set_rvalue:F4BY.Object3.key)
-}
-inline void Object3::set_key(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  
-  key_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
-  // @@protoc_insertion_point(field_set_char:F4BY.Object3.key)
-}
-inline void Object3::set_key(const char* value,
-    size_t size) {
-  
-  key_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
-      reinterpret_cast<const char*>(value), size), GetArena());
-  // @@protoc_insertion_point(field_set_pointer:F4BY.Object3.key)
-}
-inline std::string* Object3::_internal_mutable_key() {
-  
-  return key_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
-}
-inline std::string* Object3::release_key() {
-  // @@protoc_insertion_point(field_release:F4BY.Object3.key)
-  return key_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-}
-inline void Object3::set_allocated_key(std::string* key) {
-  if (key != nullptr) {
-    
-  } else {
-    
-  }
-  key_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), key,
-      GetArena());
-  // @@protoc_insertion_point(field_set_allocated:F4BY.Object3.key)
 }
 
 // int32 value = 2;
@@ -42505,6 +42565,66 @@ inline void SCFishTracesList::set_call_type(::F4BY::CallFishType value) {
   // @@protoc_insertion_point(field_set:F4BY.SCFishTracesList.call_type)
 }
 
+// float move_delay = 8;
+inline void SCFishTracesList::clear_move_delay() {
+  move_delay_ = 0;
+}
+inline float SCFishTracesList::_internal_move_delay() const {
+  return move_delay_;
+}
+inline float SCFishTracesList::move_delay() const {
+  // @@protoc_insertion_point(field_get:F4BY.SCFishTracesList.move_delay)
+  return _internal_move_delay();
+}
+inline void SCFishTracesList::_internal_set_move_delay(float value) {
+  
+  move_delay_ = value;
+}
+inline void SCFishTracesList::set_move_delay(float value) {
+  _internal_set_move_delay(value);
+  // @@protoc_insertion_point(field_set:F4BY.SCFishTracesList.move_delay)
+}
+
+// int32 road_idx = 9;
+inline void SCFishTracesList::clear_road_idx() {
+  road_idx_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCFishTracesList::_internal_road_idx() const {
+  return road_idx_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCFishTracesList::road_idx() const {
+  // @@protoc_insertion_point(field_get:F4BY.SCFishTracesList.road_idx)
+  return _internal_road_idx();
+}
+inline void SCFishTracesList::_internal_set_road_idx(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  road_idx_ = value;
+}
+inline void SCFishTracesList::set_road_idx(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_road_idx(value);
+  // @@protoc_insertion_point(field_set:F4BY.SCFishTracesList.road_idx)
+}
+
+// float move_t = 10;
+inline void SCFishTracesList::clear_move_t() {
+  move_t_ = 0;
+}
+inline float SCFishTracesList::_internal_move_t() const {
+  return move_t_;
+}
+inline float SCFishTracesList::move_t() const {
+  // @@protoc_insertion_point(field_get:F4BY.SCFishTracesList.move_t)
+  return _internal_move_t();
+}
+inline void SCFishTracesList::_internal_set_move_t(float value) {
+  
+  move_t_ = value;
+}
+inline void SCFishTracesList::set_move_t(float value) {
+  _internal_set_move_t(value);
+  // @@protoc_insertion_point(field_set:F4BY.SCFishTracesList.move_t)
+}
+
 // -------------------------------------------------------------------
 
 // CSSyncFishReq
@@ -42596,126 +42716,44 @@ CSSyncFishRsp::fish_traces() const {
   return fish_traces_;
 }
 
-// string fish_road = 2;
+// int32 fish_road = 2;
 inline void CSSyncFishRsp::clear_fish_road() {
-  fish_road_.ClearToEmpty();
+  fish_road_ = 0;
 }
-inline const std::string& CSSyncFishRsp::fish_road() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 CSSyncFishRsp::_internal_fish_road() const {
+  return fish_road_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CSSyncFishRsp::fish_road() const {
   // @@protoc_insertion_point(field_get:F4BY.CSSyncFishRsp.fish_road)
   return _internal_fish_road();
 }
-inline void CSSyncFishRsp::set_fish_road(const std::string& value) {
+inline void CSSyncFishRsp::_internal_set_fish_road(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  fish_road_ = value;
+}
+inline void CSSyncFishRsp::set_fish_road(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_fish_road(value);
   // @@protoc_insertion_point(field_set:F4BY.CSSyncFishRsp.fish_road)
 }
-inline std::string* CSSyncFishRsp::mutable_fish_road() {
-  // @@protoc_insertion_point(field_mutable:F4BY.CSSyncFishRsp.fish_road)
-  return _internal_mutable_fish_road();
-}
-inline const std::string& CSSyncFishRsp::_internal_fish_road() const {
-  return fish_road_.Get();
-}
-inline void CSSyncFishRsp::_internal_set_fish_road(const std::string& value) {
-  
-  fish_road_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
-}
-inline void CSSyncFishRsp::set_fish_road(std::string&& value) {
-  
-  fish_road_.Set(
-    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
-  // @@protoc_insertion_point(field_set_rvalue:F4BY.CSSyncFishRsp.fish_road)
-}
-inline void CSSyncFishRsp::set_fish_road(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  
-  fish_road_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
-  // @@protoc_insertion_point(field_set_char:F4BY.CSSyncFishRsp.fish_road)
-}
-inline void CSSyncFishRsp::set_fish_road(const char* value,
-    size_t size) {
-  
-  fish_road_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
-      reinterpret_cast<const char*>(value), size), GetArena());
-  // @@protoc_insertion_point(field_set_pointer:F4BY.CSSyncFishRsp.fish_road)
-}
-inline std::string* CSSyncFishRsp::_internal_mutable_fish_road() {
-  
-  return fish_road_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
-}
-inline std::string* CSSyncFishRsp::release_fish_road() {
-  // @@protoc_insertion_point(field_release:F4BY.CSSyncFishRsp.fish_road)
-  return fish_road_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-}
-inline void CSSyncFishRsp::set_allocated_fish_road(std::string* fish_road) {
-  if (fish_road != nullptr) {
-    
-  } else {
-    
-  }
-  fish_road_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), fish_road,
-      GetArena());
-  // @@protoc_insertion_point(field_set_allocated:F4BY.CSSyncFishRsp.fish_road)
-}
 
-// string fish_array = 3;
+// int32 fish_array = 3;
 inline void CSSyncFishRsp::clear_fish_array() {
-  fish_array_.ClearToEmpty();
+  fish_array_ = 0;
 }
-inline const std::string& CSSyncFishRsp::fish_array() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 CSSyncFishRsp::_internal_fish_array() const {
+  return fish_array_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CSSyncFishRsp::fish_array() const {
   // @@protoc_insertion_point(field_get:F4BY.CSSyncFishRsp.fish_array)
   return _internal_fish_array();
 }
-inline void CSSyncFishRsp::set_fish_array(const std::string& value) {
+inline void CSSyncFishRsp::_internal_set_fish_array(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  fish_array_ = value;
+}
+inline void CSSyncFishRsp::set_fish_array(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_fish_array(value);
   // @@protoc_insertion_point(field_set:F4BY.CSSyncFishRsp.fish_array)
-}
-inline std::string* CSSyncFishRsp::mutable_fish_array() {
-  // @@protoc_insertion_point(field_mutable:F4BY.CSSyncFishRsp.fish_array)
-  return _internal_mutable_fish_array();
-}
-inline const std::string& CSSyncFishRsp::_internal_fish_array() const {
-  return fish_array_.Get();
-}
-inline void CSSyncFishRsp::_internal_set_fish_array(const std::string& value) {
-  
-  fish_array_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
-}
-inline void CSSyncFishRsp::set_fish_array(std::string&& value) {
-  
-  fish_array_.Set(
-    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
-  // @@protoc_insertion_point(field_set_rvalue:F4BY.CSSyncFishRsp.fish_array)
-}
-inline void CSSyncFishRsp::set_fish_array(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  
-  fish_array_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
-  // @@protoc_insertion_point(field_set_char:F4BY.CSSyncFishRsp.fish_array)
-}
-inline void CSSyncFishRsp::set_fish_array(const char* value,
-    size_t size) {
-  
-  fish_array_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
-      reinterpret_cast<const char*>(value), size), GetArena());
-  // @@protoc_insertion_point(field_set_pointer:F4BY.CSSyncFishRsp.fish_array)
-}
-inline std::string* CSSyncFishRsp::_internal_mutable_fish_array() {
-  
-  return fish_array_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
-}
-inline std::string* CSSyncFishRsp::release_fish_array() {
-  // @@protoc_insertion_point(field_release:F4BY.CSSyncFishRsp.fish_array)
-  return fish_array_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-}
-inline void CSSyncFishRsp::set_allocated_fish_array(std::string* fish_array) {
-  if (fish_array != nullptr) {
-    
-  } else {
-    
-  }
-  fish_array_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), fish_array,
-      GetArena());
-  // @@protoc_insertion_point(field_set_allocated:F4BY.CSSyncFishRsp.fish_array)
 }
 
 // float move_delay = 4;
@@ -42861,126 +42899,44 @@ SCSyncFishRsp::fish_traces() const {
   return fish_traces_;
 }
 
-// string fish_road = 2;
+// int32 fish_road = 2;
 inline void SCSyncFishRsp::clear_fish_road() {
-  fish_road_.ClearToEmpty();
+  fish_road_ = 0;
 }
-inline const std::string& SCSyncFishRsp::fish_road() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCSyncFishRsp::_internal_fish_road() const {
+  return fish_road_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCSyncFishRsp::fish_road() const {
   // @@protoc_insertion_point(field_get:F4BY.SCSyncFishRsp.fish_road)
   return _internal_fish_road();
 }
-inline void SCSyncFishRsp::set_fish_road(const std::string& value) {
+inline void SCSyncFishRsp::_internal_set_fish_road(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  fish_road_ = value;
+}
+inline void SCSyncFishRsp::set_fish_road(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_fish_road(value);
   // @@protoc_insertion_point(field_set:F4BY.SCSyncFishRsp.fish_road)
 }
-inline std::string* SCSyncFishRsp::mutable_fish_road() {
-  // @@protoc_insertion_point(field_mutable:F4BY.SCSyncFishRsp.fish_road)
-  return _internal_mutable_fish_road();
-}
-inline const std::string& SCSyncFishRsp::_internal_fish_road() const {
-  return fish_road_.Get();
-}
-inline void SCSyncFishRsp::_internal_set_fish_road(const std::string& value) {
-  
-  fish_road_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
-}
-inline void SCSyncFishRsp::set_fish_road(std::string&& value) {
-  
-  fish_road_.Set(
-    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
-  // @@protoc_insertion_point(field_set_rvalue:F4BY.SCSyncFishRsp.fish_road)
-}
-inline void SCSyncFishRsp::set_fish_road(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  
-  fish_road_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
-  // @@protoc_insertion_point(field_set_char:F4BY.SCSyncFishRsp.fish_road)
-}
-inline void SCSyncFishRsp::set_fish_road(const char* value,
-    size_t size) {
-  
-  fish_road_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
-      reinterpret_cast<const char*>(value), size), GetArena());
-  // @@protoc_insertion_point(field_set_pointer:F4BY.SCSyncFishRsp.fish_road)
-}
-inline std::string* SCSyncFishRsp::_internal_mutable_fish_road() {
-  
-  return fish_road_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
-}
-inline std::string* SCSyncFishRsp::release_fish_road() {
-  // @@protoc_insertion_point(field_release:F4BY.SCSyncFishRsp.fish_road)
-  return fish_road_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-}
-inline void SCSyncFishRsp::set_allocated_fish_road(std::string* fish_road) {
-  if (fish_road != nullptr) {
-    
-  } else {
-    
-  }
-  fish_road_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), fish_road,
-      GetArena());
-  // @@protoc_insertion_point(field_set_allocated:F4BY.SCSyncFishRsp.fish_road)
-}
 
-// string fish_array = 3;
+// int32 fish_array = 3;
 inline void SCSyncFishRsp::clear_fish_array() {
-  fish_array_.ClearToEmpty();
+  fish_array_ = 0;
 }
-inline const std::string& SCSyncFishRsp::fish_array() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCSyncFishRsp::_internal_fish_array() const {
+  return fish_array_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 SCSyncFishRsp::fish_array() const {
   // @@protoc_insertion_point(field_get:F4BY.SCSyncFishRsp.fish_array)
   return _internal_fish_array();
 }
-inline void SCSyncFishRsp::set_fish_array(const std::string& value) {
+inline void SCSyncFishRsp::_internal_set_fish_array(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  fish_array_ = value;
+}
+inline void SCSyncFishRsp::set_fish_array(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_fish_array(value);
   // @@protoc_insertion_point(field_set:F4BY.SCSyncFishRsp.fish_array)
-}
-inline std::string* SCSyncFishRsp::mutable_fish_array() {
-  // @@protoc_insertion_point(field_mutable:F4BY.SCSyncFishRsp.fish_array)
-  return _internal_mutable_fish_array();
-}
-inline const std::string& SCSyncFishRsp::_internal_fish_array() const {
-  return fish_array_.Get();
-}
-inline void SCSyncFishRsp::_internal_set_fish_array(const std::string& value) {
-  
-  fish_array_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, value, GetArena());
-}
-inline void SCSyncFishRsp::set_fish_array(std::string&& value) {
-  
-  fish_array_.Set(
-    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::move(value), GetArena());
-  // @@protoc_insertion_point(field_set_rvalue:F4BY.SCSyncFishRsp.fish_array)
-}
-inline void SCSyncFishRsp::set_fish_array(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  
-  fish_array_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(value), GetArena());
-  // @@protoc_insertion_point(field_set_char:F4BY.SCSyncFishRsp.fish_array)
-}
-inline void SCSyncFishRsp::set_fish_array(const char* value,
-    size_t size) {
-  
-  fish_array_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, ::std::string(
-      reinterpret_cast<const char*>(value), size), GetArena());
-  // @@protoc_insertion_point(field_set_pointer:F4BY.SCSyncFishRsp.fish_array)
-}
-inline std::string* SCSyncFishRsp::_internal_mutable_fish_array() {
-  
-  return fish_array_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
-}
-inline std::string* SCSyncFishRsp::release_fish_array() {
-  // @@protoc_insertion_point(field_release:F4BY.SCSyncFishRsp.fish_array)
-  return fish_array_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-}
-inline void SCSyncFishRsp::set_allocated_fish_array(std::string* fish_array) {
-  if (fish_array != nullptr) {
-    
-  } else {
-    
-  }
-  fish_array_.SetAllocated(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), fish_array,
-      GetArena());
-  // @@protoc_insertion_point(field_set_allocated:F4BY.SCSyncFishRsp.fish_array)
 }
 
 // float move_delay = 4;
@@ -43041,6 +42997,66 @@ inline void SCSyncFishRsp::_internal_set_move_t(float value) {
 inline void SCSyncFishRsp::set_move_t(float value) {
   _internal_set_move_t(value);
   // @@protoc_insertion_point(field_set:F4BY.SCSyncFishRsp.move_t)
+}
+
+// float create_interval = 7;
+inline void SCSyncFishRsp::clear_create_interval() {
+  create_interval_ = 0;
+}
+inline float SCSyncFishRsp::_internal_create_interval() const {
+  return create_interval_;
+}
+inline float SCSyncFishRsp::create_interval() const {
+  // @@protoc_insertion_point(field_get:F4BY.SCSyncFishRsp.create_interval)
+  return _internal_create_interval();
+}
+inline void SCSyncFishRsp::_internal_set_create_interval(float value) {
+  
+  create_interval_ = value;
+}
+inline void SCSyncFishRsp::set_create_interval(float value) {
+  _internal_set_create_interval(value);
+  // @@protoc_insertion_point(field_set:F4BY.SCSyncFishRsp.create_interval)
+}
+
+// bool is_called = 8;
+inline void SCSyncFishRsp::clear_is_called() {
+  is_called_ = false;
+}
+inline bool SCSyncFishRsp::_internal_is_called() const {
+  return is_called_;
+}
+inline bool SCSyncFishRsp::is_called() const {
+  // @@protoc_insertion_point(field_get:F4BY.SCSyncFishRsp.is_called)
+  return _internal_is_called();
+}
+inline void SCSyncFishRsp::_internal_set_is_called(bool value) {
+  
+  is_called_ = value;
+}
+inline void SCSyncFishRsp::set_is_called(bool value) {
+  _internal_set_is_called(value);
+  // @@protoc_insertion_point(field_set:F4BY.SCSyncFishRsp.is_called)
+}
+
+// .F4BY.CallFishType call_type = 9;
+inline void SCSyncFishRsp::clear_call_type() {
+  call_type_ = 0;
+}
+inline ::F4BY::CallFishType SCSyncFishRsp::_internal_call_type() const {
+  return static_cast< ::F4BY::CallFishType >(call_type_);
+}
+inline ::F4BY::CallFishType SCSyncFishRsp::call_type() const {
+  // @@protoc_insertion_point(field_get:F4BY.SCSyncFishRsp.call_type)
+  return _internal_call_type();
+}
+inline void SCSyncFishRsp::_internal_set_call_type(::F4BY::CallFishType value) {
+  
+  call_type_ = value;
+}
+inline void SCSyncFishRsp::set_call_type(::F4BY::CallFishType value) {
+  _internal_set_call_type(value);
+  // @@protoc_insertion_point(field_set:F4BY.SCSyncFishRsp.call_type)
 }
 
 // -------------------------------------------------------------------
@@ -43906,6 +43922,26 @@ inline void WingsInfo::set_new_enable(bool value) {
   // @@protoc_insertion_point(field_set:F4BY.WingsInfo.new_enable)
 }
 
+// bool double_tag = 8;
+inline void WingsInfo::clear_double_tag() {
+  double_tag_ = false;
+}
+inline bool WingsInfo::_internal_double_tag() const {
+  return double_tag_;
+}
+inline bool WingsInfo::double_tag() const {
+  // @@protoc_insertion_point(field_get:F4BY.WingsInfo.double_tag)
+  return _internal_double_tag();
+}
+inline void WingsInfo::_internal_set_double_tag(bool value) {
+  
+  double_tag_ = value;
+}
+inline void WingsInfo::set_double_tag(bool value) {
+  _internal_set_double_tag(value);
+  // @@protoc_insertion_point(field_set:F4BY.WingsInfo.double_tag)
+}
+
 // -------------------------------------------------------------------
 
 // GunInfo
@@ -44472,170 +44508,82 @@ inline void SCUserInfoNotify::set_chair_idx(::PROTOBUF_NAMESPACE_ID::int32 value
   // @@protoc_insertion_point(field_set:F4BY.SCUserInfoNotify.chair_idx)
 }
 
-// .F4BY.GunInfo gun_info = 2;
-inline bool SCUserInfoNotify::_internal_has_gun_info() const {
-  return this != internal_default_instance() && gun_info_ != nullptr;
+// repeated .F4BY.GunInfo gun_info = 2;
+inline int SCUserInfoNotify::_internal_gun_info_size() const {
+  return gun_info_.size();
 }
-inline bool SCUserInfoNotify::has_gun_info() const {
-  return _internal_has_gun_info();
+inline int SCUserInfoNotify::gun_info_size() const {
+  return _internal_gun_info_size();
 }
 inline void SCUserInfoNotify::clear_gun_info() {
-  if (GetArena() == nullptr && gun_info_ != nullptr) {
-    delete gun_info_;
-  }
-  gun_info_ = nullptr;
+  gun_info_.Clear();
 }
-inline const ::F4BY::GunInfo& SCUserInfoNotify::_internal_gun_info() const {
-  const ::F4BY::GunInfo* p = gun_info_;
-  return p != nullptr ? *p : reinterpret_cast<const ::F4BY::GunInfo&>(
-      ::F4BY::_GunInfo_default_instance_);
+inline ::F4BY::GunInfo* SCUserInfoNotify::mutable_gun_info(int index) {
+  // @@protoc_insertion_point(field_mutable:F4BY.SCUserInfoNotify.gun_info)
+  return gun_info_.Mutable(index);
 }
-inline const ::F4BY::GunInfo& SCUserInfoNotify::gun_info() const {
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::GunInfo >*
+SCUserInfoNotify::mutable_gun_info() {
+  // @@protoc_insertion_point(field_mutable_list:F4BY.SCUserInfoNotify.gun_info)
+  return &gun_info_;
+}
+inline const ::F4BY::GunInfo& SCUserInfoNotify::_internal_gun_info(int index) const {
+  return gun_info_.Get(index);
+}
+inline const ::F4BY::GunInfo& SCUserInfoNotify::gun_info(int index) const {
   // @@protoc_insertion_point(field_get:F4BY.SCUserInfoNotify.gun_info)
-  return _internal_gun_info();
+  return _internal_gun_info(index);
 }
-inline void SCUserInfoNotify::unsafe_arena_set_allocated_gun_info(
-    ::F4BY::GunInfo* gun_info) {
-  if (GetArena() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(gun_info_);
-  }
-  gun_info_ = gun_info;
-  if (gun_info) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:F4BY.SCUserInfoNotify.gun_info)
+inline ::F4BY::GunInfo* SCUserInfoNotify::_internal_add_gun_info() {
+  return gun_info_.Add();
 }
-inline ::F4BY::GunInfo* SCUserInfoNotify::release_gun_info() {
-  
-  ::F4BY::GunInfo* temp = gun_info_;
-  gun_info_ = nullptr;
-  if (GetArena() != nullptr) {
-    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
-  }
-  return temp;
+inline ::F4BY::GunInfo* SCUserInfoNotify::add_gun_info() {
+  // @@protoc_insertion_point(field_add:F4BY.SCUserInfoNotify.gun_info)
+  return _internal_add_gun_info();
 }
-inline ::F4BY::GunInfo* SCUserInfoNotify::unsafe_arena_release_gun_info() {
-  // @@protoc_insertion_point(field_release:F4BY.SCUserInfoNotify.gun_info)
-  
-  ::F4BY::GunInfo* temp = gun_info_;
-  gun_info_ = nullptr;
-  return temp;
-}
-inline ::F4BY::GunInfo* SCUserInfoNotify::_internal_mutable_gun_info() {
-  
-  if (gun_info_ == nullptr) {
-    auto* p = CreateMaybeMessage<::F4BY::GunInfo>(GetArena());
-    gun_info_ = p;
-  }
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::GunInfo >&
+SCUserInfoNotify::gun_info() const {
+  // @@protoc_insertion_point(field_list:F4BY.SCUserInfoNotify.gun_info)
   return gun_info_;
 }
-inline ::F4BY::GunInfo* SCUserInfoNotify::mutable_gun_info() {
-  // @@protoc_insertion_point(field_mutable:F4BY.SCUserInfoNotify.gun_info)
-  return _internal_mutable_gun_info();
-}
-inline void SCUserInfoNotify::set_allocated_gun_info(::F4BY::GunInfo* gun_info) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
-  if (message_arena == nullptr) {
-    delete gun_info_;
-  }
-  if (gun_info) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(gun_info);
-    if (message_arena != submessage_arena) {
-      gun_info = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, gun_info, submessage_arena);
-    }
-    
-  } else {
-    
-  }
-  gun_info_ = gun_info;
-  // @@protoc_insertion_point(field_set_allocated:F4BY.SCUserInfoNotify.gun_info)
-}
 
-// .F4BY.WingsInfo wings_info = 3;
-inline bool SCUserInfoNotify::_internal_has_wings_info() const {
-  return this != internal_default_instance() && wings_info_ != nullptr;
+// repeated .F4BY.WingsInfo wings_info = 3;
+inline int SCUserInfoNotify::_internal_wings_info_size() const {
+  return wings_info_.size();
 }
-inline bool SCUserInfoNotify::has_wings_info() const {
-  return _internal_has_wings_info();
+inline int SCUserInfoNotify::wings_info_size() const {
+  return _internal_wings_info_size();
 }
 inline void SCUserInfoNotify::clear_wings_info() {
-  if (GetArena() == nullptr && wings_info_ != nullptr) {
-    delete wings_info_;
-  }
-  wings_info_ = nullptr;
+  wings_info_.Clear();
 }
-inline const ::F4BY::WingsInfo& SCUserInfoNotify::_internal_wings_info() const {
-  const ::F4BY::WingsInfo* p = wings_info_;
-  return p != nullptr ? *p : reinterpret_cast<const ::F4BY::WingsInfo&>(
-      ::F4BY::_WingsInfo_default_instance_);
-}
-inline const ::F4BY::WingsInfo& SCUserInfoNotify::wings_info() const {
-  // @@protoc_insertion_point(field_get:F4BY.SCUserInfoNotify.wings_info)
-  return _internal_wings_info();
-}
-inline void SCUserInfoNotify::unsafe_arena_set_allocated_wings_info(
-    ::F4BY::WingsInfo* wings_info) {
-  if (GetArena() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(wings_info_);
-  }
-  wings_info_ = wings_info;
-  if (wings_info) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:F4BY.SCUserInfoNotify.wings_info)
-}
-inline ::F4BY::WingsInfo* SCUserInfoNotify::release_wings_info() {
-  
-  ::F4BY::WingsInfo* temp = wings_info_;
-  wings_info_ = nullptr;
-  if (GetArena() != nullptr) {
-    temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
-  }
-  return temp;
-}
-inline ::F4BY::WingsInfo* SCUserInfoNotify::unsafe_arena_release_wings_info() {
-  // @@protoc_insertion_point(field_release:F4BY.SCUserInfoNotify.wings_info)
-  
-  ::F4BY::WingsInfo* temp = wings_info_;
-  wings_info_ = nullptr;
-  return temp;
-}
-inline ::F4BY::WingsInfo* SCUserInfoNotify::_internal_mutable_wings_info() {
-  
-  if (wings_info_ == nullptr) {
-    auto* p = CreateMaybeMessage<::F4BY::WingsInfo>(GetArena());
-    wings_info_ = p;
-  }
-  return wings_info_;
-}
-inline ::F4BY::WingsInfo* SCUserInfoNotify::mutable_wings_info() {
+inline ::F4BY::WingsInfo* SCUserInfoNotify::mutable_wings_info(int index) {
   // @@protoc_insertion_point(field_mutable:F4BY.SCUserInfoNotify.wings_info)
-  return _internal_mutable_wings_info();
+  return wings_info_.Mutable(index);
 }
-inline void SCUserInfoNotify::set_allocated_wings_info(::F4BY::WingsInfo* wings_info) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
-  if (message_arena == nullptr) {
-    delete wings_info_;
-  }
-  if (wings_info) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(wings_info);
-    if (message_arena != submessage_arena) {
-      wings_info = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, wings_info, submessage_arena);
-    }
-    
-  } else {
-    
-  }
-  wings_info_ = wings_info;
-  // @@protoc_insertion_point(field_set_allocated:F4BY.SCUserInfoNotify.wings_info)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::WingsInfo >*
+SCUserInfoNotify::mutable_wings_info() {
+  // @@protoc_insertion_point(field_mutable_list:F4BY.SCUserInfoNotify.wings_info)
+  return &wings_info_;
+}
+inline const ::F4BY::WingsInfo& SCUserInfoNotify::_internal_wings_info(int index) const {
+  return wings_info_.Get(index);
+}
+inline const ::F4BY::WingsInfo& SCUserInfoNotify::wings_info(int index) const {
+  // @@protoc_insertion_point(field_get:F4BY.SCUserInfoNotify.wings_info)
+  return _internal_wings_info(index);
+}
+inline ::F4BY::WingsInfo* SCUserInfoNotify::_internal_add_wings_info() {
+  return wings_info_.Add();
+}
+inline ::F4BY::WingsInfo* SCUserInfoNotify::add_wings_info() {
+  // @@protoc_insertion_point(field_add:F4BY.SCUserInfoNotify.wings_info)
+  return _internal_add_wings_info();
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::F4BY::WingsInfo >&
+SCUserInfoNotify::wings_info() const {
+  // @@protoc_insertion_point(field_list:F4BY.SCUserInfoNotify.wings_info)
+  return wings_info_;
 }
 
 // .F4BY.VipInfo vip_info = 4;
@@ -45332,6 +45280,26 @@ inline void CSChat::_internal_set_msg_idx(::PROTOBUF_NAMESPACE_ID::int32 value) 
 inline void CSChat::set_msg_idx(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_msg_idx(value);
   // @@protoc_insertion_point(field_set:F4BY.CSChat.msg_idx)
+}
+
+// int32 chair_idx = 3;
+inline void CSChat::clear_chair_idx() {
+  chair_idx_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CSChat::_internal_chair_idx() const {
+  return chair_idx_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 CSChat::chair_idx() const {
+  // @@protoc_insertion_point(field_get:F4BY.CSChat.chair_idx)
+  return _internal_chair_idx();
+}
+inline void CSChat::_internal_set_chair_idx(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  chair_idx_ = value;
+}
+inline void CSChat::set_chair_idx(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_chair_idx(value);
+  // @@protoc_insertion_point(field_set:F4BY.CSChat.chair_idx)
 }
 
 // -------------------------------------------------------------------
@@ -49899,22 +49867,22 @@ inline void SCFrozenTime::set_chair_idx(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:F4BY.SCFrozenTime.chair_idx)
 }
 
-// int32 is_frozen = 2;
+// bool is_frozen = 2;
 inline void SCFrozenTime::clear_is_frozen() {
-  is_frozen_ = 0;
+  is_frozen_ = false;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 SCFrozenTime::_internal_is_frozen() const {
+inline bool SCFrozenTime::_internal_is_frozen() const {
   return is_frozen_;
 }
-inline ::PROTOBUF_NAMESPACE_ID::int32 SCFrozenTime::is_frozen() const {
+inline bool SCFrozenTime::is_frozen() const {
   // @@protoc_insertion_point(field_get:F4BY.SCFrozenTime.is_frozen)
   return _internal_is_frozen();
 }
-inline void SCFrozenTime::_internal_set_is_frozen(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void SCFrozenTime::_internal_set_is_frozen(bool value) {
   
   is_frozen_ = value;
 }
-inline void SCFrozenTime::set_is_frozen(::PROTOBUF_NAMESPACE_ID::int32 value) {
+inline void SCFrozenTime::set_is_frozen(bool value) {
   _internal_set_is_frozen(value);
   // @@protoc_insertion_point(field_set:F4BY.SCFrozenTime.is_frozen)
 }

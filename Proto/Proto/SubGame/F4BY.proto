@@ -242,12 +242,12 @@ message Object1
 message Object2
 {
 	string key = 1;
-	int32 value = 2;
+	string value = 2;
 }
 
 message Object3
 {
-	string key = 1;
+	int32 key = 1;
 	int32 value = 2;
 }
 
@@ -492,6 +492,9 @@ message SCFishTracesList
 	bool is_called = 5;
 	bool after_tide_first = 6;
 	CallFishType call_type = 7;
+	float move_delay = 8;
+	int32 road_idx = 9;
+	float move_t = 10;
 }
 
 message CSSyncFishReq
@@ -507,8 +510,8 @@ message SCSyncFishReq
 message CSSyncFishRsp
 {
 	repeated FishTrace fish_traces = 1;
-	string fish_road = 2;
-	string fish_array = 3;
+	int32 fish_road = 2;
+	int32 fish_array = 3;
 	float move_delay = 4;
 	int32 road_idx = 5;
 	float move_t = 6;
@@ -519,11 +522,14 @@ message CSSyncFishRsp
 message SCSyncFishRsp
 {
 	repeated FishTrace fish_traces = 1;
-	string fish_road = 2;
-	string fish_array = 3;
+	int32 fish_road = 2;
+	int32 fish_array = 3;
 	float move_delay = 4;
 	int32 road_idx = 5;
 	float move_t = 6;
+	float create_interval = 7;
+	bool is_called = 8;
+	CallFishType call_type = 9;
 }
 
 message SCChangeScene
@@ -621,6 +627,7 @@ message WingsInfo
 	int32 activity_id = 5;
 	int32 price = 6;
 	bool new_enable = 7;
+	bool double_tag = 8;
 }
 
 message GunInfo
@@ -662,8 +669,8 @@ message CSUserInfoNotify
 message SCUserInfoNotify
 {
 	int32 chair_idx = 1;
-	GunInfo gun_info = 2;
-	WingsInfo wings_info = 3;
+	repeated GunInfo gun_info = 2;
+	repeated WingsInfo wings_info = 3;
 	VipInfo vip_info = 4;
 	PropInfo prop_info = 5;
 	int32 last_gun_level = 6;
@@ -704,6 +711,7 @@ message CSChat
 {
 	int32 msg_type = 1;
 	int32 msg_idx = 2;
+	int32 chair_idx = 3;
 }
 
 message SCChat
@@ -1081,7 +1089,7 @@ message SCUseProp
 message SCFrozenTime
 {
 	int32 chair_idx = 1;
-	int32 is_frozen = 2;
+	bool is_frozen = 2;
 	float frozen_cd = 3;
 }
 
